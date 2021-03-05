@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2fd999c27598db6f17073cfe82e4c4f91ffb1667
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 7b6175f507f54adf357e40ea44c39f5e495a1b14
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407210"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454495"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Vad är nytt i Microsoft Defender för Office 365
 
@@ -43,9 +43,10 @@ Den här artikeln innehåller nya funktioner i den senaste versionen av Microsof
 
 ## <a name="februarymarch-2021"></a>Februari/mars 2021 
 
-- Integrering av aviserings-ID (sökning med aviserings-ID Alert-Explorer navigering) i [sökupplevelser](threat-explorer.md)
+- Integrering av aviserings-ID (sökning med aviserings-ID Alert-Explorer navigering) i [sökning efter upplevelser](threat-explorer.md)
 - Öka begränsningarna för export av poster från 9 990 till 200 000 i [upplevelser för fiske](threat-explorer.md)
 - Utöka lagringsgränsen för datalagring och sökning i Utforskaren (och identifiering i [realtid)](threat-explorer.md) för utvärderingsklienter från 7 (tidigare gräns) till 30 dagar med upplevelser för sökning
+- Nya pivoter  för sökning som  kallas personifierad domän och personifierad användare i Utforskaren (och identifieringar i realtid) för att söka efter personifieringsattacker mot skyddade användare eller domäner. Mer information finns i [.](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
 
 ## <a name="december-2020"></a>December 2020
 
@@ -66,7 +67,7 @@ Den här artikeln innehåller nya funktioner i den senaste versionen av Microsof
 ## <a name="julyaugust-2020"></a>Juli/augusti 2020
 
 - [Förbättringar av upplevelsen för den här upplevelsen](threat-explorer.md#improvements-to-threat-hunting-experience) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
-- [Använd enkelt rekommenderade inställningar med förinställda säkerhetsprinciper](preset-security-policies.md)
+- [Använd enkelt rekommenderade inställningar med hjälp av förinställda säkerhetsprinciper](preset-security-policies.md)
 
 ## <a name="marchapril-2020"></a>Mars/april 2020
 
@@ -101,7 +102,7 @@ Den här artikeln innehåller nya funktioner i den senaste versionen av Microsof
 
 - [Integrera med Microsoft Defender för Office 365–](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) automatisk undersökning och svarshändelser med API:t för hanteringsaktivitet i Office 365 (Defender för Office 365 abonnemang 2)
 
-- [Visa e-posthuvudena och ladda ned e-posttexten](investigate-malicious-email-that-was-delivered.md) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
+- [Visa e-posthuvudena och ladda ned e-postmeddelandetext](investigate-malicious-email-that-was-delivered.md) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
 
 ## <a name="august-2019"></a>Augusti 2019
 

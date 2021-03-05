@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6462096a6c1b44ee11299f652a54f261d0355523
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: 53948f3d470fb85ddfda8dbcf5b64024755ca50e
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145373"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461637"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -37,7 +37,7 @@ ms.locfileid: "50145373"
 
 
 
-Tabellen `DeviceInfo` i det avancerade [utbildningsschemat](advanced-hunting-overview.md) innehåller information om maskiner i organisationen, inklusive OS-version, aktiva användare och datornamn. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+Tabellen `DeviceInfo` i det avancerade [sökschemat](advanced-hunting-overview.md) innehåller information om enheter i organisationen, inklusive OS-version, aktiva användare och datornamn. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 
@@ -47,18 +47,29 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `DeviceId` | sträng | Unikt ID för datorn i tjänsten |
 | `DeviceName` | sträng | Fullständigt kvalificerat domännamn (FQDN) för datorn |
 | `ClientVersion` | sträng | Version av slutpunktsagenten eller sensorn som körs på datorn |
-| `PublicIP` | sträng | Offentlig IP-adress som används av den onboarded machine för att ansluta till Tjänsten Microsoft Defender för slutpunkt. Detta kan vara IP-adressen för själva datorn, en NAT-enhet eller en proxyserver |
+| `PublicIP` | sträng | Offentlig IP-adress som används av den onboarded machine för att ansluta till Tjänsten Microsoft Defender för slutpunkt. Detta kan vara IP-adressen för själva datorn, en NAT-enhet eller en proxy |
 | `OSArchitecture` | sträng | Arkitekturen för operativsystemet som körs på datorn |
 | `OSPlatform` | sträng | Operativsystemets plattform som körs på datorn. Detta indikerar specifika operativsystem, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7 |
 | `OSBuild` | sträng | Version av operativsystemet som körs på datorn |
 | `IsAzureADJoined` | boolesk | Boolesk indikator om datorn är ansluten till Azure Active Directory |
-| `DeviceObjectId` | sträng | Unikt ID för enheten i Azure AD |
+| `AadObjectId` | sträng | Unikt ID för enheten i Azure AD |
 | `LoggedOnUsers` | sträng | Lista över alla användare som är inloggade på datorn vid tidpunkten för händelsen i JSON-matrisformat |
 | `RegistryDeviceTag` | sträng | Maskintagg som lagts till i registret |
 | `ReportId` | long | Händelseidentifierare baserade på en återkommande räknare. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp |
 |`AdditionalFields` | sträng | Ytterligare information om händelsen i JSON-matrisformat |
 | `OSVersion` | sträng | Version av operativsystemet som körs på datorn |
 | `MachineGroup` | sträng | Datorgruppen på datorn. Den här gruppen används av rollbaserad åtkomstkontroll för att fastställa åtkomsten till datorn |
+
+Tabellen `DeviceInfo` innehåller enhetsinformation baserad på hjärtslag, som är periodiska rapporter eller signaler från en enhet. Var femtonde minut skickar enheten en del av hjärtslag som innehåller ofta ändra attribut `LoggedOnUsers` som. En gång om dagen skickas ett fullt hjärtslag som innehåller enhetens attribut.
+
+Du kan använda följande exempelfråga för att få den senaste statusen för en enhet:
+
+```kusto
+// Get latest information on user/device
+DeviceInfo
+| where DeviceName == "example" and isnotempty(OSPlatform)
+| summarize arg_max(Timestamp, *) by DeviceId 
+```
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

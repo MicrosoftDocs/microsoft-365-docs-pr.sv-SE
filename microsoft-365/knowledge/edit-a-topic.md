@@ -11,15 +11,15 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: 9dfad7e179699c599d9320390aaefd2dac176fbb
-ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
+ms.openlocfilehash: ac8e4b8cdcdfd4d2de0c48a22500338c7a8480a8
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50279416"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454177"
 ---
 # <a name="edit-an-existing-topic"></a>Redigera ett befintligt ämne 
 
@@ -32,7 +32,7 @@ ms.locfileid: "50279416"
 I Viva-ämnen kan du redigera ett befintligt ämne. Du kan behöva göra det om du vill korrigera eller lägga till ytterligare information på en befintlig ämnessida. 
 
 > [!Note] 
-> Observera att informationen i ett ämne [](topic-experiences-security-trimming.md)som har samlats av AI är säkerhets trimad, men observera att information om ämnen och personer som du lägger till manuellt när du redigerar ett befintligt ämne är synlig för alla användare som har behörighet att visa ämnen. 
+> Observera att informationen i ett ämne [](topic-experiences-security-trimming.md)som har samlats av AI är säkerhets trimad, men observera att ämnesbeskrivningar och personinformation som du lägger till manuellt när du redigerar ett befintligt ämne är synliga för alla användare som har behörighet att visa ämnen. 
 
 ## <a name="requirements"></a>Krav
 
@@ -45,7 +45,7 @@ Om du vill redigera ett befintligt ämne måste du:
 
 ## <a name="how-to-edit-a-topic-page"></a>Redigera en ämnessida
 
-Användare som  har behörigheten Vem kan skapa eller redigera ämnen kan redigera ett ämne <b></b> genom att öppna ämnessidan från en ämnesstrykning och sedan välja knappen Redigera längst upp till höger på ämnessidan. Ämnessidan kan också öppnas från startsidan för ämnescentret där du hittar alla ämnen som du har en anslutning till.
+Användare som har **behörigheten** Vem kan skapa eller redigera ämnen kan redigera ett ämne <b></b> genom att öppna ämnessidan från en ämnesstrykning och sedan välja knappen Redigera längst upp till höger på ämnessidan. Ämnessidan kan också öppnas från startsidan för ämnescentret där du hittar alla ämnen som du har en anslutning till.
 
    ![Knappen Redigera](../media/knowledge-management/edit-button.png) </br> 
 
@@ -55,7 +55,7 @@ Knowledge managers can also edit topics directly from the Manage Topics page by 
 
 ### <a name="to-edit-a-topic-page"></a>Redigera en ämnessida
 
-1. Välj Redigera på **ämnessidan.** På så sätt kan du göra ändringar när du behöver på ämnessidan.
+1. Välj Redigera på **ämnessidan.** På så sätt kan du göra ändringar på ämnessidan efter behov.
 
    ![Redigeringskontroll](../media/knowledge-management/topic-page-edit.png) </br>  
 
@@ -63,7 +63,7 @@ Knowledge managers can also edit topics directly from the Manage Topics page by 
 2. I avsnittet <b>Alternativa namn</b> skriver du andra namn som ämnet kan hänvisas till. 
 
     ![Alternativa namn](../media/knowledge-management/alt-names.png) </br> 
-3. Skriv <b>några</b> meningar som beskriver ämnet i avsnittet Beskrivning. Om det redan finns en beskrivning uppdaterar du den om det behövs.
+3. Skriv <b>ett</b> par meningar som beskriver ämnet i avsnittet Beskrivning. Om det redan finns en beskrivning uppdaterar du den om det behövs.
 
     ![Beskrivningsavsnitt](../media/knowledge-management/description.png)</br>
 
@@ -84,7 +84,7 @@ Knowledge managers can also edit topics directly from the Manage Topics page by 
     Du kan också använda alternativet <b>Från en länk för</b> att lägga till en fil eller sida genom att ange URL-adressen. 
 
    > [!Note] 
-   > Filer och sidor som du lägger till måste finnas inom samma Microsoft 365-klientorganisation. Om du vill lägga till en länk till en extern resurs i ämnet kan du lägga till den via canvas-ikonen i steg 9.
+   > Filer och sidor som du lägger till måste finnas inom samma Microsoft 365-klientorganisation. Om du vill lägga till en länk till en extern resurs i ämnet kan du lägga till den via arbetsytans ikon i steg 9.
 
 6. I <b>avsnittet Föreslagna filer och</b> sidor visas filer och sidor som AI föreslår för att kopplas till ämnet.
 
@@ -96,11 +96,11 @@ Knowledge managers can also edit topics directly from the Manage Topics page by 
 
     ![Avsnittet Relaterade webbplatser](../media/knowledge-management/related-sites.png)</br>
 
-    Du kan lägga till en relaterad webbplats genom att välja <b>Lägg</b> till och sedan antingen söka efter webbplatsen eller välja den i listan med ofta besökta eller senaste webbplatser.</br>
+    Du kan lägga till <b></b> en relaterad webbplats genom att välja Lägg till och sedan antingen söka efter webbplatsen eller välja den i listan med webbplatser som ofta används eller senaste.</br>
     
     ![Välj en webbplats](../media/knowledge-management/sites.png)</br>
 
-8. I <b>avsnittet Närliggande information</b> visas kopplingar mellan olika ämnen. Du kan lägga till en anslutning <b></b> till ett annat ämne genom att välja knappen Anslut till ett relaterat ämne, skriva namnet på det relaterade ämnet och välja det i sökresultatet. 
+8. I <b>avsnittet Relaterade</b> ämnen visas kopplingar som finns mellan olika ämnen. Du kan lägga till en anslutning <b></b> till ett annat ämne genom att välja knappen Anslut till ett relaterat ämne, skriva namnet på det relaterade ämnet och välja det i sökresultatet. 
 
    ![Avsnittet Närliggande information](../media/knowledge-management/related-topic.png)</br>  
 

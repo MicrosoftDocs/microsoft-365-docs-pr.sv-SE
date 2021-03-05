@@ -11,16 +11,16 @@ ms.service: ''
 ms.prod: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: 435544de1016552c6ce3d39c73f7127223f36331
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 036dbc4029cc7e8308ad295ccd8b45dc3879a6f8
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107714"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453963"
 ---
-# <a name="microsoft-viva-topics-discovery-and-curation"></a>Identifiering och läroplan för Microsoft Viva Topics 
+# <a name="microsoft-viva-topics-discovery-and-curation"></a>Identifiering och säkring av Microsoft Viva-ämnen 
 
 Viva Topics ordnar information efter kunskap i Microsoft 365-miljön. Vi har alla erfarenhet av att läsa igenom dokument och webbplatssidor där vi stöter på termer som vi inte är bekant med. Många gånger slutar vi göra det vi gör för att ägna tid åt att söka efter mer information.
 
@@ -43,7 +43,7 @@ Egenskaperna identifieras från filerna och sidorna som är en del av beviset f�
 
 Alla ämnen kommer inte att vara användbara för din organisation. Den kanske inte har identifierat något av de rätta alternativa namnen, beskrivningarna, rätt personer eller innehåll. Så möjligheten att lägga till ämnen som inte identifieras, behålla föreslagna ämnen och ämnen är avgörande för att förbättra kvaliteten på ämnen som kan upptäckas i organisationen.
 
-När kontexten är lämplig föreslår Viva-ämnen att dessa ämnen markeras på alla moderna SharePoint-webbplatssidor i klientorganisationen. En sidförfattare kan också referera till avsnittet direkt på sidan för modern SharePoint-webbplats. När en användare är nyfiken på att få mer information om  ett ämne kan de välja det markerade avsnittet för att visa ett kort för ämnessammanfattning som ger en kort beskrivning. Och om de vill veta mer kan de välja en länk **för** ämnesinformation i sammanfattningen för att öppna den detaljerade ämnessidan.
+När kontexten är lämplig föreslår Viva Topics att dessa ämnen markeras på alla moderna SharePoint-webbplatssidor i klientorganisationen. En sidförfattare kan också referera till avsnittet direkt på sidan för modern SharePoint-webbplats. När en användare är nyfiken på att få mer information om  ett ämne kan de välja det markerade avsnittet för att visa ett kort för ämnessammanfattning som ger en kort beskrivning. Och om de vill veta mer kan de välja en länk **för** ämnesinformation i sammanfattningen för att öppna den detaljerade ämnessidan.
 
 ![Viktiga ämnen](../media/knowledge-management/saturn.png) </br>
 
@@ -67,7 +67,7 @@ Viva Topics tar gärna del av ditt bidrag till att förbättra kvaliteten på di
 
     4. På startsidan för Ämnescenter kan du se de ämnen i organisationen som du har en anslutning till. Du kan välja att själv stå kvar i listan över ämnet eller ta bort dig själv. Den här feedbacken återspeglas för alla som upptäcker det här avsnittet. Se [översikten över Ämnescenter](https://docs.microsoft.com/microsoft-365/knowledge/topic-center-overview) för mer information på startsidan för ämnescentret.
 
-Även när människor redigerar söker AI kontinuerligt efter mer information om ämnen och söker efter verifiering av människor. Om AI till exempel tror att du är en person som bör finnas med som expert på ett ämne, får du bekräfta det. 
+Även när människor redigerar söker AI kontinuerligt efter mer information om ämnen och söker efter verifiering av människor. Om AI till exempel tror att du är en person som bör finnas med som expert på ett ämne, får du bekräfta detta. 
 
 
 ## <a name="see-also"></a>Se även

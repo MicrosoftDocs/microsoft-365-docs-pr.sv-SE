@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1a00f7d5fb37cc9eea3f9454d473703084960864
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 0311450386f3b7c9f950276340901daacc06b2a8
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142939"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453950"
 ---
 # <a name="readiness-assessment-tools"></a>Beredskapsutvärderingsverktyg
 
-För att upplevelsen ska gå så smidigt som möjligt när du registrerar dig för Microsoft Managed Desktop finns det inställningar och andra parametrar som du måste ange i förväg, och vissa enhets- och nätverkskrav för att uppfyllas. Ett verktyg, som används via Microsoft Managed Desktop Admin-portalen, kontrollerar hanteringsrelaterade inställningar. Ett annat verktyg, som kan laddas ned, kontrollerar enskilda enhetskrav och nätverksinställningar. Du kan använda dessa verktyg för att kontrollera dessa inställningar och få detaljerade anvisningar för att åtgärda fel som inte är rätt.
+För att upplevelsen ska bli så smidig som möjligt när du registrerar dig för Microsoft Managed Desktop finns det inställningar och andra parametrar som du måste ange i förväg och vissa enhets- och nätverkskrav för att uppfyllas. Ett verktyg, som du öppnar via Microsofts administrationsportal för skrivbordet, kontrollerar hanteringsrelaterade inställningar. Ett annat verktyg, som kan laddas ned, kontrollerar enskilda enhetskrav och nätverksinställningar. Du kan använda dessa verktyg för att kontrollera dessa inställningar och få detaljerade anvisningar för att åtgärda fel som inte är rätt.
 
 ## <a name="downloadable-readiness-assessment-checker-for-devices-and-network"></a>Nedladdningsbar beredskapsbedömning för enheter och nätverk
 
@@ -26,7 +26,7 @@ Mer information om hur du använder den nedladdningsbara beredskapsutvärderings
 
 ## <a name="online-readiness-assessment-tool-for-management-settings"></a>Utvärderingsverktyg för onlineberedskap för hanteringsinställningar
 
-Onlineverktyget kontrollerar inställningarna i Microsoft Endpoint Manager (specifikt Microsoft Intune), Azure Active Directory (Azure AD) och Microsoft 365 för att säkerställa att de fungerar med Microsoft Managed Desktop. Microsoft Hanterat skrivbord behåller de data som är associerade med dessa kontroller i 12 månader efter den senaste kontrollen i Din Azure AD-organisation (klientorganisation). Efter 12 månader behåller vi den i avde identifierat format. Du kan välja att ta bort de data vi samlar in.
+[Onlineverktyget](https://aka.ms/mmdart) kontrollerar inställningarna i Microsoft Endpoint Manager (specifikt Microsoft Intune), Azure Active Directory (Azure AD) och Microsoft 365 för att säkerställa att de fungerar med Microsoft Managed Desktop. Microsoft Hanterat skrivbord behåller de data som är associerade med dessa kontroller i 12 månader efter den senaste kontrollen i Din Azure AD-organisation (klientorganisation). Efter 12 månader behåller vi den i avde-identifierade former. Du kan välja att ta bort de data vi samlar in.
 
 Alla som har minst rollen Global Läsare- eller Intune-administratör kan köra[](readiness-assessment-fix.md#conditional-access-policies) det här verktyget, men två av kontrollerna (villkorsbaserad åtkomstprincip och multifaktorautentisering kräver ytterligare behörigheter. [](readiness-assessment-fix.md#multifactor-authentication)
  
@@ -37,8 +37,8 @@ Utvärderingsverktyget kontrollerar följande objekt:
 |Check  |Beskrivning  |
 |---------|---------|
 |Distributionsprofil för Autopilot     | Verifierar att tilldelning av Autopilot-distributionsprofilen inte gäller  för alla enheter (Profilen ska inte tilldelas till några Microsoft Managed Desktop-enheter.)       |
-|Certifikatkopplingar     | Kontrollerar certifikatanslutningars status för att säkerställa att de är aktiva   |
-|Villkorlig åtkomst     | Verifierar att villkorsstyrda åtkomstprinciper inte har tilldelats till alla användare (villkorsstyrda åtkomstprinciper *bör* inte tilldelas Microsofts tjänstkonton för hanterad skrivbordsversionen.)    |
+|Certifikatkopplingar     | Kontrollerar statusen för certifikatanslutningar för att säkerställa att de är aktiva   |
+|Villkorlig åtkomst     | Verifierar att villkorsstyrda åtkomstprinciper inte har tilldelats till alla användare (villkorsstyrda åtkomstprinciper *bör* inte tilldelas Microsofts tjänstkonton för hanterad stationär dator.)    |
 |Policyer för enhetsefterlevnad     | Kontrollerar att Intune-efterlevnadsprinciper inte har tilldelats alla användare (Principerna *bör* inte tilldelas några Microsoft Managed Desktop-enheter.)    |
 |Enhetskonfigurationsprofiler     | Bekräftar att konfigurationsprofiler inte är tilldelade till alla  användare eller alla enheter (konfigurationsprofiler bör inte tilldelas några Microsoft Managed Desktop-enheter.)     |
 |Begränsningar av enhetstyp     | Kontrollerar att Windows 10-enheter i organisationen tillåts registrera i Intune        |
@@ -51,7 +51,7 @@ Utvärderingsverktyget kontrollerar följande objekt:
 |Säkerhetsbaslinjer     | Kontrollerar att säkerhetsbaslinjeprofilen inte riktar sig till alla  användare eller alla enheter (principer för säkerhetsbaslinjer ska inte ha några Microsoft Managed Desktop-enheter som mål.)       |
 |Windows-appar     | Kontrollera vilka appar du vill tilldela Microsoft Managed Desktop-enheter      |
 |Windows Hello för företag     | Kontrollerar att Windows Hello för företag är aktiverat        |
-|Uppdateringsringen för Windows 10     | Kontrollerar att Intunes princip för windows 10-uppdateringsringen inte riktar sig  till alla användare eller alla enheter (principen ska inte ha några Microsoft Managed Desktop-enheter som mål.)     |
+|Uppdateringsringen i Windows 10     | Kontrollerar att Intunes princip för windows 10-uppdateringsringen inte riktar sig  till alla användare eller alla enheter (principen ska inte ha några Microsoft Managed Desktop-enheter som mål.)     |
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory-inställningar

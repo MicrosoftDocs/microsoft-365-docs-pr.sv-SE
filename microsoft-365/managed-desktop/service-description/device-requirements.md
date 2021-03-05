@@ -9,19 +9,19 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a6b5cbbcb2f48797130b080d9d1dd1e6427d4fb8
-ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
+ms.openlocfilehash: 90dee316ee5bdc99b6a2386260a3be38728e7282
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50110057"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453723"
 ---
 # <a name="device-requirements"></a>Enhetskrav
 
 Microsoft Managed Desktop utvärderar regelbundet enhetskrav som ska ingå i tjänsten. I den här artikeln beskrivs de maskin- och programvarukrav en enhet måste uppfylla för att kunna arbeta med Microsoft Managed Desktop. Du kan granska en lista över [specifika enheter som redan är godkända](device-list.md) för användning med tjänsten baserat på dessa krav.
 
 > [!NOTE]
-> De här kraven kan ändras när som helst, men vi tillhandahåller 30 dagars förvarning om ändringar av maskinvarukrav. De senast ändrade kraven markeras **\*** med. 
+> De här kraven kan ändras när som helst, men vi tillhandahåller 30 dagars förvarning om alla maskinvarukrav ändras. De senast ändrade kraven markeras **\*** med. 
 
 ## <a name="check-hardware-requirements"></a>Kontrollera maskinvarukraven
 
@@ -59,15 +59,16 @@ Enheter måste ha följande funktioner:
 - Kan använda virtualiseringsbaserad säkerhet 
 - Stöder Hypervisor-skyddad kodintegritet 
 
-Mer information om dessa funktioner och tekniker som är relaterade till dem som används i tjänsten finns i Microsofts teknik [för hanterade skrivbord.](../intro/technologies.md)
+Mer information om de här funktionerna och teknikerna som är relaterade till dem som används i tjänsten finns i [Microsofts teknik för hanterade datorer.](../intro/technologies.md)
 
 > [!NOTE]
-> ARM processorer stöds inte.
+> ARM finns inte stöd för processorer.
 
 Enheter bör uppfylla eller överskrida följande gränser för lagring och minne:
 
 - Startenheten måste vara av någon annan typ än en hårddisk. SSD-, NVMe- och eMMC-enheter är till exempel giltiga alternativ.
 - Startenheten måste ha en kapacitet på minst 128 GB.
+- Internt enhetsminne (RAM) måste vara lika med eller större än 8 GB.
 
 Om enheten gjordes efter den 1 juli 2020 bör den också ha en IR-kamera, fingeravtrycksläsare eller båda för att stödja [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
 

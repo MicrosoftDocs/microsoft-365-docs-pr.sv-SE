@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Apps för företag
-description: Distribuera Microsoft 365-appar, hur de uppdateras och hur inställningar hanteras
-keywords: ändrings historik
+description: Distribuera Microsoft 365-program, hur de uppdateras och hur inställningar hanteras
+keywords: ändringshistorik
 ms.service: m365-md
 ms.sitesec: library
 author: jaimeo
@@ -10,18 +10,18 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 98995084fb7de9ecb434b70b5d38793a20675f19
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 26e62d6e59f1f90e35d9e18e6eed917a66876645
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840355"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453927"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a> Microsoft 365 Apps för företag
 
-## <a name="initial-deployment"></a>Inledande distribution
+## <a name="initial-deployment"></a>Första distributionen
 
-Microsoft Managed Desktop garanterar att Microsoft 365-programmen för Enterprise (64-bitars) installeras som en del av bilden på alla [program enheter](../service-description/device-list.md). Alla följande program bör finnas med på enheten när den levereras:
+Microsoft Hanterat skrivbord ser till att Microsoft 365-appar för företag (64-bitars) installeras som en del av bilden på alla [programenheter.](../service-description/device-list.md) Följande program bör finnas på enheten när den levereras:
 
 - Word
 - Excel
@@ -32,135 +32,135 @@ Microsoft Managed Desktop garanterar att Microsoft 365-programmen för Enterpris
 - Skype för företag
 - OneNote
 
-Den här metoden minimerar nätverks påverkan och säkerställer att användarna kan vara produktiva när de tar emot sina enheter. Vi distribuerar sedan fler principer till hanterade enheter för att konfigurera programmen för användning.
+Den här metoden minimerar nätverks påverkan och ser till att användarna kan vara produktiva så snart de får sin enhet. Sedan distribuerar vi fler principer till hanterade enheter för att konfigurera programmen för användning.
 
 > [!NOTE]
-> Microsoft Teams distribueras separat från Microsoft 365-appar för företag och ingår inte i bas bilden. 
+> Microsoft Teams distribueras separat från Microsoft 365-appar för företag och ingår inte i basbilden. 
 
 ### <a name="available-deployment-to-users"></a>Tillgänglig distribution för användare
 
-Om en användare inte har Microsoft 365-appar på sin enhet av någon anledning kan du använda ett paket för att återställa enheten till förväntat tillstånd. Lägga till användaren i den **moderna arbets platsen – Office-Office365_Install-** gruppen och programmen blir tillgängliga för dem i företags portalen.
+Om en användare av någon anledning inte har Microsoft 365-appar på sin enhet kan du använda ett paket för att returnera enheten till det förväntade läget. Lägg till användaren i **gruppen Modern workplace-Office-Office365_Install** så blir apparna tillgängliga för dem i företagsportalen.
 
-### <a name="microsoft-365-apps-for-enterprise-32-bit"></a>Microsoft 365-appar för Enterprise (32-bitar)
+### <a name="microsoft-365-apps-for-enterprise-32-bit"></a>Microsoft 365-appar för företag (32-bitar)
 
-Microsoft Managed Desktop stöder inte distribution av 32-bitars versionen av M365-appar för företag.
+Microsoft Hanterat skrivbord stöder inte distribution av 32-bitarsversionen av M365-program för företag.
 
 ## <a name="updates-to-microsoft-365-apps"></a>Uppdateringar av Microsoft 365-appar
 
-Microsoft 365-apparna är inställda på att uppdatera [månadens Enterprise-kanal](https://docs.microsoft.com/deployoffice/overview-update-channels#monthly-enterprise-channel-overview). I den här övningen får användarna nya Office-funktioner varje månad, men de får bara en uppdatering per månad på ett förutsägbart sätt. Uppdateringar publiceras den andra tisdagen i månaden; dessa uppdateringar kan omfatta uppdateringar av funktioner, säkerhet och kvalitet. Dessa uppdateringar sker automatiskt och hämtas direkt från Office CDN för den specifika kanalen.
+Microsoft 365-appar är inställda på att uppdateras i [månatlig företagskanal.](https://docs.microsoft.com/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) Den här övningen ger användarna nya Office-funktioner varje månad, men de får bara en uppdatering per månad med ett förutsägbart versionsschema. Uppdateringar släpps den andra tisdagen i månaden. Dessa uppdateringar kan innehålla funktions-, säkerhets- och kvalitetsuppdateringar. De här uppdateringarna görs automatiskt och hämtas direkt från Office CDN för den specifika kanalen.
 
-Microsoft Managed Desktop-förskjutningar för att identifiera eventuella problem i miljön. Vi slutförde lanseringen av de 28 dagarna efter utgivningen från Microsoft 365 program produkt gruppen. Microsoft-hanterade Skriv bords scheman uppdaterar utgåvor till olika grupper för att tillåta tid för validering och testning: 
+Microsoft Hanterade skrivbord förser varje version med att identifiera potentiella problem i din miljö. Vi har slutfört lanseringen 28 dagar efter lanseringen från Microsoft 365 App-produktgruppen. Microsoft Hanterad dator schemalägger uppdateringsutgåvan till olika grupper för att ge tid för validering och testning enligt följande: 
 
 - Test: noll dagar
-- Först: noll dagar
-- Snabbt: 7 dagar
-- Brett: 21 dagar
+- Första: noll dagar
+- Snabbt: 3 dagar
+- Bred: 7 dagar
 
-Microsoft Managed Desktop set en [tids gräns](https://docs.microsoft.com/deployoffice/configure-update-settings-microsoft-365-apps) på sju dagar för enheter. När uppdateringen är tillgänglig måste den installeras inom sju dagar. Användare [meddelas](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) om att uppdateringar krävs på flera platser: programmet, i system fältet 12 timmar före deadline och får en 15-minuters varning före tids gränsen. Alla Microsoft 365-appar måste vara stängda för att uppdateringen ska slutföras.
+Microsoft Hanterat skrivbord anger en tidsgräns på sju dagar [för](https://docs.microsoft.com/deployoffice/configure-update-settings-microsoft-365-apps) uppdateringar för enheter. När uppdateringen är tillgänglig måste den installeras inom sju dagar. Användarna [](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) meddelas om att uppdateringar krävs på flera olika platser: i systemfältet 12 timmar före tidsgränsen, och de får en 15-minutersvarning före tidsgränsen. Alla Microsoft 365-appar måste stängas för att uppdateringen ska kunna slutföras.
 
-### <a name="pausing-or-rolling-back-an-update"></a>Pausa eller återställa en uppdatering
+### <a name="pausing-or-rolling-back-an-update"></a>Pausa eller distribuera en uppdatering
 
-Om du behöver pausa eller återställa Microsoft 365-programmet av någon anledning kan du arkivera en [support förfrågan för administratörer](../working-with-managed-desktop/admin-support.md) via Microsofts hanterade Skriv bords Portal.
+Om du av någon anledning behöver pausa eller återställa programuppdateringen för Microsoft 365 arkiverar du en [administratörssupportbegäran](../working-with-managed-desktop/admin-support.md) via Microsoft Managed Desktop-portalen.
 
-Under en version övervakar Microsoft Managed Desktop dator fel frekvenserna för alla Microsoft 365-appar. Om vi antecknar en betydande bild av kvaliteten mellan den nya versionen och dess föregångare, kan vi kontakta dig via administrations portalen för Microsoft Managed Desktop. Beroende på allvarlighets graden frågar vi dig om du vill pausa versionen eller informera dig om att vi har åtgärdat ett problem. 
+Under en version övervakar Microsoft Hanterat skrivbord felfrekvenserna för alla Microsoft 365-appar. Om vi ser en betydande kvalitetsskillnad mellan den nya versionen och den föregående versionen kan vi kontakta dig via Microsofts administrationsportal för hanterade datorer. Beroende på hur allvarligt det är frågar vi dig om du vill pausa utgivningen eller informera dig om att vi har vidtagit åtgärder för att minimera ett problem. 
 
-### <a name="delivery-optimization"></a>Leverans optimering
+### <a name="delivery-optimization"></a>Leveransoptimering
 
-Leverans optimering är en peer-to-peer-postdistributionsgrupp som är tillgänglig i Windows 10. Det gör att enheter kan dela innehåll, till exempel uppdateringar, som enheterna har laddat ner från Microsoft via Internet. Genom att använda den kan minska nätverks bandbredden eftersom en enhet kan få delar av uppdateringen från en annan enhet i det lokala nätverket i stället för att behöva ladda ner uppdateringen helt från Microsoft.
+Leveransoptimering är en peer-to-peer-distributionsteknik som finns i Windows 10. Det gör att enheter kan dela innehåll, till exempel uppdateringar, som enheterna har laddat ned från Microsoft via Internet. Användning av den kan minska nätverkets bandbredd eftersom en enhet kan hämta delar av uppdateringen från en annan enhet på dess lokala nätverk i stället för att behöva ladda ned uppdateringen helt från Microsoft.
 
-[Leverans optimering](https://docs.microsoft.com/deployoffice/delivery-optimization) är aktive rad som standard på enheter med utbildnings utgåvor för Windows 10 Enterprise eller Windows 10. 
+[Leveransoptimering](https://docs.microsoft.com/deployoffice/delivery-optimization) aktiveras som standard på enheter som kör versionerna Windows 10 Enterprise eller Windows 10 Education. 
 
 ## <a name="settings-managed-by-microsoft-managed-desktop"></a>Inställningar som hanteras av Microsoft Managed Desktop
 
-Microsoft hanterar vissa inställningar som en del av tjänsten. Microsoft Managed Desktop hanterar inte en Office Security-original plan, men du kan ställa in ett själv genom att följa anvisningarna i avsnittet [inställningar som hanteras](#settings-you-manage) .
+Microsoft hanterar vissa inställningar som en del av tjänsten. Microsoft Hanterat skrivbord hanterar inte en baslinje för Office-säkerhet men du kan ange en själv genom att följa linjerna i [avsnittet Inställningar som du hanterar.](#settings-you-manage)
 
-### <a name="update-settings"></a>Uppdaterings inställningar
+### <a name="update-settings"></a>Uppdatera inställningar
 
-Microsoft Managed Desktop behåller alla [uppdaterings inställningar](https://docs.microsoft.com/deployoffice/configure-update-settings-microsoft-365-apps) för hanterade enheter och du bör ändra de här inställningarna.
+Microsoft Hanterat skrivbord har alla [uppdateringsinställningar](https://docs.microsoft.com/deployoffice/configure-update-settings-microsoft-365-apps) för hanterade enheter och du bör ändra de här inställningarna.
 
-### <a name="set-updates-to-occur-automatically"></a>Ange att uppdateringar ska ske automatiskt
+### <a name="set-updates-to-occur-automatically"></a>Konfigurera uppdateringar så att de sker automatiskt
 
-**Standardvärde**: aktive rad
+**Standardvärde:** Aktiverad
 
-Den här principen är konfigurerad för att säkerställa att alla Office-enheter kan hållas uppdaterade från molnet. 
+Den här principen har konfigurerats för att säkerställa att alla Office-enheter kan hållas uppdaterade från molnet. 
 
-### <a name="set-a-deadline-when-updates-have-to-be-applied"></a>Ange en tids gräns när uppdateringar måste tillämpas
+### <a name="set-a-deadline-when-updates-have-to-be-applied"></a>Ange en tidsgräns när uppdateringar ska tillämpas
 
-**Standardvärde**: 7 dagar
+**Standardvärde:** 7 dagar
 
-**UpdateDeadline** policy används för att konfigurera Grace-perioden som användare har innan en uppdatering genomdrivs på enheten. Denna tids gräns princip utlöser också [meddelanden](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) till användaren för att informera dem om de ändringar som krävs på deras enheter.  
+Principen **UpdateDeadline** används för att konfigurera respitperioden som användarna har innan en uppdatering tillämpas på enheten. Den här tidsgränsprincipen [utlöser även aviseringar](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) till användaren om de ändringar som krävs på enheten.  
 
-### <a name="defer-updates-on-a-device-for-a-period"></a>Skjuta upp uppdateringar för en enhet för en period
+### <a name="defer-updates-on-a-device-for-a-period"></a>Skjuta upp uppdateringar på en enhet under en period
 
-Den här principen konfigureras olika för varje enhets grupp för uppdaterings hantering och krävs för Microsoft Managed Desktop för att uppfylla sina uppdaterings mål:  
+Den här principen har konfigurerats på olika sätt för varje enhetsgrupp för uppdateringshantering och krävs för att Microsoft Managed Desktop ska uppfylla sina uppdateringsmål:  
 
 - Test: noll dagar
-- Först: noll dagar
-- Snabb sju dagar
-- Brett: 21 dagar
+- Första: noll dagar
+- Snabb 7 dagar
+- Bred: 21 dagar
 
-### <a name="update-notifications-settings"></a>Uppdatera aviserings inställningar
+### <a name="update-notifications-settings"></a>Uppdatera meddelandeinställningar
 
-**Standardvärde**: falskt
+**Standardvärde:** Falskt
 
-Inställningen "Dölj uppdaterings aviseringar" är inställd på **false** på Microsoft Managed Station ära enheter för att tillhandahålla den bästa uppdateringen för användare genom att [meddela](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) dem när uppdateringar behövs.
+Inställningen "Dölj uppdateringsmeddelanden" är inställd på **False** på Microsoft Managed Desktop-enheter för att ge bästa möjliga uppdateringsupplevelse för användare genom att meddela [dem](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) när uppdateringar krävs.
 
-### <a name="specify-a-location-to-look-for-updates"></a>Ange en plats att söka efter uppdateringar för
+### <a name="specify-a-location-to-look-for-updates"></a>Ange en plats där du vill söka efter uppdateringar
 
-**Standardvärde**: månatlig företags kanal
+**Standardvärde:** Månadskanal för företag
 
-En kombination av **UpdatePath** -och **UpdateChannel** -principer används för att uppnå uppdaterings schema. Dessa principer är inställda på att säkerställa att alla Office-enheter tar emot uppdateringar direkt från CDN för den månads Visa företags kanalen.
+En kombination av **principerna UpdatePath** och **UpdateChannel** används vid behov för att uppnå uppdateringsschemat. De här principerna är inställda på att säkerställa att alla Office-enheter får uppdateringar direkt från CDN för månatlig företagskanal.
 
-### <a name="specify-the-target-version-of-microsoft-365-apps"></a>Ange mål versionen av Microsoft 365-appar
+### <a name="specify-the-target-version-of-microsoft-365-apps"></a>Ange målversionen av Microsoft 365-appar
 
-Mål versions principen används ibland av Microsoft Managed Desktop för att återställa eller fästa en viss version av Office. 
+Principen för målversionen används ibland av Microsoft Managed Desktop för att återställa eller fästa en viss version av Office. 
 
 
-### <a name="hide-the-option-to-enable-or-disable-office-automatic-updates"></a>Dölj alternativet för att aktivera eller inaktivera automatiska uppdateringar av Office
+### <a name="hide-the-option-to-enable-or-disable-office-automatic-updates"></a>Dölja alternativet för att aktivera eller inaktivera automatiska uppdateringar i Office
 
-**Standardvärde**: aktive rad
+**Standardvärde:** Aktiverad
 
-Den här inställningen krävs för Microsoft Managed Desktop för att uppfylla sina uppdaterings mål för Microsoft 365-program. 
+Den här inställningen krävs för att Microsoft Hanterat skrivbord ska uppfylla uppdateringsmålen för Microsoft 365-program. 
 
 ### <a name="first-run-settings"></a>Inställningar för första körningen 
 
-Det finns flera inställningar som påverkar beteendet för första gången Office körs.
+Det finns flera inställningar som påverkar beteendet första gången Office körs.
 
-### <a name="accept-the-license-terms-on-behalf-of-the-end-user"></a>Godkänn licens villkoren åt slutanvändaren
+### <a name="accept-the-license-terms-on-behalf-of-the-end-user"></a>Godkänn licensvillkoren åt slutanvändaren
 
-**Standardvärde**: inaktiverat
+**Standardvärde:** Inaktiverat
 
-Första gången en användare öppnar en Microsoft 365-App uppmanas de att acceptera licens villkoren. Om du vill acceptera licens villkoren åt användarna kan du spara en tjänstbegäran med Microsoft Managed Desktop-teamet och ange att inställningen ska aktive ras. 
+Första gången en användare öppnar en Microsoft 365-app uppmanas de att godkänna licensvillkoren. Om du vill godkänna licensvillkoren åt dina användare arkiverar du en tjänstbegäran till Microsoft Managed Desktop Operations-teamet och ber om att den här inställningen aktiveras. 
 
-### <a name="suppress-outlook-mobile-check-box"></a>Kryss rutan Inaktivera Outlook Mobile
+### <a name="suppress-outlook-mobile-check-box"></a>Kryssrutan Ignorera Outlook Mobile
 
-**Standardvärde**: inaktiverat
+**Standardvärde:** Inaktiverat
 
-Första gången en användare öppnar Outlook uppmanas de att installera Outlook Mobile. Om du inte vill att användarna ska kunna se den här kryss rutan kan du spara en tjänstbegäran med Microsoft Managed Desktop-teamet och ange att den här inställningen ska vara aktive rad för dina enheter. 
+Första gången outlook öppnas uppmanas användaren att installera Outlook Mobile. Om du inte vill att användarna ska se den kryssrutan arkiverar du en tjänstbegäran till Microsoft Managed Desktop Operations-teamet och ber om att den här inställningen aktiveras för dina enheter. 
 
 ## <a name="other-settings"></a>Andra inställningar
 
-Det finns andra Microsoft 365-inställningar som Microsoft Managed Desktop kan konfigurera åt dig. 
+Det finns andra Microsoft 365-appinställningar som Microsoft Hanterat skrivbord kan konfigurera åt dig. 
 
-### <a name="disable-personal-onedrive"></a>Inaktivera personligt OneDrive
+### <a name="disable-personal-onedrive"></a>Inaktivera personlig OneDrive
 
-**Standardvärde**: inaktiverat
+**Standardvärde:** Inaktiverat
 
-Vissa organisationer är bekymrade över användare som har till gång till både företags-och privata filer på sina enheter. Du kan spara en tjänstbegäran med Microsoft Managed Desktop-gruppanvändare där den här inställningen aktive ras. 
+Vissa organisationer är oroliga för att användare ska ha åtkomst till både företagsfiler och personliga filer på sina enheter. Du kan arkivera en tjänstbegäran med Microsoft Managed Desktop Operations-teamet och begära att den här inställningen aktiveras. 
 
 ## <a name="settings-you-manage"></a>Inställningar som du hanterar
 
-Det finns många andra principer som Microsoft Managed Desktop ännu inte har angett som en del av vår tjänst. Dessa principer kan konfigureras med hjälp av Microsoft Intune som använder princip tjänsten för [Office-moln](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) . Gör så här för att ange dessa principer:
+Det finns många andra principer som Microsoft Hanterade skrivbord ännu inte har angett som en del av vår tjänst. Du kan konfigurera de här principerna med hjälp av Microsoft Intune, som använder [molnprinciptjänsten för Office.](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) Följ de här stegen om du vill ange dessa principer:
 
-1.  Logga in i administrations centret för Microsoft Endpoint Manager.
+1.  Logga in på administrationscentret för Microsoft Endpoint Manager.
 2.  Välj **program > principer för Office-program > Skapa**
-3.  Gör följande på sidan **Skapa princip** konfiguration:
+3.  Gör **följande på** konfigurationssidan Skapa princip:
     - Ange ett namn.
     - Ange en beskrivning (valfritt).
-    - I **uppgifter** väljer du om den här policyn gäller för alla användare av Microsoft 365-appar för företag, eller bara för användare som anonymt får åtkomst till dokument med Office för webben.
-    - Välj den AAD-baserade säkerhets grupp som är tilldelad till princip konfigurationen. Varje princip konfiguration kan bara tilldelas en grupp, och varje grupp kan bara tilldelas en princip konfiguration.
-    - Konfigurera princip inställningarna så att de tas med i princip konfigurationen. Du kan söka i princip inställnings namnet för att hitta den princip inställning som du vill konfigurera. Du kan också filtrera efter programmet, på om principen är en rekommenderad säkerhets bas linje och om policyn har kon figurer ATS. I kolumnen Platform visas om policyn används för Microsoft 365-appar för Enterprise för Windows-enheter, Office för webben eller alla.
-4.  När du har gjort dina val väljer du **skapa**.
+    - I **tilldelningar** väljer du om den här principen ska gälla för alla användare av Microsoft 365-program för företag eller bara för användare som har anonym åtkomst till dokument via Office för webben.
+    - Markera den AAD-baserade säkerhetsgrupp som har tilldelats principkonfigurationen. Varje principkonfiguration kan bara tilldelas en grupp och varje grupp kan bara tilldelas en principkonfiguration.
+    - Konfigurera principinställningarna så att de inkluderas i principkonfigurationen. Du kan söka på principinställningsnamnet för att hitta den principinställning som du vill konfigurera. Du kan också filtrera på programmet, på om principen är en rekommenderad säkerhetsbaslinje och på om principen har konfigurerats. I plattformskolumnen anges om principen tillämpas på Microsoft 365-appar för företag för Windows-enheter, Office för webben eller alla.
+4.  När du har gjort dina val väljer du **Skapa.**
 
 > [!NOTE]
-> Konfigurations principer för Office stöder endast användarspecifik distribution
+> Konfigurationsprinciper för Office stöder endast användarbaserad distribution

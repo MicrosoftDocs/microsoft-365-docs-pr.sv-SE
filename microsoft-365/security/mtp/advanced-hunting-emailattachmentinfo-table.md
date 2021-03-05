@@ -1,6 +1,6 @@
 ---
 title: Tabellen EmailAttachmentInfo i det avancerade sökschemat
-description: Läs mer om information om e-postbilaga i tabellen EmailAttachmentInfo i det avancerade sökschemat
+description: Läs mer om information om bifogade filer i e-post i tabellen EmailAttachmentInfo i det avancerade sökschemat
 keywords: avancerad sökning, hotsökning, cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, E-postBilagaInfo, nätverksmeddelande-ID, avsändare, mottagare, bifogad fil-ID, namn på bifogad fil, skadlig kod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ mms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b810d7b15ef47a33a0675086219d2193cea00f2e
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: dd1af6e9ece8a3728db74eadc163ce277e6e84eb
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145025"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461636"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -53,8 +53,6 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `FileName` | sträng | Namnet på filen där den inspelade åtgärden tillämpats på |
 | `FileType` | sträng | Filtilläggstyp |
 | `SHA256` | sträng | SHA-256 för filen som den inspelade åtgärden tillämpats på. Det här fältet fylls vanligtvis inte i – använd SHA1-kolumnen när den är tillgänglig. |
-| `MalwareFilterVerdict` | sträng | Information om e-postfiltreringsstacken på om e-postmeddelandet innehåller skadlig programvara: skadlig programvara, inte skadlig programvara |
-| `MalwareDetectionMethod` | sträng | Metod som används för att identifiera skadlig kod i e-postmeddelandet: Motor mot skadlig kod, ryktet Arkiv, Säkra bifogade filer |
 | `ThreatTypes` | sträng | Bedömning av e-postfiltreringsstacken på om e-postmeddelandet innehåller skadlig kod, nätfiske eller andra hot |
 | `ThreatNames` | sträng | Identifieringsnamn för skadlig programvara eller andra hot hittades |
 | `DetectionMethods` | sträng | Metoder som används för att identifiera skadlig kod, nätfiske eller andra hot som påträffas i e-postmeddelandet |

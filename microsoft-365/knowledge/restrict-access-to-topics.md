@@ -11,20 +11,20 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: 6b3d2a4b6cbfc67623cea58b73681b7af7cc4889
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: b8c49c96ace14ac1ba03411b5670d8e77268109a
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107164"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453915"
 ---
 # <a name="restrict-access-to-topics-in-microsoft-viva-topics"></a>Begränsa åtkomst till ämnen i Microsoft Viva-ämnen
 
-I Microsoft Viva kanske intressenter i organisationen vill se till att specifika ämnen inte upptäcks och exponeras för dina licensierade användare. Du kanske arbetar på ett projekt som du inte vill visa information om ännu. Office 365-behörigheter på webbplatser, filer och andra resurser hindrar användare av ämneserfarenheter från att visa känslig information i ämnen, men det finns ytterligare säkerhetsåtgärder för att förhindra att särskilda ämnen upptäcks.
+I Microsoft Viva kan intressenter i organisationen vilja se till att specifika ämnen inte upptäcks och exponeras för dina licensierade användare. Du kanske arbetar på ett projekt som du inte vill visa information om ännu. Office 365-behörigheter på webbplatser, filer och andra resurser hindrar användare av ämneserfarenheter från att visa känslig information i ämnen, men det finns ytterligare säkerhetsåtgärder för att förhindra att särskilda ämnen upptäcks.
 
-Medan knowledge admins control the knowledge network settings to prevent topics from being discovered, knowledge managers and other stakeholders need to know how it is done so that they can work collaboratively.
+Medan kunskapsadministratörer styr nätverksinställningarna för kunskap för att förhindra att ämnen upptäcks, behöver kunskapshanterare och andra intressenter få veta hur det görs så att de kan samarbeta.
 
 > [!Important] 
 > I den här artikeln beskrivs olika sätt att förhindra att ämnen identifieras genom AI eller visas i din miljö som ett ytterligare säkerhetsskydd. Det är viktigt att observera att användare i Viva Topics inte har behörighet att visa något i ett ämne som de inte har åtkomst till via Office 365-behörigheter. Även om en användare kan visa ett ämne kommer dess filer, webbplatser och sidor som de inte har Office 365-behörighet att visa inte att visas för dem. Att se till att behörigheter för känsliga filer ställs in korrekt bör vara det primära säkerhetsåtgärden.

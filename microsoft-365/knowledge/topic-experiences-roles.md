@@ -1,5 +1,5 @@
 ---
-title: Microsoft Viva Topics-roller
+title: Roller i Microsoft Viva-ämnen
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -11,17 +11,17 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 localization_priority: None
 description: Läs mer om användarroller i Viva-ämnen.
-ms.openlocfilehash: e2975201124045574c516aad49bc5059db969b76
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: d5b57e768a1de8bc0447492067371630b2d045f6
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107440"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453951"
 ---
-# <a name="microsoft-viva-topics-roles"></a>Microsoft Viva Topics-roller 
+# <a name="microsoft-viva-topics-roles"></a>Roller i Microsoft Viva-ämnen 
 
 När du använder Viva Topics i Microsoft 365-miljön kan användarna ha följande roller:
 -   Ämnesläsare
@@ -33,9 +33,9 @@ När du använder Viva Topics i Microsoft 365-miljön kan användarna ha följan
 
 Ämnesvyer är användare i organisationen som kan visa ämnen som markerats på sin moderna SharePoint-webbplats, Microsoft Search via SharePoint och Office.com och ämnescentret. De kan visa mer information om ett ämne på ämnessidan. 
 
-För att ämnes höjdpunkter och deras ämnessidor ska vara synliga för ett ämnesvisningsprogram måste användaren:
+För att ämnes höjdpunkter och deras ämnessidor ska vara synliga för en ämnesläsare måste användaren:
 -   [Tilldelas en Viva Topics-licens](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) av Microsoft 365-administratören.
--   Se till att du har tillgång till olika ämnen. Den här uppgiften utförs av kunskapsadministratören på inställningssidan för Viva-ämnen i administrationscentret för Microsoft 365.
+-   Ha tillåtelse att ha insyn i ämnen. Den här uppgiften utförs av kunskapsadministratören på inställningssidan för Viva-ämnen i administrationscentret för Microsoft 365.
 
 
 ## <a name="topic-contributors"></a>Ämnesdeltagare
@@ -53,7 +53,7 @@ Om du vill skapa och redigera ett ämne måste användaren:
 
 ## <a name="knowledge-managers"></a>Kunskapschefer
 
-Kunskapshanterare är användare som hanterar ämnen i organisationen.  Ämneshanteringen görs via sidan Hantera ämnen i ämnescentret, och den visas bara för Knowledge-chefer.
+Kunskapshanterare är användare som hanterar ämnen i organisationen.  Ämneshanteringen görs via sidan Hantera ämnen i ämnescentret och den visas bara för Knowledge-chefer.
 
 På sidan Hantera ämnen kan kunskapshanterare göra följande:
 -   Visa AI-föreslagna ämnen.
@@ -71,7 +71,7 @@ Användare som har goda kunskaper om ditt företag kan vara bra som kandidater t
 
 ## <a name="knowledge-admins"></a>Kunskapsadministratörer
 
-Kunskapsadministratörer är administratörer som konfigurerar Viva-ämnen i din Microsoft 365-miljö. De hanterar även Viva Topics-inställningarna när inställningarna är klara. Rollen som kunskapsadministratör kräver att du är global Microsoft 365- eller SharePoint-administratör eftersom konfigurationen och hanteringen utförs i administrationscentret för Microsoft 365.
+Kunskapsadministratörer är administratörer som konfigurerar Viva-ämnen i din Microsoft 365-miljö. De hanterar även Viva Topics-inställningarna när inställningarna är klara. Rollen som kunskapsadministratör kräver att du är global Microsoft 365- eller SharePoint-administratör eftersom konfiguration och hantering utförs i administrationscentret för Microsoft 365.
 Under installationen kan knowledge admins konfigurera Viva Topics till:
 
 -   Välj vilka SharePoint-webbplatser som ska crawlas för ämnen.

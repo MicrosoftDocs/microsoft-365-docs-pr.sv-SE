@@ -10,15 +10,15 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 localization_priority: None
 description: Lär dig hur du hittar resurser för Microsoft Viva-ämnen.
-ms.openlocfilehash: d5c54bda3432fc9a1ff5ce4342cc523544eb6e78
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 31031697b7825b725c020952a6217b278aa09f02
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242872"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454129"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Introduktion till Microsoft Viva-ämnen
 
@@ -31,7 +31,7 @@ ms.locfileid: "50242872"
 
 Viva Topics är en Office 365-tjänst som hjälper organisationer att omvandla information till kunskap.
 
-Resurserna på den här sidan har utformats för att du ska komma igång med att lära dig mer om och använda Viva Topics i din organisation.
+Resurserna på den här sidan är utformade för att du ska komma igång med att lära dig mer om och använda Viva-ämnen i din organisation.
 
 ## <a name="get-started"></a>Komma igång
 
@@ -42,7 +42,7 @@ Resurserna i det här avsnittet hjälper dig att lära dig mer om viva-ämnen oc
 |Läs mer om Viva-ämnen|[Översikt över Microsoft Viva-ämnen](topic-experiences-overview.md)|
 |Lär dig hur ämnen upptäcks och föreslås av AI|[Upptäckt av Microsoft Viva Topics](topic-experiences-discovery.md)|
 |Läs mer om ämnessäkerhet|[Säkerhet och sekretess för Microsoft Viva](topic-experiences-security-privacy.md)|
-|Lär dig hur du hämtar Viva-ämnen|[Microsoft Viva Topics-produktsida](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
+|Lär dig hur du hämtar Viva Topics|[Microsoft Viva Topics-produktsida](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
 |Se resurser i Microsoft Tech Community Resurscenter|[Microsoft Viva Topics Tech Community](https://resources.techcommunity.microsoft.com/viva-topics/)|
 
 
@@ -64,7 +64,7 @@ Resurserna i det här avsnittet hjälper administratören i organisationen att k
 |Lär dig hur du konfigurerar Microsoft Viva|[Konfigurera Microsoft Viva](set-up-topic-experiences.md)|
 |Lär dig hur du konfigurerar användarbehörigheter|[Hantera ämnesbehörigheter](topic-experiences-user-permissions.md)|
 |Lär dig hur du hanterar vem som kan visa ämnen|[Hantera ämnes synlighet](topic-experiences-knowledge-rules.md)|
-|Lär dig hur du hanterar inställningar för ämnesidentifiering|[Hantera ämnesidentifiering](topic-experiences-discovery.md)|
+|Lär dig hur du hanterar inställningar för identifiering av ämnen|[Hantera ämnesidentifiering](topic-experiences-discovery.md)|
 
 ## <a name="work-with-topics"></a>Arbeta med ämnen
 

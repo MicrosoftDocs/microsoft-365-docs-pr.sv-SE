@@ -1,5 +1,5 @@
 ---
-title: Namnändringar i det avancerade sökschemat i Microsoft 365 Defender
+title: Namnge ändringar i det avancerade sökschemat i Microsoft 365 Defender
 description: Spåra och granska namnändringar – tabeller och kolumner i det avancerade sökschemat
 keywords: avancerad sökning, hotsökning, cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, data, namnändringar, namnbyte, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3f03543b03dca5fe426700ffff4f5c6edb8fa3c7
-ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
+ms.openlocfilehash: cd06286083297d0930270868b99a14f8ddb2f4b2
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50066875"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461673"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Avancerat schema för sök – namnändringar
 
@@ -73,6 +73,37 @@ Namnändringar tillämpas automatiskt på frågor som sparas i säkerhetscentret
 | `ServiceSource` |Azure ATP    |Microsoft Defender for Identity | Rebranding |
 
 `DetectionSource`är tillgängligt i [tabellen AlertInfo.](advanced-hunting-alertinfo-table.md) `ServiceSource`är tillgängligt i [tabellerna AlertEvidence](advanced-hunting-alertevidence-table.md) [och AlertInfo.](advanced-hunting-alertinfo-table.md) 
+
+## <a name="february-2021"></a>Februari 2021
+
+1. I [tabellerna EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) och [EmailEvents](advanced-hunting-emailevents-table.md) inaktuelle vi kolumnerna och `MalwareFilterVerdict` ersatt dem med `PhishFilterVerdict` `ThreatTypes` kolumnen. Vi har även utfasat `MalwareDetectionMethod` `PhishDetectionMethod` kolumnerna och ersatt dem med `DetectionMethods` kolumnen. På så sätt kan vi ge mer information under de nya kolumnerna. Mappningen anges nedan.
+
+| Tabellnamn | Ursprungligt kolumnnamn | Nytt kolumnnamn | Orsak till ändring
+|--|--|--|--|
+| `EmailAttachmentInfo` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Inkludera fler identifieringsmetoder |
+| `EmailAttachmentInfo`  | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Inkludera fler hottyper |
+| `EmailEvents` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Inkludera fler identifieringsmetoder |
+| `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Inkludera fler hottyper |
+
+
+2. I `EmailAttachmentInfo` tabellerna `EmailEvents` och i tabellerna lade vi till kolumnen `ThreatNames` för att ge mer information om e-posthotet. Den här kolumnen innehåller värden som Spam eller Phish.
+
+3. I [tabellen DeviceInfo](advanced-hunting-deviceinfo-table.md) har vi ersatt kolumnen `DeviceObjectId` med baserat på feedback från `AadDeviceId` kunder.
+
+4. I [tabellen DeviceEvents](advanced-hunting-deviceevents-table.md) uppdaterade vi flera ActionType-namn för att bättre beskriva åtgärden. Information finns nedan.
+
+| Tabellnamn | Ursprungligt ActionType-namn | Nytt ActionType-namn | Orsak till ändring
+|--|--|--|--|
+| `DeviceEvents` | `DlpPocPrintJob` | `FilePrinted` | Feedback från kunder |
+| `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | Feedback från kunder |
+| `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Feedback från kunder |
+| `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Feedback från kunder |
+| `DeviceEvents` | `AntivirusDetection` | `EdrBlock` | Feedback från kunder |
+
+
+
+
+
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)

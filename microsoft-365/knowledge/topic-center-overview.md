@@ -11,15 +11,15 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: d9965c04335e77abc449cbc155ece63372869ee9
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 54e513fc12a42d2779ee5f35628781676adc0f48
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107750"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453999"
 ---
 # <a name="topic-center-overview"></a>Översikt över ämnescentret
 
@@ -73,7 +73,7 @@ När en användare bekräftar sin anslutning till ett ämne kan användaren gör
 För att kunna arbeta **i avsnittet Hantera** ämnen i  Ämnescenter måste du ha den behörighet för Hantera ämnen som krävs för rollen som knowledge manager. Administratören kan tilldela de här behörigheterna till användare under [](topic-experiences-knowledge-rules.md) konfigurationen av knowledge [management,](set-up-topic-experiences.md)eller så kan nya användare läggas till efteråt av en administratör via administrationscentret för Microsoft 365.
 
 På sidan Hantera ämnen i instrumentpanelen för ämnen visas alla ämnen, som du har tillgång till, som har identifierats från dina angivna källplatser. Varje ämne visar det datum då ämnet upptäcktes. En användare som har tilldelats **behörigheten** Hantera ämnen kan granska de ofirmerade avsnitten och välja att:
-- Bekräfta ämnet: Markerar avsnittet för användare som har åtkomst till filer och sidor som är relaterade till avsnittet och gör att de kan se det associerade ämneskortet och ämnessidan.
+- Bekräfta ämnet: Markerar avsnittet för användare som har åtkomst till filer och sidor som är relaterade till ämnet och gör att de kan se det associerade ämneskortet och ämnessidan.
 - Publicera ämnet: Redigera ämnesinformationen för att förbättra kvaliteten på det ämne som först identifierades och framhäver ämnet för alla användare som har åtkomst till ämnen. 
 - Avvisa ämnet: Gör avsnittet inte tillgängligt för användare. Avsnittet flyttas till fliken **Avvisat och** kan bekräftas senare om det behövs. 
 

@@ -16,17 +16,17 @@ ms.collection:
 description: Administratörer kan lära sig att identifiera specifika grupper av användare med användartaggar i Microsoft Defender för Office 365 abonnemang 2. Taggfiltrering är tillgängligt för aviseringar, rapporter och undersökningar i Microsoft Defender för Office 365 för att snabbt identifiera taggade användare.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 62d858fe5962b94f536d4ccbd712e21bdd5caa57
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 6e5ddffad6405f48a9af55b5123729eb256064a7
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290135"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453651"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Användartaggar i Microsoft Defender för Office 365
 
 > [!NOTE]
-> Funktionen med användartaggar är i förhandsversion, inte tillgänglig för alla och kan komma att ändras. Mer information om versionsschemat finns i Microsoft [365-översikten.](https://www.microsoft.com/microsoft-365/roadmap)
+> Funktionen med användartaggar är i förhandsversion, är inte tillgänglig för alla och kan komma att ändras. Mer information om versionsschemat finns i Microsoft [365-översikten.](https://www.microsoft.com/microsoft-365/roadmap)
 
 Användartaggar är identifierare för specifika användargrupper i [Microsoft Defender för Office 365.](office-365-atp.md) Det finns två typer av användartaggar:
 
@@ -47,7 +47,7 @@ I den här artikeln förklaras hur du konfigurerar användartaggar & Säkerhets-
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Gå direkt till sidan **med användartaggar** genom att <https://protection.office.com/userTags> öppna.
+- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Gå direkt till sidan **med användartaggar** genom att <https://protection.office.com/userTags> öppna.
 
 - Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
   - Om du vill skapa, ändra och ta bort användartaggar måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.**
@@ -59,7 +59,7 @@ I den här artikeln förklaras hur du konfigurerar användartaggar & Säkerhets-
   **Anmärkningar**:
 
   - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
-  - Hantering av användartaggar styrs av **rollerna Taggläsare,** **Taggdeltagare** **och Tagghanteraren.**
+  - Hantering av användartaggar styrs av **rollerna Taggläsare** **och Tagghanteraren.**
 
 - Du kan också hantera och övervaka prioriterade konton i administrationscentret för Microsoft 365. Instruktioner finns i Hantera [och övervaka prioriterade konton.](../../admin/setup/priority-accounts.md)
 
@@ -120,4 +120,4 @@ I den här artikeln förklaras hur du konfigurerar användartaggar & Säkerhets-
 
 1. Gå till Användartaggar för hantering **av** hot i \> **Säkerhetscenter.**
 
-2. Markera den **användartagg du** vill ta bort på sidan med användartaggar som öppnas, klicka på Ta bort tagg och välj sedan **Ja,** ta bort i varningen som visas.
+2. På sidan **med användartaggar** som öppnas markerar du den användartagg du vill ta bort, klickar på Ta bort tagg och väljer Sedan **Ja,** ta bort i varningen som visas.

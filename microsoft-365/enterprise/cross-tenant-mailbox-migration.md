@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 237d47502d28ec43978cef2c16e049ac9e90d7b1
-ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
+ms.openlocfilehash: d81e272cfe50aa8379135406cbe538fbc8a18cb5
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50040562"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454235"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migrering av postlådor mellan klientorganisationen (förhandsversion)
 
@@ -27,7 +27,7 @@ Tidigare när en Exchange Online-klientorganisation behövde flytta postlådor t
 
 I samband med sammanslagningar eller delningar behöver du vanligtvis möjligheten att flytta användare och innehåll till en ny klientorganisation. När målklientorganisationens administratör kör flytten kallas den pull-flytt, ungefär som migreringar av molnbaserad registrering lokalt.
 
-Exchange-postlådeflyttningar mellan klientorganisationen fungerar helt och hållet som självservice av innehavaradministratörerna och använder välkända gränssnitt som kan skriptas i större arbetsflöden som behövs för att flytta över användare till den nya organisationen. Administratörer kan använda cmdleten, som är tillgänglig via rollen Flytta postlådor, för att utföra flyttningar `New-MigrationBatch` mellan klientorganisationen. Flyttningsprocessen omfattar autentiseringskontroller av klientorganisationen under synkronisering och slutförande av postlådan. 
+Flyttningar av Exchange-postlådor mellan klientorganisationen sker helt och hållet av innehavaradministratörerna, med välkända gränssnitt som kan skrivas i större arbetsflöden som behövs för att flytta över användare till den nya organisationen. Administratörer kan använda cmdleten, som är tillgänglig via rollen Flytta postlådor, för att utföra flyttningar `New-MigrationBatch` mellan klientorganisationen. Flyttningsprocessen omfattar autentiseringskontroller för klientorganisationen under synkronisering och slutförande av postlådan. 
  
 Användare som migrerar måste finnas i målklientorganisationens Exchange Online-system som MailUsers, markerat med specifika attribut för att aktivera flyttningar mellan klientorganisationen. Systemet kommer att misslyckas för användare som inte är korrekt konfigurerade i målklientorganisationen.  
 
@@ -49,7 +49,7 @@ Funktionen för flytt av [](https://docs.microsoft.com/azure/key-vault/basic-con
 
 Innan du startar bör du kontrollera att du har de behörigheter som krävs för att köra distributionsskripten för att konfigurera Azure-nyckelvalv, programmet Flytta postlåda, EXO-migreringsslutpunkten och EXO-organisationsrelationen. Vanligtvis har den globala administratören behörighet att utföra alla konfigurationssteg.
 
-Dessutom krävs e-postaktiverade säkerhetsgrupper i källklientorganisationen innan konfigurationen körs. De här grupperna används för att begränsa listan över postlådor som kan flyttas från källklientorganisationen (eller som ibland kallas för resurs) till målklientorganisationen. På så sätt kan källklientorganisationens administratör begränsa eller begränsa den specifika uppsättning postlådor som ska flyttas, så att oavsiktliga användare inte migreras. Kapslade grupper stöds inte.
+Dessutom krävs e-postaktiverade säkerhetsgrupper i källklientorganisationen innan konfigurationen körs. Grupperna används för att begränsa listan över postlådor som kan flyttas från källklientorganisationen (eller som ibland kallas för resurs) till målklientorganisationen. På så sätt kan källklientorganisationens administratör begränsa eller begränsa den specifika uppsättning postlådor som ska flyttas, så att oavsiktliga användare inte migreras. Kapslade grupper stöds inte.
 
 Du måste också kommunicera med ditt betrodda partnerföretag (som du ska flytta postlådor till) för att få deras Klientorganisations-ID för Microsoft 365. Detta klientorganisations-ID används i fältet `DomainName` Organisationsrelation.
 
@@ -92,15 +92,15 @@ Förbered källklientorganisationen:
 #### <a name="step-by-step-instructions-for-the-target-tenant-admin"></a>Stegvisa instruktioner för målklientorganisationens administratör
 
 1. Ladda ned SetupCrossTenantRelationshipForTargetTenant.ps1 skript för konfigurationen av målklientorganisationen från [GitHub-databasen.](https://github.com/microsoft/cross-tenant/releases/tag/Preview) 
-2. Spara skriptet (SetupCrossTenantRelationshipForTargetTenant.ps1) på datorn där du ska köra skriptet.
+2. Spara skriptet (SetupCrossTenantRelationshipForTargetTenant.ps1) på datorn som du ska köra skriptet från.
 3. Skapa en Fjärr-PowerShell-anslutning till Exchange Online-målklientorganisationen. Kontrollera igen att du har de behörigheter som krävs för att köra distributionsskripten för att konfigurera Azure-nyckelvalvslagring och -certifikat, programmet Flytta postlåda, EXO-migreringsslutpunkten och EXO-organisationsrelationen.
 4. Ändra filmappskatalogen till skriptplatsen eller kontrollera att skriptet för närvarande är sparat på den plats som för närvarande finns i Remote PowerShell-sessionen.
 5. Kör skriptet med följande parametrar och värden.
 
     | Parameter | Value | Obligatorisk eller valfri
     |---------------------------------------------|-----------------|--------------|
-    | -TargetTenantDomain                         | Målklientorganisationens domän, till exempel contoso \. onmicrosoft.com. | Obligatoriskt |
-    | -ResourceTenantDomain                       | Källklientorganisationens domän, till exempel fabrikam \. onmicrosoft.com. | Obligatoriskt |
+    | -TargetTenantDomain                         | Målklientorganisationens domän, till exempel fabrikam \. onmicrosoft.com. | Obligatoriskt |
+    | -ResourceTenantDomain                       | Källklientorganisationens domän, till exempel contoso \. onmicrosoft.com. | Obligatoriskt |
     | -ResourceTenantAdminEmail                   | Källklientorganisationens e-postadress. Det här är källklientorganisationens administratör som ska godkänna användningen av postlådemigreringsprogrammet som skickas från måladministratören. Det här är administratören som får inbjudan via e-post för programmet. | Obligatoriskt |
     | -ResourceTenantId                           | Organisationens källorganisations-ID (GUID). | Obligatoriskt |
     | -SubscriptionId                             | Azure-prenumerationen som ska användas för att skapa resurser. | Obligatoriskt |
@@ -116,7 +116,7 @@ Förbered källklientorganisationen:
     ||||
 
     >[!Note]
-    > Se till att du har installerat Azure AD PowerShell-modulen innan du kör skripten. Mer information om ![ ](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-5.1.0) installationsannstruktionerna finns här
+    > Se till att du har installerat Azure AD PowerShell-modulen innan du kör skripten. Se här ![ för ](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-5.1.0) installationsannstruktionerna
 
 6. Skriptet pausas och du uppmanas att acceptera eller godkänna migreringsprogrammet för Exchange-postlådor som skapades under den här processen. Här är ett exempel.
 
@@ -187,9 +187,9 @@ Inställningarna för måladministratören är nu slutförda!
     | Parameter | Value |
     |-----|------|
     | -SourceMailboxMovePublishedScopes | E-postaktiverad säkerhetsgrupp som skapats av källklientorganisationen för de identiteter/postlådor som omfattas för migreringen. |
-    | -ResourceTenantDomain | Källklientorganisationens domännamn, till exempel fabrikam \. onmicrosoft.com. |
+    | -ResourceTenantDomain | Källklientorganisationens domännamn, till exempel contoso \. onmicrosoft.com. |
     | -ApplicationId | Azure-program-ID (GUID) för programmet som användes för migreringen. Program-ID som är tillgängligt via Azure-portalen (Azure AD, Enterprise Applications, appnamn, program-ID) eller ingår i din e-postinbjudan.  |
-    | -TargetTenantDomain | Målklientorganisationens domännamn, till exempel contoso \. onmicrosoft.com. |
+    | -TargetTenantDomain | Målklientorganisationens domännamn, till exempel fabrikam \. onmicrosoft.com. |
     | -TargetTenantId | Klientorganisations-ID för målklientorganisationen. Till exempel Azure AD-klientorganisationens ID för contoso \. onmicrosoft.com klientorganisation. |
     |||
 
@@ -362,12 +362,12 @@ Du måste se till att följande objekt och attribut anges i målorganisationen.
 
 3. Icke-hybridmålklienter kan ändra kvoten för mappen Återställningsbara objekt för MailUsers innan migreringen genom att köra följande kommando för att aktivera Bevarande av juridiska skäl för MailUser-objektet och öka kvoten till 100 GB: `Set-MailUser -EnableLitigationHoldForMigration $TRUE` . Observera att detta inte fungerar för klientorganisationen i hybriden.
 
-4. Användare i målorganisationen måste vara licensierade med lämpliga Exchange Online-prenumerationer som gäller för organisationen. Du kan använda en licens i förväg för en postlådeflyttning men BARA när mål-MailUser är korrekt konfigurerad med ExchangeGUID och proxyadresser. Om du tillämpar en licens innan ExchangeGUID används resulterar det i en ny postlåda etablerad i målorganisationen. 
+4. Användare i målorganisationen måste vara licensierade med lämpliga Exchange Online-prenumerationer som gäller för organisationen. Du kan använda en licens i förväg för en postlådeflyttning men BARA när mål-MailUser är korrekt konfigurerad med ExchangeGUID och proxyadresser. Om du tillämpar en licens innan ExchangeGUID används resulterar det i en ny postlåda som etableras i målorganisationen. 
 
     > [!Note]
     > När du tillämpar en licens på ett objekt av typen Mailbox eller MailUser rensas alla SMTP-proxyAddresses för att säkerställa att endast verifierade domäner ingår i matrisen Exchange EmailAddresses. 
 
-5. Du måste se till att målet MailUser inte har någon tidigare ExchangeGuid som inte matchar käll-ExchangeGuid. Detta kan inträffa om mål-e-postinnehavaren tidigare har licensierats för Exchange Online och etablerat en postlåda. Om målet MailUser tidigare var licensierat för eller hade en ExchangeGuid som inte matchar käll-ExchangeGuid måste du rensa den molnbaserade e-postanvändaren. Du kan köra de här molnbaserade e-tackanvändarna. `Set-User <identity> -PermanentlyClearPreviousMailboxInfo`  
+5. Du måste se till att målet MailUser inte har någon tidigare ExchangeGuid som inte matchar käll-ExchangeGuid. Det här kan inträffa om mål-e-postinnehavaren tidigare har licensierats för Exchange Online och etablerat en postlåda. Om målet MailUser tidigare var licensierat för eller hade en ExchangeGuid som inte matchar käll-ExchangeGuid måste du rensa den molnbaserade e-postanvändaren. Du kan köra de här molnbaserade e-tackanvändarna. `Set-User <identity> -PermanentlyClearPreviousMailboxInfo`  
 
     > [!Caution]
     > Den här processen är bestående. Om objektet har en softDeleted-postlåda går det inte att återställa det efter den här punkten. När du rensat kan du synkronisera rätt ExchangeGuid till målobjektet, så ansluter MRS källpostlådan till den nya målpostlådan. (Referens EHLO-bloggen om den nya parametern.)  
@@ -610,7 +610,7 @@ Postlådan dekrypteras innan du flyttar den. Se till att kundnyckeln är konfigu
 
 I tabellen som visas här [](https://docs.microsoft.com/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) får du hjälp med att planera migreringen. Där finns riktlinjer för när du kan förvänta dig att postlådemigrering i grupp eller enskilda migreringar ska slutföras. Uppskattningen baseras på en dataanalys av tidigare kundmigrering. Eftersom varje miljö är unik kan den exakta migreringshastigheten variera.  
 
-Kom ihåg att den här funktionen är i förhandsgranskningsläge och att SLA och tillämpliga servicenivåer inte gäller för prestanda- och tillgänglighetsproblem under förhandsgranskningsstatusen för den här funktionen.
+Kom ihåg att den här funktionen är i förhandsgranskningsläge och att SLA och eventuellt tillämpliga servicenivåer inte gäller för prestanda- eller tillgänglighetsproblem under förhandsgranskningsstatusen för den här funktionen.
 
 ## <a name="known-issues"></a>Kända problem  
 
@@ -633,7 +633,7 @@ Kom ihåg att den här funktionen är i förhandsgranskningsläge och att SLA oc
 
    MailUser-objekt är pekare till icke-lokala postlådor. När det gäller postlådemigrering mellan klientorganisationen använder vi MailUser-objekt för att representera antingen källpostlådan (från målorganisationens perspektiv) eller målpostlådan (från källorganisationens perspektiv). MailUsers har en ExternalEmailAddress (targetAddress) som pekar på smtp-adressen för den faktiska postlådan (ProxyTest@fabrikam.onmicrosoft.com) och primarySMTP-adressen som representerar den SMTP-adress som visas för postlådeanvändaren i katalogen. Vissa organisationer väljer att visa den primära SMTP-adressen som en extern SMTP-adress, inte som en adress som ägs/verifieras av den lokala klientorganisationen (t.ex. fabrikam.com än som contoso.com).  När ett Exchange-tjänstplansobjekt tillämpas på MailUser via licensieringsåtgärder, ändras den primära SMTP-adressen till att visas som en domän som verifierats av den lokala organisationen (contoso.com). Det finns två möjliga orsaker:
    
-   - När ett Exchange-tjänstabonnemang används för en MailUser börjar Azure AD-processen att tillämpa proxysening för att säkerställa att den lokala organisationen inte kan skicka e-post, förfalskning eller e-post från en annan klientorganisation. Alla SMTP-adresser på ett mottagarobjekt med de här tjänstplanerna tas bort om adressen inte verifieras av den lokala organisationen. Som vi ser i exemplet verifieras Fabikam.com INTE av contoso.onmicrosoft.com-klientorganisationen, så borttagningen tar bort det fabrikam.com domänen. Om du vill ha kvar dessa externa domäner i MailUser, antingen före eller efter migreringen, måste du ändra migreringsprocesserna till strips-licenser efter flytten eller innan flytten slutförts för att säkerställa att användarna har den förväntade externa varumärkeskopplingen tillämpad. Du måste se till att postlådeobjektet har rätt licens för att inte påverka e-posttjänsten.<br/><br/>Här visas ett exempelskript för att ta bort tjänstplaner för en MailUser Contoso.onmicrosoft.com klientorganisationen.
+   - När ett Exchange-tjänstabonnemang används för en MailUser börjar Azure AD-processen att tillämpa proxysening för att säkerställa att den lokala organisationen inte kan skicka e-post, förfalskning eller e-post från en annan klientorganisation. Alla SMTP-adresser på ett mottagarobjekt med de här tjänstplanerna tas bort om adressen inte verifieras av den lokala organisationen. Som vi ser i exemplet verifieras Fabikam.com INTE av contoso.onmicrosoft.com-klientorganisationen, så borttagningen tar bort det fabrikam.com domänen. Om du vill ha kvar dessa externa domäner i MailUser, antingen före migreringen eller efter migreringen, måste du ändra migreringsprocesserna till ränder efter att flytten slutförts eller innan flytten för att säkerställa att användarna har den förväntade externa varumärkeskopplingen tillämpad. Du måste se till att postlådeobjektet har rätt licens för att inte påverka e-posttjänsten.<br/><br/>Här visas ett exempelskript för att ta bort tjänstplaner för en MailUser Contoso.onmicrosoft.com klientorganisationen.
 
     ```powershell
     $LO = New-MsolLicenseOptions -AccountSkuId "contoso:ENTERPRISEPREMIUM" DisabledPlans 

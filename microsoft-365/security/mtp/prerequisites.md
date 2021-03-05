@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ee1777debdb91a6ac73737db2db48e434ed3e2e2
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: afa5cd42545eddafb1d0ec1a6d88eb0903e07820
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930096"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454557"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Förutsättningar för Microsoft 365 Defender
 
@@ -35,13 +35,13 @@ ms.locfileid: "49930096"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Läs mer om licensiering och andra krav för etablering och användning av [Microsoft 365 Defender.](microsoft-threat-protection.md)
+Läs mer om licensiering och andra krav för etablering och användning [av Microsoft 365 Defender.](microsoft-threat-protection.md)
 
 ## <a name="licensing-requirements"></a>Licenskrav
 Alla dessa licenser ger dig tillgång till Microsoft 365 Defender-funktionerna i Microsoft 365 säkerhetscenter utan extra kostnad:
 
 - Microsoft 365 E5 eller A5
-- Microsoft 365 E5- eller A5-säkerhet
+- Microsoft 365 E5 Säkerhet eller A5-säkerhet
 - Windows 10 Enterprise, E5 eller A5
 - Enterprise Mobility + Security (EMS) E5 eller A5 
 - Office 365 E5 eller A5
@@ -50,12 +50,9 @@ Alla dessa licenser ger dig tillgång till Microsoft 365 Defender-funktionerna i
 - Microsoft Cloud App Security
 - Defender för Office 365 (abonnemang 2)
 
-> [!NOTE]
-> Utvärderingslicenser för Office 365 ger för närvarande inte åtkomst till Microsoft 365 Defender.
-
 Mer information finns i [Microsoft 365 Enterprise-tjänstplaner.](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)
 
-> Har du ingen licens ännu? [Prova eller köp en Microsoft 365-prenumeration](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
+> Har du inte licens än? [Prova eller köp en Microsoft 365-prenumeration](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
 
 ### <a name="check-your-existing--licenses"></a>Kontrollera dina befintliga licenser
 Gå till administrationscentret för Microsoft 365[(admin.microsoft.com)](https://admin.microsoft.com/)för att visa dina befintliga licenser. Gå till Faktureringslicenser i  >  **administrationscentret.**

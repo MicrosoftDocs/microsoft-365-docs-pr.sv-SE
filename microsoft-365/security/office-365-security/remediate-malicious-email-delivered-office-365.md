@@ -15,12 +15,12 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b32982298a368dc435dad8b6c09188321d099e2
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 6c5c94ce3994424a6d4b6f4a4ac587f5cc5e33ca
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289239"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454703"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Åtgärda skadlig e-post som levereras i Office 365
 
@@ -29,10 +29,10 @@ ms.locfileid: "50289239"
 **Gäller för**
 - [Microsoft Defender för Office 365 abonnemang 2](office-365-atp.md)
 
-Åtgärd innebär att vidta en bestämt åtgärd mot ett hot. Skadliga e-postmeddelanden som skickas till organisationen kan rensas antingen av systemet, via autorensning utan timme (ZAP) eller av säkerhetsgrupper genom åtgärder som att flytta till *Inkorgen,* flytta till *skräppost,* gå till borttagna *objekt,* mjuk borttagning eller permanent *borttagning.* Med Microsoft Defender för Office 365 P2/E5 kan säkerhetsteam åtgärda hot via e-post och samarbete med hjälp av manuell och automatisk undersökning.
+Åtgärd innebär att vidta en föreskriven åtgärd mot ett hot. Skadliga e-postmeddelanden som skickas till organisationen kan rensas antingen av systemet, via autorensning utan timme (ZAP) eller av säkerhetsgrupper genom åtgärder som att flytta till *Inkorgen,* flytta till *skräppost,* gå till borttagna *objekt,* mjuk borttagning eller permanent *borttagning.* Med Microsoft Defender för Office 365 P2/E5 kan säkerhetsteam åtgärda hot via e-post och samarbete med hjälp av manuell och automatiserad undersökning.
 
 > [!NOTE]
-> För att åtgärda skadlig e-post behöver säkerhetsteam den *sök- och rensningsroll* som de har tilldelats. Rolltilldelning utförs via behörigheter i säkerhets- och efterlevnadscentret.
+> För att åtgärda skadlig e-post behöver säkerhetsteam *sök- och rensningsrollen* tilldelad till dem. Rolltilldelning utförs via behörigheter i säkerhets- och efterlevnadscentret.
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>Vad du behöver veta innan du börjar
 
@@ -49,31 +49,31 @@ Säkerhetsteam kan använda Hotutforskaren för att välja e-postmeddelanden på
 
 - Välj e-postmeddelanden för hand: Använd filter i olika vyer. Välj upp till 100 e-postmeddelanden att åtgärda.
 
-- Frågeval: Markera en hel fråga med hjälp av den översta **knappen Markera** alla. Samma fråga visas också i information om inskickade e-postmeddelanden i åtgärdscenter.
+- Frågeval: Markera en hel fråga med hjälp av den översta **knappen Markera alla.** Samma fråga visas också i information om inskickade e-postmeddelanden i åtgärdscenter.
 
-- Frågeval med undantag: Ibland vill säkerhetsåtgärder grupper åtgärda e-postmeddelanden genom att markera en hel fråga och utesluta vissa e-postmeddelanden från frågan manuellt. För att göra det kan en administratör använda kryssrutan Markera **alla och rulla** nedåt för att utesluta e-postmeddelanden manuellt. Frågan kan innehålla högst 1 000 e-postmeddelanden. Det maximala antalet undantag är 100.
+- Frågeval med undantag: Ibland vill säkerhetsåtgärder grupper åtgärda e-postmeddelanden genom att markera en hel fråga och exkludera vissa e-postmeddelanden från frågan manuellt. För att göra det kan en administratör använda kryssrutan Markera **alla och rulla** nedåt för att utesluta e-postmeddelanden manuellt. Frågan kan innehålla högst 1 000 e-postmeddelanden. Det maximala antalet undantag är 100.
 
-När e-postmeddelanden har valts via Hotutforskaren kan du börja åtgärda genom att vidta direkta åtgärder eller genom att köa e-postmeddelanden för en åtgärd:
+När e-postmeddelanden markeras i Hotutforskaren kan du börja åtgärda genom att vidta direkt åtgärd eller genom att köa e-postmeddelanden för en åtgärd:
 
-- Direktgodkännande: När åtgärder som att flytta till Inkorgen, flytta till *skräppost,* flytta till borttagna *objekt,* mjuk borttagning eller permanent borttagning väljs av säkerhetspersonalen som har rätt behörighet och nästa steg i åtgärden följs, så utförs den valda åtgärden.   En tillfällig utfällning visar den åtgärd som pågår.
+- Direktgodkännande: När åtgärder som att flytta till Inkorgen, gå till *skräppost,* flytta till borttagna *objekt,* mjuk borttagning eller permanent borttagning väljs av säkerhetspersonalen som har rätt behörighet och nästa steg i åtgärden följs, åtgärden utförs av den valda åtgärden.   En tillfällig utfällning visar den åtgärd som pågår.
 
 - Tvåstegsgodkännande: Åtgärden "Lägg till för åtgärd" kan vidtas av administratörer som inte har rätt behörighet eller som måste vänta på att utföra åtgärden. I det här fallet läggs de riktade e-postmeddelandena till i en åtgärdsbehållare. Godkännande krävs innan åtgärd utförs.
 
 **Automatiserade undersöknings- och** svarsåtgärder utlöses av varningar eller säkerhetsåtgärder från Threat Explorer. Dessa kan omfatta rekommenderade åtgärder som måste godkännas av ett team för säkerhetsåtgärder. De här åtgärderna finns på **fliken Åtgärd** i den automatiska undersökningen.
 
 > [!div class="mx-imgBorder"]
-> [![E-post med skadlig programvara på sidan "Zapped" visar tid för Zap-körning.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
+> [![E-post med skadlig programvara på sidan "Zapped" visar tiden för Zap-körning.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
 Alla åtgärder (antingen direkt godkännande eller tvåstegsgodkännande) som skapats i Hotutforskaren samt godkända åtgärder från automatiserade undersökningar visas i Åtgärdscenter. Du kommer åt dem via den vänstra **navigeringspanelen** under \> **Granska åtgärdscenter.**
 
 > [!div class="mx-imgBorder"]
 > [![Åtgärdscenter med en lista över hot per datum och allvarlighetsgrad.](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
 
-Åtgärdscenter visar alla åtgärder för de senaste 30 dagarna. Åtgärder som utförs i Threat Explorer listas av namnet som teamet för säkerhetsåtgärder gav när åtgärd skapades. Åtgärder som vidtas genom automatiserade undersökningar har rubriker som börjar med den relaterade aviseringen som utlöser undersökningen, till exempel "Zap e-postkluster... ".
+Åtgärdscenter visar alla åtgärder för de senaste 30 dagarna. Åtgärder som utförs i Threat Explorer listas av namnet som teamet för säkerhetsåtgärder gav när åtgärd skapades. Åtgärder som vidtas genom automatiserade undersökningar har rubriker som börjar med den relaterade aviseringen som utlöste undersökningen, till exempel "Zap email cluster... ".
 
 Öppna ett åtgärdsobjekt för att visa information om det, inklusive dess namn, skapandedatum, beskrivning, allvarlighetsgrad och status för hot. Dessutom visas följande två flikar.
 
-- **Fliken** Postinskickning: Visar antalet e-postmeddelanden som skickats via Threat Explorer eller automatiserade undersökningar som ska åtgärdas. De här e-postmeddelandena kan du vidta åtgärder för eller inte kan vidta åtgärder för.
+- **Fliken** Postinskickning: Visar antalet e-postmeddelanden som skickats via Threat Explorer eller automatiserade undersökningar som ska åtgärdas. De här e-postmeddelandena kan vara åtgärdsbara eller inte kan vidtas.
 
   > [!div class="mx-imgBorder"]
   > [![Åtgärdscenter med åtgärdsbara och inte åtgärdbara hot.](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
@@ -85,7 +85,7 @@ Alla åtgärder (antingen direkt godkännande eller tvåstegsgodkännande) som s
     - Mjuk borttaget mapp
 
       > [!NOTE]
-      > För närvarande kan endast en användare med åtkomst till postlådan återställa objekt från en mjukt borttagna mapp.
+      > För närvarande kan endast en användare med åtkomst till postlådan återställa objekt från en mjuk borttagna mapp.
 
   - **Ingen åtgärd kan** åtgärdas: E-postmeddelanden på följande platser kan inte åtgärdas eller flyttas i åtgärder:
     - Karantän
@@ -97,7 +97,7 @@ Alla åtgärder (antingen direkt godkännande eller tvåstegsgodkännande) som s
 
   Om du inte åtgärdar gamla meddelanden efter organisationens bevarandeperiod för Hot Explorer, är det lämpligt att försöka åtgärda objekt om du ser antal inkonsekvenser. För systemfördröjningar uppdateras åtgärdsuppdateringar normalt inom några timmar.
 
-  Om organisationens lagringstid för e-post i Threat Explorer är 30 dagar och du åtgärdar e-postmeddelanden 29–30 dagar, är det inte alltid räkningen för e-postinskickning som räknas. E-postmeddelandena kan redan ha börjat flytta från lagringstiden.
+  Om organisationens bevarandeperiod för e-post i Threat Explorer är 30 dagar och du åtgärdar e-postmeddelanden 29–30 dagar, är det inte alltid räkningen för e-postinskickning som räknas. E-postmeddelandena kan redan ha börjat flytta från lagringstiden.
 
   Om åtgärder har fastnat i statusen "Pågår" ett tag beror det förmodligen på systemfördröjningar. Det kan ta upp till några timmar att åtgärda. Det kan visas variationer i antalet meddelanden som skickas, eftersom vissa av e-postmeddelandena kanske inte hade inkluderats i frågan i början av åtgärder på grund av systemfördröjningar. Det är en bra idé att försöka åtgärda detta i sådana fall.
 
@@ -129,9 +129,11 @@ Alla åtgärder (antingen direkt godkännande eller tvåstegsgodkännande) som s
 
   - **Lyckades:** Önskad åtgärd för åtgärdsbara e-postmeddelanden har utförts. Till exempel: En administratör vill ta bort e-postmeddelanden från postlådor, så administratören vidtar åtgärder för mjuk borttagning av e-postmeddelanden. Om ett åtgärdat e-postmeddelande inte hittas i den ursprungliga mappen efter att åtgärden har vidtagits, visas statusen som lyckades.
 
-  - **Fel:** Den åtgärd du önskade för åtgärdsbara e-postmeddelanden misslyckades. Till exempel: En administratör vill ta bort e-postmeddelanden från postlådor, så administratören vidtar åtgärder för mjuk borttagning av e-postmeddelanden. Om ett åtgärdat e-postmeddelande fortfarande finns i postlådan när åtgärden har vidtagits, visas statusen som misslyckades.
+  - **Fel:** Den åtgärd du önskade för åtgärdsbara e-postmeddelanden misslyckades. Till exempel: En administratör vill ta bort e-postmeddelanden från postlådor, så administratören vidtar åtgärder för mjuk borttagning av e-postmeddelanden. Om ett åtgärdat e-postmeddelande fortfarande finns i postlådan när åtgärden har vidtagits, visas statusen som misslyckad.
+  
+  - **Redan i mål:** Önskad åtgärd har redan vidtagits för e-postmeddelandet ELLER att e-postmeddelandet redan finns på målplatsen. Till exempel: Ett e-postmeddelande togs bort mjukt av administratören via Utforskaren på dag ett. Sedan visas liknande e-postmeddelanden dag 2, som återigen är mjuka borttagna av administratören. När administratören väljer de här e-postmeddelandena väljer han eller hon vissa e-postmeddelanden från dag ett som redan är mjukt borttagna. Nu kommer de här e-postmeddelandena inte att ageras igen, de visas bara som "redan på målet", eftersom inga åtgärder har vidtagits för dem eftersom de fanns på målplatsen.
 
-  Markera ett objekt i åtgärdsloggen för att visa åtgärdsinformation. Om informationen säger "lyckades" eller "hittades inte i postlådan" har objektet redan tagits bort från postlådan. Ibland finns det ett fel under en åtgärd. I sådana fall är det en bra idé att försöka åtgärda det igen.
+  Markera ett objekt i åtgärdsloggen för att visa åtgärdsinformation. Om informationen säger "lyckades" eller "hittades inte i postlådan" har objektet redan tagits bort från postlådan. Ibland finns det ett stavfel under åtgärd. I sådana fall kan det vara en bra idé att försöka åtgärda det igen.
 
   Om du åtgärdar stora batchar kan du också exportera meddelanden som skickas för åtgärd via inskick av e-post och meddelanden som har åtgärdats via åtgärdsloggar. Exportgränsen ökar till 100 000 poster.
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Lär dig att distribuera tillägg till användare och grupper i organisationen genom att använda centraliserad distribution i administrationscentret.
-ms.openlocfilehash: 5d17242d98f0e58ec4bfbcfd5b7014e6a6e0a6c5
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 4dc7552f2341097b95e763297d2f701f162f83ec
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114507"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454401"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Distribuera tillägg i administrationscentret
 
@@ -55,7 +55,7 @@ Om du vill distribuera tillägg med en fasad metod rekommenderar vi följande:
     
 2. Distribuera tillägget till fler personer inom företaget. Utvärdera resultatet på nytt och fortsätt med fullständig distribution om det lyckas.
     
-3. Utför en fullständig utrullning för alla användare.
+3. Utföra en fullständig utrullning för alla användare.
     
 Beroende på målgruppens storlek kan du lägga till eller ta bort steg för utrullning.
   
@@ -65,10 +65,10 @@ Innan du börjar kan du [kontrollera om centraliserad distribution av tillägg f
   
 1. Gå till sidan  \> **Inställningar-tillägg i administrationscentret.** Om du inte ser **tilläggssidan går** du  till sidan Inställningar \> **för** integrerade \> **appar.**
     
-2. Välj **Distribuera tillägg högst** upp på sidan och välj sedan **Nästa.**
+2. Välj **Distribuera tillägg överst** på sidan och välj sedan **Nästa.**
  
     > [!NOTE]
-    > Administrationscentret uppdateras för användning av integrerade appar. Om du inte ser stegen ovan går du till avsnittet Centraliserad distribution genom att gå till  >  **Inställningar-integrerade appar.** Välj Tillägg högst **upp på** sidan Integrerade **appar.**
+    > Administrationscentret uppdateras för distribution av integrerade appar. Integrerade appar visas endast för globala administratörer, medan den gamla upplevelsen för andra finns kvar. Om du inte ser stegen ovan går du till avsnittet Centraliserad distribution genom att gå till  >  **Inställningar-integrerade appar.** Välj Tillägg högst **upp på** sidan Integrerade **appar.**
     
 3. Välj ett alternativ och följ instruktionerna.
   
@@ -99,7 +99,7 @@ Innan du börjar kan du [kontrollera om centraliserad distribution av tillägg f
   
 ### <a name="considerations-when-assigning-an-add-in-to-users-and-groups"></a>Att tänka på när du tilldelar ett tillägg till användare och grupper
 
-Administratörer kan tilldela ett tillägg till alla eller till vissa användare och grupper. Varje alternativ har sina konsekvenser:
+Globala administratörer och Exchange-administratörer kan tilldela ett tillägg till alla eller till vissa användare och grupper. Varje alternativ har sina konsekvenser:
   
 - **Alla** Med det här alternativet tilldelas tillägget till alla användare i organisationen. Använd det här alternativet sparsamt och bara för tillägg som verkligen är till för hela organisationen. 
     
@@ -109,7 +109,7 @@ Administratörer kan tilldela ett tillägg till alla eller till vissa användare
 
 - **Bara jag** Om du tilldelar ett tillägg till bara dig själv tilldelas tillägget bara till ditt konto, vilket är perfekt för att testa tillägget.
     
-Rätt alternativ för din organisation beror på din konfiguration. Vi rekommenderar emellertid att tilldelningar görs med hjälp av grupper. Som administratör kan det vara enklare att hantera tillägg genom att använda grupper och kontrollera medlemskapet i de grupperna i stället för att tilldela enskilda användare varje gång. I vissa situationer kan du vilja begränsa åtkomsten till en liten uppsättning användare genom att tilldela tilldelningar till specifika användare genom att tilldela användare manuellt.
+Rätt alternativ för organisationen beror på din konfiguration. Vi rekommenderar emellertid att tilldelningar görs med hjälp av grupper. Som administratör kan det vara enklare att hantera tillägg genom att använda grupper och kontrollera medlemskapet i de grupperna i stället för att tilldela enskilda användare varje gång. I vissa situationer kan du vilja begränsa åtkomsten till en liten uppsättning användare genom att tilldela tilldelningar till specifika användare genom att tilldela användare manuellt.
   
 ## <a name="more-about-office-add-ins-security"></a>Mer om säkerhet för Office-tillägg
 
@@ -121,18 +121,18 @@ Office-tillägg kombinerar en XML-manifestfil som innehåller vissa metadata om 
     
 - Läsa och skriva data till och från en användares dokument för att ge värde till användaren.
     
-Mer information om typer och funktioner i Office-tillägg finns i plattformsöversikten för [Office-tillägg,](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)särskilt avsnittet "Beskrivning av ett Office-tillägg".
+Mer information om olika typer och funktioner i Office-tillägg finns i plattformsöversikten för [Office-tillägg,](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)särskilt avsnittet "Beskrivning av ett Office-tillägg".
   
-För att tillägget ska kunna interagera med användarens dokument måste det deklarera vilken behörighet som krävs i manifestet. En JavaScript API-åtkomstbehörighetsmodell med fem nivåer utgör grunden för sekretess och säkerhet för åtgärdsfönster tillägg. Majoriteten av tilläggen i Office Store är på nivån ReadWriteDocument med nästan alla tillägg som stöder minst ReadDocument-nivå. Mer information om behörighetsnivåer finns i [Begära behörigheter för API-användning i innehåll åtgärdsfönster tillägg.](https://docs.microsoft.com/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins)
+För att tillägget ska kunna interagera med användarens dokument måste det deklarera vilken behörighet som behövs i manifestet. En JavaScript API-åtkomstbehörighetsmodell med fem nivåer utgör grunden för sekretess och säkerhet för åtgärdsfönster tillägg. Majoriteten av tilläggen i Office Store är på nivån ReadWriteDocument med nästan alla tillägg som stöder minst ReadDocument-nivå. Mer information om behörighetsnivåer finns i [Begära behörigheter för API-användning i innehåll åtgärdsfönster tillägg.](https://docs.microsoft.com/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins)
   
-När du uppdaterar ett manifest är det vanligtvis ändringar av ikon och text för ett tillägg. Ibland kan tilläggskommandon ändras. Tilläggets behörigheter ändras dock inte. Webbprogrammet där all kod och logik för tillägget körs kan ändras när som helst, vilket är natur hos webbprogram.
+När du uppdaterar ett manifest är det vanligtvis ändringar av ikon och text för ett tillägg. Ibland kan tilläggskommandon ändras. Tilläggets behörigheter ändras däremot inte. Webbprogrammet där all kod och logik för tillägget körs kan ändras när som helst, vilket är natur hos webbprogram.
   
 Uppdateringar för tillägg sker så här:
   
 - **Verksamhets tillägg:** I det här fallet, där en administratör uttryckligen har laddat upp ett manifest, kräver tillägget att administratören laddar upp ett nytt manifest för att ge stöd för metadataändringar. Nästa gång Office-programmen startar uppdateras tillägget. Webbprogrammet kan ändras när som helst. 
 
     > [!NOTE]
-    > Administratören behöver inte ta bort ett LOB-tillägg för att göra en uppdatering.   I avsnittet Tillägg kan administratören helt enkelt klicka på tillägget LOB och välja uppdateringsknappen **i** det nedre högra hörnet. Uppdateringen fungerar endast om versionen av det nya tillägget är senare än det befintliga tillägget.   
+    > Administratören behöver inte ta bort ett LOB-tillägg för att göra en uppdatering.   I avsnittet Tillägg kan administratör helt enkelt klicka på tillägget LOB och välja uppdateringsknappen **i** det nedre högra hörnet. Uppdateringen fungerar bara om versionen av det nya tillägget är större än det befintliga tillägget.   
     
 - **Office Store-tillägg:** När en administratör har valt ett tillägg från Office Store uppdateras tillägget senare i centraliserad distribution om ett tillägg uppdateras i Office Store. Nästa gång Office-programmen startar uppdateras tillägget. Webbprogrammet kan ändras när som helst. 
   

@@ -17,12 +17,12 @@ ms.custom:
 description: Administratörer kan läsa mer om de tillgängliga och rekommenderade alternativen för att tillåta inkommande meddelanden i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ddcd6240cfc80350920999f9fc1e8ea188834553
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 33f4e9ac33f7952612e8b469345e38507ece5f4b
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289717"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453747"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Skapa listor över betrodda avsändare i EOP
 
@@ -76,7 +76,7 @@ I följande exempel förutsätts att du behöver e-contoso.com att hoppa över s
 
    > [!IMPORTANT]
    >
-   > - Konfigurera aldrig e-postflödesregler *med bara* avsändardomänen som villkor att hoppa över skräppostfiltrering. Då ökar  sannolikheten betydligt för att attacker kan förfalskning av avsändardomänen (eller personifiera den fullständiga e-postadressen), hoppa över all skräppostfiltrering och hoppa över autentiseringskontroller för avsändare så att meddelandet kommer till mottagarens inkorg.
+   > - Konfigurera aldrig e-postflödesregler *med bara* avsändardomänen som villkor att hoppa över skräppostfiltrering. Då ökar  sannolikheten betydligt för att attacker kan förfalskning av avsändardomänen (eller personifiera den fullständiga e-postadressen), hoppa över all skräppostfiltrering och hoppa över autentiseringskontroller för avsändare så att meddelandet anländer i mottagarens inkorg.
    >
    > - Använd inte domäner du äger (kallas även godkända domäner) eller populära domäner (till exempel microsoft.com) som villkor i e-postflödesregler. Att göra det betraktas som hög risk eftersom det skapar möjligheter för attackerare att skicka e-post som annars skulle filtreras.
    >
@@ -105,7 +105,7 @@ I följande exempel förutsätts att du behöver e-contoso.com att hoppa över s
 > [!CAUTION]
 > Den här metoden innebär en hög risk för att attacker ska leverera e-post till Inkorgen som annars skulle filtreras. Men listorna Betrodda avsändare och Betrodda domäner hindrar inte skadlig programvara eller betrodda nätfiskemeddelanden från att filtreras.
 
-I stället för en organisationsinställning kan användare eller administratörer lägga till avsändaradresserna i listan Betrodda avsändare i postlådan. Instruktioner finns i Konfigurera [skräppostinställningar för Exchange Online-postlådor i Office 365.](configure-junk-email-settings-on-exo-mailboxes.md) Det här är inte ett bra sätt i de flesta situationer eftersom avsändare kringgår delar av filtreringsstacken. Även om du litar på avsändaren kan avsändaren fortfarande komprometteras och skicka skadligt innehåll. Det är bäst att du låter våra filter göra det som behövs för att kontrollera varje meddelande och sedan rapportera det falska [positiva/negativa](report-junk-email-messages-to-microsoft.md) till Microsoft om våra filter fick det fel. Förbikoppling av filtreringsstack stör även [ZAP.](zero-hour-auto-purge.md)
+I stället för en organisationsinställning kan användare eller administratörer lägga till avsändaradresserna i listan Betrodda avsändare i postlådan. Instruktioner finns i Konfigurera [skräppostinställningar för Exchange Online-postlådor i Office 365.](configure-junk-email-settings-on-exo-mailboxes.md) Det här är inte ett bra sätt i de flesta situationer eftersom avsändare kringgår delar av filtreringsstacken. Även om du litar på avsändaren kan avsändaren fortfarande komprometteras och skicka skadligt innehåll. Det är bäst att du låter våra filter göra det som behövs för att kontrollera varje meddelande och sedan rapportera det falska [positiva/negativa](report-junk-email-messages-to-microsoft.md) till Microsoft om våra filter fick det fel. Förbikoppling av filtreringsstacken stör även [ZAP.](zero-hour-auto-purge.md)
 
 När meddelanden hoppar över skräppostfiltrering på grund av en användares lista över betrodda avsändare innehåller **rubrikfältet X-Forefront-Antispam-Report** värdet, vilket anger att filtrering av skräppost, förfalskning och nätfiske har `SFV:SFE` kringgåts.
 
@@ -119,10 +119,10 @@ Om du inte kan använda e-postflödesregler enligt beskrivningen ovan är det n�
 
 - Använd inte IP-adressintervall som tillhör konsumenttjänster (till exempel outlook.com) eller delad infrastruktur.
 
-- Regelbundet granska posterna i listan över tillåtna IP-adresser och ta bort poster som du inte längre behöver.
+- Regelbundet granska posterna i listan över tillåtna IP-adresser och ta bort de poster som du inte längre behöver.
 
 > [!CAUTION]
-> Utan ytterligare verifiering, som e-postflödesregler, hoppar e-post från källor i listan över tillåtna IP-adresser över skräppostfiltrering och avsändarautentisering (SPF, DKIM, DMARC). Då skapas en hög risk för att attacker ska leverera e-post till Inkorgen som annars skulle filtreras. Men listan över tillåtna IP-adresser förhindrar inte att skadlig programvara eller nätfiskemeddelanden med hög konfidens filtreras.
+> Utan ytterligare verifiering, som e-postflödesregler, hoppar e-post från källor i listan över tillåtna IP-adresser över skräppostfiltrering och avsändarautentisering (SPF, DKIM, DMARC). Då skapas en hög risk för att attacker ska leverera e-post till Inkorgen som annars skulle filtreras. Men listan över tillåtna IP-adresser förhindrar inte att skadlig programvara eller nätfiskemeddelanden med hög säkerhet filtreras.
 
 ## <a name="use-allowed-sender-lists-or-allowed-domain-lists"></a>Använda tillåtna avsändarlistor eller listor med tillåtna domäner
 
@@ -132,7 +132,7 @@ Maxgränsen för dessa listor är ungefär 1 000 poster. även om du bara kan an
 
 > [!CAUTION]
 >
-> - Den här metoden innebär en hög risk för att attacker ska leverera e-post till Inkorgen som annars skulle filtreras. Men listorna med tillåtna avsändare eller tillåtna domäner förhindrar inte skadlig programvara eller nätfiskemeddelanden med hög konfidens.
+> - Den här metoden innebär en hög risk för att attacker ska leverera e-post till Inkorgen som annars skulle filtreras. Men listan över tillåtna avsändare eller tillåtna domäner förhindrar inte skadlig programvara eller nätfiskemeddelanden med hög konfidens.
 >
 > - Använd inte domäner du äger (kallas även godkända domäner) eller populära domäner (till exempel microsoft.com) i listor över tillåtna domäner.
 
@@ -140,7 +140,7 @@ Maxgränsen för dessa listor är ungefär 1 000 poster. även om du bara kan an
 
 Ett vanligt SMTP-e-postmeddelande består av ett *meddelandekuvert* och meddelandeinnehåll. Meddelandekuvertet innehåller information som behövs för att överföra och leverera meddelandet mellan SMTP-servrar. Meddelandeinnehållet innehåller fält för meddelanderubriker (kallas gemensamt *för meddelanderubriken)* och meddelandets brödtext. Meddelandekuvertet beskrivs i RFC 5321 och meddelanderubriken beskrivs i RFC 5322. Mottagarna ser aldrig det faktiska meddelandekuvertet eftersom det genereras av meddelandeöverföringsprocessen och det är faktiskt inte en del av meddelandet.
 
-- Adressen (kallas även MAIL `5321.MailFrom` **FROM-adress,** P1-avsändare eller kuvertavsändare) är den e-postadress som används vid meddelandets SMTP-överföring. Den här **e-postadressen** registreras vanligtvis i huvudfältet för retursökväg i meddelandehuvudet (även om det är möjligt för avsändaren att ange en annan **e-postadress** för retursökväg). Om meddelandet inte kan levereras är det mottagaren för rapporten om utebliven leverans (kallas även NDR-rapport eller icke-leveransk leverans).
+- Adressen (kallas även MAIL `5321.MailFrom` **FROM-adress,** P1-avsändare eller kuvertavsändare) är den e-postadress som används vid meddelandets SMTP-överföring. Den här **e-postadressen** registreras vanligtvis i huvudfältet för retursökväg i meddelandehuvudet (även om avsändaren kan ange en annan **e-postadress** för retursökvägen). Om meddelandet inte kan levereras är det mottagaren för rapporten om utebliven leverans (kallas även NDR-rapport eller icke-leveransk leverans).
 
 - Den (kallas även från-adress eller P2-avsändare) är e-postadressen i fältet Från rubrik och är avsändarens e-postadress som visas i `5322.From` e-postklienter.  
 

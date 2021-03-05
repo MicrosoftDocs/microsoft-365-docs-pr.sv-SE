@@ -10,20 +10,20 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: fbdd0e9b75e92d8080d9aaf43a2d1eaa8baacbc3
-ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
+ms.openlocfilehash: c3ba9ce6675e81a99309243db251b34a21a4b43f
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50279404"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454165"
 ---
 # <a name="create-a-new-topic"></a>Skapa ett nytt ämne 
 
-I Viva Topics kan du skapa ett nytt ämne om ett ämne inte upptäcks genom indexering eller om AI-tekniken inte hittar tillräckligt med bevis för att etablera det som ett ämne.
+I Viva Topics kan du skapa ett nytt ämne om ett ämne inte upptäcks genom indexering eller om AI-tekniken inte hittade tillräckligt mycket bevis för att etablera det som ett ämne.
 
 > [!Note] 
 > Observera att informationen i ett ämne [](topic-experiences-security-trimming.md)som har samlats av AI är säkerhets trimad, men observera att ämnesbeskrivningen och personinformationen i ett manuellt skapat ämne är synlig för alla användare som har behörighet att visa ämnet. 
@@ -52,19 +52,21 @@ Du kan skapa ett nytt ämne från två platser:
 
 ### <a name="to-create-a-new-topic"></a>Så här skapar du ett nytt ämne:
 
-1. I avsnittet **Namnge det här** avsnittet skriver du namnet på det nya avsnittet.
+1. Välj alternativet för att skapa en ny ämnessida från menyfliksområdet på sidan Hantera ämnen.
+
+2.   I avsnittet **Namnge det här** avsnittet skriver du namnet på det nya avsnittet.
 
     ![Ge det här avsnittet ett namn](../media/knowledge-management/k-new-topic-page.png) </br> 
 
 
-2. I avsnittet <b>Alternativa namn</b> skriver du andra namn som ämnet kan hänvisas till. 
+3. I avsnittet <b>Alternativa namn</b> skriver du andra namn som ämnet kan hänvisas till. 
 
     ![Alternativa namn](../media/knowledge-management/alt-names.png) </br> 
-3. Skriv <b>några</b> meningar som beskriver ämnet i avsnittet Beskrivning. 
+4. Skriv <b>några</b> meningar som beskriver ämnet i avsnittet Beskrivning. 
 
     ![Beskrivning av ämnet](../media/knowledge-management/description.png)</br>
 
-4. I avsnittet <b>Fästa personer kan</b> du fästa en person för att visa personen som ämnesexpert i ämnet. Börja med att skriva in <b></b> användarens namn eller e-postadress i rutan lägg till en ny användare och välj sedan den användare du vill lägga till i sökresultatet. Du kan även "ta bort" dem genom att välja ikonen Ta bort <b>från listan</b> på användarkortet. Du kan också dra personen för att ändra ordningen som listan med personer visas.
+4. I avsnittet <b>Fästa personer kan</b> du fästa en person för att visa personen som ämnesexpert i ämnet. Börja med att skriva in <b></b> användarens namn eller e-postadress i rutan lägg till en ny användare och välj sedan den användare du vill lägga till i sökresultatet. Du kan också "ta bort" dem genom att välja ikonen Ta bort <b>från listan</b> på användarkortet. Du kan också dra personen för att ändra ordningen som listan med personer visas.
  
     ![Fästa personer](../media/knowledge-management/pinned-people.png)</br>
 
@@ -85,7 +87,7 @@ Du kan skapa ett nytt ämne från två platser:
 
     ![Avsnittet Relaterade webbplatser](../media/knowledge-management/related-sites.png)</br>
 
-    Du kan lägga till en relaterad webbplats genom att välja <b>Lägg</b> till och sedan antingen söka efter webbplatsen eller välja den i listan med ofta besökta eller senaste webbplatser.</br>
+    Du kan lägga till <b></b> en relaterad webbplats genom att välja Lägg till och sedan antingen söka efter webbplatsen eller välja den i listan med webbplatser som ofta används eller senaste.</br>
     
     ![Välj webbplats](../media/knowledge-management/sites.png)</br>
 
@@ -119,7 +121,7 @@ Du kan skapa ett nytt ämne från två platser:
 
 9. Välj **Publicera** för att spara ändringarna. 
 
-När du har publicerat sidan visas ämnesnamn, alternativt namn, beskrivning och fästa personer för alla licensierade användare som visar ämnet. Specifika filer, sidor och webbplatser visas bara på ämnessidan om visningsprogrammet har Office 365-behörighet till objektet. 
+När du har publicerat sidan visas ämnesnamn, alternativt namn, beskrivning och fästa personer för alla licensierade användare som visar ämnet. Specifika filer, sidor och webbplatser visas bara på ämnessidan om användaren har Office 365-behörighet till objektet. 
 
 
 

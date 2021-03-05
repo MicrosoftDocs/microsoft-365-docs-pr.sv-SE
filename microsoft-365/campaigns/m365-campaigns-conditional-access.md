@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du kräver MFA och konfigurera villkorsstyrda åtkomstprinciper för Microsoft 365 för företag.
-ms.openlocfilehash: b13ba9f8c948d9a1209655c44871ca62cb5354dd
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: e16b7f4ff7d215ee749435806be214a807cc60a4
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044506"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453675"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Kräv multifaktorautentisering och konfigurera villkorsstyrda åtkomstprinciper
 
@@ -70,7 +70,7 @@ Så här kräver du att alla användare loggar in med en andra form av ID:
 
 ## <a name="set-up-baseline-policies"></a>Konfigurera baslinjeprinciper
 
-1. Gå till [Azure-portalen och](https://portal.azure.com)gå sedan till villkorsstyrd åtkomst i **Azure Active Directory** för att skapa en \>  ny **princip.**
+1. Gå till [Azure-portalen och](https://portal.azure.com)gå sedan till villkorsstyrd åtkomst för **Azure Active** \>  \> **Directory-säkerhet** för att skapa **en ny princip.**
 
 Se följande specifika anvisningar för varje princip: <br>
     - [Kräv MFA för administratörer](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
