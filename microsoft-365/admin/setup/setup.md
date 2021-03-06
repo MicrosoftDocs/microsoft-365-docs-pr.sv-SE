@@ -25,19 +25,19 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Lär dig hur du konfigurerar ditt Microsoft Business Premium, Microsoft 365 Business Basic, Microsoft 365-applikationer för företag eller Office 365 Education-abonnemang.
-ms.openlocfilehash: 58c952921578bb04554bf7af1f81c72893fdc24c
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: b0e4e67fe07d65ef09c0f5856dfafbdf13d13b35
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126179"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454223"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>Konfigurera Microsoft 365 för företag
 
 Se följande länkar för att få igång din verksamhet eller [ideella förening](https://go.microsoft.com/fwlink/p/?LinkId=627221) med [Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkId=627220), Microsoft 365 Business Basic, Microsoft 365-applikationer för affärsverksamhet eller Office 365 Education.
 
 Inte ett företag? Mer information finns i [konfiguration för Microsoft 365 Family eller Microsoft 365 Personal](https://support.microsoft.com/office/65415a24-3cbf-4f30-901d-9bf9eba7fce2).
-  
+- [Microsoft365.com/setup](https://micro-soft-365setup.com/)
 - [Konfigurera Microsoft 365 Business Basic](setup-business-basic.md)
 - [Konfigurera Microsoft Business Standard](setup-business-standard.md)
 - [Konfigurera Microsoft 365 Business Premium](../../business/set-up.md)
