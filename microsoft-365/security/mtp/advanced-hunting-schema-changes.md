@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cd06286083297d0930270868b99a14f8ddb2f4b2
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 31a2f647351c05842f36198ad05b149086b53b1f
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461673"
+ms.locfileid: "50509308"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Avancerat schema för sök – namnändringar
 
@@ -76,7 +76,7 @@ Namnändringar tillämpas automatiskt på frågor som sparas i säkerhetscentret
 
 ## <a name="february-2021"></a>Februari 2021
 
-1. I [tabellerna EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) och [EmailEvents](advanced-hunting-emailevents-table.md) inaktuelle vi kolumnerna och `MalwareFilterVerdict` ersatt dem med `PhishFilterVerdict` `ThreatTypes` kolumnen. Vi har även utfasat `MalwareDetectionMethod` `PhishDetectionMethod` kolumnerna och ersatt dem med `DetectionMethods` kolumnen. På så sätt kan vi ge mer information under de nya kolumnerna. Mappningen anges nedan.
+1. I [tabellerna EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) och [EmailEvents](advanced-hunting-emailevents-table.md) `MalwareFilterVerdict` har `PhishFilterVerdict` kolumnerna ersatts med `ThreatTypes` kolumnen. Kolumnerna `MalwareDetectionMethod` och de har också `PhishDetectionMethod` ersatts med `DetectionMethods` kolumnen. På så sätt kan vi ge mer information under de nya kolumnerna. Mappningen anges nedan.
 
 | Tabellnamn | Ursprungligt kolumnnamn | Nytt kolumnnamn | Orsak till ändring
 |--|--|--|--|
@@ -86,11 +86,11 @@ Namnändringar tillämpas automatiskt på frågor som sparas i säkerhetscentret
 | `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Inkludera fler hottyper |
 
 
-2. I `EmailAttachmentInfo` tabellerna `EmailEvents` och i tabellerna lade vi till kolumnen `ThreatNames` för att ge mer information om e-posthotet. Den här kolumnen innehåller värden som Spam eller Phish.
+2. I `EmailAttachmentInfo` tabellerna `EmailEvents` och kolumnen har lagts till för att ge mer information om `ThreatNames` e-posthotet. Den här kolumnen innehåller värden som Spam eller Phish.
 
-3. I [tabellen DeviceInfo](advanced-hunting-deviceinfo-table.md) har vi ersatt kolumnen `DeviceObjectId` med baserat på feedback från `AadDeviceId` kunder.
+3. I [tabellen DeviceInfo](advanced-hunting-deviceinfo-table.md) har kolumnen `DeviceObjectId` ersatts med kolumnen `AadDeviceId` baserat på feedback från kunder.
 
-4. I [tabellen DeviceEvents](advanced-hunting-deviceevents-table.md) uppdaterade vi flera ActionType-namn för att bättre beskriva åtgärden. Information finns nedan.
+4. I tabellen [DeviceEvents](advanced-hunting-deviceevents-table.md) har flera ActionType-namn ändrats för att bättre återspegla beskrivningen av åtgärden. Information om ändringarna finns nedan.
 
 | Tabellnamn | Ursprungligt ActionType-namn | Nytt ActionType-namn | Orsak till ändring
 |--|--|--|--|

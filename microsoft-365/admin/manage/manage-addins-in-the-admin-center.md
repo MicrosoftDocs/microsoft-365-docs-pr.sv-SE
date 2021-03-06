@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Läs mer om hur du använder centraliserade tillägg för att distribuera tillägg till användare och grupper i organisationen.
-ms.openlocfilehash: 5366bd5be80559f23490aeb54f9417a189169e12
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: b888c0f329e3f1f36f5aa566df7efbab07cd1f5f
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114207"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509140"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Hantera tillägg i administrationscentret
 
@@ -87,7 +87,7 @@ Efter distributionen kan administratörer också hantera användaråtkomst till 
 ## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>Förhindra nedladdningar av tillägg genom att inaktivera Office Store i alla klienter (utom Outlook)
 
 > [!NOTE]
-> Installation av Outlook-tillägg hanteras av en [annan process.](https://technet.microsoft.com/library/jj943754%28v=exchg.150%29.aspx)
+> Outlook add-in installationen hanteras av en [annan process.](https://technet.microsoft.com/library/jj943754%28v=exchg.150%29.aspx)
 
 Som organisation kanske du vill förhindra nedladdning av nya Office-tillägg från Office Store. Det här kan användas tillsammans med centraliserad distribution för att säkerställa att endast av organisationen godkända tillägg distribueras till användare i organisationen.
   
@@ -102,7 +102,7 @@ Som organisation kanske du vill förhindra nedladdning av nya Office-tillägg fr
     
 4. Avmarkera alternativet att ge användare åtkomst till Office Store.
 
-Det hindrar alla användare från att köpa följande tillägg från Store.
+Det gör att alla användare inte kan hämta följande tillägg från Store.
   
 - Tillägg för Word, Excel och PowerPoint 2016 från:
     
@@ -134,7 +134,7 @@ Det hindrar inte att en administratör använder centraliserad distribution till
 Du kan förhindra att en användare loggar in med ett Microsoft-konto genom att begränsa inloggning till organisationskontot. Mer information finns i [Identitet, autentisering och auktorisering i Office 2016.](https://technet.microsoft.com/library/jj683102%28v=office.16%29.aspx)  
 
 > [!NOTE]
-> Om du hindrar användare från att komma åt Office Store hindras de också från att separat inläsning [av Office-tillägg för testning.](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)
+> Om du hindrar användare från att komma åt Office Store hindras de också från att separatinstallera [Office-tillägg för att testas.](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)
 
 ## <a name="more-about-the-end-user-experience-with-add-ins"></a>Mer om slutanvändarupplevelsen med tillägg
 
@@ -166,7 +166,7 @@ Om det distribuerade tillägget inte har stöd för tilläggskommandon eller om 
 
 Läs mer om hur du [skapar och skapar Office-tillägg.](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)
   
-[Använd PowerShell-cmdlets](https://docs.microsoft.com/office365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)för centraliserad distribution för att hantera tillägg.
+[Använd PowerShell-cmdlets](https://docs.microsoft.com/microsoft-365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)för centraliserad distribution för att hantera tillägg.
   
 [Felsökning: Användaren ser inte tillägg](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)
 

@@ -16,12 +16,12 @@ ms.collection:
 description: Administratörer kan ta reda på hur de konfigurerar tillåts och spärras i listan över tillåtna eller blockerade klienter i säkerhetsportalen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 960fbf26b610485fb46c935b04aedcc593b85752
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 20e460f4e93f7b87faaead8b87ba561224e38938
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407256"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515214"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Hantera Klientorganisationens Tillåt/blockera listan
 
@@ -38,19 +38,19 @@ ms.locfileid: "50407256"
 >
 > Du kan för **stunden inte** konfigurera tillåtna objekt i klientorganisationens lista över tillåtna/blockerade objekt.
 
-I Microsoft 365-organisationer som har postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor kanske du inte håller med om EOP-filtreringens bedömning. Till exempel kan ett bra meddelande markeras som dåligt (falskt positivt) eller så kan ett felaktigt meddelande tillåtas (falskt negativa).
+I Microsoft 365-organisationer som har postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor kanske du inte håller med om EOP-filtreringens bedömning. Ett bra meddelande kan till exempel markeras som dåligt (falskt positivt) eller så kan ett felaktigt meddelande tillåtas (falskt negativa).
 
 Klientorganisationens lista över tillåtna/blockerade i Säkerhets- & efterlevnadscenter ger dig ett sätt att manuellt åsidosätta filtreringsvillkoren i Microsoft 365. Klientorganisationens lista över tillåtna/blockerade används under e-postflödet och när användaren klickar. Du kan ange URL:er eller filer som alltid ska blockeras.
 
-Den här artikeln beskriver hur du konfigurerar poster i klientorganisationens lista över tillåtna/blockerade listor i Säkerhets- & och efterlevnadscenter eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med postlådor i Exchange Online, fristående EOP PowerShell för organisationer utan Exchange Online-postlådor).
+I den här artikeln beskrivs hur du konfigurerar poster i listan över tillåtna och blockerade klientorganisationer i Säkerhets- & och efterlevnadscenter eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med postlådor i Exchange Online, fristående EOP PowerShell för organisationer utan Exchange Online-postlådor).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt **till sidan Tillåt/blockera klientorganisation** använder du <https://protection.office.com/tenantAllowBlockList> .
+- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt **till sidan Tillåt/blockera klientorganisation** använder du <https://protection.office.com/tenantAllowBlockList> .
 
 - Du anger filer med hjälp av SHA256-hashvärdet för filen. Om du vill hitta SHA256-hashvärdet för en fil i Windows kör du följande kommando i en kommandotolk:
 
-  ```dos
+  ```console
   certutil.exe -hashfile "<Path>\<Filename>" SHA256
   ```
 
@@ -60,22 +60,26 @@ Den här artikeln beskriver hur du konfigurerar poster i klientorganisationens l
 
 - Klientorganisationens lista över tillåtna/blockerade kan högst 500 poster för URL:er och 500 poster för filshashar.
 
-- En post ska vara aktiv inom 15 minuter.
+- Det maximala antalet tecken för varje post är:
+  - Filshashar = 64
+  - URL = 250
+
+- En post ska vara aktiv inom 30 minuter.
 
 - Som standard förfaller poster i klientorganisationens lista över tillåtna/blockerade poster efter 30 dagar. Du kan ange ett datum eller ange att de aldrig ska upphöra att gälla.
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Du måste ha tilldelats behörigheter i **Exchange Online innan** du kan utföra procedurerna i den här artikeln:
+- Du måste ha tilldelats behörigheter i **Exchange Online** innan du kan genomföra procedurerna i den här artikeln:
   - Om du vill lägga till och ta bort värden från klientorganisationens lista över tillåtna/blockerade måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.**
   - För skrivskyddad åtkomst till klientorganisationens lista över tillåtna/blockerade måste du vara medlem i rollgrupperna **Global Reader** eller **Säkerhetsläsare.**
 
-  Mer information finns i [Behörigheter i Exchange Online.](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+  Mer information finns under [Behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
-  **Anmärkningar**:
-
-  - Om du lägger till användare till motsvarande Azure Active Directory-roll i  administrationscentret för Microsoft 365 får användarna de behörigheter och behörigheter som krävs för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
-  - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
+  > [!NOTE]
+  > 
+  > - Genom att lägga till användare i motsvarande Azure Active Directory-roll i administrationscentret för Microsoft 365 får användarna den nödvändiga behörigheten _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
+  > - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>Använd Säkerhets- & center för att skapa URL-poster i klientorganisationens lista över tillåtna/blockerade adresser
 
@@ -93,7 +97,7 @@ Mer information om syntaxen för URL-poster finns i URL-syntaxen för avsnittet 
 
      - Kontrollera att inställningen är inaktiverad (inaktiverad) och ange ![ ](../../media/scc-toggle-off.png) **utgångsdatumet** för posterna med hjälp av rutan Förfallodatum.
 
-     eller
+       eller
 
      - Flytta reglaget till höger för att konfigurera posterna så att de aldrig upphör att gälla: ![Växlingsknapp aktiverad](../../media/scc-toggle-on.png).
 
@@ -101,11 +105,11 @@ Mer information om syntaxen för URL-poster finns i URL-syntaxen för avsnittet 
 
 4. Klicka på Lägg till när du är **klar.**
 
-## <a name="use-the-security--compliance-center-to-create-file-entries-in-the-tenant-allowblock-list"></a>Använda Säkerhets- & Center för efterlevnad för att skapa filposter i klientorganisationens lista över tillåtna/blockerade filer
+## <a name="use-the-security--compliance-center-to-create-file-entries-in-the-tenant-allowblock-list"></a>Använd Säkerhets- & Center för efterlevnad för att skapa filposter i klientorganisationens lista över tillåtna/blockerade filer
 
 1. Gå till innehavarlistan & över  tillåtna och blockerade hothanteringsprinciper i Säkerhets- \>  \> **och efterlevnadscenter.**
 
-2. Välj fliken **Filer på sidan Tillåt/blockera** för **klientorganisation** och klicka sedan på **Blockera.**
+2. Välj fliken **Filer på sidan Tillåt/blockera** **för** klientorganisation och klicka sedan på **Blockera.**
 
 3. I den **utfällna menyn** Lägg till filer för att blockera som visas konfigurerar du följande inställningar:
 
@@ -123,7 +127,7 @@ Mer information om syntaxen för URL-poster finns i URL-syntaxen för avsnittet 
 
 4. Klicka på Lägg till när du är **klar.**
 
-## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>Använd Säkerhets- & Efterlevnadscenter för att visa poster i klientorganisationens lista över tillåtna/blockerade
+## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>Använd Säkerhets- & efterlevnadscenter för att visa poster i klientorganisationens lista över tillåtna/blockerade
 
 1. Gå till innehavarlistan & över  tillåtna och blockerade hothanteringsprinciper i Säkerhets- \>  \> **och efterlevnadscenter.**
 
@@ -164,9 +168,9 @@ Du kan inte ändra befintliga blockerade URL-adresser eller filvärden i en post
 
    - **Upphör aldrig** att gälla: Gör något av följande:
 
-     - Kontrollera att inställningen är inaktiverad (inaktiverad) och ange förfallodatumet med hjälp av ![ ](../../media/scc-toggle-off.png) rutan Förfallodatum. 
+     - Kontrollera att inställningen är inaktiverad (inaktiverad) och ange förfallodatumet med hjälp av rutan ![ ](../../media/scc-toggle-off.png) Förfallodatum. 
 
-     eller
+       eller
 
      - Flytta reglaget till höger för att konfigurera posten så att den aldrig upphör att gälla: ![Växlingsknapp aktiverad](../../media/scc-toggle-on.png).
 
@@ -182,13 +186,13 @@ Du kan inte ändra befintliga blockerade URL-adresser eller filvärden i en post
 
 3. Markera den blockpost du vill ta bort och klicka sedan på ikonen **Ta** ![ ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) bort.
 
-4. Klicka på Ta bort i varningsdialogrutan som **visas.**
+4. Klicka på Ta bort i **varningsdialogrutan som visas.**
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list"></a>Använda Exchange Online PowerShell eller fristående EOP PowerShell för att konfigurera klientorganisationens lista över tillåtna/blockerade
 
 ### <a name="use-powershell-to-add-block-entries-to-the-tenant-allowblock-list"></a>Använda PowerShell för att lägga till blockeringsposter i klientorganisationens lista över tillåtna/blockerade
 
-För att lägga till blockeringsposter i klientorganisationens lista över tillåtna/blockerade, använder du följande syntax:
+Använd följande syntax för att lägga till blockeringsposter i klientorganisationens lista över tillåtna/blockerade:
 
 ```powershell
 New-TenantAllowBlockListItems -ListType <Url | FileHash> -Block -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
@@ -197,13 +201,13 @@ New-TenantAllowBlockListItems -ListType <Url | FileHash> -Block -Entries <String
 Det här exemplet lägger till en blockerings-URL-post för contoso.com och alla underdomäner (till exempel contoso.com, www.contoso.com och xyz.abc.contoso.com). Eftersom vi inte använder parametrarna Förfallodatum eller NoExpiration går posten ut efter 30 dagar.
 
 ```powershell
-New-TenantAllowBlockListItem -ListType Url -Block -Entries ~contoso.com
+New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 ```
 
 I det här exemplet läggs en blockeringsfilpost till för de angivna filerna som aldrig förfaller.
 
 ```powershell
-New-TenantAllowBlockListItem -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
+New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
 ```
 
 Detaljerad information om syntax och parametrar finns i [New-TenantAllowBlockListItems.](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems)
@@ -222,7 +226,7 @@ I det här exemplet returneras alla blockerade URL:er.
 Get-TenantAllowBlockListItems -ListType Url -Block
 ```
 
-Det här exemplet returnerar information för det angivna hash-värdet för filen.
+Det här exemplet returnerar information för det angivna hashvärdet för filen.
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType FileHash -Entry "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
@@ -270,11 +274,11 @@ Detaljerad information om syntax och parametrar finns i [Remove-TenantAllowBlock
 
 - Filnamnstillägg är inte tillåtna (till exempel test.pdf).
 
-- Unicode stöds inte, men punykod stöds.
+- Unicode stöds inte, men punycode stöds.
 
 - Hostnames tillåts om alla följande uttryck är sanna:
   - Värdnamnet innehåller en punkt.
-  - Det finns minst ett tecken till vänster om punkt.
+  - Det finns minst ett tecken till vänster om perioden.
   - Det finns minst två tecken till höger om perioden.
 
   Till exempel är `t.co` tillåtet eller `.com` är inte `contoso.` tillåtet.
@@ -305,7 +309,7 @@ Detaljerad information om syntax och parametrar finns i [Remove-TenantAllowBlock
 
   - Ett vänster tilde-namn antyder en domän och alla underdomäner.
 
-    Till exempel `~contoso.com` tar vi med och `contoso.com` `*.contoso.com` .
+    Exempel: `~contoso.com` `contoso.com` innehåller och `*.contoso.com` .
 
 - URL-poster som innehåller protokoll (till exempel, eller ) kommer att `http://` `https://` `ftp://` misslyckas, eftersom URL-poster gäller för alla protokoll.
 
@@ -313,7 +317,7 @@ Detaljerad information om syntax och parametrar finns i [Remove-TenantAllowBlock
 
 - Citattecken (' eller ") är ogiltiga tecken.
 
-- En URL bör om möjligt innehålla alla omdirigeringar.
+- En URL bör innehålla alla omdirigeringar om det är möjligt.
 
 ### <a name="url-entry-scenarios"></a>URL-inmatningsscenarier
 

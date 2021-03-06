@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4e065ff4da80b50ea11ff2069e8938c59f16f962
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 72c6ec814c5f3317f582cb4bfb21858677fbb7e1
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165997"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509128"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nyheter i Microsoft 365 Defender
 
@@ -36,7 +36,7 @@ Följande funktioner är allmänt tillgängliga (GA) i den senaste versionen av 
 
 RSS-feed: Få ett meddelande när den här sidan uppdateras genom att kopiera och klistra in följande URL i din feedläsare:
 ```http
-https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
+https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
 
 ## <a name="february-2021"></a>Februari 2021
@@ -53,14 +53,14 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 ## <a name="june-2020"></a>Juni 2020
 - Twitter-feed <br> Få den senaste säkerhetsundersökningen, hotinformation, produktnyheter med mera – direkt i instrumentpanelen.
-- [Schematabellen EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) <br> Införliva information om åtgärder efter leverans som har vidtagits för e-postmeddelanden i dina avancerade sökningsfrågor.
+- [Schematabellen EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) <br> Införliva information om åtgärder efter leverans som har förts på e-postmeddelanden i dina avancerade sökningsfrågor.
 - [Inspektera poster i avancerad sökning](advanced-hunting-query-results.md#drill-down-from-query-results) <br> Granska snabbt poster i frågeresultatet med den nya informationspanelen.
 
 ## <a name="may-2020"></a>Maj 2020
 - [Anpassade identifieringar](custom-detections-overview.md) <br> Använd avancerade sökfrågor för att skapa anpassade identifieringsregler som automatiskt övervakar för och svarar på säkerhetshändelser och systemhändelser.
 
 ## <a name="february-2020"></a>Februari 2020
-- [Incidenter](incidents-overview.md) <br> Vet exakt var en attack startades och annan information som hjälper dig att se hur omfattande attacken är.
+- [Incidenter](incidents-overview.md) <br> Vet exakt var en attack startades och annan information som hjälper dig att se attackens omfattning.
 - [Automatiska undersökningar och svar](mtp-autoir.md) <br> AIR gör att ditt säkerhetsteam avsevärt ökar organisationens kapacitet för att hantera säkerhetsvarningar och säkerhetstillbud.
 - [Avancerade förbättringar av sökning](advanced-hunting-overview.md) <br> Proaktivt leta efter hot på den moderna arbetsytan med Kusto Query Language och ett säkerhetsoptimerat schema.
 

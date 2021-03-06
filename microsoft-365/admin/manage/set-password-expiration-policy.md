@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Lär dig hur du anger en förfalloprincip för lösenord i organisationen i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 471a881bd9808861b9fa2c67d007f1ebe1c10885
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 9470a73926327777055a321eb3a592ea3ddcf41e
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926180"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515046"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Ange förfalloprincip för lösenord i organisationen
 
@@ -70,8 +70,6 @@ Följ anvisningarna nedan om du vill ställa in så att användarlösenorden ska
 5. Ange hur ofta lösenord ska upphöra. Välj ett antal dagar mellan 14 och 730.
   
 6. I den andra rutan anger du när användarna underrättas om att deras lösenord upphör att gälla och väljer sedan **Spara**. Du kan välja ett antal dagar mellan 1 och 30.
-
-7. När användarens lösenord slutar gälla, visas ett meddelande om detta i det nedre högra hörnet på skärmen.
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>Viktiga saker du behöver veta om funktionen för lösenords giltighetstid
   

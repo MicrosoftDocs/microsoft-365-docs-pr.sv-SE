@@ -17,14 +17,14 @@ ms.custom:
 description: Administratörer kan läsa mer om principer för nätfiske som finns i Exchange Online Protection (EOP) och Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 083fd4ae7e5564f2affeca73dd3d78a52657c5a7
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: fe7d986c537cbc5da31811e0b49cf6224815d32c
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287323"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509320"
 ---
-# <a name="anti-phishing-policies-in-microsoft-365"></a>Principer för skydd mot nätfiske i Microsoft 365
+# <a name="anti-phishing-policies-in-microsoft-365"></a>Principer mot nätfiske i Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "50287323"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Principer för att konfigurera inställningar för skydd mot nätfiske är tillgängliga i Microsoft 365-organisationer med Exchange Online-postlådor, fristående Exchange Online Protection (EOP) organisationer utan Exchange Online-postlådor och Microsoft Defender för Office 365-organisationer.
+Principer för att konfigurera inställningar för skydd mot nätfiske är tillgängliga i Microsoft 365-organisationer med Exchange Online-postlådor, fristående Exchange Online Protection (EOP) utan Exchange Online-postlådor och Microsoft Defender för Office 365-organisationer.
 
 Principer för skydd mot nätfiske i Microsoft Defender för Office 365 är endast tillgängliga i organisationer som har Defender för Office 365. Till exempel:
 
@@ -42,7 +42,7 @@ Principer för skydd mot nätfiske i Microsoft Defender för Office 365 är enda
 - [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)
 - [Microsoft Defender för Office 365 som ett tillägg](https://products.office.com/exchange/advance-threat-protection)
 
-De stora skillnaderna mellan principer för skydd mot nätfiske i EOP och principer för skydd mot nätfiske i Microsoft Defender för Office 365 beskrivs i följande tabell:
+De stora skillnaderna mellan principer för skydd mot nätfiske i EOP och principer för nätfiske i Microsoft Defender för Office 365 beskrivs i följande tabell:
 
 ****
 
@@ -70,7 +70,7 @@ I resten av den här artikeln beskrivs de inställningar som är tillgängliga i
 
 Följande principinställningar är tillgängliga i principer för skydd mot nätfiske i EOP och Microsoft Defender för Office 365:
 
-- **Namn:** Du kan inte byta namn på standardprincipen för nätfiske, men du kan namnge och byta namn på anpassade principer som du skapar.
+- **Namn:** Du kan inte byta namn på standardprincipen för skydd mot nätfiske. När du har skapat en anpassad princip mot nätfiske kan du inte byta namn på principen i Säkerhets- och & Efterlevnadscenter.
 
 - **Beskrivning** Du kan inte lägga till en beskrivning i standardprincipen för nätfiske, men du kan lägga till och ändra beskrivningen för anpassade principer som du skapar.
 
@@ -89,7 +89,7 @@ Följande principinställningar är tillgängliga i principer för skydd mot nä
     - **Mottagardomänen är**
 
   > [!NOTE]
-  > Inställningen **Används för** krävs i anpassade principer för nätfiske för att identifiera vilka mottagare av **meddelandet** <u>som principen gäller för.</u> Principer för skydd mot nätfiske i Microsoft [](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Defender för Office 365 har också <u></u> personifieringsinställningar där du kan ange enskilda avsändares e-postadresser eller avsändardomäner som får personifieringsskydd enligt beskrivningen längre fram i den här artikeln.
+  > Inställningen **Tillämpas på** krävs i anpassade principer för nätfiske för att identifiera vilka mottagare **av** meddelandet som principen <u>gäller för.</u> Principer för skydd mot nätfiske i Microsoft [](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Defender för Office 365 har också <u></u> personifieringsinställningar där du kan ange enskilda avsändares e-postadresser eller avsändardomäner som ska få personifieringsskydd enligt beskrivningen längre fram i den här artikeln.
 
 ## <a name="spoof-settings"></a>Inställningar för förfalskning
 
@@ -123,7 +123,7 @@ Följande inställningar för förfalskning finns i principer för skydd mot nä
 
 Oauthiskt identifiering av avsändare är [](#spoof-settings) en del av inställningarna för förfalskning som är tillgängliga i principer för skydd mot nätfiske i EOP och Microsoft Defender för Office 365 enligt beskrivningen i föregående avsnitt.
 
-Inställningen **Oauthenticated sender** enables or disables unauthenticated sender identification in Outlook. Mer specifikt:
+Inställningen **Oauthenticerad avsändare** aktiverar eller inaktiverar oauticerad avsändar-ID i Outlook. Mer specifikt:
 
 - Ett frågetecken (?) läggs till på avsändarens foto om meddelandet inte  klarar SPF- eller DKIM-kontroller och meddelandet inte klarar DMARC eller [sammansatt autentisering.](email-validation-and-authentication.md#composite-authentication) Om du inaktiverar ett oauenticerat avsändar-ID förhindrar du att frågetecknet läggs till på avsändarens foto.
 
@@ -146,7 +146,7 @@ Mer information finns i [Identifiera misstänkta meddelanden i Outlook.com och O
 I det här avsnittet beskrivs de principinställningar som bara är tillgängliga i principer mot nätfiske i Microsoft Defender för Office 365.
 
 > [!NOTE]
-> Standardprincipen för skydd mot nätfiske i Microsoft Defender för Office 365 ger skydd mot [förfalskning](set-up-anti-phishing-policies.md#spoof-settings) och postlådeinformation för alla mottagare. Men andra tillgängliga funktioner [för personifieringsskydd](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) och [avancerade inställningar är](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) inte konfigurerade eller aktiverade i standardprincipen. Om du vill aktivera alla skyddsfunktioner ändrar du standardprincipen för skydd mot nätfiske eller skapar ytterligare principer mot nätfiske.
+> Standardprincipen för skydd mot nätfiske i Microsoft Defender för Office 365 ger skydd mot [förfalskning](set-up-anti-phishing-policies.md#spoof-settings) och postlådeinformation för alla mottagare. Men andra tillgängliga funktioner [för personifieringsskydd](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) och [avancerade inställningar är](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) inte konfigurerade eller aktiverade i standardprincipen. Om du vill aktivera alla skyddsfunktioner ändrar du standardprincipen för skydd mot nätfiske eller skapar ytterligare principer för skydd mot nätfiske.
 
 ### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Inställningar för personifiering i principer för skydd mot nätfiske i Microsoft Defender för Office 365
 
@@ -159,7 +159,7 @@ En imiterad domän kan annars anses legitim (registrerad domän, konfigurerade e
 
 Följande inställningar för personifiering är endast tillgängliga i principer mot nätfiske i Microsoft Defender för Office 365:
 
-- **Användare att skydda:** Förhindrar att de angivna interna eller externa e-postadresserna **imiteras som meddelandeavsändare.** Du får till exempel ett e-postmeddelande från företagets vice vd där du ber dig att skicka information till hennes interna företag. Skulle du göra det? Många skulle skicka svaret utan att tänka efter.
+- **Användare att skydda:** Förhindrar att de angivna interna eller externa e-postadresserna **imiteras som meddelandeavsändare.** Du får till exempel ett e-postmeddelande från vd för ditt företag där du ber dig att skicka viss intern företagsinformation till henne. Skulle du göra det? Många skulle skicka svaret utan att tänka efter.
 
   Du kan använda skyddade användare för att lägga till interna och externa avsändares e-postadresser för att skydda mot personifiering. Den här listan med avsändare som skyddas från användarpersonifiering  skiljer sig från listan över mottagare som principen gäller för  (alla mottagare [](#policy-settings) för standardprincipen, specifika mottagare som **konfigurerats** i inställningen Tillämpas på i avsnittet Principinställningar).
 
@@ -171,9 +171,9 @@ Följande inställningar för personifiering är endast tillgängliga i principe
 
   Som standard är inga avsändar-e-postadresser konfigurerade för personifieringsskydd i **Användare för att skydda.** Som standard omfattas inga avsändar-e-postadresser av personifieringsskydd, antingen i standardprincipen eller i anpassade principer.
 
-  När du lägger till interna  eller externa e-postadresser  i listan Användare för att skydda, kontrolleras meddelanden från dessa avsändare av personifieringsskydd. Meddelandet kontrolleras för personifiering om **meddelandet** skickas  till en mottagare som principen gäller för (alla mottagare för standardprincipen; **Tillämpas på** mottagare i anpassade principer). Om personifiering identifieras i avsändarens e-postadress tillämpas åtgärder för personifieringsskydd för användare på meddelandet (vad du ska göra med meddelandet, om du vill visa säkerhetstips för imiterade användare osv.).
+  När du lägger till interna  eller externa e-postadresser  i listan Användare för att skydda, kontrolleras meddelanden från dessa avsändare av personifieringsskydd. Meddelandet kontrolleras för personifiering om **meddelandet** skickas  till en mottagare som principen gäller för (alla mottagare för standardprincipen; **Tillämpas på** mottagare i anpassade principer). Om personifiering identifieras i avsändarens e-postadress tillämpas personifieringsskyddsåtgärderna för användarna på meddelandet (vad ska jag göra med meddelandet, om du vill visa säkerhetstips för imiterade användare osv.).
 
-- **Domäner som ska** skyddas: Förhindrar att de angivna domänerna personifieras **i meddelandets avsändares domän.** Till exempel alla domäner du äger (godkända[domäner) eller](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)specifika domäner (domäner du äger eller partnerdomäner). Den här  listan med avsändardomäner som skyddas från personifiering skiljer sig från listan över mottagare som principen  gäller för (alla mottagare för standardprincipen, specifika mottagare som konfigurerats i inställningen Tillämpas på i avsnittet Principinställningar).  [](#policy-settings)
+- **Domäner som ska** skyddas: Förhindrar att de angivna domänerna personifieras **i meddelandets avsändares domän.** Till exempel alla domäner som du äger[(godkända domäner)](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)eller specifika domäner (domäner du äger eller partnerdomäner). Den här  listan med avsändardomäner som skyddas från personifiering skiljer sig från listan över mottagare som principen  gäller för (alla mottagare för standardprincipen, specifika mottagare som konfigurerats i inställningen Tillämpas på i avsnittet Principinställningar).  [](#policy-settings)
 
   > [!NOTE]
   > Det maximala antalet skyddade domäner som du kan definiera i alla principer för skydd mot nätfiske är 50.
@@ -212,7 +212,7 @@ Följande inställningar för personifiering är endast tillgängliga i principe
   > Rekommendation för att aktivera ett säkerhetstips som visas under första gången kontakten mellan avsändaren och mottagaren/mottagarna: Även när säkerhetstips för personifiering är avstängda **rekommenderar** vi att du använder en **e-postflödesregel**(kallas även transportregel) för att lägga till meddelanderubriken **X-MS-Exchange-EnableFirstContactSafetyTip** med värde aktiverad för meddelanden.  Ett säkerhetstips informerar mottagarna första gången de får ett meddelande från avsändaren eller om de inte ofta får meddelanden från avsändaren. Den här funktionen ger ett extra säkerhetsskydd mot potentiella personifieringsattacker. 
   > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="Texten i säkerhetstipset för personifieringsskydd med flera mottagare.":::
 
-- **Postlådeinformation:** Aktiverar eller inaktiverar artificiell intelligens (AI) som bestämmer användarnas e-postmönster med vanliga kontakter. Den här inställningen hjälper AI att skilja mellan legitima och falska e-postmeddelanden från dessa kontakter. Postlådeinformation är bara tillgängligt för Exchange Online-postlådor.
+- **Postlådeinformation:** Aktiverar eller inaktiverar artificiell intelligens (AI) som bestämmer användar-e-postmönster med vanliga kontakter. Den här inställningen hjälper AI att skilja mellan legitima och falska e-postmeddelanden från dessa kontakter. Postlådeinformation är bara tillgängligt för Exchange Online-postlådor.
 
 - **Postlådebaserat personifieringsskydd:** Aktiverar eller inaktiverar utökade personifieringsresultat baserat på varje användares enskilda avsändarkarta. Med den här informationen kan Microsoft 365 anpassa identifiering av användarpersonifiering och hantera falska positiva identifieringar bättre. När användarpersonifiering identifieras kan du definiera en specifik åtgärd som ska vidtas på meddelandet:
 
@@ -223,18 +223,18 @@ Följande inställningar för personifiering är endast tillgängliga i principe
   - **Leverera meddelandet och lägga till andra adresser i raden Hemlig kopia**
   - **Ta bort meddelandet innan det levereras**
 
-- **Betrodda avsändare och domäner:** Undantag för inställningarna för personifieringsskydd. Meddelanden från angivna avsändare och avsändardomäner klassificeras aldrig som personifieringsbaserade attacker av principen. Med andra ord tillämpas inte åtgärden för skyddade avsändare, skyddade domäner eller postlådeinformationsskydd på dessa betrodda avsändare eller avsändardomäner. Maxgränsen för dessa listor är ungefär 1 000 poster.
+- **Betrodda avsändare och domäner:** Undantag för inställningarna för personifieringsskydd. Meddelanden från angivna avsändare och avsändardomäner klassificeras aldrig som personifieringsbaserade angrepp av principen. Med andra ord tillämpas inte åtgärden för skyddade avsändare, skyddade domäner eller postlådeinformationsskydd på dessa betrodda avsändare eller avsändardomäner. Maxgränsen för dessa listor är ungefär 1 000 poster.
 
-### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Avancerade tröskelvärden för nätfiske i principer för nätfiske i Microsoft Defender för Office 365
+### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Avancerade tröskelvärden för nätfiske i principer mot nätfiske i Microsoft Defender för Office 365
 
 Följande avancerade tröskelvärden för nätfiske är endast tillgängliga i principer mot nätfiske i Microsoft Defender för Office 365. Dessa tröskelvärden styr känsligheten för användning av modeller för maskininlärning på meddelanden för att fastställa nätfiskeförsök:
 
-- **1 – Standard:** Det här är standardvärdet. Hur allvarlig åtgärden är för meddelandet beror på hur allvarligt meddelandet är är nätfiske (låg, medel, hög eller mycket hög konfidens). Exempelvis har meddelanden som identifieras som nätfiske med mycket hög förtroendegrad de mest allvarliga åtgärderna, medan meddelanden som identifieras som nätfiske med låg konfidensgrad har mindre allvarliga åtgärder tillämpade.
+- **1 – Standard:** Det här är standardvärdet. Hur allvarlig åtgärden är för meddelandet beror på hur högt meddelandet är om meddelandet är nätfiske (låg, medelstor, hög eller mycket hög konfidens). Exempelvis har meddelanden som identifieras som nätfiske med mycket hög konfidensgrad de mest allvarliga åtgärderna, medan meddelanden som identifieras som nätfiske med låg konfidensgrad har mindre allvarliga åtgärder tillämpade.
 
-- **2 – Aggressivt:** Meddelanden som identifieras som nätfiske behandlas som om de identifierades med mycket stort förtroende.
+- **2 – Aggressivt:** Meddelanden som identifieras som nätfiske behandlas som om de identifierats med mycket hög förtroendegrad.
 
 - **3 –** Mer aggressiva: Meddelanden som identifieras som nätfiske behandlas med medelhög eller hög förtroendegrad som om de identifierades med mycket stort förtroende.
 
 - **4 –** Mest aggressiva: Meddelanden som identifieras som nätfiske med ett lågt, medelstort eller högt förtroende behandlas som om de identifierades med mycket hög förtroendegrad.
 
-Risken för falska positiva meddelanden (bra meddelanden som markeras som dåliga) ökar när du ökar den här inställningen. Mer information om de rekommenderade inställningarna finns i [principen mot nätfiske i inställningarna för Microsoft Defender för Office 365.](recommended-settings-for-eop-and-office365-atp.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)
+Risken för falska positiva resultat (bra meddelanden som markeras som dåliga) ökar när du ökar den här inställningen. Mer information om de rekommenderade inställningarna finns i [principen mot nätfiske i inställningarna för Microsoft Defender för Office 365.](recommended-settings-for-eop-and-office365-atp.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)
