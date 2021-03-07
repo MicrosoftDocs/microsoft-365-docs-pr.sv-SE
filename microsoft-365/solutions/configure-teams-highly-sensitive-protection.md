@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du distribuerar team med skydd för mycket känslig data.
-ms.openlocfilehash: 2679a8a0bd8cf5cc3d35d517e8a44921fc4fdbc1
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 7e746ebc81d1ccd9aea2953fd42004715f8d7819
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921140"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509272"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Konfigurera team med skydd för mycket känslig data
 
@@ -79,7 +79,7 @@ Att skapa en känslighetsetikett
 17. Klicka på **Nästa**.
 18. På sidan **Definiera inställningar för extern delning och enhetsåtkomst** väljer du **Styra extern delning från etiketterade SharePoint-webbplatser**.
 19. Under **Innehåll kan delas med** väljer du **Nya och befintliga gäster** om du vill tillåta gäståtkomst eller **Endast personer i organisationen**.
-20. Under **Åtkomst från ohanterade enheter** väljer du **Blockera åtkomst**.
+20. Under **Åtkomst från ohanterade enheter** väljer du **Blockera åtkomst**. (Om du tillåter gäster och de har inte hanterade enheter vill du kanske välja **Tillåt begränsad åtkomst på webben**.)
 21. Klicka på **Nästa**.
 22. På sidan **Auto-etiketting för databaskolumner** klickar du på **Nästa**.
 23. Klicka på **Skapa etikett** och sedan på **Klart**.

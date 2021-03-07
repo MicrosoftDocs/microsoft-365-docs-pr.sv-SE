@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: Lär dig hur du konfigurerar Teams för bättre säkerhet vid delning av filer med hjälp av tre skyddsnivåer, och balansera säkerhet med att kunna samarbete enkelt.
-ms.openlocfilehash: cb49c35cc1c485d45656b1716d385cf626322ce8
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: d41effb6db9f8995c3c878523babf200ab9af762
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602013"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509248"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Konfigurera Teams med tre skyddsnivåer
 
@@ -114,6 +114,8 @@ Se följande referenser för att skapa en säker och produktiv gästdelningsmilj
 ## <a name="access-from-unmanaged-devices"></a>Åtkomst från ohanterade enheter
 
 För nivåerna känsligt och strikt känsligt begränsar vi åtkomst till SharePoint-innehåll med känslighetsetiketter. Med villkorad åtkomst i Azure AD finns många alternativ för att bestämma hur användare får åtkomst till Microsoft 365, inklusive begränsningar utifrån plats, risker, kompatibilitetsstatus för enheter och andra faktorer. Vi rekommenderar att du läser [Vad är villkorad åtkomst?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) och fundera på vilka tilläggsprinciper som passar bäst för din organisation.
+
+Observera att gäster ofta inte har enheter som hanteras av din organisation. Om du tillåter gäster på någon av nivåerna bör du fundera på vilka typer av enheter de använder för att komma åt grupper och webbplatser och ange principer för ohanterad enhet därefter.
 
 ## <a name="next-step"></a>Nästa steg
 

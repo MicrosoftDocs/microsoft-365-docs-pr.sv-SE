@@ -87,6 +87,8 @@
       items:
         - name: Översikt över Bookings
           href: overview-bookings.md
+        - name: Spåra företagsinformation med Microsoft-listor
+          href: track-info-lists.md
         - name: Planera ett evenemang
           href: plan-event.md
     - name: Hantera tjänster

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Läs mer om formulärbearbetning i Microsoft SharePoint Syntex
-ms.openlocfilehash: 4a6ecc9e6eaca6f0b61f8c04b67eabb29674f6bd
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 1dba8828a158a5163017ee5f37735f44e974274c
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242452"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515166"
 ---
 # <a name="form-processing-overview"></a>Översikt av formulär bearbetning
 
@@ -45,6 +45,13 @@ En Office 365-administratör måste [aktivera formulärbearbetning](https://docs
 ### <a name="file-limitations"></a>Filbegränsningar
 
 När du använder formulärbearbetningsmodeller ska du observera [kraven och begränsningar för filanvändningen](https://docs.microsoft.com/ai-builder/form-processing-model-requirements).
+
+### <a name="multi-geo-environments"></a>Multi-Geo miljöer
+
+När Du konfigurerar SharePoint Syntex i en [Microsoft 365 Multi-Geo-miljö](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo)kan du bara konfigurera den så att den använder formulärbearbetning på den centrala platsen. Om du vill använda formulärbearbetning på en lokal plats kontaktar du Microsofts support.
+
+
+
 
 
 

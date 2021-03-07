@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Lär dig hur du konfigurerar multifaktorautentisering för din organisation.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 5ea367e64108e80ee7429ec700cf2ac0551aeab2
-ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
+ms.openlocfilehash: d08ef54c545809bbb2277f8d0a8471245400a3ac
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50105157"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50514974"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Konfigurera multifaktorautentisering
 
@@ -81,10 +81,11 @@ Mer information om Azure AD P1 och P2 finns i [Azure Active Directory-priserna](
 
 ### <a name="turn-on-modern-authentication-for-your-organization"></a>Aktivera modern autentisering för din organisation
 
-För de flesta prenumerationer aktiveras modern autentisering automatiskt, men om du köpte prenumerationen för länge sedan, är den kanske inte det. Detta måste aktiveras innan MFA fungerar på rätt sätt med Office-appar.
+För de flesta prenumerationer är modern autentisering aktiverad automatiskt, men om du köpte prenumerationen före augusti 2017 måste du förmodligen aktivera modern autentisering för att få funktioner som multifaktorautentisering att fungera i Windows-klienter som Outlook.
+
 
 1. I Administrationscenter för Microsoft 365 väljer du **Inställningar** \> **Organisationsinställningar i det vänstra navigeringsfältet**.
-1. Under **Tjänster** väljer du **Modern autentisering** och kontrollerar att **Aktivera modern autentisering** är markerad i fönstret **Modern autentisering**. Välj **Spara ändringar**.
+2. Under fliken **Tjänster** väljer du **Modern autentisering** och kontrollerar att **Aktivera modern autentisering** är markerad i fönstret **Modern autentisering**. Välj **Spara ändringar**.
 
 ### <a name="turn-off-legacy-per-user-mfa"></a>Inaktivera föråldrad MFA för alla användare
 

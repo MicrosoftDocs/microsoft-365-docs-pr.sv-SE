@@ -19,12 +19,12 @@ localization_priority: Priority
 description: Administratörer kan lära sig hur EOP använder e-autentisering (SPF, DKIM och DMARC) för att förhindra förfalskning, phishing och skräppost.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d1e0fbe8a00b17e871adf65f86a337a0a94493ed
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 87677608431446a4bdfe6e16ae1204163a4f582a
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286519"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509200"
 ---
 # <a name="email-authentication-in-eop"></a>E-postautentisering i EOP
 
