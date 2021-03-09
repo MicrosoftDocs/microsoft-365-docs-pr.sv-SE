@@ -9,31 +9,30 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 775afd861cfbd985e8a95cea3cc4c6f5e87fa396
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e48a9eb8c2b64ac8779d953a6267a4b4ce3e412c
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639425"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544246"
 ---
-# <a name="contact-support-for-sri-lanka"></a><span data-ttu-id="12ea3-103">Kontakta supporten för Sri Lanka</span><span class="sxs-lookup"><span data-stu-id="12ea3-103">Contact support for Sri Lanka</span></span>
+# <a name="contact-support-for-sri-lanka"></a><span data-ttu-id="f411b-103">Kontakta supporten för Sri Lanka</span><span class="sxs-lookup"><span data-stu-id="f411b-103">Contact support for Sri Lanka</span></span>
 
-<span data-ttu-id="12ea3-104">[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="12ea3-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="f411b-104">[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="f411b-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="12ea3-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="12ea3-105">Phone number</span></span>
-<span data-ttu-id="12ea3-106">2423 254</span><span class="sxs-lookup"><span data-stu-id="12ea3-106">2423 254</span></span>
+## <a name="phone-number"></a><span data-ttu-id="f411b-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="f411b-105">Phone number</span></span>
+<span data-ttu-id="f411b-106">2423 254</span><span class="sxs-lookup"><span data-stu-id="f411b-106">2423 254</span></span>
 
-## <a name="hours"></a><span data-ttu-id="12ea3-107">Tider</span><span class="sxs-lookup"><span data-stu-id="12ea3-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="12ea3-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="12ea3-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="f411b-107">Tider</span><span class="sxs-lookup"><span data-stu-id="f411b-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="f411b-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="f411b-108">Billing Support:</span></span>
 
-<span data-ttu-id="12ea3-109">Engelska: Mon-Fri 09:00-6 PM</span><span class="sxs-lookup"><span data-stu-id="12ea3-109">English: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="f411b-109">Engelska: Mon-Fri 9.00–18.00</span><span class="sxs-lookup"><span data-stu-id="f411b-109">English: Mon-Fri 9 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="12ea3-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="12ea3-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="f411b-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="f411b-110">Technical Support:</span></span>
 
-<span data-ttu-id="12ea3-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="12ea3-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="f411b-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="f411b-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="12ea3-112">Lokala samtals avgifter gäller</span><span class="sxs-lookup"><span data-stu-id="12ea3-112">Local call charges apply</span></span>
+<span data-ttu-id="f411b-112">Lokal samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="f411b-112">Local call charges apply</span></span>

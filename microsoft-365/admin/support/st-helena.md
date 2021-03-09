@@ -1,5 +1,5 @@
 ---
-title: Supportinformation för S:t Helena
+title: Supportinformation för St Helena
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,31 +9,30 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 09e07437b029de928360d410c2301c1a33f3b5ed
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: daddff831f88916ec40e058cb83a2e8b1593b73c
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639449"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544234"
 ---
-# <a name="contact-support-for-st-helena"></a><span data-ttu-id="0192f-103">Kontakta supporten för S:t Helena</span><span class="sxs-lookup"><span data-stu-id="0192f-103">Contact support for St Helena</span></span>
+# <a name="contact-support-for-st-helena"></a><span data-ttu-id="74dfd-103">Kontakta supporten för St Helena</span><span class="sxs-lookup"><span data-stu-id="74dfd-103">Contact support for St Helena</span></span>
 
-<span data-ttu-id="0192f-104">[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="0192f-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="74dfd-104">[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="74dfd-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="0192f-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="0192f-105">Phone number</span></span>
-<span data-ttu-id="0192f-106">+ 1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="0192f-106">+1 312 843 5151</span></span>
+## <a name="phone-number"></a><span data-ttu-id="74dfd-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="74dfd-105">Phone number</span></span>
+<span data-ttu-id="74dfd-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="74dfd-106">+1 312 843 5151</span></span>
 
-## <a name="hours"></a><span data-ttu-id="0192f-107">Tider</span><span class="sxs-lookup"><span data-stu-id="0192f-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="0192f-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="0192f-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="74dfd-107">Tider</span><span class="sxs-lookup"><span data-stu-id="74dfd-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="74dfd-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="74dfd-108">Billing Support:</span></span>
 
-<span data-ttu-id="0192f-109">Engelska: Mon-Fri 09.00 – 17.00</span><span class="sxs-lookup"><span data-stu-id="0192f-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="74dfd-109">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="74dfd-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="0192f-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="0192f-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="74dfd-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="74dfd-110">Technical Support:</span></span>
 
-<span data-ttu-id="0192f-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="0192f-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="74dfd-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="74dfd-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="0192f-112">Internationella samtals avgifter gäller</span><span class="sxs-lookup"><span data-stu-id="0192f-112">International call charges apply</span></span>
+<span data-ttu-id="74dfd-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="74dfd-112">International call charges apply</span></span>
