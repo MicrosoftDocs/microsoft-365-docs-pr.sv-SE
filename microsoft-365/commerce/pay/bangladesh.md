@@ -1,5 +1,5 @@
 ---
-title: Betalnings information för Bangladesh
+title: Betalningsinformation för Bangladesh
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,26 +9,25 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Lär dig hur du skickar betalningen för din prenumeration.
+description: Lär dig var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 36eff0eae165978a851e2f4a6c899175aa87fb0d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 93ed8431efaec9201df9c8ddfc2212aa23d24267
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637913"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549550"
 ---
-# <a name="payment-information-for-bangladesh"></a>Betalnings information för Bangladesh
+# <a name="payment-information-for-bangladesh"></a>Betalningsinformation för Bangladesh
 
-[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md)
 
-Betala endast i USD och ange faktura numret som referens vid betalning.
+Betala endast i USD och ange fakturanumret som referens vid betalning.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
 **Bank:** Citibank, Singapore  
-**SWIFT-kod:** CITISGSG  
-**Konto nummer:** 0-817543-138  
-**Konto namn:** MICROSOFT REGIONAL SALES CORP  
+**SWIFT-KOD:** CITISGSG  
+**Kontonummer:** 0-817543-138  
+**Kontonamn:** MICROSOFT REGIONAL SALES CORP  

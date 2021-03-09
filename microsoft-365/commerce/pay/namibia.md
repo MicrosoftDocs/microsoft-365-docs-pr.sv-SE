@@ -1,5 +1,5 @@
 ---
-title: Betalnings information för Namibia
+title: Betalningsinformation för Namibia
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Lär dig hur du skickar betalningen för din prenumeration.
+description: Lär dig var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a1c6c59cc1e813c5562c964ae61cdd76d709635d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b92dd5020f6f9dbb6980f0309a774de88527b41b
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649097"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550522"
 ---
-# <a name="payment-information-for-namibia"></a>Betalnings information för Namibia
+# <a name="payment-information-for-namibia"></a>Betalningsinformation för Namibia
 
-[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md)
 
-Betala endast i USD och ange faktura numret som referens vid betalning.
+Betala endast i USD och ange fakturanumret som referens vid betalning.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
 **Bank:** Citibank, London  
 **SWIFT-kod:** CITIGB2L  
 **IBAN:** GB95CITI18500812510049  
-**Konto nummer:** 12510049  
-**Konto namn:** MICROSOFT  
+**Kontonummer:** 12510049  
+**Kontonamn:** MICROSOFT  

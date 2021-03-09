@@ -1,5 +1,5 @@
 ---
-title: Supportinformation för Åland
+title: Supportinformation för Öland
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,20 +9,19 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9d3bc7e9cef92c2f657c77e77d24b4bb22890167
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dc43559640aeeb6beb089a4212a202ba4b41ff06
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644417"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549142"
 ---
-# <a name="contact-support-for-aland-islands"></a>Kontakta supporten för Åland
+# <a name="contact-support-for-aland-islands"></a>Kontakta support för Öland
 
-[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
+[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
 
 ## <a name="phone-number"></a>Telefonnummer
 08009 8462
@@ -30,10 +29,10 @@ ms.locfileid: "48644417"
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Engelska: Mon-Fri 10 FM-6 EM
+Engelska: Mon-Fri 10–18:00
 
 ### <a name="technical-support"></a>Teknisk support:
 
 Engelska: mån–sön, dygnet runt
 
-Lokala samtals avgifter gäller
+Lokal samtalsavgift
