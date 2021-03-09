@@ -9,31 +9,30 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e5ccab8ccc202b9ee9b6fabb3736689db5932666
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d32a4ac66bba63ea4b4fc29106e61ea1b6d75acf
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642226"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546958"
 ---
-# <a name="contact-support-for-guinea"></a><span data-ttu-id="b8769-103">Kontakta supporten för Guinea</span><span class="sxs-lookup"><span data-stu-id="b8769-103">Contact support for Guinea</span></span>
+# <a name="contact-support-for-guinea"></a><span data-ttu-id="50085-103">Kontakta support för Guinea</span><span class="sxs-lookup"><span data-stu-id="50085-103">Contact support for Guinea</span></span>
 
-<span data-ttu-id="b8769-104">[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="b8769-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="50085-104">[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="50085-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="b8769-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="b8769-105">Phone number</span></span>
-<span data-ttu-id="b8769-106">+ 1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="b8769-106">+1 312 843 5151</span></span>
+## <a name="phone-number"></a><span data-ttu-id="50085-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="50085-105">Phone number</span></span>
+<span data-ttu-id="50085-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="50085-106">+1 312 843 5151</span></span>
 
-## <a name="hours"></a><span data-ttu-id="b8769-107">Tider</span><span class="sxs-lookup"><span data-stu-id="b8769-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="b8769-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="b8769-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="50085-107">Tider</span><span class="sxs-lookup"><span data-stu-id="50085-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="50085-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="50085-108">Billing Support:</span></span>
 
-<span data-ttu-id="b8769-109">Engelska: Mon-Fri 10 FM-6 EM</span><span class="sxs-lookup"><span data-stu-id="b8769-109">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="50085-109">Engelska: Mon-Fri 10–18:00</span><span class="sxs-lookup"><span data-stu-id="50085-109">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="b8769-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="b8769-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="50085-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="50085-110">Technical Support:</span></span>
 
-<span data-ttu-id="b8769-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="b8769-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="50085-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="50085-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="b8769-112">Internationella samtals avgifter gäller</span><span class="sxs-lookup"><span data-stu-id="b8769-112">International call charges apply</span></span>
+<span data-ttu-id="50085-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="50085-112">International call charges apply</span></span>
