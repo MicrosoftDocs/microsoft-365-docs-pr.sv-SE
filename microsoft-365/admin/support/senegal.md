@@ -9,37 +9,36 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9a553ccff4b9d034cdd269e5df6cc484ba808682
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: ec8d63ae92fea3d0bd95ec632aaa1cb7b441bcc4
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639857"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544558"
 ---
 # <a name="contact-support-for-senegal"></a>Kontakta supporten för Senegal
 
-[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
+[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
 
 ## <a name="phone-number"></a>Telefonnummer
 800 103 072
 
-Efter uppringning anger du
+När du har ringt anger du
 
 877 867 2337
 
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Franska: Mon-Fri 8 FM-4 EM
+Franska: Mon-Fri 08:00–16:00
 
-Engelska: Mon-Fri 8 FM-4 EM
+Engelska: Mon-Fri 08:00–16:00
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Franska: Mon-Fri 7 AM – 15:00
+Franska: Mon-Fri 19.00–18.00
 
 Engelska: mån–sön, dygnet runt

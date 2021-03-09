@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: Lär dig hur du anpassar rapporter i webbläsaren och Power BI Desktop.
-ms.openlocfilehash: 0375b61b6922c99acf927a4283571451deabaf14
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 3c662dfa91939c68f0aa0a85c19a1fab003064bf
+ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114303"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50572656"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Anpassa rapporter i Microsoft 365 användningsanalyser
 
@@ -50,11 +50,11 @@ Det här exemplet visar hur du ändrar **fliken** Aktivering i **rapporten Om ak
   
 1. Välj **fliken Aktivering i** rapporten om **aktivering/licensiering.**
     
-2. Öppna redigeringsläget genom att välja **knappen** Redigera högst upp via ![ knappen Mer sida i Power ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) BI. 
+2. Gå in i redigeringsläget genom **att välja knappen** Redigera högst upp via knappen Mer sida i Power ![ ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) BI. 
     
     ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
-3. Välj Duplicera den här **sidan längst upp till höger.**
+3. Välj Duplicera den **här sidan längst upp till höger.**
     
     ![Choose Duplicate this page](../../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
   
@@ -124,7 +124,7 @@ Du kan börja genom att ansluta direkt till ODATA-rapport-API:erna från Microso
   
 3. Ange dina autentiseringsuppgifter som administratör för Microsoft 365 (organisation eller skola) för att autentisera dig för Microsoft 365 när du uppmanas att göra det.
     
-    Mer information [om vem](usage-analytics.md#faq) som har behörighet att komma åt apprapporterna för mallen för införande av Microsoft 365 finns i vanliga frågor och svar. 
+    Se vanliga [frågor och](usage-analytics.md#faq) svar om du vill ha mer information om vem som har behörighet att komma åt apprapporterna för mallen införande av Microsoft 365. 
     
 4. När anslutningen har autentiserats visas navigatörsfönstret med de datauppsättningar som är tillgängliga för anslutning.
     
@@ -138,7 +138,7 @@ Du kan börja genom att ansluta direkt till ODATA-rapport-API:erna från Microso
 
 Du kan även använda mallfilen för Power BI som motsvarar Microsoft 365 användningsanalysrapporter som utgångspunkt när du ansluter till dessa data. Fördelen med att använda pbit-filen är att den redan har anslutningssträngen. Du kan också dra nytta av alla de anpassade åtgärder som skapas, utöver de data som det grundläggande schemat returnerar och bygga på dem ytterligare.
   
-Du kan hämta Power BI-mallfilen från Microsoft Download Center från [Download Center.](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit) När du har hämtat Power BI-mallfilen följer du de här anvisningarna för att komma igång:
+Du kan hämta Power BI-mallfilen från [Microsoft Download Center.](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit) När du har laddat ned Power BI-mallfilen följer du de här stegen för att komma igång:
   
 1. Öppna pbit-filen.
     

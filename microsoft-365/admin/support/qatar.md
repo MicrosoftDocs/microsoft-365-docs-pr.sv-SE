@@ -1,5 +1,5 @@
 ---
-title: Support information för Qatar
+title: Supportinformation för Qatar
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,20 +9,19 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8d4a76d3d2806e63e68ee7df13e7b4e2c31140a2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3ddea9fb9ead7904412b9e31e3b1bc4df51b7dbf
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640193"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544966"
 ---
 # <a name="contact-support-for-qatar"></a>Kontakta supporten för Qatar
 
-[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
+[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
 
 ## <a name="phone-number"></a>Telefonnummer
 44 119418
@@ -36,14 +35,14 @@ Ange kod 7700
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Arabiska: Sun-Thu 10 FM-6 EM
+Arabiska: Sun-Thu 10.00–18.00
 
-Engelska: Mon-Fri 10 FM-6 EM
+Engelska: Mon-Fri 10–18:00
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Arabiska: Sun-Thu 10 FM-6 EM
+Arabiska: Sun-Thu 10.00–18.00
 
 Engelska: mån–sön, dygnet runt
 
-Lokala samtals avgifter gäller
+Lokal samtalsavgift

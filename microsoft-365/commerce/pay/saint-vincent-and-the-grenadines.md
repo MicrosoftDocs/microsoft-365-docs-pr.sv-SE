@@ -1,5 +1,5 @@
 ---
-title: Betalnings information för Saint Vincent och Grenadinerna
+title: Betalningsinformation för Saint Vincent och Grenadinerna
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Lär dig hur du skickar betalningen för din prenumeration.
+description: Lär dig var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b39113d31b08eb60a72a2dbd21d2a4fd25473ab9
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 815d8126db7fa4ad742c6352c199fed90c47ad72
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648701"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550282"
 ---
-# <a name="payment-information-for-saint-vincent-and-the-grenadines"></a>Betalnings information för Saint Vincent och Grenadinerna
+# <a name="payment-information-for-saint-vincent-and-the-grenadines"></a>Betalningsinformation för Saint Vincent och Grenadinerna
 
-[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md)
 
-Betala endast i USD och ange faktura numret som referens vid betalning.
+Betala endast i USD och ange fakturanumret som referens vid betalning.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
-**Bank:** Bank i Amerika  
-**Gren** Dallas  
+**Bank:** Bank of America  
+**Branch** Dallas  
 **SWIFT-kod:** BOFAUS3N  
-**Konto nummer:** 4426587954  
-**Konto namn:** Microsoft  
+**Kontonummer:** 4426587954  
+**Kontonamn:** Microsoft  
