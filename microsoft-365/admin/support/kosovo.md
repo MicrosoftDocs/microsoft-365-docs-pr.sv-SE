@@ -1,5 +1,5 @@
 ---
-title: Supportinformation för Kosovo
+title: Supportinformation för Hercegovina
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,31 +9,30 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1a294fb38e0617dfc7ec5052d2a91359ec53d975
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3a07a0ad62b3553476ac682aac225b3c4a13d2a9
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641698"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546406"
 ---
-# <a name="contact-support-for-kosovo"></a>Kontakta supporten för Kosovo
+# <a name="contact-support-for-kosovo"></a>Kontakta supporten för Hercegovina
 
-[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
+[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
 
 ## <a name="phone-number"></a>Telefonnummer
-+ 1 312 843 5151
++1 312 843 5151
 
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Engelska: Mon-Fri 11 FM-7 EM
+Engelska: Mon-Fri 23:00–17:00
 
 ### <a name="technical-support"></a>Teknisk support:
 
 Engelska: mån–sön, dygnet runt
 
-Internationella samtals avgifter gäller
+Internationell samtalsavgift

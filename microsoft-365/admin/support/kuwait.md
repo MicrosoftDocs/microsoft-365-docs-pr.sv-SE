@@ -9,23 +9,22 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a0b265930653c69efe078350726b0d9f7e064c8c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b1a4ca7aa68acbcd148654417f26bc636561898f
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641717"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546418"
 ---
-# <a name="contact-support-for-kuwait"></a>Kontakta supporten för Kuwait
+# <a name="contact-support-for-kuwait"></a>Kontakta support för Kuwait
 
-[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
+[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
 
 ## <a name="phone-number"></a>Telefonnummer
-+ 965 22219876
++965 22219876
 
 Välj alternativ 2
 
@@ -36,14 +35,14 @@ Ange kod 7701
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Arabiska: Sun-Thu 10 FM-6 EM
+Arabiska: Sun-Thu 10.00–18.00
 
-Engelska: Mon-Fri 10 FM-6 EM
+Engelska: Mon-Fri 10–18:00
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Arabiska: Sun-Thu 10 FM-6 EM
+Arabiska: Sun-Thu 10.00–18.00
 
 Engelska: mån–sön, dygnet runt
 
-Lokala samtals avgifter gäller
+Lokal samtalsavgift

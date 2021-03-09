@@ -1,5 +1,5 @@
 ---
-title: Supportinformation för Barbados0
+title: Supportinformation för Barbados
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,20 +9,19 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: ''
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 316bb320a82bfeee2aaac177ae6f07346725608c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: ec6924ed5603424320528c44aa83d2d9389703b1
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643949"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548728"
 ---
-# <a name="contact-support-for-barbados"></a>Kontakta supporten för Barbados0
+# <a name="contact-support-for-barbados"></a>Kontakta support för Barbados
 
-[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
+[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
 
 ## <a name="phone-number"></a>Telefonnummer
 1 877 639 0597
@@ -30,7 +29,7 @@ ms.locfileid: "48643949"
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Engelska: Mon-Fri 09.00 – 17.00
+Engelska: Mon-Fri 9.00–17.00
 
 ### <a name="technical-support"></a>Teknisk support:
 

@@ -9,31 +9,30 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e5ccab8ccc202b9ee9b6fabb3736689db5932666
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d32a4ac66bba63ea4b4fc29106e61ea1b6d75acf
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642226"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546958"
 ---
-# <a name="contact-support-for-guinea"></a>Kontakta supporten för Guinea
+# <a name="contact-support-for-guinea"></a>Kontakta support för Guinea
 
-[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
+[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
 
 ## <a name="phone-number"></a>Telefonnummer
-+ 1 312 843 5151
++1 312 843 5151
 
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Engelska: Mon-Fri 10 FM-6 EM
+Engelska: Mon-Fri 10–18:00
 
 ### <a name="technical-support"></a>Teknisk support:
 
 Engelska: mån–sön, dygnet runt
 
-Internationella samtals avgifter gäller
+Internationell samtalsavgift

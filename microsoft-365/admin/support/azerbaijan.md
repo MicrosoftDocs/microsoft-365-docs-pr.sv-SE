@@ -9,20 +9,19 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 948cd5c0258532325d631e502a11c4f8f741c82a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 35a2e561e8d7e72088484fc902d4e4ca36b5f41e
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644117"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548842"
 ---
-# <a name="contact-support-for-azerbaijan"></a>Kontakta supporten för Azerbajdzjan
+# <a name="contact-support-for-azerbaijan"></a>Kontakta support för Azerbajdzjan
 
-[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
+[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
 
 ## <a name="phone-number"></a>Telefonnummer
 01 24 37 35 55
@@ -34,14 +33,14 @@ Ange kod 7706
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Ryska: Mon-Fri 10 FM-7 PM Moskva
+Ryska: Mon-Fri 10:00–17:00 Moskva
 
-Engelska: Mon-Fri 09.00 – 17.00 London
+Engelska: Mon-Fri 9–17 London
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Ryska: Mon-Fri 7 AM – 8 PM Moskva
+Ryska: Mon-Fri 19.00–18 Moskva
 
 Engelska: mån–sön, dygnet runt
 
-Lokala samtals avgifter gäller
+Lokal samtalsavgift

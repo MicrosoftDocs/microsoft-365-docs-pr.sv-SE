@@ -1,5 +1,5 @@
 ---
-title: Supportinformation för Falk lands öarna
+title: Supportinformation för Falklandsöarna
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,31 +9,30 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e63a71b33e60c53c021f4b4d54092ad14fdbadbd
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3d5467e955234b78760fba8fcd7ba7ab7668ff64
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642713"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547498"
 ---
-# <a name="contact-support-for-falkland-islands"></a>Kontakta supporten för Falk lands öarna
+# <a name="contact-support-for-falkland-islands"></a>Kontakta support för Falklandsöarna
 
-[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
+[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
 
 ## <a name="phone-number"></a>Telefonnummer
-+ 1 312 843 5145
++1 312 843 5145
 
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Engelska: Mon-Fri 10 FM-6 EM
+Engelska: Mon-Fri 10–18:00
 
 ### <a name="technical-support"></a>Teknisk support:
 
 Engelska: mån–sön, dygnet runt
 
-Internationella samtals avgifter gäller
+Internationell samtalsavgift
