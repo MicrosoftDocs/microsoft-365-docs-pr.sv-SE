@@ -9,37 +9,36 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ad7439a8bb1fdfdfa96357f64fe0e0c476aad68a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b0d9b58db7ac8e71ad4c71fdd951418413679dd2
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641441"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546190"
 ---
-# <a name="contact-support-for-liechtenstein"></a><span data-ttu-id="fb527-103">Kontakta supporten för Liechtenstein</span><span class="sxs-lookup"><span data-stu-id="fb527-103">Contact support for Liechtenstein</span></span>
+# <a name="contact-support-for-liechtenstein"></a><span data-ttu-id="f302d-103">Kontakta support för Liechtenstein</span><span class="sxs-lookup"><span data-stu-id="f302d-103">Contact support for Liechtenstein</span></span>
 
-<span data-ttu-id="fb527-104">[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="fb527-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="f302d-104">[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="f302d-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="fb527-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="fb527-105">Phone number</span></span>
-<span data-ttu-id="fb527-106">+ 41 800 000 300</span><span class="sxs-lookup"><span data-stu-id="fb527-106">+41 800 000 300</span></span>
+## <a name="phone-number"></a><span data-ttu-id="f302d-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="f302d-105">Phone number</span></span>
+<span data-ttu-id="f302d-106">+41 800 000 300</span><span class="sxs-lookup"><span data-stu-id="f302d-106">+41 800 000 300</span></span>
 
-## <a name="hours"></a><span data-ttu-id="fb527-107">Tider</span><span class="sxs-lookup"><span data-stu-id="fb527-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="fb527-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="fb527-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="f302d-107">Tider</span><span class="sxs-lookup"><span data-stu-id="f302d-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="f302d-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="f302d-108">Billing Support:</span></span>
 
-<span data-ttu-id="fb527-109">Tysk: Mon-Fri 09.00 – 17.00</span><span class="sxs-lookup"><span data-stu-id="fb527-109">German: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="f302d-109">Tyska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="f302d-109">German: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="fb527-110">Engelska: Mon-Fri 09.00 – 17.00</span><span class="sxs-lookup"><span data-stu-id="fb527-110">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="f302d-110">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="f302d-110">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="fb527-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="fb527-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="f302d-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="f302d-111">Technical Support:</span></span>
 
-<span data-ttu-id="fb527-112">Tyska: Mon-Fri 8 AM – 9,5</span><span class="sxs-lookup"><span data-stu-id="fb527-112">German: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="f302d-112">Tyska: Mon-Fri 08:00–19:00</span><span class="sxs-lookup"><span data-stu-id="f302d-112">German: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="fb527-113">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="fb527-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="f302d-113">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="f302d-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="fb527-114">Alternativt telefonnummer: + 41 22 76 141 14</span><span class="sxs-lookup"><span data-stu-id="fb527-114">Alternative Phone Number: +41 22 76 141 14</span></span>
+<span data-ttu-id="f302d-114">Alternativt telefonnummer: +41 22 76 141 14</span><span class="sxs-lookup"><span data-stu-id="f302d-114">Alternative Phone Number: +41 22 76 141 14</span></span>
 
-<span data-ttu-id="fb527-115">Lokala samtals avgifter gäller</span><span class="sxs-lookup"><span data-stu-id="fb527-115">Local call charges apply</span></span>
+<span data-ttu-id="f302d-115">Lokal samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="f302d-115">Local call charges apply</span></span>

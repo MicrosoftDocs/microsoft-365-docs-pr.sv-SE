@@ -1,5 +1,5 @@
 ---
-title: Information om support för Ukraina
+title: Supportinformation för Ukraina
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,33 +9,32 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a6491b68fa36477a8afc936b8735e1a7ed705f71
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 34ab5266355b7973dc3c5689c37a1d00d1045a07
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638933"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543610"
 ---
-# <a name="contact-support-for-ukraine"></a><span data-ttu-id="a7577-103">Kontakta supporten för Ukraina</span><span class="sxs-lookup"><span data-stu-id="a7577-103">Contact support for Ukraine</span></span>
+# <a name="contact-support-for-ukraine"></a><span data-ttu-id="d51af-103">Kontakta supporten för Ukraina</span><span class="sxs-lookup"><span data-stu-id="d51af-103">Contact support for Ukraine</span></span>
 
-<span data-ttu-id="a7577-104">[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="a7577-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="d51af-104">[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="d51af-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="a7577-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="a7577-105">Phone number</span></span>
-<span data-ttu-id="a7577-106">0800 502 285</span><span class="sxs-lookup"><span data-stu-id="a7577-106">0800 502 285</span></span>
+## <a name="phone-number"></a><span data-ttu-id="d51af-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="d51af-105">Phone number</span></span>
+<span data-ttu-id="d51af-106">0800 502 285</span><span class="sxs-lookup"><span data-stu-id="d51af-106">0800 502 285</span></span>
 
-## <a name="hours"></a><span data-ttu-id="a7577-107">Tider</span><span class="sxs-lookup"><span data-stu-id="a7577-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="a7577-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="a7577-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="d51af-107">Tider</span><span class="sxs-lookup"><span data-stu-id="d51af-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="d51af-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="d51af-108">Billing Support:</span></span>
 
-<span data-ttu-id="a7577-109">Ryska: Mon-Fri 10 FM-7 PM Moskva</span><span class="sxs-lookup"><span data-stu-id="a7577-109">Russian: Mon-Fri 10 AM-7 PM Moscow</span></span>
+<span data-ttu-id="d51af-109">Ryska: Mon-Fri 10:00–17:00 Moskva</span><span class="sxs-lookup"><span data-stu-id="d51af-109">Russian: Mon-Fri 10 AM-7 PM Moscow</span></span>
 
-<span data-ttu-id="a7577-110">Engelska: Mon-Fri 09.00 – 17.00 London</span><span class="sxs-lookup"><span data-stu-id="a7577-110">English: Mon-Fri 9 AM-5 PM London</span></span>
+<span data-ttu-id="d51af-110">Engelska: Mon-Fri 9–17 London</span><span class="sxs-lookup"><span data-stu-id="d51af-110">English: Mon-Fri 9 AM-5 PM London</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="a7577-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="a7577-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="d51af-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="d51af-111">Technical Support:</span></span>
 
-<span data-ttu-id="a7577-112">Ryska: Mon-Fri 7 AM – 8 PM Moskva</span><span class="sxs-lookup"><span data-stu-id="a7577-112">Russian: Mon-Fri 7 AM-8 PM Moscow</span></span>
+<span data-ttu-id="d51af-112">Ryska: Mon-Fri 19.00–18 Moskva</span><span class="sxs-lookup"><span data-stu-id="d51af-112">Russian: Mon-Fri 7 AM-8 PM Moscow</span></span>
 
-<span data-ttu-id="a7577-113">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="a7577-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="d51af-113">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="d51af-113">English: 24 hours a day, 7 days a week</span></span>
