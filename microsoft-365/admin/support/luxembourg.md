@@ -9,20 +9,19 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 63e5861384f30515fdeef9b63bf4040213e23b34
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1d7f6d3dd7b57aa8cf878460a0ea8c31ee76a5d7
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641501"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546166"
 ---
 # <a name="contact-support-for-luxembourg"></a>Kontakta supporten för Luxemburg
 
-[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
+[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
 
 ## <a name="phone-number"></a>Telefonnummer
 800 21094
@@ -30,20 +29,20 @@ ms.locfileid: "48641501"
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Franska: Mon-Fri 09.00 – 17.00
+Franska: Mon-Fri 9–17
 
-Tysk: Mon-Fri 09.00 – 17.00
+Tyska: Mon-Fri 9.00–17.00
 
-Engelska: Mon-Fri 09.00 – 17.00
+Engelska: Mon-Fri 9.00–17.00
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Franska: Mon-Fri 8 AM – 9,5
+Franska: Mon-Fri 08:00–19:00
 
-Tyska: Mon-Fri 8 AM – 9,5
+Tyska: Mon-Fri 08:00–19:00
 
 Engelska: mån–sön, dygnet runt
 
 Alternativt telefonnummer: 24 87 15 10
 
-Lokala samtals avgifter gäller
+Lokal samtalsavgift

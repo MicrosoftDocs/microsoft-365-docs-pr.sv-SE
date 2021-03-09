@@ -1,5 +1,5 @@
 ---
-title: Betalnings information för Malta
+title: Betalningsinformation för Malta
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,28 +9,27 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Lär dig hur du skickar betalningen för din prenumeration.
+description: Lär dig var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f2c991da23ec8f039c38c35e0cc9a6de99f84861
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dfd19ee3ae049068f32fc3536e50d3ccbd0e0891
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649301"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543274"
 ---
-# <a name="payment-information-for-malta"></a>Betalnings information för Malta
+# <a name="payment-information-for-malta"></a>Betalningsinformation för Malta
 
-[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md)
 
-Betala endast i EUR och ange faktura numret som referens vid betalning.
+Betala endast i euro och ange fakturanumret som referens vid betalning.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
 **Bank:** Citibank, London  
-**SWIFT-kod/BIC:** CITIGB2L  
+**SWIFT-kod/BIC-kod:** CITIGB2L  
 **IBAN:** GB31CITI18500812207591  
-**Sorterings kod:** 185008  
-**Konto nummer:** 12207591  
-**Konto namn:** MICROSOFT
+**SORTERINGskod:** 185008  
+**Kontonummer:** 12207591  
+**Kontonamn:** MICROSOFT

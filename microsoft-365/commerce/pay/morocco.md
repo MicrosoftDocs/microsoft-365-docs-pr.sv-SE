@@ -1,5 +1,5 @@
 ---
-title: Betalnings information för Marocko
+title: Betalningsinformation för Marocko
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Lär dig hur du skickar betalningen för din prenumeration.
+description: Läs om var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c9a21eac5331482157f5259f3404d4d89ca1d425
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 9f13cb1b90c052acd96c9fa9191e7f939046398d
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649109"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543082"
 ---
-# <a name="payment-information-for-morocco"></a>Betalnings information för Marocko
+# <a name="payment-information-for-morocco"></a>Betalningsinformation för Marocko
 
-[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md)
 
-Betala endast i USD och ange faktura numret som referens vid betalning.
+Betala endast i USD och ange fakturanumret som referens vid betalning.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
 **Bank:** Citibank, London  
 **SWIFT-kod:** CITIGB2L  
 **IBAN:** GB95CITI18500812510049  
-**Konto nummer:** 12510049  
-**Konto namn:** MICROSOFT  
+**Kontonummer:** 12510049  
+**Kontonamn:** MICROSOFT  

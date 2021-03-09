@@ -1,5 +1,5 @@
 ---
-title: Betalnings information för Polen
+title: Betalningsinformation för Polen
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,28 +9,27 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Lär dig hur du skickar betalningen för din prenumeration.
+description: Lär dig var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d840e5341eff0259da48657b877a0c493a960933
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 55f4cbc0b4e5d3b88de084fa0db73b54caf424c4
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646937"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542806"
 ---
-# <a name="payment-information-for-poland"></a>Betalnings information för Polen
+# <a name="payment-information-for-poland"></a>Betalningsinformation för Polen
 
-[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md)
 
-Betala endast i EUR och ange faktura numret som referens vid betalning.
+Betala endast i euro och ange fakturanumret som referens vid betalning.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
 **Bank:** Citibank, London  
-**SWIFT-kod/BIC:** CITIGB2L  
+**SWIFT-kod/BIC-kod:** CITIGB2L  
 **IBAN:** GB31CITI18500812207591  
-**Sorterings kod:** 185008  
-**Konto nummer:** 12207591  
-**Konto namn:** MICROSOFT
+**SORTERINGskod:** 185008  
+**Kontonummer:** 12207591  
+**Kontonamn:** MICROSOFT

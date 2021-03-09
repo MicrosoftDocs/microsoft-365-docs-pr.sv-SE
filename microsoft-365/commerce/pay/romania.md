@@ -1,5 +1,5 @@
 ---
-title: Betalnings information för Rumänien
+title: Betalningsinformation för Rumänien
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,28 +9,27 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Lär dig hur du skickar betalningen för din prenumeration.
+description: Lär dig var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cfc54d03cf25eb66ad1d37cf7efa7511f55f2881
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3df3795bc9a42b34604737a550163822001ba37f
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646913"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542794"
 ---
-# <a name="payment-information-for-romania"></a>Betalnings information för Rumänien
+# <a name="payment-information-for-romania"></a>Betalningsinformation för Rumänien
 
-[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md)
 
-Betala endast i EUR och ange faktura numret som referens vid betalning.
+Betala endast i euro och ange fakturanumret som referens vid betalning.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
 **Bank:** Citibank, London  
 **SWIFT-kod:** CITIGB2L  
 **IBAN:** GB31CITI18500812207591  
-**Sorterings kod:** 185008  
-**Konto nummer:** 12207591  
-**Konto namn:** MICROSOFT
+**SORTERINGskod:** 185008  
+**Kontonummer:** 12207591  
+**Kontonamn:** MICROSOFT

@@ -9,23 +9,22 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a43b4046d29a2df6376f90e288f9cb81ce477407
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3b5567455ac9683fcdfddc46d6e5c0ca6b763ca7
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640109"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544810"
 ---
-# <a name="contact-support-for-rwanda"></a>Kontakta supporten för Rwanda
+# <a name="contact-support-for-rwanda"></a>Kontakta support för Rwanda
 
-[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
+[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
 
 ## <a name="phone-number"></a>Telefonnummer
-+ 225 20 24 24 90
++225 20 24 24 90
 
 Välj alternativ 9
 
@@ -34,14 +33,14 @@ Ange kod 7703
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Franska: Mon-Fri 10 FM-6 EM
+Franska: Mon-Fri 10–18:00
 
-Engelska: Mon-Fri 10 FM-6 EM
+Engelska: Mon-Fri 10–18:00
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Franska: Mon-Fri 09.00 – 10 PM
+Franska: Mon-Fri 9.00–10.00
 
 Engelska: mån–sön, dygnet runt
 
-Internationella samtals avgifter gäller
+Internationell samtalsavgift

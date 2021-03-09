@@ -9,33 +9,32 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1f09936154759b68c955f011cd4c782652815a6a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 97c6ed28f452db828e492b434375ecab9a46fa8d
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640877"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545650"
 ---
-# <a name="contact-support-for-mozambique"></a>Kontakta supporten för Moçambique
+# <a name="contact-support-for-mozambique"></a>Kontakta support för Moçambique
 
-[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
+[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
 
 ## <a name="phone-number"></a>Telefonnummer
-+ 1 312 843 5153
++1 312 843 5153
 
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Engelska: Mon-Fri 7 FM-6 EM
+Engelska: Mon-Fri 17.00–18.00
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Portugisiska: Mon-Fri 09:00 – 7 PM
+Portugisiska: Mon-Fri 09:00–17:00
 
 Engelska: mån–sön, dygnet runt
 
-Internationella samtals avgifter gäller
+Internationell samtalsavgift

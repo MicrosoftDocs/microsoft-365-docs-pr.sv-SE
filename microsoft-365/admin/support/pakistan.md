@@ -9,20 +9,19 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 47e865428f26e605f626092dbdcab0504baaf610
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3c22e1830567c2063c6ba05eca4276038feab04c
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640541"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545230"
 ---
-# <a name="contact-support-for-pakistan"></a>Kontakta supporten för Pakistan
+# <a name="contact-support-for-pakistan"></a>Kontakta support för Pakistan
 
-[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
+[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
 
 ## <a name="phone-number"></a>Telefonnummer
 021 111 674 357
@@ -32,10 +31,10 @@ Välj alternativ 3
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Engelska: Mon-Fri 10 FM-6 EM
+Engelska: Mon-Fri 10–18:00
 
 ### <a name="technical-support"></a>Teknisk support:
 
 Engelska: mån–sön, dygnet runt
 
-Lokala samtals avgifter gäller
+Lokal samtalsavgift
