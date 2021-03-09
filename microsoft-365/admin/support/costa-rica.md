@@ -9,29 +9,28 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4c64625fbe84210bb8f5aecdff92dfa0ebb9d3d0
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bece1749f0ce3bd8b0debd5a391cbce8895644e7
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643181"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547858"
 ---
-# <a name="contact-support-for-costa-rica"></a><span data-ttu-id="14955-103">Kontakta supporten för Costa Rica</span><span class="sxs-lookup"><span data-stu-id="14955-103">Contact support for Costa Rica</span></span>
+# <a name="contact-support-for-costa-rica"></a><span data-ttu-id="f4504-103">Kontakta supporten för Costa Rica</span><span class="sxs-lookup"><span data-stu-id="f4504-103">Contact support for Costa Rica</span></span>
 
-<span data-ttu-id="14955-104">[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="14955-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="f4504-104">[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="f4504-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="14955-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="14955-105">Phone number</span></span>
-<span data-ttu-id="14955-106">0800 012 1447</span><span class="sxs-lookup"><span data-stu-id="14955-106">0800 012 1447</span></span>
+## <a name="phone-number"></a><span data-ttu-id="f4504-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="f4504-105">Phone number</span></span>
+<span data-ttu-id="f4504-106">0800 012 1447</span><span class="sxs-lookup"><span data-stu-id="f4504-106">0800 012 1447</span></span>
 
-## <a name="hours"></a><span data-ttu-id="14955-107">Tider</span><span class="sxs-lookup"><span data-stu-id="14955-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="14955-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="14955-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="f4504-107">Tider</span><span class="sxs-lookup"><span data-stu-id="f4504-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="f4504-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="f4504-108">Billing Support:</span></span>
 
-<span data-ttu-id="14955-109">Spanska: Mon-Fri 09.00 – 17.00</span><span class="sxs-lookup"><span data-stu-id="14955-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="f4504-109">Spanska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="f4504-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="14955-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="14955-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="f4504-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="f4504-110">Technical Support:</span></span>
 
-<span data-ttu-id="14955-111">Spanska: dygnet runt, alla dagar i veckan</span><span class="sxs-lookup"><span data-stu-id="14955-111">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="f4504-111">Spanska: 24 timmar om dygnet, 7 dagar i veckan</span><span class="sxs-lookup"><span data-stu-id="f4504-111">Spanish: 24 hours a day, 7 days a week</span></span>

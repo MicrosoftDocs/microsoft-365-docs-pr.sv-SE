@@ -1,5 +1,5 @@
 ---
-title: Supportinformation för Sint Maarten0
+title: Supportinformation för Sint Maarten
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,31 +9,30 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 24dd34d70997e46b0b890fdb5d05057671b9e1a7
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2256f5cf585a06f0071b954e0fbfe8d73783ec60
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639677"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544474"
 ---
-# <a name="contact-support-for-sint-maarten"></a><span data-ttu-id="eebe2-103">Kontakta supporten för Sint Maarten0</span><span class="sxs-lookup"><span data-stu-id="eebe2-103">Contact support for Sint Maarten</span></span>
+# <a name="contact-support-for-sint-maarten"></a><span data-ttu-id="d3ce8-103">Kontakta support för Sint Maarten</span><span class="sxs-lookup"><span data-stu-id="d3ce8-103">Contact support for Sint Maarten</span></span>
 
-<span data-ttu-id="eebe2-104">[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="eebe2-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="d3ce8-104">[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="d3ce8-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="eebe2-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="eebe2-105">Phone number</span></span>
-<span data-ttu-id="eebe2-106">+ 1 312 843 5145</span><span class="sxs-lookup"><span data-stu-id="eebe2-106">+1 312 843 5145</span></span>
+## <a name="phone-number"></a><span data-ttu-id="d3ce8-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="d3ce8-105">Phone number</span></span>
+<span data-ttu-id="d3ce8-106">+1 312 843 5145</span><span class="sxs-lookup"><span data-stu-id="d3ce8-106">+1 312 843 5145</span></span>
 
-## <a name="hours"></a><span data-ttu-id="eebe2-107">Tider</span><span class="sxs-lookup"><span data-stu-id="eebe2-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="eebe2-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="eebe2-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="d3ce8-107">Tider</span><span class="sxs-lookup"><span data-stu-id="d3ce8-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="d3ce8-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="d3ce8-108">Billing Support:</span></span>
 
-<span data-ttu-id="eebe2-109">Engelska: Mon-Fri 09.00 – 17.00</span><span class="sxs-lookup"><span data-stu-id="eebe2-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="d3ce8-109">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="d3ce8-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="eebe2-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="eebe2-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="d3ce8-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="d3ce8-110">Technical Support:</span></span>
 
-<span data-ttu-id="eebe2-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="eebe2-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="d3ce8-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="d3ce8-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="eebe2-112">Internationella samtals avgifter gäller</span><span class="sxs-lookup"><span data-stu-id="eebe2-112">International call charges apply</span></span>
+<span data-ttu-id="d3ce8-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="d3ce8-112">International call charges apply</span></span>
