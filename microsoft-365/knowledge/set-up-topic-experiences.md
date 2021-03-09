@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Lär dig konfigurera Microsoft Viva-ämnen
-ms.openlocfilehash: a90e75330527992f8519d625f94fe0d5ecb3de6b
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: cc420a0631f5b861341116abcd50cfe90e15450e
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261475"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551897"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Konfigurera Microsoft Viva-ämnen
 
@@ -133,9 +133,13 @@ För att tilldela licenser:
 
 2. Markera de användare som du vill licensiera och klicka **på Licenser och appar.**
 
-3. Kontrollera **att** sökning efter **Graph-kopplingar med index och Ämnesupplevelser** är markerade **under** Program.
+3. Välj Viva Topics **under Licenser.**
 
-4. Klicka på **Spara ändringar**.
+4. Kontrollera **att** sökning efter **Graph-kopplingar med Index (Viva Topics)** och **Viva Topics** är markerade under Program.
+
+    ![Microsoft Viva Topics-licenser i administrationscentret för Microsoft 365](../media/topic-experiences-licenses.png)
+
+5. Klicka på **Spara ändringar**.
 
 ## <a name="manage-topic-experiences"></a>Hantera ämnesupplevelser
 

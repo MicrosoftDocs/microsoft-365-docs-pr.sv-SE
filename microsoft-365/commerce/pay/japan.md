@@ -9,29 +9,28 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om var du skickar betalningen för din prenumeration.
+description: Lär dig var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 44df2d2fcc3c424a6962ac8ca456c41147971eb5
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 60b541bb61c7a74c29b82c89669414d1578f8c58
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204773"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550726"
 ---
 # <a name="payment-information-for-japan"></a>Betalningsinformation för Japan
 
-[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md)
 
-Betala endast i JPY och referensfakturanummer på din betalningsöverföring.
+Betala endast i JPY och ange fakturanumret som referens vid betalning.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
 **Bank:** Citibank, N.A  
 **Bank-ID:** 0401  
-**Gren:** Tokyo gren  
-**Grenkod:** 730  
-**SWIFT-kod:** CITIJPJT (AV )  
+**Branch:** Tokyo-filialen  
+**Branchkod:** 730  
+**SWIFT-kod:** CITIJPJT  
 **Kontonummer:** 160609028  
 **Kontonamn:** Microsoft Japan Co., Ltd.

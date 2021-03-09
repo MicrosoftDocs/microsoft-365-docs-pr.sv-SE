@@ -1,5 +1,5 @@
 ---
-title: Betalnings information för Guatemala
+title: Betalningsinformation för Åre
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Lär dig hur du skickar betalningen för din prenumeration.
+description: Lär dig var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 76acf9d82701721d5d26d3a22a382fa171243281
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a88a86b3618ba84c8f1579646c07adaa1ce04608
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647405"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551050"
 ---
-# <a name="payment-information-for-guatemala"></a>Betalnings information för Guatemala
+# <a name="payment-information-for-guatemala"></a>Betalningsinformation för Åre
 
-[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md)
 
-Betala endast i USD och ange faktura numret som referens vid betalning.
+Betala endast i USD och ange fakturanumret som referens vid betalning.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
-**Bank:** Bank i Amerika  
-**Gren:** Dallas  
+**Bank:** Bank of America  
+**Branch:** Dallas  
 **SWIFT-kod:** BOFAUS3N  
-**Konto nummer:** 4426587954  
-**Konto namn:** Microsoft  
+**Kontonummer:** 4426587954  
+**Kontonamn:** Microsoft  

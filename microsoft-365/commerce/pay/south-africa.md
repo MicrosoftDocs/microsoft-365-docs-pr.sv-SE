@@ -1,5 +1,5 @@
 ---
-title: Betalnings information för Sydafrika
+title: Betalningsinformation för Sydafrika
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Lär dig hur du skickar betalningen för din prenumeration.
+description: Lär dig var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 41df7368460da2a15da8ffef97ad6de82c59b3d7
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f16abf043d3e6a78275c0ef0bbca9307e8f36a0e
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648545"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550198"
 ---
-# <a name="payment-information-for-south-africa"></a>Betalnings information för Sydafrika
+# <a name="payment-information-for-south-africa"></a>Betalningsinformation för Sydafrika
 
-[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md)
 
-Betala endast i ZAR och ange faktura numret som referens vid betalning.
+Betala endast i ZAR och ange fakturanumret som referens vid betalning.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
 **Bank:** Citibank  
-**Gren:** Johannesburg  
+**Branch:** Johannesburg  
 **SWIFT-kod:** CITIZAJ  
-**Konto nummer:** 0201419034  
-**Konto namn:** Microsoft-betalningar  
+**Kontonummer:** 0201419034  
+**Kontonamn:** Microsoft Payments  

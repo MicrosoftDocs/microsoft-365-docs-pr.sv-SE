@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om var du skickar betalningen för din prenumeration.
+description: Lär dig var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0dc0d574e07868cd01e491f9e4d1ad28e42b9c8d
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 583bd8ad67fa78ae09fde69813506606ca9806b7
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407032"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549622"
 ---
 # <a name="payment-information-for-australia"></a>Betalningsinformation för Australien
 
@@ -36,7 +35,7 @@ BSB-kod: 242000\
 Kontonummer: 205565043\
 Kontonamn: MICROSOFT
 
-Använd den här bankinformationen om du har en faktura som faktureras av **Microsoft Pty Ltd** för beställningar och förbrukning från och med den 1 mars 2021:
+Använd den här bankinformationen om du har en faktura som faktureras av **Microsoft Pty Ltd** för order och förbrukning från och med den 1 mars 2021:
 
 Bank: Citibank, N.A. Sydney\
 SWIFT-kod: CITIAU2X\

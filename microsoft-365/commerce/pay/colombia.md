@@ -1,5 +1,5 @@
 ---
-title: Betalnings information för Colombia
+title: Betalningsinformation för Colombia
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,28 +9,27 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Lär dig hur du skickar betalningen för din prenumeration.
+description: Lär dig var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: eea4dfce0bf0bb7d6dafc629c28d702f3f2a7586
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bdbce6512833c0ab9f17fde115d6ada0e42dd8c7
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637457"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551722"
 ---
-# <a name="payment-information-for-colombia"></a>Betalnings information för Colombia
+# <a name="payment-information-for-colombia"></a>Betalningsinformation för Colombia
 
-[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md)
 
-Betala endast i Landsbygdsa peso. För att betalningen ska kunna behandlas måste ditt företags namn och faktura nummer finnas på remissa-tips.
+Betala endast i colombianska peso. Om betalningen ska kunna behandlas måste ditt företagsnamn och fakturanumret anges som betalningsråd.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
-**Bank:** Citibank, Bogotá0;  
-**Bank kod:** 09  
+**Bank:** Citibank, Bogota  
+**Bankkod:** 09  
 **SWIFT-kod:** CITICOBB  
-**Nden:** 800.198.591 – 3  
-**Konto nummer:** 0060534055  
-**Konto namn:** Gren av Microsoft Colombia Inc.   
+**NIT:** 800.198.591-3  
+**Kontonummer:** 0060534055  
+**Kontonamn:** Branch of Microsoft Colombia Inc.   

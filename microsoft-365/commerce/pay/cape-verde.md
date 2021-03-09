@@ -1,5 +1,5 @@
 ---
-title: Betalnings information för Kap Verde
+title: Betalningsinformation för Cape Verde
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Lär dig hur du skickar betalningen för din prenumeration.
+description: Lär dig var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4b74368dfe54aa22ff91f519ea03b6e13b6b65c3
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 696a24ca6e6bb7b36c1d6e7a919f86f6c5d9276c
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637505"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551782"
 ---
-# <a name="payment-information-for-cape-verde"></a>Betalnings information för Kap Verde
+# <a name="payment-information-for-cape-verde"></a>Betalningsinformation för Cape Verde
 
-[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md)
 
-Betala endast i USD och ange faktura numret som referens vid betalning.
+Betala endast i USD och ange fakturanumret som referens vid betalning.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
 **Bank:** Citibank, London  
 **SWIFT-kod:** CITIGB2L  
 **IBAN:** GB95CITI18500812510049  
-**Konto nummer:** 12510049  
-**Konto namn:** MICROSOFT  
+**Kontonummer:** 12510049  
+**Kontonamn:** MICROSOFT  

@@ -1,5 +1,5 @@
 ---
-title: Betalnings information för Hongkong
+title: Betalningsinformation för Hongkong
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,28 +9,27 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Lär dig hur du skickar betalningen för din prenumeration.
+description: Lär dig var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9d0b6cb118005ae7e3ae8e110a436faa9829e4b5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dcab44878f1627f17a20859f92eec2964ee0b4a8
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647261"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550966"
 ---
-# <a name="payment-information-for-hong-kong"></a>Betalnings information för Hongkong
+# <a name="payment-information-for-hong-kong"></a>Betalningsinformation för Hongkong
 
-[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md)
 
-Följ betalnings anvisningarna på din faktura och ange faktura numret som referens vid betalning.
+Följ betalningsanvisningarna på fakturan och ange fakturanumret som referens vid betalning.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
 **Bank:** HSBC, Hongkong  
-**Bank kod:** 004  
-**Filial nummer:** 848  
+**Bankkod:** 004  
+**Branchkod:** 848  
 **SWIFT-kod:** HSBCHKHH  
-**Konto nummer:** 848342259001    
-**Konto namn:** Microsoft Payments Ltd-Payco-faktura
+**Kontonummer:** 848342259001    
+**Kontonamn:** Microsoft Payments Pte Ltd-Payco Invoice

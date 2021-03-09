@@ -1,5 +1,5 @@
 ---
-title: Betalnings information för Indien
+title: Betalningsinformation för Indien
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,19 +9,18 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Lär dig hur du skickar betalningen för din prenumeration.
+description: Lär dig var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d6febd3db944bb59b2c024bf55f887dcbb550803
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 55b124817197b7b4f4c513661b6d253a9c59e05b
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647201"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550858"
 ---
-# <a name="payment-information-for-india"></a>Betalnings information för Indien
+# <a name="payment-information-for-india"></a>Betalningsinformation för Indien
 
-[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).
+[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md)
 
-Följ betalnings anvisningarna på din faktura och ange faktura numret som referens vid betalning.  
+Följ betalningsanvisningarna på fakturan och ange fakturanumret som referens vid betalning.  

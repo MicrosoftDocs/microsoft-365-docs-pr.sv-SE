@@ -1,5 +1,5 @@
 ---
-title: Betalnings information för Indonesien
+title: Betalningsinformation för Indonesien
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Lär dig hur du skickar betalningen för din prenumeration.
+description: Lär dig var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a17accaebc4dd64ad6baf0542382d70f67ff5ab2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2e62646e72394d37914ceacf95cc868111a6c85e
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647213"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550846"
 ---
-# <a name="payment-information-for-indonesia"></a>Betalnings information för Indonesien
+# <a name="payment-information-for-indonesia"></a>Betalningsinformation för Indonesien
 
-[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md). 
+[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md) 
 
-Betala endast i IDR och ange faktura numret som referens vid betalning.
+Betala endast i IDR och ange fakturanumret som referens vid betalning.
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
 **Bank:** Citibank, Indonesien  
-**Gren:** Jakarta0  
+**Branch:** Jakarta  
 **SWIFT-kod:** CITIIDJX  
-**Konto nummer:** 104468055  
-**Konto namn:** PT Microsoft Indonesien  
+**Kontonummer:** 104468055  
+**Kontonamn:** PT Microsoft Indonesia  
