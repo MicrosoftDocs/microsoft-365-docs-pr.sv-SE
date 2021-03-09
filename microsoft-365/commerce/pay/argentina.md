@@ -1,5 +1,5 @@
 ---
-title: Betalnings information för Argentina
+title: Betalningsinformation för Argentina
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Lär dig hur du skickar betalningen för din prenumeration.
+description: Lär dig var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8b890f0b694181157c2704beee5f25772aa449a9
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3465109a3143abf38abc619d4fe8016ba24d3550
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638009"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549706"
 ---
-# <a name="payment-information-for-argentina"></a><span data-ttu-id="86067-103">Betalnings information för Argentina</span><span class="sxs-lookup"><span data-stu-id="86067-103">Payment information for Argentina</span></span>
+# <a name="payment-information-for-argentina"></a><span data-ttu-id="92899-103">Betalningsinformation för Argentina</span><span class="sxs-lookup"><span data-stu-id="92899-103">Payment information for Argentina</span></span>
 
-<span data-ttu-id="86067-104">[Sök efter ett annat land eller annan region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="86067-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="92899-104">[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md)</span><span class="sxs-lookup"><span data-stu-id="92899-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="86067-105">Betala endast i USD och ange faktura numret som referens vid betalning.</span><span class="sxs-lookup"><span data-stu-id="86067-105">Please pay in USD only and reference your invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="92899-105">Betala endast i USD och ange fakturanumret som referens vid betalning.</span><span class="sxs-lookup"><span data-stu-id="92899-105">Please pay in USD only and reference your invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="86067-106">Elektronisk betalningsöverföring</span><span class="sxs-lookup"><span data-stu-id="86067-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="92899-106">Elektronisk betalningsöverföring</span><span class="sxs-lookup"><span data-stu-id="92899-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="86067-107">**Bank:** Bank i Amerika</span><span class="sxs-lookup"><span data-stu-id="86067-107">**Bank:** Bank of America</span></span>  
-<span data-ttu-id="86067-108">**Gren** Dallas</span><span class="sxs-lookup"><span data-stu-id="86067-108">**Branch** Dallas</span></span>  
-<span data-ttu-id="86067-109">**SWIFT-kod:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="86067-109">**SWIFT Code:** BOFAUS3N</span></span>  
-<span data-ttu-id="86067-110">**Konto nummer:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="86067-110">**Account Number:** 4426587954</span></span>  
-<span data-ttu-id="86067-111">**Konto namn:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="86067-111">**Account Name:** Microsoft</span></span>  
+<span data-ttu-id="92899-107">**Bank:** Bank of America</span><span class="sxs-lookup"><span data-stu-id="92899-107">**Bank:** Bank of America</span></span>  
+<span data-ttu-id="92899-108">**Branch** Dallas</span><span class="sxs-lookup"><span data-stu-id="92899-108">**Branch** Dallas</span></span>  
+<span data-ttu-id="92899-109">**SWIFT-kod:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="92899-109">**SWIFT Code:** BOFAUS3N</span></span>  
+<span data-ttu-id="92899-110">**Kontonummer:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="92899-110">**Account Number:** 4426587954</span></span>  
+<span data-ttu-id="92899-111">**Kontonamn:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="92899-111">**Account Name:** Microsoft</span></span>  
