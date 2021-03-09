@@ -9,20 +9,19 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1cc2e7dce4b7cae778a0b6fda5cc743a0e30e2b9
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 7485a4650eef146cff0492513d5c1824ad774292
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640361"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545086"
 ---
-# <a name="contact-support-for-paraguay"></a>Kontakta supporten för Paraguay
+# <a name="contact-support-for-paraguay"></a>Kontakta support för Paraguay
 
-[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
+[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
 
 ## <a name="phone-number"></a>Telefonnummer
 009 800 441 0088
@@ -30,8 +29,8 @@ ms.locfileid: "48640361"
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Spanska: Mon-Fri 09.00 – 17.00
+Spanska: Mon-Fri 9.00–17.00
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Spanska: dygnet runt, alla dagar i veckan
+Spanska: 24 timmar om dygnet, 7 dagar i veckan

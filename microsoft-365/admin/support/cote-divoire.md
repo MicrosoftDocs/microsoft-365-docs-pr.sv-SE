@@ -1,5 +1,5 @@
 ---
-title: Supportinformation för Côte D' Ivoire
+title: Supportinformation för Côte d'Ivoire
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,20 +9,19 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3ef9cfe761b705669e4499b0a0df1f17785638f7
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 928a6d42bea45be63f705209b4cd05139cc39c56
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643193"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547882"
 ---
-# <a name="contact-support-for-cte-divoire"></a>Kontakta supporten för Côte D' Ivoire
+# <a name="contact-support-for-cte-divoire"></a>Kontakta supporten för Côte d'Ivoire
 
-[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
+[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
 
 ## <a name="phone-number"></a>Telefonnummer
 020 24 24 90
@@ -34,14 +33,14 @@ Ange kod 7703
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Franska: Mon-Fri 8 FM-4 EM
+Franska: Mon-Fri 08:00–16:00
 
-Engelska: Mon-Fri 8 FM-4 EM
+Engelska: Mon-Fri 08:00–16:00
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Franska: Mon-Fri 7 AM – 15:00
+Franska: Mon-Fri 19.00–18.00
 
 Engelska: mån–sön, dygnet runt
 
-Lokala samtals avgifter gäller
+Lokal samtalsavgift

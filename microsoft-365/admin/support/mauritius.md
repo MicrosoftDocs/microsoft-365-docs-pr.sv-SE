@@ -9,20 +9,19 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8dd058697f7a7c696a4020fb25e74ef51fb94415
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8f8ff0536e991c7481ba19b62235e0f400734284
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641093"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545890"
 ---
 # <a name="contact-support-for-mauritius"></a>Kontakta supporten för Mauritius
 
-[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
+[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
 
 ## <a name="phone-number"></a>Telefonnummer
 802 044 0086
@@ -30,12 +29,12 @@ ms.locfileid: "48641093"
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Franska: Mon-Fri 11 FM-7 EM
+Franska: Mon-Fri 23:00–17:00
 
-Engelska: Mon-Fri 11 FM-7 EM
+Engelska: Mon-Fri 23:00–17:00
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Franska: Mon-Fri 11 FM – midnatt
+Franska: Mon-Fri 23:00–midnatt
 
 Engelska: mån–sön, dygnet runt

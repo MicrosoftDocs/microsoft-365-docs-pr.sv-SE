@@ -9,20 +9,19 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5132300971929ea4d728d7b50d6cbbff8206be64
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: ba6129d4b33a67a31c0fe3a8993ac2fb3d386696
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639593"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544306"
 ---
-# <a name="contact-support-for-south-africa"></a>Kontakta supporten för Sydafrika
+# <a name="contact-support-for-south-africa"></a>Kontakta support för Sydafrika
 
-[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
+[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
 
 ## <a name="phone-number"></a>Telefonnummer
 080 020 2883
@@ -30,7 +29,7 @@ ms.locfileid: "48639593"
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Engelska: Mon-Fri 09.00 – 17.00
+Engelska: Mon-Fri 9.00–17.00
 
 ### <a name="technical-support"></a>Teknisk support:
 
@@ -38,4 +37,4 @@ Engelska: mån–sön, dygnet runt
 
 Alternativt telefonnummer: 021 427 3315
 
-Lokala samtals avgifter gäller
+Lokal samtalsavgift

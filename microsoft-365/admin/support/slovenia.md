@@ -9,20 +9,19 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2ca5475895391e8229a86a9c681f4911dd97a542
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 0768cfacc2ba339fcc8168b5e37da5a9e023e510
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639629"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544342"
 ---
-# <a name="contact-support-for-slovenia"></a>Kontakta supporten för Slovenien
+# <a name="contact-support-for-slovenia"></a>Kontakta support för Slovenien
 
-[Sök efter ett annat land eller annan region](../contact-support-for-business-products.md).
+[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
 
 ## <a name="phone-number"></a>Telefonnummer
 080 080 922
@@ -30,7 +29,7 @@ ms.locfileid: "48639629"
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Engelska: Mon-Fri 09.00 – 17.00
+Engelska: Mon-Fri 9.00–17.00
 
 ### <a name="technical-support"></a>Teknisk support:
 
