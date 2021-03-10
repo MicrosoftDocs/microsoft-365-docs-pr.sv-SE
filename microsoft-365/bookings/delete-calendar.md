@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: Använd administrationscentret för Microsoft 365 eller Windows PowerShell för att ta bort bookingskalendrar.
-ms.openlocfilehash: 1f8df15eafac7867f7ae852e344e1c5730362598
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 7407298adb402de79a1010b51544deee4b94cf5a
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454211"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50604026"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Ta bort en bokningskalender i Bookings
 
@@ -23,14 +23,14 @@ I den här artikeln förklaras hur du tar bort en oönskad bokningskalender. Du 
 > [!IMPORTANT]
 > Alla bokningskalendrar som du skapade under 2017 eller tidigare måste tas bort med hjälp av PowerShell-instruktionerna för det här avsnittet. Alla bokningskalendrar som skapades under 2018 eller senare kan tas bort i administrationscentret för Microsoft 365.
 
-Bokningskalendern är den plats där all relevant information om bokningskalendern och bokningsdata lagras, inklusive:
+I bokningskalendern lagras all relevant information om bokningskalendern och bokningsdata, inklusive:
 
 - Företagsinformation, logotyp och arbetstid som lades till när bokningskalendern skapades
 - Relevant personal och tjänster som lades till när bokningskalendern skapades
 - Alla bokningar och återkommande avtalade tider läggs till i bokningskalendern när den har skapats.
 
 > [!WARNING]
-> När en bokningskalender tas bort tas den här ytterligare informationen också bort permanent och kan inte återställas.
+> När en bokningskalender tas bort tas den här informationen också bort permanent och kan inte återställas.
 
 ## <a name="delete-a-booking-calendar-in-the-microsoft-365-admin-center"></a>Ta bort en bokningskalender i administrationscentret för Microsoft 365
 
@@ -87,7 +87,7 @@ För att utföra de här stegen måste du använda ett aktivt Microsoft PowerShe
 6. Bekräfta att kalendern har tagits bort genom att ange följande kommando:
 
    ```powershell
-    Get-EXOMailbox -RecipientTypeDetails Scheduling
+    Get-EXOMailbox -RecipientTypeDetails SchedulingMailbox
    ```
 
    Den borttagna kalendern visas inte i utdata.

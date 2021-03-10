@@ -1,5 +1,5 @@
 ---
-title: Gå med i ett team som gäst
+title: Ansluta till ett team som gäst
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du ansluter till ett team som gäst i Microsoft Teams.
-ms.openlocfilehash: 8ed7b8c92fa9fbe22c8a4f74b89916266a4af46f
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 51f287361877cb0b427a38c48683c064bda99126
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422489"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50603966"
 ---
 # <a name="join-a-team-as-a-guest"></a>Ansluta till ett team som gäst
 
@@ -42,7 +42,7 @@ Om du får en Microsoft Teams-inbjudan om att gå med i ett team finns det någr
   1. Verifiera din e-postadress genom att öppna e-postbekräftelsen och kopiera säkerhetskoden.
   1. Ange din säkerhetskod  i dialogrutan Verifiera e-post, välj  **Nästa,** ange CAPTCHA i ange de tecken du ser raden, välj **Nästa** och sedan **Acceptera.**
 1. Om du inte vill ladda ned Microsoft Teams-appen väljer du **Använd webbappen i stället.**
-1. I Teams-webbappen kan du visa eller svara på inlägg  eller skapa dina egna inlägg och välja fliken Filer för att visa eller redigera teamdokument.
+1. I Teams-webbappen kan du visa eller svara på inlägg  eller skapa dina egna inlägg och välja Fliken Filer för att visa eller redigera teamdokument.
 
     Om du redan använder Teams-appen i organisationen är det mycket enklare att gå med i ett team som gäst.
 

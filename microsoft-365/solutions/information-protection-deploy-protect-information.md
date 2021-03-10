@@ -1,5 +1,5 @@
 ---
-title: Skydda information som lyder under data integritets förordning
+title: Skydda information som omfattas av dataskyddsförordningen
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -16,323 +16,323 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Distribuera Microsoft 365-funktioner för säkerhet och efterlevnad och skydda din personliga information.
-ms.openlocfilehash: f17568c5a19446644cfb7ee64aac3e0f9eae5793
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+description: Distribuera säkerhets- och efterlevnadsfunktioner i Microsoft 365 och skydda din personliga information.
+ms.openlocfilehash: a5bba79f8ab382707b6fd5e448003a0271d690c6
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988488"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597244"
 ---
-# <a name="protect-information-subject-to-data-privacy-regulation"></a>Skydda information som lyder under data integritets förordning
+# <a name="protect-information-subject-to-data-privacy-regulation"></a>Skydda information som omfattas av dataskyddsförordningen
 
-Ett antal informations skydds kontroller kan användas i ditt-abonnemang för att hjälpa dig att adressera data integritets behov och föreskrifter. Dessa inkluderar allmän data skydds förordning (GDPR), HIPAA-HITECH (Health Policy för hälso vård i USA), California konsument skydd Act (CCPA) och Brasilien Data Protection Act (LGPD).
+Ett antal kontroller för informationsskydd kan användas i prenumerationen för att tillgodose efterlevnadsbehov och föreskrifter om datasekretess. Dessa omfattar allmän dataskyddsförordning (GDPR), HIPAA-HITECH (united states health care privacy act), California Consumer Protection Act (CCPA) och Brazil Data Protection Act (LGPD).
 
-Dessa kontroller ligger inom lösnings områden:
+Dessa kontroller finns inom följande lösningsområden:
 
 - Känslighetsetiketter
 - Skydd mot dataförlust (DLP)
 - Meddelandekryptering i Office (OME)
-- Åtkomst kontroller för team och webbplatser
+- Åtkomstkontroller för Teams och webbplatser
 
-![Viktiga tjänster för att skydda person uppgifter som är föremål för data integritets reglering](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
+![Viktiga tjänster för att skydda personlig information som omfattas av datasekretessförordningen](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 >[!Note]
->Den här lösningen beskriver funktioner för säkerhet och efterlevnad för att skydda information som lyder under data integritets regler. En fullständig lista över säkerhetsfunktioner i Microsoft 365 finns i [microsoft 365 säkerhets dokumentation](https://docs.microsoft.com/microsoft-365/security/). En fullständig lista över kompatibla funktioner i Microsoft 365 finns i [dokumentationen om microsoft 365-efterlevnad](https://docs.microsoft.com/microsoft-365/compliance/).
+>Den här lösningen beskriver säkerhets- och efterlevnadsfunktioner för att skydda information som omfattas av sekretessregler för data. En fullständig lista över säkerhetsfunktioner i Microsoft 365 finns i säkerhetsdokumentationen [för Microsoft 365.](https://docs.microsoft.com/microsoft-365/security/) En fullständig lista över efterlevnadsfunktioner i Microsoft 365 finns i dokumentationen [för Microsoft 365-efterlevnad.](https://docs.microsoft.com/microsoft-365/compliance/)
 >
 
-## <a name="data-privacy-regulations-that-impact-information-protection-controls"></a>Data integritets regler som påverkar informations skydds kontroller
+## <a name="data-privacy-regulations-that-impact-information-protection-controls"></a>Bestämmelser om datasekretess som påverkar kontroller för informationsskydd
 
-Här är en exempel lista över data integritets regler som kan gälla för informations skydds kontroller:
+Här är en exempellista över regler om datasekretess som kan ha att göra med informationsskyddskontroller:
 
-- GDPR paragraf 5.1 (f))
-- GDPR-artikel (32) (1) (a)
-- LGPD artikel 46
-- HIPAA-HITECH (45 CFR 164.312 (e) (1))
-- HIPAA-HITECH (45 C.F.R. 164.312 (e) (2) (II))
+- GDPR, artikel 5(1)(f))
+- GDPR-artikel (32)(1)(a)
+- LGPD, artikel 46
+- HIPAA-HITECH (45 CFR 164.312(e)(1))
+- HIPAA-HITECH (45 C.F.R. 164,312(e)(2)(ii))
 
-Se artikeln om att [utvärdera data integritet och identifiera känsliga artiklar](information-protection-deploy-assess.md) om du vill ha mer information om var och en av ovanstående.
+Läs mer [om riskerna med datasekretess och identifiera](information-protection-deploy-assess.md) känsliga objekt för mer information om vart och ett av ovanstående.
 
-Data integritets regler för informations skydd rekommenderar:
+Datasekretessföreskrifter för informationsskydd rekommenderar följande:
 
 - Skydd mot förlust eller obehörig åtkomst, användning och/eller överföring.
-- Riskfylld tillämpning av skyddsanordningar.
-- Kryptering används där så behövs.
+- Riskbaserad tillämpning av skyddsmekanismer.
+- Kryptering används där det är lämpligt.
 
-Din organisation kan även skydda Microsoft 365-innehåll i andra syften, till exempel andra behov eller av affärs skäl. Att fastställa ditt informations skydds system för data integritet bör vara en del av den övergripande informations skydds planering,-implementeringen och-hanteringen.
+Din organisation kanske också vill skydda Microsoft 365-innehåll för andra ändamål, till exempel för andra efterlevnadsbehov eller av affärsskäl. Att upprätta ett informationsskyddssystem för datasekretess bör ske som en del av den övergripande planeringen, implementeringen och hanteringen av informationsskydd.
 
-För att hjälpa dig att komma igång med ett informations skydds schema i Microsoft 365 finns följande avsnitt med en kort lista över relaterade funktioner och förbättringar för Microsoft 365. Listan innehåller funktioner för möjligheter och förbättring som är tillämpliga på data integritets regler. Listan innehåller emellertid inte äldre teknologi om det finns en nyare funktion som ersätter den äldre versionen. Information Rights Management (IRM) för SharePoint och OneDrive är exempelvis inte med i listan, men känslighets etiketterna ingår.
+För att hjälpa dig att komma igång med ett informationsskyddsschema i Microsoft 365 innehåller följande avsnitt en kort lista med relaterade funktioner och förbättringsåtgärder för Microsoft 365. Listan innehåller funktioner och förbättringsåtgärder som är tillämpliga i datasekretessbestämmelser. Men listan innehåller inte äldre tekniker om det finns en nyare funktion som till stor del ersätter den äldre. Information Rights Management (IRM) för SharePoint och OneDrive ingår till exempel inte i listan men känslighetsetiketter ingår.
 
-## <a name="managing-information-protection-in-microsoft-365"></a>Hantera informations skydd i Microsoft 365
+## <a name="managing-information-protection-in-microsoft-365"></a>Hantera informationsskydd i Microsoft 365
 
-Microsoft [Information Protection Solutions](../compliance/information-protection.md) innehåller ett antal integrerade funktioner i Microsoft 365, Microsoft Azure och Microsoft Windows. I Microsoft 365 inkluderar informations skydds lösningarna:
+Microsofts [informationsskyddslösningar](../compliance/information-protection.md) omfattar ett antal integrerade funktioner i Microsoft 365, Microsoft Azure och Microsoft Windows. Informationsskyddslösningarna i Microsoft 365 omfattar:
 
-- [Tjänst kryptering med kund](../compliance/customer-key-overview.md)
-- [Känsliga informations typer](../compliance/what-the-sensitive-information-types-look-for.md) (beskrivs i [artikeln utvärdera data integritets risker och identifiering av känsliga artiklar](information-protection-deploy-assess.md))
+- [Tjänstkryptering med kundnyckel](../compliance/customer-key-overview.md)
+- [Typer av känslig information](../compliance/what-the-sensitive-information-types-look-for.md) (beskrivs i utvärdering [av datasekretessrisker och identifiera känsliga objekt)](information-protection-deploy-assess.md)
 - [Känslighetsetiketter](../compliance/sensitivity-labels.md) 
-  - Tjänst/behållar nivå
-  - Klient/innehålls nivå
-  - Automatiserat för data – i vila av SharePoint och OneDrive
+  - Service/container-level
+  - Klient-sida/innehållsnivå
+  - Automatiserat för data-at-rest i SharePoint och OneDrive
 - Skydd mot dataförlust (DLP)
-- [Förhindrande av data förlust i Microsoft 365 Endpoint (för hands version)](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide)
-- [Office 365 meddelande kryptering nya funktioner (ome)](../compliance/ome.md) och ome [avancerade meddelande kryptering](../compliance/ome-advanced-message-encryption.md)
+- [Dataförlustskydd i Microsoft 365 Endpoint](../compliance/endpoint-dlp-learn-about.md)
+- [Nya funktioner för meddelandekryptering i Office 365 (OME)](../compliance/ome.md) och avancerad [meddelandekryptering i](../compliance/ome-advanced-message-encryption.md) OME
 
-Dessutom är webbplats-och biblioteks nivå skyddet viktiga för alla skydds system.
+Dessutom är skydd på webbplats- och biblioteksnivå viktiga mekanismer som ska ingå i alla skyddsscheman.
 
-Information om andra funktioner för informations skydd utanför Microsoft 365 finns i:
+Information om andra funktioner för informationsskydd utanför Microsoft 365 finns i:
 
-- [Säkerhet för Microsoft Cloud-programmet (MCAS)](https://docs.microsoft.com/cloud-app-security/)
+- [Microsoft Cloud Application Security (MCAS)](https://docs.microsoft.com/cloud-app-security/)
 - [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)
-- [Microsoft slut punkts hanteraren](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
+- [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
 - [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
 
 ## <a name="sensitivity-labels"></a>Känslighetsetiketter
 
-Med känslighets etiketter från Microsoft Information Protection Framework kan du klassificera och skydda organisationens data utan att hindra användarna från att samar beta.
+Känslighetsetiketter från Microsofts informationsskyddsramverk låter dig klassificera och skydda organisationens data utan att hindra användarnas produktivitet och möjligheten att samarbeta.
 
-![Känslighets etiketter i Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
+![Känslighetsetiketter i Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
 
-### <a name="prerequisites-for-sensitivity-labels"></a>Förutsättningar för känslighets etiketter
+### <a name="prerequisites-for-sensitivity-labels"></a>Förutsättningar för känslighetsetiketter
 
-Utför dessa aktiviteter innan du implementerar någon av de olika känslighets etikettbaserade funktionerna:
+Utför de här aktiviteterna innan du implementerar någon av de känslighetsetikettbaserade funktionerna som beskrivs nedan:
 
 1. Förstå följande:
-   - **Företags krav.** Fastställ affärs skäl för användning av känslighets etiketter i ditt företag. Till exempel data integritets krav för informations skydd.
-   - **Funktioner för kapacitets etikett.** Känslighets etiketter kan vara komplexa, så se till att läsa igenom [känslighets etiketterna](../compliance/sensitivity-labels.md) innan du börjar.
-   - **Viktiga saker att komma ihåg** Känslighets etiketter hanteras i Microsoft Compliance Admin Center men alternativen för mål och program skiljer sig avsevärt.
-      - Det finns känslighets etiketter för webbplatser, grupper och team på behållar nivån (inställningarna gäller inte för innehåll i behållaren). Dessa publiceras för användare och grupper som använder dem när en webbplats, grupp eller team etableras.
-      - Det finns känslighets etiketter för aktivt innehåll. Dessa publiceras också för användare eller grupper, vilka antingen manuellt tillämpar dem, eller de används automatiskt när:
-        - Filen öppnas/redige ras, antingen till användarens skriv bord eller på en SharePoint-webbplats.
-        - Ett e-postmeddelande skapas och skickas.
-      - Det finns känslighets etiketter för automatisk koppling till filer på en plats i SharePoint och OneDrive utöver e-post i transit genom Exchange. Dessa är avsedda för antingen alla webbplatser eller vissa och gäller automatiskt för filerna i övriga miljö.
+   - **Verksamhetskrav.** Upprätta affärsorsaker till att använda känslighetsetiketter i ditt företag. Till exempel dina datasekretesskrav för informationsskydd.
+   - **Funktioner för känslighetsetikett.** Känslighetsetiketter kan bli komplexa, så se till att läsa dokumentationen [för känslighetsetiketter innan](../compliance/sensitivity-labels.md) du börjar.
+   - **Viktiga saker att tänka på** Känslighetsetiketter hanteras i administrationscentret för Microsofts efterlevnad, men alternativen för inställningar och program varierar avsevärt.
+      - Det finns känslighetsetiketter för webbplatser, grupper och Teams på behållarnivå (inställningarna gäller inte för innehåll i behållaren). De publiceras för användare och grupper som använder dem när en webbplats, grupp eller team etableras.
+      - Det finns känslighetsetiketter för aktivt innehåll. De publiceras också till användare eller grupper, som antingen tillämpar dem manuellt eller så tillämpas de automatiskt i följande fall:
+        - Filen öppnas/redigeras/sparas, antingen på användarens skrivbord eller på en SharePoint-webbplats.
+        - Ett e-postmeddelande utkast tills det skickas.
+      - Det finns känslighetsetiketter för automatisk app till filer vilan i SharePoint och OneDrive utöver e-postmeddelanden som överförs via Exchange. De är avsedda för antingen alla webbplatser eller specifika och gäller automatiskt för filerna i de här miljöerna.
 
-2. Rationalisera aktuella känslighets etiketter med gamla eller alternativa metoder
+2. Effektivisera den aktuella känslighetsetiketten med tidigare eller alternativa metoder
 
    - Azure Information Protection
 
-      Det aktuella energischemat för känslighet kan behöva stämmas av med eventuella befintliga [Azure information Protection](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection) etiketting-implementering.
+      Det aktuella känslighetsetikettsschemat kan behöva förenas med en befintlig implementering av [Azure Information Protection-märkning.](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection)
    - OME
 
-      Om du planerar att använda moderna känslighets etiketter för e-postskydd och befintliga krypterings metoder för e-post, till exempel OME, kan de finnas tillsammans, men du bör förstå vilka scenarier som ska användas. Se [Office 365-meddelanden om nya funktioner (ome)](#office-365-message-encryption-ome-new-capabilities), som innehåller en tabell med jämförelse av modern känslighet för att skydda data med ome skydd.
+      Om du planerar att använda modern känslighetsetikett för e-postskydd och befintliga metoder för e-postkryptering som OME finns kan de finnas tillsammans, men du bör förstå scenarierna där antingen ska tillämpas. Se nya funktioner för meddelandekryptering [i Office 365 (OME),](#office-365-message-encryption-ome-new-capabilities)som innehåller en tabell som jämför modern känslighetsetiketttypsskydd med OME-baserat skydd.
 
-3. Planera för integrering i ett bredare informations skydds system. Med OME kan de aktuella känslighets etiketterna användas på en och samma sätt som Microsoft 365 data förlust skydd (DLP) och Microsoft Cloud App-säkerhet. Se [känslighets etiketter och säkerhet för Microsoft Cloud App](../compliance/sensitivity-labels.md#sensitivity-labels-and-microsoft-cloud-app-security) för att uppnå dina data skydds uppgifter.
+3. Planera för integrering med ett bredare informationsskyddssystem. Utöver samexistens med OME kan aktuella känslighetsetiketter användas längs sidan funktioner som Microsoft 365 dataförlustskydd (DLP) och Microsoft Cloud App Security. Läs [känslighetsetiketter och Microsoft Cloud App Security för](../compliance/sensitivity-labels.md#sensitivity-labels-and-microsoft-cloud-app-security) att uppnå dina sekretessrelaterade informationsskyddsmål.
 
-4. Utveckla en etikett för klassificering och kontroll av känslighet. Visa [etikett för data klassificering och känslighet](https://aka.ms/dataclassificationwhitepaper).
+4. Utveckla en känslighetsetikettklassificering och ett kontrollschema. Se [taxonomi för dataklassificering och känslighetsetikett.](https://aka.ms/dataclassificationwhitepaper)
 
 ### <a name="general-guidance"></a>Allmän vägledning
 
-1. **Schema definition.** Innan du använder tekniska funktioner för att använda etiketter och skydd kan du arbeta i hela organisationen och definiera ett klassificerings schema. Du kanske redan har ett klassificerings schema som gör det enklare att lägga till personlig information. 
-2. **Komma igång.** Börja med att välja numret och namnen på etiketterna som ska implementeras. Gör så här om du inte behöver oroa dig för vilken teknik som ska användas och hur etiketter ska användas. Tillämpa det här schemat i hela organisationen, inklusive data som finns i lokaler och i andra moln tjänster.
-3. **Ytterligare rekommendationer** När du utformar och implementerar principer, etiketter och villkor bör du överväga att följa dessa rekommendationer:
+1. **Schemadefinition.** Innan du använder tekniska funktioner för att tillämpa etiketter och skydd bör du arbeta med att definiera ett klassificeringsschema i hela organisationen. Du kanske redan har ett klassificeringsschema, vilket gör det enklare att lägga till personliga data. 
+2. **Komma igång.** Börja med att bestämma antalet och namnen på etiketterna som ska implementeras. Du kan göra den här aktiviteten utan att bekymra dig om vilken teknik som ska användas och hur etiketter ska användas. Tillämpa det här schemat universellt i hela organisationen, inklusive data som finns lokalt och i andra molntjänster.
+3. **Ytterligare rekommendationer** När du utformar och implementerar principer, etiketter och villkor bör du överväga att följa de här rekommendationerna:
 
-   - **Använd befintligt klassificerings schema (om sådant finns).** Många organisationer använder redan data klassificering i vissa formulär. Utvärdera det befintliga etikett schema noggrant och Använd det som det är. Om du använder välbekanta etiketter som är igenkännliga för slutanvändarna kommer du att behöva använda det.
-   - **Starta litet.** Det finns praktiskt taget ingen gräns för antalet etiketter som du kan skapa. Ett stort antal etiketter och under etiketter kan dock minskas.
-   - **Använda scenarier och användnings fall.** Identifiera vanliga användnings fall inom organisationen och använda scenarier som härrör från de data integritets regler som du är föremål för. Kontrol lera om den namngivna etikett-och klassificerings konfigurationen fungerar i praktiken.
-   - **Fråga varje förfrågan efter en ny etikett.** Behöver varje scenario eller ett användnings fall en ny etikett eller så kan du använda det du redan har? Ett minimum av antalet etiketter förbättras.
-   - **Använd under rubriker för viktiga avdelningar.** Vissa avdelningar har särskilda behov som kräver specifika etiketter. Definiera de här etiketterna som under rubriker till en befintlig etikett och Överväg att använda begränsade principer som är kopplade till användar grupper istället för globalt.
-   - **Överväg begränsade principer.** Principer riktade mot under uppsättningar med användare kommer att förhindra etikett överbelastning. En begränsad princip aktiverar tilldelning av roll-eller avdelnings specifika etiketter eller under etiketter till bara anställda som arbetar för just den avdelningen. 
-   - **Använd meningsfulla etikett namn.** Försök att inte använda jargong, standarder eller akronymer som etikett namn. Försök att använda namn som Resonate med slutanvändaren för att förbättra antagandet. I stället för att använda etiketter som PII, PCI, HIPAA, LBI, MBI och HBI, bör du överväga namn som icke-affärer, allmän, allmän, konfidentiell och mycket konfidentiell.
+   - **Använd befintligt klassificeringsschema (om det finns något).** Många organisationer använder redan dataklassificering i någon form. Utvärdera noga det befintliga etikettschemat och använd det som det är om möjligt. Användning av välbekanta etiketter som känns igen för slutanvändarna kommer att öka införandet.
+   - **Börja i liten storlek.** Det finns praktiskt taget ingen gräns för antalet etiketter du kan skapa. Ett stort antal etiketter och underetiketter kan emellertid ta lång tid.
+   - **Använd scenarier och användningsfall.** Identifiera vanliga användningsfall inom organisationen och använd scenarier som härleds från de datasekretessföreskrifter som du är ämnet för. Kontrollera om konfigurationen av denvisionerade etiketten och klassificeringen fungerar i praktiken.
+   - **Fråga alla förfrågningar om en ny etikett.** Behöver varje scenario eller användningsfall en ny etikett eller kan du använda det du redan har? Om du håller antalet etiketter på ett minimum förbättras införandet.
+   - **Använda underetiketter för huvudavdelningar.** Vissa avdelningar kommer att ha särskilda behov som kräver särskilda etiketter. Definiera de här etiketterna som underetiketter för en befintlig etikett och överväg att använda omfattningsprinciper som tilldelas till användargrupper i stället för globalt.
+   - **Överväg principer med begränsad omfattning.** Principer som är riktade till delmängder av användare förhindrar att etiketter överbelastas. Med en begränsad princip kan du tilldela roll- eller avdelningsspecifika etiketter eller underetiketter till bara anställda som arbetar för den specifika avdelningen. 
+   - **Använd beskrivande etikettnamn.** Försök att inte använda jargong, standarder eller förkortningar som etikettnamn. Försök att använda namn som får användaren att använda bättre. I stället för att använda etiketter som PII, HIPAA, LBI, MBI och HBI bör du överväga namn som Non-Business, Public, General, Confidential och Highly Confidential.
 
-### <a name="create-and-deploy-sensitivity-labels-for-sites-groups-and-teams"></a>Skapa och distribuera känslighets etiketter för webbplatser, grupper och team
+### <a name="create-and-deploy-sensitivity-labels-for-sites-groups-and-teams"></a>Skapa och distribuera känslighetsetiketter för webbplatser, grupper och team
 
-När du skapar [känslighets etiketter](../compliance/sensitivity-labels-teams-groups-sites.md) i Microsoft 365 Compliance Center kan du nu tillämpa dem på följande behållare:
+När du skapar [känslighetsetiketter](../compliance/sensitivity-labels-teams-groups-sites.md) i Microsoft 365 efterlevnadscenter kan du nu använda dem på dessa behållare:
 
 - Microsoft Teams-webbplatser
 - Microsoft 365-grupper (tidigare Office 365-grupper)
 - SharePoint-webbplatser
 
-Använd följande etikett inställningar för att skydda innehållet i dessa behållare:
+Använd följande etikettinställningar för att skydda innehållet i de här behållarna:
 
-- Sekretess (offentlig eller privat) Microsoft 365 Group-kopplade team webbplatser
-- Åtkomst till externa användare
+- Sekretess (offentlig eller privat) för Microsoft 365 gruppanslutna Teams-webbplatser
+- Åtkomst för externa användare
 - Åtkomst från ohanterade enheter
 
-För data integritet kan du förhindra extern delning för behållare som ska användas för att lagra innehåll med känslig person information, markera de filer som innehåller data som privata och kräva hanterade enheter.
+För datasekretess: för att förhindra extern delning för behållare som ska användas för lagring av innehåll med känslig personlig information, markerar du filerna som innehåller data som privata och kräver hanterade enheter.
 
-### <a name="create-and-deploy-sensitivity-labels-for-content"></a>Skapa och distribuera känslighets etiketter för innehåll
+### <a name="create-and-deploy-sensitivity-labels-for-content"></a>Skapa och distribuera känslighetsetiketter för innehåll
 
-Känslighets etiketter som används för filer gör att du kan kryptera innehållet, stämpla innehållet och definiera andra kontroller för Office-program, inklusive Outlook och Office på webben.
+Med känslighetsetiketter som tillämpas på filer kan du kryptera deras innehåll, vattenstämpla innehållet och definiera andra kontroller för Office-programinnehåll, inklusive Outlook och Office på webben.
 
-När du är redo att börja skydda organisationens data med känslighets etiketter:
+När du är redo att börja skydda organisationens data med känslighetsetiketter:
 
-1. **Skapa etiketterna.** Skapa och namnge känslighets etiketterna enligt organisationens klassificerings taxonomi för olika känslighets nivåer. Mer information om att utveckla en klassificerings taxonomi finns i [taxonomin med data klassificering och känslighets etikett](https://aka.ms/dataclassificationwhitepaper).
-2. **Definiera vad varje etikett kan göra.** Konfigurera de skydds inställningar som du vill associera med varje etikett. Du kanske till exempel vill sänka känsligheten för innehållet (till exempel en "allmänt"-etikett) för att bara ha ett sidhuvud eller en sidfot, samtidigt som känsligt innehåll (till exempel en "konfidentiell" etikett) ska ha en vattenstämpel och ha kryptering aktive rad.
-3. **Publicera etiketterna.** När du har konfigurerat känslighets etiketterna publicerar du dem med hjälp av en etikett policy. Bestäm vilka användare och grupper som ska ha etiketterna och vilka princip inställningar som ska användas. En enda etikett är åter användning. Du definierar det en gång och sedan kan du ta med den i flera etikett principer som kopplats till olika användare.
+1. **Skapa etiketterna.** Skapa och namnge dina känslighetsetiketter enligt organisationens klassificerings taxonomi för olika känslighetsnivåer i innehåll. Mer information om hur du utvecklar en klassificerings taxonomi finns i informationsbladet Taxonomi för dataklassificering och [känslighetsetikett.](https://aka.ms/dataclassificationwhitepaper)
+2. **Definiera vad varje etikett kan göra.** Konfigurera de skyddsinställningar som du vill använda kopplade till varje etikett. Du kanske till exempel vill att innehåll med lägre känslighet (t.ex. en "Allmänt"-etikett) bara ska ha ett sidhuvud eller en sidfot, medan innehåll med högre känslighet (t.ex. etiketten "Konfidentiellt" ska ha en vattenstämpel och ha kryptering aktiverad.
+3. **Publicera etiketterna.** När känslighetsetiketterna är konfigurerade publicerar du dem med hjälp av en etikettprincip. Bestäm vilka användare och grupper som ska ha etiketterna och vilka principinställningar som ska användas. En enstaka etikett kan återanvändas. Du definierar den en gång och sedan kan du ta med den i flera etikettprinciper som tilldelats olika användare.
 
-När du har publicerat känslighets etiketter från Microsoft 365 Compliance Center kommer de att visas i [Office-program](../compliance/sensitivity-labels-office-apps.md) för användare för att klassificera och skydda innehåll när det skapas eller redige ras.
+När du publicerar känslighetsetiketter från Efterlevnadscenter för Microsoft 365 börjar de visas i [Office-program](../compliance/sensitivity-labels-office-apps.md) för användare att klassificera och skydda innehåll när det skapas eller redigeras.
 
-![Drift sättnings flödet känslighets etikett i Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
+![Distributionsflöde för känslighetsetikett i Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
 
-För data integritet kan du manuellt använda en känslighets etikett med kryptering och andra regler för e-post eller innehåll som innehåller känslig personlig information.
+För datasekretess lägger du manuellt till en känslighetsetikett med kryptering och andra regler för e-post eller innehåll som innehåller känslig personlig information.
 
 >[!Note]
->Känslighets etiketter med kryptering som används för e-post har vissa överlappande funktioner med OME. Se [skydda e-postscenarier jämförelse med etiketter för ome och känslighet](#secure-email-scenarios-comparison-with-ome-and-sensitivity-labels).
+>Känslighetsetiketter med aktiverad kryptering för e-post har vissa överlappande funktioner med OME. Se [jämförelse av säkra e-postscenarier med OME och känslighetsetiketter.](#secure-email-scenarios-comparison-with-ome-and-sensitivity-labels)
 
-### <a name="client-side-auto-labeling-when-users-edit-documents-or-compose-emails"></a>Automatisk märkning på klient sidan när användare redigerar dokument eller skriver e-post
+### <a name="client-side-auto-labeling-when-users-edit-documents-or-compose-emails"></a>Automatisk etikett på klientsidan när användare redigerar dokument eller skriver e-postmeddelanden
 
-När du skapar en känslighets etikett kan du [automatiskt tilldela etiketten](../compliance/apply-sensitivity-label-automatically.md) till innehåll, inklusive e-post när de villkor du anger.
+När du skapar en känslighetsetikett kan du automatiskt tilldela etiketten till innehåll, inklusive [](../compliance/apply-sensitivity-label-automatically.md) e-post, när den matchar de villkor du anger.
 
-Det är viktigt att använda känslighets etiketter i innehållet automatiskt eftersom:
+Det är viktigt att kunna använda känslighetsetiketter i innehåll automatiskt eftersom:
 
-- Du behöver inte träna användarna att använda alla klassificeringar.
-- Du behöver inte förlita dig på att användarna ska klassificera allt korrekt.
-- Användare behöver inte längre veta mer om dina principer – de kan i stället fokusera på deras arbete.
+- Du behöver inte utbilda användarna när de ska använda var och en av dina klassificeringar.
+- Du behöver inte förlita dig på att användare klassificerar allt innehåll korrekt.
+- Användarna behöver inte längre känna till dina principer – de kan i stället fokusera på sitt arbete.
 
-Automatisk etiketting har stöd för att rekommendera en etikett till användarna, samt automatisk användning av en etikett. I båda fallen bestämmer användaren om etiketten ska accepteras eller nekas för att säkerställa korrekt etikettering av innehållet.
+Automatisk märkning ger stöd för att rekommendera en etikett till användare och att automatiskt använda en etikett. Men i båda fallen bestämmer användaren om han eller hon ska godkänna eller avvisa etiketten för att säkerställa rätt innehållsetikett.
 
-Den här klient etiketten har en minimal fördröjning för dokument eftersom etiketten kan användas även innan dokumentet sparas. Men alla klient program stöder inte automatisk märkning. Den här funktionen stöds av Azure information Protection Unified-märknings klienten och [vissa versioner av Office-program](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+Den här klientetiketten har minimal fördröjning för dokument eftersom etiketten kan användas även innan dokumentet sparas. Men alla klientappar har inte stöd för automatisk etikettering. Den här funktionen stöds av den enhetliga etiketteringsklienten för Azure Information Protection och [vissa versioner av Office-appar.](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)
 
-Anvisningar för konfiguration finns i [Konfigurera automatiska etiketter för Office-program](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+Konfigurationsinstruktioner finns i [Konfigurera automatisk etikettering för Office-program.](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)
 
-För data integritet kan du automatiskt tillämpa känslighets etiketter för innehåll som innehåller känslig personlig information.
+För datasekretess tillämpar du känslighetsetiketter automatiskt för innehåll som innehåller känslig personlig information.
 
-### <a name="service-side-auto-labeling-when-content-is-already-saved"></a>Automatisk märkning när innehållet redan har sparats
+### <a name="service-side-auto-labeling-when-content-is-already-saved"></a>Automatisk etikett på tjänstsidan när innehåll redan har sparats
 
-Denna metod kallas automatisk klassificering med känslighets etiketter. Du kan också höra att det kallas automärkning för data på rest (för dokument i SharePoint och OneDrive) och data i transit (för e-post som skickas eller tas emot via Exchange). För Exchange inkluderar det inte e-post i post lådor på resten.
+Den här metoden kallas automatisk klassificering med känslighetsetiketter. Du kanske också hör det som automatisk märkning för data i vila (för dokument i SharePoint och OneDrive) och data som överförs (för e-post som skickas eller tas emot av Exchange). För Exchange ingår inte e-postmeddelanden i postlådor i vila.
  
-Eftersom den här märkningen används av själva tjänsten i stället för via användar program behöver du inte oroa dig för vilka program användare som har och vilken version. Därför är den här funktionen omedelbart tillgänglig i hela organisationen och passar för etiketteringen. Principer för automatisk etikett stöder inte rekommenderad märkning eftersom användaren inte interagerar med märkningen. Administratören kör istället principer i simulerings läge för att säkerställa korrekt etikettering av innehållet innan etiketten tillämpas.
+Eftersom den här etiketten används av själva tjänsten i stället för av användarprogram behöver du inte oroa dig för vilka appar användarna har och vilken version. Den här funktionen är därför omedelbart tillgänglig i hela organisationen och lämplig för att märka med skalan. Principer för automatisk etiketter stöder inte rekommenderad märkning eftersom användaren inte interagerar med märkningsprocessen. Administratören kör i stället principerna i simuleringsläge för att säkerställa korrekt märkning av innehåll innan etiketten faktiskt används.
 
-Anvisningar för konfiguration finns i [Konfigurera automatiska etikettbaserade principer för SharePoint, OneDrive och Exchange](../compliance/apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange).
+Konfigurationsinstruktioner finns [i Konfigurera principer för automatisk etikettering för SharePoint, OneDrive och Exchange.](../compliance/apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 
-För data integritet i en oberoende webbplats kan du färgkänslighets etiketter för automatisk kryptering av innehåll som innehåller känslig personlig information.
+För datasekretess på webbplatser av intresse kan du skicka känslighetsetiketter för automatisk kryptering av innehåll som innehåller känslig personlig information.
 
-## <a name="data-loss-prevention"></a>Förhindra data förlust 
+## <a name="data-loss-prevention"></a>Skydd mot dataförlust 
 
-Du kan använda [data förlust skydd (DLP)](../compliance/data-loss-prevention-policies.md) i Microsoft 365 för att upptäcka, Varna och blockera riskfyllda, oavsiktliga och olämpliga delar, till exempel delning av data som innehåller personlig information, både internt och externt.
+Du kan använda skydd mot [dataförlust (DLP)](../compliance/data-loss-prevention-policies.md) i Microsoft 365 för att identifiera, varna och blockera riskabel, oavsiktlig eller olämplig delning, t.ex. delning av data som innehåller personlig information, både internt och externt.
 
 Med DLP kan du:
 
-- Identifiera och övervaka risk delnings aktiviteter.
-- Utbilda användarna med Sammanhangs vägledning för att fatta rätt beslut.
-- Använd principer för data användning efter innehåll utan att förhindra produktivitet.
-- Integrera med klassificering och etiketter för att upptäcka och skydda data när de delas.
+- Identifiera och övervaka riskfyllda delningsaktiviteter.
+- Utbilda användare med sammanhangsbaserade riktlinjer för att fatta rätt beslut.
+- Tillämpa dataanvändningsprinciper på innehåll utan att hindra produktiviteten.
+- Integrera med klassificering och märkning för att identifiera och skydda data när de delas.
 
-### <a name="supported-workloads-for-dlp"></a>Arbets belastningar som stöds för DLP
+### <a name="supported-workloads-for-dlp"></a>Arbetsbelastningar som stöds för DLP
 
-Med en DLP-princip i Microsoft 365 Compliance Center kan du identifiera, övervaka och automatiskt skydda känsliga objekt på många platser i Microsoft 365, till exempel Exchange Online, SharePoint, OneDrive och Microsoft Teams.
+Med en DLP-princip i Microsoft 365 efterlevnadscenter kan du identifiera, övervaka och automatiskt skydda känsliga objekt på många platser i Microsoft 365, till exempel Exchange Online, SharePoint, OneDrive och Microsoft Teams.
 
-Du kan till exempel identifiera alla dokument som innehåller ett kreditkorts nummer som lagras på valfri OneDrive-webbplats, eller så kan du bara övervaka OneDrive-webbplatserna för vissa personer.
+Du kan till exempel identifiera alla dokument som innehåller ett kreditkortsnummer som lagras på en OneDrive-webbplats, eller så kan du övervaka bara OneDrive-webbplatserna för vissa personer.
 
-Du kan också övervaka och skydda känsliga objekt i de lokalt installerade versionerna av Excel, PowerPoint och Word, som innehåller möjligheten att identifiera känsliga objekt och använda DLP-principer. DLP ger kontinuerlig övervakning när personer delar innehåll från dessa Office-program.
+Du kan också övervaka och skydda känsliga objekt i lokalt installerade versioner av Excel, PowerPoint och Word, som omfattar möjligheten att identifiera känsliga objekt och tillämpa DLP-principer. DLP ger kontinuerlig övervakning när personer delar innehåll från dessa Office-program.
 
-![Arbets belastningar som stöds för DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
+![Arbetsbelastningar som stöds för DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
 
-I den här bilden visas ett exempel på DLP som skyddar person uppgifter.
+I den här bilden visas ett exempel på hur DLP skyddar personliga data.
 
-![Exempel på att skydda person uppgifter med DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
+![Exempel på skydd av personuppgifter med DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
 
-DLP används för att identifiera ett dokument eller e-postmeddelande som innehåller en hälso post och sedan automatiskt blockerar åtkomsten till dokumentet eller blockerar e-postmeddelandet. DLP meddelar sedan mottagaren med ett princip tips och skickar en avisering till slutanvändaren och administratören.
+DLP används för att identifiera ett dokument eller e-postmeddelande som innehåller en hälsopost och blockerar sedan automatiskt åtkomsten till dokumentet eller blockerar e-post från att skickas. DLP meddelar sedan mottagaren med ett principtips och skickar en avisering till slutanvändaren och administratören.
 
-### <a name="planning-for-dlp"></a>Planera för DLP
+### <a name="planning-for-dlp"></a>Planering för DLP
 
-Planera DLP-principer för: 
+Planera DLP-principerna för: 
 
-- Dina företags behov.
+- Dina affärskrav.
 
-- En riskfylld bedömning av organisationen enligt beskrivningen i artikeln om att [utvärdera data integritets riskerna och identifiera känsliga artiklar](information-protection-deploy-assess.md).
+- En riskbaserad bedömning av företaget enligt beskrivningen i utvärdering av [datasekretessrisker och identifiera känsliga objekt.](information-protection-deploy-assess.md)
 
-- Andra mekanismer för informations skydd och styrning på plats eller för data integritet.
+- Andra mekanismer för informationsskydd och styrning på plats eller vid planering av datasekretess.
 
-- De känslige informations typer som du har identifierat för person uppgifter baserat på utvärderings arbetet enligt beskrivningen i artikeln om att [utvärdera data integritets risker och identifiera känsliga artiklar](information-protection-deploy-assess.md). Villkor för DLP-principer kan baseras på både känsliga informations typer och bevarande etiketter.
+- De typer av känslig information som du har identifierat för personliga data baserat på ditt utvärderingsarbete enligt beskrivningen i bedömningen av sekretessrisker för data och [identifiera känsliga objekt.](information-protection-deploy-assess.md) Villkoren för DLP-principen kan baseras på både känsliga informationstyper och bevarandeetiketter.
 
-- De lagrings etiketter du behöver för att ange DLP-villkor. Mer information finns i artikeln om regler för informations [integritets reglering i din organisations](information-protection-deploy-govern.md) artikel.
+- De bevarandeetiketter du måste ange DLP-villkor för. Mer information [finns i artikeln om reglerad datasekretess](information-protection-deploy-govern.md) i din organisation.
 
-- Pågående DLP-princip hantering, som kräver att någon i organisationen hanterar och finjusterar principer för ändringar i känsliga informations typer, bevarande etiketter, regler och efterlevnadsprinciper.
+- Löpande hantering av DLP-principer, som kräver att någon i organisationen driver och finjusterar principer för ändringar i typer av känslig information, bevarandeetiketter, föreskrifter och efterlevnadsprinciper.
 
-Även om det inte går att använda känslighets etiketter i villkor för DLP-principer är det möjligt att få till gång till vissa skydds scenarier med bara känslighets etiketter som kan användas automatiskt baserat på känsliga informations typer. Om du har en robust känslighets märkning bör du överväga om DLP ska användas för att utöka skyddet på grund av följande:
+Även om känslighetsetiketter inte kan användas under DLP-principvillkor kan vissa skyddsscenarier för att förhindra åtkomst vara uppnåbara med bara känslighetsetiketter som kan tillämpas automatiskt baserat på typer av känslig information. Om det finns robust känslighetsetiketter bör du överväga om DLP ska användas för att förstärka skyddet eftersom:
 
-  - DLP kan förhindra delning av filer. Känslighets etiketter kan förhindra åtkomst.
+  - DLP kan förhindra delning av filer. Känslighetsetiketter kan bara förhindra åtkomst.
 
-  - DLP har fler nivåer av kontroll enligt reglerna, villkoren och åtgärderna.
+  - DLP har mer detaljerade nivåer av kontroll när det gäller regler, villkor och åtgärder.
 
-  - DLP-principer kan tillämpas på chatt-och kanal meddelanden för Teams. Känslighets etiketter kan endast användas i dokument och e-post.
+  - DLP-principer kan tillämpas på chatt- och kanalmeddelanden i Teams. Känslighetsetiketter kan bara användas i dokument och e-post.
 
 
 ### <a name="dlp-policies"></a>DLP-principer
 
-DLP-principer konfigureras i Microsoft Compliance Admin Center och anger skydds nivå, den känsliga informations typ som principen letar efter och mål arbets belastningarna. Deras grundläggande komponenter består av att identifiera skyddet och typerna av data.
+DLP-principer konfigureras i administrationscentret för Microsoft-efterlevnad och anger skyddsnivå, vilken typ av känslig information som principen letar efter och målarbetsbelastningen. Grundkomponenterna består av att identifiera skyddet och typerna av data.
 
-![Konfiguration av DLP-principer i Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
+![DLP-principkonfiguration i Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
 
-Här är ett exempel på en DLP-princip för medvetenhet om GDPR.
+Här är en DLP-exempelprincip för information om GDPR.
 
-![Exempel på DLP policy för medvetenhet om GDPR](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
+![Exempel på DLP-policy för information om GDPR](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
 
-I [den här artikeln](../compliance/create-test-tune-dlp-policy.md) finns mer information om hur du skapar och använder DLP-principer.
+I [den här artikeln](../compliance/create-test-tune-dlp-policy.md) finns mer information om hur du skapar och tillämpar DLP-principer.
 
-### <a name="protection-levels-for-data-privacy"></a>Skydds nivåer för data integritet
+### <a name="protection-levels-for-data-privacy"></a>Skyddsnivåer för datasekretess
 
-Följande tabell innehåller tre konfigurationer av ökat skydd med DLP.
+I följande tabell finns tre konfigurationer av att öka skyddet med DLP.
 
-![Skydds nivåer för data integritet med DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-protection-levels.png)
+![Skyddsnivåer för datasekretess med DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-protection-levels.png)
 
-Den första konfigurationen, medvetenheten, kan användas som utgångs punkt och minsta skydds nivå för att tillgodose behovet av data integritets regler.
+Den första konfigurationen, information, kan användas som en utgångspunkt för och en lägsta nivå av skydd för att tillgodose efterlevnadsbehoven för bestämmelser om datasekretess.
 
 >[!Note]
->I och med att skydds nivåerna ökar kan användarna dela och komma åt informationen i vissa fall och det kan påverka deras produktivitet eller möjlighet att slutföra dagliga uppgifter.
+>I och med att skyddsnivån ökar kommer möjligheten för användare att dela och få åtkomst till information att minska i vissa fall och potentiellt kan påverka deras produktivitet eller förmåga att slutföra dagliga uppgifter.
 >
 
-För att hjälpa dina anställda att fortsätta bli produktiv i en säkrare miljö när du ökar skydds nivåerna kan du ta dig tid att träna och utbilda dem på nya säkerhets principer och procedurer.
+För att hjälpa dina anställda att fortsätta vara produktiva i en säkrare miljö när de ökar skyddsnivåerna, bör du ta dig tid att utbilda dem om nya säkerhetsprinciper och -metoder.
 
-### <a name="example-of-using-sensitivity-labels-with-dlp"></a>Exempel på användning av känslighets etiketter med DLP
+### <a name="example-of-using-sensitivity-labels-with-dlp"></a>Exempel på användning av känslighetsetiketter med DLP
 
-Känslighets etiketter kan samar beta med DLP för att tillhandahålla data integritet i en mycket reglerad miljö. Här är de viktigaste stegen i den integrerade distributionen:
+Känslighetsetiketter kan fungera tillsammans med DLP för att tillhandahålla datasekretess i en miljö med mycket hög sekretess. Här är de viktigaste stegen i den integrerade distributionen:
 
-1. Regler och andra företags krav för data integritet är dokumenterade.
-2. Mål data källor, typer och ägarskap karakteriseras i förhållande till data integritets frågor.
-3. En övergripande strategi för att adressera kraven och skydda och reglera säkerhets-hotspots.
-4. En åtgärds plan för steg för att adressera data integritets kontroll strategin är avsatt.
+1. Föreskrifter och andra affärskrav för datasekretess har dokumenterats.
+2. Måldatakällor, typer och ägarskap karaktäriseras i förhållande till problem med datasekretess.
+3. En övergripande strategi för att hantera krav samt skydda och reglera surfpunkter för datasekretess upprättas.
+4. En fasad handlingsplan för att ta itu med strategi för datasekretesskontroller har satts i kraft.
 
-När de här elementen har bestämts kan du använda känsliga informations typer, känslighets etiketter och DLP-principer tillsammans. I den här bilden visas ett exempel.
+När de här elementen har fastställts kan du använda typer av känslig information, känslighetsetiketter för taxonomi och DLP-principer tillsammans. I den här bilden visas ett exempel.
 
-![Exempel på känslighets etiketter som fungerar med DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
+![Exempel på känslighetsetiketter som fungerar med DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
-[Visa en större version av bilden](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
+[Visa en större version av den här bilden](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
-Här är några data skydds scenarier som använder DLP-och känslighets etiketter tillsammans som på bilden.
+Här är några scenarier för dataskydd som använder DLP- och känslighetsetiketter tillsammans enligt bilden.
 
-| Ovanligt | Allokeringsprocessen |
+| Scenario | Process |
 |:-------|:-----|
-| Kallas | <ol><li>Känslighets etiketter för innehållet publiceras av en administratör för användare och grupper för manuell eller automatisk användning av innehåll och e-post. </li><li>Användare A tillämpar etiketterna manuellt eller automatiskt när de interagerar med innehåll, med kryptering eller andra inställningar. </li><li>Användare A skickar en skyddad e-post eller fil till användare B, en gäst användare. </li></ol> |
-| H | DLP-princip som publicerats av en administratör för att användare A blockerar användare A från att skicka e-post och/eller filen till användare B. |
-| F |  Känslighets etikett med inställningen "ägaren kan inte bjuda in gäster" publiceras till användare A, som etablerar team-eller SharePoint-webbplatsen. En annan användare av webbplatsen försöker att på ett selektivt försök dela en fil med användare B, men DLP blockerar det. |
-| D | Känslighets etiketten för automatiskt program till webbplats innehåll publiceras på en eller flera webbplatser, vilket ger ett annat skydd, vilket leder till en skyddad webbplats. |
+| A | <ol><li>Känslighetsetiketter för innehåll publiceras av en administratör för användare och grupper för manuell eller automatisk programning av innehåll och e-post. </li><li>Användare A tillämpar etiketterna manuellt eller automatiskt när de interagerar med innehåll, med kryptering eller andra inställningar. </li><li>Användare A skickar ett skyddat e-postmeddelande eller en fil till användare B, en gästanvändare. </li></ol> |
+| B | DLP-princip som publicerats av en administratör för användare A blockerar användare A från att skicka e-post och/eller fil till användare B. |
+| C |  Känslighetsetikett med inställningen "ägaren kan inte bjuda in gäster" publiceras till Användare A, som upprättar ett Teams-team eller en SharePoint-webbplats. En annan användare på webbplatsen försöker dela en fil med användare B, men DLP blockerar den. |
+| D | Känslighetsetikett för automatiskt program på webbplatsinnehåll publiceras på en eller flera webbplatser, vilket ger ytterligare en skyddsnivå, vilket resulterar i en skyddad webbplats. |
 |||
 
-## <a name="office-365-message-encryption-ome-new-capabilities"></a>Office 365 Message Encryption (OME) nya funktioner
+## <a name="office-365-message-encryption-ome-new-capabilities"></a>Nya funktioner för meddelandekryptering (OME) i Office 365
 
-Personer använder ofta e-post för att utbyta känsliga objekt, till exempel information om patient hälsa eller kund-och personalinformation. Kryptering via e-post säkerställer att endast avsedda mottagare kan visa meddelande innehåll.
+Personer använder ofta e-post för att utbyta känsliga objekt, till exempel patientinformation eller kund- och personalinformation. Kryptering av e-postmeddelanden säkerställer att endast tilltänkta mottagare kan visa meddelandeinnehållet.
 
-Med [ome](../compliance/ome.md)kan du skicka och ta emot krypterade meddelanden mellan personer inom och utanför organisationen. OME fungerar med Outlook.com, Yahoo!, Gmail och andra e-posttjänster. OME säkerställer att endast avsedda mottagare kan visa meddelande innehåll.
+Med [OME](../compliance/ome.md)kan du skicka och ta emot krypterade meddelanden mellan personer inom och utanför organisationen. OME fungerar med Outlook.com, Yahoo!, Gmail och andra e-posttjänster. OME ser till att endast tilltänkta mottagare kan visa meddelandeinnehållet.
 
-För data integritet använder du OME för att skydda interna meddelanden som innehåller känsliga objekt. Office 365 meddelande kryptering är en online tjänst som bygger på Microsoft Azure Rights Management (Azure RMS) och som är en del av Azure information Protection. Här ingår kryptering, identitet och Auktoriseringsprinciper för att skydda din e-post. Du kan kryptera meddelanden med hjälp av Rights Management-mallar, alternativet Vidarekoppla inte och alternativet endast kryptera.
+För datasekretess använder du OME för att skydda interna meddelanden som innehåller känsliga objekt. Meddelandekryptering i Office 365 är en onlinetjänst som bygger på Microsoft Azure Rights Management (Azure RMS) som är en del av Azure Information Protection. Det omfattar principer för kryptering, identitet och auktorisering för att skydda din e-post. Du kan kryptera meddelanden med hjälp av rättighetshanteringsmallar, alternativet Vidarebefordra inte och alternativet endast kryptera.
 
-Du kan också definiera regler för e-postflöden för att tillämpa detta skydd. Du kan till exempel skapa en regel som kräver kryptering av alla meddelanden som är adresserade till en viss mottagare, eller som innehåller specifika nyckelords ord i ämnes raden, och även ange att mottagarna inte kan kopiera eller skriva ut innehållet i meddelandet.
+Du kan också definiera e-postflödesregler för att tillämpa det här skyddet. Du kan till exempel skapa en regel som kräver kryptering av alla meddelanden som är adresserade till en viss mottagare, eller som innehåller specifika nyckelord ord i ämnesraden, och även ange att mottagarna inte kan kopiera eller skriva ut innehållet i meddelandet.
 
-Dessutom hjälper OME [avancerade kryptering](../compliance/ome-advanced-message-encryption.md) till att möta skyldigheter som kräver mer flexibla kontroller hos externa mottagare och deras åtkomst till krypterade e-postmeddelanden. Med OME-avancerade meddelande kryptering i Microsoft 365 kan du kontrol lera känsliga e-postmeddelanden som delas utanför organisationen med automatiska principer som identifierar känslig information. 
+Dessutom hjälper [OME](../compliance/ome-advanced-message-encryption.md) Avancerad meddelandekryptering dig att uppfylla efterlevnadskrav som kräver mer flexibla kontroller över externa mottagare och deras åtkomst till krypterade e-postmeddelanden. Med OME-avancerad meddelandekryptering i Microsoft 365 kan du styra känsliga e-postmeddelanden som delas utanför organisationen med automatiska principer som identifierar typer av känslig information. 
 
-Om du behöver dela e-post med en extern part för data integritet kan du ange ett förfallo datum och återkalla meddelanden. Du kan bara återkalla och ange ett förfallo datum för meddelanden skickade till externa mottagare.
+För datasekretess kan du ange ett utgångsdatum och återkalla meddelanden om du behöver dela e-post med en extern part. Du kan bara återkalla och ange ett utgångsdatum för meddelanden som skickas till externa mottagare.
 
-### <a name="secure-email-scenarios-comparison-with-ome-and-sensitivity-labels"></a>Jämförelse av säkra e-postscenarier med OME och känslighets etiketter
+### <a name="secure-email-scenarios-comparison-with-ome-and-sensitivity-labels"></a>Säker jämförelse av e-postscenarier med OME och känslighetsetiketter
 
-OME och känslighets etiketter som används för e-post med kryptering har vissa överlappningar, så det är viktigt att förstå vilka scenarier som kan gälla för dem, som du ser i den här tabellen.
+OME- och känslighetsetiketter som används för e-post med kryptering har viss överlappning, så det är viktigt att förstå vilka scenarier som antingen kan gälla för, som visas i den här tabellen.
 
-| Ovanligt | Känslighets etiketter | OME |
+| Scenario | Känslighetsetiketter | OME |
 |:-------|:-----|:-------|
-| Intern + partners <br> Kommunicera och samar beta säkert med interna användare och betrodda partners | Rekommendation – etiketter med helt anpassade klassificeringar och skydd | Ja – kryptera bara eller vidarebefordra inte skydd utan klassificering |
-| Externa parter <br> Kommunicera och samar beta säkert med alla externa användare och konsumenter | Ja – fördefiniera mottagare i etikett | Rekommendera – just-in-Time-skydd baserat på mottagarna |
-| Intern + partners, med giltighets tid och återkallande <br> Kontrol lera åtkomst till e-post och innehåll med interna användare och betrodda partners med förfallo datum och återkallande | Rekommenderat-fullständigt anpassat skydd med åtkomst längd kan användaren automatiskt spåra och återkalla filer | Nej – ingen åter kallelse eller upphör Ande för intern e-post |
-| Externa parter med utgångs datum/åter kallelse <br> Kontrol lera åtkomst för e-post och innehåll med externa/konsument användare med utgångs datum och återkallande | Ja – användaren kan spåra filer manuellt | Rekommendera (E5) – administratören kan återkalla e-post från säkerhets & efterlevnad |
-| Automatisk etiketting <br> Organisationen vill automatiskt skydda e-post och bifogade filer med specifikt känsligt innehåll och/eller specifika mottagare | Rekommendera (E5)-automärkning i Exchange-och Outlook-klienter, ökar regler för e-postflöde och DLP-princip | Ja – regel för e-postflöde och DLP-princip med endast kryptering eller vidarebefordra inte |
+| Internt + partners <br> Kommunicera och samarbeta säkert mellan interna användare och betrodda partner | Rekommendera – etiketter med helt anpassad klassificering och skydd | Ja – Endast kryptera eller vidarebefordra inte skydd utan klassificering |
+| Externa parter <br> Kommunicera och samarbeta säkert med externa/konsumentanvändare | Ja – fördefiniera mottagare i etiketten | Rekommendera – realtidsskydd baserat på mottagare |
+| Internt + partners, med utgångs-/återkallelse <br> Kontrollera åtkomst till e-post och innehåll med interna användare och betrodda partner med utgångs- och återkallelse | Rekommendera – helt anpassat skydd med åtkomstlängd och användaren kan manuellt spåra och återkalla filer | Nej – ingen återkallelse eller utgång för intern e-post |
+| Externa parter med utgång/återkallelse <br> Kontrollera åtkomst till e-post och innehåll med externa/konsumentanvändare med utgångsdatum och återkallelse | Ja – användaren kan spåra filer manuellt | Rekommenderade (E5) – administratören kan återkalla e-post & Säkerhets- och efterlevnadscenter |
+| Automatisk etikettering <br> Organisationen vill automatiskt skydda e-post/bifogade filer med känsligt innehåll och/eller specifika mottagare | Rekommenderade (E5) – automatisk märkning i Exchange- och Outlook-klienter, förstärker e-postflödesregler och DLP-principen | Ja – e-postflödesregler och DLP-princip med endast Kryptera eller Vidarebefordra inte |
 ||||
 
-Det kommer också att finnas skillnader mellan funktionerna för slutanvändare och administratör mellan dessa två metoder.
+Det kommer också att finnas skillnader mellan de här två metoderna för slutanvändare och administratörer.
 
-## <a name="teams-with-protection-for-highly-sensitive-data"></a>Teams med skydd för mycket känslig information
+## <a name="teams-with-protection-for-highly-sensitive-data"></a>Team med skydd för mycket känsliga data
 
-För organisationer som planerar att lagra person uppgifter som är föremål för data integritets regler i Teams kan du läsa [Konfigurera ett team med säkerhets isolering](secure-teams-security-isolation.md)som innehåller detaljerad vägledning och konfigurations steg för:
+Organisationer som planerar att lagra personuppgifter som omfattas av sekretessregler för data i Teams finns i Konfigurera ett [team](secure-teams-security-isolation.md)med säkerhetsisolering, som ger detaljerad vägledning och konfigurationssteg för:
 
 - Identitets- och enhetsåtkomst
 - Skapa ett privat team
-- Låsning av underliggande behörigheter för grupp webbplats
-- En gruppbaserad känslighets etikett med kryptering
+- Nedlåst behörighet för underliggande gruppwebbplatser
+- En gruppbaserad känslighetsetikett med kryptering
