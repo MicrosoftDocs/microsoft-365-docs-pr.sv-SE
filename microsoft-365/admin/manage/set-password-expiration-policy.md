@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Lär dig hur du anger en förfalloprincip för lösenord i organisationen i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 9470a73926327777055a321eb3a592ea3ddcf41e
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 4a7b544b6eded6f0cd6441ad7f6b02de790e5e44
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515046"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50603990"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Ange förfalloprincip för lösenord i organisationen
 
@@ -43,7 +43,7 @@ ms.locfileid: "50515046"
 
 Den här artikeln är avsedd för personer som anger en förfalloprincip för lösenord för ett företag, en skola eller en ideell förening. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörskonto?](../admin-overview/admin-overview.md).
 
-Du måste vara [global administratör eller lösenordsadministratör](../add-users/about-admin-roles.md) för att utföra de här stegen.
+Du måste vara [global administratör](../add-users/about-admin-roles.md) för att utföra de här stegen.
 
 Om du är en användare har du inte behörighet att ange att ditt lösenord aldrig ska upphöra. Be den tekniska supporten på ditt företag eller din skola att göra stegen i denna artikel åt dig.
 
@@ -55,9 +55,7 @@ Som administratör kan du göra så att användarlösenord upphör efter ett vis
 > Standard är att lösenord är inställda på att upphöra efter 90 dagar. Aktuella undersökningar tyder starkt på att tvingande lösenordsändringar gör mer skada än nytta. Det får användarna att välja svagare lösenord, återanvända lösenord eller uppdatera gamla lösenord på ett sätt som gör det enkelt för hackare att gissa sig till dem. Om du ställer in lösenord att aldrig upphöra rekommenderar vi att du aktiverar [multifaktorautentisering](../security-and-compliance/set-up-multi-factor-authentication.md).
 
 Följ anvisningarna nedan om du vill ställa in så att användarlösenorden ska upphöra efter en viss tid.
-> [!IMPORTANT]
-> Endast [globala administratörer](../add-users/about-admin-roles.md) kan utföra de här stegen.
-  
+
 1. I administrationscentret för går du till fliken **inställningar** \> **organisationsinställningar**.
 
 2. Gå till sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Säkerhet och sekretess</a>.

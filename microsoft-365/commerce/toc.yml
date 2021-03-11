@@ -48,12 +48,14 @@
       href: billing-and-payments/view-your-bill-or-invoice.md
     - name: Förstå din faktura
       href: billing-and-payments/understand-your-invoice.md
-    - name: Hantera betalningsmetoder
-      href: billing-and-payments/manage-payment-methods.md
     - name: Betala för prenumerationen
       href: billing-and-payments/pay-for-your-subscription.md
-    - name: Ändra fakturerings frekvens
+    - name: Hantera betalningsmetoder
+      href: billing-and-payments/manage-payment-methods.md
+    - name: Ändra faktureringsfrekvens
       href: billing-and-payments/change-payment-frequency.md
+    - name: Hantera faktureringsaviseringar och fakturabilagor
+      href: billing-and-payments/manage-billing-notifications.md
     - name: Förstå faktureringsprofiler
       href: billing-and-payments/manage-billing-profiles.md
     - name: Ändra dina faktureringsadresser
