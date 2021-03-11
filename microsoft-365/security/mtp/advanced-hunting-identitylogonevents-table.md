@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 87ac6194374e8e042cf9d00271b17dd8bb785d64
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: 08dd78c7648126717113066e3c87b05e624f57d0
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145361"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712360"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -35,10 +35,10 @@ ms.locfileid: "50145361"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Tabellen i det avancerade sökschemat innehåller information om autentiseringsaktiviteter som görs via din lokala Active Directory som avbildats av Microsoft Defender för identitets- och autentiseringsaktiviteter relaterade till Microsofts onlinetjänster som avbildats av `IdentityLogonEvents` Microsoft Cloud App Security. [](advanced-hunting-overview.md) Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+Tabellen i det avancerade sökschemat innehåller information om autentiseringsaktiviteter som görs via din lokala Active Directory som avbildats av Microsoft Defender för identitets- och autentiseringsaktiviteter relaterade till Microsofts onlinetjänster som fångats av `IdentityLogonEvents` Microsoft Cloud App Security. [](advanced-hunting-overview.md) Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!TIP]
-> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` [inbyggda schemareferensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) som finns i säkerhetscentret.
+> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` inbyggda schemareferensen som finns i säkerhetscentret.
 
 >[!NOTE]
 >Den här tabellen tar upp inloggningsaktiviteter för Azure Active Directory (AD) som spåras av Cloud App Security, särskilt interaktiva inloggningar och autentiseringsaktiviteter med ActiveSync och andra äldre protokoll. Icke-interaktiva inloggningar som inte är tillgängliga i den här tabellen kan visas i Azure AD-granskningsloggen. [Läs mer om hur du ansluter Cloud App Security till Microsoft 365](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a0892e03e0ac4c6fc6bcda1b7b159ce403a7ce2e
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 5e9fce199d253cf22f73ec8620c5441d8bf1305d
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461631"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712396"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -38,7 +38,7 @@ ms.locfileid: "50461631"
 Tabellen i det avancerade schemat för sökning innehåller information om händelser som innefattar bearbetning `EmailEvents` av e-postmeddelanden på Microsoft Defender för [](advanced-hunting-overview.md) Office 365. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!TIP]
-> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` [inbyggda schemareferensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) som finns i säkerhetscentret.
+> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` inbyggda schemareferensen som finns i säkerhetscentret.
 
 Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 

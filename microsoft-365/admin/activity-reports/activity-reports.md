@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Få regelbundna rapporter om hur personer i organisationen använder Microsoft 365-tjänster. Med instrumentpanelen för översikt över användning kan du granska varje diagram för fler insikter.
-ms.openlocfilehash: 4ec7690e5300b2ac08a98fbec3f4c253e970738c
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: a71ced2dd0aa71179c1b26cec571f3025af1ce05
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921176"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50603858"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365-rapporter i administrationscentret
 
@@ -85,6 +85,8 @@ Mer information finns i [Om administratörsroller](../add-users/about-admin-role
 ## <a name="which-activity-reports-are-available-in-the-admin-center"></a>Vilka aktivitetsrapporter är tillgängliga i administrationscentret
 
 De här rapporterna är tillgängliga, beroende på din prenumeration.
+
+- [Användning av Microsofts webbläsare](browser-usage-report.md) 
   
 - [E-postaktivitet](email-activity-ww.md)
 
@@ -125,8 +127,6 @@ De här rapporterna är tillgängliga, beroende på din prenumeration.
 - [OneDrive för företag-användning för US Government](onedrive-for-business-usage.md)
 
 - [Användning av Microsoft 365-appar](microsoft365-apps-usage-ww.md)
-
-- [Microsoft 365-appar för US Government](microsoft365-apps-usage.md)
   
 - [SharePoint-webbplatsanvändning](sharepoint-site-usage-ww.md)
 

@@ -1,7 +1,7 @@
 ---
 title: DeviceNetworkEvents-tabellen i det avancerade sökschemat
 description: Läs mer om nätverksanslutningshändelser som du kan köra frågor från tabellen DeviceNetworkEvents i det avancerade sökschemat
-keywords: avancerad sökning, hotsökning, cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, devicenetworkevents, NetworkCommunicationEvents, nätverksanslutning, fjärr-ip, lokal ip
+keywords: avancerad sökning, hotsökning, cyberhot, skydd mot cyberhot, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, devicenetworkevents, NetworkCommunicationEvents, nätverksanslutning, fjärr-ip, lokal ip
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c9509c76e5fa945c693e67f394b6432f939b58a5
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: 65b9b7608b39f802cc82c62b87d7104ee4ff4304
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145337"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712432"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -40,7 +40,7 @@ ms.locfileid: "50145337"
 Tabellen `DeviceNetworkEvents` i det avancerade [sökschemat](advanced-hunting-overview.md) innehåller information om nätverksanslutningar och relaterade händelser. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!TIP]
-> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` [inbyggda schemareferensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) som finns i säkerhetscentret.
+> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` inbyggda schemareferensen som finns i säkerhetscentret.
 
 Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 
@@ -68,11 +68,11 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `InitiatingProcessCreationTime` | datetime | Datum och tid då processen som initierade händelsen startades |
 | `InitiatingProcessFolderPath` | sträng | Mapp som innehåller den process (bildfil) som initierade händelsen |
 | `InitiatingProcessParentFileName` | sträng | Namn på den överordnade process som gav upphov till processen som ansvarar för händelsen |
-| `InitiatingProcessParentId` | int | Process-ID (PID) för den överordnade process som avkortade processen som ansvarar för händelsen |
+| `InitiatingProcessParentId` | int | Process-ID (PID) för den överordnade process som hanterade processen som ansvarar för händelsen |
 | `InitiatingProcessParentCreationTime` | datetime | Datum och tid då den överordnade processen som ansvarar för händelsen startades |
 | `InitiatingProcessAccountDomain` | sträng | Domän för kontot som körde processen som ansvarar för händelsen |
 | `InitiatingProcessAccountName` | sträng | Användarnamnet för det konto som körde processen som ansvarar för händelsen |
-| `InitiatingProcessAccountSid` | sträng | Säkerhetsidentifierare (SID) för det konto som körde processen som ansvarar för händelsen |
+| `InitiatingProcessAccountSid` | sträng | Säkerhetsidentifierare (SID) för kontot som körde processen som ansvarar för händelsen |
 | `InitiatingProcessAccountUpn` | sträng | Användarens huvudnamn (UPN) för det konto som körde processen som ansvarar för händelsen |
 | `InitiatingProcessIntegrityLevel` | sträng | Integritetsnivån för processen som initierade händelsen. Windows tilldelar integritetsnivåer till processer baserat på vissa egenskaper, till exempel om de startades från en Internetnedladdning. De här integritetsnivåerna påverkar behörigheter för resurser |
 | `InitiatingProcessTokenElevation` | sträng | Tokentyp som anger närvaro eller frånvaro av UAC-behörighets ökning (User Access Control) som används för processen som initierade händelsen |

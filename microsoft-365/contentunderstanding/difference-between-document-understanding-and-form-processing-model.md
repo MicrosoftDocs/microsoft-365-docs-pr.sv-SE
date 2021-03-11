@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Beskriver viktiga skillnader mellan modeller för dokumenttolkning och modeller för formulärbearbetning
-ms.openlocfilehash: f57d220eb77a783de5ac352f3cf684364252a163
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 555dfa7d76335a3b943e860e5f41ed64c9d3e874
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975883"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50596986"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Skillnader mellan modeller för dokumenttolkning och modeller för formulärbearbetning 
 
@@ -66,7 +66,25 @@ Du kan använda modeller för dokumenttolkning för dokumentbibliotek i SharePoi
 
 Modeller för formulärbearbetning kan för närvarande bara användas för dokumentbiblioteket i SharePoint som du skapade dem från. Det gör att licensierade användare med åtkomst till webbplatsen kan skapa en modell för formulärbearbetning. Observera att en administratör måste aktivera formulärbearbetning i ett dokumentbibliotek i SharePoint för att den ska vara tillgänglig för licensierade användare.
 
- ## <a name="see-also"></a>Se även
+## <a name="comparison-of-forms-processing-and-document-understanding"></a>Jämförelse av formulärbearbetning och dokumenttolkning
+
+Använd följande tabell för att förstå när du ska använda formulärbearbetning och när du ska använda dokumentförståelse:
+
+| Funktion | Formulärbearbetning | Dokumenttolkning |
+| ------- | ------- | ------- |
+| Modelltyp – när du ska använda den ena eller den andra | Används för halvstrukturerade filformat, till exempel Office-dokument där det finns skillnader i layouten men fortfarande har liknande information som ska extraheras. | Används för ostrukturerade filformat, till exempel PDF-filer för formulärinnehåll som fakturor eller inköpsorder där layout och formatering är liknande. |
+| Modellgenerering | Modell skapad i AI builder med smidig åtkomst från SharePoints dokumentbibliotek.| Modell skapad i det inbyggda gränssnittet i SharePoint Innehållscenter.|
+| Klassificeringstyp| Inställbar klassificerare där maskininlärning används för att ge ledtrådar om vilken data som ska extraheras.| Klassificerare som kan tränas med valfria extraktorer med maskininlärning för att tilldela dokumentplats angående vilken data som ska extraheras.|
+| Platser | Begränsad till ett enda dokumentbibliotek såvida du inte använder Power Platform för att hämta från CDS.| Kan tillämpas på flera bibliotek.|
+| Filtyper som stöds| Träna på PDF-, JPG- och PNG-format, totalt 50 MB och 500 sidor.| Träna på 5-10 PDF-, Office- eller e-postfiler, inklusive negativa exempel.<br>Office-filer trunkeras till 64 000 tecken. OCR-skannade filer är begränsade till 20 sidor.|
+| Integrera med hanterade metadata | Nej | Ja, genom inställningen på dokumentbibliotekets kolumner före du tränar modellen.|
+| Funktionen för efterlevnad integreras när Microsoft Information Protection är aktiverad. | Ställ in kvarhållningsetiketter.<br>Ställ in känslighetsetiketter är på väg. | Ställ in kvarhållningsetiketter.<br>Ställ in känslighetsetiketter är på väg. |
+| Regioner som stöds| Formulärbearbetning är beroende av Power Platform. Information om global tillgänglighet för Power Platform och AI Builder se [ tillgängligheten för Power Platform](https://dynamics.microsoft.com/geographic-availability/). | Tillgängligt i alla regioner.|
+| Transaktionskostnad | Använder AI Builder-krediter.<br>Krediter kan köpas i omgångar om 1 miljon.<br>1 miljon krediter ingår när över 300 SharePoint Syntex-licenser köps.<br>1 miljon krediter ger möjlighet till bearbetning av 2 000 filsidor.| Uppgift saknas |
+| Kapacitet | Etableras mot standardmiljön för vanliga datatjänster.| Inga kapacitetsbegränsningar.|
+| Språk som stöds| Engelska <br>Kommer senare under 2021: spanska, tyska, franska, italienska| Modeller fungerar på alla språk med latinska alfabetet. Förutom Engelska: tyska, svenska, franska, spanska, italienska och portugisiska.|
+
+## <a name="see-also"></a>Se även
 [Utbildning: Förbättra affärsprestanda med AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
 
 

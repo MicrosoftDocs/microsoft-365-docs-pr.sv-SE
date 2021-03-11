@@ -21,12 +21,12 @@ description: Administrationscentret för Microsoft 365 – läs mer om de funkti
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: e8e743c0f3de0d7ac2eb8ebb9995596783d2d31a
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 2ecf9ddbd1257e7273da36371abb9f9e38df3f4a
+ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461840"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50717647"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Vad är nytt i administrationscentret för Microsoft 365
 
@@ -62,6 +62,12 @@ Vi har moderniserat meddelandecentret för att hjälpa dig att hitta relevanta m
 :::image type="content" source="../media/message-center.png" alt-text="Skärmbild: Startsidan för Meddelandecenter med inkorgen och meddelanden":::
 
 Mer information om de nya funktionerna finns i Hantera [meddelanden i Meddelandecenter.](manage/manage-messages.md)
+
+### <a name="whats-new-features"></a>Nya funktioner
+
+Vi har gjort förbättringar i hur du ser "What's new"-funktionerna för användare i Office-apparna. Nu kan du se det omfattande innehållet i det nya fönstret Whats' som användarna kan se. Du kan också läsa mer om funktionen innan du bestämmer dig för att låta användarna veta om funktionen. For more info, check out [Manage which Office‎ features appear in What's New](manage/show-hide-new-features.md).
+
+:::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Skärmbild: En ny sida i Office-apparna som visar förbättringar i Power BI":::
 
 ## <a name="ignite-2020-august--september"></a>Ignite 2020 (augusti & september)
 

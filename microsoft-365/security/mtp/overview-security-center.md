@@ -15,16 +15,16 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 89e72d703bd70647d6c2b00732315b8e5f015cc7
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 87149ab9c99168d62f5114555a46b8bfaee83ab2
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167220"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712108"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>Översikt över det enhetliga säkerhetscentret i Microsoft 365
 
@@ -44,7 +44,7 @@ Det förbättrade säkerhetscentret för **Microsoft 365** () kombinerar skydd, 
 
 Microsoft 365 säkerhetscenter samlar funktioner från befintliga Microsoft-säkerhetsportaler som Microsoft Defender Säkerhetscenter och Office 365 Säkerhets- & efterlevnadscenter. Säkerhetscenter framhäver snabb åtkomst till information, enklare layouter och att sammanföra relaterad information för enklare användning. I det här mitten finns:
 
-- **[Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)** Microsoft Defender för Office 365 hjälper organisationer att skydda sitt företag med en uppsättning funktioner för skydd, identifiering, undersökning och eftersökning för att skydda e-post och Office 365-resurser.
+- **[Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)** Microsoft Defender för Office 365 hjälper organisationer att skydda sitt företag med en uppsättning skyddsfunktioner, identifierings-, undersöknings- och säkerhetsfunktioner för att skydda e-post och Office 365-resurser.
 - **[Microsoft Defender för Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)** ger skydd mot intrång, identifiering efter intrång, automatisk undersökning och svar för enheter i din organisation.
 - **[Microsoft 365 Defender](microsoft-threat-protection.md)** är en del av Microsofts XDR-lösning *(Extended Detection and Response)* som utnyttjar Microsoft 365-säkerhetsportföljen för att automatiskt analysera hotdata över domäner och skapa en bild av ett angrepp på en enskild instrumentpanel.
 
@@ -79,10 +79,10 @@ Genom att effektivisera säkerhetscenter skapas ett enda fönster för att under
 
 Om du till exempel dubbelklickar på  ett incidentnamn med hög allvarlighetsgrad kommer du till en sida som visar fördelen med konvergerande center.
 
-![Incident i flera steg som innefattar eskalering av behörigheter på flera slutpunkter, som visar se 16 påverkade enheter och 9 påverkade användare.](../../media/converged-incident-info-3.png)
+![Incident i flera steg som innefattar eskalering av behörigheter på flera slutpunkter som visar se 16 påverkade enheter och 9 påverkade användare.](../../media/converged-incident-info-3.png)
 
 > [!TIP]
-> Fliken Konvergerade **användare** är en bra plats att påbörja dina förfrågningar på. Den här sidan visar information för användare från konvergerade arbetsbelastningar (Microsoft Defender för slutpunkt, Microsoft Defender för identitet och MCAS om du använder det) och ett antal källor, till exempel lokal Active Directory, Azure Active Directory, synkroniserade användare, lokala användare och tredjepartsanvändare. Läs mer om [den nya användarupplevelsen.](investigate-users.md)
+> Fliken Konvergerade **användare** är en bra plats att påbörja dina förfrågningar på. Den här sidan visar information för användare från konvergerade arbetsbelastningar (Microsoft Defender för slutpunkt, Microsoft Defender för identitet och MCAS om du använder det) och ett antal källor, till exempel lokal Active Directory, Azure Active Directory, synkroniserade, lokala användare och tredjepartsanvändare. Läs mer om [den nya användarupplevelsen.](investigate-users.md)
 
 Incidentinformation visar användar-/identitetsspecifik information och enheter för at-risk, bredvid berörda postlådor. Den relaterar även eventuell **undersökningsinformation och** insamlade **bevis.** Det gör det enklare för administratörer och säkerhetsåtgärdsteam att pivotera från en högriskavisering till berörda användare och postlådor. Om vi tittar **på incidentflikarna** längst upp på den här sidan finns det andra viktiga säkerhetspivoter tillgängliga från den här platsen.
 
@@ -93,7 +93,7 @@ Om **du** väljer Undersökningar öppnas en sida med en bild av den analys som 
 
 ## <a name="improved-processes"></a>Förbättrade processer
 
-Vanliga kontroller och innehåll visas antingen på samma plats eller komprimeras till en feed med data som gör det lättare att hitta. Till exempel enhetliga inställningar.
+Vanliga kontroller och innehåll visas antingen på samma plats eller lagras i en feed med data som gör det lättare att hitta. Till exempel enhetliga inställningar.
 
 ### <a name="unified-settings"></a>Enhetliga inställningar
 
@@ -110,11 +110,11 @@ Vanliga kontroller och innehåll visas antingen på samma plats eller komprimera
 
 ### <a name="integrated-reports"></a>Integrerade rapporter
 
-Rapporter är även enhetliga i Säkerhetscenter för Microsoft 365. Administratörer kan börja med en allmän säkerhetsrapport och förgrena till specifika rapporter om slutpunkter, skicka e-& samarbete. Länkarna här genereras dynamiskt utifrån konfigurationen av arbetsbelastningen.
+Rapporter är också enhetliga i Säkerhetscenter för Microsoft 365. Administratörer kan börja med en allmän säkerhetsrapport och förgrena till specifika rapporter om slutpunkter, skicka e-& samarbete. Länkarna här genereras dynamiskt utifrån konfigurationen av arbetsbelastningen.
 
 ### <a name="quickly-view-your-microsoft-365-environment"></a>Visa din Microsoft 365-miljö snabbt
 
-På **startsidan** visas många av de vanliga korten som säkerhetsteam behöver. Sammansättning av kort och data är beroende av användarrollen. Eftersom Säkerhetscenter i Microsoft 365 använder rollbaserad åtkomstkontroll kommer olika roller att se kort som är mer meningsfulla för de dagliga jobben.  
+Startsidan **visar** många av de vanliga korten som säkerhetsteam behöver. Sammansättning av kort och data är beroende av användarrollen. Eftersom Säkerhetscenter i Microsoft 365 använder rollbaserad åtkomstkontroll kommer olika roller att se kort som är mer meningsfulla för de dagliga jobben.  
 
 Med den här snabb översiktsinformationen kan du hålla dig informerad om de senaste aktiviteterna i organisationen. Säkerhetscentret i Microsoft 365 samlar signaler från olika källor för att presentera en vy över Microsoft 365-miljön.
 
@@ -145,7 +145,7 @@ Utbildningshubben öppnas med utbildningsvägar ordnade kring ämnen som "Så h�
 När du har klickat till innehållet kan det vara bra att bokmärka den här webbplatsen och ordna bokmärken i mappen Säkerhet eller Kritisk. Om du vill se alla Utbildningsvägar klickar du på länken Visa alla i huvudpanelen.
 
 > [!NOTE]
-> Det finns  användbara filter högst upp i utbildningshubben för Microsoft 365 säkerhetscenter där du kan välja mellan produkter (för närvarande Microsoft 365 Defender, Microsoft Defender för slutpunkt och Microsoft Defender för Office 365). Observera att antalet utbildningsresurser för varje avsnitt visas, vilket kan hjälpa eleverna att hålla reda på hur många resurser de har till hands för utbildning och inlärning.
+> Det finns  användbara filter högst upp i utbildningshubben för Microsoft 365 säkerhetscenter som gör att du kan välja mellan produkter (för närvarande Microsoft 365 Defender, Microsoft Defender för slutpunkt och Microsoft Defender för Office 365). Observera att antalet utbildningsresurser för varje avsnitt visas, vilket kan hjälpa eleverna att hålla reda på hur många resurser de har till hands för utbildning och inlärning.
 >
 > Tillsammans med produktfiltret visas aktuella ämnen, typer av resurser (från videoklipp till webbs vete) nivå av bekanthet eller erfarenhet med säkerhetsområden, säkerhetsroller och produktfunktioner.
 
@@ -162,7 +162,7 @@ Använd knappen **Den här produkten** för *produktfeedback:*
 2. Detta navigerar till **UserVoice-forumet.**
 3. Du har två alternativ:
     1. Rulla ned till textrutan Hur kan vi förbättra efterlevnad eller skydda dina användare bättre i *Office 365?* och klistra in i *Microsoft 365 säkerhetscenter.* Du kan söka i resultaten efter en idé som din och rösta om den, eller använda knappen för **att publicera en ny idé.**
-    1. Om du anser att det här problemet redan har rapporterats och vill höja upp sin profil med en röst (eller röster) använder du rutan Ge *feedback* på höger sida av UserVoice. Sök efter *Microsoft 365 säkerhetscenter,* **hitta problemet och** använd röstknappen för att höja dess status.
+    1. Om du anser att det här problemet redan har rapporterats och vill höja upp sin profil med en röst (eller röster) använder du rutan Ge *feedback* på höger sida av UserVoice. Sök efter *Microsoft 365 säkerhetscenter,* hitta problemet och använd **röstknappen för** att höja dess status.
 
 Använd *den här sidan* för feedback om själva artikeln. Tack för din feedback. Din röst hjälper oss att förbättra våra produkter.
 
@@ -175,8 +175,8 @@ Fortsätt utforska funktionerna i Microsoft 365 säkerhetscenter:
 - [Åtgärdscentret](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
 - [Leta efter hot på olika enheter, e-postmeddelanden, appar och identiteter](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-query-emails-devices)
 - [Anpassade identifieringsregler](https://docs.microsoft.com/microsoft-365/security/mtp/custom-detection-rules)
-- [E-& om samarbete](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies)
-- [Skapa en nätfiskeattack och](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training) [skapa en nyttolast för att utbilda dina team](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
+- [Skicka e& om samarbetsaviseringar](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies)
+- [Skapa en nätfiskeattack och](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training) [skapa en nyttolast för utbildning för dina team](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
  
 ### <a name="related-information"></a>Relaterad information
 - [Microsoft 365 Säkerhetscenter](overview-security-center.md)

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 48a1520e9fc6239fd3105f01a32a03e5e58df174
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: eb1f408b61444771f5d450b46dbc9c2b4a009e4c
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145301"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712336"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -35,10 +35,10 @@ ms.locfileid: "50145301"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Tabellen i det avancerade utbildningsschemat innehåller information om frågor som utförs mot Active Directory-objekt, till exempel `IdentityQueryEvents` användare, grupper, enheter [](advanced-hunting-overview.md) och domäner. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+Tabellen i det avancerade sökschemat innehåller information om frågor som utförs mot Active Directory-objekt, till exempel `IdentityQueryEvents` användare, grupper, enheter [](advanced-hunting-overview.md) och domäner. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!TIP]
-> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` [inbyggda schemareferensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) som finns i säkerhetscentret.
+> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` inbyggda schemareferensen som finns i säkerhetscentret.
 
 Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 
@@ -52,7 +52,7 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `Query` | sträng | Sträng som används för att köra frågan |
 | `Protocol` | sträng | Protokoll som används under kommunikationen |
 | `AccountName` | sträng | Användarnamn för kontot |
-| `AccountDomain` | sträng | Domän för kontot |
+| `AccountDomain` | sträng | Domänen för kontot |
 | `AccountUpn` | sträng | Kontots huvudnamn (UPN) |
 | `AccountSid` | sträng | Säkerhetsidentifierare (SID) för kontot |
 | `AccountObjectId` | sträng | Unikt ID för kontot i Azure AD |

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6f94b861aa73d01f9e906d41bc52a9724552cd33
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: e89f0443662257cba2c71cd0e501c39412c19ca3
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145517"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712420"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
@@ -40,7 +40,7 @@ ms.locfileid: "50145517"
 Tabellen `DeviceProcessEvents` i det avancerade [sökschemat](advanced-hunting-overview.md) innehåller information om processskapande och relaterade händelser. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!TIP]
-> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` [inbyggda schemareferensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) som finns i säkerhetscentret.
+> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` inbyggda schemareferensen som finns i säkerhetscentret.
 
 Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 

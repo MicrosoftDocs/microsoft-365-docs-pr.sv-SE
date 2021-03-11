@@ -1,5 +1,5 @@
 ---
-title: Tabellen IdentityDirectoryEvents i den avancerade sökschemat
+title: IdentityDirectoryEvents-tabellen i det avancerade sökschemat
 description: Läs mer om domänkontrollanter och Active Directory-händelser i tabellen IdentityDirectoryEvents i det avancerade sökschemat
 keywords: avancerad sökning, hotsökning, cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, IdentityDirectoryEvents, domänkontrollant, Active Directory, Azure ATP, identiteter
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 95090b0f4abe0b0f0552c81495936f4f2261cf8e
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: d4e119bc0a2e600d5203231eb196cf201469bfd2
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929940"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712372"
 ---
 # <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 
@@ -38,7 +38,7 @@ ms.locfileid: "49929940"
 Tabellen `IdentityDirectoryEvents` i det avancerade [sökschemat](advanced-hunting-overview.md) innehåller händelser som innefattar en lokal domänkontrollant som kör Active Directory (AD). I den här tabellen fångas olika identitetsrelaterade händelser, som lösenordsändringar, lösenordsförfallotid och ÄNDRINGAR av huvudnamn (UPN). Den fångar även systemhändelser på domänkontrollanten, till exempel schemaläggning av uppgifter och PowerShell-aktivitet. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!TIP]
-> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` [inbyggda schemareferensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) som finns i säkerhetscentret.
+> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` inbyggda schemareferensen som finns i säkerhetscentret.
 
 Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 

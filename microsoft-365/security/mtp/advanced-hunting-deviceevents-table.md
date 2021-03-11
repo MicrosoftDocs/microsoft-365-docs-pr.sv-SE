@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1340464fbe71e919a60668cf7d1b2f535eb6d260
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: 02e0caed602ffa14a756f0cc8e695fc9fb953efc
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145331"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712480"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -37,10 +37,10 @@ ms.locfileid: "50145331"
 
 
 
-Diverse enhetshändelser eller -tabellen i det avancerade schemat för sökning innehåller information om olika händelsetyper, inklusive händelser som utlöses av säkerhetskontroller, till exempel Windows Defender Antivirus och `DeviceEvents` sårbarhetsskydd. [](advanced-hunting-overview.md) Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+Diverse enhetshändelser eller -tabeller i det avancerade schemat för sökning innehåller information om olika händelsetyper, inklusive händelser som utlöses av säkerhetskontroller, till exempel Windows Defender Antivirus och `DeviceEvents` sårbarhetsskydd. [](advanced-hunting-overview.md) Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!TIP]
-> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` [inbyggda schemareferensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) som finns i säkerhetscentret.
+> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` inbyggda schemareferensen som finns i säkerhetscentret.
 
 Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 
@@ -85,14 +85,14 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `InitiatingProcessId` | int | Process-ID (PID) för processen som initierade händelsen |
 | `InitiatingProcessCommandLine` | sträng | Kommandorad som används för att köra processen som initierade händelsen |
 | `InitiatingProcessCreationTime` | datetime | Datum och tid då processen som initierade händelsen startades |
-| `InitiatingProcessParentId` | int | Process-ID (PID) för den överordnade process som avkortade processen som ansvarar för händelsen |
+| `InitiatingProcessParentId` | int | Process-ID (PID) för den överordnade process som hanterade processen som ansvarar för händelsen |
 | `InitiatingProcessParentFileName` | sträng | Namn på den överordnade process som gav upphov till processen som ansvarar för händelsen |
 | `InitiatingProcessParentCreationTime` | datetime | Datum och tid då den överordnade processen som ansvarar för händelsen startades |
 | `InitiatingProcessMD5` | sträng | MD5-hash för processen (bildfil) som initierade händelsen |
 | `InitiatingProcessAccountDomain` | sträng | Domän för kontot som körde processen som ansvarar för händelsen |
 | `InitiatingProcessAccountName` | sträng | Användarnamnet för det konto som körde processen som ansvarar för händelsen |
 | `InitiatingProcessAccountSid` | sträng | Säkerhetsidentifierare (SID) för kontot som körde processen som ansvarar för händelsen |
-| `InitiatingProcessAccountUpn` | sträng | Användarens huvudnamn (UPN) för kontot som körde processen som ansvarar för händelsen |
+| `InitiatingProcessAccountUpn` | sträng | Användarens huvudnamn (UPN) för det konto som körde processen som ansvarar för händelsen |
 | `InitiatingProcessAccountObjectId` | sträng | Azure AD-objekt-ID för användarkontot som körde processen som ansvarar för händelsen |
 | `InitiatingProcessLogonId` | sträng | Identifierare för en inloggningssession i processen som initierade händelsen. Den här identifieraren är unik på samma dator endast mellan omstarter |
 | `ReportId` | long | Händelseidentifierare baserade på en återkommande räknare. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp |

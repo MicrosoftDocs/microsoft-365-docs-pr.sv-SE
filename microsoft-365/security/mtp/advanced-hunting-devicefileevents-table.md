@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cccbd268c8f69d6623df1ef4c8208d20ead2e9f5
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: e54a6dce9765a8b87fcf2f63bbd1342beabdcf39
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145313"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712468"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -38,7 +38,7 @@ ms.locfileid: "50145313"
 Tabellen `DeviceFileEvents` i det avancerade [utbildningsschemat](advanced-hunting-overview.md) innehåller information om att skapa filer, ändra filer och andra filsystemshändelser. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!TIP]
-> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` [inbyggda schemareferensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) som finns i säkerhetscentret.
+> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` inbyggda schemareferensen som finns i säkerhetscentret.
 
 Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 
@@ -62,7 +62,7 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `InitiatingProcessAccountDomain` | sträng | Domän för kontot som körde processen som ansvarar för händelsen |
 | `InitiatingProcessAccountName` | sträng | Användarnamnet för det konto som körde processen som ansvarar för händelsen |
 | `InitiatingProcessAccountSid` | sträng | Säkerhetsidentifierare (SID) för kontot som körde processen som ansvarar för händelsen |
-| `InitiatingProcessAccountUpn` | sträng | Användarens huvudnamn (UPN) för kontot som körde processen som ansvarar för händelsen |
+| `InitiatingProcessAccountUpn` | sträng | Användarens huvudnamn (UPN) för det konto som körde processen som ansvarar för händelsen |
 | `InitiatingProcessMD5` | sträng | MD5-hash för processen (bildfil) som initierade händelsen |
 | `InitiatingProcessSHA1` | sträng | SHA-1 för processen (bildfil) som initierade händelsen |
 | `InitiatingProcessSHA256` | sträng | SHA-256 för processen (bildfil) som initierade händelsen. Det här fältet fylls vanligtvis inte i – använd SHA1-kolumnen när den är tillgänglig. |
@@ -81,8 +81,8 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `RequestSourceIP` | sträng | IPv4- eller IPv6-adressen för fjärrenheten som initierade aktiviteten |
 | `RequestSourcePort` | sträng | Källport på fjärrenheten som initierade aktiviteten |
 | `RequestAccountName` | sträng | Användarnamn på konto som används för att starta aktiviteten på distans |
-| `RequestAccountDomain` | sträng | Domän för kontot som används för att starta aktiviteten via fjärren |
-| `RequestAccountSid` | sträng | Säkerhetsidentifierare (SID) för kontot som används för att starta aktiviteten på distans |
+| `RequestAccountDomain` | sträng | Domän för kontot som används för att starta aktiviteten via fjärrstyrning |
+| `RequestAccountSid` | sträng | Säkerhetsidentifierare (SID) för kontot som används för att fjärr initiera aktiviteten |
 | `ReportId` | long | Händelseidentifierare baserade på en återkommande räknare. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp. |
 | `AppGuardContainerId` | sträng | Identifierare för den virtualiserade behållaren som används av Application Guard för att isolera webbläsaraktivitet |
 | `AdditionalFields` | sträng | Ytterligare information om entiteten eller händelsen |

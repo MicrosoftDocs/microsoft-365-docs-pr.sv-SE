@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 462ba35f584b45bbfeb0d8a3de3b118ba1c9e17c
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3481190a615cfa8914b3623f09d4079468bd431f
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932328"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712120"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Arbeta med avancerade frågeresultat för sökning
 
@@ -42,7 +42,7 @@ Du kan skapa [](advanced-hunting-overview.md) avancerade sökfrågor för att re
 - Visa resultat som en tabell eller ett diagram
 - Exportera tabeller och diagram
 - Öka detaljgranskningen för detaljerad entitetsinformation
-- Justera frågorna direkt efter resultatet eller använd filter
+- Justera frågorna direkt från resultatet eller använd filter
 
 ## <a name="view-query-results-as-a-table-or-chart"></a>Visa frågeresultat som en tabell eller ett diagram
 Som standard visar avancerad sökning frågeresultat som tabelldata. Du kan också visa samma data som ett diagram. Avancerad sökning har stöd för följande vyer:
@@ -90,12 +90,12 @@ De här resultaten visualiseras bäst med hjälp av ett staplat diagram:
  *OS och allvarlighetsgrad visad som ett staplat diagram*
 
 #### <a name="phishing-emails-across-top-ten-sender-domains"></a>Nätfiskemeddelanden i de tio översta avsändardomänerna
-Om du hanterar en lista med värden som inte är ändliga kan du använda operatorn för att visa endast de värden som `Top` innehåller de flesta förekomster. Om du till exempel vill ha de tio vanligaste avsändardomänerna med flest nätfiskemeddelanden använder du frågan nedan:
+Om du hanterar en lista med värden som inte är ändliga kan du använda operatorn för att visa endast de värden som innehåller `Top` de flesta förekomster. Om du till exempel vill ha de tio vanligaste avsändardomänerna med flest nätfiskemeddelanden använder du frågan nedan:
 
 ```kusto
 EmailEvents
-| where PhishFilterVerdict == "Phish"
-| summarize Count = count() by SenderFromDomain
+| where ThreatTypes has "Phish" 
+| summarize Count = count() by SenderFromDomain 
 | top 10 by Count
 ```
 Använd cirkeldiagramvyn för att effektivt visa fördelningen över de översta domänerna:
@@ -104,7 +104,7 @@ Använd cirkeldiagramvyn för att effektivt visa fördelningen över de översta
  *fördelningen av nätfiskemeddelanden över de översta avsändardomänerna*
 
 #### <a name="file-activities-over-time"></a>Filaktiviteter över tid
-Med hjälp `summarize` av operatorn `bin()` med funktionen kan du söka efter händelser som innefattar en viss indikator över tid. Frågan nedan räknar händelser som innefattar filen med 30 minuters intervall för `invoice.doc` att visa insamlingar i aktiviteter relaterade till den filen:
+Med hjälp `summarize` av operatorn `bin()` med funktionen kan du söka efter händelser som innefattar en viss indikator över tid. Frågan nedan räknar händelser som innefattar filen med 30 minuters intervall `invoice.doc` för att visa insamlingar i aktiviteter relaterade till den filen:
 
 ```kusto
 AppFileEvents
@@ -114,7 +114,7 @@ AppFileEvents
 ```
 I linjediagrammet nedan markeras tidsperioder tydligt med mer aktivitet som `invoice.doc` innefattar: 
 
-![Bild av avancerade sökresultat för sökning som visas som ett linjediagram som visar antalet ](../../media/advanced-hunting-line-chart.jpg)
+![Bild av avancerade sökresultat för sökfrågor som visas som ett linjediagram som visar antalet ](../../media/advanced-hunting-line-chart.jpg)
  *händelser som innefattar en fil över tid*
 
 
@@ -142,7 +142,7 @@ Högerklicka på ett värde i resultatuppsättningen för att snabbt förbättra
 - Exkludera det valda värdet från frågan ( `!=` )
 - Få mer avancerade operatorer för att lägga till värdet i frågan, till exempel `contains` `starts with` och `ends with` 
 
-![Bild av avancerad uppsättning med resultat för sökning](../../media/advanced-hunting-results-filter.png)
+![Bild på avancerad uppsättning med sökresultat](../../media/advanced-hunting-results-filter.png)
 
 ## <a name="filter-the-query-results"></a>Filtrera frågeresultatet
 Filtren som visas till höger ger en sammanfattning av resultatuppsättningen. Varje kolumn har ett eget avsnitt med distinkta värden för kolumnen och antalet förekomster.

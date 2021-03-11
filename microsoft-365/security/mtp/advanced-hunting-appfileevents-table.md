@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8406d1f9e3d56555b1699d191933c6f9735c9574
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: 9eb2f195959409ad25b9a401a44425cc4af7f97e
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145493"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712504"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -35,10 +35,11 @@ ms.locfileid: "50145493"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Tabellen `AppFileEvents` i det avancerade [sökschemat](advanced-hunting-overview.md) innehåller information om filrelaterade aktiviteter i molnappar och tjänster som övervakas av Microsoft Cloud App Security. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+Tabellen `AppFileEvents` i det avancerade [utbildningsschemat](advanced-hunting-overview.md) innehåller information om filrelaterade aktiviteter i molnappar och tjänster som övervakas av Microsoft Cloud App Security. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
->[!TIP]
-> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` [inbyggda schemareferensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) som finns i säkerhetscentret.
+>[!WARNING]
+>Den här tabellen kommer att dras tillbaka snart. Den 7 mars 2021 är tabellen `AppFileEvents` inte längre loggningsposter. Användare som vill söka igenom filrelaterade aktiviteter i molntjänster på och efter dessa datum bör använda [tabellen CloudAppEvents](advanced-hunting-cloudappevents-table.md) i stället. <br><br>Se till att söka efter frågor och anpassade identifieringsregler som fortfarande använder `AppFileEvents` tabellen och redigera dem för att använda `CloudAppEvents` tabellen. Mer information om hur du konverterar påverkade frågor finns i Sök i molnappaktiviteter med Avancerad sökning i [Microsoft 365 Defender.](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)
+
 
 Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 
@@ -53,7 +54,7 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `PreviousFolderPath` | sträng | Originalmapp som innehåller filen innan den inspelade åtgärden tillämpades |
 | `Protocol` | sträng | Nätverksprotokoll som används |
 | `AccountName` | sträng | Användarnamn för kontot |
-| `AccountDomain` | sträng | Domän för kontot |
+| `AccountDomain` | sträng | Domänen för kontot |
 | `AccountSid` | sträng | Säkerhetsidentifierare (SID) för kontot |
 | `AccountUpn` | sträng | Kontots huvudnamn (UPN) |
 | `AccountObjectId` | sträng | Unikt ID för kontot i Azure AD |
@@ -70,6 +71,10 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `Isp` | sträng | Internet tjänstprovider (ISP) som är kopplad till slutpunktens IP-adress |
 | `ReportId` | long | Unikt ID för händelsen |
 | `AdditionalFields` | sträng | Ytterligare information om entiteten eller händelsen |
+
+>[!TIP]
+> Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` inbyggda schemareferensen som finns i säkerhetscentret.
+
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

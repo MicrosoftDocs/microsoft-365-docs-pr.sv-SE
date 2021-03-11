@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 021a8210bbe5886021e980b33ade0b9e2ded7b5b
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: a8ba1f94bc704a5fe99d54b77aa6570c5e43d3f7
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928459"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712492"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -35,11 +35,13 @@ ms.locfileid: "49928459"
 **Gäller för:**
 - Microsoft 365 Defender
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Tabellen i det avancerade sökschemat, som för närvarande finns i förhandsversion, innehåller information om aktiviteter i olika molnappar och -tjänster, särskilt `CloudAppEvents` Microsoft Teams och Exchange Online. [](advanced-hunting-overview.md) Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
-Den här tabellen utökas med fler aktiviteter som övervakas av Microsoft Cloud App Security. Så småningom kommer den här tabellen att innehålla filaktivitet som för närvarande lagras i [tabellen AppFileEvents.](advanced-hunting-appfileevents-table.md) Microsoft ger ytterligare vägledning när mer information flyttas till den här tabellen.
+Tabellen i det avancerade utbildningsschemat innehåller information om aktiviteter i olika molnappar och tjänster som omfattas av Microsoft Cloud App Security, särskilt `CloudAppEvents` Dropbox, Exchange Online, [](advanced-hunting-overview.md) OneDrive, Microsoft Teams och SharePoint. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+
+>[!IMPORTANT]
+>Den här tabellen innehåller information som tidigare var tillgänglig i `AppFileEvents` tabellen. Från och med den 7 mars 2021 bör användare som vill gå igenom filrelaterade aktiviteter i molntjänster på och efter detta datum använda `CloudAppEvents` tabellen i stället. <br><br>Se till att söka efter frågor och anpassade identifieringsregler som fortfarande använder `AppFileEvents` tabellen och redigera dem för att använda `CloudAppEvents` tabellen. Mer information om hur du konverterar påverkade frågor finns i Sök i molnappaktiviteter med Avancerad sökning i [Microsoft 365 Defender.](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)
+
 
 Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 
@@ -56,7 +58,7 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `OSPlatform` | sträng | Operativsystemets plattform som körs på enheten. Den här kolumnen anger specifika operativsystem, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7. |
 | `IPAddress` | sträng | IP-adress som tilldelats slutpunkten och som används under relaterad nätverkskommunikation |
 | `IsAnonymousProxy` | sträng | Anger om IP-adressen tillhör en känd anonym proxy |
-| `CountryCode` | sträng | Kod med två bokstäver som anger landet där klient-IP-adressen är geolokal |
+| `CountryCode` | sträng | Kod med två bokstäver som anger landet där klient-IP-adressen är geobesatt |
 | `City` | sträng | Ort där klient-IP-adressen är geolokal |
 | `Isp` | sträng | Internet tjänstprovider (ISP) som är kopplat till IP-adressen |
 | `UserAgent` | sträng | Information om användaragenter från webbläsaren eller ett annat klientprogram |
@@ -64,10 +66,11 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 | `ActivityObjects` | sträng | Lista över objekt, till exempel filer eller mappar, som var inblandade i den inspelade aktiviteten |
 | `ObjectName` | sträng | Namnet på det objekt som den inspelade åtgärden tillämpats på |
 | `ObjectType` | sträng | Typ av objekt, till exempel en fil eller en mapp, som den inspelade åtgärden tillämpats på |
-| `ObjectId` | sträng | Unikt ID för det objekt som den inspelade åtgärden tillämpats på |
+| `ObjectId` | sträng | Unikt ID för det objekt som den inspelade åtgärden använts på |
 | `ReportId` | sträng | Unikt ID för händelsen |
 | `RawEventData` | sträng | Obearbetad händelseinformation från källprogrammet eller källtjänsten i JSON-format |
 | `AdditionalFields` | sträng | Ytterligare information om entiteten eller händelsen |
+
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
