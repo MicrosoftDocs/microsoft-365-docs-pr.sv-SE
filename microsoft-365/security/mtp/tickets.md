@@ -1,5 +1,5 @@
 ---
-title: Integrate ServiceNow tickets into the Microsoft 365 security center and compliance center
+title: Integrera ServiceNow-biljetter i Säkerhetscenter och efterlevnadscenter för Microsoft 365
 description: Lär dig hur du skapar och spårar biljetter i ServiceNow från Säkerhets- och efterlevnadscenter för Microsoft 365.
 keywords: security, Microsoft 365, M365, compliance, compliance center, security center, ServiceNow, tickets, tasks, SNOW, connection
 ms.prod: m365-security
@@ -20,21 +20,19 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 4e647c2e526bb5cf99b1f40c07fc542315ebcd01
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 74d406e46e223a065e0931c081cf1a039fc2a8b9
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925488"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741549"
 ---
-# <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Integrate ServiceNow tickets into the Microsoft 365 security center and compliance center
+# <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Integrera ServiceNow-biljetter i Säkerhetscenter och efterlevnadscenter för Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 >[!CAUTION]
->**Förhandsgranskningsperioden för ServiceNow-kopplingen har avslutats**<br>
->Den här funktionen är inte längre tillgänglig. Tack för din feedback och fortsatt stöd medan vi fastställer nästa steg.
+>**Förhandsgranskningsperioden för ServiceNow-anslutningen har avslutats**<br>
+>Den här funktionen är inte längre tillgänglig. Tack för din feedback och fortsatt support medan vi fastställer nästa steg.
 
-ServiceNow är en populär molnbaserad datorplattform som hjälper företag att hantera digitala arbetsflöden för företagsåtgärder. Deras nu-plattform har IT-arbetsflöden, arbetsflöden för anställda och kundarbetsflöden. [Läs mer om ServiceNow](https://www.servicenow.com/)
-
-Microsoft samarbetar med ServiceNow för att göra det enklare för IT-administratörer att hantera sina biljetter och uppgifter på båda plattformarna. [Microsoft 365 säkerhetscenter](overview-security-center.md) och [Microsoft 365 efterlevnadscenter](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) förbättras med möjlighet att skapa och spåra biljetter inbyggt i ServiceNow.
+ServiceNow är en populär molnbaserad plattform som hjälper företag att hantera digitala arbetsflöden för företagsåtgärder. Deras Nu-plattform har IT-arbetsflöden, arbetsflöden för anställda och kundarbetsflöden.

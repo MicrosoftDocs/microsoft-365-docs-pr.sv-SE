@@ -16,72 +16,74 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
-description: Lär dig hur du tillåter att medlemmar skickar e-post som en Microsoft 365-grupp eller skickar e-post åt en Microsoft 365-grupp.
-ms.openlocfilehash: 6dff559eceec1b719f31d577d7fff8f604636a47
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+description: Lär dig hur du tillåter att gruppmedlemmar skickar e-post som en Microsoft 365-grupp eller skickar e-post åt en Microsoft 365-grupp.
+ms.openlocfilehash: 44a0a7a690c8faa9fe00732e8154f36aa5a6fe6f
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663589"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727085"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Tillåta medlemmar att skicka som eller skicka för en grupp
 
-En medlem i en Microsoft 365-grupp som har behörighet att **Skicka som** eller **Skicka för ombud** kan skicka e-post som grupp eller åt gruppen. I den här artikeln förklaras hur en global Server eller Exchange-administratör kan ange behörigheter.
+En medlem i en Microsoft 365-grupp  som har beviljats behörigheten Skicka som eller Skicka för kan skicka e-post som gruppen eller åt hela gruppen.  (Gäster i gruppen kan inte beviljas de här behörigheterna.)
+
+I den här artikeln förklaras hur en global administratör eller Exchange-administratör kan ställa in de här behörigheterna.
   
-Om till exempel Megan Bowen är en del av Microsoft 365-gruppen **utbildning** och har **Send as** -behörighet för gruppen, om hon skickar ett e-postmeddelande som grupp, ser det ut som **utbildnings** gruppen skickade e-postmeddelandet. 
+Om Till exempel Bow Bowen  ingår i Microsoft 365-gruppen Utbildning och har behörigheten Skicka som för gruppen,  och hon skickar ett e-postmeddelande som gruppen, ser det ut som att gruppen Utbildning har skickat e-postmeddelandet.  
   
-Med behörigheten **Skicka åt** kan en användare skicka e-post åt en Microsoft 365-grupp. Till exempel, om Alex Wilber är en del av Microsoft 365-gruppen för **marknadsföring** och har behörigheten **Skicka för** användare och skickar ett e-postmeddelande som grupp, ser e-postmeddelandet ut som om det har skickats av **Alex Wilber för marknadsförings räkning**.
+Med **behörigheten Skicka för** kan användare skicka e-post åt en Microsoft 365-grupp. Om till exempel Alex Wilber ingår i **Microsoft** 365-gruppen Marknadsföring och har behörigheten Skicka för och skickar ett e-postmeddelande som gruppen, ser e-postmeddelandet ut som om det skickades av **Alex Wilber** på uppdrag av Marknadsföring. 
 
 > [!IMPORTANT]
-> Du kan konfigurera **Skicka som** eller **Skicka** för en given användare, men inte båda. Om du konfigurerar båda är det standard att **Skicka som**.
+> Du kan konfigurera **Skicka som** eller Skicka **för en** viss användare, men inte båda. Om du konfigurerar båda inställningarna används Skicka **som som som standard.**
 
 > [!TIP]
-> Mer information om hur du använder Outlook och Outlook på webben för att skicka e-post från en grupp finns i [skicka e-post från eller på uppdrag av en Microsoft 365-grupp](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) .
+> Mer information om hur du använder Outlook och Outlook på webben för att skicka e-post från en grupp finns i Skicka e-post från eller åt en [Microsoft 365-grupp.](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)
     
-## <a name="allow-members-to-send-email-as-a-group"></a>Tillåt att medlemmar skickar e-post som en grupp
+## <a name="allow-members-to-send-email-as-a-group"></a>Tillåt medlemmar att skicka e-post som en grupp
 
-I det här avsnittet förklaras hur du tillåter att användare skickar e-post som en grupp i [administrations centret för Exchange](https://go.microsoft.com/fwlink/p/?linkid=2059104) (UK) i Exchange Online.
+I det här avsnittet förklaras hur du tillåter att användare skickar e-post som en grupp i [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=2059104) för Exchange (EAC) i Exchange Online.
   
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange Admin Center</a>går du till gruppen **mottagare** \> .
+1. Gå till Mottagare grupper i **administrationscentret för** <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange.</a> \> 
     
-2. Välj **Redigera** ![ ikonen Redigera grupp ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) i gruppen som du vill tillåta användare att skicka som.   
+2. Välj **Redigera** ![ ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) grupp-ikonen för den grupp som du vill tillåta användare att skicka som.   
     
 3. Välj **gruppdelegering**.
     
-4. I avsnittet **Skicka som** väljer du **+** tecknet för att lägga till de användare som du vill skicka som grupp. 
+4. I avsnittet **Skicka som** väljer du tecknet för att lägga till de användare som du vill skicka **+** som grupp. 
     
-    ![Skärm bild av dialog rutan Skicka som](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![Skärmbild av dialogrutan Skicka som](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. Sök efter eller välj en användare i listan. Välj **OK** och **Spara**.
     
-    ![Skriv för att söka eller välja en användare i listan](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![Skriv om du vill söka efter eller välja en användare i listan](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
   
-## <a name="allow-members-to-send-email-on-behalf-of-a-group"></a>Tillåt att medlemmar skickar e-post åt en grupp
+## <a name="allow-members-to-send-email-on-behalf-of-a-group"></a>Tillåta medlemmar att skicka e-post för en grupp
 
-I det här avsnittet förklaras hur du tillåter att användare skickar e-post för en grupp i administrations centret för Exchange (UK) i Exchange Online.
+I det här avsnittet förklaras hur du tillåter att användare skickar e-post för en grupp i administrationscentret för Exchange (EAC) i Exchange Online.
   
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange Admin Center</a>går du till gruppen **mottagare** \> .
+1. Gå till Mottagare grupper i **administrationscentret för** <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange.</a> \> 
     
-2. Välj **Redigera** ![ ikonen Redigera grupp ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) i gruppen som du vill tillåta användare att skicka som. 
+2. Välj **Redigera** ![ ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) grupp-ikonen för den grupp som du vill tillåta användare att skicka som. 
     
 3. Välj **gruppdelegering**.
     
-4. I avsnittet Skicka för väljer du **+** tecknet för att lägga till de användare som du vill skicka som grupp. 
+4. I avsnittet Skicka för väljer du tecknet **+** för att lägga till de användare som du vill skicka som grupp. 
     
-    ![Skärm bild av dialog rutan Skicka för](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![Skärmbild av dialogrutan Skicka för](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. Sök efter eller välj en användare i listan. Välj **OK** och **Spara**.
     
-    ![Skriv för att söka eller välja en användare i listan](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![Skriv om du vill söka efter eller välja en användare i listan](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Planerings steg-för-steg-samarbete för samarbets styrning](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Planering av samarbetsstyrning steg för steg](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[Skapa en plan för hantering av samarbete](collaboration-governance-first.md)
+[Skapa din plan för samarbetesstyrning](collaboration-governance-first.md)
 
-[Lär dig mer om Microsoft 365-grupper](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Läs mer om Microsoft 365-grupper](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [Add-RecipientPermission](https://go.microsoft.com/fwlink/p/?LinkId=723960)
 
-[Set-Unifiedgrouphttps](https://go.microsoft.com/fwlink/p/?LinkId=616189)
+[Set-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616189)
