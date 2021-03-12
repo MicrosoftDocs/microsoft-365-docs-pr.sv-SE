@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Beskriver viktiga skillnader mellan modeller för dokumenttolkning och modeller för formulärbearbetning
-ms.openlocfilehash: 555dfa7d76335a3b943e860e5f41ed64c9d3e874
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: a50941ec117480be586ba828e7b49c4a88a310ab
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50596986"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712300"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Skillnader mellan modeller för dokumenttolkning och modeller för formulärbearbetning 
 
@@ -72,17 +72,17 @@ Använd följande tabell för att förstå när du ska använda formulärbearbet
 
 | Funktion | Formulärbearbetning | Dokumenttolkning |
 | ------- | ------- | ------- |
-| Modelltyp – när du ska använda den ena eller den andra | Används för halvstrukturerade filformat, till exempel Office-dokument där det finns skillnader i layouten men fortfarande har liknande information som ska extraheras. | Används för ostrukturerade filformat, till exempel PDF-filer för formulärinnehåll som fakturor eller inköpsorder där layout och formatering är liknande. |
-| Modellgenerering | Modell skapad i AI builder med smidig åtkomst från SharePoints dokumentbibliotek.| Modell skapad i det inbyggda gränssnittet i SharePoint Innehållscenter.|
-| Klassificeringstyp| Inställbar klassificerare där maskininlärning används för att ge ledtrådar om vilken data som ska extraheras.| Klassificerare som kan tränas med valfria extraktorer med maskininlärning för att tilldela dokumentplats angående vilken data som ska extraheras.|
-| Platser | Begränsad till ett enda dokumentbibliotek såvida du inte använder Power Platform för att hämta från CDS.| Kan tillämpas på flera bibliotek.|
+| Modelltyp – när du ska använda vilken | Används för halvstrukturerade filformat, till exempel PDF-filer för formulärinnehåll som fakturor och inköpsorder där layout och formatering är liknande.  | Används för halvstrukturerade filformat, till exempel Office-dokument där det finns skillnader i layouten men fortfarande är liknande information som ska extraheras. |
+| Modellgenerering | Modell skapad i AI builder med smidig åtkomst från SharePoints dokumentbibliotek.| Modell skapad i SharePoint på nya webbplatsen för innehållscentret. |
+| Klassificeringstyp| Inställbar klassificerare används för att ge ledtrådar till systemet om vilken data som ska extraheras.| Klassificerare som kan tränas med valfria extraktorer med maskininlärning för att tilldela dokumentplats angående vilken data som ska extraheras.|
+| Platser | Tränad för ett enkelt dokumentbibliotek.| Kan tillämpas på flera bibliotek.|
 | Filtyper som stöds| Träna på PDF-, JPG- och PNG-format, totalt 50 MB och 500 sidor.| Träna på 5-10 PDF-, Office- eller e-postfiler, inklusive negativa exempel.<br>Office-filer trunkeras till 64 000 tecken. OCR-skannade filer är begränsade till 20 sidor.|
-| Integrera med hanterade metadata | Nej | Ja, genom inställningen på dokumentbibliotekets kolumner före du tränar modellen.|
-| Funktionen för efterlevnad integreras när Microsoft Information Protection är aktiverad. | Ställ in kvarhållningsetiketter.<br>Ställ in känslighetsetiketter är på väg. | Ställ in kvarhållningsetiketter.<br>Ställ in känslighetsetiketter är på väg. |
+| Integrera med hanterade metadata | Nej | Ja, genom att träna entitetsextraktorn till att referera till ett konfigurerat hanterat metadatafält.|
+| Funktionen för efterlevnad integreras när Microsoft Information Protection är aktiverad. | Ställ in publicerade kvarhållningsetiketter.<br>Ställ in känslighetsetiketter är på väg. | Ställ in publicerade kvarhållningsetiketter.<br>Ställ in känslighetsetiketter är på väg. |
 | Regioner som stöds| Formulärbearbetning är beroende av Power Platform. Information om global tillgänglighet för Power Platform och AI Builder se [ tillgängligheten för Power Platform](https://dynamics.microsoft.com/geographic-availability/). | Tillgängligt i alla regioner.|
-| Transaktionskostnad | Använder AI Builder-krediter.<br>Krediter kan köpas i omgångar om 1 miljon.<br>1 miljon krediter ingår när över 300 SharePoint Syntex-licenser köps.<br>1 miljon krediter ger möjlighet till bearbetning av 2 000 filsidor.| Uppgift saknas |
-| Kapacitet | Etableras mot standardmiljön för vanliga datatjänster.| Inga kapacitetsbegränsningar.|
-| Språk som stöds| Engelska <br>Kommer senare under 2021: spanska, tyska, franska, italienska| Modeller fungerar på alla språk med latinska alfabetet. Förutom Engelska: tyska, svenska, franska, spanska, italienska och portugisiska.|
+| Transaktionskostnad | Använder AI Builder-krediter.<br>Krediter kan köpas i omgångar om 1 miljon.<br>1 miljon krediter ingår när över 300 SharePoint Syntex-licenser köps.<br>1 miljon krediter ger möjlighet till bearbetning av 2 000 filsidor.<br>| Uppgift saknas |
+| Kapacitet | Använder standardmiljön för Power Platform (Anpassade miljöer med Dataverse-databas stöds) | Har inga kapacitetsbegränsningar.|
+| Språk som stöds| Engelska <br>Kommer senare under 2021: Språk med latinska alfabet | Modellerna fungerar på alla språk med latinska alfabetet. Förutom Engelska: tyska, svenska, franska, spanska, italienska och portugisiska.|
 
 ## <a name="see-also"></a>Se även
 [Utbildning: Förbättra affärsprestanda med AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
