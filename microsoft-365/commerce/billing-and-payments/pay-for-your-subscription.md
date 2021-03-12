@@ -1,5 +1,5 @@
 ---
-title: Betala för prenumerationen
+title: Betala för din prenumeration
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -8,27 +8,27 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 search.appverid:
 - MET150
 ms.assetid: 734f4aab-df2d-4e9b-8cb1-691910bde216
-description: Läs om vilka betalningsalternativ som finns tillgängliga för att betala för din Microsoft 365 för företag-prenumeration.
+description: Läs om vilka betalningsalternativ som finns tillgängliga för att betala för Microsoft 365 för företag-prenumerationen.
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 7b2b433d94915d16cd0f5a3611f8fc17d6254e97
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
-ms.translationtype: MT
+ms.openlocfilehash: 21aad23b849db76acb1bcc98bb37ff0d8b6fc1ce
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142091"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741451"
 ---
-# <a name="how-to-pay-for-your-subscription"></a>Så här betalar du för prenumerationen
+# <a name="how-to-pay-for-your-subscription"></a>Hur du betalar för din prenumeration
 
 ::: moniker range="o365-21vianet"
 
@@ -37,60 +37,60 @@ ms.locfileid: "50142091"
 
 ::: moniker-end
 
-Du kan använda ett kreditkort eller bankkort eller bankkonto för att betala för prenumerationen. I vissa fall kan du betala med faktura via check eller elektronisk betalningsöverföring (EFT). Om du har en faktureringsprofil är alternativen något annorlunda. Mer information finns i Betala [för din prenumeration med en faktureringsprofil.](pay-for-subscription-billing-profile.md) Om du är osäker på om ditt konto har en faktureringsprofil kan du gå till [Förstå faktureringsprofiler.](manage-billing-profiles.md)
+Du kan använda ett kredit- eller betalkort eller ett bankkonto för att betala för din prenumeration. I vissa fall kan du betala med faktura, via check eller elektronisk betalningsöverföring (EFT). Om du har en faktureringsprofil är alternativen lite annorlunda. Mer information finns i [Så här betalar du för din prenumeration med en faktureringsprofil](pay-for-subscription-billing-profile.md). Om du är osäker på om kontot har en faktureringsprofil kan du gå till [Förstå faktureringsprofiler](manage-billing-profiles.md).
 
-**Vill du bara veta var du ska skicka fakturabetalningen?** Om du betalar fakturan med check eller med elektronisk betalningsöverföring (EFT) – se Var skickar jag min [check- eller EFT-betalning?](#where-do-i-send-my-check-or-eft-payment)
+**Vill du bara få reda på vart fakturabetalningen ska skickas?** Om du betalar din faktura med check eller elektronisk betalningsöverföring (EFT) kan du läsa [Vart skickar jag min check- eller EFT-betalning?](#where-do-i-send-my-check-or-eft-payment)
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
 - Du måste vara global administratör eller faktureringsadministratörer för att kunna utföra åtgärder som beskrivs i den här artikeln. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
-- Den betalningsmetod du väljer i kassan är den betalningsmetod vi använder för alla framtida faktureringsperioder. Du kan ändra den när som helst.
+- Den betalningsmetod du valde i kassan är den betalningsmetod som vi använder för alla kommande faktureringsperioder. Du kan ändra den när som helst.
 
-## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>Betala med kreditkort, bankkort eller bankkonto
+## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>Betala med kredit- eller betalkort eller med bankkonto
 
 > [!IMPORTANT]
 > Betalning med bankkonto är inte tillgängligt i vissa länder eller regioner.
 
-Du kan betala för prenumerationen med kreditkort, bankkort eller bankkonto. När du betalar med något av dessa betalningsmetoder fortsätter vi debitera den betalningsmetoden tills prenumerationen går ut eller avbryts. Du kan [hantera betalningsmetoder](manage-payment-methods.md) när du behöver. Du kan välja att [få en kopia av faktureringsutdraget via e-post](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email).
+Du kan betala för din prenumeration med kreditkort, bankkort eller bankkonto. När du betalar med något av dessa betalningsmetoder fortsätter vi att debitera den betalningsmetoden tills prenumerationen upphör eller avbryts. Du kan [hantera betalningsmetoder](manage-payment-methods.md) när du behöver. Du kan även välja att [få en kopia av ditt faktureringsutdrag via e-post](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email).
 
 ## <a name="paying-by-invoice"></a>Betala med faktura
 
-I vissa fall kan du betala för prenumerationen med faktura med en check eller EFT. För att vara berättigad till betalning med faktura måste du:
+I vissa fall kan du betala för prenumerationen med faktura med check eller EFT. För att kunna betala med faktura måste du:
 
-- Bli en etablerade kund
-- Har en prenumerationskostnad som överskrider ett visst belopp (beloppet varierar beroende på tjänstplats)
-- Godkänd kreditkontroll
+- Vara en etablerad kund
+- Ha en prenumerationskostnad som överskrider ett visst belopp (beloppet varierar beroende på tjänstplats)
+- Bli godkänd i en kreditkontroll
 
-Om det krävs en kreditkontroll får du ett meddelande när du köper prenumerationen. Om du godkänner att bli kontaktad får du ett e-postmeddelande med mer information om hur du ansöka om kreditgodkännande. Kreditkontroller utförs vanligtvis inom två arbetsdagar.
+Om en kreditkontroll krävs meddelas du när du köper prenumerationen. Om du godkänner att bli kontaktad får du ett e-postmeddelande som innehåller mer information om hur du ansöker om kreditgodkännande. Kreditkontroller utförs vanligtvis inom två arbetsdagar.
 
 > [!NOTE]
-> Kunder som bor i Brasilien kan betala för en prenumeration med boleto bancario. Om du har valt det här alternativet skickas betalningsfakturan till den e-postadress som tillhandahölls vid köpet av prenumerationen inom 10 arbetsdagar efter orderdatumet. Förfallodatumet infaller 30 dagar efter orderdatumet. Om du inte får din Boleto via e-post kontrollerar du i skräppostmappen eller kontaktar supporten.
+> Kunder som bor i Brasilien kan betala för en prenumeration med Boleto Bancario. Om du har valt det här alternativet skickas fakturan till e-postadressen som angavs vid köpet av prenumerationen inom 10 arbetsdagar efter orderdatumet. Förfallodatumet är 30 dagar efter orderdatumet. Om du inte får din Boleto via e-post tittar du i skräppostmappen eller kontaktar supporten.
 >
-> Om du föredrar det kan du betala med elektronisk överföring mellan konton. Agenturen och kontonumret finns längst ned på fakturan. Du måste ange fakturanumret i fältet Överföringsidentifiering.
+> Om du föredrar det kan du betala med elektronisk överföring mellan konton. Agenturen och kontonumret står längst ned på fakturan. Du måste ange fakturanumret i fältet Överföringsidentifiering.
 
-Om du betalar med faktura för prenumerationen får du ett e-postmeddelande när faktureringsutdraget är klart att visa. Det här e-postmeddelandet innehåller inte en kopia av ditt faktureringsutdrag. Du kan däremot välja att få [en kopia av faktureringsutdraget via e-post.](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email) Faktureringsutdraget innehåller information om alternativen för att göra en betalning och vart du skickar den. Om du anger ett inköpsordernummer när du köper en prenumeration visas numret på faktureringsutdraget. Information om hur du visar faktureringsutdrag finns i [Visa din faktura](view-your-bill-or-invoice.md).
+Om du betalar med faktura för din prenumeration får du ett e-postmeddelande när du kan se faktureringsutdraget. Det här e-postmeddelande innehåller inte en kopia av ditt faktureringsutdrag. Men du kan välja att [få en kopia av ditt faktureringsutdrag via e-post](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). På ditt faktureringsutdrag finns information om olika betalningsalternativ och vart du ska skicka det. Om du anger ett inköpsordernummer när du köper en prenumeration visas numret på faktureringsutdraget. Information om hur du visar faktureringsutdrag finns i [Visa din faktura](view-your-bill-or-invoice.md).
 
 ## <a name="what-if-i-have-an-outstanding-balance"></a>Vad händer om jag har ett utestående saldo?
 
-Om vi inte kan debitera den betalningsmetod som är sparad skickar vi ett e-postmeddelande där det står att det finns ett problem. E-postmeddelandet innehåller kort information om problemet och innehåller en länk där du kan kontrollera det utestående saldot. Vi fortsätter att försöka med transaktionen med några dagars varannan dag i 30 dagar, under vilken tid prenumerationen är in respitperiod. Varje gång en transaktion misslyckas får du en e-postavisering om felet.
+Om vi inte kan debitera med den betalningsmetod som är sparad skickar vi ett e-postmeddelande där det står att det uppstått ett problem. E-postmeddelandet ger en kort beskrivning av vad problemet är och innehåller en länk där du kan kontrollera det utestående saldot. Vi fortsätter att försöka göra transaktionen med några dagars mellanrum i 30 dagar, under vilken tid prenumerationen befinner sig i en respitperiod. Varje gång en transaktion misslyckas får du ett e-postmeddelande om misslyckandet.
 
-Om du personligen har lagt till betalningsmetoden som har ett förfallet belopp kan du använda Betala **med saldo** för att göra en betalning. Den betalningsmetod som du använder för att betala det försenade beloppet blir den nya betalningsmetoden för alla prenumerationer som använde den avvisade betalningsmetoden.
+Om du personligen har lagt till den betalningsmetod som har ett förfallet belopp kan du använda **Reglera saldo** för att göra en betalning. Den betalningsmetod du använder för att betala det försenade beloppet blir den nya betalningsmetoden för alla prenumerationer som har använt den avvisade betalningsmetoden.
 
-1. I administrationscentret går du till **sidan**  >  **Faktureringsfakturor & betalningar** och väljer sedan fliken <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Betalningsmetoder.</a>
-1. Ett varningsmeddelande visas om vilken betalningsmetod som nekades. Välj **Saldo för avgöra avgörande.**
-1. Välj en annan betalningsmetod i det högra fönstret eller välj Lägg **till en ny betalningsmetod.**
-1. När du har uppdaterat informationen om betalningsmetoden väljer du **Spara.**
+1. I administrationscentret går du till sidan **Fakturering** > **Fakturor och betalningar** och välj sedan fliken<a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Betalningsmetoder</a>.
+1. I ett varningsmeddelande visar vilken betalningsmetod som nekats. Välj **Reglera saldo**.
+1. Välj ett annat betalningssätt i fönstret till höger eller välj **Lägg till en ny betalningsmetod**.
+1. När du har uppdaterat informationen för betalningsmetoden väljer du **Spara**.
 
 Om du inte har lagt till den betalningsmetod som används för att betala för prenumerationen måste du ersätta betalningsmetoden med en som du tidigare lagt till eller med en ny.
 
-## <a name="where-do-i-send-my-check-or-eft-payment"></a>Var skickar jag min check- eller EFT-betalning?
+## <a name="where-do-i-send-my-check-or-eft-payment"></a>Vart skickar jag min check- eller EFT-betalning?
 
-[Kontrollera din faktura](view-your-bill-or-invoice.md) för betalningsinstruktioner. Du kan också använda listrutan nedan för att hitta betalningsinstruktioner för ditt land eller din region. Om du är osäker på hur mycket du är skyldig kan  du kontrollera din faktura och faktureringshistorik online på fliken Fakturor på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fakturor & betalningar.</a>
+[Kontrollera din faktura](view-your-bill-or-invoice.md) för betalningsinstruktioner. Du kan också använda listrutan nedan för att hitta betalningsinstruktioner för ditt land eller region. Om du är osäker på hur mycket du är skyldig kan du kontrollera din faktura och faktureringshistorik online på fliken **Fakturor** på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fakturor och betalningar</a>.
 
 > [!NOTE]
-> Betalning med check är endast tillgängligt i ett fåtal länder.
+> Betalning med check är endast tillgängligt i ett fåtal länder/regioner.
 
- **Välj land eller region för fakturering i listrutan nedan.**
+ **Välj land eller region för fakturering i listmenyn nedan.**
 
 > [!div class="op_single_selector"]
 > - **Välj land eller region**
@@ -248,18 +248,18 @@ Om du inte har lagt till den betalningsmetod som används för att betala för p
 
 ## <a name="can-i-pay-my-invoice-online"></a>Kan jag betala fakturan online?
 
-Du kan inte betala fakturan online. Betalning måste göras via check eller EFT.
+Du kan inte betala fakturan online. Du måste betala via check eller EFT.
 
-## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>Kan jag ändra från min nuvarande betalningsmetod till att betala med faktura?
+## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>Kan jag byta från min aktuella betalningsmetod till att betala via faktura?
 
-Du kan bara ändra till betalning med faktura om dina prenumerationskostnader är högre än ett visst belopp. Du måste först betala all utestående saldo för kreditkort eller bankkort eller bankkonto innan du kan ändra till att betala med faktura. Mer information om hur du ändrar betalningsmetoder [finns i Ändra en betalningsmetod för en enda prenumeration.](manage-payment-methods.md#change-a-payment-method-for-a-single-subscription)
+Du kan bara byta till betalning via faktura om dina prenumerationskostnader är högre än ett visst belopp. Du måste först betala all utestående saldo på kredit- eller betalkortet eller bankkontot innan du kan byta till att betala med faktura. Om du vill ändra betalningsmetoden för en enstaka prenumeration, se [Ändra betalningsmetod för en enstaka prenumeration](manage-payment-methods.md#change-a-payment-method-for-a-single-subscription).
 
-## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>Kan jag ändra från att betala med faktura till en annan betalningsmetod?
+## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>Kan jag byta från min aktuella betalningsmetod till en annan betalningsmetod?
 
-Du kan inte automatiskt byta från att betala med faktura till att betala med ett annat betalningssätt. I stället måste du [köpa en](../try-or-buy-microsoft-365.md#buy-a-different-subscription) annan prenumeration som betalas med [kreditkort,](../subscriptions/move-users-different-subscription.md)bankkort eller bankkonto, flytta alla användare till den nya prenumerationen och sedan avbryta den [gamla prenumerationen.](../subscriptions/cancel-your-subscription.md)
+Du kan inte automatiskt ändra från betalning via faktura till betalning med ett annat betalningssätt. I stället måste du [köpa en annan prenumeration](../try-or-buy-microsoft-365.md#buy-a-different-subscription) som betalas med kreditkort, bankkort eller bankkonto, [flytta alla användare till den nya prenumerationen](../subscriptions/move-users-different-subscription.md)och sedan [avbryta den gamla prenumerationen](../subscriptions/cancel-your-subscription.md).
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
 [Hantera betalningsmetoder](manage-payment-methods.md) (artikel)\
-[Visa din faktura](view-your-bill-or-invoice.md) (artikel)\
-[Förstå din faktura](understand-your-invoice2.md) (artikel)
+[Visa din räkning eller faktura](view-your-bill-or-invoice.md) (artikel)\
+[Förstå din räkning eller faktura](understand-your-invoice2.md) (artikel)
