@@ -53,6 +53,8 @@
               href: mtp/microsoft-365-security-center-mdo.md
             - name: Omdirigera Defender för Endpoint till Microsoft 365 Säkerhetscenter
               href: mtp/microsoft-365-security-mde-redirection.md
+            - name: Omdirigera Defender för Office 365 till Microsoft 365 Säkerhetscenter
+              href: mtp/microsoft-365-security-mdo-redirection.md
             - name: Förhandsgranskningsfunktioner
               href: mtp/preview.md
             - name: Felsöka problem
