@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
-description: Lär dig hur du anger registernycklar för att aktivera modern autentisering för enheter som har Microsoft Office 2013 installerat.
-ms.openlocfilehash: 34078291fa237b63c391a7e90ba06ea0085c37cb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: Lär dig ange registernycklar för att aktivera modern autentisering för enheter som har Microsoft Office 2013 installerat.
+ms.openlocfilehash: 2a4be82328d391db7808cb9197ce259275b567c6
+ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926564"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50758934"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Aktivera modern autentisering för Office 2013 på Windows-enheter
 
@@ -60,5 +60,6 @@ Du inaktiverar modern autentisering på en enhet genom att ange följande regist
 ## <a name="related-articles"></a>Relaterade artiklar
 [Logga in på Office 2013 med en andra metod för verifiering](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 
-  
+[Outlook uppmanar dig att ange lösenord och använder inte modern autentisering för att ansluta till Office 365](https://docs.microsoft.com/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled)
 
+  

@@ -13,46 +13,48 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan lära sig att identifiera specifika grupper av användare med användartaggar i Microsoft Defender för Office 365 abonnemang 2. Taggfiltrering är tillgängligt för aviseringar, rapporter och undersökningar i Microsoft Defender för Office 365 för att snabbt identifiera taggade användare.
+description: Administratörer kan lära sig att identifiera särskilda grupper av användare med användartaggar i Microsoft Defender för Office 365 abonnemang 2. Taggfiltrering är tillgängligt i aviseringar, rapporter och undersökningar i Microsoft Defender för Office 365 för att snabbt identifiera de taggade användarna.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e5ddffad6405f48a9af55b5123729eb256064a7
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 80bd360888be3aeea42da6f9b58a119a9752d382
+ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453651"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50758898"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Användartaggar i Microsoft Defender för Office 365
 
 > [!NOTE]
-> Funktionen med användartaggar är i förhandsversion, är inte tillgänglig för alla och kan komma att ändras. Mer information om versionsschemat finns i Microsoft [365-översikten.](https://www.microsoft.com/microsoft-365/roadmap)
+> Funktionen för användartaggar är inte tillgänglig för alla och kan komma att ändras. Mer information om lanseringsschemat finns i Översikt över [Microsoft 365.](https://www.microsoft.com/microsoft-365/roadmap)
 
-Användartaggar är identifierare för specifika användargrupper i [Microsoft Defender för Office 365.](office-365-atp.md) Det finns två typer av användartaggar:
+Användartaggar är identifierare för specifika grupper av användare [i Microsoft Defender för Office 365.](office-365-atp.md) Det finns två typer av användartaggar:
 
 - **Systemtaggar:** För närvarande [är Prioritet-konton](../../admin/setup/priority-accounts.md) den enda typen av systemtagg.
-- **Anpassade taggar:** Du skapar dessa användartaggar själv.
+- **Anpassade taggar:** Du skapar de här användartaggarna själv.
 
-Om din organisation har Defender för Office 365 Abonnemang 2 (ingår i din prenumeration eller som ett tillägg) kan du skapa anpassade användartaggar utöver att använda taggen för prioriterade konton.
+Om din organisation har Defender för Office 365 abonnemang 2 (ingår i prenumerationen eller som ett tillägg) kan du skapa anpassade användartaggar utöver att använda taggen för prioritetskonton.
 
 När du har tillämpat systemtaggar eller anpassade taggar för användare kan du använda de taggarna som filter i aviseringar, rapporter och undersökningar:
 
 - [Varningar i Säkerhets- & Efterlevnadscenter](alerts.md)
-- [Hotutforskaren och identifieringar i realtid](threat-explorer.md)
+- [Hotutforskaren och identifiering i realtid](threat-explorer.md)
 - [Statusrapport för hotskydd](view-email-security-reports.md#threat-protection-status-report)
 - [Kampanjvyer](campaigns.md)
-- För prioriterade konton kan du använda rapporten [E-postproblem för prioritetskonton](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) i administrationscentret för Exchange (EAC).
+- För prioritetskonton kan du använda rapporten [E-postproblem för prioritetskonton](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) i administrationscentret för Exchange (EAC).
 
 I den här artikeln förklaras hur du konfigurerar användartaggar & Säkerhets- och efterlevnadscenter. Det finns inga cmdlets i Säkerhets- & för att hantera användartaggar.
 
+Information om hur användartaggar är en del av strategin för att skydda användarkonton med hög effekt finns i Säkerhetsrekommendationer för [prioriterade konton i Microsoft 365.](security-recommendations-for-priority-accounts.md)
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Gå direkt till sidan **med användartaggar** genom att <https://protection.office.com/userTags> öppna.
+- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Gå direkt till sidan **Användartaggar** genom att öppna <https://protection.office.com/userTags> .
 
 - Du måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscentret innan du kan genomföra procedurerna i den här artikeln:
   - Om du vill skapa, ändra och ta bort användartaggar måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.**
-  - Om du vill lägga till och ta bort medlemmar från befintliga användartaggar måste du vara medlem i rollgrupperna Organisationshantering, Säkerhetsadministratör eller **Säkerhetsoperator**
-  - För skrivskyddade åtkomst till användartaggar måste du vara medlem i rollgrupperna **Global Reader** **eller** Säkerhetsläsare.
+  - Om du vill lägga till och ta bort medlemmar från befintliga användartaggar måste du vara medlem i rollgrupperna Organisationshantering, **Säkerhetsadministratör** eller **Säkerhetsoperator**
+  - För skrivskyddade åtkomst till användartaggar måste du vara medlem i rollgrupperna **Global Reader** eller **Säkerhetsläsare.**
 
   Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
@@ -61,63 +63,63 @@ I den här artikeln förklaras hur du konfigurerar användartaggar & Säkerhets-
   - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
   - Hantering av användartaggar styrs av **rollerna Taggläsare** **och Tagghanteraren.**
 
-- Du kan också hantera och övervaka prioriterade konton i administrationscentret för Microsoft 365. Instruktioner finns i Hantera [och övervaka prioriterade konton.](../../admin/setup/priority-accounts.md)
+- Du kan också hantera och övervaka konton med prioritet i administrationscentret för Microsoft 365. Anvisningar finns i Hantera [och övervaka prioritetskonton.](../../admin/setup/priority-accounts.md)
 
-## <a name="use-the-security-center-to-create-user-tags"></a>Använda Säkerhetscenter för att skapa användartaggar
+## <a name="use-the-security--compliance-center-to-create-user-tags"></a>Använda Säkerhets- & efterlevnadscenter för att skapa användartaggar
 
-1. Gå till Användartaggar för hantering **av** hot i \> **Säkerhetscenter.**
+1. Gå till Användartaggar för & skydd mot **hothantering** \> **i Säkerhets- och efterlevnadscenter.**
 
-2. Klicka på **Skapa tagg** på sidan Med **användartaggar som öppnas.**
+2. På sidan **Användartaggar** som öppnas klickar du på **Skapa tagg.**
 
-3. Guiden **Skapa tagg** öppnas i en ny flyg utfällning. Konfigurera följande **inställningar** på sidan Definiera tagg:
-   - **Namn:** Ange ett unikt, beskrivande namn för taggen. Det här är det värde som visas och används.
-   - **Beskrivning:** Ange en valfri beskrivning för taggen.
+3. Guiden **Skapa tagg** öppnas i en ny farten. På sidan **Definiera tagg** konfigurerar du följande inställningar:
+   - **Namn**: Ange ett unikt, beskrivande namn för taggen. Det här är det värde som du kommer att se och använda.
+   - **Beskrivning**: Ange en valfri beskrivning för taggen.
 
    Klicka på Nästa när du är **klar.**
 
-4. Gör något **av följande** på sidan Tilldela användare:
+4. Gör **något av** följande på sidan Tilldela användare:
 
-   - Klicka **på Lägg till användare.** I den utfälling som visas gör du något av följande för att lägga till enskilda användare eller grupper:
+   - Klicka på **Lägg till användare.** I den flygblad som visas gör du något av följande för att lägga till enskilda användare eller grupper:
      - Klicka i rutan och bläddra igenom listan för att välja en användare eller grupp.
      - Klicka i rutan och börja skriva för att filtrera listan och välj en användare eller grupp.
      - Om du vill lägga till ytterligare värden klickar du i ett tomt område i rutan.
-     - Om du vill ta bort enskilda poster i rutan klickar du **på ikonen** Ta bort för användaren eller gruppen ![ i ](../../media/scc-remove-icon.png) rutan.
-     - Om du vill ta bort befintliga poster från listan under rutan klickar du på **ta** ![ bort-ikonen ](../../media/scc-remove-icon.png) för posten.
+     - Om du vill ta bort enskilda poster från rutan klickar du **på Ikonen** Ta bort för användaren eller gruppen ![ i ](../../media/scc-remove-icon.png) rutan.
+     - Om du vill ta bort befintliga poster från listan under rutan klickar du på **Ta** ![ bort-ikonen ](../../media/scc-remove-icon.png) för posten.
 
-     Klicka på Lägg till när du är **klar.**
+     När du är klar klickar du på Lägg **till**.
 
    - Klicka **på Importera** för att markera en textfil som innehåller e-postadresserna till användare eller grupper. Kontrollera att textfilen innehåller en post per rad.
 
    Klicka på Nästa när du är **klar.**
 
-5. Granska **inställningarna på taggsidan** Granska. Du kan klicka **på Redigera** i det specifika avsnittet för att göra ändringar.
+5. Granska **inställningarna på** taggsidan Granska. Du kan klicka **på Redigera** i det specifika avsnittet för att göra ändringar.
 
-   Klicka på Skicka när du är **klar.**
+   När du är klar klickar du på **Skicka.**
 
-## <a name="use-the-security-center-to-view-user-tags"></a>Använda Säkerhetscenter för att visa användartaggar
+## <a name="use-the-security--compliance-center-to-view-user-tags"></a>Använda Säkerhets- & efterlevnadscenter för att visa användartaggar
 
-1. Gå till Användartaggar för hantering **av** hot i \> **Säkerhetscenter.**
+1. Gå till Användartaggar för & skydd mot **hothantering** \> **i Säkerhets- och efterlevnadscenter.**
 
-2. På sidan **med användartaggar** som öppnas väljer du den användartagg som du vill visa (klicka inte i kryssrutan).
+2. På sidan **Användartaggar** som öppnas väljer du den användartagg som du vill visa (klicka inte i kryssrutan).
 
 3. Granska inställningarna i den skrivskyddade informationen som visas.
 
    Klicka på **Stäng** när du är klar.
 
-## <a name="use-the-security-center-to-modify-user-tags"></a>Använda Säkerhetscenter för att ändra användartaggar
+## <a name="use-the-security--compliance-center-to-modify-user-tags"></a>Använda Säkerhets- & efterlevnadscenter för att ändra användartaggar
 
-1. Gå till Användartaggar för hantering **av** hot i \> **Säkerhetscenter.**
+1. Gå till Användartaggar för & skydd mot **hothantering** \> **i Säkerhets- och efterlevnadscenter.**
 
-2. På sidan **med användartaggar** som öppnas väljer du den användartagg som du vill visa och klickar sedan på **Redigera tagg.**
+2. På sidan **Användartaggar** som öppnas väljer du den användartagg som du vill visa och klickar sedan på **Redigera tagg**.
 
-3. Principguiden öppnas i en **redigeringstagg.** Klicka **på** Nästa för att granska och ändra inställningarna.
+3. Principguiden öppnas i en **utfälls fönster för** redigeringstagg. Klicka **på** Nästa för att granska och ändra inställningarna.
 
-   Klicka på Skicka när du är **klar.**
+   När du är klar klickar du på **Skicka.**
 
-## <a name="use-the-security-center-to-remove-user-tags"></a>Använda Säkerhetscenter för att ta bort användartaggar
+## <a name="use-the-security--compliance-center-to-remove-user-tags"></a>Använda Säkerhets- och & för att ta bort användartaggar
 
-**Obs!** Du kan inte ta bort den inbyggda taggen **Priority-konto.**
+**Obs!** Du kan inte ta bort den inbyggda **prioritetskontotaggen.**
 
-1. Gå till Användartaggar för hantering **av** hot i \> **Säkerhetscenter.**
+1. Gå till Användartaggar för & skydd mot **hothantering** \> **i Säkerhets- och efterlevnadscenter.**
 
-2. På sidan **med användartaggar** som öppnas markerar du den användartagg du vill ta bort, klickar på Ta bort tagg och väljer Sedan **Ja,** ta bort i varningen som visas.
+2. På sidan **Användartaggar** som öppnas väljer du den användartagg du vill ta bort, klickar på Ta bort tagg och väljer sedan  **Ja,** ta bort i varningen som visas.

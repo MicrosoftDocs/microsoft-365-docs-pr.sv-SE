@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
-description: 'Skapa snabblänkar till e-post, dokument, appar, SharePoint-webbplatser, externa webbplatser och andra resurser genom att lägga till anpassade paneler i startprogrammet. '
-ms.openlocfilehash: 96d059b252b63e48e20edb29861cf8233e220e34
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+description: 'Skapa snabblänkar till e-post, dokument, program, SharePoint-webbplatser, externa webbplatser och andra resurser genom att lägga till anpassade paneler i startprogrammet. '
+ms.openlocfilehash: 809788033d0e8ef414511af5ab89857974d8b175
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114195"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766449"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Lägga till anpassade paneler i startprogrammet
 
@@ -47,49 +47,37 @@ Du kan lägga till egna paneler i startprogrammet som pekar på SharePoint-webbp
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>Lägga till en anpassad panel i startprogrammet
 
-1. Logga in på administrationscentret som global administratör, gå till  >  **Inställningar för organisationens** inställningar och välj fliken **Organisationsprofil.**
+1. Logga in som global administratör i administrationscentret, gå till **Inställningar**  >  **Organisationsinställningar** och välj **fliken Organisationsprofil.**
     
-2. Välj Anpassade **startprogrammets** paneler på fliken **Organisationsprofil.**
+2. På fliken **Organisationsprofil** väljer du Anpassade **startprogrammets paneler**.
   
-3. Välj **Lägg till en anpassad panel.** 
+3. Välj **Lägg till en anpassad panel**. 
   
 4. Ange ett **Panelnamn** för den nya panelen. Namnet visas sedan i panelen. 
     
-5. Ange en **URL till webbplatsen** för panelen. Det är här du vill att användarna ska gå när de väljer panelen i startprogrammet. Använd HTTPS i URL:en.<br/>Tips: Om du skapar en panel för en SharePoint-webbplats går du till webbplatsen, kopierar webbadressen och klistrar in den här. URL-adressen till standardgruppwebbplatsen ser ut så här: `https://<company_name>.sharepoint.com` 
+5. Ange en **URL till webbplatsen** för panelen. Det är här du vill att användarna ska gå när de väljer panelen i startprogrammet. Använd HTTPS i URL-adressen.<br/>TIPS: Om du skapar en panel för en SharePoint-webbplats går du till webbplatsen, kopierar webbadressen och klistrar in den här. URL-adressen till standardgruppwebbplatsen ser ut så här: `https://<company_name>.sharepoint.com` 
   
 6. Ange en **URL för bilden** för panelen. Bilden visas på sidan Mina program och i startprogrammet.<br/>TIPS: Bilden ska vara 60 x 60 bildpunkter och vara tillgänglig för alla i organisationen utan autentisering.
 
-7. Ange en **beskrivning** för panelen. Detta visas när du markerar panelen på sidan Mina program och väljer **Programinformation.** 
+7. Ange en **beskrivning** för panelen. Detta visas när du väljer panelen på sidan Mina program och väljer **Programinformation**. 
   
-8. Välj **Spara ändringar** för att skapa den anpassade panelen. 
+8. Välj **Spara ändringar för** att skapa den anpassade panelen. 
     
 Den anpassade panelen visas nu i startprogrammet på fliken **Alla** för dig och dina användare. 
   
-## <a name="promote-the-tile-to-app-launcher"></a>Höja panelen till startprogrammet
-
-1. Välj ikonen för startprogrammet och välj **Alla appar.** 
-    
-2. Leta reda på den nya panelen för appen, välj ellipsen och välj **Fäst i startprogrammet.**
-  
-    > [!NOTE]
-    > Om du inte ser länken till den anpassade panelen du skapade i föregående steg bör du kontrollera att du har tilldelats en Exchange Online-postlåda och att du loggat in till postlådan minst en gång. De här stegen krävs för anpassade paneler i Microsoft 365. 
-  
-> [!IMPORTANT]
-> Både du och användarna måste utföra de här åtgärderna när ni vill att anpassade paneler från Mina program-sidan ska fästas i startprogrammet. 
-  
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. Gå till profilfliken Inställningar för  >  **organisationens** inställningar  >  **i administrationscentret.** </a>
+1. I administrationscentret går du till fliken  >  **Organisationsprofil i Inställningar**  >  **för** </a> organisationsinställningar.
     
-2. Välj **Redigera bredvid** Lägg till anpassade paneler för **din organisation** på sidan **Organisationsprofil.**
+2. På sidan **Organisationsprofil** bredvid Lägg till   **anpassade paneler för din organisation väljer** du **Redigera**.
 
 3. Uppdatera **panelnamnet**, **URL:en**, **beskrivningen** och **bild-URL:en** för den anpassade brickan (se den [Lägga till en anpassad panel i startprogrammet](#add-a-custom-tile-to-the-app-launcher)).
     
 4. Välj **Uppdatera** \> **stäng.** 
     
-Om du vill ta bort en anpassad panel markerar **du panelen i** fönstret Anpassade paneler och väljer Ta bort **panel.**  >   
+Om du vill ta bort en anpassad panel väljer **du panelen i** fönstret Anpassade paneler och väljer Ta bort panel **Ta**  >  **bort.** 
   
 ## <a name="whats-next"></a>Hur går jag vidare?
 
-Förutom att lägga till paneler i startprogrammet kan du lägga till startprogrammets paneler i navigeringsfältet[(läs mer).](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985) Om du vill anpassa utseendet och känslan i Microsoft 365 så att den matchar organisationens varumärke kan du gå till Anpassa [Microsoft 365-temat.](../setup/customize-your-organization-theme.md)
+Förutom att lägga till paneler i startprogrammet kan du lägga till startprogrammets paneler i navigeringsfältet[(läs mer).](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985) Om du vill anpassa utseendet och känslan i Microsoft 365 så att den matchar organisationens varumärke kan du gå till Anpassa [Microsoft 365-temat](../setup/customize-your-organization-theme.md).
   
