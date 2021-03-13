@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Lär dig mer om de typer av grupper som du kan använda.
-ms.openlocfilehash: 4cbc7f15632026babec3640f021c09e901ad20b9
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: dfb726fadbfbcf69a8ff57fa3d9025cd8811e617
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925536"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727253"
 ---
 # <a name="compare-groups"></a>Jämföra grupper
 
@@ -41,7 +41,7 @@ I avsnittet **Grupper** i administrationscentret för Office 365 kan du skapa oc
 
 ## <a name="microsoft-365-groups"></a>Microsoft 365-grupper
 
-Microsoft 365-grupper används för samarbete mellan användare, både inom och utanför företaget. Med varje Microsoft 365-grupp får medlemmarna en grupp-e-post och en delad arbetsyta för konversationer, filer och kalenderhändelser samt en planerare.
+Microsoft 365-grupper används för samarbete mellan användare, både inom och utanför företaget. Med varje Microsoft 365-grupp får medlemmarna en grupp-e-post och en delad arbetsyta för konversationer, filer och kalenderhändelser, Stream samt en planerare.
 
 Du kan lägga till personer utanför organisationen i en grupp så länge som detta har [aktiverats av administratören](manage-guest-access-in-groups.md). Du kan också tillåta externa avsändare att skicka e-post till gruppens e-postadress.
 

@@ -106,6 +106,8 @@
           href: sit-edm-wizard.md
         - name: Ändra exakt dataskema för att använda konfigurerbar matchning
           href: sit-modify-edm-schema-configurable-match.md
+        - name: Skapa aviseringar för exakta datamatchningsaktiviteter (förhandsversion)
+          href: sit-edm-notifications-activities.md
         - name: Skapa en anpassad känslig informationstyp – Säkerhets- och efterlevnadscenter
           href: create-a-custom-sensitive-information-type.md
         - name: Skapa en anpassad känslig informationstyp – PowerShell
