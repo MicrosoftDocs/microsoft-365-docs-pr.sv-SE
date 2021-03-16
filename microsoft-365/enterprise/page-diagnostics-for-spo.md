@@ -1,5 +1,5 @@
 ---
-title: Använda verktyget för nätverksdiagnostik för SharePoint Online
+title: Använda verktyget Siddiagnostik för SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -18,147 +18,158 @@ search.appverid:
 - BSA160
 f1.keywords:
 - NOCSH
-description: Använd verktyget för nätverksdiagnostik för SharePoint för att analysera SharePoint Online-moderna portaler och klassiska publicerings sidor mot en förutbestämd uppsättning prestanda villkor.
-ms.openlocfilehash: 2598f2a8c7801a762133c93761d2910a220dc194
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Använd siddiagnostik för SharePoint-verktyget för att analysera modern portal och klassiska publiceringssidor i SharePoint Online mot en fördefinierad uppsättning prestandakriterier.
+ms.openlocfilehash: a6616a7d3f9f27365c7b96bbfb08a17c6d2be030
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696711"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50820215"
 ---
-# <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Använda verktyget för nätverksdiagnostik för SharePoint
+# <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Använda siddiagnostik för SharePoint-verktyget
 
-I den här artikeln beskrivs hur du använder **verktyget för nätverksdiagnostik för SharePoint** för att analysera sidor för moderna och klassiska SharePoint Online-webbplatser mot en förutbestämd uppsättning prestanda villkor.
+I den här artikeln beskrivs hur du använder verktyget Siddiagnostik för **SharePoint för** att analysera moderna och klassiska webbplatssidor i SharePoint Online mot en fördefinierad uppsättning prestandakriterier.
 
-Verktyget för nätverksdiagnostik för SharePoint kan installeras för:
+Siddiagnostik för SharePoint-verktyget kan installeras för:
 
 - **Microsoft Edge** [(Edge-tillägg)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji)
 - **Chrome** [(Chrome-tillägg)](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)
 
 >[!TIP]
->Version **2.0.0** och senare innehåller stöd för moderna sidor, utöver klassiska webbplats sidor. Om du är osäker på vilken version av verktyget du använder kan du välja **om** -länken eller ellipsen (...) för att verifiera din version. **Uppdatera alltid till den senaste versionen** när du använder verktyget.
+>Version **2.0.0** och senare har stöd för moderna sidor utöver klassiska webbplatssidor. Om du är osäker på vilken version av verktyget  du använder kan du verifiera din version genom att välja länken Om eller ellipsen (...). **Uppdatera alltid till den senaste versionen** när du använder verktyget.
 
-Verktyget för nätverksdiagnostik för SharePoint är ett webb läsar tillägg för de nya Microsoft Edge- https://www.microsoft.com/edge) webbläsarna (och Chrome som analyserar både SharePoint Online moderna Portal och klassisk publicerings webbplats sidor. Det här verktyget fungerar bara för SharePoint Online och kan inte användas på en SharePoint-Systemsida.
+Verktyget Siddiagnostik för SharePoint är ett webbläsartillägg för nya Microsoft Edge ( och Chrome-webbläsare som analyserar både moderna portaler för SharePoint Online och https://www.microsoft.com/edge) klassiska publiceringswebbplatssidor. Det här verktyget fungerar bara för SharePoint Online och kan inte användas på en SharePoint-systemsida.
 
-Verktyget genererar en rapport för varje sida som visar hur sidan fungerar mot en fördefinierad uppsättning regler och visar detaljerad information när resultaten för ett test ligger utanför bas linjen. SharePoint Online-administratörer och designer kan använda verktyget för att felsöka prestanda problem och för att säkerställa att nya sidor optimeras före publiceringen.
+Verktyget genererar en rapport för varje analyserad sida som visar hur sidan fungerar mot en fördefinierad uppsättning regler och visar detaljerad information när resultaten för ett test faller utanför baslinjevärdet. SharePoint Online-administratörer och -designers kan använda verktyget för att felsöka prestandaproblem och se till att nya sidor är optimerade innan du publicerar.
 
-Verktyget för nätverksdiagnostik används bara för att analysera sidor i SharePoint-webbplatsen, inte på system sidor som *AllItems. aspx* eller *SharePoint. aspx*. Om du försöker köra verktyget på en system sida eller någon annan sida utanför webbplatsen får du ett fel meddelande om att det inte går att köra verktyget för den typen av sida.
+Verktyget Siddiagnostik är utformat för att endast analysera SharePoint-webbplatssidor, inte systemsidor som *allitems.aspx* eller *sharepoint.aspx.* Om du försöker köra verktyget på en systemsida eller någon annan sida än sidan på webbplatsen får du ett felmeddelande som anger att verktyget inte kan köras för den typen av sida.
 
-![Måste köras på en SharePoint-sida](../media/page-diagnostics-for-spo/pagediag-Error-StartPage.png)
+> [!div class="mx-imgBorder"]
+> ![Måste köras på en SharePoint-sida](../media/page-diagnostics-for-spo/pagediag-Error-StartPage.png)
 
-Det här är inte ett fel i verktyget eftersom det inte finns något värde för att utvärdera bibliotek eller system sidor. Navigera till en SharePoint-webbplats för att använda verktyget. Om felet uppstår på en SharePoint-sida kontrollerar du huvud sidan för att se till att SharePoint-metataggarna inte har tagits bort.
+Det här är inte ett fel i verktyget eftersom det inte finns något värde i att utvärdera bibliotek eller systemsidor. Gå till en SharePoint-webbplatssida om du vill använda verktyget. Om det här felet inträffar på en SharePoint-sida kontrollerar du huvudsidan för att säkerställa att SharePoint-metataggarna inte har tagits bort.
 
-Om du vill lämna feedback om verktyget väljer du ellipsen i det övre högra hörnet i verktyget och väljer sedan [ge feedback](https://go.microsoft.com/fwlink/?linkid=874109).
+Ge feedback om verktyget genom att välja ellipsen i det övre högra hörnet av verktyget och sedan välja [Ge feedback.](https://go.microsoft.com/fwlink/?linkid=874109)
 
-![Ge feedback](../media/page-diagnostics-for-spo/pagediag-feedback.png)
+> [!div class="mx-imgBorder"]
+> ![Lämna feedback](../media/page-diagnostics-for-spo/pagediag-feedback.png)
   
-## <a name="install-the-page-diagnostics-for-sharepoint-tool"></a>Installera verktyget för nätverksdiagnostik för SharePoint
+## <a name="install-the-page-diagnostics-for-sharepoint-tool"></a>Installera verktyget Siddiagnostik för SharePoint
 
-Installations proceduren i det här avsnittet fungerar både för webbläsarna Chrome och Microsoft Edge.
+Installationsproceduren i det här avsnittet fungerar för både Chrome- och Microsoft Edge-webbläsare.
 
 > [!IMPORTANT]
-> Microsoft läser inte data-eller sid innehåll som analyseras av verktyget för nätverksdiagnostik för SharePoint, och ingen personlig information, webbplats eller nedladdnings information. Den enda identifierbara informationen som är inloggad i Microsoft av verktyget är klient organisationens namn, antalet regler som misslyckats och det datum och den tid då verktyget kördes. Den här informationen används av Microsoft för att bättre förstå moderna Portal-och publicerings webbplats användnings trender och vanliga prestanda problem.
+> Microsoft läser inte data eller sidinnehåll som analyseras av verktyget Siddiagnostik för SharePoint och vi samlar inte in någon personlig information, webbplats eller nedladdningsinformation. Det enda identifierbara information som loggas på Microsoft med verktyget är klientorganisationens namn, antalet regler som har misslyckats och datum och tid då verktyget körts. Den här informationen används av Microsoft för att bättre förstå moderna portal- och publiceringstrender för webbplatsanvändning och vanliga prestandaproblem.
 
-1. Installera verktyget för sid diagnos för SharePoint för **Microsoft Edge** [(Edge Extension)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji) eller **Chrome** [(Chrome)](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi). Läs igenom användar integritets policyn på sidan beskrivning i butiken. När du lägger till verktyget i webbläsaren visas följande behörigheter.
+1. Installera siddiagnostik för SharePoint-verktyget för **Microsoft Edge** [(Edge-tillägg)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji) eller **Chrome** [(Chrome-tillägg).](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi) Läs igenom användarsekretesspolicyn som finns på beskrivningssidan i Store. När du lägger till verktyget i webbläsaren visas följande behörighetsmeddelande.
 
-    ![Behörigheter för tillägg](../media/page-diagnostics-for-spo/pagediag-add-to-edge.png)
+    > [!div class="mx-imgBorder"]
+    > ![Tilläggsbehörigheter](../media/page-diagnostics-for-spo/pagediag-add-to-edge.png)
 
-    Det här meddelandet beror på att en sida kan innehålla innehåll från platser utanför SharePoint, beroende på webb delarna och anpassningarna på sidan. Det innebär att verktyget läser förfrågningarna och svaren när du klickar på Start-knappen och endast för den aktiva SharePoint-flik där verktyget körs. Den här informationen sparas lokalt av webbläsaren och kan nås via knappen **Exportera till JSON** eller **Exportera till** på verktygets flik för _nätverks spårning_ . **informationen skickas inte till eller sparas av Microsoft.** (Verktyget respekterar Microsofts integritets policy som är tillgänglig [här](https://go.microsoft.com/fwlink/p/?linkid=857875).)
+    Det här meddelandet finns på plats eftersom en sida kan innehålla innehåll från platser utanför SharePoint, beroende på webbdelarna och anpassningarna på sidan. Det innebär att verktyget läser förfrågningar och svar när du klickar på startknappen och bara för den aktiva SharePoint-flik där verktyget körs. Den här informationen lagras lokalt i webbläsaren och är tillgänglig via knappen Exportera till **JSON** eller Exportera till **HAR** på fliken Nätverksspårning för verktyget. Informationen skickas inte till eller lagras av  **Microsoft.** (Verktyget respekterar Microsofts sekretesspolicy som finns [här](https://go.microsoft.com/fwlink/p/?linkid=857875).)
 
-    _Hantera dina nedladdnings_ behörigheter omfattar användning av verktygets **export till JSON** -funktion. Följ företagets egna integritets rikt linjer innan du delar JSON-filen utanför organisationen, eftersom resultatet innehåller URL-adresser och som kan klassificeras som PII (personligt identifierbar information).
-1. Om du vill använda verktyget i inkognitofönster eller InPrivate-läge följer du anvisningarna för din webbläsare:
-    1. I Microsoft Edge navigerar du till **tillägg** eller skriver _Edge://Extensions_ i URL-fältet och väljer sedan **information** för tillägget. Markera kryss rutan **Tillåt i InPrivate**i inställningar för tillägg.
-    1. I Chrome navigerar du till **anknytningar** eller skriver _Chrome://Extensions_ i URL-fältet och väljer **information** för tillägget. I tilläggs inställningar väljer du skjutreglaget för **Tillåt i inkognitofönster**.
-1. Gå till sidan SharePoint-webbplats i SharePoint Online som du vill granska. Vi har tillåtit för "fördröj laddning" av objekt på sidor. Därför kommer verktyget inte att sluta fungera automatiskt (det här är genom att designa alla scenarier för sid inläsningar). Om du vill stoppa samlingen väljer du **stoppa**. Kontrol lera att sid inläsningen är klar innan du stoppar data insamlingen eller att du bara gör en ofullständig spårning.
-1. Klicka på knappen för knapps tillägget ![Page Diagnostics för SharePoint-logotyp](../media/page-diagnostics-for-spo/pagediag-icon32.png) Om du vill ladda verktyget och få följande tillägg i snabb menyn:
+    Behörigheten _Hantera dina nedladdningar_ omfattar användningen av verktygets Export till **JSON-funktioner.** Följ företagets egna riktlinjer för sekretess innan du delar JSON-filen utanför organisationen, eftersom resultatet innehåller URL:er och som kan klassificeras som personligt identifierbar information.
+1. Om du vill använda verktyget i Inkognito- eller InPrivate-läge följer du instruktionerna för webbläsaren:
+    1. Gå till Tillägg i Microsoft Edge **eller** skriv _edge://extensions_ i URL-fältet och välj **Information** för tillägget. I tilläggsinställningarna markerar du kryssrutan för **Tillåt i InPrivate.**
+    1. I Chrome går du till **Tillägg** eller skriver _chrome://extensions_ i URL-fältet och **väljer Information** för tillägget. I tilläggsinställningarna väljer du skjutreglaget för **tillåt i Inkognito**.
+1. Gå till den SharePoint-webbplatssida i SharePoint Online som du vill granska. Vi har tillåtit "fördröjd inläsning" av objekt på sidor. Därför stoppas inte verktyget automatiskt (det här är av designsidan för att passa alla scenarier med sidinläsning). Om du vill stoppa samlingen väljer du **Stoppa**. Kontrollera att sidinläsningen har slutförts innan du stoppar datainsamlingen, annars visas bara en delspårning.
+1. Klicka på tilläggets verktygsfältsknapp ![Siddiagnostik för SharePoint-logotyp](../media/page-diagnostics-for-spo/pagediag-icon32.png) för att läsa in verktyget så visas följande popup-fönster för tillägg:
 
-    ![Popup-menyn för nätverksdiagnostik](../media/page-diagnostics-for-spo/pagediag-Landing.png)
+    ![Popup-verktyg för siddiagnostik](../media/page-diagnostics-for-spo/pagediag-Landing.png)
 
-Välj **Start** för att börja samla in data för analys.
+Välj **Börja samla** in data för analys.
 
-## <a name="what-youll-see-in-the-page-diagnostics-for-sharepoint-tool"></a>Det här visas i verktyget Page Diagnostics för SharePoint
+## <a name="what-youll-see-in-the-page-diagnostics-for-sharepoint-tool"></a>Det här visas i verktyget Siddiagnostik för SharePoint
 
 1. Klicka på ellipsen (...) i det övre högra hörnet av verktyget för att hitta följande länkar:
-   1. Länken **ytterligare resurser** innehåller allmän vägledning och information om verktyget, inklusive en länk till den här artikeln.
-   1. Länken **ge feedback** är en länk till webbplatsen för _SharePoint-webbplatser och samarbets användare_ .
-   1. Med **om** -länken ingår den installerade versionen av verktyget och en direkt länk till verktyget tredje part.  
-1. **Korrelations-ID: t, SPRequestDuration, SPIISLatency**, **sid inläsnings tid**och **URL** -information är informations och kan användas i några få skäl.
+   1. Länken **Ytterligare resurser** innehåller allmän vägledning och information om verktyget, inklusive en länk tillbaka till den här artikeln.
+   1. Länken **Ge feedback** innehåller en länk till _SharePoint-webbplatserna och User Voice-webbplatsen för_ samarbete.
+   1. Länken **Om** innehåller den installerade versionen av verktyget och en direkt länk till verktygets meddelande från tredje part.  
+1. **Korrelations-ID, SPRequestDuration, URL:erLatency,** Sidinläsningstid och **URL-information** är information och kan användas för några syften. 
 
-    ![Information om Page Diagnostics](../media/page-diagnostics-for-spo/pagediag-details.PNG)
+    > [!div class="mx-imgBorder"]
+    > ![Information om siddiagnostik](../media/page-diagnostics-for-spo/pagediag-details.PNG)
 
-   - **CorrelationID** är ett viktigt element när du arbetar med Microsofts support eftersom det tillåter att de samlar in ytterligare diagnostikdata för den specifika sidan.
-   - **SPRequestDuration** är den tid det tar för SharePoint att bearbeta sidan. Strukturell navigering, stora bilder, massor av API-samtal kan bidra till längre varaktigheter.
-   - **SPIISLatency** är tiden i millisekunder som tar för SharePoint Online att läsa in sidan. Detta värde inkluderar inte den tid det tar för webb programmet att svara.
-   - **Sid inläsnings tid** är den totala tiden som har registrerats av sidan från den tid då svaret togs emot och renderades i webbläsaren. Det här värdet påverkas av en mängd olika faktorer, inklusive nätverks svars tid, datorns prestanda och den tid det tar för webbläsaren att läsa in sidan.
-   - **Sidans URL** (Uniform Resource Locator) är webb adressen för den aktuella sidan.
+   - **CorrelationID** är ett viktigt element när de arbetar med Microsoft Support eftersom det gör att de kan samla in ytterligare diagnostikdata för den specifika sidan.
+   - **SPRequestDuration** är den tid det tar för SharePoint att bearbeta sidan. Strukturell navigering, stora bilder, många API-anrop kan alla bidra till längre varaktighet.
+   - **SPIISLatency** är tiden i millisekunder som tas för SharePoint Online för att börja läsa in sidan. Det här värdet omfattar inte hur lång tid det tar för webbprogrammet att svara.
+   - **Sidinläsningstid** är den totala tiden som registrerats av sidan från tiden för begäran till den tidpunkt då svaret togs emot och återges i webbläsaren. Det här värdet påverkas av en mängd faktorer, till exempel nätverkets svarstid, datorns prestanda och den tid det tar för webbläsaren att läsa in sidan.
+   - **Sid-URL** :en (Uniform Resource Locator) är webbadressen till den aktuella sidan.
 
-1. På fliken [**diagnostiska test**](#how-to-use-the-diagnostic-tests-tab) visas analys resultaten i tre kategorier; **Ingen åtgärd krävs**, **förbättrings möjligheter** och **åtgärd krävs**. Varje test resultat representeras av ett objekt i en av dessa kategorier enligt beskrivningen i följande tabell:
+1. På [**fliken Diagnostiktester**](#how-to-use-the-diagnostic-tests-tab) visas analysresultatet i tre kategorier. **Ingen åtgärd krävs**, **förbättringsmöjligheter** och **uppmärksamhet krävs.** Varje testresultat representeras av ett objekt i någon av följande kategorier enligt beskrivningen i följande tabell:
 
-    |Kategori  |Tvåfärgad  |Beskrivning  |
+    |Kategori  |Färg  |Beskrivning  |
     |---------|---------|---------|
-    |**Åtgärd krävs** |Röda |Test resultatet hamnar utanför bas linjen och påverkar sid prestanda. Följ reparations vägledningen.|
-    |**Förbättrings möjligheter** |Blått |Test resultatet hamnar utanför bas linjen och kan bidra till prestanda problem. Testspecifika kriterier kan tillkomma.|
-    |**Ingen åtgärd krävs** |Havsgrön |Test resultatet hamnar i testets bas linje värde.|
+    |**Åtgärder krävs** |Röd |Testresultatet ligger utanför baslinjevärdet och påverkar sidprestandan. Följ reparationsvägledning.|
+    |**Förbättringsmöjligheter** |Gul |Testresultatet ligger utanför baslinjevärdet och kan bidra till prestandaproblem. Testspecifika villkor kan gälla.|
+    |**Ingen åtgärd krävs** |Grön |Testresultatet faller inom testets baslinjevärde.|
 
-    ![Nätverksdiagnostik](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
+    > [!div class="mx-imgBorder"]
+    > ![Siddiagnostik](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
 
-1. En flik för [**nätverks spårning**](#how-to-use-the-network-trace-tab) tillhandahåller information om begär Anden och svar på sidans konstruktion.
+1. En [**flik för nätverksspårning**](#how-to-use-the-network-trace-tab-and-how-to-export-a-har-file) innehåller information om förfrågningar om sid byggen och svar.
 
-## <a name="how-to-use-the-diagnostic-tests-tab"></a>Så här använder du fliken diagnostiska test
+## <a name="how-to-use-the-diagnostic-tests-tab"></a>Så här använder du fliken Diagnostiktest
 
-När du analyserar en SharePoint-modern eller klassisk publicerings webbplats med Page Diagnostics för SharePoint Tool analyseras resultaten med hjälp av fördefinierade regler som jämför resultat mot original Plans värden och som visas på fliken **diagnostiska test** . regler för vissa tester kan använda olika original värden för moderna portaler och klassiska publicerings webbplatser beroende på hur specifika prestanda egenskaper skiljer sig mellan de två.
+När du analyserar en sida på en modern SharePoint-portal eller en klassisk publiceringswebbplatssida med verktyget Siddiagnostik för  SharePoint analyseras resultaten med fördefinierade regler som jämför resultaten med baslinjevärden och visas på fliken Diagnostiktest. Regler för vissa tester kan använda olika baslinjevärden för moderna portalen och klassiska publiceringswebbplatser beroende på hur specifika prestandaegenskaper skiljer sig åt mellan dem.
 
-Test resultat som visas i de **förbättrade möjligheterna till förbättring** eller **uppmärksamhet** visar vilka områden som ska granskas mot rekommenderad praxis och kan väljas för att visa ytterligare information om resultatet. Information för varje objekt inkluderar en länken _Lär dig mer_ som tar dig direkt till lämplig vägledning för testet. Test resultat som visas i kategorin **Ingen åtgärd krävs** visar att den relevanta regeln följs och inte innehåller ytterligare information när det är markerat.
+Testresultat som visas  i  kategorierna Förbättringsmöjligheter eller Åtgärder som krävs anger områden som ska granskas mot rekommenderade metoder och kan väljas för att visa ytterligare information om resultatet. Information om varje objekt innehåller _en Läs mer-länk_ som tar dig direkt till rätt vägledning för testet. Testresultat som visas i kategorin **Ingen åtgärd krävs anger** att den relevanta regeln efterlevs och att ingen ytterligare information visas när den väljs.
 
-Informationen på fliken diagnostiska test visar inte hur du utformar sidor, men framhäver faktorer som kan påverka sid prestanda. Vissa sid funktioner och anpassningar har en oundviklig inverkan på sid prestanda och bör ses över för att det ska vara en väsentlig åtgärd.
+Informationen på fliken Diagnostiktest visar inte hur du utformar sidor, men faktorer som kan påverka sidprestandan framhävs. Vissa sidfunktioner och sidanpassningar har en ofrånkomlig inverkan på sidprestandan och bör granskas för att risken för åtgärder eller utelämnande från sidan är avsevärd.
 
-Röda och gula resultaten kan även indikera webb delar som uppdaterar data oftare. Till exempel uppdateras inte företags nyheter, men anpassade webb delar är ofta byggda för att hämta de senaste nyheterna i stället för att implementera cachade element som kan förbättra den övergripande användar upplevelsen. Tänk på följande när du inkluderar webb delar på en sida som det ofta finns enkla sätt att minska prestandan genom att utvärdera värdet för varje tillgänglig parameter för att säkerställa att den är korrekt inställd för dess avsedda ändamål.
+Röda eller gula resultat kan också ange webbdelar som uppdaterar data för ofta. Till exempel uppdateras inte företagsnyheter varannan gång, men anpassade webbdelar är ofta byggda för att hämta de senaste nyheterna varannan gång i stället för att implementera cachelagringselement som kan förbättra användarupplevelsen. Kom ihåg när du tar med webbdelar på en sida som det ofta finns enkla sätt att minska deras prestanda genom att utvärdera värdet på varje tillgänglig parameter för att säkerställa att den konfigureras på rätt sätt för sitt avsedda syfte.
 
 >[!NOTE]
->De grupp webbplatser som inte har publicerings funktionen aktive rad kan inte använda CDN. När du kör verktyget på de här webbplatserna förväntas CDN-testet inte och kan ignoreras, men alla återstående tester är tillämpliga. Med ytterligare funktioner för SharePoint-publicering kan du öka sid inläsnings tiden så att den inte ska aktive ras bara för att tillåta CDN-funktioner.
+>Klassiska gruppwebbplatser som inte har publiceringsfunktionen aktiverad kan inte använda CDN. När du kör verktyget på dessa webbplatser förväntas CDN-testet misslyckas och kan ignoreras, men alla återstående tester är tillämpliga. De ytterligare funktionerna i SharePoint-publiceringsfunktionen kan öka inläsningstider för sidor, så den bör inte aktiveras bara för att tillåta CDN-funktioner.
 
 >[!IMPORTANT]
->Test regler läggs till och uppdateras regelbundet så se den senaste versionen av verktyget för information om aktuella regler och specifik information som ingår i test resultaten. Du kan kontrol lera versionen genom att hantera dina anknytningar och fil namns tillägget aviserar om det finns en uppdatering.
+>Testregler läggs till och uppdateras regelbundet, så mer information om aktuella regler och specifik information om testresultaten finns i den senaste versionen av verktyget. Du kan verifiera versionen genom att hantera dina tillägg och tillägget anger om det finns en uppdatering tillgänglig.
 
-## <a name="how-to-use-the-network-trace-tab"></a>Så här använder du fliken nätverks spårning
+## <a name="how-to-use-the-network-trace-tab-and-how-to-export-a-har-file"></a>Så här använder du fliken Nätverksspårning och hur du exporterar en HAR-fil
 
-Fliken **nätverks spårning** innehåller detaljerad information om båda förfrågningarna om att bygga sidan och de svar som tas emot från SharePoint.
+På **fliken Nätverksspårning** finns detaljerad information om både förfrågningar om att skapa sidan och de svar som tas emot från SharePoint.
 
-1. **Leta efter objekt inläsnings tider flaggade som röda**. Varje begäran och svar är färgkodad för att visa att den påverkar övergripande sid prestanda med följande svars värden:
-    - Grönt: \< 500ms
-    - Gul: 500-1000ms
-    - Rött: \> 1000ms
+1. **Leta efter inläsningstider för objekt som är flaggade som röda**. Varje begäran och svar är färgkodade för att indikera dess inverkan på sidans övergripande prestanda med följande svarstidsmått:
+    - Grön: \< 500 ms
+    - Gul: 500–1 000 ms
+    - Röd: \> 1 000 ms
 
-    ![Nätverks spårning](../media/page-diagnostics-for-spo/pagediag-networktrace-red.png)
+    > [!div class="mx-imgBorder"]
+    > ![Nätverksspårning](../media/page-diagnostics-for-spo/pagediag-networktrace-red.png)
 
-    I bilden ovan visas det röda objektet för standard sidan. Det visar alltid rött såvida inte sidan laddas i \< 1000ms (mindre än 1 sekund).
+    I bilden ovan gäller det röda objektet standardsidan. Det visas alltid rött om sidan inte läses in \< på 1 000 ms (mindre än 1 sekund).
 
-2. **Testa objekt inläsnings tider**. I vissa fall visas ingen tids-eller färg indikator eftersom objekten redan har cachelagrats av webbläsaren. Testa detta genom att öppna sidan, rensa webbläsarens cache och sedan klicka på **Starta** som framtvingar en "kall inläsning" av sidan. Detta ska sedan jämföras med "varm-Sidan Load" eftersom den också kan avgöra vilka objekt som cachelagras på sidan.
+2. **Testa inläsningstider för objekt.** I vissa fall finns det ingen tids- eller färgindikator eftersom objekten redan har cachelagrats i webbläsaren. Om du vill testa det här korrekt öppnar du sidan, rensar webbläsarens cache och klickar sedan på **Starta** eftersom det gör att det blir en "kall" sidinläsning och en verklig reflektion av den första sidinläsningen. Det bör sedan jämföras med den "varma" sidinläsningen eftersom den också gör det möjligt att avgöra vilka objekt som cachelagras på sidan.
 
-3. **Dela relevanta uppgifter med andra som kan hjälpa dig att undersöka problem**. Om du vill dela med dig av informationen eller informationen i verktyget med utvecklarna eller en teknisk support-person klickar du på **Exportera till JSON** (som på bilden ovan). Det gör att du kan ladda ned resultaten, som kan visas i en JSON-fil.
+3. **Dela relevant information med andra som kan hjälpa dig att undersöka problem.** Om du vill dela information som finns i verktyget med dina utvecklare eller en teknisk supportperson rekommenderar vi att du använder Aktivera export till **HTTP-arkiv (HAR).** 
 
-    Om du har valt att använda funktionen för förhands granskning *aktivera export till* har export typen att visas som **export till**har gjort.
+   > [!div class="mx-imgBorder"]
+   > ![Aktivera export till HAR](../media/page-diagnostics-for-spo/pagediag-submithar.png)
 
-    ![Nätverks spårning](../media/page-diagnostics-for-spo/pagediag-NetworkTraceHAR.PNG)
+Det bör aktiveras innan du klickar på Start, vilket sedan aktiverar felsökningsläge i webbläsaren. Det genererar en HTTP-arkivfil (HAR) som sedan kan nås via fliken "Nätverksspårning". Klicka på "Exportera till HAR" så laddas filen ned till datorn och du kan sedan dela den i enlighet med detta. Filen kan öppnas i en mängd olika felsökningsverktyg, som F12 Developer Tools och Fiddler.
+
+> [!div class="mx-imgBorder"]
+> ![Nätverksspårning](../media/page-diagnostics-for-spo/pagediag-networktracehar.png)
 
 > [!IMPORTANT]
-> De här resultaten innehåller URL: er och kan klassificeras som PII (personligt identifierbar information). Kontrol lera att du följer organisationens rikt linjer innan du distribuerar denna information.
+> Resultaten innehåller URL:er och kan klassificeras som personligt identifierbar information. Se till att följa organisationens riktlinjer innan du distribuerar den informationen.
 
-## <a name="engaging-with-microsoft-support"></a>Engagera dig med Microsofts support
+## <a name="engaging-with-microsoft-support"></a>Arbeta med Microsoft Support
 
-Vi har inkluderat en **Microsoft Support Level-funktion** som bara bör användas när du arbetar direkt med ett support ärende. Användning av den här funktionen ger ingen förmån när den används utan support team och kan göra att sidan går betydligt långsammare. Det finns ingen ytterligare information när du använder den här funktionen i verktyget eftersom ytterligare information läggs till i loggningen i tjänsten.
+Vi har inkluderat en **funktion på Microsoft Support-nivå** som endast ska användas när du arbetar direkt med ett supportfall. Användning av den här funktionen ger inga fördelar när den används utan teamengagemang, och kan göra att sidan presterar betydligt långsammare. Det finns ingen ytterligare information när du använder den här funktionen i verktyget eftersom ytterligare information läggs till i loggning i tjänsten.
 
-Ingen ändring visas förutom att du får ett meddelande om att du har aktiverat den och att din sida fungerar markant genom 2-3 gånger långsammare prestanda medan den är aktive rad. Det är bara relevant för den aktuella sidan och den aktiva sessionen. Av den anledningen bör detta användas sparsamt och bara när det aktivt används med support.
+Ingen ändring visas förutom att du får ett meddelande om att du har aktiverat det och att sidprestandan kommer att försämras avsevärt med 2–3 gånger långsammare prestanda trots att den är aktiverad. Den är bara relevant för den specifika sidan och den aktiva sessionen. Av den anledningen bör det bara användas sparsamt och vid aktivt samarbete.
 
-### <a name="to-enable-the-microsoft-support-level-feature"></a>Så här aktiverar du Microsoft Support nivå funktionen
+### <a name="to-enable-the-microsoft-support-level-feature"></a>Så här aktiverar du funktionen Microsoft Support-nivå
 
-1. Öppna verktyget Page Diagnostics for SharePoint.
-2. Tryck på **Alt + Skift-L**på tangent bordet. Då visas kryss rutan **Aktivera support loggning** .
-3. Markera kryss rutan och klicka sedan på **Starta** för att läsa in sidan på nytt och generera utförlig loggning.
+1. Öppna verktyget Siddiagnostik för SharePoint.
+2. Tryck på **ALT-Skift-L på tangentbordet.** Då visas kryssrutan **Aktivera supportloggning.**
+3. Markera kryssrutan och klicka sedan på Starta för **att** läsa in sidan igen och generera utförlig loggning.
 
-    ![Alternativet support aktiverat](../media/page-diagnostics-for-spo/pagediag-support.png)
+   > [!div class="mx-imgBorder"]
+   > ![Supportalternativ aktiverat](../media/page-diagnostics-for-spo/pagediag-support.png)
   
-    Observera att CorrelationID (visas högst upp i verktyget) och ge det till din support representant så att de kan samla in ytterligare information om den diagnostiska sessionen.
+    Observera CorrelationID (visas överst i verktyget) och ge det till din supportrepresentant så att de kan samla in ytterligare information om diagnostiksessionen.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
@@ -166,8 +177,8 @@ Ingen ändring visas förutom att du får ett meddelande om att du har aktiverat
 
 [Justera Office 365-prestanda](tune-microsoft-365-performance.md)
 
-[Prestanda i den moderna SharePoint-upplevelsen](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Prestanda i det moderna SharePoint-programmet](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
-[Nätverk för innehålls leverans](content-delivery-networks.md)
+[Nätverk för innehållsleverans](content-delivery-networks.md)
 
-[Använda Office 365-innehålls leverans nätverk (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md)
+[Använda Office 365 Content Delivery Network (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md)

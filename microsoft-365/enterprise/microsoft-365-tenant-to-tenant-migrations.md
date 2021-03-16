@@ -1,5 +1,5 @@
 ---
-title: Migreringar från Microsoft 365 till klientorganisation
+title: Migrering från Microsoft 365 till klientorganisation
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,30 +19,30 @@ f1.keywords:
 - NOCSH
 description: Lär dig hur du migrerar Microsoft 365-klientorganisationen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 09b2bc77333afaf1991064369846241328db85ff
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: f6e8277a7ca768db3a4a4acd2488859b7764a40c
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461649"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50819720"
 ---
-# <a name="microsoft-365-tenant-to-tenant-migrations"></a>Migreringar från Microsoft 365 till klientorganisation
+# <a name="microsoft-365-tenant-to-tenant-migrations"></a>Migrering från Microsoft 365 till klientorganisation
 
-Det finns flera arkitekturstrategier för sammanslagningar, förvärv, divestitures och andra scenarier som kan leda till att du migrerar en befintlig Microsoft 365-klientorganisation till en ny klientorganisation. De flesta kunder arbetar med Microsoft Consulting Services eller en Microsoft-partner för att migrera klientorganisationen, inklusive att använda verktyg från tredje part för att migrera innehåll. 
+Det finns flera arkitekturscenarier för samgåenden, förvärv, företag och andra scenarier som kan leda till att du migrerar en befintlig Microsoft 365-klientorganisation till en ny klientorganisation. De flesta kunder arbetar med Microsoft Consulting Services eller en Microsoft-partner för att migrera klientorganisationen, inklusive att använda verktyg från tredje part för att migrera innehåll. 
 
-Använd modellen [med](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) migreringsarkitekturen klient till klientorganisation för att förstå hur du planerar för Microsoft 365-migreringar mellan klientorganisation och stegen för en migrering.
+Använd modellen [med migreringsarkitekturen](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) klientorganisation till klientorganisation för att förstå hur du planerar för Microsoft 365-klientorganisationens migreringar och stegen för en migrering.
 
-[![Migreringsmodell för klientorganisation till klientorganisation](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) 
+[![Migreringsmodell för klientorganisation](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) 
 
-Du laddar ned den här modellen i [PDF-format](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) och skriver ut den på papper i letter-, legal- eller tabloidformat (11 x 17).
+Du kan ladda ned den här modellen i [PDF-format](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) och skriva ut den på papper i letter-, legal- eller tabloidstorlek (11 x 17).
 
 Den här modellen innehåller vägledning och en utgångspunkt för planering med avsnitt om:
 
-- Mappning av affärsscenarier till arkitekturstrategier
+- Mappning av affärsscenarier till arkitektur närmar sig
 - Designöverväganden
 
-Den här modellen innehåller också detaljerade exempel på:
+Den här modellen innehåller även detaljerade exempel på:
 
-- Ett migreringsflöde för en händelse
+- Migreringsflöde för en enstaka händelse
 - Ett fasadt migreringsflöde
-- Ett flyttnings- eller delningsflöde för klientorganisation
+- Flytta eller dela flöde för klientorganisation

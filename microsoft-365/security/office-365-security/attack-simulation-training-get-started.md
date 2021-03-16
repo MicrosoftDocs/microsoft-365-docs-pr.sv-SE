@@ -17,61 +17,61 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan ta reda på hur de kan använda utbildning i attacksimulering för att köra simulerad nätfiske- och lösenordsattacker i sina organisationer med Microsoft 365 E5 eller Microsoft Defender för Office 365 abonnemang 2.
+description: Administratörer kan lära sig hur de använder utbildning av attack simulering för att köra simulerad nätfiske- och lösenordsattacker i sina Microsoft 365 E5 eller Microsoft Defender för Office 365 abonnemang 2 organisationer.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a33c212f7d0fd6b0617a8059b03ac90de03fba16
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 38e16ecd8185b9e8542f58613790585b5aab73ee
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407486"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50820240"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>Kom igång med Attack simuleringsträning
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Om din organisation har Microsoft 365 E5 eller Microsoft Defender för Office 365 abonnemang 2, som omfattar funktioner för hotundersökning och [svar,](office-365-ti.md)kan du använda utbildning i attackattack i Microsofts säkerhetscenter för att köra realistiska attackscenarier i organisationen. Dessa simulerade attacker kan hjälpa dig att identifiera och hitta sårbara användare innan en verklig attack påverkar din nederkant. Läs den här artikeln om du vill veta mer.
+Om din organisation har Microsoft 365 E5 eller Microsoft Defender för Office 365 abonnemang 2, som omfattar funktioner för undersökning av hot och [svar,](office-365-ti.md)kan du använda utbildning av attack simulering i Microsoft Säkerhetscenter för att köra realistiska attackscenarier i din organisation. Dessa simulerade attacker kan hjälpa dig att identifiera och hitta sårbara användare innan en verklig attack påverkar din nedersta linje. Läs den här artikeln om du vill veta mer.
 
 > [!NOTE]
-> Utbildning av attacksimulering ersätter den gamla attackberäkning v1-upplevelsen som beskrivs i Attack Defender i [Microsoft Defender för Office 365.](attack-simulator.md)
+> Utbildning av attack simulering ersätter den gamla attackteknik v1-upplevelsen som beskrivs i Attack Defender i [Microsoft Defender för Office 365.](attack-simulator.md)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du öppnar Microsofts säkerhetscenter genom att gå till <https://security.microsoft.com/> . Utbildning av attacksimulering finns tillgänglig på **e-post- och** \> **samarbetsattacksimuleringsutbildning.** Om du vill gå direkt till attacksimuleringsutbildningen öppnar du <https://security.microsoft.com/attacksimulator> .
+- Öppna Microsoft Säkerhetscenter genom att gå till <https://security.microsoft.com/> . Utbildning av attack simulering är tillgänglig på **E-post och** \> **samarbete Attack simulering utbildning**. Om du vill gå direkt till simuleringsutbildningen för attack öppnar du <https://security.microsoft.com/attacksimulator> .
 
-- Mer information om tillgängligheten för attackprenumerationer för olika Microsoft 365-prenumerationer finns i tjänstbeskrivningen för Microsoft Defender för [Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+- Mer information om tillgängligheten för simulering av attack i olika Microsoft 365-prenumerationer finns i Tjänstbeskrivning för Microsoft Defender för [Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
-- Du måste ha tilldelats behörigheter i Säkerhets- & Efterlevnadscenter eller i Azure Active Directory innan du kan utföra procedurerna i den här artikeln. Du måste vara medlem i **organisationshantering,** **säkerhetsadministratör** eller någon av följande roller:
-  - **Administratörer för attackgrupper:** Skapa och hantera alla aspekter av attackspelingskampanjer.
-  - **Författare av attack av nyttolast:** Skapa attack payloads som en administratör kan initiera senare.
+- Du måste ha tilldelats behörigheter i säkerhets- & säkerhets- och efterlevnadscentret eller i Azure Active Directory innan du kan utföra procedurerna i den här artikeln. Du måste vara medlem i Organisationshantering, **Säkerhetsadministratör** eller någon av följande roller: 
+  - **Attack attackadministratörer:** Skapa och hantera alla aspekter av attack simuleringskampanjer.
+  - **Författare av attack av nyttolast**: Skapa attack payloads som en administratör kan initiera senare.
 
-  Mer information finns i Behörigheter [i Säkerhets- & Efterlevnadscenter](permissions-in-the-security-and-compliance-center.md) eller [Om administratörsroller.](../../admin/add-users/about-admin-roles.md)
+  Mer information finns i [Behörigheter i Säkerhets- & Kompatibilitetscenter](permissions-in-the-security-and-compliance-center.md) eller [Om administratörsroller.](../../admin/add-users/about-admin-roles.md)
 
-- Det finns inga Motsvarande PowerShell-cmdlets för attacksimuleringsutbildning.
+- Det finns inga Motsvarande PowerShell-cmdlets för simulering av attackattacker.
 
-- Attackattack och utbildningsrelaterade data lagras med andra kunddata för Microsoft 365-tjänster. Mer information finns i [Microsoft 365-dataplatser.](../../enterprise/o365-data-locations.md) Attack simulering är tillgänglig i följande regioner: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN och KOR.
+- Attack simulering och utbildning relaterade data lagras med andra kunddata för Microsoft 365-tjänster. Mer information finns i [Microsoft 365-dataplatser.](../../enterprise/o365-data-locations.md) Attack simulering är tillgänglig i följande regioner: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN och KOR.
 
 ## <a name="simulations"></a>Simuleringar
 
-*Nätfiske* är en vanlig term för e-postattacker som försöker stjäla känslig information i meddelanden som verkar komma från legitima eller betrodda avsändare. *Nätfiske* är en del av några tekniker som vi klassificerar som _social engineering._
+*Nätfiske* är en allmän term för e-postattacker som försöker stjäla känslig information i meddelanden som verkar vara från legitima eller betrodda avsändare. *Nätfiske* är en del av en del av en uppsättning tekniker som vi klassificerar som _social engineering_.
 
-I utbildning för attacksimulering finns det flera typer av social engineering-tekniker:
+I utbildning av attack simulering finns det flera typer av social engineering-tekniker:
 
-- **Credential harvest**: An attacker sends the recipient a message that contains a URL. När mottagaren klickar på URL:en kommer de till en webbplats som vanligtvis visar en dialogruta där användaren uppmanas att ange sitt användarnamn och lösenord. Målsidan är vanligtvis tema som representerar en känd webbplats för att skapa förtroende för användaren.
+- **Credential credential harvest**: An attacker sends the recipient a message that contains a URL. När mottagaren klickar på URL-adressen kommer de till en webbplats som vanligtvis visar en dialogruta där användaren uppmanas att ange sitt användarnamn och lösenord. Målsidan brukar motsvara en känd webbplats för att skapa förtroende för användaren.
 
-- **Bifogad fil i** skadlig programvara: En attackerare skickar ett meddelande till mottagaren som innehåller en bifogad fil. När mottagaren öppnar den bifogade filen körs godtycklig kod (till exempel ett makro) på användarens enhet för att hjälpa attackeraren att installera ytterligare kod eller ytterligare entrenchning själva.
+- **Bifogad fil från** skadlig programvara: En attackerare skickar ett meddelande till mottagaren som innehåller en bifogad fil. När mottagaren öppnar den bifogade filen körs godtycklig kod (till exempel ett makro) på användarens enhet för att hjälpa attackerare att installera ytterligare kod eller ytterligare entrencha sig själva.
 
-- **Länk i bifogad** fil: Det här är en hybrid av en autentiseringsfördring. En attack skickar mottagaren ett meddelande som innehåller en URL i en bifogad fil. När mottagaren öppnar den bifogade filen och klickar på URL-adressen kommer de till en webbplats som vanligtvis visar en dialogruta där användaren ombeds ange sitt användarnamn och lösenord. Målsidan är vanligtvis tema som representerar en känd webbplats för att skapa förtroende för användaren.
+- **Länk i bifogad** fil: Det här är en hybrid av en credential-skörd. En attackerare skickar ett meddelande till mottagaren som innehåller en URL-adress i en bifogad fil. När mottagaren öppnar den bifogade filen och klickar på URL-adressen kommer de till en webbplats som vanligtvis visar en dialogruta där användaren ombeds ange sitt användarnamn och lösenord. Målsidan brukar motsvara en känd webbplats för att skapa förtroende för användaren.
 
-- **Länk till skadlig** programvara: En attackerare skickar ett meddelande till mottagaren som innehåller en länk till en bifogad fil på en känd fildelningswebbplats (till exempel SharePoint Online eller Dropbox). När mottagaren klickar på URL:en öppnas den bifogade filen och valfri kod (till exempel ett makro) körs på användarens enhet för att hjälpa attackerare att installera ytterligare kod eller ytterligare entrencha sig själva.
+- **Länk till skadlig** programvara: En attackerare skickar ett meddelande till mottagaren som innehåller en länk till en bifogad fil på en känd webbplats för fildelning (till exempel SharePoint Online eller Dropbox). När mottagaren klickar på URL-adressen öppnas den bifogade filen och godtycklig kod (till exempel ett makro) körs på användarens enhet för att hjälpa attackeret att installera ytterligare kod eller ytterligare entrencha sig själva.
 
-- **Drive-by-url:** En attacker skickar ett meddelande som innehåller en URL till mottagaren. När mottagaren klickar på URL:en kommer de till en webbplats som försöker köra bakgrundskod. Den här bakgrundskoden försöker samla in information om mottagaren eller distribuera godtycklig kod på enheten. Vanligtvis är målwebbplatsen en känd webbplats som har komprometterats eller klonats av en känd webbplats. Om du är bekant med webbplatsen övertygar du användaren om att länken är säker att klicka på. Den här tekniken kallas även för en _vattenstämpel som hålattack._
+- **Drive-by-url**: En attack skickar ett meddelande till mottagaren som innehåller en URL. När mottagaren klickar på URL-adressen tas den till en webbplats som försöker köra bakgrundskod. Den här bakgrundskoden försöker samla in information om mottagaren eller distribuera godtycklig kod på enheten. Vanligtvis är målwebbplatsen en känd webbplats som har komprometterats eller en klona av en känd webbplats. Webbplatsens bekanta med webbplatsen övertygar användaren om att länken är säker att klicka på. Den här tekniken kallas även för en _watering hole-attack_.
 
 > [!NOTE]
-> Kontrollera om den simulerade nätfiske-URL:en är tillgänglig i dina webbläsare som stöds innan du använder URL:en i en nätfiskekampanj. Medan vi arbetar med många url-ryktesleverantörer för att alltid tillåta dessa url:er för simulering har vi inte alltid fullständig täckning (till exempel Google Säker surfning). De flesta leverantörerna ger vägledning som gör att du alltid kan tillåta specifika URL:er (till <https://support.google.com/chrome/a/answer/7532419> exempel).
+> Kontrollera om den simulerade nätfiske-URL:en är tillgänglig i dina webbläsare som stöds innan du använder URL:en i en nätfiskekampanj. Medan vi arbetar med många URL-ryktesleverantörer för att alltid tillåta dessa simulerings-URL:er, har vi inte alltid fullständig täckning (till exempel Google Säker surfning). De flesta leverantörer ger vägledning som gör att du alltid kan tillåta specifika URL:er (till <https://support.google.com/chrome/a/answer/7532419> exempel).
 
-URL:erna som används av attacksimuleringsutbildningen beskrivs i följande lista:
+Url:erna som används av simuleringsutbildning för attack beskrivs i följande lista:
 
 - <https://www.mcsharepoint.com>
 - <https://www.attemplate.com>
@@ -100,12 +100,15 @@ URL:erna som används av attacksimuleringsutbildningen beskrivs i följande list
 
 ### <a name="create-a-simulation"></a>Skapa en simulering
 
-Stegvisa instruktioner om hur du skapar och skickar en ny simulering finns i [Simulera en nätfiskeattack.](attack-simulation-training.md)
+Stegvisa instruktioner om hur du skapar och skickar en ny simulering finns i [Simulera en nätfiskeattack](attack-simulation-training.md).
 
 ### <a name="create-a-payload"></a>Skapa en nyttolast
 
-Stegvisa instruktioner för hur du skapar en nyttolast för användning i en simulering finns i Skapa en anpassad [nyttolast för attacksimuleringsutbildning.](attack-simulation-training-payloads.md)
+Stegvisa instruktioner för hur du skapar en nyttolast för användning i en simulering finns i Skapa en anpassad [nyttolast för utbildning av attackattacker.](attack-simulation-training-payloads.md)
 
 ### <a name="gaining-insights"></a>Få insikter
 
-Stegvisa instruktioner om hur du får insikter med rapporter finns i Utbildnings om [attacksimulering.](attack-simulation-training-insights.md)
+Stegvisa instruktioner om hur du får insikter med rapporter finns i Få insikter [genom utbildning av attack simulering](attack-simulation-training-insights.md).
+
+> [!NOTE]
+> Attack Attack Attack använder Säkra länkar i Defender för Office 365 för att säkert spåra klickdata för URL-adressen i nyttolastmeddelandet som skickas till riktade mottagare av en nätfiskekampanj, även om inställningen Spåra inte **användarens** klickningar i principer för säkra länkar är aktiverad.

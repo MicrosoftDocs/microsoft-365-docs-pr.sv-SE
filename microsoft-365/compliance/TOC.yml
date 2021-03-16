@@ -44,16 +44,18 @@
           href: insider-risk-management.md
         - name: Planera för hantering av insiderrisker
           href: insider-risk-management-plan.md
-        - name: Komma igång med inställningar för Insider-risker
-          href: insider-risk-management-settings.md
         - name: Kom igång med hantering av insiderrisker
           href: insider-risk-management-configure.md
+        - name: Komma igång med inställningar för Insider-risker
+          href: insider-risk-management-settings.md
         - name: Skapa och hantera principer för hantering av insiderrisker
           href: insider-risk-management-policies.md
         - name: Undersöka aviseringar för insiderrisker
           href: insider-risk-management-alerts.md
         - name: Vidta åtgärder för insiderriskärenden
           href: insider-risk-management-cases.md
+        - name: Granska aktiviteter med granskningsloggen för Insider-risker
+          href: insider-risk-management-audit-log.md
         - name: Granska data med innehållsutforskaren för insiderrisker
           href: insider-risk-management-content-explorer.md
         - name: Hantera arbetsflödet med instrumentpanelen Användare
@@ -237,8 +239,12 @@
               href: data-loss-prevention-policies.md
             - name: Mer information om skydd mot Endpoint data förlust
               href: endpoint-dlp-learn-about.md
+            - name: Läs mer om standardprincipen för dataförlustskydd i Microsoft Teams (förhandsversion)
+              href: dlp-teams-default-policy.md
             - name: Mer information om Microsoft 365 lokal skanner för dataförlustskydd (förhandsversion)
               href: dlp-on-premises-scanner-learn.md
+            - name: Läs mer om Microsofts Efterlevnadstillägg (förhandsversion)
+              href: dlp-chrome-learn-about.md
         - name: Kom igång med DLP
           items:
             - name: Kom igång med DLP-standardprincipen
@@ -253,6 +259,8 @@
               href: endpoint-dlp-getting-started.md
             - name: Konfigurera enhetsproxy- och Internetanslutningsinställningar för Slutpunkt DLP
               href: endpoint-dlp-configure-proxy.md
+            - name: Kom igång med Microsofts Efterlevnadstillägg (förhandsversion)
+              href: dlp-chrome-get-started.md
             - name: Endpoint DLP Registreringsverktyg och -metoder för Windows 10-enheter
               items:
                 - name: Registreringsverktyg och -metoder för Windows 10-enheter

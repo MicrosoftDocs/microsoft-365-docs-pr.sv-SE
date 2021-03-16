@@ -1,5 +1,5 @@
 ---
-title: Rensa en mobil enhet i grundläggande mobilitet och säkerhet
+title: Rensa en mobil enhet i Basic Mobility and Security
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -17,78 +17,78 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Använd inbyggd grundläggande mobilitet och säkerhet för att ta bort information från registrerade enheter.
-ms.openlocfilehash: 3bb9bfe55653b021ce5a86dd5d3dbc3de45ed19a
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+description: Använd inbyggd basic mobility and security för att ta bort information från registrerade enheter.
+ms.openlocfilehash: ddf13ef6627d70128064e2d8bd185203244b12e4
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876834"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50819814"
 ---
-# <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Rensa en mobil enhet i grundläggande mobilitet och säkerhet
+# <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Rensa en mobil enhet i Basic Mobility and Security
 
-Du kan använda inbyggd grundläggande mobilitet och säkerhet för Microsoft 365 för att ta bort bara organisationsinformation, eller för att göra en fabriks återställning för att ta bort all information från en mobil enhet och återställa den till fabriks inställningarna.
+Du kan använda den inbyggda grundläggande rörlighet och säkerhet för Microsoft 365 för att ta bort enbart organisationsinformation, eller för att utföra en fabriksåterställning för att ta bort all information från en mobil enhet och återställa den till fabriksinställningarna.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-Mobila enheter kan lagra känslig organisationsinformation och ge till gång till organisationens Microsoft 365-resurser. För att skydda organisationens information kan du göra fabriks återställning eller ta bort företags data:
+Mobila enheter kan lagra känslig information om organisationen och ge åtkomst till organisationens Microsoft 365-resurser. För att skydda organisationens information kan du göra fabriksåterställning eller ta bort företagsdata:
 
-- **Fabriks återställning**: tar bort alla data på en användares mobila enhet, inklusive installerade program, foton och personlig information. När rensningen är klar återställs enheten till fabriks inställningarna.
+- **Fabriksåterställning:** Tar bort alla data på en användares mobila enhet, inklusive installerade program, foton och personlig information. När rensningen är klar återställs enheten till fabriksinställningarna.
 
-- **Ta bort företags data**: tar bara bort organisations data och lämnar installerade program, foton och personlig information på en användares mobila enhet.
+- **Ta bort företagsdata:** Tar bara bort organisationsdata och lämnar installerade program, foton och personlig information på en användares mobila enhet.
 
-- **När en enhet rensas (fabriks återställning eller tar bort företags data)** tas enheten bort från listan med hanterade enheter.
+- **När en enhet rensas (fabriksåterställning eller ta bort företagsdata)** tas enheten bort från listan med hanterade enheter.
     
-- **Återställa en enhet automatiskt**: du kan konfigurera en grundläggande mobilitet och säkerhets principer som automatiskt fabrik återställer en enhet efter det att användaren försöker ange enhets lösen ordet ett visst antal gånger. Följ stegen i [skapa säkerhets principer för enheter i grundläggande mobilitet och säkerhet](create-device-security-policies.md).
+- **Återställa en enhet automatiskt:** Du kan konfigurera en grundläggande mobilitets- och säkerhetsprincip som automatiskt fabriksåterställer en enhet när en användare inte lyckats ange enhetslösenordet ett visst antal gånger. Det gör du genom att följa stegen i [Skapa säkerhetsprinciper för enheter i grundläggande rörlighet och säkerhet.](create-device-security-policies.md)
     
-- **Om du vill ha information om hur du kan ta reda på användar upplevelsen** när du rensar sin enhet, se   [Vad är användare och enhets påverkan?](#whats-the-user-and-device-impact).
+- **Om du vill veta hur användarupplevelsen ser ut** när du rensar deras enhet kan du gå till   [Vad påverkar användaren och enheten?](#whats-the-user-and-device-impact).
 
 ## <a name="wipe-a-mobile-device"></a>Rensa en mobil enhet
 
-1. Gå till [administrations centret för Microsoft 365](https://support.microsoft.com/office/758befc4-0888-4009-9f14-0d147402fd23).
+1. Gå till [administrationscentret för Microsoft 365.](https://support.microsoft.com/office/758befc4-0888-4009-9f14-0d147402fd23)
 
-2. Skriv hantering av mobila enheter i Sök fältet och välj **hantering av mobila enheter** i resultat listan.
+2. Skriv Hantering av mobila enheter i sökfältet och välj **Hantering av mobila** enheter i listan med resultat.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Grundläggande alternativ för mobilitet och secruity mobila enheter":::
+    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Alternativ för hantering av mobila enheter med Enkel rörlighet och Secruity":::
 
 3. Välj **Hantera enheter**.
 
-4. Välj den enhet som du vill rensa.
+4. Välj den enhet du vill rensa.
 
 5. Välj **Hantera**.
 
-6. Välj den typ av fjärrsvep du vill göra.
+6. Välj den typ av fjärrensning du vill göra.
 
-    - Om du vill göra en fullständig rensning och återställa enheten till fabriks inställningarna väljer du **fabriks återställning**.
-    - Om du vill göra en selektiv rensning och bara ta bort Microsoft 365-organisationsinformation väljer du **ta bort företags data**.
-    - Om du vill ta bort enheten från din organisation väljer du **ta bort enhet**.
+    - Om du vill göra en fullständig rensning och återställa enheten till fabriksinställningarna väljer du **Fabriksåterställning**.
+    - Om du vill göra en selektiv rensning och bara ta bort Microsoft 365-organisationsinformation väljer du **Ta bort företagsdata.**
+    - Om du vill ta bort enheten från din organisation väljer du **Ta bort enhet**.
 
-7. Välj **Ja** för att bekräfta.
+7. Bekräfta genom att välja **Ja**.
 
 ## <a name="how-do-i-know-it-worked"></a>Hur vet jag att det fungerade?
 
-Den mobila enheten visas inte längre i listan med hanterade enheter.
+Du ser inte längre den mobila enheten i listan över hanterade enheter.
 
-## <a name="why-would-you-want-to-wipe-a-device"></a>Varför vill du rensa en enhet?
+## <a name="why-would-you-want-to-wipe-a-device"></a>Varför skulle du vilja rensa en enhet?
 
 Rensa en enhet av följande anledningar:
 
-- Mobila enheter som smartphones och surfplattor blir mer fulla hela tiden. Det innebär att det är lättare för användarna att lagra känslig företags information, till exempel person uppgifter eller konfidentiella meddelanden, samt komma åt den när du är på språng. Om någon av dessa mobila enheter tappas bort eller stjäls kan du förhindra att organisationens information slutar på ett felaktigt sätt genom att rensa enheten.
-- När en användare lämnar organisationen med en personlig enhet som är registrerad i grundläggande mobilitet och säkerhet kan du förhindra att organisations informationen går vidare med den användaren genom att göra en fabriks återställning.
-- Om din organisation tillhandahåller mobila enheter för användarna kan du behöva flytta över dem då och då. Om du gör en fabriks återställning på en enhet innan du tilldelar den till en ny användare ser du till att känslig information från den tidigare ägaren tas bort.
+- Mobila enheter som smartphones och surfplattor blir allt mer fullödig hela tiden. Det innebär att det är enklare för användarna att lagra känslig företagsinformation som personuppgifter eller konfidentiella meddelanden och att använda den var de än är. Om en av de mobila enheterna försvinner eller blir stulen kan en utparning av enheten förhindra att organisationens information hamnar i fel händer.
+- Om en användare lämnar organisationen med en personlig enhet som är registrerad i Basic Mobility and Security kan du förhindra att organisationsinformationen går med den användaren genom att göra en fabriksåterställning.
+- Om din organisation tillhandahåller mobila enheter åt användare kan du då och då behöva tilldela om enheterna. Genom att göra en fabriksåterställning på en enhet innan du tilldelar den till en ny användare kan du se till att känslig information från den tidigare ägaren tas bort.
 
-## <a name="whats-the-user-and-device-impact"></a>Vad händer med användare och enheter?
+## <a name="whats-the-user-and-device-impact"></a>Hur påverkar det användaren och enheten?
 
-Rensningen skickas direkt till den mobila enheten och enheten markeras som icke-kompatibel i Azure Active Directory. När alla data tas bort när en enhet återställs till fabriks inställningarna beskrivs i följande tabell vilket innehåll som tas bort för varje enhet när en enhet tas bort från företags data.
+Rensningen skickas direkt till den mobila enheten och enheten markeras som inte kompatibel i Azure Active Directory. Även om alla data tas bort när en enhet återställs till fabriksinställningarna beskriver följande tabell vilket innehåll som tas bort för varje enhetstyp när en enhet tas bort när företagsdata tas bort.
 
-|**Innehålls upphastighet**|**iOS 10 och senare**|**Android 5 och senare**|
+|**Påverkan på innehållet**|**iOS 10 och senare**|**Android 5 och senare**|
 |:-----|:-----|:-----|
-|Microsoft 365-AppData rensas om enheten skyddas av Intune App Protection-principer. Apparna har inte tagits bort. För enheter som inte skyddas av MAM (Mobile Application Management) kan inte Outlook och OneDrive ta bort cachelagrade data.<br/>**Obs!** För att tillämpa principer för Intune-appen måste du ha en Intune-licens.|Ja|Ja|
-|Princip inställningar som tillämpas av grundläggande mobilitet och säkerhet på enheter genomdrivs inte längre; användare kan ändra inställningarna.|Ja|Ja|
-|E-postprofiler som skapas av grundläggande mobilitet och säkerhet tas bort och cachelagrad e-post på enheten tas bort.|Ja|Saknas|
+|Appdata för Microsoft 365 rensas om enheten skyddas av App Protection-principer för Intune. Apparna tas inte bort. För enheter som inte skyddas av MAM-principer (Mobile Application Management) tar Outlook och OneDrive inte bort cachelagrade data.<br/>**Obs!** För att använda Intune-appskyddsprinciper måste du ha en Intune-licens.|Ja|Ja|
+|Principinställningarna som används av Basic Mobility och Security på enheter tillämpas inte längre. användare kan ändra inställningarna.|Ja|Ja|
+|E-postprofiler som skapats med Basic Mobility and Security tas bort och cachelagrad e-post på enheten tas bort.|Ja|Uppgift saknas|
 >[!NOTE]
->Företagsportalsappen är tillgänglig i App Store för iOS och Play Store för Android-enheter.
+>Företagsportalappen finns i App Store för iOS och Play Store för Android-enheter.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Konfigurera grundläggande mobilitet och säkerhet](set-up.md)
+[Konfigurera grundläggande Mobility and Security](set-up.md)
