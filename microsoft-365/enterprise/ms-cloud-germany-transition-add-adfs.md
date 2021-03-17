@@ -18,89 +18,114 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: Ad FS-migreringssteg (Active Directory Federation Services) för migreringen från Microsoft Cloud Deutschland.'
-ms.openlocfilehash: 030515227f3abdae82736807a01d1691d2d45552
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 852fc8f93158d7b6080f1add5a05e7367539f889
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727473"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838419"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>AD FS-migreringssteg för migreringen från Microsoft Cloud Deutschland
 
-Den här konfigurationsändringen kan tillämpas när som helst innan fas 4 startar.
-När fas 2 är slutförd kommer konfigurationsändringen att fungera och du kan logga in på globala slutpunkter för Office 365, till exempel `https://portal.office.com` . Om du implementerar konfigurationsändringen före fas 2 fungerar ännu  inte de globala Office 365-slutpunkterna, men det nya förtroende som förlitar sig på parten fortfarande är en del av AD FS-konfigurationen (Active Directory Federation Services).
+Den här konfigurationsändringen måste tillämpas när som helst innan fas 2 startar.
+När fas 2 är slutförd kommer konfigurationsändringen att fungera och du kan logga in via globala slutpunkter för Office 365, till exempel `https://portal.office.com` . Om du implementerar konfigurationsändringen före fas 2 fungerar ännu  inte de globala Office 365-slutpunkterna, men det nya förtroende som förlitar sig på parten fortfarande är en del av AD FS-konfigurationen (Active Directory Federation Services).
 
-Så här migrerar du AD FS-servergruppen från Microsoft Cloud Deutschland:
+Kunder som använder federerad autentisering med AD FS (Active Directory Federation Services) bör inte göra ändringar i utfärdare AV URI:er som används för alla autentiseringar med AD DS (Lokal Active Directory Domain Services) under migreringen. Att ändra utfärdare-URI:er leder till autentiseringsfel för användare i domänen. Uri:er för utfärdare kan ändras direkt i  AD FS eller när en domän konverteras från hanterad _till federerad_ och tvärtom. Vi rekommenderar att du inte lägger till, tar bort eller konverterar en federerad domän i Azure AD-klientorganisationen som har migrerats. Uri:er för utfärdare kan ändras när migreringen är fullständig.
 
-1. Backa upp dina AD FS-inställningar, inklusive information om FF-förtroende med [hjälp av de här stegen.](#backup) Namnge säkerhetskopian **Microsoft Cloud Deutschland_Only** den bara har information om Microsoft Cloud Deutschland-klientorganisationen.
-2. Testa återställningen med hjälp av säkerhetskopian Microsoft Cloud Deutschland_Only. AD FS-servergruppen bör fortsätta fungera som Endast Microsoft Cloud Deutschland.
+Så här förbereder du AD FS-servergruppen för migreringen från Microsoft Cloud Deutschland:
+
+1. Back up your AD FS settings, including the existing Microsoft Cloud Deutschland Relying Party trust, with [these steps](#backup). Namnge säkerhetskopian **MicrosoftCloudDeutschlandOnly** för att ange att den bara har information om Microsoft Cloud Deutschland-klientorganisationen.
+
+   > [!NOTE]
+   > Säkerhetskopian innehåller inte bara det befintliga Office 365 Relying Party Trust för Microsoft Cloud Deutschland, utan även alla andra Relying Party-förtroenden som finns i respektive AD FS-servergrupp.
+
+2. Testa återställningen med hjälp av säkerhetskopian MicrosoftCloudDeutschlandOnly. AD FS-servergruppen bör fortsätta fungera som Endast Microsoft Cloud Deutschland.
 
 När du har slutfört och testat AD FS-säkerhetskopieringen utför du följande steg för att lägga till ett nytt förtroende för den beroende parten i din ADFS-konfiguration:
 
-1. Öppna AD FS-hanteringskonsolen
-2. I den vänstra rutan i ADFS-hanteringskonsolen expanderar du **ADFS** och sedan Förtroenderelationer **och** använder **gruppförtroenden**
+1. Öppna AD FS-hanteringskonsolen.
+
+2. I den vänstra rutan på ADFS-hanteringskonsolen navigerar du till menyn Förtroenden för **förlitande** part.
+
 3. I den högra rutan väljer du **Lägg till förtroende för förlitande part...**
-4. Välj **Nästa** på **välkomstsidan** i guiden Lägg till förtroende för förlitande part.
-5. Välj Importera **data om den** beroende part som är publicerad online eller i ett lokalt nätverk på sidan Välj **datakälla.** Värdet **för federationsmetadataadress (värdnamn** eller URL) måste anges till `https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml` . Klicka sedan på **Nästa**.
-6. På sidan **Välj datakälla** skriver du visningsnamnet, till exempel **Microsoft Office 365 Identity Platform WorldWide.** Klicka sedan på **Nästa**.
-7. På sidan Konfigurera **multifaktorautentisering nu?** väljer du ett lämpligt val enligt dina autentiseringskrav. Om du väljer Jag vill inte konfigurera flerfaktorautentisering för detta förtroende för förlitar sig på part för **stunden.** Du kan ändra den här inställningen senare om du vill.
-8. Behåll Tillåt alla användare  att komma åt **den** här beroende parten som är vald på Klicka på **Nästa** i välj utfärdningsauktoriseringsregler
+
+4. Välj **Börja** på **välkomstsidan** i guiden Lägg till förtroende för förlitande part.
+
+5. Välj Importera **data om den** beroende part som är publicerad online eller i ett lokalt nätverk på sidan Välj **datakälla.** Värdet **för federationsmetadataadress (värdnamn** eller URL) måste anges till `https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml` . Klicka på **Nästa**.
+
+6. På sidan **Ange visningsnamn** skriver du visningsnamnet, till exempel **Microsoft Office 365 Identity Platform WorldWide.** Klicka på **Nästa**.
+
+7. Om du använder ADFS i Windows Server 2012 går du till guidesidan Konfigurera multifaktorautentisering **nu?** och väljer rätt val enligt dina autentiseringskrav. Om du väljer Jag vill inte konfigurera flerfaktorautentisering för detta förtroende för förlitar sig på part för **stunden.** Du kan ändra den här inställningen senare om du vill.
+
+8. För AD FS 2012: Behåll Tillåt  alla användare att använda den här beroende parten markerad under Välj auktoriseringsregler i välj utfärdningsauktoriseringsregler och klicka på **Nästa.** 
+
+8. För AD FS 2016 och AD FS 2019: På sidan Välj åtkomstkontrollprincip väljer du lämplig åtkomstkontrollprincip och klickar på **Nästa.**  Om inget är valt fungerar inte lita på den beroende **partens** förtroende.
+
 9. Klicka **på** Nästa på **sidan Är redo att lägga till** förtroende för att slutföra guiden.
+
 10. Klicka **på** Stäng på **sidan** Slutför.
 
-Genom att stänga guiden upprättas förtroende för den beroende parten med globala Office 365-tjänster. Det finns dock ännu inga regler för utfärdningstransformning.
+Genom att stänga guiden upprättas lita på den beroende parten med den globala Office 365-tjänsten. Det finns dock ännu inga regler för utfärdningstransformning.
 
 Du kan använda [AD FS-hjälpen för](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) att generera rätt regler för utfärdningstransformning. De anspråksregler som skapats med AD FS-hjälpen kan antingen läggas till manuellt via AD FS-hanteringskonsolen eller med PowerShell. AD FS-hjälpen genererar de PowerShell-skript som krävs.  
 
-<!--
-    Question from ckinder
-    is step #3 true?
-    how to verify step 5? Need more information!
--->
-1. Kör Generera anspråk på AD FS-hjälp och kopiera PowerShell anspråk på transformeringsskript med alternativet Kopiera i det övre högra hörnet i skriptet.  
-2. Öppna den textredigerare du föredrar och klistra in PowerShell-skriptet i ett nytt textfönster.
-3. Lägg till följande PowerShell-rader i slutet av det klistrade skriptet från steg 2
-    ```powershell
-    $authzRules = "=>issue(Type = `"http://schemas.microsoft.com/authorization/claims/permit`", Value = `"true`"); "
-    $RuleSet = New-AdfsClaimRuleSet -ClaimRule "<AD FS Help generated PSH>"
-    Set-AdfsRelyingPartyTrust -TargetName “Microsoft Office 365 Identity Platform WorldWide” -IssuanceTransformRules $RuleSet.ClaimRulesString -IssuanceAuthorizationRules $authzRules
-    ```
-4. Säkra och kör PowerShell-skriptet.
-5. Kontrollera att det finns två förtroenden för förlitande part. en för Microsoft Cloud Deutschland och en för den globala Office 365-tjänsten.
-6. Säkerhetskopiera dina förtroenden genom att [följa de här stegen](#backup). Spara den med namnet **FFAndWorldwide**.
-7. Slutför backend-migreringen och kontrollera att AD FS fortfarande fungerar under migreringen.
+> [!NOTE]
+> [AD FS-hjälpen](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) genererar standardutformningsregler som levereras med produkten. Men om anpassade regler för utfärdningstransformering finns i Microsoft Cloud Deutschland Relying Party Trust (till exempel anpassade utfärdare av URI:er, oföränderliga ICKE-standard-ID eller andra anpassningar), måste reglerna som genereras av AD FS-hjälpen ändras på ett sätt som passar den anpassade logik som för närvarande gäller för Microsoft Cloud Deutschland som förlitar sig på part. Om de här anpassningarna inte är integrerade i reglerna som genereras via [AD FS-hjälpen](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator)  fungerar troligtvis inte autentisering för **Microsoft Office 365 Identity Platform WorldWide** för dina federerade identiteter.
+
+1. Kör **Generera anspråk i** AD [FS-hjälpen](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) och  kopiera PowerShell-skriptet med alternativet Kopiera i det övre högra hörnet i skriptet.
+
+2. Följ anvisningarna i AD [FS-hjälpen](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) om hur du kör PowerShell-skriptet i AD FS-servergruppen för att generera det globala litande partförtroendet.
+
+3. Kontrollera att två Relying PartyTtrusts finns. en för Microsoft Cloud Deutschland och en för den globala Office 365-tjänsten. Följande kommando kan användas för kontrollen. Den bör returnera två rader och respektive namn och identifierare.
+
+   ```powershell
+   Get-AdfsRelyingPartyTrust | Where-Object {$_.Identifier -like 'urn:federation:MicrosoftOnline*'} | Select-Object Name, Identifier
+   ```
+
+4. Säkerhetskopiera din fullständiga migreringskonfiguration, inklusive båda förtroenden från förlitande part, med [hjälp av de här stegen.](#backup) Spara den med namnet **MicrosoftCloudDeutschlandAndWorldwide**.
+
+5. Under migreringen kontrollerar du regelbundet att AD FS-autentisering fungerar med Microsoft Cloud Deutschland och Microsoft Global-molnet i de olika migreringssteg som stöds.
+
 
 ## <a name="ad-fs-disaster-recovery-wid-database"></a>AD FS-katastrofåterställning (WID-databas)
 
-Om du vill återställa AD FS-servergruppen i en katastrof måste snabb återställningsverktyget för [AD FS](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) utnyttjas. Därför måste verktyget laddas ned och innan migreringen startar måste en säkerhetskopia skapas och lagras på ett säkert sätt. I det här exemplet (TAT-miljöer) har följande kommandon körts för att backa servergruppen:
+Om du vill återställa AD FS-servergruppen i en katastrof måste snabb återställningsverktyget för [AD FS](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) utnyttjas. Därför måste verktyget laddas ned och innan migreringen startar måste en säkerhetskopia skapas och lagras på ett säkert sätt. I det här exemplet har följande kommandon körts för att backa upp en servergrupp som körs på en WID-databas:
 
 <h2 id="backup"></h2>
 
 ### <a name="back-up-an-ad-fs-farm"></a>Backa upp en AD FS-servergrupp
 
 1. Installera AD FS Rapid Restore Tool på den primära AD FS-servern.
+
 2. Importera modulen i en PowerShell-session med det här kommandot.
-    ```powershell
-    Import-Module "C:\Program Files (x86)\ADFS Rapid Recreation Tool\ADFSRapidRecreationTool.dll"
-    ```
+
+   ```powershell
+   Import-Module "C:\Program Files (x86)\ADFS Rapid Recreation Tool\ADFSRapidRecreationTool.dll"
+   ```
+
 3. Kör kommandot för säkerhetskopiering:
-    ```powershell
-    Backup-ADFS -StorageType "FileSystem" -storagePath "<Storage path of backup>" -EncryptionPassword "<password>" -BackupComment "Restore Doku" -BackupDKM
-    ```
+
+   ```powershell
+   Backup-ADFS -StorageType "FileSystem" -storagePath "<Storage path of backup>" -EncryptionPassword "<password>" -BackupComment "Restore Doku" -BackupDKM
+   ```
+
 4. Spara säkerhetskopian på ett säkert sätt på önskad destination.
+
 
 ### <a name="restore-an-ad-fs-farm"></a>Återställa en AD FS-servergrupp
 
 Om servergruppen misslyckades helt och det inte går att återgå till den gamla servergruppen gör du följande. 
 
 1. Flytta den tidigare skapade och lagrade säkerhetskopian till den nya primära AD FS-servern.
+
 2. Kör följande `Restore-ADFS` PowerShell-kommando. Om det behövs importerar du AD FS SSL-certifikatet i förväg.
 
-    ```powershell
-    Restore-ADFS -StorageType "FileSystem" -StoragePath "<Path to Backup>" -DecryptionPassword "<password>" -GroupServiceAccountIdentifier "<gMSA>" -DBConnectionString "WID" -RestoreDKM
-    ```
+   ```powershell
+   Restore-ADFS -StorageType "FileSystem" -StoragePath "<Path to Backup>" -DecryptionPassword "<password>" -GroupServiceAccountIdentifier "<gMSA>" -DBConnectionString "WID" -RestoreDKM
+   ```
 
 3. Peka dina nya DNS-poster eller belastningsutjämnaren på de nya AD FS-servrarna.
+
 
 ## <a name="more-information"></a>Mer information
 

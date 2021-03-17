@@ -1,5 +1,5 @@
 ---
-title: Översikt över Microsoft Viva-ämnen
+title: Översikt över Microsoft Viva Topics
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -21,7 +21,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/04/2021
 ms.locfileid: "50453975"
 ---
-# <a name="microsoft-viva-topics-overview"></a>Översikt över Microsoft Viva-ämnen 
+# <a name="microsoft-viva-topics-overview"></a>Översikt över Microsoft Viva Topics 
 
 Viva Topics använder Microsoft AI-teknik, Microsoft 365, Microsoft Graph, Search och andra komponenter och tjänster för att föra kunskap till användarna i Microsoft 365-appar som de använder varje dag. De börjar med moderna SharePoint-sidor och Microsoft Search.
 

@@ -2,8 +2,8 @@
 title: Microsoft produktivitetspoäng
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Översikt över Microsoft produktivitetspoäng.
-ms.openlocfilehash: 0ce25175b3307e986c079c1614e38e8d87828e04
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 72f9bcfb273912629744ec25ad9c0be720e76081
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509092"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838431"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft produktivitetspoäng 
 
-Produktivitetspoäng stödjer resan till digital transformation med insikter om hur din organisation använder Microsoft 365 och de tekniska upplevelser som stödjer den. Din organisations poäng speglar personer och tekniska upplevelsemätningar och kan jämföras med riktmärke från organisationer som har samma storlek som din.
+Produktivitetspoäng stödjer resan till digital transformation med insikter om hur din organisation använder Microsoft 365 och de tekniska upplevelser som stödjer den. Din organisations poäng speglar personer och tekniska upplevelsemätningar och kan jämföras med riktmärken från organisationer som har liknande storlek som din.
 
 Det tillhandahåller:
 
@@ -72,7 +72,7 @@ Produktivitetspoäng inkluderar data från Exchange, SharePoint, OneDrive, Teams
 Din organisations poäng uppdateras dagligen och återspeglar användaråtgärderna som slutfördes under de senaste 28 (inklusive dagens datum).
 
 
-## <a name="pre-requisites"></a>Förutsättningar 
+## <a name="prerequisites"></a>Förutsättningar 
 
 För data över personupplevelser måste du ha en Microsoft 365 for Business- eller Office 365 för Enterprise-prenumeration. Om du vill lägga till en slutpunktsanalys för din klientorganisation måste du lägga till Microsoft Intune i prenumerationen. Intune hjälper dig att skydda organisationens data genom att hantera enheter och appar. När du har Intune kan du aktivera slutpunktsanalys i Intune-upplevelsen. Läs mer om [Microsoft Intune](https://docs.microsoft.com/mem/intune/). 
 > [!NOTE]
@@ -92,9 +92,9 @@ Produktivitetspoäng är endast tillgängligt i Microsoft 365 Admin Center och k
 > [!NOTE]
 > Endast en IT-professionell med rollen som global administratör kan registrera sig eller välja en klientorganisation för produktivitetspoäng.
 
-Observera att informationen endast är avsedd att användas för att främja digital transformation med Microsoft 365 och bör därför delas med omdöme. 
+Den rollbaserade åtkomstkontrollmodellen för Productivity Score hjälper organisationer att föra arbetet med digitala omvandlingar vidare med Microsoft 365 genom att ge flexibiliteten att tilldela roller till IT-personal inom en organisation.
 
-Microsoft strävar efter att skydda den personliga integriteten. I den här [sekretessdokumentet](privacy.md)  beskrivs de kontroller vi tillhandahåller för dig som din organisations IT-administratör, för att försäkra att informationen är åtgärdbar utan att äventyrar tillförlitligheten som du placerar i Microsoft.
+Microsoft strävar efter att skydda den personliga integriteten. I den här [sekretessdokumentet](privacy.md)  beskrivs de kontroller vi tillhandahåller dig, som din organisations IT-administratör, för att försäkra att informationen är åtgärdbar utan att äventyrar tillförlitligheten som du placerar i Microsoft.
 
 Du kan komma åt upplevelsen från Startsida för Microsoft 365 Admin under **Rapporter** > **Produktivitetspoäng**.
 

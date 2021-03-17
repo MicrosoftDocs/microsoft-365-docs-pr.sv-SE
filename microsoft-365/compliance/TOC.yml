@@ -540,6 +540,8 @@
               href: de-duplication-in-ediscovery-search-results.md
             - name: Skillnader mellan uppskattade och faktiska sökresultat
               href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            - name: Innehåll som lagrats i postlådor för eDiscovery
+              href: what-is-stored-in-exo-mailbox.md
             - name: Dekryptering i eDiscovery-verktyg
               href: ediscovery-decryption.md
         - name: PowerShell-skript för innehållssökning
@@ -570,6 +572,8 @@
               href: assign-ediscovery-permissions.md
             - name: Nyckelordsfrågor och sökvillkor
               href: keyword-queries-and-search-conditions.md
+            - name: Innehåll som lagrats i postlådor för eDiscovery
+              href: what-is-stored-in-exo-mailbox.md
             - name: Konfigurera filtrering av sökbehörigheter
               href: permissions-filtering-for-content-search.md
             - name: Konfigurera efterlevnadsgränser
@@ -635,14 +639,27 @@
         - name: Hantera bearbetning av fel
           href: processing-data-for-case.md
           items:
-            - name: Avancerad indexering av dokumentägardata
+            - name: Avancerad indexering av dokumentansvarig innehåll
               href: indexing-custodian-data.md
-            - name: Åtgärda fel vid bearbetning av data
+            - name: Åtgärda fel vid bearbetning av innehåll
               href: error-remediation-when-processing-data-in-advanced-ediscovery.md
             - name: Felåtgärder för enskilt objekt
               href: single-item-error-remediation.md
+        - name: Samla innehåll för ett ärende (förhandsversion)
+          items:
+            - name: Lär dig om samlingar (förhandsversion)
+              href: collections-overview.md
+            - name: Skapa en utkastsamling (förhandsversion)
+              href: create-draft-collection.md
+            - name: Bekräfta en utkastsamling i en granskningsuppsättning (förhandsversion)
+              href: commit-draft-collection.md
+            - name: Samlingsstatistik och rapporter (förhandsversion)
+              href: collection-statistics-reports.md
+            - name: Skapa sökfrågor för samlingar
+              href: building-search-queries.md
+            - name: Nyckelordsfrågor och sökvillkor
+              href: keyword-queries-and-search-conditions.md
         - name: Samla in data för ett ärende
-          href: collecting-data-for-ediscovery.md
           items:
             - name: Skapa en sökning
               href: create-search-to-collect-data.md
@@ -661,7 +678,7 @@
               href: load-non-Office-365-data-into-a-review-set.md
             - name: Lägga till data i en annan granskningsuppsättning
               href: add-data-to-review-set-from-another-review-set.md
-        - name: Granska ärendedata
+        - name: Granska ärendeinnehåll
           items:
             - name: Använda instrumentpanelen för granskningsuppsättningar
               href: advanced-ediscovery-dashboard.md
@@ -671,7 +688,7 @@
               href: review-set-search.md
             - name: Tagga dokument i en granskningsuppsättning
               href: tagging-documents.md
-        - name: Analysera ärendedata
+        - name: Analysera ärendeinnehåll
           href: analyzing-data-in-review-set.md
           items:
             - name: Identifiering av nästan dubbletter
@@ -680,11 +697,11 @@
               href: email-threading-in-advanced-ediscovery.md
             - name: Teman
               href: themes-in-advanced-ediscovery.md
-            - name: Analysera data med hjälp av relevansmodulen
+            - name: Analysera innehåll med hjälp av relevansmodulen
               href: using-relevance.md
-            - name: Tillbakagångar av relevansmodulen
+            - name: Utfasning av relevansmodulen
               href: relevance-module-retirement.md
-        - name: Exportera ärendedata
+        - name: Exportera ärendeinnehåll
           href: exporting-data-ediscover20.md
           items:
             - name: Ladda ner dokument från en granskningssats
@@ -725,6 +742,8 @@
               href: permissions-filtering-for-content-search.md
             - name: Konfigurera efterlevnadsgränser
               href: set-up-compliance-boundaries.md
+            - name: Innehåll som lagrats i postlådor för eDiscovery
+              href: what-is-stored-in-exo-mailbox.md
             - name: Dekryptering i eDiscovery-verktyg
               href: ediscovery-decryption.md
             - name: Samla in information om eDiscovery-diagnostik

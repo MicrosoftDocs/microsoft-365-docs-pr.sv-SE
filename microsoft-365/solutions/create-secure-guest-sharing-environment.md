@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Få reda på mer om tillgängliga alternativ för att skapa en säker delningsmiljö för gäster i Microsoft 365 och ge gäståtkomst för bättre samarbete.
-ms.openlocfilehash: c52feeb8e5c85d38dfa1623ecdd7c2ee2a381fbd
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 28b2efba9f0c4ba17811a9871b05ab9f5a7a4839
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667711"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838693"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Skapa en säker miljö för gästdelning
 
@@ -45,7 +45,7 @@ Observera att vi inte tar upp inställningarna för gästdelning i den här arti
 
 ## <a name="set-up-multi-factor-authentication-for-guests"></a>Konfigurera multifaktorautentisering för gäster
 
-Multifaktorautentisering minskar kraftigt risken för att ett konto komprometteras. Eftersom gästanvändare kanske använder personliga e-postkonton som inte följer några principer för kontroll eller bästa praxis är det särskilt viktigt att kräva multifaktorautentisering för gäster. Om en gästanvändares användarnamn och lösenord blir stulna, minskar en andra autentiseringsfaktor avsevärt risken för att okända personer ska få åtkomst till webbplatserna och filerna.
+Multifaktorautentisering minskar kraftigt risken för att ett konto komprometteras. Eftersom gästanvändare kanske använder personliga e-postkonton som inte följer några styrningsprinciper eller bästa praxis är det särskilt viktigt att kräva multifaktorautentisering för gäster. Om en gästanvändares användarnamn och lösenord blir stulna, en andra autentiseringsfaktor minimera avsevärt risken för att okända personer ska få åtkomst till webbplatserna och filerna.
 
 I det här exemplet konfigurerar vi multifaktorautentisering för gäster genom att använda en princip för villkorsstyrd åtkomst i Azure Active Directory.
 
@@ -70,7 +70,7 @@ Gästen måste då registrera sig för multifaktorautentisering för att de ska 
 
 ## <a name="set-up-a-terms-of-use-for-guests"></a>Konfigurera användarvillkor för gäster
 
-I vissa fall kanske gästanvändare inte har undertecknat avtal eller andra juridiska avtal med din organisation. Du kan kräva att gästerna godkänner användningsvillkor innan de kan komma åt filer som delas med dem. Användningsvillkoren kan visas första gången de försöker få åtkomst till en delad fil eller webbplats.
+I vissa fall kanske gästanvändare inte har undertecknat sekretessavtal eller andra juridiska avtal med din organisation. Du kan kräva att gästerna godkänner användningsvillkor innan de kan komma åt filer som delas med dem. Användningsvillkoren kan visas första gången de försöker få åtkomst till en delad fil eller webbplats.
 
 Om du vill skapa användningsvillkor måste du först skapa dokumentet i Word eller något annat redigeringsprogram och sedan spara det som en PDF-fil. Filen kan sedan laddas upp till Azure AD.
 
@@ -105,7 +105,7 @@ Skapa princip för villkorsstyrd åtkomst
 10. På bladet **Bevilja** väljer du **Användningsvillkor för gäster** och klickar sedan på **Välj**.
 11. På bladet **Nytt**, under **Aktivera princip**, klickar du på **På** och sedan på **Skapa**.
 
-Första gången en gästanvändare försöker komma åt innehåll, ett team eller en webbplats i organisationen måste de acceptera villkoren för användning.
+Första gången en gästanvändare försöker komma åt innehåll, ett team eller en webbplats i din organisation måste de acceptera användningsvillkoren.
 
 > [!NOTE]
 > Användningen av villkorstyrd åtkomst kräver en Azure Active Directory Premium P1-licens. Mer information finns i [Vad är villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
@@ -116,37 +116,30 @@ Första gången en gästanvändare försöker komma åt innehåll, ett team elle
 
 ## <a name="set-up-guest-access-reviews"></a>Konfigurera granskning av gäståtkomst
 
-Med åtkomstgranskningar i Azure AD kan du automatisera en återkommande granskning av användaråtkomst till olika team och grupper. Genom att begära åtkomstgranskning specifikt för gäster kan du bidra till att gästanvändare inte behåller åtkomsten till organisationens känsliga information under längre tid än nödvändigt.
+Med åtkomstgranskningar i Azure AD kan du automatisera en återkommande granskning av användaråtkomst till olika team och grupper. Genom att begära åtkomstgranskning specifikt för gäster kan du bidra till att säkerställa att gästanvändare inte behåller åtkomsten till organisationens känsliga information under längre tid än nödvändigt.
 
-Åtkomstgranskningar kan organiseras i program. Ett program är en gruppering av liknande åtkomstgranskningar som kan användas för att organisera åtkomstgranskningar för rapporter och granskningsändamål.
-
-Skapa ett program
-
-1. Logga in på Azure-portalen och öppna sidan [Identitetsstyrning](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade).
-2. I den vänstra menyn klickar du på **Program**
-3. Klicka på **Nytt program**.
-4. Skriv ett **namn**  och **Beskrivning**.
-5. Klicka på **Skapa**.
-
-När programmet har skapats kan vi skapa en granskning av gäståtkomsten och koppla den till programmet.
-
-Konfigurera åtkomstgranskning av gästanvändare
+Så här konfigurerar du en granskning av gäståtkomst
 
 1. På sidan [Identitetsstyrning](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade) klickar du på **Åtkomstgranskningar** i den vänstra menyn.
 2. Klicka på **Ny åtkomstgranskning**.
+3. Välj alternativet **Team + Grupper**.
+4. Välj alternativet **Alla Microsoft 365-grupper med gästanvändare**. Klicka på **Välj grupp(er) att utesluta** om du vill utesluta några grupper.
+5. Välj alternativet **endast gästanvändare** och klicka sedan på **Nästa: Granskningar**.
+6. Under **Välj granskare** välj **Gruppägare**.
+7. Klicka på **Välj reservgranskare**, välj vem som ska vara reservgranskare och klicka sedan på **Välj**.
+8. Under **Ange upprepning av granskning** välj **Kvartals**.
+9. Välj ett startdatum och varaktighet.
+10. För **Avsluta** väljer du **Aldrig** och klickar sedan på **Nästa: Inställningar**.
 
-   ![Skärmbild av inställningar för åtkomstgranskning i Azure AD](../media/azure-ad-create-access-review.png)
+    ![Skärmbild av fliken för åtkomstgranskning i Azure AD](../media/azure-ad-create-access-review.png)
 
-3. Skriv ett namn i rutan **Namn**.
-4. För **Frekvens** väljer du **Varje kvartal**.
-5. För **Slut** väljer du **Aldrig**.
-6. För **Omfång** väljer du **Enbart gästanvändare**.
-7. Klicka på **Grupp**, markera de grupper som du vill ska ingå i åtkomstgranskningen och klicka sedan på **Välj**.
-8. Under **Program** klickar du på **Länka till program**.
-9. På bladet **Välj ett program** väljer du **Program för granskning av gäståtkomst**
-10. Klicka på **Start**.
+11. På fliken **Inställningar** granska inställningarna för efterlevnad av dina affärsregler.
 
-En separat åtkomstgranskning skapas för varje grupp som du anger. Gruppägare för varje grupp kommer att få ett e-postmeddelande varje kvartal för att godkänna eller neka gäståtkomst till sina grupper.
+    ![Skärmbild av fliken för inställningar för åtkomstgranskning i Azure AD](../media/azure-ad-create-access-review-settings.png)
+
+12. Klicka **Nästa: Granska + Skapa**.
+13. Skriv ett **Granskningsnamn** granska inställningarna.
+14. Klicka på **Skapa**.
 
 Det är viktigt att du noterar att gäster kan beviljas åtkomst till team eller grupper, eller till enskilda filer och mappar. När de får åtkomst till filer och mappar kanske gästerna inte läggs till i någon särskild grupp. Om du vill göra åtkomstgranskningar för gästanvändare som inte tillhör ett team eller en grupp kan du skapa en dynamisk grupp i Azure AD för alla gäster och sedan skapa en åtkomstgranskning för den gruppen. Webbplatsägaren kan även hantera [förfallodatum för gäster för webbplatsen](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea)
 
@@ -156,9 +149,9 @@ Det är viktigt att du noterar att gäster kan beviljas åtkomst till team eller
 
 [Skapa en åtkomstgranskning av grupper eller program i åtkomstgranskningar i Azure AD](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
 
-## <a name="set-up-web-only-access-for-guest-users"></a>Konfigurera endast webbåtkomst för gästanvändare
+## <a name="set-up-web-only-access-for-guests"></a>Konfigurera endast webbåtkomst för gästanvändare
 
-Du kan minska din attackyta och underlätta administrationen genom att kräva att gästanvändarna bara får åtkomst till dina team, webbplatser och filer med hjälp av en webbläsare.
+Du kan minska din attackyta och underlätta administrationen genom att kräva att gästanvändarna får åtkomst till dina team, webbplatser och filer bara med hjälp av en webbläsare.
 
 För Microsoft 365 Grupper och Team gör du det med en princip för villkorsstyrd åtkomst i Azure AD. För SharePoint är detta konfigurerat i administrationscentret för SharePoint. (Du kan också [använda känslighetsetiketter för att tillåta begränsad endast webb-åtkomst för gäster](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).)
 
@@ -192,9 +185,9 @@ Begränsa gäståtkomsten till endast SharePoint
 
 Observera att den här inställningen i administrationscentret för SharePoint skapar en princip med stöd för villkorstyrd åtkomst i Azure AD.
 
-## <a name="configure-a-session-timeout-for-guest-users"></a>Konfigurera en tidsgräns för sessioner för gästanvändare
+## <a name="configure-a-session-timeout-for-guests"></a>Konfigurera en sessionstidsgräns för gästanvändare
 
-Genom att kräva att gästanvändare ska autentiseras med jämna mellanrum kan du minska risken för att okända användare får åtkomst till organisationens innehåll om en gästanvändares enhet inte är skyddad. Du kan konfigurera en princip för villkorsstyrd åtkomst med sessionstidsgräns för gästanvändare i Azure AD.
+Genom att kräva att gästanvändare ska autentiseras med jämna mellanrum kan du minska risken för att okända användare får åtkomst till din organisations innehåll om en gästanvändares enhet inte är skyddad. Du kan konfigurera en princip för villkorsstyrd åtkomst med sessionstidsgräns för gästanvändare i Azure AD.
 
 Konfigurera en princip för sessionstidsgräns för gäster
 

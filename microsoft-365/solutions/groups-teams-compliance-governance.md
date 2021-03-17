@@ -1,5 +1,5 @@
 ---
-title: Alternativ för kompatibilitet för Microsoft 365-grupper, team och SharePoint-samarbete
+title: Efterlevnadsalternativ för Microsoft 365-grupper, Teams och SharePoint-samarbete
 ms.reviewer: ''
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,69 +14,71 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Läs om alternativ för kompatibilitet för Microsoft 365-grupper,-team och SharePoint-samarbete.
-ms.openlocfilehash: e1ca6e638b2d44ae3b04e2a0f13222424e89714d
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+description: Läs mer om kompatibilitetsalternativ för Microsoft 365-grupper, Teams och SharePoint-samarbete.
+ms.openlocfilehash: f68381ab45e74b9b7c8f44465387add82bd4150a
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613636"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838657"
 ---
-# <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Alternativ för kompatibilitet för Microsoft 365-grupper, team och SharePoint-samarbete
+# <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Efterlevnadsalternativ för Microsoft 365-grupper, Teams och SharePoint-samarbete
 
-Microsoft 365 erbjuder en mängd olika verktyg som gör att användarna kan samar beta. Granska de här alternativen och fundera på hur de kan mappa till dina företags behov, känsligheten hos dina data och omfattningen på de personer som användarna måste samar beta med.
+Microsoft 365 erbjuder en komplett uppsättning verktyg för att upprätthålla efterlevnad allt eftersom användarna samarbetar. Gå igenom de här alternativen och fundera på hur de kan mappa till dina affärsbehov, dina datas känslighet och vilka personer som användarna behöver samarbeta med.
 
-Följande tabell innehåller en snabb referens för de kontroll kontroller som finns tillgängliga i Microsoft 365. Mer information finns i följande avsnitt.
+Följande tabell innehåller en snabbreferens för de efterlevnadskontroller som är tillgängliga i Microsoft 365. Ytterligare information ges i följande avsnitt.
 
 |Kategori|Beskrivning|Referens|
 |:-------|:----------|:--------|
-|Informations lagring|||
-||Behåll gruppens e-post-och SharePoint-innehåll|[Läs mer om bevarande principer för SharePoint och OneDrive](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-sharepoint)|
-||Bevara chatt och meddelanden|[Läs mer om bevarande principer för Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-teams)|
-|Informations klassificering|||
-||Klassificera grupper och team|[Använd känslighets etiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
-||Automatiskt klassificera känsligt innehåll|[Använda en känslighetsetikett för innehåll automatiskt](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)|
+|Informationsbevarande|||
+||Behålla e-post och SharePoint-innehåll för grupper|[Läs mer om bevarandeprinciper för SharePoint och OneDrive](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-sharepoint)|
+||Behålla chatt och meddelanden|[Läs mer om bevarandeprinciper för Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-teams)|
+|Informationsklassificering|||
+||Klassificera grupper och team|[Använda känslighetsetiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
+||Klassificera känsligt innehåll automatiskt|[Använda en känslighetsetikett för innehåll automatiskt](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)|
 ||Kryptera känsligt innehåll|[Begränsa åtkomst till innehåll med hjälp av känslighetsetiketter för att tillämpa kryptering](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)|
 |Informationsskydd|||
-||Förhindra förlust av känslig information|[Översikt över skydd mot data förlust](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)|
-||Skydda känslig information i chatten.|[Förhindra data förlust och Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams)|
+||Förhindra förlust av känslig information|[Översikt över dataförlustskydd](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)|
+||Skydda känslig information i chatten.|[Skydd mot dataförlust och Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams)|
 ||Definiera känslig information för din organisation|[Vanliga typer av känslig information](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types)|
-|Användar segmentering|||
-||Begränsa kommunikationen mellan användar segment|[Informationsbarriärer](https://docs.microsoft.com/microsoft-365/compliance/information-barriers)|
+|Användarsegmentering|||
+||Begränsa kommunikationen mellan användarsegment|[Informationsbarriärer](https://docs.microsoft.com/microsoft-365/compliance/information-barriers)|
 
-## <a name="information-retention"></a>Informations lagring
+## <a name="information-retention"></a>Informationsbevarande
 
-Bevarande principer är tillgängliga för att behålla eller ta bort objekt som används för att samar beta i grupper och team, inklusive filer, meddelanden och e-post. Principer kan anges för att behålla och ta bort, endast för att behålla eller ta bort. Information som omfattas av en bevarande princip är skyddad i händelse av att gruppen eller teamet upphör eller på annat sätt raderas.
+Bevarandeprinciper är tillgängliga för att behålla eller ta bort objekt som används för samarbete i grupper och grupper, inklusive filer, meddelanden och e-post. Principer kan ställas in på att behålla och ta bort, endast behålla eller ta bort. Information som omfattas av en bevarandeprincip skyddas om gruppen eller gruppen upphör att gälla eller tas bort på annat sätt.
 
-Konfigurering av en bevarande princip för Microsoft 365-grupper täcker gruppens post låda och tillhör ande SharePoint-webbplats och filer.
+Konfigurering av en bevarandeprincip för Microsoft 365 Grupper omfattar grupppostlådan och den tillhörande SharePoint-webbplatsen och tillhörande filer.
 
-- [Läs mer om bevarande principer för SharePoint och OneDrive](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-sharepoint)
+- [Läs mer om bevarandeprinciper för SharePoint och OneDrive](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-sharepoint)
 
-Bevarande principer för Teams behåller chatt-och kanal meddelanden. När chatt och kanal meddelanden lagras i Exchange-postlådor påverkas de inte av Exchange bevarande principer. Du måste ställa in bevarande principer så att de gäller för Teams-chatt och Teams-kanal meddelanden:
+Bevarandeprinciper för Teams bevarar chatt- och kanalmeddelanden. Chatt- och kanalmeddelanden lagras i Exchange-postlådor, men de påverkas inte av Exchange-kvarhållningsprinciper. Du måste ange att bevarandeprinciper ska gälla för Chattar i Teams och meddelanden i Teams-kanalen. 
 
-- [Läs mer om bevarande principer för Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-teams)
+Användarchattar behålls på obestämd tid även om ett användarkonto tas bort. Om du inte vill behålla dessa data på obestämd tid kan du använda en bevarandeprincip för att ta bort användarchattar efter en angiven tid eller ta med den här borttagningen i borttagningsprocessen för användare.
 
-- [Bevarande principer i Microsoft Teams](https://docs.microsoft.com/microsoftteams/retention-policies)
+- [Läs mer om bevarandeprinciper för Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-teams)
 
-En enda bevarande princip kan ställas in så att den gäller för Microsoft 365-grupper, teams-chatt och Team kanal meddelanden. 
+- [Bevarandeprinciper i Microsoft Teams](https://docs.microsoft.com/microsoftteams/retention-policies)
+
+En enda bevarandeprincip kan ställas in att gälla för Microsoft 365-grupper, Teams-chatt och Teams-kanalmeddelanden. 
 
 Fler resurser:
 
 - [Lär dig mer om kvarhållningsprinciper](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
 
-- [Bevarande märkning och bevarande principer](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies) i Exchange
+- [Bevarandetaggar och bevarandeprinciper](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies) i Exchange
 
-## <a name="information-classification"></a>Informations klassificering
+## <a name="information-classification"></a>Informationsklassificering
 
-Du kan använda känslighets etiketter för att reglera gäst åtkomst, grupp-och team integritet och åtkomst via ohanterade enheter för grupper och team. Genom att använda etiketten konfigureras dessa inställningar automatiskt enligt inställningarna för etikett.
+Du kan använda känslighetsetiketter för att styra gäståtkomst, grupp- och teamsekretess och åtkomst via ohanterade enheter för grupper och team. Om du använder etiketten konfigureras de här inställningarna automatiskt enligt etikettinställningarna.
 
-- [Använd känslighets etiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
+- [Använda känslighetsetiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
 
-Du kan konfigurera Microsoft 365 för att automatiskt tillämpa känslighets etiketter på filer och e-postmeddelanden baserat på de villkor du anger, inklusive identifiering av känslig information och mönster matchning med tågens klassificerare.
+Du kan konfigurera Microsoft 365 så att känslighetsetiketter tillämpas automatiskt i filer och e-postmeddelanden baserat på de villkor du anger, inklusive identifiering av typer av känslig information eller mönstermatchning med utbildande klassificerare.
 
 - [Använda en känslighetsetikett för innehåll automatiskt](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
 
-Du kan använda känslighets etiketter för att kryptera filer, så att endast de som har behörighet att dekryptera och läsa dem.
+Du kan använda känslighetsetiketter för att kryptera filer, så att bara de med behörighet kan dekryptera och läsa dem.
 
 - [Begränsa åtkomst till innehåll med hjälp av känslighetsetiketter för att tillämpa kryptering](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)
 
@@ -89,33 +91,33 @@ Fler resurser:
 
 ## <a name="information-protection"></a>Informationsskydd
 
-DLP-principer kan förhindra oavsiktlig delning av känslig information i SharePoint, Exchange och Teams. Du kan skapa principer som anger vilka åtgärder som ska vidtas (till exempel att blockera åtkomst) baserat på en uppsättning regler.
+DLP-principer kan förhindra att känslig information delas av misstag i SharePoint, Exchange och Teams. Du kan skapa principer som anger åtgärder som ska vidtas (t.ex. blockera åtkomst) baserat på en uppsättning regler.
 
-- [Översikt över skydd mot data förlust](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)
+- [Översikt över dataförlustskydd](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)
 
-Med DLP i Teams kan du skydda känslig information i chatt-och kanal meddelanden genom att ta bort meddelanden som innehåller känslig information.
+Med DLP i Teams kan du skydda känslig information i Teams chatt- och kanalmeddelanden genom att ta bort meddelanden som innehåller känslig information.
 
-- [Förhindra data förlust och Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams)
+- [Skydd mot dataförlust och Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams)
 
-Om du har känslig information som är unik för din organisation, till exempel projekt kod namn, kan du skapa egna känsliga informations typer och tillämpa dem på DLP-principer för att skydda innehållet i grupper, team och SharePoint.
+Om du har känslig information som är unik för din organisation, t.ex. projektkodsnamn, kan du skapa egna typer av känslig information och tillämpa dem på DLP-principer för att skydda innehåll i grupper, grupper och SharePoint.
 
 - [Vanliga typer av känslig information](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types)
 
-## <a name="user-segmentation"></a>Användar segmentering
+## <a name="user-segmentation"></a>Användarsegmentering
 
-Med informations hinder kan du dela med dig av dina data och användare för att begränsa oönskad kommunikation och samarbete mellan grupper och undvika intresse konflikter i organisationen. Med informations hinder kan du skapa principer för att tillåta eller förhindra fil samarbete, chatta, ringa eller Mötes inbjudningar mellan grupper med personer i organisationen.
+Om det finns informationsbarriärer kan du segmentera dina data och användare för att begränsa oönskad kommunikation och samarbete mellan grupper och undvika intressekonflikter i organisationen. Informationsbarriärer gör att du kan skapa principer för att tillåta eller förhindra filsamarbete, chatt, samtal eller mötesinbjudningar mellan grupper av personer i din organisation.
 
 - [Informationsbarriärer](https://docs.microsoft.com/microsoft-365/compliance/information-barriers)
 
-- [Informations hinder i Microsoft Teams](https://docs.microsoft.com/microsoftteams/information-barriers-in-teams)
+- [Informationsbarriärer i Microsoft Teams](https://docs.microsoft.com/microsoftteams/information-barriers-in-teams)
 
-- [Använda informations hinder med SharePoint](https://docs.microsoft.com/sharepoint/information-barriers)
+- [Använd informationsbarriärer med SharePoint](https://docs.microsoft.com/sharepoint/information-barriers)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Planerings steg-för-steg-samarbete för samarbets styrning](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Planering av samarbetsstyrning steg för steg](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[Skapa en plan för hantering av samarbete](collaboration-governance-first.md)
+[Skapa din plan för samarbetesstyrning](collaboration-governance-first.md)
 
 [Säkerhet och efterlevnad för Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/security-and-compliance)
 

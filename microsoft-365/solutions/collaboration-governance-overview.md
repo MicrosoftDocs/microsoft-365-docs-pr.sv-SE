@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Läs mer om hur du styr relaterade funktioner i Microsoft 365-grupper, Teams, SharePoint och Yammer.
-ms.openlocfilehash: a9b4767c450ffc775fb84711e48b9f6c775419e5
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 01dea57504bf5d68c0bb13376379379f29044191
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741603"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838473"
 ---
 # <a name="what-is-collaboration-governance"></a>Vad är styrning av samarbete?
 
@@ -40,6 +40,10 @@ Den här serien med artiklar hjälper dig att förstå hur grupper, team och Sha
 ### <a name="setting-up-secure-collaboration-with-microsoft-365"></a>Konfigurera säkert samarbete med Microsoft 365
 
 Det finns många alternativ för distribution av Microsoft 365-grupper och Teams för säkert samarbete i organisationen. Vi rekommenderar att du använder det här styrningsinnehållet tillsammans med Konfigurera säkert samarbete med [Microsoft 365](setup-secure-collaboration-with-teams.md) och tillhörande artiklar för att skapa den bästa samarbetslösningen för din organisation.
+
+### <a name="data-residency"></a>Datahem
+
+Om din organisation är multinationell och du har krav för datalagring för olika platser, ska du ta med [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) som en del av samarbetsstyrningsplanen.
 
 ## <a name="why-microsoft-365-groups-are-important"></a>Varför microsoft 365-grupper är viktiga
 
@@ -109,6 +113,8 @@ När du börjar din planeringsprocess för styrning bör du tänka på följande
 - **Justera affärsprioriteringar** – affärsmål hjälper dig att definiera hur mycket tid och energi du behöver för att investera i styrning.
 
 - **Bädda in styrningsbeslut direkt i de lösningar du** skapar – många styrningsbeslut kan implementeras genom att funktioner i Microsoft 365 inaktiveras.
+
+- **Använd en fasad metod** – Först distribuerar du samarbetsfunktionerna till en liten grupp användare. Få feedback från dem, titta efter supportärenden och uppdatera alla nödvändiga inställningar eller processer innan du går vidare till en större grupp.
 
 - **Förstärker med** utbildning – anpassa lösningar som [Microsoft 365](https://docs.microsoft.com/office365/customlearning) utbildningsvägar för att säkerställa att dina organisationsspecifika förväntningar förstärkers med utbildning från Microsoft.
 

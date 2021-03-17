@@ -1,7 +1,7 @@
 ---
 title: Utvärdera Microsoft Defender för Office 365
-description: Defender för Office 365 i utvärderingsläge skapar Defender för Office 365-e-postprinciper som loggar ut, till exempel skadlig programvara, men inte agerar på meddelanden.
-keywords: utvärdera Office 365, Microsoft Defender för Office 365, office 365 utvärdering, prova Office 365, Microsoft Defender, ATP
+description: Defender för Office 365 i utvärderingsläge skapar Defender för Office 365-e-postprinciper som loggar in utvärderingsbedömningar, till exempel skadlig programvara, men inte agerar på meddelanden.
+keywords: utvärdera Office 365, Microsoft Defender för Office 365, utvärdering av Office 365, prova Office 365, Microsoft Defender, ATP
 f1.keywords:
 - NOCSH
 ms.author: ellevin
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a9bf9461e8cf6d62e4283c9112b801371242f2e
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: ce17f413b23ef9ef6abf79a2710a5cec9b05206c
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453711"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838537"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Utvärdera Microsoft Defender för Office 365
 
@@ -32,28 +32,28 @@ ms.locfileid: "50453711"
 > [!IMPORTANT]
 > Utvärdering av Microsoft Defender för Office 365 är en offentlig förhandsversion. Den här förhandsversionen tillhandahålls utan ett servicenivåavtal. Vissa funktioner kanske inte stöds eller kan ha begränsade funktioner.
 
-Genom att genomföra en omfattande utvärdering av säkerhetsprodukter kan du få välgrundade beslut om uppgraderingar och köp. It helps to try out the security product's capabilities to assess how it can help your security operations team in their daily tasks.
+Om du genomför en omfattande utvärdering av säkerhetsprodukter kan det vara bra att fatta välgrundade beslut om uppgraderingar och inköp. Det underlättar att prova säkerhetsproduktens funktioner för att bedöma hur den kan hjälpa teamet med säkerhetsåtgärder i sina dagliga uppgifter.
 
-Utvärderingsupplevelsen i Microsoft Defender för [Office 365](office-365-atp.md) har utformats för att eliminera komplexiteten i konfigurationen av enheter och miljöer så att du kan fokusera på att utvärdera funktionerna i säkerhetslösningen. Den gäller endast e-postskydd och inte SharePoint, Office-klienter som Word eller Teams.
+Utvärderingsupplevelsen i Microsoft Defender för [Office 365](office-365-atp.md) är utformad för att eliminera komplexiteten hos enhets- och miljökonfigurationen så att du kan fokusera på att utvärdera funktionerna i Microsoft Defender för Office 365. Med utvärderingsläget kan alla meddelanden som skickas till Exchange Online-postlådor utvärderas utan att MX-poster pekar på Microsoft. Funktionen gäller endast e-postskydd och inte Office-klienter som Word, SharePoint eller Teams.
 
-Om du inte redan har en licens som stöder Microsoft Defender för Office 365 kan du påbörja en kostnadsfri [30-dagarsutvärdering](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) och testa funktionerna i Säkerhets- och & Office 365 ( https://protection.office.com/homepage) . Du kommer att njuta av den snabba uppsättningen och du kan enkelt stänga av den om det behövs.
+Om du inte redan har en licens som stöder Microsoft Defender för Office 365 kan du påbörja en kostnadsfri utvärdering under [30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) dagar och testa funktionerna i Säkerhets- och efterlevnadscenter för Office 365 & ( https://protection.office.com/homepage) . Du kommer att njuta av den snabba uppsättningen och du kan enkelt stänga av den om det behövs.
 
 ## <a name="how-the-evaluation-works"></a>Så här fungerar utvärderingen
 
-Defender för Office 365 i utvärderingsläge skapar Defender för Office 365-e-postprinciper som loggar ut, till exempel skadlig programvara, men inte agerar på meddelanden. Du behöver inte ändra konfigurationen av MX-posten.
+Defender för Office 365 i utvärderingsläge skapar Defender för Office 365-e-postprinciper som loggar in utvärderingsbedömningar, till exempel skadlig programvara, men inte agerar på meddelanden. Du behöver inte ändra konfigurationen av MX-posten.
 
-Med utvärderingsläge [konfigureras principer för](atp-safe-attachments.md) [säkra](atp-safe-links.md)bifogade filer, säkra länkar och [postlådeinformation](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) för din räkning. Alla Defender för Office 365-principer skapas i icke-tvingande läge i bakgrunden och visas inte för dig.
+Med utvärderingsläge [konfigureras felsäkert](atp-safe-attachments.md) [bifogade](atp-safe-links.md)filer, säkra länkar och postlådebaserade [personifieringsprinciper](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) för din räkning. Alla Defender för Office 365-principer skapas i icke-tvingande läge i bakgrunden och visas inte för dig.
 
-Som en del av konfigurationen konfigurerar utvärderingsläget även [utökad filtrering för kopplingar.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Det förbättrar filtreringsprecisionen genom att bevara IP-adress och avsändarinformation, som annars går förlorad när e-post passerar genom en e-postsäkerhetsgateway (ESG) framför Defender för Office 365. Förbättrad filtrering för kopplingar förbättrar också filtreringsprecisionen för ditt befintliga skydd mot skräppost och nätfiske i Exchange Online Protection (EOP).
+Som en del av konfigurationen konfigurerar utvärderingsläget även [Utökad filtrering för kopplingar.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Filtreringen förbättrar filtreringsprecisionen genom att bevara IP-adress och avsändarinformation, som annars försvinner när e-post passerar genom en e-postsäkerhetsgateway (ESG) framför Defender för Office 365. Förbättrad filtrering för kopplingar förbättrar också filtreringsprecisionen för ditt befintliga EOP-skydd (Exchange Online Protection) mot skräppost och skydd mot nätfiske.
 
-Förbättrad filtrering för kopplingar har aktiverats för att förbättra filtreringsprecisionen men kan ändra slutbarheten för vissa meddelanden om du har en ESG framför Defender för Office 365 och för närvarande inte kringgår EOP-filtrering. Effekterna begränsas till EOP-principer. Konfiguration av MDO-principer som en del av utvärderingen skapas i icke-tvingande läge. För att minimera potentiell produktionsrisk kan du kringgå all EOP-filtrering genom att skapa en transportregel som anger SCL (Spam Confidence Level) till -1. Mer information finns i Använda EAC för att skapa en e-postflödesregel som [anger SCL för ett meddelande.](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)  
+Förbättrad filtrering för kopplingar har förbättrats filtreringsprecisionen men kan ändra slutbarheten för vissa meddelanden om du har en ESG framför Defender för Office 365 och för närvarande inte kringgår EOP-filtrering. Effekterna är begränsade till EOP-principer. Konfiguration av MDO-principer som en del av utvärderingen skapas i icke-verkställande läge. Om du vill minimera potentiell produktionsrisk kan du kringgå all EOP-filtrering genom att skapa en transportregel som anger SCL (Spam Confidence Level) till -1. Mer [information finns i Använda EAC för att skapa](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)en e-postflödesregel som anger SCL för ett   meddelande.
 
-När utvärderingsläget har ställts in får du en rapport som uppdateras dagligen med upp till 90 dagars data quanting av meddelanden som skulle ha blockerats om principerna implementerats (till exempel ta bort, skicka till skräppost, karantän). Rapporter skapas för alla Defender för Office 365- och EOP-identifieringar. De aggregeras per identifieringsteknik (till exempel personifiering) och kan filtreras efter tidsperiod. Dessutom kan du skapa meddelanderapporter på begäran för att skapa anpassade pivoter eller för att djupdykning av meddelanden med hjälp av Threat Explorer.
+När utvärderingsläget har ställts in får du en rapport som uppdateras dagligen med upp till 90 dagars data om de meddelanden som skulle ha blockerats om principerna implementerats (till exempel ta bort, skicka till skräppost, karantän). Rapporter skapas för alla Defender för Office 365- och EOP-identifieringar. De aggregeras per identifieringsteknik (till exempel personifiering) och kan filtreras efter tidsperiod. Dessutom kan du skapa meddelanderapporter på begäran för att skapa anpassade pivoter eller för att djupdykning av meddelanden med hjälp av Threat Explorer.
 
 Med den förenklade uppsättningen kan du fokusera på:
 
 - Köra utvärderingen
-- Få en detaljerad rapport
+- Hämta en detaljerad rapport
 - Analysera rapporten för åtgärd
 - Presentera utvärderingsresultatet
 
@@ -65,18 +65,18 @@ För att få åtkomst till utvärderingen måste du uppfylla licenskraven. Någo
 
 - Microsoft Defender för Office 365 Abonnemang 1
 - Microsoft Defender för Office 365 abonnemang 2
-- Microsoft 365 E5, Microsoft 365 E5 Security
+- Microsoft 365 E5, Microsoft 365 E5 Säkerhet
 - Office 365 E5
 
-Om du inte har någon av dessa licenser måste du skaffa en utvärderingsversionslicens.
+Om du inte har någon av dessa licenser måste du skaffa en utvärderingslicens.
 
 #### <a name="trial"></a>Utvärderingsversion
 
-Om du vill ha en utvärderingslicens för Microsoft Defender för Office 365 måste du ha rollen **Faktureringsadministratör** eller **Global administratör.** Begär behörighet från någon som har rollen Global administratör. [Läs mer om prenumerationer och licenser](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses)
+Om du vill ha en utvärderingsversionslicens för Microsoft Defender för Office 365 måste du ha rollen Faktureringsadministratör **eller** **Global administratör.** Begära behörighet från någon som har rollen Global administratör. [Läs mer om prenumerationer och licenser](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses)
 
-När du har rätt roll är det rekommenderade sökvägen att skaffa en utvärderingslicens för Microsoft Defender för Office 365 (abonnemang 2) i administrationscentret för Microsoft 365 genom att gå till Billing > Purchase services. Utvärderingsversionen omfattar en kostnadsfri provperiod på 30 dagar för 25 licenser. [Skaffa en utvärderingsversion av Microsoft Defender för Office 365 (abonnemang 2).](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)
+När du har rätt roll är den rekommenderade vägen att skaffa en utvärderingslicens för Microsoft Defender för Office 365 (abonnemang 2) i administrationscentret för Microsoft 365 genom att gå till Fakturering > Köptjänster. Utvärderingsversionen omfattar en kostnadsfri provperiod på 30 dagar för 25 licenser. [Hämta en utvärderingsversion av Microsoft Defender för Office 365 (abonnemang 2).](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)
 
-Det finns ett 30-dagarsfönster med utvärderingen som du kan använda för att övervaka och rapportera avancerade hot. Du kan också köpa en betald prenumeration om du vill ha hela Defender för Office 365-funktionerna.
+Du har ett 30-dagarsfönster med utvärdering för att övervaka och rapportera avancerade hot. Du kan också köpa en betald prenumeration om du vill ha hela Defender för Office 365-funktioner.
 
 ### <a name="roles"></a>Roller
 
@@ -90,32 +90,32 @@ Följande roller krävs:
 |Uppgift|Roll|
 |---|---|
 |Skaffa en kostnadsfri utvärderingsversion eller köp Microsoft Defender för Office 365 (abonnemang 2)|Rollen Faktureringsadministratör ELLER Global administratör|
-|Skapa utvärderingsprincip|Roll för fjärrdomäner och godkända domäner. Rollen Säkerhetsadministratör|
-|Redigera utvärderingsprincip|Roll för fjärrdomäner och godkända domäner. Rollen Säkerhetsadministratör|
-|Ta bort utvärderingsprincip|Roll för fjärrdomäner och godkända domäner. Rollen Säkerhetsadministratör |
+|Skapa utvärderingsprincip|Roll för fjärr- och godkända domäner. Säkerhetsadministratörsroll|
+|Redigera utvärderingsprincip|Roll för fjärr- och godkända domäner. Säkerhetsadministratörsroll|
+|Ta bort utvärderingsprincip|Roll för fjärr- och godkända domäner. Säkerhetsadministratörsroll |
 |Visa utvärderingsrapport|Rollen Säkerhetsadministratör ELLER Säkerhetsläsare|
 |
 
 
 ### <a name="enhanced-filtering"></a>Förbättrad filtrering
 
-Dina Exchange Online Protection-principer, till exempel skydd för massutskick och skräppost, förblir oförändrade. Men utvärderingen aktiverar förbättrad filtrering för kopplingar, vilket kan påverka e-postflödet och Exchange Online Protection-principerna om inte åsidosätts.
+Dina Exchange Online Protection-principer, till exempel skydd för massutskick och skräppost, förblir desamma. Men utvärderingen aktiverar förbättrad filtrering för kopplingar, vilket kan påverka e-postflödet och Exchange Online Protection-principerna om de inte kringgås.
 
-Förbättrad filtrering för kopplingar gör att klientorganisationen kan använda skydd mot förfalskning. Förfalskning stöds inte om du använder en e-postsäkerhetsgateway (ESG) utan att ha aktiverat utökad filtrering för kopplingar.
+Förbättrad filtrering för kopplingar gör att klientorganisationen kan använda skydd mot förfalskning. Förfalskning stöds inte om du använder en ESG (E-postsäkerhetsgateway) utan att ha aktiverat Utökad filtrering för kopplingar.
 
 ### <a name="urls"></a>URL:er
 
-URL:er detoneras under e-postflödet. Om du inte vill att specifika URL:er ska detoneras hanterar du listan med tillåtna URL-adresser på rätt sätt. Mer [information finns i Hantera klientorganisationens lista över tillåtna/blockerade.](tenant-allow-block-list.md)
+URL:er löses upp under e-postflödet. Om du inte vill att specifika URL:er ska detoneras kan du hantera listan med tillåtna URL:er på rätt sätt. Mer [information finns i Hantera listan över tillåtna/blockerade klientorganisationen.](tenant-allow-block-list.md)
 
-URL-länkar i e-postmeddelandet kommer inte att radbrytas, för att minska kundens påverkan.
+URL-länkar i e-postmeddelandeorganen radbryts inte för att minska kundinslag.
 
 ### <a name="email-routing"></a>E-postdirigering
 
-Förbered motsvarande information om hur din e-post dirigeras, inklusive namnet på den inkommande koppling som dirigerar din e-post. Om du bara använder Exchange Online Protection har du inte någon koppling.  [Lär dig mer om e-postflöde och e-postdirigering](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
+Förbered motsvarande information som du behöver för att ställa in hur din e-post dirigeras, inklusive namnet på den inkommande kopplingen som dirigerar din e-post. Om du bara använder Exchange Online Protection har du ingen koppling.  [Läs mer om e-postflöde och e-postdirigering](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
 
 Exempel på e-postdirigeringsscenarier som stöds:
 
-- **Tredjepartspartner och/eller** lokal tjänstprovider: Den inkommande koppling som du vill utvärdera använder en tredjepartsleverantör och/eller så använder du en lösning för e-postsäkerhet lokalt.
+- **Tredjepartspartner och/eller** lokal tjänsteleverantör: Den inkommande anslutningen du vill utvärdera använder en tredjepartsleverantör och/eller så använder du en lösning för e-postsäkerhet lokalt.
 - **Endast Microsoft Exchange Online Protection:** Den klientorganisation som du vill utvärdera använder Office 365 för e-postsäkerhet och MX-posten (Mail Exchange) pekar på Microsoft.
 
 ### <a name="email-security-gateway"></a>E-postsäkerhetsgateway
@@ -128,48 +128,48 @@ Tredjepartspartner som stöds är:
 - IronPort
 - Mimecast
 - Proofpoint
-- Soforer
+- Sophos
 - Symantec
 - Trend Micro
 
 ### <a name="scoping"></a>Scoping
 
-Du kommer att kunna begränsa utvärderingen till en inkommande koppling. Om det inte finns någon konfigurerad anslutning kan administratörer i utvärderingsomfånget samla in data från alla användare i klientorganisationen för att utvärdera Defender för Office 365.
+Du kan begränsa utvärderingen till en inkommande koppling. Om det inte finns någon konfigurerad anslutning kan administratörerna med utvärderingsomfånget samla in data från en användare i klientorganisationen för att utvärdera Defender för Office 365.
 
 ## <a name="get-started-with-the-evaluation"></a>Komma igång med utvärderingen
 
-Leta reda på kortet för utvärderingsuppsättningen i Microsoft Defender för Office 365 i Säkerhets- och & Office 365 (från https://protection.office.com/homepage) tre åtkomstpunkter:
+Leta reda på kortet för utvärderingsuppsättningen Microsoft Defender för Office 365 i Säkerhets- och & Office 365 (från https://protection.office.com/homepage) tre åtkomstpunkter:
 
-- Threat management > Dashboard
-- Policy för > hantering av hot
-- Reports > Dashboard
+- Hothantering > Instrumentpanel
+- Policy för > hot
+- Rapporter > Instrumentpanel
 
 ## <a name="setting-up-the-evaluation"></a>Konfigurera utvärderingen
 
-När du startar set-up-flödet för utvärderingen får du två routningsalternativ. Beroende på organisationens behov av e-postdirigering och utvärdering kan du välja om du använder en tredje part och/eller en lokal tjänstprovider eller endast Microsoft Exchange Online.
+När du startar set-up-flödet för din utvärdering får du två alternativ för dirigering. Beroende på organisationens behov av e-postdirigering och utvärdering kan du välja om du använder en tredjepartsleverantör och/eller en lokal tjänsteleverantör eller endast Microsoft Exchange Online.
 
-- Om du använder en partner från tredje part och/eller en lokal tjänstprovider måste du välja namnet på leverantören i listrutan. Ange annan kopplingsrelaterad information.
+- Om du använder en tredjepartspartner och/eller en lokal tjänsteleverantör måste du välja namnet på leverantören i listrutan. Ange annan kopplingsrelaterad information.
 
 - Välj Microsoft Exchange Online om MX-posten pekar på Microsoft och du har en Exchange Online-postlåda.
 
-Granska inställningarna och redigera dem om det behövs. Välj sedan **Skapa utvärdering.** Du bör få ett bekräftelsemeddelande som anger att din kondation är klar.
+Granska inställningarna och redigera dem om det behövs. Välj sedan **Skapa utvärdering.** Du bör få ett bekräftelsemeddelande som anger att kon set-up är klar.
 
 Utvärderingsrapporten för Microsoft Defender för Office 365 genereras en gång per dag. Det kan ta upp till 24 timmar innan data fylls i.
 
 ### <a name="exchange-rules-optional"></a>Exchange-regler (valfritt)
 
-Om du har en befintlig gateway aktiverar utvärderingsläget utökad filtrering för kopplingar. Detta förbättrar filtreringens precision genom att ändra IP-adressen för inkommande avsändare. Detta kan ändra filtrets bedömning och om du inte kringgår Exchange Online Protection kan detta ändra slutbarheten för vissa meddelanden. I det här fallet kanske du tillfälligt vill kringgå filtrering för att analysera påverkan. Om du vill kringgå detta går du till administrationscentret för Exchange och skapar en princip med SCL -1 (om du inte redan har ett). Mer information om regelkomponenter och hur de fungerar finns i E-postflödesregler (transportregler) i Exchange Online.
+Om du har en befintlig gateway aktiverar aktivering av utvärderingsläge utökad filtrering för kopplingar. Filtreringsprecisionen förbättras genom att IP-adressen för inkommande avsändare ändras. Detta kan ändra filtrets bedömningar och om du inte kringgår Exchange Online Protection kan detta ändra slutbarheten för vissa meddelanden. I det här fallet kanske du tillfälligt vill kringgå filtrering för att analysera påverkan. Om du vill kringgå detta går du till administrationscentret för Exchange och skapar en princip för SCL -1 (om du inte redan har en). Mer information om regelkomponenter och hur de fungerar finns i E-postflödesregler (transportregler) i Exchange Online.
 
 ## <a name="evaluate-capabilities"></a>Utvärdera funktioner
 
-När utvärderingsrapporten har skapats kan du se hur många avancerade hotlänkar, avancerade hotbilagor och potentiella impersonationer som identifierats i e-postmeddelanden och arbetsytor för samarbete i organisationen.
+När utvärderingsrapporten har skapats kan du se hur många avancerade länkar till hot, avancerade hotbilagor och möjliga personifieringar som har identifierats i e-postmeddelanden och samarbetsarbetsytor i organisationen.
 
-När utvärderingsversionen har upphört att gälla kan du fortsätta att komma åt rapporten i 90 dagar. Men det samlar inte in mer information. Om du vill fortsätta använda Microsoft Defender för Office 365 när utvärderingsversionen har gått ut kontrollerar du att du köper en betald prenumeration för Microsoft Defender för [Office 365 (abonnemang 2).](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)
+När utvärderingsversionen har upphört att gälla kan du fortsätta att komma åt rapporten i 90 dagar. Men det samlar inte in mer information. Om du vill fortsätta använda Microsoft Defender för Office 365 när utvärderingsversionen har gått ut bör du köpa en betalprenumeration på Microsoft Defender för [Office 365 (abonnemang 2).](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)
 
-Du kan när som **helst** gå till Inställningar och uppdatera din routning eller inaktivera utvärderingen. Du måste dock gå igenom samma process igen om du bestämmer dig för att fortsätta utvärderingen när du har inaktiverat den.
+Du kan när som **helst** gå till Inställningar och uppdatera routningen eller inaktivera utvärderingen. Du måste dock gå igenom samma process igen om du bestämmer dig för att fortsätta utvärderingen när du har inaktiverat den.
 
 ## <a name="provide-feedback"></a>Ge feedback
 
-Din feedback hjälper oss att bli bättre på att skydda miljön mot avancerade attacker. Dela med dig av din upplevelse och dina intryck av produktfunktioner och utvärderingsresultat.
+Din feedback hjälper oss att bli bättre på att skydda miljön mot avancerade attacker. Dela din upplevelse och intryck av produktfunktioner och utvärderingsresultat.
 
-Välj **Ge feedback om** du vill berätta för oss vad du tycker.
+Välj **Lämna feedback** och berätta vad du tycker.
