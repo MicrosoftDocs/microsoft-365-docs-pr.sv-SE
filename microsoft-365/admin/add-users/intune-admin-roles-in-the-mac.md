@@ -16,18 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Administratörsroller mappar till affärsfunktioner och ger behörighet att utföra särskilda uppgifter i administrationscentret. Tjänstadministratören öppnar till exempel supportbegäranden hos Microsoft.
-ms.openlocfilehash: 48bb0f3d1a3a239025017fda261945094a3eda79
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 7f733dab02ab3ff33131be96a96451d7d1c14f55
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126087"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904414"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Intune-administratörsroller i administrationscentret för Microsoft 365
 
 Din Microsoft 365- eller Office 365-prenumeration innehåller en uppsättning administratörsroller som du kan tilldela användare i organisationen i Administrationscenter för Microsoft 365. Varje administratörsroll mappar till vanliga affärsfunktioner och ger personerna i organisationen behörighet att utföra särskilda uppgifter i administrationscentret.
 
-I Administrationscenter för Microsoft 365 kan du hantera vissa Microsoft Intune-roller. Dessa roller är dock en deluppsättning av rollerna som finns tillgängliga i administrationscentret för Intune. Letar du efter de detaljerade rollbeskrivningarna för Microsoft Intune? Ta en titt på [Rollbaserad åtkomstkontroll (RBAC) med Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
+I Administrationscenter för Microsoft 365 kan du hantera vissa Microsoft Intune-roller. Dessa roller är dock en deluppsättning av rollerna som finns tillgängliga i administrationscentret för Intune. Letar du efter de detaljerade rollbeskrivningarna för Microsoft Intune? Ta en titt på [Rollbaserad åtkomstkontroll (RBAC) med Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
 Mer information om hur du tilldelar roller i Administrationscenter för Microsoft 365 finns i [Tilldela administratörsroller](assign-admin-roles.md).
 
@@ -58,7 +58,7 @@ Ett partnerföretag kan tilldela följande roller:
 
 - Begränsad administration, som har samma behörigheter som en supportadministratör.
 
-För att partnerföretaget ska kunna tilldela de här rollerna till användare måste du lägga till partnern som delegerad administratör i kontot. Initiativet till en sådan här process tas av en auktoriserad partner. Partnern skickar ett e-postmeddelande till dig med frågan om du vill ge dem behörighet att fungera som delegerad administratör. Anvisningar finns i [Auktorisera eller ta bort partnerrelationer](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
+För att partnerföretaget ska kunna tilldela de här rollerna till användare måste du lägga till partnern som delegerad administratör i kontot. Initiativet till en sådan här process tas av en auktoriserad partner. Partnern skickar ett e-postmeddelande till dig med frågan om du vill ge dem behörighet att fungera som delegerad administratör. Anvisningar finns i [Auktorisera eller ta bort partnerrelationer](../misc/add-partner.md).
   
 ## <a name="related-articles"></a>Relaterade artiklar
 

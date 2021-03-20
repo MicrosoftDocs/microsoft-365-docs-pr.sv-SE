@@ -24,20 +24,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
-description: 'Följ den här checklistan för att ta bort en anställd från Microsoft 365 och skydda data. '
-ms.openlocfilehash: a875a8b7620067cdae46fcae3bb7ef8ce7d148fa
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+description: 'Följ den här checklistan för att ta bort en anställd från Microsoft 365 och säkra data. '
+ms.openlocfilehash: 2372056cd6bee2387842c74dc2a35d71b88fae9e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114063"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904402"
 ---
 # <a name="remove-or-delete-a-former-employee"></a>Ta bort en tidigare anställd
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
   
@@ -54,9 +54,9 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
 Så här hindrar du en anställd från att logga in:
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
-2. Markera rutan bredvid användarens namn och välj sedan **Återställ lösenord.**
-3. Ange ett nytt lösenord och välj sedan **Återställ.** (Skicka det inte till dem.)
-4. Välj användarens namn för att gå till egenskapsfönstret och välj Initiera ut logga ut på **fliken Konto.** 
+2. Markera rutan bredvid användarens namn och välj sedan **Återställ lösenord**.
+3. Ange ett nytt lösenord och välj sedan **Återställ**. (Skicka det inte till dem.)
+4. Välj användarens namn för att gå till egenskapsfönstret och välj Initiera ut logga **ut på fliken Konto.** 
 
 ::: moniker-end
 
@@ -66,9 +66,9 @@ Så här hindrar du en anställd från att logga in:
 
 2. Markera användaren och välj sedan **Återställ lösenord.**
 
-3. Ange ett nytt lösenord och välj sedan **Återställ.** (Skicka det inte till dem.)
+3. Ange ett nytt lösenord och välj sedan **Återställ**. (Skicka det inte till dem.)
 
-4. Välj användarens namn för att gå till egenskapsfönstret och välj Initiera ut logga ut på **fliken Konto.** 
+4. Välj användarens namn för att gå till egenskapsfönstret och välj Initiera ut logga **ut på fliken Konto.** 
 
 ::: moniker-end
 
@@ -78,42 +78,42 @@ Så här hindrar du en anställd från att logga in:
 
 2. Markera användaren och välj sedan **Återställ lösenord.**
 
-3. Ange ett nytt lösenord och välj sedan **Återställ.** (Skicka det inte till dem.)
+3. Ange ett nytt lösenord och välj sedan **Återställ**. (Skicka det inte till dem.)
 
-4. Välj användarens namn för att gå till egenskapsfönstret och välj Initiera ut logga ut på **fliken Konto.** 
+4. Välj användarens namn för att gå till egenskapsfönstret och välj Initiera ut logga **ut på fliken Konto.** 
 
 ::: moniker-end
 
 > [!NOTE]
 > Du måste vara global administratör för att kunna starta ut logga ut.
 
-Inom en timme – eller efter att de lämnar den aktuella Microsoft 365-sidan de befinner sig på – uppmanas de att logga in igen. En åtkomsttoken är bra i en timme, så tidslinjen beror på hur mycket tid som återstår för denna token och om de navigerar från den aktuella webbsidan.
+Inom en timme – eller efter att de lämnar den Microsoft 365-sida de befinner sig på – uppmanas de att logga in igen. En åtkomsttoken är bra i en timme, så tidslinjen beror på hur mycket tid som återstår för den tokenen och om de navigerar från den aktuella webbsidan.
   
 > [!IMPORTANT]
-> Om användaren är i Outlook på webben, bara klickar runt i postlådan, kanske han eller hon inte ger sig av direkt. Så snart de har valt en annan panel, till exempel OneDrive, eller uppdaterat sin webbläsare initieras ut logga ut.
+> Om användaren är i Outlook på webben, bara klickar runt i postlådan, kanske han/hon inte sparkas ut direkt. Så snart de väljer en annan panel, till exempel OneDrive, eller uppdaterar sin webbläsare initieras ut logga ut.
   
-Mer information om att använda PowerShell till att logga ut en användare direkt finns i cmdleten [Revoke-AzureADUserAllRefreshToken](https://go.microsoft.com/fwlink/?linkid=841345).
+Mer information om att använda PowerShell till att logga ut en användare direkt finns i cmdleten [Revoke-AzureADUserAllRefreshToken](/powershell/module/azuread/revoke-azureaduserallrefreshtoken).
   
 Mer information om hur lång tid det tar att avsluta en persons e-post finns i [Vad du behöver veta om att avsluta en anställds e-postsession](#what-you-need-to-know-about-terminating-an-employees-email-session).
   
 ## <a name="overview-of-all-the-steps-to-remove-an-employee-and-secure-data"></a>Översikt över alla steg för att ta bort en anställd och säkra data
 
-En fråga vi ofta får är "Vad ska jag göra för att skydda data när en anställd lämnar organisationen?" I den här artikeln förklaras hur du blockerar åtkomst till Microsoft 365 och hur du bör vidta för att skydda dina data.
+En fråga vi ofta får är "Vad ska jag göra för att skydda data när en anställd lämnar organisationen?" I den här artikeln förklaras hur du blockerar åtkomsten till Microsoft 365 och de steg du bör vidta för att skydda dina data.
   
 > [!NOTE]
-> Om du är global administratör kan du ta bort den anställda, vidarebefordra e-post och välja vad du vill göra med OneDrive-innehållet med den nya guidade upplevelsen. Mer information finns i Den [globala administratören: Ta bort en användare.](remove-former-employee.md) Vi rekommenderar dock att du slutför alla ytterligare steg som anges här för att säkerställa att den anställda inte har åtkomst till företagets data. 
+> Om du är global administratör kan du ta bort den anställda, vidarebefordra deras e-post, välja vad du vill göra med OneDrive-innehållet med den nya guidade upplevelsen. Mer information finns i Global [administratör: Ta bort en användare.](remove-former-employee.md) Vi rekommenderar dock att du slutför alla ytterligare steg som anges här för att säkerställa att den anställda inte har åtkomst till ditt företags data. 
   
 Här följer en snabb översikt: Varje steg beskrivs i detalj i den här artikeln.
   
 |||
 |:-----|:-----|
 |**Steg** <br/> |**Varför** <br/> |
-|1. [Spara innehållet i en tidigare anställds postlåda](#save-the-contents-of-a-former-employees-mailbox) <br/> |Det är användbart för den person som ska ta över den anställdas arbete eller om det finns tvister.  <br/> |
+|1. [Spara innehållet i en tidigare anställds postlåda](#save-the-contents-of-a-former-employees-mailbox) <br/> |Det är användbart för den person som ska ta över den anställdas arbete, eller om det finns tvister.  <br/> |
 |2. [Vidarebefordra en före detta anställds e-post till en annan anställd eller konvertera till en delad postlåda](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |Då kan du hålla den före detta anställdas e-postadress aktiv. Om du har kunder eller partners som fortfarande skickar e-post till den före detta anställdas e-postadress hamnar den hos den person som har tagit över arbetet.  <br/> |
 |3. [Rensa och blockera en tidigare anställds mobil enhet](#wipe-and-block-a-former-employees-mobile-device) <br/> |Tar bort affärsdata från telefonen eller surfplattan.  <br/> |
 |4. [Blockera en tidigare anställds åtkomst till Microsoft 365-data](#block-a-former-employees-access-to-microsoft-365-data)<br/> |Det hindrar personen från att komma åt sin gamla Microsoft 365-postlåda och data.  <br/><br/> **Tips:** När du blockerar en användares åtkomst betalar du fortfarande för användarens licens. Ta bort licensen från prenumerationen (steg 5) om du vill sluta betala för den.  |
 |5. [Flytta medarbetarens OneDrive-innehåll](get-access-to-and-back-up-a-former-user-s-data.md) <br/> |Om du bara tar bort en användares licens, men inte tar bort kontot, kommer innehållet på användarens OneDrive att finnas tillgängligt för dig även efter 30 dagar.  <br/><br/> Innan du tar bort kontot bör du flytta innehållet på deras OneDrive till en annan plats som är enkel att komma åt. Efter att du tagit bort en anställds konto bevaras innehållet på deras OneDrive under **30** dagar. Under de 30 dagarna kan du dock återställa användarens konto och få åtkomst till deras OneDrive-innehåll. Om du återskapar användarens konto kommer OneDrive-innehållet att finnas tillgängligt för dig även efter 30 dagar.  <br/> |
-|5a. Vad kan jag göra om personen använt sin egen dator för att komma åt OneDrive och SharePoint?  <br/> |Om en personlig dator använts för att ladda ned filer från OneDrive och SharePoint, i stället för en företagsdator, går det inte att rensa dessa filer.  <br/><br/> De har fortfarande åtkomst till alla filer som synkroniserats till datorn.  <br/> |
+|5a. Vad kan jag göra om personen använt sin egen dator för att komma åt OneDrive och SharePoint?  <br/> |Om en personlig dator använts för att ladda ned filer från OneDrive och SharePoint, i stället för en företagsdator, går det inte att rensa dessa filer.  <br/><br/> De har fortfarande åtkomst till alla filer som har synkroniserats till sin dator.  <br/> |
 |6. [Ta bort Microsoft 365-licensen från en tidigare anställd](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)<br/> |När du tar bort en licens kan du tilldela någon annan den. Du kan också radera licensen så att du inte behöver betala för den förrän du anställer någon ny.  <br/><br/> När du tar bort eller raderar en licens sparas användarens gamla e-post, kontakter och kalender i **30 dagar**, och tas sedan bort permanent. Om du tar bort eller raderar en licens, men inte tar bort kontot, kommer innehållet på användarens OneDrive att finnas tillgängligt för dig även efter 30 dagar.  <br/> |
 |7. [Ta bort en tidigare anställds användarkonto](#delete-a-former-employees-user-account)<br/> |Det här tar bort kontot från administrationscentret. Hjälper dig att hålla ordning och reda.  <br/> |
 
@@ -127,11 +127,11 @@ Det finns två sätt du kan spara innehållet i den tidigare anställdas postlå
 
 2. Aktivera Bevarande av juridiska skäl eller Lokalt bevarande för postlådan innan du tar bort användarkontot. Det här är mycket mer komplicerat än det första alternativet, men värt att välja om: företagsabonnemanget omfattar arkivering och bevarande av juridiska skäl, det finns risk för tvister och du har en tekniskt stark IT-avdelning.
 
-    När du har konverterat postlådan till en inaktiv postlåda kan administratörer, efterlevnadsansvariga och hanterare av arkivhandlingar använda In-Place eDiscovery-verktygen i Exchange Online för att komma åt och söka i innehållet.
+    När du har konverterat postlådan till en inaktiv postlåda kan administratörer, efterlevnadsansvariga och hanterare av arkivhandlingar använda In-Place eDiscovery-verktyg i Exchange Online för att komma åt och söka i innehållet.
 
     Inaktiva postlådor kan inte ta emot e-post och visas inte i organisationens delade adressbok och andra listor.
 
-    Mer information om hur du placerar ett väntande på en postlåda finns i [Hantera inaktiva postlådor i Exchange Online.](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes)
+    Mer information om hur du placerar ett väntande på en postlåda finns i [Hantera inaktiva postlådor i Exchange Online.](../../compliance/create-and-manage-inactive-mailboxes.md)
 
 ## <a name="forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>Vidarebefordra en före detta anställds e-post till en annan anställd eller konvertera till en delad postlåda
 
@@ -147,8 +147,8 @@ I det här steget tilldelar du den tidigare anställdas e-postadress till en ann
 ::: moniker range="o365-worldwide"
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
-2. Markera namnet på den anställda som du vill blockera och välj sedan fliken **E-post.**
-3. Välj **Hantera vidarebefordran av e-post** under **Vidarebefordran av e-post.**
+2. Markera namnet på den anställda du vill blockera och välj sedan fliken **E-post.**
+3. Under **Vidarebefordran av e-post** väljer du **Hantera vidarebefordran av e-post**.
 4. Aktivera **Vidarebefordra all e-post som skickats till den här postlådan**. I rutan **Adress för vidarebefordran** skriver du e-postadressen till den aktuella medarbetaren som ska få e-postmeddelandet.
 5. Välj **Spara**.
 6. Kom ihåg att inte ta bort den tidigare anställdas konto.
@@ -159,9 +159,9 @@ I det här steget tilldelar du den tidigare anställdas e-postadress till en ann
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
 
-2. Markera den anställda som du vill blockera och visa **E-postinställningar.**
+2. Markera den anställda som du vill blockera och expandera **E-postinställningar.**
 
-3. Välj Redigera **bredvid Vidarebefordran av** **e-post.**
+3. Bredvid **Vidarebefordran av e-post** väljer du **Redigera**.
 
 4. Aktivera **Vidarebefordra all e-post som skickats till den här postlådan**. I rutan **Adress för vidarebefordran** skriver du e-postadressen till den aktuella medarbetaren (eller den delade postlådan) dit e-posten ska skickas.
   
@@ -175,9 +175,9 @@ I det här steget tilldelar du den tidigare anställdas e-postadress till en ann
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
 
-2. Markera den anställda som du vill blockera och visa **E-postinställningar.**
+2. Markera den anställda som du vill blockera och expandera **E-postinställningar.**
 
-3. Välj Redigera **bredvid Vidarebefordran av** **e-post.**
+3. Bredvid **Vidarebefordran av e-post** väljer du **Redigera**.
 
 4. Aktivera **Vidarebefordra all e-post som skickats till den här postlådan**. I rutan **Adress för vidarebefordran** skriver du e-postadressen till den aktuella medarbetaren (eller den delade postlådan) dit e-posten ska skickas.
   
@@ -193,8 +193,8 @@ Om den tidigare anställde hade en organisationstelefon kan du använda administ
 
 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administrationscentret för Exchange</a>.
 2. I Administrationscenter för Exchange går du till **Mottagare** \> **Postlådor**.
-3. Markera användaren och välj **Visa** information under Mobila **enheter.**
-4. På sidan **Information om mobil** enhet, under **Mobila** enheter, väljer du den mobila enheten, **rensar data** rensa enhet och väljer sedan ![ ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) **Blockera.**
+3. Markera användaren och välj Visa **information** under Mobila **enheter.**
+4. På sidan **Information om mobil** enhet under Mobila **enheter** väljer du den mobila enheten, sedan Rensa dataruteenhet och sedan  ![ ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) **Blockera**.
 5. Välj **Spara**.
    > [!TIP]
    > Se till att du tar bort eller inaktiverar användaren från din lokala Blackberry Enterprise Service. Du bör dessutom inaktivera alla Blackberry-enheter för användaren. Läs i Blackberry Business Cloud Services Administration Guide om du behöver specifika anvisningar om hur du inaktiverar användaren.
@@ -202,13 +202,13 @@ Om den tidigare anställde hade en organisationstelefon kan du använda administ
 ## <a name="block-a-former-employees-access-to-microsoft-365-data"></a>Blockera en tidigare anställds åtkomst till Microsoft 365-data
 
  > [!IMPORTANT]
- > Det kan ta upp till 24 timmar innan blockeringen av ett konto verkställs. Om du omedelbart behöver förhindra en användares inloggningsåtkomst ska du återställa användarens lösenord och sedan starta en händelse som loggar ut användaren från Microsoft 365-sessioner på alla enheter. [](reset-passwords.md) Se [Logga ut nu!](#sign-out-now)
+ > Det kan ta upp till 24 timmar innan blockeringen av ett konto verkställs. Om du omedelbart behöver förhindra en användares inloggningsåtkomst bör du återställa användarens lösenord och sedan initiera en händelse som loggar ut användaren från Microsoft 365-sessioner på alla enheter. [](reset-passwords.md) Läs [Logga ut nu!](#sign-out-now)
 
 ::: moniker range="o365-worldwide"
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
-2. Markera namnet på den anställda som du vill blockera och välj symbolen för Blockera den här användaren under **användarens namn.**
-3. Välj **Blockera användaren från att logga in** och välj sedan **Spara.**
+2. Markera namnet på den anställda som du vill blockera och välj symbolen för Blockera den här användaren under **användarnamnet.**
+3. Välj **Blockera användaren från att logga in** och välj sedan **Spara**.
 
 ::: moniker-end
 
@@ -216,9 +216,9 @@ Om den tidigare anställde hade en organisationstelefon kan du använda administ
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
 
-2. Markera den anställda som du vill blockera och välj sedan **Blockera inloggning.**
+2. Markera den anställda du vill blockera och välj sedan **Blockera inloggning.**
 
-3. Välj **Blockera användaren från att logga in** och välj sedan **Spara.**
+3. Välj **Blockera användaren från att logga in** och välj sedan **Spara**.
 
 ::: moniker-end
 
@@ -226,32 +226,32 @@ Om den tidigare anställde hade en organisationstelefon kan du använda administ
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
 
-2. Markera den anställda som du vill blockera och välj sedan **Blockera inloggning.**
+2. Markera den anställda du vill blockera och välj sedan **Blockera inloggning.**
 
-3. Välj **Blockera användaren från att logga in** och välj sedan **Spara.**
+3. Välj **Blockera användaren från att logga in** och välj sedan **Spara**.
 
 ::: moniker-end
 
 ## <a name="block-a-former-employees-access-to-email-exchange-online"></a>Blockera en tidigare anställds åtkomst till e-post (Exchange Online)
 
-Om du har e-post som en del av Microsoft 365-prenumerationen måste du logga in på administrationscentret för Exchange för att följa de här stegen för att blockera den tidigare anställda från att komma åt sin e-post.
+Om du har e-post som en del av Microsoft 365-prenumerationen måste du logga in på Exchange admin center för att följa de här stegen för att blockera den tidigare anställda från att komma åt sin e-post.
   
 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administrationscentret för Exchange</a>.
 2. I Administrationscenter för Exchange går du till **Mottagare** \> **Postlådor**.
-3. Dubbelklicka på användaren och gå till sidan **Postlådefunktioner.** Under **Mobila enheter** väljer du Inaktivera Exchange **ActiveSync och** Inaktivera **OWA för** enheter och svarar **Ja** på båda när du uppmanas att göra det.
+3. Dubbelklicka på användaren och gå till sidan **Postlådefunktioner.** Under **Mobila enheter** väljer du Inaktivera Exchange **ActiveSync och** Inaktivera **OWA** för enheter och svarar **Ja** på båda när du uppmanas att göra det.
 4. Under **E-postanslutning** väljer **du Inaktivera** och svarar Ja **när** du uppmanas att göra det.
 
-## <a name="remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>Ta bort och ta bort Microsoft 365-licensen från en tidigare anställd
+## <a name="remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>Ta bort och radera Microsoft 365-licensen från en tidigare anställd
 
-När någon lämnar organisationen måste du ta bort deras Microsoft 365-licens och ta bort den så att du inte fortsätter betala för den. Om du väljer att inte radera licensen från prenumerationen kan du tilldela den till en annan användare.
+När någon lämnar organisationen måste du ta bort hans eller hons Microsoft 365-licens och radera den så att du inte fortsätter betala för den. Om du väljer att inte radera licensen från prenumerationen kan du tilldela den till en annan användare.
   
-När du tar bort licensen bevaras användarens alla data i 30 dagar. Du kan [komma åt](get-access-to-and-back-up-a-former-user-s-data.md) alla data, eller [återställa](restore-user.md) kontot om användaren kommer tillbaka. Efter 30 dagar tas alla användarens data (utom dokument som lagras på SharePoint Online) bort permanent från Microsoft 365 och kan inte återställas.
+När du tar bort licensen bevaras användarens alla data i 30 dagar. Du kan [komma åt](get-access-to-and-back-up-a-former-user-s-data.md) alla data, eller [återställa](restore-user.md) kontot om användaren kommer tillbaka. Efter 30 dagar tas alla användarens data (utom dokument som lagras på SharePoint Online) permanent bort från Microsoft 365 och kan inte återställas.
 
 ::: moniker range="o365-worldwide"
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
-2. Välj namnet på den anställda som du vill blockera och välj sedan **fliken Licenser och** appar.
-3. Avmarkera kryssrutorna för de licenser du vill ta bort och välj sedan **Spara ändringar.**
+2. Markera namnet på den anställda som du vill blockera och välj sedan **fliken Licenser och** appar.
+3. Avmarkera kryssrutorna för den eller de licenser du vill ta bort och välj sedan **Spara ändringar.**
 
 ::: moniker-end
 
@@ -259,9 +259,9 @@ När du tar bort licensen bevaras användarens alla data i 30 dagar. Du kan [kom
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
 
-2. Markera den anställda som du vill blockera och välj sedan Redigera **bredvid** **Produktlicenser.**
+2. Markera den anställda du vill blockera och välj sedan **Redigera** bredvid **Produktlicenser.**
 
-3. På **sidan Produktlicenser** inaktiverar du de licenser du vill ta bort och väljer sedan **Spara.**
+3. På **sidan Produktlicenser** inaktiverar du de licenser du vill ta bort och väljer sedan **Spara**.
 
 ::: moniker-end
 
@@ -269,35 +269,35 @@ När du tar bort licensen bevaras användarens alla data i 30 dagar. Du kan [kom
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
 
-2. Markera den anställda som du vill blockera och välj sedan Redigera **bredvid** **Produktlicenser.**
+2. Markera den anställda du vill blockera och välj sedan **Redigera** bredvid **Produktlicenser.**
 
-3. På **sidan Produktlicenser** inaktiverar du de licenser du vill ta bort och väljer sedan **Spara.**
+3. På **sidan Produktlicenser** inaktiverar du de licenser du vill ta bort och väljer sedan **Spara**.
 
 ::: moniker-end
 
-**Gör så här om du vill minska antalet** licenser som du betalar för tills du anställer en annan person:
+**Om du vill minska antalet licenser som du betalar för tills** du anställer en annan person gör du följande:
 
 ::: moniker range="o365-worldwide"
-1. I administrationscentret går du **till** sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Fakturera dina produkter</a> och väljer **fliken** Produkter.
+1. I administrationscentret går du till **sidan** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Fakturering dina</a> produkter och väljer **fliken** Produkter.
 2. Välj den prenumeration som du vill ta bort licenser från.
 3. Välj Ta bort licenser på **informationssidan.**
-4. I fönstret **Ta bort** licenser, under  Nytt antal, i rutan Totalt antal licenser anger du det totala antalet licenser som du vill använda för prenumerationen. Om du till exempel har 25 licenser och vill ta bort en av dem skriver du 24.
+4. I fönstret **Ta bort** licenser, under  Nytt antal, i rutan Totalt antal licenser anger du det totala antalet licenser som du vill använda för prenumerationen. Om du till exempel har 25 licenser och vill ta bort en av dem anger du 24.
 5. Välj **Spara**.
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a> i administrationscentret.
-2. Välj **Lägg till/ta bort** licenser för att radera licensen så att du inte behöver betala för den förrän du anställer någon annan.
+2. Välj **Lägg till/ta bort** licenser för att ta bort licensen så att du inte betalar för den förrän du anställer en annan person.
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a> i administrationscentret.
-2. Välj **Lägg till/ta bort** licenser för att radera licensen så att du inte behöver betala för den förrän du anställer någon annan.
+2. Välj **Lägg till/ta bort** licenser för att ta bort licensen så att du inte betalar för den förrän du anställer en annan person.
 ::: moniker-end
 
-När [du lägger till](add-users.md) ytterligare en person i företaget uppmanas du samtidigt att köpa en licens, med bara ett steg!
+När [du lägger till](add-users.md) ytterligare en person i företaget uppmanas du samtidigt att köpa en licens med bara ett steg!
 
-Mer information om hur du hanterar användarlicenser för Microsoft 365 för företag finns i Tilldela licenser till användare i [Microsoft 365](../manage/assign-licenses-to-users.md)för företag och ta bort licenser från användare i [Microsoft 365](../manage/remove-licenses-from-users.md)för företag.
+Mer information om hur du hanterar användarlicenser för Microsoft 365 för företag finns i Tilldela användare licenser i [Microsoft 365](../manage/assign-licenses-to-users.md)för företag och Ta bort licenser från användare i [Microsoft 365 för företag.](../manage/remove-licenses-from-users.md)
   
 ## <a name="how-the-deleted-employee-account-affects-skype-for-business"></a>Så här påverkas Skype för företag när en anställds konto tas bort
 
@@ -307,7 +307,7 @@ Om användaren tillhör en kögrupp är användaren inte längre ett möjligt m�
 
 ## <a name="set-up-call-forwarding-to-people-in-your-organization"></a>Konfigurera vidareringning av samtal till personer i organisationen
 
-Om du behöver ställa in vidareringning av samtal för den uppsagda medarbetarens telefonnummer kan inställningen för vidareringning under samtalsprinciper ställa in vidareringning där inkommande samtal kan vidarebefordras till andra användare eller så kan du ringa till en annan person samtidigt. Mer information finns i [samtalsprinciper i Microsoft Teams.](https://docs.microsoft.com/microsoftteams/teams-calling-policy)
+Om du behöver ställa in vidareringning av den uppsagda medarbetarens telefonnummer kan inställningen för vidareringning under samtalsprinciper ställa in vidarebefordran där inkommande samtal kan vidarebefordras till andra användare eller ringa upp en annan person samtidigt. Mer information finns i [Samtalsprinciper i Microsoft Teams.](/microsoftteams/teams-calling-policy)
   
 ## <a name="delete-a-former-employees-user-account"></a>Ta bort en tidigare anställds användarkonto
 
@@ -318,7 +318,7 @@ Ta inte bort kontot om du har konfigurerat vidarebefordran av e-post eller konve
 ::: moniker range="o365-worldwide"
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
-2. Välj namnet på den anställda som du vill ta bort.
+2. Markera namnet på den anställda som du vill ta bort.
 3. Under användarens namn väljer du symbolen för Ta **bort användare.** Välj de alternativ du vill använda för användaren och välj sedan Ta **bort användare.**
 
 ::: moniker-end
@@ -327,9 +327,9 @@ Ta inte bort kontot om du har konfigurerat vidarebefordran av e-post eller konve
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
 
-2. Välj namnet på den anställda som du vill ta bort.
+2. Markera namnet på den anställda som du vill ta bort.
 
-3. Högst upp på sidan väljer du Ta **bort användare.** Välj de alternativ du vill använda för användaren och välj sedan Ta **bort användare.**
+3. Högst upp på sidan väljer du Ta **bort användare**. Välj de alternativ du vill använda för användaren och välj sedan Ta **bort användare.**
 
 ::: moniker-end
 
@@ -337,9 +337,9 @@ Ta inte bort kontot om du har konfigurerat vidarebefordran av e-post eller konve
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
 
-2. Välj namnet på den anställda som du vill ta bort.
+2. Markera namnet på den anställda som du vill ta bort.
 
-3. Högst upp på sidan väljer du Ta **bort användare.** Välj de alternativ du vill använda för användaren och välj sedan Ta **bort användare.**
+3. Högst upp på sidan väljer du Ta **bort användare**. Välj de alternativ du vill använda för användaren och välj sedan Ta **bort användare.**
 
 ::: moniker-end
 
@@ -347,11 +347,11 @@ När du tar bort en användare blir dennes konto inaktivt i ca 30 dagar. Du har 
   
 ### <a name="does-your-organization-use-active-directory"></a>Använder ni Active Directory i organisationen?
 
-Om din organisation synkroniserar användarkonton till Microsoft 365 från en lokal Active Directory-miljö måste du ta bort och återställa dessa användarkonton i den lokala Active Directory-tjänsten. Du kan inte ta bort eller återställa dem i Office 365.
+Om din organisation synkroniserar användarkonton till Microsoft 365 från en lokal Active Directory-miljö måste du ta bort och återställa dessa användarkonton i din lokala Active Directory-tjänst. Du kan inte ta bort eller återställa dem i Office 365.
   
-Mer information om hur du tar bort och återställer användarkonton i Active Directory finns [i Ta bort ett användarkonto.](https://go.microsoft.com/fwlink/?linkid=841808)
+Mer information om hur du tar bort och återställer användarkonton i Active Directory finns [i Ta bort ett användarkonto.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))
   
-Om du använder Azure Active Directory, se [Remove-MsolUser](https://go.microsoft.com/fwlink/?linkid=842230) PowerShell-cmdleten.
+Om du använder Azure Active Directory, se [cmdleten Remove-MsolUser](https://go.microsoft.com/fwlink/?linkid=842230) PowerShell.
   
 ## <a name="what-you-need-to-know-about-terminating-an-employees-email-session"></a>Vad du behöver veta om att avsluta en anställds e-postsession
 

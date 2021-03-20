@@ -1,0 +1,40 @@
+<!-- This file is generated automatically. Changes made to this file will be overwritten.-->
+|Klienter|Android|iOS|Mac|Windows 10<br>Skrivbord|Windows 10<br>Moderna appar|
+|:-|:-|:-|:-|:-|:-|
+|ACCESS|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Planerat|Uppgift saknas|
+|AZURE ACTIVE DIRECTORY-ADMINISTRATÖR|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Planerat|Uppgift saknas|
+|FÖRETAGSPORTAL|Planerat|Planerat|Planerat|Uppgift saknas|Planerat|
+|CORTANA|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Planerat|
+|DELVE|✔|✔|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|
+|EDGE|Planerat|Planerat|Uppgift saknas|Planerat|Uppgift saknas|
+|EXCEL|✔|Planerat|Planerat|Planerat|Uppgift saknas|
+|EXCHANGE-ADMINISTRATÖR|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|✔|Uppgift saknas|
+|FORMS|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|
+|KAIZALA|Planerat|Planerat|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|
+|MICROSOFT ROOMS|Planerat|Planerat|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|
+|OFFICE 365 ADMIN|Planerat|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|
+|OFFICE LENS|Planerat|Planerat|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|
+|OFFICE MOBILE|Planerat|Planerat|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|
+|OFFICE.COM|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Planerat|
+|ONEDRIVE|✔|✔|✔|✔|Planerat|
+|ONENOTE|✔|Planerat|Planerat|Planerat|Planerat|
+|OUTLOOK|✔|✔|Planerat|Planerat|Planerat|
+|PLANNER|Planerat|Planerat|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|
+|POWER-APPAR|Planerat|Planerat|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Planerat|
+|POWER AUTOMATE|Planerat|Planerat|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|
+|POWER BI|Planerat|Planerat|Uppgift saknas|Planerat|Planerat|
+|POWERPOINT|✔|Planerat|Planerat|Planerat|Planerat|
+|PROJECT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Planerat|Uppgift saknas|
+|PUBLISHER|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Planerat|Uppgift saknas|
+|SHAREPOINT-ADMINISTRATÖR|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Planerat|Uppgift saknas|
+|SHAREPOINT|Planerat|Planerat|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|
+|FÄSTISAR|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Planerat|
+|STREAM|Planerat|Planerat|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|
+|SWAY|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Planerat|
+|TEAMS|✔|✔|✔|Planerat|Uppgift saknas|
+|TO-DO|Planerat|Planerat|Planerat|Uppgift saknas|Planerat|
+|VISIO|Uppgift saknas|✔|Uppgift saknas|Planerat|Uppgift saknas|
+|WHITEBOARD|Uppgift saknas|Planerat|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Planerat|
+|WORD|✔|Planerat|Planerat|Planerat|Planerat|
+|WORKPLACE ANALYTICS|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|
+|YAMMER|Planerat|Planerat|Planerat|Planerat|Uppgift saknas|

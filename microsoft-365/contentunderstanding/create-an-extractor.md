@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Lär dig hur du skapar en extraktor i Microsoft SharePoint-Syntex.
-ms.openlocfilehash: b0b03d0e8804097f34f9cd5b17504263097d8696
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 8218d04d2f5cb4e8f8f67bdcd744b7f1a4a4d18a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242506"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905818"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Skapa en extraktor i Microsoft SharePoint-Syntex.
 
@@ -86,12 +86,12 @@ För att identifiera *Tjänstens Startdatum* kan du skapa en förklaring av mön
 4. Välj **Spara**.
 
 > [!NOTE]
-> Mer information om olika förklaringstyper finns i [Förklaringstyper](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview).  
+> Mer information om olika förklaringstyper finns i [Förklaringstyper](./explanation-types-overview.md).  
 
 
 ### <a name="use-the-explanation-library"></a>Använda Förklaringsbiblioteket
 
-För att skapa förklaringar för objekt, t. ex. datum, är det enklare att [använda förklaringsbiblioteket](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-the-explanation-library) än att ange alla variationer manuellt. Förklaringsbiblioteket är en uppsättning fördefinierade fraser och mönsterförklaringar. Biblioteket försöker tillhandahålla alla format för vanliga fras- eller mönster listor, till exempel datum, telefonnummer, postnummer och många andra. 
+För att skapa förklaringar för objekt, t. ex. datum, är det enklare att [använda förklaringsbiblioteket](./explanation-types-overview.md#use-the-explanation-library) än att ange alla variationer manuellt. Förklaringsbiblioteket är en uppsättning fördefinierade fraser och mönsterförklaringar. Biblioteket försöker tillhandahålla alla format för vanliga fras- eller mönster listor, till exempel datum, telefonnummer, postnummer och många andra. 
 
 För *Tjänstens Startdatum* exempel är det mer effektivt att använda den fördefinierade förklaringen för *Datum* i förklaringsbiblioteket:
 

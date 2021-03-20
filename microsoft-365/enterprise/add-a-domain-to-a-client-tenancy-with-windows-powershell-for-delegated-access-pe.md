@@ -1,5 +1,5 @@
 ---
-title: Lägga till en domän till en klient innehav med Windows PowerShell för DAP partners
+title: Lägga till en domän i ett klientföretag med Windows PowerShell för DAP-partner
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,65 +16,65 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
-description: 'Sammanfattning: Använd PowerShell för Microsoft 365 för att lägga till ett alternativt domän namn i en befintlig kund klient organisation.'
-ms.openlocfilehash: 23137d2e2461e75a22d0403f9b8246a29e48019f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Sammanfattning Använd PowerShell för Microsoft 365 för att lägga till ett alternativt domännamn i en befintlig kundklientorganisation.
+ms.openlocfilehash: b6a40f387f9fc7e513137cda4253a62be2455aad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694897"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905578"
 ---
-# <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Lägga till en domän i en klient innehav med Windows PowerShell för DAP-partners (delegerade åtkomst behörigheter)
+# <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Lägga till en domän i ett klientföretag med Windows PowerShell för DAP-partners (Delegerad åtkomstbehörighet)
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Du kan skapa och koppla nya domäner till kundens innehav med PowerShell för Microsoft 365 snabbare än att använda administrations centret för Microsoft 365.
+Du kan skapa och koppla nya domäner till kundens innehavare med PowerShell för Microsoft 365 snabbare än med hjälp av administrationscentret för Microsoft 365.
   
-DAP-partners (delegerade åtkomst behörigheter) för syndikering och moln lösnings leverantörer. De är ofta nätverks-eller Telekom-leverantörer i andra företag. De fördelar Microsoft 365-abonnemang till sina kunder. När de säljer en Microsoft 365-prenumeration beviljas de automatiskt administration på uppdrag av (AOBO) behörigheter till kundens innehav så att de kan administrera och rapportera om kundens innehavare.
+DAP-partner (Delegerad åtkomstbehörighet) är syndicerings- och molnlösningsleverantörer (CSP). De är ofta nätverks- eller telekommunikationsleverantörer till andra företag. De buntar ihop Microsoft 365-prenumerationer till sina tjänsteerbjudanden till sina kunder. När de säljer en Microsoft 365-prenumeration tilldelas de automatiskt behörigheten Administrera för (AOBO) för kundens företag så att de kan administrera och rapportera om kundrelationerna.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-Procedurerna i det här avsnittet kräver att du ansluter till [Microsoft 365 med PowerShell](connect-to-microsoft-365-powershell.md).
+I procedurerna i det här avsnittet måste du ansluta [till Microsoft 365 med PowerShell.](connect-to-microsoft-365-powershell.md)
   
-Du behöver också dina autentiseringsuppgifter för partner klient organisation.
+Du behöver också autentiseringsuppgifterna för partnerklientorganisationen.
   
 Du behöver också följande information:
   
-- Du behöver det fullständigt kvalificerade domän namnet (FQDN) som din kund önskar.
+- Du behöver det fullständigt kvalificerade domännamnet (FQDN) som kunden vill ha.
     
-- Du behöver kundens **TenantId**.
+- Du behöver kundens **Klientorganisations-ID.**
     
-- FQDN måste vara registrerat hos en DNS-registrator för Internet, till exempel GoDaddy. Mer information om hur du registrerar ett domän namn offentligt finns i [så här köper du ett domän namn](https://go.microsoft.com/fwlink/p/?LinkId=532541).
+- FQDN måste vara registrerat med en DNS-registrator (Internet Domain Name Service), till exempel GoDaddy. Mer information om hur du registrerar ett domännamn offentligt finns i [Så här köper du ett domännamn.](../admin/get-help-with-domains/buy-a-domain-name.md)
     
-- Du måste veta hur du lägger till en TXT-post i den registrerade DNS-zonen för din DNS-registrator. Mer information om hur du lägger till en TXT-post finns i [lägga till DNS-poster för att ansluta din domän](https://go.microsoft.com/fwlink/p/?LinkId=532542). Om dessa procedurer inte fungerar för dig måste du hitta procedurerna för din DNS-registrator.
+- Du behöver veta hur du lägger till en TXT-post i den registrerade DNS-zonen för din DNS-registrator. Mer information om hur du lägger till en TXT-post finns i Lägga [till DNS-poster för att ansluta din domän.](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) Om de procedurerna inte fungerar för dig måste du hitta procedurerna för din DNS-registrator.
     
 ## <a name="create-domains"></a>Skapa domäner
 
- Kunderna uppmanas antagligen att skapa ytterligare domäner för att kopplas till deras innehavande, eftersom de inte vill använda standard <domain> domänen. onmicrosoft.com domain som representerar deras företags identitet för världen. Med den här proceduren får du hjälp med att skapa en ny domän som är kopplad till kundens innehav.
+ Kunderna kommer antagligen att be dig skapa fler domäner att associera med deras innehavare eftersom de inte vill att standarddomänen .onmicrosoft.com ska vara den primära som representerar deras företagsidentiteter i <domain> världen. I den här proceduren får du hjälp med att skapa en ny domän som är kopplad till kundens innehavare.
   
 > [!NOTE]
-> För att utföra vissa av dessa åtgärder måste partner administratörs kontot som du loggar in med vara inställt på **fullständig administration** för gruppen **tilldela administrativ åtkomst till företag som du** har 365 stöd för. Mer information om hur du hanterar roller för partner administratörer finns i [partners: tillhandahålla delegerad administration](https://go.microsoft.com/fwlink/p/?LinkId=532435). 
+> För att några av de här åtgärderna ska kunna utföras måste partneradministratörskontot som du loggar in med vara inställt på Fullständig **administration** för inställningen Tilldela administrativ åtkomst till företag som du stöder i informationen för administratörskontot i administrationscentret för Microsoft 365.  Mer information om hur du hanterar partneradministratörsroller finns i [Partner: Erbjuda delegerad administration](https://go.microsoft.com/fwlink/p/?LinkId=532435). 
   
 ### <a name="create-the-domain-in-azure-active-directory"></a>Skapa domänen i Azure Active Directory
 
-Det här kommandot skapar domänen i Azure Active Directory men associerar den inte med den offentligt registrerade domänen. Det kommer när du bevisa att du äger den offentligt registrerade domänen till Microsoft Microsoft 365 för företag.
+Med det här kommandot skapas domänen i Azure Active Directory, men den associeras inte med den offentligt registrerade domänen. När du bevisar att du äger den offentligt registrerade domänen för Microsoft Microsoft 365 för företag.
   
 ```powershell
 New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
 ```
 
 >[!Note]
->PowerShell Core stöder inte Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen och cmdlets med **MSOL** . För att kunna fortsätta använda dessa cmdletar måste du köra dem från Windows PowerShell.
+>PowerShell Core stöder inte Microsoft Azure Active Directory-modul för Windows PowerShell-modulen och-cmdlets med **MSOL** i namnet. Om du vill fortsätta använda dessa cmdlets måste du köra dem från Windows PowerShell.
 >
 
-### <a name="get-the-data-for-the-dns-txt-verification-record"></a>Hämta data för DNS TXT-verifierings posten
+### <a name="get-the-data-for-the-dns-txt-verification-record"></a>Hämta data för verifieringsposten för DNS TXT
 
- Microsoft 365 kommer att skapa specifika data som du måste placera i DNS TXT-verifieringen. Kör det här kommandot för att hämta data.
+ Microsoft 365 genererar de specifika data som du behöver placera i DNS TXT-verifieringsposten. Kör det här kommandot för att hämta data.
   
 ```powershell
 Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of new domain> -Mode DnsTxtRecord
 ```
 
-Då får du utdata som:
+Det ger dig följande utdata:
   
  `Label: domainname.com`
   
@@ -83,19 +83,19 @@ Då får du utdata som:
  `Ttl: 3600`
   
 > [!NOTE]
-> Du behöver den här texten för att skapa TXT-posten i den offentligt registrerade DNS-zonen. Glöm inte att kopiera och spara den. 
+> Du behöver den här texten för att skapa TXT-posten i den offentligt registrerade DNS-zonen. Se till att kopiera och spara den. 
   
 ### <a name="add-a-txt-record-to-the-publically-registered-dns-zone"></a>Lägga till en TXT-post i den offentligt registrerade DNS-zonen
 
-Innan Microsoft 365 kommer att börja acceptera trafik som dirigeras till det offentligt registrerade domän namnet måste du bevisa att du äger och har administratörs behörighet för domänen. Du bekräftar att du äger domänen genom att skapa en TXT-post i domänen. En TXT-post gör ingenting i din domän och kan tas bort när din domän är uppkopplad. Skapa TXT-posterna genom att följa anvisningarna i [lägga till DNS-poster för att ansluta din domän](https://go.microsoft.com/fwlink/p/?LinkId=532542). Om dessa procedurer inte fungerar för dig måste du hitta procedurerna för din DNS-registrator.
+Innan Microsoft 365 börjar ta emot trafik som dirigeras till det offentligt registrerade domännamnet måste du bevisa att du äger och har administratörsbehörighet till domänen. Du bevisa att du äger domänen genom att skapa en TXT-post i domänen. En TXT-post gör inget i din domän och den kan tas bort när du har upprättat ägarskap för domänen. Om du vill skapa TXT-posterna följer du procedurerna [för att lägga till DNS-poster för att ansluta din domän.](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) Om de procedurerna inte fungerar för dig måste du hitta procedurerna för din DNS-registrator.
   
-Bekräfta att TXT-posten har skapats via nslookup. Följ den här syntaxen.
+Bekräfta att TXT-posten har skapats via nslookup. Följ denna syntax.
   
 ```console
 nslookup -type=TXT <FQDN of registered domain>
 ```
 
-Då får du utdata som:
+Det ger dig följande utdata:
   
  `Non-authoritative answer:`
   
@@ -103,21 +103,21 @@ Då får du utdata som:
   
  `text=MS=ms########`
   
-### <a name="validate-domain-ownership-in-microsoft-365"></a>Verifiera domän ägarskap i Microsoft 365
+### <a name="validate-domain-ownership-in-microsoft-365"></a>Verifiera domänägarskap i Microsoft 365
 
-I det här förra steget validerar du till Microsoft 365 som du äger den offentligt registrerade domänen. Efter det här steget börjar Microsoft 365 att acceptera trafik som dirigeras till det nya domän namnet. Kör det här kommandot för att slutföra skapandet av domäner och registrering. 
+I det sista steget verifierar du för Microsoft 365 att du äger den offentligt registrerade domänen. Efter det här steget börjar Microsoft 365 att acceptera trafik som dirigeras till det nya domännamnet. Kör det här kommandot för att slutföra processen för att skapa och registrera en domän. 
   
 ```powershell
 Confirm-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>
 ```
 
-Det här kommandot returnerar ingen utskrift, så du kan kontrol lera att det fungerade genom att köra det här kommandot.
+Det här kommandot returnerar inte några utdata, så kör det här kommandot för att bekräfta att det fungerade.
   
 ```powershell
 Get-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>
 ```
 
-Det här kommer att returnera ungefär så här
+Detta returnerar något i den här
 
 ```console
 Name                   Status      Authentication
@@ -131,4 +131,3 @@ FQDN of new domain     Verified    Managed
 #### 
 
 [Hjälp för partners](https://go.microsoft.com/fwlink/p/?LinkID=533477)
-

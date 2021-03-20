@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Läs om hur en global administratör kan ändra en användares e-postadress och visningsnamn. '
-ms.openlocfilehash: 7f894af3778964dfa6c696c1f467bc0dd8313f32
-ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
+ms.openlocfilehash: 6a5498f4e480802f8770f7b7adde55fe7c996dc8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49585300"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904486"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Ändra ett användarnamn och en e-postadress
 
@@ -221,7 +221,7 @@ Det kan ta upp till 24 timmar innan ändringen börjar gälla i alla tjänster. 
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>"Det hittades ingen parameter som matchar parameternamnet 'E-postadresser'"
 
-Om du får felmeddelandet ”**Det hittades ingen parameter som matchar parameternamnet 'E-postadresser'**” innebär det att det tar lite längre tid för att slutföra konfigurationen av klientorganisationen eller den anpassade domänen, om du nyligen har lagt till en sådan. Konfigurationen kan ta upp till 4 timmar. Vänta en stund så att konfigurationen hinner slutföras och försök sedan igen. Om problemet kvarstår kan du ringa [supporten](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) och be dem göra en fullständig synkronisering åt dig.
+Om du får felmeddelandet ”**Det hittades ingen parameter som matchar parameternamnet 'E-postadresser'**” innebär det att det tar lite längre tid för att slutföra konfigurationen av klientorganisationen eller den anpassade domänen, om du nyligen har lagt till en sådan. Konfigurationen kan ta upp till 4 timmar. Vänta en stund så att konfigurationen hinner slutföras och försök sedan igen. Om problemet kvarstår kan du ringa [supporten](../contact-support-for-business-products.md) och be dem göra en fullständig synkronisering åt dig.
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>"Tyvärr kunde användaren inte redigeras. Kontrollera användarinformationen och försök igen"
 
@@ -249,7 +249,7 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
 > [!TIP]
 > Då ändras personens **userPrincipalName**-attribut och det påverkar inte personens MOERA-e-postadress (Microsoft Online Email Routing Address). Men det är bäst om personens UPN för inloggning matchar dennes primära SMTP-adress. 
   
-Om du vill veta hur du ändrar ett användarnamn i Active Directory i Windows Server 2003 och tidigare kan du läsa [Ändra namn på ett användarkonto](https://go.microsoft.com/fwlink/?LinkId=809091).
+Om du vill veta hur du ändrar ett användarnamn i Active Directory i Windows Server 2003 och tidigare kan du läsa [Ändra namn på ett användarkonto](/previous-versions/windows/it-pro/windows-server-2003/cc772952(v=ws.10)).
   
 ## <a name="related-articles"></a>Relaterade artiklar
 

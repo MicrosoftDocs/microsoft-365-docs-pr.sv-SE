@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Läs om konfigurationsstegen i Microsoft 365 som behövs för att konfigurera en grupp för samarbete mellan uppgifter, konversationer och dokumentation med gäster i Teams.
-ms.openlocfilehash: 986f9c1f343c8ccc3d76557291938d170923c89b
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 4e734af198563d0bc4599b4476b3823384989212
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712324"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904666"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Samarbeta med gäster i en grupp
 
@@ -38,7 +38,7 @@ I den här videon visas konfigurationsstegen som beskrivs i det här dokumentet.
 
 ## <a name="azure-external-collaboration-settings"></a>Inställningar för externt samarbete i Azure
 
-Delning i Microsoft 365 styrs på sin högsta nivå av inställningarna för [B2B-externt samarbete i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Om gästdelning är inaktiverad eller begränsad i Azure Active Directory åsidosätter den här inställningen alla delningsinställningar som du konfigurerar i Microsoft 365.
+Delning i Microsoft 365 styrs på sin högsta nivå av inställningarna för [B2B-externt samarbete i Azure Active Directory](/azure/active-directory/external-identities/delegate-invitations). Om gästdelning är inaktiverad eller begränsad i Azure Active Directory åsidosätter den här inställningen alla delningsinställningar som du konfigurerar i Microsoft 365.
 
 Kontrollera inställningarna för B2B-externt samarbete för att säkerställa att delning med gäster inte blockeras.
 
@@ -74,7 +74,7 @@ Att ange inställningar för gäståtkomst i Teams
 5. Kontrollera att **Tillåt gäståtkomst i Teams** är inställt på **På**.
 6. Gör önskade ändringar i de ytterligare gästinställningarna och klicka sedan på **Spara**.
 
-När Teams gäståtkomst har aktiverats kan du styra gäståtkomst till enskilda grupper och deras associerade SharePoint-webbplatser med hjälp av känslighetsetiketter. Mer information finns i [Använd känslighetsetiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+När Teams gäståtkomst har aktiverats kan du styra gäståtkomst till enskilda grupper och deras associerade SharePoint-webbplatser med hjälp av känslighetsetiketter. Mer information finns i [Använd känslighetsetiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 > [!NOTE]
 > Det kan ta upp till 24 timmar för gästinställningar i Teams att bli aktiva när du har aktiverat det.
@@ -187,6 +187,6 @@ Bjuda in gäster till ett team
 
 [Skapa ett B2B-extranät med hanterade gäster](b2b-extranet.md)
 
-[SharePoint- och OneDrive-integrering med Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
+[SharePoint- och OneDrive-integrering med Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)
 
-[Delningsalternativ är gråtonade när du delar från SharePoint eller OneDrive](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)
+[Delningsalternativ är gråtonade när du delar från SharePoint eller OneDrive](/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

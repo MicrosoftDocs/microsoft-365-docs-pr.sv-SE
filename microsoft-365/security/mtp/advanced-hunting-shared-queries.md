@@ -1,7 +1,7 @@
 ---
 title: Använda delade frågor i Microsoft 365 Defender avancerad sökning
-description: Börja med att sök hot direkt med fördefinierade och delade frågor. Dela dina frågor till allmänheten eller till din organisation.
-keywords: avancerad sökning, hotsökning, cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, anpassade identifieringar, schema, kusto, github-lagring, mina frågor, delade frågor
+description: Börja sök hot omedelbart med fördefinierade och delade frågor. Dela dina frågor offentligt eller med din organisation.
+keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, custom detections, schema, kusto, github repo, my queries, shared queries
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7dcf446b5e1014d411fc8af08dd15506a2b04e49
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ccf2b52c744e2ae8e7ccfc631268d79a375c91d4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932196"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904048"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Använda delade frågor för avancerad sökning
 
@@ -37,7 +37,7 @@ ms.locfileid: "49932196"
 
 
 
-[Avancerade sökfrågor](advanced-hunting-overview.md) kan delas mellan användare i samma organisation. Du kan också hitta frågor som delas offentligt på GitHub. Med de här frågorna kan du snabbt söka efter specifika hot utan att behöva skriva frågor från grunden.
+[Avancerade sökfrågor](advanced-hunting-overview.md) kan delas mellan användare i samma organisation. Du kan också hitta frågor som delats offentligt på GitHub. Med de här frågorna kan du snabbt söka efter specifika hot utan att behöva skriva frågor från grunden.
 
 ![Bild på delade frågor](../../media/advanced-hunting-shared-queries.png)
 
@@ -46,15 +46,15 @@ Du kan spara en ny eller befintlig fråga så att den bara är tillgänglig för
 
 1. Skapa eller ändra en fråga. 
 
-2. Klicka på **listrutan** Spara fråga och välj **Spara som.**
+2. Klicka på **listrutan** Spara fråga och välj **Spara som**.
     
 3. Ange ett namn för frågan. 
 
-   ![Bild av hur du sparar en fråga](../../media/advanced-hunting-save-query.png)
+   ![Bild av att spara en fråga](../../media/advanced-hunting-save-query.png)
 
 4. Välj den mapp där du vill spara frågan.
     - **Delade frågor –** delas för alla användare i organisationen
-    - **Mina frågor –** endast tillgängliga för dig
+    - **Mina frågor –** endast tillgänglig för dig
     
 5. Välj **Spara**. 
 
@@ -66,13 +66,13 @@ Du kan spara en ny eller befintlig fråga så att den bara är tillgänglig för
 2. Välj **Ta bort** och bekräfta borttagningen. Eller välj **Byt** namn och ange ett nytt namn för frågan.
 
 ## <a name="create-a-direct-link-to-a-query"></a>Skapa en direktlänk till en fråga
-För att skapa en länk som öppnar frågan direkt i den avancerade frågeredigeraren för sökfrågor slutför du frågan och väljer **Dela länk.**
+Om du vill skapa en länk som öppnar frågan direkt i den avancerade frågeredigeraren för sökning slutför du frågan och väljer **Dela länk**.
 
-## <a name="access-queries-in-the-github-repository"></a>Åtkomstfrågor på GitHub-databasen  
-Microsoft-säkerhet som regelbundet delar avancerade sökningsfrågor på en [angiven offentlig lagringsplats på GitHub.](https://aka.ms/hunting-queries) Lagringsplatsen är öppen för bidrag. Delta kostnadsfritt [i GitHub.](https://github.com/)
+## <a name="access-queries-in-the-github-repository"></a>Åtkomstfrågor på GitHub-lagringsplatsen  
+Microsoft-säkerhetsvakterna delar regelbundet avancerade sökfrågor på en [angiven offentlig lagringsplats på GitHub.](https://aka.ms/hunting-queries) Lagringsplatsen är öppen för bidrag. Delta genom [att kostnadsfritt ansluta till GitHub.](https://github.com/)
 
 >[!tip]
->Microsoft säkerhet är en säkerhetsrisk som även erbjuder avancerade sökningsfrågor som du kan använda för att hitta aktiviteter och indikatorer som är associerade med nya hot. Dessa frågor tillhandahålls som en del av rapporterna [om hotanalyser](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) i Microsoft Defender Säkerhetscenter.
+>Microsoft-säkerhetsvakter erbjuder också avancerade sökfrågor som du kan använda för att hitta aktiviteter och indikatorer som är associerade med nya hot. Dessa frågor tillhandahålls som en del av rapporterna [över hotanalyser](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) i Microsoft Defender Säkerhetscenter.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

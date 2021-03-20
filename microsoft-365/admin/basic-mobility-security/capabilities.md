@@ -17,165 +17,165 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Grundläggande mobilitet och säkerhet kan hjälpa dig att skydda och hantera mobila enheter.
-ms.openlocfilehash: 746131e90e207d7b888a3ddcaf4ff0656606a2c7
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+description: Basic Mobility and Security kan hjälpa dig att skydda och hantera mobila enheter.
+ms.openlocfilehash: 468f06edf16eb6ea00fd4d26c716bc145474dd25
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877122"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904282"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Funktioner i grundläggande Mobility and Security
 
-Med grundläggande mobilitet och säkerhet kan du skydda och hantera mobila enheter som iPhone, iPad, Android och Windows-telefoner som används av licensierade Microsoft 365-användare i din organisation. Du kan skapa principer för mobila enheter med inställningar som hjälper dig att kontrol lera åtkomsten till organisationens Microsoft 365-e-post och dokument för mobila enheter och program som stöds. Om en enhet går förlorad eller stjäls kan du fjärrrensa enheten för att ta bort känslig organisationsinformation.
+Basic Mobility and Security kan hjälpa dig att skydda och hantera mobila enheter som iPhone, iPad, Android och Windows Phone-telefoner som används av licensierade Microsoft 365-användare i organisationen. Du kan skapa principer för hantering av mobila enheter med inställningar som kan hjälpa dig att kontrollera åtkomsten till din organisations Microsoft 365-e-post och dokument för mobila enheter och appar som stöds. Om en enhet försvinner eller blir stulen kan du fjärradea enheten för att ta bort känslig information om organisationen.
 
 ## <a name="supported-devices"></a>Enheter som stöds
 
-Du kan använda grundläggande mobilitet och säkerhet för att skydda och hantera följande enheter.
+Du kan använda Basic Mobility and Security för att skydda och hantera följande enheter.
 
-- iOS 11,0 eller senare
+- iOS 11.0 eller senare versioner
 
-- Android 5,0 eller senare version<sup>3</sup>
+- Android 5.0 eller senare versioner<sup>3</sup>
 
-- Windows 8,1<sup>1</sup>
+- Windows 8.1<sup>1</sup>
 
-- Windows 8,1 RT<sup>1</sup>
+- Windows 8.1 RT<sup>1</sup>
 
 - Windows 10<sup>2</sup>
 
 - Windows 10 Mobile<sup>2</sup>
 
-<sup>1</sup> Åtkomst kontroll för Windows 8,1 RT-enheter är begränsad till Exchange ActiveSync.
+<sup>1</sup> Åtkomstkontrollen för Windows 8.1 RT-enheter är begränsad till Exchange ActiveSync.
 
-<sup>2</sup> Åtkomst kontroll för Windows 8,1 RT-enheter är begränsad till Exchange ActiveSync.
-För åtkomst kontroll för Windows 10 krävs en prenumeration som inkluderar Azure AD Premium och enheten måste vara ansluten till Azure Active Directory.
+<sup>2</sup> Åtkomstkontrollen för Windows 8.1 RT-enheter är begränsad till Exchange ActiveSync.
+Åtkomstkontroll för Windows 10 kräver en prenumeration som innehåller Azure AD Premium och enheten måste vara ansluten till Azure Active Directory.
 
-<sup>3</sup> Åtkomst kontroll för Windows 8,1 RT-enheter är begränsad till Exchange ActiveSync.
-Efter juni 2020 kan Android-versioner senare än 9 inte hantera lösen ords inställningar förutom för Samsung KNOX-enheter.
+<sup>3</sup> Åtkomstkontrollen för Windows 8.1 RT-enheter är begränsad till Exchange ActiveSync.
+Efter juni 2020 kan Android-versioner senare än 9 inte hantera lösenordsinställningar utom på Samsung Knox-enheter.
 
 >[!NOTE]
->Enheter som redan har registrerats med tidigare OS-versioner fortsätter att fungera trots att funktionerna kan ändras utan förvarning.
+>Enheter som redan har registrerats med tidigare os-versioner fortsätter att fungera, men funktionerna kan ändras utan föregående meddelande.
 
-Om personer i din organisation använder mobila enheter som inte stöds av grundläggande mobilitet och säkerhet kan det vara bra att blockera program åtkomst för Exchange ActiveSync till Microsoft 365-e-post för dessa enheter så att organisationens data blir säkrare. Anvisningar för hur du blockerar Exchange ActiveSync finns i [Hantera åtkomst inställningar för enheter i grundläggande mobilitet och säkerhet](manage-device-access-settings.md).
+Om personer i organisationen använder mobila enheter som inte stöds av Basic Mobility and Security kanske du vill blockera Exchange ActiveSync-appåtkomst till e-post i Microsoft 365 för de enheterna, för att göra organisationens data säkrare. Information om hur du blockerar Exchange ActiveSync finns [i Hantera enhetsåtkomstinställningar i Basic Mobility and Security.](manage-device-access-settings.md)
 
-## <a name="access-control-for-microsoft-365-email-and-documents"></a>Åtkomst kontroll för Microsoft 365 e-post och dokument
+## <a name="access-control-for-microsoft-365-email-and-documents"></a>Åtkomstkontroll för e-post och dokument i Microsoft 365
 
-De program som stöds för de olika typerna av mobila enheter i följande tabell uppmanar användare att registrera sig för grundläggande mobilitet och säkerhet, där det finns en ny hanterings princip för mobila enheter som gäller för en användares enhet och användaren inte har registrerat enheten tidigare. Om en användares enhet inte följer någon princip, beroende på hur du ställer in principen, kan en användare hindras från att få åtkomst till Microsoft 365-resurser i de här apparna, eller så kan de ha Access men Microsoft 365 rapporterar en policy överträdelse.
+Apparna som stöds för de olika typerna av mobila enheter i följande tabell uppmanar användarna att registrera sig i Basic Mobility and Security, där det finns en ny princip för hantering av mobila enheter som gäller för en användares enhet och användaren inte tidigare har registrerat enheten. Om en användares enhet inte uppfyller en princip, beroende på hur du har angett principen, kan en användare blockeras från att komma åt Microsoft 365-resurser i de här apparna, eller så har de åtkomst men Microsoft 365 rapporterar ett principfel.
 
-|**Produkt**|**iOS 10,0 eller senare**|**Android 5,0 eller senare**|
+|**Produkt**|**iOS 10.0 eller senare**|**Android 5.0 eller senare**|
 |:-----|:-----|:-----|
-|**Exchange** Exchange ActiveSync inkluderar inbyggd e-post och tredjepartsprogram, till exempel TouchDown, som använder Exchange ActiveSync version 14,1 eller senare. |Program |E-post |
-|**Office**   och  **OneDrive för företag** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**På telefoner och surfplattor**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **Endast på telefoner:** <br/> Office Mobile |
+|**Exchange** Exchange ActiveSync innehåller inbyggd e-post och appar från tredje part, till exempel TouchDown, som använder Exchange ActiveSync version 14.1 eller senare. |E-post |E-post |
+|**Office**   och  **OneDrive för företag** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**På telefoner och surfplattor:**<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **Endast på telefoner:** <br/> Office Mobile |
 
 >[!NOTE]
-- >Stöd för iOS 10,0 och senare versioner inkluderar iPhone-och iPad-enheter.
-- >Hantering av Black Berry OS-enheter stöds inte av grundläggande säkerhet och mobilitet. Använda Black Berry Business Cloud Services (BBCS) från Black Berry för att hantera Black Berry OS-enheter. Black Berry-enheter med Android OS stöds som vanliga Android-enheter
-- >Användare uppmanas inte att registrera sig och kommer inte att blockeras eller rapporteras för policy brott om de använder mobilen för att komma åt Microsoft 365 SharePoint-webbplatser, dokument i Office Online eller via e-post i Outlook Web App.
+- >Stöd för iOS 10.0 och senare versioner inkluderar iPhone och iPad-enheter.
+- >Hantering av BlackBerry OS-enheter stöds inte av Basic Security och Mobility. Använd BlackBerry Business Cloud Services (BBCS) från BlackBerry för att hantera BlackBerry OS-enheter. Blackberry-enheter med Android OS stöds som vanliga Android-enheter
+- >Användarna uppmanas inte att registrera sig och de kommer inte att blockeras eller rapporteras för principbrott om de använder mobilwebbläsaren för att komma åt Microsoft 365 SharePoint-webbplatser, dokument i Office Online eller e-post i Outlook Web App.
 
-Följande diagram visar vad som händer när en användare med en ny enhet loggar in i ett program som har stöd för åtkomst kontroll med grundläggande mobilitet och säkerhet. Användaren blockeras från att få åtkomst till Microsoft 365-resurser i appen tills de registrerar sina enheter.
+Följande diagram visar vad som händer när en användare med en ny enhet loggar in i en app som stöder åtkomstkontroll med Basic Mobility och Security. Användaren blockeras från att komma åt Microsoft 365-resurser i programmet tills de registrerar sin enhet.
 
-:::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="Grundläggande åtkomst kontroll för rörlighet och säkerhet":::
+:::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="Åtkomstkontroll för enkel rörlighet och säkerhet":::
 
 > [!NOTE]
-> Principer och åtkomst regler som har skapats i grundläggande mobilitet och säkerhet för Microsoft 365 Business Standard åsidosätter Exchange ActiveSync-principer för mobila enheter och åtkomst regler för enheter som har skapats i administrations centret för Exchange. När en enhet har registrerats i grundläggande mobilitet och säkerhet för Microsoft 365 Business Standard, ignoreras den princip för Exchange ActiveSync-postlådan eller enhets åtkomst regeln som används för enheten. Mer information om Exchange ActiveSync finns i [Exchange ActiveSync i Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=524380).
+> Principer och åtkomstregler som skapats i Basic Mobility and Security för Microsoft 365 Business Standard åsidosätter postlådeprinciper för mobila enheter och åtkomstregler för enheter som skapats i administrationscentret för Exchange ActiveSync. När en enhet har registrerats i Basic Mobility and Security för Microsoft 365 Business Standard ignoreras eventuella postlådeprinciper för mobila enheter eller åtkomstregel för Exchange ActiveSync som tillämpas på enheten. Mer information om Exchange ActiveSync finns i [Exchange ActiveSync i Exchange Online.](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync)
 
-## <a name="policy-settings-for-mobile-devices"></a>Princip inställningar för mobila enheter
+## <a name="policy-settings-for-mobile-devices"></a>Principinställningar för mobila enheter
 
-Om du skapar en princip för att blockera åtkomst med vissa inställningar aktiverade hindras användarna från att få åtkomst till Microsoft 365-resurser när ett program som stöds visas i [åtkomst kontroll för Microsoft 365 e-post och dokument](capabilities.md). 
+Om du skapar en princip för att blockera åtkomst med vissa inställningar påslagna blockeras användarna från att komma åt Microsoft 365-resurser när de använder ett program som stöds och som finns i Access-kontrollen för e-post och dokument i [Microsoft 365.](capabilities.md) 
 
-De inställningar som kan hindra användare från att komma åt Microsoft 365-resurser är i följande avsnitt:
+Inställningarna som kan blockera användare från att komma åt Microsoft 365-resurser finns i följande avsnitt:
 
 - Säkerhet
 
 - Kryptering
 
-- Jail trasig
+- Jail broken
 
 - Hanterad e-postprofil  
 
-Följande diagram visar till exempel vad som händer när en användare med en registrerad enhet inte är kompatibel med en säkerhets inställning i en hanterings princip för mobila enheter som gäller för enheten. Användaren loggar in i ett program som har stöd för åtkomst kontroll med grundläggande mobilitet och säkerhet. De hindras från att använda Microsoft 365-resurser i appen förrän deras enheter uppfyller säkerhets inställningen.
+Följande diagram visar till exempel vad som händer när en användare med en registrerad enhet inte följer en säkerhetsinställning i en princip för hantering av mobila enheter som gäller för deras enhet. Användaren loggar in på en app som har stöd för åtkomstkontroll med Basic Mobility and Security. De blockeras från att komma åt Microsoft 365-resurser i programmet tills enheten uppfyller säkerhetsinställningen.
 
-:::image type="content" source="../../media/basic-mobility-security/bms-2-device-not-compliant.png" alt-text="Grundläggande meddelanden om mobilitet och säkerhet":::
+:::image type="content" source="../../media/basic-mobility-security/bms-2-device-not-compliant.png" alt-text="Meddelande om efterlevnad av grundläggande rörlighet och säkerhet":::
 
-I följande avsnitt visas de princip inställningar du kan använda för att skydda och hantera mobila enheter som ansluter till din Microsoft 365-organisation.
+I följande avsnitt visas de principinställningar du kan använda för att skydda och hantera mobila enheter som ansluter till dina Microsoft 365-organisationsresurser.
 
-## <a name="security-settings"></a>Säkerhets inställningar
+## <a name="security-settings"></a>Säkerhetsinställningar
 
-|**Ställa in namn**|**iOS 7,1 och senare**|**Android 5 och senare**|**Samsung KNOX**|
+|**Ställa in namn**|**iOS 7.1 och senare**|**Android 5 och senare**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
-|Kräv lösen ord|Ja|Ja|Ja|
-|Förhindra enkelt lösen ord|Ja|Nej|Nej|
-|Kräva ett alfanumeriskt lösen ord|Ja|Nej|Nej|
-|Minsta längd på lösen ord |Ja|Ja|Ja|
-|Antal misslyckade inloggnings försök innan enheten rensas |Ja|Ja|Ja|
-|Minuters inaktivitet innan enheten är låst |Ja|Ja|Ja|
-|Lösen ordet upphör (dagar) |Ja|Ja|Ja|
-|Kom ihåg lösen ords historik och förhindra åter användning |Ja|Ja|Ja|
+|Kräv lösenord|Ja|Ja|Ja|
+|Förhindra enkelt lösenord|Ja|Nej|Nej|
+|Kräv ett alfanumeriskt lösenord|Ja|Nej|Nej|
+|Minsta lösenordslängd |Ja|Ja|Ja|
+|Antal inloggningsfel innan enheten rensas |Ja|Ja|Ja|
+|Minuter av inaktivitet innan enheten låses |Ja|Ja|Ja|
+|Lösenords giltighetstid (dagar) |Ja|Ja|Ja|
+|Kom ihåg lösenordshistorik och förhindra återanvändning |Ja|Ja|Ja|
 
-## <a name="encryption-settings"></a>Krypterings inställningar
+## <a name="encryption-settings"></a>Krypteringsinställningar
 
-|**Ställa in namn**|**iOS 7,1 och senare**|**Android 5 och senare**|**Samsung KNOX**|
+|**Ställa in namn**|**iOS 7.1 och senare**|**Android 5 och senare**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
-|Kräv data kryptering på enheter<sup>1</sup> |Nej|Ja|Ja|
+|Kräva datakryptering på enheter<sup>1</sup> |Nej|Ja|Ja|
 
-<sup>1</sup> Med Samsung KNOX kan du även kräva kryptering på lagrings kort. 
+<sup>1</sup> Med Samsung Knox kan du också kräva kryptering på minneskort. 
 
-## <a name="jail-broken-setting"></a>Jail trasig inställning 
+## <a name="jail-broken-setting"></a>Inskannad inställning av jail broken 
 
-|**Ställa in namn**|**iOS 7,1 och senare**|**Android 5 och senare**|**Samsung KNOX**|
+|**Ställa in namn**|**iOS 7.1 och senare**|**Android 5 och senare**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
-|Enheten kan inte Jail vara trasig eller rotad |Ja|Ja|Ja|
+|Enheten kan inte bli jail broken or rooted |Ja|Ja|Ja|
 
-## <a name="managed-email-profile-option"></a>Alternativet hanterad e-postprofil 
+## <a name="managed-email-profile-option"></a>Alternativ för hanterad e-postprofil 
 
-Följande alternativ kan hindra användare från att komma åt sin Microsoft 365-e-post om de använder en manuellt skapad e-postprofil. Användare på iOS-enheter måste ta bort sin manuellt skapade e-postprofil innan de får åtkomst till deras e-post. När han eller hon tagit bort profilen skapas en ny profil automatiskt på enheten. Instruktioner om hur slutanvändare får till gång till kompatibilitet finns i [ett befintligt e-postkonto](https://docs.microsoft.com/intune-user-help/existing-company-email-account-found).
+Följande alternativ kan blockera användare från att komma åt sin e-post i Microsoft 365 om de använder en e-postprofil som skapats manuellt. Användare på iOS-enheter måste ta bort sin manuellt skapade e-postprofil innan de kan komma åt sin e-post. När profilen tas bort skapas automatiskt en ny profil på enheten. Anvisningar om hur slutanvändare följer finns i Ett [befintligt e-postkonto hittades.](/intune-user-help/existing-company-email-account-found)
 
-|**Ställa in namn**|**iOS 7,1 och senare**|**Android 5 och senare**|**Samsung KNOX**|
+|**Ställa in namn**|**iOS 7.1 och senare**|**Android 5 och senare**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |E-postprofil hanteras |Ja|Nej|Nej|
 
-## <a name="cloud-settings"></a>Moln inställningar
+## <a name="cloud-settings"></a>Molninställningar
 
-|**Ställa in namn**|**iOS 7,1 och senare**|**Android 5 och senare**|**Samsung KNOX**|
+|**Ställa in namn**|**iOS 7.1 och senare**|**Android 5 och senare**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
-|Kräv krypterad säkerhets kopiering |Ja|Nej|Nej|
-|Blockera säkerhets kopiering av moln |Ja|Nej|Nej|
-|Blockera synkronisering av dokument |Ja|Nej|Nej|
-|Blockera Fotosynkronisering  |Ja|Nej|Nej|
-|Tillåt Google-säkerhetskopiering  |Saknas|Nej|Ja|
-|Tillåt automatisk synkronisering av Google-konto  |Saknas|Nej|Ja|
+|Kräv krypterad säkerhetskopiering |Ja|Nej|Nej|
+|Blockera säkerhetskopiering av molnet |Ja|Nej|Nej|
+|Blockera dokumentsynkronisering |Ja|Nej|Nej|
+|Blockera fotosynkronisering  |Ja|Nej|Nej|
+|Tillåt säkerhetskopiering av Google  |Uppgift saknas|Nej|Ja|
+|Tillåt automatisk synkronisering av Google-konto  |Uppgift saknas|Nej|Ja|
 
 ## <a name="system-settings"></a>Systeminställningar
 
-|**Ställa in namn**|**iOS 7,1 och senare**|**Android 5 och senare**|**Samsung KNOX**|
+|**Ställa in namn**|**iOS 7.1 och senare**|**Android 5 och senare**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
-|Blockera skärmdump |Ja|Nej|Ja|
-|Blockera att skicka diagnostikdata från enheten |Ja|Nej|Ja|
+|Blockera skärminspelning |Ja|Nej|Ja|
+|Blockera att diagnostikdata skickas från enheten |Ja|Nej|Ja|
 
-## <a name="application-settings"></a>Program inställningar
+## <a name="application-settings"></a>Programinställningar
 
-|**Ställa in namn**|**iOS 7,1 och senare**|**Android 5 och senare**|**Samsung KNOX**|
+|**Ställa in namn**|**iOS 7.1 och senare**|**Android 5 och senare**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
-|Blockera video konferenser på enhet |Ja|Nej|Nej|
-|Blockera åtkomst till program lagring |Ja|Nej|Ja|
-|Kräv lösen ord vid åtkomst till program arkivet |Nej|Ja|Ja|
+|Blockera videokonferenser på en enhet |Ja|Nej|Nej|
+|Blockera åtkomst till programbutik |Ja|Nej|Ja|
+|Kräv lösenord när du öppnar programbutik |Nej|Ja|Ja|
 
-## <a name="device-capabilities-settings"></a>Inställningar för enhets funktioner
+## <a name="device-capabilities-settings"></a>Inställningar för enhetsfunktioner
 
-|**Ställa in namn**|**iOS 7,1 och senare**|**Android 5 och senare**|**Samsung KNOX**|
+|**Ställa in namn**|**iOS 7.1 och senare**|**Android 5 och senare**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
-|Blockera anslutning med flyttbart lagrings utrymme |Ja|Ja|Nej|
+|Blockera anslutning med flyttbara lagringsmedia |Ja|Ja|Nej|
 |Blockera Bluetooth-anslutning |Ja|Ja|Nej|
 
 ## <a name="additional-settings"></a>Ytterligare inställningar
 
-Du kan ange följande princip inställningar genom att använda säkerhets & kompatibilitetskontroll för PowerShell-cmdletar. Mer information finns i [säkerhets & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell).
+Du kan ange följande ytterligare principinställningar med hjälp av PowerShell & Säkerhets- och efterlevnadscenter. Mer information finns i [Security & Compliance Center PowerShell.](/powershell/exchange/scc-powershell)
 
-|**Ställa in namn**|**iOS 7,1 och senare**|**Android 5 och senare**|
+|**Ställa in namn**|**iOS 7.1 och senare**|**Android 5 och senare**|
 |:-----|:-----|:-----|
 |CameraEnabled|Ja|Ja|
-|RegionRatings|Ja|Nej|
-|MoviesRatings|Ja|Nej|
+|Regionratings|Ja|Nej|
+|Filmratings|Ja|Nej|
 |TVShowsRating |Ja|Nej|
 |AppsRatings |Ja|Nej|
 |AllowVoiceDialing |Ja|Nej|
@@ -189,34 +189,34 @@ Du kan ange följande princip inställningar genom att använda säkerhets & kom
 
 ## <a name="settings-supported-by-windows"></a>Inställningar som stöds av Windows
 
-Du kan hantera Windows 10-enheter genom att registrera dem som mobila enheter. När en tillämplig princip har distribuerats måste användare med Windows 10-enheter registrera sig i grundläggande mobilitet och säkerhet första gången de använder den inbyggda e-postappen för att få åtkomst till Microsoft 365-e-post (kräver Azure AD Premium-prenumeration).
+Du kan hantera Windows 10-enheter genom att registrera dem som mobila enheter. När en tillämplig princip har distribuerats måste användare med Windows 10-enheter registrera sig i Basic Mobility and Security första gången de använder det inbyggda e-postprogrammet för att få åtkomst till sin Microsoft 365-e-post (kräver Azure AD Premium-prenumeration).
 
-Följande inställningar stöds för Windows 10-enheter som är registrerade som mobila enheter. Dessa inställningar hindrar inte användarna från att få åtkomst till Microsoft 365-resurser.
+Följande inställningar stöds för Windows 10-enheter som är registrerade som mobila enheter. Den här inställningen blockerar inte användare från att komma åt Microsoft 365-resurser.
 
-### <a name="security-settings"></a>Säkerhets inställningar
+### <a name="security-settings"></a>Säkerhetsinställningar
 
-- Kräva ett alfanumeriskt lösen ord
+- Kräv ett alfanumeriskt lösenord
 
-- Minsta längd på lösen ord
+- Minsta lösenordslängd
 
-- Antal misslyckade inloggnings försök innan enheten rensas
+- Antal inloggningsfel innan enheten rensas
 
-- Minuters inaktivitet innan enheten är låst
+- Minuter av inaktivitet innan enheten låses
 
-- Lösen ordet upphör (dagar)
+- Lösenords giltighetstid (dagar)
 
-- Kom ihåg lösen ords historik och förhindra åter användning
+- Kom ihåg lösenordshistorik och förhindra återanvändning
 
 >[!NOTE]
->Följande inställningar reglerar lösen ord endast lokala Windows-konton. Windows-konton som tillhandahålls via Anslut till en domän eller Azure Active Directory påverkas inte av de här inställningarna.
+>Följande inställningar som kontrollerar lösenord styr bara lokala Windows-konton. Windows-konton som tillhandahålls via anslutning till en domän eller Azure Active Directory påverkas inte av de här inställningarna.
 
 ### <a name="system-settings"></a>Systeminställningar
 
-Blockera att skicka diagnostikdata från enhet.
+Blockera att diagnostikdata skickas från enheten.
 
 ### <a name="additional-settings"></a>Ytterligare inställningar
 
-Du kan ange följande princip inställningar genom att använda PowerShell-cmdletar:
+Du kan ange de här ytterligare principinställningarna med hjälp av PowerShell-cmdlets:
 
 - AllowConvenienceLogon
 
@@ -234,14 +234,14 @@ Du kan ange följande princip inställningar genom att använda PowerShell-cmdle
 
 - WorkFoldersSyncUrl
 
-## <a name="remotely-wipe-a-mobile-device"></a>Rensa en mobil enhet på en fjärrdator
+## <a name="remotely-wipe-a-mobile-device"></a>Radera en mobil enhet via fjärrenhet
 
-Om en enhet försvinner eller blir stulen kan du ta bort känslig organisations data och förhindra åtkomst till dina Microsoft 365-organisations resurser genom att göra en rensning från säkerhets & Compliance Center > hantering av **data förlust**  >  . Du kan göra en selektiv rensning för att enbart ta bort organisations data eller en fullständig rensning för att ta bort all information från en enhet och återställa den till fabriks inställningarna.
+Om en enhet försvinner eller blir stulen kan du ta bort känsliga organisationsdata och förhindra åtkomst till dina Microsoft 365-organisationsresurser genom att göra en rensning från Säkerhets- och efterlevnadscenter & > **Dataförlustskydd** Enhetshantering  >  . Du kan göra en selektiv rensning för att endast ta bort organisationsdata eller en fullständig rensning för att ta bort all information från en enhet och återställa den till fabriksinställningarna.
 
-Mer information finns i [Rensa en mobil enhet i grundläggande mobilitet och säkerhet](wipe-mobile-device.md).
+Mer information finns i Rensa [en mobil enhet i Basic Mobility and Security.](wipe-mobile-device.md)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Översikt över grundläggande mobilitet och säkerhet för Microsoft 365](overview.md)
+[Översikt över Basic Mobility and Security för Microsoft 365](overview.md)
 
-[Skapa säkerhets principer för enheter i grundläggande mobilitet och säkerhet](create-device-security-policies.md)
+[Skapa säkerhetsprinciper för enheter i Basic Mobility and Security](create-device-security-policies.md)

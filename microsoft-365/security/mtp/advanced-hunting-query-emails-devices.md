@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a12b2dcf2de472f43e782e2064944ec774bdb9e1
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 1149d8fa614854bdbbd2c154f0e92f6a9c28ce00
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727265"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904073"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Jaga hot på enheter, e-postmeddelanden, appar och identiteter
 
@@ -50,7 +50,7 @@ Använd de här frågorna för att lära dig hur du snabbt kan få information o
 ### <a name="obtain-user-accounts-from-email-addresses"></a>Hämta användarkonton från e-postadresser
 När du skapar frågor i tabeller [som](advanced-hunting-schema-tables.md)täcker enheter och e-postmeddelanden, så måste du förmodligen hämta användarnamn från avsändares eller mottagares e-postadresser. I allmänhet kan du göra det åt mottagaren eller avsändarens adress med hjälp *av den lokala värden* från e-postadressen.
 
-I avsnittet nedan använder vi [funktionen tostring()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto för att extrahera den lokala värden direkt före från mottagarens e-postadresser `@` i kolumnen `RecipientEmailAddress` .
+I avsnittet nedan använder vi [funktionen tostring()](/azure/data-explorer/kusto/query/tostringfunction) Kusto för att extrahera den lokala värden direkt före från mottagarens e-postadresser `@` i kolumnen `RecipientEmailAddress` .
 
 ```kusto
 //Query snippet showing how to extract the account name from an email address
@@ -86,7 +86,7 @@ Department, City, Country
 Det [avancerade sökschemat](advanced-hunting-schema-tables.md) innehåller omfattande enhetsinformation i olika tabeller. I tabellen [DeviceInfo finns till exempel](advanced-hunting-deviceinfo-table.md) omfattande enhetsinformation baserad på händelsedata som aggregeras regelbundet. Den här frågan använder tabellen för att kontrollera om en potentiellt komprometterad användare () har loggat in på någon enhet och visar sedan aviseringarna som har utlösts `DeviceInfo` `<account-name>` på dessa enheter.
 
 >[!Tip]
-> Den här frågan `kind=inner` används för att ange en inre [koppling,](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)vilket förhindrar avduplicering av värden på vänster sida för `DeviceId` .
+> Den här frågan `kind=inner` används för att ange en inre [koppling,](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)vilket förhindrar avduplicering av värden på vänster sida för `DeviceId` .
 
 ```kusto
 DeviceInfo

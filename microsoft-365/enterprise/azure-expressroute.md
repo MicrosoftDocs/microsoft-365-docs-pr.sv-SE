@@ -21,111 +21,111 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
-description: Lär dig att använda Azure ExpressRoute med Office 365 och planera nätverks implementerings projektet om du distribuerar det.
-ms.openlocfilehash: 3691161767aba784039cbf317a51429c9ee6444c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Lär dig hur du använder Azure ExpressRoute med Office 365 och planerar nätverksimplementeringsprojektet om du distribuerar med det.
+ms.openlocfilehash: 7e44feefd375088d2fef36c7e7859e242c1a30aa
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694308"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905362"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute för Office 365
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Lär dig hur Azure ExpressRoute används med Office 365 och hur du planerar det nätverks implementerings projekt som krävs om du distribuerar Azure ExpressRoute för användning med Office 365. Infrastruktur-och plattforms tjänster som körs i Azure kan ofta utnyttja för att adressera nätverks arkitektur och prestanda. Vi rekommenderar ExpressRoute för Azure i de här fallen. Program vara som service offerter som Office 365 och Dynamics 365 har byggts för åtkomst till säkert och tillförlitligt via Internet. Du kan läsa om Internet prestanda och säkerhet och när du kan betrakta Azure ExpressRoute för Office 365 i artikeln om att [kontrol lera nätverks anslutningen för office 365](assessing-network-connectivity.md).
+Läs om hur Azure ExpressRoute används med Office 365 och hur du planerar den nätverksimplementering som krävs om du distribuerar Azure ExpressRoute för användning med Office 365. Infrastruktur- och plattformstjänster som körs i Azure kommer ofta att ha nytta av nätverksarkitektur och prestandaöverväganden. Vi rekommenderar ExpressRoute för Azure i dessa fall. Programvara som en tjänst-produkter som Office 365 och Dynamics 365 har skapats för säker och tillförlitlig åtkomst via Internet. Du kan läsa om Internetprestanda och internetsäkerhet och när du bör överväga Azure ExpressRoute för Office 365 i artikeln Utvärdera nätverksanslutningen för [Office 365.](assessing-network-connectivity.md)
 
 > [!NOTE]
-> Microsoft Authorization krävs för att använda ExpressRoute för Office 365. Microsoft granskar varje kund förfrågan och auktoriserar ExpressRoute för Office 365-användning när en kunds reglerings krav styr direkt anslutning. Om du har sådana krav måste du ange textutdraget och webb länken till den förordning som du tolkar som att det är direkt anslutnings barhet som krävs i [ExpressRoute för Office 365 för](https://aka.ms/O365ERReview) att påbörja en granskning av Microsoft. Obehöriga abonnemang försöker skapa väg filter för Office 365 att få ett [fel meddelande](https://support.microsoft.com/kb/3181709).
+> Microsoft-auktorisering krävs för att använda ExpressRoute för Office 365. Microsoft granskar alla kundförfrågningar och godkänner ExpressRoute för Office 365-användning när en kunds föreskrifter kräver direktanslutning. Om du har sådana krav kan du skicka textutdrag och webblänk till förordningen som du tolkar som att direkt anslutning krävs i ExpressRoute för [Office 365-begäran](https://aka.ms/O365ERReview) för att påbörja en Microsoft-granskning. Obehöriga prenumerationer som försöker skapa routefilter för Office 365 får [ett felmeddelande.](https://support.microsoft.com/kb/3181709)
 
-Du kan nu lägga till en direkt nätverks anslutning till Office 365 för vald Office 365-nätverks trafik. Azure ExpressRoute erbjuder en direkt anslutning, förutsägbar prestanda och har ett tids periods SLA för 99,95% för Microsoft-nätverks komponenter. Du behöver fortfarande en Internet anslutning för tjänster som inte stöds via Azure ExpressRoute.
+Nu kan du lägga till en direkt nätverksanslutning till Office 365 för vald Office 365-nätverkstrafik. Med Azure ExpressRoute får du en direktanslutning, förutsägbara prestanda och ett serviceavtal som innebär 99,95 % tillgänglighet för nätverkskomponenter från Microsoft. Du behöver en Internetanslutning för tjänster som inte stöds via Azure ExpressRoute.
 
 ## <a name="planning-azure-expressroute-for-office-365"></a>Planera Azure ExpressRoute för Office 365
 
-Utöver Internet anslutning kan du välja att dirigera en delmängd av sin Office 365-nätverks trafik via en direkt anslutning som ger enastående och en drift tid på 99,95% för Microsoft-nätverksklienter. Azure ExpressRoute ger dig den här dedicerade nätverks anslutningen till Office 365 och andra moln tjänster från Microsoft.
+Utöver internetanslutningen kan du välja att dirigera en delmängd av Office 365-nätverkstrafiken via en förutsägbar direktanslutning med ett serviceavtal som ger 99,95 % tillgänglighet för nätverkskomponenter från Microsoft. Med Azure ExpressRoute får du den här dedikerade nätverksanslutningen till Office 365 och andra Microsoft-molntjänster.
 
-Oavsett om du har en befintlig MPLS WAN kan ExpressRoute läggas till i nätverks arkitekturen på ett av tre sätt: via en Cloud Exchange Co-location-leverantör som stöds, en Ethernet Point-to-point-anslutning eller via en MPLS. Se vilka [leverantörer som är tillgängliga i din region](https://azure.microsoft.com/documentation/articles/expressroute-locations/). Den direkta ExpressRoute anslutningen gör det möjligt att ansluta till programmen som beskrivs i [vilka Office 365-tjänster som ingår?](azure-expressroute.md#BKMK_WhatDoIGet) nedan. Nätverks trafik för alla andra program och tjänster fortsätter att gå över till Internet.
+Oavsett om du har ett befintligt MPLS-WAN kan ExpressRoute läggas till i nätverksarkitekturen på ett av tre sätt. via en molnutbytesleverantör som stöds, via en punkt till punkt-koppling via Ethernet eller via en MPLS-anslutningsleverantör. Se vilka [leverantörer som är tillgängliga i din region.](/azure/expressroute/expressroute-locations) Med direktanslutningen via ExpressRoute kan du ansluta till de program som beskrivs i [Vilka Office 365-tjänster ingår?](azure-expressroute.md#BKMK_WhatDoIGet) nedan. Nätverkstrafiken för alla andra program och tjänster fortsätter att gå via internet.
 
-Tänk på följande nätverks diagram med hög nivå som visar en typisk Office 365-kund som ansluter till Microsofts Data Center via Internet för att få till gång till alla Microsoft-program, till exempel Office 365, Windows Update och TechNet. Kunder använder en liknande nätverks Sök väg oavsett om de ansluter från ett lokalt nätverk eller från en oberoende Internet anslutning.
+I följande högnivånätverksdiagram visas en typisk Office 365-kund som ansluter till Microsofts datacenter via internet för att komma åt alla Microsoft-program som Office 365, Windows Update och TechNet. Kunder använder en liknande nätverkssökväg oavsett om de ansluter från ett lokalt nätverk eller från en oberoende Internetanslutning.
 
-![Office 365 nätverks anslutning](../media/9d8bc622-4a38-4a3b-a0f3-68657712d460.png)
+![Office 365-nätverksanslutning](../media/9d8bc622-4a38-4a3b-a0f3-68657712d460.png)
 
-Titta på det uppdaterade diagrammet som visar en Office 365-kund som använder både Internet-och ExpressRoute för att ansluta till Office 365. Observera att vissa anslutningar som offentliga DNS-och Content-Network-noder kräver ändå den offentliga Internet anslutningen. Observera också att kundens användare inte är placerade i sin ExpressRoute anslutna byggnad ansluter via Internet.
+Titta nu på det uppdaterade diagrammet som föreställer en Office 365-kund som använder både Internet och ExpressRoute för att ansluta till Office 365. Observera att det fortfarande krävs en offentlig Internetanslutning för vissa anslutningar som offentligt DNS och noder för nätverk för innehållsleverans. Lägg också märke till att kunder som inte befinner sig på den ExpressRoute-anslutna byggnaden ansluter via Internet.
 
 ![Office 365-anslutning med ExpressRoute](../media/251788c4-0937-4584-9b2c-df08e11611fc.png)
 
-Vill du fortfarande ha mer information? Lär dig hur du [hanterar nätverks trafiken med Azure ExpressRoute för office 365](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408) och hur du [konfigurerar Azure ExpressRoute för Office 365](https://azure.microsoft.com/documentation/articles/expressroute-faqs/). Vi har också spelat in en 10-part [för Azure ExpressRoute for Office 365-utbildning](https://channel9.msdn.com/series/aer) på kanal 9 för att beskriva begreppen mer noggrant.
+Vill du ha mer information? Lär dig hur du hanterar din nätverkstrafik med Azure ExpressRoute för [Office 365](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408) och lär dig hur du konfigurerar [Azure ExpressRoute för Office 365.](/azure/expressroute/expressroute-faqs) Vi har även spelat in en 10 delar lång Azure ExpressRoute för [Office 365-utbildningsserie](https://channel9.msdn.com/series/aer) på Kanal 9 för att förklara begreppen mer noggrant.
 
 ## <a name="what-office-365-services-are-included"></a>Vilka Office 365-tjänster ingår?
 <a name="BKMK_WhatDoIGet"> </a>
 
-I följande tabell finns de Office 365-tjänster som stöds via ExpressRoute. Läs artikeln om [Office 365-slutpunkter](https://aka.ms/o365endpoints) för att förstå vilka nätverks förfrågningar för dessa program som kräver Internet anslutning.
+I följande tabell visas de Office 365-tjänster som stöds via ExpressRoute. Läs artikeln [Office 365-slutpunkter för att förstå](./urls-and-ip-address-ranges.md) vilka nätverksbegäranden för dessa program som kräver internetanslutning.
 
 |**Program som ingår**|
 |:-----|
 |Exchange Online<sup>1</sup> <br/> Exchange Online Protection<sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
-|Skype för företag – Online<sup>1</sup> <br/> Microsoft team <sup>1</sup> <br/> |
+|Skype för företag – Online<sup>1</sup> <br/> Microsoft Teams <sup>1</sup> <br/> |
 |SharePoint Online<sup>1</sup> <br/> OneDrive för företag<sup>1</sup> <br/> Project Online<sup>1</sup> <br/> |
-|Portal och delad<sup>1</sup> <br/> Azure Active Directory (Azure AD) <sup>1</sup> <br/> Azure AD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
+|Portal och delat<sup>1</sup> <br/> Azure Active Directory (Azure AD) <sup>1</sup> <br/> Azure AD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
 
-<sup>1</sup> de här programmen har Internet anslutnings krav som inte stöds av ExpressRoute, finns i [artikeln Office 365-slut punkter](https://aka.ms/o365endpoints) för att få mer information.
+<sup>1</sup> Var och en av de här programmen har internetanslutningskrav som inte stöds via ExpressRoute. Mer information finns i artikeln [Office 365-slutpunkter.](./urls-and-ip-address-ranges.md)
 
-Tjänsterna som inte ingår i ExpressRoute för Office 365 är Microsoft 365-appar för Enterprise-klient-ladda ned, lokal identitets leverantör inloggning och Office 365 (drivs av 21 Vianet) service i Kina.
+De tjänster som inte ingår i ExpressRoute för Office 365 är Microsoft 365-appar för hämtning av företagsklienter, inloggning till lokal identitetsprovider och Office 365-tjänsten (som drivs av 21 Vianet) i Kina.
 
 ## <a name="implementing-expressroute-for-office-365"></a>Implementera ExpressRoute för Office 365
 
-Implementering av ExpressRoute kräver att nätverks-och program ägare deltar och att du måste planera för att fastställa den nya [arkitekturen för nätverks dirigering](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408), bandbredds krav, var säkerheten implementeras, hög tillgänglighet och så vidare. För att implementera ExpressRoute måste du:
+För implementeringen av ExpressRoute måste nätverks- och programägare delta och det krävs noggrann planering för att fastställa ny arkitektur för nätverksroutning [,](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408)bandbreddskrav, var säkerhet ska implementeras, hög tillgänglighet och så vidare. Om du vill implementera ExpressRoute måste du:
 
-1. Helt förstå behovet ExpressRoute uppfyller kraven för att planera din Office 365-anslutning. Förstå vilka program som kommer att använda Internet eller ExpressRoute och fullt ut planera nätverks kapacitet, säkerhet och lättillgängliga behov i samband med användning av både Internet och ExpressRoute för Office 365-trafik.
+1. Helt förstå vilka behov ExpressRoute uppfyller i planeringen av Office 365-anslutningar. Förstå vilka program som kommer att använda internet eller ExpressRoute och helt planera nätverkskapacitet, säkerhet och behov av hög tillgänglighet när det gäller att använda både internet och ExpressRoute för Office 365-trafik.
 
-2. Fastställ utgångs-och peering-platser för både Internet-och ExpressRoute trafik<sup>1</sup>.
+2. Fastställa utgångs- och peeringplatser för både internet- och ExpressRoute-trafik<sup>1.</sup>
 
-3. Fastställ vilken kapacitet som behövs för Internet-och ExpressRoute-anslutningar.
+3. Fastställa vilken kapacitet som krävs för internet- och ExpressRoute-anslutningarna.
 
-4. Ha en plan för att implementera säkerhet och andra standard gräns kontroller<sup>1</sup>.
+4. Ha en plan för att implementera säkerhet och andra vanliga perimeterkontroller<sup>1.</sup>
 
-5. Ha ett giltigt Microsoft Azure-konto för att abonnera på ExpressRoute.
+5. Ha ett giltigt Microsoft Azure-konto för att prenumerera på ExpressRoute.
 
-6. Välj en anslutnings modell och en [godkänd leverantör](https://azure.microsoft.com/documentation/articles/expressroute-locations/). Kom ihåg att kunder kan välja flera anslutnings modeller eller partners och att partnern inte behöver vara samma som din befintliga nätverks leverantör.
+6. Välj en anslutningsmodell och en [godkänd leverantör](/azure/expressroute/expressroute-locations). Kom ihåg att kunder kan välja flera anslutningsmodeller och partner och att partnern inte behöver vara samma som din befintliga nätverksleverantör.
 
-7. Verifiera distributionen innan du dirigerar trafik till ExpressRoute.
+7. Validera distributionen innan du dirigerar trafik till ExpressRoute.
 
-8. Implementera eventuellt [QoS](https://support.office.com/article/ExpressRoute-and-QoS-in-Skype-for-Business-Online-20c654da-30ee-4e4f-a764-8b7d8844431d) och utvärdera regional expansion.
+8. Alternativt [implementerar du QoS](https://support.office.com/article/ExpressRoute-and-QoS-in-Skype-for-Business-Online-20c654da-30ee-4e4f-a764-8b7d8844431d) och utvärderar regional expansion.
 
-<sup>1</sup> viktig information om prestanda. Beslut här kan dramatiskt påverka svars tiden som är viktig för program som Skype för företag.
+<sup>1 Viktiga</sup> prestandaöverväganden. De beslut du fattar i det här centret kan ha stor påverkan på svarstiden, vilket är avgörande för program som Skype för företag.
 
-Mer information finns i vår [Guide för routning](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408) utöver [ExpressRoute dokumentation](https://azure.microsoft.com/documentation/articles/expressroute-introduction/).
+För ytterligare referenser använder du [routningsguiden](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408) utöver [ExpressRoute-dokumentationen.](/azure/expressroute/expressroute-introduction)
 
-För att kunna köpa ExpressRoute för Office 365 måste du arbeta med en eller flera [godkända leverantörer](https://azure.microsoft.com/documentation/articles/expressroute-locations/) för att tillhandahålla önskat nummer och storleks kretsar med en ExpressRoute Premium-prenumeration. Det finns inga ytterligare licenser att köpa från Office 365.
+För att kunna köpa ExpressRoute för Office 365 måste [](/azure/expressroute/expressroute-locations) du arbeta med en eller flera godkända leverantörer för att tillhandahålla önskat antal kretsar i rätt storlek med en ExpressRoute Premium-prenumeration. Det finns inga ytterligare licenser att köpa från Office 365.
 
-Här är en kort länk som du kan använda för att komma tillbaka: [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365)
+Här är en kort länk som du kan använda för att komma tillbaka: [https://aka.ms/expressrouteoffice365]()
 
-Är du redo att registrera dig för [ExpressRoute för Office 365](https://aka.ms/ert)?
+Är du redo att registrera dig för [ExpressRoute för Office 365?](https://aka.ms/ert)
 
-## <a name="related-topics"></a>Närliggande ämnen
+## <a name="related-topics"></a>Relaterade ämnen
 
-[Utvärdering av Office 365 nätverks anslutning](assessing-network-connectivity.md)
+[Utvärdera Nätverksanslutningar för Office 365](assessing-network-connectivity.md)
 
-[Hantera ExpressRoute för Office 365](managing-expressroute-for-connectivity.md)
+[Hantera ExpressRoute för Office 365-anslutningar](managing-expressroute-for-connectivity.md)
 
-[Routning med ExpressRoute för Office 365](routing-with-expressroute.md)
+[Dirigering med ExpressRoute för Office 365](routing-with-expressroute.md)
 
-[Nätverks planering med ExpressRoute för Office 365](network-planning-with-expressroute.md)
+[Nätverksplanering med ExpressRoute för Office 365](network-planning-with-expressroute.md)
 
 [Implementera ExpressRoute för Office 365](implementing-expressroute.md)
 
-[Använda BGP-communities i ExpressRoute för Office 365](bgp-communities-in-expressroute.md)
+[Använda BGP-communities i ExpressRoute för Office 365-scenarier](bgp-communities-in-expressroute.md)
 
-[Media kvalitet och nätverks anslutnings prestanda i Skype för företag – Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[Prestanda för mediekvalitet och nätverksanslutning i Skype för företag – Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
 
-[Prestanda justering för Office 365 med bas linjer och prestanda historik](performance-tuning-using-baselines-and-history.md)
+[Prestandajustering för Office 365 med baslinjer och prestandahistorik](performance-tuning-using-baselines-and-history.md)
 
-[Plan för prestanda fel sökning för Office 365](performance-troubleshooting-plan.md)
+[Plan för prestandafelsökning för Office 365](performance-troubleshooting-plan.md).
 
 [URL-adresser och IP-adressintervall för Office 365](urls-and-ip-address-ranges.md)
 
-[Office 365-nätverks-och prestanda inställning](network-planning-and-performance.md)
+[Office 365 nätverks- och prestandajustering](network-planning-and-performance.md)
 
 ## <a name="see-also"></a>Se även
 
-[Översikt över Microsoft 365 Enterprise](microsoft-365-overview.md)
+[Microsoft 365 Enterprise – översikt](microsoft-365-overview.md)

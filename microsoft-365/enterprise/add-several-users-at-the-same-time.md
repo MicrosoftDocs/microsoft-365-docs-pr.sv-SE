@@ -1,5 +1,5 @@
 ---
-title: Lägga till flera användare samtidigt till Microsoft 365 – hjälp för administratörer
+title: Lägga till flera användare samtidigt i Microsoft 365 – hjälp för administratörer
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -23,32 +23,32 @@ search.appverid:
 - MBS150
 - GEA150
 - BCS160
-description: 'Lär dig hur du lägger till flera användare i Microsoft 365 för företag från en lista i ett kalkyl blad eller annan CSV-formaterad fil. Titta på en video på YouTube som förklarar hur du lägger till konton i Microsoft 365. I slutet av processen kommer alla användare med ett konto att ha en Microsoft 365-postlåda. '
-ms.openlocfilehash: 7629879990facbce57a6fbca1aa543471ad1b05b
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+description: 'Lär dig hur du lägger till flera användare i Microsoft 365 för företag från en lista i ett kalkylblad eller en annan CSV-formaterad fil. Här finns en video på YouTube som visar hur du lägger till konton i Microsoft 365. När det är gjort har varje användare som har ett konto fått en Microsoft 365-postlåda. '
+ms.openlocfilehash: 6b3e8d885466e44a4aa23427a54cfc98b2eebdf3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877218"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905626"
 ---
-# <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Lägga till flera användare samtidigt till Microsoft 365 – hjälp för administratörer
+# <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Lägga till flera användare samtidigt i Microsoft 365 – hjälp för administratörer
 
-Varje person i gruppen behöver ett användar konto innan de kan logga in och komma åt Microsoft 365-tjänster, till exempel e-post och Office. Om du har många personer kan du lägga till deras konton samtidigt från ett Excel-kalkylblad eller en annan fil som sparats i CSV-format. Är du osäker på [vad CSV-formatet är](add-several-users-at-the-same-time.md#not-sure-what-csv-format-is)?
+Alla i din grupp behöver ett användarkonto innan de kan logga in och komma åt Microsoft 365-tjänsterna, till exempel e-post och Office. Om du har många personer kan du lägga till deras konton samtidigt från ett Excel-kalkylblad eller en annan fil som sparats i CSV-format. [Vet du inte vad CSV-formatet är?](add-several-users-at-the-same-time.md#not-sure-what-csv-format-is)
   
 > [!NOTE]
 > Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
-## <a name="add-multiple-users-in-the-microsoft-365-admin-center"></a>Lägga till flera användare i administrations centret för Microsoft 365
+## <a name="add-multiple-users-in-the-microsoft-365-admin-center"></a>Lägga till flera användare i administrationscentret för Microsoft 365
 
 1. Logga in på Microsoft 365 med ditt arbets- eller skolkonto.
 
-2. Välj **användare** \> **aktiva användare** i administrations centret.
+2. I administrationscentret väljer du **Användare** \> **aktiva användare.**
 
-3. Välj **Lägg till flera användare**.
+3. Välj **Lägg till flera användare.**
 
 4. På panelen **Importera flera användare** kan du ladda ned en CSV-exempelfil med eller utan ifyllda exempeldata.
 
-    Kalkyl bladet måste innehålla **exakt samma kolumn rubriker** som exempel ett (användar namn, Förnamn o.s.v.). Om du använder mallen öppnar du den i ett text redigerings verktyg, till exempel anteckningar, och du kan låta alla data i rad 1 vara skrivskyddade och bara ange data på raderna 2 och nedanför.
+    Kalkylbladet måste innehålla exakt **samma kolumnrubriker** som exempelrubriken (Användarnamn, Förnamn och så vidare). Om du använder mallen kan du öppna den i ett textredigeringsverktyg, till exempel Anteckningar, och låta alla data på rad 1 vara och bara ange data i rad 2 och nedanför.
 
     Kalkylbladet måste också innehålla värden för användarnamn (t.ex. jens@contoso.com) och ett visningsnamn (t.ex. Jens Persson) för varje användare.
 
@@ -72,11 +72,11 @@ Varje person i gruppen behöver ett användar konto innan de kan logga in och ko
 
 ## <a name="next-steps"></a>Nästa steg
 
-- Nu när de här personerna har konton måste de [Ladda ned och installera eller installera om Microsoft 365 eller Office 2016 på en PC eller Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658). Varje person i teamet kan installera Microsoft 365 på upp till 5 PC-eller Mac-datorer.
+- Nu när de här personerna har konton måste de ladda ned och installera eller ominstallera [Microsoft 365 eller Office 2016 på en PC eller Mac.](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658) Varje person i din grupp kan installera Microsoft 365 på upp till fem PC- eller Mac-datorer.
 
-- Varje person kan också [Konfigurera Office-appar och e-post på en mobil enhet](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) på upp till 5 surfplattor och 5 telefoner, till exempel iPhone, iPad och Android-telefoner och-surfplattor. Tack vare det här kan de redigera Office-filer var de än befinner sig.
+- Varje person kan också konfigurera [Office-program](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) och e-post på en mobil enhet på upp till fem surfplattor och fem telefoner, till exempel iPhone, iPad och telefoner och surfplattor med Android. Tack vare det här kan de redigera Office-filer var de än befinner sig.
 
-    I [Konfigurera Microsoft 365 för företag](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) finns en komplett lista över konfigurations stegen.
+    Se [Konfigurera Microsoft 365 för företag](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) för en fullständig lista över konfigurationsstegen.
 
 ## <a name="more-information-about-how-to-add-users-to-microsoft-365"></a>Mer information om hur du lägger till användare i Microsoft 365
 
@@ -84,7 +84,7 @@ Varje person i gruppen behöver ett användar konto innan de kan logga in och ko
 
 En CSV-fil är en fil med kommaavgränsade värden. Du kan skapa eller redigera en sådan fil med en textredigerare eller med ett kalkylprogram, t.ex. Excel.
   
-Du kan ladda ned [det här exempelkalkylbladet](https://www.microsoft.com/download/details.aspx?id=45485) som en startpunkt. Kom ihåg att Microsoft 365 kräver kolumn rubriker på den första raden och ersätter dem inte med något annat. 
+Du kan ladda ned [det här exempelkalkylbladet](https://www.microsoft.com/download/details.aspx?id=45485) som en startpunkt. Kom ihåg att det krävs kolumnrubriker på första raden i Microsoft 365 så att du inte ersätter dem med något annat. 
   
 Spara filen med ett nytt namn och ange CSV-format.
   
@@ -96,13 +96,13 @@ När du sparar filen visas antagligen ett meddelande om att vissa funktioner i a
   
 ### <a name="tips-for-formatting-your-spreadsheet"></a>Tips på hur du formaterar kalkylbladet
 
-- **Behöver jag samma kolumnrubriker som i exempelkalkylbladet?** Ja. Exempelkalkylbladet innehåller kolumnrubriker på första raden. De här rubrikerna är obligatoriska. Skapa en rad under rubriken för varje användare som du vill lägga till i Microsoft 365. Om du lägger till, ändrar eller tar bort någon av kolumn rubrikerna kanske inte Microsoft 365 kan skapa användare från informationen i filen.
+- **Behöver jag samma kolumnrubriker som i exempelkalkylbladet?** Ja. Exempelkalkylbladet innehåller kolumnrubriker på första raden. De här rubrikerna är obligatoriska. För varje användare som du vill lägga till i Microsoft 365 skapar du en rad under rubriken. Om du lägger till, ändrar eller tar bort någon kolumnrubrik kanske Microsoft 365 inte kan skapa användare utifrån informationen i filen.
 
 - **Vad gör jag om jag inte har all information som behövs om en användare?** Fälten Användarnamn och Visningsnamn är obligatoriska, och du kan inte lägga till en ny användare om du inte har de uppgifterna. Om du saknar någon annan uppgift, till exempel faxnummer, kan du lägga in ett blanksteg och ett kommatecken för att visa att fältet ska vara tomt.
 
-- **Hur litet eller stort kan kalkyl bladet vara?** Kalkyl bladet måste innehålla minst två rader. One is for the column headings (the user data column label) and one for the user. You cannot have more than 251 rows. If you need to import more than 250 users, you can create more than one spreadsheet.
+- **Hur litet eller stort får kalkylbladet vara?** Kalkylbladet måste innehålla minst två rader. One is for the column headings (the user data column label) and one for the user. You cannot have more than 251 rows. If you need to import more than 250 users, you can create more than one spreadsheet.
 
-- **Vilka språk kan jag använda?** När du skapar ett kalkyl blad kan du ange kolumn etiketter för användar data på alla språk och tecken, men du får inte ändra ordningen på etiketterna, som du ser i exemplet. Sedan kan du lägga in data i fälten, på vilket språk och med vilka tecken som helst, och spara filen i Unicode- eller UTF-8-format.
+- **Vilka språk kan jag använda?** När du skapar kalkylbladet kan du ange kolumnetiketter för användardata på alla språk och tecken, men du får inte ändra ordningen på etiketterna, som visas i exemplet. Sedan kan du lägga in data i fälten, på vilket språk och med vilka tecken som helst, och spara filen i Unicode- eller UTF-8-format.
 
 - **Vad gäller om jag lägger till användare från andra länder och regioner?** Skapa ett separat kalkylblad för varje område. Du måste gå igenom guiden Lägg till användare i grupp för varje kalkylblad, och då ange en enda plats för alla användare som ingår i den fil du arbetar med.
 
@@ -110,7 +110,7 @@ När du sparar filen visas antagligen ett meddelande om att vissa funktioner i a
 
 |**Kolumnetikett med användardata**|**Maximalt antal tecken**|
 |:-----|:-----|
-|Användarnamn (obligatoriskt)  <br/> |79 inklusive snabel-a (@) i formatet name@domain. \<extension\> . Användarens alias får inte överstiga 50 tecken och domän namnet får inte vara längre än 48 tecken.  <br/> |
+|Användarnamn (obligatoriskt)  <br/> |79 inklusive at-tecknet (@), i det format som name@domain. \<extension\> . Användarens alias får inte vara längre än 50 tecken och domännamn får inte vara längre än 48 tecken.  <br/> |
 |Förnamn  <br/> |64  <br/> |
 |Efternamn  <br/> |64  <br/> |
 |Visningsnamn (obligatoriskt)  <br/> |256  <br/> |
@@ -130,8 +130,8 @@ När du sparar filen visas antagligen ett meddelande om att vissa funktioner i a
 
 - **Kontrollera en extra gång att kalkylbladet är rätt formaterat.** Kontrollera kolumnrubrikerna och se till att de överensstämmer med rubrikerna i exempelfilen. Se till att du följer reglerna om maximalt antal tecken och att varje fält avgränsas med ett komma.
 
-- **Om du inte ser de nya användarna i Microsoft 365 direkt, vänta några minuter.** Det kan ta en liten stund för ändringar att gå över alla tjänster i Microsoft 365. 
+- **Vänta några minuter om du inte ser de nya användarna i Microsoft 365 på en gång.** Det kan ta en stund innan ändringarna har gjorts i alla tjänster i Microsoft 365. 
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Lägga till användare individuellt eller i bulk till Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
+[Lägga till användare individuellt eller flera samtidigt i Microsoft 365](/office365/admin/add-users/add-users)

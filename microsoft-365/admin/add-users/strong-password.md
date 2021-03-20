@@ -1,5 +1,5 @@
 ---
-title: Inaktivera krav för starka lösen ord för användare
+title: Inaktivera starka lösenordskrav för användare
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,29 +20,29 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du ställer in kraven på starka lösen ord för användarna med Windows PowerShell.
-ms.openlocfilehash: f9a0b76d024cc18552657144e4ccf8de8a72f0d9
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+description: Läs om hur du ställer in starka lösenordskrav för användarna med Windows PowerShell.
+ms.openlocfilehash: e2300e3c94de53cd04d0c1726538fdb8a86a1ccf
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655741"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903542"
 ---
-# <a name="turn-off-strong-password-requirements-for-users"></a>Inaktivera krav för starka lösen ord för användare
+# <a name="turn-off-strong-password-requirements-for-users"></a>Inaktivera starka lösenordskrav för användare
 
-I den här artikeln förklaras hur du inaktiverar kraven på starka lösen ord för användarna. Krav för starka lösen ord är aktiverade som standard i Microsoft 365 för företag-organisationen. Din organisation kan ha behov att inaktivera starka lösen ord. Följ stegen nedan om du vill inaktivera kraven för starka lösen ord. Du måste utföra de här stegen med PowerShell.
+I den här artikeln förklarar vi hur du inaktiverar starka lösenordskrav för användarna. Starka lösenordskrav är aktiverat som standard i din organisation för Microsoft 365 för företag. Din organisation kan behöva inaktivera starka lösenord. Följ stegen nedan för att inaktivera starka lösenordskrav. Du måste utföra de här stegen med PowerShell.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-Den här artikeln är till för personer som hanterar lösen ords principer för ett företag, en skola eller en ideellt område. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörs konto?](../admin-overview/admin-overview.md) Du måste vara [Global administratör eller lösen ords administratör](about-admin-roles.md) för att utföra de här stegen.
+Den här artikeln är för personer som hanterar lösenordspolicyn för ett företag, en skola eller en ideell förening. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörskonto?](../admin-overview/admin-overview.md) Du måste vara global [administratör eller lösenordsadministratör för att](about-admin-roles.md) utföra de här stegen.
 
 Du måste också ansluta till Microsoft 365 med PowerShell.
 
-## <a name="set-strong-passwords"></a>Ange starka lösen ord
+## <a name="set-strong-passwords"></a>Ange starka lösenord
 
-1. [Anslut till Microsoft 365 med PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+1. [Anslut till Microsoft 365 med PowerShell.](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
-2. Med PowerShell kan du stänga av kraven på starka lösen ord för alla användare med följande kommando:
+2. Med PowerShell kan du inaktivera starka lösenordskrav för alla användare med följande kommando:
 
     ```powershell
     Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
@@ -54,12 +54,12 @@ Du måste också ansluta till Microsoft 365 med PowerShell.
     ```
 
 > [!NOTE]
-> UserPrincipalName måste finnas i Internet-stilens inloggnings format där användar namnet följs av snabel-a (@) och ett domän namn. Till exempel: user@contoso.com.
+> UserPrincipalName måste ha ett inloggningsformat som är internetformat där användarnamnet följs av at-tecknet (@) och ett domännamn. Till exempel: user@contoso.com.
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Så här ansluter du till Microsoft 365 med PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+[Ansluta till Microsoft 365 med PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
-[Mer information om PowerShell-kommandon för MsolUser](https://docs.microsoft.com/powershell/module/msonline/set-msoluser?view=azureadps-1.0)
+[Mer information om PowerShell MsolUser-kommandon](/powershell/module/msonline/set-msoluser?view=azureadps-1.0)
 
-[Mer information om lösen ords princip](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)
+[Mer information om lösenordsprincip](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)

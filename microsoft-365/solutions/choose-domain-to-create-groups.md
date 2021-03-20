@@ -16,40 +16,40 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
-description: Lär dig hur du väljer den domän som ska användas när du skapar Microsoft 365 Groups genom att konfigurera principer för e-postadresser med PowerShell.
-ms.openlocfilehash: 1e56268c3994b1ac822869d154be826326039bfc
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+description: Lär dig att välja den domän som ska användas när du skapar Microsoft 365-grupper genom att konfigurera principer för e-postadresser med PowerShell.
+ms.openlocfilehash: 4908d5bd58ca6d0fbb50151983ddb459f0732284
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49612946"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904690"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Välj den domän som ska användas när du skapar Microsoft 365-grupper
 
-Vissa organisationer använder separata e-postdomäner för att dela upp olika delar av verksamheten. Du kan ange vilken domän som ska användas när användarna skapar Microsoft 365 Groups.
+Vissa organisationer använder separata e-postdomäner för att dela upp olika delar av verksamheten. Du kan ange vilken domän som ska användas när användarna skapar Microsoft 365-grupper.
   
-Om din organisation behöver användare för att skapa grupper i andra domäner än den godkända domänen för ditt företag kan du tillåta detta genom att konfigurera e-postadress principer (principer) med PowerShell.
+Om din organisation kräver att användare skapar sina grupper i andra domäner än den godkända standarddomänen för ditt företag kan du tillåta det genom att konfigurera principer för e-postadresser med PowerShell.
 
-Innan du kan köra PowerShell-cmdlets laddar du ned och installerar en modul som låter dig prata med din organisation. Läs [Anslut till Exchange Online med fjärr-PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=785881).
+Innan du kan köra PowerShell-cmdlets laddar du ned och installerar en modul som gör att du kan prata med din organisation. Läs [Anslut till Exchange Online med fjärr-PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-## <a name="example-scenarios"></a>Exempel scenarier
+## <a name="example-scenarios"></a>Exempelscenarier
 
-Låt oss säga att företagets huvudsakliga domän är Contoso.com. Men organisationens standard domän är service.contoso.com. Det innebär att grupper skapas i service.contoso.com (till exempel jimsteam@service.contoso.com).
+Anta att företagets huvuddomän är en Contoso.com. Men din organisations godkända standarddomän är service.contoso.com. Det innebär att grupper skapas i service.contoso.com (till exempel jimsteam@service.contoso.com).
   
-Låt oss säga att du också har konfigurerade under domäner i organisationen. Du vill att grupper ska skapas i dessa domäner också:
+Anta att du även har underdomäner konfigurerade i din organisation. Du vill också att grupper ska skapas i dessa domäner:
   
 - students.contoso.com för studenter
     
 - faculty.contoso.com för lärare och övrig personal
     
-I följande två scenarier förklaras hur du gör det.
+I följande två scenarier förklaras hur du ska göra detta.
 
 > [!NOTE]
-> När du har flera principer utvärderas de i prioritetsordning. Värdet 1 innebär högsta prioritet. När ett EAP-nummer matchar har ingen ytterligare EAP utvärderats och adresser som har stämplats i gruppen är som följer den matchade EAP. > om ingen principer matchar de angivna villkoren får gruppen etableringen i organisationens standard domän. Mer information om hur du lägger till en godkänd domän finns i [Hantera godkända domäner i Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=785428).
+> Om du har flera EP:er utvärderas de i prioritetsordning. Värdet 1 innebär högsta prioritet. När en e-postadresser matchar utvärderas inte några ytterligare e-postadresser och adresser som märks i gruppen godkänns enligt den matchande e-postadresser. > om inga e-postprogram matchar de angivna villkoren får gruppen etableras i organisationens godkända standarddomän. Mer information om hur du lägger till en godkänd domän finns i [Hantera godkända domäner i Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
   
 ### <a name="scenario-1"></a>Scenario 1
 
-I följande exempel visas hur du kan etablera alla Microsoft 365-grupper i din organisation i groups.contoso.com-domänen.
+I följande exempel visas hur du etablerar alla Microsoft 365-grupper i organisationen i groups.contoso.com domän.
   
 ```
 New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@groups.contoso.com" -Priority 1
@@ -57,21 +57,21 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 ### <a name="scenario-2"></a>Scenario 2
 
-Låt oss säga att du vill kontrol lera vilka under domäner Microsoft 365-grupper skapas i. Du vill ha:
+Anta att du vill styra vilka underdomäner som Microsoft 365-grupper skapas i. Du vill ha:
   
-- Grupper som skapas av elever (användare som har en **avdelning** som är inställt på **studenter**) i students.Groups.contoso.com-domänen. Använd det här kommandot:
+- Grupper som skapas av elever (användare där **Avdelning har** **angetts till Studenter**) i students.groups.contoso.com domän. Använd det här kommandot:
     
   ```
   New-EmailAddressPolicy -Name StudentsGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Students'} -Priority 1
   ```
 
-- Grupper som skapas av lärare (användare som har en **avdelning** inställd på **lärare eller e-postadress innehåller Faculty.contoso.com)**) i Faculty.Groups.contoso.com-domänen. Använd det här kommandot:
+- Grupper som skapas av lärare  och andra (användare där Avdelning har angetts till Lärare eller E-postadress **innehåller faculty.contoso.com)** i faculty.groups.contoso.com domän. Använd det här kommandot:
     
   ```
   New-EmailAddressPolicy -Name FacultyGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@faculty.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Faculty' -or EmailAddresses -like "*faculty.contoso.com*"} -Priority 2
   ```
 
-- Grupper som skapas av någon annan skapas i domänen groups.contoso.com. Använd det här kommandot:
+- Grupper som har skapats av någon annan skapas i groups.contoso.com domän. Använd det här kommandot:
     
   ```
   New-EmailAddressPolicy -Name OtherGroups -IncludeUnifiedGroupRecipients -EnabledPrimarySMTPAddressTemplate "SMTP:@groups.contoso.com" -Priority 3
@@ -100,17 +100,17 @@ Om en princip för e-postadresser ändras påverkar det inte de grupper som reda
   
 ## <a name="hybrid-requirements"></a>Hybridkrav
 
-Om organisationen har kon figurer ATS i ett hybrid scenario kan du läsa [Konfigurera Microsoft 365-grupper med lokal Exchange-hybrid](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-microsoft-365-groups) för att kontrol lera att din organisation uppfyller kraven för att skapa Microsoft 365-grupper. 
+Om organisationen har konfigurerats i ett hybridscenario kan du läsa Konfigurera [Microsoft 365-grupper](/exchange/hybrid-deployment/set-up-microsoft-365-groups) med en lokal Exchange-hybrid för att kontrollera att organisationen uppfyller kraven för att skapa Microsoft 365-grupper. 
   
-## <a name="additional-info-about-using-email-address-policies-groups"></a>Ytterligare information om hur du använder principer för e-postadresser:
+## <a name="additional-info-about-using-email-address-policies-groups"></a>Mer information om hur du använder principer för e-postadresser:
 
-Det finns några saker du bör känna till:
+Det finns några fler saker att veta:
   
-- Hur snabbt grupper skapas beror på hur många principer som är konfigurerade i organisationen.
+- Hur snabbt grupper skapas beror på hur många e-skaps som konfigurerats i din organisation.
     
 - Administratörer och användare kan också ändra domäner när de skapar grupper.
     
-- Grupper av användare bestäms med standardfrågorna (Användaregenskaper) som redan finns tillgängliga. Läs filter bara [Egenskaper för parametern-RecipientFilter](https://docs.microsoft.com/powershell/exchange/recipientfilter-properties) för filter bara egenskaper som stöds. 
+- Grupper av användare bestäms med standardfrågorna (Användaregenskaper) som redan finns tillgängliga. Information om [filtrerbara egenskaper som stöds finns i Filtrerbara egenskaper för parametern -RecipientFilter.](/powershell/exchange/recipientfilter-properties) 
     
 - Om du inte konfigurerar några principer för e-postadresser för grupper väljs den godkända standarddomänen när en grupp skapas.
     
@@ -120,8 +120,8 @@ Det finns några saker du bör känna till:
     
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Planerings steg-för-steg-samarbete för samarbets styrning](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Planering av samarbetsstyrning steg för steg](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[Skapa en plan för hantering av samarbete](collaboration-governance-first.md)
+[Skapa din plan för samarbetesstyrning](collaboration-governance-first.md)
 
-[Skapa en Microsoft 365-grupp i administrations centret](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups)
+[Skapa en Microsoft 365-grupp i administrationscentret](../admin/create-groups/create-groups.md)

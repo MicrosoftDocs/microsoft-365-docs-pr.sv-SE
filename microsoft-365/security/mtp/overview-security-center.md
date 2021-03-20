@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 7db9b9762830384370a4bedf220d7a52112ab1ea
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 43e341111ad1cb9b64ac257903d0e79bf24df5bd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727217"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903892"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>Översikt över det enhetliga säkerhetscentret för Microsoft 365
 
@@ -34,18 +34,18 @@ ms.locfileid: "50727217"
 
 **Gäller för:**
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](./microsoft-threat-protection.md)
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- [Microsoft Defender för Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft Defender för Office 365](../office-365-security/office-365-atp.md)
 
-> Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera den i en labbmiljö](https://aka.ms/mtp-trial-lab) eller köra [pilotprojektet i produktion.](https://aka.ms/m365d-pilotplaybook)
+> Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera den i en labbmiljö](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) eller köra [pilotprojektet i produktion.](./mtp-pilot.md?ocid=cx-evalpilot)
 
 Det förbättrade säkerhetscentret för **Microsoft 365** () kombinerar skydd, identifiering, undersökning och svar på e-post, samarbete, identitet och enhetshot i [https://security.microsoft.com](https://security.microsoft.com) en central portal.    
 
 Microsoft 365 säkerhetscenter samlar funktioner från befintliga Microsoft-säkerhetsportaler, som Microsoft Defender Säkerhetscenter och Office 365 säkerhets- & efterlevnadscenter. Säkerhetscenter betonar snabb åtkomst till information, enklare layouter och att sammanföra relaterad information för enklare användning. Detta center omfattar:
 
-- **[Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)** Med Microsoft Defender för Office 365 kan organisationer skydda sitt företag med en uppsättning funktioner för skydd mot identifiering, undersökning och spårning för att skydda e-post och Office 365-resurser.
-- **[Microsoft Defender för Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)** tillhandahåller förebyggande skydd, identifiering efter intrång, automatisk undersökning och svar för enheter i organisationen.
+- **[Microsoft Defender för Office 365](../office-365-security/office-365-atp.md)** Med Microsoft Defender för Office 365 kan organisationer skydda sitt företag med en uppsättning funktioner för skydd mot identifiering, undersökning och spårning för att skydda e-post och Office 365-resurser.
+- **[Microsoft Defender för Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)** tillhandahåller förebyggande skydd, identifiering efter intrång, automatisk undersökning och svar för enheter i organisationen.
 - **[Microsoft 365 Defender](microsoft-threat-protection.md)** är en del av Microsofts XDR-lösning *(Extended Detection and Response)* som utnyttjar Microsoft 365-säkerhetsportföljen för att automatiskt analysera hotdata över domäner och skapa en bild av en attack på en enskild instrumentpanel.
 
 Om du behöver information om vad som har ändrats från Säkerhets- och efterlevnadscentret för Office 365 & eller Microsoft Defender Säkerhetscenter kan du läsa:
@@ -103,13 +103,13 @@ Vanliga kontroller och innehåll visas antingen på samma plats eller komprimera
 
 ![Behörighet & Roller med Slutpunkter-roller &, Roller och Enhetsgrupper.](../../media/converged-roles-5.png)
 
- Access Microsoft 365 Säkerhetscenter är konfigurerat med globala Azure Active Directory-roller eller med hjälp av anpassade roller. Information om Defender för slutpunkt finns [i Tilldela användaråtkomst till Microsoft Defender Säkerhetscenter.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/assign-portal-access) Mer information om Defender för Office 365 finns i Behörigheter i Efterlevnadscenter för [Microsoft 365 och Säkerhetscenter för Microsoft 365.](../office-365-security/permissions-microsoft-365-compliance-security.md)
+ Access Microsoft 365 Säkerhetscenter är konfigurerat med globala Azure Active Directory-roller eller med hjälp av anpassade roller. Information om Defender för slutpunkt finns [i Tilldela användaråtkomst till Microsoft Defender Säkerhetscenter.](/windows/security/threat-protection/microsoft-defender-atp/assign-portal-access) Mer information om Defender för Office 365 finns i Behörigheter i Efterlevnadscenter för [Microsoft 365 och Säkerhetscenter för Microsoft 365.](../office-365-security/permissions-microsoft-365-compliance-security.md)
 
 - Läs mer om hur du [hanterar åtkomst till Microsoft 365 Defender](mtp-permissions.md)
 - Läs mer om hur du [skapar anpassade roller](custom-roles.md) i Säkerhetscenter för Microsoft 365
 
 > [!NOTE]
-> Microsoft Defender för slutpunkt i Säkerhetscenter i Microsoft 365 har stöd för att bevilja åtkomst till tjänstleverantörer av hanterade säkerhetstjänster [(MSSP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) på samma sätt som åtkomst beviljas i [Microsoft Defender säkerhetscenter.](https://docs.microsoft.com/microsoft-365/security/mtp/mssp-access)
+> Microsoft Defender för slutpunkt i Säkerhetscenter i Microsoft 365 har stöd för att bevilja åtkomst till tjänstleverantörer av hanterade säkerhetstjänster [(MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) på samma sätt som åtkomst beviljas i [Microsoft Defender säkerhetscenter.](./mssp-access.md)
 
 ### <a name="integrated-reports"></a>Integrerade rapporter
 
@@ -123,10 +123,10 @@ Med den här snabb översiktsinformationen kan du hålla dig informerad om de se
 
 Korten delas in i följande kategorier:
 
-- **Identiteter**– övervaka identiteterna i organisationen och håll reda på misstänkta eller riskfyllda beteenden. [Läs mer om identitetsskydd](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
+- **Identiteter**– övervaka identiteterna i organisationen och håll reda på misstänkta eller riskfyllda beteenden. [Läs mer om identitetsskydd](/azure/active-directory/identity-protection/overview-identity-protection).
 - **Data** – Hjälper till att spåra användaraktivitet som kan leda till obehörig information.
 - **Enheter** – få uppdaterad information om aviseringar, intrångsaktivitet och andra hot på dina enheter.
-- **Appar** – få insyn i hur molnappar används i organisationen. [Läs mer om Cloud App Security- identifierade appar](https://docs.microsoft.com/cloud-app-security/discovered-apps).
+- **Appar** – få insyn i hur molnappar används i organisationen. [Läs mer om Cloud App Security- identifierade appar](/cloud-app-security/discovered-apps).
 
 ## <a name="threat-analytics-with-better-data-coverage"></a>Hotanalyser med bättre datatäckning
 Spåra och svara på nya hot med hjälp av följande integrerade funktioner för hotanalys i Microsoft 365 Defender:
@@ -175,11 +175,11 @@ Utforska funktionerna i Säkerhetscenter för Microsoft 365:
 
 - [Hantera incidenter och aviseringar](manage-incidents.md)
 - [Spåra och svara på nya hot med hotanalyser](threat-analytics.md)
-- [Åtgärdscentret](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
-- [Jaga hot på enheter, e-postmeddelanden, appar och identiteter](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-query-emails-devices)
-- [Anpassade identifieringsregler](https://docs.microsoft.com/microsoft-365/security/mtp/custom-detection-rules)
-- [E-& om samarbete](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies)
-- [Skapa en simulering av nätfiskeattacker](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training) [och skapa en nyttolast för utbildning av dina team](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
+- [Åtgärdscentret](./mtp-action-center.md)
+- [Jaga hot på enheter, e-postmeddelanden, appar och identiteter](./advanced-hunting-query-emails-devices.md)
+- [Anpassade identifieringsregler](./custom-detection-rules.md)
+- [E-& om samarbete](../../compliance/alert-policies.md#default-alert-policies)
+- [Skapa en simulering av nätfiskeattacker](../office-365-security/attack-simulation-training.md) [och skapa en nyttolast för utbildning av dina team](../office-365-security/attack-simulation-training-payloads.md)
  
 ### <a name="related-information"></a>Relaterad information
 - [Microsoft 365 Säkerhetscenter](overview-security-center.md)

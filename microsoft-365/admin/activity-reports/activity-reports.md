@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Få regelbundna rapporter om hur personer i organisationen använder Microsoft 365-tjänster. Med instrumentpanelen för översikt över användning kan du granska varje diagram för fler insikter.
-ms.openlocfilehash: a71ced2dd0aa71179c1b26cec571f3025af1ce05
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 9b58c6fa51fbca5d78680b4b13cbbc2129d9c393
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50603858"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903730"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365-rapporter i administrationscentret
 
@@ -136,13 +136,13 @@ De här rapporterna är tillgängliga, beroende på din prenumeration.
 
 - [SharePoint-aktivitet för US Government](sharepoint-activity.md)
   
-- [Aktivitet i Skype för företag – Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
+- [Aktivitet i Skype för företag – Online](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   
-- [Aktivitet relaterad till organiserad konferens i Skype för företag – Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)
+- [Aktivitet relaterad till organiserad konferens i Skype för företag – Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)
   
-- [Aktivitet relaterad till deltagare i konferens i Skype för företag – Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
+- [Aktivitet relaterad till deltagare i konferens i Skype för företag – Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
   
-- [Peer-to-peer-aktivitet i Skype för företag – Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
+- [Peer-to-peer-aktivitet i Skype för företag – Online](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
   
 ::: moniker range="o365-worldwide"
 
@@ -242,5 +242,4 @@ När du däremot markerar en viss dag (se nummer 3), upp till 28 dagar från dag
   
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Rapporter i Säkerhets- och efterlevnadscenter](https://docs.microsoft.com/microsoft-365/compliance/reports-in-security-and-compliance)
-  
+[Rapporter i Säkerhets- och efterlevnadscenter](../../compliance/reports-in-security-and-compliance.md)

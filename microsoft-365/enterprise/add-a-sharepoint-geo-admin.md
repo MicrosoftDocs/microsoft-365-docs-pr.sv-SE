@@ -11,57 +11,57 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: Behöver du konfigurera separata administratörer för varje Geo-plats? Lär dig hur du lägger till eller tar bort en geo-administratör i Microsoft 365 multi-geo.
+description: Behöver du konfigurera separata administratörer för varje geoplats? Lär dig hur du lägger till eller tar bort en geoadministratör i Microsoft 365 Multi-Geo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9a3d916bfec2c53850f923fb5322298e9ff440ca
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 32fe5e934e6a3d6f18c802c3c427974e67c1b454
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694895"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905614"
 ---
-# <a name="add-or-remove-a-geo-administrator-in-microsoft-365-multi-geo"></a>Lägga till eller ta bort en geo-administratör i Microsoft 365 multi-geo
+# <a name="add-or-remove-a-geo-administrator-in-microsoft-365-multi-geo"></a>Lägga till eller ta bort en geoadministratör i Microsoft 365 Multi-Geo
 
-Du kan konfigurera separata administratörer för varje Geo-plats som du har i klient organisationen. Dessa administratörer kommer att ha åtkomst till SharePoint Online-och OneDrive-inställningarna som är specifika för deras Geo-plats.
+Du kan konfigurera separata administratörer för varje geoplats som du har i klientorganisationen. De här administratörerna har åtkomst till SharePoint Online- och OneDrive-inställningar som är specifika för deras geoplats.
 
-Vissa tjänster-till exempel term lagrings platsen-administreras från central plats och replikeras till satellit platser. Geo-administratören för den centrala platsen har till gång till dessa, medan geo-administratörer för satellit platser inte gör det.
+Vissa tjänster, till exempel termlager, administreras från den centrala platsen och replikeras till satellitplatser. Geoadministratören för den centrala platsen har åtkomst till dessa, men geoadministratörer för satellitplatser har det inte.
 
-Globala administratörer och SharePoint Online-administratörer fortsätter att ha åtkomst till inställningar på Central platsen och alla satellit platser.
+Globala administratörer och SharePoint Online-administratörer har fortsatt åtkomst till inställningar på den centrala platsen och alla satellitplatser.
 
-## <a name="configuring-geo-administrators"></a>Konfigurera geo-administratörer
+## <a name="configuring-geo-administrators"></a>Konfigurera geoadministratörer
 
-Konfigurering av Geo administratörer kräver PowerShell-modulen för SharePoint Online.
+För att du ska kunna konfigurera geoadministratörer måste du ha SharePoint Online PowerShell-modulen.
 
-Använd [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/Connect-SPOService) för att ansluta till administrations centret för den Geo-plats där du vill lägga till geo-administratören. (Till exempel Connect-SPOService  https://ContosoEUR-admin.sharepoint.com.)
+Använd [Connect-SPOService](/powershell/module/sharepoint-online/Connect-SPOService) för att ansluta till administrationscentret på den geoplats där du vill lägga till geoadministratören. (Till exempel Connect-SPOService  https://ContosoEUR-admin.sharepoint.com.)
 
-Om du vill visa befintliga geo-administratörer på en plats kör du `Get-SPOGeoAdministrator`
+Om du vill visa befintliga geoadministratörer för en plats kör du `Get-SPOGeoAdministrator`
 
-### <a name="adding-a-user-as-a-geo-admin"></a>Lägga till en användare som geo-administratör
+### <a name="adding-a-user-as-a-geo-admin"></a>Lägga till en användare som geoadministratör
 
-Om du vill lägga till en användare som geo-administratör kör du `Add-SPOGeoAdministrator -UserPrincipalName <UPN>`
+Om du vill lägga till en användare som geoadministratör kör du `Add-SPOGeoAdministrator -UserPrincipalName <UPN>`
 
-Om du vill ta bort en användare som geo-administratör på en plats kör du  `Remove-SPOGeoAdministrator -UserPrincipalName <UPN>`
+Om du vill ta bort en användare som geoadministratör för en plats kör du  `Remove-SPOGeoAdministrator -UserPrincipalName <UPN>`
 
-### <a name="adding-a-group-as-a-geo-admin"></a>Lägga till en grupp som geo-administratör
+### <a name="adding-a-group-as-a-geo-admin"></a>Lägga till en grupp som geoadministratör
 
-Du kan lägga till en säkerhets grupp eller en e-postaktiverad säkerhets grupp som geo-administratör. (Distributions grupper och Microsoft 365-grupper stöds inte.)
+Du kan lägga till en säkerhetsgrupp eller en e-postaktiverad säkerhetsgrupp som geoadministratör. (Distributionsgrupper och Microsoft 365-grupper stöds inte.)
 
-Om du vill lägga till en grupp som geo-administratör kör du `Add-SPOGeoAdministrator -GroupAlias <alias>`
+Om du vill lägga till en grupp som geoadministratör kör du `Add-SPOGeoAdministrator -GroupAlias <alias>`
 
-Om du vill ta bort en grupp som geo-administratör kör du `Remove-SPOGeoAdministrator -GroupAlias <alias>`
+Om du vill ta bort en grupp som geoadministratör kör du `Remove-SPOGeoAdministrator -GroupAlias <alias>`
 
-Observera att inte alla säkerhets grupper har ett gruppalias. Om du vill lägga till en säkerhets grupp som inte har ett alias kör du [Get-MsolGroup](https://docs.microsoft.com/powershell/module/msonline/get-msolgroup) för att hämta en lista med grupper, letar reda på säkerhets gruppens ObjectID och kör:
+Observera att inte alla säkerhetsgrupper har ett gruppalias. Om du vill lägga till en säkerhetsgrupp som inte har ett alias kör du [Get-MsolGroup](/powershell/module/msonline/get-msolgroup) för att hämta en lista med grupper, letar reda på säkerhetsgruppens ObjectID och kör sedan:
 
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
-Om du vill ta bort en grupp med hjälp av ObjectID kör du `Remove-SPOGeoAdministrator -ObjectID <ObjectID>`
+Om du vill ta bort en grupp med hjälp av Objekt-ID:t kör du `Remove-SPOGeoAdministrator -ObjectID <ObjectID>`
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Add-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/add-spogeoadministrator)
+[Add-SPOGeoAdministrator](/powershell/module/sharepoint-online/add-spogeoadministrator)
 
-[Get-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spogeoadministrator)
+[Get-SPOGeoAdministrator](/powershell/module/sharepoint-online/get-spogeoadministrator)
 
-[Remove-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
+[Remove-SPOGeoAdministrator](/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-[Ange ett alias (smek namn) för en säkerhets grupp](https://docs.microsoft.com/powershell/module/azuread/set-azureadgroup)
+[Ange ett alias (MailNickName) för en säkerhetsgrupp](/powershell/module/azuread/set-azureadgroup)

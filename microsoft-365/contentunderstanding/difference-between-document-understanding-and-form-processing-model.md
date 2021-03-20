@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Beskriver viktiga skillnader mellan modeller för dokumenttolkning och modeller för formulärbearbetning
-ms.openlocfilehash: a50941ec117480be586ba828e7b49c4a88a310ab
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 9640b028e4b5a9cbd914b183e61de9b8a7ba00bc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712300"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905796"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Skillnader mellan modeller för dokumenttolkning och modeller för formulärbearbetning 
 
@@ -34,7 +34,7 @@ Det finns två modell typer som du kan använda:
 Båda modellerna används vanligtvis för samma syfte och de viktigaste skillnaderna som anges nedan påverkar vilka som du kan använda.
 
 > [!NOTE]
-> Mer information om formulärbearbetning och scenarioexempel på dokumenttolkning finns i [Införande av SharePoint Syntex: kom igång-guide](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#form-processing-scenario-example).
+> Mer information om formulärbearbetning och scenarioexempel på dokumenttolkning finns i [Införande av SharePoint Syntex: kom igång-guide](./adoption-getstarted.md#form-processing-scenario-example).
 
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Strukturerat jämfört med ostrukturerat och halvstrukturerat innehåll
@@ -52,9 +52,9 @@ Använd modeller för formulärbearbetning för att identifiera filer och hämta
 Modeller för dokumenttolkning skapas och hanteras på en SharePoint-webbplats för innehållscenter. 
 
 > [!NOTE]
-> Mer information om indatafiler finns i [Krav och begränsningar för modeller för formulärbearbetning](https://docs.microsoft.com/ai-builder/form-processing-model-requirements). 
+> Mer information om indatafiler finns i [Krav och begränsningar för modeller för formulärbearbetning](/ai-builder/form-processing-model-requirements). 
 
-Modeller för formulärbearbetning skapas i PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview), men skapandet startas direkt från ett dokumentbibliotek i SharePoint. Ett dokumentbibliotek måste ha en modell för formulärbearbetning aktiverad för att en användare ska kunna skapa en modell för formulärbearbetning för den. Administratörer kan aktivera skapande av modell för formulärbearbetning i de administratörsinställningar som gäller för innehållstolkning. Modeller för formulärbearbetning använder PowerAutomate-flöden för att bearbeta filer när de överförs till dokumentbiblioteket.
+Modeller för formulärbearbetning skapas i PowerApps [AI Builder](/ai-builder/overview), men skapandet startas direkt från ett dokumentbibliotek i SharePoint. Ett dokumentbibliotek måste ha en modell för formulärbearbetning aktiverad för att en användare ska kunna skapa en modell för formulärbearbetning för den. Administratörer kan aktivera skapande av modell för formulärbearbetning i de administratörsinställningar som gäller för innehållstolkning. Modeller för formulärbearbetning använder PowerAutomate-flöden för att bearbeta filer när de överförs till dokumentbiblioteket.
 
 När du skapar en modell för dokumenttolkning skapar du en ny [innehållstyp för SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) som sparas i galleriet för innehållstyper i SharePoint. Du kan också använda befintliga innehållstyper för att definiera din modell om det behövs.
 
@@ -85,7 +85,7 @@ Använd följande tabell för att förstå när du ska använda formulärbearbet
 | Språk som stöds| Engelska <br>Kommer senare under 2021: Språk med latinska alfabet | Modellerna fungerar på alla språk med latinska alfabetet. Förutom Engelska: tyska, svenska, franska, spanska, italienska och portugisiska.|
 
 ## <a name="see-also"></a>Se även
-[Utbildning: Förbättra affärsprestanda med AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[Utbildning: Förbättra affärsprestanda med AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
 
 
 

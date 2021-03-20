@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: Lär dig hur du förnyar din Microsoft 365 genom att aktivera eller inaktivera återkommande fakturering.
-ms.openlocfilehash: 3bde3cc6d62e89e3339c268b9e3f9be5d657c467
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 8b38336ccb7a0a29b5782e55117389f6a19a0d80
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114615"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903530"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Förnya Microsoft 365 för företag
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -112,4 +112,4 @@ Om du har förbetalt för prenumerationen med en produktnyckel går prenumeratio
 
 [Ange produktnyckeln](../enter-your-product-key.md)
   
-[Köpa en utvärderingsversion av Microsoft 365 för företag](../buy-a-subscription-from-your-free-trial.md)
+[Köpa en utvärderingsversion av Microsoft 365 för företag](../try-or-buy-microsoft-365.md)

@@ -17,16 +17,16 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: I den här artikeln får du lära dig mer om metodtips för att dela filer och mappar med oautentiserade användare.
-ms.openlocfilehash: eeee1ca0ddbb37525c86f44a3d02ab95de20e9fc
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+ms.openlocfilehash: 3fbe48159dab7fd9ebb072feab7724c3186f7847
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030071"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904810"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Metodtips för att dela filer och mappar med oautentiserade användare
 
-Oautentiserad delning ( *Alla* -länkar) kan vara smidigt och användbart i olika scenarier. *Alla* -länkar är det enklaste sättet att dela: personer kan öppna länken utan autentisering och kan skicka den vidare till andra.
+Oautentiserad delning (*Alla*-länkar) kan vara smidigt och användbart i olika scenarier. *Alla*-länkar är det enklaste sättet att dela: personer kan öppna länken utan autentisering och kan skicka den vidare till andra.
 
 Vanligtvis är inte allt innehåll i en organisation lämpligt för oautentiserad delning. I den här artikeln beskrivs de alternativ som är tillgängliga för att hjälpa dig att skapa en miljö där dina användare kan använda oautentiserad delning av filer och mappar, men där det finns säkerhetsåtgärder för att skydda organisationens innehåll.
 
@@ -35,9 +35,9 @@ Vanligtvis är inte allt innehåll i en organisation lämpligt för oautentisera
 
 ## <a name="set-an-expiration-date-for-anyone-links"></a>Ange ett utgångsdatum för Alla-länkar
 
-Filer lagras ofta på webbplatser, i grupper och team under långa tidsperioder. Ibland finns det datakvarhållningsprinciper som kräver att filer bevaras i flera år. Om de här filerna delas med oautentiserade personer kan detta leda till oväntad åtkomst och framtida ändringar i filerna. Om du vill minska risken för detta kan du konfigurera en förfallotid för *Alla* -länkar.
+Filer lagras ofta på webbplatser, i grupper och team under långa tidsperioder. Ibland finns det datakvarhållningsprinciper som kräver att filer bevaras i flera år. Om de här filerna delas med oautentiserade personer kan detta leda till oväntad åtkomst och framtida ändringar i filerna. Om du vill minska risken för detta kan du konfigurera en förfallotid för *Alla*-länkar.
 
-När en *Alla* -länk går ut kan den inte längre användas för att få åtkomst till innehåll.
+När en *Alla*-länk går ut kan den inte längre användas för att få åtkomst till innehåll.
 
 Ange ett utgångsdatum för Alla-länkar i organisationen
 
@@ -57,13 +57,13 @@ Ange ett utgångsdatum för Alla-länkar på en särskild webbplats
 5. Välj **Dessa länkar måste upphöra inom detta antal dagar** alternativ och ange ett antal dagar i rutan.
 6. Klicka på **Spara**.
 
-Tänk på att när en *Alla* -länk går ut kan filen eller mappen delas igen med en ny *Alla* -länk.
+Tänk på att när en *Alla*-länk går ut kan filen eller mappen delas igen med en ny *Alla*-länk.
 
-Du kan ange *vem som helst* för länkens utgång för en specifik OneDrive med hjälp av [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite).
+Du kan ange *vem som helst* för länkens utgång för en specifik OneDrive med hjälp av [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite).
 
 ## <a name="set-link-permissions"></a>Ange behörigheter för länk
 
-*Alla* -länkar för en fil tillåter som standard personer att redigera filen, och *Alla* -länkar för en mapp tillåter personer att redigera och visa filer samt att ladda upp nya filer till mappen. Du kan ändra de här behörigheterna till endast visning för filer och mappar oberoende av varandra.
+*Alla*-länkar för en fil tillåter som standard personer att redigera filen, och *Alla*-länkar för en mapp tillåter personer att redigera och visa filer samt att ladda upp nya filer till mappen. Du kan ändra de här behörigheterna till endast visning för filer och mappar oberoende av varandra.
 
 Om du vill tillåta oautentiserad delning, men är orolig för att oautentiserade personer ska ändra organisationens innehåll, bör du överväga att ställa in behörigheterna för filer och mappar till **Visa**.
 
@@ -74,11 +74,11 @@ Ange behörigheter för Alla-länkar i organisationen
 3. Under **Avancerade inställningar för "Alla"-länkar** väljer du de fil- och mappbehörigheter som du vill använda.</br>
    ![Skärmbild av behörighetsinställningar för Alla-länkar för SharePoint på organisationsnivå](../media/sharepoint-organization-anyone-link-permissions.png)
 
-Med *Alla* -länkar inställda på **Visa** kan användare fortfarande dela filer och mappar med gäster och ge dem redigeringsbehörighet genom att använda *Specifika personer* -länkar. Med dessa länkar måste personer utanför organisationen autentiseras som gäster, och du kan spåra och granska gästaktiviteten i filer och mappar som delas med dessa länkar.
+Med *Alla*-länkar inställda på **Visa** kan användare fortfarande dela filer och mappar med gäster och ge dem redigeringsbehörighet genom att använda *Specifika personer*-länkar. Med dessa länkar måste personer utanför organisationen autentiseras som gäster, och du kan spåra och granska gästaktiviteten i filer och mappar som delas med dessa länkar.
 
 ## <a name="set-default-link-type-to-only-work-for-people-in-your-organization"></a>Ställa in standardlänktypen till att endast fungera för personer i organisationen
 
-När *Alla* -delning aktiveras för organisationen anges normalt delningslänken till **Alla**. Det kan vara praktiskt för användarna, men kan öka risken för oavsiktlig oautentiserad delning. Om en användare glömmer att ändra länktypen vid delning av ett känsligt dokument, kan det hända att de oavsiktligt skapar en delningslänk som inte kräver autentisering.
+När *Alla*-delning aktiveras för organisationen anges normalt delningslänken till **Alla**. Det kan vara praktiskt för användarna, men kan öka risken för oavsiktlig oautentiserad delning. Om en användare glömmer att ändra länktypen vid delning av ett känsligt dokument, kan det hända att de oavsiktligt skapar en delningslänk som inte kräver autentisering.
 
 Du kan minska den här risken genom att ändra standardlänkinställningen till en länk som bara fungerar för personer i organisationen. Användare som vill dela med oautentiserade personer måste då specifikt välja det alternativet.
 
@@ -103,7 +103,7 @@ Ange standarddelningslänken för filer och mappar för den särskilda webbplats
 
 ## <a name="prevent-unauthenticated-sharing-of-sensitive-content"></a>Förhindra oautentiserad delning av känsligt innehåll
 
-Du kan använda [Dataförlustskydd (DLP](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)) för att förhindra oautentiserad delning av känsligt innehåll. Dataförlustskydd kan utföra åtgärder baserat på en fils känslighetsetikett, kvarhållningsetikett eller känslig information i själva filen.
+Du kan använda [Dataförlustskydd (DLP](../compliance/data-loss-prevention-policies.md)) för att förhindra oautentiserad delning av känsligt innehåll. Dataförlustskydd kan utföra åtgärder baserat på en fils känslighetsetikett, kvarhållningsetikett eller känslig information i själva filen.
 
 Skapa en DLP-regel
 1. I Microsoft 365 Efterlevnadscenter, gå till sidan [Dataförlustskydd](https://compliance.microsoft.com/datalossprevention).
@@ -116,7 +116,7 @@ Skapa en DLP-regel
 8. Under **Villkor** klickar du på **Lägg till villkor** och väljer **Innehållet har**.
 9. Klicka på **Lägg till** och välj vilken typ av information som du vill förhindra oautentiserad delning för.
 
-   ![Skärmbild av alternativ för villkor,typer av känsliga information, känslighetsetiketter och kvarhållningsetiketter.](../media/limit-accidental-exposure-dlp-conditions.png)
+   ![Skärmbild av alternativ för villkor, typer av känsliga information, känslighetsetiketter och kvarhållningsetiketter.](../media/limit-accidental-exposure-dlp-conditions.png)
 
 10. Under **Åtgärder** klickar du på **Lägg till en åtgärd** och väljer **Begränsa åtkomst eller kryptera innehållet i Microsoft 365 platser**.
 11. Välj kryssrutan **Begränsa åtkomst eller kryptera innehållet på Microsoft 365 platser** och välj sedan **Bara personer som har fått åtkomst till innehållet via alternativen för “Alla som har länken "**.
@@ -125,7 +125,7 @@ Skapa en DLP-regel
 
 12. Klicka på **Spara** och sedan på **Nästa**.
 13. Välj testalternativ och klicka på **Nästa**.
-14. Klicka på **Skicka** och klicka sedan **Klart**.
+14. Klicka på **Skicka** och klicka sedan på **Klart**.
 
 ## <a name="protect-against-malicious-files"></a>Skydda mot skadliga filer
 
@@ -140,7 +140,7 @@ Aktivera säkra bifogade filer
 
 4. Om du vill kan du också aktivera säkert dokument och klicka på **Spara**
 
-Mer information finns i [ATP för SharePoint, OneDrive och Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams) och [Aktivera ATP för SharePoint, OneDrive, och Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/turn-on-atp-for-spo-odb-and-teams).
+Mer information finns i [ATP för SharePoint, OneDrive och Microsoft Teams](../security/office-365-security/atp-for-spo-odb-and-teams.md) och [Aktivera ATP för SharePoint, OneDrive, och Microsoft Teams](../security/office-365-security/turn-on-atp-for-spo-odb-and-teams.md).
 
 ## <a name="add-copyright-information-to-your-files"></a>Lägga till copyrightinformation i dina filer
 
@@ -161,7 +161,7 @@ När du har aktiverat innehållsmärkning för etiketten läggs den text som du 
 
 ## <a name="see-also"></a>Se även
 
-[Översikt över känslighetsetiketter](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)
+[Översikt över känslighetsetiketter](/Office365/SecurityCompliance/sensitivity-labels)
 
 [Begränsa oavsiktlig exponering för filer när de delas med gäster](share-limit-accidental-exposure.md)
 

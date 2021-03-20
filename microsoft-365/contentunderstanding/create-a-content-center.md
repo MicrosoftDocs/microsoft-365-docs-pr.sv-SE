@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Lär dig att skapa ett innehållscenter.
-ms.openlocfilehash: 3544bbef7cf2f898733c7aaad620487098a2dd24
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 34ba45cd62214743e5a6784893e0f24e9815fdfb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515142"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905830"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Skapa ett innehållscenter i Microsoft SharePoint Syntex
 
@@ -35,12 +35,12 @@ Om du vill skapa och hantera modeller för dokumenttolkning måste du först ha 
 Du skapar ett standardinnehållscenter under [konfiguration](set-up-content-understanding.md). Men en SharePoint-administratör kan också välja att skapa fler center efter behov. Även om det kan vara bra att skapa ett enda innehållscenter för miljöer där du vill samla alla modellaktiviteter kanske du vill ha ytterligare center för olika avdelningar i organisationen, som kan ha olika behov och behörighetskrav för sina modeller.
 
 > [!NOTE]
-> I en [Microsoft 365 Multi-Geo-miljö](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo)kan du, om du har ett enda standardinnehållscenter på den centrala platsen, endast tillhandahålla en sammanslagning av modellaktivitet från denna plats. För närvarande kan du inte få en sammanslagning av modellaktivitet över servergruppsgränser i Multi-Geo-miljö. 
+> I en [Microsoft 365 Multi-Geo-miljö](../enterprise/microsoft-365-multi-geo.md)kan du, om du har ett enda standardinnehållscenter på den centrala platsen, endast tillhandahålla en sammanslagning av modellaktivitet från denna plats. För närvarande kan du inte få en sammanslagning av modellaktivitet över servergruppsgränser i Multi-Geo-miljö. 
 
 
 ## <a name="create-a-content-center"></a>Skapa ett innehållscenter
 
-En SharePoint-administratör kan skapa en webbplats för innehållscentret precis som de [skapar andra SharePoint-webbplatser](https://docs.microsoft.com/sharepoint/create-site-collection) via administrationscentrets panel för webbplatsetablering.
+En SharePoint-administratör kan skapa en webbplats för innehållscentret precis som de [skapar andra SharePoint-webbplatser](/sharepoint/create-site-collection) via administrationscentrets panel för webbplatsetablering.
 
 För att skapa ett nytt innehållscenter:
 
@@ -63,7 +63,7 @@ När du har skapat en webbplats för innehållscentret visas den på sidan **Akt
 
 ### <a name="give-access-to-additional-users"></a>Ge behörighet till ytterligare användare
  
-När du har skapat webbplatsen kan du ge fler användare åtkomst till den via standard[modellen för SharePoint-webbplatsbehörigheter](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions).
+När du har skapat webbplatsen kan du ge fler användare åtkomst till den via standard[modellen för SharePoint-webbplatsbehörigheter](/sharepoint/modern-experience-sharing-permissions).
 
 ## <a name="see-also"></a>Se även
 [Skapa en klassificerare](create-a-classifier.md)
@@ -76,4 +76,4 @@ När du har skapat webbplatsen kan du ge fler användare åtkomst till den via s
 
 [Skapa en modell för formulärbearbetning](create-a-form-processing-model.md)
 
-[Använda en modell](apply-a-model.md)    
+[Använda en modell](apply-a-model.md)

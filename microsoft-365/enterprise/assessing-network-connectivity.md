@@ -1,5 +1,5 @@
 ---
-title: Utvärderar Microsoft 365-nätverksanslutningar
+title: Utvärdera Microsoft 365 nätverksanslutningar
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -19,108 +19,108 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
-description: Microsoft 365 är utformat för att göra det möjligt för kunder över hela världen att ansluta till tjänsten via en Internet anslutning. Allteftersom tjänsten utvecklas förbättras säkerheten, prestandan och tillförlitligheten hos Microsoft 365 utifrån kunder som använder Internet för att upprätta en anslutning till tjänsten.
-ms.openlocfilehash: c0bca2f354d71aa2f4f0c2b6fd05cb4786368b43
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Microsoft 365 har utformats för att kunder i hela världen ska kunna ansluta till tjänsten via en Internetanslutning. I takt med att tjänsten utvecklas förbättras säkerheten, prestanda och tillförlitligheten i Microsoft 365 baserat på kunder som använder Internet för att upprätta en anslutning till tjänsten.
+ms.openlocfilehash: 4d80bdf5642b2456ac8293291c720429f7f18fb1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694714"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905482"
 ---
-# <a name="assessing-microsoft-365-network-connectivity"></a>Utvärderar Microsoft 365-nätverksanslutningar
+# <a name="assessing-microsoft-365-network-connectivity"></a>Utvärdera Microsoft 365 nätverksanslutningar
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Microsoft 365 är utformat för att göra det möjligt för kunder över hela världen att ansluta till tjänsten via en Internet anslutning. Allteftersom tjänsten utvecklas förbättras säkerheten, prestandan och tillförlitligheten hos Microsoft 365 utifrån kunder som använder Internet för att upprätta en anslutning till tjänsten.
+Microsoft 365 har utformats för att kunder i hela världen ska kunna ansluta till tjänsten via en Internetanslutning. I takt med att tjänsten utvecklas förbättras säkerheten, prestanda och tillförlitligheten i Microsoft 365 baserat på kunder som använder Internet för att upprätta en anslutning till tjänsten.
   
-För att du ska kunna använda Microsoft 365 bör du bedöma befintliga och prognostiserade Internet anslutnings behov som en del av distributions projektet. För företags klass distributioner är pålitlig och lämplig och lämpligt med Internet anslutning en viktig del i att konsumera Microsoft 365-funktioner och-scenarion.
+Kunder som planerar att använda Microsoft 365 bör utvärdera befintliga och prognostiserade anslutningsbehov som en del av distributionsprojektet. För distributioner i företagsklass är en pålitlig Internetanslutning med lämplig storlek viktig del i användningen av Microsoft 365-funktioner och -scenarier.
   
-Nätverks utvärderingar kan utföras av många olika personer och organisationer beroende på din storlek och dina preferenser. Utvärderingens nätverks omfång kan även variera beroende på var i distributionen du befinner dig. För att hjälpa dig att få en bättre förståelse för vad det tar att utföra en nätverks utvärdering har vi skapat en nätverks utvärderings guide som hjälper dig att förstå de alternativ som är tillgängliga för dig. Denna utvärdering avgör vilka steg och resurser som måste läggas till i distributions projektet för att du ska kunna använda Microsoft 365.
+Nätverksutvärderingar kan utföras av många olika personer och organisationer beroende på din storlek och dina inställningar. Utvärderingens omfattning kan också variera beroende på var du är i distributionsprocessen. För att hjälpa dig att få bättre förståelse för vad som krävs för en nätverksutvärdering har vi tagit fram en nätverksutvärderingsguide som hjälper dig att förstå de tillgängliga alternativen. Den här utvärderingen avgör vilka steg och resurser som måste läggas till i distributionsprojektet för att du ska kunna använda Microsoft 365 utan problem.
   
-En omfattande nätverks utvärdering ger eventuella lösningar för nätverks design utmaningar tillsammans med implementerings uppgifter. Vissa nätverks utvärderingar visar att optimal nätverks anslutning till Microsoft 365 kan anpassas med mindre konfiguration eller design ändringar i befintliga nätverks-och Internetbaserade infrastrukturer.
+En omfattande nätverksutvärdering kommer att tillhandahålla möjliga lösningar på problem med nätverksdesign tillsammans med implementeringsinformation. Vissa nätverksutvärderingar visar att optimala nätverksanslutning till Microsoft 365 kan tillgodoses med mindre konfigurations- eller designändringar av den befintliga internet- och nätverksinfrastrukturen för utgående trafik.
 
-Vissa utvärderingar indikerar nätverks anslutningen till Microsoft 365 kräver ytterligare investeringar i nätverks komponenter. Företags nätverk som omfattar filial kontor och flera geografiska regioner kan till exempel kräva investeringar i SD-WAN-lösningar eller optimerad infrastruktur för att stödja Internet anslutningen till Microsoft 365. Ibland indikerar en utvärdering att nätverks anslutningen till Microsoft 365 påverkas av regler eller prestanda krav för scenarier som [Skype för företag – Online medie kvalitet](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917). Dessa ytterligare krav kan leda till placeringar i infrastrukturen för Internet anslutning, optimering av Routning och särskild direkt anslutning.
+Vissa utvärderingar indikerar att nätverksanslutningen till Microsoft 365 kräver ytterligare investeringar i nätverkskomponenter. Till exempel kan företagsnätverk som spänner över filialer och flera geografiska regioner kräva investeringar i SD-WAN-lösningar eller optimerad routningsinfrastruktur för att stödja Internetanslutning till Microsoft 365. Ibland påverkas en utvärdering av att nätverksanslutningen till Microsoft 365 påverkas av bestämmelser eller prestandakrav för scenarier som mediakvalitet för Skype för [företag – Online.](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917) Dessa ytterligare krav kan leda till investeringar i infrastrukturen för Internetanslutningar, optimering av nätverksroutning och särskild direktanslutning.
 
-Vissa resurser som hjälper dig att utvärdera nätverket:
+Några resurser som hjälper dig att utvärdera nätverket:
 
-- Information om Microsoft 365-nätverk finns i [Översikt över microsoft 365-nätverk](microsoft-365-networking-overview.md) .
-- Se [microsoft 365 Network Connectivity-principer](https://aka.ms/o365networkingprinciples) för att förstå anslutnings principerna för säker hantering av Microsoft 365-trafik och bästa möjliga prestanda.
-- Registrera dig för [Microsoft FastTrack](https://www.microsoft.com/fasttrack) om du behöver hjälp med Microsoft 365 planering, design och distribution. 
-- Se avsnittet [Microsoft 365 Connectivity test](assessing-network-connectivity.md#the-microsoft-365-connectivity-test) nedan för att köra grundläggande anslutnings test med specifika råd om förbättringar av nätverks anslutningar som kan göras mellan en viss webbplats och Microsoft 365.
+- Se [Översikt över Microsoft 365-nätverksanslutning för](microsoft-365-networking-overview.md) konceptuell information om Microsoft 365-nätverk.
+- Se [Principer för Microsoft 365-nätverksanslutning](./microsoft-365-network-connectivity-principles.md) för att förstå anslutningsprinciperna för säker hantering av Microsoft 365-trafik och få bästa möjliga prestanda.
+- Registrera dig för [Microsoft FastTrack för](https://www.microsoft.com/fasttrack) guidad hjälp med planering, utformning och distribution av Microsoft 365. 
+- Se [Microsoft 365-anslutningstest](assessing-network-connectivity.md#the-microsoft-365-connectivity-test) nedan om du vill köra grundläggande anslutningstester som innehåller specifik vägledning om förbättringar av nätverksanslutningar som kan göras mellan en viss användarplats och Microsoft 365.
 
 > [!NOTE]
-> Microsoft Authorization krävs för att använda ExpressRoute för Office 365. Microsoft granskar varje kund förfrågan och godkänner endast ExpressRoute för Office 365-användning när en kunds reglerings krav styr direkt anslutningen. Om du har sådana krav måste du ange textutdraget och webb länken till den förordning som du tolkar som att det är direkt anslutnings barhet som krävs i [ExpressRoute för Office 365 för](https://aka.ms/O365ERReview) att påbörja en granskning av Microsoft. Obehöriga abonnemang försöker skapa väg filter för Office 365 att få ett [fel meddelande](https://support.microsoft.com/kb/3181709).
+> Microsoft-auktorisering krävs för att använda ExpressRoute för Office 365. Microsoft granskar alla kundförfrågningar och godkänner bara ExpressRoute för Office 365-användning när en kunds föreskrifter kräver direkt anslutning. Om du har sådana krav kan du skicka textutdrag och webblänk till förordningen som du tolkar som att direkt anslutning krävs i ExpressRoute för [Office 365-begäran](https://aka.ms/O365ERReview) för att påbörja en Microsoft-granskning. Obehöriga prenumerationer som försöker skapa routefilter för Office 365 får [ett felmeddelande.](https://support.microsoft.com/kb/3181709)
   
-Viktiga saker du bör tänka på när du planerar nätverks utvärdering för Microsoft 365:
+Viktiga punkter att tänka på när du planerar din nätverksutvärdering för Microsoft 365:
   
-- Microsoft 365 är en säker, pålitlig, högpresterande tjänst som körs över Internet. Vi fortsätter att investera för att förbättra dessa aspekter av tjänsten. Alla Microsoft 365-tjänster är tillgängliga via Internet anslutning.
+- Microsoft 365 är en säker och tillförlitlig tjänst med höga prestanda som körs på det offentliga Internet. Vi fortsätter att investera för att förbättra dessa aspekter av tjänsten. Alla Microsoft 365-tjänster är tillgängliga via internetanslutning.
 
-- Vi optimerar kontinuerligt de grundläggande aspekterna av Microsoft 365, till exempel tillgänglighet, globala funktioner och prestanda för Internetbaserade anslutningar. Många Microsoft 365-tjänster har till exempel en utökande uppsättning med interaktivitet med Internet. Det här Edge-nätverket ger bästa möjliga närhet och prestanda för anslutningar via Internet.
+- Vi optimerar kontinuerligt viktiga aspekter av Microsoft 365 som tillgänglighet, global räckvidd och prestanda för Internetbaserad anslutning. Exempelvis utnyttjar många Microsoft 365-tjänster en växande uppsättning edge-noder mot Internet. Detta gränsnätverk erbjuder bästa möjliga närhet och prestanda för anslutningar via Internet.
 
-- När du funderar på att använda Microsoft 365 för någon av de inkluderade tjänsterna, till exempel Teams eller Skype för företag – Online röst-, video-och mötes kapacitet, bör kunderna fylla på för nätverks utvärdering och uppfylla anslutnings kraven via [Microsoft FastTrack](https://www.microsoft.com/fasttrack).
+- Kunder som överväger att använda Microsoft 365 med någon av tjänsterna som ingår, till exempel röst-, video- eller mötesfunktionerna i Skype för företag – Online, bör genomföra en nätverksutvärdering från ända till slutet och uppfylla anslutningskraven med [Microsoft FastTrack.](https://www.microsoft.com/fasttrack)
 
-Om du utvärderar Microsoft 365 och inte vet var du ska börja med din nätverks utvärdering eller har hittat problem med nätverks design som du behöver hjälp med att lösa kan du arbeta med ditt Microsoft-konto team.
+Om du utvärderar Microsoft 365 och inte är säker på var du ska börja med nätverksutvärderingen eller har hittat utmaningar med nätverksdesignen som du måste hantera bör du kontakta Microsoft-kontoteamet.
 
-## <a name="the-microsoft-365-connectivity-test"></a>Microsoft 365 Connectivity-test
+## <a name="the-microsoft-365-connectivity-test"></a>Anslutningstest för Microsoft 365
 
-[Microsoft 365 Connectivity test](https://aka.ms/netonboard) är ett POC-verktyg (proof of Concept) för nätverk med grundläggande anslutnings barhet för din Microsoft 365-klient organisation och gör specifika nätverks design rekommendationer för optimal Microsoft 365-prestanda. Verktyget markerar vanliga alternativ för företags nätverks perimeter som är användbara för Internet-surfning men påverkar prestandan hos stora SaaS-program, till exempel Microsoft 365.
+[Microsoft 365-anslutningstestet](https://aka.ms/netonboard) är ett poc-nätverksutvärderingsverktyg (Proof of Concept) som kör grundläggande anslutningstester mot Microsoft 365-klienten och som gör specifika rekommendationer om nätverksdesign för optimal Microsoft 365-prestanda. Verktyget markerar de vanligaste alternativen för perimeterdesign för företagsnätverk som är användbara för internetsurfning men påverkar prestandan i stora SaaS-program som Microsoft 365.
 
-Verktyget nätverks registrering gör följande:
+Verktyget nätverks onboarding gör följande:
 
-- Identifierar din plats, eller så kan du ange en plats att testa
-- Kontrollerar placeringen av nätverket
-- Testar nätverks Sök vägen till närmaste Microsoft 365-tjänstens främre dörr
-- Ger avancerade test med en nedladdnings bar Windows 10-tillämpning som gör det enklare att utforma nätverks rekommendationer relaterade till proxyservrar, brand väggar och DNS. Verktyget kör dessutom prestanda test för Skype för företag – Online, Microsoft Teams, SharePoint Online och Exchange Online.
+- Identifierar din plats eller så kan du ange en plats att testa
+- Kontrollerar platsen för nätverkets utgående position
+- Testar nätverkssökvägen till närmaste Microsoft 365-tjänst front dörr
+- Tillhandahåller avancerade tester med ett nedladdningsbart Windows 10-program som gör att rekommendationer för perimeternätverksdesign rekommendationer relaterade till proxyservrar, brandväggar och DNS. Verktyget kör även prestandatester för Skype för företag – Online, Microsoft Teams, SharePoint Online och Exchange Online.
 
-Verktyget har två komponenter: ett webbläsarbaserat gränssnitt som samlar in grundläggande anslutnings information och en nedladdnings bar Windows 10-tillämpning som kör avancerade test och returnerar ytterligare utvärderings data.
+Verktyget består av två komponenter: ett webbläsarbaserat användargränssnitt som samlar in grundläggande anslutningsinformation och ett nedladdningsbart Windows 10-program som kör avancerade tester och returnerar ytterligare utvärderingsdata.
 
-Det webbläsarbaserade verktyget visar följande information:
+I det webbläsarbaserade verktyget visas följande information:
 
-- Fliken resultat och effekter
-  - Platsen på en karta över den tjänst främre dörren
-  - Platsen på en karta över andra tjänst front dörrar som ger optimal anslutning
+- Fliken Resultat och påverkan
+  - Platsen på en karta över tjänstportporten
+  - Platsen på en karta över andra tjänste dörrar fram som ger optimal anslutning
   - Relativ prestanda jämfört med andra Microsoft 365-kunder nära dig
-- Fliken information och lösningar
-  - Användarens plats efter ort och land
-  - Utgångs plats för nätverk efter ort, delstat och land
-  - Användare till utgående nätverk
-  - Start dörr plats för Microsoft 365 Exchange Online
-  - Optimal Microsoft 365 Exchange Online-tjänstens front dörr (ar) för användarens plats
-  - Kunder i din tunnelbane yta med bättre prestanda
+- Fliken Information och lösningar
+  - Användarplats efter stad och land
+  - Nätverkets utgående plats efter stad, delstat och land
+  - Användare till nätverkets utgående avstånd
+  - Microsoft 365 Exchange Online-tjänstens framsida
+  - Optimal Microsoft 365 Exchange Online-tjänst hos användarna
+  - Kunder i din metro-område med bättre prestanda
 
-Det avancerade test nedladdnings programmet innehåller följande information:
+Det nedladdningsbara programmet Advanced Tests ger följande ytterligare information:
 
-- Fliken information och lösningar (lades till)
+- Fliken Information och lösningar (tillagd)
   - Användarens standardgateway
-  - Klient-DNS-Server
-  - Klient DNS-rekursiv lösare
-  - Exchange Online DNS-Server
-  - SharePoint Online DNS-Server
-  - Proxyserver-identifiering
-  - Medie anslutnings kontroll
-  - Paket förlust för medie kvalitet
-  - Svars tid för medie kvalitet
-  - Medie kvalitets Darr
-  - Omordning för medie kvalitets paket
-- Anslutnings test till flera funktions slut punkter
-- Nätverksdiagnostik för nätverks Sök vägar som innehåller tracert-och svars tid för Exchange Online, SharePoint Online och Teams Services
+  - DNS-klientserver
+  - Klient-DNS Rekursiv resolver
+  - DNS-server för Exchange Online
+  - SHAREPoint Online DNS-server
+  - Proxyserveridentifiering
+  - Kontroll av medieanslutningar
+  - Paketförlust för mediakvalitet
+  - Svarstid för mediekvalitet
+  - Mediekvalitetsjitter
+  - Omsortering av mediakvalitetspaket
+- Anslutningstester till flera funktionsspecifika slutpunkter
+- Diagnostik för nätverkssökväg som innehåller spårnings- och svarstidsdata för Exchange Online-, SharePoint Online- och Teams-tjänsterna
 
-Du kan läsa om Microsoft 365 Connectivity test och ge feedback vid den [uppdaterade test POC för microsoft 365-anslutning med nya blogg inlägg för nätverks design](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130) . Information om framtida uppdateringar av verktyget och andra Microsoft 365-nätverks uppdateringar kommer att publiceras på [Office 365-nätverks](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking) bloggen.
+Du kan läsa om Microsoft 365-anslutningstestet och ge feedback på den uppdaterade bloggposten om [Microsoft 365-anslutningstest](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130) med rekommendationer om nätverksdesign. Information om kommande uppdateringar av verktyget och andra Microsoft 365-nätverksuppdateringar kommer att publiceras på [Office 365-nätverksbloggen.](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
   
-Här är en kort länk som du kan använda för att komma tillbaka: [ https://aka.ms/o365networkconnectivity .](https://aka.ms/o365networkconnectivity)
+Här är en kort länk som du kan använda för att komma tillbaka: [ https://aka.ms/o365networkconnectivity .](./microsoft-365-network-connectivity-principles.md)
   
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Översikt över Microsoft 365-nätverk](microsoft-365-networking-overview.md)
+[Översikt för Microsoft 365 nätverksanslutning](microsoft-365-networking-overview.md)
 
-[Principer för nätverks åtkomst för Microsoft 365](https://aka.ms/o365networkingprinciples)
+[Microsoft 365-nätverksanslutningsprinciper](./microsoft-365-network-connectivity-principles.md)
 
-[Hantera slut punkter för Office 365](managing-office-365-endpoints.md)
+[Hantera Office 365-slutpunkter](managing-office-365-endpoints.md)
 
 [URL-adresser och IP-adressintervall för Office 365](urls-and-ip-address-ranges.md)
 
-[IP-adress och URL för Office 365](microsoft-365-ip-web-service.md)
+[Office 365 IP-adress och URL webbtjänst](microsoft-365-ip-web-service.md)
 
-[Microsoft 365-nätverks-och prestanda inställning](network-planning-and-performance.md)
+[Nätverks- och prestandajustering för Microsoft 365](network-planning-and-performance.md)
 
-[Översikt över Microsoft 365 Enterprise](microsoft-365-overview.md)
+[Microsoft 365 Enterprise – översikt](microsoft-365-overview.md)

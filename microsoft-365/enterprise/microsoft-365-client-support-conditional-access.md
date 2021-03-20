@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 Client App Support: Villkorsstyrd åtkomst'
+title: 'Microsoft 365 Client App-support: Villkorsstyrd åtkomst'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,70 +14,30 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-description: I den här artikeln får du lära dig vilka plattformar, klienter och PowerShell-moduler som stöder villkorsstyrd åtkomst för Microsoft 365.
+description: I den här artikeln lär du dig vilka plattformar, klienter och PowerShell-moduler som stöder villkorsstyrd åtkomst för Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 969dd9d712fe124458273144b3e7974e03ade9e0
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: c7b0b65ea25091aad01fd8741f9925f2b545e9c4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097252"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904972"
 ---
-# <a name="microsoft-365-client-app-support-conditional-access"></a>Microsoft 365 Client App Support: Villkorsstyrd åtkomst
+# <a name="microsoft-365-client-app-support-conditional-access"></a>Microsoft 365 Client App-support: Villkorsstyrd åtkomst
 
-På den moderna arbetsplatsen har användarna åtkomst till organisationens resurser via olika enheter och appar från valfri plats. Därför räcker det inte längre att fokusera på vem som kan komma åt en resurs. Organisationen måste också stödja hur och var en resurs används i infrastrukturen för åtkomstkontroll.
+På den moderna arbetsplatsen har användarna åtkomst till organisationens resurser från olika enheter och appar, var de än befinner sig. Därför räcker det inte längre att fokusera på vem som kan komma åt en resurs. Organisationen måste också stödja hur och var en resurs nås i din infrastruktur för åtkomstkontroll.
 
-Med Azure Active Directory-enhet, plats och multifaktorautentiseringsbaserad villkorsstyrd åtkomst kan du uppfylla detta nya krav. Villkorsstyrd åtkomst är en funktion i Azure Active Directory som gör att du kan tillämpa kontroller för åtkomst till appar i din miljö, allt baserat på specifika villkor och hanteras från en central plats.
+Med Azure Active Directory-enhet, -plats och flerfaktorautentiseringsbaserad villkorlig åtkomst kan du uppfylla det här nya kravet. Villkorsstyrd åtkomst är en funktion i Azure Active Directory som gör att du kan tillämpa kontroller för åtkomst till appar i din miljö, allt baserat på specifika villkor och hanteras från en central plats.
 
-Läs mer om [villkorlig åtkomst i Azure Active Directory.](/azure/active-directory/conditional-access/)
+Läs mer om [villkorsstyrd åtkomst i Azure Active Directory.](/azure/active-directory/conditional-access/)
 
 ## <a name="supported-clients--platforms"></a>Klienter som stöds & plattformar
 
 De senaste versionerna av följande klienter och plattformar har stöd för villkorsstyrd åtkomst. Mer information om plattformsstöd i Microsoft 365 finns i [Systemkrav för Microsoft 365.](/microsoft-365/microsoft-365-and-office-resources)
-
 <br>
 <br>
 
-| Klienter | Android | iOS | Mac| Windows 10 <br> Moderna appar| Windows 10 <br> Skrivbord |
-|:---|:---:|:---:|:---:|:---:|:---:|
-| Azure Active Directory-administratör | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
-| Åtkomst | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
-| Azure Admin | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
-| Företagsportal | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Saknas |
-| Cortana | Planerat | Planerat | Saknas | ![Stöds](../media/check-mark.png) | Saknas |
-| Delve | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
-| Edge | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
-| Excel | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) |
-| Exchange Online-administratör | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
-| Formulär | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
-| Office 365 Admin | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |  |
-| Kaizala | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
-| Office Lens| ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Saknas | ![Stöds](../media/check-mark.png) | Saknas |
-| Office mobile | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
-| Office-portalen | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) | Saknas |
-| OneDrive | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) |
-| OneNote | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) |
-| Outlook | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) |
-| Planner | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
-| Power Apps | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Saknas | Planerat | Saknas |
-| Power Automate | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
-| Power BI | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Saknas | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) |
-| PowerPoint | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) |
-| Project | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
-| Publisher | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
-| Skype för företag | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT ||
-| SharePoint | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
-| SharePoint Online-administratör | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
-| Fästisar | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) | Saknas |
-| Strömma | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
-| Sway | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) | Saknas |
-| Teams | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Saknas | ![Stöds](../media/check-mark.png) |
-| To Do | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Saknas |
-| Visio | Saknas | ![Stöds](../media/check-mark.png) | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | ![Stöds](../media/check-mark.png) |
-| Whiteboard | Planerat | ![Stöds](../media/check-mark.png) | Saknas | ![Stöds](../media/check-mark.png) | Saknas |
-| Word | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) |
-| Workplace-analys | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT | EJ TILLÄMPLIGT |
-| Yammer | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | ![Stöds](../media/check-mark.png) | Saknas | ![Stöds](../media/check-mark.png) |
+[!INCLUDE [Conditional access services support table](../includes/microsoft-365-client-support-conditional-access-include.md)]
 
 ## <a name="supported-powershell-modules"></a>PowerShell-moduler som stöds
 

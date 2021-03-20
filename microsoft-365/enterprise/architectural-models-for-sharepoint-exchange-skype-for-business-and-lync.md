@@ -19,166 +19,165 @@ ms.custom:
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
-description: Få IT-affischer som beskriver alternativen för arkitektur, distribution och plattform för SharePoint, Exchange, Skype för företag och Lync.
-ms.openlocfilehash: 6d5cda89fb67f5c41dcf161abe7258c4600ee8ce
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+description: Skaffa IT-affischer som beskriver arkitekturmodeller, distribution och plattformsalternativ för SharePoint, Exchange, Skype för företag och Lync.
+ms.openlocfilehash: 6c8aea1f6389c5007adb1800639488972483d5fb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919826"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905518"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Arkitekturmodeller för SharePoint, Exchange, Skype för företag och Lync
 
-IT-förhands granskning i den här artikeln beskriver arkitektur-och distributions alternativ för SharePoint, Exchange, Skype för företag och Lync. De ger också design information för att distribuera SharePoint i Microsoft Azure.
+IT-affischerna i den här artikeln beskriver arkitekturmodellerna och distributionsalternativen för SharePoint, Exchange, Skype för företag och Lync. De innehåller också designinformation för distribution av SharePoint i Microsoft Azure.
   
-Genom att använda Microsoft 365 kan du tillhandahålla välbekanta samarbets-och kommunikations tjänster via molnet. Med några få undantag är användar upplevelsen detsamma likadan oavsett om du håller på att underhålla en lokal distribution eller använder Microsoft 365. 
+Genom att använda Microsoft 365 kan du tillhandahålla välbekanta samarbets- och kommunikationstjänster via molnet. Med några få undantag är användarupplevelsen densamma oavsett om du underhåller en lokal distribution eller använder Microsoft 365. 
 
-Den här enhetliga användar upplevelsen är ett problem med beslutet att placera varje arbets belastning. Det ger också frågor:
+Den här enhetliga användarupplevelsen komplicerar beslutet för var du ska placera varje arbetsbelastning. Den tar även upp frågor:
   
-- Hur väljer jag en plattform för enskilda arbets belastningar?
+- Hur väljer du en plattform för enskilda arbetsbelastningar?
     
-- Är det lämpligt att förvara all lokal tjänst?
+- Är det rimligt att ha någon tjänst lokalt?
     
-- I vilket fall är en hybrid distribution lämplig?
+- I vilket scenario är en hybriddistribution lämplig?
     
 - Hur passar Azure in i bilden?
     
-- Vilka konfigurationer av arbets belastning för Office Server fungerar med Azure?
+- Vilka konfigurationer av Office-serverarbetsbelastningar stödjer Azure?
     
 > [!TIP]
-> De flesta förhands granskningar i den här artikeln är tillgängliga på flera språk. Tillgängliga språk inkluderar kinesiska, engelska, franska, tyska, italienska, japanska, koreanska, portugisiska, ryska och spanska. Om du vill ladda ned en affisch på något av de här språken väljer du **fler språk** under miniatyr bilden.
+> De flesta affischerna i den här artikeln är tillgängliga på flera språk. De tillgängliga språken är kinesiska, engelska, franska, tyska, italienska, japanska, koreanska, portugisiska, ryska och spanska. Om du vill ladda ned en affisch på något av dessa språk väljer du Fler språk under **affischminiatyrbilden.**
   
-Låt oss veta vad du tycker! Skicka e-post till oss på [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com). 
+Berätta vad du tycker! Skicka e-post till [oss cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com). 
   
 Använd följande länkar för att få de affischer du behöver:
   
-- **Arkitektur modeller** : Använd de här resurserna för att fastställa din ideal plattform och konfiguration för SharePoint 2016 och Skype för företag 2015.
+- **Arkitekturmodeller:** Använd dessa resurser för att hitta en idealisk plattform och konfiguration för SharePoint 2016 och Skype för företag 2015.
     
-  - [Microsoft SharePoint 2016-arkitektur modeller](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SP2016_ArchModel)
+  - [Arkitekturmodeller i Microsoft SharePoint 2016](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SP2016_ArchModel)
     
   - [SharePoint Server 2016-databaser](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SP2016_Databases)
     
-  - [Arkitektur modeller för Microsoft Skype för företag 2015](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SfB2015_ArchModel)
+  - [Microsoft Skype för företag 2015-arkitekturmodeller](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SfB2015_ArchModel)
     
-- **Plattform** : Använd de här resurserna för att fastställa din ideal plattform och konfiguration för SharePoint 2013, Exchange 2013 och Lync 2013.
+- **Plattform:** Använd de här resurserna till att fastställa en idealisk plattform och konfiguration för SharePoint 2013, Exchange 2013 och Lync 2013.
     
-  - [SharePoint 2013-plattforms alternativ](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SP2013_Options)
+  - [SharePoint 2013-plattformsalternativ](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SP2013_Options)
     
-  - [Alternativ för Exchange 2013-plattform](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#Exch2013_options)
+  - [Plattformsalternativ för Exchange 2013](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#Exch2013_options)
     
-  - [Lync 2013-plattforms alternativ](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#Lync2013_Options)
+  - [Plattformsalternativ för Lync 2013](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#Lync2013_Options)
     
-- **SharePoint server 2013 i Azure** : Använd de här IT-förhands granskningarna för att designa och konfigurera SharePoint Server 2013-arbets belastning i Azure Infrastructure Services.
+- **SharePoint Server 2013** i Azure: Använd dessa IT-affischer för att utforma och konfigurera SharePoint Server 2013-arbetsbelastningar i Azure-infrastrukturtjänster.
     
-  - [Internet webbplatser i Azure med SharePoint Server 2013](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#Azure_sharepoint2013)
+  - [Webbplatser i Azure med SharePoint Server 2013](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#Azure_sharepoint2013)
     
-  - [Design exempel: Internet-webbplatser i Azure för SharePoint 2013](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#DesignSampleInternetSites)
+  - [Designexempel: Internetwebbplatser i Azure för SharePoint 2013](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#DesignSampleInternetSites)
     
-  - [SharePoint-återställning till Azure](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#sharepoint_recovery_Azure)
+  - [SharePoint-katastrofåterställning till Azure](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#sharepoint_recovery_Azure)
     
-## <a name="architectural-models-posters"></a>Affisch modeller
+## <a name="architectural-models-posters"></a>Affischer för arkitekturmodeller
 
-IT-affischen för SharePoint 2016 och Skype för företag 2015 är ett sätt att jämföra distributions metoder i ett lättanvänt format. Affischerna visar alla konfigurations-eller plattforms alternativ. De innehåller följande information för varje alternativ:
+IT-affischerna för SharePoint 2016 och Skype för företag 2015 är ett sätt att jämföra distributionsmetoder i ett lättskrivet format. Affischerna listar alla konfigurations- eller plattformsalternativ. De ger följande information för varje alternativ:
   
-- **Översikt** : en kort sammanfattning av plattformen, inklusive ett konceptuellt diagram.
+- **Översikt:** En kort sammanfattning av plattformen, inklusive ett konceptuellt diagram.
     
-- **Bäst för** : vanliga scenarier som passar plattformen.
+- **Bäst för:** Vanliga scenarier som är idealiska för plattformen.
     
-- **Licens krav** : de licenser du behöver för distribution.
+- **Licenskrav:** De licenser du behöver för distribution.
     
-- **Arkitektur uppgifter** : de beslut som du måste skapa som arkitekt.
+- **Arkitekturuppgifter:** De beslut du behöver fatta som arkitekt.
     
-- **IT-uppgifter eller ansvars områden** : de dagliga ansvars områden som IT-personalen måste planera för.
+- **IT-proffs på uppgifter och** ansvarsområden: De dagliga ansvarsområden som din IT-personal behöver planera för.
     
 <a name="SP2016_ArchModel"> </a>
-### <a name="microsoft-sharepoint-server-2016-architectural-models"></a>Microsoft SharePoint Server 2016-arkitektur modeller
+### <a name="microsoft-sharepoint-server-2016-architectural-models"></a>Microsoft SharePoint Server 2016 arkitekturmodeller
 
 |Objekt|Beskrivning|
 |---|---|
-|[![Miniatyr för SharePoint Server 2016-arkitekturen för affischer.](../media/7d3e590c-1f3b-42cf-920d-9edac8fa3e04.png)          ](https://www.microsoft.com/download/details.aspx?id=52650) <br/> [PDF](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.pdf)  \| [Visio](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.vsdx)  \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=52650)|Det här är en affisch som beskriver de lokala konfigurationerna för SharePoint Online, Azure och SharePoint som affärs besluts fattare och lösnings arkitekter måste känna till. <br/><br/> - **SharePoint Online (SaaS)** : konsumera SharePoint via en program vara som tjänst för abonnemang (SaaS). <br/> - **SharePoint-hybrid** : flytta dina SharePoint-webbplatser och-appar till molnet i din egen takt. <br/> - **SharePoint i Azure (IaaS)** : utöka din lokala miljö till Azure och distribuera SharePoint 2016-servrar där. (Den här modellen rekommenderas för hög tillgänglighet eller katastrof återställning och utvecklings miljöer.) <br/> - **SharePoint lokalt** : planera, distribuera, underhålla och anpassa din SharePoint-miljö i ett Data Center som du upprätthåller.|
+|[![Miniatyrbild för affischen för arkitekturmodeller i SharePoint Server 2016.](../media/7d3e590c-1f3b-42cf-920d-9edac8fa3e04.png)          ](https://www.microsoft.com/download/details.aspx?id=52650) <br/> [PDF](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.pdf)  \| [Visio](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.vsdx)  \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=52650)|Den här IT-affischen beskriver de lokala konfigurationer för SharePoint Online, Azure och SharePoint som beslutsfattare och lösningsarkitekter behöver känna till. <br/><br/> - **SharePoint Online (SaaS)**: Använd SharePoint via en saaS-prenumerationsmodell (programvara som en tjänst). <br/> - **SharePoint-hybrid:** Flytta Dina SharePoint-webbplatser och -appar till molnet i din egen takt. <br/> - **SharePoint i Azure (IaaS)**: Utöka din lokala miljö till Azure och distribuera SharePoint 2016-servrar där. (Den här modellen rekommenderas för miljöer för hög tillgänglighet eller katastrofåterställning och utvecklings-/testmiljöer.) <br/> - **Lokal SharePoint:** Planera, distribuera, underhålla och anpassa SharePoint-miljön i ett datacenter som du har.|
    
 <a name="SP2016_Databases"> </a>
 ### <a name="sharepoint-server-2016-databases"></a>SharePoint Server 2016-databaser
 
 |Objekt|Beskrivning|
 |---|---|
-|[![Miniatyr för SharePoint Server 2016-databaserna för affisch.](../media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=55041)|Denna IT-affisch är en snabb referens för SharePoint Server 2016-databaser. Du kommer att se information för varje databas: <br/><br/> -Storlek <br/> -Skalnings vägledning <br/> -I/O-mönster <br/> -Krav <br/><br/>  Den första sidan visar de SharePoint-systemdatabaser och tjänst program som har flera databaser. På den andra sidan visas alla tjänst program som har enskilda databaser. <br/><br/>  Mer information finns i [databas typer och beskrivningar i SharePoint Server 2016](https://docs.microsoft.com/SharePoint/technical-reference/database-types-and-descriptions).|
+|[![Miniatyrbild för postern SharePoint Server 2016-databaser.](../media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=55041)|Den här IT-affischen är en lathund för SharePoint Server 2016-databaser. Mer information visas för varje databas: <br/><br/> - Storlek <br/> - Skalningsvägledning <br/> - I/O-mönster <br/> - Krav <br/><br/>  På första sidan visas SharePoint-systemdatabaser och tjänstprogram som har flera databaser. På den andra sidan visas alla tjänstprogram som har enskilda databaser. <br/><br/>  Mer information finns i [Databastyper och beskrivningar i SharePoint Server 2016.](/SharePoint/technical-reference/database-types-and-descriptions)|
    
 <a name="SfB2015_ArchModel"> </a>
-### <a name="microsoft-skype-for-business-2015-architectural-models"></a>Arkitektur modeller för Microsoft Skype för företag 2015
+### <a name="microsoft-skype-for-business-2015-architectural-models"></a>Microsoft Skype för företag 2015- arkitekturmodeller
 
 |Objekt|Beskrivning|
 |---|---|
-|[![Miniatyr bild för arkitektur modellerna för Skype för företag – affisch.](../media/132288c0-6ae4-4394-88ab-b57dae367714.png)](https://www.microsoft.com/download/details.aspx?id=55022) <br/> [PDF](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.pdf)  \| [Visio](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.vsd)  \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=55022)|Denna affisch beskriver Skype för företag – Online, lokal-, hybrid-och moln privat gren Exchange (PBX). Den beskriver också integrering med Exchange-och SharePoint-konfigurationer som företags besluts fattare och lösnings arkitekter måste känna till. <br/><br/> Affischen är avsedd för IT-tekniker att få kännedom om de grundläggande arkitektur modellerna genom vilka Skype för företag – Online och lokal Skype för företag kan utnyttjas. <br/><br/>Börja med den konfiguration som bäst passar organisationens behov och abonnemang. Överväg att använda andra konfigurationer efter behov. Du kanske till exempel vill integrera med Exchange och SharePoint eller en lösning som utnyttjar Microsofts Cloud PBX-erbjudande.|
+|[![Miniatyrbild för affischen för modeller av arkitektur i Skype för företag.](../media/132288c0-6ae4-4394-88ab-b57dae367714.png)](https://www.microsoft.com/download/details.aspx?id=55022) <br/> [PDF](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.pdf)  \| [Visio](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.vsd)  \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=55022)|Den här affischen beskriver Skype för företag – Online, lokal, hybrid och moln-PBX (Private Branch Exchange). Dessutom beskrivs integrering med Exchange- och SharePoint-konfigurationer som beslutsfattare och lösningsarkitekter behöver känna till. <br/><br/> Affischen är avsedd för IT-proffs som vill informera om grundläggande arkitekturmodeller som kan användas med Skype för företag – Online och Skype för företag lokalt. <br/><br/>Börja med den konfiguration som bäst passar organisationens behov och planer. Fundera över och använd andra konfigurationer efter behov. Du kanske t.ex. vill överväga integrering med Exchange och SharePoint eller en lösning som utnyttjar Microsoft Cloud PBX-erbjudandet.|
    
-## <a name="platform-options-posters"></a>Affischer för plattforms alternativ
+## <a name="platform-options-posters"></a>Affischer med plattformsalternativ
 
-IT-affischer för SharePoint 2013, Exchange 2013 och Lync 2013 ger en överblick över distributions metoderna. Varje affisch visar alla konfigurationer eller plattforms alternativ. Den innehåller följande information för varje alternativ:
+IT-affischerna för SharePoint 2013, Exchange 2013 och Lync 2013 är ett sätt att snabbt jämföra distributionsmetoderna. Alla affischer listar alla konfigurationer och plattformsalternativ. Här finns följande information för varje alternativ:
   
-- **Översikt** : en kort sammanfattning av plattformen, inklusive ett konceptuellt diagram.
+- **Översikt:** En kort sammanfattning av plattformen, inklusive ett konceptuellt diagram.
     
-- **Bäst för** : vanliga scenarier som passar plattformen.
+- **Bäst för:** Vanliga scenarier som är idealiska för plattformen.
     
-- **Licens krav** : de licenser du behöver för distribution.
+- **Licenskrav:** De licenser du behöver för distribution.
     
-- **Arkitektur uppgifter** : de beslut som du måste skapa som arkitekt.
+- **Arkitekturuppgifter:** De beslut du behöver fatta som arkitekt.
     
-- **IT-uppgifter eller ansvars områden** : de dagliga ansvars områden som IT-personalen måste planera för.
+- **IT-proffs på uppgifter och** ansvarsområden: De dagliga ansvarsområden som din IT-personal behöver planera för.
     
 <a name="SP2013_Options"> </a>
-## <a name="sharepoint-2013-platform-options"></a>SharePoint 2013-plattforms alternativ
+## <a name="sharepoint-2013-platform-options"></a>SharePoint 2013-plattformsalternativ
 
 |Objekt|Beskrivning|
 |---|---|
-|[![Miniatyr bild av SharePoint 2013-plattforms alternativ för affisch.](../media/SP-PlatformOptions.jpg)](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=40332)|För företags besluts fattare och arkitekter visar den här affischen plattforms alternativen för SharePoint 2013, SharePoint i Microsoft 365, lokal hybrid med Microsoft 365, Azure och lokala distributioner. Den innehåller en översikt över varje arkitektur, rekommendationer, licens krav och listor över arkitekt-och IT-uppgifter för varje plattform. Affischen visar flera SharePoint-lösningar på Azure.|
+|[![Miniatyrbild av affischen Plattformsalternativ för SharePoint 2013.](../media/SP-PlatformOptions.jpg)](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=40332)|För beslutsfattare och arkitekter i företaget visar den här affischen plattformsalternativen för SharePoint 2013, SharePoint i Microsoft 365, lokal hybrid med Microsoft 365- och Azure-distributioner och distributioner endast lokalt. Den innehåller en översikt över varje arkitektur, rekommendationer, licenskrav och listor över uppgifter för arkitekt och IT-proffs för varje plattform. På affischen framhävs flera SharePoint-lösningar på Azure.|
    
 <a name="Exch2013_options"> </a>
-## <a name="exchange-2013-platform-options"></a>Alternativ för Exchange 2013-plattform
+## <a name="exchange-2013-platform-options"></a>Plattformsalternativ för Exchange 2013
 
 |Objekt|Beskrivning|
 |---|---|
-|[![Miniatyr bild av alternativen för att överföra Exchange-plattformar.](../media/ITPro-Other-Exchange2013PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=42676) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkID=398740)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkID=398742)  \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=42676)|För företags besluts fattare och arkitekter beskriver den här affischen plattforms alternativen för Exchange 2013. Kunderna kan välja mellan Exchange Online med Microsoft 365, hybrid Exchange, Exchange Server lokalt och värdbaserad Exchange. Affischen visar alla olika arkitektur alternativ, inklusive de ideala scenarierna för var och en av licens kraven och IT-ansvar.|
+|[![Miniatyrbild av affischen Alternativ för Exchange-plattform.](../media/ITPro-Other-Exchange2013PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=42676) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkID=398740)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkID=398742)  \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=42676)|Den här affischen beskriver plattformsalternativen för Exchange 2013 för företags beslutsfattare och arkitekter. Kunder kan välja mellan Exchange Online med Microsoft 365, Exchange-hybrid, Exchange Server lokalt och värdbaserade Exchange. Affischen beskriver varje arkitekturalternativ, inklusive de perfekta scenarierna för var och en, licenskrav och IT-ansvar.|
    
 <a name="Lync2013_Options"> </a>
-## <a name="lync-2013-platform-options"></a>Lync 2013-plattforms alternativ
+## <a name="lync-2013-platform-options"></a>Plattformsalternativ för Lync 2013
 
 |Objekt|Beskrivning|
 |---|---|
-|[![Miniatyr bild av Lync 2013 Platform alternativ affisch.](../media/Lync-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41677) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkID=391837)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkID=391839)  \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=41677)|För företags besluts fattare och arkitekter beskriver den här affischen plattforms alternativen för Lync 2013. Kunderna kan välja från Lync Online med Microsoft 365, hybrid Lync, Lync Server lokalt och värdbaserade Lync. IT-affischen visar alla arkitektur alternativ, inklusive de ideala scenarierna för var och en av licens kraven och IT-ansvar.|
+|[![Miniatyrbild av affischen Plattformsalternativ för Lync 2013.](../media/Lync-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41677) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkID=391837)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkID=391839)  \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=41677)|Den här affischen beskriver plattformsalternativen för Lync 2013 för företags beslutsfattare och arkitekter. Kunderna kan välja mellan Lync Online med Microsoft 365, Lync-hybrid, lokal Lync Server och Lyncs värdbaserade värd. IT-affischen beskriver alla arkitekturalternativ (och vilket alternativ som passar perfekt för var och en, licenskrav och IT-ansvar).|
    
 <a name="Lync2013_Options"> </a>
-## <a name="sharepoint-in-azure-solutions-posters"></a>SharePoint i en Azure Solutions-affisch
+## <a name="sharepoint-in-azure-solutions-posters"></a>SharePoint i Azure-lösningsaffischer
 
-IT-affisch för SharePoint i Azure show Azure-baserade lösningar som använder SharePoint Server 2013.
+IT-affischerna för SharePoint i Azure visar Azure-baserade lösningar som använder SharePoint Server 2013.
   
 <a name="Azure_sharepoint2013"> </a>
-### <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Internet-webbplatser i Microsoft Azure med SharePoint Server 2013
+### <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Internetwebbplatser i Microsoft Azure med SharePoint Server 2013
 
 |Objekt|Beskrivning|
 |---|---|
-|[![Bild på Internet webbplatser i Azure med SharePoint Server 2013-affisch.](../media/MS-AZ-SPInternetSites.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41992) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)  \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=41992)|Denna affisch som beskriver viktiga design aktiviteter och Rekommenderad arkitektur för Internet-webbplatser i Azure.  <br/><br/> Mer information finns i följande artiklar:  <br/><br/> - [Internet webbplatser i Azure med SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Azure-arkitekturer för SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)|
+|[![Bild av Internetwebbplatser i Azure med hjälp av SharePoint Server 2013-affischen.](../media/MS-AZ-SPInternetSites.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41992) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)  \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=41992)|På den här affischen beskrivs viktiga designaktiviteter och rekommenderad arkitektur för Internet-webbplatser i Azure.  <br/><br/> Mer information finns i följande artiklar:  <br/><br/> - [Webbplatser i Azure med SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Azure-arkitekturer för SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)|
    
 <a name="DesignSampleInternetSites"> </a>
-### <a name="internet-sites-in-azure-for-sharepoint-2013"></a>Internet webbplatser i Azure för SharePoint 2013
+### <a name="internet-sites-in-azure-for-sharepoint-2013"></a>Webbplatser i Azure för SharePoint 2013
 
 |Objekt|Beskrivning|
 |---|---|
-|[![Bild på Internet webbplatserna i Microsoft Azure för SharePoint Server 2013 affisch.](../media/MS-AZ-InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=41991)|Använd det här design exemplet som utgångs punkt för din egen arkitektur på en Internet-webbplats i Azure med SharePoint Server 2013. <br/><br/> Mer information finns i följande artiklar:  <br/><br/> - [Internet webbplatser i Azure med SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Azure-arkitekturer för SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)|
+|[![Bild av internetwebbplatserna i Microsoft Azure för SharePoint Server 2013-affischen.](../media/MS-AZ-InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=41991)|Använd det här designexempel som utgångspunkt för din egen arkitektur för en webbplats på Internet i Azure med SharePoint Server 2013. <br/><br/> Mer information finns i följande artiklar:  <br/><br/> - [Webbplatser i Azure med SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Azure-arkitekturer för SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)|
    
 <a name="sharepoint_recovery_Azure"> </a>
-### <a name="sharepoint-disaster-recovery-to-microsoft-azure"></a>SharePoint-återställning till Microsoft Azure
+### <a name="sharepoint-disaster-recovery-to-microsoft-azure"></a>SharePoint-katastrofåterställning till Microsoft Azure
 
 |Objekt|Beskrivning|
 |---|---|
-|[![Bild av affischen för återställnings processen för SharePoint i Azure.](../media/SP-DR-Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=41993)|Denna IT-affisch visar arkitektur principer för en katastrof återställnings miljö i Azure. <br/><br/> Mer information finns i följande artiklar:  <br/><br/> - [SharePoint Server 2013 katastrof återställning i Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [Azure-arkitekturer för SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)|
+|[![Bild av affischen för SharePoint-katastrofåterställningsprocessen till Azure.](../media/SP-DR-Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=41993)|Den här IT-affischen visar arkitekturprinciper för en katastrofåterställningsmiljö i Azure. <br/><br/> Mer information finns i följande artiklar:  <br/><br/> - [SharePoint Server 2013-katastrofåterställning i Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [Azure-arkitekturer för SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)|
    
 ## <a name="see-also"></a>Se även
 
-- [Microsoft 365-center för lösningar och arkitektur](../solutions/solution-architecture-center.md)
+- [Microsoft 365-lösning och arkitekturcenter](../solutions/index.yml)
   
 - [Microsoft Cloud-arkitekturmodeller](../solutions/cloud-architecture-models.md)
   
-- [Microsoft 365 test labb guider](m365-enterprise-test-lab-guides.md)
+- [Testlabbguider för Microsoft 365](m365-enterprise-test-lab-guides.md)
   
 - [Hybridlösningar](hybrid-solutions.md)
-

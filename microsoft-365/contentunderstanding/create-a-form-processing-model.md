@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Skapa en modell för formulärbearbetning i Microsoft SharePoint-Syntex.
-ms.openlocfilehash: c025317a5eb88199b849f90b51fac9779e1c97a2
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: d71273e416bf7922627e44d9423eaa8903411689
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976015"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905852"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Skapa en modell för formulärbearbetning i Microsoft SharePoint-Syntex
 
@@ -27,7 +27,7 @@ ms.locfileid: "49976015"
 
 </br>
 
-Använda [AI-verktyg](https://docs.microsoft.com/ai-builder/overview) – en funktion i Microsoft PowerApps – SharePoint Syntex-användare kan skapa en[modell för formulärbearbetning](form-processing-overview.md) direkt från ett SharePoint-dokumentbibliotek. 
+Använda [AI-verktyg](/ai-builder/overview) – en funktion i Microsoft PowerApps – SharePoint Syntex-användare kan skapa en[modell för formulärbearbetning](form-processing-overview.md) direkt från ett SharePoint-dokumentbibliotek. 
 
 Att skapa en modell för formulärbearbetning inbegriper följande:
  - Steg 1: Skapa modellen för formulärbearbetning för att skapa innehållstypen
@@ -68,7 +68,7 @@ Första steget för att skapa en modell för formulärbearbetning är att namnge
 När du har skapat din nya modell för formulärbearbetning öppnas en ny PowerApps AI Builder sida för modell för formulärbearbetning. På den här sidan kan du lägga till och analysera dina exempel dokument. </br>
 
 > [!NOTE]
-> När du söker efter exempelfiler att använda, kolla i [modell för formulärbearbetning indata dokument krav och optimeringstips](https://docs.microsoft.com/ai-builder/form-processing-model-requirements). 
+> När du söker efter exempelfiler att använda, kolla i [modell för formulärbearbetning indata dokument krav och optimeringstips](/ai-builder/form-processing-model-requirements). 
 
    ![Power Apps AI Builder](../media/content-understanding/powerapps.png)</br> 
  
@@ -148,6 +148,6 @@ När du har publicerat din modell och skapat PowerAutomate flöde åt den, kan d
 
 ## <a name="see-also"></a>Se även
   
-[Power Automate dokumentation](https://docs.microsoft.com/power-automate/)
+[Power Automate dokumentation](/power-automate/)
 
-[Utbildning: Förbättra affärsprestanda med AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[Utbildning: Förbättra affärsprestanda med AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)

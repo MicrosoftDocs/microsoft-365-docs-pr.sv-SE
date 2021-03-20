@@ -1,5 +1,5 @@
 ---
-title: Få information om grundläggande mobilitet och hanterade enheter
+title: Få information om hanterade enheter för enkel rörlighet och säkerhet
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -17,43 +17,43 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Använd Windows PowerShell för att få information om grundläggande mobilitet och säkerhets enheter i din organisation.
-ms.openlocfilehash: 7c6a0365dfd573377c3675bbcee8ee8280e33816
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+description: Använd Windows PowerShell för att få information om Basic Mobility- och Security-enheter i din organisation.
+ms.openlocfilehash: 92fcd6f39ffff97d7a4ecd2a69626ece54b481b2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876894"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904258"
 ---
-# <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>Få information om grundläggande mobilitet och hanterade enheter
+# <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>Få information om hanterade enheter för enkel rörlighet och säkerhet
 
-I den här artikeln lär du dig hur du använder Windows PowerShell för att få information om de enheter i organisationen som du skapar för grundläggande mobilitet och säkerhet.
+Den här artikeln visar hur du använder Windows PowerShell för att få information om de enheter i din organisation som du konfigurerade för grundläggande rörlighet och säkerhet.
 
-Här är en uppdelning av enhets uppgifterna som är tillgängliga för dig.
+Här är en sammanfattning av den enhetsinformation som är tillgänglig för dig.
 
-|**Beskrivning**|**Vad du kan söka efter i PowerShell**|
+|**Beskrivning**|**Vad du ska leta efter i PowerShell**|
 |:----------------|:------------------------------------------------------------------------------|
-|Enheten är registrerad i grundläggande mobilitet och säkerhet. Mer information finns i [Registrera din mobila enhet med grundläggande mobilitet och säkerhet](enroll-your-mobile-device.md)|Värdet för parametern *isManaged*   är:<br/>**True**= enheten är registrerad.<br/>**False**= enheten är inte registrerad. |
-|Enheten är kompatibel med din enhets säkerhets principer. Mer information finns i [skapa säkerhets principer för enheter](create-device-security-policies.md)|Värdet för parametern *isCompliant*   är:<br/>**Sant**   = enheten är kompatibel med principer.<br/>**Falskt**   = enheten är inte kompatibel med principer.|
+|Enheten är registrerad i Basic Mobility and Security. Mer information finns i [Registrera din mobila enhet med basic mobility and security](enroll-your-mobile-device.md)|Värdet för *parametern isManaged*   är:<br/>**True**= enheten är registrerad.<br/>**False**= device is notrolled. |
+|Enheten följer enhetens säkerhetsprinciper. Mer information finns i Skapa [säkerhetsprinciper för enheter](create-device-security-policies.md)|Värdet för *parametern isComp parameter*   är:<br/>**True**   = enheten följer principer.<br/>**False**   = enheten följer inte principerna.|
 
-:::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="Grundläggande PowerShell-parametrar för mobilitet och säkerhet":::
+:::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="PowerShell-parametrarna Basic Mobility and Security":::
 
 >[!NOTE]
->Kommandona och skripten i den här artikeln returnerar också information om vilka enheter som hanteras av [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
+>Kommandona och skripten i den här artikeln returnerar också information om enheter som hanteras av [Microsoft Intune.](https://www.microsoft.com/cloud-platform/microsoft-intune)
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-Det finns några saker du måste ställa in för att köra de kommandon och skript som beskrivs i den här artikeln.
+Det finns några saker du behöver konfigurera för att köra de kommandon och skript som beskrivs i den här artikeln.
 
 ### <a name="step-1-download-and-install-the-azure-active-directory-module-for-windows-powershell"></a>Steg 1: Ladda ned och installera Azure Active Directory-modulen för Windows PowerShell
 
-Mer information om de här stegen finns i [ansluta till Microsoft 365 med PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell).
+Mer information om de här instruktionerna finns i [Ansluta till Microsoft 365 med PowerShell.](/office365/enterprise/powershell/connect-to-office-365-powershell)
 
-1. Gå till [Microsoft Online services Sign-In Assistant för IT-experter RTWl](https://www.microsoft.com/download/details.aspx?id=41950)   och välj  **Hämta för Microsoft Online Services-inloggnings assistent**.   
+1. Gå till [Microsoft Online Services Sign-In assistenten för IT-proffs RTWl](https://www.microsoft.com/download/details.aspx?id=41950)och välj Ladda   ned för Microsoft Online Services –  **inloggningsassistent.**
 
 2. Installera Microsoft Azure Active Directory-modulen för Windows PowerShell genom att följa de här stegen:
 
-    1. Öppna en kommando tolk för PowerShell på administratörs nivå.  
+    1. Öppna PowerShell-kommandotolken på administratörsnivå.  
 
     2. Kör kommandot Installera-modul MSOnline.
 
@@ -61,7 +61,7 @@ Mer information om de här stegen finns i [ansluta till Microsoft 365 med Powe
 
     4. Om du uppmanas att installera modulen från PSGGallery, skriver du Y och trycker på RETUR.
 
-    5. När installationen är slutförd stänger du PowerShell-Kommandotolken.
+    5. Stäng PowerShell-kommandofönstret efter installationen.
 
 ### <a name="step-2-connect-to-your-microsoft-365-subscription"></a>Steg 2: Anslut till din Microsoft 365-prenumeration
 
@@ -69,93 +69,93 @@ Mer information om de här stegen finns i [ansluta till Microsoft 365 med Powe
 
     $UserCredential = Get-Credential
 
-2. I dialog rutan begäran om autentiseringsuppgifter för Windows PowerShell anger du användar namn och lösen ord för ditt Microsoft 365-globala administratörs konto och väljer sedan **OK**.
+2. I dialogrutan Begäran om autentiseringsuppgifter för Windows PowerShell anger du användarnamn och lösenord för ditt globala administratörskonto för Microsoft 365 och väljer sedan **OK.**
 
 3. Kör följande kommando.
 
-    Connect-MsolService-autentiseringsuppgifter $UserCredential
+    Connect-MsolService -Credential $UserCredential
 
-### <a name="step-3-make-sure-youre-able-to-run-powershell-scripts"></a>Steg 3: kontrol lera att du kan köra PowerShell-skript
+### <a name="step-3-make-sure-youre-able-to-run-powershell-scripts"></a>Steg 3: Kontrollera att du kan köra PowerShell-skript
 
 >[!NOTE]
->Du kan hoppa över det här steget om du redan har konfigurerat för att köra PowerShell-skript.
+>Du kan hoppa över det här steget om du redan är konfigurerad för att köra PowerShell-skript.
 
-Om du vill köra det Get-MsolUserDeviceComplianceStatus.ps1 skriptet måste du aktivera körningen av PowerShell-skript.
+Om du Get-MsolUserDeviceComplianceStatus.ps1 skriptet måste du aktivera körningen av PowerShell-skript.
 
-1. I Skriv bords versionen av Windows väljer du **Start** och skriver sedan Windows PowerShell. Högerklicka på Windows PowerShell och välj **Kör som administratör**.
+1. Välj Start på skrivbordet i **Windows** och skriv sedan Windows PowerShell. Högerklicka på Windows PowerShell och välj sedan **Kör som administratör.**
 
 2. Kör följande kommando.
 
     Set-ExecutionPolicy RemoteSigned
 
-3. Skriv Y när du uppmanas till det och tryck sedan på RETUR.
+3. När du uppmanas till det skriver du Y och trycker på Retur.
 
-**Kör cmdleten Get-MsolDevice för att visa information för alla enheter i organisationen**
+**Kör cmdleten Get-MsolDevice-cmdleten för att visa information om alla enheter i organisationen**
 
 1. Öppna Microsoft Azure Active Directory-modulen för Windows PowerShell.  
 
 2. Kör följande kommando.
 
-    Get-MsolDevice-all-ReturnRegisteredOwners | Where-Object {$ _. RegisteredOwners. count-gt 0}
+    Get-MsolDevice -All -ReturnRegisteredOwners | Where-Object {$_. RegisteredOwners.Count -gt 0}
 
-Fler exempel finns i  [Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=841721).
+Fler exempel finns i  [Get-MsolDevice.](https://go.microsoft.com/fwlink/?linkid=2157939)
 
-## <a name="run-a-script-to-get-device-details"></a>Köra ett skript för att få enhets information
+## <a name="run-a-script-to-get-device-details"></a>Köra ett skript för att få enhetsinformation
 
-Spara först skriptet till datorn.
+Börja med att spara skriptet på datorn.
 
-1. Kopiera och klistra in följande text i anteckningar.  
+1. Kopiera och klistra in följande text i Anteckningar.  
 
-2.  parametrar
+2.  param (
 
-3.  [PSObject []] $users = @ (),
+3.  [PSObject[]]$users = @(),
 
-4.  [Växel] $export
+4.  [Switch]$export,
 
-5.  [Sträng] $exportFileName = "UserDeviceComplianceStatus_" + (Hämta-datum-format "yyMMdd_HHMMss") + ". csv",
+5.  [Sträng]$exportFileName = "UserDeviceComplianceStatus_" + (Get-Date -Format "yyMMdd_HHMMss") + ".csv",
 
-6.  [Sträng] $exportPath = [miljö]:: GetFolderPath ("Skriv bord")
+6.  [String]$exportPath = [Environment]::GetFolderPath("Desktop")
 
 7.  )
 
-9.  [System. Collection. IDictionary] $script: schema = @ {
+9.  [System.Collections.IDictionary]$script:schema = @{
 
-11.  DeviceId = ' '
+11.  DeviceId = ''
 
-12.  DeviceOSType = ' '
+12.  DeviceOSType = ''
 
-13.  DeviceOSVersion = ' '
+13.  DeviceOSVersion = ''
 
-14.  DeviceTrustLevel = ' '
+14.  DeviceTrustLevel = ''
 
-15.  DisplayName = ' '
+15.  DisplayName = ''
 
-16.  IsCompliant = ' '
+16.  IsCompliet = ''
 
-17.  IsManaged = ' '
+17.  IsManaged = ''
 
-18.  ApproximateLastLogonTimestamp = ' '
+18.  ApproximateLastLogonTimestamp = ''
 
-19.  DeviceObjectId = ' '
+19.  DeviceObjectId = ''
 
-20.  RegisteredOwnerUpn = ' '
+20.  RegisteredOwnerUpn = ''
 
-21.  RegisteredOwnerObjectId = ' '
+21.  RegisteredOwnerObjectId = ''
     
 
-22.  RegisteredOwnerDisplayName = ' '
+22.  RegisteredOwnerDisplayName = ''
     
 
 23.  }
     
 
-25.  funktionen createResultObject
+25.  function createResultObject
     
 
 26.  {
     
 
-28.  [PSObject] $resultObject = New-Object-TypeName PSObject-egenskap $script: schema
+28.  [PSObject]$resultObject = New-Object -TypeName PSObject -Property $script:schema
     
 
 30.  returnera $resultObject
@@ -164,7 +164,7 @@ Spara först skriptet till datorn.
 31.  }
     
 
-33.  Om ($users. Count-EQ 0)
+33.  Om ($users. Antal -ekv 0)
     
 
 34.  {
@@ -176,58 +176,58 @@ Spara först skriptet till datorn.
 36.  }
     
 
-38.  [PSObject []] $result = ($u i $users)
+38.  [PSObject[]]$result = foreach ($u i $users)
     
 
 39.  {
     
 
-41.  [PSObject] $devices = get-msoldevice-RegisteredOwnerUpn $u. UserPrincipalName
+41.  [PSObject]$devices = get-msoldevice -RegisteredOwnerUpn $u.UserPrincipalName
     
 
-42.  $d i $devices
+42.  foreach ($d i $devices)
     
 
 43.  {
     
 
-44.  [PSObject] $deviceResult = createResultObject
+44.  [PSObject]$deviceResult = createResultObject
     
 
-45.  $deviceResult. DeviceId = $d. DeviceId
+45.  $deviceResult.DeviceId = $d.DeviceId
     
 
-46.  $deviceResult. DeviceOSType = $d. DeviceOSType
+46.  $deviceResult.DeviceOSType = $d.DeviceOSType
     
 
-47.  $deviceResult. DeviceOSVersion = $d. DeviceOSVersion
+47.  $deviceResult.DeviceOSVersion = $d.DeviceOSVersion
     
 
-48.  $deviceResult. DeviceTrustLevel = $d. DeviceTrustLevel
+48.  $deviceResult.DeviceTrustLevel = $d.DeviceTrustLevel
     
 
-49.  $deviceResult. DisplayName = $d. DisplayName
+49.  $deviceResult.DisplayName = $d.DisplayName
     
 
-50.  $deviceResult. IsCompliant = $d. GraphDeviceObject. IsCompliant
+50.  $deviceResult.IsComp scriptt = $d.GraphDeviceObject.IsComp scriptt
     
 
-51.  $deviceResult. IsManaged = $d. GraphDeviceObject. IsManaged
+51.  $deviceResult.IsManaged = $d.GraphDeviceObject.IsManaged
     
 
-52.  $deviceResult. DeviceObjectId = $d. ObjectId
+52.  $deviceResult.DeviceObjectId = $d.ObjectId
     
 
-53.  $deviceResult. RegisteredOwnerUpn = $u. UserPrincipalName
+53.  $deviceResult.RegisteredOwnerUpn = $u.UserPrincipalName
     
 
-54.  $deviceResult. RegisteredOwnerObjectId = $u. ObjectId
+54.  $deviceResult.RegisteredOwnerObjectId = $u.ObjectId
     
 
-55.  $deviceResult. RegisteredOwnerDisplayName = $u. DisplayName
+55.  $deviceResult.RegisteredOwnerDisplayName = $u.DisplayName
     
 
-56.  $deviceResult. ApproximateLastLogonTimestamp = $d. ApproximateLastLogonTimestamp
+56.  $deviceResult.ApproximateLastLogonTimestamp = $d.ApproximateLastLogonTimestamp
     
 
 58.  $deviceResult
@@ -245,13 +245,13 @@ Spara först skriptet till datorn.
 64.  {
     
 
-65.  $result | Export-Csv-Path ($exportPath + " \" + $exportFileName)-NoTypeInformation
+65.  $result | Export-Csv -path ($exportPath + " \" + $exportFileName) -NoTypeInformation
     
 
 66.  }
     
 
-67.  Person
+67.  Else
     
 
 68.  {
@@ -263,48 +263,48 @@ Spara först skriptet till datorn.
 70.  }
     
 
-71.  Spara den som en Windows PowerShell-skriptfil genom att använda fil namns tillägget. ps1; till exempel Get-MsolUserDeviceComplianceStatus.ps1.   
+71.  Spara den som en Windows PowerShell-skriptfil med filtillägget PS1. till exempel Get-MsolUserDeviceComplianceStatus.ps1.   
 
-## <a name="run-the-script-to-get-device-information-for-a-single-user-account"></a>Kör skriptet för att hämta enhets information för ett enskilt användar konto
+## <a name="run-the-script-to-get-device-information-for-a-single-user-account"></a>Kör skriptet för att hämta enhetsinformation för ett enskilt användarkonto
 
 1. Öppna Microsoft Azure Active Directory-modulen för Windows PowerShell.
     
-2. Gå till mappen där du sparade skriptet. Om du till exempel sparade den på C:\PS-Scripts kör du följande kommando.
+2. Gå till mappen där du sparade skriptet. Om du till exempel sparade det i C:\PS-Scripts kör du följande kommando.
     
-    CD-C:\PS-Scripts
+    cd C:\PS-Scripts
 
-3. Kör följande kommando för att identifiera den användare som du vill hämta enhets information för. Det här exemplet får information om bar@example.com.
+3. Kör följande kommando för att identifiera den användare du vill hämta enhetsinformation för. I det här exemplet får du information bar@example.com.
     
-    $u = Get-MsolUser-UserPrincipalName bar@example.com
+    $u = Get-MsolUser -UserPrincipalName bar@example.com
 
 4. Kör följande kommando för att starta skriptet.
 
-    .\Get-MsolUserDeviceComplianceStatus.ps1-användare $u-exportera
+    .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
 
-Informationen exporteras till Windows-skrivbordet som en CSV-fil. Du kan använda ytterligare parametrar för att ange fil namnet och sökvägen för CSV-filen.
+Informationen exporteras till Windows-skrivbordet som en CSV-fil. Du kan använda ytterligare parametrar för att ange CSV-filens namn och sökväg.
 
-## <a name="run-the-script-to-get-device-information-for-a-group-of-users"></a>Köra skriptet för att hämta enhets information för en grupp användare
+## <a name="run-the-script-to-get-device-information-for-a-group-of-users"></a>Kör skriptet för att hämta enhetsinformation för en grupp användare
 
 1. Öppna Microsoft Azure Active Directory-modulen för Windows PowerShell.
     
-2. Gå till mappen där du sparade skriptet. Om du till exempel sparade den på C:\PS-Scripts kör du följande kommando.   
+2. Gå till mappen där du sparade skriptet. Om du till exempel sparade det i C:\PS-Scripts kör du följande kommando.   
 
-    CD-C:\PS-Scripts
+    cd C:\PS-Scripts
 
-3. Kör följande kommando för att identifiera gruppen som du vill hämta enhets information för. I det här exemplet får du information om användare i gruppen FinanceStaff. 
+3. Kör följande kommando för att identifiera den grupp du vill hämta enhetsinformation för. Det här exemplet hämtar information för användare i gruppen Ekonomiavdelning. 
 
-    $u = Get-MsolGroupMember-SearchString "FinanceStaff" | % {Get-MsolUser-ObjectId $ _. Tillägg
+    $u = Get-MsolGroupMember -SearchString "FinanceStaff" | % { Get-MsolUser -ObjectId $_. ObjectId }
 
-4. Kör följande kommando för att starta skriptet.   
+4. Kör följande kommando för att starta skriptet.
 
-    .\Get-MsolUserDeviceComplianceStatus.ps1-användare $u-exportera
+    .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
 
-Informationen exporteras till Windows-skrivbordet som en CSV-fil. Du kan använda ytterligare parametrar för att ange fil namnet och sökvägen för CSV-filen.
+Informationen exporteras till Windows-skrivbordet som en CSV-fil. Du kan använda ytterligare parametrar för att ange CSV-filens namn och sökväg.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Microsoft Connect har avbrutits](https://docs.microsoft.com/collaborate/connect-redirect)
+[Microsoft Connect har tagits bort](/collaborate/connect-redirect)
 
 [Översikt över grundläggande Mobility and Security](overview.md)
 
-[Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=841721)
+[Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=2157939)

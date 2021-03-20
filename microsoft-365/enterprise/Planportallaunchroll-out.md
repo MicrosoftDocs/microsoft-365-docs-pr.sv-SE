@@ -1,5 +1,5 @@
 ---
-title: Planera hur portalen ska lanseras i SharePoint Online
+title: Planera lanseringsplanen för portalen i SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -16,59 +16,59 @@ ms.custom: Adm_O365
 search.appverid:
 - SPO160
 - MET150
-description: I den här artikeln beskrivs hur du kan planera din portal start i SharePoint Online och vilka åtgärder som ska vidtas för en lyckad start
-ms.openlocfilehash: e22fa4d9cbfed79841d844f111e3eb91a708512e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: I den här artikeln beskrivs hur du planerar lanseringen av portalen i SharePoint Online och vilka åtgärder du kan vidta för att lanseringen ska lyckas
+ms.openlocfilehash: d77baac6209a4002bb1c27513d5ccfdf5c4ac28a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694901"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905698"
 ---
-# <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planera hur portalen ska lanseras i SharePoint Online
+# <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planera lanseringsplanen för portalen i SharePoint Online
 
-En portal är en SharePoint-webbplats på ditt intranät som har ett stort antal webbplats läsare som använder innehåll på webbplatsen. I stora organisationer kan det finnas flera av dessa; till exempel en företags Portal och en HR-Portal. Vanligt vis har portarna relativt par personer som skapar och redigerar webbplatsen och dess innehåll. De flesta besökare på portalen läser och konsumerar bara innehållet.
+En portal är en SharePoint-webbplats i ditt intranät som har många användare som använder innehåll på webbplatsen. I stora organisationer kan det finnas flera av dessa: till exempel en företagsportal och en personalportal. Vanligtvis har portaler relativt få personer som skapar och skapar webbplatsen och dess innehåll. De flesta besökare på portalen läser bara och använder innehållet.
 
-I den här artikeln beskrivs hur du planerar distributionen och distributions planen till SharePoint Online. Det finns också tillvägagångs sätt för att följa traditionella inläsnings testning för SharePoint Online. SharePoint Online är en moln tjänst och lastens kapacitet, hälsa och total belastning i tjänsten hanteras av Microsoft.
+I den här artikeln beskrivs hur du planerar distribution och distribution till SharePoint Online. Det ger även metoder att följa eftersom traditionella belastningstester inte är tillåtna i SharePoint Online. SharePoint Online är en molntjänst och belastningsfunktionerna, hälsotillståndet och den övergripande belastningen i tjänsten hanteras av Microsoft.
 
-Om du vill ha hjälp med att skapa en lyckad Portal följer du de grundläggande principerna, metoderna och rekommendationerna i [skapa, lansera och underhålla en felfri Portal](https://go.microsoft.com/fwlink/?linkid=2105838) 
+För att skapa en lyckad portal följer du de grundläggande principerna, metoderna och rekommendationerna i skapa, starta och [underhålla en felfri portal](/sharepoint/portal-health) 
 
-Distributions tillvägagångs sätt är markerat nedan.
+Distributionsmetod markeras nedan.
 
-## <a name="overview-of-capacity-planning-in-sharepoint-online"></a>Översikt över kapacitets planering i SharePoint Online
-För att effektivt utnyttja kapaciteten och för att hantera oväntad tillväxt är vi automatiserade och kan spåra vissa användnings scenarier i alla grupper. När exakt tillväxt inte är oförutsägbart för någon klient organisation i en Server grupp, är det förutsägbart att en sammanlagd summa begärs över tiden. Genom att identifiera tillväxt trenderna i SharePoint Online kan vi planera för framtida utbyggnad. Mer information om [kapacitets planering och belastnings testning av SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md).
+## <a name="overview-of-capacity-planning-in-sharepoint-online"></a>Översikt över kapacitetsplanering i SharePoint Online
+För att kunna använda vår kapacitet effektivt och hantera oväntad tillväxt i olika servergruppar använder vi automation som spårar vissa användningsscenarier. Även om exakt tillväxt är svår att förutse för en klientorganisation i en servergrupp går det att förutspå den samlade summan av förfrågningar med tiden. Genom att identifiera tillväxttrender i SharePoint Online kan vi planera för framtida expansion. Mer information om [kapacitetsplanering och belastningstester av SharePoint Online.](capacity-planning-and-load-testing-sharepoint-online.md)
 
-En viktig del av en lyckad start är "Wave" eller "stegvis Sammanfattning"-metoden. 
+En viktig del i en lyckad lansering är metoden med "våg" eller "fasad utrullning" som beskrivs nedan. 
 
-## <a name="can-i-load-test-sharepoint-online"></a>Kan jag ladda testa SharePoint Online?
-SharePoint Online är en delad miljö med flera innehavare som är bal anse rad mellan anläggningar och skala, och den behandlas fort löp ande. Ladda test en miljö, till exempel SharePoint Online, vars skalnings ändringar kontinuerligt ger ett oväntat resultat, men det är inte tillåtet. 
+## <a name="can-i-load-test-sharepoint-online"></a>Kan jag läsa in test i SharePoint Online?
+SharePoint Online är en delad miljö med flera klientgrupper som är balanserad över alla grupper och skala justeras i det löpande. Om du läser in en miljö, till exempel SharePoint Online, vars skala ändras kontinuerligt får du inte bara oväntade resultat utan det är inte tillåtet. 
 
-Läs mer:  [kapacitets planering och belastnings testning av SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
+Läs mer:  [Kapacitetsplanering och belastningstestning av SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
 
-## <a name="optimize-pages-by-following-recommended-guidelines"></a>Optimera sidor genom att följa rekommenderade rikt linjer
-Sidor från en lokal distribution bör inte bara flyttas när de är på SharePoint Online utan att granska dem mot rekommenderade regler för SharePoint Online. Det bästa är att alltid optimera start sidan för alla webbplatser eller portaler i SharePoint, eftersom det är den plats där de flesta användare i organisationen kommer att komma åt som start punkt för webbplatsen.
+## <a name="optimize-pages-by-following-recommended-guidelines"></a>Optimera sidor genom att följa rekommenderade riktlinjer
+Sidor från en lokal distribution bör inte bara flyttas när de kommer till SharePoint Online utan att de granskas mot rekommenderade riktlinjer för SharePoint Online. Det bästa sättet är att alltid optimera en startsida för en webbplats eller portal i SharePoint, eftersom det är här de flesta användare i organisationen kommer åt den som startpunkt för dina webbplatser.
 
-Några grundläggande faktorer bör övervägas:
-- Lokala installationer kan utnyttjas på traditionella serverbaserade cacheminnen, till exempel objektcache, utdatacache och BLOB-cachen. Med skillnader i miljön i molnet är de här alternativen inte nödvändigt vis tillgängliga som skir-skillnader gör dem mindre förmånliga.
-- Alla sidor/funktioner/anpassningar som används för moln förbrukning bör optimeras för högre latens och andra användares fördelade enheter, så att användare i olika områden eller regioner har en mer enhetlig upplevelse. Cloud erbjuder optimeringar som innehålls leverans nätverk (CDN) för att optimera för en distribuerad användar bas samt för moderna SharePoint-användning används av våra LKG-webbdelar (OOTB).
+Några grundläggande faktorer bör beaktas:
+- Lokala distributioner kan utnyttja traditionella serverbaserade cacheminnen som objektcache, utdatacache och blob-cache. Eftersom det finns skillnader i topologi i molnet är de här alternativen inte nödvändigtvis tillgängliga eftersom de viktigaste skillnaderna gör dem mindre gångbara metoder.
+- Alla sidor/funktioner/anpassningar som används för molnanvändning bör vara optimerade för högre latens och distribuerade platser för användare, så att användare i olika områden eller regioner får en mer enhetlig upplevelse. Molnet erbjuder optimeringar som Content Delivery Networks (CDN) för att optimera för en distribuerad användarbas och för moderna SharePoint, och den senaste kända (LKG) används av våra oanvända webbdelar (OOTB).
 
-### <a name="what-to-do"></a>Vad kan jag göra:
- - För alla webbplats sidor i SharePoint Online används [verktyget Nätverksdiagnostik](https://aka.ms/perftool), som är ett krom tillägg som hjälper dig att analysera och tillhandahålla vägledning. Den kan användas av webbplats ägare, redigerare, administratörer och utvecklare eftersom den är utformad för att vara en utgångs punkt för analys och optimering.
- - Utvecklare bör också använda utvecklingsverktyg som F12-verktyg för utvecklare och CTRL-F12 i webbläsaren på moderna sidor. [/Fiddler-loggar](https://www.telerik.com/download/fiddler) kan också användas för att granska storleks vikten (hur stor sidan är i MB) på sidan och antalet samtal och element som påverkar den övergripande sid inläsningen. 
+### <a name="what-to-do"></a>Vad kan jag göra?
+ - För alla webbsidor i SharePoint [](./page-diagnostics-for-spo.md)Online använder du verktyget Siddiagnostik, som är ett Chromium-tillägg som hjälper dig analysera och ge vägledning. Det kan användas av webbplatsägare, redigerare, administratörer och utvecklare eftersom det är utformat för att vara en utgångspunkt för analys och optimering.
+ - Utvecklare bör också använda utvecklingsverktyg som F12-webbläsarutvecklingsverktyg och CTRL-F12 i webbläsaren på moderna sidor. Du kan även använda [Fiddler](https://www.telerik.com/download/fiddler) för att granska storleken (hur stor sidan är i megabyte) och antalet samtal och element som påverkar den totala sidinläsningen. 
 
-Det här avsnittet var en kort sammanfattning av hur du optimerar sidor.  Mer information finns i:  [skapa, starta och underhålla en felfri Portal](https://go.microsoft.com/fwlink/?linkid=2105838).
+Det här avsnittet var en kort sammanfattning för hur du optimerar sidor.  Mer information finns i [Skapa, starta och underhålla en felfri portal.](/sharepoint/portal-health)
 
-## <a name="follow-a-wave--phased-roll-out-approach"></a>Följ en nedrullningsbar metod med våg-och mellanliggande ljud
-Den traditionella omfattande utrops-metoden för webbplats lanseringar tillåter inte verifiering att anpassningar, externa källor, tjänster eller processer har testats på rätt sätt. Det innebär inte att det tar några månader att starta, men det rekommenderas till minst flera dagar beroende på organisationens storlek. Om du följer ett abonnemang för en våg kan du välja att pausa och lösa problem innan du fortsätter med nästa fas och därmed sänka det potentiella antalet användare som påverkas av eventuella problem. SharePoint som tjänst förlänger din kapacitet baserat på användning och förväntad användning och vi behöver inte meddela oss om din start, följ rikt linjerna för att säkerställa framgång.
+## <a name="follow-a-wave--phased-roll-out-approach"></a>Följ en omgång/fasningsmetod för utrullning
+Den traditionella metoden med jättearg för webbplatslanseringar tillåter inte verifiering av att anpassningar, externa källor, tjänster eller processer har testats på rätt skala. Det innebär inte att det tar månader att starta, men vi rekommenderar det över minst flera dagar beroende på organisationens storlek. Efter en plan för att genomföra en omgång får du därför möjlighet att pausa och lösa problem innan du fortsätter med nästa fas, och därmed minskar antalet användare som påverkas av eventuella problem. SharePoint som en tjänst skalar din kapacitet baserat på användning och prognostbaserad användning och vi behöver inte dig att meddela oss om lanseringen, bör du följa riktlinjerna för att säkerställa framgång.
   
-Som du ser i följande bild är antalet inbjudna användare betydligt högre än de som faktiskt använder webbplatsen. Den här bilden visar en strategi för hur du ska lansera en version. Med den här metoden kan du identifiera olika sätt att förbättra SharePoint-webbplatsen innan de flesta användare ser den.
+Så som visas i följande bild är antalet inbjudna användare ofta betydligt högre än antalet som faktiskt använder webbplatsen. Den här bilden visar en strategi för en ny version. Med den här metoden kan du identifiera olika sätt att förbättra SharePoint-webbplatsen innan majoriteten av användarna ser den.
   
 ![Diagram som visar inbjudna och aktiva användare](../media/0bc14a20-9420-4986-b9b9-fbcd2c6e0fb9.png)
   
-I pilot fasen är det bra att få feedback från användare om att organisationen litar på och vet att det kommer att vara. På det sättet är det möjligt att mäta hur systemet används, samt hur det fungerar.
+Under pilotfasen är det bra att få feedback från engagerade användare som organisationen har förtroende för. På så sätt går det att avgöra hur systemet används och vilken prestanda det har.
   
-Under varje vågor kan du samla in feedback om användare kring funktionerna samt prestanda under varje enskild installation. Det här är fördelen med att vi saktar fram systemet och gör förbättringar när systemet får mer användning. Det gör det också möjligt för oss att reagera på den ökade belastningen när webbplatsen är uppkopplad till fler och fler användare och kombinerat med hjälp av rikt linjerna för sid optimering säkerställer en positiv upplevelse för dina användare.
+Under var och en av vågorna samlar du in feedback om användarnas funktioner och prestanda under varje distributionsomgång. Fördelen är att systemet införs långsamt och att du kan förbättra det i takt med att användningen ökar. Det här gör också att vi kan reagera på ökade arbetsbelastningar när webbplatsen distribueras till fler och fler användare och i kombination med att följa riktlinjerna för sidoptimering säkerställer en positiv upplevelse för dina användare.
 
-### <a name="what-to-do"></a>Vad kan jag göra:
-- Bestäm tiden för varje fas och kontrol lera att du har en beredskaps-eller paus möjlighet, om du behöver göra ändringar innan du fortsätter
-- Planera den första gruppen av användare som du vill aktivera för att se till att du får feedback som du måste gå vidare. Det innebär att om möjligt kan du välja en aktiv grupp med användare som ska ge feedback i tid
-- När du planerar varje våg kan du pröva och börja med en liten användar bas (färre än 5000 användare) och sedan öka grupp storleken allteftersom du fortsätter med varje våg. Det gör att du kan skapa en successiv metod och gör det enklare att pausa möjligheter.
+### <a name="what-to-do"></a>Vad kan jag göra?
+- Bestäm tidsinställningar för varje fas och kontrollera att du har en möjlighet till reserv/paus om du skulle behöva justera innan du fortsätter
+- Planera den första gruppen av användare som du vill aktivera, så att du får den feedback du behöver. Det innebär att där det är möjligt bör du välja en aktiv grupp användare som kommer att ge feedback i tid
+- När du planerar varje omgång kan du försöka börja med en liten användarbas (mindre än 5 000 användare) och sedan öka gruppstorleken när du fortsätter med varje omgång. Det här hjälper till att skapa en spridd metod och gör det enklare att pausa möjligheter som kan behövas.

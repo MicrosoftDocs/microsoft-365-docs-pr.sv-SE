@@ -1,5 +1,5 @@
 ---
-title: Metod tips för att använda Office 365 på en långsam nätverks
+title: Metodtips för att använda Office 365 på ett långsamt nätverk
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -19,175 +19,174 @@ ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: I den här artikeln får du hjälp med de bästa metoderna för att använda Office 365 i ett långsamt nätverk.
-ms.openlocfilehash: a0a15191fa0240f24cecc5e595de9a259cacc9f9
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Den här artikeln leder dig genom de bästa metoderna som du kan använda för att använda Office 365 på ett långsamt nätverk.
+ms.openlocfilehash: effa1038b03a9fcafc74166a1f53682186688906
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694730"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905266"
 ---
-# <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Metod tips för att använda Office 365 på en långsam nätverks
+# <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Metodtips för att använda Office 365 på ett långsamt nätverk
 
-Vore det inte bra om din Internet anslutning alltid är snabb och aldrig upphörde? Kanske kommer den att komma. Under tiden finns det praktiska saker du kan göra för att arbeta i ett balky nätverk och ändå få det dagliga arbetet. Även om Office 365 är en molnbaserad tjänst finns det också på många sätt att arbeta med innehållet offline och för att det ska bli lättare att synkronisera dina ändringar. Dessutom är det ibland mer effektivt att arbeta med innehållet offline bara för att programmen körs snabbare och användar gränssnittet svarar mer. Nu är det här: Office 365 ger dig det bästa av två världar. Så här drar du nytta av det. 
+Skulle det inte vara snyggt om din Internetanslutning alltid var snabb och alltid låg? Kanske den dagen kommer. Men under tiden finns det praktiska saker du kan göra för att komma runt ett motigt nätverk och fortfarande få ditt dagliga arbete gjort. Även om Office 365 är en molnbaserad tjänst erbjuder den även många sätt att arbeta med innehåll offline och för att smidigt hålla dina ändringar synkroniserade. Dessutom kan det ibland vara mer effektivt att arbeta med innehåll offline bara för att programmen fungerar snabbare och användargränssnittet svarar snabbare. Poängen är följande: Office 365 ger dig det bästa av två världar. Så här kan du dra nytta av det. 
   
 > [!TIP]
-> Vill du se hur långsamt (eller fast) din nätverks anslutning är? Prova [ OOKLA ](https://www.speedtest.net/) eller testa [nätverks hastigheten](https://www.windowsphone.com/store/app/network-speed-test/9b9ae06b-2961-41ef-987d-b09567cffe70). 
+> Vill du se hur långsam (eller snabb) din nätverksanslutning är? Prova [hastigheten med OOKLA eller](https://www.speedtest.net/) appen [Nätverkshastighetstest.](https://www.windowsphone.com/store/app/network-speed-test/9b9ae06b-2961-41ef-987d-b09567cffe70) 
 
 ## <a name="why-is-my-network-so-slow"></a>Varför är mitt nätverk så långsamt?
 
-Även om du inte har kontroll över nätverkets prestanda kan du förstå vad som händer bakom kulisserna. Internet är mycket komplicerat, men det finns några koncept som kan hjälpa dig att förstå situationen bättre. Med de bästa metoderna i den här artikeln kan du undvika prestanda problem och minska godheten.
+Även om du inte har kontroll över nätverkets prestanda i sig självt kan det vara bra att förstå vad som händer bakom kulisserna. Internet är enormt komplext, men det finns vissa begrepp som kan hjälpa dig att förstå situationen betydligt bättre. Genom att följa metodtipsen i den här artikeln kan du få hjälp med att lösa prestandaproblem och minska frustrationen.
   
-**Viktiga faktorer som påverkar nätverks prestanda**
+**Viktiga faktorer som påverkar nätverkets prestanda**
 
-![Prestanda faktorer för nätverk](../media/62a94322-3f1a-4d2d-bbdc-2aa0722d2d96.png)
+![Nätverkets prestandafaktorer](../media/62a94322-3f1a-4d2d-bbdc-2aa0722d2d96.png)
   
- **Bandbredd och svars tid** De två viktigaste måtten för nätverks prestanda är bandbredd och svars tid: 
+ **Bandbredd och svarstid** De två allra viktigaste måtten på nätverkets prestanda är bandbredd och svarstid: 
   
-- Bandbredd är överföringshastigheten mätt i bitar per sekund. Större är bättre. Bandbredden är som en vatten pipe. Ju större rör desto mer vatten kan du lägga på den.
+- Bandbredden är genomflödets hastighet i bitar per sekund. Ju högre desto bättre. Bandbredden är som en vattenledning. Ju större rörledning, desto mer vatten kan "passera igenom".
 
-- Fördröjning är den tid det tar för innehållet att komma från en server eller tjänst till din enhet och mäts i millisekunder. Snabbare är bättre. Fördröjningen kan orsakas av olika faktorer, till exempel dålig bandbredd, en sparse-anslutning eller överförings tid.
+- Svarstiden är den tid det tar för innehåll att komma från en server eller tjänst till din enhet och mäts i millisekunder. Ju snabbare desto bättre. Svarstiden kan orsakas av ett antal faktorer, bland annat låg bandbredd, en svag anslutning eller överföringstid.
 
- **Vanliga problem** Utöver bandbredd och svars tid kan andra problem påverka nätverkets prestanda och är ofta oförutsägbart. Nätverks prestanda kan variera beroende på tiden på dagen eller din fysiska plats. Nätverket kan bli tilltäppt när vissa händelser uppstår som tar hänsyn till användningen av Internet, till exempel en natur katastrof eller en allmän offentlig händelse. Storleken på och komplexiteten hos den sida som laddas och antalet filer som överförs har en direkt påverkan på prestanda. En WiFi-anslutning kan tillfälligt sänkas: till exempel avsöker du ett stort konferens möte med tusentals samtal genom att begära alla till tweet samtidigt. 
+ **Vanliga problem** Förutom bandbredd och svarstid kan andra problem påverka nätverkets prestanda, och dessa är ofta oförutsägbara. Nätverkets prestanda kan variera beroende på tid på dagen eller din fysiska plats. Nätverket kan bli tilltäppt när vissa händelser inträffar som insamling av Internet, till exempel en naturhändelse eller en större offentlig händelse. Storleken på och komplexiteten hos den sida som läses in och antalet och storleken på filer som överförs har direkt inverkan på prestandan. En WiFi-anslutning kan tillfälligt försämras. Du kan till exempel rösta på ett stort konferensmöte med tusentals personer genom att be alla twittra till samtidigt. 
   
- **Överväganden för ett satellit nätverk** Ett satellit nät är användbart när ett land nät inte är genomförbart, till exempel ett bakre land, ett surfat fartyg eller ett vetenskapligt avancerat område. Dessa nätverk förlitar sig på satelliter som är placerade i en mitt synkrona bana 22 000 mil ovanför likställaren. Överföringen tar emellertid faktiskt ca 90 000 miles och så att ett satellit nät har en långsam fördröjning (500 ms eller mer) än ett land nät (20 till 50ms). Under de bästa förhållandena är det möjligt att du inte märker denna svars tid, men för att ladda ned stora filer, direktuppspelade videoklipp och spel spelas antagligen det. Ett annat problem är "regn toning" där tunga väder, till exempel thunderstorms och Blizzards, kan avbryta satellit sändningen tillfälligt.
+ **Överväganden för ett satellitnätverk** Ett satellitnätverk är användbart när det inte är möjligt att ha ett marknätverk, till exempel i det land där du ligger, på ett fartyg eller i ett fjärranslutet vetenskapligt område. Satellitnätverk är beroende av satelliter som ligger i ett geosynkront kretsande 22 000 km ovanför ekvatorn. En överföring färdas dock ca 344 800 km, och därför har ett satellitnätverk långsammare svarstid (500 ms eller mer) än ett marknätverk (20 till 50 ms). När villkoren är de bästa märker du kanske inte den här fördröjningen, men när du ska ladda ned stora filer, direktuppspela videor och spela spel gör du det förmodligen. Ett annat problem är att hårt väder, till exempel åskoningar och snöstormar, tillfälligt kan avbryta satellitöverföringen.
   
 ## <a name="are-you-sure-its-the-network"></a>Är du säker på att det är nätverket?
 
-När du får prestanda problem bör du först kontrol lera att din enhet inte orsakar problemet. Det finns två saker du kan göra för att göra en större förbättring:
+När du upplever prestandaproblem kontrollerar du först att det inte är enheten som är orsaken till problemet. Det finns två saker du kan göra som kan göra en stor förbättring:
   
-- Kontrol lera att din enhet är igång och att det inte finns någon skadlig program vara på datorn.
+- Kontrollera att enheten fungerar som den ska och att det inte finns någon skadlig programvara på datorn.
 
-- Köp om möjligt mer minne. Att lägga till minne är det enklaste och mest effektiva sättet att förbättra datorns prestanda. Det är särskilt användbart när du arbetar med stora filer och videor.
+- Köp mer minne om möjligt. Att lägga till minne är det enklaste och ofta mest effektiva sättet att förbättra prestandan på enheten. Det är särskilt användbart när du arbetar med stora filer och videor.
 
-Mer information finns i [ Windows-prestanda och-underhåll ](https://windows.microsoft.com/windows/performance-maintenance-help#performance-maintenance-help) och [tips för att förbättra datorns prestanda i Windows 10](https://support.microsoft.com/en-za/help/4002019/windows-10-improve-pc-performance).
+Mer information finns i Prestanda [och underhåll av Windows och](https://windows.microsoft.com/windows/performance-maintenance-help#performance-maintenance-help) Tips för att förbättra [datorns prestanda i Windows 10.](https://support.microsoft.com/en-za/help/4002019/windows-10-improve-pc-performance)
 
-## <a name="best-practices-for-using-your-browser"></a>Metod tips för att använda webbläsaren
+## <a name="best-practices-for-using-your-browser"></a>Metodtips för att använda webbläsaren
 
-Webbläsaren är din gateway för Office 365, så att den kan påverka prestanda, särskilt med den tid det tar att läsa in en sida och hur ofta du ska resa till Office 365-tjänsten.
+Webbläsaren är din gateway till Office 365, så den kan påverka prestandan, särskilt tiden det tar att läsa in en sida och hur ofta du förser med Office 365-tjänsten.
   
- **Webbläsare allmänt**
+ **Webbläsare i allmänhet**
   
 Här är några förslag för webbläsare i allmänhet:
   
-- Inaktivera tilläggs komponenter som kan påverka prestanda eller som du inte behöver.
+- Inaktivera webbläsartillägg som kan påverka prestandan eller som du inte verkligen behöver.
 
-- Öka cachestorleken för dina tillfälliga Internet-filer.
+- Öka cachestorleken för temporära Internetfiler.
 
-- När du har loggat in på ditt arbets-eller skol konto håller du webbläsarfönstret öppet under hela dagen. Du kan öppna andra flikar och fönster utan att logga in igen. Om du behöver logga in på ett annat konto kan du använda privat surfning. 
+- När du har loggat in på ditt arbets- eller skolkonto behåller du webbläsarfönstret öppet hela dagen. Du kan öppna andra flikar och fönster utan att logga in igen. Om du behöver logga in på ett annat konto använder du Privat surfning. 
 
-- När alla sidor har laddats ned och öppnats behåller du dem öppna med flikar. Det är enkelt att navigera mellan flikar och att använda sidan senare på dagen. Uppdatera endast en sida om du vill ha den senaste informationen på den sidan.
+- När varje sida har laddats ned och öppnats kan du hålla dem öppna med hjälp av flikar. Det är enkelt att navigera mellan flikar och använda sidan senare under dagen. Uppdatera en sida endast om du behöver den senaste informationen på sidan.
 
-- Om det tar för lång tid att öppna en sida stoppar du sid nedladdningen (tryck på ESC) och uppdaterar sidan (tryck på F5). 
+- Om det tar för lång tid att öppna en sida stoppar du nedladdningen av sidan (tryck på ESC) och uppdaterar sedan sidan (tryck på F5). 
 
--  Minska rund resan till Office 365 när det är möjligt. I stället för att bläddra igenom listor eller bibliotek kan du till exempel söka efter filer i ett stort bibliotek och filtrera i en lista för att få fram de resultat du vill. Du kan dessutom skapa vyer som minimerar sid inläsnings tid. Mer information finns i [hantera stora listor och bibliotek i Office 365](https://support.office.com/article/b4038448-ec0e-49b7-b853-679d3d8fb784#BKMK_PAGES).
+-  Dra ned på tur och retur till Office 365, om det går. I stället för att bläddra genom listor eller bibliotek kan du till exempel använda sökfunktionen för att hitta filer i ett stort bibliotek och filtrera listor så att du kommer direkt till de resultat du vill ha. Eller skapa vyer som minimerar inläsningstiden. Mer information finns i [Hantera stora listor och bibliotek i Office 365.](https://support.office.com/article/b4038448-ec0e-49b7-b853-679d3d8fb784#BKMK_PAGES)
 
-- Om video prestanda är dåligt kan du kanske Ladda ner videon och titta på den på enheten. En nedladdnings länk kan vara tillgänglig, eller så kan du högerklicka på video länken och välja **Spara mål som**.
+- Om videoprestandan är dålig kanske du kan ladda ned videon och titta på den på din enhet. Det kan finnas en nedladdningslänk eller så kan du kanske högerklicka på videolänken och välja **Spara mål som**.
 
- **Webbläsarbaserad**
+ **Specifika webbläsare**
   
-Här är några förslag för din specifika webbläsare:
+Här är några förslag för just din webbläsare:
   
-- **Internet Explorer** Uppgradera till Internet Explorer version 11 eller senare för att få avsevärda förbättringar av prestandan jämfört med tidigare versioner. Mer information finns i [fel söknings guide för Internet Explorer](https://support.microsoft.com/help/2437121/troubleshooting-guide-for-internet-explorer-when-you-access-office-365).
+- **Internet Explorer** Uppgradera till Internet Explorer version 11 eller senare för att få betydande prestandaförbättringar jämfört med tidigare versioner. Mer information finns i [Felsökningsguide för Internet Explorer.](https://support.microsoft.com/help/2437121/troubleshooting-guide-for-internet-explorer-when-you-access-office-365)
 
-- **Firefox** Mer information finns i så här [fungerar Firefox långsamt eller slutar fungera](https://support.mozilla.org/products/firefox/fix-problems/slowness-or-hanging).
+- **FireFox** Mer information finns i [Firefox är långsamt eller slutar fungera.](https://support.mozilla.org/products/firefox/fix-problems/slowness-or-hanging)
 
-- **Safari** Mer information finns i [Apple-Safari](https://www.apple.com/safari/).
+- **Safari** Mer information finns i [Apple – Safari](https://www.apple.com/safari/).
 
-- **Chrome** Mer information finns i [Hjälp för Chrome](https://support.google.com/chrome/?hl=en).
+- **Chrome** Mer information finns i [hjälpen till Chrome.](https://support.google.com/chrome/?hl=en)
   
-## <a name="best-practices-for-using-outlook-and-outlook-web-app"></a>Metod tips för att använda Outlook och Outlook Web App
+## <a name="best-practices-for-using-outlook-and-outlook-web-app"></a>Metodtips för att använda Outlook och Outlook Web App
 
-Att läsa, skriva och ordna e-post är en stor del av alla dagar. Både Outlook och Outlook Web App (OWA) ger stöd för offline-support. Att använda ett e-postprogram på din mobil telefon är ett annat användbart alternativ. Använd följande alternativ som bäst passar dina behov:
+Läsa, skriva och ordna e-post uppdelar en stor del av allas dagar. Både Outlook och Outlook Web App (OWA) har stöd offline. Ett annat bra alternativ är att använda ett e-postapp på en smartphone. Använd de alternativ som passar dina behov bäst:
   
-- Uppgradera till den senaste versionen av Outlook för att få avsevärda prestanda förbättringar jämfört med tidigare versioner. 
+- Uppgradera till den senaste versionen av Outlook för att få betydande prestandaförbättringar jämfört med tidigare versioner. 
 
--  Med Outlook Web App kan du skapa offline-meddelanden, kontakter och Kalender händelser som laddas upp när OWA kan ansluta till Office 365. Mer information om hur du konfigurerar och använder OWA i offlineläge finns i [använda Outlook Web App offline](https://support.office.com/article/3214839c-0604-4162-8a97-6856b4c27b36).
+-  Med Outlook Web App kan du skapa meddelanden, kontakter och kalenderhändelser offline som sedan överförs nästa gång OWA ansluter till Office 365. Mer information om hur du inställningar och använder OWA i offlineläge finns i [Använda Outlook Web App offline.](https://support.office.com/article/3214839c-0604-4162-8a97-6856b4c27b36)
 
-- I Outlook kan du arbeta i cachelagrat läge där det automatiskt ansluter när så är möjligt. Du kan låta Outlook Ladda ner hela post lådan eller bara en del av den. Mer information finns i [Aktivera cachelagrat Exchange-läge](https://support.office.com/article/7885af08-9a60-4ec3-850a-e221c1ed0c1c) och [arbeta offline i Outlook](https://support.office.com/article/f3a1251c-6dd5-4208-aef9-7c8c9522d633).
+- Med Outlook kan du arbeta i cachelagrat läge, där det automatiskt ansluts när det är möjligt. Du kan välja att Outlook ska ladda ned hela postlådan eller bara en del av den. Mer information finns i Aktivera [cachelagrat Exchange-läge](https://support.office.com/article/7885af08-9a60-4ec3-850a-e221c1ed0c1c) och [Arbeta offline i Outlook.](https://support.office.com/article/f3a1251c-6dd5-4208-aef9-7c8c9522d633)
 
-- Outlook erbjuder också ett offline-läge. För att använda detta måste du först aktivera cachelagrat läge så att informationen från ditt konto kopieras till datorn. I offline-läge försöker Outlook ansluta med inställningarna för skicka och ta emot, eller när du har angett att det ska fungera online. Mer information finns i [arbeta offline för att undvika data anslutnings avgifter](https://support.office.com/article/827fe51f-5609-4062-82b4-3578057f9282), [ändra inställningar för skicka och ta emot när du arbetar offline](https://support.office.com/article/f681ec10-cb14-40cb-8709-1909a13c304a)och [Växla från att arbeta offline till online](https://support.office.com/article/2460e4a8-16c7-47fc-b204-b1549275aac9).
+- Outlook har också ett offlineläge. Om du vill använda det måste du först ställa in cachelagrat läge så att information från ditt konto kopieras till datorn. I offlineläge försöker Outlook ansluta med hjälp av inställningarna för Skicka och ta emot, eller när du manuellt ställer in det för onlinearbete. Mer information finns i Arbeta offline för att undvika [dataanslutningsavgifter](https://support.office.com/article/827fe51f-5609-4062-82b4-3578057f9282), Ändra inställningar för att skicka och ta emot när du arbetar [offline](https://support.office.com/article/f681ec10-cb14-40cb-8709-1909a13c304a)och Växla från [att arbeta offline till online.](https://support.office.com/article/2460e4a8-16c7-47fc-b204-b1549275aac9)
 
-- Om du har en mobil telefon kan du använda den för att postsortering din e-post och kalender över operatörens nätverk.
+- Om du har en smartphone kan du använda den för att trija e-post och kalender över telefonioperatörens nätverk.
 
 > [!NOTE]
-> Här är några råd om när du ska använda Outlook eller OWA. Om det inte finns något problem på din enhet finns det en fullständig uppsättning funktioner och det passar bäst för dig. Om disk utrymmet är ett problem på din enhet bör du överväga att använda OWA som har en delmängd funktioner men fungerar bäst på ett online-läge. Du kan naturligtvis använda det på grund av att de fungerar bra tillsammans.
+> Här är några råd om när du kan använda Outlook eller OWA. Om diskutrymmet inte är ett problem på din enhet har Outlook en fullständig uppsättning funktioner och kanske fungerar bäst för dig. Om diskutrymmet är ett problem på din enhet kan du använda OWA som har en deluppsättning funktioner, men också fungerar bäst i en onlinesituation. Du kan naturligtvis använda båda eftersom de fungerar bra tillsammans.
   
-## <a name="best-practices-for-using-onedrive-for-business"></a>Metod tips för att använda OneDrive för företag
+## <a name="best-practices-for-using-onedrive-for-business"></a>Metodtips för att använda OneDrive för företag
 
-OneDrive för företag är utformat för att arbeta med dina filer online och offline. När du har konfigurerat det sker synkronisering av ändringar automatiskt och tillförlitligt var och när du gör dem. Om nätverket är långsamt kan du arbeta med offline-versionen av filerna.
+OneDrive för företag har utformats från grunden för att fungera tillsammans med dina filer online och offline. När du har ställt in det sker synkroniseringen av ändringar automatiskt och tillförlitligt var och när du än gör dem. Om nätverket är långsamt kan du arbeta med offlineversionen av filerna.
   
-Synkroniseringsprogrammet för OneDrive för företag innehåller en SharePoint Online-eller Office 365 Business-prenumeration, eller så kan du [Ladda ner](https://support.microsoft.com/kb/2903984) OneDrive för företag-synkroniseringsprogrammet gratis. Det här programmet är också snabbare än att använda kommandona **Öppna i Utforskaren** och **Ladda upp** . Mer information finns i [Konfigurera datorn för att synkronisera dina OneDrive för företag-filer i Office 365](https://support.office.com/article/23e1f12b-d896-4cb1-a238-f91d19827a16).
+OneDrive för företag-synkroniseringsappen levereras med en SharePoint Online- [](https://support.microsoft.com/kb/2903984) och Office 365 Business-prenumeration, eller så kan du ladda ned oneDrive för företag-synkroniseringsappen kostnadsfritt. Det här programmet går också snabbare än att använda **kommandona Öppna i Utforskaren** **eller Ladda** upp. Mer information finns i Konfigurera [datorn för att synkronisera OneDrive för företag-filer i Office 365.](https://support.office.com/article/23e1f12b-d896-4cb1-a238-f91d19827a16)
   
-Här är några ytterligare vägledningar för att använda synkroniseringsprogrammet för OneDrive för företag:
+Här är ytterligare vägledning för hur du använder synkroniseringsprogrammet för OneDrive för företag:
   
-- Om du synkroniserar ett stort bibliotek för första gången ska du börja synkronisera under tiden, till exempel över natten.
+- Om du synkroniserar ett stort bibliotek för första gången bör du starta synkroniseringen utanför arbetstid, till exempel över natten.
 
-- Du kan använda funktionen [stoppa synkronisering av ett bibliotek med appen OneDrive för företag](https://support.office.com/article/a7e41f1f-3a98-4ca7-9443-f10250688330) för att tillfälligt stoppa synkroniseringen av uppdateringar. Men Använd den här funktionen för korta perioder, till exempel ett par timmar i taget, för att undvika ett stort antal uppdateringar och för att minimera risken att slå samman konflikter om flera personer arbetar med samma dokument.
+- Du kan använda funktionen [Sluta synkronisera ett bibliotek med programfunktionen i OneDrive för](https://support.office.com/article/a7e41f1f-3a98-4ca7-9443-f10250688330) företag för att tillfälligt stoppa synkroniseringen av uppdateringar. Du bör emellertid bara använda den här funktionen under korta stunder, till exempel ett par timmar i taget, för att undvika köer av stora mängder uppdateringar och för att minimera risken för sammanslagningskonflikter om flera personer arbetar med samma dokument.
   
-## <a name="best-practices-for-using-onenote"></a>Metod tips för att använda OneNote
+## <a name="best-practices-for-using-onenote"></a>Metodtips för att använda OneNote
 
-Alla SharePoint-gruppwebbplatser har en inbyggd OneNote-anteckningsbok och du kan enkelt skapa din egen. OneNote är ett bra sätt att samla in information som du behöver varje dag för att få uppgifter gjorda. Många team använder till exempel OneNote som en samlings plats för vecko möten, projekt anteckningar, idéer, planer och status rapporter. Du kan strukturera denna information med hjälp av sidor, avsnitt och flikar.
+Alla SharePoint-gruppwebbplatser har en inbyggd OneNote-anteckningsbok och du kan enkelt skapa en egen. OneNote är ett bra sätt att samla information som du behöver varje dag för att få saker gjorda. Många grupper använder till exempel OneNote som en samlingspunkt för veckomöten, projektanteckningar, idéer, planer och statusrapporter. Du kan organisera alla dessa olika information med hjälp av sidor, avsnitt och flikar.
   
-Det fina med OneNote är att du kan komma åt innehållet från i stort sett vilken enhet som helst, oavsett om det är ett skriv bord, en bärbar dator, en surfplatta eller en mobil telefon. Men du behöver inte oroa dig för att spara eller synkronisera eftersom OneNote gör det åt dig.
+The beauty of OneNote is that you can access the content from praktiskt any device, whether a desktop, a laptop, a tablet, or a smart phone. Och du behöver inte tänka på att spara eller synkronisera eftersom OneNote gör det åt dig.
   
 Mer information finns i [Microsoft OneNote](https://office.microsoft.com/onenote).
 
-## <a name="best-practices-for-using-skype-for-business-and-lync-online"></a>Metod tips för Skype för företag och Lync Online
+## <a name="best-practices-for-using-skype-for-business-and-lync-online"></a>Metodtips för att använda Skype för företag och Lync Online
 
-Här följer allmänna rikt linjer för hur du använder Skype för företag eller Lync Online när nätverket är långsamt:
+Här följer allmänna riktlinjer för användning av Skype för företag eller Lync Online när nätverket är långsamt:
 
-- Använd snabb meddelanden när du kan på ett långsamt nätverk.
+- Använd snabbmeddelanden när du kan eftersom det fungerar bra på ett långsamt nätverk.
 
-- Undvik att ringa telefonsamtal via virtuella privata nätverk (VPN) eller RAS-anslutningar (fjärråtkomst).
+- Undvik att ringa telefonsamtal via ett virtuellt privat nätverk (VPN) eller ras-anslutningar (fjärråtkomst).
 
-- Kontrol lera att din ljuden het är godkänd. Mer information finns i [telefoner och enheter som är kvalificerade för Microsoft Lync](https://docs.microsoft.com/skypeforbusiness/lync-cert/ip-phones).
+- Kontrollera att ljudenheten är godkänd. Mer information finns i Telefoner [och enheter som är kvalificerade för Microsoft Lync.](/skypeforbusiness/lync-cert/ip-phones)
 
-- När du använder PowerPoint i en onlinepresentation kan du minska storleken och komplexiteten för bilderna. Mer information finns i [tips om hur du förbättrar presentationens prestanda](https://support.office.com/article/34c82835-5f23-4bf0-98cc-72235bbd2949).
+- När du använder PowerPoint i en onlinepresentation bör du minska bildernas storlek och komplexitet. Mer information finns i [Tips för bättre prestanda för presentationen.](https://support.office.com/article/34c82835-5f23-4bf0-98cc-72235bbd2949)
 
-- Video prestanda är beroende av nätverks prestanda. Undvik att använda video om nätverket är långsamt.
+- Videoprestandan är mycket beroende av nätverkets prestanda. Undvik att använda video om nätverket är långsamt.
 
-Mer information finns i [dålig ljud-eller video kvalitet i Lync Online](https://support.microsoft.com/kb/2386655)eller så här [felsöker du anslutnings problem i Skype för företag](https://support.office.com/article/troubleshoot-connection-issues-in-skype-for-business-ca302828-783f-425c-bbe2-356348583771).
+Mer information finns i Dålig [ljud- eller videokvalitet i Lync Online](https://support.microsoft.com/kb/2386655)eller felsöka [anslutningsproblem i Skype för företag.](https://support.office.com/article/troubleshoot-connection-issues-in-skype-for-business-ca302828-783f-425c-bbe2-356348583771)
   
-## <a name="best-practices-for-using-sharepoint-lists"></a>Metod tips för att använda SharePoint-listor
+## <a name="best-practices-for-using-sharepoint-lists"></a>Metodtips för att använda SharePoint-listor
 
-Att arbeta med listdata offline för att "svepa in", analysera eller rapportera data är ett bra sätt att minimera påverkan på långsamma nätverk. Du kan läsa och skriva de flesta listor från Microsoft Access 2019 och Microsoft Access 2016 genom att länka till dem. Du kan också exportera en lista till en Excel-tabell, som skapar en enkelriktad data anslutning mellan Excel-tabellen och listan. Lär dig hur du [arbetar offline med tabeller som är länkade till SharePoint-listor](https://support.office.com/article/work-offline-with-tables-that-are-linked-to-sharepoint-lists-5d66594a-6176-4a25-a198-320f13ccf41e).
+Att arbeta med listdata offline för att "rensa", analysera eller rapportera data är ett bra sätt att minimera påverkan på ett långsamt nätverk. Du kan läsa och skriva de flesta listor från Microsoft Access 2019 och Microsoft Access 2016 genom att länka till dem. Du kan också exportera en lista till en Excel-tabell, vilket skapar en envägsdataanslutning mellan Excel-tabellen och listan. Lär dig hur [du arbetar offline med tabeller som är länkade till SharePoint-listor.](https://support.office.com/article/work-offline-with-tables-that-are-linked-to-sharepoint-lists-5d66594a-6176-4a25-a198-320f13ccf41e)
   
-Mer information finns i avsnittet "mer om hur du hanterar stora listor" i [hantera stora listor och bibliotek i Office 365](https://support.office.com/article/b4038448-ec0e-49b7-b853-679d3d8fb784).
+Mer information finns i avsnittet "Mer information om hur du hanterar stora listor" i [Hantera stora listor och bibliotek i Office 365.](https://support.office.com/article/b4038448-ec0e-49b7-b853-679d3d8fb784)
   
-## <a name="best-practices-for-customizing-web-pages"></a>Metod tips för att anpassa webb sidor
+## <a name="best-practices-for-customizing-web-pages"></a>Metodtips för att anpassa webbsidor
 
-När du anpassar en webb sida kan du oavsiktligt orsaka dålig prestanda på sidan. Ett antal faktorer kan påverka storleken på sidan, till exempel hur många webb delar som läggs till, hur många listor eller biblioteks objekt som visas först och hur du kodar sidan.
+När du anpassar en webbsida kan du oavsiktligt orsaka dålig prestanda med sidan. Ett antal faktorer kan påverka, till exempel sidans komplexitet och storlek, hur många webbdelar som läggs till, hur många listor eller biblioteksobjekt som visas först och hur du kodar sidan.
   
-Mer information finns i [Justera SharePoint Online-prestanda](tune-sharepoint-online-performance.md).
+Mer information finns i Justera [SharePoint Online-prestanda.](tune-sharepoint-online-performance.md)
   
-## <a name="best-practices-for-using-project-online"></a>Metod tips för att använda Project Online
+## <a name="best-practices-for-using-project-online"></a>Metodtips för att använda Project Online
 
-Följande rikt linjer kan förbättra nätverks prestanda.
+Följande riktlinjer kan förbättra nätverkets prestanda.
   
-- Project Online och SharePoint Online kräver synkronisering, vilket kan vara tidsödande. Om dina projekt grupper har en liten omsättning kan du inaktivera synkronisering av projekt webbplats för att förbättra prestandan för projekt publicering och projekt information. Begränsa Active Directory-synkronisering till grupper av resurser som faktiskt behöver använda systemet och övervaka eventuella eventuella behörighets problem efter synkroniseringen av stora grupper.
+- Project Online och SharePoint Online kräver synkronisering, vilket kan ta lång tid. Om dina projektteam har låg omsättning kan du inaktivera synkroniseringen av Project-webbplatser för att förbättra prestandan för publicera projekt och projektinformationssidor. Begränsa Active Directory-synkroniseringen till de resursgrupper som verkligen behöver använda systemet och övervaka potentiella behörighetsproblem när stora grupper har synkroniserats.
 
-- Om din organisation använder Project-webbplatser kan du skapa dem på begäran istället för automatiskt. Detta påskyndar den första publicerings upplevelsen och undviker onödiga webbplatser och innehåll.
+- Om din organisation använder projektwebbplatser kan du skapa dem på begäran snarare än automatiskt. Det här gör att den första publiceringen går snabbare och att ni kan undvika att skapa webbplatser och innehåll i onödan.
 
-- Med projekt informations sidor (PDP) kan du utlösa en omberäkning av hela projektet och genomföra arbets flödes åtgärder, som båda kan vara prestanda intensiva. Undvik att utlösa två uppdaterings processer samtidigt på samma PDP genom att inte uppdatera kalender fälten (start datum, slutdatum, rapport datum och aktuellt datum) och icke-schemalagda fält (projekt namn, beskrivning och ägare).
+- Projektdetaljsidor (PDP) kan utlösa en omräkning av hela projektet och sätta igång arbetsflödesåtgärder, vilket båda kan vara prestandaintensiva åtgärder. Om du vill undvika att utlösa två uppdateringsprocesser samtidigt för samma PDP bör du undvika att uppdatera kalenderfälten (startdatum, slutdatum, rapportdatum och aktuellt datum) och fälten som inte är schemalagda (projektnamn, beskrivning och ägare).
 
-- Minska antalet webb delar och anpassade fält som visas i varje PDP. Skapa en dedikerad PDP med bara fält som kräver uppdatering för att förbättra belastningen och spara tid.
+- Minska antalet webbdelar och anpassade fält som visas på varje PDP. Skapa en dedikerad PDP med de enda fält som måste uppdateras för att förbättra inläsnings- och spartid.
 
-- När du använder OData för rapportering kan du begränsa mängden data du frågar efter genom att använda Server filter.
+- När du använder OData för rapportering kan du begränsa mängden data som du genomfrågar vid körningen med hjälp av filtrering på servern.
 
-Mer information finns i [Justera Project Online-prestanda](https://support.office.com/article/12ba0ebd-c616-42e5-b9b6-cad570e8409c).
+Mer information finns i Justera [Project Online-prestanda.](https://support.office.com/article/12ba0ebd-c616-42e5-b9b6-cad570e8409c)
   
 ## <a name="whats-the-best-way-to-report-problems"></a>Vilket är det bästa sättet att rapportera problem?
 
-Microsoft förbättrar kontinuerligt den allmänna prestandan hos Office 365 genom att övervaka nätverket, mäta bandbredd och fördröjning, öka sid inläsnings tiden, minska disk-I/O-omdesigna sidor för att använda minimal nedladdnings strategi, lägga till maskin vara i Data Center och lägga till fler data Center. Mer information om hur du kontrollerar aktuella status-och rapporterings problem finns i [så här kontrollerar du Office 365-tjänstens hälsa](view-service-health.md).
+Microsoft förbättrar kontinuerligt den övergripande prestandan i Office 365 genom att övervaka nätverket, mäta bandbredden och svarstiden, förbättra sidinläsningstiden, minska disk-I/O, omarbeta sidor för minimal nedladdningsstrategi, lägga till maskinvara på datacenter och lägga till fler datacenter. Mer information om hur du kontrollerar din aktuella status och rapporterar problem finns [i Så här kontrollerar du Office 365-tjänstens hälsa.](view-service-health.md)
   
 ## <a name="see-also"></a>Se även
 
 [Network planning and performance tuning for Office 365](network-planning-and-performance.md)
   
-[Principer för nätverks anslutning för Office 365](microsoft-365-network-connectivity-principles.md)
+[Office 365 principer för nätverksanslutningar](microsoft-365-network-connectivity-principles.md)
   
-[Hantera slut punkter för Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
+[Hantera Office 365-slutpunkter](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
-[Vanliga frågor om Office 365-slut punkter](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
- 
+[Office 365-slutpunkter – vanliga frågor och svar](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)

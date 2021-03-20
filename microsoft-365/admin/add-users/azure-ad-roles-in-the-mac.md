@@ -16,16 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Hantera dessa Azure-administratörsroller i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 7a4e28667bc16d6619fe87451cd48ea77d89c81d
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: b07174763384150a7ae8cda6709f5d0ec5cb40ec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126111"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904498"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Azure Active Directory-roller i administrationscentret för Microsoft 365
 
-I administrationscentret för Microsoft 365 kan du hantera över 30 Azure AD-roller. Dessa roller är bara en underuppsättning av rollerna som finns tillgängliga i Azure-portalen. Om du har ett stort företag kan det finnas roller i Microsoft Azure-portalen som uppfyller organisationens behov. Letar du efter de detaljerade rollbeskrivningarna för Azure Active Directory? Ta en titt på [Administratörens rollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+I administrationscentret för Microsoft 365 kan du hantera över 30 Azure AD-roller. Dessa roller är bara en underuppsättning av rollerna som finns tillgängliga i Azure-portalen. Om du har ett stort företag kan det finnas roller i Microsoft Azure-portalen som uppfyller organisationens behov. Letar du efter de detaljerade rollbeskrivningarna för Azure Active Directory? Ta en titt på [Administratörens rollbehörigheter i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 En användare som har tilldelats en administratörsroll får samma behörigheter till alla molntjänster som organisationen prenumererar på, oavsett om du tilldelar rollen i administrationscentret för Microsoft 365, i Azure-portalen eller med Azure AD-modulen för Windows PowerShell.
 
@@ -37,7 +37,7 @@ I Administrationscenter för Microsoft 365 går du till **Roller** och väljer s
 
 ## <a name="all-azure-ad-roles"></a>Alla Azure Active Directory-roller
 
-Här följer en lista över alla tillgängliga administratörsroller i administrationscentret för Microsoft 365. Letar du efter detaljerade rollbeskrivningar för Microsoft 365-administratörsrollerna? Se [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+Här följer en lista över alla tillgängliga administratörsroller i administrationscentret för Microsoft 365. Letar du efter detaljerade rollbeskrivningar för Microsoft 365-administratörsrollerna? Se [Om administratörsroller](./about-admin-roles.md?view=o365-worldwide).
 
 |Administratörsroll     |Beskrivning  |
 |---------|---------|
@@ -57,7 +57,7 @@ Här följer en lista över alla tillgängliga administratörsroller i administr
 |Exchange-administratör     |  Full tillgång till Exchange Online, skapar och hanterar grupper, hanterar tjänsteförfrågningar och övervakar tjänstens status.    |
 |Administratör för extern identitetsleverantör    |     Konfigurerar identitetsleverantörer för användning med direkt federering.    |
 |Global administratör     |    Har obegränsad åtkomst till alla hanteringsfunktioner och de flesta data i alla administrationscenter.     |
-|Global läsare     |    Har skrivskyddad åtkomst till alla hanteringsfunktioner och de flesta uppgifter i administrationscenter. En detaljerad beskrivning av behörighet och begränsningar för den här rollen finns i [administratörs behörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).    |
+|Global läsare     |    Har skrivskyddad åtkomst till alla hanteringsfunktioner och de flesta uppgifter i administrationscenter. En detaljerad beskrivning av behörighet och begränsningar för den här rollen finns i [administratörs behörigheter i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).    |
 |Grupper-administratör   |Skapar grupper och hanterar alla Grupper-inställningar i olika administrationscenter.|
 |Gästinbjudare     |    Hanterar Azure Active Directory B2B-inbjudningar till gästanvändare.     |
 |Supportadministratör     | Återställer lösenord och omautentiseringar för alla icke-administratörer och vissa administratörsroller, hanterar tjänsteförfrågningar och övervakar tjänstens status.      |
@@ -99,7 +99,7 @@ Ett partnerföretag kan tilldela följande roller:
 
 - Begränsad administration, som har samma behörigheter som en supportadministratör.
 
-För att partnerföretaget ska kunna tilldela de här rollerna till användare måste du lägga till partnern som delegerad administratör i kontot. Initiativet till en sådan här process tas av en auktoriserad partner. Partnern skickar ett e-postmeddelande till dig med frågan om du vill ge dem behörighet att fungera som delegerad administratör. Anvisningar finns i [Auktorisera eller ta bort partnerrelationer](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
+För att partnerföretaget ska kunna tilldela de här rollerna till användare måste du lägga till partnern som delegerad administratör i kontot. Initiativet till en sådan här process tas av en auktoriserad partner. Partnern skickar ett e-postmeddelande till dig med frågan om du vill ge dem behörighet att fungera som delegerad administratör. Anvisningar finns i [Auktorisera eller ta bort partnerrelationer](../misc/add-partner.md).
   
 ## <a name="related-articles"></a>Relaterade artiklar
 

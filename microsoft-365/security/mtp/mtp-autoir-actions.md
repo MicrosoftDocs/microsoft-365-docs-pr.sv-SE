@@ -1,6 +1,6 @@
 ---
-title: Godkänna eller avvisa väntande åtgärder efter en automatiserad undersökning
-description: Använda Åtgärdscenter för att hantera åtgärder relaterade till automatiserad undersökning och svar
+title: Visa och hantera åtgärder i Åtgärdscenter
+description: Använda Åtgärdscenter för att visa och hantera åtgärdsåtgärder
 keywords: åtgärd, center, autoair, automatiserad, undersökning, svar, åtgärd
 search.appverid: met150
 ms.prod: m365-security
@@ -17,19 +17,19 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 12/09/2020
+ms.date: 01/29/2021
 ms.technology: m365d
-ms.openlocfilehash: 3776dea4a5a24f4695a5c617325af14f1f03494f
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: fe2c3d4112663b4046a9d503aefc45f832c6c143
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930384"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50917110"
 ---
-# <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>Godkänna eller avvisa väntande åtgärder efter en automatiserad undersökning
+# <a name="view-and-manage-actions-in-the-action-center"></a>Visa och hantera åtgärder i Åtgärdscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,35 +37,28 @@ ms.locfileid: "49930384"
 **Gäller för:**
 - Microsoft 365 Defender
 
-När en automatiserad undersökning körs kan det resultera i en eller [flera åtgärder](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) som kräver godkännande för att fortsätta. Till exempel kan ett kluster av e-postmeddelanden behöva tas bort eller så kan en karantänfil behöva tas bort. Det är viktigt att godkänna (eller avvisa) väntande åtgärder så snart som möjligt så att automatiserade undersökningar kan fortsätta och slutföras i tid. 
-
-> [!TIP]
-> Om du tror att något har missats eller identifierats felaktigt av en automatiserad undersökning och svarsfunktioner i Microsoft 365 Defender, berätta det för oss! Se hur du rapporterar falska positiva/negativa tal i automatisk undersökning och [svarsfunktioner (AIR) i Microsoft 365 Defender.](mtp-autoir-report-false-positives-negatives.md)
-
-Väntande åtgärder kan granskas och godkännas med hjälp av [åtgärdscenter](#review-a-pending-action-in-the-action-center) eller [vyn med undersökningsinformation.](#review-a-pending-action-in-the-investigation-details-view)
+Skyddsfunktioner i Microsoft 365 Defender kan resultera i vissa åtgärder. Här är några exempel:
+- [Automatiserade undersökningar](mtp-autoir.md) kan resultera i åtgärder som vidtas automatiskt eller väntar på godkännande.
+- Antivirusprogram, program mot skadlig programvara och andra skyddsfunktioner mot hot kan resultera i åtgärder som att blockera en fil, url eller process, eller skicka en artefakt till karantän.
+- Ditt team för säkerhetsåtgärder kan vidta åtgärder manuellt, till exempel [under](advanced-hunting-overview.md) avancerad sökning eller under undersökning [av aviseringar](investigate-alerts.md) eller [incidenter.](investigate-incidents.md)
 
 > [!NOTE]
-> Du måste ha [tillräcklig behörighet](mtp-action-center.md#required-permissions-for-action-center-tasks) för att godkänna eller avvisa åtgärder. Mer information finns i [Förutsättningarna för automatisk undersökning och svar i Microsoft 365 Defender.](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
+> Du måste ha [tillräcklig behörighet](mtp-action-center.md#required-permissions-for-action-center-tasks) för att godkänna eller avvisa åtgärder. Mer information finns i Krav [för automatiserad undersökning och svar i Microsoft 365 Defender.](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
 
-## <a name="review-a-pending-action-in-the-action-center"></a>Granska en väntande åtgärd i Åtgärdscenter
+## <a name="review-pending-actions-in-the-action-center"></a>Granska väntande åtgärder i Åtgärdscenter
+
+Det är viktigt att godkänna (eller avvisa) väntande åtgärder så snart som möjligt så att de automatiska undersökningarna kan fortsätta och slutföras i tid. 
+
+![Godkänna eller avvisa en åtgärd](../../media/air-actioncenter-itemselected.png)
 
 1. Gå till [https://security.microsoft.com](https://security.microsoft.com) och logga in. 
-
 2. Välj Åtgärdscenter i **navigeringsfönstret.** 
-
-3. Markera ett objekt i listan på **fliken** Väntande i Åtgärdscenter. 
-
-    - Om du väljer ett objekt i **kolumnen Undersökningsnummer** öppnas sidan undersökningsinformation. Där kan du visa resultatet av undersökningen och sedan godkänna eller avvisa den rekommenderade åtgärden.
- 
-    - Om du markerar en rad i listan öppnas en utfällig meny där du kan visa information om objektet. <br/>![Godkänna eller avvisa en åtgärd](../../media/air-actioncenter-itemselected.png)<br/>Använd länkarna för att visa en associerad varning eller undersökning och godkänn eller avvisa åtgärden.
-
-## <a name="review-a-pending-action-in-the-investigation-details-view"></a>Granska en väntande åtgärd i vyn med undersökningsinformation
-
-![Undersökningsinformation](../../media/mtp-air-investdetails.png)
-
-1. På en [sida med undersökningsinformation](mtp-autoir-results.md) väljer du **fliken Väntande åtgärder** **(eller** Åtgärder). Objekt som väntar på godkännande visas här.
-
-2. Markera ett objekt i listan och välj sedan **Godkänn** eller **Avvisa.**
+3. Välj ett objekt i **listan på fliken** Väntande i Åtgärdscenter. Den utfällna rutan öppnas.
+4. Granska informationen i det utfällfönster som visas och gör sedan något av följande:
+   - Välj **Sidan Öppna undersökning** om du vill visa mer information om undersökningen.
+   - Välj **Godkänn** för att påbörja en väntande åtgärd.
+   - Välj **Avvisa** för att förhindra att en väntande åtgärd vidtas.
+   - Välj **Sök för** att gå till Avancerad [sökning](advanced-hunting-overview.md). 
 
 ## <a name="undo-completed-actions"></a>Ångra slutförda åtgärder
 
@@ -75,23 +68,25 @@ Om du har fastställt att en enhet eller en fil inte är ett hot kan du ångra �
 |:---|:---|
 | - Automatiserad undersökning <br/>- Microsoft Defender Antivirus <br/>- Manuella svarsåtgärder | - Isolera enhet <br/>- Begränsa kodkörning <br/>- Sätt en fil i karantän <br/>- Ta bort en registernyckel <br/>- Stoppa en tjänst <br/>- Inaktivera en drivrutin <br/>- Ta bort en schemalagd aktivitet |
 
-### <a name="to-undo-a-remediation-action"></a>Ångra en åtgärdsåtgärd
+### <a name="undo-one-remediation-action"></a>Ångra en åtgärd
 
-1. Gå till Åtgärdscenter [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () och logga in.
+1. Gå till Åtgärdscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) och logga in.
+2. Välj **en åtgärd** som du vill ångra på fliken Historik.
+3. I fönstret till höger på skärmen väljer du **Ångra**.
 
-2. Välj en **åtgärd** som du vill ångra på fliken Historik.
+### <a name="undo-multiple-remediation-actions"></a>Ångra flera åtgärder
 
-3. Välj Ångra i fönstret till höger på **skärmen.**
+1. Gå till Åtgärdscenter https://security.microsoft.com/action-center) (och logga in).
+2. Markera **de åtgärder** du vill ångra på fliken Historik. Se till att markera objekt som har samma åtgärdstyp. Ett utfällt fönster öppnas.
+3. Välj Ångra i den utfällade **rutan.**
 
 ### <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>Ta bort en fil från karantän på flera enheter 
 
-1. Gå till Åtgärdscenter [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () och logga in.
-
-2. Välj en **fil** som har karantänfilen åtgärdstyp på fliken **Historik.**
-
-3. I fönstret till höger på skärmen väljer du Använd för **fler X-förekomster** av den här filen och sedan **Ångra.**
+1. Gå till Åtgärdscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) och logga in.
+2. På fliken **Historik** väljer du en fil som har karantänfilen **Åtgärdstyp.**
+3. I fönstret till höger på skärmen väljer du Använd för **fler X-instanser** av den här filen och sedan **Ångra**.
 
 ## <a name="next-steps"></a>Nästa steg
 
 - [Visa information och resultat från en automatiserad undersökning](mtp-autoir-results.md)
-- [Hantera falska positiva/negativa tal i automatisk undersökning och svarsfunktioner](mtp-autoir-report-false-positives-negatives.md)
+- [Lär dig hur du hanterar falska positiva/negativa tal (om du får ett)](mtp-autoir-report-false-positives-negatives.md)
