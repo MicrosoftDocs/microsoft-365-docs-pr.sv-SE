@@ -22,17 +22,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
-description: Lär dig att konfigurera och använda Microsoft 365 på din dator, telefon och surfplatta.
-ms.openlocfilehash: 437e644190017a0031d7c91d239f5b4f0a8d3773
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+description: Lär dig att konfigurera och använda Microsoft 365 på en dator, telefon eller surfplatta.
+ms.openlocfilehash: 8df5170190a464c71030c938be61df591032c45c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142079"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906294"
 ---
-# <a name="get-started"></a><span data-ttu-id="686fa-103">Komma igång</span><span class="sxs-lookup"><span data-stu-id="686fa-103">Get started</span></span>
+# <a name="get-started"></a><span data-ttu-id="8010c-103">Komma igång</span><span class="sxs-lookup"><span data-stu-id="8010c-103">Get started</span></span>
 
-<span data-ttu-id="686fa-104">Din organisation har nyligen fått Microsoft 365, och nu behöver du använda det så att du kan börja läsa e-post, dela dokument med mera.</span><span class="sxs-lookup"><span data-stu-id="686fa-104">Your organization recently got Microsoft 365, and now you need to use it so you can start reading email, sharing documents, and more.</span></span> <span data-ttu-id="686fa-105">Lär dig att konfigurera och använda Microsoft 365 på din dator, telefon och surfplatta.</span><span class="sxs-lookup"><span data-stu-id="686fa-105">Learn how to set up and use Microsoft 365 on your computer, phone, and tablet.</span></span>
+<span data-ttu-id="8010c-104">Din organisation har just fått Microsoft 365, och nu behöver du använda det så att du kan börja läsa e-post, dela dokument med mera.</span><span class="sxs-lookup"><span data-stu-id="8010c-104">Your organization recently got Microsoft 365, and now you need to use it so you can start reading email, sharing documents, and more.</span></span> <span data-ttu-id="8010c-105">Lär dig att konfigurera och använda Microsoft 365 på en dator, telefon eller surfplatta.</span><span class="sxs-lookup"><span data-stu-id="8010c-105">Learn how to set up and use Microsoft 365 on your computer, phone, and tablet.</span></span>
   
 ::: moniker range="o365-worldwide"
 
@@ -41,30 +41,29 @@ ms.locfileid: "50142079"
 
 ::: moniker-end
 
-## <a name="training-resources-for-your-users"></a><span data-ttu-id="686fa-106">Utbildningsresurser för dina användare</span><span class="sxs-lookup"><span data-stu-id="686fa-106">Training resources for your users</span></span>
+## <a name="training-resources-for-your-users"></a><span data-ttu-id="8010c-106">Utbildningsresurser för dina användare</span><span class="sxs-lookup"><span data-stu-id="8010c-106">Training resources for your users</span></span>
 
 
-- [<span data-ttu-id="686fa-107">Snabbstartsguide för anställda</span><span class="sxs-lookup"><span data-stu-id="686fa-107">Employee quick start</span></span>](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f)
+- [<span data-ttu-id="8010c-107">Snabbstartsguide för anställda</span><span class="sxs-lookup"><span data-stu-id="8010c-107">Employee quick start</span></span>](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f)
     
-- [<span data-ttu-id="686fa-108">Utbildningscenter för Office</span><span class="sxs-lookup"><span data-stu-id="686fa-108">Office Training Center</span></span>](https://support.microsoft.com/office/b8f02f81-ec85-4493-a39b-4c48e6bc4bfb)
+- [<span data-ttu-id="8010c-108">Utbildningscenter för Office</span><span class="sxs-lookup"><span data-stu-id="8010c-108">Office Training Center</span></span>](https://support.microsoft.com/office/b8f02f81-ec85-4493-a39b-4c48e6bc4bfb)
     
-- [<span data-ttu-id="686fa-109">Så här loggar du in</span><span class="sxs-lookup"><span data-stu-id="686fa-109">Where to sign in</span></span>](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
+- [<span data-ttu-id="8010c-109">Så här loggar du in</span><span class="sxs-lookup"><span data-stu-id="8010c-109">Where to sign in</span></span>](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
     
-- [<span data-ttu-id="686fa-110">Installera Office på en PC eller Mac</span><span class="sxs-lookup"><span data-stu-id="686fa-110">Install Office on your PC or Mac</span></span>](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
+- [<span data-ttu-id="8010c-110">Installera Office på en PC eller Mac</span><span class="sxs-lookup"><span data-stu-id="8010c-110">Install Office on your PC or Mac</span></span>](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
     
-- [<span data-ttu-id="686fa-111">Mobilkonfiguration</span><span class="sxs-lookup"><span data-stu-id="686fa-111">Mobile setup</span></span>](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)
+- [<span data-ttu-id="8010c-111">Mobilkonfiguration</span><span class="sxs-lookup"><span data-stu-id="8010c-111">Mobile setup</span></span>](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)
     
-## <a name="training-resources-for-you-the-admin"></a><span data-ttu-id="686fa-112">Utbildningsresurser för dig som är administratör</span><span class="sxs-lookup"><span data-stu-id="686fa-112">Training resources for you, the admin</span></span>
+## <a name="training-resources-for-you-the-admin"></a><span data-ttu-id="8010c-112">Utbildningsresurser för dig som är administratör</span><span class="sxs-lookup"><span data-stu-id="8010c-112">Training resources for you, the admin</span></span>
 
-<span data-ttu-id="686fa-113">Här är några resurser som hjälper dig att komma igång.</span><span class="sxs-lookup"><span data-stu-id="686fa-113">Here are some resources to help you get started.</span></span>
+<span data-ttu-id="8010c-113">Här är några resurser som hjälper dig att komma igång.</span><span class="sxs-lookup"><span data-stu-id="8010c-113">Here are some resources to help you get started.</span></span>
   
-- <span data-ttu-id="686fa-114">[Utbildning för administratörer:](https://docs.microsoft.com/microsoft-365/admin)Få länkar till kostnadsfria onlinelektioner för administratörer.</span><span class="sxs-lookup"><span data-stu-id="686fa-114">[Training for admins](https://docs.microsoft.com/microsoft-365/admin): Get links to free online classes for admins.</span></span>
+- <span data-ttu-id="8010c-114">[Utbildning för administratörer](../index.yml): Få länkar till kostnadsfria onlinelektioner för administratörer.</span><span class="sxs-lookup"><span data-stu-id="8010c-114">[Training for admins](../index.yml): Get links to free online classes for admins.</span></span>
     
-- <span data-ttu-id="686fa-115">[Administratörshjälp:](https://docs.microsoft.com/microsoft-365/admin/admin-home)Få information om vanliga uppgifter, komma igång med administrationsverktyg och felsökningsproblem.</span><span class="sxs-lookup"><span data-stu-id="686fa-115">[Admin Help](https://docs.microsoft.com/microsoft-365/admin/admin-home): Get info about top tasks, getting started with admin tools, and troubleshooting problems.</span></span>
+- <span data-ttu-id="8010c-115">[Hjälp för](./admin-overview.md)administratörer: Få information om vanliga uppgifter, komma igång med administrationsverktyg och felsöka problem.</span><span class="sxs-lookup"><span data-stu-id="8010c-115">[Admin Help](./admin-overview.md): Get info about top tasks, getting started with admin tools, and troubleshooting problems.</span></span>
     
-- <span data-ttu-id="686fa-116">[Kontakta support – hjälp för administratörer:](../contact-support-for-business-products.md) Ring oss, öppna en onlinebegäran eller låt communityn hjälpa dig.</span><span class="sxs-lookup"><span data-stu-id="686fa-116">[Contact support - Admin Help](../contact-support-for-business-products.md) : Call us, open an online request, or let the community help.</span></span> 
+- <span data-ttu-id="8010c-116">[Kontakta supporten – hjälp för](../contact-support-for-business-products.md) administratörer: Ring oss, öppna en onlinebegäran eller låt communityn hjälpa dig.</span><span class="sxs-lookup"><span data-stu-id="8010c-116">[Contact support - Admin Help](../contact-support-for-business-products.md) : Call us, open an online request, or let the community help.</span></span> 
     
-## <a name="related-articles"></a><span data-ttu-id="686fa-117">Relaterade artiklar</span><span class="sxs-lookup"><span data-stu-id="686fa-117">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="8010c-117">Relaterade artiklar</span><span class="sxs-lookup"><span data-stu-id="8010c-117">Related articles</span></span>
 
-[<span data-ttu-id="686fa-118">Konfigurera Microsoft 365 för företag – hjälp för administratörer</span><span class="sxs-lookup"><span data-stu-id="686fa-118">Set up Microsoft 365 for business - Admin Help</span></span>](../setup/setup.md)
-
+[<span data-ttu-id="8010c-118">Konfigurera Microsoft 365 för företag – hjälp för administratörer</span><span class="sxs-lookup"><span data-stu-id="8010c-118">Set up Microsoft 365 for business - Admin Help</span></span>](../setup/setup.md)
