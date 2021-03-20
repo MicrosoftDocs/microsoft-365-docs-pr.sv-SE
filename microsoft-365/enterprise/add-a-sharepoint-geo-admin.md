@@ -11,57 +11,57 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: Behöver du konfigurera separata administratörer för varje Geo-plats? Lär dig hur du lägger till eller tar bort en geo-administratör i Microsoft 365 multi-geo.
+description: Behöver du konfigurera separata administratörer för varje geoplats? Lär dig hur du lägger till eller tar bort en geoadministratör i Microsoft 365 Multi-Geo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9a3d916bfec2c53850f923fb5322298e9ff440ca
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 32fe5e934e6a3d6f18c802c3c427974e67c1b454
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694895"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905614"
 ---
-# <a name="add-or-remove-a-geo-administrator-in-microsoft-365-multi-geo"></a><span data-ttu-id="0a854-104">Lägga till eller ta bort en geo-administratör i Microsoft 365 multi-geo</span><span class="sxs-lookup"><span data-stu-id="0a854-104">Add or remove a geo administrator in Microsoft 365 Multi-Geo</span></span>
+# <a name="add-or-remove-a-geo-administrator-in-microsoft-365-multi-geo"></a><span data-ttu-id="9454f-104">Lägga till eller ta bort en geoadministratör i Microsoft 365 Multi-Geo</span><span class="sxs-lookup"><span data-stu-id="9454f-104">Add or remove a geo administrator in Microsoft 365 Multi-Geo</span></span>
 
-<span data-ttu-id="0a854-105">Du kan konfigurera separata administratörer för varje Geo-plats som du har i klient organisationen.</span><span class="sxs-lookup"><span data-stu-id="0a854-105">You can configure separate administrators for each geo location that you have in your tenant.</span></span> <span data-ttu-id="0a854-106">Dessa administratörer kommer att ha åtkomst till SharePoint Online-och OneDrive-inställningarna som är specifika för deras Geo-plats.</span><span class="sxs-lookup"><span data-stu-id="0a854-106">These administrators will have access to the SharePoint Online and OneDrive settings that are specific to their geo location.</span></span>
+<span data-ttu-id="9454f-105">Du kan konfigurera separata administratörer för varje geoplats som du har i klientorganisationen.</span><span class="sxs-lookup"><span data-stu-id="9454f-105">You can configure separate administrators for each geo location that you have in your tenant.</span></span> <span data-ttu-id="9454f-106">De här administratörerna har åtkomst till SharePoint Online- och OneDrive-inställningar som är specifika för deras geoplats.</span><span class="sxs-lookup"><span data-stu-id="9454f-106">These administrators will have access to the SharePoint Online and OneDrive settings that are specific to their geo location.</span></span>
 
-<span data-ttu-id="0a854-107">Vissa tjänster-till exempel term lagrings platsen-administreras från central plats och replikeras till satellit platser.</span><span class="sxs-lookup"><span data-stu-id="0a854-107">Some services - such as the term store - are administered from the central location and replicated to satellite locations.</span></span> <span data-ttu-id="0a854-108">Geo-administratören för den centrala platsen har till gång till dessa, medan geo-administratörer för satellit platser inte gör det.</span><span class="sxs-lookup"><span data-stu-id="0a854-108">The geo admin for the central location has access to these, whereas geo admins for satellite locations don't.</span></span>
+<span data-ttu-id="9454f-107">Vissa tjänster, till exempel termlager, administreras från den centrala platsen och replikeras till satellitplatser.</span><span class="sxs-lookup"><span data-stu-id="9454f-107">Some services - such as the term store - are administered from the central location and replicated to satellite locations.</span></span> <span data-ttu-id="9454f-108">Geoadministratören för den centrala platsen har åtkomst till dessa, men geoadministratörer för satellitplatser har det inte.</span><span class="sxs-lookup"><span data-stu-id="9454f-108">The geo admin for the central location has access to these, whereas geo admins for satellite locations don't.</span></span>
 
-<span data-ttu-id="0a854-109">Globala administratörer och SharePoint Online-administratörer fortsätter att ha åtkomst till inställningar på Central platsen och alla satellit platser.</span><span class="sxs-lookup"><span data-stu-id="0a854-109">Global administrators and SharePoint Online administrators continue to have access to settings in the central location and all satellite locations.</span></span>
+<span data-ttu-id="9454f-109">Globala administratörer och SharePoint Online-administratörer har fortsatt åtkomst till inställningar på den centrala platsen och alla satellitplatser.</span><span class="sxs-lookup"><span data-stu-id="9454f-109">Global administrators and SharePoint Online administrators continue to have access to settings in the central location and all satellite locations.</span></span>
 
-## <a name="configuring-geo-administrators"></a><span data-ttu-id="0a854-110">Konfigurera geo-administratörer</span><span class="sxs-lookup"><span data-stu-id="0a854-110">Configuring geo administrators</span></span>
+## <a name="configuring-geo-administrators"></a><span data-ttu-id="9454f-110">Konfigurera geoadministratörer</span><span class="sxs-lookup"><span data-stu-id="9454f-110">Configuring geo administrators</span></span>
 
-<span data-ttu-id="0a854-111">Konfigurering av Geo administratörer kräver PowerShell-modulen för SharePoint Online.</span><span class="sxs-lookup"><span data-stu-id="0a854-111">Configuring geo admins requires SharePoint Online PowerShell module.</span></span>
+<span data-ttu-id="9454f-111">För att du ska kunna konfigurera geoadministratörer måste du ha SharePoint Online PowerShell-modulen.</span><span class="sxs-lookup"><span data-stu-id="9454f-111">Configuring geo admins requires SharePoint Online PowerShell module.</span></span>
 
-<span data-ttu-id="0a854-112">Använd [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/Connect-SPOService) för att ansluta till administrations centret för den Geo-plats där du vill lägga till geo-administratören. (Till exempel Connect-SPOService  https://ContosoEUR-admin.sharepoint.com.)</span><span class="sxs-lookup"><span data-stu-id="0a854-112">Use [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/Connect-SPOService) to connect to the admin center of the geo location where you want to add the geo admin. (For example, Connect-SPOService  https://ContosoEUR-admin.sharepoint.com.)</span></span>
+<span data-ttu-id="9454f-112">Använd [Connect-SPOService](/powershell/module/sharepoint-online/Connect-SPOService) för att ansluta till administrationscentret på den geoplats där du vill lägga till geoadministratören. (Till exempel Connect-SPOService  https://ContosoEUR-admin.sharepoint.com.)</span><span class="sxs-lookup"><span data-stu-id="9454f-112">Use [Connect-SPOService](/powershell/module/sharepoint-online/Connect-SPOService) to connect to the admin center of the geo location where you want to add the geo admin. (For example, Connect-SPOService  https://ContosoEUR-admin.sharepoint.com.)</span></span>
 
-<span data-ttu-id="0a854-113">Om du vill visa befintliga geo-administratörer på en plats kör du `Get-SPOGeoAdministrator`</span><span class="sxs-lookup"><span data-stu-id="0a854-113">To view the existing geo admins of a location, run `Get-SPOGeoAdministrator`</span></span>
+<span data-ttu-id="9454f-113">Om du vill visa befintliga geoadministratörer för en plats kör du `Get-SPOGeoAdministrator`</span><span class="sxs-lookup"><span data-stu-id="9454f-113">To view the existing geo admins of a location, run `Get-SPOGeoAdministrator`</span></span>
 
-### <a name="adding-a-user-as-a-geo-admin"></a><span data-ttu-id="0a854-114">Lägga till en användare som geo-administratör</span><span class="sxs-lookup"><span data-stu-id="0a854-114">Adding a user as a geo admin</span></span>
+### <a name="adding-a-user-as-a-geo-admin"></a><span data-ttu-id="9454f-114">Lägga till en användare som geoadministratör</span><span class="sxs-lookup"><span data-stu-id="9454f-114">Adding a user as a geo admin</span></span>
 
-<span data-ttu-id="0a854-115">Om du vill lägga till en användare som geo-administratör kör du `Add-SPOGeoAdministrator -UserPrincipalName <UPN>`</span><span class="sxs-lookup"><span data-stu-id="0a854-115">To add a user as a geo admin, run `Add-SPOGeoAdministrator -UserPrincipalName <UPN>`</span></span>
+<span data-ttu-id="9454f-115">Om du vill lägga till en användare som geoadministratör kör du `Add-SPOGeoAdministrator -UserPrincipalName <UPN>`</span><span class="sxs-lookup"><span data-stu-id="9454f-115">To add a user as a geo admin, run `Add-SPOGeoAdministrator -UserPrincipalName <UPN>`</span></span>
 
-<span data-ttu-id="0a854-116">Om du vill ta bort en användare som geo-administratör på en plats kör du  `Remove-SPOGeoAdministrator -UserPrincipalName <UPN>`</span><span class="sxs-lookup"><span data-stu-id="0a854-116">To remove a user as a Geo Admin of a location, run  `Remove-SPOGeoAdministrator -UserPrincipalName <UPN>`</span></span>
+<span data-ttu-id="9454f-116">Om du vill ta bort en användare som geoadministratör för en plats kör du  `Remove-SPOGeoAdministrator -UserPrincipalName <UPN>`</span><span class="sxs-lookup"><span data-stu-id="9454f-116">To remove a user as a Geo Admin of a location, run  `Remove-SPOGeoAdministrator -UserPrincipalName <UPN>`</span></span>
 
-### <a name="adding-a-group-as-a-geo-admin"></a><span data-ttu-id="0a854-117">Lägga till en grupp som geo-administratör</span><span class="sxs-lookup"><span data-stu-id="0a854-117">Adding a group as a geo admin</span></span>
+### <a name="adding-a-group-as-a-geo-admin"></a><span data-ttu-id="9454f-117">Lägga till en grupp som geoadministratör</span><span class="sxs-lookup"><span data-stu-id="9454f-117">Adding a group as a geo admin</span></span>
 
-<span data-ttu-id="0a854-118">Du kan lägga till en säkerhets grupp eller en e-postaktiverad säkerhets grupp som geo-administratör. (Distributions grupper och Microsoft 365-grupper stöds inte.)</span><span class="sxs-lookup"><span data-stu-id="0a854-118">You can add a security group or a mail-enabled security group as a geo admin. (Distribution groups and Microsoft 365 Groups are not supported.)</span></span>
+<span data-ttu-id="9454f-118">Du kan lägga till en säkerhetsgrupp eller en e-postaktiverad säkerhetsgrupp som geoadministratör. (Distributionsgrupper och Microsoft 365-grupper stöds inte.)</span><span class="sxs-lookup"><span data-stu-id="9454f-118">You can add a security group or a mail-enabled security group as a geo admin. (Distribution groups and Microsoft 365 Groups are not supported.)</span></span>
 
-<span data-ttu-id="0a854-119">Om du vill lägga till en grupp som geo-administratör kör du `Add-SPOGeoAdministrator -GroupAlias <alias>`</span><span class="sxs-lookup"><span data-stu-id="0a854-119">To add a group as a geo administrator, run `Add-SPOGeoAdministrator -GroupAlias <alias>`</span></span>
+<span data-ttu-id="9454f-119">Om du vill lägga till en grupp som geoadministratör kör du `Add-SPOGeoAdministrator -GroupAlias <alias>`</span><span class="sxs-lookup"><span data-stu-id="9454f-119">To add a group as a geo administrator, run `Add-SPOGeoAdministrator -GroupAlias <alias>`</span></span>
 
-<span data-ttu-id="0a854-120">Om du vill ta bort en grupp som geo-administratör kör du `Remove-SPOGeoAdministrator -GroupAlias <alias>`</span><span class="sxs-lookup"><span data-stu-id="0a854-120">To remove a group as a geo administrator, run `Remove-SPOGeoAdministrator -GroupAlias <alias>`</span></span>
+<span data-ttu-id="9454f-120">Om du vill ta bort en grupp som geoadministratör kör du `Remove-SPOGeoAdministrator -GroupAlias <alias>`</span><span class="sxs-lookup"><span data-stu-id="9454f-120">To remove a group as a geo administrator, run `Remove-SPOGeoAdministrator -GroupAlias <alias>`</span></span>
 
-<span data-ttu-id="0a854-121">Observera att inte alla säkerhets grupper har ett gruppalias.</span><span class="sxs-lookup"><span data-stu-id="0a854-121">Note that not all security groups have a group alias.</span></span> <span data-ttu-id="0a854-122">Om du vill lägga till en säkerhets grupp som inte har ett alias kör du [Get-MsolGroup](https://docs.microsoft.com/powershell/module/msonline/get-msolgroup) för att hämta en lista med grupper, letar reda på säkerhets gruppens ObjectID och kör:</span><span class="sxs-lookup"><span data-stu-id="0a854-122">If you want to add a security group that does not have an alias, run [Get-MsolGroup](https://docs.microsoft.com/powershell/module/msonline/get-msolgroup) to retrieve a list of groups, find your security group's ObjectID, and then run:</span></span>
+<span data-ttu-id="9454f-121">Observera att inte alla säkerhetsgrupper har ett gruppalias.</span><span class="sxs-lookup"><span data-stu-id="9454f-121">Note that not all security groups have a group alias.</span></span> <span data-ttu-id="9454f-122">Om du vill lägga till en säkerhetsgrupp som inte har ett alias kör du [Get-MsolGroup](/powershell/module/msonline/get-msolgroup) för att hämta en lista med grupper, letar reda på säkerhetsgruppens ObjectID och kör sedan:</span><span class="sxs-lookup"><span data-stu-id="9454f-122">If you want to add a security group that does not have an alias, run [Get-MsolGroup](/powershell/module/msonline/get-msolgroup) to retrieve a list of groups, find your security group's ObjectID, and then run:</span></span>
 
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
-<span data-ttu-id="0a854-123">Om du vill ta bort en grupp med hjälp av ObjectID kör du `Remove-SPOGeoAdministrator -ObjectID <ObjectID>`</span><span class="sxs-lookup"><span data-stu-id="0a854-123">To remove a group by using the ObjectID, run `Remove-SPOGeoAdministrator -ObjectID <ObjectID>`</span></span>
+<span data-ttu-id="9454f-123">Om du vill ta bort en grupp med hjälp av Objekt-ID:t kör du `Remove-SPOGeoAdministrator -ObjectID <ObjectID>`</span><span class="sxs-lookup"><span data-stu-id="9454f-123">To remove a group by using the ObjectID, run `Remove-SPOGeoAdministrator -ObjectID <ObjectID>`</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="0a854-124">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="0a854-124">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="9454f-124">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="9454f-124">Related topics</span></span>
 
-[<span data-ttu-id="0a854-125">Add-SPOGeoAdministrator</span><span class="sxs-lookup"><span data-stu-id="0a854-125">Add-SPOGeoAdministrator</span></span>](https://docs.microsoft.com/powershell/module/sharepoint-online/add-spogeoadministrator)
+[<span data-ttu-id="9454f-125">Add-SPOGeoAdministrator</span><span class="sxs-lookup"><span data-stu-id="9454f-125">Add-SPOGeoAdministrator</span></span>](/powershell/module/sharepoint-online/add-spogeoadministrator)
 
-[<span data-ttu-id="0a854-126">Get-SPOGeoAdministrator</span><span class="sxs-lookup"><span data-stu-id="0a854-126">Get-SPOGeoAdministrator</span></span>](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spogeoadministrator)
+[<span data-ttu-id="9454f-126">Get-SPOGeoAdministrator</span><span class="sxs-lookup"><span data-stu-id="9454f-126">Get-SPOGeoAdministrator</span></span>](/powershell/module/sharepoint-online/get-spogeoadministrator)
 
-[<span data-ttu-id="0a854-127">Remove-SPOGeoAdministrator</span><span class="sxs-lookup"><span data-stu-id="0a854-127">Remove-SPOGeoAdministrator</span></span>](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
+[<span data-ttu-id="9454f-127">Remove-SPOGeoAdministrator</span><span class="sxs-lookup"><span data-stu-id="9454f-127">Remove-SPOGeoAdministrator</span></span>](/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-[<span data-ttu-id="0a854-128">Ange ett alias (smek namn) för en säkerhets grupp</span><span class="sxs-lookup"><span data-stu-id="0a854-128">Set an alias (MailNickName) for a security group</span></span>](https://docs.microsoft.com/powershell/module/azuread/set-azureadgroup)
+[<span data-ttu-id="9454f-128">Ange ett alias (MailNickName) för en säkerhetsgrupp</span><span class="sxs-lookup"><span data-stu-id="9454f-128">Set an alias (MailNickName) for a security group</span></span>](/powershell/module/azuread/set-azureadgroup)
