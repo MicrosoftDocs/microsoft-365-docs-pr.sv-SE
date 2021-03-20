@@ -1,5 +1,5 @@
 ---
-title: Hantera användar medgivande till program i Microsoft 365
+title: Hantera användarmedgivande till appar i Microsoft 365
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -19,34 +19,34 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
-description: Lär dig mer om användarens medgivande till appar och hur du aktiverar dem så att program från tredje part kan komma åt användarnas Microsoft 365-information.
-ms.openlocfilehash: 955ae9e58c14dbb8012a440ef6c336f44b0760a4
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+description: Läs mer om användarens medgivande till appar och hur du aktiverar dem för att tillåta tredjepartsprogram att få åtkomst till information om Microsoft 365.
+ms.openlocfilehash: 1f6f08161d6dd85964f07ec4d48f9f2cc23a1ead
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999589"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914570"
 ---
-# <a name="managing-user-consent-to-apps-in-microsoft-365"></a>Hantera användar medgivande till program i Microsoft 365
+# <a name="managing-user-consent-to-apps-in-microsoft-365"></a>Hantera användarmedgivande till appar i Microsoft 365
 
-Den här inställningen styr om användare kan ge tillstånd till program som använder OpenID Connect och OAuth 2,0 för inloggning och förfrågningar om att få åtkomst till data. En app kan skapas i din egen organisation eller så kan den komma från en annan Office 365-organisation eller tredje part.
+Den här inställningen styr om användare kan ge det medgivande till appar som använder OpenID Connect och OAuth 2.0 för inloggning och förfrågningar om åtkomst till data. Du kan skapa en app från din egen organisation eller så kan den komma från en annan Office 365-organisation eller tredje part.
 
-Om du aktiverar den här inställningen ber dessa appar användare att få åtkomst till organisationens data och användare kan välja om de vill tillåta det. Om du inaktiverar den här inställningen måste administratörer godkänna dessa appar innan användarna kan använda dem. I det här fallet kan du skapa ett arbets flöde för administratörs medgivande i Azure-portalen så att användare får skicka en begäran om administratörs godkännande för att använda blockerade appar.
+Om du aktiverar den här inställningen ber de apparna om behörighet till organisationens data och användarna kan välja om de vill tillåta dem. Om du inaktiverar den här inställningen måste administratörer godkänna dessa appar innan användarna kan använda dem. I det här fallet kan du konfigurera ett arbetsflöde för administratörsmedgivande i Azure Portal så att användarna kan skicka en begäran om administratörsgodkännande för att använda en blockerad app.
 
 Det går bara att ge behörighet till sin egen Office 365-information. Det går inte att ge åtkomst till andra användares information.
 
-## <a name="turning-user-consent-on-or-off"></a>Aktivera eller inaktivera användar medgivande
+## <a name="turning-user-consent-on-or-off"></a>Aktivera eller inaktivera användarmedgivande
 <a name="__toc379982114"> </a>
 
-Så här aktiverar eller inaktiverar du användar medgivande för appar.
+Så här aktiverar eller inaktiverar du användarmedgivande för appar.
 
-1. I administrations centret går du till sidan **Inställningar** \> **organisations inställningar**  >  [Services](https://go.microsoft.com/fwlink/p/?linkid=2053743) och väljer sedan **användarens medgivande till appar**.
+1. I administrationscentret går du till sidan **Inställningar För** \> **organisationsinställningar** och väljer  >  [](https://go.microsoft.com/fwlink/p/?linkid=2053743) sedan **Användarens medgivande för appar.**
 
-2. På sidan **användare medgivande till program** markerar du alternativet för att aktivera eller inaktivera användar medgivande.
+2. På sidan **Användarens medgivande till appar** väljer du alternativet att aktivera eller inaktivera användarens medgivande.
 
 ## <a name="more-info"></a>Mer information
 <a name="__toc379982114"> </a>
 
-Om du vill veta mer om hur du konfigurerar medgivande inställningar i Azure Active Directory läser du [Konfigurera arbets flödet för administratörs godkännande](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow).
+Mer information om hur du konfigurerar dina medgivandeinställningar i Azure Active Directory finns i Konfigurera [arbetsflödet för administratörsmedgivande.](/azure/active-directory/manage-apps/configure-admin-consent-workflow)
 
-Om du vill veta mer om hur du hanterar användarens medgivande till appar läser du [Hantera medgivande till program och utvärdering av medgivande förfrågningar](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-consent-requests).
+Mer information om hur du hanterar användares medgivande för appar finns i [Hantera medgivande för program och utvärdera medgivandebegäranden.](/azure/active-directory/manage-apps/manage-consent-requests)

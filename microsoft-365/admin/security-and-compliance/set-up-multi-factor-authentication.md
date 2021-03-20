@@ -23,30 +23,30 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Lär dig hur du konfigurerar multifaktorautentisering för din organisation.
 monikerRange: o365-worldwide
-ms.openlocfilehash: d08ef54c545809bbb2277f8d0a8471245400a3ac
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 54c862d8f7c25472d84557e177a9107d2c14d846
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50514974"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914468"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Konfigurera multifaktorautentisering
 
 Eftersom du har kunskap om [multifaktorautentisering (MFA) och dess stöd i Microsoft 365](multi-factor-authentication-microsoft-365.md) är det dags att konfigurera och distribuera det i din organisation.
 
 > [!IMPORTANT]
-> Om du har köpt din prenumeration eller utvärderingsversion efter den 21 oktober 2019 och uppmanas att använda MFA när du loggar in, betyder det att [standardinställningar för säkerhet](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) har aktiverats automatiskt för prenumerationen.
+> Om du har köpt din prenumeration eller utvärderingsversion efter den 21 oktober 2019 och uppmanas att använda MFA när du loggar in, betyder det att [standardinställningar för säkerhet](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) har aktiverats automatiskt för prenumerationen.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
 - Du måste vara en global administratör för att hantera MFA. Mer information finns i [Om administratörsroller](../add-users/about-admin-roles.md).
 - Om du har aktiverat föråldrad MFA per person, [inaktivera föråldrad MFA per person](#turn-off-legacy-per-user-mfa).
-- Om du har Office 2013-klienter på Windows-enheter kan du [aktivera modern autentisering för Office 2013-kunder](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication).
-- Avancerat: Om du har katalogtjänster från tredje part med Active Directory Federation Services (AD FS) konfigurerar du Microsoft Azure Multi-Factor Authentication-server. Mer information finns i [avancerade scenarier med Azure multifaktorautentisering och VPN-lösningar från tredje part](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn).
+- Om du har Office 2013-klienter på Windows-enheter kan du [aktivera modern autentisering för Office 2013-kunder](./enable-modern-authentication.md).
+- Avancerat: Om du har katalogtjänster från tredje part med Active Directory Federation Services (AD FS) konfigurerar du Microsoft Azure Multi-Factor Authentication-server. Mer information finns i [avancerade scenarier med Azure multifaktorautentisering och VPN-lösningar från tredje part](/azure/active-directory/authentication/howto-mfaserver-nps-vpn).
 
 ## <a name="turn-security-defaults-on-or-off"></a>Aktivera eller inaktivera standardinställningar för säkerhet
 
-För de flesta organisationer tillhandahåller standardinställningar för säkerhet en god nivå av ytterligare inloggningssäkerhet. Mer information finns i [Vad är standardinställningar för säkerhet?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+För de flesta organisationer tillhandahåller standardinställningar för säkerhet en god nivå av ytterligare inloggningssäkerhet. Mer information finns i [Vad är standardinställningar för säkerhet?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 Om prenumerationen är ny kan standardinställningar för säkerhet redan vara aktiverat för dig automatiskt.
 
@@ -58,7 +58,7 @@ Du aktiverar eller inaktiverar säkerhetsinställningar för Azure Active Direct
 4. Längst ner på sidan väljer du **Hantera standardinställningar för säkerhet**.
 5. Välj **Ja** för att aktivera standardinställningar för säkerhet eller **Nej** för att inaktivera dem och välj sedan **Spara**.
 
-Om du har använt [originalprinciper för villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection) blir du ombedd att inaktivera dem innan du går över till att använda säkerhetsstandarder.
+Om du har använt [originalprinciper för villkorsstyrd åtkomst](/azure/active-directory/conditional-access/concept-baseline-protection) blir du ombedd att inaktivera dem innan du går över till att använda säkerhetsstandarder.
 
 1. Gå till sidan [principer för villkorsstyrd åtkomst](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies).
 2. Välj alla originalprinciper som är **På** och ändra **Aktivera princip** till **Av**.
@@ -73,9 +73,9 @@ Om din organisation har mer detaljerade säkerhetsbehov kan villkorsstyrd åtkom
 > [!IMPORTANT]
 > Inaktivera både MFA-och säkerhets inställningar per användare innan du aktiverar principer för villkorsstyrd åtkomst.
 
-Villkorsstyrd åtkomst är tillgänglig för kunder som har köpt Azure AD Premium P1, och licenser som inkluderar detta, t. ex. Microsoft 365 Business Premium och Microsoft 365 E3. Mer information finns i [skapa en princip för villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-azure-mfa).
+Villkorsstyrd åtkomst är tillgänglig för kunder som har köpt Azure AD Premium P1, och licenser som inkluderar detta, t. ex. Microsoft 365 Business Premium och Microsoft 365 E3. Mer information finns i [skapa en princip för villkorsstyrd åtkomst](/azure/active-directory/authentication/tutorial-enable-azure-mfa).
 
-Riskbaserad villkorlig åtkomst är tillgänglig via Azure AD Premium P2-licens eller licenser som inkluderar detta, till exempel Microsoft 365 E5. Mer information finns i [Riskbaserad villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
+Riskbaserad villkorlig åtkomst är tillgänglig via Azure AD Premium P2-licens eller licenser som inkluderar detta, till exempel Microsoft 365 E5. Mer information finns i [Riskbaserad villkorsstyrd åtkomst](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
 
 Mer information om Azure AD P1 och P2 finns i [Azure Active Directory-priserna](https://azure.microsoft.com/pricing/details/active-directory/).
 
@@ -104,6 +104,6 @@ Om du tidigare har aktiverat MFA för enskilda användare måste du inaktivera d
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Video: Aktivera multifaktorautentisering](https://docs.microsoft.com/microsoft-365/business-video/turn-on-mfa)
+[Video: Aktivera multifaktorautentisering](../../business-video/turn-on-mfa.md)
 
-[Video: Aktivera multifaktorautentisering för telefonen](https://docs.microsoft.com/microsoft-365/business-video/set-up-mfa)
+[Video: Aktivera multifaktorautentisering för telefonen](../../business-video/set-up-mfa.md)

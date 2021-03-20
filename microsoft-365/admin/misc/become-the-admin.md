@@ -1,5 +1,5 @@
 ---
-title: Utföra en intern administrativ övertag Ande
+title: Utföra ett internt administratörsupptagande
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -19,60 +19,59 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: Lär dig hur du verifierar din e-post och domän ägarskap för att ta över en ohanterad klient organisation i Microsoft 365
-ms.openlocfilehash: 28359908576260218459d13b8c1c1b662b9a2c8f
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Lär dig hur du verifierar e-post- och domänägarskap för att ta över en ohanterad klientorganisation i Microsoft 365
+ms.openlocfilehash: 72278fd0e373848a79f9823e186b19bc1cb47770
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658069"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914852"
 ---
-# <a name="perform-an-internal-admin-takeover"></a>Utföra en intern administrativ övertag Ande
+# <a name="perform-an-internal-admin-takeover"></a>Utföra ett internt administratörsupptagande
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
 
-Om du är administratör och vill ta över en ohanterad klient organisation som skapats av en självbetjänings användar registrering kan du göra det med en intern administratörs övertag Ande.
+Om du är administratör och vill ta över en ohanterad klientorganisation som skapas genom registrering av självbetjäning kan du göra detta med ett internt administratörsköp.
 
 > [!NOTE]
-> Ett själv underhåll för alla moln tjänster som använder Azure AD lägger till användaren i en ohanterad eller "skugg" Azure AD-katalog och skapar en ohanterad klient organisation. En ohanterad klient organisation är en katalog utan global administratör. För att avgöra om en klient organisation är hanterad eller ohanterad, se kontrol lera [klient organisations typ](https://docs.microsoft.com/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type). 
+> Om du registrerar dig som självbetjäning för en molntjänst som använder Azure AD kommer användaren att läggas till i en ohanterad eller "skuggig" Azure AD-katalog och en ohanterad klientorganisation skapas. En ohanterad klientorganisation är en katalog utan global administratör. Information om huruvida en klientorganisation hanteras eller hanteras utan avbrott finns i [Fastställa klientorganisationstyp.](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type) 
   
-## <a name="step-1-verify-your-email-address"></a>Steg 1: bekräfta din e-postadress
+## <a name="step-1-verify-your-email-address"></a>Steg 1: Verifiera din e-postadress
 
 > [!NOTE]
-> Om själv service är aktiverat i din klient organisation kan användare abonnera på gratis tjänster, till exempel Power BI, på egen hand. De här stegen förutsätter att en självbetjänings användar prenumeration har skapat den ohanterade klient organisation som du vill ta över som administratör. I det första steget skapar du en användar kontext i den ohanterade innehavaren med Power BI för att illustrera administratörs upptagnings vägen.
+> Om självbetjäning är aktiverad i klientorganisationen kan användarna prenumerera på kostnadsfria tjänster, till exempel Power BI, på egen hand. De här stegen förutsätter att en användarprenumeration med självbetjäning har skapat den ohanterade klientorganisationen som du vill ta över som administratör. I det första steget skapar du en användarkontext i den ohanterade klientorganisationen, med Power BI för att illustrera administratörsupptagandets väg.
 
-1. Registrera dig för Power BI genom att gå till [Power BI-webbplatsen](https://powerbi.com) och välja **Starta** gratis  >  **prov period** (i dela med Power BI Pro). 
+1. Registrera dig för Power BI genom att gå till [Power BI-webbplatsen](https://powerbi.com) och välja Starta kostnadsfri start gratis provperiod (i rutan Dela med Power  >   BI Pro). 
 
-2. Registrera dig med ett användar konto som använder organisationens domän namn (till exempel `powerbiadmin@contoso.com` ). Om ditt konto redan används loggar du in med ditt nuvarande lösen ord.
+2. Registrera dig med ett användarkonto som använder domännamnet för din organisation (t.ex. `powerbiadmin@contoso.com` ). Om ditt konto redan används loggar du in med ditt nuvarande lösenord.
 
-3. Kontrol lera e-postmeddelandet **och ange koden för** att verifiera din e-postadress.
+3. Kontrollera din e-postadress **för verifieringskoden** och ange koden för att verifiera din e-postadress.
     
-## <a name="step-2-create-a-new-account"></a>Steg 2: skapa ett nytt konto
+## <a name="step-2-create-a-new-account"></a>Steg 2: Skapa ett nytt konto
 
-1. När du anger verifierings koden kommer du till en sida där du kan skapa ett nytt konto. 
+1. När du anger verifieringskoden kommer du till en sida där du kan skapa ett nytt konto. 
     
-2. Fyll i fälten användar namn och lösen ord med det konto som du vill använda och välj sedan **Starta**. 
+2. Fyll i användarnamns- och lösenordsfälten med det konto som du vill använda och välj sedan **Starta.** 
     
-## <a name="step-3-verify-domain-ownership-and-become-the-admin"></a>Steg 3: bekräfta domän ägandet och bli administratör
+## <a name="step-3-verify-domain-ownership-and-become-the-admin"></a>Steg 3: Verifiera att du äger domänen och bli administratör
 
-1. Då öppnas **Administratörs** guiden. Om guiden inte startar letar du reda på panelen **Administratörer** och väljer den. 
+1. Guiden **Bli administratör** öppnas. Om guiden inte startar letar du upp panelen **Admin** och väljer den. 
 
-2. Välj **Ja, jag vill vara administratör**.
+2. Välj **Ja, jag vill vara administratör.**
 
-3. Verifiera att du äger den domän som du vill ta med genom att lägga till en TXT-post i domän registratorn. Guiden ger dig TXT-posten att lägga till samt en länk till registratorns webbplats samt en länk till steg-för-steg-instruktioner.
+3. Verifiera att du äger den domän du vill ta över genom att lägga till en TXT-post i din domänregistrator. Guiden ger dig TXT-posten att lägga till, samt en länk till din registrators webbplats samt en länk till stegvisa instruktioner.
     
-4. När du har lagt till TXT-posten på din registrators webbplats går du tillbaka till guiden och väljer **OK, jag har lagt till posten**.
+4. När du har lagt till TXT-posten på registratorns webbplats går du tillbaka till guiden och väljer **Okej, jag har lagt till posten**.
     
 > [!NOTE]
-> Att ta över skugg klient organisationen påverkar inte befintliga uppgifter eller tjänster. Om en användare i domänen har registrerat sig för tjänster som kräver en licens uppmanas du att köpa licenser för dem som en del av att ta över administratörs rollen. Du kan köpa eller ta bort licenser när administratörs konfigurationen är klar.
+> Att ta över skuggklientorganisationen påverkar inte befintlig information eller befintliga tjänster. Men om några användare i domänen har registrerat sig för tjänster som kräver en licens uppmanas du att köpa licenser till dem när du tar över administratörsrollen. Du kan köpa eller ta bort licenser när administratörsinstallationen är klar.
   
 ## <a name="related-articles"></a>Relaterade artiklar
 
-YouTube: [3 steg för att utföra en IT-administratörs övertag Ande för Power BI och Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)
+YouTube: [3 steg för att göra ett övertagande av IT-administratörer för Power BI och Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)
 
-[Administratörs övertag Ande i Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
+[Administratörsupptagande i Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
-[Använda automatisk registrering i din organisation](self-service-sign-up.md)
+[Använda självbetjäning för registrering i din organisation](self-service-sign-up.md)
   
-[Förstå administratörs rollen för Power BI-tjänsten](https://docs.microsoft.com/power-bi/service-admin-role)
-
+[Förstå administratörsrollen i Power BI-tjänsten](/power-bi/service-admin-role)

@@ -21,21 +21,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
-description: Anpassa inloggningssidan för Microsoft 365 med hjälp av Azure Active Directory. Du kan lägga till en illustration, en logotyp och text på inloggningssidan.
-ms.openlocfilehash: 9a4e18aeb050fe128ded1ea83756256a386a0fb4
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: Anpassa Inloggningssidan för Microsoft 365 med hjälp av Azure Active Directory. Du kan lägga till en bild, en logotyp och text på inloggningssidan.
+ms.openlocfilehash: 1bd9a60c9c3bbe839652785deb2eb52d5b385673
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926912"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914168"
 ---
 # <a name="add-your-company-branding-to-the-sign-in-page"></a>Lägga till företagets varumärke på inloggningssidan
 
- Nu kan du använda Azure Active Directory-prenumerationen (AD) som ingår i Microsoft 365-prenumerationen för att anpassa inloggningssidan som användarna ser. 
+ Nu kan du använda den Azure Active Directory-prenumeration (AD) som ingår i din Microsoft 365-prenumeration för att anpassa inloggningssidan som användarna ser. 
   
 ## <a name="add-company-branding-to-your-sign-in-page-and-access-panel-pages"></a>Lägga till företagsanpassning på din inloggningssida och åtkomstpanelsidorna
 
-Om du har en betald prenumeration på Microsoft 365 för företag, Microsoft Dynamics CRM Online, Enterprise Mobility Suite eller andra Microsoft-tjänster har du en kostnadsfri prenumeration på Azure Active Directory. Du kan använda Azure Active Directory för att skapa och hantera användar- och gruppkonton samt lägga till företags varumärke på dina sidor. Om du vill aktivera prenumerationen och få åtkomst till Microsoft Azure Management Portal måste du slutföra en registreringsprocess som gäller en gång. Därefter kan du komma åt Azure Active Directory från din Microsoft-tjänst som använder den. Anvisningar om hur du registrerar din Microsoft 365-prenumeration finns i Registrera din kostnadsfria [Azure Active Directory-prenumeration](https://go.microsoft.com/fwlink/p/?LinkID=527966)och i Hantera katalogen för [Microsoft 365-prenumerationen](https://go.microsoft.com/fwlink/p/?LinkId=620076) i Azure finns allmänna instruktioner för hantering. 
+Om du har en betald prenumeration på Microsoft 365 för företag, Microsoft Dynamics CRM Online, Enterprise Mobility Suite eller andra Microsoft-tjänster har du en kostnadsfri prenumeration på Azure Active Directory. Du kan använda Azure Active Directory för att skapa och hantera användar- och gruppkonton och lägga till företagets varumärke på dina sidor. Om du vill aktivera prenumerationen och få åtkomst till Microsoft Azure Management Portal måste du slutföra en registreringsprocess som du bara behöver utföra. Därefter kan du komma åt Azure Active Directory från din Microsoft-tjänst som använder den. Anvisningar om hur du registrerar din Microsoft 365-prenumeration finns i Registrera din kostnadsfria [Azure Active Directory-prenumeration](../../compliance/use-your-free-azure-ad-subscription-in-office-365.md)och i Hantera katalogen för [Din Microsoft 365-prenumeration](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) i Azure finns allmänna instruktioner för hantering. 
   
 På följande bild ser du vilka delar av inloggningssidan som kan ändras i Azure.
   
@@ -49,4 +49,4 @@ På följande bild ser du vilka delar av inloggningssidan som kan ändras i Azur
     
 Du kan inte bara anpassa inloggningssidan utan även åtkomstpanelsidan i Azure.
   
-Om du är redo att lägga till anpassningar kan du utforska anpassningsalternativen i Azure-innehållsuppsättningen: [Lägga till företagsanpassning på din inloggningssida och åtkomstpanelsidorna](https://go.microsoft.com/fwlink/p/?LinkId=620077).
+Om du är redo att lägga till anpassningar kan du utforska anpassningsalternativen i Azure-innehållsuppsättningen: [Lägga till företagsanpassning på din inloggningssida och åtkomstpanelsidorna](/azure/active-directory/fundamentals/customize-branding).

@@ -20,12 +20,12 @@ description: Lär dig verifiera din domän och skapa DNS-poster på vilken DNS-v
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 01fd78033afb6add41975826ed8daddf052826b2
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: d6e8a5a0e23bf9bb9e302566a72b9e1cc6b7bff4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655606"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915656"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Lägga till DNS-poster för att ansluta till din domän
 
@@ -125,11 +125,11 @@ Kontrollera att fälten är inställda på följande värden:
 
 Spara posten.
 
-Använd något av följande [SPF-verifieringsverktyg](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain) för att verifiera SPF-posten
+Använd något av följande [SPF-verifieringsverktyg](/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain) för att verifiera SPF-posten
 
 SPF har utformats för att hjälpa till att förhindra förfalskning men det finns förfalskningsmetoder som SPF inte skyddar mot. För att skydda mot dessa ska du, efter att ha konfigurerat SPF, även konfigurera DKIM och DMARC för Microsoft 365. 
 
-Information om hur du kommer igång finns i [Använda DKIM för att validera utgående e-post som skickas från din domän i Microsoft 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx) och [Använda DMARC för att validera e-post i Microsoft 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
+Information om hur du kommer igång finns i [Använda DKIM för att validera utgående e-post som skickas från din domän i Microsoft 365](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) och [Använda DMARC för att validera e-post i Microsoft 365](../../security/office-365-security/use-dmarc-to-validate-email.md).
 
 ### <a name="add-srv-records-for-communications-services-teams-skype-for-business"></a>Lägga till SRV-poster för kommunikationstjänster (Teams, Skype för företag)
 

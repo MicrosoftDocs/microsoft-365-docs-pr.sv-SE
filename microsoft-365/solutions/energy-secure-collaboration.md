@@ -13,12 +13,12 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: Microsoft 365 hjälper energiorganisationer att gå till en modern samarbetsplattform, medan vi håller data och systemen säkra och kompatibla med föreskrifter
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 1e5acc09c72b47f583c2ee9330f78bf3e68aaa33
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 086cc176190549f2ec8e49ea992744059c5d9005
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558496"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916124"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Grundläggande efterlevnad och säkerhetsaspekter för energiindustrin
 ![Illustrerad metafor för en global vy över olika branscher som använder molnet](../media/solution-arch-center/MSC17_global_016.png)
@@ -38,7 +38,7 @@ Regelverk som rekommenderas för att övervägas av energiorganisationer är bla
 - Azure och Azure Government har beviljats en FedRAMP High P-ATO (provisoriskt driftgodkännande), som representerar den högsta nivån av FedRAMP-auktorisering. 
 
 Mer information om Microsofts molntjänster och FedRAMP finns i följande resurser:
-- [Översikt över Microsoft FedRAMP](https://docs.microsoft.com/microsoft-365/compliance/offering-fedramp?view=o365-worldwide)
+- [Översikt över Microsoft FedRAMP](/compliance/regulatory/offering-FedRAMP?view=o365-worldwide)
 - [Office 365 FedRAMP-rapporter](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_FedRAMP_Reports)
 
 

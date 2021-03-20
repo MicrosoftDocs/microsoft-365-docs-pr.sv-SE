@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Kräv att dina distansarbetare loggar in med multi-factor authentication (MFA).
-ms.openlocfilehash: 7df6b1335c0ca45c06eee98eeff89f59b6365807
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: d27268ac4c71e74afe6ef04cc61fb029b665c1a0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097146"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916208"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Steg 1. Öka inloggningssäkerheten för distansarbetare med MFA
 
@@ -36,8 +36,8 @@ Det finns tre sätt till att kräva att dina användare ska använda MFA baserat
 
 |Planera  |Rekommendation  |
 |---------|---------|
-|Alla Microsoft 365-abonnemang (utan Azure Active Directory Premium P1- eller P2-licenser)     |[Aktivera standardinställningar för säkerhet i Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Standardinställningar för säkerhet i Azure AD inkluderar MFA för användare och administratörer.   |
-|Microsoft 365 E3 (inkluderar Azure Active Directory Premium P1-licenser)     | Använd [vanliga principer för villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) för att konfigurera följande principer: <br>- [Kräv MFA för administratörer](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Kräv MFA för alla användare](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Blockera äldre autentisering](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Alla Microsoft 365-abonnemang (utan Azure Active Directory Premium P1- eller P2-licenser)     |[Aktivera standardinställningar för säkerhet i Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Standardinställningar för säkerhet i Azure AD inkluderar MFA för användare och administratörer.   |
+|Microsoft 365 E3 (inkluderar Azure Active Directory Premium P1-licenser)     | Använd [vanliga principer för villkorsstyrd åtkomst](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) för att konfigurera följande principer: <br>- [Kräv MFA för administratörer](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Kräv MFA för alla användare](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Blockera äldre autentisering](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
 |Microsoft 365 E5 (inkluderar Azure Active Directory Premium P2-licenser)     | Dra nytta av Azure AD Identity Protection och börja implementera Microsofts [rekommenderade uppsättning av principer för villkorsstyrd åtkomst och relaterade principer](../security/office-365-security/identity-access-policies.md) genom att skapa dessa principer:<br> - [Kräv MFA när inloggningsrisker är medel eller hög](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Blockera klienter som inte har stöd för modern autentisering](../security/office-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br>- [Användare med hög risk måste byta lösenord](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
@@ -49,7 +49,7 @@ Användare har 14 dagar på sig att registrera sig för MFA med Microsoft Authen
 
 Standardinställningar för säkerhet säkerställer att alla organisationer har en grundläggande säkerhetsnivå för användarinloggning som är aktiverad som standard. Du kan inaktivera standardinställningar för säkerhet till förmån för MFA med Principer för villkorsstyrd åtkomst eller för enskilda konton.
 
-Mer information finns i den här [översikten över standardinställningar för säkerhet](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
+Mer information finns i den här [översikten över standardinställningar för säkerhet](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
 
 ## <a name="conditional-access-policies"></a>Principer för villkorsstyrd åtkomst
 
@@ -63,7 +63,7 @@ Du kan också använda principer för villkorsstyrd åtkomst för mer avancerade
 
 Villkorsstyrd åtkomst kräver Azure Active Directory Premium P1-licens som ingår i Microsoft 365 E3 och E5.
 
-Mer information finns i den här [översikt över villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+Mer information finns i den här [översikt över villkorsstyrd åtkomst](/azure/active-directory/conditional-access/overview).
 
 ## <a name="azure-ad-identity-protection-support"></a>Stöd för Azure AD Identity Protection
 
@@ -73,9 +73,9 @@ Med Azure AD Identity Protection kan du skapa en ytterligare princip för villko
 
 För Azure Active Directory Identity Protection krävs Azure Active Directory Premium P2-licenser, som ingår i Microsoft 365 E5.
 
-Mer information finns i [Riskbaserad villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users).
+Mer information finns i [Riskbaserad villkorsstyrd åtkomst](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users).
 
-Med Azure AD Identity Protection kan du också skapa en princip som kräver att dina användare registrerar sig för MFA. Mer information finns i [Konfigurera Azure AD Multi-Factor Authentication registreringspolicy](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
+Med Azure AD Identity Protection kan du också skapa en princip som kräver att dina användare registrerar sig för MFA. Mer information finns i [Konfigurera Azure AD Multi-Factor Authentication registreringspolicy](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 
 
 ## <a name="using-these-methods-together"></a>Använda dessa metoder tillsammans
@@ -97,11 +97,11 @@ I den här tabellen visas resultatet av att aktivera MFA med standardinställnin
 
 ## <a name="let-your-users-reset-their-own-passwords"></a>Tillåt användarna att återställa sina egna lösenord
 
-Med självbetjäning för återställning av lösenord (SSPR) kan användarna återställa sina egna lösenord utan att det påverkar IT-personal. Användarna kan snabbt återställa lösenorden när som helst och från vilken plats som helst. Mer information finns i [Planera distribution av självbetjäning för återställning av lösenord i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment).
+Med självbetjäning för återställning av lösenord (SSPR) kan användarna återställa sina egna lösenord utan att det påverkar IT-personal. Användarna kan snabbt återställa lösenorden när som helst och från vilken plats som helst. Mer information finns i [Planera distribution av självbetjäning för återställning av lösenord i Azure Active Directory](/azure/active-directory/authentication/howto-sspr-deployment).
 
 ## <a name="sign-in-to-saas-apps-with-azure-ad"></a>Logga in i SaaS-appar med Azure AD
 
-Förutom att tillhandahålla molnverifiering för användare kan även Azure AD vara ditt primära sätt att skydda alla dina appar, oavsett om de är lokala, i Microsofts moln eller i ett annat moln. Genom att [integrera apparna i Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-an-application-integration) kan du göra det enkelt för distansarbetare att upptäcka vilka program de behöver och att logga in på dem på ett säkert sätt.
+Förutom att tillhandahålla molnverifiering för användare kan även Azure AD vara ditt primära sätt att skydda alla dina appar, oavsett om de är lokala, i Microsofts moln eller i ett annat moln. Genom att [integrera apparna i Azure AD](/azure/active-directory/manage-apps/plan-an-application-integration) kan du göra det enkelt för distansarbetare att upptäcka vilka program de behöver och att logga in på dem på ett säkert sätt.
 
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>Tekniska resurser för administratörer om MFA och identitet
 

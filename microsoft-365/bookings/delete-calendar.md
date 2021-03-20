@@ -9,28 +9,28 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: Använd administrationscentret för Microsoft 365 eller Windows PowerShell för att ta bort bookingskalendrar.
-ms.openlocfilehash: 7407298adb402de79a1010b51544deee4b94cf5a
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 7b79628327797d2e315d31e1b1a2671f0b24e447
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50604026"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913784"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Ta bort en bokningskalender i Bookings
 
-I den här artikeln förklaras hur du tar bort en oönskad bokningskalender. Du kan ta bort bokningskalendern i administrationscentret för Microsoft 365 eller använda PowerShell. Kalendern i Bookings är en postlåda i Exchange Online så du tar bort motsvarande användarkonto för att ta bort bokningskalendern.
+I den här artikeln förklaras hur du tar bort en oönskad bokningskalender. Du kan ta bort bokningskalendern i administrationscentret för Microsoft 365 eller så kan du använda PowerShell. Bookings-kalendern är en postlåda i Exchange Online så du tar bort motsvarande användarkonto för att ta bort bokningskalendern.
 
 > [!IMPORTANT]
-> Alla bokningskalendrar som du skapade under 2017 eller tidigare måste tas bort med hjälp av PowerShell-instruktionerna för det här avsnittet. Alla bokningskalendrar som skapades under 2018 eller senare kan tas bort i administrationscentret för Microsoft 365.
+> Alla bokningskalendrar som du skapade 2017 eller tidigare måste tas bort med PowerShell-instruktionerna för det här avsnittet. Alla bokningskalendrar som skapades 2018 eller senare kan tas bort i administrationscentret för Microsoft 365.
 
-I bokningskalendern lagras all relevant information om bokningskalendern och bokningsdata, inklusive:
+Bokningskalendern är den plats där all relevant information om bokningskalendern och bokningsdata lagras, inklusive:
 
 - Företagsinformation, logotyp och arbetstid som lades till när bokningskalendern skapades
 - Relevant personal och tjänster som lades till när bokningskalendern skapades
 - Alla bokningar och återkommande avtalade tider läggs till i bokningskalendern när den har skapats.
 
 > [!WARNING]
-> När en bokningskalender tas bort tas den här informationen också bort permanent och kan inte återställas.
+> När en bokningskalender tas bort tas denna ytterligare information också bort permanent och kan inte återställas.
 
 ## <a name="delete-a-booking-calendar-in-the-microsoft-365-admin-center"></a>Ta bort en bokningskalender i administrationscentret för Microsoft 365
 
@@ -42,22 +42,22 @@ I bokningskalendern lagras all relevant information om bokningskalendern och bok
 
 1. På sidan **Aktiva användare** väljer du namnen på de användare du vill ta bort och väljer sedan **Ta bort användare**.
 
-   ![Bild av användargränssnittet för Ta bort användare i administrationscentret för Microsoft 365](../media/bookings-delete-user.png)
+   ![Bild av ta bort användargränssnittet i administrationscentret för Microsoft 365](../media/bookings-delete-user.png)
 
 ## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>Ta bort en bokningskalender med Exchange Online PowerShell
 
-Se [Ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) för krav och vägledning för anslutning till Exchange Online PowerShell.
+Se [Ansluta till Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) för krav och vägledning för anslutning till Exchange Online PowerShell.
 
-För att utföra de här stegen måste du använda ett aktivt Microsoft PowerShell-kommandofönster som du kör genom att välja alternativet "Kör som administratör".
+Om du vill utföra de här stegen måste du använda ett aktivt Microsoft PowerShell-kommandofönster som du kör genom att välja alternativet "Kör som administratör".
 
-1. I ett PowerShell-fönster laddar du EXO V2-modulen genom att köra följande kommando:
+1. I ett PowerShell-fönster läser du in EXO V2-modulen genom att köra följande kommando:
 
    ```powershell
    Import-Module ExchangeOnlineManagement
    ```
 
    > [!NOTE]
-   > Om du redan har [installerat EXO V2-modulen](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module)fungerar det föregående kommandot som det är skrivet.
+   > Om du redan har [installerat EXO V2-modulen](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module)fungerar det föregående kommandot som det är skrivet.
    
 2. Följande syntax används för kommandot du behöver köra:
 
@@ -65,9 +65,9 @@ För att utföra de här stegen måste du använda ett aktivt Microsoft PowerShe
    Connect-ExchangeOnline -UserPrincipalName <UPN> 
    ```
 
-   - _\<UPN\>_ är ditt konto i huvudnamnsformat (till `john@contoso.com` exempel).
+   - _\<UPN\>_ är ditt konto i formatet användarnamn (t.ex. `john@contoso.com` ).
 
-3. När du uppmanas till det loggar du in med autentiseringsuppgifter som innehavaradministratör på Microsoft 365-klienten som är värd för den bokningskalender du vill ta bort permanent.
+3. När du uppmanas att göra det loggar du in med klientorganisationsadministratörens autentiseringsuppgifter på den Microsoft 365-klientorganisation som är värd för den bokningskalender du vill ta bort permanent.
 
 4. När det här kommandot har körts klart anger du följande kommando för att få en lista över bokningspostlådor i klientorganisationen:
 
@@ -82,9 +82,9 @@ För att utföra de här stegen måste du använda ett aktivt Microsoft PowerShe
    ```
 
    > [!IMPORTANT]
-   > Var noga med att skriva det exakta namnet på det bokningspostlådealias som du vill ta bort permanent.
+   > Var noga med att skriva det exakta namnet på det bokningsalias som du vill ta bort permanent.
 
-6. Bekräfta att kalendern har tagits bort genom att ange följande kommando:
+6. Ange följande kommando för att verifiera att kalendern har tagits bort:
 
    ```powershell
     Get-EXOMailbox -RecipientTypeDetails SchedulingMailbox

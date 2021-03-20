@@ -23,19 +23,19 @@ search.appverid:
 - MET150
 description: Lär dig hur man tilldelar licenser till användare.
 ms.date: 08/14/2020
-ms.openlocfilehash: b5179006da896dbadab10d43a43b094acedcb806
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 9f044f29cabf4976d5fbf17b22777da62e4414c5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50113991"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915500"
 ---
 # <a name="assign-licenses-to-users"></a>Tilldela licenser till användare
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -50,8 +50,8 @@ Du kan tilldela licenser till användare antingen på sidan **Aktiva användare*
 ## <a name="before-you-begin"></a>Innan du börjar
 
 - Du måste vara global-, licens- eller användaradministratör för att tilldela licenser. Mer information finns i [Om Microsoft 365-administratörsroller](../add-users/about-admin-roles.md).
-- Du kan [tilldela licenser till användarkonton med Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=850410).
-- Information om hur du använder gruppbaserad licensiering finns i [Tilldela licenser till användare efter gruppmedlemskap i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)
+- Du kan [tilldela licenser till användarkonton med Office 365 PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
+- Information om hur du använder gruppbaserad licensiering finns i [Tilldela licenser till användare efter gruppmedlemskap i Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 - Vissa tjänster, till exempel Sway, tilldelas automatiskt till användarna och behöver inte tilldelas individuellt.
 
 ::: moniker range="o365-worldwide"
@@ -163,7 +163,7 @@ När du använder sidan **Aktiva användare** för att tilldela licenser tilldel
 
 ## <a name="assign-a-license-to-a-guest-user"></a>Tilldela en licens till en gästanvändare
 
-Du kan bjuda in gästanvändare att samarbeta med din organisation i Azure Active Directory administrationscenter. För information om gästanvändaren, se [Vad är gästanvändaråtkomst i Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b). Om du inte har någon gästanvändare se [Snabb start: lägga till gästanvändare i katalogen i Azure-portalen](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
+Du kan bjuda in gästanvändare att samarbeta med din organisation i Azure Active Directory administrationscenter. För information om gästanvändaren, se [Vad är gästanvändaråtkomst i Azure Active Directory B2B?](/azure/active-directory/external-identities/what-is-b2b). Om du inte har någon gästanvändare se [Snabb start: lägga till gästanvändare i katalogen i Azure-portalen](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
 
 > [!IMPORTANT]
 > Du måste vara en global administratör för att utföra de här stegen.

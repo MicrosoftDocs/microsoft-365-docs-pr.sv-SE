@@ -1,5 +1,5 @@
 ---
-title: Konfigurera alternativen standard eller riktad version
+title: Konfigurera alternativen Standard eller Riktad version
 f1.keywords:
 - CSH
 ms.author: sirkkuw
@@ -21,45 +21,45 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
-description: Lär dig konfigurera alternativet för nya produkter och funktioner i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 99a2660af9d8756bf4faf1cf3eddfe142a7c87bf
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+description: Lär dig konfigurera alternativet för nya produkter och uppdateringar av funktioner i administrationscentret för Microsoft 365.
+ms.openlocfilehash: f500aac89495c55d27fc4afb699254653786422d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114495"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915212"
 ---
-# <a name="set-up-the-standard-or-targeted-release-options"></a>Konfigurera alternativen standard eller riktad version
+# <a name="set-up-the-standard-or-targeted-release-options"></a>Konfigurera alternativen Standard eller Riktad version
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
 > [!IMPORTANT]
-> Microsoft 365-uppdateringarna som beskrivs i den här artikeln gäller för Microsoft 365, SharePoint Online och Exchange Online. De här versionsalternativen är riktade och bästa möjliga sätt att släppa ändringar i Microsoft 365, men detta kan inte alltid garanteras för alla uppdateringar. De gäller inte för Microsoft 365-appar, Skype för företag, Microsoft Teams och relaterade tjänster. Information om versionsalternativ för Microsoft 365-appar finns i [Översikt över uppdateringskanaler för Microsoft 365-appar.](https://docs.microsoft.com/deployoffice/overview-update-channels)
+> De Microsoft 365-uppdateringar som beskrivs i den här artikeln gäller för Microsoft 365, SharePoint Online och Exchange Online. De här versionsalternativen är riktade och bästa möjliga sätt att släppa ändringar i Microsoft 365, men kan inte alltid garanteras för alla uppdateringar. De gäller inte för Microsoft 365-appar, Skype för företag, Microsoft Teams eller relaterade tjänster. Information om versionsalternativ för Microsoft 365-appar finns i Översikt över [uppdateringskanaler för Microsoft 365-appar.](/deployoffice/overview-update-channels)
 
-Med Microsoft 365 får du nya produktuppdateringar och funktioner allt eftersom de blir tillgängliga i stället för att göra dyra uppdateringar med några års hjälp. Du kan styra hur organisationen ska få tillgång till uppdateringarna. Du kan till exempel registrera dig för en tidig version, så att organisationen blir bland de första som får uppdateringarna. Du kan ange att bara vissa personer ska ta emot uppdateringarna. Du kan också välja att behålla standardschemat för nya versioner och få uppdateringarna senare. I den här artikeln förklaras de olika versionsalternativen och hur du kan använda dem för din organisation.
+Med Microsoft 365 får du tillgång till nya produktuppdateringar och funktioner allt eftersom de blir tillgängliga i stället för att göra dyra uppdateringar med några års hjälp. Du kan styra hur organisationen ska få tillgång till uppdateringarna. Du kan till exempel registrera dig för en tidig version, så att organisationen blir bland de första som får uppdateringarna. Du kan ange att bara vissa personer ska ta emot uppdateringarna. Du kan också välja att behålla standardschemat för nya versioner och få uppdateringarna senare. I den här artikeln förklaras de olika versionsalternativen och hur du kan använda dem för din organisation.
 
 ## <a name="how-it-works---release-validation"></a>Så här fungerar det - versionsvalidering
 
-Alla nya versioner testas och valideras först av funktionsteamet, sedan av hela Microsoft 365-funktionsteamet följt av hela Microsoft. Efter intern testning och validering är nästa steg en **Riktad version** (tidigare kallad första version) till kunder som anmält sig för detta. För varje version samlar Microsoft in feedback och validerar kvalitet genom att övervaka viktig användningsstatistik. Det här arbetssättet med progressiv validering är avsedd att göra den version som släpps till allmänheten så robust som möjligt. Versionerna beskrivs i bilden nedan. 
+Alla nya versioner testas och valideras först av funktionsteamet och sedan av hela Microsoft 365-funktionsteamet, följt av hela Microsoft. Efter intern testning och validering är nästa steg en **Riktad version** (tidigare kallad första version) till kunder som anmält sig för detta. För varje version samlar Microsoft in feedback och validerar kvalitet genom att övervaka viktig användningsstatistik. Det här arbetssättet med progressiv validering är avsedd att göra den version som släpps till allmänheten så robust som möjligt. Versionerna beskrivs i bilden nedan. 
   
-![Release-valideringsringar för Microsoft 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
+![Versionsvalideringsringar för Microsoft 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
-För betydande uppdateringar meddelas kunderna först i Översikt över [Microsoft 365.](https://products.office.com/business/office-365-roadmap) När en uppdatering är nära att lanseras meddelas den via meddelandecentret i [Microsoft 365.](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)
+Kunder meddelas först om större uppdateringar via Översikt över [Microsoft 365.](https://products.office.com/business/office-365-roadmap) När en uppdatering är nära att lanseras meddelas den via meddelandecentret i [Microsoft 365.](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)
 
 > [!NOTE]
-> Du behöver ett Microsoft 365- eller Azure AD-konto för att få åtkomst till meddelandecentret via [administrationscentret.](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center) Användare av Microsoft 365 Home-abonnemang har inget administrationscenter.
+> Du behöver ett Microsoft 365- eller Azure AD-konto för att få åtkomst till meddelandecentret via [administrationscentret.](/office365/admin/admin-overview/about-the-admin-center) Användare av Microsoft 365-abonnemanget har inget administrationscenter.
 
 
 ## <a name="standard-release"></a>Standardversion
 
-Det här är standardalternativet där du och användarna får de senaste uppdateringarna när de släpps till alla kunder.
+Det här är standardalternativet där du och användarna får de senaste uppdateringarna när de släpps för alla kunder.
   
-En bra metod är att lämna de flesta användare i  **Standard-versionen** och IT-proffs och avancerade användare i riktad version för att utvärdera nya funktioner och förbereda team för att ge support till företagsanvändare och chefer. 
+En bra metod är att lämna de flesta användare i  **Standard-** och IT-proffs och avancerade användare i en riktad version som ger möjlighet att utvärdera nya funktioner och förbereda team som ger support till företagsanvändare och chefer. 
   
 > [!NOTE]
 > Om du växlar från riktad version tillbaka till standardversionen kan det hända att vissa användare förlorar åtkomst till funktioner som inte har inkluderats i standardversionen än. 
@@ -77,11 +77,11 @@ Om du [ställer in alternativet Version i administrationscentret](#set-up-the-re
   
 ### <a name="targeted-release-for-selected-users"></a>Riktad version för valda användare
 
-Om du [ställer in](#set-up-the-release-option-in-the-admin-center) alternativet version i administrationscentret för det här alternativet kan du definiera specifika användare, vanligtvis avancerade användare, för att få tidig åtkomst till funktioner. 
+Om du [ställer in](#set-up-the-release-option-in-the-admin-center) alternativet Version i administrationscentret för det här alternativet kan du definiera specifika användare, vanligtvis avancerade användare, för att få tidig åtkomst till funktioner. 
   
 ## <a name="benefits-of-targeted-release"></a>Fördelar med Riktad version
 
-Riktad version gör att administratörer, ändringshanterare och alla andra som ansvarar för Microsoft 365-uppdateringar kan förbereda sig för kommande ändringar genom att låta dem:
+Riktad version ger administratörer, ändringshanterare och alla andra som ansvarar för Microsoft 365-uppdateringar möjlighet att förbereda sig för kommande ändringar genom att låta dem:
   
 - Testa och validera nya uppdateringar innan de släpps till alla användare i organisationen.
     
@@ -93,27 +93,27 @@ Riktad version gör att administratörer, ändringshanterare och alla andra som 
     
 - Använda funktionskontroller och styra när användare får uppdateringar.
     
-## <a name="set-up-the-release-option-in-the-admin-center"></a>Konfigurera versionsalternativ i administrationscentret
+## <a name="set-up-the-release-option-in-the-admin-center"></a>Konfigurera alternativet för släppta versioner i administrationscentret
 
-Du kan ändra hur din organisation får Microsoft 365-uppdateringar genom att följa de här stegen. Du måste vara global administratör i Microsoft 365 för att anmäla dig.
+Du kan ändra hur organisationen får Microsoft 365-uppdateringar genom att följa de här stegen. Du måste vara global administratör i Microsoft 365 för att anmäla dig.
   
 > [!IMPORTANT]
 > Det kan ta upp till 24 timmar innan nedanstående ändringar verkställs i Microsoft 365. Om organisationen tidigare har använt riktad version och du vill inaktivera detta kan det hända att vissa användare förlorar tillgång till funktioner som inte ingår i standardversionen än. 
   
-1. I administrationscentret går du till **Inställningar**  >  **för organisationsinställning** och under **fliken Organisationsprofil** väljer du **Inställningar för Version.**
+1. I administrationscentret går du till Inställningar  >  **Organisationsinställning och** under fliken **Organisationsprofil** väljer du **Inställningar för släppta inställningar.**
 
 5. Om du vill inaktivera riktad version väljer **du Standard** och sedan **Spara ändringar.** 
     
-6. Om du vill aktivera riktad version för alla användare i organisationen väljer du **Riktad version för alla** och sedan Spara **ändringar.** 
+6. Om du vill aktivera den riktade versionen för alla användare i organisationen väljer du **Riktad version för alla** och sedan Spara **ändringar.** 
     
-7. Om du vill aktivera riktad version för vissa användare i organisationen väljer du **Riktad version för valda** användare och sedan Spara **ändringar.** 
+7. Om du vill aktivera riktad version för vissa användare i organisationen väljer du **Riktad version för valda användare** och sedan Spara **ändringar.** 
     
-8. Välj **Välj att lägga** till en användare i taget eller Ladda upp användare **för** att lägga till dem i grupp.
+8. Välj **Välj användare för** att lägga till en användare i taget eller Ladda upp användare **för** att lägga till dem i grupp.
     
-9. Välj Spara ändringar när du har lagt till **alla användare.**
+9. När du har lagt till alla användare väljer du **Spara ändringar.**
 
 
   
 ## <a name="learn-more"></a>Mer information
 
-Upptäck hur du [hanterar meddelanden](https://docs.microsoft.com/office365/admin/manage/message-center) i meddelandecentret för [Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) för att få aviseringar om kommande uppdateringar och versioner för Microsoft 365.
+Upptäck hur du [hanterar meddelanden](/office365/admin/manage/message-center) i Meddelandecenter för [Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) för att få aviseringar om kommande uppdateringar och versioner för Microsoft 365.

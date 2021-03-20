@@ -18,20 +18,20 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NOINDEX
-description: Läs mer om "MSOID" CNAME-posten i Office 365 som leder dig till den bästa servern för autentiseringsprocessen, så att du får snabbare svar.
+description: Läs mer om CNAME-posten "MSOID" i Office 365 som leder dig till den bästa servern för autentiseringsprocesser, så att du får ett snabbare svar.
 monikerRange: o365-21vianet
-ms.openlocfilehash: aea04391768993c40978d94b50817244cd77405c
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: a1d587abc9db03c9a1f7c5f66711fde3648a0e96
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655490"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914312"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>Vad är syftet med Office 365-CNAME-posten för MSOID?
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
 > [!NOTE]
-> Följande gäller endast för * * Office 365 som drivs av 21Vianet.
+> Följande gäller endast för **Office 365 som drivs av 21Vianet.
   
 Du kanske undrar varför du måste lägga till "MSOID"-CNAME-posten i Office 365. Den här posten måste läggas till för alla egna domäner, oavsett vilken prenumeration du använder. Varför behöver du den här posten? Det har med tekniska frågor att göra - men i princip handlar det om att du med den här posten ser till att dirigeras till den bästa servern för vissa autentiseringsprocesser, för snabbare respons.
   
@@ -39,10 +39,8 @@ Teknisk information: När du kör ett klientprogram som fungerar med Office 365,
   
 Om CNAME-posten saknas för din domän använder dessa program en standardslutpunkt för autentisering i USA, vilket innebär att autentiseringen kan saktas ned. Om CNAME-posten inte har konfigurerats korrekt - till exempel om det finns ett stavfel i **Pekar på-adress** - kan programmen inte autentisera uppgifterna.
   
- **Om Office 365 hanterar din domäns DNS-poster,** Office 365 konfigurerar den här CNAME-posten åt dig. 
+ **Om Office 365 hanterar domänens DNS-poster** Office 365 uppsättningar den här CNAME-posten åt dig. 
   
- **Om du hanterar DNS-poster för din domän hos din DNS-värd kan** du skapa posten själv genom att [följa anvisningarna för din DNS-värd](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+ **Om du hanterar DNS-poster för domänen** hos din DNS-värd skapar du den här posten själv genom att följa instruktionerna [för din DNS-värd.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
   
-Om du planerar en Office 365-distribution och vill veta mer om alla de DNS-poster som du kan behöva lägga till eller uppdatera kan du läsa mer i [referens: externa DNS-poster för Office 365](https://go.microsoft.com/fwlink/?LinkId=579013).
-  
-
+Om du planerar en Office 365-distribution och vill veta mer om alla de DNS-poster som du kan behöva lägga till eller uppdatera kan du läsa mer i Referens: Externa DNS-poster för [Office 365.](../../enterprise/external-domain-name-system-records.md)

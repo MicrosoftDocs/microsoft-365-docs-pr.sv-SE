@@ -20,26 +20,26 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
-description: Lär dig hur du dirigerar trafik till en befintlig offentlig webbplats som ligger utanför Microsoft, om du har konfigurerat Microsoft för att hantera DNS-poster för din egen domän.
-ms.openlocfilehash: 5d2bf23d4052815fae210d0fdf6635288ff46b57
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Lär dig hur du dirigerar trafik till en befintlig offentlig webbplats som inte finns hos Microsoft, om du har ställt in Microsoft på att hantera DNS-poster för din egen domän.
+ms.openlocfilehash: ceef82345e562e2aa4c291f416c454fb831ee45b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645569"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915980"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>Uppdatera DNS-poster för att behålla din webbplats hos ditt nuvarande webbhotell
 
- **Om du hanterar din domäns Microsoft-poster hos din DNS-värd**behöver du inte oroa dig för stegen i det här avsnittet. Din webbplats finns kvar på samma plats och användarna kan fortfarande komma åt den. 
+ **Om du hanterar domänens Microsoft-poster hos din DNS-värd** behöver du inte bry dig om stegen i det här avsnittet. Din webbplats finns kvar på samma plats och användarna kan fortfarande komma åt den. 
   
- **Om Microsoft hanterar dina DNS-poster**och dirigerar trafik till en befintlig offentlig webbplats som finns utanför Microsoft, efter att du har lagt till din domän i Microsoft, gör du följande: 
+ **Om Microsoft hanterar dina DNS-poster gör** du följande för att dirigera trafik till en befintlig offentlig webbplats som finns utanför Microsoft, gör du följande när du har lagt till din domän i Microsoft: 
   
-## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Uppdatera DNS-poster i administrations centret för Microsoft 365
+## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Uppdatera DNS-poster i administrationscentret för Microsoft 365
 1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
 
-2. På sidan **domäner** väljer du domänen och sedan **DNS Records**.
+2. På sidan **Domains** väljer du domänen och sedan **DNS Records.**
 
-3. Under **DNS-inställningar**väljer du **anpassade poster**.
+3. Välj **Anpassade poster** under **DNS-inställningar.**
 
 4. Välj **+ Ny anpassad post** och ange följande: 
     
@@ -67,7 +67,6 @@ Du kan dessutom skapa en CNAME-post för att kunderna lättare ska kunna hitta t
     
 Gör sedan följande:
   
-[Uppdatera domänens NS-poster](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) så att de pekar på Microsoft. 
+[Uppdatera domänens NS-poster så](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) att de pekar på Microsoft. 
   
-När NS-posterna har uppdaterats så att de pekar på Microsoft är din domän konfigurerad. E-postmeddelandet dirigeras till Microsoft och trafik till din webb adress fortsätter att gå till din aktuella webbplats värd.
- 
+När NS-posterna har uppdaterats så att de pekar på Microsoft är din domän konfigurerad. E-post kommer att dirigeras till Microsoft och trafiken till din webbplatsadress kommer fortsätta att gå till din nuvarande webbplatsvärd.

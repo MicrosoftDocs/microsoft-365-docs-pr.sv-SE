@@ -20,24 +20,24 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
-description: Läs om hur du löser licenskonflikter med din Microsoft 365 för företag-prenumeration.
-ms.openlocfilehash: 284a6b169c02314dd2bbd0e13c10c081cb50f58d
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+description: Läs om hur du löser licenskonflikter med microsoft 365 för företag-prenumerationen.
+ms.openlocfilehash: e2b5daa71164b41825282bd5652549347b8307c1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114459"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915188"
 ---
 # <a name="resolve-license-conflicts"></a>Lösa licenskonflikter
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
-Vi rekommenderar att du köper de licenser som du behöver för prenumerationen innan du skapar nya användare. Då kan en licens tilldelas till nya användare när användarkonton skapas. Det uppstår licenskonflikter om du redan har tilldelat alla dina licenser till användare, men vissa licenser har gått ut, eller om du försöker ta bort en licens som redan är tilldelad till en användare. Mer information finns i Ta [bort licenser från din prenumeration.](../../commerce/licenses/remove-licenses-from-subscription.md)
+Vi rekommenderar att du köper de licenser som du behöver för prenumerationen innan du skapar nya användare. Då kan en licens tilldelas till nya användare när användarkonton skapas. Det uppstår licenskonflikter om du redan har tilldelat alla dina licenser till användare, men vissa licenser har gått ut, eller om du försöker ta bort en licens som redan är tilldelad till en användare. Mer information finns i Ta [bort licenser från din prenumeration.](../../commerce/licenses/buy-licenses.md)
   
 ## <a name="how-do-i-view-license-conflicts"></a>Hur visar jag licenskonflikter?
 
@@ -59,7 +59,7 @@ Vi rekommenderar att du köper de licenser som du behöver för prenumerationen 
 
 ::: moniker-end
 
-2. Titta i kolumnen **Status** för information om konflikten. Om det uppstår en konflikt visas ett varningsmeddelande om att en eller flera användare behöver en giltig licens.
+2. Titta i kolumnen **Status** för information om konflikten. Om det uppstår en konflikt visas ett varningsmeddelande där det står att en eller flera användare behöver en giltig licens.
 
     > [!NOTE]
     > Du kommer inte att se kolumnen **Status** om det inte finns några konflikter.

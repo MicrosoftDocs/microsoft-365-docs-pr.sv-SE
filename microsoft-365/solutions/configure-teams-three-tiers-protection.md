@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: Lär dig hur du konfigurerar Teams för bättre säkerhet vid delning av filer med hjälp av tre skyddsnivåer, och balansera säkerhet med att kunna samarbete enkelt.
-ms.openlocfilehash: d41effb6db9f8995c3c878523babf200ab9af762
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 37d59d968d3a8e83a5b42fcce4c0400940314a41
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509248"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916220"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Konfigurera Teams med tre skyddsnivåer
 
@@ -42,7 +42,7 @@ Konfigurationerna i den här artikeln överensstämmer med Microsofts rekommenda
 
 - Strikt känsligt skydd
 
-Mer information om nivåerna och de funktioner som rekommenderas för varje nivå finns i [Microsoft Cloud för Enterprise Architects-illustrationer](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)
+Mer information om nivåerna och de funktioner som rekommenderas för varje nivå finns i [Microsoft Cloud för Enterprise Architects-illustrationer](./cloud-architecture-models.md)
 
 
 ## <a name="three-tiers-at-a-glance"></a>En snabb titt på tre nivåer
@@ -68,11 +68,11 @@ Team för känsligt och mycket känsligt skydd är privata team där delning och
 
 ## <a name="sensitivity-labels"></a>Känslighetsetiketter
 
-Nivåerna känsligt och strikt känsligt använder känslighetsetiketter för att skydda teamet och dess filer. För att implementera dessa nivåer måste du aktivera [känslighetsetiketter för att skydda innehåll i Microsoft Teams, Office 365-grupper och SharePoint-webbplatser](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+Nivåerna känsligt och strikt känsligt använder känslighetsetiketter för att skydda teamet och dess filer. För att implementera dessa nivåer måste du aktivera [känslighetsetiketter för att skydda innehåll i Microsoft Teams, Office 365-grupper och SharePoint-webbplatser](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 Medan grundnivån inte kräver känslighetsetiketter kan du överväga att skapa en "allmän" etikett och sedan begära att alla grupper har etiketter. På så sätt ser du till att användarna kan välja känsligheten när de skapar ett team. Om du planerar att distribuera nivåerna känsligt och strikt känsligt rekommenderar vi att du skapar en allmän etikett som du kan använda för team på grundnivån och för filer som inte är känsliga.
 
-Om du är nybörjare inför att använda känslighetsetiketter rekommenderar vi att du läser [kom igång med känslighetsetiketter](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels) för att komma igång. 
+Om du är nybörjare inför att använda känslighetsetiketter rekommenderar vi att du läser [kom igång med känslighetsetiketter](../compliance/get-started-with-sensitivity-labels.md) för att komma igång. 
 
 Om du redan har rullat ut känslighetsetiketter i din organisation bör du fundera på hur etiketterna som används i nivåerna känsligt och strikt känsligt passar med din övergripande etikettstrategi. 
 
@@ -95,7 +95,7 @@ Som standard kan både ägare och medlemmar i teamet dela filer och mappar med p
 
 ## <a name="guest-sharing"></a>Gästdelning
 
-Om du vill samarbeta med personer utanför organisationen rekommenderar vi att du konfigurerar [SharePoint-och OneDrive-integrering med Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) för bästa delnings- och administrationsupplevelse.
+Om du vill samarbeta med personer utanför organisationen rekommenderar vi att du konfigurerar [SharePoint-och OneDrive-integrering med Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) för bästa delnings- och administrationsupplevelse.
 
 Gästdelning i Teams är inaktiverat som standard, men delning för Office 365-grupper (där teammedlemskap lagras) och SharePoint är aktiverat. Vi aktiverar delning i Teams på grundnivån, och du kan stänga av den om det behövs i nivåerna känsligt och strikt känsligt genom att använda en känslighetsetikett.
 
@@ -113,7 +113,7 @@ Se följande referenser för att skapa en säker och produktiv gästdelningsmilj
 
 ## <a name="access-from-unmanaged-devices"></a>Åtkomst från ohanterade enheter
 
-För nivåerna känsligt och strikt känsligt begränsar vi åtkomst till SharePoint-innehåll med känslighetsetiketter. Med villkorad åtkomst i Azure AD finns många alternativ för att bestämma hur användare får åtkomst till Microsoft 365, inklusive begränsningar utifrån plats, risker, kompatibilitetsstatus för enheter och andra faktorer. Vi rekommenderar att du läser [Vad är villkorad åtkomst?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) och fundera på vilka tilläggsprinciper som passar bäst för din organisation.
+För nivåerna känsligt och strikt känsligt begränsar vi åtkomst till SharePoint-innehåll med känslighetsetiketter. Med villkorad åtkomst i Azure AD finns många alternativ för att bestämma hur användare får åtkomst till Microsoft 365, inklusive begränsningar utifrån plats, risker, kompatibilitetsstatus för enheter och andra faktorer. Vi rekommenderar att du läser [Vad är villkorad åtkomst?](/azure/active-directory/conditional-access/overview) och fundera på vilka tilläggsprinciper som passar bäst för din organisation.
 
 Observera att gäster ofta inte har enheter som hanteras av din organisation. Om du tillåter gäster på någon av nivåerna bör du fundera på vilka typer av enheter de använder för att komma åt grupper och webbplatser och ange principer för ohanterad enhet därefter.
 
@@ -123,6 +123,6 @@ Börja med [att konfigurera grundnivån för skydd](configure-teams-baseline-pro
 
 ## <a name="see-also"></a>Se även
 
-[Säkerhet och efterlevnad för Microsoft Teams](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
+[Säkerhet och efterlevnad för Microsoft Teams](/microsoftteams/security-compliance-overview)
 
-[Aviseringsregler i säkerhets- och efterlevnadscentret](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
+[Aviseringsregler i säkerhets- och efterlevnadscentret](../compliance/alert-policies.md)

@@ -18,20 +18,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
-description: Få reda på hur du överför data manuellt mellan två Microsoft 365-konton när du ändrade plan-eller företags namnet eller kombinerar flera abonnemang till ett.
-ms.openlocfilehash: b7b0bb9c9b95b31d98040ae90632ef87a7fb0e3b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Lär dig hur du överför data manuellt mellan två Microsoft 365-konton när du ändrade abonnemang eller företagsnamn eller kombinerade flera prenumerationer till ett.
+ms.openlocfilehash: 9916da50f4589f949d35466ca6aa8f1d79cc40ea
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645149"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915512"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Överföra data manuellt mellan två konton
 
-Förbereda för att lyfta upp dina höljen och blockera en lång tid i kalendern: att överföra data mellan två Microsoft 365-konton är en manuell, komplicerad och tids krävande process. Detta är inte en automatiserad eller understödd process. Vi hjälper dig komma igång
+Kavla upp ärmarna och spärra tid i kalendern: att överföra data mellan två Microsoft 365-konton är en manuell, komplicerad och tidskrävande process. Detta är inte en automatiserad eller understödd process. Vi hjälper dig komma igång
   
 > [!CAUTION]
-> Det kommer att vara nere tid under processen där e-post, Skype för företag och en offentlig webbplats som hanteras av Microsoft 365 inte fungerar. Användare kommer att få nya användarnamn och lösenord och de kommer att behöva återställa Outlook.
+> Under vissa tidsperioder kommer e-post, Skype för företag och en offentlig webbplats på Microsoft 365 inte att fungera. Användare kommer att få nya användarnamn och lösenord och de kommer att behöva återställa Outlook.
 
 **Använd bara instruktionerna i detta ämne för manuell överföring av data om något av följande gäller:**
   
@@ -46,26 +46,26 @@ Förbereda för att lyfta upp dina höljen och blockera en lång tid i kalendern
 
 |**Uppgifter**|**Steg**|
 |:-----|:-----|
-|Köp det alternativ du vill byta till.  <br/> |När du registrerar kontot anger du företagsnamnet som ska användas i de inledande domännamnen:  *dittföretag*  .onmicrosoft.com,  *dittföretag*  -public.sharepoint.com, and  *dittföretag*  .sharepoint.com. Du måste använda ett annat namn för  *dittföretag*  än du använder för eventuella befintliga abonnemang.  <br/> > [!NOTE]>  Det tar normalt minst flera månader efter att du avbryter ett abonnemang att ta bort de inledande domännamnen som använder  *dittföretag*  från våra system. Även om du planerar att spara alla data från din gamla Microsoft 365-prenumeration och sedan avbryta prenumerationen är det gamla  *dittföretag*  -värdet inte omedelbart tillgängligt för att användas i ett nytt abonnemang.           |
-|Ta bort din anpassade domän från din gamla Microsoft 365-prenumeration.  <br/> | Följ [steg som krävs innan en domän tas bort](remove-a-domain.md) för att ta bort domännamnet från användares e-postadresser och ta bort DNS-poster för e-post och Lync för den anpassade domänen. Om du är värd för din offentliga webbplats på Microsoft 365 måste du även ta bort den CNAME-post som pekar på den.  <br/> > [!IMPORTANT]>  När du tagit bort den MX-post som dirigerar e-post till denna anpassade domän, kommer e-post att sluta fungera tills du lagt till domänen i ditt nya konto, konfigurerat den nya MX-posten och konfigurerat dina användare. När du tar bort DNS-posterna för Lync, kommer Lync att sluta fungera. När du tar bort CNAME-posten som pekar på din offentliga webbserver, kommer den inte att vara tillgänglig.           [Ta bort domänen](remove-a-domain.md) .  <br/> |
+|Köp det alternativ du vill byta till.  <br/> |När du registrerar kontot anger du företagsnamnet som ska användas i de inledande domännamnen:  *dittföretag*  .onmicrosoft.com,  *dittföretag*  -public.sharepoint.com, and  *dittföretag*  .sharepoint.com. Du måste använda ett annat namn för  *dittföretag*  än du använder för eventuella befintliga abonnemang.  <br/> > [!NOTE]>  Det tar normalt minst flera månader efter att du avbryter ett abonnemang att ta bort de inledande domännamnen som använder  *dittföretag*  från våra system. Även om du planerar att spara alla data från din gamla Microsoft 365-prenumeration och avbryta prenumerationen, är det gamla dittföretag-värdet inte omedelbart tillgängligt för användning i ett nytt abonnemang.            |
+|Ta bort din egen domän från din gamla Microsoft 365-prenumeration.  <br/> | Följ [steg som krävs innan en domän tas bort](remove-a-domain.md) för att ta bort domännamnet från användares e-postadresser och ta bort DNS-poster för e-post och Lync för den anpassade domänen. Om du har din offentliga webbplats på Microsoft 365 måste du också ta bort CNAME-posten som pekar på den.  <br/> > [!IMPORTANT]>  När du tagit bort den MX-post som dirigerar e-post till denna anpassade domän, kommer e-post att sluta fungera tills du lagt till domänen i ditt nya konto, konfigurerat den nya MX-posten och konfigurerat dina användare. När du tar bort DNS-posterna för Lync, kommer Lync att sluta fungera. När du tar bort CNAME-posten som pekar på din offentliga webbserver, kommer den inte att vara tillgänglig.           [Ta bort domänen](remove-a-domain.md) .  <br/> |
 |Konfigurera din anpassade domän för det nya abonnemanget och konfigurera dina användare.  <br/> | Konfigurera ditt nya abonnemang, inklusive de DNS-poster som krävs för din anpassade domän.  <br/>  Skapa dina användare, med e-postadresser, på din anpassade domän.  <br/> |
-|Överför data från ditt gamla abonnemang till ditt nya abonnemang.  <br/> | Logga in till båda kontona i separata webbläsarfönster:  <br/>  Högerklicka på din webbläsare och öppna två privata webbläsare. Du kan använda olika inloggningsuppgifter i de två fönstren för att logga in på båda kontona.  <br/> [Överföra administrativa inställningar mellan abonnemang](#email) <br/> [Överföra struktur och data för gruppwebbplats](#transfer-team-site-structure-and-data) <br/> [Överföra en offentlig webbplats mellan abonnemang](#transfer-a-public-website-between-subscriptions) <br/> [Överföra administrativa inställningar mellan abonnemang](#email) <br/> |
-|Avbryt prenumerationen för det abonnemang du är klar med genom att ringa Microsoft Support för Microsoft 365.  <br/> | Kontrollera att ditt nya abonnemang fungerar och att alla data har överförts.  <br/>  [Kontakta kund tjänst](../contact-support-for-business-products.md) för att avbryta ditt gamla abonnemang.  <br/> |
+|Överför data från ditt gamla abonnemang till ditt nya abonnemang.  <br/> | Logga in till båda kontona i separata webbläsarfönster:  <br/>  Högerklicka på webbläsarikonen och öppna två privata webbläsarfönster. Du kan använda olika inloggningsuppgifter i de två fönstren för att logga in på båda kontona.  <br/> [Överföra administrativa inställningar mellan abonnemang](#email) <br/> [Överföra struktur och data för gruppwebbplats](#transfer-team-site-structure-and-data) <br/> [Överföra en offentlig webbplats mellan abonnemang](#transfer-a-public-website-between-subscriptions) <br/> [Överföra administrativa inställningar mellan abonnemang](#email) <br/> |
+|Avbryt abonnemanget för det abonnemang som du är klar med genom att ringa Microsoft Support för Microsoft 365.  <br/> | Kontrollera att ditt nya abonnemang fungerar och att alla data har överförts.  <br/>  [Kontakta kundsupport om du](../contact-support-for-business-products.md) vill avbryta din gamla prenumeration.  <br/> |
 
 ## <a name="transfer-administrative-settings-between-subscriptions"></a>Överföra administrativa inställningar mellan abonnemang
 
 Gå till följande sidor i varje konto och konfigurera det nya kontot baserat på inställningarna i det gamla kontot.
   
-Om du överför data från Microsoft 365 till Microsoft 365 medel stora företag eller Microsoft 365 Enterprise struktureras administratörs sidorna på olika sätt. Titta på en [video: Introduktion till Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/admin/)och gå till följande platser för att titta på administratörs inställningar.
+Om du överför data från Microsoft 365 till Microsoft 365 Midsize Business eller Microsoft 365 Enterprise är administrationssidorna strukturerade på ett annat sätt. Titta på [en video: Introduktion till Microsoft 365 Enterprise](../index.yml)och gå till följande platser för att se administrationsinställningar.
   
-För Microsoft 365 Enterprise och Microsoft 365 medel stora företag:
+För Microsoft 365 Enterprise och Microsoft 365 Midsize Business:
   
 |**Plats**|**Ändamål**|
 |:-----|:-----|
-|**Administratör** \> **Microsoft 365** \> **Tjänst inställningar** <br/> |Välj varje flik för inställningar för e-post, webbplatser, Lync, användar program, lösen ord, community, rättighets hantering och mobil.  <br/> |
+|**Administratör** \> **Microsoft 365** \> **Tjänstinställningar** <br/> |Välj varje flik för inställningar för e-post, webbplatser, Lync, användarprogramvara, lösenord, community, rättighetshantering och mobil.  <br/> |
 |**Admin** \> **Exchange** <br/> | Exchange Online-inställningar  <br/> |
 |**Admin** \> **SharePoint** <br/> | SharePoint Online-inställningar  <br/> |
-|**Administratör** \> **Skype för företag** <br/> |Ytterligare inställningar för Skype för företag  <br/> |
+|**Administratör** \> **Skype för företag** <br/> |Ytterligare Skype för företag-inställningar  <br/> |
 
 För Microsoft 365 Small Business
   
@@ -75,12 +75,12 @@ För Microsoft 365 Small Business
 
 ## <a name="transfer-a-public-website-between-subscriptions"></a>Överföra en offentlig webbplats mellan abonnemang
 
-Om du har en offentlig webbplats som finns på Microsoft 365 måste du spara den och återskapa den på ditt nya abonnemang.
+Om du har en offentlig webbplats på Microsoft 365 måste du spara den och skapa den på nytt i den nya prenumerationen.
   
 > [!NOTE]
 > Om din offentliga webbplats ligger på en extern DNS-leverantör, behövs du inte ändra något. Den kommer inte att påverkas av din övergång.
   
-Om du vill spara ett dokumentbibliotek eller listinnehåll från en SharePoint Online-miljö på filresurser eller på en lokal dator kan du läsa mer i artikeln om [manuell migrering av SharePoint Online-innehåll](https://go.microsoft.com/fwlink/p/?LinkId=402910).
+Om du vill spara ett dokumentbibliotek eller listinnehåll från en SharePoint Online-miljö på filresurser eller på en lokal dator kan du läsa mer i artikeln om [manuell migrering av SharePoint Online-innehåll](/sharepoint/troubleshoot/migration-tool/content-manual-migration).
   
 > [!NOTE]
 > Appen för migrering av offentlig webbplats kan inte överföra data till ett annat abonnemang.
@@ -91,22 +91,22 @@ Det finns flera sätt att spara eller överföra data för en gruppwebbplats:
   
 - Du kan spara den gamla webbplatsen som en mall och importera mallen i den nya webbplatsen.
 
-- För att överföra dokument måste du först återskapa din hierarki på den nya webbplatsen. Sedan kan du öppna båda SharePoint-gruppwebbplatserna samtidigt, öppna båda dokumentbiblioteken med Utforskaren och kopiera och klistra in dokumenten. Se [video: Kopiera eller flytta biblioteksfiler med hjälp av Öppna med Utforskaren](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
+- För att överföra dokument återskapar du först hierarkin manuellt på den nya webbplatsen. Sedan kan du öppna båda SharePoint-gruppwebbplatserna samtidigt, öppna båda dokumentbiblioteken med Utforskaren och kopiera och klistra in dokumenten. Se [video: Kopiera eller flytta biblioteksfiler med hjälp av Öppna med Utforskaren](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
 
 - För att överföra listdata sparar du en [listmall](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393) och använder den sparade mallen för att återskapa listan på den nya webbplatsen.
 
-- Om du vill spara ett dokument bibliotek eller List innehåll från en SharePoint Online-miljö (OneDrive för företag eller grupp webbplatser) på fil resurser eller på en lokal dator kan du läsa [information om manuell migrering av SharePoint Online-innehåll](https://support.microsoft.com/kb/2783484).
+- Om du vill spara ett dokumentbibliotek eller listinnehåll från en SharePoint Online-miljö (OneDrive för företag eller gruppwebbplatser) på filresurser eller på en lokal dator, se Information om manuell migrering av [SharePoint Online-innehåll.](https://support.microsoft.com/kb/2783484)
 
 ## <a name="transfer-users-data-between-subscriptions"></a>Överföra användarnas data mellan abonnemang
 
-### <a name="email"></a>E-
+### <a name="email"></a>E-post:
 
 Be användare [flytta sin e-post, sina kontakter, uppgifter och kalenderinformation](https://support.microsoft.com/office/0996ece3-57c6-49bc-977b-0d1892e2aacc) när du konfigurerat det nya abonnemanget. De kan komma åt sin gamla e-post genom att använda sitt ursprungliga användarnamn, som sue@contoso.onmicrosoft.com.
   
 ### <a name="onedrive-for-business-data"></a>OneDrive för företag-data:
 
-Be användare att kopiera eller synkronisera [OneDrive för företag-innehåll till sin dator](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd)och sedan lägga till det igen i sitt nya abonnemang.
+Be användarna att kopiera/synkronisera [OneDrive för företag-innehåll](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd)till sin dator och sedan lägga till det i sin nya prenumeration.
 
 ### <a name="onenote"></a>OneNote 
 
-Be användare [säkerhetskopiera OneNote](https://support.microsoft.com/office/back-up-notes-f58b34b0-611d-435e-87fa-7942a1767af4?ui=en-us&rs=en-us&ad=us) och [Återställa anteckningar från en säkerhets kopia](https://support.microsoft.com/en-us/office/restore-notes-from-a-backup-5daf9cb0-6769-4998-a5de-f044fdd0d831?ui=en-us&rs=en-us&ad=us) till deras nya abonnemang.
+Be användarna att [säkerhetskopiera OneNote och](https://support.microsoft.com/office/back-up-notes-f58b34b0-611d-435e-87fa-7942a1767af4?ui=en-us&rs=en-us&ad=us) återställa [anteckningar från en säkerhetskopia till](https://support.microsoft.com/en-us/office/restore-notes-from-a-backup-5daf9cb0-6769-4998-a5de-f044fdd0d831?ui=en-us&rs=en-us&ad=us) sina nya prenumerationer.

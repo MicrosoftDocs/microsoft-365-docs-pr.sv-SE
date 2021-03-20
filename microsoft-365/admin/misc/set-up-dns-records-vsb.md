@@ -20,12 +20,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Lär dig verifiera din domän och skapa DNS-poster på vilken DNS-värd som helst för Microsoft 365.
 ms.custom:
 - AdminSurgePortfolio
-ms.openlocfilehash: c5c33af8a5635d1092aec2f1bffdfc942f2e4851
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 506ee887edbc59956aee11059a7085bc4b22624e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126341"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914600"
 ---
 # <a name="connect-your-domain-to-microsoft-365"></a>Anslut din domän till Microsoft 365
 
@@ -72,10 +72,10 @@ Kontrollera att fälten är inställda på följande värden:
 
 Spara posten.
 
-Använd något av följande [SPF-verifieringsverktyg](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain) för att verifiera SPF-posten
+Använd något av följande [SPF-verifieringsverktyg](/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain) för att verifiera SPF-posten
 
 SPF har utformats för att hjälpa till att förhindra förfalskning men det finns förfalskningsmetoder som SPF inte skyddar mot. För att skydda mot dessa ska du, efter att ha konfigurerat SPF, även konfigurera DKIM och DMARC för Microsoft 365.
 
-Information om hur du kommer igång finns i [Använda DKIM för att validera utgående e-post som skickas från din domän i Microsoft 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx) och [Använda DMARC för att validera e-post i Microsoft 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
+Information om hur du kommer igång finns i [Använda DKIM för att validera utgående e-post som skickas från din domän i Microsoft 365](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) och [Använda DMARC för att validera e-post i Microsoft 365](../../security/office-365-security/use-dmarc-to-validate-email.md).
 
 Slutligen, gå tillbaka till administratörscentrets domäninställningsguide för att slutföra installationen.

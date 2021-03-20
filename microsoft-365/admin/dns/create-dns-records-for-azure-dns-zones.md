@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fbcef2d7-ebaf-40d0-ba1f-cdaeff9f50ef
-description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster i Azure DNS Zones för Microsoft.
-ms.openlocfilehash: c276570ec1d5ff079348bd8202ea597ef61e88f6
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster i Azure DNS-zoner för Microsoft.
+ms.openlocfilehash: be4baa80d0f96e92dc9dd9004054f29f12f6415b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49656873"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916148"
 ---
 # <a name="create-dns-records-for-azure-dns-zones"></a>Skapa DNS-poster för Azure DNS-zoner
 
@@ -42,13 +42,13 @@ Det här är de viktigaste posterna att lägga till.
 
 - [Lägga till en MX-post så att e-post för din domän kommer till Microsoft.](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
     
-- [Lägga till de fyra CNAME-posterna som krävs för Microsoft](#add-the-four-cname-records-that-are-required-for-microsoft)
+- [Lägg till de fyra CNAME-poster som krävs för Microsoft](#add-the-four-cname-records-that-are-required-for-microsoft)
     
 - [Lägga till en TXT-post för SPF för att förhindra skräppost](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
 - [Lägga till de två SRV-posterna som krävs för Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-När du har lagt till dessa poster på Azure är din domän konfigurerad för att fungera med Microsoft-tjänster.
+När du har lagt till dessa poster i Azure är domänen konfigurerad för att fungera med Microsoft-tjänster.
   
 > [!NOTE]
 > Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
@@ -59,30 +59,30 @@ När du har lagt till dessa poster på Azure är din domän konfigurerad för at
 > [!IMPORTANT]
 > Du måste genomföra anvisningarna hos den domänregistrator där du köpte och registrerade domänen. 
   
-När du registrerade dig för Azure skapade du en resurs grupp i en DNS-zon och kopplade sedan domän namnet till den resurs gruppen. Domän namnet är registrerat i en extern domän registrator; Azure erbjuder inte tjänster för domän registrering.
+När du registrerade dig för Azure skapade du en resursgrupp i en DNS-zon och tilldelade sedan domännamnet till den resursgruppen. Domännamnet är registrerat hos en extern domänregistrator. Azure erbjuder inte domänregistreringstjänster.
   
-Om du vill verifiera och skapa DNS-poster för din domän i Microsoft måste du först ändra namnservrar hos din domän registrator så att de använder Azure-namnservrar som är tilldelad till din resurs grupp.
+Om du vill verifiera och skapa DNS-poster för din domän i Microsoft måste du först ändra namnservrarna hos domänregistratorn så att de använder de Azure-namnservrar som tilldelats resursgruppen.
   
 Gör så här om du själv vill ändra domänens namnservrar på din domänregistrators webbplats:
   
 1. Leta reda på var på domänregistratorns webbplats som du kan redigera namnservrar för din domän.
     
-2. Skapa antingen två nya namnserverposter med hjälp av värdena i följande tabell eller ändra de befintliga namnserverposterna så att de matchar följande värden. Ett exempel på en Azure-tilldelad namnservrar visas nedan.
+2. Skapa antingen två nya namnserverposter med hjälp av värdena i följande tabell eller ändra de befintliga namnserverposterna så att de matchar följande värden. Ett exempel på Azure-tilldelade namnservrar visas nedan.
     
 
 
-**Första Namnserver:** Använd värdet Name Server som tilldelats av Azure.  
-**Andra Namnserver:** Använd värdet Name Server som tilldelats av Azure.  
+**Första namnserver:** Använd namnservervärdet som Azure tilldelat.  
+**Andra namnserver:** Använd namnservervärdet som Azure tilldelat.  
 
-![Azure-BP-omdelegera-1-1](../../media/3e4805ea-608a-4df9-8f68-1fbf70d13d08.png)
+![Azure-BP- Omdelegera-1-1](../../media/3e4805ea-608a-4df9-8f68-1fbf70d13d08.png)
   
 > [!TIP]
-> Du bör använda minst två namnserver poster. Om det finns fler namnservrar på din domän registrators webbplats ska du ta bort dem. 
+> Du bör använda minst två namnserverposter. Om det finns andra namnservrar listade på din domänregistrators webbplats bör du ta bort dem. 
   
 3. Spara ändringarna.
     
 > [!NOTE]
-> Det kan ta flera timmar innan ändringarna har uppdaterats genom hela DNS-systemet på Internet. Sedan är din Microsoft-e-post och andra tjänster inställda för att fungera med din domän. 
+> Det kan ta flera timmar innan ändringarna har uppdaterats genom hela DNS-systemet på Internet. Sedan är din Microsoft-e-post och andra tjänster inställda på att fungera med din domän. 
   
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 <a name="BKMK_verify"> </a>
@@ -92,27 +92,27 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
   
-1. Kom igång genom att gå till domän sidan på Azure med [den här länken](https://portal.azure.com ). Du uppmanas att logga in först.
+1. Kom igång genom att gå till domänsidan på Azure med den [här länken.](https://portal.azure.com ) Du uppmanas att logga in först.
     
     ![Azure-BP-Configure-1-1](../../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
   
-2. I **Sök fältet** på sidan **instrument panel** skriver du in **DNS Zones**. I resultat visningen väljer du **DNS Zones** under **tjänste** delen. När du har omdirigerats väljer du den domän som du vill uppdatera.
+2. Med hjälp **av sökfältet** på sidan **Dashboard skriver** du i **DNS-zoner**. I resultatfönstret väljer du **DNS-zoner** under **avsnittet Tjänster.** När du har omdirigerats väljer du den domän som du vill uppdatera.
     
     ![Azure-BP-Configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
-3. Välj **+ Record set** i området **DNS Zone** på sidan **Inställningar** för din domän.
+3. Välj **+ Record** set i området **DNS zone på** sidan Settings för din **domän.**
     
     ![Azure-BP-Configure-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
-4. I rutan **Lägg till post uppsättning** väljer du värden från följande tabell i rutorna för den nya posten. 
+4. I området **Add record set** väljer du värdena från följande tabell i rutorna för den nya postuppsättningen. 
     
-    (Välj värdena **Type** och **TTL** i list rutan.) 
+    (Välj värdena **för Type** **och TTL** i listrutan.) 
     
     |**Name**|**Type (typ)**|**TTL**|**TTL-enhet**|**Värde**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |TXT  <br/> |9.1  <br/> |Tider  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |TXT  <br/> |1  <br/> |Tider  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![Azure-BP-verify-1-1](../../media/7d5a253c-e88f-4565-a00a-79bba52f9970.png)
+    ![Azure-BP-Verify-1-1](../../media/7d5a253c-e88f-4565-a00a-79bba52f9970.png)
   
 5. Välj **OK**.
   
@@ -142,25 +142,25 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Lägga till en MX-post så att e-post för din domän kommer till Microsoft.
 <a name="BKMK_add_MX"> </a>
 
-1. Kom igång genom att gå till domän sidan på Azure med [den här länken](https://portal.azure.com ). Du uppmanas att logga in först.
+1. Kom igång genom att gå till domänsidan på Azure med den [här länken.](https://portal.azure.com ) Du uppmanas att logga in först.
     
     ![Azure-BP-Configure-1-1](../../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
   
-2. På sidan **instrument panel** i området **alla resurser** väljer du den domän som du vill uppdatera. 
+2. Välj den domän du vill **uppdatera i området** Alla resurser på sidan **Dashboard.** 
     
     ![Azure-BP-Configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
-3. Välj **+ Record set** i området **DNS Zone** på sidan **Inställningar** för din domän.
+3. Välj **+ Record** set i området **DNS zone på** sidan Settings för din **domän.**
     
     ![Azure-BP-Configure-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
-4. I rutan **Lägg till post uppsättning** väljer du värden från följande tabell i rutorna för den nya posten. 
+4. I området **Add record set** väljer du värdena från följande tabell i rutorna för den nya postuppsättningen. 
     
-    (Välj värdena **Type** och **TTL** i list rutan.) 
+    (Välj värdena **för Type** **och TTL** i listrutan.) 
     
-    |**Name**|**Type (typ)**|**TTL**|**TTL-enhet**|**Preference**|**E-postutbyte**|
+    |**Name**|**Type (typ)**|**TTL**|**TTL-enhet**|**Preference**|**Mail Exchange**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |9.1  <br/> |Tider  <br/> |10.3  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Obs!** Hämta ditt  *\<domain-key\>*  från ditt Microsoft-konto.   [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)  
+    |@  <br/> |MX  <br/> |1  <br/> |Tider  <br/> |10  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](../setup/domains-faq.yml) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Obs!** Skaffa ditt  *\<domain-key\>*  Microsoft-konto.   [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)  
    
     ![Azure-BP-Configure-2-1](../../media/712c23ae-9d38-4af2-94e0-0704e70744fe.png)
   
@@ -170,15 +170,15 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 6. Om det finns andra MX-poster i avsnittet **MX Records** måste du ta bort dem. 
     
-    I området **DNS Zone** väljer du först **MX-postuppsättningen**.
+    Välj först **mx-postuppsättningen** i **området DNS zone**.
     
     ![Azure-BP-Configure-2-3](../../media/9890da61-6fcd-4c61-888e-ccbb84f80cd0.png)
   
-    Välj sedan den MX-post som du vill ta bort.
+    Välj sedan den MX-post du vill ta bort.
     
     ![Azure-BP-Configure-2-4](../../media/afe54f12-66d2-4ff3-80e9-427448e4c32c.png)
   
-7. Välj **snabb menyn (...)** och välj sedan **ta bort**.
+7. Välj **snabbmenyn (...) och** välj sedan Ta **bort**.
     
     ![Azure-BP-Configure-2-5](../../media/25219e25-bc14-4bc7-84ed-ee65eb28a8ed.png)
   
@@ -186,32 +186,32 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Azure-BP-Configure-2-6](../../media/c6133096-5e43-4637-9c01-b63ee4b03517.png)
   
-## <a name="add-the-four-cname-records-that-are-required-for-microsoft"></a>Lägga till de fyra CNAME-posterna som krävs för Microsoft
+## <a name="add-the-four-cname-records-that-are-required-for-microsoft"></a>Lägg till de fyra CNAME-poster som krävs för Microsoft
 <a name="BKMK_add_CNAME"> </a>
 
-1. Kom igång genom att gå till domän sidan på Azure med [den här länken](https://portal.azure.com ). Du uppmanas att logga in först.
+1. Kom igång genom att gå till domänsidan på Azure med den [här länken.](https://portal.azure.com ) Du uppmanas att logga in först.
     
     ![Azure-BP-Configure-1-1](../../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
   
-2. På sidan **instrument panel** i området **alla resurser** väljer du den domän som du vill uppdatera. 
+2. Välj den domän du vill **uppdatera i området** Alla resurser på sidan **Dashboard.** 
     
     ![Azure-BP-Configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
-3. Välj **+ Record set** i området **DNS Zone** på sidan **Inställningar** för din domän.
+3. Välj **+ Record** set i området **DNS zone på** sidan Settings för din **domän.**
     
     ![Azure-BP-Configure-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
 4. Lägg till den första av de fyra CNAME-posterna.
     
-    I rutan **Lägg till post uppsättning** skriver du in, eller kopierar och klistrar in, värdena från den första raden i följande tabell i rutorna för den nya posten. 
+    Gå till **området Add record set.** I den nya postuppsättningens rutor skriver du in, eller kopierar och klistrar in, värdena från den första raden i följande tabell. 
     
-    (Välj värdena **Type** och **TTL** i list rutan.) 
+    (Välj värdena **för Type** **och TTL** i listrutan.) 
     
     |**Name**|**Type (typ)**|**TTL**|**TTL-enhet**|**Alias**|
     |:-----|:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME  <br/> |9.1  <br/> |Tider  <br/> |autodiscover.outlook.com  <br/> |
-    |sip  <br/> |CNAME  <br/> |9.1  <br/> |Tider  <br/> |sipdir.online.lync.com  <br/> |
-    |lyncdiscover  <br/> |CNAME  <br/> |9.1  <br/> |Tider  <br/> |webdir.online.lync.com  <br/> |
+    |autodiscover  <br/> |CNAME  <br/> |1  <br/> |Tider  <br/> |autodiscover.outlook.com  <br/> |
+    |sip  <br/> |CNAME  <br/> |1  <br/> |Tider  <br/> |sipdir.online.lync.com  <br/> |
+    |lyncdiscover  <br/> |CNAME  <br/> |1  <br/> |Tider  <br/> |webdir.online.lync.com  <br/> |
     
    
     ![Azure-BP-Configure-3-1](../../media/a1c4d869-da97-43b3-952c-d513a20231dc.png)
@@ -220,47 +220,47 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Azure-BP-Configure-3-2](../../media/b89b51da-1c07-43cf-9fab-75d2e5eb3544.png)
   
-6. Lägg till de andra tre CNAME-posterna.
+6. Lägg till var och en av de tre andra CNAME-posterna.
     
-    Välj **+ Record set** i området **DNS Zone** . I den tomma post uppsättningen skapar du en post med värdena från nästa rad i tabellen och väljer sedan **OK** för att slutföra den posten. 
+    Välj + **Postuppsättning** i området **DNS-zon.** I den tomma postuppsättningen skapar du sedan en post med värdena från nästa rad i tabellen och väljer sedan **OK** igen för att slutföra posten. 
     
     Upprepa proceduren tills du har skapat alla fyra CNAME-posterna.
     
-7.  Skriver Lägga till 2 CNAME-poster för MDM.
+7.  (Valfritt) Lägga till 2 CNAME-poster för MDM.
 
 > [!IMPORTANT]
-> Om du har Mobile Device Management (MDM) för Microsoft måste du skapa ytterligare två CNAME-poster. Följ proceduren som du använde för de övriga fyra CNAME-posterna, men ange värden från följande tabell. (Om du inte har MDM kan du hoppa över det här steget.) 
+> Om du har MDM (Mobile Device Management) för Microsoft måste du skapa ytterligare två CNAME-poster. Följ proceduren som du använde för de övriga fyra CNAME-posterna, men ange värden från följande tabell. (Om du inte har MDM kan du hoppa över det här steget.) 
   
 |**Name**|**Type (typ)**|**TTL**|**TTL-enhet**|**Alias**|
 |:-----|:-----|:-----|:-----|:-----|
-|enterpriseregistration  <br/> |CNAME  <br/> |9.1  <br/> |Tider  <br/> |enterpriseregistration.windows.net  <br/> |
-|enterpriseenrollment  <br/> |CNAME  <br/> |9.1  <br/> |Tider  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
+|enterpriseregistration  <br/> |CNAME  <br/> |1  <br/> |Tider  <br/> |enterpriseregistration.windows.net  <br/> |
+|enterpriseenrollment  <br/> |CNAME  <br/> |1  <br/> |Tider  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Lägga till en TXT-post för SPF för att förhindra skräppost
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. I stället kan du lägga till de Microsoft-värden som krävs i den aktuella posten så att du har en  *enda*  SPF-post som innehåller båda uppsättningar med värden. 
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg istället till de obligatoriska Microsoft-värdena i den aktuella posten så att du har  *en*  enda SPF-post som innehåller båda uppsättningarna med värden. 
   
-1. Kom igång genom att gå till domän sidan på Azure med [den här länken](https://portal.azure.com ). Du uppmanas att logga in först.
+1. Kom igång genom att gå till domänsidan på Azure med den [här länken.](https://portal.azure.com ) Du uppmanas att logga in först.
     
     ![Azure-BP-Configure-1-1](../../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
   
-2. På sidan **instrument panel** i området **alla resurser** väljer du den domän som du vill uppdatera. 
+2. Välj den domän du vill **uppdatera i området** Alla resurser på sidan **Dashboard.** 
     
     ![Azure-BP-Configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
-3. I området **DNS Zone** väljer du txt- **postuppsättningen**.
+3. Välj **TXT-postuppsättningen** i **området DNS zone**.
     
     ![Azure-BP-Configure-4-1](../../media/03095196-5010-4072-8503-79b812084dbf.png)
   
-4. I rutorna för den nya post uppsättningen i området **Egenskaper för post uppsättning** väljer du värdena från följande tabell. 
+4. I området **Record set properties** (egenskaper för postuppsättning) väljer du värdena från följande tabell i rutorna för den nya postuppsättningen. 
     
-    (Välj värdena **Type** och **TTL** i list rutan.) 
+    (Välj värdena **för Type** **och TTL** i listrutan.) 
     
     |**Name**|**Type (typ)**|**TTL**|**TTL-enhet**|**Värde**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |TXT  <br/> |9.1  <br/> |Tider  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               
+    |@  <br/> |TXT  <br/> |1  <br/> |Tider  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               
 
     ![Azure-BP-Configure-4-2](../../media/78e84c43-e0ce-433f-8e74-9157fb093cca.png)
   
@@ -271,28 +271,28 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Lägga till de två SRV-posterna som krävs för Microsoft
 <a name="BKMK_add_SRV"> </a>
 
-1. Kom igång genom att gå till domän sidan på Azure med [den här länken](https://portal.azure.com ). Du uppmanas att logga in först.
+1. Kom igång genom att gå till domänsidan på Azure med den [här länken.](https://portal.azure.com ) Du uppmanas att logga in först.
     
     ![Azure-BP-Configure-1-1](../../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
   
-2. På sidan **instrument panel** i området **alla resurser** väljer du den domän som du vill uppdatera. 
+2. Välj den domän du vill **uppdatera i området** Alla resurser på sidan **Dashboard.** 
     
     ![Azure-BP-Configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
-3. Välj **+ Record set** i området **DNS Zone** på sidan **Inställningar** för din domän.
+3. Välj **+ Record** set i området **DNS zone på** sidan Settings för din **domän.**
     
     ![Azure-BP-Configure-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
 4. Lägg till den första av de två SRV-posterna.
     
-    Markera värdena från den första raden i följande tabell i rutorna för den nya posten i avsnittet **Lägg till post uppsättning** . 
+    I området **Add record set** väljer du värdena från den första raden i följande tabell i rutorna för den nya postuppsättningen. 
     
-    (Välj värdena **Type** och **TTL** i list rutan.) 
+    (Välj värdena **för Type** **och TTL** i listrutan.) 
     
     |**Name**|**Type (typ)**|**TTL**|**TTL-enhet**|**Prioritet**|**Vikt**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip _sip._tls  <br/> |SRV  <br/> |9.1  <br/> |Tider  <br/> |100  <br/> |9.1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls _sipfederationtls._tcp  <br/> |SRV  <br/> |9.1  <br/> |Tider  <br/> |100  <br/> |9.1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> 
+    |_sip._tls  <br/> |SRV  <br/> |1  <br/> |Tider  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |SRV  <br/> |1  <br/> |Tider  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> 
 
     ![Azure-BP-Configure-5-1](../../media/a436e0b4-8bb8-4a66-9c22-4e3b2dcf54ff.png)
   
@@ -302,8 +302,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 6. Lägg till den andra SRV-posten.
     
-    I rutorna för den nya posten anger du eller kopierar och klistrar in värdena från den andra raden i tabellen.
+    I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från den andra raden i tabellen.
     
 > [!NOTE]
 > Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
-  

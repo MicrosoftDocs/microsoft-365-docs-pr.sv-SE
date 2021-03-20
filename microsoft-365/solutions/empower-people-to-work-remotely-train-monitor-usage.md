@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Träna dina användare och se till att hantera problem snabbt.
-ms.openlocfilehash: a987a08b2ebd27f7a9cc299e5c8fbae0376437a3
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 662b0d6d7a40a69b3e5c10f3aeea63c2e5237d6d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681390"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916172"
 ---
 # <a name="step-6-train-remote-workers-and-address-usage-feedback"></a>Steg 6: Träna distansarbetare och få feedback om användningen
 
@@ -32,7 +32,7 @@ Utbilda distansarbetare i följande:
 - Användningen av enheter och hur principer kan användas för att blockera åtkomsten för enheter som inte följer standard eller ohanterade enheter.
 - Användningen av tillåtna appar och hur programprinciper för slutpunktshantering kan användas för att blockera användningen av vissa appar.
 - Windows 10 Enterprise säkerhetsfunktioner.
-- Hur du använder [Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) för chatt, videobaserade konferenser, dokumentdelning och trådade konversationer.
+- Hur du använder [Teams](/microsoftteams/training-microsoft-teams-landing-page) för chatt, videobaserade konferenser, dokumentdelning och trådade konversationer.
 - Använda [Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) för e-post och kalenderfunktioner.
 - Använda [SharePoint](https://support.office.com/article/sharepoint-online-video-training-cb8ef501-84db-4427-ac77-ec2009fb8e23) grupp- eller -kommunikationswebbplatser och [OneDrive](https://support.office.com/article/onedrive-video-training-1f608184-b7e6-43ca-8753-2ff679203132)-mappar för att bläddra bland filer i en användares bibliotek och sådana som tillhör en grupp.
 
@@ -50,4 +50,3 @@ Vidareutbilda då dina användare efter behov.
 ## <a name="results-of-step-6"></a>Resultat i steg 6
 
 Dina distansarbetare är utbildade och har ett tillgängligt och öppet forum för att de ska kunna ge feedback och publicera problem med fjärråtkomst och produktivitetsprogram.
-

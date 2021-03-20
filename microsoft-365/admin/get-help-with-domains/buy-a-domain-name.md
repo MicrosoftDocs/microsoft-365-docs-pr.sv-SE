@@ -23,23 +23,23 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Läs om hur du köper ett domännamn i Microsoft 365.
-ms.openlocfilehash: d7215db61577968bb2b21f708bda9d42acd7e675
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 24c6ac017cf25e1a40148e7a2c982e9d1068664b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126399"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915680"
 ---
 # <a name="buy-a-domain-name"></a>Köpa ett domännamn
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
- *Om du vill lägga till, ändra eller ta bort **domäner** måste du **vara global administratör** för ett [företags- eller företagsplan.](https://products.office.com/business/office) Dessa ändringar påverkar hela *klientorganisationen, anpassade* administratörer *eller vanliga* användare kommer inte att kunna göra de här ändringarna.*  
+ *Om du vill lägga till, ändra eller ta bort **domäner måste** du vara **global administratör** för ett [företags- eller företagsplan.](https://products.office.com/business/office) Dessa ändringar påverkar hela *klientorganisationen, anpassade* administratörer *eller vanliga* användare kommer inte att kunna göra dessa ändringar.*  
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
@@ -47,7 +47,7 @@ ms.locfileid: "50126399"
 
 1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
     
-3. Välj **Köp** domän på **sidan Domäner.**
+3. På sidan **Domäner** väljer du **Köp domän**.
     
 Du kan välja bland följande toppnivådomän för din domän.
   
@@ -73,15 +73,15 @@ Du kan välja bland följande toppnivådomän för din domän.
     
 
 > [!NOTE]
-> När du väljer **Köp domän** kan du omdirigeras till webbplatsen för din Microsoft-partner om klientorganisationen köps/hanteras via en Microsoft-partner.
+> När du väljer **Köp domän** kan du omdirigeras till din Microsoft-partner webbplats om klientorganisationen köps/hanteras via en Microsoft-partner.
 
 ### <a name="domain-privacy"></a>Domänsekretess
-Vi erbjuder en kostnadsfri prenumeration på domänsekretess genom att köpa en domän. På så sätt hålls din kontaktinformation bifogad i registreringen av din domän med ICANN privat. [Lära sig mer.](https://whois.icann.org/en/privacy-and-proxy-services)
+Vi erbjuder en kostnadsfri prenumeration på domänsekretess genom att köpa en domän. Det här håller din kontaktinformation kopplad till registreringen av din domän med ICANN privat. [Lära sig mer.](https://whois.icann.org/en/privacy-and-proxy-services)
   
 ### <a name="buy-a-domain-from-another-domain-registrar"></a>Köpa en domän från en annan domänregistrator
 Om du vill köpa en domän från en annan domänregistrator än [GoDaddy](https://www.godaddy.com)rekommenderar vi att du använder en nedan som stöder automatisk konfiguration (Domain Connect). 
   
-- [1 &amp; 1 I UPP TILL 6](https://www.1and1.com/)
+- [1 &amp; 1 I ENTISKT](https://www.1and1.com/)
 - [WordPress](https://www.wordpress.com) 
 
    
@@ -106,10 +106,10 @@ Om du vill konfigurera en domän i Microsoft 365 måste du äga domänen och än
 > [!CAUTION]
 > Vissa domänregistratorer eller DNS-värdtjänster tillåter inte att alla DNS-poster som krävs av Microsoft 365 skapas. Följande lista med värdtjänster stöder alla nödvändiga poster. Om du funderar på att använda en annan värdtjänst bör du [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
   
-När du har registrerat din domän (hos en domänregistrator) loggar du in på Microsoft 365 som administratör och konfigurera din domän så att du kan använda den med din e-postadress och andra tjänster.
+När du har registrerat din domän (hos en domänregistrator) kan du logga in på Microsoft 365 som administratör och konfigurera domänen så att du kan använda den med din e-postadress och andra tjänster.
   
 > [!NOTE]
-> Informationen om den offentliga SharePoint Online-webbplatsen i den här artikeln gäller endast om din organisation har köpt Microsoft 365 före den 9 mars 2015. 
+> Informationen om den offentliga SharePoint Online-webbplatsen i den här artikeln gäller endast om organisationen har köpt Microsoft 365 före den 9 mars 2015. 
 
 ## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Domänregistratorer som stöder alla DNS-poster som krävs för Microsoft 365
 
@@ -129,4 +129,4 @@ När du har registrerat din domän (hos en domänregistrator) loggar du in på M
 
 [Vanliga frågor och svar om domäner](../setup/domains-faq.yml)
 
-[Uppdatera DNS-poster för att behålla webbplatsen hos ditt nuvarande webbhotell.](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider)
+[Uppdatera DNS-poster för att behålla din webbplats hos ditt nuvarande webbhotell.](../dns/update-dns-records-to-retain-current-hosting-provider.md)

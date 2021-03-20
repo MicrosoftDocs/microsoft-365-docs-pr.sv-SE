@@ -20,33 +20,33 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du hittar administratörshjälp för Microsoft 365 Business Premium.
-ms.openlocfilehash: cf81ae934a35dadc895a1fc836ef1bd28f5000e0
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+description: Läs om hur du hittar administratörshjälp för Microsoft 365 Business Premium.
+ms.openlocfilehash: 5f09d74a5447b5023b2b3286a3aae504f707d44e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422597"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913640"
 ---
 # <a name="find-answers-and-help-for-admins"></a>Hitta svar och hjälp för administratörer
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGn5?autoplay=false]
 
-Om du har en fråga eller behöver hjälp med Microsoft 365 Business Premium kan du få hjälp på flera olika sätt.
+Om du har en fråga eller behöver hjälp med Microsoft 365 Business Premium har du flera alternativ för att få hjälp.
 
 ## <a name="try-it"></a>Prova!
 
-1. Logga in på [office.com](https://office.com) med dina autentiseringsuppgifter för arbetet och välj **Admin.**
-1. På startsidan för administrationscentret väljer du **Utbildning för administratörer för** att se tillgängliga utbildningsalternativ.
-1. Välj **företagsägare och administratörer för** små till medelstora utbildningar.
+1. Logga in på [office.com](https://office.com) dina autentiseringsuppgifter för arbetet och välj **Administratör**.
+1. På startsidan för administrationscentret väljer du **Utbildning för administratörer för att** se tillgängliga utbildningsalternativ.
+1. Välj **Företagsägare och administratörer för** utbildning för små till medelstora företag.
 1. Välj **IT-specialister inom** företag för större eller mer komplexa företag.
-1. Gå tillbaka till administrationscentret och välj den här **gången Anpassad konfigurationsvägledning** för att se ett antal guider som vägleder dig genom specifika konfigurationsuppgifter.
+1. Återgå till administrationscentret och välj den här gången **Anpassad konfigurationsvägledning** om du vill se ett antal guider som vägleder dig genom specifika konfigurationsuppgifter.
 1. Gå tillbaka till startsidan för  administrationscentret och välj Utbildning för användare för att få hjälp med specifika appar och lär dig hur du får ut mesta av de funktioner du använder varje dag.
-1. Gå tillbaka till administrationscentret och välj **Behöver hjälp för** att öppna supportassistenten. Skriv din fråga eller det ämne du vill ha hjälp med och välj **sedan Skicka.** Välj länken i administrationscentret eller artikeln som besvarar din fråga.
-1. Om du inte hittar ett svar på din fråga kan du alltid kontakta supporten, så svarar en supporttekniker inom kort.
+1. Gå tillbaka till administrationscentret och välj **Behöver hjälp för** att öppna supportassistenten. Skriv din fråga eller det ämne du vill ha hjälp med och välj sedan **Skicka**. Välj länken i administrationscentret eller till artikeln som besvarar din fråga.
+1. Om du inte hittar ett svar på din fråga kan du alltid kontakta supporten, och en supporttekniker svarar dig inom kort.
 
-Du kan också använda följande resurser för att få hjälp med ditt problem:
+Du kan också använda följande resurser för att få hjälp med problemet:
 
-- [aka.ms/learn365admin](https://aka.ms/learn365admin)kan du söka efter alla administrativa uppgifter och hjälp, till exempel återställa lösenord och tilldela Microsoft-prenumerationer.
-- [answers.microsoft.com](https://answers.microsoft.com)– om du vill söka efter svar, starta en diskussion och ställa frågor från andra användare.
-- [techcommunity.microsoft.com](https://techcommunity.microsoft.com)kan du gå med i en community med experter och hitta metodtips för ditt företag med Microsoft 365.
+- [aka.ms/learn365admin](../admin/index.yml)kan du söka efter alla administrativa uppgifter och hjälp, till exempel återställa lösenord och tilldela Microsoft-prenumerationer.
+- [answers.microsoft.com](https://answers.microsoft.com)på kan du söka efter svar, starta en diskussion och ställa frågor från andra användare.
+- [techcommunity.microsoft.com](https://techcommunity.microsoft.com), och gå med i en community med experter och få metodtips med Microsoft 365 för ditt företag.

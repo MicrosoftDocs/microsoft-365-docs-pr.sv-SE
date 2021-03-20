@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: Lär dig hur du visar rapporter med hjälp av navigeringsflikar och filter.
-ms.openlocfilehash: aa7508b65d2a2b949c8e6737e92171ebb95812e1
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: d3f080bdf2ec5544a0ef9d06139cad682962d57d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114279"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913916"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Navigera och använda rapporter i Microsoft 365 användningsanalyser
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -40,7 +40,7 @@ Med instrumentpanelen får du en snabb översikt över de viktigaste användning
 
 Här är några tips för att komma igång med rapporter:
 
-- Använd navigeringsflikarna till vänster eller  på ett relaterat mått på sidan Sammanfattning för att navigera till varje rapport på översta nivån.
+- Använd navigeringsflikarna till vänster eller  på ett relaterat mått på sidan Sammanfattning för företagsledningen för att navigera till varje rapport på översta nivån.
 
     ![Visar navigeringsflikarna till vänster](../../media/navigate-usage-analytics1.png)
 
@@ -48,7 +48,7 @@ Här är några tips för att komma igång med rapporter:
 
     ![Visar navigeringsflikarna högst upp i varje rapport](../../media/navigate-usage-analytics2.png)
 
-- Många rapporter innehåller ett utsnitt där du kan filtrera på produkten, AAD-attributet eller aktiviteten som du vill visa. Dessa kan vara antingen enkelval eller flerval.
+- Många rapporter innehåller ett utsnitt där du kan filtrera på produkten, AAD-attributet eller aktiviteten som du vill visa. De kan vara antingen enkelval eller flerval.
 
     ![Visar ett utsnitt](../../media/navigate-usage-analytics3.png)
 
@@ -59,7 +59,7 @@ Här är några tips för att komma igång med rapporter:
 
     ![Visar hovringsexempel](../../media/navigate-usage-analytics6.png)
 
-Den användare som skapar mallappen kan anpassa rapporten efter sina behov. Så här anpassar du mallappen:
+Den användare som instanserade mallappen kommer att kunna anpassa rapporten efter sina behov. Så här anpassar du mallappen:
 
 - Välj **Redigera** rapport överst i rapporten.
 
@@ -70,20 +70,20 @@ Den användare som skapar mallappen kan anpassa rapporten efter sina behov. Så 
 
 - Använd PowerBI-skrivbordet för att lägga till egna datakällor.
 
-Om du vill dela dina rapporter väljer du knappen Dela ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) högst upp på sidan.
+Om du vill dela dina rapporter väljer du bara knappen Dela ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) längst upp på sidan.
 
 Mer information om hur du kan anpassa rapporterna finns i [Anpassa rapporterna i Microsoft 365 användningsanalyser](customize-reports.md).
 
 Du kan hitta massor av ytterligare information i Power BI hjälpdokumentationen:
 
-- [Grundläggande begrepp i Power BI](https://docs.microsoft.com/power-bi/service-basic-concepts)
+- [Grundläggande begrepp i Power BI](/power-bi/service-basic-concepts)
 
     Läs mer om instrumentpanel, datauppsättningar, rapporter och andra Power BI-begrepp.
 
-- [Kom igång med Power BI](https://docs.microsoft.com/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
+- [Kom igång med Power BI](/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
 
     Läs mer om grundläggande funktioner i Power BI. Hitta länkar till hur du använder Power BI Desktop.
 
-- [Dela instrumentpaneler och rapporter](https://docs.microsoft.com/power-bi/service-share-dashboards)
+- [Dela instrumentpaneler och rapporter](/power-bi/service-share-dashboards)
 
     Lär dig att dela rapporter med kollegor eller personer utanför organisationen. Du kan också dela rapporten eller en filtrerad version av rapporten.

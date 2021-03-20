@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Lär dig hur du hanterar meddelanden i Meddelandecenter och hjälpa med ändringshantering.
-ms.openlocfilehash: 3f0a3c5fe20e76d0fff63cefe7e6eaa687696426
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
-ms.translationtype: HT
+ms.openlocfilehash: ee3df1b2f4855421dab4d6715add6503027b24bc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405966"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915284"
 ---
 # <a name="manage-messages-in-message-center"></a>Hantera meddelanden i Meddelandecenter
 
@@ -171,6 +171,6 @@ När ett meddelande öppnas i ett läsfönster kan du gå till nästa eller för
 
 ## <a name="track-your-message-center-tasks-in-planner"></a>Följ upp dina meddelande i Meddelandecenter i Planner
 
-Mycket användbar information om ändringar av Microsoft 365-tjänster kommer till meddelandecentret i Microsoft 365. Det kan vara svårt att hålla reda på vilka ändringar som kräver att aktiviteter utförs, när, och av vem, och att spåra varje aktivitet som ska slutföras. Du kanske även vill anteckna något och tagga det så att du kan se det senare. Du kan göra allt detta och mer när du synkroniserar meddelanden från Administrationscenter för Microsoft 365 till Microsoft Planner. Mer information finns i [Följ upp dina meddelande i Meddelandecenter i Planner](https://docs.microsoft.com/office365/planner/track-message-center-tasks-planner).
+Mycket användbar information om ändringar av Microsoft 365-tjänster kommer till meddelandecentret i Microsoft 365. Det kan vara svårt att hålla reda på vilka ändringar som kräver att aktiviteter utförs, när, och av vem, och att spåra varje aktivitet som ska slutföras. Du kanske även vill anteckna något och tagga det så att du kan se det senare. Du kan göra allt detta och mer när du synkroniserar meddelanden från Administrationscenter för Microsoft 365 till Microsoft Planner. Mer information finns i [Följ upp dina meddelande i Meddelandecenter i Planner](/office365/planner/track-message-center-tasks-planner).
 
-En översikt över Meddelandecenter finns i [Meddelandecenter i Microsoft 365](message-center.md). Eller, om du vill ha mer informationen om hur du ställer in språkinställningar för att aktivera maskinöversättning för inlägg i Meddelandecenter se[Aktivera översättningar för inlägg i Meddelandecenter](language-translation-for-message-center-posts.md). Om du vill programmera ett alternativt sätt att få statusinformation för tjänsten i realtid och kommunikation via Meddelandecenter läser du [Microsoft 365 Service Communications API Overview ](https://go.microsoft.com/fwlink/p/?linkid=848507).
+En översikt över Meddelandecenter finns i [Meddelandecenter i Microsoft 365](message-center.md). Eller, om du vill ha mer informationen om hur du ställer in språkinställningar för att aktivera maskinöversättning för inlägg i Meddelandecenter se[Aktivera översättningar för inlägg i Meddelandecenter](language-translation-for-message-center-posts.md). Om du vill programmera ett alternativt sätt att få statusinformation för tjänsten i realtid och kommunikation via Meddelandecenter läser du [Microsoft 365 Service Communications API Overview ](/previous-versions/office/developer/o365-enterprise-developers/jj984343(v=office.15)).

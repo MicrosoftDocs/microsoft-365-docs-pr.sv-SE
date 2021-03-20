@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: 'Lär dig hur du konfigurerar Prioriterad inkorg för alla eller vissa användare i organisationen. '
-ms.openlocfilehash: e6c77bdff00e7cd98f5034267699e19d8582db27
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 7059fbb886669af99c1471789cbbc623dc9719b8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551907"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914288"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Konfigurera Prioriterad inkorg för alla i organisationen
 
@@ -41,9 +41,9 @@ Du kan använda PowerShell för att aktivera eller inaktivera Prioriterad inkorg
   
 I följande PowerShell-exempel **inaktiverar** du Prioriterad inkorg i din organisation. Men funktionens tillgänglighet blockeras inte för användarna. Om de vill kan de fortfarande aktivera Prioriterad inkorg igen på sina egna klienter.  
   
-1. [Ansluta till Exchange Online med fjärr-PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
+1. [Ansluta till Exchange Online med fjärr-PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Du kan se vilka behörigheter du behöver i avsnittet om transportregler i artikeln [Behörigheter för meddelandepolicyer och efterlevnad](https://go.microsoft.com/fwlink/p/?LinkId=829796).
+2. Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Du kan se vilka behörigheter du behöver i avsnittet om transportregler i artikeln [Behörigheter för meddelandepolicyer och efterlevnad](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help).
 
 3. Kör cmdlet **Get-OrganizationConfig**. 
 
@@ -87,7 +87,7 @@ Om du växlar från Övrig e-post till Prioriterad inkorg kan de välja att akti
 
 I det här exemplet **inaktiveras** Prioriterad inkorg för Tim Matthews i organisationen Contoso. Men funktionens tillgänglighet blockeras inte för honom. Om han vill kan han fortfarande aktivera Prioriterad inkorg igen på sina egna klienter. 
   
-1. [Ansluta till Exchange Online med fjärr-PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
+1. [Ansluta till Exchange Online med fjärr-PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Du kan se vilka behörigheter du behöver i avsnittet om transportregler i artikeln Behörigheter för meddelandepolicyer och efterlevnad (på engelska).
 
@@ -123,16 +123,16 @@ I det här exemplet **inaktiveras** Prioriterad inkorg för Tim Matthews i organ
 
     I den följande bilden skickas alla meddelanden från ”Löneavdelningen” till den prioriterade inkorgen.
 
-    ![prioriteradinkorg lönelista](../../media/focusedinbox-transport-rule.PNG)
+    ![prioriterad inkorg löneavdelning](../../media/focusedinbox-transport-rule.PNG)
 
 > [!NOTE]
 > Värdetexten i meddelandehuvudet i det här exemplet är **X-MS-Exchange-Organization-BypassFocusedInbox**.
   
-## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Använda PowerShell för att skapa en transportregel som dirigerar e-postmeddelanden till vyn Prioriterad för alla användare
+## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Använda PowerShell till att skapa en transportregel som dirigerar e-postmeddelanden till vyn Prioriterad för alla användare
 
-1. [Ansluta till Exchange Online med fjärr-PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
+1. [Ansluta till Exchange Online med fjärr-PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Du kan se vilka behörigheter du behöver i avsnittet om transportregler i artikeln [Behörigheter för meddelandepolicyer och efterlevnad](https://go.microsoft.com/fwlink/p/?LinkId=829796).
+2. Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Du kan se vilka behörigheter du behöver i avsnittet om transportregler i artikeln [Behörigheter för meddelandepolicyer och efterlevnad](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help).
 
 3. Kör följande kommando om du vill skicka alla meddelanden från ”Löneavdelningen” till den prioriterade inkorgen.
 
@@ -142,7 +142,7 @@ I det här exemplet **inaktiveras** Prioriterad inkorg för Tim Matthews i organ
 
 > [!IMPORTANT]
 > I det här exemplet är både ”X-MS-Exchange-Organization-BypassFocusedInbox” och ”true” skiftlägeskänsliga.
-> Prioriterad inkorg respekterar X-headern som åsidosätter övrig e-post, så om du använder den här inställningen i Övrig e-post används den även i Prioriterad inkorg. Detaljerad information om syntax och parametrar finns i [New-TransportRule](https://go.microsoft.com/fwlink/p/?LinkId=830194).
+> Prioriterad inkorg respekterar X-headern som åsidosätter övrig e-post, så om du använder den här inställningen i Övrig e-post används den även i Prioriterad inkorg. Detaljerad information om syntax och parametrar finns i [New-TransportRule](/powershell/module/exchange/new-transportrule).
 
 ### <a name="how-do-you-know-this-worked"></a>Hur vet du att det fungerade?
 

@@ -23,17 +23,17 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: När en delad postlåda har skapats kan flera personer i verksamheten dela på ansvaret att läsa och svara på e-postmeddelanden som skickas till en adress.
-ms.openlocfilehash: d71e33aa0a04bd52f707038ac31e98bef68f27b0
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 004473b329b14be9287f249b1d640c3b0803412a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287239"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915884"
 ---
 # <a name="create-a-shared-mailbox"></a>Skapa en delad postlåda 
 
 > [!NOTE]
-> Om din organisation använder en Exchange-hybridmiljö, använder du det lokala administrationscentret för Exchange när du skapar och hanterar delade postlådor. Se [Så här skapar du en delad postlåda i administrationscentret för Exchange](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019&preserve-view=true.)<br><br>
+> Om din organisation använder en Exchange-hybridmiljö, använder du det lokala administrationscentret för Exchange när du skapar och hanterar delade postlådor. Se [Så här skapar du en delad postlåda i administrationscentret för Exchange](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)<br><br>
 > Om du inte är säker på ifall du ska skapa en delad postlåda eller en Microsoft 365-grupp för Outlook, kan du läsa mer i [Jämföra grupper](../create-groups/compare-groups.md).  Observera att det för närvarande inte är möjligt att migrera en delad postlåda till en Microsoft 365-grupp. Om det är något som du vill kunna göra, kan du låta oss veta detta genom att [rösta här](https://go.microsoft.com/fwlink/?linkid=871518).
 
 Det är enkelt att skapa en delad postlåda så att en grupp användare kan övervaka och skicka e-post från en gemensam e-postadress, exempelvis info@contoso.com. När en person i gruppen svarar på ett meddelande till den delade postlådan ser svarsmeddelandet ut att komma från den delade postlådan, inte från den enskilda användaren.
@@ -153,13 +153,13 @@ Men vad händer om en administratör återställer lösenordet för den delade p
 4. Kontrollera att Blockera användaren från att logga in är markerad i den utfällbara menyn **Redigera inloggningsstatus**. Välj **Spara** och sedan **Stäng**.
 ::: moniker-end
 
-Om du vill ha anvisningar om hur du blockerar inloggning för konton som använder Azure AD PowerShell (med flera konton samtidigt), kan du läsa [Blockera användarkonton med Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/block-user-accounts-with-microsoft-365-powershell).
+Om du vill ha anvisningar om hur du blockerar inloggning för konton som använder Azure AD PowerShell (med flera konton samtidigt), kan du läsa [Blockera användarkonton med Office 365 PowerShell](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md).
 
 ## <a name="add-the-shared-mailbox-to-outlook"></a>Lägga till den delade postlådan i Outlook
 
 Om ditt företag har aktiverat automatisk mappning (det har de flesta som standard), visas den delade postlådan i användarnas Outlook-app automatiskt när de har stängt och startat om Outlook. 
 
-Automatisk mappning är inställt på användarens postlåda, inte på den delade postlådan.   Det här innebär att automatisk mappning inte fungerar om du försöker använda säkerhetsgruppen för att hantera vem som har åtkomst till den delade postlådan. Om du vill använda automatisk mappning måste du uttryckligen tilldela behörigheter. Automatisk mappning är aktiverat som standard. Mer information om hur du inaktiverar funktionen finns i [Ta bort automatisk mappning för en delad postlåda](https://docs.microsoft.com/office365/troubleshoot/administration/remove-automapping-for-shared-mailbox).
+Automatisk mappning är inställt på användarens postlåda, inte på den delade postlådan.   Det här innebär att automatisk mappning inte fungerar om du försöker använda säkerhetsgruppen för att hantera vem som har åtkomst till den delade postlådan. Om du vill använda automatisk mappning måste du uttryckligen tilldela behörigheter. Automatisk mappning är aktiverat som standard. Mer information om hur du inaktiverar funktionen finns i [Ta bort automatisk mappning för en delad postlåda](/office365/troubleshoot/administration/remove-automapping-for-shared-mailbox).
 
 Mer information om delade postlådor i Outlook finns i:
 
@@ -209,5 +209,3 @@ När du skapade den delade postlådan, skapade du automatiskt en delad kalender.
 [Ta bort en licens från en delad postlåda](remove-license-from-shared-mailbox.md)
 
 [Lösa problem med delade postlådor](resolve-issues-with-shared-mailboxes.md)
-
-

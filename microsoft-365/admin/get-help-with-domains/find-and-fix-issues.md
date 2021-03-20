@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Lär dig att hitta de problem du kan få när du skapar en egen domän genom att kontrollera att DNS-posterna är korrekt konfigurerade.
-ms.openlocfilehash: 786df75f3f8a514e9b3c2a7666d715c9abd082bd
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: dfb3c93c169a3d31c14d912ddd2cc94fb1e4ace1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926396"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915644"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster
 
@@ -38,17 +38,17 @@ ms.locfileid: "49926396"
 Det kan vara svårt att konfigurera din domän så att den fungerar med Microsoft 365. DNS-systemet är omständigt att arbeta med, och DNS-konfigurationen för din domän påverkar viktiga företagsfunktioner som e-post!
 
 > [!NOTE]
-> Du kan söka efter problem med domänen genom att kontrollera dess status. Gå till **Konfigurera**  >  **domäner** och visa meddelanden i **kolumnen** Status. Om du ser ett problem väljer du Fler åtgärder (tre punkter) och sedan **Kontrollera hälsa.** Fönstret som öppnas beskriver eventuella problem som uppstår med din domän.
+> Du kan kontrollera om det finns problem med domänen genom att kontrollera dess status. Gå till **Konfigurera**  >  **domäner** och visa meddelanden i **kolumnen Status.** Om du ser ett problem väljer du Fler åtgärder (tre punkter) och sedan **Kontrollera hälsa.** Fönstret som öppnas beskriver eventuella problem som uppstår med din domän.
   
 ## <a name="whats-going-on"></a>Vad är det som händer?
 
-- [Kan du inte verifiera din domän?](#cant-verify-your-domain)
+- [Kan du inte verifiera domänen?](#cant-verify-your-domain)
     
 - [Fungerar inte Outlook?](#outlook-isnt-working)
     
-- [Allas e-post bytte till Microsoft 365 och du vill bara att din e-post ska byta?](#everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch)
+- [Allas e-post bytte till Microsoft 365 och du ville bara att din e-post skulle växla?](#everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch)
 
-- [Kan du inte bekräfta status för ideellt eller skolkonto?](#cant-confirm-non-profit-or-school-account-status)
+- [Kan du inte bekräfta statusen för ett ideellt konto eller skolkonto?](#cant-confirm-non-profit-or-school-account-status)
 
 - [Fungerar inte tjänsterna med din domän?](#services-not-working-with-your-domain)
     
@@ -68,41 +68,40 @@ Det finns ett antal vanliga orsaker till att domänverifieringen inte fungerar s
 ## <a name="outlook-isnt-working"></a>Fungerar inte Outlook?
 <a name="BKMK_OutlookBroken"> </a>
 
-Om du har konfigurerat MX-posten och andra DNS-poster rätt för din domän men e-posten inte fungerar, kan vi hjälpa dig att [lösa problemen med Outlook](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues).
+Om du har konfigurerat MX-posten och andra DNS-poster rätt för din domän men e-posten inte fungerar, kan vi hjälpa dig att [lösa problemen med Outlook](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues).
   
-## <a name="everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch"></a>Allas e-post bytte till Microsoft 365 och du vill bara att din e-post ska byta?
+## <a name="everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch"></a>Allas e-post bytte till Microsoft 365 och du ville bara att din e-post skulle växla?
 <a name="BKMK_EmailSwitched"> </a>
 
-När du lägger till din domän i Microsoft 365 uppdateras vanligtvis domänens MX-post (av dig eller Microsoft 365) så att den pekar på Microsoft 365, och ALL e-post som skickas till den domänen kommer till Microsoft 365. Kontrollera att du har skapat postlådor i Microsoft 365 för alla som har e-post i din domän INNAN du ändrar MX-posten.
+När du lägger till din domän i Microsoft 365 uppdateras vanligtvis domänens MX-post (av dig eller Microsoft 365) så att den pekar på Microsoft 365, och ALL e-post som skickas till den domänen börjar komma till Microsoft 365. Kontrollera att du har skapat postlådor i Microsoft 365 för alla som har e-post i din domän INNAN du ändrar MX-posten.
   
-Vad händer om du inte vill flytta e-post för alla i din domän till Microsoft 365? I stället kan du vidta åtgärder [för att pilottesta Microsoft 365 med bara några få e-postadresser.](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)
+Vad händer om du inte vill flytta e-posten för alla i din domän till Microsoft 365? Då kan du i stället vidta åtgärder [för att pilottesta Microsoft 365 med bara några få e-postadresser.](../setup/domains-faq.yml)
   
-## <a name="cant-confirm-non-profit-or-school-account-status"></a>Kan du inte bekräfta status för ideellt eller skolkonto?
+## <a name="cant-confirm-non-profit-or-school-account-status"></a>Kan du inte bekräfta statusen för ett ideellt konto eller skolkonto?
 <a name="BKMK_validateAcct"> </a>
 
 Det finns några scenarier när du bara behöver verifiera organisationens domän och inte konfigurera några tjänster. Till exempel för att bevisa för Microsoft 365 att din organisation är berättigad till en skolprenumeration.
   
-Läs anvisningarna i Verifiera din [Microsoft 365-domän](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) för att bevisa ägarskap, ideella föreningar och utbildningsstatus eller för att aktivera Yammer för att vara säker på att du har slutfört alla steg som krävs. Det är lite olika för varje situation. 
+Läs anvisningarna i Verifiera din [Microsoft 365-domän](../setup/domains-faq.yml) för att bevisa ägarskap, ideella föreningar och utbildningsstatus, eller för att aktivera Yammer för att vara säker på att du har slutfört alla steg som krävs. Det är lite olika för varje situation. 
   
 ## <a name="services-not-working-with-your-domain"></a>Fungerar inte tjänsterna med din domän?
 <a name="BKMK_Test"> </a>
 
-Vi kan hjälpa dig att lösa problem med DNS-inställningarna för din domän. Med felsökningen för domäner i Microsoft 365 visas alla poster som behöver åtgärdas och exakt vad posterna måste anges till. 
+Vi kan hjälpa dig att lösa problem med DNS-inställningarna för din domän. Domänfelsökaren i Microsoft 365 visar eventuella poster som behöver åtgärdas och exakt vad posterna måste anges till. 
 
 > [!TIP]
-> Har du DNS korrekt konfigurerad, men e-post fungerar ändå inte i Outlook på skrivbordet? Kolla in de olika scenarier för e-postflödet du kan ha med [Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices) för att se till att allt är korrekt inställt för ditt företag. Eller få mer hjälp med felsökning av e-post här: [Åtgärda problem med Outlook](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
+> Har du DNS korrekt konfigurerad, men e-post fungerar ändå inte i Outlook på skrivbordet? Ta en titta på de olika scenarier för e-postflöde som du kan ha med [Microsoft 365](/exchange/mail-flow-best-practices/mail-flow-best-practices) för att se till att allt är korrekt inställt för ditt företag. Eller få mer hjälp med felsökning av e-post här: [Åtgärda problem med Outlook](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
   
 ## <a name="accessing-your-website-isnt-working"></a>Går det inte att komma åt din webbplats?
 <a name="BKMK_Website"> </a>
 
 Om du har åtgärdat ett DNS-problem men fortfarande har problem, kan du försöka med något av följande.
   
-- Personer kan inte komma åt din webbplats på www.mydomain.com: [Spåra webbplatsproblem](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)
+- Personer kan inte komma åt din webbplats på www.mydomain.com: [Spåra webbplatsproblem](../setup/add-domain.md)
     
-- Du kan inte uppdatera din A-post eller CNAME-post så att den pekar på din webbplats: Uppdatera anpassade [DNS-poster i Microsoft 365](../dns/add-or-edit-custom-dns-records.md)
+- Du kan inte uppdatera din A-post eller CNAME-post så att den pekar på din webbplats: [Uppdatera anpassade DNS-poster i Microsoft 365](../setup/add-domain.md)
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Felsökning: Granska data vid ändring av verifierad domän](https://docs.microsoft.com/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain)
+[Felsökning: Granska data om ändring av verifierad domän](/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain)
 
-    

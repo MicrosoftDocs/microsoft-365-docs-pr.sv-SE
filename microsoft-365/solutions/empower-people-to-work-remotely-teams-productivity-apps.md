@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Gör det möjligt för användarna att vara produktiva med Teams, Exchange, SharePoint och andra Microsoft 365-tjänster.
-ms.openlocfilehash: ce19085a358861238e9a7cd4d650246d08fd272d
-ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
+ms.openlocfilehash: 7b62191d08e5ff91e54bb16b06a0511e02f16b6d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50055503"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916184"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>Steg 5: Distribuera produktivitetsappar och tjänster för distansarbetare
 
@@ -42,7 +42,7 @@ För att kunna vara produktiva måste personer kommunicera och samarbeta med var
 
 Med Teams kan ni chatta, träffas, ringa och samarbeta på en och samma plats. Miljontals användare får jobbet gjort i Teams varje dag eftersom det sammanställer allt du behöver arbeta med i ett samarbetsnav. 
 
-Detaljerade anvisningar finns i [Ge stöd till distansarbetare med Microsoft Teams](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams). 
+Detaljerade anvisningar finns i [Ge stöd till distansarbetare med Microsoft Teams](/microsoftteams/support-remote-work-with-teams). 
 
 Titta på [Aktivera hybridarbete med Microsoft Teams-webbsändningar](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/) för vägledning och demonstrationer om hur du använder Teams för distansarbete.
 
@@ -76,10 +76,10 @@ För innehållssamarbete kan fjärrarbetare använda mappar från SharePoint och
 
 Du kan behöva migrera dina dokument till SharePoint eller OneDrive från:
 
-- [SharePoint Server-gruppwebbplatser](https://docs.microsoft.com/sharepointmigration/sp-teams-sites-migration-guide)
-- [MySites](https://docs.microsoft.com/sharepointmigration/mysites-to-onedrive-migration-guide)
-- [Filresurser](https://docs.microsoft.com/sharepointmigration/fileshare-to-odsp-migration-guide)
-- [Ruta](https://docs.microsoft.com/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
+- [SharePoint Server-gruppwebbplatser](/sharepointmigration/sp-teams-sites-migration-guide)
+- [MySites](/sharepointmigration/mysites-to-onedrive-migration-guide)
+- [Filresurser](/sharepointmigration/fileshare-to-odsp-migration-guide)
+- [Ruta](/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
 
 Se [den här artikeln](../security/office-365-security/sharepoint-file-access-policies.md) om du vill ha de rekommenderade principerna för identitets- och enhetsåtkomst för att skydda SharePoint och OneDrive.
 
@@ -87,15 +87,15 @@ Se [den här artikeln](../security/office-365-security/sharepoint-file-access-po
 
 Microsoft 365-applikationer är den mest produktiva och säkraste Office-upplevelsen för företag, som gör att personer kan samarbeta smidigt, var som helst, när som helst. Distansarbetare kan samarbeta på ett dokument med flera personer samtidigt, se redigeringar och förändringar i realtid och samredigera med andra på vilken bärbar dator, dator eller mobil enhet som helst.
 
-Mer information finns i [distributionsguiden för Microsoft 365-applikationer](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
+Mer information finns i [distributionsguiden för Microsoft 365-applikationer](/deployoffice/deployment-guide-microsoft-365-apps).
 
 ## <a name="admin-technical-resources-for-productivity-apps-and-services"></a>Teknisk administration för produktivitetsprogram och-tjänster
 
-- [Ge stöd till distansarbetare med Microsoft Teams](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)
+- [Ge stöd till distansarbetare med Microsoft Teams](/microsoftteams/support-remote-work-with-teams)
 - [Aktivera hybridarbete med Microsoft Teams-webbsändningar](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)
 - [Nedladdning av Teams Customer Success Kit](https://www.microsoft.com/download/details.aspx?id=54244)
-- [Verktyg för att driva på användning av Teams](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
-- [Skapa en strategi för ändringshantering för Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)
+- [Verktyg för att driva på användning av Teams](/microsoftteams/adopt-tools-and-downloads) 
+- [Skapa en strategi för ändringshantering för Microsoft Teams](/MicrosoftTeams/change-management-strategy)
 - [Teams med tre skyddsnivåer](configure-teams-three-tiers-protection.md)
 
 ## <a name="user-training-resources-for-productivity-apps-and-services"></a>Utbildningsresurser för användare för produktivitetsprogram och -tjänster

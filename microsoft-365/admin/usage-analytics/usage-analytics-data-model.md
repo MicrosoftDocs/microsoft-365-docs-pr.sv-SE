@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Lär dig hur användningsanalyser ansluter till ett API och tillhandahåller månatliga trenden för användningen av olika Microsoft 365-tjänster.  '
-ms.openlocfilehash: 7d1e797fc388934f66ddc45d2e7f51566e89ad23
-ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
+ms.openlocfilehash: 1975fc0bdba279b281fb45c8aec22255579ef414
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50758946"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913856"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Datamodell för Microsoft 365 användningsanalyser
 
@@ -35,7 +35,7 @@ ms.locfileid: "50758946"
 Microsoft 365 användningsanalyser ansluter till ett API som visar en flerdimensionell datamodell. DE API:er som Microsoft 365 användningsanalyser använder för att generera data kommer från olika, allmänt tillgängliga, Graph-API:er. Funktionen för Själva API:t för Microsoft 365 användningsanalyser är inte tillgänglig i allmänhet.
   
 > [!NOTE]
-> Mer information finns i Arbeta [med Microsoft 365 användningsrapporter i Microsoft Graph.](https://go.microsoft.com/fwlink/p/?linkid=864336) 
+> Mer information finns i Arbeta [med Microsoft 365 användningsrapporter i Microsoft Graph.](/graph/api/resources/report) 
   
 Det här API:t innehåller information om månatliga trenden för användningen av de olika Microsoft 365-tjänsterna. Information om exakt vilka data som returneras av API:et finns i tabellen i följande avsnitt.
   
@@ -295,5 +295,3 @@ Tabellen innehåller information om antalet aktiveringar av Office-prenumeration
 |WinRtCount  <br/> |Antalet aktiveringar per tjänstplan för Windows Mobile-enhet i slutet av tidsperioden.  <br/> |
 |Timeframe  <br/> |Den här kolumnen innehåller datumvärdet. Används som ett-till-många-samband för kalendertabellen.  <br/> |
 |Content Date  <br/> |Om tidsperioden är aktuell månad representerar det här värdet det senaste datumet i den aktuella månaden för vilket det finns tillgängliga data.  <br/> Om tidsperioden är föregående månad representerar det här värdet det sista datumet i månaden inom tidsperioden.  <br/> |
-   
-

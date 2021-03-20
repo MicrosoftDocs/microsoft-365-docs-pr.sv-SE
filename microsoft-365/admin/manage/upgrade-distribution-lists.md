@@ -20,34 +20,34 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Lär dig hur du uppgraderar en eller flera distributionslistor till Microsoft 365-grupper i Outlook och hur du använder PowerShell för att uppgradera flera distributionslistor samtidigt.
-ms.openlocfilehash: 95f887b4386b349dc9d8bb471deab19b5425f6f5
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 7fd6090e00e9099feb93685a276b5e207bd05419
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080533"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915008"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Uppgradera distributionslistor till Microsoft 365-grupper i Outlook
 
-Du kan uppgradera distributionslistor till Microsoft 365-grupper med Outlook. Det här är ett bra sätt att ge organisationens distributionslistor alla funktioner som Finns i Microsoft 365-grupper. [Varför du bör uppgradera dina distributionslistor till grupper i Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
+Du kan uppgradera distributionslistor till Microsoft 365-grupper med Outlook. Det här är ett bra sätt att ge organisationens distributionslistor alla funktioner som finns i Microsoft 365 Groups. [Varför du bör uppgradera dina distributionslistor till grupper i Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
 Du kan uppgradera dina distributionslistor en i taget eller flera samtidigt.
 
 ## <a name="upgrade-one-or-many-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Uppgradera en eller flera distributionslistor till Microsoft 365-grupper i Outlook
 
-Du måste vara global administratör eller Exchange-administratör för att uppgradera en distributionslista. Om du vill uppgradera till Microsoft 365-grupper måste en distributionsgrupp ha en ägare med en postlåda.
+Du måste vara global administratör eller Exchange-administratör för att uppgradera en distributionslista. Om du vill uppgradera till Microsoft 365-grupper måste distributionsgruppen ha en ägare med en postlåda.
 
 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administrationscentret för Exchange</a>.
 
-2. Gå till Mottagare grupper i **administrationscentret för** \> **Exchange.**<br/>Ett meddelande visas om att du har distributionslistor (kallas även **distributionsgrupper)** som kan uppgraderas till Microsoft 365-grupper.<br/> ![Välj knappen Komma igång](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+2. Gå till Mottagare grupper i **administrationscentret för** \> Exchange.<br/>Det visas ett meddelande om att du har distributionslistor (kallas även **distributionsgrupper)** som är kvalificerade för uppgradering till Microsoft 365-grupper.<br/> ![Välj knappen Komma igång](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
 3. Välj en eller flera distributionslistor (kallas även för **distributionsgrupp** ) från **gruppsidan**.<br/>![Välj en distributionsgrupp](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
-4. Välj uppgraderingsikonen.<br/>![Ikonen Uppgradera till Microsoft 365-grupper](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+4. Välj uppgraderingsikonen.<br/>![Ikonen Uppgradera till Microsoft 365 Grupper](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
-5. Välj Ja i **informationsdialogrutan för** att bekräfta uppgraderingen. Processen börjar direkt. Beroende på hur många och stora adresser du uppgraderar kan processen ta några minuter eller timmar.<br/>Om det inte går att uppgradera distributionslistan visas en dialogruta som anger det. Se [Vilka distributionslistor kan inte uppgraderas?](#which-distribution-lists-cant-be-upgraded).
+5. I dialogrutan väljer du Ja **för att** bekräfta uppgraderingen. Processen börjar direkt. Processen kan ta några minuter eller timmar, beroende på hur stora och hur många adresser du uppgraderar.<br/>Om det inte går att uppgradera distributionslistan visas en dialogruta som anger det. Se [Vilka distributionslistor kan inte uppgraderas?](#which-distribution-lists-cant-be-upgraded).
 
-6. Om du uppgraderar flera distributionslistor kan du använda listrutan för att filtrera fram vilka distributionslistor som har uppgraderats. Om listan inte är klar väntar du en stund till och väljer **sedan** Uppdatera för att se vad som har uppgraderats.<br/>Du får inget meddelande om att uppgraderingen har slutförts för alla distributionslistor du valde. Det här kan du se genom att visa vad som står under **Tillgängliga för uppgradering** eller **Uppgraderade distributionslistor**.
+6. Om du uppgraderar flera distributionslistor använder du listrutan för att filtrera fram vilka distributionslistor som har uppgraderats. Om listan inte är färdig väntar du lite till och väljer Uppdatera **för** att se vad som har uppgraderats.<br/>Du får inget meddelande om att uppgraderingen har slutförts för alla distributionslistor du valde. Det här kan du se genom att visa vad som står under **Tillgängliga för uppgradering** eller **Uppgraderade distributionslistor**.
 
 7. Om du valde en distributionslista för uppgradering, men den fortfarande visas på sidan som Tillgänglig för uppgradering, så gick det inte att uppgradera listan. Läs mer i [Vad gör jag om uppgraderingen inte fungerar](#what-to-do-if-the-upgrade-doesnt-work).
 
@@ -66,33 +66,33 @@ Det är möjligt att distributionslistan inte uppgraderades på grund av ett avb
 
 Om du är van vid att använda PowerShell kanske du vill göra det i stället för att använda gränssnittet. Vi har en uppsättning cmdlets som hjälper dig att uppgradera distributionslistor. Se nedan.
 
-### <a name="upgrade-a-single-dl"></a>Uppgradera en enda dl
+### <a name="upgrade-a-single-dl"></a>Uppgradera en enstaka dl
 
-Om du vill uppgradera en enskild DLL kör du följande kommando:
+Om du vill uppgradera en enstaka DLL kör du följande kommando:
 
 ```PowerShell
 Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>`
 ```
 
-Om du till exempel vill uppgradera en DLs med SMTP-dl1@contoso.com kör du följande kommando:
+Om du till exempel vill uppgradera en E-postadresser med SMTP-dl1@contoso.com kör du följande kommando:
 
 ```PowerShell
 Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
 ```
 
 > [!NOTE]
-> Du kan också uppgradera en enskild distributionslista till en Microsoft 365-grupp med [PowerShell-cmdleten New-UnifiedGroup](https://go.microsoft.com/fwlink/?LinkID=786379)
+> Du kan också uppgradera en enskild distributionslista till en Microsoft 365-grupp med [PowerShell-cmdleten New-UnifiedGroup](/powershell/module/exchange/new-unifiedgroup)
 
-### <a name="upgrade-multiple-dls-in-a-batch"></a>Uppgradera flera adresser i en batch
+### <a name="upgrade-multiple-dls-in-a-batch"></a>Uppgradera flera E-adresser i en batch
 
-Du kan även överföra flera DLs som en batch och uppgradera dem tillsammans:
+Du kan också överföra flera DLs som en batch och uppgradera dem tillsammans:
 
 ```PowerShell
 Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address2\>,
 \< DL SMTP address3\>, \< DL SMTP address 4\>
 ```
 
-Om du till exempel vill uppgradera fem DLs med SMTP-adress och köra `dl1@contoso.com` `dl2@contoso.com` följande `dl3@contoso.com` `dl4@contoso.com` `dl5@contoso.com` kommando:
+Om du till exempel vill uppgradera fem DLs med SMTP-adress `dl1@contoso.com` och , och kör du följande `dl2@contoso.com` `dl3@contoso.com` `dl4@contoso.com` `dl5@contoso.com` kommando:
 
 `Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@contoso.com, dl4@contoso.com, dl5@contoso.com`
 
@@ -101,9 +101,9 @@ Om du till exempel vill uppgradera fem DLs med SMTP-adress och köra `dl1@contos
 Du kan uppgradera alla kvalificerade adresser på två sätt.
 
 > [!NOTE]
-> CmdletUpgrade-DistributionGroup tar inte emot data från pipelinen, av den anledningen är det nödvändigt att använda operatorn "foreach-object " för {} att köras korrekt.
+> Cmdleten Upgrade-DistributionGroup inte tar emot data från pipelinen, av den anledningen är det nödvändigt att använda operatorn "foreach-object {} " för att kunna köras.
 
-1. Hämta de kvalificerade DLs i klientorganisationen och uppgradera dem med hjälp av uppgraderingskommandot:
+1. Hämta de kvalificerade DL:erna i klientorganisationen och uppgradera dem med hjälp av uppgraderingskommandot:
 
 ```PowerShell
 Get-EligibleDistributionGroupForMigration | Foreach-Object{
@@ -111,7 +111,7 @@ Get-EligibleDistributionGroupForMigration | Foreach-Object{
 }
 ```
 
-2. Hämta listan över alla DLs och uppgradera endast de kvalificerade DLs:
+2. Hämta listan över alla DLs och uppgradera bara de kvalificerade webbadresserna:
 
 ```PowerShell
 Get-DistributionGroup| Foreach-Object{
@@ -129,12 +129,12 @@ Du kan bara uppgradera enkla distributionslistor som hanteras i molnet och inte 
 |:-----|:-----|
 |Lokalt hanterad distributionslista  <br/> |Nej  <br/> |
 |Kapslade distributionslistor Distributionslistan har antingen underordnade grupper eller är medlem i en annan grupp.  <br/> |Nej  <br/> |
-|Distributionslistor med andra **RecipientTypeDetails** för medlemmar än **UserMailbox,** **SharedMailbox,** **TeamMailbox,** **MailUser**  <br/> |Nej  <br/> |
+|Distributionslistor med en **annan RecipientTypeDetails** för medlemmar än **UserMailbox,** **SharedMailbox,** **TeamMailbox** och **MailUser**  <br/> |Nej  <br/> |
 |Distributionslista med fler än 100 ägare  <br/> |Nej  <br/> |
 |Distributionslista som endast har medlemmar och ingen ägare  <br/> |Nej  <br/> |
 |Distributionslista med ett alias som innehåller specialtecken  <br/> |Nej  <br/> |
 |Om distributionslistan är konfigurerad som en adress för vidarebefordran för Delad postlåda  <br/> |Nej  <br/> |
-|Om dll-listan ingår i en **avsändarbegränsning** i en annan dll-post.  <br/> |Nej  <br/> |
+|Om dl är en del av **avsändarbegränsningen** i en annan dl.  <br/> |Nej  <br/> |
 |Säkerhetsgrupper  <br/> |Nej  <br/> |
 |Dynamiska distributionslistor  <br/> |Nej  <br/> |
 |Distributionslistor som har konverterats till **RoomLists**  <br/> |Nej  <br/> |
@@ -146,17 +146,17 @@ Om du vill kontrollera om en dll-lista är berättigad eller inte kan du köra f
 
 `Get-DistributionGroup \<DL SMTP address\> | Get-EligibleDistributionGroupForMigration`
 
-Om du vill kontrollera vilka DLs som är kvalificerade för uppgradering kör du följande kommando:
+Om du vill kontrollera vilka adresser som är kvalificerade för uppgradering kör du följande kommando:
 
 `Get-EligibleDistributionGroupForMigration`
 
 ### <a name="who-can-run-the-upgrade-scripts"></a>Vilka kan köra uppgraderingsskripten?
 
-Användare med global administratör eller Exchange-administratörsrättigheter.
+Användare med globala administratörs- eller Exchange-administratörsrättigheter.
 
 ### <a name="why-is-the-contact-card-still-showing-a-distribution-list-what-should-i-do-to-prevent-a-upgraded-distribution-list-from-showing-up-in-my-auto-suggest-list"></a>Varför visas det fortfarande en distributionslista på kontaktkortet? Hur kan jag förhindra att en uppgraderad distributionslista visas i min lista med automatiska förslag?
 
-- För Outlook: När någon försöker skicka ett e-postmeddelande i Outlook genom att skriva namnet på Microsoft 365-gruppen efter migrering matchas mottagaren som distributionslistan i stället för gruppen. Mottagarens kontaktkort blir distributionslistans kontaktkort. Det här beror på mottagarens cache eller cachen för smeknamn i Outlook. E-postmeddelandet kommer att skickas till gruppen, men det kan vara förvirrande för avsändaren.<br/>Du kan följa instruktionerna i [Information om listan Komplettera automatiskt i Outlook](https://go.microsoft.com/fwlink/?LinkID=798736) om du vill återställa cachen, vilket löser problemet.
+- För Outlook: När någon försöker skicka ett e-postmeddelande i Outlook genom att skriva namnet på Microsoft 365-gruppen efter migrering matchas mottagaren som distributionslistan i stället för gruppen. Mottagarens kontaktkort blir distributionslistans kontaktkort. Det här beror på mottagarens cache eller cachen för smeknamn i Outlook. E-postmeddelandet kommer att skickas till gruppen, men det kan vara förvirrande för avsändaren.<br/>Du kan följa instruktionerna i [Information om listan Komplettera automatiskt i Outlook](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list) om du vill återställa cachen, vilket löser problemet.
 
 - För Outlook på webben: Om du använder Outlook på webben ligger distributionslistan kvar som mottagare i cachen. Du kan följa stegen i Ta bort föreslagna namn eller [e-postadresser](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58) från listan Komplettera automatiskt om du vill uppdatera cachen så att gruppkontaktkortet visas.
 
@@ -164,13 +164,13 @@ Användare med global administratör eller Exchange-administratörsrättigheter.
 
 Nej. Inställningen för välkomstmeddelanden är inaktiverad som standard. Den här inställningen påverkar både befintliga och nya gruppmedlemmar som kan ansluta efter migreringen. Om gruppägare senare tillåter gästanvändare får inte heller gästanvändare något välkomstmeddelande i Inkorgen. Gästmedlemmar kan fortsätta att arbeta med gruppen.
 
-### <a name="what-if-one-or-some-of-the-dls-are-not-upgraded"></a>Vad händer om en eller några av dina E-adresser inte uppgraderas?
+### <a name="what-if-one-or-some-of-the-dls-are-not-upgraded"></a>Vad händer om en eller några av de utl:erna inte uppgraderas?
 
-Det finns vissa fall där dl är berättigande men inte kunde uppgraderas. Dl uppgraderas inte och blir kvar som en dl.
+Det finns vissa fall där dl är berättigad men inte kan uppgraderas. Dl uppgraderas inte och finns kvar som en dl.
 
-- Om administratören har **tillämpat** principen för grupp-e-postadress för grupperna i en organisation och de försöker uppgradera dina adresser som inte uppfyller villkoren uppgraderas inte dll-posten
+- Där administratören har **tillämpat** principen för grupp-e-postadress för grupper i en organisation och de försöker uppgradera dll-adresser som inte uppfyller villkoren, uppgraderas inte dll-posten
 
-- DLs med **MemberJoinRestriction** eller **MemberDepartRestriction** inställd på **Stängt,** kunde inte uppgraderas
+- DLs med **MemberJoinRestriction eller** **MemberDepartRestriction** inställd **på Stängd**, kunde inte uppgraderas
 
 ### <a name="what-happens-to-the-dl-if-the-upgrade-from-eac-fails"></a>Vad händer med distributionslistan om uppgraderingen från EAC misslyckas?
 

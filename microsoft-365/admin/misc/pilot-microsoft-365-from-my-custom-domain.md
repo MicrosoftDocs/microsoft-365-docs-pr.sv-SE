@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du utvärderar e-post från min egen domän till en Microsoft 365-postlåda genom att bara använda två test konton.
-ms.openlocfilehash: 6cc5b1163f666af4bd13047ab3b1fda7fd747b5f
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 019f1786756a036132f95fd5e8ef8a1d42cd515b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688223"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914720"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Pilot Microsoft 365 från min anpassade domän
 
@@ -32,7 +32,7 @@ Du kan pilot Microsoft 365 med följande krav och begränsningar:
 
 - Du måste hantera dina Microsoft 365 DNS-poster hos din DNS-värd, i stället för att låta Microsoft 365 hantera posterna åt dig.
 
-    Mer information finns i [Lägg till DNS-poster för att ansluta din domän](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+    Mer information finns i [Lägg till DNS-poster för att ansluta din domän](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 - Ledig/upptagen-information för användare på den andra e-postservern är inte tillgänglig.
 
@@ -115,22 +115,22 @@ Det finns två steg för detta:
 
 Kontrollera att du är klar med följande i Microsoft 365 eller Office 365:
 
-1. För att konfigurera anslutningar behöver du ha behörigheter tilldelade innan du kan börja. Om du vill kontrollera vilka behörigheter du behöver, kolla i Microsoft 365 och Office 365 anslutningspost i [Funktionsbehörigheter i EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop) avsnittet.
+1. För att konfigurera anslutningar behöver du ha behörigheter tilldelade innan du kan börja. Om du vill kontrollera vilka behörigheter du behöver, kolla i Microsoft 365 och Office 365 anslutningspost i [Funktionsbehörigheter i EOP](../../security/office-365-security/feature-permissions-in-eop.md) avsnittet.
 
 2. Om du vill att EOP eller Exchange Online skickar e-post från din e-postserver till Internet gör du något av följande:
 
-   - Använd ett certifikat konfigurerat med ett ämnesnamn som överensstämmer med en godkänd domän i Microsoft 365 eller Office 365. Vi rekommenderar att ditt certifikats namn eller ämnets alternativa namn överensstämmer med din organisations primära SMTP-domän. Mer information finns i[Förutsättningar för din lokala e-postmiljö](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment).
+   - Använd ett certifikat konfigurerat med ett ämnesnamn som överensstämmer med en godkänd domän i Microsoft 365 eller Office 365. Vi rekommenderar att ditt certifikats namn eller ämnets alternativa namn överensstämmer med din organisations primära SMTP-domän. Mer information finns i[Förutsättningar för din lokala e-postmiljö](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment).
 
    – ELLER –
 
    - Kontrollera att alla din organisations avsändardomäner och underdomäner är konfigurerade som godkända domäner i Microsoft 365 eller Office 365.
 
-   Mer information om definiering av godkända domäner finns i [Hantera godkända domäner i Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) och [Aktivera e-postflöde för underdomäner i Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains).
+   Mer information om definiering av godkända domäner finns i [Hantera godkända domäner i Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) och [Aktivera e-postflöde för underdomäner i Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains).
 
-3. Bestäm om du vill använda regler för e-postflöde (kallas även transportregler) eller domän namn for att leverera e-post från Microsoft 365 eller Office 365 till dina e-postservrar. De flesta företag väljer att skicka e-post för alla godkända domäner. Mer information finns i [Scenario: Villkorsstyrd e-postdirigering i Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing).
+3. Bestäm om du vill använda regler för e-postflöde (kallas även transportregler) eller domän namn for att leverera e-post från Microsoft 365 eller Office 365 till dina e-postservrar. De flesta företag väljer att skicka e-post för alla godkända domäner. Mer information finns i [Scenario: Villkorsstyrd e-postdirigering i Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing).
 
 > [!NOTE]
-> Du kan konfigurera regler för e-postflöde enligt beskrivningen i [Åtgärder för e-postflödesregler i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions). Du vill, till exempel, kanske använda regler för e-postflöde med anslutningar om din e-post för närvarande är dirigerad via distributionslistor till flera webbplatser.
+> Du kan konfigurera regler för e-postflöde enligt beskrivningen i [Åtgärder för e-postflödesregler i Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions). Du vill, till exempel, kanske använda regler för e-postflöde med anslutningar om din e-post för närvarande är dirigerad via distributionslistor till flera webbplatser.
 
 ### <a name="2-set-up-a-connector-from-microsoft-365-or-office-365-to-your-email-server"></a>2. Konfigurera en anslutning från Microsoft 365 eller Office 365 till din e-postserver
 
@@ -140,13 +140,13 @@ Konfigurera anslutningar med hjälp av guiden.
 
 Starta guiden genom att klicka på plustecknet **+**. På den första skärmen välj **Från** Office 365 och **Till** Din Organisations e-postserver.
 
-Klicka **Nästa** och följ instruktionerna i guiden. Klicka på **Hjälp** eller **Läs Mer** länkarna om du behöver mer information. Guiden tar dig igenom konfigurationen. På slutet kontrollera att din anslutningen har verifierats. Om anslutningen inte validerar dubbelklicka på det meddelande som visas för mer information och läsa [Verifiera anslutningar ](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) för hjälp med problemlösning.
+Klicka **Nästa** och följ instruktionerna i guiden. Klicka på **Hjälp** eller **Läs Mer** länkarna om du behöver mer information. Guiden tar dig igenom konfigurationen. På slutet kontrollera att din anslutningen har verifierats. Om anslutningen inte validerar dubbelklicka på det meddelande som visas för mer information och läsa [Verifiera anslutningar ](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) för hjälp med problemlösning.
 
 
 
 ### <a name="step-7-update-dns-records-at-your-dns-hosting-provider"></a>Steg 7: Uppdatera DNS-posterna hos DNS-värden
 
-Logga in på din DNS-värds webbplats och följ anvisningarna i [lägga till DNS-poster för att ansluta domänen](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Logga in på din DNS-värds webbplats och följ anvisningarna i [lägga till DNS-poster för att ansluta domänen](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 **Gör följande två undantag:**
 
@@ -190,4 +190,3 @@ När du slutför det här steget blir all e-post som skickas till usera@yourcomp
 Eftersom du bara flyttar två test användare, och användare A och användare B båda använder Outlook, kan du flytta e-postmeddelandet genom att öppna det gamla. PST-filen i den nya Outlook-profilen och kopiera meddelanden, Kalender objekt, kontakter och så vidare. Mer information finns i [importera e-post, kontakter och kalender från en Outlook. PST-fil](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
 
 När de har importer ATS till lämpliga platser i Microsoft 365-post lådan kan objekten vara tillgängliga från vilken enhet som helst, var som helst.
-

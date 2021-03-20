@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Översikt över Microsoft produktivitetspoäng.
-ms.openlocfilehash: 72f9bcfb273912629744ec25ad9c0be720e76081
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: d818bd766f76f3df6c67a740d6ad1994a2be66de
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838431"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914588"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft produktivitetspoäng 
 
@@ -44,7 +44,7 @@ Vi tillhandahåller mått, insikter och rekommendationer på två områden:
 
 - **Teknikupplevelser:** din organisations produktivitet beror på pålitlig och högpresterande teknik samt effektiv användning av Microsoft 365. [Slutpunktsanalys](https://aka.ms/endpointanalytics) hjälper dig att förstå hur din organisation kan påverkas av prestanda och problem med din maskinvara och programvara. Microsoft 365-appar kan hjälpa dig att förstå om enheterna i din organisation kör Microsoft 365-appar på rekommenderade kanaler.
 
-Se [Vad är Slutpunktsanalys](https://docs.microsoft.com/mem/analytics/overview) för en översikt och information om förutsättningar. Om du vill veta mer om Microsoft 365 nätverksanslutningsinsikter läser du [översikt över nätverksanslutning](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
+Se [Vad är Slutpunktsanalys](/mem/analytics/overview) för en översikt och information om förutsättningar. Om du vill veta mer om Microsoft 365 nätverksanslutningsinsikter läser du [översikt över nätverksanslutning](../../enterprise/microsoft-365-networking-overview.md).
   
 
 ## <a name="how-the-score-is-calculated"></a>Så beräknas din poäng
@@ -74,7 +74,8 @@ Din organisations poäng uppdateras dagligen och återspeglar användaråtgärde
 
 ## <a name="prerequisites"></a>Förutsättningar 
 
-För data över personupplevelser måste du ha en Microsoft 365 for Business- eller Office 365 för Enterprise-prenumeration. Om du vill lägga till en slutpunktsanalys för din klientorganisation måste du lägga till Microsoft Intune i prenumerationen. Intune hjälper dig att skydda organisationens data genom att hantera enheter och appar. När du har Intune kan du aktivera slutpunktsanalys i Intune-upplevelsen. Läs mer om [Microsoft Intune](https://docs.microsoft.com/mem/intune/). 
+För data över personupplevelser måste du ha en Microsoft 365 for Business- eller Office 365 för Enterprise-prenumeration. Om du vill lägga till en slutpunktsanalys för din klientorganisation måste du lägga till Microsoft Intune i prenumerationen. Intune hjälper dig att skydda organisationens data genom att hantera enheter och appar. När du har Intune kan du aktivera slutpunktsanalys i Intune-upplevelsen. Läs mer om [Microsoft Intune](/mem/intune/). 
+
 > [!NOTE]
 > En licens för Microsoft Workplace Analytics krävs inte för att få funktionen produktivitetspoäng.
 
@@ -129,7 +130,7 @@ Detaljsidorna är:
 - [Mobilitet – personupplevelser](mobility.md)
 - [Samarbete – personupplevelser](teamwork.md)
 - [Hälsa för Microsoft 365-applikationer – teknikupplevelser](apps-health.md)
-- [Slutpunktsanalys](https://docs.microsoft.com/mem/analytics/productivity-score)
+- [Slutpunktsanalys](/mem/analytics/productivity-score)
 
 ## <a name="business-continuity-special-report"></a>Särskild rapport om affärskontinuitet
 
@@ -143,12 +144,12 @@ Denna rapport hjälper organisationer förstå:
 
 - Om distansmöten stödjer effektivt beslutsfattande.
 
-[Läs mer om rapporten om affärskontinuitet](https://aka.ms/bcrps)
+[Läs mer om rapporten om affärskontinuitet](/Workplace-Analytics/tutorials/bcrps)
 
-[Läs mer om Microsoft Graph](https://docs.microsoft.com/graph/)
+[Läs mer om Microsoft Graph](/graph/)
 
 > [!NOTE]
-> Användare har också möjlighet att få produktivitetsinsikter från [MyAnalytics.instrumentpanelen](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2).
+> Användare har också möjlighet att få produktivitetsinsikter från [MyAnalytics.instrumentpanelen](/workplace-analytics/myanalytics/use/dashboard-2).
 
 
 ## <a name="we-want-to-hear-from-you"></a>Vi vill höra från dig

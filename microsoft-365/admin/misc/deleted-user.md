@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
-description: Läs om hur du tar bort eller återställer en användares Microsoft 365-konto.
-ms.openlocfilehash: 13908a83ffa39369b2aea71e7212fd0d41488c44
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+description: Lär dig hur du tar bort eller återställer en användares Microsoft 365-konto.
+ms.openlocfilehash: 3b078b782246229d1ddfb1f1fa51282140e71eb0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432189"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914792"
 ---
 # <a name="quick-help-deleted-user"></a>Snabbhjälp: Borttagen användare
 
@@ -38,9 +38,9 @@ Du kan behöva ta bort en [användare](../add-users/add-users.md) från organisa
   
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
 
-2. Välj en användare och välj sedan **Fler alternativ** (**...**) ovanför listan över användare och välj sedan **Ta bort användare**.
+2. Markera en användare och välj sedan Fler alternativ (**...**) **ovanför listan med** användare och välj sedan Ta bort **användare.**
   
-3. Välj Ta bort användare i bekräftelsefönstret **för borttagning**. <br/>[Läs hela artikeln.](../add-users/delete-a-user.md)
+3. Välj Ta bort användare i **bekräftelsefönstret för borttagning.** <br/>[Läs hela artikeln.](../add-users/delete-a-user.md)
   
 ::: moniker-end
 
@@ -48,9 +48,9 @@ Du kan behöva ta bort en [användare](../add-users/add-users.md) från organisa
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.  
 
-2. Välj en användare och välj sedan **Mer** > **ta bort en användare**ovanför listan över användare .
+2. Markera en användare och välj sedan  Mer Ta bort en användare ovanför > **listan med användare.**
   
-3. Välj Ta bort användare i bekräftelsefönstret **för borttagning**. <br/>[Läs hela artikeln.](../add-users/delete-a-user.md)
+3. Välj Ta bort användare i **bekräftelsefönstret för borttagning.** <br/>[Läs hela artikeln.](../add-users/delete-a-user.md)
 
 ::: moniker-end
 
@@ -58,24 +58,24 @@ Du kan behöva ta bort en [användare](../add-users/add-users.md) från organisa
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>. 
 
-2. Välj en användare och välj sedan **Mer** > **ta bort en användare**ovanför listan över användare .
+2. Markera en användare och välj sedan  Mer Ta bort en användare ovanför > **listan med användare.**
   
-3. Välj Ta bort användare i bekräftelsefönstret **för borttagning**. <br/>[Läs hela artikeln.](../add-users/delete-a-user.md)
+3. Välj Ta bort användare i **bekräftelsefönstret för borttagning.** <br/>[Läs hela artikeln.](../add-users/delete-a-user.md)
 
 ::: moniker-end
 
   
 ## <a name="restore-a-user"></a>Återställa en användare
 
-Du kan återställa användare genom att söka efter **borttagna** på startsidan och välja **Borttagna användare** i resultaten, eller genom att gå till sidan **Borttagna användare** från den vänstra navigeringen och välja vilken användare du vill återställa. [Läs hela artikeln](../add-users/delete-a-user.md).
+Du kan återställa användare genom att söka efter  borttagna på startsidan och välja  Borttagna användare i resultatet, eller genom att gå till sidan Borttagna användare i det vänstra navigeringsfältet och välja den användare du vill återställa.  [Läs hela artikeln](../add-users/delete-a-user.md).
   
 ## <a name="what-are-deleted-users"></a>Vad är borttagna användare?
 
 En borttagen [användare](../add-users/add-users.md) är ett arbets- eller skolkonto som du tar bort från organisationen. 
   
-## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>Frigör du deras Microsoft 365-licens om du tar bort en användare?
+## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>Frigör borttagningen av en användare Microsoft 365-licensen för användaren?
 
-Ja, om du tar bort användaren frigörs Microsoft 365-licensen som tilldelats den användaren. Du kan sedan tilldela licensen till en annan användare. [Läs hela artikeln](../../commerce/licenses/remove-licenses-from-subscription.md).
+Ja, när du tar bort användaren frigör du den Microsoft 365-licens som tilldelats den användaren. Du kan sedan tilldela licensen till en annan användare. [Läs hela artikeln](../../commerce/licenses/buy-licenses.md).
   
 ## <a name="i-had-a-deleted-user-listed-in-deleted-users-and-then-it-disappeared-what-happened"></a>En borttagen användare visades i Borttagna användare men försvann sedan därifrån. Vad hände?
 
@@ -91,6 +91,4 @@ När du tar bort en användare förlorar du inte hans eller hennes data. Använd
   
 ## <a name="how-do-i-restore-a-user"></a>Hur återställer jag en användare?
 
-Du kan återställa användare genom att söka efter **borttagna** på startsidan och välja **Borttagna användare** i resultaten, eller genom att gå till sidan **Borttagna användare** från den vänstra navigeringen och välja vilken användare du vill återställa. [Läs hela artikeln](../add-users/delete-a-user.md).
-  
-
+Du kan återställa användare genom att söka efter  borttagna på startsidan och välja  Borttagna användare i resultatet, eller genom att gå till sidan Borttagna användare i det vänstra navigeringsfältet och välja den användare du vill återställa.  [Läs hela artikeln](../add-users/delete-a-user.md).
