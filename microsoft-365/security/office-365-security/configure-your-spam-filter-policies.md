@@ -17,12 +17,12 @@ ms.collection:
 description: Administratörer kan läsa om hur de visar, skapar, ändrar och tar bort principer för skräppostskydd i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9808a60d0d6c18ee183524e2ad10ed6b2a749db4
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 0406c7893d2ef6a141f9988df87a56171296eff0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406108"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906522"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurera principer för skräppostskydd i EOP
 
@@ -64,18 +64,18 @@ Om du vill öka effektiviteten för filtrering av skräppost kan du skapa anpass
 
 - Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till **Inställningar för skräppostskydd** använder du <https://protection.office.com/antispam>.
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Du måste ha tilldelats behörigheter i **Exchange Online** innan du kan genomföra procedurerna i den här artikeln:
   - Om du vill lägga till, ändra och ta bort principer för skräppostskydd måste du vara medlem i rollgruppen **Organisationshantering** eller **Säkerhetsadministratör**.
   - För skrivskyddad behörighet till principer för skräppostskydd måste du vara medlem i rollgruppen **Global läsare** eller **Säkerhetsläsare**.
 
-  Mer information finns under [Behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
+  Mer information finns under [Behörigheter i Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   **Anteckningar**:
 
   - Genom att lägga till användare i motsvarande Azure Active Directory-roll i administrationscentret för Microsoft 365 får användarna den nödvändiga behörigheten _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
-  - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
+  - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
 - De rekommenderade inställningarna för principer för skräppostskydd finns i avsnittet om [Inställningar för EOP-principer för skräppostskydd](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
@@ -434,7 +434,7 @@ New-HostedContentFilterPolicy -Name "Contoso Executives" -HighConfidenceSpamActi
 > [!NOTE]
 > **New-HostedContentFilterPolicy** och **Set-HostedContentFilterPolicy** innehåller en äldre _ZapEnabled_-parameter, samt nyare _PhishZapEnabled_- och _SpamZapEnabled_-parametrar. Parametern _ZapEnabled_ blev inaktuell i februari 2020. Parametrarna _PhishZapEnabled_ och _SpamZapEnabled_ brukade ärva sina värden från parametern _ZapEnabled_. Men om du använder parametrarna _PhishZapEnabled_ och _SpamZapEnabled_ i ett kommando eller om du använder inställningarna för **Automatisk rensning av skräppost** eller **Automatisk rensning av nätfiske** i principen för skräppostskydd i Säkerhets- och efterlevnadscentret ignoreras värdet för parametern _ZapEnabled_. Använd med andra ord inte parametern _ZapEnabled_. Använd istället parametrarna _PhishZapEnabled_ och _SpamZapEnabled_.
 
-Detaljerad information om syntax och parametrar finns i [New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy).
+Detaljerad information om syntax och parametrar finns i [New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy).
 
 #### <a name="step-2-use-powershell-to-create-a-spam-filter-rule"></a>Steg 2: Använd PowerShell för att skapa en regel för skräppostfilter
 
@@ -454,7 +454,7 @@ I det här exemplet skapas en ny regel för skräppostfilter med namnet Contoso 
 New-HostedContentFilterRule -Name "Contoso Executives" -HostedContentFilterPolicy "Contoso Executives" -SentToMemberOf "Contoso Executives Group"
 ```
 
-Detaljerad information om syntax och parametrar finns i [New-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterrule).
+Detaljerad information om syntax och parametrar finns i [New-HostedContentFilterRule](/powershell/module/exchange/new-hostedcontentfilterrule).
 
 ### <a name="use-powershell-to-view-spam-filter-policies"></a>Använda PowerShell för att visa principer för skräppostfilter
 
@@ -476,7 +476,7 @@ I det här exemplet returneras alla egenskapsvärden för principen för skräpp
 Get-HostedContentFilterPolicy -Identity "Executives" | Format-List
 ```
 
-Detaljerad information om syntax och parametrar finns i [Get-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-hostedcontentfilterpolicy).
+Detaljerad information om syntax och parametrar finns i [Get-HostedContentFilterPolicy](/powershell/module/exchange/get-hostedcontentfilterpolicy).
 
 ### <a name="use-powershell-to-view-spam-filter-rules"></a>Använda PowerShell för att visa regler för skräppostfilter
 
@@ -514,7 +514,7 @@ I det här exemplet returneras alla egenskapsvärden för regeln för skräppost
 Get-HostedContentFilterRule -Identity "Contoso Executives" | Format-List
 ```
 
-Detaljerad information om syntax och parametrar finns i [Get-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/get-hostedcontentfilterrule).
+Detaljerad information om syntax och parametrar finns i [Get-HostedContentFilterRule](/powershell/module/exchange/get-hostedcontentfilterrule).
 
 ### <a name="use-powershell-to-modify-spam-filter-policies"></a>Använda PowerShell för att ändra principer för skräppostfilter
 
@@ -530,7 +530,7 @@ Om du vill ändra en princip för skräppostfilter använder du följande syntax
 Set-HostedContentFilterPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-Detaljerad information om syntax och parametrar finns i [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy).
+Detaljerad information om syntax och parametrar finns i [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy).
 
 ### <a name="use-powershell-to-modify-spam-filter-rules"></a>Använda PowerShell för att ändra regler för skräppostfilter
 
@@ -550,7 +550,7 @@ I det här exemplet ändras namnet på den befintliga regeln för skräppostfilt
 Set-HostedContentFilterRule -Identity "{Fabrikam Spam Filter}" -Name "Fabrikam Spam Filter"
 ```
 
-Detaljerad information om syntax och parametrar finns i [Set-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterrule).
+Detaljerad information om syntax och parametrar finns i [Set-HostedContentFilterRule](/powershell/module/exchange/set-hostedcontentfilterrule).
 
 ### <a name="use-powershell-to-enable-or-disable-spam-filter-rules"></a>Använda PowerShell för att aktivera eller inaktivera regler för skräppostfilter
 
@@ -574,7 +574,7 @@ I det här exemplet aktiveras samma regel.
 Enable-HostedContentFilterRule -Identity "Marketing Department"
 ```
 
-Detaljerad information om syntax och parametrar finns i [Enable-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/enable-hostedcontentfilterrule) och [Disable-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/disable-hostedcontentfilterrule).
+Detaljerad information om syntax och parametrar finns i [Enable-HostedContentFilterRule](/powershell/module/exchange/enable-hostedcontentfilterrule) och [Disable-HostedContentFilterRule](/powershell/module/exchange/disable-hostedcontentfilterrule).
 
 ### <a name="use-powershell-to-set-the-priority-of-spam-filter-rules"></a>Använda PowerShell för att ange prioriteten för regler för skräppostfilter
 
@@ -614,7 +614,7 @@ I det här exemplet tas principen för skräppostfilter med namnet Marketing Dep
 Remove-HostedContentFilterPolicy -Identity "Marketing Department"
 ```
 
-Detaljerad information om syntax och parametrar finns i [Remove-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-hostedcontentfilterpolicy).
+Detaljerad information om syntax och parametrar finns i [Remove-HostedContentFilterPolicy](/powershell/module/exchange/remove-hostedcontentfilterpolicy).
 
 ### <a name="use-powershell-to-remove-spam-filter-rules"></a>Använda PowerShell för att ta bort regler för skräppostfilter
 
@@ -632,7 +632,7 @@ I det här exemplet tas regeln för skräppostfilter med namnet Marketing Depart
 Remove-HostedContentFilterRule -Identity "Marketing Department"
 ```
 
-Detaljerad information om syntax och parametrar finns i [Remove-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/remove-hostedcontentfilterrule).
+Detaljerad information om syntax och parametrar finns i [Remove-HostedContentFilterRule](/powershell/module/exchange/remove-hostedcontentfilterrule).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Hur vet jag att de här procedurerna fungerade?
 

@@ -22,12 +22,12 @@ ms.custom:
 description: Administratörer kan ta reda på hur ZAP (Zero-hour Auto Purge) retroaktivt kan flytta skickade meddelanden i en Exchange Online-postlåda till mappen Skräppost eller karantän som retroaktivt visar sig vara skräppost eller nätfiske.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: be47d8dfda68bfb6819b6423542970c7768c6ffb
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: b5744fdd4ce371f62fcb4b07a4cbcd003405c3db
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820264"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907982"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Zap (Zero-hour auto purge) i Exchange Online
 
@@ -121,4 +121,4 @@ ZAP fungerar fortfarande så länge meddelandet inte har tagits bort, eller så 
 
 ZAP sätts inte i karantän för meddelanden från postlådor. ZAP kan flytta meddelanden till mappen Skräppost baserat på åtgärder som är konfigurerade för skräppost eller nätfiske mot skräppost.
 
-Mer information om bevarande i Exchange Online finns i Bevarande av juridiska skäl och bevarande [av juridiska skäl i Exchange Online.](https://docs.microsoft.com/Exchange/security-and-compliance/in-place-and-litigation-holds)
+Mer information om bevarande i Exchange Online finns i Bevarande av juridiska skäl och bevarande [av juridiska skäl i Exchange Online.](/Exchange/security-and-compliance/in-place-and-litigation-holds)

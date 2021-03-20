@@ -22,12 +22,12 @@ search.appverid:
 description: Få teknisk support och faktureringssupport via de telefonnummer som anges för ditt land eller region eller genom att skicka en tjänstbegäran online.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 7679539e64588827b6dcc20f6f98bc67e613aae6
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: aa843f0c81f38e53b525b6e56d7f3fa69696de79
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261341"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907044"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Sätt för att kontakta supporten för företagsprodukter – hjälp för administratörer
 
@@ -36,7 +36,7 @@ ms.locfileid: "50261341"
 > [!IMPORTANT]
 > Du måste vara administratör för en företags prenumeration för att kunna använda dessa supportvägar. Om du inte är administratör för en organisation kan du använda [den här supportsidan](https://support.microsoft.com/contactus).
 
-Börja med att [kontrollera aktuell hälsostatus för dina tjänster](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health). Du kan visa detaljerad information om aktuella och tidigare problem på <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Instrumentpanel för tjänststatus</a>. Om du har ett problem som inte finns med i listan kan du få support på något av följande sätt:
+Börja med att [kontrollera aktuell hälsostatus för dina tjänster](../enterprise/view-service-health.md). Du kan visa detaljerad information om aktuella och tidigare problem på <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Instrumentpanel för tjänststatus</a>. Om du har ett problem som inte finns med i listan kan du få support på något av följande sätt:
 
 ## <a name="online-support"></a>Onlinesupport
 
@@ -215,7 +215,7 @@ Administratören förväntas ge inledande hjälp till kundens användare. Men om
 
 ## <a name="feature-availability"></a>Funktionstillgänglighet
 
-Information om funktioners tillgänglighet i olika Office 365-abonnemang finns i [beskrivningen av Office 365-tjänster](https://go.microsoft.com/fwlink/p/?linkid=846911)
+Information om funktioners tillgänglighet i olika Office 365-abonnemang finns i [beskrivningen av Office 365-tjänster](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
 
 ## <a name="follow-us-on-wechat"></a>Följ oss på WeChat
 

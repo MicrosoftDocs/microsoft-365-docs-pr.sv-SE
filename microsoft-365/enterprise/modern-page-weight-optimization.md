@@ -1,5 +1,5 @@
 ---
-title: Optimera sid tjock leken i sidor i SharePoint Online
+title: Optimera sid vikt i moderna webbplatssidor i SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -20,62 +20,62 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Lär dig hur du kan använda verktyget för att optimera sid tjock leken i sidor med moderna webbplatser i SharePoint Online.
-ms.openlocfilehash: 64fb3c90db78a23c7f1c3fcfe604c8ef58703be0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Lär dig hur du använder verktyget Siddiagnostik för att optimera sidvikten på sidor med modern webbplats i SharePoint Online.
+ms.openlocfilehash: 780d8ca0debbc5efb834f8f3543b9a5a8d168108
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694369"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907450"
 ---
-# <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>Optimera sid tjock leken i sidor i SharePoint Online
+# <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>Optimera sid vikt i moderna webbplatssidor i SharePoint Online
 
-Moderna webbplats sidor för SharePoint Online innehåller serialiserad kod som krävs för att återge sidans innehåll, inklusive bilder, text, objekt i innehålls området under navigering/kommando fält och annan HTML-kod som utgör ramverket för sidan. Sid tjock leken är en mätning av den här HTML-koden och bör begränsas för att säkerställa optimal sid inläsnings tid.
+SharePoint Online moderna webbplatssidor innehåller serialiserad kod som krävs för att återge sidans innehåll, inklusive bilder, text, objekt i innehållsområdet under navigerings-/kommandofält och annan HTML-kod som utgör ramen för sidan. Sidvikt är ett mått på den här HTML-koden och bör vara begränsat för optimala inläsningstider för sidor.
 
-Den här artikeln hjälper dig att förstå hur du kan minska sid tjock leken på dina sidor.
-
->[!NOTE]
->Mer information om prestanda i SharePoint Online-moderna portaler finns i [prestanda i den moderna SharePoint-upplevelsen](https://docs.microsoft.com/sharepoint/modern-experience-performance).
-
-## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-weight"></a>Använd verktyget för nätverksdiagnostik för SharePoint för att analysera sid tjock leken
-
-Verktyget för nätverksdiagnostik för SharePoint är ett webb läsar tillägg för de nya Microsoft Edge- https://www.microsoft.com/edge) webbläsarna (och Chrome som analyserar både SharePoint Online moderna Portal och klassisk publicerings webbplats sidor. Verktyget visar en rapport för varje sida som visar hur sidan fungerar mot en viss uppsättning prestanda villkor. Om du vill installera och läsa mer om verktyget för nätverksdiagnostik för SharePoint kan du gå till [använda diagnostikverktyget för SharePoint Online](page-diagnostics-for-spo.md).
+Den här artikeln hjälper dig att förstå hur du minskar sidvikten på moderna webbplatssidor.
 
 >[!NOTE]
->Verktyget för nätverksdiagnostik fungerar bara för SharePoint Online och kan inte användas på en SharePoint-Systemsida.
+>Mer information om prestanda i moderna Portaler i SharePoint Online finns i [Prestanda i det moderna SharePoint-programmet.](/sharepoint/modern-experience-performance)
 
-När du analyserar en SharePoint-webbplats med Page Diagnostics för SharePoint-verktyget kan du Visa information om sidan i **sid vikten under 500KB** resultat. _Diagnostic tests_ Resultatet visas i grönt om sid tjock leken är under bas linjens värde och sedan rött om sid bredden överskrider bas linjens värde.
+## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-weight"></a>Använda verktyget Siddiagnostik för SharePoint för att analysera sidvikt
 
-Möjliga resultat:
-
-- **Åtgärd krävs** (röd): sid bredden överskrider 500KB
-- **Ingen åtgärd krävs** (grön): sid tjock leken är under 500KB
-
-Om **sid tjock leken under 500KB** resultat visas i avsnittet **åtgärdat måste** du klicka på resultatet för mer information.
-
-![Förfrågningar till SharePoint-resultat](../media/modern-portal-optimization/pagediag-page-weight.png)
-
-## <a name="remediate-page-weight-issues"></a>Åtgärda problem med sidans vikt
-
-Om sid tjock leken överskrider 500KB kan du förbättra den allmänna sid inläsnings tiden genom att minska antalet webb delar och begränsa sid innehållet till en lämplig grad.
-
-Allmänna rikt linjer för att minska sid vikten inkluderar:
-
-- Begränsa sid innehållet till ett rimligt belopp och Använd flera sidor för relaterat innehåll.
-- Minimera användningen av webb delar som har stora egenskaps uppsättningar.
-- Använd icke-interaktiva upplyft vy när så är möjligt.
-- Optimera bild storlekarna genom att använda komprimerade bild format och se till att de hämtas från ett CDN.
-
-Du hittar ytterligare vägledning om hur du begränsar sid tjock leken i följande artikel:
-
-- [Optimera sid prestanda i SharePoint](https://docs.microsoft.com/sharepoint/dev/general-development/optimize-page-performance-in-sharepoint)
-
-Innan du gör sid ändringar för att åtgärda prestanda problem ska du anteckna sid inläsnings tiden i analys resultaten. Kör verktyget igen efter ändringen för att se om det nya resultatet är inom bas linje standarden och kontrol lera den nya sid inläsnings tiden för att se om det gjorts en förbättring.
-
-![Tids resultat för sid inläsning](../media/modern-portal-optimization/pagediag-page-load-time.png)
+Verktyget Siddiagnostik för SharePoint är ett webbläsartillägg för nya Microsoft Edge ( och Chrome-webbläsare som analyserar både moderna portaler för SharePoint Online och https://www.microsoft.com/edge) klassiska publiceringswebbplatssidor. Verktyget innehåller en rapport för varje analyserad sida som visar hur sidan fungerar mot en definierad uppsättning prestandavillkor. Om du vill installera och lära dig mer om verktyget Siddiagnostik för SharePoint går du [till Använda verktyget Siddiagnostik för SharePoint Online.](page-diagnostics-for-spo.md)
 
 >[!NOTE]
->Sid inläsnings tiden kan variera beroende på en mängd olika faktorer, till exempel nätverks belastning, tidpunkt och andra tillfälliga förhållanden. Testa sid inläsnings tid ett par gånger innan och efter det att du har gjort ändringar för att få hjälp med medelvärdet.
+>Verktyget Siddiagnostik fungerar bara för SharePoint Online och kan inte användas på en SharePoint-systemsida.
+
+När du analyserar en SharePoint-webbplatssida med siddiagnostik för SharePoint-verktyget kan du se information om sidan i sidvikten **under 500 kB** resultatet av fönstret _Diagnostiktest._ Resultatet visas i grönt om sidvikten är under baslinjevärdet och röd om sidvikten överskrider baslinjevärdet.
+
+Möjliga resultat är:
+
+- **Obs!** Krävs (rött): Sid vikt överskrider 500 KB
+- **Ingen åtgärd krävs** (grön): Sidvikt är under 500 KB
+
+Om **Sidvikt under 500 kB visas** i avsnittet Åtgärder **krävs** kan du klicka på resultatet för mer information.
+
+![Förfrågningar om SharePoint-resultat](../media/modern-portal-optimization/pagediag-page-weight.png)
+
+## <a name="remediate-page-weight-issues"></a>Åtgärda problem med sidvikt
+
+Om sidvikten överskrider 500 KB kan du förbättra inläsningstiden för den övergripande sidan genom att minska antalet webbdelar och begränsa sidinnehållet till lämplig grad.
+
+Allmän vägledning för att minska sidvikten omfattar:
+
+- Begränsa sidinnehållet till ett rimligt belopp och använd flera sidor för relaterat innehåll.
+- Minimera användningen av webbdelar som har stora egenskapsskatter.
+- Använd icke-interaktiva uppslagsvyer när det är möjligt.
+- Optimera bildstorlekar genom att ändra storlek på bilderna på ett lämpligt sätt, med komprimerat bildformat och se till att de laddas ned från ett CDN.
+
+Ytterligare anvisningar om hur du begränsar sidvikten finns i följande artikel:
+
+- [Optimera sidprestanda i SharePoint](/sharepoint/dev/general-development/optimize-page-performance-in-sharepoint)
+
+Innan du gör sidändringar för att åtgärda prestandaproblem bör du anteckna inläsningstiden för sidan i analysresultatet. Kör verktyget igen efter ändringen för att se om det nya resultatet ligger inom baslinjestandarden och kontrollera inläsningstiden för den nya sidan för att se om det finns en förbättring.
+
+![Inläsningstid för sida](../media/modern-portal-optimization/pagediag-page-load-time.png)
+
+>[!NOTE]
+>Sidinläsningstiden kan variera beroende på en mängd faktorer, till exempel nätverksbelastning, tid på dagen och andra tillfälliga villkor. Du bör testa inläsningstiden några gånger före och efter ändringarna för att beräkna medelvärdet för resultatet.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
@@ -83,8 +83,8 @@ Innan du gör sid ändringar för att åtgärda prestanda problem ska du anteckn
 
 [Justera Office 365-prestanda](tune-microsoft-365-performance.md)
 
-[Prestanda i den moderna SharePoint-upplevelsen](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Prestanda i det moderna SharePoint-programmet](/sharepoint/modern-experience-performance)
 
-[Nätverk för innehålls leverans](content-delivery-networks.md)
+[Nätverk för innehållsleverans](content-delivery-networks.md)
 
-[Använda Office 365-innehålls leverans nätverk (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md)
+[Använda Office 365 Content Delivery Network (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md)

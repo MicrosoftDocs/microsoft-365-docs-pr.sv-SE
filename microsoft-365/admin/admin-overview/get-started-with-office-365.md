@@ -22,17 +22,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
-description: Lär dig att konfigurera och använda Microsoft 365 på din dator, telefon och surfplatta.
-ms.openlocfilehash: 437e644190017a0031d7c91d239f5b4f0a8d3773
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+description: Lär dig att konfigurera och använda Microsoft 365 på en dator, telefon eller surfplatta.
+ms.openlocfilehash: 8df5170190a464c71030c938be61df591032c45c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142079"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906294"
 ---
 # <a name="get-started"></a>Komma igång
 
-Din organisation har nyligen fått Microsoft 365, och nu behöver du använda det så att du kan börja läsa e-post, dela dokument med mera. Lär dig att konfigurera och använda Microsoft 365 på din dator, telefon och surfplatta.
+Din organisation har just fått Microsoft 365, och nu behöver du använda det så att du kan börja läsa e-post, dela dokument med mera. Lär dig att konfigurera och använda Microsoft 365 på en dator, telefon eller surfplatta.
   
 ::: moniker range="o365-worldwide"
 
@@ -58,13 +58,12 @@ Din organisation har nyligen fått Microsoft 365, och nu behöver du använda de
 
 Här är några resurser som hjälper dig att komma igång.
   
-- [Utbildning för administratörer:](https://docs.microsoft.com/microsoft-365/admin)Få länkar till kostnadsfria onlinelektioner för administratörer.
+- [Utbildning för administratörer](../index.yml): Få länkar till kostnadsfria onlinelektioner för administratörer.
     
-- [Administratörshjälp:](https://docs.microsoft.com/microsoft-365/admin/admin-home)Få information om vanliga uppgifter, komma igång med administrationsverktyg och felsökningsproblem.
+- [Hjälp för](./admin-overview.md)administratörer: Få information om vanliga uppgifter, komma igång med administrationsverktyg och felsöka problem.
     
-- [Kontakta support – hjälp för administratörer:](../contact-support-for-business-products.md) Ring oss, öppna en onlinebegäran eller låt communityn hjälpa dig. 
+- [Kontakta supporten – hjälp för](../contact-support-for-business-products.md) administratörer: Ring oss, öppna en onlinebegäran eller låt communityn hjälpa dig. 
     
 ## <a name="related-articles"></a>Relaterade artiklar
 
 [Konfigurera Microsoft 365 för företag – hjälp för administratörer](../setup/setup.md)
-

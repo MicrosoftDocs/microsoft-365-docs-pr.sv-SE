@@ -12,15 +12,15 @@ localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan lära sig att skapa, ändra och ta bort de skydd mot nätfiske som är tillgängliga i Organisationer med eller utan Exchange Online-postlådor i Exchange Online Protection (EOP).
+description: Administratörer kan lära sig att skapa, ändra och ta bort de principer mot nätfiske som är tillgängliga i organisationer med Exchange Online Protection (EOP) med eller utan Exchange Online-postlådor.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 612c7153f89a404cac736a9a46e8ca5f69e46f65
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 945c993c32d6258fc4d9a9edd51b9ed7e8f64c37
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406226"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906606"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Konfigurera principer för skydd mot nätfiske i EOP
 
@@ -29,72 +29,72 @@ ms.locfileid: "50406226"
 **Gäller för**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 
-I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection (EOP) utan Exchange Online-postlådor finns det en standardprincip mot nätfiske som innehåller ett begränsat antal skydd mot förfalskning som är aktiverade som standard. Mer information finns i inställningarna [för förfalskning i principer för skydd mot nätfiske.](set-up-anti-phishing-policies.md#spoof-settings)
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Organisationer med Exchange Online Protection (EOP) utan Exchange Online-postlådor finns det en standardprincip för skydd mot nätfiske som innehåller ett begränsat antal skydd mot förfalskningsfunktioner som är aktiverade som standard. Mer information finns i [Inställningar för förfalskning i principer mot nätfiske.](set-up-anti-phishing-policies.md#spoof-settings)
 
-Administratörer kan visa, redigera och konfigurera (men inte ta bort) standardprincipen för skydd mot nätfiske. För att få bättre detaljnivå kan du också skapa anpassade principer för nätfiske som gäller för specifika användare, grupper eller domäner i organisationen. Anpassade principer har alltid företräde framför standardprincipen, men du kan ändra prioriteten (löpande ordning) för dina anpassade principer.
+Administratörer kan visa, redigera och konfigurera (men inte ta bort) standardprincipen för nätfiske. För mer detaljerad information kan du också skapa anpassade principer mot nätfiske som gäller för specifika användare, grupper eller domäner i organisationen. Anpassade principer har alltid företräde framför standardprincipen, men du kan ändra prioriteten (löpande ordning) för dina anpassade principer.
 
-Organisationer med Exchange Online-postlådor kan konfigurera principer för skydd mot nätfiske i Säkerhets- & Efterlevnadscenter eller i Exchange Online PowerShell. Fristående EOP-organisationer kan endast använda Säkerhets- & Efterlevnadscenter.
+Organisationer med Exchange Online-postlådor kan konfigurera principer för skydd mot nätfiske i Säkerhets- & efterlevnadscenter eller i Exchange Online PowerShell. Fristående EOP-organisationer kan endast använda Säkerhets- & Säkerhets- och efterlevnadscenter.
 
-Information om hur du skapar och ändrar de mer avancerade principerna för nätfiske i Microsoft Defender för Office 365 som är tillgängliga i Defender för Office 365 finns i Konfigurera principer för nätfiske i Microsoft Defender för [Office 365.](configure-atp-anti-phishing-policies.md)
+Information om hur du skapar och ändrar mer avancerade principer för nätfiske i Microsoft Defender för Office 365 som är tillgängliga i Defender för Office 365 finns i Konfigurera principer för nätfiske i Microsoft Defender för [Office 365.](configure-atp-anti-phishing-policies.md)
 
 De grundläggande elementen i en princip mot nätfiske är:
 
-- **Nätfiskeprincipen:** Anger vilka nätfiskeskydd som ska aktiveras eller inaktiveras samt de åtgärder som används.
-- **Den phish-regeln:** Anger prioritet och mottagarfilter (som principen gäller för) för en nätt phish-princip.
+- **Anti-phish policy:** Anger nätfiskeskydden som aktiverar eller inaktiverar samt de alternativ som används.
+- **Antifrasregeln**: Anger prioritet och mottagarfilter (som principen gäller för) för en nättfnig policy.
 
-Skillnaden mellan dessa två element är inte uppenbara när du hanterar principer mot nätfiske i Säkerhets- och & Efterlevnadscenter:
+Skillnaden mellan dessa två element är inte uppenbart när du hanterar principer mot nätfiske i Säkerhets- och & Efterlevnadscenter:
 
-- När du skapar en policy mot nätfiske skapar du egentligen en nätfiskeprincip och den tillhörande nätfiskeprincipen samtidigt som du använder samma namn för båda.
-- När du ändrar en princip mot nätfiske ändrar inställningarna för namn, prioritet, aktiverad eller inaktiverad, och mottagarfilter ändrar nätfiskeregeln. Alla andra inställningar ändrar den tillhörande anti-phish-principen.
+- När du skapar en policy mot nätfiske skapar du i själva verket en nätfiskeregel och den tillhörande nätfiskeprincipen samtidigt som du använder samma namn för båda.
+- När du ändrar en princip mot nätfiske ändras nätfiskeregeln i inställningarna för namn, prioritet, aktiverad eller inaktiverad. Alla andra inställningar ändrar den associerade nätfn-principen.
 - När du tar bort en nätfiskeprincip tas nätfiskeregeln och den tillhörande nätfiskeprincipen bort.
 
-I Exchange Online PowerShell hanterar du principen och regeln separat. Mer information finns i avsnittet Använda [Exchange Online PowerShell för att konfigurera principer mot](#use-exchange-online-powershell-to-configure-anti-phishing-policies) nätfiske senare i den här artikeln.
+I Exchange Online PowerShell kan du hantera principen och regeln separat. Mer information finns i avsnittet Använda [Exchange Online PowerShell för att konfigurera principer mot nätfiske längre fram](#use-exchange-online-powershell-to-configure-anti-phishing-policies) i den här artikeln.
 
-Alla organisationer har en inbyggd policy för skydd mot nätfiske med namnet Office365 AntiPhish Default som har följande egenskaper:
+Alla organisationer har en inbyggd policy för skydd mot nätfiske med namnet Office365-skyddfval som har följande egenskaper:
 
-- Principen tillämpas på alla mottagare i organisationen, även om det inte finns någon skyddande phish-regel (mottagarfilter) kopplad till principen.
+- Principen tillämpas på alla mottagare i organisationen, även om det inte finns någon antifrasregel (mottagarfilter) kopplad till principen.
 - Principen har det anpassade prioritetsvärdet **Lägsta** som du inte kan ändra (policyn tillämpas alltid sist). Alla anpassade policyer som du skapar har alltid högre prioritet.
 - Politik är standardpolicyn (egenskapen **IsDefault** har värdet `True`) och du kan inte ta bort standardpolicyn.
 
-För att öka effektiviteten i skyddet mot nätfiske kan du skapa anpassade principer för nätfiske med striktare inställningar som tillämpas för specifika användare eller grupper av användare.
+För att öka effektiviteten i skydd mot nätfiske kan du skapa anpassade principer mot nätfiske med striktare inställningar som tillämpas för specifika användare eller grupper av användare.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt **till sidan mot nätfiske** använder du <https://protection.office.com/antiphishing> .
+- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt **till sidan Mot nätfiske** använder du <https://protection.office.com/antiphishing> .
 
-- Information om hur du ansluter till Exchange Online PowerShell finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
   Du kan inte hantera principer för nätfiske i fristående EOP PowerShell.
 
-- Du måste ha tilldelats behörigheter i **Exchange Online innan** du kan utföra procedurerna i den här artikeln:
-  - Om du vill lägga till, ändra och ta bort principer för nätfiske måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.**
-  - För skrivskyddade åtkomst till principer för nätfiske måste du vara medlem i rollgrupperna **Global Reader** eller **Säkerhetsläsare.** <sup>\*</sup>
+- Du måste ha tilldelats behörigheter i **Exchange Online** innan du kan genomföra procedurerna i den här artikeln:
+  - Om du vill lägga till, ändra och ta bort principer  för skydd mot nätfiske måste du vara medlem i rollgrupperna Organisationshantering **eller Säkerhetsadministratör.**
+  - För skrivskyddade åtkomst till principer mot nätfiske måste du vara medlem i rollgrupperna **Global Reader** eller **Säkerhetsläsare.** <sup>\*</sup>
 
-  Mer information finns i [Behörigheter i Exchange Online.](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+  Mer information finns under [Behörigheter i Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-  **Anmärkningar**:
+  **Anteckningar**:
 
-  - Om du lägger till användare till motsvarande Azure Active Directory-roll i  administrationscentret för Microsoft 365 får användarna de behörigheter och behörigheter som krävs för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
-  - Rollgruppen **Skrivskyddade organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddsåtkomst till <sup>\*</sup> funktionen.
-  - <sup>\*</sup> I Säkerhets- & efterlevnadscenter kan användare med skrivskyddsåtkomst visa inställningarna för anpassade principer för skydd mot nätfiske. Skrivskyddade användare kan inte se inställningarna i standardprincipen för nätfiske.
+  - Genom att lägga till användare i motsvarande Azure Active Directory-roll i administrationscentret för Microsoft 365 får användarna den nödvändiga behörigheten _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
+  - Rollgruppen **Organisationshantering, skrivskyddade** i [Exchange Online,](/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddsåtkomst till <sup>\*</sup> funktionen.
+  - <sup>\*</sup> I Säkerhets- & efterlevnadscenter kan användare med skrivskyddsåtkomst visa inställningarna för anpassade principer för nätfiske. Skrivskyddade användare kan inte se inställningarna i standardprincipen för nätfiske.
 
-- Om du vill skapa och ändra principer för nätfiske i fristående EOP måste du göra något som _kräver avisering_ för klientorganisationen. I till exempel administrationscentret för Exchange (EAC)  kan du gå till fliken  Behörigheter, välja en befintlig rollgrupp, klicka på redigera-ikonen och ta bort en roll (som du lägger till sist ![ ](../../media/ITPro-EAC-EditIcon.png) tillbaka). Om klientorganisationen aldrig har blivit bortskriden visas en dialogruta med namnet Uppdatera organisationsinställningar **med** en förloppsstapel som ska slutföras. Mer information om härdning finns i cmdleten [Enable-OrganizationCustomization](https://docs.microsoft.com/powershell/module/exchange/enable-organizationcustomization) (som inte är tillgänglig i fristående EOP PowerShell eller i Säkerhets- och & Compliance Center).
+- Om du vill skapa och ändra principer för nätfiske i fristående EOP måste du göra något som _kräver avisering_ för klientorganisationen. I till exempel administrationscentret för Exchange (EAC)  kan du gå till fliken  Behörigheter, välja en befintlig rollgrupp, klicka på Redigera redigeringsikon och ta bort en roll (som du i slutänden lägger till ![ ](../../media/ITPro-EAC-EditIcon.png) igen). Om klientorganisationen aldrig har blivit bortskriden visas en dialogruta med namnet **Uppdatera** organisationsinställningar med en förloppsstapel som bör slutföras. Mer information om servering finns i cmdleten [Enable-OrganizationCustomization](/powershell/module/exchange/enable-organizationcustomization) (som inte är tillgänglig i fristående EOP PowerShell eller i Security & Compliance Center).
 
-- Våra rekommenderade inställningar för principer för skydd mot nätfiske finns i [EOP:s standardinställningar](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)för skydd mot nätfiske.
+- Vi rekommenderar inställningar för principer mot nätfiske i standardinställningarna för nätfiskeprincip i [EOP.](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)
 
-- Det kan ta upp till 30 minuter innan den uppdaterade principen tillämpas.
+- Det kan ta upp till 30 minuter för den uppdaterade principen att tillämpas.
 
-- Information om var principer för skydd mot nätfiske tillämpas i filtreringsförloppet finns i Ordningen och [prioriteten för e-postskyddet.](how-policies-and-protections-are-combined.md)
+- Information om var principer för skydd mot nätfiske tillämpas i filtreringsförloppet finns i Ordning och [prioritet för e-postskydd.](how-policies-and-protections-are-combined.md)
 
-## <a name="use-the-security--compliance-center-to-create-anti-phishing-policies"></a>Använd Säkerhets- & Center för att skapa principer för skydd mot nätfiske
+## <a name="use-the-security--compliance-center-to-create-anti-phishing-policies"></a>Använd Säkerhets- & säkerhets- och efterlevnadscenter för att skapa principer mot nätfiske
 
-När du skapar en anpassad policy för nätfiske i Säkerhets- & Efterlevnadscenter skapas samtidigt den skyddande phish-regeln och den tillhörande nätfiskeprincipen med samma namn.
+Om du skapar en anpassad policy mot nätfiske i Säkerhets- och efterlevnadscenter för & skapas samtidigt den skyddande phish-regeln och den tillhörande nätfiskeprincipen med samma namn för båda.
 
-När du skapar en princip mot nätfiske kan du bara ange namn, beskrivning och mottagarfilter som identifierar vem principen gäller. När du har skapat principen kan du ändra den om du vill ändra eller granska standardinställningarna för skydd mot nätfiske.
+När du skapar en princip mot nätfiske kan du bara ange principens namn, beskrivning och mottagarfilter som identifierar vem principen gäller. När du har skapat principen kan du ändra principen för att ändra eller granska standardinställningarna för skydd mot nätfiske.
 
-1. Gå till policyn för skydd mot nätfiske i säkerhets- **och** & Säkerhets- och \>  \> **efterlevnadscenter.**
+1. Gå till policyn för & skydd mot **nätfiske** i säkerhets- och \>  \> **efterlevnadscentret.**
 
-2. Klicka på **Skapa på** sidan Mot **nätfiske.**
+2. På sidan **Mot nätfiske** klickar du på **Skapa**.
 
 3. Guiden **Skapa en ny princip mot nätfiske** öppnas. Konfigurera **följande inställningar på** sidan Namnge principen:
 
@@ -111,93 +111,93 @@ När du skapar en princip mot nätfiske kan du bara ange namn, beskrivning och m
    Klicka **på Lägg till ett villkor.** I listrutan som visas väljer du ett villkor under **Används om:**
 
    - **Mottagaren är: Anger** en eller flera postlådor, e-postanvändare eller e-postkontakter i organisationen.
-   - **Mottagaren är medlem i:** Anger en eller flera grupper i organisationen.
+   - **Mottagaren är medlem i**: Anger en eller flera grupper i organisationen.
    - **Mottagande domän är**: Anger mottagare i en eller flera av de godkända domänerna som har konfigurerats i din organisation.
 
-   När du har valt villkoret visas en motsvarande listruta med **rutan Valfri av dessa.**
+   När du har valt villkoret visas motsvarande listruta med rutan **Valfri av dessa.**
 
-   - Klicka i rutan och bläddra igenom listan med värden för att välja.
+   - Klicka i rutan och bläddra igenom listan med värden du vill välja.
    - Klicka i rutan och börja skriva för att filtrera listan och välja ett värde.
    - Om du vill lägga till ytterligare värden klickar du i ett tomt område i rutan.
-   - Om du vill ta bort enskilda poster klickar **du på ta** ![ ](../../media/scc-remove-icon.png) bort-ikonen för värdet.
-   - Om du vill ta bort hela villkoret klickar **du på ikonen** Ta bort i ![ ](../../media/scc-remove-icon.png) villkoret.
+   - Om du vill ta bort enskilda poster klickar **du på Ta** bort ikon för ![ ](../../media/scc-remove-icon.png) värdet.
+   - Om du vill ta bort hela villkoret klickar du **på Ta** bort ikon ![ för ](../../media/scc-remove-icon.png) villkoret.
 
-   Om du vill lägga till ytterligare ett villkor klickar **du på Lägg till ett** villkor och väljer ett återstående värde under Används **om.**
+   Om du vill lägga till ytterligare ett villkor klickar **du på Lägg till ett** villkor och väljer ett återstående värde under Används **om**.
 
-   Om du vill lägga till undantag **klickar du på Lägg till ett** villkor och väljer ett undantag under Utom **om.** Inställningarna och beteendet är likadana som villkoren.
+   Om du vill lägga till undantag klickar **du på Lägg till ett** villkor och väljer ett undantag under Utom **om**. Inställningarna och beteendet är likadana som villkoren.
 
    Klicka på Nästa när du är **klar.**
 
 5. Granska **inställningarna på sidan** Granska dina inställningar som visas. Du kan klicka **på Redigera** för varje inställning för att ändra den.
 
-   Klicka på Skapa den här principen när **du är klar.**
+   När du är klar klickar du på **Skapa den här principen.**
 
 6. Klicka **på OK** i bekräftelsedialogrutan som visas.
 
 När du har skapat principen mot nätfiske med de här allmänna principinställningarna följer du anvisningarna i nästa avsnitt för att konfigurera skyddsinställningarna i principen.
 
-## <a name="use-the-security--compliance-center-to-modify-anti-phishing-policies"></a>Använda Säkerhets- & Center för att ändra principer för skydd mot nätfiske
+## <a name="use-the-security--compliance-center-to-modify-anti-phishing-policies"></a>Använd Säkerhets- & säkerhets- och efterlevnadscenter för att ändra principer för skydd mot nätfiske
 
 Använd följande procedurer för att ändra principer för skydd mot nätfiske: en ny princip som du har skapat eller befintliga principer som du redan har anpassat.
 
-1. Om du inte redan är där öppnar du Säkerhets- & Efterlevnadscenter och går **till** Policy för skydd mot \>  \> **nätfiske.**
+1. Om du inte redan är där öppnar du säkerhets- & säkerhets- och efterlevnadscenter och går **till** Policy för \>  \> **hothantering mot nätfiske.**
 
-2. Välj den anpassade principen för nätfiske som du vill ändra. Om det redan är markerat avmarkerar du det och markerar det igen.
+2. Välj den anpassade principen för nätfiske som du vill ändra. Om den redan är markerad avmarkerar du den och markerar den igen.
 
-3. Den **utfällna knappen Redigera \<name\>** din princip visas. Om **du** klickar på Redigera i ett avsnitt får du åtkomst till inställningarna i det avsnittet.
+3. Den **utfällna knappen Redigera \<name\>** princip visas. Om **du** klickar på Redigera i ett avsnitt får du åtkomst till inställningarna i det avsnittet.
 
    - Följande steg visas i den ordning som avsnitten visas, men de är inte sekventiella (du kan markera och ändra avsnitten i valfri ordning).
 
-   - När du klickar på Redigera i ett avsnitt visas de tillgängliga inställningarna i ett guideformat, men  du kan hoppa  inom  sidorna i valfri ordning och du kan klicka på Spara på valfri sida (eller  ![ ](../../media/scc-remove-icon.png) **\<name\>** ikonen Avbryt eller Stäng om du vill gå tillbaka till sidan Redigera principen (du behöver inte gå till den sista sidan i guiden för att spara eller lämna).
+   - När du  har klickat på Redigera i ett avsnitt visas de tillgängliga inställningarna i ett guideformat, men du  kan  hoppa inom sidorna i valfri ordning och du kan klicka på Spara på valfri sida (eller  ![ ](../../media/scc-remove-icon.png) **\<name\>** på ikonen Avbryt eller Stäng stäng för att återgå till sidan Redigera principen (du behöver inte gå till den sista sidan i guiden för att spara eller lämna).
 
-4. **Principinställning:** Klicka **på** Redigera om du vill ändra samma inställningar som var [tillgängliga när du](#use-the-security--compliance-center-to-create-anti-phishing-policies) skapade principen i föregående avsnitt:
+4. **Principinställning:** Klicka **på** Redigera om du vill ändra samma inställningar som var [tillgängliga när du skapade principen](#use-the-security--compliance-center-to-create-anti-phishing-policies) i föregående avsnitt:
 
    - **Name**
    - **Beskrivning**
-   - **Används på**
+   - **Tillämpas på**
    - **Granska dina inställningar**
 
-   Klicka på Spara på valfri sida **när** du är klar.
+   När du är klar klickar du på **Spara** på valfri sida.
 
-5. **Spoof:**  Klicka på Redigera om du vill aktivera eller inaktivera förfalskningsinformation, aktivera eller inaktivera oauthiskt identifiering av avsändare i Outlook och konfigurera åtgärden för meddelanden från spärrade förfalskningsavsändare. Mer information finns i inställningarna [för förfalskning i principer för skydd mot nätfiske.](set-up-anti-phishing-policies.md#spoof-settings)
+5. **Förfalskning:** Klicka  på Redigera för att aktivera eller inaktivera förfalskningsinformation, aktivera eller inaktivera oauthticerad avsändaridentifiering i Outlook och konfigurera åtgärden som ska gälla för meddelanden från spärrade förfalskningsavsändare. Mer information finns i [Inställningar för förfalskning i principer mot nätfiske.](set-up-anti-phishing-policies.md#spoof-settings)
 
    Observera att samma inställningar även är tillgängliga i principer för skydd mot nätfiske i Defender för Office 365.
 
-   - **Filterinställningar för förfalskning:** Standardvärdet är **På** och vi rekommenderar att du låter det vara på. Om du vill inaktivera den drar du reglaget till **Av.** Mer information finns i [Konfigurera förfalskningsinformation i EOP.](learn-about-spoof-intelligence.md)
+   - **Filterinställningar för förfalskning:** Standardvärdet är **På** och vi rekommenderar att du låter det vara på. Om du vill inaktivera den drar du reglaget till **Av**. Mer information finns i [Konfigurera förfalskningsinformation i EOP.](learn-about-spoof-intelligence.md)
 
      > [!NOTE]
-     > Du behöver inte inaktivera skydd mot förfalskning om MX-posten inte pekar på Microsoft 365. aktiverar du Utökad filtrering för kopplingar i stället. Instruktioner finns i Utökad [filtrering för kopplingar i Exchange Online.](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
+     > Du behöver inte inaktivera skydd mot förfalskning om MX-posten inte pekar på Microsoft 365. aktiverar du Utökad filtrering för kopplingar i stället. Instruktioner finns i [Utökad filtrering för kopplingar i Exchange Online.](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
 
-   - **Aktivera funktionen Oauthenticerad avsändare:** Standardvärdet är **På.** Om du vill inaktivera den drar du reglaget till **Av.**
+   - **Aktivera funktionen Oauthenticated Sender:** Standardvärdet är **På**. Om du vill inaktivera den drar du reglaget till **Av**.
 
-   - **Åtgärder:** Ange vilken åtgärd som ska vidtas för meddelanden som inte klarar förfalskningsinformation:
+   - **Åtgärder**: Ange vilken åtgärd som ska vidtas på meddelanden som inte klarar förfalskningsinformation:
 
      **Om e-post skickas av någon som inte har tillåtelse att kapa din domän:**
 
      - **Flytta meddelandet till mottagarnas skräppostmappar**
      - **Sätt meddelandet i karantän**
 
-   - **Granska dina inställningar:** i stället för att klicka på varje enskilt steg visas inställningarna i en sammanfattning.
+   - **Granska dina inställningar:** I stället för att klicka på varje enskilt steg visas inställningarna i en sammanfattning.
 
      - Du kan klicka **på Redigera** i varje avsnitt för att gå tillbaka till den relevanta sidan.
-     - Du kan aktivera eller inaktivera följande **inställningar** **direkt** på den här sidan:
+     - Du kan aktivera eller inaktivera följande **inställningar** **direkt på** den här sidan:
 
        - **Aktivera skydd mot förfalskning**
-       - **Aktivera funktionen Oauthenticerad avsändare**
+       - **Aktivera funktionen Oauthenticated Sender**
 
-   Klicka på Spara på valfri sida **när** du är klar.
+   När du är klar klickar du på **Spara** på valfri sida.
 
-6. Tillbaka på sidan **Redigera \<Name\> principen** granskar du inställningarna och klickar sedan på **Stäng.**
+6. Gå tillbaka till **sidan Redigera principen, \<Name\>** granska dina inställningar och klicka sedan på **Stäng**.
 
-### <a name="use-the-security--compliance-center-to-modify-the-default-anti-phishing-policy"></a>Använd Säkerhets- & Center för efterlevnad för att ändra standardprincipen för skydd mot nätfiske
+### <a name="use-the-security--compliance-center-to-modify-the-default-anti-phishing-policy"></a>Använd Säkerhets- & säkerhets- och efterlevnadscenter för att ändra standardprincipen för skydd mot nätfiske
 
-Standardprincipen för skydd mot nätfiske heter Office365 AntiPhish Default och visas inte i listan med principer. Gör så här om du vill ändra standardprincipen för skydd mot nätfiske:
+Standardprincipen för nätfiske heter Office365 AntiPhish Default och visas inte i listan med principer. Gör så här om du vill ändra standardprincipen för nätfiske:
 
-1. Gå till policyn för skydd mot nätfiske i säkerhets- **och** & Säkerhets- och \>  \> **efterlevnadscenter.**
+1. Gå till policyn för & skydd mot **nätfiske** i säkerhets- och \>  \> **efterlevnadscentret.**
 
-2. Klicka på **Standardprincip** på sidan **Skydd mot nätfiske.**
+2. På sidan **Skydd mot nätfiske** klickar du på **Standardprincip.**
 
-3. Sidan **Redigera standardprincip för Office365-skydd visas.** Följande avsnitt är tillgängliga, som innehåller identiska inställningar för när du [ändrar en anpassad princip.](#use-the-security--compliance-center-to-modify-anti-phishing-policies)
+3. Sidan **Redigera principen Som standard för Office365-skyddstreck** visas. Följande avsnitt är tillgängliga, som innehåller identiska inställningar för när du [ändrar en anpassad princip](#use-the-security--compliance-center-to-modify-anti-phishing-policies).
 
    - **Personifiering**
    - **Förfalskning**
@@ -205,114 +205,114 @@ Standardprincipen för skydd mot nätfiske heter Office365 AntiPhish Default och
 
    Följande inställningar är inte tillgängliga när du ändrar standardprincipen:
 
-   - Du kan  se avsnittet och värdena för principinställningen, men det finns ingen redigeringslänk, så du kan inte ändra inställningarna (principnamn, beskrivning och vem principen gäller för (den gäller för alla mottagare)). 
+   - Du kan  se avsnittet och värdena för principinställningen, men det finns ingen redigera-länk, så du kan inte ändra inställningarna (principnamn, beskrivning och vem principen gäller för (den gäller för alla mottagare)). 
    - Du kan inte ta bort standardprincipen.
    - Du kan inte ändra prioriteten för standardprincipen (den används alltid sist).
 
-4. Granska inställningarna **på sidan Redigera standardinställningen för policyn för Office365,** och klicka sedan på **Stäng.**
+4. Granska dina **inställningar på sidan Redigera principen som standard för Office365-skydd,** och klicka sedan på **Stäng.**
 
-### <a name="enable-or-disable-custom-anti-phishing-policies"></a>Aktivera eller inaktivera anpassade principer för nätfiske
+### <a name="enable-or-disable-custom-anti-phishing-policies"></a>Aktivera eller inaktivera anpassade principer för skydd mot nätfiske
 
-1. Gå till policyn för skydd mot nätfiske i säkerhets- **och** & Säkerhets- och \>  \> **efterlevnadscenter.**
+1. Gå till policyn för & skydd mot **nätfiske** i säkerhets- och \>  \> **efterlevnadscentret.**
 
 2. Observera värdet i **kolumnen** Status:
 
-   - Dra växlingsknappen till **Av** för att inaktivera principen.
+   - Inaktivera principen genom att dra **reglaget** till Av.
 
-   - Aktivera principen genom att **dra reglaget** till På.
+   - Aktivera principen genom att dra **reglaget** till På.
 
-Du kan inte inaktivera standardprincipen för skydd mot nätfiske.
+Du kan inte inaktivera standardprincipen för nätfiske.
 
 ### <a name="set-the-priority-of-custom-anti-phishing-policies"></a>Ange prioritet för anpassade principer för skydd mot nätfiske
 
-Som standard prioriteras principer mot nätfiske baserat på i vilken ordning de har skapats (nyare principer har lägre prioritet än äldre principer). Ett lägre prioritetsnummer innebär att principen har högre prioritet (0 är det högsta), och principerna bearbetas i prioritetsordning (principer med högre prioritet bearbetas före principer med lägre prioritet). Inga två policyer kan ha samma prioritet, och policyhantering stannar efter att den första policyn har tillämpats.
+Som standard prioriteras principer mot nätfiske baserat på i vilken ordning de skapades (nyare principer har lägre prioritet än äldre principer). Ett lägre prioritetsnummer innebär att principen har högre prioritet (0 är det högsta), och principerna bearbetas i prioritetsordning (principer med högre prioritet bearbetas före principer med lägre prioritet). Inga två policyer kan ha samma prioritet, och policyhantering stannar efter att den första policyn har tillämpats.
 
 För mer information om ordningsföljden och hur flera policyer utvärderas och tillämpas, se [Order och prioritet för e-postskydd](how-policies-and-protections-are-combined.md).
 
-Anpassade principer för skydd mot nätfiske visas i den ordning de bearbetas (den första principen har **prioritetsvärdet** 0). Standardprincipen för skydd mot nätfiske med namnet Office365 AntiPhish Default har det anpassade prioritetsvärdet **Lägsta** och du kan inte ändra det.
+Anpassade principer för skydd mot nätfiske visas i den ordning de bearbetas (den första principen har **prioritetsvärdet** 0). Standardprincipen för skydd mot nätfiske med namnet Office365 AntiPhish Default har det anpassade prioritetsvärdet **Lägst** och du kan inte ändra det.
 
- **Obs!** I Säkerhets- & Efterlevnadscenter kan du bara ändra prioriteten för principen mot nätfiske efter att du har skapat den. I PowerShell kan du åsidosätta standardprioritet när du skapar nätt phish-regeln (vilket kan påverka prioriteten för befintliga regler).
+ **Obs!** I Säkerhets- & säkerhets- och efterlevnadscenter kan du bara ändra prioriteten för principen mot nätfiske när du har skapat den. I PowerShell kan du åsidosätta standardprioritet när du skapar antifrasregeln (vilket kan påverka prioriteringen för befintliga regler).
 
-Om du vill ändra prioriteten för  en princip klickar du på Öka prioritet eller  Minska prioriteten för principens egenskaper (du kan inte direkt ändra prioritetsnumret i Säkerhets- & Efterlevnadscenter).  Att ändra prioritet för en princip är bara meningsfullt om du har flera principer.
+Om du vill ändra prioriteten för  en princip klickar du på Öka prioritet eller  Minska prioritet för egenskaperna för principen (du kan inte direkt ändra prioritetsnumret i Säkerhets- & efterlevnadscenter).  Att ändra prioritet för en princip är bara meningsfullt om du har flera principer.
 
-1. Gå till ATP för skydd mot  nätfiske i Säkerhets- och & Säkerhets- och \>  \> **efterlevnadscenter.**
+1. Gå till ATP för & skydd  mot nätfiske i Säkerhets- och \>  \> **efterlevnadscenter.**
 
-2. Markera den princip som du vill ändra. Om det redan är markerat avmarkerar du det och markerar det igen.
+2. Markera den princip som du vill ändra. Om den redan är markerad avmarkerar du den och markerar den igen.
 
-3. Den **utfällna knappen Redigera \<name\>** din princip visas.
+3. Den **utfällna knappen Redigera \<name\>** princip visas.
 
-   - Den anpassade principen för nätfiske med **prioritetsvärdet** **0** har endast **knappen Minska** prioritet tillgänglig.
+   - Den anpassade principen för nätfiske med **prioritetsvärdet** **0** har endast knappen **Minska** prioritet tillgänglig.
 
-   - Den anpassade principen för nätfiske med lägsta **prioritetsvärde** (till exempel **3)** har endast knappen Öka **prioritet** tillgänglig.
+   - Den anpassade principen för nätfiske med lägsta **prioritetsvärde** (till exempel **3)** har endast knappen **Öka** prioritet tillgänglig.
 
    - Om du har tre eller fler anpassade principer för skydd mot nätfiske finns det både knapparna Öka prioritet och Minska prioritet mellan de högsta och lägsta prioritetsvärdena.  
 
-4. Klicka **på Öka prioritet** eller Minska **prioritet** om du vill ändra **prioritetsvärdet.**
+4. Klicka **på Öka prioritet** eller Minska **prioritet** om du vill ändra värdet **för** Prioritet.
 
 5. Klicka på **Stäng** när du är klar.
 
-## <a name="use-the-security--compliance-center-to-view-anti-phishing-policies"></a>Använd Säkerhets- & Center för att visa principer för skydd mot nätfiske
+## <a name="use-the-security--compliance-center-to-view-anti-phishing-policies"></a>Använd Säkerhets- & säkerhets- och efterlevnadscenter för att visa principer mot nätfiske
 
-1. Gå till policyn för skydd mot  nätfiske i säkerhets- och & Säkerhets- och \>  \> **efterlevnadscenter.**
+1. Gå till & skydd mot nätfiske i **säkerhets- och** \> **efterlevnadscentret.** \> 
 
 2. Gör något av följande:
 
-   - Välj en anpassad princip för nätfiske som du vill visa. Om det redan är markerat avmarkerar du det och markerar det igen.
+   - Välj en anpassad princip mot nätfiske som du vill visa. Om den redan är markerad avmarkerar du den och markerar den igen.
 
-   - Klicka **på Standardprincip** om du vill visa standardprincipen för skydd mot nätfiske.
+   - Klicka **på Standardprincip** om du vill visa standardprincipen för nätfiske.
 
-3. Den **utfällga \<name\>** menyn Redigera princip visas, där du kan visa inställningar och värden.
+3. Den **utfällna \<name\>** menyn Redigera princip visas, där du kan visa inställningar och värden.
 
-## <a name="use-the-security--compliance-center-to-remove-anti-phishing-policies"></a>Använda Säkerhets- & Center för att ta bort principer för skydd mot nätfiske
+## <a name="use-the-security--compliance-center-to-remove-anti-phishing-policies"></a>Använda Säkerhets- & efterlevnadscenter för att ta bort principer mot nätfiske
 
-1. Gå till policyn för skydd mot nätfiske i säkerhets- **och** & Säkerhets- och \>  \> **efterlevnadscenter.**
+1. Gå till policyn för & skydd mot **nätfiske** i säkerhets- och \>  \> **efterlevnadscentret.**
 
-2. Markera den princip som du vill ta bort. Om det redan är markerat avmarkerar du det och markerar det igen.
+2. Markera den princip som du vill ta bort. Om den redan är markerad avmarkerar du den och markerar den igen.
 
-3. I den **utfällingsrutan \<name\>** Redigera principen som visas klickar du på Ta bort princip och sedan **på Ja** i varningsdialogrutan som visas.
+3. I den **utfällna \<name\>** menyn Redigera principen som visas klickar du på **Ta** bort princip och sedan **på Ja** i varningsdialogrutan som visas.
 
 Du kan inte ta bort standardprincipen.
 
 ## <a name="use-exchange-online-powershell-to-configure-anti-phishing-policies"></a>Använda Exchange Online PowerShell för att konfigurera principer för skydd mot nätfiske
 
-Som tidigare beskrivits består en nätfiskeprincip av en nätfiskeprincip och en nätfiskeregel.
+Som tidigare beskrivits består en nätfiskeprincip av en nätfiskeprincip och en anti-phish-regel.
 
-I Exchange Online PowerShell visar sig skillnaden mellan nättringsprinciper och nätt phish-regler. Du hanterar phish-principer med hjälp av cmdletarna **\* -AntiPhishPolicy** och du hanterar nätfingregler med hjälp av **\* cmdlets -AntiPhishRule.**
+I Exchange Online PowerShell syns skillnaden mellan nättfiska policyer och anti-phish-regler. Du hanterar antifish-principer med hjälp av cmdletarna **\* -AntiPhishPolicy** och du hanterar anti-phish-regler med hjälp av cmdletarna **\* -AntiPhishRule.**
 
-- I PowerShell skapar du först en nätt phish-princip och sedan skapar du den skyddande phish-regel som identifierar den princip som regeln gäller för.
-- I PowerShell kan du ändra inställningarna separat i nätt phish-principen och anti-phish-regeln.
-- När du tar bort en nätt phish-princip från PowerShell tas inte motsvarande phish-regel bort automatiskt och vice versa.
+- I PowerShell skapar du först den nätfiska principen och sedan skapar du den skyddande phish-regeln som identifierar principen som regeln gäller för.
+- I PowerShell ändrar du inställningarna separat i antifish-principen och antifish-regeln.
+- När du tar bort en anti-phish-policy från PowerShell tas inte motsvarande anti phish-regel bort automatiskt, och vice versa.
 
 > [!NOTE]
 > Följande PowerShell-procedurer är inte tillgängliga i fristående EOP-organisationer som använder Exchange Online Protection PowerShell.
 
 ### <a name="use-powershell-to-create-anti-phishing-policies"></a>Använda PowerShell för att skapa principer för skydd mot nätfiske
 
-Att skapa en princip mot nätfiske i PowerShell är en process i två steg:
+Det krävs två steg för att skapa en princip mot nätfiske i PowerShell:
 
-1. Skapa en anti-phish-policy.
-2. Skapa den phish-regel som anger den anti-phish-policy som regeln gäller för.
+1. Skapa den anfish-policy som du sedan skapar.
+2. Skapa den anti phish-regel som anger den antifishpolicy som regeln gäller för.
 
  **Anmärkningar**:
 
-- Du kan skapa en ny, phish-regel och tilldela den en befintlig, oassocierad nätt phish-princip. En nätt phish-regel kan inte associeras med mer än en anti-phish-policy.
+- Du kan skapa en ny anti-phish-regel och tilldela en befintlig, oassocierad antifishprincip till den. An anti-phish rule can't be associated with more than one anti-phish policy.
 
-- Du kan konfigurera följande inställningar för nya skyddsprinciper i PowerShell som inte är tillgängliga i Säkerhets- & och efterlevnadscenter förrän du har skapat principen:
+- Du kan konfigurera följande inställningar för nya skyddsprinciper i PowerShell som inte är tillgängliga i Säkerhets- och &-efterlevnadscenter förrän du har skapat principen:
 
-  - Skapa den nya principen som inaktiverad _(aktiverad_ för `$false` cmdleten **New-AntiPhishRule).**
-  - Ange prioriteten för principen när den skapas _(Priority)_ _\<Number\>_ på **cmdleten New-AntiPhishRule).**
+  - Skapa den nya principen som _inaktiverad (aktiverad_ `$false` på cmdleten **New-AntiPhishRule).**
+  - Ange prioritet för principen vid skapandet (_Prioritet_ _\<Number\>_ ) på **cmdleten New-AntiPhishRule).**
 
-- En ny, phish-princip som du skapar i PowerShell visas inte i Säkerhets- & och efterlevnadscenter förrän du tilldelar principen till en nätt phish-regel.
+- En ny antifishpolicy som du skapar i PowerShell visas inte i säkerhets- och efterlevnadscentret för & förrän du tilldelar principen en antifishregel.
 
-#### <a name="step-1-use-powershell-to-create-an-anti-phish-policy"></a>Steg 1: Använda PowerShell för att skapa en anti-phish-princip
+#### <a name="step-1-use-powershell-to-create-an-anti-phish-policy"></a>Steg 1: Använd PowerShell för att skapa en anti-phish-policy
 
-Om du vill skapa en anti-phish-princip använder du följande syntax:
+Använd följande syntax för att skapa en antifishpolicy:
 
 ```PowerShell
 New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSpoofIntelligence <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>]
 ```
 
-I det här exemplet skapas en nätt phish-princip som heter Research Quarantine med följande inställningar:
+I det här exemplet skapas en antifishprincip som heter Forskningsin karantän med följande inställningar:
 
 - Beskrivningen är: Forskningavdelningens policy.
 - Ändrar standardåtgärden för förfalskning till karantän.
@@ -321,19 +321,19 @@ I det här exemplet skapas en nätt phish-princip som heter Research Quarantine 
 New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -AuthenticationFailAction Quarantine
 ```
 
-Detaljerad information om syntax och parametrar finns [i New-AntiPhishPolicy.](https://docs.microsoft.com/powershell/module/exchange/New-AntiPhishPolicy)
+Detaljerad information om syntax och parametrar finns [i New-AntiPhishPolicy.](/powershell/module/exchange/New-AntiPhishPolicy)
 
-#### <a name="step-2-use-powershell-to-create-an-anti-phish-rule"></a>Steg 2: Använda PowerShell för att skapa en antifishregel
+#### <a name="step-2-use-powershell-to-create-an-anti-phish-rule"></a>Steg 2: Använd PowerShell för att skapa en antifishregel
 
-Om du vill skapa en anti-phish-regel använder du följande syntax:
+Använd följande syntax för att skapa en antifishregel:
 
 ```PowerShell
 New-AntiPhishRule -Name "<RuleName>" -AntiPhishPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"]
 ```
 
-I det här exemplet skapas en antifishregel som heter Research Department med följande villkor:
+I det här exemplet skapas en antifishregel som heter Forskningsavdelningen med följande villkor:
 
-- Regeln är kopplad till den phish-policy som heter Research Quarantine.
+- Regeln är kopplad till den nättfiska principen som heter Research Quarantine.
 - Regeln gäller för medlemmar i gruppen Research Department.
 - Eftersom vi inte använder _parametern Priority_ används standardprioritet.
 
@@ -341,39 +341,39 @@ I det här exemplet skapas en antifishregel som heter Research Department med f�
 New-AntiPhishRule -Name "Research Department" -AntiPhishPolicy "Research Quarantine" -SentToMemberOf "Research Department"
 ```
 
-Detaljerad information om syntax och parametrar finns [i New-AntiPhishRule.](https://docs.microsoft.com/powershell/module/exchange/New-AntiPhishRule)
+Detaljerad information om syntax och parametrar finns [i New-AntiPhishRule](/powershell/module/exchange/New-AntiPhishRule).
 
-### <a name="use-powershell-to-view-anti-phish-policies"></a>Använda PowerShell för att visa nätthetsprinciper
+### <a name="use-powershell-to-view-anti-phish-policies"></a>Använda PowerShell för att se nätträcksprinciper
 
-Om du vill se befintliga principer för nättring använder du följande syntax:
+Om du vill se befintliga skyddsprinciper använder du följande syntax:
 
 ```PowerShell
 Get-AntiPhishPolicy [-Identity "<PolicyIdentity>"] [| <Format-Table | Format-List> <Property1,Property2,...>]
 ```
 
-Det här exemplet returnerar en sammanfattning av alla principer för nätt phish tillsammans med de angivna egenskaperna.
+Det här exemplet returnerar en sammanfattning av alla antifishpolicys tillsammans med de angivna egenskaperna.
 
 ```PowerShell
 Get-AntiPhishPolicy | Format-Table Name,IsDefault
 ```
 
-I det här exemplet returneras alla egendomsvärden för den nätt phish-policy som heter Chefer.
+Det här exemplet returnerar alla egenskapsvärden för den nättfiska policyn cheferna.
 
 ```PowerShell
 Get-AntiPhishPolicy -Identity "Executives"
 ```
 
-Detaljerad information om syntax och parametrar finns [i Get-AntiPhishPolicy.](https://docs.microsoft.com/powershell/module/exchange/Get-AntiPhishPolicy)
+Detaljerad information om syntax och parametrar finns i [Get-AntiPhishPolicy.](/powershell/module/exchange/Get-AntiPhishPolicy)
 
-### <a name="use-powershell-to-view-anti-phish-rules"></a>Använda PowerShell för att visa nätträcksregler
+### <a name="use-powershell-to-view-anti-phish-rules"></a>Använda PowerShell för att se nätträcksregler
 
-Om du vill se befintliga skyddande regler använder du följande syntax:
+Använd följande syntax för att visa befintliga skydd mot phish-regler:
 
 ```PowerShell
 Get-AntiPhishRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled] [| <Format-Table | Format-List> <Property1,Property2,...>]
 ```
 
-Det här exemplet returnerar en sammanfattning av alla skyddande regler tillsammans med de angivna egenskaperna.
+Det här exemplet returnerar en sammanfattning av alla nättringsregler tillsammans med de angivna egenskaperna.
 
 ```PowerShell
 Get-AntiPhishRule | Format-Table Name,Priority,State
@@ -389,35 +389,35 @@ Get-AntiPhishRule -State Disabled | Format-Table Name,Priority
 Get-AntiPhishRule -State Enabled | Format-Table Name,Priority
 ```
 
-I det här exemplet returneras alla egenskapsvärden för den phish-regeln Contoso Executives.
+I det här exemplet returneras alla egenskapsvärden för den nättfiska regeln Contoso Executives.
 
 ```PowerShell
 Get-AntiPhishRule -Identity "Contoso Executives"
 ```
 
-Detaljerad information om syntax och parametrar finns [i Get-AntiPhishRule.](https://docs.microsoft.com/powershell/module/exchange/Get-AntiPhishrule)
+Detaljerad information om syntax och parametrar finns [i Get-AntiPhishRule.](/powershell/module/exchange/Get-AntiPhishrule)
 
-### <a name="use-powershell-to-modify-anti-phish-policies"></a>Använda PowerShell för att ändra nätthetsprinciper
+### <a name="use-powershell-to-modify-anti-phish-policies"></a>Använda PowerShell för att ändra skydd mot nättfingor
 
-Förutom följande objekt är samma inställningar tillgängliga när du ändrar en anti-phish-princip i PowerShell som när du skapar en princip enligt beskrivningen i steg 1: Använda PowerShell för att skapa en nätt [phish-princip](#step-1-use-powershell-to-create-an-anti-phish-policy) tidigare i den här artikeln.
+Förutom följande objekt är samma inställningar tillgängliga när du ändrar en anti-phish-princip i PowerShell som när du skapar en princip som beskrivs i Steg 1: Använda PowerShell för att skapa en [anti-phish-princip](#step-1-use-powershell-to-create-an-anti-phish-policy) tidigare i den här artikeln.
 
-- Växeln _MakeDefault_ som omvandlar den angivna principen till  standardprincipen (gäller för alla, alltid Lägsta prioritet och du kan inte ta bort den) är bara tillgänglig när du ändrar en nätt phish-princip i PowerShell.
+- Växeln _MakeDefault_ som omvandlar den angivna principen till  standardprincipen (används för alla, alltid lägst prioritet och du kan inte ta bort den) är bara tillgänglig när du ändrar en nätfnig princip i PowerShell.
 
-- Du kan inte byta namn på en nätt **phish-princip (cmdleten Set-AntiPhishPolicy** har ingen _namnparameter)._ När du byter namn på en policy mot nätfiske i Säkerhets- & Efterlevnadscenter byter du bara namn på _nätfiskeregeln._
+- Du kan inte byta namn på en nätt **phish-policy (cmdleten Set-AntiPhishPolicy** har ingen _namnparameter)._ När du byter namn på en policy mot nätfiske i Säkerhets- och & Säkerhets- och efterlevnadscenter byter du bara namn på _nätfiskeregeln._
 
-Om du vill ändra en anti-phish-princip använder du följande syntax:
+Använd följande syntax för att ändra en nätt phish-policy:
 
 ```PowerShell
 Set-AntiPhishPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-Detaljerad information om syntax och parametrar finns [i Set-AntiPhishPolicy.](https://docs.microsoft.com/powershell/module/exchange/Set-AntiPhishPolicy)
+Detaljerad information om syntax och parametrar finns [i Set-AntiPhishPolicy.](/powershell/module/exchange/Set-AntiPhishPolicy)
 
-### <a name="use-powershell-to-modify-anti-phish-rules"></a>Använda PowerShell för att ändra nätthetsregler
+### <a name="use-powershell-to-modify-anti-phish-rules"></a>Använda PowerShell för att ändra skydd mot phish-regler
 
-Den enda inställning som inte är tillgänglig när du ändrar en anti-phish-regel i PowerShell är den aktiverade _parametern_ som gör att du kan skapa en inaktiverad regel. Nästa avsnitt innehåller information om hur du aktiverar eller inaktiverar befintliga skyddande regler.
+Den enda inställningen som inte är tillgänglig när du ändrar en antifishregel i PowerShell är parametern _Enabled_ som gör att du kan skapa en inaktiverad regel. Nästa avsnitt innehåller information om hur du aktiverar eller inaktiverar befintliga skyddsregler.
 
-Annars är samma inställningar tillgängliga när du skapar en regel enligt beskrivningen i steg [2:](#step-2-use-powershell-to-create-an-anti-phish-rule) Använd PowerShell för att skapa ett avsnitt som inte är phish längre fram i den här artikeln.
+Annars är samma inställningar tillgängliga när du skapar en regel som beskrivs i steg [2:](#step-2-use-powershell-to-create-an-anti-phish-rule) Använd PowerShell för att skapa en nätfetregel längre fram i den här artikeln.
 
 Använd följande syntax för att ändra en antifishregel:
 
@@ -425,19 +425,19 @@ Använd följande syntax för att ändra en antifishregel:
 Set-AntiPhishRule -Identity "<RuleName>" <Settings>
 ```
 
-Detaljerad information om syntax och parametrar finns [i Set-AntiPhishRule.](https://docs.microsoft.com/powershell/module/exchange/set-antiphishrule)
+Detaljerad information om syntax och parametrar finns [i Set-AntiPhishRule.](/powershell/module/exchange/set-antiphishrule)
 
-### <a name="use-powershell-to-enable-or-disable-anti-phish-rules"></a>Använda PowerShell för att aktivera eller inaktivera skydd mot phish-regler
+### <a name="use-powershell-to-enable-or-disable-anti-phish-rules"></a>Använda PowerShell för att aktivera eller inaktivera nätthetsregler
 
 Om du aktiverar eller inaktiverar en nätfiskeregel i PowerShell aktiveras eller inaktiveras hela nätfiskeprincipen (nätfiskeregeln och den tilldelade nätfiskeprincipen). Du kan inte aktivera eller inaktivera standardprincipen för nätfiske (den används alltid för alla mottagare).
 
-Om du vill aktivera eller inaktivera en nätt phish-regel i PowerShell använder du följande syntax:
+Om du vill aktivera eller inaktivera en nätträcksregel i PowerShell använder du följande syntax:
 
 ```PowerShell
 <Enable-AntiPhishRule | Disable-AntiPhishRule> -Identity "<RuleName>"
 ```
 
-I det här exemplet inaktiveras den phish-regeln marknadsföringsavdelningen.
+I det här exemplet inaktiveras den phish-regeln Marknadsföringsavdelningen.
 
 ```PowerShell
 Disable-AntiPhishRule -Identity "Marketing Department"
@@ -449,13 +449,13 @@ I det här exemplet aktiveras samma regel.
 Enable-AntiPhishRule -Identity "Marketing Department"
 ```
 
-Detaljerad information om syntax och parametrar finns [i Enable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/enable-antiphishrule) [och Disable-AntiPhishRule.](https://docs.microsoft.com/powershell/module/exchange/disable-antiphishrule)
+Detaljerad information om syntax och parametrar finns [i Enable-AntiPhishRule](/powershell/module/exchange/enable-antiphishrule) [och Disable-AntiPhishRule.](/powershell/module/exchange/disable-antiphishrule)
 
 ### <a name="use-powershell-to-set-the-priority-of-anti-phish-rules"></a>Använd PowerShell för att ange prioriteten för nätträcksregler
 
 Det högsta prioritetsvärde du kan ange för en regel är 0. Det lägsta värde du kan ange beror på antalet regler. Om du till exempel har fem regler kan du använda prioritetsvärden från 0 till 4. Om du ändrar prioriteten för en befintlig regel kan det ha en dominoeffekt på andra regler. Om du till exempel har fem anpassade regler (prioriteterna 0 till 4) och du ändrar prioriteten för en regel till 2 ändras den befintliga regeln med prioritet 2 till prioritet 3, och regeln med prioritet 3 ändras till prioritet 4.
 
-Använd följande syntax för att ange prioriteten för en anti-phish-regel i PowerShell:
+Om du vill ange prioriteten för en anti-phish-regel i PowerShell använder du följande syntax:
 
 ```PowerShell
 Set-AntiPhishRule -Identity "<RuleName>" -Priority <Number>
@@ -469,31 +469,31 @@ Set-AntiPhishRule -Identity "Marketing Department" -Priority 2
 
 **Anmärkningar**:
 
-- Om du vill ange prioriteten för en  ny regel när du skapar den använder du prioritetsparametern i cmdleten **New-AntiPhishRule** i stället.
+- Om du vill ange prioriteten för en ny regel när du skapar den använder du parametern _Priority_ i cmdleten **New-AntiPhishRule** i stället.
 
-- Standardprincipen för nätt phish har inte en motsvarande antifishregel och har alltid det omoderbara prioritetsvärdet **Lägsta.**
+- Den förvalda antifish-principen har inte en motsvarande antifiska regel och har alltid det oföränderliga prioritetsvärdet **Lägsta.**
 
-### <a name="use-powershell-to-remove-anti-phish-policies"></a>Använda PowerShell för att ta bort nätt phish-principer
+### <a name="use-powershell-to-remove-anti-phish-policies"></a>Använda PowerShell för att ta bort nättfällprinciper
 
-När du använder PowerShell för att ta bort en nätt phish-princip tas inte motsvarande phish-regel bort.
+När du använder PowerShell för att ta bort en anti-phish-policy tas motsvarande anti phish-regel inte bort.
 
-Om du vill ta bort en anti-phish-princip i PowerShell använder du följande syntax:
+Om du vill ta bort en anti-phish-policy i PowerShell använder du följande syntax:
 
 ```PowerShell
 Remove-AntiPhishPolicy -Identity "<PolicyName>"
 ```
 
-I det här exemplet tas den antifishpolicy som heter Marknadsföringsavdelningen bort.
+I det här exemplet tas den nättfiska policyn Marketing Department bort.
 
 ```PowerShell
 Remove-AntiPhishPolicy -Identity "Marketing Department"
 ```
 
-Detaljerad information om syntax och parametrar finns i [Remove-AntiPhishPolicy.](https://docs.microsoft.com/powershell/module/exchange/Remove-AntiPhishPolicy)
+Detaljerad information om syntax och parametrar finns i [Remove-AntiPhishPolicy.](/powershell/module/exchange/Remove-AntiPhishPolicy)
 
 ### <a name="use-powershell-to-remove-anti-phish-rules"></a>Använda PowerShell för att ta bort nätträcksregler
 
-När du använder PowerShell för att ta bort en nätt phish-regel tas inte motsvarande phish-princip bort.
+När du använder PowerShell för att ta bort en anti-phish-regel tas motsvarande anti-phish-policy inte bort.
 
 Om du vill ta bort en anti-phish-regel i PowerShell använder du följande syntax:
 
@@ -501,24 +501,24 @@ Om du vill ta bort en anti-phish-regel i PowerShell använder du följande synta
 Remove-AntiPhishRule -Identity "<PolicyName>"
 ```
 
-I det här exemplet tas den phish-regeln som heter Marknadsföringsavdelningen bort.
+I det här exemplet tas den antifiska regeln Marknadsföringsavdelningen bort.
 
 ```PowerShell
 Remove-AntiPhishRule -Identity "Marketing Department"
 ```
 
-Detaljerad information om syntax och parametrar finns [i Remove-AntiPhishRule.](https://docs.microsoft.com/powershell/module/exchange/Remove-AntiPhishRule)
+Detaljerad information om syntax och parametrar finns i [Remove-AntiPhishRule.](/powershell/module/exchange/Remove-AntiPhishRule)
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Hur vet jag att de här procedurerna fungerade?
 
-Kontrollera att du har konfigurerat principer för skydd mot nätfiske i Microsoft Defender för Office 365 genom att göra något av följande:
+Verifiera att du har konfigurerat principer för skydd mot nätfiske i Microsoft Defender för Office 365 genom att göra något av följande:
 
-- Gå till policyn för skydd mot nätfiske i säkerhets- **och** & Säkerhets- och \>  \> **efterlevnadscenter.** Kontrollera listan över principer, deras **statusvärden** och deras **prioritetsvärden.** Om du vill visa mer information gör du något av följande:
+- Gå till policyn för & skydd mot **nätfiske** i säkerhets- och \>  \> **efterlevnadscentret.** Kontrollera listan med principer, deras **statusvärden** och deras **prioritetsvärden.** Om du vill visa mer information gör du något av följande:
 
   - Välj principen i listan och visa informationen i den utfällade listrutan.
-  - Klicka **på Standardprincip** och visa informationen i den utfällna menyn.
+  - Klicka **på Standardprincip** och visa informationen i den utfällade menyn.
 
-- I Exchange Online PowerShell ersätter du med namnet på principen \<Name\> eller regeln, kör följande kommando och kontrollerar inställningarna:
+- I Exchange Online PowerShell \<Name\> ersätter du med namnet på principen eller regeln, kör följande kommando och kontrollerar inställningarna:
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"

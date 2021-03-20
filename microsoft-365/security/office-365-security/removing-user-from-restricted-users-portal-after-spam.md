@@ -20,12 +20,12 @@ description: Administratörer kan få information om hur de tar bort användare 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7ebc0cd1d6440673ec453322d3e4c3af2e88a028
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 2b4f77f1edf0024a0324736adb2a8bfd6cc51470
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406718"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908224"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Ta bort blockerade användare från portalen med åtkomstbegränsade användare i Office 365
 
@@ -36,9 +36,9 @@ ms.locfileid: "50406718"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Om en användare överskrider någon av de utgående sändningsgränserna som anges i [tjänstbegränsningarna](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) eller i [utgående skräppostprinciper](configure-the-outbound-spam-policy.md), begränsas användaren från att skicka e-post, men de kan fortfarande ta emot e-post.
+Om en användare överskrider någon av de utgående sändningsgränserna som anges i [tjänstbegränsningarna](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) eller i [utgående skräppostprinciper](configure-the-outbound-spam-policy.md), begränsas användaren från att skicka e-post, men de kan fortfarande ta emot e-post.
 
-Användaren läggs till i portalen med åtkomstbegränsade användare i säkerhets- och efterlevnadscentret. När de försöker skicka e-post returneras meddelandet i en rapport om utebliven leverans (kallas även för ett NDR eller icke-leveranskvitto) med felkoden [5.1.8](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) och följande text:
+Användaren läggs till i portalen med åtkomstbegränsade användare i säkerhets- och efterlevnadscentret. När de försöker skicka e-post returneras meddelandet i en rapport om utebliven leverans (kallas även för ett NDR eller icke-leveranskvitto) med felkoden [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) och följande text:
 
 > “Det gick inte att leverera meddelandet eftersom du inte godkändes som en giltig avsändare. Vanligtvis beror detta på att din e-postadress är misstänkt för att skicka skräppost och det är inte längre tillåten att skicka e-post.  Kontakta e-postadministratören om du behöver hjälp. Fjärrservern returnerade '550 5.1.8 åtkomst nekad, felaktig utgående avsändare”.
 
@@ -48,19 +48,19 @@ Administratörer kan ta bort användare från portalen med åtkomstbegränsade a
 
 - Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Använd <https://protection.office.com/restrictedusers> för att gå direkt till sidan med **åtkomstbegränsade användare**.
 
-- Information om hur du ansluter till Exchange Online PowerShell finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- Information om hur du ansluter till Exchange Online PowerShell finns i [Anslut till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Du måste ha tilldelats behörigheter i **Exchange Online** innan du kan genomföra procedurerna i den här artikeln:
   - Om du vill ta bort användare från Portalen för begränsade användare måste du vara medlem i rollgruppen **Organisationsledning** eller **Säkerhetsadministratörer**.
   - För skrivskyddad behörighet till Portalen för begränsade användare måste du vara medlem i rollgruppen **Global läsare** eller **Säkerhetsläsare**.
 
-  Mer information finns under [Behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
+  Mer information finns under [Behörigheter i Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
   >
   > - Genom att lägga till användare i motsvarande Azure Active Directory-roll i administrationscentret för Microsoft 365 får användarna den nödvändiga behörigheten _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
   >
-  > - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
+  > - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
 - En avsändare som överskrider gränsen för utgående e-post är ett bevis på ett komprometterat konto. Innan du tar bort användaren från portalen för åtkomstbegränsade användare måste du följa de nödvändiga stegen för att återfå kontroll över kontot. Mer information finns i [Svara på ett komprometterat e-postkonto i Office 365](responding-to-a-compromised-email-account.md).
 
@@ -120,7 +120,7 @@ Om du vill visa information om särskilda användare ersätter du \<emailaddress
 Get-BlockedSenderAddress -SenderAddress <emailaddress>
 ```
 
-Se [Get-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/get-blockedsenderaddress) för detaljerad information om syntax och parametrar.
+Se [Get-BlockedSenderAddress](/powershell/module/exchange/get-blockedsenderaddress) för detaljerad information om syntax och parametrar.
 
 Om du vill ta bort användare från listan med åtkomstbegränsade användare ersätter du \<emailaddress\> med deras e-postadress och kör följande kommando:
 
@@ -128,4 +128,4 @@ Om du vill ta bort användare från listan med åtkomstbegränsade användare er
 Remove-BlockedSenderAddress -SenderAddress <emailaddress>
 ```
 
-Se [Remove-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/remove-blockedsenderaddress) för detaljerad information om syntax och parametrar.
+Se [Remove-BlockedSenderAddress](/powershell/module/exchange/remove-blockedsenderaddress) för detaljerad information om syntax och parametrar.

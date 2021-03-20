@@ -20,12 +20,12 @@ description: Lär dig mer om hur SharePoint Online identifierar virus i filer so
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9ba3d19c6b04b93d9b1089540b7483d8b2e7246c
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: a651d198f441c26525cbfb5d7406ae350db8b79e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727505"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908088"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>Inbyggt virusskydd i SharePoint Online, OneDrive och Microsoft Teams
 
@@ -62,7 +62,7 @@ Så här går det till:
 
 > [!NOTE]
 >
-> Administratörer kan använda parametern *DisallowInfectedFileDownload* i cmdleten [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant) i SharePoint Online PowerShell för att hindra användare från att hämta smittade filer, även i varningsfönstret för virus. Instruktioner finns i Använda [SharePoint Online PowerShell för att hindra användare från att hämta skadliga filer.](turn-on-atp-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)
+> Administratörer kan använda parametern *DisallowInfectedFileDownload* i cmdleten [Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant) i SharePoint Online PowerShell för att hindra användare från att hämta smittade filer, även i varningsfönstret för virus. Instruktioner finns i Använda [SharePoint Online PowerShell för att hindra användare från att hämta skadliga filer.](turn-on-atp-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)
 >
 > Så snart du aktiverar *parametern DisallowInfectedFileDownload* blockeras åtkomsten till de identifierade/blockerade filerna helt och hållet för användare och administratörer.
 
@@ -76,6 +76,6 @@ Microsoft 365-organisationer som har Microsoft Defender för [Office 365](office
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Skydd mot skadlig programvara och utpressningstrojaner i Microsoft 365](https://docs.microsoft.com/compliance/assurance/assurance-malware-and-ransomware-protection)
+[Skydd mot skadlig programvara och utpressningstrojaner i Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection)
 
 Mer information om antivirus i SharePoint Online, OneDrive och [](protect-against-threats.md) Microsoft Teams finns i Skydda mot hot och Aktivera säkra bifogade filer för [SharePoint, OneDrive](turn-on-atp-for-spo-odb-and-teams.md)och Microsoft Teams.

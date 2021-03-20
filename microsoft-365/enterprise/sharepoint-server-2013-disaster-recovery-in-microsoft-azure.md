@@ -1,5 +1,5 @@
 ---
-title: SharePoint Server 2013 katastrof återställning i Microsoft Azure
+title: SharePoint Server 2013 katastrofåterställning i Microsoft Azure
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -17,338 +17,338 @@ ms.custom:
 - Ent_Deployment
 - seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
-description: I den här artikeln beskrivs hur du använder Azure för att skapa en katastrof återställnings miljö för den lokala SharePoint-servergruppen.
-ms.openlocfilehash: d1643f3fa0275ef9fbb01372869ca551b9fed495
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: I den här artikeln beskrivs hur du använder Azure för att skapa en katastrofåterställningsmiljö för den lokala SharePoint-servergruppen.
+ms.openlocfilehash: 01a49cfa19711caa36190a795792635431dd7d04
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694445"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907438"
 ---
-# <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>SharePoint Server 2013 katastrof återställning i Microsoft Azure
+# <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>SharePoint Server 2013 katastrofåterställning i Microsoft Azure
 
- Med Azure kan du skapa en katastrof återställnings miljö för den lokala SharePoint-servergruppen. I den här artikeln beskrivs hur du utformar och implementerar den här lösningen.
+ Med Azure kan du skapa en katastrofåterställningsmiljö för den lokala SharePoint-servergruppen. I den här artikeln beskrivs hur du utformar och implementerar den här lösningen.
 
- **Titta på videon om återställning av Disaster Recovery-funktioner i SharePoint Server 2013**
+ **Titta på översiktsvideon om katastrofåterställning i SharePoint Server 2013**
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/1b73ec8f-29bd-44eb-aa3a-f7932784bfd9?autoplay=false]
   
- När en katastrof träffar den lokala SharePoint-miljön är din bästa prioritet att snabbt komma igång med systemet. En katastrof återställning med SharePoint är snabbare och enklare när du redan har en säkerhets kopierings miljö i Microsoft Azure. I det här videoklippet lär du dig de viktigaste begreppen i en SharePoint varm failover-miljö och kompletterar alla uppgifter som är tillgängliga i den här artikeln.
+ När katastrofen slår till i din lokala SharePoint-miljö är din högsta prioritet att få igång systemet snabbt igen. Katastrofåterställning med SharePoint går snabbare och enklare när du har en säkerhetskopieringsmiljö som redan körs i Microsoft Azure. Den här videon förklarar huvudbegreppen i en varmt redundansmiljö i SharePoint och kompletterar den fullständiga informationen som finns i den här artikeln.
   
-Använd den här artikeln med följande lösnings modell: **katastrof återställning för SharePoint i Microsoft Azure**.
+Använd den här artikeln med följande lösningsmodell: **SharePoint Katastrofåterställning i Microsoft Azure**.
   
-[![SharePoint – katastrof-återställning till Azure](../media/SP-DR-Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
+[![SharePoint-process för katastrofåterställning till Azure](../media/SP-DR-Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
   
  [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |  [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
-## <a name="use-azure-infrastructure-services-for-disaster-recovery"></a>Använd Azure Infrastructure Services för katastrof återställning
+## <a name="use-azure-infrastructure-services-for-disaster-recovery"></a>Använda Azure-infrastrukturtjänster för katastrofåterställning
 
-Många organisationer har ingen katastrof återställnings miljö för SharePoint, vilket kan vara dyrt att bygga och underhålla lokalt. Azure Infrastructure Services tillhandahåller övertygande alternativ för katastrof återställnings miljöer som är mer flexibla och billigare än de lokala alternativen.
+Många organisationer har inte en katastrofåterställningsmiljö för SharePoint, vilket kan vara dyrt att skapa och underhålla lokalt. Azure-infrastrukturtjänsterna tillhandahåller lockande alternativ för katastrofåterställningsmiljöer som är mer flexibla och billigare än de lokala alternativen.
   
-Fördelarna med att använda Azure Infrastructure-tjänsterna är:
+Fördelarna med att använda Azure-infrastrukturtjänster är:
   
-- **Färre dyra resurser** Underhåll och betala för färre resurser än lokal katastrof återställnings miljö. Antalet resurser beror på vilken katastrof-återställning du väljer: kall standby, varm standby eller snabb standby.
+- **Färre dyrbara resurser** Underhålla och betala för färre resurser än lokala katastrofåterställningsmiljöer. Antalet resurser beror på vilken katastrofåterställningsmiljö du väljer: kall vänteläge, varmt vänteläge eller vänteläge.
     
-- **Bättre flexibilitet för resurser** I händelse av en katastrof kan du enkelt utöka din återställning av SharePoint-servergruppen för att uppfylla laddnings kraven. Skala in när du inte längre behöver resurserna.
+- **Bättre flexibilitet för resurser** Vid en katastrof kan du enkelt skala ut din SharePoint-servergrupp för återställning så att den uppfyller inläsningskraven. Skala in när du inte längre behöver resurserna.
     
-- **Mindre data Center engagemang** Använd Azure Infrastructure Services i stället för att investera i ett sekundärt Data Center i en annan region.
+- **Lägre datacenteråtagande** Använd Azure Infrastructure Services i stället för att investera i ett sekundärt datacenter i en annan region.
     
-Det finns mindre komplexa alternativ för organisationer som bara kommer igång med katastrof återställning och avancerade alternativ för organisationer med hög återhämtnings krav. Definitionerna för miljöer med kall, varm och hot standby är lite annorlunda när miljön är värd för en moln plattform. I följande tabell beskrivs dessa miljöer för att skapa en SharePoint-återställnings grupp i Azure.
+Det finns mindre komplexa alternativ för organisationer som precis har börjat med katastrofåterställning och avancerade alternativ för organisationer med krav på hög motståndskraft. Definitionerna för kalla, varmt och varmt väntemiljöer är lite annorlunda när miljön är värd för en molnplattform. I följande tabell beskrivs de här miljöerna för att skapa en SharePoint-återställningsfarm i Azure.
   
-**Tabell: återställnings miljöer**
+**Tabell: Återställningsmiljöer**
 
-|**Typ av återställnings miljö**|**Beskrivning**|
+|**Typ av återställningsmiljö**|**Beskrivning**|
 |:-----|:-----|
-|Hot  <br/> |En Server grupp är etablerad, uppdaterad och körs i standby.  <br/> |
-|Bränn  <br/> |Server gruppen är byggd och virtuella datorer körs och uppdateras.  <br/> Med återställning kan du bifoga innehålls databaser, tjänst program och Crawla innehåll.  <br/> Server gruppen kan vara en mindre version av produktions gruppen och sedan byggas ut för att hantera hela användar basen.  <br/> |
-|Huset  <br/> |Server gruppen är helt inbyggd men de virtuella datorerna stoppas.  <br/> Att underhålla miljön inkluderar att starta de virtuella datorerna, då och då, korrigera, uppdatera och verifiera miljön.  <br/> Starta hela miljön i händelse av en katastrof.  <br/> |
+|Hot  <br/> |En servergrupp i fullständig storlek är etablerat, uppdaterat och körs i vänteläge.  <br/> |
+|Uppvärmning  <br/> |Servergruppen är uppbyggd och virtuella datorer körs och uppdateras.  <br/> Återställning omfattar att bifoga innehållsdatabaser, etablera tjänstprogram och crawla innehåll.  <br/> Servergruppen kan vara en mindre version av produktionsfarmen och sedan skalas ut så att den används i hela användarbasen.  <br/> |
+|Kall  <br/> |Servergruppen är helt inbyggd, men de virtuella maskinerna stoppas.  <br/> Underhåll av miljön omfattar att starta virtuella maskiner då och då, korrigera, uppdatera och verifiera miljön.  <br/> Starta hela miljön vid en katastrof.  <br/> |
    
-Det är viktigt att utvärdera organisationens återställnings tids mål (RTOs) och återställnings punkt mål (RPOs). Dessa krav avgör vilken miljö som är den mest lämpliga investeringen för din organisation.
+Det är viktigt att utvärdera organisationens mål för återställningstid (RTOs) och återställningspunktmål (RPOs). De här kraven avgör vilken miljö som är bäst för investeringen i organisationen.
   
-I den här artikeln beskrivs hur du implementerar en miljö för varma vänte läge. Du kan också anpassa den till en kall standby-miljö, men du måste följa ytterligare procedurer för att kunna använda den här typen av miljö. I den här artikeln beskrivs inte hur du implementerar en miljö för snabb växling.
+I vägledning i den här artikeln beskrivs hur du implementerar en vänteläge för uppvärmning. Du kan även anpassa den till en miljö med isigt vänteläge, även om du måste följa ytterligare procedurer för att stödja den här typen av miljö. I den här artikeln beskrivs inte hur du implementerar snabb vänteläge.
   
-Mer information om lösningar för katastrof återställning finns i [koncept för hög tillgänglighet och katastrof återställning i sharepoint 2013](https://go.microsoft.com/fwlink/p/?LinkID=393114) och [välja en strategi för katastrof återställning för SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=203228).
+Mer information om lösningar för katastrofåterställning finns i Begrepp för hög tillgänglighet och katastrofåterställning i [SharePoint 2013](/SharePoint/administration/high-availability-and-disaster-recovery-concepts) och Välj en katastrofåterställningsstrategi för [SharePoint 2013.](/SharePoint/administration/plan-for-disaster-recovery)
   
-## <a name="solution-description"></a>Lösnings Beskrivning
+## <a name="solution-description"></a>Lösningsbeskrivning
 
-Katastrof för nöd situationer med återställning kräver följande miljö:
+Lösningen för katastrofåterställning av varmt vänteläge kräver följande miljö:
   
-- En lokal SharePoint-servergrupp
+- En lokal SharePoint-produktionsgrupp
     
-- En återställnings-SharePoint-servergrupp i Azure
+- En SharePoint-återställningsfarm i Azure
     
-- En VPN-anslutning mellan två miljöer
+- En VPN-anslutning mellan de två miljöerna
     
 Följande bild illustrerar dessa tre element.
   
-**Bild: element i en lösning för varm standby i Azure**
+**Bild: Element i en väntelösning för varmt vänteläge i Azure**
 
-![Element i en lösning för varm standby i SharePoint i Azure](../media/AZarch-AZWarmStndby.png)
+![Element i en lösning för varmt vänteläge i SharePoint i Azure](../media/AZarch-AZWarmStndby.png)
   
-SQL Server-loggning med Distributed File System Replication (DFSR) används för att kopiera databas säkerhets kopior och transaktions loggar till återställnings gruppen i Azure: 
+SQL Server-loggleverans med Distributed File System Replication (REPLICATION) används för att kopiera databasbackuper och transaktionsloggar till återställningsfarmen i Azure: 
   
-- DFSR överför loggar från produktions miljön till återställnings miljön. I ett WAN-scenario är DFSR effektivare än att leverera loggarna direkt till den sekundära servern i Azure.
+- TIDFJÄR överför loggar från produktionsmiljön till återställningsmiljön. I ett WAN-scenario är DET mer effektivt att SKICKA LOGGARna direkt till den sekundära servern i Azure än att skicka dem.
     
-- Loggar spelas upp på SQL-servern i återställnings miljön i Azure.
+- Loggar spelas upp till SQL Server i återställningsmiljön i Azure.
     
-- Du lägger inte till en uppringd databas för SharePoint-innehåll i återställnings miljön förrän en återställnings övning utförs.
+- Du bifogar inte sharePoint-innehållsdatabaser med logg som levererats i återställningsmiljön förrän en återställningsövning utförs.
     
-Återställ Server gruppen genom att utföra följande steg:
+Så här återställer du servergruppen:
   
-1. Avbryt leverans.
+1. Stoppa loggleveransen.
     
-2. Sluta acceptera trafik till den primära server gruppen.
+2. Sluta att acceptera trafik till den primära servergruppen.
     
-3. Repetera de slutliga transaktions loggarna igen.
+3. Spela upp de slutliga transaktionsloggarna.
     
-4. Bifoga innehålls databaserna till Server gruppen.
+4. Koppla innehållsdatabaserna till servergruppen.
     
-5. Återställ tjänst program från replikerade tjänst databaser.
+5. Återställa tjänstprogram från replikerade tjänstdatabaser.
     
-6. Uppdatera DNS-poster (Domain Name System) så att de pekar på återställnings gruppen.
+6. Uppdatera DNS-poster (Domain Name System) så att de pekar på återställningsfarmen.
     
-7. Starta en fullständig crawlning.
+7. Påbörja en fullständig crawlning.
     
-Vi rekommenderar att du regelbundet upprepar de här stegen och kan dokumentera dem för att säkerställa att din Live-återställning fungerar smidigt. Det kan ta en stund att bifoga innehålls databaser och återställa tjänst program och det innebär normalt en del manuell konfiguration.
+Vi rekommenderar att du provar de här stegen regelbundet och dokumenterar dem för att säkerställa att live-återställningen körs smidigt. Det kan ta lite tid att bifoga innehållsdatabaser och återställa tjänstprogram, vilket vanligtvis omfattar en del manuell konfiguration.
   
-När en återställning har utförts tillhandahåller den här lösningen objekten som visas i följande tabell.
+När en återställning har utförts innehåller den här lösningen de objekt som anges i följande tabell.
   
-**Tabell: mål för lösnings återställning**
-
-|**Objekt**|**Beskrivning**|
-|:-----|:-----|
-|Webbplatser och innehåll  <br/> |Webbplatser och innehåll är tillgängliga i återställnings miljön.  <br/> |
-|En ny instans av sökning  <br/> |I denna varm standby-lösning återställs inte sökningen från Sök databaser. Sök komponenter i återställnings gruppen är konfigurerade så lika som möjligt till produktions gruppen. När webbplatserna och innehållet har återställts startas en fullständig crawlning för att återskapa Sök indexet. Du behöver inte vänta på att crawlningen ska slutföras för att webbplatser och innehåll ska vara tillgängligt.  <br/> |
-|Uthyrning  <br/> | Tjänster som lagrar data i databaser återställs från den loggade databasen. Tjänster som inte lagrar data i databaser startas helt enkelt. <br/>  Alla tjänster med databaser behöver inte återställas. Följande tjänster behöver inte återställas från databaser och kan bara startas efter redundans: <br/>  Insamling av användnings-och hälso data <br/>  Tillstånds tjänst <br/>  Word-automatisering <br/>  Alla andra tjänster som inte använder en databas <br/> |
-   
-Du kan arbeta med Microsoft Consulting Services (MCS) eller en partner för att adressera mer-komplexa återställnings mål. Dessa sammanfattas i följande tabell.
-  
-**Tabell: andra objekt som kan adresseras av MCS eller en partner**
+**Tabell: Lösningsåterställningsmål**
 
 |**Objekt**|**Beskrivning**|
 |:-----|:-----|
-|Synkronisera anpassade Server grupps lösningar  <br/> |Det bästa är att återställnings gruppens konfiguration är identisk med produktions gruppen. Du kan arbeta med en konsult eller partner för att utvärdera om anpassade Server grupps lösningar har repliker ATS och om processen finns för att hålla ned de båda miljöerna.  <br/> |
-|Anslutningar till data källor lokalt  <br/> |Det är kanske inte möjligt att replikera anslutningar till backend-datasystem, till exempel BDC-anslutningar (reservdomänkontrollant) och Sök innehålls källor.  <br/> |
-|Scenarier för Sök återställning  <br/> |Eftersom distributioner av företags sökningar tenderar att vara ganska unikt och komplicerat kräver en större investering att du kan återställa sökning från databaser. Du kan arbeta med en konsult eller partner för att identifiera och implementera scenarier för Sök återställning som din organisation kan behöva.  <br/> |
+|Webbplatser och innehåll  <br/> |Webbplatser och innehåll är tillgängliga i återställningsmiljön.  <br/> |
+|En ny förekomst av sökning  <br/> |I den här lösningen för varmt vänteläge återställs inte sökningen från sökdatabaser. Sökkomponenter i återställningsfarmen konfigureras så som möjligt till produktionsfarmen. När webbplatserna och innehållet har återställts har en fullständig crawlning påbörjats för att återskapa sökindexet. Du behöver inte vänta på att crawlningen ska slutföras för att göra webbplatser och innehåll tillgängliga.  <br/> |
+|Tjänster  <br/> | Tjänster som lagrar data i databaser återställs från log-shipped-databaserna. Tjänster som inte lagrar data i databaser startas bara. <br/>  Alla tjänster med databaser behöver inte återställas. Följande tjänster behöver inte återställas från databaser och kan bara startas efter redundans: <br/>  Insamling av användnings- och hälsodata <br/>  Delstatstjänst <br/>  Word-automation <br/>  Andra tjänster som inte använder en databas <br/> |
    
-Vägledningarna i den här artikeln förutsätter att den lokala server gruppen redan är utformad och distribuerad.
+Du kan samarbeta med Microsoft Consulting Services (MCS) eller en partner för att ta itu med mer komplexa återställningsmål. Dessa sammanfattas i följande tabell.
+  
+**Tabell: Andra objekt som kan adresseras av MCS eller en partner**
+
+|**Objekt**|**Beskrivning**|
+|:-----|:-----|
+|Synkronisera anpassade servergruppslösningar  <br/> |Under idealiska idealiska är konfigurationen av återställningsfarmen identisk med produktionsfarmen. Du kan samarbeta med en konsult eller partner för att utvärdera om anpassade servergruppslösningar replikeras och om processen finns för att synkronisera de två miljöerna.  <br/> |
+|Anslutningar till datakällor lokalt  <br/> |Det kanske inte är praktiskt att replikera anslutningar till backend-datasystem, till exempel anslutningar för säkerhetskopieringsdomänkontrollant (BDC) och söka i innehållskällor.  <br/> |
+|Sökåterställningsscenarier  <br/> |Eftersom företagssökningsdistributioner brukar vara relativt unika och komplexa krävs det större investeringar i återställning av sökning från databaser. Du kan arbeta med en konsult eller partner för att identifiera och implementera sökåterställningsscenarier som din organisation kan behöva.  <br/> |
+   
+Vägledningen i den här artikeln förutsätter att den lokala servergruppen redan är utformad och distribuerad.
   
 ## <a name="detailed-architecture"></a>Detaljerad arkitektur
 
-Det bästa är att konfiguration av återställnings grupp i Azure är identiskt med den lokala tillverknings gruppen, inklusive följande:
+Under idealiska förutsättningar är konfigurationen av återställningsfarmen i Azure identisk med den lokala produktionsfarmen, inklusive följande:
   
-- Samma representation av Server roller
+- Samma representation av serverroller
     
 - Samma konfiguration av anpassningar
     
-- Samma konfiguration för Sök komponenter
+- Samma konfiguration av sökkomponenter
     
-Miljön i Azure kan vara en mindre version av produktions gruppen. Om du planerar att bygga ut återställnings gruppen efter redundans är det viktigt att varje typ av server roll först visas.
+Miljön i Azure kan vara en mindre version av produktionsfarmen. Om du planerar att skala ut återställningsfarmen efter redundans är det viktigt att varje typ av serverroll först representeras.
   
-Vissa konfigurationer kanske inte är praktiska att replikera i failover-miljön. Se till att testa rutiner och miljön för växling vid fel för att säkerställa att failover-serverns tjänst nivå tillhandahålls.
+Vissa konfigurationer kanske inte är praktiska att replikera i redundansmiljön. Se till att testa redundansprocedurerna och miljön för att säkerställa att redundansfarmen tillhandahåller den förväntade tjänstnivån.
   
-Denna lösning föreskriver inte en speciell topologi för en SharePoint-grupp. Fokus för den här lösningen är att använda Azure för failover-gruppen och implementera logg överföring och DFSR mellan de båda miljöerna.
+Den här lösningen kräver inte en viss topologi för en SharePoint-servergrupp. Fokus för den här lösningen är att använda Azure för redundansfarmen och att implementera loggleverans och TIDER mellan de två miljöerna.
   
-### <a name="warm-standby-environments"></a>Miljöer för varm standby
+### <a name="warm-standby-environments"></a>Uppvärmningsmiljöer för vänteläge
 
-I en miljö med varmt standby körs alla virtuella datorer i Azure-miljön. Miljön är klar för en träningsverksamhet eller händelse.
+I en varma väntelägesmiljö körs alla virtuella datorer i Azure-miljön. Miljön är redo för en redundansövning eller händelse.
   
-Följande bild illustrerar en katastrof återställnings lösning från en lokal SharePoint-servergrupp till en Azure-baserad SharePoint-servergrupp som är konfigurerad som en miljö för varmt standby.
+På följande bild visas en katastrofåterställningslösning från en lokal SharePoint-servergrupp till en Azure-baserad SharePoint-servergrupp som är konfigurerad som en uppvärmningsmiljö för vänteläge.
   
-**Bild: topologi och viktiga element i en produktions grupp och en återställnings Server för varm vänte tid**
+**Bild: Topologi och viktiga element i en produktionsfarm och en servergrupp för uppvärmningsåterställning**
 
-![Topologi för en SharePoint-servergrupp och en återställnings grupp för varm vänte tid](../media/AZarch-AZWarmStndby.png)
+![Topologi för En SharePoint-servergrupp och en servergrupp för vänteläge för uppvärmning](../media/AZarch-AZWarmStndby.png)
   
 I det här diagrammet:
   
-- Två miljöer illustreras sida vid sida: den lokala SharePoint-servergruppen och varm standby-servergruppen i Azure.
+- Två miljöer illustreras sida vid sida: den lokala SharePoint-servergruppen och servergruppen för uppvärmning i Azure.
     
-- Varje miljö inkluderar en fil resurs.
+- Varje miljö innehåller en filresurs.
     
-- Varje server grupp innehåller fyra nivåer. För att få hög tillgänglighet inkluderar varje nivå två servrar eller virtuella datorer som är konfigurerade identiskt för en viss roll, till exempel frontend-tjänster, distribuerad cache, backend-tjänster och databaser. Det är inte viktigt i den här bilden för att ringa ut specifika komponenter. De två Server grupperna är identiska.
+- Varje servergrupp innehåller fyra nivåer. För att uppnå hög tillgänglighet inkluderar varje nivå två servrar eller virtuella datorer som är konfigurerade identiskt för en viss roll, till exempel frontend-tjänster, distribuerad cache, backend-tjänster och databaser. I den här illustrationen är det inte viktigt att visa upp specifika komponenter. De två grupper är konfigurerade identiskt.
     
-- Den fjärde nivån är databas nivån. Logg överföring används för att kopiera loggar från den sekundära databas servern i den lokala miljön till fil resursen i samma miljö.
+- Den fjärde nivån är databasnivån. Loggleverans används för att kopiera loggar från den sekundära databasservern i den lokala miljön till filresursen i samma miljö.
     
-- DFSR kopierar filer från fil resursen i den lokala miljön till fil resursen i Azure-miljön.
+- INFILTR kopierar filer från filresursen i den lokala miljön till filresursen i Azure-miljön.
     
-- Med loggning kan du spela upp loggar från fil resursen i Azure-miljön till den primära repliken i SQL Server AlwaysOn-tillgänglighetsgruppen i återställnings miljön.
+- Loggleveransen spelar upp loggarna från filresursen i Azure-miljön till den primära kopian i tillgänglighetsgruppen för SQL Server AlwaysOn i återställningsmiljön.
     
-### <a name="cold-standby-environments"></a>Miljöer med kall vilo läge
+### <a name="cold-standby-environments"></a>Miljöer för vänteläge vid kalla miljöer
 
-I en kall standby-miljö kan de flesta av de virtuella SharePoint-gruppdatorerna vara avstängda. (Vi rekommenderar att starta de virtuella datorerna ibland, till exempel varannan vecka eller en gång i månaden, så att varje virtuell dator kan synkroniseras med domänen.) Följande virtuella datorer i Azure Recovery Environment måste fortsätta att fungera för att det ska gå att säkerställa kontinuerliga operationer med att logga in och DFSR:
+I en miljö med kalla vänteläge kan de flesta virtuella SharePoint-servergruppens maskiner stängas av. (Vi rekommenderar att du ibland startar virtuella maskiner, till exempel varannan vecka eller en gång i månaden, så att varje virtuell dator kan synkronisera med domänen.) Följande virtuella datorer i Azure-återställningsmiljön måste fortsätta köras för att säkerställa kontinuerlig leverans av logg och SÅ ATT::
   
-- Fil resursen
+- Filresursen
     
-- Den primära databas servern
+- Primär databasserver
     
 - Minst en virtuell dator med Windows Server Active Directory Domain Services och DNS
     
-I bilden nedan visas en Azure failover-miljö där den virtuella dator resursen och den primära SharePoint-databasen körs. Alla andra virtuella SharePoint-datorer stoppas. Den virtuella datorn som kör Windows Server Active Directory och DNS visas inte.
+På följande bild visas en Azure-redundansmiljö där filresursen virtuella datorn och den primära virtuella SharePoint-databasen körs. Alla andra virtuella SharePoint-datorer stoppas. Den virtuella datorn med Windows Server Active Directory och DNS visas inte.
   
-**Bild: återställnings Server för kall återställning med aktiva virtuella datorer**
+**Bild: Servergrupp för återställning av isigt vänteläge med virtuella maskiner**
 
-![Element i en lösning för kall standby i SharePoint i Azure](../media/AZarch-AZColdStndby.png)
+![Element i en SharePoint-lösning för isigt vänteläge i Azure](../media/AZarch-AZColdStndby.png)
   
-Efter redundans till en kall vilo miljö startas alla virtuella datorer, och metoden för att uppnå en hög tillgänglighet för databas servrar måste vara konfigurerad, till exempel SQL Server AlwaysOn-tillgänglighetsgruppen.
+Efter redundans i en miljö med kalla vänteläge startas alla virtuella maskiner och metoden för att få hög tillgänglighet till databasservrarna måste konfigureras, till exempel SQL Server AlwaysOn-tillgänglighetsgrupper.
   
-Om flera lagrings grupper implementeras (databaserna sprids över fler än en SQL Server-uppsättning med hög tillgänglighet) måste den primära databasen för varje lagrings grupp vara igång för att acceptera de loggar som är kopplade till lagrings gruppen.
+Om flera lagringsgrupper implementeras (databaser är utspridda över mer än en uppsättning med hög tillgänglighet i SQL Server) måste den primära databasen för varje lagringsgrupp köras för att acceptera loggarna som är kopplade till dess lagringsgrupp.
   
-### <a name="skills-and-experience"></a>Färdigheter och erfarenheter
+### <a name="skills-and-experience"></a>Kunskaper och erfarenhet
 
-Flera tekniker används i denna lösning för katastrof återställning. För att säkerställa att dessa tekniker interagerar som förväntat måste varje komponent i lokala och Azure-miljö vara installerad och korrekt konfigurerad. Vi rekommenderar att den person eller det team som konfigurerar denna lösning har ett starkt arbets kunnande med de tekniker som beskrivs i följande artiklar:
+Flera tekniker används i den här katastrofåterställningslösningen. För att säkerställa att dessa tekniker interagerar som förväntat måste varje komponent i den lokala miljön och Azure-miljön installeras och konfigureras korrekt. Vi rekommenderar att den person eller det team som skapar den här lösningen har starka kunskaper om och praktiska kunskaper med de tekniker som beskrivs i följande artiklar:
   
-- [DFS-replikeringstjänsten (Distributed File System)](https://go.microsoft.com/fwlink/p/?LinkId=392698)
+- [Distributed File System (REPLICATION) Replication Services](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj127250(v=ws.11))
     
-- [Windows Server Failover Clustering (WSFC) med SQL Server](https://go.microsoft.com/fwlink/p/?LinkId=392701)
+- [Windows Server Failover Clustering (WSFC) med SQL Server](/sql/sql-server/failover-clusters/windows/windows-server-failover-clustering-wsfc-with-sql-server)
     
-- [AlwaysOn-tillgänglighetsgruppen (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392725)
+- [AlwaysOn-tillgänglighetsgrupper (SQL Server)](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server)
     
-- [Säkerhetskopiera och återställa SQL Server-databaser](https://go.microsoft.com/fwlink/p/?LinkId=392728)
+- [Bakåt och återställning av SQL Server-databaser](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases)
     
-- [SharePoint Server 2013-installation och Server grupp distribution](https://go.microsoft.com/fwlink/p/?LinkId=393119)
+- [Installation och servergruppsdistribution av SharePoint Server 2013](/SharePoint/install/installation-and-configuration-overview)
     
-- [Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=392729)
+- [Microsoft Azure](/azure/)
     
-Slutligen rekommenderar vi skript kunskaper som du kan använda för att automatisera uppgifter som är kopplade till dessa tekniker. Det går att använda de tillgängliga gränssnitten för att slutföra alla aktiviteter som beskrivs i den här lösningen. Men en manuell metod kan vara tidsödande och vara fel känslig och ger inkonsekventa resultat.
+Slutligen rekommenderar vi skriptfärdigheter som du kan använda för att automatisera uppgifter som associeras med dessa tekniker. Det går att använda de tillgängliga användargränssnitten för att slutföra alla uppgifter som beskrivs i den här lösningen. En manuell metod kan dock vara tidskrävande och felbenägen och ger inkonsekventa resultat.
   
-Utöver Windows PowerShell finns det också Windows PowerShell-bibliotek för SQL Server, SharePoint Server och Azure. Glöm inte T-SQL, vilket kan bidra till att minska tiden för att konfigurera och underhålla din katastrof-återställning.
+Utöver Windows PowerShell finns även Windows PowerShell-bibliotek för SQL Server, SharePoint Server och Azure. Kom ihåg T-SQL, som också kan hjälpa dig att minska tiden för att konfigurera och underhålla din katastrofåterställningsmiljö.
   
-## <a name="disaster-recovery-roadmap"></a>Översikt över katastrof återställning
+## <a name="disaster-recovery-roadmap"></a>Översikt över katastrofåterställning
 
-![Visuell representation av översikt över SharePoint-återställning.](../media/Azure-DRroadmap.png)
+![Visuell representation av översikt över katastrofåterställning i SharePoint.](../media/Azure-DRroadmap.png)
   
-Denna översikt förutsätter att du redan har en SharePoint Server 2013-servergrupp distribuerad i produktion.
+Den här översikten förutsätter att du redan har en SharePoint Server 2013-servergrupp distribuerad i produktion.
   
-**Tabell: översikt för katastrof återställning**
+**Tabell: Översikt över katastrofåterställning**
 
 |**Fas**|**Beskrivning**|
 |:-----|:-----|
-|Fas 1  <br/> |Designa en katastrof återställnings miljö.  <br/> |
-|Fas 2  <br/> |Skapa ett Azure Virtual Network-och VPN-anslutning.  <br/> |
-|Fas 3  <br/> |Distribuera Windows Active Directory och domän namn tjänster till det virtuella Azure-nätverket.  <br/> |
-|Fas 4  <br/> |Distribuera SharePoint-återställnings gruppen i Azure.  <br/> |
-|Fas 5  <br/> |Konfigurera DFSR mellan Server grupperna.  <br/> |
-|Fas 6  <br/> |Konfigurera logg överföring till återställnings gruppen.  <br/> |
-|Fas 7  <br/> | Validera lösningar för redundans och återställning. Detta inkluderar följande procedurer och tekniker: <br/>  Avbryt leverans. <br/>  Återställ säkerhets kopiorna. <br/>  Crawlar innehåll. <br/>  Återställ tjänster. <br/>  Hantera DNS-poster. <br/> |
+|Fas 1  <br/> |Utforma katastrofåterställningsmiljön.  <br/> |
+|Fas 2  <br/> |Skapa det virtuella Azure-nätverket och VPN-anslutningen.  <br/> |
+|Fas 3  <br/> |Distribuera Windows Active Directory och Domain Name Services till det virtuella Azure-nätverket.  <br/> |
+|Fas 4  <br/> |Distribuera SharePoint-återställningsfarmen i Azure.  <br/> |
+|Fas 5  <br/> |Konfigurera TIDER mellan olika farmar.  <br/> |
+|Fas 6  <br/> |Konfigurera loggleveransen till återställningsfarmen.  <br/> |
+|Fas 7  <br/> | Verifiera redundans- och återställningslösningar. Detta omfattar följande metoder och tekniker: <br/>  Stoppa loggleveransen. <br/>  Återställ säkerhetskopiorna. <br/>  Crawla innehåll. <br/>  Återställ tjänster. <br/>  Hantera DNS-poster. <br/> |
    
-## <a name="phase-1-design-the-disaster-recovery-environment"></a>Fas 1: designa katastrof återställnings miljön
+## <a name="phase-1-design-the-disaster-recovery-environment"></a>Fas 1: Utforma katastrofåterställningsmiljön
 
-Använd vägledningen i [Microsoft Azure-arkitekturer för SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) för att designa katastrof-och återställnings miljön, inklusive SharePoint Recovery-gruppen. Du kan använda grafiken i lösningen för [katastrof återställning för SharePoint i Azure](https://go.microsoft.com/fwlink/p/?LinkId=392554) Visio-filen för att starta design processen. Vi rekommenderar att du utformar hela miljön innan du påbörjar något arbete i Azure-miljön.
+Använd vägledning [i Microsoft Azure-arkitekturer för SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) för att utforma katastrofåterställningsmiljön, inklusive SharePoint-återställningsfarmen. Du kan starta designprocessen med hjälp av grafiken i [SharePoint Disaster Recovery Solution i Azure](https://go.microsoft.com/fwlink/p/?LinkId=392554) Visio-filen. Vi rekommenderar att du utformar hela miljön innan du börjar arbeta i Azure-miljön.
   
-Utöver vägledningen i [Microsoft Azure-arkitekturer för SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) för att designa det virtuella nätverket, VPN-anslutning, Active Directory och SharePoint-servergruppen bör du lägga till en fil resurs roll i Azure-miljön.
+Förutom vägledningen i [Microsoft Azure-arkitekturer för SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) om utformning av virtuellt nätverk, VPN-anslutning, Active Directory och SharePoint-servergruppen är det bra om du lägger till en filresursroll i Azure-miljön.
   
-För att du ska kunna använda logg överföring i en katastrof lösning för återställning, läggs en virtuell dator för fil delning till under nätet där databas roller lagras. Fil resursen fungerar också som den tredje noden i Node majoritet för SQL Server AlwaysOn-tillgänglighetsgruppen. Det här är den rekommenderade konfigurationen för en standard-SharePoint-servergrupp som använder SQL Server AlwaysOn-tillgänglighetsgruppen. 
+För att det ska gå att skicka loggen i en katastrofåterställningslösning läggs en filresurs virtuella dator till i undernätet där databasrollerna finns. Filresursen fungerar också som den tredje noden i en nodmaitet för tillgänglighetsgruppen SQL Server AlwaysOn. Det här är den rekommenderade konfigurationen för en vanlig SharePoint-servergrupp som använder tillgänglighetsgrupper i SQL Server AlwaysOn. 
   
 > [!NOTE]
-> Det är viktigt att kontrol lera förutsättningarna för att en databas ska ingå i en SQL Server AlwaysOn-tillgänglighetsgruppen. Mer information finns i [förutsättningar, begränsningar och rekommendationer för grupper med AlwaysOn-tillgänglighet](https://go.microsoft.com/fwlink/p/?LinkId=510870). 
+> Det är viktigt att granska förutsättningarna för en databas att delta i en tillgänglighetsgrupp för SQL Server AlwaysOn. Mer information finns i [Krav, Begränsningar och rekommendationer för AlwaysOn-tillgänglighetsgrupper.](/sql/database-engine/availability-groups/windows/prereqs-restrictions-recommendations-always-on-availability) 
   
-**Bild: placering av en fil server som används för en katastrof återställnings lösning**
+**Bild: Placering av en filserver som används för en katastrofåterställningslösning**
 
-![Visar en fil resurs som har lagts till i en moln tjänst som innehåller SharePoint-databasens Server roller.](../media/AZenv-FSforDFSRandWSFC.png)
+![Visar en filresurs vm som lagts till i samma molntjänst som innehåller SharePoint-databasserverrollerna.](../media/AZenv-FSforDFSRandWSFC.png)
   
-I det här diagrammet läggs en virtuell dator för fil resurs till i samma undernät i Azure som innehåller databas server rollerna. Lägg inte till den virtuella datorn för fil delning i en tillgänglighets uppsättning med andra Server roller, till exempel SQL Server-roller.
+I det här diagrammet läggs en filresurs virtuell dator till i samma undernät i Azure som innehåller databasserverrollerna. Lägg inte till den virtuella filresursen till en tillgänglighetsuppsättning med andra serverroller, till exempel SQL Server-roller.
   
-Om du är orolig för att loggarna är mer lättillgängliga kan du överväga att använda [säkerhets kopiering och återställning i SQL Server med Azure Blob Storage-tjänsten](https://go.microsoft.com/fwlink/p/?LinkId=393113). Det här är en ny funktion i Azure som sparar loggar direkt i en BLOB-lagringsenhet. Den här lösningen innehåller ingen vägledning om hur du använder den här funktionen.
+Om du är orolig för den höga tillgängligheten för loggarna bör du överväga att använda en annan metod genom att använda säkerhetskopiering och återställning i [SQL Server med Blob Storage Service för Azure.](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service) Det här är en ny funktion i Azure som sparar loggar direkt till en URL för blob-lagring. Den här lösningen innehåller inte vägledning om hur du använder den här funktionen.
   
-När du utformar återställnings gruppen bör du tänka på att en lyckad katastrof återställnings miljö exakt återspeglar den produktions grupp som du vill återställa. Storleken på återställnings gruppen är inte det viktigaste i återställnings gruppens design, distribution och testning. Server gruppens skala varierar från organisation till organisation baserat på företagets behov. Det kan vara möjligt att använda en skalad upphöjd Server för ett kort avbrott eller till att prestanda-och kapacitets kraven kräver att du skalar Server gruppen.
+När du utformar en återställningsfarm ska du tänka på att en lyckad katastrofåterställningsmiljö återspeglar den produktionsgrupp som du vill återställa. Storleken på återställningsfarmen är inte det viktigaste i återställningsfarmens design, distribution och testning. Servergruppsskalan varierar från organisation till organisation baserat på företagskrav. Det kan vara möjligt att använda en nedskalade servergrupp för ett kort avbrott eller tills prestanda- och kapacitetskrav kräver att du skalar servergruppen.
   
-Konfigurera återställnings gruppen så exakt som möjligt till produktions gruppen så att den uppfyller villkoren för service nivå avtalet (SLA) och ger de funktioner som behövs för ditt företag. När du utformar en katastrof återställnings miljö kan du även titta på processen för ändrings hantering för din produktions miljö. Vi rekommenderar att du utökar processen för ändrings hantering till återställnings miljön genom att uppdatera återställnings miljön till samma intervall som produktions miljön. Som en del av processen för ändrings hantering rekommenderar vi att du underhåller en detaljerad inventering av din konfiguration, dina program och användare. 
+Konfigurera återställningsfarmen så att den är identisk som möjligt för produktionsfarmen så att den uppfyller tjänstnivåkraven (SLA) och ger de funktioner du behöver för att stödja verksamheten. När du utformar en katastrofåterställningsmiljö kan du också titta på ändringshanteringsprocessen för produktionsmiljön. Vi rekommenderar att du utökar ändringshanteringsprocessen till återställningsmiljön genom att uppdatera återställningsmiljön med samma intervall som produktionsmiljön. Som en del av ändringshanteringsprocessen rekommenderar vi att du underhåller ett detaljerat lager av servergruppskonfigurationer, program och användare. 
   
-## <a name="phase-2-create-the-azure-virtual-network-and-vpn-connection"></a>Fas 2: skapa ett Azure Virtual Network-och VPN-anslutning
+## <a name="phase-2-create-the-azure-virtual-network-and-vpn-connection"></a>Fas 2: Skapa det virtuella Azure-nätverket och VPN-anslutningen
 
-[Ansluta ett lokalt nätverk till ett Microsoft Azure-nätverk](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md) visar dig hur du planerar och distribuerar det virtuella nätverket i Azure och hur du skapar VPN-anslutningen. Följ anvisningarna i avsnittet för att utföra följande procedurer:
+Anslut ett lokalt nätverk till ett virtuellt [Microsoft Azure-nätverk](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md) som visar hur du planerar och distribuerar det virtuella nätverket i Azure och hur du skapar VPN-anslutningen. Följ vägledning i avsnittet för att slutföra följande procedurer:
   
 - Planera det privata IP-adressutrymmet för det virtuella nätverket.
     
-- Planera ändringar i infrastrukturen för routning för det virtuella nätverket.
+- Planera ändringar i routningsinfrastrukturen för det virtuella nätverket.
     
-- Planera brand Väggs regler för trafik till och från den lokala VPN-enheten.
+- Planera brandväggsregler för trafik till och från den lokala VPN-enheten.
     
-- Skapa det korslänkade virtuella nätverket i Azure.
+- Skapa det virtuella korslokala nätverket i Azure.
     
-- Konfigurera routning mellan det lokala nätverket och det virtuella nätverket.
+- Konfigurera dirigering mellan ditt lokala nätverk och det virtuella nätverket.
     
-## <a name="phase-3-deploy-active-directory-and-domain-name-services-to-the-azure-virtual-network"></a>Fas 3: distribuera Active Directory och domän namn tjänster till det virtuella Azure-nätverket
+## <a name="phase-3-deploy-active-directory-and-domain-name-services-to-the-azure-virtual-network"></a>Fas 3: Distribuera Active Directory och Domain Name Services till det virtuella Azure-nätverket
 
-I den här fasen kan du distribuera både Windows Server Active Directory och DNS till det virtuella nätverket i ett hybrid scenario som beskrivs i [Microsoft Azure-arkitekturer för SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) och som illustreras i följande bild.
+Den här fasen omfattar distribution av både Windows Server Active Directory och DNS till det virtuella nätverket i ett hybridscenario enligt beskrivningen i [Microsoft Azure Architectures for SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) och enligt följande bild.
   
-**Bild: konfiguration av hybrid Active Directory-domäner**
+**Bild: Hybridkonfiguration av Active Directory-domän**
 
-![Två virtuella datorer distribueras till det virtuella Azure-nätverket och SharePoint-servergruppen är replik domän kontrol Lanterna och DNS-servrar](../media/AZarch-HyADdomainConfig.png)
+![Två virtuella datorer som distribuerats till det virtuella Azure-nätverket och SharePoint-servergruppsundernätet är replikdomänkontroller och DNS-servrar](../media/AZarch-HyADdomainConfig.png)
   
-I bilden distribueras två virtuella datorer till samma undernät. De här virtuella datorerna är båda roller: Active Directory och DNS.
+I illustrationen distribueras två virtuella datorer till samma undernät. De här virtuella maskinerna har två roller: Active Directory och DNS.
   
-Innan du distribuerar Active Directory i Azure läser du [rikt linjer för distribution av Windows Server Active Directory på virtuella Azure-datorer](https://go.microsoft.com/fwlink/p/?linkid=392681). Dessa rikt linjer hjälper dig att avgöra om du behöver en annan arkitektur eller olika konfigurations inställningar för din lösning.
+Innan du distribuerar Active Directory i Azure bör [du läsa Riktlinjer för distribution av Windows Server Active Directory på virtuella Azure-datorer.](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100) De här riktlinjerna hjälper dig att avgöra om du behöver en annan arkitektur eller olika konfigurationsinställningar för din lösning.
   
-Utförlig information om hur du konfigurerar en domänkontrollant i Azure finns i [installera en Active Directory-domänkontrollant i Azure Virtual Networks](https://go.microsoft.com/fwlink/p/?LinkId=392687).
+Detaljerad information om hur du installerar en domänkontrollant i Azure finns i [Installera en replica Active Directory-domänkontrollant i Virtuella Azure-nätverk.](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)
   
-Före den här fasen distribuerades inte virtuella datorer till det virtuella nätverket. De virtuella datorerna för att vara värd för Active Directory och DNS är förmodligen inte de största virtuella datorerna som behövs för lösningen. Innan du distribuerar de här virtuella datorerna måste du först skapa den största virtuella dator som du planerar att använda i ditt virtuella nätverk. På så sätt ser du till att lösningen hamnar på en tagg i Azure som gör den största storleken du behöver. Du behöver inte konfigurera den här virtuella datorn för närvarande. Det är bara att skapa det och sätta undan det. Om du inte gör det kanske du stöter på en begränsning när du försöker att skapa större virtuella datorer senare, vilket var ett problem när den här artikeln skrevs. 
+Före den här fasen distribuerade du inte virtuella maskiner till det virtuella nätverket. Virtuella datorer för värd för Active Directory och DNS är förmodligen inte de största virtuella maskinerna du behöver för lösningen. Innan du distribuerar de här virtuella maskinerna måste du skapa den största virtuella datorn som du planerar att använda i ditt virtuella nätverk. Det här säkerställer att din lösning hamnar på en tagg i Azure som har den största storlek du behöver. Du behöver inte konfigurera den här virtuella datorn för stunden. Skapa den och lägg undan den. Om du inte gör det kan du få en begränsning när du försöker skapa större virtuella maskiner senare, vilket var ett problem när den här artikeln skrevs. 
   
-## <a name="phase-4-deploy-the-sharepoint-recovery-farm-in-azure"></a>Fas 4: Distribuera återställnings gruppen för SharePoint i Azure
+## <a name="phase-4-deploy-the-sharepoint-recovery-farm-in-azure"></a>Fas 4: Distribuera SharePoint-återställningsfarmen i Azure
 
-Distribuera SharePoint-servergruppen i ditt virtuella nätverk enligt dina design planer. Det kan vara bra att granska [planering för sharepoint 2013 i Azure Infrastructure Services](https://go.microsoft.com/fwlink/p/?LinkId=400984) innan du distribuerar SharePoint-roller i Azure.
+Distribuera SharePoint-servergruppen i ditt virtuella nätverk enligt dina designplaner. Det kan vara bra att läsa [Planering för SharePoint 2013 på Azure-infrastrukturtjänster](/previous-versions/azure/dn275958(v=azure.100)) innan du distribuerar SharePoint-roller i Azure.
   
-Tänk på följande saker som vi lärt dig genom att bygga vår proof of Concept-miljön:
+Tänk på följande metoder som vi lärde oss genom att bygga vår koncept konceptmiljö:
   
-- Skapa virtuella datorer med Azure-portalen eller PowerShell.
+- Skapa virtuella datorer med hjälp av Azure-portalen eller PowerShell.
     
-- Azure och Hyper-V stöder inte dynamiskt minne. Se till att det här är en faktor för dina prestanda-och kapacitets planer.
+- Azure och Hyper-V stöder inte dynamiskt minne. Se till att detta tas med i dina prestanda- och kapacitetsplaner.
     
-- Starta om virtuella datorer via Azure-gränssnittet, inte från den virtuella dator inloggningen. Att använda Azure-gränssnittet fungerar bättre och kan förutsägbart.
+- Starta om virtuella datorer via Azure-gränssnittet, inte från den virtuella datorns inloggning. Användningen av Azure-gränssnittet fungerar bättre och blir mer förutsägbart.
     
-- Om du vill stänga av en virtuell dator för att spara kostnaderna använder du Azure-gränssnittet. Om du stänger av den virtuella dator inloggningen fortsätter avgifterna att påföras.
+- Om du vill stänga av en virtuell dator för att spara kostnader använder du Azure-gränssnittet. Om du stänger av inloggningen från den virtuella datorn fortsätter kostnaderna att påföras.
     
-- Använd en namngivnings konvention för de virtuella datorerna.
+- Använd namnkonventioner för virtuella datorer.
     
-- Observera att den data Center plats som de virtuella datorerna distribueras till är uppmärksam.
+- Var uppmärksam på vilken datacenterplats de virtuella maskinerna håller på att distribuera.
     
-- Funktionen för automatisk skalning i Azure stöds inte för SharePoint-roller.
+- Den automatiska skalningsfunktionen i Azure stöds inte för SharePoint-roller.
     
-- Konfigurera inte objekt i Server gruppen som ska återställas, till exempel webbplats samlingar. 
+- Konfigurera inte objekt i servergruppen som ska återställas, till exempel webbplatssamlingar. 
     
-## <a name="phase-5-set-up-dfsr-between-the-farms"></a>Fas 5: Konfigurera DFSR mellan Server grupperna
+## <a name="phase-5-set-up-dfsr-between-the-farms"></a>Fas 5: Konfigurera SÅ ATT DET BLIR EN 80:e dag mellan våra farmar
 
-Om du vill konfigurera filreplikering med hjälp av DFSR använder du snapin-modulen DNS-hantering. Men innan DFSR-installationen loggar du in på lokal fil server och Azure-filserver och aktiverar tjänsten i Windows.
+Om du vill konfigurera filreplikering med hjälp av TIDER använder du snapin-modulen DNS Management. Men innan SETUPR-installationen loggar du in på den lokala filservern och Azure-filservern och aktiverar tjänsten i Windows.
   
-Utför följande steg från instrument panelen i Server hanteraren:
+Slutför följande steg från instrumentpanelen för Serverhanteraren:
   
 - Konfigurera den lokala servern.
     
-- Starta **guiden Lägg till roller och funktioner**.
+- Starta guiden **Lägg till roller och funktioner.**
     
-- Öppna noden **fil-och lagrings tjänster** .
+- Öppna **noden Fil- och lagringstjänster.**
     
-- Välj **DFS-namnområden** och **DFS-replikering**.
+- Välj **TIDErymd och** **REPLICATION-replikering**.
     
-- Avsluta guiden genom att klicka på **Nästa** .
+- Slutför **stegen i** guiden genom att klicka på Nästa.
     
-Följande tabell innehåller länkar till DFSR-referenser och blogg inlägg.
+Följande tabell innehåller länkar till REFERENSartiklar om TIDER och blogginlägg.
   
-**Tabell: referens artiklar för DFSR**
+**Tabell: Referensartiklar för TIDER**
 
 |**Title**|**Beskrivning**|
 |:-----|:-----|
-|[Replikeringsgrupp](https://go.microsoft.com/fwlink/p/?LinkId=392732) <br/> |DFS-hantering TechNet-ämne med länkar för replikering  <br/> |
-|[DFS-replikering: livräddnings guide](https://go.microsoft.com/fwlink/p/?LinkId=392737) <br/> |Wiki med länkar till DFS-information  <br/> |
-|[DFS-replikering: vanliga frågor och svar](https://go.microsoft.com/fwlink/p/?LinkId=392738) <br/> |DFS-replikering, TechNet-ämne  <br/> |
-|[Jose Barretos blogg](https://go.microsoft.com/fwlink/p/?LinkId=392739) <br/> |Blogg skriven av en huvudsaklig program chef i fil Server gruppen på Microsoft  <br/> |
-|[Lagrings gruppen på bloggen Microsoft-Arkiv skåp](https://go.microsoft.com/fwlink/p/?LinkId=392740) <br/> |Blogg om fil tjänster och lagrings funktioner i Windows Server  <br/> |
+|[Replikering](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770278(v=ws.11)) <br/> |IT-hantering – TechNet-ämne med länkar för replikering  <br/> |
+|[REPLICATION Replication: Survival Guide](https://go.microsoft.com/fwlink/p/?LinkId=392737) <br/> |Wiki med länkar till WIKI-information  <br/> |
+|[REPLICATION Replication: Frequently Asked Questions](/previous-versions/windows/it-pro/windows-server-2003/cc773238(v=ws.10)) <br/> |TECHNet-ämne för REPLICATION Replication  <br/> |
+|[Jose Barretos blogg](/archive/blogs/josebda/) <br/> |Blogg som skrivits av en Principal Program Manager i File Server-teamet på Microsoft  <br/> |
+|[Lagringsteamet på Microsoft – Blogg för arkivskåp](https://go.microsoft.com/fwlink/p/?LinkId=392740) <br/> |Blogg om filtjänster och lagringsfunktioner i Windows Server  <br/> |
    
-## <a name="phase-6-set-up-log-shipping-to-the-recovery-farm"></a>Fas 6: Konfigurera en logg överföring till återställnings gruppen
+## <a name="phase-6-set-up-log-shipping-to-the-recovery-farm"></a>Fas 6: Konfigurera loggleverans till återställningsfarmen
 
-Logg överföring är den kritiska komponenten för att konfigurera en katastrof återställning i den här miljön. Du kan använda logg överföring för att automatiskt skicka transaktionsloggfiler för databaser från en primär databas Server instans till en sekundär databas Server instans. Information om hur du ställer in logg överföring finns i [Konfigurera logg överföring i SharePoint 2013](https://docs.microsoft.com/sharepoint/administration/configure-log-shipping). 
+Loggleverans är den kritiska komponenten för att konfigurera katastrofåterställning i den här miljön. Du kan använda loggleverans för att automatiskt skicka transaktionsloggfiler för databaser från en primär databasserverinstans till en sekundär databasserverinstans. Information om hur du konfigurerar loggleverans [finns i Konfigurera loggleverans i SharePoint 2013.](/sharepoint/administration/configure-log-shipping) 
   
 > [!IMPORTANT]
-> Stöd för loggnings leverans i SharePoint Server är begränsat till vissa databaser. Mer information finns i [alternativ för hög tillgänglighet och katastrof återställning för SharePoint-databaser (sharepoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121). 
+> Stöd för loggleverans i SharePoint Server är begränsat till vissa databaser. Mer information finns i Alternativ [för hög tillgänglighet och katastrofåterställning för SharePoint-databaser (SharePoint 2013).](/SharePoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas) 
   
-## <a name="phase-7-validate-failover-and-recovery"></a>Fas 7: verifiera redundans och återställning
+## <a name="phase-7-validate-failover-and-recovery"></a>Fas 7: Verifiera redundans och återställning
 
-Målet med den här sista fasen är att kontrol lera att lösningen för katastrof återställning fungerar som planerat. Det gör du genom att skapa en redundansrelation som stänger av produktions gruppen och startar återställnings gruppen som en ersättning. Du kan starta ett failover-scenario manuellt eller med hjälp av skript.
+Syftet med den här sista fasen är att verifiera att katastrofåterställningslösningen fungerar som planerat. Det gör du genom att skapa en redundanshändelse som stänger produktionsfarmen och startar återställningsfarmen som en ersättning. Du kan starta ett redundansscenario manuellt eller med hjälp av skript.
   
-Det första steget är att stoppa inkommande användar förfrågningar för Server gruppen eller innehållet. Du kan göra detta genom att inaktivera DNS-poster eller stänga av front webb servrarna. Efter att Server gruppen är "ner" kan du växla över till återställnings gruppen.
+Det första steget är att stoppa inkommande användarförfrågningar för servergruppstjänster eller -innehåll. Det kan du göra genom att inaktivera DNS-poster eller genom att stänga av frontend-webbservrarna. När servergruppen är "nere" kan du växla till återställningsfarmen.
   
-### <a name="stop-log-shipping"></a>Stoppa logg överföring
+### <a name="stop-log-shipping"></a>Sluta skicka loggen
 
-Du måste stoppa logg överföring innan Server återställning. Stoppa loggning på den sekundära servern i Azure först och stoppa den sedan på den primära lokala servern. Använd följande skript för att avsluta loggning på den sekundära servern först och sedan på den primära servern. Databas namnen i skriptet kan variera beroende på din miljö.
+Du måste stoppa loggleveransen före servergruppsåterställningen. Stoppa loggleveransen på den sekundära servern i Azure först och stoppa den sedan på den primära servern lokalt. Använd följande skript för att stoppa loggleveransen på den sekundära servern först och sedan på den primära servern. Databasnamnen i skriptet kan vara olika beroende på din miljö.
   
 ```
 -- This script removes log shipping from the server.
@@ -385,15 +385,15 @@ where prm.primary_database in ( ' + @PriDB + ' )')
 
 ```
 
-### <a name="restore-the-backups"></a>Återställa säkerhets kopiorna
+### <a name="restore-the-backups"></a>Återställa säkerhetskopiorna
 
-Säkerhets kopior måste återställas i den ordning som de skapades. Innan du kan återställa en särskild säkerhets kopia av en transaktions logg måste du först återställa följande tidigare säkerhets kopior utan att ångra en obekräftad transaktion (d.v.s. genom att använda  `WITH NORECOVERY` ):
+Säkerhetskopior måste återställas i den ordning som de skapades. Innan du kan återställa en viss säkerhetskopia av transaktionsloggen måste du först återställa följande tidigare säkerhetskopior utan att återställa ogenomsagda transaktioner (d.v.s. genom att använda  `WITH NORECOVERY` ):
   
-- Den fullständiga säkerhets kopieringen av databasen och den senaste differentiella säkerhets kopian – återställer dessa säkerhets kopior, om sådana finns, före den aktuella säkerhets kopieringen av transaktions logg. Innan den senaste fullständiga eller differentiella databas säkerhets kopian skapades användes den fullständiga återställnings modellen eller återställnings modellen för Mass utloggning.
+- Fullständig databassäkerhetskopia och den sista differensen av säkerhetskopiering – Återställ dessa säkerhetskopior, om det finns några, före den specifika säkerhetskopieringen i transaktionsloggen. Innan den senaste säkerhetskopiering av fullständiga databaser eller differens-databaser skapades använde databasen fullständig återställningsmodell eller massloggad återställningsmodell.
     
-- Alla säkerhets kopior av transaktions loggar – Återställ eventuella säkerhets kopior av transaktions loggar som gjorts efter den fullständiga säkerhets kopieringen av databasen eller den differentiella säkerhets kopian (om du återställer en) och före den specifika säkerhets kopiering Logg säkerhets kopior måste tillämpas i den ordning som de skapades, utan luckor i logg kedjan.
+- Alla säkerhetskopior av transaktionsloggar – Återställ alla säkerhetskopior av transaktionsloggar som har tagits efter den fullständiga säkerhetskopian i databasen eller differensen av säkerhetskopiering (om du återställer en) och före den specifika säkerhetskopieringen av transaktionsloggen. Säkerhetskopior av loggar måste tillämpas i den ordning som de skapades, utan några luckor i loggkedja.
     
-Om du vill återställa innehålls databasen på den sekundära servern så att webbplatserna renderas tar du bort alla databas anslutningar innan återställning. Om du vill återställa databasen kör du följande SQL-uttryck.
+Om du vill återställa innehållsdatabasen på den sekundära servern så att webbplatserna återges tar du bort alla databasanslutningar före återställningen. Kör följande SQL-instruktion om du vill återställa databasen.
   
 ```
 restore database WSS_Content with recovery
@@ -401,214 +401,214 @@ restore database WSS_Content with recovery
 ```
 
 > [!IMPORTANT]
-> När du använder T-SQL explicit kan du ange antingen **med NORECOVERY** eller **med återställning** i varje Restore-sats för att undvika tvetydighet – det här är mycket viktigt när du skriver skript. När alla säkerhets kopior har återställts kan transaktions loggar återställas i SQL Server Management Studio. Eftersom logg överföring redan har stoppats är innehålls databasen i vänte läge, så du måste ändra tillståndet till full åtkomst.
+> När du använder T-SQL uttryckligen anger du antingen **WITH NORECOVERY** eller **WITH RECOVERY** i varje RESTORE-instruktion för att eliminera oklarheter – detta är mycket viktigt när du skriver skript. När alla säkerhetskopieringar och differenser har återställts kan transaktionsloggarna återställas i SQL Server Management Studio. Eftersom loggleverans redan stoppas är innehållsdatabasen i vänteläge, så du måste ändra statusen till fullständig åtkomst.
   
-I SQL Server Management Studio högerklickar du på **WSS_Content** databasen, pekar på **uppgifter**  >  **Återställ**och klickar sedan på **transaktions logg** (om du inte har återställt den fullständiga säkerhets kopian är det inte tillgängligt). Mer information finns i[återställa en säkerhets kopia av en transaktions logg (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392778).
+I SQL Server Management Studio  högerklickar du på WSS_Content-databasen, pekar på **Uppgiftsåterställning** och klickar sedan på Transaktionslogg (om du inte har återställt den fullständiga säkerhetskopian är detta inte  >  tillgängligt).  Mer information finns i Återställa[säkerhetskopiering av transaktionsloggar (SQL Server).](/sql/relational-databases/backup-restore/restore-a-transaction-log-backup-sql-server)
   
-### <a name="crawl-the-content-source"></a>Crawla innehålls källan
+### <a name="crawl-the-content-source"></a>Crawla innehållskällan
 
-Du måste påbörja en fullständig crawlning för varje innehålls källa för att återställa Sök tjänsten. Observera att du förlorar lite analys information från den lokala server gruppen, till exempel Sök rekommendationer. Innan du börjar med fullständig crawlning kan du använda Windows PowerShell cmdlet **restore-SPEnterpriseSearchServiceApplication** och ange den loggade och replikerade Sök administrations databasen **, <GUID> Search_Service__DB_**. Denna cmdlet ger Sök konfiguration, schema, hanterade egenskaper, regler och källor och skapar en standard uppsättning med andra komponenter.
+Du måste starta en fullständig crawlning för varje innehållskälla för att återställa söktjänsten. Observera att du förlorar viss analysinformation från den lokala servergruppen, till exempel sökrekommendationer. Innan du startar alla crawlningar använder du Windows PowerShell-cmdleten **Restore-SPEnterpriseSearchServiceApplication** och anger den log-shipped och replikerade Search Administration-databasen **Search_Service__DB_ <GUID>**. Den här cmdleten ger dig sökkonfiguration, schema, hanterade egenskaper, regler och källor och skapar en standarduppsättning med de andra komponenterna.
   
-Gör så här om du vill starta en fullständig crawlning:
+Om du vill starta en fullständig crawlning slutför du följande steg:
   
-1. Gå till **program hanterings**  >  **tjänst program**  >  **Hantera tjänst program**i SharePoint 2013 Central administration och klicka sedan på det Sök tjänst program som du vill crawla.
+1. I Central administration av SharePoint 2013 går du till Programhanteringstjänstprogram Hantera tjänstprogram och klickar sedan på det söktjänstprogram som du vill  >    >  crawla.
     
-2. Klicka på **innehålls källor**på sidan **Sök administration** , peka på den innehålls källa som du vill använda, klicka på pilen och klicka sedan på **Starta fullständig crawlning**.
+2. På sidan **Sökadministration** klickar du på **Innehållskällor,** pekar på den innehållskälla som du vill använda, klickar på pilen och klickar sedan på **Starta fullständig crawlning.**
     
-### <a name="recover-farm-services"></a>Återställa Server grupps tjänster
+### <a name="recover-farm-services"></a>Återställa servergruppstjänster
 
-I följande tabell visas hur du återställer tjänster som har en databas som har loggats fram, tjänster som har databaser men inte rekommenderas att återställa med logg överföring och de tjänster som inte har databaser.
+I följande tabell visas hur du återställer tjänster som har log-shipped databases, de tjänster som har databaser men inte rekommenderas att återställa med loggleverans och de tjänster som inte har databaser.
   
 > [!IMPORTANT]
-> Återställning av en lokal SharePoint-databas till Azure-miljön återställer inte några SharePoint-tjänster som du inte redan har installerat i Azure manuellt. 
+> Om du återställer en lokal SharePoint-databas i Azure-miljön återställs inte några SharePoint-tjänster som du inte redan har installerat i Azure manuellt. 
   
-**Tabell: databas referens för tjänst program**
+**Tabell: Databasreferens för tjänstprogram**
 
-|**Återställ dessa tjänster från en log-skeppade databaser**|**De här tjänsterna har databaser, men vi rekommenderar att du startar dessa tjänster utan att återställa sina databaser**|**Dessa tjänster lagrar inte data i databaser; starta de här tjänsterna efter redundans**|
+|**Återställa de här tjänsterna från log-shipped databases**|**De här tjänsterna har databaser, men vi rekommenderar att du startar de här tjänsterna utan att återställa deras databaser**|**Dessa tjänster lagrar inte data i databaser. starta de här tjänsterna efter redundans**|
 |:-----|:-----|:-----|
-| Maskin översättnings tjänst <br/>  Hanterad metadatatjänst <br/>  Säker lagrings tjänst <br/>  Användar profil. (Det går bara att använda databaserna profil och sociala taggar. Databasen synkronisering stöds inte.) <br/>  Tjänst för prenumerations inställningar för Microsoft SharePoint Foundation <br/> | Insamling av användnings-och hälso data <br/>  Tillstånds tjänst <br/>  Word-automatisering <br/> | Excel-tjänster <br/>  PerformancePoint-tjänster <br/>  PowerPoint-konvertering <br/>  Visio-grafiktjänsten <br/>  Arbets hantering <br/> |
+| Maskinöversättningstjänst <br/>  Tjänst för hanterade metadata <br/>  Säker lagringstjänst <br/>  Användarprofil. (Endast databaserna för profil och social märkning stöds. Synkroniseringsdatabasen stöds inte.) <br/>  Inställningstjänst för Microsoft SharePoint Foundation-prenumeration <br/> | Insamling av användnings- och hälsodata <br/>  Delstatstjänst <br/>  Word-automation <br/> | Excel Services <br/>  PerformancePoint-tjänster <br/>  PowerPoint-konvertering <br/>  Visio-grafiktjänst <br/>  Arbetshantering <br/> |
    
-I följande exempel visas hur du återställer den hanterade metadatatjänsten från en databas.
+I följande exempel visas hur du återställer tjänsten hanterade metadata från en databas.
   
-Då används den befintliga Managed_Metadata_DB-databasen. Denna databas är loggad, men det finns inget aktivt tjänst program i den sekundära Server gruppen, så den måste anslutas efter att tjänst programmet är på plats.
+Då används den befintliga Managed_Metadata_DB databasen. Den här databasen har levererats med en logg, men det finns inget aktivt tjänstprogram i den sekundära servergruppen, så den måste anslutas när tjänstprogrammet är på plats.
   
-Använd först  `New-SPMetadataServiceApplication` och ange  `DatabaseName` namnet på den återställda databasen.
+Använd först  `New-SPMetadataServiceApplication` och ange  `DatabaseName` växeln med namnet på den återställda databasen.
   
-Konfigurera sedan den nya hanterade metadatatjänsten på den sekundära servern så här:
+Konfigurera sedan det nya tjänstprogrammet för hanterade metadata på den sekundära servern enligt följande:
   
-- Namn: hanterad metadatatjänst
+- Namn: Hanterad metadatatjänst
     
-- Databas server: databas namnet från den skickade transaktions loggen
+- Databasserver: Databasnamnet från den skickade transaktionsloggen
     
-- Databas namn: Managed_Metadata_DB
+- Databasnamn: Managed_Metadata_DB
     
-- Programpool: SharePoint-tjänstprogram 
+- Programpool: SharePoint Service-program 
     
 ### <a name="manage-dns-records"></a>Hantera DNS-poster
 
-Du måste manuellt skapa DNS-poster för att kunna peka på SharePoint-servergruppen.
+Du måste manuellt skapa DNS-poster så att de pekar på SharePoint-servergruppen.
   
-I de flesta fall där du har flera front webb servrar är det lämpligt att utnyttja funktionen Utjämning av nätverks belastning i Windows Server 2012 eller en maskinvarubaserad belastnings fördelning för att distribuera förfrågningar mellan webb frontend-servrarna i Server gruppen. Belastnings utjämning kan minska risken genom att distribuera förfrågningar till de andra servrarna om en av dina webb servrar Miss lyckas. 
+I de flesta fall där du har flera frontend-webbservrar är det bra att använda funktionen Utjämning av nätverksbelastning i Windows Server 2012 eller en maskinvarufördelning för att distribuera förfrågningar mellan webb-frontend-servrarna i servergruppen. Utjämning av nätverksbelastningen kan också minska risken genom att distribuera förfrågningar till andra servrar om en av dina webbservrar misslyckas. 
   
-När du konfigurerar utjämning av nätverks belastning är ditt kluster till en enda IP-adress. Du skapar sedan en DNS-värd för det nätverk som pekar på klustret. (För det här projektet lägger vi till en DNS-server i Azure för återhämtning i händelse av ett lokalt Data Center fel.) Du kan t ex skapa en DNS-post i DNS Manager i Active Directory, till exempel called  `https://sharepoint.contoso.com` , som pekar mot IP-adressen för ditt belastningsutjämnade kluster.
+När du ställer in belastningsutjämning för nätverket tilldelas ditt kluster vanligtvis en enda IP-adress. Sedan skapar du en DNS-värdpost i DNS-leverantören för nätverket som pekar på klustret. (För det här projektet lade vi till en DNS-server i Azure för motståndskraft vid ett lokalt datacenterfel.) Du kan till exempel skapa en DNS-post i DNS-hanteraren i Active Directory som pekar på IP-adressen för ett  `https://sharepoint.contoso.com` belastningsutjämnat kluster.
   
-För extern åtkomst till SharePoint-servergruppen kan du skapa en värd post på en extern DNS-server med samma URL som klienterna använder på intranätet (till exempel `https://sharepoint.contoso.com` ) som pekar på en extern IP-adress i brand väggen. (Det här exemplet är ett bra sätt att konfigurera delad DNS så att den interna DNS-servern är auktoritär för `contoso.com` och dirigerar begär Anden direkt till SharePoint-servergruppen, i stället för att dirigera DNS-begäranden till din externa DNS-server.) Du kan sedan mappa den externa IP-adressen till det lokala klustrets interna IP-adress så att klienter hittar de resurser de letar efter.
+För extern åtkomst till SharePoint-servergruppen kan du skapa en värdpost på en extern DNS-server med samma URL som klienter använder på intranätet (till exempel) som pekar på en extern IP-adress i `https://sharepoint.contoso.com` brandväggen. (Vi använder det här exemplet som metod om du vill konfigurera delad DNS så att den interna DNS-servern är auktoritativ för och dirigerar förfrågningar direkt till SharePoint-servergruppskluster, i stället för att dirigera DNS-begäranden till den externa `contoso.com` DNS-servern.) Sedan kan du mappa den externa IP-adressen till den interna IP-adressen för ditt lokala kluster så att klienterna hittar de resurser de söker.
   
-Härifrån kan du stöta på ett par olika katastrof-återställning:
+Härifrån kan du få olika scenarier för katastrofåterställning:
   
- **Exempel på scenario: den lokala SharePoint-servergruppen är inte tillgänglig på grund av maskin varu fel i den lokala SharePoint-servergruppen.** I det här fallet när du har slutfört stegen för redundans till Azure SharePoint-servergruppen kan du konfigurera utjämning av nätverks belastning på återställnings Server gruppens front servrar på samma sätt som du använde den lokala server gruppen. Du kan sedan omdirigera värd posten i den interna DNS-leverantören så att den pekar på återställnings gruppens kluster-IP-adress. Observera att det kan ta en stund innan cachade DNS-poster på klienter uppdateras och peka på återställnings gruppen.
+ **Exempelscenario: Den lokala SharePoint-servergruppen är inte tillgänglig på grund av maskinvarufel i den lokala SharePoint-servergruppen.** När du har utfört stegen för redundans för Azure SharePoint-servergruppen kan du i det här fallet konfigurera utjämning av nätverksbelastningen på SharePoint-servergruppens webbservrar, på samma sätt som du gjorde med den lokala servergruppen. Du kan sedan omdirigera värdposten i den interna DNS-leverantören så att den pekar på IP-adressen för återställningsfarmens kluster. Observera att det kan ta lite tid innan cachelagrade DNS-poster i klienter uppdateras och pekar på återställningsservern.
   
- **Exempel på scenario: det lokala data centret försvinner helt.** Det här scenariot kan uppstå på grund av en natur katastrof, till exempel en brand eller översvämning. I det här fallet är det troligt att ett sekundärt Data Center hanteras i en annan region samt ditt Azure-undernät som har sina egna katalog tjänster och DNS. Precis som i föregående katastrof scenario kan du omdirigera de interna och externa DNS-posterna så att de pekar på Azure SharePoint-servergruppen. Observera att DNS-postdistribution kan ta lite tid.
+ **Exempelscenario: Det lokala datacentret förloras helt.** Det här scenariot kan uppstå på grund av en naturåterställning, till exempel en brand eller en flod. I det här fallet skulle du för ett företag sannolikt ha ett sekundärt datacenter i en annan region samt ditt Azure-undernät som har sina egna katalogtjänster och DNS. Precis som vid föregående katastrofscenario kan du omdirigera dina interna och externa DNS-poster så att de pekar på Azure SharePoint-servergruppen. Observera att det kan ta lite tid att sprida DNS-poster.
   
-Om du använder en webbplats samling med värden som heter värd, som rekommenderas i en [arkitektur och distribution (SharePoint 2013) av värd-namn](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment), kan du ha flera webbplats samlingar som hanteras av samma webb program i SharePoint-servergruppen, med unika DNS-namn (till exempel `https://sales.contoso.com` och `https://marketing.contoso.com` ). I det här fallet kan du skapa DNS-poster för varje webbplats samling som pekar på klustrets IP-adress. När en begäran når dina SharePoint-webbservrar kan de cirkulera varje begäran till en lämplig webbplats samling.
+Om du använder värdbaserade webbplatssamlingar, som rekommenderas i Värdnamnad webbplatssamlingsarkitektur och distribution [(SharePoint 2013)](/SharePoint/administration/host-named-site-collection-architecture-and-deployment)kan du ha flera webbplatssamlingar som lagras av samma webbprogram i SharePoint-servergruppen, med unika DNS-namn (till exempel `https://sales.contoso.com` och `https://marketing.contoso.com` ). I det här fallet kan du skapa DNS-poster för varje webbplatssamling som pekar på kluster-IP-adressen. När en begäran når SharePoint web front-end-servrar hanterar de varje begäran till rätt webbplatssamling.
   
-## <a name="microsoft-proof-of-concept-environment"></a>Microsoft proof-of-Concept-miljö
+## <a name="microsoft-proof-of-concept-environment"></a>Microsoft Proof-of-concept-miljö
 
-Vi har utformat och testat en miljö för koncept bevis för den här lösningen. Design målet för vår test miljö var att distribuera och återställa en SharePoint-servergrupp som vi kan hitta i en kund miljö. Vi har gjort flera antaganden, men vi visste att Server gruppen behövde tillhandahålla alla infärdiga funktioner utan några anpassningar. Topologin är utformad för hög tillgänglighet genom att använda vägledning från fältet och produkt gruppen.
+Vi har utformat och testat en koncepttestmiljö för den här lösningen. Designmålet för testmiljön var att distribuera och återställa en SharePoint-servergrupp som kan finnas i en kundmiljö. Vi gjorde flera antaganden, men vi visste att servergruppen behövde kunna tillhandahålla alla inbehövliga funktioner utan några anpassningar. Topologin utformades för hög tillgänglighet med hjälp av metodvägledning från fältet och produktgruppen.
   
-I följande tabell beskrivs de virtuella Hyper-V-datorer som vi har skapat och konfigurerat för den lokala test miljön.
+I följande tabell beskrivs de virtuella Hyper-V-maskinerna som vi skapat och konfigurerat för den lokala testmiljön.
   
-**Tabell: virtuella datorer för lokalt test**
+**Tabell: Virtuella maskiner för lokalt test**
 
-|**Server namn**|**Roll**|**Konfiguration**|
+|**Servernamn**|**Roll**|**Konfiguration**|
 |:-----|:-----|:-----|
-|DC1  <br/> |Domänkontrollant med Active Directory.  <br/> |Två processorer  <br/> Från 512 MB till 4 GB RAM-minne  <br/> 1 x 127-GB hård disk  <br/> |
-|TJÄNSTEN  <br/> |Server som konfigureras med RRAS-rollen (Routing and Remote Access Service).  <br/> |Två processorer  <br/> 2-8 GB RAM  <br/> 1 x 127-GB hård disk  <br/> |
-|FS1  <br/> |Fil server med resurser för säkerhets kopior och en slut punkt för DFSR.  <br/> |Fyra processorer  <br/> 2-12 GB RAM  <br/> 1 x 127-GB hård disk  <br/> 1 x 1-TB hård disk (SAN)  <br/> 1 x 750-GB hård disk  <br/> |
-|SP-WFE1, SP-WFE2  <br/> |Front webb servrar.  <br/> |Fyra processorer  <br/> 16 GB RAM  <br/> |
-|SP-APP1, SP-APP2, SP-APP3  <br/> |Program servrar.  <br/> |Fyra processorer  <br/> 2-16 GB RAM  <br/> |
-|SP-SQL-HA1, SP-SQL-HA2  <br/> |Databas servrar, konfigurerade med SQL Server 2012 AlwaysOn-tillgänglighetsgruppen för att ge hög tillgänglighet. Denna konfiguration använder SP-SQL-HA1 och SP-SQL-HA2 som primär-och sekundär repliker.  <br/> |Fyra processorer  <br/> 2-16 GB RAM  <br/> |
+|DC1  <br/> |Domänkontrollant med Active Directory.  <br/> |Två processorer  <br/> Från 512 MB till 4 GB RAM-minne  <br/> 1 x 127 GB-hårddisk  <br/> |
+|RRAS  <br/> |Server som konfigurerats med rollerna Routing och Remote Access Service (RRAS).  <br/> |Två processorer  <br/> 2–8 GB RAM-minne  <br/> 1 x 127 GB-hårddisk  <br/> |
+|FS1  <br/> |Filserver med resurser för säkerhetskopior och en ändpunkt för TIDER.  <br/> |Fyra processorer  <br/> 2–12 GB RAM-minne  <br/> 1 x 127 GB-hårddisk  <br/> 1 x 1 TB hårddisk (SAN)  <br/> 1 x 750 GB-hårddisk  <br/> |
+|SP-WFE1, SP-WFE2  <br/> |Frontend-webbservrar.  <br/> |Fyra processorer  <br/> 16 GB RAM-minne  <br/> |
+|SP-APP1, SP-APP2, SP-APP3  <br/> |Application servers.  <br/> |Fyra processorer  <br/> 2–16 GB RAM-minne  <br/> |
+|SP-SQL-HA1, SP-SQL-HA2  <br/> |Databasservrar, konfigurerade med tillgänglighetsgrupper i SQL Server 2012 AlwaysOn för att ge hög tillgänglighet. I den här konfigurationen används SP-SQL-HA1 och SP-SQL-HA2 som primära och sekundära repliker.  <br/> |Fyra processorer  <br/> 2–16 GB RAM-minne  <br/> |
    
-I följande tabell beskrivs de olika poolinställningarna för de virtuella Hyper-V-datorerna som vi har skapat och konfigurerat för front webb-och program servrar för den lokala test miljön.
+I följande tabell beskrivs enhetskonfigurationer för de virtuella Hyper-V-maskiner som vi har skapat och konfigurerat för frontend-webb- och programservrarna för den lokala testmiljön.
   
-**Tabell: enhets krav för virtuell dator för front webb och program servrar för det lokala testet**
+**Tabell: Krav för virtuell datorenhet för frontendwebb- och programservrarna för det lokala testet**
 
-|**Enhets beteckning**|**Storlek**|**Katalog namn**|**Bana**|
+|**Enhetsbeteckning**|**Storlek**|**Katalognamn**|**Sökväg**|
 |:-----|:-----|:-----|:-----|
-|F  <br/> |80  <br/> |Systemen het  <br/> |<DriveLetter>: \\ Program \\ Microsoft SQL Server\\  <br/> |
-|Tomé  <br/> |80  <br/> |Loggen het (40 GB)  <br/> |<DriveLetter>: \\ Program \\ Microsoft SQL Server \\ MSSQL10_50. MSSQLSERVER \\ MSSQL- \\ data  <br/> |
-|D  <br/> |80  <br/> |Sida (36 GB)  <br/> |<DriveLetter>: \\ Program \\ data för Microsoft SQL Server \\ MSSQL \\  <br/> |
+|C  <br/> |80  <br/> |Systemenhet  <br/> |<DriveLetter>: \\ Program Files Microsoft SQL \\ Server\\  <br/> |
+|E  <br/> |80  <br/> |Loggenhet (40 GB)  <br/> |<DriveLetter>: \\ Program Files Microsoft SQL Server \\ \\ MSSQL10_50.MSSQLSERVER \\ MSSQL \\ DATA  <br/> |
+|F  <br/> |80  <br/> |Sida (36 GB)  <br/> |<DriveLetter>: \\ Program Files Microsoft SQL Server \\ \\ MSSQL \\ DATA  <br/> |
    
-I följande tabell beskrivs poolinställningarna för de virtuella Hyper-V-datorer som skapas och konfigureras för att fungera som lokala databas servrar. På sidan **databas motor konfiguration** går du till fliken **data kataloger** för att ange och bekräfta inställningarna i följande tabell.
+I följande tabell beskrivs enhetskonfigurationer för virtuella Hyper-V-maskiner som skapats och konfigurerats för att fungera som lokala databasservrar. På sidan **Database Engine Configuration** går du till fliken **Datakataloger** och anger och bekräftar inställningarna som visas i följande tabell.
   
-**Tabell: enhets krav för virtuell dator för databas servern för det lokala testet**
+**Tabell: Krav för virtuell datorenhet för databasservern för det lokala testet**
 
-|**Enhets beteckning**|**Storlek**|**Katalog namn**|**Bana**|
+|**Enhetsbeteckning**|**Storlek**|**Katalognamn**|**Sökväg**|
 |:-----|:-----|:-----|:-----|
-|F  <br/> |80  <br/> |Data rot Katalog  <br/> |<DriveLetter>: \\ Program \\ Microsoft SQL Server\\  <br/> |
-|Tomé  <br/> |500  <br/> |Katalog för användar databas  <br/> |<DriveLetter>: \\ Program \\ Microsoft SQL Server \\ MSSQL10_50. MSSQLSERVER \\ MSSQL- \\ data  <br/> |
-|D  <br/> |500  <br/> |Katalog för användar databas logg  <br/> |<DriveLetter>: \\ Program \\ Microsoft SQL Server \\ MSSQL10_50. MSSQLSERVER \\ MSSQL- \\ data  <br/> |
-|Gram  <br/> |500  <br/> |Tillfällig DB-katalog  <br/> |<DriveLetter>: \\ Program \\ Microsoft SQL Server \\ MSSQL10_50. MSSQLSERVER \\ MSSQL- \\ data  <br/> |
-|T  <br/> |500  <br/> |Temp DB log-katalog  <br/> |<DriveLetter>: \\ Program \\ Microsoft SQL Server \\ MSSQL10_50. MSSQLSERVER \\ MSSQL- \\ data  <br/> |
+|C  <br/> |80  <br/> |Datarotkatalog  <br/> |<DriveLetter>: \\ Program Files Microsoft SQL \\ Server\\  <br/> |
+|E  <br/> |500  <br/> |Användardatabaskatalog  <br/> |<DriveLetter>: \\ Program Files Microsoft SQL Server \\ \\ MSSQL10_50.MSSQLSERVER \\ MSSQL \\ DATA  <br/> |
+|F  <br/> |500  <br/> |Användardatabasloggkatalog  <br/> |<DriveLetter>: \\ Program Files Microsoft SQL Server \\ \\ MSSQL10_50.MSSQLSERVER \\ MSSQL \\ DATA  <br/> |
+|G  <br/> |500  <br/> |Temp DB-katalog  <br/> |<DriveLetter>: \\ Program Files Microsoft SQL Server \\ \\ MSSQL10_50.MSSQLSERVER \\ MSSQL \\ DATA  <br/> |
+|H  <br/> |500  <br/> |Temp DB-loggkatalog  <br/> |<DriveLetter>: \\ Program Files Microsoft SQL Server \\ \\ MSSQL10_50.MSSQLSERVER \\ MSSQL \\ DATA  <br/> |
    
-### <a name="setting-up-the-test-environment"></a>Ställa in test miljön
+### <a name="setting-up-the-test-environment"></a>Konfigurera testmiljön
 
-Under de olika distributions faserna fungerade test gruppen normalt på den lokala arkitekturen och sedan i motsvarande Azure-miljö. Detta återspeglar de allmänna reella ärenden där anläggnings anläggningar redan körs. Vad är ännu viktigare är att du bör känna till aktuell arbets belastning, kapacitet och typisk prestanda. Förutom att skapa en katastrof återställnings modell som kan uppfylla företags krav bör du ställa in en storlek på Server för återställnings servrar för att tillhandahålla en minimal tjänste nivå. I en miljö med kall och varm-standby är en återställnings Server normalt mindre än en produktions grupp. När återställnings gruppen är stabil och i produktion kan Server gruppen skalas upp och ut för att uppfylla arbets belastnings kraven.
+Under de olika distributionsfaserna arbetade testteamet vanligtvis med den lokala arkitekturen först och sedan på motsvarande Azure-miljö. Det återspeglar de verkliga ärendena där de lokala produktionsenheterna redan körs. Ännu viktigare är att du känner till aktuell produktionsarbetsbelastning, kapacitet och vanliga prestanda. Förutom att skapa en katastrofåterställningsmodell som kan uppfylla företagskrav bör du ändra storlek på servergruppsservrarna för återställning så att en lägsta servicenivå levereras. I en kalla eller varmt vänteläge är en återställningsfarm vanligtvis mindre än en produktionsfarm. När återställningsfarmen är stabil och i produktion kan servergruppen skalas upp och ut för att uppfylla kraven på arbetsbelastning.
   
-Vi har distribuerat vår test miljö i följande tre faser:
+Vi har distribuerat testmiljön i följande tre faser:
   
-- Konfigurera hybrid infrastrukturen
+- Konfigurera hybridinfrastrukturen
     
-- Etablera servrar
+- Etablera servrarna
     
-- Distribuera SharePoint-servergrupperna
+- Distribuera SharePoint-farms
     
-#### <a name="set-up-the-hybrid-infrastructure"></a>Konfigurera hybrid infrastrukturen
+#### <a name="set-up-the-hybrid-infrastructure"></a>Konfigurera hybridinfrastrukturen
 
-Den här fasen berör konfiguration av en domän miljö för den lokala server gruppen och för återställnings gruppen i Azure. Utöver de vanliga uppgifter som är kopplade till att konfigurera Active Directory implementerar test gruppen en lösning för Routning och en VPN-anslutning mellan de båda miljöerna.
+Den här fasen innebär att konfigurera en domänmiljö för den lokala servergruppen och för återställningsfarmen i Azure. Förutom de vanliga uppgifterna som är associerade med att konfigurera Active Directory har testteamet implementerat en routningslösning och en VPN-anslutning mellan de två miljöerna.
   
-#### <a name="provision-the-servers"></a>Etablera servrar
+#### <a name="provision-the-servers"></a>Etablera servrarna
 
-Utöver Server grupperna är det nödvändigt att etablera servrar för domän kontrol Lanterna och konfigurera en server för att hantera RRAS samt webbplats-till-plats-VPN. Två fil servrar etablerades för DFSR-tjänsten och flera klient datorer etablerades för testare.
+Utöver servergruppsservrarna var det nödvändigt att tillhandahålla servrar för domänkontrollanterna och konfigurera en server för att hantera RRAS samt VPN för webbplats till webbplats. Två filservrar har etablerats för TJÄNSTEN BRANR och flera klientdatorer har etablerats för testare.
   
-#### <a name="deploy-the-sharepoint-farms"></a>Distribuera SharePoint-servergrupperna
+#### <a name="deploy-the-sharepoint-farms"></a>Distribuera SharePoint-farms
 
-SharePoint-servergrupperna distribuerades i två steg för att förenkla miljö stabilisering och fel sökning, om så behövs. Under det första steget distribuerades varje server grupp på det minsta antalet servrar för varje nivå i topologin som stöd för de nödvändiga funktionerna.
+SharePoint-farmen har distribuerats i två steg för att förenkla stabilitet och felsökning vid behov. Under det första steget distribuerades varje servergrupp på det lägsta antalet servrar för varje nivå i topologin för att stödja de nödvändiga funktionerna.
   
-Vi har skapat databas servrar med SQL Server installerat innan du skapar SharePoint 2013-servrarna. Eftersom det var en ny distribution skapade vi tillgänglighets grupperna innan du distribuerade SharePoint. Vi har skapat tre grupper baserat på MCS-vägledningen för bästa praxis. 
+Vi skapade databasservrarna med SQL Server installerat innan SharePoint 2013-servrarna skapades. Eftersom det var en ny distribution skapade vi tillgänglighetsgrupper innan SharePoint distribuerades. Vi har skapat tre grupper baserade på vägledning för bästa praxis för MCS. 
   
 > [!NOTE]
-> Skapa databas plats hållare så att du kan skapa tillgänglighets grupper före SharePoint-installationen. Mer information finns i [Konfigurera SQL Server 2012 AlwaysOn-tillgänglighetsgruppen för SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=517626)
+> Skapa platshållardatabaser så att du kan skapa tillgänglighetsgrupper innan SharePoint-installationen. Mer information finns i [Konfigurera SQL Server 2012 AlwaysOn-tillgänglighetsgrupper för SharePoint 2013](/SharePoint/administration/configure-an-alwayson-availability-group)
   
-Vi skapade Server gruppen och anslöt till ytterligare servrar i följande ordning:
+Vi skapade servergruppen och anslöt till ytterligare servrar i följande ordning:
   
-- Tillhandahålla SP-SQL-HA1 och SP-SQL-HA2.
+- Etablera SP-SQL-HA1 och SP-SQL-HA2.
     
-- Konfigurera AlwaysOn och skapa de tre tillgänglighets grupperna för Server gruppen. 
+- Konfigurera AlwaysOn och skapa de tre tillgänglighetsgrupperna för servergruppen. 
     
-- Etablerar SP-APP1 som värd Central administration.
+- Tillhandahålla SP-APP1 som värd för Central administration.
     
-- Etablerar SP-WFE1 och SP-WFE2 som värd för det distribuerade cacheminnet. 
+- Tillhandahålla SP-WFE1 och SP-WFE2 som värd för det distribuerade cacheminnet. 
     
-Vi använde  _skipRegisterAsDistributedCachehost_ -parametern när vi körde **psconfig.exe** på kommando raden. Mer information finns i [Planera för feeds och tjänsten distribuerad cache i SharePoint Server 2013](https://docs.microsoft.com/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service). 
+Vi använde  _parametern skipRegisterAsDistributedCachehost_ när **vipsconfig.exe** på kommandoraden. Mer information finns i [Planera för feeds och tjänsten Distribuerad cache i SharePoint Server 2013.](/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service) 
   
-Vi har upprepat följande steg i återställnings miljön:
+Vi upprepade följande steg i återställningsmiljön:
   
-- Tillhandahåll AZ-SQL-HA1 och AZ-SQL-HA2.
+- Tillhandahålla AZ-SQL-HA1 och AZ-SQL-HA2.
     
-- Konfigurera AlwaysOn och skapa de tre tillgänglighets grupperna för Server gruppen.
+- Konfigurera AlwaysOn och skapa de tre tillgänglighetsgrupperna för servergruppen.
     
-- Tillhandahåll AZ-APP1 till Central administration.
+- Tillhandahålla AZ-APP1 som värd för Central Administration.
     
-- Etablera AZ-WFE1 och AZ-WFE2 för att vara värd för det distribuerade cacheminnet.
+- Tillhandahålla AZ-WFE1 och AZ-WFE2 som värd för det distribuerade cacheminnet.
     
-När vi har konfigurerat det distribuerade cacheminnet och lagt till test användare och test innehåll startade vi steg två av distributionen. Detta erfordrar en skalning av nivåerna och konfigurering av Server gruppens servrar för att stödja topologi med hög tillgänglighet som beskrivs i Server gruppen.
+När vi konfigurerat den distribuerade cachen och lagt till testanvändare och testinnehåll startade vi steg två i distributionen. Detta kräver skalning av nivåerna och konfiguration av servergruppsservrarna för att stödja den toppologi med hög tillgänglighet som beskrivs i servergruppsarkitekturen.
   
-I följande tabell beskrivs de virtuella datorerna, undernät och tillgänglighets uppsättningar som vi har konfigurerat för vår återställnings Server.
+I följande tabell beskrivs de virtuella datorer, undernät och tillgänglighetsuppsättningar vi uppsättningar för återställningsfarmen.
   
-**Tabell: återställnings infrastruktur för grupp**
+**Tabell: Infrastruktur för återställningsfarm**
 
-|**Server namn**|**Roll**|**Konfiguration**|**Under**|**Tillgänglighets uppsättning**|
+|**Servernamn**|**Roll**|**Konfiguration**|**Undernät**|**Tillgänglighetsuppsättning**|
 |:-----|:-----|:-----|:-----|:-----|
-|spDRAD  <br/> |Domänkontrollant med Active Directory  <br/> |Två processorer  <br/> Från 512 MB till 4 GB RAM-minne  <br/> 1 x 127-GB hård disk  <br/> |SP-ADservers  <br/> ||
-|AZ-SP-FS  <br/> |Fil server med resurser för säkerhets kopior och en slut punkt för DFSR  <br/> | A5-konfiguration: <br/>  Två processorer <br/>  14 GB RAM <br/>  1 x 127-GB hård disk <br/>  1 x 135-GB hård disk <br/>  1 x 127-GB hård disk <br/>  1 x 150-GB hård disk <br/> |SP-databaseservers  <br/> |DATA_SET  <br/> |
-|AZ-WFE1, AZ-WFE2  <br/> |Front webb servrar  <br/> | A5-konfiguration: <br/>  Två processorer <br/>  14 GB RAM <br/>  1 x 127-GB hård disk <br/> |SP-webserver  <br/> |WFE_SET  <br/> |
-|AZ-APP1, AZ-APP2, AZ-APP3  <br/> |Program servrar  <br/> | A5-konfiguration: <br/>  Två processorer <br/>  14 GB RAM <br/>  1 x 127-GB hård disk <br/> |SP-applicationservers  <br/> |APP_SET  <br/> |
-|AZ-SQL-HA1, AZ-SQL-HA2  <br/> |Databas servrar och primära och sekundära repliker för grupp för AlwaysOn-tillgänglighet  <br/> | A5-konfiguration: <br/>  Två processorer <br/>  14 GB RAM <br/> |SP-databaseservers  <br/> |DATA_SET  <br/> |
+|spDRAD  <br/> |Domänkontrollant med Active Directory  <br/> |Två processorer  <br/> Från 512 MB till 4 GB RAM-minne  <br/> 1 x 127 GB-hårddisk  <br/> |sp-ADservers  <br/> ||
+|AZ-SP-FS  <br/> |Filserver med resurser för säkerhetskopior och en slutpunkt för TIDER  <br/> | A5-konfiguration: <br/>  Två processorer <br/>  14 GB RAM-minne <br/>  1 x 127 GB-hårddisk <br/>  1 x 135 GB-hårddisk <br/>  1 x 127 GB-hårddisk <br/>  1 x 150 GB-hårddisk <br/> |sp-databaseservers  <br/> |DATA_SET  <br/> |
+|AZ-WFE1, AZ -WFE2  <br/> |Front End-webbservrar  <br/> | A5-konfiguration: <br/>  Två processorer <br/>  14 GB RAM-minne <br/>  1 x 127 GB-hårddisk <br/> |sp-webservers  <br/> |WFE_SET  <br/> |
+|AZ -APP1, AZ -APP2, AZ -APP3  <br/> |Application servers  <br/> | A5-konfiguration: <br/>  Två processorer <br/>  14 GB RAM-minne <br/>  1 x 127 GB-hårddisk <br/> |sp-applicationservers  <br/> |APP_SET  <br/> |
+|AZ -SQL-HA1, AZ -SQL-HA2  <br/> |Databasservrar och primära och sekundära repliker för AlwaysOn-tillgänglighetsgrupper  <br/> | A5-konfiguration: <br/>  Två processorer <br/>  14 GB RAM-minne <br/> |sp-databaseservers  <br/> |DATA_SET  <br/> |
    
-### <a name="operations"></a>Åtgärder
+### <a name="operations"></a>Drift
 
-Efter att test gruppen stabiliserat Server grupps miljö och utförde funktionell testning startade de följande åtgärder som krävs för att konfigurera den lokala återställnings miljön:
+När testgruppen tog bort servergruppsmiljöerna och slutförde funktionstestningen startade de följande åtgärder som krävs för att konfigurera den lokala återställningsmiljön:
   
-- Konfigurera fullständig och differentiell säkerhets kopiering.
+- Konfigurera fullständiga och differentiella säkerhetskopior.
     
-- Konfigurera DFSR på fil servrar som överför transaktions loggar mellan den lokala miljön och Azure-miljön.
+- Konfigurera TIDER på filservrarna som överför transaktionsloggar mellan den lokala miljön och Azure-miljön.
     
-- Konfigurera logg överföring på den primära databas servern.
+- Konfigurera loggleverans på den primära databasservern.
     
-- Stabilisera, validera och Felsök logg överföring, efter behov. Detta gäller identifiering och dokumenterar alla funktioner som kan orsaka problem, till exempel nätverks svars tid, som orsakar misslyckade loggningar av överförings-eller DFSR-filer.
+- Validera, validera och felsök loggleverans efter behov. Detta inkluderade att identifiera och dokumentera något beteende som kan orsaka problem, till exempel nätverksfördröjning, som skulle orsaka loggleverans eller TIDE(ER) filsynkroniseringsfel.
     
-### <a name="databases"></a>Samling
+### <a name="databases"></a>Databaser
 
-Våra failover-test involverade följande databaser: 
+Våra redundanstester involverar följande databaser: 
   
 - WSS_Content
     
 - ManagedMetadata
     
-- Profil databas
+- Profile DB
     
 - Synkronisera DB
     
 - Social DB
     
-- Innehålls typs nav (en databas för dedikerade innehålls typs syndikering)
+- Innehållstypnav (en databas för ett dedikerat innehållstypssyndikeringsnav)
     
-## <a name="troubleshooting-tips"></a>Fel söknings tips
+## <a name="troubleshooting-tips"></a>Felsökningstips
 
-I avsnittet förklaras de problem som vi påträffade när vi testar och deras lösningar. 
+I det här avsnittet beskrivs de problem som uppstod under testningen och deras lösningar. 
   
-### <a name="using-the-term-store-management-tool-caused-the-error-the-managed-metadata-store-or-connection-is-currently-not-available"></a>Om du använder verktyget för hantering av term lagrings plats uppstod felet "den hanterade metadatalagret eller anslutningen är för tillfället inte tillgänglig."
+### <a name="using-the-term-store-management-tool-caused-the-error-the-managed-metadata-store-or-connection-is-currently-not-available"></a>När du använde verktyget för hantering av termlager orsakade felet "Hanterad metadataarkiv eller anslutning är för närvarande inte tillgänglig".
 
-Kontrol lera att programpoolskontot som används av webb programmet har Läs behörighet för term lagrings platsen.
+Kontrollera att det programpoolkonto som används av webbprogrammet har behörigheten Läsåtkomst till termlager.
   
-### <a name="custom-term-sets-are-not-available-in-the-site-collection"></a>Anpassade term uppsättningar är inte tillgängliga i webbplats samlingen
+### <a name="custom-term-sets-are-not-available-in-the-site-collection"></a>Anpassade termuppsättningar är inte tillgängliga i webbplatssamlingen
 
-Sök efter en tjänst program Association saknas mellan innehålls webbplats samlingen och innehålls typs navet. Under sidan Egenskaper för **hanterade metadata kan <site collection name> ** du dessutom kontrol lera att det här alternativet är aktiverat: **det här tjänst programmet är standard lagrings platsen för kolumn specifika term uppsättningar.**
+Kontrollera om det saknas en tjänstprogramsassociat relation mellan innehållswebbplatssamlingen och innehållstypen navet. Kontrollera att det här alternativet är aktiverat på skärmen Hanterade **metadata <site collection name>** – anslutningsegenskaper: Det här tjänstprogrammet är standardlagringsplatsen för **kolumnspecifika termuppsättningar.**
   
-### <a name="the-get-adforest-windows-powershell-command-generates-the-error-the-term-get-adforest-is-not-recognized-as-the-name-of-a-cmdlet-function-script-file-or-operable-program"></a>Kommandot Get-ADForest Windows PowerShell genererar felet "termen ' Get-ADForest ' känns inte igen som namnet på en cmdlet, funktion, skript fil eller program."
+### <a name="the-get-adforest-windows-powershell-command-generates-the-error-the-term-get-adforest-is-not-recognized-as-the-name-of-a-cmdlet-function-script-file-or-operable-program"></a>Med Get-ADForest Windows PowerShell-kommandot genererar du felet: "Termen "Get-ADForest" kan inte identifieras som namn på en cmdlet, en funktion, en skriptfil eller ett operabelt program.
 
-När du konfigurerar användar profiler behöver du Active Directory-skogens namn. I guiden Lägg till roller och funktioner ser du till att du har aktiverat Active Directory-modulen för Windows PowerShell (under verktyg för **>fjärrserveradministration>AD DS och AD LDS-verktyg** ). Kör dessutom följande kommandon innan du använder **Get-ADForest** för att säkerställa att program varan är inläst.
+När du ska konfigurera användarprofiler behöver du Active Directory-skogens namn. I guiden Lägg till roller och funktioner ser du till att du har aktiverat Active Directory-modulen för Windows PowerShell (under avsnittet Verktyg för fjärrserveradministration **>Rolladministration>AD DS- och AD LDS-verktyg).** Kör dessutom följande kommandon innan du använder **Get-AD För** att säkerställa att dina programvaruberoenden läses in.
   
 ```
 Import-module servermanager
@@ -616,25 +616,25 @@ Import-module activedirectory
 
 ```
 
-### <a name="availability-group-creation-fails-at-starting-the-alwayson_health-xevent-session-on-server-name"></a>Det går inte att skapa tillgänglighets gruppen genom att starta AlwaysOn_health XEvent-session på ' <server name> '
+### <a name="availability-group-creation-fails-at-starting-the-alwayson_health-xevent-session-on-server-name"></a>Det går inte att skapa en tillgänglighetsgrupp vid AlwaysOn_health XEvent-session i <server name> '
 
-Se till att båda noderna i ditt failover-kluster har statusen "upp" och inte "pausad" eller "stoppad". 
+Kontrollera att båda noderna i redundansklustret finns i statusen "Upp" och inte i "Pausad" eller "Stoppad". 
   
-### <a name="sql-server-log-shipping-job-fails-with-access-denied-error-trying-to-connect-to-the-file-share"></a>SQL Server log-leveransen Miss lyckas med åtkomst nekad vid försök att ansluta till fil resursen
+### <a name="sql-server-log-shipping-job-fails-with-access-denied-error-trying-to-connect-to-the-file-share"></a>SQL Server-leveransjobbet misslyckas med felmeddelande om nekad åtkomst vid försök att ansluta till filresursen
 
-Kontrol lera att din SQL Server-Agent körs under nätverks referenser, i stället för standardinställningarna.
+Kontrollera att din SQL Server-agent körs med nätverksautentiseringsuppgifter i stället för standardautentiseringsuppgifterna.
   
-### <a name="sql-server-log-shipping-job-indicates-success-but-no-files-are-copied"></a>Överförings jobbet för SQL Server-loggning anger att det lyckades, men inga filer har kopierats
+### <a name="sql-server-log-shipping-job-indicates-success-but-no-files-are-copied"></a>SQL Server-leveransjobbet visar att det är lyckat, men inga filer kopieras
 
-Det här beror på att standard säkerhets kopierings inställningen för en tillgänglighets grupp **föredrar sekundärt**. Se till att du kör logg leverans jobbet från den sekundära servern för tillgänglighets gruppen istället för den primära; annars kommer jobbet att Miss lyckas. 
+Detta inträffar eftersom standardinställningen för säkerhetskopiering för en tillgänglighetsgrupp **är Prefer Secondary**. Kontrollera att du kör loggleveransjobbet från den sekundära servern för tillgänglighetsgruppen i stället för den primära servern. Annars kommer jobbet att misslyckas utan att du blir tyst. 
   
-### <a name="managed-metadata-service-or-other-sharepoint-service-fails-to-start-automatically-after-installation"></a>Hanterad metadatatjänst (eller annan SharePoint-tjänst) kan inte starta automatiskt efter installationen
+### <a name="managed-metadata-service-or-other-sharepoint-service-fails-to-start-automatically-after-installation"></a>Hanterad metadatatjänst (eller annan SharePoint-tjänst) startar inte automatiskt efter installationen
 
-Det kan ta flera minuter att starta tjänster beroende på prestanda och aktuell belastning på SharePoint-servern. Klicka på **Starta** för tjänsten manuellt och ange lämplig tid för att starta och uppdatera sedan dess status med en gång. Om tjänsten förblir stoppad kan du aktivera SharePoint-diagnostikloggning, försöka starta tjänsten igen och sedan kontrol lera om det finns fel i loggen. Mer information finns i [Konfigurera diagnostikloggning i SharePoint 2013](https://docs.microsoft.com/sharepoint/administration/configure-diagnostic-logging)
+Tjänster kan ta flera minuter att starta, beroende på prestanda och aktuell inläsning av SharePoint Server. Klicka manuellt **på Starta** för tjänsten och ge tillräcklig tid för att starta tjänsten när tjänsten på serverskärmen uppdateras manuellt för att övervaka dess status. Om tjänsten förblir stoppad aktiverar du SharePoint-diagnostikloggning, försöker starta tjänsten igen och kontrollerar sedan loggen efter fel. Mer information finns i Konfigurera [diagnostikloggning i SharePoint 2013](/sharepoint/administration/configure-diagnostic-logging)
   
-### <a name="after-changing-dns-to-the-azure-failover-environment-client-browsers-continue-to-use-the-old-ip-address-for-the-sharepoint-site"></a>När du har ändrat DNS till Azure failover-miljön fortsätter klient webbläsarna att använda den gamla IP-adressen för SharePoint-webbplatsen
+### <a name="after-changing-dns-to-the-azure-failover-environment-client-browsers-continue-to-use-the-old-ip-address-for-the-sharepoint-site"></a>När DNS har ändrats till Azure-redundansmiljön fortsätter klientwebbläsare att använda den gamla IP-adressen för SharePoint-webbplatsen
 
-Din DNS-ändring kanske inte syns för alla klienter omedelbart. Utför följande kommando i en test klient med en upphöjd kommando tolk och försök att komma åt webbplatsen igen.
+Dns-ändringen kanske inte visas för alla klienter direkt. Utför följande kommando från en upphöjd kommandotolk på en testklient och försök att komma åt webbplatsen igen.
   
 ```
 Ipconfig /flushdns
@@ -642,13 +642,10 @@ Ipconfig /flushdns
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Stöd för hög tillgänglighet och katastrof återställning för SharePoint-databaser](https://docs.microsoft.com/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
+[Hög tillgänglighet och alternativ för katastrofåterställning stöds för SharePoint-databaser](/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
   
-[Konfigurera SQL Server 2012 AlwaysOn-tillgänglighetsgruppen för SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=393122)
+[Konfigurera SQL Server 2012 AlwaysOn-tillgänglighetsgrupper för SharePoint 2013](/SharePoint/administration/configure-an-alwayson-availability-group)
   
 ## <a name="see-also"></a>Se även
 
-[Microsoft 365-center för lösningar och arkitektur](../solutions/solution-architecture-center.md)
-
-
-
+[Microsoft 365-lösning och arkitekturcenter](../solutions/index.yml)

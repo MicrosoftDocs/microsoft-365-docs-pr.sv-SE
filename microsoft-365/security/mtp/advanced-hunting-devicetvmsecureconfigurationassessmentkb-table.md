@@ -1,7 +1,7 @@
 ---
 title: DeviceTvmSecureConfigurationAssessmentKB-tabell i den avancerade sökschemat
-description: Lär dig mer om de olika säkra konfigurationerna som bedöms av Threat & Vulnerability Management i tabellen DeviceTvmSecureConfigurationAssessmentKB i det avancerade sökschemat.
-keywords: avancerad sökning, hotsökning, cyberhot, microsoft threat protection, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, hot & sårbarhetshantering, TVM, enhetshantering, säkerhetskonfiguration, MITRE ATT&CK-ramverk, kunskapsbas, KB, DeviceTvmSecureConfigurationAssessmentKB
+description: Lär dig mer om de olika säkra konfigurationerna som bedöms av & Vulnerability Management i tabellen DeviceTvmSecureConfigurationAssessmentKB i den avancerade tabellen för sökning.
+keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, security configuration, MITRE ATT&CK framework, knowledge base, KB, DeviceTvmSecureConfigurationAssessmentKB
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cf4204767843b9a9e0b0bbfecc2d3fc50db531fc
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: 23b109ee5c149ecf9015f8c1622e03b20bdf243c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145457"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907342"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -37,20 +37,20 @@ ms.locfileid: "50145457"
 
 
 
-Tabellen i det avancerade schemat för sökning innehåller information om de olika säkra konfigurationerna – till exempel om en enhet har automatiska uppdateringar på – som kontrolleras av `DeviceTvmSecureConfigurationAssessmentKB` [Threat & Vulnerability Management.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) Den innehåller även riskinformation, relaterade branschstandarder och tillämpliga MITRE ATT&CK-tekniker och taktiker. Använd den här referensen för att skapa frågor som returnerar information från tabellen.
+Tabellen i det avancerade sökschemat innehåller information om olika säkra konfigurationer – till exempel om en enhet har automatiska uppdateringar på – som kontrolleras av `DeviceTvmSecureConfigurationAssessmentKB` [Threat & Vulnerability Management.](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) Den innehåller även riskinformation, relaterade branschstandarder och tillämpliga MITRE ATT-&CK-tekniker och taktiker. Använd den här referensen för att skapa frågor som returnerar information från tabellen.
 
 Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
 | `ConfigurationId` | sträng | Unikt ID för en viss konfiguration |
-| `ConfigurationImpact` | sträng | Klassificerad inverkan på konfigurationen till det övergripande konfigurationsresultatet (1–10) |
+| `ConfigurationImpact` | sträng | Klassificerad inverkan av konfigurationen på det övergripande konfigurationsresultatet (1–10) |
 | `ConfigurationName` | sträng | Visningsnamn för konfigurationen |
 | `ConfigurationDescription` | sträng | Beskrivning av konfigurationen |
 | `RiskDescription` | sträng | Beskrivning av den associerade risken |
-| `ConfigurationCategory` | sträng | Kategori eller gruppering som konfigurationen tillhör: Program, OS, nätverk, konton, säkerhetskontroller|
+| `ConfigurationCategory` | sträng | Kategori eller gruppering som konfigurationen tillhör: Program, OS, Nätverk, Konton, Säkerhetskontroller|
 | `ConfigurationSubcategory` | sträng |Underkategori eller undergrupp som konfigurationen tillhör. I många fall beskrivs specifika funktioner. |
-| `ConfigurationBenchmarks` | sträng | Lista över branschstandarder som rekommenderar samma eller liknande konfiguration |
+| `ConfigurationBenchmarks` | sträng | Lista med branschstandarder som rekommenderar samma eller liknande konfiguration |
 | `Tags` | sträng | Etiketter som representerar olika attribut som används för att identifiera eller kategorisera en säkerhetskonfiguration |
 | `RemediationOptions` | sträng | Rekommenderade åtgärder för att minska eller hantera eventuella associerade risker |
 
@@ -62,4 +62,4 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 - [Jaga över olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Använda metodtips för frågor](advanced-hunting-best-practices.md)
-- [Översikt över hot & sårbarhetshantering](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Översikt över hot & sårbarhetshantering](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

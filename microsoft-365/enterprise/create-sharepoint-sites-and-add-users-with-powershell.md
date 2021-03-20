@@ -18,34 +18,34 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Sammanfattning: skapa nya SharePoint Online-webbplatser med hjälp av PowerShell och Lägg sedan till användare och grupper på dessa webbplatser.'
-ms.openlocfilehash: 28a51cc39fe838f6c7f9c50e9d750d28e5d830c4
-ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
+description: Sammanfattning Använd PowerShell för att skapa nya SharePoint Online-webbplatser och sedan lägga till användare och grupper på webbplatserna.
+ms.openlocfilehash: eb6c2817c8760ca222da8a7c2b14cbfcda4eb4b8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "48594924"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907624"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>Skapa SharePoint Online-webbplatser och lägga till användare med PowerShell
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-När du använder PowerShell för Microsoft 365 för att skapa SharePoint Online-webbplatser och lägga till användare kan du snabbt och enkelt utföra uppgifter snabbare än i administrations centret för Microsoft 365. Du kan också utföra uppgifter som inte kan utföras i administrations centret för Microsoft 365. 
+När du använder PowerShell för Microsoft 365 för att skapa SharePoint Online-webbplatser och lägga till användare kan du snabbt och upprepade gånger utföra uppgifter mycket snabbare än vad du kan göra i administrationscentret för Microsoft 365. Du kan också utföra uppgifter som inte är möjliga att utföra i administrationscentret för Microsoft 365. 
 
 ## <a name="connect-to-sharepoint-online"></a>Ansluta till SharePoint Online
 
-Procedurerna i det här avsnittet kräver att du ansluter till SharePoint Online. Anvisningar finns i [ansluta till SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+För procedurerna i det här avsnittet måste du ansluta till SharePoint Online. Anvisningar finns i [Ansluta till SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-## <a name="step-1-create-new-site-collections-using-powershell"></a>Steg 1: skapa nya webbplats samlingar med PowerShell
+## <a name="step-1-create-new-site-collections-using-powershell"></a>Steg 1: Skapa nya webbplatssamlingar med PowerShell
 
-Skapa flera webbplatser med hjälp av PowerShell och en. csv-fil som du skapar med exempel koden som tillhandahålls och anteckningar. För den här proceduren ska du ersätta plats hållaren som visas inom parentes med din egen webbplats-och klient organisations information. Med den här processen kan du skapa en fil och köra ett enda PowerShell-kommando som använder den filen. Detta gör åtgärderna både repeterbara och portabla och eliminerar många, om inte alla, fel som kan komma att skriva långa kommandon till SharePoint Online Management Shell. Det finns två delar till den här proceduren. Först skapar du en CSV-fil och sedan hänvisar du till. csv-filen med PowerShell, som använder dess innehåll för att skapa webbplatserna.
+Skapa flera webbplatser med PowerShell och en CSV-fil som du skapar med exempelkoden som tillhandahålls och Anteckningar. För den här proceduren ersätter du platshållarinformationen som visas inom hakparenteser med din egen webbplats- och klientspecifik information. Med den här processen kan du skapa en enda fil och köra ett enda PowerShell-kommando som använder den filen. Det här gör att åtgärder som vidtas både går att upprepa och ta bort, och tar bort många, om inte alla, fel som kan komma från att skriva långa kommandon i SharePoint Online Management Shell. Den här proceduren har två delar. Först skapar du en CSV-fil och sedan refererar du till den CSV-filen med PowerShell som använder innehållet för att skapa webbplatserna.
 
-PowerShell-cmdleten importerar. csv-filen och rör den till en loop inuti klammerparenteserna som läser den första raden i filen som kolumn rubriker. PowerShell-cmdleten upprepas sedan genom de återstående posterna, skapar en ny webbplats samling för varje post och tilldelar webbplats Samlingens egenskaper enligt kolumn rubrikerna.
+PowerShell-cmdleten importerar CSV-filen och rör den till en slinga inom klammerparenteser som läser den första raden i filen som kolumnrubriker. PowerShell-cmdleten itereras sedan genom de återstående posterna, skapar en ny webbplatssamling för varje post och tilldelar egenskaper för webbplatssamlingen enligt kolumnrubrikerna.
 
-### <a name="create-a-csv-file"></a>Skapa en. csv-fil
+### <a name="create-a-csv-file"></a>Skapa en CSV-fil
 
 > [!NOTE]
-> Parametern resurs kvot fungerar bara på klassiska webbplatser. Om du använder den här parametern på en modern webbplats kan du få ett varnings meddelande om att den har blivit föråldrad. 
+> Resurskvotparametern fungerar bara på klassiska webbplatser. Om du använder den här parametern på en modern webbplats kan du få ett varningsmeddelande om att den har tagits bort. 
 
 1. Öppna Anteckningar och klistra in följande textblock i det:<br/>
 
@@ -56,41 +56,41 @@ owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/Blog01,25,B
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Project01,25,PROJECTSITE#0,10,Project Alpha
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01,25,COMMUNITY#0,10,Community Site
 ```
-<br/>Här är *klient* organisationens namn och *ägare* är användar namnet på den klient organisation som du vill bevilja rollen som primär administratör för webbplats samlingen.<br/>(Du kan trycka på CTRL + H när du använder anteckningar för att snabbt byta ut.)<br/>
+<br/>Där *klientorganisationen* är namnet på  klientorganisationen och ägare är användarnamnet för den användare i klientorganisationen som du vill tilldela rollen som primär administratör för webbplatssamlingen.<br/>(Du kan trycka på Ctrl+H när du använder Anteckningar för att massutbyt snabbare.)<br/>
 
-2. Spara filen på Skriv bordet som **SiteCollections.csv**.<br/>
+2. Spara filen på skrivbordet som **SiteCollections.csv**.<br/>
 
 > [!TIP]
-> Innan du använder den här eller någon annan. csv-eller Windows PowerShell-skriptfil är det lämpligt att kontrol lera att det inte finns några främmande eller icke utskrivbara tecken. Öppna filen i Word och klicka på stycke ikonen i menyfliksområdet för att visa icke utskrivbara tecken. Det får inte finnas specialtecken som inte skrivs ut. Det får till exempel inte finnas några stycke tecken utöver den sista längst ned i filen.
+> Innan du använder den här eller någon annan .csv- eller Windows PowerShell-skriptfil är det bra att kontrollera att det inte finns några extra eller icke utskrivbara tecken. Öppna filen i Word och klicka på styckeikonen i menyfliksområdet för att visa icke utskrivbara tecken. Det ska inte finnas några extra icke utskrivbara tecken. Det ska till exempel inte finnas några stycketecken utöver den sista i slutet av filen.
 
-### <a name="run-the-windows-powershell-command"></a>Köra kommandot Windows PowerShell
+### <a name="run-the-windows-powershell-command"></a>Kör Windows PowerShell-kommandot
 
-1. Skriv eller kopiera och klistra in följande kommando i Windows PowerShell-uppmaningen och tryck på RETUR:<br/>
+1. I Windows PowerShell-kommandotolken skriver du eller kopierar och klistrar in följande kommando och trycker på Retur:<br/>
 ```powershell
 Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SPOSite -Owner $_.Owner -StorageQuota $_.StorageQuota -Url $_.Url -NoWait -ResourceQuota $_.ResourceQuota -Template $_.Template -TimeZoneID $_.TimeZoneID -Title $_.Name}
 ```
-<br/>Där *Kantutjämna* är lika med ditt användar namn.<br/>
+<br/>Där *MyAlias* är lika med ditt användaralias.<br/>
 
-2. Vänta tills Windows PowerShell-uppmaningen visas igen. Det kan ta ett par minuter.<br/>
+2. Vänta tills Windows PowerShell-kommandot visas igen. Det kan ta några minuter.<br/>
 
-3. Skriv eller kopiera och klistra in följande cmdlet vid Windows PowerShell-uppmaningen och tryck på RETUR:<br/>
+3. Skriv eller kopiera och klistra in följande cmdlet i kommandotolken för Windows PowerShell och tryck på Retur:<br/>
 
 ```powershell
 Get-SPOSite -Detailed | Format-Table -AutoSize
 ```
 <br/>
 
-4. Observera de nya webbplats samlingarna i listan. Med exempel filen CSV kan du se följande webbplats samlingar: **TeamSite01**, **Blog01**, **Project01**och **Community01**
+4. Observera de nya webbplatssamlingarna i listan. Med vår CSV-exempelfil ser du följande webbplatssamlingar: **TeamSite01,** **Blog01,** **Project01** och **Community01**
 
-Det är det. Du har skapat flera webbplats samlingar med hjälp av CSV-filen som du skapade och ett enda Windows PowerShell-kommando. Nu är du redo att skapa och koppla användare till dessa webbplatser.
+Nu är det allt. Du har skapat flera webbplatssamlingar med csv-filen du skapade och ett enda Windows PowerShell-kommando. Nu är du redo att skapa och tilldela användare till webbplatserna.
 
 ## <a name="step-2-add-users-and-groups"></a>Steg 2: Lägg till användare och grupper
 
-Nu ska du skapa användare och lägga till dem i en webbplats samlings grupp. Sedan använder du en CSV-fil för att ladda upp nya grupper och användare.
+Nu ska du skapa användare och lägga till dem i en webbplatssamlingsgrupp. Sedan använder du en CSV-fil för att massuppladda nya grupper och användare.
 
-Följande procedurer fortsätter att använda exemplen TeamSite01, Blog01, Project01 och Community01.
+Följande procedurer fortsätter att använda exempelwebbplatserna TeamSite01, Blog01, Project01 och Community01.
 
-### <a name="create-csv-and-ps1-files"></a>Skapa. csv-och. ps1-filer
+### <a name="create-csv-and-ps1-files"></a>Skapa CSV- och PS1-filer
 
 1. Öppna Anteckningar och klistra in följande textblock i det:<br/>
 
@@ -105,11 +105,11 @@ https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Designers,Design
 https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Editors,Edit
 https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Control
 ```
-<br/>Där *klient* organisationen är lika med klient organisationens namn.<br/>
+<br/>Där *klientorganisationen* är lika med ditt klientnamn.<br/>
 
-2. Spara filen på Skriv bordet som **GroupsAndPermissions.csv**.<br/>
+2. Spara filen på skrivbordet som **GroupsAndPermissions.csv**.<br/>
 
-3. Öppna en ny instans av anteckningar och klistra in följande textblock i det:<br/>
+3. Öppna en ny instans av Anteckningar och klistra in följande textblock i den:<br/>
 
 ```powershell
 Group,LoginName,Site
@@ -122,47 +122,47 @@ Contoso Blog Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint
 Contoso Blog Editors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Blog01
 Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Project01
 ```
-<br/>Där *klient* organisationen är lika med klient namnet och *användar* namnet är lika med användarens namn för en befintlig användare.<br/>
+<br/>Där *klientorganisationen* är lika med ditt *klientnamn och användarnamn* är lika med namnet på en befintlig användare.<br/>
 
-4. Spara filen på Skriv bordet som **Users.csv**.<br/>
+4. Spara filen på skrivbordet som **Users.csv**.<br/>
 
-5. Öppna en ny instans av anteckningar och klistra in följande textblock i det:<br/>
+5. Öppna en ny instans av Anteckningar och klistra in följande textblock i den:<br/>
 
 ```powershell
 Import-Csv C:\users\MyAlias\desktop\GroupsAndPermissions.csv | ForEach-Object {New-SPOSiteGroup -Group $_.Group -PermissionLevels $_.PermissionLevels -Site $_.Site}
 Import-Csv C:\users\MyAlias\desktop\Users.csv | where {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
 ```
-<br/>Där Kantutjämna är lika med användar namnet på den användare som är inloggad för tillfället.<br/>
+<br/>Där MyAlias är lika med användarnamnet för den användare som är inloggad.<br/>
 
-6. Spara filen på Skriv bordet som **UsersAndGroups.ps1**. Det här är en enkel Windows PowerShell-skript.
+6. Spara filen på skrivbordet som **UsersAndGroups.ps1**. Det här är ett enkelt Windows PowerShell-skript.
 
-Nu är du redo att köra UsersAndGroup.ps1-skript för att lägga till användare och grupper i flera webbplats samlingar.
+Nu kan du köra skriptet UsersAndGroup.ps1 lägga till användare och grupper i flera webbplatssamlingar.
 
 ### <a name="run-usersandgroupsps1-script"></a>Kör UsersAndGroups.ps1 skript
 
-1. Återvänd till SharePoint Online Management Shell.<br/>
-2. Skriv eller kopiera och klistra in följande rad vid Windows PowerShell-uppmaningen och tryck på RETUR:<br/>
+1. Återgå till SharePoint Online Management Shell.<br/>
+2. I windows PowerShell-kommandotolken skriver du eller kopierar och klistrar in följande rad och trycker på Retur:<br/>
 ```powershell
 Set-ExecutionPolicy Bypass
 ```
 <br/>
 
-3. När du uppmanas att bekräfta trycker du på **j**.<br/>
+3. Tryck på Y när du ombeds **bekräfta.**<br/>
 
-4. Skriv eller kopiera och klistra in följande i Windows PowerShell-uppmaningen och tryck på RETUR:<br/>
+4. I windows PowerShell-kommandotolken skriver eller kopierar och klistrar du in följande och trycker på Retur:<br/>
 
 ```powershell
 c:\users\MyAlias\desktop\UsersAndGroups.ps1
 ```
-<br/>Där *Kantutjämna* är lika med ditt användar namn.<br/>
+<br/>Där *MyAlias* är lika med ditt användarnamn.<br/>
 
-5. Vänta tills uppmaningen återgår innan du fortsätter. Du ser först grupperna när de skapas. Då visas grupp listan upprepade gånger när användarna läggs till.
+5. Vänta tills du får frågan att återgå innan du fortsätter. Du ser först hur grupperna visas när de skapas. Sedan kommer du att se grupplistan upprepad när användare läggs till.
 
 ## <a name="see-also"></a>Se även
 
-[Ansluta till SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[Ansluta till SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[Hantera webbplats grupper för SharePoint Online med PowerShell](manage-sharepoint-site-groups-with-powershell.md)
+[Hantera SharePoint Online-webbplatsgrupper med PowerShell](manage-sharepoint-site-groups-with-powershell.md)
 
 [Hantera Microsoft 365 med PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   

@@ -16,12 +16,12 @@ ms.collection:
 description: Säkerhet i Office 365, från EOP till Defender för Office 365 abonnemang 1 och 2, Standard jämfört med strikt säkerhetskonfigurationer med mera. Förstå vad du har och hur du skyddar dina egenskaper.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e1c6e768098cd59892c2572fb52497c873aef1a3
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
-ms.translationtype: HT
+ms.openlocfilehash: f8e929fde2908ba0d436c71c2caeb1be94b1338f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50711946"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907186"
 ---
 # <a name="office-365-security-overview"></a>Översikt för Office 365 säkerhet
 
@@ -137,7 +137,7 @@ Den här snabbreferensen hjälper dig att förstå vilka funktioner som ingår i
 
 - Microsoft Defender för Office 365 Abonnemang 1 ingår i Microsoft 365 Business Premium.
 
-- Microsoft Defender för Office 365, Abonnemang 1 och Defender för Office 365 Abonnemang 2 är tillgängliga som ett tillägg för vissa abonnemang. Läs mer i [Funktionstillgänglighet för Microsoft Defender för Office 365-abonnemang](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+- Microsoft Defender för Office 365, Abonnemang 1 och Defender för Office 365 Abonnemang 2 är tillgängliga som ett tillägg för vissa abonnemang. Läs mer i [Funktionstillgänglighet för Microsoft Defender för Office 365-abonnemang](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
 - Funktionen [Säkra dokument](safe-docs.md) är bara tillgänglig för användare med Microsoft 365 E5- eller Microsoft 365 E5 Säkerhet-licenser (inte inkluderad i Microsoft Defender för Office 365-abonnemang).
 

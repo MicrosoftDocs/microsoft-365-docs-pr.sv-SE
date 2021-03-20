@@ -1,5 +1,5 @@
 ---
-title: Planera organisation och livscykler för Microsoft 365-grupper och Microsoft Teams
+title: Planera styrning av organisation och livscykel för Microsoft 365-grupper och Microsoft Teams
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,69 +14,69 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Lean-alternativ för hantering av livs cykeln för samarbets verktyg i Microsoft 365
-ms.openlocfilehash: 4d779701d241fc7178ab759063be1b8cdf2e960c
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+description: Mer information om alternativ för livscykelstyrning för samarbetsverktyg i Microsoft 365
+ms.openlocfilehash: ff3a3a60ce49c423410b51dc6fee2137ebf8952a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613026"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907934"
 ---
-# <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Planera organisation och livscykler för Microsoft 365-grupper och Microsoft Teams
+# <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Planera styrning av organisation och livscykel för Microsoft 365-grupper och Microsoft Teams
 
-Microsoft 365-grupper har många verktyg för att implementera de styrnings funktioner som din organisation behöver. 
+Microsoft 365-grupper har en omfattande uppsättning verktyg för att implementera de hanteringsfunktioner som din organisation kräver. 
 
-I följande avsnitt beskrivs funktionerna, rekommenderar de bästa metoderna och ger vägledning för att ställa rätt frågor för att fastställa kraven för styrning och hur de ska mötas.
+I följande avsnitt beskrivs funktionerna, rekommendationerna för metodtips och vägledning för att ställa rätt frågor för att avgöra kraven för styrning och hur du uppfyller dem.
 
-## <a name="control-who-can-create-microsoft-365-groups"></a>Kontrol lera vilka som kan skapa Microsoft 365-grupper
+## <a name="control-who-can-create-microsoft-365-groups"></a>Styra vilka som kan skapa Microsoft 365-grupper
 
-Grupper kan skapas av slutanvändare från flera slut punkter inklusive Outlook, SharePoint, team och andra miljöer.
+Grupper kan skapas av slutanvändare från flera ändpunkter, inklusive Outlook, SharePoint, Teams och andra miljöer.
 
-![bild DESC](../media/04.png)
+![image desc](../media/04.png)
 
-Vi rekommenderar starkt att du använder sig själv för att stärka grupp ägarna och hjälpa användare att få jobbet gjort lättare. Om du begränsar grupp-och grupp skapande kan användarna bli långsamma eftersom många Microsoft 365-tjänster kräver att grupper skapas för att tjänsten ska fungera.
+Vi rekommenderar självbetjäning för att ge gruppägare möjlighet och hjälpa användarna att få jobbet gjort enklare. Att begränsa skapandet av grupper och team kan leda till långsammare produktivitet för användare eftersom många Microsoft 365-tjänster kräver att grupper skapas för att tjänsten ska fungera.
 
-Överväg följande styr alternativ för att skapa grupper:
+Tänk på följande styrningsalternativ för att skapa grupper:
 
-- Om du vill begränsa grupp sprawl kan du använda [grupper för förfallo principer](microsoft-365-groups-expiration-policy.md) för att automatiskt ta bort grupper som inte används.
-- Begränsa grupp skapande till medlemmar i en [säkerhets grupp med dynamiskt medlemskap](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) som innehåller, till exempel, alla heltids anställda.
-- Begränsa grupp skapande till en säkerhets grupp och Kräv att användare ska kunna slutföra utbildning i organisationens principer för grup användning för att bli medlemmar i säkerhets gruppen.
+- Om du vill begränsa gruppsnålning [använder du förfalloprinciper](microsoft-365-groups-expiration-policy.md) för grupper för att automatiskt ta bort grupper som inte används.
+- Begränsa skapandet av grupper till medlemmar [i en säkerhetsgrupp med dynamiskt](/azure/active-directory/users-groups-roles/groups-create-rule) medlemskap, t.ex. alla heltidsanställda.
+- Begränsa skapandet av grupper till en säkerhetsgrupp och kräver att användarna slutför utbildning i organisationens principer för gruppanvändning för att bli medlemmar i säkerhetsgruppen.
 
-Om du vill begränsa vem som kan skapa grupper läser du [Hantera vilka som kan skapa Microsoft 365-grupper](manage-creation-of-groups.md) för information om hur du konfigurerar detta.
+Om du vill begränsa vem som kan skapa grupper kan du gå till Hantera vem som kan skapa [Microsoft 365-grupper](manage-creation-of-groups.md) för information om hur du konfigurerar detta.
 
-## <a name="group-delete-restore-and-archiving"></a>Grupp borttagning, återställning och arkivering
+## <a name="group-delete-restore-and-archiving"></a>Gruppera borttagning, återställning och arkivering
 
-När en Microsoft 365-grupp tas bort sparas den som standard i 30 dagar. Den här 30-dagarsperioden kallas "mjuk borttagning" eftersom du fortfarande kan återställa gruppen. Efter 30 dagar tas gruppen och det tillhörande innehållet bort permanent och kan inte återställas.
+När en Microsoft 365-grupp tas bort behålls den som standard i 30 dagar. Den här 30-dagarsperioden kallas "mjuk borttagning" eftersom du fortfarande kan återställa gruppen. Efter 30 dagar tas gruppen och det tillhörande innehållet bort permanent och kan inte återställas.
 
-Om du har bevarande principer för att behålla chatt, filer eller e-post bevaras dessa objekt efter att gruppen har tagits bort. Läs [mer om bevarande principer](https://docs.microsoft.com/microsoft-365/compliance/retention-policies) .
+Om du har kvarhållningsprinciper för att behålla chatt, filer eller e-post, bevaras de objekten när gruppen har tagits bort. Mer [information finns i Läs mer om](../compliance/retention.md) bevarandeprinciper.
 
-Om du vill ta bort en grupp men behålla innehållet från en eller flera av de gruppanslutna tjänsterna läser du [arkivera grupper, team och Yammer](end-life-cycle-groups-teams-sites-yammer.md) efter information.
+Information om hur du tar bort en grupp men bevarar innehållet från en eller flera av de gruppanslutna tjänsterna finns i Arkivera grupper, grupper och [Yammer.](end-life-cycle-groups-teams-sites-yammer.md)
 
-## <a name="group-naming-policy"></a>Namn princip för grupper
+## <a name="group-naming-policy"></a>Gruppnamnprincip
 
-En namn princip för grupper kan hjälpa dig att styra grupper på två sätt:
+Med namngivningsprincipen för grupper kan du styra grupperna på två sätt:
 
-- En princip för prefix/namnsuffix kan användas för att tvinga fasta strängar eller Azure AD-attribut i början eller slutet av ett grupp namn och dess associerade e-postadress. Genom att göra detta kan du se till exempel avdelnings namn eller områden i grupp namn.
-- En princip för blockerade ord kan säkerställa att vissa ord, till exempel namn på chefer, inte används i grupp namn.
+- En prefix-/suffixnamnsprincip kan användas för att framtvinga fasta strängar eller Azure AD-attribut i början eller slutet av ett gruppnamn och dess tillhörande e-postadress. På så sätt kan du säkerställa att exempelvis avdelningsnamn eller regioner i gruppnamn tas med.
+- En princip för blockerade ord kan säkerställa att vissa ord, till exempel namnen på chefer, inte används i gruppnamn.
 
-Namngivnings principer tillämpas när grupper skapas från någon av de gruppanslutna tjänsterna.
+Namnprinciper tillämpas när grupper skapas från någon av de gruppanslutna tjänsterna.
 
-Om du bestämmer dig för att använda namngivnings principer för grupper kan du läsa mer i [Microsoft 365 grupper för namngivnings principer](groups-naming-policy.md).
+Information om hur du använder namnprinciper för grupper finns i Namngivningsprinciper för [Microsoft 365 Grupper.](groups-naming-policy.md)
 
-## <a name="group-expiration-policy"></a>Policy för giltighets tid för grupp
+## <a name="group-expiration-policy"></a>Förfalloprincip för grupp
 
-Du kan ange en förfallo period och alla grupper som når slutet av perioden och som inte förnyas, tas bort. Utgångs perioden börjar när gruppen skapas, eller vid det datum då den senast förnyades.
+Du kan ange en förfalloperiod så tas alla grupper som når slutet av perioden bort, och som inte förnyas. Förfallotiden börjar när gruppen skapas eller det datum då den senast förnyades.
 
-När du har ställt in grupper som förfaller:
-- Ägarna till gruppen meddelas om att förnya gruppen efter att ha gått ut nära.
+När du ställer in grupper så att de upphör att gälla:
+- Ägare av gruppen meddelas att förnya gruppen när utgångsdatumet närmar sig.
 - Aktiva grupper förnyas automatiskt.
-- Alla grupper som inte är förnyade raderas.
-- Alla grupper som tas bort kan återställas inom 30 dagar av grupp ägarna eller administratören.
+- Alla grupper som inte har förnyats tas bort.
+- Alla grupper som tas bort kan återställas inom 30 dagar av gruppägarna eller administratören.
 
-Principer för förfallo dag är ett bra sätt att begränsa gruppens sprawl genom att se till att grupper som inte längre används tas bort. Om du vill skapa en giltighets princip för en grupp kan du läsa [Microsoft 365-gruppens förfallo princip](microsoft-365-groups-expiration-policy.md).
+Förfalloprinciper är ett bra sätt att begränsa gruppsnålning genom att se till att grupper som inte längre används tas bort. Information om hur du skapar en förfalloprincip för grupper finns i Förfalloprincip [för Microsoft 365-grupper.](microsoft-365-groups-expiration-policy.md)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Planerings steg-för-steg-samarbete för samarbets styrning](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Planering av samarbetsstyrning steg för steg](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[Skapa en plan för hantering av samarbete](collaboration-governance-first.md)
+[Skapa din plan för samarbetesstyrning](collaboration-governance-first.md)

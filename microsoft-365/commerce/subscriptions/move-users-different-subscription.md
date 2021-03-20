@@ -20,27 +20,27 @@ search.appverid:
 - MET150
 description: Lär dig hur du flyttar användare mellan prenumerationer.
 ms.date: 07/01/2020
-ms.openlocfilehash: ec9385d10cc1799509c6f1d2fa88059eecf3bd8c
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 7eb07bda4fd1a558a8126f11ef3a1fbc4ceb0389
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114675"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907886"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Flytta användare till en annan prenumeration
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
-Om du har fler än en prenumeration har du användare med en licens för en prenumeration, men vill flytta dem till en annan prenumeration, kan du ersätta deras befintliga licens med en annan.
+Om du har fler än en prenumeration har användare med en licens för en prenumeration, men vill flytta dem till en annan prenumeration, kan du ersätta deras befintliga licens med en annan licens.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-Du måste vara global-, licens- eller användaradministratör för att tilldela licenser. Mer information finns i [Om Microsoft 365-administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+Du måste vara global-, licens- eller användaradministratör för att tilldela licenser. Mer information finns i [Om Microsoft 365-administratörsroller](../../admin/add-users/about-admin-roles.md?view=o365-worldwide).
 
 ## <a name="move-users-to-a-different-subscription"></a>Flytta användare till en annan prenumeration
 
@@ -50,7 +50,7 @@ Du måste vara global-, licens- eller användaradministratör för att tilldela 
 2. Markera cirklarna bredvid namnen på de användare som du vill ersätta befintliga licenser för.
 3. Välj **Fler alternativ (...)** högst upp och välj sedan **Hantera produktlicenser**.
 4. I fönstret **Hantera produktlicenser** väljer du **Ersätt befintliga produktlicenstilldelningar** \> **Nästa**.
-5. Ställ reglaget **i** läget På för de licenser som du vill tilldela dessa användare.\
+5. Ställ reglaget i läget **På** för de licenser som du vill tilldela dessa användare.\
     Du kan begränsa vilka tjänster som är tillgängliga för användarna. Ställ reglagen i läget **Av** för de tjänster som du inte vill att användarna ska ha. Alla tidigare tilldelade licenser för de markerade användarna tas bort.
 6. Längst ned i fönstret **Ersätt befintliga produkter** väljer du **Ersätt** \> **Stäng**.
 
@@ -62,7 +62,7 @@ Du måste vara global-, licens- eller användaradministratör för att tilldela 
 2. Markera kryssrutorna bredvid namnen på de användare som du vill ersätta befintliga licenser för.
 3. I fönstret **Massåtgärder** väljer du **Redigera produktlicenser**.
 4. I fönstret **Tilldela produkter** väljer du **Ersätt befintliga produktlicenstilldelningar** \> **Nästa**.
-5. Ställ reglaget **i** läget På för de licenser som du vill tilldela dessa användare.\
+5. Ställ reglaget i läget **På** för de licenser som du vill tilldela dessa användare.\
     Du kan begränsa vilka tjänster som är tillgängliga för användarna. Ställ reglagen i läget **Av** för de tjänster som du inte vill att användarna ska ha. Alla tidigare tilldelade licenser för de markerade användarna tas bort.
 6. Längst ned i fönstret **Ersätt befintliga produkter** väljer du **Ersätt** \> **Stäng** \> **Stäng**.
 
@@ -74,7 +74,7 @@ Du måste vara global-, licens- eller användaradministratör för att tilldela 
 2. Markera kryssrutorna bredvid namnen på de användare som du vill ersätta befintliga licenser för.
 3. I fönstret **Massåtgärder** väljer du **Redigera produktlicenser**.
 4. I fönstret **Tilldela produkter** väljer du **Ersätt befintliga produktlicenstilldelningar** \> **Nästa**.
-5. Ställ reglaget **i** läget På för de licenser som du vill tilldela dessa användare.\
+5. Ställ reglaget i läget **På** för de licenser som du vill tilldela dessa användare.\
     Du kan begränsa vilka tjänster som är tillgängliga för användarna. Ställ reglagen i läget **Av** för de tjänster som du inte vill att användarna ska ha. Alla tidigare tilldelade licenser för de markerade användarna tas bort.
 6. Längst ned i fönstret **Ersätt befintliga produkter** väljer du **Ersätt** \> **Stäng** \> **Stäng**.
 
@@ -82,12 +82,12 @@ Du måste vara global-, licens- eller användaradministratör för att tilldela 
 
 ## <a name="next-steps"></a>Nästa steg
 
-Om du inte tänker [](../../managed-desktop/get-started/assign-licenses.md)tilldela de oanvända licenserna [](../../commerce/licenses/buy-licenses.md) till andra användare kan du ta bort licenserna från prenumerationen så att du inte betalar för fler licenser än vad du behöver.
+Om du inte tänker [](../../managed-desktop/get-started/assign-licenses.md)omtilldela de oanvända [](../../commerce/licenses/buy-licenses.md) licenserna till andra användare bör du ta bort licenserna från prenumerationen så att du inte betalar för fler licenser än vad som behövs.
 
 ## <a name="related-content"></a>Relaterat innehåll
 
 [Tilldela licenser till användare](../../admin/manage/assign-licenses-to-users.md) (artikel)\
-[Ta bort licenser från prenumerationen](../../commerce/licenses/remove-licenses-from-subscription.md) (artikel)\
+[Ta bort licenser från din prenumeration](../licenses/buy-licenses.md) (artikel)\
 [Ändra abonnemang manuellt](change-plans-manually.md) (artikel)\
 [Förstå prenumerationer och licenser i Microsoft 365 för företag](../licenses/subscriptions-and-licenses.md) (artikel)\
-[Köpa en annan Microsoft 365 för företag-prenumeration](../buy-another-subscription.md) (artikel)
+[Köpa en annan Microsoft 365 för företag-prenumeration](../try-or-buy-microsoft-365.md) (artikel)

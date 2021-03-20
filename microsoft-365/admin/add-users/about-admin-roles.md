@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Administratörsroller mappar till affärsfunktioner och ger behörighet att utföra särskilda uppgifter i administrationscentret. Tjänsteadministratören kan till exempel öppna supportbiljetter via administratörscentret.
-ms.openlocfilehash: ddea8a06af2b529a369ea045913b639b84c6f9d4
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: cf628ffd05cb7f5d94c932d48bd4e8ae35a47db9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49867988"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906378"
 ---
 # <a name="about-admin-roles"></a>Om administratörsroller
 
@@ -37,9 +37,9 @@ I Administrationscenter för Microsoft 365 kan du hantera Azure Active Directory
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-Vill du ha en komplett lista över detaljerade Azure AD-rollbeskrivningar som du kan hantera i administrations centret för Microsoft 365? Ta en titt på Administratörens rollbehörigheter i Azure Active Directory. [Administratörens rollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Vill du ha en komplett lista över detaljerade Azure AD-rollbeskrivningar som du kan hantera i administrations centret för Microsoft 365? Ta en titt på Administratörens rollbehörigheter i Azure Active Directory. [Administratörens rollbehörigheter i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
-Vill du ha en komplett lista över detaljerade Intune-rollbeskrivningar som du kan hantera i administrations centret för Microsoft 365?  Ta en titt på [Rollbaserad åtkomstkontroll (RBAC) med Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
+Vill du ha en komplett lista över detaljerade Intune-rollbeskrivningar som du kan hantera i administrations centret för Microsoft 365?  Ta en titt på [Rollbaserad åtkomstkontroll (RBAC) med Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
 Mer information om hur du tilldelar roller i Administrationscenter för Microsoft 365 finns i [Tilldela administratörsroller](assign-admin-roles.md).
 
@@ -67,7 +67,7 @@ I Administrationscenter för Microsoft 365 går du till **Roller** och väljer s
 
 ::: moniker-end
 
-Du behöver antagligen bara tilldela följande roller i organisationen. Som standard visar vi först de roller som de flesta organisationer använder. Om du inte hittar någon roll går du till slutet av listan och väljer **Visa alla efter kategori**. Om du letar efter detaljerad information, inklusive cmdlets som är kopplade till en roll, kan du läsa [Behörigheter för administratörsroller i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Du behöver antagligen bara tilldela följande roller i organisationen. Som standard visar vi först de roller som de flesta organisationer använder. Om du inte hittar någon roll går du till slutet av listan och väljer **Visa alla efter kategori**. Om du letar efter detaljerad information, inklusive cmdlets som är kopplade till en roll, kan du läsa [Behörigheter för administratörsroller i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 |Administratörsroll     |Vem ska ha tilldelas denna roll?  |
 |---------|---------|
@@ -92,7 +92,7 @@ Ett partnerföretag kan tilldela följande roller:
 
 - **Supportagent** Behörigheter som en supportadministratör.
 
-För att partnerföretaget ska kunna tilldela de här rollerna till användare måste du lägga till partnern som delegerad administratör i kontot. Initiativet till en sådan här process tas av en auktoriserad partner. Partnern skickar ett e-postmeddelande till dig med frågan om du vill ge dem behörighet att fungera som delegerad administratör. Anvisningar finns i [Auktorisera eller ta bort partnerrelationer](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
+För att partnerföretaget ska kunna tilldela de här rollerna till användare måste du lägga till partnern som delegerad administratör i kontot. Initiativet till en sådan här process tas av en auktoriserad partner. Partnern skickar ett e-postmeddelande till dig med frågan om du vill ge dem behörighet att fungera som delegerad administratör. Anvisningar finns i [Auktorisera eller ta bort partnerrelationer](../misc/add-partner.md).
   
 ## <a name="related-articles"></a>Relaterade artiklar
 

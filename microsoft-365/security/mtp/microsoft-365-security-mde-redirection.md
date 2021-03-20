@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 626bc9950512438bfa43e6500adf72940ddcbfec
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: bdad55a98dba868d45ecea383ba379108ee5305a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727571"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906764"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-the-microsoft-365-security-center"></a>Omdirigera konton från Microsoft Defender för Slutpunkt till Säkerhetscenter för Microsoft 365
 
@@ -42,7 +42,7 @@ I enlighet med Microsofts övergripande metod för skydd mot hot med SIEM och ut
 I den här guiden förklaras hur du dirigerar konton till Microsoft 365 säkerhetscenter genom att aktivera automatisk omdirigering från den tidigare Microsoft Defender för Endpoint-portalen (securitycenter.windows.com eller securitycenter.microsoft.com) till Microsoft 365-portalen för säkerhetscenter (security.microsoft.com).
 
 > [!NOTE]
-> Microsoft Defender för slutpunkt i Säkerhetscenter i Microsoft 365 har stöd för att bevilja åtkomst till tjänstleverantörer av hanterade säkerhetstjänster [(MSSP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) på samma sätt som åtkomst beviljas i [Microsoft Defender säkerhetscenter.](https://docs.microsoft.com/microsoft-365/security/mtp/mssp-access)
+> Microsoft Defender för slutpunkt i Säkerhetscenter i Microsoft 365 har stöd för att bevilja åtkomst till tjänstleverantörer av hanterade säkerhetstjänster [(MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) på samma sätt som åtkomst beviljas i [Microsoft Defender säkerhetscenter.](./mssp-access.md)
 
 ## <a name="what-to-expect"></a>Vad du kan förvänta dig
 När automatisk omdirigering har aktiverats dirigeras konton med åtkomst till den tidigare Microsoft Defender för Slutpunktsportalen i securitycenter.windows.com eller securitycenter.microsoft.com automatiskt till Säkerhetscenter-portalen för Microsoft 365 security.microsoft.com.

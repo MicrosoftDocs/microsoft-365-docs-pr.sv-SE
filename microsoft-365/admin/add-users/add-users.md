@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 description: Lär dig hur du lägger till användare och tilldelar licenser till Microsoft 365 samtidigt.
 ms.date: 07/01/2020
-ms.openlocfilehash: 71695c47bbc34a94f0040c37dd0c0bb0ab72fbba
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 3c752bd12c0aeb3806ad7d5d90373aad13730944
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741419"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906306"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Lägga till användare och tilldela licenser samtidigt
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -100,10 +100,10 @@ Du måste vara global-, licens- eller användaradministratör för att tilldela 
 
 Du kan använda någon av följande metoder för att lägga till flera användare samtidigt:
 
-- **Masstillägg av användare med hjälp av ett kalkylblad.** Se [Lägga till flera användare samtidigt](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time).
-- **Automatisera processen att lägga till konton och tilldela licenser.** Se [Skapa användarkonton med Microsoft 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell). Välj det här alternativet om du redan vet hur du använder cmdlets i Windows PowerShell.
-- **Använder du ActiveDirectory?** [Konfigurera katalogsynkronisering för Office 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization). Använd verktyget Azure AD Connect för att kopiera Active Directory-användarkonton (och andra Active Directory-objekt) i Microsoft 365. Synkroniseringen lägger bara till användarkontona. Du behöver tilldela licenser till de synkroniserade användarna för att de ska kunna använda e-post och andra Office-program.
-- **Migrerar du från Exchange?** Se [Olika sätt att migrera flera e-postkonton till Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration). Om du migrerar flera postlådor till Microsoft 365 med hjälp av snabbmigrering, stegvis migrering eller en hybrid Exchange-metod kommer du att lägga till användare automatiskt som en del av migreringen. Migreringen lägger bara till användarkonton. Du behöver tilldela licenser till användarna för att de ska kunna använda e-post och andra Office-program. Om du inte tilldelar en licens till en användare inaktiveras postlådan efter en tidsfrist på 30 dagar. Lär dig hur [tilldelar licenser till användare](../manage/assign-licenses-to-users.md) i administrationscentret för Microsoft 365.
+- **Masstillägg av användare med hjälp av ett kalkylblad.** Se [Lägga till flera användare samtidigt](../../enterprise/add-several-users-at-the-same-time.md).
+- **Automatisera processen att lägga till konton och tilldela licenser.** Se [Skapa användarkonton med Microsoft 365 PowerShell](../../enterprise/create-user-accounts-with-microsoft-365-powershell.md). Välj det här alternativet om du redan vet hur du använder cmdlets i Windows PowerShell.
+- **Använder du ActiveDirectory?** [Konfigurera katalogsynkronisering för Office 365](../../enterprise/set-up-directory-synchronization.md). Använd verktyget Azure AD Connect för att kopiera Active Directory-användarkonton (och andra Active Directory-objekt) i Microsoft 365. Synkroniseringen lägger bara till användarkontona. Du behöver tilldela licenser till de synkroniserade användarna för att de ska kunna använda e-post och andra Office-program.
+- **Migrerar du från Exchange?** Se [Olika sätt att migrera flera e-postkonton till Office 365](/Exchange/mailbox-migration/mailbox-migration). Om du migrerar flera postlådor till Microsoft 365 med hjälp av snabbmigrering, stegvis migrering eller en hybrid Exchange-metod kommer du att lägga till användare automatiskt som en del av migreringen. Migreringen lägger bara till användarkonton. Du behöver tilldela licenser till användarna för att de ska kunna använda e-post och andra Office-program. Om du inte tilldelar en licens till en användare inaktiveras postlådan efter en tidsfrist på 30 dagar. Lär dig hur [tilldelar licenser till användare](../manage/assign-licenses-to-users.md) i administrationscentret för Microsoft 365.
 
 ## <a name="next-steps"></a>Nästa steg
 
@@ -112,7 +112,7 @@ Efter du lagt till en användare får du en avisering från Microsoft via e-post
 ## <a name="related-content"></a>Relaterat innehåll
 
 [Lägga till en ny anställd i Microsoft 365](add-new-employee.md) (artikel)\
-[Lägga till flera användare samtidigt i Microsoft 365 för](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time) (artikel)\
+[Lägga till flera användare samtidigt i Microsoft 365 för](../../enterprise/add-several-users-at-the-same-time.md) (artikel)\
 [Återställa en användare i Microsoft 365](restore-user.md) (artikel)\
 [Tilldela licenser till användare](../manage/assign-licenses-to-users.md) (artikel)\
 [Ta bort en användare från organisationen](delete-a-user.md) (artikel)

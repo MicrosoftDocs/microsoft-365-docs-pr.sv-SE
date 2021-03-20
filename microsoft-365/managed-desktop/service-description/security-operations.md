@@ -1,7 +1,7 @@
 ---
-title: Säkerhets åtgärder på Microsoft Managed Desktop
-description: Tjänster och processer som tillhandahålls av säkerhets åtgärds Center
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+title: Säkerhetsåtgärder i Microsoft Managed Desktop
+description: Tjänster och processer som tillhandahålls av Säkerhetsoperationscenter
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,36 +9,36 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 4464c9c491af11831a3511dab60a472f1584d7f6
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 600755c15ce6da94481ef4d84732991e5006cce1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840348"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908168"
 ---
-# <a name="security-operations-in-microsoft-managed-desktop"></a>Säkerhets åtgärder på Microsoft Managed Desktop
+# <a name="security-operations-in-microsoft-managed-desktop"></a>Säkerhetsåtgärder i Microsoft Managed Desktop
 
-Microsoft Managed Desktop Security Operations Center (SOC) samarbetar med din informations säkerhets personal för att skydda din dator miljö. Vårt team tar emot och svarar på alla säkerhets varningar på hanterade enheter med expert analyser och när så behövs kan vi reagera på säkerhets tillbuds svars aktiviteter. Om du vill ha mer information om hur du arbetar med SOC kan du läsa i dokumentationen till din administratörs Portal.
+Microsoft Managed Desktop Security Operations Center (SOC) samarbetar med din informationssäkerhetspersonal för att hålla din skrivbordsmiljö säker. Vårt team tar emot och svarar på alla säkerhetsvarningar på hanterade enheter med expertanalys och, vid behov, kör vi svarsaktiviteter för säkerhetstillbud. Mer information om hur du arbetar med SOC finns i den dokumentation som finns på administrationsportalen.
 
-SOC erbjuder 24/7/365 täckning från Microsoft heltids anställda med expertis i det aktuella och framväxande hotet liggande, inklusive vanliga angrepp genom program vara, nätverk eller Human adversaries.
+SOC erbjuder 365-24-07-365 täckning från Microsofts heltidsanställda med expertis i det aktuella och nya hotbilden, inklusive vanliga attackmetoder via programvara, nätverk eller mänskliga adversaries.
 
-I SOC finns de här tjänsterna:
-- Snabbt och korrekt svar på identifierade händelser, med analys av data för att identifiera konsekvenserna och bedöma den övergripande risken för en enhet eller din miljö
-- Åtgärder för att hantera och isolera enheter för att skydda din miljö mot kända eller misstänkta problem, minska risken genom att förhindra spridning
-- Kör säkerhets tillbud och säkerställer att kommunikationen med din säkerhets grupp fungerar korrekt
-- Analys och rekommendationer baserat på hot-och sårbarhets data för att identifiera och adressera risker innan de utnyttjas
-- Avancerad jakt på de hanterade enheterna för att identifiera indikatorer och enheter för både kända och potentiella hot
+SOC tillhandahåller följande tjänster:
+- Snabbt och korrekt svar på identifierade händelser, med analys av data för att identifiera påverkan och bedöma den totala risken för en enhet eller din miljö
+- Åtgärder för enhetshantering och avgränsning för att skydda miljön från kända eller misstänkta kompromisser, vilket minskar risken genom att förhindra spridning
+- Driva svarsprocessen för säkerhetstillbud, säkerställa snabb och korrekt kommunikation med din säkerhetsgrupp
+- Analys och rekommendationer baserade på hot och sårbarhetsdata för att identifiera och hantera risker innan de utnyttjas
+- Avancerad sökning på hanterade enheter för att identifiera indikatorer och enheter för både kända och potentiella hot
 
 ## <a name="processes"></a>Processer
 
-- Säkerhets åtgärder i Microsoft hanterad dator är bemannade av Microsoft-anställda i real tid med Microsofts [cyberterrorism försvar](https://www.microsoft.com/msrc/cdoc). 
-- Våra SOC använder de samlade signalerna från hela företaget, både internt och externt, för att skydda dina enheter-även från saker som vi ännu inte har sett på Microsoft Managed Desktop.
-- Microsofts säkerhetslösningar justerar till många Cybersecurity. SOC operationer baseras på nationella institutet för standarder och teknik datorns säkerhets policy för hantering av incident svar (NIST 800-61 R2).
-- Processen gör det möjligt att få en riktigt samlad information och bevis för analys och dokumentation och efter återställning för att bättre skydda din miljö genom de här faserna:
+- Microsoft Managed Desktop Security Operations sköts av heltidsanställda från Microsoft i samarbete med Microsofts [Cyber Defense Operations Center.](https://www.microsoft.com/msrc/cdoc) 
+- Vår SOC använder kollektiva signaler från hela företaget, både internt och externt, för att skydda dina enheter – även från saker som vi ännu inte har sett i Microsoft Managed Desktop.
+- Microsofts säkerhetslösningar är i linje med många standarder för skydd mot cybersäkerhet. SOC-åtgärder baseras på National Institute of Standards and Technology Computer Security Incident Handling Guide (NIST 800-61 r2).
+- Processen möjliggör en korrekt insamling av information och bevis, för analys och dokumentation och efter återställning av insikter på olika sätt att bättre försvara din miljö genom dessa faser:
     - Förberedelse, identifiering och analys
-    - Inne slutning
-    - Utrotning
-    - Uppbörd
-    - Aktivitet efter incident
-- Microsoft-hanterade Skriv bords kunder är berättigade till Microsoft Threat experter-tjänsten. SOC-kontakterna med den här tjänsten för att förstå de komplexa hoten som påverkar din organisation, inklusive aviseringar, potentiellt kompromissade enheter, rotor Saks nätverks anslutning och annan Hot information om pågående avancerade kampanjer för beständiga hot. Mer information finns i [Microsoft Threat experter](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts).
-- SOC för hot-och säkerhets problem för sårbarhet använder vissa av Microsofts tjänster för att hjälpa dig att skydda dig mot hot. SOC använder data från Microsoft Defender för säkerhets Center och från relevanta sårbarhets data källor inom och utanför Microsoft för att upptäcka säkerhets problem och felkonfigurationer och för att tillhandahålla åtgärdade rapporter.
+    - Inneslutning
+    - Enerde
+    - Återställning
+    - Efter incidentaktivitet
+- Microsoft Managed Desktop-kunder är berättigade att registrera sig i tjänsten Microsoft Threat Experts. SOC samarbetar med den här tjänsten för att bättre förstå de komplexa hot som påverkar organisationen, inklusive aviseringsförfrågningar, potentiellt komprometterade enheter, orsaken till en misstänkt nätverksanslutning och andra hotinformation om pågående avancerade fortlöpande hotkampanjer. Mer information finns i [Microsoft Threat Experts](/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts).
+- SOC:s process för hot och sårbarhetshantering använder några av Microsofts tjänster för att informera rekommendationer för din organisation för att skydda mot hot. SOC använder data från Microsoft Defender för Endpoint Security Center och från relevanta sårbarhetsdatakällor inom och utanför Microsoft för att upptäcka svagheter och felkonfigurationer och tillhandahålla åtgärdsbar rapportering.

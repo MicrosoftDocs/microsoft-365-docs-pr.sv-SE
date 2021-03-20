@@ -1,7 +1,7 @@
 ---
 title: Utöka den avancerade söktäckningen med rätt inställningar
-description: Kontrollera granskningsinställningarna på Windows-enheter och andra inställningar för att säkerställa att du får den mest omfattande informationen under avancerad sökning
-keywords: avancerad sökning, incident, pivot, entitet, granskningsinställningar, hantering av användarkonton, hantering av säkerhetsgrupper, hot efter hot, sökning, sökning, fråga, telemetri, Microsoft 365, Microsoft Threat Protection
+description: Kontrollera granskningsinställningarna på Windows-enheter och andra inställningar för att se till att du får den mest omfattande informationen under avancerad sökning
+keywords: avancerad sökning, incident, pivot, entitet, granskningsinställningar, användarkontohantering, hantering av säkerhetsgrupper, hot efter hot, sökning, sökning, fråga, telemetri, Microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9773658bea752175fe7988b9322fb26a9d5b7f05
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 856f61aac8e7297f1b5dfb3aadc46da06cb16289
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929592"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907226"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>Utöka den avancerade söktäckningen med rätt inställningar
 
@@ -35,23 +35,23 @@ ms.locfileid: "49929592"
 **Gäller för:**
 - Microsoft 365 Defender
 
-[Avancerad sökning](advanced-hunting-overview.md) använder data från olika källor, bland annat dina enheter, Office 365-arbetsytor, Azure AD och Microsoft Defender for Identity. För att få så omfattande data som möjligt bör du kontrollera att du har rätt inställningar i motsvarande datakällor.
+[Avancerad sökning](advanced-hunting-overview.md) använder data från olika källor, till exempel dina enheter, Office 365-arbetsytor, Azure AD och Microsoft Defender för identitet. För att få så omfattande data som möjligt bör du kontrollera att du har rätt inställningar i motsvarande datakällor.
 
 ## <a name="advanced-security-auditing-on-windows-devices"></a>Avancerad säkerhetsgranskning på Windows-enheter
 Aktivera de här avancerade granskningsinställningarna för att säkerställa att du får data om aktiviteter på dina enheter, inklusive lokal kontohantering, hantering av lokala säkerhetsgrupper och skapande av tjänster.
 
-| Data | Beskrivning | Schematabell | Konfigurera |
+| Data | Beskrivning | Schematabell | Så här konfigurerar du |
 | --- | --- | --- | --- |
-| Kontohantering | Händelser som anges av olika `ActionType` värden som anger när ett lokalt konto skapas, tas bort och andra kontorelaterade aktiviteter | [DeviceEvents](advanced-hunting-deviceevents-table.md) | – Distribuera en avancerad säkerhetsgranskningsprincip: [Granskning av användarkontohantering](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-user-account-management)<br> - [Läs mer om avancerade principer för säkerhetsgranskning](https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing) |
-| Hantering av säkerhetsgrupper | Händelser som anges av olika `ActionType` värden som anger att lokala säkerhetsgrupper skapas och andra aktiviteter för lokal grupphantering | [DeviceEvents](advanced-hunting-deviceevents-table.md) | – Distribuera en avancerad princip för säkerhetsgranskning: [Granskning av grupphantering för säkerhetsgrupper](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-security-group-management)<br> - [Läs mer om avancerade principer för säkerhetsgranskning](https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing) |
-| Tjänstinstallation | Händelser som skapats med `ActionType` `ServiceInstalled` värdet, som anger att en tjänst har skapats | [DeviceEvents](advanced-hunting-deviceevents-table.md) | – Distribuera en avancerad princip för säkerhetsgranskning: [Tillägg för granskningssäkerhetssystem](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-security-system-extension)<br> - [Läs mer om avancerade principer för säkerhetsgranskning](https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing) |
+| Kontohantering | Händelser som skapats med olika `ActionType` värden som anger när ett lokalt konto skapas, tas bort och andra kontorelaterade aktiviteter | [DeviceEvents](advanced-hunting-deviceevents-table.md) | – Distribuera en princip för avancerad säkerhetsgranskning: [Hantera användarkonton](/windows/security/threat-protection/auditing/audit-user-account-management)<br> - [Läs mer om avancerade principer för säkerhetsgranskning](/windows/security/threat-protection/auditing/advanced-security-auditing) |
+| Hantering av säkerhetsgrupper | Händelser som fångas som olika `ActionType` värden som anger att lokala säkerhetsgrupper skapas och andra aktiviteter för lokal grupphantering | [DeviceEvents](advanced-hunting-deviceevents-table.md) | - Distribuera en princip för avancerad säkerhetsgranskning: [Granskning av grupphantering för säkerhetsgrupper](/windows/security/threat-protection/auditing/audit-security-group-management)<br> - [Läs mer om avancerade principer för säkerhetsgranskning](/windows/security/threat-protection/auditing/advanced-security-auditing) |
+| Tjänstinstallation | Händelser som fångats `ActionType` med värdet , som anger att en tjänst har `ServiceInstalled` skapats | [DeviceEvents](advanced-hunting-deviceevents-table.md) | - Distribuera en princip för avancerad säkerhetsgranskning: [Granskningssäkerhetssystemtillägg](/windows/security/threat-protection/auditing/audit-security-system-extension)<br> - [Läs mer om avancerade principer för säkerhetsgranskning](/windows/security/threat-protection/auditing/advanced-security-auditing) |
 
 ## <a name="microsoft-defender-for-identity-sensor-on-the-domain-controller"></a>Microsoft Defender för identitets sensor på domänkontrollanten
-Om du kör Active Directory lokalt måste du installera Microsoft Defender för identitets sensor på domänkontrollanten för att få data för Microsoft Defender för identitet. När de är installerade och korrekt konfigurerade matas dessa data även in på avancerad sökning via Microsoft Defender för identitet och ger en mer detaljerad bild av identitetsinformation och händelser i nätverket. Dessa data förbättrar också Möjligheten för Microsoft Defender för identitet att generera relevanta aviseringar som även omfattas av avancerad sökning. 
+Om du kör Active Directory lokalt måste du installera Microsoft Defender för identitets sensor på domänkontrollanten för att hämta data för Microsoft Defender för identitet. När dessa data är installerade och korrekt konfigurerade hittar du också avancerad sökning via Microsoft Defender för identitet och ger en mer detaljerad bild av identitetsinformation och händelser i nätverket. Dessa data förbättrar också möjligheten för Microsoft Defender för identitet att generera relevanta aviseringar som även omfattas av avancerad sökning. 
 
-| Data | Beskrivning | Schematabell | Konfigurera |
+| Data | Beskrivning | Schematabell | Så här konfigurerar du |
 | --- | --- | --- | --- |
-| Domänkontrollant | Data från lokalt Active Directory som skickas till Microsoft Defender för identitet och som innehåller identitetsrelaterad information, till exempel kontoinformation, inloggningsaktivitet och Active Directory-frågor | Flera tabeller, till [exempel IdentityInfo,](advanced-hunting-identityinfo-table.md) [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)och [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Installera Microsoft Defender för identitets sensor](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step4)<br>- [Aktivera relevanta Windows-händelser](https://docs.microsoft.com/azure-advanced-threat-protection/configure-event-collection) |
+| Domänkontrollant | Data från lokalt Active Directory som skickas till Microsoft Defender för identitet, och identifiering av identitetsrelaterad information, till exempel kontoinformation, inloggningsaktivitet och Active Directory-frågor | Flera tabeller, inklusive [IdentityInfo,](advanced-hunting-identityinfo-table.md) [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)och [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Installera Microsoft Defender för identitets sensor](/azure-advanced-threat-protection/install-atp-step4)<br>- [Aktivera relevanta Windows-händelser](/azure-advanced-threat-protection/configure-event-collection) |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

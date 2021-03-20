@@ -1,7 +1,7 @@
 ---
-title: DeviceTvmSoftwareVulnerabilitiesKB-tabellen i det avancerade sökschemat
-description: Lär dig mer om säkerhetsproblem i programvaran som spåras & sårbarhetshantering i tabellen DeviceTvmSoftwareVulnerabilitiesKB i det avancerade utbildningsschemat.
-keywords: avancerad sökning, hotsökning, cyberhot, skydd mot cyberhot, microsoft 365, mtp, m365, sökning, fråga, telemetri, schema, referens, kusto, tabell, kolumn, datatyp, beskrivning, hot & sårbarhetshantering, TVM, enhetshantering, programvara, lager, svagheter, CVE-ID, CVSS, DeviceTvmSoftwareVulnerabilitiesKB
+title: DeviceTvmSoftwareVulnerabilitiesKB-tabellen i den avancerade sökschemat
+description: Läs mer om säkerhetsproblem i programvaran som spåras av Threat & Vulnerability Management i tabellen DeviceTvmSoftwareVulnerabilitiesKB i det avancerade sökschemat.
+keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema, reference, kusto, table, column, datatyp, description, threat & vulnerability management, TVM, device management, software, inventory, vulnerabilities, CVE ID, CVSS, DeviceTvmSoftwareVulnerabilitiesKB
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 00474ac13f88cd9a00ea2ba4a53a6e30ddd664c4
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 4b7447bce3d1859f71cd1f3f7ea100b9978641c8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931056"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907246"
 ---
 # <a name="devicetvmsoftwarevulnerabilitieskb"></a>DeviceTvmSoftwareVulnerabilitiesKB
 
@@ -37,19 +37,19 @@ ms.locfileid: "49931056"
 
 
 
-Tabellen `DeviceTvmSoftwareVulnerabilitiesKB` i det avancerade schemat för sökning innehåller listan över säkerhetsproblem som [& sårbarhetshantering](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) bedömer enheter för. Använd den här referensen för att skapa frågor som returnerar information från tabellen.
+Tabellen `DeviceTvmSoftwareVulnerabilitiesKB` i det avancerade schemat för sökning innehåller listan över säkerhetsproblem som [& sårbarhetshantering](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) bedömer enheter för. Använd den här referensen för att skapa frågor som returnerar information från tabellen.
 
 Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
-| `CveId` | sträng | Unik identifierare som tilldelats säkerhetsproblemet under systemet för vanliga säkerhetsproblem och exponeringar (CVE) |
-| `CvssScore` | sträng | Allvarlighetspoäng som tilldelats säkerhetsproblemet under CVSS (Common Vulnerability Risk System) |
-| `IsExploitAvailable` | boolesk | Anger om sårbarhetskod för problemet är allmänt tillgänglig |
+| `CveId` | sträng | Unik identifierare som tilldelats säkerhetshålet under systemet för vanliga säkerhetsproblem och exponeringar (CVE) |
+| `CvssScore` | sträng | Allvarlighetspoäng som tilldelats säkerhetsrisken under th Common Vulnerability Score System (CVSS) |
+| `IsExploitAvailable` | boolesk | Anger om sårbarhetskod för problemet är offentligt tillgänglig |
 | `VulnerabilitySeverityLevel` | sträng | Allvarlighetsnivå tilldelad till säkerhetsrisken baserat på CVSS-poäng och dynamiska faktorer påverkas av hotbilden |
 | `LastModifiedTime` | datetime | Datum och tid då objektet eller relaterade metadata senast ändrades |
 | `PublishedDate` | datetime | Date vulnerability was disclosed to public |
-| `VulnerabilityDescription` | sträng | Beskrivning av problemet och associerade risker |
+| `VulnerabilityDescription` | sträng | Beskrivning av sårbarhet och associerade risker |
 | `AffectedSoftware` | sträng | Lista över alla programvaruprodukter som påverkas av problemet |
 
 ## <a name="related-topics"></a>Relaterade ämnen
@@ -60,4 +60,4 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 - [Jaga över olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Använda metodtips för frågor](advanced-hunting-best-practices.md)
-- [Översikt över hot & sårbarhetshantering](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Översikt över hot & sårbarhetshantering](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

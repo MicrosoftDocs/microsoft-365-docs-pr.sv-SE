@@ -19,12 +19,12 @@ description: 'Sammanfattning: skapa utvärderingsversioner av Office 365 och Ent
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e600b3baf012d416a7b5de974b94111bb6cf90a2
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 54d2543313c1a031974876d7fd09b453cc2ec24d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287455"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906546"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Konfigurera grupper och användare i en utvecklings-/testmiljö för en politisk kampanj
 
@@ -214,4 +214,4 @@ Skapa fyra olika typer av SharePoint Online-gruppwebbplatser i den här utveckli
 
 [TLG (Test Lab Guides) för integrering med molntjänster](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
-[Integrering av moln- och hybridlösningar](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[Integrering av moln- och hybridlösningar](/office365/enterprise/cloud-adoption-and-hybrid-solutions)

@@ -1,9 +1,10 @@
 ---
 title: Information och resultat från en automatiserad undersökning
-description: Du kan visa resultaten och viktiga resultat under och efter en automatiserad undersökning
-keywords: automatisera, undersöka, resultat, analysera, information, åtgärd, autoair
+description: Du kan visa resultaten och nyckelresultaten under och efter en automatiserad undersökning
+keywords: automatiserat, undersöka, resultat, analysera, information, åtgärd, autoair
 search.appverid: met150
 ms.prod: m365-security
+ms.technology: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,74 +21,90 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 09/16/2020
-ms.technology: m365d
-ms.openlocfilehash: c050683bb3ed052ae4752ffdee66fe51fb99b88b
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.date: 02/08/2021
+ms.openlocfilehash: fb4ffc2a3061934340c69d2655ffbd29bdff3100
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930372"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50925250"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Information och resultat från en automatiserad undersökning
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Gäller för:**
 - Microsoft 365 Defender
 
-När en automatiserad undersökning görs i Microsoft 365 Defender finns det information om undersökningen tillgänglig under och efter den automatiska undersökningsprocessen. Om du har den [behörighet som krävs](mtp-action-center.md#required-permissions-for-action-center-tasks)kan du visa den informationen i en vy med undersökningsinformation. I vyn med undersökningsinformation får du aktuell status och möjlighet att godkänna eventuella väntande åtgärder. 
+När en automatiserad undersökning körs [](mtp-autoir.md) är information om undersökningen tillgänglig både under och efter den automatiska undersökningsprocessen med Microsoft 365 Defender. Om du har nödvändiga [behörigheter kan](mtp-action-center.md#required-permissions-for-action-center-tasks)du visa de uppgifterna i en vy med undersökningsinformation. Vyn med undersökningsinformation ger dig uppdaterad status och möjlighet att godkänna eventuella väntande åtgärder. 
 
 ![Undersökningsinformation](../../media/mtp-air-investdetails.png)
 
-## <a name="open-the-investigation-details-view"></a>Öppna vyn med undersökningsinformation
+## <a name="new-unified-investigation-page"></a>(NY!) Sida för enhetlig undersökning
+
+Undersökningssidan har nyligen uppdaterats för att inkludera information på dina enheter, e-post och samarbetsinnehåll. Den nya, enhetliga undersökningssidan definierar ett gemensamt språk och ger en enhetlig upplevelse för automatiska undersökningar i [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) för Endpoint och Microsoft Defender för [Office 365.](../office-365-security/office-365-atp.md) Välj länken i den gula banderollen som visas på sidan för enhetlig undersökning:
+- Alla undersökningssidor i Säkerhets- och & Office 365 ( [https://protection.office.com](https://protection.office.com) )
+- Undersökningssida i Microsoft Defender Säkerhetscenter ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
+- Alla funktioner för incidenter eller åtgärdscenter i det förbättrade säkerhetscentret i Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) )
+
+## <a name="open-the-investigation-details-view"></a>Öppna detaljvyn för undersökningen
 
 Du kan öppna vyn med undersökningsinformation med någon av följande metoder:
 - [Markera ett objekt i Åtgärdscenter](#select-an-item-in-the-action-center)
-- [Välj en undersökning från sidan incidentinformation](#open-an-investigation-from-an-incident-details-page)
+- [Välj en undersökning från sidan Incidentinformation](#open-an-investigation-from-an-incident-details-page)
 
 ### <a name="select-an-item-in-the-action-center"></a>Markera ett objekt i Åtgärdscenter
 
-Använd Åtgärdscenter för att visa åtgärder som  antingen väntar på godkännande (på fliken Väntande) eller redan har godkänts (på **fliken** Historik). 
+I det [förbättrade åtgärdscentret](mtp-action-center.md) () samlas åtgärder på alla dina [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) enheter, e-& och samarbeta innehåll och [](mtp-remediation-actions.md) identiteter. Åtgärder i listan omfattar åtgärder som har vidtagits automatiskt eller manuellt. I Åtgärdscenter kan du visa åtgärder som väntar på godkännande och åtgärder som redan har godkänts eller slutförts. Du kan också gå till mer detaljerad information, till exempel en undersökningssida.
+
+> [!TIP]
+> Du måste ha [vissa behörigheter för](mtp-action-center.md#required-permissions-for-action-center-tasks) att godkänna, avvisa eller ångra åtgärder.
 
 1. Gå till [https://security.microsoft.com](https://security.microsoft.com) och logga in. 
-
 2. Välj Åtgärdscenter i **navigeringsfönstret.** 
+3. Välj ett **objekt på fliken** **Väntande** eller Historik. Den utfällna rutan öppnas.
+4. Granska informationen i det utfällfönster som visas och gör sedan något av följande:
+   - Välj **Sidan Öppna undersökning** om du vill visa mer information om undersökningen.
+   - Välj **Godkänn** för att påbörja en väntande åtgärd.
+   - Välj **Avvisa** för att förhindra att en väntande åtgärd vidtas.
+   - Välj **Sök för** att gå till Avancerad [sökning](advanced-hunting-overview.md).
 
-3. Välj ett **objekt på** fliken **Väntande** eller Historik. Om du har den [behörighet som krävs](mtp-action-center.md#required-permissions-for-action-center-tasks)kan du godkänna (eller avvisa) väntande åtgärder.
+### <a name="open-an-investigation-from-an-incident-details-page"></a>Öppna en undersökning från informationssidan för en händelse
 
-### <a name="open-an-investigation-from-an-incident-details-page"></a>Öppna en undersökning från sidan incidentinformation
+Använd sidan incidentinformation om du vill visa detaljerad information om en händelse, inklusive aviseringar som utlöstes information om berörda enheter, användarkonton eller postlådor.
 
-Använd en sida med incidentinformation om du vill visa detaljerad information om en händelse, inklusive aviseringar som utlöstes information om enheter, användarkonton eller postlådor som påverkas.
+![Incidentinformation](../../media/mtp-incidentdetails-tabs.png)
 
 1. Gå till [https://security.microsoft.com](https://security.microsoft.com) och logga in. 
-
-2. Välj Incidenter i **navigeringsfönstret.** 
-
-3. Markera ett objekt i listan för att öppna vyn incidentinformation.<br/>![Incidentinformation](../../media/mtp-incidentdetails-tabs.png)
-
-4. Välj **en undersökning** i listan på fliken Undersökningar.
+2. I navigeringsfönstret väljer du **Incidenter &**  >  **Incidenter.** 
+3. Markera ett objekt i listan och välj sedan **Öppna incidentsida**.
+4. Välj **fliken Undersökningar** och välj sedan en undersökning i listan. Den utfällna rutan öppnas.
+5. Välj **sidan Öppna undersökning.** 
 
 ## <a name="investigation-details"></a>Undersökningsinformation
 
-Använd vyn med undersökningsinformation för att se tidigare, aktuell och väntande aktivitet som hör till en undersökning. Vyn med undersökningsinformation liknar följande bild:
+Använd vyn med undersökningsinformation för att se tidigare, aktuella och väntande aktiviteter som hör till en undersökning. Vyn med undersökningsinformation liknar följande bild:
 
 ![Undersökningsinformation](../../media/mtp-air-investdetails.png)
 
-I vyn Undersökningsinformation kan du se information om **åtgärdsflikarna** **Undersökning,**  **Varningar,** **Enheter,** Identiteter,  **Enheter,** Enheter, Logg och Väntande åtgärder, som beskrivs i följande tabell.
+I vyn Undersökningsinformation kan du se information om flikarna **Undersökningsdiagram**, Varningar, Enheter, Identiteter, Nyckelresultat, Enheter, Logg och Väntande åtgärder, som beskrivs i följande tabell.       
+
+> [!NOTE]
+> Vilka flikar som visas på sidan med undersökningsinformation beror på vad prenumerationen innehåller. Om din prenumeration till exempel inte omfattar Microsoft Defender för Office 365 abonnemang 2 visas inte fliken **Postlådor.**
 
 | Tabb | Beskrivning |
-|--------|--------|
-| **Undersökningsdiagram**   | Ger en visuell representation av undersökningen. Visar enheter och visar hot som påträffas, tillsammans med aviseringar och om några åtgärder väntar på godkännande.<br/>Du kan klicka på ett objekt i diagrammet om du vill visa mer information. Om du till exempel klickar **på ikonen Hittade** hot kommer du till fliken **Viktiga** resultat. |
-| **Varningar**    | Listar aviseringar som är associerade med undersökningen. Varningar kan komma från skyddsfunktioner för hot på en användares dator, i Office-appar, Cloud App Security och andra Microsoft 365 Defender-funktioner.|
-| **Enheter** | Visar datorer som ingår i undersökningen tillsammans med åtgärdsnivån.|
-| **Viktiga resultat**  | Listor med resultat från undersökningen tillsammans med status och åtgärder som vidtas eller väntar. Du kan godkänna väntande åtgärder för enheter och identiteter på den här fliken.|
-| **Enheter**  | Visar användaraktiviteter, filer, processer, tjänster, drivrutiner, IP-adresser och beständighetsmetoder associerade med undersökningen, tillsammans med status och åtgärder som vidtas.|
-|**Logg**    | Ger en detaljerad bild av alla steg som vidtas under undersökningen, tillsammans med status.|
-| **Väntande åtgärder** | En lista med objekt som kräver godkännande för att fortsätta.|
+|:--------|:--------|
+| **Undersökningsdiagram**   | Ger en visuell representation av undersökningen. Visar enheter och visar hot som hittas, tillsammans med aviseringar och om några åtgärder väntar på godkännande.<br/>Du kan markera ett objekt i diagrammet om du vill visa mer information. Om du till exempel **väljer ikonen Bevis** kommer du till fliken **Bevis** där du kan se identifierade enheter och deras bedömningar. |
+| **Varningar**    | Listar aviseringar kopplade till undersökningen. Varningar kan komma från skyddsfunktioner för hot på en användares enhet, i Office-appar, Cloud App Security och andra Microsoft 365 Defender-funktioner.|
+| **Enheter** | Visar enheter som ingår i undersökningen tillsammans med deras åtgärdsnivå. (Åtgärdsnivåer motsvarar [automationsnivån för enhetsgrupper](mtp-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups).) |
+| **Postlådor** |Listar postlådor som påverkas av identifierade hot.  |
+| **Användare**  | Här listas användarkonton som påverkas av identifierade hot. |
+| **Bevis** | Listar bevis som upphöjts av varningar/undersökningar. Omfattar bedömningstillstånd *(skadlig,* misstänkt *eller Inga hot hittades)* och åtgärdsstatus. |
+| **Enheter**  | Innehåller information om varje analyserad enhet, inklusive en bedömning för varje typ av enhet *(Skadlig,* Misstänkt eller *Inga hot hittades).*|
+|**Logg**    | Visar en kronologisk, detaljerad vy av alla undersökningsåtgärder som har vidtagits efter att en avisering utlösts.|
+| **Väntande åtgärder** | En lista med objekt som måste godkännas för att fortsätta. Gå till Åtgärdscenter [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () för att godkänna väntande åtgärder. |
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Godkänna eller avvisa åtgärder relaterade till automatiserad undersökning och svar](mtp-autoir-actions.md)
-- [Granska åtgärder](mtp-remediation-actions.md)
+- [Godkänna eller avvisa åtgärder efter en automatiserad undersökning](mtp-autoir-actions.md)
+- [Läs mer om åtgärder](mtp-remediation-actions.md)
