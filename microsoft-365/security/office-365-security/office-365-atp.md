@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender för Office 365 innehåller säkra bifogade filer, säkra länkar, avancerade verktyg för skydd mot nätfiske, rapporteringsverktyg och funktioner för hotinformation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 741b00a55ee73d16c82abd4806d06660d49be65b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 1a2cb40184de170263a52e52b704b30b0731c868
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287671"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909040"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender för Office 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "50287671"
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!IMPORTANT]
-> Den här artikeln är avsedd för företagskunder som har [Microsoft Defender för Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Läs [Avancerad Outlook.com-säkerhet för Microsoft 365-prenumeranter](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2) om du använder Outlook.com, Microsoft 365 Family eller Microsoft 365 Personal och vill ha information om säkra länkar och säkra bifogade filer i Outlook.
+> Den här artikeln är avsedd för företagskunder som har [Microsoft Defender för Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Läs [Avancerad Outlook.com-säkerhet för Microsoft 365-prenumeranter](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2) om du använder Outlook.com, Microsoft 365 Family eller Microsoft 365 Personal och vill ha information om säkra länkar och säkra bifogade filer i Outlook.
 
 Microsoft Defender för Office 365 skyddar din organisation mot skadliga hot från e-postmeddelanden, länkar (URL: er) och samarbetsverktyg. Defender för Office 365 innehåller:
 
@@ -88,7 +88,7 @@ I följande tabell sammanfattas vad som ingår i varje abonnemang.
 
 - Microsoft Defender för Office 365 Abonnemang 1 ingår i Microsoft 365 Business Premium.
 
-- Microsoft Defender för Office 365, Abonnemang 1 och Microsoft Defender för Office 365 Plan 2 är tillgängliga som ett tillägg för vissa abonnemang. Läs mer i [Funktionstillgänglighet för Microsoft Defender för Office 365-abonnemang](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+- Microsoft Defender för Office 365, Abonnemang 1 och Microsoft Defender för Office 365 Plan 2 är tillgängliga som ett tillägg för vissa abonnemang. Läs mer i [Funktionstillgänglighet för Microsoft Defender för Office 365-abonnemang](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
 - Funktionen [Säkra dokument](safe-docs.md) är bara tillgänglig för användare med Microsoft 365 E5- eller Microsoft 365 E5 Säkerhet-licenser (inte inkluderad i Microsoft Defender för Office 365-abonnemang).
 
@@ -150,8 +150,8 @@ För att få åtkomst till Microsoft Defender för Office 365-funktioner i Säke
 |Roll eller rollgrupp|Resurser för att få mer information|
 |---|---|
 |Global administratör (detta kan tilldelas i Azure Active Directory eller i Säkerhets- och efterlevnadscenter)|[Om administratörsroller i Microsoft 365](../../admin/add-users/about-admin-roles.md)|
-|Säkerhetsadministratör (detta kan tilldelas i Azure Active Directory eller i Säkerhets- och efterlevnadscenter)|[Administratörens rollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md)|
-|Organisationshantering för Exchange Online (detta har tilldelats i Exchange Online)|[Behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
+|Säkerhetsadministratör (detta kan tilldelas i Azure Active Directory eller i Säkerhets- och efterlevnadscenter)|[Administratörens rollbehörigheter i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md)|
+|Organisationshantering för Exchange Online (detta har tilldelats i Exchange Online)|[Behörigheter i Exchange Online](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
 |Sök och rensa (det här är bara tilldelat i Säkerhets- och efterlevnadscenter)|[Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md)|
 
 Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
@@ -160,9 +160,9 @@ Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](pe
 
 Microsoft Defender för Office 365 ingår i vissa prenumerationer, t.ex. Microsoft 365 E5, Office 365 E5, Office 365 A5 och Microsoft 365 Business Premium. Om din prenumeration inte innehåller Defender för Office 365 kan du köpa Defender för Office 365, abonnemang 1 eller Defender för Office 365 abonnemang 2, som ett tillägg för vissa prenumerationer. Mer information finns i följande resurser:
 
-- [Tillgänglighet för Microsoft Defender för Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability) för en lista över prenumerationer som innehåller Defender för Office 365-abonnemang.
+- [Tillgänglighet för Microsoft Defender för Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability) för en lista över prenumerationer som innehåller Defender för Office 365-abonnemang.
 
-- [Tillgängliga funktioner i abonnemang för Microsoft Defender för Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans) för en lista över funktioner som ingår i abonnemang 1 och 2.
+- [Tillgängliga funktioner i abonnemang för Microsoft Defender för Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans) för en lista över funktioner som ingår i abonnemang 1 och 2.
 
 - [Hämta rätt Microsoft Defender för Office 365-](https://products.office.com/exchange/advance-threat-protection#pmg-allup-content) om du vill jämföra abonnemang och köpa Defender för Office 365.
 
@@ -174,7 +174,7 @@ Nya funktioner läggs till i Microsoft Defender för Office 365 kontinuerligt. M
 
 - I [Microsoft 365-översikten](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) finns en lista över nya funktioner som utvecklas och lanseras.
 
-- [Tjänstbeskrivning för Microsoft Defender för Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp) beskriver funktioner och tillgänglighet i Defender för Office 365-abonnemang.
+- [Tjänstbeskrivning för Microsoft Defender för Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp) beskriver funktioner och tillgänglighet i Defender för Office 365-abonnemang.
 
 ## <a name="see-also"></a>Se även
 

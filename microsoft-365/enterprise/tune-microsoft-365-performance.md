@@ -1,5 +1,5 @@
 ---
-title: Justera Microsoft 365-prestanda
+title: Justera prestandan i Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -16,24 +16,22 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: fce71911-5c54-455d-b937-1b5a0b674620
-description: Länkar till kurser, Bloggar, artiklar och andra resurser som beskriver hur du kan förbättra prestanda i Microsoft 365.
-ms.openlocfilehash: bf1ee635ef4d021149ac43ae706b4503154342ec
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Länkar till kurser, bloggar, artiklar och andra resurser som visar hur du kan förbättra prestanda för Microsoft 365.
+ms.openlocfilehash: 6e6e224eb1f08effeae6c6189f61699834897172
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694758"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909352"
 ---
-# <a name="tune-microsoft-365-performance"></a>Justera Microsoft 365-prestanda
+# <a name="tune-microsoft-365-performance"></a>Justera prestandan i Microsoft 365
 
-Den här artikeln länkar till kurser, Bloggar, artiklar och andra resurser som beskriver hur du kan förbättra prestanda i Microsoft 365.
+Den här artikeln länkar till kurser, bloggar, artiklar och andra resurser som beskriver hur du kan förbättra prestanda för Microsoft 365.
   
-Den här artikeln är en del av [nätverks planering och prestanda justering för Microsoft 365](https://aka.ms/tune) Project.
+Den här artikeln är en del [av projektet Nätverksplanering och prestandajustering för Microsoft 365.](./network-planning-and-performance.md)
    
-## <a name="articles-about-fine-tuning-microsoft-365-and-office-365-performance"></a>Artiklar om hur du finjusterar prestanda i Microsoft 365 och Office 365
+## <a name="articles-about-fine-tuning-microsoft-365-and-office-365-performance"></a>Artiklar om finjustering av prestanda i Microsoft 365 och Office 365
 
-Ta en titt på de [10 viktigaste tipsen för att optimera och felsöka Office 365-nätverks anslutningen](https://blogs.technet.microsoft.com/onthewire/2014/06/18/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity/) via Paul Collinge. 
+Ta en titt på de 10 bästa tipsen för att optimera och felsöka [Office 365-nätverksanslutningen](/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity) av Paul Colliak. 
   
-Information om hur du använder NAT med Microsoft 365 finns i avsnittet [om stöd för support med microsoft 365](nat-support-with-microsoft-365.md).
-  
-
+Information om hur du använder översättning av nätverksadresser med Microsoft 365 finns [NAT-stöd med Microsoft 365.](nat-support-with-microsoft-365.md)

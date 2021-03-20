@@ -1,6 +1,6 @@
 ---
 title: Avancerade kvoter för sökning och användningsparametrar i Microsoft 365 Defender
-description: Förstå olika kvoter och användningsparametrar (servicebegränsningar) som håller den avancerade söktjänsten responsiv
+description: Förstå olika kvoter och användningsparametrar (tjänstbegränsningar) som ser till att tjänsten för avancerad sökning är dynamisk
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema, kusto, CPU limit, query limit, resources, maximum results, quota, parameters, allocation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3d3b1055408b51e8d217f2abcb0e83ef7dd74949
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 862d295739f952a6a5db06f5cfdfbc5aa481de9b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929796"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909028"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>Avancerade kvoter för sökning och användningsparametrar
 
@@ -35,23 +35,23 @@ ms.locfileid: "49929796"
 **Gäller för:**
 - Microsoft 365 Defender
 
-För att hålla tjänstens prestanda och responsiva, ställer avancerad sökning in olika kvoter och användningsparametrar (kallas även "servicebegränsningar"). De här kvoter och parametrar som gäller för frågor körs manuellt och med [anpassade identifieringsregler.](custom-detection-rules.md) Kunder som kör flera frågor regelbundet bör spåra förbrukning och tillämpa [metodtips för optimering](advanced-hunting-best-practices.md) för att minimera störningar.
+För att hålla tjänstens prestanda och responsiva, anger avancerad sökning olika kvoter och användningsparametrar (kallas även "tjänstbegränsningar"). De här kvoter och parametrar som gäller för frågor körs manuellt och av [anpassade identifieringsregler.](custom-detection-rules.md) Kunder som kör flera frågor regelbundet bör spåra förbrukning och [använda optimeringstips för](advanced-hunting-best-practices.md) att minimera störningar.
 
-I följande tabell finns information om befintliga kvoter och användningsparametrar.
+Se följande tabell för att förstå befintliga kvoter och användningsparametrar.
 
-| Kvot eller parameter | Storlek | Uppdatera cykel | Beskrivning |
+| Kvot eller parameter | Storlek | Uppdatera cykler | Beskrivning |
 |--|--|--|--|
-| Dataområde | 30 dagar | Varje fråga | Varje fråga kan slå upp data från de senaste 30 dagarna. |
+| Dataområde | 30 dagar | Varje fråga | Varje fråga kan slå upp data från de senaste 30 dagarna. |
 | Resultatuppsättning | 10 000 rader | Varje fråga | Varje fråga kan returnera upp till 10 000 poster. |
-| Timeout | 10 minuter | Varje fråga | Varje fråga kan köras i upp till 10 minuter. Om den inte slutförs inom 10 minuter visas ett fel i tjänsten.
-| CPU-resurser | Baserat på klientorganisationens storlek | - I timmen och sedan var 15:e minut<br>- Dagligen vid 12 midnatt | Tjänsten tillämpar den dagliga kvoten och 15-minuterskvoten separat. För varje kvot visas ett [fel i portalen](advanced-hunting-errors.md) när en fråga körs och klientorganisationen har förbrukat över 10 % av tilldelade resurser. Frågor blockeras om klientorganisationen har nått 100 % tills nästa dag eller 15-minuterscykel. |
+| Timeout | 10 minuter | Varje fråga | Varje fråga kan köras i upp till 10 minuter. Om det inte är klart inom 10 minuter visar tjänsten ett fel.
+| CPU-resurser | Baserat på klientorganisationens storlek | - I timmen och sedan var 15:e minut<br>- Dagligen vid 12 midnatt | Tjänsten tillämpar den dagliga kvoten och 15-minuterskvoten separat. För varje kvot visas ett [fel i portalen](advanced-hunting-errors.md) när en fråga körs och klientorganisationen har förbrukat över 10 % av de tilldelade resurserna. Frågor blockeras om klientorganisationen har nått 100 % till efter nästa dagliga eller 15-minuterscykel. |
 
 >[!NOTE] 
->En separat uppsättning kvoter och parametrar gäller för avancerade sökningsfrågor som utförs via API:t. [Läs mer om avancerade API:er för sökning](https://docs.microsoft.com/microsoft-365/security/mtp/api-advanced-hunting)
+>En separat uppsättning kvoter och parametrar gäller för avancerade sökningsfrågor som utförs via API:t. [Läs mer om avancerade API:er för sökning](./api-advanced-hunting.md)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [Avancerade söktips](advanced-hunting-best-practices.md)
+- [Avancerade metodtips för sökning](advanced-hunting-best-practices.md)
 - [Hantera avancerade sökfel](advanced-hunting-errors.md)
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Översikt över anpassade identifieringar](custom-detections-overview.md)

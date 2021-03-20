@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
-description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Amazon Web Services (AWS) för Microsoft.
-ms.openlocfilehash: bb687b8685aed79f5f768c12d652205bbbed0f59
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster hos Amazon Web Services (AWS) för Microsoft.
+ms.openlocfilehash: 12f9341ab381324266cf2da1ca6b5423df9973dd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657978"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910420"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>Skapa DNS-poster på Amazon Web Services (AWS) för Microsoft
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
-Om AWS är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype online för företag och så vidare.
+Om AWS är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype Online för företag och så vidare.
   
 När du har lagt till dessa poster på AWS är din domän konfigurerad för att fungera med Microsoft-tjänster.
   
@@ -51,11 +51,11 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
   
 1. Kom igång genom att gå till domänsidan på AWS genom att klicka på [den här länken](https://console.aws.amazon.com/route53/home). Du uppmanas att logga in först.
     
-2. På sidan **resurser** väljer du **värd zoner**.
+2. På sidan **Resurser** väljer du **Hosted Zones**.
     
-3. Välj namnet på den domän som du vill redigera i kolumnen **domän namn** på sidan **värdbaserade zoner** . 
+3. Välj namnet på den domän som du vill redigera i kolumnen **Domain Name** på sidan **Hosted Zones.** 
     
-4. Välj **skapa post uppsättning**.
+4. Välj **Create Record Set**.
     
 5. I **Create Record Set** skriver du in, eller kopierar och klistrar in, värdena från följande tabell i fälten för den nya posten. 
     
@@ -73,7 +73,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
 7. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domän registratorns webbplats kan du gå tillbaka till Microsoft och begära en sökning efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Microsoft och begära en sökning efter posten.
   
 När Microsoft hittar rätt TXT-post är din domän verifierad.
   
@@ -94,11 +94,11 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 
 1. Kom igång genom att gå till domänsidan på AWS genom att klicka på [den här länken](https://console.aws.amazon.com/route53/home). Du uppmanas att logga in först.
     
-2. På sidan **resurser** väljer du **värd zoner**.
+2. På sidan **Resurser** väljer du **Hosted Zones**.
     
-3. Välj namnet på den domän som du vill redigera i kolumnen **domän namn** på sidan **värdbaserade zoner** . 
+3. Välj namnet på den domän som du vill redigera i kolumnen **Domain Name** på sidan **Hosted Zones.** 
     
-4. Välj **skapa post uppsättning**.
+4. Välj **Create Record Set**.
     
 5. I **Create Record Set** skriver du in, eller kopierar och klistrar in, värdena från följande tabell i fälten för den nya posten. 
     
@@ -106,7 +106,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     |**Name (Namn)**|**Type (Typ)**|**Alias**|**TTL (sekunder)**|**Värde**|**Routing Policy (Routningsprincip)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |(Lämna det här fältet tomt.)  <br/> |MX - Mail exchange  <br/> |No  <br/> |300  <br/> |0  *\<domain-key\>*  . mail.Protection.Outlook.com.  <br/> 0 motsvarar MX-prioritetsvärdet. Skriv 0 i början av MX-värdet och infoga ett blanksteg före resten av värdet.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> **Obs!** Hämta ditt \<*domain-key*\> från ditt Microsoft 365-konto. [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |Enkelt  <br/> |
+    |(Lämna det här fältet tomt.)  <br/> |MX - Mail exchange  <br/> |No  <br/> |300  <br/> |0  *\<domain-key\>*  ,mail.protection.outlook.com.  <br/> 0 motsvarar MX-prioritetsvärdet. Skriv 0 i början av MX-värdet och infoga ett blanksteg före resten av värdet.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> **Obs!** Hämta ditt \<*domain-key*\> Microsoft 365-konto. [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |Enkelt  <br/> |
        
     ![AWS-BP-Configure-2-1](../../media/94a71ce7-1b3b-4b1a-9ad3-9592db133075.png)
   
@@ -117,9 +117,9 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 7. Om det finns andra MX-poster tar du bort dem.
     
     > [!IMPORTANT]
-    > AWS lagrar MX-poster som en uppsättning som kan innehålla flera poster. Välj **inte** **ta bort post uppsättning** eftersom det här tar bort alla dina MX-poster, inklusive den du just lagt till. Använd följande instruktioner i stället. 
+    > AWS lagrar MX-poster som en uppsättning som kan innehålla flera poster. **Välj INTE** **Delete Record Set för** att ta bort alla MX-poster inklusive den du just lagt till. Använd följande instruktioner i stället. 
   
-    Välj först MX-postuppsättningen.
+    Välj först uppsättningen med MX-poster.
     
     ![AWS-BP-Configure-2-3](../../media/9d9388cb-e2d0-43b7-928c-e1d07e519c6f.png)
   
@@ -127,20 +127,20 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![AWS-BP-Configure-2-4](../../media/c3b0c1bc-21ab-44cc-84b7-f504725c5540.png)
   
-8. Välj **Save Record set**.
+8. Välj **Spara postuppsättning**.
     
     ![AWS-BP-Configure-2-5](../../media/86f0998d-f5d4-4750-a93d-ac13b318c40b.png)
   
-## <a name="add-the-five-cname-records-that-are-required-for-microsoft-365"></a>Lägga till de fem CNAME-poster som krävs för Microsoft 365
+## <a name="add-the-five-cname-records-that-are-required-for-microsoft-365"></a>Lägg till de fem CNAME-posterna som krävs för Microsoft 365
 <a name="BKMK_add_CNAME"> </a>
 
 1. Kom igång genom att gå till domänsidan på AWS genom att klicka på [den här länken](https://console.aws.amazon.com/route53/home). Du uppmanas att logga in först.
     
-2. På sidan **resurser** väljer du **värd zoner**.
+2. På sidan **Resurser** väljer du **Hosted Zones**.
     
-3. Välj namnet på den domän som du vill redigera i kolumnen **domän namn** på sidan **värdbaserade zoner** . 
+3. Välj namnet på den domän som du vill redigera i kolumnen **Domain Name** på sidan **Hosted Zones.** 
     
-4. Välj **skapa post uppsättning**.
+4. Välj **Create Record Set**.
     
 5. Lägg till den första CNAME-posten.
     
@@ -164,23 +164,23 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 7. Lägg till de andra fyra CNAME-posterna.
     
-    På sidan **Hosted Zones** väljer du **create Record set**, skapar en post med värdena från nästa rad i tabellen och väljer sedan **igen för att** slutföra den posten. 
+    På sidan **Hosted Zones** väljer du **Create Record Set**, skapar en post med värdena  från nästa rad i tabellen och väljer sedan Create igen för att slutföra den posten. 
     
-    Upprepa proceduren tills du har skapat alla fem CNAME-poster.
+    Upprepa proceduren tills du har skapat alla fem CNAME-posterna.
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Lägga till en TXT-post för SPF för att förhindra skräppost
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. I stället kan du lägga till de Microsoft-värden som krävs i den aktuella posten så att du har en  *enda*  SPF-post som innehåller båda uppsättningar med värden. Behöver du exempel? Ta en titt på dessa [externa DNS-poster för Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Du kan validera SPF-posten genom att använda någon av dessa[SPF-verifierings verktyg](../setup/domains-faq.yml). 
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg istället till de obligatoriska Microsoft-värdena i den aktuella posten så att du har  *en*  enda SPF-post som innehåller båda uppsättningarna med värden. Behöver du exempel? Ta en titt på dessa [externa DNS-poster för Microsoft](../../enterprise/external-domain-name-system-records.md). Om du vill validera SPF-posten kan du använda något av dessa[SPF-valideringsverktyg.](../setup/domains-faq.yml) 
   
 1. Kom igång genom att gå till domänsidan på AWS genom att klicka på [den här länken](https://console.aws.amazon.com/route53/home). Du uppmanas att logga in först.
     
-2. På sidan **resurser** väljer du **värd zoner**.
+2. På sidan **Resurser** väljer du **Hosted Zones**.
     
-3. Välj namnet på den domän som du vill redigera i kolumnen **domän namn** på sidan **värdbaserade zoner** . 
+3. Välj namnet på den domän som du vill redigera i kolumnen **Domain Name** på sidan **Hosted Zones.** 
     
-4. Välj **txt** -postuppsättningen. 
+4. Välj **postuppsättningen TXT.** 
     
     ![AWS-BP-Configure-4-1](../../media/0310fa66-c016-4987-80df-930f1c8f3c39.png)
   
@@ -192,20 +192,20 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
    
     ![AWS-BP-Configure-4-2](../../media/beb3c086-eaf8-4245-9860-18512a3ff72e.png)
   
-6. Välj **Save Record set**.
+6. Välj **Spara postuppsättning**.
     
     ![AWS-BP-Configure-4-3](../../media/94b9306c-bdc9-4f84-ad6f-6d12edbfde90.png)
   
-## <a name="add-the-two-srv-records-that-are-required-for-microsoft-365"></a>Lägga till de två SRV-poster som krävs för Microsoft 365
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft-365"></a>Lägg till de två SRV-posterna som krävs för Microsoft 365
 <a name="BKMK_add_SRV"> </a>
 
 1. Kom igång genom att gå till domänsidan på AWS genom att klicka på [den här länken](https://console.aws.amazon.com/route53/home). Du uppmanas att logga in först.
     
-2. På sidan **resurser** väljer du **värd zoner**.
+2. På sidan **Resurser** väljer du **Hosted Zones**.
     
-3. Välj namnet på den domän som du vill redigera i kolumnen **domän namn** på sidan **värdbaserade zoner** . 
+3. Välj namnet på den domän som du vill redigera i kolumnen **Domain Name** på sidan **Hosted Zones.** 
     
-4. Välj **skapa post uppsättning**.
+4. Välj **Create Record Set**.
     
 5. Lägg till den första SRV-posten:
     
@@ -215,8 +215,8 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     |**Name (Namn)**|**Type (Typ)**|**Alias**|**TTL (sekunder)**|**Värde**|**Routing Policy (Routningsprincip)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip _sip._tls|SRV - Service locator|No|300|100 1 443 sipdir.online.lync.com. **Det här värdet måste sluta med en punkt (.)**><br> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |Enkelt|
-    |_sipfederationtls _sipfederationtls._tcp|SRV - Service locator|No|300|100 1 5061 sipfed.online.lync.com. **Värdet MÅSTE sluta med en punkt (.)**<br> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |Enkelt|
+    |_sip._tls|SRV - Service locator|No|300|100 1 443 sipdir.online.lync.com. **Det här värdet MÅSTE avslutas med en punkt (.)**><br> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |Enkelt|
+    |_sipfederationtls._tcp|SRV - Service locator|No|300|100 1 5061 sipfed.online.lync.com. **Värdet MÅSTE sluta med en punkt (.)**<br> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |Enkelt|
    
     ![AWS-BP-Configure-5-1](../../media/c3f841d3-6076-428f-bb04-e71cc5f392fa.png)
   
@@ -226,8 +226,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 7. Lägg till den andra SRV-posten:
     
-    På sidan **Hosted Zones** väljer du **create Record set**, skapar en post med värdena från nästa rad i tabellen och väljer sedan **igen för att** slutföra den posten. 
+    På sidan **Hosted Zones** väljer du **Create Record Set**, skapar en post med värdena  från nästa rad i tabellen och väljer sedan Create igen för att slutföra den posten. 
     
 > [!NOTE]
 > Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Microsoft](../get-help-with-domains/find-and-fix-issues.md). 
-  

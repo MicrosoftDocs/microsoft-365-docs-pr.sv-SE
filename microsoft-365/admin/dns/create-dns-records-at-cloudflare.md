@@ -1,5 +1,5 @@
 ---
-title: Skapa DNS-poster på CloudFlare för Microsoft
+title: Skapa DNS-poster på Cloudflare för Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
-description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på CloudFlare för Microsoft.
-ms.openlocfilehash: 8d5dd7779f07fd42dd230ee33c40849da3519d26
-ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
+description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Cloudflare för Microsoft.
+ms.openlocfilehash: 0a80cf059a3a69dcb8aa48251875410f35684286
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49939278"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910384"
 ---
-# <a name="create-dns-records-at-cloudflare-for-microsoft"></a>Skapa DNS-poster på CloudFlare för Microsoft
+# <a name="create-dns-records-at-cloudflare-for-microsoft"></a>Skapa DNS-poster på Cloudflare för Microsoft
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 Om Cloudflare är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype for Business Online och så vidare.
   
-När du har lagt till dessa poster på CloudFlare är din domän konfigurerad för att fungera med Microsoft 365-tjänster.
+När du har lagt till dessa poster i Cloudflare är domänen konfigurerad för att fungera med Microsoft 365-tjänster.
   
   
 > [!NOTE]
@@ -48,7 +48,7 @@ När du har lagt till dessa poster på CloudFlare är din domän konfigurerad f�
   
 När du registrerade dig för Cloudflare lade du till en domän med hjälp av Cloudflares **konfigurationsprocess**. 
   
-Domänen som du lade till köptes från CloudFlare eller en separat domän registrator. Om du vill verifiera och skapa DNS-poster för din domän i Microsoft 365 måste du först ändra namnservrar hos domän registratorn så att de använder CloudFlare.
+Den domän du lade till har köpts från Cloudflare eller en separat domänregistrator. Om du vill verifiera och skapa DNS-poster för din domän i Microsoft 365 måste du först ändra namnservrarna hos domänregistratorn så att de använder Cloudflares namnservrar.
   
 Gör så här om du själv vill ändra domänens namnservrar på din domänregistrators webbplats:
   
@@ -62,12 +62,12 @@ Gör så här om du själv vill ändra domänens namnservrar på din domänregis
     |Andra namnservern  <br/> |Använd namnservervärdet från Cloudflare.  <br/> |
    
     > [!TIP]
-    > Du bör använda minst två namnserver poster. Om det finns andra namnservrar angivna ska du ta bort dem. 
+    > Du bör använda minst två namnserverposter. Om det finns andra namnservrar listade ska du ta bort dem. 
   
 3. Spara ändringarna.
     
 > [!NOTE]
-> Det kan ta flera timmar innan ändringarna har uppdaterats genom hela DNS-systemet på Internet. Sedan är din Microsoft-e-post och andra tjänster inställda för att fungera med din domän. 
+> Det kan ta flera timmar innan ändringarna har uppdaterats genom hela DNS-systemet på Internet. Sedan är din Microsoft-e-post och andra tjänster inställda på att fungera med din domän. 
   
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 <a name="BKMK_verify"> </a>
@@ -79,12 +79,12 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
   
 1. Kom igång genom att gå till domänsidan på Cloudflare genom att klicka på [den här länken](https://www.cloudflare.com/a/login). Du uppmanas att logga in först.
   
-2. På **Start** sidan väljer du den domän som du vill uppdatera. 
+2. På **startsidan** väljer du den domän som du vill uppdatera. 
   
-3. Välj **DNS** på sidan **Översikt** för din domän.
+3. På sidan **Översikt** för domänen väljer du **DNS.**
 
   
-4. Klicka på **Lägg till post** på sidan **DNS Management** och välj sedan värdena från följande tabell. 
+4. På sidan **DNS-hantering** klickar du **på Lägg** till post och väljer sedan värdena från följande tabell. 
     
     | Type (Typ) | Namn | Automatic TTL (automatisk TTL) | Content |
     |:-----|:-----|:-----|:----|
@@ -96,7 +96,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
   
 9. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domän registratorns webbplats kan du gå tillbaka till Microsoft och söka efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Microsoft och söka efter posten.
   
 När Microsoft hittar rätt TXT-post är din domän verifierad.
   
@@ -123,16 +123,16 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 
 1. Kom igång genom att gå till domänsidan på Cloudflare genom att klicka på [den här länken](https://www.cloudflare.com/a/login). Du uppmanas att logga in först.
   
-2. På **Start** sidan väljer du den domän som du vill uppdatera. 
+2. På **startsidan** väljer du den domän som du vill uppdatera. 
   
-3. Välj **DNS** på sidan **Översikt** för din domän.
+3. På sidan **Översikt** för domänen väljer du **DNS.**
 
   
-4. Klicka på **Lägg till post** på sidan **DNS Management** och välj sedan värdena från följande tabell. 
+4. På sidan **DNS-hantering** klickar du **på Lägg** till post och väljer sedan värdena från följande tabell. 
     
-    | Type (Typ) | Namn | E-postserver | Ordningen | TTL |
+    | Type (Typ) | Namn | E-postserver | Prioritet | TTL |
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Obs!** Hämta ditt  *\<domain-key\>*  från ditt Microsoft 365-konto.   [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md) |9.1  <br/> [Mer information om prioritet finns i ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)Vad är MX-prioritet? <br/>|30 minuter  <br/> |
+    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Obs!** Hämta ditt  *\<domain-key\>*  Microsoft 365-konto.   [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md) |1  <br/> [Mer information om prioritet finns i ](../setup/domains-faq.yml)Vad är MX-prioritet? <br/>|30 minuter  <br/> |
    
 
   
@@ -140,23 +140,23 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 9. Om det finns andra MX-poster som i avsnittet **MX Records** (MX-poster) ska du ta bort alla genom att välja ikonen **Delete (X)** (ta bort (X)). 
   
-10. Klicka på **ta bort** i bekräftelse dialog rutan för att bekräfta ändringarna. 
+10. Bekräfta ändringarna genom att välja **Ta** bort i bekräftelsedialogrutan. 
 
   
-## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Lägga till de sex CNAME-posterna som krävs för Microsoft
+## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Lägg till de sex CNAME-posterna som krävs för Microsoft
 <a name="BKMK_add_CNAME"> </a>
 
 1. Kom igång genom att gå till domänsidan på Cloudflare genom att klicka på [den här länken](https://www.cloudflare.com/a/login). Du uppmanas att logga in först.
     
   
-2. På **Start** sidan väljer du den domän som du vill uppdatera. 
+2. På **startsidan** väljer du den domän som du vill uppdatera. 
   
-3. Välj **DNS** på sidan **Översikt** för din domän.
+3. På sidan **Översikt** för domänen väljer du **DNS.**
 
   
 4. Lägg till den första av de fem CNAME-posterna.
     
-    Klicka på **Lägg till post** på sidan **DNS Management** och välj sedan värdena från följande tabell.
+    På sidan **DNS-hantering** klickar du **på Lägg** till post och väljer sedan värdena från följande tabell.
     
     
     | Type (Typ) | Namn | Mål | TTL |
@@ -169,7 +169,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     |CNAME  <br/> |msoid  <br/> |clientconfig.microsoftonline-p.net  <br/> |30 minuter  <br/> |
     
   
-5. Välj ikonen för **DNS-trafik** (ändra orange moln till grått) för att kringgå CloudFlare-servrarna.
+5. Välj ikonen **DNS Traffic** (ändra orange moln till grå) för att kringgå Cloudflare-servrarna.
   
 6. Välj **Spara**.
   
@@ -185,12 +185,12 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 1. Kom igång genom att gå till domänsidan på Cloudflare genom att klicka på [den här länken](https://www.cloudflare.com/a/login). Du uppmanas att logga in först.
     
   
-2. På **Start** sidan väljer du den domän som du vill uppdatera. 
+2. På **startsidan** väljer du den domän som du vill uppdatera. 
   
-3. Välj **DNS** på sidan **Översikt** för din domän.
+3. På sidan **Översikt** för domänen väljer du **DNS.**
 
   
-4. Klicka på **Lägg till post** på sidan **DNS Management** och välj sedan värdena från följande tabell.  
+4. På sidan **DNS-hantering** klickar du **på Lägg** till post och väljer sedan värdena från följande tabell.  
     
     | Type (Typ) | Namn | TTL | Content |
     |:-----|:-----|:-----|:-----|
@@ -205,30 +205,29 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 <a name="BKMK_add_SRV"> </a>
 
 > [!IMPORTANT]
-> Kom ihåg att CloudFlare är ansvarigt för att göra denna funktion tillgänglig. Om du inte ser avvikelser mellan stegen nedan och det aktuella CloudFlare GUI (grafiskt användar gränssnitt) bör du använda [CloudFlare community](https://community.cloudflare.com/). 
+> Kom ihåg att Cloudflare ansvarar för att göra den här funktionen tillgänglig. Om du ser avvikelser mellan stegen nedan och det aktuella Cloudflare GUI (Grafiskt användargränssnitt) bör du använda [Cloudflare-communityn.](https://community.cloudflare.com/) 
 
 1. Kom igång genom att gå till domänsidan på Cloudflare genom att klicka på [den här länken](https://www.cloudflare.com/a/login). Du uppmanas att logga in först.
       
-2. På **Start** sidan väljer du den domän som du vill uppdatera. 
+2. På **startsidan** väljer du den domän som du vill uppdatera. 
   
-3. Välj **DNS** på sidan **Översikt** för din domän.
+3. På sidan **Översikt** för domänen väljer du **DNS.**
   
 4. Lägg till den första av de två SRV-posterna.
 
-    Klicka på **Lägg till post** på sidan **DNS Management** och välj sedan värdena från den första raden i följande tabell.
+    På sidan **DNS-hantering** klickar du **på Add record** och väljer sedan värdena från den första raden i följande tabell.
         
-    | Type (Typ) | Tjänst | Protokoll | Namn | TTL | Ordningen | Väga | Port | Mål |
+    | Type (Typ) | Tjänst | Protokoll | Namn | TTL | Prioritet | Vikt | Port | Mål |
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|_sip |TLS |Använd din *domain_name*; till exempel contoso.com  |30 minuter | 100|9.1 |443 |sipfed.online.lync.com  |
-    |SRV|_sipfederationtls | TCP|Använd din *domain_name*; till exempel contoso.com   |30 minuter |100 |9.1 |5061 | sipfed.online.lync.com |
+    |SRV|_sip |TLS |Använd ditt *domain_name*; till exempel contoso.com  |30 minuter | 100|1 |443 |sipfed.online.lync.com  |
+    |SRV|_sipfederationtls | TCP|Använd ditt *domain_name*; till exempel contoso.com   |30 minuter |100 |1 |5061 | sipfed.online.lync.com |
 
   
 5. Välj **Spara**.
 
   
-6. Lägg till den andra SRV-posten genom att välja värdena från den andra raden i tabellen. 
+6. Lägg till den andra SRV-posten genom att välja värden från den andra raden i tabellen. 
 
     
 > [!NOTE]
 >  Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
-  

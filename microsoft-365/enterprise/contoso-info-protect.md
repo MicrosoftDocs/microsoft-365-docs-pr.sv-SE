@@ -14,73 +14,73 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Förstå hur Contoso använder funktionerna för informations skydd i Microsoft 365 för företag för att skydda sina digitala till gångar i molnet.
-ms.openlocfilehash: 7cc51110a0bc4c87e57e71b2ddb42aa0dbaa288d
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+description: Förstå hur Contoso använder funktionerna för informationsskydd i Microsoft 365 för företag för att skydda sina digitala tillgångar i molnet.
+ms.openlocfilehash: 90a82fbd4dd77ff0f8faa024ced177a640a10b80
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558510"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911044"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Informationsskydd för Contoso Corporation
 
-Contoso är seriöst för sin informations säkerhet. Läckage och destruktion av immateriella rättigheter som beskriver produktens utformning och tillverkarspecifik tillverknings teknik skulle göra dem konkurrens kraftigare.
+Contoso menar allvarligt på deras informationssäkerhet. Läckage eller marknadsföring av immateriell egendom som beskriver deras produktdesign och egenutvecklade tillverkningsteknik skulle placera dem i en konkurrensfördel.
 
-Innan du flyttar deras känsliga digitala till gångar till molnet har contoso säkerställt att sin lokala informations klassificering och säkerhets krav stöds av de molnbaserade tjänsterna i Microsoft 365 för företag.
+Innan Contoso flyttar över känsliga digitala tillgångar till molnet ser han till att deras lokala informationsklassificerings- och skyddskrav stöds av de molnbaserade tjänsterna i Microsoft 365 för företag.
 
-## <a name="contoso-data-security-classification"></a>Säkerhets klassificering för Contoso-data
+## <a name="contoso-data-security-classification"></a>Contoso-datasäkerhetsklassificering
 
-Contoso utförde en analys av sina uppgifter och fastställde följande klassificerings nivåer.
+Contoso utförde en analys av deras data och bestämde följande klassificeringsnivåer.
 
 | Nivå 1: Baslinje | Nivå 2: Känslig | Nivå 3: Strikt reglerad |
 |:-------|:-----|:-----|
-| Datan krypteras och är endast tillgänglig för autentiserade användare.<BR> <BR> Tillhandahålls för alla data som lagrats lokalt och i Cloud-baserad lagring och arbets belastning. Datan krypteras när den lagras i tjänsten och överförs mellan tjänsten och klientenheterna. <BR><BR>Exempel på data på nivå 1 är normal företagskommunikation (e-post) och filer till administrations-, försäljnings- och supportpersonal. | Nivå 1 plus stark autentisering och dataförlustskydd.<BR> <BR> Med stark autentisering ingår multifaktorautentisering med Azure AD (MFA) med SMS-verifiering. Med förhindra data förlust ser du till att känslig eller viktig information inte reser utanför Microsofts moln.<BR><BR>Exempel på data på nivå 2 är ekonomisk och juridisk information, samt data vid forskning och utveckling av nya produkter. | Nivå 2 plus de högsta nivåerna för kryptering, autentisering och granskning.<BR><BR>Högsta krypteringsnivåerna för vilande data och data i molnet, kompatibla med regionala föreskrifter, kombinerade med MFA med smartkort, detaljerad granskning och aviseringar.<BR> <BR>Exempel på nivå 3-data är kund-och partner person uppgifter, produkt teknik specifikationer och tillverkarspecifik tillverknings teknik.  |
+| Datan krypteras och är endast tillgänglig för autentiserade användare.<BR> <BR> Tillhandahålls för alla data som lagras lokalt och i molnbaserad lagring och arbetsbelastning. Datan krypteras när den lagras i tjänsten och överförs mellan tjänsten och klientenheterna. <BR><BR>Exempel på data på nivå 1 är normal företagskommunikation (e-post) och filer till administrations-, försäljnings- och supportpersonal. | Nivå 1 plus stark autentisering och dataförlustskydd.<BR> <BR> Stark autentisering innehåller Azure AD Multi-Factor Authentication (MFA) med SMS-validering. Dataförlustskydd säkerställer att känslig eller kritisk information inte färdas utanför Microsoft-molnet.<BR><BR>Exempel på data på nivå 2 är ekonomisk och juridisk information, samt data vid forskning och utveckling av nya produkter. | Nivå 2 plus de högsta nivåerna för kryptering, autentisering och granskning.<BR><BR>Högsta krypteringsnivåerna för vilande data och data i molnet, kompatibla med regionala föreskrifter, kombinerade med MFA med smartkort, detaljerad granskning och aviseringar.<BR> <BR>Exempel på data på Nivå 3 är personlig information för kunder och partner, produktteknikspecifikationer och tillverkningsteknik.  |
 ||||
 
-## <a name="contoso-information-policies"></a>Contoso information policies
-I följande tabell visas Contosos informations principer.
+## <a name="contoso-information-policies"></a>Informationsprinciper för Contoso
+I följande tabell finns informationsprinciperna för Contoso.
 
 
 | Value | Åtkomst | Datakvarhållning | Informationsskydd |
 |:-------|:-----|:-----|:-----|
 | Lågt affärsvärde (Nivå 1: Baslinje) | Tillåt åtkomst till alla.  | 6 månader | Använd kryptering. |
-| Medelhögt affärsvärde (Nivå 2: Känslig) | Tillåt åtkomst till contoso-anställda, underleverantörer och partners. <BR><BR> Använd MFA, TLS (Transport Layer Security) och hantering av mobilprogram (MAM). | 2 år  | Använd hashvärden för dataintegritet.  |
+| Medelhögt affärsvärde (Nivå 2: Känslig) | Ge åtkomst till Contoso-anställda, underleverantörer och partners. <BR><BR> Använd MFA, TLS (Transport Layer Security) och hantering av mobilprogram (MAM). | 2 år  | Använd hashvärden för dataintegritet.  |
 | Högt affärsvärde (Nivå 3: Strikt reglerad) | Tillåt åtkomst till chefer och ledare inom teknik och tillverkning. <BR> <BR> Endast RMS (Rights Management System) med hanterade nätverksenheter.  | 7 år  | Använd digitala signaturer för oavvislighet.  |
 |||||
 
-## <a name="the-contoso-path-to-information-protection-with-microsoft-365-for-enterprise"></a>Contoso-sökvägen till informations skydd med Microsoft 365 för företag
+## <a name="the-contoso-path-to-information-protection-with-microsoft-365-for-enterprise"></a>Contosos väg till informationsskydd med Microsoft 365 för företag
 
-Contoso Följ de här stegen för att förbereda Microsoft 365 för företag efter information om sina informations skydd:
+Contoso följde de här stegen för att förbereda Microsoft 365 för företag för sina krav på informationsskydd:
 
-1. Identifiera vilken information som ska skyddas
+1. Identifiera vilken information du bör skydda
 
-   Contoso gjorde en omfattande recension av sina befintliga digitala till gångar på lokala SharePoint-webbplatser och fildelning och klassificerade varje gång.
+   Contoso har gjort en omfattande granskning av sina befintliga digitala tillgångar på lokala SharePoint-webbplatser och filresurser och klassificerade varje tillgång.
 
-2. Bestämma åtkomst, bevarande och informations skydds principer för data nivåer
+2. Fastställa åtkomst-, bevarande- och informationsskyddsprinciper för datanivåer
 
    Baserat på datanivåerna fastställde Contoso detaljerade principkrav, som användes för att skydda befintliga digitala tillgångar när de flyttades till molnet.
 
-3. Skapa känslighets etiketter och deras inställningar för de olika informations nivåerna
+3. Skapa känslighetsetiketter och deras inställningar för olika informationsnivåer
 
    Contoso skapade känslighetsetiketter för datanivåerna, där etiketten Strikt reglerad inkluderar kryptering, behörigheter och vattenstämplar.
 
-4.  Flytta data från lokala SharePoint-webbplatser och fil resurser till deras nya SharePoint-webbplatser
+4.  Flytta data från lokala SharePoint-webbplatser och filresurser till sina nya SharePoint-webbplatser
 
     De filer som migrerades till de nya SharePoint-webbplatserna, ärvde standardinställningen för de kvarhållningsetiketter som tilldelats till webbplatsen.
 
-5.  Utbilda anställda hur man använder känslighets etiketter för nya dokument, hur man interagerar med contoso när de skapar nya SharePoint-webbplatser och alltid lagrar digitala till gångar på SharePoint-webbplatser
+5.  Utbilda anställda hur de använder känslighetsetiketter för nya dokument, hur de interagerar med Contoso IT när de skapar nya SharePoint-webbplatser och alltid lagrar digitala tillgångar på SharePoint-webbplatser
 
-    Ändring av dåligt anställd – lagrings vanor behandlas ofta som den hårda delen av över gången för informations skydd för molnet. Contoso IT and Management som behövs för att få anställda att alltid märka och lagra sina digitala till gångar i molnet, avstå från att använda lokala fil resurser och inte använda tredjeparts moln lagrings tjänster eller USB-enheter.
+    Att ändra informationslagringsvanor för dåliga medarbetare är ofta den svåraste delen av övergången till informationsskydd för molnet. Contosos IT- och hantering krävs för att få anställda att alltid märka och lagra sina digitala tillgångar i molnet, undvika att använda lokala filresurser och inte använda molnbaserade lagringstjänster eller USB-enheter från tredje part.
 
 ## <a name="conditional-access-policies-for-information-protection"></a>Principer för villkorlig åtkomst i informationsskydd
 
-Som en del av sin installation av Exchange Online och SharePoint konfigurerade contoso följande uppsättning villkorsstyrda åtkomst principer och använde dem för lämpliga grupper:
+Som en del av utrullningen av Exchange Online och SharePoint konfigurerade Contoso följande uppsättning principer för villkorsstyrd åtkomst och tillämpade dem på rätt grupper:
 
 - [Principer för hanterad och ohanterad programåtkomst på enheter](../security/office-365-security/identity-access-policies.md)
 - [Principer för Exchange Online-åtkomst](../security/office-365-security/secure-email-recommended-policies.md)
 - [Principer för SharePoint-åtkomst](../security/office-365-security/sharepoint-file-access-policies.md)
 
-Här följer en uppsättning contoso-principer för informations skydd.
+Här är den resulterande uppsättningen Contoso-principer för informationsskydd.
 
 ![Principer för villkorlig åtkomst för enheter, Exchange Online och SharePoint](../media/contoso-info-protect/contoso-info-protect-fig1.png)
 
@@ -90,34 +90,34 @@ Här följer en uppsättning contoso-principer för informations skydd.
 
 Med dessa principer ser du till att:
 
-- Appar som tillåts och vilka åtgärder de kan utföra med organisationens data definieras av program skydds principer.
+- Appar som är tillåtna och de åtgärder de kan utföra med organisationens data definieras av principer för appskydd.
 - Datorer och mobila enheter måste vara kompatibla.
-- Exchange Online använder Office 365 Message Encryption (OME) för Exchange Online.
-- SharePoint använder Programbegränsningar.
+- Exchange Online använder meddelandekryptering i Office 365 (OME) för Exchange Online.
+- I SharePoint används apptvingade begränsningar.
 - I SharePoint används åtkomstkontrollprinciper för att endast bevilja åtkomst via webbläsare och för att blockera åtkomst för ohanterade enheter.
 
-## <a name="mapping-microsoft-365-for-enterprise-features-to-contoso-data-levels"></a>Mappa Microsoft 365 för Enterprise-funktioner till data nivåerna contoso
+## <a name="mapping-microsoft-365-for-enterprise-features-to-contoso-data-levels"></a>Mappa Microsoft 365 för företag-funktioner till Contoso-datanivåer
 
-I följande tabell mappas contoso data nivåer till informations skydds funktioner i Microsoft 365 för företag.
+Följande tabell mappar Contosos datanivåer till informationsskyddsfunktionerna i Microsoft 365 för företag.
 
-| Graden | Microsoft 365-molntjänster | Windows 10 och  Microsoft 365-appar för företag | Säkerhet och efterlevnad |
+| Nivå | Microsoft 365-molntjänster | Windows 10 och  Microsoft 365-appar för företag | Säkerhet och efterlevnad |
 |:-------|:-----|:-----|:-----|
 | Nivå 1: Baslinje  | Principer för villkorlig åtkomst i SharePoint och Exchange Online <BR> Behörigheter på SharePoint-webbplatser | Känslighetsetiketter <BR> BitLocker <BR> Windows Information Protection | Principer för villkorlig åtkomst för enheter och hantering av mobilprogram |
 | Nivå 2: Känslig | Nivå 1 plus: <BR> <BR> Markera som känsligt <BR> Microsoft 365-kvarhållningsetiketter på SharePoint-webbplatser <BR> Dataförlustskydd för SharePoint och Exchange Online <BR> Isolerade SharePoint-webbplatser  | Nivå 1 plus: <BR> <BR> Känslighetsetiketter för digitala tillgångar  | Nivå 1 |
-| Nivå 3: Strikt reglerad | Nivå 2 plus: <BR><BR> Skapa en egen nyckel (BYOK) kryptering och skydd för information om bransch hemlighet <BR> Azure Key Vault för affärs program som interagerar med Microsoft 365-tjänster | Nivå 2 | Nivå 1 |
+| Nivå 3: Strikt reglerad | Nivå 2 plus: <BR><BR> Ta med din egen nyckelkryptering (BYOK) och skydd för affärshemlighetsinformation <BR> Azure Key Vault för verksamhetsbaserade program som interagerar med Microsoft 365-tjänster | Nivå 2 | Nivå 1 |
 |||||
 
-Här är den resulterande contoso-säkerhetskonfigurationen.
+Här är den resulterande konfigureringen av Contoso informationsskydd.
 
 ![Contosos resulterande konfiguration av informationsskyddet](../media/contoso-info-protect/contoso-info-protect-fig2.png)
 
 ## <a name="next-step"></a>Nästa steg
 
-Lär dig hur Contoso använder [säkerhetsfunktionerna i Microsoft 365 för företag](contoso-security-summary.md) för identitets-och åtkomst hantering, Hot skydd, informations skydd och säkerhets hantering.
+Lär dig hur Contoso använder säkerhetsfunktionerna i [Microsoft 365](contoso-security-summary.md) för företag för identitets- och åtkomsthantering, skydd mot hot, informationsskydd och säkerhetshantering.
 
 ## <a name="see-also"></a>Se även
 
-[Säkerhetsöversikt](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
+[Säkerhetsöversikt](../security/office-365-security/security-roadmap.md)
 
 [Översikt över Microsoft 365 för företag](microsoft-365-overview.md)
 

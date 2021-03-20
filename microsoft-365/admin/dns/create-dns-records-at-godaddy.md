@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på GoDaddy för Microsoft.
-ms.openlocfilehash: 2b53985dc17f3d124ec2b37dbf0047bce229385c
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: d0163447abdc7b9fe5afd4f471f24ee09de40d50
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126455"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910252"
 ---
 # <a name="create-dns-records-at-godaddy-for-microsoft"></a>Skapa DNS-poster på GoDaddy för Microsoft
 
@@ -123,7 +123,7 @@ Följ stegen nedan.
 
     |**Record type**|**Värd**|**Pekar på**|**Prioritet**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX (Mail Exchanger)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Obs!** Hämta ditt  *\<domain-key\>*  microsoft-konto.           [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |1 timme  <br/> |
+    |MX (Mail Exchanger)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Obs!** Skaffa ditt  *\<domain-key\>*  Microsoft-konto.           [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](../setup/domains-faq.yml) <br/> |1 timme  <br/> |
 
 6. Välj **Spara**.
 
@@ -165,13 +165,13 @@ Följ stegen nedan.
 
 
 
-6. Upprepa dessa steg för att lägga till nästa CNAME-post tills du har skapat alla sex CNAME-posterna.
+6. Upprepa de här stegen för att lägga till nästa CNAME-post tills du har skapat alla sex CNAME-posterna.
 
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Lägga till en TXT-post för SPF för att förhindra skräppost
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg istället till de obligatoriska Microsoft-värdena i den aktuella posten så att du har en  *enda*  SPF-post som innehåller båda uppsättningarna med värden.
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg istället till de obligatoriska Microsoft-värdena i den aktuella posten så att du har  *en*  enda SPF-post som innehåller båda uppsättningarna med värden.
 
 Följ stegen nedan.
 
@@ -229,7 +229,7 @@ Följ stegen nedan.
 
     I rutorna för den nya posten anger du eller kopierar och klistrar in värdena från den första raden i följande tabell.
 
-    (Välj **posttyp** och **TTL-värden** i listrutan.)
+    (Välj värdena **Record type** **och TTL** i listrutan.)
 
     |**Record type**|**Namn**|**Mål**|**Protokoll**|**Tjänst**|**Prioritet**|**Vikt**|**Port**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|

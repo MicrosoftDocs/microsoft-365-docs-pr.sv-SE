@@ -1,7 +1,7 @@
 ---
 title: Förbereda lokala resurser till gång för Microsoft Hanterat skrivbord
-description: Viktiga steg för att se till att en Azure AD kan kommunicera med lokal annons för att tillhandahålla
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+description: Viktiga steg för att se till att en Azure AD kan kommunicera med lokal AD för att tillhandahålla autentisering
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,71 +9,71 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c1732dc17188427f9a181d1c47abe71bb8f39584
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: f6b1e257fd767fa112fddb41d773065b8002a2a3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841417"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909196"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>Förbereda lokala resurser till gång för Microsoft Hanterat skrivbord
 
-På Microsoft Managed Desktop är enheter automatiskt anslutna till Azure Active Directory (Azure AD). Av den anledningen måste du kontrol lera vissa saker för att säkerställa att enheter som är anslutna till Azure AD kan kommunicera med din lokala Active Directory. 
+I Microsoft Managed Desktop blir enheter automatiskt anslutna till Azure Active Directory (Azure AD). Om du använder en lokal Active Directory-miljö måste du därför kontrollera några saker för att säkerställa att enheter som är anslutna till Azure AD kan kommunicera med din lokala Active Directory. 
 
 > [!NOTE]  
-> *Hybrid* Azure AD Join stöds inte av Microsoft Managed Desktop.
+> *Hybrid* Azure AD-koppling stöds inte av Microsoft Managed Desktop.
 
-Med Azure Active Directory kan användarna utnyttja en enkel Sign-On (SSO), vilket innebär att de vanligt vis inte måste ange autentiseringsuppgifter varje gång de använder resurser.
+Med Azure Active Directory kan användarna dra nytta av Single Sign-On (SSO), vilket innebär att de vanligtvis inte behöver ange autentiseringsuppgifter varje gång de använder resurser.
 
-Information om hur du ansluter till Azure Active Directory finns i så här gör du för att [Planera din implementering av Azure AD Join](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan). Om du vill ha bakgrunds information om en enkel Sign-On (SSO) på enheter som är anslutna till Azure AD kan [du läsa om hur SSO till lokala resurser fungerar på Azure AD-anslutna enheter](https://docs.microsoft.com/azure/active-directory/devices/azuread-join-sso#how-it-works).
-
-
-I den här artikeln beskrivs vad du måste kontrol lera för att appar och andra resurser som är beroende av lokala Active Directory-anslutningar ska fungera smidigt med Microsoft Managed Desktop.
+Information om hur du ansluter till Azure Active Directory finns i Så [här gör du: Planera implementering av Azure AD-koppling.](/azure/active-directory/devices/azureadjoin-plan) Bakgrundsinformation om enkel inloggning (Sign-On SSO) på enheter som är anslutna till Azure AD finns i Hur SSO fungerar på lokala resurser med [Azure AD-anslutna enheter.](/azure/active-directory/devices/azuread-join-sso#how-it-works)
 
 
-## <a name="single-sign-on-for-on-premises-resources"></a>Enskilda Sign-On för lokala resurser
+I den här artikeln förklaras de saker du behöver kontrollera för att säkerställa att program och andra resurser som är beroende av lokal Active Directory-anslutning fungerar smidigt med Microsoft Hanterat skrivbord.
 
-Enkel Sign-On (SSO) med UPN och lösen ord är aktiverat som standard på Microsoft Managed Station ära enheter. Men användarna kan även använda Windows Hello för företag, vilket kräver ytterligare konfigurations steg. 
 
-### <a name="single-sign-on-by-using-upn-and-password"></a>Enstaka Sign-On genom att använda UPN och lösen ord
+## <a name="single-sign-on-for-on-premises-resources"></a>Enkel Sign-On för lokala resurser
 
-I de flesta organisationer kan användarna använda SSO för att autentisera sig via UPN och lösen ord på Microsoft Managed Station ära enheter. För att det ska fungera bör du kontrol lera följande:
+Enkel inloggning Sign-On (SSO) med HJÄLP av UPN och lösenord är aktiverat som standard på Microsoft Hanterade skrivbordsenheter. Men användarna kan också använda Windows Hello för företag, vilket kräver några extra inställningar. 
 
-- Kontrol lera att Azure AD Connect är installerat och använder en lokal Active Directory-server med Windows Server 2008 R2 eller senare.
-- Kontrol lera att Azure AD Connect kör en version som stöds och är inställd på att synkronisera dessa tre attribut med Azure AD: 
-    - DNS-domännamn för den lokala Active Directory (där användarna finns)
+### <a name="single-sign-on-by-using-upn-and-password"></a>Enkel Sign-On med HJÄLP av UPN och lösenord
+
+I de flesta organisationer kommer användarna att kunna använda SSO för att autentisera med UPN och lösenord på Microsoft Hanterade skrivbordsenheter. För att se till att den här funktionen fungerar bör du dubbelkolla följande:
+
+- Kontrollera att Azure AD Connect är konfigurerat och använder en lokal Active Directory-server som kör Windows Server 2008 R2 eller senare.
+- Kontrollera att Azure AD Connect kör en version som stöds och är inställd på att synkronisera dessa tre attribut med Azure AD: 
+    - DNS-domännamnet för den lokala Active Directory (där användarna finns)
     - NetBIOS för din lokala Active Directory (där användarna finns)
-    - Användarens SAM-konto namn
+    - ANVÄNDARENs SAM-kontonamn
 
 
-### <a name="single-sign-on-by-using-windows-hello-for-business"></a>Enkla Sign-On genom att använda Windows Hello för företag
+### <a name="single-sign-on-by-using-windows-hello-for-business"></a>Enkel Sign-On med hjälp av Windows Hello för företag
 
-Microsoft Managed Station ära datorer ger också användarna en snabb, lösenordsskyddad upplevelse genom att använda Windows Hello för företag. För att se till att Windows Hello för företag fungerar utan att användarna måste ange respektive UPN och lösen ord kan du gå till [Konfigurera Azure AD-anslutna enheter för lokala Single-Sign att använda Windows Hello för företag](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) för att kontrol lera kraven och sedan följa anvisningarna där.
-
-
-## <a name="apps-and-resources-that-use-authentication"></a>Appar och resurser som använder inloggningsautentisering
-
-Information om hur du använder [program och resurser](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#understand-considerations-for-applications-and-resources) i Azure-innehålls uppsättning för fullständig vägledning om hur du konfigurerar appar så att de fungerar med Azure Active Directory. Sammanfattning:
+Microsoft Hanterade skrivbordsenheter ger också användarna en snabb och lösenordslösenordsupplevelse genom att använda Windows Hello för företag. Om du vill vara säker på att Windows Hello för företag fungerar utan att användarna måste ange respektive UPN och lösenord går du till Konfigurera [Azure AD-anslutna](/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) enheter för lokala Single-Sign På med Windows Hello för företag för att kontrollera kraven och följ sedan anvisningarna där.
 
 
-- Om du använder **molnbaserade program**, till exempel de som lagts till i Azure AD App-galleriet, behöver du inte längre förbereda dig för att arbeta med Microsoft Managed Desktop. Men alla Win32-appar som inte använder WAM (Web Account Manager) kan fortfarande uppmana användare att verifiera.
+## <a name="apps-and-resources-that-use-authentication"></a>Appar och resurser som använder autentisering
 
-- Om du har en **lokal värd** för appar kan du lägga till dem i listan över tillförlitliga platser i webbläsaren. Det här steget gör att Windows-autentisering fungerar smidigt utan att användare uppmanas att ange autentiseringsuppgifter. Information om hur du lägger till program finns på [Betrodda platser](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref#trusted-sites) i [referens för konfigurerbara inställningar](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref).
+I Förstå [överväganden för program och resurser i](/azure/active-directory/devices/azureadjoin-plan#understand-considerations-for-applications-and-resources) Azure-innehållsuppsättningen finns fullständig vägledning om hur du ställer in appar så att de fungerar med Azure Active Directory. Sammanfattning:
 
-- Om du använder Active Directory-federerade tjänster kontrollerar du att SSO är aktiverat med hjälp av stegen i [Verifiera och hantera enkel inloggning med AD FS](https://docs.microsoft.com/previous-versions/azure/azure-services/jj151809(v=azure.100)). 
 
-- För program som är **lokala och använder äldre protokoll** behövs ingen extra installation, så länge enheter har åtkomst till en lokal domänkontrollant för autentisering. För att tillhandahålla säker åtkomst för dessa program bör du Distribuera Azure AD Application Proxy. Mer information finns i [fjärråtkomst till lokala program via Azure Active Directorys programproxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+- Om du använder **molnbaserade appar,** till exempel de som lagts till i Azure AD-appgalleriet, behöver de flesta inga ytterligare förberedelser för att arbeta med Microsoft Managed Desktop. Men alla Win32-appar som inte använder Web Account Manager (WAM) kan fortfarande uppmana användarna att autentisera.
 
-- Appar som körs **lokalt och som är beroende av datorautentisering** stöds inte, så du bör överväga att ersätta dem med nyare versioner.
+- Se till att **lägga till apparna i listan med** betrodda platser i dina webbläsare för lokalt installerade appar. Det här steget gör att Windows-autentiseringen fungerar smidigt, utan att användarna uppmanas att ange autentiseringsuppgifter. Information om hur du lägger till appar [finns i Betrodda](../working-with-managed-desktop/config-setting-ref.md#trusted-sites) platser [i referensen för konfigurerbara inställningar.](../working-with-managed-desktop/config-setting-ref.md)
 
-### <a name="network-shares-that-use-authentication"></a>Nätverks resurser som använder inloggningsautentisering
+- Om du använder Active Directory Federated Services kontrollerar du att SSO är aktiverat med hjälp av stegen i Verifiera och hantera [enkel inloggning med AD FS.](/previous-versions/azure/azure-services/jj151809(v=azure.100)) 
 
-Det krävs inga extra inställningar för att användare ska få åtkomst till nätverks resurser, förutsatt att enheterna har åtkomst till en lokal domänkontrollant genom att använda en UNC-sökväg.
+- För program som **finns** lokalt och använder äldre protokoll krävs ingen extra konfiguration, så länge enheterna har åtkomst till en lokal domänkontrollant för autentisering. För att ge säker åtkomst för de här programmen bör du emellertid distribuera Azure AD-programproxy. Mer information finns i [Fjärråtkomst till lokala program via Azure Active Directory-programproxy.](/azure/active-directory/manage-apps/application-proxy)
 
-### <a name="printers"></a>3100cn
+- Appar som körs **lokalt och använder maskinautentisering** stöds inte, så du bör överväga att ersätta dem med nyare versioner.
 
-Microsoft Managed Station ära datorer kan inte ansluta till skrivare som publiceras i din lokala Active Directory om du inte har konfigurerat [hybrid moln utskrift](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy).
+### <a name="network-shares-that-use-authentication"></a>Nätverksresurser som använder autentisering
 
-När skrivare inte kan identifieras automatiskt i en miljö med endast moln kan användarna använda lokala skrivare genom att använda skrivar Sök vägen eller utskrifts kön, förutsatt att enheterna har åtkomst till en lokal domänkontrollant.
+Ingen extra konfiguration krävs för att användarna ska kunna komma åt nätverksresurser, så länge enheterna har åtkomst till en lokal domänkontrollant genom att använda en UNC-sökväg.
+
+### <a name="printers"></a>Skrivare
+
+Microsoft Managed Desktop-enheter kan inte ansluta till skrivare som publiceras på din lokala Active Directory om du inte har konfigurerat [Hybrid Cloud Print.](/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy)
+
+Även om skrivare inte kan upptäckas automatiskt i en miljö som bara finns i molnet, kan användarna använda lokala skrivare med hjälp av skrivarsökvägen eller sökvägen till skrivarköer, så länge enheterna har åtkomst till en lokal domänkontrollant.
 
 <!--add fuller material on printers when available-->

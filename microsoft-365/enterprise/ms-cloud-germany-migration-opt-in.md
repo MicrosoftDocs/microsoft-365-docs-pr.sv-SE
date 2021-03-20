@@ -1,5 +1,5 @@
 ---
-title: Så här väljer du för migrering från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster i de nya tyska Data Center-områdena
+title: Så här anmäler du dig för migrering från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i de nya tyska datacenterområdena
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -18,72 +18,72 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 'Sammanställning '
-ms.openlocfilehash: bcec542ad285dcabaf71af1ea8efc28f3f7d6b5a
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+description: 'Sammanfattning: '
+ms.openlocfilehash: 190b020ac683bcb97317a281c520b7f1ac92c721
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780326"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910924"
 ---
-# <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Så här väljer du för migrering från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster i de nya tyska Data Center-områdena
+# <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Så här anmäler du dig för migrering från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i de nya tyska datacenterområdena
 
 >[!Note]
 >Den här artikeln gäller endast Microsoft Cloud Germany-kunder (Microsoft Cloud Deutschland).
 >
 
-## <a name="how-to-request-migration"></a>Så här kan du begära migrering
+## <a name="how-to-request-migration"></a>Så här begär du migrering
 
-Om du är en berättigad kund med din tjänst etablerad i Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) och du har loggat in som en global administratör, kan du använda en sida i administrations centret för Microsoft 365 för att välja för migrering.
+Om du är en berättigad kund med din tjänst i Microsoft Cloud Germany (Microsoft Cloud Deutschland) och du har loggat in som innehavaradministratör (global) kan du använda en sida i administrationscentret för Microsoft 365 för att registrera dig för migrering.
 
-För att komma åt sidan, expandera **Inställningar** i navigerings fönstret till vänster och klicka sedan på **organisations profil**.
+För att komma åt sidan **expanderar** du Inställningar i navigeringsfönstret till vänster och klickar sedan på **Organisationsprofil.**
 
-På sidan **organisations profil** bläddrar du ned till **Migrera från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster i det nya tyska Data Center-** området.
+På sidan **Organisationsprofil** bläddrar du ned till avsnittet Migrera från **Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster** i det nya tyska datacenteravsnittet.
 
-Om du vill migrera din tjänst från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster i de nya tyska Data Center-regionerna klickar du på **Välj att välja**.
+Om du vill migrera din tjänst från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i de nya tyska datacenterområdena klickar du **på Registrera.**
  
-![Deltagande i inledning](../media/ms-cloud-germany-migration-opt-in/tenant-migration.png)
+![Introduktion till avanmälning](../media/ms-cloud-germany-migration-opt-in/tenant-migration.png)
 
-Ett nytt avsnitt visas till höger på skärmen för att acceptera din bekräftelse. Välj **Ja** och sedan **Spara**.
+Ett nytt avsnitt visas till höger på skärmen för att acceptera din bekräftelse. Välj **Ja** och klicka sedan på **Spara.**
  
-![Deltagande i godkännande](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
+![Accepterande av avanmälning](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
 
-När du har valt för klient organisationens räkning kommer alla administratörer att se bekräftelsen i **Migrera från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster i det nya tyska data centerområdet** -området, inklusive datum för att välja. Administratörer får också en bekräftelse i meddelande Center för Microsoft 365 Admin Center. 
+När du har gått med på din klientorganisations räkning ser alla administratörer bekräftelsen i Migrera från **Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänsterna** i det nya området för tyska datacenter, inklusive datum för avanmälning. Administratörer får också en bekräftelse i meddelandecentret i administrationscentret för Microsoft 365. 
  
-![Bekräfta deltagande](../media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
+![Bekräftelse på att du har valt att delta](../media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
 
-## <a name="what-happens-after-opting-in-for-migration"></a>Vad händer efter vanligt i för migrering?
+## <a name="what-happens-after-opting-in-for-migration"></a>Vad händer när du har valt att migrera?
 
-Migreringar kommer att påbörjas i 2021 för organisationer som väljer Microsoft-drivna tillvägagångs sätt och kommer att slutföras innan Microsoft Cloud Germany (Microsoft Cloud Deutschland) pensions datum den 29 oktober 2021.  Som ett resultat av migreringen flyttas grundläggande kund uppgifter och abonnemang till de nya tyska regionerna.  Microsoft publicerar uppdateringar under hela migreringsprocessen i meddelande Center. Mer information finns i [de här artiklarna](#more-information) .
+Migreringar påbörjas i början av 2021 för organisationer som väljer att delta i en Microsoft-drivna metod och slutförs innan Microsoft Cloud Germany (Microsoft Cloud Deutschland) tas bort den 29 oktober 2021.  På grund av migreringen flyttas basdata från kunder och prenumerationer till de nya tyska regionerna.  Microsoft publicerar uppdateringar under migreringsprocessen i Meddelandecenter. Läs [följande artiklar om](#more-information) du vill veta mer.
 
-## <a name="what-happens-if-you-do-not-opt-in-for-migration-in-admin-center"></a>Vad händer om du inte väljer att migrera i administrations centret?
+## <a name="what-happens-if-you-do-not-opt-in-for-migration-in-admin-center"></a>Vad händer om du inte anmäler dig till migreringen i Admin Center?
 
-Villkoren för online tjänster har ändrats med villkor som gör att Microsoft kan migrera dina Microsoft 365-, Dynamics 365-och Power BI-data och-abonnemang från Microsoft Cloud Deutschland till ett nytt Data Center. Dessa villkor träder i kraft på alla Microsoft Cloud Germany-abonnemang (Microsoft Cloud Deutschland) som förnyades sedan den 1 maj 2020. 
+Villkoren för onlinetjänster har ändrats så att de omfattar termer som gör det möjligt för Microsoft att migrera dina microsoft 365-, Dynamics 365- och Power BI-data och -prenumerationer från Microsoft Cloud Deutschland till ett nytt datacenter. Dessa villkor gäller för alla prenumerationer på Microsoft Cloud Germany (Microsoft Cloud Deutschland) som förnyats sedan den 1 maj 2020. 
 
-Klient organisationens administratör får ett meddelande via e-post och det meddelande Center som uppmanar dig att deltagandet mot migrering sker automatiskt för en Microsoft-underrättelse. Detta meddelande kommer att skickas till minst 30 dagar före det automatiska deltagandet. När migreringen är klar skickas alla kommunikations-och status uppdateringar till klient organisationens administratörer i meddelande Center.
+Administratören för kundens klientorganisation får ett meddelande i ett e-postmeddelande och meddelandecentret som anger att avanmälning till migrering sker automatiskt för en Microsoft-assisterad migrering. Det här meddelandet skickas minst 30 dagar före den automatiska avanmälan. Efter migreringen skickas all kommunikation och alla statusuppdateringar till kundens innehavaradministratörer i Meddelandecenter.
 
-Kund-och partner klient organisationer uppmanas att välja att delta i migrering i Microsoft 365 Admin Center så att migreringen kan börja så snart som möjligt.
+Customer and partner tenant administrators are encouraged to opt-in for migration in the Microsoft 365 admin center so the migration process can begin as soon as possible.
 
 ## <a name="next-step"></a>Nästa steg
 
-[Förstå kund upplevelsen under migreringen](ms-cloud-germany-transition-experience.md)
+[Förstå kundupplevelsen under migreringen](ms-cloud-germany-transition-experience.md)
 
 ## <a name="more-information"></a>Mer information
 
 Komma igång:
 
-- [Migrering från Microsoft Cloud Deutschland till Office 365-tjänster i de nya tyska Data Center-regionerna](ms-cloud-germany-transition.md)
-- [Hjälp för Microsoft Cloud Deutschland](https://aka.ms/germanymigrateassist)
-- [Kund upplevelse under migreringen](ms-cloud-germany-transition-experience.md)
+- [Migrering från Microsoft Cloud Deutschland till Office 365-tjänster i nya tyska datacenterområden](ms-cloud-germany-transition.md)
+- [Migreringshjälp för Microsoft Cloud Deutschland](https://aka.ms/germanymigrateassist)
+- [Kundupplevelse under migreringen](ms-cloud-germany-transition-experience.md)
 
-Flytta genom över gången:
+Flytta genom övergången:
 
 - [Åtgärder och påverkan i migreringsfaser](ms-cloud-germany-transition-phases.md)
-- [Övrig för hands arbete](ms-cloud-germany-transition-add-pre-work.md)
-- Ytterligare information för [Azure AD](ms-cloud-germany-transition-azure-ad.md), [enheter](ms-cloud-germany-transition-add-devices.md), [upplevelser](ms-cloud-germany-transition-add-experience.md)och [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- [Ytterligare arbete](ms-cloud-germany-transition-add-pre-work.md)
+- Ytterligare information för [Azure AD,](ms-cloud-germany-transition-azure-ad.md) [enheter,](ms-cloud-germany-transition-add-devices.md) [upplevelser](ms-cloud-germany-transition-add-experience.md)och [AD FS.](ms-cloud-germany-transition-add-adfs.md)
 
 Molnappar:
 
-- [Information om programmet för Dynamics 365 migration](https://aka.ms/d365ceoptin)
-- [Information om datamigreringshanteraren för Power BI](https://aka.ms/pbioptin)
-- [Komma igång med din uppgradering av Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
+- [Information om Dynamics 365-migreringsprogram](/dynamics365/get-started/migrate-data-german-region)
+- [Information om Migreringsprogram för Power BI](/power-bi/admin/service-admin-migrate-data-germany)
+- [Komma igång med uppgraderingen till Microsoft Teams](/microsoftteams/upgrade-start-here)

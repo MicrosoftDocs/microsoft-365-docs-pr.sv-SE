@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ce17f413b23ef9ef6abf79a2710a5cec9b05206c
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 1151cddbad2f5b8633b0e0f19a24c470f85d7614
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838537"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908992"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Utvärdera Microsoft Defender för Office 365
 
@@ -44,7 +44,7 @@ Defender för Office 365 i utvärderingsläge skapar Defender för Office 365-e-
 
 Med utvärderingsläge [konfigureras felsäkert](atp-safe-attachments.md) [bifogade](atp-safe-links.md)filer, säkra länkar och postlådebaserade [personifieringsprinciper](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) för din räkning. Alla Defender för Office 365-principer skapas i icke-tvingande läge i bakgrunden och visas inte för dig.
 
-Som en del av konfigurationen konfigurerar utvärderingsläget även [Utökad filtrering för kopplingar.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Filtreringen förbättrar filtreringsprecisionen genom att bevara IP-adress och avsändarinformation, som annars försvinner när e-post passerar genom en e-postsäkerhetsgateway (ESG) framför Defender för Office 365. Förbättrad filtrering för kopplingar förbättrar också filtreringsprecisionen för ditt befintliga EOP-skydd (Exchange Online Protection) mot skräppost och skydd mot nätfiske.
+Som en del av konfigurationen konfigurerar utvärderingsläget även [Utökad filtrering för kopplingar.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Filtreringen förbättrar filtreringsprecisionen genom att bevara IP-adress och avsändarinformation, som annars försvinner när e-post passerar genom en e-postsäkerhetsgateway (ESG) framför Defender för Office 365. Förbättrad filtrering för kopplingar förbättrar också filtreringsprecisionen för ditt befintliga EOP-skydd (Exchange Online Protection) mot skräppost och skydd mot nätfiske.
 
 Förbättrad filtrering för kopplingar har förbättrats filtreringsprecisionen men kan ändra slutbarheten för vissa meddelanden om du har en ESG framför Defender för Office 365 och för närvarande inte kringgår EOP-filtrering. Effekterna är begränsade till EOP-principer. Konfiguration av MDO-principer som en del av utvärderingen skapas i icke-verkställande läge. Om du vill minimera potentiell produktionsrisk kan du kringgå all EOP-filtrering genom att skapa en transportregel som anger SCL (Spam Confidence Level) till -1. Mer [information finns i Använda EAC för att skapa](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)en e-postflödesregel som anger SCL för ett   meddelande.
 
@@ -72,7 +72,7 @@ Om du inte har någon av dessa licenser måste du skaffa en utvärderingslicens.
 
 #### <a name="trial"></a>Utvärderingsversion
 
-Om du vill ha en utvärderingsversionslicens för Microsoft Defender för Office 365 måste du ha rollen Faktureringsadministratör **eller** **Global administratör.** Begära behörighet från någon som har rollen Global administratör. [Läs mer om prenumerationer och licenser](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses)
+Om du vill ha en utvärderingsversionslicens för Microsoft Defender för Office 365 måste du ha rollen Faktureringsadministratör **eller** **Global administratör.** Begära behörighet från någon som har rollen Global administratör. [Läs mer om prenumerationer och licenser](../../commerce/licenses/subscriptions-and-licenses.md)
 
 När du har rätt roll är den rekommenderade vägen att skaffa en utvärderingslicens för Microsoft Defender för Office 365 (abonnemang 2) i administrationscentret för Microsoft 365 genom att gå till Fakturering > Köptjänster. Utvärderingsversionen omfattar en kostnadsfri provperiod på 30 dagar för 25 licenser. [Hämta en utvärderingsversion av Microsoft Defender för Office 365 (abonnemang 2).](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)
 
@@ -80,14 +80,14 @@ Du har ett 30-dagarsfönster med utvärdering för att övervaka och rapportera 
 
 ### <a name="roles"></a>Roller
 
-Exchange Online-roller krävs för att konfigurera Defender för Office 365 i utvärderingsläge.
+**Exchange Online-roller krävs** för att konfigurera Defender för Office 365 i utvärderingsläge. Att tilldela en microsoft 365-efterlevnads- eller säkerhetsadministratörsroll kommer inte att fungera.
 
-- [Läs mer om behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+- [Läs mer om behörigheter i Exchange Online](/exchange/permissions-exo/permissions-exo)
 - [Läs mer om hur du tilldelar administratörsroller](../../admin/add-users/assign-admin-roles.md)
 
 Följande roller krävs:
 
-|Uppgift|Roll|
+|Uppgift|Roll (i Exchange Online)|
 |---|---|
 |Skaffa en kostnadsfri utvärderingsversion eller köp Microsoft Defender för Office 365 (abonnemang 2)|Rollen Faktureringsadministratör ELLER Global administratör|
 |Skapa utvärderingsprincip|Roll för fjärr- och godkända domäner. Säkerhetsadministratörsroll|
@@ -95,7 +95,6 @@ Följande roller krävs:
 |Ta bort utvärderingsprincip|Roll för fjärr- och godkända domäner. Säkerhetsadministratörsroll |
 |Visa utvärderingsrapport|Rollen Säkerhetsadministratör ELLER Säkerhetsläsare|
 |
-
 
 ### <a name="enhanced-filtering"></a>Förbättrad filtrering
 
@@ -111,7 +110,7 @@ URL-länkar i e-postmeddelandeorganen radbryts inte för att minska kundinslag.
 
 ### <a name="email-routing"></a>E-postdirigering
 
-Förbered motsvarande information som du behöver för att ställa in hur din e-post dirigeras, inklusive namnet på den inkommande kopplingen som dirigerar din e-post. Om du bara använder Exchange Online Protection har du ingen koppling.  [Läs mer om e-postflöde och e-postdirigering](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
+Förbered motsvarande information som du behöver för att ställa in hur din e-post dirigeras, inklusive namnet på den inkommande kopplingen som dirigerar din e-post. Om du bara använder Exchange Online Protection har du ingen koppling.  [Läs mer om e-postflöde och e-postdirigering](/office365/servicedescriptions/exchange-online-service-description/mail-flow)
 
 Exempel på e-postdirigeringsscenarier som stöds:
 

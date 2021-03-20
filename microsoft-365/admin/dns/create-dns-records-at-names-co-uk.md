@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: b6c15128-b456-49b4-8b5e-5b823c700f26
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Names.co.uk för Microsoft.
-ms.openlocfilehash: 51dc9b3271468d42e82f98a1b85de5104416b015
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: ddd7286d983a0f180c9aefdbf5218eb9765c8669
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657821"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910048"
 ---
 # <a name="create-dns-records-at-namescouk-for-microsoft"></a>Skapa DNS-poster på Names.co.uk för Microsoft
 
@@ -34,7 +34,7 @@ ms.locfileid: "49657821"
   
 Om Names.co.uk är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag - Online och så vidare.
     
-När du har lagt till dessa poster på Names.co.uk är din domän konfigurerad för att fungera med Microsoft-tjänster.
+När du har lagt till dessa Names.co.uk domän är din domän konfigurerad för att fungera med Microsoft-tjänster.
   
 
   
@@ -63,7 +63,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
     (Välj värdet för **Type** i listrutan.) 
     
-    (Om du behöver lägga till en rad väljer du **Lägg till a/CNAME-poster (+)**.)
+    (Om du behöver lägga till en rad väljer du **ADD A/CNAME RECORDS (+)**.)
     
     (Du kan behöva rulla nedåt.)
         
@@ -71,13 +71,13 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     |:-----|:-----|:-----|
     |(Lämna det här fältet tomt.)  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)    |
        
-    ![NamesUK-BP-verify-1-1](../../media/91ed1f22-a796-418d-bbb0-345e2cd99bde.png)
+    ![NamesUK-BP-Verify-1-1](../../media/91ed1f22-a796-418d-bbb0-345e2cd99bde.png)
   
 4. Välj **Spara**.
     
     (Du kan behöva rulla nedåt.)
     
-    ![NamesUK-BP-verify-1-2](../../media/40e991f9-2209-4210-8762-981cca670d70.png)
+    ![NamesUK-BP-Verify-1-2](../../media/40e991f9-2209-4210-8762-981cca670d70.png)
   
 5. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
@@ -121,7 +121,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     |**Värdnamn**|**Priority**|**Result**|
     |:-----|:-----|:-----|
-    |(Lämna det här fältet tomt.)  <br/> |9.1  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> > [!NOTE]> skaffa ett  *\<domain-key\>*  från ditt Microsoft-konto.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
+    |(Lämna det här fältet tomt.)  <br/> |1  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](../setup/domains-faq.yml) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> > [!NOTE]> Hämta ditt  *\<domain-key\>*  Microsoft-konto.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![NamesUK-BP-Configure-2-1](../../media/e211d73d-864f-4114-864b-8e636c69f595.png)
   
@@ -141,7 +141,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![NamesUK-BP-Configure-2-4](../../media/cd705919-d0bd-408f-82be-b54e732cb05c.png)
   
-## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Lägga till de sex CNAME-posterna som krävs för Microsoft
+## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Lägg till de sex CNAME-posterna som krävs för Microsoft
 <a name="BKMK_add_CNAME"> </a>
 
 1. Kom igång genom att gå till domänsidan på Names.co.uk genom att klicka på [den här länken](https://account.names.co.uk/dashboard#/). Du uppmanas att logga in först.
@@ -158,7 +158,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     (Välj värdet för **Type** i listrutan.) 
     
-    (Om du behöver lägga till en rad väljer du **Lägg till a/CNAME-poster (+)**.)
+    (Om du behöver lägga till en rad väljer du **ADD A/CNAME RECORDS (+)**.)
     
     (Du kan behöva rulla nedåt.)
     
@@ -180,7 +180,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. I stället kan du lägga till de Microsoft-värden som krävs i den aktuella posten så att du har en  *enda*  SPF-post som innehåller båda uppsättningar med värden.
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg istället till de obligatoriska Microsoft-värdena i den aktuella posten så att du har  *en*  enda SPF-post som innehåller båda uppsättningarna med värden.
   
 1. Kom igång genom att gå till domänsidan på Names.co.uk genom att klicka på [den här länken](https://account.names.co.uk/dashboard#/). Du uppmanas att logga in först.
     
@@ -192,7 +192,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![NamesUK-BP-Configure-1-2](../../media/b618f8e5-404e-466a-9e71-acd7479f3994.png)
   
-3. På sidan **DNS Zones on Account** , i kolumnen **Domain Name** , väljer du namnet på den domän som du uppdaterar. 
+3. På sidan **DNS Zones on Account,** i **kolumnen Domain name,** väljer du namnet på den domän som du uppdaterar. 
     
     ![NamesUK-BP-Configure-1-2-1](../../media/20254eec-6952-47ba-b12b-da32860ee7ef.png)
   
@@ -200,7 +200,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     (Välj värdet för **Type** i listrutan.) 
     
-    (Om du behöver lägga till en rad väljer du **Lägg till a/CNAME-poster (+)**.)
+    (Om du behöver lägga till en rad väljer du **ADD A/CNAME RECORDS (+)**.)
     
     (Du kan behöva rulla nedåt.)
     
@@ -235,8 +235,8 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     |**Name**|**Prioritet**|**Vikt**|**Port**|**Result**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip _sip._tls  <br/> |100  <br/> |9.1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls _sipfederationtls._tcp  <br/> |100  <br/> |9.1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![NamesUK-BP-Configure-5-1](../../media/97a96523-005a-4058-9e12-19f6c3bf9b3b.png)
   
@@ -248,4 +248,3 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 > [!NOTE]
 >  Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
-  

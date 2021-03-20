@@ -1,5 +1,5 @@
 ---
-title: Resurser som hjälper dig att uppgradera från Office 2007-servrar och-klienter
+title: Resurser som hjälper dig att uppgradera från Office 2007-servrar och -klienter
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -22,51 +22,50 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: I den här artikeln finns resurser för att hjälpa dig att uppgradera från Office 2007-servrar och-klienter, som support för Office 2007.
+description: Den här artikeln innehåller resurser som hjälper dig att uppgradera från Office 2007-servrar och -klienter allt eftersom supporten för Office 2007 har upphört.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 28fa1d56ef66297eaf69d2d11b720e3de2d668f7
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 36ae7ab70b8a95a7762f426f5a0d463083e7bc71
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519793"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909292"
 ---
-# <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Resurser som hjälper dig att uppgradera från Office 2007-servrar och-klienter
+# <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Resurser som hjälper dig att uppgradera från Office 2007-servrar och -klienter
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Om du använder Office 2007-produkter och-tjänster ska du vara medveten om att stöd för dessa program har avslut ATS. Överväg att flytta till Microsoft Cloud, från och med Microsoft 365. Använd den här artikeln som en utgångs punkt för att granska alternativen och planera din uppgradering.
+Om du använder Office 2007-produkter och -tjänster är det viktigt att stödet för dessa program har upphört. Överväg att flytta till Microsoft-molnet, med början från Microsoft 365. Använd den här artikeln som utgångspunkt för att granska dina alternativ och planera uppgraderingen.
       
-## <a name="office-2007-planning-roadmaps"></a>Office 2007 planerings översikter
+## <a name="office-2007-planning-roadmaps"></a>Planeringsöversikter för Office 2007
   
-Support för Office 2007-produkter och-tjänster har avslut ATS. Följande översikter kan hjälpa dig att planera uppgraderingen nu.
+Supporten för Office 2007-produkter och -tjänster har upphört. Följande översikter hjälper dig att planera uppgraderingen nu.
 
-|**Planera innehåll**|**Datum stöd avslutat**|
+|**Planera innehåll**|**Datum då supporten upphörde**|
 |:-----|:-----|
-|[Office 2007 slut på support översikt](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) <br/> |10 oktober 2017  <br/> |
-|[Översikt över supporten som upphör för Exchange 2007](exchange-2007-end-of-support.md) <br/> |Den 11 april 2017  <br/> |
+|[Översikt över slutet på supporten för Office 2007](/DeployOffice/office-2007-end-support-roadmap) <br/> |10 oktober 2017  <br/> |
+|[Översikt över supporten som upphör för Exchange 2007](exchange-2007-end-of-support.md) <br/> |11 april 2017  <br/> |
 |[Översikt över supporten som upphör för SharePoint Server 2007](sharepoint-2007-end-of-support.md) <br/> |10 oktober 2017  <br/> |
 |[Översikt över supporten som upphör för Project Server 2007](project-server-2007-end-of-support.md) <br/> |10 oktober 2017  <br/> |
-|[Uppgradera från Office Communications Server](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |Den 8 januari 2018  <br/> |
-|[Översikt över supporten som upphör för PerformancePoint Server 2007](pps-2007-end-of-support.md) <br/> |Den 9 januari 2018  <br/> |
+|[Uppgradera från Office Communications Server](/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |8 januari 2018  <br/> |
+|[Översikt över supporten som upphör för PerformancePoint Server 2007](pps-2007-end-of-support.md) <br/> |9 januari 2018  <br/> |
    
-När supporten är slut för en Microsoft-produkt finns det inga fler:
-- Nya säkerhets uppdateringar
-- Nya icke-säkerhetsuppdateringar
-- Kostnads fria eller betalda support alternativ (inklusive anpassade support avtal)
-- Nya tekniska uppdateringar för innehålls innehåll
+När supporten upphör för en Microsoft-produkt finns det inte längre:
+- Nya säkerhetsuppdateringar
+- Nya uppdateringar som inte är säkerhetsuppdateringar
+- Tillgängliga kostnadsfria eller betalda supportalternativ (inklusive anpassade supportavtal)
+- Nya tekniska uppdateringar av onlineinnehåll
 
-Om du är företags organisation eller en enskild hem användare har du flera alternativ att överväga.
+Oavsett om du har en stor verksamhet eller är en enskild hemanvändare har du flera alternativ att överväga.
 
-## <a name="im-a-home-user-what-do-i-do"></a>Jag är hem användare. Vad ska jag göra?
+## <a name="im-a-home-user-what-do-i-do"></a>Jag är hemanvändare. Vad ska jag göra?
 
-Om du använder Office 2007-produkter och-program hemma kan du läsa [den här informationen](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
+Om du använder Office 2007-produkter och -program hemma kan du gå till den [här informationen.](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)
      
 ## <a name="related-topics"></a>Relaterade ämnen
 
 [Video: Vad är Microsoft 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
-[Microsofts livs cykel policy](https://go.microsoft.com/fwlink/?linkid=865200)
+[Microsoft Lifecycle-policy](/lifecycle/)
 
-[Planera uppgraderingen från Office 2007 eller Office 2010-servrar och-klienter](plan-upgrade-previous-versions-office.md)
-  
+[Planera uppgraderingen från Office 2007- eller Office 2010-servrar och -klienter](plan-upgrade-previous-versions-office.md)

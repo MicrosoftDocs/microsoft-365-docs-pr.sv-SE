@@ -1,5 +1,5 @@
 ---
-title: Justera prestanda för Skype för företag – Online
+title: Ställa in prestanda för Skype för företag online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -20,47 +20,46 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: beec23c2-c5d6-4e84-a8af-e82aefca7802
-description: Den här artikeln innehåller länkar för system administratörs planering för nätverks bandbredds krav eller förbättring av Skype för företag – online.
-ms.openlocfilehash: 7111a366ee33d27863bd11861848e1d211dca659
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Den här artikeln innehåller länkar för systemadministratörer som planerar för nätverkets bandbreddskrav eller förbättrar prestanda för Skype för företag – Online.
+ms.openlocfilehash: 6c210dc184f9164318215d37713a9136b556cc0b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696757"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909328"
 ---
-# <a name="tune-skype-for-business-online-performance"></a>Justera prestanda för Skype för företag – Online
+# <a name="tune-skype-for-business-online-performance"></a>Ställa in prestanda för Skype för företag online
 
-Den här artikeln innehåller länkar för system administratörer som vill planera för nätverks bandbredds krav eller som behöver förbättra prestanda i Skype för företag – online. 
+Den här artikeln innehåller länkar för systemadministratörer som vill planera för nätverkets bandbreddskrav eller som behöver förbättra prestanda för Skype för företag – Online. 
   
-## <a name="fine-tuning-skype-for-business-online-performance"></a>Finjustera prestanda för Skype för företag – Online
+## <a name="fine-tuning-skype-for-business-online-performance"></a>Finjustera prestandan för Skype för företag – Online
 
-- **Om du vill veta mer om inställningar och mått för att bevara samtals kvaliteten för din organisation**är det viktigt att läsa [prestanda för medie kvaliteten och nätverks anslutningen i Skype för företag – Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance). Den här artikeln innehåller information om du vill använda ExpressRoute, om de distributions typer och annan information som du behöver.
+- Om du vill veta mer om de inställningar och mått som gäller för god **samtalskvalitet** för din organisation bör du läsa Mediekvalitet och [nätverksanslutningsprestanda](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance)i Skype för företag – Online. I den här artikeln får du information om vilka distributionstyper och annan information du behöver om du vill använda ExpressRoute.
     
-- **För lokala och hybrid installationer**kan du se bandbredds kraven för konferens med uppringning i Skype för företag-servern, se [Planera för konferens med uppringning i Skype för företag – Server 2015](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/conferencing/dial-in-conferencing).
+- **För lokala distributioner** och hybriddistributioner kan du se bandbreddskraven för Skype för företag – Server- och uppringningskonferenser. Se Planera för konferens med uppringning i Skype för företag [– Server 2015.](/skypeforbusiness/plan-your-deployment/conferencing/dial-in-conferencing)
     
-## <a name="more-ways-to-improve-skype-for-business-online-performance"></a>Fler sätt att förbättra prestanda för Skype för företag – Online
+## <a name="more-ways-to-improve-skype-for-business-online-performance"></a>Fler sätt att förbättra prestandan för Skype för företag – Online
 
-- [ExpressRoute och QoS i Skype för företag – Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online): Anslut till Office 365 via en dedicerad nätverks anslutning med Azure ExpressRoute för Office 365 och Skype för företag – online. 
+- [ExpressRoute och QoS](/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online)i Skype för företag – Online: Anslut till Office 365 via en dedikerad nätverksanslutning med hjälp av Azure ExpressRoute för Office 365 och Skype för företag – Online. 
     
-- [Aktivera och använda instrument panelen för samtals kvalitet i Skype för företag – Online](https://docs.microsoft.com/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard): med instrument panelen för samtals kvalitet (CQD) kan du övervaka och få insikter i kvaliteten på samtal som görs med Skype för företag-tjänster. 
+- [Aktivera och använda instrumentpanelen](/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard)för samtalskvalitet i Skype för företag – Online: Med Instrumentpanelen för samtalskvalitet (CQD) kan du övervaka och få kunskap om kvaliteten på samtal som görs med Skype för företag-tjänster. 
     
-## <a name="articles-on-setting-up-skype-for-business-online"></a>Artiklar om hur du konfigurerar Skype för företag – Online
+## <a name="articles-on-setting-up-skype-for-business-online"></a>Artiklar om hur du inställningar för Skype för företag – Online
 
-- [Konfigurera Skype för företag - online](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/set-up-skype-for-business-online)
+- [Konfigurera Skype för företag - online](/skypeforbusiness/set-up-skype-for-business-online/set-up-skype-for-business-online)
     
-- [Konfigurera ljud konferens för Skype för företag och Microsoft Teams](https://docs.microsoft.com/skypeforbusiness/audio-conferencing-in-office-365/set-up-audio-conferencing)
+- [Ställ in ljudkonferenser för Skype för företag och Microsoft Teams](/skypeforbusiness/audio-conferencing-in-office-365/set-up-audio-conferencing)
     
-- [Konfigurera samtals planer (Skype för företag)](https://docs.microsoft.com/SkypeForBusiness/what-are-calling-plans-in-office-365/set-up-calling-plans)
+- [Ställ in samtalsplanering (Skype för företag)](/SkypeForBusiness/what-are-calling-plans-in-office-365/set-up-calling-plans)
     
-- [Det här får du med telefon systemet i Office 365](https://docs.microsoft.com/skypeforbusiness/what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system)
+- [Det här får du med telefonsystemet i Office 365](/skypeforbusiness/what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system)
     
 ## <a name="see-also"></a>Se även
 
 [Network planning and performance tuning for Office 365](network-planning-and-performance.md)
   
-[Optimera ditt nätverk för Skype för företag – Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/optimizing-your-network)
+[Optimera ditt nätverk för Skype för företag – Online](/skypeforbusiness/optimizing-your-network/optimizing-your-network)
   
-[ExpressRoute och QoS i Skype för företag – Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online)
+[ExpressRoute och QoS i Skype för företag – Online](/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online)
   
-[Samtals flöde med ExpressRoute](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/call-flow-using-expressroute)
-
+[Samtalsflöde med ExpressRoute](/skypeforbusiness/optimizing-your-network/call-flow-using-expressroute)

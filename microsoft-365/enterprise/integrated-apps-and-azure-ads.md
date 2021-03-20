@@ -18,39 +18,38 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
-description: Lär dig hur du registrerar och administrerar integrerade Office 365-appar i Azure AD, som tillåter program godkännanden på global administratörs nivå.
-ms.openlocfilehash: 1e84b5e6f82848bf1d100004bcd2711ad2e9ed39
-ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
+description: Lär dig hur du registrerar och administrerar Office 365-integrerade appar i Azure AD, så att appauktoriseringar tillåts på global administratörsnivå.
+ms.openlocfilehash: 0b7392984b77b01abb0992fea5db62b80ed9fb6c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48384905"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909780"
 ---
 # <a name="integrated-apps-and-azure-ad-for-microsoft-365-administrators"></a>Integrerade appar och Azure AD för Microsoft 365-administratörer
 
-Det finns mer att hantera integrerade program än [att bara hantera användares medgivande till appar](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps). Med samband av Microsoft 365 REST-API: er kan användare ge appar åtkomst till sina Microsoft 365-data, till exempel e-post, kalendrar, kontakter, användare, grupper, filer och mappar. Som standard måste användare individuellt bevilja behörigheter till varje app. 
+Hantering av integrerade appar är mer än att bara hantera [användarnas medgivande för appar](../admin/misc/user-consent.md). Med nya Microsoft 365 REST API:er kan användare nu ge appar åtkomst till sina Microsoft 365-data, till exempel e-post, kalendrar, kontakter, användare, grupper, filer och mappar. Som standard måste användarna tilldela enskilda behörigheter till varje app. 
 
-Men det här kan inte skalas bra om du vill auktorisera ett program en gång på global administratörs nivå och lyfta ut det till hela organisationen via Start programmet. För att göra detta måste du registrera programmet i Azure Active Directory (Azure AD). Det finns några steg som du måste vidta innan du kan registrera ett program i Azure AD och viss bakgrunds information som kan hjälpa dig att hantera program i din Microsoft 365-organisation.
+Men det här går inte så bra om du vill auktorisera en app en gång på global administratörsnivå och distribuera den till hela organisationen via startprogrammet. Om du vill göra det måste du registrera appen i Azure Active Directory (Azure AD). Det finns några åtgärder du måste vidta innan du kan registrera en app i Azure AD och viss bakgrundsinformation som du bör känna till kan hjälpa dig att hantera appar i din Microsoft 365-organisation.
   
 ## <a name="azure-ad-resources-for-microsoft-365-admins"></a>Azure AD-resurser för Microsoft 365-administratörer
 
-Du måste göra de här två uppgifterna innan du kan hantera Microsoft 365-programmen i Azure AD.
+Du måste utföra de här två uppgifterna innan du kan hantera dina Microsoft 365-appar i Azure AD.
   
-|Förutsättningar|Anteckningar|
+|Förutsättningar|Kommentarer|
 |:-----|:-----|
-|[Använd din gratis Azure AD-prenumeration](https://docs.microsoft.com/microsoft-365/compliance/use-your-free-azure-ad-subscription-in-office-365) <br/> |Alla betalda abonnemang till Microsoft 365 kommer med ett kostnads fritt abonnemang till Azure AD. Du kan använda Azure AD för att hantera dina appar och för att skapa och hantera användar-och grupp konton. För att använda Azure AD är det bara att gå till Azure Portal på [https://portal.azure.com](https://portal.azure.com) och logga in med ditt Microsoft 365-konto.  <br/> |
-|[Hantera användarens medgivande till appar](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps) <br/> |Du måste hantera användar medgivande till appar för att tillåta att tredjepartsprogram får till gång till Microsoft 365-informationen och du kan registrera appar i Azure AD. Till exempel tredjepartsprogram som använder informationen i kalendern eller kan användas för att redigera filer i en OneDrive-mapp.  <br/> |
+|[Använd din kostnadsfria Azure AD-prenumeration](../compliance/use-your-free-azure-ad-subscription-in-office-365.md) <br/> |I varje betald prenumeration på Microsoft 365 ingår en kostnadsfri prenumeration på Azure AD. Du kan använda Azure AD för att hantera dina appar och för att skapa och hantera användar- och gruppkonton. Om du vill använda Azure AD går du bara till Azure Portal och [https://portal.azure.com](https://portal.azure.com) loggar in med ditt Microsoft 365-konto.  <br/> |
+|[Hantera användarmedgivande för appar](../admin/misc/user-consent.md) <br/> |Du måste hantera användarens medgivande till appar för att tillåta appar från tredje part att få åtkomst till information från microsoft 365 och för att du ska kunna registrera appar i Azure AD. Till exempel tredjepartsprogram som använder informationen i kalendern eller kan användas för att redigera filer i en OneDrive-mapp.  <br/> |
    
-För att hantera Microsoft 365-appar måste du ha kunskap om appar i Azure AD. Använd dessa artiklar för att ge dig den bakgrund du behöver.
+Hantering av Microsoft 365-appar kräver att du har kunskaper om appar i Azure AD. Använd de här artiklarna för att ge dig den bakgrund du behöver.
   
-|Artiklar|Anteckningar|
+|Artikel|Kommentarer|
 |:-----|:-----|
-|[Möt start ikonen för Microsoft 365](https://support.microsoft.com/office/meet-the-microsoft-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a) <br/> |Om du är nybörjare i Start programmet kanske du undrar vad det är och hur du använder det. Start programmet är utformat för att hjälpa dig att komma åt dina appar var som helst i Microsoft 365.  <br/> |
-|[Översikt över API för hantering av Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview) <br/> |Med Microsoft 365 Management API: er kan du ge till gång till dina Microsoft 365-data, inklusive de saker de bryr dig om – deras e-post, kalendrar, kontakter, användare och grupper, filer och mappar. <br/> |
-|[Integrera program i Azure AD](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-add-azure-ad-app) <br/> | Lär dig mer om program som är integrerade med Azure AD och hur du registrerar programmet, förstår koncepten bakom ett registrerat program och lär dig mer om varumärkes regler för program med flera innehavare.  <br/> |
-|[Lägga till anpassade paneler i Start programmet](https://docs.microsoft.com/office365/admin/manage/customize-the-app-launcher)  <br/> |Med Start programmet i Microsoft 365 blir det enklare för användare att hitta och komma åt sina appar. I den här artikeln beskrivs hur du som utvecklare kan få dina appar att visas i användarnas program starter och ger dem en enkel inloggning (SSO) med sina Microsoft 365-autentiseringsuppgifter.  <br/> |
-|[Vägledning för Azure AD-integrering](https://docs.microsoft.com/azure/active-directory/saas-apps/tutorial-list) <br/> |Syftet med dessa själv studie kurser är att visa dig hur du konfigurerar Azure AD SSO för SaaS-program från tredje part.  <br/> |
-|[Autentiseringskrav för Azure AD](https://go.microsoft.com/fwlink/?LinkId=617145) <br/> |Azure AD fören klar autentisering för utvecklare genom att tillhandahålla identitet som en tjänst, med stöd för branschstandardiserade protokoll som OAuth 2,0 och OpenID Connect, samt öppna käll bibliotek för olika plattformar för att snabbt komma igång med kodning. Det här dokumentet hjälper dig att förstå de olika scenarierna för Azure AD och visar hur du kommer igång.  <br/> |
-|[Program åtkomst](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-access-management) <br/> |Azure AD gör det enkelt att integrera många av dagens populära program vara (SaaS). Det ger identitets-och åtkomst hantering, och den levererar en åtkomst panel för användare där de kan identifiera vilken program åtkomst de har och var de kan använda SSO för att få åtkomst till sina program. Den här artikeln innehåller länkar till relaterade resurser som gör det möjligt för dig att få mer information om förbättringar av program åtkomst för Azure AD och hur du kan bidra till dem.  <br/> |
-|[Anpassa Office 365-upplevelsen](https://support.microsoft.com/office/personalize-your-office-365-experience-eb34a21b-52fa-4fbf-a8d5-146132242985) <br/> |Du får snabb åtkomst till de program du använder varje dag genom att lägga till eller ta bort program i Microsoft 365-startprogrammet.  <br/> |
-
+|[Det här är startprogrammet för appar i Microsoft 365](https://support.microsoft.com/office/meet-the-microsoft-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a) <br/> |Om du inte har tillgång till startprogrammet för appar undrar du kanske vad det är och hur det fungerar. Startprogrammet har utformats för att hjälpa dig att komma åt dina appar var som helst i Microsoft 365.  <br/> |
+|[Översikt över API:er för Office 365-hantering](/office/office-365-management-api/office-365-management-apis-overview) <br/> |Med API:er för Microsoft 365-hantering kan du ge åtkomst till dina Microsoft 365-data, inklusive det som är viktigast – e-post, kalendrar, kontakter, användare och grupper, filer och mappar. <br/> |
+|[Integrera program i Azure AD](/azure/active-directory/develop/quickstart-v1-add-azure-ad-app) <br/> | Läs mer om program som är integrerade med Azure AD, hur du registrerar din app, begreppen bakom en registrerad app och om varumärkesriktlinjer för appar med flera innehavare.  <br/> |
+|[Lägga till anpassade paneler i startprogrammet](/office365/admin/manage/customize-the-app-launcher)  <br/> |Med startprogrammet för appar i Microsoft 365 blir det enklare för användare att hitta och komma åt sina appar. I den här artikeln beskrivs hur du som utvecklare kan visa dina appar i startprogrammet för appar och även hur du kan ge dem en bättre upplevelse med enkel inloggning (SSO) med hjälp av Microsoft 365-autentiseringsuppgifterna.  <br/> |
+|[Självstudiekurser om Azure AD-integrering](/azure/active-directory/saas-apps/tutorial-list) <br/> |Med de här självstudiekurserna får du veta hur du konfigurerar Azure AD SSO för SaaS-appar från tredje part.  <br/> |
+|[Autentiseringsscenarier för Azure AD](/azure/active-directory/develop/authentication-vs-authorization) <br/> |Azure AD förenklar autentisering för utvecklare genom att tillhandahålla identitet som en tjänst med stöd för standardiserade protokoll som OAuth 2.0 och OpenID Connect, samt bibliotek för öppen källkod för olika plattformar så att du snabbt kan börja programmera. Det här dokumentet hjälper dig att förstå de olika scenarier som Azure AD stöder och visar hur du kommer igång.  <br/> |
+|[Programåtkomst](/azure/active-directory/manage-apps/what-is-access-management) <br/> |Med Azure AD är det enkelt att integrera många av dagens populära SaaS-program(programvara som en tjänst). Det tillhandahåller identitets- och åtkomsthantering och tillhandahåller en åtkomstpanel för användare där de kan upptäcka vilken programåtkomst de har och var de kan använda SSO för att komma åt programmen. Den här artikeln innehåller länkar till relaterade resurser där du kan läsa mer om förbättringar för programåtkomst för Azure AD och hur du kan bidra till dem.  <br/> |
+|[Anpassa Office 365](https://support.microsoft.com/office/personalize-your-office-365-experience-eb34a21b-52fa-4fbf-a8d5-146132242985) <br/> |Du kan få snabb åtkomst till de appar du använder varje dag genom att lägga till eller ta bort appar i startprogrammet för appar i Microsoft 365.  <br/> |

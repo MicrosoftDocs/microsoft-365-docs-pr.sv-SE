@@ -1,5 +1,5 @@
 ---
-title: Inaktivera profilsynkronisering för Microsoft 365
+title: Inaktivera katalogsynkronisering för Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -20,31 +20,30 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
-description: I den här artikeln hittar du information om hur du använder PowerShell för att inaktivera profilsynkronisering för Microsoft 365.
-ms.openlocfilehash: 0bd8591f91dcf20cb1061b3cd93f69511027bab1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: I den här artikeln hittar du information om hur du använder PowerShell för att inaktivera katalogsynkronisering för Microsoft 365.
+ms.openlocfilehash: 036130b70382e28ad9d8cb10786ad5e266375c20
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694290"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909316"
 ---
-# <a name="turn-off-directory-synchronization-for-microsoft-365"></a>Inaktivera profilsynkronisering för Microsoft 365
-Du kan använda PowerShell för att inaktivera Active Directory-synkronisering. Men vi rekommenderar inte att du inaktiverar katalog-synkronisering som ett fel söknings steg. Om du behöver hjälp med att felsöka Active Directory-synkroniseringen kan du läsa artikeln om att [åtgärda problem med Katalogduplicering för Microsoft 365](fix-problems-with-directory-synchronization.md) . 
+# <a name="turn-off-directory-synchronization-for-microsoft-365"></a>Inaktivera katalogsynkronisering för Microsoft 365
+Du kan använda PowerShell för att inaktivera katalogsynkronisering. Vi rekommenderar dock inte att du inaktiverar katalogsynkronisering som ett felsökningssteg. Om du behöver hjälp med att felsöka katalogsynkroniseringen kan du läsa artikeln Åtgärda problem med [katalogsynkronisering för Microsoft 365.](fix-problems-with-directory-synchronization.md) 
   
-[Kontakta supporten](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) för företags produkter om det behövs.
+[Kontakta supporten](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) för företagsprodukter om det behövs.
   
-## <a name="turn-off-directory-synchronization"></a>Inaktivera profilsynkronisering  
-Så här inaktiverar du synkronisering av kataloger:
+## <a name="turn-off-directory-synchronization"></a>Inaktivera katalogsynkronisering  
+Så här inaktiverar du katalogsynkronisering:
   
-1. Installera först den program vara som krävs och Anslut till ditt Microsoft 365-abonnemang. Anvisningar finns i [ansluta till Microsoft Azure Active Directory-modulen för Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+1. Först installerar du programvaran som krävs och ansluter till din Microsoft 365-prenumeration. Instruktioner finns i [Ansluta till Microsoft Azure Active Directory-modulen för Windows PowerShell.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
     
-2. Använd [set-MsolDirSyncEnabled](https://go.microsoft.com/fwlink/p/?LinkId=821939) för att inaktivera Active Directory-synkronisering: 
+2. Använd [Set-MsolDirSyncEnabled för att](/previous-versions/azure/dn194097(v=azure.100)) inaktivera katalogsynkronisering: 
     
   ```powershell
   Set-MsolDirSyncEnabled -EnableDirSync $false
   ```
 
 >[!Note]
->Om du använder det här kommandot måste du vänta 72 timmar innan du kan aktivera katalog synkronisering.
+>Om du använder det här kommandot måste du vänta 72 timmar innan du kan aktivera katalogsynkroniseringen igen.
 >
- 

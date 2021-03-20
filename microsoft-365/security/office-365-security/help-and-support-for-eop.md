@@ -10,15 +10,15 @@ audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
-description: Microsoft tillhandahåller hjälp för EOP på flera olika platser och metoder, inklusive självsupport och assisterad support.
+description: Microsoft tillhandahåller hjälp för EOP på en mängd olika platser och metoder, inklusive självsupport och assisterad support.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 945f3c4e32a6c41193e3df4813cc4ed4fe9f7b1f
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 0b48c9fadb53fbb7b392c7d4711efc6136509444
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289799"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910744"
 ---
 # <a name="help-and-support-for-eop"></a>Hjälp och support för EOP
 
@@ -29,11 +29,11 @@ ms.locfileid: "50289799"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor kan du använda de tekniska supportresurser som listas i den här artikeln för att få svar om du har problem med EOP. Microsoft tillhandahåller hjälp för EOP på flera olika platser och metoder, inklusive självsupport och assisterad support.
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor hjälper de tekniska supportresurserna som listas i den här artikeln dig att hitta svar om du har problem med EOP. Microsoft tillhandahåller hjälp för EOP på en mängd olika platser och metoder, inklusive självsupport och assisterad support.
 
-## <a name="self-support-options"></a>Alternativ för självstöd
+## <a name="self-support-options"></a>Självsupportalternativ
 
-När du loggar in tillhandahåller administrationscentret för Microsoft 365 information om status för din organisations tjänster. Dessutom visar avsnittet tjänstens hälsa aktuell status för dina tjänster, information om störningar och avbrott och visar planerade underhållstider. Administrationscentret för Microsoft 365 innehåller även information om kända problem och förväntade lösningar. Om du påverkas av en händelse för hela tjänsten bör du se en kommunikationsavisering (vanligtvis åtföljd av en klockikon). Vi rekommenderar att du läser och agerar på alla objekt efter behov. Mer information om hälsoområdet för tjänster finns i [Tjänstens hälsa och kontinuitet.](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) Du kan eventuellt hitta mer hjälp på egen hand med hjälp av de verktyg, forum och communitywebbplatser som anges här.
+När du loggar in innehåller administrationscentret för Microsoft 365 information om status för din organisations tjänster. Dessutom visar avsnittet tjänstens hälsa den aktuella statusen för dina tjänster, information om störningar och avbrott och visar planerade underhållstider. I administrationscentret för Microsoft 365 finns också information om kända problem och förväntade lösningar. Om du påverkas av en tjänstomfattande händelse bör du se en kommunikationsavisering (vanligtvis åtföljd av en klockikon). Vi rekommenderar att du läser och agerar på eventuella objekt efter behov. Mer information om hälsoområdet för tjänsten finns i [Tjänstens hälsa och kontinuitet.](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) Du kanske kan hitta mer hjälp på egen hand med hjälp av de verktyg, forum och communitywebbplatser som listas här.
 
 [Produktöversikt för Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
@@ -41,25 +41,25 @@ När du loggar in tillhandahåller administrationscentret för Microsoft 365 inf
 
 [Microsoft 365-communityn](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Microsoft Support- och återställningsassistenten (SaRA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
+[Support- och återställningsassistenten från Microsoft (SaRA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
 
-[Felsökaren för e-postflöde](https://aka.ms/FixEmail)
+[Felsökare för e-postflöde](https://aka.ms/FixEmail)
 
 ## <a name="assisted-support-from-microsoft"></a>Assisterad support från Microsoft
 
-Du kan få hjälp från Microsoft genom att påbörja en ny serviceförfrågan i administrationscentret för Microsoft 365 eller genom att ringa på telefonen. Premier Support-prenumeranter har extra supportalternativ.
+Du kan få hjälp från Microsoft genom att påbörja en ny servicebegäran i administrationscentret för Microsoft 365 eller genom att ringa på telefonen. Premier Support-prenumeranter har extra supportalternativ.
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Support för Microsoft Premier Support-prenumeranter
 
-Om du är EOP-kund och även har ett Microsoft Premier Support-avtal kan du få support via vanliga Microsoft Premier-supportkanaler. Det gör att du kan få åtkomst till alla processer och resurser som är tillgängliga för Premier Support-kunder, till exempel Premier Technical Account Manager (TAM) och inskickade fall. Premier-supporten för Microsoft Online Services utökar Premier Support-ramverket bortom lokala produkter till onlinetjänster, vilket ger dig en enhetlig supportupplevelse för alla produkter och tjänster. Den här tjänsten säkerställer att kunder snabbt kan lösa problem och förenklar hanteringen av stöd för olika komponenter i en IT-infrastruktur.
+Om du är EOP-kund och även har ett Microsoft Premier Support-avtal kan du få support via vanliga Microsoft Premier-supportkanaler. Det gör att du kan få åtkomst till alla processer och resurser som är tillgängliga för Premier Support-kunder, till exempel en Premier Technical Account Manager (TAM) och inskickade ärende. Premier-support för Microsoft Online Services innebär att Premier-supportramen omfattar mer än lokala produkter och onlinetjänster, vilket ger dig en enhetlig supportupplevelse för alla produkter och tjänster. Den här tjänsten hjälper till att säkerställa att kunder kan lösa problem snabbt och förenklar uppgiften att hantera stöd för olika komponenter i en IT-infrastruktur.
 
-Mer information om hur Premier Support kan hjälpa din organisation att maximera värdet från dina IT-investeringar finns i [Premier-supporten för partner.](https://partner.microsoft.com/support/microsoft-services-premier-support)
+Mer information om hur Premier Support kan hjälpa din organisation att maximera värdet från dina IT-investeringar finns i [Premier Support för partner.](https://partner.microsoft.com/support/microsoft-services-premier-support)
 
 ### <a name="ask-for-help-on-the-web"></a>Be om hjälp på webben
 
 1. Logga in på administrationscentret för Microsoft 365.
 
-2. Gå till **Support** \> **be om kundsupport** ny \> **tjänstförfrågan**
+2. Gå till **support** \> **Be om ny** \> **supportbegäran**
 
 3. Använd formuläret för att lägga till information om ditt problem, söka efter lösningar på tidigare problem eller bifoga loggar eller relaterade filer.
 
@@ -69,7 +69,7 @@ Mer information om hur Premier Support kan hjälpa din organisation att maximera
 
 2. För allmänna produktproblem går du till **Support** \> **Be om kundsupport Ring** teknisk \> **support.**
 
-   Om du har frågor innan du köper EOP, eller frågor om fakturering och prenumerationer, går du till **Support** Fråga om fakturering och prenumerationssupport för \>  \> **kundsupportsamtal.**
+   Om du har frågor innan du köper EOP, eller frågor om fakturering och prenumerationer, går du till **Support** Fråga om kundsupport Ring \>  \> **fakturerings- och prenumerationssupport.**
 
 3. Använd den virtuella agenten för att söka efter det mest aktuella telefonnumret.
 
@@ -81,16 +81,16 @@ Microsoft tillhandahåller lokala eller avgiftsfria telefonnummer för produktsu
 
 |Land eller region.|Frågor om förköp och fakturering|Frågor om teknisk support|
 |---|---|---|
-|Brasilien|Avgiftsfria: 08007621146 <br> Lokalt: 1147001999|Samma|
-|Frankrike|Avgiftsfria: 0805 540 594 <br> Lokalt: 01 57 32 42 97|Samma|
-|Tyskland|Avgiftsfria: 0800 589 2332 <br>  Lokalt: 069 380 789 508|Samma|
-|Japan |Avgiftsfria: 0120-628860 <br> Lokalt: 343326257|Avgiftsfria: 0120-996680 <br> Lokalt: 357679793|
-|Korea|Avgiftsfria: 080-495-0880 <br> Lokalt: 234831937|Samma|
-|Spanien|Avgiftsfria: 900 814 197 <br> Lokalt: 912 718 160|Samma|
-|Storbritannien|Avgiftsfria: 0800 032 6417 <br> Lokalt: 0203 450 6455|Samma|
+|Brasilien|Avgiftsfria: 08007621146 <br> Lokal: 1147001999|Samma|
+|Frankrike|Avgiftsfria: 0805 540 594 <br> Lokal: 01 57 32 42 97|Samma|
+|Tyskland|Avgiftsfria: 0800 589 2332 <br>  Lokal: 069 380 789 508|Samma|
+|Japan |Avgiftsfria: 0120-628860 <br> Lokal: 343326257|Avgiftsfria: 0120-996680 <br> Lokal: 357679793|
+|Korea |Avgiftsfria: 080-495-0880 <br> Lokal: 234831937|Samma|
+|Spanien|Avgiftsfria: 900 814 197 <br> Lokal: 912 718 160|Samma|
+|Storbritannien|Avgiftsfria: 0800 032 6417 <br> Lokal: 0203 450 6455|Samma|
 |USA|Avgiftsfria: 1-877-913-2707|Avgiftsfria: 1-800-865-9408|
 |
 
-## <a name="for-more-information-about-eop-documentation"></a>Mer information om EOP-dokumentationen
+## <a name="for-more-information-about-eop-documentation"></a>Mer information om EOP-dokumentation
 
-[Hjälpmedel i Exchange Online](https://docs.microsoft.com/Exchange/accessibility/accessibility)
+[Hjälpmedel i Exchange Online](/Exchange/accessibility/accessibility)

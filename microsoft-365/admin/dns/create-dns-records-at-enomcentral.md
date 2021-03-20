@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på eNomCentral för Microsoft.
-ms.openlocfilehash: e6e05b987a893da582ea7fb062eafe421861b970
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 528659667ee062c8cf767bed0989558020032924
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658117"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910372"
 ---
 # <a name="create-dns-records-at-enomcentral-for-microsoft"></a>Skapa DNS-poster på eNomCentral för Microsoft
 
@@ -34,7 +34,7 @@ ms.locfileid: "49658117"
 
 Om eNomCentral är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag - Online och så vidare.
 
-När du har lagt till dessa poster på eNomCentral är din domän konfigurerad för att fungera med Microsoft-tjänster.
+När du har lagt till dessa poster på eNomCentral är domänen konfigurerad för att fungera med Microsoft-tjänster.
 
 > [!NOTE]
 > Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md).
@@ -53,27 +53,27 @@ Följ stegen nedan eller [titta på videon (börja vid 0:46)](https://support.mi
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. Under **My Domains** väljer du namnet på den domän som du vill redigera.
+2. Under **Mina domäner** väljer du namnet på den domän som du vill redigera.
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
 3. I listrutan **Manage Domain** väljer du **Host Records**.
 
-   ![eNom-BP-verify-1-1](../../media/6e4184a1-9525-47a6-8a8a-9600126c0db4.png)
+   ![eNom-BP-Verify-1-1](../../media/6e4184a1-9525-47a6-8a8a-9600126c0db4.png)
 
 4. I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
 
-   Välj värdet **Record Type** i list rutan.
+   Välj **värdet Record Type** i listrutan.
 
-   |Värdnamn|Record Type|Adress|
+   |Host Name|Record Type|Adress|
    |---|---|---|
    |@|TXT|MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)|
 
-   ![eNom-BP-verify-1-2](../../media/e1f95529-46a6-40f9-9709-9fe66f373bcf.png)
+   ![eNom-BP-Verify-1-2](../../media/e1f95529-46a6-40f9-9709-9fe66f373bcf.png)
 
 5. Välj **Spara**.
 
-   ![eNom-BP-verify-1-3](../../media/d6277ab0-5d03-44e0-968f-fd5de1905423.png)
+   ![eNom-BP-Verify-1-3](../../media/d6277ab0-5d03-44e0-968f-fd5de1905423.png)
 
 6. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
 
@@ -101,7 +101,7 @@ Följ stegen nedan eller [titta på videon (börja vid 3:40)](https://support.mi
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. Under **My Domains** väljer du namnet på den domän som du vill redigera.
+2. Under **Mina domäner** väljer du namnet på den domän som du vill redigera.
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -115,9 +115,9 @@ Följ stegen nedan eller [titta på videon (börja vid 3:40)](https://support.mi
 
 5. I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
 
-   |Värdnamn|Adress|Pref|
+   |Host Name|Adress|Pref|
    |---|---|---|
-   |@| *\<domain-key\>*  . mail.protection.outlook.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> **Obs!** Hämta ditt  *\<domain-key\>*  från ditt Microsoft-konto. [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)|10.3  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)|
+   |@| *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> **Obs!** Skaffa ditt  *\<domain-key\>*  Microsoft-konto. [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)|10  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](../setup/domains-faq.yml)|
 
    ![eNom-BP-Configure-2-1](../../media/c32e8954-8209-4f77-a3a8-4b7aeea325d5.png)
 
@@ -129,7 +129,7 @@ Följ stegen nedan eller [titta på videon (börja vid 3:40)](https://support.mi
 
    ![eNom-BP-Configure-2-3](../../media/5017ed03-ca76-4c5c-93a7-84ffe24125dc.png)
 
-8. Välj **ta bort markerad**.
+8. Välj **delete checked**.
 
    ![eNom-BP-Configure-2-4](../../media/072dc039-bddb-4c1f-bb44-5660e77f14b0.png)
 
@@ -142,7 +142,7 @@ Följ stegen nedan eller [titta på videon (börja vid 4:24)](https://support.mi
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. Under **My Domains** väljer du namnet på den domän som du vill redigera.
+2. Under **Mina domäner** väljer du namnet på den domän som du vill redigera.
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -150,15 +150,15 @@ Följ stegen nedan eller [titta på videon (börja vid 4:24)](https://support.mi
 
    ![eNom-BP-Configure-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
 
-4. Välj **ny rad**.
+4. Markera **en ny rad**.
 
    ![eNom-BP-Configure-3-1](../../media/a30f0a88-7b09-411e-9133-e7965bcf1de0.png)
 
 5. I rutorna för de sex nya posterna skriver du in, eller kopierar och klistrar in, följande värden.
 
-   Välj värdet **Record Type** i list rutan.
+   Välj **värdet Record Type** i listrutan.
 
-   |Värdnamn|Record Type|Adress|
+   |Host Name|Record Type|Adress|
    |---|---|---|
    |autodiscover|CNAME (Alias)|autodiscover.outlook.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)**|
    |sip|CNAME (Alias)|sipdir.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)**|
@@ -176,7 +176,7 @@ Följ stegen nedan eller [titta på videon (börja vid 4:24)](https://support.mi
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. I stället kan du lägga till de Microsoft-värden som krävs i den aktuella posten så att du har en  *enda*  SPF-post som innehåller båda uppsättningar med värden.
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg istället till de obligatoriska Microsoft-värdena i den aktuella posten så att du har  *en*  enda SPF-post som innehåller båda uppsättningarna med värden.
 
 Följ stegen nedan eller [titta på videon (börja vid 5:12)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).
 
@@ -184,7 +184,7 @@ Följ stegen nedan eller [titta på videon (börja vid 5:12)](https://support.mi
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. Under **My Domains** väljer du namnet på den domän som du vill redigera.
+2. Under **Mina domäner** väljer du namnet på den domän som du vill redigera.
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -194,9 +194,9 @@ Följ stegen nedan eller [titta på videon (börja vid 5:12)](https://support.mi
 
 4. I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
 
-   Välj värdet **Record Type** i list rutan.
+   Välj **värdet Record Type** i listrutan.
 
-   |Värdnamn|Record Type|Adress|
+   |Host Name|Record Type|Adress|
    |---|---|---|
    |@|TXT|v=spf1 include:spf.protection.outlook.com -all  <br/>**Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.    |
 
@@ -215,7 +215,7 @@ Följ stegen nedan eller [titta på videon (börja vid 5:50)](https://support.mi
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. Under **My Domains** väljer du namnet på den domän som du vill redigera.
+2. Under **Mina domäner** väljer du namnet på den domän som du vill redigera.
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -223,16 +223,16 @@ Följ stegen nedan eller [titta på videon (börja vid 5:50)](https://support.mi
 
    ![eNom-BP-Configure-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
 
-4. Till höger om **ny rad** väljer du **Add SRV or SPF record**.
+4. Till höger om den **nya raden väljer** du lägg till **SRV- eller SPF-post**.
 
    ![eNom-BP-Configure-5-1](../../media/c73c154d-5aa0-41ef-be25-f43129eb178c.png)
 
 5. I rutorna för de två nya posterna skriver du, eller kopierar och klistrar in, värdena från följande tabell.
 
-   |Tjänst|Protokoll|Ordningen|Väga|Port|Mål (värdnamn)|
+   |Tjänst|Protokoll|Prioritet|Vikt|Port|Target (Hostname)|
    |---|---|---|---|---|---|
-   |_sip|_tls|100|9.1|443|sipdir.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)**|
-   |_sipfederationtls|_tcp|100|9.1|5061|sipfed.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)**|
+   |_sip|_tls|100|1|443|sipdir.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)**|
+   |_sipfederationtls|_tcp|100|1|5061|sipfed.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)**|
 
    ![eNom-BP-Configure-5-2](../../media/4d478f40-780f-43b9-940b-712b09da8c63.png)
 

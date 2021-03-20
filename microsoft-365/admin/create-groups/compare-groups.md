@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Lär dig mer om de typer av grupper som du kan använda.
-ms.openlocfilehash: dfb726fadbfbcf69a8ff57fa3d9025cd8811e617
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 8565b567706a70bb014fab42b23e9c55fb0efc45
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727253"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908752"
 ---
 # <a name="compare-groups"></a>Jämföra grupper
 
@@ -45,19 +45,19 @@ Microsoft 365-grupper används för samarbete mellan användare, både inom och 
 
 Du kan lägga till personer utanför organisationen i en grupp så länge som detta har [aktiverats av administratören](manage-guest-access-in-groups.md). Du kan också tillåta externa avsändare att skicka e-post till gruppens e-postadress.
 
-Microsoft 365-grupper kan vara [konfigurerade för dynamiskt medlemskap i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type), så att gruppmedlemmarna kan läggas till eller tas bort automatiskt utifrån användarattribut, till exempel avdelning, plats, befattning osv.
+Microsoft 365-grupper kan vara [konfigurerade för dynamiskt medlemskap i Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type), så att gruppmedlemmarna kan läggas till eller tas bort automatiskt utifrån användarattribut, till exempel avdelning, plats, befattning osv.
 
 Microsoft 365-grupper kan nås via mobilappar, t. ex. Outlook för iOS och Outlook för Android.
 
-Gruppmedlemmar kan skicka som eller skicka för gruppens e-postadress om det har [Aktiverats av administratören](allow-members-to-send-as-or-send-on-behalf-of-group.md).
+Gruppmedlemmar kan skicka som eller skicka för gruppens e-postadress om det har [Aktiverats av administratören](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md).
 
 ## <a name="distribution-groups"></a>Distributionsgrupper
 
-[Distributionsgrupper](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups) används för att skicka aviseringar till en grupp användare. De kan ta emot externa e-postmeddelanden om de aktiveras av administratören.
+[Distributionsgrupper](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups) används för att skicka aviseringar till en grupp användare. De kan ta emot externa e-postmeddelanden om de aktiveras av administratören.
 
 Distributionsgrupper passar bäst för situationer där du behöver skicka information till en grupp användare, t. ex. "personer i byggnad A" eller "alla på Contoso".
 
-Distributionsgrupper kan [uppgraderas till Microsoft 365-grupper](https://docs.microsoft.com/microsoft-365/admin/manage/upgrade-distribution-lists).
+Distributionsgrupper kan [uppgraderas till Microsoft 365-grupper](../manage/upgrade-distribution-lists.md).
 
 ## <a name="security-groups"></a>Säkerhetsgrupper
 
@@ -65,7 +65,7 @@ Distributionsgrupper kan [uppgraderas till Microsoft 365-grupper](https://docs.m
 
 Säkerhetsgrupper kan innehålla användare och enheter. Om du vill skapa en säkerhetsgrupp för enheter kan du använda tjänster för hantering av mobila enheter, t. ex. Intune.
 
-Säkerhetsgrupper kan vara [konfigurerade för dynamiskt medlemskap i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type), så att gruppmedlemmar eller enheter kan läggas till eller tas bort automatiskt utifrån användarattribut, till exempel avdelning, plats, befattning eller enhetsattribut, t. ex. versionen på operativsystem.
+Säkerhetsgrupper kan vara [konfigurerade för dynamiskt medlemskap i Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type), så att gruppmedlemmar eller enheter kan läggas till eller tas bort automatiskt utifrån användarattribut, till exempel avdelning, plats, befattning eller enhetsattribut, t. ex. versionen på operativsystem.
 
 ## <a name="mail-enabled-security-groups"></a>E-postaktiverad säkerhetsgrupp
 

@@ -18,54 +18,54 @@ f1.keywords:
 - CSH
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
-description: Innehåller länkar till andra artiklar som beskriver hur du kan förbättra prestanda för sid nedladdnings tider för SharePoint Online.
-ms.openlocfilehash: c488cb47205c8f250494420ffe3a068244411859
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Innehåller länkar till andra artiklar som visar hur du förbättrar prestanda för nedladdningstiden för sidor i SharePoint Online.
+ms.openlocfilehash: 9ce463898b81e1653932864276be2fa8d6ce830b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694757"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909340"
 ---
 # <a name="tune-sharepoint-online-performance"></a>Justera SharePoint Online-prestanda
 
-Den här artikeln innehåller länkar till andra artiklar som beskriver hur du kan förbättra prestanda för sid nedladdnings tider för SharePoint Online. Den här artikeln är en del av [nätverks planering och prestanda justering för Office 365](https://aka.ms/tune) Project.
+Den här artikeln innehåller länkar till andra artiklar som beskriver hur du förbättrar prestanda för nedladdningstiden för sidor i SharePoint Online. Den här artikeln är en del [av projektet Nätverksplanering och prestandajustering för Office 365.](./network-planning-and-performance.md)
 
-## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>Artiklar om fin justering av prestanda i SharePoint Online
+## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>Artiklar om finjustering av prestanda i SharePoint Online
 
-Använd dessa artiklar för att finjustera prestandan i SharePoint Online.
+Använd de här artiklarna till att finjustera prestandan för SharePoint Online.
   
-- [Introduktion till prestanda justering för SharePoint Online](introduction-to-performance-tuning-for-sharepoint-online.md)
+- [Introduktion till prestandajustering för SharePoint Online](introduction-to-performance-tuning-for-sharepoint-online.md)
 
-- [Använda verktyget för nätverksdiagnostik för SharePoint Online](page-diagnostics-for-spo.md)
+- [Använda verktyget Siddiagnostik för SharePoint Online](page-diagnostics-for-spo.md)
 
-- [Navigerings alternativ för SharePoint Online](navigation-options-for-sharepoint-online.md)
+- [Navigeringsalternativ för SharePoint Online](navigation-options-for-sharepoint-online.md)
 
-- [Prestanda vägledning för SharePoint online-portaler](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-performance)
+- [Prestandavägledning för SharePoint Online-portaler](/sharepoint/dev/solution-guidance/portal-performance)
 
-- [Bild optimering för SharePoint Online](image-optimization-for-sharepoint-online.md)
+- [Bildoptimering för SharePoint Online](image-optimization-for-sharepoint-online.md)
 
-- [Fördröj inläsning av bilder och Java Script i SharePoint Online](delay-loading-images-and-javascript-in-sharepoint-online.md)
+- [Fördröja inläsning av bilder och JavaScript i SharePoint Online](delay-loading-images-and-javascript-in-sharepoint-online.md)
 
-- [För minskning och buntar i SharePoint Online](minification-and-bundling-in-sharepoint-online.md)
+- [Förgrening och sammanslagning i SharePoint Online](minification-and-bundling-in-sharepoint-online.md)
 
-- [Använda Office 365-innehålls leverans nätverk (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md)
+- [Använda Office 365 Content Delivery Network (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md)
 
-- [Använda webb delen för innehålls sökning i stället för webb delen innehålls fråga för att förbättra prestanda i SharePoint Online](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
+- [Använda webbdel för innehållssökning i stället för webbdel för innehållsfråga för att förbättra prestanda i SharePoint Online](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
 
 - [Kapacitetsplanering och belastningstestning av SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
 
-- [Diagnosticera prestanda problem med SharePoint Online](diagnosing-performance-issues-with-sharepoint-online.md)
+- [Diagnostisering av prestandaproblem i SharePoint Online](diagnosing-performance-issues-with-sharepoint-online.md)
 
 - [Använda objektcachen med SharePoint Online](using-the-object-cache-with-sharepoint-online.md)
 
-- [Så här gör du för att undvika begränsning eller blockering i SharePoint Online](https://msdn.microsoft.com/library/office/dn889829.aspx)
+- [Så här gör du för att: Undvika begränsningar och blockeringar i SharePoint Online](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)
 
-- [Optimera iFrames i SharePoint Online-moderna Portal sidor](modern-iframe-optimization.md)
+- [Optimera iFrames i sidor med moderna portaler i SharePoint Online](modern-iframe-optimization.md)
 
-- [Optimera webb dels prestanda i SharePoint Online-moderna Portal sidor](modern-web-part-optimization.md)
+- [Optimera webbdelsprestanda i moderna portalsidor i SharePoint Online](modern-web-part-optimization.md)
 
-- [Optimera sid samtal i SharePoint Online-moderna Portal sidor](modern-page-call-optimization.md)
+- [Optimera sidsamtal i moderna portalsidor i SharePoint Online](modern-page-call-optimization.md)
 
-- [Optimera sid tjock leken i SharePoint Online-moderna Portal sidor](modern-page-weight-optimization.md)
+- [Optimera sid vikt i moderna portalsidor i SharePoint Online](modern-page-weight-optimization.md)
 
-- [Optimera bilder i SharePoint Online-moderna Portal sidor](modern-image-optimization.md)
+- [Optimera bilder i moderna portalsidor i SharePoint Online](modern-image-optimization.md)

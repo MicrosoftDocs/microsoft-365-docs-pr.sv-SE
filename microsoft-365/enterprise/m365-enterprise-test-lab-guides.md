@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Skapa miljöer för demonstrationer, funktionstest och utveckling/testning för Microsoft 365 för företag med hjälp av testlabbguider.
-ms.openlocfilehash: fefbb18fd108dceba6f387fb8244619c4bb1c167
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: a006f549d0ac68562faee9c935df7f15161b2f12
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487476"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909604"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Testlabbguider för Microsoft 365 för företag
 
@@ -31,23 +31,23 @@ ms.locfileid: "48487476"
 
 Med testlabbguider kan du snabbt lära dig mer om Microsofts produkter. De innehåller instruktioner för hur du konfigurerar enkla men representativa testmiljöer. Du kan använda dessa miljöer för demonstrationer, anpassningar eller skapa komplexa funktionstester under giltighetstiden för en utvärderingsversion eller med en betald prenumeration.
 
-Testlabbguiderna är modulära. De bygger på varandra, vilket innebär att du kan skapa flera konfigurationer som matchar dina utbildnings- eller testkonfigurationsbehov. Den "Jag har byggt det själv och det fungerar" praktisk upplevelse hjälper dig att förstå distributions kraven för en ny produkt eller ett scenario, så att du bättre kan planera för att vara med i produktionen.
+Testlabbguiderna är modulära. De bygger på varandra, vilket innebär att du kan skapa flera konfigurationer som matchar dina utbildnings- eller testkonfigurationsbehov. Med hjälp av funktionen "Jag har byggt ut det själv och det fungerar" får du hjälp att förstå distributionskraven för en ny produkt eller ett nytt scenario, så att du bättre kan planera för värdskap i produktionen.
 
-Du kan också använda Molntjänsterhttps://aka.MS/k53sfj för att skapa representativa miljöer för att utveckla och testa program, även kallat utvecklings-och test miljöer.
+Du kan också använda TGG för att skapa representativa miljöer för att utveckla och testa program, även kallat utvecklings-/testmiljöer.
   
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-Om du vill visa en visuell karta till alla artiklar i gruppen Microsoft 365 för Enterprise-testlabbet expanderar du följande bild eller går till [Microsoft 365 för Enterprise prov Lab-guide](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+Om du vill se en visuell karta till alla artiklar i microsoft 365 för företag – testlabbguide-stacken expanderar du följande bild eller går till [Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf)för företag Testlabbguide stack .
 
 [![Samlingen med testlabbguider för Microsoft 365 för företag](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="base-configuration"></a>Grundläggande konfiguration
 
-Börja med att skapa en test miljö för [Microsoft 365 för företag](https://docs.microsoft.com/microsoft-365-enterprise/). Du kan skapa två olika typer av grundläggande konfigurationer:
+Skapa först en testmiljö för [Microsoft 365 för företag.](/microsoft-365-enterprise/) Du kan skapa två olika typer av grundläggande konfigurationer:
 
-- [Lightweight Base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md) – Använd det här alternativet om du vill konfigurera och demonstrera Microsoft 365 för Enterprise-funktioner och-funktioner i en moln miljö, som inte innehåller några lokala komponenter.
+- [Enkel grundkonfiguration](lightweight-base-configuration-microsoft-365-enterprise.md) – Använd det här om du vill konfigurera och visa funktioner för Microsoft 365 för företag i en miljö som bara är molnbaserad, som inte innehåller några lokala komponenter.
 
-- [Simulerad företags bas konfiguration](simulated-ent-base-configuration-microsoft-365-enterprise.md) – Använd det här alternativet om du vill konfigurera och bevisa Microsoft 365 för Enterprise-funktioner och-funktioner i en hybrid moln miljö, som använder lokala komponenter, till exempel AD DS-domän (Active Directory Domain Services).
+- [Simulerad företagsbaskonfiguration](simulated-ent-base-configuration-microsoft-365-enterprise.md) – Använd det här alternativet om du vill konfigurera och demonstrera Microsoft 365 för företagsfunktioner och -funktioner i en hybridmolnmiljö som använder lokala komponenter som AD DS-domäner (Active Directory Domain Services).
 
 Du kan också skapa testmiljöer för Office 365 E5 genom att inte lägga till Microsoft 365 E5-licensen i utvärderings- eller produktionstestmiljön.
     
@@ -69,7 +69,7 @@ För en demonstration av identitetsrelaterade funktioner, se:
 
 - [Enkel inloggning med Azure AD](single-sign-on-m365-ent-test-environment.md)
   
-   Aktivera och testa Azure AD-sömlös enkel inloggning (sömlös SSO) med en AD DS-domänkontrollant.
+   Aktivera och testa sömlös enkel inloggning (sömlös SSO) i Azure AD med en AD DS-domänkontrollant.
 
 - [Multifaktorautentisering](multi-factor-authentication-microsoft-365-test-environment.md)
   
@@ -85,7 +85,7 @@ För en demonstration av identitetsrelaterade funktioner, se:
 
 - [Återställning av lösenord](password-reset-m365-ent-test-environment.md)
 
-   Använd självbetjäning för återställning av lösen ord för att återställa ditt lösen ord.
+   Använd självbetjäning för återställning av lösenord för att återställa lösenordet.
 
 - [Automatisk licensiering och gruppmedlemskap](automate-licenses-group-membership-microsoft-365-test-environment.md)
 

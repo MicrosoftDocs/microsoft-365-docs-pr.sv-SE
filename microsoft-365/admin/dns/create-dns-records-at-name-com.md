@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på name.com för Microsoft.
-ms.openlocfilehash: 2330755412abfe262ac79c4acbfc12e33af76fe2
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 97cc83fe060f8fbfe78decff584bded3102b09b5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657833"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910180"
 ---
 # <a name="create-dns-records-at-namecom-for-microsoft"></a>Skapa DNS-poster på name.com för Microsoft
 
@@ -34,7 +34,7 @@ ms.locfileid: "49657833"
   
 Om name.com är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag - Online och så vidare.
   
-När du har lagt till dessa poster på name.com är din domän konfigurerad för att fungera med Microsoft-tjänster.
+När du har lagt till dessa name.com domän är din domän konfigurerad för att fungera med Microsoft-tjänster.
 
   
 > [!NOTE]
@@ -56,7 +56,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. Välj **DNS Records** i kolumnen **information** . 
+3. Välj DNS **Records** i **kolumnen Details.** 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
@@ -69,7 +69,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     |**Typ** <br/> |**Host (värd)** <br/> |**Answer (svar)** <br/> |**TTL** <br/> |
     |TXT  <br/> |(Lämna det här fältet tomt.)  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |Använd standardvärdet (300).  <br/> |
    
-    ![Namn-BP-verify-1-1](../../media/0c352fd3-cf84-439f-a481-0705e225cc54.png)
+    ![Name-BP-Verify-1-1](../../media/0c352fd3-cf84-439f-a481-0705e225cc54.png)
   
 5. Välj **Add Record**.
     
@@ -109,7 +109,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. Välj **DNS Records** i kolumnen **information** . 
+3. Välj DNS **Records** i **kolumnen Details.** 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
@@ -119,9 +119,9 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     |**Typ**|**Host (värd)**|**Answer (svar)**|**TTL**|**Prio**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(Lämna det här fältet tomt.)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Obs!** Hämta ditt  *\<domain-key\>*  från ditt Microsoft-konto.           [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |Använd standardvärdet (300).  <br/> |siffrorna  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |MX  <br/> |(Lämna det här fältet tomt.)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Obs!** Skaffa ditt  *\<domain-key\>*  Microsoft-konto.           [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |Använd standardvärdet (300).  <br/> |0  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](../setup/domains-faq.yml) <br/> |
    
-   ![Namn-BP-Configure-2-1](../../media/11ba2160-fc8e-4196-bb15-2b7c6d49c8fc.png)
+   ![Name-BP-Configure-2-1](../../media/11ba2160-fc8e-4196-bb15-2b7c6d49c8fc.png)
   
 5. Välj **Add Record**.
     
@@ -129,11 +129,11 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 6. Om det förekommer andra MX-poster tar du bort dem med följande tvåstegsprocedur:
     
-    För var och en av de andra MX-posterna väljer du **Delete** i kolumnen **Actions** . 
+    För varje MX-post väljer du **Delete** i **kolumnen Actions.** 
     
     ![Name-BP-Configure-2-3](../../media/16734a98-31c4-4023-a2a5-10b7c95bc58e.png)
   
-    Bekräfta varje borttagning genom att välja **ta bort** i kolumnen **åtgärder** igen. 
+    Bekräfta varje borttagning genom att välja **Ta bort** i **kolumnen Åtgärder** igen. 
     
     ![Name-BP-Configure-2-4](../../media/409c21c5-51f4-4244-bb84-5d32084224b2.png)
   
@@ -150,7 +150,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. Välj **DNS Records** i kolumnen **information** . 
+3. Välj DNS **Records** i **kolumnen Details.** 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
@@ -168,15 +168,15 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |Använd standardvärdet (300).  <br/> |
     |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |Använd standardvärdet (300).  <br/> |
    
-   ![Namn-BP-Configure-3-1](../../media/4e34caaf-b418-40ec-abfa-fe62175a87c2.png)
+   ![Name-BP-Configure-3-1](../../media/4e34caaf-b418-40ec-abfa-fe62175a87c2.png)
   
-5. Välj **Add Record** för att lägga till den första posten. 
+5. Välj **Add Record (lägg** till post) för att lägga till den första posten. 
     
     ![Name-BP-Configure-3-2](../../media/1053c2a7-07c3-4c1b-b54a-1c02881fb0ec.png)
   
 6. Lägg till den andra CNAME-posten.
     
-    Använd värdena från den andra raden i tabellen ovan och välj sedan **Add Record (Lägg till post** ) för att lägga till den andra posten. 
+    Använd värdena från den andra raden i tabellen ovan och välj sedan Add Record (lägg **till post) för** att lägga till den andra posten. 
     
     Lägg till de återstående posterna på samma sätt med värdena från den tredje, fjärde, femte och sjätte raden i tabellen.
     
@@ -184,7 +184,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. I stället kan du lägga till de Microsoft-värden som krävs i den aktuella posten så att du har en  *enda*  SPF-post som innehåller båda uppsättningar med värden. 
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg istället till de obligatoriska Microsoft-värdena i den aktuella posten så att du har  *en*  enda SPF-post som innehåller båda uppsättningarna med värden. 
   
 1. Kom igång genom att gå till domänsidan på name.com med [den här länken](https://www.name.com/account/domain). Du uppmanas att logga in först.
     
@@ -194,7 +194,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. Välj **DNS Records** i kolumnen **information** . 
+3. Välj DNS **Records** i **kolumnen Details.** 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
@@ -206,7 +206,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |(Lämna det här fältet tomt.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |Använd standardvärdet (300).  <br/> |
    
-   ![Namn-BP-Configure-4-1](../../media/cbbfc071-840a-4ffa-a59e-0dfce03063cc.png)
+   ![Name-BP-Configure-4-1](../../media/cbbfc071-840a-4ffa-a59e-0dfce03063cc.png)
   
 5. Välj **Add Record**.
     
@@ -223,7 +223,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. I kolumnen **information** väljer du **DNS Records +**. 
+3. Välj DNS **Records+** i **kolumnen Details.** 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
@@ -235,10 +235,10 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     |**Type (typ)**|**Service (tjänst)**|**Weight (vikt)**|**TTL**|**Prio**|**Protocol (protokoll)**|**Port**|**Target (mål)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|sip|9.1|Använd standardvärdet (300).|100|tls|443|sipdir.online.lync.com <br> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |
-    |SRV|sipfederationtls|9.1|Använd standardvärdet (300).|100|tcp|5061|sipfed.online.lync.com <br>**Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |
+    |SRV|sip|1|Använd standardvärdet (300).|100|tls|443|sipdir.online.lync.com <br> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |
+    |SRV|sipfederationtls|1|Använd standardvärdet (300).|100|tcp|5061|sipfed.online.lync.com <br>**Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |
    
-   ![Namn-BP-Configure-5-1](../../media/d9a885fd-7300-45b6-ad4c-0b4bf1067560.png)
+   ![Name-BP-Configure-5-1](../../media/d9a885fd-7300-45b6-ad4c-0b4bf1067560.png)
   
 5. Välj **Add Record**.
 
@@ -246,7 +246,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 6. Lägg till den andra SRV-posten.
 
-Använd värdena från nästa rad i tabellen ovan och välj sedan **Lägg till post** för att lägga till den andra posten.
+Använd värdena från nästa rad i tabellen ovan och välj sedan Add Record (lägg **till post) för** att lägga till den andra posten.
 
 >[!NOTE]
 >Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md).

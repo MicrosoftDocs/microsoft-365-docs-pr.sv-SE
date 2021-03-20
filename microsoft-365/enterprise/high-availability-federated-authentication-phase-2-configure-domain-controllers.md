@@ -1,5 +1,5 @@
 ---
-title: Steg 2 Konfigurera domän kontrol Lanterna för extern tillgänglighet
+title: Fas 2 Konfigurera domänkontrollanter för hög tillgänglighet fas 2
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,64 +13,64 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
-description: 'Sammanfattning: Konfigurera domän kontrol Lanterna och synkroniseringstjänst för extern tillgänglighet för Microsoft 365 i Microsoft Azure.'
-ms.openlocfilehash: 1c3fd686ee553a57d66dcfd51a6045167a12de8a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Sammanfattning Konfigurera domänkontrollanter och katalogsynkroniseringsserver för federerad autentisering med hög tillgänglighet för Microsoft 365 i Microsoft Azure.
+ms.openlocfilehash: 751d332ce5f5606fe5f833182f002a1f4b6f29ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694707"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909816"
 ---
-# <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Mellanliggande federerad autentiseringsläge med hög tillgänglighet: Konfigurera domänkontrollanter
+# <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Fas 2 för hög tillgänglighet för federerad autentisering: Konfigurera domänkontrollanter
 
-I den här fasen av att distribuera hög tillgänglighet för Microsoft 365 federerad-verifikation i Azure Infrastructure Services konfigurerar du två domänkontrollanter och katalogpartitionen i Azure Virtual Network. Klient webb förfrågningar för autentisering kan sedan autentiseras i Azure Virtual Network i stället för att skicka verifierings trafiken via plats-till-plats-anslutningen till det lokala nätverket.
+I den här fasen av distributionen av hög tillgänglighet för Microsoft 365-federerad autentisering i Azure-infrastrukturtjänster konfigurerar du två domänkontrollanter och katalogsynkroniseringsservern i det virtuella Azure-nätverket. Klientwebbförfrågningar för autentisering kan sedan autentiseras i det virtuella Azure-nätverket, i stället för att skicka den autentiseringstrafiken via VPN-anslutningen mellan webbplatser till ditt lokala nätverk.
   
 > [!NOTE]
-> Active Directory Federation Services (AD FS) kan inte använda Azure Active Directory (Azure AD) som ersättning för AD DS-domänkontrollanter (Active Directory Domain Services). 
+> AD FS (Active Directory Federation Services) kan inte använda Azure Active Directory (Azure AD) som ersättning för AD DS-domänkontrollanter (Active Directory Domain Services). 
   
-Du måste slutföra den här fasen innan du går vidare till [steg 3: Konfigurera AD FS-servrar](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Se [distribuera federerad inloggningsautentisering med hög tillgänglighet för Microsoft 365 i Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) för alla faser.
+Du måste slutföra den här fasen innan du går vidare [till fas 3: Konfigurera AD FS-servrar](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Se [Distribuera hög tillgänglighet federerad autentisering för Microsoft 365 i Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) för alla faser.
   
-## <a name="create-the-domain-controller-virtual-machines-in-azure"></a>Skapa virtuella dator datorer i Azure
+## <a name="create-the-domain-controller-virtual-machines-in-azure"></a>Skapa virtuella domänkontrollanter i Azure
 
-Först måste du fylla i kolumnen Namn på **virtuell dator** för tabell M och ändra storlek på virtuell dator på det sätt som behövs i kolumnen **minsta storlek** .
+Först måste du fylla  i namnkolumnen för den virtuella datorn i Tabell M och ändra storleken på den virtuella datorn efter behov i **kolumnen Minsta** storlek.
   
-|**Objekt**|**Namn på virtuell dator**|**Bild av galleriet**|**Lagrings typ**|**Minsta storlek**|
+|**Objekt**|**Namn på virtuell dator**|**Galleribild**|**Lagringstyp**|**Minsta storlek**|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |![linjetyp](../media/Common-Images/TableLine.png) (första domänkontrollanten, exempel DC1)  <br/> |Windows Server 2016 Data Center  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|2.  <br/> |![linjetyp](../media/Common-Images/TableLine.png) (andra domänkontrollant, exempel DC2)  <br/> |Windows Server 2016 Data Center  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![linjetyp](../media/Common-Images/TableLine.png) (katalog synkroniseringstjänst, exempel DS1)  <br/> |Windows Server 2016 Data Center  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |![linjetyp](../media/Common-Images/TableLine.png) (första AD FS-server, exempel ADFS1)  <br/> |Windows Server 2016 Data Center  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |![linjetyp](../media/Common-Images/TableLine.png) (AD FS-server, exempel ADFS2)  <br/> |Windows Server 2016 Data Center  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|18.6.  <br/> |![linjetyp](../media/Common-Images/TableLine.png) (första Webbprogramproxy, till exempel WEB1)  <br/> |Windows Server 2016 Data Center  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|borttagning.  <br/> |![linjetyp](../media/Common-Images/TableLine.png) (andra Webbprogramproxy, till exempel WEB2)  <br/> |Windows Server 2016 Data Center  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|1.  <br/> |![rad](../media/Common-Images/TableLine.png) (första domänkontrollanten, exempel DC1)  <br/> |Windows Server 2016-datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|2.  <br/> |![rad](../media/Common-Images/TableLine.png) (andra domänkontrollanten, till exempel DC2)  <br/> |Windows Server 2016-datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![rad](../media/Common-Images/TableLine.png) (katalogsynkroniseringsserver, exempel DS1)  <br/> |Windows Server 2016-datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![rad](../media/Common-Images/TableLine.png) (första AD FS-servern, exempel ADFS1)  <br/> |Windows Server 2016-datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![rad](../media/Common-Images/TableLine.png) (andra AD FS-servern, exempel ADFS2)  <br/> |Windows Server 2016-datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![rad](../media/Common-Images/TableLine.png) (first web application proxy server, example WEB1)  <br/> |Windows Server 2016-datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![rad](../media/Common-Images/TableLine.png) (andra webbprogrammets proxyserver, exempel WEB2)  <br/> |Windows Server 2016-datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
- **Tabell M – virtuella maskiner för federerad åtkomst för hög tillgänglighet för Microsoft 365 i Azure**
+ **Tabell M – virtuella datorer för hög tillgänglighet federerad autentisering för Microsoft 365 i Azure**
   
-En fullständig lista över storlek på virtuell dator finns i [storlekar för virtuella datorer](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes).
+En fullständig lista över storlekar för virtuella maskiner finns i [Storlekar för virtuella datorer.](/azure/virtual-machines/virtual-machines-windows-sizes)
   
-Följande kommando block för Azure PowerShell skapar de virtuella datorerna för de två domän kontrol Lanterna. Ange värden för variablerna och ta bort \< and > tecknen. Observera att det här kommando blocket för Azure PowerShell använder värden från följande tabeller:
+Följande Azure PowerShell-kommandoblock skapar virtuella datorer för de två domänkontrollanterna. Ange värden för variablerna och ta bort \< and > tecken. Observera att det här Azure PowerShell-kommandoblocket använder värden från följande tabeller:
   
-- Tabell M, för de virtuella datorerna
+- Tabell M, för virtuella datorer
     
-- Tabell R för dina resurs grupper
+- Tabell R, för resursgrupper
     
-- Tabell V, för dina virtuella nätverks inställningar
+- Tabell V, för dina virtuella nätverksinställningar
     
-- Tabell S, för under nätverk
+- Tabell S, för dina undernät
     
 - Tabell I, för statiska IP-adresser
     
-- Tabell A, för dina tillgänglighets uppsättningar
+- Tabell A, för dina tillgänglighetsuppsättningar
     
-Kom ihåg att du har definierat tabeller R, V, S, I och en i [steg 1: Konfigurera Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
+Kom ihåg att du definierade tabellerna R, V, S, I och A i [Steg 1: Konfigurera Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> Följande kommandouppsättningar använder den senaste versionen av Azure PowerShell. Se [komma igång med Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps). 
+> Följande kommandouppsättningar använder den senaste versionen av Azure PowerShell. Se [Komma igång med Azure PowerShell.](/powershell/azure/get-started-azureps) 
   
-När du har angett alla korrekta värden kör du det resulterande blocket i Azure PowerShell-uppmaningen eller i PowerShell-integreringen (Integrated script Environment) på din dator.
+När du har angett alla korrekta värden kör du resultatblocket i azure PowerShell-kommandotolken eller i PowerShell Integrated Script Environment (ISE) på den lokala datorn.
   
 > [!TIP]
-> Använd den här [arbets boken för Microsoft Excel-konfiguration](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)om du vill skapa PowerShell-Kommandotolken som är klara att köra. 
+> Använd den här arbetsboken för Microsoft Excel-konfiguration om du vill skapa PowerShell-kommandoblock som är färdiga att köra baserat på [dina egna inställningar.](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx) 
 
 ```powershell
 # Set up variables common to both virtual machines
@@ -144,23 +144,23 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> Eftersom de här virtuella datorerna är för ett intranät program är de inte tilldelad en offentlig IP-adress eller en DNS-domän namns etikett och är exponerad för Internet. Det innebär att du inte kan ansluta till dem från Azure-portalen. Alternativet **Anslut** är inte tillgängligt när du visar egenskaperna för den virtuella datorn. Använd anslutning till fjärr skrivbord eller ett annat fjärr skrivbord för att ansluta till den virtuella datorn via dess privata IP-adress eller intranät-DNS-namn.
+> Eftersom dessa virtuella datorer är för ett intranätprogram, tilldelas de inte en offentlig IP-adress eller en DNS-domännamnsetikett och exponeras för Internet. Det innebär dock också att du inte kan ansluta till dem från Azure Portal. Alternativet **Anslut** är inte tillgängligt när du visar egenskaperna för den virtuella datorn. Använd fjärrskrivbordsanslutningstillbehöret eller ett annat Fjärrskrivbord-verktyg för att ansluta till den virtuella datorn med dess privata IP-adress eller DNS-namn på intranätet.
   
 ## <a name="configure-the-first-domain-controller"></a>Konfigurera den första domänkontrollanten
 
-Använd fjärr skrivbords klienten som du väljer och skapa en fjärr skrivbords anslutning till den första virtuella domänkontrollanten. Använd dess DNS-eller dator namn och autentiseringsuppgifterna för det lokala administratörs kontot.
+Använd valfri fjärrskrivbordsklient och skapa en anslutning till fjärrskrivbordet till den första virtuella domänkontrollanten. Använd DNS-namnet på intranätet och inloggningsuppgifterna för det lokala administratörskontot.
   
-Lägg sedan till den extra data disken till den första domänkontrollanten med det här kommandot från en Windows PowerShell-kommandotolk **på den första domänkontrollantens virtuella dator**:
+Lägg sedan till den extra dataskivan till den första domänkontrollanten med det här kommandot från en kommandotolk för Windows PowerShell på den första virtuella **domänkontrollanten:**
   
 ```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
-Testa sedan den första domänkontrollantens anslutnings barhet till platserna i organisationens nätverk genom att använda **ping** -kommandot för att skicka ping till namn och IP-adresser till resurser i organisationens nätverk.
+Testa sedan den första domänkontrollantens anslutning till platser i organisationens nätverk med hjälp av **kommandot ping** för att pinga namn och IP-adresser för resurser i organisationens nätverk.
   
-Den här proceduren ser till att DNS-namnmatchning fungerar som de ska (att den virtuella datorn är korrekt konfigurerad med lokala DNS-servrar) och att paket kan skickas till och från det lokala virtuella nätverket. Om det inte fungerar kan du kontakta IT-avdelningen för att felsöka problem med DNS-namnmatchning och paket leverans.
+Den här proceduren säkerställer att DNS-namnmatchningen fungerar korrekt (att den virtuella datorn är korrekt konfigurerad med lokala DNS-servrar) och att paket kan skickas till och från det virtuella nätverket på plats. Om det här grundläggande testet misslyckas kontaktar du IT-avdelningen för att felsöka problem med DNS-namnmatchning och paketleverans.
   
-Gå sedan till kommando tolken för Windows PowerShell på den första domänkontrollanten och kör följande kommandon:
+Kör sedan följande kommandon från Windows PowerShell-kommandotolken på den första domänkontrollanten:
   
 ```powershell
 $domname="<DNS domain name of the domain for which this computer will be a domain controller, such as corp.contoso.com>"
@@ -169,13 +169,13 @@ Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs" -Credential $cred
 ```
 
-Du uppmanas att ange autentiseringsuppgifter för ett domän administratörs konto. Datorn startas om.
+Du uppmanas att ange autentiseringsuppgifter för ett domänadministratörskonto. Datorn startas om.
   
 ## <a name="configure-the-second-domain-controller"></a>Konfigurera den andra domänkontrollanten
 
-Använd fjärr skrivbords klienten som du väljer och skapa en fjärr skrivbords anslutning till den andra domänkontrollantens virtuella dator. Använd dess DNS-eller dator namn och autentiseringsuppgifterna för det lokala administratörs kontot.
+Använd valfri fjärrskrivbordsklient och skapa en anslutning till den andra virtuella domänkontrollanten. Använd DNS-namnet på intranätet och inloggningsuppgifterna för det lokala administratörskontot.
   
-Sedan måste du lägga till den extra data disken till den andra domänkontrollanten med det här kommandot från en Windows PowerShell-kommandotolk **på den andra domänkontrollantens virtuella dator**:
+Därefter måste du lägga till den extra dataskivan i den andra domänkontrollanten med det här kommandot från en Windows PowerShell-kommandotolk på den andra virtuella datorn med **domänkontrollanten:**
   
 ```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -191,9 +191,9 @@ Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:
 
 ```
 
-Du uppmanas att ange autentiseringsuppgifter för ett domän administratörs konto. Datorn startas om.
+Du uppmanas att ange autentiseringsuppgifter för ett domänadministratörskonto. Datorn startas om.
   
-Sedan måste du uppdatera DNS-servrarna för det virtuella nätverket så att Azure tilldelar virtuella datorer IP-adresserna för de två nya domän kontrol Lanterna att använda som DNS-servrar. Fyll i variablerna och kör de här kommandona från en Windows PowerShell-kommandotolk på din lokala dator:
+Därefter måste du uppdatera DNS-servrarna för ditt virtuella nätverk så att Azure tilldelar virtuella datorer IP-adresserna till de två nya domänkontrollanterna som ska användas som DNS-servrar. Fyll i variablerna och kör sedan dessa kommandon från en Windows PowerShell-kommandotolk på den lokala datorn:
   
 ```powershell
 $rgName="<Table R - Item 4 - Resource group name column>"
@@ -217,9 +217,9 @@ Restart-AzVM -ResourceGroupName $adrgName -Name $firstDCName
 Restart-AzVM -ResourceGroupName $adrgName -Name $secondDCName
 ```
 
-Observera att vi startar om de två domän kontrol Lanterna så att de inte är konfigurerade med lokala DNS-servrar som DNS-servrar. Eftersom de båda är DNS-servrar konfigurerade de automatiskt med lokala DNS-servrar som DNS-vidarebefordrare när de uppgraderades till domänkontrollanter.
+Observera att vi startar om de två domänkontrollanterna så att de inte konfigureras med de lokala DNS-servrarna som DNS-servrar. Eftersom de båda är DNS-servrar själva konfigurerades de automatiskt med de lokala DNS-servrarna som DNS-vidarebefordrare när de framhävdes till domänkontrollanter.
   
-Nu måste vi skapa en Active Directory-replikeringsgrupp för att säkerställa att servrar i det virtuella Azure-nätverket använder de lokala domän kontrol Lanterna. Anslut till domänkontrollant med domän administratörs konto och kör följande kommandon från en Windows PowerShell-kommandotolk på administratörs nivå:
+Nästa steg är att skapa en Active Directory-replikeringswebbplats för att säkerställa att servrar i det virtuella Azure-nätverket använder de lokala domänkontrollanterna. Anslut till domänkontrollanten med ett domänadministratörskonto och kör följande kommandon från Windows PowerShell-kommandotolken på administratörsnivå:
   
 ```powershell
 $vnet="<Table V - Item 1 - Value column>"
@@ -228,11 +228,11 @@ New-ADReplicationSite -Name $vnet
 New-ADReplicationSubnet -Name $vnetSpace -Site $vnet
 ```
 
-## <a name="configure-the-directory-synchronization-server"></a>Konfigurera katalogpartitionen för servrar
+## <a name="configure-the-directory-synchronization-server"></a>Konfigurera katalogsynkroniseringsservern
 
-Använd fjärr skrivbords klienten som du väljer och skapa en fjärr skrivbords anslutning till den virtuella datorn för den synkroniserade servern. Använd dess DNS-eller dator namn och autentiseringsuppgifterna för det lokala administratörs kontot.
+Använd valfri fjärrskrivbordsklient och skapa en anslutning till den virtuella katalogsynkroniseringsservern. Använd DNS-namnet på intranätet och inloggningsuppgifterna för det lokala administratörskontot.
   
-Gå sedan till den relevanta AD DS-domänen med de här kommandona i Windows PowerShell-uppmaningen.
+Anslut den sedan till rätt AD DS-domän med de här kommandona i Windows PowerShell-kommandotolken.
   
 ```powershell
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
@@ -241,22 +241,20 @@ Add-Computer -DomainName $domName -Credential $cred
 Restart-Computer
 ```
 
-Här är konfigurationen som skapas när den här fasen har slutförts, med plats hållare för dator namn.
+Här är konfigurationen som är ett resultat av att den här fasen slutförts, med platshållardatornamn.
   
-**Fas 2: domän kontrol Lanterna och synkroniseringstjänst för extern tillgänglighet i Azure**
+**Fas 2: Domänkontrollanterna och katalogsynkroniseringsservern för er infrastruktur för federerad autentisering med hög tillgänglighet i Azure**
 
-![Fas 2 av den övergripande Microsoft 365-infrastrukturen för extern tillgänglighet i Azure med domänkontrollanter](../media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
+![Fas 2 av hög tillgänglighet Infrastruktur för federerad autentisering i Microsoft 365 i Azure med domänkontrollanter](../media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## <a name="next-step"></a>Nästa steg
 
-Använda [fas 3: Konfigurera AD FS-servrar](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) för att fortsätta konfigurera arbets belastningen.
+Använd [fas 3: Konfigurera AD FS-servrar för att](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) fortsätta konfigurera arbetsbelastningen.
   
 ## <a name="see-also"></a>Se även
 
-[Distribuera federerad för hög tillgänglighet för Microsoft 365 i Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
+[Distribuera federerad autentisering med hög tillgänglighet för Microsoft 365 i Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[Federerad identitet för din Microsoft 365-miljö](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[Federerad identitet för din Utvecklings-/testmiljö för Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Microsoft 365-center för lösningar och arkitektur](../solutions/solution-architecture-center.md)
-
-
+[Microsoft 365-lösning och arkitekturcenter](../solutions/index.yml)

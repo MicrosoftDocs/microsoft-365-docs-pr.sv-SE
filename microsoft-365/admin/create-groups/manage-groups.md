@@ -1,5 +1,5 @@
 ---
-title: Hantera en grupp i administrations centret
+title: Hantera en grupp i administrationscentret
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -18,77 +18,77 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: Lär dig att hantera Microsoft 365-grupper, inklusive att lägga till, ta bort grupp medlemmar, redigera e-postadress, grupp namn eller beskrivning och anpassa hur gruppen fungerar.
-ms.openlocfilehash: 8216b80ba6cd6bffe470f4fe4ace43307afba5f2
-ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
+description: Lär dig att hantera Microsoft 365-grupper, inklusive att lägga till ta bort gruppmedlemmar, redigera e-postadressen, gruppnamnet eller beskrivningen och anpassa hur gruppen fungerar.
+ms.openlocfilehash: 3ba3dd36ed3929e956ce6359e678d6b684f64bb9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753307"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908716"
 ---
-# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Hantera en grupp i administrations centret för Microsoft 365
+# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Hantera en grupp i administrationscentret för Microsoft 365
 
-När du har [skapat en Microsoft 365-grupp](create-groups.md) och lagt till grupp medlemmar kan du konfigurera gruppen. Du kan redigera grupp namnet eller beskrivningen, hantera ägare eller medlemmar och ange om externa avsändare ska kunna skicka e-post till medlemmarna.
+När du har [skapat en Microsoft 365-grupp](create-groups.md) och lagt till gruppmedlemmar kan du konfigurera gruppen. Du kan redigera gruppens namn eller beskrivning, hantera ägare eller medlemmar och ange om externa avsändare kan skicka e-post till gruppen och om kopior av gruppkonversationer ska skickas till medlemmar.
 
-Gå till administrations centret för Microsoft 365 på [https://admin.microsoft.com](https://admin.microsoft.com) .
+Gå till administrationscentret för Microsoft 365 på [https://admin.microsoft.com](https://admin.microsoft.com) .
 
 ## <a name="edit-the-group-name-or-description"></a>Redigera gruppens namn eller beskrivning
 
-1. I Admin Center expanderar du **grupper**och klickar sedan på **grupper**.
+1. I administrationscentret expanderar du **Grupper** och klickar sedan på **Grupper.**
 
-2. Välj den grupp du vill redigera och klicka sedan på **Redigera namn och beskrivning**.
+2. Markera den grupp som du vill redigera och klicka sedan på **Redigera namn och beskrivning**.
 
 3. Uppdatera namn och beskrivning och välj sedan **Spara**.
 
-## <a name="manage-group-owners-and-members"></a>Hantera grupp ägare och medlemmar
+## <a name="manage-group-owners-and-members"></a>Hantera gruppägare och medlemmar
 
-1. I Admin Center expanderar du **grupper**och klickar sedan på **grupper**.
+1. I administrationscentret expanderar du **Grupper** och klickar sedan på **Grupper.**
 
-2. Klicka på namnet på den grupp du vill hantera för att öppna fönstret inställningar.
+2. Klicka på namnet på den grupp du vill hantera för att öppna inställningsfönstret.
 
-3. Välj om du vill hantera ägare eller medlemmar på fliken **medlemmar** .
+3. På fliken **Medlemmar** väljer du om du vill hantera ägare eller medlemmar.
 
-4. Välj **Lägg** till för att lägga till någon eller klicka på **X** för att ta bort någon.
+4. Välj **Lägg till om** du vill lägga till någon eller klicka på X **om** du vill ta bort någon.
 
 5. Klicka på **Stäng**.
 
-## <a name="send-copies-of-conversations-to-group-members-inboxes"></a>Skicka kopior av konversationer till grupp medlemmarnas inkorgar
+## <a name="send-copies-of-conversations-to-group-members-inboxes"></a>Skicka kopior av konversationer till gruppmedlemmars inkorgar
   
-När du använder administrations centret för att skapa en grupp får användarna inte kopior av grupp-e-post och mötes inbjudningar till sina inkorgar. De måste gå till gruppen för att se konversationer och möten. Du kan ändra den här inställningen i administrations centret.
+När du använder administrationscentret för att skapa en grupp får användarna som standard inte kopior av gruppmeddelanden och mötesinbjudningar som skickas till deras inkorgar. De måste gå till gruppen för att se konversationer och möten. Du kan ändra den här inställningen i administrationscentret.
 
-När du aktiverar den här inställningen kommer grupp medlemmar att få en kopia av grupp-e-postmeddelanden och mötes inbjudningar som skickas till Inkorgen i Outlook. De kan läsa och ta bort kopian utan att någon annan påverkas. En kopia av e-postmeddelandet finns kvar i gruppens inkorg.
+När du aktiverar den här inställningen får gruppmedlemmarna en kopia av gruppmeddelanden och mötesinbjudningar som skickas till deras inkorg i Outlook. De kan läsa och ta bort kopian utan att någon annan påverkas. En kopia av e-postmeddelandet finns kvar i gruppens inkorg.
 
-Grupp medlemmar kan välja att inte ta emot dessa e-postmeddelanden genom att välja att sluta följa gruppen i Outlook.
+Gruppmedlemmar kan avanmäla sig från dessa e-postmeddelanden genom att välja att sluta följa gruppen i Outlook.
 
-1. I Admin Center expanderar du **grupper**och klickar sedan på **grupper**.
+1. I administrationscentret expanderar du **Grupper** och klickar sedan på **Grupper.**
 
-2. Klicka på namnet på den grupp du vill hantera för att öppna fönstret inställningar.
+2. Klicka på namnet på den grupp du vill hantera för att öppna inställningsfönstret.
 
-3. På fliken **Inställningar** väljer du **skicka kopior av gruppkonversationer och händelser till grupp medlemmar** om du vill att medlemmarna ska få kopior av grupp meddelanden och Kalender objekt i sin egen inkorg.
+3. På fliken **Inställningar** väljer du Skicka **kopior** av gruppkonversationer och händelser till gruppmedlemmar om du vill att medlemmarna ska få kopior av gruppmeddelanden och kalenderobjekt i sin egen inkorg.
 
 4. Välj **Spara**.
 
-## <a name="let-people-outside-the-organization-email-the-group"></a>Låt personer utanför organisationen skicka e-post till gruppen
+## <a name="let-people-outside-the-organization-email-the-group"></a>Låta personer utanför organisationen skicka e-post till gruppen
 
-Det här alternativet är bra om du vill ha en e-postadress till företaget, till exempel info@contoso.com.
+Det här alternativet är bra om du vill ha en företags-e-postadress som info@contoso.com.
  
-1. I Admin Center expanderar du **grupper**och klickar sedan på **grupper**.
+1. I administrationscentret expanderar du **Grupper** och klickar sedan på **Grupper.**
 
-2. Klicka på namnet på den grupp du vill hantera för att öppna fönstret inställningar.
+2. Klicka på namnet på den grupp du vill hantera för att öppna inställningsfönstret.
 
-3. I listan administrations Center grupper väljer du namnet på den grupp du vill ändra och väljer **Tillåt externa avsändare att skicka e-post till den här gruppen**på fliken **Inställningar** .
+3. I listan över grupper i administrationscentret väljer du namnet på den  grupp som du vill ändra och går sedan till fliken Inställningar och väljer Tillåt externa avsändare att skicka e-post till den **här gruppen.**
     
 4. Välj **Spara**.
 
 ## <a name="permanently-delete-a-microsoft-365-group"></a>Ta bort en Microsoft 365-grupp permanent
 
-Ibland kanske du vill ta bort en grupp permanent utan att vänta på att den 30 dagars borttagnings perioden upphör att gälla. Starta PowerShell och kör det här kommandot för att ta fram gruppens objekt-ID
+Ibland vill du kanske ta bort en grupp permanent utan att behöva vänta på att den mjuka borttagningsperioden på 30 dagar ska upphöra att gälla. Starta PowerShell och kör det här kommandot för att ta fram gruppens objekt-ID
  
  ```powershell
 `Get-AzureADMSDeletedGroup`
 ```
 
-Anteckna objekt-ID: t för gruppen som du vill ta bort permanent.
+Notera objekt-ID för gruppen eller grupperna som du vill ta bort permanent.
   
 > [!CAUTION]
 > Borttagningen av gruppen raderar gruppen och allt innehåll för alltid. 
@@ -105,12 +105,12 @@ För att kontrollera att gruppen har tagits bort kör du cmdleten  *Get- AzureAD
 
 [Skapa en Microsoft 365-grupp](create-groups.md)
 
-[Hantera gäst åtkomst till Microsoft 365-grupper](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Hantera gäståtkomst till Microsoft 365-grupper](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [Välj den domän som ska användas när du skapar Microsoft 365-grupper](../../solutions/choose-domain-to-create-groups.md)
 
 [Tillåta medlemmar att skicka som eller skicka för en Microsoft 365-grupp](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
-[Uppgradera distributions listor till Microsoft 365-grupper](../manage/upgrade-distribution-lists.md)
+[Uppgradera distributionslistor till Microsoft 365-grupper](../manage/upgrade-distribution-lists.md)
 
-[Hantera Microsoft 365-grupper med PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
+[Hantera Microsoft 365-grupper med PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md)

@@ -21,21 +21,21 @@ search.appverid:
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Freenom för Microsoft.
-ms.openlocfilehash: b958a69d1dad9a0b56cf954d12cd42e40d6d4fea
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 8332d63acf34a7f999b549467494b7819cebf092
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657881"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910360"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>Skapa DNS-poster på Freenom för Microsoft
 
 [Läs frågor och svar om domäner ](../setup/domains-faq.yml) om du inte hittar det du letar efter. 
   
 > [!CAUTION]
-> Freenom webbplats stöder inte SRV-poster, vilket innebär att flera funktioner för Skype för företag – Online och Outlook Web App inte fungerar. Oavsett vilken Microsoft-plan du använder, finns det viktiga tjänst begränsningar och du kan byta till en annan DNS-värd. 
+> Freenom-webbplatsen har inget stöd för SRV-poster, vilket innebär att flera Skype för företag – Online- och Outlook Web App-funktioner inte fungerar. Oavsett vilket Microsoft-abonnemang du använder finns det betydande tjänstbegränsningar som kan vara bra att byta till en annan DNS-värd. 
   
-Om du trots tjänst begränsningarna väljer att hantera dina egna DNS-poster på Freenom, följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post och andra tjänster.
+Om du trots tjänstbegränsningarna väljer att hantera dina egna Microsoft DNS-poster hos Freenom följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post och andra tjänster.
   
   
 > [!NOTE]
@@ -49,19 +49,19 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
   
-1. Kom igång genom att gå till sidan Domains i Freenom med hjälp av [den här länken](https://my.freenom.com/). Du uppmanas att logga in först.
+1. Kom igång genom att gå till domänsidan på Freenom med den [här länken.](https://my.freenom.com/) Du uppmanas att logga in först.
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. Välj **tjänster** och sedan **My Domains**.
+2. Välj **Services** och sedan **My Domains.**
     
     ![Freenom select Services and My Domains](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. Välj **Manage Domain** för den domän som du vill redigera.
+3. Välj Manage Domain för den domän som du **vill redigera.**
     
     ![Freenom select Manage Domain](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. Välj **Manage FREENOM DNS**.
+4. Välj **Manage Freenom DNS**.
     
     ![Freenom Manage Freenom DNS](../../media/9854a511-27e3-4658-8903-34b3d425096d.png)
   
@@ -73,11 +73,11 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
     |**Name (namn)**|**Type (typ)**|**TTL**|**Target (mål)**|
     |:-----|:-----|:-----|:-----|
-    |(lämna tomt)  <br/> |TXT  <br/> |3600 (sekunder)  <br/> |MS = msXXXXXXXX  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
+    |(lämna tomt)  <br/> |TXT  <br/> |3600 (sekunder)  <br/> |MS=msXXXXXXXX  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Freenom TXT values for verification](../../media/650098df-b3aa-47e5-9763-7fde24e34c3f.png)
   
-7. Välj **Spara ändringar**.
+7. Välj **Save Changes**.
     
     ![Freenom TXT record Save Changes](../../media/b1a63f9a-4578-491a-9554-c40f73b37e09.png)
   
@@ -108,29 +108,29 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Lägga till en MX-post så att e-post för din domän kommer till Microsoft.
 <a name="bkmk_mx"> </a>
 
-1. Kom igång genom att gå till sidan Domains i Freenom med hjälp av [den här länken](https://my.freenom.com/). Du uppmanas att logga in först.
+1. Kom igång genom att gå till domänsidan på Freenom med den [här länken.](https://my.freenom.com/) Du uppmanas att logga in först.
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. Välj **tjänster** och sedan **My Domains**.
+2. Välj **Services** och sedan **My Domains.**
     
     ![Freenom select Services and My Domains](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. Välj **Manage Domain** för den domän som du vill redigera.
+3. Välj Manage Domain för den domän som du **vill redigera.**
     
     ![Freenom select Manage Domain](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. Ange namnet bevaras för domänen till standard namnen på Freenom. Välj **Management tools** och välj **namnservrar**.
+4. Ange namn som fungerar för din domän till Freenom-standardnamnservrarna. Välj **Management Tools** och sedan **Nameservers**.
     
     ![Freenom Nameservers setting](../../media/a6ae877a-c248-42b9-bae9-210a80cd01e7.png)
   
-5. Kontrol lera att **Använd standard namnservrar** är markerat och välj sedan **ändra namnservrar**.
+5. Kontrollera att **Use default nameservers** är markerat och välj **sedan Change Nameservers**.
     
     ![Freenom Change Nameservers](../../media/0ef90d84-c0a0-4ef9-9e4c-43ef0aac3a2e.png)
   
-6. Välj **Manage FREENOM DNS**.
+6. Välj **Manage Freenom DNS**.
     
-    ![Freenom Välj Manage Freenom DNS](../../media/f55a8053-2411-45da-a357-776c6699f721.png)
+    ![Freenom välj Hantera Freenom-DNS](../../media/f55a8053-2411-45da-a357-776c6699f721.png)
   
 7. Under **Add Record** går du till kolumnen **Type** och väljer **MX** på menyn. 
     
@@ -140,34 +140,34 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     |**Name**|**Type (typ)**|**TTL**|**Target (mål)**|**Priority (prioritet)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(lämna tomt)  <br/> |MX (Mail Exchanger)  <br/> |3600 (sekunder)  <br/> |\<domain-key\>. mail.protection.outlook.com  <br/> **Obs!** Hämta ditt  *\<domain-key\>*  från ditt Microsoft-konto.   [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |10.3  <br/> Mer information om prioritet finns i [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |(lämna tomt)  <br/> |MX (Mail Exchanger)  <br/> |3600 (sekunder)  <br/> |\<domain-key\>.mail.protection.outlook.com  <br/> **Obs!** Skaffa ditt  *\<domain-key\>*  Microsoft-konto.   [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> Mer information om prioritet finns i [What is MX priority?](../setup/domains-faq.yml) <br/> |
    
    ![Freenom MX record](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   
-9. Välj **Spara ändringar**.
+9. Välj **Save Changes**.
     
     ![Freenom MX record Save Changes](../../media/7aa0a464-d136-417f-be40-48d3f728eeb7.png)
   
-10. Om det finns andra MX-poster tar du bort alla. Välj **ta bort** för varje post. När meddelandet **vill du verkligen ta bort den här posten** visas väljer du **OK**.
+10. Om det finns andra MX-poster tar du bort alla. Välj Ta bort för varje **post.** När meddelandet Do **you really want to remove this entry? visas** väljer du **OK**.
     
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Lägga till CNAME-posterna som krävs för Microsoft
 <a name="bkmk_cname"> </a>
 
-1. Kom igång genom att gå till sidan Domains i Freenom med hjälp av [den här länken](https://my.freenom.com/). Du uppmanas att logga in först.
+1. Kom igång genom att gå till domänsidan på Freenom med den [här länken.](https://my.freenom.com/) Du uppmanas att logga in först.
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. Välj **tjänster** och sedan **My Domains**.
+2. Välj **Services** och sedan **My Domains.**
     
     ![Freenom select Services and My Domains](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. Välj **Manage Domain** för den domän som du vill redigera.
+3. Välj Manage Domain för den domän som du **vill redigera.**
     
     ![Freenom select Manage Domain](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. Välj **Manage FREENOM DNS**.
+4. Välj **Manage Freenom DNS**.
     
-    ![Freenom Välj Manage Freenom DNS](../../media/5e7bc3a7-0d5e-431b-bb27-da3b0f316d01.png)
+    ![Freenom välj Hantera Freenom-DNS](../../media/5e7bc3a7-0d5e-431b-bb27-da3b0f316d01.png)
   
 5. Under **Add Record** går du till kolumnen **Type** och väljer **CNAME** på menyn. 
     
@@ -185,7 +185,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
    
     ![Freenom CNAME values](../../media/752fc682-e3f2-4b9c-9253-bf1ba2d414e9.png)
   
-7. Välj **Spara ändringar**.
+7. Välj **Save Changes**.
     
     ![Freenom CNAME Save Changes](../../media/68103fd2-0f5f-4aac-a875-25157c6bbdd2.png)
   
@@ -197,23 +197,23 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. I stället kan du lägga till de Microsoft-värden som krävs i den aktuella posten så att du har en  *enda*  SPF-post som innehåller båda uppsättningar med värden. 
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg istället till de obligatoriska Microsoft-värdena i den aktuella posten så att du har  *en*  enda SPF-post som innehåller båda uppsättningarna med värden. 
 
-1. Kom igång genom att gå till sidan Domains i Freenom med hjälp av [den här länken](https://my.freenom.com/). Du uppmanas att logga in först.
+1. Kom igång genom att gå till domänsidan på Freenom med den [här länken.](https://my.freenom.com/) Du uppmanas att logga in först.
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. Välj **tjänster** och sedan **My Domains**.
+2. Välj **Services** och sedan **My Domains.**
     
     ![Freenom select Services and My Domains](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. Välj **Manage Domain** för den domän som du vill redigera.
+3. Välj Manage Domain för den domän som du **vill redigera.**
     
     ![Freenom select Manage Domain](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. Välj **Manage FREENOM DNS**.
+4. Välj **Manage Freenom DNS**.
     
-    ![Freenom Välj Manage Freenom DNS](../../media/94809955-0315-409c-a15d-703a2fe4c4ed.png)
+    ![Freenom välj Hantera Freenom-DNS](../../media/94809955-0315-409c-a15d-703a2fe4c4ed.png)
   
 5. Under **Add Record** går du till kolumnen **Type** och väljer **TXT** på menyn. 
     
@@ -227,8 +227,6 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
    
     ![Freenom TXT values for SPF](../../media/1b3b1199-9104-4ca1-acdb-786d139c21ac.png)
   
-7. Välj **Spara ändringar**.
+7. Välj **Save Changes**.
     
     ![Freenom TXT record for SPF Save Changes](../../media/e2fc52b1-0dcb-4595-9a4c-fca5e2ef9f97.png)
-  
-

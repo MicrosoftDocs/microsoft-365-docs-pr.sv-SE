@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Register.com för Microsoft.
-ms.openlocfilehash: dd2f3d516b5309fee85dd572470fe610ff277a68
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 439b96ef7ad2fd70b94c3945519d4fa270e43fd2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657598"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910060"
 ---
 # <a name="create-dns-records-at-registercom-for-microsoft"></a>Skapa DNS-poster på Register.com för Microsoft
 
@@ -46,7 +46,7 @@ Det här är de viktigaste posterna att lägga till. Följ stegen nedan eller [t
 
 - [Lägga till de två SRV-posterna som krävs för Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-När du har lagt till dessa poster på Register.com är din domän konfigurerad för att fungera med Microsoft-tjänster.
+När du har lagt till dessa poster Register.com domän är din domän konfigurerad för att fungera med Microsoft-tjänster.
   
 
   
@@ -69,9 +69,9 @@ Följ stegen nedan eller [titta på videon (börja vid 0:44)](https://support.mi
     
 3. Välj **Hantera**.
     
-4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. Välj sedan **Hantera** på den raden.
+4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och sedan väljer du Hantera på **den raden.**
     
-5. Rulla ned till avsnittet **Advanced Technical Settings** och välj **Edit TXT Records (SPF)**.
+5. Bläddra ned till **avsnittet Advanced Technical Settings** och välj sedan Edit TXT Records **(SPF).**
     
 6. I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
     
@@ -80,9 +80,9 @@ Följ stegen nedan eller [titta på videon (börja vid 0:44)](https://support.mi
     |**Värdnamn** <br/> |**TXT Record** <br/> |
     |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
-7. Välj **Fortsätt**.
+7. Välj **Fortsätt.**
     
-8. På nästa sida väljer du **Fortsätt** igen för att bekräfta ändringarna. 
+8. På nästa sida väljer du **Continue igen** för att bekräfta ändringarna. 
     
 9. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
@@ -112,19 +112,19 @@ Följ stegen nedan eller [titta på videon (börja vid 3:32)](https://support.mi
     
 3. Välj **Hantera**.
     
-4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. Välj sedan **Hantera** på den raden.
+4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och sedan väljer du Hantera på **den raden.**
     
-5. Bläddra till avsnittet **Advanced Technical Settings** och välj sedan **Edit Mail Exchanger Records**.
+5. Bläddra till avsnittet **Advanced Technical Settings** och välj sedan Edit Mail **Exchanger Records.**
     
-    ![Välj Redigera Mail Exchanger-poster](../../media/366b96a1-9147-4bbb-9f8f-50856466cc61.png)
+    ![Välj Redigera e-postutväxlingsposter](../../media/366b96a1-9147-4bbb-9f8f-50856466cc61.png)
   
 6. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
     
-    (Välj värdet **Priority** i list rutan.) 
+    (Välj **värdet Priority** i listrutan.) 
     
     |****Host Name****|****Priority****|****E-postserver****|
     |:-----|:-----|:-----|
-    |@  <br/> |High  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**Obs!** Hämta din \<*domain-key*\> från ditt Microsoft-konto. <br> [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |High  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](../setup/domains-faq.yml) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**Obs!** Hämta din \<*domain-key*\> från ditt Microsoft-konto. <br> [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Kopiera och klistra in värdet från tabellen](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   
@@ -132,13 +132,13 @@ Följ stegen nedan eller [titta på videon (börja vid 3:32)](https://support.mi
     
     ![Select each record to delete](../../media/0708d03e-346f-4ae7-8cc4-01589efc00ce.png)
   
-8. Välj **Fortsätt**.
+8. Välj **Fortsätt.**
     
-    ![Välj Fortsätt](../../media/6ef6ce01-ce21-4e3c-8209-4aa9a3dd4b76.png)
+    ![Välj Continue](../../media/6ef6ce01-ce21-4e3c-8209-4aa9a3dd4b76.png)
   
-9. På nästa sida väljer du **Fortsätt** igen för att bekräfta och spara ändringarna. 
+9. På nästa sida väljer du **Fortsätt igen** för att bekräfta och spara ändringarna. 
     
-    ![Välj Fortsätt](../../media/adba4a60-bf61-44fc-9ad9-360e66f8a2ee.png)
+    ![Välj Continue](../../media/adba4a60-bf61-44fc-9ad9-360e66f8a2ee.png)
   
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Lägga till CNAME-posterna som krävs för Microsoft
 <a name="BKMK_add_CNAME"> </a>
@@ -151,15 +151,15 @@ Följ stegen nedan eller [titta på videon (börja vid 4:23)](https://support.mi
     
 3. Välj **Hantera**.
     
-4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. Välj sedan **Hantera** på den raden.
+4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och sedan väljer du Hantera på **den raden.**
     
-5. Bläddra till avsnittet **Advanced Technical Settings** och välj sedan **Edit Domain aliasing Records**.
+5. Bläddra till avsnittet **Advanced Technical Settings** och välj sedan Edit Domain **Aliases Records**.
     
-    ![Välj Redigera domän Ali Aset Records](../../media/9fbc31ed-d67c-4828-8bd4-b51068f1e0ca.png)
+    ![Välj Edit Domain Aliases Records](../../media/9fbc31ed-d67c-4828-8bd4-b51068f1e0ca.png)
   
-6. Välj **Lägg till fler domän Ali Aset**.
+6. Välj **Lägg till fler domänalias**.
     
-    ![Välj Lägg till fler domän Ali Aset](../../media/b787505f-5566-4879-8552-13f9e89cbf6b.png)
+    ![Välj Lägg till fler domänalias](../../media/b787505f-5566-4879-8552-13f9e89cbf6b.png)
   
 7. Lägg till nödvändiga CNAME-poster.
     
@@ -173,15 +173,15 @@ Följ stegen nedan eller [titta på videon (börja vid 4:23)](https://support.mi
     |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/>  <br/> |
     |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/>  <br/> |
    
-     ![Kopiera och klistra in DNS-värden från tabellen](../../media/0e2b36b2-8a0b-4019-addf-301763f9a626.png)
+     ![Kopiera och klistra in DNS-värdena från tabellen](../../media/0e2b36b2-8a0b-4019-addf-301763f9a626.png)
   
-8. När du har lagt till alla CNAME-poster du behöver väljer du **Fortsätt**.
+8. När du har lagt till alla CNAME-poster som du behöver väljer du **Continue**.
     
-    ![Välj Fortsätt](../../media/1942612b-338a-48fa-a45d-2d5434516723.png)
+    ![Välj Continue](../../media/1942612b-338a-48fa-a45d-2d5434516723.png)
   
-9. På nästa sida väljer du **Fortsätt** igen för att bekräfta och spara ändringarna. 
+9. På nästa sida väljer du **Fortsätt igen** för att bekräfta och spara ändringarna. 
     
-    ![Välj Fortsätt](../../media/3342b570-0633-49c5-9175-5cc8e4a67b53.png)
+    ![Välj Continue](../../media/3342b570-0633-49c5-9175-5cc8e4a67b53.png)
   
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Lägga till en TXT-post för SPF för att förhindra skräppost
 <a name="BKMK_add_TXT"> </a>
@@ -197,9 +197,9 @@ Följ stegen nedan eller [titta på videon (börja vid 5:12)](https://support.mi
     
 3. Välj **Hantera**.
     
-4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. Välj sedan **Hantera** på den raden.
+4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och sedan väljer du Hantera på **den raden.**
     
-5. Bläddra till avsnittet **Advanced Technical Settings** och välj **Edit TXT Records (SPF)**.
+5. Bläddra till avsnittet **Advanced Technical Settings** och välj sedan Edit TXT Records **(SPF).**
     
     ![Välj Edit TXT Records (SPF)](../../media/c917577a-8b3a-4210-ab6e-776e84f926d0.png)
   
@@ -211,13 +211,13 @@ Följ stegen nedan eller [titta på videon (börja vid 5:12)](https://support.mi
    
      ![Kopiera och klistra in värdena från tabellen](../../media/b1dc5036-c13c-4306-b1e3-5a38a74643b7.png)
   
-7. Välj **Fortsätt**.
+7. Välj **Fortsätt.**
     
-    ![Välj Fortsätt](../../media/08250c98-1a86-48a8-ad94-f96cf338126b.png)
+    ![Välj Continue](../../media/08250c98-1a86-48a8-ad94-f96cf338126b.png)
   
-8. På nästa sida väljer du **Fortsätt** igen för att bekräfta och spara ändringarna. 
+8. På nästa sida väljer du **Fortsätt igen** för att bekräfta och spara ändringarna. 
     
-    ![Välj Fortsätt](../../media/56be3b0a-dc71-471c-9be3-6ab927296f67.png)
+    ![Välj Continue](../../media/56be3b0a-dc71-471c-9be3-6ab927296f67.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Lägga till de två SRV-posterna som krävs för Microsoft
 <a name="BKMK_add_SRV"> </a>
@@ -230,26 +230,26 @@ Följ stegen nedan eller [titta på videon (börja vid 5:55)](https://support.mi
     
 3. Välj **Hantera**.
     
-4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. Välj sedan **Hantera** på den raden.
+4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och sedan väljer du Hantera på **den raden.**
     
-5. Bläddra till avsnittet **Advanced Technical Settings** och välj **Edit SRV Records**.
+5. Bläddra till avsnittet **Advanced Technical Settings** och välj sedan Edit **SRV Records**.
     
-    ![Välj Redigera SRV-poster](../../media/73c149ae-f0d6-460e-880a-7e04a995acc3.png)
+    ![Välj Edit SRV Records](../../media/73c149ae-f0d6-460e-880a-7e04a995acc3.png)
   
 6. Lägg till den första av de två SRV-posterna:
     
     I rutorna för den nya posten anger du eller kopierar och klistrar in värdena från den första raden i följande tabell.
     
-    (Välj värdet **Priority** i list rutan.) 
+    (Välj **värdet Priority** i listrutan.) 
     
     |****Service****|****Proto****|****Name****|****Priority****|****Vikt****|****Port****|****Target****|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |9.1  <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |9.1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
+    |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
    
     ![Kopiera och klistra in värdena från tabellen](../../media/71304c81-5845-4a8f-b969-d9efc8721184.png)
   
-7. Välj **Lägg till fler SRV-poster**.
+7. Välj **Add more SRV records**.
     
     ![Välj Lägg till fler SRV-poster](../../media/823c6bd2-4af7-4079-bf8c-8d35a5c6730f.png)
   
@@ -257,14 +257,13 @@ Följ stegen nedan eller [titta på videon (börja vid 5:55)](https://support.mi
     
     I rutorna för den andra posten skriver du in, eller kopierar och klistrar in, värdena från den andra raden i tabellen ovan.
     
-9. När du har lagt till båda SRV-posterna väljer du **Fortsätt**.
+9. När du har lagt till båda SRV-posterna väljer du **Continue**.
     
-    ![Välj Fortsätt](../../media/008b255a-42d3-442d-83ea-3ffcb7c8fc5d.png)
+    ![Välj Continue](../../media/008b255a-42d3-442d-83ea-3ffcb7c8fc5d.png)
   
-10. På nästa sida väljer du **Fortsätt** igen för att bekräfta och spara ändringarna. 
+10. På nästa sida väljer du **Fortsätt igen** för att bekräfta och spara ändringarna. 
     
-    ![Välj Fortsätt](../../media/b4166e3d-7e4b-41ef-b616-747e95aefc37.png)
+    ![Välj Continue](../../media/b4166e3d-7e4b-41ef-b616-747e95aefc37.png)
   
 > [!NOTE]
 > Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Microsoft](../get-help-with-domains/find-and-fix-issues.md). 
-  

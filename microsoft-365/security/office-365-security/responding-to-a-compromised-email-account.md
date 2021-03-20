@@ -20,12 +20,12 @@ search.appverid:
 description: Lär dig hur du känner igen och hanterar ett komprometterat e-postkonto ned tillgängliga verktyg i Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5dfb40c195cb9df9c8f2ac5d1cfbacdda022d416
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 774d96fb22bb13d4b4edcfab45f27ca9e52c5e88
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406730"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908836"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Hantera ett komprometterat e-postkonto
 
@@ -102,7 +102,7 @@ Följ anvisningarna i [återställa ett företags lösen ord för någon](../../
 >
 > - Om din lokala identitet är federerad med Microsoft 365 måste du ändra ditt lösenord lokalt och därefter informera administratören om skadan.
 >
-> - Se till att uppdatera applösenord. Applösenord återkallas inte automatiskt när ett lösenord för ett användarkonto återställs. Användaren ska ta bort befintliga applösenord och skapa nya. För instruktioner, se [Skapa och ta bort applösenord från sidan Ytterligare säkerhetsverifiering](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
+> - Se till att uppdatera applösenord. Applösenord återkallas inte automatiskt när ett lösenord för ett användarkonto återställs. Användaren ska ta bort befintliga applösenord och skapa nya. För instruktioner, se [Skapa och ta bort applösenord från sidan Ytterligare säkerhetsverifiering](/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
 >
 > - Vi rekommenderar att du aktiverar multifaktorautentisering (MFA) för att förhindra kompromettering, i synnerhet för konton med administratörsbehörigheter. Mer information om MFA finns i [Konfigurera multifaktorautentisering](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 

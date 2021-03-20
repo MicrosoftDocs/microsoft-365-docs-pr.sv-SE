@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
-description: Lär dig hur leveranspooler används för att skydda ryktet för e-postservrar i Microsoft 365-datacenter.
+description: Lär dig hur leveranspoolerna används för att skydda ryktet för e-postservrar i Microsoft 365-datacenter.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 89aac1478d3e5840df4379b9f49832b79d0e133a
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 5b35474c4d2b00c70e02f6f0127c3191a1e459bc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289811"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910732"
 ---
 # <a name="outbound-delivery-pools"></a>Pooler för utgående leverans
 
@@ -33,37 +33,37 @@ ms.locfileid: "50289811"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-E-postservrar i Microsoft 365-datacenter kan tillfälligt skickas skräppost. Till exempel skadlig kod eller skadlig skräppost-attack i en lokal e-postorganisation som skickar utgående e-post via Microsoft 365 eller komprometterat Microsoft 365-konton. Attacker försöker också undvika identifiering genom att vidarebefordra meddelanden via Microsoft 365-vidarebefordran.
+E-postservrar i Microsoft 365-datacenter kan tillfälligt bli av med att skicka skräppost. Till exempel skadlig programvara eller skadlig skräppost-attack i en lokal e-postorganisation som skickar utgående e-post via Microsoft 365 eller som har komprometterat Microsoft 365-konton. Attacker försöker också undvika identifiering genom att vidarebefordra meddelanden via Microsoft 365-vidarebefordran.
 
-De här scenarierna kan resultera i IP-adressen för de påverkade Microsoft 365-datacenterservrarna som visas på blockeringslistor från tredje part. De mål-e-postorganisationer som använder de här blockeringslistorna avvisar e-post från dessa meddelandekällor.
+De här scenarierna kan resultera i att IP-adressen för de berörda Microsoft 365-datacenterservrarna visas på blockeringslistor från tredje part. De mål-e-postorganisationer som använder dessa blockeringslistor avvisar e-post från dessa meddelandekällor.
 
 ## <a name="high-risk-delivery-pool"></a>Högriskleveranspool
-För att förhindra detta skickas alla utgående meddelanden från Microsoft 365-datacenterservrar som fastställt [](configure-the-outbound-spam-policy.md) vara skräppost eller som överskrider avsändargränserna för tjänsten eller principer för utgående skräppost via högriskleveranspoolen. [](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)
+För att förhindra detta skickas alla utgående meddelanden från Microsoft 365-datacenterservrar som har [](configure-the-outbound-spam-policy.md) fastställt vara skräppost eller som överskrider begränsningsgränserna för sändning av tjänsten eller utgående skräppost via högriskleveranspoolen. [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)
 
-Högriskleveranspoolen är en separat IP-adresspool för utgående e-post som bara används för att skicka meddelanden av "låg kvalitet" (till exempel skräppost [och bakåtcatter).](backscatter-messages-and-eop.md) Genom att använda högriskleveranspoolen förhindrar du att den vanliga IP-adresspoolen för utgående e-post skickar skräppost. Den normala IP-adresspoolen för utgående e-post upprätthåller det rykte som skickar meddelanden av "hög kvalitet", vilket minskar sannolikheten för att denna IP-adress visas på blockeringslistor för IP.
+Högriskleveranspoolen är en separat IP-adresspool för utgående e-post som bara används för att skicka meddelanden av "låg kvalitet" (till exempel skräppost [och bakåtcatter).](backscatter-messages-and-eop.md) Användning av högriskleveranspoolen förhindrar att den vanliga IP-adresspoolen för utgående e-post skickas som skräppost. Den normala IP-adresspoolen för utgående e-post behåller det rykte som skickar meddelanden av "hög kvalitet", vilket minskar sannolikheten att denna IP-adress visas i IP-blockeringslistor.
 
-Den verkliga risken att IP-adresser i högriskleveranspoolen placeras i listor över IP-blockeringar finns kvar, men detta är enligt design. Leverans till de avsedda mottagarna kan inte garanteras, eftersom många e-postorganisationer inte tar emot meddelanden från högriskleveranspoolen.
+Den mycket stora risken att IP-adresser i högriskpoolen placeras i IP-blockeringslistor finns kvar, men detta är enligt design. Leverans till de avsedda mottagarna är inte garanterad, eftersom många e-postorganisationer inte tar emot meddelanden från högriskleveranspoolen.
 
 Mer information finns i [Kontrollera utgående skräppost.](outbound-spam-controls.md)
 
 > [!NOTE]
-> Meddelanden där käll-e-postdomänen inte har någon A-post och ingen MX-post som definierats i offentlig DNS dirigeras alltid genom högriskleveranspoolen, oavsett hur många som är skräppost eller hur många som skickas.
+> Meddelanden där käll-e-postdomänen inte har någon A-post och ingen MX-post som definierats i offentlig DNS dirigeras alltid genom högriskleveranspoolen, oavsett deras disposition av skräppost eller sändningsgräns.
 
-### <a name="bounce-messages"></a>Studsa meddelanden
+### <a name="bounce-messages"></a>Studsande meddelanden
 
-Den utgående högriskleveranspoolen hanterar leveransen för alla rapporter om utebliven leverans (kallas även NDR-rapporter, icke-leveranskaviseringar, leveransstatusmeddelanden och DSN).
+Leveranspoolen för utgående högriskleverans hanterar leveransen för alla rapporter om utebliven leverans (kallas även NDR-rapporter, icke-leveranskaviseringar, leveransstatusmeddelanden och DSN-meddelanden).
 
-Möjliga orsaker till en ökning av NDR-inkluderar:
+Möjliga orsaker till en ökning av NDR-fel är:
 
-- En förfalskningskampanj som påverkar en av de kunder som använder tjänsten.
-- En katalogd till exempel en skördeattack.
+- En förfalskningskampanj som påverkar en av kunderna som använder tjänsten.
+- En katalogd till-skördeattack.
 - En skräppostattack.
 - En falsk e-postserver.
 
-Alla dessa problem kan resultera i en plötsligt ökning av antalet NDR-resultat som bearbetas av tjänsten. Ofta verkar dessa NDR-meddelanden vara skräppost till andra e-postservrar och -tjänster (kallas _[även bakåtcatter).](backscatter-messages-and-eop.md)_
+Alla dessa problem kan resultera i en plötsligt ökning av antalet NDR-resultat som bearbetas av tjänsten. Ofta verkar dessa NDR-meddelanden vara skräppost till andra e-postservrar och -tjänster (kallas även _[bakåtcatter).](backscatter-messages-and-eop.md)_
 
 ## <a name="relay-pool"></a>Reläpool
 
-Meddelanden som vidarebefordras eller vidarebefordras från Microsoft 365 skickas med en särskild reläpool, eftersom Microsoft 365 inte bör vara den faktiska avsändaren vid slutdestinationen. Det är också viktigt att isolera den här trafiken eftersom det finns legitima och ogiltiga scenarier för automatisk vidarebefordran eller e-postutskick från Microsoft 365. På ungefär samma sätt som högriskleveranspoolen används en separat IP-adresspool för vidarebefordrad e-post. Den här adresspoolen publiceras inte eftersom den kan ändras ofta.
+Meddelanden som vidarebefordras eller vidarebefordras från Microsoft 365 skickas med en särskild reläpool, eftersom Microsoft 365 inte bör vara den faktiska avsändaren vid den slutliga destinationen. Det är också viktigt att isolera den här trafiken, eftersom det finns legitima och ogiltiga scenarier för automatisk vidarebefordran eller vidarebefordra e-post från Microsoft 365. På ungefär samma sätt som högriskleveranspoolen används en separat IP-adresspool för vidarebefordrad e-post. Den här adresspoolen publiceras inte eftersom den kan ändras ofta.
 
-Microsoft 365 behöver verifiera att den ursprungliga avsändaren är legitim så att vi kan leverera det vidarebefordrade meddelandet med säkerhet. För att kunna göra det måste e-postautentisering (SPF, DKIM och DMARC) passera när meddelandet kommer till oss. I fall där vi kan autentisera avsändaren använder vi Sender Rewriting för att hjälpa mottagaren att veta att det vidarebefordrade meddelandet kommer från en betrodd källa. Du kan läsa mer om hur det fungerar och vad du kan göra för att se till att avsändardomänen skickar autentisering i [Sender Rewriting Scheme (SRS)](https://docs.microsoft.com/office365/troubleshoot/antispam/sender-rewriting-scheme).
+Microsoft 365 behöver verifiera att den ursprungliga avsändaren är legitim så att vi kan tryggt leverera det vidarebefordrade meddelandet. För att kunna göra det måste e-postautentisering (SPF, DKIM och DMARC) passera när meddelandet kommer till oss. I fall där vi kan autentisera avsändaren använder vi sender rewriting för att hjälpa mottagaren att veta att det vidarebefordrade meddelandet kommer från en betrodd källa. Du kan läsa mer om hur det fungerar och vad du kan göra för att se till att den avsändande domänen skickar autentisering i [SRS (Sender Rewriting Scheme).](/office365/troubleshoot/antispam/sender-rewriting-scheme)

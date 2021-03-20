@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9982191d-ed79-46a9-b2e7-317d1a3a9867
 description: Läs om hur du verifierar din domän och konfigurerar DNS-poster för e-post, Skype för företag – Online och andra tjänster på MyDomain för Microsoft.
-ms.openlocfilehash: 13fa707f28fcc6de24c3fdf58e56174d7a271776
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 1e7f9c5705e535c1558273be5bfdc99841e0ea4b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657857"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910168"
 ---
 # <a name="create-dns-records-at-mydomain-for-microsoft"></a>Skapa DNS-poster på MyDomain för Microsoft
 
@@ -35,7 +35,7 @@ ms.locfileid: "49657857"
  **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
 > [!CAUTION]
-> MyDomain-webbplatsen har inget stöd för SRV-poster. Det innebär att flera Skype för företag – Online- och Outlook Web App-funktioner inte fungerar. Oavsett vilket Microsoft-abonnemang du använder, och om du hanterar dina DNS-poster hos MyDomain, finns det [betydande tjänstbegränsningar](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) som kan innebära att du vill byta till en annan DNS-värdleverantör. 
+> MyDomain-webbplatsen har inget stöd för SRV-poster. Det innebär att flera Skype för företag – Online- och Outlook Web App-funktioner inte fungerar. Oavsett vilket Microsoft-abonnemang du använder, och om du hanterar dina DNS-poster hos MyDomain, finns det [betydande tjänstbegränsningar](../setup/domains-faq.yml) som kan innebära att du vill byta till en annan DNS-värdleverantör. 
   
 Om du väljer att hantera dina egna Microsoft DNS-poster hos MyDomain trots tjänstbegränsningarna utför du stegen i den här artikeln för att konfigurera DNS-posterna för e-post, Skype för företag – Online o.s.v.
     
@@ -109,7 +109,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     |**Priority**|**Värd**|**Points To: (pekar på)**|
     |:-----|:-----|:-----|
-    |0  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Obs!** Hämta din \<*domain-key*\> från ditt Microsoft-konto. > [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](../setup/domains-faq.yml) <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Obs!** Hämta din \<*domain-key*\> från ditt Microsoft-konto. > [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![MyDomain-BP-Configure-2-2](../../media/3e19cec3-7f3b-493d-81f7-cda30ba007d5.png)
   
@@ -168,7 +168,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg istället till de obligatoriska Microsoft-värdena i den aktuella posten, så att du har en enda SPF-post som innehåller båda uppsättningarna med värden. Behöver du exempel? Ta en titt på dessa [externa DNS-poster för Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#bkmk_spfrecords). Om du vill validera SPF-posten kan du använda något av dessa [SPF-valideringsverktyg](../setup/domains-faq.yml). 
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg istället till de obligatoriska Microsoft-värdena i den aktuella posten, så att du har en enda SPF-post som innehåller båda uppsättningarna med värden. Behöver du exempel? Ta en titt på dessa [externa DNS-poster för Microsoft](../../enterprise/external-domain-name-system-records.md#bkmk_spfrecords). Om du vill validera SPF-posten kan du använda något av dessa [SPF-valideringsverktyg](../setup/domains-faq.yml). 
   
 1. Kom igång genom att gå till domänsidan på MyDomain genom att klicka på [den här länken](https://www.mydomain.com/controlpanel). Du uppmanas att logga in först.
     
@@ -198,8 +198,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 <a name="BKMK_add_SRV"> </a>
 
 > [!CAUTION]
-> MyDomain-webbplatsen har inget stöd för SRV-poster. Det innebär att flera Skype för företag – Online- och Outlook Web App-funktioner inte fungerar. Oavsett vilket Microsoft-abonnemang du använder, och om du hanterar dina DNS-poster hos MyDomain, finns det [betydande tjänstbegränsningar](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) som kan innebära att du vill byta till en annan DNS-värdleverantör. 
+> MyDomain-webbplatsen har inget stöd för SRV-poster. Det innebär att flera Skype för företag – Online- och Outlook Web App-funktioner inte fungerar. Oavsett vilket Microsoft-abonnemang du använder, och om du hanterar dina DNS-poster hos MyDomain, finns det [betydande tjänstbegränsningar](../setup/domains-faq.yml) som kan innebära att du vill byta till en annan DNS-värdleverantör. 
   
 > [!NOTE]
 > Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Microsoft](../get-help-with-domains/find-and-fix-issues.md). 
-  

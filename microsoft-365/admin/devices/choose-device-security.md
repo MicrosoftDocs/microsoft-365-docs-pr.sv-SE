@@ -1,5 +1,5 @@
 ---
-title: Jämför olika metoder för att skydda enhet och program data
+title: Jämföra olika metoder för enhet och programdataskydd
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -17,42 +17,42 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Välj mellan olika metoder för MDM och MAM.
-ms.openlocfilehash: 2866aa8cf172361b2b5f5055932717154cd6ddd1
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+description: Välj mellan olika MDM- och MAM-metoder.
+ms.openlocfilehash: c4928f272c0bdd8a7b6883f506cebf9a153e9c49
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941303"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910540"
 ---
-# <a name="options-for-protecting-your-devices-and-app-data"></a>Alternativ för att skydda enheter och program data
+# <a name="options-for-protecting-your-devices-and-app-data"></a>Alternativ för att skydda dina enheter och appdata
 
-Du kan skydda dina organisationers enheter och data på flera sätt med Microsoft 365 för företag och företag. Du kan använda följande fristående abonnemang:
+Det finns flera sätt att skydda organisationers enheter och data på dem med Microsoft 365 för företag och företag. Du kan använda följande fristående abonnemang:
 
-- Intune (ingår i Microsoft Endpoint Management)
-- Abonnemang för Azure Active Directory Premium.
-- Grundläggande mobilitet och säkerhet (ingår i de flesta Microsoft 365 för företag och Enterprise-abonnemang) eller Använd abonnemangen som innehåller några av de tidigare fristående abonnemangen.
+- Intune (en del av Microsoft Endpoint Management)
+- Azure Active Directory Premium-abonnemang.
+- Basic Mobility and Security (ingår i de flesta Microsoft 365 för företag- och enterprise-abonnemang) Eller använd abonnemangen som omfattar vissa eller alla de tidigare fristående abonnemangen.
 
-- Ett Microsoft 365 Business Premium-abonnemang, som inkluderar säkerhets-och hot skydd för småföretag under 300-användare.
-- Microsoft 365 Enterprise-abonnemang som innehåller Avancerat skydd mot säkerhet och hot.
+- En Microsoft 365 Business Premium-prenumeration som innehåller säkerhet- och hotskydd för småföretag under 300 användare.
+- Microsoft 365 Enterprise-abonnemang som innehåller avancerat skydd mot säkerhet och hot.
 
-## <a name="device-management-options"></a>Alternativ för enhets hantering
+## <a name="device-management-options"></a>Alternativ för enhetshantering
 
-- **Grundläggande mobilitet och säkerhet** erbjuds med de flesta Microsoft 365-abonnemang och är det enda inbyggda alternativet för Microsoft 365 Business Standard och Microsoft 365 Business Basic. Mer information finns i [tillgänglighet för grundläggande mobilitet och säkerhet](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune). 
+- **Basic Mobility and Security** erbjuds med de flesta Microsoft 365-abonnemang och är det enda inbyggda valet för Microsoft 365 Business Standard och Microsoft 365 Business Basic. Mer information finns i [tillgängligheten för Basic Mobility and Security.](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune) 
 
-    Om du har Microsoft 365 Business Basic eller Microsoft 365 Business standard kan du även köpa Intune om din organisation har mer komplexa säkerhets behov.
+    Om du har antingen Microsoft 365 Business Basic eller Microsoft 365 Business Standard kan du också köpa Intune om organisationen har mer komplexa säkerhetsbehov.
  
-- **Microsoft Intune** är ett fristående abonnemang som också ingår i vissa Microsoft 365 för företag-eller företags abonnemang. Om du har Intune antingen som fristående eller en del av ditt abonnemang kan det vara bra att finjustera enheten och program data hanteringen. Mer information om tillgänglighet med Microsoft 365 finns i [tillgänglighet för Intune](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune).
+- **Microsoft Intune** är ett fristående abonnemang som även ingår i vissa abonnemang för Microsoft 365 för företag eller företag. Om du har Intune som fristående eller en del av din prenumeration kan du finjustera hantering av enheter och appdata. Mer information om tillgänglighet med Microsoft 365 finns i [Intune tillgänglighet](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune).
 
-    Microsoft Intune är en molnbaserad tjänst som fokuserar på hantering av mobila enheter (MDM) och mobil program hantering (MAM). Du kan styra hur organisationens enheter används, inklusive mobil telefoner, surfplattor och bärbara datorer. Du kan också konfigurera vissa principer för att styra program. Mer information finns i [dokumentationen till Microsoft Intune](https://docs.microsoft.com/mem/intune/).
+    Microsoft Intune är en molnbaserad tjänst som fokuserar på hantering av mobila enheter (MDM) och hantering av mobilprogram (MAM). Du kan styra hur organisationens enheter används, till exempel mobiltelefoner, surfplattor och bärbara datorer. Du kan också konfigurera specifika principer för att styra program. Mer information finns i [Microsoft Intune-dokumentationen](/mem/intune/).
 
-- **Azure Active Directory (AD) Premium-** abonnemang är fristående abonnemang som också ingår i Microsoft 365 för företag och företags abonnemang. Mer information finns i [Azure AD-priser](https://azure.microsoft.com/pricing/details/active-directory/).
+- **Azure Active Directory (AD) Premium-abonnemang** är fristående abonnemang som även ingår i vissa abonnemang för Microsoft 365 för företag och företag. Mer information finns i Azure [AD-priser.](https://azure.microsoft.com/pricing/details/active-directory/)
 
-     Azure AD Premium P1 och Azure AD Premium P2 gör att du kan ange villkorsstyrda åtkomst funktioner, själv service lösen ord återställning etc. Mer information om Premium-abonnemangens kapacitet finns på sidan [Azure AD-prissättning](https://azure.microsoft.com/pricing/details/active-directory/) .
-- **Microsoft 365 Business Premium** inkluderar Intune och Azure Active Directory Premium P1 och Office 365 Avancerat skydd för hotet. 
+     Med Azure AD Premium P1 och Azure AD Premium P2 kan du ange villkorsstyrda åtkomstfunktioner, självbetjäning för återställning av lösenord osv. Mer information om funktionerna i Premium-abonnemang finns på sidan för [Azure AD-priser.](https://azure.microsoft.com/pricing/details/active-directory/)
+- **Microsoft 365 Business Premium** innehåller Intune och Azure Active Directory Premium P1 och Office 365 Advanced Threat Protection. 
  
-    Microsoft 365 Business Premium innehåller en uppsättning principmallar för att skydda enheter och program data. Det erbjuder en god säkerhets-och hot skydds nivå för de flesta företag under 300-användare. Mer information finns i [Konfigurera Microsoft 365 Business Premium i installations guiden](../../business/set-up.md), [skydda Windows 10-datorer](../../business/secure-win-10-pcs.md)och [Microsoft 365 Business Premium-funktioner för säkerhet och efterlevnad](../../business/security-features.md).
+    Microsoft 365 Business Premium erbjuder en uppsättning principmallar för att skydda dina enheter och appdata. Det ger en bra säkerhetsnivå och skydd mot hot för de flesta företag under 300 användare. Mer information finns i [Konfigurera Microsoft 365 Business Premium](../../business/set-up.md)i installationsguiden , skydda Windows [10-datorer](../../business/secure-win-10-pcs.md)och Säkerhets- och [efterlevnadsfunktioner i Microsoft 365 Business Premium.](../../business/security-features.md)
 
-- **Microsoft 365 för Enterprise** -abonnemang innehåller Microsoft Intune och E5 inkluderar även Azure AD Premium-abonnemangen 1 och 2.
+- **Microsoft 365 för enterprise-prenumerationer** inkluderar Microsoft Intune och E5 inkluderar även Azure AD Premium-abonnemang 1 och 2.
 
-    Microsoft 365 E5 erbjuder den högsta säkerhets-och skydds nivån för alla prenumerationer på Microsoft 365. Mer information finns i [Microsoft 365 för företags översikt](../../enterprise/microsoft-365-overview.md).
+    Microsoft 365 E5 har den högsta säkerhetsnivån och hotskyddet för alla Microsoft 365-prenumerationer. Mer information finns i Microsoft [365 för företag – översikt.](../../enterprise/microsoft-365-overview.md)
