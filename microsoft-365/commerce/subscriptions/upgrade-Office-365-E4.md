@@ -1,5 +1,5 @@
 ---
-title: Uppgradera från ett Office 365 E4-abonnemang
+title: Uppgradera från en Office 365 E4-prenumeration
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,124 +20,124 @@ search.appverid:
 description: Lär dig hur du uppgraderar från en Office 365 E4-prenumeration.
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2587732a6c4092dcb7b53daf9493e7cee2f1987c
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: d4b9b22a4291f57e16d8b18a820a1016245e4cbc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308011"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917552"
 ---
-# <a name="upgrade-from-an-office-365-e4-subscription"></a>Uppgradera från ett Office 365 E4-abonnemang
+# <a name="upgrade-from-an-office-365-e4-subscription"></a>Uppgradera från en Office 365 E4-prenumeration
 
-I den här artikeln beskrivs hur du uppgraderar från en Office 365 E4 till en ny prenumeration. Information om vilka alternativ som är tillgängliga när du uppgraderar från Office 365 E4 finns i [viktig information för Office 365 E4-kunder](important-information-e4.md).
+Den här artikeln beskriver hur du uppgraderar från en Office 365 E4-prenumeration till en ny prenumeration. Mer information om vilka alternativ som är tillgängliga när du uppgraderar från Office 365 E4 finns i Viktig information för [Office 365 E4-kunder.](important-information-e4.md)
 
 > [!IMPORTANT]
-> Den här artikeln gäller Office 365 E4-abonnemang som har köpts direkt från Microsoft via kredit kort eller faktura. Om prenumerationen har köpts på ett annat sätt, till exempel genom en partner eller via Volume Licensing Service Center, kontaktar du din Microsoft-representant eller-partner för att hjälpa dig att uppgradera abonnemang.
+> Den här artikeln gäller endast Office 365 E4-prenumerationer som köpts direkt från Microsoft via kreditkort eller faktura. Om prenumerationen har köpts på något annat sätt, till exempel via en partner eller Volume Licensing Service Center, kontaktar du din Microsoft-kontorepresentant eller partner som hjälper dig att uppgradera abonnemang.
 
-## <a name="what-are-my-options-for-how-to-upgrade"></a>Vilka är alternativen för uppgradering?
+## <a name="what-are-my-options-for-how-to-upgrade"></a>Vilka alternativ har jag för uppgradering?
 
-Det enklaste sättet att uppgradera din plan är att använda fliken **uppgradering** i administrations centret för Microsoft 365. Men det går inte att använda fliken **uppgradering** i alla situationer. Om scenariot inte stöds kan du eventuellt uppgradera abonnemang manuellt.
+Det enklaste sättet att uppgradera ditt abonnemang är att **använda fliken** Uppgradera i administrationscentret för Microsoft 365. Men det finns **inte stöd** för att använda fliken Uppgradera i alla situationer. Om ditt scenario inte stöds kan du kanske uppgradera abonnemang manuellt.
 
-## <a name="what-is-the-upgrade-tab"></a>Vad är fliken uppgradering?
+## <a name="what-is-the-upgrade-tab"></a>Vad är fliken Uppgradera?
 
-På fliken **Uppgradera** kan du följa de här uppgifterna:
+Fliken **Uppgradera** utför följande uppgifter åt dig:
 
 - Du vägleds genom köpet av ett nytt abonnemang.
 - Alla användarlicenser i det gamla abonnemanget tilldelas om i det nya abonnemanget.
 - Det gamla abonnemanget avslutas.
 
-## <a name="what-does-it-mean-to-upgrade-plans-manually"></a>Vad innebär det att uppgradera abonnemang manuellt?
+## <a name="what-does-it-mean-to-upgrade-plans-manually"></a>Vad innebär det att uppgradera planer manuellt?
 
-Uppgradering av abonnemang manuellt innebär att du fyller i följande separata procedurer i stället för att använda fliken **uppgradering** .
+Om du uppgraderar abonnemang manuellt slutförs följande separata procedurer istället för att **använda fliken** Uppgradera.
 
 - Köp en ny prenumeration med rätt antal licenser.
 - Kontrollera att det nya abonnemanget är redo att använda.
-- Tilldela om licenser till användarna.
-- Avbryt det ursprungliga Office 365 E4-abonnemanget.
+- Tilldela licenser till användare.
+- Avbryt den ursprungliga Office 365 E4-prenumerationen.
 
-## <a name="find-out-if-you-can-use-the-upgrade-tab-to-upgrade-to-a-new-plan"></a>Ta reda på om du kan använda fliken uppgradering för att uppgradera till ett nytt abonnemang
+## <a name="find-out-if-you-can-use-the-upgrade-tab-to-upgrade-to-a-new-plan"></a>Ta reda på om du kan använda fliken Uppgradera för att uppgradera till ett nytt abonnemang
 
-1. Gå till sidan fakturering i administrations centret **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> .
-2. Välj Office 365 E4-abonnemanget.
-3. Välj fliken **uppgradering** . Om andra abonnemang visas kan du uppgradera abonnemangen automatiskt.
-4. Om du inte kan uppgradera automatiskt visas ett meddelande som beskriver varför du inte kan uppgradera.
+1. I administrationscentret går du till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
+2. Välj din Office 365 E4-prenumeration.
+3. Välj **fliken** Uppgradera. Om du ser andra abonnemang innebär det att du kan uppgradera abonnemang automatiskt.
+4. Om du inte kan uppgradera automatiskt visas ett meddelande som beskriver orsaken till varför du inte kan uppgradera.
 
-Det finns flera skäl till att du inte kan uppgradera abonnemang automatiskt. De flesta problemen är tillfälliga, till exempel problem med tjänstens status som du kan åtgärda. Mer information finns i [Varför kan jag inte uppgradera abonnemang?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) [Kontakta supporten](../../admin/contact-support-for-business-products.md)om du behöver hjälp med uppgraderingen.
+Det finns flera anledningar till att du inte kan uppgradera abonnemang automatiskt. De flesta problemen är tillfälliga, till exempel problem med tjänstens status som du kan åtgärda. Mer information finns i [Varför kan jag inte uppgradera abonnemang?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) Om du behöver hjälp med uppgraderingen kontaktar [du supporten.](../../admin/contact-support-for-business-products.md)
 
-## <a name="will-a-credit-check-be-required"></a>Krävs det en kredit kontroll?
+## <a name="will-a-credit-check-be-required"></a>Krävs en kreditkontroll?
 
-Om du betalar för det nya abonnemanget med faktura eller köpet överstiger en viss kostnad, kan det behövas en kreditkontroll. Om en kredit kontroll behövs kan uppgraderingen ta upp till två arbets dagar. Administratörer har inte till gång till administrations centret för Microsoft 365 förrän kredit kontrollen är klar. Men användare har fortfarande full till gång till E4-planen tills uppgraderingen är klar.
+Om du betalar för det nya abonnemanget med faktura eller köpet överstiger en viss kostnad, kan det behövas en kreditkontroll. Om det behövs en kreditkontroll kan uppgraderingen ta upp till två arbetsdagar. Administratörer har inte tillgång till administrationscentret för Microsoft 365 förrän kreditkontrollen är klar. Användarna har dock fortfarande full tillgång till E4-abonnemanget tills uppgraderingen är klar.
 
-## <a name="upgrade-your-plan-by-using-the-upgrade-tab"></a>Uppgradera abonnemanget med hjälp av fliken uppgradering
+## <a name="upgrade-your-plan-by-using-the-upgrade-tab"></a>Uppgradera ditt abonnemang med hjälp av fliken Uppgradera
 
 ### <a name="before-you-begin"></a>Innan du börjar
 
 Här är några saker som är viktigt att känna till innan du börjar.
 
-- **Planera för administrativ nertid.** Administratörer kan inte använda administrations centret för Microsoft 365 medan abonnemanget uppgraderas. Beroende på antalet användare som du har kan uppgraderingen ta från minuter till timmar. Vi rekommenderar att du planerar att genomföra uppgraderingen när du inte behöver göra uppdateringar med hjälp av administrations centret för Microsoft 365.
+- **Planera administrativa driftstopp.** Administratörer kan inte använda administrationscentret för Microsoft 365 medan abonnemanget uppgraderas. Beroende på antalet användare kan uppgraderingen ta allt från några minuter till flera timmar. Vi rekommenderar att du planerar att göra uppgraderingen när du inte behöver göra uppdateringar med hjälp av administrationscentret för Microsoft 365.
 
-    Användare upplever ingen avbrott i tjänsten medan planen uppgraderas – de fortsätter att ha fullständig åtkomst till E4-prenumerationen under uppgraderings processen. När uppgraderingen är klar har användare till gång till det nya abonnemanget.
-- **Användare, licenser, fakturering och anpassade domäner.** Information om hur användare och licenser hanteras under uppgraderingen, hur uppgraderings abonnemang påverkar faktureringen och hur du hanterar anpassade domäner finns i [Vad innebär det att uppgradera en plan till min tjänst och faktura?](upgrade-to-different-plan.md#what-does-upgrading-a-plan-do-to-my-service-and-billing)
-- **Ändra antalet användar licenser.** Du kan inte ta bort licenser som en del av uppgraderings abonnemanget. Men du kan [minska antalet licenser](../licenses/buy-licenses.md) innan eller efter det att du har uppgraderat abonnemanget.
+    Användarna upplever inga avbrott i tjänsten medan abonnemanget uppgraderas – de har full tillgång till E4-prenumerationen under uppgraderingen. När uppgraderingen är klar har användarna tillgång till det nya abonnemanget.
+- **Användare, licenser, fakturering och egna domäner.** Information om hur användare och licenser hanteras under uppgraderingen, hur uppgradering av abonnemang påverkar faktureringen och hur du hanterar egna domäner finns i Vad innebär uppgradering av en plan för min tjänst och [faktura?](upgrade-to-different-plan.md#what-does-upgrading-a-plan-do-to-my-service-and-billing)
+- **Ändra antalet användarlicenser.** Du kan inte ta bort licenser när du uppgraderar abonnemang. Du kan dock [minska antalet licenser före eller](../licenses/buy-licenses.md) efter uppgraderingen av abonnemang.
 
-### <a name="start-the-upgrade-by-using-the-upgrade-tab"></a>Starta uppgraderingen genom att använda fliken uppgradering
+### <a name="start-the-upgrade-by-using-the-upgrade-tab"></a>Starta uppgraderingen med hjälp av fliken Uppgradera
 
-1. Gå till sidan fakturering i administrations centret **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> .
-2. Välj Office 365 E4-abonnemanget.
-3. På sidan prenumerations information väljer du fliken **uppgradering** .
+1. I administrationscentret går du till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
+2. Välj din Office 365 E4-prenumeration.
+3. På sidan prenumerationsinformation väljer du **fliken** Uppgradera.
 4. Leta reda på den prenumeration du vill köpa och välj sedan **Uppgradera**.
-5. På sidan **kundvagn** kontrollerar du att allt stämmer. Välj om du vill betala varje månad eller varje år och kontrol lera antalet licenser under **antal**.
+5. Kontrollera att **allt** är korrekt på sidan Kundvagn. Välj om du vill betala per månad eller år och kontrollera antalet licenser under **Antal.**
     > [!NOTE]
-    > Eventuella tilläggs prenumerationer som är kopplade till Office 365 E4-prenumeration, till exempel Office 365 extra File Storage, visas också. Men om du har några tilläggs prenumerationer som ingår i den prenumeration du uppgraderar till tas de bort.
-6. När du har granskat din beställning väljer du **gå till kassan**.
-7. Gå till **betalnings sidan och** granska **sålda till**, **fakturerade till**och **artiklarna i den här beställningen**. Redigera informationen genom att välja **ändra** bredvid något av dessa objekt.
+    > Eventuella tilläggsprenumerationer som är kopplade till Din Office 365 E4-prenumeration, till exempel Office 365 Extra Fillagring, visas också. Men om du har några tilläggsprenumerationer som ingår i den prenumeration som du uppgraderar till tar vi bort dem.
+6. När du har granskat beställningen väljer du Gå **till kassan.**
+7. På sidan **Checkout** går du till **Såld till,** **Faktureras till** och **Artiklar i den här ordern.** Välj **Ändra** bredvid något av dessa objekt om du vill redigera informationen.
     > [!NOTE]
-    > Alternativet att använda faktura som betalnings metod är bara tillgängligt för beställningar som är högre än ett visst kostnads belopp. Att välja alternativet för faktura betalning kan försena uppgraderings processen med upp till två arbets dagar om en kredit kontroll krävs.
+    > Alternativet att använda faktura som betalningsmetod är endast tillgängligt för order som är större än ett visst belopp. Om du väljer fakturabetalning kan uppgraderingen fördröjas med upp till två arbetsdagar om en kreditkontroll krävs.
 8. När du är klar väljer du **Lägg order**.
 
 > [!NOTE]
-> Att uppgradera abonnemang tar vanligt vis mindre än tio minuter om det inte finns några fel eller problem. Du kan kontrol lera status för uppgraderingen genom att titta på antingen din gamla eller nya prenumeration.
+> Uppgraderingen av abonnemangen tar normalt mindre än tio minuter om det inte uppstår några fel eller problem. Du kan kontrollera status för uppgraderingen genom att titta på din gamla eller nya prenumeration.
 
-## <a name="upgrade-your-plan-manually"></a>Uppgradera ditt abonnemang manuellt
+## <a name="upgrade-your-plan-manually"></a>Uppgradera din plan manuellt
 
-Följ stegen nedan för att manuellt uppgradera användare till andra prenumerationer.
+Om du vill uppgradera användare till en annan prenumeration manuellt utför du följande steg i den ordning som visas.
 
-- [Steg 1: Köp ett nytt abonnemang](#step-1-buy-a-new-subscription)
-- [Steg 2: kontrol lera att ditt abonnemang har rätt antal licenser](#step-2-verify-that-your-subscription-has-the-right-number-of-licenses)
-- [Steg 3: tilldela om licenser till användare](#step-3-reassign-licenses-to-users)
-- [Steg 4: Avbryt Office 365 E4-abonnemanget](#step-4-cancel-the-office-365-e4-subscription)
+- [Steg 1: Köpa en ny prenumeration](#step-1-buy-a-new-subscription)
+- [Steg 2: Kontrollera att din prenumeration har rätt antal licenser](#step-2-verify-that-your-subscription-has-the-right-number-of-licenses)
+- [Steg 3: Omtilldela licenser till användare](#step-3-reassign-licenses-to-users)
+- [Steg 4: Avbryt Office 365 E4-prenumerationen](#step-4-cancel-the-office-365-e4-subscription)
 
-### <a name="step-1-buy-a-new-subscription"></a>Steg 1: Köp ett nytt abonnemang
+### <a name="step-1-buy-a-new-subscription"></a>Steg 1: Köpa en ny prenumeration
 
-Om du inte har ett nytt abonnemang ännu kan du [köpa ett annat Microsoft 365 för företag-abonnemang](../buy-another-subscription.md).
+Om du inte redan har en ny prenumeration kan du köpa en annan [Microsoft 365 för företag-prenumeration.](../try-or-buy-microsoft-365.md)
 
-Om du redan har ett abonnemang fortsätter du till nästa steg.
+Om du redan har en prenumeration fortsätter du till nästa steg.
 
-### <a name="step-2-verify-that-your-subscription-has-the-right-number-of-licenses"></a>Steg 2: kontrol lera att ditt abonnemang har rätt antal licenser
+### <a name="step-2-verify-that-your-subscription-has-the-right-number-of-licenses"></a>Steg 2: Kontrollera att din prenumeration har rätt antal licenser
 
-Innan du går vidare till nästa steg är det viktigt att se till att alla tjänster i ditt nya abonnemang har ställts in. Om prenumerationen inte är klar när du först kontrollerar kan du försöka igen senare.
+Innan du går vidare till nästa steg är det viktigt att se till att alla tjänster i den nya prenumerationen har konfigurerats. Om prenumerationen inte är redo när du kontrollerar först kan du försöka igen senare.
 
 > [!NOTE]
-> Om du väljer att betala för den nya prenumerationen via faktura kanske det krävs en kredit kontroll. Det kan ta upp till två arbets dagar innan abonnemanget blir tillgängligt.
+> Om du väljer att betala för den nya prenumerationen via faktura kan det behövas en kreditkontroll. Det kan ta upp till två arbetsdagar innan prenumerationen blir tillgänglig.
 
-1. Gå till sidan fakturering i administrations centret **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> .
-2. Välj **aktiv**i list rutan **prenumerations status** .
-3. Kontrol lera att det nya abonnemanget visas och att antalet licenser är samma som det du hade för Office 365 E4.
-4. Om du behöver köpa fler licenser följer du stegen i [köpa eller ta bort prenumerations licenser](../licenses/buy-licenses.md).
+1. I administrationscentret går du till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
+2. Välj **Aktiv i** listrutan **Prenumerationsstatus.**
+3. Kontrollera att den nya prenumerationen visas och att antalet licenser är detsamma som det du hade för Office 365 E4.
+4. Om du behöver köpa fler licenser följer du anvisningarna i Köpa [eller ta bort prenumerationslicenser.](../licenses/buy-licenses.md)
 
-### <a name="step-3-reassign-licenses-to-users"></a>Steg 3: tilldela om licenser till användare
+### <a name="step-3-reassign-licenses-to-users"></a>Steg 3: Omtilldela licenser till användare
 
-Du kan använda Microsoft 365 Admin Center för att tilldela licenser för upp till 20 användare åt gången. Mer information finns i [flytta användare till ett annat abonnemang](move-users-different-subscription.md).
+Du kan använda administrationscentret för Microsoft 365 för att tilldela licenser för upp till 20 användare åt gången. Mer information finns i Flytta [användare till en annan prenumeration.](move-users-different-subscription.md)
 
 > [!TIP]
-> Om du har många användare kan du [använda Office 365 PowerShell för att tilldela användar licenser i bulk](https://docs.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
+> Om du har många användare kan du använda [Office 365 PowerShell för att mass tilldela användarlicenser.](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)
 
-### <a name="step-4-cancel-the-office-365-e4-subscription"></a>Steg 4: Avbryt Office 365 E4-abonnemanget
+### <a name="step-4-cancel-the-office-365-e4-subscription"></a>Steg 4: Avbryt Office 365 E4-prenumerationen
 
-När alla användare har omtilldelats till ditt nya abonnemang [avbryter du Office 365 E4-abonnemanget](cancel-your-subscription.md).
+När alla användare har tilldelats om till den nya prenumerationen avbryter [du Office 365 E4-prenumerationen.](cancel-your-subscription.md)
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Uppgradera till ett annat abonnemang](upgrade-to-different-plan.md) (artikel) \
-[Köpa eller ta bort prenumerations licenser](../licenses/buy-licenses.md) (artikel) \
+[Uppgradera till ett annat abonnemang](upgrade-to-different-plan.md) (artikel)\
+[Köpa eller ta bort prenumerationslicenser](../licenses/buy-licenses.md) (artikel)\
 [Tilldela användare licenser](../../admin/manage/assign-licenses-to-users.md) (artikel)

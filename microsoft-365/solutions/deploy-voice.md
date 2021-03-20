@@ -16,45 +16,45 @@ ms.custom:
 - M365solutions
 - seo-marvel-jun2020
 f1.keywords: NOCSH
-description: Lär dig hur du väljer och distribuerar rätt Teams röst lösning för din organisation.
-ms.openlocfilehash: b5dda0ed3d9310c3c43052b9bac4996802e0ed2f
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+description: Lär dig hur du väljer och distribuerar rätt Röstlösning för Teams för din organisation.
+ms.openlocfilehash: ede8075767e9d0a80123ac742403f8a4d171392e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580917"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918388"
 ---
-# <a name="plan-and-deploy-a-teams-voice-solution"></a>Planera och distribuera en telefon lösning för Teams
+# <a name="plan-and-deploy-a-teams-voice-solution"></a>Planera och distribuera en Teams röstlösning
 
-Med en telefon lösning för team kan folk i organisationen ringa både inom och utanför organisationen. En komplett röst lösning består av team, Microsoft Phone system och ett urval av alternativ för anslutning till det offentliga telefonnätet.
+Med en röstlösning i Teams kan personer i organisationen ringa samtal både inom och utanför organisationen. En fullständig röstlösning består av Teams, Microsoft Phone System och ett urval av alternativ för anslutning till det publika telenätet (PSTN).
 
-![Översikt över Teams Voice Solutions](..\media\solutions-architecture-center\voice-concepts.png)
+![Översikt över röstlösningar för Teams](..\media\solutions-architecture-center\voice-concepts.png)
 
-Telefon systemet innehåller fullständiga PBX-funktioner (Private Branch Exchange) för din organisation. Samtal mellan användare i organisationen--oavsett deras geografiska plats – hanteras internt i telefon systemet och tar bort lång distans kostnader för dessa interna samtal.  
+Telefonsystemet tillhandahåller kompletta PBX-funktioner (Private Branch Exchange) för din organisation. Samtal mellan användare i din organisation – oavsett deras geografiska plats – hanteras internt i telefonsystemet, vilket tar bort kostnader för långa avstånd för dessa interna samtal.  
 
-Genom att ansluta telefon systemet till det offentliga telefonnät verket kan dina team användare även ringa samtal utanför din organisation.
+Genom att ansluta telefonsystemet till PSTN-nätverket (Public Switched Telephone Network) kan dina Teams-användare även ringa samtal utanför organisationen.
 
-Denna lösning hjälper dig att:
+Med hjälp av den här lösningsvägledning kan du:
 
-- Välj den röst lösning som passar din organisation
-- Distribuera den valda röst lösningen
+- Välj den röstlösning som är rätt för din organisation
+- Distribuera den röstlösning du valt
 
-Följ de här stegen för att välja, planera och konfigurera din röst lösning:
+Följ de här anvisningarna för att välja, planera och konfigurera din röstlösning:
 
-![Välj din röst lösning](..\media\solutions-architecture-center\voice-solutions-overview-1.png)
+![Välj din röstlösning](..\media\solutions-architecture-center\voice-solutions-overview-1.png)
 
-1. [Välj din röst lösning](https://docs.microsoft.com/MicrosoftTeams/cloud-voice-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+1. [Välj din röstlösning](/MicrosoftTeams/cloud-voice-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)
 
-2. [Konfigurera telefon system](https://docs.microsoft.com/microsoftteams/setting-up-your-phone-system?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+2. [Konfigurera telefonsystem](/microsoftteams/setting-up-your-phone-system?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)
 
-3. Konfigurera PSTN-anslutning genom att välja en kombination av följande:
-   - [Samtals plan](https://docs.microsoft.com/microsoftteams/set-up-calling-plans?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json) – Microsofts allt-i-moln-lösning med Microsoft som PSTN-bärvåg
-   - [Direkt routning](https://docs.microsoft.com/microsoftteams/direct-routing-configure?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json) – Använd dirigerad routning för att ansluta din egen PSTN-bärvåg till Teams 
+3. Konfigurera PSTN-anslutning genom att välja en eller en kombination av följande:
+   - [Samtalsabonnemang](/microsoftteams/set-up-calling-plans?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json) – Microsofts lösning för hela molnet med Microsoft som PSTN-operatör
+   - [Direkt routning](/microsoftteams/direct-routing-configure?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json) – Använd direkt routning för att ansluta din egen PSTN-operatör till Teams 
 
-Dessutom kanske du vill veta mer om hur en stor, flerspråkig organisation migreras till en organisations Voice-lösning i den [contoso-fallstudien](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json).
+Dessutom kanske du vill läsa om hur ett stort, multinationellt företag migrerat till en Röstlösning för Teams i [Contoso-fallstudien.](/MicrosoftTeams/voice-case-study-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)
 
-Information om nödvändiga licenser finns i följande avsnitt:
+Mer information om obligatoriska licenser finns i följande avsnitt:
 
-- [Team tilläggs licenser](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing?tabs=enterprise#what-voice-features-are-available-with-my-plan/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+- [Tilläggslicenser för Teams](/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&tabs=enterprise#what-voice-features-are-available-with-my-plan/toc.json)
 
-- [Licensierings krav för Direct-routning](https://docs.microsoft.com/microsoftteams/direct-routing-plan#licensing-and-other-requirements/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+- [Licenskrav för direktdirigering](/microsoftteams/direct-routing-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json#licensing-and-other-requirements/toc.json)

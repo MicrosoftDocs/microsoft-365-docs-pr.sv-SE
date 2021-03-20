@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Läs mer om hur du styr relaterade funktioner i Microsoft 365-grupper, Teams, SharePoint och Yammer.
-ms.openlocfilehash: 01dea57504bf5d68c0bb13376379379f29044191
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: b31e9bf1cd46f94343a489497fb5eb00e138ce60
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838473"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916448"
 ---
 # <a name="what-is-collaboration-governance"></a>Vad är styrning av samarbete?
 
@@ -59,7 +59,7 @@ Microsoft 365-grupper innehåller en uppsättning länkade resurser som använda
 |[Inkorgen](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|För e-postkonversationer mellan gruppmedlemmar. Den här inkorgen har en e-postadress och kan ställas in för att ta emot meddelanden från personer utanför gruppen och även utanför organisationen, ungefär som en traditionell distributionslista.|
 |[OneNote-anteckningsbok](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|Samla idéer, forskning och information|
 |[Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|Tilldela och hantera projektuppgifter bland gruppmedlemmarna|
-|[Power BI-arbetsyta](https://docs.microsoft.com/power-bi/collaborate-share/service-new-workspaces)|Ett samarbetsutrymme för data med instrumentpaneler och rapporter|
+|[Power BI-arbetsyta](/power-bi/collaborate-share/service-new-workspaces)|Ett samarbetsutrymme för data med instrumentpaneler och rapporter|
 |[Projekt och översikt](https://support.microsoft.com/project)|Webbaserade projekthanteringsverktyg|
 |[SharePoint-gruppwebbplats](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|En central lagringsplats för information, länkar och innehåll som rör gruppen|
 |[Strömma](https://support.microsoft.com/microsoft-stream)|En tjänst för direktuppspelning av video|
@@ -114,9 +114,10 @@ När du börjar din planeringsprocess för styrning bör du tänka på följande
 
 - **Bädda in styrningsbeslut direkt i de lösningar du** skapar – många styrningsbeslut kan implementeras genom att funktioner i Microsoft 365 inaktiveras.
 
+
 - **Använd en fasad metod** – Först distribuerar du samarbetsfunktionerna till en liten grupp användare. Få feedback från dem, titta efter supportärenden och uppdatera alla nödvändiga inställningar eller processer innan du går vidare till en större grupp.
 
-- **Förstärker med** utbildning – anpassa lösningar som [Microsoft 365](https://docs.microsoft.com/office365/customlearning) utbildningsvägar för att säkerställa att dina organisationsspecifika förväntningar förstärkers med utbildning från Microsoft.
+- **Förstärker med** utbildning – anpassa lösningar som [Microsoft 365](/office365/customlearning) utbildningsvägar för att säkerställa att dina organisationsspecifika förväntningar förstärkers med utbildning från Microsoft.
 
 - **Ha en strategi för att förmedla** principer och riktlinjer för styrning i din organisation – skapa ett Införandecenter för Microsoft 365 i en SharePoint-kommunikationswebbplats för att kommunicera principer och procedurer.
 
@@ -175,7 +176,7 @@ Dessa utbildningsmoduler från Microsoft Learn kan hjälpa dig att lära dig mer
 |![Utbildningsikon för informationsskydd](../media/information-protection-governance.svg)|Mängden data som skapas i dag ökar snabbare än någonsin, anställda vill få jobbet gjort överallt och liggande regelverken förändras hela tiden. Microsofts lösningar för informationsskydd och styrning hjälper organisationer att skapa rätt balans mellan att skydda sina data och deras personer produktivt. Den här utbildningsvägen kan hjälpa dig att förbereda för Microsoft 365 Certified: Security Administrator Associate och Microsoft 365 Certified: Enterprise Administration Expert-certifieringar.<br><br>5 t 13 min - Utbildningsväg - 7 moduler|
 
 > [!div class="nextstepaction"]
-> [Starta >](https://docs.microsoft.com/learn/modules/m365-compliance-information-governance/introduction/)
+> [Starta >](/learn/modules/m365-compliance-information-governance/introduction/)
 
 <br><br>
 
@@ -184,16 +185,16 @@ Dessa utbildningsmoduler från Microsoft Learn kan hjälpa dig att lära dig mer
 |![Utbildningsikon för Teams](../media/protect-enterprise-information-microsoft-365.svg)|Det är svårare än någonsin att skydda och skydda organisationens information. I utbildningsvägen Skydda företagsinformation med Microsoft 365 diskuteras hur du skyddar känslig information från att oavsiktligt skriva över eller felaktigt använda data, hur du identifierar och klassificerar data, hur du skyddar dem med känslighetsetiketter och hur du både övervakar och analyserar din känsliga information för att skydda mot förlust. Den här utbildningsvägen kan hjälpa dig att förbereda för Microsoft 365 Certified: Security Administrator Associate och Microsoft 365 Certified: Enterprise Administration Expert-certifieringar.<br><br>1 t - Utbildningsväg - 5 moduler|
 
 > [!div class="nextstepaction"]
-> [Starta >](https://docs.microsoft.com/learn/modules/m365-security-info-overview/introduction/)
+> [Starta >](/learn/modules/m365-security-info-overview/introduction/)
 
 #### <a name="security-and-compliance"></a>Säkerhet och efterlevnad
 
 |Utbildning:|Visa grundläggande kunskap om säkerhets- och efterlevnadsfunktioner i Microsoft 365|
 |:---|:---|
-|![Ikon för utbildning om säkerhet och efterlevnad](../media/microsoft-365-security-and-compliance-capabilities.svg)|Läs mer om områdena för säkerhets- och efterlevnadslösningar i Microsoft 365 och vilka funktioner som finns tillgängliga för att hjälpa företag att skydda sitt företag och uppfylla kraven i regelverken. Om du inte är bekant med grundläggande molnberäkningskoncept rekommenderar vi att du använder [molnbegreppen – principer för molnbaserad databehandling.](https://docs.microsoft.com/learn/modules/principles-cloud-computing/index)<br><br>3 t 11 min - Utbildningsväg - 8 moduler|
+|![Ikon för utbildning om säkerhet och efterlevnad](../media/microsoft-365-security-and-compliance-capabilities.svg)|Läs mer om områdena för säkerhets- och efterlevnadslösningar i Microsoft 365 och vilka funktioner som finns tillgängliga för att hjälpa företag att skydda sitt företag och uppfylla kraven i regelverken. Om du inte är bekant med grundläggande molnberäkningskoncept rekommenderar vi att du använder [molnbegreppen – principer för molnbaserad databehandling.](/learn/modules/principles-cloud-computing/index)<br><br>3 t 11 min - Utbildningsväg - 8 moduler|
 
 > [!div class="nextstepaction"]
-> [Starta >](https://docs.microsoft.com/learn/modules/what-is-m365/1-introduction/)
+> [Starta >](/learn/modules/what-is-m365/1-introduction/)
 
 ## <a name="illustrations"></a>Illustrationer
 
@@ -248,6 +249,6 @@ Se ett bakom kulisserna-exempel på hur Microsoft 365 Grupper, SharePoint, Teams
 
 ## <a name="see-also"></a>Se även
 
-[Dokumentation för Microsoft 365 Säkerhetscenter](https://docs.microsoft.com/microsoft-365/security)
+[Dokumentation för Microsoft 365 Säkerhetscenter](../security/index.yml)
 
-[Dokumentation för Microsoft 365 Efterlevnadscenter](https://docs.microsoft.com/microsoft-365/compliance)
+[Dokumentation för Microsoft 365 Efterlevnadscenter](../compliance/index.yml)

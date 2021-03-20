@@ -1,7 +1,7 @@
 ---
 title: Justera inställningarna efter registrering
 description: Så här utesluter du vissa Microsoft-konton
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,47 +9,47 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ca919798480698f92bba094c3755b3eccce30888
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: 760fcb94ec6d84a55fe4b8c3cb3540ae29994ae3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49867976"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918448"
 ---
 # <a name="adjust-settings-after-enrollment"></a>Justera inställningarna efter registrering
 
-När du har registrerat dig på Microsoft Managed Desktop kan vissa hanterings inställningar behöva justeras. Följ de här stegen om du vill kontrol lera och justera om det behövs:
+När du har slutfört registreringen i Microsoft Managed Desktop kan vissa hanteringsinställningar behöva justeras. Kontrollera och justera om det behövs genom att följa de här stegen:
 
-1. Granska de inställningar för Microsoft Intune och Azure Active Directory som beskrivs i nästa avsnitt.
-2. Om något av objekten gäller för din miljö gör du ändringarna beskrivna.
-3. Om du vill kontrol lera att alla inställningar är korrekta kan du köra verktyget för utvärdering av [beredskap](https://aka.ms/mmdart) för att se till att det inte finns några konflikter med Microsoft Managed Desktop.
+1. Granska inställningarna för Microsoft Intune och Azure Active Directory som beskrivs i nästa avsnitt.
+2. Om något av objekten gäller för din miljö gör du de justeringar som beskrivs.
+3. Om du vill kontrollera att alla inställningar är korrekta [](https://aka.ms/mmdart) kan du köra beredskapsutvärderingsverktyget igen för att säkerställa att ingenting står i konflikt med Microsoft Managed Desktop.
 
 > [!NOTE]
-> När dina åtgärder fortsätter under de följande månaderna är det möjligt att Microsoft Managed Desktop slutar fungera korrekt om du gör ändringar efter registrering till principer i Microsoft Intune, Azure Active Directory eller Microsoft 365 som påverkar Microsoft Managed Desktop. För att undvika problem med tjänsten kontrollerar du de specifika inställningar som beskrivs i [åtgärda problem som upptäckts av verktyget för utvärdering av beredskap](../get-ready/readiness-assessment-fix.md) innan du ändrar principerna som visas där. Du kan också köra verktyget för utvärdering av beredskap när som helst.
+> När åtgärderna fortsätter under de kommande månaderna, och du gör ändringar efter registrering av principer i Microsoft Intune, Azure Active Directory eller Microsoft 365 som påverkar Microsoft Managed Desktop, är det möjligt att Microsoft Managed Desktop inte fungerar som det ska. För att undvika problem med tjänsten kontrollerar [](../get-ready/readiness-assessment-fix.md) du de specifika inställningar som beskrivs i Åtgärda problem som påträffats av beredskapsutvärderingsverktyget innan du ändrar principerna som anges där. Du kan också köra beredskapsutvärderingsverktyget igen när som helst.
 
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune-inställningar
 
-- Distributions profil för automatisk pilot: om du använder några principer för automatisk pilot uppdaterar du var och en för att exkludera den **moderna arbets ytan-alla** Azure AD-grupper. Om du vill uppdatera dem väljer du den **moderna arbets ytan** i avsnittet **undantagna grupper** under **TILLDELNINGar**-alla Azure AD-grupper som har skapats under Microsoft Managed Desktop-registrering. Microsoft Managed Desktop har också skapat en autopilot-profil, som kommer att ha "modern arbets plats" i namnet (den **moderna arbets ytans pilot profil**). När du uppdaterar dina egna autopilot-profiler bör du kontrol lera att du *inte* utesluter de **moderna arbets Stations enheterna-alla** Azure AD-grupper från den **moderna arbets platsen automatisk pilot-profil** som har skapats av Microsoft Managed Desktop.
+- Distributionsprofilen för Autopilot: Om du använder autopilotprinciper ska du uppdatera var och en för att utesluta **den moderna arbetsplatsen-enheten –alla** Azure AD-grupper. Du uppdaterar dem genom att **i** avsnittet Undantagna grupper under **Uppgifter** välja den **moderna arbetsplatsen-enheter –alla Azure AD-grupper** som skapades under Microsoft Hanterad skrivbordsregistrering. Microsoft Hanterat skrivbord har också skapat en Autopilot-profil som har "Modern workplace" i namnet **(profilen Modern Workplace Autopilot).** När du uppdaterar dina egna Autopilot-profiler ska du se till att du inte utesluter gruppen **Moderna workplace-enheter –Alla** Azure AD-grupper från **den moderna workplace autopilot-profilen** som skapades av Microsoft Managed Desktop. 
 
-- Principer för villkorsstyrd åtkomst: om du skapar nya villkorsstyrda åtkomst principer för Azure AD, Microsoft Intune eller Microsoft Defender för slut punkt efter Microsoft Managed Desktop-registrering kan du utesluta den **moderna arbets plats tjänsten** Azure AD-gruppen från dem. Anvisningar finns i [villkorlig åtkomst: användare och grupper](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups). Microsoft Managed Desktop har separata villkorsstyrda åtkomst principer för att begränsa åtkomsten till dessa konton. Om du vill granska villkorlig åtkomst policy för Microsoft Managed Desktop (**modern arbets plats – säker arbets Station**) går du till Microsoft slut punkts hanteraren och navigerar till **villkorlig åtkomst** i **Endpoint Security**. Ändra inte några principer för villkorlig åtkomst för Azure AD som har skapats av Microsoft Managed Desktop med "modern arbets plats" i namnet.
+- Villkorsstyrda åtkomstprinciper: Om du skapar nya villkorsstyrda åtkomstprinciper relaterade till Azure AD, Microsoft Intune eller Microsoft Defender för Endpoint efter Microsoft Hanterad skrivbordsregistrering ska du utesluta **Azure** AD-gruppen för tjänstekonton för modern workplace från dem. Anvisningar finns i [Villkorsstyrd åtkomst: Användare och grupper.](/azure/active-directory/conditional-access/concept-conditional-access-users-groups) Microsoft Managed Desktop har separata principer för villkorsstyrd åtkomst för att begränsa åtkomsten till dessa konton. Gå till Microsoft Endpoint Manager och gå till Villkorsstyrd åtkomst **i** **Slutpunktssäkerhet** för att granska principen för villkorsstyrd åtkomst för Microsoft Managed Desktop (Modern workplace – Secure **Arbetsstation).** Ändra inte villkorsstyrda åtkomstprinciper för Azure AD som skapats av Microsoft Managed Desktop och som har "Modern Workplace" i namnet.
 
-- Multifaktorautentisering: om du skapar eventuella nya autentiseringskrav i villkor för villkorsstyrd åtkomst för Azure AD, Intune eller Microsoft Defender för slut punkt efter Microsoft Managed Desktop-registrering, utesluter den **moderna arbets plats tjänsten** Azure AD-gruppen. Anvisningar finns i [villkorlig åtkomst: användare och grupper](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups). Microsoft Managed Desktop har separata villkorsstyrda åtkomst principer för att begränsa åtkomsten till medlemmar i gruppen. Om du vill granska villkorlig åtkomst policy för Microsoft Managed Desktop (**modern arbets plats**) går du till Microsoft slut punkts hanteraren och navigerar till **villkorlig åtkomst** i **Endpoint Security**. 
+- Multifaktorautentisering: Om du skapar nya multifaktorautentiseringskrav i villkorsstyrda åtkomstprinciper som är relaterade till Azure AD, Intune eller Microsoft Defender för Slutpunkt efter Microsoft Hanterad skrivbordsregistrering ska du utesluta Azure AD-gruppen för **tjänstekonton** för modern arbetsplats från dem. Anvisningar finns i [Villkorsstyrd åtkomst: Användare och grupper.](/azure/active-directory/conditional-access/concept-conditional-access-users-groups) Microsoft Managed Desktop har separata principer för villkorsstyrd åtkomst för att begränsa åtkomsten till medlemmar i den här gruppen. Om du vill granska principen för villkorsstyrd åtkomst i Microsoft Managed Desktop **(Modern Workplace –**) går du till Microsoft Endpoint Manager och navigerar till **Villkorsstyrd åtkomst** i **Slutpunktssäkerhet.** 
 
-- Windows 10 – uppdatera signal: för en Windows 10-uppdaterings ring som du har skapat exkluderar du de **moderna arbets platserna-alla** Azure AD-grupper från varje princip. Anvisningar finns i [skapa och tilldela uppdaterings ringar](https://docs.microsoft.com/mem/intune/protect/windows-10-update-rings#create-and-assign-update-rings). Microsoft Managed Desktop har också skapat vissa uppdaterings samtals principer, vilka alla har "modern arbets plats" i namnet (till exempel **moderna arbets plats uppdaterings princip [breda]**, **moderna arbets plats uppdaterings princip [snabbt]**, **modern arbets plats uppdaterings princip [First]** och **moderna arbets plats uppdaterings princip [test]**). När du uppdaterar dina egna principer bör du kontrol lera att du *inte* utesluter de **moderna arbets Stations enheterna-alla** Azure AD-grupper från dem som hanteras av Microsoft.
+- Uppdateringsringen i Windows 10: För alla principer för Windows 10-uppdateringsringen som du har skapat exkluderar du **moderna workplace-enheter –alla Azure AD-grupper** från varje princip. Instruktioner finns i Skapa [och tilldela uppdateringsringar.](/mem/intune/protect/windows-10-update-rings#create-and-assign-update-rings) Microsoft Hanterat skrivbord kommer också att ha skapat vissa principer för uppdateringsringen, som alla har "Modern workplace" i namnet (till exempel Uppdateringsprincip för **modern arbetsplats [Bred]**, Uppdateringsprincip för **modern arbetsplats [Snabb]**, Uppdateringsprincip för modern arbetsplats **[första]** och Uppdateringsprincip **för modern arbetsplats [Test]**). När du uppdaterar dina egna principer  ska du se till att du inte utesluter **gruppen Moderna workplace-enheter –Alla** Azure AD-grupper från de som Microsoft Hanterat skrivbord har skapat.
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory-inställningar
 
-Självbetjäning för återställning av lösen ord: om du använder självbetjäning för återställning av lösen ord för alla användare, justera tilldelningen för att utesluta Microsoft Managed Desktop Service-konton. Om du vill justera den här tilldelningen skapar du en dynamisk Azure AD-grupp för alla användare *förutom* Microsoft Managed Desktop Service-konton och använder sedan gruppen för tilldelning i stället för "alla användare".
+Självbetjäning för återställning av lösenord: Om du använder självbetjäning för återställning av lösenord för alla användare justerar du tilldelningen så att den exkluderar Microsoft Managed Desktop-tjänstkonton. Om du vill justera den här uppgiften skapar du en dynamisk Azure AD-grupp för alla användare utom *Microsoft* Managed Desktop-tjänstkonton och använder sedan gruppen för tilldelning i stället för "alla användare".
 
-För att hjälpa dig att hitta och exkludera tjänst konton är det här ett exempel på en dynamisk fråga som du kan använda:
+Här är ett exempel på en dynamisk fråga som du kan använda för att hjälpa dig att hitta och utesluta tjänstkonton:
 
 ```Console
 (user.objectID -ne null) and (user.userPrincipalName -ne "MSADMIN@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MSADMININT@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MWAAS_SOC_RO@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MWAAS_WDGSOC@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MSTEST@TENANT.onmicrosoft.com")
 ```
 
-I den här frågan ersätter du @TENANT med namnet på klient organisationens domän.
+I den här frågan ersätter @TENANT domännamnet med klientorganisationens domännamn.
 
 
 

@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: Använd PowerShell för Microsoft 365 om du vill hantera principer för Skype för företag – Online, principer för användare och mötesinställningar.
-ms.openlocfilehash: 1992edfb6d1c141c7ed4db22064960873b768865
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 4477dadf0ea38a81ac0ae282da3f74fc12f3406f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50514962"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916686"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>Hantera Skype för företag – Online med PowerShell
 
@@ -32,7 +32,7 @@ Administratörer av Skype för företag – Online ansvarar för hantering av pr
   > [!Note]
    > Skype för företag – Online-Connector är för närvarande en del av den senaste versionen av Teams PowerShell-modul. Om du använder den senaste versionen av Teams PowerShell, behöver du inte installera Skype för företag – Online-Connector.
    
-Installera [Teams PowerShell-modul](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
+Installera [Teams PowerShell-modul](/microsoftteams/teams-powershell-install).
 
 
 ## <a name="connect-using-admin-credentials"></a>Anslut med administratörsuppgifter.
@@ -75,4 +75,4 @@ Mer information finns i:
   
 [Börja använda PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)
 
-[PowerShell cmdlet-referenser för Skype för företag](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
+[PowerShell cmdlet-referenser för Skype för företag](/powershell/module/skype/?view=skype-ps)

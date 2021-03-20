@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Översikt över Viva Topics.
-ms.openlocfilehash: 91442ba12b3d5df1d9934022751f4bc381cd40e8
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
-ms.translationtype: HT
+ms.openlocfilehash: 68a88e74a674a7bbc290ae0e8f88bfbe0277d910
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453975"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917386"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Översikt över Microsoft Viva Topics 
 
@@ -66,7 +66,7 @@ När ett ämne identifieras och AI bestämmer att det innehåller tillräckligt 
 
 Dina kunskapsadministratörer kan välja att crawla alla SharePoint-webbplatser i klientorganisationen för ämnen eller att bara välja vissa.
 
-Se [Identifiering och säkring av ämnen](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation) för mer information
+Se [Identifiering och säkring av ämnen](./topic-experiences-discovery-curation.md) för mer information
 
 ## <a name="roles"></a>Roller
 
@@ -108,7 +108,7 @@ Med administratörskontroller i Administrationscenter för Microsoft 365 kan du 
 - Kontrollera vilka användare som kan skapa och redigera ämnen.
 - Kontrollera vilka användare som kan visa ämnen.
 
-Se [tilldela användarbehörigheter](https://docs.microsoft.com/microsoft-365/knowledge/plan-topic-experiences#user-permissions), [hantera synlighet för ämnen](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules)och [hantera identifiering av ämnen](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery) för mer information om administratörskontroller.
+Se [tilldela användarbehörigheter](./plan-topic-experiences.md#user-permissions), [hantera synlighet för ämnen](./topic-experiences-knowledge-rules.md)och [hantera identifiering av ämnen](./topic-experiences-discovery.md) för mer information om administratörskontroller.
 
 ## <a name="topic-curation--feedback"></a>Ämneshantering och feedback
 
@@ -120,8 +120,7 @@ Användare som du tillåter åtkomst till för att se ämnen i sitt dagliga arbe
 
 Dessutom kan användare med rätt behörighet tagga objekt, till exempel Yammer-konversationer som är relevanta för ett ämne, och lägga till dem i ett visst ämne. 
 
-Se [Identifiering och säkring av ämnen](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation) för mer information
+Se [Identifiering och säkring av ämnen](./topic-experiences-discovery-curation.md) för mer information
 
 
 ## <a name="see-also"></a>Se även
-

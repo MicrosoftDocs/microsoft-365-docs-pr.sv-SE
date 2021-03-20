@@ -20,12 +20,12 @@ ms.custom:
 description: Lär dig hur du använder DomainKeys identifierad e-post (DKIM) med Microsoft 365 för att säkerställa att meddelanden som skickas från din anpassade domän är betrodda av mål-e-postsystemet.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 55a7bf612d121364ed64c159a450b6cf035d3837
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 7894375cf7dd7973a7c3dc0160dbaa084823e9d4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286435"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918648"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Använda DKIM för att validera utgående e-post som skickas från din anpassade domän
 
@@ -88,7 +88,7 @@ Nitty Gritty: DKIM använder en privat nyckel för att infoga en krypterad signa
 ## <a name="manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys"></a>Uppgradera manuellt dina 1024-bitars nycklar till 2048-bitars DKIM-krypteringsnycklar
 <a name="1024to2048DKIM"> </a>
 
-Eftersom både 1024 och 2048 bitar stöds för DKIM-nycklar visar dessa instruktioner hur du uppgraderar din 1024-bitarsnyckel till 2048 i [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Stegen nedan gäller för två användningsfall: Välj det som passar bäst för konfigurationen.
+Eftersom både 1024 och 2048 bitar stöds för DKIM-nycklar visar dessa instruktioner hur du uppgraderar din 1024-bitarsnyckel till 2048 i [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Stegen nedan gäller för två användningsfall: Välj det som passar bäst för konfigurationen.
 
 - När du **redan har konfigurerat DKIM** kan du rotera bitar genom att köra följande kommando:
 
@@ -115,7 +115,7 @@ Get-DkimSigningConfig -Identity <Domain for which the configuration was set> | F
 
 Om du vill rotera till den andra väljaren är dina alternativ a) att låta Microsoft 365-tjänsten rotera väljaren och uppgradera till 2048 bitar inom de kommande sex månaderna eller b) att efter fyra dagar bekräfta att 2048 bitar används och manuellt rotera den andra väljarknappen med hjälp av lämplig cmdlet ovan.
 
-För detaljerad information om syntax och parametrar, se följande artiklar: [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig), [New-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/new-dkimsigningconfig)och [Get-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/get-dkimsigningconfig).
+För detaljerad information om syntax och parametrar, se följande artiklar: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig), [New-DkimSigningConfig](/powershell/module/exchange/new-dkimsigningconfig)och [Get-DkimSigningConfig](/powershell/module/exchange/get-dkimsigningconfig).
 
 ## <a name="steps-you-need-to-do-to-manually-set-up-dkim"></a>Steg du behöver göra för att konfigurera DKIM manuellt
 <a name="SetUpDKIMO365"> </a>
@@ -132,7 +132,7 @@ Om du vill konfigurera DKIM gör du så här:
 För varje domän som du vill lägga till en DKIM-signatur för måste du publicera två CNAME-poster.
 
 > [!NOTE]
-> Har du inte läst hela artikeln kan du ha missat den här tidsbesparande PowerShell-anslutningsinformationen: [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+> Har du inte läst hela artikeln kan du ha missat den här tidsbesparande PowerShell-anslutningsinformationen: [Anslut till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 Kör följande kommandon i Exchange Online PowerShell för att skapa väljararkiv:
 
@@ -215,7 +215,7 @@ När du har publicerat CNAME-posterna i DNS är du redo att aktivera DKIM-signer
 >:::image type="content" source="../../media/DKIMNoKeysSavedForThisDomain.PNG" alt-text="Felet &quot;Inga DKIM-nycklar sparade för den här domänen.&quot;":::
 > Om du konfigurerar DKIM för första gången och ser felet "Inga DKIM-nycklar sparade för den här domänen." slutför kommandot i steg 2 nedan (till exempel *Set-DkimSigningConfig -Identity contoso.com -Enabled $true*) för att se nyckeln.
 
-1. [Ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Kör följande kommando:
 
@@ -266,7 +266,7 @@ När du inaktiverar signeringsprincipen inaktiveras inte DKIM fullständigt. Eft
 
 ### <a name="to-disable-the-dkim-signing-policy-by-using-windows-powershell"></a>Inaktivera DKIM-signeringsprincipen med Windows PowerShell
 
-1. [Ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Kör något av följande kommandon för varje domän som du vill inaktivera DKIM-signering för.
 
@@ -359,4 +359,4 @@ Till exempel skulle DKIM-posten se ut så här:
 
 ## <a name="more-information"></a>Mer information
 
-Nyckelrotation via PowerShell [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig)
+Nyckelrotation via PowerShell [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)

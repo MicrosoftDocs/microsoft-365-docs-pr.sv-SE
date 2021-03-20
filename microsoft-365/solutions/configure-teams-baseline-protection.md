@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du distribuerar team med en grundläggande nivå av skydd.
-ms.openlocfilehash: 11554dbd7e33a77c9f6397ae9c5e91669f537081
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 4f38bf286b8ebd3edf6f7705299008566d2b7c8f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921876"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916340"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Konfigurera teams med grundläggande skydd
 
@@ -37,9 +37,9 @@ Vi rekommenderar även att du aktiverar grundläggande Defender för Office 365-
 
 |Alternativ|Information |
 |:------|:-----------|
-|Säkra bilagor för SPO, OneDrive och Teams|[Säkra bifogade filer](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[Defender för Office 365 för SharePoint, OneDrive och Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)|
-|Säkra dokument|[Säkra dokument i Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
-|Säkra länkar för Teams|[Office 365 säkra länkar i Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[Säkra länkar](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
+|Säkra bilagor för SPO, OneDrive och Teams|[Säkra bifogade filer](../security/office-365-security/atp-safe-attachments.md)<br>[Defender för Office 365 för SharePoint, OneDrive och Microsoft Teams](../security/office-365-security/atp-for-spo-odb-and-teams.md)|
+|Säkra dokument|[Säkra dokument i Microsoft Defender för Office 365](../security/office-365-security/safe-docs.md)|
+|Säkra länkar för Teams|[Office 365 säkra länkar i Teams](../security/office-365-security/atp-safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[Säkra länkar](../security/office-365-security/atp-safe-links.md)|
 
 ## <a name="teams-guest-sharing"></a>Gästdelning i Teams
 
@@ -59,7 +59,7 @@ Att ange inställningar för gäståtkomst i Teams
 > [!NOTE]
 > Det kan ta upp till 24 timmar för gästinställningar i Teams att bli aktiva när du har aktiverat det.
 
-Gästdelning är aktiverad som standard för Office 365-grupper och SharePoint, men om du tidigare har ändrat gästdelningsinställningarna för din organisation rekommenderar vi att du går igenom [Samarbeta med gäster i ett team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team) för att säkerställa att gästdelning blir tillgängligt i Teams.
+Gästdelning är aktiverad som standard för Office 365-grupper och SharePoint, men om du tidigare har ändrat gästdelningsinställningarna för din organisation rekommenderar vi att du går igenom [Samarbeta med gäster i ett team](./collaborate-as-team.md) för att säkerställa att gästdelning blir tillgängligt i Teams.
 
 ## <a name="site-and-file-sharing"></a>Delning av webbplatser och filer
 
@@ -71,7 +71,7 @@ Om du vill minska risken för att oavsiktligt dela filer eller mappar med person
 3. Under **Fil- och mapplänkar** väljer du **Endast personer i organisationen**.
 4. Klicka på **Spara**.
 
-Vi rekommenderar även att du aktiverar [SharePoint- och OneDrive-integrering med Azure Active Directory B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) om du vill ha bästa möjliga gästdelning.
+Vi rekommenderar även att du aktiverar [SharePoint- och OneDrive-integrering med Azure Active Directory B2B](/sharepoint/sharepoint-azureb2b-integration-preview) om du vill ha bästa möjliga gästdelning.
 
 ## <a name="create-a-team"></a>Skapa ett team
 
@@ -94,12 +94,12 @@ Uppdatera inställningarna för webbplatsdelning
 
 Microsoft 365 tillhandahåller fler metoder för att skydda innehållet. Överväg att använda följande alternativ för att förbättra säkerheten för din organisation.
 
-- Låt gästanvändaren godkänna [användningsvillkor](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
-- Konfigurera en [princip om tidsgräns för sessioner](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) för gäster.
-- Skapa [känslig informationstyper](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types) och Använd [skydd mot dataförlust](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) för att ange principer för åtkomst av känslig information.
+- Låt gästanvändaren godkänna [användningsvillkor](/azure/active-directory/conditional-access/terms-of-use).
+- Konfigurera en [princip om tidsgräns för sessioner](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) för gäster.
+- Skapa [känslig informationstyper](../compliance/sensitive-information-type-learn-about.md) och Använd [skydd mot dataförlust](../compliance/data-loss-prevention-policies.md) för att ange principer för åtkomst av känslig information.
 
 ## <a name="see-also"></a>Se även
 
-Få mer information om hur du [hanterar mötesprinciper i Teams](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams).
+Få mer information om hur du [hanterar mötesprinciper i Teams](/microsoftteams/meeting-policies-in-teams).
 
-[Komma igång med hantering av Insider-riskhantering](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-configure)
+[Komma igång med hantering av Insider-riskhantering](../compliance/insider-risk-management-configure.md)

@@ -1,74 +1,72 @@
 ---
 title: Tjänständringar och kommunikation
 description: ''
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 753ad703a7949b7901ddd76d0d8c966b170461ea
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 879e5dc96cf19c8070769b62f59cca0e409bf1df
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950324"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917764"
 ---
 # <a name="service-changes-and-communication"></a>Tjänständringar och kommunikation
 
-Ibland kan Microsoft behöva ändra information om hur Microsoft Managed Desktop fungerar. På samma sätt kan du behöva göra ändringar som också påverkar tjänsten. Vi hanterar sådana förändringar olika beroende på hur viktiga de är. I det här avsnittet beskrivs de ändringar vi anser vara huvud och förklarar vi hur vi hanterar dem och andra ändringar.
+Ibland kan Microsoft behöva ändra information om hur Microsoft Hanterat skrivbord fungerar. På samma sätt kan du behöva göra ändringar som skulle påverka tjänsten också. Vi hanterar ändringarna på olika sätt beroende på hur viktiga de är. Det här avsnittet definierar de ändringar vi anser vara större och förklarar hur vi hanterar dem jämfört med andra ändringar.
 
 
 
-## <a name="changes-made-by-microsoft"></a>Ändringar som görs av Microsoft
+## <a name="changes-made-by-microsoft"></a>Ändringar som gjorts av Microsoft
 
-Vi ger dig ett meddelande om minst 30 dagar i förväg för en större ändring som kräver en åtgärd. Vi meddelar dig med hjälp av Microsoft Managed Desktop admin-portalen.
+Vi kommer att avse dig minst 30 dagar i förväg för alla större ändringar som kräver åtgärder. Vi skickar ett meddelandesystem till dig med meddelandesystemet i administrationsportalen för Microsoft Managed Desktop.
 
-**Större ändringar** är sådana som kan påverka något av dessa områden:
-- Ändringar som påverkar dagliga produktivitet
-- Ändringar i anpassade funktioner och program
-- Öka eller minska synlig kapacitet
-- Ändringar i produkt anpassning som kan orsaka användar förvirring eller ändring i helpdesk-processer och referensmaterial eller URL-adresser
-- Ändringar som kräver behörigheter utöver dem som krävs av tjänsten för dagliga operationer, exklusive åtgärder som förhindrar eller åtgärdar problem
-- Ändringar där data lagras
-- Lägga till en ny komponent tjänst eller ett nytt program i tjänstens omfattning
-- Borttagning av en komponent tjänst eller ett program från tjänstens räckvidd
-- Lägga till en ny funktion i tjänsten
+**Viktiga ändringar** är de som kan påverka något av följande områden:
+- Ändringar som påverkar daglig produktivitet
+- Ändringar av anpassade funktioner och program
+- Öka eller minska den synliga kapaciteten
+- Ändringar i produktmärket som kan orsaka förvirring för användarna eller ändra supportprocesser och referensmaterial eller URL:er
+- Ändringar som kräver behörigheter utöver de som krävs av tjänsten för dagliga åtgärder, utom åtgärder som förhindrar eller åtgärdar problem
+- Ändringar av var dina data lagras
+- Lägga till en ny komponenttjänst eller ett nytt program till tjänstens omfattning
+- Borttagning av en komponenttjänst eller ett program från tjänstens omfattning
+- Lägga till ny funktion i tjänsten
 
 > [!NOTE]
-> Vi kanske måste göra ändringar för att minska eventuella problem som kan uteslutas från policyn för meddelanden om 30 dagar.
+> Vi kan behöva göra ändringar för att minimera incidenter eller säkerhetsproblem som skulle uteslutas från 30-dagarsmeddelandeprincipen.
 
-Vi kommer att regelbundet göra andra ändringar i tjänsten för att förbättra användar upplevelsen, säkerhet, pålitlighet och rapportering. Här är några exempel på dessa ändringar:
+Vi kommer regelbundet att göra andra ändringar i tjänsten för att förbättra användarupplevelsen, säkerheten, tillförlitligheten och rapporteringen. Några exempel på dessa ändringar är:
 
-- Installation av Windows-och Office-uppdateringar
-- Uppdateringar av säkerhets bas linjen som tillämpas på enheter
+- Installation av Windows- och Office-uppdateringar
+- Uppdateringar av säkerhetsbaslinjen som tillämpas på enheter
 - [Enheter som stöds](device-list.md)
 
-Vi kommer att meddela dessa ändringar med hjälp av etablerade kanaler. Om du har några frågor om eventuella ändringar kontaktar du Microsoft [Managed Station ära](../working-with-managed-desktop/admin-support.md)datorer. Ändringar i tjänsten är också dokumenterade i [ändrings historiken](../change-history-managed-desktop.md).
+Vi kommunicerar dessa ändringar med hjälp av etablerade kanaler. Om du har frågor om några ändringar kan du kontakta Microsoft Managed Desktop [Operations-teamet.](../working-with-managed-desktop/admin-support.md) Ändringar av tjänsten har också dokumenterats vid behov i [ändringshistoriken.](../change-history-managed-desktop.md)
 
-Ändringar och meddelanden i Microsoft hanterade skriv bord styrs av två Microsoft-principer:
-- [Modern livs cykel policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy)
-- [Microsoft 365 ändra kommunikations princip](https://docs.microsoft.com/office365/admin/manage/message-center?redirectSourcePath=%252fen-us%252farticle%252fMessage-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093&view=o365-worldwide)
+Ändringar och kommunikation för Microsoft Hanterat skrivbord styrs av två Microsoft-policyer:
+- [Modern livscykelpolicy](https://support.microsoft.com/help/30881/modern-lifecycle-policy)
+- [Microsoft 365 Change Communication Policy](/office365/admin/manage/message-center?view=o365-worldwide)
 
-## <a name="changes-you-make"></a>Ändringar du gör
+## <a name="changes-you-make"></a>Ändringar som du gör
 
-Vissa ändringar som du kan göra i miljön kan påverka Microsoft Managed Desktop. För de här stora ändringarna ber vi dig att ge oss minst 30 dagars varsel genom att skicka en tjänstbegäran på Microsoft Managed Desktop admin-portalen. Instruktioner finns i [Administratörs support för Microsoft Managed Desktop](../working-with-managed-desktop/admin-support.md) . Det gör det möjligt för oss att planera och förbereda ändringar för att undvika störningar.
+Vissa ändringar som du kan göra i din miljö kan påverka Microsoft Hanterat skrivbord. För dessa stora ändringar ber vi dig att ge oss minst 30 dagars varsel genom att skicka en tjänstbegäran i administrationsportalen för Microsoft Managed Desktop. Instruktioner [finns i Administratörssupport för Microsoft Managed Desktop.](../working-with-managed-desktop/admin-support.md) På så sätt får vi tillräckligt med tid att planera och förbereda oss inför ändringen för att undvika störningar.
 
-Större ändringar är sådana som kan påverka något av dessa områden:
+Viktiga ändringar är de som kan påverka något av följande områden:
 
-- Identitets system och-grupper
-- Nätverks kontroller, till exempel brand väggar, proxyserver och VPN-system
-- Kontroller för åtkomst till moln tjänst konfiguration
-- Användar-eller enhets certifikat som används för identitet eller säkring av nätverks tjänster
-- Hanterings system som interagerar med tjänsten
-- Säkerhets system eller agenter som interagerar med tjänsten
-- Konfiguration av Microsoft 365-molntjänster som är associerade med eller används av tjänsten
+- Identitetssystem och identitetsgrupper
+- Nätverks- och nätverkskontroller som brandväggar, proxy eller cachelagring och VPN-system
+- Kontroller för åtkomst till konfigurationer av molntjänster
+- Användar- eller enhetscertifikat som används för identitet eller skydd av nätverkstjänster
+- Hanteringssystem som interagerar med tjänsten
+- Säkerhetssystem eller -agenter som interagerar med tjänsten
+- Konfiguration av någon av de Microsoft 365-molntjänster som är kopplade till eller används av tjänsten
 
-Dessa ändringar är sannolikt inte störande, så du behöver inte berätta om dem i förväg:
+Dessa ändringar troligen inte är störande, så du behöver inte berätta för oss i förväg:
 
 - Rensning av överblivna objekt
 - Lägga till eller ta bort användare från tjänsten
-- System konfiguration som inte har någon väsentlig inverkan på leveransen av Microsoft Managed Desktop
-- Program versions uppdateringar, med undantag för VPN-eller proxyskript
-
-
+- Konfiguration av system som inte har någon påverkan på leveransen av Microsoft Managed Desktop
+- Uppdateringar av programversion, med undantag för VPN- eller proxyprogram

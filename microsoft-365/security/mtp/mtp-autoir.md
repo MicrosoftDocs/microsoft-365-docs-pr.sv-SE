@@ -1,6 +1,6 @@
 ---
 title: Automatiserad undersökning och svar i Microsoft 365 Defender
-description: Få en översikt över automatisk undersökning och svarsfunktioner i Microsoft 365 Defender
+description: Få en översikt över automatiska undersöknings- och svarsfunktioner, även kallat självbetjäning, i Microsoft 365 Defender
 keywords: automatiserad, undersökning, avisering, utlösare, åtgärd, åtgärd, självbetjäning
 search.appverid: met150
 ms.prod: m365-security
@@ -19,69 +19,81 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
-ms.date: 12/09/2020
+ms.date: 01/29/2021
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 905455e4cd70485e099f8005b5f8876b1a5d9caf
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 199bc72e7a8e1e5783105b44de150368a41b872c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930336"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917088"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Automatiserad undersökning och svar i Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Gäller för:**
 - Microsoft 365 Defender
 
-> Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera det i en labbmiljö](https://aka.ms/mtp-trial-lab) eller köra [pilotprojektet i produktion.](https://aka.ms/m365d-pilotplaybook)
->
+Om din organisation använder [Microsoft 365 Defender](microsoft-threat-protection.md)får teamet för säkerhetsåtgärder en avisering när en skadlig eller misstänkt artefakt hittas. Med den till synes oändliga flödet av hot som kommer in ställs säkerhetsteam ofta inför utmaningar med att hantera den stora mängden aviseringar. Som tur är innehåller Microsoft 365 Defender funktioner för automatisk undersökning och åtgärder (AIR) som kan hjälpa din säkerhetsgrupp att hantera hot mer effektivt och effektivare.
+
+Den här artikeln innehåller en översikt över AIR med länkar till nästa steg och ytterligare resurser.
+
+> [!TIP]
+> Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera den i en labbmiljö](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) eller köra [pilotprojektet i produktion.](./mtp-pilot.md?ocid=cx-evalpilot)
 
 ## <a name="how-automated-investigation-and-self-healing-works"></a>Så här fungerar automatisk undersökning och självbetjäning
 
-När säkerhetsvarningar utlöses är det upp till teamet för säkerhetsåtgärder att titta på dessa aviseringar och vidta åtgärder för att skydda organisationen. Det kan ta mycket tid att prioritera och undersöka aviseringar, särskilt när nya aviseringar kommer in medan en undersökning pågår. Säkerhetsteam kan känna sig överhopade av mängden hot de måste övervaka och skydda mot. Automatisk undersökning och svarsfunktioner i Microsoft 365 Defender kan vara till hjälp.
+När säkerhetsvarningar utlöses är det upp till ditt säkerhetsteam att titta på varningarna och vidta åtgärder för att skydda din organisation. Det kan ta mycket tid att prioritera och undersöka aviseringar, särskilt när nya aviseringar kommer in medan en undersökning pågår. Säkerhetsåtgärder grupper kan känna sig överhopad av mängden hot de måste övervaka och skydda mot. Med hjälp av automatiska undersöknings- och svarsfunktioner kan Microsoft 365 Defender vara till hjälp.
 
-Titta på följande video för att se hur självbetjäning fungerar:
+Titta på följande video för att se hur självbetjäning fungerar: <p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
-I Microsoft 365 Defender fungerar automatisk undersökning och svar med funktioner för självutskick på dina enheter, e-& och identiteter.
+I Microsoft 365 Defender fungerar automatisk undersökning och svar med självöverlåtande funktioner på dina enheter, e-& och innehåll och identiteter.
  
 > [!TIP]
-> I den här artikeln beskrivs hur automatisk undersökning och svar fungerar. Information om hur du konfigurerar de här funktionerna finns i Konfigurera funktioner för [automatisk undersökning och svar i Microsoft 365 Defender.](mtp-configure-auto-investigation-response.md)
+> I den här artikeln beskrivs hur automatisk undersökning och svar fungerar. Information om hur du konfigurerar dessa funktioner [finns i Konfigurera funktioner för automatisk undersökning och svar i Microsoft 365 Defender.](mtp-configure-auto-investigation-response.md)
 
 ## <a name="your-own-virtual-analyst"></a>Din egen virtuella analytiker
 
-Tänk dig att du har en virtuell analytiker i ditt team för säkerhetsåtgärder på nivå 1/nivå 2. Den virtuella analytikern efterliknar de idealiska steg som säkerhetsåtgärder kan vidta för att undersöka och åtgärda hot. Den virtuella assistenten kan arbeta dygnet runt, med obegränsad kapacitet, och ta på sig en stor belastning på undersökningar och hotreparation. En sådan virtuell assistent kan minska tiden för att svara, vilket frigör din säkerhetsgrupp för andra viktiga strategiska projekt. Om det här scenariot låter som science fiction är det inte det! En sådan virtuell analytiker är en del av Microsoft 365 Defender-programsviten och namnet är *automatisk undersökning och svar.*
+Tänk dig att du har en virtuell analytiker i ditt team för säkerhet på nivå 1 eller nivå 2. Den virtuella analytikern efterliknar de bästa stegen som säkerhetsåtgärder kan vidta för att undersöka och åtgärda hot. Den virtuella assistenten kan arbeta dygnet runt, med obegränsad kapacitet, och ta på sig en stor belastning av undersökningar och hotreparation. En sådan virtuell assistent kan avsevärt minska tiden för att svara, vilket frigör din säkerhetsgrupp för andra viktiga strategiska projekt. Om det här scenariot låter som science fiction är det inte det! En sådan virtuell analytiker är en del av din Microsoft 365 Defender-programsvit, och namnet är *en automatiserad undersökning och svar.*
 
-Med automatiserad undersökning och svar kan teamet för säkerhetsåtgärder avsevärt öka organisationens kapacitet för att hantera säkerhetsvarningar och incidenter. Med automatiserad undersökning och svar kan du minska kostnaderna för hantering av undersöknings- och åtgärdsaktiviteter och få ut det mesta av din programsvit för skydd mot hot. automatiserad undersökning och svar hjälper din grupp med säkerhetsåtgärder genom att:
+Med funktionerna för automatiserad undersökning och svar kan ditt säkerhetsteam avsevärt öka organisationens kapacitet för att hantera säkerhetsvarningar och incidenter. Med automatiserad undersökning och svar kan du minska kostnaderna för hantering av undersökning och åtgärder och få ut mesta mesta av din säkerhetssvit för hot. Automatiska undersöknings- och svarsfunktioner hjälper teamet med säkerhetsåtgärder genom att:
 
 1. Avgöra om ett hot kräver åtgärd.
-2. Utföra (eller rekommendera) nödvändiga åtgärdsåtgärder;
-3. Fastställa vilka ytterligare undersökningar som ska ske. och
+2. Vidta (eller rekommendera) alla nödvändiga åtgärder;
+3. Avgöra om och vilka andra undersökningar som ska ske; och
 4. Upprepa processen om det behövs för andra aviseringar.
 
-## <a name="the-automated-investigation-process"></a>Den automatiska undersökningen
+## <a name="the-automated-investigation-process"></a>Automatisk undersökning
 
-**Avisering**  >  **incident**  >  **automatiserad undersökning**  >  **bedömning**  >  **åtgärdsåtgärd**
+En avisering skapar en händelse, som kan påbörja en automatiserad undersökning. Den automatiska undersökningen resulterar i en bedömning för varje bevis. Olika beslut kan vara:
+- *Skadlig*;
+- *Misstänkt –* om du har en misstänkt e eller 
+- *Inga hot hittades*. 
 
-En utlöst avisering skapar en händelse, som kan starta en automatiserad undersökning. Undersökningen kan resultera i en eller flera åtgärder. I Microsoft 365 Defender korrelerar varje automatiserad undersökning signaler till Microsoft Defender för identitet, Microsoft Defender för Endpoint och Defender för Office 365, enligt sammanfattningen i följande tabell: 
+Åtgärdsåtgärder för skadliga eller misstänkta enheter identifieras. Några exempel på åtgärder:
+- Skicka en fil till karantän.
+- Stoppar en process.
+- Isolera en enhet
+- Blockera en URL och 
+- andra åtgärder. (Se [Åtgärder för åtgärder i Microsoft 365 Defender](mtp-remediation-actions.md).)
+
+Beroende på [hur automatiska undersöknings-](mtp-configure-auto-investigation-response.md) och svarsfunktioner har konfigurerats för organisationen utförs åtgärder automatiskt eller bara om säkerhetsgruppen har godkänt det. Alla åtgärder, väntande eller slutförda, visas i [Åtgärdscenter.](mtp-action-center.md)
+
+Medan en undersökning körs läggs alla andra relaterade aviseringar som uppstår till i undersökningen tills den slutförs. Om en okritisk enhet visas någon annanstans utökar den automatiska undersökningen dess omfattning så att den omfattar den enheten, och undersökningen upprepas. 
+
+I Microsoft 365 Defender korrelerar varje automatisk undersökning signaler i Microsoft Defender för identitet, Microsoft Defender för slutpunkt och Defender för Office 365, enligt sammanfattningen i följande tabell: 
 
 |Enheter |Skyddstjänster för hot  |
-|---------|---------|
-|Enheter (kallas även slutpunkter)     |[Microsoft Defender för Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
-|E-postinnehåll (filer och meddelanden i postlådor)     |[Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
-
-Varje undersökning genererar en bedömning *(skadlig,* *misstänkt* eller inga hot hittades) för varje bevis som *undersöks.* Beroende på typen av hot och resulterande bedömning, utförs åtgärder automatiskt eller vid godkännande av organisationens säkerhetsteam. Väntande och slutförda åtgärder visas i [Åtgärdscenter.](mtp-action-center.md)
-
-Medan en undersökning körs läggs alla andra relaterade aviseringar som uppstår till i undersökningen tills den slutförs. Om en okritisk enhet visas någon annanstans utökar den automatiska undersökningen dess omfattning så att den omfattar den enheten, och en allmän säkerhetsspelbok körs. 
+|:---------|:---------|
+|Enheter (kallas även slutpunkter, och kallas ibland för datorer)     |[Microsoft Defender för Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) |      
+|E-postinnehåll (e-postmeddelanden som kan innehålla filer och URL:er)     |[Microsoft Defender för Office 365](../office-365-security/office-365-atp.md)         |
 
 > [!NOTE]
-> Inte alla aviseringar utlöser en automatiserad undersökning och inte alla undersökningar resulterar i automatiska åtgärdsåtgärder. Det beror på hur automatisk undersökning och svar har konfigurerats för organisationen. Se [Konfigurera automatisk undersökning och svarsfunktioner i Microsoft 365 Defender.](mtp-configure-auto-investigation-response.md)
-
+> Inte alla aviseringar utlöser en automatiserad undersökning och inte alla undersökningsresultat i automatiserade åtgärdsåtgärder. Det beror på hur automatisk undersökning och svar har konfigurerats för organisationen. Se [Konfigurera automatisk undersökning och svarsfunktioner i Microsoft 365 Defender.](mtp-configure-auto-investigation-response.md)
 
 ## <a name="next-steps"></a>Nästa steg
 

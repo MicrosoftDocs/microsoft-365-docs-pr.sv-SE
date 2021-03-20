@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du distribuerar team med skydd för mycket känslig data.
-ms.openlocfilehash: 7e746ebc81d1ccd9aea2953fd42004715f8d7819
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: fdc3c1ab2c780289b7405623779b8af89da8ba17
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509272"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916292"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Konfigurera team med skydd för mycket känslig data
 
@@ -44,8 +44,8 @@ Beroende på företagets natur kan du kanske inte aktivera gästdelning för tea
 
 Information om hur du delar med gäster säkert finns i följande resurser:
 
-- [Begränsa oavsiktlig exponering för filer när de delas med personer utanför organisationen](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
-- [Skapa en säker miljö för gästdelning](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
+- [Begränsa oavsiktlig exponering för filer när de delas med personer utanför organisationen](./share-limit-accidental-exposure.md)
+- [Skapa en säker miljö för gästdelning](./create-secure-guest-sharing-environment.md)
 
 För att tillåta eller blockera gästdelning använder vi en kombination av känslighetsetiketter för teamet och delning på webbplats nivå för den associerade SharePoint-webbplatsen, som vi ser senare.
 
@@ -53,7 +53,7 @@ För att tillåta eller blockera gästdelning använder vi en kombination av kä
 
 För den mycket känsliga skyddsnivån använder vi en känslighetsetikett för att klassificera teamet. Den här etiketten kan också användas för att klassificera och kryptera enskilda filer i detta eller andra team eller på andra filplatser som SharePoint eller OneDrive. 
 
-Som ett första steg måste du aktivera känslighetsetiketter för Teams. Mer information finns i [Använd känslighetsetiketter för att skydda innehåll i Microsoft Teams, Office 365-grupper och SharePoint-webbplatser](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+Som ett första steg måste du aktivera känslighetsetiketter för Teams. Mer information finns i [Använd känslighetsetiketter för att skydda innehåll i Microsoft Teams, Office 365-grupper och SharePoint-webbplatser](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 Om du redan har känslighetsetiketter distribuerade i din organisation, bör du överväga hur denna etikett passar med din övergripande etikettstrategi. Du kan ändra namn eller inställningar om det behövs för att uppfylla organisationens behov.
 
@@ -84,7 +84,7 @@ Att skapa en känslighetsetikett
 22. På sidan **Auto-etiketting för databaskolumner** klickar du på **Nästa**.
 23. Klicka på **Skapa etikett** och sedan på **Klart**.
 
-När du har skapat en etikett måste du publicera den till de användare som ska använda den. För känsligt skydd gör vi etiketterna tillgängliga för alla användare. Du publicerar etiketten i Microsoft 365 Efterlevnadscenter på fliken **Etikettprinciper** på sidan **Informationskydd**. Om du har en befintlig princip som gäller för alla användare kan du lägga till den här etiketten i principen. Om du behöver skapa en ny princip kan du läsa [Publicera känsliga etiketter genom att skapa en etikettpolicy](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy).
+När du har skapat en etikett måste du publicera den till de användare som ska använda den. För känsligt skydd gör vi etiketterna tillgängliga för alla användare. Du publicerar etiketten i Microsoft 365 Efterlevnadscenter på fliken **Etikettprinciper** på sidan **Informationskydd**. Om du har en befintlig princip som gäller för alla användare kan du lägga till den här etiketten i principen. Om du behöver skapa en ny princip kan du läsa [Publicera känsliga etiketter genom att skapa en etikettpolicy](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
 
 ## <a name="create-a-team"></a>Skapa ett team
 
@@ -108,7 +108,7 @@ För att begränsa skapandet av en privat kanal
 2. På fliken **Inställningar**, expandera **medlemsbehörigheter**.
 3. Avmarkera kryssrutan **Tillåt att medlemmar skapar privata kanaler**.
 
-Du kan också använda [teamprinciper](https://docs.microsoft.com/MicrosoftTeams/teams-policies) för att styra vem som kan skapa privata kanaler.
+Du kan också använda [teamprinciper](/MicrosoftTeams/teams-policies) för att styra vem som kan skapa privata kanaler.
 
 ## <a name="sharepoint-settings"></a>SharePoint-inställningar
 
@@ -135,7 +135,7 @@ Uppdatera webbplatsinställningar
 6. Avmarkera kryssrutan **Samma som organisationsnivå** under standardtyp av delningslänk och välj **Personer med befintlig åtkomst**.
 7. Klicka på **Spara**.
 
-Om du vill skapa ett skript som en del av processen för att skapa ett team kan du använda [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) med följande parametrar:
+Om du vill skapa ett skript som en del av processen för att skapa ett team kan du använda [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) med följande parametrar:
 
 - `-SharingCapability Disabled` Inaktivera gästdelning (det är aktiverat som standard)
 - `-DefaultSharingLinkType Internal` ändra standard delningslänk till *Vissa personer*
@@ -159,5 +159,4 @@ Konfigurera webbplatsdelning endast för ägare
 
 ## <a name="see-also"></a>Se även
 
-[Skapa och konfigurera känslighetsetiketter och deras principer](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels)
-
+[Skapa och konfigurera känslighetsetiketter och deras principer](../compliance/create-sensitivity-labels.md)

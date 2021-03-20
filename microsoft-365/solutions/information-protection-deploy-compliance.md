@@ -1,5 +1,5 @@
 ---
-title: Använda Compliance Manager för att hantera förbättrings åtgärder
+title: Använda Efterlevnadshanteraren för att hantera förbättringsåtgärder
 ms.author: chvukosw
 author: chvukosw
 f1.keywords:
@@ -16,88 +16,88 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Lär dig hur du kan använda poäng-och efterföljandekrav för att förbättra skydds nivån för dina person uppgifter.
-ms.openlocfilehash: f90826795197b392f629eb8eec71b7f27081b697
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+description: Lär dig hur du använder Efterlevnadspoäng och Efterlevnadshanteraren för att förbättra skyddsnivån för personuppgifter.
+ms.openlocfilehash: 87131ea65661e8285fd7c3b36a87c79b618348d7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791888"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918576"
 ---
-# <a name="use-compliance-manager-to-manage-improvement-actions"></a>Använda Compliance Manager för att hantera förbättrings åtgärder
+# <a name="use-compliance-manager-to-manage-improvement-actions"></a>Använda Efterlevnadshanteraren för att hantera förbättringsåtgärder
 
-Med Microsoft Compliance Manager kan du hantera förbättringar i samband med data integritets bestämmelser som Europeiska unionens [allmänna data skydds förordning (GDPR)](../compliance/gdpr.md), [California konsument skydd Act CCPA)](../compliance/ccpa-faq.md), HIPAA-HITECH (Health värna om sjukvård) och Brasilien Data Protection Act (LGPD).
+Microsoft Compliance Manager kan hjälpa dig att hantera förbättringar relaterade till datasekretessbestämmelser som EU:s allmänna [dataskyddsförordning (GDPR),](/compliance/regulatory/gdpr) [California Consumer Protection Act CCPA),](/compliance/regulatory/ccpa-faq)HIPAA-HITECH (US Health Care Privacy Act) och Brazil Data Protection Act (LGPD).
 
-I den här artikeln beskrivs hur du använder det här verktyget för data integritet.
+Den här artikeln innehåller vägledning om hur du använder verktyget i datasekretesssyfte.
 
 >[!Note]
->Rekommendationer från Compliance Manager ska inte tolkas som en garanti för överensstämmelse. Det är upp till dig att utvärdera och kontrol lera effektiviteten hos kund kontroller i din regelverks miljö. Dessa tjänster lyder under villkoren i villkoren för [online tjänster](https://go.microsoft.com/fwlink/?linkid=2108910). Se även [Microsoft 365 licens guide för säkerhet och efterlevnad](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+>Rekommendationer från Compliance Manager ska inte tolkas som en garanti för överensstämmelse. Det är upp till dig att utvärdera och verifiera hur effektiv kundkontrollerna är i olika regelverk. Dessa tjänster omfattas av de allmänna villkoren i [villkoren för onlinetjänster.](https://go.microsoft.com/fwlink/?linkid=2108910) Se även [Licensvägledning för Microsoft 365 för säkerhet och efterlevnad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 >
 
-## <a name="getting-started-with-compliance-manager"></a>Komma igång med Compliance Manager
+## <a name="getting-started-with-compliance-manager"></a>Komma igång med Efterlevnadshanteraren
 
-#### <a name="what-is-compliance-manager"></a>Vad är Compliance Manager?
+#### <a name="what-is-compliance-manager"></a>Vad är Efterlevnadshanteraren
 
-[Compliance Manager](../compliance/compliance-manager.md) är ett flödes verktyg för riskbedömning i Microsoft 365 Compliance Center för hantering av regler för regelefterlevnad som är relaterade till Microsofts moln tjänster. Som en del av ditt Microsoft 365-eller Azure Active Directory (Azure AD-abonnemang) kan du använda Autentiseringshanteraren för att hantera efterlevnad i den delade ansvars modellen för Microsofts moln tjänster.
+[Efterlevnadshanteraren](../compliance/compliance-manager.md) är ett arbetsflödesbaserat riskutvärderingsverktyg i Efterlevnadscenter för Microsoft 365 för hantering av aktiviteter för regelefterlevnad som är relaterade till Microsofts molntjänster. Som en del av prenumerationen på Microsoft 365 eller Azure Active Directory (Azure AD) hjälper Efterlevnadshanteraren dig att hantera regelefterlevnad i den delade ansvarsfördelningsmodellen för Microsoft-molntjänster.
 
-**Klar att använda utvärderingar**
+**Redo att använda utvärderingar**
 
-Compliance Manager innehåller färdiga mallar för att [bygga utvärderingar](../compliance/compliance-manager-assessments.md) som är justerade efter data integritets regler, till exempel GDPR och HIPAA/HITECH. Mallarna har inbyggd kontroll som hjälper dig att vidta åtgärder för att uppfylla förordningens krav. Varje bedömning ger information om de kontroller som varje förordning ringer för specifikt till mål tjänsten, uppdelad genom kontroller som du hanterar och styr Microsoft hanterar. 
+Efterlevnadshanteraren tillhandahåller färdiga [](../compliance/compliance-manager-assessments.md) mallar för att skapa bedömningar som är anpassade till datasekretessrelaterade bestämmelser som GDPR och HIPAA/HITECH. Mallarna har inbyggd kontrollmappning som hjälper dig att vidta förbättringsåtgärder för att uppfylla kraven i reglerna. Varje bedömning innehåller information om de kontroller som krävs för varje regel som är specifika för måltjänsten, uppdelade upp av kontroller som du hanterar och kontroller som Microsoft hanterar. 
 
-Genom att använda en fördefinierad mall kan du snabbt komma igång med riskbedömningar. När du blir mer vana i att använda Compliance Manager kan du anpassa en fördefinierad mall genom att lägga till egna kontroller och förbättringar, eller så kan du skapa egna anpassade utvärderingar som passar organisationens behov.
+Med hjälp av en färdig mall kan du snabbt komma igång med riskbedömning. Allt eftersom du snabbt kan använda Efterlevnadshanteraren kan du anpassa en färdig mall genom att lägga till egna kontroller och förbättringsåtgärder, eller så kan du skapa egna utvärderingar som passar organisationens behov.
 
-Visa en [fullständig lista över kostnadsmallar för utvärderings](../compliance/compliance-manager-templates-list.md) hanteraren.
+Visa en [fullständig lista över utvärderingsmallar som](../compliance/compliance-manager-templates-list.md) tillhandahålls av Efterlevnadshanteraren.
 
-**Kompatibilitetsstatus i real tid**
+**Efterlevnadspoäng i realtid**
 
-Efterföljandekrav ger också en uppgångs Poäng som mäter dina framsteg när det gäller rekommenderade förbättrings åtgärder i kontroller. Du kan använda poängen för att övervaka dina framsteg och prioritera åtgärder baserat på deras potential att minska riskerna.
+Efterlevnadshanteraren ger dig även ett efterlevnadsresultat som mäter hur långt du slutfört rekommenderade förbättringsåtgärder i kontroller. Du kan använda denna poäng för att övervaka dina framsteg och prioritera åtgärder baserat på deras möjlighet att minska risken.
 
-#### <a name="use-the-compliance-manager-quickstart-guide"></a>Använda Start guiden för regelefterlevnad
+#### <a name="use-the-compliance-manager-quickstart-guide"></a>Använda snabbstartsguiden för Efterlevnadshanteraren
 
-Start guiden för [Compliance Manager](../compliance/compliance-manager-quickstart.md) innehåller stegvisa instruktioner och länkar till viktiga resurser som hjälper dig att arbeta med Compliance Manager:
+[Snabbstartsguiden för Efterlevnadshanteraren](../compliance/compliance-manager-quickstart.md) innehåller mer avancerad vägledning och länkar till viktiga resurser som hjälper dig att arbeta med Efterlevnadshanteraren:
 
-- [Första gången du besöker: bekanta dig med Compliance Manager](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
-    - Arbeta med instrument panelen för regelefterlevnad
-    - Förstå hur poängen går till
-    - Lär dig mer om förbättrings åtgärder
+- [Första besöket: bekanta dig med Efterlevnadshanteraren](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
+    - Arbeta med instrumentpanelen för Efterlevnadshanteraren
+    - Förstå din efterlevnadspoäng
+    - Utbildning om förbättringsåtgärder
     - Förstå utvärderingar och mallar
-- [Ramp up: Konfigurera Efterföljandekrav för att hantera dina regelefterlevnad-aktiviteter](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities)
-    - Bygga och hantera din första utvärdering
-    - Utför implementering och testning av förbättrings åtgärder för att slutföra kontroller i dina utvärderingar
-    - Förstå hur olika åtgärder påverkar din regelefterlevnad
-- [Öka proportionellt: Använd avancerade funktioner för att möta dina anpassade behov](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
+- [Så här går det till: konfigurera Efterlevnadshanteraren för att hantera dina efterlevnadsaktiviteter](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities)
+    - Skapa och hantera din första bedömning
+    - Utföra implementerings- och testarbete på förbättringsåtgärder för att slutföra kontroller i dina utvärderingar
+    - Förstå hur olika åtgärder påverkar ditt efterlevnadsresultat
+- [Skalning: använd avancerade funktioner för att uppfylla dina behov](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
     - Skapa anpassade utvärderingar för att spåra icke-Microsoft 365-produkter
     - Ändra befintliga mallar för att lägga till eller ta bort kontroller
-    - Ställa in automatiserade test av förbättrings åtgärder
+    - Konfigurera automatisk testning av förbättringsåtgärder
 
 ## <a name="how-your-compliance-score-is-calculated"></a>Hur din efterlevnadspoäng beräknas
 
-Ditt uppföljda Poäng beräknas utifrån en kombination av Microsoft-och Kundhanterade kontroller. Visa [resultat beräkning för regelefterlevnad](../compliance/compliance-score-calculation.md) för en detaljerad förklaring.
+Efterlevnadsresultatet beräknas utifrån en kombination av microsoft- och kund hanterade kontrollimplementeringar. Se [beräkningen av efterlevnadspoäng](../compliance/compliance-score-calculation.md) för en detaljerad förklaring.
 
-Kontroller tilldelas ett resultat värde utifrån om de är obligatoriska eller frivilliga och om de är förebyggande, upptäckta eller korrigerade. Dessa representerar risken att inte implementera den i förhållande till andra kontroller.
+Kontroller tilldelas ett poängvärde baserat på om de är obligatoriska eller godtyckliga, och om de är preventativa, godtyckliga eller korrigerande. Dessa utgör kollektivt risken att inte implementera den i förhållande till andra kontroller.
 
-Som du har lagt till i artikeln om bedömning av efterlevnad får förebyggande kontroller högre poäng än identifiering och korrigering, och obligatoriska kontroller ger högre poäng än mjuka och kära.
+I den här artikeln om beräkning av efterlevnadsresultat får förebyggande kontroller ett högre poängresultat än de som är obligatoriska och obligatoriska kontroller ger högre poäng än godtyckliga.
 
-Administrations gränssnittet för arbets Poäng visar inte dessa parametrar eller kan inte filtrera efter dem. Om du däremot laddar ned den associerade mallen från Compliance Manager visas dessa parametrar för de flesta regler i den resulterande data uppsättningen.
+I användargränssnittet för efterlevnadsresultat visas inte dessa parametrar, inte heller möjligheten att filtrera efter dem. Men om du hämtar den associerade mallen från Efterlevnadshanteraren visar den resulterande datauppsättningen de här parametrarna för de flesta bestämmelser.
 
-För tekniska kontroller uppdaterar Compliance Manager automatiskt förbättrings åtgärden när åtgärden har implementerats och testats. Andra, icke-tekniska kontroll åtgärder &mdash; , till exempel sådana som används eller är relaterade till dokumentation, &mdash; måste registreras manuellt som implementerade före Points.
+För tekniska kontroller uppdaterar Efterlevnadshanteraren automatiskt förbättringsåtgärdsresultatet när åtgärden har implementerats och testats. Andra icke-tekniska kontrollåtgärder, till exempel åtgärder som fungerar eller relaterade till dokumentation, måste registreras manuellt så att de implementeras innan &mdash; &mdash; poäng räknas mot din poäng.
 
-Du kan också genomföra vissa förbättrings åtgärder för andra ändamål &mdash; , till exempel använda lagrings etiketter av andra orsaker än data integritets regler &mdash; , så att du får kredit för att använda en sådan funktion även om den används för andra ändamål och inte i en avsiktlig efterlevnad.
+Du många implementerar även vissa förbättringsåtgärder för andra ändamål, till exempel om du använder bevarandeetiketter av andra orsaker än efterlevnad av datasekretesssregler, så att du kan få kredit för att använda en sådan funktion även om den används för andra ändamål, och inte en del av en avsiktlig &mdash; &mdash; efterlevnadsåtgärd.
 
-Ditt uppföljda Poäng bör ses som en relativ åtgärd för att spåra förbättringar på brett skal. Du bör inte ha en perfekt poäng.
+Efterlevnadsresultatet bör ses som ett relativt mått för att spåra förbättringar i bred skala. Du bör inte uppnå ett perfekt resultat.
 
 ## <a name="additional-guidance"></a>Ytterligare vägledning
 
-Här är några viktiga tips för hur du använder Compliance Manager för att hjälpa dig att uppnå data integritets reglernas efterlevnad:
+Här är några viktiga tips för hur du använder Efterlevnadshanteraren för att få bättre regelefterlevnad för datasekretess:
 
-- Varje data integritets förordning har en kombination av tekniska kontroller, dokumentations specifikationer och krav för drift, processer och rapporter. Alla de här visas i förbättrings åtgärderna.
+- Varje datasekretessförordningen har en kombination av tekniska kontroller, dokumentationsspecifikationer och drift-, process- och rapporteringskrav. Alla dessa visas i förbättringsåtgärderna.
 
-- Om du vill fokusera på förbättrings åtgärder i det område som intresserar dig kan du filtrera efter åtgärds typ på fliken **lösningar** i administratörs hanteraren. Lär dig mer om hur [du filtrerar en trädvy](../compliance/compliance-manager-setup.md#filtering-your-dashboard-view).
+- Om du vill fokusera vyn över förbättringsåtgärder i ditt intresse  kan du filtrera efter åtgärdstyp på fliken Lösningar i efterlevnadshanterarens administratör. Läs mer om hur [du filtrerar instrumentpanelen i Efterlevnadshanteraren.](../compliance/compliance-manager-setup.md#filtering-your-dashboard-view)
 
-- De relativa prioriteterna för förbättrings åtgärder som identifieras i Compliance Manager bör betraktas som en del av en bredare risk granskning tillsammans med data integritets risken som du har fastställt för organisationen.
+- Den relativa prioriteten för förbättringsåtgärder som identifieras i Efterlevnadshanteraren bör ses som en del av en bredare riskgranskning tillsammans med den datasekretessrisk du har fastställt att din organisation behöver hantera.
 
-- Till och med förbättrings åtgärd agg regering på flera reglerings krav, om mallarna för regelverk för GDPR, LGPD, CCPA och HIPAA-HITECH är markerade visas kanske inte nästan 400 förbättrings åtgärder i Compliance Manager. För att bättre kunna klara av den här långa listan kan du använda filtret förbättrings åtgärd för att minska resultatet till en mer hanterbar lista.
+- Även om bedömningsmallarna för gdpr, LGPD, CCPA och HIPAA-HITECH valts, visas till exempel nästan 400 förbättringsåtgärder i Efterlevnadshanteraren, även om aggregeringen för förbättringsåtgärder gäller flera olika regelkrav. Du kan förbättra den här långa listan med åtgärdsfiltret för förbättringar för att minska resultatet till en mer hanterbar lista.
 
-- Med filtret kategorier kan du filtrera förbättrings åtgärder efter logisk gruppering, vilka spåret, förhindra, skydda, behålla och undersöka artiklar i den här generella lösningen.
+- Med filtret Kategorier kan du filtrera förbättringsåtgärder genom logisk gruppering, som artiklarna Spåra, Förhindra, Skydda, Behålla och Undersöka artiklar i den övergripande lösningen stämmer överens med.
 
-- Vissa av kontrollerna i förbättrings åtgärderna kan anses vara direkt knutna till en specifik reglerings artikel, medan andra kontroller kan vara mer indirekt kopplade till en förordnings anda och många gånger är det helt enkelt rekommenderade aktiviteter eller bästa praxis.
+- Vissa kontroller som listas i förbättringsåtgärderna kan ses som mer direkt knutna till en särskild regelartikel, medan andra kontroller kan vara mer indirekt kopplade till reglernas ande och många gånger är bara rekommenderade aktiviteter eller bästa metoder.

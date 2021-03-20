@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Få reda på mer om tillgängliga alternativ för att skapa en säker delningsmiljö för gäster i Microsoft 365 och ge gäståtkomst för bättre samarbete.
-ms.openlocfilehash: 28b2efba9f0c4ba17811a9871b05ab9f5a7a4839
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 0eb999d48bc0976d7c2bb32ff1bdba8d63409d81
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838693"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918472"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Skapa en säker miljö för gästdelning
 
@@ -39,7 +39,7 @@ Den här artikeln innehåller:
 - Tilldela automatiskt en känslighetsetikett till dokument som innehåller den typen av känslig information.
 - Ta automatiskt bort gäståtkomst från filer med beteckningen med en känslighetsetikett.
 
-Vissa av alternativen som beskrivs i den här artikeln kräver att gästerna har ett konto i Azure Active Directory. Om du vill vara säker på att gästerna ingår i katalogen när du delar filer och mappar med dem, ska du använda [SharePoint- och OneDrive-integrering med förhandsversionen av Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
+Vissa av alternativen som beskrivs i den här artikeln kräver att gästerna har ett konto i Azure Active Directory. Om du vill vara säker på att gästerna ingår i katalogen när du delar filer och mappar med dem, ska du använda [SharePoint- och OneDrive-integrering med förhandsversionen av Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview).
 
 Observera att vi inte tar upp inställningarna för gästdelning i den här artikeln. Mer information om hur du aktiverar gästdelning i olika scenarier finns i [Samarbeta med personer utanför organisationen](collaborate-with-people-outside-your-organization.md).
 
@@ -66,7 +66,7 @@ Gästen måste då registrera sig för multifaktorautentisering för att de ska 
 
 ### <a name="more-information"></a>Mer information
 
-[Planerar en Azure AD Multi-Factor Authentication-distribution](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)
+[Planerar en Azure AD Multi-Factor Authentication-distribution](/azure/active-directory/authentication/howto-mfa-getstarted)
 
 ## <a name="set-up-a-terms-of-use-for-guests"></a>Konfigurera användarvillkor för gäster
 
@@ -108,11 +108,11 @@ Skapa princip för villkorsstyrd åtkomst
 Första gången en gästanvändare försöker komma åt innehåll, ett team eller en webbplats i din organisation måste de acceptera användningsvillkoren.
 
 > [!NOTE]
-> Användningen av villkorstyrd åtkomst kräver en Azure Active Directory Premium P1-licens. Mer information finns i [Vad är villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+> Användningen av villkorstyrd åtkomst kräver en Azure Active Directory Premium P1-licens. Mer information finns i [Vad är villkorsstyrd åtkomst](/azure/active-directory/conditional-access/overview).
 
 ### <a name="more-information"></a>Mer information
 
-[Användningsvillkor för Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)
+[Användningsvillkor för Azure Active Directory](/azure/active-directory/conditional-access/terms-of-use)
 
 ## <a name="set-up-guest-access-reviews"></a>Konfigurera granskning av gäståtkomst
 
@@ -145,15 +145,15 @@ Det är viktigt att du noterar att gäster kan beviljas åtkomst till team eller
 
 ### <a name="more-information"></a>Mer information
 
-[Hantera gäståtkomst med åtkomstgranskningar i Azure AD](https://docs.microsoft.com/azure/active-directory/governance/manage-guest-access-with-access-reviews)
+[Hantera gäståtkomst med åtkomstgranskningar i Azure AD](/azure/active-directory/governance/manage-guest-access-with-access-reviews)
 
-[Skapa en åtkomstgranskning av grupper eller program i åtkomstgranskningar i Azure AD](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
+[Skapa en åtkomstgranskning av grupper eller program i åtkomstgranskningar i Azure AD](/azure/active-directory/governance/create-access-review)
 
 ## <a name="set-up-web-only-access-for-guests"></a>Konfigurera endast webbåtkomst för gästanvändare
 
 Du kan minska din attackyta och underlätta administrationen genom att kräva att gästanvändarna får åtkomst till dina team, webbplatser och filer bara med hjälp av en webbläsare.
 
-För Microsoft 365 Grupper och Team gör du det med en princip för villkorsstyrd åtkomst i Azure AD. För SharePoint är detta konfigurerat i administrationscentret för SharePoint. (Du kan också [använda känslighetsetiketter för att tillåta begränsad endast webb-åtkomst för gäster](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).)
+För Microsoft 365 Grupper och Team gör du det med en princip för villkorsstyrd åtkomst i Azure AD. För SharePoint är detta konfigurerat i administrationscentret för SharePoint. (Du kan också [använda känslighetsetiketter för att tillåta begränsad endast webb-åtkomst för gäster](../compliance/sensitivity-labels-teams-groups-sites.md).)
 
 Begränsa gäster till endast webbåtkomst för Grupper och Teams:
 
@@ -222,7 +222,7 @@ Skapa en typ av känslig information
 
 ### <a name="more-information"></a>Mer information
 
-[Vanliga typer av känslig information](https://docs.microsoft.com/Office365/SecurityCompliance/custom-sensitive-info-types)
+[Vanliga typer av känslig information](/Office365/SecurityCompliance/custom-sensitive-info-types)
 
 ## <a name="create-an-auto-labeling-policy-to-assign-a-sensitivity-label-based-on-a-sensitive-information-type"></a>Skapa en princip för automatisk etikettmärkning för att tilldela en känslighetsetikett baserat på en typ av känslig information
 
@@ -252,11 +252,11 @@ När principen har skapats och en användare skriver ”Projekt Saturnus” i et
 
 ### <a name="more-information"></a>Mer information
 
-[Använda en känslighetsetikett för innehåll automatiskt](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
+[Använda en känslighetsetikett för innehåll automatiskt](../compliance/apply-sensitivity-label-automatically.md)
 
 ## <a name="create-a-dlp-policy-to-remove-guest-access-to-highly-sensitive-files"></a>Skapa en DLP-princip för att ta bort gäståtkomst till strikt känsliga filer
 
-Du kan använda [Dataförlustskydd (DLP](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)) för att förhindra att oönskade gäster delar känsligt innehåll. Dataförlustskydd kan utföra åtgärder baserat på en fils känslighetsetikett och ta bort gäståtkomst.
+Du kan använda [Dataförlustskydd (DLP](../compliance/data-loss-prevention-policies.md)) för att förhindra att oönskade gäster delar känsligt innehåll. Dataförlustskydd kan utföra åtgärder baserat på en fils känslighetsetikett och ta bort gäståtkomst.
 
 Skapa en DLP-regel
 
@@ -287,9 +287,9 @@ Det är viktigt att tänka på att principen inte tar bort åtkomst om gästen �
 
 Det finns några fler alternativ i Microsoft 365 och Azure Active Directory som kan hjälpa till att skydda gästdelningsmiljön.
 
-- Du kan skapa en lista över tillåtna eller nekade delningsdomäner för att begränsa vilka användarna kan dela med. Mer information finns i [Begränsa delning av SharePoint- och OneDrive-innehåll efter domän](https://docs.microsoft.com/sharepoint/restricted-domains-sharing) och [Tillåta eller blockera inbjudningar för B2B-användare från specifika organisationer](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list).
-- Du kan begränsa vilka andra Azure Active Directory-klientorganisationer som användarna kan ansluta till. Mer information finns i [Använda klientorganisationsbegränsningar för att hantera åtkomst till SaaS-molnprogram](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions).
-- Du kan skapa en hanterad miljö där partner kan hjälpa dig att hantera gästkonton. Mer information finns i [Skapa ett B2B-extranät med hanterade gäster](https://docs.microsoft.com/Office365/Enterprise/b2b-extranet).
+- Du kan skapa en lista över tillåtna eller nekade delningsdomäner för att begränsa vilka användarna kan dela med. Mer information finns i [Begränsa delning av SharePoint- och OneDrive-innehåll efter domän](/sharepoint/restricted-domains-sharing) och [Tillåta eller blockera inbjudningar för B2B-användare från specifika organisationer](/azure/active-directory/b2b/allow-deny-list).
+- Du kan begränsa vilka andra Azure Active Directory-klientorganisationer som användarna kan ansluta till. Mer information finns i [Använda klientorganisationsbegränsningar för att hantera åtkomst till SaaS-molnprogram](/azure/active-directory/manage-apps/tenant-restrictions).
+- Du kan skapa en hanterad miljö där partner kan hjälpa dig att hantera gästkonton. Mer information finns i [Skapa ett B2B-extranät med hanterade gäster](/Office365/Enterprise/b2b-extranet).
 
 ## <a name="see-also"></a>Se även
 

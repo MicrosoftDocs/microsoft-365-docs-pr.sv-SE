@@ -23,12 +23,12 @@ ms.custom:
 description: Läs mer om Microsoft Defender för Office 365 för filer i SharePoint Online, OneDrive för företag och Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ce73e1fd5c8ecb63bee1db2e9e64aade305b37e9
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 9b69d2b6f075539f411da971a314c127843b945a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287059"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917576"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Säkra bilagor för SharePoint, OneDrive och Microsoft Teams
 
@@ -38,15 +38,15 @@ ms.locfileid: "50287059"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Säkra bifogade filer i SharePoint, OneDrive och Microsoft Teams i Microsoft Defender för [Office 365](office-365-atp.md) ger ytterligare ett lager med skydd för filer som redan har skannats vid uppladdningen av den vanliga virusidentifieringsmotorn i [Microsoft 365.](virus-detection-in-spo.md) Säkra bifogade filer för SharePoint, OneDrive och Microsoft Teams hjälper till att identifiera och blockera befintliga filer som identifieras som skadliga på gruppwebbplatser och dokumentbibliotek.
+Säkra bifogade filer i SharePoint, OneDrive och Microsoft Teams i Microsoft Defender för [Office 365](office-365-atp.md) ger ytterligare ett skyddslager för filer som redan har genomsökts vid uppladdningen av den vanliga motor för virusidentifiering i [Microsoft 365.](virus-detection-in-spo.md) Säkra bifogade filer för SharePoint, OneDrive och Microsoft Teams hjälper till att identifiera och blockera befintliga filer som identifieras som skadliga på gruppwebbplatser och dokumentbibliotek.
 
-Säkra bifogade filer för SharePoint, OneDrive och Microsoft Teams är inte aktiverat som standard. Information om hur du aktiverar finns [i Aktivera Säkra bifogade filer för SharePoint, OneDrive och Microsoft Teams.](turn-on-atp-for-spo-odb-and-teams.md)
+Säkra bifogade filer i SharePoint, OneDrive och Microsoft Teams är inte aktiverat som standard. Information om hur du aktiverar finns [i Aktivera säkra bifogade filer för SharePoint, OneDrive och Microsoft Teams.](turn-on-atp-for-spo-odb-and-teams.md)
 
 ## <a name="how-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-works"></a>Hur säkra bifogade filer för SharePoint, OneDrive och Microsoft Teams fungerar
 
-När Säkra bifogade filer för SharePoint, OneDrive och Microsoft Teams är aktiverat och identifierar en fil som skadlig låses filen med direkt integrering med filbutikerna. Följande bild visar ett exempel på en skadlig fil som upptäckts i ett bibliotek.
+När Säkra bifogade filer för SharePoint, OneDrive och Microsoft Teams har aktiverats och identifierar en fil som skadlig låses filen med direkt integrering med filbutikerna. Följande bild visar ett exempel på en skadlig fil som upptäckts i ett bibliotek.
 
-![Filer i OneDrive för företag med en som identifierats som skadlig](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
+![Filer i OneDrive för företag med en som identifierats som skadliga](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
 
 Även om den blockerade filen fortfarande finns med i dokumentbiblioteket och i webb-, mobil- eller datorprogram kan andra inte öppna, kopiera, flytta eller dela filen. Men de kan ta bort den blockerade filen.
 
@@ -54,24 +54,24 @@ Här är ett exempel på hur en blockerad fil ser ut på en mobil enhet:
 
 ![Ta bort en blockerad fil från OneDrive för företag från OneDrive-mobilappen](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
 
-Som standard kan andra hämta en blockerad fil. Så här ser nedladdningen av en blockerad fil ut på en mobil enhet:
+Som standard kan personer ladda ned en blockerad fil. Så här ser nedladdningen av en blockerad fil ut på en mobil enhet:
 
 ![Ladda ned en blockerad fil i OneDrive för företag](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
 
 SharePoint Online-administratörer kan hindra användare från att ladda ned skadliga filer. Instruktioner finns i Använda [SharePoint Online PowerShell för att hindra användare från att hämta skadliga filer.](turn-on-atp-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)
 
-Mer information om användarupplevelsen när en fil har identifierats som skadlig finns i Vad kan jag göra när en skadlig fil hittas i [SharePoint Online, OneDrive](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)eller Microsoft Teams.
+Mer information om användarupplevelsen när en fil har identifierats som skadlig finns i Vad kan jag göra när en skadlig fil hittas i [SharePoint Online, OneDrive eller Microsoft Teams.](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
 
 ## <a name="view-information-about-malicious-files-detected-by-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Visa information om skadliga filer som upptäckts av säkra bifogade filer för SharePoint, OneDrive och Microsoft Teams
 
 Filer som identifieras som skadliga av Microsoft Defender för Office 365 visas i rapporter för Microsoft Defender för [Office 365](view-reports-for-atp.md) och i [Utforskaren (och](threat-explorer.md)identifieringar i realtid).
 
-Efter maj 2018, när en fil identifieras som skadlig av Microsoft Defender för Office 365, finns filen även i karantän. Mer information finns i Använda [Säkerhets- & för att hantera filer i karantän.](manage-quarantined-messages-and-files.md#microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files)
+Efter maj 2018, när en fil identifieras som skadlig av Microsoft Defender för Office 365, finns filen även i karantän. Mer information finns i Använda [säkerhets- & för att hantera filer i karantän.](manage-quarantined-messages-and-files.md#microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files)
 
 ## <a name="keep-these-points-in-mind"></a>Tänk på följande punkter
 
-- Defender för Office 365 söker inte igenom alla filer i SharePoint Online, OneDrive för företag eller Microsoft Teams. Detta är avsiktligt. Filer genomsöks asynkront. I processen används delnings- och gästaktivitetshändelser tillsammans med smart heuristics och hotsignaler för att identifiera skadliga filer.
+- Defender för Office 365 söker inte igenom alla filer i SharePoint Online, OneDrive för företag eller Microsoft Teams. Detta är avsiktligt. Filer genomsöks asynkront. I processen används delning och gästaktivitetshändelser tillsammans med smart heuristics och hotsignaler för att identifiera skadliga filer.
 
-- Kontrollera att SharePoint-webbplatserna är konfigurerade för att använda [det moderna användande programmet.](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience) Defender för Office 365-skydd gäller oavsett om det moderna eller den klassiska vyn används. Visuella indikatorer på att en fil är blockerad är dock bara tillgängliga i det moderna användayn tet.
+- Kontrollera att dina SharePoint-webbplatser är konfigurerade för att använda [det moderna använda-upplevelsen.](/sharepoint/guide-to-sharepoint-modern-experience) Defender för Office 365-skydd gäller oavsett om det moderna eller den klassiska vyn används. Men visuella indikatorerna för att en fil blockeras är endast tillgängliga i det moderna användande programmet.
 
 - Säkra bifogade filer i SharePoint, OneDrive och Microsoft Teams är en del av organisationens övergripande strategi för skydd mot hot, som omfattar skydd mot skräppost och skadlig programvara i Exchange Online Protection (EOP), samt säkra länkar och säkra bifogade filer i Microsoft Defender för Office 365. Mer information finns i [Skydda mot hot i Office 365.](protect-against-threats.md)

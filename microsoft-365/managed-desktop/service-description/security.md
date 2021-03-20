@@ -1,76 +1,75 @@
 ---
-title: Säkerhets teknik på Microsoft Managed Desktop
-description: Teknologier som används för säkerhets-, identitets-och åtkomst hantering, nätverks säkerhet och informations säkerhet
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+title: Säkerhetstekniker i Microsoft Managed Desktop
+description: Tekniker som används för enhetssäkerhet, identitets- och åtkomsthantering, nätverkssäkerhet och informationssäkerhet
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5076ddca6053adc7cebb9599c8d82a42c7ab5a63
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: b1111f0867ff9a49ba670cdd8b48d10d158fd3ed
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840919"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917776"
 ---
-# <a name="security-technologies-in-microsoft-managed-desktop"></a>Säkerhets teknik på Microsoft Managed Desktop
+# <a name="security-technologies-in-microsoft-managed-desktop"></a>Säkerhetstekniker i Microsoft Managed Desktop
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft Managed Desktop använder flera Microsoft-tekniker för att skydda hanterade enheter och data. Dessutom använder Microsoft Managed Desktop Security Operations Center olika [processer](security-operations.md) tillsammans med dessa tekniker.
+Microsoft Managed Desktop använder flera microsoft-tekniker för att skydda hanterade enheter och data. Dessutom använder Microsoft Managed Desktop Security Operations Center olika [processer tillsammans](security-operations.md) med dessa tekniker.
 
-Verkligen 
+Mer specifikt: 
 
-- [Enhets säkerhet](#device-security) – säkerhet och skydd på Microsoft Managed Station ära enheter
-- [Identitets-och åtkomst hantering](#identity-and-access-management) – hantera säker användning av enheter via Azure Active Directory Identity Services
-- [Nätverks säkerhet](#network-security) – VPN-information och rekommenderad lösning på Microsoft-datorn
-- [Informations säkerhet](#information-security) – valfria tillgängliga tjänster för att skydda känslig information 
+- [Enhetssäkerhet](#device-security) – säkerhet och skydd på Microsoft Managed Desktop-enheter
+- [Identitets- och åtkomsthantering](#identity-and-access-management) – hantera säker användning av enheter via Azure Active Directory-identitetstjänster
+- [Nätverkssäkerhet](#network-security) – VPN-information och rekommenderade lösningar och inställningar för Microsoft Managed Desktop
+- [Informationssäkerhet](#information-security) – valfria tjänster för ytterligare skydd av känslig information 
 
-Information om hur du använder data lagring, användning och säkerhets rutiner som används av Microsoft Managed Desktop finns i vårt whitepaper [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
+Mer information om datalagring, användning och säkerhetsmetoder som används av Microsoft Managed Desktop finns i vår informationsblad på [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
 
 
-## <a name="device-security"></a>Enhets säkerhet
+## <a name="device-security"></a>Enhetssäkerhet
 
-Microsoft Managed Desktop säkerställer att alla hanterade enheter skyddas och skyddas och identifierar hot så tidigt som möjligt med följande tjänster:
+Microsoft Managed Desktop säkerställer att alla hanterade enheter är skyddade och identifierar hot så tidigt som möjligt med hjälp av följande tjänster:
 
 Tjänst | Beskrivning
 --- | ---
-Viktigt | Microsoft Defender AV är installerat och konfigurerat<br>Microsoft Defender AV-definitioner är uppdaterade
-Full volym kryptering |    Windows BitLocker är volym krypterings lösningen för Microsoft hanterade Station ära datorer.<br><br>När en organisation har satts in i tjänsten krypteras enheter med Windows BitLocker med inbyggd Trust Platform (TPM) för att förhindra otillåten åtkomst till lokala data när enheten är i vilo läge eller avstängd. 
-Övervakning |    Microsoft Defender för slut punkter används för att övervaka säkerhets risken på alla Microsoft-hanterade Station ära enheter. Med Defender för slut punkten kan företags kunder upptäcka, undersöka och svara på avancerade hot i företagets nätverk. Mer information finns i [Microsoft Defender för slut punkter.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
-Uppdateringar av operativ system |  Microsoft Managed Station ära datorer skyddas alltid med de senaste säkerhets uppdateringarna.
-Säker enhets konfiguration |   Microsoft Managed Desktop implementerar Microsofts säkerhets bas linje. Mer information finns i [säkerhets bas linjer för Windows.](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)
+Antivirus | Microsoft Defender AV är installerat och konfigurerat<br>Microsoft Defender AV-definitioner är uppdaterade
+Fullständig volymkryptering |    Windows BitLocker är en volymkrypteringslösning för Microsoft Managed Desktop-enheter.<br><br>När en organisation introduceras till tjänsten krypteras enheter med Windows BitLocker med den inbyggda TPM (Trust Platform Module) för att förhindra obehörig åtkomst till lokala data när enheten är i strömsparläge eller inaktiverad. 
+Övervakning |    Microsoft Defender för Endpoint används för övervakning av säkerhetshot på alla Microsoft Managed Desktop-enheter. Med Defender för Slutpunkt kan företagskunder identifiera, undersöka och reagera på avancerade hot i sina företagsnätverk. Mer information finns i [Microsoft Defender för Endpoint.](/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
+Uppdateringar av operativsystem |  Microsoft Hanterade enheter skyddas alltid med de senaste säkerhetsuppdateringarna.
+Säker enhetskonfiguration |   Microsoft Hanterat skrivbord implementerar Microsofts baslinje för säkerhet. Mer information finns i Windows [säkerhetsbaslinjer.](/windows/security/threat-protection/windows-security-baselines)
 
 
 
 ## <a name="identity-and-access-management"></a>Identitets- och åtkomsthantering
 
-Identitets-och åtkomst hantering skyddar företagets till gångar och företags kritiska data. Microsoft Managed Desktop konfigurerar enheter för att säkerställa säker användning med hanterade identiteter i Azure Active Directory (Azure AD). Det är kundens ansvar att behålla korrekt information i sin Azure AD-klient. 
+Identitets- och åtkomsthantering skyddar företagets tillgångar och affärskritiska data. Microsoft Managed Desktop konfigurerar enheter för säker användning med Azure Active Directory-hanterade identiteter (Azure AD). Det är kundens ansvar att upprätthålla korrekt information i Azure AD-klientorganisationen. 
 
 Tjänst | Beskrivning
 --- | ---
-Bio metriska värden |  Med Windows Hello kan användarna logga in genom att använda sina ansikte eller PIN-koder och få lösen ord svårare att glömma eller stjäla. Kunderna är ansvariga för att implementera nödvändiga komponenter för sin lokala Active Directory för användning av denna tjänst i en hybrid konfiguration. Mer information finns i [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
-Standard användar behörighet |  För att skydda systemet och göra det säkrare, tilldelas användaren standard behörigheter. Denna behörighet är tilldelad som en del av Windows autopilot-välkomst programmet.
+Autentisering med autentisering |  Med Windows Hello kan användarna logga in med sitt ansikte eller med en PIN-kod, vilket gör det svårare att glömma eller stjäla lösenord. Kunderna ansvarar för att implementera nödvändiga förutsättningar för sin lokala Active Directory för användning av den här tjänsten i en hybridkonfiguration. Mer information finns i [Windows Hello.](/windows-hardware/design/device-experiences/windows-hello) 
+Standardanvändarbehörighet |  För att skydda systemet och göra det säkrare får användaren standardanvändarbehörigheter. Den här behörigheten tilldelas som en del av Den in vise Windows Autopilot-upplevelsen.
 
 
 
-## <a name="network-security"></a>Nätverks säkerhet
+## <a name="network-security"></a>Nätverkssäkerhet
 
-Kunderna är ansvariga för nätverks säkerhet. 
-
-Tjänst | Beskrivning
---- | ---
-/VPN-Server | Kunder som äger sin VPN-infrastruktur för att säkerställa att begränsade företags resurser kan exponeras utanför intranätet.<br><br>Minsta krav: Microsoft Managed Desktop kräver en Windows 10-kompatibel och en VPN-lösning som stöds. Om din organisation behöver en VPN-lösning måste den ha stöd för Windows 10 och vara paketerad och distribuerad via Intune. Kontakta program varu utgivaren för mer information.<br><br>Rekommendation<br>-Microsoft rekommenderar en modern VPN-lösning som enkelt kan distribueras genom Intune till push-VPN-profiler. Den här metoden är ett ständigt, smidigt, tillförlitligt och säkert sätt att komma åt företagets nätverk. Mer information finns i [[VPN-inställningar i Intune]](https://docs.microsoft.com/intune/vpn-settings-configure).<br>-Tjocka VPN-klienter, eller äldre VPN-klienter, rekommenderas inte av Microsoft i Microsoft Managed Desktop eftersom det kan påverka användar miljön.<br>-Microsoft rekommenderar att utgående webb trafik går direkt till Internet utan att behöva gå via VPN för att undvika prestanda problem.<br>-Idealiskt rekommenderar Microsoft att använda Azure Active Directory-tillämpningsproxy i stället för VPN.
-
-
-## <a name="information-security"></a>Informations säkerhet
-
-Du kan konfigurera de här valfria tjänsterna för att skydda företagets högsta till gångar. 
+Kunderna ansvarar för nätverkssäkerhet. 
 
 Tjänst | Beskrivning
 --- | ---
-Återställning av data  | Information som lagras i centrala mappar på enheten säkerhets kopie ras till OneDrive för företag. Microsoft Managed Desktop är inte ansvarigt för data som inte är synkroniserade med OneDrive för företag. 
-Windows Information Protection |    För företag som kräver hög informations säkerhet rekommenderar vi [Windows informations skydd](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip) och [Azure information Protection.](https://www.microsoft.com/cloud-platform/azure-information-protection). 
+VPN | Kunderna äger VPN-infrastrukturen för att säkerställa att begränsade företagsresurser kan exponeras utanför intranätet.<br><br>Minimikrav: Microsoft Managed Desktop kräver en Windows 10-kompatibel VPN-lösning som stöds. Om din organisation behöver en VPN-lösning måste den ha stöd för Windows 10 och vara paketerad och distribuerad via Intune. Kontakta programvaruutgivaren för mer information.<br><br>Rekommendation:<br>- Microsoft rekommenderar en modern VPN-lösning som enkelt kan distribueras via Intune för att pusha VPN-profiler. Den här metoden är ett ständigt, sömlöst, tillförlitligt och säkert sätt att få åtkomst till företagets nätverk. Mer information finns i [[VPN-inställningar i Intune]](/intune/vpn-settings-configure).<br>- Tjocka VPN-klienter, eller äldre VPN-klienter, rekommenderas inte av Microsoft när de använder Microsoft Managed Desktop eftersom det kan påverka användarmiljön.<br>Microsoft rekommenderar att den utgående webbtrafiken går direkt till Internet utan att gå via VPN för att undvika prestandaproblem.<br>– Microsoft rekommenderar för bästa fall användningen av Azure Active Directory-appproxy i stället för en VPN.
 
+
+## <a name="information-security"></a>Informationssäkerhet
+
+Du kan konfigurera de här valfria tjänsterna för att skydda företagets tillgångar med höga värden. 
+
+Tjänst | Beskrivning
+--- | ---
+Dataåterställning  | Information som lagras i viktiga mappar på enheten säkerhetskopieras till OneDrive för företag. Microsoft Hanterat skrivbord ansvarar inte för data som inte synkroniseras med OneDrive för företag. 
+Windows Information Protection |    Vi rekommenderar [Windows Information Protection](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip) och Azure Information Protection för företag som kräver hög [informationssäkerhetsnivå.](https://www.microsoft.com/cloud-platform/azure-information-protection)

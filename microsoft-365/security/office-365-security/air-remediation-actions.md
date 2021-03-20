@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bef2fbd1e9e3d3525f9c274b5f9127acfb218396
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 273682571a1eb6bf2fd9566d8498ccbb618cd2d3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287131"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917611"
 ---
 # <a name="remediation-actions-in-microsoft-defender-for-office-365"></a>Åtgärdsåtgärder i Microsoft Defender för Office 365
 
@@ -45,34 +45,34 @@ Skyddsfunktioner i [Microsoft Defender för Office 365](office-365-atp.md) omfat
 - Inaktivera vidarebefordran av extern e-post
 - Inaktivera delegering
 
-I Microsoft Defender för Office 365 vidtas inte åtgärdsåtgärder automatiskt. I stället vidtas åtgärder endast efter godkännande av organisationens team för säkerhetsåtgärder.
+I Microsoft Defender för Office 365 vidtas inte åtgärdsåtgärder automatiskt. I stället vidtas åtgärder endast om godkännande har godkänts av organisationens team för säkerhetsåtgärder.
 
 ## <a name="threats-and-remediation-actions"></a>Hot och åtgärder
 
-Microsoft Defender för Office 365 innehåller åtgärder för att hantera olika hot. Automatiserade undersökningar resulterar ofta i en eller flera åtgärder för att granska och godkänna. I vissa fall leder en automatiserad undersökning inte till en specifik åtgärd. Om du vill undersöka ytterligare och vidta lämpliga åtgärder använder du vägsvägledning i följande tabell.
+Microsoft Defender för Office 365 innehåller åtgärdsåtgärder för att hantera olika hot. Automatiserade undersökningar resulterar ofta i en eller flera åtgärder som måste granskas och godkännas. I vissa fall leder inte en automatiserad undersökning till en specifik åtgärd. Om du vill undersöka och vidta lämpliga åtgärder använder du vägledning i följande tabell.
 
-|Kategori|Hot/risk|Åtgärdsåtgärd(er)|
+|Kategori|Hot/risk|Åtgärdsåtgärder|
 |:---|:---|:---|
-|E-post|Skadlig programvara|Mjuk borttagning av e-post/kluster <p> Om mer än ett litet e-postmeddelande i ett kluster innehåller skadlig programvara anses klustret vara skadligt.|
+|E-post|Skadlig programvara|Mjuk borttagning av e-post/kluster <p> Om mer än ett litet antal e-postmeddelanden i ett kluster innehåller skadlig programvara anses klustret vara skadligt.|
 |E-post|Skadlig URL<br/>(En skadlig URL identifierades av [Säkra länkar](atp-safe-links.md).)|Mjuk borttagning av e-post/kluster <br/>Blockera URL (tid för klickning av verifiering)<p> E-post som innehåller en skadlig URL anses vara skadlig.|
-|E-post|Nätfiske|Mjuk borttagning av e-post/kluster <p> Om mer än en liten del av e-postmeddelandena i ett kluster innehåller nätfiskeförsök är hela klustret ett försök till nätfiske.|
-|E-post|Zapped phish <br>(E-postmeddelanden levererades och [zapped sedan.)](zero-hour-auto-purge.md)|Mjuk borttagning av e-post/kluster <p>Det finns rapporter för att visa zappade meddelanden. [Se om ZAP har flyttat ett meddelande och vanliga frågor och svar.](zero-hour-auto-purge.md#how-to-see-if-zap-moved-your-message)|
-|E-post|Missade e-postmeddelanden [har rapporterats](enable-the-report-message-add-in.md) av en användare|[Automatiserad undersökning som utlöses av användarens rapport](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)|
-|E-post|Volymnormnormy <br> (Antalet senaste e-postmeddelanden överskrider de föregående 7–10 dagarna för matchande villkor.)|En automatiserad undersökning resulterar inte i en väntande åtgärd. <p>Volymnorma är inte ett tydligt hot, utan är bara en indikation på större e-postvolymer under de senaste dagarna jämfört med de senaste 7–10 dagarna. <p>Även om ett stort antal e-postmeddelanden kan indikera potentiella problem, krävs bekräftelse på antingen skadliga omdömen eller en manuell granskning av e-postmeddelanden/kluster. Se [Hitta misstänkta e-postmeddelanden som har levererats.](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered)|
-|E-post|Inga hot hittades <br> (Inga hot hittades i systemet baserat på filer, URL:er eller analys av e-postkluster.)|En automatiserad undersökning resulterar inte i en viss väntande åtgärd. <p>Hot som hittas och [zapped](zero-hour-auto-purge.md) efter att en undersökning har slutförts återspeglas inte i de numeriska resultaten för en undersökning, men sådana hot kan visas i [Threat Explorer.](threat-explorer.md)|
-|Användare|En användare har klickat på en skadlig URL <br> (En användare som navigerade till en sida som senare visades [](atp-safe-links.md#warning-pages-from-safe-links) vara skadlig, eller så gick en användare förbi en varningssida för säkra länkar för att komma till en skadlig sida.)|En automatiserad undersökning resulterar inte i en viss väntande åtgärd. <p>Blockera URL (tid för klickning) <p>Använd HotUtforskaren [för att visa data om URL:er och klicka på beslut.](threat-explorer.md#view-phishing-url-and-click-verdict-data) <p>Om din organisation använder [Microsoft Defender för Slutpunkt kan du](https://docs.microsoft.com/windows/security/threat-protection/)undersöka användaren för [att](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user) avgöra om deras konto har komprometterats.|
-|Användare|En användare skickar skadlig kod/phish|En automatiserad undersökning resulterar inte i en viss väntande åtgärd. <p> Användaren kan rapportera skadlig kod/phish eller så kan någon [kapa användaren som en del](anti-spoofing-protection.md) av en attack. Använd [Hot Explorer för](threat-explorer.md) att visa och hantera e-postmeddelanden som innehåller [skadlig](threat-explorer-views.md#email--malware) programvara eller [nätt innehåll.](threat-explorer-views.md#email--phish)|
-|Användare|Vidarebefordran av e-post <br> (Regler för vidarebefordran av postlådor är konfigurerade, som kan användas för data exfiltration.)|Ta bort vidare vidarebefordran <p> Använd [information om e-postflöde,](mail-flow-insights-v2.md)inklusive rapporten [om automatiskt](mfi-auto-forwarded-messages-report.md)vidarebefordrade meddelanden, om du vill visa mer specifik information om vidarebefordrad e-post.|
-|Användare|Regler för e-postdelegering <br> (En användares konto har delegering.)|Ta bort delegeringsregel <p> Om din organisation använder [Microsoft Defender för Slutpunkt kan du](https://docs.microsoft.com/windows/security/threat-protection/)undersöka [användaren](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user) som får delegeringsbehörigheten.|
-|Användare|Data exfiltration <br> (En användare har brutit mot E-post- eller [fildelnings-DLP-principer.)](../../compliance/data-loss-prevention-policies.md)|En automatiserad undersökning resulterar inte i en väntande åtgärd. <p> [Visa DLP-rapporter och vidta åtgärder.](../../compliance/view-the-dlp-reports.md)|
-|Användare|Avvikande e-postavsändande <br> (En användare har nyligen skickat mer e-post än under de föregående 7–10 dagarna.)|En automatiserad undersökning resulterar inte i en väntande åtgärd. <p> Att skicka en stor mängd e-post är inte skadligt för sig själv. Användaren kanske bara har skickat e-post till en stor grupp mottagare för ett evenemang. Om du vill undersöka [e-postflödet](mail-flow-insights-v2.md)kan du använda [insikter](mfi-mail-flow-map-report.md) i e-postflödet, inklusive rapporten om e-postflödeskartan, för att avgöra vad som händer och vidta åtgärder.|
+|E-post|Phish|Mjuk borttagning av e-post/kluster <p> Om mer än ett litet antal e-postmeddelanden i ett kluster innehåller nätfiskeförsök betraktas hela klustret som ett försök till nätfiske.|
+|E-post|Zapped phish <br>(E-postmeddelanden levererades och [sedan zapped](zero-hour-auto-purge.md).)|Mjuk borttagning av e-post/kluster <p>Rapporter finns tillgängliga för att visa zapped meddelanden. [Se om ZAP har flyttat ett meddelande och vanliga frågor och svar](zero-hour-auto-purge.md#how-to-see-if-zap-moved-your-message).|
+|E-post|Missat e-postmeddelande [som rapporterats](enable-the-report-message-add-in.md) av en användare|[Automatiserad undersökning som utlösts av användarens rapport](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)|
+|E-post|Volymnormnormy <br> (Antalet nya e-postmeddelanden överskrider de föregående 7–10 dagarna för matchande villkor.)|Automatisk undersökning leder inte till en viss väntande åtgärd. <p>Volymnormer är inte ett tydligt hot, utan är bara en indikation på större e-postvolymer under de senaste dagarna jämfört med de senaste 7–10 dagarna. <p>Även om en stor mängd e-post kan indikera potentiella problem behövs bekräftelse på antingen skadliga omdömen eller en manuell granskning av e-postmeddelanden/kluster. Se [Hitta misstänkta e-postmeddelanden som har levererats](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered).|
+|E-post|Inga hot hittades <br> (Systemet hittade inte några hot baserat på filer, URL:er eller analys av e-postkluster.)|Automatisk undersökning leder inte till en viss väntande åtgärd. <p>Hot som påträffas [och zapped](zero-hour-auto-purge.md) efter att en undersökning har slutförts återspeglas inte i en undersöknings numeriska resultat, men sådana hot kan visas i [Threat Explorer.](threat-explorer.md)|
+|Användare|En användare har klickat på en skadlig URL <br> (En användare navigerade till en sida som senare visades vara skadlig, eller så gick en användare förbi en varningssida [med säkra](atp-safe-links.md#warning-pages-from-safe-links) länkar för att komma till en skadlig sida.)|Automatisk undersökning leder inte till en viss väntande åtgärd. <p>Blockera URL (tid för klickning) <p>Använd Hotutforskaren [för att visa data om URL:er och klicka på beslut](threat-explorer.md#view-phishing-url-and-click-verdict-data). <p>Om din organisation använder [Microsoft Defender för Slutpunkt kan du](/windows/security/threat-protection/)undersöka användaren för [att](/windows/security/threat-protection/microsoft-defender-atp/investigate-user) avgöra om deras konto har komprometterats.|
+|Användare|En användare skickar skadlig kod/phish|Automatisk undersökning leder inte till en viss väntande åtgärd. <p> Användaren kan rapportera skadlig kod/phish eller så kan någon [kapa användaren](anti-spoofing-protection.md) som en del av en attack. Använd [Threat Explorer för](threat-explorer.md) att visa och hantera e-postmeddelanden som innehåller [skadlig](threat-explorer-views.md#email--malware) programvara [eller nätt innehåll.](threat-explorer-views.md#email--phish)|
+|Användare|Vidarebefordran av e-post <br> (Regler för vidarebefordran av postlåda är konfigurerade, som kan användas för data exfiltrering.)|Ta bort vidare vidarebefordranregel <p> Använd [insikter i e-postflödet,](mail-flow-insights-v2.md)inklusive rapporten [Meddelanden som vidarebefordras automatiskt,](mfi-auto-forwarded-messages-report.md)om du vill visa mer specifik information om vidarebefordrad e-post.|
+|Användare|Regler för e-postdelegering <br> (En användares konto har delegering konfigurerat.)|Ta bort delegeringsregel <p> Om din organisation använder [Microsoft Defender för Endpoint kan](/windows/security/threat-protection/)du undersöka [användaren](/windows/security/threat-protection/microsoft-defender-atp/investigate-user) som får delegeringsbehörigheten.|
+|Användare|Data exfiltrering <br> (En användare har brutit mot E-post eller [DLP-principer för fildelning](../../compliance/data-loss-prevention-policies.md).)|Automatisk undersökning leder inte till en viss väntande åtgärd. <p> [Visa DLP-rapporter och vidta åtgärder.](../../compliance/view-the-dlp-reports.md)|
+|Användare|Avvikande e-postavsändande <br> (En användare skickade nyligen fler e-postmeddelanden än under de föregående 7–10 dagarna.)|Automatisk undersökning leder inte till en viss väntande åtgärd. <p> Att skicka en stor mängd e-post är inte skadligt för sig. Användaren kanske precis har skickat e-post till en stor grupp mottagare för ett evenemang. Undersök genom att använda insikter [om e-postflöde](mail-flow-insights-v2.md), [inklusive](mfi-mail-flow-map-report.md) rapporten e-postflödeskarta för att avgöra vad som händer och vidta åtgärder.|
 
 ## <a name="next-steps"></a>Nästa steg
 
 - [Visa information och resultat från en automatiserad undersökning i Microsoft Defender för Office 365](air-view-investigation-results.md)
-- [Visa väntande eller slutförda åtgärder efter en automatiserad undersökning i Microsoft Defender för Office 365](air-review-approve-pending-completed-actions.md)
+- [Visa väntande eller slutförda åtgärdsåtgärder efter en automatiserad undersökning i Microsoft Defender för Office 365](air-review-approve-pending-completed-actions.md)
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Läs mer om automatiserad undersökning i Microsoft Defender för Slutpunkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Läs mer om automatiserad undersökning i Microsoft Defender för Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 - [Läs mer om funktionerna i Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)

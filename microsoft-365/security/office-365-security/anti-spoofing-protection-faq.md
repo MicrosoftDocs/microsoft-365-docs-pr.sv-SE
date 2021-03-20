@@ -18,12 +18,12 @@ ms.collection:
 description: Administratörer kan visa vanliga frågor och svar om skydd mot förfalskning i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d2d307d201af8ad09a4faf7a865a29da8942bdf8
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 7e7163037029761a53a5461de592e46ab5ea0485
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288915"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917564"
 ---
 # <a name="anti-spoofing-protection-faq"></a>Vanliga frågor och svar om skydd mot förfalskning
 
@@ -34,21 +34,21 @@ ms.locfileid: "50288915"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Den här artikeln innehåller vanliga frågor och svar om skydd mot förfalskning för Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor.
+Den här artikeln innehåller vanliga frågor och svar om skydd mot förfalskning för Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor.
 
-Frågor och svar om skydd mot skräppost finns i Vanliga frågor och svar om skydd mot [skräppost.](anti-spam-protection-faq.md)
+Frågor och svar om skydd mot skräppost finns i Vanliga frågor och [svar om skydd mot skräppost.](anti-spam-protection-faq.md)
 
-Frågor och svar om skydd mot skadlig programvara finns i Vanliga frågor och svar om skydd [mot skadlig programvara](anti-malware-protection-faq-eop.md)
+Frågor och svar om skydd mot skadlig programvara finns i Vanliga frågor och [svar om skydd mot skadlig programvara](anti-malware-protection-faq-eop.md)
 
-## <a name="why-did-microsoft-choose-to-junk-unauthenticated-inbound-email"></a>Varför valde Microsoft att skräppost av oautisk inkommande e-post?
+## <a name="why-did-microsoft-choose-to-junk-unauthenticated-inbound-email"></a>Varför valde Microsoft att skräppostavlyssa oauthticerad inkommande e-post?
 
-Microsoft anser att risken för att fortsätta tillåta oauticerad inkommande e-post är högre än risken för att legitima inkommande e-postmeddelanden förloras.
+Microsoft anser att risken för att fortsätta att tillåta oauthenticerad inkommande e-post är högre än risken för att förlora legitima inkommande e-postmeddelanden.
 
-## <a name="does-junking-unauthenticated-inbound-email-cause-legitimate-email-to-be-marked-as-spam"></a>Leder skräppost oautisk inkommande e-post till att legitim e-post markeras som skräppost?
+## <a name="does-junking-unauthenticated-inbound-email-cause-legitimate-email-to-be-marked-as-spam"></a>Leder skräppostmeddelanden som inte är behöriga till inkommande e-postmeddelanden till att legitimt e-postmeddelande markeras som skräppost?
 
-När Microsoft aktiverade den här funktionen 2018 har vissa felaktiga positiva resultat inträffat (bra meddelanden markerades som dåliga). Med tiden har dock avsändarna anpassat sig efter kraven. Antalet meddelanden som blev felidentifierade som falska blev tillgängliga för de flesta e-postsökvägar.
+När Microsoft aktiverade den här funktionen 2018 hände vissa falska positiva resultat (bra meddelanden markerades som dåliga). Med tiden har dock avsändarna anpassat sig efter kraven. Antalet meddelanden som blivit felidentifierade som förfalskade har blivit tillgängliga för de flesta e-postsökvägar.
 
-Microsoft införde först de nya autentiseringskraven för e-post flera veckor innan de distribuerade till kunder. I början förekom störningar men de minskade gradvis.
+Microsoft använder sig först av de nya autentiseringskraven för e-post flera veckor innan de distribuerar dem till kunder. I början förekom störningar men de minskade gradvis.
 
 ## <a name="is-spoof-intelligence-available-to-microsoft-365-customers-without-defender-for-office-365"></a>Är förfalskningsinformation tillgänglig för Microsoft 365-kunder utan Defender för Office 365?
 
@@ -58,30 +58,30 @@ Ja. Från och med oktober 2018 är förfalskningsinformation tillgänglig för a
 
 Se [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="im-an-admin-and-i-dont-know-all-of-sources-for-messages-in-my-email-domain"></a>Jag är administratör och jag känner inte till alla källor för meddelanden i min e-postdomän!
+## <a name="im-an-admin-and-i-dont-know-all-of-sources-for-messages-in-my-email-domain"></a>Jag är administratör och känner inte till alla källor för meddelanden i min e-postdomän!
 
-Se [att du inte känner till alla källor för din e-post.](email-validation-and-authentication.md#you-dont-know-all-sources-for-your-email)
+Mer [information finns i Du känner inte till alla källor för din e-post.](email-validation-and-authentication.md#you-dont-know-all-sources-for-your-email)
 
 ## <a name="what-happens-if-i-disable-anti-spoofing-protection-for-my-organization"></a>Vad händer om jag inaktiverar skydd mot förfalskning för min organisation?
 
-Vi rekommenderar inte att du inaktiverar förfalskningsskydd. Om du inaktiverar skyddet kan fler nätfiske- och skräppostmeddelanden levereras i organisationen. Nätfiske är inte alla förfalskningsmeddelanden och du kommer inte att missa alla falska meddelanden. Din risk är dock högre.
+Vi rekommenderar inte att du inaktiverar skydd mot förfalskning. Om du inaktiverar skyddet kan fler nätfiske- och skräppostmeddelanden levereras i organisationen. Inte alla nätfiskemeddelanden är förfalskning och inte alla falska meddelanden missas. Din risk är dock högre.
 
-Nu när Utökad filtrering för kopplingar är tillgänglig rekommenderar vi inte längre att skydd mot förfalskning inaktiveras när din e-post [dirigeras](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) genom en annan tjänst innan EOP.
+Nu när utökad filtrering för kopplingar är tillgänglig rekommenderar vi inte längre att skydd mot förfalskning inaktiveras när din e-post [dirigeras](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) via en annan tjänst före EOP.
 
-## <a name="does-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>Innebär skydd mot förfalskning att jag skyddas från all nätfiske?
+## <a name="does-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>Innebär skydd mot förfalskning att jag är skyddad från all nätfiske?
 
-Nej, tyvärr inte. Attackerare kommer att anpassa sig till andra tekniker (till exempel komprometterade konton eller konton i kostnadsfria e-posttjänster). Skydd mot nätfiske fungerar dock mycket bättre för att identifiera andra typer av nätfiskemetoder. Skyddslageren i EOP är utformade så att de fungerar tillsammans och bygger på varandra.
+Nej, tyvärr inte. Attackerare kommer att anpassa sig till andra tekniker (till exempel komprometterade konton eller konton i gratis e-posttjänster). Skydd mot nätfiske fungerar dock mycket bättre för att identifiera andra typer av nätfiskemetoder. Skyddslageren i EOP är utformade för att fungera tillsammans och bygga på varandra.
 
-## <a name="do-other-large-email-services-block-unauthenticated-inbound-email"></a>Blockerar andra stora e-posttjänster oauticerad inkommande e-post?
+## <a name="do-other-large-email-services-block-unauthenticated-inbound-email"></a>Blockerar andra stora e-posttjänster oauthticerad inkommande e-post?
 
-Nästan alla stora e-posttjänster implementerar traditionella SPF-, DKIM- och DMARC-kontroller. Vissa tjänster har andra, striktare kontroller, men det är få som går så långt som EOP för att blockera oautisk e-post och behandla dem som falska meddelanden. Men branschen börjar bli mer medvetna om problem med oauticerad e-post, särskilt på grund av problemet med nätfiske.
+Nästan alla stora e-posttjänster implementerar traditionella SPF-, DKIM- och DMARC-kontroller. Vissa tjänster har andra, striktare kontroller, men det är få som går så långt som EOP för att blockera oauthticerad e-post och behandla dem som falska meddelanden. Men branschen börjar bli mer medveten om problem med oauthenticerad e-post, särskilt på grund av problemet med nätfiske.
 
-## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>Måste jag fortfarande aktivera inställningen Advanced Spam Filter (SPF-post: Hard Fail)_(MarkAsSpamSpfRecordHardFail)_ om jag aktiverar förfalskningskydd?
+## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>Måste jag fortfarande aktivera inställningen För avancerat skräppostfilter med SPF-post: hard fail (_MarkAsSpamSpfRecordHardFail)_ om jag aktiverar skydd mot förfalskning?
 
-Nej. Den här ASF-inställningen är inte längre obligatorisk. Skydd mot förfalskning tar hänsyn till både SPF-fel och en mycket bredare uppsättning kriterier. Om du har aktiverat skydd mot förfalskning och **SPF-post: Hard Fail** (_MarkAsSpamSpfRecordHardFail_) aktiverad kommer du antagligen att få mer falska positiva identifieringar.
+Nej. Den här ASF-inställningen är inte längre obligatorisk. Skydd mot förfalskning tar hänsyn till både SPF-hårda misslyckades och en mycket bredare uppsättning villkor. Om du har aktiverat skydd mot förfalskning och **SPF-post: Hard Fail** (_MarkAsSpamSpfRecordHardFail_) aktiverad kommer du antagligen att få mer falska positiva identifieringar.
 
-Vi rekommenderar att du inaktiverar den här funktionen eftersom den nästan inte ger några ytterligare fördelar när du identifierar skräppost eller nätfiskemeddelanden, och i stället genererar huvudsakligen falska positiva identifieringar. Mer information finns i avancerade [inställningar för skräppostfilter (ASF) i EOP.](advanced-spam-filtering-asf-options.md)
+Vi rekommenderar att du inaktiverar den här funktionen eftersom den nästan inte ger några fler fördelar med att identifiera skräppost och nätfiske, och i stället generera huvudsakligen falska positiva identifieringar. Mer information finns i Avancerade [inställningar för skräppostfilter (ASF) i EOP.](advanced-spam-filtering-asf-options.md)
 
-## <a name="does-sender-rewriting-scheme-help-fix-forwarded-email"></a>Kan vidarebefordrad e-post åtgärdas med hjälp av avsändarschemat?
+## <a name="does-sender-rewriting-scheme-help-fix-forwarded-email"></a>Hjälper Sender Rewriting Scheme till att korrigera vidarebefordrad e-post?
 
-SRS korrigerar bara delvis problemet med vidarebefordrad e-post. Genom att skriva om SMTP **MAIL FROM** kan SRS säkerställa att det vidarebefordrade meddelandet skickar SPF till nästa mål. Men eftersom antiförfalskning baseras på från-adressen i kombination med **MAIL FROM-** eller DKIM-signeringsdomänen (eller andra signaler), räcker det inte med att förhindra att vidarebefordrad SRS-e-post markeras som förfalskning. 
+SRS korrigerar bara delvis problemet med vidarebefordrad e-post. Genom att skriva om **SMTP-E-POST FRÅN** kan SRS säkerställa att det vidarebefordrade meddelandet skickar SPF vid nästa mål. Eftersom skydd mot förfalskning emellertid baseras  på Från-adressen i kombination med **MAIL FROM-** eller DKIM-signeringsdomänen (eller andra signaler), räcker det inte för att förhindra att vidarebefordrad SRS-e-post markeras som förfalskning.
