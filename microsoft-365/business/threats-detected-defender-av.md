@@ -14,79 +14,79 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
-description: Lär dig hur Microsoft Defender Antivirus skyddar dina Windows-enheter från program varu hot, till exempel virus, skadlig program vara och spionprogram.
-ms.openlocfilehash: 1653aef6967cdf76e6e19acda158fb29758280a8
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+description: Läs om hur Microsoft Defender Antivirus skyddar dina Windows-enheter mot programvaruhot, till exempel virus, skadlig programvara och spionprogram.
+ms.openlocfilehash: ce88e4f7b1caf3a98ebd6dc56d66f0d0fc99a9ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870905"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912436"
 ---
 # <a name="threats-detected-by-microsoft-defender-antivirus"></a>Hot som upptäcks av Microsoft Defender Antivirus
 
-Microsoft Defender Antivirus skyddar dina Windows-enheter från program varu hot, till exempel virus, skadlig program vara och spionprogram.
+Microsoft Defender Antivirus skyddar dina Windows-enheter mot programvaruhot, till exempel virus, skadlig programvara och spionprogram.
 
-- Virus sprider sig normalt genom att koppla sin kod till andra filer på din enhet eller ditt nätverk och kan göra att infekterade program inte fungerar som de ska.
-- Skadlig program vara inkluderar skadliga filer, program och kod som kan orsaka skada och störa normal användning av enheter. Dessutom kan skadlig program vara tillåta obehörig åtkomst, använda system resurser, stjäla lösen ord och konto information, låsa ut dig från datorn och be om utpressning och mer.
-- Spionprogram samlar in data, till exempel Webbs öknings aktivitet, och skickar data till fjärrservrar.
+- Virus sprids vanligtvis genom att deras kod bifogas till andra filer på enheten eller i nätverket och kan leda till att smittade program fungerar felaktigt.
+- Skadlig programvara omfattar skadliga filer, program och kod som kan orsaka skada och störa normal användning av enheter. Skadlig programvara kan också tillåta obehörig åtkomst, använda systemresurser, stjäla lösenord och kontoinformation, låsa ut dig från datorn och be om utpressningstrojan och mycket mer.
+- Spionprogram samlar in data, till exempel webbaktivitet, och skickar data till fjärrservrar.
  
-För att skydda hotet kan Microsoft Defender Antivirus använda flera olika sätt. Dessa metoder inkluderar molnbaserade skydd, real tids skydd och dedikerade skydds uppdateringar.
+För att tillhandahålla skydd mot hot använder Microsoft Defender Antivirus flera metoder. De här metoderna omfattar moln levererat skydd, realtidsskydd och dedikerade skyddsuppdateringar.
 
-- Molnbaserade skydd ger snabb identifiering och blockering av nya och framväxande hot.
-- Genomsökning alltid använder fil-och process beteende övervakning och andra tekniker (kallas även för *real tids skydd*).
-- Dedikerade skydds uppdateringar baseras på dator inlärning, mänsklig och automatiserad data analys, och djupgående hot motstånds forskningen. 
+- Moln levererat skydd bidrar till att tillhandahålla omedelbar identifiering och blockering av nya och nya hot.
+- I "always-on"-skanning används övervakning av filer och processer och andra tekniker (även kallat *realtidsskydd).*
+- Dedikerade skyddsuppdateringar baseras på maskininlärning, mänsklig och automatiserad analys av stora data samt ingående forskning om ändliga hot. 
 
-Om du vill veta mer om skadlig program vara och Microsoft Defender Antivirus kan du läsa följande artiklar: 
+Mer information om skadlig programvara och Microsoft Defender Antivirus finns i följande artiklar: 
 
-- [Förstå skadlig program vara & andra hot](/windows/security/threat-protection/intelligence/understanding-malware)
-- [Så här identifieras skadlig kod och potentiellt oönskade program](/windows/security/threat-protection/intelligence/criteria)
+- [Förstå skadlig programvara & andra hot](/windows/security/threat-protection/intelligence/understanding-malware)
+- [Hur Microsoft identifierar skadlig programvara och potentiellt oönskade program](/windows/security/threat-protection/intelligence/criteria)
 - [Nästa generations skydd i Windows 10](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
 
-## <a name="what-happens-when-a-non-microsoft-antivirus-solution-is-used"></a>Vad händer när en lösning som inte tillhör Microsoft Antivirus används? 
+## <a name="what-happens-when-a-non-microsoft-antivirus-solution-is-used"></a>Vad händer när en antiviruslösning som inte är en Microsoft-lösning används? 
 
-Microsoft Defender Antivirus är en del av operativ systemet och är aktiverat på enheter med Windows 10. Om du använder en lösning som inte kommer från Microsoft och du inte använder [Microsoft Defender för slut punkten](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)hamnar Microsoft Defender Antivirus automatiskt i inaktiverat läge.  
+Microsoft Defender Antivirus är en del av operativsystemet och är aktiverat på enheter med Windows 10. Men om du använder en antiviruslösning som inte är en Microsoft-antiviruslösning och du inte använder [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)för slutpunkt så inaktiveras Microsoft Defender Antivirus automatiskt.  
 
-I inaktiverat läge kan användarna och kunderna ändå använda Microsoft Defender Antivirus för schemalagda eller på begäran för att identifiera hot. men Microsoft Defender Antivirus kommer inte längre:
+I inaktiverat läge kan användare och kunder fortfarande använda Microsoft Defender Antivirus för schemalagda genomsökningar eller på begäran för att identifiera hot. Men Microsoft Defender Antivirus kommer inte längre att:
 
-- används som standard antivirus program.
-- Sök efter hot i filer.
-- åtgärda eller lös, hot.
+- kan användas som standardantivirusprogram.
+- söker aktivt igenom filer efter hot.
+- åtgärda eller lösa hot.
 
-Om du avinstallerar en lösning för antivirus program som inte kommer från Microsoft öppnas Microsoft Defender Antivirus automatiskt för att skydda dina Windows-enheter mot hot.
+Om du avinstallerar antiviruslösningen som inte är en Microsoft-antiviruslösning förs Microsoft Defender Antivirus automatiskt in i aktivt läge för att skydda dina Windows-enheter mot hot.
 
 > [!TIP]
-> - Om du använder Microsoft 365 kan du använda Microsoft Defender Antivirus som din primära antivirus lösning. Integreringen kan ge bättre skydd. Se [bättre tillsammans: Microsoft Defender Antivirus och Office 365](/windows/security/threat-protection/microsoft-defender-antivirus/office-365-microsoft-defender-antivirus).
-> - Se till att Microsoft Defender Antivirus är uppdaterat, även om du använder en lösning som inte tillhör Microsoft Antivirus.
+> - Om du använder Microsoft 365 bör du överväga att använda Microsoft Defender Antivirus som din primära antiviruslösning. Integrering kan ge bättre skydd. Se [Bättre tillsammans: Microsoft Defender Antivirus och Office 365.](/windows/security/threat-protection/microsoft-defender-antivirus/office-365-microsoft-defender-antivirus)
+> - Se till att hålla Microsoft Defender Antivirus uppdaterat, även om du använder en antiviruslösning som inte är en Microsoft-lösning.
 
-## <a name="what-to-expect-when-threats-are-detected"></a>Vad du kan förvänta dig när hot identifieras
+## <a name="what-to-expect-when-threats-are-detected"></a>Vad du kan förvänta dig när hot upptäcks
 
-När hot identifieras av Microsoft Defender Antivirus händer följande:
+När hot upptäcks av Microsoft Defender Antivirus inträffar följande:
 
-- Användare får [aviseringar i Windows](https://support.microsoft.com/windows/8942c744-6198-fe56-4639-34320cf9444e). 
-- Identifieringar visas i Windows- [säkerhetsprogrammet](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) på sidan **skydds historik** .  
-- Om du har [skyddat dina Windows 10-enheter](secure-win-10-pcs.md) och [registrerat dem i Intune](/mem/intune/enrollment/windows-enrollment-methods), och din organisation har 800 eller färre registrerade enheter visas hot identifieringar och insikter i <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrations centret för Microsoft 365</a> på sidan **hot och Antivirus** , som du kommer åt från **Microsoft Defender Antivirus** -kortet på **Start** sidan (eller från navigerings fönstret genom att välja **hälso skydd**  >  **& antivirus program**).
+- Användarna får [aviseringar i Windows.](https://support.microsoft.com/windows/8942c744-6198-fe56-4639-34320cf9444e) 
+- Identifieringar visas i [Windows-säkerhetsappen](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) på sidan **Skyddshistorik.**  
+- Om du har skyddat dina Windows [10-enheter](secure-win-10-pcs.md) och registrerat dem i [Intune](/mem/intune/enrollment/windows-enrollment-methods), och din organisation har 800 eller färre registrerade enheter, visas identifieringar av hot och information i administrationscentret för  <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365</a> på sidan Hot och **antivirusprogram,** som du kommer åt från **Microsoft Defender Antivirus-kortet** på startsidan (eller från navigeringsfönstret genom att välja Hälsohot  >  **& antivirus).**
 
-    Om organisationen har fler än 800 enheter registrerade i Intune uppmanas du att Visa hot identifieringar och insikter från [Microsoft slut punkts hanteraren](/mem/endpoint-manager-overview) i stället för från sidan **hot och Antivirus** .
+    Om din organisation har fler än 800 enheter registrerade i Intune uppmanas du att visa identifieringar av hot och insikter från [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) i stället för från sidan Hot och **antivirusprogram.**
  
     > [!NOTE]
-    > **Microsoft Defender Antivirus** -kortet och **Antivirus** sidan är distribuerade i faser, så du kanske inte har omedelbar åtkomst till dem.
+    > **Microsoft Defender Antivirus-kortet** och sidan Hot och **antivirusprogram distribueras** i faser, så du kanske inte har direkt åtkomst till dem.
 
-I de flesta fall behöver användarna inte vidta några ytterligare åtgärder. När en skadlig fil eller ett program identifieras på en enhet, blockerar Microsoft Defender Antivirus den och förhindrar att den körs. Dessutom kan nyligen upptäckta hot läggas till i Antivirus-och antimalware-motorn så att andra enheter och användare skyddas.  
+I de flesta fall behöver användarna inte vidta någon ytterligare åtgärd. När en skadlig fil eller ett program hittas på en enhet blockerar Microsoft Defender Antivirus den och förhindrar att den körs. Dessutom läggs nya hot till i antivirus- och antimalwaremotorn så att även andra enheter och användare skyddas.  
 
-Om en åtgärd krävs, till exempel för att godkänna borttagningen av en skadlig fil, kommer de att se det i meddelandet som tas emot. Om du vill veta mer om åtgärder som Microsoft Defender Antivirus tar på en användares räkning eller vilka åtgärder användarna kan behöva vidta kan du läsa mer i [skydds historiken](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708). Information om hur du hanterar Threat-identifieringar som IT-tekniker och-administratörer finns i [Granska upptäckta hot och vidta åtgärder](review-threats-take-action.md).
+Om det finns en åtgärd som användaren måste vidta, till exempel att godkänna borttagningen av en skadlig fil, ser de det i meddelandet som de får. Mer information om åtgärder som Microsoft Defender Antivirus vidtar för en användares räkning eller åtgärder som användare kan behöva vidta finns i [Skyddshistorik.](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708) Mer information om hur du hanterar identifieringar av hot som IT-personal/administratör finns i Granska [identifierade hot och vidta åtgärder.](review-threats-take-action.md)
 
-Om du vill veta mer om olika hot kan du gå till <a href="https://www.microsoft.com/wdsi/threats" target="_blank">webbplatsen Microsoft Security Intelligence Threats</a>, där du kan utföra följande åtgärder: 
+Om du vill veta mer om olika hot kan du <a href="https://www.microsoft.com/wdsi/threats" target="_blank">besöka webbplatsen med Microsofts säkerhetsinformationshot,</a>där du kan utföra följande åtgärder: 
 
-- Visa aktuell information om de vanligaste hoten.
-- Visa de senaste hoten för ett visst område.
-- Sök i Threat Encyclopedia efter information om ett specifikt hot.
+- Visa aktuell information om de viktigaste hoten.
+- Visa de senaste hoten för en viss region.
+- Sök på encyclopedia med hot om du vill ha information om ett specifikt hot.
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Skydda Windows 10-enheter](secure-windows-10-devices.md) (artikel) \
-[Utvärdera Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus) (artikel) \
-[Så aktiverar du antivirus skydd i real tid och Cloud-levererat](/mem/intune/user-help/turn-on-defender-windows#turn-on-real-time-and-cloud-delivered-protection) (artikel) \
-[Hur du aktiverar och använder Microsoft Defender Antivirus från Windows-säkerhetsprogrammet](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus) (artikeln) \
-[Aktivera Microsoft Defender Antivirus med grup princip](/mem/intune/user-help/turn-on-defender-windows#turn-on-windows-defender) (artikel) \
-[Så här uppdaterar du dina antivirus definitioner](/mem/intune/user-help/turn-on-defender-windows#update-your-antivirus-definitions) (artikel) \
-Så [här skickar du skadlig program vara och icke-malware till Microsoft för analys](/microsoft-365/security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis) (artikel)
+[Skydda Windows 10-enheter](secure-windows-10-devices.md) (artikel)\
+[Utvärdera Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus) (artikel)\
+[Så här aktiverar du antivirusskydd i realtid och moln levererat](/mem/intune/user-help/turn-on-defender-windows#turn-on-real-time-and-cloud-delivered-protection) (artikel)\
+[Så här aktiverar och använder du Microsoft Defender Antivirus från Windows-säkerhetsappen](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus) (artikel)\
+[Så här aktiverar du Microsoft Defender Antivirus med hjälp av Grupprincip](/mem/intune/user-help/turn-on-defender-windows#turn-on-windows-defender) (artikel)\
+[Hur du uppdaterar dina antivirusdefinitioner](/mem/intune/user-help/turn-on-defender-windows#update-your-antivirus-definitions) (artikel)\
+[Skicka skadlig programvara och icke-skadlig programvara till Microsoft för analys](../security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md) (artikel)

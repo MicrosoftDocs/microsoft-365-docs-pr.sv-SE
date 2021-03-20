@@ -22,46 +22,46 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Skapa en kommunikationswebbplats för din kampanj eller ditt företag.
-ms.openlocfilehash: c9624694e2174de47cb53ece8b1077fd7a5b59c5
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+description: Skapa en kommunikationswebbplats för kampanjen eller verksamheten.
+ms.openlocfilehash: c79f51e43bf3828826adbe25396132d28902722c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044666"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912240"
 ---
 # <a name="create-a-communications-site"></a>Skapa en webbplats för kommunikation
 
-Ett bra sätt att kommunicera prioriteringar, dela strategidokument och lyfta fram kommande händelser är att använda en kommunikationswebbplats i SharePoint. Kommunikationswebbplatser är till för att dela information som gäller hela företaget eller kampanjen. är din interna strategiwebbplats.
+Ett bra sätt att kommunicera prioriteringar, dela strategidokument och markera kommande evenemang är att använda en kommunikationswebbplats i SharePoint. Kommunikationswebbplatser är till för att dela saker med andra i hela företaget eller kampanjen. är det din interna strategiwebbplats.
 
 ## <a name="best-practices"></a>Metodtips
 
 Ta med följande element på din kommunikationswebbplats:
 
 1. Lägg till din logotyp och dina färger som en rubrikbild och ett tema.
-2. Led med strategi, meddelande, viktiga dokument, en katalog och vanliga frågor och svar i en **Hero-webbdel.**
-3. Ta med en VD eller kandidat till teamet i en **textwebbdel.**
-4. Lägg till händelser i **webbdelen Händelser** så att alla kan se vad som är på gång.
-5. Lägga till foton som andra kan använda eller dela i en **webbdel för bildgalleri.**
+2. Led din strategi, ditt meddelande, viktiga dokument, en katalog och vanliga frågor och svar i en **Hero-webbdel.**
+3. Inkludera en VD eller ett kandidatutdrag i gruppen i en **textwebbdel**.
+4. Lägg till händelser i **en webbdel för** händelser så att alla kan se vad som är på gång.
+5. Lägga till foton som andra kan använda eller dela i en **webbdel av bildgalleriet**.
 
-![Diagram över en sharePoint-kommunikationssida med utrymme för vanliga element som en kampanj kan behöva](../media/m365-democracy-comms-site.png)
+![Diagram över en sida för SharePoint-kommunikation med utrymme för gemensamma element som en kampanj skulle behöva](../media/m365-democracy-comms-site.png)
 
-## <a name="infographic-create-a-communications-site-infographic"></a>Infografik: Skapa infografik för en kommunikationswebbplats
+## <a name="infographic-create-a-communications-site-infographic"></a>Infografik: Skapa en infografik för en kommunikationswebbplats
 
 Följande länkar för PowerPoint och PDF kan laddas ned och skrivas ut i tabloidformat (kallas även huvudbok, 11 x 17 eller A3).
 
-[![Bild för informationsgrafik för kommunikationswebbplatsen](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
+[![Bild för infografik för kommunikationswebbplats](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
 
 [PDF](downloads/M365CampaignsCreateCommunicationSite.pdf)  |  [PowerPoint](downloads/M365CampaignsCreateCommunicationSite.pptx)
 
 ## <a name="set-it-up"></a>Konfigurera
 
 1. Logga in på https://Office.com.
-2. I det övre vänstra hörnet på sidan väljer du startikonen för appen och sedan **SharePoint-panelen.** Om du inte ser **SharePoint-panelen** klickar du på panelen **Webbplatser** eller **Alla** om SharePoint inte visas.
-3. Klicka på **+** Skapa webbplats längst upp på SharePoint-startsidan och välj **alternativet Kommunikationswebbplats.**
+2. Välj ikonen för startprogrammet i sidans övre vänstra hörn och välj sedan panelen **SharePoint.** Om du inte ser panelen **SharePoint** klickar du på panelen **Webbplatser** **eller** Alla om SharePoint inte visas.
+3. Högst upp på startsidan för SharePoint klickar du **på + Skapa webbplats** och väljer alternativet **Kommunikationswebbplats.**
 
-Lär dig [allt om kommunikationswebbplatser](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) och hur [du skapar en kommunikationswebbplats i SharePoint Online.](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb)
+Lär dig [allt om webbplatser för](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) kommunikation och hur du skapar en [kommunikationswebbplats i SharePoint Online.](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb)
 
 ## <a name="admin-settings"></a>Administratörsinställningar
 
-Om du inte ser länken **+ Skapa** webbplats kanske du inte kan skapa webbplatser med självbetjäning i Microsoft 365. Om du vill skapa en gruppwebbplats kontaktar du personen som administrerar Microsoft 365 i din organisation. Om du är Microsoft 365-administratör kan du gå till Hantera webbplatsskapande i [SharePoint Online](https://docs.microsoft.com/sharepoint/manage-site-creation) för att aktivera självbetjäning för att skapa webbplatser för din organisation eller Hantera webbplatser i det nya administrationscentret för [SharePoint](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center) för att skapa en webbplats från administrationscentret för SharePoint Online.  
+Om du inte ser länken **+ Skapa** webbplats kanske du inte kan skapa webbplatser med självbetjäning i Microsoft 365. Om du vill skapa en gruppwebbplats kontaktar du personen som administrerar Microsoft 365 i din organisation. Om du är Microsoft 365-administratör kan du gå till Hantera webbplatsskapande i [SharePoint Online](/sharepoint/manage-site-creation) för att aktivera att webbplatser skapas med självbetjäning för organisationen eller Hantera webbplatser i det nya administrationscentret för [SharePoint](/sharepoint/manage-sites-in-new-admin-center) för att skapa en webbplats från administrationscentret för SharePoint Online.

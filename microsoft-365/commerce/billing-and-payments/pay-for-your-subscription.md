@@ -21,19 +21,19 @@ ms.custom:
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 21aad23b849db76acb1bcc98bb37ff0d8b6fc1ce
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 44cb7b09c76ee5e49d2f556df104e55150212f30
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741451"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911788"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Hur du betalar för din prenumeration
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -76,7 +76,7 @@ Om vi inte kan debitera med den betalningsmetod som är sparad skickar vi ett e-
 
 Om du personligen har lagt till den betalningsmetod som har ett förfallet belopp kan du använda **Reglera saldo** för att göra en betalning. Den betalningsmetod du använder för att betala det försenade beloppet blir den nya betalningsmetoden för alla prenumerationer som har använt den avvisade betalningsmetoden.
 
-1. I administrationscentret går du till sidan **Fakturering** > **Fakturor och betalningar** och välj sedan fliken<a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Betalningsmetoder</a>.
+1. I administrationscentret går du till sidan **Fakturering** > **Fakturor och betalningar** och välj sedan fliken <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Betalningsmetoder</a>.
 1. I ett varningsmeddelande visar vilken betalningsmetod som nekats. Välj **Reglera saldo**.
 1. Välj ett annat betalningssätt i fönstret till höger eller välj **Lägg till en ny betalningsmetod**.
 1. När du har uppdaterat informationen för betalningsmetoden väljer du **Spara**.

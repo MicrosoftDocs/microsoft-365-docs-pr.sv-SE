@@ -24,18 +24,18 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Lär dig skillnaden mellan Microsoft 365 Business Standard och Microsoft 365 Business Premium och hur du kan uppgradera till Microsoft 365 Business Premium.
-ms.openlocfilehash: bdab8165623170926b17efa4cae9408b78a2f5f5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ef3d929164f83d4e48157065eb1ae1d2a1a9452e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401391"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912931"
 ---
 # <a name="upgrade-to-microsoft-365-business-premium-from-microsoft-365-business-standard"></a>Uppgradera till Microsoft 365 Business Premium från Microsoft 365 Business Standard
 
-Om du har en [Prenumeration på Microsoft 365 för företag,](https://products.office.com/compare-all-microsoft-office-products-4-column?activetab=tab:primaryr2)till exempel Microsoft 365 Business Standard, kan du enkelt uppgradera till Microsoft 365 Business Premium. Uppgradera till Microsoft 365 Business Premium om du vill lägga till:
+Om du har en [Microsoft 365](https://products.office.com/compare-all-microsoft-office-products-4-column?activetab=tab:primaryr2)för företag-prenumeration, till exempel Microsoft 365 Business Standard, kan du enkelt uppgradera till Microsoft 365 Business Premium. Uppgradera till Microsoft 365 Business Premium om du vill lägga till:
 
-- Windows 10 Pro (till datorer som kör Windows 8 eller senare)
+- Windows 10 Pro (till datorer med Windows 8 eller senare)
 
 - Enkla kontroller som hanterar affärsdata på enheter
 
@@ -44,55 +44,55 @@ Läs mer om Microsoft 365 Business Premium på [Microsoft.com](https://www.micro
 
 ## <a name="whats-the-difference-between-microsoft-365-business-standard-and-microsoft-365-business-premium"></a>Vad är skillnaden mellan Microsoft 365 Business Standard och Microsoft 365 Business Premium?
 
-Vi har lagt till en jämförelse sida vid sida av dessa två planer i [Microsoft 365 Business Premium Service Description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description). 
+Vi har lagt till en jämförelse sida vid sida av dessa två abonnemang i Tjänstbeskrivning för [Microsoft 365 Business Premium.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) 
 
 ## <a name="before-you-get-started"></a>Innan du börjar
 
-- **När ska jag välja att uppgradera?** Uppgradering är det rätta valet när du vill uppgradera **alla användare** som tilldelats en enda plan. När du väljer uppgradering kopplas alla abonnemangsanvändare till ett annat abonnemang samtidigt. Om du inte vill uppgradera alla som tilldelats ett enda abonnemang köper du licenser för det nya abonnemanget (i det här fallet Microsoft 365 Business Premium) och [tilldelar dessa licenser individuellt](../admin/manage/assign-licenses-to-users.md) till varje användare som du vill uppgradera.
+- **När ska jag välja att uppgradera?** Uppgradera är rätt val när du vill uppgradera alla **användare som tilldelats** ett enda abonnemang. När du väljer uppgradera byter alla abonnemangsanvändare till ett annat abonnemang samtidigt. Om du inte vill uppgradera alla som har tilldelats ett enda abonnemang köper du licenser för det [](../admin/manage/assign-licenses-to-users.md) nya abonnemanget (i det här fallet Microsoft 365 Business Premium) och tilldelar licenserna individuellt till varje användare som du vill uppgradera.
 
-- **Vissa tillägg kan förhindra uppgraderingen** Om du försöker starta en uppgradering och har ett tillägg som hindrar dig från att fortsätta kan du ta bort tillägget först och sedan lägga till det senare om du fortfarande behöver det.
+- **Vissa tillägg kan förhindra uppgraderingen** Om du försöker starta en uppgradering och har ett tillägg som hindrar dig från att fortsätta kan du ta bort tillägget först och sedan lägga till det igen senare om du fortfarande behöver det.
 
-- **Om du förbetald din plan** Det finns inte en enkel uppgraderingsväg för förbetalda planer. Du vet om du har ett förbetalt abonnemang eftersom du har konfigurerat ditt abonnemang med hjälp av ett produkt-ID som du kan ha köpt i en butik. Kontakta en partner, gå till Microsoft Store eller vänta tills ditt förbetalda abonnemang går ut för att byta till ett nytt abonnemang.
+- **Om du har förbetalt abonnemanget** Det finns ingen enkel uppgraderingsväg för förbetalda abonnemang. Du vet om du har ett förbetalt abonnemang eftersom du konfigurerade ditt abonnemang med ett produkt-ID som du kanske har köpt i en butik. Kontakta en partner, gå till Microsoft Store eller vänta tills ditt förbetalda abonnemang går ut om du vill byta till ett nytt abonnemang.
 
 ## <a name="upgrade-to-microsoft-365-business-premium"></a>Uppgradera till Microsoft 365 Business Premium
 
-1. Logga in på administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> .
+1. Logga in i administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> .
 
-2. Gå till navigeringsfönstret och välj **Fakturering** \> **dina produkter**. Hitta din nuvarande prenumeration och välj den för att visa informationen.
+2. Gå till navigeringsfönstret och välj **Fakturering** \> **dina produkter.** Hitta din nuvarande prenumeration och välj den för att visa information.
 
 3. På nästa sida väljer du **Uppgradera**.
 
   > [!NOTE]
-  > Om du ser ett meddelande om att **uppgradera din prenumeration stöds inte med gruppbaserad licensiering i Azure Active Directory**kan du bortse från detta om du inte har en mycket stor organisation. Organisationer som har valt det här alternativet är medvetna om att de använder gruppbaserad licensiering.
+  > Om meddelandet Uppgradera din prenumeration inte stöds med gruppbaserad licensiering i **Azure Active Directory** kan du bortse från detta såvida du inte har en mycket stor organisation. Organisationer som har valt det här alternativet kommer att vara medvetna om att de använder gruppbaserad licensiering.
 
-4. Därefter kan du visa en lista över planer som du kan uppgradera till. Leta reda på Microsoft 365 Business Premium-abonnemanget i det här fallet. Du kan rulla nedåt om du vill se alla appar och tjänster som ingår i den här planen. Under **Microsoft 365 Business Premium**väljer du **Uppgradera** för att lägga till Microsoft 365 Business Premium i kundvagnen.
+4. Sedan kan du visa en lista med planer som du kan uppgradera till. Hitta i så fall Microsoft 365 Business Premium-abonnemanget. Du kan rulla nedåt om du vill se alla program och tjänster som ingår i det här abonnemanget. Under **Microsoft 365 Business Premium** väljer du Uppgradera för **att** lägga till Microsoft 365 Business Premium i kundvagnen.
 
-5. I vagnen:
+5. I kundvagnen:
 
-    1. Vi tar automatiskt med licenser för alla dina nuvarande användare. Om du behöver fler eller färre licenser måste du [köpa och tilldela dessa licenser individuellt.](../admin/manage/assign-licenses-to-users.md)  
-    2. Du kan justera hur du vill betala: månadsvis eller år. Välj den nedrullningsbara menyn för att göra ditt val.
+    1. Vi inkluderar automatiskt licenser för alla dina aktuella användare. Om du behöver fler eller färre licenser måste du köpa och [tilldela licenserna individuellt.](../admin/manage/assign-licenses-to-users.md)  
+    2. Du kan justera hur du vill betala: per månad eller år. Välj listrutan för att göra ditt val.
 
-6. Välj **Gå till kassan** där du ser en sammanfattning av ditt köp, inklusive betalningsmetoden för det här kontot. Du kan också lägga till en kampanjkod här om du har en.
+6. Välj **Gå till kassan** där du ser en sammanfattning av köpet, inklusive betalningsmetoden för det här kontot. Du kan även lägga till en kampanjkod här om du har en.
 
-7. Välj **Beställ för** att slutföra köpet.\
-Det tar Microsoft några minuter att konfigurera dina nya serviceplaner. Om du vill kontrollera förloppet väljer du **Kontrollera uppgraderingsstatus**.
+7. Välj **Lägg order** för att slutföra köpet.\
+Det tar microsoft några minuter att konfigurera dina nya tjänstplaner. Om du vill kontrollera förloppet väljer **du Kontrollera uppgraderingsstatus**.
 
-8. När din plan är klar kan du behöva slutföra ytterligare installationssteg i administrationscentret. I navigeringsfönstret väljer du **Hem** för att slutföra eventuella ytterligare installationssteg.
+8. När abonnemanget är klart kan du behöva slutföra några ytterligare konfigurationssteg i administrationscentret. I navigeringsfönstret väljer du **Start för** att slutföra alla ytterligare konfigurationssteg.
 
 > [!NOTE]
-> Du får en proportionell återbetalning för de Microsoft 365-licenser som du inte längre behöver. Ditt bankkonto eller ditt kreditkort debiteras ungefär två dagar efter att du har konfigurerat det nya abonnemanget.
+> Du får en återbetalning i procent för de Microsoft 365-licenser som du inte längre behöver. Ditt bankkonto eller kreditkort debiteras ungefär två dagar efter att du har angett det nya abonnemanget.
   
 ## <a name="protect-user-devices-and-files"></a>Skydda användarenheter och filer
 
-Nu när Microsoft 365 Business Premium-licenser har tilldelats, gör du några steg för att börja skydda enheter och filer. Du ska använda några nya alternativ som ingår i navigeringsfönstret för administrationscenter.
+Nu när microsoft 365 Business Premium-licenser har tilldelats kan du börja skydda enheter och filer. Du kommer att använda några nya alternativ i navigeringsfönstret i administrationscentret.
   
-1. Gå till Enhetsprinciper i **navigeringsfönstret i administrationscentret.** \> **Policies**
+1. I administrationscentret går du till Principer  för enheter i \> **navigeringsfönstret.**
 
-2. På sidan **Enhetsprinciper** väljer du **Lägg till**.
+2. På sidan **Enhetsprinciper** väljer du Lägg **till**.
 
-3. I fönstret **Lägg till princip** anger du principen ett namn (till exempel Skydda arbetsfiler) och väljer sedan en **principtyp** i listrutan.
+3. I fönstret **Lägg till** princip ger du principen ett namn (till exempel Skydda arbetsfiler) och väljer sedan en **principtyp** i listrutan.
 
-    Du kan ställa in programprinciper för att skydda filer på Android- och iPhone-enheter samt Windows 10, och du kan ställa in enhetskonfigurationsprinciper för företagsägda Windows 10-enheter. Mer information finns i följande länkar:
+    Du kan konfigurera programprinciper för att skydda filer på Android- och iPhone-enheter, samt Windows 10, och du kan konfigurera principer för enhetskonfiguration för företag ägda Windows 10-enheter. Se följande länkar för mer information:
 
     - [Ange inställningar för appskydd för Android- eller iOS-enheter](app-protection-settings-for-android-and-ios.md)
 
@@ -100,10 +100,10 @@ Nu när Microsoft 365 Business Premium-licenser har tilldelats, gör du några s
 
     - [Ange inställningar för enhetsskydd för Windows 10-datorer](protection-settings-for-windows-10-pcs.md)
 
-4. När du har ställt in principer kan du och dina anställda konfigurera enheter:
+4. När du har konfigurerat principer kan du och dina anställda konfigurera enheter:
 
-    - Om dina Windows-enheter inte redan använder uppdateringen Windows Pro Creator måste du [uppgradera dem till Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
+    - Om dina Windows-enheter inte redan använder Windows Pro Creator-uppdateringen måste du uppgradera [dem till Windows Pro Creators Update.](upgrade-to-windows-pro-creators-update.md)
 
-    - Se [Konfigurera Windows-enheter för Microsoft 365 Business Premium-användare](set-up-windows-devices.md) för steg för Windows-enheter.
+    - Instruktioner [för Windows-enheter finns i Konfigurera Windows-enheter för Microsoft 365 Business Premium-användare.](set-up-windows-devices.md)
 
-    - Se [Konfigurera mobila enheter för Microsoft 365 Business Premium-användare](set-up-mobile-devices.md) för steg för Android-telefoner och iPhone.
+    - Instruktioner för Android-telefoner och iPhone finns i Konfigurera mobila enheter för [Microsoft 365 Business](set-up-mobile-devices.md) Premium-användare.

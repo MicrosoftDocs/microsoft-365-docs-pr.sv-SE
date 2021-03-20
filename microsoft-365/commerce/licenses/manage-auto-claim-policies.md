@@ -18,12 +18,12 @@ ms.custom:
 - commerce
 search.appverid:
 - MET150
-ms.openlocfilehash: c1715d2420315c6e645303c959512a45d47fddfe
-ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
+ms.openlocfilehash: bf3f79e425b3f7cd86f1a5ab95a337ef5127e345
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759216"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911478"
 ---
 # <a name="manage-auto-claim-policies"></a>Hantera principer för automatiskt anspråk
 
@@ -43,7 +43,7 @@ När du har skapat en princip för automatiskt anspråk kan du utföra följande
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-Du måste vara global administratör, faktureringsadministratör eller användaradministratör för att kunna skapa och hantera principer för automatiskt anspråk. Mer information finns i [Om Microsoft 365-administratörsroller](../../admin/add-users/about-admin-roles.md).
+Du måste vara global administratör för att skapa och hantera principer för automatiskt anspråk. Mer information finns i [Om Microsoft 365-administratörsroller](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="turn-the-auto-claim-policy-feature-on-or-off"></a>Aktivera eller inaktivera principen för automatiskt anspråk
 

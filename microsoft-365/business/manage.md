@@ -21,53 +21,53 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: Lär dig hantera Microsoft 365 för affärsrelaterade administratörsuppgifter, mobila enheter, Windows 10-datorer och många sådana uppgifter.
-ms.openlocfilehash: 0534356f4ffc4a05504121d96edbc381e00632e9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Lär dig hantera Microsoft 365 för företag-relaterade administratörsuppgifter, mobila enheter, Windows 10-datorer och många sådana uppgifter.
+ms.openlocfilehash: d4136298a1305f12602e0ce258a440dd72e8cd64
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403047"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913183"
 ---
 # <a name="manage-microsoft-365-for-business"></a>Hantera Microsoft 365 för företag
 
-## <a name="general-microsoft-365-for-business-admin-tasks"></a>Allmänna Microsoft 365 för affärsadministratörsuppgifter
+## <a name="general-microsoft-365-for-business-admin-tasks"></a>Allmänna administrativa uppgifter i Microsoft 365 för företag
 
-Det mesta av [administratörsinnehållet](https://docs.microsoft.com/office365/admin/admin-home) för Office 365 gäller även Microsoft 365 för företag.
+Det mesta av [administratörsinnehållet](/office365/admin/admin-home) för Office 365 gäller även Microsoft 365 för företag.
 
-- [Lägga till fler användare i Microsoft 365 för företag](add-users-m365b.md)
+- [Lägga till fler användare i Microsoft 365 för företag](../admin/add-users/add-users.md)
     
 - [Visa principer och enheter](view-policies-and-devices.md)
     
-- [Säkerhetsfunktioner för Microsoft 365 för företag](security-features.md)
+- [Säkerhetsfunktioner i Microsoft 365 för företag](security-features.md)
     
-- [Hur mappar skyddsfunktioner i Microsoft 365 för företag till Intune-inställningar](map-protection-features-to-intune-settings.md)
+- [Hur mappar skyddsfunktioner i Microsoft 365 för företag till Intune-inställningarna](map-protection-features-to-intune-settings.md)
     
-Se följande avsnitt om hur du använder Microsoft 365 för företag för att skydda organisationens data på datorer och mobila enheter.
+I följande avsnitt finns information om hur du använder Microsoft 365 för företag för att skydda organisationens data på datorer och mobila enheter.
   
 ## <a name="manage-mobile-devices"></a>Hantera mobila enheter
 
-- [Konfigurera mobila enheter för Microsoft 365 för företagsanvändare](set-up-mobile-devices.md)
+- [Konfigurera mobila enheter för Microsoft 365 för företag-användare](set-up-mobile-devices.md)
     
 - [Ange inställningar för appskydd för Android- eller iOS-enheter](app-protection-settings-for-android-and-ios.md)
     
-    Kontrollera att detta fungerade [genom att verifiera inställningar för appskydd på en Android- eller iOS-enhet](validate-settings-on-android-or-ios.md). 
+    Kontrollera att det fungerade genom att gå till [Validera programskyddsinställningar på en Android- eller iOS-enhet.](validate-settings-on-android-or-ios.md) 
     
 - [Ta bort företagsdata från enheter](remove-company-data.md)
     
 ## <a name="manage-windows-10-pcs"></a>Hantera Windows 10-datorer
 
-- [Konfigurera Windows-enheter för Microsoft 365 för företagsanvändare](set-up-windows-devices.md)
+- [Konfigurera Windows-enheter för Microsoft 365 för företag-användare](set-up-windows-devices.md)
 
-    Läs [Förbereda för Office-klientdistribution av Microsoft 365 för företag](prepare-for-office-client-deployment.md) innan du installerar Office automatiskt. 
+    Läs [Förbereda Office-distribution genom Microsoft 365 för företag](prepare-for-office-client-deployment.md) innan du installerar Office automatiskt. 
     
 - [Ange inställningar för enhetsskydd för Windows 10-enheter](protection-settings-for-windows-10-pcs.md)
     
-    Kontrollera att detta fungerade [genom att verifiera inställningar för enhetsskydd på Windows 10-enheter](validate-settings-on-windows-10-pcs.md). 
+    Kontrollera att det fungerade genom att gå till [Validera inställningar för enhetsskydd på Windows 10-enheter.](validate-settings-on-windows-10-pcs.md) 
     
 - [Ange programskyddsinställningar för Windows 10-enheter](protection-settings-for-windows-10-devices.md)
     
-    Kontrollera att detta fungerade [genom att verifiera inställningar för appskydd på Windows 10-datorer](validate-protection-settings-on-windows-10-pcs.md). 
+    Kontrollera att det fungerade genom att gå [till Validera programskyddsinställningar på datorer med Windows 10.](validate-protection-settings-on-windows-10-pcs.md) 
     
 - [Ta bort företagsdata från enheter](remove-company-data.md)
     
@@ -89,14 +89,14 @@ I följande avsnitt beskrivs hur du kan använda Windows AutoPilot i Microsoft 3
     
 - [Om AutoPilot-profilinställningar](autopilot-profile-settings.md)
     
-## <a name="set-up-and-prerequisite-information"></a>Ställ in och nödvändig information
+## <a name="set-up-and-prerequisite-information"></a>Konfigurera och ange information som krävs
 
-- [Förutsättningar för att skydda data på enheter med Microsoft 365 för företag](pre-requisites-for-data-protection.md)
+- [Krav för att skydda data på enheter med Microsoft 365 för företag](pre-requisites-for-data-protection.md)
     
 - [Konfigurera Microsoft 365 för företag med hjälp av installationsguiden](set-up.md)
     
 - [Migrera till Microsoft 365 för företag](migrate-to-microsoft-365-business.md)
     
-- [Aktivera domänanslutna Windows 10-enheter som ska hanteras av Microsoft 365 för företag](manage-windows-devices.md)
+- [Aktivera att domän anslutna Windows 10-enheter hanteras av Microsoft 365 för företag](manage-windows-devices.md)
     
 - [Ytterligare säkerhetsfunktioner](security-features.md#additional-security-features)

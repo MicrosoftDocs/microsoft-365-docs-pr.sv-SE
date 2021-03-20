@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 description: Lär dig att läsa och förstå fakturan för Microsoft företagsprodukter.
 keywords: faktureringskonton, organisationsinformation, fakturor
-ms.openlocfilehash: 521ef49e7f2292f8ea09210fb0edcce0d56e1b76
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 2b11cca810b17ae2dacc3ddab723725608ffceb5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126579"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911704"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Förstå din faktura
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -60,13 +60,13 @@ Längst upp på den första sidan ser du vilka som är ansvariga för betalning,
 | --- | --- |
 | Debitering|Det totala antalet produkter som köpts för denna faktureringsperiod och deras kostnader och moms. Köpet aggregeras för att ge en kortfattad översikt över fakturan. |
 | Krediter |Krediter som du fått från returer |
-| Tillämpade Azure-kredit |Dina Azure-krediter tillämpas automatiskt på Azure avgifter varje faktureringsperiod. Om du inte har några Azure-krediter är det här fältet dolt. Mer information om Azure-krediter finns i [Spåra Azure kreditbalans för Microsoft-kundavtal](https://docs.microsoft.com/azure/billing/billing-mca-check-azure-credits-balance). |
+| Tillämpade Azure-kredit |Dina Azure-krediter tillämpas automatiskt på Azure avgifter varje faktureringsperiod. Om du inte har några Azure-krediter är det här fältet dolt. Mer information om Azure-krediter finns i [Spåra Azure kreditbalans för Microsoft-kundavtal](/azure/billing/billing-mca-check-azure-credits-balance). |
 | Delsumma |Totala beloppet före moms |
 | Moms |Typen av och beloppet för den moms som du betalar, beroende på landet i din faktureringsprofil. Om du inte behöver betala moms visas ingen moms på fakturan. |
 
 ### <a name="understand-your-charges"></a>Förstå dina avgifter
 
-Avgiftssidorna visar kostnaden uppdelad efter produkt. För Azure-kunder kan avgifterna vara ordnade efter fakturaavsnitten. Mer information om hur fakturaavsnitt används med Azure-produkter finns i avsnittet [Fakturaavsnitt](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections) i [Komma igång med ditt faktureringskonto för Microsoft-kundavtal](https://docs.microsoft.com/azure/billing/billing-mca-overview). Inom varje produktordning delas kostnaden upp efter tjänstefamilj.
+Avgiftssidorna visar kostnaden uppdelad efter produkt. För Azure-kunder kan avgifterna vara ordnade efter fakturaavsnitten. Mer information om hur fakturaavsnitt används med Azure-produkter finns i avsnittet [Fakturaavsnitt](/azure/billing/billing-mca-overview#invoice-sections) i [Komma igång med ditt faktureringskonto för Microsoft-kundavtal](/azure/billing/billing-mca-overview). Inom varje produktordning delas kostnaden upp efter tjänstefamilj.
 
 | Term |Beskrivning |
 | --- | --- |
@@ -86,7 +86,7 @@ Det totala beloppet som ska betalas för varje tjänstefamilj beräknas genom at
 
 > Summa = avgifter/kredit – Azure kredit + moms
 
-Om du vill ha mer information om din Azure-avgifter på din faktura går du till [Granska faktura för Microsoft-kundavtal](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
+Om du vill ha mer information om din Azure-avgifter på din faktura går du till [Granska faktura för Microsoft-kundavtal](/azure/cost-management-billing/understand/review-customer-agreement-bill).
 
 ## <a name="understand-the-last-invoice-page"></a>Förstå den sista fakturasidan
 

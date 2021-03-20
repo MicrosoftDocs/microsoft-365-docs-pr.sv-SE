@@ -1,5 +1,5 @@
 ---
-title: Konfigurera Skype för företag för lokal användning av hybrid modern
+title: Så här konfigurerar du lokal Skype för företag för användning av modern hybridautentisering
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -15,128 +15,128 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Lär dig hur du konfigurerar Skype för företag lokalt för användning av hybrid modern autentisering (HMA) och ger dig säkrare autentisering och verifiering.
+description: Läs om hur du konfigurerar Skype för företag lokalt för att använda modern hybridautentisering (HMA), som ger dig säkrare användarautentisering och auktorisering.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 74c8e3e0514fbfd8779c2f65e9c541c33b281c59
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f3177bafb6eff27053dca61ec576666cae4a97bb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695032"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911156"
 ---
-# <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Konfigurera Skype för företag för lokal användning av hybrid modern
+# <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Så här konfigurerar du lokal Skype för företag för användning av modern hybridautentisering
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Modern autentisering, är en metod för identitets hantering som erbjuder säkrare användar verifiering och-auktorisering, och är tillgänglig för Skype för företag-Server lokalt och Exchange Server lokalt samt för delade domän-domäner med hybrider.
+Modern autentisering är en metod för identitetshantering som ger säkrare användarautentisering och auktorisering. Den är tillgänglig för Skype för företag – server lokalt och Lokal Exchange-server samt Skype för företag-hybrider med delad domän.
   
- **Viktigt** Vill du veta mer om modern inloggningsautentisering (MA) och varför du föredrar att använda den i ditt företag eller din organisation? Kontrol lera [detta dokument](hybrid-modern-auth-overview.md) för en översikt. Om du behöver veta vad topologierna för Skype för företag fungerar tillsammans med MA är det dokumenterat här!
+ **Viktigt** Vill du veta mer om modern autentisering (MA) och varför du kanske vill använda den i ditt företag eller din organisation? Titta [i det här dokumentet](hybrid-modern-auth-overview.md) för en översikt. Om du behöver veta vilka Topologier i Skype för företag som stöds med ma finns det information här!
   
- **Innan vi börjar**följer jag de här villkoren:
+ **Innan vi börjar** använder jag följande termer:
   
-- Modern (MA)
+- Modern autentisering (MA)
 
-- Hybrid modern (HMA)
+- Modern hybridautentisering (HMA)
 
-- Exchange On-premises (VALUTAKURS)
+- Lokal Exchange (EXCH)
 
 - Exchange Online (EXO)
 
-- Skype för företag – lokalt (SFB)
+- Skype för företag lokalt (SFB)
 
 - Skype för företag – Online (SFBO)
 
-Om en bild i den här artikeln har ett objekt som är nedtonat eller nedtonat innebär det att elementet som visas i grått **inte** ingår i valfri konfiguration.
+Om en bild i den här artikeln har ett objekt som är nedtonat  eller nedtonat, vilket innebär att det element som visas med grått inte ingår i MA-specifik konfiguration.
   
-## <a name="read-the-summary"></a>Läsa sammanfattningen
+## <a name="read-the-summary"></a>Läs sammanfattningen
 
-Den här sammanfattningen delar upp processen i steg som annars skulle förloras under körningen, och det är bra för en övergripande check lista för att hålla reda på var du befinner dig.
+Den här sammanfattningen bryter ned processen i steg som annars skulle kunna gå förlorade under körningen, och är bra för en övergripande checklista för att hålla reda på var du befinner dig i processen.
   
-1. Kontrol lera först att du uppfyller alla förutsättningar.
+1. Kontrollera först att du uppfyller alla krav.
 
-1. Eftersom många **förutsättningar** är vanliga för både Skype för företag och Exchange kan du [läsa översikts artikeln för din check lista för krav](hybrid-modern-auth-overview.md). Gör det  *innan*  du följer anvisningarna i den här artikeln.
+1. Eftersom det finns många krav som är gemensamma för både Skype för företag och Exchange kan du läsa **översiktsartikeln** för [din checklista för tidigare frågor.](hybrid-modern-auth-overview.md) Gör detta  *innan*  du påbörjar något av stegen i den här artikeln.
 
-1. Samla in den HMA-specifika information du behöver i en fil eller i OneNote.
+1. Samla in HMA-specifik information som du behöver i en fil eller OneNote.
 
-1. Aktivera modern EXO (om den inte redan är aktive rad).
+1. Aktivera modern autentisering för EXO (om det inte redan är aktiverat).
 
-1. Aktivera modern SFBO (om den inte redan är aktive rad).
+1. Aktivera modern autentisering för SFBO (om det inte redan är aktiverat).
 
-1. Aktivera hybrid modern inloggning för Exchange lokal.
+1. Aktivera modern hybridautentisering för Exchange lokalt.
 
-1. Aktivera hybrid modern inloggning för Skype för företag lokalt.
+1. Aktivera modern hybridautentisering för skype för företag lokalt.
 
-De här stegen aktiverar MA för SFB, SFBO, VALUTAKURS och EXO-det vill säga alla produkter som kan delta i en HMA-konfiguration för SFB och SFBO (inklusive beroenden på polyEXO). Med andra ord kommer den färdiga produkten att se ut så här om användarna är hemifrån/har post lådor som har skapats i en del av hybriden (EXO + SFBO, EXO + SFB, Poly+ SFBO eller Poly+ SFB):
+Dessa steg aktiverar MA för SFB, SFBO, EXCH och EXO – det vill säga alla produkter som kan ingå i HMA-konfigurationen av SFB och SFBO (inklusive beroenden på EXCH/EXO). Med andra ord, om användarna finns i/har postlådor skapade i någon del av Hybrid (EXO + SFBO, EXO + SFB, EXCH + SFBO eller EXCH + SFB), kommer din färdiga produkt att se ut så här:
   
-![En 6-Topology-topologi med sex Skype för företag har MA på alla fyra möjliga platser.](../media/ab89cdf2-160b-49ac-9b71-0160800acfc8.png)
+![En mixed 6 Skype för företag HMA-topologi har MA på i alla fyra möjliga platser.](../media/ab89cdf2-160b-49ac-9b71-0160800acfc8.png)
   
-Som du ser finns det fyra olika ställen att slå på MA! För att det ska fungera så bra som möjligt rekommenderar vi att du aktiverar MA på alla fyra av dessa platser. Om du inte kan aktivera MA på alla de här platserna, justera stegen så att endast MA visas på de platser som behövs för din miljö.
+Som du ser finns det fyra olika platser att aktivera MA! För bästa användarupplevelse rekommenderar vi att du aktiverar MA på alla fyra av dessa platser. Om du inte kan aktivera MA på alla de här platserna justerar du stegen så att du aktiverar MA endast på de platser som krävs för din miljö.
   
-Se [Support för Skype för företag med ma](https://technet.microsoft.com/library/mt803262.aspx) för topologier som stöds.
+Se avsnittet [Support för Skype för företag med MA för](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported) topologier som stöds.
   
- **Viktigt** Kontrol lera att du har uppfyllt alla förutsättningar innan du börjar. Informationen finns i [hybrid modern verifiering och förutsättningar](hybrid-modern-auth-overview.md).
+ **Viktigt** Kontrollera att du har uppfyllt alla krav innan du börjar. Du hittar den informationen i Översikt över [och förutsättningar för modern hybridautentisering.](hybrid-modern-auth-overview.md)
   
-## <a name="collect-all-hma-specific-info-youll-need"></a>Samla in alla HMA-specifika uppgifter du behöver
+## <a name="collect-all-hma-specific-info-youll-need"></a>Samla in all HMA-specifik information som du behöver
 
-När du har dubbelt kontrollerat att du uppfyller [kraven](hybrid-modern-auth-overview.md) för att använda modern verifiering (se anvisningarna ovan), bör du skapa en fil som innehåller den information du behöver för att konfigurera HMA i stegen ovan. Exempel som används i den här artikeln:
+När du har dubbelkollat att [](hybrid-modern-auth-overview.md) du uppfyller kraven för att använda modern autentisering (se anmärkningen ovan) bör du skapa en fil som innehåller den information du behöver för att konfigurera HMA i stegen som ligger före. Exempel som används i den här artikeln:
   
-- **SIP-domän**
+- **SIP-/SMTP-domän**
 
-  - Hand. contoso.com (är sammanslaget med Office 365)
+  - Exempel. contoso.com (är extern från Office 365)
 
-- **Klient-ID**
+- **Klientorganisations-ID**
 
-  - GUID som representerar din Office 365-klient (vid inloggningen på contoso.onmicrosoft.com).
+  - DET GUID som representerar din Office 365-klientorganisation (vid inloggningen contoso.onmicrosoft.com).
 
-- **Webb adresser för SFB 2015 CU5**
+- **SFB 2015 CU5 WEBBTJÄNST-URL:er**
 
-du behöver interna och externa webb tjänst-URL: er för alla SfB 2015-pooler distribuerade. För att få dessa kan du köra följande från Skype för företag Management Shell:
+Du behöver interna och externa webbtjänst-URL:er för alla SfB 2015-pooler distribuerade. Hämta dessa genom att köra följande från Skype för företag Management Shell:
   
 ```powershell
 Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | FL
 ```
 
-- Hand. Intern https://lyncwebint01.contoso.com
+- Exempel. Internt: https://lyncwebint01.contoso.com
 
-- Hand. 5,25 https://lyncwebext01.contoso.com
+- Exempel. Externt: https://lyncwebext01.contoso.com
 
-Om du använder en standard server för Edition är den interna URL-adressen tom. I det här fallet ska du använda pool-FQDN för den interna URL-adressen.
+Om du använder en Standard Edition-server är den interna URL:en tom. I det här fallet ska du använda poolens fqdn för den interna URL:en.
   
-## <a name="turn-on-modern-authentication-for-exo"></a>Aktivera modern EXO
+## <a name="turn-on-modern-authentication-for-exo"></a>Aktivera modern autentisering för EXO
 
-Följ anvisningarna här: [Exchange Online: så här aktiverar du en klient organisation för modern verifikation.](https://social.technet.microsoft.com/wiki/contents/articles/32711.exchange-online-how-to-enable-your-tenant-for-modern-authentication.aspx)
+Följ anvisningarna här: [Exchange Online: Så här aktiverar du klientorganisationen för modern autentisering.](https://social.technet.microsoft.com/wiki/contents/articles/32711.exchange-online-how-to-enable-your-tenant-for-modern-authentication.aspx)
   
-## <a name="turn-on-modern-authentication-for-sfbo"></a>Aktivera modern SFBO
+## <a name="turn-on-modern-authentication-for-sfbo"></a>Aktivera modern autentisering för SFBO
 
-Följ anvisningarna här: [Skype för företag – online: aktivera din klient organisation för modern verifikation](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
+Följ anvisningarna här: [Skype för företag – Online: Aktivera modern autentisering för klientorganisationen.](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)
   
-## <a name="turn-on-hybrid-modern-authentication-for-exchange-on-premises"></a>Aktivera hybrid modern inloggning för Exchange lokalt
+## <a name="turn-on-hybrid-modern-authentication-for-exchange-on-premises"></a>Aktivera modern hybridautentisering för Exchange lokalt
 
-Följ anvisningarna här: [så här konfigurerar du Exchange Server lokalt för användning av hybrid modern](configure-exchange-server-for-hybrid-modern-authentication.md).
+Följ anvisningarna här: [Konfigurera lokal Exchange Server för användning av modern hybridautentisering.](configure-exchange-server-for-hybrid-modern-authentication.md)
   
-## <a name="turn-on-hybrid-modern-authentication-for-skype-for-business-on-premises"></a>Aktivera hybrid modern inloggningsautentisering för Skype för företag – lokalt
+## <a name="turn-on-hybrid-modern-authentication-for-skype-for-business-on-premises"></a>Aktivera modern hybridautentisering för Skype för företag lokalt
 
-### <a name="add-on-premises-web-service-urls-as-spns-in-azure-active-directory"></a>Lägga till lokala webb tjänst-URL-adresser i Azure Active Directory
+### <a name="add-on-premises-web-service-urls-as-spns-in-azure-active-directory"></a>Lägga till lokala webbtjänst-URL:er som SPN i Azure Active Directory
 
-Nu måste du köra kommandon för att lägga till URL-adresserna (samlas in tidigare) som tjänst huvud objekt i SFBO.
+Nu måste du köra kommandon för att lägga till URL-adresser (som samlats in tidigare) som tjänsthuvudnamn i SFBO.
   
- **Obs!** SPN (tjänstens huvud namn) identifiera webb tjänster och koppla dem till ett säkerhets objekt (till exempel ett konto namn eller en grupp) så att tjänsten kan agera för en behörig användares räkning. Klienter som autentiserar sig på en server använder information som finns i SPN.
+ **Obs!** Service principal names (SPNs) identifierar webbtjänster och associerar dem med ett säkerhetshuvudnamn (t.ex. ett kontonamn eller en grupp) så att tjänsten kan agera för en behörig användares räkning. Klienter som autentiserar på en server använder information som finns i SPNs.
   
-1. Börja med att ansluta till Azure Active Directory (Azure AD) med [dessa instruktioner](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0).
+1. Börja med att ansluta till Azure Active Directory (Azure AD) med [de här instruktionerna.](/powershell/azure/active-directory/overview?view=azureadps-1.0)
 
-2. Kör det här kommandot lokalt för att få en lista med webb adresserna för SFB web service.
+2. Kör det här kommandot lokalt för att få en lista över SFB-webbtjänstwebbwebbadresser.
 
-   Observera att AppPrincipalId börjar med `00000004` . Detta motsvarar Skype för företag – online.
+   Observera att AppPrincipalId börjar med `00000004` . Detta motsvarar Skype för företag – Online.
 
-   Notera (och skärm bild för senare jämförelse) utdata för det här kommandot, som innehåller ett SE-och en URL-adress, men som till exempel består av de SPN som börjar med `00000004-0000-0ff1-ce00-000000000000/` .
+   Notera (och skärmbilder för senare jämförelser) utdata för det här kommandot, som innehåller en SE- och WS-URL, men oftast består av SPN som börjar med `00000004-0000-0ff1-ce00-000000000000/` .
 
 ```powershell
 Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
 ```
 
-3. Om de interna **eller** externa SFB URL-adresser från lokala användare saknas (till exempel https://lyncwebint01.contoso.com och https://lyncwebext01.contoso.com) vi måste lägga till dessa specifika poster i den här listan.
+3. Om de interna **eller** externa SAB-URL:erna från den lokala platsen saknas (till exempel, och vi måste lägga till de specifika https://lyncwebint01.contoso.com https://lyncwebext01.contoso.com) posterna i den här listan.
 
-    Se till att du ersätter  *exemplen* nedan med dina faktiska URL-adresser i kommandona Add!
+    Se till att ersätta  *exempeladresserna nedan* med dina faktiska URL:er i Lägg till kommandon!
   
 ```powershell
 $x= Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000
@@ -145,9 +145,9 @@ $x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
   
-4. Verifiera att de nya posterna har lagts till genom att köra kommandot **Get-MsolServicePrincipal** från steg 2 igen och titta igenom resultatet. Jämför listan eller skärm bilden från den nya listan med SPN-objekt. Du kan också Skärmdumpa den nya listan för posterna. Om du lyckades ser du de två nya URL-adresserna i listan. I vårt exempel kommer listan med SPN att inkludera specifika URL: er https://lyncwebint01.contoso.com och https://lyncwebext01.contoso.com/ .
+4. Kontrollera att dina nya poster har lagts till genom att köra **kommandot Get-MsolServicePrincipal** från steg 2 igen och titta igenom utdata. Jämför listan eller skärmbilden före med den nya listan med SPN. Du kan även skärmbilda den nya listan för dina poster. Om det lyckades visas de två nya webbadresserna i listan. Om vi går igenom exemplet innehåller listan med SPN nu specifika URL:er https://lyncwebint01.contoso.com och https://lyncwebext01.contoso.com/ .
 
-### <a name="create-the-evosts-auth-server-object"></a>Skapa EvoSTS
+### <a name="create-the-evosts-auth-server-object"></a>Create the UndersTS Auth Server-objektet
 
 Kör följande kommando i Skype för företag Management Shell.
   
@@ -155,28 +155,28 @@ Kör följande kommando i Skype för företag Management Shell.
 New-CsOAuthServer -Identity evoSTS -MetadataURL https://login.windows.net/common/FederationMetadata/2007-06/FederationMetadata.xml -AcceptSecurityIdentifierInformation $true -Type AzureAD
 ```
 
-### <a name="enable-hybrid-modern-authentication"></a>Aktivera hybrid modern
+### <a name="enable-hybrid-modern-authentication"></a>Aktivera modern hybridautentisering
 
-Det här steget vänder sig faktiskt till MA. Alla föregående steg kan köras i förväg utan att klientens autentiseringspaket ändras. När du är redo att ändra autentiseringsläget kör du det här kommandot i Skype för företag Management Shell.
+Det här är det steg som faktiskt aktiverar ma. Alla tidigare steg kan köras i förväg utan att ändra klientautentiseringsflödet. När du är redo att ändra autentiseringsflödet kör du det här kommandot i Skype för företag Management Shell.
 
 ```powershell
 Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
 ```
 
-## <a name="verify"></a>Kontroll
+## <a name="verify"></a>Verifiera
 
-När du har aktiverat HMA använder klientens nästa inloggning det nya trafikflödet. Observera att när du bara aktiverar HMA utlöses ingen reauktorisering för någon klient. Klienterna autentiseras baserat på de auth-token och/eller certifikat de har.
+När du har aktiverat HMA används det nya autentiseringsflödet för klientens nästa inloggning. Observera att endast aktivera HMA utlöser inte en nyauthentication för någon klient. Klienterna återauthenticate baserat på livslängden för autentiseringstoken och/eller certifikat de har.
   
-Testa att HMA fungerar när du har aktiverat det genom att logga ut från en test SFB Windows-klient och klicka på "ta bort mina autentiseringsuppgifter". Logga in igen. Klienten bör nu använda moderna auth-flödet och din inloggning innehåller nu en **Office 365** -uppmaning för ett "jobb-eller skol konto" som visas direkt innan klienten kontaktar servern och loggar in dig.
+Om du vill testa att HMA fungerar efter att du har aktiverat det loggar du ut från en TEST SFB Windows-klient och klickar på "ta bort mina autentiseringsuppgifter". Logga in igen. Klienten ska nu använda flödet modern a auth och din inloggning kommer nu att innehålla en **Office 365-uppmaning** om ett arbets- eller skolkonto, som visas direkt innan klienten kontaktar servern och loggar in dig.
   
-Du bör också kontrol lera "konfigurations information" för Skype för företag-klienter för en "OAuth-auktoritet". Om du vill göra det på klient datorn håller du ned CTRL samtidigt som du högerklickar på ikonen Skype för företag i meddelande fältet i Windows. Klicka på **konfigurations information** i menyn som visas. I fönstret Skype för företag-konfigurations information som visas på Skriv bordet letar du upp följande:
+Du bör också kontrollera "Konfigurationsinformation" för Skype för företag-klienter för en OAuth-myndighet. Om du vill göra detta på din klientdator håller du ned CTRL-tangenten samtidigt som du högerklickar på Skype för företag-ikonen i meddelandefältet i Windows. Klicka **på Konfigurationsinformation** i menyn som visas. I fönstret Konfigurationsinformation för Skype för företag som visas på skrivbordet letar du efter följande:
   
-![Konfigurations informationen för en Skype för företag-klient med modern autentisering visar en Lync-och EWS OAUTH Authority-URL till https://login.windows.net/common/oauth2/authorize .](../media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
+![Konfigurationsinformationen för en Skype för företag-klient med modern autentisering visar en URL till Lync och EWS OAUTH Authority för https://login.windows.net/common/oauth2/authorize .](../media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
   
-Håll ned CTRL-tangenten samtidigt som du högerklickar på ikonen för Outlook-klienten (också i Windows Notifications-fältet) och klicka på "anslutnings status". Leta efter klientens SMTP-adress mot authn-typen "Bearer \* ", som representerar Bearer-token som används i OAuth.
+Du bör också hålla ned CTRL-tangenten samtidigt som du högerklickar på ikonen för Outlook-klienten (även i systemfältet Windows-meddelanden) och klickar på "Anslutningsstatus". Leta efter klientens SMTP-adress mot autentiseringstypen "Bearer", som representerar den bearer-token som används \* i OAuth.
   
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Länka tillbaka till den moderna verifikations översikten](hybrid-modern-auth-overview.md).
+[Länka tillbaka till översikten över Modern autentisering.](hybrid-modern-auth-overview.md)
   
-Behöver du veta hur du använder modern inloggningsautentisering (ADAL) för dina Skype för företag-klienter? Det finns anvisningar [här](https://technet.microsoft.com/library/mt710548.aspx).
+Behöver du veta hur du använder modern autentisering (ADAL) för dina Skype för företag-klienter? Vi har steg [här](./hybrid-modern-auth-overview.md).

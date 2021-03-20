@@ -20,12 +20,12 @@ search.appverid:
 description: Läs mer om funktionerna i Microsoft 365 Business Premium.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 2183c3c865b618d71e15b366f7eaed091101bbc7
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: b92e3790e83c5da62d65e6c98bf448d33862df54
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421629"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913544"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 
@@ -46,4 +46,4 @@ När du registrerar dig för Microsoft 365 Business Premium får du alla produkt
 | Skydda dina enheter | Du kan skydda dina arbetsfiler på enheter genom att begränsa mobil åtkomst, t. ex. kopiera och klistra in. Du kan också välja att radera affärsdata från registrerade mobila enheter om de försvinner eller blir stulna. |
 | Ytterligare säkerhetsfunktioner | Avancerade funktioner i Microsoft 365 Business Premium är tillgängliga för att skydda ditt företag mot cyberhot och skydda känslig information. Funktionerna omfattar Office 365 Avancerat skydd, principer för skydd mot dataförlust (DLP), Exchange Online-arkivering, Azure Information Protection och Intune. |
 
-Fullständiga detaljer finns i [Microsoft 365 Business-innehåll](https://docs.microsoft.com/microsoft-365/business/).
+Fullständiga detaljer finns i [Microsoft 365 Business-innehåll](../business/index.yml).

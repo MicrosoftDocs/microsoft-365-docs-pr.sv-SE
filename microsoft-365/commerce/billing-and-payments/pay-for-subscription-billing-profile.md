@@ -1,5 +1,5 @@
 ---
-title: Betala för din prenumeration med en faktureringsprofil
+title: Betala för prenumerationen med en faktureringsprofil
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,54 +19,54 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 15feb1b806b46d147d427256ce2416ea75b48bbe
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 750420b6fac8fff16130710ef96a9ceb6345a87a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50143191"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911836"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>Så här betalar du för prenumerationen med en faktureringsprofil
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
 När du köper en prenumeration betalar du för den med en faktureringsprofil. Faktureringsprofilen är länkad till ett visst betalningssätt och kan vara ett kreditkort eller betalkort, eller en faktura, men inte ett bankkonto.
 
-Om du är osäker på om ditt konto har en faktureringsprofil kan du gå till [Förstå faktureringsprofiler.](manage-billing-profiles.md) Om du inte har en faktureringsprofil kan du läsa [om hur du betalar för prenumerationen.](pay-for-your-subscription.md)
+Om du är osäker på om kontot har en faktureringsprofil kan du gå till [Förstå faktureringsprofiler](manage-billing-profiles.md). Om du inte har en faktureringsprofil kan du läsa [mer i Så här betalar du för din prenumeration.](pay-for-your-subscription.md)
 
-## <a name="paying-with-recurring-billing-turned-on-or-off"></a>Betalning med återkommande fakturering aktiverat eller inaktiverat
+## <a name="paying-with-recurring-billing-turned-on-or-off"></a>Betalning med återkommande fakturering är aktiverat eller inaktiverat
 
-Som standard är automatisk förnyelse aktiverat för alla betalda prenumerationer som använder återkommande fakturering. Varje faktureringsperiod debiterar vi automatiskt betalningsmetoden som är kopplad till faktureringsprofilen för att betala för alla prenumerationer som använder den faktureringsprofilen. Om din betalningsmetod nekas kan  du använda knappen Betala nu på fakturan för att göra en betalning som bara gäller för din prenumeration.
+Som standard är automatisk förnyelse aktiverat för alla betalda prenumerationer som använder återkommande fakturering. Varje faktureringsperiod debiterar vi automatiskt betalningsmetoden som är kopplad till faktureringsprofilen för att betala för prenumerationer som använder den faktureringsprofilen. Om betalningsmetoden nekas kan du använda **knappen Betala** nu på fakturan för att göra en betalning för prenumerationen.
 
-Om återkommande fakturering är inaktiverat för en  faktureringsprofil kan du använda knappen Betala nu på fakturan för att betala för den varje faktureringsperiod, oavsett vilken betalningsmetod som är länkad till faktureringsprofilen. Du kan också betala med check eller med elektronisk betalningsöverföring (EFT). Anvisningar för hur du gör det finns i PDF-kopian av fakturan.
+Om du har inaktiverat återkommande fakturering för  en faktureringsprofil kan du använda knappen Betala nu på fakturan för att betala för varje faktureringsperiod, oavsett vilken betalningsmetod som är länkad till faktureringsprofilen. Du kan också betala med check eller via elektronisk betalningsöverföring (EFT). Anvisningar för hur du gör det finns i PDF-kopian av fakturan.
 
 ## <a name="paying-by-invoice"></a>Betala med faktura
 
-Om du har en faktureringsprofil som är inställd på att betalas med faktura kan du betala för prenumerationen med en check eller EFT. Du kan också använda ett kreditkort för att göra en onlinebetalning med hjälp av **knappen Betala** nu på fakturan.
+Om du har en faktureringsprofil som är inställd att betalas med faktura kan du betala för prenumerationen med check eller EFT. Du kan också använda ett kreditkort för att göra en onlinebetalning med hjälp av **knappen Betala** nu på fakturan.
 
-För att vara berättigad till betalning med faktura måste du:
+För att kunna betala med faktura måste du:
 
-- Bli en etablerade kund
-- Har en prenumerationskostnad som överskrider ett visst belopp (beloppet varierar beroende på tjänstplats)
-- Godkänd kreditkontroll
+- Vara en etablerad kund
+- Ha en prenumerationskostnad som överskrider ett visst belopp (beloppet varierar beroende på tjänstplats)
+- Bli godkänd i en kreditkontroll
 
-Om det krävs en kreditkontroll får du ett meddelande när du köper prenumerationen. Om du godkänner att bli kontaktad får du ett e-postmeddelande med mer information om hur du ansöka om kreditgodkännande. Kreditkontroller utförs vanligtvis inom två arbetsdagar.
+Om en kreditkontroll krävs meddelas du när du köper prenumerationen. Om du godkänner att bli kontaktad får du ett e-postmeddelande som innehåller mer information om hur du ansöker om kreditgodkännande. Kreditkontroller utförs vanligtvis inom två arbetsdagar.
 
-Om din faktureringsprofil är säkerhetskopierad med en faktura får du ett e-postmeddelande när faktureringsutdraget är klart att visa. Det här e-postmeddelandet innehåller inte en kopia av ditt faktureringsutdrag. Du kan däremot välja att få [en kopia av faktureringsutdraget via e-post.](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email) Faktureringsutdraget innehåller information om alternativen för att göra en betalning och vart du skickar den. Om du anger ett inköpsordernummer i faktureringsprofilen visas numret på faktureringsutdraget. Information om hur du visar faktureringsutdrag finns i [Visa din faktura](view-your-bill-or-invoice.md).
+Om faktureringsprofilen säkerhetskopieras med en faktura får du ett e-postmeddelande när faktureringsutdraget är klart att visa. Det här e-postmeddelande innehåller inte en kopia av ditt faktureringsutdrag. Men du kan välja att [få en kopia av ditt faktureringsutdrag via e-post](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). På ditt faktureringsutdrag finns information om olika betalningsalternativ och vart du ska skicka det. Om du anger ett inköpsordernummer i faktureringsprofilen visas numret på faktureringsutdraget. Information om hur du visar faktureringsutdrag finns i [Visa din faktura](view-your-bill-or-invoice.md).
 
-## <a name="where-do-i-send-my-check-or-eft-payment"></a>Var skickar jag min check- eller EFT-betalning?
+## <a name="where-do-i-send-my-check-or-eft-payment"></a>Vart skickar jag min check- eller EFT-betalning?
 
-[Kontrollera din faktura](view-your-bill-or-invoice.md) för betalningsinstruktioner. Du kan också använda listrutan nedan för att hitta betalningsinstruktioner för ditt land. Om du är osäker på hur mycket du är skyldig kan  du kontrollera din faktura och faktureringshistorik online på fliken Fakturor på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fakturor & betalningar.</a>
+[Kontrollera din faktura](view-your-bill-or-invoice.md) för betalningsinstruktioner. Du kan också använda listrutan nedan för att hitta betalningsinstruktioner för ditt land. Om du är osäker på hur mycket du är skyldig kan du kontrollera din faktura och faktureringshistorik online på fliken **Fakturor** på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fakturor och betalningar</a>.
 
 > [!NOTE]
-> Betalning med check är endast tillgängligt i ett fåtal länder.
+> Betalning med check är endast tillgängligt i ett fåtal länder/regioner.
 
- **Välj land eller region för fakturering i listrutan nedan.**
+ **Välj land eller region för fakturering i listmenyn nedan.**
 
 > [!div class="op_single_selector"]
 > - **Välj land eller region**
@@ -224,18 +224,18 @@ Om din faktureringsprofil är säkerhetskopierad med en faktura får du ett e-po
 
 ## <a name="can-i-pay-my-invoice-online"></a>Kan jag betala fakturan online?
 
-Om återkommande fakturering är inaktiverat för din faktureringsprofil kan du använda ett kreditkort för att betala fakturan online. Om du vill göra en betalning använder **du knappen Betala** nu på fakturan i administrationscentret för Microsoft 365. Information om hur du hittar din faktura [finns i Visa din faktura.](view-your-bill-or-invoice.md)
+Om du har inaktiverat återkommande fakturering för din faktureringsprofil kan du använda ett kreditkort för att betala fakturan online. Om du vill göra en betalning använder **du knappen** Betala nu på fakturan i administrationscentret för Microsoft 365. Mer information om hur du hittar din [faktura finns i Visa din faktura.](view-your-bill-or-invoice.md)
 
-## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>Kan jag ändra från min nuvarande betalningsmetod till att betala med faktura?
+## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>Kan jag byta från min aktuella betalningsmetod till att betala via faktura?
 
 Om din faktureringsprofil säkerhetskopieras med kreditkort eller betalkort kan du bara ändra betalningsmetoden till ett annat kreditkort eller betalkort. Du kan inte ändra till att betala med faktura.
 
-## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>Kan jag ändra från att betala med faktura till en annan betalningsmetod?
+## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>Kan jag byta från min aktuella betalningsmetod till en annan betalningsmetod?
 
-Om din faktureringsprofil är säkerhetskopierad med fakturabetalningar kan du inte ändra betalningsmetod. Du kan använda knappen **Betala nu** på fakturan för att betala med kreditkort eller bankkort, eller via check eller EFT.
+Om faktureringsprofilen säkerhetskopieras med fakturabetalningar kan du inte ändra betalningsmetod. Du kan använda **knappen Betala nu** på fakturan för att betala med kreditkort eller bankkort, eller med check eller EFT.
 
 ## <a name="related-content"></a>Relaterat innehåll
 
 [Hantera betalningsmetoder](manage-payment-methods.md) (artikel)\
-[Visa din faktura](view-your-bill-or-invoice.md) (artikel)\
-[Förstå din faktura](understand-your-invoice.md) (artikel)
+[Visa din räkning eller faktura](view-your-bill-or-invoice.md) (artikel)\
+[Förstå din räkning eller faktura](understand-your-invoice.md) (artikel)

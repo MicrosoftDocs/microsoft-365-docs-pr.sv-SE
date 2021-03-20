@@ -22,32 +22,32 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Lär dig att skydda Windows 10-datorer när du har konfigurerat Microsoft 365 Business Premium.
-ms.openlocfilehash: 286393779eaa92d33432ff9ad4b21c0a1fb8612c
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+description: Lär dig hur du skyddar Windows 10-datorer när du har installerat Microsoft 365 Business Premium.
+ms.openlocfilehash: 1b843e9ae3fcdb78eb128549f8f3c18badd8eb4e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376286"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912639"
 ---
 # <a name="secure-windows-10-computers"></a>Skydda Windows 10-datorer
 
 Den här artikeln gäller Microsoft 365 Business Premium.
 
-När du har [konfigurerat](set-up.md) Microsoft 365 Business Premium är det dags att skydda Windows 10-datorerna i din organisation från stöld och skadliga hot som virus och skadlig program vara.
+När du har [installerat](set-up.md) Microsoft 365 Business Premium är det dags att skydda Organisationens Windows 10-datorer från stölder och skadliga hot som virus och skadlig kod.
 
-## <a name="to-secure-your-windows-10-computers"></a>Skydda Windows 10-datorer
+## <a name="to-secure-your-windows-10-computers"></a>Skydda dina Windows 10-datorer
 
 1. Logga in på [Administrationscenter för Microsoft 365](https://admin.microsoft.com) som global administratör. 
-2. I det vänstra navigerings fältet väljer du **konfiguration** och väljer **skydda Windows 10-datorer** under **inloggning och säkerhet**. Välj **Visa** för att komma igång.
-3. På sidan **Secure The Windows 10-datorer** läser du all information för att förstå vad du aktiverar och vad användaren påverkar.
+2. Välj Konfigurera i det vänstra **navigeringsfältet** och välj sedan Skydda dina **Windows 10-datorer** under Inloggning och säkerhet.  Kom **igång genom** att välja Visa.
+3. På sidan **Skydda dina Windows 10-datorer** kan du läsa all information för att förstå vad du gör för att förstå vad du gör och vad användarna påverkar.
 
-    Välj **Kom igång** högst upp på sidan.
+    Högst upp på sidan väljer du **Komma igång.**
 
-4. Välj de alternativ du vill aktivera i fönstret **skydda din Windows 10-dator** . Mer information om inställningarna finns i [säkra Windows 10-enheter](secure-windows-10-devices.md). 
+4. I fönstret **Skydda dina Windows 10-datorer** väljer du de alternativ du vill aktivera. Mer information om inställningarna finns i Skydda [Windows 10-enheter.](secure-windows-10-devices.md) 
     
-    För de flesta organisationer ger alternativen en god säkerhets nivå, men om din organisation har mer komplexa säkerhets behov kan du även använda fördefinierade säkerhets bas linjer för att skydda Windows 10-enheter. Mer information finns i [säkerhets bas linjer för Windows 10-enheter](https://docs.microsoft.com/mem/intune/protect/security-baselines).   
+    För de flesta organisationer erbjuder alternativen här en bra säkerhetsnivå men om organisationen har mer komplexa säkerhetsbehov kan du också använda fördefinierade säkerhetsbaslinjer för att skydda dina Windows 10-enheter. Mer information finns i [säkerhetsbaslinjer för Windows 10-enheter.](/mem/intune/protect/security-baselines)   
 
-1. Välj **Apply Settings**.
+1. Välj **Använd inställningar.**
 
-    Dessa inställningar gäller för alla användare i organisationen. Information om hur du konfigurerar olika principer för olika säkerhets grupper finns i [Ange inställningar för enhets skydd för Windows 10-datorer](protection-settings-for-windows-10-pcs.md).
+    De här inställningarna gäller för alla användare i organisationen. Information om hur du anger olika principer för olika säkerhetsgrupper finns [i Ange inställningar för enhetsskydd för Windows 10-datorer.](protection-settings-for-windows-10-pcs.md)

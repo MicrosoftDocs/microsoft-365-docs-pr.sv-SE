@@ -1,5 +1,5 @@
 ---
-title: Vanliga frågor och svar om Microsoft Home Use program
+title: Vanliga frågor och svar om Microsoft Home Use Program
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
@@ -14,97 +14,97 @@ ms.collection:
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-description: Vanliga frågor (FAQ) om Microsofts Home Use-program.
-ms.openlocfilehash: f4848e5f84081152fb42e41887b581d7290dfe2f
-ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
+description: Vanliga frågor och svar om Microsoft Home Use Program.
+ms.openlocfilehash: 68abc62e7d8daf3122ce646223eee0f772ce572d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47294692"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911392"
 ---
-# <a name="microsoft-home-use-program-frequently-asked-questions-faq"></a>Vanliga frågor och svar om Microsoft Home Use program
+# <a name="microsoft-home-use-program-frequently-asked-questions-faq"></a>Vanliga frågor och svar om Microsoft Home Use Program
 
-Volym licensierings kunder använder Microsoft Home Use program (HUP) på [webbplatsen Microsoft Store för företag](https://go.microsoft.com/fwlink/?linkid=2139192). 
+Volymlicenskunder använder Microsoft Home Use Program (HUP) på [webbplatsen Microsoft Store för företag.](https://go.microsoft.com/fwlink/?linkid=2139192) 
 
-Alla andra kunder får åtkomst till HUP med det här steget:
+Alla andra kunder får åtkomst till HUP genom att använda det här steget:
 
-- I administrations centret för Microsoft går du till **Billing**  >  [**Your products** sidan](https://go.microsoft.com/fwlink/p/?linkid=842054)fakturering och sedan väljer du fliken **fördelar** och väljer sedan fliken **HUP** .
+- I administrationscentret för Microsoft går du till **sidan** Fakturering dina produkter, väljer fliken Förmåner  >  [](https://go.microsoft.com/fwlink/p/?linkid=842054)och väljer sedan fliken **HUP.** 
 
-## <a name="what-is-the-microsoft-home-use-program"></a>Vad är Microsoft Home Use-programmet?
+## <a name="what-is-the-microsoft-home-use-program"></a>Vad är Microsoft Home Use Program?
 
-Microsoft Home Use program (HUP) gör det möjligt för anställda att köpa Microsoft konsument produkter med rabatt. Du kan kontrol lera de aktuella rabatterna för varje produkt tjänst genom att gå till [produkt sidan Home Use program](https://www.microsoft.com/home-use-program).
+Med Microsoft Home Use Program (HUP) kan anställda på behöriga företag köpa Microsoft-konsumentprodukter till ett rabatterat pris. Du kan kontrollera de aktuella rabatterna för varje produkterbjudande genom att gå till [produktsidan för Home Use Program.](https://www.microsoft.com/home-use-program)
 
-## <a name="in-which-markets-is-the-home-use-program-offered"></a>På vilka marknader erbjuds Home Use program?
+## <a name="in-which-markets-is-the-home-use-program-offered"></a>På vilka marknader erbjuds Home Use Program?
 
-Rabatt på Microsoft 365-familj och personliga abonnemang erbjuds till företag i världen med följande undantag:
+Rabatter på Microsoft 365 Family- och Personal-prenumerationer erbjuds till berättigade företag över hela världen med dessa undantag:
 
-- Macao, Ryssland och Venezuela: detta erbjuds inte på dessa marknader.
-- Kina och Hongkong: ett års abonnemang är tillgängligt på dessa marknader. För Kina, besök [Microsoft 365 i Kina](https://www.microsoftstore.com.cn/home-use-program/invite). För Hongkong kan du [köpa Microsoft 365 till ett rabatterat pris](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).
-- Japan: Microsoft 365-familjen är inte tillgänglig.
+- Macao, Ryssland och Venezuela: Erbjudandet är inte tillgängligt på dessa marknader.
+- Kina och Hongkong: en ettårig prenumeration är tillgänglig på dessa marknader. I Kina kan du besöka [Microsoft 365 i Kina.](https://www.microsoftstore.com.cn/home-use-program/invite) För Hongkong går du till [Köp Microsoft 365 till ett rabatterat pris.](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK)
+- Japan: Microsoft 365 Family är inte tillgängligt.
 
-## <a name="how-does-an-organization-qualify-for-hup-discounts"></a>Hur berättigar en organisation för HUP rabatt?
+## <a name="how-does-an-organization-qualify-for-hup-discounts"></a>Hur kan en organisation bli berättigad till HUP-rabatter?
 
-För att anställda ska kunna utnyttja Microsofts Home Use program-rabatt måste de ha en giltig företags-e-postadress och ett aktivt Microsoft-konto, och din organisation måste uppfylla något av följande villkor:
+För att anställda ska kunna utnyttja Microsoft Home Use Program-rabatten behöver de en giltig företags-e-postadress och ett aktivt Microsoft-konto, och din organisation måste uppfylla något av följande kriterier:
 
-- Kunder som har aktiverat program varu säkring för att kvalificera Office-program 
+- Kunder som har en aktiv Software Assurance för kvalificerande Office-program 
 
 - Kunder som har Microsoft 365/Microsoft 365 E3/E5 från Software Assurance
 
-- Kommersiella och offentliga kunder som har köpt ≥ 2 000 licenser för en eller blandning av Microsoft 365 E3/E5
+- Kommersiella kunder och myndighetskunder som har ≥ 2 000 licenser av något av eller en blandning av Microsoft 365 E3/E5
 
-- Utbildning och ideella kunder
+- Utbildningskunder och ideella kunder
 
-## <a name="why-do-i-have-to-create-an-azure-active-directory-aad-account-to-use-the-home-use-program-microsoft-store-for-business"></a>Varför måste jag skapa ett Azure Active Directory (AAD)-konto för att använda Home Use Program/Microsoft Store för företag?
+## <a name="why-do-i-have-to-create-an-azure-active-directory-aad-account-to-use-the-home-use-program-microsoft-store-for-business"></a>Varför måste jag skapa ett Azure Active Directory-konto (AAD) för att kunna använda Home Use Program/ Microsoft Store för företag?
 
-Om du vill uppdatera och moderniseraa Home Use program till ett bredare utbud av licens-och produkt fördelarna måste vi ändra vårt sätt att uppfylla HUP. Microsoft Store för företag används för att kontrol lera kvalificeringarna och för att tilldela HUP-fördelar och för att det är förlitar på att det är inloggat för att ansluta informationen från VSLC och för att verifiera de e-postdomäner som organisationens anställda Mer information finns i [så här registrerar du dig för Azure AD-konton via Office 365 för företag](https://docs.microsoft.com/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome).
+För att uppdatera och modernisera Home Use Program till ett bredare utbud av licens- och produktförmåner behöver vi ändra hur vi uppfyller HUP. Microsoft Store för företag används för validering av berättigande och för att tilldela HUP-förmåner, och för att det förlitar sig på AAD för att ansluta information från VSLC och för att verifiera de e-postdomäner som företagets anställda använder. Mer information finns i Registrera [dig för Azure AD-konton via Office 365 för företag.](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome)
 
-## <a name="how-do-i-become-the-assigned-it-admin-of-a-managed-tenant"></a>Hur blir jag tilldelad IT-administratör för en hanterad klient organisation?
+## <a name="how-do-i-become-the-assigned-it-admin-of-a-managed-tenant"></a>Hur blir jag tilldelad IT-administratör för en administrerad klient?
 
-Du måste skapa en särskild post i DNS för att bevisa att du äger företagets domän, ex:contoso. com.
+Du måste skapa en särskild post i DNS för att bevisa att du äger företagsdomänen, till exempel:contoso.com.
 
-En steg-för-steg-process för att bli hanterad klient organisation finns i [ta över en ohanterad katalog som administratör i Azure Active](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover).
+Stegvisa instruktioner för hur du blir hanterad klientorganisation finns i Ta över en [ohanterad katalog som administratör i Azure Active.](/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
-## <a name="what-resources-are-available-to-help-promote-the-home-use-program-benefit-to-employees"></a>Vilka resurser finns tillgängliga för att hjälpa till att marknadsföra hem användnings program?
+## <a name="what-resources-are-available-to-help-promote-the-home-use-program-benefit-to-employees"></a>Vilka resurser finns tillgängliga för att marknadsföra Home Use Program-förmånen för anställda?
 
-Använd resurserna på Start sidan [Home Use program](https://www.microsoft.com/home-use-program/resources) för att hjälpa dig att marknadsföra programmet till dina anställda. I e-post och nyhets brev hittar du digitala och utskrivbara reklamblad, verbiage och råd om hur du bäst marknadsför Home Use program.
+Använd resurserna på startsidan för [Home Use Program](https://www.microsoft.com/home-use-program/resources) för att ge dina anställda mer information. Du hittar digitala och utskrivbara flygblad, utförligt för användning i e-postmeddelanden och nyhetsbrev och vägledning om hur du bäst marknadsför Home Use Program.
 
-Du kan komma åt flera olika språk på [HUP material för kunder](https://microsofteur.sharepoint.com/teams/HUPMaterial). Välj ett språk som filerna ska hämtas från. Filen innehåller till gångar som du kan använda för att utbilda dina anställda om programmet och marknadsföra det internt i ditt företag.
+Du kan komma åt registreringsmaterial på flera språk på [HUP-material för kunder.](https://microsofteur.sharepoint.com/teams/HUPMaterial) Välj ett språk för att börja ladda ned filerna. Filen innehåller tillgångar som du kan använda för att utbilda dina anställda om programmet och marknadsföra det internt i företaget.
 
-## <a name="what-are-the-steps-for-an-eligible-employee-to-make-a-microsoft-home-use-program-purchase"></a>Vilka är de här stegen för en kvalificerad anställd som kan köpa Microsoft Home Use-program?
+## <a name="what-are-the-steps-for-an-eligible-employee-to-make-a-microsoft-home-use-program-purchase"></a>Hur kan en berättigad anställd göra ett Microsoft Home Use Program-köp?
 
-1. **Registrera dig** Gå till [sidan Microsoft Home Use program](https://www.microsoft.com/home-use-program)och välj knappen kom igång. Anställda anger deras e-postadress.
+1. **Registrera dig** Gå till [sidan Microsoft Home Use Program](https://www.microsoft.com/home-use-program)och välj knappen Komma igång. Anställda anger sin företags-e-postadress.
 
-2. **Bekräfta**  Ett e-postmeddelande skickas till sin inkorg för företags e-postadresser med en länk som autentiserar deras kvalifikationer för programmet.
+2. **Bekräfta**  Ett e-postmeddelande skickas till deras företags-e-postadressinkorg med en länk som autentiserar att de är berättigande till programmet.
 
-3. **Logga in** När de har autentiserats påbörjar de inköps processen genom att tillhandahålla det Microsoft-konto som är kopplat till sin personliga e-postadress, vilket gör att de kan visa rabatten på de produkter som är tillgängliga för dem baserat på företagets start användnings program. Mer information finns i [Logga in på ditt Microsoft-konto](https://support.microsoft.com/help/4028195/microsoft-account-sign-in).
+3. **Logga in** När de har autentiserats påbörjar de köpet genom att ange det Microsoft-konto som är kopplat till deras personliga e-postadress, så att de kan se rabatterna för produkter som är tillgängliga baserat på organisationens Home Use Program-förmån. Mer information finns i Logga [in på ditt Microsoft-konto.](https://support.microsoft.com/help/4028195/microsoft-account-sign-in)
 
-4. **Butik** Köpet behandlas och genomförs i Microsoft Store.
+4. **Handla** Köpet behandlas och slutförs i Microsoft Store.
 
-## <a name="if-an-employee-subscribes-to-microsoft-365-through-the-microsoft-home-use-program-how-does-this-impact-our-organizations-microsoft-365-business-subscription-and-device-limit"></a>Om en anställd abonnerar på Microsoft 365 via Microsofts Home Use program, hur påverkar detta organisationens prenumeration på Microsoft 365-företag och enheter?
+## <a name="if-an-employee-subscribes-to-microsoft-365-through-the-microsoft-home-use-program-how-does-this-impact-our-organizations-microsoft-365-business-subscription-and-device-limit"></a>Om en anställd prenumererar på Microsoft 365 via Microsoft Home Use Program, hur påverkar detta det organisationens Microsoft 365 Business-prenumeration och enhetsgräns?
 
-Installationer via Home Use program påverkar inte organisationens Microsoft 365 Business-prenumeration. När anställda aktiverar Microsoft 365 på sina personliga enheter använder de sitt eget Microsoft-konto, inte deras arbets konto. Organisationens IT-administratörer hanterar och stöder inte några köp som görs via Home Use program.
+Installationer via Home Use Program har ingen inverkan på din organisations Microsoft 365 Business-prenumeration. När anställda aktiverar Microsoft 365 på sina personliga enheter använder de sina personliga Microsoft-konton, inte sina arbetskonto. Organisationens IT-administratörer hanterar eller ger inte support för köp som görs via Home Use Program.
 
-## <a name="im-having-trouble-managing-my-organizations-microsoft-home-use-program-benefit-where-can-i-get-support"></a>Jag har problem med att hantera organisationens Microsoft Home Use program. Var kan jag få support?
+## <a name="im-having-trouble-managing-my-organizations-microsoft-home-use-program-benefit-where-can-i-get-support"></a>Jag har problem med att hantera min organisations Microsoft Home Use Program-förmån. Var kan jag få support?
 
-Stöd för problem med att migrera från Volume Licensing Service Center eller åtkomst till Microsoft Store för företag finns i [VLSC support](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0).
+Information om support för problem med att migrera från Volume Licensing Service Center eller få åtkomst till Microsoft Store för företag finns i [VLSC-supporten.](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0)
 
-Om du har problem med att visa fördelarna efter att du har åtkomst till Microsoft Store för företag läser du [Support för butik för Business-administratörer](https://docs.microsoft.com/microsoft-store/)
+Information om problem med att visa förmånen när du redan har åtkomst till Microsoft Store för företag finns i [Administratörssupport för Store för företag](/microsoft-store/)
 
-## <a name="why-am-i-not-seeing-an-option-to-purchase-visio-professional-2019-andor-project-professional-2019"></a>Varför ser jag inte ett alternativ för att köpa Visio Professional 2019 och/eller Project Professional 2019?
+## <a name="why-am-i-not-seeing-an-option-to-purchase-visio-professional-2019-andor-project-professional-2019"></a>Varför ser jag inte något alternativ för att köpa Visio Professional 2019 och/eller Project Professional 2019?
 
-Om någon av dina anställda använde det föregående programmet och letar efter rabatter på Visio Professional 2019 och/eller Project Professional 2019, går du till **andra Office-produkter** för att köpa dessa produkter när du är inloggad med ditt personliga Microsoft-konto. Om du inte ser förväntade rabatter, kontaktar du din arbetsgivares Home Use program-administratör för att få mer information.
+Om en av dina anställda utnyttja det tidigare programmet och söker efter rabatter på Visio Professional 2019 och/eller Project Professional 2019 kan du gå igenom valideringsprocessen för berättigande och, när du har loggat in med ditt personliga Microsoft-konto, gå till Andra **Office-produkter** för att köpa dessa produkter. Om du inte ser de förväntade rabatterna kontaktar du din arbetsgivares Home Use Program-administratör och ber om dessa ytterligare förmåner.
 
-## <a name="what-if-my-employees-have-questions-about-this-program-or-need-support-with-purchasing-and-installation"></a>Vad händer om mina anställda har frågor om det här programmet eller behöver support för att köpa och installera?
+## <a name="what-if-my-employees-have-questions-about-this-program-or-need-support-with-purchasing-and-installation"></a>Vad händer om mina anställda har frågor om det här programmet eller behöver hjälp med köp och installation?
 
-Om de anställda har frågor kan du läsa följande resurser:
+Om de anställda har frågor hänvisar du dem till följande resurser:
 
-- [Vanliga frågor och svar om inköp och installation](https://products.office.com/microsoft-office-for-home-and-school-faq)
+- [Vanliga frågor och svar efter köp och installation](https://products.office.com/microsoft-office-for-home-and-school-faq)
 
-- [Vanliga frågor om arbets program](https://www.microsoft.com/home-use-program/frequently-asked-questions)
+- [Vanliga frågor och svar om Home Use Program för anställda](https://www.microsoft.com/home-use-program/frequently-asked-questions)
 
- Mer hjälp med tekniska problem finns i [Microsoft Support](https://support.microsoft.com/). Hjälp för:
+ Om du behöver hjälp med tekniska problem går du till [Microsoft Support.](https://support.microsoft.com/) Du hittar hjälp för:
 
-- Beställnings status
+- Orderstatus
 
 - Fakturering
 
@@ -112,16 +112,16 @@ Om de anställda har frågor kan du läsa följande resurser:
 
 - Logga in på Office
 
-## <a name="frequently-viewed-content"></a>Ofta visat innehåll
+## <a name="frequently-viewed-content"></a>Ofta visad innehåll
 
-[Microsoft 365-abonnemang](https://www.microsoft.com/home-use-program/). (länk sida)
+[Microsoft 365-prenumerationer.](https://www.microsoft.com/home-use-program/) (länksida)
 
-[Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (länk sida)
+[Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (länksida)
 
-[Support för Microsoft Store för företag-administratörer](https://docs.microsoft.com/microsoft-store/) (länk sida)
+[Administratörssupport för Microsoft Store för företag](/microsoft-store/) (länksida)
 
-[Microsoft Store för företag](https://go.microsoft.com/fwlink/?linkid=2139192) (länk sida)
+[Microsoft Store för företag](https://go.microsoft.com/fwlink/?linkid=2139192) (länksida)
 
-[Hem användnings program för anställda](https://www.microsoft.com/home-use-program) (länk sida)
+[Home Use Program-butiken för anställda](https://www.microsoft.com/home-use-program) (länksida)
 
-[Microsoft-licensiering: översikt över Home Use program](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (länk sida)
+[Microsoft Licensiering: Översikt över Home Use Program](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (länksida)

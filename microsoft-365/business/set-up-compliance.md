@@ -1,5 +1,5 @@
 ---
-title: Öka hotet mot skyddet för Microsoft 365 Business Premium
+title: Öka skydd mot hot för Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,57 +21,57 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Konfigurera kompatibla funktioner för att förhindra förlust av data och hålla dina kunder känslig information.
-ms.openlocfilehash: 2c95ad3f36df28af2c68cd11192bcfe92dfe29e3
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+description: Konfigurera efterlevnadsfunktioner för att förhindra dataförlust och skydda din och dina kunders känsliga information.
+ms.openlocfilehash: e210787718025c5df29af8d4a2283291dcecc2a8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841182"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912539"
 ---
 # <a name="set-up-compliance-features"></a>Konfigurera funktioner för efterlevnad
 
-Ditt Microsoft 365 Business Premium innehåller funktioner för att skydda dina data och enheter och hjälper dig att hålla dina kunder känslig information.
+Din Microsoft 365 Business Premium levereras med funktioner som skyddar dina data och enheter och hjälper dig att hålla din och dina kunders känsliga information säker.
 
 ## <a name="set-up-dlp-features"></a>Konfigurera DLP-funktioner
 
-Se [skapa en DLP-princip från en mall](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template) för ett exempel på hur du konfigurerar en princip som skyddar mot att skydda person uppgifter. 
+Se [Skapa en DLP-princip från](../compliance/create-a-dlp-policy-from-a-template.md) en mall för ett exempel på hur du skapar en princip för att skydda mot skydd mot förlust av personuppgifter. 
   
-DLP innehåller många färdiga principmallar för många olika språk. Till exempel, ekonomiska data för Australien, privat person uppgifter och så vidare. Se [vad mallarna för DLP-principer innehåller](https://docs.microsoft.com/microsoft-365/compliance/what-the-dlp-policy-templates-include) för en fullständig lista. Alla de här mallarna kan aktive ras på liknande sätt som i mallen PII. 
+DLP innehåller många färdiga principmallar för många olika språk. Till exempel Australia Financial Data, Canada Personal Information Act, U.S. Financial Data och så vidare. Se [Vad DLP-principmallarna innehåller](../compliance/what-the-dlp-policy-templates-include.md) för en fullständig lista. Alla mallar kan aktiveras ungefär som i exemplet med pii-mallar. 
   
-## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Konfigurera e-postlagring med Exchange Online-arkivering
+## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Konfigurera e-postbevarande med Exchange Online-arkivering
 
- Licenser för **Exchange Online-arkivering** hjälper till att upprätthålla efterlevnad och myndighets standarder genom att bevara e-postinnehåll för eDiscovery. Den minskar också risken för att du har en rättegång och ger ett sätt att återställa data efter en säkerhets överträdelse eller när du behöver återställa borttagna objekt. Du kan använda behållning för att bevara all en användares innehåll eller använda bevarande principer för att anpassa vad du vill behålla.
+ **Exchange Online-licensfunktioner hjälper till** att bevara efterlevnads- och regelstandarder genom att bevara e-postinnehållet för e-dataidentifiering. Det hjälper också till att minska risken om det finns en sekretess, och det är ett sätt att återställa data efter en säkerhetsöverträdelse eller när du behöver återställa borttagna objekt. Du kan använda bevarande av juridiska skäl för att bevara allt innehåll för en användare, eller använda bevarandeprinciper för att anpassa vad du vill bevara.
   
-**Rättsliga undantag:** Du kan bevara allt innehåll i post lådan inklusive borttagna objekt genom att ange användarens hela post låda. 
+**Bevarande av juridiska skäl:** Du kan bevara allt innehåll i postlådan, inklusive borttagna objekt, genom att sätta en användares hela postlåda i bevarande av juridiska skäl. 
     
-Om du vill placera en post låda på en arbets grupp i administrations centret:
+Så här placerar du en postlåda i bevarande av juridiska skäl i administrationscentret:
     
-1. I det vänstra navigerings fältet går du till **användare** \> **aktiva användare** .
+1. I det vänstra navigeringsfältet går du till **Användare** \> **aktiva användare.**
     
-2. Välj en användare vars post låda du vill använda i en beställnings plats. I fönstret användare expanderar du **Inställningar för e-post** och bredvid **fler inställningar** väljer du **Redigera Exchange-egenskaper** .
+2. Välj en användare vars postlåda du vill skapa bevarande av juridiska skäl för. I användarfönstret expanderar du **E-postinställningar** och bredvid **Fler inställningar** väljer du **Redigera Exchange-egenskaper**.
     
-3. På sidan med post lådan för användaren väljer du * * Mailbox features * * i det vänstra navigerings fältet och väljer sedan länken **Aktivera** under **rättsliga undantag** .
+3. På användarens postlådesida väljer du ** postlådefunktioner **  i det vänstra navigeringsfältet och väljer sedan länken Aktivera under Bevarande av juridiska **skäl.**
     
-4. I dialog rutan **tvist undantag** kan du ange arbets tidens varaktighet i fältet **varaktighet** . Lämna fältet tomt om du vill sätta ett oändligt undantag. Du kan också lägga till anteckningar och direkt skicka post lådans ägare till en webbplats. \>**Spara** .
+4. I dialogrutan **Bevarande av juridiska** skäl kan du ange varaktigheten för bevarande av juridiska skäl i fältet Bevarande av juridiska **skäl.** Lämna fältet tomt om du vill ha ett oändligt utrymme. Du kan också lägga till anteckningar och dirigera postlådans ägare till en webbplats som du kan behöva förklara mer om bevarande av juridiska skäl. \>**Spara**.
     
-**Bevarande:** Du kan aktivera anpassade bevarande principer, till exempel för att bevara en viss tid eller ta bort innehåll permanent i slutet av lagrings perioden. Mer information finns i [Översikt över bevarande principer](https://docs.microsoft.com/microsoft-365/compliance/retention-policies).
+**Bevarande:** Du kan aktivera anpassade bevarandeprinciper, till exempel för att bevara under en viss tid eller ta bort innehåll permanent i slutet av kvarhållningsperioden. Mer information finns i Översikt [över bevarandeprinciper.](../compliance/retention.md)
 
-## <a name="set-up-sensitivity-labels"></a>Ange känslighets etiketter
+## <a name="set-up-sensitivity-labels"></a>Konfigurera känslighetsetiketter
 
-Känslighets etiketter levereras med Azure information Protection (AIP) plan 1, och du kan skydda dina dokument och e-postmeddelanden genom att använda etiketter. Etiketter kan användas automatiskt av administratörer som definierar regler och villkor, manuellt av användare, eller genom att använda en kombination där användarna får rekommendationer.
+Känslighetsetiketter följer med Azure Information Protection (AIP) abonnemang 1 och hjälper dig att klassificera, och om du vill, skydda dina dokument och e-postmeddelanden genom att använda etiketter. Etiketter kan tillämpas automatiskt av administratörer som definierar regler och villkor, manuellt av användare eller genom en kombination där användarna får rekommendationer.
 
-Om du vill ställa in känslighets etiketter kan du läsa [skapa och hantera video med känslighets etiketter](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) .
+Om du vill konfigurera känslighetsetiketter, visa [och hantera känslighetsetiketter](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) video.
 
 
 
-### <a name="install-the-azure-information-protection-client-manually"></a>Installera Azure information Protection client manuellt
+### <a name="install-the-azure-information-protection-client-manually"></a>Installera Azure Information Protection-klienten manuellt
 
 Så här installerar du AIP-klienten manuellt:
 
-1. Ladda ned **AzinfoProtection_UL.exe** från [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53018).
+1. Ladda **AzinfoProtection_UL.exe** från [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53018).
  
-2. Du kan kontrol lera att installationen fungerade genom att visa ett Word-dokument och se till att alternativet **känslighet** finns på fliken **Start** .
-<br/>![List rutan skydd i ett Word-dokument.](../media/word-sensitivity.png)
+2. Du kan kontrollera att installationen fungerade genom att visa ett Word-dokument och kontrollera att **alternativet Känslighet** är tillgängligt på **fliken** Start.
+<br/>![Nedrullningsrutan för fliken Skydd i ett Word-dokument.](../media/word-sensitivity.png)
 
-Mer information finns i [Installera klienten](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3).
+Mer information finns i [Installera klienten.](/azure/information-protection/infoprotect-tutorial-step3)

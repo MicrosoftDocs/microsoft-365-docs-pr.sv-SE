@@ -26,19 +26,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
-description: Lär dig hur du konfigurerar inställningarna för den standard enhets princip som en Windows 10-enhet kommer att få när du loggar in på sitt arbets-eller skol konto.
-ms.openlocfilehash: 85448507835b6310ca4136849be6a40caf6bb919
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+description: Läs mer om hur du konfigurerar inställningarna för standardprincipen för enheter som en Windows 10-enhet får när du loggar in på deras arbets- eller skolkonto.
+ms.openlocfilehash: 85383b1e1d2f2af3fd49d4a0c56c5d99586d607d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289086"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912619"
 ---
 # <a name="secure-windows-10-devices"></a>Skydda Windows 10-enheter
 
 Den här artikeln gäller Microsoft 365 Business Premium.
 
-De inställningar som du konfigurerar här är en del av standardprincipen för Windows 10-enheter. Alla användare som ansluter en Windows 10-enhet, inklusive mobila enheter och datorer, genom att logga in med sitt arbets konto får automatiskt dessa inställningar. Vi rekommenderar att du godkänner standardprincipen under installationen och senare lägger till principer som är riktad mot särskilda grupper av användare.
+De inställningar som du konfigurerar här är en del av standardprincipen för Windows 10-enheter. Alla användare som ansluter en Windows 10-enhet, inklusive mobila enheter och datorer, genom att logga in med sitt arbetskonto får automatiskt de här inställningarna. Vi rekommenderar att du godkänner standardprincipen under installationen och senare lägger till principer som är riktad mot särskilda grupper av användare.
   
 ## <a name="settings-to-secure-windows-10-devices"></a>Inställningar som skyddar Windows 10-enheter
 
@@ -49,6 +49,6 @@ Som standard är alla inställningar **På**. Följande inställningar är tillg
 |Inställning  <br/> |Beskrivning  <br/> |
 |Skydda PC-datorer mot virus och andra hot med Windows Defender Antivirus  <br/> |Kräver att antivirusprogrammet Windows Defender är aktiverat för att skydda datorer från fara vid uppkoppling till internet.  <br/> |
 |Skydda datorer från webbaserade hot i Microsoft Edge  <br/> |Aktiverar inställningarna Microsoft i Edge som hjälper till att skydda användare från skadliga webbplatser och nedladdningar.  <br/> |
-|Skydda filer och mappar på PC-datorer från obehörig åtkomst med BitLocker  <br/> |BitLocker skyddar data genom att kryptera datorhårddiskar samt skyddar mot exponering av data om en dator försvinner eller blir stulen. Mer information finns i [vanliga frågor och svar om BitLocker](https://go.microsoft.com/fwlink/?linkid=871000).  <br/> |
+|Skydda filer och mappar på PC-datorer från obehörig åtkomst med BitLocker  <br/> |BitLocker skyddar data genom att kryptera datorhårddiskar samt skyddar mot exponering av data om en dator försvinner eller blir stulen. Mer information finns i Vanliga [frågor och svar om Bitlocker.](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)  <br/> |
 |Stäng av enhetens skärm efter en viss tids inaktivitet  <br/> |Säkerställer att företagsdata skyddas om en användare är inaktiv. En användare som befinner sig på en offentlig plats, till exempel ett café, kan göra ett ärende eller låter sig distraheras för ett ögonblick, vilket gör att obehöriga kan få tillgång till enheten. Med den här inställningen kan du bestämma hur länge användaren kan vara inaktiv innan skärmen stängs av.  <br/> |
 |
