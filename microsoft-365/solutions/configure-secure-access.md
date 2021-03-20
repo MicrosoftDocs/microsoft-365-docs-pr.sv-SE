@@ -1,6 +1,6 @@
 ---
 title: Konfigurera säker åtkomst till Microsoft 365-tjänster
-description: Hitta vägledning för implementering av MFA, villkorlig åtkomst och relaterade principer för tre olika nivåer – grundläggande, känslig, mycket känslig.
+description: Hitta anvisningar för hur du implementerar MFA, villkorsstyrd åtkomst och relaterade principer för tre nivåer av skydd – baslinje, känslig och mycket känslig.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -12,13 +12,13 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 00d6c1dd842cd906547f0d450a41052aaa466d35
-ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
+ms.openlocfilehash: 11cd4222978487b23a12262ec3b7e8d6a0fcf230
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49771805"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916364"
 ---
-# <a name="configure-secure-access-to-microsoft-365-services"></a><span data-ttu-id="bcdc1-103">Konfigurera säker åtkomst till Microsoft 365-tjänster</span><span class="sxs-lookup"><span data-stu-id="bcdc1-103">Configure secure access to Microsoft 365 services</span></span>
+# <a name="configure-secure-access-to-microsoft-365-services"></a><span data-ttu-id="3fc6a-103">Konfigurera säker åtkomst till Microsoft 365-tjänster</span><span class="sxs-lookup"><span data-stu-id="3fc6a-103">Configure secure access to Microsoft 365 services</span></span>
 
-<span data-ttu-id="bcdc1-104">Den här lösningen är baserad på "[M365 gyllene config](https://aka.ms/m365goldenconfig)"--rikt linjer för implementering av MFA, villkorlig åtkomst och relaterade principer för tre olika nivåer: bas linje, känslig, mycket känslig.</span><span class="sxs-lookup"><span data-stu-id="bcdc1-104">This solution is based on the "[M365 golden config](https://aka.ms/m365goldenconfig)" -- prescriptive guidance for implementing MFA, conditional access, and related policies for three tiers of protection: baseline, sensitive, highly sensitive.</span></span> 
+<span data-ttu-id="3fc6a-104">Den här lösningen är baserad på "[M365 golden config](../security/office-365-security/microsoft-365-policies-configurations.md)" – anvisningar för implementering av MFA, villkorsstyrd åtkomst och relaterade principer för tre skyddsnivåer: baslinje, känslig och mycket känslig.</span><span class="sxs-lookup"><span data-stu-id="3fc6a-104">This solution is based on the "[M365 golden config](../security/office-365-security/microsoft-365-policies-configurations.md)" -- prescriptive guidance for implementing MFA, conditional access, and related policies for three tiers of protection: baseline, sensitive, highly sensitive.</span></span>
