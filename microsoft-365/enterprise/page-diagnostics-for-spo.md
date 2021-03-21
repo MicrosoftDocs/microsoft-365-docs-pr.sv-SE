@@ -19,12 +19,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Använd siddiagnostik för SharePoint-verktyget för att analysera modern portal och klassiska publiceringssidor i SharePoint Online mot en fördefinierad uppsättning prestandakriterier.
-ms.openlocfilehash: a6616a7d3f9f27365c7b96bbfb08a17c6d2be030
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: b55e5c04f56bac4e6313284de60753d1beaaaed1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820215"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921636"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Använda siddiagnostik för SharePoint-verktyget
 
@@ -177,7 +177,7 @@ Ingen ändring visas förutom att du får ett meddelande om att du har aktiverat
 
 [Justera Office 365-prestanda](tune-microsoft-365-performance.md)
 
-[Prestanda i det moderna SharePoint-programmet](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Prestanda i det moderna SharePoint-programmet](/sharepoint/modern-experience-performance)
 
 [Nätverk för innehållsleverans](content-delivery-networks.md)
 

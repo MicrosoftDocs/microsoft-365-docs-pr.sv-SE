@@ -19,30 +19,30 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: Lär dig hur du använder PowerShell för Microsoft 365 för att hantera användare, grupper och webbplats grupper.
-ms.openlocfilehash: dd3ae1ee27d0a3e7c46eb4b62b42165279656aeb
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+description: Lär dig hur du använder PowerShell för Microsoft 365 för att hantera användare, grupper och webbplatsgrupper.
+ms.openlocfilehash: bb7c48a5a44bc82aa0a16e0d38c7ea5036358ee7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429812"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923273"
 ---
 # <a name="manage-sharepoint-with-powershell"></a>Hantera SharePoint med PowerShell
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-SharePoint-administratörer måste hantera webbplatser, webbplats grupper och användare. Även om du kan göra något av följande i administrations centret för Microsoft 365 är det enklare för andra att i PowerShell. Mer information finns i följande artiklar:
+SharePoint-administratörer måste hantera webbplatser, webbplatsgrupper och användare. Du kan utföra vissa av de här uppgifterna i administrationscentret för Microsoft 365, men andra är enklare i PowerShell. Mer information finns i följande artiklar:
 
-- [Komma igång med SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+- [Komma igång med SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
   
 - [Skapa SharePoint Online-webbplatser och lägga till användare med PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
     
-- [Hantera SharePoint Online-användare och-grupper med PowerShell](manage-sharepoint-users-and-groups-with-powershell.md)
+- [Hantera SharePoint Online-användare och grupper med PowerShell](manage-sharepoint-users-and-groups-with-powershell.md)
     
-- [Hantera webbplats grupper för SharePoint Online med PowerShell](manage-sharepoint-site-groups-with-powershell.md)
+- [Hantera SharePoint Online-webbplatsgrupper med PowerShell](manage-sharepoint-site-groups-with-powershell.md)
     
 ## <a name="see-also"></a>Se även
 
 - [Hantera Microsoft 365 med PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
 
-- [Komma igång med PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+- [Börja använda PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)

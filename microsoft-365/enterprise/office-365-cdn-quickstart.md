@@ -1,5 +1,5 @@
 ---
-title: Office 365 innehålls leverans nätverk (CDN) snabb start
+title: Snabbstart för Office 365 Content Delivery Network (CDN)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -18,76 +18,76 @@ ms.custom: Adm_O365
 search.appverid:
 - MET150
 - SPO160
-description: Office 365 innehålls leverans nätverk (CDN) snabb start
-ms.openlocfilehash: e541b2ea63a69644de22329c45bd6963749964f7
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+description: Snabbstart för Office 365 Content Delivery Network (CDN)
+ms.openlocfilehash: 3539ad1f11b27c60b5641976ae66a1480ef4be98
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456417"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921600"
 ---
-# <a name="office-365-content-delivery-network-cdn-quickstart"></a>Office 365 innehålls leverans nätverk (CDN) snabb start
+# <a name="office-365-content-delivery-network-cdn-quickstart"></a>Snabbstart för Office 365 Content Delivery Network (CDN)
 
-Du kan använda det inbyggda Office- **365 innehålls leverans nätverk (CDN)** för att hantera statiska till gångar (bilder, Java Script, formatmallar, WOFF-filer) för bättre prestanda för SharePoint Online-sidor. Office 365 CDN förbättrar prestandan genom att cachelagra statiska till gångar i webbläsare som begär dem, vilket hjälper dig att påskynda nedladdningen och minska svars tiden. Dessutom använder Office 365 CDN HTTP/2 för förbättrad komprimering och HTTP-försäljning. Office 365 CDN-tjänsten är inkluderad som en del av SharePoint Online-prenumerationen.
+Du kan använda det inbyggda nätverket för innehållsleverans **i Office 365 (CDN)** till att lagra statiska tillgångar (bilder, JavaScript, Formatmallar, WOFF-filer) för att ge bättre prestanda för dina SharePoint Online-sidor. Office 365 CDN förbättrar prestandan genom att cachelagra statiska tillgångar närmare de webbläsare som begär dem, vilket hjälper till att snabba på hämtningar och minska svarstiden. Office 365 CDN använder också HTTP/2-protokollet för förbättrad komprimering och HTTP-pipelining. Office 365 CDN-tjänsten ingår som en del av din SharePoint Online-prenumeration.
 
-Mer detaljerad information finns i [använda Office 365 Content Delivery Network (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md).
-
->[!NOTE]
->Office 365 CDN är bara tillgängligt för klient organisationer i produktions-molnet (världen över). Klient organisationer i Förenta staternas myndigheter, Kina och Tyskland stöder för närvarande inte Office 365 CDN.
-
-## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-identify-items-not-in-cdn"></a>Använd verktyget för nätverksdiagnostik för SharePoint för att identifiera objekt som inte är i CDN
-
-Du kan använda webb läsar tillägget **för** att enkelt Visa till gångar på SharePoint Online-sidor som kan läggas till i ett CDN-ursprung.
-
-**Verktyget för nätverksdiagnostik för SharePoint** är ett webb läsar tillägg för de nya Microsoft Edge- https://www.microsoft.com/edge) webbläsarna (och Chrome som analyserar både SharePoint Online moderna Portal och klassisk publicerings webbplats sidor. Verktyget visar en rapport för varje sida som visar hur sidan fungerar mot en viss uppsättning prestanda villkor. Om du vill installera och läsa mer om verktyget för nätverksdiagnostik för SharePoint kan du gå till [använda diagnostikverktyget för SharePoint Online](https://aka.ms/perftool).
-
-När du kör verktyget för nätverksdiagnostik för SharePoint på en SharePoint Online-sida kan du klicka på fliken **diagnostiska test** för att se en lista med till gångar som inte hanteras av CDN. Dessa till gångar visas under rubriken rubrik för **leverans av innehåll (CDN)** enligt skärm bilden nedan.
-
-![Nätverksdiagnostik](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
+Mer detaljerad information finns i [Använda Office 365 Content Delivery Network (CDN) med SharePoint Online.](use-microsoft-365-cdn-with-spo.md)
 
 >[!NOTE]
->Verktyget för nätverksdiagnostik fungerar bara för SharePoint Online och kan inte användas på en SharePoint-Systemsida.
+>Office 365 CDN är bara tillgängligt för innehavare i produktionsmoln (globalt). Klientorganisationen i molnen för myndigheter i USA, Kina och Tyskland stöder för närvarande inte Office 365 CDN.
 
-## <a name="cdn-overview"></a>Översikt över CDN
+## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-identify-items-not-in-cdn"></a>Använd siddiagnostik för SharePoint-verktyget för att identifiera objekt som inte finns i CDN
 
-Office 365 CDN är utformat för att optimera prestanda för användare genom att distribuera ofta använda objekt, till exempel bilder och JavaScript-filer via ett höghastighets-globalt nätverk, för att minska sid inläsnings tiden och ge till gång till värdbaserat objekt så nära som möjligt för användaren. CDN hämtar dina till gångar från en plats som kallas _ursprung_. Ett ursprung kan vara en SharePoint-webbplats, ett dokument bibliotek eller en mapp som är tillgänglig via en URL-adress.
+Du kan använda siddiagnostik för **webbläsartillägget** för SharePoint för att enkelt lista tillgångar på dina SharePoint Online-sidor som kan läggas till i ett CDN-ursprung.
 
-Office 365 CDN är indelat i två grundläggande typer:
+Verktyget **Siddiagnostik för SharePoint** är ett webbläsartillägg för nya Microsoft Edge ( och Chrome-webbläsare som analyserar både moderna portaler för SharePoint Online och https://www.microsoft.com/edge) klassiska publiceringswebbplatssidor. Verktyget innehåller en rapport för varje analyserad sida som visar hur sidan fungerar mot en definierad uppsättning prestandavillkor. Om du vill installera och lära dig mer om verktyget Siddiagnostik för SharePoint går du [till Använda verktyget Siddiagnostik för SharePoint Online.](./page-diagnostics-for-spo.md)
 
-- **Offentlig CDN** är utformat för att användas för JS (Java Script), CSS (formatmallar), webb teckensnitt (WOFF, WOFF2) och icke-patentskyddade bilder, till exempel företags logo typer.
-- **Privata CDN** är utformat för bilder (png, jpg, JPEG etc.).
+När du kör siddiagnostik för SharePoint-verktyget på en  SharePoint Online-sida kan du klicka på fliken Diagnostiktest för att visa en lista med tillgångar som inte lagras av CDN. De här tillgångarna visas under rubriken **Content Delivery Network (CDN)-kontroll** enligt skärmbilden nedan.
 
-Du kan välja att ha både offentliga eller privata ursprung för organisationen. De flesta organisationer väljer att implementera en kombination av båda. Både offentliga och privata alternativ ger liknande prestanda vinster men alla har unika attribut och fördelar. Få reda på mer om offentliga och privata CDN-ursprung i [välja om varje ursprung ska vara offentlig eller privat](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate).
+![Siddiagnostik](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
 
-## <a name="how-to-enable-public-and-private-cdn-with-the-default-configuration"></a>Så här aktiverar du public och Private CDN med standard konfigurationen
-Innan du gör ändringar i inställningarna för klient-CDN bör du kontrol lera att de uppfyller organisationens efterlevnad, säkerhet och sekretess policy.
+>[!NOTE]
+>Verktyget Siddiagnostik fungerar bara för SharePoint Online och kan inte användas på en SharePoint-systemsida.
 
-Om du vill ha mer detaljerade konfigurations inställningar, eller om du redan har aktiverat CDN och vill lägga till ytterligare platser, kan du läsa avsnittet Konfigurera [och konfigurera Office 365 CDn genom att använda SharePoint Online Management Shell](use-microsoft-365-cdn-with-spo.md#set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell)
+## <a name="cdn-overview"></a>CDN – översikt
 
-Anslut till klient organisationen med SharePoint Online Management Shell:
+Office 365 CDN har utformats för att optimera prestanda för användare genom att distribuera objekt som används ofta, till exempel bilder och javascriptfiler, över ett globalt nätverk med hög hastighet, vilket minskar inläsningstiden för sidor och ger åtkomst till värdbaserade objekt så nära användaren som möjligt. CDN hämtar dina tillgångar från en plats som kallas för _ursprung._ Ett ursprung kan vara en SharePoint-webbplats, ett dokumentbibliotek eller en mapp som kan nås via en URL.
+
+Office 365 CDN är indelade i två grundläggande typer:
+
+- **Public CDN** har utformats för användning för JS (JavaScript), CSS (StyleSheets), Web Font File (WOFF, WOFF2) och icke-tillverkarspecifika bilder som företagslogotyp.
+- **Privat CDN** har utformats för att användas för bilder (PNG, JPG, JPEG osv.).
+
+Du kan välja att ha både offentliga och privata ursprung för organisationen. De flesta organisationer väljer att implementera en kombination av de två. Både offentliga och privata alternativ ger liknande prestandaförbättringar, men var och en har unika attribut och fördelar. Mer information om offentliga och privata CDN-ursprung finns i [Välja om varje ursprung ska vara offentligt eller privat.](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)
+
+## <a name="how-to-enable-public-and-private-cdn-with-the-default-configuration"></a>Så här aktiverar du public och private CDN med standardkonfigurationen
+Innan du ändrar inställningar för klientorganisationens CDN bör du kontrollera att den uppfyller organisationens efterlevnads-, säkerhets- och sekretesspolicy.
+
+Mer detaljerade konfigurationsinställningar, eller om du redan har aktiverat CDN och vill lägga till ytterligare platser (ursprung), finns i avsnittet Konfigurera och konfigurera [Office 365 CDN](use-microsoft-365-cdn-with-spo.md#set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell) med hjälp av SharePoint Online Management Shell
+
+Ansluta till klientorganisationen med SharePoint Online Management Shell:
 
 ```PowerShell
 Connect-SPOService -Url https://<YourTenantName>-admin.sharepoint.com
 ```
 
-Om du vill aktivera organisationen att använda både offentliga och privata ursprung med standard konfigurationen skriver du följande kommando:
+Om du vill aktivera organisationen för att använda både offentliga och privata ursprung med standardkonfigurationen skriver du följande kommando:
 
 ```PowerShell
 Set-SPOTenantCdnEnabled -CdnType Both -Enable $true
 ```
 
-Utdata från dessa cmdletar bör se ut så här:
+Utdata från dessa cmdlets bör se ut så här:
 
 ![Utdata från Set-SPOTenantCdnEnabled](../media/O365-CDN/o365-cdn-enable-output.png)
 
 ## <a name="see-also"></a>Se även
 
-[Använda verktyget för nätverksdiagnostik för SharePoint Online](https://aka.ms/perftool)
+[Använda verktyget Siddiagnostik för SharePoint Online](./page-diagnostics-for-spo.md)
 
-[Använda Office 365-innehålls leverans nätverk (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md)
+[Använda Office 365 Content Delivery Network (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md)
 
-[Nätverk för innehållsleverans (CDN)](https://aka.ms/o365cdns)
+[Nätverk för innehållsleverans (CDN)](./content-delivery-networks.md)
 
-[Network planning and performance tuning for Office 365](https://aka.ms/tune)
+[Network planning and performance tuning for Office 365](./network-planning-and-performance.md)
 
-[SharePoint-prestandaräknare – Office 365 CDN-videoserie](https://www.youtube.com/playlist?list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA)
+[SharePoint Performance Series – Office 365 CDN-videoserie](https://www.youtube.com/playlist?list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA)

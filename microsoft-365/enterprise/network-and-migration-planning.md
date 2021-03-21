@@ -1,5 +1,5 @@
 ---
-title: Planering för nätverk och migrering för Office 365
+title: Nätverks- och migreringsplanering för Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -20,79 +20,79 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
-description: Den här artikeln innehåller länkar till information om nätverks planering, test och migrering till Office 365.
-ms.openlocfilehash: 2b08b05b8863fd9351510878f9438264bb2999f5
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+description: Den här artikeln innehåller länkar till information om nätverksplanering, tester och migrering till Office 365.
+ms.openlocfilehash: 99bcc1bd0447b192860fc0bcc67fc18d87c2d5fc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948454"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923594"
 ---
-# <a name="network-and-migration-planning-for-office-365"></a>Planering för nätverk och migrering för Office 365
+# <a name="network-and-migration-planning-for-office-365"></a>Nätverks- och migreringsplanering för Office 365
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Den här artikeln innehåller länkar till information om nätverks planering och-testning och migrering till Office 365.
+Den här artikeln innehåller länkar till information om nätverksplanering och olika tester, samt migrering till Office 365.
   
-Innan du distribuerar för första gången eller migrerar till Office 365 kan du använda informationen i dessa ämnen för att uppskatta vilken bandbredd du behöver och sedan testa och kontrol lera att du har tillräckligt med bandbredd för att distribuera eller migrera till Office 365.
+Innan du distribuerar för första gången eller migrerar till Office 365 kan du använda informationen i följande avsnitt för att uppskatta vilken bandbredd du behöver och sedan testa och verifiera att du har tillräckligt med bandbredd för att distribuera eller migrera till Office 365.
 
-Den här artikeln är en del av [nätverks planering och prestanda justering för Office 365](https://aka.ms/tune).
+Den här artikeln är en [del av Nätverksplanering och prestandajustering för Office 365.](./network-planning-and-performance.md)
 
-Anvisningar för hur du optimerar ditt nätverk för Microsoft 365 och andra moln och tjänster från Microsoft finns i [Microsoft Cloud Networking for Enterprise Architects](https://aka.ms/cloudarchnetworking) affisch.
+Instruktioner för att optimera nätverket för Microsoft 365 och andra molnplattformar och -tjänster från Microsoft finns på postern [Microsoft Cloud Networking for Enterprise Architects.](../solutions/cloud-architecture-models.md)
    
-## <a name="estimate-network-bandwidth-requirements"></a>Uppskatta nätverks bandbredds krav
+## <a name="estimate-network-bandwidth-requirements"></a>Beräkna bandbreddskrav för nätverket
 <a name="EstimateBandwidthRequirements"> </a>
 
-Om du använder Office 365 kan din organisations Internet krets öka. Det är viktigt att ta reda på om det finns tillräckligt med bandbredd för att hantera den uppskattade ökningen när Office 365 är fullt distribuerat samtidigt som du håller minst 20% kapacitet för att hantera busiest.
+Användning av Office 365 kan öka utnyttjandet av din organisations internetkrets. Det är viktigt att fastställa om den mängd bandbredd som är tillgänglig för närvarande är tillräcklig för att hantera den uppskattade ökningen när Office 365 är helt distribuerat med minst 20 % kapacitet för dagarna med mest trafik.
   
 Gör så här för att uppskatta bandbredden:
   
-1. Utvärdera antalet klienter som kommer att använda varje Internet-utgång. Låt vårt terabit nätverks handtag så mycket av anslutningen som möjligt. 
+1. Utvärdera antalet klienter som kommer att använda varje Internet-utgång. Låt vårt nätverk med flera terabit hantera så mycket av anslutningen som möjligt. 
     
-2. Avgöra vilka Office 365-tjänster och-funktioner som ska vara tillgängliga för klienter. Du kommer troligen att ha grupper med personer med olika tjänster eller användar profiler.
+2. Avgör vilka Office 365-tjänster och Office 365-funktioner som kommer att vara tillgängliga för klienter. Det kommer antagligen att finns grupper med personer med olika tjänster eller användningsprofiler.
     
-3. Mäta nätverks användning för en pilot grupp med klienter. Se till att pilot klienter är representativa för de olika företags profilerna i organisationen samt till olika geografiska platser. Du kan göra en dubbel kontroll av dina resultat mot våra gamla kalkylatorer för [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) och [Microsoft Teams](https://docs.microsoft.com/microsoftteams/prepare-network) eller en [fallstudie](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) som vi utför på ett eget nätverk. 
+3. Mät nätverksanvändningen för en testgrupp med klienter. Se till att testklienterna är representativa för olika användarprofiler i organisationen och för olika geografiska platser. Du kan korskolla resultaten med våra gamla kalkylatorer för [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) och [Microsoft Teams](/microsoftteams/prepare-network) eller den fallstudie [vi](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) utförde i vårt eget nätverk. 
     
-4. Använd måtten från pilot gruppen för att extrapolera hela organisationens behov och kontrol lera igen för att verifiera uppskattningarna innan du gör några ändringar i nätverket.
+4. Använd måtten från pilotgruppen till att extrapolera hela organisationens behov och testa om för att verifiera uppskattningarna innan du gör några ändringar i nätverket.
     
 ## <a name="test-your-existing-network"></a>Testa ditt befintliga nätverk
 <a name="calculators"> </a>
 
- **Nätverks verktyg.** Testa och validera din Internet bandbredd för att ta reda på nedladdning, uppladdning och svars tids begränsningar. De här verktygen hjälper dig att avgöra nätverkets funktioner för migrering samt när du är fullständigt distribuerad. 
+ **Nätverksverktyg.** Testa och validera Internetbandbredden och fastställ begränsningar för hämtning, överföring och svarstid. Med de här verktygen kan du fastställa nätverksfunktioner för migrering och efter fullständig distribution. 
     
-- [Microsoft Remote Connectivity Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=517243): testar anslutningen i din Exchange Online-miljö.
+- [Microsoft Remote Connectivity Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=517243): Testar anslutningen i Exchange Online-miljön.
     
-- Använd [Microsoft-assistenten för support och återställning för Office 365](https://diagnostics.office.com/#/Download?env=SOC) för att åtgärda problem med Outlook och Office 365. 
+- Använd [Microsoft Office 365-assistenten](https://diagnostics.office.com/#/Download?env=SOC) för support och återställning för att åtgärda Outlook- och Office 365-problem. 
     
-## <a name="best-practices-for-network-planning-and-improving-migration-performance-for-office-365"></a>Metod tips för nätverks planering och förbättring av migrerings prestanda för Office 365
+## <a name="best-practices-for-network-planning-and-improving-migration-performance-for-office-365"></a>Rekommendationer för nätverksplanering och förbättring av migreringsprestanda för Office 365
 <a name="BestPractices"> </a>
 
-Se till att få mer information om hur du förbättrar Office 365-upplevelsen.
+Fördjupa dig lite djupare i de här metodtipsen för mer information om hur du förbättrar din Office 365-upplevelse.
   
-1. Vill du hjälpa användare att komma igång? I [metod tips för hur du använder office 365 i ett långsamt nätverk](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166) får du tips om hur du använder Office 365, till exempel SharePoint Online, Exchange Online och Lync Online, när nätverket inte är samarbetsvilligt. Den här artikeln länkar ut till massor av innehåll på TechNet och Support.office.com för att optimera Office 365-upplevelsen och innehåller information om enkla sätt att anpassa dina webb sidor och hur du ställer in dina Internet Explorer-inställningar för den bästa Office 365-upplevelsen. 
+1. Vill du komma igång och hjälpa användarna direkt? I Metodtips för att använda [Office 365](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166) i ett långsamt nätverk finns tips om hur du använder Office 365, inklusive SharePoint Online, Exchange Online och Lync Online, när nätverket inte är aktivt. Den här artikeln innehåller länkar till innehåll som laddas på TechNet och Support.office.com för att optimera din Office 365-upplevelse. Där finns information om enkla sätt att anpassa webbsidor och hur du ställer in Internet Explorer-inställningarna för bästa Office 365-upplevelse. 
     
-2. Läs [principer för office 365-nätverks anslutningar](https://aka.ms/o365networkingprinciples) för att förstå anslutnings principerna för säkert hantera Office 365-trafik och få bästa möjliga prestanda. Den här artikeln hjälper dig att förstå de senaste anvisningarna för att optimera Office 365-nätverks anslutningen. 
+2. Läs [Principer för Office 365-nätverksanslutning](./microsoft-365-network-connectivity-principles.md) för att förstå anslutningsprinciperna för säker hantering av Office 365-trafik och få bästa möjliga prestanda. I den här artikeln får du hjälp att förstå de senaste hjälpen för hur du optimerar Office 365-nätverksanslutningen på ett säkert sätt. 
     
-3. Förbättra prestanda för programmigrering genom att noggrant hantera schemat för Windows-uppdateringar. Du kan uppdatera dina klient datorer i grupper och kontrol lera att alla klient datorer uppdateras innan du migrerar till Office 365 för att reglera användningen av nätverks bandbredd. Mer information finns i [manuell uppdatering och konfigurering av skriv bord för Office 365 för de senaste uppdateringarna](https://support.microsoft.com/gp/office-2013-365-update).
+3. Förbättra e-postmigreringsprestanda med noggrann schemahantering för Windows-uppdateringar. Du kan batcha klientdatorer och säkerställa att alla klientdatorer är uppdaterade innan du migrerar till Office 365 och reglera användningen av nätverksbandbredden. Mer information finns i [Uppdatera och konfigurera datorer manuellt för Office 365 för de senaste uppdateringarna.](https://support.microsoft.com/gp/office-2013-365-update)
     
-4. Office 365-nätverks trafik fungerar bäst när den behandlas som en betrodd Internet tjänst och tillåts att kringgå mycket av traditionell filtrering och genomsökning som vissa organisationer placerar på nätverks trafik till icke betrodda Internet tjänster. Detta inkluderar vanligt vis borttagning av utgående bearbetning, såsom proxyautentisering och paket kontroll, samt att det lokala utfallet till Internet med korrekt NAT-adress (Network Address Translation) och tillräcklig bandbredds kapacitet kan hantera de utökade nätverks förfrågningarna. Se [Hantera office 365-slutpunkter](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)för ytterligare vägledning om hur du konfigurerar nätverket för att hantera Office 365 som en tillförlitlig Internet tjänst i nätverket.
+4. Office 365-nätverkstrafik presterar bäst när den hanteras som en betrodd Internettjänst och tillåts kringgå mycket av den traditionella filtrering och genomsökning som en del organisationer placerar på nätverkstrafik till icke betrodda Internettjänster. Det omfattar vanligtvis borttagning av utgående bearbetning som proxyanvändares autentisering och paketinspektion, samt att säkerställa lokal utgående trafik till Internet med rätt NAT (Network Address Translation) och tillräcklig bandbreddskapacitet för att hantera ökade nätverksbegäranden. Mer information om hur du konfigurerar nätverket för att hantera Office 365 som en betrodd Internettjänst i nätverket finns i Hantera [Office 365-slutpunkter.](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
     
-1. Se till att [Hantera Office 365-slutpunkter](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a). Den ytterligare trafiken till Office 365 ger ökad till gång till utgående proxyanslutningar samt en ökning av den säkra trafiken via TLS/SSL.
+1. Se [till att hantera Office 365-slutpunkter](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a). Den extra trafiken till Office 365 leder till en ökning av utgående proxyanslutningar samt en ökning av säker trafik via TLS/SSL.
     
-2. Om dina utgående proxyservrar kräver användarautentisering kan anslutningen bli långsam eller förloras. Att kringgå autentiseringskrav för Office 365-domänerna kan minska denna omkostnad.
+2. Om dina utgående proxyserverier kräver autentisering av användare kan anslutningen gå långsammare eller också kan funktionaliteten gå förlorad. Det kan minska problemet genom att hoppa över autentiseringskravet för Office 365-domäner.
     
-3. Om du har ett stort antal delade kalendrar och post lådor kan du se en ökning av antalet anslutningar från Outlook till Exchange. Outlook-klienten kan till exempel öppna upp till två ytterligare anslutningar för varje delad kalender som används. I det här fallet kontrollerar du att utgående proxy kan hantera anslutningarna, eller att kringgå proxyn för anslutningar till Office 365 för Outlook.
+3. Om du har ett stort antal delade kalendrar och postlådor kan du eventuellt se en ökning av antalet anslutningar från Outlook till Exchange. Till exempel kan Outlook-klienten öppna upp till två extra anslutningar för varje delad kalender som används. I det här fallet ska du kontrollera att den utgående proxyn kan hantera anslutningarna, eller kringgå proxyn för anslutningar till Office 365 för Outlook.
     
-4. Fastställ maximalt antal enheter som stöds för en offentlig IP-adress och hur du ska använda flera IP-adresser. Mer information finns i avsnittet [om stöd för NAT med Office 365](nat-support-with-microsoft-365.md).
+4. Fastställ det maximala antalet enheter som stöds för en offentlig IP-adress och hur du lastbalanser över flera IP-adresser. Mer information finns [NAT-stöd med Office 365.](nat-support-with-microsoft-365.md)
     
-5. Om du håller på att kontrol lera utgående anslutningar från datorer i nätverket kan du förbättra anslutningen och prestanda genom att kringgå den här filtreringen till Office 365-domänerna. Genom att kringgå utgående inspektioner tar du ofta dessutom bort behovet av en enda avgång på Internet och aktiverar lokal Internet för Office 365 till nätverks begär Anden.
+5. Om du kontrollerar utgående anslutningar från datorer i nätverket kan du förbättra anslutningen och prestanda genom att hoppa över filtreringen till Office 365-domänerna. Om du kringgår utgående kontroll tas dessutom ofta behovet av en enda internetgående trafik bort och lokal Internet-utgående trafik för nätverksbegäranden till Office 365 på väg.
     
-6. Vissa kunder hittar interna nätverks inställningar kan påverka prestanda. Inställningar som MTU-storlek (Maximum Transmission Unit), automatisk förhandling eller automatisk avkänning och under optimala vägar till Internet är vanliga platser att titta på.
+6. För vissa kunder kan interna nätverksinställningar påverka prestanda. Andra vanliga orsaker är inställningarna för maximal överföringsenhet (MTU), automatiska nätverksförhandlingar, automatisk identifiering och underoptimerade rutter till Internet.
     
-## <a name="network-planning-reference-for-office-365"></a>Referens för nätverks planering för Office 365
+## <a name="network-planning-reference-for-office-365"></a>Referens för nätverksplanering för Office 365
 <a name="NetReference"> </a>
 
-Dessa ämnen innehåller detaljerad information om Office 365-nätverks referenser.
+Följande avsnitt innehåller detaljerad information om Office 365-nätverksreferens.
   
 - [Hantera Office 365-slutpunkter](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
     
@@ -102,14 +102,14 @@ Dessa ämnen innehåller detaljerad information om Office 365-nätverks referens
     
 - [IPv6-stöd i Office 365-tjänster](ipv6-support.md)
     
-- [Office 365 principer för nätverksanslutningar](https://aka.ms/o365networkingprinciples)
+- [Office 365 principer för nätverksanslutningar](./microsoft-365-network-connectivity-principles.md)
     
-- [Vanliga frågor och svar om Office 365](office-365-video-networking-faq.md)
+- [Vanliga frågor och svar om Office 365-videonätverk](office-365-video-networking-faq.md)
     
-- [Planera för nätverks enheter som ansluter till Office 365-tjänster](plan-for-network-devices.md)
+- [Planera för nätverksenheter som ansluter till Office 365-tjänster](plan-for-network-devices.md)
     
-- [Installations guider för Office 365-tjänster](setup-guides-for-microsoft-365.md)
+- [Installationsguider för Office 365-tjänster](setup-guides-for-microsoft-365.md)
  
 ## <a name="see-also"></a>Se även
 
-[Översikt över Microsoft 365 Enterprise](microsoft-365-overview.md)
+[Microsoft 365 Enterprise – översikt](microsoft-365-overview.md)

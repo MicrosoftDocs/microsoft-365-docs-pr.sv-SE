@@ -1,5 +1,5 @@
 ---
-title: Optimera iFrames i SharePoint Online-sidor med moderna och klassisk publicerings webbplatser
+title: Optimera iFrames i SharePoint Online för moderna och klassiska publiceringswebbplatssidor
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -18,61 +18,61 @@ ms.custom: Adm_O365
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Lär dig hur du optimerar prestanda i iFrames i SharePoint Online-sidor för moderna och klassisk publicerings webbplatser.
-ms.openlocfilehash: 8985eb1038bbdfc53dc3c6a8ea9350fa6df33556
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Lär dig hur du optimerar prestanda för iFrames på moderna och klassiska publiceringswebbplatssidor i SharePoint Online.
+ms.openlocfilehash: d6e9aefa23972589c752540959b17f5d20ed0889
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694927"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923070"
 ---
-# <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Optimera iFrames i SharePoint Online-sidor med moderna och klassisk publicerings webbplatser
+# <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Optimera iFrames i SharePoint Online för moderna och klassiska publiceringswebbplatssidor
 
-iFrames kan vara användbara när du vill förhandsgranska innehåll som videoklipp eller andra medier. Men eftersom iFrames läser in en separat sida på sidan på SharePoint-webbplatsen kan innehåll som öppnas i iFrame innehålla stora bilder, videor eller andra element som kan bidra till att alla sid inläsnings tider och att du inte kan styra på sidan. Den här artikeln hjälper dig att förstå hur iFrames på dina sidor påverkar uppskattad svars tid och hur du åtgärdar vanliga problem.
-
->[!NOTE]
->Mer information om prestanda i moderna SharePoint Online-webbplatser finns i [prestanda i den moderna SharePoint-upplevelsen](https://docs.microsoft.com/sharepoint/modern-experience-performance).
-
-## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts-using-iframes"></a>Använda verktyget för nätverksdiagnostik för SharePoint för att analysera webb delar med hjälp av iFrames
-
-Verktyget för nätverksdiagnostik för SharePoint är ett webb läsar tillägg för de nya Microsoft Edge- https://www.microsoft.com/edge) webbläsarna (och Chrome som analyserar både SharePoint Online moderna Portal och klassisk publicerings webbplats sidor. Verktyget visar en rapport för varje sida som visar hur sidan fungerar mot en viss uppsättning prestanda villkor. Om du vill installera och läsa mer om verktyget för nätverksdiagnostik för SharePoint kan du gå till [använda diagnostikverktyget för SharePoint Online](page-diagnostics-for-spo.md).
+iFrames kan vara användbart för att förhandsgranska innehållsrika innehåll som videor eller andra media. Men eftersom iFrames läser in en separat sida i SharePoint-webbplatssidan kan innehåll som läses in i iFrame innehålla stora bilder, videor eller andra element som kan bidra till inläsningstider för sidan och som du inte kan styra över på sidan. Den här artikeln hjälper dig att förstå hur iFrames på sidorna påverkar användarens uppfattas fördröjning och hur du åtgärdar vanliga problem.
 
 >[!NOTE]
->Verktyget för nätverksdiagnostik fungerar bara för SharePoint Online och kan inte användas på en SharePoint-Systemsida.
+>Mer information om prestanda i moderna SharePoint Online-webbplatser finns i [Prestanda i det moderna SharePoint-programmet.](/sharepoint/modern-experience-performance)
 
-När du analyserar en SharePoint-webbplats med Page Diagnostics för SharePoint-verktyget kan du Visa information om webb delar som innehåller iFrames i fönstret _diagnostiktest_ . Bas linjens mått är detsamma för moderna och klassiska sidor.
+## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts-using-iframes"></a>Använda siddiagnostik för SharePoint-verktyget för att analysera webbdelar med iFrames
 
-Möjliga resultat:
-
-- **Åtgärd krävs** (röd): Sidan innehåller **tre eller fler** webb delar med iframes
-- **Förbättrings möjligheter** (gula): Sidan innehåller **en eller två** webb delar med iframes
-- **Ingen åtgärd krävs** (grön): Sidan innehåller inga webb delar med hjälp av iframes
-
-Om **webb delarna med iframes identifierat** resultat visas i avsnittet **förbättring av affärs möjligheter** eller **åtgärd krävs)** kan du klicka på resultatet för att visa de webb delar som innehåller iframes.
-
-![Resultat för verktyget Nätverksdiagnostik](../media/modern-portal-optimization/pagediag-iframe-yellow.png)
-
-## <a name="remediate-iframe-performance-issues"></a>Åtgärda problem med iFrame-prestanda
-
-Använda **webb delarna med hjälp av iframes identifierade** resultatet i verktyget diskdiagnostik för att avgöra vilka webb delar som innehåller iframes och kan komma att bidra till långsamma sid laddnings tider.
-
-iFrames är mycket långsamma eftersom de laddar en separat extern sida inklusive allt associerat innehåll, till exempel Java Script-, CSS-och Ramverks element, och kan öka platsens overhead med en faktor på två eller fler.
-
-Följ anvisningarna nedan för att säkerställa optimal användning av iFrames.
-
-- När det är möjligt kan du använda bilder i stället för iFrames om förhands granskningen är liten för att börja med eller icke-interaktiv.
-- Om du måste använda iFrames kan du minimera numret och/eller flytta ut dem från visnings området.
-- Inbäddade Office-filer som Word, Excel och PowerPoint är interaktiva, men är långsamma att läsa in. Miniatyrer med en länk till det fullständiga dokumentet är ofta bättre.
-- Inbäddade YouTube-videor och Twitter-feeds tenderar att utföra bättre i iFrames, men använder de här typerna av judiciously.
-- Isolerade webb delar är ett rimligt undantag men minimerar deras nummer och placering i visnings området.
-- Om det finns en iFrame utanför visnings området bör du överväga att använda en _IntersectionObserver_ för att försena renderingen av iframe tills den visas.
-
-Innan du gör sid ändringar för att åtgärda prestanda problem ska du anteckna sid inläsnings tiden i analys resultaten. Kör verktyget igen efter ändringen för att se om det nya resultatet är inom bas linje standarden och kontrol lera den nya sid inläsnings tiden för att se om det gjorts en förbättring.
-
-![Tids resultat för sid inläsning](../media/modern-portal-optimization/pagediag-page-load-time.png)
+Verktyget Siddiagnostik för SharePoint är ett webbläsartillägg för nya Microsoft Edge ( och Chrome-webbläsare som analyserar både moderna portaler för SharePoint Online och https://www.microsoft.com/edge) klassiska publiceringswebbplatssidor. Verktyget innehåller en rapport för varje analyserad sida som visar hur sidan fungerar mot en definierad uppsättning prestandavillkor. Om du vill installera och lära dig mer om verktyget Siddiagnostik för SharePoint går du [till Använda verktyget Siddiagnostik för SharePoint Online.](page-diagnostics-for-spo.md)
 
 >[!NOTE]
->Sid inläsnings tiden kan variera beroende på en mängd olika faktorer, till exempel nätverks belastning, tidpunkt och andra tillfälliga förhållanden. Testa sid inläsnings tid ett par gånger innan och efter det att du har gjort ändringar för att få hjälp med medelvärdet.
+>Verktyget Siddiagnostik fungerar bara för SharePoint Online och kan inte användas på en SharePoint-systemsida.
+
+När du analyserar en SharePoint-webbplatssida med verktyget Siddiagnostik för SharePoint kan du se information om webbdelar som innehåller iFrames i _fönstret Diagnostiktest._ Baslinjemåttet är detsamma för moderna och klassiska sidor.
+
+Möjliga resultat är:
+
+- **Obs!** (röd): Sidan innehåller tre **eller fler webbdelar** med iFrames
+- **Förbättringsmöjligheter** (gul): Sidan innehåller **en eller två webbdelar** med iFrames
+- **Ingen åtgärd krävs** (grön): Sidan innehåller inga webbdelar med iFrames
+
+Om de webbdelar som använder **iFrames**  upptäckta resultat visas i antingen resultatavsnittet Förbättringsmöjligheter eller Åtgärder **krävs)** kan du klicka på resultatet för att se de webbdelar som innehåller iFrames.
+
+![Resultat av verktyget Siddiagnostik](../media/modern-portal-optimization/pagediag-iframe-yellow.png)
+
+## <a name="remediate-iframe-performance-issues"></a>Åtgärda prestandaproblem i iFrame
+
+Använda **webbdelarna med iFrames** upptäckt resultat i verktyget Siddiagnostik för att avgöra vilka webbdelar som innehåller iFrames och kan bidra till långsam sidinläsning.
+
+iFrames är mycket långsamt eftersom de läser in en separat extern sida med allt associerat innehåll, till exempel javascript, CSS och framework-element, som potentiellt ökar kostnaderna för webbplatsens sida av en faktor för två eller fler.
+
+Följ vägledning nedan för optimal användning av iFrames.
+
+- Använd bilder i stället för iFrames om förhandsgranskningen är liten att börja med eller icke-interaktiva.
+- Om iFrames måste användas minimerar du numret och/eller flyttar dem från visningsområdet.
+- Inbäddade Office-filer som Word, Excel och PowerPoint är interaktiva, men tar lång tid att läsa in. Miniatyrbilder med en länk till det fullständiga dokumentet fungerar ofta bättre.
+- Inbäddade YouTube-videor och Twitter-feeds presterar ofta bättre i iFrames, men använder dessa typer av inbäddningar på ett bra sätt.
+- Isolerade webbdelar är ett rimligt undantag, men minimera deras nummer och placering i visningsområdet.
+- Om en iFrame är placerad utanför visningsområdet kan du använda en _IntersectionObserver_ för att fördröja rendering av iFrame tills den visas.
+
+Innan du gör sidändringar för att åtgärda prestandaproblem bör du anteckna inläsningstiden för sidan i analysresultatet. Kör verktyget igen efter ändringen för att se om det nya resultatet ligger inom baslinjestandarden och kontrollera inläsningstiden för den nya sidan för att se om det finns en förbättring.
+
+![Inläsningstid för sida](../media/modern-portal-optimization/pagediag-page-load-time.png)
+
+>[!NOTE]
+>Sidinläsningstiden kan variera beroende på en mängd faktorer, till exempel nätverksbelastning, tid på dagen och andra tillfälliga villkor. Du bör testa inläsningstiden några gånger före och efter ändringarna för att beräkna medelvärdet för resultatet.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
@@ -80,4 +80,4 @@ Innan du gör sid ändringar för att åtgärda prestanda problem ska du anteckn
 
 [Justera Office 365-prestanda](tune-microsoft-365-performance.md)
 
-[Prestanda i den moderna SharePoint-upplevelsen](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Prestanda i det moderna SharePoint-programmet](/sharepoint/modern-experience-performance)

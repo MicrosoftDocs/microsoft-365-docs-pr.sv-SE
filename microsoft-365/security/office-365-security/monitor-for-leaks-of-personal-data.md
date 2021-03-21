@@ -19,12 +19,12 @@ search.appverid:
 description: Läs om tre verktyg som du kan använda för att övervaka personliga data.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a8fb8557d6cd2677aeb6dcda75d34e86ada8f68c
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: b51bc5d5d3cbfa8951392f88edc6e178778206df
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290675"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921258"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Övervaka läckage av personliga data
 
@@ -83,7 +83,7 @@ Informationssäkerhets- och regelefterlevnadsteam kan använda de här verktygen
 
 Team med ansvar för informationssäkerhet kan även söka i granskningsloggen för att undersöka misstänkta dataöverträdelser och fastställa både överträdelsens grundorsak och omfattning. Denna inbyggda funktion underlättar efterlevnaden av artikel 33 och 34 i GDPR, som kräver att anmälningar lämnas in till GDPR-tillsynsmyndigheterna och till de registrerade själva vid en dataöverträdelse under en viss tidsperiod. Poster i granskningsloggen sparas bara i 90 dagar i tjänsten, men det rekommenderas ofta (och många organisationer har krävt) att loggarna sparas under längre tidsperioder.
 
-Det finns lösningar som du kan använda för att prenumerera på enhetliga granskningsloggar via API för Microsoft Management Activity och som kan lagra loggposter efter behov och tillhandahålla avancerade instrumentpaneler och aviseringar. Ett exempel är [Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/azure/operations-management-suite/oms-solution-office-365).
+Det finns lösningar som du kan använda för att prenumerera på enhetliga granskningsloggar via API för Microsoft Management Activity och som kan lagra loggposter efter behov och tillhandahålla avancerade instrumentpaneler och aviseringar. Ett exempel är [Microsoft Operations Management Suite (OMS)](/azure/operations-management-suite/oms-solution-office-365).
 
 Mer information om aviseringsprinciper och sökning i granskningsloggen:
 
@@ -95,7 +95,7 @@ Mer information om aviseringsprinciper och sökning i granskningsloggen:
 
 - [Söka i granskningsloggen](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
-- [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
+- [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
 
 - [Detaljerade egenskaper i granskningsloggen](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
@@ -130,11 +130,11 @@ OBS! Kom ihåg att aktivera automatiskt genomsökning av filnamn för Azure Info
 
 Mer information:
 
-- [Distribuera Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
+- [Distribuera Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
 
 - [Mer information om Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
-- [Blockera nedladdning av känslig information med Microsoft Cloud App Security-proxyn](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
+- [Blockera nedladdning av känslig information med Microsoft Cloud App Security-proxyn](/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>Exempel på fil- och aktivitetsprinciper som identifierar delning av personliga data
 

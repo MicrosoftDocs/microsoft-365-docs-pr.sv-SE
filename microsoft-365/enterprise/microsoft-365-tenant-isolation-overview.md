@@ -1,5 +1,5 @@
 ---
-title: Klient isolering i Microsoft 365
+title: Klientisolering i Microsoft 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,41 +14,41 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Den här artikeln innehåller en sammanfattning av hur Microsoft tillämpar klient isolering i moln tjänster som Microsoft 365.
+description: Den här artikeln innehåller en sammanfattning av hur Microsoft tillämpar innehavarisolering i molntjänster som Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c9af522c71f3b089c8f2f198f861bcac8a0011a2
-ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
+ms.openlocfilehash: 7c5be65186b75f6056a64b776e4f0d25bcd55eb1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48384934"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923082"
 ---
-# <a name="tenant-isolation-in-microsoft-365"></a>Klient isolering i Microsoft 365
+# <a name="tenant-isolation-in-microsoft-365"></a>Klientisolering i Microsoft 365
 
-En av de främsta fördelarna med Cloud Computing är begreppet gemensam, gemensam infrastruktur för många kunder samtidigt, vilket leder till stor drifts för delar. Det här konceptet kallas för *flera organisationer*. Microsoft arbetar kontinuerligt för att säkerställa att multi-Tenant-arkitekturer i våra moln tjänster har stöd för säkerhet, konfidentialitet, integritet, integritet och tillgänglighet.
+En av de främsta fördelarna med molnbaserad databehandling är konceptet med en delad, gemensam infrastruktur över flera kunder samtidigt, vilket leder till att många kunder blir större. Det här begreppet kallas *för flera innehavare.* Microsoft arbetar kontinuerligt för att säkerställa att arkitekturer för flera innehavare i våra molntjänster har stöd för säkerhet på företagsnivå, konfidentialitet, sekretess, integritet och tillgänglighetsstandarder.
 
-Baserat på de betydande investeringar och erfarenhet som samlats in från [tillförlitliga datorer](https://www.microsoft.com/trust-center) och [livs cykeln för säkerhets utveckling](https://www.microsoft.com/securityengineering/sdl/)har Microsofts moln tjänster utformats med antagandet att alla klient organisationer kan vara farliga för alla andra klient organisationer, och vi har implementerat säkerhets åtgärder för att förhindra att en klient organisation påverkar säkerheten eller tjänsten hos en annan klient organisation eller åtkomst till innehållet i en annan klient organisation.
+Microsofts molntjänster har utformats utifrån antagandet [](https://www.microsoft.com/securityengineering/sdl/)att alla innehavare potentiellt är aktuella för alla andra klientorganisationen och vi har implementerat säkerhetsåtgärder för att förhindra att en klientorganisations säkerhet eller tjänst påverkar säkerheten eller tjänsten hos en annan klientorganisation, eller att få åtkomst till innehållet i en annan klientorganisation. [](https://www.microsoft.com/trust-center)
 
-Två primära mål för underhåll av klient isolering i en miljö med flera innehavare är:
+De två primära målen med att behålla innehavarisolering i en miljö med flera klientorganisationen är:
 
-1.    Förhindra läckage av eller obehörig åtkomst till kund innehåll mellan klient organisationer; och
-2.    Förhindra att en klient organisations åtgärder påverkar tjänsten för en annan klient organisation negativt
+1.    Förhindra läckage av, eller obehörig åtkomst till, kundinnehåll i flera klientorganisationen. och
+2.    Förhindra att en klientorganisations åtgärder påverkar tjänsten för en annan klientorganisation negativt
 
-Flera former av skydd har implementerats i Microsoft 365 för att förhindra att kunder kan kompromissa med Microsoft 365-tjänster och-program eller skaffa obehörig åtkomst till information om andra klient organisationer eller Microsoft 365-systemet, inklusive:
+Flera olika former av skydd har implementerats i Microsoft 365 för att förhindra att kunder komprometterade Microsoft 365-tjänster eller -program eller få obehörig åtkomst till informationen från andra klientprogram eller själva Microsoft 365-systemet, inklusive:
 
-- Logisk isolering av kund innehåll inom varje klient organisation för Microsoft 365-tjänster uppnås genom Azure Active Directory-auktorisering och rollbaserad åtkomst kontroll.
-- I SharePoint Online finns mekanismer för data isolering på lagrings nivån.
-- Microsoft använder rigorös fysisk säkerhet, bakgrunds gallrings och en kryptering med flera nivåer för att skydda konfidentialitet och integritet hos kund innehåll. Alla Microsoft 365-datacenter har till gång till bio metriska kontroller, med de flesta krav på att en hand dator får fysisk åtkomst. Dessutom måste alla amerikanska Microsoft-anställda genomföra en vanlig bakgrunds kontroll som en del av anslags processen. Mer information om de kontroller som används för administrativ åtkomst i Microsoft 365 finns i [microsoft 365 Administrative Access Controls](microsoft-365-administrative-access-controls-overview.md).
-- I Microsoft 365 används teknikbaserade tekniker som krypterar kund innehåll på rest och under överföring, inklusive BitLocker, kryptering för alla filer, TLS (Transport Layer Security) och IPsec (Internet Protocol Security). Specifik information om kryptering i Microsoft 365 finns i [data krypterings teknologier i microsoft 365](../compliance/office-365-encryption-in-the-microsoft-cloud-overview.md).
+- Logisk avgränsning av kundinnehållet i varje klientorganisation för Microsoft 365-tjänster kan åstadkommas genom Azure Active Directory-auktorisering och rollbaserad åtkomstkontroll.
+- SharePoint Online tillhandahåller mekanismer för dataisolering på lagringsnivån.
+- Microsoft använder fysisk säkerhet, bakgrundskontroller och en flerlagerskrypteringsstrategi för att skydda kundinnehållets konfidentialitet och integritet. Alla Microsoft 365-datacenter har biometriska åtkomstkontroller, med de flesta krav på palmutskrifter för att få fysisk åtkomst. Dessutom krävs alla USA-baserade Microsoft-anställda för att genomföra en standardbakgrundskontroll som en del av anställningsprocessen. Mer information om de kontroller som används för administrativ åtkomst i Microsoft 365 finns i [Administrativa åtkomstkontroller i Microsoft 365.](/compliance/assurance/assurance-administrative-access-controls-overview)
+- Microsoft 365 använder tjänstebaserade tekniker som krypterar kundinnehåll vid vila och överföring, inklusive BitLocker, kryptering per fil, TLS (Transport Layer Security) och IPsec (Internet Protocol Security). Specifik information om kryptering i Microsoft 365 finns i [Datakrypteringsteknik i Microsoft 365.](../compliance/office-365-encryption-in-the-microsoft-cloud-overview.md)
 
-Tillsammans ger de ovanstående skydden robusta logiska isolerings kontroller som skyddar mot hotets skydd och mildrande ämnen.
+Tillsammans tillhandahåller de ovan listade skydden robusta logiska avgränsningskontroller som tillhandahåller skydd mot hot och åtgärder som motsvarar det som tillhandahålls av fysisk avgränsning.
 
 ## <a name="related-links"></a>Relaterade länkar
 
 - [Isolering och åtkomstkontroll i Azure Active Directory](microsoft-365-isolation-in-azure-active-directory.md)
 - [Klientisolering i Office Graph och Delve](microsoft-365-isolation-in-graph-and-delve.md)
-- [Klient isolering i Microsoft 365 search](microsoft-365-isolation-in-microsoft-365-search.md)
-- [Klient isolering i Office 365 Video](microsoft-365-isolation-in-microsoft-365-video.md)
-- [Resursgränser](microsoft-365-resource-limits.md)
-- [Övervaka och testa klientorganisations begränsningar](microsoft-365-monitoring-and-testing.md)
-- [Isolering och åtkomst kontroll i Microsoft 365](microsoft-365-isolation-in-microsoft-365.md)
+- [Klientisolering i Microsoft 365-sökning](microsoft-365-isolation-in-microsoft-365-search.md)
+- [Innehavarisolering i Office 365 Video](microsoft-365-isolation-in-microsoft-365-video.md)
+- [Resursgränser](/compliance/assurance/assurance-resource-limits)
+- [Övervaka och testa klientorganisations begränsningar](/compliance/assurance/assurance-monitoring-and-testing)
+- [Isolering och åtkomstkontroll i Microsoft 365](microsoft-365-isolation-in-microsoft-365.md)

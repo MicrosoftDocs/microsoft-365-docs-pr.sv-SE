@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Hälsostatus för Microsoft 365-tjänsten
-ms.openlocfilehash: f7bb310452f841c04eabdd683d3ec82b4ad2b57a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d0e32fb34cf1d14a5da8c10a07551cee00e2421a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686608"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923118"
 ---
 # <a name="microsoft-365-network-health-status"></a>Hälsostatus för Microsoft 365-nätverk
 
@@ -44,5 +44,5 @@ När vi upptäcker betydande problem inom Microsofts globala nätverk eller med 
 Använd de här resurserna för att förbättra nätverksanvändningen för Microsoft-tjänster.
 
 - [Optimera Microsoft 365-anslutningen för fjärranvändare med uppdelad VPN-tunnel](microsoft-365-vpn-split-tunnel.md)
-- [Microsoft 365 principer för nätverksanslutningar](https://aka.ms/pnc)
-- [Arbeta med Azure Networking Services på distans](https://docs.microsoft.com/azure/networking/working-remotely-support)
+- [Microsoft 365 principer för nätverksanslutningar](./microsoft-365-network-connectivity-principles.md)
+- [Arbeta med Azure Networking Services på distans](/azure/networking/working-remotely-support)

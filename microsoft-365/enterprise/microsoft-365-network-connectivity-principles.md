@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: I den här artikeln får du de senaste anvisningarna för att optimera Microsoft 365-nätverksanslutningen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6f104f53abd0a9aa2376b09c93af96d7f8178e8
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: e0391133721270c0fdfb288b5d26ab23f301a844
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519745"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923296"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Microsoft 365 principer för nätverksanslutningar
 
@@ -226,9 +226,9 @@ En holistisk metod för förbättrad säkerhet bör innehålla övervägande til
   - Minska nätverkssäkerhetskraven för företagets WAN-kant
   - Vissa säkerhetsenheter för nätverksområden, t. ex. brandväggar är fortfarande nödvändiga men belastningen minskar
   - Säkerställ lokal utgång för Microsoft 365-trafik
-- Förbättringar kan åtgärdas stegvis enligt beskrivningen i avsnittet [Stegvis optimering](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt). En del optimeringstekniker kan erbjuda bättre förhållande mellan kostnad/fördel beroende på din nätverksarkitektur, och du bör välja optimeringar som passar bäst för din organisation.
+- Förbättringar kan åtgärdas stegvis enligt beskrivningen i avsnittet [Stegvis optimering](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt). En del optimeringstekniker kan erbjuda bättre intervall för kostnader/fördel beroende på ditt nätverks arkitektur och du bör välja optimeringar som passar bäst för din organisation.
 
-Mer information om Microsoft 365 Säkerhet och efterlevnad finns i artikeln [Microsoft 365 Säkerhet](https://docs.microsoft.com/microsoft-365/security) och [Microsoft 365 Efterlevnad](https://docs.microsoft.com/microsoft-365/compliance).
+Mer information om Microsoft 365 Säkerhet och efterlevnad finns i artikeln [Microsoft 365 Säkerhet](../security/index.yml) och [Microsoft 365 Efterlevnad](../compliance/index.yml).
   
 ## <a name="incremental-optimization"></a>Stegvis optimering
 <a name="BKMK_IncOpt"> </a>

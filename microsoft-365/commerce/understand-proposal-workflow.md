@@ -1,5 +1,5 @@
 ---
-title: Förstå arbets flödet för förslag
+title: Förstå arbetsflödet för förslag
 f1.keywords:
 - CSH
 ms.author: cmcatee
@@ -14,170 +14,170 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Lär dig mer om förslag som hjälper dig att köpa Microsoft-produkter och-tjänster.
+description: Läs mer om förslag som hjälper dig att köpa Produkter och tjänster från Microsoft.
 ROBOTS: NOINDEX
-ms.openlocfilehash: d0e8c6fd9973573d4e49f7512e4394f7534bd97c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b7165db7acd33f9175b6d9d3c86b1f93b2486c43
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646805"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921810"
 ---
-# <a name="understand-the-proposal-workflow"></a>Förstå arbets flödet för förslag
+# <a name="understand-the-proposal-workflow"></a>Förstå arbetsflödet för förslag
 
-Ett förslag är ett formellt anbud från Microsoft för organisationen för att köpa Microsofts produkter och tjänster. Du arbetar direkt med en Microsoft-representant för att fastställa specifika produkter, tjänster och villkor för ditt förslag.
+Ett förslag är ett formellt erbjudande från Microsoft om att din organisation ska köpa Microsofts produkter och tjänster. Du arbetar direkt med en Microsoft-representant för att fastställa specifika produkter, tjänster och villkor för ditt förslag.
 
-Ett Microsoft-ombud utkast till ett förslag som innehåller de objekt som du och din representant har diskuterat. Representanten skickar ett e-postmeddelande med en länk till webbplatsen för förslag. Webbplatsen innehåller förslaget för dig och din organisation.
+En Microsoft-representant utkast till ett förslag som innehåller de objekt som du och din representant diskuterat. Representanten skickar ett e-postmeddelande med en länk till förslagswebbplatsen. Webbplatsen innehåller förslag som förberetts specifikt för dig och din organisation.
 
-När du har fått e-postmeddelandet kan du följa länken till förslags webbplatsen. När du har loggat in på webbplatsen kan du starta gransknings processen för förslag.
+När du får e-postmeddelandet följer du länken till förslagswebbplatsen. När du har loggat in på webbplatsen kan du påbörja granskningsprocessen för förslaget.
 
-## <a name="prerequisites-for-buying-items-with-a-proposal"></a>Förutsättningar för att köpa artiklar med ett förslag
+## <a name="prerequisites-for-buying-items-with-a-proposal"></a>Krav för att köpa produkter med ett förslag
 
-Innan du kan köpa objekt för ett förslag måste du ha ett fakturerings konto och ett avtal med Microsoft.
+Innan du kan köpa artiklar till ett förslag måste du ha ett faktureringskonto och ett avtal med Microsoft.
 
-### <a name="billing-account"></a>Fakturerings konto
+### <a name="billing-account"></a>Faktureringskonto
 
-Du använder ett fakturerings konto för att hantera dina konto inställningar, fakturor, fakturerings profiler och produkter och tjänster. Om du inte redan har ett fakturerings konto skapar din Microsoft-representant ett åt dig.
-Annars använder de ett befintligt fakturerings konto för din organisation, så länge du har tillstånd att använda fakturerings kontot.
+Du använder ett faktureringskonto för att hantera dina kontoinställningar, fakturor, faktureringsprofiler och produkter och tjänster. Om du inte redan har ett faktureringskonto skapar din Microsoft-representant ett åt dig.
+Annars använder de ett befintligt faktureringskonto för din organisation, så länge du har behörighet att använda det faktureringskontot.
 
-Konto behörigheter för fakturering hanteras av ägaren till fakturerings kontot.
-Globala administratörer kan tilldela sig själva rollen som ägare av fakturerings konto och sedan göra andra fakturerings konto ägare.
+Faktureringskontobehörigheter hanteras av faktureringskontots ägare.
+Globala administratörer kan tilldela sig själva rollen som faktureringskontoägare och sedan göra andra personer till ägare av faktureringskonto.
 
-Mer information om fakturerings konton finns i [hantera fakturerings konton](manage-billing-accounts.md).
+Mer information om faktureringskonton finns i [Hantera faktureringskonton.](manage-billing-accounts.md)
 
-### <a name="microsoft-customer-agreement"></a>Microsoft-kundavtal
+### <a name="microsoft-customer-agreement"></a>Microsofts kundavtal
 
-Med Microsoft Customer Agreement (MCA) kan en organisation köpa Microsofts produkter och tjänster. Mer information finns i [Microsoft Customer Agreement](https://www.microsoft.com/en-us/Licensing/how-to-buy/microsoft-customer-agreement).
+Med Microsofts kundavtal (MCA) kan en organisation köpa Microsofts produkter och tjänster. Mer information finns i [Microsofts kundavtal.](https://www.microsoft.com/en-us/Licensing/how-to-buy/microsoft-customer-agreement)
 
-## <a name="permissions-needed-to-sign-an-agreement-or-pay-for-items"></a>Behörigheter som krävs för att underteckna ett avtal eller betala för artiklar
+## <a name="permissions-needed-to-sign-an-agreement-or-pay-for-items"></a>Behörigheter som krävs för att signera ett avtal eller betala för artiklar
 
-Om du inte har en tilldelad roll i fakturerings kontot har du tilldelats rollen grundläggande läsare när du visar förslaget. Med den här rollen kan du Visa, men inte vidta någon åtgärd, för förslaget. Du måste vara tilldelad rollen fakturerings-eller fakturerings konto deltagare innan du kan signera ett avtal eller köpa produkter och tjänster. Du kan tilldela den här rollen till ditt fakturerings konto.
+Om du inte har en tilldelad roll i faktureringskontot får du den grundläggande läsrollen när du visar förslaget. Med den här rollen kan du visa, men inte vidta någon åtgärd för, förslaget. Du måste ha tilldelats rollen som faktureringskontoägare eller faktureringskontodeltagare innan du kan signera ett avtal eller köpa produkter och tjänster. Din faktureringskontoägare kan tilldela den här rollen till dig.
 
-Mer information om fakturerings konto roller finns i [förstå åtkomst till fakturerings konton](manage-billing-accounts.md#understand-access-to-billing-accounts).
+Mer information om faktureringskontoroller finns i [Förstå åtkomst till faktureringskonton.](manage-billing-accounts.md#understand-access-to-billing-accounts)
 
-Om det är ett nytt fakturerings konto och ingen har godkänt ett avtal blir du automatiskt fakturerings kontots ägare, förutsatt att du:
+Om det här är ett nytt faktureringskonto, och ingen har accepterat ett avtal, blir du automatiskt ägare till faktureringskontot, förutsatt att du:
 
-- Är personen som heter i förslaget \
+- Är den person som namnges i förslaget\
     ELLER
-- Är redan en [Global Azure Active Directory-administratör](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) för din organisation
+- Är redan global [administratör för Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) för din organisation
 
-## <a name="what-is-the-overall-workflow"></a>Vad är det övergripande arbets flödet?
+## <a name="what-is-the-overall-workflow"></a>Vad är det övergripande arbetsflödet?
 
-Det övergripande förslags arbets flödet ser ut så här:
+Det övergripande arbetsflödet för förslag ser ut så här:
 
 - Din Microsoft-representant skapar ett förslag och skickar en länk till dig i ett e-postmeddelande.
 
-- Du använder länken för att gå till inloggnings sidan för förslag.
+- Du använder länken för att gå till inloggningssidan för förslag.
 
-- Du granskar organisationens information.
+- Du granskar informationen om din organisation.
 
-- Du granskar förslaget, godkänner MCA om det behövs och slutför utcheckningen.
+- Du granskar förslaget, accepterar MCA:en om det behövs och slutför kassaprocessen.
 
     > [!IMPORTANT]
-    > Du måste ha behörighet att signera en MCA åt din organisation. Om du inte har den här myndigheten måste någon som gör det här steget.
+    > Du måste ha behörighet att signera en MCA för din organisations räkning. Om du inte har den behörigheten måste någon som måste göra det här steget.
 
-- När utcheckningen är klar får du ytterligare länkar för att konfigurera produkter och tjänster.
+- När utcheckningen är klar får du ytterligare länkar för att konfigurera dina produkter och tjänster.
 
-## <a name="proposal-terms"></a>Villkor för förslag
+## <a name="proposal-terms"></a>Förslagsvillkor
 
-Följande tabell innehåller termer och definitioner som visas i ditt förslag och på webbplatsen för förslag.
+Följande tabell innehåller termer och definitioner som visas i ditt förslag och på förslagswebbplatsen.
 
 | **Term** | **Definition** |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Fakturerings konto | Ett konto som används för att hantera dina konto inställningar, fakturor, betalnings metoder och produkter. |
-| Fakturerings profil | Information om din organisation där du kan anpassa vilka objekt som ska ingå i din faktura och hur du betalar för dina fakturor. Fakturerings profilen inkluderar namnet på fakturerings kontot, betalnings metoderna som används för den specifika fakturerings profilen, kontakt information, faktura inställningar och behörigheter som gör att du kan ändra fakturerings profil, betala räkningar och köpa produkter och tjänster. |
-| Befintliga avtal | Alla avtal som din organisation redan har på plats med Microsoft. Detta kan inkludera, men är inte begränsat till, ett företags avtal, Microsoft Product & Services-avtal eller Microsoft-kundavtal. |
-| Microsoft Customer Agreement (MCA) | Ett avtal som beskriver villkoren för kontot som innehas av din organisation hos Microsoft. |
-| Microsoft-representant | En godkänd Microsoft-representant som förbereder ett förslag för dig och din organisation. |
-| Organisation | En juridisk person som använder Microsofts produkter, teknologier eller tjänster. |
-| För beredd av | E-postadressen till Microsoft-representanten som har bearbetat förslaget. |
-| Kompletterande villkor | Ändringar av MCA som innehåller termer som är specifika för din organisation. Om du vill acceptera kompletterande villkor måste du använda in för att spela in en elektronisk signatur. |
+| Faktureringskonto | Ett konto som används för att hantera dina kontoinställningar, fakturor, betalningsmetoder och produkter. |
+| Faktureringsprofil | Information om din organisation som låter dig anpassa vilka artiklar som ingår på fakturan och hur du betalar för fakturor. Faktureringsprofilen innehåller namnet på faktureringskontot, betalningsmetoderna som används för den specifika faktureringsprofilen, kontaktinformation, fakturainställningar och behörigheter som gör att du kan ändra faktureringsprofilen, betala räkningar samt köpa produkter och tjänster. |
+| Befintliga avtal | Alla avtal som din organisation redan har på plats med Microsoft. Detta kan inkludera, men är inte begränsat till, ett Enterprise-avtal, Microsofts & för produkter och tjänster eller Microsofts kundavtal. |
+| Microsofts kundavtal (MCA) | Ett avtal som beskriver de allmänna villkoren för kontot som din organisation kan ha med Microsoft. |
+| Microsoft-representant | En auktoriserad Microsoft-representant som förbereder ett förslag åt dig och din organisation. |
+| Organisation | En juridisk person som använder Microsofts produkter, tekniker eller tjänster. |
+| Förbereds av | E-postadressen till den Microsoft-representant som förberett förslaget. |
+| Kompletterande villkor | Gäller för den MCA som innehåller termer som är specifika för din organisation. Om du vill acceptera kompletterande villkor, måste du använda DocuSign för att spela in en elektronisk signatur. |
 
-## <a name="step-1-review-organization-information"></a>Steg 1: granska organisationsinformation
+## <a name="step-1-review-organization-information"></a>Steg 1: Granska organisationsinformation
 
-När du har loggat in är det första du ska granska organisationens information.
+När du har loggat in bör du först granska informationen om din organisation.
 
 ### <a name="your-organization"></a>Din organisation
 
-I avsnittet **organisation** visas det konto som är kopplat till det. Fakturerings konto informationen hämtas antingen från ett befintligt fakturerings konto eller skapas för dig av Microsoft-representanten. Om organisationen är ett dotter bolag till en annan organisation kan du också se ett avsnitt om **organisationens** namn och adress.
+I **avsnittet Din** organisation visas det faktureringskonto som är kopplat till det. Faktureringskontoinformationen hämtas antingen från ett befintligt faktureringskonto eller skapas åt dig av Microsoft-representanten. Om din organisation är anknutna till en annan organisation kan du även se avsnittet **Lead organization** med namn och adress till den organisationen.
 
-Om det är första gången din organisation etablerar en kommersiell relation med Microsoft och du ännu **inte har** signerat en MCA kan du kontakta den som **skapade den för** att göra ändringar. När du har godkänt en MCA kan du granska och ändra organisationens adress och kontakt information på sidan [fakturerings konton](https://go.microsoft.com/fwlink/p/?linkid=2084771) i administrations centret för Microsoft 365. Om ditt organisations namn ändras öppnar du en tjänst förfrågan för att uppdatera den. [Lär dig hur du öppnar en tjänst förfrågan](../admin/contact-support-for-business-products.md)
+Om det är första gången din organisation upprättar en kommersiell relation med Microsoft, och du ännu  inte har signerat en MCA, kontaktar du representanten för att göra ändringar åt dig om informationen **under** din organisation eller leadorganisation är felaktig. När du har accepterat en MCA kan du granska och ändra organisationens adress och kontaktinformation på sidan Faktureringskonton i administrationscentret för Microsoft 365. [](https://go.microsoft.com/fwlink/p/?linkid=2084771) Om organisationens namn ändras öppnar du en tjänstförfrågan för att få den uppdaterad. [Lär dig hur du öppnar en tjänstbegäran](../admin/contact-support-for-business-products.md)
 
 ### <a name="your-information"></a>Din information
 
-Om du är en ny kund anger du ditt namn, din e-postadress och ditt telefonnummer under **informationen**och väljer sedan **Spara**. Om du redan är en kund kontrollerar du att informationen är korrekt. Om du vill göra ändringar väljer du **Redigera**, gör nödvändiga ändringar och väljer sedan **Spara**.
+Om du är ny kund anger du namn, e-postadress och telefonnummer under **Din information** och väljer sedan **Spara**. Om du är kund verifierar du att informationen är korrekt. Om du vill göra eventuella korrigeringar väljer **du Redigera**, gör de nödvändiga ändringarna och väljer sedan **Spara**.
 
-När du är klar väljer du **Fortsätt** för att gå vidare till nästa steg.
+När du är klar väljer du **Fortsätt för** att gå vidare till nästa steg.
 
-## <a name="step-2-review-proposal"></a>Steg 2: granska förslag
+## <a name="step-2-review-proposal"></a>Steg 2: Granska förslag
 
-Förslaget innehåller information om de objekt som du har diskuterat med Microsoft-representanten. Du kan vidarebefordra e-postmeddelandet med förslags länken för att dela den med andra intressenter i organisationen. Alla andra som använder länken har en skrivskyddad vy av förslaget.
+Förslaget innehåller information om de punkter som du har diskuterat med din Microsoft-representant. Du kan vidarebefordra e-postmeddelandet med länken till förslaget för att dela det med andra intressenter i organisationen. Alla andra som använder länken har en skrivskyddsvy av förslaget.
 
-Om du vill göra ändringar i förslaget efter granskning, kontaktar du din Microsoft-representant.
+Om du vill göra ändringar i förslaget efter granskning kontaktar du din Microsoft-representant.
 
-### <a name="proposal-contents"></a>Förslags innehåll
+### <a name="proposal-contents"></a>Förslagsinnehåll
 
 Förslaget innehåller följande information:
 
-| Del | Beskrivning |
+| Avsnitt | Beskrivning |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Organisations namn | Namnet på den organisation som förslaget var bearbetat för. |
-| Giltigt till datum | Det datum då förslags erbjudandet upphör att gälla. Om du missar det här utgångs datumet kontaktar du din Microsoft-representant för att tala om att du fortfarande är intresse rad av förslaget. |
+| Organisationsnamn | Namnet på den organisation som förslaget förberetts för. |
+| Giltigt till-datum | Datumet då erbjudandet förfaller. Om du missar det här utgångsdatumet kontaktar du din Microsoft-representant för att meddela dem att du fortfarande är intresserad av förslaget. |
 | Valuta | Den valuta som används för att beräkna kostnaden för artiklar i förslaget. |
-| För beredd för | Fakturerings konto namn, adress, kontaktens e-postadress och telefonnummer för den person som begärde förslaget. |
-| För beredd av | E-postadressen till Microsoft-representanten som har bearbetat förslaget. |
-| Sammanfattning | Visar delsumma som är associerad med förslaget. Vid behov visas även valuta priset (FX) som används för att beräkna kostnaderna. |
-| Förslags poster | Det här avsnittet innehåller kvantitet, enhets pris och delsumma för alla artiklar som ingår i förslaget. |
-| Nästa steg | I det här avsnittet visas nödvändig åtgärd. |
+| Förbered dig för | Namn, adress, kontakt-e-postadress och telefonnummer för faktureringskontot till den person som begärde förslaget. |
+| Förbereds av | E-postadressen till den Microsoft-representant som förberett förslaget. |
+| Sammanfattning | Visar delsumma som är kopplad till förslaget. Vid behov visas även den kurs för utländsk valuta (FX) som används för att beräkna kostnader. |
+| Förslag på radobjekt | Det här avsnittet innehåller antal, enhetspris och delsumma för alla artiklar som ingår i förslaget. |
+| Nästa steg | I det här avsnittet anges vilken åtgärd du måste vidta. |
 
-Om du vill signera en MCA väljer du knappen under **Nästa steg**. Om du måste signera tilläggs villkor kommer en länk till in webbplats där du följer anvisningarna för att signera dokumentet.
+Om du vill signera en MCA väljer du knappen under **Nästa steg.** Om du måste signera kompletterande villkor tar en länk dig till DocuSign-webbplatsen, där du följer anvisningarna för att signera dokumentet.
 
-När du har loggat alla nödvändiga avtal eller kompletterande villkor väljer **du gå till kassan**.
+När du har signerat alla nödvändiga avtal eller kompletterande villkor väljer du **Gå till kassan.**
 
-## <a name="step-3-checkout"></a>Steg 3: utcheckning
+## <a name="step-3-checkout"></a>Steg 3: Gå till kassan
 
-Sidan utcheckning innehåller följande avsnitt:
+Utcheckningssidan innehåller följande avsnitt:
 
 ### <a name="sold-to"></a>Såld till
 
-I det här avsnittet visas det fakturerings konto som används för förslaget. Om du behöver ändra någon information väljer du länken **Redigera** . Du kan också använda länken **Redigera** för att lägga till företagets moms-ID. Moms-ID: t måste vara relaterat till det land som anges i avsnittet **såld till** . Om du har en skatte befrielse måste du öppna ett support ärende för att begära skattebefriad status.
+I det här avsnittet visas det faktureringskonto som användes för förslaget. Om du behöver ändra någon information väljer du **länken** Redigera. Du kan också använda länken **Redigera** för att lägga till din organisations skatte-ID. Skatte-ID måste vara relaterat till det land som anges i **avsnittet Såld till.** Om du har ett skatteundantag måste du öppna ett supportbegäran om du vill begära undantag från beskattning.
 
-Om du vill veta mer om moms-ID: n och hur du ansöker om skattebefriad-status, se [skatte information](billing-and-payments/tax-information.md).
+Mer information om skatte-ID och hur du ansökar om undantag från beskattning finns [i Skatteinformation.](billing-and-payments/tax-information.md)
 
-### <a name="billed-to"></a>Fakturerat till
+### <a name="billed-to"></a>Faktureras till
 
-I det här avsnittet visas den betalnings profil som används för att bestämma vilka artiklar som ska ingå i din faktura och hur du betalar dina fakturor. Varje betalnings cykel får du en separat faktura för varje fakturerings profil. Du betalar för fakturor genom att använda antingen check-eller tråd överföring eller Azure-förskotts betalning. Om du inte redan har en fakturerings profil skapar din Microsoft-representant en åt dig. Vid utcheckning kan du välja en annan fakturerings profil om du har en, ändra namnet på fakturerings profilen eller lägga till en P.O. numeriska. Du kan också skapa en ny fakturerings profil.
+I det här avsnittet visas faktureringsprofilen som används för att fastställa vilka artiklar som ingår på fakturan och hur du betalar dina fakturor. Varje faktureringsperiod får du en separat faktura för varje faktureringsprofil. Du betalar för fakturor med check eller banköverföring eller Azure-förskottsbetalning. Om du inte redan har en faktureringsprofil skapar din Microsoft-representant en åt dig. I kassan kan du välja en annan faktureringsprofil, om du har en, ändra namnet på faktureringsprofilen eller lägga till en P.O. tal. Du kan också skapa en ny faktureringsprofil.
 
-Information om fakturerings profiler finns i [hantera fakturerings profiler](billing-and-payments/manage-billing-profiles.md).
+Mer information om faktureringsprofiler finns i [Hantera faktureringsprofiler.](billing-and-payments/manage-billing-profiles.md)
 
-### <a name="proposal-items-in-this-order"></a>Förslags poster i den här ordningen
+### <a name="proposal-items-in-this-order"></a>Förslag på artiklar i denna order
 
 I det här avsnittet visas en lista över alla objekt som ingår i förslaget. Listan kan innehålla en eller flera av följande kategorier:
 
-- **Kompletterande villkor** En lista över eventuella ändringar i MCA som innehåller termer för organisationen. Listan kan till exempel innehålla HIPAA eller GDPR villkor.
+- **Kompletterande villkor** En lista över alla som är med i den mca som innehåller villkor för din organisation. Den här listan kan till exempel innehålla HIPAA eller GDPR-villkor.
 
-- **Köp nu** En lista över artiklar som du betalar för under utcheckningen i slutet av arbets flödet för godkännande av förslag.
+- **Köp nu** En lista över objekt som du betalar för i kassan i slutet av arbetsflödet för accepterande av förslag.
 
-- **Rabatter (kopplade till framtida avgifter)** En lista med rabatter som du får som en del av förslaget.
+- **Rabatter (gäller för framtida debiteringar)** En lista med rabatter som du får som en del av förslaget.
 
-- **Ingår** En lista med objekt som ingår i förslags paketet utan extra avgift. Vissa av dessa objekt kan ha en kostnad som är kopplad till dem i framtiden.
+- **Ingår** En lista över objekt som ingår som en del av förslagspaketet utan extra kostnad. Vissa av dessa artiklar kan ha en kostnad kopplad till dem i framtiden.
 
 ### <a name="summary"></a>Sammanfattning
 
-I det här avsnittet visas antalet artiklar som du betalar för, Delsumma, uppskattad moms och total beloppet för beställningen.
+I det här avsnittet visas antalet artiklar som ska betalas, delsumman, den uppskattade momsen och det totala beloppet för ordern.
 
-Om du vill placera beställningen väljer du **Lägg** till eller **acceptera avtal & order**.
+Lägg ordern genom att välja **Lägg order eller** Acceptera avtalet och & lägg **order**.
 
-När du har placerat beställningen får du en bekräftelse med nästa steg. Om du har köpt en Azure-plan är nästa steg att konfigurera ditt fakturerings konto i Azure-portalen.
+När du har beställt får du en bekräftelse på att du ska göra nästa steg. Om du har köpt ett Azure-abonnemang är nästa steg att konfigurera ditt faktureringskonto i Azure Portal.
 
-## <a name="step-4-set-up-your-new-billing-account-azure-customers-only"></a>Steg 4: Konfigurera ditt nya fakturerings konto (endast för Azure-kunder)
+## <a name="step-4-set-up-your-new-billing-account-azure-customers-only"></a>Steg 4: Konfigurera ditt nya faktureringskonto (endast Azure-kunder)
 
-Om du är en ny kund och har köpt Azure-produkter som en del av förslaget är nästa steg att skapa ett nytt fakturerings konto. Mer information finns i [Konfigurera ett fakturerings konto för ett Microsoft-kundavtal](https://docs.microsoft.com/azure/cost-management-billing/manage/mca-setup-account).
+Om du är ny kund och har köpt Azure-produkter som en del av förslaget är nästa steg att skapa ett nytt faktureringskonto. Mer information finns i Konfigurera [ditt faktureringskonto för ett Microsoft-kundavtal.](/azure/cost-management-billing/manage/mca-setup-account)
 
-Om du är en befintlig Azure-kund med ett företags avtal och du loggar en MCA för första gången är nästa steg att lära sig mer om ändringarna mellan avtalen och hur du slutför uppgifter med ditt nya fakturerings konto. Mer information finns i [slutföra uppgifter om ett Microsoft-kundavtal i ditt fakturerings konto](https://docs.microsoft.com/azure/cost-management-billing/manage/mca-enterprise-operations).
+Om du är en befintlig Azure-kund med ett Enterprise-avtal och du signerar en MCA för första gången är nästa steg att lära dig mer om ändringarna mellan avtal och hur du utför uppgifter med ditt nya faktureringskonto. Mer information finns i Slutför [Enterprise Agreement-uppgifter i ditt faktureringskonto för ett Microsoft-kundavtal.](/azure/cost-management-billing/manage/mca-enterprise-operations)
 
-## <a name="understand-invoicing"></a>Förstå fakturering
+## <a name="understand-invoicing"></a>Förstå invoicing
 
-När du har checkat ut och slutfört beställningen skickas en ursprunglig faktura inom 24-48 timmar. Efter det tar du emot fakturor dygnet runt varje månad. Månads fakturan innehåller avgifter från den föregående månaden. Om du har pengar på ditt konto dras de av från din fakturerings profils monetära kredit och läggs till i faktura balansen. Resterande saldo efter betalning är förfallet. Du har 30 dagar på dig från fakturerings datumet för att betala fakturan.
+När du checkar ut och slutför din beställning skickas en faktura inom 24–48 timmar. Därefter får du fakturor runt den 5:e i varje månad. Månadsfakturan innehåller avgifter från den föregående månaden. Om du har några krediter för ditt konto dras de av från faktureringsprofilens monetära krediter och tillämpas på fakturasaldot. Det återstående saldot efter att krediter har tillämpats är det förfallna saldot. Du har 30 dagar på dig att betala fakturan från faktureringsdatumet.
 
-Betalnings anvisningar för var du ska skicka kontroll-eller tråd överföring ingår i PDF-kopian av fakturan. Information om hur du visar eller laddar ned fakturan finns i [Visa din](billing-and-payments/view-your-bill-or-invoice.md)faktura.
+Betalningsinstruktioner för vart check- eller banköverföringar ska skickas ingår i PDF-kopian av fakturan. Information om hur du visar eller laddar ned fakturan finns [i Visa din faktura.](billing-and-payments/view-your-bill-or-invoice.md)

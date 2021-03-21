@@ -1,6 +1,6 @@
 ---
-title: Navigerings tips för Microsoft 365-dokument
-description: Tips och råd om hur du navigerar i Microsoft 365 Technical Documentation – förklarar hur du kan använda nav sidan, innehålls förteckningen, rubriken och hur du använder funktionerna.
+title: Navigeringstips för Microsoft 365-dokument
+description: Tips och trick för att navigera i den tekniska dokumentationen för Microsoft 365 – förklarar sådant som navsidan, innehållsförteckningen, rubriken, samt hur du använder de dynamiska sökvägarna och hur du använder versionsfiltret.
 ms.date: 08/12/2020
 ms.prod: sql
 ms.technology: release-landing
@@ -9,69 +9,69 @@ ms.custom: ''
 ms.topic: conceptual
 author: samanro
 ms.author: samanro
-ms.openlocfilehash: 0a211b26041d87c3087eab5631fea67a14601cf2
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 07f406a0470c1cdf64ed4dd2b4acee3b793a8a15
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688826"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922430"
 ---
-# <a name="microsoft-365-docs-navigation-guide"></a>Navigerings guide för Microsoft 365-dokument
+# <a name="microsoft-365-docs-navigation-guide"></a>Navigeringsguide för Microsoft 365-dokument
 
-I det här avsnittet får du tips om hur du navigerar i Microsoft 365 Technical Documentation Space.  
+Det här avsnittet innehåller några tips för hur du navigerar i den tekniska dokumentationen för Microsoft 365.  
 
-## <a name="hub-page"></a>Sidan Hub
+## <a name="hub-page"></a>Hubb-sida
 
-Microsoft 365 Hub-sidan finns på [https://aka.ms/microsoft365docs](https://aka.ms/microsoft365docs) och är start punkten för att hitta relevant Microsoft 365-innehåll.
+Microsoft 365 hubb-sidan finns på och är den första sidan för [https://aka.ms/microsoft365docs](./index.yml) att hitta relevant Microsoft 365-innehåll.
 
-Du kan alltid gå tillbaka till den här sidan genom att välja **Microsoft 365** från sidhuvudet högst upp på varje sida i Microsofts 365 tekniska dokumentation:
+Du kan alltid gå tillbaka till den här sidan genom att välja **Microsoft 365** i sidhuvudet högst upp på varje sida i den tekniska dokumentationen för Microsoft 365:
 
-![Microsoft 365 i sidhuvudet](media/m365-header-cursor.png)
+![Microsoft 365 i sidhuvud](media/m365-header-cursor.png)
 
-## <a name="offline-documentation"></a>Offline-dokumentation
+## <a name="offline-documentation"></a>Offlinedokumentation
 
-Om du vill visa Microsoft 365-dokumentationen på ett offline-system kan du skapa en PDF-fil var du än befinner dig i Microsoft 365 Technical Documentation.
+Om du vill visa Microsoft 365-dokumentationen i ett offlinesystem kan du skapa en PDF-fil var du än befinner dig i den tekniska Microsoft 365-dokumentationen.
 
-Om du vill skapa en PDF-fil väljer du **Ladda ned PDF-** länken längst ned i varje innehålls förteckning.
+Om du vill skapa en PDF-fil väljer du länken **Ladda ned PDF** längst ned i varje innehållsförteckning.
 
-![Ladda ner PDF](media/m365-download-pdf-cursor.png)
+![Ladda ned PDF](media/m365-download-pdf-cursor.png)
 
-## <a name="toc-search"></a>Sökning i innehålls förteckning 
-I docs.microsoft.com kan du söka i innehållet i innehålls förteckningen med hjälp av rutan Filter Sök högst upp:
+## <a name="toc-search"></a>Sökning i toc 
+På docs.microsoft.com kan du söka i innehållet i innehållsförteckningen genom att använda filtersökrutan högst upp:
 
 ![Rutan Använd filter](media/m365-filter-by-title.png)
 
-## <a name="version-filter"></a>Versions filter
-Den tekniska dokumentationen för Microsoft 365 tillhandahåller innehåll för fler produkter, inklusive Office 365 Tyskland och Office 365 som drivs av 21 Vianet (Kina). Funktionerna kan variera beroende på dessa versioner, och ibland kan själva innehållet variera.
+## <a name="version-filter"></a>Versionsfilter
+Den tekniska dokumentationen för Microsoft 365 innehåller innehåll för ytterligare produkter, bland annat Office 365 Germany och Office 365 som drivs av 21 Vianet (Kina). Funktionerna kan variera mellan dessa versioner och därför kan själva innehållet ibland variera.
 
-Du kan använda versions filtret för att se till att du ser innehåll för lämplig version av Microsoft 365:
+Du kan använda versionsfiltret för att säkerställa att du ser innehåll för rätt version av Microsoft 365:
 
-![Microsoft 365 versions filter](media/m365-version-filter.png)
+![Versionsfilter för Microsoft 365](media/m365-version-filter.png)
 
-## <a name="breadcrumbs"></a>Spår
+## <a name="breadcrumbs"></a>Dynamiska länkar
 
-Det går att hitta dynamiska länkar under rubriken och ovanför innehålls förteckningen och ange var den aktuella artikeln finns i innehålls förteckningen.  Det här hjälper dig inte att ange kontexten för den typ av innehåll som du läser, men det gör att du kan navigera i innehålls förtecknings trädet:
+Dynamiska länkar finns under rubriken och ovanför innehållsförteckningen och anger var den aktuella artikeln finns i innehållsförteckningen.  Detta ställer inte bara in kontexten på vilken typ av innehåll du läser, utan du kan också navigera uppåt i innehållsförteckningens träd igen:
 
-![Microsoft 365-länkar](media/m365-breadcrumb.png)
+![Microsoft 365 dynamiska länkar](media/m365-breadcrumb.png)
 
-## <a name="article-section-navigation"></a>Artikel avsnitts navigering
+## <a name="article-section-navigation"></a>Avsnittsnavigering i artikeln
 
-I det högra navigerings fönstret kan du snabbt navigera till avsnitt i en artikel samt identifiera din plats i artikeln.  
+I det högra navigeringsfönstret kan du snabbt navigera till avsnitt i en artikel och identifiera din plats i artikeln.  
 
-![Höger navigering](media/m365-article-sections.png)
+![Högernavigering](media/m365-article-sections.png)
 
 ## <a name="submit-docs-feedback"></a>Skicka feedback om dokument
 
-Om du har problem med att hitta något i en artikel kan du skicka feedback till SQL-innehållet för den artikeln genom att bläddra ned till slutet av sidan och välja **feedback om innehållet**.
+Om du hittar något fel i en artikel kan du skicka feedback till SQL Content team för den artikeln genom att rulla ned till slutet av sidan och välja **Innehållsfeedback.**
 
-![Feedback om git-problem](media/m365-article-feedback.png)
+![Feedback om innehåll som git-problem](media/m365-article-feedback.png)
 
-## <a name="contribute-to-microsoft-365-documentation"></a>Bidra till Microsoft 365-dokumentation
+## <a name="contribute-to-microsoft-365-documentation"></a>Delta i Microsoft 365-dokumentationen
 
-Visste du att du kan redigera innehållet på docs.microsoft.com själv? Om du gör det blir vår dokumentation ännu bättre, men du kommer också att krediteras som deltagare på sidan. För att komma igång kan du läsa:
+Visste du att du kunde redigera innehållet på docs.microsoft.com själv? Om du gör det kommer vår dokumentation att förbättras, men du blir också krediterad som deltagare på sidan. Information om hur du kommer igång finns i:
 
-- [Guide för Microsoft dok Contributor](https://docs.microsoft.com/contribute/)
+- [Deltagarguide för Microsoft Docs](/contribute/)
 
 ## <a name="next-steps"></a>Nästa steg
 
-- Kom igång med [Microsoft 365 Technical Documentation](index.yml).
+- Kom igång med den [tekniska dokumentationen för Microsoft 365.](index.yml)

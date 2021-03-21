@@ -20,12 +20,12 @@ ms.custom:
 description: Administratörer kan lära sig hur de använder utbildning av attack simulering för att köra simulerad nätfiske- och lösenordsattacker i sina Microsoft 365 E5 eller Microsoft Defender för Office 365 abonnemang 2 organisationer.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 38e16ecd8185b9e8542f58613790585b5aab73ee
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 6e344153ef433bc13b16136e584ec4da73fcef6a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820240"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921354"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>Kom igång med Attack simuleringsträning
 
@@ -40,7 +40,7 @@ Om din organisation har Microsoft 365 E5 eller Microsoft Defender för Office 36
 
 - Öppna Microsoft Säkerhetscenter genom att gå till <https://security.microsoft.com/> . Utbildning av attack simulering är tillgänglig på **E-post och** \> **samarbete Attack simulering utbildning**. Om du vill gå direkt till simuleringsutbildningen för attack öppnar du <https://security.microsoft.com/attacksimulator> .
 
-- Mer information om tillgängligheten för simulering av attack i olika Microsoft 365-prenumerationer finns i Tjänstbeskrivning för Microsoft Defender för [Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+- Mer information om tillgängligheten för simulering av attack i olika Microsoft 365-prenumerationer finns i Tjänstbeskrivning för Microsoft Defender för [Office 365.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
 - Du måste ha tilldelats behörigheter i säkerhets- & säkerhets- och efterlevnadscentret eller i Azure Active Directory innan du kan utföra procedurerna i den här artikeln. Du måste vara medlem i Organisationshantering, **Säkerhetsadministratör** eller någon av följande roller: 
   - **Attack attackadministratörer:** Skapa och hantera alla aspekter av attack simuleringskampanjer.

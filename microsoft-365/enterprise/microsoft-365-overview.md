@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Ger en introduktion till komponenterna, planer och distributionssökvägar för Microsoft 365 för företag.
-ms.openlocfilehash: 324e5166dd722f9fcd682db7e536a4b864365025
-ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
+ms.openlocfilehash: 19bc4763f60fae1db914ab7c1f10354e7904cb50
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50068979"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923176"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Översikt över Microsoft 365 för företag
 
@@ -87,7 +87,7 @@ Med den här affischen på två sidor kan du snabbt inventera din befintliga inf
 
 Dessa produkter nådde slutet av stöd på **13 oktober 2020**:
 
-- [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
+- [Office 2010](/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](exchange-2010-end-of-support.md)
 
 [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) kommer att nå slutet av supporte **13 april 2021**.
@@ -120,11 +120,11 @@ För ett exempel på hur en fiktiv men representativ multinationella organisatio
 
 ## <a name="additional-microsoft-365-products"></a>Ytterligare Microsoft 365-produkter
 
-- [Microsoft 365 Business Premium](https://docs.microsoft.com/microsoft-365/business/)
+- [Microsoft 365 Business Premium](../business/index.yml)
 
   Samla de bästa produktivitets- och samarbetsfunktionerna med lösningar för enhetshantering och säkerhet för att skydda affärsdata för små och medelstora företag.
 
-- [Microsoft 365 Education](https://docs.microsoft.com/education)
+- [Microsoft 365 Education](/education)
 
   Ge lärare möjlighet att låsa upp kreativitet, främja lagarbete och ge en enkel och säker upplevelse i en enda, prisvärd lösning som är byggd för utbildning.
 
@@ -154,7 +154,7 @@ För mer information och konfigurationsexempel för små och medelstora företag
 
 ![Börja med Microsoft 365 Fundamentals.](../media/microsoft-365-overview/m365-fundamentals.svg)
 
-Om du vill lära dig mer om Microsoft 365 och att arbeta mot en Microsoft 365-certifiering kan du börja med [Microsoft 365 Certified: Fundament](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
+Om du vill lära dig mer om Microsoft 365 och att arbeta mot en Microsoft 365-certifiering kan du börja med [Microsoft 365 Certified: Fundament](/learn/paths/m365-fundamentals/).
 
 ## <a name="see-also"></a>Se även
 

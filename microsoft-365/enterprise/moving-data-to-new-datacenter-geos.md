@@ -1,5 +1,5 @@
 ---
-title: Flytta grundläggande data till nya Microsoft 365 Data Center-geos
+title: Flytta basdata till nya Microsoft 365-datacenter geodata
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -13,58 +13,58 @@ search.appverid:
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
-description: Lär dig mer om nya Office 365 Data Center-geos och hur du använder alternativet data de för att begära att dina grundläggande data flyttas till en ny geo.
+description: Lär dig mer om nya geodatadata i Office 365-datacentret och hur du använder alternativet som data ska lagras för att begära att dina kärndata flyttas till ett nytt geodatasystem.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6c5e63a973ca6fdf6aaaaca884df306ff790c325
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+ms.openlocfilehash: f752956506df98ea71d0d02886d14dc719ed9413
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349250"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921612"
 ---
-# <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Flytta grundläggande data till nya Microsoft 365 Data Center-geos
+# <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Flytta basdata till nya Microsoft 365-datacenter geodata
 
-Vi fortsätter att öppna nya data Center-geos för Microsoft 365-tjänster. De här nya datacenter-geos lägga till kapacitet och beräkna resurser för att stödja vår pågående kund efter frågan och förbruknings tillväxt. Dessutom ger det nya data Center geos in-Geo data de för grundläggande kunddata. 
+Vi fortsätter att öppna nya datacenter geos för Microsoft 365-tjänster. Dessa nya datacenter geos lägger till kapacitet och beräknar resurser för att stödja vår pågående kundbehov och användningstillväxt. Det nya datacentret geos erbjuder dessutom geodata som används för basdata. 
 
-Grundläggande kund data är en term som refererar till en delmängd kunddata, inklusive: 
-- Innehåll för Exchange Online-postlådan (e-post, kalender poster och innehållet i e-postbilagor)
-- SharePoint Online-webbinnehåll och filer som lagras på webbplatsen
+Baskunddata är en term som refererar till en delmängd kunddata, inklusive: 
+- Postlådeinnehåll i Exchange Online (brödtext, kalenderposter och innehållet i e-postbilagor)
+- SharePoint Online-webbplatsinnehåll och filer som lagrats på webbplatsen
 - Filer som laddats upp till OneDrive för företag
-- Teams chatt meddelanden, inklusive privata meddelanden, kanal meddelanden och bilder som används i chattar
+- Chattmeddelanden i Teams, inklusive privata meddelanden, kanalmeddelanden och bilder som används i chattar
   
-Befintliga kunder som har sina grundläggande kund uppgifter lagrade i ett befintligt Data Center-geo påverkas inte av lanseringen av ett nytt Data Center geo. Vi presenterar inga unika funktioner, funktioner och certifikat certifiering med det nya data centret geo. Som kund i någon av de två geos kommer du att uppleva samma QoS-kvalitet, prestanda och säkerhets kontroller som du gjorde förut. Vi tillhandahåller befintliga kunder i tabellen nedan ett alternativ för att begära tidiga migration av organisationens grundläggande kund uppgifter på ett sätt som vilar mot deras nya data Center.
+Befintliga kunder som har sina grundläggande kunddata lagrade i ett befintligt datacenter geo påverkas inte av lanseringen av ett nytt datacenter geo. Vi introducerar inga unika funktioner, funktioner eller efterlevnadscertifieringar med det nya datacentret geo. Som kund i någon av dessa två geos får du samma tjänstekvalitet, prestanda- och säkerhetskontroller som du gjorde tidigare. Vi erbjuder befintliga kunder som visas i tabellen under ett alternativ för att begära tidig migrering av organisationens kärndata i vila till det nya datacentret.
   
-|**Kunder med klient organisationens registrerings land i**|**Föregående Data Center geo**|**Nytt Data Center geo**|**Geo-tillgängligt sedan**|
+|**Kunder med klientorganisationsland i**|**Tidigare geodatadata**|**Nytt datacenter geo**|**Geo tillgängligt sedan**|
 |:-----|:-----|:-----|:-----|
-|**Japan**| Asien/Stilla havet | Japan  | December 2014 |
-|**Australien, Nya Zeeland, Fidji**| Asien/Stilla havet | Australien | Mars 2015 |
-|**Indien**| Asien/Stilla havet | Indien | Oktober 2015 |
+|**Japan**| Asien/Stillahavsområdet | Japan  | December 2014 |
+|**Australien, Nya Zeeland, Fiji**| Asien/Stillahavsområdet | Australien | Mars 2015 |
+|**Indien**| Asien/Stillahavsområdet | Indien | Oktober 2015 |
 |**Kanada**| USA | Kanada | Maj 2016 |
-|**Storbritannien**| EU: s EU | Storbritannien | September 2016 |
-|**Sydkorea**| Asien/Stilla havet | Sydkorea | April 2017 |
-|**Frankrike**| EU: s EU | Frankrike | Mars 2018 |
-|**Förenade Arabemiraten**| EU: s EU | Förenade Arabemiraten | Juni 2019 |
-|**Sydafrika**| EU: s EU | Sydafrika | Juli 2019 |
-|**Schweiz, Liechtenstein**| EU: s EU | Schweiz | December 2019 |
-|**Tyskland**| EU: s EU | Tyskland | December 2019 |
-|**Norge**| EU: s EU | Norge | April 2020 |
-|**Brasilien**| USA | Brasilien | November 2020 |
+|**Storbritannien**| EU | Storbritannien | September 2016 |
+|**Sydkorea**| Asien/Stillahavsområdet | Sydkorea | April 2017 |
+|**Frankrike**| EU | Frankrike | Mars 2018 |
+|**Förenade Arabemiraten**| EU | Förenade Arabemiraten | Juni 2019 |
+|**Sydafrika**| EU | Sydafrika | Juli 2019 |
+|**Schweiz, Liechtenstein**| EU | Schweiz | December 2019 |
+|**Tyskland**| EU | Tyskland | December 2019 |
+|**Norge**| EU | Norge | April 2020 |
+|**Brasilien**| Amerika | Brasilien | November 2020 |
 
-Från och med den 1 oktober är 2020 kunder med en Office 365 Education-prenumeration som ingår i klient organisationen inte kvalificerat för migrering.
+Från och med den 1 oktober 2020 är kunder med en Office 365 Education-prenumeration som ingår i klientorganisationen inte berättigade till migrering.
 
-En fullständig lista över alla data Center geos, data Center och plats för kunddata på rest är tillgängliga som en del av de [interaktiva Data Center-kartorna](https://office.com/datamaps). 
+En fullständig lista över alla datacenter geos, datacenter och platsen för kunddata i vila är tillgänglig som en del av interaktiva [datacenterkartor.](https://office.com/datamaps) 
   
-## <a name="data-residency-option"></a>Alternativet de
+## <a name="data-residency-option"></a>Alternativet Datahem
 
-Vi tillhandahåller ett data de alternativ för kvalificerade Microsoft 365-kunder som omfattas av data Center geos som visas i tabellen ovan. Med det här alternativet kan berättigade kunder med data de krav begära att organisationens grundläggande kund uppgifter migreras till deras nya data Center.  Microsoft kommer att erbjuda en tids gräns för alla berättigade kunder som vill migrera under registrerings fönstret.  Läs om [hur du efterfrågar en data flyttnings](request-your-data-move.md) sida för att få mer information om fönstret för öppen registrering för ditt data Center Geo och hur du kan registrera dig i programmet.  Data flyttningar kan ta upp till 24 månader efter det att perioden är slut.
+Vi tillhandahåller ett alternativ för datalagring för berättigade Microsoft 365-kunder som omfattas av de datacenter geos som anges i tabellen ovan. Med det här alternativet kan berättigade kunder med datalagringskrav begära migrering av organisationens grundläggande kunddata i vila till det nya datacentret.  Microsoft kommer att erbjuda en tidsgräns för alla berättigade kunder som begär migrering under registreringsfönstret.  Gå till [sidan Begära dataflyttning](request-your-data-move.md) för mer information om fönstret för öppen registrering för geodatadatacentret och stegen för att registrera dig i programmet.  Dataflyttningar kan ta upp till 24 månader efter att begäran har avslutats.
 
-Vi presenterar inga unika funktioner, funktioner och certifikat certifiering med det nya data centret geo.
+Vi introducerar inga unika funktioner, funktioner eller efterlevnadscertifieringar med det nya datacentret geo.
     
-Komplexiteten, precisionen och skalan där vi måste utföra data flyttningar inom en globalt styrd och automatiserad miljö hindrar oss från att dela när data flyttas för din klient organisation eller annan klient organisation. Kunderna får en bekräftelse i meddelande Center per deltagande tjänst när dess data flyttas. 
+Den komplexitet, precision och skala som vi behöver för att utföra dataflyttningar i en globalt drivs och automatiserad miljö hindrar oss från att dela när en dataflyttning förväntas slutföras för din klientorganisation eller någon annan enskild klientorganisation. Kunder får en bekräftelse i meddelandecentret per deltagande tjänst när dataflyttningen är klar. 
     
-Data flyttas är en backend-åtgärd som påverkar slutanvändaren minimalt. Vilka funktioner som kan påverkas visas på [under och efter data flyttnings](during-and-after-your-data-move.md) sidan. Vi följer [service nivå avtalet för Microsoft Online Services (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) för tillgänglighet så det finns inget som kunderna behöver för att förbereda för eller för att övervaka under flytten. Meddelande om underhåll av tjänster görs vid behov. 
+Dataflyttningar är en tjänsteåtgärd i backend med minimal påverkan för slutanvändarna. Funktioner som kan påverkas visas på sidan [Under och efter dataflyttningen.](during-and-after-your-data-move.md) Vi följer tjänstnivåavtalet [för Microsoft Online Services (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) för tillgänglighet så att det inte finns något som kunderna behöver förbereda sig för eller övervaka under flytten. Meddelande om eventuellt underhåll av tjänsten görs om det behövs. 
 
-Data flyttas till den nya data Center geoen utan kostnad till kunden.
+Dataflyttningar till det nya datacentrets geo slutförs utan extra kostnad för kunden.
     
 ## <a name="related-topics"></a>Relaterade ämnen 
  
@@ -72,6 +72,6 @@ Data flyttas till den nya data Center geoen utan kostnad till kunden.
     
 [Vanliga frågor och svar om dataflytt](data-move-faq.md)
   
-[Ny datacenter-geos för Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[Nya datacenter geos för Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   
 [Azure-tjänster efter region](https://azure.microsoft.com/regions/)

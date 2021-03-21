@@ -14,29 +14,29 @@ f1.keywords:
 ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
-description: Med Microsoft 365 Network partner program kan enheten certifieras som att fungera med Microsoft 365.
+description: Med Microsoft 365 Networking Partner Program kan enheten certifieras som arbeta med Microsoft 365.
 hideEdit: true
-ms.openlocfilehash: 407fdf4b6a1866dc2fb1c6ec01d473e71179b477
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: 2c57974bd15e5bac11a2275472255982a20aefac
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49787849"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923154"
 ---
 # <a name="microsoft-365-networking-partner-program"></a>Microsoft 365 Nätverkspartnerprogram
 
-Nätverks anslutningen har en direkt inverkan på användarnas möjligheter att arbeta snabbt, samar beta effektivt och effektivisera affärs processer med Microsoft 365. För kunder i alla stadier av sin digitala transformering är nätverks design en kritisk aspekt som ska bevaras i proaktivt innan problem påverkar användar upplevelsen negativt.
+Nätverksanslutningen har direkt påverkan på användarnas möjlighet att arbeta snabbt, samarbeta effektivt och effektivisera affärsprocesser med Microsoft 365. För kunder i alla steg av den digitala transformationen är nätverksdesign en viktig faktor som bör vara proaktivt åtgärdad innan problem påverkar användarupplevelsen negativt.
 
-När kunderna inför en Microsoft 365 för företag-produktivitet har Microsoft iakttagit en gemensam trend för nätverks prestanda och den resulterande slutanvändarnas samarbete direkt under den här vägen mellan användaren och Microsoft 365. För att hjälpa partner att utforma optimala nätverks lösningar och hjälpa kunder att fatta välgrundade beslut angående sådana lösningar har vi byggt Microsoft 365 Network partner-programmet.
+När kunderna använder Microsoft 365 för företag-produktivitet har Microsoft observerat en vanlig trend som nätverksprestanda och den resulterande samarbetsupplevelsen för slutanvändare påverkas direkt av nätverkslösningar i vägen mellan användaren och Microsoft 365. För att hjälpa partner att utforma optimala nätverkslösningar och hjälpa kunder att fatta välgrundade beslut om sådana lösningar skapade vi Microsoft 365 Networking Partner Program.
 
-Microsoft 365 Network partner-programmet deepens vårt samarbete med nätverks partners och identifierar viktiga produkter och lösningar som följer Microsofts 365 nätverks krav, rekommendationer och metod tips. Målet för Microsoft 365 Network partner-programmet är att under lätta kundernas möjligheter att förbättra sin Microsoft 365-upplevelse genom enkel identifiering av godkända partner lösningar som konsekvent visar justering för viktiga principer för optimal Microsoft 365-anslutning i kund distributioner.
+Microsoft 365 Networking Partner Program fördjupar sitt samarbete med nätverkspartner och identifierar viktiga produkter och lösningar som följer Microsoft 365 nätverkskrav, rekommendationer och metodtips. Syftet med Microsoft 365-nätverkspartnerprogrammet är att underlätta kundernas möjlighet att förbättra sin Microsoft 365-upplevelse genom enkel upptäckt av verifierade partnerlösningar som konsekvent visar att de är uppkopplade mot viktiga principer för optimal Microsoft 365-anslutning i kunddistributioner.
 
-För att modernisera företags nätverk ska kunna anslutas till Microsoft 365, använder kunderna ofta nätverks lösnings leverantörer, lokala eller Cloud-baserade säkerhets tjänster och systemintegratorer för att planera, utforma och implementera nätverks anslutningar för moln tjänster. Kunderna frågar ofta Microsoft om deras nätverks arkitektur och-lösningar fungerar med Microsoft 365 och om de uppfyller Microsofts [nätverks anslutnings principer för microsoft 365](https://aka.ms/PNC).
+För att modernisera företagsnätverk för bra anslutningar till Microsoft 365 förlitar sig kunder ofta på leverantörer av nätverkslösningar, lokala eller molnbaserade säkerhetstjänster och systemintegritet för att planera, utforma och implementera nätverksanslutning för molntjänster. Kunder frågar ofta Microsoft om deras nätverksarkitektur och lösningar fungerar tillsammans med Microsoft 365 och om de överensstämmer med Microsofts principer för nätverksanslutning för [Microsoft 365.](./microsoft-365-network-connectivity-principles.md)
 
-Microsoft 365 Network partner-programmet hjälper till att svara på dessa frågor och demonstrerar Microsofts engagemang för att hjälpa våra kunder att bygga och optimera sin nätverks arkitektur för bästa Microsoft 365-upplevelsen. Microsoft 365-teamet arbetar med många nätverks bransch partners för att säkerställa att nyckel principerna för optimal anslutning är inbyggda i deras nätverks produkt och-lösningar.
+Microsoft 365 Networking Partner Program hjälper till att besvara de här frågorna och visar Microsofts strävan att hjälpa kunderna att skapa och optimera nätverksarkitekturen för bästa Microsoft 365-upplevelse. Microsoft 365-teamet arbetar med många nätverkspartners för att säkerställa att de viktiga principerna för optimal anslutning inbyggda i nätverkets produkt och lösningar.
 
-Microsoft 365 Network partner-programmet anger kvalificerade nätverks lösningar som "fungerar med Microsoft 365". Endast enheter och lösningar som uppfyller Microsofts rigorösa test krav, har funktioner för sömlös installation och demonstrerar en högkvalitativ nätverks upplevelse när den används med Microsoft 365 kommer att få beteckningen "fungerar med Microsoft 365". Dessa validerade partner lösningar visas på [sidan Microsoft 365 Network partner program](https://www.microsoft.com/microsoft-365/partners/O365networkingpartners), tillsammans med lösnings information och länkar till mer information.
+Microsoft 365 Networking Partner Program utser kvalificerade nätverkslösningar som "Fungerar med Microsoft 365". Endast enheter eller lösningar som uppfyller Microsofts noggranna testkrav, har smidiga upplevelser av installationen och visar en högkvalitativ nätverksupplevelse när de används med Microsoft 365 får beteckningen "Fungerar med Microsoft 365". De här validerade partnerlösningarna visas på sidan [Microsoft 365 Networking Partner Program](https://www.microsoft.com/microsoft-365/partners/O365networkingpartners)tillsammans med lösningsinformation och länkar för mer information.
 
-Om du är Microsoft 365-kund kan du göra din nätverks leverantör medveten om det här programmet genom den här sidan på [https://aka.ms/Office365NPP](https://aka.ms/Office365NPP) .
+Om du är Microsoft 365-kund kan du uppmärksamma nätverkslösningsleverantören på den här sidan på [https://aka.ms/Office365NPP]() .
 
-För nätverks lösnings leverantörer som vill fråga om Microsoft 365 Network partner-programmet fyller du i formuläret på [https://aka.ms/NPPsignup](https://aka.ms/NPPsignup) . Tack för att du visat intresse och vi ser fram emot ett snyggt samarbete.
+För nätverkslösningsleverantörer som vill fråga om Microsoft 365 Networking Partner Program fyller du i formuläret på [https://aka.ms/NPPsignup](https://aka.ms/NPPsignup) . Tack för visat intresse och vi ser fram emot ett snyggt samarbete.

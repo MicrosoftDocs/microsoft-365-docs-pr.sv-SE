@@ -1,7 +1,7 @@
 ---
 title: Funktionen AssignedIPAddresses() i avancerad sökning för Microsoft 365 Defender
 description: Lär dig hur du använder funktionen AssignedIPAddresses() för att få de senaste IP-adresserna tilldelade till en enhet
-keywords: avancerad sökning, hotsökning, cyberhot, skydd mot cyberhot, microsoft 365, mtp, m365, sökning, fråga, telemetri, schemareferens, kusto, FileProfile, filprofil, funktion, vinst
+keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, FileProfile, file profile, function, enrichment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d16cd7efc49cc2498eff3f705bb43fa62f37d975
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: c52f7b8bf5a93a75b3330a3377f3fab34b8e7837
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49933024"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922926"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -35,16 +35,16 @@ ms.locfileid: "49933024"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Använd funktionen `AssignedIPAddresses()` i dina avancerade [sökningsfrågor](advanced-hunting-overview.md) för att snabbt hämta de senaste IP-adresserna som har tilldelats till en enhet. Om du anger ett tidsstämpelargument hämtar den här funktionen de senaste IP-adresserna vid den angivna tiden. 
+Använd funktionen `AssignedIPAddresses()` för avancerade [sökfrågor för](advanced-hunting-overview.md) att snabbt hämta de senaste IP-adresserna som har tilldelats till en enhet. Om du anger ett tidsstämpelargument hämtar den här funktionen de senaste IP-adresserna vid den angivna tiden. 
 
 Den här funktionen returnerar en tabell med följande kolumner:
 
 | Kolumn | Datatyp | Beskrivning |
 |------------|-------------|-------------|
-| `Timestamp` | datetime | Senaste gången då enheten observerades med IP-adressen |
+| `Timestamp` | datetime | Senaste gången då enheten observerades med HJÄLP av IP-adressen |
 | `IPAddress` | sträng | IP-adress som används av enheten |
 | `IPType` | sträng | Anger om IP-adressen är en offentlig eller privat adress |
-| `NetworkAdapterType` | int | Nätverksadaptertyp som används av enheten som har tilldelats IP-adressen. Referera till den här uppräkningen [för möjliga värden](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `NetworkAdapterType` | int | Nätverksadaptertyp som används av enheten som har tilldelats IP-adressen. Information om möjliga värden finns i [denna uppräkning](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
 | `ConnectedNetworks` | int | Nätverk som adaptern med den tilldelade IP-adressen är ansluten till. Varje JSON-matris innehåller nätverksnamn, kategori (offentlig, privat eller domän), en beskrivning och en flagga som anger om den är ansluten offentligt till Internet |
 
 ## <a name="syntax"></a>Syntax
@@ -56,7 +56,7 @@ AssignedIPAddresses(x, y)
 ## <a name="arguments"></a>Argument
 
 - **x**– `DeviceId` eller värde som identifierar `DeviceName` enheten
-- **y**– (datetime) som instruerar funktionen att hämta de senaste tilldelade `Timestamp` IP-adresserna från en viss tid. Om den inte anges returnerar funktionen de senaste IP-adresserna.
+- **y**– (datetime)-värde som instruerar funktionen för att hämta de senast tilldelade `Timestamp` IP-adresserna från en viss tid. Om detta inte anges returnerar funktionen de senaste IP-adresserna.
 
 ## <a name="examples"></a>Exempel
 
@@ -66,8 +66,8 @@ AssignedIPAddresses(x, y)
 AssignedIPAddresses('example-device-name', ago(1d))
 ```
 
-### <a name="get-ip-addresses-used-by-a-device-and-find-devices-communicating-with-it"></a>Få IP-adresser som används av en enhet och hitta enheter som kommunicerar med den
-Den här frågan använder `AssignedIPAddresses()` funktionen för att få tilldelade IP-adresser för enheten `example-device-name` () på eller före ett visst datum `example-date` (). Därefter används IP-adresserna för att hitta anslutningar till enheten initierad av andra enheter. 
+### <a name="get-ip-addresses-used-by-a-device-and-find-devices-communicating-with-it"></a>Få IP-adresser använda av en enhet och hitta enheter som kommunicerar med den
+Den här frågan använder `AssignedIPAddresses()` funktionen för att hämta tilldelade IP-adresser för enheten `example-device-name` () på eller före ett visst datum ( `example-date` ). Därefter används IP-adresserna för att hitta anslutningar till enheten initierad av andra enheter. 
 
 ```kusto
 let Date = datetime(example-date);

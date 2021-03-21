@@ -18,16 +18,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Sammanfattning: Konfigurera direktautentisering för Microsoft 365-testmiljön.'
-ms.openlocfilehash: d83de4ece4d1eaeddac882cf46a4fe85b8ba7cd4
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: cdbb6927fb8ca0001e3089c7169ce9046208e8f8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487452"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921534"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Direktautentisering för Microsoft 365-testmiljön
 
-*Den här test laboratorie guiden kan användas för både Microsoft 365 för företags-och Office 365 företags test miljöer.*
+*Den här testlabbguiden kan användas för både Microsoft 365 för företag- och Office 365 Enterprise-testmiljöer.*
 
 Organisationer som direkt vill använda sin lokala Active Directory Domain Services-infrastruktur vid autentisering till Microsofts molnbaserade tjänster och program, kan använda direktautentisering. I den här artikeln beskrivs hur du konfigurerar Microsoft 365-testmiljön för direktautentisering, vilket ger följande konfiguration:
   
@@ -51,7 +51,7 @@ Följ anvisningarna i [synkronisering av lösenordshash för Microsoft 365](pass
   
 Konfigurationen består av: 
   
-- Microsoft 365 E5-prov eller betalt abonnemang.
+- Utvärderingsversion eller betald prenumeration på Microsoft 365 E5.
 - Ett förenklat företagsintranät anslutet till Internet som består av de virtuella datorerna DC1, APP1 och CLIENT1 i ett undernät i ett virtuellt Azure-nätverk. Azure AD Connect körs på APP1 för att synkronisera TESTLAB AD DS-domänen med Azure AD-klientorganisationen för din Microsoft 365-prenumeration regelbundet.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>Fas 2: Konfigurera Azure AD Connect på APP1 för direktautentisering
@@ -80,7 +80,7 @@ I den här fasen konfigurerar du att Azure AD Connect använder direktautentiser
 
 10.    Klicka på **Direktautentisering**. I fönstret **Direktautentisering** visas servrarna där dina autentiseringsagenter är installerade. Du bör se APP1 i listan. Stäng fönstret **Direktautentisering**.
 
-Prova sedan att logga in på ditt abonnemang med <strong>user1@testlab.</strong>\<your public domain> användarnamn för Användare1-kontot.
+Testa sedan möjligheten att logga in på din prenumeration med <strong>user1@testlab.</strong>\<your public domain> användarnamn för Användare1-kontot.
 
 1. Logga ut från APP1 och logga sedan in igen. Den här gången med ett annat konto.
 
@@ -94,7 +94,7 @@ Här är konfigurationsresultatet:
  
 Konfigurationen består av:
 
-- En utvärderings version av Microsoft 365 E5 eller betalda abonnemang med DNS-testlab.\<your domain name> registrerat.
+- En utvärderingsversion av Microsoft 365 E5 eller betalda prenumerationer med DNS-domänens testlab.\<your domain name> registrerat.
 - Ett förenklat företagsintranät anslutet till Internet som består av de virtuella datorerna DC1, APP1 och CLIENT1 i ett undernät i ett virtuellt Azure-nätverk. En autentiseringsagent körs i APP1 och hanterar direktautentiseringsförfrågningar från Azure AD-klienten för din Microsoft 365-prenumeration.
 
 ## <a name="next-step"></a>Nästa steg
@@ -107,4 +107,4 @@ Utforska ytterligare [identitetsfunktioner](m365-enterprise-test-lab-guides.md#i
 
 [Översikt över Microsoft 365 för företag](microsoft-365-overview.md)
 
-[Microsoft 365 för företags dokumentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Dokumentation om Microsoft 365 för företag](/microsoft-365-enterprise/)

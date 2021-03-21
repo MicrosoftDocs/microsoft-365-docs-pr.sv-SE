@@ -1,5 +1,5 @@
 ---
-title: Vanliga frågor och svar om Office 365
+title: Vanliga frågor och svar om Office 365-videonätverk
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -19,110 +19,110 @@ ms.assetid: 2bed67a1-4052-49ff-a4ce-b7e6530eb98e
 ms.custom:
 - Adm_O365
 - seo-marvel-apr2020
-description: Hitta svar på de vanligaste frågorna kring bandbredds planering, kryptering & hur tjänsten utnyttjar innehålls leverans nätverk (CDN).
-ms.openlocfilehash: e08a67988290e7ead87ff30a5ebdf9c8560f4825
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Hitta svar på några av de vanligaste frågorna om bandbreddsplanering, kryptering & hur tjänsten använder Content Delivery Networks (CDN:er).
+ms.openlocfilehash: 8bc0a69ff744967d24aa7d21ed6daee1a839f159
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696654"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921576"
 ---
-# <a name="office-365-video-networking-frequently-asked-questions"></a>Vanliga frågor och svar om Office 365
+# <a name="office-365-video-networking-frequently-asked-questions"></a>Vanliga frågor och svar om Office 365-videonätverk
 
-Med Office 365 Video-och streaming-tjänsterna blir det enkelt att lagra och strömma videor i organisationen. Det finns mycket bra [information om Office 365-Video](https://support.office.com/article/Find-help-about-Office-365-Video-b435f99a-f47e-4ebd-a946-f5c965844f50). dessa vanliga frågor om nätverk är avsedda att besvara de vanligaste frågorna kring bandbredds planering, kryptering och hur tjänsten utnyttjar [innehålls leverans nätverk](content-delivery-networks.md) (CDN).
+Med Office 365 Video-lagringsplatsen och direktuppspelningstjänster blir det enkelt att lagra och strömma videoklipp inom organisationen. Det finns mycket bra information om [Office 365 Video](https://support.office.com/article/Find-help-about-Office-365-Video-b435f99a-f47e-4ebd-a946-f5c965844f50)– Det här nätverkets vanliga frågor och svar är utformade för att besvara de vanligaste frågorna om bandbreddsplanering, kryptering och hur tjänsten utnyttjar [Nätverk](content-delivery-networks.md) för innehållsleverans (CDN).
   
-Om du inte redan har en grundlig förståelse av vad som händer när en video laddas upp eller spelas upp kan du titta på den här videon tillsammans, [Vad händer med en videofil när den laddas upp till Office 365 Video](https://www.youtube.com/watch?v=HXSZ0jYBKlM).
+Om du inte redan har goda kunskaper om vad som händer när en video laddas upp eller spelas upp kan du ta en titt på den här videon som vi har satt ihop, Vad händer med en videofil när den laddas upp till [Office 365 Video.](https://www.youtube.com/watch?v=HXSZ0jYBKlM)
   
-## <a name="what-are-the-office-365-video-bandwidth-requirements"></a>Vilka är bandbredds kraven för Office 365?
+## <a name="what-are-the-office-365-video-bandwidth-requirements"></a>Vilka är bandbreddskraven för Office 365 Video?
 
-Det finns ett flertal [video format som stöds](https://support.office.com/article/dd1af01c-fd8e-4640-b17b-93ee02b9b817) och kan laddas upp till Office 365. Alla videofiler kodas då till standardformat med olika video kvaliteter för uppspelning. I Office 365-Video används anpassad bit hastighet för strömning för att välja den bästa videouppspelnings kvaliteten baserat på den tillgängliga bandbredden och storleken på videos pelaren. För att göra detta efterfrågar den lägsta uppspelnings kvaliteten från början. Tjänsten börjar sedan skicka 2-näst-video-segment till Videos pelaren. Spelaren kan sedan begära högre eller lägre uppspelnings kvalitet baserat på hur snabbt varje segment levereras.
+Det finns en mängd [videoformat som](https://support.office.com/article/dd1af01c-fd8e-4640-b17b-93ee02b9b817) stöds som kan laddas upp till Office 365. Varje videofil kodas sedan till ett standardformat med flera olika videokvaliteter för uppspelning. Office 365 Video använder direktuppspelning med anpassningsbar bithastighet för att välja den bästa videouppspelningskvaliteten baserat på den tillgängliga nätverksbandbredden och storleken på videospelaren. För att göra detta begär spelaren först den lägsta uppspelningskvaliteten. Tjänsten börjar sedan skicka två sekunders videosegment till videospelaren. Spelaren kan sedan begära högre eller lägre uppspelningskvalitet baserat på hur snabbt varje segment levereras.
   
-Den anpassningsbara bit hastigheten gör allt detta i bakgrunden medan videon spelas upp med minsta störning eller buffring. Under videouppspelning låter visnings läsaren manuellt åsidosätta den automatiska uppspelnings kvaliteten, för att välja en specifik video uppspelnings kvalitet.
+Funktionen för direktuppspelning med anpassningsbar bithastighet fungerar i bakgrunden medan videon spelas upp med minsta möjliga störning och buffring. Under videouppspelningen kan tittaren manuellt åsidosätta den automatiska uppspelningskvaliteten och välja en viss videouppspelningskvalitet.
   
-Här är en snabb tabell som beskriver nätverks kraven för varje videouppspelnings kvalitet. Den minsta bandbredd som behövs för att spela upp en video är 802Kbps.
+Här är en översiktstabell över nätverkskraven för var och en av videouppspelningskvaliteterna. Den minsta bandbredd per person som behövs för att spela upp en video är 802 kbit/s.
   
-| Uppspelnings kvalitet | Nätverks hastighet |
+| Uppspelningskvalitet | Nätverkshastighet |
 |:-----|:-----|
-|288p  <br/> |802Kbps  <br/> |
-|360p  <br/> |1,2 Mbps  <br/> |
-|576p  <br/> |2,5 Mbps  <br/> |
-|720p  <br/> |3,8 Mbps  <br/> |
+|288p  <br/> |802 kbit/s  <br/> |
+|360p  <br/> |1,2 Mbit/s  <br/> |
+|576p  <br/> |2,5 Mbit/s  <br/> |
+|720p  <br/> |3,8 Mbit/s  <br/> |
 
-([Överst på](office-365-video-networking-faq.md)sidan)
+([Överst på sidan](office-365-video-networking-faq.md))
   
-## <a name="how-do-content-delivery-networks-cdns-help-video-playback"></a>Hur kan jag använda CDN för innehålls överföring?
+## <a name="how-do-content-delivery-networks-cdns-help-video-playback"></a>Hur kan videouppspelning underlättas vid uppspelning av innehållsleveransnätverk (CDN)?
 
-Om flera personer från samma organisation inom samma geografiska plats direktuppspelar samma video (t) lagras en kopia av dessa videoklipp på en plats närmare den geografiska regionen. Med den video som lagras eller är lagrad på den närmaste platsen direktuppspelar varje person videon från den plats som är närmast i stället för en plats längre bort. I Office 365-Video används Azure Media Services för att hantera vad som cachelagras i Azure CDN och för hur länge. Azure Media Services kan använda någon av [Azure CDN-platserna](https://azure.microsoft.com/documentation/articles/cdn-pop-locations/) för att cachelagra videofragment och-manifest i några dagar. Om personer i din organisation fortsätter att titta på de cachelagrade videoklippen sparas de i cacheminnet. Om ingen får åtkomst till videon i flera dagar kommer videon att släppas ned från cachen. Nästa gång någon försöker titta på videon den är en gång till på den närmaste CDN-platsen.
+Om flera personer från samma organisation inom samma geografiska område direktuppspelar samma video, lagrar CDN en kopia av videon på en plats som ligger närmare det geografiska området. Med videon lagrad, eller cachelagrad, på den närmaste platsen, strömmar varje person videon från den plats som är närmast dem i stället för från en plats som ligger längre bort. Office 365 Video använder Azure Media Services för att hantera vad som cachelagras i Azure CDN och hur länge. Azure Media Services kan använda någon av [Azure CDN-platserna för](/azure/cdn/cdn-pop-locations) att cachelagra videofragment och manifest i några dagar. Om personer i organisationen fortsätter att titta på cachelagrade videor finns de kvar i cachen. Om ingen tittar på videon under flera dagar kommer videon så småningom att tas bort från cachen. Nästa gång någon tittar på videon cachelagras den igen på närmaste CDN-plats.
   
-Alla som försöker titta på videon medan innehållet cachelagras vid ett nära CDN-bidrag från videon blir högre och i de flesta fall färre hopp. Detta förbättrar videouppspelnings hastigheten; men det ändrar inte nätverks kravet för att spela upp videon.
+Alla som tittar på videon medan innehållet cachelagras på en närliggande CDN-plats har nytta av att videon finns närmare och i de flesta fall färre hopp bort. Detta förbättrar videouppspelningshastigheten. Men nätverkskravet för att spela upp videon ändras inte.
   
 > [!NOTE]
-> Det finns vissa omständigheter, till exempel vår kapacitets gräns nås, där videon kan tas bort innan tre dagar har uppnåtts.
+> Under vissa omständigheter, till exempel om vår kapacitetsgräns är nådd, kan videon tas bort innan de tre dagarna har uppnåtts.
   
-([Överst på](office-365-video-networking-faq.md)sidan)
+([Överst på sidan](office-365-video-networking-faq.md))
   
 ## <a name="can-i-cache-the-videos-locally-for-faster-playback"></a>Kan jag cachelagra videor lokalt för snabbare uppspelning?
 
-Ja. Office 365 hindrar dig inte från att använda en lokal CDN eller en Cache-proxy för att hämta video eller annan Office 365-information till ditt lokala nätverk för snabbare åtkomst. Det finns flera sätt att implementera en lokal caching-lösning i nätverket, den vanligaste metoden är att använda en proxyserver som cachelagrar innehåll lokalt. När en proxy eller ett privat CDN har cachelagrat videofragmenten och-manifesten hämtas framtida förfrågningar för de filer som dirigerar via proxy eller privat CDN från den lokala cachen och hämtas inte från en Internet plats. Betrakta bandbredd, kapacitet och video uppspelnings concurrency under planeringen av en lösning som den här.
+Ja. Office 365 hindrar dig inte från att använda ett lokalt CDN eller en cachelagringsproxy för att hämta video eller annat Office 365-innehåll till det lokala nätverket för snabbare åtkomst. Det finns flera sätt att implementera en lokal cachelagringslösning på nätverket. Den vanligaste metoden är att använda en proxylösning som cachelagrar innehåll lokalt. När en proxy eller privat CDN har cachelagrat videofragment och manifest hämtas framtida förfrågningar för de filer som dirigeras via proxyn eller privata CDN från det lokala cacheminnet och hämtas inte från en internetplats. Ta hänsyn till nätverkets bandbredd, kapacitet och videouppspelningens samtidighet vid planering av en lösning som den här.
   
-([Överst på](office-365-video-networking-faq.md)sidan)
+([Överst på sidan](office-365-video-networking-faq.md))
   
-## <a name="how-videos-are-encrypted-and-secured"></a>Hur är filmer och är krypterade?
+## <a name="how-videos-are-encrypted-and-secured"></a>Hur krypteras och skyddas videor?
 
-Office 365 Video vet hur viktigt det är att skydda dina data och privata. [Microsoft Trust Center](https://products.office.com/business/office-365-trust-center-welcome) beskriver vårt engagemang för sekretess och säkerhet för innehållet. Med videouppspelning är hastigheten viktig för en bra upplevelse; men vi kommer inte att äventyra din säkerhet eller integritet i Exchange för snabb fart. Så här gör vi för att få fart, säkerhet och sekretess.
+För Office 365 Video har vi veta hur viktigt det är att behålla data skyddade och privata. [Microsoft Säkerhetscenter](https://products.office.com/business/office-365-trust-center-welcome) beskriver vårt arbete med sekretess och säkerhet för ditt innehåll. Vid videouppspelning är hastigheten viktig för en bra upplevelse. Men vi äventyrar inte din säkerhet och sekretess i utbyte mot hastighet. Så här kan vi hantera hastighet, säkerhet och sekretess.
   
-När du eller någon i din organisation laddar upp en ny video är den kodad, krypterad med AES-128-kryptering och lagras i Azure Media Services. Det innebär att videoklippen är krypterade och går vidare.
+När du eller någon annan i organisationen laddar upp en ny video kodas den om, krypteras med AES-128-kryptering och lagras i Azure Media Services. Det innebär att videorna är krypterade både under överföring och vilan.
   
 När någon i organisationen försöker titta på en ny video följer de de här stegen:
   
 1. Fråga SharePoint Online om de har behörighet att visa videon.
 
-2. SharePoint Online använder fil behörigheterna för att avgöra om personen kan titta på videon.
+2. SharePoint Online använder filbehörigheterna för att avgöra om personen kan titta på videon.
 
-3. Om de tillåts hämtar SharePoint Online ett token från Azure för att ge Videos pelaren.
+3. Om det är tillåtet hämtar SharePoint Online en token från Azure som ska ge till videospelaren.
 
-4. Videos pelaren använder sedan token för att begära dekrypteringsnyckeln från Azure.
+4. Videospelaren använder sedan denna token för att begära dekrypteringsnyckeln från Azure.
 
-5. Med krypterings tangenten i handen kan Videos pelaren strömma videon.
+5. Med dekrypteringsnyckeln kan videospelaren direktuppspela videon.
 
-![O365 videouppspelning](../media/9d3c6e76-151d-48a3-a30e-ba8dd07db0b7.png)
+![O365 Video-uppspelning](../media/9d3c6e76-151d-48a3-a30e-ba8dd07db0b7.png)
   
-([Överst på](office-365-video-networking-faq.md)sidan)
+([Överst på sidan](office-365-video-networking-faq.md))
   
-## <a name="what-are-the-requirements-to-playback-office-365-video"></a>Vilka är kraven för att spela upp Office 365-Video?
+## <a name="what-are-the-requirements-to-playback-office-365-video"></a>Vilka är kraven för att spela upp Office 365 Video?
 
-Office 365-kompatibla operativ system och webbläsare är samma som SharePoint Online-kraven i [system krav för office 365](https://support.office.com/article/Office-365-system-requirements-719254c0-2671-4648-9c84-c6a3d4f3be45). Beroende på vilket operativ system och vilken webb läsar konfiguration du har avgör Videos pelarens specifika behov. Här finns mer information om [krav för videouppspelning](https://support.office.com/article/ca1cc1a9-a615-46e1-b6a3-40dbd99939a6).
+Operativsystem som stöds och webbläsare som stöds av Office 365 Video är samma som för SharePoint Online-systemkraven för [Office 365.](https://support.office.com/article/Office-365-system-requirements-719254c0-2671-4648-9c84-c6a3d4f3be45) Beroende på vilket operativsystem och vilken webbläsarkonfiguration du har kan du avgöra vilka behov videospelaren har. Här finns mer information om [videouppspelningskrav](https://support.office.com/article/ca1cc1a9-a615-46e1-b6a3-40dbd99939a6).
   
-([Överst på](office-365-video-networking-faq.md)sidan)
+([Överst på sidan](office-365-video-networking-faq.md))
   
-## <a name="i-cant-get-office-365-video-to-work-where-should-i-start"></a>Jag kan inte få Office 365-Video att fungera, var ska jag börja?
+## <a name="i-cant-get-office-365-video-to-work-where-should-i-start"></a>Jag kan inte få Office 365-video att fungera, var ska jag börja?
 
-Med fel sökning av anslutning till Office 365-Video kan du felsöka nätverket, Internet leverantören och din konfiguration av Office 365. Den första start platsen är instrument panelen för tjänstens hälsa. Det visar att Office 365-videon har problem eller inte. Om allting ser bra ut finns här några ytterligare resurser som hjälper dig.
+Felsökning av anslutningen till Office 365 Video omfattar felsökning nätverket, din internetleverantör och konfigurationen av Office 365. Du börjar med hälsoinstrumentpanelen för tjänsten. Då ser du om det finns något problem med Office 365 Video. Om allt ser bra ut där finns det ytterligare resurser som kan hjälpa dig.
   
-- Kontrol lera att du kan ansluta till de [nätverks slut punkter som krävs för Office 365-Video](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
+- Se till att du kan ansluta till [nätverksslutpunkterna som krävs för Office 365 Video.](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)
 
-- Kontrol lera nätverks anslutningen med hjälp av vår [Office 365-nätverks fel söknings guide](https://support.office.com/article/Office-365-performance-tuning-and-troubleshooting-Admin-and-IT-Pro-1492cb94-bd62-43e6-b8d0-2a61ed88ebae).
+- Kontrollera nätverksanslutningen med hjälp av vår [felsökningsguide för Office 365-nätverk.](https://support.office.com/article/Office-365-performance-tuning-and-troubleshooting-Admin-and-IT-Pro-1492cb94-bd62-43e6-b8d0-2a61ed88ebae)
 
-- Se vår [metod för att använda Office 365 på ett långsamt nätverk](https://support.office.com/article/Best-practices-for-using-Office-365-on-a-slow-network-fd16c8d2-4799-4c39-8fd7-045f06640166).
+- Se [metodtipsen för att använda Office 365 i ett långsamt nätverk.](https://support.office.com/article/Best-practices-for-using-Office-365-on-a-slow-network-fd16c8d2-4799-4c39-8fd7-045f06640166)
 
-- [Hitta hjälp om konfiguration av Office 365-Video](https://support.office.com/article/Find-help-about-Office-365-Video-b435f99a-f47e-4ebd-a946-f5c965844f50).
+- [Hitta hjälp om Office 365 Video-konfiguration.](https://support.office.com/article/Find-help-about-Office-365-Video-b435f99a-f47e-4ebd-a946-f5c965844f50)
 
-([Överst på](office-365-video-networking-faq.md)sidan)
+([Överst på sidan](office-365-video-networking-faq.md))
   
-## <a name="office-365-video-resources"></a>Video resurser för Office 365
+## <a name="office-365-video-resources"></a>Office 365 Video-resurser
 
-Här är några andra resurser som hjälper dig att distribuera och använda Office 365-Video:
+Här är några andra resurser som hjälper dig att distribuera och använda Office 365 Video:
   
-[Hitta hjälp om konfiguration av Office 365-Video](https://support.office.com/article/Find-help-about-Office-365-Video-b435f99a-f47e-4ebd-a946-f5c965844f50)
+[Hitta hjälp om Office 365 Video-konfiguration](https://support.office.com/article/Find-help-about-Office-365-Video-b435f99a-f47e-4ebd-a946-f5c965844f50)
   
-[Träffa Office 365-Video](https://support.office.com/article/Meet-Office-365-Video-ca1cc1a9-a615-46e1-b6a3-40dbd99939a6)
+[Möt Office 365 Video](https://support.office.com/article/Meet-Office-365-Video-ca1cc1a9-a615-46e1-b6a3-40dbd99939a6)
   
 [Skapa och hantera en kanal i Office 365 Video](https://support.office.com/article/Create-and-manage-a-channel-in-Office-365-Video-1fede4cc-13c0-435a-b585-e7fbf1c83bb2)
   
-[Hantera din Office 365 Video-Portal](https://support.office.com/article/Manage-your-Office-365-Video-portal-c059465b-eba9-44e1-b8c7-8ff7793ff5da)
+[Hantera din Office 365 Video-portal](https://support.office.com/article/Manage-your-Office-365-Video-portal-c059465b-eba9-44e1-b8c7-8ff7793ff5da)
   
-[Video format som fungerar i Office 365 Video](https://support.office.com/article/Video-formats-that-work-in-Office-365-Video-dd1af01c-fd8e-4640-b17b-93ee02b9b817)
+[Videoformat som fungerar i Office 365 Video](https://support.office.com/article/Video-formats-that-work-in-Office-365-Video-dd1af01c-fd8e-4640-b17b-93ee02b9b817)
   
-([Överst på](office-365-video-networking-faq.md)sidan)
+([Överst på sidan](office-365-video-networking-faq.md))
   
-Här är en kort länk som du kan använda för att komma tillbaka: [https://aka.ms/video365networkfaq](https://aka.ms/video365networkfaq)
+Här är en kort länk som du kan använda för att komma tillbaka: [https://aka.ms/video365networkfaq]()

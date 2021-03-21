@@ -1,7 +1,7 @@
 ---
 title: Förbereda mappade enheter för Microsoft Hanterat skrivbord
-description: Viktiga steg för att kontrol lera
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+description: Viktiga steg för att se till att
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
@@ -9,47 +9,47 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 34b2186ea3f9129ae7bb602aee879d7d23424136
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: cd45d6155fc0e01f6a285f6182aa051281d160e0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841070"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922914"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Förbereda mappade enheter för Microsoft Hanterat skrivbord
 
-Många företags miljöer har äldre krav för anslutna enheter så att användare och team kan dela och lagra filer eller för lokala program. Microsoft rekommenderar inte användning av mappade enheter med Microsoft Managed Desktop. Vi rekommenderar att du modernisera fil åtkomst lösningarna så här:
+Många företagsmiljöer har äldre krav för mappade enheter för att deras användare eller team ska kunna dela och lagra filer eller för lokala program. Microsoft rekommenderar inte att du använder mappade enheter med Microsoft Managed Desktop. I stället rekommenderar vi att du moderniserar dina filåtkomstlösningar på följande sätt:
   
-- Migrera anslutna enheter som används av enskilda användare till OneDrive för företag. 
-- Migrera mappade enheter som används av Teams för att dela filer till SharePoint Online. 
-- Modernisera eller Ersätt alla program som använder lokala fil resurser för att ta bort det kravet.
+- Migrera mappade enheter som används av enskilda användare till OneDrive för företag. 
+- Migrera mappade enheter som används av grupper för att dela filer till SharePoint Online. 
+- Modernisera eller ersätt alla program som använder lokala filresurser för att ta bort det kravet.
   
-Om de här tjänsterna bevaras kommer de att få bästa möjliga användar upplevelse med Microsoft hanterat skriv bord. Microsoft FastTrack-tjänsterna hjälper dig att göra din miljö med Microsofts moln tjänster. Du kan kontrol lera om du är berättigad till FastTrack tjänster för [kvalificerade tjänster och abonnemang](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans) och sedan kontakta dem direkt för att förbereda dig för Microsoft Managed Desktop. Om du vill ha information om FastTrack OneDrive för företag eller SharePoint Online-migrering läser du [datamigrering](https://docs.microsoft.com/fasttrack/o365-data-migration).
+Om du moderniseraer de här tjänsterna får du en så bra användarupplevelse som möjligt med Microsoft Managed Desktop. Microsoft FastTrack-tjänster kan hjälpa dig att modernisera miljön med hjälp av Microsofts molntjänster. Du kan kontrollera om du är berättigad till FastTrack-tjänster hos [Kvalificerade](/fasttrack/m365-eligible-services-and-plans) tjänster och abonnemang och sedan kontakta dem direkt för att förbereda dig för Microsoft Managed Desktop. Mer information om FastTrack-migrering av OneDrive för företag eller SharePoint Online finns i [Datamigrering.](/fasttrack/o365-data-migration)
 
-## <a name="mapped-drives-on-microsoft-managed-desktop"></a>Anslutna enheter på Microsoft Managed Desktop
+## <a name="mapped-drives-on-microsoft-managed-desktop"></a>Mappade enheter på Microsoft Managed Desktop
  
-Om du inte kan ta bort eller ersätta anslutna enheter för vissa användnings fall ska du skicka en supportbegäran på Microsoft Managed Desktop admin-portalen för att distribueras till Microsoft Managed Desktop-användare.
+Om du inte kan ta bort eller ersätta mappade enheter i vissa användningsfall, bör du skicka en supportbegäran i administrationsportalen för Microsoft Managed Desktop så att de distribueras till användare av Microsoft Managed Desktop.
     
-För en sådan begäran måste du uppge följande information i supportbegäran: 
+För en sådan begäran måste du ange följande information i supportbegäran: 
 
-- Alla UNC-sökvägar till fil resurser som måste mappas för Microsoft-hanterade Station ära enheter 
-- Användar grupper som kräver åtkomst till dessa fil resurser 
-- Eventuell specifik enhets bokstav som måste tilldelas (om det behövs)
+- Alla UNC-sökvägar till filresursplatser som måste mappas för Microsoft Managed Desktop-enheter 
+- Användargrupper som kräver åtkomst till dessa platser för filresursen 
+- Alla specifika enhetsbeteckningar som måste tilldelas (om det behövs)
 
-Till exempel:
+Ett exempel:
 
-| Enhets beteckning | UNC-sökväg | Användar grupp |
+| Enhetsbeteckning | UNC-sökväg | Användargrupp |
 |--------------|----------|------------|
-| Kryss  | \\\server\share\Marketing | ContosoMarketing |
+| X:  | \\\server\share\Marketing | ContosoMarketing |
 
-Det är helt ditt ansvar att säkerställa att användare och grupper har och upprätthåller rätt behörigheter för åtkomst till fil resurser och att den lokala fil tjänsten är tillgänglig. Dessutom bör du ta bort dina krav för sådana fildelningar så snart som möjligt.
+Det är helt ditt ansvar att säkerställa att användare och grupper har och behåller rätt behörighet för att komma åt filresursplatser och att de lokala filtjänsterna förblir tillgängliga. Dessutom bör du ta bort kraven för sådana filresurser så snart som möjligt.
 
-### <a name="to-have-mapped-drives-deployed-in-microsoft-managed-desktop"></a>Om du vill att mappade enheter distribueras på Microsoft Managed Desktop
+### <a name="to-have-mapped-drives-deployed-in-microsoft-managed-desktop"></a>Så här har du mappade enheter distribuerat i Microsoft Managed Desktop
  
-Kontrol lera att anslutna enheter inte kan undvikas och att du noggrant har granskat kraven innan du skickar en tjänst förfrågan. Gör sedan följande:
+Se till att mappade enheter inte går att undvika och att du noggrant har granskat kraven innan du skickar in en servicebegäran. Följ sedan de här anvisningarna:
 
-1. Gå till [Microsoft slut punkts hanteraren](https://endpoint.microsoft.com/) och välj "fel sökning + support" och leta efter "tjänst begär Anden" under avsnittet Microsoft Managed Desktop.  
-2. Skicka in en supportbegäran med rubriken "anslutna enheter distribution" och ge alla nödvändiga fil uppgifter.  
-3. Microsoft-hanterad stationär dator IT-operationer bör använda uppdateringar för support förfrågningar när begäran har slutförts. Först distribueras den här konfigurationen till enheter i test distributions gruppen.  
-4. Du måste testa och bekräfta om konfigurationen som distribueras av Microsoft Managed Desktop fungerar som förväntat. Svara med hjälp av fliken diskussion i informationen om samma supportbegäran för att meddela Microsoft Managed Desktop IT-operationer när du har gjort testen.  
-5. Gruppen Microsoft Managed Desktop IT Operations distribuerar sedan konfigurationen till de andra distributions grupperna. 
+1. Gå till [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) och välj "Felsökning + support" och leta sedan efter "Tjänstförfrågningar" under avsnittet Microsoft Managed Desktop.  
+2. Skicka en supportbegäran med namnet "Distribution av mappade enheter" och ange all information som krävs för filresursen.  
+3. Microsoft Managed Desktop IT Operations ger information om när begäran har slutförts med hjälp av uppdateringar av supportbegäran. Från början distribueras den här konfigurationen endast till enheter i testdistributionsgruppen.  
+4. Du måste testa och bekräfta om konfigurationen som distribuerats av MICROSOFT Managed Desktop IT Operations fungerar som förväntat. Svara med hjälp av fliken Diskussion i informationen för samma supportbegäran för att meddela Microsoft Managed Desktop IT Operations när du har slutfört testningen.  
+5. Microsoft Managed Desktop IT Operations-teamet distribuerar sedan konfigurationen till andra distributionsgrupper.

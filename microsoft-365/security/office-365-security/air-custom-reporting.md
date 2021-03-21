@@ -21,29 +21,29 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 13782a8e0a8c691a66f214d3f9f03ef9cad4da1f
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 9f62d73417cc4d7ecaa113ae1c304630ef1852eb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287143"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921438"
 ---
-# <a name="custom-or-third-party-reporting-solutions-for-microsoft-defender-for-office-365"></a>Anpassade rapportlösningar eller rapportlösningar från tredje part för Microsoft Defender för Office 365
+# <a name="custom-or-third-party-reporting-solutions-for-microsoft-defender-for-office-365"></a>Anpassade eller tredjepartsrapporteringslösningar för Microsoft Defender för Office 365
 
-Med [Microsoft Defender för Office 365](office-365-atp.md)får du detaljerad information om automatiska [undersökningar.](air-view-investigation-results.md) Men vissa organisationer använder också en anpassad lösning eller en rapportlösning från tredje part. Om din organisation vill integrera information om [automatiserade undersökningar](office-365-air.md) med en sådan lösning kan du använda API:t för hanteringsaktivitet i Office 365.
+Med [Microsoft Defender för Office 365](office-365-atp.md)får du detaljerad information om automatiska [undersökningar.](air-view-investigation-results.md) Men vissa organisationer använder även en anpassad rapportlösning eller rapporteringslösning från tredje part. Om din organisation vill integrera information om [automatiserade undersökningar](office-365-air.md) med en sådan lösning kan du använda API:t för hanteringsaktivitet i Office 365.
 
 **Gäller för**
 - [Microsoft Defender för Office 365 abonnemang 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Med [Microsoft Defender för Office 365](office-365-atp.md)får du detaljerad information om automatiska [undersökningar.](air-view-investigation-results.md) Men vissa organisationer använder också en anpassad lösning eller en rapporteringslösning från tredje part. Om din organisation vill integrera information om automatiserade undersökningar med en sådan lösning kan du använda API:t för hanteringsaktivitet i Office 365.
+Med [Microsoft Defender för Office 365](office-365-atp.md)får du detaljerad information om automatiska [undersökningar.](air-view-investigation-results.md) Men vissa organisationer använder även en anpassad rapportlösning eller rapporteringslösning från tredje part. Om din organisation vill integrera information om automatiserade undersökningar med en sådan lösning kan du använda API:t för hanteringsaktivitet i Office 365.
 
 |Resurs|Beskrivning|
 |:---|:---|
-|[Översikt över API:er för hantering av Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)|API:t för hanteringsaktivitet i Office 365 innehåller information om olika användar-, administratörs-, system- och principåtgärder och händelser från Microsoft 365- och Azure Active Directory-aktivitetsloggar.|
-|[Komma igång med API:er för hantering av Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)|Office 365 Management API använder Azure AD för att tillhandahålla autentiseringstjänster för ditt program för att få åtkomst till Microsoft 365-data. Följ anvisningarna i den här artikeln för att konfigurera det här.|
-|[API för hanteringsaktivitet i Office 365, referens](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)|Du kan använda API:t för hanteringsaktivitet i Office 365 för att hämta information om användar-, administratörs-, system- och principåtgärder och händelser från aktivitetsloggarna för Microsoft 365 och Azure AD. Läs den här artikeln om du vill veta mer om hur det fungerar.|
-|[API för hanteringsaktivitet i Office 365. schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema)|Få en översikt över det vanliga [schemat](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) och Defender för [Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) samt hotundersöknings- och svarsschemat om du vill lära dig mer om specifika typer av data som är tillgängliga via API:t för hanteringsaktivitet i Office 365.|
+|[Översikt över API:er för hantering av Office 365](/office/office-365-management-api/office-365-management-apis-overview)|API:t för hanteringsaktivitet i Office 365 innehåller information om olika användar-, administratörs-, system- och principåtgärder och händelser från Microsoft 365- och Azure Active Directory-aktivitetsloggar.|
+|[Komma igång med API:er för hantering av Office 365](/office/office-365-management-api/get-started-with-office-365-management-apis)|Office 365 Management API använder Azure AD för att tillhandahålla autentiseringstjänster för ditt program för att få åtkomst till Microsoft 365-data. Följ stegen i den här artikeln för att konfigurera detta.|
+|[API för hanteringsaktivitet i Office 365, referens](/office/office-365-management-api/office-365-management-activity-api-reference)|Du kan använda API:t för hanteringsaktivitet i Office 365 för att hämta information om användar-, administratörs-, system- och principåtgärder och -händelser från Microsoft 365- och Azure AD-aktivitetsloggar. Läs den här artikeln om du vill veta mer om hur det fungerar.|
+|[API för hanteringsaktivitet i Office 365. schema](/office/office-365-management-api/office-365-management-activity-api-schema)|Få en översikt över det vanliga [schemat](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) och Defender för [Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) och undersökning av hot och svarsschema om du vill veta mer om specifika typer av data som är tillgängliga via API:t för hanteringsaktivitet i Office 365.|
 |
 
 ## <a name="see-also"></a>Se även

@@ -1,5 +1,5 @@
 ---
-title: Använd kampanj koden för att minska priset
+title: Använd kampanjkoden för att sänka priset
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,33 +23,33 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fce1510d-9ea5-4aff-8752-1676ec7fede3
-description: Lär dig hur du kan använda en kampanj kod i Microsoft 365-prenumerationen för att minska priset och hur du felsöker kampanj kod om ett fel uppstår.
-ms.openlocfilehash: 09f39b6f82153c6b23525ab41cfb94e77437d062
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Läs om hur du använder en kampanjkod för din Microsoft 365-prenumeration för att sänka priset och hur du felsöker kampanjkoden vid fel.
+ms.openlocfilehash: c526d5fd44db5e653f79c4987a35c72cdd6fdcad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646745"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921762"
 ---
-# <a name="use-your-promo-code-to-reduce-price"></a>Använd kampanj koden för att minska priset
+# <a name="use-your-promo-code-to-reduce-price"></a>Använd kampanjkoden för att sänka priset
 
-När du köper en prenumeration kan du använda en kampanj kod för att minska priset. Läs den här artikeln om du vill lära dig hur du kan använda en kampanj kod för ditt abonnemang för att lära dig mer om [kampanj koden](#promo-code-terms)och hur du [felsöker kampanj koder](#troubleshooting-promo-codes).
+När du köper en prenumeration kan du använda en kampanjkod för att sänka priset. Läs den här artikeln om du vill veta mer om [](#promo-code-terms)hur du använder en kampanjkod för din prenumeration, om du vill veta mer om kampanjkodsvillkor och om hur du [felsöker kampanjkoder.](#troubleshooting-promo-codes)
   
 ## <a name="apply-a-promo-code-to-your-subscription"></a>Använda en kampanjkod för din prenumeration
 
-1. Påbörja köpet genom att antingen köpa en ny prenumeration eller genom att lägga till tjänster till en befintlig prenumeration.
+1. Påbörja köpet antingen genom att köpa en ny prenumeration eller genom att lägga till tjänster till en befintlig prenumeration.
     
-2. När du checkar ut väljer du * * har en kampanj eller rabatt kod? och anger sedan koden i rutan. 
+2. När du checkar ut väljer du **Har du en kampanj- eller rabattkod?, och anger sedan koden i rutan. 
   
-3. Välj **Använd kampanj kod**. Du bör se en bekräftelse på att den har tillämpats. Om du ser ett annat meddelande läser du i [Felsökning för kampanjkoder](#troubleshooting-promo-codes) för att ta reda på orsaken. 
+3. Välj **Använd kampanjkod.** Du bör se en bekräftelse på att den har tillämpats. Om du ser ett annat meddelande läser du i [Felsökning för kampanjkoder](#troubleshooting-promo-codes) för att ta reda på orsaken. 
     
-4. Fortsätt att checka ut. På sidan order bekräftelse ser du rabatt koden som ingår i beloppet. 
+4. Fortsätt till utcheckningen. På sidan för orderbekräftelse ser du din rabattkod inkluderad i beloppet. 
     
 När som helst efter att du slutfört ditt köp kan du se rabatten från kampanjkoden på fakturan. Mer information finns i [Visa din](billing-and-payments/view-your-bill-or-invoice.md).
   
 ## <a name="promo-code-terms"></a>Kampanjkodsvillkor
 
-Följande rikt linjer gäller för kampanj koder för Microsoft 365 för Business-prenumerationer.
+Följande riktlinjer gäller för kampanjkoder för prenumerationer på Microsoft 365 för företag.
   
 - **Antal kampanjkoder per abonnemang** Du kan använda en kampanjkod för flera abonnemang i samma beställning, men du kan inte använda flera kampanjkoder för samma abonnemang. 
     
@@ -73,8 +73,8 @@ Om du får ett felmeddelande när du har angett kampanjkoden kan finnas det ett 
   
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Köpa en prenumeration från din kostnadsfria utvärderingsversion](buy-a-subscription-from-your-free-trial.md)
+[Köpa en prenumeration från din kostnadsfria utvärderingsversion](./try-or-buy-microsoft-365.md)
   
-[Köpa en annan prenumeration](buy-another-subscription.md)
+[Köpa en annan prenumeration](./try-or-buy-microsoft-365.md)
   
 [Köpa eller redigera ett tillägg](buy-or-edit-an-add-on.md)

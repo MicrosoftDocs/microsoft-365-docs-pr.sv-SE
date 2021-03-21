@@ -22,12 +22,12 @@ localization_priority: Priority
 description: Administratörer kan läsa mer om de skydd mot förfalskning som finns tillgängliga i Exchange Online Protection (EOP) och som kan hjälpa dig att minska riskerna för nätfiske från falska avsändare och domäner.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2b20ae766ee308e9c59ed0d495df7c5a97c79b00
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 1d048a65b34bc97a619855216945d1cc988bf9e2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287071"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921390"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Skydd mot förfalskning i EOP
 
@@ -94,7 +94,7 @@ Microsoft skiljer mellan två olika typer av falska meddelanden:
   - Avsändaren och mottagaren finns i underdomäner till samma domän:
     > Från: laura@marketing.fabrikam.com <br> Till: julia@engineering.fabrikam.com
 
-  - Avsändaren och mottagaren finns i olika domäner som tillhör samma organisation (d.v.s. båda domänerna är konfigurerade som [godkända domäner](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) i samma organisation):
+  - Avsändaren och mottagaren finns i olika domäner som tillhör samma organisation (d.v.s. båda domänerna är konfigurerade som [godkända domäner](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) i samma organisation):
     > Från: avsändare @ microsoft.com <br> Till: mottagare @ bing.com
 
     Mellanslag används i e-postadresserna för att förhindra spambot-insamling.
@@ -150,7 +150,7 @@ Om du vill se till att e-post från distributionslistor klarar förfalskningskon
 
   - Ta en titt på vanliga frågor och svar på DMARC.org: [I operate a mailing list and I want to interoperate with DMARC, what should I do?](https://dmarc.org/wiki/FAQ#I_operate_a_mailing_list_and_I_want_to_interoperate_with_DMARC.2C_what_should_I_do.3F) (Jag driver en distributionslista och vill samverka med DMARC, vad ska jag göra?).
 
-  - Läs anvisningarna i det här blogginlägget: [A tip for mailing list operators to interoperate with DMARC to avoid failures](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/) (Ett tips för dem som driver distributionslistor att samverka med DMARC för att undvika fel).
+  - Läs anvisningarna i det här blogginlägget: [A tip for mailing list operators to interoperate with DMARC to avoid failures](/archive/blogs/tzink/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures) (Ett tips för dem som driver distributionslistor att samverka med DMARC för att undvika fel).
 
   - Överväg att installera uppdateringar på distributionslistans server som stöder ARC, se <http://arc-spec.org>.
 

@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Läs om vad som händer med dina data när prenumerationen för Microsoft 365 för företag förfaller, inaktiveras eller om du avbryter den.
-ms.openlocfilehash: a9e2e68c0eee119126af93552a50f1859f708c1f
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 7560e715a9b1951915866f96c8df3bd1f884a475
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741363"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921822"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Vad händer med mina data och åtkomst när prenumerationen för Microsoft 365 för företag går ut?
 
 Om prenumerationen går ut – antingen eftersom den förfaller eller för att du vill avbryta – kommer din åtkomst till Microsoft 365-tjänster, program och kunddata gå igenom flera tillstånd innan prenumerationen är helt inaktiverad eller *borttagen*. Om du har förståelse för förloppet kommer du vara beredd på att återaktivera din prenumeration i tid, eller – om du lämnar Microsoft 365 – säkerhetskopiera dina data innan de tas bort permanent.
 
-Läs igenom den viktiga informationen innan du kontaktar [Supporten för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
+Läs igenom den viktiga informationen innan du kontaktar [Supporten för Microsoft 365](../../admin/contact-support-for-business-products.md).
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>Vad händer med data när en prenumeration förfaller?
 
@@ -51,7 +51,7 @@ Följande tabell visar vad du kan förvänta dig när en betald prenumeration f�
 *För de flesta erbjudanden, i de flesta länder och regioner.
   
 > [!NOTE]
-> **Vad är kunddata?** Kunddata, som definierat i [Villkor för Microsofts onlinetjänst](https://go.microsoft.com/fwlink/p/?LinkId=613649), hänvisar till alla data, inklusive alla text-, ljud- och bildfiler som tillhandahålls till Microsoft av eller för kundens räkning genom kundens användning av Microsoft 365-tjänster. Mer information om hur du skyddar kunddata finns i [Kom igång med Microsoft Service Trust Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal).
+> **Vad är kunddata?** Kunddata, som definierat i [Villkor för Microsofts onlinetjänst](https://go.microsoft.com/fwlink/p/?LinkId=613649), hänvisar till alla data, inklusive alla text-, ljud- och bildfiler som tillhandahålls till Microsoft av eller för kundens räkning genom kundens användning av Microsoft 365-tjänster. Mer information om hur du skyddar kunddata finns i [Kom igång med Microsoft Service Trust Portal](../../compliance/get-started-with-service-trust-portal.md).
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>Vad händer om jag avbryter en prenumeration?
 
@@ -210,13 +210,13 @@ När utvärderingsversionen går ut kan du inte fortsätta använda Microsoft 36
 
 ::: moniker range="o365-worldwide"
 
-- **Köp Microsoft 365.** När utvärderingsversionen går ut flyttas den till en respitperiod som ger dig ytterligare 30 dagar (för de flesta utvärderingsversioner, i de flesta länder och regioner) för att köpa Microsoft 365. Information om hur du konverterar utvärderingsversionen till en betald prenumeration i [Köp utvärderingsversionen av Microsoft 365 för företag](../buy-a-subscription-from-your-free-trial.md).
+- **Köp Microsoft 365.** När utvärderingsversionen går ut flyttas den till en respitperiod som ger dig ytterligare 30 dagar (för de flesta utvärderingsversioner, i de flesta länder och regioner) för att köpa Microsoft 365. Information om hur du konverterar utvärderingsversionen till en betald prenumeration i [Köp utvärderingsversionen av Microsoft 365 för företag](../try-or-buy-microsoft-365.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-- **Köp Microsoft 365.** När utvärderingsversionen går ut flyttas den till en respitperiod som ger dig ytterligare 30 dagar (för de flesta utvärderingsversioner, i de flesta länder och regioner) för att köpa Microsoft 365. Information om hur du konverterar utvärderingsversionen till en betald prenumeration i [Köp utvärderingsversionen av Microsoft 365 för företag](../buy-a-subscription-from-your-free-trial.md).
+- **Köp Microsoft 365.** När utvärderingsversionen går ut flyttas den till en respitperiod som ger dig ytterligare 30 dagar (för de flesta utvärderingsversioner, i de flesta länder och regioner) för att köpa Microsoft 365. Information om hur du konverterar utvärderingsversionen till en betald prenumeration i [Köp utvärderingsversionen av Microsoft 365 för företag](../try-or-buy-microsoft-365.md).
 
 ::: moniker-end
 
@@ -235,7 +235,6 @@ När utvärderingsversionen går ut kan du inte fortsätta använda Microsoft 36
 
 ## <a name="related-content"></a>Relaterat innehåll 
 
-[Avbryt prenumerationen](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription) (artikel)\
-[Förnya Microsoft 365 för företag](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (artikel)\
-[Återaktivera prenumerationen](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription) (artikel)
-
+[Avbryt prenumerationen](./cancel-your-subscription.md) (artikel)\
+[Förnya Microsoft 365 för företag](./renew-your-subscription.md) (artikel)\
+[Återaktivera prenumerationen](./reactivate-your-subscription.md) (artikel)
