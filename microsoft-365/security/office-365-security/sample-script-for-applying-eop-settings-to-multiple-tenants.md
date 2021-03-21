@@ -12,15 +12,15 @@ localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 ms.custom:
 - seo-marvel-apr2020
-description: I den här artikeln får du lära dig hur du använder PowerShell för att använda konfigurationsinställningar för klientorganisationen i Microsoft Exchange Online Protection (EOP).
+description: I den här artikeln får du lära dig hur du använder PowerShell för att tillämpa konfigurationsinställningar för klientorganisationen i Microsoft Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4823ed09cd8a9d72aef21df3d51213cb4512b4f9
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 77a1dce25901845628f8148c44a0d0783088255e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288543"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928514"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>Exempelskript för att tillämpa EOP-inställningar i flera klientorganisationer
 
@@ -29,15 +29,15 @@ ms.locfileid: "50288543"
 **Gäller för**
 -  [Exchange Online Protection fristående](exchange-online-protection-overview.md)
 
-Med följande exempelskript kan Microsoft Exchange Online Protection-administratörer (EOP) som hanterar flera innehavare (företag) använda Exchange Online PowerShell för att visa och/eller använda konfigurationsinställningar för sina klientorganisationar.
+Med följande exempelskript kan Administratörer för Microsoft Exchange Online Protection (EOP) som hanterar flera klientorganisationen (företag) använda Exchange Online PowerShell för att visa och/eller använda konfigurationsinställningar för sina klientorganisationar.
 
 ## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>Köra ett skript eller en cmdlet på flera klientorganisationar
 
-1. Om du inte redan har gjort det [installerar du Exchange Online V2-modulen.](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)
+1. Om du inte redan har gjort det [installerar du modulen Exchange Online V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
-2. Skapa en CSV-fil med följande information med hjälp av ett kalkylblad (till exempel Excel):
+2. Med ett kalkylbladsprogram (till exempel Excel) skapar du en CSV-fil med följande information:
 
-   - Kolumnen Användarnamn: Det konto som du kommer att använda för att ansluta (till `admin@contoso.onmicrosoft.com` exempel).
+   - Kolumnen UserName: Det konto som du kommer att använda för att ansluta (till exempel `admin@contoso.onmicrosoft.com` ).
    - Kolumnen Cmdlet: Cmdleten eller kommandot som ska köras (till exempel `Get-AcceptedDomain` eller `Get-AcceptedDomain | FT Name` ).
 
    Filen ser ut så här:
@@ -48,9 +48,9 @@ Med följande exempelskript kan Microsoft Exchange Online Protection-administrat
    admin@fabrikam.onmicrosoft.com,Get-AcceptedDomain | FT Name
    ```
 
-3. Spara CSV-filen på en plats som är lätt att hitta (till exempel c:\scripts\inputfile.csv).
+3. Spara CSV-filen på en plats som är lätt att hitta (till exempel på c:\scripts\inputfile.csv).
 
-4. Kopiera skriptet [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) Anteckningar och spara sedan filen på en plats som är lätt att hitta (till exempel c:\skript).
+4. Kopiera [ skriptetRunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) Anteckningar och spara sedan filen på en plats som är lätt att hitta (till exempel c:\skript).
 
 5. Kör skriptet med följande syntax:
 
@@ -69,7 +69,7 @@ Med följande exempelskript kan Microsoft Exchange Online Protection-administrat
 ## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
 
 > [!NOTE]
-> Du kan behöva ändra raden `Connect-IPPSSession` i skriptet så att den matchar din miljö. Office 365 Germany kräver till exempel ett annat _ConnectionUri-värde_ än det aktuella värdet i ett skript. Mer information finns i Ansluta till [Exchange Online Powershell.](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)
+> Du kan behöva ändra raden `Connect-IPPSSession` i skriptet så att den matchar din miljö. Till exempel kräver Office 365 Germany ett annat _ConnectionUri-värde_ än det aktuella värdet i ett skript. Mer information finns i Ansluta till [Exchange Online Powershell.](/powershell/exchange/connect-to-exchange-online-protection-powershell)
 
 ```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.

@@ -14,107 +14,107 @@ localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
-description: Data transporter är bakgrunds åtgärder som inträffar när Microsoft flyttar tjänster och tillhör ande data för din klient organisation till ett nytt Data Center geo.
+description: Dataflyttningar är åtgärder i backend som utförs när Microsoft flyttar tjänster och associerade data för klientorganisationen till ett nytt datacenter geo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ca3159aeb951fb0cb3bf3aba953979dabc6ba024
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+ms.openlocfilehash: 14563a695e5c092f9bddfbdfdcb758f90cea32c0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349262"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929426"
 ---
 # <a name="during-and-after-your-data-move"></a>Under och efter dataflytt
 
-Data flyttas är en backend-åtgärd som påverkar slutanvändaren minimalt. Ingen åtgärd krävs när Microsoft flyttar över alla tjänster och tillhör ande data för din klient organisation till ett nytt Data Center geo. Data överföring och verifiering sker i bakgrunden i förväg med minimal påverkan på användarna.
+Dataflyttningar är en backend-åtgärd med minimal påverkan för slutanvändarna. Ingen åtgärd krävs medan Microsoft flyttar varje tjänst och associerade data för klientorganisationen till ett nytt datacenter geo. Dataöverföring och validering sker i bakgrunden i förväg och påverkar användarna så lite som möjligt.
   
 > [!NOTE]
-> Flyttningarna sker vid olika tillfällen för varje tjänst. Det innebär att du ser de reducerade funktionerna för varje tjänst samtidigt. 
+> Flyttningar sker vid olika tidpunkter för varje tjänst. Resultatet blir att du ser den beskrivna nedsatta funktionen för varje tjänst vid olika tidpunkter. 
   
-Se meddelande Center för Microsoft 365 för att bekräfta när det rör sig om för varje Exchange Online-, SharePoint Online-och Teams-chatt. Som du ser i tabellen nedan kan det ta upp till 24 månader efter det att registrerings perioden är slut för att komplettera alla grundläggande kunddata på rest till det nya data Center geo.   
+Titta på Microsoft 365 Meddelandecenter för att få en bekräftelse när du flyttar mellan chatttjänsten för Exchange Online, SharePoint Online och Teams. Som du ser i tabellen nedan kan det ta upp till 24 månader efter registreringsperiodens slut för att slutföra grundläggande kunddata i vila flyttar till det nya datacentret.   
 
-|**Kunder med anmälan land i**|**Alla flyttningar slutförda av**|
+|**Kunder med registreringland i**|**Alla flyttningar slutförda av**|
 |:-----|:-----|
-|Australien, Nya Zeeland, Fidji  <br/> |Den 1 juli 2022  <br/> |
-|Japan   <br/> |Den 1 juli 2022  <br/> |
-|Indien  <br/> |Den 1 juli 2022  <br/> |
-|Kanada  <br/> |Den 1 juli 2022  <br/> |
-|Sydkorea  <br/> |Den 1 juli 2022  <br/> |
-|Storbritannien  <br/> |Den 1 juli 2022  <br/> |
-|Frankrike  <br/> |Den 1 juli 2022  <br/> |
-|Förenade Arabemiraten  <br/> |Den 1 juli 2022  <br/> |
-|Sydafrika  <br/> |Den 1 juli 2022  <br/> |
-|Schweiz, Liechtenstein  <br/> |Den 1 juli 2022  <br/> |
-|Norge  <br/> |Den 1 november 2022  <br/> |
-|Tyskland  <br/> |Den 1 maj 2023  <br/> |
-|Brasilien  <br/> |Den 1 juni 2023  <br/> |
+|Australien, Nya Zeeland, Fiji  <br/> |1 juli 2022  <br/> |
+|Japan   <br/> |1 juli 2022  <br/> |
+|Indien  <br/> |1 juli 2022  <br/> |
+|Kanada  <br/> |1 juli 2022  <br/> |
+|Sydkorea  <br/> |1 juli 2022  <br/> |
+|Storbritannien  <br/> |1 juli 2022  <br/> |
+|Frankrike  <br/> |1 juli 2022  <br/> |
+|Förenade Arabemiraten  <br/> |1 juli 2022  <br/> |
+|Sydafrika  <br/> |1 juli 2022  <br/> |
+|Schweiz, Liechtenstein  <br/> |1 juli 2022  <br/> |
+|Norge  <br/> |1 november 2022  <br/> |
+|Tyskland  <br/> |1 maj 2023  <br/> |
+|Brasilien  <br/> |1 juni 2023  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
-Eftersom det tar tid att flytta varje användare till det nya datacentret geo för en enda klient organisation kommer vissa användare ändå att befinner sig i det gamla data centret geo under flytten, medan andra är i det nya data centret geo. Det innebär att vissa funktioner som kräver åtkomst till flera post lådor kanske inte helt fungerar under en tids period som flyttas, vilka kan gå under de senaste veckorna. Dessa funktioner beskrivs i följande avsnitt.
+Eftersom det tar tid att flytta varje användare till det nya datacentret geo för en enskild klientorganisation kommer vissa användare fortfarande att finnas i det gamla datacentret geo under flytten, medan andra kommer att finnas i det nya datacentret geo. Det innebär att vissa funktioner som innebär åtkomst till flera postlådor kanske inte fungerar helt under en period av flyttningsprocessen, som kan pågå i veckor. De här funktionerna beskrivs i följande avsnitt.
   
-### <a name="open-shared-folder-in-outlook-web-access"></a>Öppna "delad mapp" i Outlook Web Access
+### <a name="open-shared-folder-in-outlook-web-access"></a>Öppna "Delad mapp" i Outlook Web Access
 
-Vissa användare öppnar en delad e-postmapp från en annan post låda (som användaren har Läs-eller Skriv behörighet till) i Outlook Web Access med funktionen "delad mapp". I följande tabell beskrivs hur åtkomst till delade mappar fungerar under en post låda. Observera att användare med fullständig behörighet till en delad post låda kan öppna post lådan genom att använda Outlook Web Access under flytten. 
+Vissa användare öppnar en delad e-postmapp från en annan postlåda (som användaren har läs- eller skrivbehörighet till) i Outlook Web Access med hjälp av funktionen "Delad mapp". I följande tabell beskrivs hur åtkomst till delade mappar fungerar när en postlåda flyttas. Observera att användare med fullständig behörighet till en delad postlåda kan öppna postlådan genom att använda Outlook Web Access under flytten. 
   
 |**Konfiguration**|**Beskrivning**|
 |:-----|:-----|
-|Användaren har behörigheten post låda till en annan post låda  <br/> |Möjligt.  <br/> Om användare A och post låda B inte är med i samma geo när klient organisationen flyttas, kan användare A inte öppna post lådans mapp i Outlook Web Access om användaren har en enda behörighet för en viss mapp i post låda B.  <br/> Om du vill lägga till en delad mapp högerklickar du på användar namnet i navigerings panelen och väljer **Lägg till delad mapp**.  <br/> |
-|Användare med fullständig Mailbox-behörighet till en annan post låda  <br/> |Stöds helt.  <br/> Om användare A har full till gång till post låda B kan användare A Klicka på den delade mappen i den vänstra navigerings panelen i Outlook Web Access för att öppna ett fönster som visar post låda B.  En användare kan öppna en delad post låda med Outlook Web Access under flytten utan att det påverkar något negativt. Begränsningen gäller bara delning på filnivå i en post låda.           |
+|Användaren har behörighet som postlådemapp för en annan postlåda  <br/> |Potentiellt begränsat.  <br/> Om Användare A och Postlåda B inte har samma geo när klientorganisationen flyttas kan användare A inte öppna Postlåda B:s mapp i Outlook Web Access om användare A bara har behörighet till en viss mapp i postlåda B.  <br/> Om du vill lägga till en delad mapp högerklickar du på användarnamnet i den vänstra navigeringsrutan och väljer Lägg **till delad mapp**.  <br/> |
+|Användare med fullständig postlådebehörighet till en annan postlåda  <br/> |Fullt stöd.  <br/> Om Användare A har behörigheten Fullständig åtkomst till Postlåda B kan Användare A klicka på den delade mappen i den vänstra navigeringspanelen i Outlook Web Access för att öppna ett fönster som visar Postlåda B.  En användare kan öppna en delad postlåda med Outlook Web Access under flytten utan att påverkas negativt. Begränsningen gäller endast delning på mappnivå i en postlåda.           |
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 
 När SharePoint Online flyttas flyttas även data för följande tjänster:
   
-- En enhet för företag
+- One Drive för företag
     
 - Microsoft 365 Video-tjänster
     
 - Office i en webbläsare
     
--  Microsoft 365 Apps för företag
+- Microsoft 365-appar för företag
     
 - Visio Pro för Microsoft 365
     
-När vi har flyttat dina SharePoint Online-data kan du se några av följande effekter.
+När vi har flyttat klart dina SharePoint Online-data kan du se några av följande effekter.
   
-### <a name="microsoft-365-video-services"></a>Microsoft 365 Video-tjänster
+### <a name="microsoft-365-video-services"></a>Microsoft 365 Video Services
 
-- Data flytten för videon tar längre tid än flyttas för resten av innehållet i SharePoint Online.
+- Dataflyttningen för video tar längre tid än flytten för resten av innehållet i SharePoint Online.
     
-- När SharePoint Online-innehållet flyttas visas en tidsram när videoklippen inte kan spelas upp.
+- När SharePoint Online-innehållet har flyttats finns det en tidsram när videor inte kan spelas upp.
     
-- Vi tar bort de förkodade kopiorna från föregående Data Center och förkodar dem igen i det nya data centret.
+- Vi tar bort de transkodade kopiorna från det tidigare datacentret och transkodar dem igen i det nya datacentret.
     
-### <a name="search"></a>Sökmotor
+### <a name="search"></a>Sök
 
-Vi migrerar Sök index och Sök inställningar till en ny plats när du flyttar dina SharePoint Online-data. **Nu när vi har flyttat** dina SharePoint Online-data fortsätter vi att betjäna användarna från indexet på den ursprungliga platsen. På den nya platsen börjar Sök automatiskt crawla innehållet när vi har flyttat dina SharePoint Online-data. Från och med nu tjänar vi användarna från det migrerade indexet. Ändringar av innehållet som uppstod efter migreringen ingår inte i det migrerade indexet förrän crawlningen väljer upp dem. De flesta kunder märker inte att resultaten blir mindre färska direkt efter att vi har flyttat sina SharePoint Online-data, men vissa kunder kan uppleva minskad aktualitet under de första 24-48 timmarna 
+När vi flyttar dina SharePoint Online-data migrerar vi dina sökindex och sökinställningar till en ny plats. Fram till dess **att vi** har slutfört flytten av dina SharePoint Online-data fortsätter vi att hjälpa användarna från indexet på den ursprungliga platsen. På den nya platsen börjar sökningen automatiskt crawla ditt innehåll när vi har flyttat dina SharePoint Online-data. Från och med nu tar vi dina användare från det migrerade indexet. Ändringar av innehåll som gjorts efter migreringen tas inte med i det migrerade indexet förrän crawlningen hämtar dem. De flesta kunder märker inte att resultaten är mindre nya direkt efter att vi har flyttat klart sina SharePoint Online-data, men vissa kunder kan uppleva att det går mindre att förnya under de första 24–48 timmarna 
   
-Följande Sök funktioner påverkas:
+Följande sökfunktioner påverkas:
   
-- Sök Resultat och Sök webb delar: resultaten innehåller inte ändringar som uppstod efter migreringen förrän crawlningen har gjort det. 
+- Sökresultat och sökwebbdelar: Resultaten innehåller inte ändringar som gjorts efter migreringen förrän crawlningen hämtar dem. 
     
-- Delve: Delve inkluderar inte ändringar som uppstod efter migreringen förrän crawlningen har gjort det.
+- Delve: Delve inkluderar inte ändringar som gjorts efter migreringen förrän crawlningen hämtar dem.
     
-- Popularitet och Sök rapporter för webbplatsen: antal för Excel-rapporter på den nya platsen endast innehåller migrerade räknare och antal från användnings rapporter som körs när vi har flyttat dina SharePoint Online-data. Alla räkningar från den mellanliggande perioden förloras och kan inte återställas. Detta är vanligt vis ett par dagar. Vissa kunder kan uppleva kortare eller längre förluster.
+- Popularitet och sökrapporter för webbplatsen: Antal för Excel-rapporter på den nya platsen inkluderar endast migrerade antal och antal från användningsrapporter som har körts när vi har flyttat dina SharePoint Online-data. Alla antal från interimperioden går förlorade och kan inte återställas. Den här perioden är vanligtvis några dagar. Vissa kunder kan uppleva kortare eller längre förluster.
     
-- Video Portal: Visa räknare och statistik för video portalen beror på statistik för Excel-rapporter, så att det går att Visa räknare och statistik för video portalen under samma tids period som för Excel-rapporterna.
+- Videoportal: Visa antal och statistik för videoportalen beror på statistiken för Excel-rapporter, så visa antal och statistik för videoportalen går förlorad under samma tidsperiod som för Excel-rapporter.
     
-- eDiscovery: objekt som ändrats under migreringen visas inte förrän crawlningen hämtar ändringarna.
+- eDiscovery: Objekt som ändrats under migreringen visas inte förrän crawlningen hämtar ändringarna.
     
-- Data förlust skydd (DLP): principer tillämpas inte på objekt som ändras tills crawlningen hämtar ändringarna.
+- DLP (Data Loss Protection): Principer tillämpas inte på objekt som ändras förrän crawlningen hämtar ändringarna.
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Utöver Exchange Online, SharePoint Online och OneDrive för företag migreras automatiskt data från Teams chat till det lokala data centret.
+Utöver Exchange Online, SharePoint Online och OneDrive för företag migrerar Microsoft teamchatttjänstdata till det lokala datacentret.
 
-- Teams chattar meddelanden, inklusive privata meddelanden och kanal meddelanden.
-- Team-bilder som används i chattar.
+- Chattmeddelanden i Teams, inklusive privata meddelanden och kanalmeddelanden.
+- Teams-bilder som används i chattar.
 
-Teams-filer lagras i SharePoint Online-och Teams-chatt-filer lagras i OneDrive för företag. Röst brev låda, kalender, chatt och kontakter lagras i Exchange Online. I många fall används Exchange Online, SharePoint Online och OneDrive för företag redan av kunden i det lokala datacentret Geo och är också en del av Microsoft 365 migrations program för godkända kund länder.
+Teams-filer lagras i SharePoint Online och teams-chattfiler lagras i OneDrive för företag. Röstmeddelanden, kalender, chatthistorik och kontakter lagras i Exchange Online. I många fall används Exchange Online, SharePoint Online och OneDrive för företag redan av kunden i det lokala datacentret geo och är även en del av Microsoft 365-migreringsprogrammet för berättigade kundländer.
 
 ## <a name="skype-for-business"></a>Skype för företag
 
-Flytt av Skype för företag är inte längre tillgängligt.  [Skype för företag – Online kommer att avvecklas](https://docs.microsoft.com/lifecycle/announcements/skype-for-business-online-retirement) den 31 juli 2021. Efter den tiden är tjänsten inte längre tillgänglig. 
+Skype för företag-flyttningar är inte längre tillgängliga.  [Skype för företag – Online dras tillbaka](/lifecycle/announcements/skype-for-business-online-retirement) den 31 juli 2021. Efter det är tjänsten inte längre tillgänglig. 
   
 ## <a name="related-topics"></a>Relaterade ämnen 
  
@@ -122,6 +122,6 @@ Flytt av Skype för företag är inte längre tillgängligt.  [Skype för föret
     
 [Vanliga frågor och svar om dataflytt](data-move-faq.md)
   
-[Ny datacenter-geos för Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[Nya datacenter geos för Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   
 [Azure-tjänster efter region](https://azure.microsoft.com/regions/)

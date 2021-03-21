@@ -1,5 +1,5 @@
 ---
-title: Inaktivera åtkomst till Microsoft 365-tjänster när du tilldelar användar licenser
+title: Inaktivera åtkomst till Microsoft 365-tjänster medan du tilldelar användarlicenser
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,36 +17,36 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
-description: Lär dig hur du tilldelar licenser till användar konton och inaktiverar specifika Service planer samtidigt med PowerShell för Microsoft 365.
-ms.openlocfilehash: b027c805638284a78d4e49f4c65518be02e60392
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Läs om hur du tilldelar licenser till användarkonton och inaktiverar specifika tjänstplaner samtidigt med hjälp av PowerShell för Microsoft 365.
+ms.openlocfilehash: 7486968f6f4822047a1697ee1e05129277fd11a8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694540"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929438"
 ---
-# <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>Inaktivera åtkomst till Microsoft 365-tjänster när du tilldelar användar licenser
+# <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>Inaktivera åtkomst till Microsoft 365-tjänster medan du tilldelar användarlicenser
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Microsoft 365-abonnemang innehåller tjänste abonnemang för enskilda tjänster. Microsoft 365-administratörer behöver ofta inaktivera vissa abonnemang när de tilldelar användare licenser. Med instruktionerna i den här artikeln kan du tilldela en Microsoft 365-licens när du inaktiverar specifika tjänste abonnemang med PowerShell för ett enskilt användar konto eller flera användar konton.
+Microsoft 365-prenumerationer följer med tjänstplaner för enskilda tjänster. Microsoft 365-administratörer behöver ofta inaktivera vissa abonnemang när de tilldelar licenser till användare. Med hjälp av instruktionerna i den här artikeln kan du tilldela en Microsoft 365-licens när du inaktiverar specifika tjänstplaner med PowerShell för ett enskilt användarkonto eller flera användarkonton.
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för diagramvyn
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för Graph-modulen
 
-Börja [med att ansluta till din Microsoft 365-klient organisation](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Börja med [att ansluta till din Microsoft 365-klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   
 
-Sedan visar du licens abonnemang för klient organisationen med det här kommandot.
+Lista sedan licensplaner för din klientorganisation med det här kommandot.
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-Sedan hämtar du inloggnings namnet för det konto som du vill lägga till en licens för och det kallas även användarens huvud namn (UPN).
+Hämta sedan inloggningsnamnet för det konto som du vill lägga till en licens för, även kallat användarens huvudnamn (UPN).
 
-Sedan kompilerar du en lista över tjänster att aktivera. En fullständig lista över licens planer (kallas även produkt namn), deras inkluderade tjänste abonnemang och deras motsvarande namn finns i [produkt namn och service plan-ID: n för licensiering](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+Sammanställ sedan en lista med tjänster som du kan aktivera. En fullständig lista över licensplaner (kallas även produktnamn), deras inkluderade tjänstplaner och deras motsvarande eget namn finns i Produktnamn och [tjänstplansidentifierare för licensiering.](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)
 
-För kommando blocket nedan fyller du i användar kontots huvud namn, SKU-delen och listan över tjänste planer för att aktivera och ta bort för klar ande text och \< and > tecken. Kör sedan de resulterande kommandona i PowerShell-Kommandotolken.
+För kommandoblocket nedan fyller du i användarkontons huvudnamn, SKU-delens nummer och listan över tjänstplaner för att aktivera och ta bort den förklarande texten och \< and > tecknen. Kör sedan resulterande kommandon i PowerShell-kommandotolken.
   
 ```powershell
 $userUPN="<user account UPN>"
@@ -67,61 +67,61 @@ Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $LicensesToAss
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Använda Microsoft Azure Active Directory-modulen för Windows PowerShell
 
-Börja [med att ansluta till din Microsoft 365-klient organisation](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Börja med [att ansluta till din Microsoft 365-klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
-Kör sedan det här kommandot för att se dina nuvarande abonnemang:
+Kör sedan det här kommandot för att se dina aktuella prenumerationer:
   
 ```powershell
 Get-MsolAccountSku
 ```
 
 >[!Note]
->PowerShell Core stöder inte Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen och cmdlets med **MSOL** . För att kunna fortsätta använda dessa cmdletar måste du köra dem från Windows PowerShell.
+>PowerShell Core stöder inte Microsoft Azure Active Directory-modul för Windows PowerShell-modulen och-cmdlets med **MSOL** i namnet. Om du vill fortsätta använda dessa cmdlets måste du köra dem från Windows PowerShell.
 >
 
 I visningen av  `Get-MsolAccountSku` kommandot:
   
-- **AccountSkuId** är ett abonnemang för din organisation i \<OrganizationName> : \<Subscription> format. Det \<OrganizationName> är det värde som du angav när du registrerade dig i Microsoft 365 och det är unikt för organisationen. \<Subscription>Värdet är för en specifik prenumeration. Till exempel för licens planen litwareinc: ENTERPRISEPACK, organisations namnet är licens planen litwareinc och prenumerations namnet är ENTERPRISEPACK (Office 365 Enterprise E3).
+- **AccountSkuId** är en prenumeration för din organisation i \<OrganizationName> : \<Subscription> format. Det \<OrganizationName> är det värde som du angav när du registrerade dig i Microsoft 365 och är unikt för din organisation. Värdet \<Subscription> är för en viss prenumeration. För litwareinc:ENTERPRISEPACK är till exempel organisationsnamnet litwareinc och prenumerationsnamnet ENTERPRISEPACK (Office 365 Enterprise E3).
     
-- **ActiveUnits** är antalet licenser som du har köpt för abonnemanget.
+- **ActiveUnits** är antalet licenser som du har köpt för prenumerationen.
     
-- **WarningUnits** är antalet licenser i en prenumeration som du inte har förnyat och som upphör efter 30 dagar.
+- **WarningUnits** är antalet licenser i en prenumeration som du inte har förnyat och som upphör efter respitperioden på 30 dagar.
     
-- **ConsumedUnits** är antalet licenser som du har tilldelat användare för abonnemanget.
+- **ConsumedUnits** är antalet licenser som du har tilldelat användare för prenumerationen.
     
-Notera AccountSkuId för din Microsoft 365-prenumeration som innehåller de användare du vill licensiera. Se också till att det finns tillräckligt många licenser att tilldela (subtrahera **ConsumedUnits** från **ActiveUnits** ).
+Observera AccountSkuId för Microsoft 365-prenumerationen som innehåller de användare som du vill licensiera. Se också till att det finns tillräckligt med licenser att tilldela (subtrahera **ConsumedUnits** från **ActiveUnits).**
   
-Kör sedan det här kommandot för att visa information om de Microsoft 365-tjänste abonnemang som är tillgängliga i alla dina abonnemang:
+Kör sedan det här kommandot för att se information om de Microsoft 365-tjänstplaner som är tillgängliga i alla dina prenumerationer:
   
 ```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-I visningen av det här kommandot kan du bestämma vilka tjänste abonnemang du vill inaktivera när du tilldelar användare licenser.
+På skärmen för det här kommandot kan du bestämma vilka tjänstplaner du vill inaktivera när du tilldelar licenser till användare.
   
-Här är en del av en lista över tjänste abonnemang och deras motsvarande Microsoft 365-tjänster.
+Här är en delvis lista över tjänstplaner och deras motsvarande Microsoft 365-tjänster.
 
-I följande tabell visas Microsoft 365-tjänstens abonnemang och deras egna namn för de vanligaste tjänsterna. Din lista över tjänste abonnemang kan skilja sig från varandra. 
+I följande tabell visas Microsoft 365-tjänstplaner och deras eget namn för de vanligaste tjänsterna. Listan med tjänstplaner kan se annorlunda ut. 
   
-|**Service plan**|**Beskrivning**|
+|**Serviceplan**|**Beskrivning**|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Microsoft 365-appar för företag *(tidigare kallat Office 365 ProPlus)*  <br/> |
-| `MCOSTANDARD` <br/> |Skype för företag – Online  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Microsoft 365-appar för företag *(kallades tidigare Office 365 ProPlus)*  <br/> |
+| `MCOSTANDARD` <br/> |Skype för företag online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online-abonnemang 2  <br/> |
    
-En fullständig lista över licens planer (kallas även produkt namn), deras inkluderade tjänste abonnemang och deras motsvarande namn finns i [produkt namn och service plan-ID: n för licensiering](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+En fullständig lista över licensplaner (kallas även produktnamn), deras inkluderade tjänstplaner och deras motsvarande eget namn finns i Produktnamn och [tjänstplansidentifierare för licensiering.](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)
    
-Nu när du har AccountSkuId och tjänste abonnemangen för att inaktivera kan du tilldela licenser för enskilda användare eller för flera användare.
+Nu när du har AccountSkuId och tjänstplanerna som ska inaktiveras kan du tilldela licenser för en enskild användare eller för flera användare.
   
 ### <a name="for-a-single-user"></a>För en enskild användare
 
-För en enskild användare fyller du i användarens huvud namn, AccountSkuId och listan över tjänste planer för att inaktivera och ta bort den för klar ande texten och \< and > tecknen. Kör sedan de resulterande kommandona i PowerShell-Kommandotolken.
+För en enskild användare fyller du i användarkontons huvudnamn, AccountSkuId och listan över tjänstplaner för att inaktivera och ta bort den förklarande texten och \< and > tecknen. Kör sedan resulterande kommandon i PowerShell-kommandotolken.
   
 ```powershell
 $userUPN="<the user's account name in email format>"
@@ -133,7 +133,7 @@ Sleep -Seconds 5
 Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions -ErrorAction SilentlyContinue
 ```
 
-Här är ett exempel på ett kommando block för kontot som heter belindan@contoso.com, för avtalet contoso: ENTERPRISEPACK och tjänste abonnemangen för att inaktivera är RMS_S_ENTERPRISE, SWAY, INTUNE_O365 och YAMMER_ENTERPRISE:
+Här är ett exempel på ett kommandoblock för kontot belindan@contoso.com, för contoso:ENTERPRISEPACK-licensen och för tjänstplaner som inaktiveras är RMS_S_ENTERPRISE, SWAY, INTUNE_O365 och YAMMER_ENTERPRISE:
   
 ```powershell
 $userUPN="belindan@contoso.com"
@@ -147,7 +147,7 @@ Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions 
 
 ### <a name="for-multiple-users"></a>För flera användare
 
-Om du vill utföra den här administrationen för flera användare kan du skapa en CSV-textfil som innehåller fälten UserPrincipalName och UsageLocation. Här är ett exempel:
+Om du vill utföra den här administrationsuppgiften för flera användare skapar du en fil med kommaavgränsade värden (CSV) som innehåller fälten UserPrincipalName och UsageLocation. Här är ett exempel:
   
 ```powershell
 UserPrincipalName,UsageLocation
@@ -156,7 +156,7 @@ LynneB@contoso.onmicrosoft.com,US
 ShawnM@contoso.onmicrosoft.com,US
 ```
 
-Fyll sedan i placeringen av CSV-filer för in-och utdata, konto-SKU-ID: t och listan över tjänst planer att inaktivera och kör sedan de resulterande kommandona i PowerShell-Kommandotolken.
+Fyll sedan i platsen för CSV-indata- och utdatafilerna, kontots SKU-ID och listan över tjänstplaner som du vill inaktivera och kör sedan resulterande kommandon i PowerShell-kommandotolken.
   
 ```powershell
 $inFileName="<path and file name of the input CSV file that contains the users, example: C:\admin\Users2License.CSV>"
@@ -176,13 +176,13 @@ $users | Get-MsolUser | Select UserPrincipalName, Islicensed,Usagelocation | Exp
 }
 ```
 
-Det här PowerShell-kommando blocket:
+Det här PowerShell-kommandoblocket:
   
-- Visar användarens huvud namn för varje användare.
+- Visar användarens huvudnamn.
     
-- Tilldelar alla användare egna licenser.
+- Tilldelar anpassade licenser till varje användare.
     
-- Skapar en CSV-fil med alla användare som har bearbetats och visar deras licens status.
+- Skapar en CSV-fil med alla användare som har bearbetats och visar deras licensstatus.
     
 ## <a name="see-also"></a>Se även
 

@@ -1,5 +1,5 @@
 ---
-title: Reglerar informationen som lyder under data integritets förordning
+title: Reglera information som omfattas av datasekretess
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -16,79 +16,78 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Använd Microsoft 365 bevarande etiketter och principer för att hantera person uppgifter i din Microsoft 365-miljö.
-ms.openlocfilehash: c2a933e556213ae4b78db9dc5f903885df969b27
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+description: Använd Microsoft 365-bevarandeetiketter och -principer för att hantera personliga data i Microsoft 365-miljön.
+ms.openlocfilehash: 62c2386ac8f9c5b31650df8be2c2a411d8b75959
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377051"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928442"
 ---
-# <a name="govern-information-subject-to-data-privacy-regulation"></a>Reglerar informationen som lyder under data integritets förordning
+# <a name="govern-information-subject-to-data-privacy-regulation"></a>Reglera information som omfattas av datasekretess
 
-Du kan använda informations styrning i din miljö för att hjälpa dig att adressera data integritets behovet, inklusive ett nummer som är specifikt för allmänt om allmänna data skydds regler (GDPR), HIPAA-HITECH (Health värna om sjukvård), California konsument skydd Act (CCPA) och Brasilien Data Protection Act (LGPD). 
+Informationsstyrningskontroller kan användas i din miljö för att tillgodose behov av datasekretessefterlevnad, inklusive ett nummer som är specifikt för Allmän dataskyddsförordning (GDPR), HIPAA-HITECH (United States Health Care Privacy Act), California Consumer Protection Act (CCPA) och Brazil Data Protection Act (LGPD). 
 
-Dessa kontroller är främst i följande lösnings områden:
+Dessa kontroller faller främst inom följande lösningsområden:
 
 - Kvarhållningsprinciper
 - Kvarhållningsetiketter
 - Hantering av arkivhandlingar
 
-## <a name="data-privacy-regulations-impacting-information-governance-controls"></a>Data integritets regler som påverkar informations styrnings kontroller
+## <a name="data-privacy-regulations-impacting-information-governance-controls"></a>Datasekretessförordningar som påverkar kontroll av informationsstyrning
 
-Här är ett exempel på en lista över data integritets regler som kan gälla för informations styrnings kontroller:
+Här är ett exempel på en lista med regler för datasekretess som kan relatera till kontroller för informationsstyrning:
 
-- GDPR-artikel (13) (2) (a)
-- GDPR-artikel (5) (1) (f)
-- HIPAA-HITECH (45 CFR 164.312 (c) (2))
-- HIPAA-HITECH (45 CFR 164.316 (b) (1) (i))
-- HIPAA-HITECH (45 CFR 164.316 (b) (1) (II))
-- LGPD artikel 46
+- GDPR-artikel (13)(2)(a)
+- GDPR-artikel (5)(1)(f)
+- HIPAA-HITECH (45 CFR 164.312(c)(2))
+- HIPAA-HITECH (45 CFR 164.316(b)(1)(i))
+- HIPAA-HITECH (45 CFR 164.316(b)(1)(ii))
+- LGPD, artikel 46
 
-Mer information om dessa regler finns i [bedöma riskerna för data integritet och identifiera känslig information](information-protection-deploy-assess.md).
+Mer information om dessa bestämmelser finns i artikeln om att [bedöma datasekretess och identifiera känslig information.](information-protection-deploy-assess.md)
 
-För informations hantering kan data integritets reglerna normalt ringa till följande:
+För informationsstyrning anropar datasekretessföreskrifter vanligtvis följande:
 
-- Du bör använda en teknisk stödordning för bevarande och borttagning av person uppgifter som lagras i Microsoft 365.
-- Om du ska lagra person uppgifter kan du informera om hur länge informationen lagras, vilket är en standard övning nu på front webb system.
-- Person uppgifter bör skyddas mot oavsiktlig behandling, förlust eller ändring med kontrollerbara metoder.
-- Alla åtgärder som utförs mot person uppgifter bör dokumenteras och dokumentationen bör bevaras under en viss tid.
+- Du bör använda ett tekniskt system för lagring och borttagning av personuppgifter som lagras i Microsoft 365.
+- Om du kommer att lagra personlig information informerar du ämnet om hur länge data kommer att lagras, vilket är en standardmetod nu på frontend-webbsystem.
+- Personuppgifter bör skyddas mot oavsiktlig bearbetning, förlust eller ändring med hjälp av verifierbara metoder.
+- Alla åtgärder som utförs mot personuppgifter ska dokumenteras och att dokumentationen ska behållas under en viss tidsperiod.
 
-Eftersom reglerna för data integritet inte är särskilt specifika när det gäller data lagring och borttagning måste andra faktorer beaktas som kan diktera informations styrnings rikt linjer för person uppgifter som lagras i Microsoft 365-prenumerationen. Här följer några exempel:
+Eftersom bestämmelser om datasekretess inte är särskilt specifika när det gäller lagring och borttagning av data måste andra faktorer beaktas som kan diktera riktlinjer för informationsstyrning för personlig information som lagras i din Microsoft 365-prenumeration. Här är några exempel:
 
-- Åldrande av konsument konton efter fem års inaktivitet och borttagnings-eller anonymisering av konto data efter den punkten, som kräver dirigering mellan systemet som lagrar data och arbets flöden relaterade till meddelanden och annan automatisering.
-- Konfigurera regler för att behålla principer och procedurer relaterade till GDPR i tre år efter det att de har ersatts, som justeras efter organisationens bevarande schema för principer och procedurer.
-- Upprätthålla ett separat abonnemang för kommunikation med konsumenter via dess support organisation. All e-postkommunikation behålls och togs bort efter två veckor för att minska eventuell sekretess skuld buildup i systemet.
+- Föråldring av konsumentkonton efter 5 års inaktivitet och kräver borttagning eller anonymisering av kontodata efter den tidpunkten, vilket kräver att data och arbetsflöden som är relaterade till meddelanden och annan automation behöver fördelas mellan systemet.
+- Konfigurera regler för att behålla principer och procedurer relaterade till GDPR i tre år efter att de har ersatts, vilket överensstämmer med organisationens kvarhållningsschema för principer och procedurer.
+- Ett separat abonnemang för kommunikation med konsumenter via supportorganisationen. All e-postkommunikation behålls och raderas efter två veckor för att minska eventuella problem med att skapa sekretess i systemet.
 
-En viktig fråga är: 
+En viktig fråga att besvara är: 
 
-- Hur länge ska information som innehåller person uppgifter behöva behållas i ett giltigt företags skäl för att undvika "Behåll det för alltid". Detta måste bal anse ras för att behålla behovet av affärs kontinuitet.
+- Hur länge måste information som innehåller personuppgifter sparas av giltiga affärsorsaker för att undvika att använda det för alltid? Det måste balanseras med bevarandebehov för affärskontinualitet.
 
-Oberoende av juridiska och affärsmässiga skäl för att hålla person uppgifter eller ta bort den, erbjuder Microsoft ett antal funktioner för att implementera ditt data styrnings schema i Microsoft 365.
+Oavsett juridiska skäl och affärsorsaker till att ha personlig information runt om eller ta bort den tillhandahåller Microsoft ett antal funktioner för att implementera ditt datastyrningsschema i Microsoft 365.
 
-## <a name="managing-information-governance-in-microsoft-365"></a>Hantera informations styrning i Microsoft 365
+## <a name="managing-information-governance-in-microsoft-365"></a>Hantera informationsstyrning i Microsoft 365
 
-För att börja läser du [Hantera informations styrning](../compliance/manage-information-governance.md) och [data lagring, borttagning och förstörelse i Microsoft 365](https://docs.microsoft.com/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview).
+Börja med att gå [till Hantera informationsstyrning](../compliance/manage-information-governance.md) [och datalagring, borttagning och bevarande i Microsoft 365.](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)
 
-### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>Utveckla data lagrings scheman för behållare, e-post och innehåll
+### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>Utveckla datalagringsscheman för behållare, e-post och innehåll
 
 Tänk på följande:
 
-- Att skapa ett schema för data lagring för definierade informations typer bör anses vara en förutsättning för att du ska kunna genomföra ett bevarande-eller borttagnings schema.
+- Att upprätta ett datalagringsschema för definierade informationstyper bör vara en förutsättning för att implementera ett bevarande- eller borttagningsschema.
 
-- Baserat på det antal informations typer som de flesta organisationer anser vara viktiga och de motsvarande stora poster för bevarande av Arkiv handlingar som visas, måste du planera. 
+- Med hänsyn till antalet informationstyper som de flesta organisationer anser vara viktiga och de motsvarande stora arkiveringsscheman som följer med dem, måste du planera för att implementera en strategi för datalagring och hantering av arkivhandlingar. 
 
-- När det gäller att upprätta en effektiv data hanterings strategi av den här typen är att fokusera på de företags funktioner och informations typer som kräver mer formell hantering. Exempel är juridiska avtal, finansiella rapporter och dokumentation om överensstämmelse. Försök att undvika ett separat bevarande schema för varje enskild informations typ. Försök att använda allmänna kategorier så mycket som möjligt, till exempel med bevarande scheman på 7 år för allmänt företags innehåll.
+- Nyckeln till att upprätta en effektiv datastyrningsstrategi av den här typen är att fokusera på de affärsfunktioner och informationstyper med högsta prioritet som kräver mer formell hantering. Några exempel är juridiska kontrakt, ekonomiska rapporter och dokumentation om regelefterlevnad. Försök att undvika ett separat kvarhållningsschema för varje enskild informationstyp. Försök att använda allmänna kategorier så mycket som möjligt, till exempel med kvarhållningsscheman på 7 år för allmänt affärsinnehåll.
 
-- När de personliga informations typerna i miljön är bättre kända kan du skapa scheman för bevarande och borttagning av den här typen av innehåll och justera din informations arkitektur så att den blir lättare att använda. Du kan till exempel isolera personlig information i separata webbplatser, bibliotek eller mappar med styrd åtkomst.
+- När typerna av personlig information i din miljö är mer kända bör du upprätta scheman för bevarande och borttagning för den här typen av innehåll och justera informationsarkitekturen för att göra styrning av den här typen av information enklare. Isolera till exempel personlig information på separata webbplatser, i bibliotek eller i mappar med kontrollerad åtkomst.
 
-### <a name="retention-policies-and-retention-labels"></a>Bevarande principer och bevarande etiketter
+### <a name="retention-policies-and-retention-labels"></a>Kvarhållningsprinciper och -etiketter
 
-Använd [bevarande principer och bevarande etiketter](../compliance/retention.md) för att behålla eller ta bort innehåll i Microsoft 365 som innehåller eller förväntas innehålla person uppgifter.
+Använd [bevarandeprinciper och bevarandeetiketter](../compliance/retention.md) för att behålla eller ta bort innehåll i Microsoft 365 som innehåller eller förväntas innehålla personuppgifter.
 
 ### <a name="records-management"></a>Hantering av arkivhandlingar
 
-Använd lagrings etiketter som deklarerar innehåll en post för att implementera en [lösning för hantering av Arkiv handlingar](../compliance/records-management.md) för data i Microsoft 365.
+Använd bevarandeetiketter som deklarerar innehåll för en arkivering för att implementera en lösning [för hantering](../compliance/records-management.md) av arkivhandlingar för data i Microsoft 365.
 
-För data integritet förklaras en post med DSRs som tagits emot av den juridiska avdelningen och kan lagras obegränsat eller avyttrade med bevis, för att följa gällande bestämmelser om bevarande av tvister.
-
+För datasekretess deklareras de DSR-förfrågningar som tas emot av den juridiska avdelningen och kan lagras på obestämd tid eller kasseras med bevis, för att följa bevarandespecifikationer för regelaktivitet.

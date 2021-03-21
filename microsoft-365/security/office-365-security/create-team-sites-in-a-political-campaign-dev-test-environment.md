@@ -19,12 +19,12 @@ ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Sammanfattning: Skapa offentliga, privata, känsliga och strikt konfidentiella SharePoint Online-gruppwebbplatser i utvecklings-/testmiljön för din politiska kampanj.'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c12970fb3ff6d5616201ff153085d411068d11c
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: a8a7002b7d482c987f77907787c5233dcb8d11e9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288401"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929390"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Skapa gruppwebbplatser i en utvecklings-/testmiljö för en politisk kampanj
 
@@ -370,7 +370,7 @@ Därefter konfigurerar du en DLP-princip som blockerar användare när de delar 
 
 20. I fönstret **Granska inställningarna** klickar du på **Skapa** och sedan på **Stäng**.
 
-Använd instruktionerna i [Aktivera Azure RMS med administrationscentret för Microsoft 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
+Använd instruktionerna i [Aktivera Azure RMS med administrationscentret för Microsoft 365](/information-protection/deploy-use/activate-office365).
 
 Konfigurera sedan Azure Information Protection med en ny begränsad princip och en underetikett för skydd och behörigheter med följande steg:
 
@@ -416,7 +416,7 @@ Konfigurera sedan Azure Information Protection med en ny begränsad princip och 
 
 Du är nu redo att börja skapa dokument på dessa fyra webbplatser och testa åtkomsten till dem med olika användarkonton.
 
-Om du vill skydda ett dokument med Azure Information Protection och den här nya etiketten, måste du [installera Azure Information Protection-klienten](https://docs.microsoft.com/information-protection/rms-client/install-client-app) på en testdator, installera Office från administrationscentret och sedan logga in med ett konto i gruppen **Seniora och strategisk personal** i utvärderingsprenumerationen.
+Om du vill skydda ett dokument med Azure Information Protection och den här nya etiketten, måste du [installera Azure Information Protection-klienten](/information-protection/rms-client/install-client-app) på en testdator, installera Office från administrationscentret och sedan logga in med ett konto i gruppen **Seniora och strategisk personal** i utvärderingsprenumerationen.
 
 ## <a name="see-also"></a>Se även
 

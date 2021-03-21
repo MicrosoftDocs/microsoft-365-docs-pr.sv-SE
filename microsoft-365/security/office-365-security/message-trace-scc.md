@@ -14,12 +14,12 @@ ms.custom:
 description: Administratörer kan använda meddelandespårning i Säkerhets- och & för att ta reda på vad som har hänt med meddelanden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9c3f7e4bc9624b9fae48074203da525d7a504a12
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 587e111a71b321c131d0e63a0510ec7e1afa289a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741581"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929402"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Meddelandespårning i Säkerhets- och efterlevnadscenter
 
@@ -40,7 +40,7 @@ Meddelandespårning i Säkerhets- & kompatibilitetscenter förbättrar den urspr
 >
 > - För att kunna göra en meddelandespårning måste du vara medlem i rollgrupperna Organisationshantering, Efterlevnadshantering eller Support. Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 >
-> - Det maximala antalet meddelanden som visas i resultatet beror på vilken rapporttyp du har valt (mer information finns [i](#choose-report-type) avsnittet Välj rapporttyp). [Cmdlet:en Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) i Exchange Online PowerShell eller fristående EOP PowerShell returnerar alla meddelanden i resultatet.
+> - Det maximala antalet meddelanden som visas i resultatet beror på vilken rapporttyp du har valt (mer information finns [i](#choose-report-type) avsnittet Välj rapporttyp). [Cmdlet:en Get-HistoricalSearch](/powershell/module/exchange/get-historicalsearch) i Exchange Online PowerShell eller fristående EOP PowerShell returnerar alla meddelanden i resultatet.
 
 ## <a name="open-message-trace"></a>Öppna meddelandespårning
 
@@ -231,7 +231,7 @@ Informationen om meddelandespårningen innehåller ytterligare information som i
   > 
   > - Ett ojämnt meddelande som har levererats genererar flera **händelseposter** i meddelandespårningen.
   > 
-  > - Listan är inte uttömmande. Beskrivningar av fler händelser finns i [Händelsetyper i meddelandespårningsloggen](https://docs.microsoft.com/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log). Observera att den här länken är ett ämne för Exchange Server (lokal Exchange).
+  > - Listan är inte uttömmande. Beskrivningar av fler händelser finns i [Händelsetyper i meddelandespårningsloggen](/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log). Observera att den här länken är ett ämne för Exchange Server (lokal Exchange).
 
 - **Mer information:** Det här avsnittet innehåller följande information:
 
@@ -271,7 +271,7 @@ Tillgängliga (slutförda) utökade sammanfattningsrapporter är tillgängliga *
 
 - **riktning :** Anger om meddelandet skickades inkommande (1) till din organisation eller om det skickades utgående (2) från din organisation.
 
-- **connector_id**: Namnet på källan eller målkopplingen. Mer information om kopplingar i Exchange Online finns i Konfigurera [e-postflöde med kopplingar i Office 365.](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
+- **connector_id**: Namnet på källan eller målkopplingen. Mer information om kopplingar i Exchange Online finns i Konfigurera [e-postflöde med kopplingar i Office 365.](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
 
 - **delivery_priority** <sup>*</sup> : Om meddelandet skickades med **hög,** **låg** eller **normal** prioritet.
 
@@ -413,7 +413,7 @@ Ett **custom_data** som börjar med `S:TRA` kommer från transportregelagenten f
 |---|---|
 |`ETR|ruleId=<guid>`|Detta är det regel-ID som matchades.|
 |`St=<datetime>`|Datum och tid i UTC när regelmatchning inträffade.|
-|`Action=<ActionDefinition>`|Den åtgärd som tillämpats. En lista över tillgängliga åtgärder finns i Åtgärder [för e-postflödesregel i Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)|
+|`Action=<ActionDefinition>`|Den åtgärd som tillämpats. En lista över tillgängliga åtgärder finns i Åtgärder [för e-postflödesregel i Exchange Online.](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)|
 |`Mode=<Mode>`|Läget för regeln. Giltiga värden är:<ul><li>Framtvinga: Alla åtgärder för regeln tillämpas.</li><li>**Test med policytips: Alla** policytipsåtgärder skickas, men inga åtgärder vidtas.</li><li>**Testa utan principtips:** Åtgärder visas i en loggfil, men avsändarna meddelas inte på något sätt och inga åtgärder vidtas.</li></ul>|
 |
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Lär dig hur du styr vilka användare som kan skapa Microsoft 365-grupper.
-ms.openlocfilehash: 04c2b6e738ed41f8d4a2bf96716fb74b1d260497
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 9c3edf335ce09f04e9b0b538e69fa607a9c34044
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838645"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929162"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Hantera vilka som kan skapa Microsoft 365 Grupper
 
@@ -63,7 +63,7 @@ För att hantera vem som skapar grupper behöver följande personer Azure AD Pre
 - Medlemmar i gruppen som har tillåtelse att skapa grupper
 
 > [!NOTE]
-> Mer [information om hur du tilldelar Azure-licenser finns](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups) i Tilldela eller ta bort licenser i Azure Active Directory-portalen.
+> Mer [information om hur du tilldelar Azure-licenser finns](/azure/active-directory/fundamentals/license-users-groups) i Tilldela eller ta bort licenser i Azure Active Directory-portalen.
 
 Följande personer behöver inte tilldelas Azure AD Premium- eller Azure AD Basic EDU-licenser:
 
@@ -83,19 +83,19 @@ Administratörer i de roller som anges ovan behöver inte vara medlemmar i den h
 
 4. Konfigurera gruppen och lägg till personer eller andra grupper som du vill ska kunna skapa grupper i organisationen.
 
-Detaljerade instruktioner finns i [Skapa, redigera eller ta bort en säkerhetsgrupp i administrationscentret för Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/email/create-edit-or-delete-a-security-group)
+Detaljerade instruktioner finns i [Skapa, redigera eller ta bort en säkerhetsgrupp i administrationscentret för Microsoft 365.](../admin/email/create-edit-or-delete-a-security-group.md)
 
 ## <a name="step-2-run-powershell-commands"></a>Steg 2: Kör PowerShell-kommandon
 
-Du måste använda förhandsversionen av [Azure Active Directory PowerShell för Graph (AzureAD) (modulnamn](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) **AzureADPreview**) om du vill ändra inställningen för gäståtkomst på gruppnivå:
+Du måste använda förhandsversionen av [Azure Active Directory PowerShell för Graph (AzureAD) (modulnamn](/powershell/azure/active-directory/install-adv2) **AzureADPreview**) om du vill ändra inställningen för gäståtkomst på gruppnivå:
 
-- Om du inte har installerat någon version av Azure AD PowerShell-modulen tidigare, se Installera [Azure AD-modulen](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview&preserve-view=true) och följ anvisningarna för att installera den offentliga förhandsversionen.
+- Om du inte har installerat någon version av Azure AD PowerShell-modulen tidigare, se Installera [Azure AD-modulen](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) och följ anvisningarna för att installera den offentliga förhandsversionen.
 
 - Om du har den 2.0 allmänt tillgängliga versionen av Azure AD PowerShell-modulen (AzureAD) installerad måste du avinstallera den genom att köra den i PowerShell-sessionen och sedan installera förhandsversionen genom att köra `Uninstall-Module AzureAD` `Install-Module AzureADPreview` .
 
 - Om du redan har installerat förhandsgranskningsversionen kör `Install-Module AzureADPreview` du för att kontrollera att det är den senaste versionen av den här modulen.
 
-Kopiera skriptet nedan till en textredigerare som Anteckningar eller [Windows PowerShell ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
+Kopiera skriptet nedan till en textredigerare som Anteckningar eller [Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
 Ersätt *\<GroupName\>* med namnet på gruppen du skapade. Ett exempel:
 
@@ -109,7 +109,7 @@ Kör skriptet genom att skriva:
 
 `.\GroupCreators.ps1`
 
-och [logga in med ditt administratörskonto när](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) du uppmanas att göra det.
+och [logga in med ditt administratörskonto när](../enterprise/connect-to-microsoft-365-powershell.md#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) du uppmanas att göra det.
 
 ```PowerShell
 $GroupName = "<GroupName>"
@@ -164,7 +164,7 @@ Det kan ta trettio minuter eller mer innan ändringarna har verkställs. Du kan 
 Prova samma procedur igen när du är medlem i gruppen.
 
 > [!NOTE]
-> Om medlemmar i gruppen inte kan skapa grupper kontrollerar du att de inte blockeras av sin [OWA-postlådeprincip.](https://go.microsoft.com/fwlink/?linkid=852135)
+> Om medlemmar i gruppen inte kan skapa grupper kontrollerar du att de inte blockeras av sin [OWA-postlådeprincip.](/powershell/module/exchange/set-owamailboxpolicy)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
@@ -172,10 +172,10 @@ Prova samma procedur igen när du är medlem i gruppen.
 
 [Skapa din plan för samarbetesstyrning](collaboration-governance-first.md)
 
-[Komma igång med Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=808033)
+[Komma igång med Office 365 PowerShell](../enterprise/getting-started-with-microsoft-365-powershell.md)
 
-[Konfigurera grupphantering med självbetjäning i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-self-service-management)
+[Konfigurera grupphantering med självbetjäning i Azure Active Directory](/azure/active-directory/users-groups-roles/groups-self-service-management)
 
-[Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
+[Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
-[Azure Active Directory-cmdlets för konfiguration av gruppinställningar](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets)
+[Azure Active Directory-cmdlets för konfiguration av gruppinställningar](/azure/active-directory/users-groups-roles/groups-settings-cmdlets)
