@@ -17,16 +17,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: 'Sammanfattning: Skapa ett virtuellt nätverk för flera platser i Microsoft Azure som en Microsoft 365-testmiljö.'
-ms.openlocfilehash: ce8b1963e97decc58820bff7b563bb835a843772
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 545cce668df66b594de6b45ddd506b87afcf44ac
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487658"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926038"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Simulerat virtuellt nätverk på flera platser i en Microsoft 365-testmiljö
 
-*Den här test laboratorie guiden kan användas för både Microsoft 365 för företags-och Office 365 företags test miljöer.*
+*Den här testlabbguiden kan användas för både Microsoft 365 för företag- och Office 365 Enterprise-testmiljöer.*
 
 I den här artikeln beskrivs hur du använder Microsoft Azure för att skapa en simulerad, hybridbaserad molnmiljö med två virtuella Azure-nätverk. Här är konfigurationsresultatet. 
   
@@ -59,12 +59,12 @@ Konfigurationen av testmiljön består av tre huvudfaser:
 > [!NOTE]
 > Konfigurationen kräver en betald Azure-prenumeration. 
 
-Du kan använda den resulterande miljön för att testa funktionerna i [Microsoft 365 för företag](https://www.microsoft.com/microsoft-365/enterprise) med ytterligare [test labb guider](m365-enterprise-test-lab-guides.md) eller på egen hand.
+Du kan använda den resulterande miljön för att testa funktionerna i [Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise) för företag med ytterligare [testlabbguider](m365-enterprise-test-lab-guides.md) eller på egen hand.
 
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Gå till [Microsoft 365 för Enterprise test laboratorie guide stack](../downloads/Microsoft365EnterpriseTLGStack.pdf) för en visuell karta till alla artiklar i Microsoft 365 för Enterprise Test Lab-guide.
+> Gå till [Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf) för företag Testlabbguide stack för en visuell karta till alla artiklar i Microsoft 365 för företag testlabb guide stack.
 
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>Fas 1: Konfigurera det virtuella TestLab-nätverket.
 
@@ -81,7 +81,7 @@ I den här fasen skapar och konfigurerar du det nya virtuella XPrem-nätverket o
 Starta först en Azure PowerShell-kommandotolk på din lokala dator.
   
 > [!NOTE]
-> Följande kommandouppsättningar använder den senaste versionen av Azure PowerShell. Se [Kom igång med Azure PowerShell-cmdletar](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
+> Följande kommandouppsättningar använder den senaste versionen av Azure PowerShell. Se [Kom igång med Azure PowerShell-cmdletar](/powershell/azureps-cmdlets-docs/). 
   
 Logga in på ditt Azure-konto med det här kommandot.
   
@@ -205,7 +205,7 @@ Det här är den aktuella konfigurationen.
   
 Din simulerade Azure-hybridmolnmiljö är nu redo att testas.
   
-Nu kan du experimentera med fler funktioner i [Microsoft 365 för företag](https://www.microsoft.com/microsoft-365/enterprise).
+Nu kan du experimentera med ytterligare funktioner i [Microsoft 365 för företag.](https://www.microsoft.com/microsoft-365/enterprise)
   
 ## <a name="next-steps"></a>Nästa steg
 
@@ -215,10 +215,10 @@ Utforska dessa ytterligare uppsättningar testlabbguider:
 - [Hantering av mobila enheter](m365-enterprise-test-lab-guides.md#mobile-device-management)
 - [Informationsskydd](m365-enterprise-test-lab-guides.md#information-protection)
 
-## <a name="see-also"></a>Snabbreferens
+## <a name="see-also"></a>Se även
 
 [Testlabbguider för Microsoft 365 för företag](m365-enterprise-test-lab-guides.md)
 
 [Översikt över Microsoft 365 för företag](microsoft-365-overview.md)
 
-[Microsoft 365 för företags dokumentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Dokumentation om Microsoft 365 för företag](/microsoft-365-enterprise/)

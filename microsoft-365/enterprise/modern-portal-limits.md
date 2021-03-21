@@ -1,5 +1,5 @@
 ---
-title: Begränsningar för SharePoint Online moderna Portal webbplatser
+title: Webbplatsbegränsningar för moderna SharePoint Online-portaler
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -18,59 +18,59 @@ ms.custom:
 - seo-marvel-apr2020
 search.appverid:
 - MET150
-description: Lär dig mer om prestanda rekommendationer för moderna webbplatser i SharePoint Online, till exempel begränsa samtal till SharePoint-och externa slut punkter.
-ms.openlocfilehash: 2afca20183bef8c8f6dda9bdc35a44e5153ef07c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Läs mer om prestandarekommendationer för moderna webbplatser i SharePoint Online, till exempel att begränsa anrop till Sharepoint och externa slutpunkter.
+ms.openlocfilehash: 28c32be276f6c27194d164708e268a5cd36ac957
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694772"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925326"
 ---
-# <a name="sharepoint-online-modern-portal-site-limits"></a>Begränsningar för SharePoint Online moderna Portal webbplatser
+# <a name="sharepoint-online-modern-portal-site-limits"></a>Webbplatsbegränsningar för moderna SharePoint Online-portaler
 
-Den här artikeln innehåller prestanda rekommendationer för moderna Portal webbplatser i SharePoint Online. Använd rikt linjerna i den här artikeln för att optimera prestanda för moderna Portal webbplatser och undvika vanliga prestanda problem.
+Den här artikeln innehåller prestandarekommendationer för moderna portalwebbplatser i SharePoint Online. Använd riktlinjerna i den här artikeln för att optimera webbplatsprestanda på moderna portaler och undvika vanliga prestandaproblem.
 
-## <a name="performance-considerations-for-modern-portal-sites"></a>Prestanda överväganden för moderna Portal webbplatser
+## <a name="performance-considerations-for-modern-portal-sites"></a>Prestandaöverväganden för moderna portalwebbplatser
 
-Från synpunkt av prestanda optimering finns det några egenskaper som gör moderna Portal webbplatser unika. Huvud skillnaden mellan samarbete och Portal webbplatser i SharePoint Online är skala. Portal webbplatser förväntas normalt sett fler sidvyer till ett större antal användare än samarbets webbplatser, och det kan förmodligen finnas mer statiskt innehåll och färre redigerbara resurser. Dessutom är arkitekturen för moderna webbplatser annorlunda jämfört med de klassiska webbplatserna i det mesta av bearbetningen för att återge sidor och körning av kod ska placeras på klienten och inte på servern.
+När det gäller prestandaoptimering finns det några egenskaper som gör moderna portalwebbplatser unika. Den största skillnaden mellan samarbete och portalwebbplatser i SharePoint Online är skalning. Portalwebbplatser förväntas i allmänhet ha fler sidvyer för ett större antal användare än samarbetswebbplatser och innehåller troligtvis mer statiskt innehåll och färre redigerbara resurser. Arkitekturen för moderna webbplatser skiljer sig dessutom från klassiska webbplatser på så sätt att den mesta bearbetningen som ingår i renderingssidor och kör kod sker på klienten i stället för på servern.
 
-Prestanda optimering för moderna Portal webbplatser är främst inriktad på några övergripande mål:
+Prestandaoptimeringen för moderna portalwebbplatser fokuserar främst på några övergripande mål:
 
-- Minska den totala storleken på komponenterna på varje webbplats sida
-- Avlasta värd av vanliga statiska filer som bilder, formatmallar och skript till CDN
-- Begränsa bara samtal till SharePoint och externa slut punkter till vad som behövs
-- Undvik dubbletter av samma innehåll
+- Minska den totala storleken på komponenterna på varje webbplatssida
+- Offload hosting av vanliga statiska filer, till exempel bilder, formatmallar och skript till CDN
+- Begränsa anrop till SharePoint och externa slutpunkter till endast det som behövs
+- Undvik dubblettförfrågningar för samma innehåll
 
-Många av rikt linjerna i den här artikeln fokuserar på att minimera och optimera samtal till SharePoint Online. Om du gör upprepade samtal varje gång en sida laddas påverkas prestanda för användarna eftersom informationen hämtas från tjänsten varje gång även om den inte har ändrats. Det innebär att förfrågningar till SharePoint kan kategoriseras antingen som samtal som är vanliga för alla användare eller samtal som behövs för varje enskild användare. Resultat från dessa två samtals kategorier bör cachelagras för att optimera användar upplevelsen.
+Många av riktlinjerna i den här artikeln fokuserar på att minimera och optimera samtal till SharePoint Online. Att göra återkommande samtal varje gång en sida läses in påverkar prestanda för användarna eftersom informationen hämtas från tjänsten varje gång även om den inte har ändrats. Därför kan förfrågningar till SharePoint kategoriseras som samtal som är gemensamma för alla användare eller samtal som krävs för varje enskild användare. Resultat från dessa två samtalskategorier bör cachelagras för att optimera användarupplevelsen.
 
 >[!NOTE]
->Använd [verktyget för nätverksdiagnostik för SharePoint](https://aka.ms/perftool) som en utgångs punkt för att analysera specifika prestanda mått på webbplats sidorna för SharePoint Online.
+>Använd [siddiagnostik för SharePoint-verktyget](./page-diagnostics-for-spo.md) som utgångspunkt för att analysera specifika prestandamätvärden på SharePoint Online-webbplatssidor.
 
-## <a name="modern-portal-site-limits-and-recommendations"></a>Moderna Portal webbplats begränsningar och rekommendationer
+## <a name="modern-portal-site-limits-and-recommendations"></a>Begränsningar och rekommendationer för moderna portalwebbplatser
 
-|**Sten**|**Maximalt Rekommenderat värde**|**Kommentarer**|
+|**Gräns**|**Högsta rekommenderade värde**|**Kommentarer**|
 |:-----|:-----|:-----|:-----|
-|Sidor och nyhets objekt  <br/> |5 000 per webbplats  <br/> |Vi rekommenderar att du begränsar antalet sidor och nyhets objekt på en modern Portal webbplats till under 5 000.  <br/> |
-|Webb delar på en sida  <br/> |20 per sida  <br/> |Vi rekommenderar att du använder 20 eller färre webb delar per sida, inklusive både från-programmet och anpassade webb delar. <br/> Mer information finns i [optimera webb dels prestanda i sidor för moderna webbplatser i SharePoint Online](modern-web-part-optimization.md).  <br/> |
-|Dynamiska webb delar på en sida  <br/> |4 per sida  <br/> |Dynamiska webb delar som gör en eller flera frågor till SharePoint för att hämta senaste data ska begränsas till 4 per sida. Webb delen _Nyheter_ är ett exempel på en dynamisk webbdel. <br/> Mer information finns i [optimera webb dels prestanda i sidor för moderna webbplatser i SharePoint Online](modern-web-part-optimization.md).    <br/> |
-|Säkerhetsgrupper  <br/> |20 per webbplats  <br/> |Antalet säkerhets grupper påverkar skalan för många frågor i moderna Portal webbplatser. Vi rekommenderar att du begränsar antalet säkerhets grupper till så litet som möjligt, med maximalt 20 per webbplats.  <br/> |
-|Objekt i webbplats navigering  <br/> |100 per webbplats  <br/> |Vi rekommenderar att du lägger till färre än 100 objekt i webbplatsens navigering och att du använder navigerings kontrollerna utanför lådan.  <br/> Mer information finns i [optimera sid tjock leken i sidor för moderna webbplatser i SharePoint Online](modern-page-weight-optimization.md). <br/> |
-|Maximal bild storlek  <br/> |300 kB per bild  <br/> |Vi rekommenderar att du begränsar storleken på bilder till 300kb eller mindre och använder en CDN för att hantera bilder, formatmallar och skript. <br/>Mer information finns i [optimera bilder i SharePoint Online-sidor med moderna webbplatser](modern-image-optimization.md) och [använda Office 365 Content Delivery Network (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md).  <br/> |
-|Användare med redigerings rättigheter  <br/> |200-användare per webbplats  <br/> |SharePoint Portal-webbplatser är optimerade för att visa och konsumera innehåll. Redigera behörigheter för en portal ska begränsas till en begränsad grupp användare eftersom redigera behörigheter hämtar ytterligare kontroller och kommer därför att få långsammare för dessa användare. Ett stort antal användare med redigerings behörigheter påverkar därför den övergripande upplevelsen. <br/> |
-|Tredjeparts-iFrames  <br/> |2 per sida  <br/> |iFrames är oförutsägbara långsamt eftersom de laddar en separat extern sida inklusive allt tillhör ande innehåll som Java Script, CSS och Ramverks element. Om du måste använda iFrames kan du begränsa deras tal till 2 eller färre per sida.<br/> Mer information finns i [optimera iframes i SharePoint Online-sidor med moderna och klassisk publicerings webbplatser](modern-iframe-optimization.md). <br/> |
-|Samtal till UPA-tjänsten  <br/> |1 per användare per timme  <br/> |Vi rekommenderar att du ringer inga samtal _per begäran_ till UPA-tjänsten (program vara för användar profil). API-och [PageContext](https://docs.microsoft.com/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest) i [Microsoft Graph](https://docs.microsoft.com/graph/call-api) kan användas för att fråga efter användar information.  <br/> Om ett samtal till UPA är nödvändigt ringer du ett samtal när det behövs och cachelagrar sedan informationen för åter användning i samma session. |
-|Samtal till taxonomi tjänsten  <br/> |5 per användare per timme  <br/> |Vi rekommenderar att du ringer inga samtal _per begäran_ till taxonomi tjänsten. Om det behövs taxonomielement kan du lagra informationen för åter användning under samma session. <br/> Mer information finns i [optimera sid samtal i SharePoint Online-sidor med moderna och klassisk publicerings webbplatser](modern-page-call-optimization.md). <br/> |
+|Sidor och nyhetsobjekt  <br/> |5 000 per webbplats  <br/> |Vi rekommenderar att du begränsar antalet sidor och nyhetsobjekt på en modern portalwebbplats till under 5 000.  <br/> |
+|Webbdelar på en sida  <br/> |20 per sida  <br/> |Vi rekommenderar att du använder 20 eller färre totala webbdelar per sida, inklusive både In-of-the-box Microsoft-webbdelar och anpassade webbdelar. <br/> Mer information finns i Optimera [webbdelsprestanda i moderna webbplatssidor i SharePoint Online.](modern-web-part-optimization.md)  <br/> |
+|Dynamiska webbdelar på en sida  <br/> |4 per sida  <br/> |Dynamiska webbdelar som gör en eller flera frågor till SharePoint för att hämta senaste data bör vara begränsade till 4 per sida. _Webbdelen_ Nyheter är ett exempel på en dynamisk webbdel. <br/> Mer information finns i Optimera [webbdelsprestanda i moderna webbplatssidor i SharePoint Online.](modern-web-part-optimization.md)    <br/> |
+|Säkerhetsgrupper  <br/> |20 per webbplats  <br/> |Antalet säkerhetsgrupper påverkar omfattningen av många frågor på moderna portalwebbplatser. Vi rekommenderar att du begränsar antalet säkerhetsgrupper till så liten uppsättning som möjligt, med högst 20 per webbplats.  <br/> |
+|Objekt i webbplatsnavigering  <br/> |100 per webbplats  <br/> |Vi rekommenderar att du lägger till färre än 100 objekt i webbplatsnavigeringen och att du använder de inbaserade navigeringskontrollerna.  <br/> Mer information finns i Optimera [sidvikt i moderna webbplatssidor i SharePoint Online.](modern-page-weight-optimization.md) <br/> |
+|Maximal bildstorlek  <br/> |300 kB per bild  <br/> |Vi rekommenderar att du begränsar storleken på bilderna till 300 eller mindre, och att du använder ett CDN som värd för bilder, formatmallar och skript. <br/>Mer information finns i Optimera bilder i moderna webbplatssidor i [SharePoint Online](modern-image-optimization.md) och Använda Office [365 Content Delivery Network (CDN) med SharePoint Online.](use-microsoft-365-cdn-with-spo.md)  <br/> |
+|Användare med redigeringsrättigheter  <br/> |200 användare per webbplats  <br/> |SharePoint-portalwebbplatser är optimerade för att visa och använda innehåll. Redigeringsbehörigheter på en portal bör vara begränsade till en begränsad grupp användare eftersom redigeringsbehörigheter laddar ned ytterligare kontroller och därför fungerar långsammare för dessa användare. Ett överflödigt antal användare med redigeringsbehörighet påverkar därför den övergripande upplevelsen. <br/> |
+|Tredjeparts-iFrames  <br/> |2 per sida  <br/> |iFrames är oförutsägbara långsamt eftersom de läser in en separat extern sida med allt associerat innehåll, till exempel javascript, CSS och framework-element. Om du måste använda iFrames begränsar du antalet till 2 eller färre per sida.<br/> Mer information finns i Optimera [iFrames i SharePoint Online moderna och klassiska publiceringswebbplatssidor.](modern-iframe-optimization.md) <br/> |
+|Samtal till UPA-tjänsten  <br/> |1 per användare per timme  <br/> |Vi rekommenderar att du inte _ringer per förfrågan_ till UPA-tjänsten (User Profile Application). [Microsoft Graph API och](/graph/call-api) [PageContext](/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest) kan användas för att söka efter användarinformation.  <br/> Om ett UPA-tjänstsamtal krävs kan du ringa ett samtal när det behövs och sedan cachelagra informationen för återanvändning i samma session. |
+|Samtal till taxonomitjänsten  <br/> |5 per användare per timme  <br/> |Vi rekommenderar att du inte _ringer några samtal per_ begäran till taxonomitjänsten. Om taxonomitjänstanrop behövs cachelagrar du informationen för återanvändning i samma session. <br/> Mer information finns i Optimera [sidsamtal i Moderna och klassiska publiceringswebbplatssidor i SharePoint Online.](modern-page-call-optimization.md) <br/> |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Skapa en felfri SharePoint-Portal](https://docs.microsoft.com/sharepoint/portal-health)
+[Skapa en felfri SharePoint-portal](/sharepoint/portal-health)
 
 [Justera SharePoint Online-prestanda](tune-sharepoint-online-performance.md)
 
 [Justera Office 365-prestanda](tune-microsoft-365-performance.md)
 
-[SharePoint Online-begränsningar](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+[Begränsningar för SharePoint Online](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 
-[Prestanda i den moderna SharePoint-upplevelsen](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Prestanda i det moderna SharePoint-programmet](/sharepoint/modern-experience-performance)
 
-[Prestanda vägledning för SharePoint online-portaler](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-performance)
+[Prestandavägledning för SharePoint Online-portaler](/sharepoint/dev/solution-guidance/portal-performance)

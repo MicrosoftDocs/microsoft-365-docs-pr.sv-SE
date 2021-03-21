@@ -11,35 +11,35 @@ f1.keywords:
 - NOCSH
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: Lär dig hur du skapar en Microsoft 365-grupp med angiven önskad data plats i en multi-geo-miljö.
+description: Lär dig hur du skapar en Microsoft 365-grupp med en angiven dataplats i en miljö med flera geodata.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5af32827d11289f7a966311080d2c15197786799
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 7f02a5eb6d8b30e8381c65d4735812675d35af2b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547740"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923750"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-pdl"></a>Skapa en Microsoft 365-grupp med en viss PDL
 
-När användare i en multi-geo-miljö skapar en Microsoft 365-grupp, anges den inställda gruppens data plats automatiskt till den användaren. Administratörer för global, SharePoint och Exchange kan skapa grupper i vilken region de väljer. 
+När användare i en geomiljö skapar en Microsoft 365-grupp ställs den önskade dataplatsen automatiskt in på användarens plats. Globala administratörer, SharePoint- och Exchange-administratörer kan skapa grupper i valfri region. 
 
-Om du behöver skapa en grupp med en viss PDL kan du göra det från administrations centret för SharePoint eller genom Exchange Online-Unifiedgrouphttps Microsoft PowerShell cmdlet. När du gör det etableras både gruppens post låda och SharePoint-webbplats som är kopplade till gruppen i den angivna PDL.
+Om du behöver skapa en grupp med en viss PDL kan du göra det med hjälp av administrationscentret för SharePoint eller via Exchange Online New-UnifiedGroup Microsoft PowerShell-cmdleten. När du gör det etableras både grupppostlådan och SharePoint-webbplatsen som är kopplad till gruppen i det angivna PDL-et.
 
-Om du vill skapa en Microsoft 365-grupp med den PDL som du anger går du till administrations centret för SharePoint på den Geo-plats där du vill skapa grupp webbplatsen.
+Om du vill skapa en Microsoft 365-grupp med den PDL som du anger går du till administrationscentret för SharePoint på den geoplats där du vill skapa gruppwebbplatsen.
 
 Ett exempel:
 
-Om du vill skapa en grupp webbplats på din Australien-plats kan du gå till https://ContosoAUS-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement
+Om du vill skapa en gruppwebbplats på din australiensiska plats kan du gå till https://ContosoAUS-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement
 
-1. Välj **+ skapa**.
-2. Följ processen för att skapa en grupp webbplats.
+1. Välj **+ Skapa.**
+2. Följ processen för att skapa en gruppwebbplats.
 
-Grupp webbplatsen etableras på den Geo-plats som motsvarar det SharePoint-administrationsobjekt som du initierade begäran om att skapa webbplatser från. 
+Gruppwebbplatsen etableras på den geoplats som motsvarar administrationscentret för SharePoint där du initierade begäran om att skapa webbplatsen. 
 
 Använda Exchange PowerShell 
 
-Anslut till Exchange Online PowerShell och överför parametern *-MailBoxRegion* till geo-platsens kod.
+Anslut till Exchange Online PowerShell och skicka parametern *-MailBoxRegion* med geoplatskoden.
 
 Ett exempel: 
 
@@ -47,14 +47,14 @@ Ett exempel:
 New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Public -MailboxRegion EUR 
 ```
 
-![Skärm bild av New-Unifiedgrouphttps PowerShell cmdlet med syntax](../media/multi-geo-new-group-with-pdl-powershell.png)
+![Skärmbild av New-UnifiedGroup PowerShell-cmdlet med syntax](../media/multi-geo-new-group-with-pdl-powershell.png)
 
-Observera att etableringen av SharePoint-gruppwebbplatsen är på begäran. Webbplatsen etableras första gången en grupp ägare eller medlem försöker komma åt den.
+Observera att SharePoint-gruppwebbplatsetablering finns på begäran. Webbplatsen etableras första gången en gruppägare eller medlem försöker komma åt den.
 
-## <a name="geo-location-codes"></a>Geo-plats koder
+## <a name="geo-location-codes"></a>Geoplatskoder
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+[Ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)

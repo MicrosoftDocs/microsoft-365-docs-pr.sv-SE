@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e838ce873a1c3ecc0f437f96e75cc2a40d3af79d
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 3e198f4a5800475b0c8efcd24e05ea00b8a17186
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727277"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925804"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Avancerade metodtips för sökningsfrågor
 
@@ -35,7 +35,7 @@ ms.locfileid: "50727277"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Använd de här rekommendationerna för att få resultat snabbare och undvika tidsgränser när du kör komplexa frågor. Mer vägledning om hur du förbättrar frågeprestanda finns [i Metodtips för Kusto-frågor.](https://docs.microsoft.com/azure/kusto/query/best-practices)
+Använd de här rekommendationerna för att få resultat snabbare och undvika tidsgränser när du kör komplexa frågor. Mer vägledning om hur du förbättrar frågeprestanda finns [i Metodtips för Kusto-frågor.](/azure/kusto/query/best-practices)
 
 ## <a name="understand-cpu-resource-quotas"></a>Förstå kvoter för CPU-resurser
 Beroende på klientorganisationens storlek har varje klientorganisation tillgång till en viss mängd CPU-resurser som tilldelats för avancerade sökfrågor. Detaljerad information om olika tjänstbegränsningar finns [i mer information om avancerade kvoter för sökning och användningsparametrar.](advanced-hunting-limits.md)
@@ -44,8 +44,8 @@ Kunder som kör flera frågor regelbundet bör spåra förbrukning och använda 
 
 ## <a name="general-optimization-tips"></a>Allmänna optimeringstips
 
-- **Storlek på nya frågor –** Om du misstänker att en fråga kommer att returnera en stor resultatuppsättning bör du utvärdera den först med hjälp av [antal-operatorn](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator). Använd [begränsningen](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) eller dess synonym `take` för att undvika stora resultatuppsättningar.
-- **Använda filter** tidigt – Använd tidsfilter och andra filter för att minska datauppsättningen, särskilt innan du använder omvandlings- och parsningsfunktioner, t.ex. [understräng()](https://docs.microsoft.com/azure/data-explorer/kusto/query/substringfunction), [ersätt()](https://docs.microsoft.com/azure/data-explorer/kusto/query/replacefunction), [rensa()](https://docs.microsoft.com/azure/data-explorer/kusto/query/trimfunction), [toupper()](https://docs.microsoft.com/azure/data-explorer/kusto/query/toupperfunction) [eller parse_json()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). I exemplet nedan används tolkningsfunktionen [extractjson()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) när filtreringsoperatorer har minskat antalet poster.
+- **Storlek på nya frågor –** Om du misstänker att en fråga kommer att returnera en stor resultatuppsättning bör du utvärdera den först med hjälp av [antal-operatorn](/azure/data-explorer/kusto/query/countoperator). Använd [begränsningen](/azure/data-explorer/kusto/query/limitoperator) eller dess synonym `take` för att undvika stora resultatuppsättningar.
+- **Använda filter** tidigt – Använd tidsfilter och andra filter för att minska datauppsättningen, särskilt innan du använder omvandlings- och parsningsfunktioner, t.ex. [understräng()](/azure/data-explorer/kusto/query/substringfunction), [ersätt()](/azure/data-explorer/kusto/query/replacefunction), [rensa()](/azure/data-explorer/kusto/query/trimfunction), [toupper()](/azure/data-explorer/kusto/query/toupperfunction) [eller parse_json()](/azure/data-explorer/kusto/query/parsejsonfunction). I exemplet nedan används tolkningsfunktionen [extractjson()](/azure/data-explorer/kusto/query/extractjsonfunction) när filtreringsoperatorer har minskat antalet poster.
 
     ```kusto
     DeviceEvents
@@ -55,16 +55,16 @@ Kunder som kör flera frågor regelbundet bör spåra förbrukning och använda 
     | extend DriveLetter = extractjson("$.DriveLetter", AdditionalFields)
      ```
 
-- **Har beats innehåller .** Du kan undvika att söka efter understrängar i ord i onödan genom att använda `has` operatorn i stället för `contains` . [Lär dig mer om strängoperatorer](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
+- **Har beats innehåller .** Du kan undvika att söka efter understrängar i ord i onödan genom att använda `has` operatorn i stället för `contains` . [Lär dig mer om strängoperatorer](/azure/data-explorer/kusto/query/datatypes-string-operators)
 - **Titta i specifika kolumner –** Leta i en specifik kolumn i stället för att köra en fullständig textsökning i alla kolumner. Använd inte för `*` att kontrollera alla kolumner.
-- **Case-sensitive for speed**– Case-sensitive searches are more specific and generally more performant. Namnen på de [case-känsliga strängoperatorer](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)som exempelvis `has_cs` och , vanligtvis slutar med `contains_cs` `_cs` . Du kan också använda operatorn case-sensitive equals `==` i stället för `=~` .
-- **Tolka, extrahera inte**– När det är möjligt använder du [parsoperatorn](https://docs.microsoft.com/azure/data-explorer/kusto/query/parseoperator) eller en tolkningsfunktion som [parse_json()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). Undvik `matches regex` strängoperatorn eller [extrahera()-funktionen,](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction)som båda använder reguljära uttryck. Reservera användningen av reguljära uttryck för mer komplexa scenarier. [Läs mer om tolkningsfunktioner](#parse-strings)
+- **Case-sensitive for speed**– Case-sensitive searches are more specific and generally more performant. Namnen på de [case-känsliga strängoperatorer](/azure/data-explorer/kusto/query/datatypes-string-operators)som exempelvis `has_cs` och , vanligtvis slutar med `contains_cs` `_cs` . Du kan också använda operatorn case-sensitive equals `==` i stället för `=~` .
+- **Tolka, extrahera inte**– När det är möjligt använder du [parsoperatorn](/azure/data-explorer/kusto/query/parseoperator) eller en tolkningsfunktion som [parse_json()](/azure/data-explorer/kusto/query/parsejsonfunction). Undvik `matches regex` strängoperatorn eller [extrahera()-funktionen,](/azure/data-explorer/kusto/query/extractfunction)som båda använder reguljära uttryck. Reservera användningen av reguljära uttryck för mer komplexa scenarier. [Läs mer om tolkningsfunktioner](#parse-strings)
 - **Filtrera tabeller och inte** uttryck – Filtrera inte efter en beräknad kolumn om du kan filtrera på en tabellkolumn.
 - **Inga termer med tre tecken**– Undvik att jämföra eller filtrera med hjälp av termer med tre tecken eller färre. Termerna indexeras inte och för att de ska matchas krävs fler resurser.
-- **Projicera** selektivt – Gör resultatet enklare att förstå genom att projicera endast de kolumner du behöver. Att projicera specifika kolumner innan [du kör koppling](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator) eller liknande åtgärder ger också bättre prestanda.
+- **Projicera** selektivt – Gör resultatet enklare att förstå genom att projicera endast de kolumner du behöver. Att projicera specifika kolumner innan [du kör koppling](/azure/data-explorer/kusto/query/joinoperator) eller liknande åtgärder ger också bättre prestanda.
 
 ## <a name="optimize-the-join-operator"></a>Optimera `join` operatorn
-[Kopplingsoperatorn](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator) slår samman rader från två tabeller genom att matcha värden i angivna kolumner. Använd de här tipsen om du vill optimera frågor som använder den här operatorn.
+[Kopplingsoperatorn](/azure/data-explorer/kusto/query/joinoperator) slår samman rader från två tabeller genom att matcha värden i angivna kolumner. Använd de här tipsen om du vill optimera frågor som använder den här operatorn.
 
 - **Mindre tabell till vänster –** Operatorn matchar poster i tabellen på vänster sida av kopplingssatsen till poster till `join` höger. Genom att ha den mindre tabellen till vänster behöver färre poster matchas, vilket gör frågan snabbare. 
 
@@ -81,7 +81,7 @@ Kunder som kör flera frågor regelbundet bör spåra förbrukning och använda 
     on AccountSid
     ```
 
-- **Använd den inre join-smak**– Standard för join-smak eller [innerunique-join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#innerunique-join-flavor) deduplicerar rader i den vänstra tabellen med kopplingstangenten innan du returnerar en rad för varje matchning till höger tabell. [](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-flavors) Om den vänstra tabellen har flera rader med samma värde för nyckeln de här raderna dedupliceras till att lämna en enda `join` slumpmässig rad för varje unikt värde.
+- **Använd den inre join-smak**– Standard för join-smak eller [innerunique-join](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#innerunique-join-flavor) deduplicerar rader i den vänstra tabellen med kopplingstangenten innan du returnerar en rad för varje matchning till höger tabell. [](/azure/data-explorer/kusto/query/joinoperator#join-flavors) Om den vänstra tabellen har flera rader med samma värde för nyckeln de här raderna dedupliceras till att lämna en enda `join` slumpmässig rad för varje unikt värde.
 
     Den här standardbeteendet kan lämna viktig information från den vänstra tabellen som kan ge användbar insyn. Frågan nedan visar till exempel bara ett e-postmeddelande som innehåller en viss bifogad fil, även om samma bifogade fil skickades med flera e-postmeddelanden:
 
@@ -92,7 +92,7 @@ Kunder som kör flera frågor regelbundet bör spåra förbrukning och använda 
     | join (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
     ```
 
-    För att åtgärda den här begränsningen tillämpar vi [den inre join-smak](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor) genom att ange att alla rader i den vänstra tabellen ska visas `kind=inner` med matchande värden till höger:
+    För att åtgärda den här begränsningen tillämpar vi [den inre join-smak](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor) genom att ange att alla rader i den vänstra tabellen ska visas `kind=inner` med matchande värden till höger:
     
     ```kusto
     EmailAttachmentInfo
@@ -125,9 +125,9 @@ Kunder som kör flera frågor regelbundet bör spåra förbrukning och använda 
     | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
     ```  
 
-- **Använd tips för prestanda –** Använd tips med operatorn för att instruera backend att fördela belastningen när du kör `join` resursintensiva åtgärder. [Läs mer om kopplingstips](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-hints)
+- **Använd tips för prestanda –** Använd tips med operatorn för att instruera backend att fördela belastningen när du kör `join` resursintensiva åtgärder. [Läs mer om kopplingstips](/azure/data-explorer/kusto/query/joinoperator#join-hints)
 
-    Med slumpningen **[](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery)** kan du till exempel förbättra frågeprestandan när du sammanfogar tabeller med en tangent med hög kardinalitet – en nyckel med många unika värden – som i `AccountObjectId` frågan nedan:
+    Med slumpningen **[](/azure/data-explorer/kusto/query/shufflequery)** kan du till exempel förbättra frågeprestandan när du sammanfogar tabeller med en tangent med hög kardinalitet – en nyckel med många unika värden – som i `AccountObjectId` frågan nedan:
 
     ```kusto
     IdentityInfo
@@ -139,7 +139,7 @@ Kunder som kör flera frågor regelbundet bör spåra förbrukning och använda 
     on AccountObjectId 
     ```
     
-    **[Sändningstipset](https://docs.microsoft.com/azure/data-explorer/kusto/query/broadcastjoin)** hjälper när den vänstra tabellen är liten (upp till 100 000 poster) och den högra tabellen är extremt stor. Frågan nedan försöker till exempel ansluta till några e-postmeddelanden som har specifika ämnen med _alla_ meddelanden som innehåller länkar i `EmailUrlInfo` tabellen:
+    **[Sändningstipset](/azure/data-explorer/kusto/query/broadcastjoin)** hjälper när den vänstra tabellen är liten (upp till 100 000 poster) och den högra tabellen är extremt stor. Frågan nedan försöker till exempel ansluta till några e-postmeddelanden som har specifika ämnen med _alla_ meddelanden som innehåller länkar i `EmailUrlInfo` tabellen:
 
     ```kusto
     EmailEvents 
@@ -148,7 +148,7 @@ Kunder som kör flera frågor regelbundet bör spåra förbrukning och använda 
     ```
 
 ## <a name="optimize-the-summarize-operator"></a>Optimera `summarize` operatorn
-[Summeringsoperatorn](https://docs.microsoft.com/azure/data-explorer/kusto/query/summarizeoperator) aggregerar innehållet i en tabell. Använd de här tipsen om du vill optimera frågor som använder den här operatorn.
+[Summeringsoperatorn](/azure/data-explorer/kusto/query/summarizeoperator) aggregerar innehållet i en tabell. Använd de här tipsen om du vill optimera frågor som använder den här operatorn.
 
 - **Hitta distinkta värden**– Använd i allmänhet för `summarize` att hitta distinkta värden som kan upprepas. Det kan vara onödigt att använda den för att sammanställa kolumner som inte har repetitiva värden.
 
@@ -174,7 +174,7 @@ Kunder som kör flera frågor regelbundet bör spåra förbrukning och använda 
     | summarize by SenderFromAddress, RecipientEmailAddress   
     ```
 
-- **Blanda frågan –** Även om den bäst används i kolumner med repetitiva värden, kan samma kolumner också ha hög `summarize` _kardinalitet_ eller ett stort antal unika värden. Precis som operatorn kan du även använda slumpa aningen med för att fördela belastningen och potentiellt förbättra prestandan när du `join` arbetar med kolumner med hög [](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery) `summarize` kardinalitet.
+- **Blanda frågan –** Även om den bäst används i kolumner med repetitiva värden, kan samma kolumner också ha hög `summarize` _kardinalitet_ eller ett stort antal unika värden. Precis som operatorn kan du även använda slumpa aningen med för att fördela belastningen och potentiellt förbättra prestandan när du `join` arbetar med kolumner med hög [](/azure/data-explorer/kusto/query/shufflequery) `summarize` kardinalitet.
 
     Frågan nedan använder för `summarize` att räkna distinkta mottagares e-postadress, som kan köras i hundratals tusentals i stora organisationer. För att förbättra prestanda omfattar `hint.shufflekey` det:
 
@@ -210,7 +210,7 @@ Det finns flera sätt att skapa en kommandorad för att utföra en aktivitet. En
 Använd följande metoder för att skapa mer beständiga frågor runt kommandorader:
 
 - Identifiera de kända processerna (till *exempelnet.exe* eller *psexec.exe*) genom att matcha på filnamnsfälten, i stället för att filtrera på själva kommandoraden.
-- Tolka kommandoradsavsnitt med funktionen [parse_command_line()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line) 
+- Tolka kommandoradsavsnitt med funktionen [parse_command_line()](/azure/data-explorer/kusto/query/parse-command-line) 
 - Vid sökning efter kommandoradsargument bör du inte söka efter en exakt matchning för flera orelaterade argument i en viss ordning. I stället kan du använda reguljära uttryck eller använda flera separata operatorer.
 - Använd fallkänsliga matchningar. Använd till exempel `=~` , och i stället för , och `in~` `contains` `==` `in` `contains_cs` .
 - Överväg att ta bort citattecken, ersätta kommatecken med blanksteg och ersätta flera efterföljande blanksteg med ett enda blanksteg för att minimera teknik för att begränsa anropsteknik för kommandorader. Det finns mer komplexa lösningar på problem som kräver andra metoder, men de här justeringarna kan vara till stor hjälp för vanliga.
@@ -235,7 +235,7 @@ DeviceProcessEvents
 ```
 
 ### <a name="ingest-data-from-external-sources"></a>Mata in data från externa källor
-Om du vill infoga långa listor eller stora tabeller i frågan använder du [operatorn externaldata för](https://docs.microsoft.com/azure/data-explorer/kusto/query/externaldata-operator) att mata in data från en viss URI. Du kan hämta data från filer i TXT, CSV, JSON eller [andra format.](https://docs.microsoft.com/azure/data-explorer/ingestion-supported-formats) Exemplet nedan visar hur du kan använda den omfattande listan med SHA-256-hashprogram för skadlig programvara som tillhandahålls av MalwareBazaar (abuse.ch) för att kontrollera bifogade filer i e-postmeddelanden:
+Om du vill infoga långa listor eller stora tabeller i frågan använder du [operatorn externaldata för](/azure/data-explorer/kusto/query/externaldata-operator) att mata in data från en viss URI. Du kan hämta data från filer i TXT, CSV, JSON eller [andra format.](/azure/data-explorer/ingestion-supported-formats) Exemplet nedan visar hur du kan använda den omfattande listan med SHA-256-hashprogram för skadlig programvara som tillhandahålls av MalwareBazaar (abuse.ch) för att kontrollera bifogade filer i e-postmeddelanden:
 
 ```kusto
 let abuse_sha256 = (externaldata(sha256_hash: string )
@@ -256,16 +256,16 @@ Det finns olika funktioner som du kan använda för att effektivt hantera strän
 
 | Sträng | Funktion | Användningsexempel |
 |--|--|--|
-| Kommandorader | [parse_command_line()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line) | Extrahera kommandot och alla argument. | 
-| Sökvägar | [parse_path()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsepathfunction) | Extrahera avsnitten i en fil- eller mappsökväg. |
-| Versionsnummer | [parse_version()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-versionfunction) | Avmarkera ett versionsnummer med upp till fyra avsnitt och upp till åtta tecken per avsnitt. Använd tolkade data för att jämföra versions ålder. |
-| IPv4-adresser | [parse_ipv4()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-ipv4function) | Konvertera en IPv4-adress till ett långt heltal. Om du vill jämföra IPv4-adresser utan att konvertera dem använder [du ipv4_compare()](https://docs.microsoft.com/azure/data-explorer/kusto/query/ipv4-comparefunction). |
-| IPv6-adresser | [parse_ipv6()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-ipv6function)  | Konvertera en IPv4- eller IPv6-adress till den kanoniska IPv6-notationen. Jämför IPv6-adresser med hjälp [av ipv6_compare()](https://docs.microsoft.com/azure/data-explorer/kusto/query/ipv6-comparefunction). |
+| Kommandorader | [parse_command_line()](/azure/data-explorer/kusto/query/parse-command-line) | Extrahera kommandot och alla argument. | 
+| Sökvägar | [parse_path()](/azure/data-explorer/kusto/query/parsepathfunction) | Extrahera avsnitten i en fil- eller mappsökväg. |
+| Versionsnummer | [parse_version()](/azure/data-explorer/kusto/query/parse-versionfunction) | Avmarkera ett versionsnummer med upp till fyra avsnitt och upp till åtta tecken per avsnitt. Använd tolkade data för att jämföra versions ålder. |
+| IPv4-adresser | [parse_ipv4()](/azure/data-explorer/kusto/query/parse-ipv4function) | Konvertera en IPv4-adress till ett långt heltal. Om du vill jämföra IPv4-adresser utan att konvertera dem använder [du ipv4_compare()](/azure/data-explorer/kusto/query/ipv4-comparefunction). |
+| IPv6-adresser | [parse_ipv6()](/azure/data-explorer/kusto/query/parse-ipv6function)  | Konvertera en IPv4- eller IPv6-adress till den kanoniska IPv6-notationen. Jämför IPv6-adresser med hjälp [av ipv6_compare()](/azure/data-explorer/kusto/query/ipv6-comparefunction). |
 
-Mer information om alla parsingsfunktioner som stöds finns [i Kusto-strängfunktioner.](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalarfunctions#string-functions) 
+Mer information om alla parsingsfunktioner som stöds finns [i Kusto-strängfunktioner.](/azure/data-explorer/kusto/query/scalarfunctions#string-functions) 
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Språkdokumentation för kustofrågor](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
+- [Språkdokumentation för kustofrågor](/azure/data-explorer/kusto/query/)
 - [Kvoter och användningsparametrar](advanced-hunting-limits.md)
 - [Hantera avancerade sökfel](advanced-hunting-errors.md)
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

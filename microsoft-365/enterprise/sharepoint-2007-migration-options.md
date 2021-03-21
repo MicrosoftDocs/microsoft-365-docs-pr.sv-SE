@@ -1,5 +1,5 @@
 ---
-title: Uppgraderings alternativ för SharePoint 2007 för att överväga
+title: SharePoint 2007 – Migreringsalternativ att överväga
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -26,165 +26,163 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - seo-marvel-apr2020
-description: Den här artikeln innehåller information för användare som använder SharePoint Server 2007 för att hjälpa dem planera sin uppgradering.
-ms.openlocfilehash: 3e37a01f1a2d387cda6723a8df1f73734fa3ba9d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Den här artikeln innehåller information för användare som använder SharePoint Server 2007 som hjälper dem att planera uppgraderingen.
+ms.openlocfilehash: 38c4713b7dfb705c99d970c5f68a37b031c951a5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694960"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924886"
 ---
-# <a name="sharepoint-2007-migration-options-to-consider"></a>Uppgraderings alternativ för SharePoint 2007 för att överväga
+# <a name="sharepoint-2007-migration-options-to-consider"></a>SharePoint 2007 – Migreringsalternativ att överväga
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Microsoft SharePoint 2007 och SharePoint Server 2007 har nått Supportens slut. Det är dags att uppgradera! Den här artikeln innehåller information om alternativen för migrering.
+Supporten för Microsoft SharePoint 2007 och SharePoint Server 2007 har nu gått ut. Det är dags att uppgradera! Den här artikeln innehåller information om migreringsalternativen.
   
-## <a name="common-upgrade-strategies-for-sharepoint"></a>Vanliga uppgraderings strategier för SharePoint
+## <a name="common-upgrade-strategies-for-sharepoint"></a>Vanliga uppgraderingsstrategier för SharePoint
 
-Det finns flera metoder för att uppgradera en SharePoint Server-miljö. Om du har en Microsoft Office SharePoint Server 2007-servergrupp finns här några exempel på uppgraderings metoderna:
+Det finns flera metoder för att uppgradera en SharePoint Server-miljö. Här är några exempel på uppgraderingsmetoder om du har en Microsoft Office SharePoint Server 2007-servergrupp:
   
-- Databas koppling
+- Databas bifoga
     
 - Sida vid sida-uppgradering
     
-- På-plats-uppgradering
+- Uppgradering på plats
     
-- Hybrid uppgradering (på plats med frånkopplade databaser/separera databas koppling)
+- Hybriduppgradering (på plats med frikopplade databaser/separat databaskopplad)
     
-- SharePoint-hybrider (Anslut online till lokala SharePoint)
+- SharePoint-hybrider (ansluta online till lokal SharePoint)
     
-- Manuellt flytta data mellan webbplats samlingar eller bibliotek
+- Flytta data manuellt mellan webbplatssamlingar eller bibliotek
     
-- FastTrack guiden Uppgradera till Microsoft 365 ([SharePoint Online Deployment Advisor](https://aka.ms/spoguidance))
+- FastTrack-guideuppgradering till Microsoft 365[(distributionsrådgivaren för SharePoint Online)](https://aka.ms/spoguidance)
     
-- Migrerings-API till SharePoint Online (SPO) i Microsoft 365
+- API-migrering till SharePoint Online (SPO) i Microsoft 365
     
 Vad passar bäst för dig?
   
-Dina kunskaper om din server grupp och att den används av är en Tactical styrka när det gäller att uppgradera. På vilket sätt folk använder SharePoint-gruppen kan du välja bland alternativen.
+När du ska uppgradera är det viktigt att du vet vad servergruppen gör och används till. Det sätt som andra använder SharePoint-servergruppen hjälper dig att välja bland alternativen.
   
 > [!TIP]
-> Microsoft Office SharePoint Server 2007 har också en gradvis uppgradering som inte täcks här. För att se en lista över stegvisa uppgraderings artiklar, se [SharePoint Server 2007-översikten med support](sharepoint-2007-end-of-support.md). 
+> Microsoft Office SharePoint Server 2007 har också en stegvis uppgradering som inte tas upp här. En lista med stegspecifika uppgraderingsartiklar finns i Översikt över slutet på supporten för [SharePoint Server 2007.](sharepoint-2007-end-of-support.md) 
   
-Kom ihåg att kontrol lera [produkt livs cykeln](https://support.microsoft.com/lifecycle/search) och system kraven för den version av SharePoint som du uppgraderar till. Det här kan du vara medveten om när nästa uppgradering blir nödvändig (om du till exempel pausar på en äldre produkt som SharePoint Server 2010 för att planera för fler uppgraderingar, se till att du vet dess slut punkt för support datumet) och att du är säker på att du har maskin vara som stöder din plan. 
+Kom ihåg att kontrollera [produktlivscykeln](https://support.microsoft.com/lifecycle/search) och systemkraven för den version av SharePoint som du uppgraderar till. Det här är så att du ska veta när nästa uppgradering blir nödvändig (om du till exempel stannar vid en äldre produkt som SharePoint Server 2010 för att planera ytterligare uppgraderingar måste du känna till supportdatumet) och att du vet att du har den maskinvara som krävs för planen. 
   
-Om du planerar att överföra vissa eller alla av dina SharePoint-webbplatser till Microsoft 365 i molnet, är det dags att skapa ett bok märke för en länk till [microsoft 365-och Office 365-tjänste beskrivningarna](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library). Du behöver tjänste beskrivningarna för att lära dig mer om funktionerna i SharePoint Online och hur de kan skilja sig från lokala SharePoint-servrar. Uppgradera funktions dugliga Microsoft Office SharePoint Server 2007-grupper. Om installationen har skadade webbplatser kan du åtgärda dem innan du uppgraderar.
+Om du planerar att lägga över vissa eller alla SharePoint-webbplatser till Microsoft 365 i molnet ska du nu skapa ett bokmärke för en länk till tjänstbeskrivningarna [för Microsoft 365 och Office 365.](/office365/servicedescriptions/office-365-service-descriptions-technet-library) Du behöver tjänstbeskrivningarna för att lära dig mer om SharePoint Online-funktioner och hur de skiljer sig från lokala SharePoint Server. Uppgradera funktionella Microsoft Office SharePoint Server 2007-servergrupper. Om installationen har skadade webbplatser åtgärdar du dem innan du uppgraderar.
   
 ## <a name="a-note-about-managing-risk"></a>En kommentar om att hantera risker
 
-Metoderna "sida vid sida" är viktiga i det program som gäller för uppgradering. När du uppgraderar sida vid sida upprätthåller du din Microsoft Office SharePoint Server 2007-grupp, men skapar en Server grupp nästa version (SharePoint Server 2010) för ny maskin vara. Det gör det på tre sätt:
+Metoder som "sida vid sida" är viktiga i schemat för uppgraderingslogiken. När du uppgraderar sida vid sida behåller du din Microsoft Office SharePoint Server 2007-servergrupp, men bygger en servergrupp för nästa version (SharePoint Server 2010) på ny maskinvara. Det här är bra på tre sätt:
   
-1. Du kan säkerhetskopiera dina Microsoft Office SharePoint Server 2007-databaser och uppgradera dem separat genom att använda databas koppling.
+1. Du har ett ställe där du kan ta säkerhetskopior av Microsoft Office SharePoint Server 2007-databaser för att uppgradera dem separat med hjälp av databas bifoga.
     
-2. Om du tar reda på att det bara finns ett litet antal viktiga dokument bibliotek och annan information som används i Microsoft Office SharePoint Server 2007-gruppen kan du välja att manuellt flytta data från Microsoft Office SharePoint Server 2007 till SharePoint Server 2010, eller bara ta vissa webbplatser och webbplatser till nästa version (vilket gör jobbet enklare).
+2. Om du kommer fram till att endast ett litet antal viktiga dokumentbibliotek och annan information används i Microsoft Office SharePoint Server 2007-servergruppen kan du välja att manuellt flytta data från Microsoft Office SharePoint Server 2007 till SharePoint Server 2010, eller att endast ta specifika webbplatser till nästa version (vilket kan underlätta jobbet).
     
-3. Det mindre du gör i Microsoft Office SharePoint Server 2007-servergruppen, direkt, det säkrare data som server gruppen innehåller när du uppgraderar.
+3. Ju mindre du gör med Microsoft Office SharePoint Server 2007-servergruppen desto säkrare är de data som servergruppen innehåller när du uppgraderar.
     
-Metoder som uppgradering på plats fungerar direkt i Microsoft Office SharePoint Server 2007-gruppen, vilket ger dig färre enkla alternativ för att överge en sökväg och börja igen med din pristine-miljö. Så mycket som möjligt kan du bygga upp säkerhets åtgärder (som att skapa och testa säkerhets kopior av den ursprungliga miljön). Om din Microsoft Office SharePoint Server 2007-servergrupp är virtuell och en dubblett för säkerhets kopiering och återställning är det bara att säkerhetskopiera och återställa de senaste databaserna före tjänste fönstret för uppgraderingen. Om du vet att du kan återställa databas säkerhets kopior får du inte bara en Failsafe, det kan ge dig sinnesro.
+Metoder som In-Place-uppgradering kommer att agera direkt på Microsoft Office SharePoint Server 2007-servergruppen, vilket ger färre enkla alternativ för att avbryta en uppgraderingsväg och börja om från den ursprungliga miljön. Ta i så stor utsträckning som möjligt med vissa säkerhetsåtgärder (som att ta och testa säkerhetskopior av den ursprungliga miljön). Om din Microsoft Office SharePoint Server 2007-servergrupp till exempel är virtuell och du dupliceras för säkerhetskopiering och återställning, bör du säkerhetskopiera och återställa de mest aktuella databaserna innan tjänstfönstret för uppgraderingen. Om du vet att du har möjlighet att återställa säkerhetskopior av databasen kan du inte bara tänka på fel, du får även sinnesro.
   
 > [!TIP]
-> Metod tips dokument för uppgradering finns för [Microsoft Office SharePoint server 2007](https://technet.microsoft.com/library/cc261992%28v=office.12%29.aspx), [SharePoint Server 2010](https://technet.microsoft.com/library/cc261992%28v=office.14%29.aspx), [SharePoint server 2013](https://technet.microsoft.com/library/cc261992%28v=office.15%29.aspx)och [SharePoint Server 2016](https://technet.microsoft.com/library/cc261992%28v=office.16%29.aspx). Du kan också söka efter [Microsoft-partners](https://partnercenter.microsoft.com/pcv/search) som har erfarenhet av uppgraderingar eller Microsoft 365-migreringar. 
+> Metodtipsdokument för uppgradering finns för [Microsoft Office SharePoint Server 2007,](/previous-versions/office/sharepoint-2007-products-and-technologies/cc261992(v=office.12)) [SharePoint Server 2010,](/previous-versions/office/sharepoint-server-2010/cc261992(v=office.14)) [SharePoint Server 2013](/SharePoint/upgrade-and-update/best-practices-for-upgrading-from-sharepoint-2010-to-sharepoint-2013)och [SharePoint Server 2016.](/SharePoint/upgrade-and-update/best-practices-for-upgrade) Du kan också söka efter [Microsoft-partner](https://partnercenter.microsoft.com/pcv/search) som har erfarenhet av uppgraderingar eller Microsoft 365-migreringar. 
   
-## <a name="make-your-plan"></a>Gör ditt abonnemang
+## <a name="make-your-plan"></a>Gör upp en plan
 
-Om du behöver uppgradera måste du ha en plan och en-storlek som inte passar alla i de här fallen. Ditt abonnemang kan vara så enkelt som "skapa en Microsoft 365-prenumeration med SharePoint Online, registrera en domän och omdirigera dem till sina filer där. Och det kanske inte är det. Det beslutet är ditt och det är det du och dina användare verkligen behöver.
+Om du behöver uppgradera behöver du en plan, och en storlek passar inte alla i dessa fall. Planen kan vara så enkel som att "Skapa en Microsoft 365-prenumeration med SharePoint Online, registrera en domän och omdirigera personer att spara sina filer där". Och det är det kanske inte. Beslutet är ditt, och det beror på dina och användarnas behov.
   
 > [!NOTE]
-> Det är riskabelt att köras på program vara vars livs cykel är slut. Produkter som saknar stöd åtgärdas inte längre när du hittar problem. Det innebär också att om nya säkerhetshot uppstår finns inga säkerhets korrigeringar eller korrigeringar eftersom slut punkts produkterna inte längre stöds. Undvik det här! 
+> Det är riskabelt att köra programvara vars livscykel har avslutats. Produkter där supporten har slut korrigeras inte längre när problem hittas. Det innebär också att det inte kommer att finnas några säkerhetskorrigeringar om det uppstår nya säkerhetshot, eftersom det inte längre finns stöd för produkter med slutet av livscykeln. Undvik den situationen! 
   
-### <a name="first-know-your-farm"></a>Börja med att ta reda på Server gruppen
+### <a name="first-know-your-farm"></a>Först måste du känna servergruppen
 
-När du uppgraderar bör besluts fattandet baseras på vad din grupp gör för din organisation. Vad behöver du göra? Vad är dess roll? Varje server grupp i ditt företag kan ha en annan roll. Vissa av dina SharePoint-servergrupper kan vara  *kritiska*  , vissa kan vara filarkiv--där det är säkert. Om din server grupp ofta fyller många roller samtidigt kan du behöva veta vilka webbplats samlingar, webb sidor och till och med dokument bibliotek som gör det. Att analysera dina data på den här nivån kan verka som en hel del arbete, men det sparar tid och ansträngning för att hantera din domän innan du uppgraderar eller migrerar. När du känner till alla rörliga delar och de viktigaste bitarna vet du också vad du har utökat och kan lämna. Denna kunskap kommer bara att under rättas. 
+När du uppgraderar ska besluten baseras på vad servergruppen gör för organisationen. Vilka behov uppfyller den? Vad är dess roll? Varje servergrupp i företaget kan ha olika roller. Vissa SharePoint-farms kan vara  *kritiska*  , vissa kan vara filarkiv för säker förvaring. Om servergruppen innehåller många roller samtidigt kan du behöva veta vad webbplatssamlingar, webbplatser eller dokumentbibliotek gör, eventuella anpassningar och hur viktiga de är. Det kan verka som en massa arbete att analysera data på den här nivån, men det sparar tid och arbete att bemästra domänen innan du uppgraderar eller migrerar den. När du känner till alla rörliga delar och de viktigaste bitarna vet du också vad du har blivit ingrodd och kan lämna kvar. Den kunskapen är bara till nytta i framtiden. 
   
-Vad innebär användarna att det är viktigast för din SharePoint Server-servergrupp?
+Så vad säger användarna är viktigast med SharePoint Server-servergruppen?
   
 - Inbyggda SharePoint-funktioner
     
-- Den stora data mängden (till exempel en arkivering av filer)
+- Den stora data corpus (t.ex. ett arkiv med filer)
     
 - Tillgänglighet
     
-- Kritiska appar, webb delar eller dokument i Server gruppen (uppdrags kritisk Server)
+- Kritiska appar, webbdelar eller dokument i servergruppen (verksamhetskritiska servergrupp)
     
-- Överensstämmelse standarden uppfylls
+- De standarder för efterlevnad som uppfylls
     
 - Anpassningar
     
-Om du kör något som är väsentligt för ditt företag från SharePoint-servergruppen fungerar det som en stor katalog med viktiga data om klient tjänst krav, du kan ange en markering bredvid "kritiska appar", men också "tillgänglighet" – det vill säga att ditt företag påverkas om du inte kan använda SharePoint på ett tag. På samma sätt kan du kontrol lera ' anpassningar ' eftersom de kritiska tjänster som gruppens erbjudande är baserade på anpassade koder, webbplats definitioner eller ett antal anpassningar som fungerar tillsammans.
+Om du kör något som är viktigt för företaget från SharePoint-servergruppen, till exempel om den fungerar som en stor katalog med kritiska data om klienttjänstkraven, kan du sätta ett bock bredvid Kritiska appar, men även Tillgänglighet. Det innebär att företaget skulle påverkas om du inte kunde använda SharePoint på ett tag. På samma sätt kan du kontrollera Anpassningar eftersom de kritiska tjänster servergruppen erbjuder baseras på anpassad kod, webbplatsdefinitioner eller ett antal anpassningar som fungerar tillsammans.
   
-Om SharePoint uppfyller de här behoven utan att behöva göra något utanför användning av vad som är inbyggt i program varan och du uppdaterar det och utför normalt administration och underhåll, kan du ha valt "inbyggt SharePoint" – Detta kan vara din orsak till att du sitter i en äldre version av SharePoint. Med andra ord gör det allt du behöver, och du behöver inte uppgradera förrän nu, på Microsoft Office SharePoint Server 2007-supporten.
+Om SharePoint har uppfyllt dina behov utan att du behöver göra något utöver det som finns inbyggt i programvaran, och du oftast uppdaterar programvaran och utför administration och underhåll, kanske du har valt Inbyggda SharePoint-versioner. Det här kan också vara orsaken till att du sitter på en äldre version av SharePoint. Med andra ord, den gör redan det du behöver den och du har inte behövt uppgradera än så länge på supporten för Microsoft Office SharePoint Server 2007.
   
-När du punkt lista de här sakerna skapar du villkor för uppgraderingen. Med andra ord måste eventuell uppgradering uppfylla detta fält. Det gör att du kan utesluta metoder som inte passar dina behov.
+När du listar upp de här sakerna i en punktlista skapar du kriterier för uppgraderingen. Vilken uppgradering som helst måste med andra ord kunna övervägas för att uppfylla det här fältet. På så sätt kan du utesluta metoder som inte passar för dina behov.
   
-### <a name="a-simple-sample-plan"></a>Ett enkelt exempel på abonnemang
+### <a name="a-simple-sample-plan"></a>Ett exempel på en enkel plan
 
-Det kan behöva bli mer enhälligt med ledarskap och andra administratörer på den sökväg som din SharePoint-uppgradering kommer att vidta. SharePoint Server-administratörer samarbetar ofta med Microsoft SQL Server-administratörer, fungerar med nätverks-och säkerhets team och mycket mer. Om det finns många intressenter kan du behöva bygga ett avtal för, eller justera, din uppgradering och migrering. Om du till exempel migrerar data så att en del av ditt företag använder SharePoint Online i Microsoft 365 måste det troligt vis bli prestanda justering eller testning i ditt nätverk. Berörda grupper bör vara informerade när som helst.
+Det kan behöva vara ett bredare beslut med ledningen och andra administratörer på den väg din SharePoint-uppgradering ska ta. SharePoint Server-administratörer samarbetar ofta med Microsoft SQL Server-administratörer, och även med nätverks- och säkerhetsteam. När det finns många intressenter kan du behöva skapa ett avtal för eller justera din plan för uppgradering och migrering. Om du till exempel migrerar data så att en del av företaget ska använda SharePoint Online i Microsoft 365 måste du förmodligen justera eller testa prestanda i nätverket. Berörda grupper bör informeras i förväg.
   
-I det enkla exemplet visar jag en SharePoint-administratörs förslag och visar sedan ett abonnemang som alla intressenter har kommit överens om. För tydlighet, dokumenterar du dina avtal och beslut.
+I det här enkla exemplet visas förslag från en SharePoint-administratör och sedan den plan som alla intressenter kommit överens om. Dokumentera för tydlighets skull alla överenskommelser och beslut.
   
-Planen inleds efter en djupgående analys av en Server grupp och försöker identifiera Server gruppens roll, målar Poäng och annan viktig information som leder till att vissa uppgraderings alternativ begränsas. Därefter görs ett uppgraderings förslag av SharePoint-administratör och intressenterna samtycker till en åtgärds plan.
+Planen börjar efter en detaljerad analys av en servergrupp och försöker identifiera servergruppens roll, smärtpunkter och annan viktig information som gör det möjligt att begränsa vissa uppgraderingsalternativ. Därefter in kommer ett förslag från en SharePoint-administratör och intressenterna kommer överens om en handlingsplan.
   
-Min viktigaste "punkt lista:
+Min "viktigaste" punktlista:
   
-- Tillgänglighet, inbyggda funktioner för SharePoint och efterlevnadsprinciper.
+- Tillgänglighet, inbyggda funktioner i SharePoint och efterlevnadsstandarder.
     
-- De flesta data finns på tre webbplats samlingar, med en Mötes arbets yta som används av en dev-grupp, särskilt viktig och mest omfattande användning i flera olika tids zoner världen över.
+- De flesta data finns i tre webbplatssamlingar, där en mötesarbetsyta som används av ett utvecklingsteam är särskilt viktig och används mycket i olika tidszoner världen över.
     
-- Det finns Seventeen andra webbplatser som används ofta.
+- Det finns 17 andra webbplatser som används ofta.
     
-- Två dokument bibliotek (Mötes arbets ytor och dokument på rot webbplats samlingen) är de största (över 8000 dokument var och en). Det finns ett stort antal arkiverade dokument och listor med bifogade filer i kalkyl blad.
+- Två dokumentbibliotek (Mötesarbetsyta och Dokument i rotwebbplatssamlingen) är större än de andra (fler än 8 000 dokument var). Vi har ett stort antal arkiverade dokument och listor med kalkylbladsbilagor.
     
-- Det finns fjorton listor över bibliotek med känsliga data som måste hållas i överensstämmelse.
+- Det finns fjorton listor med bibliotek som innehåller känsliga data och som måste följa villkoren för efterlevnad.
     
-- Vi måste ha möjlighet att göra undantag och e-identifiering var vi än är.
+- Vi MÅSTE ha möjlighet att göra kvar- och e-discovery oavsett var vi befinner oss.
     
-- Vissa av dessa uppgifter måste vara lokalt, på grund av regler för informations säkerhet.
+- Vissa av dessa data MÅSTE vara lokala, på grund av regler för informationsekunder.
     
- **Mina alternativ för uppgradering och migrering:**
+ **Alternativ för uppgradering och migrering:**
   
 | Ja | Nej |
 |:-----|:-----|
-|Uppgradera databaser med databas koppling  <br/> |På-plats-uppgradering  <br/> |
-|Uppgradera med grupper sida vid sida  <br/> |Hybrid uppgradering  <br/> |
-|Migrerings-API till SPO i Microsoft 365 (för personliga webbplats data)  <br/> |SharePoint-hybrid (behövs ännu)  <br/> |
-|Vissa manuella datamigreringar till SharePoint Online för viktiga data  <br/> |FastTrack guiden Uppgradera till Microsoft 365  <br/> |
+|Uppgradera databaser med databas bifoga  <br/> |Uppgradering på plats  <br/> |
+|Uppgradera med farms sida vid sida  <br/> |Hybriduppgradering  <br/> |
+|Api-migrering till SPO i Microsoft 365 (för personliga webbplatsdata)  <br/> |SharePoint Hybrid (behövs inte ännu)  <br/> |
+|Viss manuell datamigrering till SharePoint Online för kritiska data  <br/> |FastTrack-guideuppgradering till Microsoft 365  <br/> |
    
- **Mitt föreslagna abonnemang:**
+ **Föreslagen plan:**
   
-Uppgradera lokalt med olika versioner av SharePoint sida vid sida, så att vi kan uppgradera databaserna först. Gå från SharePoint 2007 till SharePoint 2010. Administratörer och utvecklare testar den resulterande Server gruppen. Användare testar den resulterande Server gruppen. Åtgärda eventuella stopp problem under tiden. Nästa gång du uppgraderar till 2013 SharePoint 2010-databaser. Tävlingar. Användar test/pilot. Åtgärda eventuella stopp problem under tiden.
+Uppgradera lokalt med versioner av SharePoint sida vid sida, en del virtualiserade, så att vi kan uppgradera databaserna först. Gå från SharePoint 2007 till SharePoint 2010. Administratörer och utvecklar testar den resulterande servergruppen. Användare testar den resulterande servergruppen. Åtgärda eventuella problem som dyker upp under den här tiden. Uppgradera återigen SharePoint 2010-databaser till SharePoint 2013 sida vid sida. Testa. Användartest/pilottest. Åtgärda eventuella problem som dyker upp under den här tiden.
   
-- Överväg om en extern sökning med SPO uppfyller dina behov.
+- Överväg om en sammanslagen hybrid med SPO uppfyller dina behov.
     
-- Överväg [FastTrack hjälp](https://fasttrack.microsoft.com) om du vill uppgradera till SharePoint Online härifrån. 
+- Överväg [FastTrack-hjälp](https://fasttrack.microsoft.com) om du vill uppgradera till SharePoint Online härifrån. 
     
-- Avgöra om en webbplats samling kan avlastas till en Microsoft 365-prenumeration. (Microsoft 365 uppfyller många [krav på efterlevnad](https://technet.microsoft.com/library/office-365-compliance.aspx). Microsoft 365 har en [eDiscovery](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) och kan göra [undantag](https://support.office.com/article/A18F8975-AA7F-43B4-A7D6-001D14744D8E) genom efterlevnaden.) 
+- Avgör om några webbplatssamlingar kan läggas på en Microsoft 365-prenumeration. (Microsoft 365 uppfyller många [efterlevnadsstandarder.](/compliance/regulatory/offering-home) Microsoft 365 har [eDiscovery](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) och kan få [plats](https://support.office.com/article/A18F8975-AA7F-43B4-A7D6-001D14744D8E) via Compliance Centre.) 
     
-I annat fall fortsätter du med en uppgradering sida vid sida till SharePoint Server 2016.
+Fortsätt annars med en uppgradering sida vid sida till SharePoint Server 2016.
   
 > [!NOTE]
-> Mellan rekommendationer gjorda av administratörer som planerar uppgraderingen och den faktiska processen är de konversationer som sker med andra intressenter där uppgraderingen är. Till exempel, ekonomi kraft administratörer att ändra sina planer. Det slutgiltiga beslutet är att du ska dokumentera vad det överenskomna abonnemanget är, gå vidare. Det kan se ut ungefär så här: 
+> Mellan de rekommendationer som administratörerna kommer med under planeringen av uppgraderingen och de faktiska processerna pågår samtal med andra intressenter som uppgraderingen måste ta del av. Ibland kan administratörer bli tvingad att ändra sina planer av ekonomisk ekonomi. Oavsett vilket beslut ni kommer fram till bör du dokumentera den plan ni kommit överens om i framtiden. Den kan se ut ungefär så här: 
   
- **Mitt åtgärds abonnemang:**
+ **Min handlingsplan:**
   
-Lokalt använder vi en virtuell miljö för att bygga SharePoint Server 2010 och 2013. SharePoint Server 2016 skapas på ny maskin vara som uppfyller system kraven för 2016. Vi kommer att göra databas bilagor för att uppgradera databaser från SharePoint 2007 till alla versioner mellan den och SharePoint Server 2016. Grundläggande anpassningar återskapas för och testas i SharePoint Server 2016-miljön just nu, om inhemska funktioner inte redan uppfyller våra behov. Om vi lyckas har vi en lokal server grupp för ny maskin vara med uppgraderade databaser och färre anpassningar. Vi kopplar de uppgraderade innehålls databaserna till nya webbplats samlingar i SharePoint Server 2013, test, användar test/pilot och gör sedan en DNS-skärning till den nya SharePoint Server 2016-miljön för Live-användning.
+Lokalt använder vi en virtuell miljö för att skapa standardinställningar för SharePoint Server 2010 och 2013. SharePoint Server 2016 kommer att byggas på ny maskinvara som uppfyller systemkraven för 2016. Vi kommer att använda databas bifogad databas för att uppgradera databaser från SharePoint 2007 via alla versioner mellan den och SharePoint Server 2016. Grundläggande anpassningar återskapas och testas för närvarande i SharePoint Server 2016-miljön, om de inbyggda funktionerna inte redan uppfyller våra behov. Om vi lyckas kommer vi att ha en lokal servergrupp på ny maskinvara med uppgraderade databaser och färre anpassningar. Vi kommer att bifoga uppgraderade innehållsdatabaser till nya webbplatssamlingar i SharePoint Server 2013, testa, användartesta/pilottesta och sedan göra en DNS-kontroll till den nya SharePoint Server 2016-miljön för direktanvändning.
   
-- Vi kommer inte att betrakta en federerad hybrid mellan SharePoint Server 2016 och SharePoint online just nu.
+- Vi kommer inte att överväga Federerad hybrid mellan SharePoint Server 2016 och SharePoint Online just nu.
     
-- En uppskattad 35% av våra webbplatser kan omvandlas till nya SPO-webbplatser med alternativa-domäner eller till sist blir OneDrive för företag-lagring. Leta efter andra möjligheter att konvertera webbplatser eller dirigera nya webbplatser till SPO.
+- Uppskattningsvis kan 35 % av våra webbplatser omvandlas till nya SPO-webbplatser med egna domäner, eller slutligen omvandlas till OneDrive för företag-lagring. Vi letar efter andra möjligheter att omvandla webbplatser eller att dirigera nya webbplatser till SPO.
     
-- En del av den här delen av migreringen är manuell, genom att dra och släppa till personliga webbplatser för OneDrive för företag och vissa av migration API.
+- En del av den här delen av migreringen kommer att ske manuellt genom att dra och släppa till personliga webbplatser i OneDrive för företag, och en del kommer att ske via migrerings-API:t.
     
-Mer detaljerade anvisningar eller ett antal länkar till specifika uppgraderings anvisningar bör följa en plan. MOSS 2007-datorn ska inte avaktiveras och virtuella miljöer bör bibehållas för jämförelsen; uppgraderingen kommer att slutföras när användare omdirigeras till SharePoint Server 2016.
+Mer detaljerade anvisningar eller länkar till specifika uppgraderingsbeskrivningar bör följa en plan. MOSS 2007-datorn ska inte inaktiveras, och virtuella miljöer ska bevaras för jämförelse. Uppgraderingen slutförs dock när användare omdirigeras till SharePoint Server 2016.
   
-Ofta är huvud faktorer att välja en metod är den totala kostnaden för uppgraderingen och kostnaden i tiden (du får mer information om detta i artikeln om artikel i SharePoint migrations översikt). Genom att planera i förväg kan du emellertid ställa in förväntningarna och välja hur bra de ska se ut.
+Andra viktiga faktorer när du väljer metod är den totala kostnaden för uppgraderingen och tidskostnaden (du kan läsa mer om det här i artikeln med en översikt över SharePoint-migrering). Du kommer dock ha mycket nytta av att planera i förväg, både när det gäller att uppfylla förväntningar, att fatta bra beslut och att sätta ramar för hur framgången kommer att se ut.
   
 ## <a name="related-links"></a>Relaterade länkar
 
-[Resurser som hjälper dig att uppgradera från Office 2007-servrar och-klienter](upgrade-from-office-2007-servers-and-products.md)
+[Resurser som hjälper dig att uppgradera från Office 2007-servrar och -klienter](upgrade-from-office-2007-servers-and-products.md)
   
-[Microsoft Lifecycle-policy och livscykel sökning](https://support.microsoft.com/lifecycle)
+[Microsoft Lifecycle-policy och livscykelsökning](https://support.microsoft.com/lifecycle)
   
-[Sök efter Microsoft-partners som kan hjälpa dig med uppgradering eller migrering](https://partnercenter.microsoft.com/pcv/search)
-  
-
+[Sök efter Microsoft-partner som kan hjälpa dig med uppgradering eller migrering](https://partnercenter.microsoft.com/pcv/search)

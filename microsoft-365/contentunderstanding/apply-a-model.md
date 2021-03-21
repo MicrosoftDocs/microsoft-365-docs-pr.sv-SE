@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Lär dig att använda en publicerad modell på ett SharePoint-dokumentbibliotek
-ms.openlocfilehash: 17da1e37f72504ac5e0e26c0dd190efced08d285
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 42168537c8d449a075b5e29ef9905b6b98b8d714
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080782"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925406"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Använda en modell för dokumenttolkning i Microsoft SharePoint Syntex
 
@@ -94,7 +94,7 @@ När en dokumenttolkning eller formulärbearbetningsmodell för SharePoint Synte
 
    ![Kolumn för klassificeringsdatum](../media/content-understanding/class-date-column.png)</br> 
 
-Fältet Klassificeringsdatum används av utlösaren [<b>När en fil klassificeras av en modell för innehållstolkning</b> ](https://docs.microsoft.com/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model)för att köra ett Power Automate-flöde när en modell för innehållstolkning för Syntex-innehåll har bearbetat en fil och uppdaterat fältet “Klassificeringsdatum”.
+Fältet Klassificeringsdatum används av utlösaren [<b>När en fil klassificeras av en modell för innehållstolkning</b> ](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model)för att köra ett Power Automate-flöde när en modell för innehållstolkning för Syntex-innehåll har bearbetat en fil och uppdaterat fältet “Klassificeringsdatum”.
 
    ![Flödesutlösare](../media/content-understanding/trigger.png)</br>
 
@@ -108,5 +108,3 @@ Utlösaren <b>När en fil klassificeras av en modell för innehållstolkning</b>
 [Skapa en extraktor](create-an-extractor.md)
 
 [Översikt av dokumenttolkning](document-understanding-overview.md)
-
-

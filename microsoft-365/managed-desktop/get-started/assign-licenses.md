@@ -1,7 +1,7 @@
 ---
 title: Tilldela licenser
-description: Som en del av registreringen måste du tilldela licenser som du redan har erhållit till dina användare
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+description: Som en del av registrering måste du tilldela licenser som du redan har fått till dina användare
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,21 +9,21 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c370b37b805544c49e4e9e951d0b8de9c6af1589
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: cb127c838969ca560709ecacf9f7b08432e35250
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841043"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925803"
 ---
 # <a name="assign-licenses"></a>Tilldela licenser
 
-Som en del av registreringen av Microsoft Managed Desktop måste du kontrol lera att du har skaffat de licenser som krävs. Om du inte redan har skaffat licenserna, se [mer om licenser](../get-ready/prerequisites.md#more-about-licenses) för information om vilka licenser du behöver.
+När du förbereder för att registrera dig i Microsoft Managed Desktop måste du se till att du har fått nödvändiga licenser. Om du inte redan har fått licenserna kan du läsa [Mer om licenser för](../get-ready/prerequisites.md#more-about-licenses) mer information om exakt vilka licenser du behöver.
 
 
-Om dina licenser är helt, är det dags att tilldela dem till dina användare. För att tilldela licenser rekommenderar vi att du använder den [gruppbaserade licensierings funktionen](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) i Azure Active Directory.
+Om licenserna är i linje är det dags att tilldela dem till användarna. Vi rekommenderar att du tilldelar licenser genom att dra nytta av [den gruppbaserade licensieringsfunktionen i](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) Azure Active Directory.
 
-Om du har problem med licens tilldelningen kontaktar du administratörs [support](../working-with-managed-desktop/admin-support.md).
+Om du har problem med licenstilldelningen kontaktar du [administratörssupport.](../working-with-managed-desktop/admin-support.md)
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Steg för att komma igång med Microsoft Managed Desktop
 

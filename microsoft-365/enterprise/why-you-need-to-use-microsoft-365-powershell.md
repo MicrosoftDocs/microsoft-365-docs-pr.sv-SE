@@ -1,5 +1,5 @@
 ---
-title: Därför måste du använda PowerShell för Microsoft 365
+title: Varför du behöver använda PowerShell för Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,27 +13,27 @@ f1.keywords:
 - CSH
 ms.custom: ''
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
-description: 'Sammanfattning: förstå varför du måste använda PowerShell för att hantera Microsoft 365, i vissa fall mer effektivt och i andra fall efter nödvändighet.'
-ms.openlocfilehash: d56a2cc47a06be911f1fd38aea3a557c631d2db0
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+description: Sammanfattning Förstå varför du måste använda PowerShell för att hantera Microsoft 365, i vissa fall mer effektivt och i andra fall av behovet.
+ms.openlocfilehash: a60220001a148b3a24a996bb6e0154f80214b019
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754112"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924594"
 ---
-# <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>Därför måste du använda PowerShell för Microsoft 365
+# <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>Varför du behöver använda PowerShell för Microsoft 365
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Med Microsoft 365 Admin Center kan du hantera användar konton och licenser för Microsoft 365. Du kan också hantera dina Microsoft 365-tjänster, till exempel Exchange Online, teams och SharePoint Online. Om du istället använder PowerShell för att hantera de här tjänsterna kan du dra nytta av kommando rads-och skript språk miljö för hastighet, automatisering och andra funktioner.
+Med administrationscentret för Microsoft 365 kan du hantera dina Microsoft 365-användarkonton och -licenser. Du kan också hantera dina Microsoft 365-tjänster, till exempel Exchange Online, Teams och SharePoint Online. Om du i stället använder PowerShell för att hantera de här tjänsterna kan du och dra nytta av kommandorads- och skriptspråkmiljön för hastighet, automatisering och ytterligare funktioner.
   
-I den här artikeln visar vi hur du använder PowerShell för att hantera Microsoft 365 för att:
+Den här artikeln visar hur du använder PowerShell för att hantera Microsoft 365 för att:
   
-- Visa ytterligare information som inte visas i administrations centret för Microsoft 365
+- Visa ytterligare information som du inte kan se i administrationscentret för Microsoft 365
     
-- Konfigurera funktioner och inställningar endast möjligt med PowerShell
+- Konfigurera funktioner och inställningar som endast är möjliga med PowerShell
     
-- Utför Mass åtgärder
+- Massåtgärder
     
 - Filtrera data
     
@@ -41,47 +41,47 @@ I den här artikeln visar vi hur du använder PowerShell för att hantera Micros
     
 - Hantera mellan tjänster
     
-Kom ihåg att PowerShell för Microsoft 365 är en uppsättning moduler för Windows PowerShell, som är en kommando rads miljö för Windows-baserade tjänster och plattformar. Den här miljön skapar ett kommando gränssnitts språk som kan utökas med ytterligare moduler. Det är ett sätt att utföra enkla eller komplicerade kommandon eller skript. När du till exempel har installerat PowerShell för Microsoft 365-moduler och ansluter till din Microsoft 365-prenumeration kan du köra följande kommando för att visa alla användar post lådor för Microsoft Exchange Online:
+Kom ihåg att PowerShell för Microsoft 365 är en uppsättning moduler för Windows PowerShell, som är en kommandoradsbaserade miljö för Windows-baserade tjänster och plattformar. I den här miljön skapas ett kommandogränssnittsspråk som kan utökas med ytterligare moduler. Det är ett sätt att utföra enkla eller komplexa kommandon eller skript. Exempel: När du har installerat PowerShell för Microsoft 365-moduler och ansluter till din Microsoft 365-prenumeration kan du köra följande kommando för att visa alla användarpostlådor för Microsoft Exchange Online:
   
 ```powershell
 Get-Mailbox
 ```
 
-Du kan också hämta listan med post lådor genom att använda administrations centret för Microsoft 365 men inventering av objekten i alla listor för alla dina webb program är inte lätt.
+Listan med postlådor kan också visas i administrationscentret för Microsoft 365, men det är inte enkelt att räkna objekten i alla listor för alla webbplatser för alla dina webbappar.
   
-PowerShell för Microsoft 365 är utformat för att hjälpa dig att hantera Microsoft 365, inte för att ersätta Microsoft 365 Admin Center. Administratörer måste kunna använda PowerShell för Microsoft 365 eftersom det finns vissa konfigurations procedurer som endast kan utföras via PowerShell för Microsoft 365-kommandon. I de här fallen måste du veta hur du kan:
+PowerShell för Microsoft 365 har utformats för att hjälpa dig att hantera Microsoft 365, inte för att ersätta administrationscentret för Microsoft 365. Administratörer måste kunna använda PowerShell för Microsoft 365 eftersom det finns vissa konfigurationsprocedurer som bara kan utföras via PowerShell för Microsoft 365-kommandon. I dessa fall behöver du veta hur du:
   
-- Installera PowerShell för Microsoft 365-moduler (endast en gång för varje administratörs dator).
+- Installera PowerShell för Microsoft 365-modulerna (görs endast en gång för varje administratörsdator).
     
-- Anslut till ditt Microsoft 365-abonnemang (en gång för varje PowerShell-session).
+- Anslut till Microsoft 365-prenumerationen (en gång för varje PowerShell-session).
     
-- Samla in den information som behövs för att köra de PowerShell för Microsoft 365-kommandon som krävs.
+- Samla in den information som behövs för att köra nödvändiga PowerShell för Microsoft 365-kommandon.
     
 - Kör PowerShell för Microsoft 365-kommandon.
     
-När du har lärt dig de grundläggande färdigheterna behöver du inte Visa dina post lådor med hjälp av kommandot **Hämta-post låda** . Du behöver inte heller förstå hur du skapar ett nytt kommando, till exempel det omciterade kommandot för att räkna alla objekt i alla listor för alla webbapparna. Microsoft och communityn för administratörer kan hjälpa dig med sådana uppgifter som behövs.
+När du har lärt dig dessa grundläggande kunskaper behöver du inte lista dina postlådeanvändare med hjälp av **kommandot Hämta** postlåda. Du behöver inte heller förstå hur du skapar ett nytt kommando, som det citerade kommandot tidigare, för att räkna alla objekt i alla listor för alla webbplatser för alla dina webbappar. Microsoft och administratörsgemenskapen kan hjälpa dig med sådana uppgifter vid behov.
   
-## <a name="powershell-for-microsoft-365-can-reveal-information-that-you-cant-see-with-the-microsoft-365-admin-center"></a>PowerShell för Microsoft 365 kan visa information som du inte kan se med administrations centret för Microsoft 365
+## <a name="powershell-for-microsoft-365-can-reveal-information-that-you-cant-see-with-the-microsoft-365-admin-center"></a>PowerShell för Microsoft 365 kan visa information som du inte kan se med administrationscentret för Microsoft 365
 
-Administrations centret för Microsoft 365 visar många användbara uppgifter. Men det visar inte all information som kan användas i Microsoft 365 för användare, licenser, post lådor och webbplatser. Här är ett exempel för *användare och grupper* i administrations centret för Microsoft 365:
+I administrationscentret för Microsoft 365 visas många användbara uppgifter. Men all information om användare, licenser, postlådor och webbplatser lagras inte i Microsoft 365. Här är ett exempel för användare *och grupper i* administrationscentret för Microsoft 365:
   
-![Exempel på hur användare och grupper visas i administrations centret för Microsoft 365.](../media/o365-powershell-users-and-groups.png)
+![Exempel på visning av användare och grupper i administrationscentret för Microsoft 365.](../media/o365-powershell-users-and-groups.png)
   
-Den här vyn innehåller den information du behöver i många fall. Men det finns tillfällen då du behöver mer. Microsoft 365-licensiering (och de Microsoft 365-funktioner som är tillgängliga för en användare) beror till exempel på användarens geografiska plats. De principer och funktioner som du kan utöka till en användare som bor i USA kanske inte är samma som de som du kan använda för att utöka till en användare i Indien eller Belgien. Följ de här anvisningarna i administrations centret för Microsoft 365 för att fastställa en användares geografiska plats:
+Den här vyn innehåller information som du behöver i många fall. Men det finns tillfällen när du behöver mer. Till exempel beror Microsoft 365-licensiering (och De Microsoft 365-funktioner som är tillgängliga för en användare) delvis på användarens geografiska plats. Principerna och funktionerna som du kan utöka till en användare som bor i USA kanske inte är desamma som de som du kan utöka till en användare i Indien eller Belgien. Följ dessa steg i administrationscentret för Microsoft 365 för att avgöra en användares geografiska position:
   
-1. Dubbelklicka på användarens **visnings namn**.
+1. Dubbelklicka på användarens **visningsnamn**.
     
-2. I fönstret användar egenskaper väljer du **information**.
+2. Välj information i visningsfönstret för **användaregenskaper.**
     
-3. I informations fönstret väljer du **Ytterligare information**.
+3. Välj ytterligare information i **informationsvisningen.**
     
-4. Bläddra tills du hittar rubriken **land eller region**:
+4. Bläddra tills du hittar rubriken **Land eller region:**
     
-     ![Exempel på region informationen för en användare i administrations centret för Microsoft 365.](../media/o365-powershell-usage-location.png)
+     ![Exempel på regioninformation för en användare i administrationscentret för Microsoft 365.](../media/o365-powershell-usage-location.png)
   
-5. Skriv användarens visnings namn och plats på papperet, eller kopiera och klistra in i anteckningar.
+5. Skriv användarens visningsnamn och plats på ett papper eller kopiera och klistra in det i Anteckningar.
     
-Du måste upprepa proceduren för varje användare. Om du har många användare kan den här processen bli omständlig. Med PowerShell för Microsoft 365 kan du Visa den här informationen för alla användare genom att använda följande kommando:
+Du måste upprepa proceduren för varje användare. Om du har många användare kan det vara omtiga i den här processen. Med PowerShell för Microsoft 365 kan du visa den här informationen för alla dina användare genom att använda följande kommando:
   
 ```powershell
 Get-AzureADUser | Select DisplayName, UsageLocation
@@ -89,7 +89,7 @@ Get-AzureADUser | Select DisplayName, UsageLocation
 
 
 >[!Note]
->PowerShell Core stöder inte Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen och cmdlets som har *MSOL* i sitt namn. Du måste köra de här cmdletarna från Windows PowerShell.
+>PowerShell Core stöder inte Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen och cmdlets som har *Msol* i sitt namn. Du måste köra dessa cmdlets från Windows PowerShell.
 >
 
 Här är ett exempel på resultatet:
@@ -105,9 +105,9 @@ Alex Darrow                               US
 David Longmuir                            BR
 ```
 
-Tolkningen av detta PowerShell-kommando är: Hämta alla användare i den aktuella Microsoft 365-prenumerationen (**Get-AzureADUser**), men Visa bara namn och plats för varje användare (**Välj DisplayName, UsageLocation**).
+The interpretation of this PowerShell command is: Get all of the users in the current Microsoft 365 subscription (**Get-AzureADUser**), but only display the name and location for each user (**Select DisplayName, UsageLocation**).
   
-Eftersom PowerShell för Microsoft 365 har stöd för ett kommando gränssnitts språk kan du ytterligare ändra informationen som erhålls med kommandot **Get-AzureADUser** . Om du till exempel vill sortera dessa användare efter deras placering, kan du gruppera alla brasilianska användare tillsammans, alla användare tillsammans och så vidare. Här är kommandot:
+Eftersom PowerShell för Microsoft 365 har stöd för ett kommandogränssnittsspråk kan du ytterligare ändra informationen som inhämtas med **kommandot Get-AzureADUser.** Du kanske till exempel vill sortera de här användarna efter deras plats, gruppera alla brasilianska användare tillsammans, alla USA-användare tillsammans och så vidare. Här är kommandot:
   
 ```powershell
 Get-AzureADUser | Select DisplayName, UsageLocation | Sort UsageLocation, DisplayName
@@ -126,9 +126,9 @@ Anne Wallace                                US
 Brian Johnson (TAILSPIN)                    US
 ```
 
-Tolkningen av det här PowerShell-kommandot är: Hämta alla användare i den aktuella Microsoft 365-prenumerationen, men Visa bara namn och plats för varje användare och sortera dem först efter deras placering och sedan deras namn (**Sortera UsageLocation, DisplayName**).
+The interpretation of this PowerShell command is: Get all the users in the current Microsoft 365 subscription, but only display the name and location for each user and sort them first by their location and then their name (**Sort UsageLocation, DisplayName**).
   
-Du kan också använda ytterligare filtrering. Om du till exempel vill visa information om användare som är baserade i Brasilien använder du det här kommandot:
+Du kan också använda ytterligare filtrering. Om du till exempel bara vill se information om användare i Brasilien använder du det här kommandot:
   
 ```powershell
 Get-AzureADUser | Where {$_.UsageLocation -eq "BR"} | Select DisplayName, UsageLocation 
@@ -143,124 +143,124 @@ David Longmuir                                        BR
 Fabrice Canel                                         BR
 ```
 
-Tolkningen av detta PowerShell-kommando är: Hämta alla användare i den aktuella Microsoft 365-prenumerationen vars plats är Brasilien (**där {$ \_ . UsageLocation-EQ "BR"}**) och visar sedan namn och plats för varje användare.
+The interpretation of this PowerShell command is: Get all the users in the current Microsoft 365 subscription whose location is Brazil (**Where {$ \_ . Användningsplats -eq "BR"}**) och visa sedan namn och plats för varje användare.
   
- **En kommentar om stora domäner**
+ **En anmärkning om stora domäner**
   
-Om du har en stor domän med tusentals användare kan du prova några av de exempel vi visar i den här artikeln. Beroende på faktorer som dator kraft och tillgänglig nätverks bandbredd kanske du försöker göra för mycket på en gång. Stora organisationer kan dela vissa av dessa PowerShell-operationer i två kommandon.
+Om du har en stor domän med tusentals användare kan det leda till begränsning genom att prova några av exemplen som visas i den här artikeln. Baserat på faktorer som att beräkna ström och tillgänglig nätverksbandbredd kanske du försöker göra för mycket på en gång. Stora organisationer kanske vill dela upp några av dessa PowerShell-åtgärder i två kommandon.
 
-Följande kommando returnerar till exempel alla användar konton och visar namn och plats för var och en av dem:
+Följande kommando returnerar till exempel alla användarkonton och visar namn och plats för varje konto:
   
 ```powershell
 Get-AzureADUser | Select DisplayName, UsageLocation
 ```
 
-Det passar utmärkt för mindre domäner. I en stor organisation kanske du vill dela den operationen i två kommandon: ett kommando för att lagra information om användar kontot i en variabel och ett annat för att visa nödvändig information. Här är ett exempel:
+Det fungerar bra för mindre domäner. Men i en stor organisation kanske du vill dela upp åtgärden i två kommandon: ett kommando för att lagra användarkontoinformationen i en variabel och en annan för att visa den information som behövs. Här är ett exempel:
   
 ```powershell
 $x = Get-AzureADUser
 $x | Select DisplayName, UsageLocation
 ```
 
-Tolkningen av denna uppsättning PowerShell-kommandon är:
-1. Hämta alla användare i den aktuella Microsoft 365-prenumerationen och lagra informationen i en variabel som heter $x (**$x = get-AzureADUser**).
-1.  Visa innehållet i variabeln *$x*, men inkludera bara namn och plats för varje användare (**$x | Välj DisplayName, UsageLocation**).
+Så här tolkar du den här uppsättningen PowerShell-kommandon:
+1. Hämta alla användare i den aktuella Microsoft 365-prenumerationen och lagra informationen i en variabel med namnet $x (**$x = Get-AzureADUser**).
+1.  Visa innehållet i variabeln *$x*, men bara inkludera namn och plats för varje användare (**$x | Välj Visningsnamn, Användningsbeläggning**).
   
 ## <a name="microsoft-365-has-features-that-you-can-only-configure-with-powershell-for-microsoft-365"></a>Microsoft 365 har funktioner som du bara kan konfigurera med PowerShell för Microsoft 365
 
-Administrations centret för Microsoft 365 är avsett att ge till gång till vanliga och användbara administrativa uppgifter som gäller för de flesta miljöer. Med andra ord har Microsoft 365 Admin Center konstruerats så att den typiska administratören kan utföra de vanligaste hanterings uppgifterna. Men det finns några uppgifter som inte kan göras i administrations centret.
+Administrationscentret för Microsoft 365 är avsett att ge tillgång till vanliga, användbara administrativa uppgifter som gäller för de flesta miljöer. Med andra ord har administrationscentret för Microsoft 365 utformats så att den vanliga administratören kan utföra de vanligaste hanteringsuppgifterna. Men det finns vissa uppgifter som inte kan utföras i administrationscentret.
   
-Administrations centret för Skype för företag – Online innehåller till exempel några få alternativ för att skapa anpassade Mötes inbjudningar:
+Till exempel finns det några alternativ i administrationscentret för Skype för företag – Online för att skapa anpassade mötesinbjudningar:
   
-![Exempel på hur anpassade mötesinbjudan visas i administrations centret för Skype för företag – online.](../media/o365-powershell-meeting-invitation.png)
+![Exempel på visning av anpassade mötesinbjudningar i administrationscentret för Skype för företag – Online.](../media/o365-powershell-meeting-invitation.png)
   
-Med de här inställningarna kan du lägga till och anpassa Mötes inbjudningar. Men det finns mer information om inställningar för Mötes konfiguration än att skapa anpassade Mötes inbjudningar. Som standard tillåter möten till exempel:
+Med de här inställningarna kan du anpassa mötesinbjudningar genom att anpassa dem. Men det finns mer att göra inställningar för möteskonfiguration än att bara skapa anpassade mötesinbjudningar. Som standard tillåter möten till exempel:
   
-- Anonyma användare får automatisk ingång till varje möte.
+- Anonyma användare att få automatisk ingång till varje möte.
     
-- Deltagare att spela in i mötet.
+- Deltagare om du vill spela in mötet.
     
-- Alla användare i organisationen ska utses till presentatörer när de ansluter till mötet.
+- Alla användare i organisationen som ska utses till presentatörer när de ansluter till mötet.
     
-Dessa inställningar är inte tillgängliga från administrations centret för Skype för företag – online. Du kan styra dem från PowerShell för Microsoft 365. Här är ett kommando som inaktiverar dessa tre inställningar:
+De här inställningarna är inte tillgängliga från administrationscentret för Skype för företag – Online. Du kan styra dem från PowerShell för Microsoft 365. Här är ett kommando som inaktiverar dessa tre inställningar:
   
 ```powershell
 Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $False -AllowConferenceRecording $False -DesignateAsPresenter "None"
 ```
 
 > [!NOTE]
-> För att köra det här kommandot måste du installera [PowerShell-modulen för Skype för företag – Online ](https://www.microsoft.com/download/details.aspx?id=39366).
+> Om du vill köra det här kommandot måste du installera [Skype för företag – Online PowerShell-modulen. ](https://www.microsoft.com/download/details.aspx?id=39366)
   
-Tolkningen av detta PowerShell-kommando är:
+Tolkning av det här PowerShell-kommandot är:
  
-1. I inställningar för nya Skype för företag – Online-möten (**set-CsMeetingConfiguration**) inaktiverar du Tillåt anonyma användare att få automatisk ingång till möten (**-AdmitAnonymousUsersByDefault $false**).
-2.  Inaktivera möjligheten för deltagare att spela in möten (**-AllowConferenceRecording $false**).
-3. Du behöver inte ange alla användare från organisationen som presentatörer (**-DesignateAsPresenter "ingen"**).
+1. I inställningarna för nya Skype för företag –**Online-möten (Set-CsMeetingConfiguration),** inaktiverar du att anonyma användare får automatisk ingång till möten (**-AdmitAnonymousUsersByDefault $False**).
+2.  Inaktivera möjligheten för deltagare att spela in möten (**-AllowConferenceRecording $False**).
+3. Ange inte alla användare från organisationen som presentatörer (**-DesignateAsPresenter "None"**).
   
-Om du vill återställa standardinställningarna (aktivera alternativen) kör du det här kommandot:
+Om du vill återställa de här standardinställningarna (aktivera alternativen) kör du det här kommandot:
   
 ```powershell
 Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $True -AllowConferenceRecording $True -DesignateAsPresenter "Company"
 ```
 
-Det finns andra liknande scenarier, vilket är orsaken till att administratörer bör kunna köra PowerShell för Microsoft 365-kommandon.
+Det finns även andra liknande scenarier, och därför bör administratörer veta hur man kör PowerShell för Microsoft 365-kommandon.
   
-## <a name="powershell-for-microsoft-365-is-great-for-bulk-operations"></a>PowerShell för Microsoft 365 är perfekt för Mass åtgärder
+## <a name="powershell-for-microsoft-365-is-great-for-bulk-operations"></a>PowerShell för Microsoft 365 är perfekt för massåtgärder
 
-Visuella gränssnitt som Microsoft 365 Admin Center är mest värdefulla när du har en enda åtgärd. Om du till exempel behöver inaktivera ett användar konto kan du använda administrations centret för att snabbt hitta och avmarkera en kryss ruta. Det kan vara enklare än att utföra en liknande åtgärd i PowerShell.
+Visuella gränssnitt som administrationscentret för Microsoft 365 är mest värdefulla när du har en enda åtgärd att göra. Om du till exempel behöver inaktivera ett användarkonto kan du använda administrationscentret för att snabbt hitta och avmarkera en kryssruta. Det kan vara enklare än att utföra en liknande åtgärd i PowerShell.
   
-Men om du behöver ändra många saker eller vissa markerade saker i en stor uppsättning andra saker kanske administrations centret för Microsoft 365 inte är det bästa verktyget. Säg till exempel att du måste ändra prefix på tusentals telefonnummer eller ta bort de specifika användarna *Katarina Myer* från alla SharePoint Online-webbplatser. Hur gör du det i administrations centret för Microsoft 365?
+Men om du måste ändra många saker eller vissa valda saker i en stor uppsättning av andra saker kanske administrationscentret för Microsoft 365 inte är det bästa verktyget. Säg till exempel att du måste ändra prefixet på tusentals telefonnummer eller ta bort den specifika användaren *Ken Myer* från alla dina SharePoint Online-webbplatser. Hur gör du det i administrationscentret för Microsoft 365?
   
-Anta att du har flera hundra SharePoint Online-webbplatser och att du inte vet vilka Katarina Meyer är medlem i. Du skulle behöva börja med administrations centret för Microsoft 365 och sedan utföra den här proceduren för varje webbplats:
+I det sista exemplet säger vi att du har flera hundra SharePoint Online-webbplatser och inte vet vilka Ken Meyer är medlem i. Du måste då börja i administrationscentret för Microsoft 365 och sedan utföra den här proceduren för varje webbplats:
   
-1. Välj **URL** för webbplatsen.
+1. Välj **webbplatsens URL.**
     
-2. I rutan **Egenskaper för webbplats samling** väljer du länken webbplats **adress** för att öppna webbplatsen.
+2. I **egenskapsrutan för webbplatssamlingen** väljer **du länken Webbplatsadress** för att öppna webbplatsen.
     
-3. Välj **dela**på webbplatsen.
+3. På webbplatsen väljer du **Dela**.
     
-4. I dialog rutan **dela** väljer du länken som visar alla användare som har behörighet till webbplatsen:
+4. I **dialogrutan Dela** väljer du länken som visar alla användare som har behörighet till webbplatsen:
     
-     ![Exempel på hur du visar medlemmarna på en SharePoint Online-webbplats i administrations centret för SharePoint Online.](../media/o365-powershell-view-permissions.png)
+     ![Exempel på att visa medlemmar i en SharePoint Online-webbplats i administrationscentret för SharePoint Online.](../media/o365-powershell-view-permissions.png)
   
-5. I dialog rutan **delas med** väljer du **Avancerat**.
+5. Välj **Avancerat i** dialogrutan Delas **med.**
     
-6. Bläddra nedåt i listan med användare, hitta och välj Katarina Myer (förutsatt att han har behörighet till webbplatsen) och välj sedan **ta bort användar behörigheter**.
+6. Bläddra nedåt i listan med användare, hitta och välj Ken Myer (förutsatt att han har behörighet till webbplatsen) och välj sedan **Ta bort användarbehörigheter.**
     
-Det tar *lång* tid för flera hundra webbplatser.
+Det skulle ta *lång tid* för flera hundra webbplatser.
   
-Alternativet är att köra följande kommando i PowerShell för Microsoft 365 för att ta bort Katarina Myer från alla webbplatser:
+Alternativet är att köra följande kommando i PowerShell för Microsoft 365 för att ta bort Ken Myer från alla dina webbplatser:
   
 ```powershell
 Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwareinc.com"}
 ```
 
 > [!NOTE]
-> Det här kommandot kräver att du installerar [SharePoint Online PowerShell-modulen](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps). 
+> Det här kommandot kräver att du installerar [SharePoint Online PowerShell-modulen](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps). 
   
-Tolkningen av det här PowerShell-kommandot är: Hämta alla SharePoint-webbplatser i den aktuella Microsoft 365-prenumerationen (**Get-SPOSite**) och för varje webbplats tar du bort Katarina Meyer från listan över användare som har åtkomst till den (**sol{Remove-Makers-site $ \_ . URL – LoginName "kenmyer \@ litwareinc.com"}**).
+The interpretation of this PowerShell command is: Get all of the SharePoint sites in the current Microsoft 365 subscription (**Get-SPOSite**) and for each site remove Ken Meyer from the list of users who can access it **(ForEach {Remove-SPOUser -Site $ \_ . URL -LoginName "kenmyer \@ litwareinc.com"}**).
   
-Vi berättar för Microsoft 365 att ta bort Katarina Meyer från alla webbplatser, inklusive de som han saknar åtkomst till. Därför visas fel för de webbplatser som han saknar åtkomst till. Vi kan använda ett ytterligare villkor i det här kommandot för att ta bort Katarina Meyer endast från webbplatser som har sin inloggnings lista. Men felen som returneras gör att själva webbplatserna inte skadas. Det kan ta några minuter att köra det här kommandot för hundratals webbplatser, i stället för timmar med att arbeta via Microsoft 365 Admin Center.
+Vi säger till Microsoft 365 att Ken Meyer ska tas bort från alla webbplatser, även sådana som han inte har åtkomst till. Resultatet kommer därför att visa fel för de webbplatser som han inte har tillgång till. Vi kan använda ytterligare villkor för det här kommandot för att endast ta bort Ken Meyer från de webbplatser där ken finns med på deras inloggningslista. Men de fel som returneras gör ingen skada för webbplatserna. Det här kommandot kan ta några minuter att köra mot hundratals webbplatser, i stället för timmar av arbete via administrationscentret för Microsoft 365.
   
-Här är ett annat Mass Operations exempel. Använd det här kommandot för att lägga till *Håkans Kearney*, en ny SharePoint-administratör, på alla webbplatser i organisationen:
+Här är ett annat exempel på massåtgärd. Använd det här kommandot för att *lägga till Bonnie Kearney*, ny SharePoint-administratör, på alla webbplatser i organisationen:
   
 ```powershell
 Get-SPOSite | ForEach {Add-SPOUser -Site $_.Url -LoginName "bkearney@litwareinc.com" -Group "Members"}
 ```
 
-Tolkningen av det här PowerShell-kommandot är: Hämta alla SharePoint-webbplatser i den aktuella Microsoft 365-prenumerationen och för varje webbplats kan Håkans Kearney Access genom att lägga till hennes inloggnings namn i gruppen medlemmar på webbplatsen (**sol{Add-makar-site $ \_ . URL – LoginName "bkearney \@ litwareinc.com"-grupp "medlemmar"}**).
+The interpretation of this PowerShell command is: Get all the SharePoint sites in the current Microsoft 365 subscription and for each site allow Bonnie Kearney access by adding her login name to the Members group of the site (**ForEach {Add-SPOUser -Site $ \_ . URL -LoginName "bkearney \@ litwareinc.com" -Group "Members"}**).
   
 ## <a name="powershell-for-microsoft-365-is-great-at-filtering-data"></a>PowerShell för Microsoft 365 är ett bra sätt att filtrera data
 
-Administrations centret för Microsoft 365 tillhandahåller flera olika sätt att filtrera data för att enkelt hitta en viss del av informationen. Med Exchange blir det till exempel enkelt att filtrera på en användares post låda i praktiskt taget. Här är en lista med post lådor för alla användare som bor i staden Bloomington:
+I administrationscentret för Microsoft 365 kan du filtrera data på flera olika sätt för att enkelt hitta en delmängd information. Till exempel gör Exchange det enkelt att filtrera på praktiskt taget alla egendom för en användarpostlåda. Här är till exempel listan över postlådor för alla användare som bor i staden Bloomington:
   
-![Exempel på en avancerad sökning i administrations centret för Microsoft 365 för listan med post lådor för alla användare som bor i staden Bloomington.](../media/o365-powershell-advanced-search.png)
+![Exempel på att göra en avancerad sökning i administrationscentret för Microsoft 365 för listan över postlådor för alla användare som bor i Bloomington.](../media/o365-powershell-advanced-search.png)
   
-I administrations centret för Exchange kan du även kombinera filter villkor. Du kan till exempel hitta post lådorna för alla personer som bor i Bloomington och arbeta på ekonomi avdelningen.
+I administrationscentret för Exchange kan du även kombinera filtervillkor. Du kan till exempel hitta postlådorna för alla personer som bor i Bloomington och arbeta på ekonomiavdelningen.
   
-Men det finns begränsningar för vad du kan göra i administrations centret för Exchange. Du kan till exempel enkelt hitta post lådorna för personer som bor i Bloomington *eller* San Diego, eller post lådorna för alla som inte bor i Bloomington.
+Men det finns begränsningar i vad du kan göra i administrationscentret för Exchange. Det gick till exempel inte lika lätt att hitta postlådorna för personer som bor i *Bloomington* eller San Bloom, eller postlådorna för alla personer som inte bor i Bloomington.
   
-Du kan använda följande PowerShell för Microsoft 365-kommando för att hämta en lista med post lådor för alla personer som bor i Bloomington eller San Diego:
+Du kan använda följande PowerShell för Microsoft 365-kommando för att få en lista över postlådor för alla som bor i Bloomington eller San San Gör så här:
   
 ```powershell
 Get-User | Where {$_.RecipientTypeDetails -eq "UserMailbox" -and ($_.City -eq "San Diego" -or $_.City -eq "Bloomington")} | Select DisplayName, City
@@ -277,9 +277,9 @@ Julian Isla                              Bloomington
 Rob Young                                Bloomington
 ```
 
-Tolkningen av detta PowerShell-kommando är: Hämta alla användare i den aktuella Microsoft 365-prenumerationen som har en post låda i staden San-Diego eller Bloomington (**där {$ \_ . En-EQ "UserMailbox"-och ($ \_ . City-EQ "San Diego"-eller $ \_ . City-EQ "Bloomington")}**) och visar sedan namnet och staden för var och en av dem (**Välj DisplayName, ort**).
+The interpretation of this PowerShell command is: Get all the users in the current Microsoft 365 subscription who have a mailbox in the city of San Bloomington (**Where {$ \_ . RecipientTypeDetails -eq "UserMailbox" -and ($ \_ . Ort -eq "San Turk" -eller $ \_ . Ort -eq "Bloomington")}**) och visa sedan namn och ort för varje **(Välj visningsnamn, ort**).
   
-Och här är kommandot för att visa alla post lådor för personer som bor var som helst utom Bloomington:
+Och här är kommandot för att visa alla postlådor för personer som bor var som helst utom Bloomington:
   
 ```powershell
 Get-User | Where {$_.RecipientTypeDetails -eq "UserMailbox" -and $_.City -ne "Bloomington"} | Select DisplayName, City
@@ -304,37 +304,37 @@ Garth Fort                                Tulsa
 Janet Schorr                              Bellevue
 ```
 
-Tolkningen av detta PowerShell-kommando är: Hämta alla användare i den aktuella Microsoft 365-prenumerationen som har en post låda som inte finns i staden Bloomington (**där {$ \_ . En-EQ "UserMailbox"-and $ \_ . City-Ne "Bloomington"}**) och visar sedan namnet och staden för varje.
+The interpretation of this PowerShell command is: Get all the users in the current Microsoft 365 subscription who have a mailbox not located in the city of Bloomington (**Where {$ \_ . RecipientTypeDetails -eq "UserMailbox" -and $ \_ . Ort -ne "Bloomington"}**) och visa sedan namn och ort för varje.
   
 ### <a name="use-wildcards"></a>Använda jokertecken
 
-Du kan också använda jokertecken i dina PowerShell-filter för att matcha delar av ett namn. Anta till exempel att du letar efter ett användar konto. Allt du kan komma ihåg är att användarens efter namn var *Anderson* eller kanske *Henderson* eller *Jorgenson*.
+Du kan också använda jokertecken i PowerShell-filter för att matcha en del av ett namn. Anta till exempel att du letar efter ett användarkonto. Allt du kan komma ihåg är att användarens efternamn var *Magnus eller Kanske* Magnus eller *Omsson.* 
   
-Du kan spåra användaren i administrations centret för Microsoft 365 genom att använda sökverktyget och utföra tre olika sökningar:
+Du kan spåra användaren i administrationscentret för Microsoft 365 genom att använda sökverktyget och utföra tre olika sökningar:
   
-- En för  *Anderson* 
+- One for  *En för Förend* 
     
-- En för  *Henderson* 
+- One for  *En för Förend* 
     
-- En för  *Jorgenson* 
+- One for  *Jorgenson* 
     
-Eftersom alla tre av namnen slutar med "son" kan du se till att PowerShell visar alla användare vars namn slutar på "son". Här är kommandot:
+Eftersom alla tre namnen slutar på "son" kan du ange att PowerShell ska visa alla användare vars namn slutar med "son". Här är kommandot:
   
 ```powershell
 Get-User -Filter '{LastName -like "*son"}'
 ```
 
-Tolkningen av det här PowerShell-kommandot är: Hämta alla användare i den aktuella Microsoft 365-prenumerationen, men Använd ett filter som bara visar de användare vars senaste namn slutar på "son" (**-filter ' {efter namn-like " \* son"} '**). En \* uppsättning tecken som är bokstäver i användarens efter namn.
+The interpretation of this PowerShell command is: Get all the users in the current Microsoft 365 subscription, but use a filter that only lists the users whose last names end in "son" (**-Filter '{LastName -like " \* son"}'**). De \* står för alla tecken , det vill vara bokstäver i användarens efternamn.
   
-## <a name="powershell-for-microsoft-365-makes-it-easy-to-print-or-save-data"></a>Med PowerShell för Microsoft 365 blir det enkelt att skriva ut eller spara data
+## <a name="powershell-for-microsoft-365-makes-it-easy-to-print-or-save-data"></a>Med PowerShell för Microsoft 365 är det enkelt att skriva ut eller spara data
 
-Med administrations centret för Microsoft 365 kan du Visa listor med data. Här är ett exempel på administrations centret för Skype för företag – online som visar en lista över användare som har Aktiver ATS för Skype för företag – online:
+I administrationscentret för Microsoft 365 kan du visa listor med data. Här är ett exempel på administrationscentret för Skype för företag – Online som visar en lista över användare som har aktiverats för Skype för företag – Online:
   
-![Exempel på administrations centret för Skype för företag – online som visar en lista över användare som har Aktiver ATS för Skype för företag – online.](../media/o365-powershell-lync-users.png)
+![Exempel på administrationscentret för Skype för företag – Online som visar en lista över användare som har aktiverats för Skype för företag – Online.](../media/o365-powershell-lync-users.png)
   
-Om du vill spara informationen i en fil måste du klistra in den i ett dokument eller ett Excel-kalkylblad. Något av fallen kan kräva ytterligare formatering. Administrations centret för Microsoft 365 kan dessutom inte skriva ut den lista som visas direkt.
+Om du vill spara informationen i en fil måste du klistra in den i ett dokument eller ett Microsoft Excel-kalkylblad. Endera fall kan kräva ytterligare formatering. I administrationscentret för Microsoft 365 finns dessutom inte något sätt att direkt skriva ut listan som visas.
   
-Som tur är kan du använda PowerShell för att inte bara visa listan men för att spara den i en fil som enkelt kan importeras till Excel. Här är ett exempel kommando för att spara användar data för Skype för företag – Online i en CSV-fil (kommaseparerade värden), som enkelt kan importeras som en tabell i ett Excel-kalkylblad:
+Som tur är kan du använda PowerShell för att inte bara visa listan utan för att spara den i en fil som enkelt kan importeras till Excel. Här är ett exempelkommando för att spara Skype för företag – Online-användardata i en fil med kommaavgränsade värden (CSV), som sedan enkelt kan importeras som en tabell i ett Excel-kalkylblad:
   
 ```powershell
 Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Export-Csv -Path "C:\Logs\SfBUsers.csv" -NoTypeInformation
@@ -342,47 +342,47 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Export
 
 Här är ett exempel på resultatet:
   
-![Exempel på en tabell som importer ATS till ett Excel-kalkylblad för användare av Skype för företag – online som sparats i en fil med kommateckenavgränsade värden.](../media/o365-powershell-data-in-excel.png)
+![Exempel på en tabell som importerats till ett Excel-kalkylblad för Skype för företag – Online-användardata som har sparats i en kommaavgränsad värdefil.](../media/o365-powershell-data-in-excel.png)
   
-Tolkningen av detta PowerShell-kommando är: Hämta alla Skype för företag – Online-användare i den aktuella Microsoft 365-prenumerationen (**Get-CsOnlineUser**); Hämta bara användar namn, UPN och plats (**Välj DisplayName, userPrincipalName, UsageLocation**); och spara sedan informationen i en CSV-fil som heter C: \\ loggar \\SfBUsers.csv (**export-csv-Path "C: \\ loggar \\SfBUsers.csv"-NoTypeInformation**).
+The interpretation of this PowerShell command is: Get all the Skype for Business Online users in the current Microsoft 365 subscription (**Get-CsOnlineUser**); endast skaffa användarnamn, UPN och plats **(Välj DisplayName, UserPrincipalName, UsageLocation**); och sparar sedan informationen i en CSV-fil med namnet C: \\ Loggar \\SfBUsers.csv (**Export-Csv -Path "C: \\ Logs \\SfBUsers.csv" -NoTypeInformation**).
   
-Du kan också använda alternativen för att spara denna lista som en XML-fil eller en HTML-sida. Med ytterligare PowerShell-kommandon kan du faktiskt spara det direkt som en Excel-fil med eventuell anpassad formatering.
+Du kan också använda alternativ för att spara listan som en XML-fil eller en HTML-sida. Med ytterligare PowerShell-kommandon kan du spara det direkt som en Excel-fil med valfri anpassad formatering.
   
-Du kan också skicka utdata från ett PowerShell-kommando som visar en lista direkt till standard skrivaren i Windows. Här är ett exempel kommando:
+Du kan också skicka utdata från ett PowerShell-kommando som visar en lista direkt till standardskrivaren i Windows. Här är ett exempelkommando:
   
 ```powershell
 Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Out-Printer
 ```
 
-Så här ser det utskrivna dokumentet ut:
+Så här kommer det utskrivna dokumentet att se ut:
   
-![Exempel på ett utskrivet dokument som fick ett PowerShell-kommando skickat direkt till standard skrivaren i Windows.](../media/o365-powershell-printed-data.png)
+![Exempel på utskrivet dokument som utdata från ett PowerShell-kommando som skickas direkt till standardskrivaren i Windows.](../media/o365-powershell-printed-data.png)
   
-Tolkningen av detta PowerShell-kommando är: Hämta alla Skype för företag – Online-användare i den aktuella Microsoft 365-prenumerationen; få bara användar namn, UPN och plats; och skicka sedan informationen till standard skrivaren i Windows (**ut-skrivaren**).
+The interpretation of this PowerShell command is: Get all the Skype for Business Online users in the current Microsoft 365 subscription; endast få användarnamn, UPN och plats; och skicka sedan informationen till Windows standardskrivare **(utskrivare).**
   
-Det utskrivna dokumentet har samma enkla formatering som visas i PowerShell-Kommandotolken. Om du vill ha en pappers kopia lägger du bara till **| Slut på skrivare** till slutet av kommandot.
+Det utskrivna dokumentet har samma enkla formatering som visningen i PowerShell-kommandofönstret. Om du vill ha en papperskopia behöver du bara lägga **till | Skriv ut** till slutet av kommandot.
   
-## <a name="powershell-for-microsoft-365-lets-you-manage-across-server-products"></a>Med PowerShell för Microsoft 365 kan du hantera olika Server produkter
+## <a name="powershell-for-microsoft-365-lets-you-manage-across-server-products"></a>Med PowerShell för Microsoft 365 kan du hantera i alla serverprodukter
 
-De komponenter som utgör Microsoft 365 är utformade för att fungera tillsammans. Anta till exempel att du lägger till en ny användare i Microsoft 365 och att du anger information som användarens avdelning och telefonnummer. Denna information kommer att vara tillgänglig om du kommer åt användarens information i någon av Microsoft 365-tjänsterna: Skype för företag – Online, Exchange eller SharePoint.
+Komponenterna som utgör Microsoft 365 är utformade för att fungera tillsammans. Anta till exempel att du lägger till en ny användare i Microsoft 365 och anger sådan information som användarens avdelning och telefonnummer. Informationen blir tillgänglig om du kommer åt användarens information i någon av Microsoft 365-tjänsterna: Skype för företag – Online, Exchange eller SharePoint.
   
-Men det är för gemensam information som omfattar produkterna. Produktspecifika uppgifter, till exempel information om en användares Exchange-postlåda, är normalt inte tillgänglig i hela sviten. Information om till exempel att en användares post låda är aktive rad eller inte är tillgänglig i administrations centret för Exchange.
+Men det är för vanlig information som spänner över produktsviten. Produktspecifik information, till exempel information om en användares Exchange-postlåda, är vanligtvis inte tillgänglig i hela programsviten. Information om till exempel om en användares postlåda är aktiverad eller inte är tillgänglig endast i administrationscentret för Exchange.
   
-Anta att du vill skapa en rapport som visar följande information för alla dina användare:
+Anta att du vill skapa en rapport som visar följande information för alla användare:
   
-- Användarens visnings namn
+- Användarens visningsnamn
     
 - Om användaren är licensierad för Microsoft 365
     
-- Om användarens Exchange-postlåda har Aktiver ATS
+- Om användarens Exchange-postlåda har aktiverats
     
-- Om användaren är aktive rad för Skype för företag – Online
+- Om användaren är aktiverad för Skype för företag – Online
     
-Du kan inte enkelt tillverka en sådan rapport i administrations centret för Microsoft 365. I stället måste du skapa ett separat dokument för att lagra informationen, till exempel ett Excel-kalkylblad. Hämta sedan alla användar namn och licensierings information från administrations centret för Microsoft 365, hämta information från administrations centret för Exchange, få information om Skype för företag – Online från administrations centret för Skype för företag – Online och kombinera den informationen.
+Det är inte enkelt att skapa en sådan rapport i administrationscentret för Microsoft 365. I stället måste du skapa ett separat dokument för att lagra informationen, till exempel ett Excel-kalkylblad. Hämta sedan alla användarnamn och all licensinformation från administrationscentret för Microsoft 365, hämta postlådeinformation från administrationscentret för Exchange, hämta information om Skype för företag – Online från administrationscentret för Skype för företag – Online och kombinera informationen.
   
-Alternativet är att använda ett PowerShell-skript för att kompilera rapporten åt dig.
+Alternativet är att använda ett PowerShell-skript för att sammanställa rapporten åt dig.
   
-Följande exempel skript är mer komplicerat än de kommandon du har sett hittills i den här artikeln. Men det visar potentialen för att använda PowerShell för att skapa informations vyer som är svåra att se. Så här kompilerar och visar du den lista du behöver:
+Följande exempelskript är mer komplicerat än de kommandon som du har sett hittills i den här artikeln. Men det visar potentialen för att använda PowerShell för att skapa informationsvyer som är svåra att få annars. Här är skriptet för att kompilera och visa den lista du behöver:
   
 ```powershell
 $x = Get-AzureADUser
@@ -414,15 +414,15 @@ Katy Jordan             False        True               False
 Molly Dempsey           False        True               False
 ```
 
-Tolkningen av det här PowerShell-skriptet är:  
+Tolkning av det här PowerShell-skriptet är:  
 
-1. Hämta alla användare i den aktuella Microsoft 365-prenumerationen och lagra informationen i en variabel som heter *$x* (**$x = get-AzureADUser**).
-1. Starta en loop som körs över alla användare i variabeln $x $i (**fram$x)**.  
-1. Definiera en variabel som heter *$y* och lagra användarens post lådans information (**$y = Get-Mailbox-Identity $i. UserPrincipalName**).
-1. Lägga till en ny egenskap i användar informationen som heter *IsMailBoxEnabled*. Ange värdet för egenskapen IsMailBoxEnabled i användarens post låda (**$i | Add-Member-MemberType NoteProperty-Name IsMailBoxEnabled-value $y. IsMailBoxEnabled**).
-1. Definiera en variabel som heter *$y*och lagra användarens information om Skype för företag – Online (**$y = Get-CsOnlineUser-Identity $i. UserPrincipalName**).
-1. Lägga till en ny egenskap i användar informationen som heter *EnabledForSfB*. Ange värdet för egenskapen Enabled för användarens online-information för Skype för företag (**$i | Add-Member-MemberType NoteProperty EnabledForSfB-värde $y. enabled**).
-1. Visa listan med användare, men bara ange deras namn, om de är licensierade och de två nya egenskaperna som visar om sin post låda är aktive rad och om den är aktive rad för Skype för företag – Online (**$x | Välj DisplayName, Ärlicensierad, IsMailboxEnabled, EnabledforSfB**).
+1. Hämta alla användare i den aktuella Microsoft 365-prenumerationen och lagra informationen i en variabel som heter *$x* (**$x = Get-AzureADUser**).
+1. Starta en slinga som körs över alla användare i variabeln $x (**foreach ($i i $x)**).  
+1. Definiera en variabel *med namnet $y* och lagra användarens postlådeinformation i den ( $y = Get-Mailbox **-Identity $i.UserPrincipalName**).
+1. Lägga till en ny egenskap i användarinformationen med namnet *IsMailBoxEnabled.* Ange värdet för egenskapen IsMailBoxEnabled för användarens postlåda (**$i | Add-Member -MemberType NoteProperty -Name IsMailboxEnabled -Value $y.IsMailboxEnabled**).
+1. Definiera en variabel *med namnet $y* och lagra användarens Skype för företag – Online-information i den ( $y = Get-CsOnlineUser **-Identity $i.UserPrincipalName**).
+1. Lägg till en ny egenskap i användarinformationen som heter *EnabledForSfB.* Ställ in det på värdet för egenskapen Enabled för användarens Skype för företag – Online-information (**$i | Add-Member -MemberType NoteProperty -Name EnabledForSfB -Value $y.Enabled**).
+1. Visa listan med användare, men ta bara med deras namn, om de är licensierade och de två nya egenskaperna som anger om deras postlåda är aktiverad och om de är aktiverade för Skype för företag – Online (**$x | Välj DisplayName, IsLicensed, IsMailboxEnabled, EnabledforSfB**).
   
 ## <a name="see-also"></a>Se även
 

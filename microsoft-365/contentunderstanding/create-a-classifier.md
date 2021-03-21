@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Lär dig att skapa en klassificerare
-ms.openlocfilehash: bff23807fce18bf4a585dbb1ec47c1502ab686f6
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 13ae099d051ac526dc5b13e4cb55a1dc10eec087
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242694"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925362"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Skapa en klassificerare i Microsoft SharePoint Syntex
 
@@ -32,7 +32,7 @@ En klassificerare är en modelltyp som du kan använda för att automatisera ide
 
 ![Kontraktförnyelse dokumentet](../media/content-understanding/contract-renewal.png)
 
-Genom att skapa en klassificerare kan du skapa en ny [SharePoint Innehållstyp](https://docs.microsoft.com/sharepoint/governance/content-type-and-workflow-planning#content-type-overview) som ska associeras med modellen.
+Genom att skapa en klassificerare kan du skapa en ny [SharePoint Innehållstyp](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview) som ska associeras med modellen.
 
 När du skapar en klassificerare behöver du skapa *förklaringar* för att definiera modellen. På så sätt kan du notera vanliga data som du skulle förvänta dig att konsekvent hitta den här dokumenttyp. 
 

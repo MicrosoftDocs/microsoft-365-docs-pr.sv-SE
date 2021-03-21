@@ -1,5 +1,5 @@
 ---
-title: 'Översikt: dela VPN-tunnlar med Office 365'
+title: 'Översikt: VPN-delade tunnlar med Office 365'
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -17,13 +17,13 @@ ms.collection:
 - m365initiative-coredeploy
 f1.keywords:
 - NOCSH
-description: Vägledning för att använda delade VPN-tunnlar med Office 365 för att optimera Office 365-anslutningen för fjärran vändare.
-ms.openlocfilehash: 103a5cc36c9e981ccef5717971e32330078ed721
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+description: Vägledning för att använda VPN-delade tunnlar med Office 365 för att optimera Office 365-anslutningar för fjärranvändare.
+ms.openlocfilehash: 9f54d8836105896d8d00afc4a622975c007bda85
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456393"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924194"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>Optimera Office 365-anslutningen för fjärranvändare med uppdelad VPN-tunnel
 <!---
@@ -33,82 +33,82 @@ ms.locfileid: "48456393"
 >- For information about optimizing Office 365 worldwide tenant performance for users in China, see [Office 365 performance optimization for China users](microsoft-365-networking-china.md).
 -->
 
-För kunder som ansluter sina fjärranslutna enheter till företagets nätverks-eller moln infrastruktur via VPN rekommenderar Microsoft att viktiga Office 365-scenarier **Microsoft Teams**, **SharePoint Online** och **Exchange Online** dirigeras via en konfiguration för _uppdelade VPN-tunnlar_ . Det är särskilt viktigt som den första rad strategin för att under lätta fortsatta arbets uppgifter under arbete – från-hem händelser, till exempel COVID-19 krisen.
+För kunder som ansluter sina fjärranslutna arbetsenheter till företagsnätverket eller molninfrastrukturen via VPN rekommenderar Microsoft att viktiga Office 365-scenarier **Microsoft Teams**, **SharePoint Online** och Exchange **Online** dirigeras via _en VPN-delad tunnelkonfiguration._ Det här blir särskilt viktigt som den första linjestrategin för att underlätta fortsatt produktivitet bland anställda vid storskaliga händelser hemma, till exempel coVID-19-kris.
 
-![VPN-konfiguration för delad tunnel](../media/vpn-split-tunneling/vpn-model-2.png)
+![VPN-konfiguration för delade tunnlar](../media/vpn-split-tunneling/vpn-model-2.png)
 
-_Bild 1: en lösning för VPN-delning med definierade Office 365-undantag skickade direkt till tjänsten. All annan trafik passerar VPN-tunneln oavsett mål._
+_Bild 1: En VPN-delad tunnellösning med definierade Office 365-undantag som skickas direkt till tjänsten. All annan trafik passerar VPN-tunneln oavsett destination._
 
-Detta tillvägagångs sätt är att tillhandahålla en enkel metod för företag för att minska risken för att en VPN-infrastruktur är mättnad och avsevärt förbättrar Office 365-prestandan i den kortast möjliga tids perioden. Om du konfigurerar VPN-klienter så att de tillåter mest kritiska problem med hög trafik i Office 365 för att kringgå VPN-tunneln uppnår du följande fördelar:
+Det viktigaste i den här metoden är att tillhandahålla en enkel metod för företag för att minimera risken för VPN-infrastrukturmättnad och avsevärt förbättra Office 365-prestandan inom den kortaste möjliga tidsperioden. Genom att konfigurera VPN-klienter för att tillåta den mest kritiska Office 365-trafiken med hög volym kringgår VPN-tunneln följande fördelar:
 
-- Omedelbart minskar orsaken till att de flesta kunder rapporterade prestanda-och nätverks kapacitets problem i Enterprise VPN-arkitekturer som påverkar Office 365-användar upplevelsen
+- Minimerar omedelbart orsaken till majoriteten av de kundrapporterade prestanda- och nätverkskapacitetsproblemen i VPN-arkitekturer för företag som påverkar användarupplevelsen för Office 365
   
-  Den rekommenderade lösningen riktar sig specifikt till Office 365-tjänste slut punkter kategoriserade som **optimerade** i avsnittet [Office 365 URL: er och IP-adressintervall](https://aka.ms/o365ips). Trafik till dessa slut punkter är mycket känslig för fördröjning och bandbredds begränsning, och att det är möjligt att kringgå VPN-tunneln kan förbättra slutanvändarens upplevelse och minska belastningen på nätverket. Office 365-anslutningar som inte utgör majoriteten av bandbredd eller användar gränssnitt kan fortsätta att dirigeras via VPN-tunneln tillsammans med resten av den Internet bundna trafiken. Mer information finns i [strategin för delad VPN-tunnel](#the-vpn-split-tunnel-strategy).
+  Den rekommenderade lösningen riktar specifikt in Office 365-tjänstslutpunkter som kategoriserats som Optimera i ämnet [Office 365-URL:er och IP-adressintervall.](./urls-and-ip-address-ranges.md)  Trafik till dessa slutpunkter är mycket känslig för latens och bandbreddsbegränsning, och att göra det möjligt att kringgå VPN-tunneln kan avsevärt förbättra slutanvändarupplevelsen och minska företagets nätverksbelastning. Office 365-anslutningar som inte utgör majoriteten av bandbredden eller användarnas upplevelseavtryck kan fortsätta att dirigeras genom VPN-tunneln tillsammans med resten av Internetbunden trafik. Mer information finns i [VPN-strategi för delade tunnlar.](#the-vpn-split-tunnel-strategy)
 
-- Kan konfigureras, testas och implementeras snabbt av kunder och utan ytterligare infrastruktur-eller program krav
+- Kan konfigureras, testas och implementeras snabbt av kunder och utan ytterligare krav på infrastruktur eller program
 
-  Beroende på VPN-plattform och nätverks arkitektur kan implementeringen ta så lite tid. Mer information finns i [Implementera VPN-delning](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling).
+  Implementeringen kan ta så lite som några timmar beroende på VPN-plattformen och nätverksarkitekturen. Mer information finns i Implementera [VPN-delade tunnlar](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling).
 
-- Bevarar säkerhets Posture för kundernas VPN-implementeringar genom att inte ändra hur andra anslutningar routas, inklusive trafik till Internet
+- Bevarar säkerheten hos vpn-implementeringar av kunder genom att inte ändra hur andra anslutningar dirigeras, inklusive trafik till Internet
 
-  Den rekommenderade konfigurationen följer den **minsta behörighets** principen för VPN-trafik undantag och låter kunderna implementera delad tunnel-VPN utan att exponera användare eller infrastruktur för ytterligare säkerhets risker. Nätverks trafik som dirigeras direkt till Office 365-slutpunkter krypteras, verifieras för integritet via Office klient program stackar och omfattning för IP-adresser avsedda för Office 365-tjänster som är härdade både mot program-och nätverks nivå. Mer information finns i [alternativa sätt för säkerhetsadministratörer och för att få moderna säkerhets kontroller i dagens unika scenarier för fjärrarbete (Microsoft Security Team-bloggen)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/).
+  Den rekommenderade konfigurationen följer **principen** om minsta behörighet för VPN-trafikundantag och gör det möjligt för kunder att implementera VPN för delade tunnlar utan att utsätta användare eller infrastruktur för ytterligare säkerhetsrisker. Nätverkstrafiken som dirigeras direkt till Office 365-slutpunkter krypteras, valideras för integritet av Office-klientprogramsstackar och är begränsad till IP-adresser som är dedikerade till Office 365-tjänster som är hårdna på både program- och nätverksnivå. Mer information finns i Alternativa sätt för säkerhetsexperter och IT-personal för att uppnå moderna säkerhetskontroller i dagens unika fjärrarbete [(Microsoft Security Team-blogg)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/).
 
-- Stöds internt av de flesta VPN-plattformarna i Enterprise
+- Stöds inbyggt av de flesta VPN-plattformarna för företag
 
-  Microsoft fortsätter att samar beta med bransch partners som skapar kommersiella VPN-lösningar för att hjälpa partners att utveckla riktade råd för vägledning och konfiguration för sina lösningar i enlighet med rekommendationerna ovan. Mer information finns i [howto guider för vanliga VPN-plattformar](microsoft-365-vpn-implement-split-tunnel.md#howto-guides-for-common-vpn-platforms).
+  Microsoft fortsätter att samarbeta med branschpartners som utvecklar kommersiella VPN-lösningar som hjälper partner att utveckla riktade väglednings- och konfigurationsmallar för sina lösningar i enlighet med rekommendationerna ovan. Mer information finns i [HOWTO-guider för vanliga VPN-plattformar.](microsoft-365-vpn-implement-split-tunnel.md#howto-guides-for-common-vpn-platforms)
 
 >[!TIP]
->Microsoft rekommenderar att du fokuserar på delnings-VPN-konfiguration på särskilda IP-adressintervall för Office 365-tjänster. FQDN-eller AppID-baserade delade tunnel-konfigurationer, och möjligt med vissa VPN-klient plattformar, kanske inte helt täcker viktiga Office 365-scenarier och kan krocka med IP-baserade regler för VPN-routning. Av den här anledningen rekommenderar Microsoft inte att använda Office 365 FQDN-namn för att konfigurera delade tunnel-VPN. Användning av FQDN-konfiguration kan vara användbart i andra relaterade scenarier, till exempel filer med fil tillägget PAC eller för att implementera vägar.
+>Microsoft rekommenderar att man fokuserar på VPN-konfiguration för delade tunnlar på dokumenterade dedikerade IP-intervall för Office 365-tjänster. FQDN- eller AppID-baserade delade tunnelkonfigurationer, även om möjligt på vissa VPN-klientplattformar, kanske inte helt täcker nyckelscenarier i Office 365 och kan vara i konflikt med IP-baserade VPN-routningsregler. Microsoft rekommenderar därför inte att du använder Office 365 FQDN för att konfigurera VPN för delade tunnlar. Användningen av FQDN-konfigurationen kan vara användbar i andra relaterade scenarier, till exempel pac-filanpassningar eller för att implementera förbikoppling av proxy.
 
-Fullständig implementerings vägledning finns i [implementera uppdelade VPN-tunnlar för Office 365](microsoft-365-vpn-implement-split-tunnel.md).
+Fullständig implementeringsvägledning finns i [Implementera VPN-delade tunnlar för Office 365.](microsoft-365-vpn-implement-split-tunnel.md)
 
-## <a name="the-vpn-split-tunnel-strategy"></a>Den delade tunnel-strategin för VPN
+## <a name="the-vpn-split-tunnel-strategy"></a>VPN-strategi för delade tunnlar
 
-Traditionella företags nätverk är ofta utformade för att fungera säkert för en i förväg moln världen, där de viktigaste data, tjänster, program finns på plats och är direktanslutna till det interna företags nätverket, som är de flesta användare. Nätverks infrastrukturen är alltså inbyggd kring de här elementen på avdelningens kontor är anslutna till huvud kontoret via _MPLS-nätverk (Multiprotocol etikett Switching)_ , och fjärran vändare måste ansluta till företags nätverket via VPN för att få åtkomst till både lokala slut punkter och Internet. I den här modellen passerar all trafik från fjärran vändare företags nätverket och dirigeras till moln tjänsten via en gemensam utförsel plats.
+Traditionella företagsnätverk är ofta utformade för att fungera säkert för en före molnmoln värld där de viktigaste data, tjänster, program finns lokalt och är direkt anslutna till det interna företagsnätverket, som är majoriteten av användarna. Nätverksinfrastrukturen byggs alltså runt dessa element i att filialkontor är anslutna till huvudkontoren via _MPLS-nätverk (Multiprotocol Label Switching),_ och fjärranslutna användare måste ansluta till företagsnätverket via ett VPN för åtkomst till både lokala slutpunkter och Internet. I den här modellen passerar all trafik från fjärranslutna användare företagsnätverket och dirigeras till molntjänsten via en gemensam utgående punkt.
 
-![Tvingande VPN-konfiguration](../media/vpn-split-tunneling/vpn-model-1.png)
+![Tvingad VPN-konfiguration](../media/vpn-split-tunneling/vpn-model-1.png)
 
-_Bild 2: en vanlig VPN-lösning för fjärran vändare där all trafik återförs till företagets nätverk oavsett mål_
+_Bild 2: En vanlig VPN-lösning för fjärranvändare där all trafik tvingas tillbaka till företagsnätverket oavsett destination_
 
-Eftersom organisationer flyttar data och program till molnet har den här modellen börjat bli mindre effektiv eftersom den snabbt blir besvärligt, dyrt och inte skalbart, markant påverkar nätverkets prestanda och effektivitet och begränsar organisationens möjligheter att anpassa sig till föränderliga behov. Flera Microsoft-kunder har rapporterat att det är några år sedan 80% av nätverks trafiken var till en intern destination, men i 2020 80% plus för trafik ansluts till en extern molnbaserade resurs.
+I och med att organisationer flyttar data och program till molnet har den här modellen börjat bli mindre effektiv eftersom den snabbt blir krånglig, dyr och oskadlig, vilket avsevärt påverkar nätverksprestandan och effektiviteten för användarna och begränsar organisationens möjlighet att anpassa sig efter föränderliga behov. Många Microsoft-kunder har rapporterat att för några år sedan gick 80 % av nätverkstrafiken till en intern destination, men 2020 ansluter 80 % plus trafik till en extern molnbaserad resurs.
 
-COVID-19 krisen har förvärrat detta problem för att kräva omedelbara lösningar för de flesta organisationer. Många kunder har upptäckt att den tvingande VPN-modellen inte är skalbar eller utför tillräckligt för 100%-scenarier som denna kris. Snabba lösningar krävs för att dessa organisationer ska fungera effektivt.
+CoVID-19-krislösningen har löst problemet så att det finns direkta lösningar för majoriteten av alla organisationer. Många kunder har upptäckt att vpn-modellen som tvingades inte är skalbar eller utför tillräckligt för 100 % fjärrarbetesscenarier som den här krissituation medförde. Det krävs snabba lösningar för att organisationen ska fortsätta att fungera effektivt.
 
-För Office 365-tjänsten har Microsoft utformat anslutnings kraven för tjänsten med detta problem på ett fyrkantigt sätt, där en fokuserad, tätt styrd och relativt statisk uppsättning av tjänst slut punkter kan optimeras mycket och snabbt så att den kan användas av den trafik som behövs för att kunna använda tjänsten.
+För Office 365-tjänsten har Microsoft utformat anslutningskraven för tjänsten med detta problem i åtanke, där en fokuserad, tätt kontrollerad och relativt statisk uppsättning slutpunkter kan optimeras mycket enkelt och snabbt så att användarna får tillgång till tjänsten och därmed minskar kraven på VPN-infrastrukturen så att den kan användas av trafik som fortfarande kräver det.
 
-Office 365 kategoriserar de slut punkter som krävs för Office 365 i tre kategorier: **optimera**, **Tillåt**och **standard**. **Optimera** slut punkter här och ha följande egenskaper:
+Office 365 kategoriserar de obligatoriska slutpunkterna för Office 365 i tre kategorier: **Optimera** **,** Tillåt och **Standard**. **Optimera** slutpunkter är vårt fokus här och har följande egenskaper:
 
-- Är Microsoft-ägda och hanterade slut punkter, som finns på Microsofts infrastruktur
-- Är avsedda för viktiga Office 365-arbets belastningar som Exchange Online, SharePoint Online, Skype för företag – Online och Microsoft Teams
-- Har IP-adresser tillhandahålls
-- Låg pris ändring och förväntas vara små i antal (för närvarande 20 IP-undernät)
-- Är hög volym och/eller fördröjnings känslig
-- Kan ha nödvändiga säkerhets element i tjänsten i stället för på infogade nätverk
-- Konto för omkring 70-80% av volymen för trafik till Office 365-tjänsten
+- Microsoft ägda och hanterade slutpunkter som finns på Microsofts infrastruktur
+- Är dedikerad till grundläggande Office 365-arbetsbelastningar som Exchange Online, SharePoint Online, Skype för företag – Online och Microsoft Teams
+- Har IP-adresser tillhandahållit
+- Låg förändringshastighet och förväntas vara liten i antal (för närvarande 20 IP-undernät)
+- Är känsliga för stora volymer och/eller svarstider
+- Kan ha obligatoriska säkerhetselement som tillhandahålls i tjänsten i stället för infogade i nätverket
+- Står för cirka 70–80 % av trafiken till Office 365-tjänsten
 
-Den här täta uppsättningen slut punkter kan delas ut från den tvingade VPN-tunneln och skickas säkert och direkt till Office 365-tjänsten via användarens lokala gränssnitt. Det kallas **dela tunnlar**.
+Denna tätt omfattande uppsättning slutpunkter kan delas upp ur vpn-tunneln och skickas säkert och direkt till Office 365-tjänsten via användarens lokala gränssnitt. Detta kallas delade **tunnlar.**
 
-Säkerhets element som DLP, AV-skydd, inloggningsautentisering och åtkomst kontroll kan skickas mycket mer effektivt mot dessa slut punkter i olika lager i tjänsten. När vi också avlastar trafik volymen från VPN-lösningen, frigör den VPN-kapaciteten för affärs kritisk trafik som fortfarande använder den. Dessutom bör behovet av många fall ta bort så att du kan gå igenom ett tids krävande och dyrt uppgraderings program för att hantera det nya sättet att fungera.
+Säkerhetselement som DLP- och AV-skydd, autentiserings- och åtkomstkontroll kan levereras mycket effektivare mot dessa slutpunkter på olika lager i tjänsten. Eftersom vi även dirigerar om huvuddelen av trafikvolymen från VPN-lösningen frigör vi VPN-kapaciteten för verksamhetskritisk trafik som fortfarande förlitar sig på den. Det bör också i många fall ta bort behovet av att gå igenom ett långt och kostsamt uppgraderingsprogram för att hantera detta nya sätt att hantera.
 
-![Information om delade tunnlar för tunnel](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
+![Information om split tunnel VPN-konfiguration](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
-_Bild 3: en lösning för VPN-delning med definierade Office 365-undantag direkt till tjänsten. All annan trafik återförs till företagets nätverk oavsett destination._
+_Bild 3: En VPN-delad tunnellösning med definierade Office 365-undantag som skickas direkt till tjänsten. All annan trafik tvingas tillbaka till företagsnätverket oavsett destination._
 
-Från ett säkerhets perspektiv har Microsoft en matris med säkerhetsfunktioner som kan användas för att ge liknande eller ännu bättre säkerhet än den som skickas via den lokala säkerhets stacken. Microsoft Security Teams blogg inlägg [alternativa sätt för säkerhetsexperter och det för att få moderna säkerhets kontroller i dagens unika scenarier för fjärrarbete](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/) har en tydlig översikt över tillgängliga funktioner och du hittar mer detaljerad vägledning i den här artikeln. Du kan också läsa om Microsofts implementering av uppdelad VPN-tunnel vid [körning på VPN: hur Microsoft sköter fjärrpersonalen](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv).
+Ur ett säkerhetsperspektiv har Microsoft en rad säkerhetsfunktioner som kan användas för att ge liknande eller till och med bättre säkerhet än de som levereras genom direktinspektion av lokala säkerhetsstackar. Microsoft Security-teamets blogginlägg Alternativa sätt för säkerhetsexperter och [IT-personal](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/) för att uppnå moderna säkerhetskontroller i dagens unika fjärrarbete scenarier har en tydlig sammanfattning av tillgängliga funktioner och du hittar mer detaljerad vägledning i den här artikeln. Du kan också läsa om Microsofts implementering av VPN-delade tunnlar vid körning av VPN: Hur Microsoft håller [sin fjärranslutna arbetsstyrka ansluten.](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
-I många fall kan den här implementeringen uppnås på flera timmar, vilket möjliggör en snabb lösning på ett av de mest näraste problemen med organisationer, medan de snabbt kan växla till fjärran sluten fjärråtkomst. Information om hur du skapar delade tunnlar finns i [Implementera VPN dela tunnlar för Office 365](microsoft-365-vpn-implement-split-tunnel.md).
+I många fall kan den här implementeringen uppnås på bara några timmar, vilket ger snabb lösning på ett av de mest tryckande problemen som organisationer ställs inför när de snabbt övergår till fullskalig fjärrarbete. Vägledning för implementering av VPN-delade tunnlar finns [i Implementera VPN-delade tunnlar för Office 365.](microsoft-365-vpn-implement-split-tunnel.md)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Implementera VPN-fildelning för Office 365](microsoft-365-vpn-implement-split-tunnel.md)
+[Implementera VPN-delade tunnlar för Office 365](microsoft-365-vpn-implement-split-tunnel.md)
 
-[Office 365 prestanda optimering för Kina-användare](microsoft-365-networking-china.md)
+[Office 365-prestandaoptimering för kinaanvändare](microsoft-365-networking-china.md)
 
-[Alternativa sätt för säkerhetsexperter och för att få moderna säkerhets kontroller i dagens unika scenarier för fjärrarbete (Microsoft Security Team-bloggen)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+[Alternativa sätt för säkerhetsexperter och IT-personal för att uppnå moderna säkerhetskontroller i dagens unika fjärrarbete (Microsofts blogg om säkerhetsteam)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
-[Förbättra VPN-prestanda på Microsoft: använda Windows 10-VPN-profiler för att tillåta anslutningar med automatisk anslutning](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
+[Förbättra VPN-prestanda på Microsoft: använda Windows 10 VPN-profiler för att tillåta automatiska anslutningar](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
 
-[Köra på VPN: hur Microsoft sköter fjärrarbets styrkan](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
+[Kör på VPN: Så här håller Microsoft sin fjärranslutna arbetsstyrka ansluten](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
 [Office 365 principer för nätverksanslutningar](microsoft-365-network-connectivity-principles.md)
 

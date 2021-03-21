@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Sammanfattning: Office 365 kräver internetanslutning. Slutpunkterna nedan bör vara tillgängliga för kunder med Office 365-abonnemang, inklusive Government Community Cloud (GCC).'
 hideEdit: true
-ms.openlocfilehash: 826da75ea4f6991a3291e8b1e36d644fb19a7704
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 1c0a2a486bf6964edc9b94fd670c96ade161cacd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50596962"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925274"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>URL-adresser och IP-adressintervall för Office 365
 
@@ -69,9 +69,9 @@ Data kolumnerna som visas är:
 
 [Hantera Office 365-slutpunkter](managing-office-365-endpoints.md)
 
-[Allmänna Microsoft Stream-slutpunkter](https://docs.microsoft.com/stream/network-overview#general-microsoft-stream-endpoints)
+[Allmänna Microsoft Stream-slutpunkter](/stream/network-overview#general-microsoft-stream-endpoints)
   
-[Övervaka Microsoft 365 anslutning](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity)
+[Övervaka Microsoft 365 anslutning](./monitor-connectivity.md)
 
 [Rot certifikatutfärdare (CA) och mellanliggande certifikatutfärdare i programsystemet från tredje part](../compliance/encryption-office-365-certificate-chains.md)
   

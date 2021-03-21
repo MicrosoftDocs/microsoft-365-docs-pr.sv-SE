@@ -19,39 +19,39 @@ f1.keywords:
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
-description: Använd PowerShell-cmdlets för centraliserad distribution för att hjälpa dig att distribuera och hantera Office-tillägg för din Microsoft 365-organisation.
-ms.openlocfilehash: 659f12d2533601c4b2165a95ddbf59ea521945b8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Använd PowerShell-cmdlets för centraliserad distribution för att distribuera och hantera Office-tillägg för Microsoft 365-organisationen.
+ms.openlocfilehash: 7872deedfcfe058f0a4ac63c489bbed139699d18
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694807"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924678"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Use the Centralized Deployment PowerShell cmdlets to manage add-ins
 
-Som en global administratör för Microsoft 365 kan du distribuera Office-tillägg till användare via funktionen centraliserad distribution (se [distribuera Office-tillägg i administrations centret](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)). Utöver distribution av Office-tillägg via administrations centret för Microsoft 365 kan du också använda Microsoft PowerShell. Installera [modulen för centraliserad O365-distribution för Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment). 
+Som global Microsoft 365-administratör kan du distribuera Office-tillägg till användare via funktionen för centraliserad distribution (se Distribuera [Office-tillägg i administrationscentret).](../admin/manage/manage-deployment-of-add-ins.md) Förutom att distribuera Office-tillägg via administrationscentret för Microsoft 365 kan du också använda Microsoft PowerShell. Installera [O365 Centralized Add-In Deployment Module för Windows PowerShell.](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment) 
 
-När du har laddat ned modulen öppnar du ett vanligt fönster i Windows PowerShell och kör följande cmdlet:
+När du har laddat ned modulen öppnar du ett vanligt Windows PowerShell-fönster och kör följande cmdlet:
 
 ```powershell
  Import-Module -Name O365CentralizedAddInDeployment
 ```
     
-## <a name="connect-using-your-admin-credentials"></a>Anslut med dina administratörs uppgifter
+## <a name="connect-using-your-admin-credentials"></a>Ansluta med dina autentiseringsuppgifter som administratör
 
 Innan du kan använda cmdlets för centraliserad distribution måste du logga in.
   
 1. Starta PowerShell.
     
-2. Anslut till PowerShell med företagets administratörs uppgifter. Kör följande cmdlet.
+2. Anslut till PowerShell med dina autentiseringsuppgifter som företagsadministratör. Kör följande cmdlet.
     
   ```powershell
   Connect-OrganizationAddInService
   ```
 
-3. På sidan **ange inloggnings uppgifter** anger du dina Microsoft 365-autentiseringsuppgifter för global administratör. Du kan också ange dina inloggnings uppgifter direkt i cmdleten. 
+3. På sidan **Ange autentiseringsuppgifter** anger du dina autentiseringsuppgifter som global Microsoft 365-administratör. Alternativt kan du ange dina autentiseringsuppgifter direkt i cmdleten. 
     
-    Kör följande cmdlet och ange dina autentiseringsuppgifter för företags administratör som ett PSCredential-objekt.
+    Kör följande cmdlet med dina autentiseringsuppgifter som företagsadministratör som ett PSCredential-objekt.
     
   ```powershell
   $secpasswd = ConvertTo-SecureString "MyPassword" -AsPlainText -Force
@@ -60,17 +60,17 @@ Innan du kan använda cmdlets för centraliserad distribution måste du logga in
   ```
 
 > [!NOTE]
-> Mer information om hur du använder PowerShell finns i [ansluta till Microsoft 365 med PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848585). 
+> Mer information om hur du använder PowerShell finns i [Ansluta till Microsoft 365 med PowerShell.](./connect-to-microsoft-365-powershell.md) 
   
-## <a name="upload-an-add-in-manifest"></a>Ladda upp ett tilläggs manifest
+## <a name="upload-an-add-in-manifest"></a>Ladda upp ett tilläggsmanifest
 
-Kör cmdleten **New-OrganizationAdd** för att ladda upp ett tilläggs manifest från en sökväg, som kan vara en fil Sök väg eller URL. I följande exempel visas en fil Sök väg för värdet för parametern  _ManifestPath_ . 
+Kör **cmdleten New-OrganizationAdd-In** för att ladda upp ett tilläggsmanifest från en sökväg, som antingen kan vara en filsökväg eller en URL. I följande exempel visas en filplats för parametervärdet för _ManifestPath._ 
   
 ```powershell
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
-Du kan också köra cmdleten **New-OrganizationAdd** för att ladda upp ett tillägg och tilldela det till användare eller grupper direkt genom att använda parametern  _medlemmar_ , enligt följande exempel. Avgränsa e-postadresserna för medlemmar med ett kommatecken. 
+Du kan också köra cmdleten **New-OrganizationAdd-In** för att ladda upp ett tillägg och tilldela det till användare eller grupper direkt med hjälp av parametern  _Members,_ enligt exemplet nedan. Avgränsa e-postadresserna till medlemmarna med kommatecken. 
   
 ```powershell
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
@@ -78,36 +78,36 @@ New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale '
 
 ## <a name="upload-an-add-in-from-the-office-store"></a>Ladda upp ett tillägg från Office Store
 
-Kör cmdleten **New-OrganizationAddIn** för att ladda upp en manifest fil från Office Store.
+Kör **cmdleten New-OrganizationAddIn** för att ladda upp ett manifest från Office Store.
   
-I följande exempel anger cmdleten **New-OrganizationAddIn** in resursid för ett tillägg för en plats och innehålls marknad för USA.
+I följande exempel anger **cmdleten New-OrganizationAddIn** TillgångsID för ett tillägg för en plats och en innehållsmarknad i USA.
   
 ```powershell
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-Om du vill veta värdet för  _resursid_ -parametern kan du kopiera den från URL-adressen till Office Store-webbplatsen för tillägget. AssetIds börjar alltid med "WA" följt av ett tal. I det föregående exemplet är källan för resursid-värdet för WA104099688 till exempel URL-adressen till Office Store för tillägget: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) .
+Om du vill ta reda på värdet för parametern  _AssetId_ kan du kopiera det från URL:en för Office Store-webbsidan för tillägget. Tillgångsid:er börjar alltid med "WA" följt av ett tal. I föregående exempel är källan för Tillgångsid-värdet WA104099688 Office Store-webbsides-URL:en för tillägget: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) .
   
-Värdena för parametern  _locale_ och parametern  _ContentMarket_ är identiska och anger det land/den region som du försöker installera tillägget från. Formatet är en-US, fr-FR. och så vidare. 
+Värdena för parametern  _Locale_ och  _parametern ContentMarket_ är identiska och anger landet/regionen som du försöker installera tillägget från. Formatet är en-US, fr-FR. och så vidare. 
   
 > [!NOTE]
-> Tillägg som laddas upp från Office Store uppdateras automatiskt inom några dagar efter den senaste uppdateringen som är tillgänglig i Office Store. 
+> Tillägg som laddats upp från Office Store uppdateras automatiskt inom några dagar efter det att den senaste uppdateringen blir tillgänglig i Office Store. 
   
 ## <a name="get-details-of-an-add-in"></a>Få information om ett tillägg
 
-Kör cmdleten **Get-OrganizationAddIn** som visas nedan för att få information om alla tillägg som laddas upp till klient organisationen, med ett tilläggs produkt-ID.
+Kör cmdleten **Get-OrganizationAddIn** enligt nedan för att få information om alla tillägg som laddats upp till klientorganisationen, inklusive tilläggets produkt-ID.
   
 ```powershell
 Get-OrganizationAddIn
 ```
 
-Kör cmdleten **Get-OrganizationAddIn** med ett värde för parametern  _ProductID_ för att ange vilket tillägg du vill hämta information om. 
+Kör **cmdleten Get-OrganizationAddIn** med ett värde för parametern  _ProductId_ för att ange vilket tillägg du vill hämta information för. 
   
 ```powershell
 Get-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-För att få fullständig information om alla tillägg plus de tilldelade användarna och grupperna får du till gång till cmdleten **Get-OrganizationAddIn** till format listen, enligt följande exempel.
+För att få fullständig information om alla tillägg plus tilldelade användare och grupper ska du pipa utdata från cmdlet:en **Get-OrganizationAddIn** till cmdleten Format-List, som du ser i följande exempel.
   
 ```powershell
 foreach($G in (Get-organizationAddIn)){Get-OrganizationAddIn -ProductId $G.ProductId | Format-List}
@@ -115,13 +115,13 @@ foreach($G in (Get-organizationAddIn)){Get-OrganizationAddIn -ProductId $G.Produ
 
 ## <a name="turn-on-or-turn-off-an-add-in"></a>Aktivera eller inaktivera ett tillägg
 
-Om du vill inaktivera ett tillägg så att användare och grupper som har tilldelats till det inte längre kommer att ha åtkomst kör du cmdleten **set-OrganizationAddIn** med parametern  _ProductID_ och parametern  _Enabled_  `$false` , enligt följande exempel.
+Om du vill inaktivera ett tillägg så att användare och grupper som har tilldelats det inte längre har åtkomst kör du cmdleten **Set-OrganizationAddIn** med parametern  _ProductId_ och parametern  _Enabled_ inställda på , som i följande  `$false` exempel.
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $false
 ```
 
-Om du vill aktivera ett tillägg igen kör du samma cmdlet med parametern  _Enabled_  `$true` .
+Om du vill aktivera tillägget igen kör du samma cmdlet med  _parametern Enabled_ inställd på  `$true` .
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $true
@@ -129,25 +129,25 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $
 
 ## <a name="add-or-remove-users-from-an-add-in"></a>Lägga till eller ta bort användare från ett tillägg
 
-Om du vill lägga till användare och grupper i ett specifikt tillägg kör du cmdleten **set-OrganizationAddInAssignments** med parametrarna  _ProductID_,  _Add_och  _members_ . Avgränsa e-postadresserna för medlemmar med ett kommatecken. 
+Om du vill lägga till användare och grupper i ett specifikt tillägg kör du cmdleten **Set-OrganizationAddInAssignments** med parametrarna _ProductId,_ _Add_ _och Members._ Avgränsa e-postadresserna till medlemmarna med kommatecken. 
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Add -Members 'KathyBonner@contoso.com','sales@contoso.com'
 ```
 
-Om du vill ta bort användare och grupper kör du samma cmdlet med parametern  _Remove_ . 
+Om du vill ta bort användare och grupper kör du samma cmdlet med _parametern Remove._ 
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Remove -Members 'KathyBonner@contoso.com','sales@contoso.com'
 ```
 
-Om du vill tilldela ett tillägg till alla användare i klient organisationen kör du samma cmdlet med parametern  _AssignToEveryone_ och värdet  `$true` .
+Om du vill tilldela ett tillägg till alla användare i klientorganisationen kör du samma cmdlet med parametern  _AssignToEveryone_ med värdet inställt på  `$true` .
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $true
 ```
 
-Om du inte vill tilldela ett tillägg till alla och återgå till tidigare tilldelade användare och grupper kan du köra samma cmdlet och inaktivera parametern  _AssignToEveryone_ genom att ange värdet till  `$false` .
+Om du inte vill tilldela ett tillägg till alla och återgå till de tidigare tilldelade användarna och grupperna, kan du köra samma cmdlet och inaktivera parametern  _AssignToEveryone_ genom att ange dess värde till  `$false` .
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $false
@@ -155,18 +155,18 @@ Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 
 ## <a name="update-an-add-in"></a>Uppdatera ett tillägg
 
-Om du vill uppdatera ett tillägg från ett manifest kör du cmdleten **set-OrganizationAddIn** med parametrarna  _ProductID_,  _ManifestPath_och  _locale_ , enligt följande exempel. 
+Om du vill uppdatera ett tillägg från ett manifest kör du **cmdleten Set-OrganizationAddIn** med parametrarna  _ProductId,_  _ManifestPath_ och  _Locale,_ enligt följande exempel. 
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
 > [!NOTE]
-> Tillägg som laddas upp från Office Store uppdateras automatiskt inom några dagar efter den senaste uppdateringen som är tillgänglig i Office Store. 
+> Tillägg som laddats upp från Office Store uppdateras automatiskt inom några dagar efter det att den senaste uppdateringen blir tillgänglig i Office Store. 
   
 ## <a name="delete-an-add-in"></a>Ta bort ett tillägg
 
-Om du vill ta bort ett tillägg kör du cmdleten **Remove-OrganizationAddIn** med parametern  _Produktnr_ enligt följande exempel. 
+Om du vill ta bort ett tillägg kör du **cmdleten Remove-OrganizationAddIn** med  _parametern ProductId,_ enligt följande exempel. 
   
 ```powershell
 Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
@@ -272,10 +272,8 @@ If an add-in has been deployed, it has to be removed from the cache in each comp
 
 ## <a name="get-detailed-help-for-each-cmdlet"></a>Få detaljerad hjälp för varje cmdlet
 
-Du kan se detaljerad hjälp för varje cmdlet genom att använda cmdleten Get-Help. Följande cmdlet innehåller till exempel detaljerad information om cmdlet Remove-OrganizationAddIn.
+Du kan se detaljerad hjälp för varje cmdlet med hjälp av cmdleten Get-help. Följande cmdlet ger till exempel detaljerad information om Remove-OrganizationAddIn cmdlet.
   
 ```powershell
 Get-help Remove-OrganizationAddIn -Full
 ```
-
-

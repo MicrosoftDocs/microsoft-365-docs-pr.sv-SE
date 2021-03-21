@@ -1,5 +1,5 @@
 ---
-title: Använda Office 365 innehålls leverans nätverk (CDN) med SharePoint Online
+title: Använda Office 365 Content Delivery Network (CDN) med SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -20,220 +20,220 @@ search.appverid:
 - MET150
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
-description: Lär dig hur du använder Office 365 Content Delivery Network (CDN) för att påskynda leveransen av dina SharePoint Online-till gångar.
-ms.openlocfilehash: 0ef7922f4e8881065f97a5fdeb4f21242c2b6467
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Lär dig hur du använder Nätverket för innehållsleverans i Office 365 (CDN) för att snabba på leveransen av dina SharePoint Online-tillgångar.
+ms.openlocfilehash: 6b740fc1429613627e0597dc6ecf2e150c015989
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694341"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924822"
 ---
-# <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Använda Office 365-innehålls leverans nätverk (CDN) med SharePoint Online
+# <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Använda Office 365 Content Delivery Network (CDN) med SharePoint Online
 
-Du kan använda det inbyggda Office-365 innehålls leverans nätverk (CDN) för att hantera statiska till gångar för bättre prestanda för SharePoint Online-sidorna. Office 365 CDN förbättrar prestandan genom att cachelagra statiska till gångar i webbläsare som begär dem, vilket hjälper dig att påskynda nedladdningen och minska svars tiden. Dessutom använder Office 365 CDN [http/2](https://en.wikipedia.org/wiki/HTTP/2) för förbättrad komprimering och http-försäljning. Office 365 CDN-tjänsten är inkluderad som en del av SharePoint Online-prenumerationen.
+Du kan använda det inbyggda nätverket för innehållsleverans i Office 365 (CDN) för statiska tillgångar för att få bättre prestanda för dina SharePoint Online-sidor. Office 365 CDN förbättrar prestandan genom att cachelagra statiska tillgångar närmare de webbläsare som begär dem, vilket hjälper till att snabba på hämtningar och minska svarstiden. Office 365 CDN använder också [HTTP/2-protokollet](https://en.wikipedia.org/wiki/HTTP/2) för förbättrad komprimering och HTTP-pipelining. Office 365 CDN-tjänsten ingår som en del av din SharePoint Online-prenumeration.
 
 > [!NOTE]
-> Office 365 CDN är bara tillgängligt för klient organisationer i **produktions** -molnet (världen över). Klient organisationer i Förenta staternas myndigheter, Kina och Tyskland stöder för närvarande inte Office 365 CDN.
+> Office 365 CDN är bara tillgängligt för innehavare i molnet **För** produktion (globalt). Klientorganisationen i molnen för myndigheter i USA, Kina och Tyskland stöder för närvarande inte Office 365 CDN.
 
-Office 365 CDN består av flera CDN som låter dig hantera fasta till gångar på flera platser, eller _ursprung_, och betjäna dem från globala nätverk med snabb hastighet. Beroende på vilken typ av innehåll du vill ha i Office 365 CDN kan du lägga till **offentliga** ursprung, **privata** ursprung eller båda. Se [välja om varje ursprung ska vara offentligt eller privat](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) för mer information om skillnaden mellan offentliga och privata ursprung.
+Office 365 CDN består av flera CDN-nätverk som gör att du kan lagra statiska tillgångar på flera platser, eller ursprung _,_ och hantera dem från globala nätverk med hög hastighet. Beroende på vilken typ av innehåll du vill ha i Office 365 CDN kan du lägga till offentliga **ursprung,** privata ursprung eller båda.  Se [Välj om varje ursprung ska vara offentligt eller](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) privat för mer information om skillnaden mellan offentliga och privata ursprung.
 
-![Office 365 CDN-koncept diagram](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN-koncept diagram")
+![Konceptuellt diagram för Office 365 CDN](../media/O365-CDN/o365-cdn-flow-transparent.svg "Konceptuellt diagram för Office 365 CDN")
 
-Om du redan är bekant med hur CDN fungerar behöver du bara utföra några steg för att aktivera Office 365 CDN för din klient organisation. I det här avsnittet beskrivs hur. Läs mer om hur du kommer igång med dina statiska till gångar.
+Om du redan är bekant med hur CDNs fungerar behöver du bara utföra några få steg för att aktivera Office 365 CDN för din klientorganisation. I det här avsnittet beskrivs hur du gör. Läs vidare för information om hur du kommer igång med värdskap för dina statiska tillgångar.
 
 > [!TIP]
-> Det finns andra Microsoft-värdbaserade CDN som kan användas med Office 365 för specialiserade användnings scenarier, men diskuteras inte i det här avsnittet eftersom de ligger utanför omfattningen av Office 365 CDN. Mer information finns i [andra Microsoft-CDN](content-delivery-networks.md#other-microsoft-cdns).
+> Det finns andra CDN med Microsoft-värd som kan användas med Office 365 för särskilda användningsscenarier, men som inte diskuteras i det här avsnittet eftersom de faller utanför Office 365 CDN. Mer information finns i Andra [Microsoft CDN.](content-delivery-networks.md#other-microsoft-cdns)
 
- **Gå tillbaka till [nätverks planering och prestanda justering för Office 365](https://aka.ms/tune).**
+ **Gå tillbaka till [Nätverksplanering och prestandajustering för Office 365.](./network-planning-and-performance.md)**
 
 ## <a name="overview-of-working-with-the-office-365-cdn-in-sharepoint-online"></a>Översikt över hur du arbetar med Office 365 CDN i SharePoint Online
 
-Följ de här grundläggande stegen för att konfigurera Office 365 CDN för din organisation:
+Om du vill konfigurera Office 365 CDN för organisationen följer du de här grundläggande stegen:
 
 + [Planera för distribution av Office 365 CDN](use-microsoft-365-cdn-with-spo.md#plan-for-deployment-of-the-office-365-cdn)
 
-  + [Avgöra vilka statiska till gångar som du vill använda i CDN](use-microsoft-365-cdn-with-spo.md#CDNAssets).
-  + [Bestäm var du vill lagra dina till gångar](use-microsoft-365-cdn-with-spo.md#CDNStoreAssets). Denna plats kan vara en SharePoint-webbplats, ett bibliotek eller en mapp och kallas för ett _ursprung_.
-  + [Välj om varje ursprung ska vara offentligt eller privat](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate). Du kan lägga till flera ursprung för både offentliga och privata typer.
+  + [Bestäm vilka statiska tillgångar du vill ha på CDN.](use-microsoft-365-cdn-with-spo.md#CDNAssets)
+  + [Bestäm var du vill lagra tillgångarna](use-microsoft-365-cdn-with-spo.md#CDNStoreAssets). Platsen kan vara en webbplats, ett bibliotek eller en mapp i SharePoint och kallas _ursprung._
+  + [Välj om varje ursprung ska vara offentligt eller privat.](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) Du kan lägga till flera ursprung för både offentliga och privata typer.
 
-+ Konfigurera och konfigurera CDN med antingen PowerShell eller SharePoint Online-CLI
++ Konfigurera och konfigurera CDN med hjälp av antingen PowerShell eller SharePoint Online CLI
 
-  + [Konfigurera och konfigurera CDN genom att använda SharePoint Online Management Shell](use-microsoft-365-cdn-with-spo.md#CDNSetupinPShell)
+  + [Konfigurera och konfigurera CDN med hjälp av SharePoint Online Management Shell](use-microsoft-365-cdn-with-spo.md#CDNSetupinPShell)
   + [Konfigurera och konfigurera CDN med hjälp av PnP PowerShell](use-microsoft-365-cdn-with-spo.md#CDNSetupinPnPPosh)
-  + [Konfigurera och konfigurera CDN med hjälp av Office 365-CLI](use-microsoft-365-cdn-with-spo.md#CDNSetupinCLI)
+  + [Konfigurera och konfigurera CDN med hjälp av Office 365 CLI](use-microsoft-365-cdn-with-spo.md#CDNSetupinCLI)
 
-  När du är klar med det här steget har du:
+  När du slutför det här steget har du:
 
-  + Aktiverat CDN för din organisation.
-  + Lade till dina ursprung och identifierar varje ursprung som offentligt eller privat.
+  + Aktiverat CDN för organisationen.
+  + Lagt till ursprungen och identifierar varje ursprung som offentligt eller privat.
 
-När du är klar med konfigurationen kan du [Hantera Office 365 CDN](use-microsoft-365-cdn-with-spo.md#CDNManage) över tiden genom att:
+När du är klar med konfigurationen kan du hantera [Office 365 CDN](use-microsoft-365-cdn-with-spo.md#CDNManage) över tid genom att:
   
-+ Lägga till, uppdatera och ta bort till gångar
++ Lägga till, uppdatera och ta bort tillgångar
 + Lägga till och ta bort ursprung
 + Konfigurera CDN-principer
-+ Vid behov kan du avaktivera CDN
++ Inaktivera CDN om det behövs
 
-Slutligen kan du läsa om hur du [använder CDN-till](use-microsoft-365-cdn-with-spo.md#using-your-cdn-assets) gångar från både offentliga och privata ursprung.
+Slutligen kan du läsa [Använda dina CDN-tillgångar för](use-microsoft-365-cdn-with-spo.md#using-your-cdn-assets) att lära dig mer om hur du kommer åt dina CDN-tillgångar från både offentliga och privata ursprung.
 
-Se [fel sökning av Office 365 CDN](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting) för vägledning för lösning av vanliga problem.
+Mer information om hur du löser vanliga problem finns i Felsöka [Office 365 CDN.](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting)
 
 ## <a name="plan-for-deployment-of-the-office-365-cdn"></a>Planera för distribution av Office 365 CDN
 
-Innan du distribuerar Office 365 CDN för din Office 365-klient bör du tänka på följande faktorer som en del av planerings processen.
+Innan du distribuerar Office 365 CDN för Office 365-klienten bör du tänka på följande faktorer som en del av planeringsprocessen.
 
-  + [Avgöra vilka statiska till gångar som du vill använda i CDN](use-microsoft-365-cdn-with-spo.md#CDNAssets)
-  + [Bestämma var du vill spara till gångarna](use-microsoft-365-cdn-with-spo.md#CDNStoreAssets)
-  + [Välja om varje ursprung ska vara offentligt eller privat](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)
+  + [Bestäm vilka statiska tillgångar du vill ha på CDN](use-microsoft-365-cdn-with-spo.md#CDNAssets)
+  + [Bestäm var du vill lagra tillgångarna](use-microsoft-365-cdn-with-spo.md#CDNStoreAssets)
+  + [Välj om varje ursprung ska vara offentligt eller privat](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)
 
 <a name="CDNAssets"> </a>
-### <a name="determine-which-static-assets-you-want-to-host-on-the-cdn"></a>Avgöra vilka statiska till gångar som du vill använda i CDN
+### <a name="determine-which-static-assets-you-want-to-host-on-the-cdn"></a>Bestäm vilka statiska tillgångar du vill ha på CDN
 
-I allmänhet är CDN mest effektiva för att vara värd för _fasta till gångar_eller till gångar som inte ändras ofta. En bra tumregel är att identifiera filer som uppfyller vissa eller samtliga av dessa villkor:
+I allmänhet är CDN mest effektiva för värd _för statiska_ tillgångar , eller tillgångar som inte ändras så ofta. En bra tumregel är att identifiera filer som uppfyller vissa eller alla dessa villkor:
 
-+ Statiska filer som bäddats in på en sida (till exempel skript och bilder) som kan ha avsevärda effekter på sid inläsnings tider
-+ Stora filer, till exempel körbara filer och installationsfiler
-+ Resurs bibliotek med stöd för klientbaserade koder
++ Statiska filer som är inbäddade i en sida (till exempel skript och bilder) som kan ha en betydande stegvis inverkan på sidornas inläsningstider
++ Stora filer som körbara filer och installationsfiler
++ Resursbibliotek med stöd för klientkod
 
-Till exempel kan små filer som är upprepade gånger begärda med webbplats bilder och skript förbättra prestandan för webbplats åter givningen och inkrementellt minska belastningen på SharePoint Online-webbplatserna när du lägger till dem i ett CDN-ursprung. Större filer, till exempel körbara installations program, kan hämtas från CDN och ger en positiv effekt som påverkar belastningen på SharePoint Online-webbplatsen även om de inte är tillgängliga så ofta.
+Till exempel kan små filer som upprepade gånger efterfrågas, t.ex. webbplatsbilder och skript, avsevärt förbättra prestanda för webbplatsåtergivning och stegvis minska belastningen på SharePoint Online-webbplatser när du lägger till dem i ett CDN-ursprung. Större filer, till exempel körbara installationsfiler, kan laddas ned från CDN, vilket ger positiv prestanda påverkan och därefter en minskning av belastningen på SharePoint Online-webbplatsen, även om de inte används så ofta.
 
-Förbättring av prestanda på en fil är beroende av många faktorer, inklusive klientens närhet till närmaste CDN-slutpunkt, tillfälliga förhållanden i det lokala nätverket. Många statiska filer är ganska små och kan laddas ned från Office 365 på mindre än en sekund. En webb sida kan innehålla många inbäddade filer med en kumulativ nedladdnings tid på flera sekunder. Om du betjänar dessa filer från CDN kan det avsevärt minska sid inläsnings tiden. Se [vilka resultat vinster ett CDN tillhandahåller?](content-delivery-networks.md#what-performance-gains-does-a-cdn-provide) för ett exempel.
+Prestandaförbättringar per fil beror på många faktorer, inklusive klientens närhet till närmaste CDN-slutpunkt, tillfälliga villkor i det lokala nätverket och så vidare. Många statiska filer är ganska små och kan laddas ned från Office 365 på mindre än en sekund. En webbsida kan emellertid innehålla många inbäddade filer med en kumulativ nedladdningstid på flera sekunder. Att använda dessa filer från CDN kan avsevärt minska inläsningstiden för sidan. Se [Vilka prestandaförbättringar tillhandahåller ett CDN?](content-delivery-networks.md#what-performance-gains-does-a-cdn-provide) i ett exempel.
 
 <a name="CDNStoreAssets"> </a>
-### <a name="determine-where-you-want-to-store-your-assets"></a>Bestämma var du vill spara till gångarna
+### <a name="determine-where-you-want-to-store-your-assets"></a>Bestäm var du vill lagra tillgångarna
 
-CDN hämtar dina till gångar från en plats som kallas _ursprung_. Ett ursprung kan vara en SharePoint-webbplats, ett dokument bibliotek eller en mapp som är tillgänglig via en URL-adress. Du har stor flexibilitet när du anger ursprung för din organisation. Du kan till exempel ange flera ursprung eller ett enda ursprung där du vill lägga till alla dina CDN-till gångar. Du kan välja att ha både offentliga eller privata ursprung för organisationen. De flesta organisationer väljer att implementera en kombination av båda.
+CDN hämtar dina tillgångar från en plats som kallas för _ursprung._ Ett ursprung kan vara en SharePoint-webbplats, ett dokumentbibliotek eller en mapp som kan nås via en URL. Du har stor flexibilitet när du anger ursprung för organisationen. Du kan till exempel ange flera ursprung eller ett enda ursprung där du vill placera alla CDN-tillgångar. Du kan välja att ha både offentliga och privata ursprung för organisationen. De flesta organisationer väljer att implementera en kombination av de två.
 
-Du kan skapa en ny behållare för dina ursprung, till exempel mappar eller dokument bibliotek, och lägga till filer som du vill göra tillgängliga från CDN. Det här är en bra metod om du har en specifik uppsättning till till gångar som du vill ska vara tillgängliga från CDN och bara vill begränsa uppsättningen av CDN-till gångar till filerna i behållaren.
+Du kan skapa en ny behållare för ursprungen, till exempel mappar eller dokumentbibliotek, och lägga till filer som du vill göra tillgängliga från CDN. Det här är ett bra sätt om du har en särskild uppsättning tillgångar som du vill ska vara tillgänglig från CDN, och vill begränsa uppsättningen CDN-tillgångar till endast de filerna i behållaren.
 
-Du kan också konfigurera en befintlig webbplats samling, en webbplats, ett bibliotek eller en mapp som ursprung, som gör alla godkända till gångar i behållaren tillgängliga från CDN. Innan du lägger till en befintlig behållare som ett ursprung är det viktigt att se till att du är medveten om dess innehåll och behörigheter så att du inte oavsiktligt exponerar till gångar för anonym åtkomst eller obehöriga användare.
+Du kan också konfigurera en befintlig webbplatssamling, webbplats, bibliotek eller mapp som ursprung, vilket gör alla kvalificerade tillgångar i behållaren tillgänglig från CDN. Innan du lägger till en befintlig behållare som ursprung är det viktigt att du är medveten om dess innehåll och behörigheter så att du inte oavsiktligt visar tillgångar för anonym åtkomst eller obehöriga användare.
 
-Du kan definiera _CDN-principer_ för att exkludera innehåll i ursprungen från CDN. CDN-principer exkluderar till gångar i offentliga eller privata ursprung utifrån attribut som _filtyp_ och _webbplats klassificering_och tillämpas på alla ursprung i CdnType (privat eller offentlig) som du anger i principen. Om du till exempel lägger till ett privat ursprung som består av en webbplats som innehåller flera under webbplatser kan du definiera en princip som utesluter webbplatser som är markerade som **hemliga** så att innehållet från webbplatser med den klassificeringen inte kommer att betjänas från CDN. Policyn gäller för innehåll från _alla_ privata ursprung som du har lagt till i CDN.
+Du kan definiera _CDN-principer_ för att utesluta innehåll i dina ursprung från CDN. CDN-principer utesluter tillgångar i offentliga eller  privata ursprung efter attribut, till exempel filtyp och webbplatsklassificering, och tillämpas på alla ursprung för den CdnType (privat eller offentlig) du anger i principen. Om du till exempel lägger till ett privat ursprung som består av en webbplats som  innehåller flera underwebbplatser kan du definiera en princip för att utesluta webbplatser som markerats som konfidentiellt, så att innehåll från webbplatser med den klassificering som tillämpas inte kommer att användas från CDN. Principen gäller för innehåll från alla _privata ursprung_ som du har lagt till i CDN.
   
-Kom ihåg att det större antalet ursprung, desto större är effekten på den tid det tar för CDN-tjänsten att bearbeta förfrågningar. Vi rekommenderar att du begränsar antalet ursprung så mycket som möjligt.
+Tänk på att ju större antal ursprung, desto större inverkan på tiden det tar CDN-tjänsten att bearbeta begäranden. Vi rekommenderar att du så mycket som möjligt begränsar antalet ursprung.
   
 <a name="CDNOriginChoosePublicPrivate"> </a>
-### <a name="choose-whether-each-origin-should-be-public-or-private"></a>Välja om varje ursprung ska vara offentligt eller privat
+### <a name="choose-whether-each-origin-should-be-public-or-private"></a>Välj om varje ursprung ska vara offentligt eller privat
 
-När du identifierar ett ursprung anger du om det ska göras _offentligt_ eller _privat_. Åtkomst till CDN-till gångar i offentliga ursprung är anonymt och CDN-innehåll i privata ursprung skyddas genom dynamiskt genererade token för ökad säkerhet. Oavsett vilket alternativ du väljer gör Microsoft all den tungan när det gäller administrationen av själva CDN. Du kan också ändra dina tankar senare, efter att du har konfigurerat CDN och identifierat dina ursprung.
+När du identifierar ett ursprung anger du om det ska göras _offentligt eller_ _privat._ Åtkomst till CDN-tillgångar i offentliga ursprung är anonym och CDN-innehåll i privata ursprung skyddas av dynamiskt genererade token för större säkerhet. Oavsett vilket alternativ du väljer gör Microsoft allt grovjobb åt dig när det gäller administration av själva CDN. Du kan också ändra dig senare, när du har konfigurerat CDN och identifierat dina ursprung.
 
-Både offentliga och privata alternativ ger liknande prestanda vinster men alla har unika attribut och fördelar.
+Både offentliga och privata alternativ ger liknande prestandaförbättringar, men var och en har unika attribut och fördelar.
 
-**Offentliga** ursprung i Office 365 CDN är tillgängliga anonymt och värdbaserade till gångar kan nås av alla som har URL-adressen till till gången. Eftersom åtkomsten till innehåll i offentliga ursprung är anonym bör du endast använda dem för att cachelagra icke-känsligt allmänt innehåll, till exempel JavaScript-filer, skript, ikoner och bilder.
+**Offentliga** ursprung i Office 365 CDN är anonymt tillgängliga och värdtillgångar kan nås av alla som har URL-adressen till tillgången. Eftersom åtkomsten till innehåll i offentliga ursprung är anonym bör du bara använda dem för att cachelagra icke-känsligt allmänt innehåll som javascript-filer, skript, ikoner och bilder.
 
-**Privata** ursprung i Office 365 CDN ger privat åtkomst till användar innehåll som SharePoint Online-dokumentbibliotek, webbplatser och grafik. Åtkomst till innehåll i privata ursprung skyddas genom dynamiskt genererade token så att användare som har behörighet till det ursprungliga dokument biblioteket eller lagrings platsen endast kan komma åt det. Privata ursprung i Office 365 CDN kan endast användas till till gångar i privata ursprung genom omdirigering från din SharePoint Online-klient.
+**Privata** ursprung i Office 365 CDN ger privat åtkomst till användarinnehåll, till exempel dokumentbibliotek, webbplatser och egna bilder i SharePoint Online. Åtkomst till innehåll i privata ursprung skyddas av dynamiskt genererade tokens så att användare med behörighet till det ursprungliga dokumentbiblioteket eller lagringsplatsen endast kan komma åt det. Privata ursprung i Office 365 CDN kan endast användas för SharePoint Online-innehåll och du kan bara komma åt tillgångar i privata ursprung genom omdirigering från SharePoint Online-klienten.
 
-Du kan läsa mer om hur CDN får åtkomst till till gångar i ett privat ursprung i [använda till gångar i privata ursprung](use-microsoft-365-cdn-with-spo.md#using-assets-in-private-origins).
+Du kan läsa mer om hur CDN-åtkomst till tillgångar i ett privat ursprung fungerar i [Använda tillgångar i privata ursprung.](use-microsoft-365-cdn-with-spo.md#using-assets-in-private-origins)
 
-#### <a name="attributes-and-advantages-of-hosting-assets-in-public-origins"></a>Attribut och fördelar med att låta till gångar i offentliga ursprung
+#### <a name="attributes-and-advantages-of-hosting-assets-in-public-origins"></a>Attribut och fördelar med att ha tillgångar i offentliga ursprung
   
-+ Till gångar som är utsatta med offentligt ursprung är tillgängliga för alla anonymt.
++ Tillgångar som exponeras i en offentlig tillgång är åtkomliga för alla anonymt.
     > [!IMPORTANT]
-    > Du bör aldrig placera resurser som innehåller användar information eller anses vara känsliga för organisationen i ett offentligt ursprung.
-+ Om du tar bort en till gång från ett offentligt ursprung kan till gången fortsätta vara tillgänglig i upp till 30 dagar från cachen; Vi kommer inte att validera länkar till till gången i CDN inom 15 minuter.
-+ När du är värd för formatmallar (CSS-filer) i ett offentligt ursprung kan du använda relativa sökvägar och URI: er i koden. Det innebär att du kan referera till platsen för bakgrunds bilder och andra objekt i förhållande till den plats där den som ringer till till gången finns.
-+ Vi rekommenderar inte att du använder en fast kod för ett offentligt ursprung. Anledningen till detta är att om åtkomsten till CDN inte är tillgänglig kommer URL-adressen inte automatiskt att lösas till din organisation i SharePoint Online och kan leda till felaktiga länkar och andra fel.
-+ De standard fil typer som ingår i offentliga ursprung är. CSS,. EOT,. gif,. ico,. jpeg,. jpg,. js,. map,. png,. SVG,. ttf,. WOFF och. woff2. Du kan ange Ytterligare filtyper.
-+ Du kan konfigurera en princip för att exkludera till gångar som identifieras av webbplats klassificeringar som du anger. Du kan till exempel välja att exkludera alla till gångar som är markerade som "konfidentiella" eller "begränsade" även om de är en tillåten filtyp och är placerade i ett offentligt ursprung.
+    > Du ska aldrig placera resurser som innehåller användarinformation eller som anses vara känsliga för organisationen i ett offentligt ursprung.
++ Om du tar bort en tillgång från ett offentligt ursprung kan tillgången fortsätta att vara tillgänglig i upp till 30 dagar från cachen. Länkar till tillgången blir ogiltiga i CDN inom 15 minuter.
++ När du är värd för formatmallar (CSS-filer) i ett offentligt ursprung kan du använda relativa sökvägar och URI:er i koden. Det innebär att du kan referera till platsen för bakgrundsbilder och andra objekt i förhållande till platsen för tillgången som anropar den.
++ Du kan skapa URL-adressen för ett offentligt ursprung, men du bör vara försiktig och se till att du använder sidkontextegenskapen och följer instruktionerna för att göra det. Anledningen är att om åtkomsten till CDN blir otillgänglig matchas inte URL-adressen automatiskt med din organisation i SharePoint Online och kan leda till brutna länkar och andra fel. URL:en kan också komma att ändras. Det är därför den inte bara ska vara hårdkodad till sitt nuvarande värde.
++ Standardfiltyperna som ingår för offentliga ursprung är .css, .eot, .gif, .ico, .jpeg, .jpg, .js, .map, .png, .svg, .ttf, .woff och .woff2. Du kan ange ytterligare filtyper.
++ Du kan konfigurera en princip för att utesluta tillgångar som har identifierats av webbplatsklassificeringarna som du anger. Du kan till exempel välja att utesluta alla tillgångar som markeras som "konfidentiell" eller "begränsad" även om de är en tillåten filtyp och finns i ett offentligt ursprung.
 
-#### <a name="attributes-and-advantages-of-hosting-assets-in-private-origins"></a>Attribut och fördelar med att vara värd för till gångar i privata ursprung
+#### <a name="attributes-and-advantages-of-hosting-assets-in-private-origins"></a>Attribut och fördelar med att ha tillgångar i privata ursprung
 
-+ Privata ursprung kan endast användas för SharePoint Online-till gångar.
-+ Användare kan bara komma åt till gångar från ett privat ursprung om de har behörighet att komma åt behållaren. Anonym åtkomst till dessa till gångar förhindras.
-+ Till gångar i privata ursprung måste hänvisas till i SharePoint Online-klient organisationen. Direkt åtkomst till privata CDN-objekt fungerar inte.
-+ Om du tar bort en till gång från privat ursprung kan till gången fortsätta vara tillgänglig för upp till en timme från cachen; Vi kommer att validera länkar till till gången i CDN inom 15 minuter efter det att du har avlägsnat den.
-+ De standard fil typer som ingår i privata ursprung är. gif,. ico,. jpeg,. jpg,. js och. png. Du kan ange Ytterligare filtyper.
-+ Precis som med offentliga ursprung kan du konfigurera en princip för att exkludera till gångar som identifieras av webbplats klassificeringar som du anger även om du använder jokertecken för att inkludera alla till gångar i en mapp eller ett dokument bibliotek.
++ Privata ursprung kan endast användas för SharePoint Online-tillgångar.
++ Användare kan bara komma åt tillgångarna från ett privat ursprung om de har behörighet att komma åt behållaren. Anonym åtkomst till tillgångarna förhindras.
++ Tillgångar i privata ursprung måste hänvisas från SharePoint Online-klienten. Direkt åtkomst till privata CDN-tillgångar fungerar inte.
++ Om du tar bort en tillgång från det privata ursprunget kan tillgången fortsätta att vara tillgänglig i upp till en timme från cachen. Länkarna till tillgången blir ogiltiga i CDN inom 15 minuter efter att tillgången tas bort.
++ Standardfiltyperna som ingår för privata ursprung är .gif, .ico, .jpeg, .jpg, .js och .png. Du kan ange ytterligare filtyper.
++ Precis som för offentliga ursprung kan du konfigurera en princip för att utesluta tillgångar som har identifierats av webbplatsklassificeringarna som du anger även om du använder jokertecken för att inkludera alla tillgångar i en mapp eller ett dokumentbibliotek.
 
-Mer information om varför du ska använda Office 365 CDN, allmänna CDN-begreppen och andra Microsoft-CDN som du kan använda med Office 365-klient organisationen finns i avsnittet [innehålls leverans nätverk](content-delivery-networks.md).
+Mer information om varför du använder Office 365 CDN, allmänna CDN-begrepp och andra Microsoft CDN-namn som du kan använda med din Office 365-klientorganisation finns i [Nätverk](content-delivery-networks.md)för innehållsleverans.
 
-### <a name="default-cdn-origins"></a>Standard ursprung för CDN
+### <a name="default-cdn-origins"></a>Standard-CDN-ursprung
 
-Om du inte anger något annat kommer Office 365 att ställa in vissa standard ursprung när du aktiverar Office 365 CDN. Om du inte har avaktiverat dem kan du lägga till dessa ursprung när du har slutfört installationen. Om du inte förstår följderna av att hoppa över inställningen av standard ursprung och har särskilda skäl för att göra det, bör du tillåta att dessa skapas när du aktiverar CDN.
+Om du inte anger något annat uppsättningar Office 365 några standard ursprung åt dig när du aktiverar Office 365 CDN. Om du först väljer att inte tillhandahålla dem kan du lägga till dessa ursprung när du har slutfört konfigurationen. Om du inte förstår konsekvenserna av att hoppa över konfigurationen av standard ursprung och har en särskild orsak till att göra det, bör du tillåta att de skapas när du aktiverar CDN.
   
-Standard privata CDN-ursprung:
+Privata CDN-standardsprung:
   
 + \*/userphoto.aspx
 + \*/siteassets
 
-Standard allmänna CDN-ursprung:
+Offentliga CDN-standardsprung:
   
 + \*/masterpage
-+ \*/Style-bibliotek
++ \*/style library
 + \*/clientsideassets
 
 > [!NOTE]
-> _clientsideassets_ är ett offentligt standard ursprung som lagts till i Office 365 CDN-tjänsten i december 2017. Detta måste finnas för att SharePoint Framework-lösningarna i CDN ska fungera. Om du har aktiverat Office 365 CDN före den 2017 december, eller om du hoppat över installationen av standard ursprung när du aktiverade CDN, kan du manuellt lägga till det här ursprunget. Mer information finns i min webbdel för [klient-eller SharePoint-ramverk fungerar inte](use-microsoft-365-cdn-with-spo.md#my-client-side-web-part-or-sharepoint-framework-solution-isnt-working).
+> _clientsideassets_ är ett offentligt standard ursprung som lades till i Office 365 CDN-tjänsten i december 2017. Det här ursprunget måste finnas för att SharePoint Framework-lösningar i CDN ska fungera. Om du aktiverade Office 365 CDN innan december 2017, eller om du hoppade över konfigurationen av standard ursprung när du aktiverade CDN, kan du manuellt lägga till det här ursprunget. Mer information finns i [Min klientwebbdel eller SharePoint Framework-lösning fungerar inte.](use-microsoft-365-cdn-with-spo.md#my-client-side-web-part-or-sharepoint-framework-solution-isnt-working)
 
 <a name="CDNSetupinPShell"> </a>
 ## <a name="set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell"></a>Konfigurera och konfigurera Office 365 CDN med hjälp av SharePoint Online Management Shell
 
-Procedurerna i det här avsnittet kräver att du använder SharePoint Online Management Shell för att ansluta till SharePoint Online. Anvisningar finns i [ansluta till SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
+Procedurerna i det här avsnittet kräver att du använder SharePoint Online Management Shell för att ansluta till SharePoint Online. Instruktioner finns i [Ansluta till SharePoint Online PowerShell.](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-Utför de här stegen för att konfigurera och konfigurera CDN så att dina till gångar i SharePoint Online används med SharePoint Online Management Shell.
+Utför de här stegen för att konfigurera och konfigurera CDN som värd för dina tillgångar i SharePoint Online med SharePoint Online Management Shell.
 
 <details>
   <summary>Klicka för att Visa</summary>
 
-### <a name="enable-your-organization-to-use-the-office-365-cdn"></a>Aktivera din organisation för att använda Office 365 CDN
+### <a name="enable-your-organization-to-use-the-office-365-cdn"></a>Aktivera organisationen för att använda Office 365 CDN
 
-Innan du ändrar status för klient organisationen måste du hämta den aktuella statusen för privat CDN-konfigurationen i Office 365-klient organisationen. Anslut till klient organisationen med SharePoint Online Management Shell:
+Innan du gör ändringar i klientorganisationens CDN-inställningar bör du hämta aktuell status för den privata CDN-konfigurationen i Office 365-klienten. Ansluta till klientorganisationen med SharePoint Online Management Shell:
 
 ``` powershell
 Connect-SPOService -Url https://contoso-admin.sharepoint.com
 ```
 
-Använd cmdleten **Get-SPOTenantCdnEnabled** för att hämta status inställningar för CDN från klient organisationen:
+Använd nu cmdleten **Get-SPOTenantCdnEnabled** till att hämta CDN-statusinställningarna från klientorganisationen:
 
 ``` powershell
 Get-SPOTenantCdnEnabled -CdnType <Public | Private>
 ```
 
-Statusen för CDN för angiven CdnType kommer att matas ut till skärmen.
+Status för CDN för den angivna CdnType matas ut på skärmen.
 
-Använd cmdleten **set-SPOTenantCdnEnabled** för att göra det möjligt för organisationen att använda Office 365 CDN. Du kan göra det möjligt för organisationen att använda offentliga ursprung, privata ursprung eller båda samtidigt. Du kan också konfigurera CDN för att hoppa över inställningen av standard ursprung när du aktiverar det. Du kan alltid lägga till dessa ursprung senare enligt beskrivningen i det här avsnittet.
+Använd cmdleten **Set-SPOTenantCdnEnabled** till att aktivera organisationen för att använda Office 365 CDN. Du kan aktivera organisationen för att använda offentliga ursprung, privata ursprung eller båda samtidigt. Du kan också konfigurera CDN att hoppa över konfigurationen av standard ursprung när du aktiverar det. Du kan alltid lägga till dessa ursprung senare enligt beskrivningen i det här avsnittet.
   
-I Windows PowerShell för SharePoint Online:
+I Windows Powershell för SharePoint Online:
 
 ``` powershell
 Set-SPOTenantCdnEnabled -CdnType <Public | Private | Both> -Enable $true
 ```
 
-Om du till exempel vill aktivera organisationen att använda både offentliga och privata ursprung skriver du följande kommando:
+Om du till exempel vill aktivera organisationen för att använda både offentliga och privata ursprung skriver du följande kommando:
 
 ``` powershell
 Set-SPOTenantCdnEnabled -CdnType Both -Enable $true
 ```
 
-Om du vill göra det möjligt för organisationen att använda både offentliga och privata ursprung men hoppa till standard ursprungen skriver du följande kommando:
+Om du vill aktivera organisationen för att använda både offentliga och privata ursprung men hoppa över att konfigurera standard ursprung skriver du följande kommando:
 
 ``` powershell
 Set-SPOTenantCdnEnabled -CdnType Both -Enable $true -NoDefaultOrigins
 ```
 
-Se [standard ursprung för CDN](use-microsoft-365-cdn-with-spo.md#default-cdn-origins) för information om ursprung som är etablerade som standard när du aktiverar Office 365 CDN och den potentiella effekten av att hoppa över inställningen av standard ursprung.
+Mer information [om ursprung som etableras](use-microsoft-365-cdn-with-spo.md#default-cdn-origins) som standard när du aktiverar Office 365 CDN finns i Standard-CDN-ursprung och eventuell inverkan med att hoppa över konfigurationen av standard ursprung.
 
-Om du vill aktivera organisationen att använda offentliga ursprung skriver du följande kommando:
+Om du vill aktivera organisationen för att använda offentliga ursprung skriver du följande kommando:
 
 ``` powershell
 Set-SPOTenantCdnEnabled -CdnType Public -Enable $true
 ```
 
-Om du vill aktivera din organisation att använda privata ursprung skriver du följande kommando:
+Om du vill aktivera din organisation för att använda privata ursprung skriver du följande kommando:
 
 ``` powershell
 Set-SPOTenantCdnEnabled -CdnType Private -Enable $true
 ```
 
-Mer information om den här cmdleten finns i [set-SPOTenantCdnEnabled](https://technet.microsoft.com/library/mt790765.aspx).
+Mer information om den här cmdleten finns [i Set-SPOTenantCdnEnabled](/powershell/module/sharepoint-online/Set-SPOTenantCdnEnabled).
 
 <a name="Office365CDNforSPOFileType"> </a>
 ### <a name="change-the-list-of-file-types-to-include-in-the-office-365-cdn-optional"></a>Ändra listan över filtyper som ska ingå i Office 365 CDN (valfritt)
 
 > [!TIP]
-> När du definierar filtyper med hjälp av cmdleten **set-SPOTenantCdnPolicy** skriver du över den för tillfället definierade listan. Om du vill lägga till fler filtyper i listan kan du använda cmdleten först för att ta reda på vilka filtyper som redan är tillåtna och lägga till dem i listan tillsammans med nya filer.
+> När du definierar filtyper med hjälp av cmdleten **Set-SPOTenantCdnPolicy** skriver du över den aktuella definierade listan. Om du vill lägga till ytterligare filtyper i listan använder du först cmdleten för att ta reda på vilka filtyper som redan är tillåtna och inkludera dem i listan tillsammans med dina nya.
   
-Använd cmdleten **set-SPOTenantCdnPolicy** för att definiera statiska filtyper som kan hanteras av offentliga och privata ursprung i CDN. Som standard tillåts vanliga typer av till gångar, till exempel. CSS,. gif,. jpg och. js.
+Använd cmdleten **Set-SPOTenantCdnPolicy** till att definiera statiska filtyper som kan lagras av offentliga och privata ursprung i CDN. Som standard tillåts vanliga tillgångstyper, till exempel .css, .gif, .jpg och .js.
 
 I Windows PowerShell för SharePoint Online:
 
@@ -241,27 +241,27 @@ I Windows PowerShell för SharePoint Online:
 Set-SPOTenantCdnPolicy -CdnType <Public | Private> -PolicyType IncludeFileExtensions -PolicyValue "<Comma-separated list of file types >"
 ```
 
-Om du till exempel vill aktivera CDN som Host. CSS-och. png-filer anger du kommandot:
+Om du till exempel vill aktivera CDN som värd för .css- och .png-filer anger du kommandot:
 
 ``` powershell
 Set-SPOTenantCdnPolicy -CdnType Private -PolicyType IncludeFileExtensions -PolicyValue "CSS,PNG"
 ```
 
-Använd cmdleten **Get-SPOTenantCdnPolicies** för att se vilka filtyper som för närvarande tillåts av CDN:
+Om du vill se vilka filtyper som tillåts av CDN använder du cmdleten **Get-SPOTenantCdnPolicies:**
 
 ``` powershell
 Get-SPOTenantCdnPolicies -CdnType <Public | Private>
 ```
 
-Mer information om dessa cmdletar finns i [set-SPOTenantCdnPolicy](https://technet.microsoft.com/library/mt800839.aspx) and [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/library/mt800838.aspx).
+Mer information om dessa cmdlets finns i [Set-SPOTenantCdnPolicy](/powershell/module/sharepoint-online/) och [Get-SPOTenantCdnPolicies.](/powershell/module/sharepoint-online/)
 
 <a name="Office365CDNforSPOSiteClassification"> </a>
-### <a name="change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn-optional"></a>Ändra listan över webbplats klassificeringar som du vill undanta från Office 365 CDN (valfritt)
+### <a name="change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn-optional"></a>Ändra listan över webbplatsklassificeringarna som du vill utesluta från Office 365 CDN (valfritt)
 
 > [!TIP]
-> När du undantar webbplats klassificeringar med cmdleten **set-SPOTenantCdnPolicy** skriver du över den för tillfället definierade listan. Om du vill undanta ytterligare webbplats klassificeringar kan du använda cmdleten först för att ta reda på vilka klassificeringar som redan är undantagna och sedan lägga till dem tillsammans med dina nya.
+> När du utesluter webbplatsklassificeringarna med hjälp av cmdleten **Set-SPOTenantCdnPolicy** skriver du över den aktuella definierade listan. Om du vill utesluta ytterligare webbplatsklassificeringarna använder du cmdleten först för att ta reda på vilka klassificeringar som redan har uteslutits och sedan lägga till dem tillsammans med dina nya.
 
-Använd cmdleten **set-SPOTenantCdnPolicy** för att undanta webbplats klassificeringar som du inte vill göra tillgängliga via CDN. Som standard utesluts inga webbplats klassificeringar.
+Använd **cmdleten Set-SPOTenantCdnPolicy** till att utesluta webbplatsklassificering som du inte vill ska vara tillgängliga via CDN. Som standard utesluts inga webbplatsklassificeringar.
 
 I Windows PowerShell för SharePoint Online:
 
@@ -269,61 +269,61 @@ I Windows PowerShell för SharePoint Online:
 Set-SPOTenantCdnPolicy -CdnType <Public | Private> -PolicyType ExcludeRestrictedSiteClassifications  -PolicyValue "<Comma-separated list of site classifications >"
 ```
 
-Om du vill se vilka webbplats klassificeringar som är begränsade använder du cmdleten **Get-SPOTenantCdnPolicies** :
+Om du vill se vilka webbplatsklassificeringarna som är begränsade använder du cmdleten **Get-SPOTenantCdnPolicies:**
 
 ``` powershell
 Get-SPOTenantCdnPolicies -CdnType <Public | Private>
 ```
 
-De egenskaper som kommer att returneras är _IncludeFileExtensions_, _ExcludeRestrictedSiteClassifications_ och _ExcludeIfNoScriptDisabled_.
+Egenskaperna som returneras är _IncludeFileExtensions_, _ExcludeRestrictedSiteClassifications_ _och ExcludeIfNoScriptDisabled._
 
-Egenskapen _IncludeFileExtensions_ innehåller en lista över fil namns tillägg som kommer att betjänas från CDN.
+Egenskapen _IncludeFileExtensions_ innehåller listan över filnamnstillägg som kan användas i CDN.
 
 > [!NOTE]
-> Standard fil namns tilläggen skiljer sig mellan offentliga och privata.
+> Standardtilläggen för filer skiljer sig åt mellan offentliga och privata.
 
-Egenskapen _ExcludeRestrictedSiteClassifications_ innehåller de webbplats klassificeringar som du vill undanta från CDN. Du kan till exempel utesluta webbplatser som marker ATS som **konfidentiella** så att innehållet från webbplatser med den klassificeringen inte kommer att betjänas från CDN.
+Egenskapen _ExcludeRestrictedSiteClassifications_ innehåller webbplatsklassificeringarna som du vill utesluta från CDN. Du kan till exempel utesluta webbplatser som markerats som **konfidentiella** så att innehåll från webbplatser med den klassificering som tillämpas inte kommer att användas från CDN.
 
-Egenskapen _ExcludeIfNoScriptDisabled_ exkluderar innehåll från CDN baserat på Inställningar för _NoScript_ på webbplats nivå. Som standard är attributet _NoScript_ **aktiverat** för _moderna_ webbplatser och är **inaktiverat** för _klassiska_ webbplatser. Detta beror på klientens inställningar.
+Egenskapen _ExcludeIfNoScriptDisabled_ utesluter innehåll från CDN baserat på inställningar för _NoScript-attribut_ på webbplatsnivå. Som standard är _attributet NoScript_ inställt på **Aktiverad för** _moderna_ webbplatser och **Inaktiverat** för _klassiska_ webbplatser. Det beror på klientorganisationens inställningar.
 
-Mer information om dessa cmdletar finns i [set-SPOTenantCdnPolicy](https://technet.microsoft.com/library/mt800839.aspx) and [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/library/mt800838.aspx).
+Mer information om dessa cmdlets finns i [Set-SPOTenantCdnPolicy](/powershell/module/sharepoint-online/) och [Get-SPOTenantCdnPolicies.](/powershell/module/sharepoint-online/)
 
 <a name="Office365CDNforSPOOriginPosh"> </a>
-### <a name="add-an-origin-for-your-assets"></a>Lägga till ett ursprung för dina till gångar
+### <a name="add-an-origin-for-your-assets"></a>Lägga till ett ursprung för dina tillgångar
 
-Använd cmdleten **Add-SPOTenantCdnOrigin** för att definiera ett ursprung. Du kan definiera flera ursprung. Origo är en URL som pekar på ett SharePoint-bibliotek eller en mapp som innehåller de objekt som du vill ska hanteras av CDN.
+Definiera ett **ursprung med cmdleten Add-SPOTenantCdnOrigin.** Du kan definiera flera ursprung. Ursprunget är en URL-adress som pekar på ett bibliotek eller en mapp i SharePoint som innehåller tillgångarna du vill ska lagras av CDN.
   
 > [!IMPORTANT]
-> Du bör aldrig placera resurser som innehåller användar information eller anses vara känsliga för organisationen i ett offentligt ursprung.
+> Du ska aldrig placera resurser som innehåller användarinformation eller som anses vara känsliga för organisationen i ett offentligt ursprung.
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType <Public | Private> -OriginUrl <path>
 ```
 
-Värdet för _Path_ är den relativa sökvägen till det bibliotek eller den mapp som innehåller till gångarna. Du kan använda jokertecken utöver relativa sökvägar. Ursprung stöd för jokertecken läggs till till URL-adressen. Det gör att du kan skapa ursprung som sträcker sig över flera webbplatser. Om du till exempel vill ta med alla till gångar i masterpages-mappen för alla webbplatser som ett offentligt ursprung i CDN skriver du följande kommando:
+Värdet på _sökvägen_ är den relativa sökvägen till biblioteket eller mappen som innehåller tillgångarna. Du kan använda jokertecken utöver relativa sökvägar. Ursprung stöder jokertecken som finns i url-adressen. På så sätt kan du skapa ursprung som spänner över flera webbplatser. Om du till exempel vill ta med alla tillgångar i mappen masterpages för alla dina webbplatser som ett offentligt ursprung i CDN skriver du följande kommando:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 ```
 
-+ Jokertecknet * **/** kan bara användas i början av sökvägen och matchar alla URL-segment under den angivna URL-adressen.
-+ Sökvägen kan peka på ett dokument bibliotek, en mapp eller en webbplats. Till exempel matchar sökvägen _*/site1_ alla dokument bibliotek under webbplatsen.
++ Jokertecknet * kan bara användas i början av sökvägen och matchar **/** alla URL-segment under den angivna URL:en.
++ Sökvägen kan peka på ett dokumentbibliotek, en mapp eller en webbplats. Sökvägen _*/webbplats1_ matchar till exempel alla dokumentbibliotek under webbplatsen.
 
-Du kan lägga till ett ursprung med en specifik relativ sökväg. Du kan inte lägga till ett ursprung med den fullständiga sökvägen.
+Du kan lägga till ett ursprung med en viss relativ sökväg. Du kan inte lägga till ett ursprung med den fullständiga sökvägen.
 
-I det här exemplet läggs ett privat ursprung för siteassets-biblioteket till på en specifik webbplats:
+I det här exemplet läggs ett privat ursprung till webbplatssamlingsbiblioteket på en viss webbplats:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
-Det här exemplet lägger till ett privat ursprung i mappen _Mapp1_ i webbplats samlingens webbplats till gångar-bibliotek:
+Det här exemplet lägger till ett privat ursprung _för mappen mapp1_ i webbplatssamlingens bibliotek för webbplatstillgångar:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder1
 ```
 
-Om det finns ett blank steg i sökvägen kan du antingen omge vägen med citat tecken eller ersätta blank steget med URL-kodningen %20. Följande exempel lägger till ett privat ursprung för _mappen 1_ i webbplats samlingens webbplats till gångar-bibliotek:
+Om det finns ett blanksteg i sökvägen kan du antingen omge sökvägen med dubbla citattecken eller ersätta blanksteget med URL-kodningen %20. Följande exempel lägger till ett privat ursprung för _mappen mapp 1_ i webbplatssamlingens bibliotek för webbplatstillgångar:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder%201
@@ -333,148 +333,148 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder%
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder 1"
 ```
 
-Mer information om det här kommandot och dess syntax finns i [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx).
+Mer information om kommandot och dess syntax finns i [Add-SPOTenantCdnOrigin.](/powershell/module/sharepoint-online/Add-SPOTenantCdnOrigin)
 
 > [!NOTE]
-> I privata ursprung måste till gångar som delas från ett ursprung ha en huvud version publicerad innan de kan nås från CDN.
+> I privata ursprung måste tillgångar som delas från ett ursprung ha en huvudversion publicerad innan de kan nås från CDN.
   
-När du har kört kommandot synkroniseras konfigurationen via data Center. Det kan ta upp till 15 minuter.
+När du har kört kommandot synkroniserar systemet konfigurationen i datacentret. Det kan ta upp till 15 minuter.
 
 <a name="ExamplePublicOrigin"> </a>
-### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a>Exempel: Konfigurera ett offentligt ursprung för huvud sidorna och för format biblioteket för SharePoint Online
+### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a>Exempel: Konfigurera ett offentligt ursprung för huvudsidorna och för formatbiblioteket för SharePoint Online
 
-Vanligt vis är dessa ursprung för dig som standard när du aktiverar Office 365 CDN. Om du vill aktivera dem manuellt följer du de här stegen.
+Normalt konfigureras dessa ursprung åt dig som standard när du aktiverar Office 365 CDN. Men om du vill aktivera dem manuellt följer du de här stegen.
   
-+ Använd cmdleten **Add-SPOTenantCdnOrigin** för att definiera format biblioteket som ett offentligt ursprung.
++ Använd **cmdleten Add-SPOTenantCdnOrigin** till att definiera formatbiblioteket som ett offentligt ursprung.
 
 ``` powershell
   Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */style%20library
   ```
 
-+ Använd cmdleten **Add-SPOTenantCdnOrigin** för att definiera huvud sidorna som ett offentligt ursprung.
++ Använd **cmdleten Add-SPOTenantCdnOrigin** till att definiera huvudsidorna som ett offentligt ursprung.
 
 ``` powershell
   Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
   ```
 
-Mer information om det här kommandot och dess syntax finns i [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx).
+Mer information om kommandot och dess syntax finns i [Add-SPOTenantCdnOrigin.](/powershell/module/sharepoint-online/Add-SPOTenantCdnOrigin)
 
-När du har kört kommandot synkroniseras konfigurationen via data Center. Det kan ta upp till 15 minuter.
+När du har kört kommandot synkroniserar systemet konfigurationen i datacentret. Det kan ta upp till 15 minuter.
 
 <a name="ExamplePrivateOrigin"> </a>
-### <a name="example-configure-a-private-origin-for-your-site-assets-site-pages-and-publishing-images-for-sharepoint-online"></a>Exempel: Konfigurera ett privat ursprung för webbplats till gångar, webbplats sidor och publicerings bilder för SharePoint Online
+### <a name="example-configure-a-private-origin-for-your-site-assets-site-pages-and-publishing-images-for-sharepoint-online"></a>Exempel: Konfigurera ett privat ursprung för dina webbplatstillgångar, webbplatssidor och publiceringsbilder för SharePoint Online
 
-+ Använd cmdleten **Add-SPOTenantCdnOrigin** för att definiera mappen för webbplats till gångar som ett privat ursprung.
++ Använd **cmdleten Add-SPOTenantCdnOrigin** till att definiera mappen för webbplatstillgångar som ett privat ursprung.
 
 ``` powershell
   Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */siteassets
   ```
 
-+ Använd cmdleten **Add-SPOTenantCdnOrigin** för att definiera mappen för webbplats sidor som ett privat ursprung.
++ Använd **cmdleten Add-SPOTenantCdnOrigin** till att definiera mappen för webbplatssidor som ett privat ursprung.
 
 ``` powershell
   Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */sitepages
   ```
 
-+ Använd cmdleten **Add-SPOTenantCdnOrigin** för att definiera mappen för publicerings bilder som ett privat ursprung.
++ Använd **cmdleten Add-SPOTenantCdnOrigin** till att definiera mappen för publiceringsbilder som ett privat ursprung.
 
 ``` powershell
   Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */publishingimages
   ```
 
-Mer information om det här kommandot och dess syntax finns i [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx).
+Mer information om kommandot och dess syntax finns i [Add-SPOTenantCdnOrigin.](/powershell/module/sharepoint-online/Add-SPOTenantCdnOrigin)
 
-När du har kört kommandot synkroniseras konfigurationen via data Center. Det kan ta upp till 15 minuter.
+När du har kört kommandot synkroniserar systemet konfigurationen i datacentret. Det kan ta upp till 15 minuter.
 
 <a name="ExamplePrivateOriginSiteCollection"> </a>
-### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>Exempel: Konfigurera ett privat ursprung för en webbplats samling för SharePoint Online
+### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>Exempel: Konfigurera ett privat ursprung för en webbplatssamling för SharePoint Online
 
-Använd cmdleten **Add-SPOTenantCdnOrigin** för att definiera en webbplats samling som ett privat ursprung. Till exempel:
+Använd **cmdleten Add-SPOTenantCdnOrigin** till att definiera en webbplatssamling som ett privat ursprung. Ett exempel:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
-Mer information om det här kommandot och dess syntax finns i [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx).
+Mer information om kommandot och dess syntax finns i [Add-SPOTenantCdnOrigin.](/powershell/module/sharepoint-online/Add-SPOTenantCdnOrigin)
   
-När du har kört kommandot synkroniseras konfigurationen via data Center. Du kan se ett meddelande om _väntande konfiguration_ som förväntas som en SharePoint Online-klient ansluter till CDN-tjänsten. Det kan ta upp till 15 minuter.
+När du har kört kommandot synkroniserar systemet konfigurationen i datacentret. Du kanske ser ett _meddelande om väntande_ konfiguration som förväntas när SharePoint Online-klienten ansluter till CDN-tjänsten. Det kan ta upp till 15 minuter.
 
 <a name="CDNManage"> </a>
 ### <a name="manage-the-office-365-cdn"></a>Hantera Office 365 CDN
 
-När du har konfigurerat CDN kan du göra ändringar i konfigurationen när du uppdaterar innehåll eller när dina behov ändras, enligt beskrivningen i det här avsnittet.
+När du har ställt in CDN kan du göra ändringar i konfigurationen när du uppdaterar innehåll eller när dina behov ändras, enligt beskrivningen i det här avsnittet.
   
 <a name="Office365CDNforSPOaddremoveasset"> </a>
-#### <a name="add-update-or-remove-assets-from-the-office-365-cdn"></a>Lägga till, uppdatera eller ta bort till gångar från Office 365 CDN
+#### <a name="add-update-or-remove-assets-from-the-office-365-cdn"></a>Lägga till, uppdatera eller ta bort tillgångar från Office 365 CDN
 
-När du har slutfört konfigurations stegen kan du lägga till nya till gångar och uppdatera eller ta bort befintliga till gångar när du vill. Gör dina ändringar i till gångarna i den mapp eller det SharePoint-bibliotek som du angav som ursprung. Om du lägger till en ny till gång är den tillgänglig via CDN omedelbart. Men om du uppdaterar till gången tar det upp till 15 minuter innan den nya kopian sprids och blir tillgänglig i CDN.
+När du har slutfört konfigurationsstegen kan du lägga till nya tillgångar och uppdatera eller ta bort befintliga tillgångar när du vill. Gör bara ändringar av tillgångarna i den mapp eller det SharePoint-bibliotek som du har identifierat som ursprung. Om du lägger till en ny tillgång är den tillgänglig via CDN direkt. Men om du uppdaterar tillgången tar det upp till 15 minuter för den nya kopian av spridas och bli tillgänglig i CDN.
   
-Om du behöver hämta plats för ursprunget kan du använda cmdleten **Get-SPOTenantCdnOrigins** . Information om hur du använder denna cmdlet finns i [Get-SPOTenantCdnOrigins](https://technet.microsoft.com/library/mt790770.aspx).
+Om du behöver hämta platsen för ursprunget kan du använda cmdleten **Get-SPOTenantCdnOrigins.** Information om hur du använder denna cmdlet finns i [Get-SPOTenantCdnOrigins.](/powershell/module/sharepoint-online/Get-SPOTenantCdnOrigins)
 
 <a name="Office365CDNforSPORemoveOriginPosh"> </a>
 #### <a name="remove-an-origin-from-the-office-365-cdn"></a>Ta bort ett ursprung från Office 365 CDN
 
-Du kan ta bort åtkomst till en mapp eller ett SharePoint-bibliotek som du har identifierat som ett ursprung. För att göra det, Använd cmdleten **Remove-SPOTenantCdnOrigin** .
+Du kan ta bort åtkomst till en mapp eller ett SharePoint-bibliotek som du har identifierat som ursprung. Det gör du med cmdleten **Remove-SPOTenantCdnOrigin.**
 
 ``` powershell
 Remove-SPOTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
 ```
 
-Information om hur du använder den här cmdleten finns i [Remove-SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790761.aspx).
+Information om hur du använder denna cmdlet finns [i Remove-SPOTenantCdnOrigin.](/powershell/module/sharepoint-online/Remove-SPOTenantCdnOrigin)
 
 <a name="Office365CDNforSPOModifyOrigin"> </a>
 #### <a name="modify-an-origin-in-the-office-365-cdn"></a>Ändra ett ursprung i Office 365 CDN
 
-Du kan inte ändra ett ursprung som du har skapat. I stället kan du ta bort Origo och sedan lägga till ett nytt. Mer information finns i [så här tar du bort ett ursprung från Office 365 CDN](use-microsoft-365-cdn-with-spo.md#Office365CDNforSPORemoveOriginPosh) och hur [du lägger till till gångar](use-microsoft-365-cdn-with-spo.md#Office365CDNforSPOOriginPosh).
+Du kan inte ändra ett ursprung som du har skapat. Ta istället bort ursprunget och lägg sedan till ett nytt. Mer information finns i Ta [bort ett ursprung från Office 365 CDN](use-microsoft-365-cdn-with-spo.md#Office365CDNforSPORemoveOriginPosh) och Lägga till ett ursprung för dina [tillgångar.](use-microsoft-365-cdn-with-spo.md#Office365CDNforSPOOriginPosh)
 
 <a name="Office365CDNforSPODisable"> </a>
 #### <a name="disable-the-office-365-cdn"></a>Inaktivera Office 365 CDN
 
-Använd cmdleten **set-SPOTenantCdnEnabled** för att inaktivera CDN för organisationen. Om både offentliga och privata ursprung är aktiverade för CDN måste du köra cmdleten två gånger enligt följande exempel.
+Använd **cmdleten Set-SPOTenantCdnEnabled** till att inaktivera CDN för organisationen. Om du har aktiverat både offentliga och privata ursprung för CDN måste du köra cmdleten två gånger enligt följande exempel.
   
-Om du vill inaktivera användning av offentliga ursprung i CDN skriver du följande kommando:
+Inaktivera användningen av offentliga ursprung i CDN genom att ange följande kommando:
 
 ``` powershell
 Set-SPOTenantCdnEnabled -CdnType Public -Enable $false
 ```
 
-Om du vill inaktivera användningen av de privata ursprungen i CDN skriver du följande kommando:
+Inaktivera användningen av privata ursprung i CDN genom att ange följande kommando:
 
 ``` powershell
 Set-SPOTenantCdnEnabled -CdnType Private -Enable $false
 ```
 
-Mer information om den här cmdleten finns i [set-SPOTenantCdnEnabled](https://technet.microsoft.com/library/mt790765.aspx).
+Mer information om den här cmdleten finns [i Set-SPOTenantCdnEnabled](/powershell/module/sharepoint-online/Set-SPOTenantCdnEnabled).
 
 </details>
 
 <a name="CDNSetupinPnPPosh"> </a>
 ## <a name="set-up-and-configure-the-office-365-cdn-by-using-pnp-powershell"></a>Konfigurera och konfigurera Office 365 CDN med PnP PowerShell
 
-Procedurerna i det här avsnittet kräver att du använder PnP PowerShell för att ansluta till SharePoint Online. Anvisningar finns i [komma igång med PnP PowerShell](https://github.com/SharePoint/PnP-PowerShell#getting-started).
+Procedurerna i det här avsnittet kräver att du använder PnP PowerShell för att ansluta till SharePoint Online. Anvisningar finns i [Komma igång med PnP PowerShell.](https://github.com/SharePoint/PnP-PowerShell#getting-started)
 
-Utför de här stegen för att konfigurera och konfigurera CDN för att hantera dina till gångar i SharePoint Online med hjälp av PnP PowerShell.
+Utför de här stegen för att konfigurera och konfigurera CDN som värd för dina tillgångar i SharePoint Online med PnP PowerShell.
 
 <details>
   <summary>Klicka för att Visa</summary>
 
-### <a name="enable-your-organization-to-use-the-office-365-cdn"></a>Aktivera din organisation för att använda Office 365 CDN
+### <a name="enable-your-organization-to-use-the-office-365-cdn"></a>Aktivera organisationen för att använda Office 365 CDN
 
-Innan du ändrar status för klient organisationen måste du hämta den aktuella statusen för privat CDN-konfigurationen i Office 365-klient organisationen. Ansluta till klient organisationen med PnP PowerShell:
+Innan du gör ändringar i klientorganisationens CDN-inställningar bör du hämta aktuell status för den privata CDN-konfigurationen i Office 365-klienten. Anslut till klientorganisationen med PnP PowerShell:
 
 ``` powershell
 Connect-PnPOnline -Url https://contoso-admin.sharepoint.com -UseWebLogin
 ```
 
-Använd cmdleten **Get-PnPTenantCdnEnabled** för att hämta status inställningar för CDN från klient organisationen:
+Använd nu cmdleten **Get-PnPTenantCdnEnabled** för att hämta CDN-statusinställningarna från klientorganisationen:
 
 ``` powershell
 Get-PnPTenantCdnEnabled -CdnType <Public | Private>
 ```
 
-Statusen för CDN för angiven CdnType kommer att matas ut till skärmen.
+Status för CDN för den angivna CdnType matas ut på skärmen.
 
-Använd cmdleten **set-PnPTenantCdnEnabled** för att göra det möjligt för organisationen att använda Office 365 CDN. Du kan göra det möjligt för organisationen att använda offentliga ursprung, privata ursprung eller båda samtidigt. Du kan också konfigurera CDN för att hoppa över inställningen av standard ursprung när du aktiverar det. Du kan alltid lägga till dessa ursprung senare enligt beskrivningen i det här avsnittet.
+Använd **cmdleten Set-PnPTenantCdnEnabled** till att aktivera organisationen för att använda Office 365 CDN. Du kan aktivera organisationen för att använda offentliga ursprung, privata ursprung eller båda samtidigt. Du kan också konfigurera CDN att hoppa över konfigurationen av standard ursprung när du aktiverar det. Du kan alltid lägga till dessa ursprung senare enligt beskrivningen i det här avsnittet.
   
 I PnP PowerShell:
 
@@ -482,41 +482,41 @@ I PnP PowerShell:
 Set-PnPTenantCdnEnabled -CdnType <Public | Private | Both> -Enable $true
 ```
 
-Om du till exempel vill aktivera organisationen att använda både offentliga och privata ursprung skriver du följande kommando:
+Om du till exempel vill aktivera organisationen för att använda både offentliga och privata ursprung skriver du följande kommando:
 
 ``` powershell
 Set-PnPTenantCdnEnabled -CdnType Both -Enable $true
 ```
 
-Om du vill göra det möjligt för organisationen att använda både offentliga och privata ursprung men hoppa till standard ursprungen skriver du följande kommando:
+Om du vill aktivera organisationen för att använda både offentliga och privata ursprung men hoppa över att konfigurera standard ursprung skriver du följande kommando:
 
 ``` powershell
 Set-PnPTenantCdnEnabled -CdnType Both -Enable $true -NoDefaultOrigins
 ```
 
-Se [standard ursprung för CDN](use-microsoft-365-cdn-with-spo.md#default-cdn-origins) för information om ursprung som är etablerade som standard när du aktiverar Office 365 CDN och den potentiella effekten av att hoppa över inställningen av standard ursprung.
+Mer information [om ursprung som etableras](use-microsoft-365-cdn-with-spo.md#default-cdn-origins) som standard när du aktiverar Office 365 CDN finns i Standard-CDN-ursprung och eventuell inverkan med att hoppa över konfigurationen av standard ursprung.
 
-Om du vill aktivera organisationen att använda offentliga ursprung skriver du följande kommando:
+Om du vill aktivera organisationen för att använda offentliga ursprung skriver du följande kommando:
 
 ``` powershell
 Set-PnPTenantCdnEnabled -CdnType Public -Enable $true
 ```
 
-Om du vill aktivera din organisation att använda privata ursprung skriver du följande kommando:
+Om du vill aktivera din organisation för att använda privata ursprung skriver du följande kommando:
 
 ``` powershell
 Set-PnPTenantCdnEnabled -CdnType Private -Enable $true
 ```
 
-Mer information om den här cmdleten finns i [set-PnPTenantCdnEnabled](https://docs.microsoft.com/powershell/module/sharepoint-pnp/set-pnptenantcdnenabled).
+Mer information om den här cmdleten finns [i Set-PnPTenantCdnEnabled](/powershell/module/sharepoint-pnp/set-pnptenantcdnenabled).
 
 <a name="Office365CDNforPnPPoshFileType"> </a>
 ### <a name="change-the-list-of-file-types-to-include-in-the-office-365-cdn-optional"></a>Ändra listan över filtyper som ska ingå i Office 365 CDN (valfritt)
 
 > [!TIP]
-> När du definierar filtyper med hjälp av cmdleten **set-PnPTenantCdnPolicy** skriver du över den för tillfället definierade listan. Om du vill lägga till fler filtyper i listan kan du använda cmdleten först för att ta reda på vilka filtyper som redan är tillåtna och lägga till dem i listan tillsammans med nya filer.
+> När du definierar filtyper med hjälp av cmdleten **Set-PnPTenantCdnPolicy** skriver du över den aktuella definierade listan. Om du vill lägga till ytterligare filtyper i listan använder du först cmdleten för att ta reda på vilka filtyper som redan är tillåtna och inkludera dem i listan tillsammans med dina nya.
   
-Använd cmdleten **set-PnPTenantCdnPolicy** för att definiera statiska filtyper som kan hanteras av offentliga och privata ursprung i CDN. Som standard tillåts vanliga typer av till gångar, till exempel. CSS,. gif,. jpg och. js.
+Använd **cmdleten Set-PnPTenantCdnPolicy** till att definiera statiska filtyper som kan lagras av offentliga och privata ursprung i CDN. Som standard tillåts vanliga tillgångstyper, till exempel .css, .gif, .jpg och .js.
 
 I PnP PowerShell:
 
@@ -524,27 +524,27 @@ I PnP PowerShell:
 Set-PnPTenantCdnPolicy -CdnType <Public | Private> -PolicyType IncludeFileExtensions -PolicyValue "<Comma-separated list of file types >"
 ```
 
-Om du till exempel vill aktivera CDN som Host. CSS-och. png-filer anger du kommandot:
+Om du till exempel vill aktivera CDN som värd för .css- och .png-filer anger du kommandot:
 
 ``` powershell
 Set-PnPTenantCdnPolicy -CdnType Private -PolicyType IncludeFileExtensions -PolicyValue "CSS,PNG"
 ```
 
-Använd cmdleten **Get-PnPTenantCdnPolicies** för att se vilka filtyper som för närvarande tillåts av CDN:
+Om du vill se vilka filtyper som tillåts av CDN använder du cmdleten **Get-PnPTenantCdnPolicies:**
 
 ``` powershell
 Get-PnPTenantCdnPolicies -CdnType <Public | Private>
 ```
 
-Mer information om dessa cmdletar finns i [set-PnPTenantCdnPolicy](https://docs.microsoft.com/powershell/module/sharepoint-pnp/set-pnptenantcdnpolicy) and [Get-PnPTenantCdnPolicies](https://docs.microsoft.com/powershell/module/sharepoint-pnp/get-pnptenantcdnpolicies).
+Mer information om dessa cmdlets finns i [Set-PnPTenantCdnPolicy](/powershell/module/sharepoint-pnp/set-pnptenantcdnpolicy) och [Get-PnPTenantCdnPolicies.](/powershell/module/sharepoint-pnp/get-pnptenantcdnpolicies)
 
 <a name="Office365CDNforPnPPoshSiteClassification"> </a>
-### <a name="change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn-optional"></a>Ändra listan över webbplats klassificeringar som du vill undanta från Office 365 CDN (valfritt)
+### <a name="change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn-optional"></a>Ändra listan över webbplatsklassificeringarna som du vill utesluta från Office 365 CDN (valfritt)
 
 > [!TIP]
-> När du undantar webbplats klassificeringar med cmdleten **set-PnPTenantCdnPolicy** skriver du över den för tillfället definierade listan. Om du vill undanta ytterligare webbplats klassificeringar kan du använda cmdleten först för att ta reda på vilka klassificeringar som redan är undantagna och sedan lägga till dem tillsammans med dina nya.
+> När du utesluter webbplatsklassificeringarna med hjälp av cmdleten **Set-PnPTenantCdnPolicy** skriver du över den aktuella definierade listan. Om du vill utesluta ytterligare webbplatsklassificeringarna använder du cmdleten först för att ta reda på vilka klassificeringar som redan har uteslutits och sedan lägga till dem tillsammans med dina nya.
 
-Använd cmdleten **set-PnPTenantCdnPolicy** för att undanta webbplats klassificeringar som du inte vill göra tillgängliga via CDN. Som standard utesluts inga webbplats klassificeringar.
+Använd **cmdleten Set-PnPTenantCdnPolicy** till att utesluta webbplatsklassificeringarna som du inte vill ska vara tillgängliga via CDN. Som standard utesluts inga webbplatsklassificeringar.
 
 I PnP PowerShell:
 
@@ -552,61 +552,61 @@ I PnP PowerShell:
 Set-PnPTenantCdnPolicy -CdnType <Public | Private> -PolicyType ExcludeRestrictedSiteClassifications  -PolicyValue "<Comma-separated list of site classifications>"
 ```
 
-Om du vill se vilka webbplats klassificeringar som är begränsade använder du cmdleten **Get-PnPTenantCdnPolicies** :
+Om du vill se vilka webbplatsklassificeringarna är begränsade använder du cmdleten **Get-PnPTenantCdnPolicies:**
 
 ``` powershell
 Get-PnPTenantCdnPolicies -CdnType <Public | Private>
 ```
 
-De egenskaper som kommer att returneras är _IncludeFileExtensions_, _ExcludeRestrictedSiteClassifications_ och _ExcludeIfNoScriptDisabled_.
+Egenskaperna som returneras är _IncludeFileExtensions_, _ExcludeRestrictedSiteClassifications_ _och ExcludeIfNoScriptDisabled._
 
-Egenskapen _IncludeFileExtensions_ innehåller en lista över fil namns tillägg som kommer att betjänas från CDN.
+Egenskapen _IncludeFileExtensions_ innehåller listan över filnamnstillägg som kan användas i CDN.
 
 > [!NOTE]
-> Standard fil namns tilläggen skiljer sig mellan offentliga och privata.
+> Standardtilläggen för filer skiljer sig åt mellan offentliga och privata.
 
-Egenskapen _ExcludeRestrictedSiteClassifications_ innehåller de webbplats klassificeringar som du vill undanta från CDN. Du kan till exempel utesluta webbplatser som marker ATS som **konfidentiella** så att innehållet från webbplatser med den klassificeringen inte kommer att betjänas från CDN.
+Egenskapen _ExcludeRestrictedSiteClassifications_ innehåller webbplatsklassificeringarna som du vill utesluta från CDN. Du kan till exempel utesluta webbplatser som markerats som **konfidentiella** så att innehåll från webbplatser med den klassificering som tillämpas inte kommer att användas från CDN.
 
-Egenskapen _ExcludeIfNoScriptDisabled_ exkluderar innehåll från CDN baserat på Inställningar för _NoScript_ på webbplats nivå. Som standard är attributet _NoScript_ **aktiverat** för _moderna_ webbplatser och är **inaktiverat** för _klassiska_ webbplatser. Detta beror på klientens inställningar.
+Egenskapen _ExcludeIfNoScriptDisabled_ utesluter innehåll från CDN baserat på inställningar för _NoScript-attribut_ på webbplatsnivå. Som standard är _attributet NoScript_ inställt på **Aktiverad för** _moderna_ webbplatser och **Inaktiverat** för _klassiska_ webbplatser. Det beror på klientorganisationens inställningar.
 
-Mer information om dessa cmdletar finns i [set-PnPTenantCdnPolicy](https://docs.microsoft.com/powershell/module/sharepoint-pnp/set-pnptenantcdnpolicy) and [Get-PnPTenantCdnPolicies](https://docs.microsoft.com/powershell/module/sharepoint-pnp/get-pnptenantcdnpolicies).
+Mer information om dessa cmdlets finns i [Set-PnPTenantCdnPolicy](/powershell/module/sharepoint-pnp/set-pnptenantcdnpolicy) och [Get-PnPTenantCdnPolicies.](/powershell/module/sharepoint-pnp/get-pnptenantcdnpolicies)
 
 <a name="Office365CDNforSPOOriginPnPPosh"> </a>
-### <a name="add-an-origin-for-your-assets"></a>Lägga till ett ursprung för dina till gångar
+### <a name="add-an-origin-for-your-assets"></a>Lägga till ett ursprung för dina tillgångar
 
-Använd cmdleten **Add-PnPTenantCdnOrigin** för att definiera ett ursprung. Du kan definiera flera ursprung. Origo är en URL som pekar på ett SharePoint-bibliotek eller en mapp som innehåller de objekt som du vill ska hanteras av CDN.
+Definiera ett **ursprung med cmdleten Add-PnPTenantCdnOrigin.** Du kan definiera flera ursprung. Ursprunget är en URL-adress som pekar på ett bibliotek eller en mapp i SharePoint som innehåller tillgångarna du vill ska lagras av CDN.
   
 > [!IMPORTANT]
-> Du bör aldrig placera resurser som innehåller användar information eller anses vara känsliga för organisationen i ett offentligt ursprung.
+> Du ska aldrig placera resurser som innehåller användarinformation eller som anses vara känsliga för organisationen i ett offentligt ursprung.
 
 ``` powershell
 Add-PnPTenantCdnOrigin -CdnType <Public | Private> -OriginUrl <path>
 ```
 
-Värdet för _Path_ är den relativa sökvägen till det bibliotek eller den mapp som innehåller till gångarna. Du kan använda jokertecken utöver relativa sökvägar. Ursprung stöd för jokertecken läggs till till URL-adressen. Det gör att du kan skapa ursprung som sträcker sig över flera webbplatser. Om du till exempel vill ta med alla till gångar i masterpages-mappen för alla webbplatser som ett offentligt ursprung i CDN skriver du följande kommando:
+Värdet på _sökvägen_ är den relativa sökvägen till biblioteket eller mappen som innehåller tillgångarna. Du kan använda jokertecken utöver relativa sökvägar. Ursprung stöder jokertecken som finns i url-adressen. På så sätt kan du skapa ursprung som spänner över flera webbplatser. Om du till exempel vill ta med alla tillgångar i mappen masterpages för alla dina webbplatser som ett offentligt ursprung i CDN skriver du följande kommando:
 
 ``` powershell
 Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 ```
 
-+ Jokertecknet * **/** kan bara användas i början av sökvägen och matchar alla URL-segment under den angivna URL-adressen.
-+ Sökvägen kan peka på ett dokument bibliotek, en mapp eller en webbplats. Till exempel matchar sökvägen _*/site1_ alla dokument bibliotek under webbplatsen.
++ Jokertecknet * kan bara användas i början av sökvägen och matchar **/** alla URL-segment under den angivna URL:en.
++ Sökvägen kan peka på ett dokumentbibliotek, en mapp eller en webbplats. Sökvägen _*/webbplats1_ matchar till exempel alla dokumentbibliotek under webbplatsen.
 
-Du kan lägga till ett ursprung med en specifik relativ sökväg. Du kan inte lägga till ett ursprung med den fullständiga sökvägen.
+Du kan lägga till ett ursprung med en viss relativ sökväg. Du kan inte lägga till ett ursprung med den fullständiga sökvägen.
 
-I det här exemplet läggs biblioteket webbplats till gångar till på en specifik webbplats:
+I det här exemplet läggs ett privat ursprung till biblioteket med webbplatstillgångar till på en viss webbplats:
 
 ``` powershell
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
-Det här exemplet lägger till ett privat ursprung i mappen _Mapp1_ i webbplats samlingens webbplats till gångar-bibliotek:
+Det här exemplet lägger till ett privat ursprung _för mappen mapp1_ i webbplatssamlingens bibliotek för webbplatstillgångar:
 
 ``` powershell
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder1
 ```
 
-Om det finns ett blank steg i sökvägen kan du antingen omge vägen med citat tecken eller ersätta blank steget med URL-kodningen %20. Följande exempel lägger till ett privat ursprung för _mappen 1_ i webbplats samlingens webbplats till gångar-bibliotek:
+Om det finns ett blanksteg i sökvägen kan du antingen omge sökvägen med dubbla citattecken eller ersätta blanksteget med URL-kodningen %20. Följande exempel lägger till ett privat ursprung för _mappen mapp 1_ i webbplatssamlingens bibliotek för webbplatstillgångar:
 
 ``` powershell
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder%201
@@ -616,142 +616,142 @@ Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder%
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder 1"
 ```
 
-Mer information om det här kommandot och dess syntax finns i [Add-PnPTenantCdnOrigin](https://docs.microsoft.com/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin).
+Mer information om kommandot och dess syntax finns i [Add-PnPTenantCdnOrigin.](/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin)
 
 > [!NOTE]
-> I privata ursprung måste till gångar som delas från ett ursprung ha en huvud version publicerad innan de kan nås från CDN.
+> I privata ursprung måste tillgångar som delas från ett ursprung ha en huvudversion publicerad innan de kan nås från CDN.
   
-När du har kört kommandot synkroniseras konfigurationen via data Center. Det kan ta upp till 15 minuter.
+När du har kört kommandot synkroniserar systemet konfigurationen i datacentret. Det kan ta upp till 15 minuter.
 
 <a name="ExamplePublicOriginPnPPosh"> </a>
-### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a>Exempel: Konfigurera ett offentligt ursprung för huvud sidorna och för format biblioteket för SharePoint Online
+### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a>Exempel: Konfigurera ett offentligt ursprung för huvudsidorna och för formatbiblioteket för SharePoint Online
 
-Vanligt vis är dessa ursprung för dig som standard när du aktiverar Office 365 CDN. Om du vill aktivera dem manuellt följer du de här stegen.
+Normalt konfigureras dessa ursprung åt dig som standard när du aktiverar Office 365 CDN. Men om du vill aktivera dem manuellt följer du de här stegen.
   
-+ Använd cmdleten **Add-PnPTenantCdnOrigin** för att definiera format biblioteket som ett offentligt ursprung.
++ Använd **cmdleten Add-PnPTenantCdnOrigin** till att definiera formatbiblioteket som ett offentligt ursprung.
 
 ``` powershell
   Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */style%20library
   ```
 
-+ Använd cmdleten **Add-PnPTenantCdnOrigin** för att definiera huvud sidorna som ett offentligt ursprung.
++ Använd **cmdleten Add-PnPTenantCdnOrigin** till att definiera huvudsidorna som ett offentligt ursprung.
 
 ``` powershell
   Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
   ```
 
-Mer information om det här kommandot och dess syntax finns i [Add-PnPTenantCdnOrigin](https://docs.microsoft.com/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin).
+Mer information om kommandot och dess syntax finns i [Add-PnPTenantCdnOrigin.](/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin)
 
-När du har kört kommandot synkroniseras konfigurationen via data Center. Det kan ta upp till 15 minuter.
+När du har kört kommandot synkroniserar systemet konfigurationen i datacentret. Det kan ta upp till 15 minuter.
 
 <a name="ExamplePrivateOriginPnPPosh"> </a>
-### <a name="example-configure-a-private-origin-for-your-site-assets-site-pages-and-publishing-images-for-sharepoint-online"></a>Exempel: Konfigurera ett privat ursprung för webbplats till gångar, webbplats sidor och publicerings bilder för SharePoint Online
+### <a name="example-configure-a-private-origin-for-your-site-assets-site-pages-and-publishing-images-for-sharepoint-online"></a>Exempel: Konfigurera ett privat ursprung för dina webbplatstillgångar, webbplatssidor och publiceringsbilder för SharePoint Online
 
-+ Använd cmdleten **Add-PnPTenantCdnOrigin** för att definiera mappen för webbplats till gångar som ett privat ursprung.
++ Använd **cmdleten Add-PnPTenantCdnOrigin** till att definiera mappen för webbplatstillgångar som ett privat ursprung.
 
 ``` powershell
   Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl */siteassets
   ```
 
-+ Använd cmdleten **Add-PnPTenantCdnOrigin** för att definiera mappen för webbplats sidor som ett privat ursprung.
++ Använd **cmdleten Add-PnPTenantCdnOrigin** till att definiera mappen för webbplatssidor som ett privat ursprung.
 
 ``` powershell
   Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl */sitepages
   ```
 
-+ Använd cmdleten **Add-PnPTenantCdnOrigin** för att definiera mappen för publicerings bilder som ett privat ursprung.
++ Använd **cmdleten Add-PnPTenantCdnOrigin** till att definiera mappen för publiceringsbilder som ett privat ursprung.
 
 ``` powershell
   Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl */publishingimages
   ```
 
-Mer information om det här kommandot och dess syntax finns i [Add-PnPTenantCdnOrigin](https://docs.microsoft.com/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin).
+Mer information om kommandot och dess syntax finns i [Add-PnPTenantCdnOrigin.](/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin)
 
-När du har kört kommandot synkroniseras konfigurationen via data Center. Det kan ta upp till 15 minuter.
+När du har kört kommandot synkroniserar systemet konfigurationen i datacentret. Det kan ta upp till 15 minuter.
 
 <a name="ExamplePrivateOriginSiteCollectionPnPPosh"> </a>
-### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>Exempel: Konfigurera ett privat ursprung för en webbplats samling för SharePoint Online
+### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>Exempel: Konfigurera ett privat ursprung för en webbplatssamling för SharePoint Online
 
-Använd cmdleten **Add-PnPTenantCdnOrigin** för att definiera en webbplats samling som ett privat ursprung. Till exempel:
+Använd **cmdleten Add-PnPTenantCdnOrigin** till att definiera en webbplatssamling som ett privat ursprung. Ett exempel:
 
 ``` powershell
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
-Mer information om det här kommandot och dess syntax finns i [Add-PnPTenantCdnOrigin](https://docs.microsoft.com/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin).
+Mer information om kommandot och dess syntax finns i [Add-PnPTenantCdnOrigin.](/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin)
   
-När du har kört kommandot synkroniseras konfigurationen via data Center. Du kan se ett meddelande om _väntande konfiguration_ som förväntas som en SharePoint Online-klient ansluter till CDN-tjänsten. Det kan ta upp till 15 minuter.
+När du har kört kommandot synkroniserar systemet konfigurationen i datacentret. Du kanske ser ett _meddelande om väntande_ konfiguration som förväntas när SharePoint Online-klienten ansluter till CDN-tjänsten. Det kan ta upp till 15 minuter.
 
 <a name="CDNManagePnPPosh"> </a>
 ### <a name="manage-the-office-365-cdn"></a>Hantera Office 365 CDN
 
-När du har konfigurerat CDN kan du göra ändringar i konfigurationen när du uppdaterar innehåll eller när dina behov ändras, enligt beskrivningen i det här avsnittet.
+När du har ställt in CDN kan du göra ändringar i konfigurationen när du uppdaterar innehåll eller när dina behov ändras, enligt beskrivningen i det här avsnittet.
   
 <a name="Office365CDNforSPOaddremoveassetPnPPosh"> </a>
-#### <a name="add-update-or-remove-assets-from-the-office-365-cdn"></a>Lägga till, uppdatera eller ta bort till gångar från Office 365 CDN
+#### <a name="add-update-or-remove-assets-from-the-office-365-cdn"></a>Lägga till, uppdatera eller ta bort tillgångar från Office 365 CDN
 
-När du har slutfört konfigurations stegen kan du lägga till nya till gångar och uppdatera eller ta bort befintliga till gångar när du vill. Gör dina ändringar i till gångarna i den mapp eller det SharePoint-bibliotek som du angav som ursprung. Om du lägger till en ny till gång är den tillgänglig via CDN omedelbart. Men om du uppdaterar till gången tar det upp till 15 minuter innan den nya kopian sprids och blir tillgänglig i CDN.
+När du har slutfört konfigurationsstegen kan du lägga till nya tillgångar och uppdatera eller ta bort befintliga tillgångar när du vill. Gör bara ändringar av tillgångarna i den mapp eller det SharePoint-bibliotek som du har identifierat som ursprung. Om du lägger till en ny tillgång är den tillgänglig via CDN direkt. Men om du uppdaterar tillgången tar det upp till 15 minuter för den nya kopian av spridas och bli tillgänglig i CDN.
   
-Om du behöver hämta plats för ursprunget kan du använda cmdleten **Get-PnPTenantCdnOrigin** . Information om hur du använder denna cmdlet finns i [Get-PnPTenantCdnOrigin](https://docs.microsoft.com/powershell/module/sharepoint-pnp/get-pnptenantcdnorigin).
+Om du behöver hämta platsen för ursprunget kan du använda cmdleten **Get-PnPTenantCdnOrigin.** Information om hur du använder denna cmdlet finns i [Get-PnPTenantCdnOrigin.](/powershell/module/sharepoint-pnp/get-pnptenantcdnorigin)
 
 <a name="Office365CDNforSPORemoveOriginPnPPosh"> </a>
 #### <a name="remove-an-origin-from-the-office-365-cdn"></a>Ta bort ett ursprung från Office 365 CDN
 
-Du kan ta bort åtkomst till en mapp eller ett SharePoint-bibliotek som du har identifierat som ett ursprung. För att göra det, Använd cmdleten **Remove-PnPTenantCdnOrigin** .
+Du kan ta bort åtkomst till en mapp eller ett SharePoint-bibliotek som du har identifierat som ursprung. Det gör du med cmdleten **Remove-PnPTenantCdnOrigin.**
 
 ``` powershell
 Remove-PnPTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
 ```
 
-Information om hur du använder den här cmdleten finns i [Remove-PnPTenantCdnOrigin](https://docs.microsoft.com/powershell/module/sharepoint-pnp/remove-pnptenantcdnorigin).
+Information om hur du använder denna cmdlet finns [i Remove-PnPTenantCdnOrigin.](/powershell/module/sharepoint-pnp/remove-pnptenantcdnorigin)
 
 <a name="Office365CDNforSPOModifyOriginPnPPosh"> </a>
 #### <a name="modify-an-origin-in-the-office-365-cdn"></a>Ändra ett ursprung i Office 365 CDN
 
-Du kan inte ändra ett ursprung som du har skapat. I stället kan du ta bort Origo och sedan lägga till ett nytt. Mer information finns i [så här tar du bort ett ursprung från Office 365 CDN](use-microsoft-365-cdn-with-spo.md#Office365CDNforSPORemoveOriginPnPPosh) och hur [du lägger till till gångar](use-microsoft-365-cdn-with-spo.md#Office365CDNforSPOOriginPnPPosh).
+Du kan inte ändra ett ursprung som du har skapat. Ta istället bort ursprunget och lägg sedan till ett nytt. Mer information finns i Ta [bort ett ursprung från Office 365 CDN](use-microsoft-365-cdn-with-spo.md#Office365CDNforSPORemoveOriginPnPPosh) och Lägga till ett ursprung för dina [tillgångar.](use-microsoft-365-cdn-with-spo.md#Office365CDNforSPOOriginPnPPosh)
 
 <a name="Office365CDNforSPODisable"> </a>
 #### <a name="disable-the-office-365-cdn"></a>Inaktivera Office 365 CDN
 
-Använd cmdleten **set-PnPTenantCdnEnabled** för att inaktivera CDN för organisationen. Om både offentliga och privata ursprung är aktiverade för CDN måste du köra cmdleten två gånger enligt följande exempel.
+Använd **cmdleten Set-PnPTenantCdnEnabled** till att inaktivera CDN för organisationen. Om du har aktiverat både offentliga och privata ursprung för CDN måste du köra cmdleten två gånger enligt följande exempel.
   
-Om du vill inaktivera användning av offentliga ursprung i CDN skriver du följande kommando:
+Inaktivera användningen av offentliga ursprung i CDN genom att ange följande kommando:
 
 ``` powershell
 Set-PnPTenantCdnEnabled -CdnType Public -Enable $false
 ```
 
-Om du vill inaktivera användningen av de privata ursprungen i CDN skriver du följande kommando:
+Inaktivera användningen av privata ursprung i CDN genom att ange följande kommando:
 
 ``` powershell
 Set-PnPTenantCdnEnabled -CdnType Private -Enable $false
 ```
 
-Mer information om den här cmdleten finns i [set-PnPTenantCdnEnabled](https://docs.microsoft.com/powershell/module/sharepoint-pnp/set-pnptenantcdnenabled).
+Mer information om den här cmdleten finns [i Set-PnPTenantCdnEnabled](/powershell/module/sharepoint-pnp/set-pnptenantcdnenabled).
 
 </details>
 
 <a name="CDNSetupinCLI"> </a>
-## <a name="set-up-and-configure-the-office-365-cdn-using-the-office-365-cli"></a>Konfigurera och konfigurera Office 365 CDN med Office 365-CLI
+## <a name="set-up-and-configure-the-office-365-cdn-using-the-office-365-cli"></a>Konfigurera och konfigurera Office 365 CDN med hjälp av Office 365 CLI
 
-Procedurerna i det här avsnittet kräver att du har installerat [Office 365-CLI](https://aka.ms/o365cli). Anslut sedan till Office 365-klient organisationen med kommandot [Logga in](https://pnp.github.io/office365-cli/cmd/login/) .
+Procedurerna i det här avsnittet kräver att du har installerat [Office 365 CLI.](https://aka.ms/o365cli) Anslut sedan till Din Office 365-klientorganisation med hjälp av [kommandot för](https://pnp.github.io/office365-cli/cmd/login/) inloggning.
 
-Utför de här stegen för att konfigurera och konfigurera CDN så att du kan vara värd för dina till gångar i SharePoint Online med hjälp av Office 365-CLI.
+Utför de här stegen för att konfigurera och konfigurera CDN som värd för dina tillgångar i SharePoint Online med Office 365 CLI.
 
 <details>
   <summary>Klicka för att Visa</summary>
 
 ### <a name="enable-the-office-365-cdn"></a>Aktivera Office 365 CDN
 
-Du kan hantera statusen för Office 365 CDN i klient organisationen med kommandot [SPO CDN set](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-set/) .
+Du kan hantera statusen för Office 365 CDN i klientorganisationen med hjälp av [kommandot för spo cdn-uppsättningen.](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-set/)
 
-Så här aktiverar du Office 365 Public CDN i klient organisationen:
+Så här aktiverar du det offentliga Office 365 CDN i klientorganisationen:
 
 ```sh
 spo cdn set --type Public --enabled true
 ```
 
-Aktivera Office 365 SharePoint CDN genom att köra:
+Om du vill aktivera Office 365 SharePoint CDN kör du:
 
 ```sh
 spo cdn set --type Private --enabled true
@@ -759,9 +759,9 @@ spo cdn set --type Private --enabled true
 
 #### <a name="view-the-current-status-of-the-office-365-cdn"></a>Visa aktuell status för Office 365 CDN
 
-Om du vill kontrol lera om den särskilda typen av Office 365 CDN är aktiverat eller inaktive rad använder du kommandot [SPO CDN get](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-get/) .
+Använd kommandot [spo cdn get](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-get/) om du vill kontrollera om den specifika typen av Office 365 CDN är aktiverad eller inaktiverad.
 
-Så här kontrollerar du om Office 365 Public CDN är aktiverat:
+För att kontrollera om den offentliga Office 365 CDN är aktiverad kör du:
 
 ```sh
 spo cdn get --type Public
@@ -769,45 +769,45 @@ spo cdn get --type Public
 
 ### <a name="view-the-office-365-cdn-origins"></a>Visa Office 365 CDN-ursprung
 
-Så här visar du de aktuella konfigurerade Office 365 Public CDN-ursprungen kör:
+Så här visar du de konfigurerade offentliga Office 365 CDN-ursprungen:
 
 ```sh
 spo cdn origin list --type Public
 ```
 
-Se [standard ursprung för CDN](use-microsoft-365-cdn-with-spo.md#default-cdn-origins) för information om ursprung som är etablerade som standard när du aktiverar Office 365 CDN.
+Se [Standard-CDN-ursprung](use-microsoft-365-cdn-with-spo.md#default-cdn-origins) för information om ursprung som etableras som standard när du aktiverar Office 365 CDN.
 
 ### <a name="add-an-office-365-cdn-origin"></a>Lägga till ett Office 365 CDN-ursprung
 
 > [!IMPORTANT]
-> Du bör aldrig placera resurser som anses vara känsliga för organisationen i ett SharePoint-dokumentbibliotek som är konfigurerat som ett offentligt ursprung.
+> Du ska aldrig placera resurser som anses vara känsliga för organisationen i ett SharePoint-dokumentbibliotek som konfigurerats som ett offentligt ursprung.
 
-Använd kommandot [SPO CDN Origin Add](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-add/) för att definiera ett CDN-ursprung. Du kan definiera flera ursprung. Origo är en URL som pekar på ett SharePoint-bibliotek eller en mapp som innehåller de objekt som du vill ska hanteras av CDN.
+Använd lägg till [ett spo cdn-ursprung för](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-add/) att definiera ett CDN-ursprung. Du kan definiera flera ursprung. Ursprunget är en URL-adress som pekar på ett bibliotek eller en mapp i SharePoint som innehåller tillgångarna du vill ska lagras av CDN.
 
 ```sh
 spo cdn origin add --type [Public | Private] --origin <path>
 ```
 
-Var `path` finns den relativa sökvägen till mappen som innehåller till gångarna. Du kan använda jokertecken utöver relativa sökvägar.
+Var `path` finns den relativa sökvägen till mappen som innehåller tillgångarna. Du kan använda jokertecken utöver relativa sökvägar.
 
-Om du vill inkludera alla till gångar i **huvud sid galleriet** på alla webbplatser som ett offentligt ursprung kör du:
+Om du vill ta med alla tillgångar **i huvudsidesgalleriet** för alla webbplatser som ett offentligt ursprung kör du:
 
 ```sh
 spo cdn origin add --type Public --origin */masterpage
 ```
 
-Om du vill konfigurera ett privat ursprung för en viss webbplats samling kör du:
+Om du vill konfigurera ett privat ursprung för en viss webbplatssamling kör du:
 
 ```sh
 spo cdn origin add --type Private --origin sites/site1/siteassets
 ```
 
 > [!NOTE]
-> När du har lagt till ett CDN-ursprung kan det ta upp till 15 minuter innan du kan hämta filer via CDN-tjänsten. Du kan kontrol lera om det specifika ursprungs ursprunget redan har Aktiver ATS med kommandot [SPO CDN Origin](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-list/) .
+> När du har lagt till ett CDN-ursprung kan det ta upp till 15 minuter innan du kan hämta filer via CDN-tjänsten. Du kan kontrollera om det specifika ursprunget redan har aktiverats med hjälp av [kommandot för spo cdn-ursprung.](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-list/)
 
 ### <a name="remove-an-office-365-cdn-origin"></a>Ta bort ett Office 365 CDN-ursprung
 
-Använd kommandot [SPO CDN Origin ta bort](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-remove/) om du vill ta bort ett CDN-ursprung för den angivna CDN-typen.
+Använd kommandot [ta bort spo cdn-ursprung](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-remove/) för att ta bort ett CDN-ursprung för den angivna CDN-typen.
 
 Om du vill ta bort ett offentligt ursprung från CDN-konfigurationen kör du:
 
@@ -816,7 +816,7 @@ spo cdn origin remove --type Public --origin */masterpage
 ```
 
 > [!NOTE]
-> Om du tar bort ett CDN-ursprung påverkas inte filerna som lagras i ett dokument bibliotek som matchar ursprunget. Om de här till gångarna har refererats till med deras SharePoint-URL växlar SharePoint automatiskt tillbaka till den ursprungliga URL-adressen som pekar på dokument biblioteket. Om till gångar har refererats till med en offentlig CDN-URL kommer länken att brytas och du måste ändra dem manuellt.
+> När du tar bort ett CDN-ursprung påverkar det inte de filer som lagrats i något dokumentbibliotek som matchar ursprunget. Om tillgångarna har refererats med hjälp av deras SharePoint-URL kommer SharePoint automatiskt att växla tillbaka till den ursprungliga URL-adressen som pekar till dokumentbiblioteket. Om tillgångar har refererats med en offentlig CDN-URL bryter borttagningen länken och du måste ändra dem manuellt.
 
 ### <a name="modify-an-office-365-cdn-origin"></a>Ändra ett Office 365 CDN-ursprung
 
@@ -824,25 +824,25 @@ Det går inte att ändra ett befintligt CDN-ursprung. I stället bör du ta bort
 
 ### <a name="change-the-types-of-files-to-include-in-the-office-365-cdn"></a>Ändra vilka typer av filer som ska ingå i Office 365 CDN
 
-Följande filtyper ingår som standard i CDN: _. CSS,. EOT,. gif,. ico,. jpeg,. jpg,. js,. map,. png,. SVG,. ttf,. WOFF och. woff2_. Om du behöver ta med fler filtyper i CDN kan du ändra CDN-konfigurationen med hjälp av [SPO CDN-princip uppsättning](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-policy-set/) .
+Som standard ingår följande filtyper i CDN: _.css, .eot, .gif, .ico, .jpeg, .jpg, .js, .map, .png, .svg, .ttf, .woff och .woff2_. Om du behöver ta med ytterligare filtyper i CDN kan du ändra CDN-konfigurationen med hjälp av [kommandot för spo cdn-principen.](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-policy-set/)
 
 > [!NOTE]
-> När du ändrar listan med filtyper skriver du över den för tillfället definierade listan. Om du vill inkludera fler filtyper måste du först använda kommandot [SPO CDN policy List](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-list/) för att ta reda på vilka filtyper som är konfigurerade för tillfället.
+> När du ändrar listan över filtyper skriver du över den definierade listan. Om du vill ta med ytterligare filtyper använder du först [spo cdn-principlistan](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-list/) för att ta reda på vilka filtyper som är konfigurerade.
 
-Om du vill lägga till _JSON_ -filtypen i standard listan med filtyper som ingår i Public CDN kör du:
+Om du vill _lägga till JSON-filtypen_ i standardlistan över filtyper som ingår i det offentliga CDN kör du:
 
 ```sh
 spo cdn policy set --type Public --policy IncludeFileExtensions --value "CSS,EOT,GIF,ICO,JPEG,JPG,JS,MAP,PNG,SVG,TTF,WOFF,JSON"
 ```
 
-### <a name="change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn"></a>Ändra listan över webbplats klassificeringar som du vill undanta från Office 365 CDN
+### <a name="change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn"></a>Ändra listan över webbplatsklassificeringarna som du vill utesluta från Office 365 CDN
 
-Använd kommandot [SPO CDN-princip uppsättning](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-policy-set/) för att undanta webbplats klassificeringar som du inte vill göra tillgängliga via CDN. Som standard utesluts inga webbplats klassificeringar.
+Använd kommandot [för SPO CDN-principuppsättning](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-policy-set/) till att utesluta webbplatsklassificeringarna som du inte vill ska vara tillgängliga via CDN. Som standard utesluts inga webbplatsklassificeringar.
 
 > [!NOTE]
-> När du ändrar listan med undantagna webbplats klassificeringar skriver du över den för tillfället definierade listan. Om du vill undanta ytterligare klassificeringar bör du först använda kommandot [SPO CDN policy List](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-policy-list/) för att ta reda på vilka klassificeringar som för tillfället är konfigurerade.
+> När du ändrar listan med undantagna webbplatsklassificeringar skriver du över den definierade listan. Om du vill utesluta ytterligare klassificeringar använder du först [listkommandot för spo cdn-principen](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-policy-list/) för att ta reda på vilka klassificeringar som är konfigurerade.
 
-Om du vill undanta webbplatser som klassificerats som _HBI_ från Public CDN kör du
+Om du vill utesluta webbplatser som klassificerats som _HBI_ från den offentliga CDN kör du
 
 ```sh
 spo cdn policy set --type Public --policy ExcludeRestrictedSiteClassifications --value "HBI"
@@ -850,7 +850,7 @@ spo cdn policy set --type Public --policy ExcludeRestrictedSiteClassifications -
 
 ### <a name="disable-the-office-365-cdn"></a>Inaktivera Office 365 CDN
 
-Så här inaktiverar du Office 365 CDN Använd `spo cdn set` kommandot, till exempel:
+Om du vill inaktivera Office 365 CDN använder `spo cdn set` du kommandot, till exempel:
 
 ```sh
 spo cdn set --type Public --enabled false
@@ -858,183 +858,186 @@ spo cdn set --type Public --enabled false
 
 </details>
 
-## <a name="using-your-cdn-assets"></a>Använda dina CDN-till gångar
+## <a name="using-your-cdn-assets"></a>Använda dina CDN-tillgångar
 
-Nu när du har aktiverat CDN och konfigurerat ursprung och policy kan du börja använda dina CDN-till gångar.
+Nu när du har aktiverat CDN och konfigurerade ursprung och principer kan du börja använda dina CDN-tillgångar.
 
-I det här avsnittet får du lära dig hur du använder CDN-URL: er på dina SharePoint-sidor och-innehåll så att SharePoint dirigerar om förfrågningar till till gångar i både offentliga och privata ursprung till CDN.
+Det här avsnittet hjälper dig att förstå hur du använder CDN-URL:er i dina SharePoint-sidor och innehåll så att SharePoint omdirigerar förfrågningar för tillgångar i både offentliga och privata ursprung till CDN.
 
-+ [Uppdatera länkar till CDN-till gångar](use-microsoft-365-cdn-with-spo.md#updating-links-to-cdn-assets)
-+ [Använda till gångar i offentliga ursprung](use-microsoft-365-cdn-with-spo.md#using-assets-in-public-origins)
-+ [Använda till gångar i privata ursprung](use-microsoft-365-cdn-with-spo.md#using-assets-in-private-origins)
++ [Uppdatera länkar till CDN-tillgångar](use-microsoft-365-cdn-with-spo.md#updating-links-to-cdn-assets)
++ [Använda tillgångar i offentliga ursprung](use-microsoft-365-cdn-with-spo.md#using-assets-in-public-origins)
++ [Använda tillgångar i privata ursprung](use-microsoft-365-cdn-with-spo.md#using-assets-in-private-origins)
 
-Information om hur du använder CDN för att vara värd för klient webb delar finns i artikeln värd för [klient sidan från Office 365 CDN (Hej världen 4)](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn).
+Information om hur du använder CDN för värd för klientwebbdelar finns i avsnittet Vara värd för din klientwebbdel från [Office 365 CDN (Hello World del 4).](/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)
 
 > [!NOTE]
-> Om du lägger till mappen _ClientSideAssets_ i listan **privata** CDN-ursprung går det inte att rendera CDN-anpassade webb delar. Filer som används av SPFX webb delar kan bara använda det offentliga CDN och ClientSideAssets-mappen är ett standard ursprung för offentlig CDN. 
+> Om du lägger till _mappen ClientSideAssets_ i den privata CDN-ursprungslistan går det inte att återge CDN-värdbaserade anpassade webbdelar.  Filer som används av SPFX-webbdelar kan endast använda den offentliga CDN och mappen ClientSideAssets är ett standard ursprung för offentlig CDN. 
 
-### <a name="updating-links-to-cdn-assets"></a>Uppdatera länkar till CDN-till gångar
+### <a name="updating-links-to-cdn-assets"></a>Uppdatera länkar till CDN-tillgångar
 
-Om du vill använda till gångar som du har lagt till i ett ursprung uppdaterar du bara länkar till den ursprungliga filen med sökvägen till filen i origo.
+Om du vill använda tillgångar som du har lagt till i ett ursprung uppdaterar du bara länkar till den ursprungliga filen med sökvägen till filen i ursprunget.
 
-+ Redigera sidan eller innehållet som innehåller länkar till till gångar som du har lagt till i ett ursprung. Du kan också använda en av flera metoder för att globalt söka och ersätta länkar på en webbplats eller webbplats samling om du vill uppdatera länken till en viss till gång överallt där den visas.
-+ För varje länk till en till gång i ett ursprung ersätter du sökvägen med sökvägen till filen i CDNs ursprung. Du kan använda relativa sökvägar.
++ Redigera sidan eller innehållet som innehåller länkar till tillgångar som du har lagt till i ett ursprung. Du kan också använda en av flera metoder för att globalt söka och ersätta länkar över en ange webbplats eller webbplatssamling om du vill uppdatera länken till en viss tillgång överallt där den visas.
++ För varje länk till en tillgång i ett ursprung ersätter du sökvägen med sökvägen till filen i CDN-ursprunget. Du kan använda relativa sökvägar.
 + Spara sidan eller innehållet.
 
-Titta exempelvis på bild _/site/SiteAssets/images/image.png_som du har kopierat till mappen dokument bibliotek _/Site/CDN_origins/Public/_. Om du vill använda CDN-resursen ersätter du den ursprungliga sökvägen till bild filens plats med sökvägen till origo för att skapa den nya URL-adressen _/site/CDN_origins/public/image.png_.
+Överväg till exempel bilden _/site/SiteAssets/images/image.png_, som du har kopierat till dokumentbiblioteksmappen _/site/CDN_origins/public/_. Om du vill använda CDN-tillgången ersätter du den ursprungliga sökvägen till bildfilens plats med sökvägen till ursprunget för att göra den nya _URL:en /webbplats/CDN_origins/offentlig/image.png_.
 
-Om du vill använda den fullständiga URL-adressen till resursen i stället för en relativ sökväg skapar du länken så här:
+Om du vill använda den fullständiga URL:en till tillgången i stället för en relativ sökväg skapar du länken så här:
 
 `https://<TenantHostName>.sharepoint.com/sites/site/CDN_origins/public/image.png`
 
 > [!NOTE]
-> I allmänhet ska du inte hardcode URL-adresser direkt till till gångar i CDN. Du kan dock manuellt skapa URL-adresser till till gångar i offentliga ursprung om det behövs. Mer information finns i [HARDCODING CDN URL: er för offentliga till gångar](use-microsoft-365-cdn-with-spo.md#hardcoding-cdn-urls-for-public-assets).
+> I allmänhet bör du inte hårdkoda URL-adresser direkt till tillgångar i CDN. Du kan dock manuellt skapa URL-adresser för tillgångar i offentliga ursprung om det behövs. Mer information finns i [Hardcoding CDN URL:er för offentliga tillgångar.](use-microsoft-365-cdn-with-spo.md#hardcoding-cdn-urls-for-public-assets)
 
-Om du vill veta mer om hur du kontrollerar att till gångar bearbetas från CDN kan [du läsa Hur kontrollerar jag att till gångar betjänas av CDN?](use-microsoft-365-cdn-with-spo.md#CDNConfirm) i [fel sökning i avsnittet Office 365 CDN](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting) .
+Mer information om hur du verifierar att tillgångar kommer från CDN finns i Hur bekräftar jag att tillgångar används i [CDN?](use-microsoft-365-cdn-with-spo.md#CDNConfirm) i avsnittet Felsökning av [Office 365 CDN.](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting)
 
-### <a name="using-assets-in-public-origins"></a>Använda till gångar i offentliga ursprung
+### <a name="using-assets-in-public-origins"></a>Använda tillgångar i offentliga ursprung
 
-Med **publicerings funktionen** i SharePoint Online skrivs automatiskt om URL-adresser till till gångar som lagras i offentliga ursprung till deras CDN-motsvarigheter, så att till gångar behandlas från CDN-tjänsten i stället för SharePoint.
+Publiceringsfunktionen **i** SharePoint Online skriver automatiskt om URL-adresser för tillgångar som lagras i offentliga ursprung till sina CDN-motsvarigheter så att tillgångar hämtas från CDN-tjänsten i stället för från SharePoint.
 
-Om ditt ursprung finns på en webbplats där publicerings funktionen är aktive rad och de till gångar som du vill ladda in till CDN finns i någon av följande kategorier, skrivs URL-adresser automatiskt om till till gångar i ursprungslandet, förutsatt att till gången inte har uteslutits av en CDN policy.
+Om ditt ursprung är på en webbplats där publiceringsfunktionen är aktiverad och tillgångarna du vill lägga i för tillgångar till CDN finns i någon av följande kategorier, skriver SharePoint automatiskt om URL-adresser för tillgångar i ursprunget, förutsatt att tillgången inte har uteslutits av en CDN-princip.
 
-Här följer en översikt över vilka länkar som automatiskt skrivs om av publicerings funktionen för SharePoint:
+Nedan följer en översikt över vilka länkar som automatiskt skrivs om av funktionen för SharePoint-publicering:
 
-+ IMG/LINK/CSS URL-adresser i klassisk publicerings sida HTML-svar
-  + Här ingår bilder som lagts till av författare i HTML-innehåll på en sida
-+ Bild-URL: er för bild bibliotek
-+ Bildfält i RenderListDataAsStream-resultat (SPList REST API)
-  + Använd den nya egenskapen _ImageFieldsToTryRewriteToCdnUrls_ för att ange en kommaseparerad lista med fält
-  + Stöd för hyperlänkfält och PublishingImage-fält
-+ Bild åter givningar för SharePoint
++ HTML-svar för IMG/LINK/CSS
+  + Det omfattar bilder som har lagts till av författare i HTML-innehåll på en sida
++ URL-adresser för webbdelen Bildspel för bildbibliotek
++ Bildfält i SPList REST API-resultat (RenderListDataAsStream)
+  + Använda den nya egenskapen _ImageFieldsToTryRewriteToCdnUrls_ till att ange en kommaavgränsad lista med fält
+  + Stöd för hyperlänkfält och publiceringsbildfält
++ SharePoint-bildåtergivningar
 
-I följande diagram visas arbets flödet när SharePoint tar emot en begäran om en sida som innehåller till gångar från ett offentligt ursprung.
+I följande diagram visas arbetsflödet när SharePoint tar emot en begäran om en sida som innehåller tillgångar från ett offentligt ursprung.
 
-![Arbets flödes diagram: Hämta Office 365 CDN-till gångar från ett offentligt ursprung](../media/O365-CDN/o365-cdn-public-steps-transparent.svg "Arbets flöde: Hämta Office 365 CDN-till gångar från ett offentligt ursprung")
+![Arbetsflödesdiagram: Hämta Office 365 CDN-tillgångar från ett offentligt ursprung](../media/O365-CDN/o365-cdn-public-steps-transparent.svg "Arbetsflöde: Hämta Office 365 CDN-tillgångar från ett offentligt ursprung")
 
 > [!TIP]
-> Om du vill inaktivera automatisk omskrivning för specifika URL-adresser på en sida kan du checka ut sidan och lägga till parametern frågesträng **? NoAutoReWrites = sant** till slutet av varje länk som du vill inaktivera.
+> Om du vill inaktivera automatisk omskrivning av specifika URL:er på en sida kan du gå till sidan och lägga till frågesträngparametern **? NoAutoReWrites=true** i slutet av varje länk du vill inaktivera.
 
-#### <a name="hardcoding-cdn-urls-for-public-assets"></a>Hardcoding CDN-URL: er för offentliga till gångar
+#### <a name="constructing-cdn-urls-for-public-assets"></a>Konstruera CDN-URL:er för offentliga tillgångar
 
-Om _publicerings_ funktionen inte är aktive rad för ett offentligt ursprung, eller om till gången inte är en av de länk typer som stöds av funktionen automatisk omskrivning i CDN-tjänsten, kan du skapa URL-adresser till till GÅNGARnas CDN-plats och använda dessa URL-adresser i innehållet.
+Om funktionen _Publicera_ inte är aktiverad för ett offentligt ursprung, eller om tillgången inte är en av länktyperna som stöds av funktionen för automatisk omskrivning i CDN-tjänsten, kan du manuellt skapa URL:er till CDN-platsen för tillgångarna och använda url:erna i innehållet.
 
 > [!NOTE]
-> Du kan inte hardcode CDN-URL: er till till gångar i ett privat ursprung eftersom den nödvändiga åtkomsttoken som utgör den sista delen av URL-adressen genereras när resursen begärs.
+> Du kan inte hårdkoda eller skapa CDN-URL:er till tillgångar i ett privat ursprung eftersom den obligatoriska åtkomsttoken som utgör url-adressens sista avsnitt genereras när resursen begärs. Du kan skapa URL-adressen för offentlig CDN och URL-adressen ska inte vara hårdkodad eftersom den kan komma att ändras.
 
-För offentliga CDN-till gångar ser URL-formatet ut så här:
+För offentliga CDN-tillgångar ser URL-formatet ut så här:
 
 ``` html
 https://publiccdn.sharepointonline.com/<TenantHostName>/sites/site/library/asset.png
 ```
 
-Ersätt **TenantHostName** med klient namnet. Exempel:
+Ersätt **TenantHostName** med ditt klientnamn. Exempel:
 
 ``` html
 https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library/asset.png
 ```
+> [!NOTE]
+> Sidsammanhangsegenskapen ska användas för att skapa prefixet i stället för hårdkodning " https://publiccdn.sharepointonline.com ". URL-adressen kan komma att ändras och ska inte vara hårdkodad. Om du använder visningsmallar med klassiska SharePoint Online kan du använda egenskapen "window._spPageContextInfo.publicCdnBaseUrl" i visningsmallen för prefixet på URL-adressen. Om du är SPFx-webbdelar för moderna och klassiska SharePoint kan du använda egenskapen "this.context.pageContext.legacyPageContext.publicCdnBaseUrl". Det ger prefixet så att din implementering uppdateras med den om den ändras. Som exempel för SPFx kan URL-adressen skapas med egenskapen "this.context.pageContext.legacyPageContext.publicCdnBaseUrl" + "/" + "host" + "/" + "relativeURL för objektet". Se [Använda CDN i Klientkod som är](https://youtu.be/IH1RbQlbhIA) en del av prestandaserien [för säsong 1](https://aka.ms/sppnp-perfvideos)
 
-### <a name="using-assets-in-private-origins"></a>Använda till gångar i privata ursprung
 
-Ingen ytterligare konfiguration krävs för att använda till gångar i privata ursprung. I SharePoint Online skrivs URL-adresser automatiskt om för till gångar i privata ursprung så att begär Anden för dessa till gångar alltid kommer från CDN. Du kan inte skapa URL: er till CDN-till gångar manuellt i privata ursprung eftersom dessa URL: er innehåller tokens som måste genereras automatiskt av SharePoint Online när du begär till gången.
+### <a name="using-assets-in-private-origins"></a>Använda tillgångar i privata ursprung
 
-Åtkomst till till gångar i privata ursprung skyddas av dynamiskt genererade token baserat på användar behörigheter till ursprung, med de villkor som beskrivs i följande avsnitt. Användare måste minst ha **Läs** behörighet till ursprungen för att det ska gå att rendera innehållet.
+Ingen ytterligare konfiguration krävs för att använda tillgångar i privata ursprung. SharePoint Online skriver automatiskt om URL-adresser för tillgångar i privata ursprung så att förfrågningar om dessa tillgångar alltid kommer att hämtas från CDN. Du kan inte skapa URL-adresser till CDN-tillgångar manuellt i privata ursprung eftersom dessa URL:er innehåller token som måste skapas automatiskt av SharePoint Online när tillgången begärs.
 
-I följande diagram visas arbets flödet när SharePoint tar emot en begäran om en sida som innehåller till gångar från ett privat ursprung.
+Åtkomst till tillgångar i privata ursprung skyddas av dynamiskt genererade token baserat på användarbehörigheter till ursprunget, med de varningar som beskrivs i följande avsnitt. Användarna måste ha minst **läsbehörighet** till ursprungen för att CDN ska kunna återge innehåll.
 
-![Arbets flödes diagram: Hämta Office 365 CDN-till gångar från ett privat ursprung](../media/O365-CDN/o365-cdn-private-steps-transparent.svg "Arbets flöde: Hämta Office 365 CDN-till gångar från ett privat ursprung")
+Följande diagram visar arbetsflödet när SharePoint tar emot en begäran om en sida som innehåller tillgångar från ett privat ursprung.
 
-#### <a name="token-based-authorization-in-private-origins"></a>Token-baserad auktorisering i privata ursprung
+![Arbetsflödesdiagram: Hämta Office 365 CDN-tillgångar från ett privat ursprung](../media/O365-CDN/o365-cdn-private-steps-transparent.svg "Arbetsflöde: Hämta Office 365 CDN-tillgångar från ett privat ursprung")
 
-Åtkomst till till gångar i privata ursprung i Office 365 CDN beviljas av tokens som genererats av SharePoint Online. Användare som redan har behörighet att komma åt mappen eller biblioteket som anges av ursprunget beviljas automatiskt token som gör att användaren kan komma åt filen baserat på deras behörighets nivå. Dessa åtkomsttoken är giltiga i 30 till 90 minuter efter att de genererats för att förhindra repetition av token.
+#### <a name="token-based-authorization-in-private-origins"></a>Tokenbaserad auktorisering i privata ursprung
 
-När Access-token har genererats returnerar SharePoint Online en anpassad URI till klienten med två verifierings _Parametrar:_ dela (Edge Authorization token) och _OAT_ (ursprunglig Authorization token). Strukturen för varje token är _< "förfallo tid i test perioden" >__< "säker signatur" >_. Till exempel:
+Åtkomst till tillgångar i privata ursprung i Office 365 CDN tilldelas med token som genereras av SharePoint Online. Användare som redan har åtkomst till mappen eller biblioteket som anges av ursprunget tilldelas automatiskt token som tillåter användaren att komma åt filen baserat på deras behörighetsnivå. De här åtkomsttoken är giltiga i 30 till 90 minuter efter att de har skapats för att förhindra attacker vid tokenuppspelning.
+
+När åtkomsttoken har genererats returnerar SharePoint Online en anpassad  URI till klienten som innehåller två auktoriseringsparametrar äter (edge-auktoriseringstoken) och _oat_ (origin authorization token). Strukturen för varje token _är< förfallotid i Epoch-tidsformatet som >__< säkra signaturens >._ Ett exempel:
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
 ```
 
 > [!NOTE]
-> Alla som har ett token kan komma åt resursen i CDN. URL-adresser med dessa åtkomsttoken delas bara över HTTPS, så såvida inte URL: en uttryckligen delas av en slutanvändare innan token går ut är till gången inte tillgänglig för obehöriga användare.
+> Alla som äger token kan komma åt resursen i CDN. Url-adresser som innehåller dessa åtkomsttoken delas däremot bara över HTTPS, så om inte URL:en uttryckligen delas av en slutanvändare innan tokenen löper ut kommer tillgången inte att vara tillgänglig för obehöriga användare.
 
-#### <a name="item-level-permissions-are-not-supported-for-assets-in-private-origins"></a>Behörigheter på objekt nivå stöds inte för till gångar i privata ursprung
+#### <a name="item-level-permissions-are-not-supported-for-assets-in-private-origins"></a>Behörigheter på objektnivå stöds inte för tillgångar i privata ursprung
 
-Det är viktigt att du är medveten om att SharePoint Online inte hanterar behörigheter på objekt nivå för till gångar i privata ursprung. Användare har till exempel en `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg` effektiv åtkomst till filen med följande villkor:
+Det är viktigt att observera att SharePoint Online inte stöder behörigheter på objektnivå för tillgångar i privata ursprung. För en fil som finns på `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg` , har användarna till exempel effektiv åtkomst till filen enligt följande villkor:
 
 |Användare  |Behörigheter  |Effektiv åtkomst  |
 |---------|---------|---------|
-|Användare 1     |Har åtkomst till Mapp1         |Kan komma åt image1.jpg från CDN         |
-|Användare 2     |Har inte åtkomst till Mapp1         |Det går inte att komma åt image1.jpg från CDN         |
-|Användare 3     |Har inte åtkomst till Mapp1, men har uttryckligen tillåtelse att komma åt image1.jpg i SharePoint Online         |Kan komma åt till gången image1.jpg direkt från SharePoint Online, men inte från CDN         |
-|Användare 4     |Har åtkomst till Mapp1, men har uttryckligen nekats åtkomst till image1.jpg i SharePoint Online         |Det går inte att komma åt till gången från SharePoint Online men kan komma åt till gången från CDN trots att den nekas åtkomst till filen i SharePoint Online         |
+|Användare 1     |Har åtkomst till mapp1         |Kan komma image1.jpg från CDN         |
+|Användare 2     |Har inte åtkomst till mapp1         |Kan inte image1.jpg från CDN         |
+|Användare 3     |Har inte åtkomst till mapp1, men tilldelas uttrycklig åtkomstbehörighet för image1.jpg i SharePoint Online         |Kan komma åt image1.jpg direkt från SharePoint Online, men inte från CDN         |
+|Användare 4     |Har åtkomst till mapp1, men har uttryckligen nekats åtkomst till image1.jpg i SharePoint Online         |Kan inte komma åt tillgången från SharePoint Online, men kan komma åt tillgången från CDN trots att åtkomst till filen nekas i SharePoint Online         |
 
 <a name="CDNTroubleshooting"> </a>
 ## <a name="troubleshooting-the-office-365-cdn"></a>Felsöka Office 365 CDN
 
 <a name="CDNConfirm"> </a>
-### <a name="how-do-i-confirm-that-assets-are-being-served-by-the-cdn"></a>Hur bekräftar jag att till gångar betjänas av CDN?
+### <a name="how-do-i-confirm-that-assets-are-being-served-by-the-cdn"></a>Hur bekräftar jag att tillgångar används av CDN?
 
-När du har lagt till länkar till CDN-till gångar på en sida kan du bekräfta att till gången betjänas från CDN genom att bläddra till sidan och högerklicka på bilden när den har Render ATS och granska bild-URL: en.
+När du har lagt till länkar till CDN-tillgångar på en sida kan du bekräfta att tillgången kommer från CDN genom att gå till sidan, högerklicka på bilden när den har visats och granskat bild-URL:en.
 
-Du kan också använda din webbläsares utvecklingsverktyg för att Visa webb adressen för varje objekt på en sida eller använda en tredjepartsleverantör för nätverks spårning.
+Du kan också använda webbläsarens utvecklarverktyg för att visa URL-adressen för varje tillgång på en sida, eller använda ett nätverksspårningsverktyg från tredje part.
 
 > [!NOTE]
-> Om du använder ett nätverks verktyg som/Fiddler-loggar för att testa dina till gångar från en SharePoint-sida, måste du lägga till referens rubriken "referering: `https://yourdomain.sharepoint.com` " till GET-begäran där URL-adressen är rot-URL för SharePoint Online-klienten.
+> Om du använder ett nätverksverktyg, till exempel Fiddler, för att testa dina tillgångar utanför att återge tillgången från en SharePoint-sida, måste du manuellt lägga till refererhuvudet "Referer: " i GET-begäran där URL:en är rot-URL:en för `https://yourdomain.sharepoint.com` SharePoint Online-klientorganisationen.
 
-Du kan inte testa CDN-adresser direkt i en webbläsare eftersom det finns en refererare från SharePoint Online. Om du däremot lägger till URL-adressen till till gången på en SharePoint-sida och sedan öppnar sidan i en webbläsare visas CDN-resursen som återges på sidan.
+Du kan inte testa CDN-URL:er direkt i en webbläsare eftersom du måste ha en referent från SharePoint Online. Men om du lägger till CDN-resurs-URL:en på en SharePoint-sida och sedan öppnar sidan i en webbläsare, ser du CDN-tillgången återges på sidan.
 
-Mer information om hur du använder utvecklingsverktygen i webbläsaren Microsoft Edge finns i [Microsoft Edge Developer Tools](https://docs.microsoft.com/microsoft-edge/devtools-guide).
+Mer information om hur du använder utvecklarverktygen i webbläsaren Microsoft Edge finns i [Utvecklarverktyg för Microsoft Edge.](/microsoft-edge/devtools-guide)
 
-Om du vill titta på en kort video som finns i [SharePoint-utvecklingsverktygen och Practices YouTube-kanalen](https://aka.ms/sppnp-videos) som visar hur du kontrollerar att CDN fungerar, se [Verifiera ditt CDN-bruk och säkerställa optimal nätverks anslutning](https://www.youtube.com/watch?v=ClCtBAtGjE8&list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA&index=5).
+Om du vill titta på en kort video som finns i [YouTube-kanalen SharePoint Developer Patterns and Practices](https://aka.ms/sppnp-videos) och visa hur du verifierar att CDN fungerar kan du gå till Verifiera din CDN-användning och säkerställa [optimal nätverksanslutning.](https://www.youtube.com/watch?v=ClCtBAtGjE8&list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA&index=5)
 
-### <a name="why-are-assets-from-a-new-origin-unavailable"></a>Varför är inte till gångar från ett nytt ursprungs ursprung?
-Till gångar i nya ursprung är inte omedelbart tillgängliga för användning, eftersom det tar tid för registreringen att sprida sig genom CDN och för till gångar att laddas upp från origo till CDN-lagring. Den tid som krävs för att till gångar ska vara tillgänglig i CDN beror på hur många till gångar och filernas storlek.
+### <a name="why-are-assets-from-a-new-origin-unavailable"></a>Varför är tillgångar från ett nytt ursprung inte tillgängliga?
+Tillgångar i nya ursprung blir inte omedelbart tillgängliga för användning eftersom det tar tid för registreringen att spridas via CDN och för tillgångar som ska laddas upp från ursprunget till CDN-lagringen. Hur lång tid som krävs för att tillgångar ska vara tillgänglig i CDN beror på hur många tillgångar och filstorlekar som krävs.
 
-### <a name="my-client-side-web-part-or-sharepoint-framework-solution-isnt-working"></a>Min webb dels klient eller SharePoint Framework-lösning fungerar inte
+### <a name="my-client-side-web-part-or-sharepoint-framework-solution-isnt-working"></a>Min klientwebbdel eller SharePoint Framework-lösning fungerar inte
 
-När du aktiverar Office 365 CDN för offentliga ursprung, skapar CDN-tjänsten automatiskt dessa standard ursprung:
+När du aktiverar Office 365 CDN för offentliga ursprung skapar CDN-tjänsten automatiskt följande standard origins:
 
 + */MASTERPAGE
-+ */STYLE-BIBLIOTEK
++ */STYLE LIBRARY
 + */CLIENTSIDEASSETS
 
-Om */clientsideassets-Origo saknas Miss lyckas SharePoint Framework-lösningar och ingen varnings-eller fel meddelanden genereras. Detta ursprung kan saknas antingen på grund av att CDN aktiverades med parametern _-NoDefaultOrigins_ inställd på **$True**, eller på grund av att origo togs bort manuellt.
+Om ursprunget */clientsideassets saknas kommer SharePoint Framework-lösningar att misslyckas och inga varningar eller felmeddelanden skapas. Det här ursprunget kanske saknas antingen eftersom CDN aktiverades med parametern _-NoDefaultOrigins_ inställd **på $true**, eller eftersom ursprunget togs bort manuellt.
 
-Du kan kontrol lera vilka ursprung som finns med följande PowerShell-kommando:
+Du kan kontrollera vilka ursprung som finns med följande PowerShell-kommando:
 
 ``` powershell
 Get-SPOTenantCdnOrigins -CdnType Public
 ```
 
-Eller så kan du kontrol lera med Office 365-CLI:
+Eller så kan du kontrollera med Office 365 CLI:
 
 ``` powershell
 spo cdn origin list
 ```
 
-Så här lägger du till ursprung i PowerShell:
+Så här lägger du till ursprunget i PowerShell:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */CLIENTSIDEASSETS
 ```
 
-Så här lägger du till ursprunget i Office 365-CLI:
+Så här lägger du till ursprunget i Office 365 CLI:
 
 ``` powershell
 spo cdn origin add --origin */CLIENTSIDEASSETS
 ```
 
-### <a name="what-powershell-modules-and-cli-shells-do-i-need-to-work-with-the-office-365-cdn"></a>Vilka PowerShell-moduler och CLI-gränssnitt behöver jag för att arbeta med Office 365 CDN?
+### <a name="what-powershell-modules-and-cli-shells-do-i-need-to-work-with-the-office-365-cdn"></a>Vilka PowerShell-moduler och CLI-gränssnitt behöver jag arbeta med Office 365 CDN?
 
-Du kan välja att arbeta med Office 365 CDN med antingen **SharePoint Online Management Shell** PowerShell-modulen eller **Office 365-CLI**.
+Du kan välja att arbeta med Office 365 CDN med hjälp av **antingen SharePoint Online Management Shell** PowerShell-modulen eller **Office 365 CLI.**
 
-+ [Komma igång med SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
-+ [Installera Office 365-CLI](https://pnp.github.io/office365-cli/user-guide/installing-cli/)
++ [Komma igång med SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
++ [Installera Office 365 CLI](https://pnp.github.io/office365-cli/user-guide/installing-cli/)
 
 ## <a name="see-also"></a>Se även
 
-[Nätverk för innehålls leverans](https://aka.ms/o365cdns)
+[Nätverk för innehållsleverans (CDN)](./content-delivery-networks.md)
 
-[Network planning and performance tuning for Office 365](https://aka.ms/tune)
+[Network planning and performance tuning for Office 365](./network-planning-and-performance.md)
 
-[SharePoint-prestandaräknare – Office 365 CDN-videoserie](https://www.youtube.com/playlist?list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA)
+[SharePoint Performance Series – Office 365 CDN-videoserie](https://www.youtube.com/playlist?list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA)

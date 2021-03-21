@@ -1,5 +1,5 @@
 ---
-title: Visa Microsoft 365-licenser och-tjänster med PowerShell
+title: Visa Microsoft 365-licenser och -tjänster med PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,34 +19,34 @@ ms.custom:
 - LIL_Placement
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
-description: Förklarar hur du använder PowerShell för att visa information om licens planer, tjänster och licenser som är tillgängliga i din Microsoft 365-organisation.
-ms.openlocfilehash: 3275a513de3c114076e792ab6c5ef86b1413571c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Förklarar hur du använder PowerShell för att visa information om licensplaner, tjänster och licenser som är tillgängliga i din Microsoft 365-organisation.
+ms.openlocfilehash: 08f48301001ee6a40318428f3310eab8b0d0a351
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694560"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924642"
 ---
-# <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>Visa Microsoft 365-licenser och-tjänster med PowerShell
+# <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>Visa Microsoft 365-licenser och -tjänster med PowerShell
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Alla Microsoft 365-prenumerationer består av följande element:
+Varje Microsoft 365-prenumeration består av följande element:
 
-- **Licens planer** Dessa kallas även licens planer eller Microsoft 365-abonnemang. Licens planer definierar vilka Microsoft 365-tjänster som är tillgängliga för användarna. Ditt Microsoft 365-abonnemang kan innehålla flera licens planer. Ett exempel på en licens plan är Microsoft 365 E3.
+- **Licensplaner** Dessa kallas även licensplaner eller Microsoft 365-abonnemang. Licensplaner definierar de Microsoft 365-tjänster som är tillgängliga för användare. Din Microsoft 365-prenumeration kan innehålla flera licensabonnemang. Ett exempel på en licensieringsplan är Microsoft 365 E3.
     
-- **Tjänster** De här kallas även för tjänste abonnemang. Tjänster är Microsoft 365-produkter,-funktioner och-funktioner som är tillgängliga i varje licens plan, till exempel Exchange Online och Microsoft 365-appar för företag (tidigare kallat Office 365 ProPlus). Användare kan ha flera licenser tilldelade till dem från olika licens planer som beviljar åtkomst till olika tjänster.
+- **Tjänster** De kallas även tjänstplaner. Tjänster är Microsoft 365-produkter, -funktioner och -funktioner som är tillgängliga i varje licensplan, till exempel Exchange Online och Microsoft 365-appar för företag (kallades tidigare Office 365 ProPlus). Användare kan ha flera licenser tilldelade till sig från olika licensplaner som beviljar åtkomst till olika tjänster.
     
-- **Licenser** Varje licens plan innehåller antalet licenser som du har köpt. Du tilldelar licenser till användarna så att de kan använda Microsoft 365-tjänsterna som definieras av licens planen. För varje användar konto krävs minst en licens från ett licens abonnemang så att de kan logga in på Microsoft 365 och använda tjänsterna.
+- **Licenser** Varje licensplan innehåller antalet licenser som du har köpt. Du tilldelar användare licenser så att de kan använda De Microsoft 365-tjänster som definieras av licensplanen. Varje användarkonto kräver minst en licens från en licensplan så att de kan logga in på Microsoft 365 och använda tjänsterna.
     
-Du kan använda PowerShell för Microsoft 365 för att visa information om tillgängliga licens planer, licenser och tjänster i din Microsoft 365-organisation. Mer information om produkter, funktioner och tjänster som är tillgängliga i olika Office 365-abonnemang finns i alternativ för [office 365-abonnemang](https://go.microsoft.com/fwlink/p/?LinkId=691147).
+Du kan använda PowerShell för Microsoft 365 för att visa information om tillgängliga licensplaner, licenser och tjänster i Microsoft 365-organisationen. Mer information om de produkter, funktioner och tjänster som är tillgängliga i olika Office 365-prenumerationer finns i [Alternativ för Office 365-abonnemang.](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
 
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för diagramvyn
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för Graph-modulen
 
-Börja [med att ansluta till din Microsoft 365-klient organisation](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Börja med [att ansluta till din Microsoft 365-klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   
-Om du vill visa sammanfattnings information om dina aktuella licens planer och tillgängliga licenser för varje abonnemang kör du det här kommandot:
+Om du vill visa sammanfattningsinformation om dina aktuella licensabonnemang och tillgängliga licenser för varje abonnemang kör du det här kommandot:
   
 ```powershell
 Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty PrepaidUnits
@@ -54,33 +54,33 @@ Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty P
 
 Resultatet innehåller:
   
-- **SkuPartNumber:** Visar tillgängliga licens planer för organisationen. Till exempel `ENTERPRISEPACK` är licens Plans namnet för Office 365 Enterprise E3.
+- **SkuPartNumber:** Visar organisationens tillgängliga licensplaner. `ENTERPRISEPACK`Licensabonnemangnamnet för Office 365 Enterprise, E3.
     
-- **Aktive rad:** Antalet licenser som du har köpt för ett specifikt licens abonnemang.
+- **Aktiverad:** Antalet licenser som du har köpt för ett visst licensabonnemang.
     
-- **ConsumedUnits:** Antalet licenser som du har tilldelat användarna från en viss licens plan.
+- **ConsumedUnits:** Antalet licenser som du har tilldelat användare från en specifik licensplan.
     
-Om du vill visa information om de Microsoft 365-tjänster som är tillgängliga i alla dina licens planer måste du först Visa en lista över dina licens planer.
+Om du vill visa information om de Microsoft 365-tjänster som är tillgängliga i alla dina licensplaner visar du först en lista över dina licensplaner.
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-Sedan lagrar du information om licens planer i en variabel.
+Lagra sedan information om licensplaner i en variabel.
 
 ```powershell
 $licenses = Get-AzureADSubscribedSku
 ```
 
-Nästa steg är att Visa tjänsterna i en specifik licens plan.
+Visa sedan tjänsterna i ett visst licensabonnemang.
 
 ```powershell
 $licenses[<index>].ServicePlans
 ```
 
-\<index> är ett heltal som anger rad numret för licens planen från visningen av `Get-AzureADSubscribedSku | Select SkuPartNumber` kommandot, minus 1.
+\<index> är ett heltal som anger radnumret för licensplanen från visningen av `Get-AzureADSubscribedSku | Select SkuPartNumber` kommandot, minus 1.
 
-Till exempel om visningen av `Get-AzureADSubscribedSku | Select SkuPartNumber` kommandot är det här:
+Om visningen av kommandot `Get-AzureADSubscribedSku | Select SkuPartNumber` till exempel är följande:
 
 ```powershell
 SkuPartNumber
@@ -91,73 +91,73 @@ ENTERPRISEPREMIUM
 FLOW_FREE
 ```
 
-Då är kommandot för att Visa tjänsterna för ENTERPRISEPREMIUM-licens planen det här:
+Kommandot för att visa tjänsterna för ENTERPRISEPREMIUM-licensplanen är följande:
 
 ```powershell
 $licenses[2].ServicePlans
 ```
 
-ENTERPRISEPREMIUM är den tredje raden. Därför är indexvärdet (3-1) eller 2.
+ENTERPRISEPREMIUM är den tredje raden. Därför är indexvärdet (3 –1) eller 2.
 
-En fullständig lista över licens planer (kallas även produkt namn), deras inkluderade tjänste abonnemang och deras motsvarande namn finns i [produkt namn och service plan-ID: n för licensiering](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+En fullständig lista över licensplaner (kallas även produktnamn), deras inkluderade tjänstplaner och deras motsvarande eget namn finns i Produktnamn och [tjänstplansidentifierare för licensiering.](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Använda Microsoft Azure Active Directory-modulen för Windows PowerShell
 
-Börja [med att ansluta till din Microsoft 365-klient organisation](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Börja med [att ansluta till din Microsoft 365-klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 >[!Note]
->Det finns ett PowerShell-skript som automatiserar procedurerna som beskrivs i det här avsnittet. Du kan också använda skript för att visa och inaktivera tjänster i Microsoft 365-organisationen, inklusive Sway. Mer information finns i [inaktivera åtkomst till Sway med PowerShell](disable-access-to-sway-with-microsoft-365-powershell.md).
+>Det finns ett PowerShell-skript som automatiserar procedurerna som beskrivs i det här avsnittet. Med skriptet kan du visa och inaktivera tjänster i din Microsoft 365-organisation, inklusive Sway. Mer information finns i Inaktivera [åtkomst till Sway med PowerShell.](disable-access-to-sway-with-microsoft-365-powershell.md)
 >
     
-Om du vill visa sammanfattnings information om dina aktuella licens planer och tillgängliga licenser för varje abonnemang kör du följande kommando:
+Kör följande kommando om du vill visa sammanfattningsinformation om dina aktuella licensabonnemang och tillgängliga licenser för varje abonnemang:
   
 ```powershell
 Get-MsolAccountSku
 ```
 
 >[!Note]
->PowerShell Core stöder inte Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen och cmdlets med **MSOL** . För att kunna fortsätta använda dessa cmdletar måste du köra dem från Windows PowerShell.
+>PowerShell Core stöder inte Microsoft Azure Active Directory-modul för Windows PowerShell-modulen och-cmdlets med **MSOL** i namnet. Om du vill fortsätta använda dessa cmdlets måste du köra dem från Windows PowerShell.
 >
 
 Resultatet innehåller följande information:
   
-- **AccountSkuId:** Visa tillgängliga licens planer för organisationen med hjälp av syntaxen `<CompanyName>:<LicensingPlan>` .  _\<CompanyName>_ är värdet som du angav när du registrerade dig i Microsoft 365 och är unikt för din organisation. _\<LicensingPlan>_ Värdet är detsamma för alla. Till exempel, i värdet `litwareinc:ENTERPRISEPACK` , företags namnet  `litwareinc` och namnet på licens planen  `ENTERPRISEPACK` , som är system namnet för Office 365 Enterprise E3.
+- **AccountSkuId:** Visa organisationens tillgängliga licensplaner med syntaxen `<CompanyName>:<LicensingPlan>` .  _\<CompanyName>_ är det värde som du angav när du registrerade dig i Microsoft 365 och är unikt för din organisation. Värdet _\<LicensingPlan>_ är detsamma för alla. I värdet är till exempel företagsnamnet och licensplanens namn , som är systemnamnet för `litwareinc:ENTERPRISEPACK`  `litwareinc` Office  `ENTERPRISEPACK` 365 Enterprise E3.
     
-- **ActiveUnits:** Antalet licenser som du har köpt för ett specifikt licens abonnemang.
+- **ActiveUnits:** Antalet licenser som du har köpt för ett visst licensabonnemang.
     
-- **WarningUnits:** Antalet licenser i en licens plan som du inte har förnyat och som upphör att gälla efter 30 dagar.
+- **WarningUnits:** Antalet licenser i ett licensabonnemang som du inte har förnyat och som upphör efter respitperioden på 30 dagar.
     
-- **ConsumedUnits:** Antalet licenser som du har tilldelat användarna från en viss licens plan.
+- **ConsumedUnits:** Antalet licenser som du har tilldelat användare från en specifik licensplan.
     
-Om du vill visa information om de Microsoft 365-tjänster som är tillgängliga i alla dina licens planer kör du följande kommando:
+Om du vill visa information om de Microsoft 365-tjänster som är tillgängliga i alla dina licensplaner kör du följande kommando:
   
 ```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-I följande tabell visas Microsoft 365-tjänstens abonnemang och deras egna namn för de vanligaste tjänsterna. Din lista över tjänste abonnemang kan skilja sig från varandra. 
+I följande tabell visas Microsoft 365-tjänstplaner och deras eget namn för de vanligaste tjänsterna. Listan med tjänstplaner kan se annorlunda ut. 
   
-|**Service plan**|**Beskrivning**|
+|**Serviceplan**|**Beskrivning**|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Microsoft 365-appar för företag *(tidigare kallat Office 365 ProPlus)*  <br/> |
-| `MCOSTANDARD` <br/> |Skype för företag – Online  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Microsoft 365-appar för företag *(kallades tidigare Office 365 ProPlus)*  <br/> |
+| `MCOSTANDARD` <br/> |Skype för företag online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online-abonnemang 2  <br/> |
    
-En fullständig lista över licens planer (kallas även produkt namn), deras inkluderade tjänste abonnemang och deras motsvarande namn finns i [produkt namn och service plan-ID: n för licensiering](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+En fullständig lista över licensplaner (kallas även produktnamn), deras inkluderade tjänstplaner och deras motsvarande eget namn finns i Produktnamn och [tjänstplansidentifierare för licensiering.](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)
 
-Om du vill visa information om de Microsoft 365-tjänster som är tillgängliga i ett specifikt licens abonnemang använder du följande syntax.
+Använd följande syntax för att visa information om de Microsoft 365-tjänster som är tillgängliga i en specifik licensplan.
   
 ```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "<AccountSkuId>"}).ServiceStatus
 ```
 
-I det här exemplet visas de tjänster som är tillgängliga i licens planen litwareinc: ENTERPRISEPACK (Office 365 Enterprise E3).
+Det här exemplet visar de tjänster som är tillgängliga i licensplanen litwareinc:ENTERPRISEPACK (Office 365 Enterprise E3).
   
 ```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
@@ -169,4 +169,4 @@ I det här exemplet visas de tjänster som är tillgängliga i licens planen lit
   
 [Hantera Microsoft 365 med PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Komma igång med PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Börja använda PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)

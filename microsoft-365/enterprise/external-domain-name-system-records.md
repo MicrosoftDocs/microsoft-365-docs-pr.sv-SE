@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: En referenslista över externa DNS-poster att använda när du planerar en distribution av Office 365.
-ms.openlocfilehash: da5a9a1095e50de779ee2fc148803e31583426a2
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: c2384f1e330692d43c923a7932db4c3ff2bc99ae
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694862"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924218"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Externa DNS-poster för Office 365
 
 |||
 |:-----|:-----|
-|![Domän](../media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Vill du se en anpassad lista över DNS-posterna för din Office 365-organisation?** Du [hittar den information du behöver för att skapa Office 365 DNS-poster ](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) för din domän i Office 365.  <br/> **Vill du ha steg för steg instruktioner för hur du lägger till dessa poster hos domänens DNS-värd, t. ex. GoDaddy eller eNom?** [Hitta länkar till steg för steg instruktioner för många vanliga DNS-värdar](https://go.microsoft.com/fwlink/?LinkId=286745). <br/>  **Hänger du kvar för att använda referenslistan för en egen anpassad distribution?** Nedanstående lista bör användas som referens för en anpassad Office 365-distribution. Du måste välj vilka poster som gäller för din organisation och fylla i lämpliga värden. <br/> **Gå tillbaka till **[Nätverksplanering och prestandajustering för Office 365](https://aka.ms/tune)..  <br/> |
+|![Domän](../media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Vill du se en anpassad lista över DNS-posterna för din Office 365-organisation?** Du [hittar den information du behöver för att skapa Office 365 DNS-poster ](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) för din domän i Office 365.  <br/> **Vill du ha steg för steg instruktioner för hur du lägger till dessa poster hos domänens DNS-värd, t. ex. GoDaddy eller eNom?** [Hitta länkar till steg för steg instruktioner för många vanliga DNS-värdar](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). <br/>  **Hänger du kvar för att använda referenslistan för en egen anpassad distribution?** Nedanstående lista bör användas som referens för en anpassad Office 365-distribution. Du måste välj vilka poster som gäller för din organisation och fylla i lämpliga värden. <br/> **Gå tillbaka till**[Nätverksplanering och prestandajustering för Office 365](./network-planning-and-performance.md)..  <br/> |
 
 Ofta är SPF-och MX-posterna svårast att reda ut. Vi har uppdaterat vår vägledning för SPF-poster i slutet av den här artikeln. Det viktiga att komma ihåg är att _du bara kan ha en enda SPF-post för domänen_. Du kan ha flera MX-poster men det kan orsaka problem med e-postleveranser. Om du har en enda MX-post som dirigerar e-post till ett e-postsystem undviker du många möjliga problem.
   
@@ -47,8 +47,8 @@ Alla Office 365-kunder måste lägga till två poster i sin externa DNS. Den fö
 ||||
 |:-----|:-----|:-----|
 |**DNS-post** <br/> |**Syfte** <br/> |**Värde som ska användas** <br/> |
-|**CNAME** <br/> **(Serie)** <br/> |Används av Office 365 för att dirigera autentiseringen till rätt identitetsplattform. [Mer information](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **Obs1:** Detta CNAME gäller bara för Office 365 som drivs av 21Vianet. [Mer information](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)  |**Alias:** msoid  <br/> **Target:** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
-|**TXT** <br/> **(Domänverifiering)** <br/> |Används av Office 365 för att verifiera att du äger domänen. Det påverkar inte något annat.  <br/> |**Värd:** @ (eller, för vissa DNS-värdtjänster, ditt domännamn)  <br/> **TXT-värde:** _en textsträng som tillhandahålls av_ Office 365  <br/> Office 365 guiden för **domänkonfiguration ** anger värdena du använder för att skapa den här posten.  <br/> |
+|**CNAME** <br/> **(Serie)** <br/> |Används av Office 365 för att dirigera autentiseringen till rätt identitetsplattform. [Mer information](../admin/services-in-china/purpose-of-cname.md?viewFallbackFrom=o365-worldwide) <br/> **Obs1:** Detta CNAME gäller bara för Office 365 som drivs av 21Vianet. [Mer information](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)  |**Alias:** msoid  <br/> **Target:** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
+|**TXT** <br/> **(Domänverifiering)** <br/> |Används av Office 365 för att verifiera att du äger domänen. Det påverkar inte något annat.  <br/> |**Värd:** @ (eller, för vissa DNS-värdtjänster, ditt domännamn)  <br/> **TXT-värde:** _en textsträng som tillhandahålls av_ Office 365  <br/> Office 365 guiden för **domänkonfiguration** anger värdena du använder för att skapa den här posten.  <br/> |
 
 
 ## <a name="external-dns-records-required-for-email-in-office-365-exchange-online"></a>Externa DNS-poster som krävs för e-post i Office 365 (Exchange Online)
@@ -69,7 +69,7 @@ E-postkunder som använder Exchange-federation behöver även CNAME- och TXT-pos
 |:-----|:-----|:-----|
 |**DNS-post** <br/> |**Syfte** <br/> |**Värde som ska användas** <br/> |
 |**CNAME** <br/> **(Exchange Online)** <br/> |Hjälper Outlook-klienter att enkelt ansluta till Exchange Online-tjänsten genom att använda tjänsten Automatisk upptäckt. Automatisk upptäckt hittar automatiskt rätt Exchange Server-värd och konfigurerar Outlook för användarna.  <br/> |**Alias:** Autodiscover  <br/> **Target:** autodiscover.outlook.com  <br/> |
-|**MX** <br/> **(Exchange Online)** <br/> |Skickar ingående e-post för domänen till Exchange Online-tjänsten i Office 365.  <br/> [!NOTE] När e-posten flödar till Exchange Online tar du bort MX-posterna som pekar på ditt gamla system.   |**Domän:** till exempel contoso.com  <br/> **E-postmålserver:**\<MX token\>.mail.protection.outlook.com  <br/> **Inställning/prioritet:** lägre än andra MX-poster (det ser till att e-posten levereras till Exchange Online) – t.ex. 1 eller ”låg”  <br/>  Hitta din \<MX token\>genom att följa dessa anvisningar:  <br/>  Logga in på Office 365, gå till Office 365 administratörsdomäner \>.  <br/>  Välj Åtgärda problem i kolumnen Åtgärd för domänen.  <br/>  Välj Vad behöver jag åtgärda i avsnittet MX-poster.  <br/>  Följ anvisningarna på sidan för att uppdatera MX-posten.  <br/> [Vad är MX-prioritet?](https://go.microsoft.com/fwlink/p/?LinkId=396471) <br/> |
+|**MX** <br/> **(Exchange Online)** <br/> |Skickar ingående e-post för domänen till Exchange Online-tjänsten i Office 365.  <br/> [!NOTE] När e-posten flödar till Exchange Online tar du bort MX-posterna som pekar på ditt gamla system.   |**Domän:** till exempel contoso.com  <br/> **E-postmålserver:**\<MX token\>.mail.protection.outlook.com  <br/> **Inställning/prioritet:** lägre än andra MX-poster (det ser till att e-posten levereras till Exchange Online) – t.ex. 1 eller ”låg”  <br/>  Hitta din \<MX token\>genom att följa dessa anvisningar:  <br/>  Logga in på Office 365, gå till Office 365 administratörsdomäner \>.  <br/>  Välj Åtgärda problem i kolumnen Åtgärd för domänen.  <br/>  Välj Vad behöver jag åtgärda i avsnittet MX-poster.  <br/>  Följ anvisningarna på sidan för att uppdatera MX-posten.  <br/> [Vad är MX-prioritet?](../admin/setup/domains-faq.yml) <br/> |
 |**SPF (TXT)** <br/> **(Exchange Online)**  <br/> |Förhindrar att andra personer använder din domän till att skicka skräppost eller annan skadlig e-post. SPF-poster (Sender Policy Framework) fungerar genom att identifiera servrarna som har godkänts för att skicka e-post från domänen.  <br/> |[Externa DNS-poster som krävs för SPF](external-domain-name-system-records.md#BKMK_SPFrecords) <br/> |
 |**TXT** <br/> **(Exchange federation)** <br/> |Används för Exchange-federation för hybriddistribution.  <br/> |**TXT-post 1:** Till exempel contoso.com och tillhörande särskilt genererad hash-text som domänbevis (t.ex. Y96nu89138789315669824)  <br/> **TXT-post 2:** till exempel exchangedelegation.contoso.com och tillhörande särskilt genererad hash-text som domänbevis (t.ex.Y3259071352452626169)  <br/> |
 |**CNAME** <br/> **(Exchange federation)** <br/> |Hjälper Outlook-klienter att enkelt ansluta till Exchange Online-tjänsten genom att använda tjänsten Automatisk upptäckt när företaget använder Exchange-federation. Automatisk upptäckt hittar automatiskt rätt Exchange Server-värd och konfigurerar Outlook för dina användare.  <br/> |**Alias:** till exempel Autodiscover.service.contoso.com  <br/> **Target:** autodiscover.outlook.com  <br/> |
@@ -103,7 +103,7 @@ Det finns olika åtgärder att vidta när du använder [Office 365 URL: er och I
 <a name="BKMK_SPFrecords"> </a>
 
 > [!IMPORTANT]
-> SPF har utformats för att hjälpa till att förhindra förfalskning men det finns förfalskningsmetoder som SPF inte skyddar mot. För att kunna skydda mot dessa ska du, efter att ha konfigurerat SPF, även konfigurera DKIM och DMARC för Office 365. Information om hur du kommer igång finns i [Använda DKIM för att validera utgående e-post som skickas från din domän i Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Därefter läser du [Använd DMARC för att validera e-post i Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
+> SPF har utformats för att hjälpa till att förhindra förfalskning men det finns förfalskningsmetoder som SPF inte skyddar mot. För att kunna skydda mot dessa ska du, efter att ha konfigurerat SPF, även konfigurera DKIM och DMARC för Office 365. Information om hur du kommer igång finns i [Använda DKIM för att validera utgående e-post som skickas från din domän i Office 365](../security/office-365-security/use-dkim-to-validate-outbound-email.md). Därefter läser du [Använd DMARC för att validera e-post i Office 365](../security/office-365-security/use-dmarc-to-validate-email.md).
   
 SPF-poster är TXT-poster som hjälper till att hindra andra personer från att använda domänen till att skicka skräppost eller annan skadlig e-post. SPF-poster (Sender Policy Framework) fungerar genom att identifiera servrarna som har godkänts för att skicka e-post från domänen.
   
@@ -125,7 +125,7 @@ Ett e-postsystem som tar emot e-post från din domän ser på SPF-posten, och om
 För scenarier där du inte bara använder Exchange Online-e-post för Office 365 (till exempel när du även använder e-post som kommer från SharePoint Online) kan du använda följande tabell för att avgöra vad som ska ingå i värdet för posten.
   
 > [!NOTE]
-> Om du har ett komplicerat scenario som till exempel omfattar Edge-e-postservrar för att hantera e-posttrafik via brandväggen, behöver du konfigurera en mer detaljerad SPF-post. Lära dig hur du kan[ konfigurera SPF-poster i Office 365 för att förhindra förfalskning](https://go.microsoft.com/fwlink/?LinkId=787656). Du kan också lära dig mer om hur SPF fungerar med Office 365 genom att läsa [Hur Office 365 använder Sender Policy Framework (SPF) för att förhindra förfalskning](https://go.microsoft.com/fwlink/?LinkId=787065).
+> Om du har ett komplicerat scenario som till exempel omfattar Edge-e-postservrar för att hantera e-posttrafik via brandväggen, behöver du konfigurera en mer detaljerad SPF-post. Lära dig hur du kan[ konfigurera SPF-poster i Office 365 för att förhindra förfalskning](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md). Du kan också lära dig mer om hur SPF fungerar med Office 365 genom att läsa [Hur Office 365 använder Sender Policy Framework (SPF) för att förhindra förfalskning](../security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md).
   
 | Tal|Om du använder...  <br/> |Syfte  <br/> |Lägg till följande  <br/> |
 |:-----|:-----|:-----|:-----|
@@ -181,6 +181,6 @@ TXT Name @
 Values: v=spf1 include:spf.protection.outlook.com include:mail.contoso.com -all
 ```
 
-Det här är några vanliga exempel som kan hjälpa dig att anpassa den befintliga SPF-posten när du lägger till din domän i Office 365 för e-post. Om du har ett komplicerat scenario som till exempel omfattar Edge-e-postservrar för att hantera e-posttrafik via brandväggen, behöver du konfigurera en mer detaljerad SPF-post. Lära dig hur du kan[ konfigurera SPF-poster i Office 365 för att förhindra förfalskning](https://go.microsoft.com/fwlink/?LinkId=787656).
+Det här är några vanliga exempel som kan hjälpa dig att anpassa den befintliga SPF-posten när du lägger till din domän i Office 365 för e-post. Om du har ett komplicerat scenario som till exempel omfattar Edge-e-postservrar för att hantera e-posttrafik via brandväggen, behöver du konfigurera en mer detaljerad SPF-post. Lära dig hur du kan[ konfigurera SPF-poster i Office 365 för att förhindra förfalskning](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md).
   
-Här är en kort länk som du kan använda för att komma tillbaka: [https://aka.ms/o365edns](https://aka.ms/o365edns)
+Här är en kort länk som du kan använda för att komma tillbaka: [https://aka.ms/o365edns]()

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Den här artikeln diskuterar hur man tillämpar en kvarhållningsetikett på en modell i SharePoint Syntex
-ms.openlocfilehash: 48c0b983316cfe29019d09cb20546fa4b325b3b0
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 796130bfa967663b5696f49279154cfe9b16f703
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242795"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925374"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>Du kan enkelt använda en kvarhållningsetikett på en modell för dokumenttolkning i Microsoft SharePoint Syntex.
 
@@ -28,14 +28,14 @@ ms.locfileid: "50242795"
 </br>
 
 
-Du kan enkelt använda en [kvarhållningsetikett](https://docs.microsoft.com/microsoft-365/compliance/retention) på en modell för dokumenttolkning i Microsoft SharePoint Syntex. Du kan göra detta för både dokumentförståelse och formulärhanteringsmodeller. 
+Du kan enkelt använda en [kvarhållningsetikett](../compliance/retention.md) på en modell för dokumenttolkning i Microsoft SharePoint Syntex. Du kan göra detta för både dokumentförståelse och formulärhanteringsmodeller. 
 
 Med hjälp av kvarhållningsetiketter kan du använda kvarhållningsinställningar för dokument som modellen för dokumenttolkning förstår.  Du vill till exempel kanske att din modell inte bara ska identifiera *Försäkringar* som laddats upp till dokumentbiblioteket, utan även använda kvarhållningsetiketten *Företag* på dem så att dokumenten inte kan tas bort från dokumentbiblioteket under den angivna tidsperioden (till exempel de kommande fem månaderna).
 
 Du kan använda en befintlig kvarhållningsetikett på modellen för dokumenttolkning i modellinställningarna på modellens startsida. 
 
 > [!Important]
-> För att kvarhållningsetiketterna ska vara tillgängliga att använda på din modell för innehållstolkning måste de [skapas och publiceras i Microsoft 365 Efterlevnadscenter](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
+> För att kvarhållningsetiketterna ska vara tillgängliga att använda på din modell för innehållstolkning måste de [skapas och publiceras i Microsoft 365 Efterlevnadscenter](../compliance/create-apply-retention-labels.md#how-to-create-and-publish-retention-labels).
 
 ## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>Att använda kvarhållningsetiketter på modeller för dokumenttolkning
 
@@ -73,13 +73,13 @@ Till exempel kommer alla *Försäkringar* som modellen identifierar att ha kvarh
 ## <a name="to-add-a-retention-label-to-a-form-processing-model"></a>Att använda kvarhållningsetikett på modeller för dokumenttolkning
 
 > [!Important]
-> För att kvarhållningsetiketter ska vara tillgängliga för din formulärbehandlingsmodell måste de vara [skapas och publiceras i Microsoft 365 Efterlevnadscenter](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
+> För att kvarhållningsetiketter ska vara tillgängliga för din formulärbehandlingsmodell måste de vara [skapas och publiceras i Microsoft 365 Efterlevnadscenter](../compliance/create-apply-retention-labels.md#how-to-create-and-publish-retention-labels).
 
 Du kan antingen använda en kvarhållningsetikett på en formulärbehandlingsmodell när du skapar en modell eller tillämpa den på en befintlig modell.
 
 ### <a name="to-add-a-retention-label-when-you-create-a-form-processing-model"></a>Så här lägger du till en kvarhållningsetikett när du skapar en formbehandlingsmodell
 
-1. När du [skapar en ny formulärbearbetningsmodell](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model) väljer du <b>Avancerade inställningar.</b>
+1. När du [skapar en ny formulärbearbetningsmodell](./create-a-form-processing-model.md) väljer du <b>Avancerade inställningar.</b>
 2. I <b>Avancerade inställningar</b> väljer du menyn i avsnittet <b>Bevarandeetikett</b> och väljer sedan den bevarandeetikett som du vill använda på modellen.</b>
 
  
@@ -132,5 +132,3 @@ Du kan lägga till en kvarhållningsetikett till en befintlig formulärbearbetni
 [Skapa en extraktor](create-an-extractor.md)
 
 [Översikt av dokumenttolkning](document-understanding-overview.md)
-
-

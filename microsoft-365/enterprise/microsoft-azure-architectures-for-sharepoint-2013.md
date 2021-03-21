@@ -15,147 +15,147 @@ ms.custom:
 - Ent_Architecture
 - seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: Lär dig vilka typer av SharePoint 2013-lösningar som kan hanteras på Microsoft Azure Virtual Machines och hur du konfigurerar Azure till en värd.
-ms.openlocfilehash: 37d7eb2a746e30ad560949a933783beb6b971a08
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Lär dig vilka typer av SharePoint 2013-lösningar som kan lagras på virtuella Microsoft Azure-datorer och hur du ställer in Azure så att det fungerar som värd.
+ms.openlocfilehash: eed74e2dcbe383f0f63e7f6ea2fc70fe7b51b1b3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696745"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924182"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Microsoft Azure-arkitekturer för SharePoint 2013
 
-Azure är en bra miljö för en SharePoint Server 2013-lösning. I de flesta fall rekommenderar vi Microsoft 365, men en SharePoint Server-servergrupp i Azure kan vara ett bra alternativ för specifika lösningar. I den här artikeln beskrivs hur du kan skapa SharePoint-lösningar så att de passar bättre i Azure Platform. Följande två specifika lösningar används som exempel:
+Azure är en bra miljö för värd för en SharePoint Server 2013-lösning. I de flesta fall rekommenderar vi Microsoft 365, men en SharePoint Server-servergrupp som finns i Azure kan vara ett bra alternativ för specifika lösningar. I den här artikeln beskrivs hur du kan bygga SharePoint-lösningar så att de passar bra på Azure-plattformen. Följande två specifika lösningar används som exempel:
   
-- [SharePoint Server 2013 katastrof återställning i Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
+- [SharePoint Server 2013 katastrofåterställning i Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
-- [Internet-webbplatser i Microsoft Azure med SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
+- [Internetwebbplatser i Microsoft Azure med SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
     
-## <a name="recommended-sharepoint-solutions-for-azure-infrastructure-services"></a>Rekommenderade SharePoint-lösningar för Azure Infrastructure Services
+## <a name="recommended-sharepoint-solutions-for-azure-infrastructure-services"></a>Rekommenderade SharePoint-lösningar för Azure-infrastrukturtjänster
 
-Azure Infrastructure Services är ett övertygande alternativ för att vara värd för SharePoint-lösning. Vissa lösningar passar bättre för den här plattformen än andra. I följande tabell visas rekommenderade lösningar.
+Azure-infrastrukturtjänster är ett tilltalande alternativ för SharePoint-lösningar. Vissa lösningar är bättre lämpliga för den här plattformen än andra. I följande tabell visas rekommenderade lösningar.
   
-|**Lösning**|**Varför den här lösningen rekommenderas för Azure**|
+|**Lösning**|**Därför rekommenderas den här lösningen för Azure**|
 |:-----|:-----|
-|Utvecklings-och test miljöer  <br/> |Det är enkelt att skapa och hantera dessa miljöer.  <br/> |
-|Katastrof återställning av lokala SharePoint-servergrupper till Azure  <br/> |**Sekundärt Data Center som värd** Använd Azure i stället för att investera i ett sekundärt Data Center i en annan region. <br/> **Låga kostnader för katastrof återställning** Underhåll och betala för färre resurser än en lokal katastrof återställnings miljö. Antalet resurser beror på vilken katastrof återställnings miljö du väljer: kall standby, varm vänte läge eller snabb standby. <br/> **Mer elastisk plattform** I händelse av en katastrof kan du enkelt bygga ut din Recovery-Server grupp för att uppfylla laddnings kraven. Skala in när du inte längre behöver resurserna. <br/> Se [katastrof återställning för SharePoint Server 2013 i Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md).  <br/> |
-|Webbplatser med Internet som använder funktioner och skala är inte tillgängliga i Microsoft 365  <br/> |**Fokusera på dina ansträngningar** Fokusera på att bygga en bra webbplats i stället för att bygga infrastruktur. <br/> Utnyttja **elastiskheten i Azure** Anpassa Server gruppens storlek genom att lägga till nya servrar och bara betala för resurser du behöver. Tilldelning av dynamisk dator stöds inte (Autoskala). <br/> **Använd Azure Active Directory (AD)** Dra nytta av Azure AD för kund konton. <br/> **Lägg till SharePoint-funktioner inte tillgängliga i Microsoft 365** Lägga till djupgående rapportering och Web Analytics. <br/> Se [Internet-webbplatser i Microsoft Azure med SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
-|Program grupper för att stödja Microsoft 365-eller lokala miljöer  <br/> |**Skapa, testa och hantera appar** i Azure för att stödja både lokala och molnbaserade miljöer. <br/> Använd **den här rollen** i Azure i stället för att köpa ny maskin vara för lokala miljöer. <br/> |
+|Utvecklings- och testmiljöer  <br/> |Det är enkelt att skapa och hantera dessa miljöer.  <br/> |
+|Katastrofåterställning av lokala SharePoint-farms till Azure  <br/> |**Värdbaserad sekundär datacenter** Använd Azure i stället för att investera i ett sekundärt datacenter i en annan region. <br/> **Låg kostnad för katastrofåterställningsmiljöer** Underhålla och betala för färre resurser än en lokal katastrofåterställningsmiljö. Antalet resurser beror på vilken katastrofåterställningsmiljö du väljer: vänteläge för kallt tid, vänteläge för varmt eller vänteläge. <br/> **Mer plattform för elasticitet** Vid en katastrof kan du enkelt skala ut din SharePoint-servergrupp för återställning så att den uppfyller inläsningskraven. Skala in när du inte längre behöver resurserna. <br/> Se [SharePoint Server 2013 Katastrofåterställning i Microsoft Azure.](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)  <br/> |
+|Webbplatser på Internet som använder funktioner och skalning som inte är tillgängliga i Microsoft 365  <br/> |**Fokusera ditt arbete** Koncentrera dig på att skapa en bra webbplats i stället för att skapa infrastruktur. <br/> **Dra nytta av flexibiliteten i Azure** Ändra storleken på servergruppen för begäran genom att lägga till nya servrar och betala endast för resurser du behöver. Dynamisk maskintilldelning stöds inte (automatisk skalning). <br/> **Använda Azure Active Directory (AD)** Dra nytta av Azure AD för kundkonton. <br/> **Lägga till SharePoint-funktioner som inte är tillgängliga i Microsoft 365** Lägg till djuprapportering och webbanalys. <br/> Se [Internetwebbplatser i Microsoft Azure med hjälp av SharePoint Server 2013.](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)  <br/> |
+|Appgrupper som stöder Microsoft 365 eller lokala miljöer  <br/> |**Skapa, testa och vara värd för** appar i Azure med stöd för både lokala miljöer och molnmiljöer. <br/> **Hantera den här** rollen i Azure i stället för att köpa ny maskinvara för lokala miljöer. <br/> |
    
-För intranät-och samarbets lösningar och arbets belastningar kan du tänka på följande:
+För lösningar och arbetsbelastningar på intranät och samarbete bör du tänka på följande alternativ:
   
-- Fastställ om Microsoft 365 uppfyller dina företags krav eller kan vara en del av lösningen. Microsoft 365 tillhandahåller en omfattande funktion som alltid är uppdaterad.
+- Avgör om Microsoft 365 uppfyller dina affärskrav eller kan vara en del av lösningen. Microsoft 365 har en omfattande funktionsuppsättning som alltid är uppdaterad.
     
-- Om Microsoft 365 inte uppfyller alla dina företags krav bör du överväga en vanlig implementering av SharePoint 2013 på lokala produkter från Microsoft Consulting Services (MCS). En standard arkitektur kan vara en snabbare, billigare och enklare lösning för att du ska kunna använda den. 
+- Om Microsoft 365 inte uppfyller alla affärskrav bör du överväga en standardimplementering av SharePoint 2013 lokalt från Microsoft Consulting Services (MCS). En standardarkitektur kan vara en snabbare, billigare och enklare lösning för dig att stödja än en anpassad. 
     
-- Om en standard implementering inte uppfyller dina företags krav bör du överväga en anpassad lokal lösning.
+- Om en standardimplementering inte uppfyller dina affärskrav kan du överväga en anpassad lokal lösning.
     
-- Om du använder en moln plattform är viktig för dina företags behov, som en standard eller anpassad implementering av SharePoint 2013 som finns i Azure Infrastructure Services. SharePoint-lösningar är mycket enklare att använda i Azure än andra icke-inhemska Microsoft-plattformar.
+- Om det är viktigt att använda en molnplattform för dina affärskrav bör du överväga en standard eller anpassad implementering av SharePoint 2013 som finns i Azure-infrastrukturtjänster. SharePoint-lösningar är mycket enklare att stödja i Azure än andra offentliga Microsoft-molnplattformar som inte är inbyggda i Microsoft.
     
 ## <a name="before-you-design-the-azure-environment"></a>Innan du utformar Azure-miljön
 
-Medan den här artikeln använder exempel på SharePoint-topologier kan du använda dessa design koncept i alla SharePoint-grupptopologier. Innan du utformar Azure-miljön kan du använda följande topologi, arkitektur, kapacitet och prestanda råd för att utforma SharePoint-servergruppen:
+I den här artikeln används exempel på SharePoint-topologier, men du kan använda de här designkoncepten med valfri SharePoint-servergruppstopologi. Innan du utformar Azure-miljön bör du använda följande topologi, arkitektur, kapacitet och prestandavägledning för att utforma SharePoint-servergruppen:
   
-- [Arkitektur design för SharePoint 2013 IT-proffs](https://technet.microsoft.com/sharepoint/fp123594.aspx)
+- [Arkitekturdesign för IT-proffs i SharePoint 2013](/SharePoint/technical-reference/technical-diagrams)
     
-- [Planera för prestanda-och kapacitets hantering i SharePoint Server 2013](https://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
+- [Planera för prestanda- och kapacitetshantering i SharePoint Server 2013](/SharePoint/administration/performance-planning-in-sharepoint-server-2013)
     
-## <a name="determine-the-active-directory-domain-type"></a>Avgöra domän typen för Active Directory
+## <a name="determine-the-active-directory-domain-type"></a>Fastställa Active Directory-domäntypen
 
-Varje SharePoint Server-servergrupp använder Active Directory för att tillhandahålla administrativa konton för Server konfigurering. För närvarande finns det två alternativ för SharePoint-lösningar i Azure. Dessa beskrivs i följande tabell.
+Varje SharePoint Server-servergrupp använder Active Directory för att tillhandahålla administrativa konton för servergruppskonfigurationen. För stunden finns det två alternativ för SharePoint-lösningar i Azure. Dessa beskrivs i följande tabell.
   
 |**Alternativ**|**Beskrivning**|
 |:-----|:-----|
-|Dedikerad domän  <br/> |Du kan distribuera en fast och isolerad Active Directory-domän till Azure för att stödja SharePoint-servergruppen. Det här är ett bra alternativ för offentliga Internet-webbplatser.  <br/> |
-|Utöka den lokala domänen via en lokal anslutning  <br/> |När du utökar den lokala domänen via en lokal anslutning kommer användare att få åtkomst till SharePoint-servergruppen via ditt intranät som om den vore lokal. Du kan dra nytta av din lokala Active Directory-och DNS-implementering.  <br/> En lokal anslutning krävs för att bygga en katastrof miljö för återställning i Azure för att gå över till från din lokala Server grupp.  <br/> |
+|Dedikerad domän  <br/> |Du kan distribuera en dedikerad och isolerad Active Directory-domän till Azure för att stödja SharePoint-servergruppen. Det här är ett bra val för offentliga webbplatser.  <br/> |
+|Utöka den lokala domänen genom en lokal anslutning  <br/> |När du utökar den lokala domänen genom en lokal anslutning får användarna åtkomst till SharePoint-servergruppen via ditt intranät som om den vore värd lokal. Du kan dra nytta av din lokala Active Directory- och DNS-implementering.  <br/> En tvärlokal anslutning krävs för att bygga en katastrofåterställningsmiljö i Azure för att växla till från den lokala servergruppen.  <br/> |
    
-Den här artikeln innehåller design koncept för att utöka den lokala domänen via en lokal anslutning. Om din lösning använder en fast domän behöver du ingen lokal anslutning.
+Den här artikeln innehåller designbegrepp för utökning av den lokala domänen via en tvärlokal anslutning. Om lösningen använder en dedikerad domän behöver du inte en tvärlokal anslutning.
   
 ## <a name="design-the-virtual-network"></a>Designa det virtuella nätverket
 
-Först behöver du ett virtuellt nätverk i Azure, som innehåller undernät som du ska placera de virtuella datorerna på. Det virtuella nätverket behöver ett privat IP-adressutrymme, delar som du tilldelar under näten.
+Först behöver du ett virtuellt nätverk i Azure, som innehåller undernät där du ska placera dina virtuella datorer. Det virtuella nätverket behöver ett privat IP-adressutrymme, som du tilldelar undernäten till delar av.
   
-Om du utökar ditt lokala nätverk till Azure via en lokal anslutning (obligatoriskt för en katastrof återställnings miljö) måste du välja ett privat adress utrymme som inte redan används på andra ställen i organisationens nätverk, som kan inkludera din lokala miljö och andra Azure Virtual Networks. 
+Om du utökar det lokala nätverket till Azure via en tvärlokal anslutning (krävs för en katastrofåterställningsmiljö) måste du välja ett privat adressutrymme som inte redan används någon annanstans i organisationsnätverket, vilket kan inkludera din lokala miljö och andra virtuella Azure-nätverk. 
   
-**Bild 1: lokal miljö med ett virtuellt nätverk i Azure**
+**Bild 1: Lokal miljö med ett virtuellt nätverk i Azure**
 
-![Microsoft Azure Virtual Network design för en SharePoint-lösning. Ett undernät för Azure Gateway. Ett undernät för de virtuella datorerna.](../media/OPrrasconWA-AZarch.png)
+![Virtuell Nätverksdesign för Microsoft Azure för en SharePoint-lösning. Ett undernät för Azure Gateway. Ett undernät för virtuella datorer.](../media/OPrrasconWA-AZarch.png)
   
 I det här diagrammet:
   
-- Ett virtuellt nätverk i Azure illustreras parallellt med den lokala miljön. De två miljöerna är ännu inte anslutna via en lokal anslutning, som kan vara en VPN-anslutning för plats-till-plats eller ExpressRoute.
+- Ett virtuellt nätverk i Azure illustreras sida vid sida med den lokala miljön. De två miljöerna är ännu inte anslutna med en tvärlokal anslutning, som kan vara en VPN-anslutning mellan webbplatser eller ExpressRoute.
     
-- I det här läget inkluderar det virtuella nätverket bara under näten och inga andra arkitektur element. Ett undernät är värd för Azure gateway och andra undernät värden för SharePoint-servergruppen, med ytterligare ett för Active Directory och DNS.
+- I det här läget innehåller det virtuella nätverket bara undernäten och inga andra arkitekturelement. Ett undernät är värd för Azure Gateway och andra undernät är värd för nivåerna i SharePoint-servergruppen, med ytterligare ett för Active Directory och DNS.
     
-## <a name="add-cross-premises-connectivity"></a>Lägga till en kors lokal anslutning
+## <a name="add-cross-premises-connectivity"></a>Lägga till en tvärlokal anslutning
 
-Nästa steg i distributionen är att skapa den korslänkade anslutningen (om det gäller din lösning). För korslänkade anslutningar finns en Azure gateway i ett separat Gateway-undernät, som du måste skapa och tilldela ett adress utrymme. 
+Nästa steg i distributionen är att skapa den tvärlokala anslutningen (om det här gäller din lösning). För tvärlokala anslutningar finns en Azure Gateway i ett separat gatewayundernät som du måste skapa och tilldela ett adressutrymme. 
   
-När du planerar för en lokal anslutning kan du definiera och skapa en Azure gateway och anslutning till en lokal gatewayenhet.
+När du planerar för en tvärlokal anslutning definierar och skapar du en Azure-gateway och anslutning till en lokal gatewayenhet.
   
-**Bild 2: använda en Azure gateway och en lokal gatewayenhet för att tillhandahålla anslutningar mellan lokala miljöer och Azure**
+**Bild 2: Använda en Azure-gateway och en lokal gatewayenhet för att tillhandahålla anslutning mellan den lokala miljön och Azure**
 
-![Lokal miljö ansluten till ett Azure-nätverk via en lokal anslutning, som kan vara en VPN-anslutning för webbplats-till-plats eller ExpressRoute](../media/AZarch-VPNgtwyconnct.png)
+![Lokal miljö som är ansluten till ett virtuellt Azure-nätverk via en lokal anslutning, som kan vara en VPN-anslutning mellan webbplatser eller ExpressRoute](../media/AZarch-VPNgtwyconnct.png)
   
 I det här diagrammet:
   
-- Om du lägger till i det föregående diagrammet är den lokala miljön ansluten till det virtuella Azure-nätverket via en lokal anslutning, som kan vara en VPN-anslutning för webbplats-till-plats eller ExpressRoute.
+- Om du lägger till föregående diagram är den lokala miljön ansluten till det virtuella Azure-nätverket via en lokal anslutning, som kan vara en VPN-anslutning mellan webbplatser eller ExpressRoute.
     
-- En Azure Gateway finns i ett Gateway-undernät.
+- En Azure-gateway finns på ett gatewayundernät.
     
-- Den lokala miljön inkluderar en gateway-enhet, till exempel en router eller VPN-server.
+- I den lokala miljön ingår en gatewayenhet, till exempel en router eller VPN-server.
     
-Mer information om hur du planerar för och skapar ett lokalt virtuellt nätverk finns i [ansluta ett lokalt nätverk till ett Microsoft Azure-](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)nätverk.
+Mer information om hur du planerar för och skapar ett virtuellt korslokalt nätverk finns i Ansluta ett lokalt [nätverk till ett virtuellt Microsoft Azure-nätverk.](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
   
 ## <a name="add-active-directory-domain-services-ad-ds-and-dns"></a>Lägga till AD DS (Active Directory Domain Services) och DNS
 
-För katastrof återställning i Azure distribueras Windows Server AD och DNS i ett hybrid scenario där Windows Server AD distribueras både lokalt och på virtuella Azure-datorer.
+För katastrofåterställning i Azure distribuerar du Windows Server AD och DNS i ett hybridscenario där Windows Server AD distribueras både lokalt och på virtuella Azure-datorer.
   
-**Bild 3: konfiguration för Hybrid Active Directory-domäner**
+**Bild 3: Hybridkonfiguration av Active Directory-domän**
 
-![STwo virtuella datorer distribuerade till det virtuella Azure-nätverket och SharePoint-servergruppen är replik domän kontrol Lanterna och DNS-servrar](../media/AZarch-HyADdomainConfig.png)
+![STvå virtuella datorer som distribuerats till det virtuella Azure-nätverket och SharePoint-servergruppsundernätet är replika domänkontrollanter och DNS-servrar](../media/AZarch-HyADdomainConfig.png)
   
-Det här diagrammet bygger på föregående diagram genom att lägga till två virtuella datorer i ett Windows Server AD-och DNS-undernät. De här virtuella datorerna är replik domäner och DNS-servrar. De är ett tillägg till den lokala Windows Server AD-miljön. 
+Det här diagrammet bygger på de tidigare diagrammen genom att lägga till två virtuella datorer till ett Windows Server AD- och DNS-undernät. Dessa virtuella datorer är replikdomänkontrollanter och DNS-servrar. De är ett tillägg till den lokala Windows Server AD-miljön. 
   
-Följande tabell innehåller rekommendationer för konfiguration av de här virtuella datorerna i Azure. Använd dessa som utgångs punkt när du skapar din egen miljö — även för en dedikerad domän där din Azure-miljö inte kommunicerar med din lokala miljö.
+Följande tabell innehåller konfigurationsrekommendationer för dessa virtuella datorer i Azure. Använd dem som utgångspunkt för att utforma din egen miljö, även för en dedikerad domän där Azure-miljön inte kommunicerar med din lokala miljö.
   
 |**Objekt**|**Konfiguration**|
 |:-----|:-----|
-|Storlek på virtuell dator i Azure  <br/> |A1-eller a2-storlek i standard nivån  <br/> |
+|Storlek på virtuell dator i Azure  <br/> |A1- eller A2-storlek på standardnivån  <br/> |
 |Operativsystem  <br/> |Windows Server 2012 R2  <br/> |
-|Active Directory-roll  <br/> |AD DS-domänkontrollant som är en global katalog server. Denna konfiguration minskar utgående trafik över hela den lokala anslutningen.  <br/> I en miljö med många domäner med hög ändrings grad (detta är inte vanligt) konfigurerar du domän kontrol Lanterna för lokal samtal som inte ska synkroniseras med de globala katalog servrarna i Azure, för att minska replikeringstrafiken.  <br/> |
-|DNS-roll  <br/> |Installera och konfigurera DNS Server-tjänsten på domän kontrol Lanterna.  <br/> |
-|Data diskar  <br/> |Placera Active Directory-databasen, loggar och SYSVOL på fler Azure data-diskar. Placera inte dessa på operativ system disken eller de tillfälliga diskar som tillhandahålls av Azure.  <br/> |
-|IP-adresser  <br/> |Använd statiska IP-adresser och konfigurera det virtuella nätverket för att tilldela dessa adresser till de virtuella datorerna i det virtuella nätverket efter att domän kontrol Lanterna har kon figurer ATS.  <br/> |
+|Active Directory-roll  <br/> |AD DS-domänkontrollant som angetts som global katalogserver. Den här konfigurationen minskar den utgående trafiken genom den tvärlokala anslutningen.  <br/> I en miljö med flera domäner med höga förändringshastigheter (detta är inte vanligt) konfigurerar du domänkontrollanter lokalt så att de inte synkroniseras med de globala katalogservrarna i Azure, för att minska replikeringstrafiken.  <br/> |
+|DNS-roll  <br/> |Installera och konfigurera DNS-servertjänsten på domänkontrollanterna.  <br/> |
+|Datadiskar  <br/> |Placera Active Directory-databasen, loggarna och SYSVOL på ytterligare Azure-datadiskar. Placera inte dessa på operativsystemets disk eller de tillfälliga diskar som tillhandahålls av Azure.  <br/> |
+|IP-adresser  <br/> |Använd statiska IP-adresser och konfigurera det virtuella nätverket för att tilldela de här adresserna till virtuella datorer i det virtuella nätverket efter att domänkontrollanterna har konfigurerats.  <br/> |
    
 > [!IMPORTANT]
-> Innan du distribuerar Active Directory i Azure läser du [rikt linjer för distribution av Windows Server Active Directory på virtuella Azure-datorer](https://go.microsoft.com/fwlink/p/?linkid=392681). Dessa hjälper dig att avgöra om en annan arkitektur eller olika konfigurations inställningar behövs för din lösning. 
+> Innan du distribuerar Active Directory i Azure bör du [läsa Riktlinjer för distribution av Windows Server Active Directory på virtuella Azure-datorer.](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100) Det här hjälper dig att avgöra om en annan arkitektur eller olika konfigurationsinställningar krävs för din lösning. 
   
 ## <a name="add-the-sharepoint-farm"></a>Lägga till SharePoint-servergruppen
 
-Placera de virtuella datorerna i SharePoint-servergruppen i olika under nätverk.
+Placera virtuella datorer i SharePoint-servergruppen på nivåer på lämpliga undernät.
   
-**Bild 4: placering av virtuella SharePoint-datorer**
+**Bild 4: Placering av virtuella SharePoint-datorer**
 
-![Databas servrar och SharePoint Server-roller läggs till i det virtuella Azure-nätverket i SharePoint-servergruppen](../media/AZarch-SPVMsinCloudSer.png)
+![Databasservrar och SharePoint-serverroller läggs till i Det virtuella Azure-nätverket i SharePoint Farm-undernätet](../media/AZarch-SPVMsinCloudSer.png)
   
-Det här diagrammet bygger på föregående diagram genom att lägga till Server roller för SharePoint Server grupp i respektive lager.
+Det här diagrammet bygger på de tidigare diagrammen genom att lägga till SharePoint-servergruppsrollerna i sina respektive nivåer.
   
-- Två databas datorer med SQL Server skapar databas nivån.
+- Två virtuella databasdatorer med SQL Server skapar databasnivån.
     
-- Två virtuella datorer som kör SharePoint Server 2013 för varje nivå: frontend-servrar, distribuerade cache-servrar och backend-servrar.
+- Två virtuella datorer med SharePoint Server 2013 för var och en av följande nivåer: frontendservrar, distribuerade cacheservrar och serverservrar.
     
-## <a name="design-and-fine-tune-server-roles-for-availability-sets-and-fault-domains"></a>Utforma och finjustera Server roller för tillgänglighets uppsättningar och fel domäner
+## <a name="design-and-fine-tune-server-roles-for-availability-sets-and-fault-domains"></a>Designa och finjustera serverroller för tillgänglighetsuppsättningar och feldomäner
 
-En Fault-domän är en gruppering av maskin vara där roll instanser körs. Virtuella datorer i samma feltyp kan uppdateras av Azure-infrastrukturen samtidigt. Eller så kan de inte fungera samtidigt eftersom de delar samma ställning. För att undvika risken för att ha två virtuella datorer i samma Fault-domän kan du konfigurera de virtuella datorerna som en tillgänglighets uppsättning, som säkerställer att varje virtuell dator finns i en annan fel domän. Om tre virtuella datorer är konfigurerade som tillgänglighets uppsättningar garanterar Azure att det inte finns fler än två av de virtuella datorerna i samma Fault-domän.
+En feldomän är en gruppering av maskinvara där rollinstanser körs. Virtuella datorer inom samma feldomän kan uppdateras samtidigt av Azure-infrastrukturen. Eller så kan de misslyckas på samma gång eftersom de har samma rack. Du kan undvika risken att ha två virtuella datorer på samma feldomän genom att konfigurera dina virtuella datorer som en tillgänglighetsuppsättning som säkerställer att varje virtuell dator ligger i en annan feldomän. Om tre virtuella datorer konfigureras som en tillgänglighetsuppsättning garanterar Azure att inte fler än två av de virtuella maskinerna finns i samma feldomän.
   
-När du utformar Azure-arkitekturen för en SharePoint-servergrupp konfigurerar du identiska Server roller att ingå i en tillgänglighets uppsättning. Detta säkerställer att de virtuella datorerna fördelas över flera olika fel domäner.
+När du utformar Azure-arkitekturen för en SharePoint-servergrupp konfigurerar du identiska serverroller som en del av en tillgänglighetsuppsättning. Det säkerställer att dina virtuella datorer är utspridda över flera feldomäner.
   
-**Bild 5: använda Azure Availability Sets för att ge hög tillgänglighet för SharePoint-gruppens nivåer**
+**Bild 5: Använd Azure-tillgänglighetsuppsättningar för att ge hög tillgänglighet för SharePoint-servergruppsnivån**
 
-![Konfiguration av tillgänglighets uppsättningar i Azure-infrastrukturen för en SharePoint 2013-lösning](../media/AZenv-WinAzureAvailSetsHA.png)
+![Konfiguration av tillgänglighetsuppsättningar i Azure-infrastrukturen för en SharePoint 2013-lösning](../media/AZenv-WinAzureAvailSetsHA.png)
   
-Det här diagrammet anropar konfigurationen av tillgänglighets uppsättningar i Azure-infrastrukturen. Var och en av följande roller delar en separat tillgänglighets uppsättning:
+Det här diagrammet beskriver konfiguration av tillgänglighetsuppsättningar i Azure-infrastrukturen. Var och en av följande roller har en separat tillgänglighetsuppsättning:
   
 - Active Directory och DNS
     
@@ -165,64 +165,62 @@ Det här diagrammet anropar konfigurationen av tillgänglighets uppsättningar i
     
 - Distribuera cache
     
-- Klient delen
+- Frontend
     
-SharePoint-servergruppen kanske måste vara finjusterad i Azure Platform. För att säkerställa hög tillgänglighet för alla komponenter bör du kontrol lera att Server rollerna är alla konfigurerade.
+SharePoint-servergruppen kan behöva finjusteras på Azure-plattformen. För att säkerställa hög tillgänglighet för alla komponenter, se till att alla serverroller är konfigurerade identiskt.
   
-Här är ett exempel som visar en standard arkitektur för Internet-webbplatser som uppfyller specifika mål för kapacitet och prestanda. Det här exemplet finns i följande arkitektur modell: [Internet webbplatser Sök arkitekturer för SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=261519).
+Här är ett exempel som visar en standardarkitektur för Internetwebbplatser som uppfyller specifika kapacitets- och prestandamål. Det här exemplet presenteras i följande arkitekturmodell: [Sökarkitekturer för Internetwebbplatser för SharePoint Server 2013.](https://go.microsoft.com/fwlink/p/?LinkId=261519)
   
-**Bild 6: planera exempel för kapacitets-och prestanda mål i en Server grupp med tre nivåer**
+**Bild 6: Exempel på planering för kapacitets- och prestandamål i en servergrupp på tre nivåer**
 
-![Standard arkitektur för SharePoint 2013-webbplatser med komponent tilldelning som uppfyller specifika kapacitets-och prestanda mål](../media/AZarch-CapPerfexmpArch.png)
+![Standardarkitektur för SharePoint 2013-webbplatser med komponenttilldelningar som uppfyller specifika kapacitets- och prestandamål](../media/AZarch-CapPerfexmpArch.png)
   
 I det här diagrammet:
   
-- En Server grupp med tre nivåer representeras av: webb servrar, program servrar och databas servrar.
+- En servergrupp på tre nivåer representeras: webbservrar, programservrar och databasservrar.
     
-- De tre webb servrarna har kon figurer ATS identiskt med flera komponenter.
+- De tre webbservrarna är konfigurerade identiskt med flera komponenter.
     
-- De två databas servrarna konfigureras på samma sätt.
+- De två databasservrarna är konfigurerade identiskt.
     
-- De tre program servrarna är inte korrekt konfigurerade. Dessa Server roller kräver fin justering för tillgänglighets uppsättningar i Azure.
+- De tre programservrarna är inte konfigurerade identiskt. De här serverrollerna kräver finjustering för tillgänglighetsuppsättningar i Azure.
     
-Låt oss titta närmare på program Server nivån.
+Vi tittar närmare på programservernivån.
   
-**Bild 7: program server nivå före fin justering**
+**Bild 7: Programservernivån innan du finslipar**
 
-![Exempel på SharePoint Server 2013-program server nivå före justering för Microsoft Azure Availability-uppsättningar](../media/AZarch-AppServtierBefore.png)
+![Exempel på SharePoint Server 2013-programservernivå innan du ställer in tillgänglighetsuppsättningar för Microsoft Azure](../media/AZarch-AppServtierBefore.png)
   
 I det här diagrammet:
   
-- Tre servrar ingår i program nivån.
+- Tre servrar ingår i programnivån.
     
 - Den första servern innehåller fyra komponenter.
     
-- Den andra servern inkluderar tre komponenter.
+- Den andra servern innehåller tre komponenter.
     
-- Den tredje servern inkluderar två komponenter.
+- Den tredje servern består av två komponenter.
     
-Du bestämmer antalet komponenter i Server gruppens prestanda och kapacitet. För att anpassa denna arkitektur för Azure replikerar vi de fyra komponenterna på alla tre servrar. Detta ökar antalet komponenter utöver vad som är nödvändigt för prestanda och kapacitet. Kompromissen är att den här designen säkerställer hög tillgänglighet för alla fyra komponenter i Azure Platform när de här tre virtuella datorerna är tilldelade till en tillgänglighets uppsättning.
+Du fastställer antalet komponenter genom prestanda- och kapacitetsmålen för servergruppen. För att anpassa den här arkitekturen för Azure replikerar vi de fyra komponenterna över alla tre servrarna. Då ökar antalet komponenter utöver vad som krävs för prestanda och kapacitet. Kompromissen är att den här designen säkerställer hög tillgänglighet för alla fyra komponenterna i Azure-plattformen när dessa tre virtuella maskiner tilldelas till en tillgänglighetsuppsättning.
   
-**Bild 8: program server nivå efter fin justering**
+**Bild 8: Programservernivån efter finjustering**
 
-![Exempel på SharePoint Server 2013 program server nivå efter justering för Microsoft Azure tillgänglighets uppsättningar](../media/AZarch-AppServtierAfter.png)
+![Exempel på SharePoint Server 2013-programservernivå efter justering av tillgänglighetsuppsättningar för Microsoft Azure](../media/AZarch-AppServtierAfter.png)
   
-Det här diagrammet visar alla tre program servrar som har kon figurer ATS identiskt med samma fyra komponenter.
+I diagrammet visas alla tre programservrar som konfigurerats identiskt med samma fyra komponenter.
   
-Implementeringen är färdig när vi lägger till tillgänglighets uppsättningar till nivåerna i SharePoint-servergruppen.
+När vi lägger till tillgänglighetsuppsättningar för nivåerna för SharePoint-servergruppen är implementeringen klar.
   
-**Bild 9: den färdiga SharePoint-servergruppen i Azure Infrastructure Services**
+**Bild 9: Den slutförda SharePoint-servergruppen i Azure-infrastrukturtjänster**
 
-![Exempel på SharePoint 2013-servergrupp i Azure Infrastructure Services med virtuellt nätverk, lokalt ansluten, delnät, virtuella datorer och tillgänglighets uppsättningar](../media/7256292f-bf11-485b-8917-41ba206153ee.png)
+![Exempel på SharePoint 2013-servergrupp i Azure-infrastrukturtjänster med virtuella nätverk, tvärlokala anslutningar, undernät, virtuella maskiner och tillgänglighetsuppsättningar](../media/7256292f-bf11-485b-8917-41ba206153ee.png)
   
-Det här diagrammet visar den SharePoint-servergrupp som implementerats i Azure Infrastructure Services, med tillgänglighets uppsättningar för att tillhandahålla fel domäner för servrar i varje nivå.
+Det här diagrammet visar SharePoint-servergruppen som implementeras i Azure-infrastrukturtjänster, med tillgänglighetsuppsättningar för att tillhandahålla feldomäner för servrarna på varje nivå.
   
 ## <a name="see-also"></a>Se även
 
-[Microsoft 365-center för lösningar och arkitektur](../solutions/solution-architecture-center.md)
+[Microsoft 365-lösning och arkitekturcenter](../solutions/index.yml)
   
-[Internet-webbplatser i Microsoft Azure med SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
+[Internetwebbplatser i Microsoft Azure med SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
-[SharePoint Server 2013 katastrof återställning i Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
-
-
+[SharePoint Server 2013 katastrofåterställning i Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
