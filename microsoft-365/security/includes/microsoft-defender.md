@@ -4,13 +4,12 @@ ms.author: dansimp
 author: dansimp
 ms.prod: m365-security
 ms.topic: include
-ms.openlocfilehash: 7924a91f8ee9cc004d196a4d17bf4dae015464c6
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
-ms.translationtype: MT
+ms.openlocfilehash: 822a841294e263edc1f961b7c00dfc97f55c176e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50151282"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903893"
 ---
 > [!IMPORTANT]
-> Det förbättrade [säkerhetscentret för Microsoft 365](https://security.microsoft.com) är nu tillgängligt i offentlig förhandsversion. Den här nya upplevelsen tar Defender för Endpoint, Defender för Office 365, Microsoft 365 Defender och mer till Säkerhetscenter för Microsoft 365. Säkerhetsteam kan nu hantera alla slutpunkts-, e-post- och produktundersökningar, konfiguration och åtgärd utan att behöva gå till separata produktportaler. [Läs mer om vad som har ändrats.](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)
-
+> Det förbättrade [Microsoft 365 Säkerhetscenter](https://security.microsoft.com) är nu tillgänglig i allmänt tillgänglig förhandsversion. Med den här nya upplevelsen kommer Defender för Endpoint, Defender för Office, 365 Microsoft 365 Defender och annat till Microsoft 365 Säkerhetscenter. Säkerhetsteam kan nu hantera alla slutpunkts-, e-post- och korsproduktundersökningar, konfiguration och åtgärder utan att behöva navigera till separata produktportaler. [Läs mer om vad som ändrats](../mtp/overview-security-center.md).
