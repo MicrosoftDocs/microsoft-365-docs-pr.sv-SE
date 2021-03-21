@@ -40,6 +40,8 @@
       href: ../admin/manage/remove-licenses-from-users.md
     - name: Flytta användare till en annan prenumeration
       href: subscriptions/move-users-different-subscription.md
+    - name: Hantera principer för automatiska anspråk
+      href: licenses/manage-auto-claim-policies.md
     - name: Allmänt om prenumerationer och licenser
       href: licenses/subscriptions-and-licenses.md
 - name: Fakturor och betalningar
@@ -67,7 +69,7 @@
     - name: Hantera faktureringskonton
       href: manage-billing-accounts.md
     - name: Koppla en klientorganisation till ditt faktureringskonto
-      href: 'https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business'
+      href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business
 - name: Hantera relationer med partners
   href: manage-partners.md
 - name: Avsluta ditt konto

@@ -11,8 +11,9 @@
         - name: Säkerhetsrekommendationer för prioriterade konton
           href: ./office-365-security/security-recommendations-for-priority-accounts.md
     - name: Konfigurationer av identiteter och enhetsåtkomst
-      href: ./office-365-security/microsoft-365-policies-configurations.md
       items:
+        - name: Översikt
+          href: ./office-365-security/microsoft-365-policies-configurations.md
         - name: Nödvändigt förarbete
           href: ./office-365-security/identity-access-prerequisites.md
         - name: Vanliga principer för identitets- och enhetsåtkomst
@@ -360,6 +361,8 @@
               href: ./mtp/overview-security-center.md
             - name: Hotutforskaren (och realtidsidentifieringar)
               href: ./office-365-security/threat-explorer.md
+            - name: Sidan E-postenhet
+              href: ./office-365-security/mdo-email-entity-page.md
             - name: Översikt över Automatiska undersökningar och svar
               href: ./office-365-security/office-365-air.md
             - name: Så fungerar automatiska undersökningar och svar
@@ -702,8 +705,8 @@
                 - name: Hantera rollgrupper i fristående EOP
                   href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
     - name: Microsoft 365 för företag
-      href: 'https://docs.microsoft.com/microsoft-365/enterprise'
+      href: ../enterprise/index.yml
     - name: Microsoft 365 för företag
-      href: 'https://docs.microsoft.com/microsoft-365/admin/admin-home'
+      href: ./index.yml
     - name: Microsoft 365 Efterlevnad
-      href: 'https://docs.microsoft.com/microsoft-365/compliance/'
+      href: ../compliance/index.yml
