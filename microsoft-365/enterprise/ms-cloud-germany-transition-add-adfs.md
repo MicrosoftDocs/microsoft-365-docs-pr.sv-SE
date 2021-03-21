@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: Ad FS-migreringssteg (Active Directory Federation Services) för migreringen från Microsoft Cloud Deutschland.'
-ms.openlocfilehash: 852fc8f93158d7b6080f1add5a05e7367539f889
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 146f476a43e46925d87763a800467bf52adc73e5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838419"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918912"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>AD FS-migreringssteg för migreringen från Microsoft Cloud Deutschland
 
@@ -89,7 +89,8 @@ Du kan använda [AD FS-hjälpen för](https://adfshelp.microsoft.com/AadTrustCla
 
 ## <a name="ad-fs-disaster-recovery-wid-database"></a>AD FS-katastrofåterställning (WID-databas)
 
-Om du vill återställa AD FS-servergruppen i en katastrof måste snabb återställningsverktyget för [AD FS](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) utnyttjas. Därför måste verktyget laddas ned och innan migreringen startar måste en säkerhetskopia skapas och lagras på ett säkert sätt. I det här exemplet har följande kommandon körts för att backa upp en servergrupp som körs på en WID-databas:
+
+Om du vill återställa AD FS-servergruppen i en katastrof måste snabb återställningsverktyget för [AD FS](/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) utnyttjas. Därför måste verktyget laddas ned och innan migreringen startar måste en säkerhetskopia skapas och lagras på ett säkert sätt. I det här exemplet har följande kommandon körts för att backa upp en servergrupp som körs på en WID-databas:
 
 <h2 id="backup"></h2>
 
@@ -144,6 +145,6 @@ Flytta genom övergången:
 
 Molnappar:
 
-- [Information om Dynamics 365-migreringsprogram](https://aka.ms/d365ceoptin)
-- [Information om Migreringsprogram för Power BI](https://aka.ms/pbioptin)
-- [Komma igång med uppgraderingen till Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
+- [Information om Dynamics 365-migreringsprogram](/dynamics365/get-started/migrate-data-german-region)
+- [Information om Migreringsprogram för Power BI](/power-bi/admin/service-admin-migrate-data-germany)
+- [Komma igång med uppgraderingen till Microsoft Teams](/microsoftteams/upgrade-start-here)

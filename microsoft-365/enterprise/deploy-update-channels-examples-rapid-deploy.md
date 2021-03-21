@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Hur en organisation som distribuerar den senaste versionen använder kanaler för Windows 10-och Microsoft 365-appar.
-ms.openlocfilehash: fd1d8ddd342b2781470378c879ef70d2ba304316
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 29bda1651a83f0e043cf8a0d2a102c6c2e461bfd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686172"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919080"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>Exempel på en bred distribution för de senaste versionerna
 
@@ -61,7 +61,7 @@ I det här exemplet använder vi en distributions process i två steg baserat p�
 
 Det övergripande målet är att göra en bred distribution av den senaste halvårs fri lanseringen efter validering av frisläppnings kanaler för förhands granskning av en grupp representativa användare och deras enheter.
 
-Mer information om distributions metoder och strategier för Windows 10 finns i [distribution av Windows 10](https://docs.microsoft.com/windows/deployment/).
+Mer information om distributions metoder och strategier för Windows 10 finns i [distribution av Windows 10](/windows/deployment/).
 
 | Fas | Kanal | Distributions grupp |
 |:-------|:-------|:-----|
@@ -85,7 +85,7 @@ Pågående uppdaterings processen:
 
 Det övergripande målet är att utföra en bred distribution av den senaste aktuella kanal versionen när du har verifierat den aktuella kanalen (för hands version).
 
-Se [distribution av Microsoft 365-appar](https://docs.microsoft.com/deployoffice/plan-office-365-proplus) mer information om distributions metoder och strategier för Microsoft 365-appar.
+Se [distribution av Microsoft 365-appar](/deployoffice/plan-office-365-proplus) mer information om distributions metoder och strategier för Microsoft 365-appar.
 
 | Fas | Kanal | Distributions grupp |
 |:-------|:-------|:-----|

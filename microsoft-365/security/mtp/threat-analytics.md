@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e27659517f8c7b5cbc7936b825ac867a2888e251
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 288be30aa9592ba7feed92b9ad49955406f59f10
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727204"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918804"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>Spåra och svara på nya hot med hotanalyser 
 
@@ -35,7 +35,7 @@ ms.locfileid: "50727204"
 **Gäller för:**
 - Microsoft 365 Defender
 
-> Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera den i en labbmiljö](https://aka.ms/mtp-trial-lab) eller köra [pilotprojektet i produktion.](https://aka.ms/m365d-pilotplaybook)
+> Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera den i en labbmiljö](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) eller köra [pilotprojektet i produktion.](./mtp-pilot.md?ocid=cx-evalpilot)
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
@@ -155,7 +155,7 @@ Granska listan **över specifika åtgärdsbara** rekommendationer i avsnittet Mi
   - Potentiellt oönskat programskydd (PUA)
   - Realtidsskydd
  
-I information om åtgärder i det här avsnittet ingår data från hantering av hot och [risker,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)som också innehåller detaljerad information om åtgärder från olika länkar i rapporten.
+I information om åtgärder i det här avsnittet ingår data från hantering av hot och [risker,](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)som också innehåller detaljerad information om åtgärder från olika länkar i rapporten.
 
 ![Bild av avsnittet åtgärder i en rapport om hotanalys som visar säker konfigurationsinformation Bild av avsnittet om åtgärder i en rapport om hotanalys som visar information om ](../../media/threat-analytics/ta_mitigations_mtp.png)
  ![ problemet](../../media/threat-analytics/ta_mitigations_mtp2.png)
@@ -181,4 +181,4 @@ När du tittar på data från hotanalyser ska du tänka på följande faktorer:
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Hitta hot proaktivt med avancerad sökning](advanced-hunting-overview.md) 
 - [Förstå analytikernas rapportavsnitt](threat-analytics-analyst-reports.md)
-- [Utvärdera och lösa säkerhetsbrister och exponeringar](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Utvärdera och lösa säkerhetsbrister och exponeringar](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

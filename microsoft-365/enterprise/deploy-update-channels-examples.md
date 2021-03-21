@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Hur exempel organisationer distribuerar och uppdaterar med hjälp av kanaler.
-ms.openlocfilehash: 88567fedd92f01885c4971acc273a676c3e82de8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a91ee948ca2051ceccb3883b2dd0198c1070bc03
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686160"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919068"
 ---
 # <a name="deployment-and-update-channel-example-configurations"></a>Distribution och uppdatering av kanalkonfigurationer
 
@@ -41,9 +41,9 @@ Klicka på länken i **exempel** kolumnen om du vill stega igenom distributions 
 
 | Kund-/kanal erbjudande | Windows 10 | Microsoft 365-applikationer för Enterprise (Windows 10) | Exempel |
 |:-------|:-------|:-----|:-------|
-| För kunder som vill ha de senaste lanseringarna så fort de är klara. | Halvårsvis kanal | [Aktuell kanal](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) | [Senaste versioner](deploy-update-channels-examples-rapid-deploy.md) |
-| För företag som vill ha den senaste versionen mer förutsägbar. | Halvårsvis kanal | [Månatlig företags kanal](https://docs.microsoft.com/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) |  |
-| För företag som har behov av omfattande IT-testning före varje uppdatering. | Halvårsvis kanal | [Halvårsvis företags kanal](https://docs.microsoft.com/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview) |  |
+| För kunder som vill ha de senaste lanseringarna så fort de är klara. | Halvårsvis kanal | [Aktuell kanal](/deployoffice/overview-update-channels#current-channel-overview) | [Senaste versioner](deploy-update-channels-examples-rapid-deploy.md) |
+| För företag som vill ha den senaste versionen mer förutsägbar. | Halvårsvis kanal | [Månatlig företags kanal](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) |  |
+| För företag som har behov av omfattande IT-testning före varje uppdatering. | Halvårsvis kanal | [Halvårsvis företags kanal](/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview) |  |
 |||||
 
 

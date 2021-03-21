@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bbb3814a973bec53a877bc70d0299ce7b2eb87b5
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: f3e4b434f1ca267d5bbfbc7e67cb20c7e2b9dbbb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727559"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920570"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft Managed Desktop-arkiverade enheter
 
@@ -75,7 +75,7 @@ Dessutom måste enheten också:
 
 - Har en bild godkänd av Microsoft Managed Desktop. När du beställer enheter ska du se till att de används med Microsoft Managed Desktop.
 - Windows-körningen har inte slutförts.
-- Registreras med Microsoft Managed Desktop med funktionen [Enhetsregistrering](https://aka.ms/mmddrhelp)
+- Registreras med Microsoft Managed Desktop med funktionen [Enhetsregistrering](../get-started/register-devices-self.md)
 
 #### <a name="more-help"></a>Mer hjälp
 

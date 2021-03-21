@@ -9,17 +9,17 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8e95eb0fd0e03dc718affa7e7cf044beb654bb56
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 07d3d50f012b2d93e9f7a75f47b0c35514b51350
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840941"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920626"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Vad är Microsoft Hanterat skrivbord?
 
 
-Microsoft Hanterat skrivbord är en molnbaserad tjänst som omfattar [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) (inklusive [Windows 10](https://docs.microsoft.com/windows/windows-10/) Enterprise och [Office 365 Enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)) och lägger till dessa funktioner:
+Microsoft Hanterat skrivbord är en molnbaserad tjänst som omfattar [Microsoft 365 Enterprise](../../enterprise/microsoft-365-overview.md) (inklusive [Windows 10](/windows/windows-10/) Enterprise och [Office 365 Enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)) och lägger till dessa funktioner:
 
 - Distribution av användarenheter
 - IT-tjänsthantering och -drift
@@ -44,7 +44,7 @@ Våra principer och säkerhetsbaslinje ger dina användare följande fördelar:
 - Starttider för Microsoft Hanterat skrivbord-enheter tar knappt en fjärdedel av tiden.
 - Minst två gånger batteriets livslängd
 - Cirka en tredjedel av enheter kraschar varje år
-- Enhetsmobilitet genom [Enterprise State Roaming](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview), som tillåter att användare kan ha samma upplevelse oavsett vilken enhet de loggar in på
+- Enhetsmobilitet genom [Enterprise State Roaming](/azure/active-directory/devices/enterprise-state-roaming-overview), som tillåter att användare kan ha samma upplevelse oavsett vilken enhet de loggar in på
 
 Din IT-administratör drar nytta av de här funktionerna:
 
@@ -58,7 +58,7 @@ Microsoft Hanterat skrivbord tar på sig bördan att hantera registrerade enhete
 
 - **Maskin vara:** i stället för IT-avdelningen som använder sig av Research och test produkter (och deras driv rutiner), testas noga av Microsoft Hanterat skrivbord, vilket resulterar i en granskad [listan över enheter som](../service-description/device-list.md) uppfylla prestanda kraven på företags nivå och garanterat fungerar med tjänsten. Du kan välja att skaffa enheter själv (eller arbeta med en partner) eller att återanvända enheter du redan har, förutsatt att de finns med på listan över godkända enheter. Att registrera enheter är enkelt och tydligt, och innan de distribueras kan du också [anpassa](../working-with-managed-desktop/config-setting-overview.md) vissa aspekter av enhetsupplevelsen för användarna.
 - **Uppdateringar:** Microsoft Hanterat skrivbord konfigurerar och hanterar alla aspekter av [distributionsgrupper](../service-description/updates.md) för kvalitets- och funktionsuppdateringar för Windows 10, drivrutiner, inbyggd programvara, antivirusdefinitioner och uppdateringar för Microsoft 365-applikationer för företag. Detta inkluderar omfattande tester och verifiering av alla uppdateringar för att säkerställa att registrerade enheter alltid är uppdaterade och för att minimera störningar, vilket frigör din IT-avdelning från den pågående uppgiften.
-- **Appar:** Som en del av Microsoft 365 Enterprise tillhandahåller (och hanterar) flera viktiga Microsoft-appar för dig. Men det finns förmodligen andra appar du behöver för ditt företag också. Istället för att kräva att din IT-avdelning testar, paketerar och distribuerar dessa appar, hjälper Microsoft dig att distribuera dem och kan hjälpa till med [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) vid behov. Läs mer i [appar på Microsoft Hanterat skrivbord](../get-ready/apps.md).
+- **Appar:** Som en del av Microsoft 365 Enterprise tillhandahåller (och hanterar) flera viktiga Microsoft-appar för dig. Men det finns förmodligen andra appar du behöver för ditt företag också. Istället för att kräva att din IT-avdelning testar, paketerar och distribuerar dessa appar, hjälper Microsoft dig att distribuera dem och kan hjälpa till med [Desktop App Assure](/fasttrack/win-10-desktop-app-assure) vid behov. Läs mer i [appar på Microsoft Hanterat skrivbord](../get-ready/apps.md).
 
 
 ## <a name="device-monitoring"></a>Enhets övervakning
@@ -79,7 +79,7 @@ Om Microsoft Hanterat skrivbord verkar rätt för din organisation kan du fördj
 - [Teknologier i Microsoft Hanterat skrivbord](technologies.md)
 - [Microsoft Hanterat skrivbord och ITIL](../MMD-and-ITSM.md)
 - [Efterlevnad](compliance.md)
-- [Tjänst beskrivning för Microsoft Hanterat skrivbord](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
+- [Tjänst beskrivning för Microsoft Hanterat skrivbord](../service-description/index.md)
 
 **Förbered dig för registrering** i dessa avsnitt beskrivs de steg som du måste utföra i din organisation för att förbereda för registrering, t. ex. kontroll av att din miljö uppfyller viktiga förutsättningar, konfigurera nätverk, konfigurera certifikat och förbereda appar.
 
@@ -88,7 +88,7 @@ Om Microsoft Hanterat skrivbord verkar rätt för din organisation kan du fördj
 - [Förbereda lokala resurser till gång för Microsoft Hanterat skrivbord](../get-ready/authentication.md)
 - [Förbereda mappade enheter för Microsoft Hanterat skrivbord](../get-ready/mapped-drives.md)
 - [Förbereda certifikat och nätverks profiler för Microsoft Hanterat skrivbord](../get-ready/certs-wifi-lan.md)
-- [Appar i Microsoft Hanterat skrivbord](../get-ready/apps.md)
+- [Appar på Microsoft Hanterat skrivbord](../get-ready/apps.md)
 
 **Kom igång** När du är klar med registreringen hittar du anvisningar i det här avsnittet för att ansluta till tjänsten, skaffa och konfigurera enheter, förbereda användarna och distribuera apparna.
 
@@ -114,4 +114,3 @@ Om Microsoft Hanterat skrivbord verkar rätt för din organisation kan du fördj
 <!--When you enroll in Microsoft Managed Desktop, Microsoft provides you with devices that are configured to join your Azure Active Directory tenant. Windows 10, Office 365, and some apps and features associated with [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) are installed (by Microsoft) on your devices. When your employees who are using these devices need help, they contact Microsoft Managed Desktop support (provided by Microsoft) through a custom chat app.--> 
 
 <!--With Microsoft Managed Desktop, you get **software as a service** (Microsoft 365 E5), **Device as a service** (Microsoft Surface devices ready to use), and **IT support as a service** (Help desk and more).--> 
- 

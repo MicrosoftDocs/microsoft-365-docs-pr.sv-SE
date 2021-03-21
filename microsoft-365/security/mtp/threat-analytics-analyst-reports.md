@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c82b0a84582d18f8b08b369ff76ba34046c40eba
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 96a4a8ae902f0b8e4767ea3fd42079322d661208
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727153"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918816"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics"></a>Förstå analytikerrapporten i hotanalyser
 
@@ -35,7 +35,7 @@ ms.locfileid: "50727153"
 **Gäller för:**
 - Microsoft 365 Defender
 
-> Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera den i en labbmiljö](https://aka.ms/mtp-trial-lab) eller köra [pilotprojektet i produktion.](https://aka.ms/m365d-pilotplaybook)
+> Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera den i en labbmiljö](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) eller köra [pilotprojektet i produktion.](./mtp-pilot.md?ocid=cx-evalpilot)
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
@@ -68,7 +68,7 @@ Förutom de här spårade minskningarna tar analysrapporten även upp åtgärder
 - Blockera e-postmeddelanden _med LNK-bilagor_ eller andra misstänkta filtyper
 - Slumpmässiga lösenord för lokala administratörer
 - Utbilda slutanvändare om nätfiske och andra vektorer
-- Aktivera specifika [minskningsregler för attackytan](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)
+- Aktivera specifika [minskningsregler för attackytan](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)
 
 Även om du kan använda **fliken** Minskningar för att bedöma din säkerhetsbegränsning mot ett hot, kan du med hjälp av de här rekommendationerna vidta ytterligare åtgärder för att förbättra säkerheten. Läs noggrant alla minskningsvägledning i analytikerrapporten och använd dem när det är möjligt.
 
@@ -76,13 +76,13 @@ Förutom de här spårade minskningarna tar analysrapporten även upp åtgärder
 Analysrapporten innehåller även funktioner för identifieringar från Microsoft Defender för endpoint antivirus och _slutpunktsidentifiering_ och svar (EDR).
 
 ### <a name="antivirus-detections"></a>Antivirusidentifiering
-De här identifieringarna är tillgängliga på enheter [med Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) aktiverat. När de här identifieringarna inträffar på enheter som har introducerats till Microsoft Defender för Endpoint utlöser de även aviseringar som tar upp diagrammen i rapporten.
+De här identifieringarna är tillgängliga på enheter [med Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) aktiverat. När de här identifieringarna inträffar på enheter som har introducerats till Microsoft Defender för Endpoint utlöser de även aviseringar som tar upp diagrammen i rapporten.
 
 >[!NOTE]
 >Analytikerrapporten visar även **allmänna** identifieringar som kan identifiera en mängd olika hot, utöver komponenter eller beteenden som är specifika för de spårade hoten. Dessa allmänna identifieringar återspeglas inte i diagrammen.
 
 ### <a name="endpoint-detection-and-response-edr-alerts"></a>Slutpunktsidentifiering och svarsaviseringar (EDR)
-EDR-aviseringar upphöjs [för enheter som är onboarded till Microsoft Defender för Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure). Dessa varningar förlitar sig vanligtvis på säkerhetssignaler som samlas in av Microsoft Defender för Endpoint-sensoren och andra slutpunktsfunktioner – till exempel antivirus, nätverksskydd, manipuleringsskydd – som fungerar som kraftfulla signalkällor.
+EDR-aviseringar upphöjs [för enheter som är onboarded till Microsoft Defender för Endpoint](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure). Dessa varningar förlitar sig vanligtvis på säkerhetssignaler som samlas in av Microsoft Defender för Endpoint-sensoren och andra slutpunktsfunktioner – till exempel antivirus, nätverksskydd, manipuleringsskydd – som fungerar som kraftfulla signalkällor.
 
 Liksom listan med antivirusidentifieringar är vissa EDR-aviseringar utformade för att generellt flagga misstänkt beteende som kanske inte är kopplat till det spårade hotet. I sådana fall identifierar rapporten tydligt varningen som "allmän" och att den inte påverkar något av diagrammen i rapporten.
 
@@ -100,7 +100,7 @@ Avancerade sökfrågor i analytikernas rapporter har kontrollerats av Microsoft-
 
 
 >[!NOTE]
-> Hotanalyser finns också tillgängliga i [Microsoft Defender för Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) Men det har inte dataintegreringen mellan Microsoft Defender för Office och Microsoft Defender för Slutpunkt som Microsoft 365 Defender hotanalyser har.
+> Hotanalyser finns också tillgängliga i [Microsoft Defender för Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) Men det har inte dataintegreringen mellan Microsoft Defender för Office och Microsoft Defender för Slutpunkt som Microsoft 365 Defender hotanalyser har.
 
 
 ## <a name="related-topics"></a>Relaterade ämnen

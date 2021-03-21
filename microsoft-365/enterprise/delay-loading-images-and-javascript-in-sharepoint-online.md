@@ -1,5 +1,5 @@
 ---
-title: Fördröj inläsning av bilder och Java Script i SharePoint Online
+title: Fördröja inläsning av bilder och JavaScript i SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -20,33 +20,33 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: Lär dig hur du minskar inläsnings tiden för SharePoint Online-sidor genom att använda Java Script för att fördröja inläsning av bilder och icke-väsentliga Java Script
-ms.openlocfilehash: ee86ae0813c11fbfd836d7d38ea124c1e3f277d0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Lär dig hur du kan minska inläsningstiden för SharePoint Online-sidor genom att använda JavaScript för att fördröja inläsningen av bilder och JavaScript som inte behövs.
+ms.openlocfilehash: 86b93c4e1e102132bb0c1bfb9a413233529adecb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694689"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919170"
 ---
-# <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Fördröj inläsning av bilder och Java Script i SharePoint Online
+# <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Fördröja inläsning av bilder och JavaScript i SharePoint Online
 
-I den här artikeln beskrivs hur du kan minska inläsnings tiden för sidor i SharePoint Online genom att använda Java Script för att fördröja inläsning av bilder och även genom att vänta med att läsa in icke-väsentlig Java Script tills du har läst
+I den här artikeln beskrivs hur du kan minska inläsningstiden för SharePoint Online-sidor genom att använda JavaScript för att fördröja inläsningen av bilder och även genom att vänta med att läsa in icke-viktiga JavaScript tills sidan har lästs in.
   
-Bilder kan påverka sid hastigheten på SharePoint Online negativt. Som standard är de flesta moderna Internet webbläsare förhämtade bilder när du läser in en HTML-sida. Det kan medföra att sidan blir onödigt långsamt för att laddas om bilderna inte visas på skärmen förrän användaren bläddrar nedåt. Bilderna kan hindra webbläsaren från att läsa in den synliga delen av sidan. Du kan undvika problemet genom att använda Java Script för att hoppa över laddningen av bilderna först. Dessutom kan du ladda ned icke-väsentliga JavaScript-tider på dina SharePoint-sidor. I det här avsnittet beskrivs några metoder som du kan använda för att förbättra sid inläsnings tider med Java Script i SharePoint Online.
+Bilder kan påverka inläsningshastigheten för sidor i SharePoint Online negativt. Som standard hämtar de flesta moderna webbläsare bilder i förväg när de läser in en HTML-sida. Det kan leda till att sidan tar onödigt lång tid att läsa in om bilderna inte visas på skärmen förrän användaren rullar nedåt. Bilderna kan blockera webbläsaren från att läsa in den synliga delen av sidan. Du kan komma runt det här problemet genom att använda JavaScript för att hoppa över inläsningen av bilder först. Inläsning av JavaScript som inte är viktigt kan också leda till långsamma nedladdningstider på SharePoint-sidor. I det här avsnittet beskrivs några metoder du kan använda för att förbättra sidinläsningstiderna med JavaScript i SharePoint Online.
   
-## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Förbättra sid inläsnings tid genom att försena bild inläsning på SharePoint Online-sidor med hjälp av Java Script
+## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Förbättra sidinläsningstiderna genom att fördröja inläsningen av bilder på SharePoint Online-sidor med JavaScript
 
-Du kan använda Java Script för att förhindra att en webbläsare förhämtar bilder. Detta påskyndar den övergripande dokument åter givningen. För att göra det här tar du bort värdet på src-attributet från \<img\> taggen och ersätter det med sökvägen till en fil i ett dataattribut, till exempel: data-src. Till exempel:
+Du kan använda JavaScript för att förhindra att en webbläsare hämtar bilder i förväg. Det gör att den övergripande dokumentåtergivningen går snabbare. Om du vill göra det här tar du bort värdet för src-attributet från taggen och ersätter det med sökvägen till en fil i ett \<img\> dataattribut, till exempel: data-src. Ett exempel:
   
 ```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
 ```
 
-Med den här metoden hämtas inte bilderna direkt av webbläsaren. Om bilden redan är i visnings området, säger Java Script till webbläsaren att hämta URL-adressen från dataattributet och infoga den som värde för attributet src. Bilden läses in bara när användaren bläddrar och det kommer att visas.
+Med den här metoden laddar webbläsaren inte ned bilderna direkt. Om bilden redan finns i visningsområdet talar JavaScript om för webbläsaren att hämta URL-adressen från dataattributet och infoga den som värde för src-attributet. Bilden läses bara in när användaren rullar och den kommer in i visningsläge.
   
-För att det ska hända måste du använda Java Script.
+Om du vill göra allt detta måste du använda JavaScript.
   
-I en textfil definierar du funktionen **isElementInViewport ()** för att kontrol lera om ett element finns i den del av webbläsaren som visas för användaren.
+Definiera funktionen **isElementInViewport()** i en textfil för att kontrollera om ett element finns i den del av webbläsaren som är synlig för användaren.
   
 ```javascript
 function isElementInViewport(el) {
@@ -62,7 +62,7 @@ function isElementInViewport(el) {
 }
 ```
 
-Sedan använder du **isElementInViewport ()** i funktionen **loadItemsInView ()** . Funktionen **loadItemsInView ()** läser in alla bilder som har ett värde för attributet data-src om de ingår i den webbläsare som visas för användaren. Lägga till följande funktion i text filen:
+Använd sedan **isElementInViewport()** i funktionen **loadItemsInView().** Funktionen **loadItemsInView()** laddar alla bilder som har ett värde för attributet data-src, om de finns i den del av webbläsaren som är synlig för användaren. Lägg till följande funktion i textfilen:
   
 ```javascript
 function loadItemsInView() {
@@ -78,7 +78,7 @@ function loadItemsInView() {
 }
 ```
 
-Slutligen kan du ringa **loadItemsInView ()** inifrån **window. onscroll ()** enligt följande exempel. Då ser du till att alla bilder som finns i visnings området läses in eftersom användarna behöver dem, men inte före. Lägg till följande i text filen:
+Anropa slutligen **loadItemsInView()** inifrån **window.onscroll()** enligt följande exempel. Detta garanterar att alla bilder som finns i visningsområdet laddas när användaren behöver dem, men inte tidigare. Lägg till följande i textfilen:
   
 ```javascript
 //Example of calling loadItemsInView() from within window.onscroll()
@@ -88,7 +88,7 @@ $(window).on("scroll", function () {
 
 ```
 
-För SharePoint Online måste du koppla följande funktion till rullnings händelsen i taggen #s4-arbetsyta \<div\> . Detta beror på att fönster händelserna åsidosätts för att det ska vara öppet i menyfliksområdet.
+För SharePoint Online måste du koppla följande funktion till rullningshändelsen på \<div\> #s4-workspace-taggen. Det beror på att fönsterhändelserna åsidosätts för att säkerställa att menyfliksområdet förblir kopplat till början av sidan.
   
 ```javascript
 //Keep the ribbon at the top of the page
@@ -97,34 +97,34 @@ $('#s4-workspace').on("scroll", function () {
 });
 ```
 
-Spara text filen som en JavaScript-fil med fil namns tillägget. js, till exempel delayLoadImages.js.
+Spara textfilen som en JavaScript-fil med filnamnstillägget .js, till exempel delayLoadImages.js.
   
-När du har skrivit delayLoadImages.js kan du lägga till innehållet i filen på en huvud sida i SharePoint Online. Det gör du genom att lägga till en skript länk till sidhuvudet på huvud sidan. När det är på en huvud sida används Java Script på alla sidor på SharePoint Online-webbplatsen som använder den huvud sidans layout. Om du bara tänker använda den här sidan på en sida på din webbplats kan du använda webb delen skript redigeraren för att bädda in JavaScript-filen på sidan. Mer information finns i följande avsnitt:
+När du är klar med delayLoadImages.js kan du lägga till innehållet i filen på en huvudsida i SharePoint Online. Det gör du genom att lägga till en skriptlänk i sidhuvudet på huvudsidan. När JavaScript-text finns på en huvudsida används det på alla sidor på SharePoint Online-webbplatsen som använder den huvudsideslayouten. Om du bara tänker använda det på en sida på webbplatsen kan du använda skriptredigeringswebbdelen till att bädda in JavaScript-skriptet på sidan. Mer information finns i följande avsnitt:
   
-- [Så här: använda en huvud sida för en webbplats i SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
+- [Så här gör du för att: Använda en huvudsida för en webbplats i SharePoint 2013](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
 
-- [Så här skapar du en sidlayout i SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
+- [Så här gör du för att: Skapa en sidlayout i SharePoint 2013](/sharepoint/dev/general-development/how-to-create-a-page-layout-in-sharepoint)
 
-### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>Exempel: referera till JavaScript delayLoadImages.js-filen från en huvud sida i SharePoint Online
+### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>Exempel: Referera till JavaScript-delayLoadImages.js från en huvudsida i SharePoint Online
   
-För att det ska fungera måste du också referera till jQuery på huvud sidan. I följande exempel kan du se i den inledande sid inläsningen att det bara finns en bild som är laddad, men det finns flera mer på sidan.
+För att det här ska fungera måste du också referera till jQuery på huvudsidan. I följande exempel kan du se att i den första sidinläsningen finns det bara en bild inläst, men det finns flera bilder på sidan.
   
-![Skärm bild som visar en bild som lästs in på sidan](../media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
+![Skärmbild som visar en bild som lästs in på sidan](../media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
   
-På följande skärm bild visas resten av bilderna som laddas ned efter en rullning.
+På följande skärmbild visas resten av bilderna som laddas ned när de rullas in i vyn.
   
-![Skärm bild som visar flera inlästa bilder på sidan](../media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
+![Skärmbild med flera bilder laddade på sidan](../media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
   
-Försenad bild laddning med Java Script kan vara en effektiv metod för att öka prestandan. om den här metoden tillämpas på en offentlig webbplats kan sökmotorer inte heller crawla bilderna på samma sätt som de crawlar en vanligt bild. Det här kan påverka rangordningarna för sökmotorer eftersom metadata på själva bilden inte är så bra förrän sidan laddas. Sök robotar läser bara HTML-koden så att bilderna inte visas som innehåll på sidan. Bilder är ett av de faktorer som används för att rangordna sidor i Sök resultat. Ett sätt att kringgå det här är att använda inledande text för dina bilder.
+Att fördröja bildläsningen med hjälp av JavaScript kan vara en effektiv teknik för att öka prestandan. Men om tekniken används på en offentlig webbplats kan sökmotorer inte crawla bilder på samma sätt som de skulle crawla bilder som skapats regelbundet. Det kan påverka rangordningen på sökmotorer eftersom metadata på själva bilden inte verkligen finns där förrän sidan läses in. Sökmotor crawlare läser bara HTML-koden och ser därför inte bilderna som innehåll på sidan. Bilder är en av de faktorer som används för att rangordna sidor i sökresultat. Ett sätt att komma runt det här problemet är att använda introduktionstext för bilder.
   
-## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>GitHub kod exempel: injicera Java Script för att förbättra prestanda
+## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>Exempel på GitHub-kod: Mata in JavaScript för att förbättra prestanda
 
-Missa inte artikeln och kod exemplet på [Java Script injektion](https://go.microsoft.com/fwlink/p/?LinkId=524759) på GitHub.
+Missa inte artikeln och kodexeskriptet på [JavaScript-rutorna](https://go.microsoft.com/fwlink/p/?LinkId=524759) som visas på GitHub.
   
 ## <a name="see-also"></a>Se även
 
-[Webbläsare som stöds i Office 2013 och Microsoft 365-appar för företag](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
+[Webbläsare som stöds i Office 2013 och Microsoft 365-program för företag](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
-[Så här: använda en huvud sida för en webbplats i SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
+[Så här gör du för att: Använda en huvudsida för en webbplats i SharePoint 2013](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
   
-[Så här skapar du en sidlayout i SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
+[Så här gör du för att: Skapa en sidlayout i SharePoint 2013](/sharepoint/dev/general-development/how-to-create-a-page-layout-in-sharepoint)

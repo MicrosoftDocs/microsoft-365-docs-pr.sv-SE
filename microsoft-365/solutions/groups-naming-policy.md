@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 grupper namn princip
+title: Namngivningsprincip för Microsoft 365-grupper
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -16,46 +16,46 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
-description: Lär dig hur du skapar en namn princip för Microsoft 365 Groups.
-ms.openlocfilehash: acf660375508760bd2e9874a07454709849929b0
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+description: Lär dig hur du skapar en namnprincip för Microsoft 365-grupper.
+ms.openlocfilehash: 7fd2ea36b536924d85c7ca09b55593161a24dbe4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49759830"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921054"
 ---
-# <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 grupper namn princip
+# <a name="microsoft-365-groups-naming-policy"></a>Namngivningsprincip för Microsoft 365-grupper
 
-Du kan använda en princip för att skapa en konsekvent namn strategi för grupper som skapas av användare i organisationen. En namn princip hjälper dig och dina användare att identifiera funktionen för gruppen, medlemskap, geografiska områden eller vem som skapat gruppen. Namn princip kan också hjälpa kategorisering av grupper i adress boken. Du kan använda principen för att blockera specifika ord från att användas i grupp namn och alias.
+Du kan använda en gruppnamnprincip för att tillämpa en konsekvent namngivningsstrategi för grupper som skapas av användare i organisationen. En namnprincip kan hjälpa dig och dina användare att identifiera funktionen för gruppen, medlemskap, geografiskt område eller vem som skapade gruppen. Namnprincipen kan även hjälpa till att kategorisera grupper i adressboken. Du kan använda principen för att blockera specifika ord från att användas i gruppnamn och gruppalias.
 
-Namngivnings principen tillämpas på grupper som skapas i alla grupp arbets uppgifter (som Outlook, Microsoft Teams, SharePoint, Planner, Yammer osv.). Den används för både grupp namn och gruppalias. Den används också när en användare skapar en grupp och när gruppens namn, alias, beskrivning eller avatar redige ras för en befintlig grupp.
+Namnprincipen tillämpas på grupper som skapas i alla grupparbetsbelastningar (t.ex. Outlook, Microsoft Teams, SharePoint, Planner, Yammer osv.). Det används för både gruppnamn och gruppalias. Det används också när en användare skapar en grupp och när gruppens namn, alias, beskrivning eller avatar redigeras för en befintlig grupp.
 
 > [!TIP]
-> En Microsoft 365-grupp för namngivnings princip gäller endast för Microsoft 365-grupper. Det gäller inte distributions grupper som har skapats i Exchange Online. Information om hur du skapar en namngivnings princip för distributions grupper finns i [skapa en namn princip för en distributions grupp](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
+> En namngivningsprincip för Microsoft 365-grupper gäller endast för Microsoft 365-grupper. Den gäller inte för distributionsgrupper som skapats i Exchange Online. Information om hur du skapar en namnprincip för distributionsgrupper finns [i Skapa en namngivningsprincip för distributionsgrupp.](/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)
 
 Namnprincipen för grupp består av följande funktioner:
 
-- **Prefix – namngivnings princip för suffix**: du kan ange namn konvention för grupper (till exempel: " \_ min grupp \_ teknik"). Prefix och suffix kan antingen vara fasta strängar eller användarattribut som [Department], som ersätts utifrån den användare som skapar gruppen.
+- **Prefix-Suffixnamnprincip:** Du kan använda prefix eller suffix för att definiera namngivningskonventioner för grupper (till exempel "Us \_ My Group \_ Engineering"). Prefix och suffix kan antingen vara fasta strängar eller användarattribut som [Department], som ersätts utifrån den användare som skapar gruppen.
 
-- **Anpassade blockerade ord**: du kan ladda upp en uppsättning blockerade ord som är specifika för din organisation som blockeras i grupper som skapats av användare. (Till exempel: "VD, lön, HR").
+- **Egna blockerade ord:** Du kan ladda upp en uppsättning blockerade ord som är specifika för din organisation och som blockeras i grupper som skapats av användare. (Till exempel: "VD, Löneavdelningen, HR").
 
-## <a name="licensing-requirements"></a>Licens krav
+## <a name="licensing-requirements"></a>Licenskrav
 
-För att använda Azure AD-grupprinciper för Microsoft 365-grupper måste du ha, men inte nödvändigt vis, en Azure Active Directory Premium P1-licens eller Azure AD Basic EDU-licens för varje enskild användare (inklusive gäster) som är medlem i en eller flera Microsoft 365-grupper.
+Om du använder Azure AD-namnprincip för Microsoft 365 Grupper måste du ha, men inte nödvändigtvis tilldela en Azure Active Directory Premium P1-licens eller Azure AD Basic EDU-licens för varje unik användare (inklusive gäster) som är medlem i en eller flera Microsoft 365-grupper.
 
-Det här är också obligatoriskt för administratören som skapar namn princip för grupper.
+Det här krävs också för administratören som skapar namnprincipen för grupper.
 
-## <a name="prefix-suffix-naming-policy"></a>Prefix-Suffix namn princip
+## <a name="prefix-suffix-naming-policy"></a>Prefix-Suffix namnprincip
 
 Prefix och suffix kan antingen vara fasta strängar eller användarattribut.
 
 ### <a name="fixed-strings"></a>Fasta strängar
 
-Du kan använda korta strängar som hjälper dig att skilja grupper i det GAL och vänstra navigerings fältet i gruppens arbets belastning. Vissa vanliga prefix är nyckelord som "GRP \_ Name", " \# namn", " \_ namn"
+Du kan använda korta strängar som hjälper dig att skilja mellan grupper i GAL och vänster navigering i gruppens arbetslaster. Några vanliga prefix/suffix är nyckelord som \_ "Grp-namn", \# "Namn", " \_ Namn"
 
 ### <a name="attributes"></a>Attribut
 
-Du kan använda attribut som hjälper dig att identifiera vem som skapade gruppen, till exempel [avdelning] och var den skapades från gilla [Country].
+Du kan använda attribut som kan hjälpa dig identifiera vem som skapade gruppen, till exempel [Department], och var den skapades, som [Land].
 
 Exempel:
 
@@ -63,38 +63,38 @@ Exempel:
 - Användarens avdelning = Teknik
 - Skapat gruppnamn = "GRP Min grupp Teknik"
 
-Azure Active Directory (Azure AD)-attribut som stöds är [avdelning], [företag], [Office], [StateOrProvince], [CountryOrRegion] och [title].
+Azure Active Directory-attribut som stöds (Azure AD) är [Department], [Company], [Office], [StateOrProvince], [CountryOrRegion] och [Title].
 
-- Användarattribut som inte stöds betraktas som fasta strängar, till exempel [post nummer].
+- Användarattribut som inte stöds betraktas som fasta strängar, till exempel [postalCode].
 
 - Tilläggsattribut och egna attribut stöds inte.
 
 Vi rekommenderar att du använder attribut som har värden ifyllda för alla användare i organisationen samt att du inte använder attribut som har långa värden.
 
-### <a name="things-to-look-out-for"></a>Saker att se ut för
+### <a name="things-to-look-out-for"></a>Saker att vara ute efter
 
 - När du skapar principen är den totala stränglängden för prefix och suffix begränsad till 53 tecken.
 
-- Prefix och suffix får innehålla specialtecken som stöds i gruppens namn och gruppalias. När prefix och suffix innehåller specialtecken som inte är tillåtna i gruppaliaset tillämpas de bara på grupp namnet. I det här fallet skiljer sig de prefix och suffix som tillämpas på gruppnamnet från dem som tillämpas på gruppaliaset.
+- Prefix och suffix får innehålla specialtecken som stöds i gruppens namn och gruppalias. Om prefix och suffix innehåller specialtecken som inte är tillåtna i gruppaliaset tillämpas de bara på gruppnamnet. I det här fallet skiljer sig de prefix och suffix som tillämpas på gruppnamnet från dem som tillämpas på gruppaliaset.
 
   > [!NOTE]
-  > En punkt (.) eller ett bindestreck (-) tillåts var som helst i grupp namnet, förutom i början eller slutet av namnet. Ett under streck (_) tillåts var som helst i grupp namnet, inklusive i början eller slutet av namnet.
+  > En punkt (.) eller ett bindestreck (-) tillåts någonstans i gruppnamnet, förutom i början eller slutet av namnet. Ett understreck (_) tillåts var som helst i gruppnamnet, även i början eller slutet av namnet.
 
-- Om du använder Yammer Office 365-anslutna grupper kan du undvika att använda följande tecken i din namn princip: @, \# , \[ , \] , \<, and \> . Om dessa tecken finns i namn principen kan vanliga Yammer-användare inte skapa grupper.
+- Om du använder Office 365-anslutna Yammer-grupper ska du undvika att använda följande tecken i namnprincipen: @, \# , \[ , , \] \<, and \> . Om dessa tecken ingår i namnprincipen kan vanliga Yammer-användare inte skapa grupper.
 
 > [!Tip]
 > - Använd korta strängar som suffix.
 > - Använd attribut med värden.
-> - Är inte för kreativ, total namn längd får högst innehålla 264 tecken.
-> - Ladda upp dina organisatoriska blockerade ord för att begränsa användningen.
+> - Var inte för kreativ, den totala namnlängden får vara högst 264 tecken.
+> - Ladda upp organisationens specifika blockerade ord för att begränsa användning.
 
-## <a name="custom-blocked-words"></a>Anpassade blockerade ord
+## <a name="custom-blocked-words"></a>Egna blockerade ord
 
-Du kan ange en kommaseparerad lista över blockerade ord som ska blockeras i grupp namn och alias.
+Du kan ange en kommaavgränsad lista med blockerade ord som ska blockeras i gruppnamn och gruppalias.
 
-Inga under Strängs sökningar utförs; specifikt krävs en exakt matchning mellan den användare som angavs och de anpassade blockerade orden för att utlösa ett fel.
+Ingen sökning utförs i understrängar. mer specifikt krävs en exakt matchning mellan det angivna namnet och de egna blockerade orden för att ett fel ska utlösas.
 
-**Saker att se ut för**:
+**Saker att hålla reda på:**
 
 - Blockerade ord är inte skiftlägeskänsliga.
 
@@ -102,11 +102,11 @@ Inga under Strängs sökningar utförs; specifikt krävs en exakt matchning mell
 
 - Det finns inga teckenbegränsningar för de blockerade ord som används.
 
-- Det finns en begränsning på 5000 ord som kan anges som blockerade ord.
+- Det finns en gräns på 5 000 ord som kan anges som blockerade ord.
 
 ## <a name="admin-override"></a>Åsidosättning för administratör
 
-Vissa administratörer undantas från dessa principer, i alla grupp arbets belastningar och slut punkter, så att de kan skapa grupper med dessa blockerade ord och deras namngivnings regler. Nedan följer listan över administratörsroller som är undantagna från namnprincipen för grupp.
+Vissa administratörer är undantagna från dessa principer i alla grupparbetsbelastningar och slutpunkter så att de kan skapa grupper med blockerade ord och med de namnkonventioner de önskar. Nedan följer listan över administratörsroller som är undantagna från namnprincipen för grupp.
 
 - Global administratör
 
@@ -116,23 +116,23 @@ Vissa administratörer undantas från dessa principer, i alla grupp arbets belas
 
 - Användarkontoadministratör
 
-## <a name="how-to-set-up-the-naming-policy"></a>Så här konfigurerar du namn principen
+## <a name="how-to-set-up-the-naming-policy"></a>Så här ställer du in namnprincipen
 
-Så här skapar du en namngivnings princip:
+Så här ställer du in en namnprincip:
 
-1. Klicka på **grupper** under **Hantera** i [Azure Active Directory](https://aad.portal.azure.com).
-2. Klicka på **namn princip** under **Inställningar**.
-3. Välj fliken för att **namnge principer** .
-4. Under **aktuell princip** väljer du om du vill kräva ett prefix eller ett suffix eller bådadera och markerar lämpliga kryss rutor.
-5. Välj mellan **attribut** och **sträng** för varje rad och ange sedan ett attribut eller en sträng.
-6. När du har lagt till de prefix och suffix du behöver klickar du på **Spara**.
+1. I [Azure Active Directory,](https://aad.portal.azure.com)under **Hantera,** klickar du på **Grupper.**
+2. Klicka **på** Namnprincip **under Inställningar.**
+3. Välj fliken **Gruppnamnprincip.**
+4. Under **Aktuell princip** väljer du om du vill kräva prefix eller suffix eller båda. Markera sedan lämpliga kryssrutor.
+5. Välj mellan **Attribut** och **Sträng** för varje rad och ange sedan attributet eller strängen.
+6. När du har lagt till de prefix och suffix du behöver klickar du på **Spara.**
 
-![Skärm bild av inställningarna för namngivnings princip för grupper i Azure Active Directory](../media/groups-naming-policy-azure.png)
+![Skärmbild av namnprincipinställningarna för grupper i Azure Active Directory](../media/groups-naming-policy-azure.png)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Planerings steg-för-steg-samarbete för samarbets styrning](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Planering av samarbetsstyrning steg för steg](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[Skapa en plan för hantering av samarbete](collaboration-governance-first.md)
+[Skapa din plan för samarbetesstyrning](collaboration-governance-first.md)
 
-[Azure Active Directory-cmdlets för konfiguration av grupp inställningar](https://go.microsoft.com/fwlink/?linkid=868341)
+[Azure Active Directory-cmdlets för konfiguration av gruppinställningar](/azure/active-directory/enterprise-users/groups-settings-cmdlets)

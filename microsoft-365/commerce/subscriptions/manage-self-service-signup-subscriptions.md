@@ -1,5 +1,5 @@
 ---
-title: Hantera abonnemang för självbetjäning
+title: Hantera prenumerationer på självbetjäning
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,44 +17,44 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Lär dig hur du hanterar kostnads fria abonnemang för självbetjäning för din organisation.
-ms.openlocfilehash: 589466908dcda1461011f046b99be21788c1a018
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+description: Lär dig hur du hanterar kostnadsfria registreringsprenumerationer för självbetjäning för din organisation.
+ms.openlocfilehash: 5910ed5d65f93a4dab15c681610d4d59d0427fb0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376311"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920174"
 ---
-# <a name="manage-self-service-sign-up-subscriptions"></a>Hantera abonnemang för självbetjäning
+# <a name="manage-self-service-sign-up-subscriptions"></a>Hantera prenumerationer på självbetjäning
 
-## <a name="what-are-self-service-sign-up-subscriptions"></a>Vad är självbetjänings abonnemang?
+## <a name="what-are-self-service-sign-up-subscriptions"></a>Vad är självbetjäning för registrering av prenumerationer?
 
-Det finns ett begränsat antal kostnads fria abonnemang för självbetjäning för användarna i din organisation att anmäla sig för. En användare kan bara registrera sig för och använda ett själv registrerings abonnemang för sig själva. Du hanterar självbetjänings abonnemang genom att hindra användare från att registrera sig och genom att ta bort kostnads fria abonnemang som användare har registrerat sig för. Mer information om själv registrering och tillgängliga prenumerationer finns i [använda självbetjänings registrering i din organisation](../../admin/misc/self-service-sign-up.md).
+Det finns ett begränsat antal kostnadsfria registreringsprenumerationer på självbetjäning som användarna i organisationen kan registrera sig för. En användare kan bara registrera sig själv och använda en självbetjäningsprenumeration. Du hanterar prenumerationer på registrering via självbetjäning genom att blockera användare från att registrera sig och genom att ta bort kostnadsfria prenumerationer som användare har registrerat sig för. Mer information om självbetjäning för registrering och tillgängliga prenumerationer finns i Registrera [dig med självbetjäning i din organisation.](../../admin/misc/self-service-sign-up.md)
 
-## <a name="view-a-list-of-self-service-sign-up-subscriptions"></a>Visa en lista över självbetjänings abonnemang
+## <a name="view-a-list-of-self-service-sign-up-subscriptions"></a>Visa en lista över självbetjäning för registrering av prenumerationer
 
-1. Gå till sidan fakturering i administrations centret **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> .
-2. På fliken **produkter** väljer du filter ikonen och sedan **gratis**. En lista över alla abonnemang för självbetjänings registrering visas.
+1. I administrationscentret går du till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
+2. På fliken **Produkter** väljer du filterikonen och sedan **Gratis**. En lista med alla prenumerationer på självbetjäning visas.
 
-## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>Hur skiljer sig abonnemangen från självbetjänings abonnemanget?
+## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>Hur skiljer sig de här prenumerationerna från prenumerationer på självbetjäning?
 
-Självbetjänings prenumerationer är gratis och finns tillgängliga i en större lista med produkter än självbetjänings abonnemang. När en användare registrerar sig för ett abonnemang för självbetjänings köp är de ansvarig för att betala för det. Självbetjänings abonnemang är endast tillgängliga för Power Platform-produkter (Power BI, Power app och Power autoautomatisera), Project och Visio. Mer information finns i [vanliga frågor och svar om inköp](self-service-purchase-faq.md).
+Självbetjäning för registrering av prenumerationer är kostnadsfria och är tillgängliga för en större lista med produkter än prenumerationer för självbetjäning. När en användare registrerar sig för en prenumeration på självbetjäning är de ansvariga för att betala för den. Prenumerationer på självbetjäning är endast tillgängliga för Power Platform-produkter (Power BI, Power Apps och Power Automate), Project och Visio. Mer information finns i Vanliga frågor [och svar om självbetjäning för köp.](self-service-purchase-faq.md)
 
 ## <a name="block-users-from-signing-up"></a>Blockera användare från att registrera sig
 
-Du använder cmdleten [**set-MsolCompanySettings**](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0&preserve-view=true) med parametern **AllowAdHocSubscriptions** för att kontrol lera om användare ska kunna registrera sig för självbetjänings inloggnings prenumerationer. Mer information finns i [Hur styr jag självbetjänings inställningar?](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
+Du använder cmdleten [**Set-MsolCompanySettings**](/powershell/module/msonline/set-msolcompanysettings?preserve-view=true&view=azureadps-1.0) med parametern **AllowAdHocSubscriptions** för att styra om användare kan registrera sig för självbetjäningsprenumerationer. Mer information finns i [Hur styr jag självbetjäningsuppgifter?](/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
 
-## <a name="delete-a-self-service-sign-up-subscription"></a>Ta bort ett själv registrerings abonnemang
+## <a name="delete-a-self-service-sign-up-subscription"></a>Ta bort en prenumeration med självbetjäning
 
 > [!IMPORTANT]
-> När du tar bort ett själv registrerings abonnemang hindrar du alla användare från att komma åt sina data och e-postmeddelanden och ta bort alla data och e-postmeddelanden.
+> När du tar bort en prenumeration på självbetjäning blockerar du alla användare från att komma åt sina data och sin e-post och ta bort alla data och e-post.
 
-1. Gå till sidan fakturering i administrations centret **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> .
-2. På fliken **produkter** väljer du filter ikonen och sedan **gratis**.
-3. Välj det själv registrerings abonnemang som du vill ta bort. 
-4. På sidan prenumerations information i avsnittet **prenumerationer och betalnings inställningar** väljer du **ta bort abonnemang**.
-5. Markera kryss rutan i fönstret **ta bort prenumeration** och välj sedan **ta bort abonnemang**.
+1. I administrationscentret går du till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
+2. På fliken **Produkter** väljer du filterikonen och sedan **Gratis**.
+3. Välj den självbetjäning för registrering av prenumeration som du vill ta bort. 
+4. Välj Ta bort prenumeration i avsnittet Prenumerationer **och betalningsinställningar på** sidan **prenumerationsinformation.**
+5. I fönstret **Ta bort** prenumeration markerar du kryssrutan och väljer sedan Ta **bort prenumeration.**
 
-## <a name="i-have-a-self-service-sign-up-subscription-that-blocks-directory-deletion"></a>Jag har ett självbetjänings abonnemang som hindrar borttagning av kataloger
+## <a name="i-have-a-self-service-sign-up-subscription-that-blocks-directory-deletion"></a>Jag har en prenumeration med självbetjäning som blockerar katalogborttagning
 
-Självbetjänings-och registrerings produkter som enskilda användare kan registrera sig för och skapa en gäst användare för att verifiera i din Azure AD-katalog. För att undvika data förlust tar du bort de här själv tjänst produkterna tills de tas bort helt från katalogen. De kan bara tas bort av Azure AD-administratören. Mer information finns i [ta bort en katalog i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-delete-howto).
+Självbetjäning för registrering av produkter som enskilda användare kan registrera sig för skapar även en gästanvändare för autentisering i din Azure AD-katalog. För att undvika dataförlust blockerar dessa självbetjäningsprodukter katalogborttagningar tills de helt tas bort från katalogen. De kan bara tas bort av Azure AD-administratören. Mer information finns i Ta [bort en katalog i Azure Active Directory.](/azure/active-directory/users-groups-roles/directory-delete-howto)

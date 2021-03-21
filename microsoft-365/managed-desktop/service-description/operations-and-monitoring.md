@@ -1,7 +1,7 @@
 ---
-title: Microsoft Managed Station ära datorer och övervakning
-description: Vem gör vad för olika ändrings processer
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+title: Åtgärder och övervakning av Microsoft Managed Desktop
+description: Vem gör vad för olika ändringsprocesser
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -11,46 +11,46 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5d7c6a7b836d0044ba9cde188170dd51f117dd2b
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 3e56066f0b4e63fc9b73bbecf5aaa3180ffd2e4f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840379"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920426"
 ---
-# <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft Managed Station ära datorer och övervakning
+# <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Åtgärder och övervakning av Microsoft Managed Desktop
 
 <!-- Operations and monitoring: -->
 
 
-## <a name="change-management"></a>Ändrings hantering
+## <a name="change-management"></a>Ändringshantering
 
-I ett tjänst erbjudande flyttas ansvaret för sådant som maskin varu underhåll och säkerhets uppdateringar till tjänste leverantören (Microsoft) i stället för kunden (du). Men du måste ändå kontrol lera att icke-Microsoft-och anpassade program fortsätter att fungera som förväntat när uppdateringar distribueras.
+Vid tjänster så ligger skiftar ansvaret för saker som underhåll av maskinvara och säkerhetsuppdateringar till tjänsteleverantören (Microsoft) i stället för kunden (du). Du måste dock fortfarande säkerställa att icke-Microsoft- och anpassad programvara fortsätter att fungera som förväntat när uppdateringar distribueras.
 
-För lokala produkter tar din organisation allt ansvar för att hantera ändringar.
+För lokala produkter har organisationen allt ansvar för ändringshantering.
 
-### <a name="balance-of-responsibility"></a>Ansvar
+### <a name="balance-of-responsibility"></a>Ansvarsfördelning
 
-Ligger | Microsoft Managed Desktop service | Microsoft 365-klientprogram | Lokala klienter och servrar | program vara som inte kommer från Microsoft och anpassad
+Ansvar | Microsofts tjänst för hanterad dator | Microsoft 365-klientprogramvara | Lokala klienter och servrar | annan programvara än Microsoft och anpassad programvara
 ----- | ----- | ----- | ----- | -----
-Nya funktioner | Microsoft | Microsoft | Varken | Support
-Testa nya funktioner för kvalitets kontroll |  Microsoft | Microsoft | Varken | Support
-Kommunicera om nya funktioner | Varken | Varken | Varken | Support
-Integrera anpassad program vara | Varken | Varken | Support | Support
-Tillämpa säkerhets uppdateringar | Microsoft | Microsoft | Support | Support
-Underhåll systemprogram | Microsoft | Microsoft | Support | Support
-Paket för distribution | Microsoft | Microsoft | Support | Support
+Tillhandahålla nya funktioner | Microsoft | Microsoft | Båda | Kund
+Testa nya funktioner för kvalitetskontroll |  Microsoft | Microsoft | Båda | Kund
+Kommunicera om nya funktioner | Båda | Båda | Båda | Kund
+Integrera anpassad programvara | Båda | Båda | Kund | Kund
+Tillämpa säkerhetsuppdateringar | Microsoft | Microsoft | Kund | Kund
+Underhålla systemprogramvara | Microsoft | Microsoft | Kund | Kund
+Paket för distribution | Microsoft | Microsoft | Kund | Kund
 
 
-### <a name="change-process-overview"></a>Översikt över ändrings processen
+### <a name="change-process-overview"></a>Översikt över ändringsprocessen
 
-Här är en sammanfattning av hur ändrings processen delas mellan Microsoft och kunder: 
+Här är en sammanfattning av hur ändringsprocessen delas mellan Microsoft och kunder: 
 
 
 
 <table>
-<tr><th></th><th><p>Microsoft-roll:</p></th><th><p>Kunds roll:</p></th></tr>
-<tr><td>Före en ändring</td><td><ul><li>Ange förväntningar för service ändringarna.</li><li>Meddela kunderna fem dagar i förväg för ändringar som kräver administratörs åtgärd.</li><li>För nöd situations ändringar, Använd en åtgärd innan du meddelas.</li></ul></td><td><ul><li>Förstå vad du kan förvänta dig för ändringar och kommunikation.</li><li>Läs Microsoft Managed Desktop meddelande Center regelbundet.</li><li>Granska och uppdatera interna processer för ändrings hantering.</li><li>Förstå och kontrol lera efterlevnaden av Microsofts hanterade Skriv bords krav. </li><li>Bekräfta och godkänn när det behövs.</li></ul></td></tr><tr><td>Under en ändring</td><td><ul><li>Släpp och distribuera månatliga säkerhets-och icke-säkerhetsuppdateringar för Windows 10-och Office 365-klienter.</li><li>Övervaka data signaler och support köer för påverkan.</li></ul></td><td><ul><li>Kontrol lera det Microsoft hanterade Skriv bords meddelande Center och granska eventuell ytterligare information.</li><li>   Vidta alla nödvändiga åtgärder, om tillämpligt och testa program.</li><li>Om det finns ett scenario för att ta bort/åtgärda kan du skapa en supportbegäran.</li></ul></td></tr><tr><td>Efter en ändring</td><td><ul><li>Samla in feedback från kunder för att förbättra distributionen av framtida ändringar.</li><li>Övervaka data signaler och support köer för påverkan.</li></ul></td><td><ul><li>Arbeta med personer i organisationen för att välja ändringen.</li><li>   Granska ändringar och antagande hanterings processer för möjligheter att bli effektiv.</li><li>Ge allmän feedback och specifik feedback i verktyget för administrations feedback.</li><li>Träna användare att erbjuda programspecifik feedback med hjälp av Windows Feedback Hub och knappen leende i Office-appar.</li></ul></td></tr>
+<tr><th></th><th><p>Microsofts roll:</p></th><th><p>Kundens roll:</p></th></tr>
+<tr><td>Före en ändring</td><td><ul><li>Ange förväntningar för tjänständringar.</li><li>Meddela kunder 5 dagar i förväg för ändringar som kräver åtgärder från administratören.</li><li>För akuta ändringar tillämpar du en minskning innan du meddelar.</li></ul></td><td><ul><li>Förstå vad du kan förvänta dig när det gäller ändringar och kommunikationer.</li><li>Läs meddelandecentret för Microsoft Managed Desktop regelbundet.</li><li>Granska och uppdatera interna processer för ändringshantering.</li><li>Förstå och kontrollera efterlevnad av kraven för Microsoft Managed Desktop. </li><li>Bekräfta och godkänn vid behov.</li></ul></td></tr><tr><td>Under en ändring</td><td><ul><li>Släppa och distribuera månatliga säkerhets- och icke-säkerhetsuppdateringar för Windows 10- och Office 365-klienter.</li><li>Övervaka datasignaler och stödköer för påverkan.</li></ul></td><td><ul><li>Kontrollera Meddelandecenter för Microsoft Managed Desktop och granska eventuell ytterligare information.</li><li>   Vidta alla åtgärder som krävs, om tillämpligt, och testa program.</li><li>Skapa en supportbegäran om det är problem med avbrott/korrigering.</li></ul></td></tr><tr><td>Efter en ändring</td><td><ul><li>Samla in feedback från kunder för att förbättra framtida ändringar.</li><li>Övervaka datasignaler och stödköer för påverkan.</li></ul></td><td><ul><li>Arbeta med personer i din organisation för att införa ändringen.</li><li>   Granska processer för ändrings- och införandehantering för att få effektivitet.</li><li>Ge allmän feedback och specifik feedback i administrationsverktyget för feedback.</li><li>Utbilda användare att ge specifik feedback via Windows Feedbackhubben och uttrycksknappen i Office-apparna.</li></ul></td></tr>
 <table> 
 
 
@@ -60,62 +60,62 @@ Här är en sammanfattning av hur ändrings processen delas mellan Microsoft och
 
 ### <a name="change-types"></a>Ändra typer
 
-Det finns flera typer av ändringar som vi gör till tjänsten regelbundet. Kommunikations kanalen för dessa ändringar och de åtgärder du ansvarar för varierar.
+Vi gör regelbundet flera olika ändringar av tjänsten. Kommunikationskanalen för ändringarna och de åtgärder som du ansvarar för varierar.
 
-Alla ändringar har inte samma betydelse för användarna eller kräver en åtgärd. Vissa är planerade och vissa oplanerade av sina natur (uppdateringar och säkerhets uppdateringar som inte är säkerhetsrelaterade) planeras vanligt vis. Beroende på vilken typ av ändring det gäller kan kommunikations kanalen variera. I följande tabell visas de typer av ändringar du kan förvänta dig för Microsoft Managed Desktop-tjänsten.
+Alla ändringar påverkar inte användarna på samma sätt eller kräver åtgärder. Vissa är planerade och andra är oplanerade (uppdateringar som inte är säkerhetsuppdateringar och säkerhetsuppdateringar är normalt inte planerade). Beroende på typen av ändring kan kommunikationskanalen variera. I följande tabell visas de typer av ändringar som du kan förvänta dig för tjänsten Microsoft Managed Desktop.
 
-|   | Användas |   Uppdateringar som inte är säkerhetsrelaterade |  Säkerhet
+|   | Funktioner |   Uppdateringar som inte är säkerhetsuppdateringar |  Säkerhet
 --- | --- | --- | ---
-**Ändrings typ** | -Funktions uppdateringar<br>-Nya funktioner eller program<br>-Föråldrade funktioner | Klient snabb korrigeringar för problem | Säkerhets uppdateringar
-**Förhands meddelande** | Fem dagars meddelande för ändringar som kräver en åtgärd | Nej, sådana ändringar är inkluderade i månads versionen    | Nej, ändringar ingår i månads versionen 
-**Kommunikations kanal** | – Meddelande Center<br>-E-postavisering | – Meddelande Center<br>-E-postavisering | – Meddelande Center<br>-E-postavisering
-**Kräver global administratörs åtgärd** | Hända |  Sällsynta |    Sällsynta 
-**Typ av åtgärd** | Ändra inställningar | Informera användarna om ändringar | Ändra administratörs inställningar     
-**Kräver testning** | Kontrol lera affärs program, inklusive Remote Access Services |  Ibland-testa korrigeringen mot processer eller anpassningar |   Sällsynta 
-**Exempel på ändring** | -Funktions uppdateringar: IT-administratörs portalen förenklade support ärenden och översyn<br>-Nya funktioner eller program: Semi-Annual version av en funktions uppdatering för Windows 10 | Snabb korrigeringar baserade på rapporterade program för rapporter |  
+**Ändringstyp** | - Funktionsuppdateringar<br>- Nya funktioner eller program<br>- Inaktuella funktioner | Snabbkorrigeringar för klientproblem | Säkerhetsuppdateringar
+**Förhandsmeddelande** | Fem dagars förvarning för ändringar som kräver åtgärd | Nej, sådana ändringar inkluderas i den månatliga versionen    | Nej, ändringar ingår i den månatliga versionen 
+**Kommunikationskanal** | - Meddelandecenter<br>- E-postavisering | - Meddelandecenter<br>- E-postavisering | - Meddelandecenter<br>- E-postavisering
+**Kräver åtgärder från global administratör** | Ibland |  Sällan |    Sällan 
+**Typ av åtgärd** | Ändra inställningar | Informera användarna om ändringarna | Ändra administratörsinställningar     
+**Kräver testning** | Kontrollera affärsprogram, inklusive tjänster för fjärråtkomst |  Ibland – testa korrigeringen med processer eller anpassningar |   Sällan 
+**Exempel på förändring** | - Funktionsuppdateringar: IT-administratörsportalen för enklare inskickade supportinskick och granskning<br>– Nya funktioner eller program: Semi-Annual version av en funktionsuppdatering för Windows 10 | Snabbkorrigeringar baserade på rapporterad kundbugg |  
 
 
-## <a name="standard-operating-procedures"></a>Vanliga rutiner
+## <a name="standard-operating-procedures"></a>Standardoperativsystemets procedurer
 
-Microsoft Managed Desktop-tjänsten implementeras och drivs av Microsoft i Microsoft Cloud-instanser där du kan utföra andra administrativa aktiviteter. Microsoft är endast ansvarigt för Microsoft Managed Desktop-specifik installation, konfiguration och drift. 
+Microsoft Managed Desktop-tjänsten implementeras och drivs av Microsoft i din Microsoft-molninstans där du kan utföra andra administrativa aktiviteter. Microsoft är ensamt ansvarig för konfiguration, konfiguration och åtgärd av Microsoft Managed Desktop. 
 
-För lokala produkter tar din organisation över ansvaret för att hantera inställningar och konfiguration och drifts aktiviteter.
+För lokala produkter har organisationen allt ansvar för att hantera installation, konfiguration och drift.
 
-Klasser |    Microsoft kommer | Kund kommer
+Kategorier |    Microsoft | Kunden
 --- | --- | ---
-Nätverk (proxy, paket kontroll, VPN)  | Råd och planera med kunderna för att minimera riskerna för företags användare. | -Skapa en support förfrågan som begär information om en planerad konfigurations ändring, inklusive konfigurations information, omfattning, tids linje och annan relevant information som Microsoft kan granska.<br>-Använd en ändring när Microsoft Managed Station ära datorer har bedömt och tillrådligt.
-Tjänst konton |-Implementera och hantera autentiseringsuppgifterna säkert.<br> -Kommunicera obehörig åtkomst eller Använd dessa autentiseringsuppgifter för säkerhets åtgärds gruppen. | -Skapa en support förfrågan som begär information om en planerad konfigurations ändring, inklusive konfigurations information, omfattning, tids linje och annan relevant information som Microsoft kan granska.<br>-Använd en ändring när Microsoft Managed Station ära datorer har bedömt och tillrådligt.<br>-Inte tilldela policy, multifaktorautentisering, villkorlig åtkomst eller program distribution till Microsoft Managed Desktop Service-konton.<br>-Inte Återställ lösen ordet eller Använd autentiseringsuppgifterna.<br>-Öppna en SEV C-supportbegäran till Microsoft Managed Desktop-operationer om misstänkt aktivitet observeras i Intune-eller Azure audit-loggar, relaterat till dessa tjänst konton.
-Enhets grupper | -Implementera och hantera medlemskap i enheter inom Microsoft Managed Desktop Groups.<br>-Använd Microsoft Managed Desktop Groups för att hantera tilldelning och utgivning av konfiguration och uppdateringar av enheter. | -Skapa en support förfrågan som begär information om en planerad konfigurations ändring, inklusive konfigurations information, omfattning, tids linje och annan relevant information som Microsoft kan granska.<br>-Använd en ändring när Microsoft Managed Station ära datorer har bedömt och tillrådligt.<br>-Ändra inte medlemskap för en Microsoft-hanterad stationär dator grupp.<br>-Använd bara grupperna för att tilldela företags certifikat för tjänster som VPN, Windows Hello för företag eller e-postkryptering eller för företags Wi-Fi profil.<br>-Där Co-Management finns, undanta alla Microsoft Managed Station ära datorer när du distribuerar Configuration Manager-klienten.
-Principerna |  -Implementera och hantera de Microsoft Managed Desktop-principer som styr konfigurations tillståndet för enheter inom tjänst.<br>-Distribuera uppdateringar, till princip eller fönster, inkrementellt med enhets grupper.<br> -Uteslut uttryckligen mål grupper som inte hanteras med Microsoft. | -Skapa en support förfrågan som begär information om en planerad konfigurations ändring, inklusive konfigurations information, omfattning, tids linje och annan relevant information som Microsoft kan granska.<br>-Använd en ändring när Microsoft Managed Station ära datorer har bedömt och tillrådligt.<br>-Inte redigera eller tilldela Microsoft Managed Desktop-principer till enheter eller användare som inte hanteras av Microsoft Managed Desktop-tjänsten.
-Microsoft Defender för Endpoint | Övervaka och undersöka enheter inom omfattningen för Microsoft Managed Desktop-tjänsten. | -Skapa en support förfrågan som begär information om en planerad konfigurations ändring, inklusive konfigurations information, omfattning, tids linje och annan relevant information som Microsoft kan granska.<br>-Använd en ändring när Microsoft Managed Station ära datorer har bedömt och tillrådligt
-Microsoft Store för företag |  Konfigurera och underhåll Windows autopilot-profilen för Microsoft Managed Desktop-tjänsten. | -Skapa en support förfrågan som begär information om en planerad konfigurations ändring, inklusive konfigurations information, omfattning, tids linje och annan relevant information som Microsoft kan granska.<br>-Använd en ändring när Microsoft Managed Station ära datorer har bedömt och tillrådligt.<br>-Inte ändra konfigurationen för Microsoft Managed Desktop Windows autopilot-profilen eller lägga till/ta bort tilldelade enheter.
-Exportcertifikat | | -Skapa en supportbegäran 60 dagar innan ett certifikat upphör, begär information om en planerad konfigurations ändring, inklusive konfigurations information, omfattning, tids linje och annan relevant information som Microsoft kan granska.<br>-Använd en ändring när Microsoft Managed Station ära datorer har bedömt och tillrådligt.<br>-Uppdatera alla certifikat som krävs för att konfigurera certifikat profiler, VPN-profiler och Wi-Fi profiler.
+Nätverk (proxy, paketinspektion, VPN)  | Informera och planera med kunder för att minimera risken för företagsanvändare. | – skapa en supportbegäran och be om information om en planerad konfigurationsändring, inklusive konfigurationsinformation, omfattning, tidslinje och annan relevant information som Microsoft kan granska.<br>- Tillämpa endast en ändring när Microsoft Managed Desktop Operations har gjort en bedömning och ger råd.
+Tjänstkonton |– Implementera, lagra och hantera autentiseringsuppgifterna på ett säkert sätt.<br> – Kommunicera obehörig åtkomst eller användning av dessa autentiseringsuppgifter till ditt team med säkerhetsåtgärder. | – skapa en supportbegäran och be om information om en planerad konfigurationsändring, inklusive konfigurationsinformation, omfattning, tidslinje och annan relevant information som Microsoft kan granska.<br>- Tillämpa endast en ändring när Microsoft Managed Desktop Operations har gjort en bedömning och ger råd.<br>- Tilldela inte princip-, multifaktorautentisering, villkorsstyrd åtkomst eller programdistribution till Microsoft Managed Desktop Service-konton.<br>- Återställ inte lösenordet eller använd autentiseringsuppgifterna.<br>– öppna en Sev C-supportbegäran i Microsoft Managed Desktop Operations om misstänkt aktivitet observeras i Intune- eller Azure-granskningsloggar som är relaterade till dessa tjänstkonton.
+Enhetsgrupper | - Implementera och hantera medlemskap i enheter i Microsoft Managed Desktop-grupper.<br>- Använd Microsoft Managed Desktop-grupperna för att hantera tilldelning och utgivning av konfigurationer och uppdateringar på enheter. | – skapa en supportbegäran och be om information om en planerad konfigurationsändring, inklusive konfigurationsinformation, omfattning, tidslinje och annan relevant information som Microsoft kan granska.<br>- Tillämpa endast en ändring när Microsoft Managed Desktop Operations har gjort en bedömning och ger råd.<br>- Inte ändra medlemskapet i någon Microsoft Managed Desktop-grupp.<br>– Använd endast grupperna för att tilldela företagscertifikat för tjänster som VPN, Windows Hello för företag eller e-postkryptering eller konfiguration Wi-Fi företagsprofil.<br>– Där samtidig hantering finns exkluderar du uttryckligen alla Microsoft Managed Desktop-grupper när du distribuerar Configuration Manager-klienten.
+Principer |  - Implementera och hantera Microsofts principer för hanterade skrivbord som styr konfigurationstillståndet för enheter i tjänsten.<br>– Distribuera uppdateringar till princip eller Windows stegvis med hjälp av enhetsgrupper.<br> – uttryckligen från att rikta in på icke-Microsoft-hanterade skrivbordsgrupper. | – skapa en supportbegäran och be om information om en planerad konfigurationsändring, inklusive konfigurationsinformation, omfattning, tidslinje och annan relevant information som Microsoft kan granska.<br>- Tillämpa endast en ändring när Microsoft Managed Desktop Operations har gjort en bedömning och ger råd.<br>- Inte redigera eller tilldela principer för Microsoft Managed Desktop till enheter eller användare som inte hanteras av Microsoft Managed Desktop-tjänsten.
+Microsoft Defender för Endpoint | Övervaka och undersöka enheter inom microsoft Managed Desktop-tjänsten. | – skapa en supportbegäran och be om information om en planerad konfigurationsändring, inklusive konfigurationsinformation, omfattning, tidslinje och annan relevant information som Microsoft kan granska.<br>- Tillämpa bara en ändring när Microsoft Managed Desktop Operations har gjort en bedömning och ger råd
+Microsoft Store för företag |  Konfigurera och underhålla Windows Autopilot-profilen för Microsoft Managed Desktop-tjänsten. | – skapa en supportbegäran och be om information om en planerad konfigurationsändring, inklusive konfigurationsinformation, omfattning, tidslinje och annan relevant information som Microsoft kan granska.<br>- Tillämpa endast en ändring när Microsoft Managed Desktop Operations har gjort en bedömning och ger råd.<br>– Ändra inte konfigurationen av Microsoft Hanterad Windows Autopilot-profil för skrivbordsversionen eller lägg till/ta bort tilldelade enheter.
+Certifikat | | – Skapa en supportbegäran 60 dagar innan ett certifikat upphör att gälla och begär information om en planerad konfigurationsändring, inklusive konfigurationsinformation, omfattning, tidslinje och annan relevant information som Microsoft kan granska.<br>- Tillämpa endast en ändring när Microsoft Managed Desktop Operations har gjort en bedömning och ger råd.<br>- Uppdatera alla certifikat som krävs för att konfigurera certifikatprofiler, VPN-profiler och Wi-Fi profiler.
 
 
 
 
-## <a name="device-wipe-with-factory-reset"></a>Enhets rensning med fabriks återställning
+## <a name="device-wipe-with-factory-reset"></a>Enhetsåterställning med fabriksåterställning
 
-Microsoft Managed Desktop Operations team kan utföra en fabriks återställning av enheter som registrerats i tjänsten när det behövs. Att återställa är användbart om du behöver ge en enhet till en annan anställd eller om en anställd lämnar företaget. 
+Microsoft Managed Desktop Operations-teamet kan utföra en fabriksåterställning av enheter som registrerats i tjänsten vid behov. Återställning är användbart om du behöver ge en enhet till en annan anställd eller om en anställd lämnar företaget. 
 
 Det finns några krav:
 
-- Den globala administratören måste skicka en tjänst förfrågan.
-- Ta med enhetens dator namn i begäran.
-- Användar kontot måste vara i Azure AD innan vi återställer enheten.
+- Din globala administratör måste skicka en servicebegäran.
+- Ta med enhetens datornamn i begäran.
+- Användarkontot måste vara i Azure AD innan vi återställer enheten.
 
-Hanterat Skriv bords grupp gör följande:
+Teamet för hanterade skrivbordsåtgärder gör följande:
 
-- Sök efter enhetens namn i Intune
-- Skicka kommandot Factory-Återställ till enheten
+- Leta upp enhetsnamnet i Intune
+- Skicka kommandot för fabriksåterställning till enheten
 
 >[!NOTE]
->Ta inte bort användar kontot från Azure AD innan enheten återställs. Om användaren inte är i Azure AD kan Intune inte skicka kommandot Factory-reset till enheten. 
+>Ta inte bort användarkontot från Azure AD innan enheten återställs. Om användaren inte finns i Azure AD kan Intune inte skicka kommandot för fabriksåterställning till enheten. 
 
-Enheten startas om i "slut på kartong", och alla förinstallerade program och inställningar tillämpas igen. Användaren av enheten måste ange den första installationen. 
+Enheten startar i "in användningsutrymmet" och alla förinstallerade program och inställningar kommer att tillämpas igen. Användaren av enheten måste ange den första installationsinformationen igen. 
 
-När enheten har återställts kan du ge den till en annan person i organisationen. Ingen av de föregående användarens data eller företags data finns på enheten. Nästa användare kommer att gå igenom samma process som föregående person använde med en ny Microsoft-hanterad stationär enhet.
+När enheten har återställts kan du ge den till en annan person i organisationen. Ingen av de tidigare användarnas data eller företagsdata finns på enheten. Nästa användare går igenom samma process som den föregående personen gjorde med en ny Microsoft Managed Desktop-enhet.
 
-BitLocker är en nyckel komponent med data säkerhet i den här processen. Med BitLocker-kryptering på Microsoft Managed Station ära enheter förblir data på enheten säkra även efter det att enheten har återställts. Alla data på enheten är inte tillgängliga för nästa användare av enheten. Mer information finns i [Översikt över BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
+BitLocker är en viktig komponent i datasäkerhet i den här processen. Med BitLocker-kryptering på Microsoft Managed Desktop-enheter förblir data på enheten säkra även efter att enheten har fabriksåterställts. Data som fanns på enheten blir inte tillgängliga för nästa användare av enheten. Mer information finns i [Översikt över BitLocker.](/windows/security/information-protection/bitlocker/bitlocker-overview)
 
-Mer information finns i [återställa en enhet](https://docs.microsoft.com/intune/remote-actions/devices-wipe#factory-reset-a-device). 
+Mer information finns i [Fabriksåterställning av en enhet](/intune/remote-actions/devices-wipe#factory-reset-a-device).

@@ -1,5 +1,5 @@
 ---
-title: Kommunikation styrning för samarbets scenarier
+title: Kommunikationsstyrning för samarbetsscenarier
 ms.reviewer: ''
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,64 +14,64 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Lär dig mer om samarbets scenarier för kommunikationer.
-ms.openlocfilehash: 4b60f0be3cde23330880d652bc62110cf4e55175
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+description: Läs mer om scenarier för samarbete inom kommunikationstyrning.
+ms.openlocfilehash: 5386b127ead11f27dad94207383b7a5afddfde6f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613684"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920910"
 ---
-# <a name="communications-governance-for-collaboration-scenarios"></a>Kommunikation styrning för samarbets scenarier
+# <a name="communications-governance-for-collaboration-scenarios"></a>Kommunikationsstyrning för samarbetsscenarier
 
-Microsoft 365 erbjuder ett antal kontroller som hjälper dig att kontrol lera kommunikationen i organisationen, inklusive inställningar för meddelanden och möten. Granska de här alternativen och fundera på hur de kan mappa till dina företags behov, känsligheten hos dina data och omfattningen på de personer som användarna måste samar beta med.
+Microsoft 365 erbjuder ett antal kontroller som hjälper dig att styra kommunikationen i organisationen, inklusive inställningar för meddelanden och möten. Gå igenom de här alternativen och fundera på hur de kan mappa till dina affärsbehov, dina datas känslighet och vilka personer som användarna behöver samarbeta med.
 
-Följande tabell innehåller en snabb referens för de kommunikations kontroller som är tillgängliga i Microsoft 365. Mer information finns i följande avsnitt.
+Följande tabell innehåller en snabbreferens för de kommunikationskontrollerna som är tillgängliga i Microsoft 365. Ytterligare information ges i följande avsnitt.
 
 |Kategori|Beskrivning|Referens|
 |:-------|:----------|:--------|
 |Meddelanden|||
-||Hantera vad användarna kan göra när de skickar meddelanden i Teams.|[Hantera meddelande principer i Teams](https://docs.microsoft.com/microsoftteams/messaging-policies-in-teams)|
-||Kontrol lera vem som kan starta och svara på inlägg i en kanal.|[Konfigurera och hantera kanal moderator i Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-channel-moderation-in-teams)|
-|Tider|||
-||Hantera vilka Mötes deltagare som kan göra.|Få mer information om hur du [hanterar mötesprinciper i Teams](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams).|
-||Tillåta eller förhindra anonyma användare att ansluta till möten.|[Tillåt anonyma användare att ansluta till möten](https://docs.microsoft.com/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)|
-|Efterlevnad av kommunikation|||
-||Surface och reagera på Careless och försumlighet kommunikation|[Kommunikation i Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance)|
+||Hantera vad användare kan göra när de skickar meddelanden i Teams.|[Hantera meddelandeprinciper i Teams](/microsoftteams/messaging-policies-in-teams)|
+||Styr vem som kan starta och svara på inlägg i en kanal.|[Konfigurera och hantera kanalmoderering i Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)|
+|Möten|||
+||Hantera vad mötesdeltagare kan göra.|Få mer information om hur du [hanterar mötesprinciper i Teams](/microsoftteams/meeting-policies-in-teams).|
+||Tillåta eller förhindra att anonyma användare ansluter till möten.|[Tillåt anonyma användare att ansluta till möten](/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)|
+|Kommunikationsefterlevnad|||
+||Surface och svara på opåaktlig och neglig kommunikation|[Kommunikationsefterlevnad i Microsoft 365](../compliance/communication-compliance.md)|
 
 ## <a name="messaging"></a>Meddelanden
 
-Du kan styra vilka chatt-och kanal meddelande funktioner – till exempel redigera eller ta bort meddelanden – finns tillgängliga för användare i Microsoft Teams med hjälp av meddelande principer. Du kan skapa olika principer för olika användare och grupper.
+Du kan styra vilka chatt- och kanalmeddelandefunktioner – som redigering eller borttagning av meddelanden – som är tillgängliga för användare i Microsoft Teams genom att använda meddelandepolicyer. Du kan skapa olika principer för olika användare och grupper.
 
-[Hantera meddelande principer i Teams](https://docs.microsoft.com/microsoftteams/messaging-policies-in-teams)
+[Hantera meddelandeprinciper i Teams](/microsoftteams/messaging-policies-in-teams)
 
-Du kan styra vem som kan påbörja nya inlägg och svara på inlägg i en Teams-kanal genom att konfigurera kanal redigering.
+Du kan styra vem som kan starta nya inlägg och svara på inlägg i en Teams-kanal genom att konfigurera kanalmoderering.
 
-[Konfigurera och hantera kanal moderator i Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-channel-moderation-in-teams)
+[Konfigurera och hantera kanalmoderering i Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)
 
-## <a name="meetings"></a>Tider
+## <a name="meetings"></a>Möten
 
-Du kan kontrol lera vilka funktioner som är tillgängliga för Mötes deltagare, till exempel schemaläggning, innehålls delning, deltagare och ljud-och video principer.
+Du kan kontrollera vilka funktioner som är tillgängliga för Teams-mötesdeltagare, inklusive schemaläggning, innehållsdelning, deltagare samt principer för ljud och video.
 
-Få mer information om hur du [hanterar mötesprinciper i Teams](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams).
+Få mer information om hur du [hanterar mötesprinciper i Teams](/microsoftteams/meeting-policies-in-teams).
 
-Du kan styra anonym koppling för team-möten så att vem som helst kan länka till mötet.
+Du kan styra anonym anslutning för Teams-möten så att alla som har en länk till mötet kan ansluta.
 
-[Tillåt anonyma användare att ansluta till möten](https://docs.microsoft.com/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)
+[Tillåt anonyma användare att ansluta till möten](/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)
 
 
-## <a name="communication-compliance"></a>Efterlevnad av kommunikation
+## <a name="communication-compliance"></a>Kommunikationsefterlevnad
 
-Med kommunikation i Microsoft 365 kan du undersöka kommunikationen efter stötande språk, känslig information och information som rör interna och myndighets standarder. Chatt kommunikation, post lådor och Yammer-meddelanden kan övervakas och generera aviseringar. Med administrations verktyg kan du snabbt identifiera och vidta åtgärder för meddelanden med policy matchningar.
+Med kommunikationsefterlevnad i Microsoft 365 kan du undersöka kommunikation för anstötligt språk, känslig information och information relaterad till interna standarder och reglerande standarder. Chattkommunikation, postlådor och Yammer-meddelanden kan övervakas och generera aviseringar. Med administrationsverktyg kan du snabbt identifiera och vidta åtgärder för meddelanden med principmatchning.
 
-[Kommunikation i Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance)
+[Kommunikationsefterlevnad i Microsoft 365](../compliance/communication-compliance.md)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Planerings steg-för-steg-samarbete för samarbets styrning](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Planering av samarbetsstyrning steg för steg](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[Skapa en plan för hantering av samarbete](collaboration-governance-first.md)
+[Skapa din plan för samarbetesstyrning](collaboration-governance-first.md)
 
-[Hantera inställningar för Microsoft Teams för din organisation](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
+[Hantera inställningar för Microsoft Teams för din organisation](/microsoftteams/enable-features-office-365)
 
-[Hantera Yammer-datakompatibilitet](https://docs.microsoft.com/yammer/manage-security-and-compliance/manage-data-compliance)
+[Hantera dataefterlevnad i Yammer](/yammer/manage-security-and-compliance/manage-data-compliance)

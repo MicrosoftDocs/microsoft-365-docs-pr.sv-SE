@@ -1,5 +1,5 @@
 ---
-title: Distribuera federerad för hög tillgänglighet för Microsoft 365 i Azure
+title: Distribuera federerad autentisering med hög tillgänglighet för Microsoft 365 i Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,95 +18,94 @@ f1.keywords:
 ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
-description: 'Sammanfattning: Konfigurera federerad för hög tillgänglighet för Microsoft 365-prenumerationen i Microsoft Azure.'
-ms.openlocfilehash: abe01445b8963dcdc5693b45a680e273f5084446
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Sammanfattning Konfigurera federerad autentisering med hög tillgänglighet för din Microsoft 365-prenumeration i Microsoft Azure.
+ms.openlocfilehash: 3989ebb06b4ac5dfa1cded5e07c086c4778f94e7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694685"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919158"
 ---
-# <a name="deploy-high-availability-federated-authentication-for-microsoft-365-in-azure"></a>Distribuera federerad för hög tillgänglighet för Microsoft 365 i Azure
+# <a name="deploy-high-availability-federated-authentication-for-microsoft-365-in-azure"></a>Distribuera federerad autentisering med hög tillgänglighet för Microsoft 365 i Azure
 
-Den här artikeln innehåller länkar till stegvisa instruktioner för hur du distribuerar federerad för extern tillgänglighet för Microsoft Microsoft 365 i Azure Infrastructure Services med de här virtuella datorerna:
+Den här artikeln innehåller länkar till stegvisa instruktioner för distribution av federerad autentisering med hög tillgänglighet för Microsoft Microsoft 365 i Azure-infrastrukturtjänster med dessa virtuella datorer:
   
-- Två Webbprogramproxy
+- Två proxyservrar för webbprogram
     
 - Två AD FS-servrar (Active Directory Federation Services)
     
-- Två reservdomänkontrollanter
+- Två replika domänkontrollanter
     
-- En katalogpartition med Azure AD Connect
+- En katalogsynkroniseringsserver som kör Azure AD Connect
     
-Här är konfigurationen, med plats hållare för varje server.
+Här är konfigurationen med platshållarnamn för varje server.
   
-**En federerad åtkomst med hög tillgänglighet för Microsoft 365-infrastrukturen i Azure**
+**En hög tillgänglighet federerad autentisering för Microsoft 365-infrastruktur i Azure**
 
-![Den sista konfigurationen av infrastrukturen för extern tillgänglighet i Microsoft 365 i Azure](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![Den slutliga konfigurationen av microsoft 365-infrastrukturen för federerad autentisering med hög tillgänglighet i Azure](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
-Alla virtuella datorer är i ett enda interlokalt Azure-virtuellt nätverk (VNet). 
+Alla virtuella maskiner finns i ett enda virtuellt Azure-nätverk (VNet). 
   
 > [!NOTE]
-> Federerad inloggningsautentisering för enskilda användare förlitar sig inte på lokala resurser. Men om den lokala anslutningen blir otillgänglig kommer domän kontrol Lanterna i VNet inte att få uppdateringar för användar konton och grupper som görs i den lokala Active Directory Domain Services (AD DS). För att säkerställa att detta inte sker kan du konfigurera hög tillgänglighet för din korslänkade förbindelse. Mer information finns i [lättillgängliga kors lokala och VNET-till-VNet-anslutningar](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> Federerad autentisering av enskilda användare är inte beroende av några lokala resurser. Men om den tvärlokala anslutningen blir otillgänglig kommer domänkontrollanterna i det virtuella nätverket inte att få uppdateringar för användarkonton och grupper som gjorts i ad ds (Active Directory Domain Services) lokalt. Du kan se till att det inte sker genom att konfigurera hög tillgänglighet för den lokala anslutningen. Mer information finns i [Mycket tillgänglig, tvärlokal anslutning och VNet-till-VNet-anslutning](/azure/vpn-gateway/vpn-gateway-highlyavailable)
   
-Varje par med virtuella datorer för en viss roll är i dess eget undernät och tillgänglighets uppsättning.
+Varje par virtuella maskiner för en viss roll är i en egen undernät och tillgänglighetsuppsättning.
   
 > [!NOTE]
-> Eftersom den här VNet är ansluten till det lokala nätverket inkluderar den här konfigurationen inte hopp eller övervaka virtuella datorer i ett hanterings nät. Mer information finns i [köra Windows-VMS för en arkitektur med bara en nivå](https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm). 
+> Eftersom det här VNet är anslutet till det lokala nätverket inkluderar den här konfigurationen inte jumpbox eller övervakning av virtuella maskiner på ett hanteringsundernät. Mer information finns i Köra [Windows VMs för en N-nivåarkitektur.](/azure/guidance/guidance-compute-n-tier-vm) 
   
-Resultatet av denna konfiguration är att du har federerad autentisering för alla dina Microsoft 365-användare, där de kan använda sina AD DS-autentiseringsuppgifter för att logga in i stället för sitt Microsoft 365-konto. Infrastrukturen för federerad gästautentisering använder en redundant uppsättning servrar som är enklare att distribuera i Azure Infrastructure-tjänster, i stället för i ditt lokala Edge-nätverk.
+Resultatet av den här konfigurationen är att du har federerad autentisering för alla dina Microsoft 365-användare där de kan använda sina AD DS-autentiseringsuppgifter för att logga in i stället för sitt Microsoft 365-konto. Den externa autentiseringsinfrastrukturen använder en redundant uppsättning servrar som enklare distribueras i Azure-infrastrukturtjänster, i stället för i ditt lokala gränsnätverk.
   
-## <a name="bill-of-materials"></a>Struktur lista
+## <a name="bill-of-materials"></a>Strukturlista
 
-Denna bas linje konfiguration kräver följande uppsättning Azure-tjänster och-komponenter:
+Den här baslinjekonfigurationen kräver följande uppsättning Azure-tjänster och -komponenter:
   
 - Sju virtuella datorer
     
-- Ett lokalt virtuellt nätverk med fyra undernät
+- Ett virtuellt korslokalt nätverk med fyra undernät
     
-- Fyra resurs grupper
+- Fyra resursgrupper
     
-- Tre tillgänglighets uppsättningar
+- Tre tillgänglighetsuppsättningar
     
-- Ett Azure-abonnemang
+- En Azure-prenumeration
     
-Här är de virtuella datorerna och deras standard storlekar för denna konfiguration.
+Här är de virtuella maskinerna och deras standardstorlekar för den här konfigurationen.
   
-|**Objekt**|**Beskrivning av virtuell dator**|**Bild av Azure-Galleri**|**Standard storlek**|
+|**Objekt**|**Beskrivning av virtuell dator**|**Azure-galleribild**|**Standardstorlek**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Första domänkontrollanten  <br/> |Windows Server 2016 Data Center  <br/> |D2  <br/> |
-|2.  <br/> |Andra domänkontrollanten  <br/> |Windows Server 2016 Data Center  <br/> |D2  <br/> |
-|3.  <br/> |Azure AD Connect-Server  <br/> |Windows Server 2016 Data Center  <br/> |D2  <br/> |
-|4.  <br/> |Första AD FS server  <br/> |Windows Server 2016 Data Center  <br/> |D2  <br/> |
-|5.  <br/> |Andra AD FS-servern  <br/> |Windows Server 2016 Data Center  <br/> |D2  <br/> |
-|18.6.  <br/> |Första Webbprogramproxy  <br/> |Windows Server 2016 Data Center  <br/> |D2  <br/> |
-|borttagning.  <br/> |Andra Webbprogramproxy  <br/> |Windows Server 2016 Data Center  <br/> |D2  <br/> |
+|1.  <br/> |Första domänkontrollanten  <br/> |Windows Server 2016-datacenter  <br/> |D2  <br/> |
+|2.  <br/> |Andra domänkontrollanten  <br/> |Windows Server 2016-datacenter  <br/> |D2  <br/> |
+|3.  <br/> |Azure AD Connect-server  <br/> |Windows Server 2016-datacenter  <br/> |D2  <br/> |
+|4.  <br/> |First AD FS server  <br/> |Windows Server 2016-datacenter  <br/> |D2  <br/> |
+|5.  <br/> |Second AD FS server  <br/> |Windows Server 2016-datacenter  <br/> |D2  <br/> |
+|6.  <br/> |First web application proxy server  <br/> |Windows Server 2016-datacenter  <br/> |D2  <br/> |
+|7.  <br/> |Andra webbprogramproxyservern  <br/> |Windows Server 2016-datacenter  <br/> |D2  <br/> |
    
-Information om hur du beräknar uppskattade kostnader för denna konfiguration finns i [Azure pris kalkylatorn](https://azure.microsoft.com/pricing/calculator/)
+Information om beräknade kostnader för den här konfigurationen finns i [Azure-priskalkylatorn](https://azure.microsoft.com/pricing/calculator/)
   
 ## <a name="phases-of-deployment"></a>Faser i distributionen
 
-Du distribuerar denna arbets belastning i följande faser:
+Du distribuerar arbetsbelastningen i följande faser:
   
-- [Fas 1: Konfigurera Azure](high-availability-federated-authentication-phase-1-configure-azure.md). Skapa resurs grupper, lagrings konton, tillgänglighets uppsättningar och ett lokalt virtuellt nätverk.
+- [Fas 1: Konfigurera Azure.](high-availability-federated-authentication-phase-1-configure-azure.md) Skapa resursgrupper, lagringskonton, tillgänglighetsuppsättningar och ett virtuellt nätverk på flera platser.
     
-- [Fas 2: Konfigurera domänkontrollanter](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Skapa och konfigurera repliker för AD DS och server för katalogpartition.
+- [Fas 2: Konfigurera domänkontrollanter](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Skapa och konfigurera replika AD DS-domänkontrollanter och katalogsynkroniseringsservern.
     
-- [Fas 3: Konfigurera AD FS-servrar](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Skapa och konfigurera de två AD FS-servrarna.
+- [Fas 3: Konfigurera AD FS-servrar.](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) Skapa och konfigurera de två AD FS-servrarna.
     
-- [Fas 4: Konfigurera Webbprogramproxy](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Skapa och konfigurera de två webbprogramproxy.
+- [Fas 4: Konfigurera proxyprogram för webbprogram.](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) Skapa och konfigurera de två proxyservrarna för webbprogram.
     
-- [Fas 5: Konfigurera federerad auktorisering för Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Konfigurera federerad auktorisering för Microsoft 365-prenumerationen.
+- [Fas 5: Konfigurera federerad autentisering för Microsoft 365.](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) Konfigurera federerad autentisering för Microsoft 365-prenumerationen.
     
-De här artiklarna innehåller en rikt linje för förhands instruktioner för en fördefinierad arkitektur för att skapa en funktionell, federerad inloggningsautentisering med hög tillgänglighet för Microsoft 365 i Azure Infrastructure Services. Tänk på följande:
+I de här artiklarna finns en fördefinierad, fas för fas-guide för en fördefinierad arkitektur för att skapa en funktionell, federerad autentisering med hög tillgänglighet för Microsoft 365 i Azure-infrastrukturtjänster. Tänk på följande:
   
-- Om du är en erfaren AD FS-implementerare kan du anpassa instruktionerna i steg 3 och 4 och bygga den uppsättning servrar som bäst passar dina behov.
+- Om du är en erfaren AD FS-implementerare kan du anpassa instruktionerna i fas 3 och 4 och bygga den uppsättning servrar som bäst passar dina behov.
     
-- Om du redan har en befintlig Azure Hybrid Cloud-distribution med ett befintligt lokalt virtuellt nätverk, kan du helt enkelt anpassa eller hoppa över instruktionerna i steg 1 och 2 och placera AD FS-och Webbprogramproxy på de olika under näten.
+- Om du redan har en befintlig Azure-hybridmolndistribution med ett befintligt virtuellt korslokalt nätverk kan du anpassa eller hoppa över instruktionerna i faserna 1 och 2 och placera AD FS- och webbprogramproxyservrarna på lämpliga undernät.
     
-För att skapa en utvecklings-eller test miljö eller en proof-of-Concept av denna konfiguration, se [federerad identitet för din Microsoft 365-miljö](federated-identity-for-your-microsoft-365-dev-test-environment.md).
+Information om hur du skapar en utvecklings-/testmiljö eller ett koncepttest för den här konfigurationen finns i Federerad identitet för [utvecklings-/testmiljön för Microsoft 365.](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
 ## <a name="next-step"></a>Nästa steg
 
-Starta konfigureringen av denna arbets belastning med [fas 1: Konfigurera Azure](high-availability-federated-authentication-phase-1-configure-azure.md). 
-  
+Börja konfigurationen av den här arbetsbelastningen [med steg 1: Konfigurera Azure.](high-availability-federated-authentication-phase-1-configure-azure.md) 

@@ -1,5 +1,5 @@
 ---
-title: Data klassificering för test miljön av Microsoft 365 för företag
+title: Dataklassificering för testmiljön Microsoft 365 för företag
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -13,100 +13,100 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Använd den här test laboratorie guiden för att skapa och använda behållnings etiketter i dokument i test miljön för Microsoft 365 för företag.
-ms.openlocfilehash: 5cc77167db866d99f0beea5f554a777ecf355046
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+description: Använd den här testlabbguiden för att skapa och använda bevarandeetiketter på dokument i din Microsoft 365 för företagstestmiljö.
+ms.openlocfilehash: 613aa3713b4d72eed1bc0b2d88f70a817d0e7cff
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487738"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919194"
 ---
-# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Data klassificering för test miljön av Microsoft 365 för företag
+# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Dataklassificering för testmiljön Microsoft 365 för företag
 
-*Den här test laboratorie guiden kan användas för både Microsoft 365 för företags-och Office 365 företags test miljöer.*
+*Den här testlabbguiden kan användas för både Microsoft 365 för företag- och Office 365 Enterprise-testmiljöer.*
 
-I den här artikeln beskrivs hur du konfigurerar data klassificering med hjälp av lagrings etiketter i test miljön för Microsoft 365 för företag.
+I den här artikeln beskrivs hur du konfigurerar dataklassificering med hjälp av bevarandeetiketter i testmiljön Microsoft 365 för företag.
 
-Att klassificera data i test miljön inbegriper tre faser:
-- [Fas 1: bygga ut test miljön för Microsoft 365 för företag](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
-- [Fas 2: skapa behållnings etiketter](#phase-2-create-retention-labels)
-- [Fas 3: tillämpa behållnings etiketter i dokument](#phase-3-apply-retention-labels-to-documents)
+Klassificering av data i testmiljön omfattar tre faser:
+- [Fas 1: Bygg ut microsoft 365 för företagstestmiljö](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Fas 2: Skapa bevarandeetiketter](#phase-2-create-retention-labels)
+- [Fas 3: Använda bevarandeetiketter i dokument](#phase-3-apply-retention-labels-to-documents)
 
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Om du vill visa en visuell karta till alla artiklar i gruppen Microsoft 365 för Enterprise-testlabbet går du till [Microsoft 365 för Enterprise Test Lab-guide](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> En visuell karta till alla artiklar i Microsoft 365 testlabbguide-stacken för företag finns i Testlabbguide för [Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf)för företag.
   
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fas 1: bygga ut test miljön för Microsoft 365 för företag
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fas 1: Bygg ut microsoft 365 för företagstestmiljö
 
-Om du bara vill konfigurera behållnings etiketter på ett sätt som uppfyller minimi kraven följer du anvisningarna i [Lightweight Base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
+Om du bara vill konfigurera bevarandeetiketter på ett lätt sätt med minimikraven följer du anvisningarna i Enkel [baskonfiguration.](lightweight-base-configuration-microsoft-365-enterprise.md)
   
-Om du vill konfigurera behållnings etiketter i ett simulerat företag följer du anvisningarna i [vidarekoppling](pass-through-auth-m365-ent-test-environment.md).
+Om du vill konfigurera bevarandeetiketter i ett simulerat företag följer du anvisningarna i [Direktautentisering](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Det krävs inte den simulerade företags test miljön, som innehåller ett simulerat intranät som är kopplat till Internet-och katalog-synkronisering för en AD DS-skog (Active Directory Domain Services). Det finns här som ett alternativ så att du kan testa automatiserad licensiering och grupp medlemskap och experimentera med den i en miljö som representerar en typisk organisation.
+> För testning av bevarandeetiketter krävs inte den simulerade företagstestmiljön, som omfattar ett simulerat intranät som är anslutet till Internet och katalogsynkronisering för en AD DS-skog (Active Directory Domain Services). Här finns ett alternativ så att du kan testa automatisk licensiering och gruppmedlemskap och experimentera med det i en miljö som representerar en vanlig organisation.
 
-## <a name="phase-2-create-retention-labels"></a>Fas 2: skapa behållnings etiketter
+## <a name="phase-2-create-retention-labels"></a>Fas 2: Skapa bevarandeetiketter
 
-I den här fasen skapar du lagrings etiketterna för de olika nivåerna av bevarande för dokument i SharePoint Online:
+I den här fasen skapar du bevarandeetiketter för de olika bevarandenivåerna för SharePoint Online-dokumentmappar:
 
-1. Logga in på [Microsoft 365 säkerhets Center](https://security.microsoft.com/homepage) med ditt globala administratörs konto.
-1. Välj **klassificerings**etiketter på fliken **Start-Microsoft 365-säkerhet** i webbläsaren  >  **Retention labels**.
-1. Välj **skapa en etikett**.
-1. Ange **intern offentlig** i **namn på etiketten**i rutan **namn på etiketten** och välj sedan **Nästa**.
-1. I fönstret **fil Plans beskrivningar** väljer du **Nästa**.
-1. I fönstret **etikett inställningar** , om det behövs, ange **Retention** **behållning till på**och välj sedan **Nästa**.
-1. I fönstret **Granska inställningar** väljer du **skapa etiketten**.
-1. Upprepa steg 3-7 för ytterligare etiketter med följande namn:
+1. Logga in på [Microsoft 365 Säkerhetscenter med](https://security.microsoft.com/homepage) ditt globala administratörskonto.
+1. Välj **Klassificeringslagringsetiketter** på fliken Start – Microsoft 365-säkerhet   >  **i webbläsaren.**
+1. Välj **Skapa en etikett**.
+1. I fönstret **Namnge din etikett** anger du Intern **offentlig** i Namnge **din etikett** och väljer sedan **Nästa.**
+1. I fönstret **Filplansbeskrivningar** väljer du **Nästa.**
+1. Om det **behövs går** du till fönstret Etikettinställningar och ställer **in Bevarande** **på** och väljer sedan **Nästa.**
+1. I fönstret **Granska dina** inställningar väljer du **Skapa etiketten**.
+1. Upprepa steg 3–7 för ytterligare etiketter med följande namn:
   - Privat
   - Känslig
   - Strikt konfidentiellt
-1. Välj **publicera etiketter**i fönstret **bevarande etiketter** .
-1. Välj vilka **etiketter du vill publicera**i fönstret **Välj etiketter för publicering** .
-1. Välj **Lägg till** i fönstret **Välj Etiketter** och markera alla fyra etiketterna.
-1. Välj **Lägg till**och välj sedan **klar**.
-1. I fönstret **Välj etiketter för publicering väljer du** **Nästa**.
-1. I fönstret **Välj platser** väljer du **Nästa**.
-1. Ange **exempel organisation** i **namn**i fönstret **namn** och välj sedan **Nästa**.
-1. Välj **publicera etiketter**i fönstret **Granska inställningar** .
+1. I fönstret **Bevarandeetiketter** väljer du **Publicera etiketter.**
+1. I fönstret **Välj etiketter som ska publiceras** väljer du Välj etiketter att **publicera.**
+1. I fönstret **Välj etiketter** väljer du Lägg **till och** markerar alla fyra etiketterna.
+1. Välj **Lägg** till och välj sedan **Klar**.
+1. Välj Nästa **i fönstret Välj etiketter** som ska **publiceras.**
+1. I **fönstret Välj platser** väljer du **Nästa**.
+1. I fönstret **Namnge principen** anger du Exempel **på organisation** **i Namn** och väljer sedan **Nästa**.
+1. I fönstret **Granska dina inställningar** väljer du Publicera **etiketter**.
  
-Det kan ta några minuter innan bevarande etiketterna kan publiceras.
+Det kan ta några minuter innan de bevarandeetiketter som publiceras publiceras.
 
-## <a name="phase-3-apply-retention-labels-to-documents"></a>Fas 3: tillämpa behållnings etiketter i dokument
+## <a name="phase-3-apply-retention-labels-to-documents"></a>Fas 3: Använda bevarandeetiketter i dokument
 
-I den här fasen får du reda på standard beteendet för kvarhållande av filer i mappen dokument på en SharePoint Online-webbplats och manuellt ändra etiketten för ett dokument.
+I den här fasen upptäcker du standardbeteendet för bevarandeetiketter för filer i mappen Dokument på en SharePoint Online-webbplats och ändrar manuellt bevarandeetiketten för ett dokument.
 
-Börja med att skapa en grupp webbplats på känslig nivå:
+Skapa först en SharePoint Online-gruppwebbplats med känslig nivå:
   
-1. Använd en privat instans av webbläsaren och logga in på [administrations centret för Microsoft 365](https://admin.microsoft.com) med ditt globala administratörs konto.
-1. I listan över brickor väljer du **SharePoint**.
-1. Välj **Skapa webbplats**på fliken ny **SharePoint** i webbläsaren.
-1. Välj **grupp webbplats**på sidan **skapa en webbplats** .
-1. I rutan **grupp webbplatsens namn** skriver du **SensitiveFiles**.
-1. I rutan **grupp webbplats Beskrivning** anger du **SharePoint-webbplats för känsliga filer**.
-1. Välj **privata medlemmar**i **Sekretess inställningar**och välj sedan **Nästa**.
-1. I fönstret **vem vill du lägga till? väljer du** **Slutför**.
+1. Använd en privat instans av webbläsaren och logga in på [administrationscentret för Microsoft 365 med ditt](https://admin.microsoft.com) globala administratörskonto.
+1. Välj SharePoint i listan med **paneler.**
+1. På den nya **SharePoint-fliken** i webbläsaren väljer du **Skapa webbplats.**
+1. På sidan **Skapa en webbplats** väljer du **Gruppwebbplats**.
+1. I rutan **Gruppwebbplatsens** namn anger du **SensitiveFiles**.
+1. Ange **SharePoint-webbplats för** känsliga filer i **rutan Beskrivning av gruppwebbplats.**
+1. I **Sekretessinställningar** väljer du **Privat – endast medlemmar kan komma åt den här** webbplatsen och väljer sedan **Nästa**.
+1. I fönstret **Vem vill du lägga till?** väljer du **Slutför**.
     
-Sedan konfigurerar du mappen dokument på SensitiveFiles-grupp webbplatsen efter den känsliga behållnings etiketten.
+Konfigurera sedan mappen Dokument på gruppwebbplatsen SensitiveFiles för bevarandeetiketten Känslig.
   
-1. På fliken **SensitiveFiles** i webbläsaren väljer du **dokument**.
-1. Välj ikonen för **Inställningar** och välj sedan **biblioteks inställningar**.
-1. Under **behörigheter och hantering**väljer **du Använd etikett för objekt i den här listan eller det här biblioteket**. Om det här alternativet inte visas har dina lagrings etiketter ännu inte publicerats. Prova det här steget senare.
-1. I **Inställningar – Använd etikett**, Välj **känslig** i list rutan och välj sedan **Spara**.
+1. På **fliken KänsligaFiler** i webbläsaren väljer du **Dokument**.
+1. Välj ikonen **Inställningar** och välj sedan **Biblioteksinställningar**.
+1. Under **Behörigheter och hantering** väljer du Använd etikett för objekt i listan eller **biblioteket**. Om det här alternativet inte visas har dina kvarhållningsetiketter ännu inte publicerats. Prova det här steget senare.
+1. I **Inställningar-Använd etikett** väljer **du** Känslig i listrutan och sedan **Spara**.
 
-Skapa sedan ett nytt dokument på SensitiveFiles-webbplatsen och ändra etikettens etikett.
+Skapa sedan ett nytt dokument på webbplatsen SensitiveFiles och ändra dess bevarandeetikett.
     
-1. Välj **nytt**  >  **Word-dokument**i mappen dokument.
-1. Skriv text i det tomma dokumentet. Vänta tills texten har sparats.
-1. På Meny raden väljer du **delade dokument**.
-1. Bredvid **Document.docx** fil namn väljer du den lodräta ellipsen och väljer sedan **information**.
-1. I det högra fönstret, i avsnittet **Egenskaper** , under **tillämpa bevarande etikett**, ser du att dokumentet har den **känsliga** behållnings etiketten automatiskt tillämpad.
-1. Klicka på **Redigera alla**.
-1. Markera den **mycket konfidentiella** etiketten under **Använd bevarande etikett**i **Document.docx** fönstret och välj sedan **Spara**.
+1. Välj Nytt Word-dokument **i**  >  **dokumentmappen.**
+1. Skriv lite text i det tomma dokumentet. Vänta tills texten har sparats.
+1. På menyraden väljer du **Delade dokument**.
+1. Markera de **lodrätaDocument.docx** bredvid filnamnet och välj sedan **Information**.
+1. Observera att bevarandeetiketten  Känslig har använts automatiskt **i** dokumentet under  Använd bevarandeetikett i den högra rutan i avsnittet Egenskaper.
+1. Klicka **på Redigera alla**.
+1. I **Document.docx** under Använd **bevarandeetikett** väljer du etiketten **Konfidentiellt** och sedan **Spara**.
 
 ## <a name="next-step"></a>Nästa steg
 
-Utforska ytterligare funktioner för [informations skydd](m365-enterprise-test-lab-guides.md#information-protection) i test miljön.
+Utforska ytterligare [informationsskyddsfunktioner](m365-enterprise-test-lab-guides.md#information-protection) i testmiljön.
 
 ## <a name="see-also"></a>Se även
 
@@ -114,4 +114,4 @@ Utforska ytterligare funktioner för [informations skydd](m365-enterprise-test-l
 
 [Översikt över Microsoft 365 för företag](microsoft-365-overview.md)
 
-[Microsoft 365 för företags dokumentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Dokumentation om Microsoft 365 för företag](/microsoft-365-enterprise/)

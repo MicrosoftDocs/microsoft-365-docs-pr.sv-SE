@@ -1,6 +1,6 @@
 ---
-title: Enhets hanterings översikt för Microsoft 365
-keywords: Microsoft 365, Microsoft 365 för Enterprise, Microsoft 365-dokumentation, hantering av mobila enheter, Intune
+title: Översikt över enhetshantering för Microsoft 365
+keywords: Microsoft 365, Microsoft 365 för företag, Microsoft 365-dokumentation, hantering av mobila enheter, Intune
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -14,51 +14,51 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-description: Översikten för konfiguration av enhets hantering för Microsoft 365.
-ms.openlocfilehash: 79be47d6bc83c124f2203866986e06181a1f7f3d
-ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
+description: Översikt över att konfigurera enhetshantering för Microsoft 365.
+ms.openlocfilehash: 4c37033898865372fea19ddbb53ec9c8586f27b1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749545"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918972"
 ---
-# <a name="device-management-roadmap-for-microsoft-365"></a>Enhets hanterings översikt för Microsoft 365
+# <a name="device-management-roadmap-for-microsoft-365"></a>Översikt över enhetshantering för Microsoft 365
 
-Microsoft 365 för Enterprise innehåller funktioner för att hantera enheter och deras appar i din organisation. Genom att hantera mobila enheter kan du skydda din organisations resurser.
+Microsoft 365 för företag innehåller funktioner som hjälper dig att hantera enheter och deras appar inom organisationen. Hantering av mobila enheter hjälper dig att skydda organisationens resurser.
 
-Det finns två alternativ för enhets hantering:
+Det finns två alternativ för enhetshantering:
 
 - [Microsoft Intune](#microsoft-intune)
 - [Grundläggande Mobility and Security](#basic-mobility-and-security)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-Du kan använda Microsoft Intune för att hantera åtkomst till din organisation med hantering av mobila enheter och hantering av mobil program. Hantering av mobila enheter är när användarna "registrerar" sina enheter i Intune. När en enhet har registrerats är det en hanterad enhet; Därför kan det ta emot organisationens principer, regler och inställningar. Du kan till exempel installera specifika appar, skapa en lösen ords princip, installera en VPN-anslutning m.m.
+Du kan använda Microsoft Intune för att hantera åtkomsten till din organisation med hantering av mobila enheter eller hantering av mobilprogram. Hantering av mobila enheter är när användarna "registrerar" sina enheter i Intune. När en enhet har registrerats är det en hanterad enhet. Det innebär att organisationens principer, regler och inställningar kan visas. Du kan till exempel installera specifika appar, skapa en lösenordsprincip, installera en VPN-anslutning med mera.
 
-Användare med egna personliga enheter kanske inte vill registrera sina enheter eller hanteras av Intune och organisationens principer. Men du måste ändå skydda organisationens resurser och data. I det här scenariot kan du skydda dina appar med hantering av mobil program. Du kan till exempel använda en hanterings princip för mobila program som kräver att en användare anger en PIN-kod när jag öppnar SharePoint Online på enheten.
+Användare med sina egna personliga enheter kanske inte vill registrera sina enheter eller hanteras av Intune och organisationens principer. Men du måste fortfarande skydda organisationens resurser och data. I det här scenariot kan du skydda dina appar med hantering av mobilprogram. Du kan till exempel använda en princip för hantering av mobilprogram som kräver att användaren anger en PIN-kod när han eller hon öppnar SharePoint Online på enheten.
 
-Du bestämmer också hur du ska hantera personliga enheter och företagsägda enheter. Du kanske vill behandla enheter på olika sätt, beroende på hur de används.
+Du får också bestämma hur du ska hantera personliga enheter och organisationsägda enheter. Du kanske vill behandla enheter olika beroende på hur de används.
 
 ## <a name="basic-mobility-and-security"></a>Grundläggande Mobility and Security
 
-Den är inbyggd i Microsoft 365 och hjälper dig att skydda och hantera användares mobila enheter som iPhone, iPad, Android och Windows-telefoner. Du kan skapa och hantera säkerhets principer för enheter, rensa en enhet och se detaljerade enhets rapporter.
+Det här är inbyggt i Microsoft 365 och hjälper dig att skydda och hantera dina användares mobila enheter, till exempel iPhone, iPad, Android och Windows-telefoner. Du kan skapa och hantera säkerhetsprinciper för enheter, fjärradea enheter och visa detaljerade enhetsrapporter.
 
-## <a name="choose-between-the-two-options"></a>Välj mellan de två alternativen
+## <a name="choose-between-the-two-options"></a>Välja mellan de två alternativen
 
-För att hjälpa dig att bättre bedöma vilka enheter som hanteras bäst för dig kan du läsa mer i [välja mellan grundläggande mobilitets säkerhet och Intune](https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune).
+Mer information om vilka alternativ för enhetshantering som passar bäst för dig finns i [Välja mellan Basic Mobility Security och Intune.](/office365/securitycompliance/choose-between-mdm-and-intune)
 
-Baserat på din utvärdering kan du komma igång med att hantera dina enheter:
+Baserat på din utvärdering kan du komma igång med att hantera dina enheter med:
 
-- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
+- [Intune](/mem/intune/fundamentals/planning-guide)
 - [Grundläggande Mobility and Security](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)
  
 ## <a name="identity-and-device-access-recommendations"></a>Rekommendationer för identitets- och enhetsåtkomst
 
-Microsoft tillhandahåller en uppsättning rekommendationer för [identitets- och enhetsåtkomst](../security/office-365-security/microsoft-365-policies-configurations.md) för att säkerställa en säker och produktiv arbetsstyrka. Använd rekommendationer och inställningar i följande artiklar för att få åtkomst till enheter:
+Microsoft tillhandahåller en uppsättning rekommendationer för [identitets- och enhetsåtkomst](../security/office-365-security/microsoft-365-policies-configurations.md) för att säkerställa en säker och produktiv arbetsstyrka. För enhetsåtkomst använder du rekommendationer och inställningar i följande artiklar:
 
 - [Krav](../security/office-365-security/identity-access-prerequisites.md)
 - [Vanliga principer för identitets- och enhetsåtkomst](../security/office-365-security/identity-access-policies.md)
 
-## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Hur contoso hanterade enhets hantering för Microsoft 365
+## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Hur Contoso hanterade enheter för Microsoft 365
 
-Mer information om hur du kan hitta en fiktiv men representativ organisation för hantering av mobila enheter med Microsoft 365-molntjänster finns i [Hantera mobila enheter för Contoso](contoso-mdm.md).
+Mer information om hur en fiktiv men representativt multinationellt företag distribuerade sin infrastruktur för hantering av mobila enheter med Microsoft 365-molntjänster finns i [Mobile device management för Contoso.](contoso-mdm.md)

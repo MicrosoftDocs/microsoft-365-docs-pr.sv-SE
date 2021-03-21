@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Anslut till din Microsoft 365-klientorganisation med PowerShell för Microsoft 365 för att utföra uppgifter i administrationscenter från kommandoraden.
-ms.openlocfilehash: 0691304a2d40f7ae4262e6761902f16b4f6d5ee2
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 58af42958e9b50ee8e39cbd7bd5aab53812e444c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288119"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919182"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Ansluta till Microsoft 365 med PowerShell
 
@@ -60,17 +60,17 @@ Du kan använda följande versioner av Windows:
 - För Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen måste du använda PowerShell version 5.1 eller senare, upp till PowerShell version 6. Du kan inte använda PowerShell version 7.
        
 >[!Note]
->De här procedurerna är avsedda för användaren som är medlemmar i en administratörs roll för Microsoft 365. Mer information finns i [Om administratörsroller](https://go.microsoft.com/fwlink/p/?LinkId=532367).
+>De här procedurerna är avsedda för användaren som är medlemmar i en administratörs roll för Microsoft 365. Mer information finns i [Om administratörsroller](../admin/add-users/about-admin-roles.md).
 
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Ansluta med Azure Active Directory Windows PowerShell för Graph-modulen
 
-Kommandon i Azure Active Directory PowerShell för Graph-modulen har *AzureAD* i namnet på cmdleten. Du kan installera [Azure Active Directory PowerShell för Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2)-modulen eller [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps).
+Kommandon i Azure Active Directory PowerShell för Graph-modulen har *AzureAD* i namnet på cmdleten. Du kan installera [Azure Active Directory PowerShell för Graph](/powershell/azure/active-directory/install-adv2)-modulen eller [Azure PowerShell](/powershell/azure/install-az-ps).
 
 För procedurer som kräver nya cmdlets i Azure Active Directory PowerShell för Graph-modulen ska du använda följande steg för att installera modulen och ansluta till din Microsoft 365-prenumeration.
 
 > [!Note]
-> Mer information om stödet för olika versioner av Microsoft Windows finns i [Azure Active Directory PowerShell för Graph-modul](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+> Mer information om stödet för olika versioner av Microsoft Windows finns i [Azure Active Directory PowerShell för Graph-modul](/powershell/azure/active-directory/install-adv2).
 
 ### <a name="step-1-install-the-required-software"></a>Steg 1: Installera den programvara som krävs
 
@@ -102,7 +102,7 @@ Skriv ditt användarnamn och lösenord för ditt Microsoft 365-konto för arbete
 
 Om du använder multifaktorautentisering, följ instruktionerna för att ange ytterligare autentiseringsinformation, till exempel en verifieringskod.
 
-När du har anslutit kan du använda cmdlets för [Azure Active Directory PowerShell för Graph-modulen](https://docs.microsoft.com/powershell/module/azuread).
+När du har anslutit kan du använda cmdlets för [Azure Active Directory PowerShell för Graph-modulen](/powershell/module/azuread).
 
 ## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Ansluta med Azure Active Directory-modulen för Windows PowerShell
 
@@ -152,11 +152,11 @@ Om du får ett felmeddelande, kontrollera följande problem:
     
 - **Microsoft Azure Active Directory-modulen för Windows PowerShell kräver att Microsoft .NET Framework 3.5.* x* är aktiverad på din dator**. Det är troligt att din dator har en nyare version installerad (till exempel 4 eller 4.5.* x*). Men bakåtkompatibilitet med äldre versioner av .NET Framework kan aktiveras och inaktiveras. Mer information finns i följande artiklar:
     
-  - Mer information om Windows Server 2012 eller Windows Server 2012 R2 finns i[Aktivera .NET Framework 3.5 med hjälp av guiden Lägg till roller och funktioner](https://go.microsoft.com/fwlink/p/?LinkId=532368).
+  - Mer information om Windows Server 2012 eller Windows Server 2012 R2 finns i[Aktivera .NET Framework 3.5 med hjälp av guiden Lägg till roller och funktioner](/previous-versions/windows/it-pro/windows-8.1-and-8/dn482071(v=win.10)).
     
-  - För Windows 7 eller Windows Server 2008 R2 läser du [Det går inte att öppna Azure Active Directory-modulen för Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532370).
+  - För Windows 7 eller Windows Server 2008 R2 läser du [Det går inte att öppna Azure Active Directory-modulen för Windows PowerShell](/troubleshoot/azure/active-directory/cant-open-aad-module-powershell).
 
-  - För Windows 10, Windows 8.1 och Windows 8 läser du [Installera .NET Framework 3.5 i Windows 10, Windows 8.1 och Windows 8](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10).
+  - För Windows 10, Windows 8.1 och Windows 8 läser du [Installera .NET Framework 3.5 i Windows 10, Windows 8.1 och Windows 8](/dotnet/framework/install/dotnet-35-windows-10).
 
   
 - **Din version av Microsoft Azure Active Directory-modulen för Windows PowerShell kanske är inaktuell.** Om du vill kontrollera detta kör du följande kommando i PowerShell för Microsoft 365 eller Microsoft Azure Active Directory-modulen för Windows PowerShell:
@@ -167,7 +167,7 @@ Om du får ett felmeddelande, kontrollera följande problem:
 
     Om versionsnumret som returneras är lägre än *1.0.8070.2*, avinstallerar Microsoft Azure Active Directory-modulen för Windows PowerShell och installerar från [Steg 1](#step-1-install-the-required-software)ovan.
 
-- **Om du får ett anslutningsfelmeddelande**, se [Felet "Connect-MsolService: Undantag av typen" misslyckades](https://go.microsoft.com/fwlink/p/?LinkId=532377).
+- **Om du får ett anslutningsfelmeddelande**, se [Felet "Connect-MsolService: Undantag av typen" misslyckades](/office365/troubleshoot/active-directory/connect-msoservice-throw-exception).
     
 - **Om du får felmeddelandet "Get-Item: Det går inte att hitta sökvägen"**, kör kommandot:
 

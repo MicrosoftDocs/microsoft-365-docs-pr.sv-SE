@@ -8,18 +8,18 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 729e9dc9ab512a7e93bc291a9a52222c15a42b79
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: b0aa619f09f2d6b32289e037283a0dc6578d0150
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727427"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920510"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop-enheter 
 
 Microsoft Managed Desktop utvärderar regelbundet enheter som ska ingå i tjänsten. I den här artikeln listas de specifika enheter som stöds för närvarande. En mer allmän redogörelse för enhetskrav finns i [Enhetskrav.](device-requirements.md)
 
-Mer information om Microsoft Managed Desktop finns i [Dokumentation och resurser för Microsoft Managed Desktop.](https://docs.microsoft.com/microsoft-365/managed-desktop/) 
+Mer information om Microsoft Managed Desktop finns i [Dokumentation och resurser för Microsoft Managed Desktop.](../index.yml) 
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
@@ -78,11 +78,11 @@ Enheten måste dessutom uppfylla följande villkor:
 
 - Om en viss SKU finns med i enhetskraven kontrollerar du att du använder den när du beställer. Det säkerställer att enheter uppfyller programvarukraven för Microsoft Managed Desktop. 
 - Windows-körningen har inte slutförts.
-- Registreras med Microsoft Managed Desktop med funktionen [Enhetsregistrering](https://aka.ms/mmddrhelp)
+- Registreras med Microsoft Managed Desktop med funktionen [Enhetsregistrering](../get-started/register-devices-self.md)
 
 >[!NOTE]
 >Enheter med en 2,0 GHz-processor eller snabbare processor ger en mycket bättre upplevelse för användare som är inblandade i dessa aktiviteter:
->- Använda videokonferenser med Teams. Mer [information finns i Maskinvarukrav för Microsoft Teams.](https://docs.microsoft.com/microsoftteams/hardware-requirements-for-the-teams-app)
+>- Använda videokonferenser med Teams. Mer [information finns i Maskinvarukrav för Microsoft Teams.](/microsoftteams/hardware-requirements-for-the-teams-app)
 >-  Använda en enhet för flera olika arbetsbelastningar.
 >- Använda flera bildskärmar.
 
@@ -93,8 +93,3 @@ De här resurserna kan hjälpa dig att besvara frågor som du kanske har om spec
 - Om du har fler frågor om Dell-enheter kontaktar <a href="mailto:MMD_at_dell@dell.com">du MMD_at_dell@dell.com</a>.
 
 - Om du har fler frågor om HP-enheter och anvisningar för enhetsbeställning kan du kontakta: Americas (<a href="mailto:mmd-americas@hp.com">mmd-americas@hp.com</a>); Europa/Mellanöstern/Afrika (<a href="mailto:mmd-emea@hp.com">mmd-emea@hp.com</a>); Asien/Stillahavsområdet/Japan (<a href="mailto:mmd-apj@hp.com">mmd-apj@hp.com</a>); Global (<a href="mailto:mmd@hp.com">mmd@hp.com</a>)
-
-
-
-
-

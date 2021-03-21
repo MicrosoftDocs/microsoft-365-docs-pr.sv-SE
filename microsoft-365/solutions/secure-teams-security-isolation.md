@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du skapar ett team med en unik känslighetsetikett för säkerhet.
-ms.openlocfilehash: 5ddd42f9e2f2779ca6bf864554140a3f18d2cdea
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 2ecd8e0458f6ebef9ebd1b0c3724195cc70f6378
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405708"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920934"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Konfigurera en team med säkerhetsisolering
 
@@ -40,7 +40,7 @@ Komponenterna i konfigurationen för en grupp med säkerhets isolering är:
     - Krypterar dokument som etikett används för
 
 > [!IMPORTANT]
-> Kontrollera att du har aktiverat [känslighetsetiketter för att skydda innehåll i Microsoft Teams, Office 365-grupper och SharePoint-webbplatser](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) innan du fortsätter med stegen i den här artikeln.
+> Kontrollera att du har aktiverat [känslighetsetiketter för att skydda innehåll i Microsoft Teams, Office 365-grupper och SharePoint-webbplatser](../compliance/sensitivity-labels-teams-groups-sites.md) innan du fortsätter med stegen i den här artikeln.
 
 Titta på den här videon för att få en översikt över distributionsprocessen.
 <br>
@@ -70,8 +70,8 @@ Beroende på företagets natur kan du kanske inte aktivera gästdelning för det
 
 Information om hur du delar med gäster säkert finns i följande resurser:
 
-- [Begränsa oavsiktlig exponering för filer när de delas med personer utanför organisationen](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
-- [Skapa en säker miljö för gästdelning](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
+- [Begränsa oavsiktlig exponering för filer när de delas med personer utanför organisationen](./share-limit-accidental-exposure.md)
+- [Skapa en säker miljö för gästdelning](./create-secure-guest-sharing-environment.md)
 
 För att tillåta eller blockera gästdelning använder vi en kombination av känslighetsetiketter för teamet och delning på webbplats nivå för den associerade SharePoint-webbplatsen, som vi ser senare.
 
@@ -98,7 +98,7 @@ För att begränsa skapandet av en privat kanal
 2. På fliken **Inställningar**, expandera **medlemsbehörigheter**.
 3. Avmarkera kryssrutan **Tillåt att medlemmar skapar privata kanaler**.
 
-Du kan också använda [teamprinciper](https://docs.microsoft.com/MicrosoftTeams/teams-policies) för att styra vem som kan skapa privata kanaler.
+Du kan också använda [teamprinciper](/MicrosoftTeams/teams-policies) för att styra vem som kan skapa privata kanaler.
 
 ## <a name="create-a-sensitivity-label"></a>Skapa en känslighetsetikett
 
@@ -194,7 +194,7 @@ Uppdatera webbplatsinställningar
 
 #### <a name="private-channels"></a>Privata kanaler
 
-Om du lägger till privata kanaler i teamet skapas en ny SharePoint-webbplats med standard delningsinställningar. De här webbplatserna visas inte i SharePoint Online Administrationscenter. Du måste därför använda Windows PowerShell-cmdleten [set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) med följande parametrar för att uppdatera inställningarna för gästdelning:
+Om du lägger till privata kanaler i teamet skapas en ny SharePoint-webbplats med standard delningsinställningar. De här webbplatserna visas inte i SharePoint Online Administrationscenter. Du måste därför använda Windows PowerShell-cmdleten [set-SPOSite](/powershell/module/sharepoint-online/set-sposite) med följande parametrar för att uppdatera inställningarna för gästdelning:
 
 - `-SharingCapability Disabled` Inaktivera gästdelning (det är aktiverat som standard)
 - `-DefaultSharingLinkType Internal` ändra standard delningslänk till *Vissa personer*
@@ -229,10 +229,10 @@ Bjuda in användare till webbplatsen
 
 Microsoft 365 tillhandahåller fler metoder för att skydda innehållet. Överväg att använda följande alternativ för att förbättra säkerheten för din organisation.
 
-- Låt dina gästanvändare godkänna [användningsvillkor](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
-- Konfigurera en [princip om tidsgräns för sessioner](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) för gäster.
-- Skapa [känslig informationstyper](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types) och Använd [skydd mot dataförlust](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) för att ange principer för åtkomst av känslig information.
-- Använd [Azure Active Directory Access](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) granskningar för att regelbundet granska teamåtkomst och medlemskap.
+- Låt dina gästanvändare godkänna [användningsvillkor](/azure/active-directory/conditional-access/terms-of-use).
+- Konfigurera en [princip om tidsgräns för sessioner](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) för gäster.
+- Skapa [känslig informationstyper](../compliance/sensitive-information-type-learn-about.md) och Använd [skydd mot dataförlust](../compliance/data-loss-prevention-policies.md) för att ange principer för åtkomst av känslig information.
+- Använd [Azure Active Directory Access](/azure/active-directory/governance/access-reviews-overview) granskningar för att regelbundet granska teamåtkomst och medlemskap.
 
 ## <a name="drive-user-adoption-for-team-members"></a>Driva på teammedlemmarnas användning
 
@@ -266,4 +266,4 @@ Vidareutbilda dina användare efter behov.
 
 ## <a name="see-also"></a>Se även
 
-[Azure Active Directory Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)
+[Azure Active Directory Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure)

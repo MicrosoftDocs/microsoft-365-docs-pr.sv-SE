@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Bestäm var dina Microsoft 365 kunddata lagras globalt
-ms.openlocfilehash: dc74393eadbd5f1abc62efe7411434d0b919e5fe
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: a93f83e7efafa06aa65675342471c26f1b197864
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988110"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920794"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -58,11 +58,11 @@ Microsoft avslöjar inte de exakta adresserna för data Center. Vi har faststäl
 
 ### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>Har platsen för dina kunddata en direkt inverkan på slutanvändarens upplevelse?
 
-Prestanda för Microsoft 365 är inte bara proportionellt mot en användares avstånd till data Center platser. Microsofts fortsatta investeringar i det globala moln nätverket, globalt moln och infrastruktur för Microsoft 365 Services ger användarna en samstämmig och konsekvent upplevelse oberoende av var kunddata lagras i vila. Om användarna upplever prestanda problem bör du felsöka dem i djup. lo Microsoft har publicerat vägledning för Microsoft 365-kunder för att planera och optimera slutanvändarens prestanda på [Office-support webbplatsen](https://go.microsoft.com/fwlink/p/?linkid=862645).
+Prestanda för Microsoft 365 är inte bara proportionellt mot en användares avstånd till data Center platser. Microsofts fortsatta investeringar i det globala moln nätverket, globalt moln och infrastruktur för Microsoft 365 Services ger användarna en samstämmig och konsekvent upplevelse oberoende av var kunddata lagras i vila. Om användarna upplever prestanda problem bör du felsöka dem i djup. lo Microsoft har publicerat vägledning för Microsoft 365-kunder för att planera och optimera slutanvändarens prestanda på [Office-support webbplatsen](./network-planning-and-performance.md).
 
 ### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>Hur fungerar Microsoft att jag följer mina nationella, regionala och branschspecifika föreskrifter?
 
-För att hjälpa dig att uppfylla nationella, regionala och företagsspecifika krav som reglerar samlingen och användningen av person uppgifter får Microsoft 365 dig en mer omfattande uppsättning uppfyllande av efterlevnad för alla globala moln produktivitets leverantörer. Läs [våra uppfyllande av efterlevnadar](https://go.microsoft.com/fwlink/p/?linkid=864391) och mer information i [Microsoft 365 Compliance](https://go.microsoft.com/fwlink/p/?linkid=862317) i Microsoft säkerhets Center. Vissa Microsoft 365-abonnemang erbjuder även fler lösningar för regelefterlevnad som hjälper dig att hantera dina data, uppfylla lagar och föreskrifter samt övervaka åtgärder som vidtagits för dina data.
+För att hjälpa dig att uppfylla nationella, regionala och företagsspecifika krav som reglerar samlingen och användningen av person uppgifter får Microsoft 365 dig en mer omfattande uppsättning uppfyllande av efterlevnad för alla globala moln produktivitets leverantörer. Läs [våra uppfyllande av efterlevnadar](/compliance/regulatory/offering-home) och mer information i [Microsoft 365 Compliance](https://go.microsoft.com/fwlink/p/?linkid=862317) i Microsoft säkerhets Center. Vissa Microsoft 365-abonnemang erbjuder även fler lösningar för regelefterlevnad som hjälper dig att hantera dina data, uppfylla lagar och föreskrifter samt övervaka åtgärder som vidtagits för dina data.
 
 ### <a name="who-can-access-your-data-and-according-to-what-rules"></a>Vem har till gång till dina data och enligt vilka regler?
 

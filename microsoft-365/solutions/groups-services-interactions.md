@@ -1,5 +1,5 @@
 ---
-title: Interaktioner i grupper
+title: Interaktion mellan grupptjänster
 ms.reviewer: ''
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,140 +14,140 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Interaktioner i grupper
-ms.openlocfilehash: 6d5681b11cdbd837f784b6c8364cce23f964b167
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+description: Interaktion mellan grupptjänster
+ms.openlocfilehash: 331c30c86481b1729251c685de2d663fb14f390b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613232"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921030"
 ---
-# <a name="groups-services-interactions"></a>Interaktioner i grupper
+# <a name="groups-services-interactions"></a>Interaktion mellan grupptjänster
 
-Microsoft 365-grupper ger en gemensam infrastruktur för ett antal tjänster och arbets belastningar inom Microsofts 365-plattform för att tillhandahålla en uppkopplad upplevelse för slutanvändarna. I sin kärna finns en Microsoft 365-grupp för att tillhandahålla:
+Microsoft 365 Groups är ett vanligt material för flera tjänster och arbetsbelastningar på Microsoft 365-plattformen för att ge slutanvändarna anslutna upplevelser. Det finns en Microsoft 365-grupp som tillhandahåller följande:
 
-- Ett sätt att hantera medlemskap (Azure AD)
-- En plats för meddelanden och konversationer att genomföra (Exchange-postlåda, Microsoft Teams, Yammer)
-- En plats där filer lagras (SharePoint)
+- Ett sätt att hantera medlemskapet (Azure AD)
+- En plats där meddelanden och konversationer äger rum (Exchange-postlåda, Microsoft Teams, Yammer)
+- En plats där filer ska lagras (SharePoint)
 - En kalender för schemaläggning (Exchange)
-- En antecknings bok för att fånga anteckningar (OneNote)
+- En anteckningsbok för att spara anteckningar (OneNote)
 
-När du skapar en grupp skapas ett antal andra resurser, men de visas inte förrän de har åtkomst till den första gången från tjänsten:
+När grupper skapas etableras även ett antal andra resurser, men de visas inte förrän första gången nås från tjänsten:
 
-- En anslags tavla för att hantera grupp aktiviteter (Planner)
-- En arbets yta för rapportering (Power BI)
-- Ett område för delade videoklipp (Microsoft Stream)
+- En tavla för hantering av gruppuppgifter (Planner)
+- En arbetsyta för rapportering (Power BI)
+- Ett område för delade videor (Microsoft Stream)
 - Ett område för delade formulär (formulär)
 
-I Microsoft 365 kan andra tjänster samverka med Microsoft 365-grupper för att tillhandahålla ytterligare funktioner och funktioner för grupp medlemmar.
+I Microsoft 365 kan andra tjänster interagera med Microsoft 365-grupper för att ge gruppmedlemmar ytterligare funktioner.
 Exempel på detta är:
 
-- Power app för appar
-- Automatisera Power för arbets flöden
-- Project på webben och översikt för Vattenfalls projektledning
-- Teams för kanalbaserade konversationer
-- Yammer för intressanta grupper
+- Power-appar för appar
+- Power Automate för arbetsflöden
+- Project på webben och Översikt över vattenfallsbaserad projekthantering
+- Team för kanalbaserade konversationer
+- Yammer för intressegrupper
 
-## <a name="user-interactions-with-groups"></a>Användar interaktion med grupper
+## <a name="user-interactions-with-groups"></a>Användarinteraktion med grupper
 
-Microsoft 365-grupper kan skapas och hanteras av olika gränssnitt, både för administratörer och slutanvändare. 
+Microsoft 365-grupper kan skapas och hanteras från en mängd olika gränssnitt, både av administratörer och slutanvändare. 
 
-### <a name="administrative-experiences"></a>Administrativa upplevelser
+### <a name="administrative-experiences"></a>Administrativa funktioner
 
-Administratörer kan skapa och hantera Microsoft 365-grupper från flera olika administrations Center för arbets belastning, kommando rads gränssnitt som stöder skript samt anpassade program som fungerar tillsammans med Graph API. Det enda undantaget för detta är Yammer-grupper – som måste skapas från Yammer Web Interface.
+Administratörer kan skapa och hantera Microsoft 365-grupper från flera av administrationscentret för arbetsbelastningen, kommandoradsgränssnitt som stöder skript samt anpassade appar som interagerar med Graph API. Det enda undantaget är Yammer-grupper – som måste skapas från Yammer-webbgränssnittet.
 
 **Relaterade inställningar**
 
-Bland de olika administrativa gränssnitt som kan hantera grupp inställningar finns flera överlappande som du bör känna till.
+I de olika administrativa gränssnitten som kan hantera gruppinställningar finns det flera överlappningar som du bör känna till.
 
 **Administrationscenter för Microsoft 365**
 
-I Microsoft 365 Admin Center är gäst åtkomst till grupper aktiverat som standard, vilket är möjligheten att tillåta ägare att lägga till gäster. Det finns inga fler kontroller på organisations nivå i det här administrations centret.
+I administrationscentret för Microsoft 365 är gäståtkomst i grupper aktiverad som standard, eftersom ägare kan lägga till gäster. Det finns inga ytterligare kontroller på organisationsnivå för grupper i det här administrationscentret.
 
-**Administrations Center för Azure AD**
+**Administrationscenter för Azure AD**
 
-Administrations centret för Azure AD erbjuder kontroller om användare kan skapa grupper eller tilldela ägare i Azure-portaler, samt giltighets datum och princip inställningar.
+I administrationscentret för Azure AD finns kontroller för huruvida användare kan skapa grupper eller tilldela ägare i Azure-portaler, samt inställningar för förfallo- och namnprinciper.
 
-Administrations Center innehåller också ett antal åtgärder för kontroll av gäst inbjudningar som går utöver det som ingår i Microsoft 365 Admin Center, till exempel möjligheten att begränsa huruvida icke-ägare kan bjuda in gäster
+I administrationscentret finns också ett antal åtgärder för att styra gästinbjudningar som går utöver de som finns i administrationscentret för Microsoft 365, till exempel möjlighet att begränsa huruvida personer som inte är ägare också kan bjuda in gäster.
 
 **SharePoint**
 
-SharePoint-webbplatser skapas med säkerhets grupper för ägare, medlem och besökare med de två första matchningarna till sina Microsoft 365-gruppmotparter. När medlemskap för SharePoint Online-webbplatser hanteras vanligt vis av den associerade Microsoft 365-gruppen är det inte en dubbelriktad relation. Alla ändringar av medlemskap på Microsoft 365-gruppnivån återspeglas i SharePoint, men om medlemskap ändras i SharePoint-gruppen visas inte detta i gruppen Microsoft 365.
+SharePoint-webbplatser skapas med säkerhetsgrupper som ägare, medlemmar och besökare, med de två första som matchar deras Microsoft 365-gruppmotsvarsvarumer. Medlemskap för SharePoint Online-webbplatser hanteras i allmänhet av den associerade Microsoft 365-gruppen, men det är inte en dubbelriktad relation. Ändringar av medlemskap på Microsoft 365-gruppnivå återspeglas i SharePoint, men om medlemskapet ändras i SharePoint-gruppen återspeglas inte detta i Microsoft 365-gruppen.
 
-### <a name="user-experiences"></a>Användar upplevelser
+### <a name="user-experiences"></a>Användarupplevelser
 
-Slutanvändare kan skapa grupper från flera tjänster i Microsoft 365, och i andra kan de bara dela med en grupp.
+Slutanvändarna kan skapa grupper från flera av tjänsterna i Microsoft 365 och i andra kan de bara dela med en grupp.
 
-Följande tjänster gör det möjligt att skapa grupper för slutanvändare:
+Följande tjänster gör det möjligt att skapa grupper av slutanvändare:
                          
-Outlook Planner-projekt för webben SharePoint-strömmar Microsoft Teams Yammer
+Outlook Planner-projekt för webben SharePoint Streama Microsoft Teams Yammer
 
-**Begränsning av grupp skapande**
+**Begränsning när grupper skapas**
 
-Ett gemensamt sätt att styra Sprawl är att begränsa vilka användare som kan skapa dem. Detta kan bara göras om du begränsar skapandet av grupper. Detta påverkar möjligheten att skapa grupper från andra tjänster, där det kan vara nödvändigt för slutanvändaren. Microsoft 365-grupper stöder inte möjligheten att begränsa skapande av grupper från vissa appar eller tjänster medan de tillåts från andra.
+En vanlig metod för att styra utstråningen av team är att begränsa vilka användare som kan skapa dem. Det kan bara göras genom att begränsa skapandet av grupper. Det här påverkar möjligheten att skapa grupper från andra tjänster där det kan vara nödvändigt för slutanvändaren. Microsoft 365 Groups stöder inte möjligheten att begränsa skapandet av grupper från vissa appar eller tjänster och samtidigt tillåta det från andra.
 
-Hur grupp skapande begränsas varierar mellan program och tjänster:
+Upplevelsen av att skapa gruppbegränsningar varierar mellan program och tjänster:
 
 
 |App eller tjänst|Upplevelse|
 |:-------------|:---------|
-|Outlook|Alternativet **ny grupp** tas bort från menyn nytt på sidan kontakter|
-|Planner|I den **nya planen** förklaras att grupp skapandet har inaktiverats och att du kan lägga till planen i en befintlig grupp|
-|Projekt för webben och översikt|**Skapa grupp** -menyn förklarar hur grupp skapande är begränsat och föreslår användning av en befintlig grupp.|
-|SharePoint|Du kan fortfarande skapa en grupp webbplats som inte är kopplad till en grupp.|
-|Strömma|Alternativet **gruppera** visas inte under **menyn skapa**.|
-|Teams|Användaren kan inte skapa ett team med en ny grupp, men du kan fortfarande skapa ett team som använder en befintlig grupp.<br><br>Knappen **skapa en grupp** ersätts med **Skapa team från en grupp**.|
-|Yammer|Alternativet **skapa ett grupp namn** tas bort från huvud grupper och grupp navigering.|
+|Outlook|**Alternativet Ny** grupp tas bort från menyn Nytt på sidan Personer|
+|Planner|**Ny plan** förklarar att skapande av grupper har inaktiverats och ger möjlighet att lägga till planen i en befintlig grupp|
+|Project för webben och Översikt|**På menyn Skapa** grupp förklaras att skapandet av grupper är begränsat och föreslår att en befintlig grupp används.|
+|SharePoint|Det går fortfarande att skapa en gruppwebbplats som inte är ansluten till en grupp.|
+|Strömma|**Gruppalternativet** visas inte under **menyn Skapa.**|
+|Teams|Användaren kan inte skapa ett team med en ny grupp men kan fortfarande skapa ett team som använder en befintlig grupp.<br><br>**Knappen Skapa ett team** ersätts med **Skapa team från en grupp.**|
+|Yammer|**Alternativet Skapa en grupp** tas bort från huvudnavigeringen för grupper/communities.|
 
-## <a name="services-interactions-with-groups"></a>Tjänst interaktioner med grupper
+## <a name="services-interactions-with-groups"></a>Interaktion mellan tjänster med grupper
 
-Se grupperna i Microsoft 365-affisch för information om olika typer av grupper, hur de skapas och hanteras och några få rekommendationer.
+Gå till groups i Microsoft 365-affischen för information om olika typer av grupper, hur de skapas och hanteras och några rekommendationer för styrning.
 
 [![Miniatyrbild av infografiken för grupper](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf)
 
 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx)
 
-Följande tabell innehåller en översikt över Microsoft 365-grupper interaktioner med olika tjänster:
+Följande tabell innehåller en översikt över hur Microsoft 365 Groups interagerar med olika tjänster:
 
-|Produkt|Funktioner|Fungerar tjänsten<br>finns utan en grupp?|Kan tjänsten<br>skapa en grupp?|Tar bort<br>instans ta bort gruppen?|
+|Produkt|Funktioner|Gör tjänsten<br>finns det ingen grupp?|Kan tjänsten<br>skapa en grupp?|Tar bort<br>instans ta bort gruppen?|
 |:---|:---|:---|:---|:---|
-|Azure AD|Medlemskap, grupp kontroller, gäster|Ja|Ja|Ja|
-|Exchange|Kalender, post låda|Ja|Ja|Ja|
-|Formulär|Omformning|Ja|Nej|Nej|
-|OneNote|Antecknings bok|Ja|Nej|Nej|
-|Planner|Uppgifts tavla|Nej|Ja|Ja|
-|Power app-appen|Program|Ja|Nej|Nej|
-|Automatisk strömförsörjning|Arbets|Ja|Nej|Nej|
+|Azure AD|Medlemskap, gruppkontroller, gäster|Ja|Ja|Ja|
+|Exchange|Kalender, postlåda|Ja|Ja|Ja|
+|Formulär|Formulär|Ja|Nej|Nej|
+|OneNote|Anteckningsbok|Ja|Nej|Nej|
+|Planner|Uppgiftstavla|Nej|Ja|Ja|
+|Appen Power Apps|Program|Ja|Nej|Nej|
+|Power Automate|Arbetsflöde|Ja|Nej|Nej|
 |Power BI (klassisk)|Workspace|Nej|Ja|Ja|
-|Power BI (ny)|Workspace|Ja|Nej|Ja|
+|Power BI (nytt)|Workspace|Ja|Nej|Ja|
 |Project för webben|Projektplan|Ja|Ja|Nej|
 |Översikt|Översikt|Ja|Ja|Nej|
-|SharePoint|Webbplatsmallar|Ja|Ja|Ja|
+|SharePoint|Webbplats|Ja|Ja|Ja|
 |Strömma|Kanal, video|Ja|Ja|Ja|
-|Teams|Grupp|Nej|Ja|Ja|
+|Teams|Team|Nej|Ja|Ja|
 |Yammer|Grupp|Ja|Ja|Ja|
 
-Medan tabellen ovan tillhandahåller en översikt över grupp samverkan med Microsoft 365-tjänster finns det ett antal Nuances och tag som du bör förstå. Följande avsnitt innehåller en mer ingående titt på de specifika arbets belastningarna och deras interaktioner med grupper.
+I tabellen ovan ges en översikt över gruppinteraktion med Microsoft 365-tjänster, men det finns ett antal nyanser och felaktigheter som du bör förstå. I följande avsnitt får du en mer detaljerad bild av de specifika arbetsbelastningara och deras interaktioner med grupper.
 
 ## <a name="azure-ad"></a>Azure AD
 
-Azure AD tillhandahåller de underliggande funktionerna för identitets hantering i Microsoft 365.
+Azure AD innehåller de underliggande identitetshanteringsfunktionerna i Microsoft 365.
 
-**Viktiga funktioner i grupper**
+**Huvudfunktioner för grupper**
 
-- Grupp medlemskap
-- Namngivnings princip
+- Gruppmedlemskap
+- Namnprincip
 - Förfalloprincip
-- Gäst
-- Begränsning av grupp skapande
+- Gäster
+- Begränsning av skapande av grupp
 
 **Kan Azure AD skapa en grupp?**
 
-Ja, Microsoft 365-grupper kan skapas från Azure AD antingen via administrations webb portalen, via PowerShell eller Graph API.
+Ja, Microsoft 365-grupper kan skapas från Azure AD antingen via administrationswebbportalen, via PowerShell eller Graph API.
 
-**Existerar Azure AD utan en grupp?**
+**Finns Azure AD utan grupp?**
 
-Ja, Azure AD utför ett stort antal tjänster som inte har någon relation till Microsoft 365-grupper. Alla Microsoft 365-grupper representeras som ett objekt i Azure AD.
+Ja, Azure AD utför ett stort antal tjänster som inte har någon relation till Microsoft 365 Groups. Varje Microsoft 365-grupp representeras som ett objekt i Azure AD.
 
 **Kan det finnas flera instanser av Azure AD per grupp?**
 
@@ -155,165 +155,165 @@ Nej, det finns bara en instans av Azure AD.
 
 **Kan Azure AD associeras med flera grupper?**
 
-Ja, eftersom Azure AD är den underliggande plattformen som tillhandahåller grupp medlems tjänsten.
+Ja, eftersom Azure AD är den underliggande plattform som tillhandahåller tjänsten för gruppmedlemskap.
 
-**Kan Azure ADs Association med en grupp ändring?**
+**Kan Azure AD:s koppling till en grupp ändras?**
 
-Nej, Azure AD är den underliggande plattformen där det finns grupper.
+Nej, Azure AD är den underliggande plattformen där grupper finns.
 
-**Tar du bort instansen?**
+**Raderas gruppen om instansen tas bort?**
 
-Om du tar bort gruppen i Azure AD raderas relevanta grupprelaterade tjänster och innehåll.
+Om du tar bort gruppen i Azure AD tas relevanta grupprelaterade tjänster och relevant innehåll bort.
 
 ## <a name="teams"></a>Teams
 
-Teams är en chatt-centrerad arbets yta som syftar till att förbättra samarbetet genom att tillhandahålla ett interaktivt gränssnitt för att interagera med en mängd olika Microsoft-och tredje parts tjänster.
+Teams är en chattcentreerad arbetsyta som förbättrar samarbetet genom att ge ett enda gränssnitt för att interagera med olika Microsoft- och tredjepartstjänster.
 
-När ett team skapas döljs som standard den post låda och kalender som är kopplad till Microsoft 365-gruppen från både den globala adress listan i Exchange och Outlook. Det här kan åsidosättas manuellt av en administratör om användaren vill använda både Outlook och Teams i samma Microsoft 365-grupp.
+När ett team skapas döljs som standard postlådan och kalendern som är kopplad till Microsoft 365-gruppen från både den globala adresslistan i Exchange och Outlook. En administratör kan manuellt åsidosätta detta om användaren vill använda både Outlook och Teams i samma Microsoft 365-grupp.
 
-**Viktiga funktioner i grupper**
+**Huvudfunktioner för grupper**
 
 - Konversationer
 - Kanaler & flikar
-- Tider
+- Möten
 
-**Kan grupper skapa en grupp?**
+**Kan Teams skapa en grupp?**
 
-Ja, skapa ett nytt team skapar en ny Microsoft 365-grupp. Det går också att skapa ett team för en befintlig grupp som för tillfället inte har någon.
+Ja, när du skapar ett nytt team skapas en ny Microsoft 365-grupp. Det går även att skapa ett team för en befintlig grupp som inte har någon för närvarande.
 
-**Existerar Teams utan en grupp?**
+**Finns grupper utan en grupp?**
 
-Nej, det är inte möjligt för ett team att existera utan en grupp.
+Nej, det går inte att ha ett team utan en grupp.
 
 **Kan det finnas flera team per grupp?**
 
 Nej, relationen mellan ett team och en grupp är 1:1.
 
-**Kan ett team vara associerat med flera grupper?**
+**Kan ett team associeras med flera grupper?**
 
-Nej, själva teamet kan bara kopplas till en grupp.
+Nej, själva teamet kan bara associeras med en enda grupp.
 
-**Kan teamets associering med en grupp ändring?**
+**Kan ett teams koppling till en grupp ändras?**
 
-Nej, teamet kan bara vara kopplade till den grupp som den ursprungligen var kopplad till.
+Nej, teamet kan aldrig bara associeras med gruppen som det ursprungligen var kopplat till.
 
-**Tar du bort gruppen?**
+**Raderas gruppen om du tar bort teamet?**
 
-Ja, om du tar bort teamet i Microsoft Teams tas gruppen, de gruppassocierade tjänsterna och innehållet bort.
+Ja, om du tar bort teamet i Microsoft Teams tas gruppen, grupprelaterade tjänster och innehåll bort.
 
 ## <a name="exchange"></a>Exchange
 
-Exchange Online tillhandahåller meddelanden, kalender, kontakter och tillhör ande funktioner. I kontexten för en grupp är det bara en enskild resurs som är kopplad – i motsats till en hel tjänst instans.
+Med Exchange Online får du meddelanden, kalender, kontakter och tillhörande funktioner. Inom en grupp är endast en enda resurs associerad – i motsats till en hel tjänstinstans.
 
-**Viktiga funktioner i grupper**
+**Huvudfunktioner för grupper**
 
-- Post låda och kalender
-- Möjlighet att skicka e-post till alla grupp medlemmar
-- Lagring av Team kanal konversationer för eDiscovery-syften, Planner-kommentarer
+- Postlåda och kalender
+- Möjlighet att skicka e-post till alla gruppmedlemmar
+- Lagring av Teams-kanalkonversationer i eDiscovery-syfte, Planner-kommentarer
 
 **Kan Exchange skapa en grupp?**
 
-Ja, det är möjligt att skapa en grupp från administrations centret för Exchange Online och från Outlook. Du kan också konvertera distributions listor för Exchange till Microsoft 365 Groups.
+Ja, det går att skapa en grupp från administrationscentret för Exchange Online och från Outlook. Du kan också konvertera Exchange-distributionslistor till Microsoft 365-grupper.
 
-**Finns det ingen grupp med Exchange?**
+**Finns Exchange utan grupp?**
 
-Ja, Exchange Online erbjuder ett antal tjänster, inklusive delade post lådor och kalendrar, utan grupp koppling.
+Ja, Exchange Online tillhandahåller ett antal tjänster, inklusive delade postlådor och kalendrar, utan någon gruppassociatorganisation.
 
-**Kan det finnas flera instanser av Exchange-postlådor eller-kalendrar per grupp?**
+**Kan det finnas flera instanser av Exchange-postlådor eller -kalendrar per grupp?**
 
-Nej, det kan bara finnas en Exchange Online-postlåda och kalender för en grupp.
+Nej, det kan bara finnas en enda Exchange Online-postlåda och kalender för en grupp.
 
-**Kan Exchange-postlådor och-kalendrar associeras med flera grupper?**
+**Kan Exchange-postlådor och -kalendrar associeras med flera grupper?**
 
-Nej, post lådan och kalendern har en 1:1-relation med gruppen. Det går att dela post lådan med andra användare eller grupper, men detta utgör ingen form av tjänst koppling.
+Nej, postlådan och kalendern har en 1:1-relation med gruppen. Det går att dela postlådan med andra användare eller grupper, men det skapar ingen form av tjänstassociating.
 
-**Kan Exchange-postlådan eller kalenderns associering med en grupp ändring?**
+**Kan Exchange-postlådan eller kalenderns koppling till en grupp ändras?**
 
-Nej, post lådan och kalendern kan inte ändras till en annan grupp. Innehållet kan dock flyttas från en post låda till en annan i Outlook eller med hjälp av ett verktyg från tredje part.
+Nej, postlådan och kalendern kan inte ändras till en annan grupp. Innehållet kan dock flyttas från en postlåda till en annan i Outlook eller med hjälp av ett verktyg från tredje part.
 
-**Tar du bort gruppen?**
+**Tas gruppen bort när du tar bort postlådan?**
 
-Ja, om du tar bort post lådan i Exchange tas gruppen bort samt gruppassocierade tjänster och innehåll.
+Ja, om du tar bort postlådan i Exchange tas gruppen samt grupprelaterade tjänster och innehåll bort.
 
 ## <a name="forms"></a>Formulär
 
-Formulär ger webbaserade undersökningar och test.
+Forms tillhandahåller webbaserade undersökningar och test.
 
-**Viktiga funktioner i grupper**
+**Huvudfunktioner för grupper**
 
-- Ägandes Kap för formulär
+- Äganderätt till formulär
 
 **Kan formulär skapa en grupp?**
 
-Nej, det går inte att skapa en grupp.
+Nej, Formulär kan inte skapa en grupp.
 
-**Finns det någon som inte är en grupp?**
+**Finns formulär utan grupp?**
 
-Ja, undersökningar och test kan skapas direkt i ett slutanvändares konto.
+Ja, undersökningar och test kan skapas direkt i en slutanvändares konto.
 
-**Kan det finnas flera former per grupp?**
+**Kan det finnas flera formulär per grupp?**
 
 Ja, det kan finnas flera formulär kopplade till en grupp.
 
-**Kan formulär vara kopplade till flera grupper?**
+**Kan formulär kopplas till flera grupper?**
 
-Nej, ett formulär kan bara kopplas till en grupp.
+Nej, ett formulär kan bara associeras med en enda grupp.
 
-**Kan ett formulärs koppling till en grupp ändring?**
+**Kan ett formulärs koppling till en grupp ändras?**
 
-Nej, när ett formulär är associerat med en grupp (antingen direkt i eller ägarskap från en person) kan den inte flyttas till en annan grupp.
+Nej, när ett formulär är kopplat till en grupp (skapas direkt i, eller ägarskap som överförs från en enskild person) kan det inte flyttas till en annan grupp.
 
-**Tar du bort gruppen?**
+**Tas gruppen bort när du tar bort formuläret?**
 
-Nej, det går inte att ta bort en grupp från formulär gränssnittet, endast enskilda formulär.
+Nej, det går inte att ta bort en grupp från Forms-gränssnittet, bara enskilda formulär.
 
 ## <a name="onenote"></a>OneNote
 
-OneNote är en digital antecknings bok. Den OneNote-anteckningsbok som har skapats med en grupp är en fil på den associerade SharePoint-webbplatsen och inte i en gruppansluten tjänst.
+OneNote är ett digitalt anteckningsboksprogram. OneNote-anteckningsboken som skapats med en grupp är en fil på den associerade SharePoint-webbplatsen i stället för en gruppansluten tjänst.
 
-**Viktiga funktioner i grupper**
+**Huvudfunktioner för grupper**
 
-- Delad antecknings bok (lagrad i det gruppassocierade SharePoint-biblioteket)
+- Delad anteckningsbok (lagrad i det grupprelaterade SharePoint-biblioteket)
 
 **Kan OneNote skapa en grupp?**
 
 Nej, OneNote-programmet kan inte skapa en grupp.
 
-**Finns det ingen grupp med OneNote-anteckningsböcker?**
+**Finns OneNote-anteckningsböcker utan grupp?**
 
-Ja, antecknings böcker kan skapas direkt i OneDrive eller på andra delade platser.
+Ja, anteckningsböcker kan skapas direkt på OneDrive eller på andra delade platser.
 
 **Kan det finnas flera OneNote-anteckningsböcker per grupp?**
 
-Ja, en antecknings bok skapas som standard och andra kan läggas till, men alla länkar till OneNote från gruppassocierade tjänster kommer alltid till standard antecknings boken.
+Ja, en anteckningsbok skapas som standard och andra kan läggas till, men länkar till OneNote från grupprelaterade tjänster går alltid till standardanteckningsboken.
 
-**Kan en OneNote-anteckningsbok vara kopplad till flera grupper?**
+**Kan en OneNote-anteckningsbok associeras med flera grupper?**
 
-Nej, antecknings boken är lagrad i det gruppassocierade SharePoint-biblioteket och länkad från olika gränssnitt. Den kan delas med andra grupper på samma sätt som den kan delas med enskilda personer.
+Nej, anteckningsboken lagras i det grupprelaterade SharePoint-webbplatsbiblioteket och länkas från olika gränssnitt. Men den kan delas med andra grupper på samma sätt som den kan delas med enskilda personer.
 
-**Kan antecknings bokens förening med en grupp ändring?**
+**Kan anteckningsbokens koppling till en grupp ändras?**
 
-Nej, antecknings boken är kopplad till gruppen och kan kommas åt direkt från andra grupp anslutna tjänster, men innehållet kan flyttas från en antecknings bok till en annan i OneNote-programmet.
+Nej, själva anteckningsboken är kopplad till gruppen och kan kommas åt direkt från andra gruppanslutna tjänster, men innehållet kan flyttas från en anteckningsbok till en annan i OneNote-programmet.
 
-**Tar du bort gruppen?**
+**Tas gruppen bort när du tar bort anteckningsboken?**
 
-Nej, om du har tagit bort OneNote-anteckningsboken kan det finnas felaktiga länkar i vissa av de gruppassocierade tjänsterna.
+Nej, men om OneNote-anteckningsboken tas bort kan det finnas brutna länkar i vissa grupprelaterade tjänster.
 
 ## <a name="planner"></a>Planner
 
-Planner är en lättviktig tjänst för aktivitets hantering.
+Planner är en enkel tjänst för uppgiftshantering för grupper.
 
-**Viktiga funktioner i grupper**
+**Huvudfunktioner för grupper**
 
-- Anslags tavla för att hantera grupp aktiviteter
+- Tavla för hantering av gruppuppgifter
 
 **Kan Planner skapa en grupp?**
 
-Ja, skapandet av en plan skapar en ny grupp.
+Ja, när du skapar en plan skapas en ny grupp.
 
-**Finns det en Planner-tavla utan grupp?**
+**Finns det en Planner-tavla utan en grupp?**
 
-Nej, en plan måste kopplas till en grupp.
+Nej, en plan måste vara kopplad till en grupp.
 
 **Kan det finnas flera planer per grupp?**
 
@@ -321,308 +321,308 @@ Ja, det kan finnas flera planer per grupp.
 
 **Kan en plan associeras med flera grupper?**
 
-Nej, en plan är bara avsedd för grupp medlemskap för att fastställa åtkomst.
+Nej, en plan förlitar sig enbart på gruppmedlemskapet för att avgöra åtkomsten.
 
-**Kan en plans förening med en grupp ändring?**
+**Kan en plans koppling till en grupp ändras?**
 
-Nej, om du kopierar en plan skapas en ny grupp.
+Nej, men när en plan kopieras skapas en ny grupp.
 
 > [!NOTE]
-> En grupp som skapats i ett annat program visas inte i Planner automatiskt för en användare. För att få åtkomst till anslags tavlan måste de öppna den från ett annat gruppbaserade gränssnitt, till exempel Outlook.
+> En grupp som har skapats av ett annat program visas inte automatiskt i Planner för en användare. För att komma åt tavlan först måste de öppna den från ett annat gruppbaserat gränssnitt, till exempel Outlook.
 
-**Tar du bort gruppen?**
+**Tas gruppen bort när planen tas bort?**
 
-Ja, om du tar bort planen raderas gruppen och tillhör ande gruppassocierade tjänster och innehåll.
+Ja, om du tar bort planen tas gruppen och grupprelaterade tjänster och innehåll bort.
 
 ## <a name="power-apps"></a>Power Apps
 
-Power Apps ger en arbets yta för program utveckling utan kod.
+Med Power Apps finns en arbetsyta för programutveckling utan kod.
 
-**Viktiga funktioner i grupper**
+**Huvudfunktioner för grupper**
 
 - Appar kan delas med en grupp som ska köras och ändras
 
-**Kan Power Apps skapa en grupp?**
+**Kan Power-appar skapa en grupp?**
 
-Nej, Power app kan inte skapa en Microsoft 365-grupp.
+Nej, Power Apps kan inte skapa en Microsoft 365-grupp.
 
-**Finns det några Power Apps utan en grupp?**
+**Finns Power Apps utan grupp?**
 
-Ja, appar kan skapas i Power app och lagras i det här kontot i Creator innan de delas eller publiceras.
+Ja, appar kan skapas i Power-appar och finnas i creators-kontot tills de delas eller publiceras.
 
-**Kan det finnas flera program per grupp?**
+**Kan det finnas flera appar per grupp?**
 
 Ja, det kan finnas flera program som delas med en grupp.
 
-**Kan appar vara kopplade till flera grupper?**
+**Kan appar kopplas till flera grupper?**
 
 Ja, en app kan delas med flera grupper.
 
-**Kan ett program associeras med en grupp ändring?**
+**Kan en apps koppling till en grupp ändras?**
 
-Ja, eftersom kopplingen mellan Power Apps och en Microsoft 365-grupp endast är gemensam – programmet finns fortfarande kvar med skaparen.
+Ja, eftersom kopplingen mellan Power Apps och en Microsoft 365-grupp bara delas – appen finns fortfarande kvar hos skaparen.
 
 > [!IMPORTANT]
-> [Grupper måste aktive ras innan appar kan delas med dem](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app#share-an-app-with-office-365-groups).
+> [Grupper måste vara säkerhetsaktiverade innan appar kan delas med dem.](/powerapps/maker/canvas-apps/share-app#share-an-app-with-office-365-groups)
 
-**Tar du bort gruppen?**
+**Raderas gruppen om du tar bort programmet?**
 
-Nej, programmen är inte anslutna till den andra gruppen än de som delas med dem.
+Nej, apparna är inte kopplade till den andra gruppen än den som delas med dem.
 
-## <a name="power-automate"></a>Automatisk strömförsörjning
+## <a name="power-automate"></a>Power Automate
 
-Power Automation (tidigare Microsoft-flöde) tillhandahåller arbets flöden och automatiserings tjänster.
+Med Power Automate (tidigare Microsoft Flow) får du arbetsflöden och automatiseringstjänster.
 
-**Viktiga funktioner i grupper**
+**Huvudfunktioner för grupper**
 
-- Arbets flöden kan delas med en grupp för att köras och ändras.
+- Arbetsflöden kan delas med en grupp som ska köras och ändras.
 
-**Kan automatisk start skapa en grupp?**
+**Kan Power Automate skapa en grupp?**
 
-Nej, Power autoautomatisera kan inte skapa en Microsoft 365-grupp i kontexten för att vara associerad med en.
+Nej, Power Automate kan inte skapa en Microsoft 365-grupp när den är kopplad till en.
 
-Det är möjligt att skapa ett flöde som utför olika operationer, till exempel att skapa en Azure AD-säkerhetsgrupp eller uppdatera medlemskap för en Microsoft 365-grupp.
+Det går dock att skapa ett flöde som utför olika åtgärder, till exempel skapa en Azure AD-säkerhetsgrupp eller uppdatera medlemskap i en Microsoft 365-grupp.
 
-**Finns det fler än en grupp?**
+**Finns flöden utan grupp?**
 
-Ja, flöden kan skapas i Power automatisering och lagras i det här kontot i Creator innan de delas eller publiceras.
+Ja, flöden kan skapas i Power Automate och finnas i creators-kontot tills de delas eller publiceras.
 
 **Kan det finnas flera flöden per grupp?**
 
 Ja, det kan finnas flera flöden som delas med en grupp.
 
-**Kan ett flöde kopplas till flera grupper?**
+**Kan ett flöde associeras med flera grupper?**
 
 Ja, ett flöde kan delas med flera grupper.
 
-**Kan flödet kopplas till en grupp?**
+**Kan ett flödes koppling till en grupp ändras?**
 
-Ja, eftersom kopplingen mellan Power automatisering och en Microsoft 365-grupp endast är gemensam – flödet finns fortfarande kvar med skaparen.
+Ja, eftersom kopplingen mellan Power Automate och en Microsoft 365-grupp bara delas , finns flödet fortfarande kvar hos skaparen.
 
-**Tar du bort en grupp?**
+**Tas gruppen bort när du tar bort ett flöde?**
 
-Nej, som Power app, är inte flödena anslutna till den andra gruppen än de som delas med dem.
+Nej, precis som i Power Apps är flödena inte anslutna till den andra gruppen än den som delas med dem.
 
 ## <a name="power-bi-classic"></a>Power BI (klassisk)
 
-Power BI tillhandahåller interaktiva data-drivna instrument paneler och rapporter.
+Power BI tillhandahåller interaktiva datadrivna instrumentpaneler och rapporter.
 
-**Viktiga funktioner i grupper**
+**Huvudfunktioner för grupper**
 
-- Data rapportering
+- Datarapportering
 
 **Kan Power BI skapa en grupp?**
 
-Om du skapar en klassisk arbets yta skapas en Microsoft 365-grupp.
+Ja, när du skapar en klassisk arbetsyta skapas en Microsoft 365-grupp.
 
-**Finns det en klassisk Power BI-arbetsyta utan en grupp?**
+**Finns det en klassisk arbetsyta i Power BI utan en grupp?**
 
-Nej, [en klassisk arbets yta i Power BI måste kopplas till en grupp](https://docs.microsoft.com/power-bi/collaborate-share/service-collaborate-power-bi-workspace).
+Nej, [en klassisk arbetsyta i Power BI måste vara kopplad till en grupp](/power-bi/collaborate-share/service-collaborate-power-bi-workspace).
 
 **Kan det finnas flera Power BI-arbetsytor per grupp?**
 
-Nej, relationen mellan en klassisk arbets yta och en grupp är 1:1.
+Nej, relationen mellan en klassisk arbetsyta och en grupp är 1:1.
 
-**Kan en arbets yta vara kopplad till flera grupper?**
+**Kan en arbetsyta kopplas till flera grupper?**
 
-Tekniskt Nej, när den klassiska arbets ytan skapas med gruppen kan innehållet delas utanför gruppen med användare och säkerhets grupper.
+Tekniskt sett är det inget, men när den klassiska arbetsytan skapas med gruppen kan innehållet delas utanför gruppen med användare och säkerhetsgrupper.
 
-**Kan arbets ytans koppling till en grupp ändring?**
+**Kan arbetsytans koppling till en grupp ändras?**
 
-Nej, den klassiska arbets ytan är kopplad till gruppen, men innehållet kan flyttas från en arbets yta till en annan inom Power BI-gränssnittet eller genom att exportera innehåll lokalt.
+Nej, den klassiska arbetsytan är kopplad till gruppen, men innehållet kan flyttas från en arbetsyta till en annan i Power BI-gränssnittet eller genom att exportera innehåll lokalt.
 
-**Tar du bort gruppen?**
+**Tas gruppen bort när du tar bort arbetsytan?**
 
-Ja, om du tar bort arbets ytan i Power BI tas grupp-och gruppassocierade tjänster och innehåll bort.
+Ja, om du tar bort arbetsytan i Power BI tas grupp- och grupprelaterade tjänster och innehåll bort.
 
-## <a name="power-bi-new"></a>Power BI (ny)
+## <a name="power-bi-new"></a>Power BI (nytt)
 
-Power BI tillhandahåller interaktiva data-drivna instrument paneler och rapporter.
+Power BI tillhandahåller interaktiva datadrivna instrumentpaneler och rapporter.
 
-När du skapar en ny arbets yta i Power BI skapar inte en Microsoft 365-grupp, vilket skapar en ny grupp (inte klassisk) i Power BI.
+När du skapar en ny arbetsyta i Power BI skapas inte en Microsoft 365-grupp, och om du skapar en grupp på något annat sätt skapas en ny (inte klassisk) arbetsyta i Power BI.
 
-**Viktiga funktioner i grupper**
+**Huvudfunktioner för grupper**
 
-- Data rapportering
+- Datarapportering
 
 **Kan Power BI skapa en grupp?**
 
 Nej, det går inte att skapa en Microsoft 365-grupp från det nya Power BI-gränssnittet.
 
-**Finns den nya Power BI-arbetsytan utan grupp?**
+**Finns den nya Power BI-arbetsytan utan en grupp?**
 
-Ja, det är möjligt att ha rapporter och arbets ytor som har skapats i Power BI och som inte är kopplade till Microsoft 365 Groups.
+Ja, det går att skapa rapporter och arbetsytor i Power BI som inte är kopplade till Microsoft 365-grupper.
 
-**Kan det finnas flera arbets ytor per grupp?**
+**Kan det finnas flera arbetsytor per grupp?**
 
-Ja, [flera arbets ytor som skapas av Power BI kan delas med en enda grupp](https://docs.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces#give-access-to-your-workspace).
+Ja, [flera arbetsytor som skapas av Power BI kan delas med en enda grupp](/power-bi/collaborate-share/service-create-the-new-workspaces#give-access-to-your-workspace).
 
-**Kan en arbets yta vara kopplad till flera grupper?**
+**Kan en arbetsyta kopplas till flera grupper?**
 
-Nej, en arbets yta som har skapats i Power BI kan bara kopplas till en enda grupp.
+Nej, en arbetsyta som skapas av Power BI kan bara associeras med en enda grupp.
 
-**Kan en arbets yta ha en koppling till en grupp ändring?**
+**Kan en arbetsytas koppling till en grupp ändras?**
 
-Ja och nej. En arbets yta som har skapats i Power BI kan bara kopplas till en enskild grupp åt gången men kan ändra associeringen när som helst. En arbets yta som har skapats i Power BI av en grupp är permanent kopplad till gruppen.
+Ja och nej. Arbetsytor som skapas i Power BI kan bara associeras med en enda grupp åt gången, men du kan när som helst ändra kopplingen. En arbetsyta som skapats i Power BI av en grupp är permanent kopplad till den gruppen.
 
-**Tar du bort gruppen?**
+**Tas gruppen bort när du tar bort arbetsytan?**
 
-Ja, om du tar bort arbets ytan i Power BI tas grupp-och gruppassocierade tjänster och innehåll bort.
+Ja, om du tar bort arbetsytan i Power BI tas gruppen och grupprelaterade tjänster och innehåll bort.
 
 ## <a name="project-for-the-web"></a>Project för webben
 
-Project för webben ger möjlighet att skapa projektplaner, Gantt-scheman och översikter.
-Viktiga funktioner i grupper.
+Med Project för webben kan du skapa projektplaner, Gantt-diagram och översikter.
+Huvudfunktioner för grupper.
 
 - Projektplaner
 
-**Kan Project skapa en grupp?**
+**Kan Project för webben skapa en grupp?**
 
-Ja, det är möjligt att skapa en ny Microsoft 365-grupp direkt från Project för webben.
+Ja, det går att skapa en ny Microsoft 365-grupp direkt från Project för webben.
 
-**Existerar projekt utan en grupp?**
+**Finns det projekt utan en grupp?**
 
-Ja, projekt kan existera utan att vara kopplade till en Microsoft 365-grupp, men tilldelning av uppgifter kräver grupp koppling.
+Ja, projekt kan finnas utan att vara kopplade till en Microsoft 365-grupp, men tilldelning av uppgifter kräver gruppassociat koppling.
 
 **Kan det finnas flera projekt per grupp?**
 
-Ja, det går att koppla ihop flera projekt i en och samma grupp.
+Ja, det går att ansluta flera projekt i en enda grupp.
 
-**Kan Project associeras med flera grupper?**
+**Kan projektet associeras med flera grupper?**
 
-Nej, ett projekt kan bara kopplas till en grupp.
+Nej, ett projekt kan bara associeras med en enda grupp.
 
-**Kan ett projekts associering med en grupp ändring?**
+**Kan ett projekts koppling till en grupp ändras?**
 
-Nej, när kopplingen med en grupp har upprättats kan den inte ändras.
+Nej, när kopplingen till en grupp har upprättats kan den inte ändras.
 
-**Tar du bort gruppen?**
+**Tas gruppen bort när du tar bort projektet?**
 
-Nej, om du tar bort projektet i Project för webben raderas inte gruppen.
+Nej, gruppen tas inte bort om du tar bort projektet i Project för webben.
 
 ## <a name="roadmap"></a>Översikt
 
-Med översikt kan du skapa projekt översikter med Project för webben och Project Online.
+Översikt ger möjlighet att skapa projektöversikter med Project för webben och Project Online.
 
-**Viktiga funktioner i grupper**
+**Huvudfunktioner för grupper**
 
-- Projekt översikter
+- Project-översikter
 
-**Kan du skapa en grupp?**
+**Kan Översikt skapa en grupp?**
 
-Ja, det är möjligt att skapa en ny Microsoft 365-grupp direkt från översikten.
+Ja, det går att skapa en ny Microsoft 365-grupp direkt från översikten.
 
-**Finns det ingen grupp i översikten?**
+**Finns Översikt utan grupp?**
 
-Ja, planerna kan existera utan att vara kopplade till en Microsoft 365-grupp, men det krävs grupp koppling för att dela översikten.
+Ja, det kan finnas översikter utan att vara kopplade till en Microsoft 365-grupp, men delning av översikten kräver gruppanslutning.
 
 **Kan det finnas flera översikter per grupp?**
 
 Ja, det går att ansluta flera översikter till en enda grupp.
 
-**Kan en översikt vara kopplad till flera grupper?**
+**Kan en översikt associeras med flera grupper?**
 
-Nej, en översikt kan bara kopplas till en grupp.
+Nej, en översikt kan bara associeras med en enda grupp.
 
-**Går det att göra en översikt över en grupp?**
+**Kan en översiktsorganisation med en grupp ändras?**
 
-Nej, när kopplingen med en grupp har upprättats kan den inte ändras.
+Nej, när kopplingen till en grupp har upprättats kan den inte ändras.
 
-**Tar du bort gruppen?**
+**Tas gruppen bort när du tar bort översikten?**
 
-Nej, det tar inte bort gruppen om du tar bort översikten.
+Nej, gruppen tas inte bort när du tar bort översikten.
 
 ## <a name="sharepoint"></a>SharePoint
 
-SharePoint är en webbaserad innehålls hanterings plattform som tillhandahåller bland annat lagrings tjänster för ett antal Microsoft 365-tjänster.
+SharePoint är en webbaserad innehållshanteringsplattform som tillhandahåller bland annat lagringstjänster för ett antal Microsoft 365-tjänster.
 
-**Viktiga funktioner i grupper**
+**Huvudfunktioner för grupper**
 
-- Dokument bibliotek
+- Dokumentbibliotek
 - Bibliotek för lagring av OneNote-anteckningsbok
-- Lagring av Teams-wiki-filer
+- Lagring av Wiki-filer i Teams
 
 **Kan SharePoint skapa en grupp?**
 
-Ja, när du skapar en grupp webbplats i SharePoint skapas en Microsoft 365-grupp som standard. Det går också att skapa en grupp och, om du vill, ett team för en befintlig webbplats.
+Ja, en Microsoft 365-grupp skapas som standard när du skapar en gruppwebbplats i SharePoint. Det går även att skapa en grupp och, om du vill, ett team för en befintlig webbplats.
 
-**Finns det ingen grupp med SharePoint-webbplatser?**
+**Finns SharePoint-webbplatser utan grupp?**
 
-Ja, SharePoint erbjuder ett antal icke-gruppassocierade tjänster och webbplatser som kommunikations-och nav webbplatser. 
+Ja, SharePoint erbjuder ett antal icke-grupprelaterade tjänster och webbplatser, till exempel kommunikations- och navplatser. 
 
 **Kan det finnas flera webbplatser per grupp?**
 
-Nej, det kan bara finnas en webbplats per grupp. Privata kanaler i Teams använder ytterligare webbplatser som inte är anslutna till gruppen.
+Nej, det kan bara finnas en webbplats per grupp. Privata kanaler i Teams använder ytterligare webbplatser som inte är kopplade till gruppen.
 
-**Kan webbplatser vara kopplade till flera grupper?**
+**Kan webbplatser kopplas till flera grupper?**
 
-Tekniskt Nej, men när en webbplats skapas med en grupp kan innehållet delas med andra grupper.
+Tekniskt sett är det inget, men när en webbplats skapas med en grupp kan innehållet delas med andra grupper.
 
-**Kan en webbplats ha en koppling till en grupp ändring?**
+**Kan en webbplats koppling till en grupp ändras?**
 
-Nej, själva webbplatsen är kopplad till gruppen, men innehållet kan flyttas från en webbplats till en annan inom SharePoint-gränssnittet genom att exportera innehåll lokalt eller med hjälp av ett verktyg från tredje part.
+Nej, själva webbplatsen är kopplad till gruppen, men innehållet kan flyttas från en webbplats till en annan i SharePoint-gränssnittet, genom att exportera innehåll lokalt eller med hjälp av ett verktyg från tredje part.
 
-**Tar du bort gruppen?**
+**Raderas gruppen om du tar bort webbplatsen?**
 
-Ja, om du tar bort webbplatsen i SharePoint tas grupp-och gruppassocierade tjänster bort.
+Ja, om du tar bort webbplatsen i SharePoint tas grupp- och grupprelaterade tjänster och innehåll bort.
 
 ## <a name="stream"></a>Strömma
 
-Microsoft Stream är en video värd-och delnings plattform.
+Microsoft Stream är en videovärd och delningsplattform.
 
-**Viktiga funktioner i grupper**
+**Huvudfunktioner för grupper**
 
-- Video lagring
+- Videolagring
 - Inspelning av Teams-möte
-- Video kanaler
+- Videokanaler
 
-**Kan strömmar skapa en grupp?**
+**Kan Stream skapa en grupp?**
 
-Ja, det är möjligt att skapa en ny Microsoft 365-grupp direkt från strömmen.
+Ja, det går att skapa en ny Microsoft 365-grupp direkt från Stream.
 
-**Finns det en ström utan grupp?**
+**Finns Stream utan en grupp?**
 
-Ja, video kanaler och videor kan finnas i ström utan att vara kopplade till en grupp.
+Ja, videokanaler och videor kan finnas i Stream utan att vara kopplade till en grupp.
 
 **Kan det finnas flera videor och kanaler per grupp?**
 
 Ja, det kan finnas flera videor och kanaler i varje grupp.
 
-**Kan en video eller kanal kopplas till flera grupper?**
+**Kan en video eller kanal associeras med flera grupper?**
 
 Ja, medan en video eller kanal skapas med en grupp kan den delas med andra grupper.
 
 **Kan kopplingen till en grupp ändras?**
 
-Ja och nej; videor i strömmen ägs av den ursprungliga avladdaren eller Mötes inspelningen och kan kopplas till alla grupper, men video kanaler kan bara kopplas till den grupp de ursprungligen skapades i.
+Ja och nej. Videor i Stream ägs av den ursprungliga uppladdaren eller mötesinspelaren och kan därför kopplas till valfri grupp, men videokanaler kan bara kopplas till gruppen de ursprungligen skapades i.
 
-**Tar du bort en grupp?**
+**Tas gruppen bort när du tar bort videor eller kanaler?**
 
-Nej, det tar inte bort gruppen om du tar bort videoklipp eller kanaler. Om du tar bort själva gruppen i strömmen tas gruppassocierade tjänster och innehåll bort, förutom själva videoklippen.
+Nej, gruppen tas inte bort när du tar bort videor eller kanaler. Men om du tar bort själva gruppen i Stream tas grupprelaterade tjänster och innehåll bort, förutom själva videoklippen.
 
 ## <a name="yammer"></a>Yammer
 
-Yammer är en social plattform för företag som är utformad för att kunna främja community-engagemang inom och mellan organisationer.
+Yammer är en social plattform för företag som utformats för att främja community-engagemang inom och mellan organisationer.
 
-Om du skapar en community (tidigare "grupp") i Yammer skapas en post låda, men för närvarande används inte detta.
+När du skapar en community (kallades tidigare "grupp") i Yammer skapas en postlåda, men detta används för närvarande inte.
 
-En Microsoft 365-grupp som är kopplad till Yammer kan inte användas med ett team i Microsoft Teams.
+En Microsoft 365-grupp som är associerad med Yammer kan inte användas med ett team i Microsoft Teams.
 
-**Viktiga funktioner i grupper**
+**Huvudfunktioner för grupper**
 
-- Konversations område
+- Konversationsområdet
 
 **Kan Yammer skapa en Microsoft 365-grupp?**
 
 Ja, om du skapar en ny grupp i Yammer skapas en ny Microsoft 365-grupp, om plattformarna är anslutna och användaren har möjlighet att skapa en grupp.
 
-Det går inte att skapa en Yammer-grupp med tillhör ande Microsoft 365-grupp i gränssnitt och tjänster som inte är i Yammer.
+Du kan inte skapa en Yammer-grupp med tillhörande Microsoft 365-grupp i något gränssnitt eller någon annan tjänst än själva Yammer.
 
-**Finns det en Yammer-grupp utan en Microsoft 365-grupp?**
+**Finns det en Yammer-grupp utan Microsoft 365-grupp?**
 
-Ja, det är möjligt att skapa en Yammer-grupp utan en Microsoft 365-grupp.
+Ja, det går att skapa en Yammer-grupp utan en Microsoft 365-grupp.
 
-Om Yammer-plattformen inte är ansluten till Microsoft 365-grupper, eller om användare inte har möjlighet att skapa en Microsoft 365-grupp, skapas Yammer-grupper utan Microsoft 365-gruppkoppling.
+Om Yammer-plattformen inte är ansluten till Microsoft 365-grupper eller om användarna inte kan skapa en Microsoft 365-grupp skapas Yammer-grupper utan någon Microsoft 365-gruppassociatorganisation.
 
 **Kan det finnas flera Yammer-grupper per Microsoft 365-grupp?**
 
@@ -630,19 +630,18 @@ Nej, relationen mellan en Yammer-grupp och en Microsoft 365-grupp är 1:1.
 
 **Kan en Yammer-grupp associeras med flera Microsoft 365-grupper?**
 
-Nej, Yammer-gruppen kan bara kopplas till en enda Microsoft 365-grupp. Det är möjligt att inlägg delas med eller flyttas till andra Yammer-grupper.
+Nej, Yammer-gruppen kan bara associeras med en enda Microsoft 365-grupp. Inlägg kan delas med eller flyttas till andra Yammer-grupper.
 
 **Kan en Yammer-grupps koppling till en Microsoft 365-grupp ändras?**
 
-Nej, Yammer-gruppen kan bara associeras med den Microsoft 365-grupp som den ursprungligen var kopplad till.
+Nej, Yammer-gruppen kan aldrig associeras med den Microsoft 365-grupp den ursprungligen var kopplad till.
 
-**Tar du bort Yammer-gruppen ta bort gruppen Microsoft 365?**
+**Tas Microsoft 365-gruppen bort när du tar bort Yammer-gruppen?**
 
-Ja, om du tar bort gruppen i Yammer tas tillhör ande Microsoft-grupper och gruppassocierade tjänster och innehåll bort.
+Ja, om du tar bort gruppen i Yammer tas relaterade Microsoft-grupper och grupprelaterade tjänster och tillhörande innehåll bort.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Planerings steg-för-steg-samarbete för samarbets styrning](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Planering av samarbetsstyrning steg för steg](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[Skapa en plan för hantering av samarbete](collaboration-governance-first.md)
-
+[Skapa din plan för samarbetesstyrning](collaboration-governance-first.md)

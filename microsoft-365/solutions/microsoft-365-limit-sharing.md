@@ -19,12 +19,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Lär dig mer om olika alternativ för att begränsa eller inaktivera delning i Microsoft 365.
-ms.openlocfilehash: 388d354886805f593b1c7815f16d1e0156e12fe0
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 46cef1aac6d3387366a5e8ce9f9c1129f6c83e61
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233536"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920210"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Begränsa delning i Microsoft 365
 
@@ -45,9 +45,9 @@ Olika metoder för att dela filer visas i tabellen nedan. Klicka på länken i k
 
 Du kan också begränsa under vilka förhållanden folk kommer åt delat innehåll. Mer information finns i [villkorlig åtkomst](#conditional-access) senare i den här artikeln.
 
-Du kan använda de administratörskontroller som beskrivs i den här artikeln för att begränsa delning i organisationen, men vi rekommenderar att du använder de funktioner för säkerhet och efterlevnad som finns i Microsoft 365 för att skapa en säker delningsmiljö. Mer information finns i [Filsamarbete i SharePoint med Microsoft 365](https://docs.microsoft.com/sharepoint/deploy-file-collaboration) och [Konfigurera en team med säkerhetsisolering](secure-teams-security-isolation.md).
+Du kan använda de administratörskontroller som beskrivs i den här artikeln för att begränsa delning i organisationen, men vi rekommenderar att du använder de funktioner för säkerhet och efterlevnad som finns i Microsoft 365 för att skapa en säker delningsmiljö. Mer information finns i [Filsamarbete i SharePoint med Microsoft 365](/sharepoint/deploy-file-collaboration) och [Konfigurera en team med säkerhetsisolering](secure-teams-security-isolation.md).
 
-Om du vill förstå hur delning används i organisationen [kör du en rapport om fil- och mappdelning](https://docs.microsoft.com/sharepoint/sharing-reports).
+Om du vill förstå hur delning används i organisationen [kör du en rapport om fil- och mappdelning](/sharepoint/sharing-reports).
 
 ## <a name="microsoft-365-group-or-team"></a>Microsoft 365-grupp eller team
 
@@ -73,9 +73,9 @@ Inaktivera gästdelning i Microsoft 365-grupper
     ![Skärmbild av delningsinställningarna för Microsoft 365-grupper i administrationscentret för Microsoft 365](../media/office-365-groups-guest-settings-off.png)
 
 > [!NOTE]
-> Om du vill förhindra gästdelning för en viss grupp eller team kan du göra det med [Microsoft PowerShell](per-group-guest-access.md) eller [känslighetsetiketter](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+> Om du vill förhindra gästdelning för en viss grupp eller team kan du göra det med [Microsoft PowerShell](per-group-guest-access.md) eller [känslighetsetiketter](../compliance/sensitivity-labels-teams-groups-sites.md).
 
-Du kan begränsa gästdelning till användare från vissa domäner genom att tillåta eller blockera domäner i Azure Active Directory. Detta påverkar även gästdelning i SharePoint om du har aktiverat [SharePoint- och OneDrive-integrering med Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
+Du kan begränsa gästdelning till användare från vissa domäner genom att tillåta eller blockera domäner i Azure Active Directory. Detta påverkar även gästdelning i SharePoint om du har aktiverat [SharePoint- och OneDrive-integrering med Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview).
 
 Tillåta delningsinbjudningar endast från angivna domäner
 1. Gå till sidan Översikt i Azure Active Directory och klicka på **Organisationsrelationer**.
@@ -118,11 +118,11 @@ Begränsa webbplatsdelning per domän
 
 ### <a name="block-access-to-a-site"></a>Blockera åtkomst till en webbplats
 
-Du kan blockera åtkomst till en webbplats eller skrivskydda en webbplats genom att ändra webbplatsens låstillstånd. Mer information finns i [Låsa och låsa upp webbplatser](https://docs.microsoft.com/sharepoint/manage-lock-status).
+Du kan blockera åtkomst till en webbplats eller skrivskydda en webbplats genom att ändra webbplatsens låstillstånd. Mer information finns i [Låsa och låsa upp webbplatser](/sharepoint/manage-lock-status).
 
 ### <a name="permissions-inheritance"></a>Behörighetsarv
 
-Även om det inte rekommenderas, kan du använda [SharePoint behörighetsarv](https://docs.microsoft.com/sharepoint/what-is-permissions-inheritance) för att anpassa åtkomstnivåer för webbplatser och underwebbplatser.
+Även om det inte rekommenderas, kan du använda [SharePoint behörighetsarv](/sharepoint/what-is-permissions-inheritance) för att anpassa åtkomstnivåer för webbplatser och underwebbplatser.
 
 ## <a name="sharing-with-specific-people"></a>Dela med vissa personer
 
@@ -193,15 +193,15 @@ Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingL
 
 Som standard kan användare skapa nya webbplatser, grupper och teams som de kan använda för att dela innehåll (beroende på dina delningsinställningar). Du kan begränsa vem som kan skapa webbplatser, grupper och teams. Se följande exempel:
 
-- [Hantera webbplatsskapande i SharePoint](https://docs.microsoft.com/sharepoint/manage-site-creation)
-- [Hantera vilka som kan skapa Microsoft 365 Grupper](https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups)
+- [Hantera webbplatsskapande i SharePoint](/sharepoint/manage-site-creation)
+- [Hantera vilka som kan skapa Microsoft 365 Grupper](./manage-creation-of-groups.md)
 
 > [!NOTE]
 > Begränsning av skapandet av grupper hindrar teamskapande.
 
 ## <a name="email"></a>E-post
 
-Du kan förhindra oönskad delning av e-postmeddelanden genom att använda kryptering. Detta förhindrar att e-postmeddelanden vidarebefordras eller på annat sätt delas med obehöriga användare. Du kan aktivera e-postkryptering genom att använda känslighetsetiketter. Mer information finns i [Begränsa åtkomst till innehåll med hjälp av kryptering i känslighetsetiketter](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels).
+Du kan förhindra oönskad delning av e-postmeddelanden genom att använda kryptering. Detta förhindrar att e-postmeddelanden vidarebefordras eller på annat sätt delas med obehöriga användare. Du kan aktivera e-postkryptering genom att använda känslighetsetiketter. Mer information finns i [Begränsa åtkomst till innehåll med hjälp av kryptering i känslighetsetiketter](../compliance/encryption-sensitivity-labels.md).
 
 ## <a name="download-or-file-copy"></a>Nedladdning eller filkopia
 
@@ -209,12 +209,12 @@ Användare som har åtkomst till filer och mappar i Microsoft 365 kan ladda ned 
 
 ## <a name="conditional-access"></a>Villkorlig åtkomst
 
-Villkorlig åtkomst i Azure Active Directory tillhandahåller alternativ för att begränsa eller förhindra delning med personer baserat på nätverksplats, enhets status, inloggnings risker och andra faktorer. Se [Vad är Villkorlig Åtkomst?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
+Villkorlig åtkomst i Azure Active Directory tillhandahåller alternativ för att begränsa eller förhindra delning med personer baserat på nätverksplats, enhets status, inloggnings risker och andra faktorer. Se [Vad är Villkorlig Åtkomst?](/azure/active-directory/conditional-access/overview)
 
 SharePoint tillhandahåller direkt integration med villkorlig åtkomst för Microsoft Azure Active Directory för både ohanterade enheter och nätverksplats. Se följande exempel för detaljer:
 
-- [Hantera åtkomst från ohanterade enheter](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)
-- [Hantera åtkomst till SharePoint och OneDrive data baserat på nätverksplats](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)
+- [Hantera åtkomst från ohanterade enheter](/sharepoint/control-access-from-unmanaged-devices)
+- [Hantera åtkomst till SharePoint och OneDrive data baserat på nätverksplats](/sharepoint/control-access-based-on-network-location)
 
 ## <a name="see-also"></a>Se även
 

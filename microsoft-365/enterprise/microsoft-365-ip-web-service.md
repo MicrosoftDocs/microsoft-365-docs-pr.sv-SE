@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Lär dig hur du använder webbtjänsten Office 365 IP-adress and URL för att hjälpa dig att bättre identifiera och skilja Office 365 nätverkstrafik.
-ms.openlocfilehash: 03e6eac86e66db6f9e94c3f98e6d7b565ffa0f14
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: 1948491e1d3db724e7b7b6a5275234acab4be08a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456465"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918960"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Webbtjänsten Office 365 IP-adress och URL
 
@@ -66,7 +66,7 @@ Dessa parametrar är gemensamma för alla metoder i webbtjänsten:
 - **format–<JSON | CSV>** – Som standard är det returnerade dataformatet JSON. Använd den här valfria parametern för att returnera data i en fil med kommaavgränsade värden (CSV).
 - **ClientRequestId-\<guid>** – En obligatorisk GUID som du genererar för klientassociation. Generera ett unikt GUID för varje dator som anropar webbtjänsten (de skript som finns på den här sidan genererar ett GUID åt dig). Använd inte de GUID som visas i följande exempel eftersom de kan blockeras av webbtjänsten i framtiden. GUID-formatet är _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, där x representerar ett hexadecimalt tal.
 
-  Om du vill generera ett GUID kan du använda [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) Windows PowerShell-kommandot eller använda en onlinetjänst som [online GUID Generator](https://www.guidgenerator.com/).
+  Om du vill generera ett GUID kan du använda [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) Windows PowerShell-kommandot eller använda en onlinetjänst som [online GUID Generator](https://www.guidgenerator.com/).
 
 ## <a name="version-web-method"></a>Versionswebbmetod
 
@@ -607,7 +607,7 @@ Du kan använda några olika metoder för att få e-postmeddelanden när ändrin
 
 - Information om hur du använder en Microsoft Flow-lösning finns i [Använda Microsoft Flow för att få ett e-postmeddelande om ändringar i Office 365 IP-adresser och URL:er](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
 - För att distribuera en Azure Logic-app med en ARM-mall finns i [Office 365 uppdateringsmeddelande (v 1.1)](https://aka.ms/ipurlws-updates-template).
-- Om du vill skriva ett eget meddelandeskript med Windows PowerShell kan du läsa [Skicka med e-postmeddelande](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/send-mailmessage).
+- Om du vill skriva ett eget meddelandeskript med Windows PowerShell kan du läsa [Skicka med e-postmeddelande](/powershell/module/microsoft.powershell.utility/send-mailmessage).
 
 ## <a name="exporting-a-proxy-pac-file"></a>Exportera en proxy-PAC-fil
 

@@ -20,34 +20,34 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: Här förklaras hur du använder PowerShell för att ta bort Microsoft 365-licenser som tidigare har tilldelats användare.
-ms.openlocfilehash: 8ae7ca1013e26a60f16177f2dab7ced4cc8b97a8
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 9944d1ab056d109b6bf71a44fe01acef78ce1f14
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289599"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920674"
 ---
 # <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>Ta bort Microsoft 365-licenser från användarkonton med PowerShell
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
 >[!Note]
->[Lär dig hur du tar bort licenser från användarkonton](https://docs.microsoft.com/microsoft-365/admin/manage/remove-licenses-from-users) med administrationscentret för Microsoft 365. En lista över ytterligare resurser finns i [Hantera användare och grupper.](https://docs.microsoft.com/microsoft-365/admin/add-users/)
+>[Läs om hur du tar bort licenser från användarkonton](../admin/manage/remove-licenses-from-users.md) med administrationscentret för Microsoft 365. En lista över ytterligare resurser finns i [Hantera användare och grupper.](../admin/add-users/index.yml)
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för Graph-modulen
 
-Anslut först [till din Microsoft 365-klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Börja med [att ansluta till din Microsoft 365-klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
-Lista sedan licensplanerna för innehavaren med det här kommandot.
+Lista sedan licensplaner för din klientorganisation med det här kommandot.
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-Hämta sedan inloggningsnamnet för det konto för vilket du vill ta bort en licens, som även kallas UPN (user principal name).
+Hämta sedan inloggningsnamnet för det konto för vilket du vill ta bort en licens, även kallat användarens huvudnamn (UPN).
 
-Slutligen anger du namnen på användarens inloggnings- och licensabonnemang, tar bort tecknen "<" och ">" och kör de här kommandona.
+Slutligen anger du namnen på användarens inloggnings- och licensabonnemang, tar bort tecknen "<" och ">" och kör dessa kommandon.
 
 ```powershell
 $userUPN="<user sign-in name (UPN)>"
@@ -57,7 +57,7 @@ $License.RemoveLicenses = (Get-AzureADSubscribedSku | Where-Object -Property Sku
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $license
 ```
 
-Om du vill ta bort alla licenser för ett visst användarkonto anger du användarens inloggningsnamn, tar bort tecknen "<" och ">" och kör kommandona.
+Om du vill ta bort alla licenser för ett specifikt användarkonto anger du användarens inloggningsnamn, tar bort tecknen "<" och ">" och kör kommandona.
 
 ```powershell
 $userUPN="<user sign-in name (UPN)>"
@@ -81,19 +81,19 @@ if($userList.Count -ne 0) {
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Använda Microsoft Azure Active Directory-modulen för Windows PowerShell
 
-Anslut först [till din Microsoft 365-klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Börja med [att ansluta till din Microsoft 365-klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
    
-Du kan visa licensplanen **(AccountSkuID)** i din organisation i följande avsnitt:
+Information om hur du visar **licensplanen (AccountSkuID)** i organisationen finns i följande avsnitt:
     
   - [Visa licenser och tjänster med PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
     
   - [Visa kontolicens och tjänstinformation med PowerShell](view-account-license-and-service-details-with-microsoft-365-powershell.md)
     
-Om du använder **cmdleten Get-MsolUser** utan att använda parametern _-All_ returneras bara de första 500 kontona.
+Om du använder **cmdlet:en Get-MsolUser** utan att använda parametern _-All_ returneras bara de första 500 kontona.
     
 ### <a name="removing-licenses-from-user-accounts"></a>Ta bort licenser från användarkonton
 
-Om du vill ta bort licenser från ett befintligt användarkonto använder du följande syntax:
+Om du vill ta bort licenser från ett befintligt användarkonto ska du använda följande syntax:
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName <Account> -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...
@@ -103,17 +103,17 @@ Set-MsolUserLicense -UserPrincipalName <Account> -RemoveLicenses "<AccountSkuId1
 >PowerShell Core stöder inte Microsoft Azure Active Directory-modul för Windows PowerShell-modulen och-cmdlets med **MSOL** i namnet. Om du vill fortsätta använda dessa cmdlets måste du köra dem från Windows PowerShell.
 >
 
-I det här exemplet tas **licensen litwareinc:ENTERPRISEPACK** (Office 365 Enterprise, E3) bort från användarkontots BelindaN@litwareinc.com.
+I det här exemplet tas **licensen litwareinc:ENTERPRISEPACK** (Office 365 Enterprise, E3) bort från användarkontot BelindaN@litwareinc.com.
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
 >[!Note]
->Du kan inte använda `Set-MsolUserLicense` cmdleten för att ta bort tilldelning av användare *från avbeställt* licenser. Du måste göra det individuellt för varje användarkonto i administrationscentret för Microsoft 365.
+>Du kan inte använda `Set-MsolUserLicense` cmdleten för att ta bort licenser för användare *som inte tilldelats.* Du måste göra det var för sig för varje användarkonto i administrationscentret för Microsoft 365.
 >
 
-Om du vill ta bort alla licenser från en grupp av befintliga licensierade användare använder du någon av följande metoder:
+Om du vill ta bort alla licenser från en grupp befintliga licensierade användare använder du någon av följande metoder:
   
 - **Filtrera kontona baserat på ett befintligt kontoattribut** Det gör du genom att använda följande syntax:
     
@@ -183,4 +183,3 @@ Ett annat sätt att frigöra en licens är att ta bort användarkontot. Mer info
 [Hantera Microsoft 365 med PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Börja använda PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-
