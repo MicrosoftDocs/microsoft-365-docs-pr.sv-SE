@@ -1,5 +1,5 @@
 ---
-title: Ytterligare enhets information för migreringen från Microsoft Cloud Deutschland
+title: Ytterligare enhetsinformation för migreringen från Microsoft Cloud Deutschland
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -17,45 +17,45 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 'Sammanfattning: ytterligare enhets information på tjänster när du flyttar från Microsoft Cloud Tyskland (Microsoft Cloud Deutschland) till Office 365-tjänster i det nya tyska data centret.'
-ms.openlocfilehash: 151fcac882dc91d96df3ece000c28d1a7abe1d1f
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+description: 'Sammanfattning: Ytterligare enhetsinformation om tjänster när du flyttar från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i den nya tyska datacenterområdet.'
+ms.openlocfilehash: 21188372f03af394fe1c0e227c1adeabbad02a85
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780302"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928162"
 ---
-# <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Ytterligare enhets information för migreringen från Microsoft Cloud Deutschland
+# <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Ytterligare enhetsinformation för migreringen från Microsoft Cloud Deutschland
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
 
 **Hur vet jag om min organisation påverkas?**
 
-Administratörer bör kontrol lera `https://portal.microsoftazure.de` om de har registrerade enheter. Om din organisation har registrerade enheter påverkas det.
+Administratörer bör kontrollera `https://portal.microsoftazure.de` om de har några registrerade enheter. Om din organisation har registrerade enheter påverkas du.
 
-**Vad händer med mina användare?**
+**Hur påverkar det mina användare?**
 
-Användare från en registrerad enhet kommer inte längre att kunna logga in efter migreringen och [Slutför Azure AD](ms-cloud-germany-transition.md#how-is-the-migration-organized) migration-fasen.  
+Användare från en registrerad enhet kommer inte längre att kunna [](ms-cloud-germany-transition.md#how-is-the-migration-organized) logga in när migreringen har fasat in Azure AD-migreringen.  
 
-Kontrol lera att alla dina enheter är registrerade med den globala slut punkten innan organisationen kopplas bort från Microsoft Cloud Deutschland.
+Se till att alla dina enheter är registrerade med den globala slutpunkten innan din organisation kopplas bort från Microsoft Cloud Deutschland.
   
-**När registrerar mina användare en ny omregistrera deras enheter?**
+**När registrerar mina användare sina enheter igen?**
 
-Det är viktigt för din framgång att du bara avregistrerar och registrerar om dina enheter under den separata migrations fasen [för Microsoft Cloud-Deutschland](ms-cloud-germany-transition.md#how-is-the-migration-organized) .
+Det är viktigt att du endast avregistrerar och registrerar dina enheter igen under migreringsfasen Separat från [Microsoft Cloud Deutschland.](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
-**Hur återställer jag enhetens tillstånd efter migrering?**
+**Hur återställer jag enhetens status efter migreringen?**
 
-För Hybrid Azure AD-anslutna och företagsägda Windows-enheter som är registrerade med Azure AD kan administratörer hantera migreringen av dessa enheter via fjärrutlös ande arbets flöden som avregistrerar de gamla enhets tillstånden.
+För hybrid-Azure AD-anslutna och företagsägda Windows-enheter som är registrerade med Azure AD kan administratörer hantera migreringen av dessa enheter genom fjärrutlösta arbetsflöden som avregistrerar de gamla enhets tillstånden.
   
-För alla andra enheter, inklusive personliga Windows-enheter som är registrerade i Azure AD, måste slutanvändaren utföra dessa steg manuellt. För Azure AD-anslutna enheter måste användare ha ett lokalt administratörs konto för att avregistrera och sedan registrera om sina enheter.
+För alla andra enheter, inklusive personliga Windows-enheter som är registrerade i Azure AD, måste slutanvändaren utföra de här stegen manuellt. För Azure AD-anslutna enheter måste användarna ha ett lokalt administratörskonto för att avregistrera och sedan registrera sina enheter på nytt.
 
-Microsoft publicerar instruktioner för hur du återställer enhetens status. 
+Microsoft publicerar instruktioner för hur man återställer enhetens status. 
  
 **Hur vet jag att alla mina enheter är registrerade i det offentliga molnet?**
 
-Om du vill kontrol lera att dina enheter är registrerade i det offentliga molnet bör du exportera och ladda ned listan över enheter från Azure AD-portalen till ett Excel-kalkylblad. Filtrera sedan de enheter som är registrerade (med hjälp av kolumnen _registeredTime_ ) efter den [avgränsade flytt fasen från Microsoft Cloud Deutschland](ms-cloud-germany-transition.md#how-is-the-migration-organized) .
+Om du vill kontrollera om dina enheter är registrerade i det offentliga molnet bör du exportera och ladda ned listan med enheter från Azure AD-portalen till ett Excel-kalkylblad. Filtrera sedan de enheter som är registrerade (med hjälp av kolumnen _registeredTime)_ efter migreringsfasen Separat från [Microsoft Cloud Deutschland.](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
-Enhets registrering är inaktiverat efter migrering av klient organisationen och kan inte aktive ras eller inaktive ras. Om Intune inte används loggar du in på ditt abonnemang och kör det här kommandot för att återaktivera alternativet:
+Enhetsregistrering inaktiveras efter migrering av klientorganisationen och kan inte aktiveras eller inaktiveras. Om Intune inte används loggar du in på din prenumeration och kör det här kommandot för att aktivera alternativet igen:
 
 ```powershell
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
@@ -63,17 +63,17 @@ Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "000000
 
 ## <a name="hybrid-azure-ad-join"></a>Hybrid Azure AD-anslutning
 
-### <a name="windows-down-level"></a>Windows i nivå
+### <a name="windows-down-level"></a>Windows-nednivå
 
-_Windows-_ enheter som använder tidigare versioner av Windows (till exempel Windows 8,1 eller Windows 7), eller som kör Windows Server-versioner tidigare än 2019 och 2016, är Windows-produkter. Om sådana enheter registrerades förut måste du avregistrera och registrera om dessa enheter. 
+_Windows-enheter_ på nedåtnivå är Windows-enheter som för närvarande kör tidigare versioner av Windows (till exempel Windows 8.1 eller Windows 7) eller som kör Windows Server-versioner tidigare än 2019 och 2016. Om sådana enheter har registrerats tidigare måste du avregistrera och registrera om enheterna. 
 
-Använd följande kommando på enheten för att avgöra om en Windows-enhet med en låg nivå tidigare varit ansluten till Azure AD:
+Använd följande kommando på enheten för att avgöra om en Windows-enhet på lägre nivå tidigare var ansluten till Azure AD:
 
 ```console
 %programfiles%\Microsoft Workplace Join\autoworkplace /status
 ```
 
-Om enheten tidigare varit ansluten till Azure AD och om enheten har nätverks anslutning till globala Azure AD-slutpunkter ser du följande utdata:
+Om enheten tidigare var ansluten till Azure AD, och enheten har nätverksanslutning till globala Azure AD-slutpunkter, ser du följande utdata:
 
 ```console
 +----------------------------------------------------------------------+
@@ -86,29 +86,29 @@ Private key state : Okay
      Device state : Unknown
 ```
 
-Berörda enheter har "enhets status" och värdet "okänt". Om resultatet är "enheten är inte ansluten" eller om "enhetens status"-värde är "OK", ignorerar du följande vägledning.
+De enheter som påverkas har "Enhetens status" med värdet "Okänt". Om utdata är "Enheten är inte ansluten" eller om "Enhetens status" är "Ok", ignorera följande vägledning.
 
-Endast för enheter som visar att enheten är kopplad (via deviceId, tumavtryck och så vidare) och vars "enhets status"-värde är "okänt", ska administratörer köra följande kommando i kontexten för en domän användare som loggar in på en sådan enhet.
+Endast för enheter som visar att enheten är ansluten (på grund av enhetensId, thumbprint och så vidare) och vars "Enhetstillstånd"-värde är "Okänt", bör administratörer köra följande kommando i samband med att en domänanvändare loggar in på en sådan enhet på nedåtnivå:
 
 ```console
 "%programfiles%\Microsoft Workplace Join\autoworkplace /leave"
 ```
 
-Det föregående kommandot behöver bara köras en gång per domän användare som loggar in på den Windows-baserade enheten. Det här kommandot bör köras i kontexten för domän användar inloggningen. 
+Föregående kommando behöver bara köras en gång per domänanvändare som loggar in på Windows-nednivåenheten. Det här kommandot ska köras inom ramen för domänanvändaren som loggar in. 
 
-Tillräckligt med försiktighet måste vidtas för att inte köra det här kommandot när användaren loggar in. När föregående kommando körs raderas det kopplade läget för den lokala hybrid Azure AD-anslutna datorn för den användare som loggat in. Och om datorn fortfarande är konfigurerad för att bli hybrid Azure AD-ansluten till klient organisationen försöker den ansluta när användaren loggar in igen.
+Tillräcklig försiktighet måste vidtas för att inte köra det här kommandot när användaren sedan loggar in. När föregående kommando körs rensas den sammanskrivna statusen för den lokala Azure AD-sammanskrivna hybriddatorn för den användare som loggade in. Och om datorn fortfarande är konfigurerad att vara hybrid-Azure AD-ansluten i klientorganisationen försöker den ansluta när användaren loggar in igen.
 
-### <a name="windows-current"></a>Windows-aktuell
+### <a name="windows-current"></a>Windows Current
 
-#### <a name="unjoin"></a>Koppla från
+#### <a name="unjoin"></a>Ta bort anslutning
 
-Om du vill ta reda på om Windows 10-enheten tidigare varit ansluten till Azure AD kör du följande kommando på enheten:
+För att ta reda på om Windows 10-enheten tidigare var ansluten till Azure AD kör du följande kommando på enheten:
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /status
 ```
 
-Om enheten är hybrid Azure AD-ansluten ser administratören följande utdata:
+Om enheten är Azure AD-ansluten till hybrid ser administratören följande utdata:
 
 ```console
 +----------------------------------------------------------------------+
@@ -120,38 +120,38 @@ Om enheten är hybrid Azure AD-ansluten ser administratören följande utdata:
               DomainJoined : YES
 ```
 
-Om utdata är "AzureAdJoined: No", ignorerar du följande vägledning.
+Om utdata är "AzureAdJoined : Nej" ignorerar du följande vägledning.
 
-För enheter som visar att enheten är ansluten till Azure AD kör du följande kommando som administratör för att ta bort enhetens anslutna status.
+För enheter som visar att enheten är ansluten till Azure AD kör du följande kommando som administratör för att ta bort enhetens anslutna tillstånd.
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /leave
 ```
 
-Föregående kommando måste bara köras en gång i en administrativ kontext på Windows-enheten.
+Föregående kommando behöver bara köras en gång i ett administrativt sammanhang på Windows-enheten.
 
-#### <a name="hybrid-ad-joinre-registration"></a>Hybrid annons Join\Re-Registration
+#### <a name="hybrid-ad-joinre-registration"></a>Hybrid AD Join\Re-Registration
 
-Enheten ansluts automatiskt till Azure AD utan användar-eller administratörs åtgärd så länge enheten har nätverks anslutning till globala Azure AD-slutpunkter. 
+Enheten ansluts automatiskt till Azure AD utan åtgärd från användare eller administratör så länge enheten är ansluten till globala Azure AD-slutpunkter. 
 
 
 ## <a name="azure-ad-join"></a>Azure AD-anslutning
 
-**Viktigt:** Intune-tjänstens huvud konto aktive ras efter handelsmigrering, vilket innebär aktivering av Azure AD-registrering. Om du blockerade registrering av Azure AD-enheter före migrering måste du inaktivera Intune-tjänstens huvud konto med PowerShell för att inaktivera registrering av Azure AD-enheter med Azure AD-portalen igen. Du kan inaktivera Intune-huvudobjektet med det här kommandot i Azure Active Directory PowerShell för Graph.
+**VIKTIGT!** Intune-tjänstens huvudnamn aktiveras efter e-handelsmigrering, vilket innebär aktivering av enhetsregistrering för Azure AD. Om du blockerade enhetsregistrering för Azure AD före migreringen måste du inaktivera Intune-tjänstens huvudnamn med PowerShell om du vill inaktivera enhetsregistrering för Azure AD med Azure AD-portalen igen. Du kan inaktivera Intune-tjänstens huvudnamn med det här kommandot i Azure Active Directory PowerShell för Graph-modulen.
 
 ```powershell
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
 ```
 
-### <a name="unjoin"></a>Koppla från
+### <a name="unjoin"></a>Ta bort anslutning
 
-För att avgöra om en Windows 10-enhet tidigare varit ansluten till Azure AD kan användaren eller administratören köra följande kommando på enheten:
+För att avgöra om Windows 10-enheten tidigare var ansluten till Azure AD kan användaren eller administratören köra följande kommando på enheten:
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /status
 ```
 
-Om enheten är ansluten till Azure AD ser användaren eller administratören följande resultat:
+Om enheten är ansluten till Azure AD ser användaren eller administratören följande utdata:
 
 ```console
 +----------------------------------------------------------------------+
@@ -163,32 +163,32 @@ Om enheten är ansluten till Azure AD ser användaren eller administratören fö
               DomainJoined : NO
 ```
 
-Om utdata är "AzureAdJoined: NO", ignorerar du följande vägledning.
+Om utdata är "AzureAdJoined : NO" ignorerar du följande vägledning.
 
-Användare: om enheten är en Azure AD ansluten kan en användare koppla från enheten från inställningarna. Kontrol lera att det finns ett lokalt administratörs konto på enheten innan du kopplar från enheten från Azure AD. Det lokala administratörs kontot krävs för att logga in på enheten igen.
+Användare: Om enheten är Azure AD ansluten kan en användare ta bort enheten från inställningarna. Kontrollera att det finns ett lokalt administratörskonto på enheten innan du tar bort enheten från Azure AD. Det lokala administratörskontot krävs för att logga in på enheten igen.
 
-Administratör: om organisationens administratör vill koppla från användarnas enheter som är Azure AD-anslutna kan de göra det genom att köra följande kommando på varje enhet med hjälp av en mekanism som grup princip. Administratören måste kontrol lera att det finns ett lokalt administratörs konto på enheten innan du kopplar från enheten från Azure AD. Det lokala administratörs kontot behövs för att logga in på enheten igen.
+Administratör: Om organisationens administratör vill ta bort användarnas enheter som är Azure AD-anslutna kan de göra det genom att köra följande kommando på var och en av enheterna med hjälp av en mekanism, till exempel grupprincip. Administratören måste kontrollera att det finns ett lokalt administratörskonto på enheten innan enheten tas bort från Azure AD. Det lokala administratörskontot krävs för att logga in på enheten igen.
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /leave
 ```
 
-Föregående kommando måste bara köras en gång i en administrativ kontext på Windows-enheten. 
+Föregående kommando behöver bara köras en gång i ett administrativt sammanhang på Windows-enheten. 
 
-### <a name="azure-ad-joinre-registration"></a>Azure AD Join/re-registrering
+### <a name="azure-ad-joinre-registration"></a>Azure AD- anslutning/omregistrering
 
-Användaren kan ansluta till enheten till Azure AD från Windows-inställningar: **inställningar > konton > åtkomst till arbets-eller skol > Anslut**.
+Användaren kan ansluta enheten till Azure AD från Windows-inställningar: Inställningar för **>-> Arbets- eller skolkonto > Connect.**
  
 
-## <a name="azure-ad-registered-company-owned"></a>Azure AD-registrerad (företag)
+## <a name="azure-ad-registered-company-owned"></a>Azure AD Registered (företagsägd)
 
-Om du vill ta reda på om Windows 10-enheten är Azure AD-registrerad kör du följande kommando på enheten:
+Om du vill avgöra om Windows 10-enheten är Azure AD-registrerad kör du följande kommando på enheten:
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /status
 ```
 
-Om enheten är Azure AD registrerad visas följande:
+Om enheten är Azure AD Registrerad ser du följande utdata:
 
 ```console
 +----------------------------------------------------------------------+
@@ -201,92 +201,92 @@ Om enheten är Azure AD registrerad visas följande:
 
 Så här tar du bort det befintliga Azure AD-registrerade kontot på enheten:
 
-- Om du vill ta bort Azure AD-det registrerade kontot på enheten använder du CleanupWPJ, ett verktyg som du kan ladda ned härifrån: [CleanupWPJ.zip](https://download.microsoft.com/download/8/e/f/8ef13ae0-6aa8-48a2-8697-5b1711134730/WPJCleanUp.zip).
+- Om du vill ta bort det Azure AD-registrerade kontot på enheten använder du CleanupWPJ, ett verktyg som du kan ladda ned härifrån: [CleanupWPJ.zip](https://download.microsoft.com/download/8/e/f/8ef13ae0-6aa8-48a2-8697-5b1711134730/WPJCleanUp.zip).
 
-- Extrahera ZIP-filen och kör **WPJCleanup. cmd**. Det här verktyget startar den rätta körbara filen baserat på Windows-versionen på enheten.
+- Extrahera ZIP-filen och kör **WPJCleanup.cmd**. Det här verktyget startar rätt körbar baserat på versionen av Windows på enheten.
 
-- Genom att använda en funktion som grup princip kan administratören köra kommandot på enheten i kontexten för en användare som är inloggad på enheten.
+- Genom att använda en mekanism som grupprincip kan administratören köra kommandot på enheten i samband med alla användare som är inloggade på enheten.
 
-Om du vill inaktivera Web Account Manager-prompten för att registrera enheten i Azure AD, lägger du till det här registervärdet: 
+Om du vill inaktivera Web Account Manager-uppmaningar om att registrera enheten i Azure AD lägger du till det här registervärdet: 
 
 - Plats: HKLM\SOFTWARE\Policies\Microsoft\Windows\WorkplaceJoin
 - Typ: DWORD (32 bitar)
 - Namn: BlockAADWorkplaceJoin
-- Värde data: 1
+- Värdedata: 1
 
-Närvaron av det här registervärdet bör blockera arbets plats anslutning och förhindra användare från att se uppmaningar att gå med i enheten.
+Förekomsten av det här registervärdet bör blockera anslutning till arbetsplatsen och förhindra att användarna ser uppmaningar om att ansluta till enheten.
 
 ## <a name="android"></a>Android
 
-För Android måste användarna avregistrera och registrera om sina enheter. Det här kan du göra via programmet Microsoft Authenticator eller företagsportalsappen. 
+För Android måste användarna avregistrera sig och registrera sina enheter igen. Det kan du göra via appen Microsoft Authenticator eller företagsportalen. 
 
-- Från Microsoft Authenticator-appen kan användarna gå till **inställningar > enhets registrering**. Därifrån kan användarna avregistrera och registrera om sina enheter.
+- Från Microsoft Authenticator-appen kan användare gå till **Inställningar > Enhetsregistrering.** Därifrån kan användare avregistrera sig och registrera sin enhet igen.
  
-- Från företags portalen kan användare gå till fliken **enheter** och ta bort enheten. Därefter omregistrerar du enheten på nytt med hjälp av företags portalen.
+- Från företagsportalen kan användarna gå till **fliken Enheter** och ta bort enheten. Därefter kan du registrera enheten igen via företagsportalen.
  
-- Användare kan också avregistrera och registrera om genom att ta bort kontot från sidan konto inställningar och sedan lägga till arbets kontot igen.
+- Användare kan också avregistrera och registrera igen genom att ta bort kontot från sidan kontoinställningar och sedan lägga till arbetskontot igen.
 
-För att avregistrera och registrera enheten på Android med hjälp av Microsoft Authenticator-appen:
+Så här avregistrerar du och registrerar om enheten på Android med hjälp av appen Microsoft Authenticator:
 
-1.  Öppna Microsoft Authenticator-appen och gå till **Inställningar**.
-2.  Välj **enhets registrering**.
-3.  Avregistrera enheten genom att välja **avregistrering**.
-4.  Registrera **enheten igen** genom att skriva in din e-postadress och välj sedan **Registrera**.
+1.  Öppna Appen Microsoft Authenticator och gå till **Inställningar**.
+2.  Välj **Enhetsregistrering**.
+3.  Avregistrera enheten genom att välja **Avregistrera**.
+4.  För **enhetsregistrering** registrerar du enheten igen genom att skriva din e-postadress och väljer **registrera**.
 
-Så här avregistrerar och registrerar du en Android-enhet på nytt på Android-sidan:
+Så här avregistrerar du och registrerar om en Android-enhet på sidan För Android-inställningar:
 
-1.  Öppna **enhets inställningar** och gå till **konton**.
-2.  Välj det arbets konto som du vill registrera om och välj **ta bort konto**.
-3.  När kontot har tagits bort väljer du **Lägg till konto > arbets konto** på sidan **konton** .
-4.  För **arbets plats anslutning** skriver du din e-postadress och väljer **Anslut** för att slutföra registreringen av enheten.
+1.  Öppna **Enhetsinställningar** och gå till **Konton**.
+2.  Välj det arbetskonto du vill registrera igen och välj Ta **bort konto**.
+3.  När kontot har tagits bort går du till **sidan Konton** och väljer Lägg till konto **> Arbetskonto**.
+4.  I **Workplace Join** skriver du din e-postadress och väljer **Anslut** för att slutföra registreringen av enheten.
 
-För att avregistrera och registrera enheten på Android från företags portalen:
+Så här avregistrerar du och registrerar om enheten på Android från företagsportalen:
 
-1.  Starta företags Portal och gå till fliken **enheter** .
-2.  Välj enhet för att Visa enhets informationen.
-3.  På menyn punkter (tre punkter) väljer du **ta bort enhet** och slutför borttagningen genom att bekräfta i dialog rutan.
-4.  Du ska nu vara utloggad från företagsportalsappen. Välj **Logga in** för att registrera enheten på nytt.
+1.  Starta företagsportalen och gå till **fliken** Enheter.
+2.  Välj enheten om du vill se enhetsinformationen.
+3.  På ellipsmenyn (tre punkter) väljer du Ta **bort** enhet och slutför borttagningen genom att bekräfta i dialogrutan.
+4.  Du bör nu vara utloggad från företagsportalappen. Välj **Logga in** för att registrera enheten igen.
 
-Om du vill ha mer information om åtgärder som krävs under migrations fasen av denna arbets belastning, eller om det påverkar administrationen eller användningen, läser du informationen om Azure Active Directory (Azure AD) i [ytterligare Azure AD-information för migreringen från Microsoft Cloud Deutschland](ms-cloud-germany-transition-azure-ad.md).
+Mer information om åtgärder som krävs under migreringsfasen av den här arbetsbelastningen, eller påverkan på administration eller användning, finns i informationen om Azure Active Directory (Azure AD) i Ytterligare Azure AD-information för migreringen från [Microsoft Cloud Deutschland.](ms-cloud-germany-transition-azure-ad.md)
 
 ## <a name="ios"></a>iOS
 
-På iOS-enheter måste en användare manuellt ta bort alla cachelagrade konton från Microsoft Authenticator, avregistrera enheten och logga ut från alla egna appar på enheten.
+På iOS-enheter måste en användare manuellt ta bort cachelagrade konton från Microsoft Authenticator, avregistrera enheten och logga ut från alla inbyggda appar på enheten.
 
-### <a name="step-1-if-present-remove-the-account-from-the-microsoft-authenticator-app"></a>Steg 1: ta bort kontot från programmet Microsoft Authenticator
+### <a name="step-1-if-present-remove-the-account-from-the-microsoft-authenticator-app"></a>Steg 1: Om det finns tar du bort kontot från Microsoft Authenticator-appen
 
-1. Tryck på kontot i Microsoft Authenticator-appen.
-2. Tryck på ikonen **Inställningar** i det övre högra hörnet. Om du inte ser ikonen **Inställningar** kanske du inte använder den senaste versionen av Microsoft Authenticator.
-3. Tryck på knappen **ta bort konto** .
-4. Tryck **på alla appar på den här enheten**.
+1. Tryck på kontot i appen Microsoft Authenticator.
+2. Tryck på **ikonen** Inställningar i det övre högra hörnet. Om du inte ser ikonen **Förinställningar** använder du kanske inte den senaste versionen av Microsoft Authenticator.
+3. Tryck på **knappen Ta bort** konto.
+4. Tryck **på Alla appar på den här enheten**.
  
-### <a name="step-2-unregister-the-device-from-the-microsoft-authenticator-app"></a>Steg 2: avregistrera enheten från Microsoft Authenticator-appen
+### <a name="step-2-unregister-the-device-from-the-microsoft-authenticator-app"></a>Steg 2: Avregistrera enheten från Microsoft Authenticator-appen
 
-1. Tryck på Meny ikonen i det övre högra hörnet.
-2. Tryck på **Inställningar** och sedan på **enhets registrering**.
-4. Om ditt konto visas trycker du på **avregistrera enheten** och **fortsätter** i dialog rutan. Inget konto visas.
+1. Tryck på menyikonen i det övre högra hörnet.
+2. Tryck **på Inställningar** och sedan på **Enhetsregistrering.**
+4. Om ditt konto visas trycker du på **Avregistrera enhet** **och Fortsätt** i dialogrutan. Därefter bör du inte se något konto.
  
 ### <a name="step-3-sign-out-from-individual-apps-if-necessary"></a>Steg 3: Logga ut från enskilda appar om det behövs
 
-Användare kan gå till enskilda appar som Outlook, team och OneDrive och ta bort konton från dessa program.
+Användare kan gå till enskilda appar som Outlook, Teams och OneDrive och ta bort konton från dessa appar.
 
 ## <a name="more-information"></a>Mer information
 
 Komma igång:
 
-- [Migrering från Microsoft Cloud Deutschland till Office 365-tjänster i de nya tyska Data Center-regionerna](ms-cloud-germany-transition.md)
-- [Hjälp för Microsoft Cloud Deutschland](https://aka.ms/germanymigrateassist)
-- [Så här väljer du för migrering](ms-cloud-germany-migration-opt-in.md)
-- [Kund upplevelse under migreringen](ms-cloud-germany-transition-experience.md)
+- [Migrering från Microsoft Cloud Deutschland till Office 365-tjänster i nya tyska datacenterområden](ms-cloud-germany-transition.md)
+- [Migreringshjälp för Microsoft Cloud Deutschland](https://aka.ms/germanymigrateassist)
+- [Så här väljer du in för migrering](ms-cloud-germany-migration-opt-in.md)
+- [Kundupplevelse under migreringen](ms-cloud-germany-transition-experience.md)
 
-Flytta genom över gången:
+Flytta genom övergången:
 
 - [Åtgärder och påverkan i migreringsfaser](ms-cloud-germany-transition-phases.md)
-- [Övrig för hands arbete](ms-cloud-germany-transition-add-pre-work.md)
-- Ytterligare information för [Azure AD](ms-cloud-germany-transition-azure-ad.md), [enheter](ms-cloud-germany-transition-add-devices.md), [upplevelser](ms-cloud-germany-transition-add-experience.md)och [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- [Ytterligare arbete](ms-cloud-germany-transition-add-pre-work.md)
+- Ytterligare information för [Azure AD,](ms-cloud-germany-transition-azure-ad.md) [enheter,](ms-cloud-germany-transition-add-devices.md) [upplevelser](ms-cloud-germany-transition-add-experience.md)och [AD FS.](ms-cloud-germany-transition-add-adfs.md)
 
 Molnappar:
 
-- [Information om programmet för Dynamics 365 migration](https://aka.ms/d365ceoptin)
-- [Information om datamigreringshanteraren för Power BI](https://aka.ms/pbioptin)
-- [Komma igång med din uppgradering av Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
+- [Information om Dynamics 365-migreringsprogram](/dynamics365/get-started/migrate-data-german-region)
+- [Information om Migreringsprogram för Power BI](/power-bi/admin/service-admin-migrate-data-germany)
+- [Komma igång med uppgraderingen till Microsoft Teams](/microsoftteams/upgrade-start-here)

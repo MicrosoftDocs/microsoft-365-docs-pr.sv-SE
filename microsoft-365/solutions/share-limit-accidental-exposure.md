@@ -16,12 +16,12 @@ ms.custom: ''
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Lär dig hur du begränsar oavsiktlig exponering av information när du delar filer med personer utanför organisationen.
-ms.openlocfilehash: 430c00d46fa3801d0869b05a651fadd3bf5dea28
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+ms.openlocfilehash: 952337790ce2f0418dd5ab637435f1523b27b562
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49029975"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928418"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Begränsa oavsiktlig exponering för filer när de delas med personer utanför organisationen
 
@@ -33,15 +33,15 @@ Om personer i organisationen behöver göra oautentiserad delning, men du är be
 
 ## <a name="turn-off-anyone-links"></a>Inaktivera Alla-länkar
 
-Vi rekommenderar att du lämnar *Alla* -länkar aktiverade för lämpligt innehåll, eftersom det är det enklaste sättet att dela och hjälper till att minska risken för att användare tar till andra lösningar som ligger utanför IT-avdelningens kontroll. *Alla* -länkar kan vidarebefordras till andra, men filåtkomst är bara tillgänglig för dem som har länken.
+Vi rekommenderar att du lämnar *Alla*-länkar aktiverade för lämpligt innehåll, eftersom det är det enklaste sättet att dela och hjälper till att minska risken för att användare tar till andra lösningar som ligger utanför IT-avdelningens kontroll. *Alla*-länkar kan vidarebefordras till andra, men filåtkomst är bara tillgänglig för dem som har länken.
 
-Om du alltid vill att personer utanför organisationen ska autentiseras vid åtkomst till innehåll i SharePoint, Grupper eller Teams, kan du inaktivera *Alla* -delningen. Det hindrar användare från oautentiserad delning av innehåll.
+Om du alltid vill att personer utanför organisationen ska autentiseras vid åtkomst till innehåll i SharePoint, Grupper eller Teams, kan du inaktivera *Alla*-delningen. Det hindrar användare från oautentiserad delning av innehåll.
 
-Om du inaktiverar *Alla* -länkar kan användare trots det enkelt dela med gäster genom att använda *Specifika personer* -länkar. I det här fallet måste alla personer utanför organisationen autentiseras innan de kan få åtkomst till det delade innehållet.
+Om du inaktiverar *Alla*-länkar kan användare trots det enkelt dela med gäster genom att använda *Specifika personer*-länkar. I det här fallet måste alla personer utanför organisationen autentiseras innan de kan få åtkomst till det delade innehållet.
 
-Beroende på behoven kan du inaktivera *Alla* -länkar för specifika webbplatser eller för hela organisationen.
+Beroende på behoven kan du inaktivera *Alla*-länkar för specifika webbplatser eller för hela organisationen.
 
-Inaktivera *Alla* -länkar för organisationen
+Inaktivera *Alla*-länkar för organisationen
 1. I navigeringsfönstret till vänster i administrationscentret för SharePoint klickar du på **Delning**.
 2. Sätt inställningen för extern delning för SharePoint på **Nya och befintliga gäster**.
 
@@ -49,7 +49,7 @@ Inaktivera *Alla* -länkar för organisationen
 
 3. Klicka på **Spara**.
 
-Inaktivera *Alla* -länkar för en webbplats
+Inaktivera *Alla*-länkar för en webbplats
 1. I navigeringsfönstret till vänster i administrationscentret för SharePoint expanderar du **Webbplatser** och klickar på **Aktiva webbplatser**.
 2. Välj den webbplats du vill konfigurera.
 3. Klicka på **Delning** i menyfliksområdet.
@@ -67,7 +67,7 @@ Med en tillåt-lista kan du ange en lista över domäner där användarna i orga
 
 Med en neka-lista kan du ange en lista över domäner från vilken användarna i organisationen inte kan dela med personer utanför organisationen. Delning med angivna domäner är blockerad. Det här kan vara användbart om du exempelvis har konkurrenter som du vill hindra från att komma åt innehåll i din organisation.
 
-Listorna över tillåtna och nekade domäner påverkar bara delning med gäster. Användare kan fortfarande dela med personer från förbjudna domäner genom att använda *Alla* -länkar om du inte har inaktiverat dem. Om du vill få bäst resultat med listor över tillåtna eller nekade domäner kan du inaktivera *Alla* -länkar enligt beskrivningen ovan.
+Listorna över tillåtna och nekade domäner påverkar bara delning med gäster. Användare kan fortfarande dela med personer från förbjudna domäner genom att använda *Alla*-länkar om du inte har inaktiverat dem. Om du vill få bäst resultat med listor över tillåtna eller nekade domäner kan du inaktivera *Alla*-länkar enligt beskrivningen ovan.
 
 Konfigurera en lista över tillåtna eller nekade domäner
 1. I navigeringsfönstret till vänster i administrationscentret för SharePoint klickar du på **Delning**.
@@ -79,7 +79,7 @@ Konfigurera en lista över tillåtna eller nekade domäner
 
 5. Klicka på **Spara**.
 
-Om du vill begränsa delningen per domän på en högre nivå än SharePoint och OneDrive kan du [tillåta eller blockera inbjudningar för B2B-användare från specifika organisationer](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list) i Azure Active Directory. (Du måste konfigurera [SharePoint- och OneDrive-integreringen med Azure AD B2B förhandsversion](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) för att de här inställningarna ska påverka SharePoint och OneDrive.)
+Om du vill begränsa delningen per domän på en högre nivå än SharePoint och OneDrive kan du [tillåta eller blockera inbjudningar för B2B-användare från specifika organisationer](/azure/active-directory/b2b/allow-deny-list) i Azure Active Directory. (Du måste konfigurera [SharePoint- och OneDrive-integreringen med Azure AD B2B förhandsversion](/sharepoint/sharepoint-azureb2b-integration-preview) för att de här inställningarna ska påverka SharePoint och OneDrive.)
 
 ## <a name="limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups"></a>Begränsa delning av filer, mappar och webbplatser med personer utanför organisationen till angivna säkerhetsgrupper
 
@@ -91,7 +91,7 @@ Begränsa extern delning till medlemmar i en säkerhetsgrupp
 
 3. Välj **Tillåt endast användare i vissa säkerhetsgrupper att dela externt** och därefter **Hantera säkerhetsgrupper**.
 
-    ![Skärmbild av panelen Hantera säkerhetsgrupper](https://docs.microsoft.com/sharepoint/sharepointonline/media/manage-security-groups.png)
+    ![Skärmbild av panelen Hantera säkerhetsgrupper](/sharepoint/sharepointonline/media/manage-security-groups.png)
 
 4. I rutan **Lägg till en säkerhetsgrupp** anger du ett namn på en säkerhetsgrupp. Rutan för säkerhetsgrupper öppnas.
 

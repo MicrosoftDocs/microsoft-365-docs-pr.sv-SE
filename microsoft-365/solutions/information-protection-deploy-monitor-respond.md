@@ -1,5 +1,5 @@
 ---
-title: Övervaka och svara på data integritets incidenter i din organisation
+title: Övervaka och svara på sekretessincidenter för data i din organisation
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -16,68 +16,68 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Använd gransknings-och larm principer och data subjekt förfrågningar för att övervaka och svara på frågor om person uppgifter.
-ms.openlocfilehash: 3ae0f2a6528f6188500c7cee7732c6447013eaa6
-ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
+description: Använd gransknings- och aviseringsprinciper och dataförfrågningar för att övervaka och svara på incidenter med personuppgifter.
+ms.openlocfilehash: 4070cd772d243bcfba33bfb164fd05e1f0911b3b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749593"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928430"
 ---
-# <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Övervaka och svara på data integritets incidenter i din organisation
+# <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Övervaka och svara på sekretessincidenter för data i din organisation
 
-Microsoft 365-funktioner är tillgängliga för att hjälpa dig att övervaka, undersöka och svara på data integritets incidenter i din organisation när du operationalize relaterade funktioner. Att ha processer, procedurer och annan dokumentation för var och en av dessa kan också vara viktiga för att påvisa efterlevnad av myndighets organ.
+Microsoft 365-funktioner är tillgängliga så att du kan övervaka, undersöka och svara på datasekretessincidenter i din organisation när du driftiserar relaterade funktioner. Att ha processer, procedurer och annan dokumentation för var och en av dessa kan också vara viktigt för att visa efterlevnad för reglerande myndigheter.
 
 De omfattar: 
 
-- Principer för granskning och avisering
-- Data subjekt begär Anden (inklusive innehålls sökning och eDiscovery)
-- Ytterligare verktyg och rapporter
+- Gransknings- och aviseringsprinciper
+- Dataförfrågningar från registrerade personer (inklusive innehållssökning och eDiscovery)
+- Ytterligare verktyg för marknadsföring och rapportering
 
-## <a name="data-privacy-regulations-impacting-the-use-of-monitoring-and-response-tools"></a>Data integritets regler som påverkar användning av övervaknings-och svars verktyg
+## <a name="data-privacy-regulations-impacting-the-use-of-monitoring-and-response-tools"></a>Sekretessregler för data som påverkar användningen av övervaknings- och svarsverktyg
 
-Här är ett exempel på en lista över data integritets regler som kan gälla för informations styrnings kontroller:
+Här är ett exempel på en lista med regler för datasekretess som kan relatera till kontroller för informationsstyrning:
 
-- LGPD artikel 46
-- LGPD artikel 48
-- GDPR-artikel (5) (1) (f)
-- GDPR-artikel (15) (1) (e)
-- HIPAA-HITECH (45 C.F.R. 164.308 (a) (1) (II) (D))
-- HIPAA-HITECH (45 C.F.R. 164.308 (a) (6) (II)
-- HIPAA-HITECH (45 C.F.R. 164.312 (b))
-- CCPA (1798.105 (c))
+- LGPD, artikel 46
+- LGPD, artikel 48
+- GDPR-artikel (5)(1)(f)
+- GDPR-artikel (15)(1)(e)
+- HIPAA-HITECH (45 C.F.R. 164,308(a)(1)(ii)(D))
+- HIPAA-HITECH (45 C.F.R. 164,308(a)(6)(ii)
+- HIPAA-HITECH (45 C.F.R. 164,312(b))
+- CCPA (1798.105(c))
 
-Mer information finns i [utvärdera data integritets risker och identifiera känslig information](information-protection-deploy-assess.md).
+Mer information finns i Utvärdera [datasekretessrisker och identifiera känslig information.](information-protection-deploy-assess.md)
 
-Reglerna för data integritet tar vanligt vis upp följande för övervakning och svar:
+Datasekretessbestämmelser uppmanar vanligtvis till följande för övervakning och svar:
 
-- Granskning, avisering och rapportering för aktiviteter relaterade till lagring, delning och bearbetning av person uppgifter
-- Möjligheten att svara på en fråga om data som kan besvaras (DSR) och i vissa fall genomföra utredning och andra administrativa åtgärder för att uppfylla sådana önskemål.
+- Granska, meddela och rapportera aktiviteter som rör lagring, delning och bearbetning av personuppgifter
+- Möjligheten att svara på en data subject request (DSR) och i vissa fall utföra administrativa åtgärder för att uppfylla sådana begäranden.
 
-Organisationen kan också välja att utföra övervakning och svars aktiviteter i andra syften, till exempel andra behov eller av affärs skäl. Att fastställa övervaknings-och svars schema för data integritet ska utföras som en del av övergripande övervakning och svars planering, implementering och hantering.
+Din organisation kan också vilja utföra övervaknings- och svarsaktiviteter för andra ändamål, till exempel för andra efterlevnadsbehov eller av företagsskäl. Att upprätta ett system för övervakning och svar för datasekretess bör göras som en del av den övergripande uppföljnings- och svarsplaneringen, -implementeringen och -hanteringen.
 
-För att hjälpa dig att komma igång med ett övervaknings-och svars schema i Microsoft 365 för data integritets regler, visar den här artikeln användbara funktioner i Microsoft 365 för att besvara frågor som: 
+I den här artikeln finns användbara funktioner i Microsoft 365 för att få hjälp med att komma igång med övervakning och svarsschema i Microsoft 365 för att få svar på frågor som: 
 
-- Vilken sorts daglig övervakning, undersöknings-och rapporterings teknik finns tillgängliga för de olika data typerna och källorna?
-- Vilka mekanismer behövs för att hantera data ämnes förfrågningar (DSRs) och eventuella hjälp åtgärder, till exempel anonymisering, bortredigering och borttagning.
+- Vilken typ av teknik för övervakning, undersökning och rapportering finns tillgänglig för olika datatyper och källor?
+- Vilka mekanismer kommer att behövas för att hantera DSR-begäranden (Data Subject Requests) och alla åtgärder, till exempel anonymisering, redaion och borttagning.
 
-## <a name="auditing-and-alert-policies-in-the-security-and-compliance-center"></a>Principer för granskning och larm i säkerhets-och kompatibilitetstillstånd
+## <a name="auditing-and-alert-policies-in-the-security-and-compliance-center"></a>Gransknings- och aviseringsprinciper i Säkerhets- och efterlevnadscenter
 
-Se de här artiklarna för att konfigurera granskning, avancerad granskning och aviserings principer:
+Läs följande artiklar för att konfigurera granskning, avancerad granskning och aviseringsprinciper:
 
 - [Enhetlig granskning](../compliance/search-the-audit-log-in-security-and-compliance.md)
 - [Postlådegranskning](../compliance/enable-mailbox-auditing.md)
 - [Avancerad granskning](../compliance/advanced-audit.md)
 - [Aviseringsprinciper](../compliance/alert-policies.md)
 
-## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Data subjekt begär Anden för GDPR och CCPA
+## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Data subject requests for the GDPR and CCPA
 
-Information om hur du svarar på en DSR-data i Microsoft 365 finns i artikeln om [GDPR och CCPA](../compliance/gdpr-dsr-office365.md) .
+Se [Data Subject Requests för GDPR och CCPA](/compliance/regulatory/gdpr-dsr-Office365) för information om hur du svarar på en DSR i Microsoft 365.
 
 ## <a name="manage-deleted-users-in-microsoft-stream"></a>Hantera borttagna användare i Microsoft Stream
 
-För Microsoft Stream, när en användare tas bort från Azure Active Directory (Azure AD), om deras namn var kopplad till en bokförd direkt uppspelnings video innan den punkten förblir e-postadressen kopplad till videon. Se [Hantera borttagna användare från Microsoft Stream](https://docs.microsoft.com/stream/managing-deleted-users) för att ta bort den.
+När en användare för Microsoft Stream tas bort från Azure Active Directory (Azure AD), och om användarens namn var kopplat till en publicerad Stream-video innan den tidpunkten, förblir deras e-postadress kopplad till videon. Se [Hantera borttagna användare från Microsoft Stream om du vill](/stream/managing-deleted-users) ta bort dem.
 
-## <a name="insider-risk-management-as-an-investigative-tool"></a>Insider riskhantering som ett undersöknings verktyg
+## <a name="insider-risk-management-as-an-investigative-tool"></a>Insider-riskhantering som ett effektivt verktyg
 
-[Insider riskhantering i microsoft 365](../compliance/insider-risk-management.md) är en funktion i Microsoft Support Administration Center som hjälper dig att minimera intern risken genom att låta dig upptäcka, undersöka och vidta åtgärder för riskfyllda aktiviteter i din organisation.
+[Insider-riskhantering i Microsoft 365](../compliance/insider-risk-management.md) är en funktion i administrationscentret för Microsofts efterlevnad som hjälper dig minimera den interna risken genom att du kan upptäcka, undersöka och vidta åtgärder för riskaktiviteter i organisationen.

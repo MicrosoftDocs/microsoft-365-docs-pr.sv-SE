@@ -13,71 +13,69 @@ search.appverid:
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
-description: Befintliga Office 365-kunder måste skicka in en begäran innan tids gränsen för sitt land för att deras Microsoft 365 Services-data flyttas till deras nya geo.
+description: Befintliga Office 365-kunder måste skicka en begäran innan tidsgränsen för sitt land för att deras Microsoft 365-tjänstdata ska flyttas till den nya geoinformationen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 216cd3b0cb55cbbe6be89945b98a01ae469ec4e2
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+ms.openlocfilehash: e68feeca842061c43c7be70d9b8b930f068d8e4e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349238"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927318"
 ---
 # <a name="how-to-request-your-data-move"></a>Hur du begär din dataflytt
 
 > [!NOTE]
-> Informationen på den här sidan gäller endast kunder som hade befintliga Microsoft 365-klient organisationer innan nya data Center i deras datacenter-geo opened. Överflyttnings behörighet beror också på det specifika tjänste etablerings datumet.  Innehavarens uppläggnings datum kanske inte alltid är det enskilda datum som gäller.
+> Informationen på den här sidan gäller endast kunder som hade befintliga Microsoft 365-klientorganisationar innan de nya datacenter i deras datacenter geo öppnats. Berättigande till migrering beror också på det specifika etableringsdatumet för tjänsten.  Datumet då klienten skapades kanske inte alltid är det datum som är viktigt.
   
-Berättigade Microsoft 365-kunder kan begära migrering för företagets viktigaste kund data på rest.  Programmet stöder förfrågningar för varje land under den tids period som beskrivs i tabellen och från kunder med ett berättigat registrerings land som är kopplat till deras Microsoft 365-klient.
+Kvalificerade Microsoft 365-kunder kan begära migrering för hela organisationens grundläggande kunddata i vila.  Programmet stödjer begäranden för varje land i den tidsperiod som beskrivs i tabellen och från kunder med ett berättigat registreringland som är associerat med deras Microsoft 365-klientorganisation.
   
 ## <a name="when-can-i-request-a-move"></a>När kan jag begära en flytt?
 
-| Kunder med anmälan land i | Begärans period börjar | Tids gräns för begäran |
+| Kunder med registreringland i | Begäransperiod har påbörjas | Tidsgräns för begäran |
 |:-----|:-----|:-----|
-|Japan   <br/> |Den 1 januari 2020  <br/> |30 juni 2020  <br/> |
-|Australien, Nya Zeeland, Fidji  <br/> |Den 1 januari 2020  <br/> |30 juni 2020  <br/> |
-|Indien  <br/> |Den 1 januari 2020  <br/> |30 juni 2020  <br/> |
-|Kanada  <br/> |Den 1 januari 2020  <br/> |30 juni 2020  <br/> |
-|Storbritannien  <br/> |Den 1 januari 2020  <br/> |30 juni 2020  <br/> |
-|Sydkorea  <br/> |Den 1 januari 2020  <br/> |30 juni 2020  <br/> |
-|Frankrike  <br/> |Den 1 januari 2020  <br/> |30 juni 2020  <br/> |
+|Japan   <br/> |1 januari 2020  <br/> |30 juni 2020  <br/> |
+|Australien, Nya Zeeland, Fiji  <br/> |1 januari 2020  <br/> |30 juni 2020  <br/> |
+|Indien  <br/> |1 januari 2020  <br/> |30 juni 2020  <br/> |
+|Kanada  <br/> |1 januari 2020  <br/> |30 juni 2020  <br/> |
+|Storbritannien  <br/> |1 januari 2020  <br/> |30 juni 2020  <br/> |
+|Sydkorea  <br/> |1 januari 2020  <br/> |30 juni 2020  <br/> |
+|Frankrike  <br/> |1 januari 2020  <br/> |30 juni 2020  <br/> |
 |Förenade Arabemiraten  <br/> |15 juli 2019  <br/> |30 juni 2020  <br/> |
 |Sydafrika  <br/> |25 juli 2019  <br/> |30 juni 2020  <br/> |
-|Schweiz, Liechtenstein  <br/> |Den 10 december 2019  <br/> |30 juni 2020  <br/> |
-|Norge  <br/> |15 april 2020  <br/> |Den 31 oktober 2020  <br/> |
-|Tyskland  <br/> |Den 1 november 2020  <br/> |Den 30 april 2021  <br/> |
-|Brasilien  <br/> |Den 18 november 2020  <br/> |Den 31 maj 2021  <br/> |
+|Schweiz, Liechtenstein  <br/> |10 december 2019  <br/> |30 juni 2020  <br/> |
+|Norge  <br/> |15 april 2020  <br/> |31 oktober 2020  <br/> |
+|Tyskland  <br/> |1 november 2020  <br/> |30 april 2021  <br/> |
+|Brasilien  <br/> |18 november 2020  <br/> |31 maj 2021  <br/> |
 
-## <a name="how-to-request-a-move"></a>Så här gör du för att begära en flytt
+## <a name="how-to-request-a-move"></a>Så här begär du en flytt
 
-Berättigade kunder kan se en sida i administrations centret för Microsoft 365, vilket gör det möjligt för dem att begära att deras grundläggande kund uppgifter flyttas till deras nya data Center region.  
+Berättigade kunder ser en sida i administrationscentret för Microsoft 365, där de kan begära att få sina basdata flyttade till det nya datacentret.  
   
-För att komma åt sidan i administrations centret för Microsoft 365, expandera **Inställningar** i navigerings fönstret till vänster och klicka sedan på **organisations inställningar**.
-Välj fliken **organisations profil** och välj sedan alternativet **data de**.
+För att komma åt sidan i administrationscentret för Microsoft 365 går du till navigeringsfönstret till vänster, **expanderar Inställningar** och klickar sedan **på Organisationsinställningar.**
+Välj fliken **Organisationsprofil** och välj sedan alternativet **Datahemhem .**
   
-Du kommer inte att se det här avsnittet om klient organisationen inte är berättigad till Microsoft 365-flytt-programmet.  Om din organisation har data de krav och du måste begära migrering markerar du kryss rutan och sedan **Spara**.
+Det här avsnittet visas inte om din klientorganisation inte är berättigad till Microsoft 365 Move Program.  Om din organisation har krav för att lagra data och du behöver begära migrering markerar du kryssrutan och sedan **Spara.**
   
-![Skärmen för att välja Data Center](../media/dataresidencyflyoutae.jpg)
+![Åtgärdsskärm för avanmälning till datacenter](../media/dataresidencyflyoutae.jpg)
   
-Texten i avsnittet **data de** ändras för att visa att **organisationen har begärt att flytta sina data** till rätt land och datum. Du får också ett bekräftelse meddelande i ditt meddelande Center. Detta bekräftar att du har begärt en flytt. 
+Texten i avsnittet **Data som lagras** ändras för att ange att **Din organisation** har begärt att flytta sina data till rätt land och datum. Du får också ett bekräftelsemeddelande i meddelandecentret. Detta bekräftar att du har begärt en flytt. 
   
-## <a name="what-happens-after-requesting-a-move"></a>Vad händer när du har begärt en flytt?
+## <a name="what-happens-after-requesting-a-move"></a>Vad händer när du begär en flytt?
 
-När vi har begärt ett flytt abonnemang bör vi planera dina grundläggande kund data på rest för kvalificerade Microsoft 365-tjänster så snabbt som våra operativa begränsningar tillåter det. Det går inte att dela ett specifikt datum eller tidsintervall för flytterna på grund av oförutsägbarheten hos många villkor. Klient organisationens administratörer kommer att se ett meddelande i meddelande Center när flytten för varje tjänst har genomförts.
+När vi begär en flytt planerar vi att flytta dina kärnkunddata i vila för kvalificerade Microsoft 365-tjänster så snabbt som våra driftbegränsningar tillåter. På grund av att många av villkoren är oförutsägbara kan vi inte dela ett visst datum eller en viss tidsperiod för flytten. Administratörer för klientorganisationen ser ett meddelande i meddelandecentret när flytten för varje tjänst har slutförts.
   
-Det kan ta upp till 24 månader innan tids gränsen för ditt land att slutföra.
+Flytten kan ta upp till 24 månader från tidsgränsen för begäran för ditt land att slutföra.
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Från och med den 2020 januari kan kunder i stödberättigade Office 365-länder välja att migrera data från Microsoft Teams Chat-tjänsten.  Kunder som tidigare valt att flytta data de kommer också att ha Teams till sina lokala data Center.  Inga ytterligare åtgärder krävs av dessa kunder.
+Från och med januari 2020 kan kunder i berättigade Office 365-länder registrera sig för migrering av chatttjänstdata för Microsoft Teams.  Kunder som tidigare registrerade sig för en datahemflyttning kommer också att få Teams flytta till sitt lokala datacenter geo.  Dessa kunder behöver inte vidta några ytterligare åtgärder.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Flytta grundläggande data till nya Office 365 Data Center-geos](moving-data-to-new-datacenter-geos.md)
+[Flytta basdata till nya geodata i Office 365-datacenter](moving-data-to-new-datacenter-geos.md)
 
 [Vanliga frågor och svar om dataflytt](data-move-faq.md)
 
-[Ny datacenter-geos för Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[Nya datacenter geos för Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   
 [Azure-tjänster efter region](https://azure.microsoft.com/regions/)
-  
-

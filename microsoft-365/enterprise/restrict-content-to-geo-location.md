@@ -1,5 +1,5 @@
 ---
-title: Begränsa SharePoint-webbplatsens innehåll till en Geo-plats
+title: Begränsa SharePoint-webbplatsinnehåll till en geoplats
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -12,25 +12,25 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: I den här artikeln lär du dig hur du begränsar SharePoint-webbplatser till en angiven Geo-plats i en multi-geo-miljö.
-ms.openlocfilehash: f2a09f177c68d30121c207287e053b2b25405fbc
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: I den här artikeln lär du dig hur du begränsar SharePoint-webbplatser till en viss geoplats i en geomiljö med flera platser.
+ms.openlocfilehash: 74255db19b2ecf9b333d33208c63da260b2bd747
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694384"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927270"
 ---
-# <a name="restrict-sharepoint-site-content-to-a-geo-location"></a>Begränsa SharePoint-webbplatsens innehåll till en Geo-plats
+# <a name="restrict-sharepoint-site-content-to-a-geo-location"></a>Begränsa SharePoint-webbplatsinnehåll till en geoplats
 
-Under vissa omständigheter kan du välja att tvinga en webbplats och dess fil innehåll att finnas kvar på den Geo-plats där webbplatsen skapades, antingen genom att förhindra att webbplatsen flyttas eller genom att förhindra att webbplats innehållet cachelagras på en annan Geo-plats.
+I vissa fall kan du välja att tillämpa en webbplats och dess filinnehåll på den geoplats där webbplatsen skapades, antingen genom att förhindra att webbplatsen flyttas eller genom att förhindra cachelagring av webbplatsens filinnehåll på en annan geoplats.
 
-Du kan göra det genom att använda cmdleten [set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) med parametern **RestrictedToGeo** . Den här parametern har standardvärdet NULL men du kan ändra den till något av följande:
+Det kan du göra genom att använda cmdleten [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) med **parametern RestrictedToGeo.** Den här parametern har standardvärdet NULL, men du kan ändra den till något av följande:
 
-|Av|Beskrivning|
+|Begränsning|Beskrivning|
 |:----------|:----------|
-|Begränsning|Webbplatsen kan flyttas till en annan Geo-plats.|
-|BlockMoveOnly|Webbplatsen kan inte flyttas till en annan Geo-plats, men webbplats innehållet kan cachelagras på andra geo platser.|
-|BlockFull|Webbplatsen kan inte flyttas till en annan Geo-plats och fullständig fil innehåll lagras inte i andra geo-platser. Filernas titel (skördad från innehållet), fil namnet och andra egenskaper för filen kan fortfarande lagras i andra geo-platser.<br>Innehåll som lagras på webbplatsen innan det var konfigurerat till BlockFull kan fortsätta att cachelagras på andra geo platser.|
+|NoRestriction|Webbplatsen kan flyttas till en annan geoplats.|
+|BlockMoveOnly|Webbplatsen kan inte flyttas till en annan geoplats, men webbplatsinnehållet kan cachelagras på andra geoplatser.|
+|BlockFull|Webbplatsen kan inte flyttas till en annan geoplats och fullständigt filinnehåll cachelagras inte på andra geoplatser. Filernas namn (som inlagrats från innehållet), filnamnet och andra egenskaper för filen kan fortfarande cachelagras på andra geoplatser.<br>Innehåll som lagrats på webbplatsen innan den konfigurerades på BlockFull kan fortsätta att cachelagras på andra geoplatser.|
 
 Använd följande syntax:
 

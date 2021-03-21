@@ -1,5 +1,5 @@
 ---
-title: Planera uppgraderingen från Office 2007 eller 2010 servrar och klienter
+title: Planera uppgraderingen från Office 2007- eller 2010-servrar och -klienter
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,97 +15,97 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - seo-marvel-apr2020
-description: Den här artikeln innehåller resurser för användare som använder Office 2007 eller Office 2010 för att hjälpa dem planera sin uppgradering.
-ms.openlocfilehash: 3193be0fb7b386f78ed4bdb9b80f2a2da72102b4
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+description: Den här artikeln innehåller resurser för användare som använder Office 2007 eller Office 2010 som hjälper dem att planera uppgraderingen.
+ms.openlocfilehash: 65f635e5c6195222ef2e39898cb1da2ee0dc0df0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951145"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927472"
 ---
-# <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planera uppgraderingen från Office 2007 eller Office 2010-servrar och-klienter
+# <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planera uppgraderingen från Office 2007- eller Office 2010-servrar och -klienter
 
-*Den här artikeln gäller både Microsoft 365 för Enterprise och Office 365 för företag.*
+*Den här artikeln gäller både Microsoft 365 för företag och Office 365 för företag.*
 
-Om din organisation använder äldre versioner av Office-produkter och servrar är det dags att börja planera uppgraderingen. Office 2007-produkter och-tjänster har nått [Supportens slut](upgrade-from-office-2007-servers-and-products.md). För Office 2010-produkter och-tjänster:
+Om din organisation använder gamla versioner av Office-produkter och -servrar är det nu ett bra tillfälle att börja planera din uppgradering. Supporten för Office 2007-produkter och -tjänster [har nu gått ut.](upgrade-from-office-2007-servers-and-products.md) För Office 2010-produkter och -tjänster:
 
-- Office 2010 och Exchange 2010 nådde sin slut på support den *13 oktober 2020*. 
-- SharePoint 2010 och Project Server 2010 kommer att nå Supportens slut den *13 April 2021*. 
+- Supporten för Office 2010 och Exchange 2010 tog slut *den 13 oktober 2020.* 
+- Supporten för SharePoint 2010 och Project Server 2010 tar slut *den 13 april 2021.* 
 
-Mer information finns i [Uppgradera från Office 2010-servrar och-klienter](upgrade-from-office-2010-servers-and-products.md).
+Mer information finns i [Uppgradera från Office 2010-servrar och -klienter.](upgrade-from-office-2010-servers-and-products.md)
 
 Använd resurserna i den här artikeln för att komma igång med uppgraderingen.
 
 ## <a name="what-is-microsoft-365"></a>Vad är Microsoft 365?
 
-[Microsoft 365](https://www.microsoft.com/microsoft-365) är en kombination av innovativa Office-appar, intelligenta moln tjänster och världs klass säkerhet som är utformade för att hjälpa dig att uppnå mer.
+[Microsoft 365](https://www.microsoft.com/microsoft-365) är en kombination av innovativa Office-appar, intelligenta molntjänster och säkerhet i världsklass som är utformad för att hjälpa dig att uppnå mer.
 
-Microsoft 365 inkluderar licenser och funktioner för att säkerställa att din organisation arbetar med det senaste operativ systemet Windows. Det säkerställer också att dina Windows-, iOS-och Android-enheter har registrerats med och skyddas av principer som kräver data skydd. Dessutom uppdateras Windows 10 och dina Microsoft 365-appar för företag (tidigare kallat Office 365 ProPlus) klient program varan kontinuerligt för att inkludera de senaste funktionerna och säkerhets uppdateringarna.
+Microsoft 365 innehåller de licenser och funktioner som krävs för att säkerställa att din organisation arbetar med det senaste Windows-operativsystemet. Det säkerställer också att dina Windows-, iOS- och Android-enheter registreras med och skyddas av principer som kräver autentisering och dataskydd. Dessutom uppdateras Windows 10 och dina Microsoft 365-appar för företag (kallades tidigare Office 365 ProPlus) kontinuerligt med de senaste funktionerna och säkerhetsuppdateringarna.
   
-Microsoft 365 är ett sätt att digitalt omvandla ditt företag som kontinuerligt förbättrar enheter och produktivitets upplevelser som är aktiverade och säkra för Microsofts moln.
+Microsoft 365 är ett sätt att digitalt omvandla din verksamhet med ständigt förbättra enheter och produktivitetsupplevelser som aktiveras och skyddas av Microsofts moln.
  
-|Resurspool|Beskrivning|
+|Resurs|Beskrivning|
 |---|---|
-|[Microsoft 365](https://www.microsoft.com/microsoft-365)|Få information om versioner av Microsoft 365.|
-|[Microsoft 365 för företag-dokumentation](https://docs.microsoft.com/microsoft-365/business/)|Få detaljerad information om versionen av Microsoft 365 för små och medel stora företag.|
-|[Microsoft 365 för utbildning](https://docs.microsoft.com/microsoft-365/education/)|Få detaljerad information om den version av Microsoft 365 för utbildnings organisationer.|
-|[Microsoft 365 för företags dokumentation](https://docs.microsoft.com/microsoft-365/enterprise/)|Få detaljerad information om versionen av Microsoft 365 för företags organisationer.|
+|[Microsoft 365](https://www.microsoft.com/microsoft-365)|Få information om versionerna av Microsoft 365.|
+|[Microsoft 365 för företag-dokumentation](../business/index.yml)|Få detaljerad information om Microsoft 365-versionen för små och medelstora företag.|
+|[Dokumentation om Microsoft 365 för utbildning](/microsoft-365/education/)|Få detaljerad information om microsoft 365-versionen för utbildningsorganisationer.|
+|[Microsoft 365 för företag-dokumentation](./index.yml)|Få detaljerad information om Microsoft 365 för företag.|
 |||
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>Vad händer om jag inte uppgraderar?
 
-Du kan välja att inte uppgradera just nu. Dina lokala servrar och program kommer att fortsätta köras. Men när du inte längre får säkerhets uppdateringar eller support alternativ kan din organisation vara utsatt för säkerhets brott. Vi rekommenderar starkt att du planerar uppgraderingen snart. Du kan uppgradera till Microsoft 365 eller till nyare versioner av dina lokala servrar och program.
+Du kan välja att inte uppgradera just nu. Dina lokala servrar och program fortsätter att köras. Men när du inte längre får säkerhetsuppdateringar eller supportalternativ kan organisationen vara sårbar för säkerhetsöverträdelser. Vi rekommenderar starkt att du planerar din uppgradering snart. Du kan uppgradera till Microsoft 365 eller till nyare versioner av dina lokala servrar och program.
 
-## <a name="what-upgrade-options-are-available"></a>Vilka uppgraderings alternativ finns tillgängliga?      
+## <a name="what-upgrade-options-are-available"></a>Vilka uppgraderingsalternativ finns tillgängliga?      
 
-Organisationer bör överväga flera uppgraderings alternativ:
+Organisationer bör överväga flera uppgraderingsalternativ:
 
-- **Uppgradera dina lokala servrar och program.** Om du använder Office-produkter och lokala serverprogram kan du läsa följande planerings innehåll:<br/> 
+- **Uppgradera dina lokala servrar och program.** Om du använder lokala Office-produkter och serverprogram kan du gå till följande planeringsinnehåll:<br/> 
 
-  |Office 2007-produkter och-tjänster|Office 2010-produkter och-tjänster|
+  |Office 2007-produkter och -tjänster|Office 2010-produkter och -tjänster|
   |---|---|
-  |[Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) (skriv bord)|[Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) (skriv bord)|
+  |[Office 2007](/DeployOffice/office-2007-end-support-roadmap) (stationär dator)|[Office 2010](/DeployOffice/office-2010-end-support-roadmap) (stationär dator)|
   |[Exchange 2007](exchange-2007-end-of-support.md)|[Exchange 2010](exchange-2010-end-of-support.md)|
   |[SharePoint 2007](sharepoint-2007-end-of-support.md)|[SharePoint 2010](upgrade-from-sharepoint-2010.md)|
-  |[Office Communications Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)|[Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)|
+  |[Office Communications Server](/skypeforbusiness/plan-your-deployment/upgrade)|[Lync Server 2010](/skypeforbusiness/plan-your-deployment/upgrade)|
   |[Project Server 2007](project-server-2007-end-of-support.md)|[Project Server 2010](project-server-2010-end-of-support.md)|
   |[PerformancePoint Server 2007](pps-2007-end-of-support.md)||
  
-- **Implementera en hybrid lösning med Microsoft 365 eller Office 365.** En hybrid lösning använder dina lokala servrar och program och deras moln motsvarigheter. Om du flyttar till molnet i faserna eller om du inte har någon lokal server och alla lokala program måste en hybrid lösning vara rätt för din organisation. Mer information finns i [Microsoft Cloud Architecture-modeller](../solutions/cloud-architecture-models.md). 
+- **Implementera en hybridlösning med Microsoft 365 eller Office 365.** En hybridlösning använder dina lokala servrar och program och deras moln motsvarigheter. Om du flyttar till molnet i faser eller om du måste behålla vissa servrar och program lokalt kan en hybridlösning vara rätt för din organisation. Mer information finns i Artikeln om [modeller i Microsoft Cloud-arkitekturen.](../solutions/cloud-architecture-models.md) 
     
-- **Gå till molnet med Microsoft 365 eller Office 365.** För många kunder är det en effektiv och kostnads effektiv lösning. En fullständig förflyttning till molnet gör det enklare att konfigurera och hantera den. Det här alternativet ger alla de senaste funktionerna och säkerhets uppdateringarna. Mer information finns i avsnittet [Vad är Microsoft 365?](#what-is-microsoft-365) i den här artikeln.
+- **Flytta till molnet med Microsoft 365 eller Office 365.** För många kunder är flytten till molnet en effektiv och kostnadseffektiv lösning. En fullständig övergång till molnet gör installationen och löpande hantering enklare. Med det här alternativet får du smidigt de senaste funktionerna och säkerhetsuppdateringarna. Mer information finns i avsnittet [Vad är Microsoft 365? i](#what-is-microsoft-365) den här artikeln.
     
-## <a name="can-i-get-help-for-my-organization"></a>Kan jag få hjälp med min organisation?
+## <a name="can-i-get-help-for-my-organization"></a>Kan jag få hjälp för min organisation?
 
-Om du vill ha hjälp med att planera uppgraderingen bör du överväga något av följande alternativ:
+Om du vill ha hjälp med att planera din uppgradering kan du överväga ett eller flera av följande alternativ:
 
-- Arbeta med en partner eller en volym licens specialist. [Hitta din Microsoft 365-partner eller åter försäljare](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx). 
+- Arbeta med en partner eller en volymlicensieringsspecialist. [Hitta din Microsoft 365-partner eller återförsäljare.](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx) 
 
-- Om organisationen köper ett kvalificerat antal Microsoft 365-licenser kan vårt FastTrack-team hjälpa dig genom konfigurerings processen. Mer information finns i [FastTrack för Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365).
+- Om din organisation köper ett kvalificerande antal Microsoft 365-licenser kan vårt FastTrack-team hjälpa dig under installationen. Mer information finns i [FastTrack för Microsoft 365.](https://www.microsoft.com/fasttrack/microsoft-365)
 
-- Om du är en del av en liten organisation eller om du föredrar att hantera organisationens Office-uppgradering själv kan du läsa [uppgradera dina Microsoft 365 Business-användare till den senaste Office-klienten](https://docs.microsoft.com/office365/admin/setup/upgrade-users-to-latest-office-client). 
+- Om du är en del av en liten organisation eller om du föredrar att hantera organisationens Office-uppgradering själv kan du gå till Uppgradera [Microsoft 365 Business-användare](/office365/admin/setup/upgrade-users-to-latest-office-client)till den senaste Office-klienten. 
   
-## <a name="im-a-home-user-what-do-i-do"></a>Jag är hem användare. Vad ska jag göra?
+## <a name="im-a-home-user-what-do-i-do"></a>Jag är hemanvändare. Vad ska jag göra?
 
-Om du använder Office 2007 eller Office 2010 hemma bör du överväga följande uppgraderings alternativ:
+Om du använder Office 2007 eller Office 2010 hemma bör du tänka på följande uppgraderingsalternativ:
 
-- **Använda Office i en webbläsare gratis.** Skapa, Visa och redigera Office-filer i webbläsaren. Få till gång till filerna från andra enheter med Internet åtkomst. 
+- **Använd Office i en webbläsare kostnadsfritt.** Skapa, visa och redigera Office-filer i webbläsaren. Få åtkomst till filerna från i så fall vilken enhet som helst som har tillgång till Internet. 
 
-  [Office på webben](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) innehåller [Word för webben](https://go.microsoft.com/fwlink/p/?linkid=746664), [Excel för webben](https://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint för webben](https://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote för webben](https://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](https://go.microsoft.com/fwlink/p/?linkid=746675), [e-post](https://go.microsoft.com/fwlink/p/?linkid=746676), [kalender](https://go.microsoft.com/fwlink/p/?linkid=746678)och [OneDrive](https://go.microsoft.com/fwlink/p/?linkid=746679). Gå till [Office.com](https://office.com) och logga in med ditt [Microsoft-konto](https://account.microsoft.com/account). Om du inte har ett Microsoft-konto kan du skapa ett på [Office.com](https://office.com).
+  [Office på webben](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) innehåller [Word](https://go.microsoft.com/fwlink/p/?linkid=746664)för webben, [Excel](https://go.microsoft.com/fwlink/p/?linkid=746665)för webben, PowerPoint för [webben,](https://go.microsoft.com/fwlink/p/?linkid=746666) [OneNote](https://go.microsoft.com/fwlink/p/?linkid=746674)för webben, [Sway,](https://go.microsoft.com/fwlink/p/?linkid=746675)E-post, [](https://go.microsoft.com/fwlink/p/?linkid=746676) [Kalender](https://go.microsoft.com/fwlink/p/?linkid=746678) [och OneDrive.](https://go.microsoft.com/fwlink/p/?linkid=746679) Kom igång genom att [gå](https://office.com) Office.com logga in med ditt [Microsoft-konto.](https://account.microsoft.com/account) Om du inte har något Microsoft-konto kan du skapa ett på [Office.com](https://office.com).
 
-- **Prova Microsoft 365-familjen.** Starta en utvärderings version av [Microsoft 365-familjen](https://www.microsoft.com/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?rtc=2&activetab=pivot:overviewtab) för att se hur det fungerar för dig. Med Microsoft 365-familjen kan du använda moln lagring med OneDrive.
+- **Prova Microsoft 365 Family.** Starta en utvärderingsversion [av Microsoft 365 Family](https://www.microsoft.com/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?rtc=2&activetab=pivot:overviewtab) för att se hur det fungerar för dig. Med Microsoft 365 Family får du molnlagring med OneDrive.
 
-  Stöd för Windows 7 [upphörde 14 januari 2020](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support). De versioner av Word, Excel, PowerPoint, Outlook, Publisher och Access som tillhandahålls med Office 365 Home eller Office 365 personal och som körs på Windows 7-enheter får säkerhets uppdateringar men inte funktions uppdateringar. [Uppgradera dina Windows 7-enheter till Windows 10](https://support.microsoft.com/help/12435/windows-10-upgrade-faq)för att fortsätta att få funktions uppdateringar för dessa program.
+  Supporten för Windows 7 [upphörde 14 januari 2020.](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support) De versioner av Word, Excel, PowerPoint, Outlook, Publisher och Access som medföljer Office 365 Home eller Office 365 Personal och som körs på Windows 7-enheter får säkerhetsuppdateringar men inte funktionsuppdateringar. Om du vill fortsätta få funktionsuppdateringar för de här programmen [uppgraderar du dina Windows 7-enheter till Windows 10.](https://support.microsoft.com/help/12435/windows-10-upgrade-faq)
     
-- **Köp Office Home &amp; student.** Om du väljer det här alternativet kan du göra en engångs betalning och sedan installera Office på din Windows-dator eller Mac. Detta inköp är inte ett abonnemang; Det är en engångs licens för beständig användning för en dator. Se [kraven](https://office.com/systemrequirements) och välj sedan en version.
+- **Köp Office Home &amp; Student.** Om du väljer det här alternativet gör du ett enkelt köp och installerar sedan Office på din Windows PC eller Mac. Det här köpet är inte en prenumeration. det är en evig användningslicens för en dator som bara används en gång. Visa kraven [och](https://office.com/systemrequirements) välj sedan en version.
 
-  - Om din Windows-dator kör Windows 10 kan du ta reda på [Office Home & Student 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8).
+  - Om din Windows-dator kör Windows 10 kan det vara bra att skaffa [Office Home & Student 2019.](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8)
 
-  - Om din Windows-dator kör Windows 7, 8 eller 8,1 och du inte uppgraderar till Windows 10 nu kan du få Office Home & Student 2016 eller en annan version av Microsoft Office. Du kan skaffa den från en auktoriserad åter försäljare.
+  - Om din Windows-dator kör Windows 7, 8 eller 8.1 och du inte uppgraderar till Windows 10 nu kan det vara bra att skaffa Office Home & Student 2016 eller någon annan version av Microsoft Office. Du kan hämta den från en auktoriserad återförsäljare.
      
-    Stöd för Windows 7 [upphörde 14 januari 2020](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support). Microsoft tillhandahåller inte längre säkerhets uppdateringar för det. Uppgradera dina Windows 7-enheter till Windows 10 för fortsatta säkerhets-och funktions uppdateringar och pågående support.
+    Supporten för Windows 7 [upphörde 14 januari 2020.](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support) Microsoft tillhandahåller inte längre säkerhetsuppdateringar för den. Uppgradera dina Windows 7-enheter till Windows 10 för att få fortsatt säkerhet och funktionsuppdateringar och kontinuerlig support.
 
-Om du väljer att inte uppgradera nu fortsätter dina Office-program att köras enligt [tids linjerna](https://support.microsoft.com/lifecycle/search/13615). För att få säkerhets uppdateringar eller nya och förbättrade funktioner måste du dock uppgradera.
+Om du väljer att inte uppgradera nu kommer Office-apparna att fortsätta köras enligt [tidslinjerna.](https://support.microsoft.com/lifecycle/search/13615) Men om du vill få säkerhetsuppdateringar eller nya och förbättrade funktioner måste du uppgradera.
    
 ## <a name="next-steps"></a>Nästa steg
 
@@ -114,4 +114,4 @@ Om du väljer att inte uppgradera nu fortsätter dina Office-program att köras 
    
 ## <a name="related-topics"></a>Relaterade ämnen
   
-[Microsofts livs cykel policy](https://go.microsoft.com/fwlink/?linkid=865200)
+[Microsoft Lifecycle-policy](/lifecycle/)

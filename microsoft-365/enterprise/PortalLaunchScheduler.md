@@ -1,5 +1,5 @@
 ---
-title: Starta portalen med hjälp av portalen starta Schemaläggaren
+title: Starta portalen med hjälp av Portal Launch Scheduler
 ms.author: jhendr
 author: jhendr
 manager: pamgreen
@@ -16,65 +16,65 @@ ms.custom: Adm_O365
 search.appverid:
 - SPO160
 - MET150
-description: I den här artikeln beskrivs hur du kan starta portalen med hjälp av portalen starta Schemaläggaren
-ms.openlocfilehash: 66912f5730c580bd75282a64124fefcdf262d738
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+description: I den här artikeln beskrivs hur du kan starta portalen med hjälp av Portal Launch Scheduler
+ms.openlocfilehash: e39f00dbc63ae7f1dcaf907d9c67df2c1683efc6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49864882"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926148"
 ---
-# <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>Starta portalen med hjälp av portalen starta Schemaläggaren
+# <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>Starta portalen med hjälp av Portal Launch Scheduler
 
-En portal är en SharePoint-webbplats på ditt intranät som har ett stort antal webbplats läsare som använder innehåll på webbplatsen. Att starta din portal i vågor är en viktig del av att säkerställa att användarna har en smidig och snabb åtkomst till en ny SharePoint Online-Portal. 
+En portal är en SharePoint-webbplats i ditt intranät som har många användare som använder innehåll på webbplatsen. Att lansera portalen i vågor är en viktig del av att se till att användarna får en smidig och fungerande upplevelse av att komma åt en ny SharePoint Online-portal. 
 
-Att starta i vågor är ett viktigt sätt att samla in din portal, enligt vad som beskrivs i [Planera hur portalen ska lanseras](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). Med portalen kan du använda Schemaläggaren för att hjälpa dig att följa en nedrullningsbar våg med nedrullnings bara genom att hantera omdirigeringarna för den nya portalen. Under varje vågor kan du samla in feedback och övervaka prestanda under varje enskild installation. Det här är fördelen med att vi tar en långsam introduktion till portalen, vilket ger dig möjligheten att pausa och lösa problem innan du fortsätter med nästa våg, och slutligen säkerställa en positiv upplevelse för dina användare. 
+Att starta i vågor är ett viktigt sätt att distribuera portalen, enligt beskrivningen i Planera lanseringen av portalen [i SharePoint Online.](./planportallaunchroll-out.md?view=o365-worldwide) Portal Launch Scheduler har utformats för att hjälpa dig att följa en fas-/fas-utrullningsmetod genom att hantera omdirigeringarna för den nya portalen. Under varje vågor kan du samla in feedback från användare och övervaka prestanda under varje distributionsvåg. Detta har fördelen med att långsamt introducera portalen, vilket ger dig möjlighet att pausa och lösa problem innan du fortsätter med nästa omgång, och i slutänden säkerställa en positiv upplevelse för dina användare. 
 
 Det finns två typer av omdirigering: 
-- dubbelriktad: starta en ny modern SharePoint Online-Portal för att ersätta en befintlig SharePoint-klassiskt eller modern Portal 
-- omdirigering av tillfälliga sidor: starta en ny modern SharePoint Online-Portal utan befintlig SharePoint-Portal
+- dubbelriktad: starta en ny modern SharePoint Online-portal för att ersätta en befintlig klassisk eller modern SharePoint-portal 
+- Tillfällig sidomdirigering: starta en ny modern SharePoint Online-portal utan en befintlig SharePoint-portal
 
-Du kan bara använda Schemaläggaren för att starta moderna SharePoint online-portaler (till exempel kommunikations webbplatser). Lanseringar måste schemaläggas minst 7 dagar i förväg. Antalet vågor som behövs bestäms av det förväntade antalet användare. Innan du schemalägger en portal start måste du köra [verktyget kör diagnostik för SharePoint](https://aka.ms/perftool) för att kontrol lera att start sidan på portalen är felfri. I slutet av Portal start kommer alla användare som har behörighet till webbplatsen att få åtkomst till den nya webbplatsen. 
+Schemaläggaren för portalstart är endast tillgänglig för att starta moderna SharePoint Online-portaler (dvs. kommunikationswebbplatser). Lanseringar måste schemaläggas minst 7 dagar i förväg. Antalet vågor som krävs bestäms av det förväntade antalet användare. Innan du schemalägger en portalstart måste verktyget Siddiagnostik för [SharePoint](./page-diagnostics-for-spo.md) köras för att kontrollera att startsidan på portalen är felfri. I slutet av portalens start kan alla användare med behörighet till webbplatsen få åtkomst till den nya webbplatsen. 
 
-Om du vill ha mer information om hur du startar en lyckad Portal följer du de grundläggande principerna, metoderna och rekommendationerna i [skapa, lansera och underhålla en felfri Portal](https://docs.microsoft.com/sharepoint/portal-health). 
+Om du vill ha mer information om hur du startar en lyckad portal följer du de grundläggande principerna, metoderna och rekommendationerna i Skapa, starta och [underhålla en felfri portal.](/sharepoint/portal-health) 
 
 > [!NOTE]
-> Den här funktionen är inte tillgänglig för Office 365 Germany, Office 365 drivs av 21Vianet (Kina) eller Microsoft 365 amerikansk myndighets plan.
+> Den här funktionen är inte tillgänglig för Office 365 Germany-, Office 365-abonnemang som drivs av 21Vianet (Kina) eller Microsoft 365 för amerikanska myndigheter.
 
-## <a name="app-setup-and-connecting-to-sharepoint-online"></a>Program inställningar och ansluta till SharePoint Online
-1. [Ladda ner den senaste SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
+## <a name="app-setup-and-connecting-to-sharepoint-online"></a>Appkonfiguration och anslutning till SharePoint Online
+1. [Ladda ned den senaste versionen av SharePoint Online Management Shell.](https://go.microsoft.com/fwlink/p/?LinkId=255251)
 
     > [!NOTE]
-    > Om du har installerat en tidigare version av SharePoint Online Management Shell går du till Lägg till eller ta bort program och avinstallerar SharePoint Online Management Shell. <br>På sidan Download Center väljer du ditt språk och klickar sedan på knappen Ladda ned. Du uppmanas att välja mellan att ladda ner en x64-och x86. msi-fil. Ladda ner x64-filen om du kör 64-bitars versionen av Windows eller x86-filen om du kör 32-bitars versionen. Om du inte vet kan du läsa [vilken version av operativ systemet Windows använder jag?](https://support.microsoft.com/help/13443/windows-which-operating-system). När fil hämtningen är klar kör du den och följer anvisningarna i installations guiden.
+    > Om du har installerat en tidigare version av SharePoint Online Management Shell går du till Lägga till eller ta bort program och avinstallerar "SharePoint Online Management Shell". <br>På sidan Download Center väljer du språk och klickar sedan på knappen Ladda ned. Du uppmanas att välja mellan att ladda ned en x64- och x86-MSI-fil. Ladda ned x64-filen om du kör 64-bitarsversionen av Windows eller x86-filen om du kör 32-bitarsversionen. Om du inte vet, se Vilken [version av Windows-operativsystemet använder jag?](https://support.microsoft.com/help/13443/windows-which-operating-system). När filen har laddats ned kör du den och följer anvisningarna i Installationsguiden.
 
-2. Anslut till SharePoint som [Global administratör eller SharePoint-administratör](/sharepoint/sharepoint-admin-role) i Microsoft 365. Mer information finns i [komma igång med SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+2. Anslut till SharePoint som [global administratör eller SharePoint-administratör](/sharepoint/sharepoint-admin-role) i Microsoft 365. Mer information finns i Komma [igång med SharePoint Online Management Shell.](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 
-## <a name="view-any-existing-portal-launch-setups"></a>Visa befintliga Portal Start Inställningar
+## <a name="view-any-existing-portal-launch-setups"></a>Visa eventuella befintliga startinställningar för portalen
 
-Så här ser du om det finns befintliga konfigurationer för Portal start:
+Så här ser du om det finns befintliga konfigurationer för portalstart:
 
    ```PowerShell
    Get-SPOPortalLaunchWaves -LaunchSiteUrl <object> -DisplayFormat <object>
    ```
 
-## <a name="schedule-a-portal-launch-on-the-site"></a>Schemalägga en portal lansering på webbplatsen
+## <a name="schedule-a-portal-launch-on-the-site"></a>Schemalägga en portalstart på webbplatsen
 
-Antalet vågor är beroende av den förväntade start storleken. 
-- Mindre än 10 000 användare: 1 våg
-- 10 k till 30k användare: 3 vågor 
-- 30k + till 100K användare: 5 vågor
-- Fler än 100K användare: 5 vågor och kontakta ditt Microsoft-gruppteam
+Antalet vågor som krävs beror på den förväntade startstorleken. 
+- Mindre än 10 000 användare: 1 omgång
+- 10k-till-30k-användare: 3 vågor 
+- 30k+ till 100 000 användare: 5 vågor
+- Fler än 100 000 användare: 5 vågor och kontakta ditt Microsoft-kontoteam
 
-### <a name="steps-for-bidirectional-redirection"></a>Steg för att utföra dubbelriktad omdirigering
+### <a name="steps-for-bidirectional-redirection"></a>Steg för dubbelriktad omdirigering
 
-Med dubbelriktad omdirigering kan du starta en ny modern SharePoint Online-Portal för att ersätta en befintlig SharePoint-klassiskt eller modern Portal. Användare i aktiva vågor omdirigeras till den nya webbplatsen oavsett om de navigerar till den gamla eller nya webbplatsen. Användare i en icke-lanserad våg som försöker komma åt den nya webbplatsen omdirigeras tillbaka till den gamla platsen tills dess att de har startats. 
+Dubbelriktad omdirigering innebär att en ny modern SharePoint Online-portal lanseras så att en befintlig klassisk eller modern SharePoint-portal ersätts. Användare i aktiva vågor omdirigeras till den nya webbplatsen oavsett om de navigerar till den gamla eller nya webbplatsen. Användare i en icke-lanserad omgång som försöker komma åt den nya webbplatsen omdirigeras tillbaka till den gamla webbplatsen tills deras omgång startar. 
 
-Vi stöder bara omdirigering mellan standard start sidan på den gamla webbplatsen och standard start sidan på den nya webbplatsen. Om du har administratörer eller ägare som behöver komma åt de gamla och nya platserna utan att behöva omdirigeras kontrollerar du att de visas med hjälp av `WaveOverrideUsers` parametern.
+Vi stöder endast omdirigering mellan standardhemsidan på den gamla webbplatsen och standardhemsidan på den nya webbplatsen. Om du har administratörer eller ägare som behöver åtkomst till de gamla och nya webbplatserna utan att omdirigeras, se till att de listas med `WaveOverrideUsers` parametern.
 
-Så här migrerar du användare från en befintlig SharePoint-webbplats till en ny SharePoint-webbplats:
+Så här migrerar du användare från en befintlig SharePoint-webbplats till en ny SharePoint-webbplats på ett stegat sätt:
 
-1. Kör följande kommando för att ange hur portalen ska lanseras.
+1. Kör följande kommando för att ange portalstartsvågar.
    
    ```PowerShell
     New-SPOPortalLaunchWaves -LaunchSiteUrl <object> -RedirectionType Bidirectional -RedirectUrl <string> -ExpectedNumberOfUsers <object> -WaveOverrideUsers <object> -Waves <object>
@@ -88,13 +88,13 @@ Exempel:
 {Name:"Wave 3", Groups:["Viewers 3"], LaunchDateUtc:"2020/10/16"}]'
    ```
 
-2. Slutför verifiering. Det kan ta 5-10 minuter för omdirigeringen att slutföra sin konfiguration via tjänsten. 
+2. Bekräfta verifieringen. Det kan ta 5–10 minuter innan omdirigeringen slutförs i hela tjänsten. 
 
 ### <a name="steps-for-redirection-to-temporary-page"></a>Steg för omdirigering till tillfällig sida
 
-Omdirigering av tillfälliga sidor ska användas när det inte finns någon befintlig SharePoint-Portal. Användare dirigeras till en ny modern SharePoint Online-Portal på ett stadium sätt. Om en användare har en Wave-åtgärd som inte har startats kommer de att omdirigeras till en tillfällig sida (valfri URL). 
+Tillfällig sidomdirigering bör användas när det inte finns någon befintlig SharePoint-portal. Användare dirigeras till en ny modern SharePoint Online-portal på ett enhetligt sätt. Om en användare går i en omgång som inte har startats omdirigeras de till en tillfällig sida (alla URL-adresser). 
 
-1. Kör följande kommando för att ange hur portalen ska lanseras.
+1. Kör följande kommando för att ange portalstartsvågar.
    
       ```PowerShell
     New-SPOPortalLaunchWaves -LaunchSiteUrl <object> -RedirectionType ToTemporaryPage -RedirectUrl <string> -ExpectedNumberOfUsers <object> -WaveOverrideUsers <object> -Waves <object>
@@ -108,28 +108,28 @@ Exempel:
 {Name:"Wave 3", Groups:["Viewers 3"], LaunchDateUtc:"2020/10/16"}]'
    ```
 
-2. Slutför verifiering. Det kan ta 5-10 minuter för omdirigeringen att slutföra sin konfiguration via tjänsten. 
+2. Bekräfta verifieringen. Det kan ta 5–10 minuter innan omdirigeringen slutförs i hela tjänsten. 
 
-## <a name="pause-or-restart-a-portal-launch-on-the-site"></a>Pausa eller starta om en portal lansering på webbplatsen
+## <a name="pause-or-restart-a-portal-launch-on-the-site"></a>Pausa eller starta om en portalstart på webbplatsen
 
-1. Om du vill pausa en pågående Portal start och tillfälligt förhindra att kommande våg förlopp inträffar kör du följande kommando:
+1. Kör följande kommando för att pausa en pågående portalstart och tillfälligt förhindra att kommande omgångsförlopp uppstår:
 
    ```PowerShell
    Set-SPOPortalLaunchWaves -Status Pause - LaunchSiteUrl <object>
    ```
 2. Verifiera att alla användare omdirigeras till den gamla webbplatsen. 
 
-3. Om du vill starta om en portal lansering som har pausats kör du följande kommando:
+3. Om du vill starta om en portalstart som har pausats kör du följande kommando:
 
    ```PowerShell
    Set-SPOPortalLaunchWaves -Status Restart - LaunchSiteUrl <object>
    ```
    
-4. Kontrol lera att omdirigeringen nu har återställts. 
+4. Kontrollera att omdirigeringen nu har återställts. 
 
-## <a name="delete-a-portal-launch-on-the-site"></a>Ta bort en portal lansering på webbplatsen
+## <a name="delete-a-portal-launch-on-the-site"></a>Ta bort en portalstart på webbplatsen
 
-1. Kör följande kommando för att ta bort en portal som är schemalagd eller pågående för en webbplats.
+1. Kör följande kommando för att ta bort en portalstart som är schemalagd eller pågår för en webbplats.
 
    ```PowerShell
    Remove-SPOPortalLaunchWaves -LaunchSiteUrl <object>
@@ -138,4 +138,4 @@ Exempel:
 2. Verifiera att ingen omdirigering sker för alla användare.
 
 ## <a name="learn-more"></a>Mer information
-[Planera hur portalen ska lanseras i SharePoint Online](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out)
+[Planera lanseringsplanen för portalen i SharePoint Online](./planportallaunchroll-out.md)

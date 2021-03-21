@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Mer information om olika typer av förklaringar i Microsoft SharePoint Syntex
-ms.openlocfilehash: caba92b635feaf8f87e2c487559f70be3fab6df9
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 5187b27438f25db1a2714f1fbc7b31db6d060ccc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242625"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928406"
 ---
 # <a name="introduction-to-explanation-types"></a>Introduktion till förklaringstyper
 
@@ -71,7 +71,7 @@ Om du även har krav på stor begynnelsebokstav i din mönsterlista kan du välj
    ![Endast exakta versaler](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> I stället för att manuellt skapa en förklaring för en mönsterlista kan du använda [förklaringsbiblioteket](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) för att använda färdiga mönsterlistmallar för vanliga mönsterlistor, till exempel *datum*, *telefonnummer*, *kreditkortsnummer* osv.
+> I stället för att manuellt skapa en förklaring för en mönsterlista kan du använda [förklaringsbiblioteket](#use-explanation-templates) för att använda färdiga mönsterlistmallar för vanliga mönsterlistor, till exempel *datum*, *telefonnummer*, *kreditkortsnummer* osv.
 
 ## <a name="proximity"></a>Närhet 
 

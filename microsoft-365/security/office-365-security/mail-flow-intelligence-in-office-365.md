@@ -11,15 +11,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
-description: Administratörer kan få mer information om felkoder som associeras med meddelandeleverans med hjälp av kopplingar (kallas även för e-postflödesinformation).
+description: Administratörer kan få mer information om de felkoder som associeras med meddelandeleverans med kopplingar (kallas även för e-postflödesinformation).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 32a98459ce3d3494e576b10d5c5b097393ee2335
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: f9cd05664d055b1635583c24000ca4afa604b237
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289669"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926874"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>E-postflödesinformation i EOP
 
@@ -30,15 +30,15 @@ ms.locfileid: "50289669"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection (EOP) utan Exchange Online-postlådor använder du vanligtvis en koppling för att dirigera e-postmeddelanden från EOP till din lokala e-postmiljö. Du kan också använda en koppling för att dirigera meddelanden från Microsoft 365 till en partnerorganisation. När Microsoft 365 inte kan leverera dessa meddelanden via anslutningen är de i kö i Microsoft 365. Microsoft 365 fortsätter att försöka leverera igen för varje meddelande i 24 timmar. Efter 24 timmar upphör det köade meddelandet att gälla och meddelandet returneras till den ursprungliga avsändaren i en rapport om utebliven leverans (kallas även NDR-rapport eller icke-leveranskavvisningsmeddelande).
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor använder du vanligtvis en anslutare för att dirigera e-postmeddelanden från EOP till din lokala e-postmiljö. Du kan också använda en koppling för att dirigera meddelanden från Microsoft 365 till en partnerorganisation. När Microsoft 365 inte kan leverera dessa meddelanden via anslutningen är de i kö i Microsoft 365. Microsoft 365 fortsätter att försöka leverera för varje meddelande i 24 timmar. Efter 24 timmar upphör det köade meddelandet att gälla och meddelandet returneras till den ursprungliga avsändaren i en rapport om utebliven leverans (kallas även för en NDR-rapport eller icke-leveranskavsändare).
 
-Microsoft 365 genererar ett fel när ett meddelande inte kan levereras med hjälp av en koppling. De vanligaste felen och deras lösningar beskrivs i den här artikeln. Sammantaget kallas köer och meddelandefel för olevererbara meddelanden som skickas via kopplingar _e-postflödesinformation._
+Microsoft 365 genererar ett fel när ett meddelande inte kan levereras med hjälp av en koppling. De vanligaste felen och deras lösningar beskrivs i den här artikeln. Köer och meddelandefel för meddelanden som inte kunde levereras via kopplingar kallas gemensamt för _e-postflödesinformation._
 
-## <a name="error-code-450-44312-dns-query-failed"></a>Felkod: 450 4.4.312 DNS-frågan misslyckades
+## <a name="error-code-450-44312-dns-query-failed"></a>Felkod: DNS-frågan 450 4.4.312 misslyckades
 
 Vanligtvis innebär det här felet att Microsoft 365 försökte ansluta till den smarta värden som anges i kopplingen, men DNS-frågan för att hitta den smarta värdens IP-adresser misslyckades. Möjliga orsaker till det här felet är:
 
-- Det är ett problem med domänens DNS-värdtjänst (den part som har de auktoritativa namnservrarna för domänen).
+- Det är ett problem med domänens DNS-värdtjänst (den part som upprätthåller de auktoritativa namnservrarna för domänen).
 
 - Domänen har nyligen upphört att gälla, så MX-posten kan inte hämtas.
 
@@ -48,69 +48,69 @@ Vanligtvis innebär det här felet att Microsoft 365 försökte ansluta till den
 
 - Arbeta med DNS-värdtjänsten för att identifiera och åtgärda problemet med din domän.
 
-- Om felet kommer från partnerorganisationen (till exempel ett moln från tredje part som tjänstprovider) kontaktar du din partner för att åtgärda problemet.
+- Om felet kommer från din partnerorganisation (t.ex. en tredjepartsleverantör av molntjänster) kontaktar du din partner för att lösa problemet.
 
-## <a name="error-code-450-44315-connection-timed-out"></a>Felkod: 450 4.4.315 Anslutningens time out
+## <a name="error-code-450-44315-connection-timed-out"></a>Felkod: 450 4.4.315 Anslutningens timed out
 
-Vanligtvis innebär det att Microsoft 365 inte kan ansluta till mål-e-postservern. Felinformationen förklarar problemet. Till exempel:
+Det innebär vanligtvis att Microsoft 365 inte kan ansluta till mål-e-postservern. I felinformationen förklaras problemet. Ett exempel:
 
-- Din lokala e-postserver är nere.
+- Din lokala e-postserver ligger nere.
 
-- Det finns ett fel i anslutningens inställningar för smarta värd, så Microsoft 365 försöker ansluta till fel IP-adress.
+- Det finns ett fel i anslutningens inställningar för smart värd, så Microsoft 365 försöker ansluta till fel IP-adress.
 
 ### <a name="how-do-i-fix-error-code-450-44315"></a>Hur åtgärdar jag felkod 450 4.4.315?
 
-- Ta reda på vilket scenario som gäller för dig och gör nödvändiga korrigeringar. Om e-postflödet till exempel har fungera korrekt och du inte har ändrat anslutningsinställningarna måste du kontrollera din lokala e-postmiljö för att se om servern är nere eller om det har skett några ändringar i nätverksinfrastrukturen (du har till exempel ändrat Internetleverantörer så att du nu har olika IP-adresser).
+- Ta reda på vilket scenario som gäller för dig och gör nödvändiga korrigeringar. Om e-postflödet till exempel har fungera korrekt och du inte har ändrat anslutningsinställningarna, måste du kontrollera din lokala e-postmiljö för att se om servern ligger nere, eller om det har gjorts några ändringar i nätverksinfrastrukturen (till exempel om du har ändrat internetleverantörer så att du nu har olika IP-adresser).
 
-- Om felet kommer från partnerorganisationen (till exempel ett moln från tredje part som tjänstprovider) kontaktar du din partner för att åtgärda problemet.
+- Om felet kommer från din partnerorganisation (t.ex. en tredjepartsleverantör av molntjänster) kontaktar du din partner för att lösa problemet.
 
-## <a name="error-code-450-44316-connection-refused"></a>Felkod: 450 4.4.316 Anslutningen nekades
+## <a name="error-code-450-44316-connection-refused"></a>Felkod: 450 4.4.316 Anslutningen är inte säker
 
-Vanligtvis innebär det här felet att Microsoft 365 stött på ett anslutningsfel när det försökte ansluta till mål-e-postservern. En trolig orsak till det här felet är att brandväggen blockerar anslutningar från Microsoft 365 IP-adresser. Eller så kan det här felet vara av design om du helt har migrerat ditt lokala e-postsystem till Microsoft 365 och stänger av din lokala e-postmiljö.
+Vanligtvis innebär det här felet att Microsoft 365 stött på ett anslutningsfel när det försökt ansluta till mål-e-postservern. En trolig orsak till det här felet är att din brandvägg blockerar anslutningar från Microsoft 365 IP-adresser. Eller så kan det här felet vara av design natur om du helt har migrerat ditt lokala e-postsystem till Microsoft 365 och stängt av din lokala e-postmiljö.
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>Hur åtgärdar jag felkod 450 4.4.316?
 
-- Om du har postlådor i din lokala miljö måste du ändra brandväggsinställningarna för att tillåta anslutningar från Microsoft 365 IP-adresser på TCP-port 25 till dina lokala e-postservrar. En lista över Microsoft 365 IP-adresser finns i URL-adresser och IP-adressintervall för [Microsoft 365.](../../enterprise/urls-and-ip-address-ranges.md)
+- Om du har postlådor i din lokala miljö måste du ändra dina brandväggsinställningar för att tillåta anslutningar från Microsoft 365 IP-adresser på TCP-port 25 till dina lokala e-postservrar. En lista över Microsoft 365 IP-adresser finns i URL-adresser och IP-adressintervall för [Microsoft 365.](../../enterprise/urls-and-ip-address-ranges.md)
 
-- Om inga fler meddelanden ska levereras till din lokala miljö klickar du på **Åtgärda** nu i aviseringen så att Microsoft 365 omedelbart kan avvisa meddelanden med ogiltiga mottagare. Det här minskar risken för att organisationens kvot för ogiltiga mottagare överskrids, vilket kan påverka normal meddelandeleverans. Du kan även använda följande anvisningar för att åtgärda problemet manuellt:
+- Om inga fler meddelanden ska levereras till  din lokala miljö klickar du på Åtgärda nu i aviseringen så att Microsoft 365 omedelbart kan avvisa meddelanden med ogiltiga mottagare. Det här minskar risken för att organisationens kvot för ogiltiga mottagare överskrids, vilket kan påverka normal meddelandeleverans. Du kan även använda följande anvisningar för att åtgärda problemet manuellt:
 
-  - I [administrationscentret för Exchange (EAC)](https://docs.microsoft.com/Exchange/exchange-admin-center)inaktiverar eller tar du bort anslutningen som levererar e-post från Microsoft 365 till din lokala e-postmiljö:
+  - I [administrationscentret för Exchange (EAC)](/Exchange/exchange-admin-center)inaktiverar eller tar du bort anslutningen som levererar e-post från Microsoft 365 till din lokala e-postmiljö:
 
-    1. Gå till E-postflödeskopplingar **i** \> EAC.
+    1. Gå till E-postflödeskopplingar  \> **i** EAC.
 
-    2. Välj kopplingen med **från-värdet** **Office 365** och till-värdet din organisations **e-postserver** och gör något av följande: 
+    2. Välj kopplingen med **Från-värdet** **Office 365** och till-värdet  din organisations **e-postserver** och gör något av följande:
 
        - Ta bort kopplingen genom att klicka på **ikonen Ta** ![ bort](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - Inaktivera kopplingen genom att klicka **på** ![ redigeringsikonen ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) och avmarkera **Aktivera.**
+       - Inaktivera kopplingen genom att klicka **på** ![ redigera-ikonen ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) och avmarkera **Aktivera.**
 
-  - Ändra den godkända domänen i Microsoft 365 som är kopplad till din lokala e-postmiljö från **Internt relä** till **Auktoritativ.** Instruktioner finns i Hantera [godkända domäner i Exchange Online.](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
+  - Ändra den godkända domänen i Microsoft 365 som är kopplad till din lokala e-postmiljö från Internt **relä** **till Auktoritativ.** Anvisningar finns i Hantera [godkända domäner i Exchange Online.](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
 
-  **Obs!** Det brukar ta mellan 30 minuter och en timme innan ändringarna börjar gälla. Kontrollera att du inte längre får felmeddelandet efter en timme.
+  **Obs!** Det brukar ta mellan 30 minuter och en timme innan ändringarna börjar gälla. Efter en timme kontrollerar du att du inte längre får felmeddelandet.
 
-- Om felet kommer från partnerorganisationen (till exempel en molnbaserad tjänstprovider) måste du kontakta partnern för att åtgärda problemet.
+- Om felet kommer från din partnerorganisation (t.ex. en tredjepartsleverantör av molntjänster) måste du kontakta din partner för att lösa problemet.
 
 ## <a name="error-code-450-44317-cannot-connect-to-remote-server"></a>Felkod: 450 4.4.317 Det går inte att ansluta till fjärrservern
 
-Vanligtvis innebär det här felet att Microsoft 365 är ansluten till mål-e-postservern, men servern har svarat med ett omedelbart fel eller inte uppfyller anslutningskraven. Felinformationen förklarar problemet. Till exempel:
+Vanligtvis innebär det här felet att Microsoft 365 är ansluten till mål-e-postservern, men att servern har svarat med ett omedelbart fel eller inte uppfyller anslutningskraven. I felinformationen förklaras problemet. Ett exempel:
 
-- Mål-e-postservern svarade med felet "Tjänsten är inte tillgänglig", vilket betyder att servern inte kan behålla kommunikationen med Microsoft 365.
+- Mål-e-postservern har svarat med felet "Tjänsten är inte tillgänglig", vilket indikerar att servern inte kan behålla kommunikationen med Microsoft 365.
 
-- Kopplingen är konfigurerad till att kräva TLS, men mål-e-postservern stöder inte TLS.
+- Anslutningen är konfigurerad så att den kräver TLS, men mål-e-postservern stöder inte TLS.
 
 ### <a name="how-do-i-fix-error-code-450-44317"></a>Hur åtgärdar jag felkod 450 4.4.317?
 
-- Kontrollera TLS-inställningarna och certifikaten på de lokala e-postservrarna och TLS-inställningarna på kopplingen.
+- Verifiera TLS-inställningarna och certifikaten på de lokala e-postservrarna och TLS-inställningarna på kopplingen.
 
-- Om felet kommer från partnerorganisationen (till exempel en molnbaserad tjänstprovider) måste du kontakta partnern för att åtgärda problemet.
+- Om felet kommer från din partnerorganisation (t.ex. en tredjepartsleverantör av molntjänster) måste du kontakta din partner för att lösa problemet.
 
 ## <a name="error-code-450-44318-connection-was-closed-abruptly"></a>Felkod: 450 4.4.318 Anslutningen var stängd
 
 Vanligtvis innebär det här felet att Microsoft 365 har problem med att kommunicera med din lokala e-postmiljö, så anslutningen har släppts. Möjliga orsaker till det här felet är:
 
-- Din brandvägg använder regler för SMTP-paketundersökningar och de reglerna fungerar inte korrekt.
+- Din brandvägg använder regler för SMTP-paketundersökning och de reglerna fungerar inte korrekt.
 
-- Din lokala e-postserver fungerar inte korrekt (till exempel hänger sig tjänsten, kraschar eller låga systemresurser), vilket gör att servern går ut och stänger anslutningen till Microsoft 365.
+- Din lokala e-postserver fungerar inte korrekt (t.ex. hänger sig tjänsten, kraschar eller låg systemresurser), vilket gör att serverns time out och stänger anslutningen till Microsoft 365.
 
 - Det finns nätverksproblem mellan din lokala miljö och Microsoft 365.
 
@@ -120,15 +120,15 @@ Vanligtvis innebär det här felet att Microsoft 365 har problem med att kommuni
 
 - Om problemet orsakas av nätverksproblem mellan din lokala miljö och Microsoft 365 kontaktar du nätverksteamet för att felsöka problemet.
 
-- Om felet kommer från partnerorganisationen (till exempel en molnbaserad tjänstprovider) måste du kontakta partnern för att åtgärda problemet.
+- Om felet kommer från din partnerorganisation (t.ex. en tredjepartsleverantör av molntjänster) måste du kontakta din partner för att lösa problemet.
 
 ## <a name="error-code-450-47320-certificate-validation-failed"></a>Felkod: 450 4.7.320 Certifikatverifiering misslyckades
 
-Vanligtvis innebär det här felet att Microsoft 365 stött på ett fel vid försök att verifiera certifikatet för mål-e-postservern. Felinformationen förklarar felet. Till exempel:
+Vanligtvis innebär det här felet att Microsoft 365 stött på ett fel när certifikatet för mål-e-postservern ska verifieras. I felinformationen förklaras felet. Ett exempel:
 
 - Certifikatet har gått ut
 
-- Felmatchning för certifikatsämne
+- Felmatchning av certifikatsämne
 
 - Certifikatet är inte längre giltigt
 
@@ -136,10 +136,10 @@ Vanligtvis innebär det här felet att Microsoft 365 stött på ett fel vid för
 
 - Åtgärda certifikatet eller inställningarna för anslutningen så att meddelanden i kö i Microsoft 365 kan levereras.
 
-- Om felet kommer från partnerorganisationen (till exempel en molnbaserad tjänstprovider) måste du kontakta partnern för att åtgärda problemet.
+- Om felet kommer från din partnerorganisation (t.ex. en tredjepartsleverantör av molntjänster) måste du kontakta din partner för att lösa problemet.
 
 ## <a name="other-error-codes"></a>Andra felkoder
 
-Microsoft 365 har problem med att leverera meddelanden till din lokala e-postserver eller partnerserver. Använd **målserverinformationen** i felet om du vill undersöka problemet i din miljö eller ändra kopplingen om det uppstår ett konfigurationsfel.
+Microsoft 365 har problem med att leverera meddelanden till din lokala e-postserver eller partnerserver. Använd **målserverinformationen** i felet om du vill undersöka problemet i miljön eller ändra kopplingen om det uppstår ett konfigurationsfel.
 
-Om felet kommer från partnerorganisationen (till exempel en molnbaserad tjänstprovider) måste du kontakta partnern för att åtgärda problemet.
+Om felet kommer från din partnerorganisation (t.ex. en tredjepartsleverantör av molntjänster) måste du kontakta din partner för att lösa problemet.

@@ -12,31 +12,31 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
-description: Så här kommer du till resurserna som motsvarar det föråldrade Desktop Deployment Center.
-ms.openlocfilehash: 1b930bae76c510108556947977aa1393ae9bd86b
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+description: Så här kommer du till de resurser som motsvarar det inaktuella distributionscentret för skrivbordsversionen.
+ms.openlocfilehash: c4456d0f17e38920e77c855e31205e51025f111b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398837"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928174"
 ---
-# <a name="desktop-deployment-center-deprecated"></a>Desktop Deployment Center (inaktuellt)
+# <a name="desktop-deployment-center-deprecated"></a>Distributionscenter för skrivbordsversionen (inaktuellt)
 
-Bröd texten för innehållet som utgör Desktop Deployment Center är inaktuell. 
+Innehållet i distributionscentret för skrivbordsversionen är inaktuellt. 
 
-Använd dessa resurser för att distribuera moderna datorer:
+Använd de här resurserna för att distribuera moderna skrivbord:
 
-- [Windows 10-distribution](https://docs.microsoft.com/windows/deployment/)
-- [Distribuera Microsoft 365-applikationer](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
-- [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
+- [Distribution av Windows 10](/windows/deployment/)
+- [Distribuera Microsoft 365-applikationer](/deployoffice/deployment-guide-microsoft-365-apps)
+- [Microsoft Intune](/mem/intune/fundamentals/planning-guide)
 - [Principer för identitets- och enhetsåtkomst](../security/office-365-security/microsoft-365-policies-configurations.md)
 
-Du kan också titta på [videoklipp från Microsoft Mechanics](https://www.aka.ms/watchhowtoshift).
+Du kan också visa [videoklippen om programserierna för skrivbordsdistribution från Microsoft Mechanics.](https://www.aka.ms/watchhowtoshift)
 
-Du kan också hitta hjälp för din dator distribution från Microsoft partners och [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365).
+Du kan också hitta hjälp för skrivbordsdistribution från Microsoft-partner och [FastTrack.](https://www.microsoft.com/fasttrack/microsoft-365)
 
 ## <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit för Windows och Office
 
-Detta paket hjälper dig att planera, testa och validera din installation och hantering av Station ära datorer med Windows 10 Enterprise och Microsoft 365-appar för företag. Lab-täckning med Konfigurations hanteraren för Microsoft-slutpunkter, skriv bords analyser, verktyget Office-anpassning, OneDrive, Windows autopilot och mer.
+Detta paket hjälper dig att planera, testa och validera distribution och hantering av skrivbord som kör Windows 10 Enterprise och Microsoft 365-appar för företag. Labben täcker med Microsoft Endpoint Configuration Manager, Skrivbordsanalys, verktyget Office-anpassning, OneDrive, Windows Autopilot med mera.
 
-Mer information finns i [Windows och Office Deployment Lab kit](modern-desktop-deployment-and-management-lab.md) .
+Mer [information finns i Windows och Office Deployment Lab Kit.](modern-desktop-deployment-and-management-lab.md)
