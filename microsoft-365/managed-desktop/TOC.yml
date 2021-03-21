@@ -108,6 +108,8 @@
           href: get-started/get-started-devices.md
         - name: Välkomstprogrammet med Autopilot och sidan Registreringsstatus
           href: get-started/esp-first-run.md
+        - name: Positioneringstjänst i Windows 10
+          href: get-started/device-location.md
         - name: Kom igång med appens kontroll
           href: get-started/get-started-app-control.md
         - name: Distribuera appar

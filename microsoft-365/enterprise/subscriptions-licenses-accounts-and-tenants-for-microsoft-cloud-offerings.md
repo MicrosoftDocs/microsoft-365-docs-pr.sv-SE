@@ -3,7 +3,6 @@ title: Prenumerationer, licenser, konton och klienter för Microsofts molntjäns
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/25/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -21,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Ent_Architecture
 description: Förstå relationer mellan organisationer, prenumerationer, licenser, användarkonton och klientorganisationer i Microsofts molntjänster.
-ms.openlocfilehash: c48e2ecc321f4b6e06ced13f029e344faf12650b
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: eaf1c2399b5d44ea8d6000042b3258d0e8b5a7de
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446037"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909520"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Prenumerationer, licenser, konton och klienter för Microsofts molntjänster
 
@@ -66,7 +65,11 @@ För Microsofts SaaS molnerbjudanden kan en licens tillåta ett speciellt använ
 **Bild 2: Licenser i SaaS-baserade prenumerationer för en organisation**
 
 ![Ett exempel på flera licenser i en prenumeration för Microsofts SaaS-baserade molnerbjudanden.](../media/Subscriptions/Subscriptions-Fig2.png)
-  
+
+>[!Note]
+>Det bästa sättet med säkerhet är att använda separata användarkonton som har tilldelats specifika roller för administrativa funktioner. De här dedikerade administratörskontona behöver inte tilldelas en licens för de molntjänster som de administrerar. Till exempel behöver ett SharePoint-administratörskonto inte tilldelas en Microsoft 365-licens.
+>
+
 För Azure PaaS-baserade molntjänster finns det programvarulicenser som är inbyggda i serviceprissättning.
   
 För Azure IaaS-baserade virtuella datorer kan kanske fler licenser för att använda programvaran eller programmet som är installerat på en virtuell datorbild krävas. För vissa virtuella datorbilder finns licensierade versioner av programvaran och kostnaden ingår i per minut kostnaden för servern. Exempel är de virtuella datorbilderna för SQL Server 2014 och SQL Server 2016. 
@@ -153,7 +156,7 @@ Så här lägger du till en Azure-prenumeration med samma organisation och Azure
     
 3. Välj ett erbjudande och slutför betalningsinformation och avtal genom att gå till sidan **Lägg till prenumerations**.
     
-Om du har köpt Azure-och Microsoft 365-prenumerationer separat och vill få åtkomst till Microsoft 365 Azure AD-klientorganisationen från din Azure-prenumeration läser du anvisningarna i [Lägga till en befintlig Azure-prenumeration i Azure Active Directory-klientorganisationen](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
+Om du har köpt Azure-och Microsoft 365-prenumerationer separat och vill få åtkomst till Microsoft 365 Azure AD-klientorganisationen från din Azure-prenumeration läser du anvisningarna i [Lägga till en befintlig Azure-prenumeration i Azure Active Directory-klientorganisationen](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
  
 ## <a name="see-also"></a>Se även
 
@@ -166,4 +169,3 @@ Om du har köpt Azure-och Microsoft 365-prenumerationer separat och vill få åt
 ## <a name="next-step"></a>Nästa steg
 
 [Utvärdera Microsoft 365 nätverksanslutningar](assessing-network-connectivity.md)
-  

@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Bestäm var dina Microsoft 365-kunddata lagras inom Europeiska unionen
-ms.openlocfilehash: 78c2ae75656df017631fce0a189f6e25ee44f20f
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 28bfa7c18aff485e084e4d77bb2a36f0f5b7e95f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527691"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905686"
 ---
 # <a name="data-locations-for-the-european-union"></a>Dataplatser för Europeiska unionen
 
@@ -47,7 +47,7 @@ Vi har datacenter i Tyskland och Frankrike som gör att du kan lagra data i ditt
 |:-------|:-----|:-------|:-------|
 | Exchange online | Frankrike | Tyskland | EU |
 | OneDrive för företag | Frankrike | Tyskland | EU |
-| SharePoint online | Frankrike | Tyskland | EU |
+| SharePoint Online | Frankrike | Tyskland | EU |
 | Skype för företag | EU | EU | EU |
 | Microsoft Teams | Frankrike | Tyskland | EU |
 | Office online och mobile | Frankrike | Tyskland | EU |
@@ -74,14 +74,14 @@ När du initierar användningen av någon av ovanstående tjänster kommer berä
 
 Om en tillfällig överföring krävs kommer vi alltid att använda avancerad kryptering i överföringen och vi kommer alltid att returnera dina data till din valda datalagringsplats omedelbart. Vi förlitar oss på att vi följer europeisk lagstiftning genom standardavtalsklausuler (SCCs) för dessa tillfälliga transfereringar, tillsammans med våra kompletterande åtgärder för att säkerställa att data skyddas. 
 
-Mer information finns i [Europeiska unionens modellklausuler](https://docs.microsoft.com/microsoft-365/compliance/offering-eu-model-clauses).
+Mer information finns i [Europeiska unionens modellklausuler](/compliance/regulatory/offering-EU-Model-Clauses).
 
 >[!Note]
 >Kunddata för Sway och Workplace Analytics lagras och beräknas i USA om du väljer att använda dessa tjänster.
 >
 
 >[!Note]
->Microsoft 365-tjänster kan fråga och lagra delar av klient- / identitetsdatainformation i andra regioner än EU vid behov för att underlätta vissa scenarier. I scenarier av gränsöverskridande e-postdirigering, samtalsdirigering och autentisering kan Microsoft 365-system behöva viss information om EU:s mottagare för att dirigera begäran korrekt. Microsoft 365-system är också beroende av Azure Active Directory för identitets- och autentiseringsfunktioner. Mer information finns i  [Identitetsdatalagring för europeiska kunder i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-data-storage-eu).
+>Microsoft 365-tjänster kan fråga och lagra delar av klient- / identitetsdatainformation i andra regioner än EU vid behov för att underlätta vissa scenarier. I scenarier av gränsöverskridande e-postdirigering, samtalsdirigering och autentisering kan Microsoft 365-system behöva viss information om EU:s mottagare för att dirigera begäran korrekt. Microsoft 365-system är också beroende av Azure Active Directory för identitets- och autentiseringsfunktioner. Mer information finns i  [Identitetsdatalagring för europeiska kunder i Azure Active Directory](/azure/active-directory/fundamentals/active-directory-data-storage-eu).
 >
 
 ## <a name="how-microsoft-protects-your-data"></a>Så skyddar Microsoft dina data
@@ -126,8 +126,7 @@ Om du vill ha mer information, se [vanliga frågor](https://blogs.microsoft.com/
 ## <a name="additional-resources"></a>Ytterligare resurser
  
 - [Pålitligt dataskydd](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FhZn) ger en översikt över hur Microsoft skyddar dina data när du använder Microsoft Online Services och Professional Services. Rekommenderas också att du läser [Microsoft Online Services Terms (OST) och Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/product-licensing/products) som reglerar din användning av dessa tjänster.
-- [Office 365-registrerade begäranden om GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365) hjälper dig att hitta och agera på personuppgifter eller personlig information för att svara på DSR med hjälp av Microsoft 365-produkter, tjänster och administrativa verktyg. 
-- [Konsekvensbedömningar av dataskydd: vägledning för datakontrollanter som använder Microsoft Office 365](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365) hjälper dig att avgöra om din organisation behöver utarbeta en DPIA, tillhandahåller vägledning, innehåller ett anpassningsbart DPIA-malldokument och tillhandahåller en DPIA Service Elements Matrix för många Microsoft 365-tjänster.
-- [Lär dig hur modulerna](https://docs.microsoft.com/learn/paths/audit-safeguard-customer-data/) är utformade för personer inom granskning, efterlevnad, risk och juridiska roller som söker en övergripande förståelse ger en djupgående granskning av hur Microsoft 365: s grundläggande säkerhets- och sekretesspraxis för att skydda kunddata.
-- [Microsofts erbjudande om efterlevnad](https://docs.microsoft.com/microsoft-365/compliance/offering-home) visar hur Microsoft 365-tjänster hjälper din organisation att uppfylla regelefterlevnadsstandarder. 
-
+- [Office 365-registrerade begäranden om GDPR](/compliance/regulatory/gdpr-dsr-Office365) hjälper dig att hitta och agera på personuppgifter eller personlig information för att svara på DSR med hjälp av Microsoft 365-produkter, tjänster och administrativa verktyg. 
+- [Konsekvensbedömningar av dataskydd: vägledning för datakontrollanter som använder Microsoft Office 365](/compliance/regulatory/gdpr-dpia-office365) hjälper dig att avgöra om din organisation behöver utarbeta en DPIA, tillhandahåller vägledning, innehåller ett anpassningsbart DPIA-malldokument och tillhandahåller en DPIA Service Elements Matrix för många Microsoft 365-tjänster.
+- [Lär dig hur modulerna](/learn/paths/audit-safeguard-customer-data/) är utformade för personer inom granskning, efterlevnad, risk och juridiska roller som söker en övergripande förståelse ger en djupgående granskning av hur Microsoft 365: s grundläggande säkerhets- och sekretesspraxis för att skydda kunddata.
+- [Microsofts erbjudande om efterlevnad](/compliance/regulatory/offering-home) visar hur Microsoft 365-tjänster hjälper din organisation att uppfylla regelefterlevnadsstandarder.
