@@ -15,12 +15,12 @@ ms.collection:
 description: Administratörer kan lära sig att skapa, ändra och ta bort avancerade principer mot nätfiske som är tillgängliga i organisationer med Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2985766cf3388382dbe1d2217843504b2bfd1a1c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9f9fe04b2c3b6db3681212d678c8e827f6a83f41
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906594"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994576"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Konfigurera principer för skydd mot nätfiske i Microsoft Defender för Office 365
 
@@ -220,11 +220,11 @@ Använd följande procedurer för att ändra principer för skydd mot nätfiske:
 
      - **Aktivera postlådeintelligens?**: Standardvärdet är **På.** Om du vill inaktivera den drar du reglaget till **Av**.
 
-     - **Aktivera postlådeintelligensbaserat personifieringsskydd?**: Den här inställningen är bara tillgänglig om **Aktivera postlådeintelligens?** är **På.**
+     - **Aktivera postlådeintelligensbaserat personifieringsskydd?**: Den här inställningen är bara tillgänglig om **Aktivera postlådeintelligens?** är **På.** Aktivera den här inställningen om du vill ange vilken åtgärd som ska vidtas på meddelanden för identifiering av personifieringar från postlådeintelligensresultat.
 
-       I **Om** e-post skickas av en imiterad användare kan du ange någon av följande åtgärder för meddelanden som inte fungerar med postlådeintelligens (samma åtgärder som är tillgängliga för skyddade användare och skyddade domäner):
+       I **Om e-post skickas** av en imiterad användare kan du ange någon av följande åtgärder (samma åtgärder som är tillgängliga för skyddade användare och skyddade domäner):
 
-       - **Använd inte någon åtgärd**
+       - **Använd inte någon åtgärd**: Observera att det här värdet har samma resultat som att aktivera aktivera postlådeintelligens? men inaktivera aktivera postlådeintelligensbaserat **personifieringsskydd?**. 
        - **Omdirigera meddelandet till andra e-postadresser**
        - **Flytta meddelandet till mappen Skräppost**
        - **Sätt meddelandet i karantän**

@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: 34c6551dd3a40852368b40d960bf921c52f46372
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 36af6e0f882c87d05c5f397982533fb48875b0da
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921522"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994612"
 ---
 # <a name="edit-an-existing-topic"></a>Redigera ett befintligt ämne 
 
@@ -67,11 +67,11 @@ Knowledge managers can also edit topics directly from the Manage Topics page by 
 
     ![Avsnittet Beskrivning](../media/knowledge-management/description.png)</br>
 
-4. I avsnittet <b>Fästa personer kan</b> du fästa en person så att den visas som ämnesexpert i ämnet. Börja med att skriva in <b></b> användarens namn eller e-postadress i rutan Lägg till en ny användare och välj sedan den användare du vill lägga till i sökresultatet. Du kan även "ta bort" dem genom att välja <b>ikonen Ta bort från</b> listan på användarkortet.
+4. I avsnittet <b>Fästa personer kan</b> du fästa en person så att de ser att de har en anslutning till ämnet (till exempel en ägare till en ansluten resurs). Börja med att skriva in <b></b> användarens namn eller e-postadress i rutan Lägg till en ny användare och välj sedan den användare du vill lägga till i sökresultatet. Du kan även "ta bort" dem genom att välja <b>ikonen Ta bort från</b> listan på användarkortet.
  
     ![Lägga till fästa personer](../media/knowledge-management/pinned-people.png)</br>
 
-    Avsnittet <b>Föreslagna personer</b> visar användare som AI tror kan vara ämnesexperter på ämnet från deras anslutning till resurser om ämnet. Du kan ändra deras status från Föreslagen till Fäst genom att klicka på fästikonen på användarkortet.
+    I <b>avsnittet Föreslagna personer</b> visas användare som AI tror kan vara anslutna till ämnet från deras anslutning till resurser om ämnet. Du kan ändra deras status från Föreslagen till Fäst genom att klicka på fästikonen på användarkortet.
 
    ![Fästa föreslagna personer](../media/knowledge-management/suggested-people.png)</br>
 

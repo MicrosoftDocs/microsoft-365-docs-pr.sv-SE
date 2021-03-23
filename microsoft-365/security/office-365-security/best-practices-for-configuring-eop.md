@@ -12,12 +12,12 @@ ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Följ de här rekommendationerna för fristående Exchange Online Protection (EOP) så att du kan konfigurera dig själv och undvika vanliga konfigurationsfel.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6a6a9fd0dfc654ca37fdd5168b3ecc0c4486f9d0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e968316e23fe2d8e68795318f8e0785a662c8aea
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924462"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994564"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Rekommendationer för konfiguration av fristående EOP
 
@@ -44,6 +44,8 @@ Vi ger säkerhetsadministratörer möjlighet att anpassa säkerhetsinställninga
 
 De här inställningarna omfattar ett antal funktioner som ligger utanför säkerhetsprinciperna.
 
+<br>
+
 ****
 
 |Namn på säkerhetsfunktion|Standard|Strikt|Kommentar|
@@ -57,8 +59,8 @@ De här inställningarna omfattar ett antal funktioner som ligger utanför säke
 |Enhetlig granskning ska vara aktiverad|Ja|Ja||
 |[IMAP-anslutning till postlåda](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Inaktiverad|Inaktiverad||
 |[POP-anslutning till postlåda](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Inaktiverad|Inaktiverad||
-|Autentiserad SÄNDNING VIA SMTP|Inaktiverad|Inaktiverad|Autentiserad SMTP-klientinskickning (kallas även SMTP-klientinskickning eller SMTP AUTH) krävs för att POP3- och IMAP4-klienter ska kunna skicka e-post.|
-|EWS-anslutning till postlåda|Inaktiverad|Inaktiverad||
+|Autentiserad SÄNDNING VIA SMTP|Inaktiverad|Inaktiverad|Autentiserad SMTP-klientinskickning (kallas även SMTP-klientinskickning eller SMTP AUTH) krävs för POP3- och IMAP4-klienter och -program och -enheter som genererar och skickar e-post. <p> Anvisningar om hur du aktiverar och inaktiverar SMTP AUTH globalt eller selektivt finns i Aktivera eller inaktivera [autentiserad SMTP-klientinskickning i Exchange Online.](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)|
+|EWS-anslutning till postlåda|Inaktiverad|Inaktiverad|Outlook använder Exchange Web Services för ledig/upptagen, användning av inställningar för utanför kontoret och kalenderdelning. Om du inte kan inaktivera EWS globalt har du följande alternativ: <ul><li>Använd [autentiseringsprinciper för](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) att förhindra att EWS använder grundläggande autentisering om dina klienter har stöd för modern autentisering (modern autentisering).</li><li>Använd [klientåtkomstregler för](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) att begränsa EWS till specifika användare eller käll-IP-adresser.</li><li>Kontrollera EWS-åtkomsten till specifika program globalt eller per användare. Anvisningar finns i [Kontrollera åtkomst till EWS i Exchange.](/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange)</li></ul> <p> Tillägget [Rapportmeddelande](enable-the-report-message-add-in.md) och tillägget [](enable-the-report-phish-add-in.md) Rapport nätfiske använder REST som standard i miljöer som stöds, men kommer tillbaka till EWS om REST inte är tillgängligt. De miljöer som stöds och använder REST är:<ul><li>Exchange online</li><li>Exchange 2019 eller Exchange 2016</li><li>Nuvarande Outlook för Windows från en Microsoft 365-prenumeration eller ett enda köp av Outlook 2019.</li><li>Nuvarande Outlook för Mac från en Microsoft 365-prenumeration eller ett köp av Outlook för Mac 2016 eller senare.</li><li>Outlook för iOS och Android</li><li>Outlook på webben</li></ul>|
 |[PowerShell-anslutning](/powershell/exchange/disable-access-to-exchange-online-powershell)|Inaktiverad|Inaktiverad|Tillgängligt för postlådeanvändare och e-postanvändare (användarobjekt som returneras [av cmdlet:en Get-User).](/powershell/module/exchange/get-user)|
 |Använda [förfalskningsinformation för](learn-about-spoof-intelligence.md) att lägga till avsändare i listan över tillåtna avsändare|Ja|Ja||
 |[Katalogbaserat gränsblockering (DBEB)](/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Aktiverad|Aktiverad|Domäntyp = Auktoritativ|

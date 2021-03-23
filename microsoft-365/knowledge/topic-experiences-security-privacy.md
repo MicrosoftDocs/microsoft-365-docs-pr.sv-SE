@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Lär dig planera för säkerhet och sekretess i Microsoft Viva Topics
-ms.openlocfilehash: 9ac7ea085be115ef06244422713099c01ec50a36
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 91d0d5c25502a1938976b9457f8a5dafc6ab957b
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917350"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994552"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Säkerhet och sekretess för Microsoft Viva Topics
 
@@ -51,7 +51,7 @@ I följande tabell beskrivs vad användare – ämnesanvändare, deltagare och k
 
 |Ämnesobjekt|Vad användarna kan se|
 |:---------|:------------------|
-|Ämnesnamn|Användarna kan se ämnesnamnet för alla ämnen i ämnescentret. Vissa ämnen kanske inte visas om de har en låg relevans för användaren.|
+|Ämnesnamn|Användarna kan se ämnesnamnet för ämnen i ämnescentret. Vissa ämnen kanske inte visas om användarna inte har behörighet till källinnehållet eller har en låg relevans för användaren.|
 |Ämnesbeskrivning|AI-genererade beskrivningar visas endast för användare som har behörighet till källinnehållet. Manuellt angivna eller redigerade beskrivningar visas för alla användare.|
 |Kontakter|Fästa personer visas för alla användare. Föreslagna personer visas bara för användare som har behörighet till källinnehållet.|
 |Filer|Filer visas bara för användare som har behörighet till källinnehållet.|

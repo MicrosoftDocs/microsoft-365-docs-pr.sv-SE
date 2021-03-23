@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: d6e953c86939d732632e87573fc2aa5392f09aa2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6a182556c68a472145f9d4eac69c8915653a67df
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904942"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994600"
 ---
 # <a name="create-a-new-topic"></a>Skapa ett nytt ämne 
 
@@ -66,7 +66,7 @@ Du kan skapa ett nytt ämne från två platser:
 
     ![Beskrivning av ämnet](../media/knowledge-management/description.png)</br>
 
-4. I avsnittet <b>Fästa personer kan</b> du fästa en person så att den visas som ämnesexpert i ämnet. Börja med att skriva in <b></b> användarens namn eller e-postadress i rutan Lägg till en ny användare och välj sedan den användare du vill lägga till från sökresultatet. Du kan även "ta bort" dem genom att välja <b>ikonen Ta bort från</b> listan på användarkortet. Du kan också dra personen för att ändra ordningen som listan med personer visas.
+4. I avsnittet <b>Fästa personer</b> kan du fästa en person för att visa att personen har en anslutning till ämnet (till exempel en ägare till en ansluten resurs). Börja med att skriva in <b></b> användarens namn eller e-postadress i rutan Lägg till en ny användare och välj sedan den användare du vill lägga till från sökresultatet. Du kan även "ta bort" dem genom att välja <b>ikonen Ta bort från</b> listan på användarkortet. Du kan också dra personen för att ändra ordningen som listan med personer visas.
  
     ![Fästa personer](../media/knowledge-management/pinned-people.png)</br>
 

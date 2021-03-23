@@ -17,12 +17,12 @@ ms.custom:
 description: Administratörer kan läsa mer om principer för skydd mot nätfiske som finns i Exchange Online Protection (EOP) och Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eeb15040f0e47f7d51852dadf68c4b0c37de0975
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3458d6702dab48072e4846038400b087b1a4a8f1
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929234"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994588"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Principer mot nätfiske i Microsoft 365
 
@@ -206,17 +206,21 @@ Följande inställningar för personifiering är endast tillgängliga i principe
   - **Imiterade domäner:** Från-adressen innehåller en skyddad domän.
   - **Ovanliga tecken:** Från-adressen innehåller ovanliga teckenuppsättningar (till exempel matematiska symboler och text eller en blandning av versaler och gemener) i en skyddad avsändare eller domän.
 
-
   > [!IMPORTANT]
   >
-  > Rekommendation för att aktivera ett säkerhetstips som visas under första kontakten mellan avsändare och mottagare: Även när säkerhetstips för personifiering är avstängda rekommenderar vi att du använder en **e-postflödesregel**(kallas även transportregel) för  att lägga till ett meddelandehuvud med namnet **X-MS-Exchange-EnableFirstContactSafetyTip** med värde aktiverat i meddelanden.  Ett säkerhetstips meddelar mottagarna första gången de får ett meddelande från avsändaren eller om de inte ofta får meddelanden från avsändaren. Den här funktionen ger ett extra säkerhetsskydd mot potentiella personifieringsattacker. 
+  > Även när säkerhetstips för personifiering  är avstängda rekommenderar vi att du använder en e-postflödesregel (kallas även transportregel) för att lägga till ett meddelandehuvud med namnet **X-MS-Exchange-EnableFirstContactSafetyTip** med värde **aktiverat** i meddelanden. Ett säkerhetstips meddelar mottagarna första gången de får ett meddelande från avsändaren eller om de inte ofta får meddelanden från avsändaren. Den här funktionen ger ett extra säkerhetsskydd mot potentiella personifieringsattacker.
+  >
   > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="Texten i säkerhetstipset för personifieringsskydd med flera mottagare.":::
 
-- Postlådeintelligens: Aktiverar eller inaktiverar artificiell intelligens (AI) som bestämmer användar-e-postmönster med vanliga kontakter. Den här inställningen hjälper AI att skilja mellan legitim och förfalskning av e-post från dessa kontakter. Postlådeinformation är bara tillgängligt för Exchange Online-postlådor.
+- Postlådeintelligens: Aktiverar eller inaktiverar artificiell intelligens (AI) som bestämmer användar-e-postmönster med vanliga kontakter. Den här inställningen hjälper AI att skilja mellan meddelanden från legitima och imiterade avsändare.
 
-- **Postlådeintelligensbaserat** personifieringsskydd : Aktiverar eller inaktiverar förbättrade personifieringsresultat baserat på varje användares enskilda avsändarmappning. Med den här informationen kan Microsoft 365 anpassa identifiering av användarpersonifiering och hantera falska positiva identifieringar bättre. När användarpersonifiering identifieras kan du definiera en specifik åtgärd som ska vidtas på meddelandet:
+  Till exempel är Gabriela Laureano (glaureano@contoso.com) företagets VD, så du lägger till henne  som skyddad avsändare i inställningar för användare som ska skydda principen. Men vissa mottagare, som principen gäller, kan regelbundet kommunicera med en leverantör som även heter Gabriela Laureano (glaureano@fabrikam.com). Eftersom de mottagarna har en kommunikationshistorik med glaureano@fabrikam.com identifierar inte postlådeinformation meddelanden från glaureano@fabrikam.com som ett personifieringsförsök för glaureano@contoso.com för de mottagarna.
 
-  - **Använd inte någon åtgärd**
+  Om du vill använda vanliga kontakter som har lärts av postlådeintelligens (och brist på därav) för att  skydda användare från personifieringsattacker kan du aktivera postlådeintelligensbaserat **personifieringsskydd** och ange vilken åtgärd som ska vidtas om du även aktiverar postlådeintelligens. 
+
+- **Postlådeintelligensbaserat** personifieringsskydd: Aktivera den här inställningen om du vill ange vilken åtgärd som ska vidtas på meddelanden för personifieringsidentifiering från postlådeintelligensresultat:
+
+  - **Använd inte någon åtgärd**: Observera att det här  värdet har samma resultat som att aktivera postlådeintelligens men inaktivera postlådeintelligensbaserat **personifieringsskydd.**
   - **Omdirigera meddelandet till andra e-postadresser**
   - **Flytta meddelandet till mappen Skräppost**
   - **Sätt meddelandet i karantän**

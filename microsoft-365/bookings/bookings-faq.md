@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Vanliga frågor och svar om Microsoft Bookings.
-ms.openlocfilehash: c7bf14c35626eeeec781f6a9f45769e0ead1730e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d357ae83d7fe6fdd9f3d0bff724b037e82a3f5d0
+ms.sourcegitcommit: 1df94f04f138ccf1a2356d26174335c44de7052b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913832"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50999535"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Vanliga frågor och svar om Microsoft Bookings
 
@@ -37,7 +37,7 @@ Kunderna kan bara se den Bookings-kalender som du publicerar online för de tjä
 
 ### <a name="how-do-i-change-a-bookable-attribute-under-manage-staff"></a>Hur ändrar jag ett bookbart attribut under Hantera personal?
 
-När anställda lades till fick de ett e-postmeddelande för att acceptera eller avvisa begäran. De kan öppna samma e-postmeddelande och välja Avvisa så att de inte går att boka. Det finns för närvarande inget sätt att växla detta från appen.
+När anställda lades till fick de ett e-postmeddelande för att acceptera eller avvisa begäran. De kan öppna samma e-postmeddelande och välja Avvisa så att de inte kan bokas. Det finns för närvarande inget sätt att växla detta från appen.
 
 ### <a name="how-do-end-users-access-the-bookings-app"></a>Hur får slutanvändarna åtkomst till bookings-appen?
 
@@ -61,15 +61,15 @@ Om du använder en OWA-postlådeprincip för att inaktivera åtkomsten till Book
 
 ### <a name="is-bookings-customizable"></a>Är Bookings anpassningsbar?
 
-Ja, Bookings är anpassningsbart och kan användas för en mängd olika scenarier. När du ska konfigurera en kalender i Bookings kan många aspekter av den webbaserade schemaläggningssidan, din företagsinformation, personalinformation, tjänsttyper och schemaläggningsprinciper anpassas.
+Ja, Bookings är anpassningsbart och kan användas för olika scenarier. När du ska konfigurera en kalender i Bookings kan många aspekter av den webbaserade schemaläggningssidan, din företagsinformation, personalinformation, tjänsttyper och schemaläggningsprinciper anpassas.
 
 ### <a name="is-all-the-functionality-of-the-original-bookings-web-app-available-in-microsoft-teams"></a>Finns alla funktioner i den ursprungliga Bookings-webbappen tillgänglig i Microsoft Teams?
 
-En lätt version av Bookings finns nu som en app i Teams. Leta reda på det första meddelandet [här](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/). Det finns djupa länkfunktioner för att komma ut i webbappen, och efter installationen kan den dagliga användningen av Bookings göras utan att lämna Teams. Information flödar över plattformar.
+En lätt version av Bookings finns nu som en app i Teams. Det första meddelandet är [här](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/). Det finns djupa länkfunktioner för att komma ut i webbappen, och efter installationen kan den dagliga användningen av Bookings göras utan att lämna Teams. Information flödar över plattformar.
 
 ### <a name="is-bookings-a-small-business-offering-or-an-enterprise-offering-or-both"></a>Är Bookings ett litet företagserbjudande eller ett Enterprise-erbjudande eller både och?
 
-Bookings är en idealisk lösning för både företagskunder och småföretag i en mängd olika branscher. Användningsfall omfattar:
+Bookings är en idealisk lösning för både företags- och småföretagkunder i olika branscher. Användningsfall omfattar:
 
 - Finansiella tjänster
     - samråd
@@ -118,7 +118,7 @@ Bookings är en idealisk lösning för både företagskunder och småföretag i 
 
 ### <a name="how-do-i-get-microsoft-bookings"></a>Hur får jag Microsoft Bookings?
 
-Bookings finns i Microsoft 365 för kunder med licenser för Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3 och E5 samt en app för iOS och Android. Bookings finns inte som en fristående app. Outlook Web App eller Outlook på webben måste vara aktiverade för att du ska kunna använda Bookings, eftersom det lagrar data i Outlook.
+Bookings finns i Microsoft 365 för kunder med licenser för Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3 och E5 samt en app för iOS och Android. Bookings är inte tillgängligt som en fristående app. Outlook Web App eller Outlook på webben måste vara aktiverade för att du ska kunna använda Bookings, eftersom det lagrar data i Outlook.
 
 En Bookings-licens ger tillgång till alla funktioner i produkten, inklusive att skapa och hantera kalendrar. Det gör det också möjligt för användare att visa och redigera befintliga kalendrar när dessa användare läggs till som personal med en administratörs- eller visningsroll.
 
@@ -144,7 +144,7 @@ De här butiksanställda med E1/F1/F3-licenser, eller utan licenser, kan fortfar
 
 Anställda i Store visas också som ej tillgängliga i Bookings om en avtalad tid redan har schemalagts via bookings-webbappen vid den tidpunkten. Bokade tider via Bookings återspeglar den bokade tiden i en anställds kalender i Bookings. Personal som har en licens som inte är en Bookings-aktiverad licens kan fortfarande påverka sin personliga kalenders tillgänglighet i Bookings, förutsatt att de finns inom samma klientorganisation.
 
-Personer med rollen Gäster kan visa den information som kunden angav när den avtalade tiden skapades. Om till exempel butiksrepresentanten som är bokad för den avtalade tiden krävs för att ringa kunden innan den avtalade tiden, har de tillgång till den information som kunden tillhandahåller under schemaläggningsprocessen. Den anställda som har bokat har tillgång till all information som visas i e-postbekräftelsen, samt till .ics-kalenderhändelsen (t.ex. kundens telefonnummer om det har angetts).
+Personer med rollen Gäster kan visa den information som kunden angav när den avtalade tiden skapades. Om till exempel butiksrepresentanten som är bokad för den avtalade tiden krävs för att ringa kunden innan den avtalade tiden, har de tillgång till den information som kunden tillhandahåller under schemaläggningsprocessen. Den anställda som har bokat har tillgång till all information som visas i e-postbekräftelsen och .ics-kalenderhändelsen (t.ex. kundens telefonnummer om det har angetts).
 
 Personer med gästrollen kan inte komma åt Bookings-webbappen för att ändra inställningar eller visa och hantera avtalade tider (lägga till, avbryta och omboka). Däremot kan de avtala tider åt kunder på sidan Självbetjäning, på samma sätt som en kund gör en avtalad tid.
 
@@ -176,7 +176,7 @@ En inställning **med namnet Maximal ledtid** bestämmer den längst i förväg 
 
 ### <a name="how-does-bookings-work-across-time-zones"></a>Hur fungerar Bookings i olika tidszoner?
 
-Alla tider ligger inom företagstidszonen (din lokala tidszon) som standard. Det innebär att alla inställningar du konfigurerar för en kalender i Bookings, till exempel arbetstid, visas i den här tidszonen. Självbetjäningssidan har möjlighet att visa alla tider för avtalade tider i slutanvändarens tidszon, och du kan stänga av den om du vill. Om **Visa alltid tider i** tidszonen för företag är avmarkerat på fliken För bookings sida, kommer personer som besöker sidan att se tider i sina egna lokala tidszoner.
+Alla tider ligger inom företagstidszonen (din lokala tidszon) som standard. Alla inställningar som du konfigurerar för en Bookings-kalender, till exempel arbetstid, visas i den här tidszonen. Självbetjäningssidan har möjlighet att visa alla tider för avtalade tider i slutanvändarens tidszon, och du kan stänga av den om du vill. Om **Visa alltid tider i** tidszonen för företag är avmarkerat på fliken För bookings sida, kommer personer som besöker sidan att se tider i sina egna lokala tidszoner.
 
 :::image type="content" source="media/bookings-faq-region.png" alt-text="Regionsinställningar och tidszonsinställningar för Bookings":::
 
@@ -244,7 +244,7 @@ Bokning kan hantera ett stort antal besökare och bokningar samtidigt. Om sidan 
 
 ### <a name="where-is-bookings-data-stored"></a>Var lagras bookings-data?
 
-Bookings är en Microsoft 365-app, vilket innebär att alla data lagras i Microsoft 365-plattformen och i Exchange. Bookings följer alla principer för datalagring som anges av Microsoft, vilket är samma principer som följs av alla Office-appar. Bookings använder delade postlådor i Exchange för att lagra kund-, personal-, service- och avtalad tidsinformation. Efterlevnadsprinciper för delade postlådor i Exchange gäller även för Bookings-postlådor. Alla kunddata (inklusive information från kunder vid bokning) lagras i Bookings och lagras i appen, vilket innebär att den lagras i Exchange. Microsoft Bookings använder samma policyer som används av Microsoft 365, som du hittar [här.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
+Bookings är en Microsoft 365-app, vilket innebär att alla data lagras i Microsoft 365-plattformen och i Exchange. Bookings följer alla principer för datalagring som anges av Microsoft, vilket är samma policy som alla Office-appar följer. Bookings använder delade postlådor i Exchange för att lagra kund-, personal-, service- och avtalad tidsinformation. Efterlevnadsprinciper för delade postlådor i Exchange gäller även för Bookings-postlådor. Alla kunddata (inklusive information från kunder vid bokning) lagras i Bookings och lagras i appen, vilket innebär att den lagras i Exchange. Microsoft Bookings använder samma policyer som används av Microsoft 365, som du hittar [här.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
 
 ### <a name="is-there-a-way-to-centrally-manage-bookings-calendars-for-all-users"></a>Finns det något sätt att hantera bookings-kalendrar centralt för alla användare?
 
@@ -274,7 +274,7 @@ Det här avsnittet stöder inte RTF-text men tror att länkar kan läggas till u
 
 Följande kommando kan användas för att hämta information om alla Bookings-postlådor och användare som har åtkomst till dem.
 
-`Get-Mailbox -RecipientTypeDetails SchedulingMailbox -ResultSize:Unlimited | Get-MailboxPermission |Select-Object Identity,User,AccessRights | Where-Object {($_.user -like '@')}`
+`Get-Mailbox -RecipientTypeDetails SchedulingMailbox -ResultSize:Unlimited | Get-MailboxPermission |Select-Object Identity,User,AccessRights | Where-Object {($_.user -like '*@*')}`
 
 ## <a name="technical-questions"></a>Tekniska frågor
 
