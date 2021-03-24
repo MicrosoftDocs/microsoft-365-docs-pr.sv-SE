@@ -49,6 +49,8 @@
       items:
         - name: Använda Outlook och Teams
           href: collab-outlook-teams.md
+        - name: Kom igång med Microsoft Teams i små företag
+          href: get-started-teams-small-business.md
         - name: Skapa en grupp-e-postadress
           href: group-email.md
         - name: Skapa en delad kalender
