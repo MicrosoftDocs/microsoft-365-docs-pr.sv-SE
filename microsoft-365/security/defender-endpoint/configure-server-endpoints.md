@@ -1,0 +1,287 @@
+---
+title: Introducera Windows-servrar till Microsoft Defender för slutpunktstjänsten
+description: Introducera Windows-servrarna så att de kan skicka sensordata till Microsoft Defender för slutpunkts sensoren.
+keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, device management, configure Windows ATP servers, onboard Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+author: mjcaparas
+ms.author: macapara
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.technology: mde
+ms.openlocfilehash: bd92b44892b49a007316acb97296a44514db0578
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51069738"
+---
+# <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Introducera Windows-servrar till Microsoft Defender för slutpunktstjänsten
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
+**Gäller för:**
+
+- Windows Server 2008 R2 SP1
+- Windows Server 2012 R2
+- Windows Server 2016
+- Windows Server (SACK) version 1803 och senare
+- Windows Server 2019 och senare
+- Kärnversionen av Windows Server 2019
+
+> Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
+
+
+Defender för Endpoint utökar stödet till att även omfatta Windows Server-operativsystemet. Det här stödet ger avancerade funktioner för identifiering och undersökning av angrepp via microsoft Defender Säkerhetscenter-konsolen.
+
+Praktiska anvisningar om vad som måste finnas för licensiering och infrastruktur finns i Skydda [Windows-servrar med Defender för slutpunkt.](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128)
+
+Information om hur du laddar ned och använder Windows-säkerhetsbaslinjer för Windows-servrar finns i [Baslinjer för Windows-säkerhet.](https://docs.microsoft.com/windows/device-security/windows-security-baselines)
+
+<br>
+
+## <a name="windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016"></a>Windows Server 2008 R2 SP1, Windows Server 2012 R2 och Windows Server 2016
+
+Du kan registrera Windows Server 2008 R2 SP1, Windows Server 2012 R2 och Windows Server 2016 till Defender för slutpunkt genom att använda något av följande alternativ:
+
+- **Alternativ 1:** [Få igång genom att installera och konfigurera Microsoft Monitoring Agent (MMA)](#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)
+- **Alternativ 2:** [Hantera via Azure Säkerhetscenter](#option-2-onboard-windows-servers-through-azure-security-center)
+- **Alternativ 3:** [Introduktion till Microsoft Endpoint Manager version 2002 och senare](#option-3-onboard-windows-servers-through-microsoft-endpoint-manager-version-2002-and-later)
+
+
+När du har slutfört introduktionsstegen med något av de angivna alternativen måste du Konfigurera och uppdatera [System Center Endpoint Protection-klienter.](#configure-and-update-system-center-endpoint-protection-clients)
+
+
+> [!NOTE]
+> Defender för fristående slutpunkt för serverlicens krävs per nod, för att kunna introducera en Windows-server via Microsoft Monitoring Agent (alternativ 1) eller via Microsoft Endpoint Manager (Alternativ 3). Du kan också behöva en Azure Defender för servrar-licens per nod för att kunna hantera en Windows-server via Azure Säkerhetscenter (alternativ 2) i Funktioner som stöds i [Azure Säkerhetscenter.](https://docs.microsoft.com/azure/security-center/security-center-services)
+
+
+### <a name="option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma"></a>Alternativ 1: Registrera dig genom att installera och konfigurera Microsoft Monitoring Agent (MMA)
+Du måste installera och konfigurera MMA för Windows-servrar för att rapportera sensordata till Defender för slutpunkt. Mer information finns i Samla [in loggdata med Azure Log Analytics-agenten.](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent)
+
+Om du redan använder System Center Operations Manager (SCOM) eller Azure Monitor (tidigare kallat Operations Management Suite (OMS)) kan du koppla Microsoft Monitoring Agent (MMA) till din Defender för slutpunkt-arbetsyta via Stöd för Multihoming.
+
+I allmänhet måste du göra följande:
+1. Uppfylla kraven för introduktion som beskrivs i **avsnittet Innan du börjar.**
+2. Aktivera serverövervakning från Microsoft Defender Säkerhetscenter.
+3. Installera och konfigurera MMA för servern för att rapportera sensordata till Defender för Slutpunkt.
+4. Konfigurera och uppdatera System Center Endpoint Protection-klienter.
+
+
+> [!TIP]
+> När du har introducerat enheten kan du välja att köra ett identifieringstest för att verifiera att den är korrekt onboarded till tjänsten. Mer information finns i Köra [ett identifieringstest på en nyligen onboarded Defender för Slutpunktsslutpunkt.](run-detection-test.md)
+
+
+#### <a name="before-you-begin"></a>Innan du börjar 
+Utför följande steg för att uppfylla kraven för registrering:
+
+ - För Windows Server 2008 R2 SP1 eller Windows Server 2012 R2 bör du installera följande snabbkorrigering:
+    - [Uppdatering för kundupplevelse och diagnostisk telemetri](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
+
+ - För Windows Server 2008 R2 SP1 ska du dessutom kontrollera att du uppfyller följande krav:
+    - Installera den [månatliga uppdateringen för februari](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
+    - Installera [antingen .NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (eller senare) eller [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
+
+ - För Windows Server 2008 R2 SP1 och Windows Server 2012 R2: Konfigurera och uppdatera [slutpunktsskyddsklienter för System Center.](#configure-and-update-system-center-endpoint-protection-clients)
+
+    > [!NOTE]
+    > Det här steget krävs bara om din organisation använder System Center Endpoint Protection (SFÖNSTER) och du använder Windows Server 2008 R2 SP1 och Windows Server 2012 R2.
+
+
+<span id="server-mma"/>
+
+### <a name="install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint"></a>Installera och konfigurera MMA (Microsoft Monitoring Agent) för att rapportera sensordata till Microsoft Defender för slutpunkt
+
+1. Ladda ned installationsfilen för agenten: [Windows 64-bitars agent](https://go.microsoft.com/fwlink/?LinkId=828603).
+
+2. Med nyckeln arbetsyte-ID och arbetsyta som hämtas i föregående procedur väljer du någon av följande installationsmetoder för att installera agenten på Windows-servern:
+    - [Installera agenten manuellt med hjälp av konfigurationen](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard). <br>
+    På sidan **Alternativ för konfiguration av** agent väljer du Anslut **agenten till Azure Log Analytics (OMS).**
+    - [Installera agenten med kommandoraden](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line).
+    - [Konfigurera agenten med hjälp av ett skript](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation).
+
+> [!NOTE]
+> Om du [](gov.md)är myndighetskund i USA måste du under "Azure Cloud" välja "Azure US Government" om du använder installationsguiden, eller om du använder en kommandorad eller ett skript – ange parametern "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" till 1.
+
+
+<span id="server-proxy"/>
+
+### <a name="configure-windows-server-proxy-and-internet-connectivity-settings-if-needed"></a>Konfigurera Windows-serverproxy och internetanslutningsinställningar vid behov
+Om dina servrar behöver använda en proxyserver för att kommunicera med Defender för Slutpunkt använder du någon av följande metoder för att konfigurera MMA att använda proxyservern:
+
+
+- [Konfigurera MMA att använda en proxyserver](https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#install-agent-using-setup-wizard)
+
+- [Konfigurera Windows till att använda en proxyserver för alla anslutningar](configure-proxy-internet.md)
+
+Om en proxy eller brandvägg används ska du se till att servrar kan komma åt alla URL-adresser för Microsoft Defender för Endpoint-tjänsten direkt och utan SSL-avlyssning. Mer information finns i aktivera [åtkomst till Defender för slutpunktstjänst-URL:er.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) Användning av SSL-avlyssning förhindrar att systemet kommunicerar med Defender för Endpoint-tjänsten. 
+
+När den är klar bör du se de onboarded Windows-servrarna i portalen inom en timme.
+
+### <a name="option-2-onboard-windows-servers-through-azure-security-center"></a>Alternativ 2: Hantera Windows-servrar via Azure Säkerhetscenter
+1. I navigeringsfönstret för Microsoft Defender Säkerhetscenter väljer du **Inställningar Registrering**  >  **av**  >  **enhetshantering**.
+
+2. Välj **Windows Server 2008 R2 SP1, 2012 R2 och 2016** som operativsystem.
+
+3. Klicka **på Onboard Servers i Azure Security Center.**
+
+4. Följ introduktionsanvisningarna i [Microsoft Defender för Endpoint med Azure Säkerhetscenter.](https://docs.microsoft.com/azure/security-center/security-center-wdatp)
+
+När du har slutfört introduktionsstegen måste du Konfigurera och uppdatera [Slutpunktsskydd-klienter i System Center.](#configure-and-update-system-center-endpoint-protection-clients)
+
+> [!NOTE]
+> - För att onboarding via Azure Defender for Servers (tidigare Azure Security Center Standard Edition) ska fungera som förväntat måste servern ha en lämplig arbetsyta och nyckel konfigurerad i inställningarna för Microsoft Monitoring Agent (MMA).
+> - När det har konfigurerats distribueras rätt molnhanteringspaket på datorn och sensorprocessen (MsSenseS.exe) distribueras och startas. 
+> - Det här krävs också om servern är konfigurerad att använda en OMS Gateway-server som proxy.
+
+### <a name="option-3-onboard-windows-servers-through-microsoft-endpoint-manager-version-2002-and-later"></a>Alternativ 3: Introducera Windows-servrar via Microsoft Endpoint Manager version 2002 och senare
+Du kan registrera Windows Server 2012 R2 och Windows Server 2016 med hjälp av Microsoft Endpoint Manager version 2002 och senare. Mer information finns i [Microsoft Defender för Slutpunkt i Microsoft Endpoint Manager current branch](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection).
+
+När du har slutfört introduktionsstegen måste du Konfigurera och uppdatera [Slutpunktsskydd-klienter i System Center.](#configure-and-update-system-center-endpoint-protection-clients)
+
+<br>
+
+## <a name="windows-server-sac-version-1803-windows-server-2019-and-windows-server-2019-core-edition"></a>Windows Server (SACK) version 1803, Windows Server 2019 och Windows Server 2019 Core Edition
+Du kan registrera Windows Server (SACK) version 1803, Windows Server 2019 eller Windows Server 2019 Core Edition med hjälp av följande distributionsmetoder:
+
+- [Lokalt skript](configure-endpoints-script.md) 
+- [Grupprincip](configure-endpoints-gp.md)
+- [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [System Center Configuration Manager 2012 / 2012 R2 1511 / 1602](configure-endpoints-sccm.md#onboard-devices-using-system-center-configuration-manager)
+- [VDI-onboardingskript för icke-beständiga enheter](configure-endpoints-vdi.md)
+
+> [!NOTE]
+> - Onboarding-paketet för Windows Server 2019 till Microsoft Endpoint Manager levereras för närvarande ett skript. Mer information om hur du distribuerar skript i Configuration Manager finns i [Paket och program i Configuration Manager.](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs)
+> - Ett lokalt skript är lämpligt för ett konceptbevis men bör inte användas för produktionsdistribution. För produktionsdistribution rekommenderar vi att du använder grupprinciper eller Microsoft Endpoint Configuration Manager.
+
+Stöd för Windows Server ger djupare insikter i serveraktiviteter, vad gäller kernel- och minnesattack och möjliggör svarsåtgärder.
+
+1. Konfigurera onboardinginställningar för Defender för slutpunkt på Windows-servern med samma verktyg och metoder för Windows 10-enheter. Mer information finns i Introducera [Windows 10-enheter.](configure-endpoints.md)
+
+2. Om du kör en antimalwarelösning från tredje part måste du använda följande inställningar för Microsoft Defender AV-passivt läge. Kontrollera att den har konfigurerats korrekt:
+
+    1. Ange följande registerpost:
+       - Sökväg: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
+       - Namn: ForceDefenderPassiveMode
+       - Typ: REG_DWORD
+       - Värde: 1
+
+    1. Kör följande PowerShell-kommando för att verifiera att det passiva läget har konfigurerats:
+
+       ```PowerShell
+       Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
+       ```
+
+    1. Bekräfta att en nyligen genomförd händelse som innehåller händelsen passiv form hittas:
+
+       ![Bild på verifieringsresultatet av passivt läge](images/atp-verify-passive-mode.png)
+
+3. Kör följande kommando för att kontrollera om Microsoft Defender AV är installerat:
+
+   ```sc.exe query Windefend```
+
+    Om resultatet är "Den angivna tjänsten finns inte som en installerad tjänst" måste du installera Microsoft Defender AV. Mer information finns i [Microsoft Defender Antivirus i Windows 10.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
+    
+    Mer information om hur du använder grupprinciper för att konfigurera och hantera Microsoft Defender Antivirus på dina Windows-servrar finns i Använda grupprincipinställningar för att konfigurera och hantera [Microsoft Defender Antivirus.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)
+
+<br>
+
+## <a name="integration-with-azure-security-center"></a>Integrering med Azure Säkerhetscenter
+Defender för Endpoint kan integreras med Azure Security Center för att tillhandahålla en omfattande lösning för Windows serverskydd. Med den här integreringen kan Azure Säkerhetscenter använda kraften i Defender för Endpoint för att tillhandahålla förbättrad identifiering av hot för Windows-servrar.
+
+Följande funktioner ingår i den här integreringen:
+- Automatisk onboarding – Defender för slutpunkts sensor aktiveras automatiskt på Windows-servrar som skickas till Azure Säkerhetscenter. Mer information om onboarding av Azure Säkerhetscenter finns i [Onboarding till Azure Security Center Standard för förbättrad säkerhet.](https://docs.microsoft.com/azure/security-center/security-center-onboarding)
+
+    > [!NOTE]
+    > Automatisk onboarding gäller endast för Windows Server 2008 R2 SP1, Windows Server 2012 R2 och Windows Server 2016.
+
+- Windows-servrar som övervakas av Azure Säkerhetscenter blir också tillgängliga i Defender för slutpunkt – Azure Säkerhetscenter ansluter smidigt till Defender för slutpunktsklientorganisationen, vilket ger en enda vy mellan klienter och servrar.  Dessutom är Defender för slutpunktsaviseringar tillgängliga i Azure Säkerhetscenter-konsolen.
+- Serverundersökning – Azure Säkerhetscenter-kunder kan använda Microsoft Defender Säkerhetscenter för att utföra detaljerad undersökning för att upptäcka omfattningen av en möjlig intrång.
+
+> [!IMPORTANT]
+> - När du använder Azure Säkerhetscenter för att övervaka servrar skapas automatiskt en Defender för slutpunktsklientorganisation (i USA för USA-användare i EU för europeiska och brittiska användare).<br>
+Data som samlas in av Defender för Endpoint lagras på klientorganisationens geoplats som identifieras under etableringen.
+> - Om du använder Defender för slutpunkt innan du använder Azure Säkerhetscenter lagras dina data på den plats som du angav när du skapade klientorganisationen, även om du integrerar med Azure Säkerhetscenter vid ett senare tillfälle.
+> - När den har konfigurerats kan du inte ändra platsen där dina data lagras. Om du behöver flytta dina data till en annan plats måste du kontakta Microsoft Support för att återställa klientorganisationen. <br>
+Serverslutpunktsövervakning som använder den här integreringen har inaktiverats för Office 365 GCC-kunder.
+
+<br>
+
+## <a name="configure-and-update-system-center-endpoint-protection-clients"></a>Konfigurera och uppdatera System Center Endpoint Protection-klienter
+
+Defender för Endpoint integreras med System Center Endpoint Protection. Integreringen ger möjlighet till identifiering av skadlig programvara och för att stoppa spridningen av en attack i organisationen genom att förbjuda potentiellt skadliga filer eller misstänkt skadlig programvara.
+
+Följande steg krävs för att aktivera den här integreringen:
+- Installera uppdateringen för plattformen för skydd mot skadlig programvara i januari [2017 för Endpoint Protection-klienter.](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)
+
+- [Konfigurera medlemskap i S FLERA-klientens Molnskyddstjänst](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) till **inställningen** Avancerat.
+
+<br>
+
+## <a name="offboard-windows-servers"></a>Offboard Windows-servrar
+Du kan offboard Windows Server (SACK), Windows Server 2019 och Windows Server 2019 Core-versionen på samma sätt som för Windows 10-klientenheter.
+
+För andra Versioner av Windows-servrar har du två alternativ för att ta bort Windows-servrar från tjänsten:
+- Avinstallera MMA-agenten
+- Ta bort Defender för slutpunktsarbetsytans konfiguration
+
+> [!NOTE]
+> Offboarding gör att Windows-servern slutar skicka sensordata till portalen, men data från Windows-servern, inklusive referens till eventuella aviseringar som den haft kommer att behållas i upp till 6 månader.
+
+### <a name="uninstall-windows-servers-by-uninstalling-the-mma-agent"></a>Avinstallera Windows-servrar genom att avinstallera MMA-agenten
+Om du vill ta bort Windows-servern kan du avinstallera MMA-agenten från Windows-servern eller koppla från den från rapporteringen till Defender för slutpunkt-arbetsytan. Efter offboarding av agenten skickar Windows-servern inte längre sensordata till Defender för Slutpunkt.
+Mer information finns i Inaktivera [en agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#to-disable-an-agent).
+
+### <a name="remove-the-defender-for-endpoint-workspace-configuration"></a>Ta bort Defender för slutpunktsarbetsytans konfiguration
+Om du vill ta bort Windows-servern från en annan dator kan du använda någon av följande metoder:
+
+- Ta bort konfiguration av Defender för slutpunktsarbetsyta från MMA-agenten
+- Köra ett PowerShell-kommando för att ta bort konfigurationen
+
+#### <a name="remove-the-defender-for-endpoint-workspace-configuration-from-the-mma-agent"></a>Ta bort konfiguration av Defender för slutpunktsarbetsyta från MMA-agenten
+
+1. I egenskaperna **för Microsoft Monitoring Agent** väljer du fliken Azure Log Analytics **(OMS).**
+
+2. Välj Defender för slutpunktsarbetsytan och klicka på **Ta bort**.
+
+    ![Bild på egenskaper för Microsoft Monitoring Agent](images/atp-mma.png)
+
+#### <a name="run-a-powershell-command-to-remove-the-configuration"></a>Köra ett PowerShell-kommando för att ta bort konfigurationen
+
+1. Skaffa ditt arbetsyte-ID:
+
+   1. Välj Inställningar Onboarding **i**  >  **navigeringsfönstret.**
+
+   1. Välj **Windows Server 2008 R2 SP1, 2012 R2 och 2016** som operativsystem och få ditt Arbetsyte-ID:
+
+      ![Bild på Onboarding för Windows-server](images/atp-server-offboarding-workspaceid.png)
+
+2. Öppna en PowerShell med förhöjd behörighet och kör följande kommando. Använd det arbetsyte-ID du skaffade och `WorkspaceID` ersätter:
+
+    ```powershell
+    $ErrorActionPreference = "SilentlyContinue"
+    # Load agent scripting object
+    $AgentCfg = New-Object -ComObject AgentConfigManager.MgmtSvcCfg
+    # Remove OMS Workspace
+    $AgentCfg.RemoveCloudWorkspace("WorkspaceID")
+    # Reload the configuration and apply changes
+    $AgentCfg.ReloadConfiguration()
+
+    ```
+
+<br>
+
+## <a name="related-topics"></a>Relaterade ämnen
+- [Introducera Windows 10-enheter](configure-endpoints.md)
+- [Introducera enheter som inte är Windows-enheter](configure-endpoints-non-windows.md)
+- [Konfigurera proxy- och Internetanslutningsinställningar](configure-proxy-internet.md)
+- [Köra ett identifieringstest på en nyligen onboarded Defender för Endpoint-enhet](run-detection-test.md)
+- [Felsökning av problem med introduktion till Microsoft Defender för slutpunkt](troubleshoot-onboarding.md)
