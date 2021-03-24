@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Mer information om olika typer av förklaringar i Microsoft SharePoint Syntex
-ms.openlocfilehash: 5187b27438f25db1a2714f1fbc7b31db6d060ccc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b34de9ffc565e3d1a17cac05084e4e4b4113a3c6
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928406"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994634"
 ---
 # <a name="introduction-to-explanation-types"></a>Introduktion till förklaringstyper
 
@@ -157,25 +157,25 @@ Till exempel, istället för att manuellt lägga till alla variationer för *Dat
  
 I förklaringsbiblioteket finns flera vanliga förklaringar för mönsterlistor, till exempel:</br>
 
-- Datum</br>
-- Datum (numeriskt)</br>
-- Tid</br>
-- Siffra</br>
-- Procentsats</br>
-- Telefonnummer</br>
-- Postnummer</br>
-- Första ord i mening</br>
-- Slutet av meningen</br>
-- Kontokort</br>
-- Personnummer</br>
-- Kryssruta</br>
-- Valuta</br>
-- Skicka e-post till CC</br>
-- E-postdatum</br>
-- E-posthälsning</br>
-- E-postmottagare</br>
-- E-postavsändare</br>
-- Ämne för e-post</br>
+- Datum: kalenderdatum, alla format. Innehåller text och tal (till exempel "9 dec 2020").</br>
+- Datum (numeriskt): kalenderdatum, alla format. Inkluderar tal (till exempel 1-11-2020).</br>
+- Tid: 12- och 24-timmarsformat.</br>
+- Tal: positiva och negativa tal upp till 2 decimaler. </br>
+- Procent: en lista över mönster som representerar en procentsats. Till exempel: 1%, 11%, 100%, 11.11%, osv.</br>
+- Telefonnummer: Vanliga amerikanska och internationella format. Till exempel: 000 000 0000, 000-000-0000, (000)000-0000, (000) 000-0000, osv.</br>
+- Postnummer: amerikanska postnummerformat. Till exempel: 11111, 11111-1111.</br>
+- Första ordet i meningen: vanliga mönster för ord upp till 9 tecken. </br>
+- Slutet av mening: vanligt skiljetecken för slutet av en mening</br>
+- Kreditkort: vanliga talformat för kreditkort. Till exempel: 1111-1111-1111-1111. </br>
+- Personnummer: US personnummer-format. Till exempel: 111-11-1111. </br>
+- Kryssruta: en fraslista som representerar variationer på en ifylld kryssruta. Till exempel _X_, _ _X_ osv.</br>
+- Valuta: vanligaste internationella symboler. Exempel: $. </br>
+- Kopia i e-post: en fraslista med termen "CC:" som ofta finns nära namnen eller e-postadresserna till ytterligare personer eller grupper som meddelandet skickades till.</br>
+- E-postdatum: en fraslista med termen "Skickat den:" förekommer ofta nära det datum då meddelandet skickades.</br>
+- E-posthälsning: vanliga inledande rader för e-postmeddelanden.</br>
+- E-postmottagare: en fraslista med termen "Till:" som ofta finns nära namnen eller e-postadresserna till personer eller grupper som meddelandet skickades till. </br>
+- E-postavsändare: en fraslista med termen "Från:" förekommer ofta nära avsändarens namn eller e-postadress. </br>
+- Ämne för e-post: en fraslista med termen "Ämne:" som ofta finns nära e-postmeddelandets ämne. </br>
 
 I förklaringsbiblioteket finns också tre automatiska malltyper som fungerar med de data som du har märkt i exempelfilerna:
 
