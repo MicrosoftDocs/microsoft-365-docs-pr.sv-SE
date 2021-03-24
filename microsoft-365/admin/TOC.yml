@@ -314,7 +314,7 @@
             - name: Konfigurera funktioner för efterlevnad
               href: ../business/set-up-compliance.md
         - name: Säkerhetspoäng
-          href: ../security/mtp/microsoft-secure-score.md
+          href: 'https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score'
         - name: En guide till GDPR-efterlevnad
           href: security-and-compliance/gdpr-compliance.md
     - name: Hantera enheter och programdata
