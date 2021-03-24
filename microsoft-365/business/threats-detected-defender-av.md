@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Läs om hur Microsoft Defender Antivirus skyddar dina Windows-enheter mot programvaruhot, till exempel virus, skadlig programvara och spionprogram.
-ms.openlocfilehash: ce88e4f7b1caf3a98ebd6dc56d66f0d0fc99a9ad
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5fe55817018eeae49e6e41c95d93006b6f05ece0
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912436"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052224"
 ---
 # <a name="threats-detected-by-microsoft-defender-antivirus"></a>Hot som upptäcks av Microsoft Defender Antivirus
 
@@ -89,4 +89,4 @@ Om du vill veta mer om olika hot kan du <a href="https://www.microsoft.com/wdsi/
 [Så här aktiverar och använder du Microsoft Defender Antivirus från Windows-säkerhetsappen](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus) (artikel)\
 [Så här aktiverar du Microsoft Defender Antivirus med hjälp av Grupprincip](/mem/intune/user-help/turn-on-defender-windows#turn-on-windows-defender) (artikel)\
 [Hur du uppdaterar dina antivirusdefinitioner](/mem/intune/user-help/turn-on-defender-windows#update-your-antivirus-definitions) (artikel)\
-[Skicka skadlig programvara och icke-skadlig programvara till Microsoft för analys](../security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md) (artikel)
+[Skicka skadlig programvara och icke-skadlig programvara till Microsoft för analys](/microsoft-365/security/defender-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis) (artikel)

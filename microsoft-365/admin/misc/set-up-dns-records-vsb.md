@@ -20,12 +20,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Lär dig verifiera din domän och skapa DNS-poster på vilken DNS-värd som helst för Microsoft 365.
 ms.custom:
 - AdminSurgePortfolio
-ms.openlocfilehash: 506ee887edbc59956aee11059a7085bc4b22624e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 95b1caadfe0e5b331b2bd777263bd86a88bb581f
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914600"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050660"
 ---
 # <a name="connect-your-domain-to-microsoft-365"></a>Anslut din domän till Microsoft 365
 
@@ -76,6 +76,6 @@ Använd något av följande [SPF-verifieringsverktyg](/office365/admin/setup/dom
 
 SPF har utformats för att hjälpa till att förhindra förfalskning men det finns förfalskningsmetoder som SPF inte skyddar mot. För att skydda mot dessa ska du, efter att ha konfigurerat SPF, även konfigurera DKIM och DMARC för Microsoft 365.
 
-Information om hur du kommer igång finns i [Använda DKIM för att validera utgående e-post som skickas från din domän i Microsoft 365](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) och [Använda DMARC för att validera e-post i Microsoft 365](../../security/office-365-security/use-dmarc-to-validate-email.md).
+Information om hur du kommer igång finns i [Använda DKIM för att validera utgående e-post som skickas från din domän i Microsoft 365](../../security/defender-365-security/use-dkim-to-validate-outbound-email.md) och [Använda DMARC för att validera e-post i Microsoft 365](../../security/defender-365-security/use-dmarc-to-validate-email.md).
 
 Slutligen, gå tillbaka till administratörscentrets domäninställningsguide för att slutföra installationen.

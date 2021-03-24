@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå hur Contoso använder funktionerna för informationsskydd i Microsoft 365 för företag för att skydda sina digitala tillgångar i molnet.
-ms.openlocfilehash: 90a82fbd4dd77ff0f8faa024ced177a640a10b80
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3bd778708e30253e53cc465e89f7b783141771de
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911044"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051502"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Informationsskydd för Contoso Corporation
 
@@ -76,9 +76,9 @@ Contoso följde de här stegen för att förbereda Microsoft 365 för företag f
 
 Som en del av utrullningen av Exchange Online och SharePoint konfigurerade Contoso följande uppsättning principer för villkorsstyrd åtkomst och tillämpade dem på rätt grupper:
 
-- [Principer för hanterad och ohanterad programåtkomst på enheter](../security/office-365-security/identity-access-policies.md)
-- [Principer för Exchange Online-åtkomst](../security/office-365-security/secure-email-recommended-policies.md)
-- [Principer för SharePoint-åtkomst](../security/office-365-security/sharepoint-file-access-policies.md)
+- [Principer för hanterad och ohanterad programåtkomst på enheter](../security/defender-365-security/identity-access-policies.md)
+- [Principer för Exchange Online-åtkomst](../security/defender-365-security/secure-email-recommended-policies.md)
+- [Principer för SharePoint-åtkomst](../security/defender-365-security/sharepoint-file-access-policies.md)
 
 Här är den resulterande uppsättningen Contoso-principer för informationsskydd.
 
@@ -117,7 +117,7 @@ Lär dig hur Contoso använder säkerhetsfunktionerna i [Microsoft 365](contoso-
 
 ## <a name="see-also"></a>Se även
 
-[Säkerhetsöversikt](../security/office-365-security/security-roadmap.md)
+[Säkerhetsöversikt](../security/defender-365-security/security-roadmap.md)
 
 [Översikt över Microsoft 365 för företag](microsoft-365-overview.md)
 

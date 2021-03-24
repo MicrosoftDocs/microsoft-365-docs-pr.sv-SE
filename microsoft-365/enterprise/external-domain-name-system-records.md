@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: En referenslista över externa DNS-poster att använda när du planerar en distribution av Office 365.
-ms.openlocfilehash: c2384f1e330692d43c923a7932db4c3ff2bc99ae
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3aa6bf3362005eb0dae5bca40322fe2178d5d69f
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924218"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051384"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Externa DNS-poster för Office 365
 
@@ -103,7 +103,7 @@ Det finns olika åtgärder att vidta när du använder [Office 365 URL: er och I
 <a name="BKMK_SPFrecords"> </a>
 
 > [!IMPORTANT]
-> SPF har utformats för att hjälpa till att förhindra förfalskning men det finns förfalskningsmetoder som SPF inte skyddar mot. För att kunna skydda mot dessa ska du, efter att ha konfigurerat SPF, även konfigurera DKIM och DMARC för Office 365. Information om hur du kommer igång finns i [Använda DKIM för att validera utgående e-post som skickas från din domän i Office 365](../security/office-365-security/use-dkim-to-validate-outbound-email.md). Därefter läser du [Använd DMARC för att validera e-post i Office 365](../security/office-365-security/use-dmarc-to-validate-email.md).
+> SPF har utformats för att hjälpa till att förhindra förfalskning men det finns förfalskningsmetoder som SPF inte skyddar mot. För att kunna skydda mot dessa ska du, efter att ha konfigurerat SPF, även konfigurera DKIM och DMARC för Office 365. Information om hur du kommer igång finns i [Använda DKIM för att validera utgående e-post som skickas från din domän i Office 365](../security/defender-365-security/use-dkim-to-validate-outbound-email.md). Därefter läser du [Använd DMARC för att validera e-post i Office 365](../security/defender-365-security/use-dmarc-to-validate-email.md).
   
 SPF-poster är TXT-poster som hjälper till att hindra andra personer från att använda domänen till att skicka skräppost eller annan skadlig e-post. SPF-poster (Sender Policy Framework) fungerar genom att identifiera servrarna som har godkänts för att skicka e-post från domänen.
   
@@ -125,7 +125,7 @@ Ett e-postsystem som tar emot e-post från din domän ser på SPF-posten, och om
 För scenarier där du inte bara använder Exchange Online-e-post för Office 365 (till exempel när du även använder e-post som kommer från SharePoint Online) kan du använda följande tabell för att avgöra vad som ska ingå i värdet för posten.
   
 > [!NOTE]
-> Om du har ett komplicerat scenario som till exempel omfattar Edge-e-postservrar för att hantera e-posttrafik via brandväggen, behöver du konfigurera en mer detaljerad SPF-post. Lära dig hur du kan[ konfigurera SPF-poster i Office 365 för att förhindra förfalskning](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md). Du kan också lära dig mer om hur SPF fungerar med Office 365 genom att läsa [Hur Office 365 använder Sender Policy Framework (SPF) för att förhindra förfalskning](../security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md).
+> Om du har ett komplicerat scenario som till exempel omfattar Edge-e-postservrar för att hantera e-posttrafik via brandväggen, behöver du konfigurera en mer detaljerad SPF-post. Lära dig hur du kan[ konfigurera SPF-poster i Office 365 för att förhindra förfalskning](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md). Du kan också lära dig mer om hur SPF fungerar med Office 365 genom att läsa [Hur Office 365 använder Sender Policy Framework (SPF) för att förhindra förfalskning](../security/defender-365-security/how-office-365-uses-spf-to-prevent-spoofing.md).
   
 | Tal|Om du använder...  <br/> |Syfte  <br/> |Lägg till följande  <br/> |
 |:-----|:-----|:-----|:-----|
@@ -181,6 +181,6 @@ TXT Name @
 Values: v=spf1 include:spf.protection.outlook.com include:mail.contoso.com -all
 ```
 
-Det här är några vanliga exempel som kan hjälpa dig att anpassa den befintliga SPF-posten när du lägger till din domän i Office 365 för e-post. Om du har ett komplicerat scenario som till exempel omfattar Edge-e-postservrar för att hantera e-posttrafik via brandväggen, behöver du konfigurera en mer detaljerad SPF-post. Lära dig hur du kan[ konfigurera SPF-poster i Office 365 för att förhindra förfalskning](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md).
+Det här är några vanliga exempel som kan hjälpa dig att anpassa den befintliga SPF-posten när du lägger till din domän i Office 365 för e-post. Om du har ett komplicerat scenario som till exempel omfattar Edge-e-postservrar för att hantera e-posttrafik via brandväggen, behöver du konfigurera en mer detaljerad SPF-post. Lära dig hur du kan[ konfigurera SPF-poster i Office 365 för att förhindra förfalskning](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md).
   
 Här är en kort länk som du kan använda för att komma tillbaka: [https://aka.ms/o365edns]()

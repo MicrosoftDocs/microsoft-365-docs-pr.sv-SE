@@ -14,18 +14,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Skapa en Microsoft 365-miljö för att testa identitets- och enhetsåtkomst.
-ms.openlocfilehash: 427b0589da0347008cca0e2004bc23f494bebb29
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e90c27edbf4ad5a78c337bf2488956ce82a1ec3e
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907474"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051324"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>Identitets- och enhetsåtkomst till testmiljön för Microsoft 365
 
 *Den här testlabbguiden kan endast användas för Microsoft 365 för företagstestmiljöer.*
 
-[Identitets- och enhetsåtkomstkonfigurationer](../security/office-365-security/microsoft-365-policies-configurations.md) är en uppsättning rekommenderade konfigurationer och villkorsstyrda åtkomstprinciper för att skydda åtkomsten till alla tjänster som är integrerade med Azure Active Directory (Azure AD).
+[Identitets- och enhetsåtkomstkonfigurationer](../security/defender-365-security/microsoft-365-policies-configurations.md) är en uppsättning rekommenderade konfigurationer och villkorsstyrda åtkomstprinciper för att skydda åtkomsten till alla tjänster som är integrerade med Azure Active Directory (Azure AD).
 
 Så här skapar du en testmiljö med vanliga konfigurationer för identitets- och enhetsåtkomst:
 
@@ -35,7 +35,7 @@ Så här skapar du en testmiljö med vanliga konfigurationer för identitets- oc
   - [Synkronisering av lösenordshashar (PHS)](phs-prereqs-m365-test-environment.md)
   - [Direktautentisering (PTA)](pta-prereqs-m365-test-environment.md)
 
-2. Använd [Vanliga principer för identitets-](../security/office-365-security/identity-access-policies.md) och enhetsåtkomst för att konfigurera principer som bygger på de krav som är konfigurerade för testmiljön och utforska och verifiera skydd för identiteter och enheter.
+2. Använd [Vanliga principer för identitets-](../security/defender-365-security/identity-access-policies.md) och enhetsåtkomst för att konfigurera principer som bygger på de krav som är konfigurerade för testmiljön och utforska och verifiera skydd för identiteter och enheter.
 
 ## <a name="see-also"></a>Se även
 

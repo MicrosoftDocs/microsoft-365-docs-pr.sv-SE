@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Så här implementerar du VPN-delade tunnlar för Office 365
-ms.openlocfilehash: 2feb03f2142639a1c1de4ff9a69768e23f282546
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 93adc70882e0c8ce9752cb471b13c301a4a59bd4
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924230"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051288"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementera VPN-delade tunnlar för Office 365
 
@@ -304,7 +304,7 @@ Sedan kan vi utlösa principer som att godkänna, utlösa MFA eller blockera aut
 
 ### <a name="how-do-i-protect-against-viruses-and-malware"></a>Hur skyddar jag mot virus och skadlig programvara?
 
-Office 365 skyddar som återigen de optimerade slutpunkterna i olika lager i själva tjänsten, [som beskrivs i det här dokumentet.](/office365/Enterprise/office-365-malware-and-ransomware-protection) Som vi har nämnt är det mycket mer effektivt att tillhandahålla dessa säkerhetselement i själva tjänsten i stället för att försöka göra det i nivå med enheter som inte helt förstår protokollen/trafiken. Som standard söker SharePoint Online [automatiskt igenom filuppladdningar efter](../security/office-365-security/virus-detection-in-spo.md) känd skadlig programvara
+Office 365 skyddar som återigen de optimerade slutpunkterna i olika lager i själva tjänsten, [som beskrivs i det här dokumentet.](/office365/Enterprise/office-365-malware-and-ransomware-protection) Som vi har nämnt är det mycket mer effektivt att tillhandahålla dessa säkerhetselement i själva tjänsten i stället för att försöka göra det i nivå med enheter som inte helt förstår protokollen/trafiken. Som standard söker SharePoint Online [automatiskt igenom filuppladdningar efter](../security/defender-365-security/virus-detection-in-spo.md) känd skadlig programvara
 
 För Exchange-slutpunkterna som anges ovan [gör Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) och Microsoft Defender för Office [365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) ett utmärkt sätt att tillhandahålla säkerheten för trafiken till tjänsten.
 

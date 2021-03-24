@@ -14,20 +14,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Skapa en Microsoft 365-miljö för att testa identitets- och enhetsåtkomst med kraven för molnautentisering.
-ms.openlocfilehash: 3e5a9ef1f610bf3dc6d23c9e584e179fb8ab9ca9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 537718eb0efcffc296162a4458158efcbdad9986
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905146"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051550"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Krav för identitets- och enhetsåtkomst för moln i din Microsoft 365-testmiljö
 
 *Den här testlabbguiden kan endast användas för Microsoft 365 för företagstestmiljöer.*
 
-[Identitets- och enhetsåtkomstkonfigurationer](../security/office-365-security/microsoft-365-policies-configurations.md) är en uppsättning rekommenderade konfigurationer och villkorsstyrda åtkomstprinciper för att skydda åtkomsten till alla tjänster som är integrerade med Azure Active Directory (Azure AD).
+[Identitets- och enhetsåtkomstkonfigurationer](../security/defender-365-security/microsoft-365-policies-configurations.md) är en uppsättning rekommenderade konfigurationer och villkorsstyrda åtkomstprinciper för att skydda åtkomsten till alla tjänster som är integrerade med Azure Active Directory (Azure AD).
 
-I den här artikeln beskrivs hur du kan konfigurera en Microsoft 365-testmiljö som uppfyller kraven för [konfiguration av förutsättningar endast för moln](../security/office-365-security/identity-access-prerequisites.md#prerequisites) för identitets- och enhetsåtkomst.
+I den här artikeln beskrivs hur du kan konfigurera en Microsoft 365-testmiljö som uppfyller kraven för [konfiguration av förutsättningar endast för moln](../security/defender-365-security/identity-access-prerequisites.md#prerequisites) för identitets- och enhetsåtkomst.
 
 Konfigurationen av testmiljön består av åtta faser. Du behöver:
 
@@ -109,11 +109,11 @@ För Skype för företag – Online:
   Get-CsOAuthConfiguration
   ```
 
-Resultatet är en testmiljö som uppfyller kraven för den moln enda nödvändiga [konfigurationen för identiteter](../security/office-365-security/identity-access-prerequisites.md#prerequisites) och enhetsåtkomst. 
+Resultatet är en testmiljö som uppfyller kraven för den moln enda nödvändiga [konfigurationen för identiteter](../security/defender-365-security/identity-access-prerequisites.md#prerequisites) och enhetsåtkomst. 
 
 ## <a name="next-step"></a>Nästa steg
 
-Använd [vanliga identitets- och enhetsprinciper](../security/office-365-security/identity-access-policies.md) när du vill konfigurera de principer som bygger på kraven och skyddar identiteter och enheter.
+Använd [vanliga identitets- och enhetsprinciper](../security/defender-365-security/identity-access-policies.md) när du vill konfigurera de principer som bygger på kraven och skyddar identiteter och enheter.
 
 ## <a name="see-also"></a>Se även
 

@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Läs mer om multifaktorautentisering i Microsoft 365.
-ms.openlocfilehash: e1635e48e3948425a6d91f80fd07d50c474b73d7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 080251efa7d7d3bda6ad89e95960e43dd38d076d
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914516"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050672"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Multifaktorautentisering för Microsoft 365
 
@@ -127,7 +127,7 @@ Mer information finns i den här [översikt över villkorsstyrd åtkomst](/azure
 
 ### <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-Med Azure AD Identity Protection kan du skapa ytterligare en villkorsstyrd åtkomstprincip som kräver [MFA när inloggningsrisken är medium eller hög.](../../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk)
+Med Azure AD Identity Protection kan du skapa ytterligare en villkorsstyrd åtkomstprincip som kräver [MFA när inloggningsrisken är medium eller hög.](../../security/defender-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk)
 
 Du kan använda Azure AD Identity Protection och riskbaserade villkorsstyrda åtkomstpolicyer med:
 

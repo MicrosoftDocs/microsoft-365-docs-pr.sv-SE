@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: Översikt över att konfigurera enhetshantering för Microsoft 365.
-ms.openlocfilehash: 4c37033898865372fea19ddbb53ec9c8586f27b1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ec284a96fc8e7285f89e8a909b76c782b4469ce1
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918972"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051466"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Översikt över enhetshantering för Microsoft 365
 
@@ -54,10 +54,10 @@ Baserat på din utvärdering kan du komma igång med att hantera dina enheter me
  
 ## <a name="identity-and-device-access-recommendations"></a>Rekommendationer för identitets- och enhetsåtkomst
 
-Microsoft tillhandahåller en uppsättning rekommendationer för [identitets- och enhetsåtkomst](../security/office-365-security/microsoft-365-policies-configurations.md) för att säkerställa en säker och produktiv arbetsstyrka. För enhetsåtkomst använder du rekommendationer och inställningar i följande artiklar:
+Microsoft tillhandahåller en uppsättning rekommendationer för [identitets- och enhetsåtkomst](../security/defender-365-security/microsoft-365-policies-configurations.md) för att säkerställa en säker och produktiv arbetsstyrka. För enhetsåtkomst använder du rekommendationer och inställningar i följande artiklar:
 
-- [Krav](../security/office-365-security/identity-access-prerequisites.md)
-- [Vanliga principer för identitets- och enhetsåtkomst](../security/office-365-security/identity-access-policies.md)
+- [Krav](../security/defender-365-security/identity-access-prerequisites.md)
+- [Vanliga principer för identitets- och enhetsåtkomst](../security/defender-365-security/identity-access-policies.md)
 
 ## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Hur Contoso hanterade enheter för Microsoft 365
 

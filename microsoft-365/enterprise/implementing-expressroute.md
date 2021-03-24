@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Lär dig att implementera ExpressRoute för Office 365 som ger en alternativ routningssökväg till många Office 365-tjänster på Internet.
-ms.openlocfilehash: d0f0b5156aae5a3e2c38f51ba0b74738918593e9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d75fe3a6dab4926babeef61fc14894566ff819b0
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909838"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051372"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implementera ExpressRoute för Office 365
 
@@ -225,7 +225,7 @@ Din implementeringsplan bör omfatta både teknisk information om konfiguration 
 
 - Bestäm hur långt ExpressRoute-routes ska annonseras på ditt nätverk och vilken mekanism som ska finnas för klienter för att välja Internet- eller ExpressRoute-sökväg. till exempel direktroutning eller programproxy.
 
-- Planera DNS-poständringar, inklusive [Sender Policy Framework-poster.](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+- Planera DNS-poständringar, inklusive [Sender Policy Framework-poster.](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
 - Planera EN NAT-strategi som omfattar utgående och inkommande käll-NAT.
 

@@ -1,5 +1,5 @@
 ---
-title: Använd identitets-, enhets-och hot skydd för data integritets förordning
+title: Använda identitets-, enhets- och hotskydd för dataskyddsförordningen
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -16,73 +16,73 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Förhindra person uppgifter om identitets-, enhets-och hot skydd i Microsoft 365.
-ms.openlocfilehash: 321b60efbdabe62b14502df4a16dd2dcec4b9cef
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: Förhindra personliga databrott med tjänster för identitet, enhet och hotskydd i Microsoft 365.
+ms.openlocfilehash: 145b8a59f7eafb95adf71dc24613ee15ef1c2cca
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847184"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052356"
 ---
-# <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Använd identitets-, enhets-och hot skydd för data integritets förordning
+# <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Använda identitets-, enhets- och hotskydd för dataskyddsförordningen
 
-Microsoft 365 tillhandahåller ett antal funktioner för identitets-, enhets-och hot skydd som organisationer kan använda för att uppfylla data integritets regler. I den här artikeln beskrivs vad data integritets reglerna kräver i dessa områden och en lista över relaterade funktioner och tjänster i Microsoft 365 med länkar till mer information som hjälper dig att hantera implementerings kraven.
+Microsoft 365 tillhandahåller ett antal funktioner för identitet, enheter och hotskydd som organisationer kan använda för att hjälpa till att uppfylla sekretessrelaterade bestämmelser om datasekretess. I den här artikeln beskrivs vad datasekretessbestämmelser kräver på dessa områden och en lista med relaterade Microsoft 365-funktioner och -tjänster med länkar till mer information som hjälper dig att uppfylla implementeringskraven.
 
-## <a name="how-identity-device-and-threat-protection-relate-to-data-privacy-regulation"></a>Så här skyddar identitet, enhet och hot mot data integritets reglering
+## <a name="how-identity-device-and-threat-protection-relate-to-data-privacy-regulation"></a>Hur identitets-, enhets- och hotskydd relaterar till dataskyddsförordningen
 
-Även om data integritets reglerna varierar beroende på deras betydelse, är syftet med vad de kan prata med i GDPR i paragraf 5.1 (f), som visar att: 
+Även om datasekretessreglerna varierar beroende på deras specifika natur är det viktigaste för det de kallar i GDPR:s artikel 5(1)(f), där det står att:
 
-- Person uppgifter ska behandlas på ett sätt som säkerställer lämplig säkerhet för person uppgifter, inklusive skydd mot obehörig eller olaglig behandling samt mot oavsiktlig förlust, destruktion eller skada, med lämpliga tekniska eller organisatoriska åtgärder ("integritet och konfidentialitet").
+- Personuppgifter ska bearbetas på ett sätt som säkerställer tillräcklig säkerhet för personuppgifter, inklusive skydd mot obehörig eller olaglig bearbetning och mot oavsiktlig förlust, intrång eller skada genom att använda lämpliga tekniska åtgärder eller organisationsåtgärder (integritet och konfidentialitet).
 
-Eftersom person data brott ofta orsakas av administratörs-eller slutanvändarens problem med intrång i systemet. Ett administratörs konto Hacker kan till exempel ge exfiltration kreditkorts nummer eller annan personlig information. Allt allmänt tillrådligt krypterings-, enhets-och hot-skydd som är tillgängligt med Microsoft 365 kan komma att implementeras, som kommer att återspeglas i din uppkopplings poäng, i Compliance Manager.
+Eftersom personliga databrott ofta orsakas av administrativa intrång eller slutanvändarkontointrång och skadlig systemåtkomst. Till exempel kan en hack för ett administratörskonto resultera i att kundkortsnummer eller annan personlig information förs över. Alla vi rekommenderar att du använder identitets-, enhets- och hotskydd tillsammans med Microsoft 365 bör potentiellt implementeras, vilket återspeglas i efterlevnadsresultatet i Efterlevnadshanteraren.
 
-## <a name="using-the-results-of-your-assessment-work-and-compliance-manager"></a>Använda resultaten av din bedömnings arbete och kompatibilitetskontrollen
+## <a name="using-the-results-of-your-assessment-work-and-compliance-manager"></a>Använda resultaten från ditt utvärderingsarbete och Efterlevnadshanteraren
 
-Efterföljandekrav inkluderar identitets-, enhets-och hot skydd med dessa kategorier:
+Efterlevnadshanteraren innehåller identitets-, enhets- och hotskydd med följande kategorier:
 
-- Identiteten motsvarar kategorin för **kontroll åtkomst**
-- Enheten motsvarar kategorin **Hantera enheter**
-- Hotet skyddas **mot kategorin skydda mot hot**
+- Identiteten motsvarar **kategorin Kontrollåtkomst**
+- Enheten motsvarar kategorin **Hantera** enheter
+- Hotskydd motsvarar **kategorin Skydda mot** hot
  
-Om dessa är markerade i vårt exempel med fyra viktiga data integritets regler anger överensstämmelse hanteraren 90 förbättrings åtgärder, de flesta av dessa betyg är "27". Eftersom ett sådant stort nummer besvaras av Compliance Manager för dessa kategorier, är några av de vanligaste fälten listade som referens.
+Om dessa väljs i vår exempeluppsättning med fyra huvudregler för datasekretess anger Efterlevnadshanteraren 90 förbättringsåtgärder, varav de flesta har poänget "27". Eftersom Ett så stort antal anges av Efterlevnadshanteraren för dessa kategorier anges några av de vanligaste här, som referens.
 
-Använd [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) för identitet och **kontroll åtkomst** kategori, med vilken du kan:
+Använd [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) för identitet och kategorin **Kontrollåtkomst,** som du kan med:
 
-- Implementera Replay-motstånd (för att förhindra "man i mitten")
-- Blockera bakåtkompatibel-verifikation.
-- Konfigurera principer för användar risker och användar inloggnings risker.
-- Aktivera villkorsstyrd åtkomst och multifaktorautentisering för administratörer och icke-administratörer.
-- Konfigurera och tillämpa lösen ords principer.
-- Begränsa åtkomsten till behöriga konton med Azure AD restrict Identity Management.
+- Implementera replay-authentication (för att förhindra "man i mitten"-attacker)
+- Blockera äldre autentisering.
+- Konfigurera principer för användarrisk och användar inloggningsrisk.
+- Aktivera villkorlig åtkomst och multifaktorautentisering (MFA) för administratörer och icke-administratörer.
+- Konfigurera och tillämpa lösenordsprinciper.
+- Begränsa åtkomst till konton med behörighet med identitetshantering med Azure AD-behörighet.
 - Inaktivera åtkomst vid uppsägning.
-- Granska användar konton och status ändringar.
-- Granska roll grupper och administrativa ändringar.
+- Granska användarkonton och statusändringar.
+- Granska rollgrupper och administrativa ändringar.
 
-Använd [Microsoft slut punkts hanteraren](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) för enheter och kategorin **Hantera enheter** , med vilken du kan:
+Använd [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) för enheter och kategorin **Hantera** enheter med vilka du kan:
 
-- Blockera Jail trasiga och rotade mobila enheter.
+- Blockera jail broken and rooted mobile devices.
 - Konfigurera Intune för hantering av mobila enheter.
-- Skapa efterlevnadsprinciper för Android, iOS, macOS och Windows-enheter.
-- Skapa en konfigurations profil för Android, iOS, macOS och Windows.
-- Skapa program skydds principer för iOS och Windows.
-- Dölja information med lås skärmen.
-- Implementera principer för lösen ord för mobila enheter.
-- Kräv att mobila enheter låses vid inaktivitet.
-- Kräv att mobila enheter rensas på flera inloggnings problem.
+- Skapa efterlevnadsprinciper för Android-, iOS-, macOS- och Windows-enheter.
+- Skapa en profil för enhetskonfiguration för Android-, iOS-, macOS- och Windows-enheter.
+- Skapa principer för appskydd för iOS och Windows.
+- Dölj information med låsskärmen.
+- Implementera lösenordsprinciper för mobila enheter.
+- Kräv att mobila enheter låser sig vid inaktivitet.
+- Kräva att mobila enheter rensar vid flera inloggningsfel.
 
-Använd [Exchange Online Protection och Microsoft Defender för Office 365](../security/office-365-security/office-365-atp.md) för kategorin **skydda mot hot** som du kan:
+Använd [Exchange Online Protection och Microsoft Defender för Office 365](../security/defender-365-security/defender-for-office-365.md) **för** kategorin Skydda mot hot med vilka du kan:
 
-- Aktivera avsändare (SPF, DMARC och DKIM).
-- Konfigurera Microsoft Defender för Office 365-nätfiske-principer.
+- Aktivera avsändarautentisering (SPF, DMARC och DKIM).
+- Konfigurera Microsoft Defender för Office 365 mot nätfiske.
 - Implementera säkra bifogade filer.
 - Implementera säkra länkar.
-- Implementera identifierings-och svars principer för skadlig kod.
-- Implementera principer för utgående och inkommande skräp post.
+- Implementera principer för identifiering av skadlig programvara och svar.
+- Implementera principer för utgående och inkommande skräppost.
 
-### <a name="references"></a>Innehåller
+### <a name="references"></a>Referenser:
 
-- [Vanliga principer för identitets- och enhetsåtkomst](../security/office-365-security/identity-access-policies.md)
+- [Vanliga principer för identitets- och enhetsåtkomst](../security/defender-365-security/identity-access-policies.md)
 - [Skydda mot hot i Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
-- [Säkra bifogade filer](../security/office-365-security/atp-safe-attachments.md)
-- [Säkra länkar](../security/office-365-security/atp-safe-links.md)
-- [Säkra dokument](../security/office-365-security/safe-docs.md)
+- [Säkra bifogade filer](../security/defender-365-security/safe-attachments.md)
+- [Säkra länkar](../security/defender-365-security/safe-links.md)
+- [Säkra dokument](../security/defender-365-security/safe-docs.md)

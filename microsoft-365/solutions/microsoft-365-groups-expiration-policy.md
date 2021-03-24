@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Läs mer om förfalloprinciper för Microsoft 365-grupper.
-ms.openlocfilehash: 8232e7df2a8390b905386773ed0656eb8239d5c5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 65a746751cd523a5dadce3eca573e6a9bfce0166
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920922"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052308"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Förfalloprincip för Microsoft 365-grupper
 
@@ -37,6 +37,8 @@ Grupper som aktivt används förnyas automatiskt. När du gör något av följan
 - SharePoint – visa, redigera, ladda ned, flytta, dela eller ladda upp filer. (Att visa en SharePoint-sida räknas inte som en åtgärd för automatisk förnyelse.)
 - Outlook – gå med i gruppen, läsa eller skriva gruppmeddelanden från gruppen och gilla ett meddelande (Outlook på webben).
 - Teams – besök en teamkanal.
+
+Observera att den enda Yammer-aktivitet som utlöser automatisk gruppförnyelse är överföringen av ett dokument till SharePoint inom communityn.
 
 > [!IMPORTANT]
 > När du ändrar förfalloprincipen beräknas utgångsdatumet för varje grupp om. Den börjar alltid räkna från datumet när gruppen skapades och tillämpar sedan den nya förfalloprincipen.

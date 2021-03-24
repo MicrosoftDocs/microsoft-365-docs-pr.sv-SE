@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Så här kommer du till de resurser som motsvarar det inaktuella distributionscentret för skrivbordsversionen.
-ms.openlocfilehash: c4456d0f17e38920e77c855e31205e51025f111b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 54847305576cb5b2cf96177ad810c1b1ccb11eed
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928174"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051478"
 ---
 # <a name="desktop-deployment-center-deprecated"></a>Distributionscenter för skrivbordsversionen (inaktuellt)
 
@@ -29,7 +29,7 @@ Använd de här resurserna för att distribuera moderna skrivbord:
 - [Distribution av Windows 10](/windows/deployment/)
 - [Distribuera Microsoft 365-applikationer](/deployoffice/deployment-guide-microsoft-365-apps)
 - [Microsoft Intune](/mem/intune/fundamentals/planning-guide)
-- [Principer för identitets- och enhetsåtkomst](../security/office-365-security/microsoft-365-policies-configurations.md)
+- [Principer för identitets- och enhetsåtkomst](../security/defender-365-security/microsoft-365-policies-configurations.md)
 
 Du kan också visa [videoklippen om programserierna för skrivbordsdistribution från Microsoft Mechanics.](https://www.aka.ms/watchhowtoshift)
 

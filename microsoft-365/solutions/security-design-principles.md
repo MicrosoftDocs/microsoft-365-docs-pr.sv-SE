@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b6696d15d728e6b66be5e54a9a3c372564c9f187
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7cd9098766024093a0b9fa2d6e95131bf13d09df
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920862"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052488"
 ---
 # <a name="security-hurdles-you-can-sail-overone-architects-viewpoint"></a>Säkerhets hur du kan segla över – En arkitekts arkitektur
 
@@ -49,7 +49,7 @@ Kunder som seglar över dessa hinder har bra samarbeten mellan operationerna och
 
 Därefter bör du använda en nollförtroendearkitektur . Det börjar med att skapa en modern, identitetsbaserad säkerhets perimeter. Utforma säkerhetsarkitekturen där varje åtkomstförsök, oavsett om det är lokala eller molnbaserade, hanteras som icke betrodda tills den verifierats – "lita aldrig på, verifiera alltid". Den här design metoden ökar inte bara säkerhet och produktivitet, utan gör också att användarna kan arbeta var som helst med valfri enhetstyp. De avancerade molnkontrollerna i Microsoft 365 hjälper dig att skydda användarnas identiteter och samtidigt kontrollera åtkomsten till värdefulla resurser baserat på användarrisknivå.
 
-En rekommenderad konfiguration finns i [Identitets- och enhetsåtkomstkonfigurationer.](../security/office-365-security/microsoft-365-policies-configurations.md)
+En rekommenderad konfiguration finns i [Identitets- och enhetsåtkomstkonfigurationer.](../security/defender-365-security/microsoft-365-policies-configurations.md)
 
 ## <a name="transition-security-controls-to-the-cloud"></a>Gå över säkerhetskontroller till molnet
 

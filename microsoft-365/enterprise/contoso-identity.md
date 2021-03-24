@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Hur Contoso använder sig av IDaaS (identitet som tjänst) och tillhandahåller molnbaserad autentisering för anställda och federerad autentisering för partner och kunder.
-ms.openlocfilehash: accd60f6699e7ebf04963213128d1ca1ffc8f7fe
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f3c8746345683652ce601400ae7297e96fff2ee3
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911078"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051526"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>ID för Contoso Corporation
 
@@ -64,7 +64,7 @@ Här är servern som kör Azure AD Connect och avsöker Contoso AD DS-skogen eft
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>Principer för villkorlig åtkomst för identitets- och enhetsåtkomst
 
-Contoso skapade en uppsättning [principer för villkorlig åtkomst](../security/office-365-security/identity-access-policies.md) för Azure AD och Intune för tre skyddsnivåer:
+Contoso skapade en uppsättning [principer för villkorlig åtkomst](../security/defender-365-security/identity-access-policies.md) för Azure AD och Intune för tre skyddsnivåer:
 
 - *Baslinjeskydd* gäller för alla användarkonton.
 - *Känsliga* skydd gäller för ledningsgruppen och ledningsgruppen.

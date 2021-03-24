@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Skydda din affärs-e-post och data från cyberhot, inklusive utpressningstrojaner, nätfiske och skadliga bifogade filer.
-ms.openlocfilehash: 67a882aed34ef60e1f06ab6e304e6611d3ca0600
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4bc465af99f02edf91dacceaae14d39b3156e103
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922310"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052428"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>De 12 viktigaste uppgifterna för säkerhetsteam att stödja arbetet hemifrån
 
@@ -56,7 +56,7 @@ För kunder som använder våra enterprise-abonnemang rekommenderar Microsoft at
 |12|[Övervaka hot och vidta åtgärder](#12-monitor-for-threats-and-take-action)|![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
-Innan du börjar kontrollerar du microsoft [365 Secure Score](./mtp/microsoft-secure-score.md) på Microsoft 365 säkerhetscenter. Från en centraliserad instrumentpanel kan du övervaka och förbättra säkerheten för dina Microsoft 365-identiteter, data, appar, enheter och infrastruktur. Du får poäng för att konfigurera rekommenderade säkerhetsfunktioner, utföra säkerhetsrelaterade uppgifter (till exempel visa rapporter) eller åtgärda rekommendationer med ett program eller en programvara från tredje part. De rekommenderade uppgifterna i den här artikeln kommer att höja din poäng.
+Innan du börjar kontrollerar du microsoft [365 Secure Score](./defender/microsoft-secure-score.md) på Microsoft 365 säkerhetscenter. Från en centraliserad instrumentpanel kan du övervaka och förbättra säkerheten för dina Microsoft 365-identiteter, data, appar, enheter och infrastruktur. Du får poäng för att konfigurera rekommenderade säkerhetsfunktioner, utföra säkerhetsrelaterade uppgifter (till exempel visa rapporter) eller åtgärda rekommendationer med ett program eller en programvara från tredje part. De rekommenderade uppgifterna i den här artikeln kommer att höja din poäng.
 
 ![Skärmbild av Microsoft Secure Score](../media/secure-score.png)
 
@@ -74,7 +74,7 @@ Att tillämpa de här principerna tar bara några minuter, men är beredd på at
 |---|---|
 |Microsoft 365-abonnemang (utan Azure AD P1 eller P2)|[Aktivera standardinställningar för säkerhet i Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Standardinställningar för säkerhet i Azure AD inkluderar MFA för användare och administratörer.|
 |Microsoft 365 E3 (med Azure AD P1)|Använd [vanliga principer för villkorsstyrd åtkomst](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) för att konfigurera följande principer: <br/>- [Kräv MFA för administratörer](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [Kräv MFA för alla användare](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [Blockera äldre autentisering](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
-|Microsoft 365 E5 (med Azure AD P2)|Dra nytta av Azure AD Identity Protection och börja implementera Microsofts [rekommenderade uppsättning av villkorsstyrd åtkomst och relaterade principer](./office-365-security/identity-access-policies.md) genom att skapa de två principerna:<br/> - [Kräv MFA när inloggningsrisker är medel eller hög](./office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [Blockera klienter som inte har stöd för modern autentisering](./office-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br/>- [Användare med hög risk måste byta lösenord](./office-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
+|Microsoft 365 E5 (med Azure AD P2)|Dra nytta av Azure AD Identity Protection och börja implementera Microsofts [rekommenderade uppsättning av villkorsstyrd åtkomst och relaterade principer](./defender-365-security/identity-access-policies.md) genom att skapa de två principerna:<br/> - [Kräv MFA när inloggningsrisker är medel eller hög](./defender-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [Blockera klienter som inte har stöd för modern autentisering](./defender-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br/>- [Användare med hög risk måste byta lösenord](./defender-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
 |
 
 ## <a name="2-protect-against-threats"></a>2: Skydda mot hot
@@ -86,7 +86,7 @@ Alla Microsoft 365-abonnemang innehåller en mängd olika skyddsfunktioner för 
 - Skydd mot nätfiske
 - Skydd mot skräppost
 
-Information om hur du kan använda som utgångspunkt finns i Skydda mot hot i [Office 365.](office-365-security/protect-against-threats.md)
+Information om hur du kan använda som utgångspunkt finns i Skydda mot hot i [Office 365.](defender-365-security/protect-against-threats.md)
 
 ## <a name="3-configure-microsoft-defender-for-office-365"></a>3: Konfigurera Microsoft Defender för Office 365
 
@@ -98,17 +98,17 @@ Microsoft Defender för Office 365:
 - Skyddar organisationen när användare samarbetar och delar filer genom att identifiera och blockera skadliga filer på gruppwebbplatser och dokumentbibliotek.
 - Tillämpar maskininlärningsmodeller och avancerade algoritmer för personifiering för att av invertera nätfiskeattacker.
 
-En översikt, inklusive en sammanfattning av abonnemangen, finns [i Defender för Office 365.](office-365-security/office-365-atp.md)
+En översikt, inklusive en sammanfattning av abonnemangen, finns [i Defender för Office 365.](./defender-365-security/defender-for-office-365.md)
 
 Din globala administratör kan konfigurera dessa skydd:
 
-- [Konfigurera principer för säkra länkar](office-365-security/set-up-atp-safe-links-policies.md)
-- [Konfigurera globala inställningar för Säkra länkar](office-365-security/configure-global-settings-for-safe-links.md)
-- [Konfigurera principer för säkra bifogade filer](office-365-security/set-up-atp-safe-attachments-policies.md)
+- [Konfigurera principer för säkra länkar](defender-365-security/set-up-safe-links-policies.md)
+- [Konfigurera globala inställningar för Säkra länkar](defender-365-security/configure-global-settings-for-safe-links.md)
+- [Konfigurera principer för säkra bifogade filer](defender-365-security/set-up-safe-attachments-policies.md)
 
 Du måste arbeta med Exchange Online-administratören och SharePoint Online-administratören för att konfigurera Defender för Office 365 för dessa arbetsbelastningar:
 
-- [ATP för SharePoint, OneDrive och Microsoft Teams](office-365-security/atp-for-spo-odb-and-teams.md)
+- [ATP för SharePoint, OneDrive och Microsoft Teams](defender-365-security/mdo-for-spo-odb-and-teams.md)
 
 ## <a name="4-configure-microsoft-defender-for-identity"></a>4: Konfigurera Microsoft Defender för identitet
 
@@ -120,15 +120,15 @@ Du måste arbeta med Exchange Online-administratören och SharePoint Online-admi
 
 ## <a name="5-turn-on-microsoft-365-defender"></a>5: Aktivera Microsoft 365 Defender
 
-Nu när du har konfigurerat Microsoft Defender för Office 365 och Microsoft Defender för identitet kan du visa de kombinerade signalerna från dessa funktioner på en instrumentpanel. [I Microsoft 365 Defender](./mtp/microsoft-threat-protection.md) samlas aviseringar, incidenter, automatisk undersökning och svar samt avancerad sökning i olika arbetsbelastningar (Microsoft Defender för identitet, Defender för Office 365, Microsoft Defender för slutpunkt och Microsoft Cloud App Security) i en enda ruta i [security.microsoft.com.](https://security.microsoft.com)
+Nu när du har konfigurerat Microsoft Defender för Office 365 och Microsoft Defender för identitet kan du visa de kombinerade signalerna från dessa funktioner på en instrumentpanel. [I Microsoft 365 Defender](./defender/microsoft-365-defender.md) samlas aviseringar, incidenter, automatisk undersökning och svar samt avancerad sökning i olika arbetsbelastningar (Microsoft Defender för identitet, Defender för Office 365, Microsoft Defender för slutpunkt och Microsoft Cloud App Security) i en enda ruta i [security.microsoft.com.](https://security.microsoft.com)
 
 ![MTP-instrumentpanelsbild](../media/top-ten-security-remote-work-mtp-dashboard.png)
 
 När du har konfigurerat en eller flera av dina Defender för Office 365-tjänster aktiverar du MTP. Nya funktioner läggs till kontinuerligt i MTP. Överväg att registrera dig för att få förhandsgranskningsfunktioner.
 
-- [Läs mer om MTP](./mtp/microsoft-threat-protection.md)
-- [Aktivera MTP](./mtp/mtp-enable.md)
-- [Registrera dig för förhandsgranskningsfunktioner](./mtp/preview.md)
+- [Läs mer om MTP](./defender/microsoft-365-defender.md)
+- [Aktivera MTP](./defender/m365d-enable.md)
+- [Registrera dig för förhandsgranskningsfunktioner](./defender/preview.md)
 
 ## <a name="6-configure-intune-mobile-app-protection-for-phones-and-tablets"></a>6: Konfigurera skydd för Intune-mobilappen för telefoner och surfplattor
 
@@ -141,10 +141,10 @@ APPskyddsprinciper innehåller många inställningar. Som tur är behöver du in
 
 Ännu bättre koordinerar Microsoft det här ramverket för appskydd med en uppsättning villkorsstyrda åtkomst och relaterade principer som vi rekommenderar att alla organisationer använder som utgångspunkt. Om du har implementerat MFA med hjälp av vägs i den här artikeln är du halvvägs dit!
 
-Om du vill konfigurera skydd för mobilappar använder du vägledningen i [Vanliga principer för identitet och enhetsåtkomst:](./office-365-security/identity-access-policies.md)
+Om du vill konfigurera skydd för mobilappar använder du vägledningen i [Vanliga principer för identitet och enhetsåtkomst:](./defender-365-security/identity-access-policies.md)
 
- 1. Använd [vägledning av appdataskyddsprinciper](./office-365-security/identity-access-policies.md#apply-app-data-protection-policies) för att skapa principer för iOS och Android. Nivå 2 (förbättrat dataskydd) rekommenderas för grundläggande skydd.
- 2. Skapa en regel för villkorsstyrd åtkomst [så att godkända appar och APPskydd krävs.](./office-365-security/identity-access-policies.md#require-approved-apps-and-app-protection)
+ 1. Använd [vägledning av appdataskyddsprinciper](./defender-365-security/identity-access-policies.md#apply-app-data-protection-policies) för att skapa principer för iOS och Android. Nivå 2 (förbättrat dataskydd) rekommenderas för grundläggande skydd.
+ 2. Skapa en regel för villkorsstyrd åtkomst [så att godkända appar och APPskydd krävs.](./defender-365-security/identity-access-policies.md#require-approved-apps-and-app-protection)
 
 ## <a name="7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection"></a>7: Konfigurera MFA och villkorsstyrd åtkomst för gäster, inklusive intune-mobilappsskydd
 
@@ -155,7 +155,7 @@ Om du använder Microsoft 365 E5-abonnemanget och du utnyttjar Azure Identity Pr
 - Skapa en ny regel för villkorsstyrd åtkomst så att MFA alltid krävs för gäster och externa användare.
 - Uppdatera den riskbaserade MFA-regeln för villkorsstyrd åtkomst för att utesluta gäster och externa användare.
 
-Använd vägledning [i Uppdatera vanliga principer](./office-365-security/identity-access-policies-guest-access.md) för att tillåta och skydda gäst- och extern åtkomst för att förstå hur gäståtkomst fungerar med Azure AD och för att uppdatera de aktuella principerna.
+Använd vägledning [i Uppdatera vanliga principer](./defender-365-security/identity-access-policies-guest-access.md) för att tillåta och skydda gäst- och extern åtkomst för att förstå hur gäståtkomst fungerar med Azure AD och för att uppdatera de aktuella principerna.
 
 De principer för skydd av Intune-mobilappar som du har skapat, tillsammans med regeln för villkorsstyrd åtkomst som kräver godkända appar och appskydd, gäller för gästkonton och hjälper till att skydda dina organisationsdata.
 
@@ -173,12 +173,12 @@ Du kan också dra nytta av de här självstudiekurserna:
 - [Använda Autopilot för att registrera Windows-enheter i Intune](/mem/intune/enrollment/tutorial-use-autopilot-enroll-devices)
 - [Använd Apples funktioner för enhetsregistrering för företag i Apple Business Manager (ABM) för att registrera iOS-/iPadOS-enheter i Intune](/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
-När du har registrerat enheter kan du använda vägledningen i Principer för [gemensamma identiteter och enhetsåtkomst för](./office-365-security/identity-access-policies.md) att skapa dessa principer:
+När du har registrerat enheter kan du använda vägledningen i Principer för [gemensamma identiteter och enhetsåtkomst för](./defender-365-security/identity-access-policies.md) att skapa dessa principer:
 
-- [Definiera policyer för enhetsefterlevnad](./office-365-security/identity-access-policies.md#define-device-compliance-policies) – De rekommenderade inställningarna för Windows 10 kräver antivirusskydd. Om du har Microsoft 365 E5 kan du använda Microsoft Defender för Endpoint för att övervaka hälsotillståndet för enheter med anställda. Se till att efterlevnadsprinciper för andra operativsystem innehåller antivirusprogram och skyddsprogram för ändpunkt.
-- [Kräv kompatibla datorer –](./office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) Det här är regeln för villkorsstyrd åtkomst i Azure AD som tillämpar efterlevnadsprinciper för enheter.
+- [Definiera policyer för enhetsefterlevnad](./defender-365-security/identity-access-policies.md#define-device-compliance-policies) – De rekommenderade inställningarna för Windows 10 kräver antivirusskydd. Om du har Microsoft 365 E5 kan du använda Microsoft Defender för Endpoint för att övervaka hälsotillståndet för enheter med anställda. Se till att efterlevnadsprinciper för andra operativsystem innehåller antivirusprogram och skyddsprogram för ändpunkt.
+- [Kräv kompatibla datorer –](./defender-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) Det här är regeln för villkorsstyrd åtkomst i Azure AD som tillämpar efterlevnadsprinciper för enheter.
 
-Bara en organisation kan hantera en enhet, så se till att utesluta gästkonton från regeln för villkorsstyrd åtkomst i Azure AD. Om du inte exkluderar gäst- och externa användare från principer som kräver enhetsefterlevnad blockeras dessa användare av dessa principer. Mer information finns i Uppdatera [vanliga principer för att tillåta och skydda gäst och extern åtkomst.](./office-365-security/identity-access-policies-guest-access.md)
+Bara en organisation kan hantera en enhet, så se till att utesluta gästkonton från regeln för villkorsstyrd åtkomst i Azure AD. Om du inte exkluderar gäst- och externa användare från principer som kräver enhetsefterlevnad blockeras dessa användare av dessa principer. Mer information finns i Uppdatera [vanliga principer för att tillåta och skydda gäst och extern åtkomst.](./defender-365-security/identity-access-policies-guest-access.md)
 
 ## <a name="9-optimize-your-network-for-cloud-connectivity"></a>9: Optimera nätverket för molnanslutning
 
@@ -241,11 +241,11 @@ Kom igång med Cloud App Security nu. Senare kan du konfigurera mer avancerad ö
 
 ## <a name="12-monitor-for-threats-and-take-action"></a>12: Övervaka hot och vidta åtgärder
 
-Microsoft 365 innehåller flera olika sätt att övervaka status och vidta lämpliga åtgärder. Den bästa utgångspunkten är Microsoft 365 säkerhetscenter ( ), där du kan se din organisations Microsoft Secure Score och eventuella aviseringar eller enheter som [https://security.microsoft.com](https://security.microsoft.com) kräver din uppmärksamhet. [](./mtp/microsoft-secure-score.md)
+Microsoft 365 innehåller flera olika sätt att övervaka status och vidta lämpliga åtgärder. Den bästa utgångspunkten är Microsoft 365 säkerhetscenter ( ), där du kan se din organisations Microsoft Secure Score och eventuella aviseringar eller enheter som [https://security.microsoft.com](https://security.microsoft.com) kräver din uppmärksamhet. [](./defender/microsoft-secure-score.md)
 
-- [Komma igång med Säkerhetscenter för Microsoft 365](./mtp/overview-security-center.md)
-- [Övervaka och visa rapporter](./mtp/overview-security-center.md)
-- [Se säkerhetsportalerna i Microsoft 365](./mtp/portals.md)
+- [Komma igång med Säkerhetscenter för Microsoft 365](./defender/overview-security-center.md)
+- [Övervaka och visa rapporter](./defender/overview-security-center.md)
+- [Se säkerhetsportalerna i Microsoft 365](./defender/portals.md)
 
 ## <a name="next-steps"></a>Nästa steg
 

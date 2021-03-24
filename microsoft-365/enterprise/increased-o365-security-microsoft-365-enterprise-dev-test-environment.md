@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Använd den här testlabbguiden för att aktivera ytterligare Microsoft 365-säkerhetsinställningar i testmiljön Microsoft 365 för företag.
-ms.openlocfilehash: 928deae34dc16c70776eb512188d1a36ae169da5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 186452396af4227a94a7f6cd0fa0109e9d6a7e17
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909792"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051276"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Ökad Microsoft 365-säkerhet för din Testmiljö för Microsoft 365 för företag
 
@@ -47,7 +47,7 @@ I den här fasen aktiverar du ökad Microsoft 365-säkerhet för din Testmiljö 
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>Konfigurera SharePoint Online för att blockera appar som inte stöder modern autentisering
 
-Appar som inte stöder modern autentisering kan inte ha [identitets-](../security/office-365-security/microsoft-365-policies-configurations.md) och enhetsåtkomstkonfigurationer tillämpade på dem, vilket är en viktig del av att skydda din Microsoft 365-prenumeration och dess digitala tillgångar. 
+Appar som inte stöder modern autentisering kan inte ha [identitets-](../security/defender-365-security/microsoft-365-policies-configurations.md) och enhetsåtkomstkonfigurationer tillämpade på dem, vilket är en viktig del av att skydda din Microsoft 365-prenumeration och dess digitala tillgångar. 
 
 1. Gå till administrationscentret för Microsoft 365 ( ) och logga in på din [https://portal.microsoft.com](https://portal.microsoft.com) Microsoft 365-provlabbprenumeration med ditt globala administratörskonto.
     
@@ -77,7 +77,7 @@ Defender för Office 365 för SharePoint, OneDrive och Microsoft Teams skyddar o
 
 Skadlig programvara består av virus och spionprogram. Virus smittar andra program och data, och de sprids i din dator genom att söka efter program som de kan smitta. Spionprogram används om skadlig programvara som samlar in personlig information, till exempel inloggningsuppgifter och personuppgifter, som sedan skickas tillbaka till den som skapar skadlig programvara. 
 
-Microsoft 365 har inbyggd skadlig programvara och filtrering av skräppost som hjälper till att skydda inkommande och utgående meddelanden från skadlig programvara och skydda dig mot skräppost. Mer information finns i Skydd [mot skräppost & skydd mot skadlig programvara.](../security/office-365-security/anti-spam-and-anti-malware-protection.md)
+Microsoft 365 har inbyggd skadlig programvara och filtrering av skräppost som hjälper till att skydda inkommande och utgående meddelanden från skadlig programvara och skydda dig mot skräppost. Mer information finns i Skydd [mot skräppost & skydd mot skadlig programvara.](../security/defender-365-security/anti-spam-and-anti-malware-protection.md)
 
 Så här säkerställer du att bearbetning med skadlig programvara utförs på filer med vanliga filtyper för bifogade filer:
 
@@ -100,7 +100,7 @@ Så här visar du säkerhetspanelen:
 
 Ta en närmare titt på alla kort på instrumentpanelen för att bekanta dig med den information som finns.
 
-Mer information finns i [Säkerhetsinstrumentpanel](../security/office-365-security/security-dashboard.md).
+Mer information finns i [Säkerhetsinstrumentpanel](../security/defender-365-security/security-dashboard.md).
 
 
 ## <a name="phase-4-examine-microsoft-secure-score"></a>Fas 4: Undersöka Microsoft Secure Score
@@ -111,7 +111,7 @@ Microsoft Secure Score visar att din säkerhet ligger på ett nummer, vilket ang
 2. På fliken **Översikt**  kan du notera ditt aktuella Secure Score och hur det står sig jämfört med det globala medelvärdet och prenumerationer med liknande antal licenser.
 3. På fliken **Förbättringsåtgärder** läser du igenom listan med åtgärder du kan vidta för att höja poäng.
 
-Mer information finns i [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md).
+Mer information finns i [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
 ## <a name="next-steps"></a>Nästa steg
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Skydda din affärs-e-post och data från cyberhot, inklusive utpressningstrojaner, nätfiske och skadliga bifogade filer. '
-ms.openlocfilehash: 5607d301ceda44fd582055d49daa9082ee321cb9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7affa7a2adaa166861c2932ebe32177335236114
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914492"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050684"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>De 10 bästa sätten att skydda abonnemang för Microsoft 365 för företag
 
@@ -55,7 +55,7 @@ Microsoft rekommenderar att du utför de uppgifter som listas i följande tabell
 |9|[Skydda mot skadliga bilagor och filer med säkra bifogade filer](secure-your-business-data.md#atp)||![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10|[Skydda mot nätfiskeattacker med Säkra länkar](secure-your-business-data.md#phishingatp)||![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-Innan du börjar kontrollerar du microsoft [365 Secure Score](../../security/mtp/microsoft-secure-score.md) på Microsoft 365 säkerhetscenter. Från en centraliserad instrumentpanel kan du övervaka och förbättra säkerheten för dina Microsoft 365-identiteter, data, appar, enheter och infrastruktur. Du får poäng för att konfigurera rekommenderade säkerhetsfunktioner, utföra säkerhetsrelaterade uppgifter (till exempel visa rapporter) eller åtgärda rekommendationer med ett program eller en programvara från tredje part. Med ytterligare insikter och mer insyn i en bredare uppsättning av Microsofts produkter och tjänster kan du känna dig säker på att du rapporterar om organisationens säkerhetshälsa.
+Innan du börjar kontrollerar du microsoft [365 Secure Score](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score) på Microsoft 365 säkerhetscenter. Från en centraliserad instrumentpanel kan du övervaka och förbättra säkerheten för dina Microsoft 365-identiteter, data, appar, enheter och infrastruktur. Du får poäng för att konfigurera rekommenderade säkerhetsfunktioner, utföra säkerhetsrelaterade uppgifter (till exempel visa rapporter) eller åtgärda rekommendationer med ett program eller en programvara från tredje part. Med ytterligare insikter och mer insyn i en bredare uppsättning av Microsofts produkter och tjänster kan du känna dig säker på att du rapporterar om organisationens säkerhetshälsa.
 
 ![Skärmbild av Microsoft Secure Score](../../media/secure-score.png)
 
@@ -132,7 +132,7 @@ I din Microsoft 365-miljö finns skydd mot skadlig programvara, men du kan öka 
 
 6. Välj **Spara.**
 
-Mer information finns i Skydd [mot skadlig programvara i EOP.](../../security/office-365-security/anti-malware-protection.md)
+Mer information finns i Skydd [mot skadlig programvara i EOP.](https://docs.microsoft.com/microsoft-365/security/defender-365-security/anti-malware-protection)
 
 ## <a name="5-protect-against-ransomware"></a>5: Skydda mot utpressningstrojaner
 <a name="ransomware"> </a>
@@ -254,7 +254,7 @@ Om du vill skapa en policy mot nätfiske i Defender för Office 365 kan du titta
 
 4. På sidan mot nätfiske väljer du **+ Skapa.** En guide startar stegen för att definiera din policy mot nätfiske.
 
-5. Ange namn, beskrivning och inställningar för principen enligt rekommenderade inställningar i diagrammet nedan. Mer [information finns i Läs mer om nätfiskeprincipen i Microsoft Defender för Office 365.](../../security/office-365-security/set-up-anti-phishing-policies.md)
+5. Ange namn, beskrivning och inställningar för principen enligt rekommenderade inställningar i diagrammet nedan. Mer [information finns i Läs mer om nätfiskeprincipen i Microsoft Defender för Office 365.](https://docs.microsoft.com/microsoft-365/security/defender-365-security/set-up-anti-phishing-policies)
 
 6. När du har granskat inställningarna väljer du Skapa **den här principen** eller **Spara** efter behov.
 
@@ -270,7 +270,7 @@ Om du vill skapa en policy mot nätfiske i Defender för Office 365 kan du titta
 |Tillämpas på|Välj **Mottagarens domän är**. Under **Valfri av dessa** väljer du **Välj**. Välj **+ Lägg till.** Markera kryssrutan bredvid namnet på domänen, till exempel markera contoso.com, i listan och välj sedan Lägg **till**. Välj **Klar**.|
 |
 
-Mer information finns i Konfigurera [principer för skydd mot nätfiske i Defender för Office 365.](../../security/office-365-security/configure-atp-anti-phishing-policies.md)
+Mer information finns i Konfigurera [principer för skydd mot nätfiske i Defender för Office 365.](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies)
 
 ## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9: Skydda mot skadliga bifogade filer och filer med säkra bifogade filer
 <a name="atp"> </a>
@@ -302,7 +302,7 @@ Om du vill skapa en princip för säkra bifogade filer visar [du en kort utbildn
 |Tillämpas på|Mottagarens domän är . . . väljer du din domän.|
 |
 
-Mer information finns i Konfigurera [principer för skydd mot nätfiske i Defender för Office 365.](../../security/office-365-security/configure-atp-anti-phishing-policies.md)
+Mer information finns i Konfigurera [principer för skydd mot nätfiske i Defender för Office 365.](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies)
 
 ## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10: Skydda mot nätfiskeattacker med säkra länkar
 <a name="phishingatp"> </a>
@@ -349,4 +349,4 @@ Så här skapar du en ny princip som är riktad till alla mottagare i din domän
 |Tillämpas på|Mottagarens domän är . . . väljer du din domän.|
 |
 
-Mer information finns i [Säkra länkar i Microsoft Defender för Office 365.](../../security/office-365-security/atp-safe-links.md)
+Mer information finns i [Säkra länkar i Microsoft Defender för Office 365.](https://docs.microsoft.com/microsoft-365/security/defender-365-security/atp-safe-links)

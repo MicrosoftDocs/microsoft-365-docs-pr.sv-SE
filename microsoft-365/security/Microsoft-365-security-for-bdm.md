@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: de vanligaste hoten och attackscenarierna som organisationer för närvarande ställs inför för sina Microsoft 365-miljöer, och rekommenderade åtgärder för att minska dessa risker.
-ms.openlocfilehash: b238ed744d4998d940af456418dbb14ff31360a9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 328bd4c079531ee57b41422fd2d3f2c53ef8dc18
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909088"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051096"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Security for Business Decision Makers (BDMs)
 
@@ -29,7 +29,7 @@ Den här artikeln är ordnad efter prioritet, och börjar med att skydda de kont
 
 [![Tummen bild Microsoft 365 BDM säkerhet rekommendationer kalkylblad](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
 
-Microsoft tillhandahåller verktyget Secure Score i din klientorganisation för att automatiskt analysera säkerheten baserat på dina vanliga aktiviteter, tilldela poäng och rekommendera säkerhetsförbättringar. Innan du vidtar de åtgärder som rekommenderas i den här artikeln bör du anteckna dina aktuella poäng och rekommendationer. De åtgärder som rekommenderas i den här artikeln ökar poängen. Målet är inte att uppnå maxresultatet, utan att vara medveten om möjligheter att skydda din miljö på ett sätt som inte negativt påverkar produktiviteten för dina användare. Se [Microsoft Secure Score](mtp/microsoft-secure-score.md).
+Microsoft tillhandahåller verktyget Secure Score i din klientorganisation för att automatiskt analysera säkerheten baserat på dina vanliga aktiviteter, tilldela poäng och rekommendera säkerhetsförbättringar. Innan du vidtar de åtgärder som rekommenderas i den här artikeln bör du anteckna dina aktuella poäng och rekommendationer. De åtgärder som rekommenderas i den här artikeln ökar poängen. Målet är inte att uppnå maxresultatet, utan att vara medveten om möjligheter att skydda din miljö på ett sätt som inte negativt påverkar produktiviteten för dina användare. Se [Microsoft Secure Score](defender/microsoft-secure-score.md).
 
 ![Följ de här anvisningarna för att minimera risker för ditt företag.](../media/security/security-for-bdms-overview.png)
 
@@ -70,7 +70,7 @@ Kända hot är skadlig programvara, komprometterade konton och nätfiske. Vissa 
 
 |Rekommendation  |E3  |E5  |
 |---------|---------|---------|
-|**Konfigurera multifaktorautentisering och använd rekommenderade principer för villkorsstyrd åtkomst, inklusive principer för inloggningsrisker.** Microsoft rekommenderar och har testat en uppsättning principer som fungerar tillsammans för att skydda alla molnappar, inklusive Office 365- och Microsoft 365-tjänster. Se [Konfigurationer för identitets- och enhetsåtkomst](./office-365-security/microsoft-365-policies-configurations.md). | |![grön bockmarkering](../media/green-check-mark.png)|
+|**Konfigurera multifaktorautentisering och använd rekommenderade principer för villkorsstyrd åtkomst, inklusive principer för inloggningsrisker.** Microsoft rekommenderar och har testat en uppsättning principer som fungerar tillsammans för att skydda alla molnappar, inklusive Office 365- och Microsoft 365-tjänster. Se [Konfigurationer för identitets- och enhetsåtkomst](./defender-365-security/microsoft-365-policies-configurations.md). | |![grön bockmarkering](../media/green-check-mark.png)|
 |**Kräv multifaktorautentisering för alla användare.** Om du inte har den licensiering som krävs för att implementera de rekommenderade principerna för villkorsstyrd åtkomst krävs minst multifaktorautentisering för alla användare.|![grön bockmarkering](../media/green-check-mark.png)|![grön bockmarkering](../media/green-check-mark.png)|
 |**Höja skyddsnivån för skadlig programvara i e-post.** Office 365- eller Microsoft 365-miljön innehåller skydd mot skadlig programvara, men du kan öka skyddet genom att blockera bifogade filer med filtyper som ofta används för skadlig programvara.|![grön bockmarkering](../media/green-check-mark.png)|![grön bockmarkering](../media/green-check-mark.png)|
 |**Skydda din e-post från riktade nätfiskeattacker**. Om du har konfigurerat en eller flera egna domäner för din Office 365- eller Microsoft 365-miljö kan du konfigurera riktad skydd mot nätfiske. Skydd mot nätfiske, en del av Defender för Office 365, kan skydda organisationen från skadliga personifieringsbaserade nätfiskeattacker och andra nätfiskeattacker. Om du inte har konfigurerat en egen domän behöver du inte göra det.| |![grön bockmarkering](../media/green-check-mark.png)|
@@ -116,7 +116,7 @@ Informationsskyddsfunktioner i Microsoft 365 kan hjälpa dig att upptäcka vilke
 
 |Rekommendation |E3|E5 |
 |---------|---------|---------|
-|**Granska och optimera villkorsstyrd åtkomst och relaterade principer för att uppfylla dina mål för ett nätverk utan förtroende.** Skydd mot kända hot omfattar implementering av en uppsättning [rekommenderade principer.](./office-365-security/microsoft-365-policies-configurations.md) Granska din implementering av de här principerna för att säkerställa att du skyddar dina appar och data mot hackare som har fått åtkomst till ditt nätverk. Observera att den rekommenderade appskyddsprincipen för Intune för Windows 10 aktiverar Windows informationsskydd (WIP). WiP skyddar mot oavsiktliga läckor av organisationsdata via appar och tjänster, t.ex. e-post, sociala medier och det offentliga molnet. |         |![grön bockmarkering](../media/green-check-mark.png)|
+|**Granska och optimera villkorsstyrd åtkomst och relaterade principer för att uppfylla dina mål för ett nätverk utan förtroende.** Skydd mot kända hot omfattar implementering av en uppsättning [rekommenderade principer.](./defender-365-security/microsoft-365-policies-configurations.md) Granska din implementering av de här principerna för att säkerställa att du skyddar dina appar och data mot hackare som har fått åtkomst till ditt nätverk. Observera att den rekommenderade appskyddsprincipen för Intune för Windows 10 aktiverar Windows informationsskydd (WIP). WiP skyddar mot oavsiktliga läckor av organisationsdata via appar och tjänster, t.ex. e-post, sociala medier och det offentliga molnet. |         |![grön bockmarkering](../media/green-check-mark.png)|
 |**Inaktivera extern vidarebefordran av e-post**. Hackare som får åtkomst till en användares postlåda kan stjäla din e-post genom att ställa in så att postlådan automatiskt vidarebefordrar e-post. Det här kan inträffa även utan användarens uppmärksamhet. Du kan förhindra detta genom att konfigurera en e-postflödesregel.|![grön bockmarkering](../media/green-check-mark.png) |![grön bockmarkering](../media/green-check-mark.png)|
 |**Inaktivera anonym extern kalenderdelning**. Som standard tillåts extern anonym kalenderdelning. [Inaktivera kalenderdelning för](/exchange/sharing/sharing-policies/modify-a-sharing-policy) att minska potentiella läckage av känslig information.|![grön bockmarkering](../media/green-check-mark.png) |![grön bockmarkering](../media/green-check-mark.png)|
 |**Konfigurera principer för skydd mot dataförlust för känsliga data.** Skapa en policy för dataförlustskydd i Säkerhetsefterlevnad för att upptäcka och skydda känsliga data, t.ex. &amp; kreditkortsnummer, personnummer och bankkontonummer. Microsoft 365 innehåller många fördefinierade typer av känslig information som du kan använda i principer för skydd mot dataförlust. Du kan också skapa egna typer av känslig information för känsliga data som är anpassade för din miljö. |![grön bockmarkering](../media/green-check-mark.png)|![grön bockmarkering](../media/green-check-mark.png)|

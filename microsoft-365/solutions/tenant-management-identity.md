@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Distribuera rätt identitetsmodell för Microsoft 365-klientorganisationen och framtvinga starka användar inloggningar.
-ms.openlocfilehash: 18d950bcca0c4f24e4777d0e29bd8e319d0de77f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 57e84b38715c4fbe29f9aa362e363663b0401f91
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920874"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052368"
 ---
 # <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>Steg 3. Identitet för Microsoft 365 för företag-klientorganisationen
 
@@ -77,7 +77,7 @@ För att öka säkerheten för användarens inloggningar använder du funktioner
 | Windows Hello för företag | Ersätter lösenord med stark tvåfaktorautentisering när du loggar in på en Windows-enhet. De två faktorerna är en ny typ av användaruppgifter som är kopplade till en enhet och ett biometriskt attribut eller en PIN-kod. | [Översikt över Windows Hello för företag](/windows/security/identity-protection/hello-for-business/hello-overview) | Microsoft 365 E3 eller E5 |
 | Azure AD-lösenordsskydd | Identifierar och blockerar kända svaga lösenord och deras varianter och kan även blockera ytterligare svaga termer som är specifika för din organisation. | [Konfigurera lösenordsskydd i Azure AD](/azure/active-directory/authentication/concept-password-ban-bad) | Microsoft 365 E3 eller E5 |
 | Använd multifaktorautentisering (MFA) | MFA kräver att användarens inloggningar måste verifieras mer än lösenordet för användarkontot, till exempel verifiering med en smartphone-app eller ett SMS som skickas till en smartphone. I [den här videon](https://support.microsoft.com/office/set-up-multi-factor-authentication-in-microsoft-365-business-a32541df-079c-420d-9395-9d59354f7225) finns instruktioner om hur användarna ställer in MFA. | [MFA för Microsoft 365 för företag](../enterprise/microsoft-365-secure-sign-in.md#mfa) | Microsoft 365 E3 eller E5 |
-| Konfigurationer av identiteter och enhetsåtkomst | Inställningar och principer som består av rekommenderade nödvändiga funktioner och deras inställningar i kombination med villkorsstyrd åtkomst, Intune och Azure AD Identity Protection-principer som bestämmer om en viss åtkomstbegäran ska beviljas och under vilka villkor.  | [Konfigurationer för identitets- och enhetsåtkomst](../security/office-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 eller E5 |
+| Konfigurationer av identiteter och enhetsåtkomst | Inställningar och principer som består av rekommenderade nödvändiga funktioner och deras inställningar i kombination med villkorsstyrd åtkomst, Intune och Azure AD Identity Protection-principer som bestämmer om en viss åtkomstbegäran ska beviljas och under vilka villkor.  | [Konfigurationer för identitets- och enhetsåtkomst](../security/defender-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 eller E5 |
 | Azure AD Identity Protection | Skydda mot autentiseringsuppgifter, där en attack avgör en användares kontonamn och lösenord för att få åtkomst till en organisations molntjänster och data. | [Azure AD Identity Protection](/azure/active-directory/active-directory-identityprotection) | Microsoft 365 E5 eller Microsoft 365 E3 med tillägget & Identity & Threat Protection |
 |  |  |  |
 

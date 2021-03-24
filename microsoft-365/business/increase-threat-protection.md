@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Konfigurera Microsoft Defender för Office 365 och skydda känsliga data mot nätfiske, skadlig programvara och andra hot.
-ms.openlocfilehash: 0424fd56e30477f4e8d9e84b7ac78ba6255781fa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 80ad3767b277e4808b6df4bdd977688794649e11
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913295"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050855"
 ---
 # <a name="increase-threat-protection"></a>Öka hotskyddet
 
@@ -35,7 +35,7 @@ Den här artikeln hjälper dig att öka skyddet för Microsoft 365-prenumeration
 
 Innan du börjar kontrollerar du ditt Office 365 Secure Score. Office 365 Secure Score analyserar organisationens säkerhet utifrån vanliga aktiviteter och säkerhetsinställningar och tilldelar en poäng. Börja med att anteckna det aktuella resultatet. Om du vill öka poäng slutför du åtgärderna som rekommenderas i den här artikeln. Målet är inte att uppnå det högsta resultatet, utan att vara medveten om möjligheter att skydda din miljö som inte negativt påverkar produktiviteten för användarna.
 
-Mer information finns i [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md).
+Mer information finns i [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Höja skyddsnivån för skadlig programvara i e-post
 
@@ -57,7 +57,7 @@ Din Office 365- eller Microsoft 365-miljö innehåller skydd mot skadlig program
 
 6. Välj **Spara.**
 
-Mer information finns i Skydd [mot skadlig programvara i EOP.](../security/office-365-security/anti-malware-protection.md)
+Mer information finns i Skydd [mot skadlig programvara i EOP.](../security/defender-365-security/anti-malware-protection.md)
 
 ## <a name="protect-against-ransomware"></a>Skydda mot utpressningstrojaner
 
@@ -138,7 +138,7 @@ Om du vill skapa en policy mot nätfiske i [](https://support.microsoft.com/offi
 
 4. På sidan **mot nätfiske** väljer du **+ Skapa.** En guide startar stegen för att definiera din policy mot nätfiske.
 
-5. Ange namn, beskrivning och inställningar för principen enligt rekommendationen i följande tabell. Mer information finns i Läs [mer om nätfiskeprincip i Microsoft Defender för Office 365-alternativ.](../security/office-365-security/set-up-anti-phishing-policies.md)
+5. Ange namn, beskrivning och inställningar för principen enligt rekommendationen i följande tabell. Mer information finns i Läs [mer om nätfiskeprincip i Microsoft Defender för Office 365-alternativ.](../security/defender-365-security/set-up-anti-phishing-policies.md)
 
 6. När du har granskat inställningarna väljer du Skapa **den här principen** eller **Spara** efter behov.
 
@@ -181,7 +181,7 @@ Om du vill skapa en princip för säkra bifogade filer [kan](https://support.mic
 |Omdirigera bifogad fil vid identifiering|Aktivera omdirigering (markera den här rutan) Ange administratörskontot eller en postlådekonfiguration för karantän.          Använd alternativet ovan om genomsökning efter bifogade filer på tider eller fel inträffar (markera den här rutan).|
 |Tillämpas på|Mottagarens domän är . . . väljer du din domän.|
 
-Mer information finns i Konfigurera [principer för skydd mot nätfiske i Microsoft Defender för Office 365.](../security/office-365-security/set-up-anti-phishing-policies.md)
+Mer information finns i Konfigurera [principer för skydd mot nätfiske i Microsoft Defender för Office 365.](../security/defender-365-security/set-up-anti-phishing-policies.md)
 
 ## <a name="protect-against-phishing-attacks-with-safe-links"></a>Skydda mot nätfiskeattacker med Säkra länkar
 
@@ -224,7 +224,7 @@ Så här skapar du en ny princip som är riktad till alla mottagare i din domän
 |Använda säkra bifogade filer för att söka igenom nedladdningsbart innehåll|Markera den här rutan.|
 |Tillämpas på|Mottagarens domän är . . . väljer du din domän.|
 
-Mer information finns i [Säkra länkar.](../security/office-365-security/atp-safe-links.md)
+Mer information finns i [Säkra länkar.](../security/defender-365-security/safe-links.md)
 
 ## <a name="go-to-intune-admin-center"></a>Gå till administrationscentret för Intune
 

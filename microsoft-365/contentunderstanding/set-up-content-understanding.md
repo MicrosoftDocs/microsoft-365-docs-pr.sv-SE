@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Konfigurera innehållstolkning i Project Cortex
-ms.openlocfilehash: db6340e8bf4dc23163b67e749f60567f7841a943
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cc6fbfbfc130cc6e64b5d7c30e0a9db5f39036ac
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911192"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051573"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Konfigurera SharePoint Syntex
 
@@ -52,6 +52,14 @@ Om du vill använda SharePoint Syntex måste organisationen ha en prenumeration 
 - Vanliga datatjänster för SharePoint Syntex
 
 Om du avbryter SharePoint Syntex-prenumerationen vid ett framtida datum (eller om utvärderingsversionen går ut) kan användarna inte längre skapa eller köra dokumenttolkning eller bearbeta formulärmodeller och mallen för innehållscenter är inte längre tillgänglig. Dessutom kommer inte längre rapporter för termlagring, SKOS-taxonomiimport och push-fil av innehållstyp att vara tillgängliga. Inget innehåll tas bort och webbplatsbehörigheterna ändras inte.
+
+### <a name="ai-builder-credits"></a>AI Builder-krediter
+
+Om du har 300 eller fler SharePoint Syntex-licenser för SharePoint Syntex i din organisation allokeras en miljon AI Builder-krediter. Om du har färre än 300 licenser måste du köpa AI Builder-krediter för att kunna använda formulärbearbetning.
+
+Du kan beräkna den AI Builder-kapacitet som passar dig bäst med [Kalkylatorn för AI Builder](https://powerapps.microsoft.com/ai-builder-calculator).
+
+Gå till [Administrationscenter för Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) om du vill kontrollera krediterna och användningen.
 
 ## <a name="to-set-up-sharepoint-syntex"></a>Att konfigurera SharePoint Syntex
 
@@ -112,14 +120,6 @@ För att tilldela licenser:
     > ![SharePoint Syntex-licenser i Administrationscentret för Microsoft 365](../media/content-understanding/sharepoint-syntex-licenses.png)
 
 5. Klicka på **Spara ändringar**.
-
-## <a name="ai-builder-credits"></a>AI Builder-krediter
-
-Om du har 300 eller fler SharePoint Syntex-licenser för SharePoint Syntex i din organisation allokeras en miljon AI Builder-krediter. Om du har färre än 300 licenser måste du köpa AI Builder-krediter för att kunna använda formulärbearbetning.
-
-Du kan beräkna den AI Builder-kapacitet som passar dig bäst med [Kalkylatorn för AI Builder](https://powerapps.microsoft.com/ai-builder-calculator).
-
-Gå till [Administrationscenter för Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) om du vill kontrollera krediterna och användningen.
 
 ## <a name="see-also"></a>Se även
 
