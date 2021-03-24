@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Distribuera rätt alternativ för enhet och apphantering för Microsoft 365-klientorganisationen.
-ms.openlocfilehash: 994ab7d21ae70307fa78e1f7249d39ac314a7358
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0351f6be3f191e1a131da5b0b665a205a0abda8c
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904618"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051000"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Steg 5: Enhet- och apphantering för Microsoft 365 för företag-klientorganisation
 
@@ -48,7 +48,7 @@ Du får också bestämma hur du ska hantera personliga enheter och organisations
 
 ## <a name="identity-and-device-access-configurations"></a>Konfigurationer av identiteter och enhetsåtkomst
 
-Microsoft tillhandahåller en uppsättning konfigurationer för identiteter [och enhetsåtkomst för](../security/office-365-security/microsoft-365-policies-configurations.md) att säkerställa en säker och produktiv arbetsstyrka. De här konfigurationerna omfattar användning av:
+Microsoft tillhandahåller en uppsättning konfigurationer för identiteter [och enhetsåtkomst för](../security/defender-365-security/microsoft-365-policies-configurations.md) att säkerställa en säker och produktiv arbetsstyrka. De här konfigurationerna omfattar användning av:
 
 - Principer för villkorsstyrd åtkomst i Azure AD
 - Microsoft Intune-policyer för enhetsefterlevnad och appskydd
@@ -61,8 +61,8 @@ Här är ett exempel på hur de här inställningarna och principerna används f
 
 För enhetsåtkomst och apphantering använder du konfigurationerna i följande artiklar:
 
-- [Krav](../security/office-365-security/identity-access-prerequisites.md)
-- [Vanliga principer för identitets- och enhetsåtkomst](../security/office-365-security/identity-access-policies.md)
+- [Krav](../security/defender-365-security/identity-access-prerequisites.md)
+- [Vanliga principer för identitets- och enhetsåtkomst](../security/defender-365-security/identity-access-policies.md)
 
 ## <a name="results-of-step-5"></a>Resultat av steg 5
 

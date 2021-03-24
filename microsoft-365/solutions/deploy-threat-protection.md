@@ -16,18 +16,18 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 3156e6bc7715db9847b295add7850dcbd0ff6642
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b5dba3aa5db6a687a195f866d1cabe1138f9aa66
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918412"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050904"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Distribuera skyddsfunktioner för hot i Microsoft 365
 
 [Skadlig](/windows/security/threat-protection/intelligence/understanding-malware)programvara och avancerade cyberattacker, till exempel [fillösa hot,](/windows/security/threat-protection/intelligence/fileless-threats)är vanligt förekommande. Företag måste skydda sig själva och sina kunder med effektiva IT-säkerhetsfunktioner. Cyberattacker kan orsaka stora problem för organisationen, allt från förlust av förtroende till ekonomiska problem, verksamhetsproblem och mycket mer. Det är viktigt att skydda mot hot, men det kan vara svårt att avgöra var du ska fokusera organisationens tid, arbete och resurser. 
 
-Microsofts säkerhetslösningar är inbyggda i våra produkter och tjänster. Automatiserings- och maskininlärningsfunktionerna minskar belastningen på dina säkerhetsteam för att se till att rätt objekt hanteras. Och styrkan hos Microsoft-säkerhetslösningar bygger på att vi använder signalerna vi bearbetar varje dag i vår [Intelligenta säkerhetsdiagram.](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph) Microsoft 365-säkerhetslösningar är bland annat [Microsoft 365 Defender,](../security/mtp/microsoft-threat-protection.md)en lösning som för samman signaler i din e-post, dina data, enheter och identiteter för att måla en bild av avancerade hot mot din organisation.
+Microsofts säkerhetslösningar är inbyggda i våra produkter och tjänster. Automatiserings- och maskininlärningsfunktionerna minskar belastningen på dina säkerhetsteam för att se till att rätt objekt hanteras. Och styrkan hos Microsoft-säkerhetslösningar bygger på att vi använder signalerna vi bearbetar varje dag i vår [Intelligenta säkerhetsdiagram.](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph) Microsoft 365-säkerhetslösningar är bland annat [Microsoft 365 Defender,](../security/defender/microsoft-365-defender.md)en lösning som för samman signaler i din e-post, dina data, enheter och identiteter för att måla en bild av avancerade hot mot din organisation.
 
 
 Titta på den här videon för att få en översikt över distributionsprocessen.

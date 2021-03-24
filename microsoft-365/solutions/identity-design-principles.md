@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 10cebf0ab74936d7275586f2e8f09c841c8c653f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 746ca59fd0e9eb0d93d93c00b6a279a9156cc524
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918320"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050744"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>För identitet och vidarestöld – En arkitekts byggnad
 
@@ -135,9 +135,9 @@ Om du godkänner denna utökade auktoriseringsdefinition måste du implementera 
 - [Azure AD Identity Protection](/azure/active-directory/identity-protection/) 
 - [Microsoft Defender for Identity](/azure-advanced-threat-protection/)
 - [Microsoft Defender för Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Microsoft Defender för Office 365](../security/office-365-security/office-365-atp.md?view=o365-worldwide)
+- [Microsoft Defender för Office 365](../security/defender-365-security/defender-for-office-365.md?view=o365-worldwide)
 - [Microsoft Cloud App Security](/cloud-app-security/) (MCAS)
-- [Microsoft 365 Defender](../security/mtp/microsoft-threat-protection.md?view=o365-worldwide)
+- [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md?view=o365-worldwide)
 - [Microsoft Intune](/mem/intune/)
 - [Microsoft Information Protection](../compliance/information-protection.md?view=o365-worldwide) (MIP)
 - [Azure Sentinel](/azure/sentinel/)
@@ -227,7 +227,7 @@ Ibland anropas scenarier för att lägga till en extern användare till en roll 
 
 ### <a name="security-and-compliance-center-scc"></a>Säkerhets- och efterlevnadscenter (SCC)
 
-[Behörigheter i Säkerhets- och efterlevnadscenter för Office 365 &](../security/office-365-security/permissions-in-the-security-and-compliance-center.md) är en samling "rollgrupper", som är separata och skiljer sig från Azure AD-roller. Det kan vara förvirrande eftersom vissa av dessa rollgrupper har samma namn som Azure AD-roller (till exempel Säkerhetsläsare), men de kan ha olika medlemskap. Jag föredrar användningen av Azure AD-roller. Varje rollgrupp består av en eller flera "roller" (se vad jag menar med att återanvända samma ord?) och har medlemmar från Azure AD, som är e-postaktiverade objekt. Du kan också skapa en rollgrupp med samma namn som en roll, som kanske innehåller eller inte innehåller den rollen (undvik den här förvirringen).
+[Behörigheter i Säkerhets- och efterlevnadscenter för Office 365 &](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md) är en samling "rollgrupper", som är separata och skiljer sig från Azure AD-roller. Det kan vara förvirrande eftersom vissa av dessa rollgrupper har samma namn som Azure AD-roller (till exempel Säkerhetsläsare), men de kan ha olika medlemskap. Jag föredrar användningen av Azure AD-roller. Varje rollgrupp består av en eller flera "roller" (se vad jag menar med att återanvända samma ord?) och har medlemmar från Azure AD, som är e-postaktiverade objekt. Du kan också skapa en rollgrupp med samma namn som en roll, som kanske innehåller eller inte innehåller den rollen (undvik den här förvirringen).
 
 Det här är i en mening en vidareutveckling av modellen för Exchange-rollgrupper. Exchange Online har dock ett eget gränssnitt [för hantering av rollgrupper.](/exchange/permissions-exo) Vissa rollgrupper i Exchange Online är låsta och hanteras från Azure AD eller Säkerhets- och efterlevnadscenter för &, men andra kan ha samma eller liknande namn och hanteras i Exchange Online (något som också är förvirrande). Jag rekommenderar att du undviker att använda Exchange Online-användargränssnittet såvida du inte behöver omfattningar för Exchange-hantering.
 
@@ -262,7 +262,7 @@ Som vi nämnt tidigare vill många kunder uppnå en mer detaljerad delegeringsmo
 Obs! Säkerhet och delegering av dataplattform (vilket Power BI är en komponent i) är ett komplext område.
 - **MEM/Intune**  -  [https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control](/mem/intune/fundamentals/role-based-access-control)
 - **Microsoft Defender för Slutpunkt**  -  [https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles](/windows/security/threat-protection/microsoft-defender-atp/user-roles)
-- **Microsoft 365 Defender** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](../security/mtp/mtp-permissions.md)
+- **Microsoft 365 Defender** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](../security/defender/m365d-permissions.md)
 - **Microsoft Cloud App Security** - [https://docs.microsoft.com/cloud-app-security/manage-admins](/cloud-app-security/manage-admins)
 - **Streama**  -  [https://docs.microsoft.com/stream/assign-administrator-user-role](/stream/assign-administrator-user-role)
 - **Informationsbarriärer**  -  [https://docs.microsoft.com/microsoft-365/compliance/information-barriers](../compliance/information-barriers.md)
@@ -296,7 +296,7 @@ Om du kombinerar alla loggar till en lagringsplats innebär det ytterligare för
 
 Loggar behöver inte dirigeras till en enda plats. Det kan också vara bra att integrera [Office 365-loggar](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) med Microsoft Cloud App Security eller en anpassad RBAC-modell i [Power BI.](../admin/usage-analytics/usage-analytics.md?view=o365-worldwide) Olika lagringsplatsen har olika fördelar och målgrupper.
 
-Det är värt att nämna att det finns ett mycket omfattande inbyggt analyssystem för säkerhet, hot, svagheter och så vidare i en tjänst som kallas [Microsoft 365 Defender.](../security/mtp/microsoft-threat-protection.md?view=o365-worldwide)
+Det är värt att nämna att det finns ett mycket omfattande inbyggt analyssystem för säkerhet, hot, svagheter och så vidare i en tjänst som kallas [Microsoft 365 Defender.](../security/defender/microsoft-365-defender.md?view=o365-worldwide)
 
 Många stora kunder vill överföra dessa loggdata till ett tredjepartssystem (till exempel SIEM). Det finns olika metoder för detta, men i allmänhet [är Azure Event Hub](/azure/azure-monitor/platform/stream-monitoring-data-event-hubs) och [Graph](/graph/security-integration) bra utgångspunkter.
 

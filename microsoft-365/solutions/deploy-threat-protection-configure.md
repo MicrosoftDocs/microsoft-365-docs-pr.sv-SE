@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: f767b44b66fbc69f28a6514acc3936eb3074e70b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a5ff570439dfecd287a5a5975358262af71d8025
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918484"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051024"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Konfigurera skyddsfunktioner för hot i Microsoft 365
 
@@ -42,13 +42,13 @@ Microsoft har testat och rekommenderar en särskild uppsättning villkorsstyrda 
 
 ![Process för distribution av baslinjeskydd](../media/deploy-threat-protection/deploy-threat-protection-identity-access-steps.png) 
 
-1. [Konfigurera krav, inklusive Azure AD Identity Protection.](../security/office-365-security/identity-access-prerequisites.md)
-2. [Konfigurera vanliga principer för identitets- och enhetsåtkomst](../security/office-365-security/identity-access-policies.md) för grundläggande skydd.
-3. Konfigurera principer för [gästanvändare](../security/office-365-security/identity-access-policies-guest-access.md), [Microsoft Teams,](../security/office-365-security/teams-access-policies.md) [Exchange Online](../security/office-365-security/secure-email-recommended-policies.md)och [SharePoint Online och OneDrive.](../security/office-365-security/sharepoint-file-access-policies.md)
+1. [Konfigurera krav, inklusive Azure AD Identity Protection.](../security/defender-365-security/identity-access-prerequisites.md)
+2. [Konfigurera vanliga principer för identitets- och enhetsåtkomst](../security/defender-365-security/identity-access-policies.md) för grundläggande skydd.
+3. Konfigurera principer för [gästanvändare](../security/defender-365-security/identity-access-policies-guest-access.md), [Microsoft Teams,](../security/defender-365-security/teams-access-policies.md) [Exchange Online](../security/defender-365-security/secure-email-recommended-policies.md)och [SharePoint Online och OneDrive.](../security/defender-365-security/sharepoint-file-access-policies.md)
 
 ### <a name="more-information-about-protecting-identities"></a>Mer information om hur du skyddar identiteter
 
-- [Konfigurationer för identitets- och enhetsåtkomst](../security/office-365-security/microsoft-365-policies-configurations.md)
+- [Konfigurationer för identitets- och enhetsåtkomst](../security/defender-365-security/microsoft-365-policies-configurations.md)
 - [Säkerhetsvägledning för Azure MFA](/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)
 
 ## <a name="step-2-configure-microsoft-defender-for-identity"></a>Steg 2: Konfigurera Microsoft Defender för identitet
@@ -77,7 +77,7 @@ Microsoft Defender för identitet aktiverar säkerhetsåtgärder (SecOps) analyt
 
 ## <a name="step-3-turn-on-microsoft-365-defender"></a>Steg 3: Aktivera Microsoft 365 Defender
 
-[Microsoft 365 Defender](../security/mtp/microsoft-threat-protection.md) kombinerar signaler och licenskapacitet till en enda lösning. Med den integrerade Microsoft 365 Defender-lösningen kan säkerhetsexperter hantera hoten som utgör en signal att var och en av dessa produkter får och fastställa hotens fullständiga omfattning och påverkan. hur det angavs i miljön, vad det påverkades och hur det för närvarande påverkar organisationen. Microsoft 365 Defender vidtar automatisk åtgärd för att förhindra eller stoppa attacken och självutmanade postlådor, slutpunkter och användaridentiteter.
+[Microsoft 365 Defender](../security/defender/microsoft-365-defender.md) kombinerar signaler och licenskapacitet till en enda lösning. Med den integrerade Microsoft 365 Defender-lösningen kan säkerhetsexperter hantera hoten som utgör en signal att var och en av dessa produkter får och fastställa hotens fullständiga omfattning och påverkan. hur det angavs i miljön, vad det påverkades och hur det för närvarande påverkar organisationen. Microsoft 365 Defender vidtar automatisk åtgärd för att förhindra eller stoppa attacken och självutmanade postlådor, slutpunkter och användaridentiteter.
 
 I Microsoft 365 Defender kan du samla aviseringar, incidenter, automatisk undersökning och svar och avancerad sökning i olika arbetsbelastningar (Microsoft Defender för identitet, Microsoft Defender för Office 365, Microsoft Defender för slutpunkt och Microsoft Cloud App Security) i ett enda fönster med glas. När du har konfigurerat en eller flera av dina Defender för Office 365-tjänster aktiverar du Microsoft 365 Defender. Nya funktioner läggs till kontinuerligt i Microsoft 365 Defender. Överväg att registrera dig för att få förhandsgranskningsfunktioner.
 
@@ -85,22 +85,22 @@ I Microsoft 365 Defender kan du samla aviseringar, incidenter, automatisk unders
 
 ![Process för distribution av Microsoft 365 Defender](../media/deploy-threat-protection/deploy-mtp-steps.png) 
 
-1. [Granska förutsättningarna](../security/mtp/prerequisites.md).
-2. [Aktivera Microsoft 365 Defender](../security/mtp/mtp-enable.md).
-3. [Registrera dig för förhandsgranskningsfunktioner.](../security/mtp/preview.md)
+1. [Granska förutsättningarna](../security/defender/prerequisites.md).
+2. [Aktivera Microsoft 365 Defender](../security/defender/m365d-enable.md).
+3. [Registrera dig för förhandsgranskningsfunktioner.](../security/defender/preview.md)
 
 ### <a name="more-information-about-microsoft-365-defender"></a>Mer information om Microsoft 365 Defender
 
-- [Vad är Microsoft 365 Defender?](../security/mtp/microsoft-threat-protection.md)
-- [Nyheter i Microsoft 365 Defender](../security/mtp/whats-new.md)
+- [Vad är Microsoft 365 Defender?](../security/defender/microsoft-365-defender.md)
+- [Nyheter i Microsoft 365 Defender](../security/defender/whats-new.md)
 
 ## <a name="step-4-configure-microsoft-defender-for-office-365"></a>Steg 4: Konfigurera Microsoft Defender för Office 365
 
-[Microsoft Defender för Office 365](../security/office-365-security/office-365-atp.md) skyddar organisationen mot skadliga hot i e-postmeddelanden (bifogade filer och URL-adresser), Office-dokument och samarbetsverktyg. I följande tabell visas funktioner och funktioner för Microsoft Defender för Office 365 som ingår i Microsoft 365 E5:
+[Microsoft Defender för Office 365](../security/defender-365-security/defender-for-office-365.md) skyddar organisationen mot skadliga hot i e-postmeddelanden (bifogade filer och URL-adresser), Office-dokument och samarbetsverktyg. I följande tabell visas funktioner och funktioner för Microsoft Defender för Office 365 som ingår i Microsoft 365 E5:
 
 |Funktioner för konfiguration, skydd och identifiering|Funktioner för automatisering, undersökning, åtgärder och utbildning|
 |---|---|
-|[Säkra bifogade filer](../security/office-365-security/atp-safe-attachments.md)<br/>[Säkra länkar](../security/office-365-security/atp-safe-links.md)<br/>[Säkra dokument](../security/office-365-security/safe-docs.md)<br/>[ATP för SharePoint, OneDrive och Microsoft Teams](../security/office-365-security/atp-for-spo-odb-and-teams.md)<br/>[Skydd mot nätfiske i Defender för Office 365](../security/office-365-security/set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)|[Hotspårare](../security/office-365-security/threat-trackers.md)<br/>[Hotutforskaren](../security/office-365-security/threat-explorer.md)<br/>[Automatiska undersökningar och svar](../security/office-365-security/office-365-air.md)<br/>[Attacksimulator](../security/office-365-security/attack-simulator.md)|
+|[Säkra bifogade filer](../security/defender-365-security/safe-attachments.md)<br/>[Säkra länkar](../security/defender-365-security/safe-links.md)<br/>[Säkra dokument](../security/defender-365-security/safe-docs.md)<br/>[ATP för SharePoint, OneDrive och Microsoft Teams](../security/defender-365-security/mdo-for-spo-odb-and-teams.md)<br/>[Skydd mot nätfiske i Defender för Office 365](../security/defender-365-security/set-up-anti-phishing-policies.md#Exclusive-settings-in-anti-phishing-policies-in Microsoft-Defender-for-Office-365)|[Hotspårare](../security/defender-365-security/threat-trackers.md)<br/>[Hotutforskaren](../security/defender-365-security/threat-explorer.md)<br/>[Automatiska undersökningar och svar](../security/defender-365-security/office-365-air.md)<br/>[Attacksimulator](../security/defender-365-security/attack-simulator.md)|
 |
 
 Med Microsoft Defender för Office 365 kan personer i organisationen kommunicera och samarbeta säkrare, med hotskydd för deras e-postinnehåll och Office-dokument.
@@ -109,14 +109,14 @@ Med Microsoft Defender för Office 365 kan personer i organisationen kommunicera
 
 ![Process för distribution av Microsoft Defender för Office 365](../media/deploy-threat-protection/deploy-office365-atp-steps.png) 
 
-1. [Konfigurera och konfigurera Microsoft Defender för Office 365-principer.](../security/office-365-security/protect-against-threats.md)
-2. [Visa och använda Microsoft Defender för Office 365-rapporter](../security/office-365-security/view-reports-for-atp.md).
-3. [Använd funktioner för undersökning av hot och svar.](../security/office-365-security/office-365-ti.md)
+1. [Konfigurera och konfigurera Microsoft Defender för Office 365-principer.](../security/defender-365-security/protect-against-threats.md)
+2. [Visa och använda Microsoft Defender för Office 365-rapporter](../security/defender-365-security/view-reports-for-mdo.md).
+3. [Använd funktioner för undersökning av hot och svar.](../security/defender-365-security/office-365-ti.md)
 
 ### <a name="more-information-about-microsoft-defender-for-office-365"></a>Mer information om Microsoft Defender för Office 365
 
-- [Översikt över Microsoft Defender för Office 365](../security/office-365-security/office-365-atp.md)
-- [Vad är nytt i Microsoft Defender för Office 365](../security/office-365-security/whats-new-in-office-365-atp.md)
+- [Översikt över Microsoft Defender för Office 365](../security/defender-365-security/defender-for-office-365.md)
+- [Vad är nytt i Microsoft Defender för Office 365](../security/defender-365-security/whats-new-in-defender-for-office-365.md)
 
 ## <a name="step-5-configure-microsoft-defender-for-endpoint"></a>Steg 5: Konfigurera Microsoft Defender för Slutpunkt
 
@@ -162,19 +162,19 @@ När du har konfigurerat och distribuerat dina skyddstjänster för hot och funk
 ![Microsoft 365 Säkerhetscenter](../media/solutions-architecture-center/m365-security-center.png)
 
 Microsoft 365 Säkerhetscenter är specifikt avsett för säkerhetsadministratörer och säkerhetsoperationsteam. I Säkerhetscenter för Microsoft 365 kan du:
-- Visa organisationens övergripande säkerhetshälsa med [Secure Score](../security/mtp/microsoft-secure-score.md).
-- [Övervaka och visa rapporter](../security/mtp/overview-security-center.md) om status för identiteter, data, enheter, appar och infrastruktur.
-- Koppla samman punkter för aviseringar via [incidenter](../security/mtp/incident-queue.md).
-- Använd [automatisk undersökning och åtgärd för](../security/mtp/mtp-autoir.md) att hantera hot.
-- [Proaktivt leta efter hot, till exempel intrångsförsök](../security/mtp/advanced-hunting-overview.md)eller intrångsaktivitet som påverkar e-post, data, enheter och identiteter.
-- [Förstå de senaste attackkampanjerna](../security/mtp/latest-attack-campaigns.md) och teknikerna med hotanalyser.
+- Visa organisationens övergripande säkerhetshälsa med [Secure Score](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score).
+- [Övervaka och visa rapporter](https://docs.microsoft.com/microsoft-365/security/defender/monitoring-and-reporting) om status för identiteter, data, enheter, appar och infrastruktur.
+- Koppla samman punkter för aviseringar via [incidenter](https://docs.microsoft.com/microsoft-365/security/defender/incident-queue).
+- Använd [automatisk undersökning och åtgärd för](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir) att hantera hot.
+- [Proaktivt leta efter hot, till exempel intrångsförsök](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview)eller intrångsaktivitet som påverkar e-post, data, enheter och identiteter.
+- [Förstå de senaste attackkampanjerna](https://docs.microsoft.com/microsoft-365/security/defender/latest-attack-campaigns) och teknikerna med hotanalyser.
 - ... och mycket mer!
 
 ### <a name="more-information-about-the-microsoft-365-security-center"></a>Mer information om Säkerhetscenter för Microsoft 365
 
-- [Kom igång med Säkerhetscenter för Microsoft 365.](../security/mtp/overview-security-center.md)
-- [Övervaka och visa rapporter](../security/mtp/overview-security-center.md).
-- [Se säkerhetsportalerna i Microsoft 365](../security/mtp/portals.md).
+- [Kom igång med Säkerhetscenter för Microsoft 365.](../security/defender/overview-security-center.md)
+- [Övervaka och visa rapporter](../security/defender/overview-security-center.md).
+- [Se säkerhetsportalerna i Microsoft 365](../security/defender/portals.md).
 
 ## <a name="step-8-train-users"></a>Steg 8: Utbilda användare
 
