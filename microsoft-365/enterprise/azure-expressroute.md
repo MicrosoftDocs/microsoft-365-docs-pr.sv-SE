@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Lär dig hur du använder Azure ExpressRoute med Office 365 och planerar nätverksimplementeringsprojektet om du distribuerar med det.
-ms.openlocfilehash: 7e44feefd375088d2fef36c7e7859e242c1a30aa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 788bdb45fe2d3c8a01315aac0db371b57577aeb8
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905362"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164991"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute för Office 365
 
@@ -35,8 +35,9 @@ ms.locfileid: "50905362"
 
 Läs om hur Azure ExpressRoute används med Office 365 och hur du planerar den nätverksimplementering som krävs om du distribuerar Azure ExpressRoute för användning med Office 365. Infrastruktur- och plattformstjänster som körs i Azure kommer ofta att ha nytta av nätverksarkitektur och prestandaöverväganden. Vi rekommenderar ExpressRoute för Azure i dessa fall. Programvara som en tjänst-produkter som Office 365 och Dynamics 365 har skapats för säker och tillförlitlig åtkomst via Internet. Du kan läsa om Internetprestanda och internetsäkerhet och när du bör överväga Azure ExpressRoute för Office 365 i artikeln Utvärdera nätverksanslutningen för [Office 365.](assessing-network-connectivity.md)
 
-> [!NOTE]
-> Microsoft-auktorisering krävs för att använda ExpressRoute för Office 365. Microsoft granskar alla kundförfrågningar och godkänner ExpressRoute för Office 365-användning när en kunds föreskrifter kräver direktanslutning. Om du har sådana krav kan du skicka textutdrag och webblänk till förordningen som du tolkar som att direkt anslutning krävs i ExpressRoute för [Office 365-begäran](https://aka.ms/O365ERReview) för att påbörja en Microsoft-granskning. Obehöriga prenumerationer som försöker skapa routefilter för Office 365 får [ett felmeddelande.](https://support.microsoft.com/kb/3181709)
+>[!NOTE]
+>Microsoft rekommenderar inte ExpressRoute för Microsoft 365 och erbjuder inte heller den bästa anslutningsmodellen för tjänsten under nästan alla omständigheter. Därför krävs Microsoft-auktorisering för att använda den här anslutningsmodellen för tjänsten. Microsoft granskar varje kundbegäran och godkänner ExpressRoute för Microsoft 365 endast i sällsynta fall där det är nödvändigt. Läs ExpressRoute för [Microsoft 365-guiden](https://aka.ms/erguide) för mer information och arbeta med ditt Microsoft-kontoteam för att skicka ett undantag om du skulle behöva det, efter en omfattande granskning av guiden.
+Obehöriga prenumerationer som försöker skapa routefilter för Microsoft 365 får [ett felmeddelande.](https://support.microsoft.com/kb/3181709)
 
 Nu kan du lägga till en direkt nätverksanslutning till Office 365 för vald Office 365-nätverkstrafik. Med Azure ExpressRoute får du en direktanslutning, förutsägbara prestanda och ett serviceavtal som innebär 99,95 % tillgänglighet för nätverkskomponenter från Microsoft. Du behöver en Internetanslutning för tjänster som inte stöds via Azure ExpressRoute.
 

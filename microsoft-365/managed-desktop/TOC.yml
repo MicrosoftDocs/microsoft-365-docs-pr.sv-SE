@@ -21,6 +21,8 @@
           href: service-description/device-lifecycle.md
         - name: Enhetskrav
           href: service-description/device-requirements.md
+        - name: Enhetsbilder
+          href: service-description/device-images.md
         - name: Programenheter
           href: service-description/device-list.md
           items:

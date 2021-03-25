@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Lär dig hur du uppgraderar till ett annat abonnemang.
-ms.openlocfilehash: 62d6da5713a7785fde9e795bc22956d73616c3c3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5f853dcd0d247a6422489cbe5d0287765bfd72a6
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924320"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164455"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Uppgradera till ett annat abonnemang
 
@@ -92,7 +92,7 @@ Om du inte ser några abonnemang på **fliken Uppgradera** innebär det att abon
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>Du kan inte uppgradera prenumerationer nu eftersom du har fler användare än licenser.
 
-För att uppgradera abonnemang automatiskt måste alla dina användare tilldelas giltiga licenser. Om du har tilldelat fler licenser än du har köpt, visas en varning på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> om att du har en licenskonflikt som måste lösas. [Läs mer om hur du löser licenskonflikter](../../admin/manage/resolve-license-conflicts.md). När du har löst eventuella licenskonflikter bör du se abonnemangen listade på **fliken** Uppgradera. Om du inte gör det kan [du ändra abonnemang manuellt](change-plans-manually.md)eller ringa [supporten.](../../admin/contact-support-for-business-products.md)
+För att uppgradera abonnemang automatiskt måste alla dina användare tilldelas giltiga licenser. Om du har tilldelat fler licenser än du har köpt, visas en varning på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> om att du har en licenskonflikt som måste lösas. [Läs mer om hur du löser licenskonflikter](../../commerce/licenses/buy-licenses.md). När du har löst eventuella licenskonflikter bör du se abonnemangen listade på **fliken** Uppgradera. Om du inte gör det kan [du ändra abonnemang manuellt](change-plans-manually.md)eller ringa [supporten.](../../admin/contact-support-for-business-products.md)
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>Du kan inte uppgradera prenumerationer just nu eftersom den här prenumerationen inte är helt konfigurerad eller tjänsten inte är tillgänglig.
 

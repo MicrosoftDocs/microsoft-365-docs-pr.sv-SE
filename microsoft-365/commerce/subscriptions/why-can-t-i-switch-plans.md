@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Förstå varför det ibland kan vara svårt att byta abonnemang manuellt eller genom att ringa supporten.
-ms.openlocfilehash: d13b7290f4b5f9aede7406cf76ee60cac262c814
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0880337e4879c093119b98f4d0108ca65c17e705
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922274"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164467"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>Varför kan jag inte byta abonnemang för Microsoft 365 för företag?
 
@@ -63,19 +63,19 @@ Om du inte ser knappen **Byt** abonnemang kan du inte byta abonnemang automatisk
 
 ::: moniker range="o365-worldwide"
 
-Om du ska kunna använda knappen **Byt abonnemang** för att byta abonnemang automatiskt måste alla användarna ha giltiga licenser. Om du har tilldelat fler licenser än du har köpt, visas en varning på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> om att du har en licenskonflikt som måste lösas. [Läs mer om hur du löser licenskonflikter](../../admin/manage/resolve-license-conflicts.md). När du har löst eventuella licenskonflikter bör du kunna se knappen **Byt abonnemang**. Om du inte gör det kan [du byta abonnemang manuellt](switch-plans-manually.md)eller ringa [supporten.](../../admin/contact-support-for-business-products.md)
+Om du ska kunna använda knappen **Byt abonnemang** för att byta abonnemang automatiskt måste alla användarna ha giltiga licenser. Om du har tilldelat fler licenser än du har köpt, visas en varning på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> om att du har en licenskonflikt som måste lösas. [Läs mer om hur du löser licenskonflikter](../../commerce/licenses/buy-licenses.md). När du har löst eventuella licenskonflikter bör du kunna se knappen **Byt abonnemang**. Om du inte gör det kan [du byta abonnemang manuellt](switch-plans-manually.md)eller ringa [supporten.](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Om du ska kunna använda knappen **Byt abonnemang** för att byta abonnemang automatiskt måste alla användarna ha giltiga licenser. Om du har tilldelat fler licenser än du har köpt, visas en varning på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenser</a> om att du har en licenskonflikt som måste lösas. [Läs mer om hur du löser licenskonflikter](../../admin/manage/resolve-license-conflicts.md). När du har löst eventuella licenskonflikter bör du kunna se knappen **Byt abonnemang**. Om du inte gör det kan [du byta abonnemang manuellt](switch-plans-manually.md)eller ringa [supporten.](../../admin/contact-support-for-business-products.md)
+Om du ska kunna använda knappen **Byt abonnemang** för att byta abonnemang automatiskt måste alla användarna ha giltiga licenser. Om du har tilldelat fler licenser än du har köpt, visas en varning på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenser</a> om att du har en licenskonflikt som måste lösas. [Läs mer om hur du löser licenskonflikter](../../commerce/licenses/buy-licenses.md). När du har löst eventuella licenskonflikter bör du kunna se knappen **Byt abonnemang**. Om du inte gör det kan [du byta abonnemang manuellt](switch-plans-manually.md)eller ringa [supporten.](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Om du ska kunna använda knappen **Byt abonnemang** för att byta abonnemang automatiskt måste alla användarna ha giltiga licenser. Om du har tilldelat fler licenser än du har köpt, visas en varning på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenser</a> om att du har en licenskonflikt som måste lösas. [Läs mer om hur du löser licenskonflikter](../../admin/manage/resolve-license-conflicts.md). När du har löst eventuella licenskonflikter bör du kunna se knappen **Byt abonnemang**. Om du inte gör det kan [du byta abonnemang manuellt](switch-plans-manually.md)eller ringa [supporten.](../../admin/contact-support-for-business-products.md)
+Om du ska kunna använda knappen **Byt abonnemang** för att byta abonnemang automatiskt måste alla användarna ha giltiga licenser. Om du har tilldelat fler licenser än du har köpt, visas en varning på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenser</a> om att du har en licenskonflikt som måste lösas. [Läs mer om hur du löser licenskonflikter](../../commerce/licenses/buy-licenses.md). När du har löst eventuella licenskonflikter bör du kunna se knappen **Byt abonnemang**. Om du inte gör det kan [du byta abonnemang manuellt](switch-plans-manually.md)eller ringa [supporten.](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 

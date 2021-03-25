@@ -22,14 +22,14 @@ search.appverid:
 - BCS160
 - MET150
 description: Lär dig hur du flyttar över ditt företag till Microsoft 365 Business Premium från Office 365 E3.
-ms.openlocfilehash: f655037891bf8ec42e7b927256025c89c9354e98
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3f9fd70b2d31b32027981e638de249d92e98ea08
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912951"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164542"
 ---
-# <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrera från Office 365 E3 till Microsoft 365 Business Premium 
+# <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrera från Office 365 E3 till Microsoft 365 Business Premium
 
 Microsoft 365 Business Premium har allt du behöver för ditt småföretag och kombinerar de förstklassiga molnbaserade produktivitetsapparna med enkel enhetshantering och säkerhet. Om du för närvarande har en Office 365 E3-prenumeration men inte har fler än 300 anställda kan du överväga att byta till Microsoft 365 Business Premium för ytterligare säkerhetsfunktioner.
 
@@ -42,14 +42,14 @@ I den här tabellen visas skillnaderna mellan Microsoft 365 Business Premium och
 | Funktion    | Support i Microsoft 365 Business Premium    | Support i Office 365 E3 | 
 |:-------|:-----|:-----|
 | **Lokalt**        | | | 
-| Office-appar<sup>1</sup>    | Microsoft 365-applikationer för affärsverksamhet    | Microsoft 365-appar för företag | 
+| Office-appar<sup>1</sup>    | Microsoft 365-applikationer för affärsverksamhet    |  Microsoft 365 Apps för företag | 
 | **Produktivitetsprogram för molnet**        | | | 
 | Exchange Online och Outlook    | 50 GB lagringsutrymme per postlåda och obegränsat antal Exchange Online-arkivering    | 100 GB lagringsutrymme per postlåda och obegränsat antal Exchange Online-arkivering | 
 | Teams    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Office 365 E3](../media/check-mark.png) | 
 | OneDrive för företag    | 1 TB lagringsgräns per användare    | Obegränsat | 
 | Yammer, SharePoint Online, Planner, Stream    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Office 365 E3](../media/check-mark.png) | 
 | StaffHub    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Office 365 E3](../media/check-mark.png) | 
-| Outlook Customer Manager, MileIQ    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | | 
+| Outlook Customer Manager    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | | 
 | **Skydd mot hot**        | | | 
 | Microsoft Defender för Office 365 Abonnemang 1 | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | Ingår inte men kan läggas till på | 
 | **Identitetshantering**        | | | 
@@ -122,7 +122,7 @@ Microsoft 365 Business Premium har en lagringsgräns på 50 GB eftersom Exchange
 
 ### <a name="threat-protection"></a>Skydd mot hot
 
-När du har migrerat till Microsoft 365 Business Premium har du Defender för Office 365. Se [Microsoft Defender för Office 365 för](../security/office-365-security/office-365-atp.md) en översikt. Konfigurera genom att gå [till Konfigurera säkra](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)länkar , konfigurera säkra bifogade filer och konfigurera Skydd mot nätfiske i Defender för Office [365.](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c) [](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)
+När du har migrerat till Microsoft 365 Business Premium har du Defender för Office 365. Se [Microsoft Defender för Office 365 för](../security/defender-365-security/defender-for-office-365.md) en översikt. Konfigurera genom att gå [till Konfigurera säkra](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)länkar , konfigurera säkra bifogade filer och konfigurera Skydd mot nätfiske i Defender för Office [365.](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c) [](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)
 
 ### <a name="sensitivity-labels"></a>Känslighetsetiketter
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Läs om vilken Microsoft 365-prenumeration som gäller för din organisation.
-ms.openlocfilehash: 0ac7dbcad1f2d7fa99db607e6d4696c9f8fcb542
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 19da01142bfe0abf2ad02c3a0ccab4ef25e09df4
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913760"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164651"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>Välj en Microsoft 365-prenumeration
 
@@ -54,7 +54,6 @@ Att välja rätt Microsoft 365-prenumeration är avgörande för att få ut mest
 | **Sociala medier, videosamtal, webbplatser** | Streama, Yammer, Planner, SharePoint \* Online, PowerApps \* , Microsoft Flow\* | Ja | Ja | Ja |
 | **Företagsappar** | Schemaläggning av appar – Bookings\*\* | Ja | Ja | Ja |
 |
- | Företagsappar – MileIQ\*\* | Ja | Ja | Nej |
 | **Skydd mot hot** | Office 365 Avancerat skydd | Nej | Ja | Nej |
  | Upprätthållande av Windows Exploit Guard | Nej | Ja | Nej |
 | **Identitetshantering** | Självbetjäning för återställning av lösenord för hybridkonton i Azure Active Directory | Nej | Ja | Nej |
