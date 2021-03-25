@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 8784c8d608666946461ddc27aa2e7f2b740276a0
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 87da8a558e1295f793600aae2fdd836667374052
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185497"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218730"
 ---
 # <a name="migrate-from-symantec---phase-1-prepare-for-your-migration"></a>Migrera från Symantec – fas 1: Förbereda migreringen
 
@@ -39,7 +39,7 @@ ms.locfileid: "51185497"
 |*Du är här!*| | |
 
 
-**Välkommen till förberedelsefasen för [migreringen från Symantec till Microsoft Defender för Slutpunkt](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. 
+**Välkommen till förberedelsefasen för [migreringen från Symantec till Microsoft Defender för Slutpunkt](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)**. 
 
 Den här migreringsfasen omfattar följande steg:
 1. [Skaffa Microsoft Defender för Slutpunkt](#get-microsoft-defender-for-endpoint).
@@ -89,5 +89,5 @@ Om du vill aktivera kommunikation mellan dina enheter och Microsoft Defender fö
 
 ## <a name="next-step"></a>Nästa steg
 
-**Grattis!** Du har slutfört **förberedelsefasen** av [migreringen från Symantec till Microsoft Defender för Slutpunkt](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)!
+**Grattis!** Du har slutfört **förberedelsefasen** av [migreringen från Symantec till Microsoft Defender för Slutpunkt](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)!
 - [Fortsätt att konfigurera Microsoft Defender för Slutpunkt](symantec-to-microsoft-defender-atp-setup.md).

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Managed Desktop-arkiverade enheter
 description: Enheter som närmar sig att gå i väg och som du fortfarande kan registrera dig för men kommer att få en förkortad supportlivslängd
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f3e4b434f1ca267d5bbfbc7e67cb20c7e2b9dbbb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 79b4d343326d722e42e09ae2794c05dcdd8eb603
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920570"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218742"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft Managed Desktop-arkiverade enheter
 
@@ -40,12 +40,15 @@ För att registreras i Microsoft Managed Desktop måste en enhet vara någon av 
 |---------|---------|---------|---------|
 |Dell Precision 3530| 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | **22 maj 2023** |
 |Dell Latitude 5300 / 5300 2-in-1 / 5400 / 5500 | 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | **1 juni 2024**  |
+|Dell Latitude 5310 / 5310 2-in-1 / 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | **28 april 2025**  |
+|Dell Latitude 5410 / 5410 2-in-1 / 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | **28 april 2025**  |
 |Dell Latitude 5490 | 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | **9 januari 2023** |
 |Dell Latitude 7200 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | **1 maj 2024** |
 |Dell Latitude 7300 / 7400 / 7400 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | **1 maj 2024**  |
 |Dell Latitude 7390 / 7390 2-in-1 / 7490 | 256 GB / Intel i5 / 8 GB RAM   | IR-kamera krävs | **9 januari 2023** |
 |Dell Latitude 7410 / 7410 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | **19 maj 2025**  |
-|DellPlex 3070 | 128 GB / Intel i3 / 8 GB RAM | Inga | **1 maj 2025**  |
+|Dell Latitude 9410 / 9410 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | **5 maj 2025**  |
+|DellPlex 3070 | 128 GB / Intel i3 / 8 GB RAM | Ingen | **1 maj 2025**  |
 |HP EliteBook 830 / 840 / 850 G5| 128 GB / Intel i5 / 8 GB RAM | SKU med 5VS01AV, IR-kamera eller fingeravtrycks sensor krävs  | **15 februari 2023** |
 |HP EliteBook 830 / 840 / 850 G6| 128 GB / Intel i5 / 8 GB RAM | SKU med 5VS01AV, IR-kamera eller fingeravtrycks sensor krävs  | **30 nov 2023** |
 |HP EliteBook 830 / 840 / 850 G7| 128 GB / Intel i5 / 8 GB RAM | SKU med 9MZ21AV, IR-kamera eller fingeravtrycks sensor krävs  | **30 nov 2024** |
@@ -64,12 +67,12 @@ För att registreras i Microsoft Managed Desktop måste en enhet vara någon av 
 |HP EliteOne 800 G6 24/27 AIO |256 GB / Intel i5 / 8 GB RAM |SKU med 9XM14AV| **30 juni 2025** |
 |HP ZBook 14u/15u G6 Mobile Arbetsstation |256 GB / Intel i5 / 8 GB RAM |SKU med 5VS04AV, IR-kamera krävs| **30 nov 2023** |
 |HP ZBook Firefly 14/15 G7 Mobile Arbetsstation |256 GB / Intel i5 / 8 GB RAM |SKU med 9MZ22AV, IR-kamera krävs| **30 nov 2024** |
-|Surface Book 2| 256 GB / Intel i5 / 8 GB RAM | Inga | **16 nov 2022** |
-|Surface Go| 128 GB / Intel 4415Y / 8 GB RAM | Inga | **2 augusti 2023** |
-|Surface Laptop| 256 GB / Intel i5 / 8 GB RAM | Inga | **20 maj 2022** |
-|Surface Laptop 2| 128 GB / Intel i5 / 8 GB RAM | Inga | **16 oktober 2023** |
-|Surface Pro| 256 GB / Intel i5 / 8 GB RAM | Inga | **15 juni 2022** |
-|Surface Pro 6| 128 GB / Intel i5 / 8 GB RAM | Inga | **16 oktober 2023** |
+|Surface Book 2| 256 GB / Intel i5 / 8 GB RAM | Ingen | **16 nov 2022** |
+|Surface Go| 128 GB / Intel 4415Y / 8 GB RAM | Ingen | **2 augusti 2023** |
+|Surface Laptop| 256 GB / Intel i5 / 8 GB RAM | Ingen | **20 maj 2022** |
+|Surface Laptop 2| 128 GB / Intel i5 / 8 GB RAM | Ingen | **16 oktober 2023** |
+|Surface Pro| 256 GB / Intel i5 / 8 GB RAM | Ingen | **15 juni 2022** |
+|Surface Pro 6| 128 GB / Intel i5 / 8 GB RAM | Ingen | **16 oktober 2023** |
 
 Dessutom måste enheten också:
 

@@ -1,19 +1,19 @@
 ---
 title: Microsoft Managed Desktop-enheter
 description: I den här artikeln finns en lista över specifikationer för enheter som godkänts för Microsoft Managed Desktop.
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b0aa619f09f2d6b32289e037283a0dc6578d0150
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 59609da65701112ced43b73b67650881bc81be8a
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920510"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218670"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop-enheter 
 
@@ -37,17 +37,17 @@ Länkarna till enheterna här är endast till för referens. Om du vill beställ
 
 | Modell    | Lägsta specifikationer  | Ytterligare krav   | Arkiveringsdatum   | Retirement date   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Dell Latitude 5310 / 5310 2-i-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | 28 april 2022  | 28 april 2025 |
+| **\*[Dell Latitude 5320 / 5320 2-i-1](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5320-laptop-or-2-in-1/spd/latitude-13-5320-2-in-1-laptop?)** | 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | 22 januari 2023  | 22 januari 2026 |
 | [Dell Latitude 3510](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/latitude-3510-business-laptop/spd/latitude-15-3510-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | 28 april 2022 | 28 april 2025  |
-| [Dell Latitude 5410](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5410-business-laptop/spd/latitude-14-5410-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | 28 april 2022 | 28 april 2025  |
+| **\*[Dell Latitude 5420](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5420-laptop/spd/latitude-5420-laptop?)** | 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | 02 januari 2023 | 2 januari 2026  |
 | [Dell Latitude 5510](https://www.dell.com/en-us/work/shop/laptops/15-5510/spd/latitude-15-5510-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | 28 april 2022 | 28 april 2025 |
 | [Dell Latitude 7310 / 7310 2-i-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/latitude-7310-business-laptop-or-2-in-1/spd/latitude-13-7310-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | 4 maj 2022  | 4 maj 2025  |
 | **\*[Dell Latitude 7420 / 7420 2-in-1](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-7420-business-laptop-or-2-in-1/spd/latitude-14-7420-2-in-1-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | 22 mars 2023  | 22 mars 2026  |
-| [Dell Latitude 9410 2-in-1](https://www.dell.com/en-us/work/shop/laptops/new-14-9410-2-in-1/spd/latitude-14-9410-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | 5 maj 2022  | 5 maj 2025  |
+| **\*[Dell Latitude 9420 2-in-1](https://www.dell.com/en-us/work/shop/scc/sr/laptops/latitude-laptops?~ck=mn)** | 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | Apr 2023  | Apr 2026  |
 | [Dell Latitude 9510](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-9510-laptop-or-2-in-1/spd/latitude-15-9510-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | 5 maj 2022  | 5 maj 2025  |
-| [DellPlex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop) | 128 GB / Intel i3 / 8 GB RAM | Inga | 27 maj 2022  | 27 maj 2025  |
-| [DellPlex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio) | 128 GB / Intel i3 / 8 GB RAM | Inga | 15 maj 2022  | 15 maj 2025  |
-| [Dell 5550 arbetsstation](https://www.dell.com/en-us/work/shop/laptops/new-15-5550-workstation/spd/precision-15-5550-laptop) | 256 GB / Intel i5 / 8 GB RAM | Inga | 27 maj 2022  | 27 maj 2025  |
+| [DellPlex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop) | 128 GB / Intel i3 / 8 GB RAM | Ingen | 27 maj 2022  | 27 maj 2025  |
+| [DellPlex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio) | 128 GB / Intel i3 / 8 GB RAM | Ingen | 15 maj 2022  | 15 maj 2025  |
+| [Dell 5550 arbetsstation](https://www.dell.com/en-us/work/shop/laptops/new-15-5550-workstation/spd/precision-15-5550-laptop) | 256 GB / Intel i5 / 8 GB RAM | Ingen | 27 maj 2022  | 27 maj 2025  |
 
 ### <a name="hp"></a>HP
 
@@ -67,12 +67,12 @@ Länkarna till enheterna här är endast till för referens. Om du vill beställ
 
 | Modell    | Lägsta specifikationer  | Ytterligare krav   | Arkiveringsdatum   | Retirement date   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 / 8 GB RAM | Inga | 21 maj 2022 | 21 maj 2027 |
-| [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB / Intel Core M3 / 8 GB RAM | Inga | 21 maj 2022 | 21 maj 2027 |
-| [Surface Laptop Go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB / Intel i5 / 8 GB RAM | Inga | 12 oktober 2022 | 12 oktober 2025 |
-| [Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB / Intel i5 / 8 GB RAM | Inga | 22 oktober 2021 | 22 oktober 2024 |
-| [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB / Intel i5 / 8 GB RAM | Inga | 22 oktober 2021 | 22 oktober 2024 |
-| **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 GB / Intel i5 / 8 GB RAM | Inga | 15 januari 2022 | 15 januari 2025 |
+| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 / 8 GB RAM | Ingen | 21 maj 2022 | 21 maj 2027 |
+| [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB / Intel Core M3 / 8 GB RAM | Ingen | 21 maj 2022 | 21 maj 2027 |
+| [Surface Laptop Go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB / Intel i5 / 8 GB RAM | Ingen | 12 oktober 2022 | 12 oktober 2025 |
+| [Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB / Intel i5 / 8 GB RAM | Ingen | 22 oktober 2021 | 22 oktober 2024 |
+| [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB / Intel i5 / 8 GB RAM | Ingen | 22 oktober 2021 | 22 oktober 2024 |
+| **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 GB / Intel i5 / 8 GB RAM | Ingen | 15 januari 2022 | 15 januari 2025 |
 
 Enheten måste dessutom uppfylla följande villkor:     
 

@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 95b2e4bfc0eca58d6c71670b21ded81affcc219f
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: cc005c559e0f91f1c5888f8d7e4e7a2a420894db
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185509"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218706"
 ---
 # <a name="migrate-from-symantec---phase-3-onboard-to-microsoft-defender-for-endpoint"></a>Migrera från Symantec – fas 3: Introduktion till Microsoft Defender för Slutpunkt
 
@@ -39,7 +39,7 @@ ms.locfileid: "51185509"
 || |*Du är här!* |
 
 
-**Välkommen till fas 3 av [migreringen från Symantec till Microsoft Defender för Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. Den här migreringsfasen omfattar följande steg:
+**Välkommen till fas 3 av [migreringen från Symantec till Microsoft Defender för Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)**. Den här migreringsfasen omfattar följande steg:
 
 1. [Onboard-enheter till Microsoft Defender för Endpoint](#onboard-devices-to-microsoft-defender-for-endpoint).
 2. [Kör ett identifieringstest](#run-a-detection-test).
@@ -105,6 +105,6 @@ Om du vill göra detta går du till webbplatsen för microsoft Defender för end
 
 ## <a name="next-steps"></a>Nästa steg
 
-**Grattis!** Du har slutfört [migreringen från Symantec till Microsoft Defender för Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)! 
+**Grattis!** Du har slutfört [migreringen från Symantec till Microsoft Defender för Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)! 
 - [Besök instrumentpanelen för säkerhetsåtgärder](security-operations-dashboard.md) i Microsoft Defender Säkerhetscenter ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ). 
 - [Hantera Microsoft Defender för Slutpunkt efter migreringen.](manage-atp-post-migration.md)

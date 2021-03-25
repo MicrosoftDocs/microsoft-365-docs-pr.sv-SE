@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 6a5e5c10e92d5c8c017360033d7c3fc23b707730
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 6d45e3aa0d3bf938e43201aca969613876ef1f31
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185489"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218718"
 ---
 # <a name="migrate-from-symantec---phase-2-set-up-microsoft-defender-for-endpoint"></a>Migrera från Symantec – fas 2: Konfigurera Microsoft Defender för Endpoint
 
@@ -39,7 +39,7 @@ ms.locfileid: "51185489"
 ||*Du är här!* | |
 
 
-**Välkommen till konfigurationsfasen av [migreringen från Symantec till Microsoft Defender för Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. Den här fasen omfattar följande steg:
+**Välkommen till konfigurationsfasen av [migreringen från Symantec till Microsoft Defender för Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)**. Den här fasen omfattar följande steg:
 1. [Aktivera eller installera om Microsoft Defender Antivirus (för vissa versioner av Windows).](#enable-or-reinstall-microsoft-defender-antivirus-for-certain-versions-of-windows)
 2. [Aktivera Microsoft Defender Antivirus.](#enable-microsoft-defender-antivirus)
 3. [Hämta uppdateringar för Microsoft Defender Antivirus.](#get-updates-for-microsoft-defender-antivirus)
@@ -228,5 +228,5 @@ Med Hjälp av Konfigurationshanteraren och din enhetssamling konfigurerar du pri
 
 ## <a name="next-step"></a>Nästa steg
 
-**Grattis!** Du har slutfört konfigurationsfasen av [migreringen från Symantec till Microsoft Defender för Slutpunkt](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)!
+**Grattis!** Du har slutfört konfigurationsfasen av [migreringen från Symantec till Microsoft Defender för Slutpunkt](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)!
 - [Gå till fas 3: Gå in i Microsoft Defender för Slutpunkt](symantec-to-microsoft-defender-atp-onboard.md)

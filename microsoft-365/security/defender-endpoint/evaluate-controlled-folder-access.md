@@ -13,12 +13,12 @@ ms.author: ellevin
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: e5da8ec3e4555af062aad1a4ebfa96d972bee23b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e965e1a882dadfb565231074165507a6727b45c1
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51073913"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218754"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Utvärdera kontrollerad mappåtkomst
 
@@ -76,5 +76,5 @@ Se [Skydda viktiga mappar med kontrollerad mappåtkomst](controlled-folders.md) 
 ## <a name="see-also"></a>Se även
 
 * [Skydda viktiga mappar med kontrollerad mappåtkomst](controlled-folders.md)
-* [Utvärdera Microsoft Defender för slutpunkt](evaluate-atp.md)
+* [Utvärdera Microsoft Defender för slutpunkt](evaluate-mde.md)
 * [Använda granskningsläge](audit-windows-defender.md)
