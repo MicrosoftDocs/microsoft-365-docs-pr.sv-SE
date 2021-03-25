@@ -1,0 +1,387 @@
+- name: Office 365-säkerhet
+  href: overview.md
+  expanded: true
+  items:
+    - name: Översikt
+      items:
+        - name: Defender förr Office 365
+          href: defender-for-office-365.md
+        - name: Utvärdera Defender för Office 365
+          href: office-365-evaluation.md
+        - name: Nyheter i Defender för Office 365
+          href: whats-new-in-defender-for-office-365.md
+        - name: Defender för Office 365 i Microsoft 365 Säkerhetscenter
+          href: ../defender/microsoft-365-security-center-mdo.md
+        - name: Exchange Online Protection
+          items:
+            - name: Översikt över Exchange Online Protection
+              href: exchange-online-protection-overview.md
+            - name: Funktioner i EOP
+              href: eop-features.md
+            - name: Behörigheter i fristående EOP
+              href: feature-permissions-in-eop.md
+            - name: Administrationscenter för Exchange i fristående EOP
+              href: exchange-admin-center-in-exchange-online-protection-eop.md
+            - name: Hantera mottagare i fristående EOP
+              href: manage-recipients-in-eop.md
+            - name: E-postflöde i EOP
+              href: mail-flow-in-eop.md
+            - name: Karantän
+              href: quarantine-email-messages.md
+            - name: Granskningsrapporter i fristående EOP
+              href: auditing-reports-in-eop.md
+        - name: 'Säkra bilagor för SharePoint, OneDrive och Microsoft Teams'
+          href: turn-on-mdo-for-spo-odb-and-teams.md
+        - name: Microsoft 365 Säkerhetscenter översikt
+          href: ../defender/overview-security-center.md
+        - name: Hotutforskaren (och realtidsidentifieringar)
+          href: threat-explorer.md
+        - name: Sidan E-postenhet
+          href: mdo-email-entity-page.md
+        - name: Översikt över Automatiska undersökningar och svar
+          href: office-365-air.md
+        - name: Så fungerar automatiska undersökningar och svar
+          href: automated-investigation-response-office.md
+        - name: Reparationsåtgärder
+          href: air-remediation-actions.md
+        - name: Skydd mot skadlig kod
+          href: anti-malware-protection.md
+        - name: Skydd mot skräppost
+          href: anti-spam-protection.md
+        - name: Skydd mot nätfiske
+          href: anti-phishing-protection.md
+        - name: Skydd mot förfalskning
+          href: anti-spoofing-protection.md
+        - name: Säkra bifogade filer i Defender för Office 365
+          href: safe-attachments.md
+        - name: Säkra bifogade länkar i Defender för Office 365
+          href: safe-links.md
+        - name: Utgående skräppostskydd
+          href: outbound-spam-controls.md
+        - name: Översikt över instrumentpanelen för säkerhet
+          href: security-dashboard.md
+        - name: Så fungerar undersökning av hot och svar
+          href: office-365-ti.md
+        - name: Svar på säkerhetsincidenter i Office 365
+          href: office365-security-incident-response-overview.md
+        - name: E-postflödesinsikter i Säkerhets- och efterlevnadscenter
+          href: mail-flow-insights-v2.md
+        - name: 'Vägledning från Microsoft Security för politiska kampanjer, ideella föreningar och andra snabbrörliga organisationer'
+          href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
+    - name: Distribuera
+      items:
+        - name: Exchange Online Protection
+          items:
+            - name: Konfigurera principer för skydd mot nätfiske i EOP
+              href: configure-anti-phishing-policies-eop.md
+            - name: Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost
+              href: ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
+            - name: Hantera grupper i fristående EOP
+              href: manage-groups-in-eop.md
+            - name: Hantera e-postanvändare i fristående EOP
+              href: manage-mail-users-in-eop.md
+            - name: Konfigurera din EOP-tjänst
+              href: set-up-your-eop-service.md
+        - name: Skydda mot hot
+          href: protect-against-threats.md
+        - name: Integrera Defender för Office 365 med Defender för Endpoint
+          href: integrate-office-365-ti-with-mde.md
+        - name: Behörigheter i Säkerhets- och efterlevnadscentret
+          href: permissions-in-the-security-and-compliance-center.md
+        - name: SIEM-serverintegrering
+          href: siem-server-integration.md
+        - name: SIEM-integrering med Defender för Office 365
+          href: siem-integration-with-office-365-ti.md
+        - name: Säker som standard
+          href: secure-by-default.md
+        - name: Konfigurera skydd mot nätfiske-policyer i Defender för Office 365.
+          href: configure-atp-anti-phishing-policies.md
+        - name: Konfigurera principer för skydd mot skadlig kod
+          href: configure-anti-malware-policies.md
+        - name: Konfigurera principer för skräppostskydd
+          href: configure-your-spam-filter-policies.md
+        - name: Konfigurera anslutningsfiltrering
+          href: configure-the-connection-filter-policy.md
+        - name: Konfigurera globala inställningar för säkra länkar i Defender för Office 365
+          href: configure-global-settings-for-safe-links.md
+        - name: Konfigurera inställningar för skräppost i Exchange Online-postlådor
+          href: configure-junk-email-settings-on-exo-mailboxes.md
+        - name: Konfigurera utgående skräppostfiltrering
+          href: configure-the-outbound-spam-policy.md
+        - name: Konfigurera förfalskningsinformation
+          href: learn-about-spoof-intelligence.md
+        - name: Skapa listor med spärrade avsändare
+          href: Create-block-sender-lists-in-office-365.md
+        - name: Skapa listor för betrodda avsändare
+          href: Create-safe-sender-lists-in-office-365.md
+        - name: E-postautentisering
+          href: email-validation-and-authentication.md
+        - name: Ge användare åtkomst till Säkerhetscentret
+          href: grant-access-to-the-security-and-compliance-center.md
+        - name: Säkra dokument i Defender för Office 365
+          href: safe-docs.md
+        - name: Konfigurera principer för säkra länkar i Office 365
+          href: set-up-safe-links-policies.md
+        - name: Konfigurera principer för säkra bifogade filer i Office 365
+          href: set-up-safe-attachments-policies.md
+        - name: Konfigurera SPF för att förhindra förfalskning
+          href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
+        - name: Principer för användarrapporteringar
+          href: user-submission.md
+        - name: Användartaggar i Defender för Office 365
+          href: user-tags.md
+        - name: 'Aktivera säkra bilagor för SharePoint, OneDrive och Microsoft Teams'
+          href: turn-on-mdo-for-spo-odb-and-teams.md
+        - name: Använda DKIM för att validera utgående e-post
+          href: use-dkim-to-validate-outbound-email.md
+        - name: Använda DMARC för att validera e-post
+          href: use-dmarc-to-validate-email.md
+        - name: Lägga till stöd för anonym inkommande e-post över IPv6
+          href: support-for-anonymous-inbound-email-messages-over-ipv6.md
+        - name: Installera Application Guard för Office
+          href: install-app-guard.md
+        - name: Konfigurera grupper och användare i en utvecklings-/testmiljö för en politisk kampanj
+          href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
+        - name: Skapa gruppwebbplatser i en utvecklings-/testmiljö för en politisk kampanj
+          href: create-team-sites-in-a-political-campaign-dev-test-environment.md
+    - name: Migrera
+      items:
+        - name: 'Byta till EOP från Google Postini, Barracuda Spam and Virus Firewall eller Cisco IronPort'
+          href: switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
+    - name: Undvika
+      items:
+        - name: Konfigurera din klientorganisationen för bättre säkerhet
+          href: tenant-wide-setup-for-increased-security.md
+        - name: Förvalda säkerhetsprinciper
+          href: preset-security-policies.md
+        - name: Konfigureringsanalys för förvalda säkerhetsprinciper
+          href: configuration-analyzer-for-security-policies.md
+        - name: Attacksimulator i Defender för Office 365
+          href: attack-simulator.md
+        - name: Kom igång med Attack simuleringsträning
+          href: attack-simulation-training-get-started.md
+        - name: Simulera en nätfiskeattack genom att träna på attacksimulering
+          href: attack-simulation-training.md
+        - name: Skapa en anpassad nyttolast för att träna på attacksimulering
+          href: attack-simulation-training-payloads.md
+        - name: Få insikter genom att träna på attacksimulering
+          href: attack-simulation-training-insights.md
+        - name: Distributionsöverväganden och vanliga frågor och svar för attacksimulatorträning
+          href: attack-simulation-training-faq.md
+        - name: Rekommenderade inställningar för att konfigurera EOP och Defender för Office 365-säkerhet
+          href: recommended-settings-for-eop-and-office365.md
+        - name: Metodtips för konfiguration av EOP
+          href: best-practices-for-configuring-eop.md
+        - name: Skydda lokala postlådor i Kina med fristående EOP
+          href: protect-on-premises-mailboxes-with-exchange-online-protection.md
+        - name: Integrera Automatiska undersökningar och svar med en anpassad lösning eller lösning från tredje part
+          href: air-custom-reporting.md
+        - name: Inställningar för avancerat skräppostfilter (ASF)
+          href: advanced-spam-filtering-asf-options.md
+        - name: Hantera Klientorganisationens Tillåt/blockera listan
+          href: tenant-allow-block-list.md
+        - name: Meddelandespårning i Säkerhets- och efterlevnadscenter
+          href: message-trace-scc.md
+        - name: Rapportera meddelanden och filer till Microsoft
+          href: report-junk-email-messages-to-microsoft.md
+        - name: Använda e-postflödesregler för att blockera meddelanden med körbara bifogade filer i EOP
+          href: reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
+        - name: Använda e-postflödesregler för att filtrera massutskick i EOP
+          href: use-transport-rules-to-configure-bulk-email-filtering.md
+        - name: Använda e-postflödesregler för att ange SCL i meddelanden
+          href: use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
+        - name: Automatisk rensning – skydd mot skräppost och skadlig kod
+          href: zero-hour-auto-purge.md
+    - name: Upptäcka
+      items:
+        - name: Använda hotspårare
+          href: threat-trackers.md
+        - name: Visa aviseringar
+          href: ../../compliance/alert-policies.md
+        - name: Smarta rapporter och insikter i Säkerhets- och efterlevnadscenter
+          href: reports-and-insights-in-security-and-compliance.md
+        - name: Aktivera tillägget för att rapportera meddelande
+          href: enable-the-report-message-add-in.md
+        - name: Aktivera tillägget för att rapportera nätfiske
+          href: enable-the-report-phish-add-in.md
+        - name: Installera och använda tillägget för rapportering av skräppost
+          href: junk-email-reporting-add-in-for-microsoft-outlook.md
+        - name: E-postflödesregler (transportregler) i fristående EOP
+          href: mail-flow-rules-transport-rules-0.md
+        - name: Rapportera skräppost och nätfiske i Outlook på webben
+          href: report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
+        - name: Rapportera skräppost och phishing i Outlook för iOS och Android
+          href: report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android.md
+        - name: Köra en administratörsrapport för rollgrupp i fristående EOP
+          href: run-an-administrator-role-group-report-in-eop-eop.md
+    - name: Undersöka
+      items:
+        - name: Vyer i Hotutforskaren
+          href: threat-explorer-views.md
+        - name: Kampanjvyer
+          href: campaigns.md
+        - name: Undersöka skadlig e-post
+          href: investigate-malicious-email-that-was-delivered.md
+        - name: Visa Defender för Office 365-rapporter i säkerhets- och efterlevnadscentret
+          href: view-reports-for-mdo.md
+        - name: Visa information och resultat från en automatisk undersökning
+          href: air-view-investigation-results.md
+        - name: Visa rapporter om e-postsäkerhet i Säkerhets- och efterlevnadscenter
+          href: view-email-security-reports.md
+        - name: Visa e-postflödesrapporter i Säkerhets- och efterlevnadscenter
+          href: view-mail-flow-reports.md
+        - name: Visa administratörsgranskningsloggen i fristående EOP
+          href: view-the-admin-audit-log-eop.md
+        - name: Rapportering och meddelandespårning i fristående EOP
+          href: reporting-and-message-trace-in-exchange-online-protection.md
+        - name: Auto-vidarebefordrade meddelanden insikt
+          href: mfi-auto-forwarded-messages-report.md
+        - name: E-postflödeskarta
+          href: mfi-mail-flow-map-report.md
+        - name: Skicka meddelanden till Microsoft manuellt
+          href: submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
+        - name: Nya domäner som vidarebefordras via e-post
+          href: mfi-new-domains-being-forwarded-email.md
+        - name: Nya användare vidarebefordrar insikt via e-post
+          href: mfi-new-users-forwarding-email.md
+        - name: Rapport om icke godkänd domän
+          href: mfi-non-accepted-domain-report.md
+        - name: Rapport om misslyckad leverans
+          href: mfi-non-delivery-report.md
+        - name: Insikt om utgående och inkommande e-postflöden
+          href: mfi-outbound-and-inbound-mail-flow.md
+        - name: SMTP Auth-klienter insikt och rapport
+          href: mfi-smtp-auth-clients-report.md
+        - name: Skicka in skadlig kod och icke-skadlig kod till Microsoft
+          href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
+        - name: Insikten E-postflödesstatus för översta domäner
+          href: mfi-domain-mail-flow-status-insight.md
+        - name: Använda administratörsinsändning
+          href: admin-submission.md
+        - name: Använd regler för e-postflöde för att se vad dina användare rapporterar till Microsoft
+          href: use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
+        - name: Köer insikt
+          href: mfi-queue-alerts-and-queues.md
+        - name: Genomgång av insikt om förfalskningsinformation
+          href: walkthrough-spoof-intelligence-insight.md
+    - name: Svara
+      items:
+        - name: Identifiera och åtgärda komprometterade användarkonton snabbt
+          href: address-compromised-users-quickly.md
+        - name: Identifiera och åtgärda olovliga medgivandebeviljanden i Office 365
+          href: detect-and-remediate-illicit-consent-grants.md
+        - name: Identifiera och reparera Outlook-regler och inmatningsattacker i anpassade formulär i Office 365
+          href: detect-and-remediate-outlook-rules-forms-attack.md
+        - name: Hantera falska positiva/negativa
+          href: air-report-false-positives-negatives.md
+        - name: Återställa efter utpressningstrojanattack
+          href: recover-from-ransomware.md
+        - name: Åtgärda skadlig e-post
+          href: remediate-malicious-email-delivered-office-365.md
+        - name: Svara på ett komprometterat e-postkonto i Office 365
+          href: responding-to-a-compromised-email-account.md
+        - name: Granska och godkänna (eller avvisa) väntande åtgärder
+          href: air-review-approve-pending-completed-actions.md
+        - name: Finjustera skydd mot nätfiske
+          href: tuning-anti-phishing.md
+        - name: Hitta och släppa meddelanden i karantän som användare
+          href: find-and-release-quarantined-messages-as-a-user.md
+        - name: Fixa möjlig inblick i e-postslingan
+          href: mfi-mail-loop-insight.md
+        - name: Fixa insikter om långsamma flödesregler
+          href: mfi-slow-mail-flow-rules-insight.md
+        - name: Hantera meddelanden och filer i karantän som administratör
+          href: manage-quarantined-messages-and-files.md
+        - name: Ta bort blockerade användare från portalen med åtkomstbegränsade användare
+          href: removing-user-from-restricted-users-portal-after-spam.md
+        - name: Använda avlistningsportalen för att ta bort dig själv från listan med spärrade avsändare
+          href: use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
+    - name: Vanliga frågor och svar
+      items:
+        - name: Vanliga frågor och svar om delegerad administration
+          href: delegated-administration-faq.md
+        - name: Allmänna vanliga frågor och svar om EOP
+          href: eop-general-faq.md
+        - name: 'Vanliga frågor och svar om köade, uppskjutna och studsade meddelanden i EOP'
+          href: eop-queued-deferred-and-bounced-messages-faq.md
+        - name: Vanliga frågor och svar om skydd mot skadlig kod
+          href: anti-malware-protection-faq-eop.md
+        - name: Vanliga frågor och svar om skydd mot skräppost
+          href: anti-spam-protection-faq.md
+        - name: Vanliga frågor och svar om skydd mot förfalskning
+          href: anti-spoofing-protection-faq.md
+        - name: Vanliga frågor och svar om karantän
+          href: quarantine-faq.md
+    - name: Referens
+      items:
+        - name: Säkerhetsöversikt
+          href: security-roadmap.md
+        - name: Hjälp och support för EOP
+          href: help-and-support-for-eop.md
+        - name: Felsöka e-post som skickas till Microsoft 365
+          href: troubleshooting-mail-sent-to-office-365.md
+        - name: Så använder Microsoft 365 SPF till att förhindra förfalskning
+          href: how-office-365-uses-spf-to-prevent-spoofing.md
+        - name: Så verifierar Office 365 Från-adressen för att förhindra nätfiske
+          href: how-office-365-validates-the-from-address.md
+        - name: Så kombineras principer och skydd
+          href: how-policies-and-protections-are-combined.md
+        - name: Meddelandehuvuden för antiskräppost
+          href: anti-spam-message-headers.md
+        - name: Principer för skydd mot nätfiske
+          href: set-up-anti-phishing-policies.md
+        - name: Återspridning i EOP
+          href: backscatter-messages-and-eop.md
+        - name: Klagomålsnivå på massutskick (BCL)
+          href: bulk-complaint-level-values.md
+        - name: Skräppostaviseringar för slutanvändare
+          href: use-spam-notifications-to-release-and-report-quarantined-messages.md
+        - name: Pooler för utgående leverans
+          href: high-risk-delivery-pool-for-outbound-messages.md
+        - name: E-postflödesinformation i EOP
+          href: mail-flow-intelligence-in-office-365.md
+        - name: 'Referens: Principer, rutiner och riktlinjer'
+          href: reference-policies-practices-and-guidelines.md
+        - name: Säkerhetstips i e-postmeddelanden
+          href: safety-tips-in-office-365.md
+        - name: Exempelskript för att tillämpa EOP-inställningar i flera klientorganisationer
+          href: sample-script-for-applying-eop-settings-to-multiple-tenants.md
+        - name: Skicka e-post till Office 365
+          href: sending-mail-to-office-365.md
+        - name: Tjänster för de som inte är kunder
+          href: services-for-non-customers.md
+        - name: Konfidensnivå för skräppost (SCL)
+          href: spam-confidence-levels.md
+        - name: Stöd för validering av DKIM-signerade meddelanden
+          href: support-for-validation-of-dkim-signed-messages.md
+        - name: Virusskydd i SharePoint Online
+          href: virus-detection-in-spo.md
+        - name: Vad är skillnaden mellan skräppost och massutskick?
+          href: what-s-the-difference-between-junk-email-and-bulk-email.md
+        - name: S/MIME
+          href: s-mime-for-message-signing-and-encryption.md
+          items:
+            - name: S/MIME för signering och kryptering av meddelanden
+              href: s-mime-for-message-signing-and-encryption.md
+            - name: Konfigurera S/MIME-inställningar för Outlook på webben
+              href: configure-s-mime-settings-for-outlook-web-app.md
+            - name: Skicka och ta emot e-postmeddelanden som signerats och krypterats med S/MIME
+              href: send-and-receive-s-mime-signed-and-encrypted-email.md
+            - name: Synkronisera användarcertifikat med Office 365 för S/MIME
+              href: sync-user-certificates-to-office-365-for-s-mime.md
+            - name: Konfigurera en virtuell certifikatsamling för att verifiera S/MIME
+              href: set-up-virtual-certificate-collection-to-validate-s-mime.md
+            - name: Konfigurera grupper och användare i en utvecklings-/testmiljö för en politisk kampanj
+              href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
+            - name: Skapa gruppwebbplatser i en utvecklings-/testmiljö för en politisk kampanj
+              href: create-team-sites-in-a-political-campaign-dev-test-environment.md
+            - name: Flytta domäner och inställningar från en EOP-organisation till en annan
+              href: move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
+            - name: Hantera rollgrupper i fristående EOP
+              href: manage-admin-role-group-permissions-in-eop.md
+    - name: Microsoft 365-säkerhet
+      href: ../index.yml
+    - name: Microsoft 365 Defender
+      href: ../defender/index.yml
+    - name: Microsoft Defender för Endpoint
+      href: ../defender-endpoint/index.yml

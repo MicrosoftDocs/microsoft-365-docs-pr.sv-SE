@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du distribuerar team med en grundläggande nivå av skydd.
-ms.openlocfilehash: 678e9824682339afda32342e70848492b738ec6d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: cd5a88069b9947bd4dcb01f6ca76620bb8ed9a52
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052511"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200299"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Konfigurera teams med grundläggande skydd
 
@@ -31,15 +31,15 @@ I den här artikeln tittar vi på hur du distribuerar team med en grundläggande
 
 ## <a name="initial-protections"></a>Initiala skydd
 
-Som ett första steg rekommenderar vi att du konfigurerar principer för grundläggande principer för identitets- och enhetsåtkomst. Mer information finns i [Principrekommendationer för att skydda Teams-chattar, grupper och filer](../security/defender-365-security/teams-access-policies.md).
+Som ett första steg rekommenderar vi att du konfigurerar principer för grundläggande principer för identitets- och enhetsåtkomst. Mer information finns i [Principrekommendationer för att skydda Teams-chattar, grupper och filer](../security/office-365-security/teams-access-policies.md).
 
 Vi rekommenderar även att du aktiverar grundläggande Defender för Office 365-funktioner för att skydda mot skadlig programvara i dokument, bilagor och länkar. Vi rekommenderar att du aktiverar vart och ett av alternativen i tabellen nedan.
 
 |Alternativ|Information |
 |:------|:-----------|
-|Säkra bilagor för SPO, OneDrive och Teams|[Säkra bifogade filer](../security/defender-365-security/safe-attachments.md)<br>[Defender för Office 365 för SharePoint, OneDrive och Microsoft Teams](../security/defender-365-security/mdo-for-spo-odb-and-teams.md)|
-|Säkra dokument|[Säkra dokument i Microsoft Defender för Office 365](../security/defender-365-security/safe-docs.md)|
-|Säkra länkar för Teams|[Office 365 säkra länkar i Teams](../security/defender-365-security/safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[Säkra länkar](../security/defender-365-security/safe-links.md)|
+|Säkra bilagor för SPO, OneDrive och Teams|[Säkra bifogade filer](../security/office-365-security/safe-attachments.md)<br>[Defender för Office 365 för SharePoint, OneDrive och Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md)|
+|Säkra dokument|[Säkra dokument i Microsoft Defender för Office 365](../security/office-365-security/safe-docs.md)|
+|Säkra länkar för Teams|[Office 365 säkra länkar i Teams](../security/office-365-security/safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[Säkra länkar](../security/office-365-security/safe-links.md)|
 
 ## <a name="teams-guest-sharing"></a>Gästdelning i Teams
 

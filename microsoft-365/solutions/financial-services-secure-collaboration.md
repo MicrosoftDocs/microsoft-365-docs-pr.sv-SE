@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: Institutioner för finansiella tjänster kan hålla ekonomiska säkerhets efterlevnad och effektivt samarbeta med Microsoft 365 och Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: f0d5697e5582c8e165e35920cf010648ea942274
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f7e32502994f89451d8016ed5664ebe3591dcc8d
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052524"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200347"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Viktig information om efterlevnad och säkerhet för amerikanska banker och stora marknader
 
@@ -196,7 +196,7 @@ Microsoft släppte Microsoft T365 Defender-lösningen, som är utformad för att
 ### <a name="the-intelligent-security-graph"></a>[The Intelligent Security Graph](https://www.microsoft.com/security/business/intelligence) 
 Säkerhetstjänsterna från Microsoft 365 drivs av Intelligent Security Graph. För att bekämpa cyberhot använder Intelligent Security Graph avancerad analys för att länka till hotinformation och säkerhetssignaler från Microsoft och dess partners. Microsoft driver globala tjänster i massiv skala och samlar flera biljoner säkerhetssignaler som driver skyddslager över stacken. Maskininlärningsmodeller utvärderar denna information, och signal- och hotinsikter delas i stor utsträckning över våra produkter och tjänster. Det gör att vi kan identifiera och reagera på hot snabbt och ge kunderna information om hur de åtgärdar dem. Våra maskininlärningsmodeller utbildas kontinuerligt och uppdateras med nya insikter, vilket hjälper oss att bygga säkrare produkter och tillhandahålla mer proaktiv säkerhet.
 
-[Microsoft Defender för Office 365](../security/defender-365-security/defender-for-office-365.md?view=o365-worldwide) tillhandahåller en integrerad Microsoft 365-tjänst som skyddar organisationer från illasinnade länkar och skadlig kod som levereras via e-post och Office-dokument. En av de vanligaste attackvektorerna som påverkar användare idag är nätfiskeattacker via e-post. Dessa attacker kan riktas till vissa användare och kan vara väldigt övertygande, med viss uppringning som uppmanar användaren att klicka på en illasinnad länk eller öppna en bifogad fil som innehåller skadlig kod. När en dator har infekterats kan angriparen antingen stjäla användarens inloggningsuppgifter och flytta i sidled över organisationen eller filtrera e-postmeddelanden och data för att leta efter känslig information. Defender för Office 365 har stöd för säkra bifogade filer och säkra länkar genom att utvärdera dokument och länkar när du klickar och då för att få tillgång till potentiellt skadliga avsikter och blockera åtkomst. Bifogade filer i e-postmeddelanden öppnas i ett skyddat läge innan de skickas till en användares postlåda. Den utvärderar även länkar i Office-dokument för illasinnade URL:er. Defender för Office 365 skyddar också länkar och filer i SharePoint Online, OneDrive för företag och Teams. Om en skadlig fil identifieras låser Defender för Office 365 automatiskt filen för att minska eventuell skada.
+[Microsoft Defender för Office 365](../security/office-365-security/defender-for-office-365.md?view=o365-worldwide) tillhandahåller en integrerad Microsoft 365-tjänst som skyddar organisationer från illasinnade länkar och skadlig kod som levereras via e-post och Office-dokument. En av de vanligaste attackvektorerna som påverkar användare idag är nätfiskeattacker via e-post. Dessa attacker kan riktas till vissa användare och kan vara väldigt övertygande, med viss uppringning som uppmanar användaren att klicka på en illasinnad länk eller öppna en bifogad fil som innehåller skadlig kod. När en dator har infekterats kan angriparen antingen stjäla användarens inloggningsuppgifter och flytta i sidled över organisationen eller filtrera e-postmeddelanden och data för att leta efter känslig information. Defender för Office 365 har stöd för säkra bifogade filer och säkra länkar genom att utvärdera dokument och länkar när du klickar och då för att få tillgång till potentiellt skadliga avsikter och blockera åtkomst. Bifogade filer i e-postmeddelanden öppnas i ett skyddat läge innan de skickas till en användares postlåda. Den utvärderar även länkar i Office-dokument för illasinnade URL:er. Defender för Office 365 skyddar också länkar och filer i SharePoint Online, OneDrive för företag och Teams. Om en skadlig fil identifieras låser Defender för Office 365 automatiskt filen för att minska eventuell skada.
 
 [Microsoft Defender för Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) är en enhetlig säkerhetsplattform för slutpunkter för förebyggande skydd, identifiering efter överträdelse och automatiserad undersökning och svar. Defender för Endpoint tillhandahåller inbyggda funktioner för upptäckt och skydd av känsliga data om företagets slutpunkter.
 
