@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Visa hälsostatus för Microsoft 365-tjänster innan du ringer supporten för att se om det finns ett aktivt tjänsteavbrott.
-ms.openlocfilehash: 3802ca01902d5b0d457d2a3d75b784d38f71bd42
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 30b677a80e5a08d75534a91aa04d735443660f18
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924690"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215486"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Kontrollera tjänstens hälsa för Microsoft 365
 
@@ -47,7 +47,7 @@ Om du inte kan logga in i administrationscentret kan du använda [tjänststatuss
 1. Gå till administrationscentret för Microsoft 365 på [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) och logga in med ett administratörskonto.
 
     > [!NOTE]
-    > Personer som har tilldelats rollen som global administratör eller tjänstadministratör kan visa tjänstens hälsa. För att tillåta Exchange-, SharePoint- och Skype för företag-administratörer att visa tjänstens hälsa, måste de också tilldelas tjänstadministratörsrollen. Mer information om roller som kan visa tjänstens hälsa finns i [Om administratörsroller.](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#roles-available-in-the-microsoft-365-admin-center)
+    > Personer som har tilldelats rollen som global administratör eller tjänstadministratör kan visa tjänstens hälsa. För att tillåta Exchange-, SharePoint- och Skype för företag-administratörer att visa tjänstens hälsa, måste de också tilldelas tjänstadministratörsrollen. Mer information om roller som kan visa tjänstens hälsa finns i [Om administratörsroller.](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles)
   
 2. Om du inte använder det nya  administrationscentret går  du till startsidan och väljer växlingsknappen Prova det nya administrationscentret i det övre högra hörnet.
 
@@ -153,4 +153,5 @@ Mer information om vår utfästelse om drifttid finns [i Transparent drift från
 ## <a name="related-topics"></a>Relaterade ämnen
 
 [Aktivitetsrapporter i administrationscentret för Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
- [Inställningar för Meddelandecenter](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences11)
+ [Inställningar för Meddelandecenter](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences)<br/>
+[Så här kontrollerar du utgivningshälsan för Windows i administrationscentret](https://docs.microsoft.com/windows/deployment/update/check-release-health)

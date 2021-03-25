@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 423840ae62d0531da76044238bbeef05078a82c8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cc526371fdf12314f762c885ba1775fcf3f00d00
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907994"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215558"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Produktivitetsillustrationer för Microsoft 365
 
@@ -33,7 +33,7 @@ Den logiska arkitekturen för produktivitetstjänster i Microsoft 365, med Micro
 
 
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>Grupper i Microsoft 365 för IT-arkitekter
-Det IT-arkitekter behöver veta om grupper i Microsoft 365
+Den här bilden innehåller information för IT-arkitekter om Microsoft 365-grupper. Mer information om hur du konfigurerar och administrerar Microsoft 365-grupper och -grupper för samarbete i din organisation finns i Konfigurera säkert samarbete med [Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) och Vad är styrning [av samarbete?](/microsoft-365/solutions/collaboration-governance-overview).
 
 | Objekt | Beskrivning |
 |:-----|:-----|
@@ -52,7 +52,7 @@ I den här uppsättningen illustrationer används en av de mest reglerade bransc
 
 
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>Säkerhet och informationsskydd för organisationer i flera regioner
-Säkerhet och informationsskydd för organisationer i flera regioner med en enda Microsoft 365-klientorganisation
+Säkerhets- och informationsskydd för organisationer med flera regioner med en enda Microsoft 365-klientorganisation
 
 | Objekt | Beskrivning |
 |:-----|:-----|
