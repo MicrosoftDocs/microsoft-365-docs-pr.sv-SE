@@ -14,12 +14,12 @@ ms.author: ellevin
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a35c18d805ef3645659f49b8340cbb4cabab2f8d
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 6d07e2a21bb01794990160cf02837fc524008098
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165075"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218766"
 ---
 # <a name="enable-controlled-folder-access"></a>Aktivera reglerad mappåtkomst
 
@@ -141,4 +141,4 @@ Används `Disabled` för att stänga av funktionen.
 
 * [Skydda viktiga mappar med kontrollerad mappåtkomst](controlled-folders.md)
 * [Anpassa reglerad mappåtkomst](customize-controlled-folders.md)
-* [Utvärdera Microsoft Defender för slutpunkt](evaluate-atp.md)
+* [Utvärdera Microsoft Defender för slutpunkt](evaluate-mde.md)
