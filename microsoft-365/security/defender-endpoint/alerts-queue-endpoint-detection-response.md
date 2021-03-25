@@ -1,0 +1,51 @@
+---
+title: Kön Aviseringar i Microsoft Defender Säkerhetscenter
+ms.reviewer: ''
+description: Visa och hantera aviseringarna i Microsoft Defender Säkerhetscenter
+keywords: ''
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: macapara
+author: mjcaparas
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 09/03/2018
+ms.technology: mde
+ms.openlocfilehash: d40fc887f26dfe62e05f7ee6ac7bbbb8ac45a402
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51075441"
+---
+# <a name="alerts-queue-in-microsoft-defender-security-center"></a>Kön Aviseringar i Microsoft Defender Säkerhetscenter
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**Gäller för:**
+- [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+> Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+Lär dig hur du kan visa och hantera kön så att du effektivt kan undersöka hot som visas för enheter, filer eller användarkonton.
+
+## <a name="in-this-section"></a>I det här avsnittet
+Ämne | Beskrivning 
+:---|:---
+[Visa och ordna kön Aviseringar](alerts-queue.md) | Visar en lista med aviseringar som har flaggats i nätverket.
+[Hantera aviseringar](manage-alerts.md) | Lär dig mer om hur du kan hantera aviseringar, till exempel ändra status, tilldela den till en medlem i säkerhetsåtgärder och se historiken för en avisering.
+[Undersöka aviseringar](investigate-alerts.md)| Undersök aviseringar som påverkar nätverket, förstå vad de betyder och hur du löser dem.
+[Undersöka filer](investigate-files.md)| Undersöka information om en fil som är kopplad till en viss avisering, ett visst beteende eller en viss händelse. 
+[Undersöka enheter](investigate-machines.md)| Undersök informationen om en enhet som är kopplad till en viss avisering, ett visst beteende eller en viss händelse. 
+[Undersöka en IP-adress](investigate-ip.md) | Undersök möjlig kommunikation mellan enheter i nätverket och IP-adresser (External Internet Protocol).
+[Undersöka en domän](investigate-domain.md) | Undersök en domän för att se om enheter och servrar i nätverket har kommunicerat med en känd skadlig domän. 
+[Undersöka ett användarkonto](investigate-user.md) | Identifiera användarkonton med de mest aktiva aviseringarna och undersök möjliga komprometterade autentiseringsuppgifter.  
+
+
