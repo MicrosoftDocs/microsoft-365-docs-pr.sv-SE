@@ -19,12 +19,12 @@ ms.custom:
 description: Administratörer kan lära sig hur de visar och hanterar meddelanden i karantän för alla användare i Exchange Online Protection (EOP). Administratörer i organisationer med Microsoft Defender för Office 365 kan också hantera filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8c606daccfd037cad4d894ab7f33ff02fcf172b5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3dee441a3442454c5f2978422d18a2084f8377f3
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207081"
+ms.locfileid: "51215546"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Hantera meddelanden och filer i karantän som administratör i EOP
 
@@ -197,6 +197,8 @@ När du har valt ett meddelande kan du välja mellan flera alternativ för vad d
 
 - **Ladda ned meddelande**: Välj **Jag är medveten om riskerna om jag laddar ned meddelandet** i den utfällbara rutan som visas om du vill spara en lokal kopia av meddelandet i .eml-format.
 
+- **Blockera avsändare:** Det här blockerar avsändaren från att skicka e-postmeddelanden till administratörsmottagarens postlåda.
+
 - **Skicka meddelande:** I det utfällfönster som visas väljer du följande alternativ:
 
   - **Objekttyp:** **E-post** (standard), **URL** eller **Bifogad fil**.
@@ -307,6 +309,6 @@ De cmdlets du använder för att visa och hantera meddelanden och filer i karant
 
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
 
-- [Preview-QuarantineMessage:](/powershell/module/exchange/preview-quarantinemessage)Observera att den här cmdleten endast används för meddelanden, inte skadliga filer från säkra bifogade filer för SharePoint, OneDrive och Microsoft Teams.
+- [Preview-QuarantineMessage:](/powershell/module/exchange/preview-quarantinemessage)Observera att den här cmdleten endast används för meddelanden, inte för bifogade filer i karantän för SharePoint, OneDrive och Microsoft Teams.
 
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)

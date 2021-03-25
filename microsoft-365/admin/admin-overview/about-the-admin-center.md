@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Du kan använda Administrationscenter för att konfigurera din organisation i molnet, hantera användare och prenumerationer. Kom igång genom att logga in på kontot som har administratörsbehörighet.
-ms.openlocfilehash: dca9e5dd4cc8a35721014fa06c0bb844b608778c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7d326629de4859819784af015292f99b044658d0
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903554"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215498"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Om Administrationscenter för Microsoft 365
 
@@ -84,7 +84,7 @@ Här är funktionerna och inställningarna du hittar i navigeringen till vänste
 |**Inställningar** <br/> |Hantera globala inställningar för program som e-post, webbplatser och Office-paketet. Ändra lösenordsprincip och utgångsdatum. Lägg till och uppdatera domännamn som contoso.com. Ändra organisationens profil och inställningar. Bestäm om partners kan komma åt administrationscenter.  <br/> |
 |**Installation** <br/> |Hantera befintliga domäner, aktivera och hantera multifaktorautentisering, hantera administratörsåtkomst, migrera användarpostlådor till Office 365, hantera funktionsuppdateringar och hjälpa användare att installera Office-programmen. |
 |**Rapporter** <br/> |Få en överblick av hur din organisation använder Microsoft 365, med detaljerade rapporter om e-postanvändning, Office-aktiveringar med mera. Lär dig använda de nya [aktivitetsrapporterna](../activity-reports/activity-reports.md).  <br/> |
-|**Hälsa** <br/> |Få en överblick av tjänstehälsan för tjänsterna. Du kan även få mer detaljerad information och ta del av historik för tjänstehälsa. Kolla in [Kontrollera tjänstens hälsa](../../enterprise/view-service-health.md).  <br/> Använd Meddelandecenter för att hålla reda på kommande ändringar i funktioner och tjänster. Vi publicerar meddelanden där med information som hjälper dig att planera för ändringen och förstå hur den kan påverka användarna. Mer information finns i [Meddelandecenter i Office 365](../manage/message-center.md).  <br/> |
+|**Hälsa** <br/> |Visa hälsa i korthet. Du kan också få mer information och ta del av historiken för hälsa. Mer information [finns i Kontrollera tjänstens](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health) hälsa [och Kontrollera Windows-tjänstens](https://docs.microsoft.com/windows/deployment/update/check-release-health) hälsa.  <br/><br/>Använd Meddelandecenter för att hålla reda på kommande ändringar i funktioner och tjänster. Vi publicerar meddelanden där med information som hjälper dig att planera för ändringen och förstå hur den kan påverka användarna. Mer information finns i [Meddelandecenter.](../manage/message-center.md) <br/> |
 |**Administratörscentra** <br/> |Öppna separata administratörscentra för Exchange, Skype för företag, SharePoint och Azure AD. Varje administratörscenter innehåller alla tillgängliga inställningar för den tjänsten.  <br/> I till exempel administratörscentret för Exchange kan du konfigurera och hantera e-post, kalendrar, distributionsgrupper med mera. I administratörscentret för SharePoint kan du skapa och hantera webbplatssamlingar, webbplatsinställningar och OneDrive för företag. I administratörscentret för Skype för företag kan du konfigurera aviseringar för snabbmeddelanden, konferens med uppringning och onlinenärvaro.  <br/> Läs mer om [administratörscentret för Exchange](/exchange/exchange-admin-center) och [administratörscentret för SharePoint](/sharepoint/sharepoint-online).<br/> **Obs!** Vilka administrationscenter som är tillgängliga varierar beroende på abonnemang och region.           |
    
 ## <a name="common-tasks-in-the-admin-center"></a>Vanliga uppgifter i administrationscentret

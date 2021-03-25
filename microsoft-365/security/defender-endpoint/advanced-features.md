@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ed6f6b42570a908a1f4a83d46ef5b2de0c558692
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 059cfbf37c79ff9f99b5e46c8d4329c203aa9665
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199747"
+ms.locfileid: "51215544"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurera avancerade funktioner i Defender för Slutpunkt
 
@@ -206,7 +206,7 @@ Du har tillgång till kommande funktioner som du kan ge feedback på för att f�
 
 Vidarebefordrar säkerhetsvarningar för slutpunkter och deras status till Microsofts efterlevnadscenter, så att du kan förbättra principer för insiderriskhantering med varningar och åtgärda interna risker innan de kan orsaka skada. Vidarebefordrade data bearbetas och lagras på samma plats som dina Office 365-data.
 
-När du har [konfigurerat indikatorerna för brott](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-settings.md#indicators) mot säkerhetsprinciper i inställningarna för Insider-riskhantering delas Defender för Slutpunktsaviseringar med Insider-riskhantering för tillämpliga användare.
+När du har [konfigurerat indikatorerna för brott](/microsoft-365/compliance/insider-risk-management-settings#indicators) mot säkerhetsprinciper i inställningarna för Insider-riskhantering delas Defender för Slutpunktsaviseringar med Insider-riskhantering för tillämpliga användare.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 

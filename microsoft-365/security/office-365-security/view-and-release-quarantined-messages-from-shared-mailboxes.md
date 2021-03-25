@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: Användare kan lära sig hur de visar och agerar på meddelanden i karantän som har skickats till delade postlådor som de har behörighet till.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9490a9d5b2b4191d6c039be2758e2e0ba0c981cd
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6e3bf4c84e7a762f7f54f42ff61f0fbdb9dc1edd
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207264"
+ms.locfileid: "51215510"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Visa och släppa meddelanden i karantän från delade postlådor
 
@@ -50,6 +50,8 @@ Oavsett metod kan användarna undvika förvirring genom att lägga till kolumnen
 - Den första användaren som agerar på det i karantän-meddelandet avgör meddelandets första dag för alla som använder den delade postlådan. Om till exempel en delad postlåda används av 10 användare och en användare tar bort karantänmeddelandet, tas meddelandet bort för alla tio användare. Om en användare väljer att släppa meddelandet släpps det till den delade postlådan och är tillgängligt för alla andra användare av den delade postlådan.
 
 - Knappen Spärra **avsändare är för** närvarande inte tillgänglig i den utfällna informationen för meddelanden i karantän som har skickats till den delade postlådan. 
+
+- Om karantänåtgärder för delade postlådor rekommenderar vi att du inte har fler än två nivåer med kapslade grupper om du använder kapslade säkerhetsgrupper för att bevilja åtkomst till en delad postlåda. Till exempel är Grupp A medlem i Grupp B, som är medlem i Grupp C. Om du vill tilldela behörigheter till en delad postlåda ska du inte lägga till användaren i Grupp A och sedan tilldela grupp C till den delade postlådan.  
 
 - För att hantera meddelanden i karantän för den delade postlådan i [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)måste slutanvändaren använda cmdlet:en [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) med en delad postlådas e-postadress för parameterns _RecipientAddress-värde_ för att identifiera meddelandena. Till exempel:
 
