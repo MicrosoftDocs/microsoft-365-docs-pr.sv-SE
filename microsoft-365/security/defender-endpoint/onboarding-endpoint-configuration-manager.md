@@ -18,19 +18,19 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6e6f3cfbf471e7b99e2ce5215491e32c955e3833
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 31c946ccad84aca3b2fc86c95655cea9e66e182f
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51069138"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186407"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Introduktion med Konfigurationshanteraren för Microsoft Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
-- [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -388,5 +388,5 @@ När du har slutfört den här uppgiften har du nu konfigurerat nätverksskydd i
 
 Nu har du konfigurerat kontrollerad mappåtkomst i granskningsläge.
 
-## <a name="related-topic"></a>Relaterade ämnen
+## <a name="related-topic"></a>Relaterat ämne
 - [Introduktion med Microsoft Endpoint Manager](onboarding-endpoint-manager.md)

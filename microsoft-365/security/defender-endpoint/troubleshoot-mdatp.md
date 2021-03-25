@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: bd211a56ee9ed6aa871c8d55149247a4755bc863
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 112f682836da37ddfb51c103282518ff74563727
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51072905"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186023"
 ---
 # <a name="troubleshoot-service-issues"></a>Felsöka tjänstproblem
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
-- [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
@@ -41,9 +41,9 @@ Om det uppstår ett serverfel när du försöker komma åt tjänsten måste du �
 Konfigurera webbläsaren så att den tillåter cookies.
 
 ## <a name="elements-or-data-missing-on-the-portal"></a>Element eller data saknas på portalen
-Om vissa element eller data i användargränssnittet saknas i Microsoft Defender Säkerhetscenter kan det vara så att proxyinställningarna blockerar den.
+Om vissa element eller data saknas i Microsoft Defender Säkerhetscenter kan det vara så att proxyinställningarna blockerar den.
 
-Kontrollera att detta `*.securitycenter.windows.com` finns med i listan över tillåtna proxyservrar.
+Se till att `*.securitycenter.windows.com` finns med i listan över tillåtna proxyservrar.
 
 
 > [!NOTE]
@@ -51,7 +51,7 @@ Kontrollera att detta `*.securitycenter.windows.com` finns med i listan över ti
 
 ## <a name="microsoft-defender-for-endpoint-service-shows-event-or-error-logs-in-the-event-viewer"></a>Microsoft Defender för slutpunktstjänsten visar händelse- eller felloggar i loggboken
 
-I avsnittet Granska [händelser och fel med](event-error-codes.md) Hjälp av Loggboken finns en lista över händelse-IDt som rapporterats av Microsoft Defender för slutpunktstjänsten. Avsnittet innehåller även felsökningssteg för händelsefel.
+Se [Granska händelser och fel med hjälp av Loggboken](event-error-codes.md) för en lista över händelse-IDt som rapporterats av Microsoft Defender för slutpunktstjänsten. Artikeln innehåller även felsökningssteg för händelsefel.
 
 ## <a name="microsoft-defender-for-endpoint-service-fails-to-start-after-a-reboot-and-shows-error-577"></a>Microsoft Defender för slutpunktstjänsten startar inte efter en omstart och visar felet 577
 

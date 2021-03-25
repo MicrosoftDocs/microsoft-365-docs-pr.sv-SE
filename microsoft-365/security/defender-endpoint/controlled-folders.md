@@ -16,12 +16,12 @@ ms.reviewer: v-maave
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: ae50d53fbc9bf01d4cd16b939461eecc9ec1a568
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: cd662dc130adc37b3bf8bd06839242ccc9a49f8e
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165183"
+ms.locfileid: "51185975"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Skydda viktiga mappar med kontrollerad mappåtkomst
 
@@ -40,7 +40,7 @@ Kontrollerad mappåtkomst skyddar dina värdefulla data från skadliga appar och
 > [!NOTE]
 > Skriptmotorer är inte betrodda och du kan inte ge dem åtkomst till skyddade skyddade mappar.  Till exempel är PowerShell inte betrott genom reglerad mappåtkomst, även om du tillåter det med [certifikat- och filindikatorer.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-certificates) 
 
-Reglerad mappåtkomst fungerar bäst med [Microsoft Defender](microsoft-defender-advanced-threat-protection.md)för Endpoint , som ger dig detaljerad rapportering om kontrollerad mappåtkomsthändelser och -block som en del av de vanliga scenarierna för [aviseringsundersökning.](investigate-alerts.md)
+Reglerad mappåtkomst fungerar bäst med [Microsoft Defender](microsoft-defender-endpoint.md)för Endpoint , som ger dig detaljerad rapportering om kontrollerad mappåtkomsthändelser och -block som en del av de vanliga scenarierna för [aviseringsundersökning.](investigate-alerts.md)
 
 > [!TIP]
 > Styrda mappåtkomstblock genererar inte aviseringar i [kön Aviseringar.](alerts-queue.md) Du kan dock visa information om kontrollerade mappåtkomstblock i [](advanced-hunting-overview.md)tidslinjevyn på [enheten,](investigate-machines.md)medan du använder avancerad sökning eller med [anpassade identifieringsregler.](custom-detection-rules.md)

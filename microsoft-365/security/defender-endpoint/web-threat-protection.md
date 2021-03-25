@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3376308988213b84bc7badb96ebacdf706d1ca5f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7754fa586b24fdedaa9691b45f5da4654c882a5b
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071673"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185987"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Skydda din organisation mot webbhot
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
-- [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
@@ -38,7 +38,7 @@ Skydd mot webbhot är en del [av webbskyddet](web-protection-overview.md) i Defe
 >[!Note]
 >Det kan ta upp till en timme innan enheter får nya kundindikatorer.
 
-## <a name="prerequisites"></a>Förutsättningar
+## <a name="prerequisites"></a>Krav
 Webbskydd använder nätverksskydd för att tillhandahålla surfsäkerhet i Microsoft Edge och webbläsare från tredje part.
 
 Så här aktiverar du nätverksskydd på dina enheter:

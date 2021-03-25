@@ -19,12 +19,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: 6caa1cfe08a20aa824d85966c104a25988b8be53
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: af9e9315088a8dd5da9740b33135551d28664ed7
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165363"
+ms.locfileid: "51186119"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Besök Åtgärdscenter för att se åtgärder
 
@@ -46,14 +46,14 @@ I följande tabell jämförs det nya, enhetliga Åtgärdscenter med föregående
 
 |Det nya, enhetliga åtgärdscentret  |Föregående åtgärdscenter  |
 |---------|---------|
-|Visar väntande och slutförda åtgärder för enheter och e-post på en plats <br/>([Microsoft Defender för Endpoint](microsoft-defender-advanced-threat-protection.md) plus Microsoft Defender för Office [365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp))|Visar väntande och slutförda åtgärder för enheter <br/> ([Endast Microsoft Defender för slutpunkt)](microsoft-defender-advanced-threat-protection.md)   |
+|Visar väntande och slutförda åtgärder för enheter och e-post på en plats <br/>([Microsoft Defender för Endpoint](microsoft-defender-endpoint.md) plus Microsoft Defender för Office [365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp))|Visar väntande och slutförda åtgärder för enheter <br/> ([Endast Microsoft Defender för slutpunkt)](microsoft-defender-endpoint.md)   |
 |Finns på:<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |Finns på:<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
 | I Säkerhetscenter för Microsoft 365 väljer du **Åtgärdscenter**. <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Navigera till Åtgärdscenter i Säkerhetscenter för Microsoft 365"::: | I Microsoft Defender Säkerhetscenter väljer du **Automatiserade undersökningar**  >  **Åtgärdscenter**. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Navigera till Åtgärdscenter från Microsoft Defender Säkerhetscenter":::  |
 
 I det enhetliga åtgärdscentret samlas åtgärdsåtgärder i Defender för Endpoint och Defender för Office 365. Den definierar ett gemensamt språk för alla åtgärder och ger en enhetlig undersökningsupplevelse. 
 
 Du kan använda det enhetliga åtgärdscentret om du har rätt behörigheter och en eller flera av följande prenumerationer:
-- [Defender för Endpoint](microsoft-defender-advanced-threat-protection.md)
+- [Defender för Endpoint](microsoft-defender-endpoint.md)
 - [Defender förr Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp)
 - [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 
 

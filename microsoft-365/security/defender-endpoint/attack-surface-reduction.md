@@ -15,12 +15,12 @@ ms.reviewer: sugamar, jcedola
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: 2bd8442dd8e119a57c490773b6e01a7c5f7adcac
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 62f1f5f2d47482f642f00c870b3e0f3112f5f639
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51075418"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185773"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Använd minskningsregler för attackytan för att förhindra skadlig smitta
 
@@ -112,7 +112,7 @@ Du kan ange minskningsregler för attackytan för enheter som kör någon av fö
 - Windows Server, [version 1803 (Halvårskanal)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) eller senare
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
-Även om minskningsregler för attackytor inte kräver en [Windows E5-licens](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)får du avancerade hanteringsfunktioner om du har Windows E5. Dessa funktioner är endast tillgängliga i Windows E5: övervakning, analys och arbetsflöden som är tillgängliga i Defender för [slutpunkt,](microsoft-defender-advanced-threat-protection.md)samt rapporterings- och konfigurationsfunktioner i [Säkerhetscenter för Microsoft 365.](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center) Dessa avancerade funktioner är inte tillgängliga med en Windows Professional- eller Windows E3-licens. Men om du har de licenserna kan du använda Loggboken och Microsoft Defender Antivirus-loggarna för att granska dina minskningsregelhändelser för attackytan.
+Även om minskningsregler för attackytor inte kräver en [Windows E5-licens](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)får du avancerade hanteringsfunktioner om du har Windows E5. Dessa funktioner är endast tillgängliga i Windows E5: övervakning, analys och arbetsflöden som är tillgängliga i Defender för [slutpunkt,](microsoft-defender-endpoint.md)samt rapporterings- och konfigurationsfunktioner i [Säkerhetscenter för Microsoft 365.](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center) Dessa avancerade funktioner är inte tillgängliga med en Windows Professional- eller Windows E3-licens. Men om du har de licenserna kan du använda Loggboken och Microsoft Defender Antivirus-loggarna för att granska dina minskningsregelhändelser för attackytan.
 
 ## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>Granska händelser för att minska attackytan i Microsoft Defender Säkerhetscenter
 

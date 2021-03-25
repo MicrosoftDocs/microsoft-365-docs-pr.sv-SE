@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6edb4ddf764788a11ea3b6f1863dd95e694f1849
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 9fd36f63450335247bf57c4cc1f98d6f0d32a9d5
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51075745"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185951"
 ---
 # <a name="manage-indicators"></a>Hantera indikatorer
 
@@ -30,7 +30,7 @@ ms.locfileid: "51075745"
 
 
 **Gäller för:**
-- [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -61,7 +61,7 @@ Ladda ned CSV-exemplet för att ta fram de kolumnattribut som stöds.
 
 I följande tabell visas de parametrar som stöds.
 
-Parameter | Type (Typ)    |   Beskrivning
+Parameter | Skriv    |   Beskrivning
 :---|:---|:---
 indicatorType | Uppräkning | Typ av indikator. Möjliga värden är: "FileSha1", "FileSha256", "IpAddress", "DomainName" och "Url". **Obligatoriskt**
 indicatorValue | Sträng | Identiteten för [indikatorenheten.](ti-indicator.md) **Obligatoriskt**
