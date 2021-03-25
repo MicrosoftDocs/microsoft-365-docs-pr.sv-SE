@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d0b7b600e0880bacda3588598387e5b1e8c82958
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 0902dce0af3c101cbaf7ff526beb71e9f46a1bf4
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068928"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187523"
 ---
 # <a name="deploy-supported-services"></a>Distribuera tjänster som stöds
 
@@ -88,7 +88,7 @@ När du har distribuerat de tjänster som stöds [aktiverar du Microsoft 365 Def
 
 - [Översikt över Microsoft 365 Defender](microsoft-365-defender.md)
 - [Aktivera Microsoft 365 Defender](m365d-enable.md)
-- [Översikt över Microsoft Defender för slutpunkt](../defender-endpoint/microsoft-defender-advanced-threat-protection.md)
+- [Översikt över Microsoft Defender för slutpunkt](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Översikt över Microsoft Defender för Office 365](../defender-365-security/defender-for-office-365.md)
 - [Översikt över säkerhet i Microsoft Cloud App](/cloud-app-security/what-is-cloud-app-security)
 - [Översikt över Microsoft Defender för identitet](/azure-advanced-threat-protection/what-is-atp)

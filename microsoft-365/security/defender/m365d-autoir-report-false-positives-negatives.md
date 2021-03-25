@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 8658b08f0d3948d6d23486ec885486e8bbfdf273
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 851fd05f0fec4b8d113e515783092eed0114db0f
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068911"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199119"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Hantera falska positiva/negativa i automatiska undersöknings- och svarsfunktioner
 
@@ -48,7 +48,7 @@ I följande avsnitt beskrivs hur du utför de här uppgifterna.
 
 |Objekt som har missats eller identifierats felaktigt |Tjänst  |Vad kan jag göra?  |
 |---------|---------|---------|
-|- E-postmeddelande <br/>- E-postbilaga <br/>- URL i ett e-postmeddelande<br/>- URL i en Office-fil      |[Microsoft Defender för Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)        |[Skicka misstänkt skräppost, nättr ut, URL:er och filer till Microsoft för genomsökning](../defender-365-security/admin-submission.md)         |
+|- E-postmeddelande <br/>- E-postbilaga <br/>- URL i ett e-postmeddelande<br/>- URL i en Office-fil      |[Microsoft Defender för Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[Skicka misstänkt skräppost, nättr ut, URL:er och filer till Microsoft för genomsökning](../office-365-security/admin-submission.md)         |
 |Fil eller app på en enhet    |[Microsoft Defender för Endpoint](/windows/security/threat-protection)         |[Skicka en fil till Microsoft för analys av skadlig programvara](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Justera en avisering för att förhindra att falska positiva resultat upprepas

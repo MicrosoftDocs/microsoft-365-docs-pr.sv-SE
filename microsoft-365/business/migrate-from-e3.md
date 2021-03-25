@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Lär dig hur du flyttar över ditt företag till Microsoft 365 Business Premium från Office 365 E3.
-ms.openlocfilehash: 3f9fd70b2d31b32027981e638de249d92e98ea08
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: cb70260201686cae02428c715ac98ffe2f88787f
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164542"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198106"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrera från Office 365 E3 till Microsoft 365 Business Premium
 
@@ -122,7 +122,7 @@ Microsoft 365 Business Premium har en lagringsgräns på 50 GB eftersom Exchange
 
 ### <a name="threat-protection"></a>Skydd mot hot
 
-När du har migrerat till Microsoft 365 Business Premium har du Defender för Office 365. Se [Microsoft Defender för Office 365 för](../security/defender-365-security/defender-for-office-365.md) en översikt. Konfigurera genom att gå [till Konfigurera säkra](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)länkar , konfigurera säkra bifogade filer och konfigurera Skydd mot nätfiske i Defender för Office [365.](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c) [](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)
+När du har migrerat till Microsoft 365 Business Premium har du Defender för Office 365. Se [Microsoft Defender för Office 365 för](../security/office-365-security/defender-for-office-365.md) en översikt. Konfigurera genom att gå [till Konfigurera säkra](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)länkar , konfigurera säkra bifogade filer och konfigurera Skydd mot nätfiske i Defender för Office [365.](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c) [](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)
 
 ### <a name="sensitivity-labels"></a>Känslighetsetiketter
 

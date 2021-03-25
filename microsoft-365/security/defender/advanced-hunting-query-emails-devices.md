@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 60de6ed5a53a5d778f041b1c609019d110d6b64b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e494bfe57c31c1d5044f72a8adb3e2548d531604
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076345"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199155"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Jaga efter hot på olika enheter, e-postmeddelanden, appar och identiteter
 
@@ -104,7 +104,7 @@ DeviceInfo
 ## <a name="hunting-scenarios"></a>Scenarier för scenarier
 
 ### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>Lista inloggningsaktiviteter för användare som har fått e-postmeddelanden som inte har zapped
-[ZAP (Zero-hour auto purge) adresserar skadliga e-postmeddelanden](../defender-365-security/zero-hour-auto-purge.md) efter att de har tagits emot. Om ZAP misslyckas kan skadlig kod så småningom köras på enheten och konton kan bli hackade. Den här frågan kontrollerar inloggningsaktivitet som görs av mottagarna av e-postmeddelanden som inte har adresserts av ZAP.
+[ZAP (Zero-hour auto purge) adresserar skadliga e-postmeddelanden](../office-365-security/zero-hour-auto-purge.md) efter att de har tagits emot. Om ZAP misslyckas kan skadlig kod så småningom köras på enheten och konton kan bli hackade. Den här frågan kontrollerar inloggningsaktivitet som görs av mottagarna av e-postmeddelanden som inte har adresserts av ZAP.
 
 ```kusto
 EmailPostDeliveryEvents 

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Få hjälp med att öka skyddsnivån i Microsoft 365
-ms.openlocfilehash: 0e8b63fec3b764f10039e9f738fd047ff2c513a4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 61ac32d3debe391794e85df8c129e5df72887e9e
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052212"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198381"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-subscription"></a>Öka skydd mot hot för Microsoft 365-prenumeration
 
@@ -58,7 +58,7 @@ Office 365- eller Microsoft 365-miljön innehåller skydd mot skadlig programvar
 
 6. Klicka **på Spara.**
 
-Mer information finns i Skydd [mot skadlig programvara i EOP.](../security/defender-365-security/anti-malware-protection.md)
+Mer information finns i Skydd [mot skadlig programvara i EOP.](../security/office-365-security/anti-malware-protection.md)
 
 ## <a name="protect-against-ransomware"></a>Skydda mot utpressningstrojaner
 
@@ -138,7 +138,7 @@ Om du vill skapa en policy mot nätfiske [](https://support.office.com/article/8
 
 4. På sidan **mot nätfiske** väljer du **+ Skapa.** En guide startar stegen för att definiera din policy mot nätfiske.
 
-5. Ange namn, beskrivning och inställningar för principen enligt rekommenderade inställningar i diagrammet nedan. Mer information finns i Läs [mer om nätfiskeprincip i Microsoft Defender för Office 365-alternativ.](../security/defender-365-security/set-up-anti-phishing-policies.md)
+5. Ange namn, beskrivning och inställningar för principen enligt rekommenderade inställningar i diagrammet nedan. Mer information finns i Läs [mer om nätfiskeprincip i Microsoft Defender för Office 365-alternativ.](../security/office-365-security/set-up-anti-phishing-policies.md)
 
 6. När du har granskat inställningarna väljer du Skapa **den här principen** eller **Spara** efter behov.
 
@@ -153,7 +153,7 @@ Om du vill skapa en policy mot nätfiske [](https://support.office.com/article/8
 |Lägga till betrodda avsändare och domäner|Här kan du lägga till din egen domän eller andra betrodda domäner.|
 |Tillämpas på|Välj **Mottagarens domän är**. Under **Valfri av dessa** väljer du **Välj**. Välj **+ Lägg till.** Markera kryssrutan bredvid namnet på domänen, till exempel *contoso. <span> <span> com*, i listan och välj sedan Lägg **till**. Välj **Klar**.|
 
-Mer information finns i Konfigurera [principer för skydd mot nätfiske i Defender för Office 365.](../security/defender-365-security/set-up-anti-phishing-policies.md)
+Mer information finns i Konfigurera [principer för skydd mot nätfiske i Defender för Office 365.](../security/office-365-security/set-up-anti-phishing-policies.md)
 
 ## <a name="protect-against-malicious-attachments-files-and-links-with-defender-for-office-365"></a>Skydda mot skadliga bifogade filer, filer och länkar med Defender för Office 365
 
@@ -207,7 +207,7 @@ Om du vill skapa en princip för säkra bifogade filer [kan](https://support.off
 |Omdirigera bifogad fil vid identifiering|Aktivera omdirigering (markera den här rutan) <br/> Ange administratörskontot eller en postlådekonfiguration för karantän. <br/> Använd alternativet ovan om genomsökning efter bifogade filer på tider eller fel inträffar (markera den här rutan).|
 |Tillämpas på|Mottagarens domän är . . . väljer du din domän.|
 
-Mer information finns i Konfigurera [principer för skydd mot nätfiske i Defender för Office 365.](../security/defender-365-security/set-up-anti-phishing-policies.md)
+Mer information finns i Konfigurera [principer för skydd mot nätfiske i Defender för Office 365.](../security/office-365-security/set-up-anti-phishing-policies.md)
 
 ### <a name="set-up-safe-links-in-the-security--compliance-center"></a>Konfigurera säkra länkar i Säkerhets- & Säkerhets- och efterlevnadscenter
 
@@ -250,7 +250,7 @@ Så här skapar du en ny princip som är riktad till alla mottagare i din domän
 |Använda säkra bifogade filer för att söka igenom nedladdningsbart innehåll|Markera den här rutan.|
 |Tillämpas på|Mottagarens domän är . . . väljer du din domän.|
 
-Mer information finns i [Säkra länkar i Defender för Office 365.](../security/defender-365-security/safe-links.md)
+Mer information finns i [Säkra länkar i Defender för Office 365.](../security/office-365-security/safe-links.md)
 
 ## <a name="turn-on-the-unified-audit-log"></a>Aktivera den enhetliga granskningsloggen
 

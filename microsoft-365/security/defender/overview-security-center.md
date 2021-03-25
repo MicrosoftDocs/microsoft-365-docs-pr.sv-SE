@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 3b2e5d834caab9973006eda64e369a2a6aa17b5d
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 142bc305950f9322c90e0d207f255c14abbc6b8c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163321"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197939"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>Översikt över det enhetliga säkerhetscentret för Microsoft 365
 
@@ -36,15 +36,15 @@ ms.locfileid: "51163321"
 
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender för Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)
+- [Microsoft Defender för Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
-> Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera den i en labbmiljö](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) eller köra [pilotprojektet i produktion.](m365d-pilot.md?ocid=cx-evalpilot)
+> Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera det i en laboratoriemiljö](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) eller [köra ett pilotprojekt i produktionen](m365d-pilot.md?ocid=cx-evalpilot).
 
 Det förbättrade säkerhetscentret för **Microsoft 365** () kombinerar skydd, identifiering, undersökning och svar på e-post, samarbete, identitet och enhetshot i [https://security.microsoft.com](https://security.microsoft.com) en central portal.    
 
 Microsoft 365 säkerhetscenter samlar funktioner från befintliga Microsoft-säkerhetsportaler, som Microsoft Defender Säkerhetscenter och Office 365 säkerhets- & efterlevnadscenter. Säkerhetscenter betonar snabb åtkomst till information, enklare layouter och att sammanföra relaterad information för enklare användning. Detta center omfattar:
 
-- **[Microsoft Defender för Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)** Med Microsoft Defender för Office 365 kan organisationer skydda sitt företag med en uppsättning funktioner för skydd mot identifiering, undersökning och spårning för att skydda e-post och Office 365-resurser.
+- **[Microsoft Defender för Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** Med Microsoft Defender för Office 365 kan organisationer skydda sitt företag med en uppsättning funktioner för skydd mot identifiering, undersökning och spårning för att skydda e-post och Office 365-resurser.
 - **[Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** tillhandahåller förebyggande skydd, identifiering efter intrång, automatisk undersökning och svar för enheter i organisationen.
 - **[Microsoft 365 Defender](microsoft-365-defender.md)** är en del av Microsofts XDR-lösning *(Extended Detection and Response)* som utnyttjar Microsoft 365-säkerhetsportföljen för att automatiskt analysera hotdata över domäner och skapa en bild av en attack på en enskild instrumentpanel.
 
@@ -103,7 +103,7 @@ Vanliga kontroller och innehåll visas antingen på samma plats eller komprimera
 
 ![Behörighet & Roller med Slutpunkter-roller &, Roller och Enhetsgrupper.](../../media/converged-roles-5.png)
 
- Access Microsoft 365 Säkerhetscenter är konfigurerat med globala Azure Active Directory-roller eller med hjälp av anpassade roller. Information om Defender för slutpunkt finns [i Tilldela användaråtkomst till Microsoft Defender Säkerhetscenter.](/microsoft-365/security/defender-endpoint/assign-portal-access) Mer information om Defender för Office 365 finns i Behörigheter i Efterlevnadscenter för [Microsoft 365 och Säkerhetscenter för Microsoft 365.](../defender-365-security/permissions-microsoft-365-compliance-security.md)
+ Access Microsoft 365 Säkerhetscenter är konfigurerat med globala Azure Active Directory-roller eller med hjälp av anpassade roller. Information om Defender för slutpunkt finns [i Tilldela användaråtkomst till Microsoft Defender Säkerhetscenter.](/microsoft-365/security/defender-endpoint/assign-portal-access) Mer information om Defender för Office 365 finns i Behörigheter i Efterlevnadscenter för [Microsoft 365 och Säkerhetscenter för Microsoft 365.](../office-365-security/permissions-microsoft-365-compliance-security.md)
 
 - Läs mer om hur du [hanterar åtkomst till Microsoft 365 Defender](m365d-permissions.md)
 - Läs mer om hur du [skapar anpassade roller](custom-roles.md) i Säkerhetscenter för Microsoft 365
@@ -179,7 +179,7 @@ Utforska funktionerna i Säkerhetscenter för Microsoft 365:
 - [Jaga efter hot på olika enheter, e-postmeddelanden, appar och identiteter](./advanced-hunting-query-emails-devices.md)
 - [Anpassade regler för identifiering](./custom-detection-rules.md)
 - [E-post- och samarbetsaviseringar](../../compliance/alert-policies.md#default-alert-policies)
-- [Skapa en simulering av nätfiskeattacker](../defender-365-security/attack-simulation-training.md) [och skapa en nyttolast för utbildning av dina team](/microsoft-365/security/defender-365-security/attack-simulation-training-payloads)
+- [Skapa en simulering av nätfiskeattacker](../office-365-security/attack-simulation-training.md) [och skapa en nyttolast för utbildning av dina team](/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
  
 ### <a name="related-information"></a>Relaterad information
 - [Microsoft 365 Säkerhetscenter](overview-security-center.md)

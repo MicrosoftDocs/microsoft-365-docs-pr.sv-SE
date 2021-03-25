@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 31928deddc2a504cc0b6c91af287e4977791c920
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1fd128a9b734606039438db1f6d9fbc36e93a3b9
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51073906"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199023"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender för slutpunkt för myndighetskunder i USA
 
@@ -76,25 +76,25 @@ Följande os-versioner stöds:
 OS-version | GCC | GCC High | DoD (FÖRHANDSVISNING)
 :---|:---|:---|:---
 Windows 10 – version 20H2 – (med [KB4586853](https://support.microsoft.com/help/4586853)) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
-Windows 10 – version 2004 – (med [KB4586853](https://support.microsoft.com/help/4586853)) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
-Windows 10 – version 1909 – (med [KB4586819](https://support.microsoft.com/help/4586819)) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
-Windows 10 – version 1903 – (med [KB4586819](https://support.microsoft.com/help/4586819)) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
-Windows 10 – version 1809 – (med [KB4586839](https://support.microsoft.com/help/4586839)) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
-Windows 10 – version 1803 – (med [KB4598245](https://support.microsoft.com/help/4598245)) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
-Windows 10, version 1709 | ![Nej](/security/defender-endpoint/images/svg/check-no)<br>Obs! Stöds inte | ![Ja ](/security/defender-endpoint/images/svg/check-yes) med [KB4499147](https://support.microsoft.com/help/4499147)<br>Obs! [Inaktuell ,](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709)vänligen uppgradera | ![Nej](/security/defender-endpoint/images/svg/check-no)<br>Obs! Stöds inte
-Windows 10, version 1703 och tidigare | ![Nej](/security/defender-endpoint/images/svg/check-no)<br>Obs! Stöds inte | ![Nej](/security/defender-endpoint/images/svg/check-no)<br>Obs! Stöds inte | ![Nej](/security/defender-endpoint/images/svg/check-no)<br>Obs! Stöds inte
-Windows Server 2019 (med [KB4586839](https://support.microsoft.com/help/4586839)) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
-Windows Server 2016 | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
-Windows Server 2012 R2 | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
-Windows Server 2008 R2 SP1 | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
-Windows 8.1 Enterprise | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
-Windows 8 Pro | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
-Windows 7 SP1 Enterprise | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
-Windows 7 SP1 Pro | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
-Linux | ![Nej](/security/defender-endpoint/images/svg/check-no) Under utveckling | ![Nej](/security/defender-endpoint/images/svg/check-no) Under utveckling | ![Nej](/security/defender-endpoint/images/svg/check-no) Under utveckling
-macOS | ![Nej](/security/defender-endpoint/images/svg/check-no) Under utveckling | ![Nej](/security/defender-endpoint/images/svg/check-no) Under utveckling | ![Nej](/security/defender-endpoint/images/svg/check-no) Under utveckling
-Android | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg
-iOS | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg
+Windows 10 – version 2004 – (med [KB4586853](https://support.microsoft.com/help/4586853)) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Windows 10 – version 1909 – (med [KB4586819](https://support.microsoft.com/help/4586819)) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Windows 10 – version 1903 – (med [KB4586819](https://support.microsoft.com/help/4586819)) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Windows 10 – version 1809 – (med [KB4586839](https://support.microsoft.com/help/4586839)) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Windows 10 – version 1803 – (med [KB4598245](https://support.microsoft.com/help/4598245)) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Windows 10, version 1709 | ![Nej](images/svg/check-no.svg)<br>Obs! Stöds inte | ![Ja ](images/svg/check-yes.svg) med [KB4499147](https://support.microsoft.com/help/4499147)<br>Obs! [Inaktuell ,](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709)vänligen uppgradera | ![Nej](images/svg/check-no.svg)<br>Obs! Stöds inte
+Windows 10, version 1703 och tidigare | ![Nej](images/svg/check-no.svg)<br>Obs! Stöds inte | ![Nej](images/svg/check-no.svg)<br>Obs! Stöds inte | ![Nej](images/svg/check-no.svg)<br>Obs! Stöds inte
+Windows Server 2019 (med [KB4586839](https://support.microsoft.com/help/4586839)) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Windows Server 2016 | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Windows Server 2012 R2 | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Windows Server 2008 R2 SP1 | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Windows 8.1 Enterprise | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Windows 8 Pro | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Windows 7 SP1 Enterprise | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Windows 7 SP1 Pro | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Linux | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling
+macOS | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling
+Android | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg
+iOS | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg
 
 > [!NOTE]
 > Där en korrigering har angetts måste den distribueras innan enhets onboarding för att kunna konfigurera Defender för Endpoint till rätt miljö.
@@ -107,9 +107,9 @@ Följande OS-versioner stöds när du använder [Azure Defender för servrar:](h
 
 OS-version | GCC | GCC High | DoD (FÖRHANDSVISNING)
 :---|:---|:---|:---
-Windows Server 2016 | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
-Windows Server 2012 R2 | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
-Windows Server 2008 R2 SP1 | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
+Windows Server 2016 | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Windows Server 2012 R2 | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Windows Server 2008 R2 SP1 | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 
 <br>
 
@@ -147,24 +147,24 @@ Det här är de kända luckorna från februari 2021:
 
 Funktionsnamn | GCC | GCC High | DoD (FÖRHANDSVISNING)
 :---|:---|:---|:---
-Automatiserad undersökning och åtgärd: Live-svar | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
-Automatiserad undersökning och åtgärd: Svar på Office 365-aviseringar | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg
-E-postaviseringar | ![Nej](/security/defender-endpoint/images/svg/check-no) Lanseras | ![Nej](/security/defender-endpoint/images/svg/check-no) Lanseras | ![Nej](/security/defender-endpoint/images/svg/check-no) Lanseras
-Utvärderingslabb | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
-Hanterings- och API:er: Hälso- och efterlevnadsrapport för enheter | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
-Hantering och API:er: Integrering med produkter från tredje part | ![Nej](/security/defender-endpoint/images/svg/check-no) Under utveckling | ![Nej](/security/defender-endpoint/images/svg/check-no) Under utveckling | ![Nej](/security/defender-endpoint/images/svg/check-no) Under utveckling
-Hantering och API:er: Streaming API | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Nej](/security/defender-endpoint/images/svg/check-no) Under utveckling | ![Nej](/security/defender-endpoint/images/svg/check-no) Under utveckling
-Hanterings- och API:er: Rapport om skydd mot hot | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
-Hot & sårbarhetshantering | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
-Analys av hot | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
-Filtrering av webbinnehåll | ![Nej](/security/defender-endpoint/images/svg/check-no) Under utveckling | ![Nej](/security/defender-endpoint/images/svg/check-no) Under utveckling | ![Nej](/security/defender-endpoint/images/svg/check-no) Under utveckling
-Integrationer: Azure Sentinel | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Nej](/security/defender-endpoint/images/svg/check-no) Under utveckling | ![Nej](/security/defender-endpoint/images/svg/check-no) Under utveckling
-Integrationer: Microsoft Cloud App Security | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg
-Integrationer: Microsoft Compliance Manager | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg
-Integrationer: Microsoft Defender för identitet | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg
-Integrationer: Microsoft Defender för Office 365 | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg
-Integrationer: Microsoft Endpoint DLP | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg
-Integrationer: Microsoft Intune | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Nej](/security/defender-endpoint/images/svg/check-no) Under utveckling | ![Nej](/security/defender-endpoint/images/svg/check-no) Under utveckling
-Integrationer: Microsoft Power Automate & Azure Logic-appar | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Nej](/security/defender-endpoint/images/svg/check-no) Under utveckling | ![Nej](/security/defender-endpoint/images/svg/check-no) Under utveckling
-Integrationer: Skype för företag/Teams | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes) | ![Ja](/security/defender-endpoint/images/svg/check-yes)
-Microsoft Threat Experts | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg | ![Nej](/security/defender-endpoint/images/svg/check-no) När det gäller teknisk logg
+Automatiserad undersökning och åtgärd: Live-svar | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Automatiserad undersökning och åtgärd: Svar på Office 365-aviseringar | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg
+E-postaviseringar | ![Nej](images/svg/check-no.svg) Lanseras | ![Nej](images/svg/check-no.svg) Lanseras | ![Nej](images/svg/check-no.svg) Lanseras
+Utvärderingslabb | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Hanterings- och API:er: Hälso- och efterlevnadsrapport för enheter | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Hantering och API:er: Integrering med produkter från tredje part | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling
+Hantering och API:er: Streaming API | ![Ja](images/svg/check-yes.svg) | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling
+Hanterings- och API:er: Rapport om skydd mot hot | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Hot & sårbarhetshantering | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Analys av hot | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Filtrering av webbinnehåll | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling
+Integrationer: Azure Sentinel | ![Ja](images/svg/check-yes.svg) | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling
+Integrationer: Microsoft Cloud App Security | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg
+Integrationer: Microsoft Compliance Manager | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg
+Integrationer: Microsoft Defender för identitet | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg
+Integrationer: Microsoft Defender för Office 365 | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg
+Integrationer: Microsoft Endpoint DLP | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg
+Integrationer: Microsoft Intune | ![Ja](images/svg/check-yes.svg) | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling
+Integrationer: Microsoft Power Automate & Azure Logic-appar | ![Ja](images/svg/check-yes.svg) | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling
+Integrationer: Skype för företag/Teams | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Microsoft Threat Experts | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg

@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange Online-administratörer hanterar din organisations e-post och postlådor. De återskapar till exempel borttagna objekt i en användares postlåda. '
-ms.openlocfilehash: 5b63f2b0a58fdce75e5d70e329b8a0d02fb94a1a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4dc1f435571650ae4a805198782c3c24a92024fb
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050976"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197655"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Om administratörsrollen i Exchange Online
 
@@ -48,7 +48,7 @@ Här är några av de viktigaste uppgifterna som användare kan göra när de ti
 
 - [Skapa en delad postlåda så](../email/create-a-shared-mailbox.md) att en grupp användare kan övervaka och skicka e-post från en gemensam e-postadress.
 
-- [Skydd mot skräppost och filter mot](https://docs.microsoft.com/microsoft-365/security/defender-365-security/anti-spam-protection) skadlig programvara för organisationen.
+- [Skydd mot skräppost och filter mot](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection) skadlig programvara för organisationen.
 
 - Hantera Microsoft 365-grupper
 

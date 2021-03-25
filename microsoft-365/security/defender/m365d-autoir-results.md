@@ -22,12 +22,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 02/08/2021
-ms.openlocfilehash: 3d278c7fd06b2dd14bd9a8c0dcbe639d3c911828
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 05208dd8ba893d65db50430861ad5dd5ad9d34fb
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068910"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198975"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Information och resultat från en automatiserad undersökning
 
@@ -42,7 +42,7 @@ När en automatiserad undersökning körs [](m365d-autoir.md) är information om
 
 ## <a name="new-unified-investigation-page"></a>(NY!) Sida för enhetlig undersökning
 
-Undersökningssidan har nyligen uppdaterats för att inkludera information på dina enheter, e-post och samarbetsinnehåll. Den nya, enhetliga undersökningssidan definierar ett gemensamt språk och ger en enhetlig upplevelse för automatiska undersökningar i [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) för Endpoint och Microsoft Defender för [Office 365.](../defender-365-security/defender-for-office-365.md) Välj länken i den gula banderollen som visas på sidan för enhetlig undersökning:
+Undersökningssidan har nyligen uppdaterats för att inkludera information på dina enheter, e-post och samarbetsinnehåll. Den nya, enhetliga undersökningssidan definierar ett gemensamt språk och ger en enhetlig upplevelse för automatiska undersökningar i [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) för Endpoint och Microsoft Defender för [Office 365.](../office-365-security/defender-for-office-365.md) Välj länken i den gula banderollen som visas på sidan för enhetlig undersökning:
 - Alla undersökningssidor i Säkerhets- och & Office 365 ( [https://protection.office.com](https://protection.office.com) )
 - Undersökningssida i Microsoft Defender Säkerhetscenter ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
 - Alla funktioner för incidenter eller åtgärdscenter i det förbättrade säkerhetscentret i Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) )

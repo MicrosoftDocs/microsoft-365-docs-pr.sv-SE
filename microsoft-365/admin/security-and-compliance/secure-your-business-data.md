@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Skydda din affärs-e-post och data från cyberhot, inklusive utpressningstrojaner, nätfiske och skadliga bifogade filer. '
-ms.openlocfilehash: 7affa7a2adaa166861c2932ebe32177335236114
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e45130d101c6e730fd2d487f5f8898c7cd268ab8
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050684"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197857"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>De 10 bästa sätten att skydda abonnemang för Microsoft 365 för företag
 
@@ -132,7 +132,7 @@ I din Microsoft 365-miljö finns skydd mot skadlig programvara, men du kan öka 
 
 6. Välj **Spara.**
 
-Mer information finns i Skydd [mot skadlig programvara i EOP.](https://docs.microsoft.com/microsoft-365/security/defender-365-security/anti-malware-protection)
+Mer information finns i Skydd [mot skadlig programvara i EOP.](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-malware-protection)
 
 ## <a name="5-protect-against-ransomware"></a>5: Skydda mot utpressningstrojaner
 <a name="ransomware"> </a>
@@ -254,7 +254,7 @@ Om du vill skapa en policy mot nätfiske i Defender för Office 365 kan du titta
 
 4. På sidan mot nätfiske väljer du **+ Skapa.** En guide startar stegen för att definiera din policy mot nätfiske.
 
-5. Ange namn, beskrivning och inställningar för principen enligt rekommenderade inställningar i diagrammet nedan. Mer [information finns i Läs mer om nätfiskeprincipen i Microsoft Defender för Office 365.](https://docs.microsoft.com/microsoft-365/security/defender-365-security/set-up-anti-phishing-policies)
+5. Ange namn, beskrivning och inställningar för principen enligt rekommenderade inställningar i diagrammet nedan. Mer [information finns i Läs mer om nätfiskeprincipen i Microsoft Defender för Office 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)
 
 6. När du har granskat inställningarna väljer du Skapa **den här principen** eller **Spara** efter behov.
 
@@ -270,7 +270,7 @@ Om du vill skapa en policy mot nätfiske i Defender för Office 365 kan du titta
 |Tillämpas på|Välj **Mottagarens domän är**. Under **Valfri av dessa** väljer du **Välj**. Välj **+ Lägg till.** Markera kryssrutan bredvid namnet på domänen, till exempel markera contoso.com, i listan och välj sedan Lägg **till**. Välj **Klar**.|
 |
 
-Mer information finns i Konfigurera [principer för skydd mot nätfiske i Defender för Office 365.](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies)
+Mer information finns i Konfigurera [principer för skydd mot nätfiske i Defender för Office 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)
 
 ## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9: Skydda mot skadliga bifogade filer och filer med säkra bifogade filer
 <a name="atp"> </a>
@@ -302,7 +302,7 @@ Om du vill skapa en princip för säkra bifogade filer visar [du en kort utbildn
 |Tillämpas på|Mottagarens domän är . . . väljer du din domän.|
 |
 
-Mer information finns i Konfigurera [principer för skydd mot nätfiske i Defender för Office 365.](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies)
+Mer information finns i Konfigurera [principer för skydd mot nätfiske i Defender för Office 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)
 
 ## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10: Skydda mot nätfiskeattacker med säkra länkar
 <a name="phishingatp"> </a>
@@ -349,4 +349,4 @@ Så här skapar du en ny princip som är riktad till alla mottagare i din domän
 |Tillämpas på|Mottagarens domän är . . . väljer du din domän.|
 |
 
-Mer information finns i [Säkra länkar i Microsoft Defender för Office 365.](https://docs.microsoft.com/microsoft-365/security/defender-365-security/atp-safe-links)
+Mer information finns i [Säkra länkar i Microsoft Defender för Office 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)

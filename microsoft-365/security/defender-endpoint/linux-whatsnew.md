@@ -18,16 +18,22 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 43324b0f3a0d5d351d7164bb05415899bf7d181c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: dc3d775aced2ea3da42312cbf5a4d5e5af9fae50
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51070489"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198783"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-for-linux"></a>Vad är nytt i Microsoft Defender för Endpoint för Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+## <a name="1012364-30121021123640"></a>101.23.64 (30.121021.12364.0)
+
+- Prestandaförbättringar för situationer där en hel fästpunkt läggs till i undantagslistan för antivirus. Före den här versionen bearbetades filaktivitet från fästpunkten fortfarande av produkten. Från och med den här versionen utelämnas filaktivitet för undantagna fästpunkter, vilket leder till bättre produktprestanda
+- Lade till ett nytt alternativ i kommandoradsverktyget för att visa information om den senaste genomsökningen på begäran. Om du vill visa information om den senaste genomsökningen på begäran kör du `mdatp health --details antivirus`
+- Andra prestandaförbättringar & felkorrigeringar
 
 ## <a name="1011853"></a>101.18.53
 

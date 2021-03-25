@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: ad341de0d0aed45ff3bf734e3c933b423eac3353
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c51c002d263452142a1bcf6fc5603d6ec4ef4cf7
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068934"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197975"
 ---
 # <a name="device-profile-page"></a>Profilsida för enhet
 
@@ -81,7 +81,7 @@ Svarsåtgärder är ett snabbt sätt att försvara sig mot och analysera hot.
 * **Kör antivirussökning** – Uppdaterar definitioner för Windows Defender Antivirus och kör omedelbart en antivirussökning. Välj mellan Snabbsökning eller Fullständig sökning.
 * **Paket för insamling** av undersökning – samlar in information om enheten. När undersökningen är klar kan du ladda ned den.
 * **Initiera Live Response-session** – Läser in ett fjärrgränssnitt på enheten [för ingående säkerhetsundersökning.](/microsoft-365/security/defender-endpoint/live-response)
-* **Initiera automatisk undersökning** – [undersöker och åtgärdar automatiskt hot.](../defender-365-security/office-365-air.md) Även om du manuellt kan utlösta automatiska undersökningar från den här sidan [utlöser](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies) vissa aviseringsprinciper automatiska undersökningar på egen hand.
+* **Initiera automatisk undersökning** – [undersöker och åtgärdar automatiskt hot.](../office-365-security/office-365-air.md) Även om du manuellt kan utlösta automatiska undersökningar från den här sidan [utlöser](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies) vissa aviseringsprinciper automatiska undersökningar på egen hand.
 * **Åtgärdscenter** – Visar information om alla svarsåtgärder som körs för närvarande.
 
 ## <a name="tabs-section"></a>Avsnittet Flikar
@@ -183,4 +183,4 @@ Om du markerar ett objekt öppnas en utfällblad som länkar till uppdateringen.
 * [Översikt över Microsoft 365 Defender](microsoft-365-defender.md)
 * [Aktivera Microsoft 365 Defender](m365d-enable.md)
 * [Undersök enheter på enheter med hjälp av live-svar](../defender-endpoint/live-response.md)
-* [Automatiserad undersökning och svar (AIR) i Office 365](../defender-365-security/office-365-air.md)
+* [Automatiserad undersökning och svar (AIR) i Office 365](../office-365-security/office-365-air.md)

@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Upptäck konfigurationsstegen för Microsoft 365 Business Premium, inklusive att lägga till en domän och användare, konfigurera säkerhetsprinciper med mera.
-ms.openlocfilehash: 4d49ba7ccdb65691756aaa505d0856deb115595b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a06fb48ef5e1386a5c7b4df08500125f37943df6
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052243"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198452"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Konfigurera Microsoft 365 Business Premium i installationsguiden
 
@@ -107,7 +107,7 @@ För att få igång tjänsten måste du uppdatera några poster hos din DNS-vär
 
 Principerna som du skapar i guiden tillämpas automatiskt på säkerhetsgruppen [Alla](/office365/admin/create-groups/compare-groups#security-groups) *användare.* Du kan också skapa ytterligare grupper att tilldela principer till i administrationscentret.
 
-1. Om du vill öka skyddet mot avancerade **cyberhot** rekommenderar vi att du accepterar standardinställningarna för att låta [Office 365 Advance Threat Protection](../security/defender-365-security/defender-for-office-365.md) söka igenom filer och länkar i Office-appar.
+1. Om du vill öka skyddet mot avancerade **cyberhot** rekommenderar vi att du accepterar standardinställningarna för att låta [Office 365 Advance Threat Protection](../security/office-365-security/defender-for-office-365.md) söka igenom filer och länkar i Office-appar.
 
     ![Skärmbild av sidan Öka skydd.](../media/increasetreatprotection.png)
 

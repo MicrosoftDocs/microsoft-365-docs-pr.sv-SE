@@ -17,12 +17,12 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 09/24/2020
 ms.technology: mde
-ms.openlocfilehash: a56153a9c4076b1072f6d3fc5296f9e12dc0cc4d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 0f9508038dd49e6c2d14d8e33a4fd40dfdfe83cb
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186599"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198664"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint-and-microsoft-defender-antivirus"></a>Gå över till Microsoft Defender för Endpoint och Microsoft Defender Antivirus
 
@@ -55,5 +55,5 @@ Berätta vad du tycker! Skicka feedback längst ned på sidan. Vi tar med din fe
 ## <a name="see-also"></a>Se även
 
 - [Microsoft Defender för Endpoint](https://docs.microsoft.com/windows/security/threat-protection)
-- [Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp)
+- [Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
 - [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection?) 

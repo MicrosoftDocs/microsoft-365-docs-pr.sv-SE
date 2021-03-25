@@ -22,12 +22,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 02/02/2021
-ms.openlocfilehash: b66640736e9dc3835919e39d482b2d38b0c9dcc7
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 57a515fec2baabba7146959a43737771ef5c8cfe
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51183687"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197775"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Information och resultat från en automatiserad undersökning
 
@@ -38,7 +38,7 @@ När en automatiserad undersökning [](automated-investigations.md) körs med Mi
 
 ## <a name="new-unified-investigation-page"></a>(NY!) Sida för enhetlig undersökning
 
-Undersökningssidan har nyligen uppdaterats för att inkludera information på dina enheter, e-post och samarbetsinnehåll. Den nya, enhetliga undersökningssidan definierar ett gemensamt språk och ger en enhetlig upplevelse för automatiska undersökningar i [Microsoft Defender](microsoft-defender-endpoint.md) för Endpoint och Microsoft Defender för [Office 365.](/microsoft-365/security/defender-365-security/office-365-atp) 
+Undersökningssidan har nyligen uppdaterats för att inkludera information på dina enheter, e-post och samarbetsinnehåll. Den nya, enhetliga undersökningssidan definierar ett gemensamt språk och ger en enhetlig upplevelse för automatiska undersökningar i [Microsoft Defender](microsoft-defender-endpoint.md) för Endpoint och Microsoft Defender för [Office 365.](/microsoft-365/security/office-365-security/office-365-atp) 
 
 > [!TIP]
 > Mer information om vad som ändras finns i [(NYTT!) Sida för enhetlig undersökning](/microsoft-365/security/mtp/mtp-autoir-results).

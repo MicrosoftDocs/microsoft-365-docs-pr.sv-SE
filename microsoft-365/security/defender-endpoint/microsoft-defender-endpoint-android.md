@@ -19,19 +19,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6518b86861fd5d03533bb787d4ee005d7ace1a0c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e2432dc4aa2c67fadc9112512a080f24c0064df4
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076866"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187619"
 ---
 # <a name="microsoft-defender-for-endpoint-for-android"></a>Microsoft Defender för slutpunkt för Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
-- [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -44,7 +44,7 @@ I det här avsnittet beskrivs hur du installerar, konfigurerar, uppdaterar och a
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-for-android"></a>Så här installerar du Microsoft Defender för slutpunkt för Android
 
-### <a name="prerequisites"></a>Förutsättningar
+### <a name="prerequisites"></a>Krav
 
 -   **För slutanvändare**
 

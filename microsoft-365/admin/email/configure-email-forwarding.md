@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Konfigurera vidarebefordran av e-post till ett eller flera e-postkonton med hjälp av Office365.
-ms.openlocfilehash: cdefab3df59f1c57abbc221943b58c978ff582a9
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d7c9a37a066bd53e541cf623c1953fb572827b61
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050720"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197869"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Konfigurera vidarebefordran av e-post i Microsoft 365
 
@@ -42,7 +42,7 @@ ms.locfileid: "51050720"
 Som administratör för en organisation kanske du behöver konfigurera vidarebefordran av e-post för en användares postlåda. Med vidarebefordran av e-post kan du vidarebefordra e-postmeddelanden som skickas till en användares brevlåda till en annan användares brevlåda i eller utanför organisationen.
 
 > [!IMPORTANT]
-> Du kan använda principer för utgående skräppostfilter för att styra automatisk vidarebefordran till externa mottagare. Mer information finns i Styra [automatisk vidarebefordran av extern e-post i Microsoft 365.](https://docs.microsoft.com/microsoft-365/security/defender-365-security/external-email-forwarding?view=o365-worldwide&preserve-view=true#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls)
+> Du kan använda principer för utgående skräppostfilter för att styra automatisk vidarebefordran till externa mottagare. Mer information finns i Styra [automatisk vidarebefordran av extern e-post i Microsoft 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-worldwide&preserve-view=true#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls)
 
 ## <a name="configure-email-forwarding"></a>Konfigurera vidarebefordran av e-post
 

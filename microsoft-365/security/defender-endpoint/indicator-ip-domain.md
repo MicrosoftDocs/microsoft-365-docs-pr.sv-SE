@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0196148c9dbf3ec769594d714524a3fd9e4d18fd
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: d468a77d2c1ab4f1b363e2e91b6e8507a5390d93
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185963"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198491"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>Skapa indikatorer för IP-adresser och URL:er/domäner 
 
@@ -34,7 +34,8 @@ ms.locfileid: "51185963"
 
 
 
->Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> [!TIP]
+> Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 
 Defender för Endpoint kan blockera vad Microsoft bedömer som skadliga IP-adresser/URL-adresser, via Windows Defender SmartScreen för Microsoft-webbläsare och via Nätverksskydd för webbläsare som inte är Microsoft eller samtal som görs utanför en webbläsare.
@@ -57,8 +58,10 @@ Det är viktigt att förstå följande förutsättningar innan du skapar indikat
 
 > [!IMPORTANT]
 > Endast externa IP-adresser kan läggas till i indikatorlistan. Indikatorer kan inte skapas för interna IP-adresser.
-> För webbskyddsscenarier rekommenderar vi att du använder de inbyggda funktionerna i Microsoft Edge. Microsoft Edge inspekterar [nätverkstrafik med](network-protection.md) hjälp av Nätverksskydd och tillåter block för TCP, HTTP och HTTPS (TLS). För alla andra processer använder webbskyddsscenarier Nätverksskydd för kontroll och tillämpning: <br>
-> OBS!
+> För webbskyddsscenarier rekommenderar vi att du använder de inbyggda funktionerna i Microsoft Edge. Microsoft Edge inspekterar [nätverkstrafik med](network-protection.md) hjälp av Nätverksskydd och tillåter block för TCP, HTTP och HTTPS (TLS). Om det finns URL-indikatorprinciper som är i konflikt tillämpas den längre sökvägen. URL-indikatorprincipen har `https:\\support.microsoft.com/en-us/office` till exempel företräde framför URL-indikatorprincipen. `https:\\support.microsoft.com`
+
+> [!NOTE]
+> För alla andra processer använder webbskyddsscenarier Nätverksskydd för kontroll och tillämpning: 
 > - IP stöds för alla tre protokollen
 > - Endast enskilda IP-adresser stöds (inga CIDR-block eller IP-intervall)
 > - Krypterade URL:er (fullständig sökväg) kan endast blockeras i webbläsare från första part (Internet Explorer, Edge)
