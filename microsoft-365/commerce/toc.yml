@@ -6,8 +6,6 @@
   items:
     - name: Prova eller köp Microsoft 365
       href: try-or-buy-microsoft-365.md
-    - name: Förlänga utvärderingen
-      href: extend-your-trial.md
     - name: Köp eller hantera tilläggsprogram
       href: buy-or-edit-an-add-on.md
     - name: Business Assist för Microsoft 365
