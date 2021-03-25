@@ -18,14 +18,14 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: Mer information om kundupplevelsen när du flyttar från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i den nya tyska datacenterregion.'
-ms.openlocfilehash: 84705eaf78da4d1e8d35f743599f6a4e9e46208f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ecc549ca4d0bb8122de3bf092c004c919e958d5e
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924428"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51165651"
 ---
-# <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>Åtgärder i migreringsfaser och påverkan på migreringen från Microsoft Cloud Deutschland (avancerat) 
+# <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>Åtgärder i migreringsfaser och påverkan på migreringen från Microsoft Cloud Deutschland (avancerat)
 
 Klientmigrering från Microsoft Cloud Deutschland till Tyskland-regionen för Microsofts Office 365-tjänster utförs som en uppsättning faser och deras konfigurerade åtgärder för varje arbetsbelastning. I den här bilden visas de nio faserna av migrering till de nya tyska datacenteren.
 
@@ -33,50 +33,9 @@ Klientmigrering från Microsoft Cloud Deutschland till Tyskland-regionen för Mi
 
 Följande avsnitt ger ytterligare information om kundupplevelser när du flyttar från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i den nya tyska datacenterområdet.
 
-## <a name="office-365-portal-services"></a>Office 365-portaltjänster
+## <a name="office-365-portal-services-between-phase-2-and-phase-3"></a>Office 365-portaltjänster mellan fas 2 och fas 3
 
-Mellan Fas 2 av 9 och Fas 3 av 9 är partnerportalen kanske inte tillgänglig. Under tiden kanske partnern inte kan komma åt information om klientorganisationen på partnerportalen. Eftersom varje migrering är olika kan varaktigheten för tillgänglighet vara i timmar.
-
-### <a name="prework-for-azure-ad-phase-2"></a>Förarbete för Azure AD (fas 2)
-
-| Steg | Beskrivning | Gäller för | Påverkan |
-|:-------|:-----|:-------|:-------|
-| Azure AD-klientorganisation i Microsoft Cloud Deutschland kopierad till Office 365-tjänster. | Azure AD kopierar klientorganisationen till Office 365-tjänster. Klientorganisations- och användaridentifierare bevaras. Azure AD-tjänstsamtal omdirigeras från Microsoft Cloud Deutschland till Office 365-tjänster och är transparenta mot tjänster. | Alla Office-kunder | - Allmän dataskyddsförordning (GDPR) Data Subject Requests (DSRs) körs från Azure Admin-portalen för framtida förfrågningar. Alla äldre eller icke-kunddiagnostikdata som finns i Microsoft Cloud Deutschland tas bort vid eller före 30 dagar. <br><br> Kunder som använder federerad autentisering med AD FS (Active Directory Federation Services) bör inte göra ändringar i utfärdare AV URI:er som används för alla autentiseringar med lokal Active Directory under migreringen. Att ändra utfärdare-URI:er leder till autentiseringsfel för användare i domänen. Uri:er för utfärdare kan ändras direkt i  AD FS eller när en domän konverteras från hanterad _till federerad_ och tvärtom. Vi rekommenderar att kunder inte lägger till, tar bort eller konverterar en federerad domän i Azure AD-klientorganisationen som har migrerats. Uri:er för utfärdare kan ändras när migreringen är fullständig. <br><br> - Multifaktorautentisering (MFA) begär att Microsoft Authenticator ska visas som användarobjekt-ID (en GUID) medan klientorganisationen kopieras till Office 365-tjänster. MFA-begäranden fungerar som förväntat trots detta visningsbeteende.  Microsoft Authenticator-konton som aktiverades med office 365-tjänsters slutpunkter visar användarens huvudnamn (UPN).  Konton som läggs till med hjälp av Microsoft Cloud Deutschland-slutpunkter visar användarens ObjectID men fungerar med både Microsoft Cloud Deutschland- och Office 365-slutpunkter.  |
-| Migrering av Azure-resurser. | Kunder som använder Office 365- och Azure-resurser (till exempel nätverk, beräkning och lagring) migrerar resurser till Office 365-tjänstinstansen. Den här migreringen är ett ansvar för kunderna. Inlägg i Meddelandecenter signalerar start. Migreringen måste slutföras innan Azure AD-organisationen slutförs i Office 365-tjänstmiljön. | Azure-kunder | För Azure-migreringar, se Azure-migreringsspelboken, [Översikt över migreringsvägledning för Azure Germany.](/azure/germany/germany-migration-main) |
-|||||
-
-### <a name="exchange-online-before-phase-5"></a>Exchange Online före fas 5
-
-**Gäller för:** Alla kunder som använder en Exchange-hybridkonfiguration med Exchange-servrar lokalt
-
-| Steg | Beskrivning | Påverkan |
-|:-------|:-------|:-------|
-| Upprätta AuthServer lokalt som pekar på den globala STS-tjänsten. | Detta garanterar att förfrågningar från användare som migrerar till Microsoft Cloud Deutschland för Exchange-tillgänglighetsförfrågningar som är målet för hybriden i den lokala miljön autentiseras för åtkomst till den lokala tjänsten. På samma sätt säkerställer detta autentisering av förfrågningar från lokala slutpunkter till Office 365-tjänster. | När Azure AD-migreringen är klar måste administratören för den lokala Exchange-topologin (hybrid) lägga till en ny autentiseringstjänstslutpunkt för Office 365-tjänsterna. Med det här kommandot från Exchange PowerShell ersätter du med din `<TenantID>` organisations klientorganisations-ID (finns i Azure-portalen i **Azure Active Directory**).<br><br>`New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<TenantId>/metadata/json/1` <br> <br> Om uppgiften inte slutförs kan det leda till hybridförfrågningar om ledig/upptagen-information som inte kan tillhandahålla information för postlådeanvändare som har migrerats från Microsoft Cloud Deutschland till Office 365-tjänster.  |
-|Stoppa eller ta bort alla flyttningar av onboarding- eller offboarding-postlådor.  | Det säkerställer att flyttningsförfrågningar för postlådor inte misslyckas och att det inte uppstår ett fel. | Om du inte gör det kan det leda till att tjänsten eller programvaruklienten inte fungerar. |
-||||
-
-<!--
-    Question from ckinder
-    Not clear if this has to be done before, during or after phase 5
--->
-
-**Gäller för:** Alla kunder som lagrar användarfoton i Exchange Online och använder **Set-UserPhoto:**
-
-| Steg | Beskrivning | Påverkan |
-|:-------|:-------|:-------|
-| Den nya regionen "Tyskland" läggs till i en befintlig Exchange Online-organisationskonfiguration och postlådor flyttas till Office 365-tjänster. | Exchange Online-konfigurationen lägger till den nya lokala tyska regionen i övergången. Den här Office 365-tjänstområdet har angetts som standard, vilket gör att den interna belastningsutjämningstjänsten kan distribuera om postlådor till rätt standardområde i Office 365-tjänsterna. I den här övergången finns användarna på vardera sidan (Tyskland eller Office 365-tjänster) i samma organisation och kan använda antingen URL-slutpunkten. | Om en användarpostlåda har migrerats men en administratörspostlåda inte har migrerats, eller tvärtom, kan administratörer inte köra **Set-UserPhoto**, en PowerShell-cmdlet. I det här fallet måste en administratör överföra ytterligare en sträng under anslutningen `ConnectionUri` som konfigureras med följande syntax: <br> `https://outlook.office.de/PowerShell-LiveID?email=<user_email>` <br> var finns platshållaren för e-post-ID för användaren vars foto `<user_email>` behöver ändras genom att använda **Set-UserPhoto**. |
-||||
-
-## <a name="during-migration"></a>Under migreringen
-
-### <a name="sharepoint-online-phase-4"></a>SharePoint Online , fas 4
-
-**Gäller för:** Alla kunder som använder eDiscovery
-
-| Steg | Beskrivning | Påverkan |
-|:-------|:-------|:-------|
-| SharePoint och OneDrive har nu övergångar. | SharePoint och OneDrive migreras från Microsoft Cloud Deutschland till globala Office 365-tjänster i fas 4. Befintliga Webbadresser till Microsoft Cloud Deutschland bevaras ( `contoso.sharepoint.de` ). Token som utfärdats av Microsoft Cloud Deutschland eller Office 365-tjänster är giltiga under övergången. | Inflight SharePoint 2013-arbetsflöden bryts under migreringen och måste publiceras på nytt efter migreringen. |
-||||
+Mellan fas 2 och fas 3 är partnerportalen kanske inte tillgänglig. Under tiden kanske partnern inte kan komma åt klientorganisationens information på partnerportalen. Eftersom varje migrering är olika kan varaktigheten för tillgänglighet vara i timmar.
 
 ### <a name="ediscovery-phase-4-to-the-end-of-phase-9"></a>eDiscovery fas 4 till slutet av fas 9
 
@@ -84,7 +43,16 @@ Mellan Fas 2 av 9 och Fas 3 av 9 är partnerportalen kanske inte tillgänglig. U
 
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
-| Från början av fas 4 tills fas 9 är slutförd kommer eDiscovery-sökningar att misslyckas eller returnera 0 resultat för SharePoint Online-, OneDrive för företag- och Exchange Online-platser som har migrerats. | Under migreringen kan kunder fortsätta att skapa ärenden, innehåll, sökningar och exporter i Säkerhets- [&,](../compliance/manage-legal-investigations.md)inklusive [Innehållssökning.](../compliance/search-for-content.md)  Men sökningar mot SharePoint Online-, OneDrive för företag- och Exchange Online-platser som har migrerats returnerar antingen 0 resultat eller resulterar i ett fel. Mer information om åtgärder finns i _kolumnen_ Påverkan. | Om en sökning returnerar noll resultat eller ett fel under migreringen kan du vidta följande åtgärd för SharePoint Online: <ul><li>Ladda ned webbplatser direkt från en SharePoint Online- eller OneDrive för företag-webbplats genom att följa instruktionerna i Ladda ned filer och [mappar från OneDrive eller SharePoint.](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05) Den här metoden kräver administratörsbehörigheter för SharePoint Online eller skrivskyddsbehörigheter på webbplatsen.</li><li>Om gränserna överskrids, vilket förklaras i Ladda ned filer och mappar från OneDrive eller [SharePoint,](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)kan kunder använda synkroniseringsklienten för OneDrive för företag genom att följa vägledning i Synkronisera [SharePoint-](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)och Teams-filer med din dator.</li><li>Mer information finns i  [EDiscovery på plats i Exchange Server](/Exchange/policy-and-compliance/ediscovery/ediscovery) |
+| Från början av fas 4 tills fas 9 är slutförd kommer eDiscovery-sökningar att misslyckas eller returnera 0 resultat för SharePoint Online-, OneDrive för företag- och Exchange Online-platser som har migrerats. | Under migreringen kan kunder fortsätta att skapa ärenden, innehåll, sökningar och exporter i Säkerhets- [&,](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)inklusive [Innehållssökning.](https://docs.microsoft.com/microsoft-365/compliance/search-for-content) Men sökningar mot SharePoint Online-, OneDrive för företag- och Exchange Online-platser som har migrerats returnerar antingen 0 resultat eller resulterar i ett fel. Mer information om åtgärder finns i _kolumnen_ Påverkan. | Om en sökning returnerar noll resultat eller ett fel under migreringen kan du vidta följande åtgärd för SharePoint Online: <ul><li>Ladda ned webbplatser direkt från SharePoint Online- eller OneDrive för företag-webbplatsen genom att följa anvisningarna i Ladda ned filer och [mappar från OneDrive eller SharePoint.](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05) Den här metoden kräver administratörsbehörigheter för SharePoint Online eller skrivskyddsbehörigheter på webbplatsen.</li><li>Om gränserna överskrids, vilket förklaras i Ladda ned filer och mappar från OneDrive eller [SharePoint,](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)kan kunder använda synkroniseringsklienten för OneDrive för företag genom att följa vägledning i Synkronisera [SharePoint-](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)och Teams-filer med din dator.</li><li>Mer information finns i  [EDiscovery på plats i Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
+||||
+
+## <a name="exchange-online-set-userphoto-during-phase-5"></a>Exchange OnlineSet-UserPhoto under fas 5
+
+**Gäller för:** Alla kunder som lagrar användarfoton i Exchange Online och använder **Set-UserPhoto:**
+
+| Steg | Beskrivning | Påverkan |
+|:-------|:-------|:-------|
+| Den nya regionen "Tyskland" läggs till i en befintlig Exchange Online-organisationskonfiguration och postlådor flyttas till Office 365-tjänster. | Exchange Online-konfigurationen lägger till den nya lokala tyska regionen i övergången. Den här Office 365-tjänstområdet har angetts som standard, vilket gör att den interna belastningsutjämningstjänsten kan distribuera om postlådor till rätt standardområde i Office 365-tjänsterna. I den här övergången finns användarna på vardera sidan (Tyskland eller Office 365-tjänster) i samma organisation och kan använda antingen URL-slutpunkten. | Om en användarpostlåda har migrerats men en administratörspostlåda inte har migrerats, eller tvärtom, kan administratörer inte köra **Set-UserPhoto**, en PowerShell-cmdlet. I det här fallet måste en administratör överföra ytterligare en sträng under anslutningen `ConnectionUri` som konfigureras med följande syntax: <br> `https://outlook.office.de/PowerShell-LiveID?email=<user_email>` <br> var finns platshållaren för e-post-ID för användaren vars foto `<user_email>` behöver ändras genom att använda **Set-UserPhoto**. |
 ||||
 
 ## <a name="post-migration"></a>Efter migrering
@@ -102,19 +70,19 @@ Mellan Fas 2 av 9 och Fas 3 av 9 är partnerportalen kanske inte tillgänglig. U
 
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
-| Ta bort förtroenden från en part i Microsoft Cloud Deutschland AD FS. | Efter att användningen av Azure AD har slutförts använder organisationen alla Office 365-tjänster och är inte längre ansluten till Microsoft Cloud Deutschland. I det här läget behöver kunden ta bort det beroende tredjepartsförtroendet till Microsoft Cloud Deutschland-slutpunkterna. Detta kan endast göras om inga av kundens program pekar på Microsoft Cloud Deutschland-slutpunkter när Azure AD används som identitetsprovider (IdP). | Organisationer med federerad autentisering | Ingen. |
-|||||
+| Ta bort förtroenden från en part i Microsoft Cloud Deutschland AD FS. | Efter att användningen av Azure AD har slutförts använder organisationen alla Office 365-tjänster och är inte längre ansluten till Microsoft Cloud Deutschland. I det här läget behöver kunden ta bort det beroende tredjepartsförtroendet till Microsoft Cloud Deutschland-slutpunkterna. Detta kan endast göras om ingen av kundens program pekar på Microsoft Cloud Deutschland-slutpunkter när Azure AD används som en identitetsprovider (IdP). | Organisationer med federerad autentisering | Ingen. |
+||||
 
 <!--
     Question from ckinder
     The following paragraph is not clear
 -->
-För Azure AD:
+**Gäller för:** Slutanvändare vars Azure AD-gruppgodkännandebegäranden inte godkänts under de senaste 30 dagarna före migreringen 
 
-| Steg | Beskrivning | Gäller för | Påverkan |
-|:-------|:-----|:-------|:-------|
-| Förfrågningar om att gå med i en Azure AD-grupp de senaste 30 dagarna innan migreringen måste begäras igen om den ursprungliga begäran inte godkänts. | Slutanvändarkunder måste använda åtkomstpanelen för att skicka en begäran om att ansluta till en Azure AD-grupp igen om dessa begäranden inte godkänts under de senaste 30 dagarna före migreringen. | Slutanvändare vars Azure AD-gruppgodkännandebegäranden inte godkänts under de senaste 30 dagarna före migreringen |  Som slutanvändare: <ol><li>Gå till [åtkomstpanelen](https://account.activedirectory.windowsazure.com/r#/joinGroups).</li><li>Hitta en Azure AD-grupp där godkännande av medlemskap väntar 30 dagar före migreringen.</li><li>Begär att få gå med i Azure AD-gruppen igen.</li></ol> Förfrågningar om att gå med i en grupp som är aktiv mindre än 30 dagar innan migreringen kan inte godkännas, såvida de inte begärs på nytt efter migreringen. |
-|||||
+| Steg | Beskrivning | Påverkan |
+|:-------|:-------|:-------|
+| Förfrågningar om att gå med i en Azure AD-grupp de senaste 30 dagarna innan migreringen måste begäras igen om den ursprungliga begäran inte godkänts. | Slutanvändarkunder måste använda åtkomstpanelen för att skicka en begäran om att ansluta till en Azure AD-grupp igen om dessa begäranden inte godkänts under de senaste 30 dagarna före migreringen. |  Som slutanvändare: <ol><li>Gå till [åtkomstpanelen](https://account.activedirectory.windowsazure.com/r#/joinGroups).</li><li>Hitta en Azure AD-grupp för vilken godkännande av medlemskap väntar under 30 dagar före migreringen.</li><li>Begär att få gå med i Azure AD-gruppen igen.</li></ol> Förfrågningar om att gå med i en grupp som är aktiv mindre än 30 dagar innan migreringen kan inte godkännas, såvida de inte begärs igen efter migreringen. |
+||||
 
 <!--
     Question from ckinder
@@ -122,12 +90,12 @@ För Azure AD:
 -->
 **Gäller för:**  Alla kunder som hanterar sina egna DNS-zoner
 
-| Steg | Beskrivning | Gäller för | Påverkan |
-|:-------|:-----|:-------|:-------|
+| Steg | Beskrivning | Påverkan |
+|:------|:-------|:-------|
 | Uppdatera lokala DNS-tjänster för Office 365-tjänstslutpunkter. | Kund hanterade DNS-poster som pekar på Microsoft Cloud Deutschland måste uppdateras så att de pekar på slutpunkterna för globala Office 365-tjänster. | Om du inte gör det kan det leda till att tjänsten eller programvaruklienten inte fungerar. |
 ||||
 
-För tredjepartstjänster för Office 365-tjänsteslutpunkter:
+**Gäller för:** Kunder som använder tjänster från tredje part för Office 365-tjänsteslutpunkter
 
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
@@ -136,8 +104,8 @@ För tredjepartstjänster för Office 365-tjänsteslutpunkter:
 
 ### <a name="sharepoint-online-post-migration"></a>SharePoint Online efter migrering
 
-| Steg | Beskrivning | Gäller för | Påverkan |
-|:-------|:-----|:-------|:-------|
+| Steg | Beskrivning | Påverkan |
+|:-------|:-------|:-------|
 | Publicera om SharePoint 2013-arbetsflöden. | Under före migreringen minskade vi antalet SharePoint 2013-arbetsflöden. Nu när migreringen är klar kan kunden publicera arbetsflödena på nytt. | Det här är en åtgärd som krävs. Om du inte gör det kan det leda till förvirring och samtal till supporten. |
 | Dela objekt via Outlook | Det går inte längre att dela objekt i SharePoint Online och OneDrive för företag via Outlook efter klientorganisationens övertid. |<ul><li>I SharePoint Online och OneDrive för företag kan du dela objekt via Outlook. När du trycker på Outlook-knappen skapas en delningsbar länk som skickades till ett nytt meddelande i Outlook Web App.</li><li>Efter att klientorganisationen har tagit över kommer den här delningsmetoden inte att fungera. Vi känner igen det här är ett känt problem. Men eftersom den här Outlook-funktionen är i vägen för utfasningen är det inte planerat att åtgärda problemet förrän utfasningen har distribuerats. </li></ul>|
 ||||
@@ -152,11 +120,19 @@ Om du använder en Hybrid Exchange-konfiguration:
 
 ### <a name="ediscovery-post-migration"></a>eDiscovery efter migrering
 
-| Steg | Beskrivning | Gäller för | Påverkan |
-|:-------|:-----|:-------|:-------|
-|  Alla SharePoint Online-, OneDrive för företag- och Exchange Online-platser har migrerats tillsammans med Säkerhets- och efterlevnadscenter (SCC). | All eDiscovery-aktivitet bör köras från den globala klientorganisationen. Sökningarna lyckas nu till 100 %.  Eventuella fel bör följa vanliga supportkanaler. | Alla kunder som använder eDiscovery | Ingen. |
-| Ta bort bevarandeprinciper för hela organisationen som skapades före migreringen | Kunder kan ta bort de organisationsomfattande bevarandeprinciper som skapades under kundernas arbete före migreringen. | Alla kunder som har tillämpat en bevarandeprincip som en del av före migreringen. | Ingen. |
-|||||
+**Gäller för:** Alla kunder som använder eDiscovery
+
+| Steg | Beskrivning | Påverkan |
+|:-------|:-------|:-------|
+|  Alla SharePoint Online-, OneDrive för företag- och Exchange Online-platser har migrerats tillsammans med Säkerhets- och efterlevnadscenter (SCC). | All eDiscovery-aktivitet bör köras från den globala klientorganisationen. Sökningarna lyckas nu till 100 %.  Eventuella fel bör följa vanliga supportkanaler. | Inga |
+||||
+
+**Gäller för:**  Alla kunder som har tillämpat en bevarandeprincip under före migreringen
+
+| Steg | Beskrivning | Påverkan |
+|:-------|:-------|:-------|
+| Ta bort bevarandeprinciper för hela organisationen som skapades före migreringen | Kunder kan ta bort de organisationsomfattande bevarandeprinciper som skapades under kundernas arbete före migreringen. | Inga |
+||||
 
 ## <a name="next-step"></a>Nästa steg
 

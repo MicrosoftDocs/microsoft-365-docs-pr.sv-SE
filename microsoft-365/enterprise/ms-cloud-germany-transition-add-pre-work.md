@@ -18,80 +18,115 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: Arbeta i förväg när du flyttar från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i den nya tyska datacenterområdet.'
-ms.openlocfilehash: 37fde0119dfc84cbe9120cf922cbac469a0a50f1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d05b3fc06c4530a69c49962b0d2b793353033c99
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923844"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51165615"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Före migreringen från Microsoft Cloud Deutschland
 
 Använd de här länkarna för att komma till de anvisningar som gäller i förväg för din organisation:
 
-- Gör följande för alla kunder som använder Office 365 i Microsoft Cloud Deutschland. [](#applies-to-everyone)
-- Om du använder Exchange Online eller Exchange-hybrid gör du [det här steget.](#exchange-online)
-- Om du använder SharePoint Online gör du [det här steget.](#sharepoint-online)
-- Om du använder en MDM-lösning (Mobile Device Management) från tredje part gör du [det här steget.](#mobile)
-- Om du använder en tredjepartstjänst eller verksamhetsbaserade appar som är integrerade med Office 365 ska du göra [det här steget.](#line-of-business-apps)
-- Om du även använder Azure-tjänster utöver de som ingår i din Office 365-prenumeration gör du [det här steget.](#microsoft-azure)
-- Om du även använder Dynamics 365 gör du [det här steget.](#dynamics365)
-- Om du även använder Power BI gör du [det här steget.](#power-bi)
-- För DNS-ändringar gör du [det här steget.](#dns)
-- Om du använder federerad identitet gör du [följande.](#federated-identity)
+- Gör **följande för** alla kunder som använder Office 365 i Microsoft Cloud Deutschland. [](#general-tenant-migration-considerations)
+- Gör **det här steget** för [DNS-ändringar.](#dns)
+- Om du använder **Active Directory Federation Services lokalt** gör du [följande.](#active-directory-federation-services-ad-fs)
+- Om du använder **SharePoint Online gör** du det här [steget.](#sharepoint-online)
+- Om du använder **Exchange Online eller Exchange-hybrid** **gör** du det [här steget.](#exchange-online)
+- Om du använder **Skype för företag – Online gör** du så [här](#skype-for-business-online)
+- Om du använder en MDM-lösning (Mobile Device Management) från tredje part gör du [det här steget.](#mobile-device-management)
+- Om du använder tjänster **från** tredje part eller **LOB-appar som** är integrerade med Office 365 ska du göra [det här steget.](#line-of-business-apps)
+- Om du även använder **Dynamics 365** gör du [det här steget.](#dynamics365)
+- Om du även använder **Power BI gör** du det här [steget.](#power-bi)
+- Om du även använder **Azure-tjänster med din** Office 365-prenumeration gör du [det här steget.](#microsoft-azure)
 
-## <a name="applies-to-everyone"></a>Gäller för alla
+## <a name="general-tenant-migration-considerations"></a>Allmänna överväganden vid klientmigrering
+
+**Gäller för:** Alla kunder som använder Office 365 i Microsoft Deutschland Cloud-instansen
+
+Office 365-klientorganisationen och användaridentifierare bevaras under migreringen. Azure AD-tjänstsamtal omdirigeras från Microsoft Cloud Deutschland till globala Office 365-tjänster och är transparenta mot Office 365-tjänster.
+
+- Allmän dataskyddsförordning (GDPR) Data Subject Requests (DSRs) körs från Azure Admin-portalen för framtida förfrågningar. Alla äldre eller icke-kunddiagnostikdata som finns i Microsoft Cloud Deutschland tas bort vid eller före 30 dagar.
+- Multifaktorautentisering (MFA) begär att Microsoft Authenticator ska visas som användarobjekt-ID (en GUID) medan klientorganisationen kopieras till Office 365-tjänster. MFA-begäranden fungerar som förväntat trots detta visningsbeteende.  Microsoft Authenticator-konton som aktiverades med office 365-tjänsters slutpunkter visar användarens huvudnamn (UPN).  Konton som läggs till med hjälp av Microsoft Cloud Deutschland-slutpunkter visar användarens ObjectID men fungerar med både Microsoft Cloud Deutschland- och Office 365-slutpunkter.
 
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
 | Förbered dig för att meddela användarna om omstart och inloggning på och ut från sina klienter efter migreringen. | Office-klientlicensiering kommer att övergå från Microsoft Cloud Deutschland till Office 365-tjänster under migreringen. Klienter hämtar en ny giltig licens när de har loggat ut från och in på Office-klienter. | Användarnas Office-produkter behöver uppdatera licenser från Office 365-tjänster. Om licenserna inte uppdateras kan verifieringsfel uppstå i Office-produkter. |
-| Säkerställa nätverksanslutningen till [URL:er och IP-adresser för Office 365-tjänster.](./urls-and-ip-address-ranges.md) | Alla klienter och tjänster hos kunden som används för att få åtkomst till Office 365-tjänsten måste kunna komma åt slutpunkterna för globala Office 365-tjänster. <br>Om du eller dina samarbetspartner har brandväggsregler som skulle förhindra åtkomst till URL:er och IP-adresser som listas i URL:er och IP-adresser för [Office 365-tjänster](./urls-and-ip-address-ranges.md) måste du ändra brandväggsregler för att tillåta åtkomst till de globala tjänstslutpunkterna för Office 365| Fel i tjänsten eller klientprogramvaran kan inträffa om detta inte görs före fas 4  |
+| Säkerställa nätverksanslutningen till [URL:er och IP-adresser för Office 365-tjänster.](https://aka.ms/o365urls) | Alla klienter och tjänster hos kunden som används för att få åtkomst till Office 365-tjänsten måste kunna komma åt slutpunkterna för globala Office 365-tjänster. <br>Om du eller dina samarbetspartner har brandväggsregler som skulle förhindra åtkomst till URL:er och IP-adresser som listas i URL:er och IP-adresser för [Office 365-tjänster](https://aka.ms/o365urls) måste brandväggsregler ändra brandväggsregler för att ge åtkomst till de globala tjänstslutpunkterna för Office 365| Fel i tjänsten eller klientprogramvaran kan inträffa om detta inte görs före fas 4  |
 | Avbryt utvärderingsprenumerationer. | Utvärderingsprenumerationer migreras inte och kommer att blockera överföring av betalda prenumerationer. | Utvärderingstjänster har upphört att gälla och är inte fungerande om användare kommer åt dem efter att de har avbrytas. |
-| Analysera skillnaderna i licensfunktioner mellan Microsoft Cloud Deutschland och Office 365-tjänster. | Office 365-tjänster innehåller ytterligare funktioner och tjänster som inte är tillgängliga i den aktuella Microsoft Cloud Deutschland. Under prenumerationsöverföringen blir nya funktioner tillgängliga för användarna. | <ul><li> Analysera de olika funktionerna som tillhandahålls av licenserna för Microsoft Cloud Deutschland och Office 365-tjänster. Börja med [Tjänstbeskrivning för Office 365-plattformen.](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description) </li><li> Avgöra om några nya funktioner i Office 365-tjänsterna ska inaktiveras först för att begränsa effekter för användare eller ändringshantering samt ändra användarlicenstilldelningar efter behov. </li><li>Förbereda användare och supportpersonal för nya tjänster och funktioner som tillhandahålls av Office 365-tjänster. |
-| Skapa bevarandeprinciper för [hela organisationen för](../compliance/retention.md) att skydda från oavsiktlig borttagning av innehåll under migreringen.  |<ul><li>Kunder kan välja att aktivera en bevarandeprincip för hela organisationen för att säkerställa att innehåll inte oavsiktligt tas bort av slutanvändare under migreringen. </li><li>Bevarande är inte obligatoriskt, eftersom bevarande som sätts in när som helst under migreringen fungerar som förväntat, men att ha en bevarandeprincip är en säkerhetsmekanism för säkerhet. En bevarandeprincip kanske inte används av alla kunder, särskilt de som är oroliga för bevarandet.</li></ul>| Använd bevarandeprincip enligt beskrivningen i [Läs mer om bevarandeprinciper och bevarandeetiketter.](../compliance/retention.md) Fel i tjänsten eller klientprogramvaran kan inträffa om detta inte görs före fas 4 av 9. </li></ul>|
-| Rätt licens overage | I vissa fall kan kunder använda fler tjänster än vad som köps. Det här villkoret kallas för ett licensfel. Microsoft kan inte migrera kunder som har ett licensavbrott från Microsoft Cloud Deutschland till de tyska datacenterområdena. För att säkerställa kontinuerlig åtkomst till tjänsten och data kräver varje tilldelad användare en licens. | Alla kunder | Kunder måste utvärdera och lösa villkoret för licensavbrott genom köp av ytterligare licenser eller genom att ta bort licenser från användare. |
+| Analysera skillnaderna i licensfunktioner mellan Microsoft Cloud Deutschland och globala Office 365-tjänster. | Office 365-tjänster innehåller ytterligare funktioner och tjänster som inte är tillgängliga i den aktuella Microsoft Cloud Deutschland. Under prenumerationsöverföringen blir nya funktioner tillgängliga för användarna. | <ul><li> Analysera de olika funktionerna som tillhandahålls av licenserna för Microsoft Cloud Deutschland och Globala Office 365-tjänster. Börja med [Tjänstbeskrivning för Office 365-plattformen.](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description) </li><li> Avgöra om några nya funktioner i Office 365-tjänsterna ska inaktiveras först för att begränsa effekter för användare eller ändringshantering samt ändra användarlicenstilldelningar efter behov. </li><li>Förbereda användare och supportpersonal för nya tjänster och funktioner som tillhandahålls av Office 365-tjänster. |
+| Skapa bevarandeprinciper för [hela organisationen för](https://docs.microsoft.com/microsoft-365/compliance/retention) att skydda från oavsiktlig borttagning av innehåll under migreringen.  |<ul><li>Kunder kan välja att aktivera en bevarandeprincip för hela organisationen för att säkerställa att innehåll inte oavsiktligt tas bort av slutanvändare under migreringen. </li><li>Bevarande är inte obligatoriskt, eftersom bevarande som sätts in när som helst under migreringen fungerar som förväntat, men att ha en bevarandeprincip är en säkerhetsmekanism för säkerhet. En bevarandeprincip kanske inte används av alla kunder, särskilt de som är oroliga för bevarandet.</li></ul>| Använd bevarandeprincip enligt beskrivningen i [Läs mer om bevarandeprinciper och bevarandeetiketter.](https://docs.microsoft.com/microsoft-365/compliance/retention-policies) Fel i tjänsten eller klientprogramvaran kan inträffa om detta inte görs före fas 4 av 9. </li></ul>|
 |||||
+
+## <a name="dns"></a>DNS
+
+<!-- before phase 9 -->
+
+**Gäller för:** Kunder som har angett en _anpassad msoid_ CNAME i sin egen DNS-domän
+
+Om den konfigureras påverkar _msoid_ CNAME bara kunder som använder Office-skrivbordsklienten (Microsoft 365-appar, Office 365 ProPlus, Office 2019, 2016, ...).
+
+Om du har angett dns-CNAME med namnet _msoid_ i ett eller flera DNS-namnområden som du äger, måste du ta bort CNAME-namnet till slutet av fas 8 senast. Du kan ta bort _CNAME-msoid_ när som helst före slutet av fas 8.
+
+Kontrollera om du har angett ett CNAME i DNS-namnområdet genom att följa stegen nedan och ersätta _contoso.com_ med ditt eget domännamn:
+
+```console
+nslookup -querytype=CNMAE msoid.contoso.com
+```
+
+Om kommandoraden returnerar en DNS-post tar du bort _msoid_ CNAME från domänen.
 
 ## <a name="active-directory-federation-services-ad-fs"></a>AD FS (Active Directory Federation Services)
 
-**Gäller för:** Kunder som använder AD FS lokalt för att autentisera användare som ansluter till Microsoft Office 365
+<!-- before phase 4 -->
 
-| Steg | Beskrivning | Påverkan |
-|:-------|:-------|:-------|
-| [Säkerhetskopiering av AD FS-servergruppen (Active Directory Federation Services) för](ms-cloud-germany-transition-add-adfs.md#backup) katastrofåterställningsscenarier. | Kunder måste backa AD FS-servergruppen på rätt sätt för att säkerställa att beroende part-förtroenden för globala slutpunkter för & Germany kan återställas utan att utfärdare URI för domänerna vidrörs. Microsoft rekommenderar att du använder AD FS Rapid Restore för en säkerhetskopia av servergruppen och respektive återställning, om det behövs. | Åtgärd som krävs. Inaction will result in service impact during the migration if the AD FS farm of the customer fails. Mer information finns i [ADFS-migreringsstegen](./ms-cloud-germany-transition-add-adfs.md) |
-||||
+**Gäller för:** Kunder som använder AD FS lokalt för att autentisera användare som ansluter till Microsoft Office 365<br>
+**När den används:** Varje gång före fas 4 startar
 
-## <a name="exchange-online"></a>Exchange Online
-
-**Gäller för:** Exchange Online-kunder som har aktiverat delning av kalender och tillgänglighet för adressutrymme.
-
-| Steg | Beskrivning | Påverkan |
-|:-------|:-------|:-------|
-| Meddela externa partner om den kommande övergången till Office 365-tjänster. | I konfigurationer av tillgänglighetsadressutrymmet går det att dela ledig/upptagen-information med Office 365. | Om du inte gör det kan det leda till service- eller klientfel i en senare fas av kundmigrering. |
-|||||
-
-### <a name="exchange-online-hybrid-configuration"></a>Exchange Online-hybridkonfiguration
-
-**Gäller för:** Exchange Online-kunder med en aktiv Exchange-hybridkonfiguration
-
-| Steg | Beskrivning | Påverkan |
-|:-------|:-------|:-------|
-| Uppdatera till den senaste versionen av hybridkonfigurationsguiden (HCW) när som helst innan klientorganisationen anger migreringssteg 5. Du kan starta aktiviteten direkt när du har fått meddelandet om att migreringen av Office 365-klientorganisationen har startat.<br><br> Microsoft Cloud Deutschland-hybrid Exchange Online-kunder måste avinstallera tidigare versioner av HCW och sedan installera och köra den senaste versionen (17.0.5378.0 eller senare) från [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) . |<ul><li>Den senaste versionen av HCW innehåller nödvändiga uppdateringar för att stödja kunder som håller på att övergå från Microsoft Cloud Deutschland till Office 365-tjänster.</li><li> Uppdateringar omfattar ändringar av lokala certifikatinställningar för Skicka anslutaren och Receive-anslutningen.</li><li> Exchange-administratörer måste installera OM HCW när som helst innan fas 5 av 9 (Exchange-migrering) startar.<br>När du kör HCW före fas 5 väljer du "Office 365 Germany" på den andra sidan i HCW under _Office 365 Exchange Online_ i listrutan under Min Office _365-organisation_ är värd</li><li>**Obs!** När du har slutfört migreringen för Office 365-klientorganisationen tar du bort och installerar HCW igen, den här gången med hjälp av inställningarna för Office 365 i hela världen på den andra sidan av HCW-enheten för att slutföra hybridkonfigurationen med den globala Exchange Online-tjänsten.</li></ul>|Det går inte att köra HCW före fas 5 (Exchange-migrering) kan resultera i tjänst- eller klientfel. |
-||||
+Läsa och använda [ADFS-migreringsstegen](ms-cloud-germany-transition-add-adfs.md)
 
 ## <a name="sharepoint-online"></a>SharePoint Online
 
-**Gäller för:** Kunder som använder SharePoint 2013 lokalt
+<!-- before phase 4 -->
 
+**Gäller för:** Kunder som använder SharePoint 2013 lokalt<br>
+**När den används:** Varje gång före fas 4 startar
 
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
 | Begränsa SharePoint 2013-arbetsflöden som används under SharePoint Online-migreringen. | Minska SharePoint 2013-arbetsflöden och slutför direktarbetsflöden före övergångar. | Inaction may result in user confusion and help desk calls. |
 ||||
 
+## <a name="exchange-online"></a>Exchange Online
+
+<!-- before phase 5 -->
+
+**Gäller för:** Exchange Online-kunder som har aktiverat delning av kalender och tillgängligt adressutrymme<br>
+**När den används:** Någon tid före slutet av fas 9
+
+| Steg | Beskrivning | Påverkan |
+|:-------|:-------|:-------|
+| Meddela externa partner om den kommande övergången till Office 365-tjänster. | I konfigurationer av tillgänglighetsadressutrymmet går det att dela ledig/upptagen-information med Office 365. | Om du inte gör det kan det leda till service- eller klientfel i en senare fas av kundmigrering. |
+||||
+
+### <a name="exchange-online-hybrid-configuration"></a>Exchange Online-hybridkonfiguration
+
+**Gäller för:** Alla kunder som använder en aktiv Exchange-hybridkonfiguration med Exchange-servrar lokalt<br>
+**När den används:** Varje gång före fas 5 startar
+
+| Steg | Beskrivning | Påverkan |
+|:-------|:-------|:-------|
+| Uppdatera till den senaste versionen av hybridkonfigurationsguiden (HCW) när som helst innan klientorganisationen anger migreringssteg 5. Du kan starta aktiviteten direkt efter att du fått meddelandet i meddelandecentret om att migreringen av Office 365-klientorganisationen har startat (fas 1).<br>Exchange-administratören måste avinstallera tidigare versioner av HCW-enheten och sedan installera och köra den senaste versionen (17.0.5378.0 eller senare) från [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) . |<ul><li>Den senaste versionen av HCW innehåller nödvändiga uppdateringar för att stödja Exchange Online-migreringen från Microsoft Cloud Deutschland-instansen till Office 365 Global Services.</li><li> Uppdateringar omfattar ändringar av lokala certifikatinställningar för Skicka _anslutaren och_ _Receive-kopplingen_.</li><li>När du kör HCW före fas 5 väljer du "Office 365 Germany" på den andra sidan i HCW under _Office 365 Exchange Online_ i listrutan under Min Office _365-organisation_ är värd</li><li>**Obs!** När du har slutfört migreringen av Office 365-klientorganisationen efter fas 9 tar du bort och installerar HCW igen, den här gången med hjälp av inställningarna för "Office 365 Worldwide" på den andra sidan i HCW-enheten för att slutföra hybridkonfigurationen med den globala Exchange Online-tjänsten.</li></ul>|Det går inte att köra HCW före fas 5 (Exchange-migrering) kan resultera i tjänst- eller klientfel. |
+| Upprätta AuthServer lokalt som pekar på global SÄKERHETStokentjänst (STS) för autentisering | Detta säkerställer att autentiseringsförfrågningar för Exchange-tillgänglighetsförfrågningar från användare i migreringstillstånd som är mål för den lokala hybridmiljön autentiseras för åtkomst till den lokala tjänsten. På samma sätt säkerställer detta autentisering av förfrågningar från lokala till globala slutpunkter för Office 365-tjänster. | När Azure AD-migrering (fas 2) har slutförts måste administratören för den lokala Exchange-topologin (hybrid) lägga till en ny autentiseringstjänstslutpunkt för globala Office 365-tjänster. Med det här kommandot från Exchange PowerShell ersätter du med `<TenantID>` organisationens klientorganisations-ID som finns på Azure-portalen i Azure Active Directory.<br>`New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<TenantId>/metadata/json/1`<br> Om uppgiften inte slutförs kan det leda till hybridförfrågningar om ledig/upptagen-information som inte kan tillhandahålla information för postlådeanvändare som har migrerats från Microsoft Cloud Deutschland till Office 365-tjänster.  |
+||||
+
 ## <a name="skype-for-business-online"></a>Skype för företag online
 
-**Gäller för:** Skype för företag – Online-kunder
+<!-- before phase 7 -->
+
+**Gäller för:** Skype för företag – Online-kunder<br>
+**När den används:** Varje gång före fas 7 startar
 
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
@@ -100,9 +135,11 @@ Använd de här länkarna för att komma till de anvisningar som gäller i förv
 | Förbered utbildning och förberedelser för övergången till Microsoft Teams för slutanvändare och administration. | Se till att du har lyckats med övergången från Skype till Teams genom att planera användarkommunikation och beredskap. | <ul><li>Klienter måste vara medvetna om de nya tjänsterna och hur de ska använda när deras tjänster har övergåt till Office 365-tjänsterna. </li><li>När DNS-ändringar har gjorts för både kunddomänerna och den första domänen kan användarna logga in i Skype för företag och se till att de nu migreras till Teams. Det skulle även ladda ned skrivbordsklienten för Teams i bakgrunden. </li></ul>|
 ||||
 
-## <a name="mobile"></a>Mobil
+## <a name="mobile-device-management"></a>Hantering av mobila enheter
 
-Om du använder en MDM-lösning (Mobile Device Management) från tredje part:
+<!-- before phase 5 -->
+**Gäller för:** Kunder som använder en MDM-lösning (Mobile Device Management) från tredje part<br>
+**När den används:** Varje gång före fas 5 startar
 
 | Steg | Beskrivning | Gäller för | Påverkan |
 |:-------|:-----|:-------|:-------|
@@ -112,7 +149,10 @@ Om du använder en MDM-lösning (Mobile Device Management) från tredje part:
 
 ## <a name="line-of-business-apps"></a>Verksamhetsbaserade appar
 
-Om du använder en tredjepartstjänst eller verksamhetsbaserade appar som är integrerade med Office 365: 
+**Gäller för:** Kunder som använder verksamhetsbaserade appar (LOB) med slutpunkter från Microsoft Cloud Deutschland<br>
+**Används:** Efter slutförande av fas 2 och före slutet av fas 9
+
+Om du använder en tredjepartstjänst eller verksamhetsbaserade appar (LOB) som är integrerade med Office 365 måste du lösa eventuella beroenden av slutpunkter som tillhandahålls av Microsoft Cloud Deutschland-instansen. Om dina affärsprogram till exempel ansluter till `https://graph.microsoft.de/` måste du ändra slutpunkten till `https://graph.microsoft.com/` . Slutpunkterna för den globala Microsoft Office 365-tjänsten blir tillgängliga för din klientorganisation efter fas 2.
 
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
@@ -121,7 +161,7 @@ Om du använder en tredjepartstjänst eller verksamhetsbaserade appar som är in
 
 ## <a name="dynamics-365"></a>Dynamics 365
 
-**Gäller för:** Kunder som använder Microsoft Dynamics
+**Gäller för:** Kunder som använder Microsoft Dynamics 365
 
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
@@ -130,31 +170,21 @@ Om du använder en tredjepartstjänst eller verksamhetsbaserade appar som är in
 
 ## <a name="power-bi"></a>Power BI
 
-**Gäller för:** Power BI-kunder 
+**Gäller för:** Kunder som använder Power BI
 
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
 | Borttagning av objekt från Power BI-prenumerationer som inte migreras från Power BI Microsoft Cloud Deutschland till Office 365-tjänster. | Migrering av Power BI-tjänster kräver åtgärder från kunder för att ta bort vissa artefakter, till exempel datamängder och instrumentpaneler. | <ul><li>Administratörer kan behöva ta bort följande objekt från prenumerationen: </li><li>Real-Time datauppsättningar (till exempel strömmande datamängder eller push-datauppsättningar) </li><li>Konfiguration och datakälla för lokal Power BI-datagateway </li></ul>|
 ||||
 
-## <a name="dns"></a>DNS
-
-**Gäller för:** Kunder som använder Office-skrivbordsklienten (Microsoft 365-appar, Office 365 ProPlus, Office 2019, 2016, ...)<br>
-Ta bort MSOID, CName från kundägd DNS om det finns när som helst innan Azure Active Directory (Azure AD) klipps över. Du kan ange en TTL på 5 minuter så att ändringen snabbt kan genomföras.
-
-## <a name="federated-identity"></a>Federerad identitet
-
-| Steg | Beskrivning | Påverkan |
-|:-------|:-------|:-------|
-| Lägg till en identifierare för enkel inloggning (SSO) i ett befintligt beroende tredjepartsförtroende och inaktivera automatiska uppdateringar av AD FS-metadata. | Ett ID måste läggas till i DET AD FS-förtroende som parten litar på innan migreringen påbörjas. Inaktivera automatisk uppdatering av metadatauppdateringar för att undvika att tredjepartsidentifierare tas bort av misstag. <br><br> Kör det här kommandot som en enda kommandorad på AD FS-servern: <br>`Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:microsoftonline.de -Identifier @('urn:federation:microsoftonline.de', 'https://login.microsoftonline.de/extSTS.srf', 'https://login.microsoftonline.de') -AutoUpdate $False`
-| Organisationer med federerad autentisering | Åtgärd som krävs. Inaction before Phase 4 of 9 (SharePoint) will result in service impact during the migration.  |
-| Generera förlitande part-förtroende för globala Azure AD-slutpunkter. | Kunder måste manuellt skapa ett förtroende för förlitande part (RPT) till [globala](https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml) slutpunkter. Det gör du genom att lägga till en ny rapport för indatatjänst (RPT) via GUI genom att dra nytta av URL:en för globala federationsmetadata och sedan använda [Azure AD RPT-anspråksregler](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator#:~:text=%20Azure%20AD%20RPT%20Claim%20Rules%20%201,Azure%20AD.%20This%20will%20be%20what...%20More%20) (i AD FS-hjälpen) för att generera anspråksreglerna och importera dem till rapportgruppen. | Organisationer med federerad autentisering | Åtgärd som krävs. Inaction kommer att resultera i tjänst påverkan under migreringen. |
-|||||
-
 ## <a name="microsoft-azure"></a>Microsoft Azure
 
 Om du använder samma Azure Active Directory-identitetspartition för Office 365 och Microsoft Azure i Microsoft Cloud Deutschland-instansen ska du se till att du förbereder dig för en kunddriven migrering av Microsoft Azure-tjänster.
-Migreringen av Microsoft Azure-tjänster får inte startas innan din Office 365-klientorganisation har nått migrering fas 3 och måste slutföras innan migreringsfasen 8 har slutförts.
+
+> [!NOTE]
+> Migreringen av Microsoft Azure-tjänster får inte startas innan din Office 365-klientorganisation har nått migrering fas 3 och måste slutföras innan migreringsfasen 8 har slutförts.
+
+Kunder som använder Office 365- och Azure-resurser (till exempel nätverk, beräkning och lagring) migrerar resurser till Office 365-tjänstinstansen. Den här migreringen är kundens ansvar. Inlägg i Meddelandecenter signalerar start. Migreringen måste slutföras innan Azure AD-organisationen slutförs i Office 365-tjänstmiljön. För Azure-migreringar, se Azure-migreringsspelboken, [Översikt över migreringsvägledning för Azure Germany.](https://docs.microsoft.com/azure/germany/germany-migration-main)
 
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|

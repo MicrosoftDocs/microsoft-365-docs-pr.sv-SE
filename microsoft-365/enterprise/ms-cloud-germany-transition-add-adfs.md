@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: Ad FS-migreringssteg (Active Directory Federation Services) för migreringen från Microsoft Cloud Deutschland.'
-ms.openlocfilehash: 146f476a43e46925d87763a800467bf52adc73e5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 12465acf5b4afe7e252586ddd076250628b57dd3
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918912"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51165663"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>AD FS-migreringssteg för migreringen från Microsoft Cloud Deutschland
 
@@ -59,11 +59,11 @@ När du har slutfört och testat AD FS-säkerhetskopieringen utför du följande
 
 8. För AD FS 2012: Behåll Tillåt  alla användare att använda den här beroende parten markerad under Välj auktoriseringsregler i välj utfärdningsauktoriseringsregler och klicka på **Nästa.** 
 
-8. För AD FS 2016 och AD FS 2019: På sidan Välj åtkomstkontrollprincip väljer du lämplig åtkomstkontrollprincip och klickar på **Nästa.**  Om inget är valt fungerar inte lita på den beroende **partens** förtroende.
+9. För AD FS 2016 och AD FS 2019: På sidan Välj åtkomstkontrollprincip väljer du lämplig åtkomstkontrollprincip och klickar på **Nästa.**  Om inget är valt fungerar inte lita på den beroende **partens** förtroende.
 
-9. Klicka **på** Nästa på **sidan Är redo att lägga till** förtroende för att slutföra guiden.
+10. Klicka **på** Nästa på **sidan Är redo att lägga till** förtroende för att slutföra guiden.
 
-10. Klicka **på** Stäng på **sidan** Slutför.
+11. Klicka **på** Stäng på **sidan** Slutför.
 
 Genom att stänga guiden upprättas lita på den beroende parten med den globala Office 365-tjänsten. Det finns dock ännu inga regler för utfärdningstransformning.
 
@@ -74,7 +74,19 @@ Du kan använda [AD FS-hjälpen för](https://adfshelp.microsoft.com/AadTrustCla
 
 1. Kör **Generera anspråk i** AD [FS-hjälpen](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) och  kopiera PowerShell-skriptet med alternativet Kopiera i det övre högra hörnet i skriptet.
 
-2. Följ anvisningarna i AD [FS-hjälpen](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) om hur du kör PowerShell-skriptet i AD FS-servergruppen för att generera det globala litande partförtroendet.
+2. Följ anvisningarna i AD [FS-hjälpen](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) om hur du kör PowerShell-skriptet i AD FS-servergruppen för att generera det globala litande partförtroendet. Innan du kör skriptet ersätter du följande kodrader i det genererade skriptet enligt beskrivningen nedan:
+
+   ```powershell
+   # AD FS Help generated value
+   $claims = Get-AdfsRelyingPartyTrust -Identifier $(Get-RpIdentifier) | Select-Object IssuanceTransformRules;
+   # replace with
+   $claims = Get-AdfsRelyingPartyTrust -Identifier urn:federation:MicrosoftOnline | Select-Object IssuanceTransformRules;
+
+   # AD FS Help generated value
+   Set-AdfsRelyingPartyTrust -TargetIdentifier $(Get-RpIdentifier) -IssuanceTransformRules $RuleSet.ClaimRulesString;
+   # replace with
+   Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:MicrosoftOnline -IssuanceTransformRules $RuleSet.ClaimRulesString;
+   ```
 
 3. Kontrollera att två Relying PartyTtrusts finns. en för Microsoft Cloud Deutschland och en för den globala Office 365-tjänsten. Följande kommando kan användas för kontrollen. Den bör returnera två rader och respektive namn och identifierare.
 
@@ -86,9 +98,7 @@ Du kan använda [AD FS-hjälpen för](https://adfshelp.microsoft.com/AadTrustCla
 
 5. Under migreringen kontrollerar du regelbundet att AD FS-autentisering fungerar med Microsoft Cloud Deutschland och Microsoft Global-molnet i de olika migreringssteg som stöds.
 
-
 ## <a name="ad-fs-disaster-recovery-wid-database"></a>AD FS-katastrofåterställning (WID-databas)
-
 
 Om du vill återställa AD FS-servergruppen i en katastrof måste snabb återställningsverktyget för [AD FS](/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) utnyttjas. Därför måste verktyget laddas ned och innan migreringen startar måste en säkerhetskopia skapas och lagras på ett säkert sätt. I det här exemplet har följande kommandon körts för att backa upp en servergrupp som körs på en WID-databas:
 
@@ -112,7 +122,6 @@ Om du vill återställa AD FS-servergruppen i en katastrof måste snabb återst�
 
 4. Spara säkerhetskopian på ett säkert sätt på önskad destination.
 
-
 ### <a name="restore-an-ad-fs-farm"></a>Återställa en AD FS-servergrupp
 
 Om servergruppen misslyckades helt och det inte går att återgå till den gamla servergruppen gör du följande. 
@@ -126,7 +135,6 @@ Om servergruppen misslyckades helt och det inte går att återgå till den gamla
    ```
 
 3. Peka dina nya DNS-poster eller belastningsutjämnaren på de nya AD FS-servrarna.
-
 
 ## <a name="more-information"></a>Mer information
 

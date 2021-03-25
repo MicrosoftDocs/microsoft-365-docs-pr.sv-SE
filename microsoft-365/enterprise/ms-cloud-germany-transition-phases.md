@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: Sammanfattning Förstå åtgärderna i migreringsfaserna och hur de påverkar flytten från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i den nya tyska datacenterområdet.
-ms.openlocfilehash: 5e1bf9257cfd4751333e2e01789bb7dbaf2685fa
-ms.sourcegitcommit: 30c3054004ddc9d6059c11d55577552aa2464810
+ms.openlocfilehash: 53a8c9470093db9d57d8dc18f4242d1a596c6efd
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50939641"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51165639"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Åtgärder i migreringsfaser och påverkan på migreringen från Microsoft Cloud Deutschland (allmänt)
 
@@ -62,7 +62,7 @@ Följande avsnitt innehåller åtgärder och effekter för arbetsbelastningen me
 
 ## <a name="before-the-migration-starts"></a>Innan migreringen startar
 
-Kontrollera att du känner till stegen för [migreringsförberedelser som gäller för alla kunder.](ms-cloud-germany-transition-add-pre-work.md#applies-to-everyone)
+Kontrollera att du känner till stegen för [migreringsförberedelser som gäller för alla kunder.](ms-cloud-germany-transition-add-pre-work.md)
 
 Om du har angett dns-CNAME med namnet _msoid_ i ett eller flera DNS-namnområden som du äger, måste du ta bort CNAME-namnet till slutet av fas 8 senast. Du kan ta bort _CNAME-msoid_ när som helst före slutet av fas 8. Se [förarbetet med DNS.](ms-cloud-germany-transition-add-pre-work.md#dns)
 
@@ -111,7 +111,7 @@ Om du använder Exchange Online-hybrid: Exchange Online-hybridadministratörer m
 
 När migreringsfasen **9** är slutförd (när meddelandet om meddelandecenter publiceras) måste du köra HCW igen med hjälp av de globala inställningarna för Office 365 så att dina lokala system pekar på de globala Office 365-tjänsterna.
 
-Om du vill ändra användarfoton under fas 5, se [Set-UserPhoto](ms-cloud-germany-transition-add-experience.md#exchange-online-before-phase-5)
+Om du vill ändra användarfoton under fas 5 kan du gå till [Exchange OnlineSet-UserPhoto under fas 5.](ms-cloud-germany-transition-add-experience.md#exchange-online-set-userphoto-during-phase-5)
 
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
@@ -131,7 +131,7 @@ Ytterligare överväganden:
 
 - För befintliga Microsoft Cloud Deutschland-kunder eller användare som är under övergång kan det hända att en delad postlåda läggs till i Outlook med Arkiv **> Info >** Lägg till konto och kalenderbehörigheter kan misslyckas (Outlook-klienten försöker använda Rest `https://outlook.office.de/api/v2.0/Me/Calendars` API). Kunder som vill lägga till ett konto för att visa kalenderbehörigheter kan lägga till registernyckeln enligt beskrivningen i Ändringar i användarupplevelsen för delning av en kalender i [Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) för att säkerställa att den här åtgärden lyckas. Den här registernyckeln kan distribueras i hela organisationen med hjälp av Grupprincip.
 
-- Under migreringsfasen kan användning av **PowerShell-cmdlets Ny migreringEndpoint,** **Set-MigrationEndpoint** och **Test-MigrationsServerAvailability** resultera i fel (fel på proxy). Det här inträffar när skiljebrevlådan har migrerats till hela världen men administratörspostlådan inte har det eller vice versa. Du kan lösa problemet genom att använda skiljepostlådan som tips om routning i **ConnectionUri** när du skapar PowerShell-klientsessionen. Ett exempel:
+- Under migreringsfasen kan användning av **PowerShell-cmdlets Ny migreringEndpoint,** **Set-MigrationEndpoint** och **Test-MigrationsServerAvailability** resultera i fel (fel på proxy). Det här inträffar när skiljebrevlådan har migrerats till hela världen men administratörspostlådan inte har det eller vice versa. Du kan lösa problemet genom att använda skiljepostlådan som tips om routning i **ConnectionUri** när du skapar PowerShell-klientsessionen. Till exempel:
 
 ```powershell
 New-PSSession 
@@ -211,11 +211,11 @@ Kunder med Dynamics 365 kräver ytterligare engagemang för att migrera organisa
 
 För klientorganisationen av Office 365 under övergången till regionen "Tyskland" måste alla användare stänga, logga ut från Office 365 och tillbaka in för alla Office-skrivbordsprogram (Word, Excel, PowerPoint, Outlook osv.) och OneDrive för företag-klienten när klientorganisationens migrering har nått fas 9. Genom att logga ut och in kan Office-tjänsterna hämta nya autentiseringstoken från den globala Azure AD-tjänsten.
 
-Kontrollera att du har slutfört [proceduren för mobila](ms-cloud-germany-transition-add-pre-work.md#mobile) enheter.
+Kontrollera att du har slutfört [proceduren för mobila](ms-cloud-germany-transition-add-pre-work.md#mobile-device-management) enheter.
 
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
-| Klienter, Office Online under office-klientens övergången, slutför Azure AD klientorganisationens omfattning så att den pekar på Office 365-tjänsterna. | Med den här konfigurationsändringen kan Office-klienter uppdatera och peka på Slutpunkter för Office 365-tjänster. | <ul><li>Meddela användarna att stänga _alla_ Office-program och logga in igen (eller tvinga klienter att starta om och användarna att logga in) för att aktivera Office-klienter för att hämta ändringen. </li><li>Meddela användare och supportpersonal  att användarna kan se en Office-banderoll som uppmanar dem att återaktivera Office-program inom 72 timmar efter övergången. </li><li>Alla Office-program på persondatorer måste vara stängda och användarna måste logga ut och sedan logga in igen. I det gula aktiveringsfältet loggar du in för att återaktivera mot Office 365-tjänster.</li><li>Delade datorer kräver åtgärder som liknar personliga maskiner och kräver ingen särskild procedur. </li><li>På mobila enheter måste användarna logga ut från appar, stänga dem och sedan logga in igen. </li></ul>|
+| Klienter, Office Online under office-klientens övergången, slutför Azure AD klientorganisationens omfattning så att den pekar på Office 365-tjänsterna. | Med den här konfigurationsändringen kan Office-klienter uppdatera och peka på Slutpunkter för Office 365-tjänster. | <ul><li>Meddela användarna att stänga _alla_ Office-program och logga in igen (eller tvinga klienter att starta om och användarna att logga in) för att aktivera Office-klienter för att hämta ändringen. </li><li>Meddela användare och supportpersonal  att användarna kan se en Office-banderoll som uppmanar dem att återaktivera Office-program inom 72 timmar efter övergången. </li><li>Alla Office-program på persondatorer måste vara stängda och användarna måste logga ut och sedan logga in igen. I det gula aktiveringsfältet loggar du in för att återaktivera mot Office 365-tjänster.</li><li>Delade datorer kräver åtgärder som liknar personliga maskiner och kräver ingen särskild procedur. </li><li>På mobila enheter måste användarna logga ut från appar, stänga dem och sedan logga in igen.</li></ul>|
 ||||
 
 ## <a name="line-of-business-apps"></a>Verksamhetsbaserade appar
