@@ -1,0 +1,104 @@
+### YamlMime:Landing
+title: Dokumentation om Microsoft Defender för slutpunkt
+summary: Microsoft Defender för Endpoint tillhandahåller förebyggande skydd, identifiering efter intrång, automatisk undersökning och svar.
+metadata:
+  title: Dokumentation om Microsoft Defender för slutpunkt
+  description: Läs mer om Microsoft Defender för Endpoint och maximera de inbyggda säkerhetsfunktionerna för att skydda enheter, identifiera skadlig aktivitet och åtgärda hot# Krävs. beskrivning av artikeln som visas i sökresultatet. < 160 tecken.
+  services: office-365-security-compliance
+  ms.service: O365-seccomp
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: m365-security-compliance
+  author: mjcaparas
+  ms.author: macapara
+  ms.date: 02/5/2021
+  localization_priority: Priority
+  ms.openlocfilehash: a183f4d09b596f6dbecf2dc0636ff516b1b26eb6
+  ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+  ms.translationtype: MT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 03/23/2021
+  ms.locfileid: "51075761"
+landingContent:
+- title: Microsoft Defender för Endpoint
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vad är Microsoft Defender för Endpoint?
+      url: microsoft-defender-advanced-threat-protection.md
+  - linkListType: whats-new
+    links:
+    - text: Vad är nytt i Microsoft Defender för Slutpunkt
+      url: whats-new-in-microsoft-defender-atp.md
+  - linkListType: video
+    links:
+    - text: Översiktsvideo
+      url: https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0
+- title: Utvärdera & distribuera tjänsten
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Utvärdera Microsoft Defender för slutpunkt
+      url: evaluation-lab.md
+    - text: Planera distributionen
+      url: deployment-strategy.md
+  - linkListType: deploy
+    links:
+    - text: Distributionsguide
+      url: deployment-phases.md
+    - text: Onboard-enheter som stöds
+      url: onboard-configure.md
+  - linkListType: how-to-guide
+    links:
+    - text: Migreringsguide
+      url: migration-guides.md
+  - linkListType: video
+    links:
+    - text: Introduktionsvideo
+      url: https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr
+- title: Säkerhetsåtgärder
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Identifiering och svar av slutpunkter
+      url: overview-endpoint-detection-response.md
+    - text: Blockering av blockeringar och inneslutning
+      url: behavioral-blocking-containment.md
+    - text: Automatiserad undersökning och svar (AIR)
+      url: automated-investigations.md
+    - text: Avancerad jakt
+      url: advanced-hunting-overview.md
+    - text: Microsoft Threat Experts
+      url: microsoft-threat-experts.md
+    - text: Analys av hot
+      url: threat-analytics.md
+- title: Använda Microsoft Defender för Slutpunkt på andra plattformar
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Microsoft Defender för Slutpunkt för Mac
+      url: microsoft-defender-endpoint-mac.md
+    - text: Microsoft Defender för slutpunkt för iOS
+      url: microsoft-defender-endpoint-ios.md
+    - text: Microsoft Defender för Endpoint för Linux
+      url: microsoft-defender-endpoint-linux.md
+    - text: Microsoft Defender för slutpunkt för Android
+      url: microsoft-defender-endpoint-android.md
+- title: Referens
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Hanterings- och API:er
+      url: management-apis.md
+    - text: Partnerintegrering
+      url: partner-integration.md
+- title: Säkerhetsadministration
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Hot & sårbarhetshantering
+      url: next-gen-threat-and-vuln-mgt.md
+    - text: Minskning av attackytan
+      url: overview-attack-surface-reduction.md
+    - text: Nästa generations skydd
+      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10
