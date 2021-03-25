@@ -17,12 +17,12 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 7a33fdf1436d88906257c8b603a5da579c2e3846
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: afdf4b4ec8824fa49843074880bcd6f4f1857cca
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076690"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200275"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Konfigurera funktioner för automatisk undersökning och svar i Microsoft 365 Defender
 
@@ -46,7 +46,7 @@ När du är konfigurerad kan du [sedan Visa och hantera åtgärder i Åtgärdsce
 |Prenumerationskrav |En av dessa prenumerationer: <br/>- Microsoft 365 E5<br/>- Microsoft 365 A5<br/>- Microsoft 365 E5 – säkerhet<br/>- Microsoft 365 A5 – säkerhet<br/>- Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5<p> Se [Licenskrav för Microsoft 365 Defender.](./prerequisites.md#licensing-requirements)|
 |Nätverkskrav |- [Microsoft Defender för identitet](/azure-advanced-threat-protection/what-is-atp) aktiverad<br/>- [Microsoft Cloud App Security konfigurerad](/cloud-app-security/what-is-cloud-app-security)<br/>- [Microsoft Defender för identitetsintegrering](/cloud-app-security/mdi-integration) |
 |Datorkrav för Windows |– Windows 10, version 1709 eller senare installerade (se [versionsinformation för Windows 10)](/windows/release-information/) <br/>- Följande skyddstjänster för hot har konfigurerats:<br/>- [Microsoft Defender för Slutpunkt](../defender-endpoint/configure-endpoints.md)<br/>- [Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) |
-|Skydd för e-postinnehåll och Office-filer |[Konfigurerad av Microsoft Defender för Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365#configure-atp-policies) |
+|Skydd för e-postinnehåll och Office-filer |[Konfigurerad av Microsoft Defender för Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) |
 |Behörigheter | Om du vill konfigurera funktioner för automatisk undersökning och svar måste du ha rollen Global administratör eller Säkerhetsadministratör tilldelad i antingen Azure Active Directory ( ) eller i administrationscentret för [https://portal.azure.com](https://portal.azure.com) Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ).<p>Information om hur du får de behörigheter som krävs för att arbeta med automatiska undersöknings- och svarsfunktioner, till exempel att granska, godkänna eller avvisa väntande åtgärder, finns i Obligatoriska behörigheter för aktiviteter [i Åtgärdscenter.](m365d-action-center.md#required-permissions-for-action-center-tasks) |
 
 ## <a name="review-or-change-the-automation-level-for-device-groups"></a>Granska eller ändra automationsnivån för enhetsgrupper
@@ -61,21 +61,21 @@ Om automatiserade undersökningar körs och om åtgärder vidtas automatiskt ell
 
 ## <a name="review-your-security-and-alert-policies-in-office-365"></a>Granska dina principer för säkerhet och aviseringar i Office 365
 
-Microsoft tillhandahåller inbyggda [aviseringsprinciper som](../../compliance/alert-policies.md) hjälper till att identifiera vissa risker. Dessa risker omfattar missbruk av behörigheter för Exchange-administratörer, skadlig programvara, potentiella externa och interna hot samt informationsstyrningsrisker. Vissa aviseringar kan utlösa [automatisk undersökning och svar i Office 365.](../defender-365-security/office-365-air.md) Kontrollera att funktionerna [i Microsoft Defender för Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365) är korrekt konfigurerade.
+Microsoft tillhandahåller inbyggda [aviseringsprinciper som](../../compliance/alert-policies.md) hjälper till att identifiera vissa risker. Dessa risker omfattar missbruk av behörigheter för Exchange-administratörer, skadlig programvara, potentiella externa och interna hot samt informationsstyrningsrisker. Vissa aviseringar kan utlösa [automatisk undersökning och svar i Office 365.](../office-365-security/office-365-air.md) Kontrollera att funktionerna [i Microsoft Defender för Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) är korrekt konfigurerade.
 
 Även om vissa varningar och säkerhetsprinciper kan utlösa automatiska undersökningar, vidtas inga åtgärder automatiskt för e-post och innehåll. I stället väntar alla åtgärder för e-post- och e-postinnehåll på godkännande från säkerhetsåtgärdsteamet i [Åtgärdscenter.](m365d-action-center.md)
 
-Säkerhetsinställningar i Office 365 hjälper till att skydda e-post och innehåll. Om du vill visa eller ändra dessa inställningar följer du [vägledning i Skydda mot hot.](../defender-365-security/protect-against-threats.md)
+Säkerhetsinställningar i Office 365 hjälper till att skydda e-post och innehåll. Om du vill visa eller ändra dessa inställningar följer du [vägledning i Skydda mot hot.](../office-365-security/protect-against-threats.md)
 
 1. Gå till Skydd mot hot i Microsoft 365 [https://security.microsoft.com](https://security.microsoft.com)   >  **Säkerhetscenter**( ).
-2. Kontrollera att alla följande principer har konfigurerats. Mer information om hur du får hjälp och [rekommendationer finns i Skydda mot hot.](/microsoft-365/security/defender-365-security/protect-against-threats)
-   - [Skydd mot skadlig programvara (Office 365)](../defender-365-security/protect-against-threats.md#part-1---anti-malware-protection)
-   - [Skydd mot nätfiske i Defender för Office 365)](../defender-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
-   - [Säkra bifogade filer (Office 365)](../defender-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
-   - [Säkra länkar (Office 365)](../defender-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
-   - [Skräppostskydd (Office 365)](../defender-365-security/protect-against-threats.md#part-3---anti-spam-protection)
-3. Kontrollera att [Microsoft Defender för Office 365 för SharePoint, OneDrive och Microsoft Teams](../defender-365-security/protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on) är aktiverat.
-4. Se till [att automatisk rensning med nolltimmar för e-postskydd](../defender-365-security/protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop) är i kraft.
+2. Kontrollera att alla följande principer har konfigurerats. Mer information om hur du får hjälp och [rekommendationer finns i Skydda mot hot.](/microsoft-365/security/office-365-security/protect-against-threats)
+   - [Skydd mot skadlig programvara (Office 365)](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection)
+   - [Skydd mot nätfiske i Defender för Office 365)](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
+   - [Säkra bifogade filer (Office 365)](../office-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
+   - [Säkra länkar (Office 365)](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
+   - [Skräppostskydd (Office 365)](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection)
+3. Kontrollera att [Microsoft Defender för Office 365 för SharePoint, OneDrive och Microsoft Teams](../office-365-security/protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on) är aktiverat.
+4. Se till [att automatisk rensning med nolltimmar för e-postskydd](../office-365-security/protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop) är i kraft.
 5. (Det här steget är valfritt.) Granska dina [aviseringsprinciper för Office 365](../../compliance/alert-policies.md) i efterlevnadscentret för Microsoft 365 ( [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) ). Flera standardaviseringsprinciper finns i kategorin Hothantering. Vissa av dessa varningar kan utlösa automatisk undersökning och svar. Mer information finns i [Standardaviseringsprinciper](../../compliance/alert-policies.md#default-alert-policies).
 
 ## <a name="make-sure-microsoft-365-defender-is-turned-on"></a>Kontrollera att Microsoft 365 Defender är aktiverat

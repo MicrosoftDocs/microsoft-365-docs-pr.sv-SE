@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 41c97d122362ec1fa945fc012ab7a1da46a43b68
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: ed6f6b42570a908a1f4a83d46ef5b2de0c558692
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165591"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199747"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurera avancerade funktioner i Defender för Slutpunkt
 
@@ -141,7 +141,7 @@ När du aktiverar den här funktionen kan du införliva data från Avancerat sky
 > [!NOTE]
 > Du måste ha rätt licens för att aktivera den här funktionen.
 
-Om du vill få sammanhangsbaserad enhetsintegration i Office 365 Threat Intelligence måste du aktivera Defender för Slutpunktsinställningar i instrumentpanelen för & säkerhet och efterlevnad. Mer information finns i Undersökning [av hot och svar.](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-ti)
+Om du vill få sammanhangsbaserad enhetsintegration i Office 365 Threat Intelligence måste du aktivera Defender för Slutpunktsinställningar i instrumentpanelen för & säkerhet och efterlevnad. Mer information finns i Undersökning [av hot och svar.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti)
 
 ## <a name="microsoft-threat-experts"></a>Microsoft Threat Experts
 

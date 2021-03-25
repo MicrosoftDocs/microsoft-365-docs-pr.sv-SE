@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 5ee19b96823d1cdba0f6523686e8deefed79ba99
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 66e1bfa8007a972a1963745857a25e1e255634b6
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071466"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200191"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsofts säkerhetsportaler och administrationscenter
 
@@ -42,7 +42,7 @@ Säkerhetsoperatorer och administratörer kan gå till följande portaler för a
 |---|---|---| 
 | Microsoft 365 Säkerhetscenter | Övervaka och reagera på hotaktiviteter och stärka säkerheten genom dina identiteter, e-postmeddelanden, data, slutpunkter och appar med [Microsoft 365 Defender](microsoft-365-defender.md) | [security.microsoft.com](https://security.microsoft.com/) |
 | Microsoft Defender Säkerhetscenter | Övervaka och reagera på hotaktiviteter på dina slutpunkter med hjälp av funktioner som tillhandahålls av [Microsoft Defender för slutpunkten](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) | [securitycenter.windows.com](https://securitycenter.microsoft.com/) |
-| Säkerhets- och efterlevnadscenter | Hantera [Exchange Online Protection och](../defender-365-security/exchange-online-protection-overview.md?view=o365-worldwide) Microsoft Defender för Office [365](/microsoft-365/security/defender-365-security/defender-for-office-365?view=o365-worldwide) för att skydda dina e-post- och samarbetstjänster och säkerställa efterlevnad av olika regler för datahantering | [protection.office.com](https://protection.office.com) |
+| Säkerhets- och efterlevnadscenter | Hantera [Exchange Online Protection och](../office-365-security/exchange-online-protection-overview.md?view=o365-worldwide) Microsoft Defender för Office [365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide) för att skydda dina e-post- och samarbetstjänster och säkerställa efterlevnad av olika regler för datahantering | [protection.office.com](https://protection.office.com) |
 | Azure Defender-portalen | Använd [Azure Defender för](/azure/security-center/security-center-intro) att förstärka säkerheten hos dina datacenter och dina hybridarbetsbelastningar i molnet | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
 | Microsoft Defender för identitetsportalen | Identifiera, identifiera och undersöka avancerade hot, komprometterade identiteter och skadliga Insider-åtgärder med hjälp av Active Directory-signaler med [Microsoft Defender för identitet](/azure-advanced-threat-protection/what-is-atp) | [portal.atp.azure.com](https://portal.atp.azure.com/) |
 | Säkerhetsportal för Cloud App | Använd [Microsoft Cloud App Security för](/cloud-app-security/what-is-cloud-app-security) att få avancerad synlighet, kontroll över dataresor och avancerad analys för att identifiera och bekämpa cyberhot mot molntjänster | [portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/) |

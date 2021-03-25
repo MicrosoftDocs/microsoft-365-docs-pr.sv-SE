@@ -22,12 +22,12 @@ ms.custom: autoir
 ms.date: 01/29/2021
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: fa73756aa9f350793c00a7e4a960c215627b712f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c81f824a0faaca1c228aa650c003576cce210a67
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51072753"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199213"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Åtgärdsåtgärder i Microsoft 365 Defender
 
@@ -45,7 +45,7 @@ Under och efter en automatiserad undersökning i Microsoft 365 Defender identifi
 > Om åtgärder vidtas automatiskt eller bara på godkännande beror på vissa inställningar, till exempel hur automatiseringsnivåer används. Mer information finns i följande artiklar:
 > - [Konfigurera automatisk undersökning och svarsfunktioner i Microsoft 365 Defender](m365d-configure-auto-investigation-response.md)
 > - [Hur hot åtgärdas på enheter](../defender-endpoint/automated-investigations.md)
-> - [Hot och åtgärdsåtgärder för e-& och samarbetsinnehåll](../defender-365-security/air-remediation-actions.md#threats-and-remediation-actions)
+> - [Hot och åtgärdsåtgärder för e-& och samarbetsinnehåll](../office-365-security/air-remediation-actions.md#threats-and-remediation-actions)
 
 I följande tabell sammanfattas de åtgärder som stöds för närvarande i Microsoft 365 Defender: 
 
@@ -76,7 +76,7 @@ Förutom åtgärder som följer på automatiska undersökningar kan säkerhetsop
 - Manuell enhetsåtgärd, till exempel enhetsisolering eller karantänen för filer.
 - Manuell e-poståtgärd, till exempel mjuk borttagning av e-postmeddelanden. 
 - [Avancerad sökåtgärd](../defender-endpoint/advanced-hunting-overview.md) på enheter eller e-post.
-- [Åtgärden](../defender-365-security/threat-explorer.md) i Utforskaren för e-postinnehåll, t.ex. flytta e-post till skräppost, mjuk borttagning av e-post eller borttagning av e-post.
+- [Åtgärden](../office-365-security/threat-explorer.md) i Utforskaren för e-postinnehåll, t.ex. flytta e-post till skräppost, mjuk borttagning av e-post eller borttagning av e-post.
 - Manuell [svarsåtgärd,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) till exempel ta bort en fil, stoppa en process och ta bort en schemalagd aktivitet.
 - Åtgärd för livesvar med Microsoft Defender för [slutpunkts-API:er,](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)till exempel att isolera en enhet, köra en antivirussökning och hämta information om en fil. 
 

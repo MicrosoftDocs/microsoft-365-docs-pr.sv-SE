@@ -583,3 +583,7 @@
 #### [Felsöka problem med att minska attackytan]()
 ##### [Nätverksskydd](troubleshoot-np.md)
 ##### [Minskningsregler för attackytor](troubleshoot-asr.md)
+
+# [Microsoft 365-säkerhet](../index.yml)
+# [Microsoft 365 Defender](../defender/index.yml)
+# [Defender förr Office 365](../office-365-security/overview.md)

@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 746ca59fd0e9eb0d93d93c00b6a279a9156cc524
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: da70bbfe5c4dfa4f9eda16adec709826de1247b7
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050744"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200023"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>För identitet och vidarestöld – En arkitekts byggnad
 
@@ -135,7 +135,7 @@ Om du godkänner denna utökade auktoriseringsdefinition måste du implementera 
 - [Azure AD Identity Protection](/azure/active-directory/identity-protection/) 
 - [Microsoft Defender for Identity](/azure-advanced-threat-protection/)
 - [Microsoft Defender för Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Microsoft Defender för Office 365](../security/defender-365-security/defender-for-office-365.md?view=o365-worldwide)
+- [Microsoft Defender för Office 365](../security/office-365-security/defender-for-office-365.md?view=o365-worldwide)
 - [Microsoft Cloud App Security](/cloud-app-security/) (MCAS)
 - [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md?view=o365-worldwide)
 - [Microsoft Intune](/mem/intune/)
@@ -227,7 +227,7 @@ Ibland anropas scenarier för att lägga till en extern användare till en roll 
 
 ### <a name="security-and-compliance-center-scc"></a>Säkerhets- och efterlevnadscenter (SCC)
 
-[Behörigheter i Säkerhets- och efterlevnadscenter för Office 365 &](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md) är en samling "rollgrupper", som är separata och skiljer sig från Azure AD-roller. Det kan vara förvirrande eftersom vissa av dessa rollgrupper har samma namn som Azure AD-roller (till exempel Säkerhetsläsare), men de kan ha olika medlemskap. Jag föredrar användningen av Azure AD-roller. Varje rollgrupp består av en eller flera "roller" (se vad jag menar med att återanvända samma ord?) och har medlemmar från Azure AD, som är e-postaktiverade objekt. Du kan också skapa en rollgrupp med samma namn som en roll, som kanske innehåller eller inte innehåller den rollen (undvik den här förvirringen).
+[Behörigheter i Säkerhets- och efterlevnadscenter för Office 365 &](../security/office-365-security/permissions-in-the-security-and-compliance-center.md) är en samling "rollgrupper", som är separata och skiljer sig från Azure AD-roller. Det kan vara förvirrande eftersom vissa av dessa rollgrupper har samma namn som Azure AD-roller (till exempel Säkerhetsläsare), men de kan ha olika medlemskap. Jag föredrar användningen av Azure AD-roller. Varje rollgrupp består av en eller flera "roller" (se vad jag menar med att återanvända samma ord?) och har medlemmar från Azure AD, som är e-postaktiverade objekt. Du kan också skapa en rollgrupp med samma namn som en roll, som kanske innehåller eller inte innehåller den rollen (undvik den här förvirringen).
 
 Det här är i en mening en vidareutveckling av modellen för Exchange-rollgrupper. Exchange Online har dock ett eget gränssnitt [för hantering av rollgrupper.](/exchange/permissions-exo) Vissa rollgrupper i Exchange Online är låsta och hanteras från Azure AD eller Säkerhets- och efterlevnadscenter för &, men andra kan ha samma eller liknande namn och hanteras i Exchange Online (något som också är förvirrande). Jag rekommenderar att du undviker att använda Exchange Online-användargränssnittet såvida du inte behöver omfattningar för Exchange-hantering.
 

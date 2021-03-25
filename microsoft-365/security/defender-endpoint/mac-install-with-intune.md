@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb2923c3f2cb3f27a864fdc3c5070107998823d5
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 94cb92974b0e73a1254fd024c39d9a6ee620aad3
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51074882"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199543"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-for-mac"></a>Intune-baserad distribution för Microsoft Defender för Endpoint för Mac
 
@@ -137,7 +137,7 @@ Du behöver ingen särskild etablering för en Mac-enhet utöver en vanlig [för
 
 1. Bekräfta enhetshantering.
 
-    ![Bekräfta skärmbilden på enhetshantering](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-3-confirmdevicemgmt)
+    ![Bekräfta skärmbilden på enhetshantering](./images/mdatp-3-confirmdevicemgmt.png)
 
     Välj **Öppna systeminställningar**, leta **reda på Hanteringsprofil** i listan och välj **Godkänn...**. Din hanteringsprofil visades som **verifierad:**
 
@@ -160,9 +160,9 @@ Så här godkänner du systemtilläggen:
 
 2. Välj ett namn för profilen. Ändra **Platform=macOS** till **Profiltyp=Tillägg.** Välj **Skapa**.
 
-3. Ge den `Basics` här nya profilen ett namn på fliken.
+3. Ge den **här nya** profilen ett namn på fliken Grunder.
 
-4. Lägg `Configuration settings` till följande poster i avsnittet på `Allowed system extensions` fliken:
+4. På fliken **Konfigurationsinställningar** lägger du till följande poster i avsnittet Tillåtna **systemtillägg:**
 
     Paketidentifierare         | Teamidentifierare
     --------------------------|----------------
@@ -170,9 +170,9 @@ Så här godkänner du systemtilläggen:
     com.microsoft.wdav.netext | UBF8T346G9
 
     > [!div class="mx-imgBorder"]
-    > ![Skärmbild av fliken Konfigurationsinställningar, inklusive avsnittet Tillåtna teamidentifierare](images/mac-system-extension-intune2.png)
+    > ![Skärmbild av tilläggsinställningarna i Konfigurationsinställningar på fliken Grunder](images/mac-system-extension-intune2.png)
 
-5. På fliken `Assignments` tilldelar du den här profilen **till Alla användare & alla enheter.**
+5. På fliken **Uppgifter tilldelar** du den här profilen till **Alla användare & Alla enheter.**
 
 6. Granska och skapa den här konfigurationsprofilen.
 
@@ -186,7 +186,7 @@ Så här godkänner du systemtilläggen:
 
 4. Välj **OK**.
 
-    ![Skärmbild av systemkonfigurationsprofiler](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-6-systemconfigurationprofiles)
+    ![Importera en konfiguration från en fil för anpassad konfigurationsprofil](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-6-systemconfigurationprofiles)
 
 5. Välj   >  **Hantera uppgifter.** På fliken **Inkludera** väljer du **Tilldela till alla användare & alla enheter.**
 
@@ -194,14 +194,14 @@ Så här godkänner du systemtilläggen:
 
 7. Skapa en annan profil, ge den ett namn och ladda upp intune/WindowsDefenderATPOnboarding.xml filen.
 
-8. Ladda `fulldisk.mobileconfig` ned från vår [GitHub-lagringsplats](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) och spara den som `tcc.xml` . Skapa en annan profil, ge den ett namn och ladda upp filen till den.<a name="create-system-configuration-profiles-step-8" id = "create-system-configuration-profiles-step-8"></a>
+8. Ladda **ned fulldisk.mobileconfig från** vår [GitHub-lagringsplats](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) och spara den **tcc.xml**. Skapa en annan profil, ge den ett namn och ladda upp filen till den.<a name="create-system-configuration-profiles-step-8" id = "create-system-configuration-profiles-step-8"></a>
 
    > [!CAUTION]
    > macOS 10.15 (Catalina) innehåller nya förbättringar av säkerhet och sekretess. Från och med den här versionen kan program som standard inte komma åt vissa platser på disken (till exempel Dokument, Nedladdningar, Skrivbord osv.) utan uttryckligt medgivande. Om inget sådant medgivande getts kan Inte Microsoft Defender för Endpoint skydda din enhet fullt ut.
    >
    > Den här konfigurationsprofilen beviljar Fullständig diskåtkomst till Microsoft Defender för Endpoint. Om du tidigare har konfigurerat Microsoft Defender för Slutpunkt via Intune rekommenderar vi att du uppdaterar distributionen med den här konfigurationsprofilen.
 
-9. Som en del av funktionerna Identifiering av slutpunkt och svar inspekterar Microsoft Defender för Slutpunkt för Mac sockettrafik och rapporterar den här informationen till Microsoft Defender Säkerhetscenter-portalen. Med följande princip kan nätverkstillägget utföra de här funktionerna. Ladda `netfilter.mobileconfig` ned från vår [GitHub-lagringsplats](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig), spara den netext.xml och distribuera den med samma steg som i föregående avsnitt. <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
+9. Som en del av funktionerna Identifiering av slutpunkt och svar inspekterar Microsoft Defender för Slutpunkt för Mac sockettrafik och rapporterar den här informationen till Microsoft Defender Säkerhetscenter-portalen. Med följande princip kan nätverkstillägget utföra de här funktionerna. Ladda **ned netfilter.mobileconfig** från vår [GitHub-lagringsplats](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig), spara den som netext.xml och distribuera den med samma steg som i föregående avsnitt. <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
 
 10. Om du vill tillåta Microsoft Defender för Slutpunkt för Mac och Microsoft Auto Update att visa meddelanden i användargränssnittet på macOS 10.15 (Catalina) laddar du ned från vår GitHub-lagringsplats och importerar den som en anpassad `notif.mobileconfig` nyttolast. [](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) <a name = "create-system-configuration-profiles-step-10" id = "create-system-configuration-profiles-step-10"></a>
 
@@ -210,7 +210,7 @@ Så här godkänner du systemtilläggen:
 När Intune-ändringarna har spridits till de registrerade enheterna kan du se dem under **Övervaka**  >  **enhetsstatus:**
 
 > [!div class="mx-imgBorder"]
-> ![Skärmbild av kext – Enhetsstatus](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-7-devicestatusblade)
+> ![Vy över enhetsstatus i bildskärm](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-7-devicestatusblade.png)
 
 ## <a name="publish-application"></a>Publicera program
 
@@ -222,7 +222,7 @@ När Intune-ändringarna har spridits till de registrerade enheterna kan du se d
 
 4. Välj **Konfigurera** och lägg till den information som krävs.
 
-5. Använd **macOS High Sierra 10.13** som lägsta OPERATIVSYSTEM.
+5. Använd **macOS High Sierra 10.14** som lägsta OPERATIVSYSTEM.
 
 6. Ställ *in Ignorera programversion* på **Ja.** Andra inställningar kan vara valfria värden.
 
@@ -232,12 +232,12 @@ När Intune-ändringarna har spridits till de registrerade enheterna kan du se d
     > Om versionen som laddas upp av Intune är lägre än versionen på enheten installeras den lägre versionen, vilket innebär att Microsoft Defender för Slutpunkt nedgraderas. Det kan resultera i att programmet inte fungerar. Mer information om hur produkten uppdateras finns i Distribuera uppdateringar för Microsoft Defender för Endpoint för [Mac.](mac-updates.md) Om du har distribuerat Microsoft Defender för Slutpunkt *med Ignorera app-version* inställd **på Nej** ändrar du det till **Ja.** Om Microsoft Defender för slutpunkt fortfarande inte kan installeras på en klientenhet avinstallerar du Microsoft Defender för Endpoint och skickar den uppdaterade principen.
      
     > [!div class="mx-imgBorder"]
-    > ![Skärmbild av alternativet Konfigurera programinformation i dialogrutan Lägg till app](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-8-intuneappinfo)
+    > ![Visning av programinformation i app-tillägget](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-8-intuneappinfo)
 
 7. Välj **OK och** Lägg **till**.
 
     > [!div class="mx-imgBorder"]
-    > ![Skärmbild av en exempelöversikt](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-9-intunepkginfo)
+    > ![Enhetsstatus visas i meddelandefönstret](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-9-intunepkginfo)
 
 8. Det kan ta en stund att ladda upp paketet. När det är klart väljer du paketet i listan och går till **Uppgifter och Lägg** till **grupp.**
 

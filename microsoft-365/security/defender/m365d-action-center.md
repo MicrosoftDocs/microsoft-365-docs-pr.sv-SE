@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 02/01/2021
-ms.openlocfilehash: c91e5152fc7a64c8d26363383192d6b8d74611b8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: d958f2787b9d66e42a32b8858139f7d13e83ddef
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186767"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199603"
 ---
 # <a name="the-action-center"></a>Åtgärdscentret
 
@@ -61,7 +61,7 @@ I det enhetliga åtgärdscentret samlas åtgärdsåtgärder i Defender för Endp
 Du kan använda det enhetliga åtgärdscentret om du har rätt behörigheter och en eller flera av följande prenumerationer:
 
 - [Defender för Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)
-- [Defender förr Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)
+- [Defender förr Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 
 > [!TIP]
@@ -113,11 +113,11 @@ Förutom åtgärder som vidtas automatiskt som ett resultat [](m365d-autoir.md)a
 | Värdet för åtgärdskälla | Beskrivning |
 |:-----|:---|
 | **Manuell enhetsåtgärd** | En manuell åtgärd som vidtas på en enhet. Exempel är [enhetsisolering eller](../defender-endpoint/respond-machine-alerts.md#isolate-devices-from-the-network) [karantänen för filer.](../defender-endpoint/respond-file-alerts.md#stop-and-quarantine-files) |
-| **Manuell e-poståtgärd** | En manuell åtgärd för e-post. Ett exempel omfattar mjuk borttagning av e-postmeddelanden [eller åtgärdar ett e-postmeddelande.](../defender-365-security/remediate-malicious-email-delivered-office-365.md) |
+| **Manuell e-poståtgärd** | En manuell åtgärd för e-post. Ett exempel omfattar mjuk borttagning av e-postmeddelanden [eller åtgärdar ett e-postmeddelande.](../office-365-security/remediate-malicious-email-delivered-office-365.md) |
 | **Automatiserad enhetsåtgärd** | En automatiserad åtgärd som vidtas på en enhet, till exempel en fil eller en process. Exempel på automatiserade åtgärder är att skicka en fil till karantän, stoppa en process och ta bort en registernyckel. (Se [Åtgärder för åtgärder i Microsoft Defender för Slutpunkt](../defender-endpoint/manage-auto-investigation.md#remediation-actions).) |
-| **Automatiserad e-poståtgärd** | En automatiserad åtgärd för e-postinnehåll, till exempel ett e-postmeddelande, en bifogad fil eller en URL. Exempel på automatiserade åtgärder är mjuk borttagning av e-postmeddelanden, blockering av URL-adresser och inaktiverar vidarebefordran av extern e-post. (Se [Åtgärder för åtgärder i Microsoft Defender för Office 365](../defender-365-security/air-remediation-actions.md).) |
+| **Automatiserad e-poståtgärd** | En automatiserad åtgärd för e-postinnehåll, till exempel ett e-postmeddelande, en bifogad fil eller en URL. Exempel på automatiserade åtgärder är mjuk borttagning av e-postmeddelanden, blockering av URL-adresser och inaktiverar vidarebefordran av extern e-post. (Se [Åtgärder för åtgärder i Microsoft Defender för Office 365](../office-365-security/air-remediation-actions.md).) |
 | **Avancerad sökåtgärd** | Åtgärder som vidtas på enheter eller e-post [med avancerad sökning](./advanced-hunting-overview.md). |
-| **Åtgärden Utforskaren** | Åtgärder som vidtas på e-postinnehåll med [Utforskaren](../defender-365-security/threat-explorer.md). |
+| **Åtgärden Utforskaren** | Åtgärder som vidtas på e-postinnehåll med [Utforskaren](../office-365-security/threat-explorer.md). |
 | **Manuell svarsåtgärd** | Åtgärder som vidtas på en enhet med [live-svar](../defender-endpoint/live-response.md). Några exempel är att ta bort en fil, stoppa en process och ta bort en schemalagd aktivitet. |
 | **Live response-åtgärd** | Åtgärder som vidtas på en enhet med [Microsoft Defender för slutpunktS-API:er](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis). Exempel på åtgärder är att isolera en enhet, köra en antivirussökning och hämta information om en fil. |
 
@@ -128,7 +128,7 @@ Om du vill utföra uppgifter, till exempel godkänna eller avvisa väntande åtg
 |Åtgärdsåtgärd |Roller och behörigheter som krävs |
 |--|----|
 |Microsoft Defender för åtgärd av slutpunkt (enheter) |**Säkerhetsadministratörsroll** som har tilldelats i antingen Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) eller administrationscentret för Microsoft 365 [https://admin.microsoft.com](https://admin.microsoft.com) ()<br/>--- eller ---<br/>**Rollen Aktiva åtgärdsåtgärder som** tilldelats i Microsoft Defender för Slutpunkt <br/> <br/> Mer information finns i följande resurser: <br/>- [Administratörsrollbehörigheter i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Skapa och hantera roller för rollbaserad åtkomstkontroll (Microsoft Defender för slutpunkt)](../defender-endpoint/user-roles.md)  |
-|Åtgärder i Microsoft Defender för Office 365 (Office-innehåll och e-post)  |**Säkerhetsadministratörsroll** som har tilldelats i antingen Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) eller administrationscentret för Microsoft 365 [https://admin.microsoft.com](https://admin.microsoft.com) ()<br/>--- och --- <br/>**Rollen Sök och rensning** tilldelad rollen Säkerhets- & Efterlevnadscenter ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**VIKTIGT:** Om du  bara har tilldelats rollen Säkerhetsadministratör i Efterlevnadscenter för Office 365 & ( ) kan du inte komma åt åtgärdscenter eller [https://protection.office.com](https://protection.office.com) Microsoft 365 Defender-funktioner. Du måste ha rollen **Säkerhetsadministratör** tilldelad i Azure Active Directory eller administrationscentret för Microsoft 365. <br/><br/>Mer information finns i följande resurser: <br/>- [Administratörsrollbehörigheter i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Behörigheter i Säkerhets- & Säkerhets- och efterlevnadscenter](/microsoft-365/security/defender-365-security/permissions-in-the-security-and-compliance-center) |
+|Åtgärder i Microsoft Defender för Office 365 (Office-innehåll och e-post)  |**Säkerhetsadministratörsroll** som har tilldelats i antingen Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) eller administrationscentret för Microsoft 365 [https://admin.microsoft.com](https://admin.microsoft.com) ()<br/>--- och --- <br/>**Rollen Sök och rensning** tilldelad rollen Säkerhets- & Efterlevnadscenter ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**VIKTIGT:** Om du  bara har tilldelats rollen Säkerhetsadministratör i Efterlevnadscenter för Office 365 & ( ) kan du inte komma åt åtgärdscenter eller [https://protection.office.com](https://protection.office.com) Microsoft 365 Defender-funktioner. Du måste ha rollen **Säkerhetsadministratör** tilldelad i Azure Active Directory eller administrationscentret för Microsoft 365. <br/><br/>Mer information finns i följande resurser: <br/>- [Administratörsrollbehörigheter i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Behörigheter i Säkerhets- & Säkerhets- och efterlevnadscenter](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
 > Användare som har rollen **Global administratör** tilldelad i Azure Active Directory kan godkänna eller avvisa eventuella väntande åtgärder i åtgärdscentret. Men det bästa är att organisationen bör begränsa antalet personer som har tilldelats **rollen global** administratör. Vi rekommenderar att du **använder rollerna**  **Säkerhetsadministratör,** Aktiva åtgärder och Sök och rensning som visas i föregående tabell för behörigheter i Åtgärdscenter.

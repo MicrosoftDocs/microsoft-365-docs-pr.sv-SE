@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 399da6fd54145f73ac72fdac04e8d25148f76507
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 18564b2a5a47b2cf4a8bbd94a3e3a315c8f269ec
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186755"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200263"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Aktivera Microsoft 365 Defender
 
@@ -96,7 +96,7 @@ Microsofts supportpersonal kan hjälpa dig med att tillhandahålla eller återka
 - [Distribuera tjänster som stöds](deploy-supported-services.md)
 - [Översikt över Microsoft 365 Defender](microsoft-365-defender.md)
 - [Översikt över Microsoft Defender för slutpunkt](../defender-endpoint/microsoft-defender-endpoint.md)
-- [Översikt över Defender för Office 365](../defender-365-security/defender-for-office-365.md)
+- [Översikt över Defender för Office 365](../office-365-security/defender-for-office-365.md)
 - [Översikt över säkerhet i Microsoft Cloud App](/cloud-app-security/what-is-cloud-app-security)
 - [Översikt över Microsoft Defender för identitet](/azure-advanced-threat-protection/what-is-atp)
 - [Microsoft Defender för slutpunktsdatalagring](../defender-endpoint/data-storage-privacy.md)

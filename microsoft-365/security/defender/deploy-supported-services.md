@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0902dce0af3c101cbaf7ff526beb71e9f46a1bf4
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 434c318be404ffb04cac7a05664c8f001bb46507
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187523"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198867"
 ---
 # <a name="deploy-supported-services"></a>Distribuera tjänster som stöds
 
@@ -78,9 +78,9 @@ Distribution av varje tjänst kräver vanligtvis etablering till klientorganisat
 | Tjänst | Etableringsinstruktioner | Inledande konfiguration |
 | ------ | ------ | ------ |
 | Microsoft Defender för Endpoint | [Distributionsguide för Microsoft Defender för slutpunkt](../defender-endpoint/deployment-phases.md) | *Se etableringsinstruktioner* |
-|Microsoft Defender för Office 365 | *Ingen, tillhandahålls med Office 365* | [Konfigurera principer för Microsoft Defender för Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365#configure-atp-policies) |
+|Microsoft Defender för Office 365 | *Ingen, tillhandahålls med Office 365* | [Konfigurera principer för Microsoft Defender för Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) |
 | Microsoft Defender for Identity | [Snabbstart: Skapa din Microsoft Defender för identitetsinstans](/azure-advanced-threat-protection/install-atp-step1) | *Se etableringsinstruktioner* |
-| Microsoft Cloud App Security | *Inga* | [Snabbstart: Komma igång med Microsoft Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security) |
+| Microsoft Cloud App Security | *Ingen* | [Snabbstart: Komma igång med Microsoft Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security) |
 
 När du har distribuerat de tjänster som stöds [aktiverar du Microsoft 365 Defender.](m365d-enable.md)
 
@@ -89,6 +89,6 @@ När du har distribuerat de tjänster som stöds [aktiverar du Microsoft 365 Def
 - [Översikt över Microsoft 365 Defender](microsoft-365-defender.md)
 - [Aktivera Microsoft 365 Defender](m365d-enable.md)
 - [Översikt över Microsoft Defender för slutpunkt](../defender-endpoint/microsoft-defender-endpoint.md)
-- [Översikt över Microsoft Defender för Office 365](../defender-365-security/defender-for-office-365.md)
+- [Översikt över Microsoft Defender för Office 365](../office-365-security/defender-for-office-365.md)
 - [Översikt över säkerhet i Microsoft Cloud App](/cloud-app-security/what-is-cloud-app-security)
 - [Översikt över Microsoft Defender för identitet](/azure-advanced-threat-protection/what-is-atp)

@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d54ab8eaa1e17be82752c480c963d3a24af56389
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a04f3be1f13fb57cd76cda7115d014f2ba3aa8d6
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187583"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198843"
 ---
 # <a name="create-indicators"></a>Skapa indikatorer
 
@@ -33,13 +33,14 @@ ms.locfileid: "51187583"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
+> [!TIP]
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 Indikator på kompromettering (IoCs) är en viktig funktion i varje lösning för slutpunktsskydd. Den här funktionen ger SekOps möjlighet att ange en lista över indikatorer för identifiering och blockering (skydd och svar).
 
 Skapa indikatorer som definierar identifiering, skydd och undantag för enheter. Du kan definiera vilken åtgärd som ska vidtas samt varaktigheten för när åtgärden ska tillämpas samt omfattningen av enhetsgruppen som den ska tillämpas på.
 
-Källor som stöds för närvarande är molnidentifieringsmotorn i Defender för Endpoint, den automatiska undersöknings- och åtgärdsmotorn och slutpunktsskyddsmotorn (Microsoft Defender AV).
+Källor som stöds för närvarande är molnidentifieringsmotorn i Defender för Endpoint, den automatiska undersöknings- och åtgärdsmotorn och slutpunktsskyddsmotorn (Microsoft Defender Antivirus).
 
 **Motor för molnidentifiering**<br>
 Molnidentifieringsmotorn i Defender för Endpoint söker regelbundet igenom insamlade data och försöker matcha de indikatorer du anger. När det finns en matchning vidtas åtgärden enligt de inställningar du har angett för IoC.
@@ -63,8 +64,8 @@ Du kan skapa en indikator för:
 - [Certifikat](indicator-certificates.md)
 
 
->[!NOTE]
->Det finns en gräns på 15 000 indikatorer per klientorganisation.
+> [!NOTE]
+> Det finns en gräns på 15 000 indikatorer per klientorganisation. Fil- och certifikatindikatorer blockerar inte [undantag som definierats för Microsoft Defender Antivirus.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus) Indikatorer stöds inte i Microsoft Defender Antivirus är i passiv form. 
 
 
 ## <a name="related-topics"></a>Relaterade ämnen

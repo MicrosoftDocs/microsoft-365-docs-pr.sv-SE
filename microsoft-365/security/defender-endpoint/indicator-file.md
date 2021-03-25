@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d78f90e78a50d5902070f441a1d60693a5f531c8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 35a0b66a4cdc4cf39c15329eda2e0aafced79f34
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185725"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199615"
 ---
 # <a name="create-indicators-for-files"></a>Skapa indikatorer för filer
 
@@ -35,7 +35,8 @@ ms.locfileid: "51185725"
 
 
 
->Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> [!TIP]
+> Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 Du kan förhindra ytterligare spridning av en attack i organisationen genom att förbjuda potentiellt skadliga filer eller misstänkt skadlig kod. Om du vet en potentiellt skadlig körbar fil (PE) kan du blockera den. Den här åtgärden förhindrar att den läses, skrivs eller körs på datorer i organisationen.
 
@@ -52,13 +53,13 @@ Det är viktigt att förstå följande förutsättningar innan du skapar indikat
 - För att börja blockera filer måste du först [aktivera funktionen Spärra eller **tillåt**](advanced-features.md) i Inställningar.
 - Den här funktionen är utformad för att förhindra att misstänkt skadlig programvara (eller potentiellt skadliga filer) laddas ned från webben. Den har för närvarande stöd för bärbara körbara (PE) filer, inklusive _.exe-_ _och .dll-filer._ Täckningen utökas med tiden.
 
->[!IMPORTANT]
->- Funktionen tillåt eller blockera kan inte utföras för filer om filens klassificering finns på enhetens cache innan åtgärden för att tillåta eller blockera 
->- Betrodda signerade filer behandlas annorlunda. Defender för Endpoint är optimerad för att hantera skadliga filer. Att försöka blockera betrodda signerade filer kan i vissa fall ha prestandakonsekvenser.
+Prestandan kan påverkas om du kopierar stora filer från en nätverksresurs till din lokala enhet, särskilt via en VPN-anslutning. 
 
- 
->[!NOTE]
->Vanligtvis används filblock inom några minuter, men det kan ta upp till 30 minuter.
+> [!IMPORTANT]
+> - Funktionen tillåt eller blockera kan inte utföras för filer om filens klassificering finns på enhetens cache innan åtgärden för att tillåta eller blockera 
+> - Betrodda signerade filer behandlas annorlunda. Defender för Endpoint är optimerad för att hantera skadliga filer. Att försöka blockera betrodda signerade filer kan i vissa fall ha prestandakonsekvenser.
+> - Vanligtvis används filblock inom några minuter, men det kan ta upp till 30 minuter.
+> - Om det finns filindikatorprinciper som står i konflikt tillämpas den säkrare principens tillämpningsprincip. En SHA-256-princip för hash-kod för filer har till exempel företräde framför en MD5-princip för hash-hash-kod för filer om båda hash-typerna definierar samma fil.
 
 ### <a name="create-an-indicator-for-files-from-the-settings-page"></a>Skapa en indikator för filer från inställningssidan
 

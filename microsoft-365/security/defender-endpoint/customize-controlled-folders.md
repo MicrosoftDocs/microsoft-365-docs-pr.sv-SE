@@ -12,19 +12,17 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: jcedola, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.date: 01/06/2021
+ms.date: 03/24/2021
 ms.technology: mde
-ms.openlocfilehash: 64f96544361a672881c590716adea80f40777c6e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.topic: how-to
+ms.openlocfilehash: 0962913df63e6837664cdb8ff79710d66e66977c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163345"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199927"
 ---
 # <a name="customize-controlled-folder-access"></a>Anpassa reglerad mappåtkomst
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Gäller för:**
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -120,7 +118,7 @@ Ett tillåtet program eller en tillåten tjänst har skrivbehörighet till en re
 
 4. Välj **Lägg till en tillåten app** och följ anvisningarna för att lägga till appar.
 
-    ![Skärmbild av hur du lägger till en knapp för tillåtna appar](/microsoft-365/security/defender-endpoint/images/cfa-allow-app)
+   :::image type="content" source="images/cfa-allow-app.png" alt-text="Knappen Lägg till en tillåten app":::
 
 ### <a name="use-group-policy-to-allow-specific-apps"></a>Använda grupprinciper för att tillåta specifika appar
 
@@ -149,7 +147,7 @@ Ett tillåtet program eller en tillåten tjänst har skrivbehörighet till en re
 
    Fortsätt att använda `Add-MpPreference -ControlledFolderAccessAllowedApplications` för att lägga till fler appar i listan. Appar som läggs till med den här cmdleten visas i Windows-säkerhetsappen.
 
-![Skärmbild av ett PowerShell-fönster med ovanstående cmdlet angivet](/microsoft-365/security/defender-endpoint/images/cfa-allow-app-ps)
+   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="PowerShell-cmdleten tillåter en app":::
 
 > [!IMPORTANT]
 > Används `Add-MpPreference` för att lägga till eller lägga till appar i listan. Med `Set-MpPreference` hjälp av cmdleten skriver du över den befintliga listan.

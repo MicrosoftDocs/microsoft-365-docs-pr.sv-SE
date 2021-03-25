@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 6a40b80faef124a3a03e84a749b901a01791f6fb
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 85afc0dedd4fea9ea11c378ca35523d668acc84c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165087"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199189"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft Defender för Office 365 i Microsoft 365 Säkerhetscenter
 
@@ -33,7 +33,7 @@ ms.locfileid: "51165087"
 **Gäller för:**
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender för Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)
+- [Microsoft Defender för Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
 Det förbättrade [Microsoft 365 Säkerhetscenter](./overview-security-center.md) i [https://security.microsoft.com](https://security.microsoft.com) kombinerar säkerhetsfunktioner från befintliga säkerhetsportaler i Microsoft, bland annat Microsoft Defender Säkerhetscenter och Säkerhets- och efterlevnadscenter för Office 365. Det här förbättrade centret hjälper säkerhetsteam att skydda organisationen från hot mer produktivt och effektivt.
 
@@ -49,18 +49,18 @@ Den här tabellen är en snabbreferens för områdena e-post och samarbete där 
 
 |**Område**  |**Beskrivning av ändring**  |
 |---------|---------|
-| [Sidan E-postenhet](../defender-365-security/mdo-email-entity-page.md) | Den här sidan **förenar** information om e-postmeddelanden som varit utspridda över olika sidor eller vyer tidigare. Undersökning av e-post efter hot och trender är *centraliserat*. Rubrikinformation och förhandsgranskning av e-post kan nås via samma e-postsida och annan användbar e-postrelaterad information. På samma sätt kan detonationsstatus för skadliga bifogade filer eller URL-adresser finnas på en flik på samma sida. Sidan E-postenhet ger administratörer och säkerhetsteam möjlighet att förstå ett hot via e-postmeddelande och dess status, snabbt, och sedan agera för att snabbt avgöra hur hanteringen ska hanteras.  |
-| [Undersökning](../defender-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center) | Samlar AIR-funktioner i [Defender för Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365) och [Defender för Endpoint](../defender-endpoint/automated-investigations.md). Med de här uppdateringarna och förbättringarna kommer säkerhetsgruppen att kunna visa information om automatiska undersökningar och åtgärder som gäller för e-post, samarbetsinnehåll, användarkonton och enheter, allt på ett och samma ställe.  | 
+| [Sidan E-postenhet](../office-365-security/mdo-email-entity-page.md) | Den här sidan **förenar** information om e-postmeddelanden som varit utspridda över olika sidor eller vyer tidigare. Undersökning av e-post efter hot och trender är *centraliserat*. Rubrikinformation och förhandsgranskning av e-post kan nås via samma e-postsida och annan användbar e-postrelaterad information. På samma sätt kan detonationsstatus för skadliga bifogade filer eller URL-adresser finnas på en flik på samma sida. Sidan E-postenhet ger administratörer och säkerhetsteam möjlighet att förstå ett hot via e-postmeddelande och dess status, snabbt, och sedan agera för att snabbt avgöra hur hanteringen ska hanteras.  |
+| [Undersökning](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center) | Samlar AIR-funktioner i [Defender för Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) och [Defender för Endpoint](../defender-endpoint/automated-investigations.md). Med de här uppdateringarna och förbättringarna kommer säkerhetsgruppen att kunna visa information om automatiska undersökningar och åtgärder som gäller för e-post, samarbetsinnehåll, användarkonton och enheter, allt på ett och samma ställe.  | 
 | [Varningsvyn](../../compliance/alert-policies.md) | Fönstret **Visa varningar** visas i Office Säkerhets- och efterlevnadscenter innehåller nu länkar till Microsoft 365 Säkerhetscenter. Klicka på länken **Öppna aviseringssida** så öppnas Microsoft 365 Säkerhetscenter. Du kan öppna sidan **Visa varningar** genom att klicka på en Office 365-avisering i kön Aviseringar. |
-| [Attacksimulering-utbildning](../defender-365-security/attack-simulation-training-insights.md)   | Använd Attacksimulering-utbildning för att köra realistiska attackscenarier i din organisation. De här simulerade attackerna kan utbilda din personal innan ett riktigt angrepp påverkar din organisation. Attacksimulering-utbildning innehåller fler alternativ, förbättrade rapporter och förbättrade utbildningsflöden som gör det enklare att leverera och hantera dina attacker samt utbildningsscenarier.  |
+| [Attacksimulering-utbildning](../office-365-security/attack-simulation-training-insights.md)   | Använd Attacksimulering-utbildning för att köra realistiska attackscenarier i din organisation. De här simulerade attackerna kan utbilda din personal innan ett riktigt angrepp påverkar din organisation. Attacksimulering-utbildning innehåller fler alternativ, förbättrade rapporter och förbättrade utbildningsflöden som gör det enklare att leverera och hantera dina attacker samt utbildningsscenarier.  |
 
 Inga ändringar i dessa områden:
-- [Explorer](../defender-365-security/threat-explorer.md)
+- [Explorer](../office-365-security/threat-explorer.md)
 - [Principer och regler](../../compliance/alert-policies.md)
-- [Kampanj](../defender-365-security/campaigns.md)
-- [Insändning](../defender-365-security/admin-submission.md)
+- [Kampanj](../office-365-security/campaigns.md)
+- [Insändning](../office-365-security/admin-submission.md)
 - [Granska](./m365d-action-center.md)
-- [Hotspårare](../defender-365-security/threat-trackers.md)
+- [Hotspårare](../office-365-security/threat-trackers.md)
 
 Titta också i avsnittet **Relaterad information** längst ned i den här artikeln.
 
@@ -135,7 +135,7 @@ Visa rapporter, ändra dina inställningar och ändra användarroller.
 ## <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Exempel på Avancerad sökning för Microsoft Defender för Office 365
 Vill du komma igång med att söka efter e-posthot med avancerad sökning? Prova det här:
 
-Avsnittet [Komma igång](/microsoft-365/security/defender-365-security/defender-for-office-365.md#getting-started) i artikeln [Microsoft Defender för Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365) har en logisk tidig konfigurationsdel som ser ut så här:
+Avsnittet [Komma igång](/microsoft-365/security/office-365-security/defender-for-office-365.md#getting-started) i artikeln [Microsoft Defender för Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) har en logisk tidig konfigurationsdel som ser ut så här:
 
 1. Konfigurera allt med "anti" i namnet.
 - anti-skadlig kod
@@ -147,7 +147,7 @@ Avsnittet [Komma igång](/microsoft-365/security/defender-365-security/defender-
 3. Försvara arbets belastningarna (t. ex. SharePoint Online, OneDrive och Teams)
 4. Skydda med Zero-Hour auto purge
 
-Tillsammans med en [länk](../defender-365-security/protect-against-threats.md) kan du hoppa direkt in och få igång konfigurationen dag 1.
+Tillsammans med en [länk](../office-365-security/protect-against-threats.md) kan du hoppa direkt in och få igång konfigurationen dag 1.
 
 Det sista steget i **Komma igång** skyddar användare med **Automatisk rensning**, även kallat ZAP. Det kan vara mycket viktigt att veta om du har lyckats med ZAP:a ett misstänkt eller skadligt e-postmeddelande efter leverans.
 
@@ -182,4 +182,4 @@ Data från den här frågan visas i resultatpanelen under själva frågan. Resul
 - [E-post- och samarbetsaviseringar](../../compliance/alert-policies.md#default-alert-policies)
 - [Jaga efter hot på olika enheter, e-postmeddelanden, appar och identiteter](./advanced-hunting-query-emails-devices.md)
 - [Anpassade regler för identifiering](/microsoft-365/security/defender-endpoint/custom-detection-rules)
-- [Skapa en simulering av ett nätfiskeangrepp](../defender-365-security/attack-simulation-training.md) och [skapa en nyttolast för utbildning av personerna](../defender-365-security/attack-simulation-training-payloads.md)
+- [Skapa en simulering av ett nätfiskeangrepp](../office-365-security/attack-simulation-training.md) och [skapa en nyttolast för utbildning av personerna](../office-365-security/attack-simulation-training-payloads.md)

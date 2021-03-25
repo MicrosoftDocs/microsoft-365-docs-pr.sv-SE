@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5ab4019751a26507fcc80007d3262f20f861d25c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8bb80e032fd2eb4c618b60f4ab46829d5cf11b6d
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071489"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199235"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Konfigurera Microsoft 365 Defender-pelarna för din testlabb- eller pilotmiljö
 
@@ -96,7 +96,7 @@ Det finns en PowerShell-modul som kallas *Office 365 Advanced Threat Protection 
  
 7. Välj sedan principen För **säkra länkar** och klicka sedan på pennikonen för att redigera standardprincipen.
 
-8. Kontrollera att alternativet **Spåra inte när användare klickar** på säkra länkar inte är markerat, medan resten av alternativen är markerade. Mer [information finns i Inställningarna](/microsoft-365/security/defender-365-security/recommended-settings-for-eop-and-office365) för säkra länkar. Klicka på **Spara**. 
+8. Kontrollera att alternativet **Spåra inte när användare klickar** på säkra länkar inte är markerat, medan resten av alternativen är markerade. Mer [information finns i Inställningarna](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365) för säkra länkar. Klicka på **Spara**. 
 
    ![Bild of_Office 365 Säkerhets- & Säkerhetscenter som visar att alternativet Spåra inte när användare klickar på Kassaskåp inte är markerat](../../media/mtp-eval-38.png)
 
