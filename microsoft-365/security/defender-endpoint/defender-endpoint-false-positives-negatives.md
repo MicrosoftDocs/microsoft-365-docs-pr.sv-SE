@@ -23,12 +23,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 85e9a47c0180fd7582b2bc107ddf7d78f57e6329
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3ef625e813961c09bb6f74d85fd5a7c8033f9c2a
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51075313"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51183879"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Adressera falska positiva/negativa tal i Microsoft Defender för Endpoint
 
@@ -55,7 +55,7 @@ Du kan också få hjälp om du fortfarande har problem med [falska positiva/nega
 ![Steg för att åtgärda falska positiva och negativa tal](images/false-positives-step-diagram.png)
 
 > [!NOTE]
-> Den här artikeln är avsedd som vägledning för säkerhetsoperatorer och säkerhetsadministratörer som använder [Microsoft Defender för Slutpunkt.](microsoft-defender-advanced-threat-protection.md)
+> Den här artikeln är avsedd som vägledning för säkerhetsoperatorer och säkerhetsadministratörer som använder [Microsoft Defender för Slutpunkt.](microsoft-defender-endpoint.md)
 
 ## <a name="part-1-review-and-classify-alerts"></a>Del 1: Granska och klassificera aviseringar
 
