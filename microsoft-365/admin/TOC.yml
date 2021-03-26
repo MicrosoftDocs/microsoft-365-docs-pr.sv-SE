@@ -58,8 +58,6 @@
       items:
         - name: Översikt över administrationscentret
           href: admin-overview/about-the-admin-center.md
-        - name: Om det nya administrationscentret
-          href: microsoft-365-admin-center-preview.md
         - name: Om administratörsroller
           href: add-users/about-admin-roles.md
         - name: Mobilapp för administratörer
