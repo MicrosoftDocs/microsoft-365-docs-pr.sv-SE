@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Läs om hur du ställer in starka lösenordskrav för användarna med Windows PowerShell.
-ms.openlocfilehash: e2300e3c94de53cd04d0c1726538fdb8a86a1ccf
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: de2f47bb88fe4cb3d00e45698fe006035faa4e5c
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903542"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222081"
 ---
 # <a name="turn-off-strong-password-requirements-for-users"></a>Inaktivera starka lösenordskrav för användare
 
@@ -34,7 +34,7 @@ I den här artikeln förklarar vi hur du inaktiverar starka lösenordskrav för 
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-Den här artikeln är för personer som hanterar lösenordspolicyn för ett företag, en skola eller en ideell förening. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörskonto?](../admin-overview/admin-overview.md) Du måste vara global [administratör eller lösenordsadministratör för att](about-admin-roles.md) utföra de här stegen.
+Den här artikeln är för personer som hanterar lösenordspolicyn för ett företag, en skola eller en ideell förening. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörskonto?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) Du måste vara global [administratör eller lösenordsadministratör för att](about-admin-roles.md) utföra de här stegen.
 
 Du måste också ansluta till Microsoft 365 med PowerShell.
 

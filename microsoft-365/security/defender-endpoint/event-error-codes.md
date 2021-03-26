@@ -1,7 +1,7 @@
 ---
 title: Granska händelser och fel med hjälp av Loggboken
 description: Få beskrivningar och ytterligare felsökningssteg (om det behövs) för alla händelser som rapporterats av Microsoft Defender för slutpunktstjänsten.
-keywords: felsökning, händelsevisningsprogram, loggsammanfattning, felkod, misslyckades, Microsoft Defender för slutpunktstjänsten, kan inte starta, brutna, kan inte starta
+keywords: felsökning, händelsevisningsprogram, loggsammanfattning, felkod, misslyckades, Microsoft Defender för slutpunktstjänsten, kan inte starta, brytas, kan inte starta
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: 98c0f790c228989b261b95f3b87cdc9d18e4fa76
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1b8454107b6a2737f1236a066c3a24a2b9c776cb
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076618"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222663"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>Granska händelser och fel med hjälp av Loggboken
 
@@ -64,7 +64,7 @@ Om enheter inte visas i listan Enheter kan du till exempel behöva leta efter h�
 <tr>
 <td>1</td>
 <td>Microsoft Defender för slutpunktstjänsten startades (version <code>variable</code> ).</td>
-<td>Inträffar under systemstart, avstängning och vid start av tavlor.</td>
+<td>Inträffar vid start av system, stängs av och under registrering.</td>
 <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
 </tr>
 <tr>
@@ -96,7 +96,7 @@ Det gick inte att kontakta den externa bearbetningsservrarna på den URL:en.</td
 <tr>
 <td>6</td>
 <td>Microsoft Defender för Slutpunkt-tjänsten är inte onboarded och inga onboarding-parametrar hittades.</td>
-<td>Enheten onboardly inte korrekt och kommer inte att rapportera till portalen.</td>
+<td>Enheten fungerade inte korrekt och rapporterar inte till portalen.</td>
 <td>Onboarding måste köras innan tjänsten startas.<br>
 Kontrollera att onboarding-inställningarna och skripten har distribuerats korrekt. Försök distribuera konfigurationspaketen igen.<br>
 Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Introduktion till Windows 10-enheter.</a></td>
@@ -104,7 +104,7 @@ Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices
 <tr>
 <td>7</td>
 <td>Microsoft Defender för slutpunktstjänsten kunde inte läsa onboarding-parametrarna. Fel: <code>variable</code> .</td>
-<td>Variabel = detaljerad felbeskrivning. Enheten onboardly inte korrekt och kommer inte att rapportera till portalen.</td>
+<td>Variabel = detaljerad felbeskrivning. Enheten fungerade inte korrekt och rapporterar inte till portalen.</td>
 <td>Kontrollera att onboarding-inställningarna och skripten har distribuerats korrekt. Försök distribuera konfigurationspaketen igen.<br>
 Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Introduktion till Windows 10-enheter.</a></td>
 </tr>
@@ -119,14 +119,14 @@ Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices
 <tr>
 <td>9</td>
 <td>Microsoft Defender för slutpunktstjänsten kunde inte ändra starttypen. Felkod: <code>variable</code> .</td>
-<td><b>Under introduktionen:</b> Enheten onboardly inte korrekt och kommer inte att rapportera till portalen. <br><br><b>Under offboarding:</b> Det gick inte att ändra tjänstens starttyp. Offboarding-processen fortsätter. </td>
+<td><b>Under introduktionen:</b> Enheten fungerade inte korrekt och rapporterar inte till portalen. <br><br><b>Under offboarding:</b> Det gick inte att ändra tjänstens starttyp. Offboarding-processen fortsätter. </td>
 <td>Kontrollera att onboarding-inställningarna och skripten har distribuerats korrekt. Försök distribuera konfigurationspaketen igen.<br>
 Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Introduktion till Windows 10-enheter.</a></td>
 </tr>
 <tr>
 <td>10</td>
 <td>Microsoft Defender för slutpunktstjänsten kunde inte spara informationen om introduktionen. Felkod: <code>variable</code> .</td>
-<td>Enheten onboardly inte korrekt och kommer inte att rapportera till portalen.</td>
+<td>Enheten fungerade inte korrekt och rapporterar inte till portalen.</td>
 <td>Kontrollera att onboarding-inställningarna och skripten har distribuerats korrekt. Försök distribuera konfigurationspaketen igen.<br>
 Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Introduktion till Windows 10-enheter.</a></td>
 </tr>
@@ -186,7 +186,7 @@ Om det här felet kvarstår efter en omstart av systemet bör du kontrollera att
 <tr>
 <td>25</td>
 <td>Microsoft Defender för Slutpunkt-tjänsten kunde inte återställa hälsostatus i registret. Felkod: <code>variable</code> .</td>
-<td>Enheten kunde inte introduceras på rätt sätt.
+<td>Enheten fungerade inte korrekt.
 Den rapporterar till portalen, men tjänsten kanske inte visas som registrerad i SCCM eller registret.</td>
 <td>Kontrollera att onboarding-inställningarna och skripten har distribuerats korrekt. Försök distribuera konfigurationspaketen igen.<br>
 Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Introduktion till Windows 10-enheter.</a></td>
@@ -194,7 +194,7 @@ Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices
 <tr>
 <td>26</td>
 <td>Microsoft Defender för slutpunktstjänsten kunde inte ange registreringsstatus i registret. Felkod: <code>variable</code> .</td>
-<td>Enheten kunde inte introduceras på rätt sätt.<br>
+<td>Enheten fungerade inte korrekt.<br>
 Den rapporterar till portalen, men tjänsten kanske inte visas som registrerad i SCCM eller registret.</td>
 <td>Kontrollera att onboarding-inställningarna och skripten har distribuerats korrekt. Försök distribuera konfigurationspaketen igen.<br>
 Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Introduktion till Windows 10-enheter.</a></td>
@@ -219,7 +219,7 @@ Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices
 <td>29</td>
 <td>Det gick inte att läsa parametrarna för offboarding. Feltyp: %1, Felkod: %2, Beskrivning: %3 </td>
 <td>Händelsen inträffar när systemet inte&#39;av parametrarna för offboarding.</td>
-<td>Kontrollera att enheten har internetanslutning och kör sedan hela offboardingprocessen igen. Kontrollera att offboarding-paketet inte har upphört att gälla.</td>
+<td>Kontrollera att enheten har internetanslutning och kör sedan hela offboardingprocessen igen. Kontrollera att offboarding-paketet inte har gått ut.</td>
 </tr>
 <tr>
 <td>30</td>
@@ -326,7 +326,7 @@ Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices
 <tr>
 <td>46</td>
 <td>Det gick inte att registrera och starta händelsespårningssessionen [%1] på grund av brist på resurser. Felkod: %2. Det beror troligen på att det finns för många sessioner med aktiva händelsespårningar. Tjänsten kommer att försöka igen om 1 minut.</td>
-<td>Ett fel uppstod vid start av tjänsten när ETW-sessionen skulle skapas på grund av brist på resurser. Tjänsten startades och körs, men rapporterar inte någon sensorhändelse förrän ETW-sessionen startas.</td>
+<td>Ett fel uppstod vid start av tjänsten när ETW-sessionen skulle skapas på grund av brist på resurser. Tjänsten startades och körs, men rapporterar inte en sensorhändelse förrän ETW-sessionen startas.</td>
 <td>Meddelande om normal användning. ingen åtgärd krävs. Tjänsten försöker starta sessionen varje minut.</td>
 </tr>
 <tr>
@@ -341,6 +341,270 @@ Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices
 <td>Det gick inte att lägga till en leverantör i ETW-sessionen. Därför rapporteras inte leverantörshändelserna.</td>
 <td>Kontrollera felkoden. Kontakta support om felet kvarstår.</td>
 </tr>
+</tr>
+<tr>
+   <td>49</td>
+   <td>Kommandot ogiltig molnkonfiguration har tagits emot och ignorerats. Version: %1, status: %2, felkod: %3, meddelande: %4</td>
+   <td>Fick en ogiltig konfigurationsfil från molntjänsten som ignorerades.</td>
+   <td>Om det här felet kvarstår kontaktar du supporten.</td>
+</tr>
+<tr>
+   <td>50</td>
+   <td>Den nya molnkonfigurationen har använts. Version: %1.</td>
+   <td>En ny konfiguration från molntjänsten har tillämpats.</td>
+   <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
+</tr>
+<tr>
+   <td>51</td>
+   <td>Ny molnkonfiguration kunde inte användas, version: %1. Den senaste kända konfigurationen, version %2, har tillämpats.</td>
+   <td>Fick en felaktig konfigurationsfil från molntjänsten. Den senaste kända konfigurationen har använts.</td>
+   <td>Om det här felet kvarstår kontaktar du supporten.</td>
+</tr>
+<tr>
+   <td>52</td>
+   <td>Ny molnkonfiguration kunde inte användas, version: %1. Det gick inte heller att använda den senaste kända konfigurationen, version %2. Standardkonfigurationen har tillämpats.</td>
+   <td>Fick en felaktig konfigurationsfil från molntjänsten. Det gick inte att använda den senaste kända konfigurationen – och standardkonfigurationen tillämpades.</td>
+   <td>Tjänsten försöker ladda ned en ny konfigurationsfil inom 5 minuter. Om du inte ser händelsen #50 kontakta support.</td>
+</tr>
+<tr>
+   <td>53</td>
+   <td>Molnkonfiguration som lästs in från beständig lagring, version: %1.</td>
+   <td>Konfigurationen startades från beständig lagring vid start av tjänsten.</td>
+   <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
+</tr>
+<tr>
+   <td>55</td>
+   <td>Det gick inte att skapa automatisk ETW-loggare för säker ETW. Felkod: %1</td>
+   <td>Det gick inte att skapa den säkra ETW-loggern.</td>
+   <td>Starta om enheten. Om det här felet kvarstår kontaktar du supporten.</td>
+</tr>
+<tr>
+   <td>56</td>
+   <td>Det gick inte att ta bort automatisk loggare för Secure ETW. Felkod: %1</td>
+   <td>Det gick inte att ta bort den säkra ETW-sessionen på offboarding.</td>
+   <td>Kontakta support.</td>
+</tr>
+<tr>
+   <td>57</td>
+   <td>Fånga en ögonblicksbild av datorn i felsökningssyfte.</td>
+   <td>Ett undersökningspaket, även kallat en forensisk paket, samlas in.</td>
+   <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
+</tr>
+<tr>
+   <td>59</td>
+   <td>Startkommando: %1</td>
+   <td>Kommandot Startar svarskörning.</td>
+   <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
+</tr>
+<tr>
+   <td>60</td>
+   <td>Det gick inte att köra kommandot %1, fel: %2.</td>
+   <td>Det gick inte att köra svarskommandot.</td>
+   <td>Om det här felet kvarstår kontaktar du supporten.</td>
+</tr>
+<tr>
+   <td>61</td>
+   <td>Parametrar för datainsamlingskommandon är ogiltiga: SasUri: %1, compressionLevel: %2.</td>
+   <td>Det gick inte att läsa eller tolka kommandoargumenten för datainsamling (ogiltiga argument).</td>
+   <td>Om det här felet kvarstår kontaktar du supporten.</td>
+</tr>
+<tr>
+   <td>62</td>
+   <td>Det gick inte att starta den anslutna användarupplevelsen och telemetritjänsten. Felkod: %1</td>
+   <td>Anslutna användarupplevelser och den telemetriska tjänsten (diagtrack) kunde inte startas. Telemetri med andra än Microsoft Defender för Slutpunkt-telemetri skickas inte från den här datorn.</td>
+   <td>Leta efter fler felsökningstips i händelseloggen: Microsoft-Windows-UniversalTelemetryClient/Operational.</td>
+</tr>
+<tr>
+   <td>63</td>
+   <td>Uppdatera starttypen för extern tjänst. Namn: %1, verklig starttyp: %2, förväntad starttyp: %3, utgångskod: %4</td>
+   <td>Den externa tjänstens starttyp har uppdaterats.</td>
+   <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
+</tr>
+<tr>
+   <td>64</td>
+   <td>Starta den externa tjänsten som stoppas. Namn: %1, utgångskod: %2</td>
+   <td>Starta en extern tjänst.</td>
+   <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
+</tr>
+<tr>
+   <td>65</td>
+   <td>Det gick inte att läsa in minifilterdrivrutinen Microsoft Security Events Component. Felkod: %1</td>
+   <td>Det gick inte att MsSecFlt.sys av filsystems minifilter.</td>
+   <td>Starta om enheten. Om det här felet kvarstår kontaktar du supporten.</td>
+</tr>
+<tr>
+   <td>66</td>
+   <td>Principuppdatering: Svarstidsläge – %1</td>
+   <td>Principen för&C-anslutningsfrekvensen uppdaterades.</td>
+   <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
+</tr>
+<tr>
+   <td>68</td>
+   <td>Tjänstens starttyp är oväntad. Tjänstnamn: %1, verklig starttyp: %2, förväntad starttyp: %3</td>
+   <td>Oväntad extern tjänststartstyp.</td>
+   <td>Åtgärda den externa tjänstens starttyp.</td>
+</tr>
+<tr>
+   <td>69</td>
+   <td>Tjänsten stoppas. Tjänstnamn: %1</td>
+   <td>Den externa tjänsten stoppas.</td>
+   <td>Starta den externa tjänsten.</td>
+</tr>
+<tr>
+   <td>70</td>
+   <td>Principuppdatering: Tillåt exempelsamling – %1</td>
+   <td>Exempelprincipen för samling har uppdaterats.</td>
+   <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
+</tr>
+<tr>
+   <td>71</td>
+   <td>Kommandot Lyckades köra: %1</td>
+   <td>Kommandot kördes korrekt.</td>
+   <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
+</tr>
+<tr>
+   <td>72</td>
+   <td>Försökte skicka den första fullständiga datorprofilrapporten. Resultatkod: %1</td>
+   <td>Endast information.</td>
+   <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
+</tr>
+<tr>
+   <td>73</td>
+   <td>Start för plattform: %1</td>
+   <td>Endast information.</td>
+   <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
+</tr>
+<tr>
+   <td>74</td>
+   <td>Enhetstaggen i registret överskrider längdgränsen. Taggnamn: %2. Längdbegränsning: %1.</td>
+   <td>Enhetstaggen överskrider längdgränsen.</td>
+   <td>Använd en kortare enhetstagg.</td>
+</tr>
+<tr>
+   <td>81</td>
+   <td>Det gick inte att skapa Windows Defender Advanced Threat Protection ETW – automatisklogg. Felkod: %1</td>
+   <td>Det gick inte att skapa ETW-sessionen.</td>
+   <td>Starta om enheten. Om det här felet kvarstår kontaktar du supporten.</td>
+</tr>
+<tr>
+   <td>82</td>
+   <td>Det gick inte att ta bort Windows Defender Advanced Threat Protection ETW – automatisklogg. Felkod: %1</td>
+   <td>Det gick inte att ta bort ETW-sessionen.</td>
+   <td>Kontakta support.</td>
+</tr>
+<tr>
+   <td>84</td>
+   <td>Ange att Windows Defender Antivirus körs. Tvinga passivt läge: %1, resultatkod: %2.</td>
+   <td>Ställa in defender running mode (aktivt eller passivt).</td>
+   <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
+</tr>
+<tr>
+   <td>85</td>
+   <td>Det gick inte att utlösa körbart windows Defender Advanced Threat Protection. Felkod: %1</td>
+   <td>Körbar Stjärn senseIR misslyckades.</td>
+   <td>Starta om enheten. Om det här felet kvarstår kontaktar du supporten.</td>
+</tr>
+<tr>
+   <td>86</td>
+   <td>Starta igen, stoppad extern tjänst som ska vara upp. Namn: %1, utgångskod: %2</td>
+   <td>Starta den externa tjänsten igen.</td>
+   <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
+</tr>
+<tr>
+   <td>87</td>
+   <td>Det går inte att starta den externa tjänsten. Namn: %1</td>
+   <td>Det gick inte att starta den externa tjänsten.</td>
+   <td>Kontakta support.</td>
+</tr>
+<tr>
+   <td>88</td>
+   <td>Uppdatera starttypen för den externa tjänsten igen. Namn: %1, verklig starttyp: %2, förväntad starttyp: %3, utgångskod: %4</td>
+   <td>Uppdaterade starttypen för den externa tjänsten.</td>
+   <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
+</tr>
+<tr>
+   <td>89</td>
+   <td>Det går inte att uppdatera starttypen för extern tjänst. Namn: %1, verklig starttyp: %2, förväntad starttyp: %3</td>
+   <td>Det går inte att uppdatera starttypen för den externa tjänsten.</td>
+   <td>Kontakta support.</td>
+</tr>
+<tr>
+   <td>90</td>
+   <td>Det gick inte att konfigurera System Guard Runtime Monitor för att ansluta till molntjänsten i geoområde %1. Felkod: %2</td>
+   <td>System Guard Runtime Monitor skickar inte attestationsdata till molntjänsten.</td>
+   <td>Kontrollera behörigheterna för registersökvägen: "HKLM\Software\Microsoft\Windows\CurrentVersion\Sgrm". Kontakta support om det inte är några problem.</td>
+</tr>
+<tr>
+   <td>91</td>
+   <td>Det gick inte att ta bort System Guard Runtime Monitor-information för geoområde. Felkod: %1</td>
+   <td>System Guard Runtime Monitor skickar inte attestationsdata till molntjänsten.</td>
+   <td>Kontrollera behörigheterna för registersökvägen: "HKLM\Software\Microsoft\Windows\CurrentVersion\Sgrm". Kontakta support om det inte är några problem.</td>
+</tr>
+<tr>
+   <td>92</td>
+   <td>Stoppar sändning av sensordatakvot på cyber, eftersom datakvoten överskrids. Återupptar sändningen när kvotperioden går ut. Tillståndsmask: %1</td>
+   <td>Överskrid begränsningsgräns.</td>
+   <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
+</tr>
+<tr>
+   <td>93</td>
+   <td>Återupptar sändning av sensordata i cybern. Tillståndsmask: %1</td>
+   <td>Återuppta sändning av cyberdata.</td>
+   <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
+</tr>
+<tr>
+   <td>94</td>
+   <td>Körbar fil för Avancerat skydd för Windows Defender har startat</td>
+   <td>Den körbara SenseCE-filen har startat.</td>
+   <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
+</tr>
+<tr>
+   <td>95</td>
+   <td>Körbar fil för Windows Defender Advanced Threat Protection har avslutats</td>
+   <td>Den körbara SenseCE-filen har avslutats.</td>
+   <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
+</tr>
+<tr>
+   <td>96</td>
+   <td>Windows Defender Avancerat skydd Iit har anropats. Resultatkod: %2</td>
+   <td>Den körbara SenseCE-filen har kallat MCE-initiering.</td>
+   <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
+</tr>
+<tr>
+   <td>97</td>
+   <td>Det finns anslutningsproblem till molnet för DLP-scenariot</td>
+   <td>Det finns nätverksanslutningsproblem som påverkar DLP-klassificeringsflödet.</td>
+   <td>Kontrollera nätverksanslutningen.</td>
+</tr>
+<tr>
+   <td>98</td>
+   <td>Anslutningen till molnet för DLP-scenariot har återställts</td>
+   <td>Anslutningen till nätverket återställdes och DLP-klassificeringsflödet kan fortsätta.</td>
+   <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
+</tr>
+<tr>
+   <td>99</td>
+   <td>Fel i Sense har uppstått när du kommunicerar med server: (%1). Resultat: (%2)</td>
+   <td>Ett kommunikationsfel inträffade.</td>
+   <td>Mer information finns i följande händelser i händelseloggen.</td>
+</tr>
+<tr>
+   <td>100</td>
+   <td>Det gick inte att starta windows Defender Advanced Threat Protection (körbart skydd). Felkod: %1</td>
+   <td>Det gick inte att starta SenseCE-körbara filer.</td>
+   <td>Starta om enheten. Om det här felet kvarstår kontaktar du supporten.</td>
+</tr>
+<tr>
+   <td>102</td>
+   <td>Körbar nätverksidentifiering och svar i Windows Defender Advanced Threat Protection har startat</td>
+   <td>Körbar SenseNdr har startat.</td>
+   <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
+</tr>
+<tr>
+   <td>103</td>
+   <td>Körbar nätverksidentifiering och svar för Windows Defender Advanced Threat Protection har avslutats</td>
+   <td>Den körbara SenseNdr-filen har avslutats.</td>
+   <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
 </tr>
 </tbody>
 </table>

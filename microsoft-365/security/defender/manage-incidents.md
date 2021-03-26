@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4e216f841c8728b1cabd98a931e7326f53344a74
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3edc7e52e93bc08d46536a520bf57735983f493b
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51072714"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222629"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Hantera incidenter i Microsoft 365 Defender
 
@@ -82,4 +82,4 @@ När en ändring eller kommentar görs i en avisering registreras den i avsnitte
 Tillagda kommentarer visas direkt i fönstret.
 
 ## <a name="add-incident-tags"></a>Lägg till incidenttaggar
-Du kan lägga till anpassade taggar för en händelse, till exempel för att flagga en grupp incidenter med gemensamma egenskaper. Du kan senare filtrera incidentkön för alla ärenden som innehåller en viss tagg.
+Du kan lägga till anpassade taggar för en händelse, till exempel för att flagga en grupp med incidenter med en gemensam egenskap. Du kan senare filtrera incidentkön för alla ärenden som innehåller en viss tagg.

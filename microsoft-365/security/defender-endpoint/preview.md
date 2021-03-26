@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 370048586c5ddfa6fa9ea265e929608357adf5df
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 4aab7f12b250c1415ad65a9e706edf6b68050b2f
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186887"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222665"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Förhandsversionsfunktioner i Microsoft Defender för slutpunkt
 
@@ -40,9 +40,6 @@ ms.locfileid: "51186887"
 
 
 Defender för Endpoint-tjänsten uppdateras hela tiden med nya funktionsförbättringar och funktioner.
-
-> [!TIP]
-> Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-abovefoldlink)
 
 Lär dig mer om nya funktioner i förhandsversionen av Defender för slutpunkt och bli bland de första som kan prova kommande funktioner genom att aktivera förhandsversionen.
 
@@ -68,15 +65,6 @@ Följande funktioner ingår i förhandsversionen:
 - [Webbinnehållsfiltrering](web-content-filtering.md) <br> Webbinnehållsfiltrering är en del av webbskyddsfunktionerna i Microsoft Defender för Endpoint. Det gör att din organisation kan spåra och reglera åtkomsten till webbplatser baserat på deras innehållskategorier. Många av dessa webbplatser, även om de inte är skadliga, kan vara problematiska på grund av regelefterlevnad, bandbreddsanvändning eller andra problem.
 
 - [Rapport om enhetshälsa och efterlevnad](machine-reports.md) <br/> Rapporten om enhetens hälsa och efterlevnad ger detaljerad information om enheterna i din organisation.
-
-- [Informationsskydd](information-protection-in-windows-overview.md)<BR>
-Informationsskydd är en integrerad del av Microsoft 365 Enterprise Suite, vilket ger intelligent skydd för att skydda känsliga data samtidigt som produktivitet på arbetsplatsen möjliggörs. Microsoft Defender för Endpoint är sömlöst integrerat i Microsoft Threat Protection för att tillhandahålla en fullständig och omfattande DLP-lösning (Data Loss Prevention) för Windows-enheter.
-
-    >[!NOTE]
-    >Delvis tillgängligt från Windows 10, version 1809.
-
-- [Onboard Windows Server 2019](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-version-1803-and-windows-server-2019) <BR> Microsoft Defender för Endpoint lägger nu till stöd för Windows Server 2019. Du kan hantera Windows Server 2019 på samma sätt som för Windows 10-klientenheter.
-
 
 > [!TIP] 
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  

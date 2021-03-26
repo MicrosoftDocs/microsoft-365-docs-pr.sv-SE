@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: I den här artikeln kan du läsa mer om Azure ExpressRoute-dirigeringskrav, kretsar och dirigeringsdomäner för användning med Office 365.
-ms.openlocfilehash: 1091ca5e1d48c9837f83e83d4c747c2cbcd523e3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9d3c381cfb6e24c1c87ef3dcfb83a9b93f991b93
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924934"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222413"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Dirigering med ExpressRoute för Office 365
 
@@ -41,7 +41,7 @@ Här är några av de viktigaste punkterna i ovanstående artiklar som du måste
 
 - Det finns en 1:1-mappning mellan en ExpressRoute-krets och en kunds s-nyckel.
 
-- Varje krets har stöd för 2 oberoende peeringrelationer (Azure Private-peering och Microsoft-peering). Office 365 kräver Microsoft-peering.
+- Varje krets har stöd för två oberoende peeringrelationer (Azure Private-peering och Microsoft-peering). Office 365 kräver Microsoft-peering.
 
 - Varje krets har en fast bandbredd som delas mellan alla peeringrelationer.
 
@@ -53,7 +53,7 @@ Mer information [om vilka](/azure/expressroute/expressroute-faqs) tjänster som 
   
 ## <a name="ensuring-route-symmetry"></a>Säkerställa ruttsymmetri
 
-Office 365-frontendservrarna är tillgängliga på både Internet och ExpressRoute. Servrarna föredrar att dirigeras tillbaka lokalt via ExpressRoute-kretsar när båda är tillgängliga. På grund av detta finns det en möjlighet till vägsasymmetri om trafiken från nätverket föredrar att dirigeras över dina internetkretsar. Asymmetriska rutter är ett problem eftersom enheter som utför tillståndsfull paketinspektion kan blockera returtrafik som följer en annan väg än den som de utgående paketen följde.
+Office 365 frontend-servrarna är tillgängliga på både Internet och ExpressRoute. Servrarna föredrar att dirigeras tillbaka lokalt via ExpressRoute-kretsar när båda är tillgängliga. Det kan därför finnas en möjlighet till asymmetri om trafiken från nätverket föredrar att dirigeras över dina internetkretsar. Asymmetriska rutter är ett problem eftersom enheter som utför tillståndsfull paketinspektion kan blockera returtrafik som följer en annan väg än den som de utgående paketen följde.
   
 Oavsett om du initierar en anslutning till Office 365 via Internet eller ExpressRoute måste källan vara en offentlig dirigerbar adress. När många kunder använder peering direkt med Microsoft är det inte praktiskt möjligt att ha privata adresser där duplicering är möjlig mellan kunder.
   
@@ -61,7 +61,7 @@ Följande är scenarier där kommunikation från Office 365 till ditt lokala nä
   
 - SMTP-tjänster, till exempel e-post från en Exchange Online-klientorganisation till en lokal värd eller SharePoint Online-e-post som skickas från SharePoint Online till en lokal värd. SMTP-protokollet används mer brett i Microsofts nätverk än de routningsprefix som delas över ExpressRoute-kretsar och reklam på lokala SMTP-servrar över ExpressRoute orsakar fel med dessa andra tjänster.
 
-- ADFS under verifiering av lösenord för inloggning.
+- ADFS under verifiering av lösenord för att logga in.
 
 - [Exchange Server-hybriddistributioner.](/exchange/exchange-hybrid)
 
@@ -75,7 +75,7 @@ Följande är scenarier där kommunikation från Office 365 till ditt lokala nä
 
 För att Microsoft ska kunna dirigera de här dubbelriktade trafikflödena tillbaka till ditt nätverk måste BGP-rutterna till dina lokala enheter delas med Microsoft. När du annonserar routeprefix till Microsoft via ExpressRoute bör du följa de här metodtipsen:
 
-1) Annonsera inte samma offentliga IP-adressrouteprefix till det offentliga Internet och via ExpressRoute. Vi rekommenderar starkt att annonserna för IP BGP-ruttprefix till Microsoft via ExpressRoute kommer från ett intervall som inte annonseras till internet alls. Om detta inte är möjligt på grund av det tillgängliga IP-adressutrymmet är det viktigt att säkerställa att du annonserar ett mer specifikt intervall via ExpressRoute än några internetkretsar.
+1) Annonsera inte samma offentliga IP-adressrouteprefix till det offentliga Internet och via ExpressRoute. Vi rekommenderar att annonserna för IP BGP-ruttprefix till Microsoft via ExpressRoute kommer från ett intervall som inte annonseras till internet alls. Om detta inte är möjligt på grund av det tillgängliga IP-adressutrymmet är det viktigt att säkerställa att du annonserar ett mer specifikt intervall via ExpressRoute än några internetkretsar.
 
 2) Använd separata NAT IP-pooler per ExpressRoute-krets och separat mot dessa internetkretsar.
 
@@ -95,7 +95,7 @@ Andra program, till exempel Office 365 Video, är ett Office 365-program. Office
 
 Alla Office 365-funktioner som är tillgängliga med Microsoft-peering visas i [artikeln Office 365-slutpunkter](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) efter programtyp och FQDN. Anledningen till att använda FQDN i tabellerna är att kunderna kan hantera trafik med hjälp av PAC-filer eller andra proxykonfigurationer. Se vår guide för hantering av [Office 365-slutpunkter,](./managing-office-365-endpoints.md) till exempel PAC-filer.
   
-I vissa situationer har vi använt en jokerteckendomän där en eller flera under-FQDN annonseras på ett annat sätt än jokerteckendomänen på högre nivå. Det här inträffar vanligtvis när jokertecknet representerar en lång lista med servrar som alla annonseras till ExpressRoute och Internet, medan en liten deluppsättning destinationer endast annonseras till Internet, eller tvärtom. I tabellerna nedan kan du se var skillnaderna finns.
+I vissa situationer har vi använt en jokerteckendomän där en eller flera under-FQDN annonseras på ett annat sätt än jokerteckendomänen på högre nivå. Det här inträffar vanligtvis när jokertecknet representerar en lång lista med servrar som alla annonseras till ExpressRoute och Internet, medan en liten delmängd av destinationer endast annonseras till Internet, eller tvärtom. I tabellerna nedan kan du se var skillnaderna finns.
   
 Den här tabellen visar FQDN med jokertecken som annonseras till både internet och Azure ExpressRoute tillsammans med under-FQDN som endast annonseras till internet.
 
@@ -112,7 +112,7 @@ Vanligtvis är PAC-filer tänkta att skicka nätverksbegäran till ExpressRoute-
 
 3. Inkludera övriga nätverksslutpunkter eller regler under de här två posterna och skicka trafiken till din proxyserver.
 
-Den här tabellen visar de jokerteckendomäner som annonseras till internetkretsar endast tillsammans med under-FQDN som annonseras till Azure ExpressRoute- och Internetkretsar. För PAC-filen ovanför anges FQDN i kolumn två i nedanstående tabell som annonserade till ExpressRoute i länken som det refereras till, vilket innebär att de kommer att inkluderas i den andra gruppen av poster i filen.
+Den här tabellen visar de jokerteckendomäner som annonseras till internetkretsar endast tillsammans med under-FQDN som annonseras till Azure ExpressRoute- och Internetkretsar. För PAC-filen ovan anges FQDN i kolumn 2 i nedanstående tabell som annonserade till ExpressRoute i länken som det refereras till, vilket innebär att de kommer att inkluderas i den andra gruppen av poster i filen.
 
 |**Domän med jokertecken som endast annonseras till internetkretsar**|**Under-FQDN som annonseras till ExpressRoute- och Internetkretsar**|
 |:-----|:-----|
@@ -130,7 +130,7 @@ För att dirigera till det Office 365-program du väljer måste du fastställa e
 
 2. Från vilken eller vilka egressplatser vill du att nätverkstrafiken ska lämna ditt nätverk. Du bör planerar att minimera nätverksfördröjning för anslutning till Office 365 eftersom det kommer att påverka prestanda. Eftersom Skype för företag använder röst och video i realtid är det särskilt känslig för stora nätverksfördröjning.
 
-3. Om du vill att alla eller en delmängd av dina nätverksplatser ska utnyttja ExpressRoute.
+3. Om du vill att alla eller en delmängd av dina nätverksplatser ska använda ExpressRoute.
 
 4. Från vilka platser erbjuder din nätverksleverantör ExpressRoute?
 
@@ -142,11 +142,11 @@ Det här exemplet är ett scenario för det fiktiva företaget Trey Research, so
   
 Anställda på Trey Research får endast ansluta till internettjänster och webbplatser som uttryckligen är tillåtna av säkerhetsavdelningen och via de utgående proxytjänster som är bundna till företagsnätverket och Internetleverantören.
   
-Trey Research planerar att använda Azure ExpressRoute för Office 365 och är medvetna om att viss trafik, till exempel trafik för innehållsleveransnätverk, inte kommer att kunna dirigeras via ExpressRoute för Office 365-anslutningen. Eftersom all trafik redan som standard dirigeras till proxyenheterna fortsätter dessa förfrågningar att fungera som tidigare. När Trey Research anser att de uppfyller Azure ExpressRoute-dirigeringskraven fortsätter de med att skapa en krets, konfigurera dirigering och länka den nya ExpressRoute-kretsen till ett virtuellt nätverk. När den grundläggande Azure ExpressRoute-konfigurationen är på plats använder Trey Research [#2 PAC-filen](./managing-office-365-endpoints.md#ID0EACAAA=2._Proxies) vi publicerar för att dirigera trafik med kundspecifika data via direkta ExpressRoute för Office 365-anslutningar.
+Trey Research planerar att använda Azure ExpressRoute för Office 365 och är medvetna om att viss trafik, till exempel trafik för innehållsleveransnätverk, inte kommer att kunna dirigeras via ExpressRoute för Office 365-anslutningen. Eftersom all trafik redan som standard dirigeras till proxyenheterna fortsätter dessa förfrågningar att fungera som tidigare. När Trey Research anser att de uppfyller Azure ExpressRoute-dirigeringskraven fortsätter de med att skapa en krets, konfigurera dirigering och länka den nya ExpressRoute-kretsen till ett virtuellt nätverk. När den grundläggande Azure ExpressRoute-konfigurationen är på plats använder Trey Research [#2 PAC-filen](./managing-office-365-endpoints.md)  vi publicerar för att dirigera trafik med kundspecifika data via den direkta ExpressRoute för Office 365-anslutningarna.
   
 Som visas i följande diagram kan Trey Research tillgodose kravet på att dirigera Office 365-trafik via internet och en delmängd av trafiken genom ExpressRoute med hjälp av en kombination av ändringar av dirigerings- och utgående proxykonfiguration.
   
-1. Med hjälp [#2 PAC-filen](./managing-office-365-endpoints.md#ID0EACAAA=2._Proxies) vi publicerar för att dirigera trafik via en separat utgående internetpunkt för Azure ExpressRoute för Office 365.
+1. Med hjälp [#2 PAC-filen](./managing-office-365-endpoints.md) vi publicerar för att dirigera trafik via en separat utgående internetpunkt för Azure ExpressRoute för Office 365.
 
 2. Klienter är konfigurerade med en standardväg till Trey Researchs proxy.
 
@@ -166,7 +166,7 @@ Följande är de FQDN med mest trafik för Exchange Online, SharePoint Online oc
 
 Läs mer om att distribuera och hantera proxyinställningar i [Windows 8](/archive/blogs/deploymentguys/windows-8-supporting-proxy-services-with-static-configurations-web-hosted-pac-files-and-domain-policy-configured-proxy) och se till att [Office 365](https://blogs.technet.com/b/onthewire/archive/2014/03/28/ensuring-your-office-365-network-connection-isn-t-throttled-by-your-proxy.aspx)inte begränsas av din proxy .
   
-Trey Research har ingen hög tillgänglighet med en enda ExpressRoute-krets. I händelse av att Treys redundanta par av kantenheterna för ExpressRoute-anslutningen fallerar finns det ingen ytterligare ExpressRoute-krets att växla över till. Det här gör att Trey Research blir ett problem eftersom manuell omkonfiguration krävs för att inte gå över till Internet och i vissa fall nya IP-adresser. Om Trey vill ha hög tillgänglighet är den enklaste lösningen att lägga till ytterligare ExpressRoute-kretsar för varje plats och konfigurera kretsarna på ett aktivt/aktivt sätt.
+Trey Research har ingen hög tillgänglighet med en enda ExpressRoute-krets. I händelse av att Treys redundanta par av kantenheterna för ExpressRoute-anslutningen fallerar finns det ingen ytterligare ExpressRoute-krets att växla över till. Det här gör att Trey Research blir ett problem eftersom manuell omkonfiguration och i vissa fall nya IP-adresser krävs för att det ska gå att gå över till Internet. Om Trey vill ha hög tillgänglighet är den enklaste lösningen att lägga till ytterligare ExpressRoute-kretsar för varje plats och konfigurera kretsarna på ett aktivt/aktivt sätt.
   
 ## <a name="routing-expressroute-for-office-365-with-multiple-locations"></a>Dirigering av ExpressRoute för Office 365 med flera platser
 
@@ -174,13 +174,13 @@ Det sista scenariot, dirigering av Office 365-trafik genom ExpressRoute, utgör 
   
 Ytterligare frågor som måste besvaras för kunder med flera platser i flera geografiska områden omfattar:
   
-1. Behöver du en ExpressRoute-krets på varje plats? Om du använder Skype för företag – Online eller är bekymrad över känsligheten för fördröjningar i SharePoint Online eller Exchange Online rekommenderas redundanta par med aktiva/aktiva ExpressRoute-kretsar på varje plats. Mer information finns i guiden för Skype för företag-mediakvalitet och nätverksanslutning.
+1. Behöver du en ExpressRoute-krets på varje plats? Om du använder Skype för företag – Online eller är bekymrad över känsligheten för fördröjningar i SharePoint Online eller Exchange Online rekommenderas ett redundant par aktiva/aktiva ExpressRoute-kretsar på varje plats. Mer information finns i guiden för Skype för företag-mediakvalitet och nätverksanslutning.
 
 2. Hur ska trafik till Office 365 dirigeras om en ExpressRoute-krets inte är tillgänglig i en viss region?
 
 3. Vilken är den rekommenderade metoden för att konsolidera trafik när det gäller nätverk med många små platser?
 
-Var och en av dessa presenterar en unik utmaning som kräver att du utvärderar ditt eget nätverk samt de alternativ som finns från Microsoft.
+Var och en av dessa presenterar en unik utmaning som kräver att du utvärderar ditt eget nätverk och de alternativ som är tillgängliga från Microsoft.
 
 |**Att beakta**|**Nätverkskomponenter att utvärdera**|
 |:-----|:-----|
@@ -197,21 +197,21 @@ Var och en av dessa överväganden måste beaktas för varje unikt nätverk. Ned
   
 Det här exemplet är ett scenario för det fiktiva företaget Humongous Insurance. Företaget har flera geografiska platser.
   
-Humongous Insurance är geografiskt utspridda med kontor över hela världen. De vill implementera Azure ExpressRoute för Office 365 för att behålla majoriteten av sin Office 365-trafik i direkta nätverksanslutningar. Humongous Insurance har också kontor på ytterligare två världsdelar. Anställda på det fjärranslutna kontor där ExpressRoute inte är möjligt måste dirigeras tillbaka till ett eller båda de primära anläggningar för att använda en ExpressRoute-anslutning.
+Humongous Insurance är geografiskt utspridda med kontor över hela världen. De vill implementera Azure ExpressRoute för Office 365 för att behålla större delen av sin Office 365-trafik i direkta nätverksanslutningar. Humongous Insurance har också kontor på ytterligare två världsdelar. Anställda på det fjärranslutna kontor där ExpressRoute inte är möjligt måste dirigeras tillbaka till ett eller båda de primära anläggningar för att använda en ExpressRoute-anslutning.
   
 Den vägledande principen är att få trafik på väg till Office 365 till ett Microsoft-datacenter så snabbt som möjligt. I det här exemplet måste Humongous Insurance bestämma om deras fjärranslutna kontor ska dirigeras via Internet till ett Microsoft-datacenter via vilken anslutning som helst så snabbt som möjligt eller om deras fjärranslutna kontor ska dirigeras via ett internt nätverk för att komma till ett Microsoft-datacenter via en ExpressRoute-anslutning så snabbt som möjligt.
   
 Microsofts datacenter, nätverk och programarkitektur är utformad för att dra stora hänsyn till globalt skilda kommunikationer och ge dem bästa möjliga service. Det här är ett av de största nätverken i världen. Office 365-begäran som blir kvar på kundens nätverk längre än nödvändigt kommer inte att kunna dra nytta av den här arkitekturen.
   
-I Humongous Insurances situation bör de fortsätta beroende på vilka program de tänker använda via ExpressRoute. Om de till exempel är en Skype för företag – Online-kund eller planerar att nyttja ExpressRoute-anslutning när de ansluter till externa Skype för företag – Online-möten rekommenderar guiden för Skype för företag – online-mediakvalitet och nätverksanslutning att de etablerar ytterligare en ExpressRoute-krets för den tredje platsen. Det kan vara dyrare ur ett nätverksperspektiv. Dock kan dirigeringsförfrågningar från en världsdel till en annan innan de levereras till ett Microsoft-datacenter ge en dålig eller oanvändbar upplevelse under Skype för företag – Online-möten och kommunikation.
+I Humongous Insurances situation bör de fortsätta beroende på vilka program de tänker använda via ExpressRoute. Om de till exempel är En Skype för företag – Online-kund eller planerar att använda ExpressRoute-anslutning när de ansluter till externa Skype för företag – Online-möten rekommenderar guiden för Skype för företag – online-mediakvalitet och nätverksanslutning att de etablerar ytterligare en ExpressRoute-krets för den tredje platsen. Det kan vara dyrare ur ett nätverksperspektiv. Dock kan dirigeringsförfrågningar från en världsdel till en annan innan de levereras till ett Microsoft-datacenter ge en dålig eller oanvändbar upplevelse under Skype för företag – Online-möten och kommunikation.
   
-Om Humongous Insurance inte använder eller inte planerar att nyttja Skype för företag – Online på något sätt kan dirigering av nätverkstrafik på väg till Office 365 tillbaka till en världsdel med en ExpressRoute-anslutning vara möjlig, men kan orsaka onödig fördröjning eller TCP-överbelastning. I båda fallen rekommenderas dirigering av trafik på väg till Internet till Internet på den lokala platsen för att dra nytta av de innehållsleveransnätverk som Office 365 förlitar sig på.
+Om Humongous Insurance inte använder eller inte planerar att använda Skype för företag – Online på något sätt kan dirigering av nätverkstrafik på väg till Office 365 tillbaka till en världsdel med en ExpressRoute-anslutning vara möjlig, men kan orsaka onödig fördröjning eller TCP-överbelastning. I båda fallen rekommenderas dirigering av trafik på väg till Internet till Internet på den lokala platsen för att dra nytta av de innehållsleveransnätverk som Office 365 förlitar sig på.
   
 ![Multigeografi för ExpressRoute](../media/98fdd883-2c5a-4df7-844b-bd28cd0b9f50.png)
   
 När Humongous Insurance planerar sin strategi för flera geografiska platser finns det ett antal saker att tänka på kring kretsstorlek, antal kretsar, redundans osv.
   
-Med ExpressRoute på en enda plats med flera regioner som försöker använda kretsen vill Humongous Insurance säkerställa att anslutningar till Office 365 från det fjärranslutna kontoret skickas till det Office 365-datacenter som ligger närmast huvudkontoret och tas emot vid huvudkontoret. Humongous Insurance har implementerat en DNS-vidarebefordran som minskar det antal resor och DNS-uppslag som krävs för att upprätta lämplig anslutning till den Office 365-miljö som ligger närmast huvudkontorets utgående internetpunkt. Det förhindrar klienten från att lösa en lokal klientserver och ser till att klientservern som personen ansluter till ligger nära huvudkontoret där Humongous Insurance peering med Microsoft. Du kan också lära dig [att tilldela en villkorsstyrd vidarebefordrare för ett domännamn.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc794735(v=ws.10))
+Med ExpressRoute på en enda plats med flera regioner som försöker använda kretsen vill Humongous Insurance säkerställa att anslutningar till Office 365 från det fjärranslutna kontoret skickas till det Office 365-datacenter som ligger närmast huvudkontoret och tas emot vid huvudkontoret. Humongous Insurance har implementerat en DNS-vidarebefordran som minskar det antal resor och DNS-uppslag som krävs för att upprätta lämplig anslutning till den Office 365-miljö som ligger närmast huvudkontorets utgående internetpunkt. Det förhindrar klienten från att lösa en lokal klientserver och säkerställer att den Front-End-server som personen ansluter till finns nära huvudkontoret där Humongous Insurance peering med Microsoft. Du kan också lära dig [att tilldela en villkorsstyrd vidarebefordrare för ett domännamn.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc794735(v=ws.10))
   
 I det här scenariot löser trafik från det fjärranslutna kontoret Office 365-frontendinfrastrukturen i Nordamerika och använder Office 365 för att ansluta till backendservrarna enligt arkitekturen för Office 365-programmet. Exchange Online t.ex. skulle avsluta anslutningen i Nordamerika och frontendservrarna skulle ansluta till e-postbackendservern där klientorganisationen finns. Alla tjänster har en allmänt distribuerad front door-tjänst bestående av en encast- och anycast-destinationer.
   
@@ -225,7 +225,7 @@ Selektiv dirigering med ExpressRoute kan behövas av en rad olika anledningar, t
   
 1. **Filtrering/separering** vid dirigering – tillåta BGP-rutter till Office 365 genom ExpressRoute för en delmängd av dina undernät eller routrar. Med det här dirigeras rutter selektivt efter kundnätverkssegment eller fysisk kontorsplats. Det här är vanligt vid en spridd utrullning av ExpressRoute för Office 365 och är konfigurerad på dina BGP-enheter.
 
-2. **PAC-filer/URL:er** – dirigerar nätverkstrafik på väg till Office 365 till en specifik rutt för specifika FQDN. Det här dirigerar selektivt efter de klientdatorer som identifieras med [PAC-fildistributionen.](./managing-office-365-endpoints.md#ID0EACAAA=2._Proxies)
+2. **PAC-filer/URL:er** – dirigerar nätverkstrafik på väg till Office 365 till en specifik rutt för specifika FQDN. Det här dirigerar selektivt efter de klientdatorer som identifieras med [PAC-fildistributionen.](./managing-office-365-endpoints.md)
 
 3. **Routefiltrering**  -  [Routefilter](/azure/expressroute/how-to-routefilter-portal) är ett sätt att använda en delmängd av de tjänster som stöds via Microsoft-peering.
 

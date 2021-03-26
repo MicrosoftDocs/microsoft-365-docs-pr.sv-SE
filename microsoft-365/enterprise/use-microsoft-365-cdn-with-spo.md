@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Lär dig hur du använder Nätverket för innehållsleverans i Office 365 (CDN) för att snabba på leveransen av dina SharePoint Online-tillgångar.
-ms.openlocfilehash: 6b740fc1429613627e0597dc6ecf2e150c015989
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 17c80b8718ea46c9dfba9f803093974e8ce3e706
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924822"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222689"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Använda Office 365 Content Delivery Network (CDN) med SharePoint Online
 
@@ -389,7 +389,7 @@ När du har kört kommandot synkroniserar systemet konfigurationen i datacentret
 <a name="ExamplePrivateOriginSiteCollection"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>Exempel: Konfigurera ett privat ursprung för en webbplatssamling för SharePoint Online
 
-Använd **cmdleten Add-SPOTenantCdnOrigin** till att definiera en webbplatssamling som ett privat ursprung. Ett exempel:
+Använd **cmdleten Add-SPOTenantCdnOrigin** till att definiera en webbplatssamling som ett privat ursprung. Till exempel:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -672,7 +672,7 @@ När du har kört kommandot synkroniserar systemet konfigurationen i datacentret
 <a name="ExamplePrivateOriginSiteCollectionPnPPosh"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>Exempel: Konfigurera ett privat ursprung för en webbplatssamling för SharePoint Online
 
-Använd **cmdleten Add-PnPTenantCdnOrigin** till att definiera en webbplatssamling som ett privat ursprung. Ett exempel:
+Använd **cmdleten Add-PnPTenantCdnOrigin** till att definiera en webbplatssamling som ett privat ursprung. Till exempel:
 
 ``` powershell
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -888,7 +888,7 @@ Om du vill använda den fullständiga URL:en till tillgången i stället för en
 `https://<TenantHostName>.sharepoint.com/sites/site/CDN_origins/public/image.png`
 
 > [!NOTE]
-> I allmänhet bör du inte hårdkoda URL-adresser direkt till tillgångar i CDN. Du kan dock manuellt skapa URL-adresser för tillgångar i offentliga ursprung om det behövs. Mer information finns i [Hardcoding CDN URL:er för offentliga tillgångar.](use-microsoft-365-cdn-with-spo.md#hardcoding-cdn-urls-for-public-assets)
+> I allmänhet bör du inte hårdkoda URL-adresser direkt till tillgångar i CDN. Du kan dock manuellt skapa URL-adresser för tillgångar i offentliga ursprung om det behövs. Mer information finns i [Hardcoding CDN URL:er för offentliga tillgångar.](use-microsoft-365-cdn-with-spo.md)
 
 Mer information om hur du verifierar att tillgångar kommer från CDN finns i Hur bekräftar jag att tillgångar används i [CDN?](use-microsoft-365-cdn-with-spo.md#CDNConfirm) i avsnittet Felsökning av [Office 365 CDN.](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting)
 
@@ -951,7 +951,7 @@ Följande diagram visar arbetsflödet när SharePoint tar emot en begäran om en
 
 Åtkomst till tillgångar i privata ursprung i Office 365 CDN tilldelas med token som genereras av SharePoint Online. Användare som redan har åtkomst till mappen eller biblioteket som anges av ursprunget tilldelas automatiskt token som tillåter användaren att komma åt filen baserat på deras behörighetsnivå. De här åtkomsttoken är giltiga i 30 till 90 minuter efter att de har skapats för att förhindra attacker vid tokenuppspelning.
 
-När åtkomsttoken har genererats returnerar SharePoint Online en anpassad  URI till klienten som innehåller två auktoriseringsparametrar äter (edge-auktoriseringstoken) och _oat_ (origin authorization token). Strukturen för varje token _är< förfallotid i Epoch-tidsformatet som >__< säkra signaturens >._ Ett exempel:
+När åtkomsttoken har genererats returnerar SharePoint Online en anpassad  URI till klienten som innehåller två auktoriseringsparametrar äter (edge-auktoriseringstoken) och _oat_ (origin authorization token). Strukturen för varje token _är< förfallotid i Epoch-tidsformatet som >__< säkra signaturens >._ Till exempel:
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312

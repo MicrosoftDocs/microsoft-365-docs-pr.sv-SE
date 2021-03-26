@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Läs svaren på vanliga frågor om centraliserad distribution från administrationscentret för Microsoft 365.
-ms.openlocfilehash: 9f4841508701d4dd5878e99fcc51a436bc5824e2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 06e3b7973a209cdf40446c5a9511713d779373b8
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915476"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51221841"
 ---
 # <a name="centralized-deployment-faq"></a>Vanliga frågor och svar om centraliserad distribution
 
@@ -72,7 +72,7 @@ Ja. Centraliserad distribution ger administratörer möjlighet att välja någon
 
 Ja. Administratörer kan ladda upp en ny manifestfil för att stödja metadataändringar för administratörs deployerade LOB-tillägg. Tillägget uppdateras nästa gång Office-programmen startas. Webbprogrammet kan ändras när som helst.  
  
-Mer information finns [i verksamhets tillägg.](./manage-addins-in-the-admin-center.md#more-about-office-add-ins-security)  
+Mer information finns [i verksamhets tillägg.](./manage-addins-in-the-admin-center.md)  
 
 ## <a name="can-admins-turn-off-add-ins"></a>Kan administratörer inaktivera tillägg?  
 

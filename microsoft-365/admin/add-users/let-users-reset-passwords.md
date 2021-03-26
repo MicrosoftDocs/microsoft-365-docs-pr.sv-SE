@@ -25,28 +25,28 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Lär dig hur du återställer dina lösenord med självbetjäningsverktyget för återställning av lösenord.
-ms.openlocfilehash: c777b9d840e0e9e467c1283fff94eca9a061ee73
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: f43c409e98aa98e942bd7c7cbb15302422df241d
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925560"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222129"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Låt användare återställa sina egna lösenord
 
-Som Microsoft 365-administratör kan du [](https://go.microsoft.com/fwlink/p/?LinkId=522677) låta användare använda självbetjäningsverktyget för återställning av lösenord så att du inte behöver återställa lösenord för dem. Det innebär mindre jobb för dig!
+Som Microsoft 365-administratör kan du [](https://go.microsoft.com/fwlink/p/?LinkId=522677) låta personer använda självbetjäningsverktyget för återställning av lösenord så att du inte behöver återställa lösenord åt dem. Det innebär mindre jobb för dig!
   
 ## <a name="before-you-begin"></a>Innan du börjar
   
-- Självbetjäning för återställning av  lösenord för molnanvändare blir kostnadsfri i alla betalabonnemang för Microsoft 365 Business, Education eller Nonprofit. Det fungerar inte med utvärderingsversionen av Microsoft 365.
+- Självbetjäning för återställning av  lösenord för molnanvändare krävs kostnadsfritt i alla betalabonnemang för Microsoft 365 Business, Education eller Office 365 för ideella föreningar. Det fungerar inte med utvärderingsversionen av Microsoft 365.
 
 - Tjänsten använder Azure. Du får automatiskt den här funktionen **kostnadsfritt** när du utför de här stegen. Det kostar dig ingenting att aktivera självbetjäning för återställning av lösenord om du inte använder andra Azure-funktioner.
 
 - **Om du använder Active Directory lokalt** gäller inte de två punkterna ovan. Du kan du konfigurera det här, men **det kräver en betald prenumeration på Azure AD Premium**.
 
-Den här artikeln är avsedd för personer som anger en förfalloprincip för lösenord för ett företag, en skola eller en ideell förening. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörskonto?](../admin-overview/admin-overview.md)
+Den här artikeln är avsedd för personer som anger en förfalloprincip för lösenord för ett företag, en skola eller en ideell förening. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörskonto?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)
 
-Du måste vara global [administratör eller lösenordsadministratör för att](about-admin-roles.md) kunna utföra de här stegen.
+Du måste vara global [administratör eller lösenordsadministratör för att](about-admin-roles.md) utföra de här stegen.
 
 ## <a name="watch-let-users-reset-their-own-passwords"></a>Titta: Låt användare återställa sina egna lösenord
 
@@ -60,31 +60,31 @@ Anvisningarna aktiverar Självbetjäning för återställning av lösenord för 
   
 ::: moniker range="o365-worldwide"
 
-1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">sidan Inställningar</a>för organisationens **inställningar** > **i administrationscentret.**
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrationscentret går</a>du till sidan **Inställningar** > **för** organisationen.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">sekretesssidan</a>inställningar  i \> **&amp; administrationscentret.**
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret går</a>du till sidan **Sekretess för** \> **&amp; inställningar.**
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">sekretesssidan</a>Inställningar  för säkerhet \> **i** \> **&amp; administrationscentret.**
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret går</a>du till sidan **Inställningar för** \>  \> **sekretesssäkerhet. &amp;**
 
 ::: moniker-end
 
-2. Högst upp på sidan **Organisationsinställningar** väljer du fliken **&** Sekretess.
+2. Högst upp på sidan **Organisationsinställningar** väljer du fliken **Säkerhet &** Sekretess.
   
 3. Välj **Självbetjäning för återställning av lösenord.**
 
-4. Under **Självbetjäning för återställning** av lösenord väljer du Gå till Azure Portal för att aktivera **självbetjäning för återställning av lösenord.**
+4. Under **Självbetjäning för återställning av** lösenord väljer du Gå till Azure Portal för att aktivera **självbetjäning för återställning av lösenord.**
 
-5. I det vänstra navigeringsfönstret **väljer du** Användare och går sedan till **| Välj Lösenordsåterställning** på **sidan Alla användare.**
+5. I det vänstra navigeringsfönstret väljer **du** Användare och går sedan till **fliken | Alla användare** väljer **lösenordsåterställning.**
   
-6. På sidan **Egenskaper** väljer du **Alla för** att aktivera det för alla i företaget och väljer sedan **Spara.**
+6. På sidan **Egenskaper** väljer du **Alla för** att aktivera det för alla i företaget. Välj sedan **Spara**.
   
 7. När användarna loggar in uppmanas de att ange ytterligare kontaktinformation som hjälper dem att återställa lösenordet i framtiden.
 

@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: Sammanfattning Använd PowerShell för Microsoft 365 för att skapa rapporter som du inte kan skapa i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 12cba74d114ea03804741335bd34ece403926033
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: dc183ae8a315bf788befc85474d0647802ac91ee
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924702"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222785"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>Använda PowerShell för att skapa rapporter för Microsoft 365
 
@@ -33,7 +33,7 @@ I de här artiklarna beskrivs hur du använder PowerShell för Microsoft 365 fö
   
 - Kom igång med rapportering med PowerShell för Microsoft 365:
     
-  - [Varför du behöver använda PowerShell för Microsoft 365](./why-you-need-to-use-microsoft-365-powershell.md#reveal)
+  - [Varför du behöver använda PowerShell för Microsoft 365](./why-you-need-to-use-microsoft-365-powershell.md)
     
     
 - Rapporter för användarkonton och licenser:

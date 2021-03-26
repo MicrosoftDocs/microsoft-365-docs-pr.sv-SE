@@ -19,23 +19,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: Lär dig hur du återställer lösen ordet och skickar ett e-postmeddelande till en ny Microsoft 365-användare.
-ms.openlocfilehash: 206e38929183fc280134a42e3febead2483d0f76
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+description: Lär dig hur du återställer lösenord och skickar ett e-postmeddelande till en ny Microsoft 365-användare.
+ms.openlocfilehash: 2b2c8657a4bbd4745a3fee34fc259244b83640d3
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131752"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222105"
 ---
 # <a name="resend-a-users-password---admin-help"></a>Skicka om en användares lösenord – hjälp för administratörer
 
-I den här artikeln förklaras hur du skickar e-postmeddelandet till en ny användare i Office 365. Det här kan inträffa när du skapar en ny användare och de inte får ett e-postmeddelande med sitt nya lösen ord. Det gör du genom att återställa användarens lösen ord.
+I den här artikeln förklaras hur du skickar om e-postmeddelandet till en ny användare i Office 365. Det här kan inträffa när du skapar en ny användare och de inte får ett e-postmeddelande med det nya lösenordet. Det gör du genom att återställa användarens lösenord.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-Den här artikeln är avsedd för personer som anger en förfalloprincip för lösenord för ett företag, en skola eller en ideell förening. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörskonto?](../admin-overview/admin-overview.md).
+Den här artikeln är avsedd för personer som anger en förfalloprincip för lösenord för ett företag, en skola eller en ideell förening. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörskonto?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview).
 
-Du måste vara [Global administratör eller lösen ords administratör](about-admin-roles.md) för att utföra de här stegen.
+Du måste vara global [administratör eller lösenordsadministratör för att](about-admin-roles.md) utföra de här stegen.
 
 ## <a name="resend-user-password"></a>Skicka användarlösenord igen
   
@@ -57,11 +57,11 @@ Du måste vara [Global administratör eller lösen ords administratör](about-ad
 
 ::: moniker-end
 
-2. På sidan **aktiva användare** väljer du användaren och sedan **Återställ lösen ord**.
+2. Markera användaren **på** sidan Aktiva användare och välj sedan **Återställ lösenord.**
 
-3. Följ instruktionerna på sidan **Återställ lösen ord** för att automatiskt skapa ett nytt lösen ord för användaren eller skapa ett för dem och välj sedan **Återställ**.  
+3. Följ instruktionerna på **sidan Återställ** lösenord om du vill generera ett nytt lösenord automatiskt för användaren eller skapa ett åt det och välj sedan **Återställ**.  
 
-4. Ange en e-postadress som användaren kan komma åt så att de får det nya lösen ordet och följ upp dem för att kontrol lera att de har fått dem.
+4. Ange en e-postadress som användaren kan komma åt så att han eller hon får det nya lösenordet och följ upp med dem för att vara säker på att de har fått det.
 
 ## <a name="related-content"></a>Relaterat innehåll
 

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Du kan använda Administrationscenter för att konfigurera din organisation i molnet, hantera användare och prenumerationer. Kom igång genom att logga in på kontot som har administratörsbehörighet.
-ms.openlocfilehash: 7d326629de4859819784af015292f99b044658d0
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: ef606565d7cad94bc0c7ff81630ef6c2fe8a6fc4
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215498"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222093"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Om Administrationscenter för Microsoft 365
 
@@ -71,7 +71,7 @@ Om den här videon har hjälp dig kan du ta en titt på den[fullständiga utbild
 
 ## <a name="admin-center-features-and-settings"></a>Funktioner och inställningar för Administrationscenter
 
-Här är funktionerna och inställningarna du hittar i navigeringen till vänster sida i Administrationscenter.. Mer information om administrativa uppgifter i [administratörs hjälp](./admin-overview.md).
+Här är funktionerna och inställningarna du hittar i navigeringen till vänster sida i Administrationscenter.. Mer information om administrativa uppgifter i [administratörs hjälp](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview).
   
 |**Meny**|**Vad det används till**|
 |-----|-----|

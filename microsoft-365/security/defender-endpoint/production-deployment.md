@@ -1,6 +1,6 @@
 ---
-title: Konfigurera distribution av Microsoft Defender ATP
-description: Lär dig konfigurera distributionen för Microsoft Defender ATP
+title: Konfigurera Microsoft Defender för distribution av Slutpunkt
+description: Lär dig konfigurera distributionen för Microsoft Defender för Endpoint
 keywords: distribuera, konfigurera, licensieringsverifiering, klientkonfiguration, nätverkskonfiguration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4af84c21977e4b90c8b6d9ec4c785339ff229e7d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 8965594789c3c96c043e3cd1a8922d9ba996ef47
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186155"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222447"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Konfigurera Microsoft Defender för distribution av Slutpunkt
 
@@ -98,7 +98,7 @@ När du öppnar Microsoft Defender Säkerhetscenter för första gången visas e
 
 4. Konfigurera inställningar.
 
-   **Datalagringsplats** – Det är viktigt att ställa in detta på rätt sätt. Avgör var kunden främst vill vara värd: USA, EU eller Storbritannien. Du kan inte ändra platsen efter den här uppsättningen och Microsoft för inte över data från den angivna geolokaliseringen. 
+   **Datalagringsplats** – Det är viktigt att ställa in detta på rätt sätt. Avgör var kunden främst vill vara värd: USA, EU eller Storbritannien. Du kan inte ändra platsen efter den här uppsättningen och Microsoft kommer inte att överföra data från den angivna geolokaliseringen. 
 
     **Datalagring** – standardvärdet är sex månader.
 
@@ -124,10 +124,7 @@ Microsoft Defender för slutpunkts sensoren kräver Microsoft Windows HTTP (WinH
 
 -   Web Proxy Autodiscovery Protocol (WPAD)
 
-Om transparent proxy eller WPAD har implementerats i nätverkstopologin behöver du inte göra några särskilda konfigurationsinställningar. Mer information om undantag för slutpunkts-URL i proxyn finns i avsnittet Bilaga i det här dokumentet för listan över tillåtna URL-adresser eller [i Microsoft-dokument.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
-
-> [!NOTE]
-> En detaljerad lista över URL-adresser som måste tillåtas finns i den [här artikeln.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
+Om transparent proxy eller WPAD har implementerats i nätverkstopologin behöver du inte göra några särskilda konfigurationsinställningar. Mer information om undantag för slutpunkts-URL i proxyn finns i avsnittet URL-adresser för [proxytjänsten](production-deployment.md#proxy-service-urls) i det här dokumentet för URL:er som tillåts eller i Konfigurera enhetsproxy och [Internetanslutningsinställningar.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
 
 **Manuell statisk proxykonfiguration:**
 
@@ -200,31 +197,34 @@ URL-adresser som innehåller v20 i dem behövs bara om du har Windows 10-, versi
 
 Om en proxy eller brandvägg blockerar anonym trafik, som Microsoft Defender för Slutpunkts sensor ansluter från systemkontext, kontrollerar du att anonym trafik tillåts i de angivna webbadresserna.
 
-I följande nedladdningsbara kalkylblad finns de tjänster och deras tillhörande URL:er som nätverket måste kunna ansluta till. Se till att det inte finns några brandväggs- eller nätverksfiltreringsregler som nekar åtkomst till dessa URL-adresser, eller så kan du behöva skapa en *tillåta-regel* specifikt för dem.
+I följande nedladdningsbara kalkylblad finns de tjänster och deras tillhörande URL:er som nätverket måste kunna ansluta till. Se till att det inte finns några brandväggs- eller nätverksfiltreringsregler som nekar åtkomst till dessa URL:er, eller så kan du behöva skapa en *tillåta-regel* specifikt för dem.
 
 |**Kalkylblad med domänlista**|**Beskrivning**|
 |:-----|:-----|
 |![Miniatyrbild för Microsoft Defender för slutpunkts-URL:er-kalkylblad](images/mdatp-urls.png)<br/>  | Kalkylblad med specifika DNS-poster för tjänstplatser, geografiska platser och operativsystem. <br><br>[Ladda ned kalkylbladet här.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 
 
-###  <a name="microsoft-defender-for-endpoint-service-backend-ip-range"></a>IP-intervall för Microsoft Defender för slutpunktstjänstbackend
+###  <a name="microsoft-defender-for-endpoint-service-backend-ip-ranges"></a>IP-intervall för Microsoft Defender för slutpunktstjänstbackend
 
-Om nätverksenheterna inte har stöd för URL-adresser som listas i föregående avsnitt kan du använda följande information.
+Om nätverksenheterna inte har stöd för DNS-baserade regler använder du IP-intervall i stället.
 
-Defender för Endpoint bygger på Azure Cloud som distribueras i följande regioner:
+Defender för Endpoint är inbyggt i Azure Cloud och distribueras i följande regioner:
 
-- \+\<Region Name="uswestcentral">
-- \+\<Region Name="useast2">
-- \+\<Region Name="useast">
-- \+\<Region Name="europenorth">
-- \+\<Region Name="europewest">
-- \+\<Region Name="uksouth">
-- \+\<Region Name="ukwest">
+- AzureCloud.eastus
+- AzureCloud.eastus2
+- AzureCloud.westcentralus
+- AzureCloud.northeurope
+- AzureCloud.westeurope
+- AzureCloud.uksouth
+- AzureCloud.ukwest
 
-Du hittar AZURE IP-intervallet på [IP-intervallen för Microsoft Azure-datacentret.](https://www.microsoft.com/en-us/download/details.aspx?id=41653)
+Du hittar Azure IP-intervallen i [Azure IP-intervall och tjänsttaggar – Offentligt moln.](https://www.microsoft.com/download/details.aspx?id=56519)
 
 > [!NOTE]
-> Som en molnbaserad lösning kan IP-adressintervallet ändras. Vi rekommenderar att du går över till DNS-lösningsinställningen.
+> Som en molnbaserad lösning kan IP-adressintervallen ändras. Vi rekommenderar att du går över till DNS-baserade regler.
+
+> [!NOTE]
+> Om du är myndighetskund i USA kan du se motsvarande avsnitt på sidan [Defender för slutpunkt för amerikanska](gov.md#service-backend-ip-ranges) myndigheter.
 
 ## <a name="next-step"></a>Nästa steg
 

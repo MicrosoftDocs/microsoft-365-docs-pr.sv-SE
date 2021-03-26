@@ -2,8 +2,8 @@
 title: Administrationscenter för Microsoft 365 – Översikt
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,33 +21,144 @@ search.appverid:
 - MET150
 - MOE150
 description: Läs mer om administrationscentret för Microsoft 365.
-ms.openlocfilehash: b936a42629086c8674bd2d89454e98e387b15efc
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 5ae72b51657cea1ce635c622e875cdf736ee1598
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423041"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51221767"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Översikt över administrationscenter för Microsoft 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
-Administrationscentret för Microsoft 365 är den plats där du hanterar ditt företag i molnet. Du kan utföra sådana uppgifter som att lägga till och ta bort användare, ändra licenser och återställa lösenord. 
+I administrationscentret för Microsoft 365 hanterar du ditt företag i molnet. Du kan utföra sådana uppgifter som att lägga till och ta bort användare, ändra licenser och återställa lösenord. 
 
-Om du vill gå till administrationscentret för Microsoft 365 går du till [admin.microsoft.com](https://admin.microsoft.com) eller, om du redan är inloggad, väljer du startprogrammet och **sedan Admin.**
+Specialistarbetsytor, som Säkerhet eller Enhetshantering, ger mer detaljerad kontroll. Mer information om hur administratörscentra fungerar tillsammans finns i Vad är de specifika typerna av IT-roller och andra arbetsytor [som Säkerhet, Enhetshantering](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) eller Exchange? i den här artikeln.
 
-På startsidan kan du skapa kort för uppgifter som du utför ofta. Om du vill lägga till ett nytt **kort väljer du Lägg** till kort och sedan plustecknet bredvid det kort du vill lägga till. Stäng fönstret när du är klar. Du kan ordna om korten genom att markera och dra dem till den plats där du vill ha dem. Om du vill ta bort ett kort **väljer du Fler** åtgärder och sedan Ta **bort.**
+Du kommer till administrationscentret för Microsoft 365 genom att [gå till admin.microsoft.com](https://admin.microsoft.com) eller, om du redan är inloggad, välja startprogrammet och sedan välja **Admin**.
 
-Expandera navigeringsmenyn om du vill visa fler administrativa uppgifter. Du hittar avancerade konfigurationsinställningar i ytterligare administrationscenter längst ned.
+På startsidan kan du skapa kort för aktiviteter som du utför ofta. Om du vill lägga till ett nytt **kort väljer du Lägg** till kort och sedan plustecknet bredvid kortet du vill lägga till. Stäng fönstret när du är klar. Du kan ändra ordning på korten genom att markera och dra dem till den plats där du vill ha dem. Om du vill ta bort ett kort **väljer du Fler** åtgärder och sedan Ta **bort**.
 
-En vanlig uppgift som du kan utföra i administrationscentret är att lägga till en användare. Det gör du genom att **välja Användare,** **Aktiva användare** och sedan Lägga till **en användare.** Ange användarens namn och annan information och välj **sedan Nästa.** Följ anvisningarna för att slutföra tillägget av användaren. När du är klar väljer du **Slutför och** sedan **Stäng.**
+Om du vill visa fler administrativa uppgifter expanderar du navigeringsmenyn. Du hittar avancerade konfigurationsinställningar i ytterligare administrationscenter längst ned.
 
-Du kan sortera dina aktiva användare efter kolumner, till exempel **visningsnamn** eller **licenser.** Om du vill lägga till fler kolumner **väljer du Välj** kolumner, markerar de kolumner du vill lägga till och väljer sedan **Spara.**
+En vanlig uppgift som du kan utföra i administrationscentret är att lägga till en användare. Det gör du genom att **välja Användare**, **Aktiva** användare och sedan Lägga till **en användare**. Ange användarens namn och annan information och välj sedan **Nästa**. Följ instruktionerna för att lägga till användaren. När du är klar väljer du **Slutför tilläggning** och sedan **Stäng**.
+
+Du kan sortera dina aktiva användare efter kolumner, till exempel **Visningsnamn** eller **Licenser.** Om du vill lägga till fler **kolumner väljer du Välj** kolumner , markerar de kolumner du vill lägga till och väljer sedan **Spara**.
 
 Välj en användare om du vill se fler alternativ, till exempel hantera deras produktlicenser.
 
-Om du vill aktivera fler funktioner som ingår i prenumerationen väljer du **Konfigurera.** Här kan du aktivera inloggningssäkerhet, skydd för mobilappar, DLP och andra funktioner som ingår i prenumerationen.
+Om du vill aktivera fler funktioner som följer med prenumerationen väljer du **Konfigurera**. Här kan du aktivera inloggningssäkerhet, skydd för mobilappar, DLP och andra funktioner som ingår i prenumerationen.
 
-Om du behöver support när som helst väljer **du Behöver hjälp.** Skriv din fråga och ta en del av länkarna som visas. Om du inte får svaret här väljer du Kontakta **support för** att öppna en servicebegäran. 
+Om du behöver support kan du när som helst **välja Behöver hjälp.** Skriv din fråga och ta en titta på länkarna som visas. Om du inte hittar svaret här väljer du Kontakta **support för** att öppna en servicebegäran. 
 
 Mer information om hur du hanterar fakturering, lösenord, användare och administratörer finns i de andra lektionerna i den här kursen.
+
+## <a name="who-is-an-admin"></a>Vem är administratör? 
+
+Som standard får den person som registrerar sig för och köper en prenumeration på Microsoft 365 för företag administratörsbehörighet. Den personen kan tilldela andra personer administratörsbehörighet så att de kan hantera Microsoft 365 åt organisationen.
+
+Om du får meddelandet **"Du har inte** behörighet att komma åt den här sidan eller utföra den här åtgärden" är du inte administratör.
+<br><br>    
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/3a4e19ee-1a2a-473f-8995-06de0052c169?autoplay=false]
+  
+### <a name="who-has-admin-permissions-in-my-business"></a>Vem har administratörsbehörigheter i min verksamhet?
+<a name="bkmk_admin"> </a>
+
+När du söker efter en administratör som kan återställa ditt lösenord, ta bort ett konto eller utföra andra uppgifter har du följande alternativ:
+  
+- **Universitet och skolor**: Kontakta ditt team för teknisk support. Vanligtvis hittar du en länk på universitetets webbplats. På mindre skolor kanske det bara finns ett fåtal personer som har administratörsbehörighet. 
+    
+- **Stora företag**: Kontakta den interna supportavdelningen/teknisk support. 
+    
+- **Småföretag**: Kontakta företagsägaren/delägaren. Ofta ger de administratörsbehörighet till IT-konsulten som utför allt datorunderhåll i verksamheten. 
+  
+Om du inte vet vem du ska kontakta på arbetet eller i skolan för att få hjälp kan du fråga personen som gav dig ditt användarkonto och lösenord.
+
+> [!NOTE]
+> Administratörer för riktad version har första åtkomst till nya funktioner. Nya funktioner distribueras senare till alla administratörer. Det innebär att du kanske inte ser administrationscentret eller att det ser annorlunda ut jämfört med beskrivningen i hjälpartiklarna. Om du vill vara bland de första att se de nya funktionerna kan du gå till Delta i administrationscentret nedan. 
+
+## <a name="turn-on-targeted-release"></a>Aktivera Riktad version
+
+1. Logga in på [admin.microsoft.com](https://admin.microsoft.com), gå till navigeringsfönstret och välj **Inställningar** \> **Organisationsprofil**.
+
+2. Gå till **kortet Inställningar** för släppta inställningar och välj sedan **Redigera**. 
+    
+3. Välj **antingen Riktad version för alla eller** Riktad version för valda **användare.** Om du väljer Riktad version för valda användare ska du lägga till ditt administratörskonto (och alla andra administratörer i organisationen som vill delta) i listan över valda användare.
+    
+## <a name="admin-center-feedback"></a>Feedback om administrationscentret
+
+I administrationscentret kan du ge Microsoft feedback om din upplevelse genom att välja Ge **feedback** direkt bredvid knappen Behöver du **hjälp?** längst ned på varje sida. Berätta för oss vad du gillar och vad vi kan göra bättre. Dessutom kan du få popup-undersökningar från tid till annan som frågar om dina allmänna intryck eller en viss upplevelse som nyligen släppts. Du kan också lämna feedback i slutet av den här artikeln genom att välja **Var den här informationen användbar?**
+
+## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
+
+Besvarades inte dina frågor här? Gå till **avsnittet Feedback** längst ned på den här sidan och ställ din fråga. 
+  
+### <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>Vilka Microsoft 365-abonnemang finns att prova eller köpa?
+
+Microsoft 365 är en komplett, intelligent lösning som inkluderar Office 365, Windows 10 och Enterprise Mobility + Security som ger alla möjlighet att vara kreativa och arbeta tillsammans på ett säkert sätt. Följande Microsoft 365-prenumerationer är tillgängliga i administrationscentret så att du kan prova eller köpa nu:
+  
+- Microsoft 365 för företag
+- Microsoft 365 Enterprise E3
+- Microsoft 365 Enterprise E5
+    
+Mer information finns i Prova [eller köpa en Microsoft 365-prenumeration.](../commerce/try-or-buy-microsoft-365.md)
+
+### <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>Jag har hittat ett fel eller jag vill begära en funktionsförbättringar. Hur låter jag Microsoft få veta det?
+
+Vi vill gärna höra från dig! Genom att rapportera buggar och dela feedback hjälper vi oss att förbättra administrationscentret för Microsoft 365. Om du vill ge feedback väljer du knappen **Feedback** längst ned på sidan och använder formuläret för att skicka oss dina synpunkter. Markera kryssrutan och bekräfta din e-postadress om du vill att någon från Microsoft 365 Admin Center-teamet ska följa upp dina kommentarer. Vi kan inte utlova att följa upp all feedback, men vi ska försöka! 
+  
+Du kan också lämna feedback utanför administrationscentret på vårt UserVoice-forum. Du kan använda den här sidan för att ge förslag på funktioner som kan röstas på av andra forumanvändare: [UserVoice-forumet för det nya administrationscentret](https://go.microsoft.com/fwlink/?linkid=2024994).
+
+### <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>Vad gäller för specifika typer av IT-roller och andra arbetsytor som Säkerhet, Enhetshantering eller Exchange?
+
+Administrationscentret för Microsoft 365 är den vanligaste startpunkten för alla team och roller som hanterar Microsoft 365. Upplevelsen, informationen och kontrollerna är skräddarsydda och anpassningsbara för varje administratör och roll. Dessutom möjliggör specialistarbetsytor djup, detaljerad kontroll. Dessa specialistarbetsytor omfattar SharePoint, Teams &amp; Skype, Exchange, Säkerhet, Efterlevnad, Enhetshantering och Azure Active Directory. Du hittar specialistarbetsytorna från navigeringsfönstret i administrationscentret för Microsoft 365 på [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) .
+
+### <a name="what-language-options-are-available-the-admin-center"></a>Vilka språkalternativ är tillgängliga i administrationscentret?
+
+Administrationscentret för Microsoft 365 är helt lokaliserat på 40 språk.
+
+|Språk |Språk |
+|---------|---------|
+|Arabiska | ar |
+|Bulgarian | bg |
+|Catalan | ca |
+|Czech | cs |
+|Danish | da |
+|German | de |
+|Greek | el |
+|Spanish | es |
+|Engelska | en |
+|Estonian | et |
+|Basque | eu |
+|Finnish | fi |
+|French | fr |
+|Galician | gl |
+|Hebrew | han |
+|Croatian | hr |
+|Hungarian | hu |
+|Indonesian  | id |
+|Italian | det |
+|Japanese | ja |
+|Korean | ko |
+|Lithuanian | lt |
+|Latvian | lv |
+|Dutch | nl |
+|Norska | Nej |
+|Polish | pl |
+|Portugisiska ( Brasilien) | pt |
+|Portugisiska (Portugal) | pt-pt |
+|Romanian | ro |
+|Russian | ru |
+|Slovak | sk |
+|Slovenian | sl |
+|Serbiska (kyrillisk)  | sr-cyrl |
+|Serbian Latin | sr |
+|Swedish | sv |
+|Thai | th |
+|Turkish | tr |
+|Ukrainian | uk |
+|Vietnamese | vi |
+|Chinese Simplified | zh-hans |
+|Chinese Traditional | zh-hant |
+  

@@ -16,40 +16,38 @@ ms.custom: nextgen
 ms.date: 09/10/2020
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 30e664aed74ed01944c67b139e6268fc3340ada4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: bfd447120e171fed063b3224e3a47c2ef38f0f16
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51069858"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222617"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Hantera Windows 10-enheter med flera sessioner i virtuellt Windows-skrivbord 
 6 minuter att läsa 
 
 Gäller för: 
 - Windows 10 med flera sessioner på Windows Virtual Desktop (WVD) 
-> [!IMPORTANT]
-> Välkommen till Microsoft Defender för Endpoint, det nya namnet för Microsoft Defender för Endpoint. Läs mer om detta och andra uppdateringar här. Vi kommer att uppdatera namn i produkter och i dokumenten inom en snar framtid.
 
 > [!WARNING]
 > Microsoft Defender för slutpunktssupport för Windows-scenarier med flera sessioner för skrivbordsversionen är för närvarande i förhandsversion och begränsad till 25 samtidiga sessioner per värd/VM. Det finns dock fullt stöd för scenarier med en enskild session på virtuellt Windows-skrivbord.
 
-Microsoft Defender för Endpoint har stöd för övervakning av både VDI- och Windows Virtual Desktop-sessioner. Beroende på organisationens behov kan du behöva implementera VDI- eller Windows Virtual Desktop-sessioner för att hjälpa dina anställda att komma åt företagsdata och appar från en ohanterad enhet, fjärransluten plats eller liknande scenario. Med Microsoft Defender för Endpoint kan du övervaka dessa virtuella datorer efter avvikande aktivitet.
+Microsoft Defender för slutpunkten har stöd för övervakning av både VDI- och Windows Virtual Desktop-sessioner. Beroende på organisationens behov kan du behöva implementera VDI- eller Windows Virtual Desktop-sessioner för att hjälpa dina anställda att komma åt företagsdata och appar från en ohanterad enhet, fjärransluten plats eller liknande scenario. Med Microsoft Defender för Endpoint kan du övervaka dessa virtuella datorer efter avvikande aktivitet.
 
  ## <a name="before-you-begin"></a>Innan du börjar
-Bekanta dig med överväganden [för icke-beständiga VDI.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1) Windows [Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) tillhandahåller inga alternativ för beständighet, men det ger möjlighet att använda en gyllene Windows-bild som kan användas för att tillhandahålla nya värdar och distribuera om datorer. Det här ökar säkerheten i miljön och påverkar därmed vilka poster som skapas och underhålls i Microsoft Defender för Endpoint-portalen, vilket potentiellt minskar synligheten för dina säkerhetsanalytiker.
+Bekanta dig med överväganden [för icke-beständiga VDI.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1) [Även om Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) inte har alternativ för beständighet, erbjuder det flera sätt att använda en gyllene Windows-bild som kan användas för att tillhandahålla nya värdar och distribuera om datorer. Det här ökar säkerheten i miljön och påverkar därmed vilka poster som skapas och underhålls i Microsoft Defender för Endpoint-portalen, vilket potentiellt minskar synligheten för dina säkerhetsanalytiker.
 
 > [!NOTE]
 > Beroende på ditt val av onboarding-metod kan enheter visas i Microsoft Defender för Endpoint-portalen som antingen: 
 > - Enskild post för varje virtuellt skrivbord 
 > - Flera poster för varje virtuellt skrivbord 
 
-Microsoft rekommenderar att du registrering av Virtuellt Windows-skrivbord som en post per virtuellt skrivbord. Det säkerställer att undersökningsupplevelsen i Microsoft Defender Endpoint-portalen är i en enhets kontext baserat på datornamnet. Organisationer som ofta tar bort och distribuerar om WVD-värdar bör överväga att använda den här metoden eftersom det förhindrar att flera objekt för samma dator skapas i Microsoft Defender för Slutpunkt-portalen. Det kan skapa förvirring när du undersöker incidenter. För testmiljöer eller ej ej beständiga miljöer kan du välja att välja ett annat. 
+Microsoft rekommenderar att du registrering av Virtuellt Windows-skrivbord som en post per virtuellt skrivbord. Det säkerställer att undersökningsupplevelsen i Microsoft Defender Endpoint-portalen är i en enhets kontext baserat på datornamnet. Organisationer som ofta tar bort och distribuerar WVD-värdar bör överväga att använda den här metoden eftersom det förhindrar att flera objekt för samma dator skapas i Microsoft Defender för Endpoint-portalen. Det kan skapa förvirring när du undersöker incidenter. För testmiljöer eller ej ej beständiga miljöer kan du välja att välja ett annat. 
 
 Microsoft rekommenderar att du lägger till Microsoft Defender för slutpunkts onboarding-skriptet i den gyllene bilden i WVD. På så sätt kan du vara säker på att det här onboarding-skriptet körs direkt vid första starten. Den körs som ett startskript vid första starten på alla WVD-datorer som är etablerade från den gyllene bilden i WVD. Men om du använder någon av galleribilderna utan att ändra det placerar du skriptet på en delad plats och anropar det från antingen lokal grupprincip eller domängruppsprincip. 
 
 > [!NOTE]
-> Startskriptet för VDI-onboarding placeras och konfigureras på den gyllene bilden i WVD som ett startskript som körs när WVD startas. Vi rekommenderar INTE att ta med den verkliga WVD-gyllene bilden. En annan faktor är metoden som används för att köra skriptet. Den bör köras så tidigt i start-/etableringsprocessen som möjligt för att minska tiden mellan den dator som är tillgänglig för att ta emot sessioner och enhetens registrering till tjänsten. Ta hänsyn till detta & 2 under scenarier 1.
+> Startskriptet för VDI-onboarding placeras och konfigureras på den gyllene bilden i WVD som ett startskript som körs när WVD startas. Vi rekommenderar INTE att du visar den faktiska gyllene bilden i WVD. En annan faktor är metoden som används för att köra skriptet. Den bör köras så tidigt i start-/etableringsprocessen som möjligt för att minska tiden mellan den dator som är tillgänglig för att ta emot sessioner och enhetens registrering till tjänsten. Ta hänsyn till detta & 2 under scenarier 1.
 
 ### <a name="scenarios"></a>Scenarier
 Det finns flera sätt att introducera en WVD-värddator:
@@ -103,7 +101,7 @@ Mer information finns i: Informera [Windows 10-enheter med Konfigurationshantera
 
 #### <a name="tagging-your-machines-when-building-your-golden-image"></a>Tagga dina maskiner när du skapar en gyllene bild 
 
-Som en del av introduktionen kan du överväga att ange en maskintagg så att det blir lättare att skilja WVD-maskinerna åt i Microsofts säkerhetscenter. Mer information finns i Lägga [till enhetstaggar genom att ange ett registernyckelvärde.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-tags#add-device-tags-by-setting-a-registry-key-value) 
+Som en del av introduktionen kan du överväga att ställa in en maskintagg så att det blir lättare att skilja WVD-maskinerna åt i Microsofts säkerhetscenter. Mer information finns i Lägga [till enhetstaggar genom att ange ett registernyckelvärde.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-tags#add-device-tags-by-setting-a-registry-key-value) 
 
 #### <a name="other-recommended-configuration-settings"></a>Andra rekommenderade konfigurationsinställningar 
 

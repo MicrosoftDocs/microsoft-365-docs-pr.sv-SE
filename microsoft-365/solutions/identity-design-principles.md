@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: da70bbfe5c4dfa4f9eda16adec709826de1247b7
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: c94b387bbd73e2c4f9b3de243131ae023ddb4cb8
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200023"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222531"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>För identitet och vidarestöld – En arkitekts byggnad
 
@@ -231,7 +231,7 @@ Ibland anropas scenarier för att lägga till en extern användare till en roll 
 
 Det här är i en mening en vidareutveckling av modellen för Exchange-rollgrupper. Exchange Online har dock ett eget gränssnitt [för hantering av rollgrupper.](/exchange/permissions-exo) Vissa rollgrupper i Exchange Online är låsta och hanteras från Azure AD eller Säkerhets- och efterlevnadscenter för &, men andra kan ha samma eller liknande namn och hanteras i Exchange Online (något som också är förvirrande). Jag rekommenderar att du undviker att använda Exchange Online-användargränssnittet såvida du inte behöver omfattningar för Exchange-hantering.
 
-Du kan inte skapa anpassade roller. Roller definieras av tjänster som skapas av Microsoft och växer i och med att nya tjänster införs. Det här fungerar ungefär som roller [som definieras av program](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) i Azure AD. När nya tjänster är aktiverade behöver ofta nya rollgrupper skapas för att bevilja eller delegera åtkomst till dessa (till exempel [insiderriskhantering).](../compliance/insider-risk-management-configure.md?view=o365-worldwide#step-1-required-enable-permissions-for-insider-risk-management)
+Du kan inte skapa anpassade roller. Roller definieras av tjänster som skapas av Microsoft och växer i och med att nya tjänster införs. Det här fungerar ungefär som roller [som definieras av program](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) i Azure AD. När nya tjänster är aktiverade behöver ofta nya rollgrupper skapas för att bevilja eller delegera åtkomst till dessa (till exempel [insiderriskhantering).](../compliance/insider-risk-management-configure.md?view=o365-worldwide)
 
 De här rollgrupperna kräver direkt medlemskap och får inte innehålla Azure AD-grupper. Idag stöds tyvärr inte de här rollgrupperna av Azure AD PIM. Precis som med Azure AD-roller brukar jag rekommendera hantering av dessa via API:er eller en produkt för partnerstyrning, till exempel Saviynt.
 

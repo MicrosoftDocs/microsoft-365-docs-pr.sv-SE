@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Läs mer om användarroller i Viva-ämnen.
-ms.openlocfilehash: 6d93046a96b60779c3cd3bd6c6aa600cb443118f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e91eda6807634ad27bf6c15c2dd0d1c9434ce299
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917362"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222773"
 ---
 # <a name="microsoft-viva-topics-roles"></a>Roller i Microsoft Viva-ämnen 
 
@@ -49,7 +49,7 @@ En ämnesdeltagare kan också skapa och publicera ett nytt ämne via sitt ämnes
 För att skapa och redigera ett ämne måste användaren:
 
 -   [Tilldelas en Viva Topics-licens](./set-up-topic-experiences.md#assign-licenses) av microsoft 365-administratören.
--   [Tilldelas behörighet att skapa och redigera ämnen](./topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center). Den här uppgiften utförs av kunskapsadministratören på inställningssidan för Viva Ämnen i administrationscentret för Microsoft 365.
+-   [Tilldelas behörighet att skapa och redigera ämnen](./topic-experiences-user-permissions.md). Den här uppgiften utförs av kunskapsadministratören på inställningssidan för Viva Ämnen i administrationscentret för Microsoft 365.
 
 ## <a name="knowledge-managers"></a>Kunskapsansvariga
 
@@ -64,7 +64,7 @@ En kunskapshanterare kan dessutom redigera befintliga ämnen eller skapa nya.
 
 För att hantera ämnen måste användaren:
 -   [Tilldelas en Viva Topics-licens](./set-up-topic-experiences.md#assign-licenses) av microsoft 365-administratören.
--   [Tilldelas behörigheter för att hantera ämnen](./topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center)). Den här uppgiften utförs av kunskapsadministratören på inställningssidan för Viva Ämnen i administrationscentret för Microsoft 365.
+-   [Tilldelas behörigheter för att hantera ämnen](./topic-experiences-user-permissions.md)). Den här uppgiften utförs av kunskapsadministratören på inställningssidan för Viva Ämnen i administrationscentret för Microsoft 365.
 
 Användare som har en bra övergripande kunskap om ditt företag kan vara bra på att ta rollen som knowledge manager. Sådana personer kanske inte bara har kunskap om ämnen som är giltiga eller inte, utan kanske också känner till personer inom företaget som är relaterade till dessa ämnen.
 

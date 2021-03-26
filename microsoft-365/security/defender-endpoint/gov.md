@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1fd128a9b734606039438db1f6d9fbc36e93a3b9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 059ff9ca6f0c93c6adbac3b1d552cbedcf308759
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199023"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222713"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender för slutpunkt för myndighetskunder i USA
 
 **Gäller för:**
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender för slutpunkt för kunder inom myndigheter i USA, inbyggda i US Azure Government-miljön, använder samma underliggande teknik som Defender för Slutpunkt i kommersiell Azure.
+Microsoft Defender för slutpunkt för kunder inom myndigheter i USA, inbyggt i Azure Government-miljön, använder samma underliggande teknik som Defender för Slutpunkt i kommersiell Azure.
 
 Det här erbjudandet är tillgängligt för kunder med GCC, GCC High och DoD och baseras på samma skydd, identifiering, undersökning och åtgärd som den kommersiella versionen. Det finns emellertid vissa skillnader i tillgängligheten för funktionerna för det här erbjudandet.
 
@@ -42,8 +42,8 @@ Microsoft Defender för endpoint för kunder inom myndigheter i USA kräver någ
 GCC | GCC High | DoD
 :---|:---|:---
 Windows 10 Enterprise E5 GCC | Windows 10 Enterprise E5 för GCC High | Windows 10 Enterprise E5 för DOD
-| | Microsoft 365 E5 för GCC High | 
-| | Microsoft 365 G5 Säkerhet för GCC High | 
+| | Microsoft 365 E5 för GCC High | Microsoft 365 G5 för DOD
+| | Microsoft 365 G5 Säkerhet för GCC High | Microsoft 365 G5 Säkerhet för DOD
 Microsoft Defender för slutpunkt – GCC | Microsoft Defender för Slutpunkt för GCC High | Microsoft Defender för Slutpunkt för DOD
 
 ### <a name="server-licensing"></a>Serverlicensiering
@@ -51,9 +51,6 @@ GCC | GCC High | DoD
 :---|:---|:---
 Microsoft Defender för Endpoint Server GCC | Microsoft Defender för Endpoint Server för GCC High | Microsoft Defender för Slutpunktsserver för DOD
 Azure Defender för servrar | Azure Defender för servrar – myndigheter | Azure Defender för servrar – myndigheter
-
-> [!NOTE]
-> DoD licensing will only be available at DoD general availability.
 
 <br>
 
@@ -64,7 +61,7 @@ Kundtyp | Url till portalen
 :---|:---
 GCC | https://gcc.securitycenter.microsoft.us
 GCC High | https://securitycenter.microsoft.us
-DoD (FÖRHANDSVISNING) | https://securitycenter.microsoft.us
+DoD | https://securitycenter.microsoft.us
 
 <br>
 
@@ -73,7 +70,7 @@ DoD (FÖRHANDSVISNING) | https://securitycenter.microsoft.us
 ### <a name="standalone-os-versions"></a>Fristående OS-versioner
 Följande os-versioner stöds:
 
-OS-version | GCC | GCC High | DoD (FÖRHANDSVISNING)
+OS-version | GCC | GCC High | DoD
 :---|:---|:---|:---
 Windows 10 – version 20H2 – (med [KB4586853](https://support.microsoft.com/help/4586853)) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Windows 10 – version 2004 – (med [KB4586853](https://support.microsoft.com/help/4586853)) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
@@ -91,8 +88,8 @@ Windows 8.1 Enterprise | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/chec
 Windows 8 Pro | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Windows 7 SP1 Enterprise | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Windows 7 SP1 Pro | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
-Linux | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling
-macOS | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling
+Linux | ![Nej](images/svg/check-no.svg) Lanseras | ![Nej](images/svg/check-no.svg) Lanseras | ![Nej](images/svg/check-no.svg) Lanseras
+macOS | ![Nej](images/svg/check-no.svg) Lanseras | ![Nej](images/svg/check-no.svg) Lanseras | ![Nej](images/svg/check-no.svg) Lanseras
 Android | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg
 iOS | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg
 
@@ -105,7 +102,7 @@ iOS | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](ima
 ### <a name="os-versions-when-using-azure-defender-for-servers"></a>OS-versioner när du använder Azure Defender för servrar
 Följande OS-versioner stöds när du använder [Azure Defender för servrar:](https://docs.microsoft.com/azure/security-center/security-center-wdatp)
 
-OS-version | GCC | GCC High | DoD (FÖRHANDSVISNING)
+OS-version | GCC | GCC High | DoD
 :---|:---|:---|:---
 Windows Server 2016 | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Windows Server 2012 R2 | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
@@ -125,14 +122,30 @@ Kalkylblad med domänlista | Beskrivning
 Mer information finns i Konfigurera [enhetsproxy och Internetanslutningsinställningar.](configure-proxy-internet.md)
 
 > [!NOTE]
-> Kalkylbladet innehåller även kommersiella WEBBADRESSer. Kontrollera att du har flikarna "US Gov". <br> När du filtrerar letar du efter poster som heter "US Gov" och ditt specifika moln under geografikolumnen.
+> Kalkylbladet innehåller även kommersiella WEBBADRESSer. Kontrollera att du har flikarna "US Gov".
+> 
+> När du filtrerar letar du efter poster som heter "US Gov" och ditt specifika moln under geografikolumnen.
+
+### <a name="service-backend-ip-ranges"></a>IP-intervall för tjänstbackend
+
+Om nätverksenheterna inte har stöd för DNS-baserade regler använder du IP-intervall i stället.
+
+Defender för Endpoint för kunder inom myndigheter i USA är inbyggt i Azures amerikanska myndighetsmiljö, distribuerad i följande regioner:
+
+- AzureCloud.usgovtexas
+- AzureCloud.usgovvirginia
+
+Du hittar Azure IP-intervallen i [Azure IP-intervall och tjänsttaggar – US Government Cloud.](https://www.microsoft.com/download/details.aspx?id=57063)
+
+> [!NOTE]
+> Som en molnbaserad lösning kan IP-adressintervallen ändras. Vi rekommenderar att du går över till DNS-baserade regler.
 
 <br>
 
 ## <a name="api"></a>API
 I stället för offentliga URI:er som visas i vår [API-dokumentation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro)måste du använda följande URI:er:
 
-Slutpunktstyp | GCC | GCC High & DoD (PREVIEW)
+Slutpunktstyp | GCC | GCC High & DoD
 :---|:---|:---
 Inloggning | `https://login.microsoftonline.com` | `https://login.microsoftonline.us`
 Defender för Endpoint API | `https://api-gcc.securitycenter.microsoft.us` | `https://api-gov.securitycenter.microsoft.us`
@@ -141,18 +154,18 @@ SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https:/
 <br>
 
 ## <a name="feature-parity-with-commercial"></a>Funktionsparitet med kommersiell
-Defender för Endpoint har inte fullständig paritet med det kommersiella erbjudandet. Även om vårt mål är att tillhandahålla alla kommersiella funktioner till våra kunder inom myndigheter i USA finns det en del funktioner som vi inte vill lyfta fram ännu.
+Defender för Endpoint för kunder inom myndigheter i USA har inte fullständig paritet med det kommersiella erbjudandet. Även om vårt mål är att tillhandahålla alla kommersiella funktioner till våra kunder inom myndigheter i USA finns det en del funktioner som vi inte vill lyfta fram ännu.
 
-Det här är de kända luckorna från februari 2021:
+Det här är de kända luckorna från mars 2021:
 
-Funktionsnamn | GCC | GCC High | DoD (FÖRHANDSVISNING)
+Funktionsnamn | GCC | GCC High | DoD
 :---|:---|:---|:---
 Automatiserad undersökning och åtgärd: Live-svar | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Automatiserad undersökning och åtgärd: Svar på Office 365-aviseringar | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg
-E-postaviseringar | ![Nej](images/svg/check-no.svg) Lanseras | ![Nej](images/svg/check-no.svg) Lanseras | ![Nej](images/svg/check-no.svg) Lanseras
+E-postaviseringar | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Utvärderingslabb | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Hanterings- och API:er: Hälso- och efterlevnadsrapport för enheter | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
-Hantering och API:er: Integrering med produkter från tredje part | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling
+Hantering och API:er: Integrering med produkter från tredje part | ![Nej](images/svg/check-no.svg) Lanseras | ![Nej](images/svg/check-no.svg) Lanseras | ![Nej](images/svg/check-no.svg) Lanseras
 Hantering och API:er: Streaming API | ![Ja](images/svg/check-yes.svg) | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling
 Hanterings- och API:er: Rapport om skydd mot hot | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Hot & sårbarhetshantering | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)

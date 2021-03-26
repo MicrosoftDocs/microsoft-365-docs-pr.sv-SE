@@ -21,12 +21,12 @@ description: Administrationscentret för Microsoft 365 – läs mer om de funkti
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: b670c6a333485bc3a19ae14b8e7c71f08181cac5
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: 7b802556e051200bf39bc4bd9b97974d4d2d4c47
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215582"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222009"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Vad är nytt i administrationscentret för Microsoft 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "51215582"
 
 ::: moniker-end
 
-Vi lägger kontinuerligt till nya funktioner i administrationscentret för [Microsoft 365,](microsoft-365-admin-center-preview.md)åtgärdar problem som vi lär oss om och gör ändringar baserat på din feedback. Ta en titt nedan för att se vad som är tillgängligt för dig idag. Vissa funktioner distribueras i olika hastigheter för våra kunder. Om du inte ser en funktion ännu kan du prova att [lägga till dig själv i den riktade versionen](manage/release-options-in-office-365.md).
+Vi lägger kontinuerligt till nya funktioner i administrationscentret för [Microsoft 365,](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)åtgärdar problem som vi lär oss om och gör ändringar baserat på din feedback. Ta en titt nedan för att se vad som är tillgängligt för dig idag. Vissa funktioner distribueras i olika hastigheter för våra kunder. Om du inte ser en funktion ännu kan du prova att [lägga till dig själv i den riktade versionen](manage/release-options-in-office-365.md).
 
 Och om du vill veta vad som är nytt i andra Microsoft-molntjänster:
 

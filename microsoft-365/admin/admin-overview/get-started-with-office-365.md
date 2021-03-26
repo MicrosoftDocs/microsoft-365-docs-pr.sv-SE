@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: Lär dig att konfigurera och använda Microsoft 365 på en dator, telefon eller surfplatta.
-ms.openlocfilehash: 8df5170190a464c71030c938be61df591032c45c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 74821886832e699a90d9a54a9b8c7ce9a8cfab75
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906294"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222033"
 ---
 # <a name="get-started"></a>Komma igång
 
@@ -60,7 +60,7 @@ Här är några resurser som hjälper dig att komma igång.
   
 - [Utbildning för administratörer](../index.yml): Få länkar till kostnadsfria onlinelektioner för administratörer.
     
-- [Hjälp för](./admin-overview.md)administratörer: Få information om vanliga uppgifter, komma igång med administrationsverktyg och felsöka problem.
+- [Hjälp för](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)administratörer: Få information om vanliga uppgifter, komma igång med administrationsverktyg och felsöka problem.
     
 - [Kontakta supporten – hjälp för](../contact-support-for-business-products.md) administratörer: Ring oss, öppna en onlinebegäran eller låt communityn hjälpa dig. 
     
