@@ -452,7 +452,7 @@
         - name: Skype för företag
           href: /SkypeForBusiness/skype-for-business-online
         - name: Microsoft Teams
-          href: //MicrosoftTeams/quality-of-experience-review-guide
+          href: 'https://docs.microsoft.com/microsoftteams/upgrade-monitor-quality'
         - name: Yammer
           href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
         - name: Prestanda och justering
@@ -477,7 +477,11 @@
             - name: Plan för prestandafelsökning
               href: performance-troubleshooting-plan.md
 - name: Windows 10
-  href: /windows/deployment/
+  items:
+    - name: Så här kontrollerar du versionens hälsa
+      href: 'https://docs.microsoft.com/windows/deployment/update/check-release-health'
+    - name: Distribuera och uppdatera
+      href: /windows/deployment/
 - name: Microsoft 365-applikationer för företag
   href: /deployoffice/deployment-guide-microsoft-365-apps
 - name: Surface-enheter
