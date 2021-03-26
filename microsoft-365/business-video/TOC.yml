@@ -103,6 +103,8 @@
           href: view-bill.md
         - name: Köp nya licenser
           href: buy-licenses.md
+        - name: Ta bort befintliga licenser
+          href: remove-existing-licenses.md
         - name: Uppdatera betalningsmetod
           href: update-payment.md
         - name: Återställ användarlösenord
