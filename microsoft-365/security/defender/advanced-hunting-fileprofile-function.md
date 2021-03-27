@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e511c12240512af772b3552f63ad9ed98ff105af
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a9ca0af0c522205309ffdcbfd1ac28638bd197c7
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51070121"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382799"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -38,23 +38,24 @@ ms.locfileid: "51070121"
 Funktionen `FileProfile()` är en funktion för [](advanced-hunting-overview.md) avancerad sökning som lägger till följande data i filer som hittas av frågan.
 
 | Kolumn | Datatyp | Beskrivning |
-|------------|-------------|-------------|
-| SHA1 | sträng | SHA-1 för filen som den inspelade åtgärden tillämpats på |
-| SHA256 | sträng | SHA-256 av filen som den inspelade åtgärden tillämpats på |
-| MD5 | sträng | MD5-hash för filen som den inspelade åtgärden tillämpats på |
-| FileSize | int | Storlek på filen i byte |
-| GlobalPrevalence | int | Antal förekomster av entitet som observerats av Microsoft globalt |
-| GlobalFirstSeen | datetime | Datum och tid då enheten för första gången observerades av Microsoft globalt |
-| GlobalLastSeen | datetime | Datum och tid då enheten senast observerades av Microsoft globalt |
-| Undertecknaren | sträng | Information om den som signerar filen |
-| Utfärdare | sträng | Information om den utfärdar certifikatutfärdaren (CA) |
-| SignerHash | sträng | Unikt hashvärde som identifierar undertecknaren |
-| IsCertificateValid | boolesk | Om det certifikat som används för att signera filen är giltigt |
-| IsRootSignerMicrosoft | boolesk | Anger om undertecknaren av rotcertifikatet är Microsoft |
-| IsExecutable | boolesk | Om filen är en PE-fil (Portable Executable) |
-| ThreatName | sträng | Namn för identifiering av skadlig programvara eller andra hot som påträffades |
-| Publisher | sträng | Namnet på organisationen som publicerade filen |
-| SoftwareName | sträng | Namnet på programvaruprodukten |
+|------------|---------------|-------------|
+| `SHA1` | sträng | SHA-1 för filen som den inspelade åtgärden tillämpats på |
+| `SHA256` | sträng | SHA-256 av filen som den inspelade åtgärden tillämpats på |
+| `MD5` | sträng | MD5-hash för filen som den inspelade åtgärden tillämpats på |
+| `FileSize` | int | Storlek på filen i byte |
+| `GlobalPrevalence` | int | Antal förekomster av entitet som observerats av Microsoft globalt |
+| `GlobalFirstSeen` | datetime | Datum och tid då enheten för första gången observerades av Microsoft globalt |
+| `GlobalLastSeen` | datetime | Datum och tid då enheten senast observerades av Microsoft globalt |
+| `Signer` | sträng | Information om den som signerar filen |
+| `Issuer` | sträng | Information om den utfärdar certifikatutfärdaren (CA) |
+| `SignerHash` | sträng | Unikt hashvärde som identifierar undertecknaren |
+| `IsCertificateValid` | boolesk | Om det certifikat som används för att signera filen är giltigt |
+| `IsRootSignerMicrosoft` | boolesk | Anger om undertecknaren av rotcertifikatet är Microsoft |
+| `SignatureState` | sträng | Status för filsignaturen: SigneradeValid – filen är signerad med en giltig signatur, SigneradInvalid – filen har signerats men certifikatet är ogiltigt, inte signerat – filen är inte signerad, okänd – information om filen kan inte hämtas
+| `IsExecutable` | boolesk | Om filen är en PE-fil (Portable Executable) |
+| `ThreatName` | sträng | Namn för identifiering av skadlig programvara eller andra hot som påträffades |
+| `Publisher` | sträng | Namnet på organisationen som publicerade filen |
+| `SoftwareName` | sträng | Namnet på programvaruprodukten |
 
 ## <a name="syntax"></a>Syntax
 

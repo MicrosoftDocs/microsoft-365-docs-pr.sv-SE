@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 247b8b8d8e18c8eecb09029581635ae907433f55
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: df96b57b9898dd973fab053918d763d1972bd50d
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076377"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382811"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Få expertutbildning om avancerad sökning
 
@@ -36,7 +36,6 @@ ms.locfileid: "51076377"
 - Microsoft 365 Defender
 
 Förbättra dina kunskaper om avancerad sökning snabbt med Tracking _the adversary_, en webcast-serie för nya säkerhetsanalytiker och rutinerade hot. Serien leder dig genom grunderna hela vägen till att skapa dina egna avancerade frågor. Börja med den första videon som är grundläggande, eller gå till mer avancerade videor som passar din upplevelse.
-
 
 | Title | Beskrivning | Titta | Frågor | 
 |--|--|--|--|

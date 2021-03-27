@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c6afa48fcee80c0b8fb7ed0563264932566b6321
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 6a8e1091490cb9f3fe1eedadec0b76a56ada936e
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185797"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379496"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Minimikraven för Microsoft Defender för Slutpunkt
 
@@ -31,12 +31,10 @@ ms.locfileid: "51185797"
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
 
 
 Det finns några minimikrav för onboarding-enheter i tjänsten. Läs mer om licens-, maskinvaru- och programvarukrav och andra konfigurationsinställningar för att hantera enheter i tjänsten.
-
-> Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink).
 
 > [!TIP]
 > - Läs mer om de senaste förbättringarna i Defender för Slutpunkt: [Defender för Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
@@ -80,7 +78,6 @@ En detaljerad jämförelsetabell för den kommersiella jämförelsen av Windows 
 Åtkomst till Defender för Slutpunkt görs via en webbläsare med stöd för följande webbläsare:
 
 - Microsoft Edge
-- Internet Explorer version 11
 - Google Chrome
 
 > [!NOTE]
@@ -121,11 +118,12 @@ Maskinvarukraven för Defender för Endpoint på enheter är samma för de versi
 
 ### <a name="other-supported-operating-systems"></a>Andra operativsystem som stöds
 - Android
+- iOS
 - Linux
 - macOS
 
 > [!NOTE]
-> Du måste känna till exakt vilka Linux-distributioner och versioner av Android och macOS som är kompatibla med Defender för Endpoint för att integreringen ska fungera.
+> Du måste bekräfta linux-distributionerna och versionerna av Android, iOS och macOS som du har kompatibelt med Defender för Endpoint för att integreringen ska fungera.
 
 
 
@@ -191,7 +189,7 @@ Du måste ange att tjänsten ska startas automatiskt om tjänsten START_TYPE **�
 #### <a name="internet-connectivity"></a>Internetanslutning
 Internetanslutningen på enheter krävs antingen direkt eller via proxy.
 
-Defender för slutpunkts sensor kan använda en daglig genomsnittlig bandbredd på 5 MB för att kommunicera med Defender för Endpoint-molntjänsten och rapportera cyberdata. One-off-aktiviteter, till exempel filuppladdningar och insamling av undersökningspaket, ingår inte i den här dagliga genomsnittliga bandbredden.
+Defender för slutpunkts sensor kan använda en daglig genomsnittlig bandbredd på 5 MB för att kommunicera med Defender för Endpoint-molntjänsten och rapportera cyberdata. En-off-aktiviteter, till exempel filuppladdningar och insamling av undersökningspaket, tas inte med i den här dagliga genomsnittliga bandbredden.
 
 Mer information om ytterligare proxykonfigurationsinställningar finns i Konfigurera [enhetsproxy och internetanslutningsinställningar.](configure-proxy-internet.md)
 
@@ -203,11 +201,11 @@ Defender för slutpunktsagenten är beroende av microsoft Defender Antiviruss m�
 
 Konfigurera säkerhetsintelligensuppdateringar på Defender för slutpunktsenheter oavsett om Microsoft Defender Antivirus är det aktiva program mot skadlig programvara eller inte. Mer information finns i Hantera [uppdateringar för Microsoft Defender Antivirus och tillämpa baslinjer.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)
 
-Om Microsoft Defender Antivirus inte är den aktiva skadlig programvara i organisationen och du använder Defender för slutpunktstjänsten, aktiveras Microsoft Defender Antivirus som passiv form.
+Om Microsoft Defender Antivirus inte är det aktiva skydd mot skadlig programvara i organisationen och du använder Defender för slutpunktstjänsten, aktiveras Microsoft Defender Antivirus som passivt läge.
 
 Om din organisation har inaktiverat Microsoft Defender Antivirus genom grupprinciper eller andra metoder måste enheter som är onboarded uteslutas från den här grupprincipen.
 
-Om du onboarding-servrar och Microsoft Defender Antivirus inte är det aktiva program mot skadlig programvara på servrarna måste du antingen konfigurera Microsoft Defender Antivirus för att gå på passiv form eller avinstallera det. Konfigurationen är beroende av serverversionen. Mer information finns i Kompatibilitet [för Microsoft Defender Antivirus.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus-compatibility.md)
+Om du onboarding servers och Microsoft Defender Antivirus inte är det aktiva program mot skadlig programvara på dina servrar måste du antingen konfigurera Microsoft Defender Antivirus för att gå på passiv form eller avinstallera det. Konfigurationen är beroende av serverversionen. Mer information finns i Kompatibilitet [för Microsoft Defender Antivirus.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus-compatibility.md)
 
 > [!NOTE]
 > Din vanliga grupprincip gäller inte för skydd mot manipulering, och ändringar i inställningarna för Microsoft Defender Antivirus ignoreras när Skydd mot manipulering är på.
@@ -216,7 +214,7 @@ Om du onboarding-servrar och Microsoft Defender Antivirus inte är det aktiva pr
 ## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>Drivrutinen Microsoft Defender Antivirus Early Launch Antimalware (ELAM) är aktiverad
 Om du kör Microsoft Defender Antivirus som primärt program mot skadlig programvara på dina enheter kan Defender för Slutpunkt-agenten registrera sig.
 
-Om du kör en tredjepartsklient för program mot skadlig programvara och använder mobila enhetshanteringslösningar eller Microsoft Endpoint Manager (current branch) måste du se till att Microsoft Defender Antivirus ELAM-drivrutinen är aktiverad. Mer information finns i Se [till att Microsoft Defender Antivirus inte är inaktiverat enligt policy.](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
+Om du kör en tredjepartsklient för program mot skadlig programvara och använder mobila enhetshanteringslösningar eller Microsoft Endpoint Manager (current branch), måste du se till att Microsoft Defender Antivirus ELAM-drivrutinen är aktiverad. Mer information finns i Se [till att Microsoft Defender Antivirus inte är inaktiverat enligt policy.](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
 
 
 ## <a name="related-topics"></a>Relaterade ämnen

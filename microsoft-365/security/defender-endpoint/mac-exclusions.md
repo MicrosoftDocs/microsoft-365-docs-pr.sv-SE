@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ce77d55ece955fbf97b5c9f32859514b55acb5a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: fb0cffb9716b2d0940e816dc69217486fd51a21d
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187655"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379339"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-for-mac"></a>Konfigurera och validera undantag för Microsoft Defender för Slutpunkt för Mac
 
@@ -79,7 +79,7 @@ Mer information om hur du konfigurerar undantag från JAMF, Intune eller en anna
 
 Öppna Defender för slutpunkt-programmet och gå till **Hantera inställningar Lägg** till eller Ta bort  >  **undantag...**, enligt följande skärmbild:
 
-![Skärmbild av Hantera undantag](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-37-exclusions)
+![Skärmbild av Hantera undantag](images/mdatp-37-exclusions.png)
 
 Välj den typ av undantag som du vill lägga till och följ anvisningarna.
 

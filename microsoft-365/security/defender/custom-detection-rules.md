@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9699b5e2bc2e33b94795b7c23bd3f34f0383a8cc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 12a35a9f80da6b401495fcae7c245436b35b991c
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068982"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382895"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Skapa och hantera anpassade identifieringsregler
 
@@ -116,12 +116,16 @@ Med frågan i frågeredigeraren väljer du **Skapa identifieringsregel** och ang
 - **Rekommenderade åtgärder**– ytterligare åtgärder som svarare kan vidta för en avisering
 
 #### <a name="rule-frequency"></a>Regelfrekvens
-När du sparar eller redigerar en ny regel körs den och söker efter matchningar från de senaste 30 dagarnas data. Regeln körs sedan igen med fasta intervall, och en motslagsvaraktighet tillämpas baserat på den frekvens du väljer:
+När du sparar en ny regel körs den och söker efter matchningar från de senaste 30 dagarnas data. Regeln körs sedan igen med fasta intervall, och en motslagsvaraktighet tillämpas baserat på den frekvens du väljer:
 
 - **Körs en gång per dygn** och kontrollerar data från de senaste 30 dagarna
 - **Körs var 12:e** timme per dygn och kontrollerar data från de senaste 24 timmarna
 - **Körs var tredje timme** och kontrollerar data från de senaste 6 timmarna
 - **Varje timme** körs varje timme och du kontrollerar data från de senaste två timmarna
+
+När du redigerar en regel körs den med tillämpade ändringar under nästa körning enligt den frekvens du har angett.
+
+
 
 >[!TIP]
 > Matcha tidsfiltren i frågan med tillbakaslagslängden. Resultat utanför återställningsvaraktigheten ignoreras.  

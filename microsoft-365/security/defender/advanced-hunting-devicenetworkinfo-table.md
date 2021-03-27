@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1c8a3f3ab91add9e057c4661677997e658f42386
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 9a3806d3e2bff66e04f4adb50217fc1c6f267364
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071546"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382609"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 
@@ -46,7 +46,6 @@ Information om andra tabeller i det avancerade sökschemat finns [i den avancera
 | `Timestamp` | datetime | Datum och tid då händelsen spelades in |
 | `DeviceId` | sträng | Unikt ID för datorn i tjänsten |
 | `DeviceName` | sträng | Fullständigt kvalificerat domännamn (FQDN) för datorn |
-| `ReportId` | long | Händelseidentifierare baserat på en räknare för upprepande händelser. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp |
 | `NetworkAdapterName` | sträng | Namn på nätverksadaptern |
 | `MacAddress` | sträng | MAC-adressen för nätverksadaptern |
 | `NetworkAdapterType` | sträng | Nätverksadaptertyp. Information om möjliga värden finns i [denna uppräkning](/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
@@ -58,6 +57,7 @@ Information om andra tabeller i det avancerade sökschemat finns [i den avancera
 | `IPv6Dhcp` | sträng | IPv6-adressen till PSP-servern |
 | `DefaultGateways` | sträng | Standardgatewayadresser i JSON-matrisformat |
 | `IPAddresses` | sträng | JSON-matris som innehåller alla IP-adresser som tilldelats adaptern, tillsammans med respektive undernätsprefix och IP-adressutrymme, t.ex. offentlig, privat eller länk lokalt |
+| `ReportId` | long | Händelseidentifierare baserat på en räknare för upprepande händelser. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

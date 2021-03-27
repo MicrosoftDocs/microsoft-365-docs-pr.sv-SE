@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c1c9bac0fe29587bbc02c7974b83e2725a69c02b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e1d1284fa6132e37b31245bd45557e180d0135f2
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071561"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382679"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -50,19 +50,18 @@ Information om andra tabeller i det avancerade sökschemat finns [i den avancera
 | `DeviceId` | sträng | Unikt ID för datorn i tjänsten |
 | `DeviceName` | sträng | Fullständigt kvalificerat domännamn (FQDN) för datorn |
 | `ActionType` | sträng |Typ av aktivitet som utlöste händelsen |
+| `LogonType` | sträng | Typ av inloggningssession, särskilt:<br><br> - **Interaktivt** – Användaren interagerar fysiskt med datorn med det lokala tangentbordet och den lokala skärmen<br><br> - **Fjärranslutna interaktiva inloggningar (RDP)** – Användaren interagerar med datorn via fjärrstyrning med Fjärrskrivbord, Terminal Services, Fjärrhjälp eller andra RDP-klienter<br><br> - **Nätverk** - Session initierad när datorn nås med PsExec eller när delade resurser på datorn, till exempel skrivare och delade mappar, används<br><br> - **Batch** – session initierad av schemalagda aktiviteter<br><br> - **Tjänst** – session initierad av tjänster när de startar<br> |
 | `AccountDomain` | sträng | Domän för kontot |
 | `AccountName` | sträng | Användarnamn för kontot |
 | `AccountSid` | sträng | Säkerhetsidentifierare (SID) för kontot |
 | `Protocol` | sträng | Protokoll som används under kommunikationen |
 | `FailureReason` | sträng | Information som förklarar varför den inspelade åtgärden misslyckades |
-| `LogonType` | sträng | Typ av inloggningssession, särskilt:<br><br> - **Interaktivt** – Användaren interagerar fysiskt med datorn med det lokala tangentbordet och den lokala skärmen<br><br> - **Fjärranslutna interaktiva inloggningar (RDP)** – Användaren interagerar med datorn via fjärrstyrning med Fjärrskrivbord, Terminal Services, Fjärrhjälp eller andra RDP-klienter<br><br> - **Nätverk** - Session initierad när datorn nås med PsExec eller när delade resurser på datorn, till exempel skrivare och delade mappar, används<br><br> - **Batch** – session initierad av schemalagda aktiviteter<br><br> - **Tjänst** – session initierad av tjänster när de startar<br> |
+| `IsLocalAdmin` | boolesk | Boolesk indikator om användaren är lokal administratör på datorn |
 | `LogonId` | sträng | Identifierare för en inloggningssession. Den här identifieraren är unik på samma dator bara mellan omstarter |
 | `RemoteDeviceName` | sträng | Namnet på den dator som utförde en fjärråtgärd på den aktuella datorn. Beroende på vilken händelse som rapporteras kan det här namnet vara ett fullständigt kvalificerat domännamn (FQDN), ett NetBIOS-namn eller ett värdnamn utan domäninformation |
 | `RemoteIP` | sträng | IP-adress som var ansluten till |
 | `RemoteIPType` | sträng | Typ av IP-adress, till exempel Offentlig, Privat, Reserverad, Loopback, Ochedo, FourToSixMapping och Sändning |
 | `RemotePort` | int | TCP-port på den fjärrenhet som var ansluten till |
-| `AdditionalFields` | sträng | Ytterligare information om händelsen i JSON-matrisformat |
-| `InitiatingProcessFileSize` | long | Storlek på filen som körde processen som ansvarar för händelsen |
 | `InitiatingProcessAccountDomain` | sträng | Domän för kontot som körde processen som ansvarar för händelsen |
 | `InitiatingProcessAccountName` | sträng | Användarnamn för det konto som körde processen som ansvarar för händelsen |
 | `InitiatingProcessAccountSid` | sträng | Säkerhetsidentifierare (SID) för kontot som körde processen som ansvarar för händelsen |
@@ -74,6 +73,13 @@ Information om andra tabeller i det avancerade sökschemat finns [i den avancera
 | `InitiatingProcessSHA256` | sträng | SHA-256 för processen (bildfil) som initierade händelsen. Det här fältet fylls vanligtvis inte i – använd SHA1-kolumnen när den är tillgänglig |
 | `InitiatingProcessMD5` | sträng | MD5-hash för processen (bildfil) som initierade händelsen |
 | `InitiatingProcessFileName` | sträng | Namn på processen som initierade händelsen |
+| `InitiatingProcessFileSize` | long | Storlek på filen som körde processen som ansvarar för händelsen |
+| `InitiatingProcessVersionInfoCompanyName` | sträng | Företagsnamn från versionsinformationen för processen (bildfilen) som ansvarar för händelsen |
+| `InitiatingProcessVersionInfoProductName` | sträng | Produktnamn från versionsinformationen för processen (bildfilen) som ansvarar för händelsen |
+| `InitiatingProcessVersionInfoProductVersion` | sträng | Produktversion från versionsinformationen för processen (bildfilen) som ansvarar för händelsen |
+| `InitiatingProcessVersionInfoInternalFileName` | sträng | Internt filnamn från versionsinformationen för processen (bildfilen) som ansvarar för händelsen |
+| `InitiatingProcessVersionInfoOriginalFileName` | sträng | Det ursprungliga filnamnet från versionsinformationen för processen (bildfilen) som ansvarar för händelsen |
+| `InitiatingProcessVersionInfoFileDescription` | sträng | Beskrivning av versionsinformationen för processen (bildfilen) som ansvarar för händelsen |
 | `InitiatingProcessId` | int | Process-ID (PID) för processen som initierade händelsen |
 | `InitiatingProcessCommandLine` | sträng | Kommandorad som används för att köra processen som initierade händelsen |
 | `InitiatingProcessCreationTime` | datetime | Datum och tid då processen som initierade händelsen startades |
@@ -83,7 +89,7 @@ Information om andra tabeller i det avancerade sökschemat finns [i den avancera
 | `InitiatingProcessParentCreationTime` | datetime | Datum och tid då föräldern till processen som ansvarar för händelsen startades |
 | `ReportId` | long | Händelseidentifierare baserat på en räknare för upprepande händelser. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp |
 | `AppGuardContainerId` | sträng | Identifierare för den virtualiserade behållaren som används av Application Guard för att isolera webbläsaraktivitet |
-| `IsLocalAdmin` | boolesk | Boolesk indikator om användaren är lokal administratör på datorn |
+| `AdditionalFields` | sträng | Ytterligare information om händelsen i JSON-matrisformat |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79db436c2017c00e1b5d669797c5fb025f651a8a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 563dd2a5102ec66a1e953ae6ab30d56ea4f99036
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186239"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382938"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Partnerprogram i Microsoft Defender för Slutpunkt 
 
@@ -98,6 +98,7 @@ Logotyp |Partnernamn   | Beskrivning
 ![Bild på logotyp för Aruba ClearPass Policy Manager](images/aruba-logo.png) | [Aruba ClearPass Policy Manager](https://go.microsoft.com/fwlink/?linkid=2127544) | Se till att Defender för slutpunkt är installerat och uppdaterat på varje slutpunkt innan du tillåter åtkomst till nätverket
 ![Bild på Blue Sexhörning för Nätverkslogotyp](images/bluehexagon-logo.png) | [Blue Sexhörning för nätverk](https://go.microsoft.com/fwlink/?linkid=2104613) | Blue Sexhörning har byggt branschens första djupinlärningsplattform i realtid för skydd mot nätverkshot
 ![Bild på CyberMDX-logotyp](images/cybermdx-logo.png) | [CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620) | Cyber-MDX integrerar omfattande sjukvårdstillgångar synlighet, hotskydd och repose i din Defender för Endpoint-miljö
+![Bild på HYAS Protect-logotyp](images/hyas-logo.png) | [HYAS Protect](https://go.microsoft.com/fwlink/?linkid=2156763) | HYAS Protect använder auktoritativ kunskap om attackersinfrastruktur för att proaktivt skydda Microsoft Defender för slutpunktsslutpunkter från cyberattacker
 ![Bild av NDR-logotyp (Vectra Network Detection and Response)](images/vectra-logo.png) |[Identifiering och svar av vectra-nätverk (NDR)](https://go.microsoft.com/fwlink/?linkid=866934)| Vectra tillämpar AI & för att identifiera och svara på cyberattacker i realtid
 
 

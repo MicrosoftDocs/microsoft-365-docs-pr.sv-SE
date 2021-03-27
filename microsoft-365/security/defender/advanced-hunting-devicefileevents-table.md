@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 10009edab33d04ca01da9459c394634d0622cf3d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 62989eca2fd00757ea02d03bf24a0049135d97b0
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071578"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382871"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -63,11 +63,19 @@ Information om andra tabeller i det avancerade sökschemat finns [i den avancera
 | `InitiatingProcessAccountName` | sträng | Användarnamn för det konto som körde processen som ansvarar för händelsen |
 | `InitiatingProcessAccountSid` | sträng | Säkerhetsidentifierare (SID) för kontot som körde processen som ansvarar för händelsen |
 | `InitiatingProcessAccountUpn` | sträng | Användarkontons huvudnamn (UPN) för det konto som körde processen som ansvarar för händelsen |
+| `InitiatingProcessAccountObjectId` | sträng | Azure AD-objekt-ID för användarkontot som körde processen som ansvarar för händelsen |
 | `InitiatingProcessMD5` | sträng | MD5-hash för processen (bildfil) som initierade händelsen |
 | `InitiatingProcessSHA1` | sträng | SHA-1 för processen (bildfil) som initierade händelsen |
 | `InitiatingProcessSHA256` | sträng | SHA-256 för processen (bildfil) som initierade händelsen. Det här fältet fylls vanligtvis inte i – använd SHA1-kolumnen när den är tillgänglig. |
 | `InitiatingProcessFolderPath` | sträng | Mapp som innehåller den process (bildfil) som initierade händelsen |
 | `InitiatingProcessFileName` | sträng | Namn på processen som initierade händelsen |
+| `InitiatingProcessFileSize` | long | Storlek på processen (bildfil) som initierade händelsen |
+| `InitiatingProcessVersionInfoCompanyName` | sträng | Företagsnamn från versionsinformationen för processen (bildfilen) som ansvarar för händelsen |
+| `InitiatingProcessVersionInfoProductName` | sträng | Produktnamn från versionsinformationen för processen (bildfilen) som ansvarar för händelsen |
+|` InitiatingProcessVersionInfoProductVersion` | sträng | Produktversion från versionsinformationen för processen (bildfilen) som ansvarar för händelsen |
+|` InitiatingProcessVersionInfoInternalFileName` | sträng | Internt filnamn från versionsinformationen för processen (bildfilen) som ansvarar för händelsen |
+| `InitiatingProcessVersionInfoOriginalFileName` | sträng | Det ursprungliga filnamnet från versionsinformationen för processen (bildfilen) som ansvarar för händelsen |
+| `InitiatingProcessVersionInfoFileDescription` | sträng | Beskrivning av versionsinformationen för processen (bildfilen) som ansvarar för händelsen |
 | `InitiatingProcessId` | int | Process-ID (PID) för processen som initierade händelsen |
 | `InitiatingProcessCommandLine` | sträng | Kommandorad som används för att köra processen som initierade händelsen |
 | `InitiatingProcessCreationTime` | datetime | Datum och tid då processen som initierade händelsen startades |
@@ -77,20 +85,19 @@ Information om andra tabeller i det avancerade sökschemat finns [i den avancera
 | `InitiatingProcessParentFileName` | sträng | Namn på den överordnade process som gav upphov till processen som ansvarar för händelsen |
 | `InitiatingProcessParentCreationTime` | datetime | Datum och tid då föräldern till processen som ansvarar för händelsen startades |
 | `RequestProtocol` | sträng | Nätverksprotokoll, om tillämpligt, används för att starta aktiviteten: Okänd, Lokal, SMB eller NFS |
-| `ShareName` | sträng | Namn på delad mapp som innehåller filen |
 | `RequestSourceIP` | sträng | IPv4- eller IPv6-adressen för den fjärrenhet som initierade aktiviteten |
 | `RequestSourcePort` | sträng | Källport på den fjärrenhet som initierade aktiviteten |
 | `RequestAccountName` | sträng | Användarnamn på konto som används för att starta aktiviteten via fjärrstyrning |
 | `RequestAccountDomain` | sträng | Domän för kontot som används för att starta aktiviteten via fjärrstyrning |
 | `RequestAccountSid` | sträng | Säkerhetsidentifierare (SID) för kontot som används för att starta aktiviteten via fjärrstyrning |
-| `ReportId` | long | Händelseidentifierare baserat på en räknare för upprepande händelser. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp. |
-| `AppGuardContainerId` | sträng | Identifierare för den virtualiserade behållaren som används av Application Guard för att isolera webbläsaraktivitet |
-| `AdditionalFields` | sträng | Ytterligare information om entiteten eller händelsen |
+| `ShareName` | sträng | Namn på delad mapp som innehåller filen |
 | `InitiatingProcessFileSize` | long | Storlek på filen som körde processen som ansvarar för händelsen |
 | `SensitivityLabel` | sträng | Etikett som använts på ett e-postmeddelande, en fil eller annat innehåll för att klassificera det som informationsskydd |
 | `SensitivitySubLabel` | sträng | Sublabel tillämpat på ett e-postmeddelande, en fil eller annat innehåll för att klassificera det som informationsskydd. känslighetsunderetiketter är grupperade under känslighetsetiketter, men behandlas oberoende av varandra |
 | `IsAzureInfoProtectionApplied` | boolesk | Anger om filen krypteras med Azure Information Protection |
-
+| `ReportId` | long | Händelseidentifierare baserat på en räknare för upprepande händelser. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp. |
+| `AppGuardContainerId` | sträng | Identifierare för den virtualiserade behållaren som används av Application Guard för att isolera webbläsaraktivitet |
+| `AdditionalFields` | sträng | Ytterligare information om entiteten eller händelsen |
 >[!NOTE]
 > Hash-information för filer visas alltid när den är tillgänglig. Det finns dock flera möjliga orsaker till varför en SHA1, SHA256 eller MD5 inte kan beräknas. Filen kan till exempel finnas i fjärrlagring, låst av en annan process, komprimerad eller markerad som virtuell. I de här scenarierna visas filhashinformationen som tom.
 

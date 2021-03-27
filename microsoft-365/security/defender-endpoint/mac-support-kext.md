@@ -1,6 +1,6 @@
 ---
-title: Felsöka problem med kernel-tillägg i Microsoft Defender ATP för Mac
-description: Felsöka kernel-tilläggsproblem i Microsoft Defender ATP för Mac.
+title: Felsöka problem med kernel-tillägg i Microsoft Defender för Slutpunkt för Mac
+description: Felsöka problem med kernel-tillägg i Microsoft Defender för Slutpunkt för Mac.
 keywords: microsoft, defender, atp, mac, kernel, tillägg
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bdd5c6309a19863339b00e846c1c2670fc4f261b
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 877cc619d3ba048cdf6ecc8149f073461d9eac8e
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187607"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379522"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-for-mac"></a>Felsöka problem med kernel-tillägg i Microsoft Defender för Slutpunkt för Mac
 
@@ -40,11 +40,11 @@ ms.locfileid: "51187607"
 
 Den här artikeln innehåller information om hur du felsöker problem med kerneltillägget som installeras som en del av Microsoft Defender för Slutpunkt för Mac.
 
-Från och med macOS High Sierra (10.13) kräver macOS att alla kernel-tillägg uttryckligen godkänns innan de kan köras på enheten.
+Från och med macOS High Sierra (10.13) kräver macOS att alla kernel-tillägg uttryckligen godkänns innan de får köras på enheten.
 
-Om du inte godkänner kernel-tillägget under distributionen/installationen av Microsoft Defender för Slutpunkt för Mac visas en banderoll i programmet där du uppmanas att aktivera det:
+Om du inte godkänna kernel-tillägget under distributionen/installationen av Microsoft Defender för Slutpunkt för Mac visas en banderoll i programmet där du uppmanas att aktivera det:
 
-   ![Skärmbild som är inaktiverad av RTP](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-32-main-app-fix)
+   ![Skärmbild som är inaktiverad av RTP](images/mdatp-32-main-app-fix.png)
 
 Du kan också köra ```mdatp health``` . Den rapporterar om realtidsskydd är aktiverat men inte tillgängligt. Det här anger att kernel-tillägget inte är godkänt att köras på enheten.
 
@@ -73,7 +73,7 @@ Om mindre än 30 minuter har gått sedan produkten installerades går du till S�
 
 Om du inte ser det här kommandotolken har det gått 30 minuter eller mer och kerneltillägget fortfarande inte har godkänts för att köras på enheten:
 
-![Fönstret Säkerhet och sekretess efter skärmbild som har upphört att gälla](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-33-securityprivacysettings-noprompt)
+![Fönstret Säkerhet och sekretess efter skärmbild som har upphört att gälla](images/mdatp-33-securityprivacysettings-noprompt.png)
 
 I det här fallet måste du utföra följande steg för att starta godkännandeflödet igen.
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 059cfbf37c79ff9f99b5e46c8d4329c203aa9665
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: 684025441c8400775f469515df1bcd0423d6460b
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215544"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394752"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurera avancerade funktioner i Defender för Slutpunkt
 
@@ -63,6 +63,14 @@ Mer information om rolltilldelningar finns i [Skapa och hantera roller.](user-ro
 ## <a name="live-response-unsigned-script-execution"></a>Körning av skript som inte har signerats med Live Response
 
 Om du aktiverar den här funktionen kan du köra osignerade skript i en svarssession i direktsändning.
+
+
+## <a name="restrict-correlation-to-within-scoped-device-groups"></a>Begränsa korrelationen till inom begränsade enhetsgrupper
+När den här inställningen är aktiverad korreleras aviseringar till separata incidenter utifrån deras begränsade enhetsgrupp. Som standard sker korrelationen mellan incidenter i hela klientorganisationen.
+
+>[!NOTE]
+>Om du ändrar den här inställningen påverkas bara framtida korrelationer.
+
 
 ## <a name="autoresolve-remediated-alerts"></a>Åtgärdat autoresole-aviseringar
 
@@ -143,7 +151,7 @@ När du aktiverar den här funktionen kan du införliva data från Avancerat sky
 
 Om du vill få sammanhangsbaserad enhetsintegration i Office 365 Threat Intelligence måste du aktivera Defender för Slutpunktsinställningar i instrumentpanelen för & säkerhet och efterlevnad. Mer information finns i Undersökning [av hot och svar.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti)
 
-## <a name="microsoft-threat-experts"></a>Microsoft Threat Experts
+## <a name="microsoft-threat-experts"></a>Microsoft Hotexperter
 
 Av de två Microsoft Threat Expert-komponenterna är riktade attackmeddelanden i allmän tillgänglighet. Experter på begäran är fortfarande i förhandsversion. Du kan bara använda funktionen för experter på begäran om du har tillämpat en förhandsgranskning och programmet har godkänts. Du kan få riktade attackmeddelanden från Microsoft Threat Experts via din Defender för Endpoint-portalens aviseringar-instrumentpanel och via e-post om du konfigurerar den.
 

@@ -1,6 +1,6 @@
 ---
-title: Manuell distribution av Microsoft Defender ATP för macOS
-description: Installera Microsoft Defender ATP för macOS manuellt från kommandoraden.
+title: Manuell distribution av Microsoft Defender för Slutpunkt för macOS
+description: Installera Microsoft Defender för slutpunkt för macOS manuellt från kommandoraden.
 keywords: microsoft, defender, atp, mac, installation, distribuera, avinstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b2629eb3d13e6eb908644dfcade46a7ac2768637
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 044a3d48dc350a5663a27ab3c16c2da7a5e3f3f1
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187451"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379468"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-for-macos"></a>Manuell distribution av Microsoft Defender för Slutpunkt för macOS
 
@@ -64,20 +64,20 @@ Du måste ha administratörsbehörighet på enheten för att slutföra den här 
 
 1. Navigera till den nedladdade wdav.pkg i Finder och öppna den.
 
-    ![Skärmbild av appinstallation1](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-28-appinstall)
+    ![Skärmbild av appinstallation1](images/mdatp-28-appinstall.png)
 
 2. Välj **Fortsätt**, godkänn licensvillkoren och ange lösenordet när du uppmanas att göra det.
 
-    ![Skärmbild av appinstallation2](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-29-appinstalllogin)
+    ![Skärmbild av appinstallation2](images/mdatp-29-appinstalllogin.png)
 
    > [!IMPORTANT]
    > Du uppmanas att tillåta att en drivrutin från Microsoft installeras (antingen "Systemtillägg blockerat" eller "Installationen är spärrad" eller båda. Drivrutinen måste tillåtas att installeras.
 
-   ![Skärmbild av appinstallation3](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-30-systemextension)
+   ![Skärmbild av appinstallation3](images/mdatp-30-systemextension.png)
 
 3. Välj **Öppna säkerhetsinställningar** eller **Öppna systeminställningar > säkerhetsinställningar & sekretess.** Välj **Tillåt:**
 
-    ![Skärmbild av fönstret Säkerhet och sekretess](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-31-securityprivacysettings)
+    ![Skärmbild av fönstret Säkerhet och sekretess](images/mdatp-31-securityprivacysettings.png)
 
    Installationen utförs.
 
@@ -139,7 +139,7 @@ Du måste ha administratörsbehörighet på enheten för att slutföra den här 
 
 Efter installationen visas Microsoft Defender-ikonen i statusfältet i macOS i det övre högra hörnet.
 
-   ![Microsoft Defender-ikon i skärmbild i statusfältet](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-icon-bar)
+   ![Microsoft Defender-ikon i skärmbild i statusfältet](images/mdatp-icon-bar.png)
    
 
 ## <a name="how-to-allow-full-disk-access"></a>Så här tillåter du fullständig diskåtkomst

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 556e408eb176a2c215252379d539ec82b67e85cc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2d6904d47e58a7cf7a1b7fce5083da43c9a01a76
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076361"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382513"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -49,8 +49,8 @@ Information om andra tabeller i det avancerade sökschemat finns [i den avancera
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Datum och tid då händelsen spelades in |
 | `ActionType` | sträng | Typ av aktivitet som utlöste händelsen. Mer information [finns i schemareferensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) i portalen |
-| `LogonType` | sträng | Typ av inloggningssession, särskilt:<br><br> - **Interaktivt** – Användaren interagerar fysiskt med datorn med det lokala tangentbordet och den lokala skärmen<br><br> - **Fjärranslutna interaktiva inloggningar (RDP)** – Användaren interagerar med datorn via fjärrstyrning med Fjärrskrivbord, Terminal Services, Fjärrhjälp eller andra RDP-klienter<br><br> - **Nätverk** - Session initierad när datorn nås med PsExec eller när delade resurser på datorn, till exempel skrivare och delade mappar, används<br><br> - **Batch** – session initierad av schemalagda aktiviteter<br><br> - **Tjänst** – session initierad av tjänster när de startar |
 | `Application` | sträng | Program som utförde den inspelade åtgärden |
+| `LogonType` | sträng | Typ av inloggningssession, särskilt:<br><br> - **Interaktivt** – Användaren interagerar fysiskt med datorn med det lokala tangentbordet och den lokala skärmen<br><br> - **Fjärranslutna interaktiva inloggningar (RDP)** – Användaren interagerar med datorn via fjärrstyrning med Fjärrskrivbord, Terminal Services, Fjärrhjälp eller andra RDP-klienter<br><br> - **Nätverk** - Session initierad när datorn nås med PsExec eller när delade resurser på datorn, till exempel skrivare och delade mappar, används<br><br> - **Batch** – session initierad av schemalagda aktiviteter<br><br> - **Tjänst** – session initierad av tjänster när de startar |
 | `Protocol` | sträng | Nätverksprotokoll som används |
 | `FailureReason` | sträng | Information som förklarar varför den inspelade åtgärden misslyckades |
 | `AccountName` | sträng | Användarnamn för kontot |

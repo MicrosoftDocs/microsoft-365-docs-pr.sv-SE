@@ -1,6 +1,6 @@
 ---
-title: Felsöka prestandaproblem för Microsoft Defender ATP för Mac
-description: Felsöka prestandaproblem i Microsoft Defender ATP för Mac.
+title: Felsöka prestandaproblem för Microsoft Defender för Slutpunkt för Mac
+description: Felsöka prestandaproblem i Microsoft Defender för Slutpunkt för Mac.
 keywords: microsoft, defender, atp, mac, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f6dd5681dfafd069a4c52f72e1dc1733584283a2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 87190d9e0bb62d42642374bd7c9f6f3acad3c80a
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185915"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379398"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-for-mac"></a>Felsöka prestandaproblem för Microsoft Defender för Slutpunkt för Mac
 
@@ -52,7 +52,7 @@ Följande steg kan användas för att felsöka och minimera dessa problem:
 
     - Från användargränssnittet. Öppna Microsoft Defender för Slutpunkt för Mac och gå till **Hantera inställningar.**
 
-      ![Skärmbild på Hantera realtidsskydd](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-36-rtp)
+      ![Skärmbild på Hantera realtidsskydd](images/mdatp-36-rtp.png)
 
     - Från terminalen. Av säkerhetsskäl kräver den här åtgärden höjd.
 

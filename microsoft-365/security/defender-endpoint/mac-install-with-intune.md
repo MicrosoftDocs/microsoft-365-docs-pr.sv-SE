@@ -1,5 +1,5 @@
 ---
-title: Intune-baserad distribution för Microsoft Defender ATP för Mac
+title: Intune-baserad distribution för Microsoft Defender för Endpoint för Mac
 description: Installera Microsoft Defender för Slutpunkt för Mac med Microsoft Intune.
 keywords: microsoft, defender, atp, mac, installation, distribuera, avinstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 08cb16f6ae6e259d1bc92e7d2bed96f093a435f0
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: bd74f3a487de4febecb2086cb126c50b8432c342
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222519"
+ms.locfileid: "51379631"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-for-mac"></a>Intune-baserad distribution för Microsoft Defender för Endpoint för Mac
 
@@ -137,9 +137,11 @@ Du behöver ingen särskild etablering för en Mac-enhet utöver en vanlig [för
 
 1. Bekräfta enhetshantering.
 
+   ![Bekräfta skärmbilden på enhetshantering](images/mdatp-3-confirmdevicemgmt.png)
+
     Välj **Öppna systeminställningar**, leta **reda på Hanteringsprofil** i listan och välj **Godkänn...**. Din hanteringsprofil visades som **verifierad:**
 
-    ![Skärmbild av hanteringsprofilen](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-4-managementprofile)
+    ![Skärmbild av hanteringsprofilen](images/mdatp-4-managementprofile.png)
 
 2. Välj **Fortsätt** och slutför registreringen.
 
@@ -148,7 +150,7 @@ Du behöver ingen särskild etablering för en Mac-enhet utöver en vanlig [för
 3. Öppna Hantera enheter alla enheter  >  **i**  >  Intune. Här kan du se din enhet bland dem som listas:
 
    > [!div class="mx-imgBorder"]
-   > ![Skärmbild av Lägg till enheter](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-5-alldevices)
+   > ![Skärmbild av Lägg till enheter](images/mdatp-5-alldevices.png)
 
 ## <a name="approve-system-extensions"></a>Godkänna systemtillägg
 
@@ -184,7 +186,7 @@ Så här godkänner du systemtilläggen:
 
 4. Välj **OK**.
 
-    ![Importera en konfiguration från en fil för anpassad konfigurationsprofil](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-6-systemconfigurationprofiles)
+    ![Importera en konfiguration från en fil för anpassad konfigurationsprofil](images/mdatp-6-systemconfigurationprofiles.png)
 
 5. Välj   >  **Hantera uppgifter.** På fliken **Inkludera** väljer du **Tilldela till alla användare & alla enheter.**
 
@@ -208,7 +210,7 @@ Så här godkänner du systemtilläggen:
 När Intune-ändringarna har spridits till de registrerade enheterna kan du se dem under **Övervaka**  >  **enhetsstatus:**
 
 > [!div class="mx-imgBorder"]
-> ![Vy över enhetsstatus i bildskärm](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-7-devicestatusblade.png)
+> ![Vy över enhetsstatus i bildskärm](images/mdatp-7-devicestatusblade.png)
 
 ## <a name="publish-application"></a>Publicera program
 
@@ -230,43 +232,43 @@ När Intune-ändringarna har spridits till de registrerade enheterna kan du se d
     > Om versionen som laddas upp av Intune är lägre än versionen på enheten installeras den lägre versionen, vilket innebär att Microsoft Defender för Slutpunkt nedgraderas. Det kan resultera i att programmet inte fungerar. Mer information om hur produkten uppdateras finns i Distribuera uppdateringar för Microsoft Defender för Endpoint för [Mac.](mac-updates.md) Om du har distribuerat Microsoft Defender för Slutpunkt *med Ignorera app-version* inställd **på Nej** ändrar du det till **Ja.** Om Microsoft Defender för slutpunkt fortfarande inte kan installeras på en klientenhet avinstallerar du Microsoft Defender för Endpoint och skickar den uppdaterade principen.
      
     > [!div class="mx-imgBorder"]
-    > ![Visning av programinformation i app-tillägget](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-8-intuneappinfo)
+    > ![Visning av programinformation i app-tillägget](images/mdatp-8-intuneappinfo.png)
 
 7. Välj **OK och** Lägg **till**.
 
     > [!div class="mx-imgBorder"]
-    > ![Enhetsstatus visas i meddelandefönstret](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-9-intunepkginfo)
+    > ![Enhetsstatus visas i meddelandefönstret](images/mdatp-9-intunepkginfo.png)
 
 8. Det kan ta en stund att ladda upp paketet. När det är klart väljer du paketet i listan och går till **Uppgifter och Lägg** till **grupp.**
 
     > [!div class="mx-imgBorder"]
-    > ![Skärmbild av klientappar](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-10-clientapps)
+    > ![Skärmbild av klientappar](images/mdatp-10-clientapps.png)
 
 9. Ändra **tilldelningstyp till** **Obligatoriskt.**
 
 10. Välj **Grupper som ingår.** Välj **Gör den här appen obligatorisk för alla enheter=Ja.** Välj **Välj grupp för att** inkludera och lägga till en grupp som innehåller de användare du vill rikta. Välj **OK** och **Spara**.
 
     > [!div class="mx-imgBorder"]
-    > ![Intune assignments info screenshot](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-11-assignments)
+    > ![Intune assignments info screenshot](images/mdatp-11-assignments.png)
 
 11. Efter en tid kommer programmet att publiceras på alla registrerade enheter. Den visas i Övervaka enhet  >  **under** **Enhetsinstallationsstatus:**
 
     > [!div class="mx-imgBorder"]
-    > ![Skärmbild av Intune-enhetsstatus](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-12-deviceinstall)
+    > ![Skärmbild av Intune-enhetsstatus](images/mdatp-12-deviceinstall.png)
 
 ## <a name="verify-client-device-state"></a>Verifiera status för klientenhet
 
 1. När konfigurationsprofilerna har distribuerats till dina enheter öppnar du **Systeminställningar**  >  **på** din Mac-enhet.
 
-    ![Skärmbild av Systeminställningar](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-13-systempreferences)<br/>
-    ![Skärmbild av systeminställningar](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-14-systempreferencesprofiles)
+    ![Skärmbild av Systeminställningar](images/mdatp-13-systempreferences.png)<br/>
+    ![Skärmbild av systeminställningar](images/mdatp-14-systempreferencesprofiles.png)
 
-2. Kontrollera att följande konfigurationsprofiler finns och är installerade. **Hanteringsprofilen** ska vara Intune-systemprofilen. _Wdav-config_ _och wdav-kext_ är systemkonfigurationsprofiler som har lagts till i Intune: ![ Skärmbild av profiler](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-15-managementprofileconfig)
+2. Kontrollera att följande konfigurationsprofiler finns och är installerade. **Hanteringsprofilen** ska vara Intune-systemprofilen. _Wdav-config_ _och wdav-kext_ är systemkonfigurationsprofiler som har lagts till i Intune: ![ Skärmbild av profiler](images/mdatp-15-managementprofileconfig.png)
 
 3. Du bör även se Microsoft Defender-ikonen i det övre högra hörnet:
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Defender-ikon i skärmbild i statusfältet](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-icon-bar)
+    > ![Microsoft Defender-ikon i skärmbild i statusfältet](images/mdatp-icon-bar.png)
 
 ## <a name="troubleshooting"></a>Felsökning
 

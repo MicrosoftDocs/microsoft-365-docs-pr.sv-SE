@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f014eea240e3c8e52c424be36402c2826cb131d1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 363d80431c14bc550cba34850c85593163aea1b1
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071513"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382847"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
@@ -55,6 +55,13 @@ Information om andra tabeller i det avancerade sökschemat finns [i den avancera
 | `SHA1` | sträng | SHA-1 för filen som den inspelade åtgärden tillämpats på |
 | `SHA256` | sträng | SHA-256 av filen som den inspelade åtgärden tillämpats på. Det här fältet fylls vanligtvis inte i – använd SHA1-kolumnen när den är tillgänglig. |
 | `MD5` | sträng | MD5-hash för filen som den inspelade åtgärden tillämpats på |
+| `FileSize` | long | Storlek på filen i byte |
+| `ProcessVersionInfoCompanyName` | sträng | Företagsnamn från versionsinformationen för den nya processen |
+| `ProcessVersionInfoProductName` | sträng | Produktnamn från versionsinformationen för den nya processen |
+| `ProcessVersionInfoProductVersion` | sträng | Produktversion från versionsinformationen för den nya processen |
+| `ProcessVersionInfoInternalFileName` | sträng | Internt filnamn från versionsinformationen för den nya processen |
+| `ProcessVersionInfoOriginalFileName` | sträng | Det ursprungliga filnamnet från versionsinformationen för den nya processen |
+| `ProcessVersionInfoFileDescription` | sträng | Beskrivning av versionsinformationen för den nya processen |
 | `ProcessId` | int | Process-ID (PID) för den nya processen |
 | `ProcessCommandLine` | sträng | Kommandorad som används för att skapa den nya processen |
 | `ProcessIntegrityLevel` | sträng | Integritetsnivån för den nyligen skapade processen. I Windows tilldelas processer integritetsnivåer baserat på vissa egenskaper, till exempel om de startades från ett nedladdat Internet. De här integritetsnivåerna påverkar behörigheter till resurser |
@@ -79,6 +86,12 @@ Information om andra tabeller i det avancerade sökschemat finns [i den avancera
 | `InitiatingProcessMD5` | sträng | MD5-hash för processen (bildfil) som initierade händelsen |
 | `InitiatingProcessFileName` | sträng | Namn på processen som initierade händelsen |
 | `InitiatingProcessFileSize` | long | Storlek på filen som körde processen som ansvarar för händelsen |
+| `InitiatingProcessVersionInfoCompanyName` | sträng | Företagsnamn från versionsinformationen för processen (bildfilen) som ansvarar för händelsen |
+| `InitiatingProcessVersionInfoProductName` | sträng | Produktnamn från versionsinformationen för processen (bildfilen) som ansvarar för händelsen |
+| `InitiatingProcessVersionInfoProductVersion` | sträng | Produktversion från versionsinformationen för processen (bildfilen) som ansvarar för händelsen |
+| `InitiatingProcessVersionInfoInternalFileName` | sträng | Internt filnamn från versionsinformationen för processen (bildfilen) som ansvarar för händelsen |
+| `InitiatingProcessVersionInfoOriginalFileName` | sträng | Det ursprungliga filnamnet från versionsinformationen för processen (bildfilen) som ansvarar för händelsen |
+| `InitiatingProcessVersionInfoFileDescription` | sträng | Beskrivning av versionsinformationen för processen (bildfilen) som ansvarar för händelsen |
 | `InitiatingProcessId` | int | Process-ID (PID) för processen som initierade händelsen |
 | `InitiatingProcessCommandLine` | sträng | Kommandorad som används för att köra processen som initierade händelsen |
 | `InitiatingProcessCreationTime` | datetime | Datum och tid då processen som initierade händelsen startades |
@@ -86,10 +99,12 @@ Information om andra tabeller i det avancerade sökschemat finns [i den avancera
 | `InitiatingProcessParentId` | int | Process-ID (PID) för den överordnade process som hanterade processen som ansvarar för händelsen |
 | `InitiatingProcessParentFileName` | sträng | Namn på den överordnade process som gav upphov till processen som ansvarar för händelsen |
 | `InitiatingProcessParentCreationTime` | datetime | Datum och tid då föräldern till processen som ansvarar för händelsen startades |
+| `InitiatingProcessSignerType` | sträng | Typ av fil signering av processen (bildfil) som initierade händelsen |
+| `InitiatingProcessSignatureStatus` | sträng | Information om signaturstatus för processen (bildfil) som initierade händelsen |
 | `ReportId` | long | Händelseidentifierare baserat på en räknare för upprepande händelser. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp |
 | `AppGuardContainerId` | sträng | Identifierare för den virtualiserade behållaren som används av Application Guard för att isolera webbläsaraktivitet |
 | `AdditionalFields` | sträng | Ytterligare information om händelsen i JSON-matrisformat |
-| `FileSize` | long | Storlek på filen i byte |
+
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

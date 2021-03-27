@@ -1,0 +1,60 @@
+### YamlMime:Landing
+title: Hantera domäner
+summary: Ta en titta på de här resurserna med vanliga domänuppgifter eller se navigeringsfönstret till vänster för en fullständig lista.
+metadata:
+  title: Hantera domäner
+  description: Hantera alla aspekter av domäner i Microsoft 365.
+  ms.service: O365-administration
+  ms.topic: landing-page
+  author: pebaum
+  ms.author: pebaum
+  ms.date: 03/25/2021
+  localization_priority: Priority
+  ms.custom: AdminSurgePortfolio
+  ms.openlocfilehash: 2ca0bc79cc70ce738603dcdb7cb09ea1d238e4c9
+  ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+  ms.translationtype: MT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 03/26/2021
+  ms.locfileid: "51379719"
+landingContent:
+- title: Hantera domäner
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vanliga frågor och svar om domäner (vanliga frågor och svar)
+      url: https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq
+  - linkListType: how-to-guide
+    links:
+    - text: Lägga till en domän
+      url: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
+    - text: Köpa ett domännamn
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name
+    - text: Ta bort en domän
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/remove-a-domain
+- title: Överföra en domän
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Överföra en domän från Microsoft till en annan värd
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host
+- title: Pilottesta Microsoft 365
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Pilot Microsoft 365 från min anpassade domän
+      url: https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain
+- title: Värdspecifika instruktioner
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Ändra namnservrar för valfri DNS-värd
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar
+    - text: Skapa DNS-poster för valfri DNS-värd
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider
+- title: Felsökning
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-and-fix-issues

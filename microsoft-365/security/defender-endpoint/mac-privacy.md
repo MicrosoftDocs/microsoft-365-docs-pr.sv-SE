@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 83a56a74ff949b23843417942923d2b4b810b4ee
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 1386809778edeb92521a8656e9ece78591a682a4
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185939"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382907"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-for-mac"></a>Sekretess för Microsoft Defender för Slutpunkt för Mac
 
@@ -156,6 +156,18 @@ Följande fält samlas in:
 | orsak           | Felmeddelande om den uppdaterade arkiverade informationen. |
 
 #### <a name="product-and-service-performance-data-events"></a>Datahändelser för produkt- och tjänstprestanda
+
+**Oväntat programavslut (kraschar)**
+
+Samlar in systeminformation och status för ett program när ett program oväntat avslutas.
+
+Följande fält samlas in:
+
+| Fält                          | Beskrivning |
+| ------------------------------ | ----------- |
+| v1_crash_count                 | Antal gånger som V1-motorprocessen kraschade varje timme på klientdatorn  |
+| v2_crash_count                 | Antal gånger som V2-motorprocessen kraschade varje timme på klientdatorn  |
+| EDR_crash_count                | Antal gånger som EDR-processen kraschade varje timme på klientdatorn        |
 
 **Statistik över Kernel-tillägg**
 

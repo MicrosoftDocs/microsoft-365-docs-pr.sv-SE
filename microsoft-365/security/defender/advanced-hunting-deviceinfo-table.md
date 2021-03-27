@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 46efb531331cf76472c67c769c96804d11fb9e4b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d56710f4933a8971230c78d7b3570f14b9bda335
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071562"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382631"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -55,10 +55,10 @@ Information om andra tabeller i det avancerade sökschemat finns [i den avancera
 | `AadObjectId` | sträng | Unikt ID för enheten i Azure AD |
 | `LoggedOnUsers` | sträng | Lista över alla användare som är inloggade på datorn vid tiden för händelsen i JSON-matrisformat |
 | `RegistryDeviceTag` | sträng | Maskintagg som lagts till i registret |
-| `ReportId` | long | Händelseidentifierare baserat på en räknare för upprepande händelser. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp |
-|`AdditionalFields` | sträng | Ytterligare information om händelsen i JSON-matrisformat |
 | `OSVersion` | sträng | Version av operativsystemet som körs på datorn |
 | `MachineGroup` | sträng | Datorgruppen på datorn. Den här gruppen används av rollbaserad åtkomstkontroll för att avgöra åtkomsten till datorn |
+| `ReportId` | long | Händelseidentifierare baserat på en räknare för upprepande händelser. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp |
+|`AdditionalFields` | sträng | Ytterligare information om händelsen i JSON-matrisformat |
 
 Tabellen `DeviceInfo` innehåller enhetsinformation baserad på hjärtslag, som är periodiska rapporter eller signaler från en enhet. Var femtonde minut skickar enheten ett partiellt hjärtslag som innehåller ofta ändrar attribut som `LoggedOnUsers` . En gång om dagen skickas ett fullständigt hjärtslag som innehåller enhetens attribut.
 

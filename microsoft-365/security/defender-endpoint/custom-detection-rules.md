@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/20/2020
 ms.technology: mde
-ms.openlocfilehash: fc4c15d2e391176ed0b4420c13fb865674da0361
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 48b1f1bf9506acc8491887fca49295d5e4ccbd69
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163593"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382715"
 ---
 # <a name="create-custom-detection-rules"></a>Skapa anpassade identifieringsregler
 
@@ -98,8 +98,8 @@ När den sparas körs en ny anpassad identifieringsregel direkt och söker efter
 - **Körs var tredje timme** och kontrollerar data från de senaste 6 timmarna
 - **Varje timme** körs varje timme och du kontrollerar data från de senaste två timmarna
 
-> [!IMPORTANT]
-> När du ändrar en fråga som redan schemalagts som en anpassad identifiering kommer nästa omedelbart körning att ha ett uppslagsfönster på 30 dagar, exakt som om en ny fråga skapades. Ändringar av ett stort antal frågor, och med tidsfilter som är högre än standardvaraktigheten för den valda frekvensen, kan påverka den totala kvoten för Avancerad sökning och resultera i att den dagliga kvoten förbrukas.
+När du redigerar en regel körs den med tillämpade ändringar under nästa körning enligt den frekvens du har angett.
+
 
 > [!TIP]
 > Matcha tidsfiltren i frågan med tillbakaslagslängden. Resultat utanför återställningsvaraktigheten ignoreras.
