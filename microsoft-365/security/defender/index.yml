@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Dokumentation för Microsoft 365 Säkerhetscenter
-summary: Läs mer om robusta säkerhetslösningar och tjänster i Microsoft 365 Security, så att du kan skydda din organisation bättre från en mängd olika attacker.
+title: Microsoft 365 Defender
+summary: Läs mer om robusta säkerhetslösningar i Microsoft 365 Defender så att du bättre kan skydda ditt företag över attackytor.
 metadata:
-  title: Dokumentation för Microsoft 365 Säkerhetscenter
-  description: Läs mer om robusta säkerhetslösningar och tjänster i Microsoft 365 Security, så att du kan skydda din organisation bättre från en mängd olika attacker.
+  title: Microsoft 365 Defender-dokumentation
+  description: Läs mer om robusta säkerhetslösningar i Microsoft 365 Defender så att du bättre kan skydda ditt företag över attackytor.
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: 1690dfc1c0a3a2afb32d4554ac4876c5f9928a2e
-  ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+  ms.openlocfilehash: 4187cc69acba30ae5cbcad093d91ec291b42bca5
+  ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
   ms.translationtype: MT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 03/23/2021
-  ms.locfileid: "51070057"
+  ms.lasthandoff: 03/26/2021
+  ms.locfileid: "51382501"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
@@ -28,3 +28,23 @@ landingContent:
       url: ../defender/microsoft-365-defender.md
     - text: Microsoft 365 Säkerhetscenter
       url: ../defender/overview-security-center.md
+- title: Microsoft 365 Säkerhetscenter
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Översikt över Säkerhetscenter för Microsoft 365
+      url: overview-security-center.md
+    - text: Microsoft Defender för Slutpunkt i Säkerhetscenter för Microsoft 365
+      url: microsoft-365-security-center-mde.md
+    - text: Microsoft Defender för Office 365 i Microsoft 365 Säkerhetscenter
+      url: ../defender/microsoft-365-security-center-mdo.md
+- title: Hantera incidenter och aviseringar
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Undersöka incidenter
+      url: investigate-incidents.md
+    - text: Automatiska undersökningar och svar
+      url: m365d-autoir.md
+    - text: Leta efter hot
+      url: advanced-hunting-overview.md
