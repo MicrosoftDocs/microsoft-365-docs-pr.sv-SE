@@ -10,26 +10,24 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 - commerce
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Administratörer kan lära sig att hantera självbetjäning som görs av användare i organisationen.
-ms.openlocfilehash: 2ce12b7dba4e765745a94fa10f4ba15e7013e3c8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: febf0ee470e735a454dc7a9e747de5025c7a4a51
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920186"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398187"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Hantera självbetjäningsköp (administratörer)
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Som administratör kan du se köp av självbetjäning som görs av personer i organisationen. Du ser produktnamn, inköpare, prenumerationer köpta, utgångsdatum, inköpspris och tilldelade användare för varje självbetjäning köp. Om det krävs av din organisation kan du inaktivera självbetjäning för köp per produkt via PowerShell. Du har samma datahanterings- och åtkomstprinciper över produkter som köpts via självbetjäning eller centralt.
 
@@ -37,13 +35,49 @@ Du kan också ange om användarna i organisationen ska kunna göra självbetjän
 
 ## <a name="view-self-service-subscriptions"></a>Visa prenumerationer med självbetjäning
 
+::: moniker range="o365-worldwide"
+
 1. I administrationscentret går du till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a>går du  till sidan > **Fakturering dina** produkter.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a>går du  till sidan > **Fakturering dina** produkter.
+
+::: moniker-end
+
 2. På fliken **Produkter** väljer du filterikonen och sedan **Självbetjäning**.
 3. Om du vill visa mer information om en prenumeration väljer du en prenumeration i listan.
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>Visa vem som har licenser för en prenumeration med självbetjäning för köp av självbetjäning
 
-1. I administrationscentret går du till sidan  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Faktureringslicenser.</a>
+> [!NOTE]
+> Som administratör kan du inte tilldela eller ta bort licenser för en prenumeration på självbetjäning som köpts av en användare i organisationen. Du kan [ta över en prenumeration på självbetjäning och](#take-over-a-self-service-purchase-subscription)sedan tilldela eller ta bort licenser.
+
+::: moniker range="o365-worldwide"
+
+1. Gå till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> i administrationscentret.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret går</a>du till sidan  > **Faktureringslicenser.**
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret går</a>du till sidan  > **Faktureringslicenser.**
+
+::: moniker-end
+
 2. Välj filterikonen och välj **sedan Självbetjäning**.
 3. Välj en produkt för att se licenser som är tilldelade till användare.
     > [!NOTE]
@@ -67,7 +101,24 @@ Mer information finns i [Use AllowSelfServicePurchase for the MSCommerce PowerSh
 
 Du kan tilldela befintliga licenser eller köpa ytterligare prenumerationer genom befintliga avtal för användare som tilldelas till självbetjäning för köp via självbetjäning. När du har tilldelat dessa centralt köpta licenser kan du begära att inköpare avbryter sina befintliga prenumerationer.
 
-1. I administrationscentret går du till sidan **Tjänster** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">för faktureringsköp.</a>
+::: moniker range="o365-worldwide"
+
+1. I administrationscentret går du till sidan **Tjänster** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">för faktureringsköp.</a>
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret går</a>du till sidan  > **Faktureringsköpstjänster.**
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret går</a>du till sidan  > **Faktureringsköpstjänster.**
+
+::: moniker-end
+
 2. Leta upp och välj den produkt du vill köpa och välj sedan **Köp**.
 3. Genomför köpet i de återstående stegen.
 4. Följ stegen i Visa vem som har licenser för en [självbetjäning](#view-who-has-licenses-for-a-self-service-purchase-subscription) köpt prenumeration för att exportera en lista över användare att referera till i nästa steg.
@@ -88,7 +139,24 @@ När du flyttar användare till en annan prenumeration avbryts den gamla prenume
 > [!NOTE]
 > Du måste ha en tillgänglig licens för varje användare som du flyttar i prenumerationen som du flyttar användare till.
 
+::: moniker range="o365-worldwide"
+
 1. I administrationscentret går du till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a>går du  till sidan > **Fakturering dina** produkter.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a>går du  till sidan > **Fakturering dina** produkter.
+
+::: moniker-end
+
 2. På fliken **Produkter** väljer du filterikonen och sedan **Självbetjäning**.
 3. Välj den prenumeration som du vill ta över.
 4. Välj Ta kontroll över den här **prenumerationen i avsnittet Prenumerationer** och inställningar **på sidan prenumerationsinformation.**
@@ -102,7 +170,24 @@ När du flyttar användare till en annan prenumeration avbryts den gamla prenume
 
 När du väljer att avbryta en prenumeration på självköp förlorar användare med licenser åtkomsten till produkten. Den användare som ursprungligen köpte självköpsprenumerationen får ett e-postmeddelande om att prenumerationen har avbrutits.
 
+::: moniker range="o365-worldwide"
+
 1. I administrationscentret går du till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a>går du  till sidan > **Fakturering dina** produkter.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a>går du  till sidan > **Fakturering dina** produkter.
+
+::: moniker-end
+
 2. På fliken **Produkter** väljer du filterikonen och sedan **Självbetjäning**.
 3. Välj den prenumeration du vill avsluta.
 4. Välj Ta kontroll över den här **prenumerationen i avsnittet Prenumerationer** och inställningar **på sidan prenumerationsinformation.**

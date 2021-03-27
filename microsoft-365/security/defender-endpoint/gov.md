@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 089614fab57950af5f60181ce7ed2116046ad347
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 320913058f1d3cab36b3a279996443c2e4ef117f
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379376"
+ms.locfileid: "51382919"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender för slutpunkt för myndighetskunder i USA
 
@@ -100,7 +100,7 @@ iOS | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](ima
 > Försöker du registrera Windows-enheter som är äldre än Windows 10 eller Windows Server 2019 med [hjälp av Microsoft Monitoring Agent?](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma) Du måste välja "Azure US Government" under "Azure [](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)Cloud" om du [](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) använder installationsguiden , eller om du använder en kommandorad eller ett skript [–](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) ange parametern "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" till 1.
 
 > [!NOTE]
-> Du behöver version 101.25.72 eller senare för Linux, och version 101.25.69 eller senare för macOS. Medan vi är i en förhandsversion finns de versionerna bara tillgängliga i kanalen "Insider – snabbt". Anvisningar [finns i Konfigurera linux-programvarans](linux-install-manually.md#configure-the-linux-software-repository) [lagringsplats eller Ange kanalnamn (macOS).](mac-updates.md#set-the-channel-name)
+> Du behöver version 101.25.72 eller senare för Linux, och version 101.25.69 eller senare för macOS. Under förhandsversionen finns de versionerna endast tillgängliga i kanalen "Insider – snabbt". Anvisningar [finns i Konfigurera linux-programvarans](linux-install-manually.md#configure-the-linux-software-repository) [lagringsplats eller Ange kanalnamn (macOS).](mac-updates.md#set-the-channel-name)
 
 ### <a name="os-versions-when-using-azure-defender-for-servers"></a>OS-versioner när du använder Azure Defender för servrar
 Följande OS-versioner stöds när du använder [Azure Defender för servrar:](https://docs.microsoft.com/azure/security-center/security-center-wdatp)
@@ -168,7 +168,7 @@ Automatiserad undersökning och åtgärd: Svar på Office 365-aviseringar | ![Ne
 E-postaviseringar | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Utvärderingslabb | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Hanterings- och API:er: Hälso- och efterlevnadsrapport för enheter | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
-Hantering och API:er: Integrering med produkter från tredje part | ![Nej](images/svg/check-no.svg) Lanseras | ![Nej](images/svg/check-no.svg) Lanseras | ![Nej](images/svg/check-no.svg) Lanseras
+Hantering och API:er: Integrering med produkter från tredje part | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Hantering och API:er: Streaming API | ![Ja](images/svg/check-yes.svg) | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling
 Hanterings- och API:er: Rapport om skydd mot hot | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Hot & sårbarhetshantering | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)

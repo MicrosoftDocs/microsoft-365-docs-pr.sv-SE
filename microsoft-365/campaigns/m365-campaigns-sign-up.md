@@ -2,10 +2,10 @@
 title: Registrera dig för Microsoft 365 för kampanjer
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Registrera dig steg för steg för Microsoft 365 för kampanjer. Skydda kampanjen från hot om cybersäkerhet till e-post, data och kommunikation.
-ms.openlocfilehash: 454fe7190c12d1dc9ddf0434ba0dcee322ab7cef
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: deaf91850ae5dbd3ed2a4637e0eb157d29215992
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912168"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398223"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Registrera dig för Microsoft 365 för kampanjer 
 

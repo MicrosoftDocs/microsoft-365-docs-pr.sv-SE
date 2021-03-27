@@ -1,11 +1,11 @@
 ---
-title: Konfigurera principer för villkorsstyrd åtkomst
+title: Aktivera säkerhetsstandarder
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -23,62 +23,65 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig att kräva MFA och konfigurera villkorsstyrda åtkomstprinciper för Microsoft 365 för företag.
-ms.openlocfilehash: dcb79ed060dd15fd288cdcfb9e3739a788f5fbc2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Lär dig hur säkerhetsstandarder kan skydda organisationen från identitetsrelaterade attacker genom att ange förkonfigurerade säkerhetsinställningar.
+ms.openlocfilehash: ea36ba45af26a767b08ee1e75931dca54dacea64
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912192"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398302"
 ---
-# <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Kräv multifaktorautentisering och konfigurera principer för villkorsstyrd åtkomst
+# <a name="turn-on-security-defaults"></a>Aktivera säkerhetsstandarder
 
-Du skyddar åtkomsten till dina data med principer för multifaktorautentisering och villkorsstyrd åtkomst. Dessa ger betydande ytterligare säkerhet. Microsoft tillhandahåller en uppsättning grundläggande principer för villkorsstyrd åtkomst som rekommenderas för alla kunder. Grundläggande principer är en uppsättning fördefinierade principer som hjälper till att skydda organisationer mot många vanliga attacker. Dessa vanliga attacker kan vara lösenordsattacker, uppspelning och nätfiske.
+Säkerhetsstandarder hjälper till att skydda organisationen från identitetsrelaterade attacker genom att tillhandahålla förkonfigurerade säkerhetsinställningar som Microsoft hanterar för din organisations räkning. De här inställningarna omfattar aktivering av multifaktorautentisering (MFA) för alla administratörer och användarkonton. För de flesta organisationer erbjuder säkerhetsstandarder en bra nivå av ytterligare inloggningssäkerhet.
 
-De här principerna kräver att administratörer och användare anger en andra form av autentisering (kallas multifaktorautentisering eller MFA) under vissa förhållanden. Om en användare i organisationen till exempel försöker logga in på Microsoft 365 från ett annat land eller från en okänd enhet kan inloggningen anses vara riskabel. Användaren måste tillhandahålla extra autentisering (till exempel ett fingeravtryck eller en kod) för att bevisa sin identitet.
+Mer information om säkerhetsstandarder och de principer de tillämpar finns i [Vad är standardinställningar för säkerhet?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
-För närvarande innehåller baslinjeprinciperna följande principer:
+Om prenumerationen skapades den 22 oktober 2019 eller efter den 22 oktober 2019 kan säkerhetsstandarder ha aktiverats automatiskt. Kontrollera inställningarna &mdash; för att bekräfta.
 
-- Konfigurera i administrationscentret för Microsoft 365:
-  - **Kräv MFA för administratörer: Kräver** multifaktorautentisering för de mest privilegierade administratörsrollerna, inklusive global administratör.
-  - **Slutanvändarskydd:** Kräver multifaktorautentisering för användare endast om en inloggning är riskabel. 
-- Konfigurera i Azure Active Directory-portalen:
-  - **Blockera äldre autentisering:** Äldre klientappar och vissa nya program använder inte nyare, säkrare och autentiseringsprotokoll. Dessa äldre appar kan kringgå villkorsstyrda åtkomstprinciper och få obehörig åtkomst till din miljö. Den här principen blockerar åtkomst från klienter som inte stöder villkorsstyrd åtkomst. 
-  - **Kräv MFA för tjänsthantering:** Kräver multifaktorautentisering för åtkomst till hanteringsverktyg, inklusive Azure-portalen (där du konfigurerar baslinjeprinciper).
+Så här aktiverar du säkerhetsstandardvärden i Azure Active Directory (Azure AD) eller kontrollerar om de redan är aktiverade:
 
-Vi rekommenderar att du aktiverar alla dessa baslinjeprinciper. När dessa principer har aktiverats uppmanas administratörer och användare att registrera sig för Azure AD-multifaktorautentisering.
+1. Logga in på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrationscentret för Microsoft 365 med autentiseringsuppgifter</a> som global administratör.
 
-Mer information om dessa principer finns i Vad [är grundläggande principer](/azure/active-directory/conditional-access/concept-baseline-protection)?
+2. I den vänstra rutan väljer **du Visa alla.** Under **Administratörscentra** väljer du **sedan Azure Active Directory.**
 
-## <a name="require-mfa"></a>Kräv MFA
+3. I den vänstra rutan i **administrationscentret för Azure Active Directory väljer** du Azure Active **Directory.**
 
-Så här kräver du att alla användare loggar in med en andra typ av ID:
+4. I den vänstra menyn på Instrumentpanelen går du till **avsnittet Hantera** och väljer **Egenskaper**.
 
-1. Gå till administrationscentret och <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> välj **Inställningar.**
+    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Skärmbild av administrationscentret för Azure Active Directory som visar platsen för menyobjektet Egenskaper.":::
 
-2. På sidan Inställningar väljer du **Visa** på **kortet Gör inloggningen säkrare.**
+5. Längst ned på sidan **Egenskaper** väljer du **Hantera säkerhetsstandarder.**
 
-    ![Gör inloggningen säkrare.](../media/setupmfa.png)
-3. På sidan Gör inloggningen säkrare väljer du **Komma igång.**
-
-4. I fönstret Förstärka inloggningssäkerhet markerar du kryssrutorna bredvid Kräv multifaktorautentisering för administratörer och Kräv att användare registrerar sig för multifaktorautentisering och blockerar åtkomst om **risken identifieras**. 
-    Se till att utesluta [nödsituations-](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account) eller "break-glass"-administratörskontot från MFA-kravet i **rutan Hitta** användare.
-
-    ![Förstärka säkerhetssidan.](../media/requiremfa.png)
-
-5. Välj **Skapa** princip längst ned på sidan.
-
-## <a name="set-up-baseline-policies"></a>Konfigurera baslinjeprinciper
-
-1. Gå till [Azure-portalen och](https://portal.azure.com)gå sedan till Villkorsstyrd åtkomst till **Azure Active Directory-säkerhet** \>  \>  för att skapa en **ny princip.**
-
-Se följande specifika instruktioner för varje princip: <br>
-    - [Kräv MFA för administratörer](/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
-    - [Kräv MFA för användare](/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
-    - [Blockera äldre autentisering](/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
-    - [Kräv MFA för tjänsthantering](/azure/active-directory/conditional-access/howto-baseline-protect-azure)
+6. I det högra fönstret visas standardinställningen **Aktivera** säkerhet. Om **Ja** har valts är säkerhetsstandardvärden redan aktiverade och inga ytterligare åtgärder krävs. Om säkerhetsstandarder inte är aktiverade, väljer du **Ja** för att aktivera dem och väljer sedan **Spara**.
 
 > [!NOTE]
-> Förhandsgranskningsprinciper finns inte längre och användarna måste skapa egna principer.
+> Om du har använt villkorsstyrda åtkomstprinciper måste du inaktivera dem innan du använder säkerhetsstandarder.
+>
+> Du kan använda antingen säkerhetsstandarder eller villkorsstyrda åtkomstprinciper, men du kan inte använda båda samtidigt.
 
-Du kan konfigurera extra principer, till exempel krav på godkända klientprogram. Mer information finns i dokumentationen [för villkorsstyrd åtkomst.](/azure/active-directory/conditional-access/)
+## <a name="consider-using-conditional-access"></a>Överväg att använda villkorsstyrd åtkomst
+
+Om organisationen har komplexa säkerhetskrav eller om du behöver mer detaljerad kontroll över dina säkerhetsprinciper bör du överväga att använda villkorsstyrd åtkomst i stället för säkerhetsstandarder för att uppnå ett liknande eller högre säkerhetsbeteende. 
+
+Med villkorsstyrd åtkomst kan du skapa och definiera principer som reagerar på inloggningshändelser och begär ytterligare åtgärder innan en användare beviljas åtkomst till ett program eller en tjänst. Villkorsstyrda principer kan vara detaljerade och specifika så att användarna kan vara produktiva var och när som helst, men även skydda organisationen.
+
+Standardinställningar för säkerhet är tillgängliga för alla kunder, medan villkorsstyrd åtkomst kräver en licens för något av följande abonnemang:
+
+- Azure Active Directory Premium P1 eller P2
+- Microsoft 365 Business Premium
+- Microsoft 365 E3 eller E5
+- Enterprise Mobility & Security E3 eller E5
+
+Om du vill använda villkorsstyrd åtkomst för att konfigurera principer som motsvarar dem som aktiverats som säkerhetsstandard tar du en del av följande steg-för-steg-guider:
+
+- [Kräv MFA för administratörer](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
+- [Kräv MFA för Azure-hantering](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
+- [Blockera äldre autentisering](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+- [Kräv MFA för alla användare](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
+- [Kräv Azure AD MFA-registrering](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) – kräver Azure AD Identity Protection, som är en del av Azure Active Directory Premium P2
+
+Mer information om villkorsstyrd åtkomst finns i [Vad är villkorsstyrd åtkomst?](/azure/active-directory/conditional-access/overview) Mer information om hur du skapar principer för villkorsstyrd åtkomst finns [i Skapa en princip för villkorsstyrd åtkomst.](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy)
+
+> [!NOTE]
+> Om du har ett abonnemang eller en licens som tillhandahåller villkorsstyrd åtkomst men ännu inte har skapat några principer för villkorsstyrd åtkomst får du använda säkerhetsstandarder. Du måste dock inaktivera säkerhetsstandarder innan du kan använda villkorsstyrda åtkomstprinciper.

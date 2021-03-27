@@ -2,10 +2,10 @@
 title: Skydda dina administratörskonton
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Lär dig att konfigurera och skydda dina administratörskonton.
-ms.openlocfilehash: ec5b971ba4f1fdc8834e10ddf90ff219f763f805
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d687407fad1cec5da49dbc33ffeb84366f1c309
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912180"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398247"
 ---
 # <a name="protect-your-administrator-accounts"></a>Skydda dina administratörskonton
 
@@ -36,7 +36,7 @@ Eftersom administratörskonton har förhöjd behörighet är de värdefulla mål
 - Konfigurera ytterligare ett administratörskonto för nödsituationer.
 - Hur du skyddar dessa konton.
 
-När du registrerar dig för Microsoft 365 och anger din information blir du automatiskt global administratör. En global administratör har den slutgiltiga kontrollen över användarkonton och alla andra inställningar i administrationscentret för Microsoft, men det finns många olika typer av administratörskonton med olika åtkomstgrad. Mer [information om de](/office365/admin/add-users/about-admin-roles) olika åtkomstnivåerna för varje typ av administratörsroll finns i om administratörsroller.
+När du registrerar dig för Microsoft 365 och anger din information blir du automatiskt global administratör. En global administratör har den slutgiltiga kontrollen över användarkonton och alla andra inställningar i administrationscentret för Microsoft, men det finns många olika typer av administratörskonton med varierande åtkomstgrad. Mer [information om de](/office365/admin/add-users/about-admin-roles) olika åtkomstnivåerna för varje typ av administratörsroll finns i om administratörsroller.
 
 ## <a name="create-additional-admin-accounts"></a>Skapa ytterligare administratörskonton
 
@@ -76,12 +76,11 @@ Så här skapar du ett nytt användarkonto:
 3. Expandera avsnittet **Roller** och välj **Användare (ingen administrativ åtkomst).**
 4. I avsnittet **Produktlicenser** flyttar du väljaren för **Microsoft 365 Business** till **På.**
 
-## <a name="register-each-of-these-accounts-for-multi-factor-authentication"></a>Registrera var och en av dessa konton för multifaktorautentisering
+## <a name="turn-on-security-defaults"></a>Aktivera säkerhetsstandarder
 
-Kontrollera att dessa konton använder [multifaktorautentisering](m365-campaigns-multifactor-authenication.md).
+Säkerhetsstandarder hjälper till att skydda organisationen från identitetsrelaterade attacker genom att tillhandahålla förkonfigurerade säkerhetsinställningar som Microsoft hanterar för din organisations räkning. De här inställningarna omfattar aktivering av multifaktorautentisering (MFA) för alla administratörer och användarkonton. Mer information om standardinställningar för säkerhet och hur du aktiverar dem finns i [Aktivera standardinställningar för säkerhet.](m365-campaigns-conditional-access.md)
 
 ## <a name="additional-recommendations"></a>Ytterligare rekommendationer
 
-- Se till att administratörskonton också har ställts in för multifaktorautentisering. Vi visar hur du gör detta i Konfigurera [principer för villkorsstyrd åtkomst.](m365-campaigns-conditional-access.md)
 - Stäng alla orelaterade webbläsarsessioner och appar, inklusive personliga e-postkonton, innan du använder administratörskonton. Du kan också använda i privata webbläsarfönster eller inkognitofönster.
 - Se till att logga ut från webbläsarsessionen när du har slutfört administratörsuppgifter.

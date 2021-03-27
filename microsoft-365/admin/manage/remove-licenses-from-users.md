@@ -5,42 +5,35 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_TOC
-- commerce
 ms.custom:
 - AdminSurgePortfolio
 - manage_licenses
+- okr_smb
+- commerce
 search.appverid:
 - MET150
 description: Lär dig hur du tar bort licenser från användarkonton.
 ms.date: 07/01/2020
-ms.openlocfilehash: 858daaf0069ecba3e6ff65ce957462764b45c22c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 550136c2cfa8d81a31e52a4313dc9c967a55d56e
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915200"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398199"
 ---
 # <a name="unassign-licenses-from-users"></a>Ta bort tilldelningen av licenser från användare
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
-
-::: moniker range="o365-worldwide"
-
 Du kan ta bort licenser från användare på **sidan Aktiva** användare eller på **sidan** Licenser. Vilken metod du använder beror på om du vill ta bort licenser från specifika användare eller ta bort licenser för användare från en viss produkt.
 
-::: moniker-end
+> [!NOTE]
+> Som administratör kan du inte tilldela eller ta bort licenser för en prenumeration på självbetjäning som köpts av en användare i organisationen. Du kan [ta över en prenumeration på självbetjäning och](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)sedan tilldela eller ta bort licenser.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
@@ -48,21 +41,31 @@ Du kan ta bort licenser från användare på **sidan Aktiva** användare eller p
 - Du kan [ta bort licenser från användarkonton med Office 365 PowerShell](../../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md).
 - Du kan också [ta bort användarkonton](../add-users/delete-a-user.md) som har tilldelats en licens om du vill göra licensen tillgänglig för andra användare. När du tar bort ett användarkonto blir licensen direkt tillgänglig att tilldela till någon annan.
 
-::: moniker range="o365-worldwide"
-
 ## <a name="use-the-licenses-page-to-unassign-licenses"></a>Använda sidan Licenser för att ta bort licenser
 
 När du använder sidan **Licenser** för att ta bort licenser tar du bort licenser för en viss produkt för upp till 20 användare.
 
+::: moniker range="o365-worldwide"
+
 1. Gå till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> i administrationscentret.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret går</a>du till sidan  > **Faktureringslicenser.**
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret går</a>du till sidan  > **Faktureringslicenser.**
+
+::: moniker-end
+
 2. Välj den produkt som du vill ta bort licenser för.
 3. Välj de användare som du vill ta bort licenser för.
 4. Välj **Ta bort licenser**.
 5. Välj **Ta bort tilldelning i** rutan Ta **bort licenser.**
-
-::: moniker-end
-
-::: moniker range="o365-worldwide"
 
 ## <a name="use-the-active-users-page-to-unassign-licenses"></a>Använda sidan Aktiva användare för att ta bort licenser
 
@@ -70,71 +73,52 @@ När du använder sidan **Aktiva användare** för att ta bort licenser tar du b
 
 ### <a name="unassign-licenses-from-one-user"></a>Ta bort licenser från en användare
   
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
+::: moniker range="o365-worldwide"
+
+1. I administrationscentret går du till sidan **Användare** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret går</a>du till sidan **Fakturering** > **för aktiva** användare.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret går</a>du till sidan **Fakturering** > **för aktiva** användare.
+
+::: moniker-end
+
 2. Markera raden för den användare som du vill ta bort en licens för.
 3. I det högra fönstret väljer du **Licenser och appar**.
 4. Expandera avsnittet **Licenser,** avmarkera rutorna för de licenser som du vill ta bort och välj sedan **Spara ändringar.**
 
+###  <a name="unassign-licenses-from-multiple-users"></a>Ta bort licenser från flera användare
+
+::: moniker range="o365-worldwide"
+
+1. I administrationscentret går du till sidan **Användare** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-## <a name="unassign-licenses-from-one-user"></a>Ta bort licenser från en användare
-
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
-2. Välj den användare som du vill ta bort licensen för.
-3. På raden Produktlicenser **till höger väljer** du **Redigera**.
-4. I fönstret **Produktlicenser** ändrar du reglaget till **positionen Av** för den licens du vill ta bort för användaren. Om du till exempel stänger av Office 365 Enterprise, E3-licensen tar den bort licensen och alla tjänster under den licensen för den användaren.
-5. Längst ned i fönstret **Produktlicenser** väljer du **Spara** \> **Stäng** \> **Stäng**.
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret går</a>du till sidan **Fakturering** > **för aktiva** användare.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-## <a name="unassign-licenses-from-one-user"></a>Ta bort licenser från en användare
-
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
-2. Välj den användare som du vill ta bort licensen för.
-3. På raden Produktlicenser **till höger väljer** du **Redigera**.
-4. I fönstret **Produktlicenser** ändrar du reglaget till **positionen Av** för den licens du vill ta bort för användaren. Om du till exempel stänger av Office 365 Enterprise, E3-licensen tar den bort licensen och alla tjänster under den licensen för den användaren.
-5. Längst ned i fönstret **Produktlicenser** väljer du **Spara** \> **Stäng** \> **Stäng**.
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret går</a>du till sidan **Fakturering** > **för aktiva** användare.
 
 ::: moniker-end
 
-::: moniker range="o365-worldwide"
-###  <a name="unassign-licenses-from-multiple-users"></a>Ta bort licenser från flera användare
-
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
 2. Markera cirklarna bredvid namnen på de användare som du vill ta bort licenser för.
 3. Välj **Fler alternativ (...)** högst upp och välj sedan **Hantera produktlicenser**.
 4. I fönstret **Hantera produktlicenser** väljer du **Ersätt befintliga produktlicenstilldelningar** \> **Nästa**.
 5. Längst ned i fönstret **Ersätt befintliga produkter** markerar du kryssrutan Ta bort alla **produktlicenser** från de markerade användarna och väljer sedan **Ersätt** \> **Stäng.**
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-##  <a name="unassign-licenses-from-multiple-users"></a>Ta bort licenser från flera användare
-
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
-2. Markera kryssrutorna för de användare som du vill ta bort licenser för.
-3. I fönstret **Massåtgärder** väljer du **Redigera produktlicenser**.
-4. I fönstret **Ersätt befintliga produkter** väljer du **Ersätt befintliga licenstilldelningar** \> **Nästa**.
-5. Längst ned i fönstret **Ersätt befintliga produkter** markerar du kryssrutan Ta bort alla **produktlicenser** från de markerade användarna och väljer **sedan Ersätt** \>  \> **Stäng stäng.**
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-##  <a name="unassign-licenses-from-multiple-users"></a>Ta bort licenser från flera användare
-  
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
-2. Markera kryssrutorna för de användare som du vill ta bort licenser för.
-3. I fönstret **Massåtgärder** väljer du **Redigera produktlicenser**.
-4. I fönstret **Ersätt befintliga produkter** väljer du **Ersätt befintliga licenstilldelningar** \> **Nästa**.
-5. Längst ned i fönstret **Ersätt befintliga produkter** markerar du kryssrutan Ta bort alla **produktlicenser** från de markerade användarna och väljer **sedan Ersätt** \>  \> **Stäng stäng.**
-
-::: moniker-end
 
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>Vad händer med en användares data när du tar bort deras licens?
 
