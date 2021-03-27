@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Läs mer om de inställningar för gästdelning som är tillgängliga i Microsoft 365 som kan påverka delning med personer utanför organisationen.
-ms.openlocfilehash: c87f1d0ea8a35d7685f91c1b20a709c58ec4d040
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bdb86dd7545c00f0ed24552b22062a983e450b47
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920222"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215570"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Inställningar för gästdelning i Microsoft 365
 
@@ -35,7 +35,7 @@ I den här artikeln beskrivs de olika inställningarna som kan påverka delning 
 Azure Active Directory är den katalogtjänst som används av Microsoft 365. Inställningarna för organisationsrelationer i Azure Active Directory påverkar direkt delning i Teams, Microsoft 365-grupper, SharePoint och OneDrive.
 
 > [!NOTE]
-> De här inställningarna påverkar bara SharePoint när [SharePoint- och OneDrive-integrering med Azure AD B2B (förhandsversion)](/sharepoint/sharepoint-azureb2b-integration-preview) har konfigurerats. I tabellen nedan förutsätts det att den har konfigurerats.
+> De här inställningarna påverkar bara SharePoint när [SharePoint- och OneDrive-integrering med Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) har konfigurerats. I tabellen nedan förutsätts det att den har konfigurerats.
 
 ### <a name="organizational-relationships-settings"></a>Inställningar för relationer i organisationen
 
@@ -43,7 +43,7 @@ Azure Active Directory är den katalogtjänst som används av Microsoft 365. Ins
 
 ![Skärmbild av sidan med inställningar för organisationsrelationer i Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
 
-|**Inställning**|**Standard**|**Beskrivning**|
+| Inställning | Standard | Beskrivning |
 |:-----|:-----|:-----|
 |Behörigheterna för gästanvändare är begränsade|Ja|Den här inställningen påverkar katalogaktiviteterna som en gäst kan utföra.|
 |Administratörer och användare i gästinbjudarrollen kan bjuda in|Ja|När du har angett **Ja** kan administratörer bjuda in gäster via Azure AD och Microsoft 365-delningar, t.ex. Teams och SharePoint. Om du har angett **Nej** kan de inte göra det.|
@@ -66,7 +66,7 @@ Administrationscenter för Microsoft 365 har inställningar på organisationsniv
 
 ![Skärmbild av gästdelningsinställningen för säkerhet och sekretess i Microsoft 365-administrationscentret](../media/sharepoint-security-privacy-sharing-setting.png)
 
-|**Inställning**|**Standard**|**Beskrivning**|
+| Inställning | Standard | Beskrivning |
 |:-----|:-----|:-----|
 |Låt användarna lägga till nya gäster i organisationen|På|När du har angett **Ja** kan Azure AD-medlemmar bjuda in gäster via Azure AD. Om du har angett **Nej** kan de inte göra det. När du har angett **Ja** kan Microsoft 365-gruppmedlemmar bjuda in gäster med ägargodkännande. Om du har angett **Nej** kan Microsoft 365-gruppmedlemmar bjuda in gäster med ägargodkännande, men ägarna måste vara globala administratörer för att kunna godkänna. <br><br>Observera att **Medlemmar kan bjuda in** gäller medlemmar i Azure AD (inte gäster) och inte webbplats- eller gruppmedlemmar i Microsoft 365. <br><br>Den här motsvarar inställningen **Medlemmar kan bjuda in** i Azure Active Directory för relationer i organisationen.|
 
@@ -76,7 +76,7 @@ Administrationscenter för Microsoft 365 har inställningar på organisationsniv
 
 ![Skärmbild av gästinställningarna för Microsoft 365-grupper i administrationscenter för Microsoft 365](../media/office-365-groups-guest-settings.png)
 
-|**Inställning**|**Standard**|**Beskrivning**|
+| Inställning | Standard | Beskrivning |
 |:-----|:-----|:-----|
 |Låt gruppmedlemmar utanför organisationen få åtkomst till gruppinnehåll|På|När den här inställningen är **På** kan gäster komma åt gruppinnehåll. När den är **Av** kan de inte det. Den här inställningen ska vara **På** i alla situationer där gästanvändare interagerar med Microsoft 365-grupper eller Teams.|
 |Låt gruppägare lägga till personer utanför organisationen i grupper|På|När inställningen är **På** kan ägare av Microsoft 365-grupper eller Teams bjuda in nya gäster till gruppen. När den är **Av** kan ägare endast bjuda in gäster som redan finns i katalogen.|
@@ -95,7 +95,7 @@ Huvudinställningen för gäståtkomst i Teams **Tillåt gäståtkomst i Teams**
 
 ![Skärmbild av inställningen för gäståtkomst i Teams](../media/teams-guest-access-toggle.png)
 
-|**Inställning**|**Standard**|**Beskrivning**|
+| Inställning | Standard | Beskrivning |
 |:-----|:-----|:-----|
 |Tillåt gäståtkomst i Teams|Av|Övergripande inställning för att aktivera och inaktivera gäståtkomst i Teams. Det kan ta upp till 24 timmar för den här inställningen att verkställas efter att den har ändrats.|
 
@@ -105,7 +105,7 @@ Huvudinställningen för gäståtkomst i Teams **Tillåt gäståtkomst i Teams**
 
 ![Skärmbild av alternativ för gästsamtal i Teams](../media/teams-guest-calling-setting.png)
 
-|**Inställning**|**Standard**|**Beskrivning**|
+| Inställning | Standard | Beskrivning |
 |:-----|:-----|:-----|
 |Ring privata samtal|På|När inställningen är **På** kan gäster ringa peer-to-peer-samtal i Teams. När den är **Av** kan de inte göra det.|
 
@@ -115,7 +115,7 @@ Huvudinställningen för gäståtkomst i Teams **Tillåt gäståtkomst i Teams**
 
 ![Skärmbild av inställningar för gästmöten i Teams](../media/teams-guest-meeting-settings.png)
 
-|**Inställning**|**Standard**|**Beskrivning**|
+| Inställning | Standard | Beskrivning |
 |:-----|:-----|:-----|
 |Tillåt IP-video|På|När inställningen är **På** kan gäster använda video i samtal och möten. När den är **Av** kan de inte det.|
 |Skärmdelningsläge|Hela skärmen|När inställningen är **Inaktiverad** kan gäster inte dela sina skärmar i Teams. När den är inställd på **Enstaka program** kan gäster bara dela ett program på skärmen. När den är inställd på **Hela skärmen** kan gäster välja att dela ett program eller hela skärmen.|
@@ -127,7 +127,7 @@ Huvudinställningen för gäståtkomst i Teams **Tillåt gäståtkomst i Teams**
 
 ![Skärmbild av inställningar för gästmeddelanden i Teams](../media/teams-guest-messaging-settings.png)
 
-|**Inställning**|**Standard**|**Beskrivning**|
+| Inställning | Standard | Beskrivning |
 |:-----|:-----|:-----|
 |Redigera skickade meddelanden|På|När inställningen är **På** kan gäster redigera meddelanden som de skickat tidigare. När den är **Av** kan de inte göra det.|
 |Ta bort skickade meddelanden|På|När inställningen är **På** kan gäster ta bort meddelanden som de skickat tidigare. När den är **Av** kan de inte göra det.|
@@ -152,7 +152,7 @@ Eftersom OneDrive är en webbplatshierarki i SharePoint påverkar delningsinstä
 
 ![Skärmbild av delningsinställningar för SharePoint på organisationsnivå](../media/sharepoint-organization-external-sharing-controls.png)
 
-|**Inställning**|**Standard**|**Beskrivning**|
+| Inställning | Standard | Beskrivning |
 |:-----|:-----|:-----|
 |SharePoint|Alla|De mest tillåtande delningsbehörigheterna för SharePoint-webbplatser.|
 |OneDrive|Alla|De mest tillåtande delningsbehörigheterna för OneDrive-webbplatser. Den här inställningen kan inte vara mer tillåtande än SharePoint-inställningen.|
@@ -163,7 +163,7 @@ Eftersom OneDrive är en webbplatshierarki i SharePoint påverkar delningsinstä
 
 ![Skärmbild av ytterligare delningsinställningar för SharePoint på organisationsnivå](../media/sharepoint-organization-advanced-sharing-settings.png)
 
-|**Inställning**|**Standard**|**Beskrivning**|
+| Inställning | Standard | Beskrivning |
 |:-----|:-----|:-----|
 |Begränsa extern delning per domän|Av|Med den här inställningen kan du ange en lista över tillåtna eller blockerade domäner för delning. När tillåtna domäner anges kan delningsinbjudningar bara skickas till dessa domäner. När blockerade domäner anges kan delningsinbjudningar inte skickas till de domänerna.<br><br> Den här inställningen påverkar alla SharePoint- och OneDrive-webbplatser i organisationen.|
 |Gäster måste logga in med det konto som delningsinbjudningar skickas till|Av|Hindrar gäster från att acceptera inbjudningar till webbplatsdelningar med en annan e-postadress än den som inbjudan skickades till.<br><br>[SharePoint- och OneDrive-integrering med Azure AD B2B (förhandsversion)](/sharepoint/sharepoint-azureb2b-integration-preview) använder inte den här inställningen eftersom alla gäster läggs till i katalogen utifrån den e-postadress som inbjudan skickades till. Det går inte att komma åt webbplatsen med alternativa e-postadresser.|
@@ -177,7 +177,7 @@ När filer och mappar delas i SharePoint och OneDrive får delningsmottagare en 
 
 ![Skärmbild av delningsinställningar för filer och mappar för SharePoint på organisationsnivå](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
-|**Inställning**|**Standard**|**Beskrivning**|
+| Inställning | Standard | Beskrivning |
 |:-----|:-----|:-----|
 |Fil- och mapplänkar|Alla som har länken|Anger vilken delningslänk som visas som standard när en användare delar en fil eller mapp. Användare kan ändra alternativet innan de delar. Om standardinställningen är **Alla som har länken** och *Alla* är delning inte tillåten för en viss webbplats, och **Endast personer i din organisation** visas som standard för den webbplatsen.|
 |Länkarna måste upphöra att gälla inom så här många dagar|Av (upphör inte)|*Alla*-länken upphör efter det angivna antalet dagar efter att den har skapats. Länkar som har upphört kan inte förnyas. Skapa en ny länk om du vill fortsätta att dela efter förfallotiden.|
@@ -192,7 +192,7 @@ Om du vill begränsa vilka som kan dela med gäster i SharePoint och OneDrive be
 
 ![Skärmbild av delningsinställningar för säkerhetsgrupper i SharePoint på organisationsnivå](../media/sharepoint-organization-external-sharing-security-groups.png)
 
-|**Inställning**|**Standard**|**Beskrivning**|
+| Inställning | Standard | Beskrivning |
 |:-----|:-----|:-----|
 |Tillåt endast användare i valda säkerhetsgrupper att dela med autentiserade externa användare|Av|När **På** kan bara personer i de angivna säkerhetsgrupperna dela med personer utanför organisationen. Bara länkar för *Vissa personer* är tillgängliga. Delning med *Alla* inaktiveras, såvida inte **Tillåt endast användare i valda säkerhetsgrupper att dela med autentiserade användare och med hjälp av anonyma länkar** också är **På**|
 |Tillåt endast användare i valda säkerhetsgrupper att dela med autentiserade användare och med hjälp av anonyma länkar|Av|När inställningen är **På** kan bara personerna i de angivna säkerhetsgrupperna dela med gäster. Både länkar för *Alla* och *Vissa personer* är tillgängliga.|
@@ -215,7 +215,7 @@ Om webbplatsen har en känslighetsetikett kan den etiketten styra de externa del
 
 ![Skärmbild av inställningar för extern delning för SharePoint](../media/sharepoint-site-external-sharing-settings.png)
 
-|**Inställning**|**Standard**|**Beskrivning**|
+| Inställning | Standard | Beskrivning |
 |:-----|:-----|:-----|
 |Webbplatsinnehåll kan delas med|Varierar efter webbplatstyp (se tabellen nedan)|Anger vilken typ av extern delning som tillåts för webbplatsen. Alternativ som är tillgängliga här åsidosätts av delningsinställningarna på organisationsnivå för SharePoint.|
 
@@ -227,7 +227,7 @@ Du kan ange standardinställningar för länktyp och behörigheter samt förfall
 
 ![Skärmbild av inställningar för länkdelning för SharePoint på webbplatsnivå](../media/sharepoint-site-link-sharing-settings.png)
 
-|**Inställning**|**Standard**|**Beskrivning**|
+| Inställning | Standard | Beskrivning |
 |:-----|:-----|:-----|
 |Begränsa delning per domän|Av|Med den här inställningen kan du ange en lista över tillåtna eller blockerade domäner för delning. När tillåtna domäner anges kan delningsinbjudningar bara skickas till dessa domäner. När blockerade domäner anges kan delningsinbjudningar inte skickas till de domänerna.<br><br> Den här inställningen kan inte åsidosätta domänbegränsningar som anges på organisations- eller Azure AD-nivå.|
 |Standardtyp för delningslänk|Samma som inställningarna på organisationsnivå|Med den här inställningen kan du ange standarddelningslänken som visas för användarna på webbplatsen. Alternativet *Samma som inställningarna på organisationsnivå* definieras av en kombination av inställningar för delning på organisations- och webbplatsnivå.|
@@ -238,7 +238,7 @@ Du kan ange standardinställningar för länktyp och behörigheter samt förfall
 
 I tabellen nedan visas standardinställningen för delning för varje webbplatstyp.
 
-|**Webbplatstyp**|**Standardinställning för delning**|
+| Webbplatstyp | Standardinställning för delning |
 |:-----|:-----|
 |Klassisk|**Endast personer i organisationen**|
 |OneDrive|**Alla**|

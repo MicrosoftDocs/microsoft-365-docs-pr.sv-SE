@@ -20,12 +20,12 @@ ms.custom:
 description: Användare kan läsa mer om hur de visar och hanterar meddelanden i karantän i Exchange Online Protection (EOP) som borde ha levererats till dem.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 961912427f9c343f8235f0ed8e990431669ff9e5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: cc904132bc12f068571cfd86d9f5eb629d7f53f2
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207126"
+ms.locfileid: "51215522"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Hitta och släppa meddelanden i karantän som användare i EOP
 
@@ -155,6 +155,8 @@ När du har valt ett meddelande finns det alternativ för vad du kan göra med m
   - **Textvy**: Visar meddelandetexten som oformaterad text.
 
 - **Ta bort från karantän**: När du har klickat på **Ja** i varningen som visas tas meddelandet genast bort.
+
+- **Spärra avsändare**: Det förhindrar avsändaren att skicka meddelanden till dig.
 
 Klicka på **Stäng** när du är klar.
 
