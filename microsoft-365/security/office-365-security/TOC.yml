@@ -314,7 +314,7 @@
           href: quarantine-faq.md
     - name: Referens
       items:
-        - name: Säkerhetsöversikt
+        - name: 'Färdplan för säkerhet '
           href: security-roadmap.md
         - name: Hjälp och support för EOP
           href: help-and-support-for-eop.md
@@ -382,6 +382,6 @@
     - name: Microsoft 365-säkerhet
       href: ../index.yml
     - name: Microsoft 365 Defender
-      href: ../defender/index.yml
+      href: ../index.yml
     - name: Microsoft Defender för Endpoint
       href: ../defender-endpoint/index.yml
