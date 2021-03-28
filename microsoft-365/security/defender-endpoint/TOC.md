@@ -33,7 +33,7 @@
 #### [Fas 2: Installation](mcafee-to-microsoft-defender-setup.md)
 #### [Fas 3: Introduktion](mcafee-to-microsoft-defender-onboard.md)
 ### [Byta från Symantec till Microsoft Defender för Endpoint]()
-#### [Översikt över migrering](symantec-to-microsoft-defender-atp-migration.md)
+#### [Översikt över migrering](symantec-to-microsoft-defender-endpoint-migration.md)
 #### [Fas 1: Förbereda](symantec-to-microsoft-defender-atp-prepare.md)
 #### [Fas 2: Installation](symantec-to-microsoft-defender-atp-setup.md)
 #### [Fas 3: Introduktion](symantec-to-microsoft-defender-atp-onboard.md)
@@ -115,7 +115,7 @@
 ##### [Aktivera kontrollerad mappåtkomst](enable-controlled-folders.md)
 ##### [Anpassa kontrollerad mappåtkomst](customize-controlled-folders.md)
 
-### [Microsoft Defender Avancerat skydd för Mac]()
+### [Microsoft Defender för Endpoint för Mac]()
 #### [Översikt över Microsoft Defender för Endpoint för Mac](microsoft-defender-endpoint-mac.md)
 #### [Nyheter](mac-whatsnew.md)
 
@@ -140,7 +140,7 @@
 ###### [Översikt över enhetskontroll](mac-device-control-overview.md)
 ###### [Exempel på JAMF](mac-device-control-jamf.md)
 ###### [Exempel på Intune](mac-device-control-intune.md)
-##### [Schemalägga genomsökningar](mac-schedule-scan-atp.md)
+##### [Schemalägga genomsökningar](mac-schedule-scan.md)
 
 #### [Felsökning]()
 ##### [Felsöka installationsproblem](mac-support-install.md)
@@ -354,7 +354,7 @@
 #### [Allmänt]()
 ##### [Verifiera datalagringsplatsen och uppdatera inställningarna för datalagring](data-retention-settings.md)
 ##### [Konfigurera varningsaviseringar](configure-email-notifications.md)
-##### [Konfigurera avancerade funktioner] (advanced-features.md
+##### [Konfigurera avancerade funktioner](advanced-features.md)
 
 #### [Behörigheter]()
 ##### [Använda grundläggande behörigheter för att komma åt portalen](basic-permissions.md)
@@ -377,7 +377,9 @@
 ##### [Registrera enheter](onboard-configure.md)
 ##### [Avregistrera enheter](offboard-machines.md)
 
-#### [Konfigurera inställningar tidzon för Microsoft Defender Säkerhetscenter](time-settings.md)
+#### [Konfigurera inställningar för Microsoft Defender Säkerhetscenter tidzon](time-settings.md)
+
+### [Åtgärda falska positiva/negativa i Microsoft Defender för Endpoint](defender-endpoint-false-positives-negatives.md)
 
 ### [Konfigurera integrering med andra Microsoft-lösningar]()
 #### [Konfigurera villkorad åtkomst](configure-conditional-access.md)
@@ -585,5 +587,5 @@
 ##### [Regler för minskning av attackytan](troubleshoot-asr.md)
 
 # [Microsoft 365-säkerhet](../index.yml)
-# [Microsoft 365 Defender](../defender/index.yml)
+# [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 # [Microsoft Defender för Office 365](../office-365-security/overview.md)
