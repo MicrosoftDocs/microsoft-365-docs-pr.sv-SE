@@ -15,19 +15,19 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Läs mer om Microsoft Business Assist-programmet och hur det kan hjälpa din organisation med förbättrad hjälp och användning för Microsoft 365 för företag.
-ms.openlocfilehash: eb0309ae68bf4569d4cba8dd8501343304389e80
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+description: Läs mer om Business Assist-programmet och hur det kan hjälpa din organisation med förbättrad hjälp och användning för Microsoft 365 för företag.
+ms.openlocfilehash: 4531c841b4856e22b364906c180aa336cb8fd04a
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034323"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408531"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Business Assist för Microsoft 365
 
 Få ut mesta mesta av prenumerationen med expertråd från småföretags specialister.
 
-**Business Assist för Microsoft 365** är en tjänst som utformats särskilt för företag med färre än 5 användare för att du och dina anställda ska få tillgång dygnet runt till småföretags specialister när du växer företaget, från introduktion till daglig användning.
+**Business Assist för Microsoft 365** har utformats för företag med färre än 5 användare för att ge dig och dina anställda tillgång dygnet runt till att få tillgång till small business-specialister när du växer företaget, från introduktion till daglig användning.
 
 ## <a name="business-assist-services"></a>Tjänster i Business Assist
 
@@ -38,7 +38,7 @@ Få ut mesta mesta av prenumerationen med expertråd från småföretags special
 | | | |
 
 > [!div class="nextstepaction"]
-> [Köp nu](https://go.microsoft.com/fwlink/p/?linkid=868433)
+> [Köp nu](https://go.microsoft.com/fwlink/p/?linkid=2158423)
 
 ## <a name="eligibility-for-business-assist"></a>Berättigande till Business Assist
 
@@ -58,4 +58,4 @@ Endast organisationer som är kvalificerade ser alternativet att köpa Business 
 :::image type="content" source="../../media/projectgenie-purchase services.png" alt-text="Hakbild: Köp Business Assist från avsnittet Tillägg på sidan Köptjänster":::
 
 > [!div class="nextstepaction"]
-> [Köp nu](https://go.microsoft.com/fwlink/p/?linkid=868433)
+> [Köp nu](https://go.microsoft.com/fwlink/p/?linkid=2158423)

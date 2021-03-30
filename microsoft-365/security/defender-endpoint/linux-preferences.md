@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ed28d3b5b7bafaea2d72b7a8c45f66bf69033bc2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a8595bae216911350d3f18fcceef729ef020a424
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187799"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408171"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-for-linux"></a>Ange inställningar för Microsoft Defender för Endpoint för Linux
 
@@ -61,6 +61,7 @@ Avsnittet *antivirusEngine* i konfigurationsprofilen används för att hantera i
 | **Nyckel** | antivirusEngine |
 | **Datatyp** | Ordlista (kapslad inställning) |
 | **Kommentarer** | I följande avsnitt finns en beskrivning av innehållet i ordlistan. |
+|||
 
 #### <a name="enable--disable-real-time-protection"></a>Aktivera/inaktivera realtidsskydd
 
@@ -71,6 +72,7 @@ Avgör om realtidsskydd (genomsökning av filer när de används) är aktiverat 
 | **Nyckel** | enableRealTimeProtection |
 | **Datatyp** | Boolesk |
 | **Möjliga värden** | true (standard) <br/> false |
+|||
 
 #### <a name="enable--disable-passive-mode"></a>Aktivera/inaktivera passivt läge
 
@@ -87,6 +89,7 @@ Avgör om antivirusmotorn körs i passiv form eller inte. I passivt läge:
 | **Datatyp** | Boolesk |
 | **Möjliga värden** | false (standard) <br/> true |
 | **Kommentarer** | Tillgängligt i Defender för slutpunkt version 100.67.60 eller senare. |
+|||
 
 #### <a name="exclusion-merge-policy"></a>Princip för undantagskoppling
 
@@ -98,6 +101,7 @@ Anger kopplingsprincipen för undantag. Det kan vara en kombination av administr
 | **Datatyp** | Sträng |
 | **Möjliga värden** | koppla (standard) <br/> admin_only |
 | **Kommentarer** | Tillgängligt i Defender för slutpunkt version 100.83.73 eller senare. |
+|||
 
 #### <a name="scan-exclusions"></a>Undantag för skanning
 
@@ -108,6 +112,7 @@ Enheter som har uteslutits från genomsökningen. Undantag kan anges med fullst�
 | **Nyckel** | undantag |
 | **Datatyp** | Ordlista (kapslad inställning) |
 | **Kommentarer** | I följande avsnitt finns en beskrivning av innehållet i ordlistan. |
+|||
 
 **Typ av undantag**
 
@@ -118,6 +123,7 @@ Anger vilken typ av innehåll som undantas från genomsökningen.
 | **Nyckel** | $type |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
+|||
 
 **Sökväg till utelämnat innehåll**
 
@@ -129,6 +135,7 @@ Används för att utesluta innehåll från genomsökningen genom den fullständi
 | **Datatyp** | Sträng |
 | **Möjliga värden** | giltiga sökvägar |
 | **Kommentarer** | Gäller endast om *$type* *är undantagenPath* |
+|||
 
 **Sökvägstyp (fil/katalog)**
 
@@ -140,6 +147,7 @@ Anger om *sökvägsegenskapen* refererar till en fil eller katalog.
 | **Datatyp** | Boolesk |
 | **Möjliga värden** | false (standard) <br/> true |
 | **Kommentarer** | Gäller endast om *$type* *är undantagenPath* |
+|||
 
 **Filnamnstillägget är undantaget från genomsökningen**
 
@@ -151,6 +159,7 @@ Används för att utesluta innehåll från genomsökningen efter filnamnstilläg
 | **Datatyp** | Sträng |
 | **Möjliga värden** | giltiga filnamnstillägg |
 | **Kommentarer** | Gäller endast om *$type* *är undantagenFileExtension* |
+|||
 
 **Process som uteslutits från genomsökningen**
 
@@ -162,6 +171,7 @@ Anger en process där all filaktivitet är undantagen från genomsökning. Proce
 | **Datatyp** | Sträng |
 | **Möjliga värden** | valfri sträng |
 | **Kommentarer** | Gäller endast om *$type* *är undantagenFilnamn* |
+|||
 
 #### <a name="allowed-threats"></a>Tillåtna hot
 
@@ -171,6 +181,7 @@ Lista över hot (identifieras med namnet) som inte blockeras av produkten och i 
 |:---|:---|
 | **Nyckel** | allowedThreats |
 | **Datatyp** | Matris med strängar |
+|||
 
 #### <a name="disallowed-threat-actions"></a>Otillåtna hotåtgärder
 
@@ -182,6 +193,7 @@ Begränsar de åtgärder som den lokala användaren på en enhet kan vidta när 
 | **Datatyp** | Matris med strängar |
 | **Möjliga värden** | tillåt (begränsar användare från att tillåta hot) <br/> återställning (hindrar användare från att återställa hot från karantän) |
 | **Kommentarer** | Tillgängligt i Defender för slutpunkt version 100.83.73 eller senare. |
+|||
 
 #### <a name="threat-type-settings"></a>Inställningar för hottyp
 
@@ -192,6 +204,7 @@ Inställningen *för threatTypeSettings* i antivirusmotorn används för att sty
 | **Nyckel** | threatTypeSettings |
 | **Datatyp** | Ordlista (kapslad inställning) |
 | **Kommentarer** | I följande avsnitt finns en beskrivning av innehållet i ordlistan. |
+|||
 
 **Hottyp**
 
@@ -202,6 +215,7 @@ Typ av hot som beteendet är konfigurerat för.
 | **Nyckel** | tangent |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | potentially_unwanted_application <br/> archive_bomb |
+|||
 
 **Åtgärd att vidta**
 
@@ -216,6 +230,7 @@ Typ av hot som beteendet är konfigurerat för.
 | **Nyckel** | värde |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | granskning (standard) <br/> blockera <br/> av |
+|||
 
 #### <a name="threat-type-settings-merge-policy"></a>Princip för sammanfogning av hottyper
 
@@ -227,6 +242,7 @@ Anger kopplingsprincipen för inställningar av hottyper. Det kan vara en kombin
 | **Datatyp** | Sträng |
 | **Möjliga värden** | koppla (standard) <br/> admin_only |
 | **Kommentarer** | Tillgängligt i Defender för slutpunkt version 100.83.73 eller senare. |
+|||
 
 #### <a name="antivirus-scan-history-retention-in-days"></a>Historik för antivirussökningshistorik kvar (i dagar)
 
@@ -238,6 +254,7 @@ Ange antalet dagar som resultaten ska behållas i genomsökningshistoriken på e
 | **Datatyp** | Sträng |
 | **Möjliga värden** | 90 (standard). Tillåtna värden är 1 dag till 180 dagar. |
 | **Kommentarer** | Tillgängligt i Defender för slutpunkt version 101.04.76 eller senare. |
+|||
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>Maximalt antal objekt i historiken för antivirussökning
 
@@ -249,6 +266,7 @@ Ange det maximala antalet poster som ska behållas i genomsökningshistoriken. P
 | **Datatyp** | Sträng |
 | **Möjliga värden** | 10000 (standard). Tillåtna värden är från 5 000 objekt till 1 5 000 objekt. |
 | **Kommentarer** | Tillgängligt i Defender för slutpunkt version 101.04.76 eller senare. |
+|||
 
 ### <a name="cloud-delivered-protection-preferences"></a>Inställningar för moln levererat skydd
 
@@ -259,6 +277,7 @@ Ange det maximala antalet poster som ska behållas i genomsökningshistoriken. P
 | **Nyckel** | cloudService |
 | **Datatyp** | Ordlista (kapslad inställning) |
 | **Kommentarer** | I följande avsnitt finns en beskrivning av innehållet i ordlistan. |
+|||
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>Aktivera/inaktivera moln levererat skydd
 
@@ -269,6 +288,7 @@ Avgör om moln levererat skydd är aktiverat på enheten eller inte. Vi rekommen
 | **Nyckel** | aktiverat |
 | **Datatyp** | Boolesk |
 | **Möjliga värden** | true (standard) <br/> false |
+|||
 
 #### <a name="diagnostic-collection-level"></a>Diagnostiksamlingsnivå
 
@@ -279,6 +299,7 @@ Diagnostikdata används för att hålla Defender för Slutpunkt säker och uppda
 | **Nyckel** | diagnosticLevel |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | valfritt (standard) <br/> obligatoriskt |
+|||
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>Aktivera/inaktivera automatiska exempelinskick
 
@@ -293,6 +314,7 @@ Avgör om misstänkta exempel (som troligen innehåller hot) skickas till Micros
 | **Nyckel** | automaticSampleSubmissionConsent |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | none (ingen) <br/> kassaskåp (standard) <br/> alla |
+|||
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>Aktivera/inaktivera automatiska säkerhetsintelligensuppdateringar
 
@@ -303,6 +325,7 @@ Avgör om säkerhetsintelligensuppdateringar installeras automatiskt:
 | **Nyckel** | automaticDefinitionUpdateEnabled |
 | **Datatyp** | Boolesk |
 | **Möjliga värden** | true (standard) <br/> false |
+|||
 
 ## <a name="recommended-configuration-profile"></a>Rekommenderad konfigurationsprofil
 
@@ -339,6 +362,7 @@ Följande konfigurationsprofil:
       "automaticDefinitionUpdateEnabled":true,
       "automaticSampleSubmissionConsent":"safe",
       "enabled":true
+      "proxy":"http://proxy.server:port/"
    }
 }
 ```
@@ -399,6 +423,7 @@ Följande konfigurationsprofil innehåller poster för alla inställningar som b
       "diagnosticLevel":"optional",
       "automaticSampleSubmissionConsent":"safe",
       "automaticDefinitionUpdateEnabled":true
+      "proxy": "http://proxy.server:port/"
    }
 }
 ```
@@ -412,6 +437,17 @@ python -m json.tool mdatp_managed.json
 ```
 
 Om JSON-koden är rätt utformad matar kommandot ovan ut den tillbaka till terminalen och returnerar en utgångskod för `0` . Annars visas ett fel som beskriver problemet och kommandot returnerar en utgångskod för `1` .
+
+## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>Verifiera att filen mdatp_managed.jsfungerar som förväntat
+Kontrollera att din /etc/opt/microsoft/mdatp/managed/mdatp_managed.jsfungerar korrekt genom att se "[managed]" bredvid de här inställningarna:  
+- cloud_enabled
+- cloud_automatic_sample_submission_consent
+- passice_mode_enabled
+- real_time_protection_enabled
+- automatic_definition_update_enabled
+
+> [!NOTE]
+> För mdatp_managed.jsatt börja gälla krävs ingen omstart av wdavdaemon.
 
 ## <a name="configuration-profile-deployment"></a>Konfigurationsprofildistribution
 

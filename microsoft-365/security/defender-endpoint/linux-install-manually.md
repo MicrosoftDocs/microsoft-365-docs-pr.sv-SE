@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cf903bd1b09370dd7de2706b078778137ea029fb
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 98b568206d4263a574c8de653fe5345dd344ba43
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187823"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408553"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-linux-manually"></a>Distribuera Microsoft Defender för Slutpunkt för Linux manuellt
 
@@ -87,7 +87,7 @@ Om du vill förhandsgranska nya funktioner och ge tidig feedback rekommenderar v
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    Om du till exempel kör CentOS 7 och vill distribuera MDE för Linux från *prod-kanalen:*
+    Om du till exempel kör CentOS 7 och vill distribuera Defender för Endpoint för Linux från *prod-kanalen:*
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
@@ -383,6 +383,27 @@ Mer [information om hur](linux-resources.md#log-installation-issues) du hittar d
 ## <a name="operating-system-upgrades"></a>Uppgraderingar av operativsystem
 
 När du uppgraderar ditt operativsystem till en ny huvudversion måste du först avinstallera Defender för Endpoint för Linux, installera uppgraderingen och slutligen konfigurera om Defender för Endpoint för Linux på din enhet.
+
+## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>Migrera från Insiders-Fast till produktionskanalen
+
+1. Avinstallera "Insiders-Fast-kanalen"-versionen av MDE för macOS.
+
+    ``
+    sudo yum remove mdatp
+    ``
+
+1. Inaktivera MDE för Linux Insiders-Fast platsen  ``
+    sudo yum repolist
+    ``
+
+    > [!NOTE]
+    > Utdata ska visa "packages-microsoft-com-fast-prod".
+
+    ``
+    sudo yum-config-manager --disable packages-microsoft-com-fast-prod
+    ``
+1. Distribuera om MDE för Linux med "Produktionskanal".
+
 
 ## <a name="uninstallation"></a>Avinstallation
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Översikt över nätverksanslutningen i administrationscentret för Microsoft 365 (förhandsversion)
-ms.openlocfilehash: 0bfcebff4ebbefdb77049119fef2402af1ca8f90
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2b80dd001bd2ee5d5725ea67c73aa34b4eb8816c
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926102"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408411"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Nätverksanslutning i administrationscentret för Microsoft 365 (förhandsversion)
 
@@ -148,6 +148,10 @@ På fliken Information på kontorets platssida visas de specifika måttresultat 
 
 > [!div class="mx-imgBorder"]
 > ![Platsspecifik information](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
+
+## <a name="sharing-network-assessment-data-with-microsoft"></a>Dela nätverksutvärderingsdata med Microsoft
+
+Som standard delas nätverksutvärderingarna för din organisation och nätverksinsikter med Microsoft-anställda. Det inkluderar inte några personliga data från din personal utan endast de specifika nätverksutvärderingsmåtten och nätverksinsikterna som visas i administrationscentret för kontoren. Dessutom ingår inte platsnamn på kontoret eller gatuadresser, så du måste ange ort och support-ID för det kontor som du vill diskutera. Om det här är inaktiverat kan inte Microsoft-tekniker som du diskuterar din nätverksanslutning med visa någon av den här informationen. Om du aktiverar den här inställningen innebär det bara att framtida data börjar dagen efter att du aktiverar den.
 
 ## <a name="csv-import-for-lan-subnet-office-locations"></a>CSV-import för LAN-undernätsplatser
 

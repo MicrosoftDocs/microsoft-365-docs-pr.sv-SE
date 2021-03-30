@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 684025441c8400775f469515df1bcd0423d6460b
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: bcb96ea29649bf3525b2ffcf6d5cbb5d299bacf3
+ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394752"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51418122"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurera avancerade funktioner i Defender för Slutpunkt
 
@@ -72,6 +72,9 @@ När den här inställningen är aktiverad korreleras aviseringar till separata 
 >Om du ändrar den här inställningen påverkas bara framtida korrelationer.
 
 
+## <a name="enable-edr-in-block-mode"></a>Aktivera EDR i blockläge
+Identifiering av slutpunkt och svar (EDR) i blockeringsläge ger skydd mot skadliga artefakter, även när Microsoft Defender Antivirus körs i passiv form. När EDR är aktiverat blockerar EDR i blockläge skadliga artefakter eller beteenden som identifieras på en enhet. EDR i blockläge arbetar bakom kulisserna för att åtgärda skadliga artefakter som upptäcks efter intrånget.
+
 ## <a name="autoresolve-remediated-alerts"></a>Åtgärdat autoresole-aviseringar
 
 För klientprogram som skapats i eller efter Windows 10, version 1809, konfigureras automatisk undersökning och åtgärd som standard för att lösa varningar där status för automatisk analys är "Inga hot hittades" eller "Åtgärdat".  Om du inte vill att aviseringarna ska matchas automatiskt måste du inaktivera funktionen manuellt.
@@ -115,6 +118,14 @@ Mer information finns i [Hantera indikatorer](manage-indicators.md).
 
 > [!NOTE]
 > Nätverksskydd utnyttjar ryktestjänster som bearbetar förfrågningar på platser som kan vara utanför den plats du har valt för Defender för Slutpunktsdata.
+
+
+## <a name="tamper-protection"></a>Skydd mot manipulering
+Under vissa typer av cyberattacker försöker dåliga aktör att inaktivera säkerhetsfunktioner, till exempel antivirusskydd, på dina datorer. Dåliga aktör vill inaktivera dina säkerhetsfunktioner för att få enklare åtkomst till dina data, installera skadlig programvara eller på annat sätt utnyttja dina data, din identitet och dina enheter.
+
+Skydd mot manipulering låser i princip Microsoft Defender Antivirus och förhindrar att säkerhetsinställningarna ändras genom appar och metoder.
+
+Behåll skydd mot manipulering aktiverat för att förhindra oönskade ändringar i din säkerhetslösning och dess viktiga funktioner.
 
 ## <a name="show-user-details"></a>Visa användarinformation
 
@@ -219,4 +230,4 @@ När du har [konfigurerat indikatorerna för brott](/microsoft-365/compliance/in
 ## <a name="related-topics"></a>Relaterade ämnen
 
 - [Uppdatera inställningar för datalagring](data-retention-settings.md)
-- [Konfigurera aviseringsmeddelanden](configure-email-notifications.md)
+- [Konfigurera varningsaviseringar](configure-email-notifications.md)

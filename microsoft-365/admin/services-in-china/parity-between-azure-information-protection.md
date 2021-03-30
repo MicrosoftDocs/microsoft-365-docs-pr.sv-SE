@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: Läs mer om Azure Information Protection (AIP) för Office 365 som drivs av 21Vianet och hur du konfigurerar det för kunder i Kina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 77790249cbd544b2f11e9a16dd77bab297cac509
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bddba69ecc8b7b80d2b2c7c48d820ec22d293362
+ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914324"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51418038"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>Stöd för Azure Information Protection för Office 365 som drivs av 21Vianet
 
@@ -148,16 +148,24 @@ AIP-appar i Windows behöver följande registernyckel för att de ska kunna peka
 
 Installera den lokala AIP-skannern för att söka igenom nätverks- och innehållsresurser efter känsliga data och tillämpa klassificerings- och skyddsetiketter enligt organisationens policy.
 
-När du installerar skannern och hanterar dina innehållssökningsjobb ska du använda följande cmdlets i stället för Azure Portal-gränssnittet som används av kommersiella erbjudanden:<br><br>
+- När du skapar och konfigurerar Azure AD-program för kommandot [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) visas i fönstret Begär **API-behörigheter** de **API:er** som min organisation använder flik i stället för fliken Microsoft-API:er.  Välj de **API:er som min organisation använder** för att sedan välja Azure Rights Management **Services.**
 
-| Cmdlet | Beskrivning |
-|--|--|
-| [Add-AIPScannerRepository](/powershell/module/azureinformationprotection/add-aipscannerrepository) | Lägger till en ny lagringsplats i genomsökningsjobbet för innehåll. |
-| [Get-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/get-aipscannercontentscanjob) | Hämtar information om ditt innehållssökningsjobb. |
-| [Get-AIPScannerRepository](/powershell/module/azureinformationprotection/get-aipscannerrepository) | Hämtar information om lagringsplatsen som definierats för ditt genomsökningsjobb. |
-| [Remove-AIPScannerContentScan Job](/powershell/module/azureinformationprotection/remove-aipscannercontentscanjob) | Tar bort ditt genomsökningsjobb. |
-| [Remove-AIPScannerRepository](/powershell/module/azureinformationprotection/remove-aipscannerrepository) | Tar bort en lagringsplats från innehållssökningsjobbet. |
-| [Set-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob) | Definierar inställningar för innehållssökningsjobbet. |
-| [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | Definierar inställningar för en befintlig lagringsplats i genomsökningsjobbet för innehåll. |
+- När du installerar skannern och hanterar dina innehållssökningsjobb ska du använda följande cmdlets i stället för Azure Portal-gränssnittet som används av kommersiella erbjudanden:<br><br>
 
+    | Cmdlet | Beskrivning |
+    |--|--|
+    | [Add-AIPScannerRepository](/powershell/module/azureinformationprotection/add-aipscannerrepository) | Lägger till en ny lagringsplats i genomsökningsjobbet för innehåll. |
+    | [Get-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/get-aipscannercontentscanjob) | Hämtar information om ditt innehållssökningsjobb. |
+    | [Get-AIPScannerRepository](/powershell/module/azureinformationprotection/get-aipscannerrepository) | Hämtar information om lagringsplatsen som definierats för ditt genomsökningsjobb. |
+    | [Remove-AIPScannerContentScan Job](/powershell/module/azureinformationprotection/remove-aipscannercontentscanjob) | Tar bort ditt genomsökningsjobb. |
+    | [Remove-AIPScannerRepository](/powershell/module/azureinformationprotection/remove-aipscannerrepository) | Tar bort en lagringsplats från innehållssökningsjobbet. |
+    | [Set-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob) | Definierar inställningar för innehållssökningsjobbet. |
+    | [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | Definierar inställningar för en befintlig lagringsplats i genomsökningsjobbet för innehåll. |
+    | | |
+
+> [!TIP]
+> När [du installerar skannern](/azure/information-protection/deploy-aip-scanner-configure-install#install-the-scanner)använder du samma klusternamn i kommandot [Install-AIP Scannerner](/powershell/module/azureinformationprotection/install-aipscanner) för att koppla flera skannernoder till samma kluster. Med samma kluster för flera skannernoder kan flera skannrar arbeta tillsammans för att utföra genomsökningarna.
+> 
+> Använd [cmdleten Get-AIPScannerConfiguration](/powershell/module/azureinformationprotection/get-aipscannerconfiguration) för att returnera information om ditt kluster.
+> 
 Mer information finns i Vad [är en enhetlig skanner](/azure/information-protection/deploy-aip-scanner) för Azure Information Protection? och Hantera genomsökningsjobb med bara [PowerShell.](/azure/information-protection/deploy-aip-scanner-prereqs#use-powershell-with-a-disconnected-computer)

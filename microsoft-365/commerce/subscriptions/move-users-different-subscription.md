@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 description: Lär dig hur du flyttar användare mellan prenumerationer.
 ms.date: 07/01/2020
-ms.openlocfilehash: 7eb07bda4fd1a558a8126f11ef3a1fbc4ceb0389
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 31deb1b81e1f9605210b50036441f98dc3b6a811
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907886"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408309"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Flytta användare till en annan prenumeration
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
+> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som visas här kan du gå till Översikt över administrationscentret för [Microsoft 365.](../../business-video/admin-center-overview.md)
 
 ::: moniker-end
 
@@ -47,23 +47,31 @@ Du måste vara global-, licens- eller användaradministratör för att tilldela 
 ::: moniker range="o365-worldwide"
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
+
 2. Markera cirklarna bredvid namnen på de användare som du vill ersätta befintliga licenser för.
-3. Välj **Fler alternativ (...)** högst upp och välj sedan **Hantera produktlicenser**.
-4. I fönstret **Hantera produktlicenser** väljer du **Ersätt befintliga produktlicenstilldelningar** \> **Nästa**.
-5. Ställ reglaget i läget **På** för de licenser som du vill tilldela dessa användare.\
-    Du kan begränsa vilka tjänster som är tillgängliga för användarna. Ställ reglagen i läget **Av** för de tjänster som du inte vill att användarna ska ha. Alla tidigare tilldelade licenser för de markerade användarna tas bort.
-6. Längst ned i fönstret **Ersätt befintliga produkter** väljer du **Ersätt** \> **Stäng**.
+
+3. Högst upp väljer du **Hantera produktlicenser.**
+
+4. I fönstret **Hantera produktlicenser** väljer **du Ersätt**  och väljer de licenser som du vill tilldela användarna.
+
+5. Välj Spara ändringar stäng **längst** \> **ned.**
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
+
 2. Markera kryssrutorna bredvid namnen på de användare som du vill ersätta befintliga licenser för.
+
 3. I fönstret **Massåtgärder** väljer du **Redigera produktlicenser**.
+
 4. I fönstret **Tilldela produkter** väljer du **Ersätt befintliga produktlicenstilldelningar** \> **Nästa**.
-5. Ställ reglaget i läget **På** för de licenser som du vill tilldela dessa användare.\
+
+5. Ställ reglaget i läget **På** för de licenser som du vill tilldela till dessa användare.
+
     Du kan begränsa vilka tjänster som är tillgängliga för användarna. Ställ reglagen i läget **Av** för de tjänster som du inte vill att användarna ska ha. Alla tidigare tilldelade licenser för de markerade användarna tas bort.
+
 6. Längst ned i fönstret **Ersätt befintliga produkter** väljer du **Ersätt** \> **Stäng** \> **Stäng**.
 
 ::: moniker-end
@@ -71,11 +79,17 @@ Du måste vara global-, licens- eller användaradministratör för att tilldela 
 ::: moniker range="o365-21vianet"
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
+
 2. Markera kryssrutorna bredvid namnen på de användare som du vill ersätta befintliga licenser för.
+
 3. I fönstret **Massåtgärder** väljer du **Redigera produktlicenser**.
+
 4. I fönstret **Tilldela produkter** väljer du **Ersätt befintliga produktlicenstilldelningar** \> **Nästa**.
-5. Ställ reglaget i läget **På** för de licenser som du vill tilldela dessa användare.\
+
+5. Ställ reglaget i läget **På** för de licenser som du vill tilldela till dessa användare.
+
     Du kan begränsa vilka tjänster som är tillgängliga för användarna. Ställ reglagen i läget **Av** för de tjänster som du inte vill att användarna ska ha. Alla tidigare tilldelade licenser för de markerade användarna tas bort.
+
 6. Längst ned i fönstret **Ersätt befintliga produkter** väljer du **Ersätt** \> **Stäng** \> **Stäng**.
 
 ::: moniker-end
@@ -91,3 +105,4 @@ Om du inte tänker [](../../managed-desktop/get-started/assign-licenses.md)omtil
 [Ändra abonnemang manuellt](change-plans-manually.md) (artikel)\
 [Förstå prenumerationer och licenser i Microsoft 365 för företag](../licenses/subscriptions-and-licenses.md) (artikel)\
 [Köpa en annan Microsoft 365 för företag-prenumeration](../try-or-buy-microsoft-365.md) (artikel)
+

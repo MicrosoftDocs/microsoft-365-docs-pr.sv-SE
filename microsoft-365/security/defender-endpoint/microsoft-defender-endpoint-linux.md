@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 84d85b723d4dcbdfc07a074c40241242c57bc390
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 08bb4c73cb9df429c4b07194f1c7615f44d745d8
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185593"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408343"
 ---
 # <a name="microsoft-defender-for-endpoint-for-linux"></a>Microsoft Defender för Endpoint för Linux
 
@@ -43,7 +43,7 @@ I det här avsnittet beskrivs hur du installerar, konfigurerar, uppdaterar och a
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-for-linux"></a>Så här installerar du Microsoft Defender för Endpoint för Linux
 
-### <a name="prerequisites"></a>Krav
+### <a name="prerequisites"></a>Förutsättningar
 
 - Åtkomst till Microsoft Defender Säkerhetscenter-portalen
 - Linux-distribution med [systemd](https://systemd.io/) system manager
@@ -83,6 +83,11 @@ Om du får problem med installationen kan du gå till [Felsöka installationspro
   > Det går inte att köra Defender för Slutpunkt för Linux sida vid sida med `fanotify` andra -baserade säkerhetslösningar. Det kan leda till oväntade resultat, till exempel att operativsystemet hänger sig.
 
 - Diskutrymme: 1 GB
+- /opt/microsoft/mdatp/sbin/wdavdaemon kräver körbar behörighet. Mer information finns i "Se till att daemon har körbar behörighet" i Felsöka [installationsproblem för Microsoft Defender ATP för Linux.](/microsoft-365/security/defender-endpoint/linux-support-install)
+- Minne: 1 GB
+    > [!NOTE]
+    > Kontrollera att du har ledigt diskutrymme i /varians.
+
 - Lösningen tillhandahåller för närvarande realtidsskydd för följande filsystemtyper:
 
   - `btrfs`

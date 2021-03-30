@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fc9e5fb29518207c5360d5fbe29b8b4848d350e2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 18e43d8e38c24a8aa28c6455dc1a769b8da0df2b
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51075545"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408629"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -34,7 +34,9 @@ ms.locfileid: "51075545"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Tabellen i det avancerade sökschemat innehåller inventeringen av & Sårbarhetshantering för programvara som är installerad på enheter i nätverket, inklusive information om slutet `DeviceTvmSoftwareInventory` på supporten. [](next-gen-threat-and-vuln-mgt.md) Du kan till exempel leta efter händelser som innefattar enheter som installeras med en för närvarande sårbar programvaruversion. Använd den här referensen för att skapa frågor som returnerar information från tabellen.
+Tabellen i det avancerade schemat för sökning innehåller lager för hantering av hot och sårbarhet för programvara som för närvarande är installerad på enheter i nätverket, inklusive information om slutet `DeviceTvmSoftwareInventory` på supporten. [](next-gen-threat-and-vuln-mgt.md) Du kan till exempel leta efter händelser som innefattar enheter som installeras med en för närvarande sårbar programvaruversion. Använd den här referensen för att skapa frågor som returnerar information från tabellen.
+
+DeviceTVMSoftwareInventory innehåller alla program som hot och sårbarhetshantering kunde matcha mot en gemensam plattformsuppräkning (CPE) – oavsett om den är sårbar eller inte.
 
 >[!NOTE]
 >Tabellerna `DeviceTvmSoftwareInventory` och de har ersatt `DeviceTvmSoftwareVulnerabilities` `DeviceTvmSoftwareInventoryVulnerabilities` tabellen. Tillsammans innehåller de två första tabellerna fler kolumner som du kan använda för att informera om sårbarhetshanteringsaktiviteter.
@@ -43,18 +45,16 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
-| `DeviceId` | sträng | Unikt ID för enheten i tjänsten |
-| `DeviceName` | sträng | Fullständigt kvalificerat domännamn (FQDN) för enheten |
+| `DeviceId` | sträng | Unikt ID för enheten i tjänsten. |
+| `DeviceName` | sträng | Fullständigt kvalificerat domännamn (FQDN) för enheten. |
 | `OSPlatform` | sträng | Operativsystemets plattform som körs på enheten. Detta indikerar specifika operativsystem, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7. |
-| `OSVersion` | sträng | Version av operativsystemet som körs på enheten |
-| `OSArchitecture` | sträng | Arkitekturen för operativsystemet som körs på enheten |
-| `SoftwareVendor` | sträng | Namnet på programvaruleverantören |
-| `SoftwareName` | sträng | Namnet på programvaruprodukten |
-| `SoftwareVersion` | sträng | Versionsnummer för programvaran |
-| `EndOfSupportStatus` | sträng | Visar livscykelfasen för programvaruprodukten i förhållande till dess angivna datum för support (EOS) eller slutet av livscykeln (EOL) |
-| `EndOfSupportDate` | sträng | Supportdatum (EOS) eller slutet på livscykeln (EOL) för programvaran |
-
-
+| `OSVersion` | sträng | Version av operativsystemet som körs på enheten. |
+| `OSArchitecture` | sträng | Arkitekturen för operativsystemet som körs på enheten. |
+| `SoftwareVendor` | sträng | Namnet på programvaruleverantören. |
+| `SoftwareName` | sträng | Namnet på programvaruprodukten. |
+| `SoftwareVersion` | sträng | Versionsnummer för programvaran. |
+| `EndOfSupportStatus` | sträng | Visar livscykelfasen för programvaruprodukten i förhållande till dess angivna datum för support (EOS) eller slutet av livscykeln (EOL). |
+| `EndOfSupportDate` | sträng | Supporten (EOS) eller slutet på livscykeln (EOL) för programvaran. |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
@@ -62,4 +62,3 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Förstå schemat](advanced-hunting-schema-reference.md)
 - [Översikt över hot & sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)
-

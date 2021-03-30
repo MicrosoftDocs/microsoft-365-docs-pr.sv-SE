@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Så här implementerar du VPN-delade tunnlar för Office 365
-ms.openlocfilehash: 93adc70882e0c8ce9752cb471b13c301a4a59bd4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d676c4bdcb4c3938391b044f4cb2534991278af8
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051288"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408585"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementera VPN-delade tunnlar för Office 365
 
@@ -31,27 +31,27 @@ ms.locfileid: "51051288"
 >- En översikt över hur du använder VPN-delade tunnlar för att optimera Office 365-anslutningar för fjärranslutna användare finns i Översikt: VPN-delade tunnlar för [Office 365.](microsoft-365-vpn-split-tunnel.md)
 >- Information om hur du optimerar prestanda i globala klientorganisationen för Office 365 för användare i Kina finns i [Prestandaoptimering i Office 365 för användare i Kina.](microsoft-365-networking-china.md)
 
-Under många år har företag använt VPN för att stödja distansupplevelser för sina användare. Även om det fortfarande finns grundläggande arbetsbelastningar lokalt var en VPN från den fjärranslutna klienten via ett datacenter i företagsnätverket den primära metoden för fjärranslutna användare att få åtkomst till företagets resurser. För att skydda dessa anslutningar bygger företag lager av nätverkssäkerhetslösningar längs VPN-sökvägarna. Detta gjordes för att skydda den interna infrastrukturen samt för att skydda mobil surfning av externa webbplatser genom att omdirigera trafik till VPN och sedan ut genom den lokala Internet perimeter. VPN, nätverkskretsar och tillhörande säkerhetsinfrastruktur har ofta skapats och skalats för en definierad trafikvolym, vanligtvis med majoriteten av anslutningarna initierade från företagsnätverket och de flesta av dem stannar inom de interna nätverksgränserna.
+Under många år har företag använt VPN för att stödja distansupplevelser för sina användare. Även om det fortfarande finns grundläggande arbetsbelastningar lokalt var en VPN från den fjärranslutna klienten via ett datacenter i företagsnätverket den primära metoden för fjärranslutna användare att få åtkomst till företagets resurser. För att skydda dessa anslutningar bygger företag lager av nätverkssäkerhetslösningar längs VPN-sökvägarna. Den här säkerheten har skapats för att skydda den interna infrastrukturen och skydda mobilsurfning av externa webbplatser genom att omdirigera trafik till VPN och sedan ut genom den lokala Internet perimeter. VPN, nätverks perimeter och tillhörande säkerhetsinfrastruktur var ofta purpose-built and scaled för en definierad trafikvolym, vanligtvis med de flesta anslutningar initieras inifrån företagsnätverket och de flesta av dem stannar inom de interna nätverksgränserna.
 
 Under ganska lång tid har VPN-modeller där alla anslutningar från fjärranvändarenheten åter dirigerats tillbaka till det lokala nätverket (kallas tvingade **tunnlar**) varit till stor del mindre, så länge den samtidiga skalan för fjärranvändare var liten och trafikvolym genom VPN var låg.  Vissa kunder fortsätter att använda VPN-tvingad tunneling som statuskvot även efter att deras program flyttats från företagets perimeter till offentliga SaaS-moln, vilket Office 365 är ett utmärkt exempel.
 
-Användningen av tvingade VPN för att ansluta till distribuerade och prestandaberoende molnprogram är extremt suboptimerad, men den negativa effekten av detta kan ha accepterats av vissa företag för att bibehålla statuskvot ur säkerhetsperspektiv. Ett exempeldiagram över det här scenariot visas nedan:
+Användningen av tvingade VPN för att ansluta till distribuerade och prestandakänsliga molnprogram är suboptimal, men den negativa effekten av detta kan ha accepterats av vissa företag för att upprätthålla statuskvot ur säkerhetsperspektiv. Ett exempeldiagram över det här scenariot visas nedan:
 
 ![VPN-konfiguration för delade tunnlar](../media/vpn-split-tunneling/enterprise-network-traditional.png)
 
-Det här problemet har ökat i flera år, och många kunder har rapporterat en betydande förändring av nätverkstrafikmönster. Trafik som brukade hålla sig lokal ansluter nu till externa molnslutpunkter. Flera Microsoft-kunder rapporterar att cirka 80 % av deras nätverkstrafik tidigare var till en intern källa (som representeras av den prickade linjen i diagrammet ovan). År 2020 är antalet nu omkring 20 % eller lägre eftersom de har skiftat stora arbetsbelastningar till molnet, de här trenderna är inte ovanligt med andra företag. Med tiden blir ovanstående modell krånglig och oanvändbar allt eftersom molnet fortskrider, och organisationen hindras från att vara agile när de flyttar till en första värld av molnet.
+Det här problemet har ökat i många år och många kunder rapporterar en betydande förändring av nätverkstrafikmönster. Trafik som brukade hålla sig lokal ansluter nu till externa molnslutpunkter. Flera Microsoft-kunder rapporterar att cirka 80 % av deras nätverkstrafik tidigare var till en intern källa (som representeras av den prickade linjen i diagrammet ovan). År 2020 är antalet nu omkring 20 % eller lägre eftersom de har skiftat stora arbetsbelastningar till molnet, de här trenderna är inte ovanligt med andra företag. Med tiden blir ovanstående modell krånglig och oanvändbar allt eftersom molnet fortskrider, och organisationen hindras från att vara agile när de flyttar till en första värld av molnet.
 
 Den globala COVID-19-krislösningen har eskalerat problemet så att det omedelbart måste åtgärdas. Behovet av att säkerställa att personalens säkerhet har genererat krav på företags-IT för att stödja arbete hemifrån i en enorm skala. Microsoft Office 365 har en bra position för att hjälpa kunder att uppfylla detta behov, men hög samtidighet för användare som arbetar hemifrån genererar en stor volym Office 365-trafik som, om de dirigeras genom tvingad VPN-tunnel och lokala nätverkskretsar, leder till en snabb mättnad och kör VPN-infrastrukturen ur kapaciteten. I den här nya verkligheten är det inte längre bara ett hinder för prestanda att använda VPN för att komma åt Office 365, utan en hård vägg som inte bara påverkar Office 365 utan kritiska affärsåtgärder som fortfarande måste förlita sig på VPN för drift.
 
-Microsoft har i många år arbetat tillsammans med kunder och den bredare branschen för att tillhandahålla effektiva och moderna lösningar på problemen från våra egna tjänster och för att följa branschens bästa praxis. [Anslutningsprinciper](./microsoft-365-network-connectivity-principles.md) för Office 365-tjänsten har utformats för att fungera effektivt för fjärranvändare medan de fortfarande tillåter att en organisation upprätthåller säkerhet och kontroll över anslutningarna. De här lösningarna kan också implementeras mycket snabbt med begränsat arbete men få betydande positiv inverkan på problemen som beskrivs ovan.
+Microsoft har i många år arbetat tillsammans med kunder och den bredare branschen för att tillhandahålla effektiva och moderna lösningar på problemen från våra egna tjänster och för att följa branschens bästa praxis. [Anslutningsprinciper](./microsoft-365-network-connectivity-principles.md) för Office 365-tjänsten har utformats för att fungera effektivt för fjärranvändare medan de fortfarande tillåter att en organisation upprätthåller säkerhet och kontroll över anslutningarna. De här lösningarna kan också snabbt implementeras med begränsat arbete men få betydande positiv inverkan på problemen som beskrivs ovan.
 
-Microsofts rekommenderade strategi för att optimera distansarbetares anslutning fokuserar på att snabbt minska problemen med den traditionella metoden och även ge hög prestanda med några få enkla steg. Dessa steg justerar den äldre VPN-metoden för ett litet antal definierade slutpunkter som kringgår flaskhalsar i VPN-servrar. En motsvarande eller till och med överordnad säkerhetsmodell kan användas på olika lager för att ta bort behovet av att skydda all trafik på företagets nätverk som utgående. I de flesta fall kan detta uppnås effektivt inom några timmar och sedan kan skalbara till andra arbetsbelastningar eftersom behov och tidskrav tillåter det.
+Microsofts rekommenderade strategi för att optimera distansarbetares anslutning fokuserar på att snabbt minska problemen med den traditionella metoden och även ge hög prestanda med några få enkla steg. Dessa steg ändrar den äldre VPN-metoden för några definierade slutpunkter som kringgår flaskhalsar för VPN-servrar. En motsvarande eller till och med överordnad säkerhetsmodell kan användas på olika lager för att ta bort behovet av att skydda all trafik på företagets nätverk som utgående. I de flesta fall kan detta uppnås effektivt inom några timmar och sedan kan skalbara till andra arbetsbelastningar eftersom behov och tidskrav tillåter det.
 
 ## <a name="common-vpn-scenarios"></a>Vanliga VPN-scenarier
 
 I listan nedan ser du de vanligaste VPN-scenarierna som visas i företagsmiljöer. De flesta kunder använder standard 1 (VPN-tvingade tunnel). Det här avsnittet hjälper dig att snabbt och säkert gå över till modell **2**, som kan nås med relativt lite ansträngning, och har stora fördelar för nätverksprestanda och användarupplevelse.
 
-| **Modell** | **Beskrivning** |
+| Modell | Beskrivning |
 | --- | --- |
 | [1. VPN-tvingade tunnel](#1-vpn-forced-tunnel) | 100 % av trafiken går in i VPN-tunnel, inklusive lokal, Internet och all O365/M365 |
 | [2. VPN-tvingade tunnel med få undantag](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) | VPN-tunnel används som standard (standard routepunkter till VPN), med få, viktigast undantagna scenarier som tillåts gå direkt |
@@ -61,13 +61,13 @@ I listan nedan ser du de vanligaste VPN-scenarierna som visas i företagsmiljöe
 
 ### <a name="1-vpn-forced-tunnel"></a>1. VPN-tvingade tunnel
 
-Det här är det vanligaste startscenariot för de flesta företagskunder. En tvingade VPN används, vilket innebär att 100 % av trafiken dirigeras till företagsnätverket oavsett det faktum att slutpunkten finns inom företagsnätverket eller inte. All extern (Internet)bunden trafik, till exempel Office 365 eller Internetsurfning, plockas sedan bort från den lokala säkerhetsutrustningen, till exempel proxy. Under den aktuella situationen där nästan 100 % av användarna arbetar på distans lägger den här modellen därför extremt hög belastning på VPN-infrastrukturen och riskerar att avsevärt hindra prestanda för all företagstrafik och därmed kan företaget agera effektivt vid en krissituation.
+Det här är det vanligaste startscenariot för de flesta företagskunder. En tvingade VPN används, vilket innebär att 100 % av trafiken dirigeras till företagsnätverket oavsett det faktum att slutpunkten finns inom företagsnätverket eller inte. All extern (Internet)bunden trafik, till exempel Office 365 eller Internetsurfning, fästs sedan tillbaka från den lokala säkerhetsutrustningen, till exempel proxy. Under den aktuella situationen där nästan 100 % av användarna arbetar på distans lägger den här modellen därför stor belastning på VPN-infrastrukturen och riskerar att avsevärt hindra prestanda för all företagstrafik och därmed kan företaget agera effektivt vid en krissituation.
 
 ![VPN-tvingade tunnelmodell 1](../media/vpn-split-tunneling/vpn-model-1.png)
 
 ### <a name="2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions"></a>2. VPN-tvingade tunnlar med ett litet antal betrodda undantag
 
-Den här modellen är avsevärt mer effektiv om ett företag använder den, eftersom den tillåter ett litet antal kontrollerade och definierade slutpunkter som är mycket hög belastning och svarstider som är känsliga för att kringgå VPN-tunneln och gå direkt till Office 365-tjänsten i det här exemplet. Detta förbättrar avsevärt prestandan för offloaded-tjänsterna och minskar också belastningen på VPN-infrastrukturen, vilket gör att element som fortfarande kräver att det fungerar med lägre innehåll för resurser minskar. Det är den här modellen som den här artikeln koncentrerar sig på att hjälpa till med övergången till, eftersom det möjliggör att enkla, definierade åtgärder vidtas mycket snabbt med många positiva resultat.
+Den här modellen är avsevärt mer effektiv om ett företag använder den, eftersom den tillåter några kontrollerade och definierade slutpunkter som är mycket hög belastning och svarstider som är känsliga för att kringgå VPN-tunneln och gå direkt till Office 365-tjänsten i det här exemplet. Detta förbättrar avsevärt prestandan för offloaded-tjänsterna och minskar också belastningen på VPN-infrastrukturen, vilket gör att element som fortfarande kräver att det fungerar med lägre innehåll för resurser minskar. Det är den här modellen som den här artikeln koncentrerar sig på att hjälpa till med övergången till, eftersom det möjliggör att enkla, definierade åtgärder snabbt vidtas med många positiva resultat.
 
 ![Split Tunnel VPN modell 2](../media/vpn-split-tunneling/vpn-model-2.png)
 
@@ -91,7 +91,7 @@ En mer avancerad version av modell nummer två där alla interna tjänster publi
 
 ## <a name="implement-vpn-split-tunneling"></a>Implementera VPN-delade tunnlar
 
-I det här avsnittet hittar du de enkla steg som krävs för att migrera din VPN-klientarkitektur från en _VPN-tvingade tunnel_ till en _VPN-tvingade tunnel_ med ett litet antal betrodda undantag – VPN-modell för delade [tunnlar #2](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) i avsnittet om vanliga [VPN-scenarier.](#common-vpn-scenarios)
+I det här avsnittet hittar du de enkla steg som krävs för att migrera din VPN-klientarkitektur från en _VPN-tvingade tunnel_ till en _VPN-tvingade tunnel_ med ett litet antal betrodda undantag – VPN-modell för delade tunnlar [#2 i](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) vanliga [VPN-scenarier.](#common-vpn-scenarios)
 
 Diagrammet nedan illustrerar hur den rekommenderade VPN-delade tunnellösningen fungerar:
 
@@ -99,7 +99,7 @@ Diagrammet nedan illustrerar hur den rekommenderade VPN-delade tunnellösningen 
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. Identifiera slutpunkterna som ska optimeras
 
-I avsnittet url-adresser och IP-adressintervall för [Office 365](urls-and-ip-address-ranges.md) identifierar Microsoft tydligt de viktiga slutpunkter som du behöver för att optimera och kategoriserar dem som **Optimera.** Det finns för närvarande bara fyra URL:er och tjugo IP-undernät som måste optimeras. Denna lilla grupp med slutpunkter står för cirka 70 –80 % av trafiken till Office 365-tjänsten, inklusive latenskänsliga slutpunkter, till exempel de för Teams-media. I princip är det den trafik som vi behöver ta extra hand om, och det är också trafiken som kommer att få otroligt tryck på traditionella nätverksvägar och VPN-infrastrukturen.
+I avsnittet url-adresser och IP-adressintervall för [Office 365](urls-and-ip-address-ranges.md) identifierar Microsoft tydligt de viktiga slutpunkter som du behöver för att optimera och kategoriserar dem som **Optimera.** Det finns för närvarande bara fyra URL:er och 20 IP-undernät som måste optimeras. Denna lilla grupp med slutpunkter står för cirka 70 –80 % av trafiken till Office 365-tjänsten, inklusive latenskänsliga slutpunkter, till exempel de för Teams-media. I princip är det den trafik som vi behöver ta extra hand om, och det är också trafiken som kommer att få otroligt tryck på traditionella nätverksvägar och VPN-infrastrukturen.
 
 URL:er i den här kategorin har följande egenskaper:
 
@@ -128,7 +128,7 @@ I exemplen ovan bör **klientorganisationen** ersättas med ditt klientnamn för
 
 #### <a name="optimize-ip-address-ranges"></a>Optimera IP-adressintervall
 
-När du skriver de IP-intervall som dessa slutpunkter motsvarar är följande. Vi  rekommenderar starkt att [](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category) du använder ett skript som det här exemplet, [Office 365-IP-](microsoft-365-ip-web-service.md) och URL-webbtjänsten eller [URL/IP-sidan](urls-and-ip-address-ranges.md) för att söka efter uppdateringar när du använder konfigurationen, och att tillämpa en princip regelbundet.
+När du skriver de IP-intervall som dessa slutpunkter motsvarar är följande. Vi  rekommenderar starkt att [](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category) du använder ett skript som det här exemplet, [Office 365-IP-](microsoft-365-ip-web-service.md) och URL-webbtjänsten eller [URL/IP-sidan](urls-and-ip-address-ranges.md) för att söka efter uppdateringar när du använder konfigurationen, och att ange en princip för att göra det regelbundet.
 
 ```
 104.146.128.0/17
@@ -209,7 +209,7 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 ```
 -->
 
-VPN-klienten ska konfigureras så att  trafiken till optimerings-IP:erna dirigeras på det här sättet. Det gör att trafiken kan använda lokala Microsoft-resurser, till exempel Office 365-tjänste fram dörrar som [Azure Front Door](https://azure.microsoft.com/blog/azure-front-door-service-is-now-generally-available/) som levererar Office 365-tjänster och anslutningsslutpunkter så nära dina användare som möjligt. Det gör att vi kan leverera extremt höga prestandanivåer till användare oavsett var de befinner sig i världen och utnyttja [Microsofts](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)globala nätverk , vilket troligen ligger inom ett litet antal millisekunder av användarnas direkta utgång.
+VPN-klienten ska konfigureras så att  trafiken till optimerings-IP:erna dirigeras på det här sättet. Det gör att trafiken kan använda lokala Microsoft-resurser, till exempel Office 365-tjänste fram dörrar som [Azure Front Door](https://azure.microsoft.com/blog/azure-front-door-service-is-now-generally-available/) som levererar Office 365-tjänster och anslutningsslutpunkter så nära dina användare som möjligt. Det gör att vi kan leverera höga prestandanivåer till användare oavsett var de befinner sig i världen och utnyttja [Microsofts](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)globala nätverk i världsklass , som troligen ligger inom några millisekunder från användarnas direkta utgång.
 
 ## <a name="configuring-and-securing-teams-media-traffic"></a>Konfigurera och skydda Teams mediatrafik
 
@@ -238,7 +238,7 @@ Mediatrafiken krypteras med SRTP, som använder en sessionsnyckel som genereras 
 
 Skype för företag – Online genererar användarnamn och lösenord för säker åtkomst till medierelä över _Traversal Med reläer runt NAT (TURN)_. Media vidarebefordrar användarnamnet/lösenordet via en TLS-skyddad SIP-kanal. Det är värt att notera att även om en VPN-tunnel kan användas för att ansluta klienten till företagsnätverket måste trafiken fortfarande flöda i SRTP-formuläret när den lämnar företagsnätverket för att nå tjänsten.
 
-Information om hur Teams minimerar vanliga säkerhetsproblem, t.ex. röst- eller session _traversal-verktyg för NAT (STUN)_ -amplification-attacker, finns i [den här artikeln.](/openspecs/office_protocols/ms-ice2/69525351-8c68-4864-b8a6-04bfbc87785c)
+Information om hur Teams minimerar vanliga säkerhetsproblem, t.ex. röst- eller sessionstrundningar för _NAT (STUN)_ -amplificationattacker, finns i [5.1](/openspecs/office_protocols/ms-ice2/69525351-8c68-4864-b8a6-04bfbc87785c)Säkerhetsöverväganden för implementerare.
 
 Du kan också läsa om moderna säkerhetskontroller i scenarier med distansarbete under Alternativa sätt för säkerhetsexperter och IT-personal för att uppnå moderna säkerhetskontroller i dagens unika fjärrarbetesscenarier [(Microsoft Security Team-bloggen).](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
@@ -304,15 +304,15 @@ Sedan kan vi utlösa principer som att godkänna, utlösa MFA eller blockera aut
 
 ### <a name="how-do-i-protect-against-viruses-and-malware"></a>Hur skyddar jag mot virus och skadlig programvara?
 
-Office 365 skyddar som återigen de optimerade slutpunkterna i olika lager i själva tjänsten, [som beskrivs i det här dokumentet.](/office365/Enterprise/office-365-malware-and-ransomware-protection) Som vi har nämnt är det mycket mer effektivt att tillhandahålla dessa säkerhetselement i själva tjänsten i stället för att försöka göra det i nivå med enheter som inte helt förstår protokollen/trafiken. Som standard söker SharePoint Online [automatiskt igenom filuppladdningar efter](../security/defender-365-security/virus-detection-in-spo.md) känd skadlig programvara
+Office 365 skyddar som återigen de optimerade slutpunkterna i olika lager i själva tjänsten, [som beskrivs i det här dokumentet.](/office365/Enterprise/office-365-malware-and-ransomware-protection) Som nämnts är det mycket mer effektivt att tillhandahålla dessa säkerhetselement i själva tjänsten i stället för att försöka göra det i nivå med enheter som kanske inte förstår protokollen/trafiken fullt ut. Som standard söker SharePoint Online [automatiskt igenom filuppladdningar efter](../security/office-365-security/virus-detection-in-spo.md) känd skadlig programvara
 
 För Exchange-slutpunkterna som anges ovan [gör Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) och Microsoft Defender för Office [365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) ett utmärkt sätt att tillhandahålla säkerheten för trafiken till tjänsten.
 
 ### <a name="can-i-send-more-than-just-the-optimize-traffic-direct"></a>Kan jag skicka mer än bara optimera trafik direkt?
 
-Prioritet bör ges till optimera **markerade** slutpunkter eftersom dessa ger största möjliga fördelar för en låg arbetsnivå. Men om du vill måste tillåta markerade slutpunkter för att tjänsten ska fungera och se till att IP-adresser tillhandahålls för slutpunkterna som kan användas om det behövs.
+Prioritet bör ges till optimera **markerade** slutpunkter eftersom dessa ger största möjliga fördelar för en låg arbetsnivå. Om du vill måste dock tillåt markerade slutpunkter för att tjänsten ska fungera och ha IP-adresser angivna för slutpunkterna som kan användas om det behövs.
 
-Det finns även olika leverantörer som erbjuder molnbaserade proxy/säkerhetslösningar som kallas säkra webbgateway som tillhandahåller central säkerhet, kontroll- och företagspolicyprogram för allmän webbsurfning. De här lösningarna kan fungera bra i en molnbaserad första värld, om de är tillgängliga i hög grad, utför och etableras nära dina användare genom att tillåta att säker Internetanslutning levereras från en molnbaserad plats nära användaren. Det här tar bort behovet av hårnålsnätverk via VPN/företagsnätverket för allmän webbtrafik, samtidigt som central säkerhetskontroll fortfarande tillåts.
+Det finns även olika leverantörer som erbjuder molnbaserade  proxy/säkerhetslösningar som kallas säkra webbgateway som tillhandahåller central säkerhet, kontroll och företagspolicyprogram för allmän webbsurfning. De här lösningarna kan fungera bra i en molnbaserad första värld, om de är tillgängliga i hög grad, utför och etableras nära dina användare genom att tillåta att säker Internetanslutning levereras från en molnbaserad plats nära användaren. Det här tar bort behovet av hårnålsnätverk via VPN/företagsnätverket för allmän webbtrafik, samtidigt som central säkerhetskontroll fortfarande tillåts.
 
 Även med de här lösningarna rekommenderar Microsoft dock starkt att optimera markerad Office 365-trafik skickas direkt till tjänsten.
 
@@ -320,7 +320,7 @@ Råd om hur du tillåter direkt åtkomst till ett virtuellt Azure-nätverk finns
 
 ### <a name="why-is-port-80-required-is-traffic-sent-in-the-clear"></a>Varför krävs port 80? Skickas trafiken i tydlig trafik?
 
-Port 80 används endast för sådant som omdirigering till en port 443-session, inga kunddata skickas eller är tillgänglig via port 80. [I den](../compliance/encryption.md) här artikeln beskrivs kryptering för data som överförs [](/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic) och vilan för Office 365, och i den här artikeln beskrivs hur vi använder SRTP för att skydda Teams mediatrafik.
+Port 80 används endast för sådant som omdirigering till en port 443-session, inga kunddata skickas eller är tillgänglig via port 80. [Kryptering](../compliance/encryption.md) ger en översikt över kryptering av data som överförs [](/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic) och i vila för Office 365, och Typer av trafik beskriver hur vi använder SRTP för att skydda Teams mediatrafik.
 
 ### <a name="does-this-advice-apply-to-users-in-china-using-a-worldwide-instance-of-office-365"></a>Gäller detta för användare i Kina som använder en global instans av Office 365?
 
@@ -328,7 +328,7 @@ Port 80 används endast för sådant som omdirigering till en port 443-session, 
 
 ### <a name="does-split-tunnel-configuration-work-for-teams-running-in-a-browser"></a>Fungerar konfiguration av delade tunnlar för Teams som körs i en webbläsare?
 
-**Nej,** det har den inte. Det fungerar endast på Microsoft Teams klientversion 1.3.00.13565 eller senare. Den här versionen innehåller förbättringar i hur klienten identifierar tillgängliga nätverkssökvägar.
+Ja, det gör det, via webbläsare som stöds, som visas [i Hämta klienter för Microsoft Teams.](https://docs.microsoft.com/microsoftteams/get-clients#web-client)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
