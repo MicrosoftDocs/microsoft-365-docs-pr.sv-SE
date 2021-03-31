@@ -1,6 +1,6 @@
 ---
-title: Regioner och språk som stöds
-description: Regioner och språk som stöds av Microsoft Managed Desktop
+title: Regioner som stöds
+description: Regioner som stöds av Microsoft Managed Desktop
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -12,25 +12,22 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 5fbf18247626bdfcfe5dcb04c8ba892ffa7a140f
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 99f44398bc95958ca890ddcd4203b50ff95034b4
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163477"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445316"
 ---
-# <a name="microsoft-managed-desktop-supported-regions-and-languages"></a>Regioner och språk som stöds för Microsoft Managed Desktop
+# <a name="microsoft-managed-desktop-supported-regions"></a>Regioner som stöds för Microsoft Managed Desktop
 
-Den här artikeln innehåller information om regioner och språk som stöds av Microsoft Hanterat skrivbord och de regioner där du kan använda den.
+Den här artikeln innehåller information om regioner där du kan använda Microsoft Hanterat skrivbord och där det stöds. Mer information om språk som stöds av Microsoft Managed Desktop för användarupplevelsen finns i [Lokalisera enheter för användare.](../get-started/localization.md)
 
-## <a name="supported-languages"></a>Språk som stöds
+Du kan fortfarande använda hanterade enheter utanför dessa regioner utan avbrott till tjänsten Microsoft Managed Desktop. En anställd i Storbritannien kan till exempel arbeta säkert och ta emot uppdateringar på sin hanterade enhet medan de reser Asien, Europa eller Sydamerika.
 
-Engelska är det enda språk som är tillgängligt för användare av Microsoft Managed Desktop. Den här principen omfattar alla användargränssnitt för både användare och administratörer och all interaktion med både [administratörssupport](../working-with-managed-desktop/admin-support.md) och [användarsupport.](../working-with-managed-desktop/end-user-support.md)
+Mer information om de språk som stöds av Microsoft Managed Desktop för användar- och administratörsupplevelser finns [i Lokalisera användarupplevelsen.](../get-started/localization.md)
 
-
-Du kan fortfarande använda hanterade enheter utanför engelskspråkiga regioner utan avbrott till tjänsten Microsoft Managed Desktop. En anställd i Storbritannien kan till exempel arbeta säkert och ta emot uppdateringar på sin hanterade enhet när de reser i Asien, Europa eller Sydamerika. 
-
-Mer information om användarsupport med Microsoft Hanterat skrivbord finns i [Support för Microsoft Managed Desktop.](./support.md)
+Mer information om användarsupport med Microsoft Hanterat skrivbord finns i [Support för Microsoft Managed Desktop.](support.md)
 
 ## <a name="availability-of-the-service"></a>Tjänstens tillgänglighet
 
@@ -51,4 +48,3 @@ Organisationer i följande länder kan prenumerera på Microsoft Managed Desktop
 - Australien
 - Nya Zeeland
 
-Både användare och administratörer i dessa regioner måste använda engelska för sina enheter och hanteringsverktyg.

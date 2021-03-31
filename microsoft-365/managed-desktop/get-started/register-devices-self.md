@@ -1,18 +1,23 @@
 ---
 title: Registrera nya enheter själv
 description: Registrera enheter själv så att de kan hanteras av Microsoft Managed Desktop
-ms.prod: w10
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+ms.service: m365-md
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: medium
-ms.openlocfilehash: 8dc9412de7b682c34a48ae64b676e4b0313dea35
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
+manager: laurawi
+ms.topic: article
+audience: Admin
+ms.openlocfilehash: 3aff3bdc1260e9aa2a23760020aeabd71d6b28fd
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920686"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445584"
 ---
 # <a name="register-new-devices-yourself"></a>Registrera nya enheter själv
 

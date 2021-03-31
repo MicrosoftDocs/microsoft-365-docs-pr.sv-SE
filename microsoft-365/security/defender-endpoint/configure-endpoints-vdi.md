@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 167db9b5da841528e95f167b3af6a840b6c71eb4
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: bf1e706562db06064409cb7cf11441d048ef8db6
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165567"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445292"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Registrera icke beständiga enheter för virtual desktop infrastructure (VDI)
 
@@ -48,8 +48,11 @@ Det kan finnas associerade utmaningar vid registrering av VDE:er. Följande är 
 
 VDI-enheter kan visas i Defender för Endpoint-portalen som antingen:
 
-- Enskild post för varje enhet.  
-Observera att i det här fallet *måste samma* enhetsnamn konfigureras när sessionen skapas, till exempel med en obevakad svarsfil.
+- Enskild post för varje enhet.
+
+  > [!NOTE]
+  > I det här fallet måste *samma* enhetsnamn konfigureras när sessionen skapas, till exempel med en obevakad svarsfil.
+
 - Flera poster för varje enhet – en för varje session.
 
 Följande steg vägleder dig genom introduktionen av VDI-enheter och visar steg för enskilda och flera poster.
@@ -84,14 +87,15 @@ Följande steg vägleder dig genom introduktionen av VDI-enheter och visar steg 
    > [!NOTE]
    > Domain Group Policy kan också användas för registrering av icke-beständiga VDI-enheter.
 
-4. Beroende på vilken metod du vill implementera följer du lämpliga steg: <br>
-   **För enskild inmatning för varje enhet:**<br>
+4. Beroende på vilken metod du vill implementera följer du lämpliga steg:
+
+   - För enskild inmatning för varje enhet:
    
-   Välj fliken **PowerShell-skript och** klicka sedan på Lägg till **(Utforskaren** öppnas direkt i sökvägen där du kopierade onboarding-skriptet tidigare). Navigera till onboarding PowerShell-skript `Onboard-NonPersistentMachine.ps1` .
+     Välj fliken **PowerShell-skript och** klicka sedan på Lägg till **(Utforskaren** öppnas direkt i sökvägen där du kopierade onboarding-skriptet tidigare). Navigera till onboarding PowerShell-skript `Onboard-NonPersistentMachine.ps1` . Du behöver inte ange den andra filen eftersom den utlöses automatiskt.
    
-   **För flera poster för varje enhet:**
+   - För flera poster för varje enhet:
    
-   Välj fliken **Skript och** klicka sedan på **Lägg till** (Utforskaren öppnas direkt i sökvägen där du kopierade onboarding-skriptet tidigare). Navigera till bash-skriptet `WindowsDefenderATPOnboardingScript.cmd` onboarding.
+     Välj fliken **Skript och** klicka sedan på **Lägg till** (Utforskaren öppnas direkt i sökvägen där du kopierade onboarding-skriptet tidigare). Navigera till bash-skriptet `WindowsDefenderATPOnboardingScript.cmd` onboarding.
 
 5. Testa lösningen:
 
@@ -103,8 +107,15 @@ Följande steg vägleder dig genom introduktionen av VDI-enheter och visar steg 
 
    1. Logga in på enhet med en annan användare.
       
-   1. **För enskild post för varje enhet:** Kontrollera bara en post i Microsoft Defender Säkerhetscenter.<br>
-      **Flera poster för varje enhet:** Kontrollera flera poster i Microsoft Defender Säkerhetscenter.
+   1. Beroende på vilken metod du vill implementera följer du lämpliga steg:
+   
+      - För enskild inmatning för varje enhet: 
+    
+        Kontrollera bara en post i Microsoft Defender Säkerhetscenter.
+
+      - För flera poster för varje enhet: 
+       
+        Kontrollera flera poster i Microsoft Defender Säkerhetscenter.
 
 6. Klicka **på listan** Enheter i navigeringsfönstret.
 
@@ -118,14 +129,14 @@ Följande steg vägleder dig genom introduktionen av VDI-enheter och visar steg 
 
 1. Ställ in registervärdet på:
 
-    ```reg
+    ```console
    [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging]
     "VDI"="NonPersistent"
     ```
 
     eller använda kommandorad:
 
-    ```
+    ```console
     reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging" /v VDI /t REG_SZ /d "NonPersistent" /f
     ```
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Lär dig hur du får åtkomst till lokala resurser som verksamhetsappar, filresurser och skrivare från en Azure Active Directory-ansluten Windows 10-enhet.
-ms.openlocfilehash: b78509d72cbd9b3c121039c4965625bf5c21c7e0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1bca0beb3ccc78e670ad33ce446b9b3f7c372ba7
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913531"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445357"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Få tillgång till lokala resurser från en Azure AD-ansluten enhet i Microsoft 365 Business Premium
 
@@ -64,3 +64,7 @@ Om den Windows-enhet som du Azure-AD gick med i tidigare var domän-ansluten ell
 - Användare kanske inte kan autentisera till program som är beroende av Active Directory-autentisering. Utvärdera den äldre appen och överväg att uppdatera till en app som använder modern autentisering, om möjligt.
 
 - Det går inte att hitta Active Directory-skrivare. Du kan ange direkt skrivarsökvägar för alla användare eller använda [Universell utskrift.](/universal-print/)
+
+### <a name="related-articles"></a>Relaterade artiklar
+
+[Krav för Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)

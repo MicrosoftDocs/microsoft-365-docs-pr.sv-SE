@@ -19,12 +19,12 @@ description: Använd Explorer och realtidsidentifiering i &amp; säkerhetsefterl
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f48bad9d8ae6fc6d68ae27a655f4bdfdefd819d0
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 47bb14b90a94d0c8b542b12268bd6d5ed6e5c05a
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207233"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445726"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Identifiering av hot i Utforskaren och i realtid
 
@@ -58,7 +58,7 @@ Med den här rapporten kan du:
 Om du i dag navigerar från en avisering till Hotutforskaren öppnas en filtrerad vy i Utforskaren, med vyn filtrerad med aviseringsprincip-ID (princip-ID är en unik identifierare för en aviseringsprincip).
 Vi gör den här integreringen mer relevant genom att introducera aviserings-ID (se ett exempel på aviserings-ID nedan) i Threat Explorer och i realtidsidentifiering så att du ser meddelanden som är relevanta för den specifika aviseringen och antalet e-postmeddelanden. Du kan också se om ett meddelande var en del av en avisering och även navigera från det meddelandet till den specifika aviseringen.  
 
-Aviserings-ID är tillgängligt i URL-adressen när du visar en enskild avisering. ett exempel som är `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`
+Aviserings-ID är tillgängligt i URL-adressen när du visar en enskild avisering. ett exempel som är `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1` .
 
 > [!div class="mx-imgBorder"]
 > ![Filtrera efter aviserings-ID](../../media/AlertID-Filter.png)
@@ -177,7 +177,6 @@ För närvarande befinner vi oss på leveransplats i det utfällfältet för e-p
 > - Det kommer att finnas nya fält och värden för teknik **för identifiering och** ytterligare **åtgärder** (särskilt för ZAP-scenarier). Du måste utvärdera dina befintliga sparade frågor och spårade frågor för att se till att de fungerar med de nya värdena.
 
 > [!div class="mx-imgBorder"]
-
 > ![Ytterligare åtgärder i Utforskaren](../../media/Additional_Actions.png)
 
 ### <a name="system-overrides"></a>System åsidosättningar
@@ -185,9 +184,13 @@ För närvarande befinner vi oss på leveransplats i det utfällfältet för e-p
 *Med system åsidosättningar* kan du göra undantag till den avsedda leveransplatsen för ett meddelande. Du åsidosätter leveransplatsen som tillhandahålls av systemet baserat på hot och andra identifieringar som identifieras av filtreringsstacken. System åsidosättningar kan ställas in via klientorganisations- eller användarprincip för att leverera meddelandet enligt förslaget i principen. Med åsidosättningar kan oavsiktlig leverans av skadliga meddelanden identifieras på grund av luckor i konfigurationen, till exempel en alltför omfattande princip för betrodd avsändare som har ställts in av en användare. Dessa åsidosättningsvärden kan vara:
 
 - Tillåts av användarprincip: En användare skapar principer på postlådenivå för att tillåta domäner eller avsändare.
+
 - Blockeras av användarprincip: En användare skapar principer på e-postråddsnivå för att blockera domäner eller avsändare.
+
 - Tillåts av organisationens princip: Organisationens säkerhetsteam anger principer eller Exchange-e-postflödesregler (kallas även transportregler) för att tillåta avsändare och domäner för användare i organisationen. Det kan vara för en uppsättning användare eller för hela organisationen.
+
 - Blockeras av organisationsprincip: Organisationens säkerhetsteam anger principer eller e-postflödesregler för att blockera avsändare, domäner, meddelandespråk eller käll-IP-adresser för användare i organisationen. Det här kan tillämpas på en uppsättning användare eller hela organisationen.
+
 - Filnamnstillägg som blockeras av organisationsprincipen: Ett organisations säkerhetsteam blockerar ett filnamnstillägg via inställningarna för skydd mot skadlig programvara. Värdena visas nu i e-postinformation för att underlätta undersökningar. Sekops-team kan också använda rtf-filtreringsfunktioner för att filtrera på blockerade filnamnstillägg.
 
 [![Åsidosättningar av system i Utforskaren](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
@@ -233,7 +236,8 @@ Nu kan du sortera och filtrera efter systemtaggar eller anpassade användartagga
 > [!IMPORTANT]
 > Filtrering och sortering efter användartaggar är för närvarande en offentlig förhandsgranskning. Den här funktionen kan komma att ändras betydligt innan den släpps till kommersiellt bruk. Microsoft ger inga garantier, uttryckliga eller underförstådda, med avseende på den information som ges om den.
 
-![Kolumnen Taggar i Utforskaren](../../media/threat-explorer-tags.png)
+> [!div class="mx-imgBorder"]
+> ![Kolumnen Taggar i Utforskaren](../../media/threat-explorer-tags.png)
 
 ### <a name="timezone-improvements"></a>Förbättringar av tidszoner
 
@@ -282,21 +286,20 @@ Som en del av databerikande kan du se alla olika Exchange-transportregler (ETR) 
 
 Du kan se både GUID och namnet på transportreglerna som tillämpats på meddelandet. Du kan söka efter meddelandena med hjälp av namnet på transportregeln. Det här är en "Innehåller"-sökning, vilket innebär att du även kan göra partiella sökningar.
 
-#### <a name="important-note"></a>Viktigt meddelande:
-
-ETR-sökning och ETR-namntillgänglighet beror på den specifika roll som har tilldelats till dig. Du måste ha någon av följande roller/behörigheter för att visa ETR-namn och sökning. Om du inte har någon av de här rollerna kan du inte se namnen på transportreglerna eller söka efter meddelanden med hjälp av ETR-namn. Men du kan se ETR-etiketten och GUID-informationen i e-postinformationen. Andra funktioner för postvisning i e-postrutnät, utfällningar av e-post, filter och export påverkas inte.
-
-- Endast EXO – skydd mot dataförlust: alla
-- Endast EXO – O365SupportViewConfig: Alla
-- Microsoft Azure Active Directory eller EXO – säkerhetsadministratör: Alla
-- AAD eller EXO – Säkerhetsläsare: Alla
-- Endast EXO – Transportregler: Alla
-- Endast EXO – View-Only konfiguration: Alla
-
-I e-postrutnätet, den utfällliga listan Information och Exporterad CSV visas ETR-trafikerna med ett Namn/GUID enligt nedan.
-
-> [!div class="mx-imgBorder"]
-> ![Exchange-transportregler](../../media/ETR_Details.png)
+> [!IMPORTANT]
+> ETR-sökning och ETR-namntillgänglighet beror på den specifika roll som har tilldelats till dig. Du måste ha någon av följande roller/behörigheter för att visa ETR-namn och sökning. Om du inte har någon av de här rollerna kan du inte se namnen på transportreglerna eller söka efter meddelanden med hjälp av ETR-namn. Men du kan se ETR-etiketten och GUID-informationen i e-postinformationen. Andra funktioner för postvisning i e-postrutnät, utfällningar av e-post, filter och export påverkas inte.
+> 
+> - Endast EXO – skydd mot dataförlust: alla
+> - Endast EXO – O365SupportViewConfig: Alla
+> - Microsoft Azure Active Directory eller EXO – säkerhetsadministratör: Alla
+> - AAD eller EXO – Säkerhetsläsare: Alla
+> - Endast EXO – Transportregler: Alla
+> - Endast EXO – View-Only konfiguration: Alla
+> 
+> I e-postrutnätet, den utfällliga listan Information och Exporterad CSV visas ETR-trafikerna med ett Namn/GUID enligt nedan.
+> 
+> > [!div class="mx-imgBorder"]
+> > ![Exchange-transportregler](../../media/ETR_Details.png)
 
 ### <a name="inbound-connectors"></a>Inkommande kopplingar
 
@@ -334,18 +337,23 @@ I det här exemplet används Threat Explorer.
 
 4. Välj Ämne för ett meddelande under fliken E-> Information om du vill se ytterligare personifieringsinformation som Personifierad domän/Identifierade plats.
 
-5. **ELLER** Välj **Personifierad användare** och skriv en skyddad användares e-postadress i textrutan.
+    **ELLER** 
 
-6. Välj Ämne **för** ett meddelande **under** fliken E-post, fliken Information för att se ytterligare personifieringsinformation om användaren eller  >   domänen, och den *identifierade platsen*.
+    Välj **Personifierad användare** och skriv en skyddad användares e-postadress i textrutan.
 
-:::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="Informationsfönstret i Informationsrutan för hotutforskaren för en skyddad användare som visar identifieringsplatsen och det hot som har upptäckts (här är en person som utger sig för att vara en användare).":::
+    > [!TIP]
+    > **Bäst resultat får du** om du *använder fullständiga e-postadresser* för att söka efter skyddade användare. Du kommer att hitta din skyddade användare snabbare och fler om du söker *efter firstname.lastname@contoso.com,* till exempel när du undersöker användarpersonifiering. När du söker efter en skyddad domän tar sökningen rotdomänen (t.ex. contoso.com) och domännamnet *(contoso).* Om du söker efter *rotdomänen contoso.com* returneras både personifieringar av *contoso.com* och *domännamnet contoso.*
 
-> [!TIP]
-> **Bäst resultat får du** om du *använder fullständiga e-postadresser* för att söka efter skyddade användare. Du kommer att hitta din skyddade användare snabbare och fler om du söker *efter firstname.lastname@contoso.com,* till exempel när du undersöker användarpersonifiering. När du söker efter en skyddad domän tar sökningen rotdomänen (t.ex. contoso.com) och domännamnet *(contoso).* Om du söker efter *rotdomänen contoso.com* returneras både personifieringar av *contoso.com* och *domännamnet contoso.*
+5. Välj Ämne **för** ett meddelande **under** fliken E-post, fliken Information för att se ytterligare personifieringsinformation om användaren eller  >   domänen, och den *identifierade platsen*.
+
+    :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="Informationsfönstret i Informationsrutan för hotutforskaren för en skyddad användare som visar identifieringsplatsen och det hot som har upptäckts (här är en person som utger sig för att vara en användare).":::
+
+> [!NOTE]
+> Om du i steg 3  eller 5  väljer Identifieringsteknik  och väljer Personifieringsdomän eller Personifieringsanvändare visas informationen på fliken   >   *E-postinformation* om användaren eller domänen, och den identifierade platsen visas endast på meddelanden som är relaterade till användaren eller domänen på sidan Princip mot nätfiske.  
 
 ### <a name="preview-email-header-and-download-email-body"></a>Förhandsgranska e-posthuvud och ladda ned e-posttext
 
-Nu kan du förhandsgranska en e-postrubrik och ladda ned e-posttexten i Threat Explorer-administratörer kan analysera nedladdade rubriker/e-postmeddelanden för hot. Eftersom nedladdning av e-postmeddelanden kan risk exponering av information, styrs den här processen av rollbaserad åtkomstkontroll (RBAC). En ny roll, *Förhandsversion,* måste läggas till i en annan rollgrupp (till exempel säkerhetsåtgärder eller säkerhetsadministratör) för att det ska gå att ladda ned e-postmeddelanden i vyn för alla e-postmeddelanden. Men det krävs ingen ytterligare roll för att visa e-posthuvuden (utöver vad som krävs för att visa meddelanden i Hotutforskaren).
+Nu kan du förhandsgranska en e-postrubrik och ladda ned e-posttexten i Hotutforskaren. Administratörer kan analysera nedladdade rubriker/e-postmeddelanden för hot. Eftersom nedladdning av e-postmeddelanden kan risk exponering av information, styrs den här processen av rollbaserad åtkomstkontroll (RBAC). En ny roll, *Förhandsversion,* måste läggas till i en annan rollgrupp (till exempel säkerhetsåtgärder eller säkerhetsadministratör) för att det ska gå att ladda ned e-postmeddelanden i vyn för alla e-postmeddelanden. Men det krävs ingen ytterligare roll för att visa e-posthuvudet (förutom vad som krävs för att visa meddelanden i Hotutforskaren).
 
 Explorer och realtidsidentifiering får också nya fält som ger en mer fullständig bild av var dina e-postmeddelanden hamnar. Dessa ändringar gör det enklare att hitta säkerhet ops. Men det viktigaste resultatet är att du snabbt vet var de problemade e-postmeddelandena ligger.
 

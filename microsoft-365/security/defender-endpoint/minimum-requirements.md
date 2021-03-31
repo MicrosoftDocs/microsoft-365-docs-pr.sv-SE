@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6a8e1091490cb9f3fe1eedadec0b76a56ada936e
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 1b203a29083aaa4a1f86abcd7e2c7b24bd63f186
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379496"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445750"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Minimikraven för Microsoft Defender för Slutpunkt
 
@@ -54,6 +54,7 @@ Microsoft Defender för Endpoint kräver något av följande volymlicensieringse
 > [!NOTE]
 > Kvalificerade licensierade användare kan använda Microsoft Defender för Endpoint på upp till fem samtidiga enheter.
 > Microsoft Defender för Endpoint kan också köpas från en leverantör av molnlösningar (CSP).
+> Virtuella RDSH-maskiner kräver inte en separat Defender för Endpoint-licens.
 
 Microsoft Defender för slutpunkt för servrar kräver något av följande licensalternativ:
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 56645553c43289995012d53d7caf879874e65c8a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 56a62ca4ebbd140f507d1735c663924014ca4771
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186935"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445738"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Onboard to the Microsoft Defender for Endpoint service
 
@@ -40,7 +40,7 @@ Läs mer om de olika faserna i distributionen av Microsoft Defender för Endpoin
 
 Distribution av Defender för Endpoint är en process i tre steg:
 
-| [![distributionsfas – förbereda](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Fas 1: Förbereda](prepare-deployment.md) | [![distributionsfas – konfiguration](images/phase-diagrams/setup.png)](production-deployment.md)<br>[Fas 2: Konfigurera](production-deployment.md) | ![distributionsfas – onboard](images/phase-diagrams/onboard.png)<br>Fas 3: Introduktion |
+| [![distributionsfas – förbereda](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Fas 1: Förbereda](prepare-deployment.md) | [![distributionsfas – konfiguration](images/phase-diagrams/setup.png)](production-deployment.md)<br>[Fas 2: Installation](production-deployment.md) | ![distributionsfas – onboard](images/phase-diagrams/onboard.png)<br>Fas 3: Introduktion |
 | ----- | ----- | ----- |
 | | |*Du är här!*|
 
@@ -86,7 +86,7 @@ Efter att slutpunkterna introduceras konfigurerar du de olika funktionerna, till
 I den här distributionsguiden vägleder vi dig genom att använda två distributionsverktyg för att introducera slutpunkter och konfigurera funktioner.
 
 Verktygen i exempeldistributionerna är:
-- [Introduktion med Konfigurationshanteraren för Microsoft Endpoint](onboarding-endpoint-configuration-manager.md)
+- [Introduktion med hjälp av Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
 - [Introduktion med Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 
 Med hjälp av de omnämnda distributionsverktygen ovan vägleds du när du konfigurerar följande Defender för Slutpunkt-funktioner:
@@ -95,5 +95,6 @@ Med hjälp av de omnämnda distributionsverktygen ovan vägleds du när du konfi
 - Konfiguration för att minska attackytan
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Introduktion med Konfigurationshanteraren för Microsoft Endpoint](onboarding-endpoint-configuration-manager.md)
+- [Introduktion med hjälp av Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
 - [Introduktion med Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
+- [Säkra dokument i Microsoft 365 E5](../office-365-security/safe-docs.md)

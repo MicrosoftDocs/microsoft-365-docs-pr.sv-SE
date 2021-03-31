@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: Arbeta i förväg när du flyttar från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i den nya tyska datacenterområdet.'
-ms.openlocfilehash: d05b3fc06c4530a69c49962b0d2b793353033c99
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: fb352c17d9868cf5c42034e198be63b6e0543dbb
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165615"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445608"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Före migreringen från Microsoft Cloud Deutschland
 
@@ -113,11 +113,14 @@ Läsa och använda [ADFS-migreringsstegen](ms-cloud-germany-transition-add-adfs.
 ### <a name="exchange-online-hybrid-configuration"></a>Exchange Online-hybridkonfiguration
 
 **Gäller för:** Alla kunder som använder en aktiv Exchange-hybridkonfiguration med Exchange-servrar lokalt<br>
-**När den används:** Varje gång före fas 5 startar
+**När den** används: Vilken tid som helst före fas 5 startar
+
+Företagskunder med en hybriddistribution av Exchange Online och en lokal Exchange Server kör hybridkonfigurationsguiden (HCW) för att underhålla och upprätta hybridkonfigurationen. Vid övergången från Microsoft Cloud Deutschland till Office 365 Germany-regionen måste administratören köra den senaste versionen av HCW på nytt i Läget "Office 365 Germany" innan Exchange-migreringen (fas 5) startar. Kör sedan HCW igen i läget "Office 365 Worldwide" när fas 5 är slutförd för att slutföra den lokala distributionen med regionsinställningarna för Office 365 Germany.
 
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
-| Uppdatera till den senaste versionen av hybridkonfigurationsguiden (HCW) när som helst innan klientorganisationen anger migreringssteg 5. Du kan starta aktiviteten direkt efter att du fått meddelandet i meddelandecentret om att migreringen av Office 365-klientorganisationen har startat (fas 1).<br>Exchange-administratören måste avinstallera tidigare versioner av HCW-enheten och sedan installera och köra den senaste versionen (17.0.5378.0 eller senare) från [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) . |<ul><li>Den senaste versionen av HCW innehåller nödvändiga uppdateringar för att stödja Exchange Online-migreringen från Microsoft Cloud Deutschland-instansen till Office 365 Global Services.</li><li> Uppdateringar omfattar ändringar av lokala certifikatinställningar för Skicka _anslutaren och_ _Receive-kopplingen_.</li><li>När du kör HCW före fas 5 väljer du "Office 365 Germany" på den andra sidan i HCW under _Office 365 Exchange Online_ i listrutan under Min Office _365-organisation_ är värd</li><li>**Obs!** När du har slutfört migreringen av Office 365-klientorganisationen efter fas 9 tar du bort och installerar HCW igen, den här gången med hjälp av inställningarna för "Office 365 Worldwide" på den andra sidan i HCW-enheten för att slutföra hybridkonfigurationen med den globala Exchange Online-tjänsten.</li></ul>|Det går inte att köra HCW före fas 5 (Exchange-migrering) kan resultera i tjänst- eller klientfel. |
+| (Försteg 5) – Kör om HCW med hjälp av inställningarna för Office 365 Germany <br><br> <i>Du kan starta aktiviteten direkt efter att du fått meddelandet i meddelandecentret om att migreringen av Office 365-klientorganisationen har startat (fas 1).</i>| Om du avinstallerar och kör HCW (17.0.5378.0 eller senare) från innan fas 5 kan du se till att din lokala konfiguration är redo att skicka och ta emot e-post med både Microsoft Cloud Deutschland-användare och användare som migreras till regionen [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) Office 365 Germany. <p><li> I HCW för listrutan under **Min Office 365-organisation** finns på väljer du **Office 365 Germany.** | Om du inte kan slutföra den här uppgiften innan steg 5 [Exchange-migrering] börjar kan det resultera i NDR-meddelanden för e-post som dirigeras mellan den lokala Exchange-distributionen och Office 365.  
+| (Efter steg 5) - Kör om HCW med de globala inställningarna för Office 365 <br><br> <i>Du kan starta aktiviteten när du har fått meddelandet i meddelandecentret om att Exchange-migreringen är slutförd (fas 5).</i>| Om du avinstallerar och kör HCW igen från efter fas 5 återställs den lokala konfigurationen för hybridkonfiguration med [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) endast Office 365 global. <p><li> I listrutan under **Min Office 365-organisation** finns på väljer du **Office 365 globalt.** | Om du inte kan slutföra den här uppgiften innan fas 9 [Migreringen har slutförts] kan det resultera i NDR-meddelanden för e-post som dirigeras mellan din lokala Exchange-distribution och Office 365.  
 | Upprätta AuthServer lokalt som pekar på global SÄKERHETStokentjänst (STS) för autentisering | Detta säkerställer att autentiseringsförfrågningar för Exchange-tillgänglighetsförfrågningar från användare i migreringstillstånd som är mål för den lokala hybridmiljön autentiseras för åtkomst till den lokala tjänsten. På samma sätt säkerställer detta autentisering av förfrågningar från lokala till globala slutpunkter för Office 365-tjänster. | När Azure AD-migrering (fas 2) har slutförts måste administratören för den lokala Exchange-topologin (hybrid) lägga till en ny autentiseringstjänstslutpunkt för globala Office 365-tjänster. Med det här kommandot från Exchange PowerShell ersätter du med `<TenantID>` organisationens klientorganisations-ID som finns på Azure-portalen i Azure Active Directory.<br>`New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<TenantId>/metadata/json/1`<br> Om uppgiften inte slutförs kan det leda till hybridförfrågningar om ledig/upptagen-information som inte kan tillhandahålla information för postlådeanvändare som har migrerats från Microsoft Cloud Deutschland till Office 365-tjänster.  |
 ||||
 

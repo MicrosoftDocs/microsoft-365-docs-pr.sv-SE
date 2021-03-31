@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d8b68e6b6dc42de5730aa634386406d4762b1fa2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 0d9e63c5d89b13b02dfcf116c1555c8db319d23f
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163689"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445370"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-atp"></a>Konfigurera aviseringsmeddelanden i Microsoft Defender ATP
 
@@ -51,9 +51,9 @@ E-postmeddelandet innehåller grundläggande information om aviseringen och en l
 Du kan skapa regler som bestämmer enheter och allvarlighetsgrad för aviseringar för att skicka e-postaviseringar till och aviseringsmottagarna.
 
 
-1. Välj Inställningar Aviseringsmeddelanden **i**  >  **navigeringsfönstret.**
+1. I navigeringsfönstret väljer du Inställningar  >  **E-postaviseringar**.
 
-2. Klicka på **Lägg till aviseringsregel.**
+2. Klicka **på Lägg till objekt.**
 
 3. Ange allmän information:
     - **Regelnamn** – ange ett namn på meddelanderegeln.
