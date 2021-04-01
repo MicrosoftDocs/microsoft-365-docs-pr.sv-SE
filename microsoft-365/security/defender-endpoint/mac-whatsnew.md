@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: be906baca3a54183e22fa3b4ee424a9d8fc6957a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 16d78cf014e775ecb98a59d90b5734836eb3cbf2
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198699"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476631"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-for-mac"></a>Vad är nytt i Microsoft Defender för Slutpunkt för Mac
 
@@ -39,7 +39,12 @@ ms.locfileid: "51198699"
 > På macOS 11 (Big Sur) kräver Microsoft Defender för Endpoint ytterligare konfigurationsprofiler. Om du är en befintlig kund som uppgraderar från tidigare versioner av macOS distribuerar du de ytterligare konfigurationsprofiler som listas på [den här sidan.](mac-sysext-policies.md)
 
 > [!IMPORTANT]
-> Stöd för macOS 10.13 (High Sierra) upphör den 15 februari 2021.
+> Stöd för macOS 10.13 (High Sierra) har upphört den 15 februari 2021.
+
+## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0)
+
+- Lade till ett nytt alternativ i kommandoradsverktyget för att visa information om den senaste genomsökningen på begäran. Om du vill visa information om den senaste genomsökningen på begäran kör du `mdatp health --details antivirus`
+- Prestandaförbättringar & felkorrigeringar
 
 ## <a name="1012279-20121012122790"></a>101.22.79 (20.121012.12279.0)
 

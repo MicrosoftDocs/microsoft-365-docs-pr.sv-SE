@@ -20,21 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Lär dig att skapa, redigera eller ta bort en säkerhetsgrupp.
-ms.openlocfilehash: d2cc749acaf7b2e23674156f6ad9a200ec7b386d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4ea97683e47f7f0ef8f196db32df8e22f9b1a0b9
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915824"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470983"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Skapa, redigera eller ta bort en säkerhetsgrupp i administrationscentret för Microsoft 365
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 På sidan Microsoft 365 **Grupper** kan du skapa grupper med användarkonton som du kan använda för att tilldela samma behörigheter för SharePoint Online och CRM Online. En administratör kan till exempel skapa en säkerhetsgrupp för att bevilja en viss grupp personer åtkomst till en SharePoint-webbplats. Endast globala administratörer och användarhanteringsadministratörer har behörighet att skapa, redigera eller ta bort säkerhetsgrupper. Mer information om administratörsroller finns i [Tilldela administratörsroller.](../add-users/assign-admin-roles.md) 
   

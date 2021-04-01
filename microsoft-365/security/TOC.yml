@@ -28,26 +28,14 @@
           href: ./office-365-security/sharepoint-file-access-policies.md
         - name: Rekommenderade MCAS-principer för SaaS-appar
           href: ./office-365-security/mcas-saas-access-policies.md
-    - name: Microsoft 365 Säkerhetscenter
-      href: defender/overview-security-center.md
-    - name: Microsoft Secure Score
-      items:
-        - name: Översikt över Secure Score
-          href: defender/microsoft-secure-score.md
-        - name: Utvärdera säkerhets genom övergå molnet
-          href: defender/microsoft-secure-score-improvement-actions.md
-        - name: Spåra din resultathistorik och uppfylla mål
-          href: defender/microsoft-secure-score-history-metrics-trends.md
-        - name: Kommer snart
-          href: defender/microsoft-secure-score-whats-coming.md
-        - name: Nyheter
-          href: defender/microsoft-secure-score-whats-new.md
     - name: Microsoft 365 Defender
       items:
         - name: Översikt
           items:
             - name: Vad är Microsoft 365 Defender?
               href: defender/microsoft-365-defender.md
+            - name: Microsoft 365 Säkerhetscenter
+              href: defender/overview-security-center.md
             - name: Nyheter i Microsoft 365 Defender
               href: defender/whats-new.md
             - name: Defender för Endpoint i Microsoft 365 Säkerhetscenter
@@ -116,6 +104,18 @@
               href: defender/m365d-pilot.md
             - name: Aktivera vanliga frågor och svar
               href: defender/m365d-enable-faq.md
+            - name: Microsoft Secure Score
+              items:
+                - name: Översikt över Secure Score
+                  href: defender/microsoft-secure-score.md
+                - name: Utvärdera säkerhets genom övergå molnet
+                  href: defender/microsoft-secure-score-improvement-actions.md
+                - name: Spåra din resultathistorik och uppfylla mål
+                  href: defender/microsoft-secure-score-history-metrics-trends.md
+                - name: Kommer snart
+                  href: defender/microsoft-secure-score-whats-coming.md
+                - name: Nyheter
+                  href: defender/microsoft-secure-score-whats-new.md
             - name: Analys av hot
               items:
                 - name: Översikt över hotanalys

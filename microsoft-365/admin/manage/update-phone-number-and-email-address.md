@@ -20,21 +20,15 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Uppdatera administratörstelefonnumret och -e-postadressen i administrationscentret. Du behöver den här informationen om du vill återställa ditt eget administratörslösenord.
-ms.openlocfilehash: a5b1548ee6ac0fa6bac976758ea8f6753ea2853c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 39b68905c0d43608a0d0ce1d37167fd7d9aff8fb
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914996"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470923"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Uppdatera administratörstelefonnumret och -e-postadressen
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 I den här artikeln förklaras hur du som administratör kan ändra telefonnumret och e-postadressen för företaget i Microsoft 365.
   
 Om du vill veta hur du ändrar företagets profilinformation, till exempel företagsnamn och -adress, företagstelefonnummer och teknisk kontaktinformation läser du [Ändra adress, e-postadress och annan information för organisationen](change-address-contact-and-more.md).

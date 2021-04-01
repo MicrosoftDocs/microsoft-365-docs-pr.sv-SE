@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5013d94277eeba7d1df100d2850cb950fe2e0742
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 1757160b37500e97586fbb6dfb16d81303bc54e4
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379361"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476487"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Introducera Windows-servrar till Microsoft Defender för slutpunktstjänsten
 
@@ -204,7 +204,7 @@ Följande funktioner ingår i den här integreringen:
 - Automatisk onboarding – Defender för slutpunkts sensor aktiveras automatiskt på Windows-servrar som skickas till Azure Säkerhetscenter. Mer information om onboarding av Azure Säkerhetscenter finns i [Onboarding till Azure Security Center Standard för förbättrad säkerhet.](https://docs.microsoft.com/azure/security-center/security-center-onboarding)
 
     > [!NOTE]
-    > Automatisk onboarding gäller endast för Windows Server 2008 R2 SP1, Windows Server 2012 R2 och Windows Server 2016.
+    > Integreringen mellan Azure Defender för servrar och Microsoft Defender för slutpunkt har utökats med stöd för [Windows Server 2019 och Windows Virtual Desktop (WVD).](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
 - Windows-servrar som övervakas av Azure Säkerhetscenter blir också tillgängliga i Defender för slutpunkt – Azure Säkerhetscenter ansluter smidigt till Defender för slutpunktsklientorganisationen, vilket ger en enda vy mellan klienter och servrar.  Dessutom är Defender för slutpunktsaviseringar tillgängliga i Azure Säkerhetscenter-konsolen.
 - Serverundersökning – Azure Säkerhetscenter-kunder kan använda Microsoft Defender Säkerhetscenter för att utföra detaljerad undersökning för att upptäcka omfattningen av en möjlig intrång.
@@ -283,8 +283,8 @@ Om du vill ta bort Windows-servern från en annan dator kan du använda någon a
 <br>
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Introducera Windows 10-enheter](configure-endpoints.md)
-- [Introducera enheter som inte är Windows-enheter](configure-endpoints-non-windows.md)
-- [Konfigurera proxy- och Internetanslutningsinställningar](configure-proxy-internet.md)
+- [Registrera Windows 10-enheter](configure-endpoints.md)
+- [Registrera icke-Windows-enheter](configure-endpoints-non-windows.md)
+- [Konfigurera inställningar för proxy- och Internetanslutning](configure-proxy-internet.md)
 - [Köra ett identifieringstest på en nyligen onboarded Defender för Endpoint-enhet](run-detection-test.md)
 - [Felsökning av problem med introduktion till Microsoft Defender för slutpunkt](troubleshoot-onboarding.md)

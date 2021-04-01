@@ -25,21 +25,14 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: 'Ändra den ursprungliga e-postadressen till en egen e-postadress som tom@fourthcoffee.com. Om du vill göra det måste du köpa ett domännamn och lägga till det i Microsoft 365. '
-ms.openlocfilehash: 10dff4e0523062ae763c08a972563dc8b5582038
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c7ded3712fa0f8894ae0b8b9d864a1a5a58e4558
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915932"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470995"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Ändra din e-postadress så att en anpassad domän används
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   

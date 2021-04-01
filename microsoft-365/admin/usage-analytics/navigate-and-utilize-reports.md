@@ -20,21 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: Lär dig hur du visar rapporter med hjälp av navigeringsflikar och filter.
-ms.openlocfilehash: d3f080bdf2ec5544a0ef9d06139cad682962d57d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 921b32448deeb13b33d58112183002bace44c430
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913916"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471051"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Navigera och använda rapporter i Microsoft 365 användningsanalyser
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Med instrumentpanelen får du en snabb översikt över de viktigaste användnings- och införandemätetalen. Genom att välja mätetriska värden på den högsta nivån kommer du åt rapporter som ger mer information och insikter. Varje flik i rapporten innehåller datavisualiseringar som är specifika för en aspekt av användning och införande för din organisation. De data som samlas in förklaras i rubriken på varje rapport och en panel visas som innehåller ytterligare information om visualiseringarna på rapportfliken som visas.
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 044a3d48dc350a5663a27ab3c16c2da7a5e3f3f1
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: a9e75441a8c4a336e8c657d27330c118fcac4788
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379468"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476329"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-for-macos"></a>Manuell distribution av Microsoft Defender för Slutpunkt för macOS
 
@@ -119,7 +119,7 @@ Du måste ha administratörsbehörighet på enheten för att slutföra den här 
 
 1. Kopiera wdav.pkg och MicrosoftDefenderATPOnboardingMacOs.py till enheten där du distribuerar Microsoft Defender för Endpoint för macOS.
 
-    Klientenheten är inte kopplad till orgId. Observera att *orgId-attributet* är tomt.
+    Klientenheten är inte kopplad till org_id. Observera att *org_id* är tomt.
 
     ```bash
     mdatp health --field org_id
@@ -131,23 +131,96 @@ Du måste ha administratörsbehörighet på enheten för att slutföra den här 
     /usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py
     ```
 
-3. Kontrollera att enheten nu är kopplad till din organisation och rapporterar ett *giltigt orgId:*
+3. Kontrollera att enheten nu är kopplad till din organisation och rapporterar ett giltigt organisations-ID:
 
     ```bash
     mdatp health --field org_id
     ```
 
-Efter installationen visas Microsoft Defender-ikonen i statusfältet i macOS i det övre högra hörnet.
+    Efter installationen visas Microsoft Defender-ikonen i statusfältet i macOS i det övre högra hörnet.
+    
+    > [!div class="mx-imgBorder"]
+    > ![Microsoft Defender-ikon i skärmbild i statusfältet](images/mdatp-icon-bar.png)
 
-   ![Microsoft Defender-ikon i skärmbild i statusfältet](images/mdatp-icon-bar.png)
-   
 
 ## <a name="how-to-allow-full-disk-access"></a>Så här tillåter du fullständig diskåtkomst
 
 > [!CAUTION]
 > macOS 10.15 (Catalina) innehåller nya förbättringar av säkerhet och sekretess. Från och med den här versionen kan program som standard inte komma åt vissa platser på disken (till exempel Dokument, Nedladdningar, Skrivbord osv.) utan uttryckligt medgivande. Om inget sådant medgivande getts kan Inte Microsoft Defender för Endpoint skydda din enhet fullt ut.
 
-Om du vill ge medgivande öppnar du Systeminställningar – > säkerhet & sekretess – > sekretess – > fullständig diskåtkomst. Klicka på låsikonen om du vill göra ändringar (längst ned i dialogrutan). Välj Microsoft Defender för Slutpunkt.
+1. Om du vill ge medgivande öppnar **du**  >  **Systeminställningar & Fullständig**  >    >  **diskåtkomst till sekretesssekretessen.** Klicka på låsikonen om du vill göra ändringar (längst ned i dialogrutan). Välj Microsoft Defender för Slutpunkt.
+
+2. Kör ett AV-identifieringstest för att verifiera att enheten är korrekt onboarded och rapporterar till tjänsten. Utför följande steg på den nyligen inbyggda enheten:
+
+    1. Se till att realtidsskyddet är aktiverat (visas med resultatet 1 när följande kommando körs):
+
+        ```bash
+        mdatp health --field real_time_protection_enabled
+        ```
+
+    1. Öppna ett terminalfönster. Kopiera och kör följande kommando:
+
+        ```bash
+        curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+        ```
+
+    1. Filen borde ha satts i karantän av Defender för Slutpunkt för Mac. Använd följande kommando för att lista alla identifierade hot:
+
+        ```bash
+        mdatp threat list
+        ```
+
+3. Kör ett EDR-identifieringstest för att verifiera att enheten är korrekt onboarded och rapporterar till tjänsten. Utför följande steg på den nyligen inbyggda enheten:
+
+   1. I webbläsaren, till exempel Microsoft Edge för Mac eller Safari.
+
+   1. Ladda ned MDATP MacOS DIY.zip och https://aka.ms/mdatpmacosdiy extrahera.
+
+      Du kan uppmanas att göra följande:
+
+      > Vill du tillåta nedladdningar på "mdatpclientanalyzer.blob.core.windows.net"?<br/>
+      > Du kan ändra vilka webbplatser som kan ladda ned filer i Webbplatsinställningar.
+
+4. Klicka **på Tillåt.**
+
+5. Öppna **Nedladdningar**.
+
+6. Du bör se **MDATP MacOS GÖR-DET-SJÄLV.**
+
+   > [!TIP]
+   > Om du dubbelklickar visas följande meddelande:
+   > 
+   > > **"MDATP MacOS GÖR-SJÄLV" kan inte öppnas eftersom utvecklaren inte kan verifieras.**<br/>
+   > > macOS kan inte verifiera att den här appen är gratis från skadlig programvara.<br/>
+   > > **\[ Flytta till \] Papperskorgen** **\[ \]** 
+  
+7. Klicka på **Avbryt**.
+
+8. Högerklicka på **MDATP MacOS GÖR-SJÄLV** och klicka sedan på **Öppna.** 
+
+    Följande meddelande ska visas i systemet:
+
+    > **macOS kan inte verifiera utvecklaren **av MDATP MacOS DIY.** Vill du öppna den?**<br/>
+    > Genom att öppna det här programmet åsidosätter du systemsäkerhet som kan exponera din dator och personliga information för skadlig programvara som kan skada din Mac eller försämra din integritet.
+
+10. Klicka **på Öppna**.
+
+    Följande meddelande ska visas i systemet:
+
+    > Microsoft Defender ATP – testfil för macOS EDR-GÖR-DET<br/>
+    > Motsvarande avisering är tillgänglig i MDATP-portalen.
+
+11. Klicka **på Öppna**.
+
+    Om några minuter ska en avisering med namnet "macOS EDR-testvarning" höjas.
+
+12. Gå till Microsoft Defender Säkerhetscenter ( https://SecurityCenter.microsoft.com) .
+
+13. Gå till aviseringskön.
+
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Exempel på en macOS EDR-testvarning som visar allvarlighetsgrad, kategori, identifieringskälla och en komprimerad meny med åtgärder.":::
+    
+    Titta på aviseringsinformationen och enhetens tidslinje och utför de vanliga undersökningsstegen.
 
 ## <a name="logging-installation-issues"></a>Loggningsinstallationsproblem
 

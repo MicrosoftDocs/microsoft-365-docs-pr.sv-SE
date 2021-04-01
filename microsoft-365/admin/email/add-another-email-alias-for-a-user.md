@@ -22,21 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Läs om hur du kan ha mer än en e-postadress, ett så kallat e-postalias, kopplat till ditt Microsoft 365 för företag-konto. '
-ms.openlocfilehash: 590782f7b22b1d26abef83f884d45da567f0425c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a44271cdbf52136e61702697a960cc3cbcd8119d
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915956"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471007"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Lägga till ytterligare ett e-postalias för en användare
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
   
 Den här artikeln är för Microsoft 365-administratörer som har företagsprenumerationer. Den är inte avsedd för hemanvändare.
   

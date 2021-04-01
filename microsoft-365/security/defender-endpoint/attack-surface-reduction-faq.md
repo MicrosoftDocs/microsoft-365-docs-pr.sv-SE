@@ -14,13 +14,14 @@ ms.author: v-maave
 ms.reviewer: ''
 manager: dansimp
 ms.custom: asr
+ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7685bd70d85ecebe759ade762b78ee2c3639cea8
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 71c3f89b721039753709d65daa135cad74a81711
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51069834"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476466"
 ---
 # <a name="attack-surface-reduction-frequently-asked-questions-faq"></a>Vanliga frågor och svar om att minska attackytan
 
@@ -37,7 +38,7 @@ ASR var ursprungligen en funktion i paketet med sårbarhetsskydd-funktioner som 
 
 ## <a name="do-i-need-to-have-an-enterprise-license-to-run-asr-rules"></a>Måste jag ha en företagslicens för att köra ASR-regler?
 
-Hela uppsättningen ASR-regler och funktioner stöds endast om du har en företagslicens för Windows 10. Ett begränsat antal regler kan fungera utan en företagslicens. Om du har Microsoft 365 Business anger du Microsoft Defender Antivirus som primär säkerhetslösning och aktiverar reglerna via PowerShell. ASR-användning utan en företagslicens stöds emellertid inte officiellt och de fullständiga funktionerna i ASR är inte tillgängliga.
+Hela uppsättningen ASR-regler och funktioner stöds endast om du har en företagslicens för Windows 10. Ett begränsat antal regler kan fungera utan en företagslicens. Om du har Microsoft 365 Business anger du Microsoft Defender Antivirus som primär säkerhetslösning och aktiverar reglerna via PowerShell. Det finns inget officiellt stöd för att använda ASR utan en företagslicens och du kommer inte att kunna använda de fullständiga funktionerna i ASR.
 
 Mer information om Windows-licensiering finns i [Windows 10-licensiering](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) och volymlicensieringsguiden [för Windows 10.](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)
 
@@ -49,11 +50,56 @@ Ja. ASR stöds för Windows Enterprise E3 och högre.
 
 Alla regler som stöds med E3 stöds också med E5.
 
-E5 har även lagt till större integrering med Defender för Endpoint. Med E5 kan du använda Defender för [Endpoint](https://docs.microsoft.com/microsoft-365/security/defender/monitor-devices?view=o365-worldwide&preserve-view=true#monitor-and-manage-asr-rule-deployment-and-detections) för att övervaka och granska analyser av aviseringar i realtid, finjustera undantag för regler, konfigurera ASR-regler och visa listor med händelserapporter.
+E5 lägger till större integrering med Defender för Endpoint. Med E5 kan du visa aviseringar i realtid, finjustera undantag för regler, konfigurera ASR-regler och visa listor med händelserapporter.
 
 ## <a name="what-are-the-currently-supported-asr-rules"></a>Vilka asr-regler stöds för närvarande?
+ASR har för närvarande stöd för alla regler nedan.
 
-ASR har för närvarande stöd för alla regler nedan:
+## <a name="what-rules-to-enable-all-or-can-i-turn-on-individual-rules"></a>Vilka regler bör aktiveras? Alla, eller kan jag aktivera enskilda regler?
+För att hjälpa dig ta reda på vad som passar bäst för din miljö rekommenderar vi att du aktiverar ASR-regler i [granskningsläge.](audit-windows-defender.md) Med den här metoden kan du avgöra hur det kan påverka organisationen. Till exempel dina affärsprogram.
+
+## <a name="how-do-asr-rules-exclusions-work"></a>Hur fungerar undantag för ASR-regler?
+Om du lägger till ett undantag för ASR-regler påverkar det alla ASR-regler.
+Följande två specifika regler stöder inte undantag:
+
+|Regelnamn|GUID|Undantag & mappar|
+|:--|:--|:--|
+|Blockera JavaScript eller VBScript från att starta hämtat körbart innehåll|D3E037E1-3EB8-44C8-A917-57927947596D|Stöds inte|
+|Blockera beständighet via WMI-händelseprenumeration|e6db77e5-3df2-4cf1-b95a-636979351e5b|Stöds inte|
+
+ASR-regler utesluter jokertecken, sökvägar och miljövariabler. Mer information om hur du använder jokertecken i ASR-regler finns i konfigurera och validera undantag baserat på [filtillägg och mappplats.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus)
+
+Tänk på följande om ASR-undantag för regler (inklusive jokertecken och env). variabler):
+
+- UNDANTAG för ASR-regler är oberoende av Defender AV-undantag
+- Jokertecken kan inte användas för att definiera en enhetsbeteckning
+- Om du vill utesluta fler än en mapp i en sökväg använder du flera instanser av \ för att ange flera kapslade mappar (till exempel \* c:\Mapp \* \* \Test)
+- Microsoft Endpoint Configuration Manager *stöder inte* jokertecken (* eller ?)
+- Om du vill utesluta en fil som innehåller slumpmässiga tecken (automatisk generering av filer) kan du använda symbolen "?", till exempel C:\Mapp\fileversion?. docx)
+- ASR-undantag i Grupprincip stöder inte citattecken (motorn hanterar inbyggda långa sökvägar, blanksteg osv., så du behöver inte använda citattecken)
+- ASR-reglerna körs under NT AUTHORITY\SYSTEM-konto, så miljövariabler begränsas till maskinvariabler.
+
+
+
+## <a name="how-do-i-know-what-i-need-to-exclude"></a>Hur vet jag vad jag behöver utesluta?
+Olika ASR-regler har olika skyddsflöden. Tänk alltid på vad ASR-regeln du konfigurerar skyddar mot och hur det faktiska körningsflödet panorerar ut.
+
+Exempel: Blockera att autentiseringsuppgifter stjäls från **undersystemet** i Windows lokala säkerhetsutfärdare Läsa direkt från LSASS-processen (Local Security Authority Subsystem) kan vara en säkerhetsrisk eftersom det kan exponera företagets autentiseringsuppgifter.
+
+Den här regeln förhindrar att icke betrodda processer har direkt åtkomst till LSASS-minnet. När en process försöker använda funktionen OpenProcess() för att komma åt LSASS, med åtkomst till höger PROCESS_VM_READ, blockeras åtkomsten specifikt av regeln.
+
+:::image type="content" source="images/asrfaq1.png" alt-text="blockera att autentiseringsuppgifter stjäl LSASS":::
+
+I exemplet ovan gäller att om du var tvungen att skapa ett undantag för processen där åtkomsten till höger blockerades skulle filnamnet tillsammans med den fullständiga sökvägen uteslutas från att blockeras och när åtkomst till LSASS-processminnet har tillåts. Värdet 0 innebär att ASR-reglerna ignorerar den här filen/processen och inte blockerar/granskar den.
+
+:::image type="content" source="images/asrfaq2.png" alt-text="undanta filer som":::
+
+## <a name="what-are-the-rules-microsoft-recommends-enabling"></a>Vilka regler rekommenderar Microsoft att aktivera?
+
+Vi rekommenderar att du aktiverar alla möjliga regler. Det finns dock vissa fall där du inte bör aktivera en regel. Vi rekommenderar till exempel inte att du aktiverar regeln för att blockera processskapanden som kommer från PSExec- och WMI-kommandon om du använder Microsoft Endpoint Configuration Manager (eller System Center Configuration Manager - SCCM) för att hantera slutpunkterna.
+
+Vi rekommenderar att du läser varje regelspecifik information och/eller varningar som finns tillgängliga i vår [offentliga dokumentation.](/microsoft-365/security/defender-endpoint/attack-surface-reduction.md)
+som sträcker sig över flera skyddpelare som Office, Autentiseringsuppgifter, Skript, E-post och så vidare. Alla ASR-regler, förutom blockering genom WMI-händelseprenumeration, stöds i Windows 1709 och senare:
 
 * [Blockera körbart innehåll från e-postklient och webbaserad e-post](attack-surface-reduction.md#block-executable-content-from-email-client-and-webmail)
 * [Blockera alla Office-program från att skapa underordnade processer](attack-surface-reduction.md#block-all-office-applications-from-creating-child-processes)
@@ -136,7 +182,7 @@ Att aktivera den här regeln ger inte ytterligare skydd om du har [aktiverat LSA
 ## <a name="see-also"></a>Se även
 
 * [Översikt över minskning av attackytan](attack-surface-reduction.md)
-* [Utvärdera minskningsregler för attackytor](evaluate-attack-surface-reduction.md)
-* [Anpassa minskningsregler för attackytor](customize-attack-surface-reduction.md)
-* [Aktivera minskningsregler för attackytor](enable-attack-surface-reduction.md)
+* [Utvärdera regler för minskning av attackytan](evaluate-attack-surface-reduction.md)
+* [Anpassa regler för minskning av attackytan](customize-attack-surface-reduction.md)
+* [Aktivera regler för minskning av attackytan](enable-attack-surface-reduction.md)
 * [Kompatibilitet med Microsoft Defender med annat antivirusprogram/program mot skadlig programvara](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

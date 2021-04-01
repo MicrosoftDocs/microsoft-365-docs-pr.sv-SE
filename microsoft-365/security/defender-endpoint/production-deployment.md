@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8965594789c3c96c043e3cd1a8922d9ba996ef47
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 7abf1c9e4115c928ae581da3789270fd8ed036d3
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222447"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476316"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Konfigurera Microsoft Defender för distribution av Slutpunkt
 
@@ -39,7 +39,7 @@ ms.locfileid: "51222447"
 
 Distribution av Defender för Endpoint är en process i tre steg:
 
-| [![distributionsfas – förbereda](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Fas 1: Förbereda](prepare-deployment.md) | ![distributionsfas – konfiguration](images/phase-diagrams/setup.png)<br>Fas 2: Konfigurera | [![distributionsfas – onboard](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Fas 3: Introduktion](onboarding.md) |
+| [![distributionsfas – förbereda](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Fas 1: Förbereda](prepare-deployment.md) | ![distributionsfas – konfiguration](images/phase-diagrams/setup.png)<br>Fas 2: Installation | [![distributionsfas – onboard](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Fas 3: Introduktion](onboarding.md) |
 | ----- | ----- | ----- |
 | | *Du är här!*||
 
@@ -124,7 +124,7 @@ Microsoft Defender för slutpunkts sensoren kräver Microsoft Windows HTTP (WinH
 
 -   Web Proxy Autodiscovery Protocol (WPAD)
 
-Om transparent proxy eller WPAD har implementerats i nätverkstopologin behöver du inte göra några särskilda konfigurationsinställningar. Mer information om undantag för slutpunkts-URL i proxyn finns i avsnittet URL-adresser för [proxytjänsten](production-deployment.md#proxy-service-urls) i det här dokumentet för URL:er som tillåts eller i Konfigurera enhetsproxy och [Internetanslutningsinställningar.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
+Om transparent proxy eller WPAD har implementerats i nätverkstopologin behöver du inte göra några särskilda konfigurationsinställningar. Mer information om undantag för slutpunkts-URL för slutpunkt i proxyn finns i avsnittet Url-adresser för [proxytjänsten](production-deployment.md#proxy-service-urls) i det här dokumentet för listan Tillåtna URL:er eller Konfigurera enhetsproxy och [Internetanslutningsinställningar.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
 
 **Manuell statisk proxykonfiguration:**
 

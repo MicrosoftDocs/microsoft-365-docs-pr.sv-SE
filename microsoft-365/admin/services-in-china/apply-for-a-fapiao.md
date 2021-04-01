@@ -21,17 +21,14 @@ search.appverid:
 ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
 description: Lär dig hur du skickar din Fapiao-begäran till 21Vianets Fapiao-hanteringssystem när du har gjort en betalning i Office 365 som drivs av 21Vianet i Kina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 681d2d79c510c773d7597c62811256458e3d166d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d9f75dfd00bb547e9d2e0f53826e5bc50926de39
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914480"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470959"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>Ansök om en Fapiao för Office 365 som drivs av 21Vianet
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 Du kan skicka din Fapiao-begäran till 21Vianets Fapiao-hanteringssystem ungefär tre dagar efter att du har betalat. När du har skickat din Fapiao-begäran behandlas den om två dagar.
   

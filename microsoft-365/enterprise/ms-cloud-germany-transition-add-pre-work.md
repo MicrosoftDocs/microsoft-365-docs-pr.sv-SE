@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: Arbeta i förväg när du flyttar från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i den nya tyska datacenterområdet.'
-ms.openlocfilehash: fb352c17d9868cf5c42034e198be63b6e0543dbb
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 9f5a38eae6d42f992879f97b8e8e1e8e6c4d56c3
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445608"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476355"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Före migreringen från Microsoft Cloud Deutschland
 
@@ -102,12 +102,13 @@ Läsa och använda [ADFS-migreringsstegen](ms-cloud-germany-transition-add-adfs.
 
 <!-- before phase 5 -->
 
-**Gäller för:** Exchange Online-kunder som har aktiverat delning av kalender och tillgängligt adressutrymme<br>
+**Gäller för:** Exchange Online-kunder<br>
 **När den används:** Någon tid före slutet av fas 9
 
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
-| Meddela externa partner om den kommande övergången till Office 365-tjänster. | I konfigurationer av tillgänglighetsadressutrymmet går det att dela ledig/upptagen-information med Office 365. | Om du inte gör det kan det leda till service- eller klientfel i en senare fas av kundmigrering. |
+| Meddela externa partner om den kommande övergången till Office 365-tjänster. |  Kunderna måste meddela sina partner som de har aktiverat för delning av kalender och tillgänglighet för adressutrymme (tillåt delning av ledig/upptagen-information med Office 365). Tillgänglighetskonfigurationen måste gå över till att använda [globala Office 365-slutpunkter](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) när Exchange Online-migreringen har slutförts. | Om du inte gör det kan det leda till service- eller klientfel i en senare fas av kundmigrering. |
+| Meddela användarna om obligatoriska IMAP4-/POP3-/SMTP-klientändringar. | Användare som har enhetsanslutningar till Microsoft Cloud Deutschland-slutpunkter för klientprotokoll IMAP4, POP3 och SMTP måste manuellt uppdatera sina klientenheter för att kunna byta till [globala Office 365-slutpunkter.](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) | Informera i förväg om det här beroendet till användare av dessa protokoll och se till att de antingen byter till Outlook Mobile eller Outlook på webben under den här migreringen. Om det inte går att uppdatera klientens slutpunkter misslyckas klientanslutningen mot Microsoft Cloud Deutschland när användarpostlådor migreras. |
 ||||
 
 ### <a name="exchange-online-hybrid-configuration"></a>Exchange Online-hybridkonfiguration

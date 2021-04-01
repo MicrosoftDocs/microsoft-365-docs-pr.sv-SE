@@ -23,21 +23,14 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Läs om hur du köper ett domännamn i Microsoft 365.
-ms.openlocfilehash: 24c6ac017cf25e1a40148e7a2c982e9d1068664b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: eb0520f605715c3403e1ce0134aa60abed0f6751
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915680"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470517"
 ---
 # <a name="buy-a-domain-name"></a>Köpa ett domännamn
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
  *Om du vill lägga till, ändra eller ta bort **domäner måste** du vara **global administratör** för ett [företags- eller företagsplan.](https://products.office.com/business/office) Dessa ändringar påverkar hela *klientorganisationen, anpassade* administratörer *eller vanliga* användare kommer inte att kunna göra dessa ändringar.*  
 

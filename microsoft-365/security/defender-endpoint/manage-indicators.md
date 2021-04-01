@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 670c6449c1121bc329b1dfb37cd1d9948c99a3f8
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 481051b74c1be88ba78bbd44e4fc0c174ed0bdad
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379304"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470899"
 ---
 # <a name="create-indicators"></a>Skapa indikatorer
 
@@ -50,6 +50,9 @@ Samma lista över indikatorer används av agenten för förebyggande åtgärder.
 
 **Motor för automatisk undersökning och åtgärder**<BR>
 Automatisk undersökning och åtgärd fungerar på samma sätt. Om en indikator är inställd på "Tillåt" ignorerar automatiserad undersökning och åtgärd en "dålig" bedömning för den. Om denna anges till "Block" behandlas automatisk undersökning och åtgärd som "dåligt".
+
+> [!NOTE]
+> Inställningen EnableFileHashComputation beräknar filhash för certifikatet och fil-IoC vid filsökningar. Den stöder IoC-tillämpning av hashtaggar och certifikat tillhör betrodda program. Den aktiveras samtidigt som den inaktiveras med inställningen tillåts eller blockeras. EnableFileHashComputation aktiveras manuellt via grupprincip och är inaktiverat som standard.
 
 
 De aktuella åtgärderna som stöds är:

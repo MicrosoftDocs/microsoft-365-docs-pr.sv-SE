@@ -22,21 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Ta bort licens från en delad postlåda för att tilldela den till en annan användare. '
-ms.openlocfilehash: 1acd549936212db7f722355ed1f2518ff6bbac18
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 82ec863d5c2ae550fb401e71744715a27c89d382
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915692"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470625"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Ta bort en licens från en delad postlåda
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Delade postlådor kräver vanligtvis inte en licens. Följ de här anvisningarna om du vill ta bort en licens från en delad postlåda så att du kan tilldela den till en användare eller returnera licensen så att du inte betalar för en licens som du inte behöver.
 

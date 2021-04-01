@@ -22,21 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Lär dig att distribuera tillägg till användare och grupper i organisationen med hjälp av centraliserad distribution i administrationscentret.
-ms.openlocfilehash: 9ded0294912a3c3c99e62913bcdc349de7bae1b5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 996ef34f1fc8d9663f6fa59f13a56a169b7edd11
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915392"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470529"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Distribuera tillägg i administrationscentret
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Office-tillägg hjälper dig att anpassa dina dokument och förenkla åtkomsten till information på webben (se Börja använda [dina Office-tillägg).](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) Som administratör kan du distribuera Office-tillägg för användarna i organisationen med hjälp av funktionen för centraliserad distribution i administrationscentret för Microsoft 365. Centraliserad distribution är den rekommenderade och mest funktionsrika lösningen för de flesta administratörer för att distribuera tillägg till användare och grupper inom en organisation.
 

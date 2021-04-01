@@ -18,18 +18,18 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: Mer information om kundupplevelsen när du flyttar från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i den nya tyska datacenterregion.'
-ms.openlocfilehash: ecc549ca4d0bb8122de3bf092c004c919e958d5e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 8e28b9d6c8cc23e128234973039a4873b327e9fd
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165651"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476378"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>Åtgärder i migreringsfaser och påverkan på migreringen från Microsoft Cloud Deutschland (avancerat)
 
-Klientmigrering från Microsoft Cloud Deutschland till Tyskland-regionen för Microsofts Office 365-tjänster utförs som en uppsättning faser och deras konfigurerade åtgärder för varje arbetsbelastning. I den här bilden visas de nio faserna av migrering till de nya tyska datacenteren.
+Klientmigrering från Microsoft Cloud Deutschland till Tyskland-regionen för Microsofts Office 365-tjänster utförs som en uppsättning faser och deras konfigurerade åtgärder för varje arbetsbelastning. I den här bilden visas de tio faserna av migreringen till de nya tyska datacenteren.
 
-![De nio faserna av migreringen till de nya Tyskland-datacenter](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![De tio migreringsfaserna till de nya Tyskland-datacenter](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
 Följande avsnitt ger ytterligare information om kundupplevelser när du flyttar från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i den nya tyska datacenterområdet.
 
@@ -124,14 +124,14 @@ Om du använder en Hybrid Exchange-konfiguration:
 
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
-|  Alla SharePoint Online-, OneDrive för företag- och Exchange Online-platser har migrerats tillsammans med Säkerhets- och efterlevnadscenter (SCC). | All eDiscovery-aktivitet bör köras från den globala klientorganisationen. Sökningarna lyckas nu till 100 %.  Eventuella fel bör följa vanliga supportkanaler. | Inga |
+|  Alla SharePoint Online-, OneDrive för företag- och Exchange Online-platser har migrerats tillsammans med Säkerhets- och efterlevnadscenter (SCC). | All eDiscovery-aktivitet bör köras från den globala klientorganisationen. Sökningarna lyckas nu till 100 %.  Eventuella fel bör följa vanliga supportkanaler. | Ingen |
 ||||
 
 **Gäller för:**  Alla kunder som har tillämpat en bevarandeprincip under före migreringen
 
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
-| Ta bort bevarandeprinciper för hela organisationen som skapades före migreringen | Kunder kan ta bort de organisationsomfattande bevarandeprinciper som skapades under kundernas arbete före migreringen. | Inga |
+| Ta bort bevarandeprinciper för hela organisationen som skapades före migreringen | Kunder kan ta bort de organisationsomfattande bevarandeprinciper som skapades under kundernas arbete före migreringen. | Ingen |
 ||||
 
 ## <a name="next-step"></a>Nästa steg

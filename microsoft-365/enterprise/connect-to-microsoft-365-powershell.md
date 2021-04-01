@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Anslut till din Microsoft 365-klientorganisation med PowerShell för Microsoft 365 för att utföra uppgifter i administrationscenter från kommandoraden.
-ms.openlocfilehash: 58af42958e9b50ee8e39cbd7bd5aab53812e444c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 08005ba1cbdcbfec14585d22614129a9b33352b9
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919182"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445762"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Ansluta till Microsoft 365 med PowerShell
 
@@ -84,7 +84,20 @@ De här stegen krävs bara en gång på din dator. Men du måste troligen uppdat
     Install-Module -Name AzureAD
     ```
 
-   Om du uppmanas att installera en modul från en databas som inte är betrodd skriver du **Y** och trycker på Retur.
+  Som standard är PowerShell-galleriet (PSGallery) inte konfigurerat som en betrodd lagringsplats för **PowerShellGet**. Första gången du använder PSGallery visas följande meddelande:
+
+```console
+Untrusted repository
+
+You are installing the modules from an untrusted repository. If you trust this repository, change
+its InstallationPolicy value by running the `Set-PSRepository` cmdlet.
+
+Are you sure you want to install the modules from 'PSGallery'?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
+```
+
+Svara **Ja** eller **Ja till alla** för att fortsätta med installationen.
+
 
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>Steg 2: Ansluta till Azure AD för din Microsoft 365-prenumeration
 

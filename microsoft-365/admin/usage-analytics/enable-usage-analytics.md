@@ -20,21 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Lär dig hur du börjar samla in data för klientorganisationen med hjälp av mallappen Microsoft 365 användningsanalys i Power BI.
-ms.openlocfilehash: 1ef50380041650763961ffbe6e01c63b26800ee3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 734712994d47fcb234ba988bb4d185d09f3267d0
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913880"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471063"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Aktivera Microsoft 365 användningsanalyser
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Microsoft 365 användningsanalyser är ännu inte tillgängliga för Microsoft 365 US Government Community.
   

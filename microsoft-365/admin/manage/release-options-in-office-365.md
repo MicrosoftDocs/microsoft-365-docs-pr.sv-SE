@@ -22,21 +22,14 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Lär dig konfigurera alternativet för nya produkter och uppdateringar av funktioner i administrationscentret för Microsoft 365.
-ms.openlocfilehash: e909cdf35ba9dd8282540783f7c362e5ae49212e
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 6c5d505f0ece47b0a47df8b7ed1dc015afe93e82
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034085"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470577"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Konfigurera alternativen Standard eller Riktad version
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 > [!IMPORTANT]
 > De Microsoft 365-uppdateringar som beskrivs i den här artikeln gäller för Microsoft 365, SharePoint Online och Exchange Online. De här versionsalternativen är riktade och bästa möjliga sätt att släppa ändringar i Microsoft 365, men kan inte alltid garanteras för alla uppdateringar. De gäller inte för Microsoft 365-appar, Skype för företag, Microsoft Teams eller relaterade tjänster. Information om versionsalternativ för Microsoft 365-appar finns i Översikt över [uppdateringskanaler för Microsoft 365-appar.](/deployoffice/overview-update-channels)
