@@ -95,7 +95,7 @@
         - name: Säker som standard
           href: secure-by-default.md
         - name: Konfigurera skydd mot nätfiske-policyer i Defender för Office 365.
-          href: configure-atp-anti-phishing-policies.md
+          href: configure-mdo-anti-phishing-policies.md
         - name: Konfigurera principer för skydd mot skadlig kod
           href: configure-anti-malware-policies.md
         - name: Konfigurera principer för skräppostskydd
