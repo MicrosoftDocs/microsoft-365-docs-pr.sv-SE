@@ -16,8 +16,14 @@
       href: create-a-content-center.md
     - name: Skapa en klassificerare
       href: create-a-classifier.md
+    - name: Duplicera en modell
+      href: duplicate-a-model.md
+    - name: Byt namn på en modell
+      href: rename-a-model.md
     - name: Skapa en extraktor
       href: create-an-extractor.md
+    - name: Byta namn på en extraktor
+      href: rename-an-extractor.md
     - name: Förklaringstyper
       href: explanation-types-overview.md
     - name: Använda en modell

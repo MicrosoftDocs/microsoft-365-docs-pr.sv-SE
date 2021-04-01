@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Sammanfattning Förstå migreringen från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i den nya tyska datacenterområdet.
-ms.openlocfilehash: 18df7c43e21fb186dee56dabc29a67654f0f6882
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7e170967e1670433a7d28753430f0cb15818039b
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923774"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476643"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migrering från Microsoft Cloud Deutschland till Office 365-tjänster i nya tyska datacenterområden
 
@@ -63,9 +63,9 @@ Office 365 Video dras tillbaka den 1 mars 2021. Om du väljer att migrera Din Of
 
 ## <a name="how-is-the-migration-organized"></a>Hur organiseras migreringen?
 
-I den här bilden visas de nio faserna av migrering till de nya tyska datacenteren.
+I den här bilden visas de tio faserna av migreringen till de nya tyska datacenteren.
 
-![De nio faserna av migreringen till de nya Tyskland-datacenter](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![De tio migreringsfaserna till de nya Tyskland-datacenter](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
 De här faserna startar [när du väljer att migrera.](./ms-cloud-germany-migration-opt-in.md) De flesta av migreringsfaserna körs som serviceåtgärder på backend med minimal kundinteraktion som krävs och körs en fas efter den andra. Start för ytterligare kundledda uppgifter och övergripande migreringsstatus meddelas via meddelandecentret i administrationscentret för Microsoft 365 under migreringsprocessen. Exempel på uppgifter kan vara DNS-uppdateringar som hanteras av kunder, omkonfigurering av hybridkonfiguration för Exchange-hybridkunder eller Azure-migrering.
 
@@ -93,6 +93,8 @@ Du får ett meddelande om migreringsförloppet med inlägg i Meddelandecenter. I
 - Dynamics är klar
 - Power BI slutfört
 - Den slutliga tjänstefasen är slutförd
+
+Efter den slutliga övergången av Azure AD till den globala tjänsten förväntas alla klienter och program fullständigt övergå till att använda rätt slutpunkter. Det finns ett 30-dagarsfönster efter den slutliga övergången där det kan vara möjligt att fortsätta hämta Azure AD-tokens från Microsoft Cloud Deutschland-tjänsten. När 30-dagarsfönstret går ut kan klienter och program inte längre komma åt Azure AD-slutpunkterna för Microsoft Cloud Deutschland. I det här läget går det inte att använda program eller användaråtkomst. Du måste se till att alla användare och program migreras till rätt slutpunkter innan det här fönstret stängs. 
 
 ## <a name="moving-to-the-new-german-datacenter-regions"></a>Flytta till de nya tyska datacenterområdena
 

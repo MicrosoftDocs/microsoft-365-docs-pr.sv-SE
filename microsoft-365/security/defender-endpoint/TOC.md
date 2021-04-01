@@ -390,6 +390,7 @@
 ## Referens
 ### [Hantering och API:er]()
 #### [Översikt över hantering och API:er](management-apis.md)
+#### [API Viktig information](api-release-notes.md)
 #### [Microsoft Defender för Endpoint API]()
 ##### [Komma igång]()
 ###### [Licens och villkor för Microsoft Defender för Endpoint API](api-terms-of-use.md)
@@ -586,6 +587,5 @@
 ##### [Nätverksskydd](troubleshoot-np.md)
 ##### [Regler för minskning av attackytan](troubleshoot-asr.md)
 
-# [Microsoft 365-säkerhet](../index.yml)
-# [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+# [Microsoft 365 Defender](../index.yml)
 # [Microsoft Defender för Office 365](../office-365-security/overview.md)

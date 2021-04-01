@@ -1,5 +1,5 @@
 ---
-title: Hantera Windows 10-enheter med flera sessioner i virtuellt Windows-skrivbord
+title: Registrera Windows 10-multisessionsenheter i det Windows Virtual Desktop
 description: Läs mer i den här artikeln om onboarding av Windows 10-enheter med flera sessioner i windows virtuella skrivbord
 keywords: Windows Virtual Desktop, WVD, microsoft defender, slutpunkt, onboard
 search.product: eADQiWindows 10XVcnh
@@ -13,24 +13,20 @@ ms.topic: article
 author: dansimp
 ms.author: dansimp
 ms.custom: nextgen
-ms.date: 09/10/2020
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: bfd447120e171fed063b3224e3a47c2ef38f0f16
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 3f925fdc514c5e53b50f748d991f54d20fb49bd0
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222617"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488151"
 ---
-# <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Hantera Windows 10-enheter med flera sessioner i virtuellt Windows-skrivbord 
+# <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Registrera Windows 10-multisessionsenheter i det Windows Virtual Desktop 
 6 minuter att läsa 
 
 Gäller för: 
 - Windows 10 med flera sessioner på Windows Virtual Desktop (WVD) 
-
-> [!WARNING]
-> Microsoft Defender för slutpunktssupport för Windows-scenarier med flera sessioner för skrivbordsversionen är för närvarande i förhandsversion och begränsad till 25 samtidiga sessioner per värd/VM. Det finns dock fullt stöd för scenarier med en enskild session på virtuellt Windows-skrivbord.
 
 Microsoft Defender för slutpunkten har stöd för övervakning av både VDI- och Windows Virtual Desktop-sessioner. Beroende på organisationens behov kan du behöva implementera VDI- eller Windows Virtual Desktop-sessioner för att hjälpa dina anställda att komma åt företagsdata och appar från en ohanterad enhet, fjärransluten plats eller liknande scenario. Med Microsoft Defender för Endpoint kan du övervaka dessa virtuella datorer efter avvikande aktivitet.
 

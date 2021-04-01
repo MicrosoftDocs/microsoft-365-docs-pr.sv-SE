@@ -4,16 +4,20 @@ description: Beskriver vad som ingår i Microsoft Hanterat skrivbord som en tjä
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
+ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c51ebdbcd2a8d6d13f5ba0009d470581e317a365
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: a107c6364e6766094724972e931606003e0c87f7
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920438"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445202"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Tjänstbeskrivning av Microsoft Hanterat skrivbord
 
@@ -23,7 +27,7 @@ Microsoft Hanterat skrivbord är en tjänst som ger dina användare en säker, m
 - Enhetskonfiguration
 - Funktioner som skyddar användare och enheter, inklusive Windows Hello, BitLocker, SecureBoot och virtualiseringsbaserad säkerhet enligt Microsoft bästa metoder
 - Enhetssäkerhetsövervakning och saneringstjänster
-- App kompatibilitet via [Desktop App Assure](/fasttrack/win-10-desktop-app-assure)
+- Appkompatibilitet, via [App Assure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure)
 - Uppdateringshantering för Windows 10-appar och Microsoft 365-appar för företag
 - Analysdata om enhets- och app användning
 - IT-stöd för dina användare
@@ -31,7 +35,7 @@ Microsoft Hanterat skrivbord är en tjänst som ger dina användare en säker, m
 
 Mer information om de specifika tjänsterna i Microsoft Hanterat skrivbord finns i andra artiklar i det här avsnittet. Om du redan har beslutat att börja använda Microsoft Hanterat skrivbord beskriver artiklarna i [Förberedelser för Microsoft Hanterat skrivbord](../get-ready/index.md) förberedelsestegen för att använda tjänsten.
 
-- [Regioner och språk som stöds i Microsoft Hanterat skrivbord](regions-languages.md) ger information om de regioner och språk som stöds av tjänsten.
+- [Regioner och språk som stöds](regions-languages.md) förklarar vilka regioner och språk som stöds av tjänsten.
 - För att säkerställa bästa möjliga upplevelse för dina användare stöds endast vissa enheter av Microsoft Hanterat skrivbord. [Programenheter](device-list.md) anger exakta enhetsmodeller och konfigurationer som du kan använda med tjänsten, oavsett om du tillhandahåller dem eller arbetar med en partner.
 - [Enhetstjänster](device-services.md) anger vilka enhetsrelaterade tjänster Microsoft tillhandahåller prenumeranter.
 - [Enhetskonfiguration](device-policies.md) klargör standard- och säkerhetspolicyn för hantering av mobila enheter som tjänsten gäller för registrerade enheter.

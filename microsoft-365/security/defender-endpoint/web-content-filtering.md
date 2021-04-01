@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a8ab1ba1f0dc1bb629e438380b7b77e1ed221f08
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 16f0d96b75ec7035ca133f75a83df1f284ee5c4b
+ms.sourcegitcommit: 847b0920016ae20c82a0501bda6019cd940482df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186035"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51484750"
 ---
 # <a name="web-content-filtering"></a>Filtrering av webbinnehåll
 
@@ -56,11 +56,11 @@ Blockeringen för webbläsare som stöds av tredje part tillhandahålls av Netwo
 
 Om du vill ha en mer användarvänlig upplevelse i webbläsaren kan du använda Microsoft Edge.
 
-## <a name="prerequisites"></a>Krav
+## <a name="prerequisites"></a>Förutsättningar
 
 Innan du provar den här funktionen bör du kontrollera att du har följande krav:
 
-- Windows 10 Enterprise, E5-licens ELLER Microsoft 365 E3 + Microsoft 365 E5-säkerhets tillägg.
+- Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5-säkerhets tillägg eller fristående Microsoft Defender för slutpunkt-licens. 
 - Åtkomst till Microsoft Defender Säkerhetscenter-portalen
 - Enheter som kör Windows 10 Anniversary Update (version 1607) eller senare med den senaste Mo MOB-uppdateringen.
 
@@ -159,6 +159,8 @@ Använd tidsintervallsfiltret längst upp till vänster på sidan för att välj
 - Endast Microsoft Edge stöds om enhetens OS-konfiguration är Server (cmd > Systeminfo > OS Configuration). Nätverksskydd stöds endast i inspektera-läge på serverenheter, som ansvarar för att skydda trafiken mellan webbläsare som stöds.
 
 - Enheter som inte tilldelats visas med felaktiga data i rapporten. I rapportens information > pivot för enhetsgrupper visas eventuellt en rad med ett tomt enhetsgruppsfält. Den här gruppen innehåller dina otilldelade enheter innan de läggs till i den angivna gruppen. Rapporten för den här raden kanske inte innehåller korrekt antal enheter eller antal åtkomstvärden.
+
+- Rapporterna för webbinnehållsfiltrering är för närvarande begränsade till att visa de 5 000 högsta posterna. Till exempel visar rapporten "Domäner" bara maximalt de 5 000 toppdomänerna för en viss filterfråga, om tillämpligt. 
 
 ## <a name="related-topics"></a>Relaterade ämnen
 

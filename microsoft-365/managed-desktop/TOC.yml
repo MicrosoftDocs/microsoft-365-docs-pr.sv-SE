@@ -15,7 +15,7 @@
     - name: Tjänstbeskrivning av Microsoft Hanterat skrivbord
       href: service-description/index.md
       items:
-        - name: Regioner och språk som stöds
+        - name: Regioner som stöds
           href: service-description/regions-languages.md
         - name: Produktens livscykel
           href: service-description/device-lifecycle.md
@@ -96,6 +96,8 @@
           href: get-started/company-portal.md
         - name: Aktivera Enterprise State Roaming
           href: get-started/enterprise-state-roaming.md
+        - name: Lokalisera användarupplevelsen
+          href: get-started/localization.md
         - name: Konfigurera enheter
           href: get-started/set-up-devices.md
           items:

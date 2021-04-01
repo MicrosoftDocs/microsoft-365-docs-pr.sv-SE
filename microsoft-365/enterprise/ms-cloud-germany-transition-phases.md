@@ -18,18 +18,18 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: Sammanfattning Förstå åtgärderna i migreringsfaserna och hur de påverkar flytten från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i den nya tyska datacenterområdet.
-ms.openlocfilehash: 53a8c9470093db9d57d8dc18f4242d1a596c6efd
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: ca24fff5e8b18128c55288352e65aa3cecfe3d81
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165639"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476619"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Åtgärder i migreringsfaser och påverkan på migreringen från Microsoft Cloud Deutschland (allmänt)
 
-Klientmigrering från Microsoft Cloud Deutschland (MCD) till regionen "Tyskland" av Microsofts globala Office 365-tjänster körs som en uppsättning faser och deras konfigurerade åtgärder för varje arbetsbelastning. I den här bilden visas de nio faserna av migrering till de nya tyska datacenteren.
+Klientmigrering från Microsoft Cloud Deutschland (MCD) till regionen "Tyskland" av Microsofts globala Office 365-tjänster körs som en uppsättning faser och deras konfigurerade åtgärder för varje arbetsbelastning. I den här bilden visas de tio faserna av migreringen till de nya tyska datacenteren.
 
-![De nio faserna av migreringen till de nya Tyskland-datacenter](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![De tio migreringsfaserna till de nya Tyskland-datacenter](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
 Migreringsprocessen slutförs under många veckor beroende på organisationens totala storlek och komplexitet. Under tiden migreringen pågår kan användare och administratörer fortsätta använda tjänsterna med märkbara ändringar i den här dokumentationen. Grafiken och tabellen definierar faser och steg under migreringen.
 
@@ -47,6 +47,8 @@ Migreringsprocessen slutförs under många veckor beroende på organisationens t
 |Power BI & Dynamics 365|15+ dagar|Microsoft|Migrera innehåll i Power BI och Dynamics 365.|
 |Slutför Azure AD|1–2 dagar|Microsoft|Slutför klientuppeställningen till hela världen.|
 |Clean-Up|1–2 dagar|Kund|Rensa upp äldre anslutningar till Microsoft Cloud Deutschland, till exempel AD FS (Active Directory Federation Services) Relying Party Trust, Azure AD Connect och Office-klienten startar om.|
+|Slutpunkter inaktiverade|30 dagar|Microsoft|30 dagar efter slutförande av Azure AD kommer Microsoft Cloud Deutschland Azure AD-tjänsten att stoppa slutpunktsåtkomst för den övergångs organisationen. Slutpunktsbegäranden, till exempel autentisering, kommer att misslyckas från och med nu mot Microsoft Cloud Deutschland-tjänsten. |
+
 
 Faserna och deras åtgärder säkerställer att kritiska data och upplevelser migreras till globala Office 365-tjänster. När klientorganisationen har lagts till i migreringskön slutförs varje arbetsbelastning som en uppsättning steg som körs på backend-tjänsten. Vissa arbetsbelastningar kan kräva åtgärder av administratören (eller användaren), eller så kan migreringen påverka användningen för faserna som körs och diskuteras i Hur [organiseras migreringen?](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
@@ -118,6 +120,7 @@ Om du vill ändra användarfoton under fas 5 kan du gå till [Exchange OnlineSet
 |Stoppa eller ta bort alla flyttningar av onboarding- eller offboarding-postlådor– de flyttar inte inkorgarna mellan Exchange lokalt och Exchange Online.  | Det säkerställer att flyttningsförfrågningar för postlådor inte misslyckas och att det inte uppstår ett fel. | Om du inte gör det kan det leda till att tjänsten eller Office-klienterna misslyckas. |
 | Exchange Online-postlådor flyttas från Microsoft Cloud Deutschland till globala Office 365-tjänster.| Exchange Online-konfigurationen lägger till den nya lokala tyska regionen i övergången. Region för globala Office 365-tjänster har angetts som standard, vilket gör att den interna belastningsutjämningstjänsten kan distribuera om postlådor till rätt standardområde i Office 365-tjänsterna. I den här övergången finns användarna på vardera sidan (MCD eller globala tjänster) i samma organisation och kan använda antingen URL-slutpunkten. |<ul><li>Gå över användare och tjänster från äldre MCD-URL:er (outlook.office.de) till nya URL-adresser för Office 365-tjänster ( `https://outlook.office365.com` ).</li><li>Användarna kan fortsätta att få åtkomst till tjänsten via äldre MCD-URL:er under migreringen, men de måste sluta använda de äldre webbadresserna när migreringen slutförts.</li><li>Användarna bör gå över till att använda den globala Office-portalen för Office Online-funktionerna (Kalender, E-post, Kontakter). Navigering till tjänster som ännu inte har migrerats till Office 365-tjänster fungerar inte förrän de migreras. </li><li>Outlook Web App tillhandahåller inte de gemensamma mapparna under migreringen. </li></ul>|
 | Uppdatera anpassade DNS-inställningar för Automatisk upptäckt| Customer-managed DNS settings for AutoDiscover that currently point to Microsoft Cloud Deutschland need to be updated to refer to the Office 365 Global endpoint on completion of the Exchange Online phase (phase 5). <br> Befintliga DNS-poster där CNAME pekar autodiscover-outlook.office.de måste uppdateras så att de pekar på autodiscover.outlook.com. |  Begäran om tillgänglighet och samtal om tjänstidentifiering via AutoDiscover pekar direkt på Office 365-tjänsterna. Kunder som inte utför de här DNS-uppdateringarna kan få problem med tjänsten för automatisk upptäckt när migreringen har slutförs. |
+| Användarna måste uppdatera konfigurationen av POP3-, IMAP4- och SMTP-klient. | Användare som har enhetsanslutningar till Microsoft Cloud Deutschland-slutpunkter för klientprotokoll POP3, IMAP4 och SMTP måste manuellt uppdatera sina klientenheter för att kunna växla till globala slutpunkter för [Office 365](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) samtidigt som postlådemigrering till Office 365 Germany-regionen används. <br> smtp.office365.com : SMTP (TCP:587), outlook.office365.com : IMAP4 (TCP:993), POP3 (TCP:995)| Användare av dessa protokoll måste antingen byta till Outlook Mobile eller Outlook på webben medan postlådan transioneras och uppdatera IMAP4, POP3, SMTP-inställningar på klientenheter till de nya slutpunkterna när de är klara. Om det inte går att uppdatera klientens slutpunkter misslyckas klientanslutningen mot Microsoft Cloud Deutschland när användarpostlådor migreras. |
 ||||
 
 Ytterligare överväganden:
@@ -204,6 +207,18 @@ Kunder med Dynamics 365 kräver ytterligare engagemang för att migrera organisa
 ||||
 
 \*\* (i) Kunder med Microsoft Power BI måste vidta åtgärder i det här migreringsscenariot som definierats av den migreringsprocess som tillhandahålls. (ii) Om kunden inte kan vidta någon åtgärd kommer Microsoft inte att kunna slutföra migreringen. (iii) När Microsoft inte kan slutföra migreringen på grund av kundens inaktivitet upphör kundens prenumeration den 29 oktober 2021.
+
+## <a name="azure-ad-finalization-phase-9-10"></a>Azure AD-slutförande (fas 9, 10)
+
+**Gäller för:** Alla kunder
+
+När Office 365-klientorganisationen har slutfört det sista steget av migreringen [Azure AD-slutförande (fas 9)] går alla tjänster över till hela världen. Inga program eller användare ska ha åtkomst till resurser för klientorganisationen mot någon av Microsoft Cloud Deutschland-slutpunkterna. Efter 30 dagar efter att slutförandet kommer Microsoft Cloud Deutschland Azure AD-tjänsten att stoppa slutpunktsåtkomst för den övergångde klientorganisationen. Slutpunktsbegäranden, till exempel autentisering, kommer att misslyckas från och med nu mot Microsoft Cloud Deutschland-tjänsten. 
+
+| Steg | Beskrivning | Påverkan |
+|:-------|:-------|:-------|
+| Uppdatera användarslutpunkter | Se till att alla användare får åtkomst till tjänsten med hjälp av rätt globala Microsoft-slutpunkter |Efter migreringen 30 dagar slutar Microsoft Cloud Deutschland-slutpunkterna att respektera förfrågningar. klient- eller programtrafiken misslyckas.  |
+| Uppdatera Slutpunkter för Azure AD-program | Du måste uppdatera slutpunkter för autentisering, Azure Active Directory (Azure AD) Graph och MS Graph för dina program till slutpunkterna för Microsofts globala tjänst. | Efter migreringen 30 dagar slutar Microsoft Cloud Deutschland-slutpunkterna att respektera förfrågningar. klient- eller programtrafiken misslyckas. |
+||||
 
 ## <a name="office-apps"></a>Office-program
 
