@@ -23,135 +23,128 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Lär dig hur du återställer borttagna användarkonton och alla associerade data.
-ms.openlocfilehash: f3986ed1ba007dcac87bdfb9322ba5c5bf081b35
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 75e664c68dec13b857e4bd308d49e5b58d5edfc8
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903718"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471019"
 ---
-# <a name="restore-a-user"></a><span data-ttu-id="9a8d6-103">Återställa en användare</span><span class="sxs-lookup"><span data-stu-id="9a8d6-103">Restore a user</span></span>
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> <span data-ttu-id="9a8d6-104">Administrationscentret förändras.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-104">The admin center is changing.</span></span> <span data-ttu-id="9a8d6-105">Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).</span><span class="sxs-lookup"><span data-stu-id="9a8d6-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).</span></span>
-
-::: moniker-end
+# <a name="restore-a-user"></a><span data-ttu-id="c1e02-103">Återställa en användare</span><span class="sxs-lookup"><span data-stu-id="c1e02-103">Restore a user</span></span>
    
-<span data-ttu-id="9a8d6-p102">Om du återställer ett användarkonto inom 30 dagar från det att det togs bort, återställs kontot och alla associerade data. Användaren kan logga in med samma arbets- eller skolkonto. Postlådan återställs i sin helhet. Om du vill ta reda på hur mycket tid som återstår innan ett visst användarkonto inte längre kan återställas [kontaktar du oss](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="9a8d6-p102">When you restore a user account within 30 days after deleting it, the account and all associated data are restored. The user can sign in with the same work or school account. Their mailbox will be fully restored. To find out how much time remains before a specific user account can no longer be restored, [contact us](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="c1e02-p101">Om du återställer ett användarkonto inom 30 dagar från det att det togs bort, återställs kontot och alla associerade data. Användaren kan logga in med samma arbets- eller skolkonto. Postlådan återställs i sin helhet. Om du vill ta reda på hur mycket tid som återstår innan ett visst användarkonto inte längre kan återställas [kontaktar du oss](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="c1e02-p101">When you restore a user account within 30 days after deleting it, the account and all associated data are restored. The user can sign in with the same work or school account. Their mailbox will be fully restored. To find out how much time remains before a specific user account can no longer be restored, [contact us](../contact-support-for-business-products.md).</span></span>
   
-<span data-ttu-id="9a8d6-110">Här är några tips:</span><span class="sxs-lookup"><span data-stu-id="9a8d6-110">Here are a couple of tips:</span></span>
+<span data-ttu-id="c1e02-108">Här är några tips:</span><span class="sxs-lookup"><span data-stu-id="c1e02-108">Here are a couple of tips:</span></span>
   
-- <span data-ttu-id="9a8d6-111">Se till att det finns tillgängliga licenser att tilldela kontot.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-111">Make sure licenses are available to assign to the account.</span></span>
+- <span data-ttu-id="c1e02-109">Se till att det finns tillgängliga licenser att tilldela kontot.</span><span class="sxs-lookup"><span data-stu-id="c1e02-109">Make sure licenses are available to assign to the account.</span></span>
     
-- <span data-ttu-id="9a8d6-112">Om ditt företag använder Active Directory, se [Felsökning av borttagna konton i Office 365](https://support.microsoft.com/kb/2619308) för instruktioner om återställning av användarkonton.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-112">If your business uses Active Directory, see [How to troubleshoot deleted user accounts in Office 365](https://support.microsoft.com/kb/2619308) for instructions on restoring a user account.</span></span> 
+- <span data-ttu-id="c1e02-110">Om ditt företag använder Active Directory, se [Felsökning av borttagna konton i Office 365](https://support.microsoft.com/kb/2619308) för instruktioner om återställning av användarkonton.</span><span class="sxs-lookup"><span data-stu-id="c1e02-110">If your business uses Active Directory, see [How to troubleshoot deleted user accounts in Office 365](https://support.microsoft.com/kb/2619308) for instructions on restoring a user account.</span></span> 
     
-## <a name="restore-one-or-more-user-accounts"></a><span data-ttu-id="9a8d6-113">Återställa ett eller flera användarkonton</span><span class="sxs-lookup"><span data-stu-id="9a8d6-113">Restore one or more user accounts</span></span>
+## <a name="restore-one-or-more-user-accounts"></a><span data-ttu-id="c1e02-111">Återställa ett eller flera användarkonton</span><span class="sxs-lookup"><span data-stu-id="c1e02-111">Restore one or more user accounts</span></span>
 
-<span data-ttu-id="9a8d6-114">Du måste vara global Microsoft 365-administratör eller användarhanteringsadministratör för att kunna göra det här.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-114">You must be a Microsoft 365 global admin or user management admin to do these steps.</span></span> 
+<span data-ttu-id="c1e02-112">Du måste vara global Microsoft 365-administratör eller användarhanteringsadministratör för att kunna göra det här.</span><span class="sxs-lookup"><span data-stu-id="c1e02-112">You must be a Microsoft 365 global admin or user management admin to do these steps.</span></span> 
   
  
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="9a8d6-115">I administrationscentret går du till **sidan** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Användare borttagna</a> användare.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-115">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.</span></span>
+1. <span data-ttu-id="c1e02-113">I administrationscentret går du till **sidan** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Användare borttagna</a> användare.</span><span class="sxs-lookup"><span data-stu-id="c1e02-113">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="9a8d6-116">Gå till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=848041)och välj sedan **Användare** \> **borttagna användare.**</span><span class="sxs-lookup"><span data-stu-id="9a8d6-116">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and then select **Users** \> **Deleted users**.</span></span>
+1. <span data-ttu-id="c1e02-114">Gå till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=848041)och välj sedan **Användare** \> **borttagna användare.**</span><span class="sxs-lookup"><span data-stu-id="c1e02-114">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and then select **Users** \> **Deleted users**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="9a8d6-117">Gå till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=850627)och välj sedan **Användare** \> **borttagna användare.**</span><span class="sxs-lookup"><span data-stu-id="9a8d6-117">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), and then select **Users** \> **Deleted users**.</span></span>
+1. <span data-ttu-id="c1e02-115">Gå till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=850627)och välj sedan **Användare** \> **borttagna användare.**</span><span class="sxs-lookup"><span data-stu-id="c1e02-115">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), and then select **Users** \> **Deleted users**.</span></span>
 
 ::: moniker-end
 
-2. <span data-ttu-id="9a8d6-118">På sidan **Borttagna användare** markerar du namnen på de användare som du vill återställa och väljer sedan **Återställ**.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-118">On the **Deleted users** page, select the names of the users who you want to restore, and then select **Restore**.</span></span>
+2. <span data-ttu-id="c1e02-116">På sidan **Borttagna användare** markerar du namnen på de användare som du vill återställa och väljer sedan **Återställ**.</span><span class="sxs-lookup"><span data-stu-id="c1e02-116">On the **Deleted users** page, select the names of the users who you want to restore, and then select **Restore**.</span></span>
     
  
-3. <span data-ttu-id="9a8d6-119">Följ anvisningarna för att ange deras lösenord och välj sedan **Återställ**.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-119">Follow the prompts to set their password, and then select **Restore**.</span></span>
+3. <span data-ttu-id="c1e02-117">Följ anvisningarna för att ange deras lösenord och välj sedan **Återställ**.</span><span class="sxs-lookup"><span data-stu-id="c1e02-117">Follow the prompts to set their password, and then select **Restore**.</span></span>
     
-4. <span data-ttu-id="9a8d6-120">Om användaren återställs väljer du Skicka **e-post och stäng**.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-120">If the user is successfully restored, select **Send email and close**.</span></span> <span data-ttu-id="9a8d6-121">Om det uppstår en namnkonflikt eller en proxyadresskonflikt kan du läsa instruktionerna nedan om återställning av dessa konton.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-121">If you encounter a name conflict or proxy address conflict, see the instructions below for how to restore those accounts.</span></span>
+4. <span data-ttu-id="c1e02-118">Om användaren återställs väljer du Skicka **e-post och stäng**.</span><span class="sxs-lookup"><span data-stu-id="c1e02-118">If the user is successfully restored, select **Send email and close**.</span></span> <span data-ttu-id="c1e02-119">Om det uppstår en namnkonflikt eller en proxyadresskonflikt kan du läsa instruktionerna nedan om återställning av dessa konton.</span><span class="sxs-lookup"><span data-stu-id="c1e02-119">If you encounter a name conflict or proxy address conflict, see the instructions below for how to restore those accounts.</span></span>
     
-<span data-ttu-id="9a8d6-122">När du har återställt en användare bör du meddela dem att deras lösenord har ändrats och följa upp med dem.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-122">After you've restored a user, make sure you notify them that their password changed and you follow up with them.</span></span>
+<span data-ttu-id="c1e02-120">När du har återställt en användare bör du meddela dem att deras lösenord har ändrats och följa upp med dem.</span><span class="sxs-lookup"><span data-stu-id="c1e02-120">After you've restored a user, make sure you notify them that their password changed and you follow up with them.</span></span>
   
-## <a name="restore-a-user-that-has-a-user-name-conflict"></a><span data-ttu-id="9a8d6-123">Återställa en användare som har en användarnamnskonflikt</span><span class="sxs-lookup"><span data-stu-id="9a8d6-123">Restore a user that has a user name conflict</span></span>
-<span data-ttu-id="9a8d6-124"><a name="RestoreUserNameConflict"> </a></span><span class="sxs-lookup"><span data-stu-id="9a8d6-124"><a name="RestoreUserNameConflict"> </a></span></span>
+## <a name="restore-a-user-that-has-a-user-name-conflict"></a><span data-ttu-id="c1e02-121">Återställa en användare som har en användarnamnskonflikt</span><span class="sxs-lookup"><span data-stu-id="c1e02-121">Restore a user that has a user name conflict</span></span>
+<span data-ttu-id="c1e02-122"><a name="RestoreUserNameConflict"> </a></span><span class="sxs-lookup"><span data-stu-id="c1e02-122"><a name="RestoreUserNameConflict"> </a></span></span>
 
-<span data-ttu-id="9a8d6-125">En användarnamnskonflikt inträffar när du tar bort ett användarkonto, skapar ett nytt användarkonto med samma användarnamn (antingen för samma användare eller för en annan användare med ett liknande namn) och sedan försöker återställa det borttagna kontot.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-125">A user name conflict occurs when you delete a user account, create a new user account with the same user name (either for the same user or another user with a similar name), and later try to restore the deleted account.</span></span>
+<span data-ttu-id="c1e02-123">En användarnamnskonflikt inträffar när du tar bort ett användarkonto, skapar ett nytt användarkonto med samma användarnamn (antingen för samma användare eller för en annan användare med ett liknande namn) och sedan försöker återställa det borttagna kontot.</span><span class="sxs-lookup"><span data-stu-id="c1e02-123">A user name conflict occurs when you delete a user account, create a new user account with the same user name (either for the same user or another user with a similar name), and later try to restore the deleted account.</span></span>
   
-<span data-ttu-id="9a8d6-p104">Om du vill lösa detta ersätter du det aktiva användarkontot med det konto som du återställer. Eller tilldela det konto som du återställer ett annat användarnamn, så att inte båda kontona har samma användarnamn. Följ nedanstående anvisningar.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-p104">To fix this, replace the active user account with the one that you are restoring. Or, assign a different user name to the account that you are restoring so that there aren't two accounts with the same user name. Here are the steps.</span></span>
+<span data-ttu-id="c1e02-p103">Om du vill lösa detta ersätter du det aktiva användarkontot med det konto som du återställer. Eller tilldela det konto som du återställer ett annat användarnamn, så att inte båda kontona har samma användarnamn. Följ nedanstående anvisningar.</span><span class="sxs-lookup"><span data-stu-id="c1e02-p103">To fix this, replace the active user account with the one that you are restoring. Or, assign a different user name to the account that you are restoring so that there aren't two accounts with the same user name. Here are the steps.</span></span>
   
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="9a8d6-129">I administrationscentret går du till **sidan** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Användare borttagna</a> användare.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-129">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.</span></span>
+1. <span data-ttu-id="c1e02-127">I administrationscentret går du till **sidan** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Användare borttagna</a> användare.</span><span class="sxs-lookup"><span data-stu-id="c1e02-127">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="9a8d6-130">Gå till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=848041)och välj sedan **Användare** \> **borttagna användare.**</span><span class="sxs-lookup"><span data-stu-id="9a8d6-130">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and then select **Users** \> **Deleted users**.</span></span>
+1. <span data-ttu-id="c1e02-128">Gå till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=848041)och välj sedan **Användare** \> **borttagna användare.**</span><span class="sxs-lookup"><span data-stu-id="c1e02-128">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and then select **Users** \> **Deleted users**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="9a8d6-131">Gå till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=850627)och välj sedan **Användare** \> **borttagna användare.**</span><span class="sxs-lookup"><span data-stu-id="9a8d6-131">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), and then select **Users** \> **Deleted users**.</span></span>
+1. <span data-ttu-id="c1e02-129">Gå till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=850627)och välj sedan **Användare** \> **borttagna användare.**</span><span class="sxs-lookup"><span data-stu-id="c1e02-129">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), and then select **Users** \> **Deleted users**.</span></span>
 
 ::: moniker-end
 
   
-2. <span data-ttu-id="9a8d6-132">På **sidan Borttagna** användare markerar du namnen på de användare som du vill återställa och väljer sedan **Återställ**.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-132">On the **Deleted users** page, select the names of the users that you want to restore, and then select **Restore**.</span></span>
+2. <span data-ttu-id="c1e02-130">På **sidan Borttagna** användare markerar du namnen på de användare som du vill återställa och väljer sedan **Återställ**.</span><span class="sxs-lookup"><span data-stu-id="c1e02-130">On the **Deleted users** page, select the names of the users that you want to restore, and then select **Restore**.</span></span>
     
     > [!NOTE]
-    > <span data-ttu-id="9a8d6-p105">Om återställandet av två eller fler användare misslyckas visas ett felmeddelande som informerar dig om att återställningsåtgärden misslyckades för vissa användare. Ta fram loggen och kontrollera vilka användare som inte återställdes. Dessa konton måste du återställa ett åt gången.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-p105">If two or more users fail to be restored, an error message advises you that the restore operation failed for some users. View the log to see which users were not restored, and then restore the failed accounts one at a time.</span></span> 
+    > <span data-ttu-id="c1e02-p104">Om återställandet av två eller fler användare misslyckas visas ett felmeddelande som informerar dig om att återställningsåtgärden misslyckades för vissa användare. Ta fram loggen och kontrollera vilka användare som inte återställdes. Dessa konton måste du återställa ett åt gången.</span><span class="sxs-lookup"><span data-stu-id="c1e02-p104">If two or more users fail to be restored, an error message advises you that the restore operation failed for some users. View the log to see which users were not restored, and then restore the failed accounts one at a time.</span></span> 
   
-3. <span data-ttu-id="9a8d6-135">Följ anvisningarna för att ange lösenordet och välj **Återställ**.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-135">Follow the prompts to set the password and select **Restore**.</span></span>
+3. <span data-ttu-id="c1e02-133">Följ anvisningarna för att ange lösenordet och välj **Återställ**.</span><span class="sxs-lookup"><span data-stu-id="c1e02-133">Follow the prompts to set the password and select **Restore**.</span></span>
     
-4. <span data-ttu-id="9a8d6-p106">Ett meddelande dyker upp där det står att det inte gick att återställa kontot. Gör något av följande:</span><span class="sxs-lookup"><span data-stu-id="9a8d6-p106">A message pops up that says there was a problem restoring the account. Do one of the following:</span></span>
+4. <span data-ttu-id="c1e02-p105">Ett meddelande dyker upp där det står att det inte gick att återställa kontot. Gör något av följande:</span><span class="sxs-lookup"><span data-stu-id="c1e02-p105">A message pops up that says there was a problem restoring the account. Do one of the following:</span></span>
     
-  - <span data-ttu-id="9a8d6-p107">Avbryt återställningen och byt namn på den aktiva användaren. Försök sedan återställa igen.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-p107">Cancel the restore and rename the current active user. Then attempt the restore again.</span></span>
+  - <span data-ttu-id="c1e02-p106">Avbryt återställningen och byt namn på den aktiva användaren. Försök sedan återställa igen.</span><span class="sxs-lookup"><span data-stu-id="c1e02-p106">Cancel the restore and rename the current active user. Then attempt the restore again.</span></span>
     
-  - <span data-ttu-id="9a8d6-140">ELLER, skriv en ny primär e-postadress för användaren och välj **Återställ**.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-140">OR, type a new primary email address for the user and select **Restore**.</span></span>
+  - <span data-ttu-id="c1e02-138">ELLER, skriv en ny primär e-postadress för användaren och välj **Återställ**.</span><span class="sxs-lookup"><span data-stu-id="c1e02-138">OR, type a new primary email address for the user and select **Restore**.</span></span>
     
-5. <span data-ttu-id="9a8d6-141">Granska resultaten och välj sedan **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-141">Review the results, and then select **Close**.</span></span>
+5. <span data-ttu-id="c1e02-139">Granska resultaten och välj sedan **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="c1e02-139">Review the results, and then select **Close**.</span></span>
     
-## <a name="restore-a-user-that-has-a-proxy-address-conflict"></a><span data-ttu-id="9a8d6-142">Återställa en användare som har en proxyadresskonflikt</span><span class="sxs-lookup"><span data-stu-id="9a8d6-142">Restore a user that has a proxy address conflict</span></span>
+## <a name="restore-a-user-that-has-a-proxy-address-conflict"></a><span data-ttu-id="c1e02-140">Återställa en användare som har en proxyadresskonflikt</span><span class="sxs-lookup"><span data-stu-id="c1e02-140">Restore a user that has a proxy address conflict</span></span>
 
-<span data-ttu-id="9a8d6-p108">En proxyadresskonflikt inträffar när du tar bort ett användarkonto som innehåller en proxyadress, tilldelar ett annat konto samma proxyadress och sedan försöker återställa det borttagna kontot. Så här löser du problemet:</span><span class="sxs-lookup"><span data-stu-id="9a8d6-p108">A proxy address conflict occurs when you delete a user account that contains a proxy address, assign the same proxy address to another account, and then try to restore the deleted account. Follow the steps below to fix this issue.</span></span>
+<span data-ttu-id="c1e02-p107">En proxyadresskonflikt inträffar när du tar bort ett användarkonto som innehåller en proxyadress, tilldelar ett annat konto samma proxyadress och sedan försöker återställa det borttagna kontot. Så här löser du problemet:</span><span class="sxs-lookup"><span data-stu-id="c1e02-p107">A proxy address conflict occurs when you delete a user account that contains a proxy address, assign the same proxy address to another account, and then try to restore the deleted account. Follow the steps below to fix this issue.</span></span>
   
-<span data-ttu-id="9a8d6-145">Du måste ha [administratörsbehörigheter](about-admin-roles.md) i Microsoft 365 för att göra detta.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-145">You must have [admin permissions](about-admin-roles.md) in Microsoft 365 to do this.</span></span> 
+<span data-ttu-id="c1e02-143">Du måste ha [administratörsbehörigheter](about-admin-roles.md) i Microsoft 365 för att göra detta.</span><span class="sxs-lookup"><span data-stu-id="c1e02-143">You must have [admin permissions](about-admin-roles.md) in Microsoft 365 to do this.</span></span> 
   
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="9a8d6-146">I administrationscentret går du till **sidan** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Användare borttagna</a> användare.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-146">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.</span></span>
+1. <span data-ttu-id="c1e02-144">I administrationscentret går du till **sidan** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Användare borttagna</a> användare.</span><span class="sxs-lookup"><span data-stu-id="c1e02-144">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-<span data-ttu-id="9a8d6-147">Gå till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=848041)och välj sedan **Användare** \> **borttagna användare.**</span><span class="sxs-lookup"><span data-stu-id="9a8d6-147">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and then select **Users** \> **Deleted users**.</span></span>
+<span data-ttu-id="c1e02-145">Gå till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=848041)och välj sedan **Användare** \> **borttagna användare.**</span><span class="sxs-lookup"><span data-stu-id="c1e02-145">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and then select **Users** \> **Deleted users**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="9a8d6-148">Gå till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=850627)och välj sedan **Användare** \> **borttagna användare.**</span><span class="sxs-lookup"><span data-stu-id="9a8d6-148">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), and then select **Users** \> **Deleted users**.</span></span>
+1. <span data-ttu-id="c1e02-146">Gå till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=850627)och välj sedan **Användare** \> **borttagna användare.**</span><span class="sxs-lookup"><span data-stu-id="c1e02-146">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), and then select **Users** \> **Deleted users**.</span></span>
 
 ::: moniker-end
 
-2. <span data-ttu-id="9a8d6-149">Markera användaren som ska återställas på sidan **Borttagna användare** och välj sedan **Återställ**.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-149">On the **Deleted users** page, select the user that you want to restore, and then select **Restore**.</span></span> 
+2. <span data-ttu-id="c1e02-147">Markera användaren som ska återställas på sidan **Borttagna användare** och välj sedan **Återställ**.</span><span class="sxs-lookup"><span data-stu-id="c1e02-147">On the **Deleted users** page, select the user that you want to restore, and then select **Restore**.</span></span> 
     
-3. <span data-ttu-id="9a8d6-150">På sidan **Återställ** följer du anvisningarna för att ange lösenordet och väljer **Återställ**.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-150">On the **Restore** page, follow the instructions to set the password and select **Restore**.</span></span> <span data-ttu-id="9a8d6-151">Proxyadresser med konflikter tas automatiskt bort från användaren som du återställer.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-151">Any conflicting proxy addresses are automatically removed from the user you are restoring.</span></span>
+3. <span data-ttu-id="c1e02-148">På sidan **Återställ** följer du anvisningarna för att ange lösenordet och väljer **Återställ**.</span><span class="sxs-lookup"><span data-stu-id="c1e02-148">On the **Restore** page, follow the instructions to set the password and select **Restore**.</span></span> <span data-ttu-id="c1e02-149">Proxyadresser med konflikter tas automatiskt bort från användaren som du återställer.</span><span class="sxs-lookup"><span data-stu-id="c1e02-149">Any conflicting proxy addresses are automatically removed from the user you are restoring.</span></span>
     
-4. <span data-ttu-id="9a8d6-152">Granska resultaten och välj sedan **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="9a8d6-152">Review the results, and then select **Close**.</span></span>
+4. <span data-ttu-id="c1e02-150">Granska resultaten och välj sedan **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="c1e02-150">Review the results, and then select **Close**.</span></span>
 
-## <a name="related-articles"></a><span data-ttu-id="9a8d6-153">Relaterade artiklar</span><span class="sxs-lookup"><span data-stu-id="9a8d6-153">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="c1e02-151">Relaterade artiklar</span><span class="sxs-lookup"><span data-stu-id="c1e02-151">Related articles</span></span>
 
-[<span data-ttu-id="9a8d6-154">Ta bort en användare</span><span class="sxs-lookup"><span data-stu-id="9a8d6-154">Delete a user</span></span>](delete-a-user.md)
+[<span data-ttu-id="c1e02-152">Ta bort en användare</span><span class="sxs-lookup"><span data-stu-id="c1e02-152">Delete a user</span></span>](delete-a-user.md)
