@@ -8,67 +8,67 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 326e508fbf5a0e968e890f5727a6ae542de437c2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 629e18c7387f6063254f3482f93a5e17023c7316
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186011"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499947"
 ---
-# <a name="monitor-web-browsing-security"></a><span data-ttu-id="d4030-104">Övervaka surfsäkerhet</span><span class="sxs-lookup"><span data-stu-id="d4030-104">Monitor web browsing security</span></span>
+# <a name="monitor-web-browsing-security"></a><span data-ttu-id="1f2db-104">Övervaka surfsäkerhet</span><span class="sxs-lookup"><span data-stu-id="1f2db-104">Monitor web browsing security</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="d4030-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="d4030-105">**Applies to:**</span></span>
-- [<span data-ttu-id="d4030-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="d4030-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="d4030-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="d4030-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="1f2db-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="1f2db-105">**Applies to:**</span></span>
+- [<span data-ttu-id="1f2db-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="1f2db-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="1f2db-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="1f2db-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-><span data-ttu-id="d4030-108">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="d4030-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="d4030-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="d4030-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+><span data-ttu-id="1f2db-108">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="1f2db-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="1f2db-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="1f2db-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-<span data-ttu-id="d4030-110">Med webbskydd kan du övervaka organisationens webbsurfningssäkerhet genom rapporter under **Rapporter > skydd på** webben i Microsoft Defender Säkerhetscenter.</span><span class="sxs-lookup"><span data-stu-id="d4030-110">Web protection lets you monitor your organization’s web browsing security through reports under **Reports > Web protection** in the Microsoft Defender Security Center.</span></span> <span data-ttu-id="d4030-111">Rapporten innehåller kort som tillhandahåller statistik för identifiering av webbhot.</span><span class="sxs-lookup"><span data-stu-id="d4030-111">The report contains cards that provide web threat detection statistics.</span></span>
+<span data-ttu-id="1f2db-110">Med webbskydd kan du övervaka organisationens webbsurfningssäkerhet genom rapporter under **Rapporter > skydd på** webben i Microsoft Defender Säkerhetscenter.</span><span class="sxs-lookup"><span data-stu-id="1f2db-110">Web protection lets you monitor your organization’s web browsing security through reports under **Reports > Web protection** in the Microsoft Defender Security Center.</span></span> <span data-ttu-id="1f2db-111">Rapporten innehåller kort som tillhandahåller statistik för identifiering av webbhot.</span><span class="sxs-lookup"><span data-stu-id="1f2db-111">The report contains cards that provide web threat detection statistics.</span></span>
 
-- <span data-ttu-id="d4030-112">**Identifiering av skydd** mot webbhot med tiden – det här trendkortet visar antalet webbhot som upptäckts av typ under den valda tidsperioden (de senaste 30 dagarna, de senaste 3 månaderna, de senaste 6 månaderna)</span><span class="sxs-lookup"><span data-stu-id="d4030-112">**Web threat protection detections over time** - this trending card displays the number of web threats detected by type during the selected time period (Last 30 days, Last 3 months, Last 6 months)</span></span>
+- <span data-ttu-id="1f2db-112">**Identifiering av skydd** mot webbhot med tiden – det här trendkortet visar antalet webbhot som upptäckts av typ under den valda tidsperioden (de senaste 30 dagarna, de senaste 3 månaderna, de senaste 6 månaderna)</span><span class="sxs-lookup"><span data-stu-id="1f2db-112">**Web threat protection detections over time** - this trending card displays the number of web threats detected by type during the selected time period (Last 30 days, Last 3 months, Last 6 months)</span></span>
  
     ![Bild på kortet som visar identifieringar av skydd mot webbhot över tid](images/wtp-blocks-over-time.png)
 
-- <span data-ttu-id="d4030-114">**Sammanfattning av skydd** mot webbhot – det här kortet visar totalt antal identifieringar av webbhot under de senaste 30 dagarna, med distribution för olika typer av webbhot.</span><span class="sxs-lookup"><span data-stu-id="d4030-114">**Web threat protection summary** - this card displays the total web threat detections in the past 30 days, showing distribution across the different types of web threats.</span></span> <span data-ttu-id="d4030-115">Om du väljer en sektor öppnas listan med domäner som hittades med skadliga eller oönskade webbplatser.</span><span class="sxs-lookup"><span data-stu-id="d4030-115">Selecting a slice opens the list of the domains that were found with malicious or unwanted websites.</span></span>
+- <span data-ttu-id="1f2db-114">**Sammanfattning av skydd** mot webbhot – det här kortet visar totalt antal identifieringar av webbhot under de senaste 30 dagarna, med distribution för olika typer av webbhot.</span><span class="sxs-lookup"><span data-stu-id="1f2db-114">**Web threat protection summary** - this card displays the total web threat detections in the past 30 days, showing distribution across the different types of web threats.</span></span> <span data-ttu-id="1f2db-115">Om du väljer en sektor öppnas listan med domäner som hittades med skadliga eller oönskade webbplatser.</span><span class="sxs-lookup"><span data-stu-id="1f2db-115">Selecting a slice opens the list of the domains that were found with malicious or unwanted websites.</span></span>
 
     ![Bild på kortet som visar en sammanfattning av skydd mot webbhot](images/wtp-summary.png)
 
 >[!Note]
-><span data-ttu-id="d4030-117">Det kan ta upp till 12 timmar innan ett block visas på korten eller i domänlistan.</span><span class="sxs-lookup"><span data-stu-id="d4030-117">It can take up to 12 hours before a block is reflected in the cards or the domain list.</span></span>
+><span data-ttu-id="1f2db-117">Det kan ta upp till 12 timmar innan ett block visas på korten eller i domänlistan.</span><span class="sxs-lookup"><span data-stu-id="1f2db-117">It can take up to 12 hours before a block is reflected in the cards or the domain list.</span></span>
 
-## <a name="types-of-web-threats"></a><span data-ttu-id="d4030-118">Typer av webbhot</span><span class="sxs-lookup"><span data-stu-id="d4030-118">Types of web threats</span></span>
+## <a name="types-of-web-threats"></a><span data-ttu-id="1f2db-118">Typer av webbhot</span><span class="sxs-lookup"><span data-stu-id="1f2db-118">Types of web threats</span></span>
 
-<span data-ttu-id="d4030-119">Webbskydd kategoriserar skadliga och oönskade webbplatser som:</span><span class="sxs-lookup"><span data-stu-id="d4030-119">Web protection categorizes malicious and unwanted websites as:</span></span>
+<span data-ttu-id="1f2db-119">Webbskydd kategoriserar skadliga och oönskade webbplatser som:</span><span class="sxs-lookup"><span data-stu-id="1f2db-119">Web protection categorizes malicious and unwanted websites as:</span></span>
 
-- <span data-ttu-id="d4030-120">**Nätfiske** – webbplatser som innehåller falska webbformulär och andra former av nätfiske som designats för att lura användare att dela upp autentiseringsuppgifter och annan känslig information</span><span class="sxs-lookup"><span data-stu-id="d4030-120">**Phishing** - websites that contain spoofed web forms and other phishing mechanisms designed to trick users into divulging credentials and other sensitive information</span></span>
-- <span data-ttu-id="d4030-121">**Skadlig** – webbplatser som är värd för skadlig programvara och sårbarhetskod</span><span class="sxs-lookup"><span data-stu-id="d4030-121">**Malicious** - websites that host malware and exploit code</span></span>
-- <span data-ttu-id="d4030-122">**Anpassad indikator** – webbplatser vars URL:er eller domäner du har lagt till i din [anpassade indikatorlista för](manage-indicators.md) blockering</span><span class="sxs-lookup"><span data-stu-id="d4030-122">**Custom indicator** - websites whose URLs or domains you've added to your [custom indicator list](manage-indicators.md) for blocking</span></span>
+- <span data-ttu-id="1f2db-120">**Nätfiske** – webbplatser som innehåller falska webbformulär och andra former av nätfiske som designats för att lura användare att dela upp autentiseringsuppgifter och annan känslig information</span><span class="sxs-lookup"><span data-stu-id="1f2db-120">**Phishing** - websites that contain spoofed web forms and other phishing mechanisms designed to trick users into divulging credentials and other sensitive information</span></span>
+- <span data-ttu-id="1f2db-121">**Skadlig** – webbplatser som är värd för skadlig programvara och sårbarhetskod</span><span class="sxs-lookup"><span data-stu-id="1f2db-121">**Malicious** - websites that host malware and exploit code</span></span>
+- <span data-ttu-id="1f2db-122">**Anpassad indikator** – webbplatser vars URL:er eller domäner du har lagt till i din [anpassade indikatorlista för](manage-indicators.md) blockering</span><span class="sxs-lookup"><span data-stu-id="1f2db-122">**Custom indicator** - websites whose URLs or domains you've added to your [custom indicator list](manage-indicators.md) for blocking</span></span>
 
-## <a name="view-the-domain-list"></a><span data-ttu-id="d4030-123">Visa domänlistan</span><span class="sxs-lookup"><span data-stu-id="d4030-123">View the domain list</span></span>
+## <a name="view-the-domain-list"></a><span data-ttu-id="1f2db-123">Visa domänlistan</span><span class="sxs-lookup"><span data-stu-id="1f2db-123">View the domain list</span></span>
 
-<span data-ttu-id="d4030-124">Välj en specifik kategori för webbhot i **sammanfattningskortet för skydd mot webbhot** för att öppna **sidan** Domäner.</span><span class="sxs-lookup"><span data-stu-id="d4030-124">Select a specific web threat category in the **Web threat protection summary** card to open the **Domains** page.</span></span> <span data-ttu-id="d4030-125">Den här sidan visar listan över domänerna under den hotkategorin.</span><span class="sxs-lookup"><span data-stu-id="d4030-125">This page displays the list of the domains under that threat category.</span></span> <span data-ttu-id="d4030-126">Sidan innehåller följande information för varje domän:</span><span class="sxs-lookup"><span data-stu-id="d4030-126">The page provides the following information for each domain:</span></span>
+<span data-ttu-id="1f2db-124">Välj en specifik kategori för webbhot i **sammanfattningskortet för skydd mot webbhot** för att öppna **sidan** Domäner.</span><span class="sxs-lookup"><span data-stu-id="1f2db-124">Select a specific web threat category in the **Web threat protection summary** card to open the **Domains** page.</span></span> <span data-ttu-id="1f2db-125">Den här sidan visar listan över domänerna under den hotkategorin.</span><span class="sxs-lookup"><span data-stu-id="1f2db-125">This page displays the list of the domains under that threat category.</span></span> <span data-ttu-id="1f2db-126">Sidan innehåller följande information för varje domän:</span><span class="sxs-lookup"><span data-stu-id="1f2db-126">The page provides the following information for each domain:</span></span>
 
-- <span data-ttu-id="d4030-127">**Antal åtkomst** – antal förfrågningar om URL-adresser i domänen</span><span class="sxs-lookup"><span data-stu-id="d4030-127">**Access count** - number of requests for URLs in the domain</span></span>
-- <span data-ttu-id="d4030-128">**Block** – antal gånger som förfrågningar har blockerats</span><span class="sxs-lookup"><span data-stu-id="d4030-128">**Blocks** - number of times requests were blocked</span></span>
-- <span data-ttu-id="d4030-129">**Access-trend** – ändra antalet åtkomstförsök</span><span class="sxs-lookup"><span data-stu-id="d4030-129">**Access trend** - change in number of access attempts</span></span>
-- <span data-ttu-id="d4030-130">**Hotkategori** – typ av webbhot</span><span class="sxs-lookup"><span data-stu-id="d4030-130">**Threat category** - type of web threat</span></span>
-- <span data-ttu-id="d4030-131">**Enheter** – antal enheter med åtkomstförsök</span><span class="sxs-lookup"><span data-stu-id="d4030-131">**Devices** - number of devices with access attempts</span></span>
+- <span data-ttu-id="1f2db-127">**Antal åtkomst** – antal förfrågningar om URL-adresser i domänen</span><span class="sxs-lookup"><span data-stu-id="1f2db-127">**Access count** - number of requests for URLs in the domain</span></span>
+- <span data-ttu-id="1f2db-128">**Block** – antal gånger som förfrågningar har blockerats</span><span class="sxs-lookup"><span data-stu-id="1f2db-128">**Blocks** - number of times requests were blocked</span></span>
+- <span data-ttu-id="1f2db-129">**Access-trend** – ändra antalet åtkomstförsök</span><span class="sxs-lookup"><span data-stu-id="1f2db-129">**Access trend** - change in number of access attempts</span></span>
+- <span data-ttu-id="1f2db-130">**Hotkategori** – typ av webbhot</span><span class="sxs-lookup"><span data-stu-id="1f2db-130">**Threat category** - type of web threat</span></span>
+- <span data-ttu-id="1f2db-131">**Enheter** – antal enheter med åtkomstförsök</span><span class="sxs-lookup"><span data-stu-id="1f2db-131">**Devices** - number of devices with access attempts</span></span>
 
-<span data-ttu-id="d4030-132">Välj en domän för att visa listan över enheter som har försökt komma åt URL:er i den domänen och listan med URL:er.</span><span class="sxs-lookup"><span data-stu-id="d4030-132">Select a domain to view the list of devices that have attempted to access URLs in that domain and the list of URLs.</span></span>
+<span data-ttu-id="1f2db-132">Välj en domän för att visa listan över enheter som har försökt komma åt URL:er i den domänen och listan med URL:er.</span><span class="sxs-lookup"><span data-stu-id="1f2db-132">Select a domain to view the list of devices that have attempted to access URLs in that domain and the list of URLs.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="d4030-133">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="d4030-133">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="1f2db-133">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="1f2db-133">Related topics</span></span>
 
-- [<span data-ttu-id="d4030-134">Översikt över webbskydd</span><span class="sxs-lookup"><span data-stu-id="d4030-134">Web protection overview</span></span>](web-protection-overview.md)
-- [<span data-ttu-id="d4030-135">Filtrering av webbinnehåll</span><span class="sxs-lookup"><span data-stu-id="d4030-135">Web content filtering</span></span>](web-content-filtering.md)
-- [<span data-ttu-id="d4030-136">Skydd mot webbhot</span><span class="sxs-lookup"><span data-stu-id="d4030-136">Web threat protection</span></span>](web-threat-protection.md)
-- [<span data-ttu-id="d4030-137">Svara på webbhot</span><span class="sxs-lookup"><span data-stu-id="d4030-137">Respond to web threats</span></span>](web-protection-response.md)
+- [<span data-ttu-id="1f2db-134">Översikt över webbskydd</span><span class="sxs-lookup"><span data-stu-id="1f2db-134">Web protection overview</span></span>](web-protection-overview.md)
+- [<span data-ttu-id="1f2db-135">Filtrering av webbinnehåll</span><span class="sxs-lookup"><span data-stu-id="1f2db-135">Web content filtering</span></span>](web-content-filtering.md)
+- [<span data-ttu-id="1f2db-136">Skydd mot webbhot</span><span class="sxs-lookup"><span data-stu-id="1f2db-136">Web threat protection</span></span>](web-threat-protection.md)
+- [<span data-ttu-id="1f2db-137">Svara på webbhot</span><span class="sxs-lookup"><span data-stu-id="1f2db-137">Respond to web threats</span></span>](web-protection-response.md)

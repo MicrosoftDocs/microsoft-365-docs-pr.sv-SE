@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,37 +20,37 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0d592bcd4d4dfa766816798ecf8418c146d48839
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 323ec9292115cf810bca7bf5de03b09cb35bceb1
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51073946"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498853"
 ---
-# <a name="emailurlinfo"></a><span data-ttu-id="dba96-104">EmailUrlInfo</span><span class="sxs-lookup"><span data-stu-id="dba96-104">EmailUrlInfo</span></span>
+# <a name="emailurlinfo"></a><span data-ttu-id="7bc9b-104">EmailUrlInfo</span><span class="sxs-lookup"><span data-stu-id="7bc9b-104">EmailUrlInfo</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="dba96-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="dba96-105">**Applies to:**</span></span>
-- <span data-ttu-id="dba96-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="dba96-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="7bc9b-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="7bc9b-105">**Applies to:**</span></span>
+- <span data-ttu-id="7bc9b-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="7bc9b-106">Microsoft 365 Defender</span></span>
 
-<span data-ttu-id="dba96-107">Tabellen i det avancerade sökschemat innehåller information om e-postmeddelanden och bifogade filer som `EmailUrlInfo` bearbetats av Microsoft Defender för Office [](advanced-hunting-overview.md) 365.</span><span class="sxs-lookup"><span data-stu-id="dba96-107">The `EmailUrlInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about URLs on emails and attachments processed by Microsoft Defender for Office 365.</span></span> <span data-ttu-id="dba96-108">Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.</span><span class="sxs-lookup"><span data-stu-id="dba96-108">Use this reference to construct queries that return information from this table.</span></span> 
+<span data-ttu-id="7bc9b-107">Tabellen i det avancerade sökschemat innehåller information om e-postmeddelanden och bifogade filer som `EmailUrlInfo` bearbetats av Microsoft Defender för Office [](advanced-hunting-overview.md) 365.</span><span class="sxs-lookup"><span data-stu-id="7bc9b-107">The `EmailUrlInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about URLs on emails and attachments processed by Microsoft Defender for Office 365.</span></span> <span data-ttu-id="7bc9b-108">Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.</span><span class="sxs-lookup"><span data-stu-id="7bc9b-108">Use this reference to construct queries that return information from this table.</span></span> 
 
-<span data-ttu-id="dba96-109">Information om andra tabeller i det avancerade sökschemat finns [i den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)</span><span class="sxs-lookup"><span data-stu-id="dba96-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+<span data-ttu-id="7bc9b-109">Information om andra tabeller i det avancerade sökschemat finns [i den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)</span><span class="sxs-lookup"><span data-stu-id="7bc9b-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
 
-| <span data-ttu-id="dba96-110">Kolumnnamn</span><span class="sxs-lookup"><span data-stu-id="dba96-110">Column name</span></span> | <span data-ttu-id="dba96-111">Datatyp</span><span class="sxs-lookup"><span data-stu-id="dba96-111">Data type</span></span> | <span data-ttu-id="dba96-112">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="dba96-112">Description</span></span> |
+| <span data-ttu-id="7bc9b-110">Kolumnnamn</span><span class="sxs-lookup"><span data-stu-id="7bc9b-110">Column name</span></span> | <span data-ttu-id="7bc9b-111">Datatyp</span><span class="sxs-lookup"><span data-stu-id="7bc9b-111">Data type</span></span> | <span data-ttu-id="7bc9b-112">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="7bc9b-112">Description</span></span> |
 |-------------|-----------|-------------|
-| `Timestamp` | <span data-ttu-id="dba96-113">datetime</span><span class="sxs-lookup"><span data-stu-id="dba96-113">datetime</span></span> | <span data-ttu-id="dba96-114">Datum och tid då händelsen spelades in</span><span class="sxs-lookup"><span data-stu-id="dba96-114">Date and time when the event was recorded</span></span> |
-| `NetworkMessageId` | <span data-ttu-id="dba96-115">sträng</span><span class="sxs-lookup"><span data-stu-id="dba96-115">string</span></span> | <span data-ttu-id="dba96-116">Unikt ID för e-postmeddelandet som genereras av Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="dba96-116">Unique identifier for the email, generated by Microsoft 365</span></span> |
-| `Url` | <span data-ttu-id="dba96-117">sträng</span><span class="sxs-lookup"><span data-stu-id="dba96-117">string</span></span> | <span data-ttu-id="dba96-118">Fullständig URL i e-postmeddelandets ämne, brödtext eller bifogade fil</span><span class="sxs-lookup"><span data-stu-id="dba96-118">Full URL in the email subject, body, or attachment</span></span> |
-| `UrlDomain` | <span data-ttu-id="dba96-119">sträng</span><span class="sxs-lookup"><span data-stu-id="dba96-119">string</span></span> | <span data-ttu-id="dba96-120">Domännamn eller värdnamn för URL-adressen</span><span class="sxs-lookup"><span data-stu-id="dba96-120">Domain name or host name of the URL</span></span> |
-| `ReportId` | <span data-ttu-id="dba96-121">long</span><span class="sxs-lookup"><span data-stu-id="dba96-121">long</span></span> | <span data-ttu-id="dba96-122">Händelseidentifierare baserat på en räknare för upprepande händelser.</span><span class="sxs-lookup"><span data-stu-id="dba96-122">Event identifier based on a repeating counter.</span></span> <span data-ttu-id="dba96-123">För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp</span><span class="sxs-lookup"><span data-stu-id="dba96-123">To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns</span></span> |
+| `Timestamp` | <span data-ttu-id="7bc9b-113">datetime</span><span class="sxs-lookup"><span data-stu-id="7bc9b-113">datetime</span></span> | <span data-ttu-id="7bc9b-114">Datum och tid då händelsen spelades in</span><span class="sxs-lookup"><span data-stu-id="7bc9b-114">Date and time when the event was recorded</span></span> |
+| `NetworkMessageId` | <span data-ttu-id="7bc9b-115">sträng</span><span class="sxs-lookup"><span data-stu-id="7bc9b-115">string</span></span> | <span data-ttu-id="7bc9b-116">Unikt ID för e-postmeddelandet som genereras av Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="7bc9b-116">Unique identifier for the email, generated by Microsoft 365</span></span> |
+| `Url` | <span data-ttu-id="7bc9b-117">sträng</span><span class="sxs-lookup"><span data-stu-id="7bc9b-117">string</span></span> | <span data-ttu-id="7bc9b-118">Fullständig URL i e-postmeddelandets ämne, brödtext eller bifogade fil</span><span class="sxs-lookup"><span data-stu-id="7bc9b-118">Full URL in the email subject, body, or attachment</span></span> |
+| `UrlDomain` | <span data-ttu-id="7bc9b-119">sträng</span><span class="sxs-lookup"><span data-stu-id="7bc9b-119">string</span></span> | <span data-ttu-id="7bc9b-120">Domännamn eller värdnamn för URL-adressen</span><span class="sxs-lookup"><span data-stu-id="7bc9b-120">Domain name or host name of the URL</span></span> |
+| `ReportId` | <span data-ttu-id="7bc9b-121">long</span><span class="sxs-lookup"><span data-stu-id="7bc9b-121">long</span></span> | <span data-ttu-id="7bc9b-122">Händelseidentifierare baserat på en räknare för upprepande händelser.</span><span class="sxs-lookup"><span data-stu-id="7bc9b-122">Event identifier based on a repeating counter.</span></span> <span data-ttu-id="7bc9b-123">För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp</span><span class="sxs-lookup"><span data-stu-id="7bc9b-123">To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns</span></span> |
 
-## <a name="related-topics"></a><span data-ttu-id="dba96-124">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="dba96-124">Related topics</span></span>
-- [<span data-ttu-id="dba96-125">Översikt över avancerad jakt</span><span class="sxs-lookup"><span data-stu-id="dba96-125">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="dba96-126">Lär dig frågespråket</span><span class="sxs-lookup"><span data-stu-id="dba96-126">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="dba96-127">Använda delade frågor</span><span class="sxs-lookup"><span data-stu-id="dba96-127">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="dba96-128">Jaga över olika enheter, e-postmeddelanden, appar och identiteter</span><span class="sxs-lookup"><span data-stu-id="dba96-128">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="dba96-129">Förstå schemat</span><span class="sxs-lookup"><span data-stu-id="dba96-129">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="dba96-130">Använda metodtips för frågor</span><span class="sxs-lookup"><span data-stu-id="dba96-130">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+## <a name="related-topics"></a><span data-ttu-id="7bc9b-124">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="7bc9b-124">Related topics</span></span>
+- [<span data-ttu-id="7bc9b-125">Översikt över avancerad jakt</span><span class="sxs-lookup"><span data-stu-id="7bc9b-125">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="7bc9b-126">Lär dig frågespråket</span><span class="sxs-lookup"><span data-stu-id="7bc9b-126">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="7bc9b-127">Använda delade frågor</span><span class="sxs-lookup"><span data-stu-id="7bc9b-127">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="7bc9b-128">Jaga över olika enheter, e-postmeddelanden, appar och identiteter</span><span class="sxs-lookup"><span data-stu-id="7bc9b-128">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="7bc9b-129">Förstå schemat</span><span class="sxs-lookup"><span data-stu-id="7bc9b-129">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="7bc9b-130">Använda metodtips för frågor</span><span class="sxs-lookup"><span data-stu-id="7bc9b-130">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
