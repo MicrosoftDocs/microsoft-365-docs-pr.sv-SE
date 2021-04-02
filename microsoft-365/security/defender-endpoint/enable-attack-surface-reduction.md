@@ -1,5 +1,5 @@
 ---
-title: Aktivera minskningsregler för attackytor
+title: Aktivera regler för minskning av attackytan
 description: Aktivera ASR-regler (attack surface reduction) för att skydda dina enheter från attacker som använder makron, skript och vanliga lägre tekniker.
 keywords: Minskning av attackytan, hips, skyddssystem mot värdintrång, skyddsregler, anti-sårbarhet, antiutforskning, sårbarhet, smitta, aktivera, aktivera
 search.product: eADQiWindows 10XVcnh
@@ -14,14 +14,14 @@ ms.author: ellevin
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 1deec767c6af777b23ab5a91c9e719f690e0c048
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: bf4fa88b3fbbf5d977d54a78c480129665049b23
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165147"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499408"
 ---
-# <a name="enable-attack-surface-reduction-rules"></a>Aktivera minskningsregler för attackytor
+# <a name="enable-attack-surface-reduction-rules"></a>Aktivera regler för minskning av attackytan
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -137,7 +137,7 @@ Exempel:
 
 2. I **redigeraren för grupprinciphantering** går du till **Datorkonfiguration** och väljer **Administrativa mallar**.
 
-3. Expandera trädet till **Windows-komponenter**  >  **Microsoft Defender Antivirus** Windows Defender  >  **Sårbarhetsskydd-minskning** av  >  **attackytan**.
+3. Expandera trädet till **Windows-komponenter**  >  **Microsoft Defender Antivirus** Microsoft Defender  >  **Sårbarhetsskydd-** minskning av  >  **attackytan**.
 
 4. Välj **Konfigurera minskningsregler för attackytan** och välj **Aktiverad**. Sedan kan du ange enskilda tillstånd för varje regel i alternativavsnittet.
 
@@ -211,4 +211,4 @@ Exempel:
 
 - [Utvärdera minskning av attackytan](evaluate-attack-surface-reduction.md)
 
-- [Vanliga frågor och svar om att minska attackytan](attack-surface-reduction.md)
+- [Vanliga frågor och svar för minskning av attackytan](attack-surface-reduction.md)

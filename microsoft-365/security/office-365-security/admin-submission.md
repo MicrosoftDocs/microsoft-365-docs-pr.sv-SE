@@ -19,12 +19,12 @@ ms.custom:
 description: Administratörer kan ta reda på hur de använder portalen för inskickade innehåll i Säkerhets- och efterlevnadscenter för & för att skicka misstänkta e-postmeddelanden, misstänkta nätfiskemeddelanden, skräppost och andra potentiellt skadliga meddelanden, URL:er och filer till Microsoft för genomsökning.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3dd566de3ba4b4281b19c423b8623f081c378bca
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6f1294335be5a82ef7219ef9096d84d840271c5b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207457"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499335"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Använd administrationsinskick för att skicka misstänkt skräppost, nättr ut, URL:er och filer till Microsoft
 
@@ -122,9 +122,9 @@ Andra sätt att skicka e-postmeddelanden, URL:er och bifogade filer till Microso
 
    ![Exempel på inskickade bifogade filer](../../media/submission-file-flyout.PNG)
 
-## <a name="view-admin-submissions"></a>Visa administrationsinskick
+## <a name="view-items-submitted-for-analysis"></a>Visa objekt som skickats för analys
 
-I Säkerhets- & efterlevnadscenter går  du till Inskickade hothantering , kontrollerar att du är på fliken Administratörsinskickningar och klickar sedan \> på **Ny inskickad inskickad information.** 
+I säkerhets- & säkerhets- och  \> **efterlevnadscenter** går du till Sändning av hothantering , kontrollerar att du är på **fliken Skickat för** analys
 
 Högst upp på sidan kan du ange ett startdatum, ett slutdatum och (som  standard) kan du filtrera efter sändnings-ID (ett GUID-värde som är tilldelat till varje inskickat värde) genom att ange ett värde i rutan och klicka på Uppdatera knapp ![ ](../../media/scc-quarantine-refresh.png) . Du kan ange flera värden avgränsade med kommatecken.
 
@@ -254,6 +254,9 @@ Du kan klicka på **knappen Kolumnalternativ** längst ned på sidan om du vill 
 Högst upp på sidan kan du ange ett startdatum, ett slutdatum och du kan filtrera efter **Skickat** genom att ange ett värde i rutan och klicka på ![ ](../../media/scc-quarantine-refresh.png) Uppdatera. Du kan ange flera värden avgränsade med kommatecken.
 
 Om du vill exportera resultaten klickar **du på** Exportera högst upp på sidan och väljer **Diagramdata** eller **Tabell.** Spara CSV-filen i dialogrutan som visas.
+
+> [!NOTE]
+> Om organisationer är konfigurerade att endast skicka till en anpassad postlåda skickas inte rapporterade meddelanden för sökning och resultat i portalen för användarrapporter är alltid tomma.
 
 ## <a name="undo-user-submissions"></a>Ångra användarinskick
 

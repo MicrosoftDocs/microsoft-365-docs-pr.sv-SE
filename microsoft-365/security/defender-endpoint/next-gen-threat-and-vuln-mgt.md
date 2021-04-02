@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: d1402d8486725559335a5edc5ee13c78a0125932
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 0c3c5ebbcd4483cae159fe9b46a6f4c376443be3
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186431"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499071"
 ---
 # <a name="threat-and-vulnerability-management"></a>Hantering av hot och sårbarhet
 
@@ -88,9 +88,9 @@ Område | Beskrivning
 **Instrumentpanelen**   | Få en högnivåvy av exponeringsresultatet för organisationen, Microsoft Secure Score för enheter, exponeringsfördelning av enheter, toppsäkerhetsrekommendationer, övre sårbar programvara, toppreparationsaktiviteter och top-exponerade enhetsdata.
 [**Säkerhetsrekommendationer**](tvm-security-recommendation.md) | Se listan över säkerhetsrekommendationer och relaterad information om hot. När du väljer ett objekt i listan öppnas en utfällbarhetspanel med sårbarhetsinformation, en länk för att öppna programvarusidan samt alternativ för åtgärder och undantag. Du kan också öppna ett ärende i Intune om dina enheter är anslutna via Azure Active Directory och du har aktiverat Dina Intune-anslutningar i Defender för slutpunkt.
 [**Åtgärda**](tvm-remediation.md) | Se åtgärder som du har skapat och undantag från rekommendation.
-[**Inventering av programvara**](tvm-software-inventory.md) | Visa listan över sårbar programvara i organisationen, tillsammans med information om säkerhet och hot.
+[**Programvaruinventering**](tvm-software-inventory.md) | Visa listan över sårbar programvara i organisationen, tillsammans med information om säkerhet och hot.
 [**Svagheter**](tvm-weaknesses.md) | Se listan över vanliga säkerhetsproblem och exponeringar (CVEs) i organisationen.
-[**Händelsetidslinje**](threat-and-vuln-mgt-event-timeline.md) | Visa händelser som kan påverka organisationens risk.
+[**Tidlinje för händelse**](threat-and-vuln-mgt-event-timeline.md) | Visa händelser som kan påverka organisationens risk.
 
 ## <a name="apis"></a>API:er
 
@@ -98,13 +98,13 @@ Kör API-anrop som rör hot och sårbarhetshantering för att automatisera arbet
 
 Se följande artiklar för relaterade API:er:
 
-- [Microsoft Defender-API:er som stöds för slutpunkts-API:er](exposed-apis-list.md)
+- [Microsoft Defender för Endpoint API:er som stöds](exposed-apis-list.md)
 - [Dator-API:er](machine.md)
 - [API:er för rekommendation](vulnerability.md)
 - [Poäng-API:er](score.md)
 - [Programvaru-API:er](software.md)
 - [Sårbarhets-API:er](vulnerability.md)
-- [Lista säkerhetsproblem efter maskin och programvara](get-all-vulnerabilities-by-machines.md)
+- [Lista sårbarheter efter maskin och programvara](get-all-vulnerabilities-by-machines.md)
 
 ## <a name="see-also"></a>Se även
 

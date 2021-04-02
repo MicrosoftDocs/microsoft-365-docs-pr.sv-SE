@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: acb259088717b2772ec9798027545f2ff6dbc5e0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ab6bdefb457fb31df98d829ee801b72f4c8ae70a
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076706"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499693"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Avancerat schema för sökning – Namnändringar
 
@@ -65,7 +65,7 @@ Namnändringar tillämpas automatiskt på frågor som sparas i säkerhetscentret
 | `DetectionSource` | AzureATP |    Microsoft Defender for Identity | Rebranding |
 | `DetectionSource` | AnpassadDetection   | Anpassad identifiering | Rebranding |
 | `DetectionSource` | AutomatedInvestigation |Automatiserad undersökning | Rebranding |
-| `DetectionSource` | ThreatExperts | Microsoft Threat Experts | Rebranding |
+| `DetectionSource` | ThreatExperts | Microsoft Hotexperter | Rebranding |
 | `DetectionSource` | TREDJEPARTS TI | Tredjepartssensorer | Rebranding |
 | `ServiceSource` | Microsoft Defender Avancerat skydd| Microsoft Defender för Endpoint | Rebranding |
 |`ServiceSource` |Microsoft Hotskydd   | Microsoft 365 Defender | Rebranding |

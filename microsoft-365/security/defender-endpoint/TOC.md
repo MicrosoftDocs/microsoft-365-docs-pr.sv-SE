@@ -145,6 +145,7 @@
 #### [Felsökning]()
 ##### [Felsöka installationsproblem](mac-support-install.md)
 ##### [Felsöka prestandaproblem](mac-support-perf.md)
+##### [Felsöka molnanslutning](troubleshoot-cloud-connect-mdemac.md)
 ##### [Felsöka problem med kernel-tillägg](mac-support-kext.md)
 ##### [Felsöka licensproblem](mac-support-license.md)
 
@@ -586,6 +587,7 @@
 #### [Felsöka problem med minskning av attackytan]()
 ##### [Nätverksskydd](troubleshoot-np.md)
 ##### [Regler för minskning av attackytan](troubleshoot-asr.md)
+##### [Migrera till Regler för minskning av attackytan](migrating-asr-rules.md)
 
 # [Microsoft 365 Defender](../index.yml)
 # [Microsoft Defender för Office 365](../office-365-security/overview.md)

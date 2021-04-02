@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e3a20f0a356a32eddc05b3792c0c04c23197a7b0
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 5fa811b2419d107e91b301d5c9bad691fc016b5b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185701"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498968"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-for-mac"></a>Distribution med ett annat MDM-system (Mobile Device Management) för Microsoft Defender för Endpoint för Mac
 
@@ -43,7 +43,7 @@ Innan du börjar kan du gå [till huvudsidan för Microsoft Defender](microsoft-
 ## <a name="approach"></a>Metod
 
 > [!CAUTION]
-> För närvarande stöder Microsoft oficially endast Intune och JAMF för distribution och hantering av Microsoft Defender för Endpoint för Mac. Microsoft ger inga garantier, uttryckliga eller underförstådda, med avseende på den information som anges nedan.
+> För närvarande har Microsoft officiellt endast stöd för Intune och JAMF för distribution och hantering av Microsoft Defender för Endpoint för Mac. Microsoft ger inga garantier, uttryckliga eller underförstådda, med avseende på den information som anges nedan.
 
 Om din organisation använder en MDM-lösning (Mobile Device Management) som inte stöds officiellt betyder det inte att du inte kan distribuera eller köra Microsoft Defender för Endpoint för Mac.
 
@@ -84,6 +84,10 @@ MDM använder den för att distribuera inställningsfilen till **/Bibliotek/Hant
 ### <a name="kernel-extension-policy"></a>Kernel-tilläggspolicy
 
 Konfigurera en KEXT- eller kernel-förlängningsprincip. Använd teamidentifierare **UBF8T346G9** för att tillåta kernel-tillägg som tillhandahålls av Microsoft.
+
+> [!CAUTION]
+> Om miljön består av Apple Silicon-enheter (M1) bör dessa datorer inte ta emot konfigurationsprofiler med KEXT-principer.
+> Apple stöder inte KEXT på dessa datorer, distributionen av sådan profil skulle misslyckas på M1-datorer.
 
 ### <a name="system-extension-policy"></a>Princip för systemtillägg
 

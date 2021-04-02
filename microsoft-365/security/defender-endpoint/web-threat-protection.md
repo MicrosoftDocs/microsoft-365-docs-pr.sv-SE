@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7754fa586b24fdedaa9691b45f5da4654c882a5b
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: aeeea02ca1ef2d37623e9ab434b162237c2f4946
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185987"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499900"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Skydda din organisation mot webbhot
 
@@ -36,7 +36,7 @@ ms.locfileid: "51185987"
 Skydd mot webbhot är en del [av webbskyddet](web-protection-overview.md) i Defender för Endpoint. Den använder [nätverksskydd](network-protection.md) för att skydda dina enheter mot webbhot. Genom att integrera med Microsoft Edge och populära webbläsare från tredje part, som Chrome och Firefox, stoppar webbhotskydd webbhot utan webbproxy och kan skydda enheter när de är borta eller lokalt. Skydd mot webbhot hindrar åtkomst till nätfiskewebbplatser, skadlig programvara, sårbarhetswebbplatser, icke betrodda eller ryktesbaserade webbplatser samt webbplatser som du har blockerat i din anpassade [indikatorlista.](manage-indicators.md)
 
 >[!Note]
->Det kan ta upp till en timme innan enheter får nya kundindikatorer.
+>Det kan ta upp till en timme innan enheter får nya anpassade indikatorer.
 
 ## <a name="prerequisites"></a>Krav
 Webbskydd använder nätverksskydd för att tillhandahålla surfsäkerhet i Microsoft Edge och webbläsare från tredje part.

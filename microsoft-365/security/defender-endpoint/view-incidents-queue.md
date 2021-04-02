@@ -1,5 +1,5 @@
 ---
-title: Visa och ordna kö för incidenter
+title: Visa och ordna incidentkö
 ms.reviewer: ''
 description: Se listan över incidenter och lär dig hur du använder filter för att begränsa listan och få en mer fokuserad vy.
 keywords: visa, organisera, incidenter, aggregera, undersökningar, kö, ttp
@@ -9,20 +9,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f25189ac6550d9c3349e08f7e7ac685d4b8031fc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 93aa685f12e0241758bf86d3aa956717db052e5f
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071770"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499940"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Visa och ordna kön Microsoft Defender för slutpunktsincidenter
 

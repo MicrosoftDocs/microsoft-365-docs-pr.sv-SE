@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d9ccd4f7dcc8b1546772a756aaf850dadfc87905
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: fcf33b309045b9ca763b0d3cabc44fb13505ee0b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071786"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500058"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>Microsoft Secure Score för enheter
 
@@ -112,5 +112,5 @@ Förbättra säkerhetskonfigurationen genom att åtgärda problem från listan m
 
 - [Översikt över hot- och sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)
 - [Instrumentpanelen](tvm-dashboard-insights.md)
-- [Exponeringsresultat](tvm-exposure-score.md)
+- [Exponeringsvärde](tvm-exposure-score.md)
 - [Säkerhetsrekommendationer](tvm-security-recommendation.md)
