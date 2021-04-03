@@ -2,8 +2,8 @@
 title: Flytta filer till OneDrive för företag
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,17 +23,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
-description: Lär dig hur du kan flytta dina personliga arbetsfiler och känsliga företagsfiler till OneDrive för företag med bara några enkla steg.
-ms.openlocfilehash: 561c9dee1080a50dea695f136df10be8e5d52959
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+description: Läs om hur du kan flytta personliga arbetsfiler och känsliga företagsfiler till OneDrive för företag med några få enkla steg.
+ms.openlocfilehash: d6bcf2b41f1052c521fda50557aac4bf6a3800fa
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785921"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580083"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Flytta filer till OneDrive för företag
 
-Titta på en kort video om hur du flyttar filer till OneDrive för företag.<br><br>
+Titta på en kort video om att flytta filer till OneDrive för företag.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341] 
 
@@ -44,7 +44,7 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
 
 Om en användare har en dator som innehåller många personliga filer, bör du först flytta filerna till OneDrive för företag:
   
-1. Gå till portal.office.com och logga in med användarens Microsoft 365 för företagsautentiseringsuppgifter.
+1. Gå till portal.office.com och logga in med användarens autentiseringsuppgifter för Microsoft 365 för företag.
 
 2. Klicka på appfönstret ![The app launcher icon in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) och gå till OneDrive. 
     
@@ -52,6 +52,6 @@ Om en användare har en dator som innehåller många personliga filer, bör du f
     
 Du kan även använda ett tredjepartsverktyg, till exempel ForensiT, för att föra över användarprofilen och viktiga filer. Du bör föra över dessa filer i OneDrive för företag också.
   
-## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Mer information om hur du konfigurerar och använder Microsoft 365 för företag
+## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Mer information om att konfigurera och använda Microsoft 365 för företag
 
 [Utbildningsvideor för Microsoft 365 Business](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

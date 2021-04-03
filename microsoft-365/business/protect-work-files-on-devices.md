@@ -2,8 +2,8 @@
 title: Skydda arbetsfiler på enheter
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -27,19 +27,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 52089919-9a5e-475f-a49a-f65369487861
-description: 'Lär dig mer om standardkonfiguration och lägga till programhanteringsprinciper för att skydda företagsdata på användarnas personliga mobila enheter. '
-ms.openlocfilehash: 6dd6bc5c16ffbbd6ed62f16ad11e1eeb8e06a193
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+description: 'Läs mer om standardkonfiguration och hur du lägger till principer för programhantering för att skydda företagsdata på användarnas personliga mobila enheter. '
+ms.openlocfilehash: 7e3967dad47508e938b760d0eb96ba8685d886a1
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470916"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580043"
 ---
 # <a name="protect-work-files-on-devices"></a>Skydda arbetsfiler på enheter
 
 Den här artikeln gäller Microsoft 365 Business Premium.
 
-I dagens värld är användarna bundna till sina enheter, och när privatlivet och arbetslivet kolliderar kan dina företagsdata hamna på en anställds personliga enhet. De inställningar som du konfigurerar här kan hjälpa dig ta tillbaka kontrollen och skydda arbetsfiler, utan att användarens personliga inställningar eller data påverkas.
+I dagens värld är användare kopplade till sina enheter och i kollidering mellan det privata och arbetet kan företagsdata hamna på en anställds personliga enhet. De inställningar som du konfigurerar här kan hjälpa dig ta tillbaka kontrollen och skydda arbetsfiler, utan att användarens personliga inställningar eller data påverkas.
   
 ## <a name="configuring-policies-during-setup"></a>Konfigurera principer vid installationen
 

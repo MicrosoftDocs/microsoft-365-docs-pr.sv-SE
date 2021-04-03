@@ -2,8 +2,8 @@
 title: Öka skyddet mot hot för Microsoft 365 för företag
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Konfigurera Microsoft Defender för Office 365 och skydda känsliga data mot nätfiske, skadlig programvara och andra hot.
-ms.openlocfilehash: 6526ed9a849e83f19f74656004978089ce367ea9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8fb2c3881876cabea6d8907a85bc9397212126dc
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198400"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580203"
 ---
 # <a name="increase-threat-protection"></a>Öka hotskyddet
 

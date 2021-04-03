@@ -2,8 +2,8 @@
 title: Snabbinstallationsguide för anställda
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,32 +21,32 @@ search.appverid:
 - MET150
 - MOE150
 description: Hjälp dina anställda att lära sig konfigurera Office-appar som de får med Microsoft 365 Business Premium.
-ms.openlocfilehash: c336e12e05a0bb2f0967c7e7591913cbb2ce6742
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 72b05435de13ef0d020be74f619a140e188f79d8
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422765"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580624"
 ---
 # <a name="employee-quick-setup"></a>Snabbinstallationsguide för anställda
 
-Använder du Microsoft 365 för företag för första dig? :::image type="icon" source="../media/video-call-icon.png" border="false":::[I den här videon får](https://support.microsoft.com/office/d6466f0d-5d13-464a-adcb-00906ae87029) du lära dig hur. Följ sedan de här anvisningarna.
+Använder du Microsoft 365 för företag för första företag? :::image type="icon" source="../media/video-call-icon.png" border="false":::[Titta på den här videon](https://support.microsoft.com/office/d6466f0d-5d13-464a-adcb-00906ae87029) och lär dig mer. Följ sedan de här anvisningarna.
 
 :::image type="content" source="../media/m365-employee-quick-setup.png" alt-text="Bild som visar snabb konfigurationssteg för anställda.":::
 
 ## <a name="1-sign-in-to-office"></a>1. Logga in på Office
 
 1. Gå till [Office.com](https://office.com) och välj **Logga in**.
-1. Skriv din e-postadress och ditt lösenord för Microsoft 365 och **logga sedan in.**
+1. Skriv din e-postadress och ditt lösenord för Microsoft 365 och **logga sedan in**.
 
-## <a name="2-download-and-install-office-apps"></a>2. Ladda ned och installera Office-program
+## <a name="2-download-and-install-office-apps"></a>2. Ladda ned och installera Office-appar
 
-1. Välj **Installera Office** längst upp till höger.
+1. Välj **Installera Office** uppe till höger.
     - I Chrome går du till nedladdningen längst ned på sidan och väljer **Öppna**.
     - I Microsoft Edge/IE väljer du **Spara** och sedan **Kör**.
     
         Om du får en fråga om du tillåter att programmet gör ändringar väljer du **Ja**. Starta Office-installationen.
-    - Öppna Microsoft **Office_2016_Installer.pkg på en** Mac
+    - På en Mac öppnar du Microsoft **Office_2016_Installer.pkg**
 
 ## <a name="3-open-outlook-and-add-your-account"></a>3. Öppna Outlook och lägg till ditt konto
 
@@ -61,8 +61,8 @@ Använder du Microsoft 365 för företag för första dig? :::image type="icon" 
 
 ## <a name="4-save-or-copy-files-to-onedrive"></a>4. Spara eller kopiera filer till OneDrive
 
-- Spara dokument på **OneDrive från** menyn **Spara som** i Office-program.
-    :::image type="content" source="../media/save-onedrive.png" alt-text="Ta reda på vem som kan spara som på OneDrive.":::
+- Spara dokument på **OneDrive** från menyn **Spara som** i Office-program.
+    :::image type="content" source="../media/save-onedrive.png" alt-text="Visa information om vem som kan spara som på OneDrive.":::
 
 - Eller kopiera filer från Skrivbord eller Dokument till **OneDrive**.
 
@@ -82,7 +82,7 @@ Använder du Microsoft 365 för företag för första dig? :::image type="icon" 
 
 ## <a name="6-get-outlook-on-your-phone"></a>6. Skaffa Outlook på telefonen
 
-- Skaffa **Outlook** på telefonen från App Store eller Google Play Store. Öppna den och välj Kom igång **och lägg till** din e-postadress och ditt lösenord.
+- Skaffa **Outlook** på telefonen från App Store eller Google Play Store. Öppna den och välj Kom igång **och lägg** till din e-postadress och ditt lösenord.
 - Eller öppna Outlook på en iOS- eller Android-enhet och gå till **Inställningar**.
 
     Välj **Lägg till konto**, sedan **Lägg till e-postkonto** och skriv din e-postadress och ditt lösenord.

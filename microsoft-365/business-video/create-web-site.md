@@ -2,8 +2,8 @@
 title: Skapa en webbplats för ditt företag
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du skapar en GoDaddy-webbplats för ditt företag.
-ms.openlocfilehash: 64b8b7bacaf218f95a0fb89d03eb280f755f1f2f
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 8f7057fcb7ed85502ce856fb50349a91466e0d6c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422741"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580648"
 ---
 # <a name="create-a-website"></a>Skapa en webbplats
 
@@ -33,11 +33,11 @@ ms.locfileid: "50422741"
 
 ## <a name="try-it"></a>Prova!
 
-Microsoft 365 inkluderar inte en offentlig webbplats för ditt företag. Om du vill konfigurera en bör du överväga att använda ett webbhotellföretag som GoDaddy, Wix eller WordPress.
+Microsoft 365 inkluderar inte en offentlig webbplats för ditt företag. Om du vill konfigurera en kan du överväga att använda ett webbhotellföretag som GoDaddy, Wix eller WordPress.
 
-1. Sök efter ett webbhotell där du kan skapa din webbplats.
+1. Sök efter en leverantör av webbhotell där du kan skapa din webbplats.
 
-     Det kan vara enklast att välja webbplatsverktyget på samma företag där domännamnet är registrerat.
-1. Utforma din företagswebbplats och se till att ta med företagets logotyp, affärsändamål, text, bilder och länkar.
+     Det kan vara enklast att välja webbplatsverktyget i samma företag där domännamnet är registrerat.
+1. Utforma din företagswebbplats och se till att ta med din företagslogotyp, affärsändamål, text, bilder och länkar.
 1. Om du vill integrera webbplatsen med Microsoft 365 kan du lägga till företagets e-postadress på webbplatsen och en länk till Microsoft Teams, SharePoint eller andra samarbetsverktyg.
-1. Se till att ansluta din webbplats till ditt domännamn, som du&#39;använder för e-post på Microsoft 365.
+1. Se till att du ansluter din webbplats till domännamnet, som du&#39;använder för e-post på Microsoft 365.

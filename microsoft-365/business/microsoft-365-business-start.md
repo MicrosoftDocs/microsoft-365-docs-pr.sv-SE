@@ -2,8 +2,8 @@
 title: Komma igång med Microsoft 365 för företag
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Läs mer om Microsoft 365 för företag, hur du bereder dem och hur du förbereder användarnas enheter och datorer för att säkerställa att de skyddas av Microsoft 365 för företag.
-ms.openlocfilehash: 9430dc7aa637be3fdb833150b83e96caacc82170
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 83bd2ff87683c1ad810d20658ba20f3229408968
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912971"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580103"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Komma igång med Microsoft 365 för företag
 

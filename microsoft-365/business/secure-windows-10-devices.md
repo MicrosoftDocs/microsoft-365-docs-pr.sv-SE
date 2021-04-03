@@ -2,8 +2,8 @@
 title: Skydda Windows 10-enheter
 f1.keywords:
 - CSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: Läs mer om hur du konfigurerar inställningarna för standardprincipen för enheter som en Windows 10-enhet får när du loggar in på deras arbets- eller skolkonto.
-ms.openlocfilehash: 85383b1e1d2f2af3fd49d4a0c56c5d99586d607d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 86db1c152f9f6ac1fe6093b4a55a74b69fbd8b0f
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912619"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579983"
 ---
 # <a name="secure-windows-10-devices"></a>Skydda Windows 10-enheter
 

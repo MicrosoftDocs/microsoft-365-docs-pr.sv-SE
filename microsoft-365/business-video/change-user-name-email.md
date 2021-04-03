@@ -2,8 +2,8 @@
 title: Ändra en användares namn eller e-postadress
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du ändrar en användares namn eller e-postadress.
-ms.openlocfilehash: f45f0bb2f2243a6105f6b5f3de89dd4693acbe17
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 6c08110e8725645f2e1d0deffcadd9f34354e1f9
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422957"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580684"
 ---
 # <a name="change-a-users-name-or-email-address"></a>Ändra en användares namn eller e-postadress
 
@@ -38,25 +38,25 @@ Ibland kan du behöva ändra en användares namn eller e-postadress. Det kan du 
 
 ### <a name="change-a-users-display-name"></a>Ändra en användares visningsnamn
 
-1. I administrationscentret för Microsoft 365 väljer du **Användare** och sedan **Aktiva användare.**
+1. I administrationscentret för Microsoft 365 väljer **du Användare** och sedan **Aktiva användare.**
 1. Välj användaren i listan över aktiva användare.
-1. Välj **Hantera kontaktinformation.**
-1. Ändra visningsnamnet och välj **Spara ändringar.**
+1. Välj **Hantera kontaktinformation**.
+1. Ändra visningsnamnet och välj **Spara ändringar**.
 
     Det nya namnet visas nu i Outlook och andra Microsoft 365-appar.
 
 ### <a name="add-an-email-alias"></a>Lägga till ett e-postalias
 
-1. I administrationscentret för Microsoft 365 väljer du **Användare** och sedan **Aktiva användare.**
+1. I administrationscentret för Microsoft 365 väljer **du Användare** och sedan **Aktiva användare.**
 1. Välj användaren i listan över aktiva användare.
-1. Välj **Hantera e-postalias.**
-1. Ange det nya aliaset, verifiera domänen och välj **Spara ändringar.**
+1. Välj **Hantera e-postalias**.
+1. Ange det nya aliaset, verifiera domänen och välj **Spara ändringar**.
 
 ### <a name="change-a-username"></a>Ändra ett användarnamn
 
-1. I administrationscentret för Microsoft 365 väljer du **Användare** och sedan **Aktiva användare.**
+1. I administrationscentret för Microsoft 365 väljer **du Användare** och sedan **Aktiva användare.**
 1. Välj användaren i listan över aktiva användare.
 1. Välj **Hantera användarnamn.**
-1. Ange det nya användarnamnet, verifiera domänen och välj **Spara ändringar.**
+1. Ange det nya användarnamnet, verifiera domänen och välj **Spara ändringar**.
 
     På grund av den här ändringen måste användaren logga in på Microsoft 365 med det nya användarnamnet och lägga till det nya e-postkontot i Outlook.

@@ -2,8 +2,8 @@
 title: Hantera skyddade enheter med Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: Lär dig hur du tar bort företagsdata från enheter som hanteras genom skyddsprinciper och återställer Windows 10-enheter till fabriksinställningarna.
-ms.openlocfilehash: 5bedcdc95a8d0f67c7db73d84f530a0518a07216
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: fdd92e797774a47455d6b4163dfe399bf74d41f3
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222328"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580163"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>Hantera skyddade enheter med Microsoft 365 Business Premium
 

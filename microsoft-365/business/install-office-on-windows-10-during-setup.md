@@ -2,8 +2,8 @@
 title: Installera Office vid Windows 10-installationen
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -25,18 +25,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
-description: Upptäck hur du med Microsoft 365 Business Premium automatiskt kan se till att användarna har den senaste versionen av Office på alla sina Windows 10-enheter.
-ms.openlocfilehash: 1ca386f75743178aebaf0bfabbabcb74f4813685
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Med Microsoft 365 Business Premium kan du automatiskt se till att användarna har den senaste versionen av Office på alla sina Windows 10-enheter.
+ms.openlocfilehash: d3c62eb42ea73c7af6df6012dbc9488828cd1ba8
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400847"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580183"
 ---
 # <a name="install-office-on-windows-10-during-setup"></a>Installera Office vid Windows 10-installationen
 
-![Banner som pekar på https://aka.ms/aboutM365preview .](../media/m365admincenterchanging.png)
+![Banderoll som pekar på https://aka.ms/aboutM365preview .](../media/m365admincenterchanging.png)
 
-Den här inställningen är inaktiverad som standard. Du kan aktivera den för att se till att användarna har den senaste versionen av Office på alla sina Windows 10-enheter, men först kontrollera att alla förutsättningar är uppfyllda. Användare måste licensieras för Microsoft 365 Business Premium för att den här inställningen ska kunna skicka programvaran till enheten, utöver andra krav som beskrivs i [Förbereda för Office-klientdistribution av Microsoft 365 Business Premium](prepare-for-office-client-deployment.md).
+Den här inställningen är inaktiverad som standard. Du kan aktivera den så att användarna har den senaste versionen av Office på alla sina Windows 10-enheter, men kontrollera först att alla krav uppfylls. Användarna måste ha licens för Microsoft 365 Business Premium för att den här inställningen ska kunna skicka programvaran till enheten, utöver andra krav som beskrivs i Förbereda Office-klientdistribution av [Microsoft 365 Business Premium.](prepare-for-office-client-deployment.md)
   
-Vi rekommenderar att du accepterar standardinställningen under installationen.
+Vi rekommenderar att du vid installationen godkänner standardinställningen.

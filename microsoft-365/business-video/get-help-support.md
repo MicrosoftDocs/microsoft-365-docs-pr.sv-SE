@@ -2,8 +2,8 @@
 title: Få hjälp eller support
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,22 +21,22 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du får administratörshjälp eller support i Microsoft 365 Business Premium.
-ms.openlocfilehash: 852b931f4710ad4117560485002ebe10ef97d3ad
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 016e31ea12f1efeb50597cdb34391d324dc0f58d
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422585"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580600"
 ---
 # <a name="get-help-or-support"></a>Få hjälp eller support
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
-Behöver du prata med någon på en gång? Ha kontouppgifterna redo när du ringer supporten.
+Behöver du tala med någon på en gång? Ha kontouppgifterna redo när du ringer supporten.
 
-Är du inte administratör? Prova [Microsofts support](https://go.microsoft.com/fwlink/?linkid=860695) för hem- och slutanvändare.
+Är du inte administratör? Prova [Microsoft Support](https://go.microsoft.com/fwlink/?linkid=860695) för hem- och slutanvändare.
 
-- **I USA ringer du 1 800 865 9408.**
+- **I USA ringer du 1 800 865 9408**.
 - **I Australien ringer du 1 800 197 503.**
 - **I Kanada ringer du 1 800 865 9408.**
 - **I Storbritannien ringer du 0800 032 6417.**
@@ -48,16 +48,16 @@ Supporttelefonnumret för Microsoft 365 eller Microsoft 365 Business Premium fö
 
 ## <a name="try-it"></a>Prova!
 
-I Microsoft 365 Business Premium finns det flera sätt att få hjälp eller hjälp. Du kan hitta hjälp i administrationscentret för Microsoft, i en Microsoft Store eller från en leverantör av Microsoft-lösningar.
+I Microsoft 365 Business Premium finns det flera sätt att få hjälp eller assistans. Du kan hitta hjälp i administrationscentret för Microsoft, i en Microsoft Store eller från en leverantör av Microsoft-lösningar.
 
 ### <a name="get-help-in-the-admin-center"></a>Få hjälp i administrationscentret
 
-1. Logga in [office.com](https://office.com) logga in med dina autentiseringsuppgifter för arbetet och välj Administratör.
-1. Välj Behöver du hjälp längst ned på **sidan?** För att öppna supportassistenten.
+1. Logga in [office.com](https://office.com) dina autentiseringsuppgifter för arbetet och välj Administratör.
+1. Välj Behöver du hjälp? längst ned på **sidan för** att öppna supportassistenten.
 1. Skriv din fråga och välj sedan ikonen **Skicka** meddelande.
-1. Granska resultaten och välj det alternativ du vill använda.
+1. Granska resultatet och välj det alternativ du vill använda.
 1. Om du behöver mer hjälp väljer du **ikonen** Kontakt.
-1. På sidan **Kontakta support** anger du information om din fråga och anger sedan din kontaktinformation. Välj hur du vill bli kontaktad och välj sedan **Kontakta mig.**
+1. På sidan **Kontakta support** anger du information om din fråga och anger sedan din kontaktinformation. Välj hur du vill bli kontaktad och välj sedan **Kontakta mig**.
 
     Din servicebegäran har skickats. Du ser en sammanfattning av din begäran på sidan **Tjänstbegäran.**
 
@@ -65,8 +65,8 @@ I Microsoft 365 Business Premium finns det flera sätt att få hjälp eller hjä
 
 1. Om du har ett större projekt eller problem och vill tala med en konsult kan du kontakta en leverantör av Microsoft-lösningar.
 1. Sök efter "leverantörer av Microsoft-lösningar" i webbläsaren för att hitta en lösningsleverantör.
-1. Välj sidan **för Microsoft Solution Provider.**
+1. Välj sidan **för leverantör av Microsoft-lösningar.**
 1. Ange din plats, organisationens storlek och vilken typ av support du letar efter. Välj **Gå.**
-1. Välj den **lösningsleverantör du vill** använda i listan på sidan Hitta en Microsoft-lösningsleverantör.
+1. På sidan **Hitta en leverantör av Microsoft-lösningar** väljer du den lösningsleverantör du vill ha i listan.
 
-    När tjänstprovider som du väljer kontaktas du.
+    Den tjänstleverantör du väljer kontaktar dig.

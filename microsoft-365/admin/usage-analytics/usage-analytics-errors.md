@@ -2,8 +2,8 @@
 title: Felsökning av Microsoft 365 användningsanalyser
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,72 +19,72 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
-description: Lär dig hur du felsöker problem med programmet Microsoft 365 användnings analys.
-ms.openlocfilehash: bf8e4ece7b1e310d91f418f5388cae9aa27f2aa7
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+description: Lär dig hur du felsöker problem med mallappen Microsoft 365 användningsanalys.
+ms.openlocfilehash: bc7f1f7188a209188f1a67a20bf79477c6e1d4a0
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841441"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580744"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>Felsökning av Microsoft 365 användningsanalyser
 
 Utforska följande lista över felmeddelanden för att få hjälp med de vanligaste problemen med användningsanalyser för Microsoft 365.
   
     
-## <a name="we-are-unable-to-process-your-request-you-have-to-first-subscribe-to-this-data-from-the-microsoft-365-admin-center"></a>Vi kan inte att bearbeta din begäran. Du måste först abonnera på dessa data från administrations centret för Microsoft 365
+## <a name="we-are-unable-to-process-your-request-you-have-to-first-subscribe-to-this-data-from-the-microsoft-365-admin-center"></a>Vi kan inte att bearbeta din begäran. Du måste först prenumerera på dessa data från administrationscentret för Microsoft 365
 
  **Felkod:** 422 
   
- **Här visas det här meddelandet:** I Power BI när du ansluter till Microsoft 365 användnings analys Template-programmet eller när du direkt anropar API: erna Microsoft 365 repor ting. 
+ **Var du kommer att få se det här meddelandet:** I Power BI när du ansluter till mallappen Microsoft 365 användningsanalys eller när du anropar rapport-API:er för Microsoft 365 direkt. 
   
- **Orsak:** Innan du kan ansluta till appen måste du abonnera på data från administrations centret för Microsoft 365. Om det här steget inte är först kan du inte ansluta till programmet, även om du tillhandahåller ditt Microsoft 365-klient-ID. 
+ **Orsak:** Innan du kan ansluta till appen måste du prenumerera på data från administrationscentret för Microsoft 365. Om du inte först gör det här steget kan du inte ansluta till mallappen, även om du anger ditt klientorganisations-ID för Microsoft 365. 
   
- **Så här åtgärdar du felet:** Om du vill abonnera på data går du till administrations centrets \> **rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> och letar reda på Microsoft 365 användnings analys panelen på huvud instrument panelen. Välj knappen **Kom igång** och sedan, i fönstret **rapporter** som öppnas, aktiverar du inställningen **gör data tillgängliga för Microsoft 365 användnings analys för Power BI** på och **Spara** .
+ **Så här åtgärdar du felet:** Om du vill prenumerera på data går du till administrationscentret Rapporterar användning och letar upp \>  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank"></a> panelen Microsoft 365 användningsanalyser på huvudsidan för instrumentpanelen. Välj knappen **Komma igång.**  I fönstret Rapporter som öppnas aktiverar du inställningen Gör data tillgängliga för **Microsoft 365** användningsanalyser för Power BI och **Spara**.
   
 ## <a name="we-are-processing-your-data"></a>Vi bearbetar dina data
 
- **Här visas det här meddelandet:** I panelen **microsoft 365 användnings analys** på instrument panelen för **användning** i administrations centret för Microsoft 365. 
+ **Var du kommer att få se det här meddelandet:** I panelen **Microsoft 365 användningsanalyser** på **instrumentpanelen** för användning i administrationscentret för Microsoft 365. 
   
- **Orsak:** När du [väljer att visa data i programmet](enable-usage-analytics.md) från administrations centret för Microsoft 365 börjar Microsoft 365-systemet att generera historiska data för din organisation. Beroende på storleken på klientorganisationen kan det här steget ta mellan två till fyrtioåtta timmar. 
+ **Orsak:** När du väljer att visa [data](enable-usage-analytics.md) i mallappen från administrationscentret för Microsoft 365 börjar Microsoft 365-systemet generera historiska användningsdata för organisationen. Beroende på storleken på klientorganisationen kan det här steget ta mellan två till fyrtioåtta timmar. 
   
- **Så här löser du det:** Det är bara tålamod, men om meddelandet inte ändras till **dina data är klara** efter tre dagar kontaktar du [Microsoft 365 för företag-support](../contact-support-for-business-products.md).
+ **Så här åtgärdar du det:** Ha tålamod, men om meddelandet inte ändras till Your data is ready (Dina data är **klara)** efter 3 dagar bör du kontakta supporten [för Microsoft 365 för företag.](../contact-support-for-business-products.md)
   
 ## <a name="we-are-unable-to-process-your-request-at-this-time-we-are-still-preparing-the-data-for-your-organization"></a>Vi kan för närvarande inte att bearbeta din begäran. Vi förbereder fortfarande data för organisationen
 
  **Felkod:** 423 
   
- **Här visas det här meddelandet:** När du ansluter till Microsoft 365 användnings analys mal len i Power BI eller när du direkt anropar API: erna Microsoft 365 repor ting. 
+ **Var du kommer att få se det här meddelandet:** När du ansluter till mallappen Microsoft 365 användningsanalys i Power BI eller när du anropar Rapport-API:er för Microsoft 365 direkt. 
   
- **Orsak:** När du [väljer att visa data i programmet](enable-usage-analytics.md) från administrations centret börjar Microsoft 365-systemet att generera historiska data för din organisation. Det här steget kan ta mellan två timmar och 48 timmar beroende på klient organisationens storlek. 
+ **Orsak:** När du [väljer att visa data](enable-usage-analytics.md) i mallappen i administrationscentret börjar Microsoft 365-systemet generera historiska användningsdata för organisationen. Beroende på storleken på klientorganisationen kan det här steget ta mellan två till 48 timmar. 
   
- **Så här löser du det:** Det är bara tålamod, men om meddelandet inte ändras till **dina uppgifter** kan du [kontakta Microsoft 365 för företag-supporten](../contact-support-for-business-products.md).
+ **Så här åtgärdar du det:** Ha tålamod, men om meddelandet inte ändras till Your **data is ready** (Dina data är klara) 3 dagar efter initieringen bör du kontakta supporten för Microsoft [365 för företag.](../contact-support-for-business-products.md)
   
 ## <a name="the-tenant-id-you-provided-is-not-in-the-correct-format"></a>Klientorganisations-ID:t som du angav är inte i rätt format
 
  **Felkod:** 400 
   
- **Här visas det här meddelandet:** När du ansluter till Microsoft 365 användnings analys mal len i Power BI eller när du direkt anropar API: erna Microsoft 365 repor ting. 
+ **Var du kommer att få se det här meddelandet:** När du ansluter till mallappen Microsoft 365 användningsanalys i Power BI eller när du anropar Rapport-API:er för Microsoft 365 direkt. 
   
- **Orsak:** Klient-ID är ett GUID och måste ha formatet XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX. Om du anger en annan sträng i rutan för innehavaradministration visas det här fel meddelandet. 
+ **Orsak:** Klientorganisations-ID:t är ett guid och måste vara i xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx. Om du anger någon annan sträng i inmatningsrutan för klientorganisationen får du det här felet. 
   
- **Så här åtgärdar du felet:** Gå till administrations centrets \> **rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> och leta reda på Microsoft 365 användnings analys panelen på huvud instrument panelen. Klient-ID visas på panelen. Du kan kopiera den härifrån och klistra in den i dialog rutan för att ansluta till programmet. 
+ **Så här åtgärdar du felet:** Gå till administrationscentret Rapporterar användning \>  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">och leta</a> reda på panelen Microsoft 365 användningsanalys på huvudsidan för instrumentpanelen. Klientorganisations-ID:t visas på panelen. Du kan kopiera det härifrån och klistra in det i dialogrutan för att ansluta till mallappen. 
   
 ## <a name="the-tenant-id-you-provided-is-not-recognized-by-our-system"></a>Vårt system känner inte igen klientorganisations-ID:t som du angav
 
  **Felkod:** 404 
   
- **Här visas det här meddelandet:** I Power BI när du ansluter till Microsoft 365 användnings analys Template-programmet eller när du direkt anropar API: erna Microsoft 365 repor ting. 
+ **Var du kommer att få se det här meddelandet:** I Power BI när du ansluter till mallappen Microsoft 365 användningsanalys eller när du anropar rapport-API:er för Microsoft 365 direkt. 
   
- **Orsak:** Klient organisationens ID är ogiltigt eller finns inte. 
+ **Orsak:** Klientorganisations-ID:t som du angav är inte giltigt eller finns inte. 
   
- **Så här åtgärdar du felet:** Gå till administrations centrets \> **rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> och leta reda på Microsoft 365 användnings analys panelen på huvud instrument panelen. Klient-ID visas på panelen. Du kan kopiera den härifrån och klistra in den i dialog rutan för att ansluta till programmet. 
+ **Så här åtgärdar du felet:** Gå till administrationscentret Rapporterar användning \>  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">och leta</a> reda på panelen Microsoft 365 användningsanalys på huvudsidan för instrumentpanelen. Klientorganisations-ID:t visas på panelen. Du kan kopiera det härifrån och klistra in det i dialogrutan för att ansluta till mallappen. 
   
 ## <a name="please-re-enter-your-credentials-to-sign-in-to-power-bi-again"></a>Ange dina inloggningsuppgifter för att logga in på Power BI igen
 
 Felkod: 302
   
- **Här visas det här meddelandet:** I Power BI när du ansluter till Microsoft 365 användnings analys Template-programmet eller när du direkt anropar API: erna Microsoft 365 repor ting. 
+ **Var du kommer att få se det här meddelandet:** I Power BI när du ansluter till mallappen Microsoft 365 användningsanalys eller när du anropar rapport-API:er för Microsoft 365 direkt. 
   
  **Orsak:** Auktoriseringskoden fungerade inte. Eventuellt måste du ange dina autentiseringsuppgifter igen. 
   
@@ -94,20 +94,20 @@ Felkod: 302
 
  **Felkod:** 403 
   
- **Här visas det här meddelandet:** I Power BI när du ansluter till Microsoft 365 användnings analys Template-programmet eller när du direkt anropar API: erna Microsoft 365 repor ting. 
+ **Var du kommer att få se det här meddelandet:** I Power BI när du ansluter till mallappen Microsoft 365 användningsanalys eller när du anropar rapport-API:er för Microsoft 365 direkt. 
   
- **Orsak:** Auktoriseringskod misslyckades eftersom den användare som försökte ansluta till mallgalleriet inte har rätt behörighet för att komma åt dessa data. 
+ **Orsak:** Auktoriseringskoden misslyckades eftersom användaren som försökte ansluta till mallappen inte har rätt auktoriseringsnivå för att komma åt dessa data. 
   
- **Så här åtgärdar du felet:** Ange autentiseringsuppgifter för en användare som är **Global administratör** , **Exchange-administratör** , **Skype för företag-administratör** , SharePoint- **administratör** , **global läsare** eller **rapport läsare** för att ansluta till programmet mall. Mer information finns i [om administratörs roller](../add-users/about-admin-roles.md) . 
+ **Så här åtgärdar du felet:** Ange autentiseringsuppgifter för en användare som är antingen  global administratör **,** **Exchange-administratör,** Skype för **företag-administratör,** **SharePoint-administratör,** **global** läsare eller rapportläsare för att ansluta till mallappen. Mer information [finns i Om](../add-users/about-admin-roles.md) administratörsroller. 
   
 ## <a name="refresh-failed"></a>Uppdateringen misslyckades
 
  **Var du kommer att få se det här meddelandet:** E-post från Power BI eller statusen Misslyckades i uppdateringshistoriken. 
   
- **Orsak:** Ibland återställs autentiseringsuppgifterna för den användare som anslöt till malldokument och uppdateras inte i anslutnings inställningarna för den mall som gör att användaren kan se uppdaterings fel. 
+ **Orsak:** Ibland återställs autentiseringsuppgifterna för den användare som är ansluten till mallappen och uppdateras inte i anslutningsinställningarna för mallappen, vilket gör att användaren får information om fel vid uppdatering. 
   
- **Så här åtgärdar du felet:** I Power BI hittar du den data uppsättning som motsvarar Microsoft 365 användnings analys-mallen, väljer **Schemalägg uppdatering** och uppger dina administratörsautentiseringsuppgifter. 
+ **Så här åtgärdar du felet:** Hitta den datauppsättning i Power BI som motsvarar mallappen  för Microsoft 365 användningsanalyser, välj Schemalägg uppdatering och ange dina autentiseringsuppgifter som administratör. 
   
-Om det inte fungerar avmarkerar du cachen och skapar sedan programmet igen.
+Om det inte fungerar rensar du cachen och skapar mallappen igen.
   
   
