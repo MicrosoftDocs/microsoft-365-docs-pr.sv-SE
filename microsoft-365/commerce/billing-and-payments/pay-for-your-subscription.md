@@ -21,21 +21,14 @@ ms.custom:
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 44cb7b09c76ee5e49d2f556df104e55150212f30
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 582ecb0f9b46d877c30aa29334b30b9209c93993
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911788"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576943"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Hur du betalar för din prenumeration
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Du kan använda ett kredit- eller betalkort eller ett bankkonto för att betala för din prenumeration. I vissa fall kan du betala med faktura, via check eller elektronisk betalningsöverföring (EFT). Om du har en faktureringsprofil är alternativen lite annorlunda. Mer information finns i [Så här betalar du för din prenumeration med en faktureringsprofil](pay-for-subscription-billing-profile.md). Om du är osäker på om kontot har en faktureringsprofil kan du gå till [Förstå faktureringsprofiler](manage-billing-profiles.md).
 

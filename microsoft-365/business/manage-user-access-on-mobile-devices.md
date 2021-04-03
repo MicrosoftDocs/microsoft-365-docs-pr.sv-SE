@@ -2,8 +2,8 @@
 title: Hantera hur användare kommer åt Office-dokument på mobila enheter
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -26,19 +26,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
-description: Lär dig mer om skyddsprinciper som gör att du kan hantera hur användare får åtkomst till Office-appar och arbetar filer från mobila enheter.
-ms.openlocfilehash: b2b828cf2e201360f12b8fadcb395e72958230f6
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+description: Läs mer om skyddsprinciper som gör att du kan hantera hur användare får åtkomst till Office-program och arbetsfiler från mobila enheter.
+ms.openlocfilehash: a48aa241c9e70cf087da3f1701e859dae7238024
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44471076"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578396"
 ---
 # <a name="manage-how-users-access-office-documents-on-mobile-devices"></a>Hantera hur användare kommer åt Office-dokument på mobila enheter
 
 Den här artikeln gäller Microsoft 365 Business Premium.
 
-Principinställningar som styr hur användare får åtkomst till Office-filer från sina mobila enheter är **Av** som standard. Vi rekommenderar att du accepterar standardvärdena under installationen för att skapa programprinciper för Android, iOS och Windows 10 som gäller för alla användare. Du kan skapa fler principer när installationen har slutförts. 
+Principinställningar som styr hur användare får åtkomst till Office-filer från sina mobila enheter är **Av** som standard. Vi rekommenderar att du godkänner standardvärdena vid installationen för att skapa programprinciper för alla användare i Android, iOS och Windows 10. Du kan skapa fler principer när installationen har slutförts. 
   
 ## <a name="settings-that-control-how-users-access-office-files-on-mobile-devices"></a>Inställningar som styr hur användare kommer åt Office-filer på mobila enheter
 
@@ -47,10 +47,10 @@ Följande inställningar är tillgängliga för att bestämma hur användare kan
 |||
 |:-----|:-----|
 |Inställning  <br/> |Beskrivning  <br/> |
-|Kräv PIN-kod eller fingeravtryck för åtkomst till Office-program  <br/> |Om den här inställningen är **På**måste användarna ange en annan form av autentisering, utöver sitt användarnamn och lösenord, innan de kan använda Office-appar på sin mobila enhet.  <br/> |
+|Kräv PIN-kod eller fingeravtryck för åtkomst till Office-program  <br/> |Om den här inställningen **är På** måste användare utöver användarnamn och lösenord, tillhandahålla annan autentisering innan de kan använda Office-apparna på sina mobila enheter.  <br/> |
 |Återställ PIN-kod när inloggningen misslyckas så här många gånger  <br/> |Om du vill förhindra att obehöriga användare slumpmässigt gissar en PIN-kod. PIN-koden återställs efter det antal felaktiga försök som du anger.  <br/> |
-|Kräv att användare loggar in igen efter att Office-appar har varit inaktiva  <br/> |Den här inställningen avgör hur länge en användare kan vara inaktiv innan han eller hon uppmanas att logga in igen.  <br/> |
-|Neka åtkomst till arbetsfiler på jailbroken eller rotade enheter  <br/> |Smarta användarna kanske har en jailbroken eller rotad enhet. Detta innebär att användaren kan ändra operativsystemet, vilket kan göra enheten mer mottaglig för skadlig kod. De här enheterna är blockerade när den här inställningen är **På**.  <br/> |
-|Tillåt inte att användare kopierar innehåll från Office-appar till personliga appar  <br/> |När inställningen är **På**kan användaren inte kopiera information i en arbetsfil till en personlig fil. Om inställningen är **Av**kan användaren kopiera information från en arbetsfil till en personlig app eller ett personligt konto.  <br/> |
+|Kräv att användare loggar in igen efter att Office-appar har varit inaktiva  <br/> |Den här inställningen bestämmer hur länge en användare kan vara inaktiv innan de uppmanas att logga in igen.  <br/> |
+|Neka åtkomst till arbetsfiler på jailbroken eller rotade enheter  <br/> |Smarta användarna kanske har en jailbroken eller rotad enhet. Det innebär att användaren kan ändra operativsystemet, vilket kan göra enheten mer känslig för skadlig programvara. De här enheterna är blockerade när den här inställningen är **På**.  <br/> |
+|Tillåt inte användare att kopiera innehåll från Office-program till personliga program  <br/> |När inställningen är **På** kan användaren inte kopiera information i en arbetsfil till en personlig fil. Om inställningen är **Av** kan användaren kopiera information från en arbetsfil till ett privat program eller personligt konto.  <br/> |
    
 

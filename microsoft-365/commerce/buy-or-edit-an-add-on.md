@@ -19,21 +19,14 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - Commerce
-ms.openlocfilehash: ea9cdb6edf3aaac1575b1d2b14790bd28876ee26
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b470fb727ed55ba066cd0371e2e707c72b50ae99
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911655"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576931"
 ---
 # <a name="buy-or-manage-add-ons"></a>Köp eller hantera tilläggsprogram
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Många Microsoft 365 för företag-abonnemang har tillägg som du kan köpa för dina prenumerationer. Tillägg ger fler funktioner för att förbättra din prenumerationsupplevelse.
 

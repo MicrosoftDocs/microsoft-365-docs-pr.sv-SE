@@ -1,9 +1,9 @@
 ---
-title: Dela filer på ett säkert sätt utanför företaget
+title: Dela filer utanför företaget på ett säkert sätt
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du kan dela företagsfilerna externt på ett säkert sätt.
-ms.openlocfilehash: e023ccc48d4489d7d50ea688c9e5b16c1b9a3758
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 317267b4051b4e250cf53f2fbc375b9277c7d000
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422093"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578681"
 ---
 # <a name="securely-share-files-externally"></a>Dela filer externt på ett säkert sätt
 
@@ -35,11 +35,11 @@ I Microsoft 365 för företag är det enkelt att dela filer med personer i organ
 
 ## <a name="try-it"></a>Prova!
 
-1. Klicka på Nytt längst upp i dokumentbiblioteket på SharePoint-webbplatsen och välj sedan **Mapp.**
-1. Ge mappen ett namn och klicka sedan på **Skapa.**
-1. Ladda upp de filer du vill dela till det nya biblioteket eller välj **Ny** för att skapa nya dokument direkt i biblioteket.
+1. Högst upp i dokumentbiblioteket på SharePoint-webbplatsen klickar du på **Nytt** och väljer sedan **Mapp**.
+1. Ge mappen ett namn och klicka sedan på **Skapa**.
+1. Ladda upp de filer du vill dela till det nya biblioteket eller välj **Nytt för** att skapa nya dokument direkt i biblioteket.
 1. Välj den nya mappen i dokumentbiblioteket och klicka sedan på **knappen** Dela.
-1. Klicka på **listan högst** upp i fönstret Skicka länk, välj **Specifika** personer, välj Tillåt **redigering** och välj sedan **Använd.**
-1. I fönstret **Skicka länk** anger du kundens e-postadress, skriver ett meddelande och väljer **Skicka.**
+1. Klicka på **listan högst** upp i fönstret Skicka länk, välj **Specifika personer**, välj **Tillåt redigering** och välj sedan **Använd**.
+1. I fönstret **Skicka länk** anger du kundens e-postadress, skriver ett meddelande och väljer **Skicka**.
 
-    Kunden får ett e-postmeddelande med en verifieringskod som denna behöver skicka till sig själv för att komma åt din mapp. Om de inte hittar e-postmeddelandet bör de kontrollera mappen Skräppost.
+    Kunden får ett e-postmeddelande med en verifieringskod som denna behöver skicka till sig själv för att komma åt mappen. Om de inte hittar e-postmeddelandet bör de kontrollera mappen Skräppost.

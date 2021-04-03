@@ -2,8 +2,8 @@
 title: Aktivera multifaktorautentisering
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,27 +21,27 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du aktiverar multifaktorautentisering.
-ms.openlocfilehash: 36a556046deac98a8687b7a74affda908fb15e4f
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 64e054defb407a3b2c1e4d124767d1d68f78452a
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421781"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578585"
 ---
 # <a name="turn-on-multi-factor-authentication"></a>Aktivera multifaktorautentisering
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
 
-Multifaktorautentisering innebär att du och dina anställda måste använda fler än ett sätt att logga in på Microsoft 365 är ett av de enklaste sätten att skydda ditt företag.
+Multifaktorautentisering innebär att du och de anställda måste använda fler än ett sätt att logga in på Microsoft 365. Det är ett av de enklaste sätten att skydda företaget.
 
 ## <a name="try-it"></a>Prova!
 
 1. Gå till administrationscentret på [https://admin.microsoft.com](https://admin.microsoft.com).
-1. Välj **Visa alla** och sedan **administrationscentret för Azure Active Directory.**
-1. Välj **Azure Active Directory,** **Egenskaper,** **Hantera säkerhetsstandarder.**
-1. Under **Aktivera säkerhetsinställningar väljer** du **Ja** och sedan **Spara.**
+1. Välj **Visa alla** och välj sedan **Administrationscenter för Azure Active Directory.**
+1. Välj **Azure Active Directory,** **Egenskaper** och **Hantera standardinställningar för säkerhet.**
+1. Under **Aktivera säkerhetsinställningar väljer** du **Ja** och sedan **Spara**.
 
 > [!NOTE]
-> För nya prenumerationer aktiveras Säkra standardinställningar automatiskt.
+> För nya prenumerationer Aktiveras Säkra standardinställningar automatiskt.
 
 Nästa gång de valda anställda loggar in uppmanas de att konfigurera appen Microsoft Authenticator på sina telefoner för en andra form av autentisering.

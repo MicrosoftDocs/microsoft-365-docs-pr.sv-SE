@@ -14,26 +14,18 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Läs om hur du aktiverar och hanterar appar från tredje part i administrationscentret för Microsoft 365.
-ms.openlocfilehash: f560b23871fc6d6ecb319a5704453f2400cb9982
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 974ce99b55dcb078286d7f6dba35166e51ce62a7
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911416"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576919"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Hantera appprenumerationer från tredje part för din organisation
 
 Du kan hantera licenser och fakturering för appar från tredje part i det nya administrationscentret för Microsoft 365. De uppdaterade funktionerna omfattar förbättrad hantering av prenumerationer, förbättrad åtkomst till faktureringsinformation och förbättrad flexibilitet för att hantera fakturor. Prenumerationshanteringen baseras på Microsofts uppdaterade handelsplattform. Det här gäller programvaror som en tjänst som kunder köper direkt eller från en tredjepartsleverantör.
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
-
 Du kan hantera licenser och fakturering för appar från tredje part i administrationscentret för Microsoft 365 med förhandsgranskningsläget aktiverat. De uppdaterade funktionerna omfattar förbättrad hantering av prenumerationer, förbättrad åtkomst till faktureringsinformation och förbättrad flexibilitet för att hantera fakturor. Prenumerationshanteringen baseras på Microsofts uppdaterade handelsplattform. Det här gäller programvaror som en tjänst som kunder köper direkt eller från tredje part.
-
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>Så här hämtar du program för programvara som en tjänst
 

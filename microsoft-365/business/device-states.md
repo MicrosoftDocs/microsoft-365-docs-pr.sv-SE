@@ -2,8 +2,8 @@
 title: Statusvärden för enheter
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
-description: Lär dig mer om de olika enhetstillstånden i listan Enhetsåtgärder i Administrationshem i Microsoft 365 för företag.
-ms.openlocfilehash: 64138e2b6ae73c067709cde1912a96615d08ebf1
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+description: Läs mer om olika enhets tillstånd i listan Enhetsåtgärder i administrationscentret i Microsoft 365 för företag.
+ms.openlocfilehash: e6f1b428413d094e0a1ce3afb026528074038736
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44471188"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578476"
 ---
 # <a name="device-states"></a>Statusvärden för enheter
 
@@ -44,15 +44,15 @@ Enheter i listan **Enhetsåtgärder** (Administratörshemsida \> **Enhetsåtgär
 |**Status**|**Beskrivning**|
 |:-----|:-----|
 |Managed by Intune (Hanteras av Intune)  <br/> |Hanteras av Microsoft 365 Business Premium.  <br/> |
-|Retire pending (Väntar på att tas ur bruk)  <br/> |Microsoft 365 Business Premium gör sig redo att ta bort företagsdata från enheten.  <br/> |
+|Retire pending (Väntar på att tas ur bruk)  <br/> |Microsoft 365 Business Premium för förbereda för att ta bort företagsdata från enheten.  <br/> |
 |Retire in progress (Tas nu ur bruk)  <br/> |Microsoft 365 Business Premium tar för närvarande bort företagsdata från enheten.  <br/> |
 |Retire failed (Det gick inte att ta ur bruk)  <br/> | Åtgärden att ta bort företagsdata misslyckades.  <br/> |
-|Dra tillbaka avbrutet  <br/> |Åtgärden För att dra tillbaka avbröts.  <br/> |
+|Retire canceled (Dra tillbaka) har avbrutits  <br/> |Åtgärden för att ta ur verksamhet har avbrutits.  <br/> |
 |Wipe pending (Rensning väntar)  <br/> |Väntar på att fabriksåterställning ska starta.  <br/> |
 |Wipe in progress (Rensning pågår)  <br/> |Fabriksinställning har skickats.  <br/> |
-|Wipe failed (Det gick inte att rensa)  <br/> |Kunde inte göra fabriksåterställning.  <br/> |
-|Rensningen har avbrutits  <br/> |Fabriksrensningen avbröts.  <br/> |
-|Unhealthy (Ej felfri)  <br/> |En åtgärd väntar (eller pågår), men enheten har inte checkat in på över 30 dagar.  <br/> |
+|Wipe failed (Det gick inte att rensa)  <br/> |Det gick inte göra fabriksåterställning.  <br/> |
+|Rensningen har avbrutits  <br/> |Fabriksåterställningen avbröts.  <br/> |
+|Unhealthy (Ej felfri)  <br/> |En åtgärd väntar (eller pågår), men enheten har inte checkats in på mer än 30 dagar.  <br/> |
 |Delete pending (Väntar på att tas bort)  <br/> |Ta bort-åtgärd som väntar.  <br/> |
 |Discovered (Identifierad)  <br/> |Microsoft 365 Business Premium har upptäckt enheten.  <br/> |
    

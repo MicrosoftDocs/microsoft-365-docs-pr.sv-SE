@@ -57,23 +57,6 @@
       items:
         - name: Förutsättningar för Microsoft Hanterat skrivbord
           href: get-ready/prerequisites.md
-        - name: Förbereda nätverket
-          href: get-ready/network.md
-        - name: Förbereda lokal resursåtkomst
-          href: get-ready/authentication.md
-        - name: Förbereda mappade enheter
-          href: get-ready/mapped-drives.md
-        - name: Förbereda certifikat och nätverksprofiler
-          href: get-ready/certs-wifi-lan.md
-        - name: Förutsättningar för gästkonton
-          href: get-ready/guest-accounts.md
-        - name: Förbereda utskriftsresurser
-          href: get-ready/printing.md
-        - name: Förbereda appar
-          href: get-ready/apps.md
-          items:
-            - name: Arbeta med Microsoft Consulting Services
-              href: get-ready/apps-MCS.md
         - name: Använda verktyg för beredskapsbedömning
           href: get-ready/readiness-assessment-tool.md
           items:
@@ -81,6 +64,23 @@
               href: get-ready/readiness-assessment-fix.md
             - name: Nedladdningsbar kontroll för beredskapsbedömning
               href: get-ready/readiness-assessment-downloadable.md
+        - name: Förutsättningar för gästkonton
+          href: get-ready/guest-accounts.md
+        - name: Förbereda nätverket
+          href: get-ready/network.md
+        - name: Förbereda certifikat och nätverksprofiler
+          href: get-ready/certs-wifi-lan.md
+        - name: Förbereda åtkomst till lokala resurser
+          href: get-ready/authentication.md
+        - name: Förbereda appar
+          href: get-ready/apps.md
+          items:
+            - name: Arbeta med Microsoft Consulting Services
+              href: get-ready/apps-MCS.md
+        - name: Förbereda mappade enheter
+          href: get-ready/mapped-drives.md
+        - name: Förbereda utskriftsresurser
+          href: get-ready/printing.md
     - name: Komma igång med Microsoft Hanterat skrivbord
       href: get-started/index.md
       items:

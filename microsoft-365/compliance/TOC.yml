@@ -710,6 +710,8 @@
               href: download-documents-from-review-set.md
             - name: Exportera dokument från en granskningsuppsättning
               href: export-documents-from-review-set.md
+            - name: Exportera dokument till ett Azure Storage-konto
+              href: download-export-jobs.md
         - name: Hantera jobb
           href: managing-jobs-ediscovery20.md
         - name: Konfigurera ärendeinställningar

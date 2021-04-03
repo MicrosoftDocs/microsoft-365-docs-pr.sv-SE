@@ -1,9 +1,9 @@
 ---
-title: Planera en händelse med Microsoft Planner
+title: Planera ett evenemang med Microsoft Planner
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du planerar ett evenemang med Microsoft Planner.
-ms.openlocfilehash: 11453ae83f636e20cd67cc7a4202e8d6995e09a1
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: a1fe282b7edc9d52db643b47a5dc15a214588e10
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422309"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578729"
 ---
 # <a name="use-microsoft-planner-to-plan-an-event"></a>Använda Microsoft Planner till att planera ett evenemang
 
@@ -33,14 +33,14 @@ ms.locfileid: "50422309"
 
 ## <a name="try-it"></a>Prova!
 
-Använd Microsoft Planner till att planera ett evenemang, till exempel spåra en produktlansering.
+Använd Microsoft Planner till att planera ett evenemang, till exempel en produktlansering.
 
 ### <a name="work-with-buckets"></a>Arbeta med buckets
 
 Använd buckets för att sortera uppgifter efter typ, till exempel evenemangsplanering, marknadsföring och säljmaterial.
 
 1. Välj  **Lägg till ny bucket**  och ange en ny uppgiftskategori.
-2. Välj  **+**  att lägga till uppgifter i en bucket och skriv ett namn.
+2. Välj  **+**  för att lägga till uppgifter i en bucket och skriv ett namn.
 3. Välj **Lägg till uppgift.**
 
 ### <a name="work-with-labels"></a>Arbeta med etiketter
@@ -48,20 +48,20 @@ Använd buckets för att sortera uppgifter efter typ, till exempel evenemangspla
 Använd etiketter för att se vilka uppgifter som behöver din uppmärksamhet.
 
 1. Skriv namnen på etiketterna.
-2. Välj en färgad ruta för att ta bort eller lägga till en etikett för en uppgift.
+2. Välj en färgad ruta om du vill ta bort eller lägga till en etikett för en uppgift.
 
 ## <a name="add-a-comment"></a>Lägga till en kommentar
 
 Publicera en kommentar för att diskutera en uppgift med de personer som den är tilldelad till.
 
 1. Skriv ett meddelande i  **rutan**  Kommentarer.
-2. Välj **Skicka.**
+2. Välj  **Skicka**.
 
 ### <a name="keep-track-of-tasks"></a>Hålla reda på uppgifter
 
-Använd  **diagram-**  **och tavlavyn**  för att övervaka förloppet för varje gruppmedlem och det övergripande projektet, eller för att sortera och organisera uppgifter.
+Använd  **diagram**  och  **tavla**  för att övervaka förloppet för varje gruppmedlem och det övergripande projektet, eller för att sortera och organisera uppgifter.
 
-- Välj  **Diagram** och sedan **Gruppera efter och** slutligen Förfallodatum **om**  du vill se vilken uppgift som förfaller härnäst.
-- Välj  **Tavla** och **sedan Gruppera efter** och slutligen **Förlopp för**  att sortera uppgifter efter förlopp.
+- Välj  **Diagram** och sedan **Gruppera efter** och slutligen Förfallodatum för **att**  se vilken uppgift som förfaller härnäst.
+- Välj  **Tavla** och sedan **Gruppera efter** och slutligen **Förlopp för**  att sortera uppgifter efter förlopp.
 
-**Obs!**  Uppgifterna är ordnade **efter Ej påbörjad,** **Pågående** och Slutförd så att du vet när du är redo att lansera produkten. 
+**Obs!**  Uppgifter ordnas efter **Ej påbörjad,** Pågår och Slutförd så att du vet när du är redo att lansera din produkt. 

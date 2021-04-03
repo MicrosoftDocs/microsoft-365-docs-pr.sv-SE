@@ -1,7 +1,7 @@
 ---
 title: Förbereda mappade enheter för Microsoft Hanterat skrivbord
-description: Viktiga steg för att se till att
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
+description: Viktiga steg för att se till att användare kan komma åt data på mappade enheter
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
@@ -9,12 +9,13 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: cd45d6155fc0e01f6a285f6182aa051281d160e0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: f770f5083fe9193660b03e7971b09a127f2dae16
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922914"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574575"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Förbereda mappade enheter för Microsoft Hanterat skrivbord
 
@@ -36,7 +37,7 @@ För en sådan begäran måste du ange följande information i supportbegäran:
 - Användargrupper som kräver åtkomst till dessa platser för filresursen 
 - Alla specifika enhetsbeteckningar som måste tilldelas (om det behövs)
 
-Ett exempel:
+Till exempel:
 
 | Enhetsbeteckning | UNC-sökväg | Användargrupp |
 |--------------|----------|------------|
@@ -52,4 +53,16 @@ Se till att mappade enheter inte går att undvika och att du noggrant har gransk
 2. Skicka en supportbegäran med namnet "Distribution av mappade enheter" och ange all information som krävs för filresursen.  
 3. Microsoft Managed Desktop IT Operations ger information om när begäran har slutförts med hjälp av uppdateringar av supportbegäran. Från början distribueras den här konfigurationen endast till enheter i testdistributionsgruppen.  
 4. Du måste testa och bekräfta om konfigurationen som distribuerats av MICROSOFT Managed Desktop IT Operations fungerar som förväntat. Svara med hjälp av fliken Diskussion i informationen för samma supportbegäran för att meddela Microsoft Managed Desktop IT Operations när du har slutfört testningen.  
-5. Microsoft Managed Desktop IT Operations-teamet distribuerar sedan konfigurationen till andra distributionsgrupper.
+5. Microsoft Managed Desktop IT Operations-teamet distribuerar sedan konfigurationen till andra distributionsgrupper. 
+
+## <a name="steps-to-get-ready"></a>Steg för att förbereda dig
+
+1. Granska [Krav för Microsoft Managed Desktop](prerequisites.md).
+2. [Använda utvärderingsverktyg för beredskap](readiness-assessment-tool.md).
+3. [Förutsättningar för gästkonton](guest-accounts.md)
+4. [Nätverks konfiguration för Microsoft Hanterat skrivbord](network.md)
+5. [Förbereda certifikat och nätverks profiler för Microsoft Hanterat skrivbord](certs-wifi-lan.md)
+6. [Förbereda lokala resurser till gång för Microsoft Hanterat skrivbord](authentication.md)
+7. [Appar på Microsoft Hanterat skrivbord](apps.md)
+8. [Förbereda mappade enheter för Microsoft Managed Desktop](mapped-drives.md) (den här artikeln)
+9. [Förbereda skrivarresurser för Microsoft Hanterat skrivbord](printing.md)

@@ -1,7 +1,7 @@
 ---
 title: Förbereda certifikat och nätverks profiler för Microsoft Hanterat skrivbord
-description: certs/wifi/lan
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
+description: Certifikatkrav och Wi-Fi-anslutning
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -11,12 +11,13 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9f4490711c1ea051afe9d8efb081a2f7a141f8ba
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: a59add6f6821824f189703b3dedd35fda313ec31
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909124"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574589"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Förbereda certifikat och nätverks profiler för Microsoft Hanterat skrivbord  
  
@@ -86,3 +87,14 @@ Följ de här stegen om du vill distribuera certifikat och profiler:
 4. Skapa en profil för varje företags-VPN (se Windows 10- och Windows Holographic-enhetsinställningarna för att lägga till [VPN-anslutningar med Intune](/intune/vpn-settings-windows-10)).
 5. Skicka en supportbegäran med namnet "Certificate Deployment" eller "Wi-Fi Profile Deployment" till Microsoft Managed Desktop IT Operations med hjälp av Microsoft Managed Desktop Admin-portalen för att granska och distribuera konfigurationsprofilen till "Moderna workplace-enheter – test". IT-åtgärder i Microsoft Managed Desktop låter dig veta när begäran har slutförts via supportbegäran i administrationsportalen. 
  
+## <a name="steps-to-get-ready"></a>Steg för att förbereda dig
+
+1. Granska [Krav för Microsoft Managed Desktop](prerequisites.md).
+2. Använda [utvärderingsverktyg för beredskap](readiness-assessment-tool.md).
+3. [Förutsättningar för gästkonton](guest-accounts.md)
+4. [Nätverks konfiguration för Microsoft Hanterat skrivbord](network.md)
+5. [Förbereda certifikat och nätverksprofiler för Microsoft Managed Desktop](certs-wifi-lan.md) (den här artikeln)
+6. [Förbereda lokala resurser till gång för Microsoft Hanterat skrivbord](authentication.md)
+7. [Appar på Microsoft Hanterat skrivbord](apps.md)
+8. [Förbereda mappade enheter för Microsoft Hanterat skrivbord](mapped-drives.md)
+9. [Förbereda skrivarresurser för Microsoft Hanterat skrivbord](printing.md) 

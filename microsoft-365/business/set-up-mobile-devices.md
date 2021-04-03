@@ -2,8 +2,8 @@
 title: Konfigurera mobila enheter för Microsoft 365 för företag-användare
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,16 +26,16 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Om du installerar Office på en iPhone eller en Android-telefon skyddas arbetsfilerna i Office-apparna av Microsoft 365 för företag.
-ms.openlocfilehash: ef18fcce851b8fa1573fd5134bd25fb7d4a3d8f9
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: fefec17344d199ced230907fbaa85d98198cfb94
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928753"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578176"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Konfigurera mobila enheter för Microsoft 365 för företag-användare
 
-Följ instruktionerna på flikarna för att installera Office på en iPhone eller en Android-telefon. När du har gjort detta skyddas arbetsfiler som skapats i Office-program av Microsoft 365 för företag.
+Följ instruktionerna på flikarna för att installera Office på en iPhone eller en Android-telefon. När du har gjort detta skyddas arbetsfiler som skapats i Office-appar av Microsoft 365 för företag.
 
 Exemplet rör Outlook, men gäller även för alla andra Office-program du vill installera.
   
@@ -61,7 +61,7 @@ När installationen är klar trycker du på **Öppna** för att öppna Outlook o
   
 ![Screenshot of Outlook with Get Started button](../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
-Ange din e-postadress till arbetet på **skärmen** Lägg till e-postkonto Lägg till konto och ange sedan inloggningsuppgifterna för \> Microsoft 365 \> **för företag.**
+Ange din e-postadress till arbetet **på** skärmen Lägg till e-postkonto Lägg till konto och ange sedan dina inloggningsuppgifter för Microsoft \> 365 för företag \> **Logga in.**
   
 ![Sign in to your work account](../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
@@ -85,11 +85,11 @@ Börja installera på din Android-telefon genom att gå till Play Store.
   
 ![On the Android home screen, tap Play Store](../media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
-Ange Microsoft Outlook i sökrutan på Google Play och tryck på **Installera.** När Outlook har installerats trycker du på **Öppna.**
+Ange Microsoft Outlook i sökrutan på Google Play och tryck på **Installera**. När installationen av Outlook är klar trycker du på **Öppna**.
   
 ![Tap Open to open Outlook app](../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-Tryck på Komma igång i Outlook-appen och lägg sedan till ditt e-postkonto för Microsoft 365 för företag Fortsätt och logga \> in med dina autentiseringsuppgifter för organisationen.
+Tryck på Komma igång i Outlook-appen **och** lägg sedan till ditt e-postkonto för Microsoft 365 för företag Fortsätt och logga in med dina \> autentiseringsuppgifter för organisationen.
   
 ![Sign in to your organizational account in Outlook](../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
@@ -97,7 +97,7 @@ I dialogrutan som meddelar att du måste installera appen Intune-företagsportal
   
 ![Tap on Go to store to get Intune Company Portal app](../media/a702d712-5622-45dd-a511-b1adaee63071.png)
   
-Installera Intune-företagsportalen i Play Store.
+Installera Intune-företagsportal i Play Store.
   
 ![Screenshot that shows the install button for Intune Company Portal in Google Play Store](../media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
   
