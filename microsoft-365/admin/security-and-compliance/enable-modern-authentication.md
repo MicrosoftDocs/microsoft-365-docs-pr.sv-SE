@@ -2,8 +2,8 @@
 title: Aktivera modern autentisering för Office 2013 på Windows-enheter
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,43 +22,43 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Lär dig ange registernycklar för att aktivera modern autentisering för enheter som har Microsoft Office 2013 installerat.
-ms.openlocfilehash: f12511ad6d685647b3b38fd424f1d4611a3119b4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f803cf9a30be63e71ef3c4293d0d1ba5b2355e75
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914540"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580840"
 ---
-# <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a><span data-ttu-id="58984-103">Aktivera modern autentisering för Office 2013 på Windows-enheter</span><span class="sxs-lookup"><span data-stu-id="58984-103">Enable Modern Authentication for Office 2013 on Windows devices</span></span>
+# <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a><span data-ttu-id="c1a0c-103">Aktivera modern autentisering för Office 2013 på Windows-enheter</span><span class="sxs-lookup"><span data-stu-id="c1a0c-103">Enable Modern Authentication for Office 2013 on Windows devices</span></span>
 
-<span data-ttu-id="58984-104">Om du vill aktivera modern autentisering för Windows-enheter som har Office 2013 installerat, måste du ange specifika registernycklar.</span><span class="sxs-lookup"><span data-stu-id="58984-104">To enable modern authentication for any Windows devices that have Office 2013 installed, you need to set specific registry keys.</span></span>
+<span data-ttu-id="c1a0c-104">Om du vill aktivera modern autentisering för Windows-enheter som har Office 2013 installerat, måste du ange specifika registernycklar.</span><span class="sxs-lookup"><span data-stu-id="c1a0c-104">To enable modern authentication for any Windows devices that have Office 2013 installed, you need to set specific registry keys.</span></span>
   
-## <a name="enable-modern-authentication-for-office-2013-clients"></a><span data-ttu-id="58984-105">Aktivera modern autentisering för Office 2013-klienter</span><span class="sxs-lookup"><span data-stu-id="58984-105">Enable modern authentication for Office 2013 clients</span></span>
+## <a name="enable-modern-authentication-for-office-2013-clients"></a><span data-ttu-id="c1a0c-105">Aktivera modern autentisering för Office 2013-klienter</span><span class="sxs-lookup"><span data-stu-id="c1a0c-105">Enable modern authentication for Office 2013 clients</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="58984-106">Modern autentisering redan är aktiverad för Office 2016-klienter så du behöver inte ange registernycklar för Office 2016.</span><span class="sxs-lookup"><span data-stu-id="58984-106">Modern authentication is already enabled for Office 2016 clients, you do not need to set registry keys for Office 2016.</span></span> 
+> <span data-ttu-id="c1a0c-106">Modern autentisering redan är aktiverad för Office 2016-klienter så du behöver inte ange registernycklar för Office 2016.</span><span class="sxs-lookup"><span data-stu-id="c1a0c-106">Modern authentication is already enabled for Office 2016 clients, you do not need to set registry keys for Office 2016.</span></span> 
   
-<span data-ttu-id="58984-p101">Om du vill aktivera modern autentisering för enheter med Windows (till exempel på bärbara datorer och surfplattor), som har Microsoft Office 2013 installerat, måste du ange följande registernycklar. Registernycklarna måste anges på varje enhet som du vill aktivera för modern autentisering:</span><span class="sxs-lookup"><span data-stu-id="58984-p101">To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:</span></span>
+<span data-ttu-id="c1a0c-p101">Om du vill aktivera modern autentisering för enheter med Windows (till exempel på bärbara datorer och surfplattor), som har Microsoft Office 2013 installerat, måste du ange följande registernycklar. Registernycklarna måste anges på varje enhet som du vill aktivera för modern autentisering:</span><span class="sxs-lookup"><span data-stu-id="c1a0c-p101">To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:</span></span>
   
-|<span data-ttu-id="58984-109">**Registernyckel**</span><span class="sxs-lookup"><span data-stu-id="58984-109">**Registry key**</span></span>|<span data-ttu-id="58984-110">**Typ**</span><span class="sxs-lookup"><span data-stu-id="58984-110">**Type**</span></span>|<span data-ttu-id="58984-111">**Värde**</span><span class="sxs-lookup"><span data-stu-id="58984-111">**Value**</span></span> |
+|<span data-ttu-id="c1a0c-109">**Registernyckel**</span><span class="sxs-lookup"><span data-stu-id="c1a0c-109">**Registry key**</span></span>|<span data-ttu-id="c1a0c-110">**Typ**</span><span class="sxs-lookup"><span data-stu-id="c1a0c-110">**Type**</span></span>|<span data-ttu-id="c1a0c-111">**Värde**</span><span class="sxs-lookup"><span data-stu-id="c1a0c-111">**Value**</span></span> |
 |:-------|:------:|--------:|
-|<span data-ttu-id="58984-112">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL</span><span class="sxs-lookup"><span data-stu-id="58984-112">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL</span></span>  |<span data-ttu-id="58984-113">REG_DWORD</span><span class="sxs-lookup"><span data-stu-id="58984-113">REG_DWORD</span></span>  |<span data-ttu-id="58984-114">1</span><span class="sxs-lookup"><span data-stu-id="58984-114">1</span></span>  |
-|<span data-ttu-id="58984-115">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version</span><span class="sxs-lookup"><span data-stu-id="58984-115">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version</span></span> |<span data-ttu-id="58984-116">REG_DWORD</span><span class="sxs-lookup"><span data-stu-id="58984-116">REG_DWORD</span></span> |<span data-ttu-id="58984-117">1</span><span class="sxs-lookup"><span data-stu-id="58984-117">1</span></span> |
+|<span data-ttu-id="c1a0c-112">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL</span><span class="sxs-lookup"><span data-stu-id="c1a0c-112">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL</span></span>  |<span data-ttu-id="c1a0c-113">REG_DWORD</span><span class="sxs-lookup"><span data-stu-id="c1a0c-113">REG_DWORD</span></span>  |<span data-ttu-id="c1a0c-114">1</span><span class="sxs-lookup"><span data-stu-id="c1a0c-114">1</span></span>  |
+|<span data-ttu-id="c1a0c-115">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version</span><span class="sxs-lookup"><span data-stu-id="c1a0c-115">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version</span></span> |<span data-ttu-id="c1a0c-116">REG_DWORD</span><span class="sxs-lookup"><span data-stu-id="c1a0c-116">REG_DWORD</span></span> |<span data-ttu-id="c1a0c-117">1</span><span class="sxs-lookup"><span data-stu-id="c1a0c-117">1</span></span> |
    
-<span data-ttu-id="58984-118">När du har angett registernycklarna kan du ange att Office 2013-enhetsprogram ska använda multifaktorautentisering [(MFA)](set-up-multi-factor-authentication.md) med Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="58984-118">Once you have set the registry keys, you can set Office 2013 devices apps to use [multifactor authentication (MFA)](set-up-multi-factor-authentication.md) with Microsoft 365.</span></span> 
+<span data-ttu-id="c1a0c-118">När du har angett registernycklarna kan du ange att Office 2013-enhetsprogram ska använda multifaktorautentisering [(MFA)](set-up-multi-factor-authentication.md) med Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="c1a0c-118">Once you have set the registry keys, you can set Office 2013 devices apps to use [multifactor authentication (MFA)](set-up-multi-factor-authentication.md) with Microsoft 365.</span></span> 
   
-<span data-ttu-id="58984-p102">Om du för närvarande är inloggad med något av klientprogrammen måste du logga ut och logga in igen för att ändringen ska börja gälla. I annat fall är MRU- och roaminginställningarna otillgängliga tills ADAL-identiteten har upprättats.</span><span class="sxs-lookup"><span data-stu-id="58984-p102">If you're currently signed-in with any of the client apps, you need to sign out and sign back in for the change to take effect. Otherwise, the MRU and roaming settings will be unavailable until the ADAL identity is established.</span></span>
+<span data-ttu-id="c1a0c-p102">Om du för närvarande är inloggad med något av klientprogrammen måste du logga ut och logga in igen för att ändringen ska börja gälla. I annat fall är MRU- och roaminginställningarna otillgängliga tills ADAL-identiteten har upprättats.</span><span class="sxs-lookup"><span data-stu-id="c1a0c-p102">If you're currently signed-in with any of the client apps, you need to sign out and sign back in for the change to take effect. Otherwise, the MRU and roaming settings will be unavailable until the ADAL identity is established.</span></span>
   
-## <a name="disable-modern-authentication-on-devices"></a><span data-ttu-id="58984-121">Inaktivera modern autentisering på enheter</span><span class="sxs-lookup"><span data-stu-id="58984-121">Disable modern authentication on devices</span></span>
+## <a name="disable-modern-authentication-on-devices"></a><span data-ttu-id="c1a0c-121">Inaktivera modern autentisering på enheter</span><span class="sxs-lookup"><span data-stu-id="c1a0c-121">Disable modern authentication on devices</span></span>
 
-<span data-ttu-id="58984-122">Du inaktiverar modern autentisering på en enhet genom att ange följande registernycklar på enheten:</span><span class="sxs-lookup"><span data-stu-id="58984-122">To disable modern authentication on a device, set the following registry keys on the device:</span></span>
+<span data-ttu-id="c1a0c-122">Du inaktiverar modern autentisering på en enhet genom att ange följande registernycklar på enheten:</span><span class="sxs-lookup"><span data-stu-id="c1a0c-122">To disable modern authentication on a device, set the following registry keys on the device:</span></span>
   
-|<span data-ttu-id="58984-123">**Registernyckel**</span><span class="sxs-lookup"><span data-stu-id="58984-123">**Registry key**</span></span>|<span data-ttu-id="58984-124">**Typ**</span><span class="sxs-lookup"><span data-stu-id="58984-124">**Type**</span></span>|<span data-ttu-id="58984-125">**Värde**</span><span class="sxs-lookup"><span data-stu-id="58984-125">**Value**</span></span>|
+|<span data-ttu-id="c1a0c-123">**Registernyckel**</span><span class="sxs-lookup"><span data-stu-id="c1a0c-123">**Registry key**</span></span>|<span data-ttu-id="c1a0c-124">**Typ**</span><span class="sxs-lookup"><span data-stu-id="c1a0c-124">**Type**</span></span>|<span data-ttu-id="c1a0c-125">**Värde**</span><span class="sxs-lookup"><span data-stu-id="c1a0c-125">**Value**</span></span>|
 |:-------|:------:|--------:|
-|<span data-ttu-id="58984-126">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL</span><span class="sxs-lookup"><span data-stu-id="58984-126">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL</span></span> |<span data-ttu-id="58984-127">REG_DWORD</span><span class="sxs-lookup"><span data-stu-id="58984-127">REG_DWORD</span></span>|<span data-ttu-id="58984-128">0</span><span class="sxs-lookup"><span data-stu-id="58984-128">0</span></span>|
+|<span data-ttu-id="c1a0c-126">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL</span><span class="sxs-lookup"><span data-stu-id="c1a0c-126">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL</span></span> |<span data-ttu-id="c1a0c-127">REG_DWORD</span><span class="sxs-lookup"><span data-stu-id="c1a0c-127">REG_DWORD</span></span>|<span data-ttu-id="c1a0c-128">0</span><span class="sxs-lookup"><span data-stu-id="c1a0c-128">0</span></span>|
    
-## <a name="related-articles"></a><span data-ttu-id="58984-129">Relaterade artiklar</span><span class="sxs-lookup"><span data-stu-id="58984-129">Related articles</span></span>
-[<span data-ttu-id="58984-130">Logga in på Office 2013 med en andra metod för verifiering</span><span class="sxs-lookup"><span data-stu-id="58984-130">Sign in to Office 2013 with a second verification method</span></span>](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
+## <a name="related-articles"></a><span data-ttu-id="c1a0c-129">Relaterade artiklar</span><span class="sxs-lookup"><span data-stu-id="c1a0c-129">Related articles</span></span>
+[<span data-ttu-id="c1a0c-130">Logga in på Office 2013 med en andra metod för verifiering</span><span class="sxs-lookup"><span data-stu-id="c1a0c-130">Sign in to Office 2013 with a second verification method</span></span>](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 
-[<span data-ttu-id="58984-131">Outlook uppmanar dig att ange lösenord och använder inte modern autentisering för att ansluta till Office 365</span><span class="sxs-lookup"><span data-stu-id="58984-131">Outlook prompts for password and doesn't use Modern Authentication to connect to Office 365</span></span>](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled)
+[<span data-ttu-id="c1a0c-131">Outlook uppmanar dig att ange lösenord och använder inte modern autentisering för att ansluta till Office 365</span><span class="sxs-lookup"><span data-stu-id="c1a0c-131">Outlook prompts for password and doesn't use Modern Authentication to connect to Office 365</span></span>](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled)
 
