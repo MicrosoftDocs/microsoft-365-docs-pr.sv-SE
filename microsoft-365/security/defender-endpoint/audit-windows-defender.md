@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: dda0e58e587add2693f8448dd0833ce17706786c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7ce652d58be2d9ff28d82c088d5471a7bffdf6dc
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51075393"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570978"
 ---
 # <a name="test-how-microsoft-defender-for-endpoint-features-work-in-audit-mode"></a>Testa hur Microsoft Defender för slutpunktsfunktioner fungerar i granskningsläge
 
@@ -47,14 +47,14 @@ Du kan använda grupprinciper, PowerShell och konfigurationstjänster för att a
 
  **Granskningsalternativ** | **Så här aktiverar du granskningsläge** | **Så här visar du händelser**
 |---------|---------|---------|
-| Granskning gäller för alla händelser | [Aktivera reglerad mappåtkomst](enable-controlled-folders.md) | [Kontrollerade mappåtkomsthändelser](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer)
-| Granskningen gäller för enskilda regler | [Aktivera minskningsregler för attackytor](enable-attack-surface-reduction.md) | [Händelser för att minska attackytan](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)
+| Granskning gäller för alla händelser | [Aktivera kontrollerad mappåtkomst](enable-controlled-folders.md) | [Kontrollerade mappåtkomsthändelser](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer)
+| Granskningen gäller för enskilda regler | [Aktivera regler för minskning av attackytan](enable-attack-surface-reduction.md) | [Händelser för att minska attackytan](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)
 | Granskning gäller för alla händelser | [Aktivera nätverksskydd](enable-network-protection.md) | [Nätverksskyddshändelser](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer)
-| Granskning gäller för enskilda åtgärder | [Aktivera sårbarhetsskydd](enable-exploit-protection.md) | [Sårbarhetsskyddshändelser](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer)
+| Granskning gäller för enskilda åtgärder | [Aktivera exploateringsskydd](enable-exploit-protection.md) | [Sårbarhetsskyddshändelser](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-* [Skydda enheter från sårbarheter](exploit-protection.md)
+* [Skydda enheter från exploatering](exploit-protection.md)
 * [Minska attackytor med minskningsregler för attackytan](attack-surface-reduction.md)
 * [Skydda ditt nätverk](network-protection.md)
 * [Skydda viktiga mappar](controlled-folders.md)

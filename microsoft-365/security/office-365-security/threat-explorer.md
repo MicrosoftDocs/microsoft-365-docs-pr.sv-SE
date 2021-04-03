@@ -19,12 +19,12 @@ description: Använd Explorer och realtidsidentifiering i &amp; säkerhetsefterl
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 47bb14b90a94d0c8b542b12268bd6d5ed6e5c05a
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 1c5935115d7496aca22c3941f34983cddebe7b46
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445726"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570990"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Identifiering av hot i Utforskaren och i realtid
 
@@ -112,6 +112,8 @@ Information om taggar visas också i den utfällade URL-klickningen. Om du vill 
 
 > [!div class="mx-imgBorder"]
 > ![URL-taggar](../../media/tags-urls.png)
+> 
+Lär dig mer genom att titta [på videon](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4). 
 
 ## <a name="improvements-to-the-threat-hunting-experience-upcoming"></a>Förbättringar av upplevelsen av hot efter hot (kommande)
 

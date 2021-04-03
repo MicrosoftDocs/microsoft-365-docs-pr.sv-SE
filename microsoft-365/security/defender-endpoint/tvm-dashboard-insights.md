@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 594d4b5790f95abed966163e448d332467f35b51
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 35dd300d828bfa48ad753d7c65f36b2555cf4f60
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076793"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500178"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>Instrumentpanelinsikter – hantering av hot och sårbarhet
 
@@ -65,7 +65,7 @@ I den här videon får du en snabb överblick över vad som finns i instrumentpa
 Område | Beskrivning
 :---|:---
 **Valda enhetsgrupper (#/#)**   | Filtrera de data om hantering av hot och sårbarhet som du vill se på instrumentpanelen och korten efter enhetsgrupper. Det du väljer i filtret gäller på alla sidorna för hantering av hot och sårbarhet.
-[**Exponeringsresultat**](tvm-exposure-score.md)   | Se den aktuella statusen för organisationens exponering av enheter för hot och säkerhetsproblem. Flera faktorer påverkar organisationens exponeringsresultat: identifierad av dina enheter, hur sannolikt det är att dina enheter bryter sig, enheternas värde i organisationen och relevanta aviseringar som upptäcks med dina enheter. Målet är att minska exponeringsresultatet för organisationen för att vara säkrare. För att minska poäng måste du åtgärda relaterade problem med säkerhetskonfigurationen som anges i säkerhetsrekommendationerna.
+[**Exponeringsvärde**](tvm-exposure-score.md)   | Se den aktuella statusen för organisationens exponering av enheter för hot och säkerhetsproblem. Flera faktorer påverkar organisationens exponeringsresultat: identifierad av dina enheter, hur sannolikt det är att dina enheter bryter sig, enheternas värde i organisationen och relevanta aviseringar som upptäcks med dina enheter. Målet är att minska exponeringsresultatet för organisationen för att vara säkrare. För att minska poäng måste du åtgärda relaterade problem med säkerhetskonfigurationen som anges i säkerhetsrekommendationerna.
 [**Microsoft Secure Score för enheter**](tvm-microsoft-secure-score-devices.md) | Se säkerheten för operativsystemet, programmen, nätverket, kontona och säkerhetskontrollerna för din organisation. Målet är att åtgärda relaterade problem med säkerhetskonfigurationen för att öka poäng för enheter. Om du markerar staplarna kommer du till sidan **Med säkerhetsrekommendationer.**
 **Exponeringsfördelning för enhet** | Se hur många enheter som är exponerade baserat på deras exponeringsnivå. Välj ett avsnitt i ringdiagrammet för  att gå till listsidan Enheter och visa namn på enheter, exponeringsnivå, risknivå och annan information som domän, operativsystemplattform, status, när den senast sågs och dess taggar.
 **De viktigaste säkerhetsrekommendationerna** | Se de sorteringsbaserade säkerhetsrekommendationer som sorteras och prioriteras utifrån organisationens risk exponering och hur brådskande det är. Välj **Visa mer** om du vill se resten av säkerhetsrekommendationerna i listan. Välj **Visa undantag** för listan med rekommendationer som har ett undantag.
@@ -79,9 +79,9 @@ Mer information om ikoner som används i portalen finns i [Microsoft Defender f�
 ## <a name="related-topics"></a>Relaterade ämnen
 
 - [Översikt över hot- och sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)
-- [Exponeringsresultat](tvm-exposure-score.md)
+- [Exponeringsvärde](tvm-exposure-score.md)
 - [Microsoft Secure Score för enheter](tvm-microsoft-secure-score-devices.md)
 - [Säkerhetsrekommendationer](tvm-security-recommendation.md)
-- [Inventering av programvara](tvm-software-inventory.md)
-- [Händelsetidslinje](threat-and-vuln-mgt-event-timeline.md)
+- [Programvaruinventering](tvm-software-inventory.md)
+- [Tidlinje för händelse](threat-and-vuln-mgt-event-timeline.md)
 

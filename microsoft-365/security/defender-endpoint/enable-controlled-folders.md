@@ -1,5 +1,5 @@
 ---
-title: Aktivera reglerad mappåtkomst
+title: Aktivera kontrollerad mappåtkomst
 keywords: Reglerad mappåtkomst, windows 10, windows defender, utpressningstrojaner, skydda, filer, mappar, aktivera, aktivera, använda
 description: Lär dig hur du skyddar viktiga filer genom att aktivera reglerad mappåtkomst
 search.product: eADQiWindows 10XVcnh
@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6d07e2a21bb01794990160cf02837fc524008098
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: ee87ac3bdfe88596a5f1625904af53499488f35f
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218766"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51571014"
 ---
-# <a name="enable-controlled-folder-access"></a>Aktivera reglerad mappåtkomst
+# <a name="enable-controlled-folder-access"></a>Aktivera kontrollerad mappåtkomst
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -140,5 +140,5 @@ Används `Disabled` för att stänga av funktionen.
 ## <a name="see-also"></a>Se även
 
 * [Skydda viktiga mappar med kontrollerad mappåtkomst](controlled-folders.md)
-* [Anpassa reglerad mappåtkomst](customize-controlled-folders.md)
-* [Utvärdera Microsoft Defender för slutpunkt](evaluate-mde.md)
+* [Anpassa kontrollerad mappåtkomst](customize-controlled-folders.md)
+* [Utvärdera Microsoft Defender för Endpoint](evaluate-mde.md)

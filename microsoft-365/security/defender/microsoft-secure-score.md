@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 98f335a38b2e4f581d4b08def39353e53e1bafd4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 19b83fe7dd733bb8a0668039d4df2b692a398ad4
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51072649"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570469"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -134,7 +134,7 @@ Om du har problem kan du meddela oss genom att publicera i communityn [säkerhet
 
 ## <a name="related-resources"></a>Relaterade resurser
 
-- [Utvärdera säkerhets genom övergå molnet](microsoft-secure-score-improvement-actions.md)
+- [Utvärdera din säkerhetsstatus](microsoft-secure-score-improvement-actions.md)
 - [Spåra din Microsoft Secure Score-historik och nå dina mål](microsoft-secure-score-history-metrics-trends.md)
 - [Kommer snart](microsoft-secure-score-whats-coming.md)
-- [Nyheter](microsoft-secure-score-whats-new.md)
+- [Vad är det senaste](microsoft-secure-score-whats-new.md)

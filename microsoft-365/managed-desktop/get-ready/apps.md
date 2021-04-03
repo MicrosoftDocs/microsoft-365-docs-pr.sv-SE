@@ -1,7 +1,7 @@
 ---
 title: Appar på Microsoft Hanterat skrivbord
 description: Förklarar hur appar hanteras, inklusive hur du paketerar, distribuerar och ger stöd för dem.
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ea0990e5f30aa45ec48bb2e6a7c957c187c74ebb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: d970ac1a28c62703f648e4fbf6f66e2f825a6188
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922950"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574625"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Appar på Microsoft Hanterat skrivbord
 
@@ -75,3 +76,16 @@ Det finns tre alternativ för att paketera dina appar:
 ## <a name="deploying-apps"></a>Distribuera program
 
 Oavsett vilken metod du använder för att paketera appar är du redo att följa stegen i Distribuera appar till [Microsoft Managed Desktop-enheter.](../get-started/deploy-apps.md)
+
+
+## <a name="steps-to-get-ready"></a>Steg för att förbereda dig
+
+1. Granska [Krav för Microsoft Managed Desktop](prerequisites.md).
+2. Använda [utvärderingsverktyg för beredskap](readiness-assessment-tool.md).
+3. [Förutsättningar för gästkonton](guest-accounts.md)
+4. [Nätverks konfiguration för Microsoft Hanterat skrivbord](network.md)
+5. [Förbereda certifikat och nätverks profiler för Microsoft Hanterat skrivbord](certs-wifi-lan.md)
+6. [Förbereda lokala resurser till gång för Microsoft Hanterat skrivbord](authentication.md)
+7. [Appar i Microsoft Managed Desktop](apps.md) (den här artikeln)
+8. [Förbereda mappade enheter för Microsoft Hanterat skrivbord](mapped-drives.md)
+9. [Förbereda skrivarresurser för Microsoft Hanterat skrivbord](printing.md)

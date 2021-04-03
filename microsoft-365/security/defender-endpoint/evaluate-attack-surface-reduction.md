@@ -1,5 +1,5 @@
 ---
-title: Utvärdera minskningsregler för attackytor
+title: Utvärdera regler för minskning av attackytan
 description: Se hur minskning av attackytor blockerar och förhindrar attacker med det anpassade demoverktyget.
 keywords: Minskning av attackytan, hips, skyddssystem mot värdintrång, skyddsregler, anti-sårbarhet, antiutforskning, sårbarhet, smitta, utvärdera, testa, demo
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 13b1ac5f71f2bc24ad6f52af6722e12fab935270
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 07573fd92643ce5fdf3e9140031bf5f15ae8f7aa
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51075833"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570345"
 ---
-# <a name="evaluate-attack-surface-reduction-rules"></a>Utvärdera minskningsregler för attackytor
+# <a name="evaluate-attack-surface-reduction-rules"></a>Utvärdera regler för minskning av attackytan
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -76,7 +76,7 @@ Händelse-ID | Beskrivning
  1121 | Händelse när en minskningsregel för attackytan av fires i blockläge
  1122 | Händelse när en minskningsregel för attackytan i granskningsläge
 
-## <a name="customize-attack-surface-reduction-rules"></a>Anpassa minskningsregler för attackytor
+## <a name="customize-attack-surface-reduction-rules"></a>Anpassa regler för minskning av attackytan
 
 Under utvärderingen kanske du vill konfigurera varje regel individuellt eller exkludera vissa filer och processer från att utvärderas av funktionen.
 
@@ -86,4 +86,4 @@ Mer [information om hur du konfigurerar funktionen](customize-attack-surface-red
 
 * [Minska attackytor med minskningsregler för attackytan](attack-surface-reduction.md)
 * [Använda granskningsläge för att utvärdera Windows Defender](audit-windows-defender.md)
-* [Vanliga frågor och svar om att minska attackytan](attack-surface-reduction.md)
+* [Vanliga frågor och svar för minskning av attackytan](attack-surface-reduction.md)

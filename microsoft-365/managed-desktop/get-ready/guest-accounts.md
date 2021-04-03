@@ -1,6 +1,6 @@
 ---
-title: Förutsättningar för gäst konton
-description: Konfigurations rikt linjer för gäst konton och hur du justerar dem
+title: Förutsättningar för gästkonton
+description: Konfigurationsriktlinjer för gästkonton och hur du justerar dem
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,22 +9,34 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d8953e9f451daa02671a1e1544f2dfe6649ab1b3
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+audience: Admin
+ms.openlocfilehash: bbf679a01716fc48d37b241d69740f50a985f048
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073246"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574613"
 ---
-# <a name="prerequisites-for-guest-accounts"></a>Förutsättningar för gäst konton
+# <a name="prerequisites-for-guest-accounts"></a>Förutsättningar för gästkonton
 
-Microsoft Managed Desktop kräver följande inställningar i din Azure AD-organisation för gäst konto åtkomst. Du kan justera dessa inställningar på [Azure-portalen](https://portal.azure.com) under **externa identiteter/externa samarbete** :
+För Microsoft Managed Desktop krävs följande inställningar i Azure AD-organisationen för gästkontoåtkomst. Du kan justera de här inställningarna i [Azure-portalen](https://portal.azure.com) under **Externa identiteter/externt samarbete:**
 
--   **Administratörer och användare i rollen inbjudna för gäst kan bjuda** in till **Ja**
--   För **samarbets begränsningar** väljer du något av följande alternativ:
-    -   Om du väljer **Tillåt att inbjudningar skickas till valfri domän (inklusive den mest omfattande)** behöver ingen annan konfiguration göras.
-    -   Om du väljer **Neka för angivna domäner** kontrollerar du att Microsoft.com inte finns med i listan i mål domänerna.
-    -   Om du väljer **Tillåt endast inbjudningar till angivna domäner (mest restriktiv)** kontrollerar du att Microsoft.com *finns* med i listan i mål domänerna.
+-   **Administratörer och användare med rollen som gäst inbjudna kan bjuda in inställda** på **Ja**
+-   Välj **något av följande** alternativ för Begränsningar för samarbete:
+    -   Om du väljer **Tillåt att inbjudningar skickas till valfri domän (mest inkluderande)** krävs ingen annan konfiguration.
+    -   Om du väljer **Neka inbjudningar till** de angivna domänerna kontrollerar du att Microsoft.com inte finns i måldomänerna.
+    -   Om du väljer Tillåt endast inbjudningar till de angivna domänerna **(mest restriktiva)** kontrollerar du att Microsoft.com *visas* i måldomänerna.
 
-Om du ställer in begränsningar som interagerar med de här inställningarna ska du se till att exkludera Azure Active Directory **moderna arbets plats tjänst konton**. Om du till exempel har en policy för villkorsstyrd åtkomst som hindrar gäst konton från att komma åt Intune-portalen utesluter du gruppen **moderna arbets plats tjänst konton** från den här principen.
+Om du anger begränsningar som interagerar med de här inställningarna ska du se till att utesluta Azure Active Directory **Modern Workplace-tjänstkonton.** Om du till exempel har en princip för villkorsstyrd åtkomst som förhindrar gästkonton från att komma åt Intune-portalen ska du utesluta gruppen **Tjänstkonton** för modern arbetsplats från den här principen.
 
+## <a name="steps-to-get-ready"></a>Steg för att förbereda dig
+
+1. Granska [kraven för Microsoft Managed Desktop](prerequisites.md).
+2. Använda [utvärderingsverktyg för beredskap .](readiness-assessment-tool.md)
+3. [Krav för gästkonton](guest-accounts.md) (den här artikeln)
+4. [Nätverks konfiguration för Microsoft Hanterat skrivbord](network.md)
+5. [Förbereda certifikat och nätverks profiler för Microsoft Hanterat skrivbord](certs-wifi-lan.md)
+6. [Förbereda lokala resurser till gång för Microsoft Hanterat skrivbord](authentication.md)
+7. [Appar på Microsoft Hanterat skrivbord](apps.md)
+8. [Förbereda mappade enheter för Microsoft Hanterat skrivbord](mapped-drives.md)
+9. [Förbereda skrivarresurser för Microsoft Hanterat skrivbord](printing.md)

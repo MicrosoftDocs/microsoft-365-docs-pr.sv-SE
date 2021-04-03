@@ -1,7 +1,7 @@
 ---
 title: Förbereda lokala resurser till gång för Microsoft Hanterat skrivbord
 description: Viktiga steg för att se till att en Azure AD kan kommunicera med lokal AD för att tillhandahålla autentisering
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f6b1e257fd767fa112fddb41d773065b8002a2a3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 6df23e0d7e3ea0ecd7ebacd96f00cb47b9e0aa84
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909196"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574601"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>Förbereda lokala resurser till gång för Microsoft Hanterat skrivbord
 
@@ -77,3 +78,14 @@ Microsoft Managed Desktop-enheter kan inte ansluta till skrivare som publiceras 
 Även om skrivare inte kan upptäckas automatiskt i en miljö som bara finns i molnet, kan användarna använda lokala skrivare med hjälp av skrivarsökvägen eller sökvägen till skrivarköer, så länge enheterna har åtkomst till en lokal domänkontrollant.
 
 <!--add fuller material on printers when available-->
+## <a name="steps-to-get-ready"></a>Steg för att förbereda dig
+
+1. Granska [Krav för Microsoft Managed Desktop](prerequisites.md).
+2. Använda [utvärderingsverktyg för beredskap](readiness-assessment-tool.md).
+3. [Förutsättningar för gästkonton](guest-accounts.md)
+4. [Nätverks konfiguration för Microsoft Hanterat skrivbord](network.md)
+5. [Förbereda certifikat och nätverks profiler för Microsoft Hanterat skrivbord](certs-wifi-lan.md)
+6. [Förbereda lokala resurser för åtkomst till Microsoft Managed Desktop (den](authentication.md) här artikeln)
+7. [Appar på Microsoft Hanterat skrivbord](apps.md)
+8. [Förbereda mappade enheter för Microsoft Hanterat skrivbord](mapped-drives.md)
+9. [Förbereda skrivarresurser för Microsoft Hanterat skrivbord](printing.md)

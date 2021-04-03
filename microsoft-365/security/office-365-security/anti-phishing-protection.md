@@ -21,12 +21,12 @@ ms.custom:
 description: Administratörer kan läsa mer om funktionerna för skydd mot nätfiske i Exchange Online Protection (EOP) och Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b0ca7a83e8e8d66bd58fddfc46f53df32f4f623c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: a100e28ddee1629b2fe35e28742a43b891d13e57
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207524"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570618"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Skydd mot nätfiske i Microsoft 365
 
@@ -43,7 +43,7 @@ ms.locfileid: "51207524"
 
 - **Whaling** riktar sig till chefer eller andra högvärdesmålen i en organisation för maximal effekt.
 
-- **BEC (Business Email Compromise)** använder förfalskade betrodda avsändare (finansansvariga, kunder, betrodda partner osv.) för att lura mottagare att godkänna betalningar, överföra pengar eller visa kunddata.
+- **BEC (Business Email Compromise)** använder förfalskade betrodda avsändare (finansansvariga, kunder, betrodda partner osv.) för att lura mottagare att godkänna betalningar, överföra pengar eller visa kunddata. Lär dig mer genom att titta [på videon](https://www.youtube.com/watch?v=8Kn31h9HwIQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=2).
 
 - **Utpressningstrojaner** som krypterar dina data och kräver betalning för att dekryptera dem börjar nästan alltid med nätfiskemeddelanden. Skydd mot nätfiske kan inte hjälpa dig att dekryptera krypterade filer, men det kan hjälpa dig att identifiera de första nätfiskemeddelanden som är kopplade till utpressningstrojankampanjen. Mer information om hur du återställer från en utpressningstrojanattack finns i [Återskapa från en utpressningstrojanattack i Microsoft 365.](recover-from-ransomware.md)
 

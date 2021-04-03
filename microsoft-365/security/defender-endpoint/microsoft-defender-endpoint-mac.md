@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender ATP för Mac
+title: Microsoft Defender för Endpoint för Mac
 ms.reviewer: ''
 description: Lär dig hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för Slutpunkt för Mac.
-keywords: microsoft, defender, atp, mac, installation, distribuera, avinstallation, intune, jamf, macos, big sur, catalina, mojave
+keywords: microsoft, defender, atp, mac, installation, distribuera, avinstallation, intune, jamf, macos, big sur, catalina, mojave, mde för mac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34150088379445d66006c757b2c8ea607865bf4c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 22d35a42eb7fb7eadbba686c292729772951c05c
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198999"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500682"
 ---
-# <a name="microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender för Slutpunkt för Mac
+# <a name="microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender för Endpoint för Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,11 +39,11 @@ ms.locfileid: "51198999"
 I det här avsnittet beskrivs hur du installerar, konfigurerar, uppdaterar och använder Defender för Slutpunkt för Mac.
 
 > [!CAUTION]
-> Att köra andra slutpunktsskyddsprodukter från tredje part tillsammans med Defender för Endpoint för Mac kan sannolikt leda till prestandaproblem och oförutsägbara sidoeffekter. Om skydd mot slutpunkter som inte är Microsoft är ett absolut krav i din miljö kan du ändå tryggt dra nytta av funktionen MDATP för Mac EDR när du har konfigurerat att antivirusfunktionerna i MDATP för Mac ska köras i passivt [läge.](mac-preferences.md#enable--disable-passive-mode)
+> Att köra andra slutpunktsskyddsprodukter från tredje part tillsammans med Microsoft Defender för Endpoint för Mac kan sannolikt leda till prestandaproblem och oförutsägbara sidoeffekter. Om skydd mot slutpunkter som inte är Microsoft är ett absolut krav i din miljö kan du ändå tryggt dra nytta av Defender för Endpoint för Mac EDR-funktioner när du har konfigurerat antivirusfunktionerna så att de körs i [passivt läge.](mac-preferences.md#enable--disable-passive-mode)
 
 ## <a name="whats-new-in-the-latest-release"></a>Nyheter i den senaste versionen
 
-[Vad är nytt i Microsoft Defender för Slutpunkt](whats-new-in-microsoft-defender-atp.md)
+[Senaste nytt i Microsoft Defender för Endpoint](whats-new-in-microsoft-defender-atp.md)
 
 [Vad är nytt i Microsoft Defender för Slutpunkt för Mac](mac-whatsnew.md)
 

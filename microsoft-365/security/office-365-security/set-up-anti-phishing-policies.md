@@ -17,12 +17,12 @@ ms.custom:
 description: Administratörer kan läsa mer om principer för skydd mot nätfiske som finns i Exchange Online Protection (EOP) och Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 64defeaa1e8cf4a08610742571a01ea527163d14
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 44472d49936f400ee16227f3f29141738ad28daa
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207132"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51571026"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Principer mot nätfiske i Microsoft 365
 
@@ -93,7 +93,7 @@ Följande principinställningar är tillgängliga i principer för skydd mot nä
 
 ## <a name="spoof-settings"></a>Inställningar för förfalskning
 
-Förfalskning är när från-adressen i ett e-postmeddelande (den avsändaradress som visas i e-postklienter) inte matchar e-postkällans domän. Mer information om förfalskning finns i [Skydd mot förfalskning i Microsoft 365.](anti-spoofing-protection.md)
+Förfalskning är när avsändarens adress i ett e-postmeddelande (den avsändaradress som visas i e-postklienterna) inte matchar e-postkällans domän. Mer information om förfalskning finns i [Skydd mot förfalskning i Microsoft 365.](anti-spoofing-protection.md)
 
 Följande inställningar för förfalskning finns i principer för skydd mot nätfiske i EOP och Microsoft Defender för Office 365:
 

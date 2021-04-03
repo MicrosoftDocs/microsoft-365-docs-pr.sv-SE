@@ -1,5 +1,5 @@
 ---
-title: Visa händelser för att minska attackytan
+title: Visa händelser för minskning av attackytan
 description: Importera anpassade vyer för att se minskningar av attackytor.
 keywords: händelsevy, sårbarhetsskydd, granskning, granskning, händelser
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: de605a667284c1218a3efe6e388d99b26b42e333
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 0a2ec16685ede2e625528fc3944943923bba3fc9
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076617"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569749"
 ---
-# <a name="view-attack-surface-reduction-events"></a>Visa händelser för att minska attackytan
+# <a name="view-attack-surface-reduction-events"></a>Visa händelser för minskning av attackytan
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -147,40 +147,40 @@ Du kan komma åt dessa händelser i Windows händelsevisare:
 
 Funktion | Leverantör/källa | Händelse-ID | Beskrivning
 :-|:-|:-:|:-
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 1 | ACG-granskning
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 2 | ACG- enforce
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 3 | Tillåt inte granskning av underordnade processer
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 4 | Tillåt inte blockering av underordnade processer
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 5 | Blockera bilder med låg integritet
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 6 | Blockera bilder med låg integritet
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 7 | Blockera fjärrbildergranskning
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 8 | Blockera fjärrbilderblock
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 9 | Inaktivera granskning av win32k-systemsamtal
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 10 | Inaktivera win32k-systemsamtalsblockering
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 11 | Kodintegritetsskyddsgranskning
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 12 | Kodintegritetsskyddsblock
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 13 | EAF-granskning
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 14 | EAF-framtvinga
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 15 | EAF+-granskning
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 16 | EAF+ framtvinga
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 17 | IAF-granskning
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 18 | IAF-framtvinga
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 19 | ROP StackPivot-granskning
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 20 | ROP StackPivot-rop-rop
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 21 | ROP-callerCheck-granskning
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 22 | ROP-anropskontrollera
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 23 | ROP SimExec-granskning
-Sårbarhetsskydd | Security-Mitigations (Kernel-läge/användarläge) | 24 | ROP SimExec-framtvinga
-Sårbarhetsskydd | WER-Diagnostics | 5 | CFG-block
-Sårbarhetsskydd | Win32K (drift) | 260 | Teckensnitt som inte är betrodd
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 1 | ACG-granskning
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 2 | ACG- enforce
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 3 | Tillåt inte granskning av underordnade processer
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 4 | Tillåt inte blockering av underordnade processer
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 5 | Blockera bilder med låg integritet
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 6 | Blockera bilder med låg integritet
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 7 | Blockera fjärrbildergranskning
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 8 | Blockera fjärrbilderblock
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 9 | Inaktivera granskning av win32k-systemsamtal
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 10 | Inaktivera win32k-systemsamtalsblockering
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 11 | Kodintegritetsskyddsgranskning
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 12 | Kodintegritetsskyddsblock
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 13 | EAF-granskning
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 14 | EAF-framtvinga
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 15 | EAF+-granskning
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 16 | EAF+ framtvinga
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 17 | IAF-granskning
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 18 | IAF-framtvinga
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 19 | ROP StackPivot-granskning
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 20 | ROP StackPivot-rop-rop
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 21 | ROP-callerCheck-granskning
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 22 | ROP-anropskontrollera
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 23 | ROP SimExec-granskning
+Exploateringsskydd | Security-Mitigations (Kernel-läge/användarläge) | 24 | ROP SimExec-framtvinga
+Exploateringsskydd | WER-Diagnostics | 5 | CFG-block
+Exploateringsskydd | Win32K (drift) | 260 | Teckensnitt som inte är betrodd
 Nätverksskydd | Windows Defender (drift) | 5007 | Händelse när inställningar ändras
 Nätverksskydd | Windows Defender (drift) | 1125 | Händelse när nätverksskydd aktiveras i granskningsläge
 Nätverksskydd | Windows Defender (drift) | 1126 | Händelse när nätverksskydd aktiveras i blockläge
-Reglerad mappåtkomst | Windows Defender (drift) | 5007 | Händelse när inställningar ändras
-Reglerad mappåtkomst | Windows Defender (drift) | 1124 | Granskad reglerad mappåtkomsthändelse
-Reglerad mappåtkomst | Windows Defender (drift) | 1123 | Händelse för blockerad reglerad mappåtkomst
-Reglerad mappåtkomst | Windows Defender (drift) | 1127 | Skrivblockshändelse för blockerad reglerad mappåtkomstsektor
-Reglerad mappåtkomst | Windows Defender (drift) | 1128 | Kontrollerad skrivningsblockshändelse för mappåtkomstsektor granskad
-Minskning av attackytan | Windows Defender (drift) | 5007 | Händelse när inställningar ändras
-Minskning av attackytan | Windows Defender (drift) | 1122 | Händelse när en regel aktiveras i granskningsläge
-Minskning av attackytan | Windows Defender (drift) | 1121 | Händelse när en regel ut sätts i blockläge
+Kontrollerad mappåtkomst | Windows Defender (drift) | 5007 | Händelse när inställningar ändras
+Kontrollerad mappåtkomst | Windows Defender (drift) | 1124 | Granskad reglerad mappåtkomsthändelse
+Kontrollerad mappåtkomst | Windows Defender (drift) | 1123 | Händelse för blockerad reglerad mappåtkomst
+Kontrollerad mappåtkomst | Windows Defender (drift) | 1127 | Skrivblockshändelse för blockerad reglerad mappåtkomstsektor
+Kontrollerad mappåtkomst | Windows Defender (drift) | 1128 | Kontrollerad skrivningsblockshändelse för mappåtkomstsektor granskad
+Minska attackytan | Windows Defender (drift) | 5007 | Händelse när inställningar ändras
+Minska attackytan | Windows Defender (drift) | 1122 | Händelse när en regel aktiveras i granskningsläge
+Minska attackytan | Windows Defender (drift) | 1121 | Händelse när en regel ut sätts i blockläge

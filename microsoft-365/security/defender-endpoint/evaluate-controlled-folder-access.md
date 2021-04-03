@@ -8,17 +8,17 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: e965e1a882dadfb565231074165507a6727b45c1
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: f996a8fdaf630c8ea389ac9648369cc955a6e95d
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218754"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569911"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Utvärdera kontrollerad mappåtkomst
 
@@ -76,5 +76,5 @@ Se [Skydda viktiga mappar med kontrollerad mappåtkomst](controlled-folders.md) 
 ## <a name="see-also"></a>Se även
 
 * [Skydda viktiga mappar med kontrollerad mappåtkomst](controlled-folders.md)
-* [Utvärdera Microsoft Defender för slutpunkt](evaluate-mde.md)
+* [Utvärdera Microsoft Defender för Endpoint](evaluate-mde.md)
 * [Använda granskningsläge](audit-windows-defender.md)

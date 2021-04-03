@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP för Linux
+title: Microsoft Defender för Endpoint för Linux
 ms.reviewer: ''
 description: Här beskrivs hur du installerar och använder Microsoft Defender ATP för Linux.
 keywords: microsoft, defender, atp, linux, installation, distribuera, avinstallation, enkel, ansible, linux, redhat, ubuntu, ubuntu, sles, suse, centos
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 08bb4c73cb9df429c4b07194f1c7615f44d745d8
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: cc2f5be700395f6d88c05481d74501f4d9d92b76
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408343"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500678"
 ---
 # <a name="microsoft-defender-for-endpoint-for-linux"></a>Microsoft Defender för Endpoint för Linux
 
@@ -39,11 +39,11 @@ ms.locfileid: "51408343"
 I det här avsnittet beskrivs hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för Endpoint för Linux.
 
 > [!CAUTION]
-> Att köra andra produkter med slutpunktsskydd från tredje part tillsammans med Microsoft Defender för Endpoint för Linux kan sannolikt orsaka prestandaproblem och oförutsägbara systemfel.
+> Att köra andra slutpunktsskyddsprodukter från tredje part tillsammans med Microsoft Defender för Endpoint för Linux kan sannolikt leda till prestandaproblem och oförutsägbara sidoeffekter. Om skydd mot slutpunkter som inte är Microsoft är ett absolut krav i din miljö kan du fortfarande tryggt dra nytta av Defender för Endpoint för Linux EDR-funktioner när antivirusfunktionen har konfigurerats så att den körs i [passivt läge.](linux-preferences.md#enable--disable-passive-mode)
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-for-linux"></a>Så här installerar du Microsoft Defender för Endpoint för Linux
 
-### <a name="prerequisites"></a>Förutsättningar
+### <a name="prerequisites"></a>Krav
 
 - Åtkomst till Microsoft Defender Säkerhetscenter-portalen
 - Linux-distribution med [systemd](https://systemd.io/) system manager
@@ -110,8 +110,8 @@ Om du får problem med installationen kan du gå till [Felsöka installationspro
 När du har aktiverat tjänsten kan du behöva konfigurera nätverket eller brandväggen för att tillåta utgående anslutningar mellan den och dina slutpunkter.
 
 - Granskningsramverket `auditd` () måste vara aktiverat.
-  >[!NOTE]
-  > Systemhändelser som fångas av regler som lagts till `audit.logs` i läggs till i granskningsloggar och kan påverka värdgranskning och överordnad samling. Händelser som läggs till av Microsoft Defender för Endopoint för Linux kommer att märkas med `mdatp` tangenten.
+  > [!NOTE]
+  > Systemhändelser som fångas av regler som lagts till i läggs till `/etc/audit/rules.d/` `audit.log` i (s) och kan påverka värdgranskning och överordnad samling. Händelser som läggs till av Microsoft Defender för Endpoint för Linux kommer att märkas med `mdatp` en nyckel.
 
 ### <a name="network-connections"></a>Nätverksanslutningar
 

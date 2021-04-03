@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a161cfcad301c6e5cac2c7398b5c13559b27698d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 02d7810ef27b495e69fd6d8ca72baf40df13ee93
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51074009"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500453"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>Programvaruinventering – hantering av hot och sårbarhet
 
@@ -127,5 +127,5 @@ Rapportera en falsk positiv när du ser någon vag, felaktig eller ofullständig
 
 - [Översikt över hot- och sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)
 - [Säkerhetsrekommendationer](tvm-security-recommendation.md)
-- [Händelsetidslinje](threat-and-vuln-mgt-event-timeline.md)
+- [Tidlinje för händelse](threat-and-vuln-mgt-event-timeline.md)
 - [Visa och ordna listan Microsoft Defender för slutpunktsenheter](machines-view-overview.md)

@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1bc8fb7dad16d141d6da3efc55200fce40a76900
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 97d496271c1ef7185419f7d39956da0429f070aa
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51072866"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500481"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>Säkerhetsrekommendationer – hantering av hot och hot
 
@@ -163,8 +163,8 @@ Du kan rapportera en falsk positivhet när du ser någon vag, felaktig, ofullst�
 
 - [Översikt över hot- och sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)
 - [Instrumentpanelen](tvm-dashboard-insights.md)
-- [Exponeringsresultat](tvm-exposure-score.md)
+- [Exponeringsvärde](tvm-exposure-score.md)
 - [Microsoft Secure Score för enheter](tvm-microsoft-secure-score-devices.md)
 - [Åtgärda säkerhetsproblem](tvm-remediation.md)
 - [Skapa och visa undantag för säkerhetsrekommendationer](tvm-exception.md)
-- [Händelsetidslinje](threat-and-vuln-mgt-event-timeline.md)
+- [Tidlinje för händelse](threat-and-vuln-mgt-event-timeline.md)

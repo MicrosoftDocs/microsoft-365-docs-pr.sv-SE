@@ -1,7 +1,7 @@
 ---
 title: Förbereda skrivarresurser för Microsoft Hanterat skrivbord
 description: Viktiga steg för att se till att utskriften fungerar smidigt
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
@@ -9,12 +9,13 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3decc7d67decc5557e7921e68108e2ddb447f0fd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 971644aafabda733bf745fae278bdfeeed3282e3
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924558"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574553"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Förbereda skrivarresurser för Microsoft Hanterat skrivbord
 
@@ -37,3 +38,15 @@ Om du har bestämt dig för att distribuera skrivare med hjälp av ett anpassat 
 3.  I administrationsportalen meddelas du när begäran har slutförts. Först distribuerar vi bara konfigurationen till enheter i testdistributionsgruppen.
 4.  Du måste testa och bekräfta om konfigurationen fungerar som förväntat. Svara genom att använda **fliken** Diskussion i supportbegäran och meddela oss när du har slutfört testningen.
 5.  Sedan distribuerar vi konfigurationen till andra distributionsgrupper.
+
+## <a name="steps-to-get-ready"></a>Steg för att förbereda dig
+
+1. Granska [Krav för Microsoft Managed Desktop](prerequisites.md).
+2. Använda [utvärderingsverktyg för beredskap](readiness-assessment-tool.md).
+3. [Förutsättningar för gästkonton](guest-accounts.md)
+4. [Nätverks konfiguration för Microsoft Hanterat skrivbord](network.md)
+5. [Förbereda certifikat och nätverks profiler för Microsoft Hanterat skrivbord](certs-wifi-lan.md)
+6. [Förbereda lokala resurser till gång för Microsoft Hanterat skrivbord](authentication.md)
+7. [Appar på Microsoft Hanterat skrivbord](apps.md)
+8. [Förbereda mappade enheter för Microsoft Hanterat skrivbord](mapped-drives.md)
+9. [Förbereda utskriftsresurser för Microsoft Managed Desktop](printing.md) (den här artikeln)

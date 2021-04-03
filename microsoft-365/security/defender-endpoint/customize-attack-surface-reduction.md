@@ -1,5 +1,5 @@
 ---
-title: Anpassa minskningsregler för attackytor
+title: Anpassa regler för minskning av attackytan
 description: Individuellt ange regler i gransknings-, block- eller inaktiverade lägen och lägga till filer och mappar som ska undantas från reglerna för att minska attackytan
 keywords: Minskning av attackytan, hips, skyddssystem mot värdintrång, skyddsregler, anti-sårbarhet, antiutforskning, sårbarhet, smitta, anpassa, konfigurera, utesluta
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 99a88a869c8a79f79cbc3a16fc73bf556416c51a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 52a51b1035f1aa0fb152cf17dc9561cce378d59d
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163307"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570357"
 ---
-# <a name="customize-attack-surface-reduction-rules"></a>Anpassa minskningsregler för attackytor
+# <a name="customize-attack-surface-reduction-rules"></a>Anpassa regler för minskning av attackytan
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -116,6 +116,6 @@ Du kan anpassa meddelandet för när en regel utlöses och spärra en app eller 
 ## <a name="related-topics"></a>Relaterade ämnen
 
 * [Minska attackytor med minskningsregler för attackytan](attack-surface-reduction.md)
-* [Aktivera minskningsregler för attackytor](enable-attack-surface-reduction.md)
-* [Utvärdera minskningsregler för attackytor](evaluate-attack-surface-reduction.md)
-* [Vanliga frågor och svar om att minska attackytan](attack-surface-reduction.md)
+* [Aktivera regler för minskning av attackytan](enable-attack-surface-reduction.md)
+* [Utvärdera regler för minskning av attackytan](evaluate-attack-surface-reduction.md)
+* [Vanliga frågor och svar för minskning av attackytan](attack-surface-reduction.md)

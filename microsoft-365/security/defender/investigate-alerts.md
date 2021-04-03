@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: maccruz
-author: schmurky
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: bc325f88ec41861c2adc4d5147e94d2d2d5b1ebe
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 989574a860bea798c48e077f5633c31eb857e85e
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068935"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500938"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Undersöka aviseringar i Microsoft 365 Defender
 
@@ -68,7 +68,7 @@ I informationsfönstret visas först information om den markerade aviseringen me
 
 När du har valt en intresseenhet ändras informationsfönstret för att visa information om den valda entitetstypen, historisk information när den är tillgänglig och alternativ för att vidta åtgärder på den här enheten direkt från aviseringssidan.
 
-### <a name="manage-alerts"></a>Hantera aviseringar
+### <a name="manage-alerts"></a>Hantera varningar
 
 När du har undersökt aviseringarna kan du gå tillbaka till den avisering du började med, markera aviseringens status som Löst och klassificera den som en falsk avisering eller Sant-avisering. Klassificera aviseringar hjälper till att finjustera produkten och ge mer sanna aviseringar och mindre falska aviseringar.
 

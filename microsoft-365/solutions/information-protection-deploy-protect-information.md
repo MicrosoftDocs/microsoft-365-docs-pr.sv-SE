@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Distribuera säkerhets- och efterlevnadsfunktioner i Microsoft 365 och skydda din personliga information.
-ms.openlocfilehash: 657b3c9c6416c8a38629a0d26253e1222aa6d242
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2d3a5baa063e6672760dda60ae6d76ea928ccd16
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928478"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500991"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Skydda information som omfattas av datasekretess
 
@@ -90,7 +90,8 @@ Information om andra funktioner för informationsskydd utanför Microsoft 365 fi
 
 Med känslighetsetiketter från Microsofts informationsskyddsram kan du klassificera och skydda organisationens data utan att hindra användarnas produktivitet och deras förmåga att samarbeta.
 
-![Känslighetsetiketter i Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
+> [!div class="mx-imgBorder"]
+> ![Känslighetsetiketter i Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
 
 ### <a name="prerequisites-for-sensitivity-labels"></a>Förutsättningar för känslighetsetiketter
 
@@ -115,7 +116,7 @@ Utför de här aktiviteterna innan du implementerar någon av de känslighetseti
 
       Om du planerar att använda moderna känslighetsetiketter för e-postskydd och befintliga metoder för e-postkryptering som OME finns kan de finnas tillsammans, men du bör förstå scenarier som antingen ska användas. Se Nya funktioner för meddelandekryptering [i Office 365 (OME),](#office-365-message-encryption-ome-new-capabilities)som innehåller en tabell som jämför skydd av modern känslighetsetiketttyp med OME-baserat skydd.
 
-3. Planera för integration i ett bredare informationsskyddsschema. Utöver samexistens med OME kan aktuella känslighetsetiketter användas längs sidan funktioner som Microsoft 365 skydd mot dataförlust (DLP) och Microsoft Cloud App Security. Läs [Känslighetsetiketter och Microsoft Cloud App Security för](../compliance/sensitivity-labels.md#sensitivity-labels-and-microsoft-cloud-app-security) att uppnå dina datasekretessrelaterade informationsskyddsmål.
+3. Planera för integration i ett bredare informationsskyddsschema. Utöver samexistens med OME kan känslighetsetiketter användas längs sidan funktioner som Microsoft 365 skydd mot dataförlust (DLP) och Microsoft Cloud App Security. Läs [Microsoft Information Protection i Microsoft 365 för att](../compliance/information-protection.md) uppnå dina mål för datasekretessrelaterat informationsskydd.
 
 4. Utveckla en känslighetsetikettklassificering och ett kontrollschema. Se [Taxonomi för dataklassificering och känslighetsetikett.](https://aka.ms/dataclassificationwhitepaper)
 
@@ -215,11 +216,13 @@ Du kan till exempel identifiera alla dokument som innehåller ett kreditkortsnum
 
 Du kan också övervaka och skydda känsliga objekt i lokalt installerade versioner av Excel, PowerPoint och Word, vilket omfattar möjligheten att identifiera känsliga objekt och tillämpa DLP-principer. DLP ger kontinuerlig övervakning när personer delar innehåll från dessa Office-program.
 
-![Arbetsbelastningar som stöds för DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
+> [!div class="mx-imgBorder"]
+> ![Arbetsbelastningar som stöds för DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
 
 I den här bilden visas ett exempel på hur DLP skyddar personliga data.
 
-![Exempel på skydd av personuppgifter med DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
+> [!div class="mx-imgBorder"]
+> ![Exempel på skydd av personuppgifter med DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
 
 DLP används för att identifiera ett dokument eller e-postmeddelande som innehåller en hälsopost och blockerar sedan automatiskt åtkomsten till dokumentet eller blockerar e-post från att skickas. DLP skickar sedan ett principtips till mottagaren och skickar en avisering till slutanvändaren och administratören.
 
@@ -252,7 +255,8 @@ Planera DLP-principerna för:
 
 DLP-principer konfigureras i administrationscentret för Microsoft-efterlevnad och anger skyddsnivån, vilken typ av känslig information som principen letar efter och målarbetsbelastningen. Deras grundläggande komponenter består av att identifiera skyddet och typerna av data.
 
-![DLP-principkonfiguration i Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
+> [!div class="mx-imgBorder"]
+> ![DLP-principkonfiguration i Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
 
 Här är ett exempel på en DLP-policy för information om GDPR.
 
@@ -270,7 +274,7 @@ Den första konfigurationen, information, kan användas som en utgångspunkt fö
 
 >[!Note]
 >I och med att skyddsnivån ökar kommer möjligheten för användare att dela och få åtkomst till information att minska i vissa fall och potentiellt påverka deras produktivitet och möjligheten att slutföra dagliga uppgifter.
->
+
 
 För att hjälpa dina anställda att fortsätta vara produktiva i en säkrare miljö när de ökar skyddsnivåerna, bör du ta dig tid att utbilda dem om nya säkerhetsprinciper och -procedurer.
 
@@ -285,7 +289,8 @@ Känslighetsetiketter kan fungera tillsammans med DLP för att tillhandahålla d
 
 När de här elementen har fastställts kan du använda känsliga informationstyper, känslighetsetiketter för taxonomi och DLP-principer tillsammans. I den här bilden visas ett exempel.
 
-![Exempel på känslighetsetiketter som fungerar med DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
+> [!div class="mx-imgBorder"]
+> ![Exempel på känslighetsetiketter som fungerar med DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
 [Visa en större version av den här bilden](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
