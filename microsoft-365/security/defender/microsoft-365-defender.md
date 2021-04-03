@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f789053e0922ee81155a243bbaa7b3ab5b0f6d87
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 687077b1c9ff2449d9994875419a97cf0c503c2f
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51072697"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581088"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "51072697"
 **Gäller för:**
 - Microsoft 365 Defender
 
-> Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera den i en labbmiljö](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) eller köra [pilotprojektet i produktion.](m365d-pilot.md?ocid=cx-evalpilot)
+> Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera det i en laboratoriemiljö](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) eller [köra ett pilotprojekt i produktionen](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
 Microsoft 365 Defender är en enhetlig företagsskyddssvit före och efter intrång som inbyggt koordinerar identifiering, skydd, undersökning och svar mellan slutpunkter, identiteter, e-post och program för att ge integrerat skydd mot avancerade attacker.
@@ -56,7 +56,7 @@ Med den integrerade Microsoft 365 Defender-lösningen kan säkerhetsexperter han
 
 I den här interaktiva guiden får du lära dig hur du skyddar organisationen med Microsoft 365 Defender. Du ser hur Microsoft 365 Defender kan hjälpa dig att identifiera säkerhetsrisker, undersöka attacker mot din organisation och förhindra skadliga aktiviteter automatiskt.
 
-> [!VIDEO https://aka.ms/M365Defender-InteractiveGuide]
+[Ta en titta på den interaktiva guiden](https://aka.ms/M365Defender-InteractiveGuide)
 
 
 

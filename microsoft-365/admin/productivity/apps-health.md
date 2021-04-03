@@ -1,9 +1,9 @@
 ---
-title: Microsoft produktivitets Poäng – hälsa för Microsoft 365-appar
+title: Microsoft Productivity Score – hälsa för Microsoft 365-appar
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,105 +18,105 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: Information om hälso upplevelsen för Microsoft 365-apparna.
-ms.openlocfilehash: a84e919ce01775b8791ed7a1992464e4f52c7234
-ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
+description: Information om appens hälsa för Microsoft 365 – teknikupplevelser Produktivitetsresultat.
+ms.openlocfilehash: d8e9cb1f29c8138616c1cc2461bfa07fb9dafd9c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49562949"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580876"
 ---
-# <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365-appar hälsa – teknik upplevelse
+# <a name="microsoft-365-apps-health--technology-experiences"></a>Hälsa för Microsoft 365-applikationer – teknikupplevelser
 
-Produktivitets Poäng tillhandahåller insikter i organisationens digitala Transformation-resa via dess användning av Microsoft 365 och de teknik funktioner som stöder det. Din organisations Poäng återspeglar funktionerna för folk-och teknik upplevelse och kan jämföras med benchmarks från organisationer som liknar ditt. Hälso kategorin appar är en del av måtten som faller under teknologi upplevelser. Mer information finns i [Översikt över produktivitets Poäng](productivity-score.md) och Läs [Microsofts sekretess policy](https://privacy.microsoft.com/privacystatement).
+Produktivitetsresultatet ger insikter om organisationens digitala omvandlingsresa genom användningen av Microsoft 365 och de teknikupplevelser som stöder det. Organisationens resultat återspeglar mätvärden för personer och teknikupplevelse och kan jämföras med riktmärken från organisationer som påminner om din. Hälsokategorin för appar är en del av måtten som faller under teknikupplevelser. Mer information finns i översikten [över Productivity Score](productivity-score.md) och [Microsofts sekretesspolicy.](https://privacy.microsoft.com/privacystatement)
 
-## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>Därför är organisationen&#39;s Microsoft 365-appar hälso Poäng
+## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>Därför är det viktigt&#39;organisationens hälsoresultat för Microsoft 365-appar
 
-Produktiviteten är beroende av den program miljö som är felfri. Enheter med de flesta aktuella versioner av Microsoft 365-appar på Rekommenderad kanal är säkrare och hjälper personer i din organisation att få ut mesta möjliga av funktionerna i Microsoft 365.
+Organisationens produktivitet är beroende av felfria programmiljöer. Enheter som kör de flesta aktuella versioner av Microsoft 365-appar på den rekommenderade kanalen är säkrare och hjälper personer i din organisation att få ut mesta av funktionerna i Microsoft 365.
 
-## <a name="how-we-calculate-the-microsoft-365-apps-health-score"></a>Så här beräknas säkerhets poängen för Microsoft 365-appar
+## <a name="how-we-calculate-the-microsoft-365-apps-health-score"></a>Så här beräknar vi hälsoresultat för Microsoft 365-appar
 
-Vi beräknar hälso poängen för Microsoft 365-appar genom att mäta antalet enheter på varje uppdaterings kanal. Vi bestämmer också om enheterna kör en version som stöds och den senaste versionen av Microsoft 365-appar.
+Vi beräknar ditt hälsoresultat för Microsoft 365-appar genom att mäta antalet enheter på varje uppdateringskanal. Vi avgör även om enheterna kör en version som stöds och den senaste versionen av Microsoft 365-appar.
 
-Vi tillhandahåller en huvudsaklig inblick i upplevelsen som innehåller de viktigaste måtten för kategorin. Därefter används en bedömnings ram som beskrivs i följande avsnitt för att beräkna poängen.
+Vi ger en primär insyn i upplevelsen som innehåller nyckeltal för den här kategorin. Sedan används ett poängramverk, som beskrivs i följande avsnitt, för att beräkna ditt poängresultat.
 
-### <a name="primary-insight"></a>Huvudsaklig insikt
+### <a name="primary-insight"></a>Primär insyn
 
-Huvud inblicken beräknas från enheter som kör Microsoft 365-appar på Rekommenderad uppdatera kanal.
+Den primära insikten beräknas från enheter som kör Microsoft 365-appar på rekommenderad uppdaterad kanal.
 
-:::image type="content" source="../../media/appshealth-primary.png" alt-text="Huvudsaklig visuell visualisering för Microsoft 365-appar.":::
+:::image type="content" source="../../media/appshealth-primary.png" alt-text="Visualisering av primär syn för Microsoft 365-appar.":::
 
-Information som behandlas för detta inkluderar Microsoft 365-appar, version och version som körs på enheten.
+Information som beaktas för detta omfattar kanal för Microsoft 365-appar, version och version som körs på enheten.
 
-1. **Sidhuvud:**  Visar procent andelen enheter i rekommenderad uppdaterings kanal
-1. **Brödtext:**  Här finns mer information om hur du kör enheter på Rekommenderad uppdaterings kanal som hjälper dig att komma igång med den senaste uppdateringen och att köra aktuella versioner på enheter.
-1. **Visualisering (nuvarande tillstånd):**
-    - Vågräta staplar där de blå färgade delarna representerar procent andelen enheter som kör den rekommenderade uppdaterade kanalen.
-    - Markera (täljare/nämnare) för det bråktal som används för att beräkna procent satsen i vågräta staplar.
-    - Värde för peer-benchmark för enheter med rekommenderad uppdaterad kanal visas också som en procents ATS.
+1. **Sidhuvud:**  Visar procentandel av enheter på rekommenderad uppdateringskanal
+1. **Brödtext:**  Innehåller mer information om hur du kör enheterna på rekommenderad uppdateringskanal för att få den senaste uppdateringen och köra aktuella versioner på enheter.
+1. **Visualisering (aktuell status):**
+    - Vågräta staplar där de blå delarna representerar procentandelen enheter som kör rekommenderad uppdaterad kanal.
+    - Markera (täljaren/nämnaren) i bråket som används för att beräkna procentsatsen uttryckt i vågräta staplar.
+    - Peer Benchmark-värde för enheter som körs på rekommenderad uppdaterad kanal visas också som procent.
 
-#### <a name="trend-visualization-of-the-primary-insight"></a>Trend visualisering av huvudsaklig insikt
+#### <a name="trend-visualization-of-the-primary-insight"></a>Trendvisualisering av den primära insikten
 
-Följande diagram visar antalet enheter i rekommenderad uppdaterings kanal under de senaste 180 dagarna. Data punkten i linje diagrammet är en mängd aktiviteter för de senaste 28 dagarna.
+Följande diagram visar antalet enheter i den rekommenderade uppdateringskanalen under de senaste 180 dagarna. Datapunkten i linjediagrammet är en mängd aktiviteter för de senaste 28 dagarna.
 
-:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="Diagram som visar trenden för enheter med rekommenderad uppdaterings kanal.":::
+:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="Diagram som visar trenden för enheter med rekommenderad uppdateringskanal.":::
 
-### <a name="scoring-framework"></a>Poäng ramverk
+### <a name="scoring-framework"></a>Poängramverk
 
-Säkerhets poängen för Microsoft 365-appar mäter om enheter kör Microsoft 365-appar på Rekommenderad kanal och i de senaste versionerna.
+Hälsoresultatet för Microsoft 365-appar mäter om enheter kör Microsoft 365-appar på rekommenderad kanal och på de senaste versionerna.
 
-## <a name="explore-your-organization-microsoft-365-app-channels-and-versions"></a>Utforska din organisation program kanaler och-versioner av Microsoft 365
+## <a name="explore-your-organization-microsoft-365-app-channels-and-versions"></a>Utforska din organisation Appkanaler och versioner för Microsoft 365
 
-Vi tillhandahåller också stödjande uppgifter som hjälper dig att få mer insyn i de kanaler och versioner av enheter i din organisation som körs för närvarande. Dessa ytterligare mått bidrar inte till produktivitets poängen men kan hjälpa dig att skapa en åtgärds plan för att öka dina Microsoft 365-programs hälso poäng genom att se till att enheter kör Microsoft 365-appar på rekommenderade kanaler.
+Vi tillhandahåller även stödinformation som hjälper dig att få bättre insyn i vilka kanaler och versioner av enheter i organisationen som körs. Måtten bidrar inte till ditt Produktivitetsresultat, men kan hjälpa dig att skapa en handlingsplan för att öka ditt hälsoresultat för Microsoft 365-appar genom att se till att enheter kör Microsoft 365-appar på rekommenderade kanaler.
 
-### <a name="devices-on-current-channel-and-running-supported-versions"></a>Enheter på aktuell kanal och kör versioner som stöds
+### <a name="devices-on-current-channel-and-running-supported-versions"></a>Enheter på aktuell kanal och med versioner som stöds
 
-:::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="Diagram som visar antal enheter i den aktuella kanalen med stöd.":::
+:::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="Diagram som visar antalet enheter i den aktuella kanalen som stöds.":::
 
-1. **Sidhuvud:**  Markerar procent andelen enheter i den aktuella kanalen som har stöd för versioner av Microsoft 365-program som stöds
-1. **Brödtext:**  Innehåller information om värdet på enheter som kör Microsoft 365-appar på Rekommenderad kanal.
-1. **Visualisering:**  Detalj nivån i visualiseringen representerar hur stor del av enheterna i den senaste versionen av Microsoft 365-program som stöds, på följande sätt:
-    - **Versioner som stöds:** Det blåa fältet representerar procent andelen enheter som körs i en version av Microsoft 365-program som stöds.
-    - **Senaste utgåvor:** Mörkt färg remsan representerar procent av enheter i de senaste versionerna.
-1. **Läs mer:**   Välj den här länken om du vill visa hjälp innehåll.
+1. **Sidhuvud:**  Markerar procentandelen enheter på aktuell kanal som kör versioner av Microsoft 365-appar som stöds
+1. **Brödtext:**  Innehåller information om värdet på enheter med Microsoft 365-appar på rekommenderad kanal.
+1. **Visualisering:**  Fördelningen i visualiseringen visar i vilken grad procentandelen enheter på senaste och kompatibla versioner av Microsoft 365-appar över olika kanaler), enligt följande:
+    - **Versioner som stöds:** Den blå stapeln representerar procentandelen enheter som körs på versioner av Microsoft 365-appar som stöds.
+    - **Senaste versionerna:** Blåfärgad stapel representerar procentandel av enheterna i de senaste versionerna.
+1. **Läs mer:**   Välj den här länken om du vill visa hjälpinnehåll.
 
-### <a name="devices-running-latest-and-supported-versions"></a>Enheter med de senaste och kompatibla versionerna
+### <a name="devices-running-latest-and-supported-versions"></a>Enheter med senaste och kompatibla versioner
 
-:::image type="content" source="../../media/device-supported-versions.png" alt-text="Diagram som visar antal enheter med den senaste versionen av program som stöds.":::
+:::image type="content" source="../../media/device-supported-versions.png" alt-text="Diagram som visar antalet enheter med senaste och vilka versioner av appar som stöds.":::
 
-1. **Sidhuvud:**  Markerar procent andelen enheter som kör versioner och enheter som kör de senaste versionerna.
-1. **Brödtext:**  Innehåller information om det värde som används för att köra enheter på rekommenderade kanaler och kompatibla/senaste versioner.
-1. **Visualisering:** Fördelningen i visualiseringen är avsedd att visa hur många enheter som kör kompatibla versioner och de senaste versionerna av Microsoft 365-apparna):
-    - **Versioner som stöds:** Den blå (färgade) delen av stapeln och bråket (täljare/nämnare) i stapeln representerar procent andelen enheter som kör en version av Microsoft 365-appar som stöds.
-        - Täljare: antalet enheter i en version av Microsoft 365-program som stöds under de senaste 28 dagarna
-        - Nämnare: antalet enheter med Microsoft 365-program under de senaste 28 dagarna
-    - **Senaste versionerna:** Mörk turkos-delen (färgade) i stapeln och bråktal (täljare/nämnare) i stapeln representerar procent andelen enheter med de senaste versionerna av Microsoft 365-apparna.
-        - Täljare: antalet enheter i den senaste versionen av Microsoft 365-program under de senaste 28 dagarna
-        - Nämnare: antalet enheter med Microsoft 365-program under de senaste 28 dagarna
-1. **Läs mer:**   Välj den här länken om du vill visa hjälp innehåll.
+1. **Sidhuvud:**  Markerar procentandelen enheter som kör versioner som stöds och enheter som kör de senaste versionerna.
+1. **Brödtext:**  Innehåller information om vilka enheter som kör värden i rekommenderade kanaler och vilka versioner som stöds/senaste versionerna.
+1. **Visualisering:** Fördelningen i visualiseringen är avsedd att representera hur många enheter som kör versioner som stöds och de senaste versionerna av Microsoft 365-appar):
+    - **Versioner som stöds:** Den blå (färgade) delen av stapeln och bråket (täljare/nämnare) i fältet representerar procentandelen enheter som kör en version av Microsoft 365-appar som stöds.
+        - Täljare: Antalet enheter i versioner av Microsoft 365-appar som stöds under de senaste 28 dagarna
+        - Nämnare: Antalet enheter som använder Microsoft 365-appar under de senaste 28 dagarna
+    - **Senaste versionerna:** Den blåfärgade delen av stapeln och bråket (täljare/nämnare) i fältet representerar procentandelen enheter som kör de senaste versionerna av Microsoft 365-appar.
+        - Täljare: Antalet enheter i de senaste versionerna av Microsoft 365-appar under de senaste 28 dagarna
+        - Nämnare: Antalet enheter som använder Microsoft 365-appar under de senaste 28 dagarna
+1. **Läs mer:**   Välj den här länken om du vill visa hjälpinnehåll.
 
-#### <a name="trend-visualization-of-the-devices"></a>Trend visualisering för enheterna
+#### <a name="trend-visualization-of-the-devices"></a>Trendvisualisering av enheter
 
-Det här diagrammet visar trenden för de enheter som kör versioner och de senaste versionerna av Microsoft 365-appar under de senaste 180 dagarna.
+Det här diagrammet visar trendlinjen på de enheter som har versioner som stöds och de senaste versionerna av Microsoft 365-appar under de senaste 180 dagarna.
 
-:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Diagram som visar hur många enheter som körs och den senaste versionen av apparna över tiden.":::
+:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Diagram som visar hur många enheter som kör versioner av appar som stöds och de senaste versionerna av appar över tid.":::
 
 ## <a name="devices-in-your-organization"></a>Enheter i din organisation
 
-I det här avsnittet får du hjälp med att hantera de mått du vill fokusera på genom att tillhandahålla relevant information till alla mät värden för Microsoft 365-appar.
+I det här avsnittet får du hjälp att agera på de mätvärden du vill fokusera på genom att ange relevant information för alla mätvärden för hälsoupplevelser för Microsoft 365-appar – teknikupplevelser.
 
-Följande kolumner visas i tabellen på nivån kanal/version:
+Följande kolumner visas i tabellen på kanal-/versionsnivå:
 
-- **Kanal** : den aktuella kanalen för Microsoft 365-appar på enheterna.
-- **Status:**   Microsoft 365-program-support för enheter som baseras på aktuell kanal och version.
-- **Versioner:**   Aktuella versioner av Microsoft 365-apparna på enheterna.
-- **antal enheter:**  Antal enheter.
+- **Kanal** : Aktuell Microsoft 365-appkanal på enheterna.
+- **Status:**   Microsoft 365-apparna stöder status för enheter baserat på aktuell kanal och version.
+- **Versioner:**   Aktuella versioner av Microsoft 365-appar på enheterna.
+- **Antal enheter:**  Antal enheter.
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Kommunikation – människor upplever](communication.md) (artikel) \
-[Innehålls samarbete – folk upplevelse](content-collaboration.md) (artikel) \
-[Möten – människor upplever](meetings.md) (artikel) \
-[Rörlighet – människor upplever](mobility.md) (artikel) \
-[Integritets inställningar för produktivitets Poäng](privacy.md) (artikel) \
-[Samarbete – människor upplever](teamwork.md) (artikel)
+[Kommunikation – Personers upplevelser](communication.md) (artikel)\
+[Innehållssamarbete – personers upplevelser](content-collaboration.md) (artikel)\
+[Möten – Upplevelser för personer](meetings.md) (artikel)\
+[Mobility – People experiences](mobility.md) (artikel)\
+[Sekretesskontroller för Productivity Score](privacy.md) (artikel)\
+[Teamwork – Personliga upplevelser](teamwork.md) (artikel)

@@ -1,9 +1,9 @@
 ---
-title: Microsoft produktivitets Poäng – mobilitet
+title: Microsoft Productivity Score – Mobility
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,21 +18,21 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: Information om mobilitet-människor upplever produktivitets poäng.
-ms.openlocfilehash: e632bb4960ef36acf2c81373f34947ababc8b903
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+description: Information om Mobilitet – personerna får produktivitetspoäng.
+ms.openlocfilehash: 7789980a721e5ebaad3d3673fd0e7c640b6f737d
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712573"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580852"
 ---
-# <a name="mobility--people-experiences"></a>Rörlighet – människor upplever
+# <a name="mobility--people-experiences"></a>Mobilitet – upplevelser för personer
 
-Produktivitets Poäng tillhandahåller insikter i organisationens digitala Transformation-resa via dess användning av Microsoft 365 och de teknik funktioner som stöder det. Din organisations Poäng återspeglar funktionerna för folk-och teknik upplevelse och kan jämföras med benchmarks från organisationer som liknar ditt. Kategorin mobilitet är en del av folks måtten. Mer information finns i [Översikt över produktivitets Poäng](productivity-score.md) och Läs [Microsofts sekretess policy](https://privacy.microsoft.com/privacystatement).
+Produktivitetsresultatet ger insikter om organisationens digitala omvandlingsresa genom användningen av Microsoft 365 och de teknikupplevelser som stöder det. Organisationens resultat återspeglar mätvärden för personer och teknikupplevelse och kan jämföras med riktmärken från organisationer som påminner om din. Mobilitetskategorin är en del av personer som upplever mått. Mer information finns i översikten [över Productivity Score](productivity-score.md) och [Microsofts sekretesspolicy.](https://privacy.microsoft.com/privacystatement)
 
-## <a name="prerequisites"></a>Förutsättningar
+## <a name="prerequisites"></a>Krav
 
-För att komma igång med mobilitets insikter måste personer i din organisation vara licensierade för:
+För att komma igång med rörlighetsinsikter måste personer i organisationen vara licensierade för:
 
 - Microsoft Teams
 - Exchange Online
@@ -41,115 +41,115 @@ För att komma igång med mobilitets insikter måste personer i din organisation
 - PowerPoint
 - OneNote
 
-Mer information finns i [tilldela licenser till användare](../manage/assign-licenses-to-users.md).
+Mer information finns i [tilldela licenser till användare.](../manage/assign-licenses-to-users.md)
 
-När personer har varit aktiva i ovanstående produkter minst en gång under de senaste 28 dagarna visas insikter.
+När användare har varit aktiva i ovanstående produkter minst en gång under de senaste 28 dagarna börjar du se insikterna.
 
-## <a name="why-your-organization39s-mobility-score-matters"></a>Varför din organisation&#39;s rörlighets Poäng
+## <a name="why-your-organization39s-mobility-score-matters"></a>Varför din organisation&#39;rörlighetspoäng spelar roll
 
-Ett grundläggande företags produktivitet är hur bra människor kan arbeta flexibelt var de än är. Med Microsoft 365 kan folk vara anslutna med Outlook, Microsoft Teams och Yammer. Det går också smidigt att samar beta med innehåll med hjälp av Word, Excel, PowerPoint och OneNote från valfri plats och plattformar.
+En stor dag på organisationens produktivitet är hur väl människor kan arbeta smidigt oavsett var de är. Med Microsoft 365 kan personer hålla kontakten med Outlook, Microsoft Teams och Yammer. Personer kan också samarbeta smidigt med innehåll med hjälp av Word, Excel, PowerPoint och OneNote var som helst och via plattformar.
 
-## <a name="how-we-calculate-the-score"></a>Så här beräknas poängen
+## <a name="how-we-calculate-the-score"></a>Så här beräknar vi poängen
 
-Vi tillhandahåller en huvudsaklig inblick i upplevelsen som innehåller de viktigaste måtten för kategorin. Då används Poäng ramverket nedan för de här måtten för att beräkna organisationens poäng.
+Vi ger en primär insyn i upplevelsen som innehåller nyckeltal för den här kategorin. Sedan används ett poängramverk som anges nedan för dessa mått för att beräkna organisationens poäng.
 
-### <a name="primary-insight"></a>Huvudsaklig insikt
+### <a name="primary-insight"></a>Primär insyn
 
-Med Microsoft 365 kan folk samar beta med program, till exempel Microsoft Outlook, Word, Excel, PowerPoint, OneNote, Microsoft Teams, Yammer och Skype för företag. Personer kan även arbeta var som helst genom att använda en sömlös upplevelse på dator-, webb-och mobil plattformar. Huvud inblicken ser till att produkterna är aktiverade för personer i organisationen – och hur många av de här personerna är aktiva på minst två plattformar.
+Med Microsoft 365 kan användare arbeta smidigt med appar som Microsoft Outlook, Word, Excel, PowerPoint, OneNote, Microsoft Teams, Yammer och Skype för företag. Användare kan också arbeta var de än är med smidiga plattformar för datorer, webben och mobila enheter. Den primära insikten tittar på de produkter som är aktiverade för personer i organisationen , och hur många av dessa personer som är aktiva på minst två plattformar.
 
-:::image type="content" source="../../media/primary-mobility.png" alt-text="Diagram som visar huvudsaklig insikt för ökad rörlighet – människor upplever produktivitets poäng.":::
+:::image type="content" source="../../media/primary-mobility.png" alt-text="Diagram som visar den primära insikten i Mobilitet – personerna får produktivitetspoäng.":::
 
-1. **Sidhuvud:** Visar hur många personer i organisationen som har till gång till någon av Microsoft 365-apparna och vilka som är aktiva på minst en av dessa program på flera plattformar.
-2. **Brödtext:** Ger mer information om hur användning av dessa program på flera plattformar kan främja effektivitet och tillfredsställelse.
-3. **Visualisering (nuvarande tillstånd):** Visar hur många människor som använder mer än en plattform mellan skriv bord, mobil och webben för minst en Microsoft 365 (lista nedan):
-    - **Vågrätt fält** där den blå (färgade) delen representerar procent satsen som anges i sidhuvudet.
-    - **Bråket** i fältet markerar den (täljare/nämnare) som används för att beräkna procent satsen i sidhuvudet.
-        - Täljare: antalet personer i din organisation som använder ett valfritt program i Microsoft Outlook, Word, Excel, PowerPoint, OneNote och Microsoft Teams, Yammer och Skype på mer än en plattform från skriv bord, webb och mobil under de senaste 28 dagarna.
-        - Nämnare: antalet personer som är licensierade för Microsoft 365-appar, Exchange, Yammer, Microsoft Teams eller Skype för minst 1 av de senaste 28 dagarna.
-    - Värdet på **peer-benchmark** för nyckeltal visas också som en procents ATS.
-4. **Visa mobilitets resurser:** Välj den här länken om du vill visa hjälp innehåll.
+1. **Sidhuvud:** Visar procentandelen personer i din organisation som har åtkomst till någon av Microsoft 365-apparna och som är aktiva på minst ett av dessa program på fler än en plattform.
+2. **Brödtext:** Innehåller mer information om hur användningen av programmen på flera plattformar kan öka effektiviteten och tillfredsställelsen.
+3. **Visualisering (aktuell status):** Visar hur många personer som använder fler än en plattform på datorer, mobila enheter och på webben för minst en Microsoft 365 (lista nedan) enligt följande:
+    - **Vågrät stapel** där den blå (färgade) delen representerar procentandelen uttryckt i rubriken.
+    - **Bråket** i stapeln markerar den (täljare/nämnare) som används för att beräkna procent i rubriken.
+        - Täljare: Antalet personer i din organisation som använder något av program i Microsoft Outlook, Word, Excel, PowerPoint, OneNote och Microsoft Teams, Yammer och Skype på fler än en plattform från skrivbord, webb och mobil de senaste 28 dagarna.
+        - Nämnare: Antalet användare som har licens för Microsoft 365-appar, Exchange, Yammer, Microsoft Teams eller Skype under minst 1 av de senaste 28 dagarna.
+    - **Peer-prestandavärdet** för det viktiga mätvärdet visas också som procent.
+4. **Visa rörlighetsresurser:** Välj den här länken om du vill visa hjälpinnehåll.
 
-#### <a name="trend-visualization-of-the-primary-insight"></a>Trend visualisering av huvudsaklig insikt
+#### <a name="trend-visualization-of-the-primary-insight"></a>Trendvisualisering av den primära insikten
 
 :::image type="content" source="../../media/mobility-primary.png" alt-text="Diagram som visar antalet personer som använder mer än en plattform jämfört med tid.":::
 
-Det här diagrammet visar den trend linje där täljaren är antalet personer som har använt program under de senaste 180 dagarna. Varje data punkt i linje diagrammet är en mängd aktivitet under de senaste 28 dagarna. Varje data punkt innehåller flera personer i din organisation som använder ett program på minst två plattformar under de senaste 28 dagarna för varje datum på x-axeln.
+Det här diagrammet visar trendlinjen, där täljaren är antalet personer som har använt appar, under de senaste 180 dagarna. Varje datapunkt i linjediagrammet är en mängd aktiviteter för de senaste 28 dagarna. Varje datapunkt räknar alla användare i din organisation med hjälp av ett program på minst två plattformar under de senaste 28 dagarna för varje datum på x-axeln.
 
-### <a name="scoring-framework"></a>Poäng ramverk
+### <a name="scoring-framework"></a>Poängramverk
 
-Betygs poängen för din organisation mått på en organisations (aggregerad) nivå, oavsett om de använder Microsoft 365-appar – Outlook, teams, Word, Excel, PowerPoint, OneNote, Yammer och Skype-på olika plattformar – skriv bord, webb och mobil.
+Mobilitetspoängen för din organisation mäter på en organisationsnivå (aggregerad) oavsett om personerna använder Microsoft 365-appar – Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer och Skype – på olika plattformar – skrivbord, webb och mobil.
 
-Poängen tillhandahålls inte på individuell användar nivå.
+Resultaten anges inte på användarnivå.
 
-## <a name="explore-how-your-org-works-across-platforms-and-locations"></a>Lär dig hur din organisation fungerar mellan plattformar och platser
+## <a name="explore-how-your-org-works-across-platforms-and-locations"></a>Se hur din organisation fungerar på olika plattformar och platser
 
-Vi tillhandahåller också information som hjälper dig att få insyn i hur personer i organisationen arbetar på olika plattformar. Dessa ytterligare mått bidrar inte direkt till din produktivitets poäng, men hjälper dig att skapa en åtgärds plan som en del av din digitala transformering.  
+Vi ger dig även information som hjälper dig att se hur personer i organisationen arbetar på olika plattformar. Måtten bidrar inte direkt till ditt Produktivitetsresultat, men hjälper dig att skapa en handlingsplan som en del av din digitala omvandling.  
 
-### <a name="use-of-outlook-across-platforms"></a>Användning av Outlook mellan plattformar
+### <a name="use-of-outlook-across-platforms"></a>Användning av Outlook på alla plattformar
 
-:::image type="content" source="../../media/outlook-across-platforms.png" alt-text="Diagram som visar hur många personer som använder Outlook på flera plattformar.":::
+:::image type="content" source="../../media/outlook-across-platforms.png" alt-text="Diagram som visar hur många som använder Outlook på flera plattformar.":::
 
-1. **Sidhuvud:** Visar procent andelen personer aktiva i Outlook som använder Outlook på flera plattformar.
-2. **Brödtext:** Innehåller information om värdet för att använda Outlook på mobila enheter för att hålla kontakten var som helst på e-post.
-3. **Visualisering:** Visar procent andelen personer som är aktiva i Outlook och som använder en eller flera plattformar:
+1. **Sidhuvud:** Visar hur många procent av de personer som är aktiva i Outlook och som använder Outlook på flera plattformar.
+2. **Brödtext:** Innehåller information om värdet av att använda Outlook på mobila enheter för att hålla kontakten var som helst på e-post.
+3. **Visualisering:** Visar hur många procent av de personer som är aktiva i Outlook och använder en eller flera plattformar:
       - **Flera plattformar:**
-        - Täljare: antalet personer som har använt Outlook på minst två plattformar från Station ära datorer, mobiler eller webbplatser under de senaste 28 dagarna.
-        - Nämnare: antalet personer som har använt Outlook minst en gång under de senaste 28 dagarna.
-      - **Endast skriv bord:**
-        - Täljare: antalet personer som har använt Outlook på bara en dator plattform under de senaste 28 dagarna.
-        - Nämnare: antalet personer som har använt Outlook minst en gång under de senaste 28 dagarna
-      - **Endast Internet:**
-        - Täljare: antalet personer som har använt Outlook på bara en webb plattform under de senaste 28 dagarna.
-        - Nämnare: antalet personer som har använt Outlook minst en gång under de senaste 28 dagarna.
+        - Täljare: Antalet personer som har använt Outlook på minst två plattformar från datorn, mobilen eller webben under de senaste 28 dagarna.
+        - Nämnare: Antalet personer som har använt Outlook minst en gång under de senaste 28 dagarna.
+      - **Endast skrivbord:**
+        - Täljare: Antalet personer som bara har använt Outlook på en skrivbordsplattform under de senaste 28 dagarna.
+        - Nämnare: Antalet personer som har använt Outlook minst en gång under de senaste 28 dagarna
+      - **Endast webben:**
+        - Täljare: Antalet personer som bara har använt Outlook på en webbplattform under de senaste 28 dagarna.
+        - Nämnare: Antalet personer som har använt Outlook minst en gång under de senaste 28 dagarna.
       - **Endast mobil:**
-        - Täljare: antal personer som har använt Outlook på bara en mobil plattform de senaste 28 dagarna.
-        - * Nämnare: antal personer som har använt Outlook minst en gång under de senaste 28 dagarna.
+        - Täljare: Antalet personer som bara använt Outlook på en mobilplattform under de senaste 28 dagarna.
+        - *Nämnare: Antalet personer som har använt Outlook minst en gång under de senaste 28 dagarna.
 
-### <a name="use-of-teams-across-platforms"></a>Utnyttjande av team mellan plattformar
+### <a name="use-of-teams-across-platforms"></a>Användning av Teams på olika plattformar
 
-:::image type="content" source="../../media/teams-across-platforms.png" alt-text="Diagram som visar hur många personer som använder Teams på mer än en eller en enskild plattform.":::
+:::image type="content" source="../../media/teams-across-platforms.png" alt-text="Diagram som visar hur många som använder Teams på mer än en eller samma plattform.":::
 
-1. **Sidhuvud:** Visar vilken andel av personer som är aktiva i Microsoft Teams som använder den på flera plattformar.
-2. **Brödtext:** Innehåller information om värdet för att använda Teams på mobila enheter för att hjälpa personer att hålla sig uppdaterade när du arbetar från valfri plats.
-3. **Visualisering:** Visar procent andelen personer som är aktiva i Microsoft Teams som använder det på antingen en enda plattform eller flera: 
+1. **Sidhuvud:** Visar vilken procentandel av de personer som är aktiva på Microsoft Teams som använder det på flera plattformar.
+2. **Brödtext:** Innehåller information om värdet av att använda Teams på mobila enheter för att hjälpa personer att hålla sig uppdaterade om meddelanden när de arbetar från valfri plats.
+3. **Visualisering:** Visar hur många procent av de personer som är aktiva i Microsoft Teams som använder den på antingen en eller flera plattformar: 
     - **Flera plattformar:**
-        - Täljare: antalet personer som har använt team under de senaste 28 dagarna på 2 eller fler av följande plattformar: Skriv bord, mobil eller webb.
-        - Nämnare: antalet personer som har använt Microsoft Teams minst en gång under de senaste 28 dagarna.
-    - **Endast skriv bord:**
-        - Täljare: antalet personer som endast har använt Microsoft Teams på en dator plattform under de senaste 28 dagarna
-        - Nämnare: antalet personer som har använt team minst en gång under de senaste 28 dagarna
-    - **Endast Internet:**
-        - Täljare: antalet personer som endast har använt Microsoft Teams på en webb plattform de senaste 28 dagarna
-        - Nämnare: antalet personer som har använt Microsoft Teams minst en gång under de senaste 28 dagarna
+        - Täljare: Antalet personer som har använt Teams de senaste 28 dagarna på två eller fler av följande plattformar: stationär dator, mobil eller webb.
+        - Nämnare: Antalet personer som har använt Microsoft Teams minst en gång under de senaste 28 dagarna.
+    - **Endast skrivbord:**
+        - Täljare: Antalet personer som bara har använt Microsoft Teams på en skrivbordsplattform de senaste 28 dagarna
+        - Nämnare: Antalet personer som har använt Teams minst en gång under de senaste 28 dagarna
+    - **Endast webben:**
+        - Täljare: Antalet personer som bara har använt Microsoft Teams på en webbplattform de senaste 28 dagarna
+        - Nämnare: Antalet personer som har använt Microsoft Teams minst en gång under de senaste 28 dagarna
     - **Endast mobil:**
-        - Täljare: antalet personer som endast har använt Microsoft Teams på en mobil plattform de senaste 28 dagarna
-        - Nämnare: antalet personer som har använt team minst en gång under de senaste 28 dagarna
+        - Täljare: Antalet personer som endast har använt Microsoft Teams på en mobil plattform under de senaste 28 dagarna
+        - Nämnare: Antalet personer som har använt Teams minst en gång under de senaste 28 dagarna
 
-### <a name="use-of-microsoft-365-apps-across-platforms"></a>Användning av Microsoft 365-appar mellan plattformar
+### <a name="use-of-microsoft-365-apps-across-platforms"></a>Användning av Microsoft 365-appar på alla plattformar
 
 :::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="Diagram som visar antalet personer som använder Microsoft 365-appar på flera eller enskilda plattformar.":::
 
-1. **Sidhuvud:** Visar procent andelen personer aktiva i Microsoft 365-program (Word, Excel, PowerPoint och OneNote) på flera plattformar.
-2. **Brödtext:** Ger information om värdet för att ge folk i organisationen flexibiliteten att komma åt deras filer var som helst.
-3. **Visualisering:** De grupperade lodräta är avsedda att representera antalet personer som använder varje program som behandlas – Word, Excel, PowerPoint och OneNote – på en eller flera plattformar. Staplarna representerar följande för vart och ett av dessa program:
-      - **Flera plattformar:** Antalet användare som är aktiva i ett program på minst två plattformar under de senaste 28 dagarna.
-      - **Endast skriv bord:** Antalet användare som är aktiva på appen endast för dator plattformen under de senaste 28 dagarna.
-      - **Endast Internet:** Antalet användare som aktive ras på bara webb plattformen under de senaste 28 dagarna.
-      - **Endast mobil:** Antalet användare som är aktiva på appen på endast den mobila plattformen under de senaste 28 dagarna.
+1. **Sidhuvud:** Visar procentandelen personer som är aktiva på Microsoft 365-program (Word, Excel, PowerPoint och OneNote) på flera plattformar.
+2. **Brödtext:** Ger information om värdet av att ge personer i organisationen möjlighet att komma åt sina filer var som helst.
+3. **Visualisering:** Den grupperade lodräta layouten är avsedd att representera antalet personer som använder de olika apparna – Word, Excel, PowerPoint och OneNote – på en eller flera plattformar. Staplar representerar följande för vart och ett av de här programmen:
+      - **Flera plattformar:** Antalet användare som är aktiva i en app på minst två plattformar under de senaste 28 dagarna.
+      - **Endast skrivbord:** Antalet användare som endast är aktiva i appen på skrivbordsplattformen under de senaste 28 dagarna.
+      - **Endast webben:** Antalet användare som endast är aktiva i appen på webbplattformen de senaste 28 dagarna.
+      - **Endast mobil:** Antalet användare som är aktiva i appen på endast mobilplattformen under de senaste 28 dagarna.
 
-### <a name="remote-work"></a>Fjärrarbete
+### <a name="remote-work"></a>Distansarbete
 
-:::image type="content" source="../../media/remotework-trend.png" alt-text="Diagram som visar hur många personer som arbetar på en fjärrdator, på plats eller både och.":::
+:::image type="content" source="../../media/remotework-trend.png" alt-text="Diagram som visar hur många som arbetar på distans, på plats eller både och.":::
 
-1. **Sidhuvud:** Visar procent andelen personer som bara arbetar från Home eller location utanför företagets nätverk.
-2. **Brödtext:** Framhäver vikten av att under lätta fjärran arbete för personer utan till gång till organisationens fysiska kontor.
-3. **Visualisering:** Visar trend linje för en daglig procent av personer som bara ska arbeta från fjärran sluten samt dagliga procent av personer som också fungerar på andra platser. Användare anses på plats om de utför minst tre timmars aktivitet i Microsoft 365-appar under en dag.
+1. **Sidhuvud:** Visar hur stor procentandel av personer som endast arbetar från hemmet eller platsen utanför företagets nätverk.
+2. **Brödtext:** Framhäver betydelsen av att underlätta distansarbete för personer utan åtkomst till organisationens fysiska kontor.
+3. **Visualisering:** Visar trendlinjen för daglig procentandel av personer som endast arbetar på distans samt daglig procentandel av personer som också arbetar på plats. Användare anses vara på plats om de utför minst tre timmars aktivitet i Microsoft 365-appar på en dag.
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Microsoft 365-appar hälsa – teknik upplevelser](apps-health.md) (artikel) \
-[Kommunikation – människor upplever](communication.md) (artikel) \
-[Innehålls samarbete – folk upplevelse](content-collaboration.md) (artikel) \
-[Möten – människor upplever](meetings.md) (artikel) \
-[Integritets inställningar för produktivitets Poäng](privacy.md) (artikel) \
-[Samarbete – människor upplever](teamwork.md) (artikel)
+[Hälsa för Microsoft 365-appar – Teknikupplevelser](apps-health.md) (artikel)\
+[Kommunikation – Personers upplevelser](communication.md) (artikel)\
+[Innehållssamarbete – personers upplevelser](content-collaboration.md) (artikel)\
+[Möten – Upplevelser för personer](meetings.md) (artikel)\
+[Sekretesskontroller för Productivity Score](privacy.md) (artikel)\
+[Teamwork – Personliga upplevelser](teamwork.md) (artikel)

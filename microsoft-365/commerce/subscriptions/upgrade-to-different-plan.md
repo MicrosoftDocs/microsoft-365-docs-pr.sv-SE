@@ -20,21 +20,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: Lär dig hur du uppgraderar till ett annat abonnemang.
-ms.openlocfilehash: 5f853dcd0d247a6422489cbe5d0287765bfd72a6
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 79ca18df28505c457e085dbd73c2fbd04eff53ca
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164455"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580984"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Uppgradera till ett annat abonnemang
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 När ditt företag förändras eller du behöver fler funktioner kan du uppgradera planer. Det enklaste sättet att göra det på är **att använda fliken** Uppgradera i administrationscentret. Men det finns **inte stöd** för att använda fliken Uppgradera i alla situationer. I vissa fall kan du kanske ändra abonnemang manuellt.
 

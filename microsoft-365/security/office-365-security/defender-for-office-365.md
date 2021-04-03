@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender för Office 365 innehåller säkra bifogade filer, säkra länkar, avancerade verktyg för skydd mot nätfiske, rapporteringsverktyg och funktioner för hotinformation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec60fc7063bdd4a2656385ed86098d6ae2b4abc0
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: dad2722a1f9e99fad53c83348d049fa9a60f8b62
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207187"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580996"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender för Office 365
 
@@ -52,7 +52,7 @@ Microsoft Defender för Office 365 skyddar din organisation mot skadliga hot fr�
 ## <a name="interactive-guide-to-microsoft-defender-for-office-365"></a>Interaktiv guide till Microsoft Defender för Office 365
 I den här interaktiva guiden får du lära dig hur du skyddar din organisation med Microsoft Defender för Office 365. Du kommer att se hur Defender för Office 365 kan hjälpa dig att definiera skyddsprinciper, analysera hot till din organisation och reagera på attacker.
 
-> [!VIDEO https://aka.ms/MSDO-IG]
+[Ta del av den interaktiva guiden](https://aka.ms/MSDO-IG)
 
 ## <a name="getting-started"></a>Komma igång
 
@@ -97,6 +97,8 @@ I följande tabell sammanfattas vad som ingår i varje abonnemang.
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Konfigurera principer för Microsoft Defender för Office 365
 
 Med Office 365 ATP kan din organisations säkerhetsteam konfigurera skydd genom att definiera principer i Säkerhets- och efterlevnadscenter (gå till <https://protection.office.com> \> **Hothantering** \> **Princip**.)
+
+Lär dig mer genom att titta på [den här videon](https://www.youtube.com/watch?v=vivvTmWJ_3c). 
 
 > [!TIP]
 > En kort lista över principer som ska definieras finns i [Skydda mot hot](protect-against-threats.md).

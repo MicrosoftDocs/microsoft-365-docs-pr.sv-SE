@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8bb80e032fd2eb4c618b60f4ab46829d5cf11b6d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9b192a029704d1354867b169efdf0d489345030e
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199235"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580972"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Konfigurera Microsoft 365 Defender-pelarna för din testlabb- eller pilotmiljö
 
@@ -285,8 +285,7 @@ Mer omfattande vägledning finns i Aktivera [Microsoft 365 Defender.](m365d-enab
 
 Grattis! Du har just skapat din utvärderingsversionsmiljö i Microsoft 365 Defender! Nu kan du bekanta dig med Användargränssnittet i Microsoft 365 Defender! Se vad du kan lära dig av följande interaktiva guide i Microsoft 365 Defender och hur du använder varje instrumentpanel för dina dagliga säkerhetsåtgärdsuppgifter.
 
-
->[!VIDEO https://aka.ms/MTP-Interactive-Guide]
+[Ta en titta på den interaktiva guiden](https://aka.ms/MTP-Interactive-Guide)
 
 Sedan kan du simulera en attack och se hur funktionerna i olika produkter identifierar, skapar aviseringar och automatiskt svarar på fillösa angrepp mot en slutpunkt.
 

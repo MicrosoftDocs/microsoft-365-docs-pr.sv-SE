@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Översikt över nätverksanslutningen i administrationscentret för Microsoft 365 (förhandsversion)
-ms.openlocfilehash: 2b80dd001bd2ee5d5725ea67c73aa34b4eb8816c
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: dd97a6d5cc9662f01854e1432660784358bce7b8
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408411"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581136"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Nätverksanslutning i administrationscentret för Microsoft 365 (förhandsversion)
 
@@ -205,6 +205,10 @@ En optimal Microsoft 365 tjänst front dörr är den som är närmast din nätve
 ### <a name="what-is-an-internet-egress-location"></a>Vad är en utgående Internetplats?
 
 Den utgående internetplatsen är den plats där din nätverkstrafik går ut ur företagsnätverket och ansluter till Internet. Det här identifieras också som den plats där du har en NAT-enhet (Network Address Translation) och vanligtvis är det där du ansluter med en Internetleverantör (ISP). Om du ser ett långt avstånd mellan din plats och din utgående Internetplats kan detta indikera ett betydande WAN-backhaul.
+
+### <a name="what-license-is-needed-for-this-capability"></a>Vilken licens krävs för den här funktionen?
+
+Du behöver en licens som ger åtkomst till administrationscentret för Microsoft 365.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 

@@ -1,7 +1,7 @@
 ---
 title: Förutsättningar för Microsoft Hanterat skrivbord
 description: Licenser, Azure-konton, autentiseringsinställningar och Microsoft 365-inställningar som ska konfigureras innan de registreras i Microsoft Managed Desktop
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5b5fb7185bb696bb6daae0a67a209cf3f7e77655
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: fcfddadf13e000156fa5431cc30bc72f4f3537e2
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924570"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581052"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Förutsättningar för Microsoft Hanterat skrivbord
 
@@ -47,7 +48,7 @@ Microsoft Managed Desktop kräver vissa licensalternativ för att fungera. Mer [
 - Microsoft Intune 
 - Windows 10 Enterprise  
 - Microsoft Defender för Endpoint
-- Microsoft 365-appar för företag
+-  Microsoft 365 Apps för företag
 - Microsoft Teams
 - [SharePoint Online (abonnemang 2)](https://www.microsoft.com/microsoft-365/sharepoint/compare-sharepoint-plans)
 - [Exchange Online-abonnemang 2](https://www.microsoft.com/microsoft-365/exchange/compare-microsoft-exchange-online-plans) 
@@ -55,3 +56,15 @@ Microsoft Managed Desktop kräver vissa licensalternativ för att fungera. Mer [
 
 > [!TIP]
 > Med Microsoft Account Manager kan du granska dina aktuella licenser och tjänstplaner och hitta den effektivaste vägen för att få ytterligare licenser eller tjänstplaner som du kan behöva, samtidigt som du slipper duplicering.
+
+## <a name="steps-to-get-ready"></a>Steg för att förbereda dig
+
+1. Granska [Krav för Microsoft Managed Desktop](prerequisites.md). (Den här artikeln)
+2. Använda [utvärderingsverktyg för beredskap](readiness-assessment-tool.md).
+3. [Förutsättningar för gästkonton](guest-accounts.md)
+4. [Nätverks konfiguration för Microsoft Hanterat skrivbord](network.md)
+5. [Förbereda certifikat och nätverks profiler för Microsoft Hanterat skrivbord](certs-wifi-lan.md)
+6. [Förbereda lokala resurser till gång för Microsoft Hanterat skrivbord](authentication.md)
+7. [Appar på Microsoft Hanterat skrivbord](apps.md)
+8. [Förbereda mappade enheter för Microsoft Hanterat skrivbord](mapped-drives.md)
+9. [Förbereda skrivarresurser för Microsoft Hanterat skrivbord](printing.md)

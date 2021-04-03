@@ -1,9 +1,9 @@
 ---
-title: Microsoft produktivitets Poäng-innehålls samarbete
+title: Microsoft Productivity Score – innehållssamarbete
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,183 +18,183 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: Information om innehålls samarbete-människor upplever produktivitets poäng.
-ms.openlocfilehash: 62486511be7e085401e4a2934ce3742a15729e1f
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+description: Information om samarbetet i innehåll – personer får produktivitetspoäng.
+ms.openlocfilehash: dedd39a84580f26e80e5586e07fb64c8a6d35573
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712597"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580864"
 ---
-# <a name="content-collaboration--people-experiences"></a>Innehålls samarbete – folk upplevelse
+# <a name="content-collaboration--people-experiences"></a>Innehållssamarbete – upplevelser av personer
 
-Produktivitets Poäng tillhandahåller insikter i organisationens digitala Transformation-resa via dess användning av Microsoft 365 och de teknik funktioner som stöder det. Din organisations Poäng återspeglar funktionerna för folk-och teknik upplevelse och kan jämföras med benchmarks från organisationer som liknar ditt. Kategorin innehålls samarbete är en del av folks måtten. Mer information finns i [Översikt över produktivitets Poäng](productivity-score.md) och Läs [Microsofts sekretess policy](https://privacy.microsoft.com/privacystatement).
+Produktivitetsresultatet ger insikter om organisationens digitala omvandlingsresa genom användningen av Microsoft 365 och de teknikupplevelser som stöder det. Organisationens resultat återspeglar mätvärden för personer och teknikupplevelse och kan jämföras med riktmärken från organisationer som påminner om din. Kategorin för innehållssamarbete är en del av personernas måttupplevelser. Mer information finns i översikten [över Productivity Score](productivity-score.md) och [Microsofts sekretesspolicy.](https://privacy.microsoft.com/privacystatement)
 
-## <a name="prerequisites"></a>Förutsättningar
+## <a name="prerequisites"></a>Krav
 
-För att komma igång med innehålls samarbete måste personer i din organisation vara licensierade för:
+För att komma igång med insikter om innehållssamarbete måste personer i organisationen licensieras för:
 
 - OneDrive för företag
 - SharePoint
 - Exchange Online
 
-Mer information finns i [tilldela licenser till användare](../manage/assign-licenses-to-users.md).
+Mer information finns i [tilldela licenser till användare.](../manage/assign-licenses-to-users.md)
 
- När personer har varit aktiva i ovanstående produkter minst en gång under de senaste 28 dagarna visas insikter.
+ När användare har varit aktiva i ovanstående produkter minst en gång under de senaste 28 dagarna börjar du se insikterna.
 
-## <a name="why-your-organization39s-content-collaboration-score-matters"></a>Varför din organisation&#39;s innehålls samarbets Poäng
+## <a name="why-your-organization39s-content-collaboration-score-matters"></a>Därför är din&#39;poäng för innehållssamarbete viktigt
 
-En viktig aspekt med digital transformation är hur personer samarbetar i filer. Med innehållet på Microsoft 365 kan folk komma åt, skapa, ändra och samar beta på innehåll med andra från valfri plats. Undersökningar visar att när personer samarbetar med online-filer sparar varje person ett medelvärde på 100 minuter per vecka. [Se beviset](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+En viktig del i den digitala transformationen är hur människor samarbetar i filer. Med ditt innehåll på Microsoft 365 kan personer få åtkomst till, skapa, ändra och samarbeta om innehåll med andra personer från valfri plats. Efterforskningar visar att när personer samarbetar med onlinefiler sparar varje person i genomsnitt 100 minuter per vecka. [Se bevisen](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-## <a name="how-we-calculate-the-content-collaboration-score"></a>Så här beräknas poängen för innehålls samarbete
+## <a name="how-we-calculate-the-content-collaboration-score"></a>Så här beräknar vi poäng för innehållssamarbete
 
-Vi tillhandahåller en primär insikt som innehåller de viktigaste värdena för innehålls samarbete i din organisation. Då används Poäng ramverket nedan för de här måtten för att beräkna organisationens poäng.
+Vi ger en primär insyn som innehåller de viktigaste måtten för samarbete med innehåll i organisationen. Sedan används ett poängramverk som anges nedan för dessa mått för att beräkna organisationens poäng.
 
-### <a name="primary-insight"></a>Huvudsaklig insikt
+### <a name="primary-insight"></a>Primär insyn
 
-Med hjälp av Microsoft OneDrive för företag och SharePoint kan du enkelt skapa, läsa och upptäck deras enskilda och delade innehåll i Microsoft 365 från alla enheter och program. De gör det också möjligt för personer att säkert dela och samar beta med innehåll. Huvudsaklig insikt innehåller information från alla som kan använda OneDrive för företag och SharePoint. Dessutom visas informationen om hur många läser, skapar och samarbetar med innehåll som lagras i OneDrive för företag och SharePoint.
+Microsoft OneDrive för företag och SharePoint hjälper användare att enkelt skapa, läsa och upptäcka sitt eget och delade innehåll i Microsoft 365 från olika enheter och program. De gör också att personer kan dela och samarbeta om innehåll på ett säkert sätt. Den primära insikten innehåller information från alla som kan använda OneDrive för företag och SharePoint. Dessutom bryts informationen om hur många personer som läser, skapar och samarbetar i innehåll som lagras i OneDrive för företag och SharePoint.
 
-:::image type="content" source="../../media/collabscore_primary.jpg" alt-text="Primära insikter från kommunikations samarbete.":::
+:::image type="content" source="../../media/collabscore_primary.jpg" alt-text="Primär information från poäng för kommunikationssamarbete.":::
 
 
-Typer som du kan använda i den här informationen är Word, Excel, PowerPoint, OneNote och PDF-filer.
+De typer som anses vara till för den här informationen är Word-, Excel-, PowerPoint-, OneNote- och PDF-filer.
 
-1. **Sidhuvud:** Visar hur många personer i organisationen som har åtkomst till OneDrive eller SharePoint som samarbetar med innehåll.
-2. **Brödtext:** Visar mer information om hur du kan läsa och skapa filer online är kopplade till att samar beta med filer.
-3. **Visualisering (nuvarande tillstånd):**
-    - Vågräta staplar där de blå färgade delarna representerar procent av personer som är aktiverade för fil samarbete via OneDrive eller SharePoint som har **läsare, skapare** eller **samarbets partners** på online-filer under de senaste 28 dagarna.
+1. **Sidhuvud:** Visar procentandelen personer i organisationen som har åtkomst till OneDrive eller SharePoint som samarbetar med innehåll.
+2. **Brödtext:** Innehåller mer information om hur beteenden för att läsa och skapa filer online är kopplade till samarbete med filer.
+3. **Visualisering (aktuell status):**
+    - Vågräta staplar där de blå delarna representerar procentandelen personer som aktiverats för filsamarbete via  OneDrive eller SharePoint som har varit **läsare,** skapare eller medarbetare på onlinefiler under de senaste 28 dagarna.
 
         De definieras på följande sätt:</br>
-        **Läsare:** Personer som har till gång till eller ladda ner online-filer i OneDrive eller SharePoint.</br>
-        **Skapare:** Personer som skapar, ändrar, laddar upp, synkroniserar, checkar in, kopierar eller flyttar OneDrive-eller SharePoint-filer online.</br>
-        **Samarbetsor:** Personer som samarbetar med online-filer med OneDrive eller SharePoint. Två personer är samarbetsor om en av dem läser eller redigerar en Office Online-app eller PDF-fil efter att den andra personen har skapat eller ändrat den, inom ett fönster med 28 dagar.
+        **Läsare:** Personer som öppnar eller laddar ned onlinefiler i OneDrive eller SharePoint.</br>
+        **Creators:** Personer som skapar, ändrar, laddar upp, synkroniserar, checkar in, kopierar eller flyttar OneDrive- eller SharePoint-filer online.</br>
+        **Medarbetare:** Personer som samarbetar med onlinefiler med hjälp av OneDrive eller SharePoint. Två personer är medarbetare om en av dem läser eller redigerar en Office-app eller PDF-fil online efter att den andra personen har skapat eller ändrat den, inom ett 28-dagarsfönster.
 
         > [!NOTE]
-        > De filer som behandlas i visualiseringen är Word-, Excel-, PowerPoint-, OneNote-eller PDF-filer som är online och sparas på OneDrive eller SharePoint. 
+        > De filer som anses i visualiseringen är Word-, Excel-, PowerPoint-, OneNote- eller PDF-filer som är online och sparas på OneDrive eller SharePoint. 
 
-    - Högdager (täljare/nämnare) för bråket används för att beräkna procent satsen som anges i vart och ett av de vågräta fälten.
+    - Markera (täljare/nämnare) i bråket används för att beräkna procentandelen uttryckt i varje vågrätt fält.
     
-      - **Läsare**</br>
-          - Täljare: antal personer som får till gång till eller ladda ner online-filer i OneDrive eller SharePoint under de senaste 28 dagarna</br>
-          - Nämnare: antal personer som hade åtkomst till OneDrive eller SharePoint för minst 1 av de senaste 28 dagarna</br>
-      - **Creator**</br>
-        - Täljare: antal personer som skapar, ändrar, laddar upp, synkroniserar, checkar in, kopierar eller flyttar online-filer i OneDrive eller SharePoint under de senaste 28 dagarna</br>
-        - Nämnare: antal personer som har haft åtkomst till OneDrive eller SharePoint för minst 1 av de senaste 28 dagarna. </br> 
-      - **Kollegor**</br>
-        - Täljare: antal personer som har samarbetat till online-filer i OneDrive eller SharePoint under de senaste 28 dagarna</br>
-        - Nämnare: antal personer som har haft åtkomst till för OneDrive eller SharePoint för minst 1 av de senaste 28 dagarna
+      - **Läsare:**</br>
+          - Täljare: Antalet personer som har åtkomst till eller laddar ned onlinefiler i OneDrive eller SharePoint de senaste 28 dagarna</br>
+          - Nämnare: Antalet personer som haft tillgång till OneDrive eller SharePoint under minst 1 av de senaste 28 dagarna</br>
+      - **Creators:**</br>
+        - Täljare: Antal personer som skapar, ändrar, laddar upp, synkroniserar, checkar in, kopierar eller flyttar onlinefiler i OneDrive eller SharePoint de senaste 28 dagarna</br>
+        - Nämnare: Antalet personer som har haft tillgång till OneDrive eller SharePoint under minst 1 av de senaste 28 dagarna. </br> 
+      - **Medarbetare:**</br>
+        - Täljare: Antalet personer som har samarbetat med onlinefiler i OneDrive eller SharePoint de senaste 28 dagarna</br>
+        - Nämnare: Antalet personer som har haft åtkomst till för OneDrive eller SharePoint under minst 1 av de senaste 28 dagarna
 
-    - Riktmärke-värden för varje läsare, skapare och medarbetare visas också i procent. Med andra ord visas värdet för det antal Creator som en procent andel av antalet personer som har åtkomst till OneDrive eller SharePoint.
+    - Peer benchmark value för var och en av läsarna, skaparna och kollegorna visas också som procent. Med andra ord visas värdet för skapare som en procentandel av antalet personer som har åtkomst till OneDrive eller SharePoint.
     
-1. **Länka till resurser:** Välj den här länken om du vill visa sorterade videoklipp och annat relaterat hjälp innehåll.
+1. **Länk till resurser:** Välj den här länken om du vill visa sorterade videoklipp och annat relaterat hjälpinnehåll.
 
 
-#### <a name="trend-visualization-of-primary-insight"></a>Trend visualisering av huvudsaklig insikt
+#### <a name="trend-visualization-of-primary-insight"></a>Trendvisualisering av primär insyn
 
-Diagrammet trend visualiseringar visar trenden för de främsta huvud viktiga måtten för läsarna för läsare, skapare och kollegor under de senaste 180 dagarna. Varje data punkt i diagrammet är en mängd aktivitet under de senaste 28 dagarna. Varje skapad data punkt innehåller många personer som har märkts som skapare under de senaste 28 dagarna för varje datum på x-axeln.
+Diagrammet med trendvisualiseringar visar trendlinjen för mäteten av primärinsikter för läsare, skapare och medarbetare under de senaste 180 dagarna. Varje datapunkt i diagrammet är en mängd aktiviteter för de senaste 28 dagarna. Varje datapunkt för skapare ger antalet personer som har taggats som skapare under de senaste 28 dagarna för varje datum på x-axeln.
 
-:::image type="content" source="../../media/trendvisualization.jpg" alt-text="Diagram med trender för huvud samarbete.":::
+:::image type="content" source="../../media/trendvisualization.jpg" alt-text="Diagram med trender för den viktigaste samarbetsinsikten.":::
 
-### <a name="scoring-framework"></a>Poäng ramverk
+### <a name="scoring-framework"></a>Poängramverk
 
-Innehålls samarbets poängen för dina organisations mått på en agg regerings nivå (organisation), oavsett om de är konsekvent med att läsa, skapa eller samar beta på Office-filer, till exempel Word, Excel, PowerPoint, OneNote eller PDF, eller OneDrive eller SharePoint.
+Poäng för innehållssamarbete för organisationens åtgärder på en mängdnivå (organisation) oavsett om personer konsekvent läser, skapar eller samarbetar i Office-filer online, till exempel Word, Excel, PowerPoint, OneNote eller PDF-filer, eller i OneDrive eller SharePoint.
 
-Poängen tillhandahålls inte på individuell användar nivå.
+Resultat tillhandahålls inte på användarnivå.
 
 
-## <a name="explore-how-your-organization-collaborates"></a>Lär dig hur organisationen samarbetar
+## <a name="explore-how-your-organization-collaborates"></a>Utforska hur din organisation samarbetar
 
-Vi tillhandahåller också information som hjälper dig att få en överblick över hur organisationen samarbetar med innehåll. Dessa ytterligare mått bidrar inte direkt till din produktivitets poäng, men hjälper dig att skapa en åtgärds Plans plan som en del av den digitala omvandlingen för att optimera hur folk fungerar.
+Vi ger dig även information som hjälper dig att se hur din organisation samarbetar om innehåll. Måtten bidrar inte direkt till ditt Produktivitetsresultat, utan hjälper dig att skapa en handlingsplan som en del av din digitala omvandling för att optimera hur människor arbetar.
 
-### <a name="creating-files-in-onedrive-or-sharepoint"></a>Skapa filer på OneDrive eller SharePoint
+### <a name="creating-files-in-onedrive-or-sharepoint"></a>Skapa filer i OneDrive eller SharePoint
 
-:::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="Diagram som visar antalet personer som skapar filer på OneDrive eller SharePoint":::
+:::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="Diagram som visar antalet personer som skapar filer i OneDrive eller SharePoint":::
 
-1. **Sidhuvud:** Markerar procent andelen personer som är aktiva i Microsoft 365 Office-program som skapar filer på OneDrive eller SharePoint.
-2. **Brödtext:** Innehåller information om värdet på skapa innehåll i OneDrive och SharePoint.
-3. **Visualisering:** Fördelningen i visualiseringen representerar hur många personer som använder Microsoft Office-program för att skapa filer i OneDrive och SharePoint, enligt följande:
-      - **OneDrive:** Den blå (färgade) delen av stapeln och bråket i fältet representerar procent av personer som är aktiva i Office-program som skapar innehåll på OneDrive på följande sätt:
-        - Täljare: antalet personer som skapar, ändrar, laddar upp, synkroniserar, checkar in, kopierar eller flyttar online Office-filer i OneDrive under de senaste 28 dagarna.</br>
-        - Nämnare: antalet personer som har åtkomst till OneDrive eller SharePoint och åtkomst till Office-filer under de senaste 28 dagarna.
-      - **SharePoint:** Den blå (färgade) delen av stapeln och bråket i fältet representerar procent av personer som är aktiva i Office-program och skapar innehåll på SharePoint som:</br>
-         - Täljare: antalet personer som skapar, ändrar, laddar upp, synkroniserar, checka in, kopierar eller flyttar online Office-filer (Microsoft Word-, Excel-, PowerPoint-eller OneNote-filer) på SharePoint under de senaste 28 dagarna.</br>
-        - Nämnare: antalet personer som har åtkomst till OneDrive eller SharePoint och som har åtkomst till Office-filer under de senaste 28 dagarna.
+1. **Sidhuvud:** Markerar hur många procent av de personer som är aktiva i Microsoft 365 Office-program som skapar filer på OneDrive eller SharePoint.
+2. **Brödtext:** Innehåller information om värdet för att skapa innehåll i OneDrive och SharePoint.
+3. **Visualisering:** Detaljfördelningen i visualiseringen visar i vilken utsträckning personer som använder Microsoft Office-appar för att skapa filer i OneDrive och SharePoint, enligt följande:
+      - **OneDrive:** Den blå delen (färgad) av stapeln och bråket i stapeln representerar hur många personer som är aktiva i Office-program som skapar innehåll på OneDrive enligt följande:
+        - Täljare: Antalet personer som skapar, ändrar, laddar upp, synkroniserar, checkar in, kopierar eller flyttar Office-filer online i OneDrive under de senaste 28 dagarna.</br>
+        - Nämnare: Antalet personer som har åtkomst till OneDrive eller SharePoint och kommer åt office-filer under de senaste 28 dagarna.
+      - **SharePoint:** Den blå delen (färgade) på stapeln och bråket i stapeln representerar hur många procent av personerna som är aktiva i Office-program och skapar innehåll i SharePoint som:</br>
+         - Täljare: Antalet personer som skapar, ändrar, laddar upp, synkroniserar, checkar in, kopierar eller flyttar Office-filer online (Microsoft Word-, Excel-, PowerPoint- eller OneNote-filer) på SharePoint under de senaste 28 dagarna.</br>
+        - Nämnare: Antalet personer som har åtkomst till OneDrive eller SharePoint och har åtkomst till Office-filer under de senaste 28 dagarna.
 
-4. **Länka till resurser:** Välj den här länken om du vill visa hjälp innehåll.
+4. **Länk till resurser:** Välj den här länken om du vill visa hjälpinnehåll.
 
-### <a name="use-of-attachments-in-email"></a>Använda bilagor via e-post
+### <a name="use-of-attachments-in-email"></a>Användning av bifogade filer i e-post
 
 :::image type="content" source="../../media/emailattachments.png" alt-text="Användning av e-postbilagor.":::
 
-1. **Sidhuvud:** Markerar procent andelen personer som använder bilagor i e-postmeddelanden som inte sparats i OneDrive eller SharePoint.
-2. **Brödtext:** Innehåller information om värdet för att dela länkar till online-filer från ett samarbete och säkerhets perspektiv.
-3. **Visualisering:** Fördelningen i visualiseringen är avsedd att representera i vilken utsträckning de personer som bifogar innehåll i e-post använder olika lägen (filer som inte finns på OneDrive eller SharePoint, länkar till online-filer och länkar som är inbäddade i e-postmeddelandet):
-      - **Bifoga filer:** Den blå (färgade) delen av stapeln och bråket (täljare/nämnare) i stapeln representerar procent av personer som använder bilagor i e-postmeddelanden.
-        - Täljare: antalet personer som bifogar filer till e-post som inte sparats på OneDrive eller SharePoint under de senaste 28 dagarna.
-        - Nämnare:  nämnare: antalet personer som har haft åtkomst till Exchange och OneDrive, SharePoint eller båda under de senaste 28 dagarna.
-      - **Länkar till online-filer:** Den blå (färgade) delen av stapeln och bråket (täljare/nämnare) i fältet representerar procent andelen personer som använder bifogade filer och länkar till filer i e-postmeddelanden.
-        - Täljare: antalet personer som ansluter länkar till online-filer (sparas till OneDrive eller SharePoint) till e-postmeddelanden inom de senaste 28 dagarna.
-        - Nämnare:  nämnare: antalet personer som har till gång till Exchange och OneDrive, SharePoint eller båda under de senaste 28 dagarna.
-      - **Bädda in länkar i e-post:** Den blå (färgade) delen av stapeln och bråket i fältet representerar den andel personer som bäddar in länkar i e-postmeddelandets brödtext.
-        - Täljare: antalet personer som bäddar in länkar i bröd texten i e-postmeddelanden till online-filer (sparas på OneDrive eller SharePoint) under de senaste 28 dagarna.
-        - Nämnare:  nämnare: antalet personer som har till gång till Exchange och OneDrive, SharePoint eller båda under de senaste 28 dagarna.
-4. **Länka till resurser:** Välj den här länken om du vill visa hjälp innehåll.
+1. **Sidhuvud:** Markerar procentandelen personer som använder bifogade filer i e-postmeddelanden som inte har sparats på OneDrive eller SharePoint.
+2. **Brödtext:** Innehåller information om värdet av att dela länkar till onlinefiler ur samarbets- och säkerhetsperspektiv.
+3. **Visualisering:** Fördelningen i visualiseringen är avsedd att representera i vilken utsträckning personer som bifogar innehåll i e-postmeddelanden använder olika lägen (filer som inte finns på OneDrive eller SharePoint, länkar till onlinefiler och länkar inbäddade i e-postmeddelandet):
+      - **Bifoga filer:** Den blå (färgade) delen av stapeln och bråket (täljare/nämnare) i fältet representerar procentandelen personer som använder bifogade filer i e-postmeddelanden.
+        - Täljare: Antalet personer som bifogar filer i e-postmeddelanden som inte har sparats i OneDrive eller SharePoint under de senaste 28 dagarna.
+        - Nämnare:  Nämnare: Antalet personer som har haft tillgång till Exchange och OneDrive, SharePoint eller både och under de senaste 28 dagarna.
+      - **Länkar till onlinefiler:** Den blå (färgade) delen av stapeln och bråket (täljare/nämnare) i fältet representerar procentandelen personer som använder bifogade filer och bifogar länkar till filer i e-postmeddelanden.
+        - Täljare: Antalet personer som bifogar länkar till onlinefiler (sparas i OneDrive eller SharePoint) i e-postmeddelanden under de senaste 28 dagarna.
+        - Nämnare:  Nämnare: Antalet personer som har tillgång till Exchange och OneDrive, SharePoint eller både och under de senaste 28 dagarna.
+      - **Bädda in länkar i e-postmeddelanden:** Den blå delen (färgad) av stapeln och bråket i stapeln representerar procentandelen personer som bäddar in länkar i brödtexten i e-postmeddelandena.
+        - Täljare: Antalet personer som bäddar in länkar i brödtexten i e-postmeddelanden till onlinefiler (sparas på OneDrive eller SharePoint) under de senaste 28 dagarna.
+        - Nämnare:  Nämnare: Antalet personer som har tillgång till Exchange och OneDrive,SharePoint eller både och under de senaste 28 dagarna.
+4. **Länk till resurser:** Välj den här länken om du vill visa hjälpinnehåll.
 
-### <a name="sharing-of-online-files"></a>Delning av online-filer
+### <a name="sharing-of-online-files"></a>Delning av onlinefiler
 
 :::image type="content" source="../../media/sharingonlinefiles.png" alt-text="Diagram som visar antalet personer som delar filer online.":::
 
-1. **Sidhuvud:** Markerar procent andelen personer som har åtkomst till för OneDrive eller SharePoint som delar filer externt.
-2. **Brödtext:** Ger information om administratörs&#39; möjlighet att ändra inställningar för fildelning i organisationen så att den passar bäst för din organisation.
-3. **Visualisering:** Visar i vilken utsträckning de personer som har åtkomst till OneDrive eller SharePoint delar filer internt eller externt:
-      - **Externt:** Den blå (färgade) delen av stapeln och bråket (täljare/nämnare) i stapeln representerar den procent av personer som har åtkomst till OneDrive eller SharePoint och som delar filer externt.
-        -  Täljare: antalet personer som har delat filer externt med de senaste 28 dagarna
-        - Nämnare: det totala antalet personer som har haft åtkomst till OneDrive eller SharePoint för minst en av de senaste 28 dagarna.
-      - **Endast internt:** Den blå (färgade) delen av stapeln och bråket (täljare/nämnare) i fältet representerar den andel av personer som har åtkomst till OneDrive eller SharePoint och bara delar filer.
-        - Täljare: antalet personer som endast har delade filer inom 28 dagar
-        - Nämnare: det totala antalet personer som har haft åtkomst till OneDrive eller SharePoint för minst en av de senaste 28 dagarna.
-4. **Länka till resurser:** Välj den här länken om du vill visa hjälp innehåll.
+1. **Sidhuvud:** Markerar procentandelen personer som har åtkomst till för OneDrive eller SharePoint som delar filer externt.
+2. **Brödtext:** Innehåller information om vilka administratörer&#39; möjlighet att ändra organisationens fildelningsinställningar för att göra det möjligt att samarbeta på det sätt som passar din organisation bäst.
+3. **Visualisering:** Visar i vilken utsträckning personer som har åtkomst till OneDrive eller SharePoint delar filer internt eller externt:
+      - **Externt:** Den blå (färgade) delen av stapeln och bråket (täljare/nämnare) i fältet representerar den procentandel av personer som har åtkomst till OneDrive eller SharePoint och delar filer externt.
+        -  Täljare: Antalet personer som har delat filer externt med de senaste 28 dagarna
+        - Nämnare: Det totala antalet personer som har haft tillgång till OneDrive eller SharePoint under minst 1 av de senaste 28 dagarna.
+      - **Endast internt:** Den blå (färgade) delen av stapeln och bråket (täljare/nämnare) i fältet representerar den procentandel av personer som har åtkomst till OneDrive eller SharePoint och endast delar filer internt.
+        - Täljare: Antalet personer som har delat filer internt bara under de senaste 28 dagarna
+        - Nämnare: Det totala antalet personer som har haft tillgång till OneDrive eller SharePoint under minst 1 av de senaste 28 dagarna.
+4. **Länk till resurser:** Välj den här länken om du vill visa hjälpinnehåll.
 
-### <a name="number-of-files-collaborated-on"></a>Antal filer som samar beta på
+### <a name="number-of-files-collaborated-on"></a>Antalet filer som samarbetats på
 
-:::image type="content" source="../../media/intensityofcollab.png" alt-text="Diagram som visar hur många filer som var mest samarbetade med.":::
+:::image type="content" source="../../media/intensityofcollab.png" alt-text="Diagram som visar hur många filer som samarbetades mest.":::
 
-1. **Sidhuvud:** Detta markerar hur många procent av personer som har åtkomst till OneDrive eller SharePoint som samarbetar med 4 eller fler filer.
-2. **Brödtext:** Här finns information om hur andra kan utnyttja online-filer för bättre samarbete.
-3. **Visualisering:** Då visas en distribution av de personer som har åtkomst till OneDrive eller SharePoint, baserat på hur många filer de samarbetar med. Detta visas genom följande fyra kategorier (för varje, den blå delen av stapeln och bråket representerar procent av personer som har åtkomst till OneDrive eller SharePoint som tillhör kategorin):
+1. **Sidhuvud:** Detta visar hur många procent av personer som har åtkomst till OneDrive eller SharePoint som samarbetar i fyra eller fler filer.
+2. **Brödtext:** Det ger information om hur människor kan utnyttja onlinefiler för bättre samarbete.
+3. **Visualisering:** Här visas en distribution av de personer som har åtkomst till OneDrive eller SharePoint, baserat på antalet filer som de samarbetar i. Det här visas i följande 4 kategorier (för var och en representerar den blå delen av stapeln och bråktalet den procentandel av personer som har åtkomst till OneDrive eller SharePoint som faller under den kategorin):
       - **Inget samarbete:**
-        - **Täljare:** Antalet personer som inte samarbetar med några filer under de senaste 28 dagarna
-        - **Nämnare:** Det totala antalet personer som har åtkomst till OneDrive eller SharePoint för minst 1 av de senaste 28 dagarna.
-      - **Samarbete för 1-3-filer:**
-        - **Täljare:** Antalet personer som samarbetar på 1-3-filer under de senaste 28 dagarna.
-        - **Nämnare:** Det totala antalet personer som har haft åtkomst till OneDrive eller SharePoint för minst 1 av de senaste 28 dagarna.
-      - **Samarbete för 4-10-filer:**
-        - **Täljare:** Antalet personer som samarbetar på 4-10-filer under de senaste 28 dagarna
-        - **Nämnare: det** totala antalet personer som har haft åtkomst till OneDrive eller SharePoint för minst en av de senaste 28 dagarna.
-      - **Samarbete på 11 eller fler filer:**
-        - **Täljare:** Antalet personer som samarbetar på 11 eller fler filer under de senaste 28 dagarna
-        - **Nämnare:** Det totala antalet personer som har haft åtkomst till OneDrive eller SharePoint för minst 1 av de senaste 28 dagarna.
+        - **Täljare:** Antalet personer som inte samarbetar i några filer de senaste 28 dagarna
+        - **Nämnare:** Det totala antalet personer som har åtkomst till OneDrive eller SharePoint under minst 1 av de senaste 28 dagarna.
+      - **Samarbete med 1–3 filer:**
+        - **Täljare:** Antalet personer som samarbetar i 1–3 filer de senaste 28 dagarna.
+        - **Nämnare:** Det totala antalet personer som har haft tillgång till OneDrive eller SharePoint under minst en av de senaste 28 dagarna.
+      - **Samarbete med 4–10 filer:**
+        - **Täljare:** Antalet personer som samarbetar i 4–10 filer de senaste 28 dagarna
+        - **Nämnare: Det** totala antalet personer som har haft tillgång till OneDrive eller SharePoint under minst 1 av de senaste 28 dagarna.
+      - **Samarbete i 11 eller fler filer:**
+        - **Täljare:** Antalet personer som samarbetar i 11 eller fler filer de senaste 28 dagarna
+        - **Nämnare:** Det totala antalet personer som har haft tillgång till OneDrive eller SharePoint under minst en av de senaste 28 dagarna.
         
-4. **Länka till resurser:** Välj den här länken om du vill visa hjälp innehåll.
+4. **Länk till resurser:** Välj den här länken om du vill visa hjälpinnehåll.
 
-### <a name="network-performance-strength-for-onedrive-and-sharepoint"></a>Nätverks prestanda styrka för OneDrive och SharePoint
+### <a name="network-performance-strength-for-onedrive-and-sharepoint"></a>Nätverksprestandastyrkan för OneDrive och SharePoint
 
-:::image type="content" source="../../media/networkperfstrength.png" alt-text="Diagram som visar nätverks prestanda för OneDrive och SharePoint.":::
+:::image type="content" source="../../media/networkperfstrength.png" alt-text="Diagram som visar nätverksprestanda för OneDrive och SharePoint.":::
 
-1. **Sidhuvud:** Markerar procent andelen enheter som testas av alla testade och som har dålig nätverks anslutning till OneDrive och SharePoint. 
-2. **Brödtext:** Innehåller information om varför nätverks anslutnings prestanda är viktig för samarbete. 
-3. **Visualisering:** visar en procent andel av enheter med olika nätverks anslutnings prestanda som är relaterade till OneDrive och SharePoint:
-      - **81-100 (bäst)**: den mörkgrå gröna (färgade) delen av stapeln representerar procent av enheter med bästa prestanda.
-      - **61-80**: den gröna (färgade) delen av stapeln representerar procent av enheter med nätverks prestanda poäng mellan 60-80. 
-      - **41-60**: den orange delen av stapeln representerar procent av enheter med nätverks prestanda poäng mellan 40-60. 
-      - **21-40**: den röda (färgade) delen av stapeln representerar procent av enheter med nätverks prestanda poäng mellan 20-40. 
-      - **0-20**: den mörka röda delen av stapeln representerar procent av enheter med sämsta nätverks prestanda poäng mellan 0-20. 
+1. **Sidhuvud:** Markerar procentandelen enheter av alla testats som har dålig nätverksanslutning till OneDrive och SharePoint. 
+2. **Brödtext:** Innehåller information om varför nätverksanslutningsprestanda är viktig för samarbete. 
+3. **Visualisering:** Visar en procentandel av enheter med olika nivåer av nätverksanslutningsprestanda som är relaterad till OneDrive och SharePoint:
+      - **81–100 (bäst)**: Den mörkgröna delen (färgad) i stapeln representerar procentandel enheter med bästa prestanda.
+      - **61–80:** Den gröna (färgade) delen av stapeln representerar procentandel enheter med nätverksprestandaresultat mellan 60–80. 
+      - **41–60**: Den orange (färgade) delen av stapeln representerar procentandel enheter med nätverksprestandaresultat mellan 40–60. 
+      - **21–40:** Den röda delen (färgade) i stapeln representerar procentandel enheter med nätverksprestandaresultat mellan 20 och 40. 
+      - **0–20**: Den mörkröda delen (färgad) i stapeln representerar procentandel enheter med sämsta nätverksprestandaresultat mellan 0 och 20. 
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Microsoft 365-appar hälsa – teknik upplevelser](apps-health.md) (artikel) \
-[Kommunikation – människor upplever](communication.md) (artikel) \
-[Möten – människor upplever](meetings.md) (artikel) \
-[Rörlighet – människor upplever](mobility.md) (artikel) \
-[Integritets inställningar för produktivitets Poäng](privacy.md) (artikel) \
-[Samarbete – människor upplever](teamwork.md) (artikel)
+[Hälsa för Microsoft 365-appar – Teknikupplevelser](apps-health.md) (artikel)\
+[Kommunikation – Personers upplevelser](communication.md) (artikel)\
+[Möten – Upplevelser för personer](meetings.md) (artikel)\
+[Mobility – People experiences](mobility.md) (artikel)\
+[Sekretesskontroller för Productivity Score](privacy.md) (artikel)\
+[Teamwork – Personliga upplevelser](teamwork.md) (artikel)

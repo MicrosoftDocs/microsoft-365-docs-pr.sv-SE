@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b490159d12bebdb95b6f168671393f8939da33be
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ee6fd4bd8d60f828bb474fc80cb987f4f94edcbe
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076713"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581100"
 ---
 # <a name="overview-of-microsoft-defender-security-center"></a>Översikt över Microsoft Defender Säkerhetscenter
 
@@ -46,7 +46,7 @@ Använd **instrumentpanelen för hotanalys** för att kontinuerligt bedöma och 
 ## <a name="microsoft-defender-for-endpoint-interactive-guide"></a>Interaktiv guide för Microsoft Defender för Slutpunkt
 I den här interaktiva guiden får du lära dig att undersöka hot mot din organisation med Microsoft Defender för Slutpunkt. Du ser hur Microsoft Defender för Endpoint kan hjälpa dig att identifiera misstänkta aktiviteter, undersöka risker för din organisation och åtgärda hot.
 
-> [!VIDEO https://aka.ms/MSDE-IG]
+[Ta en titta på den interaktiva guiden](https://aka.ms/MSDE-IG)
 
 ### <a name="in-this-section"></a>I det här avsnittet
 
