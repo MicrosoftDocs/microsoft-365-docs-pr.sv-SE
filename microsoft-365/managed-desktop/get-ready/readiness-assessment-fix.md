@@ -1,7 +1,7 @@
 ---
 title: Åtgärda problem som hittats av verktyget för bedömning av beredskap
 description: Detaljerade åtgärder som ska vidtas för varje problem som verktyget hittar
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 75c2967037ae83abca2aaa3cd02d1f6b2ae14caa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 5a22996ce9e39dc16191ddddc6aa9393de557bbc
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925922"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579416"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Åtgärda problem som hittats av verktyget för bedömning av beredskap
 
@@ -328,7 +329,7 @@ Förutom de användare som har tilldelats Azure AD-roller som global administrat
 
 Microsoft Managed Desktop-användare har inte lokal administratörsbehörighet på sina Microsoft Managed Desktop-enheter när de har registrerat sig.
 
-## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365-appar för företag
+## <a name="microsoft-365-apps-for-enterprise"></a> Microsoft 365 Apps för företag
 
 ### <a name="onedrive"></a>OneDrive
 

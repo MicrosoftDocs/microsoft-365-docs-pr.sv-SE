@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365-rapporter i administrations Center – användning av Microsoft 365-appar
-ms.author: sirkkuw
-author: sirkkuw
+title: Microsoft 365-rapporter i administrationscentret – användning av Microsoft 365-appar
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -17,43 +17,43 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: Lär dig hur du skaffar en Microsoft 365-app för användnings rapport med instrument panelen för Microsoft 365-rapporter i Microsoft 365 Admin Center.
-ms.openlocfilehash: 0c30cee0c1abd76553d3adfebebb8fe38e92c56a
-ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
+description: Läs om hur du får en rapport om Microsoft 365-appar för användning med instrumentpanelen Rapporter i Microsoft 365 i administrationscentret för Microsoft 365.
+ms.openlocfilehash: 88ef5e1291c35bbac050609e26e2ac5adef9d981
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611983"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579596"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Microsoft 365-rapporter i administrations Center – användning av Microsoft 365-appar
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Microsoft 365-rapporter i administrationscentret – användning av Microsoft 365-appar
 
-Instrument panelen för Microsoft 365- **rapporter** visar en översikt över produkterna i organisationen. Här kan du gå in på detaljnivå i rapporter för enskilda produkter för att få bättre insikter om aktiviteterna inom varje produkt. Ta en titt på [översiktsavsnittet för Rapporter](activity-reports.md).
+På instrumentpanelen Rapporter **i** Microsoft 365 ser du en översikt över aktiviteter i organisationens produkter. Här kan du gå in på detaljnivå i rapporter för enskilda produkter för att få bättre insikter om aktiviteterna inom varje produkt. Ta en titt på [översiktsavsnittet för Rapporter](activity-reports.md).
 
- Du kan till exempel förstå aktiviteten för varje användare som är licensierad för att använda Microsoft 365-appar genom att titta på deras aktivitet bland apparna och hur de används mellan olika plattformar.
+ Du kan till exempel få information om aktiviteten för varje användare som har en licens för att använda Microsoft 365-appar genom att titta på deras aktivitet i apparna och hur de används på olika plattformar.
 
 
  > [!NOTE]
- > Du måste vara global administratör, global läsare eller rapporter läsare i Microsoft 365 eller en Exchange-, SharePoint-eller Skype för företag-administratör för att se rapporter.
+ > Du måste vara global administratör, global läsare eller rapportläsare i Microsoft 365 eller Exchange-, SharePoint- eller Skype för företag-administratör för att kunna se rapporter.
 
-## <a name="how-to-get-to-the-microsoft-365-apps-usage-report"></a>Så här kommer du till rapporten om användning av Microsoft 365-appar
+## <a name="how-to-get-to-the-microsoft-365-apps-usage-report"></a>Öppna användningsrapporten för Microsoft 365-appar
 
 1. I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>. 
-2. Från instrument panelens start sida klickar du på knappen **Visa mer** på kortet aktiva användare-Microsoft 365-program.
+2. På startsidan för instrumentpanelen klickar du på **knappen Visa mer** på kortet Aktiva användare – Microsoft 365-appar.
 
-## <a name="interpret-the-microsoft-365-apps-usage-report"></a>Tolka rapport om användning av Microsoft 365-appar
+## <a name="interpret-the-microsoft-365-apps-usage-report"></a>Tolka användningsrapporten för Microsoft 365-appar
 
-Du kan få en vy i användarens Microsoft 365-program-aktivitet genom att titta på **användarna** och **plattforms** diagrammen.
+Du kan få en uppfattning om användarnas aktiviteter i Microsoft 365-appar genom att titta på **diagrammen Användare** **och** Plattform.
 
-![Microsoft 365 program rapport](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
+![Användningsrapport för Microsoft 365-appar](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
 
 |Objekt|Beskrivning|
  |:-----|:-----|
- |1. <br/> |**Användnings rapporten för Microsoft 365-apparna** kan ses för trender under de senaste 7, 30, 90 eller 180 dagar. Om du väljer en viss dag i rapporten visar tabellen (7) data för upp till 28 dagar från det aktuella datumet (inte det datum då rapporten genererades). <br/> |
- |2. <br/> |Informationen i varje rapport täcker vanligt vis upp till de senaste sju dagarna. <br/> |
- |3. <br/> |Vyn **användare** visar trenden för antalet aktiva användare för varje app – Outlook, Word, Excel, PowerPoint, OneNote och Teams. "Aktiva användare" är alla som utför avsiktliga åtgärder i dessa program. <br/> |
- |4. <br/> |Vyn **plattformar** visar trenden för aktiva användare i alla program för varje plattform – Windows, Mac, Internet och mobil. <br/> |
- |5.<br/>|I diagrammet **användare** är Y-axeln antalet unika aktiva användare för respektive app. I diagrammet **plattformar**   är Y-axeln antalet unika användare för respektive plattform. X-axeln i båda diagrammen är det datum då ett program användes på en viss plattform.<br/>|
- 18.6.<br/>|Du kan filtrera serien som visas i diagrammet genom att markera ett objekt i förklaringen. I diagrammet **användare** väljer du till exempel Outlook, Word, Excel, PowerPoint, OneDrive eller teams för att bara se informationen som hör till var och en. Om du ändrar den här markeringen ändras inte informationen i rutnäts tabellen nedanför den.|
- |borttagning.<br/>|I tabellen visas en uppdelning av data per användare. Du kan lägga till eller ta bort kolumner i tabellen. <br/><br/>**Username** är e-postadressen för den användare som utförde aktiviteten på Microsoft-appar.<br><br/>**Senaste aktiverings datum (UTC)** är det senaste datum då användaren aktiverade prenumerationen på Microsoft 365-apparna.<br/><br/>**Datum för senaste aktivitet (UTC)** är det senaste datum då en avsiktlig aktivitet utfördes av användaren. Om du vill se aktivitet som inträffat på ett visst datum markerar du datumet direkt i diagrammet.<br/><br/>De andra kolumnerna anger om användaren varit aktiv på den plattformen för den programmet (i Microsoft 365-appar) i den valda perioden. |
- |8.2.<br/>|Välj ikonen **Välj kolumner** för att lägga till eller ta bort kolumner i rapporten.|
- |9.<br/>|Du kan också exportera rapport data till en Excel. csv-fil genom att välja **Exportera** -länken. Detta exporterar data för alla användare och gör att du kan utföra enkel agg regering, sortering och filtrering för ytterligare analyser. Om du har färre än 100 användare kan du sortera och filtrera i tabellen i rapporten. Om du har fler än 100 användare måste du exportera data för att kunna filtrera och sortera.|
+ |1. <br/> |I **användningsrapporten för Microsoft 365-appar** kan du se trender för de senaste 7, 30, 90 eller 180 dagarna. Men om du väljer en viss dag i rapporten visar tabellen (7) data för de senaste 28 dagarna (inte från det datum då rapporten skapades). <br/> |
+ |2. <br/> |Data i varje rapport täcker vanligtvis upp till de senaste sju dagarna. <br/> |
+ |3. <br/> |Vyn **Användare** visar trenden för antalet aktiva användare för varje app – Outlook, Word, Excel, PowerPoint, OneNote och Teams. "Aktiva användare" är alla användare som utför alla avsiktliga åtgärder i dessa appar. <br/> |
+ |4. <br/> |I **vyn** Plattformar visas trenden för aktiva användare i alla appar för varje plattform – Windows, Mac, Webben och Mobil. <br/> |
+ |5.<br/>|I **diagrammet** Användare visar Y-axeln antalet unika aktiva användare för respektive app. I **diagrammet Plattformar**   är Y-axeln antalet unika användare för respektive plattform. X-axeln i båda diagrammen är det datum då en app användes på en viss plattform.<br/>|
+ 6.<br/>|Du kan filtrera serierna du ser i diagrammet genom att välja ett objekt i förklaringen. Exempel: I diagrammet **Användare väljer** du Outlook, Word, Excel, PowerPoint, OneDrive eller Teams om du bara vill se den relaterade informationen. När du ändrar det här valet ändras inte informationen i rutnätstabellen nedanför den.|
+ |7.<br/>|I tabellen visas en uppdelning av data per användare. Du kan lägga till eller ta bort kolumner i tabellen. <br/><br/>**Användarnamn** är e-postadressen till den användare som utförde aktiviteten på Microsoft-appar.<br><br/>**Senaste aktiveringsdatum (UTC)** är det senaste datum då användaren aktiverade sin Microsoft 365 Apps-prenumeration.<br/><br/>**Datum för senaste aktivitet (UTC)** är det senaste datum då en avsiktlig aktivitet utfördes av användaren. Om du vill se aktivitet som inträffat på ett visst datum markerar du datumet direkt i diagrammet.<br/><br/>I de andra kolumnerna identifieras om användaren var aktiv på den plattformen för den appen (inom Microsoft 365-appar) under den valda perioden. |
+ |8.<br/>|Välj ikonen **Välj kolumner för** att lägga till eller ta bort kolumner i rapporten.|
+ |9.<br/>|Du kan också exportera rapportdata till en Excel-CSV-fil genom att välja **länken** Exportera. Då exporteras data för alla användare och du kan göra enkla aggregeringar, sortering och filtrering för vidare analys. Om du har mindre än 100 användare kan du sortera och filtrera i tabellen i själva rapporten. Om du har fler än 100 användare måste du exportera data för att kunna filtrera och sortera.|

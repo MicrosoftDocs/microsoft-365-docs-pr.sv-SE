@@ -1,9 +1,9 @@
 ---
-title: Skillnaden mellan installations guiden och inställnings sidan
+title: Skillnaden mellan installationsguiden och sidan Inställningar
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,30 +19,30 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: Lär dig skillnaden mellan installations guiden och inställnings sidan.
-ms.openlocfilehash: dd04920c1c686cd0082b0d3c11cc7869e5d3f4eb
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+description: Lär dig skillnaden mellan installationsguiden och sidan Inställningar.
+ms.openlocfilehash: 5e081df7800b5e1f3400f1525afddf2c230a13e4
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245931"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579116"
 ---
-# <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>Skillnaden mellan installations guiden och inställnings sidan
+# <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>Skillnaden mellan installationsguiden och sidan Inställningar
 
-Microsoft 365 har två installations program: 
+Microsoft 365 innehåller två konfigurationsupplevelser: 
 
-- Första konfigurationen med installations guiden
-- Pågående och avancerade inställningar med hjälp av sidan **konfiguration**
+- Första installationen med installationsguiden
+- Pågående och avancerade inställningar med **hjälp av sidan** Inställningar
 
-I installations guiden får du en guidad genom gång för att konfigurera den grundläggande Microsoft 365-konfigurationen. När du har slutfört den första installationen kan du gå till **inställnings** sidan för att slutföra installationen och konfigureringen av de tjänster som medföljer dina abonnemang.
+Installationsguiden ger en guidad genomgång för att konfigurera den grundläggande Microsoft 365-konfigurationen. När du har slutfört den första  konfigurationen kan du gå till sidan Inställningar och slutföra konfigurationen av de tjänster som följer med dina prenumerationer.
 
-## <a name="use-the-setup-wizard-to-complete-initial-setup-tasks"></a>Använd installations guiden för att slutföra inledande konfigurations uppgifter
+## <a name="use-the-setup-wizard-to-complete-initial-setup-tasks"></a>Använda installationsguiden för att slutföra de första installationsuppgifterna
 
-Konfigurera ditt konto genom att gå till [administrations centret](https://go.microsoft.com/fwlink/p/?linkid=2024339), välja **Inställningar** i det vänstra navigerings fönstret och sedan välja **interaktiv installation** på **inställnings** sidan.
+Om du vill konfigurera ditt konto går  du till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=2024339), väljer Inställningar i det vänstra navigeringsfönstret och väljer sedan **Guidad konfiguration** på **sidan Inställningar.**
 
-![Starta installations guiden för Microsoft 365-appar för företag](../../media/o365b-guided-setup.png)
+![Starta installationsguiden för Microsoft 365-appar för företag](../../media/o365b-guided-setup.png)
 
-Installations guiden vägleder dig på följande sätt:
+Installationsguiden vägleder dig genom följande steg:
 
 1. Installera Microsoft 365-programmen på datorn.
 
@@ -52,20 +52,20 @@ Installations guiden vägleder dig på följande sätt:
 
 4. Anslut din domän.
 
-## <a name="use-the-setup-page-to-complete-and-manage-your-configuration"></a>Använda sidan konfiguration för att slutföra och hantera din konfiguration
+## <a name="use-the-setup-page-to-complete-and-manage-your-configuration"></a>Använda konfigurationssidan för att slutföra och hantera konfigurationen
 
-För att komma åt sidan **Inställningar** i [administrations centret](https://go.microsoft.com/fwlink/p/?linkid=2024339)väljer du **Inställningar** i navigerings fönstret. Utifrån produkter som du har köpt, funktioner som du har konfigurerat och administratörs rollen, uppgifter och relaterad information från Microsoft 365 finns här.
+För att komma **åt** sidan Inställningar [i administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=2024339)väljer **du Konfigurera** i navigeringsfönstret. Här visas funktioner som du har skapat utifrån produkter du har köpt, och din administratörsroll, uppgifter och relaterad information från hela Microsoft 365 visas här.
 
-Den fullständiga listan över konfigurations uppgifter ordnas i logiska kategorier, inklusive de som du har slutfört i installations guiden.
+En fullständig lista över konfigurationsaktiviteter visas i logiska kategorier, inklusive uppgifter som du har slutfört i installationsguiden.
 
-![Installations sida för Microsoft 365 för företag](../../media/o365b-setup-page.png)
+![Konfigurationssidan för Microsoft 365 för företag](../../media/o365b-setup-page.png)
 
-Välj **Visa** för en uppgift för att få en snabb överblick över informationen, till exempel aktivitets beskrivning, användarens påverkan, förutsättningar, ansträngning att implementera och säkerhets-och antagande statistik som hjälper dig att förstå konsekvenserna och konsekvenserna innan du fortsätter.
+Välj  Visa för valfri uppgift om du vill få en snabb överblick över information, till exempel uppgiftsbeskrivning, användarkonsekvens, förutsättningar, arbete för att implementera samt säkerhets- och införandestatistik som hjälper dig att förstå konsekvenser och påverkan innan du fortsätter.
 
-Du ser också aktivitetens status (**startat**, **inte påbörjat**, eller **slutfört**). Om du arbetar med flera aktiviteter samtidigt, eller om det finns flera administratörer som arbetar med aktiviteter, kan du spåra slutförandet genom att se hur snabbt de är och vilka som kräver åtgärd. 
+Du ser också aktivitetens status(Startad, **Inte påbörjat ännu** eller **Slutförd**). Om du arbetar med flera uppgifter, arbetar med uppgifter under flera dagar eller om det finns flera administratörer som arbetar med aktiviteter kan du snabbt se vilka uppgifter som har slutförts och vilka som fortfarande behöver uppmärksammas. 
 
-Om du vill ha till gång till omfattande artiklar om de funktioner som du installerar väljer du någon av länkarna för **Mer information** . Mängden uppgifter är alltid här, så du kan återgå till **inställnings** sidan när som helst för att utforska resurserna.
+Om du vill få tillgång till omfattande artiklar om de funktioner som du håller på att konfigurera väljer du någon av **länkarna i Läs** mer. Aktivitetssamlingen finns alltid här, så du  kan när som helst gå tillbaka till sidan Konfigurera om du vill utforska resurserna ytterligare.
 
-När du är redo att slutföra en aktivitet väljer du **komma igång** för att gå igenom konfigurations processen. När du är klar med en uppgift ändras knappen **Kom igång** till knappen **Hantera** , vilket gör att du kan hantera uppgiften, efter behov.
+När du är redo att slutföra en uppgift väljer du **Kom igång** och går igenom konfigurationsprocessen. När du har slutfört en uppgift ändras  **knappen** Komma igång till knappen Hantera, så att du kan hantera uppgiften efter behov.
 
-![Vyn aktivitet som visar en snabb information](../../media/o365b-at-a-glance.png)
+![Aktivitetsvyn med snabb överblick över information](../../media/o365b-at-a-glance.png)

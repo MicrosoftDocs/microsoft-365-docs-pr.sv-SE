@@ -15,21 +15,14 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Lär dig hur du arbetar med Microsoft-certifierade lösningsleverantörer (partners) för att köpa och hantera produkter och tjänster för din organisation eller skola.
-ms.openlocfilehash: 3297b2322983eabb793116a450a618b3a62a5a9c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a0c70f229ff11132beccf118f4158ab2880a8aa6
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911404"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579740"
 ---
 # <a name="manage-partner-relationships"></a>Hantera partnerrelationer
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Du kan samarbeta med Microsoft-certifierade lösningsleverantörer (partners) för att köpa och hantera produkter och tjänster för din organisation eller skola. Det ingår några steg i att konfigurera saker.
 

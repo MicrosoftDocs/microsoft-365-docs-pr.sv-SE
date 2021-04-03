@@ -1,9 +1,9 @@
 ---
-title: Microsoft produktivitets Poäng – möten
+title: Microsoft Productivity Score – möten
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,133 +18,133 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: Information om möten-människor upplever produktivitets poäng.
-ms.openlocfilehash: 09b0682593c0e5a623e9b17712754c4bea2a6672
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+description: Information om möten – personernas produktivitetsresultat.
+ms.openlocfilehash: 803173fbbd8489802b3a3c9c11473918e0d7a858
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712549"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579188"
 ---
-# <a name="meetings--people-experiences"></a>Möten – folk upplevelse
+# <a name="meetings--people-experiences"></a>Möten – upplevelser för människor
 
-Produktivitets Poäng tillhandahåller insikter i organisationens digitala Transformation-resa via dess användning av Microsoft 365 och de teknik funktioner som stöder det. Din organisations Poäng återspeglar funktionerna för folk-och teknik upplevelse och kan jämföras med benchmarks från organisationer som liknar ditt. Kategorin möten är en del av folks måtten. Mer information finns i [Översikt över produktivitets Poäng](productivity-score.md) och Läs [Microsofts sekretess policy](https://privacy.microsoft.com/privacystatement).
+Produktivitetsresultatet ger insikter om organisationens digitala omvandlingsresa genom användningen av Microsoft 365 och de teknikupplevelser som stöder det. Organisationens resultat återspeglar mätvärden för personer och teknikupplevelse och kan jämföras med riktmärken från organisationer som påminner om din. Möteskategorin är en del av åtgärderna för personer. Mer information finns i översikten [över Productivity Score](productivity-score.md) och [Microsofts sekretesspolicy.](https://privacy.microsoft.com/privacystatement)
 
-## <a name="prerequisites"></a>Förutsättningar
+## <a name="prerequisites"></a>Krav
 
-För att komma igång med Mötes syn måste personer i din organisation vara licensierade för:
+För att komma igång med mötesinsikter måste personer i organisationen vara licensierade för:
 
 - Microsoft Teams
 
-Mer information finns i [tilldela licenser till användare](../manage/assign-licenses-to-users.md).
+Mer information finns i [tilldela licenser till användare.](../manage/assign-licenses-to-users.md)
 
-När personer har varit aktiva i Teams minst en gång under de senaste 28 dagarna visas insikter.
+Efter att personer har varit aktiva i Teams minst en gång under de senaste 28 dagarna börjar du se insikterna.
 
-## <a name="why-your-organizations-meetings-score-matters"></a>Orsaken till att organisationens möten Poäng
+## <a name="why-your-organizations-meetings-score-matters"></a>Därför är organisationens mötesresultat viktiga
 
-Möten, där folk utforskar idéer, planerar, löser problem och fattar beslut, är ett grundläggande träd för organisationens produktivitet. Forskningen visar att när personer använder verktyg för onlinemöte är det bara att spara upp till 104 minuter per vecka. Se [beviset](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+Möten, där människor utforskar idéer, planerar, löser problem och fatta beslut, är en grundläggande fråga för organisationens produktivitet. Efterforskningar anger att när personer använder verktyg för onlinemöte effektivt brukar de spara upp till 104 minuter per vecka. Se [bevisen](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-## <a name="how-we-calculate-the-meetings-score"></a>Så här beräknas Mötes poängen
+## <a name="how-we-calculate-the-meetings-score"></a>Så här räknar vi ut mötesresultatet
 
-Vi tillhandahåller en huvudsaklig inblick i upplevelsen som innehåller de viktigaste måtten för kategorin. Då används Poäng ramverket nedan för de här måtten för att beräkna organisationens poäng.
+Vi ger en primär insyn i upplevelsen som innehåller nyckeltal för den här kategorin. Sedan används ett poängramverk, som anges nedan, för dessa mått för att beräkna din organisations poäng.
 
-### <a name="primary-insight"></a>Huvudsaklig insikt
+### <a name="primary-insight"></a>Primär insyn
 
-Microsoft Teams är integrerat med Outlook kalender och ger en mängd funktioner som gör att dina möten blir mer intressanta och effektiva. Den främsta inblicken är en titt på alla Microsoft Teams online-möten som hölls i din organisation. Huvud inblicken håller också reda på hur många möten som följer minst en av de bästa metoderna för team möten.
+Microsoft Teams är integrerat med Outlook-kalendern och har en mängd funktioner som gör dina möten mer engagerande och effektiva. Den primära insikten tittar på alla onlinemöten i Microsoft Teams som har anordnats i din organisation. Den primära insikten spårar också hur många möten som följer minst en av metodtipsen för Teams-möten.
 
-:::image type="content" source="../../media/primaryinsights-meetings.png" alt-text="Primära insikter för möten med metod tips.":::
+:::image type="content" source="../../media/primaryinsights-meetings.png" alt-text="PRimary insikter för möten med metodtips.":::
 
-1. **Sidhuvud:** Visar procent andelar online-möten i Microsoft Teams under de senaste 28 dagarna med video-eller skärm delning under mötet.
-2. **Brödtext:** Här får du mer information om hur du följer de bästa metoderna för engagemang under ett möte, till exempel användning av video-eller skärm delning, för att göra möten mer effektiva.
-3. **Visualisering (nuvarande tillstånd):**
+1. **Sidhuvud:** Visar procentandelen onlinemöten i Microsoft Teams som anordnats de senaste 28 dagarna som haft video- eller skärmdelning under mötet.
+2. **Brödtext:** Innehåller mer information om hur följande metodtips för engagemang under ett möte, till exempel användning av video eller skärmdelning, kan göra möten mer effektiva.
+3. **Visualisering (aktuell status):**
 
-      - I det här vågräta stapeldiagrammet representerar den blå (färgade) delen den procents ATS som visas i sidhuvudet
-      - Bråket (täljare/nämnare) används för att beräkna procent satsen som visas i sidhuvudet
-         - Täljare: antalet online-möten i Microsoft Teams, inklusive personer från din organisation som har använt video-eller skärm delning.
-         - Nämnare: antalet online-möten i Microsoft Teams, inklusive personer från din organisation som hölls under de senaste 28 dagarna.
-      - Det främsta värdet för peer-prestandatest visas också som en procents ATS.
-1. **Länka till resurser:** Välj den här länken om du vill visa hjälp innehåll.
+      - I det här vågräta liggande stapeldiagrammet representerar den blå delen (färgade) procentandelen som visas i rubriken
+      - Bråktalet (täljare/nämnare) används för att beräkna det procenttal som visas i rubriken
+         - Täljare: Antalet Microsoft Teams-onlinemöten, inklusive personer från din organisation som har använt video- eller skärmdelning.
+         - Nämnare: Antalet Microsoft Teams-onlinemöten, inklusive personer från din organisation som anordnats de senaste 28 dagarna.
+      - Peer-prestandavärdet för det viktiga mätvärdet visas också som procent.
+1. **Länk till resurser:** Välj den här länken om du vill visa hjälpinnehåll.
 
-#### <a name="trend-visualization-of-the-primary-insight"></a>Trend visualisering av huvudsaklig insikt
+#### <a name="trend-visualization-of-the-primary-insight"></a>Trendvisualisering av den primära insikten
 
-Följande diagram visar trenden för både täljaren och nämnaren i det viktigaste måttet från den primära inblicken. Med andra ord visar den antalet online-möten i Microsoft Teams med rekommendationer, till exempel video-eller skärm delning, och det totala antalet Microsoft Teams-möten som hålls under de senaste 180 dagarna. Varje data punkt i linje diagrammet är en mängd aktivitet under de senaste 28 dagarna.
+I följande diagram visas trendlinjerna för både täljaren och nämnaren för nyckelmåttet från den primära insikten. Med andra ord visas antalet Microsoft Teams-onlinemöten med metodtips, till exempel video- eller skärmdelning, och det totala antalet Microsoft Teams-onlinemöten under de senaste 180 dagarna. Varje datapunkt i linjediagrammet är en mängd aktiviteter för de senaste 28 dagarna.
 
-:::image type="content" source="../../media/number-meeting-over-time.png" alt-text="Diagram som visar antalet onlinemöten under de senaste 28 dagarna.":::
+:::image type="content" source="../../media/number-meeting-over-time.png" alt-text="Diagram som visar antalet Online Teams-möten under de senaste 28 dagarna.":::
 
-### <a name="scoring-framework"></a>Poäng ramverk
+### <a name="scoring-framework"></a>Poängramverk
 
-Mötes poängen för din organisation mäter hur mycket du kan ha till gång till Microsoft Teams-möten i din organisation med de senaste 28 dagarna. Det viktas utifrån antalet personer i din organisation som deltar i möten och mötennas varaktighet.
+Mötesresultatet för organisationen mäter i vilken grad Microsoft Teams-möten i din organisation har följt metodtips de senaste 28 dagarna. Det är viktat utifrån antalet personer i din organisation som deltar i mötena och mötenas varaktighet.
 
-## <a name="explore-more-about-meetings-in-your-organization"></a>Lär dig mer om möten i organisationen
+## <a name="explore-more-about-meetings-in-your-organization"></a>Utforska mer om möten i din organisation
 
-Vi tillhandahåller också support information för att HEP dig förstå hur folk i organisationen, som en agg regering, håller möten. Dessa ytterligare mått bidrar inte direkt till din produktivitets poäng, men det hjälper dig att skapa en åtgärds plan som en del av din digitala transformering.
+Vi ger dig även stödinformation så att du förstår hur personer i organisationen kan genomföra möten. Måtten bidrar inte direkt till ditt Produktivitetsresultat, men kan hjälpa dig att skapa en handlingsplan som en del av din digitala omvandling.
 
-### <a name="breakdown-of-how-many-meetings-follow-best-practices"></a>Uppdelning av hur många möten som följer metod tips
+### <a name="breakdown-of-how-many-meetings-follow-best-practices"></a>Detaljerad information om hur många möten som följer metodtips
 
-:::image type="content" source="../../media/videouse-meetings.png" alt-text="Diagram som visar primära insikter för möten – folk upplevelsen.":::
+:::image type="content" source="../../media/videouse-meetings.png" alt-text="Diagram som visar primära insikter för möten – upplevelser för människor.":::
 
-1. **Sidhuvud:**  Framhäver procent andelen online-möten i Microsoft Teams som behandlas i den primära inblicken och poängen.
-2. **Brödtext:** Hrovides information om hur du använder dessa metoder under möten för att göra dem mer intressanta. 
-3. **Visualisering:** Fördelningen i visualiseringen är avsedd att representera i vilken utsträckning online-möten i Microsoft Teams följer de här rekommendationerna: 
-    - **Video**: den färgade delen och bråket representerar andelen online-möten i Microsoft Teams som har video aktiverat. Bråket är konstruerat från: 
-        - Täljare: online Microsoft Teams-möten under de senaste 28 dagarna med video från minst en deltagare aktive rad. 
-        - Nämnare: det totala antalet möten i Microsoft Teams som finns i organisationen de senaste 28 dagarna 
-    - **Skärm delning**: den färgade delen och bråket representerar andelen av Microsoft Teams-möten som används för att dela den här funktionen. Bråket inkluderar: 
-        - Täljare: online Microsoft Teams-möten som hålls under de senaste 28 dagarna där minst en deltagare delar sin skärm.
-        - Nämnare: det totala antalet möten i Microsoft Teams som bedrivs inom din organisation under de senaste 28 dagarna
+1. **Sidhuvud:**  Framhäver procentandelen Microsoft Teams-möten online som använder de bästa metoderna för videor som beaktas i den primära insikten och poängsättningen.
+2. **Brödtext:** Hr få information om värdet av att använda dessa metoder under möten för att göra dem mer engagerade. 
+3. **Visualisering:** Fördelningen i visualiseringen är avsedd att representera i vilken utsträckning Microsoft Teams-onlinemöten följer var och en av följande metodtips: 
+    - **Video:** Den färgade delen och bråktalet representerar procentandelen Microsoft Teams-onlinemöten där video har aktiverats. Bråket är uppbyggt från: 
+        - Täljare: Microsoft Teams onlinemöten under de senaste 28 dagarna där video från minst en deltagare har aktiverats. 
+        - Nämnare: Det totala antalet Microsoft Teams-onlinemöten som anordnats i organisationen de senaste 28 dagarna 
+    - **Skärmdelning:** Den färgade delen och bråktalet representerar procentandelen Microsoft Teams-onlinemöten där personer använde skärmdelningsfunktionen. Bråket innehåller: 
+        - Täljare: Microsoft Teams-onlinemöten som anordnats de senaste 28 dagarna där minst en deltagare delat sin skärm.
+        - Nämnare: Det totala antalet Microsoft Teams-onlinemöten som utförts i organisationen de senaste 28 dagarna
 
 
-### <a name="distribution-of-time-spent-by-people-in-meetings"></a>Hur lång tid som deltagarna tillbringar i möten
+### <a name="distribution-of-time-spent-by-people-in-meetings"></a>Distribution av tid som tillbringas av personer i möten
 
-:::image type="content" source="../../media/percentageofpeopleusingteams.png" alt-text="Diagram som visar procent av personer som deltar i grupp möten i mer än 20 timmar i veckan.":::
+:::image type="content" source="../../media/percentageofpeopleusingteams.png" alt-text="Diagram som visar procentandel av personer som deltar i Teams-möten under över 20 timmar i veckan.":::
 
-1. **Sidhuvud:** Visar hur många personer i organisationen som deltar i ett möte i Microsoft Teams för mer än 20 timmar per vecka, baserat på deras aktivitet under de senaste 28 dagarna.
-2. **Brödtext:** Innehåller information om värdet för att använda Mötes rekommendationer för att göra möten aktiverade och mer produktiva
-3. **Visualisering:** Visar en vy över personer i organisationen baserat på hur lång tid som tillbringats per vecka under möten under de senaste 28 dagarna. Följande information finns för varje kategori:
-      - **Totalt Mötes deltagare:** Visar antalet personer i organisationen som deltog i möten, baserat på intervallet för genomsnittlig Mötes varaktighet, under de senaste 28 dagarna. Kategorin 6-10 timmar visar till exempel antalet personer som deltog i möten i medelvärdet av så många timmar per vecka under de senaste 28 dagarna.
-      - **Deltagare i möten med video:** För varje kategori visar detta hur många personer i organisationen som var under ett möte med video under de senaste 28 dagarna.
-      - **Deltagare i möten med skärm delning:** För varje kategori visar detta hur många personer som fanns i ett möte som innehöll skärm delning under de senaste 28 dagarna.
+1. **Sidhuvud:** Visar procentandelen personer i organisationen som deltar i Microsoft Teams-onlinemöten i mer än 20 timmar per vecka i genomsnitt, baserat på deras aktivitet de senaste 28 dagarna.
+2. **Brödtext:** Innehåller information om värdet av att använda metodtips för möten för att skapa engagerade och produktiva möten
+3. **Visualisering:** Visar en vy över personer i organisationen baserat på deras genomsnittliga tid per vecka i möten under de senaste 28 dagarna. Följande information ges för varje kategori:
+      - **Totalt antal mötes deltagare:** Visar antalet personer i organisationen som har deltagit i möten, baserat på det genomsnittliga varaktighetsintervallet för möten, under de senaste 28 dagarna. I kategorin 6–10 timmar visas till exempel antalet personer som deltog i möten, i genomsnitt så många timmar per vecka under de senaste 28 dagarna.
+      - **Deltagare i möten med video:** I varje kategori visas hur många personer i organisationen som har varit i ett möte med video de senaste 28 dagarna.
+      - **Deltagare i möten med skärmdelning:** För varje kategori visar detta hur många personer som har varit i ett möte som inkluderade skärmdelning under de senaste 28 dagarna.
 
-### <a name="distribution-of-meeting-length-by-type"></a>Fördelning av mötets längd efter typ
+### <a name="distribution-of-meeting-length-by-type"></a>Distribution av möteslängd per typ
 
-:::image type="content" source="../../media/distribution-meetinglength.png" alt-text="Diagram som visar fördelningen av mötes längder.":::
+:::image type="content" source="../../media/distribution-meetinglength.png" alt-text="Diagram som visar fördelningen av mötets längd.":::
 
-1. **Sidhuvud:** Visar procent andelen snabb samtal (inte tidigare schemalagda) online Microsoft Teams-möten de senaste 28 dagarna under 30 minuter.
-2. **Brödtext:** Innehåller information om värdet för att snabbt lösa problem med snabb möten.
-3. **Visualisering:** Tillhandahåller fördelningen av längd (i minuter) för omedelbara och schemalagda möten som ägde rum under de senaste 28 dagarna. Fördelningen kategoriserar varje möte till 1-15 minuter, 16-30 minuter, 31-60 minuter och över 60 minuter.
+1. **Sidhuvud:** Visar procentandelen microsoft Teams-möten online (inte tidigare schemalagt) under de senaste 28 dagarna som är under 30 minuter långa.
+2. **Brödtext:** Innehåller information om värdet av att använda snabbmöten för att snabbt lösa problem.
+3. **Visualisering:** Ger fördelningen av längd (i minuter) för snabbmöten och schemalagda möten som ägde rum i organisationen de senaste 28 dagarna. Varje möte kategoriseras i 1–15 minuter, 16–30 minuter, 31–60 minuter och större än 60 minuter.
 
     > [!NOTE]
-    > de schemalagda mötena innehåller alla möten som visas i personers kalendrar. Snabb möten inkluderar samtal, inklusive både 1:1-och grupp samtal samt möten som startas med &quot; funktionen möte nu &quot; i Microsoft Teams-kanaler.
+    > alla möten som visas i personers kalendrar ingår i de schemalagda mötena. Snabbmötena inkluderar samtal, inklusive både 1:1 och gruppsamtal, samt möten som startats med hjälp av funktionen Möte nu &quot; &quot; i Microsoft Teams-kanaler.
 
 
-### <a name="use-of-different-meeting-types"></a>Användning av olika mötes typer
+### <a name="use-of-different-meeting-types"></a>Användning av olika mötestyper
 
-:::image type="content" source="../../media/percentparticipation-meetingtypes.jpg" alt-text="Diagram som visar procent andel av deltagande i olika mötes typer.":::
+:::image type="content" source="../../media/percentparticipation-meetingtypes.jpg" alt-text="Diagram som visar procentdeltagande i olika mötestyper.":::
 
-1. **Sidhuvud:** Framhäver den procentuella andelen av dina möten i Microsoft Teams under de föregående 28 dagarna som är mindre än 30 minuter långt.
-2. **Brödtext:** Innehåller information om värdet för att använda &quot; möte nu &quot; i Microsoft Teams-kanalen.
-3. **Visualisering:** Visar vilken typ av möten som deltar av personer som deltar i ett online-möte. Varje Mötes typ representeras som ett vågrätt streck, där den färgade delen och bråket representerar följande:
-    - **Chatta 1:1-samtal**:
-        - Täljare: antalet personer som deltar i 1:1-samtal under de senaste 28 dagarna
-        - Nämnare: antalet personer som deltar i ett online-möte i Microsoft Teams de senaste 28 dagarna
-   - **Snabb grupp samtal**:
-        - Täljare: antalet personer som deltar i grupp samtal under de senaste 28 dagarna
-        - Nämnare: antalet personer som deltar i ett online-möte i Microsoft Teams de senaste 28 dagarna
-   - Skicka **mötet nu i kanal**:
-        - Täljare: antalet personer med &quot; funktionen möte nu med hjälp av &quot; Microsoft Teams-kanaler (för snabb möten) de senaste 28 dagarna
-        - Nämnare: antalet personer som deltar i ett online-möte i Microsoft Teams de senaste 28 dagarna
-    - **Schemalagda möten:**
-        - Täljare: antalet personer som deltar i en Microsoft Teams-möten online i sina kalendrar (schemalagda) de senaste 28 dagarna
-        - Nämnare: antalet personer som deltar i ett online-möte i Microsoft Teams de senaste 28 dagarna
+1. **Sidhuvud:** Markerar procentandelen Microsoft Teams-möten online under de föregående 28 dagarna som är mindre än 30 minuter långa.
+2. **Brödtext:** Innehåller information om värdet för att använda &quot; Möte nu &quot; i kanalfunktionen i Microsoft Teams.
+3. **Visualisering:** Visar vilken typ av möten som används av personer som deltar i Microsoft Teams-onlinemöten. Varje mötestyp representeras som en vågrät stapel, där den färgade delen och bråket representerar följande:
+    - **Direktsamtal till 1:1:**
+        - Täljare: Antalet personer som deltar i 1:1-samtal de senaste 28 dagarna
+        - Nämnare: Antalet personer som deltar i ett Microsoft Teams-onlinemöte de senaste 28 dagarna
+   - **Snabbsamtal till grupper:**
+        - Täljare: Antalet personer som deltar i gruppsamtal de senaste 28 dagarna
+        - Nämnare: Antalet personer som deltar i ett Microsoft Teams-onlinemöte de senaste 28 dagarna
+   - **Snabb möte nu i kanalen:**
+        - Täljare: Antalet personer som använder &quot; möte nu i Microsoft Teams kanaler &quot; (för snabbmöten) under de senaste 28 dagarna
+        - Nämnare: Antalet personer som deltar i ett Microsoft Teams-onlinemöte de senaste 28 dagarna
+    - **Schemalagda one-off-möten:**
+        - Täljare: Antalet personer som deltar i Microsoft Teams-onlinemöten i sin kalender (schemalagt) de senaste 28 dagarna
+        - Nämnare: Antalet personer som deltar i ett Microsoft Teams-onlinemöte de senaste 28 dagarna
     - **Schemalagda återkommande möten:**
-        - Täljare: antalet personer som deltar i återkommande möten i sin kalender (schemalagda) de senaste 28 dagarna
-        - Nämnare: antalet personer som deltar i ett online-möte i Microsoft Teams de senaste 28 dagarna
+        - Täljare: Antalet personer som deltar i instanser av återkommande möten i sin kalender (schemalagt) under de senaste 28 dagarna
+        - Nämnare: Antalet personer som deltar i ett Microsoft Teams-onlinemöte de senaste 28 dagarna
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Microsoft 365-appar hälsa – teknik upplevelser](apps-health.md) (artikel) \
-[Kommunikation – människor upplever](communication.md) (artikel) \
-[Innehålls samarbete – folk upplevelse](content-collaboration.md) (artikel) \
-[Rörlighet – människor upplever](mobility.md) (artikel) \
-[Integritets inställningar för produktivitets Poäng](privacy.md) (artikel) \
-[Samarbete – människor upplever](teamwork.md) (artikel)
+[Hälsa för Microsoft 365-appar – Teknikupplevelser](apps-health.md) (artikel)\
+[Kommunikation – Personers upplevelser](communication.md) (artikel)\
+[Innehållssamarbete – personers upplevelser](content-collaboration.md) (artikel)\
+[Mobility – People experiences](mobility.md) (artikel)\
+[Sekretesskontroller för Productivity Score](privacy.md) (artikel)\
+[Teamwork – Personliga upplevelser](teamwork.md) (artikel)

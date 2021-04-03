@@ -2,8 +2,8 @@
 title: Säkerhetsguide för småföretag
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -16,20 +16,20 @@ ms.custom:
 search.appverid:
 - MET150
 - MOE150
-description: Lär dig mer om säkerhetshot som ditt företag står inför och enkla sätt som du och dina anställda kan skydda dina data, konton och enheter på.
-ms.openlocfilehash: a3c22f5644322beec942b8ba656a718317fc0940
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Läs om säkerhetshot för företaget och enkla sätt som du och dina anställda kan skydda dina data, konton och enheter.
+ms.openlocfilehash: 383b7245dc0cf2df713d4aa282a80b7481e7dd81
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399116"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579140"
 ---
-# <a name="security-info-graphic-for-small-businesses"></a>Säkerhetsinformationsgrafik för småföretag
+# <a name="security-info-graphic-for-small-businesses"></a>Grafik med säkerhetsinformation för småföretag
 
-**Sammanfattning:** Lär dig de grundläggande villkoren för de hot ditt företag står inför och vad du kan göra för att skydda dina data, konton och enheter. Som administratör för Microsoft 365 för företag vidtar du åtgärder för att göra ditt företag säkrare och hjälper alla anställda att lära sig hur du skyddar dina affärsdata och enheter.
+**Sammanfattning:** Lär dig de grundläggande termerna för hoten på ditt företag och vad du kan göra för att skydda dina data, konton och enheter. Som administratör för Microsoft 365 för företag kan du vidta åtgärder för att göra ditt företag säkrare och hjälpa alla anställda att lära sig att skydda dina affärsdata och enheter.
 
-Länkarna för PowerPoint och PDF nedan kan laddas ned och skrivas ut i tabloidformat (kallas även redovisning, 11 x 17 eller A3).
+Länkarna för PowerPoint och PDF nedan kan laddas ned och skrivas ut i tabloidformat (kallas även huvudbok, 11 x 17 eller A3).
 
-![Bild för att skydda din informationsgrafik för småföretag](../media/smbthreatprotectioninfographic-thumbnail.png)
+![Bild för att skydda infografik för småföretag](../media/smbthreatprotectioninfographic-thumbnail.png)
 
-[PDF-dokument](downloads/smbthreatprotection-infographic.pdf)  |  [PowerPoint (på andra)](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/admin/downloads/smbthreatprotection-infographic.pptx)
+[PDF](downloads/smbthreatprotection-infographic.pdf)  |  [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/admin/downloads/smbthreatprotection-infographic.pptx)

@@ -2,8 +2,8 @@
 title: De 10 bästa sätten att skydda abonnemang för Microsoft 365 för företag
 f1.keywords:
 - CSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Skydda din affärs-e-post och data från cyberhot, inklusive utpressningstrojaner, nätfiske och skadliga bifogade filer. '
-ms.openlocfilehash: e45130d101c6e730fd2d487f5f8898c7cd268ab8
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 77213ab7f63b87ba985e6e4ca43119acc2345e2d
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197857"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579152"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>De 10 bästa sätten att skydda abonnemang för Microsoft 365 för företag
 

@@ -1,7 +1,7 @@
 ---
 title: Office 365 är nu Microsoft 365
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 - MOE150
 - FRP150
-description: Läs mer om de nya prenumerationsnamnen för Microsoft 365.
-ms.openlocfilehash: 42d1249b41d8f6025f63804374fa0287fdc680ce
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Läs om de nya Microsoft 365-prenumerationsnamnen.
+ms.openlocfilehash: f9726f8860e25b800a253899b5c2f561325e5ca2
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399200"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579212"
 ---
 # <a name="office-365-is-now-microsoft-365"></a>Office 365 är nu Microsoft 365
 
@@ -28,8 +28,8 @@ Vi har ändrat namn på några av våra Office 365- och Microsoft 365-prenumerat
 
 - **Office 365 Business Essentials** är nu **Microsoft 365 Business Basic**
 - **Office 365 Business Premium** är nu **Microsoft 365 Business Standard**
-- **Microsoft 365 Business** är nu **Microsoft 365 Business Premium**
-- **Office 365 Business** är nu **Microsoft 365 Apps för företag**
-- **Office 365 ProPlus** är nu **Microsoft 365 Apps för företag**
+- **Microsoft 365 Business** heter nu **Microsoft 365 Business Premium**
+- **Office 365 Business** är nu **Microsoft 365-program för företag**
+- **Office 365 ProPlus** är nu **Microsoft 365-appar för företag**
 
 [Lära sig mer!](https://go.microsoft.com/fwlink/?linkid=2120533)

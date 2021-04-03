@@ -2,8 +2,8 @@
 title: Installera Microsoft Office-program
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,13 +19,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du installerar Microsoft Office-appar.
-ms.openlocfilehash: c4df808f366095c5e0d21d177bb40bcff56488cd
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+description: Läs om hur du installerar Microsoft Office-appar.
+ms.openlocfilehash: 4970fa2698c413aad24aa94c16031823a16e9001
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422513"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578873"
 ---
 # <a name="install-office-apps"></a>Installera Office-appar 
 
@@ -33,12 +33,12 @@ ms.locfileid: "50422513"
 
 ## <a name="try-it"></a>Prova!
 
-Du hittar Microsoft Office-appar på **Start-menyn.** Om du inte&#39;kan du installera dem själv.
+Microsoft Office-program finns på **Start-menyn.** Om du inte&#39;kan du installera dem själv.
 
 1. Gå till office.com. Du kan behöva logga in med ditt arbetskonto.
-2. Välj **Installera Office** Microsoft   >   **365-appar** Kör och välj sedan   >    **Ja.**
-3. Office-apparna installeras. Processen kan ta flera minuter. Välj Stäng när det **är klart.**
-4. Om du vill installera Microsoft Teams går du office.com och väljer **Teams.**
-5. Skaffa Windows-appen och välj sedan **Kör.** Teams visar en uppmaning när installationen är klar.
+2. Välj **Installera Office** Microsoft   >   **365-appar**   >   **Kör** och välj sedan **Ja**.
+3. Office-apparna installeras. Processen kan ta flera minuter. När den är klar väljer du  **Stäng**.
+4. Om du vill installera Microsoft Teams går du office.com sidan och väljer  **Teams**.
+5. Skaffa Windows-appen och välj sedan  **Kör**. Teams visar en uppmaning när installationen är klar.
 
 De Office-program som du har installerat visas nu på **Start-menyn.**

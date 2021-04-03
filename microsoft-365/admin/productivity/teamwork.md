@@ -1,9 +1,9 @@
 ---
-title: Microsoft produktivitets Poäng – samarbete
+title: Microsoft Productivity Score – samarbete
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,148 +18,148 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: Detaljerad information om hur du får poäng med samarbete.
-ms.openlocfilehash: f64f60a6c9717d3d55ee2ac5cc6f507d4927fe18
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+description: Information om teamet – personernas produktivitetsresultat.
+ms.openlocfilehash: 0924114a73a9bcf55a74744ee371de8c2d326d1c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712561"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579164"
 ---
-# <a name="teamwork--people-experiences"></a>Samarbete – folk upplevelse
+# <a name="teamwork--people-experiences"></a>Teamwork – upplevelser för människor
 
-Produktivitets Poäng tillhandahåller insikter i organisationens digitala Transformation-resa via dess användning av Microsoft 365 och de teknik funktioner som stöder det. Din organisations Poäng återspeglar funktionerna för folk-och teknik upplevelse och kan jämföras med benchmarks från organisationer som liknar ditt. Kategorin för grupp arbete är en del av de mätningar som infaller under folkets upplevelse. Mer information finns i [Översikt över produktivitets Poäng](productivity-score.md) och Läs [Microsofts sekretess policy](https://privacy.microsoft.com/privacystatement).
+Produktivitetsresultatet ger insikter om organisationens digitala omvandlingsresa genom användningen av Microsoft 365 och de teknikupplevelser som stöder det. Organisationens resultat återspeglar mätvärden för personer och teknikupplevelse och kan jämföras med riktmärken från organisationer som påminner om din. Kategorin lagarbete är en del av måtten som faller under upplevelserna hos människor. Mer information finns i översikten [över Productivity Score](productivity-score.md) och [Microsofts sekretesspolicy.](https://privacy.microsoft.com/privacystatement)
 
-## <a name="prerequisites"></a>Förutsättningar
+## <a name="prerequisites"></a>Krav
 
-För att komma igång med samarbete måste personer i din organisation vara licensierade för:
+För att komma igång med grupparbete måste personer i organisationen ha licens för:
 
 - Microsoft Teams
 - SharePoint
 - Exchange Online
 
-Mer information finns i [tilldela licenser till användare](../manage/assign-licenses-to-users.md).
+Mer information finns i [tilldela licenser till användare.](../manage/assign-licenses-to-users.md)
 
-När personer har varit aktiva i ovanstående produkter minst en gång under de senaste 28 dagarna visas insikter.
+När användare har varit aktiva i ovanstående produkter minst en gång under de senaste 28 dagarna börjar du se insikterna.
 
-## <a name="why-your-orgs-teamwork-score-matters"></a>Därför är organisationens lag för grupp Poäng
+## <a name="why-your-orgs-teamwork-score-matters"></a>Därför är din organisations teamwork score viktig
 
-Ett grundläggande pelare är när en grupp människor med gemensamt mål samarbetar med varandra och med gemensamma resurser för kollektiva framgångar. Forskningen visar att när personer delar information och samarbetar i delade arbets ytor sparas de upp till fyra timmar i veckan. De kan hitta relaterade dokument, hitta sammanhang för tidigare diskussioner och skicka till delade mål. Se[bevis](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf)
+En av de grundläggande målen för organisationens produktivitet är när en grupp personer med ett gemensamt mål arbetar med varandra och med gemensamma resurser för kollektiv framgång. Efterforskningar visar att när personer delar information och samarbetar i delade arbetsytor sparar de upp till 4 timmar i veckan. De kan hitta relaterade dokument, hitta sammanhang för tidigare diskussioner och nå delade mål. Se[bevisen](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf)
 
-## <a name="how-we-calculate-the-teamwork-score"></a>Så här beräknas Poäng poängen
+## <a name="how-we-calculate-the-teamwork-score"></a>Så här beräknar vi teamets poäng
 
-Vi ger en huvudsaklig genom gång i upplevelsen som innehåller de viktigaste måtten för kategorin i din organisation. Då används Poäng ramverket nedan för de här måtten för att beräkna organisationens poäng.
+Vi ger en primär insyn i upplevelsen som innehåller nyckeltal för den här kategorin i organisationen. Sedan används ett poängramverk, som anges nedan, för dessa mått för att beräkna din organisations poäng.
 
-### <a name="primary-insight"></a>Huvudsaklig insikt
+### <a name="primary-insight"></a>Primär insyn
 
-Den främsta inblicken ser ut som alla de personer som kommunicerar med e-post och meddelanden i Microsoft Teams och som interagerar med innehåll i molnet i delade arbets ytor. I Microsoft 365 är Microsoft 365-grupper grunden för folk att komma in på en delad arbets yta med möjligheten att skicka e-post till gruppens post låda, dela filer på SharePoint-gruppwebbplatsen och skicka kanal meddelanden via Microsoft Teams.
+Den primära insikten tittar på alla personer som kommunicerar med e-post och meddelanden i Microsoft Teams och interagerar med innehåll i molnet i delade arbetsytor. I Microsoft 365 utgör Microsoft 365-grupper grunden för att människor ska kunna samlas i en delad arbetsyta med möjlighet att skicka e-postmeddelanden till grupppostlådan, dela filer på SharePoint-gruppwebbplatsen och skicka kanalmeddelanden via Microsoft Teams.
 
-:::image type="content" source="../../media/teamwork-score.png" alt-text="Diagram som visar primära insikter i det samarbets poäng.":::
+:::image type="content" source="../../media/teamwork-score.png" alt-text="Diagram som visar primära insikter i teamets arbete.":::
 
-1. **Sidhuvud:** Här får du viktig information om de personer som du använder för att utföra följande aktiviteter:
-      - Skicka e-post till en grupp post låda via Exchange.
-      - Skicka kanal meddelanden via Teams
-      - Läsa och skapa innehåll (vad vi gemensamt refererar till som innehålls interaktion) i SharePoint-gruppwebbplatser.
+1. **Sidhuvud:** Anger det viktigaste måttet för personer i din organisation som utför någon av följande aktiviteter:
+      - Skicka e-post till en grupppostlåda via Exchange.
+      - Skicka kanalmeddelanden genom Teams
+      - Läsa och skapa innehåll (vad vi gemensamt refererar till som innehållsinteraktion) på SharePoint-gruppwebbplatser.
 
-        Som en procent andel av alla i organisationen som utför någon av följande aktiviteter (inom eller utanför delade arbets ytor):
+        Som en procentandel av alla personer i din organisation som utför någon av följande aktiviteter (inom eller utanför delade arbetsytor):
         - Skicka e-post via Exchange.
-        - Skicka meddelanden (chatt eller kanal meddelanden) i Microsoft Teams.
+        - Skicka meddelanden (chatt- eller kanalmeddelanden) i Microsoft Teams.
         - Läsa och skapa innehåll på OneDrive eller SharePoint.
 
-            Och har till gång till minst en av följande tjänster: Exchange, Microsoft Teams eller SharePoint
+            Och har tillgång till minst en av följande tjänster: Exchange, Microsoft Teams eller SharePoint
 
-1. **Brödtext:** Här får du mer information om hur kommunikation och interaktion med innehåll, när du är klar inom en delad arbets yta, kan ha positiva resultat för produktivitet i organisationen.
-2. **Visualisering (nuvarande tillstånd):**
-      - Vågrätt fält där den blå delen representerar procent satsen i sidhuvudet
-      - Markerar bråket (täljare/nämnare) som används för att beräkna procent satsen som visas i sidhuvudet
-        - Täljare: antalet personer i din organisation som skickar e-post till en grupp post låda via Exchange, eller som skickar kanal meddelanden via Teams eller läser och skapar innehåll på SharePoint-gruppwebbplatser.
-        - Nämnare: antalet personer i din organisation som skickar e-post via Exchange eller skickar meddelanden (chatt eller kanal meddelanden) i Microsoft Teams eller läser och skapar innehåll på OneDrive eller SharePoint, och har till gång till minst en av följande tjänster: Exchange, Microsoft Teams eller SharePoint.
-   - Det främsta värdet för peer-prestandatest visas också som en procents ATS.
-3. **Visa resurser om samarbete:** Välj den här länken om du vill visa hjälp innehåll.
+1. **Brödtext:** Ger mer information om hur kommunikation och interaktion med innehåll, när du är klar i en delad arbetsyta, kan ha positiva resultat för produktiviteten i organisationen.
+2. **Visualisering (aktuell status):**
+      - Vågrät stapel där den blå delen representerar procentandelen uttryckt i sidhuvudet
+      - Markerar det bråktal (täljare/nämnare) som används för att beräkna procentandelen som visas i rubriken
+        - Täljare: Antalet personer i organisationen som skickar e-post till en grupppostlåda via Exchange, ELLER som skickar kanalmeddelanden genom Teams, ELLER läser och skapar innehåll på SharePoint-gruppwebbplatser.
+        - Nämnare: Antalet personer i din organisation som skickar e-postmeddelanden via Exchange, ELLER skickar meddelanden (chatt- eller kanalmeddelanden) på Microsoft Teams ELLER läser och skapar innehåll på OneDrive eller SharePoint, OCH har åtkomst till minst en av följande tjänster: Exchange, Microsoft Teams eller SharePoint.
+   - Peer-prestandavärdet för det viktiga mätvärdet visas också som procent.
+3. **Visa resurser för samarbete:** Välj den här länken om du vill visa hjälpinnehåll.
 
-#### <a name="trend-visualization-of-the-primary-insight"></a>Trend visualisering av huvudsaklig insikt
+#### <a name="trend-visualization-of-the-primary-insight"></a>Trendvisualisering av den primära insikten
 
-Följande diagram ger en trend för täljaren och nämnaren i huvud måttet. Det visar antalet personer som är sysselsatta i delade arbets ytor och antalet personer som kommunicerar eller interagerar med innehåll under de senaste 180 dagarna. Varje data punkt i linje diagrammet är en mängd aktivitet under de senaste 28 dagarna.
+Följande diagram visar trenden för täljaren och nämnaren för nyckelmåttet i den primära insikten. Där visas antalet personer som har varit engagerade i delade arbetsytor och antalet personer som kommunicerar eller interagerar med innehåll under de senaste 180 dagarna. Varje datapunkt i linjediagrammet är en mängd aktiviteter för de senaste 28 dagarna.
 
-:::image type="content" source="../../media/trend-peopleiinsharedworkspaces.png" alt-text="Diagram som visar antalet personer som är med i delade arbets ytor.":::
+:::image type="content" source="../../media/trend-peopleiinsharedworkspaces.png" alt-text="Diagram som visar antalet personer som är engagerade i delade arbetsytor.":::
 
-### <a name="scoring-framework"></a>Poäng ramverk
+### <a name="scoring-framework"></a>Poängramverk
 
-Lag poängen för din organisation mäter på en aggregerad (organisatorisk) nivå oavsett om användarna genomgående kommunicerar eller deltar i fil aktivitet i delade arbets ytor inom de senaste 28 dagarna.
+Samarbetsresultatet för organisationens åtgärder på aggregerad (organisatorisk) nivå, oavsett om användarna konsekvent kommunicerar eller arbetar med filaktivitet i delade arbetsytor under de senaste 28 dagarna.
 
-Poängen tillhandahålls inte på individuell användar nivå.
+Resultat tillhandahålls inte på användarnivå.
 
-## <a name="explore-more-about-teamwork-in-your-organization"></a>Lär dig mer om samarbete i din organisation
+## <a name="explore-more-about-teamwork-in-your-organization"></a>Utforska mer om samarbete i din organisation
 
-Vi ger också ytterligare information om hur personer i organisationen samarbetar tillsammans. Dessa ytterligare mått bidrar inte direkt till din produktivitets poäng, men är relevanta för att hjälpa dig att skapa en åtgärds plan som en del av din digitala transformering.
+Vi tillhandahåller även ytterligare information om hur personer i organisationen arbetar tillsammans. Måtten bidrar inte direkt till ditt Produktivitetsresultat, men är relevanta när du skapar en handlingsplan som en del av din digitala omvandling.
 
-### <a name="breakdown-of-how-people-engage-in-shared-workspaces"></a>Hur personer går med i delade arbets ytor
+### <a name="breakdown-of-how-people-engage-in-shared-workspaces"></a>Detaljerad information om hur personer engagerar sig i delade arbetsytor
 
-:::image type="content" source="../../media/people-sharedworkspace-engagement.png" alt-text="Diagram som visar hur personer i organisationen används i delade arbets ytor.":::
+:::image type="content" source="../../media/people-sharedworkspace-engagement.png" alt-text="Diagram som visar hur personer i organisationen är engagerade i delade arbetsytor.":::
 
-1. **Sidhuvud:** Visar en detaljerad uppdelning i de olika typer av samarbete som mäts.
-2. **Brödtext:** Innehåller information om värdet för att arbeta i delade arbets ytor så att teamens är mer effektivt.
-3. **Visualisering:** Visualiseringen visar i vilken utsträckning de personer som kommunicerar eller interagerar med innehåll gör det i delade arbets ytor:
-      - **Skicka e-post**: den färgade delen och bråkdel representerar procent av personer som skickar e-post till grupp post lådor. Bråket består av:
-        - Täljare: personer som skickar e-post till grupp post lådor under de senaste 28 dagarna.
-        - Nämnare: personer som skickar e-post under de senaste 28 dagarna. Det här är samma grupp av personer som har markerat sig för att skicka e-post i den främsta inblicken av kommunikationens produktivitets poäng.
-      - **Skicka meddelanden**: den färgade delen och bråkdel representerar procent av personer som skickar meddelanden i kanaler i Microsoft Teams. Bråket består av:
-        - Täljare: personer som skickar kanal meddelanden inom de senaste 28 dagarna.
-        - Nämnare: personer som skickar chatt-eller kanal meddelanden under de senaste 28 dagarna. Det här är samma grupp av personer som har markerat sig för att skicka meddelanden i Microsoft Teams i den främsta inblicken av kommunikations kategorin i produktivitets poängen.
-    - **Skapa innehåll**: den färgade delen och bråket representerar procent av personer som läser eller skapar innehåll på Microsoft 365 SharePoint-gruppwebbplatser.
-        - Täljare: antal personer som läser eller skapar innehåll i Microsoft 365 Group-gruppwebbplatser.
-        - Nämnare: antal personer med åtkomst till SharePoint som läser eller har skapat innehåll av något slag på OneDrive-eller SharePoint-webbplatser under de senaste 28 dagarna.
-4. **Visa relaterat innehåll:** Välj den här länken om du vill visa hjälp innehåll.
+1. **Sidhuvud:** Visar en detaljerad uppdelning av de olika typer av teamarbete som mäts.
+2. **Brödtext:** Innehåller information om värdet av att arbeta i delade arbetsytor för att hjälpa grupper att bli effektivare.
+3. **Visualisering:** Visualiseringen visar i vilken utsträckning personer som kommunicerar eller interagerar med innehåll gör det i delade arbetsytor enligt följande:
+      - **Skicka e-post:** Den färgade delen och bråktalet representerar procentandelen personer som skickar e-post till grupppostlådor. Bråket består av:
+        - Täljare: Personer som skickar e-postmeddelanden till grupppostlådor de senaste 28 dagarna.
+        - Nämnare: Personer som skickat e-postmeddelanden de senaste 28 dagarna. Det här är samma grupp personer som är markerade som att skicka e-post med den viktigaste insikten i produktivitetsresultatet för kommunikation.
+      - **Skicka meddelanden:** Den färgade delen och bråktalet representerar procentandelen personer som skickar meddelanden i kanaler i Microsoft Teams. Bråket består av:
+        - Täljare: Personer som skickar kanalmeddelanden de senaste 28 dagarna.
+        - Nämnare: Personer som skickar chatt- eller kanalmeddelanden de senaste 28 dagarna. Det här är samma grupp personer som har markerats som att skicka meddelanden i Microsoft Teams för den primära insikten i kommunikationskategorin i Produktivitetsresultatet.
+    - **Skapa innehåll:** Den färgade delen och bråktalet representerar procentandelen personer som läser eller skapar innehåll på Microsoft 365 SharePoint-gruppwebbplatser.
+        - Täljare: Antalet personer som läser eller skapar innehåll på gruppanslutna gruppwebbplatser i Microsoft 365.
+        - Nämnare: Antalet personer med åtkomst till SharePoint, som läst eller skapat något slags innehåll på OneDrive- eller SharePoint-webbplatser de senaste 28 dagarna.
+4. **Visa relaterat innehåll:** Välj den här länken om du vill visa hjälpinnehåll.
 
-### <a name="breakdown-of-workspace-engagement-by-size-and-age"></a>Uppdelning av arbets ytans åtagande efter storlek och ålder
+### <a name="breakdown-of-workspace-engagement-by-size-and-age"></a>Detaljerad information om arbetsytors engagemang efter storlek och ålder
 
-:::image type="content" source="../../media/workspace-engagement-bysizeage.png" alt-text="Diagram som visar åtagandet i arbets ytan som Kategoriserad efter storlek och ålder.":::
+:::image type="content" source="../../media/workspace-engagement-bysizeage.png" alt-text="Diagram som visar engagemang i arbetsytan, kategoriserat efter storlek och ålder.":::
 
-1. **Sidhuvud:** Visar kategorisering av ett åtagande i arbets ytor, uppdelat efter storlek för antalet medlemmar i arbets ytan och arbets ytans ålder i månader.
-2. **Brödtext:** Innehåller information om värdet för att uppmuntra personer i organisationen att bara ha de arbets ytor som behövs för att marknadsföra effektivare samarbete.
-3. **Visualisering:** Uppdelningen av åtaganden visas i form av en värme karta över två dimensioner.
+1. **Sidhuvud:** Visar kategoriseringen av engagemang i arbetsytor, uppdelade efter storlek för antalet medlemmar i arbetsytan och arbetsytans ålder i månader.
+2. **Brödtext:** Innehåller information om värdet av att uppmuntra personer i organisationen att behålla bara de arbetsytor som behövs för att främja effektivare samarbete.
+3. **Visualisering:** Åtagandefördelningen visas i form av en värmekarta i två dimensioner.
 
-      - **Arbets ytans storlek:** Arbets ytor är uppdelade i tre kategorier baserat på antalet medlemmar: 2-10 personer, 11-100 personer och över 100 personer. &quot;Kategorin alla &quot; inkluderar alla storleks kategorier.
-      - **Arbets ytans ålder:** Arbets ytorna kategoriseras efter antalet månader sedan arbets ytan skapades. &quot;Kategorin alla &quot; inkluderar alla ålders kategorier.
+      - **Storlek på arbetsytan:** Arbetsytor är uppdelade i tre kategorier baserat på antalet medlemmar: 2–10 personer, 11–100 personer och över 100 personer. Kategorin &quot; Alla innehåller alla &quot; storlekskategorier.
+      - **Arbetsytans ålder:** Arbetsytor kategoriseras efter antalet månader sedan arbetsytan skapades först. Kategorin &quot; Alla innehåller alla &quot; ålderskategorier.
 
-        Varje cell i diagrammet har ett tal och en färg som baseras på procent andelen aktiva arbets ytor som tillhör kategorin. Arbets ytans kategorier baseras på åldern och storleken som visas i skärnings punkten för den cellen. Om cellen vid skärnings punkten för 11-100-personer och 4-12 månader har värdet 52%, innebär det att 52% av arbets ytorna med 11-100 medlemmar som är mellan 4-12 månader gamla, har någon form av åtagande. Procent satsen beräknas som:
+        Varje cell i diagrammet har ett tal och en färg utifrån hur många engagerade arbetsytor som hör hemma i den kategorin. Arbetsytans kategorier baseras på ålder och storlek som visas i skärningspunkten i cellen. Om cellen vid skärningspunkten mellan 11–100 personer och 4–12 månader har ett värde på 52 %, innebär det att 52 % av arbetsytorna med 11–100 medlemmar som är mellan 4–12 månader gamla har någon form av engagemang. Procenttalet beräknas så här:
 
-        - **Täljare:** Arbets ytor som har ett åtagande i form av kommunikation (e-post och kanal meddelanden) eller innehålls interaktion under de senaste 28 dagarna
-        - **Nämnare:** alla arbets ytor som är tillgängliga i din organisation under de senaste 28 dagarna
+        - **Täljare:** Arbetsytor med engagemang i form av kommunikation (e-post- och kanalmeddelanden) eller innehållsinteraktion de senaste 28 dagarna
+        - **Nämnare: alla** arbetsytor som är tillgängliga i din organisation de senaste 28 dagarna
 
-1. **Visa relaterat innehåll:** Välj den här länken om du vill visa hjälp innehåll.
+1. **Visa relaterat innehåll:** Välj den här länken om du vill visa hjälpinnehåll.
 
-### <a name="breakdown-of-workspaces-by-level-of-engagement"></a>Uppdelning av arbets ytor per åtagande nivå
+### <a name="breakdown-of-workspaces-by-level-of-engagement"></a>Arbetsytor efter engagemangsnivå
 
-:::image type="content" source="../../media/workspace-by-engagement.png" alt-text="Diagram som visar fördelningen av arbets ytor efter ärende per grupp.":::
+:::image type="content" source="../../media/workspace-by-engagement.png" alt-text="Diagram som visar arbetsytorna efter grupps engagemang.":::
 
-1. **Sidhuvud:** Visar en uppdelning av arbets ytor som är uppdelade på olika nivå, med grupp-e-post, kanal meddelanden och innehålls interaktion.
-2. **Brödtext:** Innehåller information om värdet på ett konsekvent åtagande i de delade arbets ytorna så att du kan göra dem mer effektiva i samarbete.
-3. **Visualisering:** Visar en vy av arbets ytorna i organisationen baserat på hur många samtal är i veckan. Vyn innehåller fördelningar för olika aktivitets typer, utöver eventuella åtaganden som omfattar följande kategorier:
-      - **Grupp-e-post:** Procent av arbets ytor som inte har några dagar/1 dag/2 – 3 dagar/4 + dagar i gruppens e-postaktivitet per vecka under de senaste 28 dagarna.
-      - **Kanal meddelanden:** Procent av arbets ytor som inte har några dagar/1 dag/2 – 3 dagar/4 + dagar av kanal meddelanden per vecka under de senaste 28 dagarna.
-      - **Läsa eller skapa innehåll:** Procent av arbets ytor som inte har några dagar per 1 dag/2 – 3 dagar/4 + dagars läsning eller skapande av innehåll per vecka under de senaste 28 dagarna.
-4. **Visa relaterat innehåll:** Välj den här länken om du vill visa hjälp innehåll.
+1. **Sidhuvud:** Ger en uppdelning av arbetsytor uppdelade efter engagemangsnivå, med hjälp av grupp-e-post, kanalmeddelanden och innehållsinteraktion.
+2. **Brödtext:** Ger information om värdet av konsekvent engagemang i de delade arbetsytorna för att göra dem mer effektiva på samarbete.
+3. **Visualisering:** Visar arbetsytorna i din organisation utifrån intensiteten på engagemanget per vecka. Vyn innehåller distributioner för olika aktivitetstyper mäts inom samarbete, utöver alla åtaganden, som omfattar följande kategorier:
+      - **Grupp-e-post:** Procent av arbetsytor som inte har några dagar/1 dag/2-3 dagar/4+ dagars grupp-e-postaktivitet per vecka under de senaste 28 dagarna.
+      - **Kanalmeddelanden:** Procent av arbetsytor som inte har några dagar/1 dag/2-3 dagar/4+ dagars kanalmeddelanden per vecka under de senaste 28 dagarna.
+      - **Läsa eller skapa innehåll:** Procent av arbetsytor som inte har några dagar/1 dag/2-3 dagar/4+ dagars läsning eller skapa innehåll per vecka under de senaste 28 dagarna.
+4. **Visa relaterat innehåll:** Välj den här länken om du vill visa hjälpinnehåll.
 
-### <a name="use-of-teams-within-microsoft-teams"></a>Använda Teams i Microsoft Teams
+### <a name="use-of-teams-within-microsoft-teams"></a>Användning av team i Microsoft Teams
 
-:::image type="content" source="../../media/useof-teams-within-teams.png" alt-text="Diagram som visar hur många delar arbets ytor som används av Microsoft Teams.":::
+:::image type="content" source="../../media/useof-teams-within-teams.png" alt-text="Diagram som visar hur många delade arbetsytor som används av Microsoft Teams.":::
 
-1. **Sidhuvud:** Visar antalet delade arbets ytor som har ett Microsoft Teams-team som är kopplat till dem.
-2. **Brödtext:** Innehåller information om värdet för att ha ett Microsoft Teams-team kopplat till de delade arbets ytorna, för att hjälpa personer som är kopplade till dem mer effektivt i samarbete.
-3. **Visualisering:** Den färgade delen av ring diagrammet visar hur många arbets ytor som har ett team i Microsoft Teams. Procent satsen beräknas på följande sätt:
+1. **Sidhuvud:** Visar antalet delade arbetsytor som har ett Microsoft Teams-team som är kopplat till dem.
+2. **Brödtext:** Innehåller information om värdet av att ha ett Microsoft Teams-team kopplat till de delade arbetsytorna, för att göra personer kopplade till dem mer effektiva på samarbete.
+3. **Visualisering:** Den färgade delen av ringdiagrammet visar procentandelen arbetsytor som har ett Microsoft Teams-team kopplat till sig. Procentsatsen beräknas så här:
 
-      - Täljare: antalet delade arbets ytor i din organisation som hade ett Microsoft Teams-team som är kopplat till dem de senaste 28 dagarna
-      - Nämnare: antalet delade arbets ytor i din organisation under de senaste 28 dagarna
+      - Täljare: Antalet delade arbetsytor i organisationen som har ett Microsoft Teams-team kopplat till dem under de senaste 28 dagarna
+      - Nämnare: Antalet delade arbetsytor i organisationen de senaste 28 dagarna
 
-        Numret i cirkel diagrammets mitt punkt visar det totala antalet delade arbets ytor som har ett Microsoft Teams-team som är kopplat till dem.
-4. **Visa relaterat innehåll:** Välj den här länken om du vill visa hjälp innehåll.
+        Talet i mitten av ringdiagrammet representerar det totala antalet delade arbetsytor som har ett Microsoft Teams-team kopplat till sig.
+4. **Visa relaterat innehåll:** Välj den här länken om du vill visa hjälpinnehåll.
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Microsoft 365-appar hälsa – teknik upplevelser](apps-health.md) (artikel) \
-[Kommunikation – människor upplever](communication.md) (artikel) \
-[Innehålls samarbete – folk upplevelse](content-collaboration.md) (artikel) \
-[Möten – människor upplever](meetings.md) (artikel) \
-[Rörlighet – människor upplever](mobility.md) (artikel) \
-[Integritets inställningar för produktivitets Poäng](privacy.md) (artikel)
+[Hälsa för Microsoft 365-appar – Teknikupplevelser](apps-health.md) (artikel)\
+[Kommunikation – Personers upplevelser](communication.md) (artikel)\
+[Innehållssamarbete – personers upplevelser](content-collaboration.md) (artikel)\
+[Möten – Upplevelser för personer](meetings.md) (artikel)\
+[Mobility – People experiences](mobility.md) (artikel)\
+[Sekretesskontroller för Produktivitetsresultat](privacy.md) (artikel)

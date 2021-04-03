@@ -1,9 +1,9 @@
 ---
-title: Lägga till en Google Workspace-domän
+title: Lägga till din Google Workspace-domän
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -15,39 +15,38 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Lär dig hur du flyttar din domän från Google Workspace till Microsoft 365 för företag.
-ms.openlocfilehash: 23ca451cfdcb67898a10935101efedcdf360ef91
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 814e714527467bb6e7008ea141989f3117ddcdd8
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925008"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578777"
 ---
-# <a name="add-your-google-workspace-domain-to-microsoft-365"></a>Lägga till en Google Workspace-domän i Microsoft 365
+# <a name="add-your-google-workspace-domain-to-microsoft-365"></a>Lägga till Google Workspace-domänen i Microsoft 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LWKT?autoplay=false]
 
-Lägg till din Google Workspace-domän i Microsoft 365 för företag så att du kan fortsätta använda din e-postadress för företaget.
+Lägg till Google Workspace-domänen i Microsoft 365 för företag så att du kan fortsätta använda din e-postadress för företaget.
 
 ## <a name="try-it"></a>Prova!
 
 1. Gå till [administrationscentret för Microsoft 365.](https://admin.microsoft.com)
-1. I det vänstra navigeringsfältet i administrationscentret för Microsoft 365 väljer du **Visa alla** inställningar **och** sedan **Domäner.**
-1. Välj **Lägg till domän,** ange domännamnet och välj Använd **den här domänen.** 
-1. Välj Lägg **till en TXT-post i domänerna DNS-poster,** **välj Fortsätt** och kopiera TXT-värdet. 
-1. Gå tillbaka till [Googles administratörskonsol](https://admin.google.com)och välj **Domäner,** Hantera **domäner,** Visa **information,** Hantera **domän,** **DNS** och bläddra ned till **Anpassade resursposter.** 
-1. Öppna listrutan posttyp, välj **TXT,** klistra in TXT-värdet du kopierade och välj Sedan **Lägg till.** 
+1. I det vänstra navigeringsfältet i administrationscentret för Microsoft 365 väljer du **Visa alla**, **Inställningar** och sedan **Domäner.**
+1. Välj **Add domain**, enter your domain name och select Use this **domain**. 
+1. Välj Add **a TXT record to the domains DNS records**, select **Continue** och copy the TXT value. 
+1. Gå tillbaka till administratörskonsolen för [Google](https://admin.google.com), välj **Domäner** **,** Hantera domäner **,** Visa information , Hantera **domän,** **DNS** och rulla ned till **Anpassade resursposter**. 
+1. Öppna listrutan record type, välj **TXT**, klistra in TXT-värdet du kopierade och välj sedan **Add**. 
 
-    Uppdateringen tar vanligtvis ett faktum inom några minuter men kan ta upp till 48 timmar. 
-1. Gå tillbaka till administrationscentret för Microsoft 365, **välj** Verifiera och stäng **sedan.** 
-1. Om du vill ange din domän som primär e-postadress för användarna väljer du Användare aktiva användare **i** det  >  **vänstra navigeringsfältet.** 
-1. Välj en användare, välj **Hantera användarnamn och e-post,** Redigera, välj din domän i listrutan och välj sedan **Klar** och Spara **ändringar.** 
+    Uppdateringen tar normalt ett faktum inom några minuter men kan ta upp till 48 timmar. 
+1. Gå tillbaka till administrationscentret för Microsoft 365, **välj** Verifiera och sedan **Stäng.** 
+1. Om du vill ange din domän som primär e-postadress för användarna väljer du Användare aktiva användare i **det**  >  **vänstra navigeringsfältet.** 
+1. Välj en användare, välj **Hantera användarnamn och e-post** **,** Redigera , välj din domän i listrutan och välj sedan **Klar** och **Spara ändringar.** 
 1. Upprepa proceduren för varje användare. 
 
     När du är klar är du redo att installera Office-program och migrera dina e-post- och kalenderobjekt till Microsoft 365. 

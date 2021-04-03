@@ -19,21 +19,14 @@ search.appverid:
 - MET150
 description: Lär dig att läsa och förstå fakturan för Microsoft företagsprodukter.
 keywords: faktureringskonton, organisationsinformation, fakturor
-ms.openlocfilehash: 98c42bf480db8be3d750ab9788e407b7064335a9
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 3752254fc6068381cd6effed0be4d5b8295f8a27
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164492"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579764"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Förstå din faktura
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Fakturan innehåller en sammanfattning av dina avgifter och instruktioner för betalning. Du kan [Visa din faktura online](#view-your-online-invoice) i Administrationscenter för Microsoft 365. Du kan också ladda ned den i Portable Document Format (.pdf) för att skicka via e-post.
 
