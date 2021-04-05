@@ -15,15 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 484869535c466435ab997f32bf858dd1ad52c841
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: f5e9c237f53351df0249f0a12d08b8ba61572f7e
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187499"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587089"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-for-linux"></a>Konfigurera och validera undantag för Microsoft Defender för Endpoint för Linux
 
@@ -55,7 +54,7 @@ I följande tabell visas de undantagstyper som stöds av Defender för Endpoint 
 Exkludering | Definition | Exempel
 ---|---|---
 Filnamnstillägg | Alla filer med tillägget, var som helst på enheten | `.test`
-Arkiv | En specifik fil som identifieras med den fullständiga sökvägen | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+Fil | En specifik fil som identifieras med den fullständiga sökvägen | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
 Mapp | Alla filer under den angivna mappen (rekursivt) | `/var/log/`<br/>`/var/*/`
 Process | En specifik process (anges antingen med den fullständiga sökvägen eller filnamnet) och alla filer som öppnas av den | `/bin/cat`<br/>`cat`<br/>`c?t`
 

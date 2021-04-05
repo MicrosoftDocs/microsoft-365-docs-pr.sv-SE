@@ -1,5 +1,5 @@
 ---
-title: Undersök enheter i listan Defender för Endpoint Defender ATP-enheter
+title: Undersök enheter i listan Defender för slutpunktsenheter
 description: Undersök berörda enheter genom att granska aviseringar, nätverksanslutningsinformation, lägga till enhetstaggar och grupper och kontrollera tjänstens hälsa.
 keywords: enheter, taggar, grupper, slutpunkt, aviseringar, kö, aviseringar, enhetsnamn, domän, senast sedd, intern IP, aktiva aviseringar, hotkategori, filtrera, sortera, granska aviseringar, nätverk, anslutning, typ, lösenords stjäla, utpressningstrojaner, sårbarhet, hot, låg allvarlighetsgrad, tjänstens hälsa
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8f5415b6337d21b780a75a192a565078a6cacc06
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 154ecd66399b031ef2e60eef16227bb9bc2f8785
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185737"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587725"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Undersöka enheter i listan Microsoft Defender för slutpunktsenheter
 
@@ -43,8 +43,8 @@ Undersök informationen om en avisering som upphöjts på en specifik enhet för
 
 Du kan klicka på berörda enheter när du ser dem i portalen för att öppna en detaljerad rapport om enheten. Enheter som påverkas identifieras i följande områden:
 
-- [Listan Enheter](investigate-machines.md)
-- [Kön Aviseringar](alerts-queue.md)
+- [Enhetslista](investigate-machines.md)
+- [Varningskö](alerts-queue.md)
 - [Instrumentpanel för säkerhetsåtgärder](security-operations-dashboard.md)
 - Alla enskilda aviseringar
 - Alla enskilda vy med filinformation
@@ -69,12 +69,12 @@ Svarsåtgärder löper högst upp på en specifik enhet och omfattar:
 
 - Hantera taggar
 - Identifiera enhet
-- Begränsa appkörning
-- Kör antivirussökning
-- Paket för insamling av undersökning
+- Begränsa körning av program
+- Kör antivirusgenomsökning
+- Samla in undersökningspaket
 - Starta Live Response-session
 - Initiera en automatiserad undersökning
-- Kontakta en hotexpert
+- Konsultera en hotexpert
 - Åtgärdscenter
 
 Du kan vidta åtgärder för svar i Åtgärdscenter, på en viss enhet eller på en viss filsida.
@@ -151,7 +151,7 @@ Om du vill kontrollera händelsen ytterligare och relaterade händelser kan du s
 
 ![Bild av fliken säkerhetsrekommendationer](images/security-recommendations-device.png)
 
-### <a name="software-inventory"></a>Inventering av programvara
+### <a name="software-inventory"></a>Programvaruinventering
 
 På **fliken För inventering** av programvara kan du visa programvara på enheten och se eventuella hot eller svagheter. Om du markerar namnet på programvaran kommer du till sidan med programvaruinformation där du kan se säkerhetsrekommendationer, identifierade säkerhetsproblem, installerade enheter och versionsdistribution. Se [Inventering av programvara](tvm-software-inventory.md) för mer information
 
@@ -201,4 +201,4 @@ Kortet **för säkerhetsutvärderingar** visar den totala exponeringsnivån, sä
 - [Undersöka en domän som är kopplad till en Defender för slutpunktsavisering](investigate-domain.md)
 - [Undersöka ett användarkonto i Defender för Slutpunkt](investigate-user.md)
 - [Säkerhetsrekommendationer](tvm-security-recommendation.md)
-- [Inventering av programvara](tvm-software-inventory.md)
+- [Programvaruinventering](tvm-software-inventory.md)

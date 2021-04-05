@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Läs mer om förfalloprinciper för Microsoft 365-grupper.
-ms.openlocfilehash: 65a746751cd523a5dadce3eca573e6a9bfce0166
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: fdef06918ec2c35547c084e5f431aa7bef8d6a8c
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052308"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587629"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Förfalloprincip för Microsoft 365-grupper
 
@@ -63,7 +63,7 @@ Grupplivslängd anges i dagar och kan anges till 180, 365 eller ett anpassat vä
 
 Om gruppen inte har en ägare skickas förfallomeddelandena till den angivna administratören.
 
-Du kan ange principen för alla grupper, endast markerade grupper, eller inaktivera den helt genom att välja **Ingen**. Observera att du för närvarande inte kan ha olika principer för olika grupper.
+Du kan ange principen för alla grupper, endast markerade grupper (upp till 500), eller inaktivera den helt genom att välja **Ingen**. Observera att du för närvarande inte kan ha olika principer för olika grupper.
 
 ![Skärmbild av förfalloinställningar för grupper i Azure Active Directory](../media/azure-groups-expiration-settings.png)
 

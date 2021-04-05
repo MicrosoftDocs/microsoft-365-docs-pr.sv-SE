@@ -1,6 +1,6 @@
 ---
-title: Blockering och inneslutning av beteende
-description: Läs mer om funktioner för beteendeblockering och inneslutning i Microsoft Defender ATP
+title: Beteendeblockering och inneslutning
+description: Läs mer om funktioner för beteendeblockering och inneslutning i Microsoft Defender för Endpoint
 keywords: Microsoft Defender ATP, EDR i blockläge, blockering av passivt läge
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -19,14 +19,14 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: dcad3b7233f2efd444d41c15916eaae195634c8c
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7cea65292c427cb953e2e8e3ca866c89f83128b1
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166239"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587173"
 ---
-# <a name="behavioral-blocking-and-containment"></a>Blockering och inneslutning av beteende
+# <a name="behavioral-blocking-and-containment"></a>Beteendeblockering och inneslutning
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,7 +42,7 @@ Dagens hot landskap är över [](https://docs.microsoft.com/windows/security/thr
 
 Funktioner för blockering och inneslutning kan hjälpa till att identifiera och stoppa hot baserat på deras beteende och processträd även när hoten har börjat användas. Nästa generations skydd, EDR och Defender för Endpoint-komponenter och -funktioner fungerar tillsammans för funktioner för beteendeblockering och inneslutning. 
 
-:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Blockering och inneslutning av beteende":::
+:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Beteendeblockering och inneslutning":::
 
 Funktioner för blockering och inneslutning fungerar med flera komponenter och funktioner i Defender för Slutpunkt för att stoppa attacker omedelbart och förhindra att attacker fort görs.
 

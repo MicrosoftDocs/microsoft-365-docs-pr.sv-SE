@@ -15,17 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ea6beba2d17b72f100703d26dd4106d0537c6fa6
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a72b742d8f4a69d2e38cf4fa234ba5b7e2961ac6
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071665"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587617"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Vad är nytt i Microsoft Defender för Slutpunkt
+# <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Senaste nytt i Microsoft Defender för Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -53,22 +52,22 @@ Mer information om förhandsgranskningsfunktioner finns i [Förhandsgranskningsf
 - [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender för Slutpunkt lägger nu till stöd för virtuellt windows-skrivbord.
 
 ## <a name="december-2020"></a>December 2020
-- [Microsoft Defender för slutpunkt för iOS](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender för Endpoint lägger nu till stöd för iOS. Lär dig hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för Endpoint för iOS.
+- [Microsoft Defender för Endpoint för iOS](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender för Endpoint lägger nu till stöd för iOS. Lär dig hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för Endpoint för iOS.
 
 ## <a name="september-2020"></a>September 2020
-- [Microsoft Defender för slutpunkt för Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender för Endpoint lägger nu till stöd för Android. Lär dig hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för Slutpunkt för Android.
+- [Microsoft Defender för Endpoint för Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender för Endpoint lägger nu till stöd för Android. Lär dig hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för Slutpunkt för Android.
 - [MacOS-support för hantering av hot och sårbarhet](tvm-supported-os.md)<br> Hantering av hot och sårbarhet för macOS är nu i offentlig förhandsversion och kommer kontinuerligt att upptäcka säkerhetsproblem på dina macOS-enheter så att du kan prioritera åtgärder genom att fokusera på risker. Läs mer i det [här Microsoft Tech Community-blogginlägget](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824).
 
 
 ## <a name="august-2020"></a>Augusti 2020
-- [Microsoft Defender för slutpunkt för Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender för Endpoint lägger nu till stöd för Android. Lär dig hur du installerar, konfigurerar och använder Microsoft Defender för Slutpunkt för Android.
+- [Microsoft Defender för Endpoint för Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender för Endpoint lägger nu till stöd för Android. Lär dig hur du installerar, konfigurerar och använder Microsoft Defender för Slutpunkt för Android.
 
 
 ## <a name="july-2020"></a>Juli 2020
 - [Skapa indikatorer för certifikat](manage-indicators.md) <br> Skapa indikatorer för att tillåta eller blockera certifikat. 
 
 ## <a name="june-2020"></a>Juni 2020
-- [Microsoft Defender för Endpoint för Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender för Endpoint lägger nu till stöd för Linux. Lär dig hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för Endpoint för Linux.
+- [Microsoft Defender för Endpoint För Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender för Endpoint lägger nu till stöd för Linux. Lär dig hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för Endpoint för Linux.
 
 - [Attackattack i utvärderingslabb](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender för Endpoint har samarbetat med olika simuleringsplattformar för hot för att ge dig bekväm åtkomst till att testa plattformens funktioner direkt från portalen.
 
@@ -79,7 +78,7 @@ Mer information om förhandsgranskningsfunktioner finns i [Förhandsgranskningsf
 
 ## <a name="november-december-2019"></a>November-December 2019
 
-- [Microsoft Defender för Slutpunkt för Mac](microsoft-defender-endpoint-mac.md) <BR> Med Microsoft Defender för Endpoint för Mac får du nästa generations skydd till Mac-enheter. Baskomponenterna i den enhetliga slutpunktssäkerhetsplattformen blir nu tillgängliga för Mac-enheter, inklusive identifiering [av slutpunkter och svar.](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender för Endpoint för Mac](microsoft-defender-endpoint-mac.md) <BR> Med Microsoft Defender för Endpoint för Mac får du nästa generations skydd till Mac-enheter. Baskomponenterna i den enhetliga slutpunktssäkerhetsplattformen blir nu tillgängliga för Mac-enheter, inklusive identifiering [av slutpunkter och svar.](microsoft-defender-endpoint-mac.md)
  
 - [Threat & Vulnerability Management application and application version end-of-life information](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation) <BR>Program och programversioner som har nått slutet av livscykeln är märkta eller märkta med sådana så att du är medveten om att de inte längre kommer att stödjas och kan vidta åtgärder för att avinstallera eller ersätta. Att göra det hjälper till att minska riskerna som är relaterade till olika exponeringar av sårbarheter på grund av program som inte är kompatibla.
 
@@ -120,10 +119,10 @@ Mer information om förhandsgranskningsfunktioner finns i [Förhandsgranskningsf
 
 ## <a name="may-2019"></a>Maj 2019
 
-- [Rapporter om hotskydd](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-protection-reports-windows-defender-advanced-threat-protection)<BR>Rapporten om skydd mot hot ger information på hög nivå om aviseringar som genereras i organisationen. 
+- [Rapporter om skydd mot hot](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-protection-reports-windows-defender-advanced-threat-protection)<BR>Rapporten om skydd mot hot ger information på hög nivå om aviseringar som genereras i organisationen. 
 
 
-- [Microsoft Threat Experts](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)<BR> Microsoft Threat Experts är den nya, hanterade tjänsten för hot i Microsoft Defender för Endpoint som tillhandahåller proaktiv virering, prioritering och ytterligare kontext och insikter som ytterligare ger säkerhetscenter (SOCs) möjlighet att identifiera och reagera på hot snabbt och korrekt. Det ger ytterligare expertkunskaper ochoptisk information som Microsoft-kunder kan använda för att utöka funktionerna för säkerhetsåtgärd som en del av Microsoft 365.  
+- [Microsoft Hotexperter](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)<BR> Microsoft Threat Experts är den nya, hanterade tjänsten för hot i Microsoft Defender för Endpoint som tillhandahåller proaktiv virering, prioritering och ytterligare kontext och insikter som ytterligare ger säkerhetscenter (SOCs) möjlighet att identifiera och reagera på hot snabbt och korrekt. Det ger ytterligare expertkunskaper ochoptisk information som Microsoft-kunder kan använda för att utöka funktionerna för säkerhetsåtgärd som en del av Microsoft 365.  
 
 - [Indikatorer](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ti-indicator) <BR> API:er för indikatorer är nu allmänt tillgängliga. 
 
@@ -141,13 +140,13 @@ Mer information om förhandsgranskningsfunktioner finns i [Förhandsgranskningsf
 ## <a name="february-2019"></a>Februari 2019
 - [Incidenter](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/incidents-queue) <BR> Incidenten är en ny enhet i Microsoft Defender för Endpoint som samlar alla relevanta aviseringar och relaterade enheter för att berätta den bredare attackbilden, vilket ger analytiker bättre perspektiv på hur komplexa hot visas. 
 
-- [Introducera tidigare versioner av Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<BR> Registrera versioner av Windows-enheter som stöds så att de kan skicka sensordata till Microsoft Defender för slutpunkts sensor.
+- [Registrera tidigare versioner av Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<BR> Registrera versioner av Windows-enheter som stöds så att de kan skicka sensordata till Microsoft Defender för slutpunkts sensor.
 
 
 ## <a name="october-2018"></a>Oktober 2018
-- [Minskningsregler för attackytor](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>Alla minskningsregler för attackytor stöds nu i Windows Server 2019.
+- [Regler för minskning av attackytan](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>Alla minskningsregler för attackytor stöds nu i Windows Server 2019.
 
-- [Reglerad mappåtkomst](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<BR> Reglerad mappåtkomst stöds nu i Windows Server 2019.
+- [Kontrollerad mappåtkomst](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<BR> Reglerad mappåtkomst stöds nu i Windows Server 2019.
 
 - [Anpassad identifiering](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-custom-detections)<BR>Med anpassade identifieringar kan du skapa anpassade frågor för att övervaka händelser för alla typer av beteende, till exempel misstänkta eller nya hot. Det kan du göra genom att använda avancerad sökning genom att skapa anpassade identifieringsregler. 
 
@@ -159,7 +158,7 @@ Mer information om förhandsgranskningsfunktioner finns i [Förhandsgranskningsf
 
 - [Stöd för iOS- och Android-enheter](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection#turn-on-third-party-integration)<BR> Nu stöds iOS- och Android-enheter och kan tas med i tjänsten.
 
-- [Hotanalyser](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-analytics)<BR>
+- [Analys av hot](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-analytics)<BR>
 Hotanalys är en uppsättning interaktiva rapporter som publicerats av Microsoft Defender för Endpoint-forskningsteamet så snart nya hot och utbrott identifieras. Rapporterna hjälper grupper med säkerhetsåtgärder att bedöma påverkan på deras miljö och tillhandahåller rekommenderade åtgärder för att begränsa, öka organisationens motståndskraft och förhindra specifika hot.
 
 - Nytt i Windows 10 version 1809, det finns två nya minskningsregler för attackytor: 
@@ -174,10 +173,10 @@ Hotanalys är en uppsättning interaktiva rapporter som publicerats av Microsoft
 
   
 ## <a name="march-2018"></a>Mars 2018
-- [Advanced Hunting](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection) <BR>
+- [Avancerad jakt](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection) <BR>
 Frågedata med avancerad sökning i Microsoft Defender för Endpoint.
 
-- [Minskningsregler för attackytor](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>
+- [Regler för minskning av attackytan](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>
     Nya regler för att minska attackytan: 
   - Använd avancerat skydd mot utpressningstrojaner
   - Blockera att autentiseringsuppgifter stjäls från Windows lokala säkerhetsutfärdares undersystem (lsass.exe)
@@ -190,15 +189,15 @@ Frågedata med avancerad sökning i Microsoft Defender för Endpoint.
     >[!NOTE]
     >Tillgängligt från Windows 10, version 1803 eller senare.
 
-- [Med villkorsstyrd åtkomst](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection) <br> Aktivera villkorlig åtkomst för att bättre skydda användare, enheter och data.
+- [Villkorsstyrd åtkomst](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection) <br> Aktivera villkorlig åtkomst för att bättre skydda användare, enheter och data.
 
 - [Microsoft Defender för Endpoint Community Center](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/community-windows-defender-advanced-threat-protection)<BR> 
     Microsoft Defender för Endpoint Community Center är en plats där community-medlemmar kan lära sig, samarbeta och dela upplevelser om produkten. 
 
-- [Reglerad mappåtkomst](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<BR>
+- [Kontrollerad mappåtkomst](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<BR>
 Nu kan du blockera processer som inte är betrodda från att skriva till diskarvöring med hjälp av kontrollerad mappåtkomst.
 
-- [Introducera enheter som inte är Windows-enheter](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection)<BR>
+- [Registrera icke-Windows-enheter](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection)<BR>
     Microsoft Defender för Slutpunkt tillhandahåller en centraliserad säkerhetsoperationer för Windows och för icke-Windows-plattformar. Du kan se aviseringar från olika operativsystem som stöds (OS) i Microsoft Defender Säkerhetscenter och bättre skydda organisationens nätverk.
 
 - [Rollbaserad åtkomstkontroll (RBAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/rbac-windows-defender-advanced-threat-protection)<BR>

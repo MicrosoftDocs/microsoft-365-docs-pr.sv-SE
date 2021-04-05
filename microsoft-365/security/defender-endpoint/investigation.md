@@ -1,6 +1,6 @@
 ---
 title: Resurstyp för undersökning
-description: Entitet för Microsoft Defender ATP-undersökning.
+description: Microsoft Defender för entitet för undersökning av slutpunkt.
 keywords: apis, graph api, api som stöds, skaffa, aviseringar, undersökningar
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 36adf0fa5c0de79fe0616f1216118a98ba2005a4
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 3872976717a5b472ab8d471db7eff9975dbc2258
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187355"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587689"
 ---
 # <a name="investigation-resource-type"></a>Resurstyp för undersökning
 

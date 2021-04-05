@@ -1,5 +1,5 @@
 ---
-title: Undersöka anslutningshändelser som inträffar bakom framåt proxy
+title: Undersöka anslutningshändelser som inträffar bakom vidarebefordrade proxy
 description: Lär dig hur du använder avancerad HTTP-nivåövervakning med nätverksskydd i Microsoft Defender ATP, som visar ett verkligt mål i stället för en proxyserver.
 keywords: proxy, nätverksskydd, vidarebefordra proxy, nätverkshändelser, granskning, blockering, domännamn, domän
 search.product: eADQiWindows 10XVcnh
@@ -15,17 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7eaa4bb76d7607f0b55c87482d1104a0897c9d36
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 28d8a113ed77e9624bd914571b1af4a7ece2aa5c
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186095"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587569"
 ---
-# <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Undersöka anslutningshändelser som inträffar bakom framåt proxy
+# <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Undersöka anslutningshändelser som inträffar bakom vidarebefordrade proxy
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

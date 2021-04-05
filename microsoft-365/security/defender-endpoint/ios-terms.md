@@ -16,16 +16,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: 177367da49ab741ee6544b6cfefe63898005d009
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ba39eea9730b38b7666fe53c0c128fc53cae3a78
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51072305"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587197"
 ---
 # <a name="microsoft-defender-for-endpoint-for-ios-application-license-terms"></a>Licensvillkor för Microsoft Defender för Slutpunkt för iOS-program
 
