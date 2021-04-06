@@ -90,7 +90,7 @@
           items:
             - name: Översikt
               href: defender/get-started.md
-            - name: Aktivera Microsoft Threat Protection
+            - name: Aktivera Microsoft 365 Defender
               href: defender/m365d-enable.md
             - name: Distribuera tjänster som stöds
               href: defender/deploy-supported-services.md
@@ -140,6 +140,12 @@
                       href: defender/investigate-users.md
                 - name: Få e-postaviseringar
                   href: defender/get-incident-notifications.md
+            - name: Microsoft Hotexperter
+              items:
+                - name: Översikt över Microsoft Hotexperter
+                  href: mtp/microsoft-threat-experts.md
+                - name: Konfigurera och hantera funktioner för Microsoft Hotexperter
+                  href: mtp/configure-microsoft-threat-experts.md
             - name: Automatiska undersökningar och svar
               items:
                 - name: Översikt över automatiserad utredning och svar
@@ -422,7 +428,7 @@
             - name: Säker som standard
               href: ./office-365-security/secure-by-default.md
             - name: Konfigurera skydd mot nätfiske-policyer i Defender för Office 365.
-              href: ./office-365-security/configure-atp-anti-phishing-policies.md
+              href: ./office-365-security/configure-mdo-anti-phishing-policies.md
             - name: Konfigurera principer för skydd mot skadlig kod
               href: ./office-365-security/configure-anti-malware-policies.md
             - name: Konfigurera principer för skräppostskydd
