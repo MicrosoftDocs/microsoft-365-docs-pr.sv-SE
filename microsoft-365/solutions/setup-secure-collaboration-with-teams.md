@@ -16,18 +16,16 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Lär dig konfigurera säkert innehållssamarbete i Teams för att skydda dina data utifrån dess känslighet.
-ms.openlocfilehash: 88cb3557f1c150a9c9fd68ba362fcc9c424aa73a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 804307b3035f0d2246dc0ac541cce2d63506c351
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906474"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591916"
 ---
-# <a name="set-up-secure-collaboration-with-microsoft-365"></a>Konfigurera säkerhet samarbete med hjälp av Microsoft 365
+# <a name="set-up-secure-collaboration-with-microsoft-365-and-microsoft-teams"></a>Konfigurera säkert samarbete med Microsoft 365 och Microsoft Teams
 
 Att enkelt kunna dela information med rätt personer och förhindra att det går över är avgörande för en organisations framgång. Det handlar bland annat om att dela känsliga data på ett säkert sätt med bara de som ska ha tillgång till dem. Beroende på projektet kan det till exempel vara att dela känsliga data med personer utanför organisationen.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 Vägledningen för samarbetslösningen består av två komponenter som hjälper dig:
 - Distribuera Microsoft Teams med rätt skyddsnivå för varje projekt
@@ -36,6 +34,8 @@ Vägledningen för samarbetslösningen består av två komponenter som hjälper 
 ![Distribuera Teams med lämpligt skydd och konfigurera extern delning med lämpliga säkerhetsinställningar](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
 Om mångsidiga och lättanvända verktyg för innehållssamarbete inte finns tillgängliga kan användarna ofta samarbeta genom att skicka dokument via e-post. Det här är en omedveten och felbeägen samarbetsmetod och kan öka risken för olämplig delning av information. Om personer tycker att det är svårt att dela information kan de återgå till att använda konsumentprodukter som inte styrs av IT.. Det kan innebära en ännu större risk.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 Med Microsoft 365 kan du distribuera Teams med en mängd olika konfigurationer som hjälper:
 

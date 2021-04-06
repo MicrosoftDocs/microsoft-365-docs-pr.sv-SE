@@ -20,14 +20,13 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 01/29/2021
 ms.technology: m365d
-ms.openlocfilehash: d78bf3689020b5a24863e5a0f1ec817af50178ad
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7106f5d2e740d2b4cacbcaeb0b9391095bbeb356
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51073945"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592030"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Visa och hantera åtgärder i Åtgärdscenter
 
@@ -52,8 +51,11 @@ Det är viktigt att godkänna (eller avvisa) väntande åtgärder så snart som 
 ![Godkänna eller avvisa en åtgärd](../../media/air-actioncenter-itemselected.png)
 
 1. Gå till [https://security.microsoft.com](https://security.microsoft.com) och logga in. 
+
 2. Välj Åtgärdscenter i **navigeringsfönstret.** 
+
 3. Välj ett objekt i **listan på fliken** Väntande i Åtgärdscenter. Den utfällna rutan öppnas.
+
 4. Granska informationen i det utfällfönster som visas och gör sedan något av följande:
    - Välj **Sidan Öppna undersökning** om du vill visa mer information om undersökningen.
    - Välj **Godkänn** för att påbörja en väntande åtgärd.
@@ -71,19 +73,25 @@ Om du har fastställt att en enhet eller en fil inte är ett hot kan du ångra �
 ### <a name="undo-one-remediation-action"></a>Ångra en åtgärd
 
 1. Gå till Åtgärdscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) och logga in.
+
 2. Välj **en åtgärd** som du vill ångra på fliken Historik.
+
 3. I fönstret till höger på skärmen väljer du **Ångra**.
 
 ### <a name="undo-multiple-remediation-actions"></a>Ångra flera åtgärder
 
 1. Gå till Åtgärdscenter https://security.microsoft.com/action-center) (och logga in).
+
 2. Markera **de åtgärder** du vill ångra på fliken Historik. Se till att markera objekt som har samma åtgärdstyp. Ett utfällt fönster öppnas.
+
 3. Välj Ångra i den utfällade **rutan.**
 
 ### <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>Ta bort en fil från karantän på flera enheter 
 
 1. Gå till Åtgärdscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) och logga in.
+
 2. På fliken **Historik** väljer du en fil som har karantänfilen **Åtgärdstyp.**
+
 3. I fönstret till höger på skärmen väljer du Använd för **fler X-instanser** av den här filen och sedan **Ångra**.
 
 ## <a name="next-steps"></a>Nästa steg

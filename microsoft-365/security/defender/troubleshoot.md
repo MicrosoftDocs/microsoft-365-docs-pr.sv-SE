@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8d8083cbba3582c41ca91c57978675987822d0d9
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a2cd27bf7bf8b1c4931b9d768f3a6b5e5f2a0d93
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51073937"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592042"
 ---
 # <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Felsöka tjänstproblem i Microsoft 365 Defender
 
@@ -49,6 +49,12 @@ Om du har Microsoft Defender för identitet distribuerat i din miljö men du int
 
 Mer information finns i [Microsoft Defender för identitetsintegrering.](/cloud-app-security/mdi-integration)
 
-## <a name="where-is-the-settings-page-for-turning-the-service-on"></a>Var finns inställningssidan för att aktivera tjänsten?
+## <a name="where-is-the-settings-page-for-turning-on-the-service"></a>Var finns inställningssidan för att aktivera tjänsten?
 
 Om du vill aktivera Microsoft 365 Defender öppnar du **Inställningar** från navigeringsfönstret i Säkerhetscenter för Microsoft 365. Det här navigeringsobjektet visas bara om du har nödvändiga [behörigheter och licenser.](m365d-enable.md#check-license-eligibility-and-required-permissions)
+
+## <a name="how-do-i-create-an-exception-for-my-fileurl"></a>Hur skapar jag ett undantag för min fil/URL?
+
+En falsk positiv inställning är en fil eller URL som identifieras som skadlig men inte är ett hot. Du kan skapa indikatorer och definiera undantag för att häva blockeringen och tillåta vissa filer/URL-adresser. Se [Adress: falska positiva/negativa i Defender för Slutpunkt](/microsoft-365/security/defender-endpoint/defender-endpoint-false-positives-negatives).
+
+

@@ -1,6 +1,6 @@
 ---
 title: Information och resultat från en automatiserad undersökning
-description: Du kan visa resultaten och nyckelresultaten under och efter en automatiserad undersökning
+description: Visa resultat och viktiga resultat från automatiserad undersökning i Microsoft 365 Defender
 keywords: automatiserat, undersöka, resultat, analysera, information, åtgärd, autoair
 search.appverid: met150
 ms.prod: m365-security
@@ -21,13 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/08/2021
-ms.openlocfilehash: 05208dd8ba893d65db50430861ad5dd5ad9d34fb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ca023ea49a8d92123467be640a097a72233d3198
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198975"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592126"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Information och resultat från en automatiserad undersökning
 
@@ -61,8 +60,11 @@ I det [förbättrade åtgärdscentret](m365d-action-center.md) () samlas åtgär
 > Du måste ha [vissa behörigheter för](m365d-action-center.md#required-permissions-for-action-center-tasks) att godkänna, avvisa eller ångra åtgärder.
 
 1. Gå till [https://security.microsoft.com](https://security.microsoft.com) och logga in. 
+
 2. Välj Åtgärdscenter i **navigeringsfönstret.** 
+
 3. Välj ett **objekt på fliken** **Väntande** eller Historik. Den utfällna rutan öppnas.
+
 4. Granska informationen i det utfällfönster som visas och gör sedan något av följande:
    - Välj **Sidan Öppna undersökning** om du vill visa mer information om undersökningen.
    - Välj **Godkänn** för att påbörja en väntande åtgärd.
@@ -76,9 +78,13 @@ Använd sidan incidentinformation om du vill visa detaljerad information om en h
 ![Incidentinformation](../../media/mtp-incidentdetails-tabs.png)
 
 1. Gå till [https://security.microsoft.com](https://security.microsoft.com) och logga in. 
+
 2. I navigeringsfönstret väljer du **Incidenter &**  >  **Incidenter.** 
+
 3. Markera ett objekt i listan och välj sedan **Öppna incidentsida**.
+
 4. Välj **fliken Undersökningar** och välj sedan en undersökning i listan. Den utfällna rutan öppnas.
+
 5. Välj **sidan Öppna undersökning.** 
 
 ## <a name="investigation-details"></a>Undersökningsinformation

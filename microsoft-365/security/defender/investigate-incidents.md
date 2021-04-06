@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f6b085f200d3b0c71bb3608f8e5ba9ed85632676
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a6c7e7e920d18d9d8bf29d71d317008ea0c37bbf
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500330"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592102"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Undersöka incidenter i Microsoft 365 Defender
 
@@ -85,6 +85,10 @@ Om du klickar på namnet på den dator där attacken utfördes navigeras du till
 ![Bild på fliken datorer för ett incident](../../media/incident-machines.png)
 
 Genom att välja fliken Tidslinje kan du bläddra igenom datorns tidslinje och visa alla händelser och beteenden som observerats på datorn i kronologisk ordning, uppkopplade med aviseringarna upphöjda.
+
+> [!TIP]
+> Du kan göra genomsökningar på begäran på en enhet. I Säkerhetscenter för Microsoft 365 väljer du **Enhetsinventering**. Välj en enhet med aviseringar och kör sedan en antivirussökning. Åtgärder, till exempel antivirusskanningar, spåras och visas på sidan **Enhetsinventering.** Mer information finns i Kör [sökning efter Microsoft Defender Antivirus på enheter.](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)
+
 
 ## <a name="users"></a>Användare
 

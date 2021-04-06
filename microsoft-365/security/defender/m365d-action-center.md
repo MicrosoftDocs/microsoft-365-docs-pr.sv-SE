@@ -20,13 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/01/2021
-ms.openlocfilehash: d958f2787b9d66e42a32b8858139f7d13e83ddef
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: edf809c5fbc257e1dacafeed931da1a2d1471f4a
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199603"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592090"
 ---
 # <a name="the-action-center"></a>Åtgärdscentret
 
@@ -61,7 +60,7 @@ I det enhetliga åtgärdscentret samlas åtgärdsåtgärder i Defender för Endp
 Du kan använda det enhetliga åtgärdscentret om du har rätt behörigheter och en eller flera av följande prenumerationer:
 
 - [Defender för Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)
-- [Defender förr Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
+- [Microsoft Defender för Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 
 > [!TIP]
@@ -94,14 +93,14 @@ Du kan anpassa, sortera, filtrera och exportera data i Åtgärdscenter.
 
 Alla åtgärder, oavsett om de väntar på godkännande eller redan har vidtagit, spåras i Åtgärdscenter. Bland de tillgängliga åtgärderna finns följande:
 
-- Paket för insamling av undersökning 
+- Samla in undersökningspaket 
 - Isolera enhet (den här åtgärden kan ångras) 
-- Offboard-dator 
+- Avregistrera maskin 
 - Körning av släppkod 
 - Släpp från karantän 
 - Exempel på förfrågan 
 - Begränsa körning av kod (den här åtgärden kan ångras) 
-- Kör antivirussökning 
+- Kör antivirusgenomsökning 
 - Stoppa och sätta i karantän 
 
 Förutom åtgärder som vidtas automatiskt som ett resultat [](m365d-autoir.md)av automatiska undersökningar följer åtgärdscentret även åtgärder som säkerhetsgruppen har vidtagit för att hantera identifierade hot och åtgärder som har vidtagits som ett resultat av skyddsfunktioner för hot i Microsoft 365 Defender. Mer information om automatiska och manuella åtgärdsåtgärder finns [i Åtgärder.](m365d-remediation-actions.md)

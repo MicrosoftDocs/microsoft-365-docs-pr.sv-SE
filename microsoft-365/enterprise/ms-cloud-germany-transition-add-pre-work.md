@@ -1,5 +1,5 @@
 ---
-title: Före migreringen från Microsoft Cloud Deutschland
+title: Aktiviteter före migreringen från Microsoft Cloud Deutschland
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -18,28 +18,32 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: Arbeta i förväg när du flyttar från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i den nya tyska datacenterområdet.'
-ms.openlocfilehash: 9f5a38eae6d42f992879f97b8e8e1e8e6c4d56c3
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: e04246626088d9fca653c98246fd4a5b81bc1d30
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476355"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591880"
 ---
-# <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Före migreringen från Microsoft Cloud Deutschland
+# <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Aktiviteter före migreringen från Microsoft Cloud Deutschland
 
-Använd de här länkarna för att komma till de anvisningar som gäller i förväg för din organisation:
+Använd de här länkarna för att komma till de anvisningar före migreringen som är relevanta för din organisation.
 
-- Gör **följande för** alla kunder som använder Office 365 i Microsoft Cloud Deutschland. [](#general-tenant-migration-considerations)
-- Gör **det här steget** för [DNS-ändringar.](#dns)
-- Om du använder **Active Directory Federation Services lokalt** gör du [följande.](#active-directory-federation-services-ad-fs)
-- Om du använder **SharePoint Online gör** du det här [steget.](#sharepoint-online)
-- Om du använder **Exchange Online eller Exchange-hybrid** **gör** du det [här steget.](#exchange-online)
-- Om du använder **Skype för företag – Online gör** du så [här](#skype-for-business-online)
-- Om du använder en MDM-lösning (Mobile Device Management) från tredje part gör du [det här steget.](#mobile-device-management)
-- Om du använder tjänster **från** tredje part eller **LOB-appar som** är integrerade med Office 365 ska du göra [det här steget.](#line-of-business-apps)
-- Om du även använder **Dynamics 365** gör du [det här steget.](#dynamics365)
-- Om du även använder **Power BI gör** du det här [steget.](#power-bi)
-- Om du även använder **Azure-tjänster med din** Office 365-prenumeration gör du [det här steget.](#microsoft-azure)
+Om du använder
+
+- **Office 365 i Microsoft Cloud Deutschland** gör [du följande.](#general-tenant-migration-considerations)
+- **Anpassade domäner** gör du [det här steget.](#dns-entries-for-custom-domains)
+
+- **SharePoint Online**– gör [det här steget.](#sharepoint-online)
+- **Exchange Online eller** **Exchange-hybrid** gör du [det här steget.](#exchange-online)
+- **Skype för företag – Online**– gör detta [steg.](#skype-for-business-online)
+- **Dynamics 365**– gör [det här steget.](#dynamics365)
+- **Power BI**, gör [det här steget.](#power-bi)
+
+- **Active Directory Federation Services** för Azure AD Connect gör [du följande.](#active-directory-federation-services-ad-fs)
+- **Tredjepartstjänster eller** **LOB-appar (verksamhetsbaserade appar)** som är integrerade med Office 365 gör du [på det här steget.](#line-of-business-apps)
+- Det här steget är en MDM-lösning (Mobile Device Management) [från tredje part.](#mobile-device-management)
+- **Azure-tjänster** med din Office 365-prenumeration gör du [det här steget.](#microsoft-azure)
 
 ## <a name="general-tenant-migration-considerations"></a>Allmänna överväganden vid klientmigrering
 
@@ -59,7 +63,7 @@ Office 365-klientorganisationen och användaridentifierare bevaras under migreri
 | Skapa bevarandeprinciper för [hela organisationen för](https://docs.microsoft.com/microsoft-365/compliance/retention) att skydda från oavsiktlig borttagning av innehåll under migreringen.  |<ul><li>Kunder kan välja att aktivera en bevarandeprincip för hela organisationen för att säkerställa att innehåll inte oavsiktligt tas bort av slutanvändare under migreringen. </li><li>Bevarande är inte obligatoriskt, eftersom bevarande som sätts in när som helst under migreringen fungerar som förväntat, men att ha en bevarandeprincip är en säkerhetsmekanism för säkerhet. En bevarandeprincip kanske inte används av alla kunder, särskilt de som är oroliga för bevarandet.</li></ul>| Använd bevarandeprincip enligt beskrivningen i [Läs mer om bevarandeprinciper och bevarandeetiketter.](https://docs.microsoft.com/microsoft-365/compliance/retention-policies) Fel i tjänsten eller klientprogramvaran kan inträffa om detta inte görs före fas 4 av 9. </li></ul>|
 |||||
 
-## <a name="dns"></a>DNS
+## <a name="dns-entries-for-custom-domains"></a>DNS-poster för egna domäner
 
 <!-- before phase 9 -->
 
@@ -72,7 +76,7 @@ Om du har angett dns-CNAME med namnet _msoid_ i ett eller flera DNS-namnområden
 Kontrollera om du har angett ett CNAME i DNS-namnområdet genom att följa stegen nedan och ersätta _contoso.com_ med ditt eget domännamn:
 
 ```console
-nslookup -querytype=CNMAE msoid.contoso.com
+nslookup -querytype=CNAME msoid.contoso.com
 ```
 
 Om kommandoraden returnerar en DNS-post tar du bort _msoid_ CNAME från domänen.

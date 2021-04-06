@@ -19,15 +19,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
-ms.date: 01/29/2021
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 8ed6f1ccd6587d6c618974a123f0d5d42a44e753
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: be0423b0af8251347420d9e970dcfe10db0bb72b
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199639"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591929"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Automatiserad undersökning och svar i Microsoft 365 Defender
 
@@ -94,6 +93,11 @@ I Microsoft 365 Defender korrelerar varje automatisk undersökning signaler i Mi
 
 > [!NOTE]
 > Inte alla aviseringar utlöser en automatiserad undersökning och inte alla undersökningsresultat i automatiserade åtgärdsåtgärder. Det beror på hur automatisk undersökning och svar har konfigurerats för organisationen. Se [Konfigurera automatisk undersökning och svarsfunktioner i Microsoft 365 Defender.](m365d-configure-auto-investigation-response.md)
+
+## <a name="viewing-a-list-of-investigations"></a>Visa en lista över undersökningar
+
+Om du vill visa undersökningar går du till **sidan Incidenter.** Välj en incident och välj sedan **fliken Undersökningar.** Mer information finns i Information [och resultat av en automatiserad undersökning.](m365d-autoir-results.md)
+
 
 ## <a name="next-steps"></a>Nästa steg
 

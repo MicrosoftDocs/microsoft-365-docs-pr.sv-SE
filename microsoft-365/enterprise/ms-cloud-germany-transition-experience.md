@@ -1,5 +1,5 @@
 ---
-title: Vad har ändrats för migreringen till Office 365-tjänster i nya tyska datacenterområden
+title: Vad kommer att ändras efter migreringen till Office 365-tjänster i de nya tyska datacenterområdena
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -19,26 +19,26 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Sammanfattning Förstå vad som har ändrats när det gäller flytt från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i den nya tyska datacenterregion.
-ms.openlocfilehash: cadad596011bbcde02b61f01e949c93a5a62a1c3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 74ad9a662d3ea7a68ef1f82961864eb4468f6098
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923832"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591786"
 ---
-# <a name="what-has-changed-for-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Vad har ändrats för migreringen till Office 365-tjänster i nya tyska datacenterområden
+# <a name="what-will-change-after-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Vad kommer att ändras efter migreringen till Office 365-tjänster i de nya tyska datacenterområdena
 
 Klientorganisationens migreringar har utformats för att ha minimal effekt på administratörer och användare. Det finns dock saker att tänka på för varje arbetsbelastning. Läs följande avsnitt för att få bättre förståelse för migreringsupplevelsen för arbetsbelastningen.
 
 Här följer de viktigaste skillnaderna mellan Microsoft Cloud Deutschland och Office 365-tjänsterna i de nya tyska datacenterområdena.
 
-| Kategori | Microsoft Cloud Deutschland (Microsoft Cloud Deutschland) | Office 365-tjänster i de nya tyska datacenterområdena |
+| Kategori | Microsoft Cloud Germany (Microsoft Cloud Deutschland) | Office 365-tjänster i de nya tyska datacenterområdena |
 |:-------|:-----|:-------|
 | Microsoft 365-tjänster tillgängliga för prenumeration med bara en Office 365-klient | 15 tjänster | 29 tjänster <br><br> Mer information finns i [Vad är tjänstens tillgänglighet mellan de olika Office 365-molntjänsterbjudandena?](ms-cloud-germany-transition.md#serv-avail). |
-| Nya funktioner | Inga nya funktioner är tillgängliga. | Nya funktioner blir tillgängliga, konsekventa med Office 365-tjänster. |
+| Nya funktioner | Inga nya funktioner blir tillgängliga. | Nya funktioner blir tillgängliga, konsekventa med Office 365-tjänster. |
 | Dataförvaltaren | Ja | Nej |
 | Samarbete mellan klientorganisationen och globala Office 365-klientorganisationen | Nej | Ja |
-| Kundens datahem | Kunddata lagras enbart i tyska datacenter. | Microsoft lagrar följande kunddata i vila exklusivt i Tyskland: <ul><li> Postlådeinnehåll i Exchange Online (e-posttext, kalenderposter och innehållet i e-postbilagor) </li><li> SharePoint Online-webbplatsinnehåll och filer som lagrats på webbplatsen och filer som laddats upp till OneDrive för företag </li></ul> |
+| Kundens datahem | Kunddata lagras enbart i tyska datacenter. | Microsoft lagrar följande kunddata i vila exklusivt i Tyskland: <ul><li> Postlådeinnehåll i Exchange Online (brödtext, kalenderposter och innehållet i e-postbilagor) </li><li> SharePoint Online-webbplatsinnehåll och filer som lagrats på webbplatsen och filer som laddats upp till OneDrive för företag </li></ul> |
 | Tillämpliga villkor | [Villkor för onlinetjänster](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) med detta [tillägg](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=64) | [Villkor för onlinetjänster](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
 ||||
 
@@ -79,6 +79,8 @@ Att tänka på:
 ## <a name="office-services"></a>Office-tjänster
 
 Office Online-tjänster är `office.de` åtkomliga via före och under övergången. När användarnas postlådor har övergåt till Office 365-tjänsterna bör användarna börja använda URL-adresser för Office 365-tjänster. Allt eftersom efterföljande arbetsbelastningar migreras till Office 365-tjänster börjar gränssnittet från office.com-portalen att fungera.
+
+Den senast använda tjänsten i Office är en cutover från Microsoft Cloud Deutschland till globala Office 365-tjänster, inte en migrering. Endast MU-länkar från den globala Office 365-tjänstsidan visas efter migrering från Office.com portalen. MRU-länkar från Microsoft Cloud Deutschland visas inte som MNA-länkar i globala Office 365-tjänster. I globala Office 365-tjänster är MNAU-länkar bara tillgängliga när klientorganisationens migrering har nått fas 9.
 
 ## <a name="exchange-online-protection"></a>Exchange Online Protection
 
