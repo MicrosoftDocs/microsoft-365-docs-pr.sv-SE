@@ -274,15 +274,15 @@
           items:
             - name: Översikt
               href: ms-cloud-germany-transition.md
-            - name: Välj till migrering
-              href: ms-cloud-germany-migration-opt-in.md
-            - name: Vad har förändrats
+            - name: Vad som kommer att ändras
               href: ms-cloud-germany-transition-experience.md
-            - name: Förarbete
+            - name: Anmäl dig för migrering
+              href: ms-cloud-germany-migration-opt-in.md
+            - name: Före migrering
               href: ms-cloud-germany-transition-add-pre-work.md
-            - name: Migreringsfaser åtgärder och påverkan (general)
+            - name: Åtgärder och påverkan i migreringsfaser
               href: ms-cloud-germany-transition-phases.md
-            - name: Migreringsfaser åtgärder och påverkan (avancerat)
+            - name: Efter migrering
               href: ms-cloud-germany-transition-add-experience.md
             - name: Ytterligare information
               items:
@@ -292,6 +292,8 @@
                   href: ms-cloud-germany-transition-add-devices.md
                 - name: Steg för migrering för AD FS
                   href: ms-cloud-germany-transition-add-adfs.md
+                - name: eDiscovery
+                  href: ms-cloud-germany-transition-add-scc.md
 - name: Identitet
   items:
     - name: Översikt
