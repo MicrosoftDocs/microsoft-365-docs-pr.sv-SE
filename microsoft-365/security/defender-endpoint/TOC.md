@@ -115,6 +115,8 @@
 ##### [Aktivera kontrollerad mappåtkomst](enable-controlled-folders.md)
 ##### [Anpassa kontrollerad mappåtkomst](customize-controlled-folders.md)
 
+### [Nätverksenheter](network-devices.md)
+
 ### [Microsoft Defender för Endpoint för Mac]()
 #### [Översikt över Microsoft Defender för Endpoint för Mac](microsoft-defender-endpoint-mac.md)
 #### [Nyheter](mac-whatsnew.md)
