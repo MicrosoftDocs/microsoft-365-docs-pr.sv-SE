@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1460deef11a87044530c54c8b10637284829a0cd
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6dfa22b2afb33c318eae8937888b5b75a1742938
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207436"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599474"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Automatisk undersökning och svar (AIR) i Microsoft Defender för Office 365
 
@@ -81,11 +81,9 @@ AIR-funktionerna ingår i [Microsoft Defender för Office 365,](defender-for-off
 - [Principer för program mot skadlig programvara](protect-against-threats.md#part-1---anti-malware-protection)
 - [Skydd mot virus](protect-against-threats.md#part-2---anti-phishing-protection)
 - [Skydd motspam](protect-against-threats.md#part-3---anti-spam-protection)
-- [Skydd mot virus](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-2---anti-phishing-protection)
-- [Skydd motspam](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-3---anti-spam-protection)
-- [Säkra länkar och säkra bifogade filer](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
-- [Säkra bilagor för SharePoint, OneDrive och Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
-- [Automatisk rensning utan timme för e-post](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#zero-hour-auto-purge-for-email-in-eop)
+- [Säkra länkar och säkra bifogade filer](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
+- [Säkra bilagor för SharePoint, OneDrive och Microsoft Teams](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
+- [Automatisk rensning utan timme för e-post](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)
 
 Dessutom bör du granska [organisationens aviseringsprinciper,](../../compliance/alert-policies.md)särskilt [standardprinciperna i kategorin Hothantering.](../../compliance/alert-policies.md#default-alert-policies)
 
@@ -93,8 +91,8 @@ Dessutom bör du granska [organisationens aviseringsprinciper,](../../compliance
 
 Microsoft 365 innehåller många inbyggda aviseringsprinciper som hjälper till att identifiera missbruk av behörigheter för Exchange-administratörer, skadlig aktivitet, potentiella externa och interna hot samt informationsstyrningsrisker. Flera av [standardaviseringsprinciperna](../../compliance/alert-policies.md#default-alert-policies) kan utlösa automatiska undersökningar. I följande tabell beskrivs aviseringarna som utlöser automatiska undersökningar, deras allvarlighetsgrad i Säkerhetscenter i Microsoft 365 och hur de genereras:
 
-|Avisering|Allvarlighetsgrad|Så här genereras aviseringen|
-|:---|:---|:---|
+|Varning|Allvarlighetsgrad|Så här genereras aviseringen|
+|---|---|---|
 |Ett potentiellt skadligt URL-klick upptäcktes|**Högsta**|Den här aviseringen genereras när något av följande inträffar: <ul><li>En användare som skyddas [av säkra](safe-links.md) länkar i organisationen klickar på en skadlig länk</li><li>Omdömesändringar för URL-adresser identifieras av Microsoft Defender för Office 365</li><li>Användarna åsidosätter varningssidor för säkra länkar (baserat på organisationens [princip för säkra länkar).](set-up-safe-links-policies.md)</li></ul> <p> Mer information om händelser som utlöser den här aviseringen finns [i Konfigurera principer för säkra länkar.](set-up-safe-links-policies.md)|
 |Ett e-postmeddelande rapporteras av en användare som skadlig kod eller nätt|**Information**|Den här varningen genereras när användare i organisationen [](enable-the-report-message-add-in.md) rapporterar meddelanden som nätfiskemeddelanden med hjälp av tilläggen Rapportmeddelande eller [Rapportera nätfiske.](enable-the-report-phish-add-in.md)|
 |E-postmeddelanden som innehåller skadlig programvara tas bort efter leverans|**Information**|Den här aviseringen genereras när e-postmeddelanden som innehåller skadlig programvara levereras till postlådor i organisationen. Om detta inträffar tar Microsoft bort de smittade meddelandena från Exchange Online-postlådor med automatisk [rensning utan timme.](zero-hour-auto-purge.md)|
@@ -122,7 +120,6 @@ Behörigheter beviljas genom vissa roller, till exempel de som beskrivs i följa
 - Säkerhetsadministratörer (inklusive globala administratörer)
 - Organisationens team för säkerhetsåtgärder (inklusive säkerhetsläsare och de med rollen **Sök och Rensning)**
 - Slutanvändare:
-
 
 ## <a name="changes-are-coming-soon-in-your-security-center"></a>Ändringar kommer snart i ditt säkerhetscenter
 
@@ -152,9 +149,9 @@ Följande tabell innehåller ändringar och förbättringar som kommer till AIR 
 |**Fliken Enheter**|Fliken **Enheter** har ett flikformat med en sammanfattningsvy och möjligheten att filtrera efter entitetstyp. Fliken **Enheter** innehåller nu alternativet **Sök** efter förutom alternativet Öppna **i Utforskaren.** Nu kan du använda [antingen Threat Explorer](threat-explorer.md) [eller avancerad sökning](../defender-endpoint/advanced-hunting-overview.md) för att hitta enheter och hot och filtrera på resultat.|
 |**Fliken** Åtgärder|Den uppdaterade **fliken** Åtgärder innehåller nu fliken **Väntande åtgärder** och fliken **Åtgärdshistorik.** Åtgärder kan godkännas (eller avvisas) i ett sidofönster som öppnas när du väljer en väntande åtgärd.|
 |**Fliken Bevis**|På den **nya fliken** Bevis visas nyckelentitetsresultat som är relaterade till åtgärder. Åtgärder relaterade till varje bevis kan godkännas (eller avvisas) i ett sidofönster som öppnas när du väljer en väntande åtgärd.|
-|**Åtgärdscenter**|I det **uppdaterade åtgärdscentret** [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () samlas väntande och slutförda åtgärder via e-post, enheter och identiteter. Mer information finns i Åtgärdscenter. (Mer information finns [i Åtgärdscenter](https://docs.microsoft.com/microsoft-365/security/defender/mtp-action-center).)
-|**Sidan Incidenter**|Sidan **Incidenter** korrelerar nu flera undersökningar för att ge en bättre konsoliderad vy över undersökningar. ([Läs mer om incidenter](https://docs.microsoft.com/microsoft-365/security/defender/incidents-overview).)
-
+|**Åtgärdscenter**|I det **uppdaterade åtgärdscentret** [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () samlas väntande och slutförda åtgärder via e-post, enheter och identiteter. Mer information finns i Åtgärdscenter. (Mer information finns [i Åtgärdscenter](../defender/m365d-action-center.md).)|
+|**Sidan Incidenter**|Sidan **Incidenter** korrelerar nu flera undersökningar för att ge en bättre konsoliderad vy över undersökningar. ([Läs mer om incidenter](../defender/incidents-overview.md).)|
+|
 
 ## <a name="next-steps"></a>Nästa steg
 

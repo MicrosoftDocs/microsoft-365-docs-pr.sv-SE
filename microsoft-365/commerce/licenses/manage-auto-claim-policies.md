@@ -1,5 +1,5 @@
 ---
-title: Hantera principer för automatiskt anspråk
+title: Hantera principer för automatiska anspråk
 f1.keywords:
 - CSH
 ms.author: cmcatee
@@ -18,14 +18,14 @@ ms.custom:
 - commerce
 search.appverid:
 - MET150
-ms.openlocfilehash: bf3f79e425b3f7cd86f1a5ab95a337ef5127e345
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 001b612820bb13873ec18733d68828837fcecd78
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911478"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599457"
 ---
-# <a name="manage-auto-claim-policies"></a>Hantera principer för automatiskt anspråk
+# <a name="manage-auto-claim-policies"></a>Hantera principer för automatiska anspråk
 
 Med principen för automatiskt anspråk kan användare automatiskt begära en licens för en produkt första gången de loggar in i en app. Som administratör tilldelar du vanligtvis licenser till användare antingen manuellt eller med gruppbaserad licensiering. Genom att använda principer för automatiskt anspråk hanterar du de produkter för vilka användare automatiskt kan begära licenser. Du kan också styra vilka produkter licenserna kommer från.
 
@@ -43,7 +43,7 @@ När du har skapat en princip för automatiskt anspråk kan du utföra följande
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-Du måste vara global administratör för att skapa och hantera principer för automatiskt anspråk. Mer information finns i [Om Microsoft 365-administratörsroller](../../admin/add-users/about-admin-roles.md).
+Du måste vara global, användare eller licensadministratör för att kunna skapa och hantera principer för automatiskt anspråk. Mer information finns i [Om Microsoft 365-administratörsroller](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="turn-the-auto-claim-policy-feature-on-or-off"></a>Aktivera eller inaktivera principen för automatiskt anspråk
 
@@ -55,6 +55,8 @@ Principen för automatiskt anspråk är inaktiverad som standard. Innan du kan a
 2. I mitten av sidan väljer du **knappen Aktivera** inställning.
 
 ### <a name="turn-off-auto-claim-policies"></a>Inaktivera principer för automatiskt anspråk
+
+Det är bara en global administratör som kan inaktivera inställningen för automatiskt anspråk.
 
 1. I administrationscentret går du till sidan **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">för organisationen.</a>
 2. Längst ned i tabellen väljer du **Användarägda appar och tjänster.**

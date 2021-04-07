@@ -20,12 +20,12 @@ description: Hitta och använda rapporter för Microsoft Defender för Office 36
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 28978dbca3f9e4039b4f8c21c49a2963802afa54
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0b3e1ddf48ccd74b36c594d232c6761b921dee8c
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207128"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599905"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>Visa Defender för Office 365-rapporter i instrumentpanelen Rapporter i & Säkerhets- och efterlevnadscenter
 
@@ -100,7 +100,7 @@ Om du **klickar på Visa** informationstabell ger rapporten en nästan realtidsv
   - **Mottagaradress**
   - **Avsändarens adress**
   - **Meddelande-ID:** Tillgängligt i **sidhuvudet för meddelande-ID** i meddelandehuvudet och ska vara unikt. Ett exempelvärde är `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (observera vinkelparenteserna).
-  - **Arkiv**
+  - **Fil**
 
   Om du **klickar på** Filter kan du ändra rapporten med följande filter:
 
@@ -113,7 +113,7 @@ Om du **klickar på Visa** informationstabell ger rapporten en nästan realtidsv
   - **Mottagaradress**
   - **Avsändarens adress**
   - **Meddelande-ID**
-  - **Arkiv**
+  - **Fil**
   - **Ämne**
 
   Om du **klickar på** Filter kan du ändra resultatet med följande filter:
@@ -182,7 +182,7 @@ Om du **klickar på Visa** informationstabell ger rapporten en nästan realtidsv
   - **Mottagaradress**
   - **Avsändarens adress**
   - **Meddelande-ID**
-  - **Arkiv**
+  - **Fil**
   - **Ämne**
 
   Om du **klickar på** Filter kan du ändra resultatet med följande filter:
@@ -196,7 +196,7 @@ Om du **klickar på Visa** informationstabell ger rapporten en nästan realtidsv
   - **Mottagaradress**
   - **Avsändarens adress**
   - **Meddelande-ID**
-  - **Arkiv**
+  - **Fil**
 
   Om du **klickar på** Filter kan du ändra rapporten med följande filter:
 
@@ -282,8 +282,8 @@ Rapporten **om skydd mot URL-hot** har två aggregerade vyer som uppdateras en g
 - **Åtgärden URL-klickskydd:** Visar antalet URL-klick som användare i organisationen har klickat på och resultatet av klicket:
 
   - **Blockerad** (användaren blockerades från att navigera till URL:en)
-  - **Blockeras och klickas igenom**
-  - **Klickade igenom under genomsökning**
+  - **Blockeras och klickas igenom** (användaren har valt att fortsätta navigera till URL-adressen)
+  - **Klickade igenom under genomsökningen** (användaren har klickat på länken innan genomsökningen slutfördes)
 
   Ett klick anger att användaren har klickat igenom blockeringssidan till den skadliga webbplatsen (administratörer kan inaktivera Klicka igenom i Principer för säkra länkar).
 
@@ -350,7 +350,7 @@ För att kunna visa och använda rapporterna som beskrivs i den här artikeln m�
 - **Organisationshantering**
 - **Säkerhetsadministratör**
 - **Säkerhetsläsare**
-- **Global läsare**
+- **Global Reader**
 
 Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 

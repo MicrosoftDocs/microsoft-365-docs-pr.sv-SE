@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Lär dig hur du konfigurerar Microsoft 365-appar som Teams, OneDrive och SharePoint för samarbete med personer utanför organisationen.
-ms.openlocfilehash: 359e72c12c43ca1ea984f93d87ab4868e6d1eb66
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 85aa77982fa15adb62bd587856546d2828edb942
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916400"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599825"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Samarbeta med personer utanför organisationen
 
@@ -33,6 +33,8 @@ Samarbetet med personer utanför organisationen består av två huvudkomponenter
 
 - **Aktivera delning** – Konfigurera delningskontrollerna i Azure Active Directory, Teams, Microsoft 365-grupper och SharePoint så att rätt delningsnivå tillåts för organisationen.
 - **Aktivera ytterligare** säkerhet – De grundläggande delningsfunktionerna kan konfigureras så att personer utanför din organisation måste autentisera, men Microsoft 365 tillhandahåller många ytterligare säkerhets- och efterlevnadsfunktioner som hjälper dig att skydda dina data och underhålla dina styrningsprinciper medan du delar externt.
+
+Läs [Konfigurera säkert samarbete med Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) och Microsoft Teams om du vill veta hur extern delning kan delas med den övergripande vägledningen för Microsoft 365-samarbete.
 
 ## <a name="enable-sharing"></a>Aktivera delning
 

@@ -12,12 +12,12 @@ ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Administratörer kan lära sig att använda widgeten Köer i instrumentpanelen för e-postflöde i säkerhets- och efterlevnadscentret för & för att övervaka misslyckade e-postflöden till sina lokala organisationer eller partnerorganisationer via utgående anslutningar.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14cadd0e8611fbbc65c3bdc9849beebf3a3eb34d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 65452b0ad7c31673c910ba48c9c6709995e563ce
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207541"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599989"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Köinsikter i säkerhets- & säkerhets- och efterlevnadscentret
 
@@ -87,7 +87,7 @@ Om du klickar på antalet meddelanden på widgeten visas en **utfällbara** meny
 - **Målserver**
 - **Senaste IP-adress**
 - **Senaste felet**
-- **Så här åtgärdar** du problemet: Vanliga problem och lösningar finns tillgängliga. Om länken Åtgärda **det nu är** tillgänglig kan du åtgärda problemet genom att klicka på länken. Annars klickar du på någon av de tillgängliga länkarna för mer information om felet och möjliga lösningar.
+- **Så här åtgärdar** du problemet: Vanliga problem och lösningar finns tillgängliga. Om länken **Åtgärda det nu** är tillgänglig, klickar du på den för att åtgärda problemet. Annars klickar du på någon av de tillgängliga länkarna för mer information om felet och möjliga lösningar.
 
 ![Information när du klickar på köinsikter på instrumentpanelen för e-postflöde](../../media/mfi-queues-details.png)
 

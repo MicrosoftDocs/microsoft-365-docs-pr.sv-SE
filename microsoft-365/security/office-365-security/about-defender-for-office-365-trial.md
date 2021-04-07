@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Administratörer kan läsa mer om utvärderingsläget för Microsoft Defender för Office 365
-ms.openlocfilehash: c2c1e44741a8604ce60586a85a28d32851285403
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1a86a73dbdb8f2549fb5dc03ece56497c5ff0b1e
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207460"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599801"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Om utvärderingsversionen av Microsoft Defender för Office 365
 
@@ -98,7 +98,7 @@ Kraftfulla funktioner hjälper dig att identifiera, prioritera och undersöka ho
 - [Identifiering av hot i Utforskaren och i realtid](threat-explorer.md)
 - [Realtidsrapporter i Defender för Office 365](view-reports-for-mdo.md)
 - [Hotspårningar – nytt och värt att uppmärksamma](threat-trackers.md)
-- Integrering med [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
+- Integrering med [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ### <a name="response-and-remediation"></a>Svar och åtgärder
 

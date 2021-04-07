@@ -19,12 +19,12 @@ ms.custom:
 description: Administratörer kan ta reda på hur de använder portalen för inskickade innehåll i Säkerhets- och efterlevnadscenter för & för att skicka misstänkta e-postmeddelanden, misstänkta nätfiskemeddelanden, skräppost och andra potentiellt skadliga meddelanden, URL:er och filer till Microsoft för genomsökning.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 96a5469b1093c71997747b2c4c3b49bc1964f72b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: e0975d5b6c2d29c94a30f7bbc703221b80217761
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581076"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599881"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Använd administrationsinskick för att skicka misstänkt skräppost, nättr ut, URL:er och filer till Microsoft
 
@@ -78,7 +78,7 @@ Andra sätt att skicka e-postmeddelanden, URL:er och bifogade filer till Microso
    - **Fil:** Klicka på **Välj fil**. Leta rätt på och välj .eml- eller .msg-filen i dialogrutan som öppnas och klicka sedan på **Öppna**.
 
    > [!NOTE]
-   > Administratörer med Defender för Office 365 abonnemang 1 eller abonnemang 2 kan skicka meddelanden så gamla som 30 dagar. Andra administratörer kan bara gå tillbaka 7 dagar.
+   > Möjligheten att skicka meddelanden som gamla som 30 dagar har tillfälligt stängts av för Defender för Office 365-kunder. Administratörer kan bara gå tillbaka 7 dagar.
 
 2. I avsnittet **Mottagare** anger du en eller flera mottagare som du vill köra en principkontroll mot. Principkontrollen avgör om förbikoppling av e-post beror på användar- eller organisationsprinciper.
 

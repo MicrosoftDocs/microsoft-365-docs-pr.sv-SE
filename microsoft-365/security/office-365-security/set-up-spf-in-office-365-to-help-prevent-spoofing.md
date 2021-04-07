@@ -19,12 +19,12 @@ ms.custom:
 description: Lär dig hur du uppdaterar en DNS-post (Domain Name Service) för att använda en SPF-post (Sender Policy Framework) med din anpassade domän i Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1aff62792be86b9c77430777c23edc655fe3bb9b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0a2c400e77c83fa61e276dee1d870835d466b5af
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207063"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599553"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Konfigurera SPF för att förhindra förfalskning
 
@@ -137,6 +137,6 @@ Avancerade exempel och en mer detaljerad diskussion om SPF-syntax som stöds, f�
 
  SPF har utformats för att hjälpa till att förhindra förfalskning men det finns förfalskningsmetoder som SPF inte skyddar mot. För att skydda mot dessa ska du, efter att ha konfigurerat SPF, även konfigurera DKIM och DMARC för Office 365.
 
-[DKIM](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide) e-postautentiseringens mål är att bevisa att innehållet i e-postmeddelandet inte har manipulerats.
+[DKIM](use-dkim-to-validate-outbound-email.md) e-postautentiseringens mål är att bevisa att innehållet i e-postmeddelandet inte har manipulerats.
 
-[DMARC](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide) E-postautentiseringens mål är att se till att SPF- och DKIM-information matchar Från-adressen.
+[DMARC](use-dmarc-to-validate-email.md) E-postautentiseringens mål är att se till att SPF- och DKIM-information matchar Från-adressen.

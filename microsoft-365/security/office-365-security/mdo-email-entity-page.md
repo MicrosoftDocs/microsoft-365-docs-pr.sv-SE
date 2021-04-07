@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Microsoft Defender för Office 365 E5- och ATP P1- och ATP P2-kunder kan nu få en 360-gradersvy av varje e-postmeddelande med entitetssidan för e-post.
-ms.openlocfilehash: 0fbf3843aa6e6cef1e748d3b71a68a42efd6fc24
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6d2777113e7e9f9ce760dab3b83252eceab520ff
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207074"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599493"
 ---
 # <a name="the-email-entity-page"></a>Sidan E-postenhet
 
@@ -30,16 +30,16 @@ ms.locfileid: "51207074"
 - [Använda sidflikar för e-post entitet](#use-email-entity-page-tabs)
 - [Nytt för sidan e-post entitet](#new-to-the-email-entity-page)
 
-Administratörer för Microsoft Defender för Office 365 (eller MDO) E5 och MDO P1 och P2 har en 360-gradersvy av e-post med hjälp av sidan E-post **entitet.** Den här sidan för att gå till e-post har skapats för att förbättra informationen som levereras i e-postutforskaren i [Hotutforskaren.](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer-views)
+Administratörer för Microsoft Defender för Office 365 (eller MDO) E5 och MDO P1 och P2 har en 360-gradersvy av e-post med hjälp av sidan E-post **entitet.** Den här sidan för att gå till e-post har skapats för att förbättra informationen som levereras i e-postutforskaren i [Hotutforskaren.](threat-explorer-views.md)
 
 ## <a name="reach-the-email-entity-page"></a>Nå entitetssidan för e-post
 
 Oavsett om det befintliga säkerhets- och efterlevnadscentret för Office (protection.office.com) eller det nya säkerhetscentret för Microsoft 365 (security.microsoft.com) kan du se och använda sidan med e-post entitet.
 
-|Centrera  |URL  |Navigering  |
-|---------|---------|---------|
-|Säkerhets- & efterlevnad |protection.office.com | Threat Management > Explorer   |
-|Microsoft 365 Säkerhetscenter |security.microsoft.com | E& för samarbete > Utforskaren |
+|Centrera|URL|Navigering|
+|---|---|---|
+|Säkerhets- & efterlevnad |protection.office.com|\>Hothanteringsutforskaren|
+|Microsoft 365 Säkerhetscenter |security.microsoft.com|E-& \> samarbetsutforskaren|
 
 I Hotutforskaren väljer du ämnet för ett e-postmeddelande som du undersöker. En guldlist visas högst upp i e-postmeddelandet. Den här inbjudan till den nya sidan säger "Prova vår nya sida för e-post entitet med bättre data...". Välj för att visa den nya sidan.
 
@@ -81,22 +81,23 @@ Med flikarna längst upp på entitetssidan kan du undersöka e-post effektivt.
 Det finns nya funktioner på sidan för den här e-postentitet. Här är listan.
 
 ### <a name="email-preview-for-cloud-mailboxes"></a>Förhandsgranskning av e-post för molnbaserade postlådor
+
 Administratörer kan förhandsgranska e-postmeddelanden i molnbaserade ***postlådor,*** om e-postmeddelandena fortfarande finns kvar i molnet. Om en mjuk borttagning (av en administratör eller användare) eller ZAP (för karantän) används inte längre e-postmeddelanden på molnplatsen. I så fall kan inte administratörer förhandsgranska de specifika e-postmeddelandena. E-postmeddelanden som släppts, eller där leveransen misslyckades, kom faktiskt aldrig fram till postlådan. Därför kan inte administratörerna förhandsgranska dessa e-postmeddelanden heller.
 
 > [!WARNING]
->För förhandsgranskning av e-postmeddelanden krävs en särskild **roll som** heter * Förhandsversion _ för att tilldelas till administratörer. Du kan lägga till den här rollen genom att gå  till _ *Behörigheter &* roller * > E&-post och samarbetsroller i *security.microsoft.com* **eller Behörigheter** i *protection.office.com*. Lägg till ***rollen*** Förhandsgranska i någon av rollgrupperna, eller en kopia av en rollgrupp som gör att administratörer i organisationen kan arbeta i Utforskaren med hot.
+> För förhandsgranskning av e-postmeddelanden krävs en särskild **roll som** heter * Förhandsversion _ för att tilldelas till administratörer. Du kan lägga till den här rollen genom att gå  till _ *Behörigheter &* roller * > E&-post och samarbetsroller i *security.microsoft.com* **eller Behörigheter** i *protection.office.com*. Lägg till ***rollen*** Förhandsgranska i någon av rollgrupperna, eller en kopia av en rollgrupp som gör att administratörer i organisationen kan arbeta i Utforskaren med hot.
 
 ### <a name="detonation-details"></a>Information om detonation
 
 Den här informationen är specifik för e-postbilagor och URL-adresser.
 
 Användarna ser bättre information om kända skadliga bilagor eller hyperlänkar i postlådorna, inklusive detonationskedjan, sammanfattningen av detonationen, skärmbilden och den observerade funktionsinformationen för att hjälpa kunderna att förstå varför den bifogade filen eller URL:en anses vara skadlig och detonerad.
- 
+
 - *Detonationskedjan*: En enda fil- eller URL-detonation kan utlösa flera detonationer. Detonation-kedjan spårar sökvägen till detonationer, inklusive den ursprungliga skadliga filen eller URL-adressen som orsakade bedömning, och alla andra filer eller URL-adresser som upptäckts av detonationen. Dessa URL:er eller bifogade filer kanske inte finns direkt i e-postmeddelandet, men det är viktigt att ta med denna analys för att fastställa varför filen eller URL:en hittades som skadlig.
 - *Sammanfattning av detonation:* Den här ger information om:
-    - Detonationstidsintervall.
-    - Bedömning av den bifogade filen eller URL:en.
-    - Relaterad information (filnummer, URL:er, IP-adresser eller domäner) som är andra enheter som utser objekt vid detonation.
+  - Detonationstidsintervall.
+  - Bedömning av den bifogade filen eller URL:en.
+  - Relaterad information (filnummer, URL:er, IP-adresser eller domäner) som är andra enheter som utser objekt vid detonation.
 - *Skärmbild av detonation*: Visar skärmbilder tagna under detonationsprocessen.
 - *Information om avonation:* Det här är exakt den funktionsinformation som gäller för varje process som ägde rum vid detonationen.
 
@@ -111,45 +112,45 @@ Användarna ser bättre information om kända skadliga bilagor eller hyperlänka
 *E-postinformation:* Information krävs för en djupare förståelse av e-post på *fliken* Analys.
 
 - *Exchange-transportregler (ETR-regler* eller E-postflödesregler) : Dessa regler tillämpas på ett meddelande på transportnivån och har företräde framför phish- och spam-bedömningar. Dessa kan bara skapas och ändras i administrationscentret för Exchange, men om något ETR-problem gäller för ett meddelande visas ETR-namnet och GUID här. Värdefull information för spårningssyfte.
-    
+
 - *Åsidosättningar* i systemet: Det här är ett sätt att göra undantag till den leveransplats som är avsedd för ett meddelande genom att åsidosätta leveransplatsen som anges av systemet (enligt teknik för hot och identifiering).
-    
+
 - *Skräppostpostlåderegel:* Skräppost är en dold inkorgsregel som aktiveras som standard i alla postlådor.
-    - När skräppostregeln har aktiverats för postlådan kan Exchange Online Protection (EOP) flytta meddelanden till skräppost enligt vissa villkor. Flytten kan baseras på åtgärden skräppostfiltrering av bedömning Flytta meddelandet till mappen Skräppost eller i listan Spärrade avsändare i postlådan. Om du inaktiverar skräppostregeln förhindras leverans av meddelanden till mappen Skräppost baserat på *listan Betrodda* avsändare i postlådan.
-    - När skräppostregeln är  inaktiverad för postlådan kan EOP inte flytta meddelanden till mappen Skräppost baserat på åtgärden skräppostfiltreringsåtgärden Flytta meddelandet till mappen Skräppost eller samlingen lista över säkra e-postmeddelanden i postlådan.
-    
+  - När skräppostregeln har aktiverats för postlådan kan Exchange Online Protection (EOP) flytta meddelanden till skräppost enligt vissa villkor. Flytten kan baseras på åtgärden skräppostfiltrering av bedömning Flytta meddelandet till mappen Skräppost eller i listan Spärrade avsändare i postlådan. Om du inaktiverar skräppostregeln förhindras leverans av meddelanden till mappen Skräppost baserat på *listan Betrodda* avsändare i postlådan.
+  - När skräppostregeln är  inaktiverad för postlådan kan EOP inte flytta meddelanden till mappen Skräppost baserat på åtgärden skräppostfiltreringsåtgärden Flytta meddelandet till mappen Skräppost eller samlingen lista över säkra e-postmeddelanden i postlådan.
+
 - *BCL (Bulk Compliant Level)*: BCL (Bulk Complaint Level) för meddelandet. En högre BCL anger att det är mer sannolikt att ett massutskick av e-postmeddelande skapar klagomål (det naturliga resultatet om e-postmeddelandet kan vara skräppost).
-    
+
 - *SCL (Spam Confidence Level):* SCL (Spam Confidence Level) för meddelandet. Ett högre värde innebär att det är mer troligt att meddelandet är skräppost.
 
 - *Domännamn:* Är avsändarens domännamn.
-    
+
 - *Domänägare:* Anger ägaren av den avsändande domänen.
-    
+
 - *Domänplats:* Anger platsen för den avsändande domänen.
-    
+
 - *Datum då domänen skapades:* Anger datumet då avsändardomänen skapades. En nyligen skapad domän är något som du kan vara försiktig med om andra signaler anger något misstänkt beteende.
 
 *E-postautentisering:* E-postautentiseringsmetoder som används av Microsoft 365 är SPF, DKIM och DMARC.
 
 - Sender Policy Framework (**SPF**): Beskriver resultaten för SPF-kontrollen för meddelandet. Möjliga värden kan vara:
-    - Pass (IP address): SPF-kontrollen för meddelandet som skickas och innehåller avsändarens IP-adress. Klienten har tillåtelse att skicka eller vidarebefordra e-post på avsändarens domän.
-    - Fel (IP-adress): SPF-kontrollen för meddelandet misslyckades och innehåller avsändarens IP-adress. Det här kallas ibland för en hard fail.
-    - Softfail (orsak): SPF-posten har angett att värden inte tillåts skicka men är under övergång.
-    - Neutral: SPF-posten anger uttryckligen att den inte kan avgöra om IP-adressen har behörighet att skicka.
-    - Inget: Domänen har ingen SPF-post, eller så utvärderas inte SPF-posten till ett resultat.
-    - Så här: Ett tillfälligt fel har uppstått. Till exempel ett DNS-fel. Samma kontroll kan senare lyckas.
-    - Permerror: Ett permanent fel har inträffat. Domänen har till exempel en dåligt formaterad SPF-post.
+  - Pass (IP address): SPF-kontrollen för meddelandet som skickas och innehåller avsändarens IP-adress. Klienten har tillåtelse att skicka eller vidarebefordra e-post på avsändarens domän.
+  - Fel (IP-adress): SPF-kontrollen för meddelandet misslyckades och innehåller avsändarens IP-adress. Det här kallas ibland för en hard fail.
+  - Softfail (orsak): SPF-posten har angett att värden inte tillåts skicka men är under övergång.
+  - Neutral: SPF-posten anger uttryckligen att den inte kan avgöra om IP-adressen har behörighet att skicka.
+  - Inget: Domänen har ingen SPF-post, eller så utvärderas inte SPF-posten till ett resultat.
+  - Så här: Ett tillfälligt fel har uppstått. Till exempel ett DNS-fel. Samma kontroll kan senare lyckas.
+  - Permerror: Ett permanent fel har inträffat. Domänen har till exempel en dåligt formaterad SPF-post.
 
 - **DKIM**(DomainKeys Identified Mail):
-    - Godkänd: Anger DKIM-kontrollen för meddelandet som har passerat.
-    - Fel (orsak): Anger DKIM-kontrollen för meddelandet misslyckades och varför. Om du till exempel inte har signerat meddelandet eller om signaturen inte har verifierats.
-    - Ingen: Anger att meddelandet inte har signerats. Detta indikerar kanske, men kanske inte, att domänen har ett DKIM-register eller att DKIM-registret inte utvärderats till ett resultat, endast att meddelandet inte signerats.
+  - Godkänd: Anger DKIM-kontrollen för meddelandet som har passerat.
+  - Fel (orsak): Anger DKIM-kontrollen för meddelandet misslyckades och varför. Om du till exempel inte har signerat meddelandet eller om signaturen inte har verifierats.
+  - Ingen: Anger att meddelandet inte har signerats. Detta indikerar kanske, men kanske inte, att domänen har ett DKIM-register eller att DKIM-registret inte utvärderats till ett resultat, endast att meddelandet inte signerats.
 
 - **DMARC**(Domain-based Message Authentication, Reporting and Conformance):
-    - Godkänd: Anger DMARC-kontrollen för meddelandet som skickas.
-    - Fel: Anger DMARC-kontrollen för meddelandet misslyckades.
-    - Bestguesspass: Anger att det inte finns någon DMARC TXT-post för domänen, men om någon hade funnits skulle DMARC-kontrollen för meddelandet ha passerat.
-    - Ingen: Anger att det inte finns någon DMARC TXT-post för den avsändande domänen i DNS.
+  - Godkänd: Anger DMARC-kontrollen för meddelandet som skickas.
+  - Fel: Anger DMARC-kontrollen för meddelandet misslyckades.
+  - Bestguesspass: Anger att det inte finns någon DMARC TXT-post för domänen, men om någon hade funnits skulle DMARC-kontrollen för meddelandet ha passerat.
+  - Ingen: Anger att det inte finns någon DMARC TXT-post för den avsändande domänen i DNS.
 
 *Sammansatt autentisering:* Det här är ett värde som används av Microsoft 365 för att kombinera e-postautentisering som SPF, DKIM och DMARC för att avgöra om meddelandet är äkta. Den använder domänen *Från:* för e-postmeddelandet som grund för utvärdering.

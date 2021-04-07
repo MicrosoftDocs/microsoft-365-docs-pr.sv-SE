@@ -19,12 +19,12 @@ ms.custom:
 description: Administratörer kan lära sig hur de visar och hanterar meddelanden i karantän för alla användare i Exchange Online Protection (EOP). Administratörer i organisationer med Microsoft Defender för Office 365 kan också hantera filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3dee441a3442454c5f2978422d18a2084f8377f3
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: 7dc7fd26d7a81bc76850af4799363c8d17fc1c83
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215546"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599541"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Hantera meddelanden och filer i karantän som administratör i EOP
 
@@ -189,7 +189,6 @@ När du har valt ett meddelande kan du välja mellan flera alternativ för vad d
 - **Visa meddelandehuvud**: Välj den här länken om du vill visa meddelandehuvudets text. Om du vill analysera fälten och värden för huvuden mer ingående kopierar du meddelandehuvudets text till Urklipp och väljer sedan **Microsofts analysverktyg för meddelanderubrik** för att gå till analysverktyget för fjärranslutning (högerklicka och välj **Öppna i ny flik** om du inte vill lämna Microsoft 365 för att slutföra den här uppgiften). Klistra in meddelandehuvudet på sidan i analysverktyget för meddelanderubrik. Välj **Analyze headers** (Analysera rubriker):
 
 - **Förhandsgranska meddelandet**: Välj något av följande alternativ i den utfällbara rutan som visas:
-
   - **Källvy**: Visar HTML-versionen av meddelandetexten med alla länkar inaktiverade.
   - **Textvy**: Visar meddelandetexten som oformaterad text.
 
@@ -197,7 +196,7 @@ När du har valt ett meddelande kan du välja mellan flera alternativ för vad d
 
 - **Ladda ned meddelande**: Välj **Jag är medveten om riskerna om jag laddar ned meddelandet** i den utfällbara rutan som visas om du vill spara en lokal kopia av meddelandet i .eml-format.
 
-- **Blockera avsändare:** Det här blockerar avsändaren från att skicka e-postmeddelanden till administratörsmottagarens postlåda.
+- **Spärra avsändare:** Förhindrar avsändaren från att skicka meddelanden till mottagare i organisationen.
 
 - **Skicka meddelande:** I det utfällfönster som visas väljer du följande alternativ:
 
@@ -260,7 +259,7 @@ I organisationer med Defender för Office 365 kan administratörer hantera filer
      - Ett anpassat datum-/tidsintervall.
    - **Mottagen tid**
    - **Orsak till karantän:** Det enda tillgängliga värdet är skadlig **programvara.**
-   - **Typ av princip**
+   - **Principtyp**
 
 När du har hittat en viss fil i karantän väljer du filen för att visa information om den och för att vidta åtgärder för den (till exempel visa, släppa, ladda ned eller ta bort meddelandet).
 

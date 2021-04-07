@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Lär dig hur du konfigurerar en lokal Exchange-server för användning av modern hybridautentisering (HMA), som ger dig säkrare användarautentisering och auktorisering.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9393b457c219fb03ae2e8a35c3f795c324919f27
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: e0a0e521f4ac81a8aa113b2e945045d31f2c1952
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579728"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599505"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Konfigurera lokal Exchange Server för användning av modern hybridautentisering
 
@@ -65,6 +65,9 @@ Om du slår på HMA innebär det att:
 ## <a name="make-sure-you-meet-all-the-prerequisites"></a>Se till att du uppfyller alla krav
 
 Eftersom det finns många krav som är gemensamma för både Skype för företag och Exchange bör du läsa Översikt över modern hybridautentisering och förutsättningar för att använda det med Skype för företag och [Exchange-servrar lokalt.](hybrid-modern-auth-overview.md) Gör detta  *innan*  du påbörjar något av stegen i den här artikeln.
+
+> [!NOTE]
+> Outlook Web App och Kontrollpanelen i Exchange fungerar inte med modern hybridautentisering.
 
 ## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>Lägga till lokala webbtjänst-URL:er som SPN i Azure AD
 
@@ -185,6 +188,8 @@ Om du är en lokal kund som använder Exchange-server på TCP 443 kringgår du t
 52.125.128.0/20
 52.127.96.0/23
 ```
+
+Outlook-appen för iOS och Android är utformad som det bästa sättet att uppleva Microsoft 365 eller Office 365 på din mobila enhet med hjälp av Microsoft-tjänster för att hitta, planera och prioritera ditt dagliga liv och arbete. Mer information finns i Använda modern [hybridautentisering med Outlook för iOS och Android.](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth?view=exchserver-2019)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 

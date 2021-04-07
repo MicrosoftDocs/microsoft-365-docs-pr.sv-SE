@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: Användare kan lära sig hur de visar och agerar på meddelanden i karantän som har skickats till delade postlådor som de har behörighet till.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e3bf4c84e7a762f7f54f42ff61f0fbdb9dc1edd
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: cb915ad6ad6e6130d8704339559f4c370cef3a20
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215510"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599517"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Visa och släppa meddelanden i karantän från delade postlådor
 
@@ -35,7 +35,7 @@ Tidigare var möjligheten för användare att hantera meddelanden i karantän so
 
 Automatisk mappning krävs nu inte längre för att användare ska kunna hantera meddelanden i karantän som har skickats till delade postlådor. Det fungerar bara. Det finns två olika metoder för att komma åt meddelanden i karantän som har skickats till en delad postlåda:
 
-- Om administratören har aktiverat [skräppost-aviseringar](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies) för slutanvändare i principer mot skräppost kan alla användare som har åtkomst  till skräppost-aviseringarna för slutanvändaren i den delade postlådan klicka på knappen Granska i meddelandet för att gå till karantän i säkerhets- och &-efterlevnadscentret. Observera att den här metoden endast gör att användare kan hantera meddelanden i karantän som har skickats till den delade postlådan. Användare kan inte hantera sina egna karantänmeddelanden i det här sammanhanget.
+- Om administratören har aktiverat [skräppost-aviseringar](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)för slutanvändaren i principerna för skräppostskydd kan alla användare som har  åtkomst till skräppost-aviseringarna för slutanvändaren i den delade postlådan klicka på knappen Granska i meddelandet för att gå till karantän i säkerhets- och & efterlevnadscentret. Observera att den här metoden endast gör att användare kan hantera meddelanden i karantän som har skickats till den delade postlådan. Användare kan inte hantera sina egna karantänmeddelanden i det här sammanhanget.
 
 - Användaren kan [gå till karantänen i säkerhets- & kompatibilitetscentret.](find-and-release-quarantined-messages-as-a-user.md) Som standard visas endast meddelanden som skickats till användaren. Däremot kan användaren ändra sorteringsresultatet **(knappen**  **Meddelande-ID** som standard) till Mottagarens e-postadress, ange den delade postlådans e-postadress och sedan klicka på Uppdatera för att se meddelanden i karantän som har skickats till den delade postlådan. 
 

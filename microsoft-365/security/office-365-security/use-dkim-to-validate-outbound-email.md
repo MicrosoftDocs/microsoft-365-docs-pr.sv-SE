@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 10/8/2019
+ms.date: 04/05/2021
 audience: ITPro
 ms.topic: article
 localization_priority: Priority
@@ -20,12 +20,12 @@ ms.custom:
 description: Lär dig hur du använder DomainKeys identifierad e-post (DKIM) med Microsoft 365 för att säkerställa att meddelanden som skickas från din anpassade domän är betrodda av mål-e-postsystemet.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: df380c739724ed285401af4af451b610129c382c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 5b5122984969113ec0c0533952ea3bf18bff5e5c
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207214"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592114"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Använda DKIM för att validera utgående e-post som skickas från din anpassade domän
 
@@ -60,11 +60,11 @@ I den här artikeln:
 
 - [Hur DKIM fungerar bättre än enbart SPF för att förhindra skadlig förfalskning](use-dkim-to-validate-outbound-email.md#HowDKIMWorks)
 
-- [Uppgradera manuellt dina 1024-bitars nycklar till 2048-bitars DKIM-krypteringsnycklar](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
+- [Steg för att manuellt uppgradera dina 1024-bitars nycklar till 2048-bitars DKIM-krypteringsnycklar](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
 
 - [Steg du behöver göra för att konfigurera DKIM manuellt](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
 
-- [Konfigurera DKIM för fler än en anpassad domän](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
+- [Steg för att konfigurera DKIM för fler än en anpassad domän](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
 
 - [Inaktivera DKIM-signeringsprincipen för en anpassad domän](use-dkim-to-validate-outbound-email.md#DisableDKIMSigningPolicy)
 
@@ -85,7 +85,7 @@ Om du bara hade publicerat en SPF TXT-post för domänen i det här exemplet sku
 
 Nitty Gritty: DKIM använder en privat nyckel för att infoga en krypterad signatur i meddelandehuvudena. Signeringsdomänen, eller den utgående domänen, infogas som värdet för fältet **d =** i huvudet. Den verifierade domänen, eller mottagarens domän använder sedan fältet **d=** för att leta upp den offentliga nyckeln från DNS och autentisera meddelandet. Om meddelandet har bekräftats godkänns DKIM-kontrollen.
 
-## <a name="manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys"></a>Uppgradera manuellt dina 1024-bitars nycklar till 2048-bitars DKIM-krypteringsnycklar
+## <a name="steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys"></a>Uppgradera manuellt dina 1024-bitars nycklar till 2048-bitars DKIM-krypteringsnycklar
 <a name="1024to2048DKIM"> </a>
 
 Eftersom både 1024 och 2048 bitar stöds för DKIM-nycklar visar dessa instruktioner hur du uppgraderar din 1024-bitarsnyckel till 2048 i [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Stegen nedan gäller för två användningsfall: Välj det som passar bäst för konfigurationen.
@@ -192,7 +192,7 @@ TTL:                3600
 > Det är viktigt att skapa den andra posten, men bara en av dem kan vara tillgänglig när du skapar den. I själva verket kan den andra väljarens peka på en adress som inte har skapats än. Vi rekommenderar fortfarande att du skapar den andra CNAME-posten eftersom nyckelroteringen blir smidig.
 
 
-### <a name="enable-dkim-signing-for-your-custom-domain"></a>Aktivera DKIM-signering för din anpassade domän
+### <a name="steps-to-enable-dkim-signing-for-your-custom-domain"></a>Steg för att aktivera DKIM-signering för din anpassade domän
 <a name="EnableDKIMinO365"> </a>
 
 När du har publicerat CNAME-posterna i DNS är du redo att aktivera DKIM-signering via Microsoft 365. Du kan göra det antingen via administrationscentret för Microsoft 365 eller med hjälp av PowerShell.
@@ -201,13 +201,13 @@ När du har publicerat CNAME-posterna i DNS är du redo att aktivera DKIM-signer
 
 1. [Logga in på Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) med ditt arbets- eller skolkonto.
 
-2. Välj ikonen för startprogrammet i det övre vänstra hörnet, och välj sedan **Admin**.
+2. Gå till [protection.office.com](https://protection.office.com) eller [security.microsoft.com](https://security.microsoft.com), beroende på vilken portal du använder, och följ vägen nedan.
 
-3. I den nedre vänstra navigeringen expanderar du **Administratör** och väljer **SharePoint**.
+|protection.office.com  |security.microsoft.com  |
+|---------|---------|
+| Hothantering > Princip > Ytterligare principer > DKIM     | E-post och samarbete > Principer och regler > Hotprinciper > Ytterligare principer > DKIM        | 
 
-4. Gå till **Skydd** \> **DKIM**.
-
-5. Välj domänen som du vill aktivera DKIM för och sedan går du till **Sign messages for this domain with DKIM signatures** (Signera meddelanden för domänen ed DKIM-signaturer) och väljer **Aktivera**. Upprepa det här steget för varje anpassad domän.
+3. Välj domänen som du vill aktivera DKIM för och sedan går du till **Sign messages for this domain with DKIM signatures** (Signera meddelanden för domänen ed DKIM-signaturer) och väljer **Aktivera**. Upprepa det här steget för varje anpassad domän.
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>För att aktivera DKIM-signering för din anpassade domän med PowerShell
 

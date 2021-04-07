@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: caf7a1bacfd726c560356d542bec3cf56c6b39d4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 40487143ff18cedb76c9f3f33c52cab24687c282
+ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200203"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51604387"
 ---
 # <a name="advanced-hunting-api"></a>Api för avancerad sökning
 
@@ -37,15 +37,21 @@ ms.locfileid: "51200203"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="limitations"></a>Begränsningar
+
 1. Du kan endast köra en fråga på data från de senaste 30 dagarna.
+
 2. Resultatet kommer att innehålla högst 100 000 rader.
+
 3. Antalet körningar är begränsat per klientorganisation:
-   - API-anrop: Upp till 45 samtal per minut.
+   - API-samtal: Upp till 45 samtal per minut, upp till 1 500 samtal per timme.
    - Körningstid: 10 minuters körningstid varje timme och 3 timmars körningstid per dag.
+
 4. Den maximala körningstiden för en enskild begäran är 10 minuter.
+
 5. 429-svar motsvarar att nå en kvotgräns, antingen genom antal begäranden eller av cpu:n. Läs svarstext för att förstå vilken gräns som har nåtts. 
 
 ## <a name="permissions"></a>Behörigheter
+
 En av följande behörigheter krävs för att anropa detta API. Mer information, inklusive hur du väljer behörigheter, finns i Använda [Microsoft Defender för slutpunkts-API:er](apis-intro.md)
 
 Behörighetstyp |   Behörighet  |   Visningsnamn för behörighet
@@ -59,7 +65,8 @@ Delegerat (arbets- eller skolkonto) | AdvancedQuery.Read | Kör avancerade fråg
 >- Användaren måste ha åtkomst till enheten baserat på enhetsgruppinställningar (mer information finns i [Skapa och](machine-groups.md) hantera enhetsgrupper)
 
 ## <a name="http-request"></a>HTTP-begäran
-```
+
+```http
 POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 ```
 
@@ -71,6 +78,7 @@ Auktorisering | Bearer {token}. **Obligatoriskt.**
 Innehållstyp    | application/json
 
 ## <a name="request-body"></a>Begärans brödtext
+
 Ange följande parametrar för ett JSON-objekt i begärans brödtext:
 
 Parameter | Skriv    | Beskrivning
@@ -78,12 +86,13 @@ Parameter | Skriv    | Beskrivning
 Fråga | Text |  Frågan som ska köras. **Obligatoriskt.**
 
 ## <a name="response"></a>Svar
+
 Om det lyckas returnerar den här metoden 200 OK och _objektet QueryResponse_ i svarstexten.
 
 
 ## <a name="example"></a>Exempel
 
-Begäran
+##### <a name="request"></a>Begäran
 
 Här är ett exempel på begäran.
 
@@ -101,7 +110,7 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 }
 ```
 
-Svar
+##### <a name="response"></a>Svar
 
 Här är ett exempel på svaret.
 
@@ -145,7 +154,8 @@ Här är ett exempel på svaret.
 }
 ```
 
-## <a name="related-topic"></a>Relaterat ämne
+## <a name="related-topics"></a>Relaterade ämnen
+
 - [Introduktion till MICROSOFT Defender för slutpunkts-API:er](apis-intro.md)
 - [Avancerad sökning från portalen](advanced-hunting-query-language.md)
-- [Advanced Hunting med PowerShell](run-advanced-query-sample-powershell.md)
+- [Avancerad jakt med PowerShell](run-advanced-query-sample-powershell.md)

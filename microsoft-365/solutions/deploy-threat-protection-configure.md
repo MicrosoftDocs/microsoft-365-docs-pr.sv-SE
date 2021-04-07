@@ -1,12 +1,13 @@
 ---
 title: Steg för att konfigurera skyddsfunktioner för hot i Microsoft 365
-description: Lär dig hur du distribuerar skyddstjänster för hot och funktioner i Microsoft 365 E5.
+description: Använd den här artikeln som en guide för att implementera din lösning för hotskydd. Lär dig hur du distribuerar skyddstjänster för hot och funktioner i Microsoft 365 E5.
+keywords: säkerhet, konfiguration, konfiguration, Microsoft 365 E5, avancerat skydd mot hot
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 ms.audience: ITPro
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.prod: m365-security
 ms.technology: m365d
 localization_priority: Normal
@@ -16,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: bd7c98f5888f8dc93a8aa341b186ea744d5b2882
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 925c62e1c6201c54fcf09d0dd98b06906d9e057f
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199939"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599869"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Konfigurera skyddsfunktioner för hot i Microsoft 365
 
@@ -30,7 +31,7 @@ Följ de här anvisningarna för att konfigurera skydd mot hot i Microsoft 365.
 
 ## <a name="step-1-set-up-multi-factor-authentication-and-conditional-access-policies"></a>Steg 1: Konfigurera multifaktorautentisering och villkorsstyrd åtkomst
 
-[Multifaktorautentisering](/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) kräver att användare verifierar sin identitet med ett telefonsamtal eller ett autentiserings-program. [Villkorsstyrda åtkomstprinciper](/azure/active-directory/conditional-access/overview) definierar vissa krav som måste uppfyllas för att användare ska få åtkomst till appar och data i Microsoft 365. MFA- och Villkorsstyrd åtkomstpolicy fungerar tillsammans för att skydda organisationen. Om någon till exempel försöker logga in från en mobil enhet med ett konto som inte är aktiverat för MFA, och en princip för villkorsstyrd åtkomst kräver att MFA är aktiverat, hindras den användaren från att logga in.  
+[Multifaktorautentisering](/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) kräver att användare verifierar sin identitet med ett telefonsamtal eller en autentiseringsapp. [Villkorsstyrda åtkomstprinciper](/azure/active-directory/conditional-access/overview) definierar vissa krav som måste uppfyllas för att användare ska få åtkomst till appar och data i Microsoft 365. MFA- och Villkorsstyrd åtkomstpolicy fungerar tillsammans för att skydda organisationen. Om någon till exempel försöker logga in från en mobil enhet med ett konto som inte är aktiverat för MFA, och en princip för villkorsstyrd åtkomst kräver att MFA är aktivt, förhindras användaren från att logga in.  
 
 Microsoft har testat och rekommenderar en särskild uppsättning villkorsstyrda åtkomst och relaterade principer för att skydda åtkomsten till alla dina SaaS-program, särskilt Microsoft 365. Principer rekommenderas för grundläggande, känslig och starkt reglerad säkerhet. Börja med att implementera principer för grundläggande skydd. 
 
@@ -53,7 +54,7 @@ Microsoft har testat och rekommenderar en särskild uppsättning villkorsstyrda 
 
 ## <a name="step-2-configure-microsoft-defender-for-identity"></a>Steg 2: Konfigurera Microsoft Defender för identitet
 
-[Microsoft Defender för identitet](/azure-advanced-threat-protection/what-is-atp) är en molnbaserad säkerhetslösning som fungerar med dina lokala AD DS-signaler (Active Directory Domain Services) för att identifiera, identifiera och undersöka avancerade hot, komprometterade identiteter och skadliga Insider-åtgärder i organisationen.
+[Microsoft Defender för identitet](/defender-for-identity/what-is) är en molnbaserad säkerhetslösning som fungerar med dina lokala AD DS-signaler (Active Directory Domain Services) för att identifiera, identifiera och undersöka avancerade hot, komprometterade identiteter och skadliga Insider-åtgärder i organisationen.
 
 Microsoft Defender för identitet aktiverar säkerhetsåtgärder (SecOps) analytiker och säkerhetsexperter som har svårt att identifiera avancerade attacker i hybridmiljöer för att:
 - Övervaka användare, entitetsbeteende och aktiviteter med utbildningsbaserade analyser.
@@ -79,7 +80,7 @@ Microsoft Defender för identitet aktiverar säkerhetsåtgärder (SecOps) analyt
 
 [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md) kombinerar signaler och licenskapacitet till en enda lösning. Med den integrerade Microsoft 365 Defender-lösningen kan säkerhetsexperter hantera hoten som utgör en signal att var och en av dessa produkter får och fastställa hotens fullständiga omfattning och påverkan. hur det angavs i miljön, vad det påverkades och hur det för närvarande påverkar organisationen. Microsoft 365 Defender vidtar automatisk åtgärd för att förhindra eller stoppa attacken och självutmanade postlådor, slutpunkter och användaridentiteter.
 
-I Microsoft 365 Defender kan du samla aviseringar, incidenter, automatisk undersökning och svar och avancerad sökning i olika arbetsbelastningar (Microsoft Defender för identitet, Microsoft Defender för Office 365, Microsoft Defender för slutpunkt och Microsoft Cloud App Security) i ett enda fönster med glas. När du har konfigurerat en eller flera av dina Defender för Office 365-tjänster aktiverar du Microsoft 365 Defender. Nya funktioner läggs till kontinuerligt i Microsoft 365 Defender. Överväg att registrera dig för att få förhandsgranskningsfunktioner.
+I Microsoft 365 Defender kan du samla aviseringar, incidenter, automatisk undersökning och svar och avancerad sökning i olika arbetsbelastningar (Microsoft Defender för identitet, Microsoft Defender för Office 365, Microsoft Defender för slutpunkt och Microsoft Cloud App Security) i ett enda fönster med glas. Nya funktioner läggs till kontinuerligt i Microsoft 365 Defender. Överväg att registrera dig för att få förhandsgranskningsfunktioner.
 
 ### <a name="to-set-up-microsoft-365-defender"></a>Konfigurera Microsoft 365 Defender
 
@@ -161,7 +162,7 @@ När du har konfigurerat och distribuerat dina skyddstjänster för hot och funk
 
 ![Microsoft 365 Säkerhetscenter](../media/solutions-architecture-center/m365-security-center.png)
 
-Microsoft 365 Säkerhetscenter är specifikt avsett för säkerhetsadministratörer och säkerhetsoperationsteam. I Säkerhetscenter för Microsoft 365 kan du:
+Microsoft 365 Säkerhetscenter är avsett för säkerhetsadministratörer och säkerhetsoperationsgrupper. I Säkerhetscenter för Microsoft 365 kan du:
 - Visa organisationens övergripande säkerhetshälsa med [Secure Score](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score).
 - [Övervaka och visa rapporter](https://docs.microsoft.com/microsoft-365/security/defender/monitoring-and-reporting) om status för identiteter, data, enheter, appar och infrastruktur.
 - Koppla samman punkter för aviseringar via [incidenter](https://docs.microsoft.com/microsoft-365/security/defender/incident-queue).

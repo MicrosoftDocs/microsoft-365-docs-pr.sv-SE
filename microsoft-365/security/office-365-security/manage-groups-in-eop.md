@@ -15,12 +15,12 @@ ms.custom:
 description: Administratörer i fristående EOP-organisationer (Exchange Online Protection) kan lära sig att skapa, ändra och ta bort distributionsgrupper och e-postaktiverade säkerhetsgrupper i administrationscentret för Exchange (EAC) och i fristående Exchange Online Protection (EOP) PowerShell.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3b97e3fac0840753edada964252875a6e3a4fa04
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b9d83f2fb59ee8f8d2d3035045ed438d5ba45851
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207023"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599575"
 ---
 # <a name="manage-groups-in-eop"></a>Hantera grupper i EOP
 
@@ -216,7 +216,7 @@ $CurrentMemberNames += "Tyson Fawcett"
 Update-EOPDistributionGroupMember -Identity "Security Team" -Members $CurrentMemberNames
 ```
 
-Detaljerad information om syntax och parametrar finns i [Set-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-eopdistributiongroup) och [Update-EOPDistributionGroupMember.](https://docs.microsoft.com/powershell/module/exchange/update-eopdistributiongroupmember)
+Detaljerad information om syntax och parametrar finns i [Set-EOPDistributionGroup](/powershell/module/exchange/set-eopdistributiongroup) och [Update-EOPDistributionGroupMember.](/powershell/module/exchange/update-eopdistributiongroupmember)
 
 ### <a name="remove-a-group-using-remote-windows-powershell"></a>Ta bort en grupp med Windows PowerShell på distans
 
@@ -226,7 +226,7 @@ I det här exemplet tas distributionsgruppen IT-administratörer bort.
 Remove-EOPDistributionGroup -Identity "IT Administrators"
 ```
 
-Detaljerad information om syntax och parametrar finns i [Remove-EOPDistributionGroup.](https://docs.microsoft.com/powershell/module/exchange/remove-eopdistributiongroup)
+Detaljerad information om syntax och parametrar finns i [Remove-EOPDistributionGroup.](/powershell/module/exchange/remove-eopdistributiongroup)
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Hur vet jag att de här procedurerna fungerade?
 

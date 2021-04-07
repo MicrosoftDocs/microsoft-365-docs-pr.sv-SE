@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: cb3c6bf6e19088be2771747af12932fa4e80431a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9d7170ff261a53ba5755134973a912221363b3c8
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207540"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599813"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationer av identiteter och enhetsåtkomst
 
@@ -43,14 +43,13 @@ Inställningar och principer för identitet och enhetsåtkomst rekommenderas på
 De här funktionerna och deras rekommendationer:
 
 - Stöds i Microsoft 365 E3 och Microsoft 365 E5.
-- Är i linje med [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score) samt [identitetspoäng i Azure AD](/azure/active-directory/fundamentals/identity-secure-score), och kommer att öka dessa resultat för din organisation.
+- Är i linje med [Microsoft Secure Score](../defender/microsoft-secure-score.md) samt [identitetspoäng i Azure AD](/azure/active-directory/fundamentals/identity-secure-score), och kommer att öka dessa resultat för din organisation.
 - Kommer att hjälpa dig att implementera [de här fem stegen för att skydda din identitetsinfrastruktur.](/azure/security/azure-ad-secure-steps)
 
 Om organisationen har unika miljökrav eller komplexitet kan du använda de här rekommendationerna som utgångspunkt. Men de flesta organisationer kan implementera de här rekommendationerna som bestämts.
 
 Titta på den här videon för en snabb överblick över identitets- och enhetsåtkomstkonfigurationer för Microsoft 365 för företag.
-<br>
-<br>
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxEDQ]
 
 > [!NOTE]
@@ -120,7 +119,7 @@ Azure AD innehåller en komplett uppsättning identitetshanteringsfunktioner. Vi
 |Resurs eller funktion|Beskrivning|Licensiering|
 |---|---|---|
 |[Multifaktorautentisering (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA kräver att användarna anger två typer av verifiering, till exempel ett användarlösenord plus en avisering från Microsoft Authenticator-appen eller ett telefonsamtal. MFA minskar kraftigt risken för att stulna autentiseringsuppgifter kan användas för att komma åt din miljö. Microsoft 365 använder Azure AD Multi-Factor Authentication-tjänsten för MFA-baserade inloggningar.|Microsoft 365 E3 eller E5|
-|[Med villkorsstyrd åtkomst](/azure/active-directory/conditional-access/overview)|Azure AD utvärderar villkoren för användarens inloggning och använder villkorsstyrda åtkomstprinciper för att fastställa tillåten åtkomst. I den här vägledningen visar vi till exempel hur du skapar en princip för villkorsstyrd åtkomst för att kräva enhetsefterlevnad för åtkomst till känsliga data. Det här minskar kraftigt risken att en hackare med sin egen enhet och stulna autentiseringsuppgifter kan komma åt känsliga data. Den skyddar även känsliga data på enheterna, eftersom enheterna måste uppfylla särskilda hälso- och säkerhetskrav.|Microsoft 365 E3 eller E5|
+|[Villkorsstyrd åtkomst](/azure/active-directory/conditional-access/overview)|Azure AD utvärderar villkoren för användarens inloggning och använder villkorsstyrda åtkomstprinciper för att fastställa tillåten åtkomst. I den här vägledningen visar vi till exempel hur du skapar en princip för villkorsstyrd åtkomst för att kräva enhetsefterlevnad för åtkomst till känsliga data. Det här minskar kraftigt risken att en hackare med sin egen enhet och stulna autentiseringsuppgifter kan komma åt känsliga data. Den skyddar även känsliga data på enheterna, eftersom enheterna måste uppfylla särskilda hälso- och säkerhetskrav.|Microsoft 365 E3 eller E5|
 |[Azure AD-grupper](/azure/active-directory/fundamentals/active-directory-manage-groups)|Villkorsstyrda åtkomstprinciper, enhetshantering med Intune och även behörigheter till filer och webbplatser i organisationen förlitar sig på tilldelning till användarkonton eller Azure AD-grupper. Vi rekommenderar att du skapar Azure AD-grupper som motsvarar de skyddsnivåer som du implementerar. Din chef kan exempelvis få högre värdemål för hackare. Därför är det vettigt att lägga till användarkonton för dessa anställda i en Azure AD-grupp och tilldela gruppen villkorsstyrda åtkomstprinciper och andra principer som upprätthåller en högre skyddsnivå för åtkomst.|Microsoft 365 E3 eller E5|
 |[Enhetsregistrering](/azure/active-directory/devices/overview)|Du registrerar en enhet i Azure AD för att skapa en identitet för enheten. Den här identiteten används för att autentisera enheten när en användare loggar in och för att använda villkorsstyrda åtkomstprinciper som kräver domän- eller kompatibla datorer. För den här vägledningen använder vi enhetsregistrering för att automatiskt registrera domän sammanskrivna Windows-datorer. Enhetsregistrering krävs för att hantera enheter med Intune.|Microsoft 365 E3 eller E5|
 |[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|Gör att du kan upptäcka potentiella säkerhetsproblem som påverkar organisationens identiteter och konfigurera en automatiserad åtgärdsprincip på låg, medium och hög inloggningsrisk och användarrisk. Den här vägledningen förlitar sig på den här riskutvärderingen för att tillämpa villkorsstyrda åtkomstprinciper för multifaktorautentisering. Den här vägledningen innehåller även en princip för villkorsstyrd åtkomst som kräver att användarna ändrar sitt lösenord om högriskaktivitet identifieras för kontot.|Microsoft 365 E5, Microsoft 365 E3 med licenserna Identity & Threat Protection, EMS E5 eller Azure Premium P2|

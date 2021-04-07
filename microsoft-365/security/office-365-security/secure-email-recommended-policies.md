@@ -20,19 +20,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 5a705444c81d884c10b99e5f0d2bfbb9e4f057e2
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: c5f5837f4e4069a67bc080178fefd10bd2a08629
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207384"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599857"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Principrekommendationer för att skydda e-post
 
 **Gäller för**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
-
 
 I den här artikeln beskrivs hur du implementerar rekommenderade principer för identitets- och enhetsåtkomst för att skydda organisationens e-post- och e-postklienter som stöder modern autentisering och villkorsstyrd åtkomst. Den här vägledningen bygger på [gemensamma principer för identitet och enhetsåtkomst](identity-access-policies.md) och innehåller också några ytterligare rekommendationer.
 
@@ -103,7 +102,7 @@ Här är stegen:
 
 Om du vill säkerställa att användare av iOS- och Android-enheter bara kan komma åt arbets- eller skolinnehåll med Outlook för iOS och Android behöver du en princip för villkorsstyrd åtkomst som riktar sig till dessa potentiella användare.
 
-Se anvisningarna för hur du konfigurerar principen i [Hantera åtkomst till samarbete via meddelanden med Outlook för iOS och Android.]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)
+Se anvisningarna för hur du konfigurerar principen i [Hantera åtkomst till samarbete via meddelanden med Outlook för iOS och Android.](/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)
 
 ## <a name="set-up-message-encryption"></a>Konfigurera meddelandekryptering
 

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Administratörer kan lära sig hur attack simuleringsutbildning i Microsoft 365 säkerhetscenter påverkar anställda och kan få insikter från simulering och utbildningsresultat.
 ms.technology: mdo
-ms.openlocfilehash: 93d8829f9fbc4271d33e3208e5564529b4022fc3
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0fcb88406558f73b587d8452375c33dbbec1c78b
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207051"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51600013"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Få insikter genom att träna på attacksimulering
 
@@ -45,7 +45,7 @@ Om du vill se en mer detaljerad rapport klickar du **på Visa simuleringar och e
 
 På fliken Simuleringar väljer du en simulering för att gå till [ **simuleringsinformationen,**](https://security.microsoft.com/attacksimulator?viewid=simulations)där du hittar **avsnittet Rekommenderade** åtgärder.
 
-Avsnittet med rekommenderade åtgärder innehåller information om rekommendationer som finns [i Microsoft Secure Score.](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score) De här rekommendationerna baseras på den nyttolast som användes i simuleringen och hjälper dig att skydda dina anställda och din miljö. Om du klickar på varje förbättringsåtgärd visas information om den.
+Avsnittet med rekommenderade åtgärder innehåller information om rekommendationer som finns [i Microsoft Secure Score.](../defender/microsoft-secure-score.md) De här rekommendationerna baseras på den nyttolast som användes i simuleringen och hjälper dig att skydda dina anställda och din miljö. Om du klickar på varje förbättringsåtgärd visas information om den.
 
 > [!div class="mx-imgBorder"]
 > ![Avsnittet Rekommendationsåtgärder på simulering av attack](../../media/attack-sim-preview-recommended-actions.png)

@@ -19,12 +19,12 @@ description: Använd Explorer och realtidsidentifiering i &amp; säkerhetsefterl
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c5935115d7496aca22c3941f34983cddebe7b46
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 7c601169d76fe92ac3038ccb25c5c50aa390f714
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570990"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599893"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Identifiering av hot i Utforskaren och i realtid
 
@@ -113,7 +113,7 @@ Information om taggar visas också i den utfällade URL-klickningen. Om du vill 
 > [!div class="mx-imgBorder"]
 > ![URL-taggar](../../media/tags-urls.png)
 > 
-Lär dig mer genom att titta [på videon](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4). 
+Lär dig mer genom att titta på [den här videon](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4). 
 
 ## <a name="improvements-to-the-threat-hunting-experience-upcoming"></a>Förbättringar av upplevelsen av hot efter hot (kommande)
 
@@ -520,7 +520,7 @@ Utöver scenarierna som beskrivs i den här artikeln finns det många fler rappo
 - [Visa skadliga filer som upptäckts i SharePoint Online, OneDrive och Microsoft Teams](./mdo-for-spo-odb-and-teams.md)
 - [Få en översikt över vyerna i Hotutforskaren (och identifieringar i realtid)](threat-explorer-views.md)
 - [Statusrapport för hotskydd](view-email-security-reports.md#threat-protection-status-report)
-- [Automatisk undersökning och svar i Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir)
+- [Automatisk undersökning och svar i Microsoft Threat Protection](../defender/m365d-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>Licenser och behörigheter som krävs
 

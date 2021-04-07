@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Lär dig hur du tilldelar administratörsroller till en eller flera användare i företaget så att de kan utföra specifika uppgifter i administrationscentret.
-ms.openlocfilehash: cfc4a7e106ca343435777aba1d0b9836f90a6f44
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5c40199823c93968be97302efc8e2d404f3cfed1
+ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904510"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51604339"
 ---
 # <a name="assign-admin-roles"></a>Tilldela administratörsroller
 
@@ -59,7 +59,7 @@ Du kan tilldela användare till en roll på 2 olika sätt:
 
 ### <a name="assign-admin-roles-to-users-using-roles"></a>Tilldela administratörsroller till användare med hjälp av Roller
 
-1. I administrationscentret går  du till Roller > **och visar** alla administratörsroller som är tillgängliga för organisationen.
+1. I administrationscentret går du till **Roller**. Välj **flikarna Azure AD** **eller Intune för** att visa de administratörsroller som är tillgängliga för din organisation.
 2. Välj den administratörsroll som du vill tilldela användaren.
 3. Välj **Tilldelade administratörer Lägg** > **till.**
 4. Skriv användarens **visningsnamn** **eller användarnamn** och välj sedan användaren i listan med förslag.
@@ -70,7 +70,7 @@ Du kan tilldela användare till en roll på 2 olika sätt:
 
 1. I administrationscentret går du till **sidan** > [Användare aktiva](https://go.microsoft.com/fwlink/p/?linkid=834822) användare.
 
-2. På sidan **Aktiva användare** väljer du den användare vars administratörsroll du vill ändra. Välj Hantera roller bredvid Roller **i det** utfällfällade **fönstret.**
+2. På sidan **Aktiva användare** väljer du den användare vars administratörsroll du vill ändra. Välj Hantera roller under Roller i **den utfäll** **du fönsterrutan.**
 
 3. Välj den administratörsroll som du vill tilldela användaren. Om du inte ser den roll du letar efter väljer du **Visa alla** längst ned i listan.
 

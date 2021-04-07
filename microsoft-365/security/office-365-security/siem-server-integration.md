@@ -18,12 +18,12 @@ ms.custom:
 description: Få en översikt över säkerhetsinformation och händelsehantering (SIEM)-serverintegrering med Dina Microsoft 365-molntjänster och -program
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d060b3c12304f6a23ad9421bb43e54c4cd561af5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: bea8aa3914da4b813f3928eddbb6df9c98ef6605
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207492"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599953"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Säkerhetsinformation och händelsehantering (SIEM)-serverintegrering med Microsoft 365-tjänster och -program
 
@@ -58,7 +58,7 @@ En SIEM-server kan ta emot data från en mängd olika Microsoft 365-tjänster oc
 |Microsoft 365-tjänst eller -program|SIEM-serverindata/-metoder|Resurser för att få mer information|
 |---|---|---|
 |[Microsoft Defender för Office 365](defender-for-office-365.md)|Granskningsloggar|[SIEM-integrering med Microsoft Defender för Office 365](siem-integration-with-office-365-ti.md)|
-|[Microsoft Defender för Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)|HTTPS-slutpunkt med Azure som värd <p> REST API|[Dra aviseringar till dina SIEM-verktyg](../defender-endpoint/configure-siem.md)|
+|[Microsoft Defender för Endpoint](/windows/security/threat-protection/)|HTTPS-slutpunkt med Azure som värd <p> REST API|[Dra aviseringar till dina SIEM-verktyg](../defender-endpoint/configure-siem.md)|
 |[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)|Loggintegrering|[SIEM-integrering med Microsoft Cloud App Security](/cloud-app-security/siem)|
 |
 
