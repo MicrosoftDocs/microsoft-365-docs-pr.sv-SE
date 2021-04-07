@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -20,21 +20,14 @@ search.appverid:
 - MET150
 description: Läs om hur du köper fler licenser eller minskar antalet licenser för din Microsoft 365 för företag-prenumeration.
 ms.date: ''
-ms.openlocfilehash: 904444790a7984ebce4f549c77bfd22e8f459c9c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d4d0b73fb33d27f82a02b4ae0c6ecb009eb9d38d
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911548"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615141"
 ---
 # <a name="buy-or-remove-licenses"></a>Köpa eller ta bort licenser
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Du kan köpa fler licenser eller minska antalet licenser för dina prenumerationer med hjälp av följande steg.
 
@@ -60,29 +53,24 @@ Om du har tagit bort licenser från en prenumeration är nästa sak att ta [bort
 
 ::: moniker range="o365-worldwide"
 
-1. I administrationscentret för Microsoft 365 går du till **sidan** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Fakturering dina</a> produkter.
-2. På fliken **Produkter** hittar du den prenumeration som du vill köpa eller ta bort licenser för. Välj **Fler åtgärder** (tre punkter) och välj sedan Köp **licenser.** [Vad händer om jag inte ser knapparna Köp licenser eller Ta bort licenser?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
-3. Om du vill minska antalet licenser väljer du ta bort licenser längst upp **i** fönstret Köp **licenser.**
-4. Om du vill köpa eller ta  bort **licenser anger** du det totala antalet licenser som du vill använda för prenumerationen under Nytt antal i rutan Totalt antal licenser. Om du till exempel har 100 licenser och vill lägga till ytterligare 5 skriver du 105. Om du vill ta bort fem av dem skriver du 95.
-5. Välj **Spara**.
-
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a> i administrationscentret.
-2. På sidan **Prenumerationer** väljer du den prenumeration där du vill köpa eller ta bort licenser och väljer sedan Lägg **till/ta bort licenser.** [Vad händer om jag inte ser knapparna Köp licenser eller Ta bort licenser?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
-3. I rutan **Totalt antal** licenser anger du det totala antalet licenser som du vill använda för prenumerationen och väljer sedan **Skicka** \> **stäng.** Om du till exempel har 100 licenser och vill lägga till ytterligare 5 skriver du 105. Om du vill ta bort fem licenser anger du 95.
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Dina produkter</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a> i administrationscentret.
-2. På sidan **Prenumerationer** väljer du den prenumeration där du vill köpa eller ta bort licenser och väljer sedan Lägg **till/ta bort licenser.** [Vad händer om jag inte ser knapparna Köp licenser eller Ta bort licenser?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
-3. I rutan **Totalt antal** licenser anger du det totala antalet licenser som du vill använda för prenumerationen och väljer sedan **Skicka** \> **stäng.** Om du till exempel har 100 licenser och behöver lägga till ytterligare 5 skriver du 105. Om du vill ta bort 5 av dem skriver du 95.
-
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Dina produkter</a>.
 ::: moniker-end
+
+2. På fliken **Produkter** hittar du den prenumeration som du vill köpa eller ta bort licenser för. Välj **Fler åtgärder** (tre punkter) och välj sedan Köp **licenser.** [Vad händer om jag inte ser knapparna Köp licenser eller Ta bort licenser?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
+3. Om du vill minska antalet licenser väljer du ta bort licenser längst upp **i** fönstret Köp **licenser.**
+4. Om du vill köpa eller ta  bort **licenser anger** du det totala antalet licenser som du vill använda för prenumerationen under Nytt antal i rutan Totalt antal licenser. Om du till exempel har 100 licenser och vill lägga till ytterligare 5 skriver du 105. Om du vill ta bort fem av dem skriver du 95.
+5. Välj **Spara**.
 
 > [!NOTE]
 > Du kan inte minska antalet licenser för prenumerationen om alla licenser är tilldelade till användare. För att minska antalet licenser måste du först ta bort en eller [flera licenser från användarna](../../admin/manage/remove-licenses-from-users.md)och sedan ta bort licenserna från prenumerationen.

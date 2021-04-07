@@ -24,81 +24,31 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Förstå varför det ibland kan vara svårt att byta abonnemang manuellt eller genom att ringa supporten.
-ms.openlocfilehash: 0880337e4879c093119b98f4d0108ca65c17e705
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 41cc0511b1c04249a6c359054b2fdc829ca40713
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164467"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615333"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>Varför kan jag inte byta abonnemang för Microsoft 365 för företag?
 
-::: moniker range="o365-worldwide"
 > [!NOTE]
 > Den här artikeln gäller det gamla administrationscentret. Om du vill läsa artikeln om administrationscentret (förhandsversion) [läser du Varför kan jag inte uppgradera abonnemang?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans). Förhandsgranskningen är tillgänglig för alla Microsoft 365-administratörer. Du kan anmäla dig genom att välja Prova förhandsgranskningsknappen högst upp på startsidan.  Mer information finns i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
-::: moniker-end
 
 Om du inte ser knappen **Byt** abonnemang kan du inte byta abonnemang automatiskt. I vissa fall kan du kanske lösa problemet så att du kan använda knappen **Byt abonnemang**, eller så kanske du kan [byta abonnemang manuellt](switch-plans-manually.md) i stället. Placera muspekaren över informationsikonen för att visa ett meddelande som förklarar varför knappen **Byt abonnemang** inte är tillgänglig. Använd informationen i den här artikeln för att lösa problemet.
-  
-::: moniker range="o365-worldwide"
 
  **Behöver du något annat?** [Köpa en annan prenumeration](../try-or-buy-microsoft-365.md)  |  [Avsluta din prenumeration](cancel-your-subscription.md)  |  [Prenumerationer och fakturering](../index.yml)  |  [Ring supporten](../../admin/contact-support-for-business-products.md)
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- **Behöver du något annat?** [Köpa en annan prenumeration](../try-or-buy-microsoft-365.md)  |  [Avsluta din prenumeration](cancel-your-subscription.md)  |  [Prenumerationer och fakturering](../index.yml)  |  [Ring supporten](../../admin/contact-support-for-business-products.md)
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
- **Behöver du något annat?** [Köpa eller prova prenumerationer för Office 365 som drivs av 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md)  |  [Avsluta din prenumeration](cancel-your-subscription.md)  |  [Ring supporten](../../admin/contact-support-for-business-products.md)
-
-::: moniker-end
 
 ## <a name="why-isnt-the-switch-plans-button-available-for-my-subscription"></a>Varför är inte knappen Byt abonnemang tillgänglig för min prenumeration?
 
 ### <a name="you-cant-switch-subscriptions-now-because-you-have-more-users-than-licenses"></a>Du kan inte byta prenumeration nu eftersom du har fler användare än licenser.
 
-::: moniker range="o365-worldwide"
-
 Om du ska kunna använda knappen **Byt abonnemang** för att byta abonnemang automatiskt måste alla användarna ha giltiga licenser. Om du har tilldelat fler licenser än du har köpt, visas en varning på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> om att du har en licenskonflikt som måste lösas. [Läs mer om hur du löser licenskonflikter](../../commerce/licenses/buy-licenses.md). När du har löst eventuella licenskonflikter bör du kunna se knappen **Byt abonnemang**. Om du inte gör det kan [du byta abonnemang manuellt](switch-plans-manually.md)eller ringa [supporten.](../../admin/contact-support-for-business-products.md)
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-Om du ska kunna använda knappen **Byt abonnemang** för att byta abonnemang automatiskt måste alla användarna ha giltiga licenser. Om du har tilldelat fler licenser än du har köpt, visas en varning på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenser</a> om att du har en licenskonflikt som måste lösas. [Läs mer om hur du löser licenskonflikter](../../commerce/licenses/buy-licenses.md). När du har löst eventuella licenskonflikter bör du kunna se knappen **Byt abonnemang**. Om du inte gör det kan [du byta abonnemang manuellt](switch-plans-manually.md)eller ringa [supporten.](../../admin/contact-support-for-business-products.md)
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-Om du ska kunna använda knappen **Byt abonnemang** för att byta abonnemang automatiskt måste alla användarna ha giltiga licenser. Om du har tilldelat fler licenser än du har köpt, visas en varning på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenser</a> om att du har en licenskonflikt som måste lösas. [Läs mer om hur du löser licenskonflikter](../../commerce/licenses/buy-licenses.md). När du har löst eventuella licenskonflikter bör du kunna se knappen **Byt abonnemang**. Om du inte gör det kan [du byta abonnemang manuellt](switch-plans-manually.md)eller ringa [supporten.](../../admin/contact-support-for-business-products.md)
-
-::: moniker-end
 
 ### <a name="you-cant-switch-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>Du kan inte byta prenumeration just nu eftersom prenumerationen inte är helt konfigurerad eller tjänsten inte är tillgänglig.
 
-
-::: moniker range="o365-worldwide"
-
 Om du vill se om det är problem med tjänstens <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a> etablering eller hälsa går du till sidan Tjänstens hälsa i administrationscentret eller väljer  \> **Hälsa för tjänsten.**
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-Om du vill se om det är problem med tjänstens etablering eller <a href="https://go.microsoft.com/fwlink/p/?linkid=848042" target="_blank"></a> hälsa går du till sidan Tjänstens hälsa i administrationscentret för Microsoft 365 eller väljer  \> **Hälsa för tjänsten.**
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-Om du vill se om det är problem med tjänstens etablering eller <a href="https://go.microsoft.com/fwlink/p/?linkid=850629" target="_blank"></a> hälsa går du till sidan Tjänstens hälsa i administrationscentret för Microsoft 365 eller väljer  \> **Hälsa för tjänsten.**
-
-::: moniker-end
 
 Om du upptäcker att en tjänst inte är helt etablerad eller om det finns problem med tjänsten kan du vänta några timmar innan tjänsten blir tillgänglig och försöka igen. Om du fortfarande har problem kan du [ringa supporten.](../../admin/contact-support-for-business-products.md)
   

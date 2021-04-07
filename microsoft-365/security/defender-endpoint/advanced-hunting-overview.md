@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4883a4f04f06774d02aa0d942edc841867eb36b6
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 9e5f29874ae42f2b82906a5ac0d2e615009d499f
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499513"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615489"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>Proaktiv sökning efter hot med avancerad sökning
 
@@ -43,7 +43,8 @@ I den här videon får du en snabb överblick över avancerad sökning och en ko
 Du kan använda samma hotsökningsfrågor för att skapa anpassade identifieringsregler. Dessa regler körs automatiskt för att kontrollera och sedan svara på misstänkt intrång, felkonfigurerade datorer och andra resultat.
 
 >[!TIP]
->Använd [avancerad sökning i Microsoft Threat Protection för](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview) att leta efter hot med hjälp av data från Defender för Slutpunkt, Microsoft Defender för Office 365, Microsoft Cloud App Security och Microsoft Defender för identitet. [Aktivera Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/mtp-enable)
+>Använd [avancerad sökning i Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) för att leta efter hot med hjälp av data från Defender för slutpunkt, Microsoft Defender för Office 365, Microsoft Cloud App Security och Microsoft Defender för identitet. [Aktivera Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).<br><br>
+Läs mer om hur du flyttar dina avancerade arbetsflöden för sökning från Microsoft Defender för Slutpunkt till Microsoft 365 Defender i Migrera avancerade sökfrågor från [Microsoft Defender för Slutpunkt.](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
 
 ## <a name="get-started-with-advanced-hunting"></a>Komma igång med avancerad sökning
 

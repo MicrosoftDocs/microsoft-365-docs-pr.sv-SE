@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Lär dig hur du tolkar avgifter, fakturering och betalningsinformation på fakturan för Microsoft 365 för företag samt hur du ändrar inköpsordernumret.
-ms.openlocfilehash: 99b52928d458e7883919ee46aaafaa7a66278447
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 56f1ba3e7cc328593873aaf06ddfe6dc82fc1a17
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911692"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615381"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Förstå fakturan för Microsoft 365 för företag
 
@@ -106,36 +106,24 @@ Om du betalar med faktura kan du lägga till eller ändra inköpsordernumret fö
 ::: moniker range="o365-worldwide"
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
-
-2. Om du befinner dig i **tabell** vy väljer du **Kort** för att växla vy.
-
-3. Hitta den prenumeration du vill ändra.
-
-4. Välj **Redigera** i avsnittet **Fakturering**, bredvid **faktura**.
-
-5. Längst ned i fönstret **Redigera betalningsinformation** skriver du ditt inköpsordernummer och väljer **Spara**.
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a> i administrationscentret.
-
-2. Välj den prenumeration du vill ändra. I avsnittet **Betalningsmetod** väljer du **Ändra betalningsinformation**.
-
-3. Ange ditt inköpsordernummer längst ned i fönstret **Ändra betalningsinformation** och välj sedan **Skicka**.
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Dina produkter</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a> i administrationscentret.
-
-2. Välj den prenumeration du vill ändra. I avsnittet **Betalningsmetod** väljer du **Ändra betalningsinformation**.
-
-3. Ange ditt inköpsordernummer längst ned i fönstret **Ändra betalningsinformation** och välj sedan **Skicka**.
-
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Dina produkter</a>.
 ::: moniker-end
+
+1. På **fliken** Produkter väljer du den prenumeration som du vill ändra.
+
+1. Välj Redigera faktura i avsnittet **Prenumerations- och betalningsinställningar** på **sidan prenumerationsinformation.** 
+
+1. Ange ditt inköpsordernummer **längst ned i fönstret Redigera information om betalning** via röst och välj sedan **Spara**.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

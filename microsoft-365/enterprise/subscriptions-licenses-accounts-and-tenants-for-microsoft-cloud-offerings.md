@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Ent_Architecture
 description: Förstå relationer mellan organisationer, prenumerationer, licenser, användarkonton och klientorganisationer i Microsofts molntjänster.
-ms.openlocfilehash: eaf1c2399b5d44ea8d6000042b3258d0e8b5a7de
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 34e920e6b5a48adaffcc31150090e96f9c8d8b0e
+ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909520"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51604327"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Prenumerationer, licenser, konton och klienter för Microsofts molntjänster
 
@@ -88,7 +88,7 @@ I Bild 3 visas ett exempel på flera prenumerationer för en organisation med hj
   
 ### <a name="tenants"></a>Klientorganisationer
 
-För SaaS molnerbjudanden är klientorganisationen den regionala plats där servrarna som tillhandahåller molntjänster finns. Contoso Corporation valde t. ex. en europeisk region som värd för Microsoft 365-, EMS- och Dynamics 365-klientorganisationer för de 15 000 arbetarna på deras huvudkontor i Paris.
+För SaaS molnerbjudanden är klientorganisationen den regionala plats där servrarna som tillhandahåller molntjänster finns. Contoso Corporation valde t. ex. en europeisk region som värd för Microsoft 365-, EMS- och Dynamics 365-prenumerationer för de 15 000 arbetarna på deras huvudkontor i Paris.
   
 Azure PaaS tjänster och virtuella datorbaserade arbetsbelastningar som finns i Azure IaaS kan ha en klientorganisationskonto i vilket Azure-datacenter som helst över hela världen. Du anger vilket Azure-datacenter, platsen, när du skapar Azure PaaS-appen eller-tjänsten eller elementet för en IaaS-arbetsbelastning.
   

@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 9d7170ff261a53ba5755134973a912221363b3c8
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 104ef919d356642985e7b34d16650c27a8141e86
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599813"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615105"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationer av identiteter och enhetsåtkomst
 
@@ -201,7 +201,7 @@ Microsoft rekommenderar att du inte skapar principuppsättningar som gäller fö
 1. Konfigurera nödvändiga identitetsfunktioner och deras inställningar.
 2. Konfigurera principer för villkorsstyrd åtkomst och identitet.
 3. Konfigurera villkorsstyrda åtkomstprinciper för gästanvändare och externa användare.
-4. Konfigurera villkorsstyrda åtkomstprinciper för Microsoft 365-molnappar som Microsoft Teams, Exchange Online och SharePoint.
+4. Konfigurera villkorsstyrda åtkomstprinciper för Microsoft 365-molnappar, till exempel Microsoft Teams, Exchange Online och SharePoint- och Säkerhetsprinciper för Microsoft Cloud-appar.
 
 När du har konfigurerat identitets- och enhetsåtkomst kan du gå till distributionsguiden för [Azure AD-funktioner](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) för en fasad checklista med ytterligare funktioner att överväga och Azure AD-identitetsstyrning för att skydda, övervaka och granska åtkomst. [](/azure/active-directory/governance/)
 
