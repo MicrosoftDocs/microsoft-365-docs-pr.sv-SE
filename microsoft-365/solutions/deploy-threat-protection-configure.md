@@ -1,6 +1,6 @@
 ---
 title: Steg för att konfigurera skyddsfunktioner för hot i Microsoft 365
-description: Använd den här artikeln som en guide för att implementera din lösning för hotskydd. Lär dig hur du distribuerar skyddstjänster för hot och funktioner i Microsoft 365 E5.
+description: Använd den här artikeln som en guide för att implementera din lösning för hotskydd. Distribuera skyddstjänster för hot och funktioner i Microsoft 365 E5.
 keywords: säkerhet, konfiguration, konfiguration, Microsoft 365 E5, avancerat skydd mot hot
 ms.author: deniseb
 author: denisebmsft
@@ -17,17 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 925c62e1c6201c54fcf09d0dd98b06906d9e057f
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 847dd2d090fb26c5558d4a3496a79cf4829881fb
+ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599869"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51604399"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Konfigurera skyddsfunktioner för hot i Microsoft 365
 
 Följ de här anvisningarna för att konfigurera skydd mot hot i Microsoft 365.
-
 
 ## <a name="step-1-set-up-multi-factor-authentication-and-conditional-access-policies"></a>Steg 1: Konfigurera multifaktorautentisering och villkorsstyrd åtkomst
 
@@ -100,8 +99,8 @@ I Microsoft 365 Defender kan du samla aviseringar, incidenter, automatisk unders
 [Microsoft Defender för Office 365](../security/office-365-security/defender-for-office-365.md) skyddar organisationen mot skadliga hot i e-postmeddelanden (bifogade filer och URL-adresser), Office-dokument och samarbetsverktyg. I följande tabell visas funktioner och funktioner för Microsoft Defender för Office 365 som ingår i Microsoft 365 E5:
 
 |Funktioner för konfiguration, skydd och identifiering|Funktioner för automatisering, undersökning, åtgärder och utbildning|
-|---|---|
-|[Säkra bifogade filer](../security/office-365-security/safe-attachments.md)<br/>[Säkra länkar](../security/office-365-security/safe-links.md)<br/>[Säkra dokument](../security/office-365-security/safe-docs.md)<br/>[ATP för SharePoint, OneDrive och Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md)<br/>[Skydd mot nätfiske i Defender för Office 365](../security/office-365-security/set-up-anti-phishing-policies.md#Exclusive-settings-in-anti-phishing-policies-in Microsoft-Defender-for-Office-365)|[Hotspårare](../security/office-365-security/threat-trackers.md)<br/>[Hotutforskaren](../security/office-365-security/threat-explorer.md)<br/>[Automatiska undersökningar och svar](../security/office-365-security/office-365-air.md)<br/>[Attacksimulator](../security/office-365-security/attack-simulator.md)|
+|:---|:---|
+|[Säkra bifogade filer](../security/office-365-security/safe-attachments.md)<br/>[Säkra länkar](../security/office-365-security/safe-links.md)<br/>[Säkra dokument](../security/office-365-security/safe-docs.md)<br/>[ATP för SharePoint, OneDrive och Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md)<br/> [Skydd mot nätfiske i Microsoft 365](../security/office-365-security/anti-phishing-protection.md)|[Hotspårare](../security/office-365-security/threat-trackers.md)<br/>[Hotutforskaren](../security/office-365-security/threat-explorer.md)<br/>[Automatiska undersökningar och svar](../security/office-365-security/office-365-air.md)<br/>[Attacksimulator](../security/office-365-security/attack-simulator.md)|
 |
 
 Med Microsoft Defender för Office 365 kan personer i organisationen kommunicera och samarbeta säkrare, med hotskydd för deras e-postinnehåll och Office-dokument.
@@ -128,15 +127,18 @@ Med Microsoft Defender för Office 365 kan personer i organisationen kommunicera
 
 ![Process för distribution av Microsoft Defender för Slutpunkt](../media/deploy-threat-protection/deploy-mdatp-steps.png) 
 
-1. [Förbereda miljön för Microsoft Defender för slutpunktsdistribution](/windows/security/threat-protection/microsoft-defender-atp/deployment-phases).
-2. [Konfigurera Microsoft Defender för slutpunktsdistribution](/windows/security/threat-protection/micros.oft-defender-atp/production-deployment).
-3. [Onboard to the Microsoft Defender for Endpoint service](/windows/security/threat-protection/microsoft-defender-atp/onboarding).
-4. [Utför dina viktigaste administrativa uppgifter för säkerhet.](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)
+1. [Förbereda miljön för Microsoft Defender för Slutpunkt](../security/defender-endpoint/deployment-phases.md).
+
+2. [Distribuera Microsoft Defender för Slutpunkt](../security/defender-endpoint/production-deployment.md).
+
+3. [Onboard to the Microsoft Defender for Endpoint service](../security/defender-endpoint/onboarding.md).
+
+4. [Utför dina viktigaste administrativa uppgifter för säkerhet.](../security/defender-endpoint/tvm-security-recommendation.md)
 
 ### <a name="more-information-about-microsoft-defender-for-endpoint"></a>Mer information om Microsoft Defender för Slutpunkt
 
-- [Läs mer om Microsoft Defender för Slutpunkt](/windows/security/threat-protection).
-- [Prova Microsoft Defender för utvärderingslabb för slutpunkt.](/windows/security/threat-protection/microsoft-defender-atp/evaluation-lab)
+- [Läs mer om Microsoft Defender för Slutpunkt](../security/defender-endpoint/microsoft-defender-endpoint.md).
+- [Prova Microsoft Defender för utvärderingslabb för slutpunkt.](../security/defender-endpoint/evaluation-lab.md)
 
 ## <a name="step-6-configure-microsoft-cloud-app-security"></a>Steg 6: Konfigurera Microsoft Cloud App Security
 
@@ -147,8 +149,11 @@ Med Microsoft Defender för Office 365 kan personer i organisationen kommunicera
 ![Process för distribution av Microsoft Cloud App Security](../media/deploy-threat-protection/deploy-mcas-steps.png) 
 
 1. [Konfigurera portalen och andra grundläggande krav.](/cloud-app-security/general-setup)
+
 2. [Konfigurera molnidentifiering och](/cloud-app-security/set-up-cloud-discovery) [anslut appar.](/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps)
+
 3. [Distribuera programkontroll för villkorsstyrd åtkomst för aktuella program](/cloud-app-security/proxy-deployment-aad).
+
 4. [Använd undersökningsverktygen och instrumentpanelerna](/cloud-app-security/investigate).
 
 ### <a name="more-information-about-microsoft-cloud-app-security"></a>Mer information om Microsoft Cloud App Security
@@ -164,9 +169,9 @@ När du har konfigurerat och distribuerat dina skyddstjänster för hot och funk
 
 Microsoft 365 Säkerhetscenter är avsett för säkerhetsadministratörer och säkerhetsoperationsgrupper. I Säkerhetscenter för Microsoft 365 kan du:
 - Visa organisationens övergripande säkerhetshälsa med [Secure Score](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score).
-- [Övervaka och visa rapporter](https://docs.microsoft.com/microsoft-365/security/defender/monitoring-and-reporting) om status för identiteter, data, enheter, appar och infrastruktur.
+- [Övervaka och visa rapporter](../security/defender-endpoint/threat-protection-reports.md) om status för identiteter, data, enheter, appar och infrastruktur.
 - Koppla samman punkter för aviseringar via [incidenter](https://docs.microsoft.com/microsoft-365/security/defender/incident-queue).
-- Använd [automatisk undersökning och åtgärd för](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir) att hantera hot.
+- Använd [automatisk undersökning och åtgärd för](../security/defender/m365d-autoir.md) att hantera hot.
 - [Proaktivt leta efter hot, till exempel intrångsförsök](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview)eller intrångsaktivitet som påverkar e-post, data, enheter och identiteter.
 - [Förstå de senaste attackkampanjerna](https://docs.microsoft.com/microsoft-365/security/defender/latest-attack-campaigns) och teknikerna med hotanalyser.
 - ... och mycket mer!
