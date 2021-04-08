@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: Övervaka misslyckades och fördröjda e-postmeddelanden som skickas till eller från konton som har stor inverkan på verksamheten.
-ms.openlocfilehash: 0bba1f87f80de9fea249ce2604e83ceeadfb79ee
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f67b9c6f0eaa229b650026670cf1b2adf88ab3c0
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050648"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632186"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>Hantera och övervaka prioritetskonton
 
@@ -26,10 +26,16 @@ I varje Microsoft 365-organisation finns det personer som är viktiga, t.ex. che
 
 För att hjälpa din organisation att skydda dessa konton kan du nu ange specifika användare som prioriterade konton och utnyttja appspecifika funktioner som ger dem extra skydd. I framtiden kommer fler appar och funktioner att stödja prioritetskonton, och till en början har vi meddelat två **funktioner:** prioriterat kontoskydd och övervakning av **premium-e-postflöden.**
 
-- **Skydd av prioriterade** konton – Microsoft Defender för Office 365 (tidigare Office 365 Advanced Threat Protection) har stöd för prioritetskonton som taggar som kan användas i filter i aviseringar, rapporter och undersökningar. Mer information finns i [Användartaggar i Microsoft Defender för Office 365.](../../security/defender-365-security/user-tags.md)
+- **Skydd av prioriterade** konton – Microsoft Defender för Office 365 (tidigare Office 365 Advanced Threat Protection) har stöd för prioritetskonton som taggar som kan användas i filter i aviseringar, rapporter och undersökningar. Mer information finns i [Användartaggar i Microsoft Defender för Office 365.](../../security/office-365-security/user-tags.md)
+
+  En naturlig fråga är "Har inte alla användare prioritet? Varför inte ange alla användare som prioritetskonton?" Ja, alla användare har prioritet, men skydd av prioriterat konto ger följande ytterligare fördelar:
+
+  - **Ytterligare heuristics**: Vår analys av e-postflödet i Microsoft-datacenter visar att e-postflödesmönster för företagsledare skiljer sig från den genomsnittliga anställda. Skydd av prioritetskonto ger ytterligare heuristik som är specifikt skräddarsydd för företagsledare som inte skulle vara till förmån för en vanlig anställd.
+  - **Ytterligare insyn i rapporteringen:** I praktiken finns information för alla användare (eller alla berörda användare) redan tillgänglig i aviseringar, rapporter och undersökningar. Med taggen prioritetskonton som ett filter kan du specifikt rikta dina undersökningar.
+
 - **Premium övervakning av e-postflöde** – Felfritt e-postflöde kan vara viktigt för att verksamheten ska lyckas, och leveransfördröjningar och fel kan påverka verksamheten negativt. Du kan välja ett tröskelvärde för misslyckade eller fördröjda e-postmeddelanden, få aviseringar när tröskelvärdet överskrids och visa en rapport om e-postproblem för prioritetskonton. Mer information finns i rapporten [E-postproblem för prioritetskonton i den moderna EAC](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)
 
-Information om metodtips för säkerhet på prioriterade konton finns i [Säkerhetsrekommendationer för prioritetskonton.](../../security/defender-365-security/security-recommendations-for-priority-accounts.md)
+Information om metodtips för säkerhet på prioriterade konton finns i [Säkerhetsrekommendationer för prioritetskonton.](../../security/office-365-security/security-recommendations-for-priority-accounts.md)
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
@@ -44,6 +50,8 @@ Den **premiumfunktion för e-postflödesövervakning** som beskrivs i det här a
 
 > [!NOTE]
 > Du kan övervaka upp till 250 prioriterade konton.
+
+När du tillämpar prioritetskontoskydd på en postlåda bör du även tillämpa prioritetskontoskydd för användare som har åtkomst till postlådan (till exempel vd och vd:s chefsassistent som hanterar VD:s kalender).
 
 ### <a name="add-priority-accounts-from-the-setup-page"></a>Lägg till prioritetskonton från sidan Inställningar
 

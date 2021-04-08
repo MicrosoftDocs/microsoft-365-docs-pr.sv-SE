@@ -16,12 +16,12 @@ ms.collection:
 description: Administratörer kan lära sig att identifiera särskilda grupper av användare med användartaggar i Microsoft Defender för Office 365 abonnemang 2. Taggfiltrering är tillgängligt i aviseringar, rapporter och undersökningar i Microsoft Defender för Office 365 för att snabbt identifiera de taggade användarna.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6f98dcfe3e8c44e852134e7a12def4ff78c1bcdd
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4c439dcb91831475bc10da4a01d0fa29e7aae359
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207268"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632208"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Användartaggar i Microsoft Defender för Office 365
 
@@ -34,6 +34,9 @@ Användartaggar är identifierare för specifika grupper av användare [i Micros
 - **Anpassade taggar:** Du skapar de här användartaggarna själv.
 
 Om din organisation har Defender för Office 365 abonnemang 2 (ingår i prenumerationen eller som ett tillägg) kan du skapa anpassade användartaggar utöver att använda taggen för prioritetskonton.
+
+> [!NOTE]
+> För närvarande kan du bara använda användartaggar för postlådeanvändare.
 
 När du har tillämpat systemtaggar eller anpassade taggar för användare kan du använda de taggarna som filter i aviseringar, rapporter och undersökningar:
 
@@ -64,6 +67,8 @@ Information om hur användartaggar är en del av strategin för att skydda anvä
   - Hantering av användartaggar styrs av **rollerna Taggläsare** **och Tagghanteraren.**
 
 - Du kan också hantera och övervaka konton med prioritet i administrationscentret för Microsoft 365. Anvisningar finns i Hantera [och övervaka prioritetskonton.](../../admin/setup/priority-accounts.md)
+
+- Information om hur du skyddar _behöriga konton_ (administratörskonton) finns i det [här avsnittet.](/azure/architecture/framework/security/critical-impact-accounts)
 
 ## <a name="use-the-security--compliance-center-to-create-user-tags"></a>Använda Säkerhets- & efterlevnadscenter för att skapa användartaggar
 

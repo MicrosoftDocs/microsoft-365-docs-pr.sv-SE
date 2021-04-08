@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Bestäm var dina Microsoft 365-kunddata lagras inom Europeiska unionen
-ms.openlocfilehash: 28bfa7c18aff485e084e4d77bb2a36f0f5b7e95f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 19df44a702d842d4171d867946fb818d3f36fd80
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905686"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615237"
 ---
 # <a name="data-locations-for-the-european-union"></a>Dataplatser för Europeiska unionen
 
@@ -92,7 +92,7 @@ Microsoft skyddar dina data med flera lager av säkerhets- och krypteringsprotok
 
 Som standard skyddar Microsoft Managed Keys dina kunddata. Data som kvarstår på fysiska medier krypteras alltid med hjälp av FIPS 140-2-kompatibla krypteringsprotokoll. Du kan också använda kundhanterade nycklar (CMK), [dubbel kryptering](../compliance/double-key-encryption.md)och/eller hårdvarusäkerhetsmoduler (HSM) för ökat dataskydd.
 
-All datatrafik som rör sig mellan datacenter skyddas också med IEEE 802.1AE MAC-säkerhetsstandarder, vilket förhindrar fysiska "man-in-the-middle" -attacker.
+Dessutom använder Microsoft som standard [TLS-protokollet (Transport Layer Security)](https://wikipedia.org/wiki/Transport_Layer_Security) för att kryptera data när det reser mellan molntjänsterna och kunderna. Microsoft-tjänster förhandlar fram en TLS-anslutning med klientsystem som ansluter till Microsoft 365-tjänster. 
 
 För att förhindra obehörig fysisk åtkomst till datacenter använder vi rigorösa operativa kontroller och processer som inkluderar 24×7 videoövervakning, utbildad säkerhetspersonal och processer och smartkort eller biometrisk multifaktor åtkomst kontroller. Vid livslängden strimlas dataskivorna och förstörs. Om en hårddisk som används för lagring drabbas av maskinvarufel eller når slutet på dess livslängd, raderas på ett säkert sätt. Data på enheten är helt överskrivna för att säkerställa att data inte kan återställas på något sätt. När sådana enheter avvecklas, de strimlas och förstöras i linje med NIST SP 800-88 R1, riktlinjer för mediarensning. Poster i destruktion behålls och granskas som en del av Microsoft gransknings- och efterlevnadsprocess. Alla Microsoft 365-tjänster använder godkända mediehanteringstjänster för medielagring och radering.
 

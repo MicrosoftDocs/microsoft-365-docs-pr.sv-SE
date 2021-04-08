@@ -20,21 +20,14 @@ search.appverid:
 - MET150
 description: Få reda på hur du avbryter din utvärderingsversion eller betalda prenumeration för Microsoft 365 för företag.
 ms.date: ''
-ms.openlocfilehash: 7a2de2a261baeb4e64e12742810635f352217933
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d37a2459c89bf5931af26a91ed14e2898c1c8c4
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916882"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615393"
 ---
 # <a name="cancel-your-subscription"></a>Avbryt din prenumeration
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 *Berättigande:* Om du har färre än 25 licenser tilldelade till användare kan du när som helst avbryta din utvärderingsversion eller betalda prenumeration av Microsoft 365 för företag online i administrationscentret för Microsoft 365. Om du har fler än 25 licenser tilldelade till användare, minska det till färre än 25 eller [ring supporten för att avbryta din prenumeration](../../admin/contact-support-for-business-products.md).
 
@@ -53,46 +46,26 @@ Om du har lagt till ett eget domännamn för användning med din prenumeration m
 
 ::: moniker range="o365-worldwide"
 
-1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a> och väljer sedan fliken **Produkter**.
-2. Hitta den prenumeration du vill avbryta. Välj **Fler åtgärder** (tre punkter) och välj sedan **Avbryt prenumeration**.
-3. I fönstret **Avbryt prenumeration** väljer du en anledning till varför du avbryter prenumerationen. Alternativt kan du ge valfri feedback.
-4. Välj **Spara**.
-
-Din prenumeration får status **Inaktiverad** och har begränsad funktionalitet tills den tas bort. Mer information om vad du kan förvänta dig när en betald Microsoft 365 för företag-prenumeration avbryts finns i [Vad händer med data och åtkomst när min Microsoft 365 för företag-prenumeration avslutas?](what-if-my-subscription-expires.md)
-
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a> i administrationscentret.
-
-2. Välj en prenumeration på sidan **Prenumerationer**.
-
-3. Välj **Avbryt prenumeration** i menyn **Fler åtgärder**.
-
-    ![Närbild på menyn Fler åtgärder.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
-
-4. Gå igenom de viktiga datumen, ge feedback om varför du avbryter prenumerationen och välj sedan **Avbryt prenumeration**.
-
-    Din prenumeration får status **Inaktiverad** och har begränsad funktionalitet tills den tas bort. Mer information om vad du kan förvänta dig när en betald Microsoft 365 för företag-prenumeration avbryts finns i [Vad händer med data och åtkomst när min Microsoft 365 för företag-prenumeration avslutas?](what-if-my-subscription-expires.md)
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Dina produkter</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a> i administrationscentret.
-
-2. Välj en prenumeration på sidan **Prenumerationer**.
-
-3. Välj **Avbryt prenumeration** i menyn **Fler åtgärder**.
-
-    ![Närbild på menyn Fler åtgärder.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
-
-4. Gå igenom de viktiga datumen, ge feedback om varför du avbryter prenumerationen och välj sedan **Avbryt prenumeration**.
-
-    Din prenumeration får status **Inaktiverad** och har begränsad funktionalitet tills den tas bort. Mer information om vad du kan förvänta dig när en betald Microsoft 365 för företag-prenumeration avbryts finns i [Vad händer med data och åtkomst när min Microsoft 365 för företag-prenumeration avslutas?](what-if-my-subscription-expires.md)
-
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Dina produkter</a>.
 ::: moniker-end
+
+2. Välj fliken **Produkter**.
+3. Hitta den prenumeration du vill avbryta. Välj **Fler åtgärder** (tre punkter) och välj sedan **Avbryt prenumeration**.
+4. I fönstret **Avbryt prenumeration** väljer du en anledning till varför du avbryter prenumerationen. Alternativt kan du ge valfri feedback.
+5. Välj **Spara**.
+
+Din prenumeration får status **Inaktiverad** och har begränsad funktionalitet tills den tas bort. Mer information om vad du kan förvänta dig när en betald Microsoft 365 för företag-prenumeration avbryts finns i [Vad händer med min data och åtkomst när min Microsoft 365 för företag-prenumeration avslutas?](what-if-my-subscription-expires.md).
 
 ## <a name="what-happens-when-you-cancel-a-subscription"></a>Vad händer när du avbryter en prenumeration?
 

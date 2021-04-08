@@ -20,12 +20,12 @@ ms.collection:
 description: Administratörer kan lära sig att höja säkerhetsinställningarna och använda rapporter, aviseringar och undersökningar för prioritetskonton i Sina Microsoft 365-organisationer.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9bb2586c11a22286bde5be01f1e9b3e5e0d981ac
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 73be3832b2391b6f47e4c796daf76c884a17dcdd
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207381"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632227"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Säkerhetsrekommendationer för prioritetskonton i Microsoft 365
 
@@ -47,6 +47,9 @@ Microsoft 365 och Microsoft Defender för Office 365 innehåller flera viktiga f
 |[Övervaka prioritetskonton i aviseringar, rapporter och identifieringar](#monitor-priority-accounts-in-alerts-reports-and-detections)|||![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Utbilda användare](#train-users)|![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
+
+> [!NOTE]
+> Information om hur du skyddar _behöriga konton_ (administratörskonton) finns i det [här avsnittet.](/azure/architecture/framework/security/critical-impact-accounts)
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>Öka inloggningssäkerheten för prioriterade konton
 
