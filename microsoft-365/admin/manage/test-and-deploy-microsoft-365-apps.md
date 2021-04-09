@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Hitta, testa och distribuera Microsoft- och Microsoft-partnerappar för användare och grupper i organisationen från portalen för integrerade appar i administrationscentret för Microsoft 365.
-ms.openlocfilehash: f806d48e0ed582b1b5c1ee262058ce987125bd99
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: da67cbe5f8b6e5f2da42e1f4b57a55d7d4a768fb
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488295"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644482"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Testa och distribuera Microsoft 365-appar efter partners i portalen För integrerade appar
 
@@ -29,7 +29,7 @@ Mer information om att köpa och licensiera Microsoft 365-appar från partner i 
 
 Mer information om hur partners skapar dessa appar finns i Planera [ett SaaS-erbjudande för kommersiella marknadsplatser](https://go.microsoft.com/fwlink/?linkid=2158277)
 
-Portalen för integrerade appar är endast tillgänglig för globala administratörer och endast för WorldWide-kunder. Den här funktionen är inte tillgänglig i moln för myndigheter.
+Portalen för integrerade appar är endast tillgänglig för globala administratörer och endast tillgänglig för kunder över hela världen. Den här funktionen är inte tillgänglig i moln för myndigheter.
 
 I portalen Integrerade appar visas en lista med appar, som innehåller enstaka appar och Microsoft 365-appar från partners som distribueras till din organisation. Endast webbappar, SPFx-appar, Office-tillägg och Teams-appar visas. För webbappar finns det två typer av appar.
 

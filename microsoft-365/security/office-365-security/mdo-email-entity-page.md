@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Microsoft Defender för Office 365 E5- och ATP P1- och ATP P2-kunder kan nu få en 360-gradersvy av varje e-postmeddelande med entitetssidan för e-post.
-ms.openlocfilehash: 6d2777113e7e9f9ce760dab3b83252eceab520ff
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 7797e9f5965f43b856c2c34df1f99fddf72d5df5
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599493"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650344"
 ---
 # <a name="the-email-entity-page"></a>Sidan E-postenhet
 
@@ -119,7 +119,7 @@ Användarna ser bättre information om kända skadliga bilagor eller hyperlänka
   - När skräppostregeln har aktiverats för postlådan kan Exchange Online Protection (EOP) flytta meddelanden till skräppost enligt vissa villkor. Flytten kan baseras på åtgärden skräppostfiltrering av bedömning Flytta meddelandet till mappen Skräppost eller i listan Spärrade avsändare i postlådan. Om du inaktiverar skräppostregeln förhindras leverans av meddelanden till mappen Skräppost baserat på *listan Betrodda* avsändare i postlådan.
   - När skräppostregeln är  inaktiverad för postlådan kan EOP inte flytta meddelanden till mappen Skräppost baserat på åtgärden skräppostfiltreringsåtgärden Flytta meddelandet till mappen Skräppost eller samlingen lista över säkra e-postmeddelanden i postlådan.
 
-- *BCL (Bulk Compliant Level)*: BCL (Bulk Complaint Level) för meddelandet. En högre BCL anger att det är mer sannolikt att ett massutskick av e-postmeddelande skapar klagomål (det naturliga resultatet om e-postmeddelandet kan vara skräppost).
+- *BCL (Bulk Complaint Level):* BCL (Bulk Complaint Level) för meddelandet. En högre BCL anger att det är mer sannolikt att ett massutskick av e-postmeddelande skapar klagomål (det naturliga resultatet om e-postmeddelandet kan vara skräppost).
 
 - *SCL (Spam Confidence Level):* SCL (Spam Confidence Level) för meddelandet. Ett högre värde innebär att det är mer troligt att meddelandet är skräppost.
 

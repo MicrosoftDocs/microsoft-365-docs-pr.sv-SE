@@ -21,12 +21,12 @@ ms.custom:
 description: Administratörer kan läsa mer om inställningarna för skydd mot skräppost och filter som hjälper till att förhindra skräppost i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f19330d7af9c4a6601baa9562766eb5a6e7052a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: eaff771d6fa0490819ec076b5a9a43ac843cf207
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207509"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650272"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Skydd mot skräppost i EOP
 
@@ -91,7 +91,7 @@ Här är några metodtips som gäller för något av de olika situationerna:
 
   - **DMARC:** Domänbaserad meddelandeautentisering, rapportering och överensstämmelse hjälper mål-e-postsystem att avgöra vad de ska göra med meddelanden som misslyckas med SPF- eller DKIM-kontroller och ger ytterligare en nivå av förtroende för dina e-postpartners. Mer information finns i Använda [DMARC för att validera e-post i Microsoft 365.](use-dmarc-to-validate-email.md)
 
-- **Kontrollera inställningarna för** massutskick: Tröskelvärdet för massutskick (BCL) som du konfigurerar i principer för massutskick avgör om massutskick (kallas även grå e-post) markeras som skräppost. Inställningen Endast PowerShell för _MarkAsSpamBulkMail_ som är på som standard bidrar också till resultaten. Mer information finns i [Konfigurera principer för skydd mot skräppost i Microsoft 365.](configure-your-spam-filter-policies.md)
+- **Kontrollera inställningarna för** massutskick: Tröskelvärdet för mass klagomålsnivå (BCL) som du konfigurerar i principer för skräppost avgör om massutskick (även kallat grå e-post) markeras som skräppost. Inställningen Endast PowerShell för _MarkAsSpamBulkMail_ som är på som standard bidrar också till resultaten. Mer information finns i [Konfigurera principer för skydd mot skräppost i Microsoft 365.](configure-your-spam-filter-policies.md)
 
 ### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>Förhindra skräppostleverans till Inkorgen
 

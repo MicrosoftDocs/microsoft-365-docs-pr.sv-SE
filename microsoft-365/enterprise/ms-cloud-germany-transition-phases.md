@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: Sammanfattning Förstå åtgärderna i migreringsfaserna och hur de påverkar flytten från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i den nya tyska datacenterområdet.
-ms.openlocfilehash: 0cf1358b4170b69d3506062c336a1cf67a2da2de
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: e3ed1d76a755ce6326ac6ae53b990136a10b564a
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591738"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644722"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Åtgärder i migreringsfaser och påverkan på migreringen från Microsoft Cloud Deutschland
 
@@ -41,7 +41,7 @@ Migreringsprocessen slutförs under många veckor beroende på organisationens t
 |Azure|Veckor|Kund|Skapa nya globala Azure-prenumerationer och övergång Azure-tjänster.|
 |Övergången & prenumerationslicens|1–2 dagar|Microsoft|Köp globala prenumerationer, avbryt Microsoft Cloud Deutschland-prenumerationer och gå över användarlicenser.|
 |SharePoint och OneDrive|15+ dagar|Microsoft|Migrera innehåll i SharePoint och OneDrive för företag, men sharepoint.de URL:er.|
-|Exchange Online|15+ dagar|Microsoft|Migrera Exchange Online-innehåll och gå över till globala URL:er.|
+|Exchange online|15+ dagar|Microsoft|Migrera Exchange Online-innehåll och gå över till globala URL:er.|
 |Säkerhets- & efterlevnad|1–2 dagar|Microsoft|Säkerhet och & och innehåll för övergång.|
 |Skype för företag|1–2 dagar|Microsoft|Gå över från Skype för företag till Microsoft Teams.|
 |Power BI & Dynamics 365|15+ dagar|Microsoft|Migrera innehåll i Power BI och Dynamics 365.|
@@ -128,7 +128,7 @@ Ytterligare överväganden:
 
 **Gäller för:** Alla kunder som använder Exchange Online
 
-Om du använder Exchange Online-hybrid: Exchange Online-hybridadministratörer måste köra hybridkonfigurationsguiden  **(HCW)** flera gånger under den här övergången. Tillämpa [Exchange-förarbetet innan](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-configuration) **migrering steg 5 börjar.** Exchange Online-hybridkunder måste köra den senaste versionen av hybridkonfigurationsguiden för Exchange (HCW) i läget "Office 365 Germany" för att förbereda den lokala konfigurationen för migreringen till globala Office 365-tjänster.
+Om du använder Exchange Online-hybrid: Exchange Online-hybridadministratörer måste köra hybridkonfigurationsguiden  **(HCW)** flera gånger under den här övergången. Tillämpa [Exchange-förarbetet innan](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-customers) **migrering steg 5 börjar.** Exchange Online-hybridkunder måste köra den senaste versionen av hybridkonfigurationsguiden för Exchange (HCW) i läget "Office 365 Germany" för att förbereda den lokala konfigurationen för migreringen till globala Office 365-tjänster.
 
 När migreringsfasen **9** är slutförd (när meddelandet om meddelandecenter publiceras) måste du köra HCW igen med hjälp av de globala inställningarna för Office 365 så att dina lokala system pekar på de globala Office 365-tjänsterna.
 

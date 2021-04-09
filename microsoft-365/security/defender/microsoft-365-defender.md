@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 687077b1c9ff2449d9994875419a97cf0c503c2f
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 86bc6ef03438b637f62cf0e2a46e418dbea7a3c1
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581088"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650284"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -56,7 +56,7 @@ Med den integrerade Microsoft 365 Defender-lösningen kan säkerhetsexperter han
 
 I den här interaktiva guiden får du lära dig hur du skyddar organisationen med Microsoft 365 Defender. Du ser hur Microsoft 365 Defender kan hjälpa dig att identifiera säkerhetsrisker, undersöka attacker mot din organisation och förhindra skadliga aktiviteter automatiskt.
 
-[Ta en titta på den interaktiva guiden](https://aka.ms/M365Defender-InteractiveGuide)
+[Ta del av den interaktiva guiden](https://aka.ms/M365Defender-InteractiveGuide)
 
 
 
@@ -96,3 +96,7 @@ Microsoft 365 Defender-funktioner för flera produkter omfattar:
 Licenskraven för Microsoft 365 Defender måste uppfyllas innan du kan aktivera tjänsten i säkerhetscentret för Microsoft 365 [på security.microsoft.com.](https://security.microsoft.com) Mer information finns i:
 - [Licenskrav](prerequisites.md#licensing-requirements)
 - [Aktivera Microsoft 365 Defender](m365d-enable.md)
+
+
+## <a name="see-also"></a>Se även
+- [Distribuera skyddsfunktioner för hot i Microsoft 365 E5](https://docs.microsoft.com/microsoft-365/solutions/deploy-threat-protection)

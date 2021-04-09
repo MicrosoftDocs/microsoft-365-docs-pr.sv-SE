@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: Arbeta i förväg när du flyttar från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i den nya tyska datacenterområdet.'
-ms.openlocfilehash: e04246626088d9fca653c98246fd4a5b81bc1d30
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 3172c76288a8b9957f106f17e6cd34ccaf024067
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591880"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644734"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Aktiviteter före migreringen från Microsoft Cloud Deutschland
 
@@ -102,7 +102,7 @@ Läsa och använda [ADFS-migreringsstegen](ms-cloud-germany-transition-add-adfs.
 | Begränsa SharePoint 2013-arbetsflöden som används under SharePoint Online-migreringen. | Minska SharePoint 2013-arbetsflöden och slutför direktarbetsflöden före övergångar. | Inaction may result in user confusion and help desk calls. |
 ||||
 
-## <a name="exchange-online"></a>Exchange Online
+## <a name="exchange-online"></a>Exchange online
 
 <!-- before phase 5 -->
 
@@ -115,18 +115,19 @@ Läsa och använda [ADFS-migreringsstegen](ms-cloud-germany-transition-add-adfs.
 | Meddela användarna om obligatoriska IMAP4-/POP3-/SMTP-klientändringar. | Användare som har enhetsanslutningar till Microsoft Cloud Deutschland-slutpunkter för klientprotokoll IMAP4, POP3 och SMTP måste manuellt uppdatera sina klientenheter för att kunna byta till [globala Office 365-slutpunkter.](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) | Informera i förväg om det här beroendet till användare av dessa protokoll och se till att de antingen byter till Outlook Mobile eller Outlook på webben under den här migreringen. Om det inte går att uppdatera klientens slutpunkter misslyckas klientanslutningen mot Microsoft Cloud Deutschland när användarpostlådor migreras. |
 ||||
 
-### <a name="exchange-online-hybrid-configuration"></a>Exchange Online-hybridkonfiguration
+### <a name="exchange-online-hybrid-customers"></a>Exchange Online-hybridkunder
 
 **Gäller för:** Alla kunder som använder en aktiv Exchange-hybridkonfiguration med Exchange-servrar lokalt<br>
 **När den** används: Vilken tid som helst före fas 5 startar
 
-Företagskunder med en hybriddistribution av Exchange Online och en lokal Exchange Server kör hybridkonfigurationsguiden (HCW) för att underhålla och upprätta hybridkonfigurationen. Vid övergången från Microsoft Cloud Deutschland till Office 365 Germany-regionen måste administratören köra den senaste versionen av HCW på nytt i Läget "Office 365 Germany" innan Exchange-migreringen (fas 5) startar. Kör sedan HCW igen i läget "Office 365 Worldwide" när fas 5 är slutförd för att slutföra den lokala distributionen med regionsinställningarna för Office 365 Germany.
+Enterprise customers with a hybrid deployment of Exchange Online and an on-premises Exchange Server run the Hybrid Configuration Wizard (HCW) and AAD Connect to maintain and establish the hybrid setup. Vid övergången från Microsoft Cloud Deutschland till Office 365 Germany-regionen måste administratören köra den senaste versionen av HCW på nytt i Läget "Office 365 Germany" innan Exchange-migreringen (fas 5) startar. Kör sedan HCW igen i läget "Office 365 Worldwide" när fas 5 är slutförd för att slutföra den lokala distributionen med regionsinställningarna för Office 365 Germany. Katalogattribut synkroniseras mellan Office 365 och Azure AD med den lokala distributionen via AAD Connect. 
 
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
-| (Försteg 5) – Kör om HCW med hjälp av inställningarna för Office 365 Germany <br><br> <i>Du kan starta aktiviteten direkt efter att du fått meddelandet i meddelandecentret om att migreringen av Office 365-klientorganisationen har startat (fas 1).</i>| Om du avinstallerar och kör HCW (17.0.5378.0 eller senare) från innan fas 5 kan du se till att din lokala konfiguration är redo att skicka och ta emot e-post med både Microsoft Cloud Deutschland-användare och användare som migreras till regionen [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) Office 365 Germany. <p><li> I HCW för listrutan under **Min Office 365-organisation** finns på väljer du **Office 365 Germany.** | Om du inte kan slutföra den här uppgiften innan steg 5 [Exchange-migrering] börjar kan det resultera i NDR-meddelanden för e-post som dirigeras mellan den lokala Exchange-distributionen och Office 365.  
-| (Efter steg 5) - Kör om HCW med de globala inställningarna för Office 365 <br><br> <i>Du kan starta aktiviteten när du har fått meddelandet i meddelandecentret om att Exchange-migreringen är slutförd (fas 5).</i>| Om du avinstallerar och kör HCW igen från efter fas 5 återställs den lokala konfigurationen för hybridkonfiguration med [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) endast Office 365 global. <p><li> I listrutan under **Min Office 365-organisation** finns på väljer du **Office 365 globalt.** | Om du inte kan slutföra den här uppgiften innan fas 9 [Migreringen har slutförts] kan det resultera i NDR-meddelanden för e-post som dirigeras mellan din lokala Exchange-distribution och Office 365.  
+| (Förfas 5) – Kör OM HCW med hjälp av inställningarna för Office 365 Germany <br><br> <i>Du kan starta aktiviteten direkt efter att du fått meddelandet i meddelandecentret om att migreringen av Office 365-klientorganisationen har startat (fas 1).</i>| Avinstallera och köra HCW (17.0.5378.0 eller senare) från innan fas 5 så att din lokala konfiguration är redo att skicka och ta emot e-post med både Microsoft Cloud Deutschland-användare och användare som migreras till regionen [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) Office 365 Germany. <p><li> I HCW för listrutan under **Min Office 365-organisation** finns på väljer du **Office 365 Germany.** | Om du inte kan slutföra den här uppgiften innan fas 5 [Exchange-migrering] börjar kan det resultera i NDR-meddelanden för e-post som dirigeras mellan den lokala Exchange-distributionen och Office 365.  
+| (Efter fas 5) - Kör OM HCW med de globala inställningarna för Office 365 <br><br> <i>Du kan starta aktiviteten när du har fått meddelandet i meddelandecentret om att Exchange-migreringen är slutförd (fas 5).</i>| Om du avinstallerar och kör HCW igen från efter fas 5 återställs den lokala konfigurationen för hybridkonfiguration med [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) bara Office 365 global. <p><li> I listrutan under **Min Office 365-organisation** finns på väljer du **Office 365 globalt.** | Om du inte kan slutföra den här uppgiften innan fas 9 [migreringen är slutförd] kan det resultera i NDR-meddelanden för e-post som dirigeras mellan din lokala Exchange-distribution och Office 365.  
 | Upprätta AuthServer lokalt som pekar på global SÄKERHETStokentjänst (STS) för autentisering | Detta säkerställer att autentiseringsförfrågningar för Exchange-tillgänglighetsförfrågningar från användare i migreringstillstånd som är mål för den lokala hybridmiljön autentiseras för åtkomst till den lokala tjänsten. På samma sätt säkerställer detta autentisering av förfrågningar från lokala till globala slutpunkter för Office 365-tjänster. | När Azure AD-migrering (fas 2) har slutförts måste administratören för den lokala Exchange-topologin (hybrid) lägga till en ny autentiseringstjänstslutpunkt för globala Office 365-tjänster. Med det här kommandot från Exchange PowerShell ersätter du med `<TenantID>` organisationens klientorganisations-ID som finns på Azure-portalen i Azure Active Directory.<br>`New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<TenantId>/metadata/json/1`<br> Om uppgiften inte slutförs kan det leda till hybridförfrågningar om ledig/upptagen-information som inte kan tillhandahålla information för postlådeanvändare som har migrerats från Microsoft Cloud Deutschland till Office 365-tjänster.  |
+| (Före fas 5) – bevara inställningarna för den delade postlådan | Vissa hybridkunder har konverterat molnbaserade användarpostlådor till delade postlådor med Exchange Online-kommandon. Den här molnpostlådekonfigurationen är skriven till postlådan och den lokala Exchange Online-katalogen, men den synkroniseras inte tillbaka till kundens Active Directory via AAD Connect. Resultatet är en avvikelse mellan Active Directory-representationen av postlådans RemoteRecipientType- och RemoteDisplayType-värden och den i Exchange Online som definierar postlådan som delad. <br><br> Kunden ansvarar för att säkerställa att alla delade postlådor är korrekt etablerade med hjälp `New-RemoteMailbox -Shared` av , `Enable-RemoteMailbox -Shared` eller `Set-RemoteMailbox -Shared` .  I den här referensen finns [information om hur du konverterar en användares postlåda i en hybridmiljö.](https://docs.microsoft.com/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox?view=o365-worldwide)| Om du inte kan slutföra den här uppgiften före fas 5 [Exchange Online-migrering] kan det resultera i NDR-resultat för delade postlådor som konverteras tillbaka till olicensierade postlådor och att delad åtkomst för berörda postlådor går förlorad. [Delade postlådor konverteras](https://docs.microsoft.com/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes) oväntat till användarpostlådor när katalogsynkroniseringen körs i en Exchange-hybriddistribution ger en översikt över effekterna av att inte åtgärda detta innan Exchange Online-migreringen har slutförts.  
 ||||
 
 ## <a name="skype-for-business-online"></a>Skype för företag online

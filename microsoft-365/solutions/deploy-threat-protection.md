@@ -1,7 +1,7 @@
 ---
 title: Distribuera skyddsfunktioner för hot i Microsoft 365
 description: Få en översikt över skyddstjänster för hot och säkerhetsfunktioner i Microsoft 365 E5. Skydda dina användarkonton, enheter, e-postinnehåll med mera med Microsoft 365 E5.
-keywords: skydd mot hot, säkerhet, E5, cyberattacker, skadlig programvara, M365, lösning
+keywords: avancerat skydd mot hot, säkerhet, microsoft 365 E5, lösning, skydda enheter, defender
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 806c97a55b3cbe46d597566425cf71476586ecee
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: ea28e9c244b6b8faaeb9b1f3685d57169605cbb9
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604384"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650320"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>Distribuera skyddsfunktioner för hot i Microsoft 365 E5
 

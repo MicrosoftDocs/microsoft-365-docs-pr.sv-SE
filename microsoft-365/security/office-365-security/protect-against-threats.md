@@ -20,12 +20,12 @@ description: Administratörer kan läsa mer om skydd mot hot i Microsoft 365 och
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 189325dab37a548c717cd554ecd1d37c19ae57ea
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2df88df9f1f0e2c14c0adcf0d5772189a1276e9d
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207160"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650236"
 ---
 # <a name="protect-against-threats"></a>Skydda mot hot
 
@@ -60,8 +60,8 @@ Skyddsfunktioner för hot ingår i *alla* Microsoft- eller Office 365-prenumerat
 |Skydd mot skräppost|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Automatisk rensning (för e-post)|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Skydd mot skadliga URL:er och filer i e-post och Office-dokument (säkra länkar och säkra bifogade filer)|[Microsoft Defender för Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|Aktivera Säkra bifogade filer för arbetsbelastningar i SharePoint, OneDrive och Microsoft Teams|[Defender för Office 365 ](turn-on-mdo-for-spo-odb-and-teams.md)|
-|Avancerat skydd mot nätfiske|[Defender förr Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Aktivera Säkra bifogade filer för arbetsbelastningar i SharePoint, OneDrive och Microsoft Teams|[Microsoft Defender för Office 365](turn-on-mdo-for-spo-odb-and-teams.md)|
+|Avancerat skydd mot nätfiske|[Microsoft Defender för Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Roller och behörigheter
 

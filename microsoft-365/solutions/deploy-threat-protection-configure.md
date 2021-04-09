@@ -1,7 +1,7 @@
 ---
 title: Steg för att konfigurera skyddsfunktioner för hot i Microsoft 365
 description: Använd den här artikeln som en guide för att implementera din lösning för hotskydd. Distribuera skyddstjänster för hot och funktioner i Microsoft 365 E5.
-keywords: säkerhet, konfiguration, konfiguration, Microsoft 365 E5, avancerat skydd mot hot
+keywords: säkerhetslösning, konfiguration, konfiguration, Microsoft 365 E5, avancerat skydd mot hot, defender
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 81a1a4ce2e99caaca1025c6ddbbdfdc7ab7c449d
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: a0c728e5f273752792f851c72df2dfe243116221
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615513"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650224"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Konfigurera skyddsfunktioner för hot i Microsoft 365
 

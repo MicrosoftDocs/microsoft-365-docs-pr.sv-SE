@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: I den här artikeln kan administratörer läsa mer om skydd mot säkra länkar i Defender för Office 365 för att skydda organisationen från nätfiske och andra angrepp som använder skadliga URL-adresser.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 06ec3ab1a255e9eaa8c190ed5c248c9587273e03
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1f27e1bbd051bd43d1f160707589db2bb7189b76
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207388"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644782"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Säkra länkar i Microsoft Defender för Office 365
 
@@ -118,11 +118,11 @@ Inställningarna i principer för säkra länkar som gäller för e-postmeddelan
 
 - **Tillåt inte användare att klicka till den** ursprungliga URL:en: Tillåter eller blockerar användare från att klicka på [varningssidan](#warning-pages-from-safe-links) till den ursprungliga URL:en. Värdet som rekommenderas är aktiverat.
 
-- **Visa organisationens varumärke på aviserings- och varningssidor:** Det här alternativet visar organisationens varumärke på varningssidor. Profilering hjälper användarna att identifiera legitima varningar, eftersom standard varningssidor från Microsoft ofta används av attackerare. Mer information om anpassad profilering finns i [Lägga till profilering på din organisations Inloggningssida för Azure Active Directory.](/azure/active-directory/fundamentals/customize-branding)
+- **Visa organisationens varumärke på aviserings- och varningssidor:** Det här alternativet visar organisationens varumärke på varningssidor. Profilering hjälper användarna att identifiera legitima varningar, eftersom standard varningssidor från Microsoft ofta används av attackerare. Mer information om anpassad profilering finns i [Anpassa Microsoft 365-temat för din organisation.](../../admin/setup/customize-your-organization-theme.md)
 
 - **Omskrivningar inte följande URL:er:** Lämnar URL:er som de är. Innehåller en anpassad lista över säkra URL:er som inte behöver skannas. Listan är unik för varje princip för säkra länkar. Mer information om  listan Ange inte om följande URL-adresser finns i [listorna "Ange](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) inte följande URL:er" i avsnittet om principer för säkra länkar längre fram i den här artikeln.
 
-Mer information om rekommenderade värden för principinställningarna Standard och Strikt för principer för säkra länkar finns i [Principinställningar för säkra länkar.](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
+  Mer information om rekommenderade värden för principinställningarna Standard och Strikt för principer för säkra länkar finns i [Principinställningar för säkra länkar.](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
 
 - **Mottagarfilter:** Du måste ange mottagarens villkor och undantag som avgör vem principen gäller för. Du kan använda de här egenskaperna för villkor och undantag:
 
@@ -167,7 +167,7 @@ Följande inställningar i principer för säkra länkar som gäller för länka
 - **Spåra inte användarklick**
 - **Tillåt inte användare att klicka till den ursprungliga URL:en**
 
-De här inställningarna förklaras i föregående [inställningar för säkra länkar för e-postmeddelanden.](#safe-links-settings-for-email-messages)
+De här inställningarna förklaras tidigare i [inställningarna för Säkra länkar för e-postmeddelanden.](#safe-links-settings-for-email-messages)
 
 När du har aktiverar skydd mot säkra länkar för Microsoft Teams kontrolleras URL:er i Teams mot en lista med kända skadliga länkar när den skyddade användaren klickar på länken (skydd vid klickning). URL:er skrivs inte om. Om en länk skulle vara skadlig har användarna följande funktioner:
 
@@ -256,22 +256,22 @@ När en användare i en aktiv princip för säkra länkar klickar på en blocker
 
 Du konfigurerar listan med URL-adresser i de globala inställningarna för Säkra länkar. Anvisningar finns i [Konfigurera listan "Blockera följande URL:er".](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center)
 
-**Anmärkningar**:
-
-- En verkligt universell lista över URL:er som är blockerade överallt finns i Hantera listan över [tillåtna/blockerade klientorganisationen.](tenant-allow-block-list.md)
-
-- Begränsningar:
-  - Det maximala antalet poster är 500.
-  - Den maximala längden på en post är 128 tecken.
-  - Alla poster får högst vara 10 000 tecken.
-
-- Inkludera inte ett snedstreck `/` () i slutet av URL:en. Använd till exempel `https://www.contoso.com` , inte `https://www.contoso.com/` .
-
-- En url som endast är en domän `contoso.com` (till `tailspintoys.com` exempel) blockerar alla URL-adresser som innehåller domänen.
-
-- Du kan blockera en underdomän utan att blockera hela domänen. Spärra till `toys.contoso.com*` exempel alla URL-adresser som innehåller underdomänen, men blockerar inte URL-adresser som innehåller den fullständiga `contoso.com` domänen.
-
-- Du kan ta med upp till tre jokertecken ( `*` ) per URL-post.
+> [!NOTE]
+> 
+> - En verkligt universell lista över URL:er som är blockerade överallt finns i Hantera listan över [tillåtna/blockerade klientorganisationen.](tenant-allow-block-list.md)
+> 
+> - Begränsningar:
+>   - Det maximala antalet poster är 500.
+>   - Den maximala längden på en post är 128 tecken.
+>   - Alla poster får högst vara 10 000 tecken.
+> 
+> - Inkludera inte ett snedstreck `/` () i slutet av URL:en. Använd till exempel `https://www.contoso.com` , inte `https://www.contoso.com/` .
+> 
+> - En url som endast är en domän `contoso.com` (till `tailspintoys.com` exempel) blockerar alla URL-adresser som innehåller domänen.
+> 
+> - Du kan blockera en underdomän utan att blockera hela domänen. Spärra till `toys.contoso.com*` exempel alla URL-adresser som innehåller underdomänen, men blockerar inte URL-adresser som innehåller den fullständiga `contoso.com` domänen.
+> 
+> - Du kan ta med upp till tre jokertecken ( `*` ) per URL-post.
 
 ### <a name="entry-syntax-for-the-block-the-following-urls-list"></a>Postsyntax för listan "Blockera följande URL:er"
 
@@ -296,20 +296,20 @@ Varje princip för säkra länkar innehåller inte omskrivningar av följande **
 
 Om du vill lägga till poster i listan i nya eller befintliga principer för säkra länkar kan du gå till Skapa principer [för säkra länkar](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) eller Ändra principer för säkra [länkar.](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies)
 
-**Anmärkningar**:
-
-- Följande klienter känner inte igen följande **URL-listor** i principer för säkra länkar. Användare som ingår i säkerhetsprocessen kan blockeras från att komma åt URL-adresser baserat på resultatet av genomsökning av säkra länkar i dessa klienter:
-
-  - Microsoft Teams
-  - Office-webbappar
-
-  En verkligt universell lista över URL:er som är tillåtna överallt finns i Hantera listan över [tillåtna/blockerade klientorganisationen.](tenant-allow-block-list.md)
-
-- Överväg att lägga till ofta använda interna URL:er i listan för att förbättra användarupplevelsen. Om du till exempel har lokala tjänster, till exempel Skype för företag eller SharePoint, kan du lägga till url-adresser för att utesluta dem från genomsökning.
-
-- Om du redan har Skriver inte om följande **URL-adresser** i principerna för säkra länkar bör du granska listorna och lägga till jokertecken efter behov. Din lista har till exempel en post som och `https://contoso.com/a` du senare bestämmer dig för att ta med undervägar som `https://contoso.com/a/b` . I stället för att lägga till en ny post kan du lägga till ett jokertecken till den befintliga posten så att den blir `https://contoso.com/a/*` .
-
-- Du kan ta med upp till tre jokertecken ( `*` ) per URL-post. Jokertecken innehåller explicit prefix eller underdomäner. Posten är till exempel inte samma som , eftersom det gör att personer kan besöka `contoso.com` `*.contoso.com/*` `*.contoso.com/*` underdomäner och sökvägar i den angivna domänen.
+> [!NOTE]
+> 
+> - Följande klienter känner inte igen följande **URL-listor** i principer för säkra länkar. Användare som ingår i säkerhetsprocessen kan blockeras från att komma åt URL-adresser baserat på resultatet av genomsökning av säkra länkar i dessa klienter:
+> 
+>   - Microsoft Teams
+>   - Office-webbappar
+> 
+>   En verkligt universell lista över URL:er som är tillåtna överallt finns i Hantera listan över [tillåtna/blockerade klientorganisationen.](tenant-allow-block-list.md)
+> 
+> - Överväg att lägga till ofta använda interna URL:er i listan för att förbättra användarupplevelsen. Om du till exempel har lokala tjänster, till exempel Skype för företag eller SharePoint, kan du lägga till url-adresser för att utesluta dem från genomsökning.
+> 
+> - Om du redan har Skriver inte om följande **URL-adresser** i principerna för säkra länkar bör du granska listorna och lägga till jokertecken efter behov. Din lista har till exempel en post som och `https://contoso.com/a` du senare bestämmer dig för att ta med undervägar som `https://contoso.com/a/b` . I stället för att lägga till en ny post kan du lägga till ett jokertecken till den befintliga posten så att den blir `https://contoso.com/a/*` .
+> 
+> - Du kan ta med upp till tre jokertecken ( `*` ) per URL-post. Jokertecken innehåller explicit prefix eller underdomäner. Posten är till exempel inte samma som , eftersom det gör att personer kan besöka `contoso.com` `*.contoso.com/*` `*.contoso.com/*` underdomäner och sökvägar i den angivna domänen.
 
 ### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>Postsyntax för listan "Ange inte följande URL:er"
 

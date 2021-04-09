@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 228a8813bcfff052c7f861dcd2962a94cb58c0fb
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: e19c64c01c892a8a5f47f5892882feab1242f897
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165975"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644494"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Datalagring och sekretess i Microsoft Defender för Endpoint
 
@@ -94,6 +94,9 @@ Du kan välja datalagringsprincip för dina data. Det här anger hur länge Wind
 
 **När avtalet avslutas eller avslutas**<br>
 Dina data sparas och blir tillgängliga för dig under respitperioden eller inställt läge för licensen. I slutet av perioden raderas dessa data från Microsofts system för att de inte ska återskapas, senast 180 dagar efter att avtalet avslutats eller avslutats.
+
+**Advanced Hunting data**<br>
+Avancerad sökning är ett frågebaserat verktyg för hothot där du kan utforska upp till 30 dagars rådata.
 
 
 ## <a name="can-microsoft-help-us-maintain-regulatory-compliance"></a>Kan Microsoft hjälpa oss att upprätthålla regelefterlevnad?

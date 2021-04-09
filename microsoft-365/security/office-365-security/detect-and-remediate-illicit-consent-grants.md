@@ -18,12 +18,12 @@ description: Lär dig hur du känner igen och åtgärdar medgivande för att bli
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4a9b3ff11acb32a4b3038cc18922f8e22fda0b4c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7869419677ba1d5d6b480b7f0dea7f67880af0c7
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207185"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644686"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Identifiera och åtgärda medgivandesstipend
 
@@ -128,7 +128,7 @@ Det enklaste sättet att verifiera förfallotillstånds grant-attacken är att k
 5. Kör det här PowerShell-kommandot:
 
    ```powershell
-   Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
+   .\Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
    ```
 
 Skriptet skapar en fil med namnet Permissions.csv. Följ de här anvisningarna om du vill söka efter beviljad behörighet för program:

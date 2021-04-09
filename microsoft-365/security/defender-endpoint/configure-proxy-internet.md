@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b529b1c7fa5c4f9f81cb6bfbb5f1a6bd7823a9ad
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 97d1d50e2557cbb760248738b1f096614873958f
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587605"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644710"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Konfigurera enhetsproxy och internetanslutningsinställningar
 
@@ -57,6 +57,13 @@ WinHTTP-konfigurationsinställningen är oberoende av proxyinställningarna för
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Konfigurera proxyservern manuellt med hjälp av en registerbaserad statisk proxyserver
 
 Konfigurera en registerbaserad statisk proxy så att endast Defender för slutpunkts sensor kan rapportera diagnostikdata och kommunicera med Defender för Slutpunktstjänster om en dator inte har tillåtelse att ansluta till Internet.
+
+> [!NOTE]
+> - När du använder det här alternativet på Windows 10 eller Windows Server 2019 rekommenderar vi att du har följande (eller senare) samlad version och kumulativ uppdatering:</br>
+> Windows 10, version 1909 – https://support.microsoft.com/kb/4601380</br>
+> Windows 10, version 2004 – https://support.microsoft.com/kb/4601382</br>
+> Windows 10, version 20H2 - https://support.microsoft.com/kb/4601382</br>
+> Dessa uppdateringar förbättrar anslutningen och tillförlitligheten för CnC-kanalen (kommando- och kontrollkanal).</br>
 
 Den statiska proxyn kan konfigureras via grupprincip (GP). Grupprincipen hittar du under:
 

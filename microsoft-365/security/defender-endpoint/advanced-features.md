@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bcb96ea29649bf3525b2ffcf6d5cbb5d299bacf3
-ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
+ms.openlocfilehash: 3ad31e385ed1a3c32a261286b91912c7b2562f87
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51418122"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650296"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurera avancerade funktioner i Defender för Slutpunkt
 
@@ -64,6 +64,11 @@ Mer information om rolltilldelningar finns i [Skapa och hantera roller.](user-ro
 
 Om du aktiverar den här funktionen kan du köra osignerade skript i en svarssession i direktsändning.
 
+## <a name="always-remediate-pua"></a>Åtgärda alltid PUA
+Potentiellt oönskade program (PUA) är en kategori av programvara som kan få datorn att köras långsamt, visa oväntade annonser eller i värsta fall installera annan programvara som kan vara oväntad eller oönskad. 
+
+Aktivera den här funktionen så att potentiellt oönskade program (PUA) åtgärdas på alla enheter i klientorganisationen även om PUA-skyddet inte har konfigurerats på enheterna. Det här hjälper till att skydda användare från att oavsiktligt installera oönskade program på enheten. När den är inaktiverad beror åtgärder på enhetens konfiguration. 
+
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>Begränsa korrelationen till inom begränsade enhetsgrupper
 När den här inställningen är aktiverad korreleras aviseringar till separata incidenter utifrån deras begränsade enhetsgrupp. Som standard sker korrelationen mellan incidenter i hela klientorganisationen.
@@ -71,9 +76,9 @@ När den här inställningen är aktiverad korreleras aviseringar till separata 
 >[!NOTE]
 >Om du ändrar den här inställningen påverkas bara framtida korrelationer.
 
-
 ## <a name="enable-edr-in-block-mode"></a>Aktivera EDR i blockläge
 Identifiering av slutpunkt och svar (EDR) i blockeringsläge ger skydd mot skadliga artefakter, även när Microsoft Defender Antivirus körs i passiv form. När EDR är aktiverat blockerar EDR i blockläge skadliga artefakter eller beteenden som identifieras på en enhet. EDR i blockläge arbetar bakom kulisserna för att åtgärda skadliga artefakter som upptäcks efter intrånget.
+
 
 ## <a name="autoresolve-remediated-alerts"></a>Åtgärdat autoresole-aviseringar
 
@@ -119,13 +124,13 @@ Mer information finns i [Hantera indikatorer](manage-indicators.md).
 > [!NOTE]
 > Nätverksskydd utnyttjar ryktestjänster som bearbetar förfrågningar på platser som kan vara utanför den plats du har valt för Defender för Slutpunktsdata.
 
-
 ## <a name="tamper-protection"></a>Skydd mot manipulering
 Under vissa typer av cyberattacker försöker dåliga aktör att inaktivera säkerhetsfunktioner, till exempel antivirusskydd, på dina datorer. Dåliga aktör vill inaktivera dina säkerhetsfunktioner för att få enklare åtkomst till dina data, installera skadlig programvara eller på annat sätt utnyttja dina data, din identitet och dina enheter.
 
 Skydd mot manipulering låser i princip Microsoft Defender Antivirus och förhindrar att säkerhetsinställningarna ändras genom appar och metoder.
 
 Behåll skydd mot manipulering aktiverat för att förhindra oönskade ändringar i din säkerhetslösning och dess viktiga funktioner.
+
 
 ## <a name="show-user-details"></a>Visa användarinformation
 
@@ -137,6 +142,7 @@ Aktivera den här funktionen så att du kan se användarinformation som lagras i
 
 Mer information finns i [Undersöka ett användarkonto.](investigate-user.md)
 
+
 ## <a name="skype-for-business-integration"></a>Skype för företag-integrering
 
 Om du aktiverar Skype för företag-integreringen kan du kommunicera med användare via Skype för företag, e-post eller telefon. Det kan vara praktiskt när du behöver kommunicera med användaren och minimera risker.
@@ -144,7 +150,7 @@ Om du aktiverar Skype för företag-integreringen kan du kommunicera med använd
 > [!NOTE]
 > När en enhet isoleras från nätverket visas ett popup-fönster där du kan välja att aktivera Outlook- och Skype-kommunikationer som tillåter kommunikation till användaren när han eller hon kopplas bort från nätverket. Den här inställningen gäller för Skype- och Outlook-kommunikation när enheter är i separat läge.
 
-## <a name="azure-advanced-threat-protection-integration"></a>Azure Advanced Threat Protection-integrering
+## <a name="microsoft-defender-for-identity-integration"></a>Microsoft Defender för identitetsintegrering
 
 Integreringen med Azure Advanced Threat Protection gör att du kan pivotera direkt till en annan Microsoft Identity-säkerhetsprodukt. Med Azure Avancerat skydd utökas en undersökning med ytterligare insikter om ett misstänkt komprometterat konto och relaterade resurser. Genom att aktivera den här funktionen kan du utöka den enhetsbaserade undersökningsfunktionen genom att pivotera över nätverket från en synpunkt.
 
@@ -162,13 +168,12 @@ När du aktiverar den här funktionen kan du införliva data från Avancerat sky
 
 Om du vill få sammanhangsbaserad enhetsintegration i Office 365 Threat Intelligence måste du aktivera Defender för Slutpunktsinställningar i instrumentpanelen för & säkerhet och efterlevnad. Mer information finns i Undersökning [av hot och svar.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti)
 
-## <a name="microsoft-threat-experts"></a>Microsoft Hotexperter
+## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Microsoft Threat Experts – riktade attackmeddelanden
 
 Av de två Microsoft Threat Expert-komponenterna är riktade attackmeddelanden i allmän tillgänglighet. Experter på begäran är fortfarande i förhandsversion. Du kan bara använda funktionen för experter på begäran om du har tillämpat en förhandsgranskning och programmet har godkänts. Du kan få riktade attackmeddelanden från Microsoft Threat Experts via din Defender för Endpoint-portalens aviseringar-instrumentpanel och via e-post om du konfigurerar den.
 
 > [!NOTE]
 > Microsoft Threat Experts-funktionen i Defender för Endpoint är tillgänglig med en E5-licens för [Enterprise Mobility + Security.](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
 Aktivering av den här inställningen vidarebefordrar Defender för Endpoint-signaler till Microsoft Cloud App Security för att bättre kunna se användningen av molnprogram. Vidarebefordrade data lagras och bearbetas på samma plats som dina Cloud App Security-data.
@@ -176,13 +181,10 @@ Aktivering av den här inställningen vidarebefordrar Defender för Endpoint-sig
 > [!NOTE]
 > Den här funktionen är tillgänglig med en E5-licens för [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) på enheter som kör Windows 10, version 1709 (OS-version 16299.1085 med [KB4493441),](https://support.microsoft.com/help/4493441)Windows 10, version 1803 (OS Version 17134.704 med [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809 (OS Build 17763.379 med [KB4489899](https://support.microsoft.com/help/4489899)) eller senare Windows 10-versioner.
 
-## <a name="azure-information-protection"></a>Azure Information Protection
-
-Om du slår på den här inställningen kan signaler vidarebefordras till Azure Information Protection. Det ger dataägare och administratörer insyn i skyddade data på enheter som är registrerade och riskklassificeringar för enheter.
-
 ## <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
 Vidarebefordrar Microsoft Defender för Endpoint-signaler till Microsoft Secure Score i Microsoft 365 säkerhetscenter. Om du slår på den här funktionen kan Microsoft Secure Score hålla ordning på enhetens säkerhetssystem. Vidarebefordrade data lagras och bearbetas på samma plats som dina Microsoft Secure Score-data.
+
 
 ### <a name="enable-the-microsoft-defender-for-endpoint-integration-from-the-microsoft-defender-for-identity-portal"></a>Aktivera Microsoft Defender för slutpunktsintegrering från Microsoft Defender för identitetsportalen
 
@@ -196,6 +198,17 @@ Om du vill få en sammanhangsberoende enhetsintegration i Microsoft Defender fö
 
 När du har slutfört integrationsstegen på båda portalerna kan du se relevanta aviseringar på sidan med enhetsinformation eller användarinformation.
 
+## <a name="web-content-filtering"></a>Filtrering av webbinnehåll
+Blockera åtkomst till webbplatser som innehåller oönskat innehåll och spåra webbaktivitet i alla domäner. Skapa en princip för webbinnehållsfiltrering om du vill ange vilka [kategorier av webbinnehåll](https://security.microsoft.com/preferences2/web_content_filtering_policy)som du vill blockera. Se till att du har nätverksskydd i blockeringsläge när du distribuerar [Microsoft Defender för slutpunktens säkerhetsbaslinje.](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2)
+
+
+## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>Dela slutpunktsaviseringar med Microsofts efterlevnadscenter
+Vidarebefordrar säkerhetsvarningar för slutpunkter och deras status till Microsofts efterlevnadscenter, så att du kan förbättra principer för insiderriskhantering med varningar och åtgärda interna risker innan de kan orsaka skada. Vidarebefordrade data bearbetas och lagras på samma plats som dina Office 365-data.
+
+När du har [konfigurerat indikatorerna för brott](/microsoft-365/compliance/insider-risk-management-settings#indicators) mot säkerhetsprinciper i inställningarna för Insider-riskhantering delas Defender för Slutpunktsaviseringar med Insider-riskhantering för tillämpliga användare.
+
+
+
 ## <a name="microsoft-intune-connection"></a>Microsoft Intune-anslutning
 
 Defender för Endpoint kan integreras med [Microsoft Intune för att aktivera](https://docs.microsoft.com/intune/what-is-intune) [enhetsriskbaserad villkorlig åtkomst.](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune) När du [aktiverar den här funktionen](configure-conditional-access.md)kan du dela Information om Endpoint-enheter med Intune och förbättra tvingande policy.
@@ -207,6 +220,7 @@ Den här funktionen är endast tillgänglig om du har följande:
 
 - En licensierad klientorganisation för Enterprise Mobility + Security E3 och Windows E5 (eller Microsoft 365 Enterprise E5)
 - En aktiv Microsoft Intune-miljö med Intune-hanterade Windows 10-enheter [med Azure AD-anslutna](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join/).
+
 
 ### <a name="conditional-access-policy"></a>Princip för villkorsstyrd åtkomst
 
@@ -221,11 +235,8 @@ Lär dig mer om nya funktioner i förhandsversionen av Defender för slutpunkt o
 
 Du har tillgång till kommande funktioner som du kan ge feedback på för att förbättra den övergripande upplevelsen innan funktionerna blir tillgängliga i allmänhet.
 
-## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>Dela slutpunktsaviseringar med Microsofts efterlevnadscenter
 
-Vidarebefordrar säkerhetsvarningar för slutpunkter och deras status till Microsofts efterlevnadscenter, så att du kan förbättra principer för insiderriskhantering med varningar och åtgärda interna risker innan de kan orsaka skada. Vidarebefordrade data bearbetas och lagras på samma plats som dina Office 365-data.
 
-När du har [konfigurerat indikatorerna för brott](/microsoft-365/compliance/insider-risk-management-settings#indicators) mot säkerhetsprinciper i inställningarna för Insider-riskhantering delas Defender för Slutpunktsaviseringar med Insider-riskhantering för tillämpliga användare.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
