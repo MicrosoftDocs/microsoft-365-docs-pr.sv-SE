@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Lär dig hur du styr vilka användare som kan skapa Microsoft 365-grupper.
-ms.openlocfilehash: 9c3edf335ce09f04e9b0b538e69fa607a9c34044
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 092ff821911ef0af2b7867e1b870b68b1b6355b3
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929162"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51656991"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Hantera vilka som kan skapa Microsoft 365 Grupper
 
@@ -43,7 +43,7 @@ När du begränsar vem som kan skapa en grupp påverkar det alla tjänster som �
 - Power BI (klassisk)
 - Project för webben/Översikt
 
-Stegen i den här artikeln hindrar inte medlemmar i vissa roller från att skapa grupper. Globala Office 365-administratörer kan skapa grupper på valfri sätt, till exempel administrationscentret för Microsoft 365, Planner, Teams, Exchange och SharePoint Online. Andra roller kan skapa grupper på ett begränsat sätt, som anges nedan.
+Stegen i den här artikeln hindrar inte medlemmar i vissa roller från att skapa grupper. Globala Office 365-administratörer kan skapa grupper via administrationscentret för Microsoft 365, Planner, Exchange och SharePoint Online. Andra roller kan skapa grupper på ett begränsat sätt, som anges nedan.
 
 - Exchange-administratör: Administrationscenter för Exchange, Azure AD
 - Partner Tier1-support: Administrationscenter för Microsoft 365, administrationscentret för Exchange, Azure AD
@@ -97,7 +97,7 @@ Du måste använda förhandsversionen av [Azure Active Directory PowerShell för
 
 Kopiera skriptet nedan till en textredigerare som Anteckningar eller [Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
-Ersätt *\<GroupName\>* med namnet på gruppen du skapade. Ett exempel:
+Ersätt *\<GroupName\>* med namnet på gruppen du skapade. Till exempel:
 
 `$GroupName = "Group Creators"`
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06b52e937dd0260a50883c45c36389a6a955ad0e
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: d0ae82c2e284235d96531c04dc2240063d4e4183
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604532"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51657047"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Identifiering och sårbarhetshantering för nätverksenhet
 
@@ -46,7 +46,7 @@ Funktioner för nätverksidentifiering  är tillgängliga i avsnittet Enhetsinve
 
 En Microsoft Defender för Slutpunkt-enhet används på varje nätverkssegment för att utföra periodiska autentiserade genomsökningar av förkonfigurerade nätverksenheter. När Defender har identifierats tillhandahåller Defender för Endpoints hanteringsfunktioner för hot och sårbarhet integrerade arbetsflöden för att säkra identifierade switchar, routrar, WLAN-styrenheter, brandväggar och VPN-gatewayer.  
 
-När nätverksenheterna upptäcks och klassificeras kommer säkerhetsadministratörer att kunna ta emot de senaste säkerhetsrekommendationerna och granska nyligen identifierade säkerhetsproblem för nätverksenheter som distribuerats i deras organisationer.
+När nätverksenheterna upptäcks och klassificeras kommer säkerhetsadministratörerna att kunna ta emot de senaste säkerhetsrekommendationerna och granska nyligen identifierade svagheter på nätverksenheter som distribuerats i deras organisationer.
 
 ## <a name="approach"></a>Metod
 
@@ -95,9 +95,9 @@ Det första steget är att välja en enhet som ska utföra autentiserade nätver
     - login.windows.net  
     - *.securitycenter.windows.com
     - login.microsoftonline.com
-    - *.blob.core.windows.net/networkscannerstable/*
+    - *.blob.core.windows.net/networkscannerstable/ *
 
-    Obs! Dessa URL:er har inte angetts i listan Defender för Slutpunkt som dokumenteras för tillåten datainsamling.
+    Obs! Inte alla URL-adresser har angetts i Listan Defender för Slutpunkt har dokumenterats för tillåten datainsamling.
 
 ## <a name="permissions"></a>Behörigheter
 

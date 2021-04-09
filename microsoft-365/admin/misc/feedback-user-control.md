@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Läs mer om feedback som dina användare kan skicka till Microsoft om Microsoft-produkter.
-ms.openlocfilehash: 0a6c895eacd7a1cf8077141c6a848236a53818e7
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 29fe6b7f43b3c888c3848daeb6ab4c2152a9c44c
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644911"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650076"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>Läs mer om Microsofts feedback för din organisation
 
@@ -49,9 +49,9 @@ Om användarna använder någon av Microsofts appar och vill ge feedback kan de 
 
 Användarna kan även betygsätta sin upplevelse och ge ytterligare information om upplevelsen via systeminitierade undersökningsuppnstruktionerna. Dessa uppmaningar visas då och då i Microsoft 365-produkterna. När användarna uppmanas att göra det kan de välja om de vill ge feedback. Undersökningsanvisningarna visas vanligtvis längst ned till höger i programmet. Om användaren bestämmer sig för att ge feedback, avvisa frågan eller låta frågan försvinna på egen hand, kommer användaren inte att se undersökningen igen på ett tag. Microsoft använder även en styrningsprocess för att begränsa antalet systeminitierade undersökningar.  Syftet med styrning är att säkerställa att användarna inte överväldigas av antalet undersökningsuppmaningar.
 
-:::image type="content" source="../../media/feedback-outlook-example.png" alt-text="Skärmbild: Exempel på feedback i produkten för Outlook":::
-:::image type="content" source="../../media/how-likely-recommend.png" alt-text="Skärmbild: Hur troligt är det att du kommer att rekommendera Microsoft 365-undersökning":::
-:::image type="content" source="../../media/feedback-in-product1.png" alt-text="Skärmbild: Exempel på feedbacksidor i produkten":::
+:::image type="content" source="../../media/feedback-love.png" alt-text="Skärmbild: Exempel på feedbackbegäran i produkten":::
+
+:::image type="content" source="../../media/feedback-excel.png" alt-text="Skärmbild: Exempel på feedbackbegäran i produkten":::
 
 ## <a name="what-kind-of-feedback-is-best"></a>Vilken typ av feedback är bäst?
 
@@ -90,3 +90,7 @@ Vi arbetar för att skapa förtroende genom att se till att vi fokuserar på cen
 Vi ser till att den feedback vi får lagras och hanteras under Microsofts hanteringsregler och att den bara kan användas för godkända användningsområden.
 
 Vi ger dig kontroll över din integritet med lättanvända verktyg och tydliga alternativ. Vi är transparenta om hur vi samlar in och använder data, så att du kan fatta välgrundade beslut om vad du vill dela. Vi skyddar de data som du litar på med stark säkerhet och kryptering. Vi respekterar lokala sekretesslagar och bekämpar det juridiska skyddet av din integritet som en mänsklig rättighet. Vi använder inte din e-post, chatt, filer eller annat personligt innehåll för att rikta annonser till dig. När vi samlar in data använder vi dem för att förbättra dina upplevelser. Läs mer om Microsofts metod för sekretess [här](https://privacy.microsoft.com/). Läs mer om vår [sekretessöversikt.](/compliance/assurance/assurance-privacy)
+
+## <a name="how-can-i-see-my-users-feedback"></a>Hur kan jag se min användares feedback?
+
+Snart kommer vi att dela de feedbackdata vi samlar in för Microsoft-produkter till dig. Vi arbetar på en ny upplevelse i administrationscentret för Microsoft 365 så att vi kan visa, ta bort och exportera feedbackdata för din organisation. Det ger dig direkt transparens och användbar information om användarnas upplevelse av Microsoft 365-produkter.

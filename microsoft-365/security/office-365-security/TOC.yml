@@ -6,6 +6,8 @@
       items:
         - name: Defender förr Office 365
           href: defender-for-office-365.md
+        - name: Steg-för-steg skydd mot hot i Defender för Office 365
+          href: protection-stack-microsoft-defender-for-office365.md
         - name: Utvärdera Defender för Office 365
           href: office-365-evaluation.md
         - name: Nyheter i Defender för Office 365

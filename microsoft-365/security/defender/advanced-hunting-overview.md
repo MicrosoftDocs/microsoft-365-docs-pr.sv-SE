@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 3aa964f8e213d64f583738d8957899c1b7b5146c
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 3532fd461fff02fac54e96e0a1a1e69c39c16907
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501093"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51657025"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Proaktiv sökning efter hot med avancerad sökning i Microsoft 365 Defender
 
@@ -54,6 +54,17 @@ Den här funktionen liknar avancerad sökning [i Microsoft Defender för Slutpun
 - Microsoft Defender for Identity
 
 Om du vill använda avancerad sökning [aktiverar du Microsoft 365 Defender.](m365d-enable.md)
+
+### <a name="before-you-begin"></a>Innan du börjar
+
+Användarna behöver någon av följande behörighetsnivåer för att få åtkomst till Microsoft Defender:
+
+- Fullständig åtkomst (läsning och skrivning)
+- Skrivskyddade åtkomst
+
+**Fullständig åtkomst:** Användare med fullständig åtkomst kan spara, ändra och dela en fråga. Om du vill tilldela fullständiga åtkomstbehörigheter måste du lägga till användarna i de inbyggda rollerna "säkerhetsadministratör" eller "global administratör" i Azure Active Directory (AAD).
+
+**Skrivskyddsåtkomst:** Användare med skrivskydd kan logga in och visa alla aviseringar och relaterad information. De kommer inte att kunna spara, ändra eller dela en fråga. Om du vill tilldela skrivskyddad åtkomstbehörighet måste användarna läggs till i den inbyggda rollen "Säkerhetsläsare" i AAD.
 
 ## <a name="get-started-with-advanced-hunting"></a>Komma igång med avancerad sökning
 

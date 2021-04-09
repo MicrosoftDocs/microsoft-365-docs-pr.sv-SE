@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Hantera feedback som dina användare kan skicka till Microsoft om Microsoft-produkter.
-ms.openlocfilehash: 9c6ed46b21a5ee697c4c512c09defd66e6b961c9
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: c92adec1689d6f0c46b03ae4f46c567f054b6457
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644923"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650022"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Hantera Microsoft-feedback för din organisation
 
@@ -32,7 +32,7 @@ Som administratör för en Microsoft 365-organisation finns det nu flera princip
 
 Mer information om typer av feedback och hur Microsoft använder feedback från användare finns i [Läs mer om Microsoft-feedback för din organisation.](../misc/feedback-user-control.md)
 
-I tabellen nedan ser du vilka appar och tjänster som för närvarande är anslutna till feedbackprinciperna som visas i tabellen för feedbackprinciper nedan.
+I tabellen nedan ser du vilka appar och tjänster som för närvarande är anslutna till feedbackprinciperna som visas i tabellen för feedbackprinciper nedan. Se tabellen nedanför för skärmbildsexempel.
 
 |**Appar & Tjänster**|**Feedback i produkten** <br> |**Undersökningar i produkten** <br> |**Metadatasamling** <br> |**Kundgagemang** <br> |
 |:-----|:-----|:-----|:-----|:-----|
@@ -51,15 +51,7 @@ I tabellen nedan ser du vilka appar och tjänster som för närvarande är anslu
 |**Visio**|Ja|Ja|Ja|Ja|
 |**Yammer**|Ja|Ja|Ja|Ja|
 
-Här är några exempel på produktfeedback.
-
-**Feedback i produkten**
-
-:::image type="content" source="../../media/feedback-in-product-help.png" alt-text="Skärmbild: Exempel på hjälp med produkter":::
-
-**Undersökningar i produkten**
-
-:::image type="content" source="../../media/feedback-in-product-survey.png" alt-text="Skärmbild: Exempel på enkät i Microsoft-appen":::
+[Här finns några exempel på undersökningar och feedback i produkter.](https://docs.microsoft.com/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide#in-product-surveys)
 
 **Metadatasamling**
 

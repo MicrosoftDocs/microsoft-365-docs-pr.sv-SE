@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender för Office 365 innehåller säkra bifogade filer, säkra länkar, avancerade verktyg för skydd mot nätfiske, rapporteringsverktyg och funktioner för hotinformation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dad2722a1f9e99fad53c83348d049fa9a60f8b62
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: e7570a925f4f24148874eada8a835ae473efaeb9
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580996"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650356"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender för Office 365
 
@@ -63,7 +63,7 @@ Om du inte har använt Microsoft Defender för Office 365 eller vill ha mer info
   - anti-phishing
   - anti-spam
 - Konfigurera allt med "*säkert*" i namnet.
-  - säkra länkar
+  - Säkra länkar
   - Säkra bifogade filer
 - Försvara arbets belastningarna (t. ex. SharePoint Online, OneDrive och Teams)
 - Skydda med Zero-Hour auto purge

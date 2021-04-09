@@ -263,6 +263,8 @@
           href: manage/manage-microsoft-rewards.md
         - name: Hantera meddelanden i Meddelandecenter
           href: manage/manage-messages.md
+        - name: Hantera Microsoft-feedback för din organisation
+          href: /admin/manage/manage-feedback-ms-org.md
         - name: Konfigurera versionsalternativ
           href: manage/release-options-in-office-365.md
         - name: Visa eller dölj nya funktioner
