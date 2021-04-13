@@ -18,28 +18,28 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 578830d44a9a69c3ccafd78ceaf59ddfe100e43f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 951c51c767ba09ebc6056481b4fac45da09c5671
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076930"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688555"
 ---
-# <a name="set-preferences-for-microsoft-defender-for-endpoint-for-mac"></a>Ange inställningar för Microsoft Defender för Slutpunkt för Mac
+# <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Ange inställningar för Microsoft Defender för Slutpunkt i macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Gäller för:**
 
-- [Microsoft Defender för Slutpunkt för Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender för Slutpunkt på macOS](microsoft-defender-endpoint-mac.md)
 
 >[!IMPORTANT]
->Den här artikeln innehåller instruktioner för hur du anger inställningar för Microsoft Defender för Slutpunkt för Mac i företagsorganisationer. Information om hur du konfigurerar Microsoft Defender för Slutpunkt för Mac med kommandoradsgränssnittet finns i [Resurser](mac-resources.md#configuring-from-the-command-line).
+>Den här artikeln innehåller instruktioner för hur du anger inställningar för Microsoft Defender för Slutpunkt på macOS i företagsorganisationer. Information om hur du konfigurerar Microsoft Defender för slutpunkt i macOS med kommandoradsgränssnittet finns i [Resurser](mac-resources.md#configuring-from-the-command-line).
 
 ## <a name="summary"></a>Sammanfattning
 
-I företagsorganisationer kan Microsoft Defender för Endpoint för Mac hanteras via en konfigurationsprofil som distribueras med ett av flera hanteringsverktyg. De inställningar som hanteras av ditt säkerhetsteam har företräde framför inställningar som anges lokalt på enheten. Om du vill ändra inställningar som ställts in via konfigurationsprofilen krävs eskalerade behörigheter och är inte tillgängligt för användare utan administrativ behörighet.
+I företagsorganisationer kan Microsoft Defender för slutpunkt i macOS hanteras via en konfigurationsprofil som distribueras med ett av flera hanteringsverktyg. De inställningar som hanteras av ditt säkerhetsteam har företräde framför inställningar som anges lokalt på enheten. Om du vill ändra inställningar som ställts in via konfigurationsprofilen krävs eskalerade behörigheter och är inte tillgängligt för användare utan administrativ behörighet.
 
 I den här artikeln beskrivs konfigurationsprofilens struktur, en rekommenderad profil som du kan använda för att komma igång och instruktioner om hur du distribuerar profilen.
 
@@ -56,9 +56,9 @@ Den översta nivån i konfigurationsprofilen innehåller produktomfattande inst�
 
 Avsnittet *antivirusEngine* i konfigurationsprofilen används för att hantera inställningarna för antiviruskomponenten i Microsoft Defender för slutpunkt.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | antivirusEngine |
 | **Datatyp** | Ordlista (kapslad inställning) |
 | **Kommentarer** | I följande avsnitt finns en beskrivning av innehållet i ordlistan. |
@@ -67,9 +67,9 @@ Avsnittet *antivirusEngine* i konfigurationsprofilen används för att hantera i
 
 Ange om du vill aktivera realtidsskydd som genomsöker filer när de används.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | enableRealTimeProtection |
 | **Datatyp** | Boolesk |
 | **Möjliga värden** | true (standard) <br/> false |
@@ -83,9 +83,9 @@ Ange om antivirusmotorn körs i passiv form. Passivt läge har följande konsekv
 - Säkerhetsintelligensuppdateringar är aktiverat
 - Statusmenyikonen är dold
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | passivläge |
 | **Datatyp** | Boolesk |
 | **Möjliga värden** | false (standard) <br/> true |
@@ -95,9 +95,9 @@ Ange om antivirusmotorn körs i passiv form. Passivt läge har följande konsekv
 
 Ange kopplingsprincipen för undantag. Det här kan vara en kombination av administratörsdefinierade och användardefinierade undantag ( `merge` ) eller endast administratörsdefinierade undantag ( `admin_only` ). Den här inställningen kan användas för att begränsa lokala användare från att definiera sina egna undantag.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | exclusionsMergePolicy |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | koppla (standard) <br/> admin_only |
@@ -107,9 +107,9 @@ Ange kopplingsprincipen för undantag. Det här kan vara en kombination av admin
 
 Ange enheter som inte ska genomsökas. Undantag kan anges med fullständiga sökvägar, filnamnstillägg eller filnamn.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | undantag |
 | **Datatyp** | Ordlista (kapslad inställning) |
 | **Kommentarer** | I följande avsnitt finns en beskrivning av innehållet i ordlistan. |
@@ -118,9 +118,9 @@ Ange enheter som inte ska genomsökas. Undantag kan anges med fullständiga sök
 
 Ange innehåll som ska undantas från att genomsökas efter typ.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | $type |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
@@ -129,9 +129,9 @@ Ange innehåll som ska undantas från att genomsökas efter typ.
 
 Ange innehåll som inte ska genomsökas efter fullständig sökväg.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | sökväg |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | giltiga sökvägar |
@@ -141,9 +141,9 @@ Ange innehåll som inte ska genomsökas efter fullständig sökväg.
 
 Ange om *sökvägsegenskapen* refererar till en fil eller katalog. 
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | isDirectory |
 | **Datatyp** | Boolesk |
 | **Möjliga värden** | false (standard) <br/> true |
@@ -153,9 +153,9 @@ Ange om *sökvägsegenskapen* refererar till en fil eller katalog.
 
 Ange innehåll som ska undantas från att genomsökas efter filtillägg.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | tillägg |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | giltiga filnamnstillägg |
@@ -165,9 +165,9 @@ Ange innehåll som ska undantas från att genomsökas efter filtillägg.
 
 Ange en process där all filaktivitet är undantagen från genomsökning. Processen kan antingen anges med sitt namn (t.ex. `cat` ) eller med en fullständig sökväg (t.ex. `/bin/cat` ).
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | Namn |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | valfri sträng |
@@ -177,9 +177,9 @@ Ange en process där all filaktivitet är undantagen från genomsökning. Proces
 
 Ange hot med namn som inte blockeras av Defender för Slutpunkt för Mac. Dessa hot kommer att tillåtas att köras.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | allowedThreats |
 | **Datatyp** | Matris med strängar |
 
@@ -187,9 +187,9 @@ Ange hot med namn som inte blockeras av Defender för Slutpunkt för Mac. Dessa 
 
 Begränsar de åtgärder som den lokala användaren på en enhet kan vidta när hot upptäcks. De åtgärder som ingår i den här listan visas inte i användargränssnittet.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | disallowedThreatActions |
 | **Datatyp** | Matris med strängar |
 | **Möjliga värden** | tillåt (begränsar användare från att tillåta hot) <br/> återställning (hindrar användare från att återställa hot från karantän) |
@@ -197,11 +197,11 @@ Begränsar de åtgärder som den lokala användaren på en enhet kan vidta när 
 
 #### <a name="threat-type-settings"></a>Inställningar för hottyp
 
-Ange hur vissa hottyper hanteras av Microsoft Defender för Slutpunkt för Mac.
+Ange hur vissa hottyper hanteras av Microsoft Defender för Slutpunkt i macOS.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | threatTypeSettings |
 | **Datatyp** | Ordlista (kapslad inställning) |
 | **Kommentarer** | I följande avsnitt finns en beskrivning av innehållet i ordlistan. |
@@ -210,9 +210,9 @@ Ange hur vissa hottyper hanteras av Microsoft Defender för Slutpunkt för Mac.
 
 Ange hottyper.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | tangent |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | potentially_unwanted_application <br/> archive_bomb |
@@ -225,9 +225,9 @@ Ange vilken åtgärd som ska vidtas när ett hot av den typ som anges i föregå
 - **Blockering:** din enhet är skyddad mot den här typen av hot och du meddelas i användargränssnittet och säkerhetskonsolen.
 - **Av:** din enhet är inte skyddad mot den här typen av hot och inget loggas.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | värde |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | granskning (standard) <br/> blockera <br/> av |
@@ -236,9 +236,9 @@ Ange vilken åtgärd som ska vidtas när ett hot av den typ som anges i föregå
 
 Ange kopplingsprincipen för inställningar av hottyper. Det kan vara en kombination av administratörsdefinierade och användardefinierade inställningar ( `merge` ) eller bara administratörsdefinierade inställningar ( `admin_only` ). Den här inställningen kan användas för att hindra lokala användare från att definiera sina egna inställningar för olika hottyper.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | threatTypeSettingsMergePolicy |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | koppla (standard) <br/> admin_only |
@@ -248,9 +248,9 @@ Ange kopplingsprincipen för inställningar av hottyper. Det kan vara en kombina
 
 Ange antalet dagar som resultaten ska behållas i genomsökningshistoriken på enheten. Gamla genomsökningsresultat tas bort från historiken. Gamla filer i karantän som också har tagits bort från disken.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | scanResultsRetentionDays |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | 90 (standard). Tillåtna värden är 1 dag till 180 dagar. |
@@ -260,9 +260,9 @@ Ange antalet dagar som resultaten ska behållas i genomsökningshistoriken på e
 
 Ange det maximala antalet poster som ska behållas i genomsökningshistoriken. Posterna innehåller alla genomsökningar på begäran som utförts tidigare och alla antivirusprogramn.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | scanHistoryMaximumItems |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | 10000 (standard). Tillåtna värden är från 5 000 objekt till 1 5 000 objekt. |
@@ -270,11 +270,11 @@ Ange det maximala antalet poster som ska behållas i genomsökningshistoriken. P
 
 ### <a name="cloud-delivered-protection-preferences"></a>Inställningar för moln levererat skydd
 
-Konfigurera de molnbaserade skyddsfunktionerna i Microsoft Defender för Endpoint för Mac.
+Konfigurera de molnbaserade skyddsfunktionerna i Microsoft Defender för Slutpunkt i macOS.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | cloudService |
 | **Datatyp** | Ordlista (kapslad inställning) |
 | **Kommentarer** | I följande avsnitt finns en beskrivning av innehållet i ordlistan. |
@@ -283,9 +283,9 @@ Konfigurera de molnbaserade skyddsfunktionerna i Microsoft Defender för Endpoin
 
 Ange om du vill aktivera moln levererat skydd på enheten eller inte. Vi rekommenderar att du behåller den här funktionen aktiverad för att förbättra säkerheten för dina tjänster.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | aktiverat |
 | **Datatyp** | Boolesk |
 | **Möjliga värden** | true (standard) <br/> false |
@@ -294,9 +294,9 @@ Ange om du vill aktivera moln levererat skydd på enheten eller inte. Vi rekomme
 
 Diagnostikdata används för att hålla Microsoft Defender för Endpoint säkert och uppdaterat, identifiera, diagnostisera och åtgärda problem samt göra produktförbättringar. Den här inställningen bestämmer nivån för diagnostik som skickas av Microsoft Defender för Slutpunkt till Microsoft.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | diagnosticLevel |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | valfritt (standard) <br/> obligatoriskt |
@@ -305,9 +305,9 @@ Diagnostikdata används för att hålla Microsoft Defender för Endpoint säkert
 
 Avgör om misstänkta exempel (som troligen innehåller hot) skickas till Microsoft. Du uppmanas att ange om den inskickade filen troligen innehåller personlig information.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | automaticSampleSubmission |
 | **Datatyp** | Boolesk |
 | **Möjliga värden** | true (standard) <br/> false |
@@ -316,7 +316,7 @@ Avgör om misstänkta exempel (som troligen innehåller hot) skickas till Micros
 
 Avgör om säkerhetsintelligensuppdateringar installeras automatiskt:
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
 | **Nyckel** | automaticDefinitionUpdateEnabled |
 | **Datatyp** | Boolesk |
@@ -324,11 +324,11 @@ Avgör om säkerhetsintelligensuppdateringar installeras automatiskt:
 
 ### <a name="user-interface-preferences"></a>Inställningar för användargränssnitt
 
-Hantera inställningar för användargränssnittet i Microsoft Defender för Slutpunkt för Mac.
+Hantera inställningar för användargränssnittet i Microsoft Defender för Slutpunkt i macOS.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | userInterface |
 | **Datatyp** | Ordlista (kapslad inställning) |
 | **Kommentarer** | I följande avsnitt finns en beskrivning av innehållet i ordlistan. |
@@ -337,9 +337,9 @@ Hantera inställningar för användargränssnittet i Microsoft Defender för Slu
 
 Ange om du vill visa eller dölja statusmenyikonen i det övre högra hörnet av skärmen.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | hideStatusMenuIcon |
 | **Datatyp** | Boolesk |
 | **Möjliga värden** | false (standard) <br/> true |
@@ -348,9 +348,9 @@ Ange om du vill visa eller dölja statusmenyikonen i det övre högra hörnet av
 
 Ange om användare kan skicka feedback till Microsoft genom att gå till `Help`  >  `Send Feedback` .
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | userInitiatedFeedback |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | aktiverad (standard) <br/> inaktiverad |
@@ -358,11 +358,11 @@ Ange om användare kan skicka feedback till Microsoft genom att gå till `Help` 
 
 ### <a name="endpoint-detection-and-response-preferences"></a>Inställningar för identifiering av slutpunkter och svar
 
-Hantera inställningarna för slutpunktsidentifierings- och svarskomponenten (EDR) i Microsoft Defender för Slutpunkt för Mac.
+Hantera inställningarna för slutpunktsidentifierings- och svarskomponenten (EDR) i Microsoft Defender för slutpunkten i macOS.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | edr |
 | **Datatyp** | Ordlista (kapslad inställning) |
 | **Kommentarer** | I följande avsnitt finns en beskrivning av innehållet i ordlistan. |
@@ -373,9 +373,9 @@ Ange ett taggnamn och dess värde.
 
 - GROUP-taggen taggar enheten med det angivna värdet. Taggen återspeglas i portalen under enhetssidan och kan användas för filtrering och gruppering av enheter.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | taggar |
 | **Datatyp** | Ordlista (kapslad inställning) |
 | **Kommentarer** | I följande avsnitt finns en beskrivning av innehållet i ordlistan. |
@@ -384,9 +384,9 @@ Ange ett taggnamn och dess värde.
 
 Anger typ av tagg
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | tangent |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | `GROUP` |
@@ -395,9 +395,9 @@ Anger typ av tagg
 
 Anger värdet för taggen
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | värde |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | valfri sträng |
@@ -542,7 +542,7 @@ Följande konfigurationsprofil (eller, vid JAMF, en egenskapslista som kan ladda
 
 ## <a name="full-configuration-profile-example"></a>Exempel på fullständig konfigurationsprofil
 
-Följande mallar innehåller poster för alla inställningar som beskrivs i det här dokumentet och kan användas för mer avancerade scenarier där du vill ha mer kontroll över Microsoft Defender för Slutpunkt för Mac.
+Följande mallar innehåller poster för alla inställningar som beskrivs i det här dokumentet och kan användas för mer avancerade scenarier där du vill ha mer kontroll över Microsoft Defender för slutpunkt i macOS.
 
 ### <a name="property-list-for-jamf-configuration-profile"></a>Egenskapslista för JAMF-konfigurationsprofil
 

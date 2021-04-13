@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: be01d5908e4c79f642cdbbddd75115f6ebc2c713
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 9b00d81d3d51c343565ec4eb743181baa2750b01
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499590"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687739"
 ---
-# <a name="set-up-the-microsoft-defender-for-endpoint-for-macos-policies-in-jamf-pro"></a>Konfigurera Principer för Microsoft Defender för Slutpunkt för macOS i Jamf Pro
+# <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Konfigurera microsoft Defender för slutpunkt på macOS-principer i Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -56,9 +56,9 @@ Du måste göra följande:
 
 9. [Konfigurera nätverkstillägg](#step-9-configure-network-extension)
 
-10. [Schemasökningar med Microsoft Defender för Slutpunkt för Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+10. [Schemasökningar med Microsoft Defender för Slutpunkt i macOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
 
-11. [Distribuera Microsoft Defender för Slutpunkt för macOS](#step-11-deploy-microsoft-defender-for-endpoint-for-macos)
+11. [Distribuera Microsoft Defender för slutpunkt i macOS](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
 
 
 ## <a name="step-1-get-the-microsoft-defender-for-endpoint-onboarding-package"></a>Steg 1: Skaffa Microsoft Defender för slutpunktens introduktionspaket
@@ -360,7 +360,7 @@ De här stegen gäller för macOS 10.15 (Catalina) eller nyare.
         - **Distributionsmetod:** Installera automatiskt *(standard)*
         - **Nivå:** Datornivå *(standard)*
 
-        ![Bild av konfigurationsinställningar mdatpmdav](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+        ![Bild av konfigurationsprofilinställningar mdatpmdav](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
     - **Flikmeddelanden**, klicka **på** Lägg till och ange följande värden:
         - **Paket-ID:**`com.microsoft.wdav.tray`
@@ -681,7 +681,7 @@ Du kan också ladda ned [kext.mobileconfig](https://github.com/microsoft/mdatp-x
 
 ## <a name="step-9-configure-network-extension"></a>Steg 9: Konfigurera nätverkstillägg
 
-Som en del av funktionerna Identifiering av slutpunkt och svar inspekterar Microsoft Defender för Slutpunkt för Mac sockettrafik och rapporterar den här informationen till Microsoft Defender Säkerhetscenter-portalen. Med följande princip kan nätverkstillägget utföra de här funktionerna.
+Som en del av funktionerna Identifiering och svar av slutpunkt inspekterar Microsoft Defender för slutpunkt på macOS sockettrafik och rapporterar den här informationen till Microsoft Defender Säkerhetscenter-portalen. Med följande princip kan nätverkstillägget utföra de här funktionerna.
 
 De här stegen gäller för macOS 10.15 (Catalina) eller nyare.
 
@@ -707,7 +707,7 @@ De här stegen gäller för macOS 10.15 (Catalina) eller nyare.
 
         Observera att **exakta värden** för **identifierare, socketfilter** **och uttagsfilter angivna** krav enligt ovan.
 
-        ![Bild av konfigurationsinställningar mdatpmdav](images/netext-create-profile.png)
+        ![Bild på konfigurationsinställning mdatpmdav](images/netext-create-profile.png)
 
 3. Välj **fliken Omfattning.**
 
@@ -731,10 +731,10 @@ De här stegen gäller för macOS 10.15 (Catalina) eller nyare.
 
 Du kan också ladda ned [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) och ladda upp den till JAMF-konfigurationsprofiler enligt beskrivningen i Distribuera anpassade konfigurationsprofiler med [Jamf Pro| Metod 2: Ladda upp en konfigurationsprofil till Jamf Pro.](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
 
-## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-for-mac"></a>Steg 10: Schemalägga genomsökningar med Microsoft Defender för Slutpunkt för Mac
-Följ anvisningarna i [Schemalägga genomsökningar med Microsoft Defender för Endpoint för Mac.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Steg 10: Schemalägga genomsökningar med Microsoft Defender för Slutpunkt i macOS
+Följ anvisningarna i [Schemalägga genomsökningar med Microsoft Defender för slutpunkt på macOS.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
 
-## <a name="step-11-deploy-microsoft-defender-for-endpoint-for-macos"></a>Steg 11: Distribuera Microsoft Defender för Slutpunkt för macOS
+## <a name="step-11-deploy-microsoft-defender-for-endpoint-on-macos"></a>Steg 11: Distribuera Microsoft Defender för slutpunkt i macOS
 
 1. Gå till den plats där du sparade `wdav.pkg` .
 

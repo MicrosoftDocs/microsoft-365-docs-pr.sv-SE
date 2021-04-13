@@ -1,6 +1,6 @@
 ---
-title: Köra ett identifieringstest på en nyligen onboarded Microsoft Defender ATP-enhet
-description: Kör identifieringsskriptet på en nyligen onboarded enhet för att verifiera att den är korrekt onboarded till Microsoft Defender ATP-tjänsten.
+title: Köra ett identifieringstest på en nyligen onboarded Microsoft Defender för Endpoint-enhet
+description: Kör identifieringsskriptet på en nyligen onboarded enhet för att verifiera att den är korrekt onboarded till Microsoft Defender för slutpunktstjänsten.
 keywords: identifieringstest, identifiering, powershell, skript, verifiera, onboarding, microsoft defender för slutpunkts onboarding, klienter, servrar, test
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 10154a734bb4c3d8b26fffb8618484aeb11f907a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 89b8ac7d99cfcd4c5e5e647e5ba54e14184ef0bd
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51074130"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688123"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Köra ett identifieringstest på en nyligen onboarded Microsoft Defender för Endpoint-enhet 
 
@@ -61,6 +61,6 @@ Kör följande PowerShell-skript på en nyligen onboarded-enhet för att verifie
 Fönstret Kommandotolken stängs automatiskt. Om det lyckas markeras det som slutfört och en ny avisering visas i portalen för den onboarded enheten om ungefär 10 minuter.
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Introducera Windows 10-enheter](configure-endpoints.md)
+- [Registrera Windows 10-enheter](configure-endpoints.md)
 - [Onboard servers](configure-server-endpoints.md)
 - [Felsöka problem med Introduktion till Slutpunkt för Microsoft Defender](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)

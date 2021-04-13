@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5aedf841ddfc5a592fe4afd2f13d6470e24c438c
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 6ca6b3dd41b867145bfc4af331fb742be469d2a9
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587521"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688399"
 ---
-# <a name="set-preferences-for-microsoft-defender-for-endpoint-for-linux"></a>Ange inställningar för Microsoft Defender för Endpoint för Linux
+# <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Ange inställningar för Microsoft Defender för Slutpunkt i Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

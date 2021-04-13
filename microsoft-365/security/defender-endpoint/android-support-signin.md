@@ -1,6 +1,6 @@
 ---
-title: Felsöka problem med Microsoft Defender för slutpunkt för Android
-description: Felsöka problem med Microsoft Defender för slutpunkt för Android
+title: Felsöka problem med Microsoft Defender för slutpunkt på Android
+description: Felsöka problem med Microsoft Defender för slutpunkt på Android
 keywords: microsoft, defender, atp, mde, android, moln, anslutning, kommunikation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5fabcb3156a54d4aa8a4671d7561a8deca16fe1f
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 1a19582073565a958aab444541381f5772b6f4f1
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587653"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687609"
 ---
-# <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-for-android"></a>Felsöka problem i Microsoft Defender för slutpunkt för Android
+# <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Felsöka problem med Microsoft Defender för slutpunkt på Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

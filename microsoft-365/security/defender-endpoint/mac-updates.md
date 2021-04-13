@@ -18,21 +18,21 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 99f507ad381ee21ba91753716439180fafe37c24
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3321c1bd181b89c53e2618fc20fa7f733a20cfc1
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51074345"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689059"
 ---
-# <a name="deploy-updates-for-microsoft-defender-for-endpoint-for-mac"></a>Distribuera uppdateringar för Microsoft Defender för Slutpunkt för Mac
+# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Distribuera uppdateringar för Microsoft Defender för slutpunkt i macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Gäller för:**
 
-- [Microsoft Defender för Slutpunkt för Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender för Slutpunkt på macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -40,7 +40,7 @@ ms.locfileid: "51074345"
 
 Microsoft publicerar regelbundet programuppdateringar för att förbättra prestanda, säkerhet och för att leverera nya funktioner.
 
-För att uppdatera Microsoft Defender för Slutpunkt för Mac används ett program med namnet Microsoft AutoUpdate (MAU). Som standard söker MAU automatiskt efter uppdateringar varje dag, men du kan ändra det till varje vecka, varje månad eller manuellt.
+För att uppdatera Microsoft Defender för slutpunkt i macOS används ett program med namnet Microsoft AutoUpdate (MAU). Som standard söker MAU automatiskt efter uppdateringar varje dag, men du kan ändra det till varje vecka, varje månad eller manuellt.
 
 ![MAU skärmbild](images/MDATP-34-MAU.png)
 
@@ -50,7 +50,7 @@ Om du bestämmer dig för att distribuera uppdateringar med dina verktyg för pr
 
 MAU innehåller ett kommandoradsverktyg, *msupdate,* som är utformat för IT-administratörer så att de får mer exakt kontroll över när uppdateringar tillämpas. Anvisningar för hur du använder verktyget finns i Uppdatera [Office för Mac med hjälp av msupdate.](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate)
 
-I MAU är programidentifieraren för Microsoft Defender för Endpoint för Mac *WDAV00.* Ladda ned och installera de senaste uppdateringarna för Microsoft Defender för Slutpunkt för Mac genom att köra följande kommando från ett terminalfönster:
+I MAU är programidentifieraren för Microsoft Defender för Slutpunkt i macOS *WDAV00.* Ladda ned och installera de senaste uppdateringarna för Microsoft Defender för Slutpunkt i macOS genom att köra följande kommando från ett terminalfönster:
 
 ```
 ./msupdate --install --apps wdav00
@@ -76,16 +76,16 @@ Kanalen `Current` innehåller den mest stabila versionen av produkten.
 >[!TIP]
 >Om du vill förhandsgranska nya funktioner och ge tidig feedback rekommenderar vi att du konfigurerar vissa enheter i ditt företag `Beta` för eller `Preview` .
 
-|||
+|Avsnitt|Värde|
 |:--|:--|
-| **Domain** | com.microsoft.autoupdate2 |
+| **Domän** | com.microsoft.autoupdate2 |
 | **Nyckel** | ChannelName |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | Beta <br/> Förhandsgranska <br/> Aktuell |
 |||
 
 >[!WARNING]
->Den här inställningen ändrar kanalen för alla program som uppdateras via Microsoft AutoUpdate. Om du vill ändra endast kanalen för Microsoft Defender för Endpoint för Mac kör du följande kommando efter att du `[channel-name]` har bytt ut mot önskad kanal:
+>Den här inställningen ändrar kanalen för alla program som uppdateras via Microsoft AutoUpdate. Om du vill ändra endast kanalen för Microsoft Defender för slutpunkt i macOS kör du följande kommando efter att `[channel-name]` du har ersatt med önskad kanal:
 > ```bash
 > defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
 > ```
@@ -94,63 +94,63 @@ Kanalen `Current` innehåller den mest stabila versionen av produkten.
 
 Ändra hur ofta MAU söker efter uppdateringar.
 
-|||
+|Avsnitt|Värde|
 |:--|:--|
-| **Domain** | com.microsoft.autoupdate2 |
+| **Domän** | com.microsoft.autoupdate2 |
 | **Nyckel** | UpdateCheckFrequency |
 | **Datatyp** | Heltal |
 | **Standardvärde** | 720 (minuter) |
 | **Kommentar** | Det här värdet anges i minuter. |
-|||
+
 
 ### <a name="change-how-mau-interacts-with-updates"></a>Ändra hur MAU interagerar med uppdateringar
 
 Ändra hur MAU söker efter uppdateringar.
 
-|||
+|Avsnitt|Värde|
 |:--|:--|
-| **Domain** | com.microsoft.autoupdate2 |
+| **Domän** | com.microsoft.autoupdate2 |
 | **Nyckel** | HowToCheck |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | Manuellt <br/> AutomaticCheck <br/> AutomaticDownload |
 | **Kommentar** |  Observera att AutomaticDownload gör en nedladdning och installation utan att du behöver göra det. |
-|||
+
 
 ### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>Ändra om knappen Sök efter uppdateringar ska vara aktiverad
 
 Ändra om lokala användare ska kunna klicka på alternativet "Sök efter uppdateringar" i användargränssnittet för Microsoft AutoUpdate.
 
-|||
+|Avsnitt|Värde|
 |:--|:--|
-| **Domain** | com.microsoft.autoupdate2 |
+| **Domän** | com.microsoft.autoupdate2 |
 | **Nyckel** | EnableCheckForUpdatesButton |
 | **Datatyp** | Boolesk |
 | **Möjliga värden** | True (standard) <br/> False |
-|||
+
 
 ### <a name="disable-insider-checkbox"></a>Kryssrutan Inaktivera Insider
 
 Inställd på sant för att göra "Gå med i Office Insider Program..." inte tillgänglig/nedtonad för användare.
 
-|||
+|Avsnitt|Värde|
 |:--|:--|
-| **Domain** | com.microsoft.autoupdate2 |
+| **Domän** | com.microsoft.autoupdate2 |
 | **Nyckel** | DisableInsiderCheckbox |
 | **Datatyp** | Boolesk |
 | **Möjliga värden** | False (standard) <br/> True |
-|||
+
 
 ### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>Begränsa telemetrin som skickas från MAU
 
 Ange falskt om du vill skicka minimalt med data om hjärtslag, ingen programanvändning och ingen miljöinformation.
 
-|||
+|Avsnitt|Värde|
 |:--|:--|
-| **Domain** | com.microsoft.autoupdate2 |
+| **Domän** | com.microsoft.autoupdate2 |
 | **Nyckel** | SendAllTelemetryEnabled |
 | **Datatyp** | Boolesk |
 | **Möjliga värden** | True (standard) <br/> False |
-|||
+
 
 ## <a name="example-configuration-profile"></a>Exempel på konfigurationsprofil
 

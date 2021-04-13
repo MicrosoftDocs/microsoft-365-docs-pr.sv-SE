@@ -1,5 +1,5 @@
 ---
-title: Distribuera Microsoft Defender för Slutpunkt för Linux manuellt
+title: Distribuera Microsoft Defender för Slutpunkt i Linux manuellt
 ms.reviewer: ''
 description: Här beskrivs hur du distribuerar Microsoft Defender ATP för Linux manuellt från kommandoraden.
 keywords: microsoft, defender, atp, linux, installation, distribuera, avinstallation, enkel, ansible, linux, redhat, ubuntu, ubuntu, sles, suse, centos
@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c695eb0d786e73da5adb95bbca5c1747243d6203
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 78ea8b106253098791d71ef9ff788b7cf1df4ec7
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644746"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688411"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-linux-manually"></a>Distribuera Microsoft Defender för Slutpunkt för Linux manuellt
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Distribuera Microsoft Defender för Slutpunkt i Linux manuellt
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,9 +36,9 @@ ms.locfileid: "51644746"
 
 > Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-I den här artikeln beskrivs hur du distribuerar Microsoft Defender för Endpoint för Linux manuellt. För en lyckad distribution måste alla följande uppgifter slutföras:
+I den här artikeln beskrivs hur du distribuerar Microsoft Defender för Endpoint på Linux manuellt. För en lyckad distribution måste alla följande uppgifter slutföras:
 
-- [Distribuera Microsoft Defender för Slutpunkt för Linux manuellt](#deploy-microsoft-defender-for-endpoint-for-linux-manually)
+- [Distribuera Microsoft Defender för Slutpunkt i Linux manuellt](#deploy-microsoft-defender-for-endpoint-on-linux-manually)
   - [Krav och systemkrav](#prerequisites-and-system-requirements)
   - [Konfigurera linux-programvarans lagringsplats](#configure-the-linux-software-repository)
     - [RHEL och varianter (CentOS och Oracle Linux)](#rhel-and-variants-centos-and-oracle-linux)
@@ -54,7 +54,7 @@ I den här artikeln beskrivs hur du distribuerar Microsoft Defender för Endpoin
 
 ## <a name="prerequisites-and-system-requirements"></a>Krav och systemkrav
 
-Innan du börjar kan du gå till [Microsoft Defender för Endpoint för Linux](microsoft-defender-endpoint-linux.md) för att få en beskrivning av förutsättningarna och systemkraven för den aktuella programvaruversionen.
+Innan du börjar kan du gå till [Microsoft Defender för Slutpunkt](microsoft-defender-endpoint-linux.md) på Linux för att få en beskrivning av krav och systemkrav för den aktuella programvaruversionen.
 
 ## <a name="configure-the-linux-software-repository"></a>Konfigurera linux-programvarans lagringsplats
 

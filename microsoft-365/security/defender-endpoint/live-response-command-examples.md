@@ -1,5 +1,5 @@
 ---
-title: Exempel på livesvarskommando
+title: Kommandoexempel för livesvar
 description: Lär dig hur du kör grundläggande eller avancerade livesvarskommandon för Microsoft Defender för Endpoint och se exempel på hur det används.
 keywords: exempel, kommando, cli, remote, shell, connection, live, response, real-time, kommando, skript, åtgärda, leta, exportera, logga, släppa, ladda ned, fil
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0e00464b5d5dcf348fcc76a3f093ac8bac373627
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: f08f20753a1f0926abbbce01fe97f20ef1c07f2c
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187715"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689097"
 ---
-# <a name="live-response-command-examples"></a>Exempel på livesvarskommando
+# <a name="live-response-command-examples"></a>Kommandoexempel för livesvar
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -198,7 +198,11 @@ run script.ps1
 # Run PowerShell script from the library with arguments
 run get-process-by-name.ps1 -parameters "-processName Registry"
 ```
-
+>[!NOTE]
+>
+> För långvariga kommandon som '**run**' eller '**getfile**' kanske du vill använda symbolen ' ' i slutet av kommandot för att utföra den **&** åtgärden i bakgrunden.
+> Det gör att du kan fortsätta att undersöka datorn och återgå till bakgrundskommandot när du är klar med '**fg**' [basic-kommandot](live-response.md#basic-commands).
+>
 ## <a name="scheduledtask"></a>scheduledtask
 
 ```

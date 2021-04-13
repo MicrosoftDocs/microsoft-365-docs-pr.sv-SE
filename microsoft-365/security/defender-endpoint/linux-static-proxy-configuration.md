@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b96f49d6c4744eae987393c17792c4f566d98997
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 93d654773fc73903cbe0c5de289dcfdf9fd34f9f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587077"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687859"
 ---
-# <a name="configure-microsoft-defender-for-endpoint-for-linux-for-static-proxy-discovery"></a>Konfigurera Microsoft Defender för slutpunkt för Linux för statisk proxyidentifiering
+# <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>Konfigurera Microsoft Defender för slutpunkt på Linux för statisk proxyidentifiering
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

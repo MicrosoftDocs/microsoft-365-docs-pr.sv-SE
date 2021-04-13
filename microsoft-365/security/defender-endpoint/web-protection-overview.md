@@ -1,6 +1,6 @@
 ---
 title: Webbskydd
-description: Läs mer om webbskydd i Microsoft Defender ATP och hur du kan skydda din organisation
+description: Läs mer om webbskyddet i Microsoft Defender för Endpoint och hur det kan skydda din organisation
 keywords: webbskydd, skydd mot webbhot, surfning, säkerhet, nätfiske, skadlig kod, sårbarhet, webbplatser, nätverksskydd, Edge, Internet Explorer, Chrome, Firefox, webbläsare, skadliga webbplatser
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4c04ce3479ac995e59c3bdfa9a2bdcca87eca17b
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a985719663ec23d41ce4da57aea9aa5e0cf7674c
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499925"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688975"
 ---
 # <a name="web-protection"></a>Webbskydd
 

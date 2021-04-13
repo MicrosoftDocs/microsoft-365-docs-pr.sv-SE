@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: a4c92d27d45208634f99f9bfb2f756cfc5792fac
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: db24bea3bddc682eceda8e6ea3fe2749b6b2778f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186659"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689131"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>Nya konfigurationsprofiler för macOS Catalina och nyare versioner av macOS
 
@@ -36,9 +36,9 @@ ms.locfileid: "51186659"
 
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-I linje med macOS-utveckling förbereder vi en Microsoft Defender för slutpunkt för Mac-uppdatering som utnyttjar systemtillägg istället för kernel-tillägg. Den här uppdateringen gäller endast för macOS Catalina (10.15.4) och senare versioner av macOS.
+I linje med macOS-utveckling förbereder vi en Microsoft Defender för slutpunkt på macOS-uppdatering som utnyttjar systemtillägg istället för kernel-tillägg. Den här uppdateringen gäller endast för macOS Catalina (10.15.4) och senare versioner av macOS.
 
-Om du har distribuerat Microsoft Defender för Endpoint för Mac i en hanterad miljö (via JAMF, Intune eller en annan MDM-lösning) måste du distribuera nya konfigurationsprofiler. Om du inte gör det får användarna en uppmaning om att köra de här nya komponenterna.
+Om du har distribuerat Microsoft Defender för slutpunkt på macOS i en hanterad miljö (via JAMF, Intune eller en annan MDM-lösning) måste du distribuera nya konfigurationsprofiler. Om du inte gör det får användarna en uppmaning om att köra de här nya komponenterna.
 
 ## <a name="jamf"></a>JAMF
 
@@ -69,10 +69,10 @@ Lägg till följande JAMF-nyttolast för att bevilja fullständig diskåtkomst t
 
 ### <a name="network-extension-policy"></a>Princip för nätverkstillägg
 
-Som en del av funktionerna Identifiering av slutpunkt och svar inspekterar Microsoft Defender för Slutpunkt för Mac sockettrafik och rapporterar den här informationen till Microsoft Defender Säkerhetscenter-portalen. Med följande princip kan nätverkstillägget utföra de här funktionerna.
+Som en del av funktionerna Identifiering och svar av slutpunkt inspekterar Microsoft Defender för slutpunkt på macOS sockettrafik och rapporterar den här informationen till Microsoft Defender Säkerhetscenter-portalen. Med följande princip kan nätverkstillägget utföra de här funktionerna.
 
 >[!NOTE]
->JAMF har inte inbyggt stöd för principer för innehållsfiltrering, vilket är en förutsättning för att aktivera nätverkstillägg som Microsoft Defender för Endpoint för Mac installerar på enheten. DESSUTOM ändrar JAMF ibland innehållet i de principer som distribueras.
+>JAMF har inte inbyggt stöd för principer för innehållsfiltrering, vilket är en förutsättning för att aktivera nätverkstillägg som Microsoft Defender för Slutpunkt på macOS installerar på enheten. DESSUTOM ändrar JAMF ibland innehållet i de principer som distribueras.
 >Följande steg ger dig därför en lösning som innebär att du signerar konfigurationsprofilen.
 
 1. Spara följande innehåll på din enhet som med `com.microsoft.network-extension.mobileconfig` en textredigerare:

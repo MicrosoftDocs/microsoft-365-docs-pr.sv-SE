@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d0ae82c2e284235d96531c04dc2240063d4e4183
-ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
+ms.openlocfilehash: 43ade52e18ffc8e5db890cb0776090e9b32419e2
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51657047"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687679"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Identifiering och sårbarhetshantering för nätverksenhet
 
@@ -97,7 +97,7 @@ Det första steget är att välja en enhet som ska utföra autentiserade nätver
     - login.microsoftonline.com
     - *.blob.core.windows.net/networkscannerstable/ *
 
-    Obs! Inte alla URL-adresser har angetts i Listan Defender för Slutpunkt har dokumenterats för tillåten datainsamling.
+    Obs! Inte alla URL:er anges i Defender för Slutpunkt-dokumenterad lista över tillåtna datainsamling.
 
 ## <a name="permissions"></a>Behörigheter
 

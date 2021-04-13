@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender för Endpoint för Linux
+title: Microsoft Defender för Endpoint i Linux
 ms.reviewer: ''
 description: Här beskrivs hur du installerar och använder Microsoft Defender ATP för Linux.
 keywords: microsoft, defender, atp, linux, installation, distribuera, avinstallation, enkel, ansible, linux, redhat, ubuntu, ubuntu, sles, suse, centos
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cc2f5be700395f6d88c05481d74501f4d9d92b76
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 0fea9d4dd46be2a77ea27728787a43b5273f92f5
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500678"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687763"
 ---
-# <a name="microsoft-defender-for-endpoint-for-linux"></a>Microsoft Defender för Endpoint för Linux
+# <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender för Endpoint i Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,14 +36,14 @@ ms.locfileid: "51500678"
 
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-I det här avsnittet beskrivs hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för Endpoint för Linux.
+I det här avsnittet beskrivs hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för Endpoint på Linux.
 
 > [!CAUTION]
-> Att köra andra slutpunktsskyddsprodukter från tredje part tillsammans med Microsoft Defender för Endpoint för Linux kan sannolikt leda till prestandaproblem och oförutsägbara sidoeffekter. Om skydd mot slutpunkter som inte är Microsoft är ett absolut krav i din miljö kan du fortfarande tryggt dra nytta av Defender för Endpoint för Linux EDR-funktioner när antivirusfunktionen har konfigurerats så att den körs i [passivt läge.](linux-preferences.md#enable--disable-passive-mode)
+> Att köra andra produkter med slutpunktsskydd från tredje part tillsammans med Microsoft Defender för Endpoint på Linux kan sannolikt leda till prestandaproblem och oförutsägbara sidoeffekter. Om skydd mot slutpunkter som inte är Microsoft är ett absolut krav i din miljö kan du fortfarande tryggt dra nytta av Defender för Endpoint för Linux EDR-funktioner när antivirusfunktionen har konfigurerats så att den körs i [passivt läge.](linux-preferences.md#enable--disable-passive-mode)
 
-## <a name="how-to-install-microsoft-defender-for-endpoint-for-linux"></a>Så här installerar du Microsoft Defender för Endpoint för Linux
+## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Så här installerar du Microsoft Defender för Slutpunkt i Linux
 
-### <a name="prerequisites"></a>Krav
+### <a name="prerequisites"></a>Förutsättningar
 
 - Åtkomst till Microsoft Defender Säkerhetscenter-portalen
 - Linux-distribution med [systemd](https://systemd.io/) system manager
@@ -52,19 +52,19 @@ I det här avsnittet beskrivs hur du installerar, konfigurerar, uppdaterar och a
 
 ### <a name="installation-instructions"></a>Installationsanvisningar
 
-Det finns flera metoder och distributionsverktyg som du kan använda för att installera och konfigurera Microsoft Defender för Endpoint för Linux.
+Det finns flera metoder och distributionsverktyg som du kan använda för att installera och konfigurera Microsoft Defender för Endpoint i Linux.
 
 I allmänhet måste du göra följande:
 
 - Kontrollera att du har en Microsoft Defender för Slutpunkt-prenumeration och att du har åtkomst till [Microsoft Defender för Slutpunktsportalen.](microsoft-defender-security-center.md)
-- Distribuera Microsoft Defender för Endpoint för Linux med någon av följande distributionsmetoder:
+- Distribuera Microsoft Defender för Slutpunkt på Linux med någon av följande distributionsmetoder:
   - Kommandoradsverktyget:
     - [Manuell distribution](linux-install-manually.md)
   - Hanteringsverktyg från tredje part:
     - [Distribuera med verktyget För konfigurationshantering av såsend](linux-install-with-puppet.md)
     - [Distribuera med ett ansible-konfigurationsverktyg](linux-install-with-ansible.md)
 
-Om du får problem med installationen kan du gå till [Felsöka installationsproblem i Microsoft Defender för Slutpunkt för Linux.](linux-support-install.md)
+Om du får problem med installationen kan du gå till [Felsöka installationsproblem i Microsoft Defender för Slutpunkt i Linux.](linux-support-install.md)
 
 ### <a name="system-requirements"></a>Systemkrav
 
@@ -111,7 +111,7 @@ När du har aktiverat tjänsten kan du behöva konfigurera nätverket eller bran
 
 - Granskningsramverket `auditd` () måste vara aktiverat.
   > [!NOTE]
-  > Systemhändelser som fångas av regler som lagts till i läggs till `/etc/audit/rules.d/` `audit.log` i (s) och kan påverka värdgranskning och överordnad samling. Händelser som läggs till av Microsoft Defender för Endpoint för Linux kommer att märkas med `mdatp` en nyckel.
+  > Systemhändelser som fångas av regler som lagts till i läggs till `/etc/audit/rules.d/` `audit.log` i (s) och kan påverka värdgranskning och överordnad samling. Händelser som läggs till av Microsoft Defender för Endpoint i Linux kommer att taggas med `mdatp` en nyckel.
 
 ### <a name="network-connections"></a>Nätverksanslutningar
 
@@ -133,17 +133,17 @@ Om en proxy eller brandvägg blockerar anonym trafik kontrollerar du att anonym 
 > [!WARNING]
 > PAC, WPAD och autentiserad proxy går inte att använda. Se till att bara en statisk proxy eller transparent proxy används.
 >
-> SSL-proxy proxy och skärningspunkt stöds inte heller av säkerhetsskäl. Konfigurera ett undantag för SSL-kontroll och din proxyserver för att direkt överföra data från Defender för Endpoint för Linux till relevanta URL:er utan avlyssning. Om du lägger till ditt certifikat för avlyssning i det globala lagret tillåts inte avlyssning.
+> SSL-proxy proxy och skärningspunkt stöds inte heller av säkerhetsskäl. Konfigurera ett undantag för SSL-kontrollen och proxyservern för att direkt överföra data från Defender för Slutpunkt i Linux till relevanta URL:er utan avlyssning. Om du lägger till ditt certifikat för avlyssning i det globala lagret tillåts inte avlyssning.
 
-Mer information om felsökning finns i [Felsöka molnanslutningsproblem för Microsoft Defender för Endpoint för Linux.](linux-support-connectivity.md)
+Mer information om felsökning finns i [Felsöka molnanslutningsproblem för Microsoft Defender för Slutpunkt på Linux.](linux-support-connectivity.md)
 
-## <a name="how-to-update-microsoft-defender-for-endpoint-for-linux"></a>Uppdatera Microsoft Defender för Endpoint för Linux
+## <a name="how-to-update-microsoft-defender-for-endpoint-on-linux"></a>Uppdatera Microsoft Defender för Slutpunkt i Linux
 
-Microsoft publicerar regelbundet programuppdateringar för att förbättra prestanda, säkerhet och för att leverera nya funktioner. Om du vill uppdatera Microsoft Defender för Endpoint för Linux går du till [Distribuera uppdateringar för Microsoft Defender för Endpoint för Linux.](linux-updates.md)
+Microsoft publicerar regelbundet programuppdateringar för att förbättra prestanda, säkerhet och för att leverera nya funktioner. Om du vill uppdatera Microsoft Defender för Slutpunkt på Linux går du till [Distribuera uppdateringar för Microsoft Defender för Slutpunkt i Linux.](linux-updates.md)
 
-## <a name="how-to-configure-microsoft-defender-for-endpoint-for-linux"></a>Konfigurera Microsoft Defender för Slutpunkt för Linux
+## <a name="how-to-configure-microsoft-defender-for-endpoint-on-linux"></a>Konfigurera Microsoft Defender för Slutpunkt i Linux
 
-Anvisningar om hur du konfigurerar produkten i företagsmiljöer finns i Ange [inställningar för Microsoft Defender för Slutpunkt för Linux.](linux-preferences.md)
+Anvisningar om hur du konfigurerar produkten i företagsmiljöer finns i Ange [inställningar för Microsoft Defender för slutpunkt i Linux.](linux-preferences.md)
 
 ## <a name="resources"></a>Resurser
 

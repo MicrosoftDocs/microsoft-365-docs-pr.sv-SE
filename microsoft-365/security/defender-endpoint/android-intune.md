@@ -1,6 +1,6 @@
 ---
-title: Distribuera Microsoft Defender för Endpoint för Android med Microsoft Intune
-description: Här beskrivs hur du distribuerar Microsoft Defender för Slutpunkt för Android med Microsoft Intune
+title: Distribuera Microsoft Defender för slutpunkt på Android med Microsoft Intune
+description: Här beskrivs hur du distribuerar Microsoft Defender för slutpunkt på Android med Microsoft Intune
 keywords: microsoft, defender, atp, mde, android, installation, distribuera, avinstallation,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fdfc6e63945e15ce2d1f1a293c377f641eeb9bc4
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 350345acbaadcdd6bc8ef901f03c419a7f8decff
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587701"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687727"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-android-with-microsoft-intune"></a>Distribuera Microsoft Defender för Endpoint för Android med Microsoft Intune 
+# <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Distribuera Microsoft Defender för slutpunkt på Android med Microsoft Intune 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -104,7 +104,7 @@ Mer information om de registreringsalternativ som stöds av Intune finns i [Alte
 
 **För närvarande stöds personligt ägda enheter med arbetsprofil och fullständigt hanterad användarenhetsregistrering i företagsägd distribution.**
 
-## <a name="add-microsoft-defender-for-endpoint-for-android-as-a-managed-google-play-app"></a>Lägga till Microsoft Defender för slutpunkt för Android som en hanterad Google Play-app
+## <a name="add-microsoft-defender-for-endpoint-on-android-as-a-managed-google-play-app"></a>Lägga till Microsoft Defender för slutpunkt på Android som en hanterad Google Play-app
 
 Följ stegen nedan för att lägga till appen Microsoft Defender för slutpunkt i ditt hanterade Google Play.
 
@@ -240,7 +240,7 @@ Välj **Skapa**.
 
 ## <a name="complete-onboarding-and-check-status"></a>Fullständig registrering och kontrollstatus
 
-1. Bekräfta installationsstatusen för Microsoft Defender för Slutpunkt för Android genom att klicka på **Enhetsinstallationsstatus**. Kontrollera att enheten visas här.
+1. Bekräfta installationsstatusen för Microsoft Defender för slutpunkt på Android genom att klicka på **Enhetsinstallationsstatus**. Kontrollera att enheten visas här.
 
     > [!div class="mx-imgBorder"]
     > ![Bild på enhetsinstallationsstatus](images/900c0197aa59f9b7abd762ab2b32e80c.png)
@@ -260,5 +260,5 @@ Välj **Skapa**.
 
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Översikt över Microsoft Defender för Endpoint för Android](microsoft-defender-endpoint-android.md)
-- [Konfigurera Microsoft Defender för Endpoint för Android-funktioner](android-configure.md)
+- [Översikt över Microsoft Defender för slutpunkt på Android](microsoft-defender-endpoint-android.md)
+- [Konfigurera Microsoft Defender för slutpunkt på Android-funktioner](android-configure.md)

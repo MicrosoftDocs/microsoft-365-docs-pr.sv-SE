@@ -1,5 +1,5 @@
 ---
-title: Spåra och svara på nya hot med Microsoft Defender ATP –hotanalyser
+title: Spåra och svara på nya hot med Microsoft Defender för endpoint threat analytics
 ms.reviewer: ''
 description: Lär dig mer om nya hot och attacktekniker och hur du stoppar dem. Utvärdera hur de påverkar organisationen och utvärdera organisationens motståndskraft.
 keywords: hotanalyser, riskutvärderingar, åtgärder i operativsystem, mikrokodsåtgärder, minskningsstatus
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 853a862556825e714bb06e51839f9c026e0cc0e0
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 61b6b0c19730045468c77e5f24bf18470aa5dbd5
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501191"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688267"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>Spåra och svara på nya hot med hotanalyser 
 

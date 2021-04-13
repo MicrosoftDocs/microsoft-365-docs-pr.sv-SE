@@ -1,6 +1,6 @@
 ---
-title: Manuell distribution av Microsoft Defender för Slutpunkt för macOS
-description: Installera Microsoft Defender för slutpunkt för macOS manuellt från kommandoraden.
+title: Manuell distribution av Microsoft Defender för Slutpunkt i macOS
+description: Installera Microsoft Defender för slutpunkt på macOS manuellt från kommandoraden.
 keywords: microsoft, defender, atp, mac, installation, distribuera, avinstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a9e75441a8c4a336e8c657d27330c118fcac4788
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 0e8faf95df6691828558175412a1de8aa844d93f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476329"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688603"
 ---
-# <a name="manual-deployment-for-microsoft-defender-for-endpoint-for-macos"></a>Manuell distribution av Microsoft Defender för Slutpunkt för macOS
+# <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Manuell distribution av Microsoft Defender för Slutpunkt i macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "51476329"
 
 > Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-I det här avsnittet beskrivs hur du distribuerar Microsoft Defender för slutpunkt för macOS manuellt. För en lyckad distribution måste du slutföra alla följande steg:
+I det här avsnittet beskrivs hur du distribuerar Microsoft Defender för Slutpunkt på macOS manuellt. För en lyckad distribution måste du slutföra alla följande steg:
 - [Ladda ned installation- och onboarding-paket](#download-installation-and-onboarding-packages)
 - [Programinstallation (macOS 10.15 och äldre versioner)](#application-installation-macos-1015-and-older-versions)
 - [Programinstallation (macOS 11 och senare versioner)](#application-installation-macos-11-and-newer-versions)
@@ -43,7 +43,7 @@ I det här avsnittet beskrivs hur du distribuerar Microsoft Defender för slutpu
 
 ## <a name="prerequisites-and-system-requirements"></a>Krav och systemkrav
 
-Innan du börjar kan du gå [till huvudsidan för Microsoft Defender](microsoft-defender-endpoint-mac.md) för Slutpunkt för macOS för att få en beskrivning av förutsättningarna och systemkraven för den aktuella programvaruversionen.
+Innan du börjar kan du gå [till huvudsidan för Microsoft Defender](microsoft-defender-endpoint-mac.md) för Slutpunkt på macOS för att få en beskrivning av förutsättningarna och systemkraven för den aktuella programvaruversionen.
 
 ## <a name="download-installation-and-onboarding-packages"></a>Ladda ned installation- och onboarding-paket
 
@@ -105,9 +105,9 @@ Du måste ha administratörsbehörighet på enheten för att slutföra den här 
 
     ![Säkerhetsinställningar för systemtillägg1](images/big-sur-install-3.png)
 
-5. Upprepa steg 3 & 4 för alla systemtillägg som distribueras med Microsoft Defender för Slutpunkt för Mac.
+5. Upprepa steg 3 & 4 för alla systemtillägg som distribueras med Microsoft Defender för slutpunkt på Mac.
 
-6. Som en del av funktionerna Identifiering av slutpunkt och svar inspekterar Microsoft Defender för Slutpunkt för Mac sockettrafik och rapporterar den här informationen till Microsoft Defender Säkerhetscenter-portalen. När du uppmanas att ge Microsoft Defender behörighet att filtrera nätverkstrafik väljer du **Tillåt**.
+6. Som en del av funktionerna Identifiering av slutpunkt och svar inspekterar Microsoft Defender för slutpunkt på Mac sockettrafik och rapporterar den här informationen till Microsoft Defender Säkerhetscenter-portalen. När du uppmanas att ge Microsoft Defender behörighet att filtrera nätverkstrafik väljer du **Tillåt**.
 
     ![Säkerhetsinställningar för systemtillägg2](images/big-sur-install-4.png)
 
@@ -117,7 +117,7 @@ Du måste ha administratörsbehörighet på enheten för att slutföra den här 
 
 ## <a name="client-configuration"></a>Klientkonfiguration
 
-1. Kopiera wdav.pkg och MicrosoftDefenderATPOnboardingMacOs.py till enheten där du distribuerar Microsoft Defender för Endpoint för macOS.
+1. Kopiera wdav.pkg och MicrosoftDefenderATPOnboardingMacOs.py till enheten där du distribuerar Microsoft Defender för Slutpunkt i macOS.
 
     Klientenheten är inte kopplad till org_id. Observera att *org_id* är tomt.
 

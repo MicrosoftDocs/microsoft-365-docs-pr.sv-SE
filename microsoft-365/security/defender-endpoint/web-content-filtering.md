@@ -1,6 +1,6 @@
 ---
 title: Filtrering av webbinnehåll
-description: Använd webbinnehållsfiltrering i Microsoft Defender ATP för att spåra och reglera åtkomsten till webbplatser baserat på deras innehållskategorier.
+description: Använd webbinnehållsfiltrering i Microsoft Defender för Endpoint för att spåra och reglera åtkomsten till webbplatser baserat på deras innehållskategorier.
 keywords: webbskydd, skydd mot webbhot, surfning, övervakning, rapporter, kort, domänlista, säkerhet, nätfiske, skadlig kod, sårbarhet, webbplatser, nätverksskydd, Edge, Internet Explorer, Chrome, Firefox, webbläsare
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c5f44b4ab8354330ec9701261e8fb0dcc2e9fe52
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: c9a069deded237c5ded6bcd9f6c6a77f644e65a2
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499966"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689347"
 ---
 # <a name="web-content-filtering"></a>Filtrering av webbinnehåll
 
@@ -56,7 +56,7 @@ Blockeringen för webbläsare som stöds av tredje part tillhandahålls av Netwo
 
 Om du vill ha en mer användarvänlig upplevelse i webbläsaren kan du använda Microsoft Edge.
 
-## <a name="prerequisites"></a>Krav
+## <a name="prerequisites"></a>Förutsättningar
 
 Innan du provar den här funktionen bör du kontrollera att du har följande krav:
 

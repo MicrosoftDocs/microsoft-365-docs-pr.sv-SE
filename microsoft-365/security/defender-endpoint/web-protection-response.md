@@ -1,5 +1,5 @@
 ---
-title: Svara på webbhot i Microsoft Defender ATP
+title: Svara på webbhot i Microsoft Defender för Endpoint
 description: Svara på aviseringar som rör skadliga och oönskade webbplatser. Förstå hur skydd mot webbhot informerar slutanvändarna via deras webbläsare och Windows-meddelanden
 keywords: webbskydd, skydd mot webbhot, surfning, varningar, svar, säkerhet, nätfiske, skadlig kod, sårbarhet, webbplatser, nätverksskydd, Edge, Internet Explorer, Chrome, Firefox, webbläsare, meddelanden, slutanvändare, Windows-meddelanden, blockeringssida,
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b0e6bb0d71c14bf7742f8d6508fbb95b76b10a34
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 110b379863b4c6e23c947c56faf831e136231237
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498358"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688483"
 ---
 # <a name="respond-to-web-threats"></a>Svara på webbhot
 

@@ -1,5 +1,5 @@
 ---
-title: Utföra svarsåtgärder på en enhet i Microsoft Defender ATP
+title: Utföra svarsåtgärder på en enhet i Microsoft Defender för Endpoint
 description: Vidta svarsåtgärder på en enhet, till exempel isolera enheter, samla in ett undersökningspaket, hantera taggar, köra av genomsökning och begränsa appkörning.
 keywords: svara, isolera, isolera enhet, samla in undersökningspaket, åtgärdscenter, begränsa, hantera taggar, av genomsökning, begränsa app
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f918d1673ef8a83c54f365dd06406c33bcc4d983
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f538bd33ad2f595aa9b3dafa8a13a5682161b52f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51069090"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688327"
 ---
 # <a name="take-response-actions-on-a-device"></a>Vidta svarsåtgärder på en enhet
 
@@ -39,11 +39,11 @@ Svarsåtgärder löper högst upp på en specifik enhet och omfattar:
 - Hantera taggar
 - Initiera automatisk undersökning
 - Starta Live Response-session
-- Paket för insamling av undersökning
-- Kör antivirussökning
-- Begränsa appkörning
+- Samla in undersökningspaket
+- Kör antivirusgenomsökning
+- Begränsa körning av program
 - Identifiera enhet
-- Kontakta en hotexpert
+- Konsultera en hotexpert
 - Åtgärdscenter
 
 [![Bild på svarsåtgärder ](images/response-actions.png)](images/response-actions.png#lightbox)
@@ -136,7 +136,7 @@ En av dem du har valt Kör **antivirussökning**, välj den genomsökningstyp so
 >När en genomsökning utlöses med Defender för slutpunktssvarsåtgärd gäller fortfarande värdet ScanAvgCPULoadFactor för Microsoft Defender antivirus (GenomsökningAvgCPULoadFactor) och begränsar genomsökningens CPU-påverkan.<br> Om ScanAvgCPULoadFactor inte har konfigurerats är standardvärdet en gräns på 50 % maximal CPU-belastning vid en genomsökning.<br>
 >Mer information finns i [configure-advanced-scan-types-microsoft-defender-antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus).
 
-## <a name="restrict-app-execution"></a>Begränsa appkörning
+## <a name="restrict-app-execution"></a>Begränsa körning av program
 
 Förutom att stoppa skadliga processer som innehåller en attack kan du låsa en enhet och förhindra att efterföljande försök till potentiellt skadliga program körs.
 
@@ -159,7 +159,7 @@ När en app är begränsad visas följande meddelande för att informera använd
 
 ![Bild på appbegränsning](images/atp-app-restriction.png)
 
-## <a name="isolate-devices-from-the-network"></a>Identifiera enheter från nätverket
+## <a name="isolate-devices-from-the-network"></a>Isolera enheter från nätverket
 
 Beroende på hur allvarlig attacken är och enhetens känslighet kan du behöva isolera enheten från nätverket. Den här åtgärden kan förhindra att attackeraren kontrollerar den komprometterade enheten och utför ytterligare aktiviteter, t.ex. att föra in data och röra sig fritt.
 
@@ -186,7 +186,7 @@ När en enhet isoleras visas följande meddelande för att informera användaren
 
 ![Bild av ingen nätverksanslutning](images/atp-notification-isolate.png)
 
-## <a name="consult-a-threat-expert"></a>Kontakta en hotexpert
+## <a name="consult-a-threat-expert"></a>Konsultera en hotexpert
 
 Du kan kontakta en Microsoft-expert för att få mer information om en potentiellt komprometterad enhet eller redan komprometterade enheter. Microsoft Threat Experts kan engageras direkt från Säkerhetscenter i Microsoft Defender för att få snabba och korrekta svar. Experter ger insikter inte bara om en potentiellt komprometterad enhet, utan även för att bättre förstå komplexa hot, riktade attackmeddelanden som du får eller om du behöver mer information om aviseringar eller ett informationssammanhang för hot som visas på din portalinstrumentpanel.
 
@@ -206,6 +206,6 @@ All annan relaterad information visas också, till exempel datum/tid för inskic
 
 ![Bild på åtgärdscenter med information](images/action-center-details.png)
 
-## <a name="related-topic"></a>Relaterade ämnen
-- [Utföra svarsåtgärder för en fil](respond-file-alerts.md)
+## <a name="related-topic"></a>Relaterat ämne
+- [Vidta svarsåtgärder för en fil](respond-file-alerts.md)
 - [Rapportera felaktigheter](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)

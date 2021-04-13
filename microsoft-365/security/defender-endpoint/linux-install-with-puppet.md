@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 424f08c525ef7f4b80c21812970921613320f4cd
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 562433ee52b2e39716e933c67c706f030195bd2f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587665"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688423"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-linux-with-puppet"></a>Distribuera Microsoft Defender för Slutpunkt för Linux med Defender
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Distribuera Microsoft Defender för slutpunkt på Linux med Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

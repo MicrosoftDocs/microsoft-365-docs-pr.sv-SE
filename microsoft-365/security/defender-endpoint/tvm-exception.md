@@ -1,7 +1,7 @@
 ---
 title: Skapa och visa undantag för säkerhetsrekommendationer – hantering av hot och sårbarhet
 description: Skapa och övervaka undantag för säkerhetsrekommendationer i hantering av hot och sårbarhet.
-keywords: microsoft defender atp tvm remediation, mdatp tvm, threat and vulnerability management, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
+keywords: microsoft defender för endpoint tvm-åtgärd, mdatp-tvm, hantering av hot och sårbarhet, & sårbarhetshantering, hot & sårbarhetshantering, åtgärd för tvm-åtgärd intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13ac09b1ad918ed945edec6167fd57ea02b616ea
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 4f37300a742ab8cac32e95863cb706f1fd5f5d66
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500190"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689419"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Skapa och visa undantag för säkerhetsrekommendationer – hantering av hot och sårbarhet
 
@@ -84,7 +84,7 @@ En utfälling visas där du kan söka efter och välja enhetsgrupper som du vill
 
 ### <a name="global-exceptions"></a>Globala undantag
 
-Om du har global administratörsbehörighet (som kallas Microsoft Defender ATP-administratör) kan du skapa och avbryta ett globalt undantag. Det påverkar **alla** nuvarande och framtida enhetsgrupper i organisationen, och endast en användare med liknande behörighet skulle kunna ändra den. Rekommendationstillståndet ändras från "aktiv" till "fullständigt undantag".
+Om du har global administratörsbehörighet kan du skapa och avbryta ett globalt undantag. Det påverkar **alla** nuvarande och framtida enhetsgrupper i organisationen, och endast en användare med liknande behörighet skulle kunna ändra den. Rekommendationstillståndet ändras från "aktiv" till "fullständigt undantag".
 
 ![Visar alternativet globalt undantag.](images/tvm-exception-global.png)
 

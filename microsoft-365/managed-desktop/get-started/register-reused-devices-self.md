@@ -1,7 +1,6 @@
 ---
 title: Registrera befintliga enheter själv
 description: Registrera återanvändda enheter du kanske redan har själv så att de kan hanteras av Microsoft Managed Desktop
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -12,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 1703e4ed4ea0f3306edf6fdf07ab9c97a9266d4f
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: f2b3e109493331a4b63d669501525a48cb996809
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445572"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689227"
 ---
 # <a name="register-existing-devices-yourself"></a>Registrera befintliga enheter själv
 
@@ -150,9 +149,11 @@ I [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)väljer du **Enhe
 Gör så här:
 
 1. Ange **en sökväg** till CSV-filen du skapade tidigare i Filuppladdning.
+2. Välj en [enhetsprofil](../service-description/profiles.md) i listrutan.
+3. Välj **Registrera enheter**. Systemet lägger till enheterna i din lista med enheter i bladet **Enheter**, markerade som **Väntar på registrering.** Registrering tar vanligtvis mindre än 10 minuter och  när enheten lyckas visas den som Redo för användare. Det innebär att den är redo att börja använda och väntar på att användaren ska börja använda den.
 
-1. Välj **Registrera enheter**. Systemet lägger till enheterna i din lista med enheter i bladet **Enheter**, markerade som **Väntar på registrering.** Registrering tar vanligtvis mindre än 10 minuter och  när enheten lyckas visas den som Redo för användare. Det innebär att den är redo att börja använda och väntar på att användaren ska börja använda den.
-
+> [!NOTE]
+> Om du manuellt ändrar azure Active Directory-gruppmedlemskap för en enhet omtilldekas den automatiskt till gruppen för dess enhetsprofil och tas bort från grupper med konflikter.
 
 Du kan övervaka förloppet för enhetsregistreringen på huvudsidan. Möjliga delstater som rapporterats där är:
 

@@ -1,6 +1,6 @@
 ---
-title: Kontrollera tjänstens hälsa för Microsoft Defender ATP
-description: Kontrollera tjänstens hälsa för Microsoft Defender ATP, kontrollera om tjänsten har problem och granska tidigare problem som har lösts.
+title: Kontrollera tjänstens hälsa för Microsoft Defender
+description: Kontrollera Microsoft Defender för Endpoint-tjänstens hälsa. Kontrollera om tjänsten har problem och granska tidigare problem som har lösts.
 keywords: instrumentpanel, tjänst, problem, tjänstens hälsa, aktuell status, statushistorik, sammanfattning av påverkan, preliminär rot, lösning, upplösningstid, förväntad upplösningstid
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 45782fcce51e15adf61757d836d313d229558571
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1b4545daace5df1a1a9c6e827f7d8f1b522a690c
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51072914"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687631"
 ---
 # <a name="check-the-microsoft-defender-for-endpoint-service-health"></a>Kontrollera tjänstens hälsa för Microsoft Defender
 
@@ -64,5 +64,5 @@ När ett problem åtgärdas registreras det på **fliken Statushistorik.**
 ## <a name="status-history"></a>Statushistorik
 Fliken **Statushistorik** visar alla historiska problem som har setts och lösts. Du ser information om de lösta problemen tillsammans med annan information som inkluderades medan den löstes.
 
-### <a name="related-topic"></a>Relaterade ämnen
+### <a name="related-topic"></a>Relaterat ämne
 - [Visa instrumentpanelen för säkerhetsåtgärder](security-operations-dashboard.md)

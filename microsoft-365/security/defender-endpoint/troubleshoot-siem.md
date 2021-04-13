@@ -1,6 +1,6 @@
 ---
-title: Felsöka problem med SIEM-verktygsintegrering i Microsoft Defender ATP
-description: Felsöka problem som kan uppstå när du använder SIEM-verktyg med Microsoft Defender ATP.
+title: Felsöka problem med SIEM-verktygsintegrering i Microsoft Defender för Endpoint
+description: Felsöka problem som kan uppstå när du använder SIEM-verktyg med Microsoft Defender för Slutpunkt.
 keywords: felsökning, siem, klienthemlighet, hemlig
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: c1c8fdb0b6e84d4265defb95d91b59a584b7f4c2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 60220d00ca1b612564b72103b9206e3d6d89dc60
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185785"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689455"
 ---
 # <a name="troubleshoot-siem-tool-integration-issues"></a>Felsöka problem med SIEM-verktygsintegrering
 

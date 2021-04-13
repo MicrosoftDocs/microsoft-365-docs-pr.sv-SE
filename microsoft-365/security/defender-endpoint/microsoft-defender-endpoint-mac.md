@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender för Endpoint för Mac
+title: Microsoft Defender för slutpunkt på Mac
 ms.reviewer: ''
-description: Lär dig hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för Slutpunkt för Mac.
+description: Lär dig hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för Slutpunkt på Mac.
 keywords: microsoft, defender, atp, mac, installation, distribuera, avinstallation, intune, jamf, macos, big sur, catalina, mojave, mde för mac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 22d35a42eb7fb7eadbba686c292729772951c05c
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 406a0e699ea563670f41355d122aa54ba8667a0e
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500682"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687751"
 ---
-# <a name="microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender för Endpoint för Mac
+# <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender för slutpunkt på Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,25 +36,25 @@ ms.locfileid: "51500682"
 
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-I det här avsnittet beskrivs hur du installerar, konfigurerar, uppdaterar och använder Defender för Slutpunkt för Mac.
+I det här avsnittet beskrivs hur du installerar, konfigurerar, uppdaterar och använder Defender för slutpunkt på Mac.
 
 > [!CAUTION]
-> Att köra andra slutpunktsskyddsprodukter från tredje part tillsammans med Microsoft Defender för Endpoint för Mac kan sannolikt leda till prestandaproblem och oförutsägbara sidoeffekter. Om skydd mot slutpunkter som inte är Microsoft är ett absolut krav i din miljö kan du ändå tryggt dra nytta av Defender för Endpoint för Mac EDR-funktioner när du har konfigurerat antivirusfunktionerna så att de körs i [passivt läge.](mac-preferences.md#enable--disable-passive-mode)
+> Att köra andra slutpunktsskyddsprodukter från tredje part tillsammans med Microsoft Defender för Endpoint på Mac kan sannolikt leda till prestandaproblem och oförutsägbara sidoeffekter. Om skydd mot slutpunkter som inte är Microsoft är ett absolut krav i din miljö kan du fortfarande tryggt dra nytta av Defender för Endpoint på Mac EDR-funktioner när antivirusfunktionerna har konfigurerats så att de körs i [passivt läge.](mac-preferences.md#enable--disable-passive-mode)
 
 ## <a name="whats-new-in-the-latest-release"></a>Nyheter i den senaste versionen
 
 [Senaste nytt i Microsoft Defender för Endpoint](whats-new-in-microsoft-defender-atp.md)
 
-[Vad är nytt i Microsoft Defender för Slutpunkt för Mac](mac-whatsnew.md)
+[Vad är nytt i Microsoft Defender för slutpunkt på Mac](mac-whatsnew.md)
 
 > [!TIP]
-> Om du har några synpunkter som du vill dela kan du skicka in den genom att öppna Microsoft Defender för Endpoint för Mac på din enhet och gå till **Hjälp med** att  >  **skicka feedback.**
+> Om du har någon feedback som du vill dela kan du skicka in den genom att öppna Microsoft Defender för Slutpunkt på Mac på din enhet och navigera till **Hjälp med** att  >  **skicka feedback.**
 
 För att få de senaste funktionerna, inklusive förhandsgranskningsfunktioner (till exempel identifiering av slutpunkt och svar för dina Mac-enheter), konfigurerar du din macOS-enhet som kör Microsoft Defender för Slutpunkt att vara en "Insider"-enhet.
 
-## <a name="how-to-install-microsoft-defender-for-endpoint-for-mac"></a>Så här installerar du Microsoft Defender för Slutpunkt för Mac
+## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>Så här installerar du Microsoft Defender för slutpunkt på Mac
 
-### <a name="prerequisites"></a>Krav
+### <a name="prerequisites"></a>Förutsättningar
 
 - En Defender för Endpoint-prenumeration och åtkomst till Microsoft Defender Säkerhetscenter-portalen
 - Nybörjarupplevelse med macOS- och BASH-skript
@@ -62,7 +62,7 @@ För att få de senaste funktionerna, inklusive förhandsgranskningsfunktioner (
 
 ### <a name="installation-instructions"></a>Installationsanvisningar
 
-Det finns flera metoder och distributionsverktyg som du kan använda för att installera och konfigurera Defender för Endpoint för Mac.
+Det finns flera metoder och distributionsverktyg som du kan använda för att installera och konfigurera Defender för Slutpunkt på Mac.
 
 - Hanteringsverktyg från tredje part:
     - [Microsoft Intune-baserad distribution](mac-install-with-intune.md)
@@ -91,7 +91,7 @@ När du har aktiverat tjänsten kan du behöva konfigurera nätverket eller bran
 
 ### <a name="licensing-requirements"></a>Licenskrav
 
-Microsoft Defender för Slutpunkt för Mac kräver något av följande Microsoft volymlicensieringserbjudanden:
+Microsoft Defender för Slutpunkt på Mac kräver något av följande Microsoft volymlicensieringserbjudanden:
 
 - Microsoft 365 E5 (M365 E5)
 - Microsoft 365 E5 – säkerhet
@@ -121,7 +121,7 @@ Om en proxy eller brandvägg blockerar anonym trafik kontrollerar du att anonym 
 > [!WARNING]
 > Autentiserad proxy. Se till att endast PAC, WPAD eller en statisk proxy används.
 >
-> SSL-proxy proxy och skärningspunkt stöds inte heller av säkerhetsskäl. Konfigurera ett undantag för SSL-kontroll och proxyservern för att direkt överföra data från Microsoft Defender för Endpoint för Mac till relevanta URL:er utan avlyssning. Om du lägger till ditt certifikat för avlyssning i det globala lagret tillåts inte avlyssning.
+> SSL-proxy proxy och skärningspunkt stöds inte heller av säkerhetsskäl. Konfigurera ett undantag för SSL-kontroll och proxyservern för att direkt överföra data från Microsoft Defender för Slutpunkt i macOS till relevanta URL:er utan avlyssning. Om du lägger till ditt certifikat för avlyssning i det globala lagret tillåts inte avlyssning.
 
 Testa att en anslutning inte är blockerad genom att öppna [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) och [https://cdn.x.cp.wd.microsoft.com/ping](https://cdn.x.cp.wd.microsoft.com/ping) i en webbläsare.
 
@@ -145,20 +145,20 @@ När Microsoft Defender för slutpunkt har installerats kan anslutningen verifie
 mdatp connectivity test
 ```
 
-## <a name="how-to-update-microsoft-defender-for-endpoint-for-mac"></a>Uppdatera Microsoft Defender för Slutpunkt för Mac
+## <a name="how-to-update-microsoft-defender-for-endpoint-on-mac"></a>Uppdatera Microsoft Defender för slutpunkt på Mac
 
-Microsoft publicerar regelbundet programuppdateringar för att förbättra prestanda, säkerhet och för att leverera nya funktioner. För att uppdatera Microsoft Defender för Slutpunkt för Mac används ett program med namnet Microsoft AutoUpdate (MAU). Mer information finns i [Distribuera uppdateringar för Microsoft Defender för Endpoint för Mac.](mac-updates.md)
+Microsoft publicerar regelbundet programuppdateringar för att förbättra prestanda, säkerhet och för att leverera nya funktioner. För att uppdatera Microsoft Defender för Slutpunkt på Mac används ett program med namnet Microsoft AutoUpdate (MAU). Mer information finns i [Distribuera uppdateringar för Microsoft Defender för Slutpunkt på Mac.](mac-updates.md)
 
-## <a name="how-to-configure-microsoft-defender-for-endpoint-for-mac"></a>Konfigurera Microsoft Defender för Slutpunkt för Mac
+## <a name="how-to-configure-microsoft-defender-for-endpoint-on-mac"></a>Konfigurera Microsoft Defender för slutpunkt på Mac
 
-Information om hur du konfigurerar produkten i företagsmiljöer finns i Ange [inställningar för Microsoft Defender för slutpunkt för Mac.](mac-preferences.md)
+Anvisningar om hur du konfigurerar produkten i företagsmiljöer finns i Ange inställningar för [Microsoft Defender för slutpunkt på Mac.](mac-preferences.md)
 
 ## <a name="macos-kernel-and-system-extensions"></a>macOS kernel- och systemtillägg
 
-I linje med macOS-utveckling förbereder vi en Microsoft Defender för slutpunkt för Mac-uppdatering som utnyttjar systemtillägg istället för kernel-tillägg. Mer information finns i [Vad är nytt i Microsoft Defender för Endpoint för Mac.](mac-whatsnew.md)
+I linje med macOS-utveckling förbereder vi en Microsoft Defender för slutpunkt på Mac-uppdatering som utnyttjar systemtillägg istället för kernel-tillägg. Mer information finns i [Vad är nytt i Microsoft Defender för Slutpunkt på Mac.](mac-whatsnew.md)
 
 ## <a name="resources"></a>Resurser
 
-- Mer information om loggning, avinstallation eller andra ämnen finns i Resurser [för Microsoft Defender för Slutpunkt för Mac.](mac-resources.md)
+- Mer information om loggning, avinstallation eller andra ämnen finns i Resurser [för Microsoft Defender för slutpunkt på Mac.](mac-resources.md)
 
-- [Sekretess för Microsoft Defender för Endpoint för Mac](mac-privacy.md).
+- [Sekretess för Microsoft Defender för Slutpunkt på Mac](mac-privacy.md).

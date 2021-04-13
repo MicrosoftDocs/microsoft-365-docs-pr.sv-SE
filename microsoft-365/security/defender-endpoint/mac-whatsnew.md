@@ -1,6 +1,6 @@
 ---
-title: Vad är nytt i Microsoft Defender för Slutpunkt för Mac
-description: Läs mer om de viktigaste ändringarna för tidigare versioner av Microsoft Defender för Endpoint för Mac.
+title: Vad är nytt i Microsoft Defender för slutpunkt på Mac
+description: Läs mer om de viktigaste ändringarna för tidigare versioner av Microsoft Defender för Endpoint på Mac.
 keywords: microsoft, defender, atp, mac, installation, macos, whatsnew
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5cd1f64d006b5462634dd47df9083e1a89db0e8c
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 67bbc987dc339c0e1f0354e07d6d2db8c39ec8b9
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615225"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689047"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-for-mac"></a>Vad är nytt i Microsoft Defender för Slutpunkt för Mac
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Vad är nytt i Microsoft Defender för slutpunkt på Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "51615225"
 
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0)
 
-- Microsoft Defender för Slutpunkt för Mac är nu tillgänglig i förhandsversion för kunder inom myndigheter i USA. Mer information finns i [Microsoft Defender för slutpunkt för kunder inom amerikanska myndigheter.](gov.md)
+- Microsoft Defender för Slutpunkt på macOS är nu tillgänglig i förhandsversion för kunder inom myndigheter i USA. Mer information finns i [Microsoft Defender för slutpunkt för kunder inom amerikanska myndigheter.](gov.md)
 - Prestandaförbättringar (särskilt vid den situation då appen XCode Bugg används) som & programkorrigeringar
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0)
@@ -61,7 +61,7 @@ ms.locfileid: "51615225"
 > [!NOTE]
 > Den gamla kommandoradsverktygets syntax är inaktuell i den här versionen. Mer information om den nya syntaxen finns i [Resurser](mac-resources.md#configuring-from-the-command-line).
 
-- Lade till en ny kommandoradsväxel för att inaktivera nätverkstillägget: `mdatp system-extension network-filter disable` . Det här kommandot kan vara användbart för att felsöka nätverksproblem som kan ha att göra med Microsoft Defender för Endpoint för Mac
+- Lade till en ny kommandoradsväxel för att inaktivera nätverkstillägget: `mdatp system-extension network-filter disable` . Det här kommandot kan vara användbart för att felsöka nätverksproblem som kan ha att göra med Microsoft Defender för Slutpunkt på Mac
 - Prestandaförbättringar & felkorrigeringar
 
 ## <a name="1011921-20120101119210"></a>101.19.21 (20.120101.11921.0)
@@ -94,7 +94,7 @@ ms.locfileid: "51615225"
 
 - Den här produktversionen har validerats på macOS Big Sur 11 beta 9
 
-- Den nya syntaxen `mdatp` för kommandoradsverktyget är nu standard. Mer information om den nya syntaxen finns i [Resurser för Microsoft Defender för Slutpunkt för Mac](mac-resources.md#configuring-from-the-command-line)
+- Den nya syntaxen `mdatp` för kommandoradsverktyget är nu standard. Mer information om den nya syntaxen finns i [Resurser för Microsoft Defender för Slutpunkt i macOS](mac-resources.md#configuring-from-the-command-line)
 
   > [!NOTE]
   > Syntaxen för det gamla kommandoradsverktyget tas bort från produkten **den 1 januari 2021.**
@@ -159,7 +159,7 @@ ms.locfileid: "51615225"
 
 ## <a name="1009027"></a>100.90.27
 
-- Nu kan du [ange en uppdateringskanal](mac-updates.md#set-the-channel-name) för Microsoft Defender för Slutpunkt för Mac som skiljer sig från den systemomfattande uppdateringskanalen
+- Nu kan du [ange en uppdateringskanal](mac-updates.md#set-the-channel-name) för Microsoft Defender för Slutpunkt i macOS som skiljer sig från den systemomfattande uppdateringskanalen
 - Ny produktikon
 - Andra förbättringar av användarupplevelsen
 - Felkorrigeringar
@@ -196,7 +196,7 @@ ms.locfileid: "51615225"
 
 ## <a name="1007942"></a>100.79.42
 
-- Åtgärdat ett problem där Microsoft Defender för Endpoint för Mac ibland störde Time Machine
+- Åtgärdat ett problem där Microsoft Defender för Slutpunkt på Mac ibland störde Time Machine
 - Lade till en ny växel till kommandoradsverktyget för att testa anslutningen med backendtjänsten
   ```bash
   mdatp connectivity test

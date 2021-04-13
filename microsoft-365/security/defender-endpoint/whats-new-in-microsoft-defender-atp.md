@@ -1,7 +1,7 @@
 ---
-title: Vad är nytt i Microsoft Defender ATP
-description: Se vilka funktioner som är allmänt tillgängliga (GA) i den senaste versionen av Microsoft Defender ATP, samt säkerhetsfunktioner i Windows 10 och Windows Server.
-keywords: vad är nytt i microsoft defender atp, ga, allmänt tillgänglig, funktioner, tillgänglig, ny
+title: Senaste nytt i Microsoft Defender för Endpoint
+description: Se vilka funktioner som är allmänt tillgängliga (GA) i den senaste versionen av Microsoft Defender för Slutpunkt, samt säkerhetsfunktioner i Windows 10 och Windows Server.
+keywords: vad är nytt i Microsoft Defender för endpoint, ga, allmänt tillgänglig, funktioner, tillgänglig, ny
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a72b742d8f4a69d2e38cf4fa234ba5b7e2961ac6
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: c9f4c0689739224b00c9c14db1482d54faab3512
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587617"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688243"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Senaste nytt i Microsoft Defender för Endpoint
 
@@ -52,22 +52,22 @@ Mer information om förhandsgranskningsfunktioner finns i [Förhandsgranskningsf
 - [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender för Slutpunkt lägger nu till stöd för virtuellt windows-skrivbord.
 
 ## <a name="december-2020"></a>December 2020
-- [Microsoft Defender för Endpoint för iOS](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender för Endpoint lägger nu till stöd för iOS. Lär dig hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för Endpoint för iOS.
+- [Microsoft Defender för slutpunkt på iOS](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender för Endpoint lägger nu till stöd för iOS. Lär dig hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för Endpoint på iOS.
 
 ## <a name="september-2020"></a>September 2020
-- [Microsoft Defender för Endpoint för Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender för Endpoint lägger nu till stöd för Android. Lär dig hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för Slutpunkt för Android.
+- [Microsoft Defender för slutpunkt på Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender för Endpoint lägger nu till stöd för Android. Lär dig hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för slutpunkt på Android.
 - [MacOS-support för hantering av hot och sårbarhet](tvm-supported-os.md)<br> Hantering av hot och sårbarhet för macOS är nu i offentlig förhandsversion och kommer kontinuerligt att upptäcka säkerhetsproblem på dina macOS-enheter så att du kan prioritera åtgärder genom att fokusera på risker. Läs mer i det [här Microsoft Tech Community-blogginlägget](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824).
 
 
 ## <a name="august-2020"></a>Augusti 2020
-- [Microsoft Defender för Endpoint för Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender för Endpoint lägger nu till stöd för Android. Lär dig hur du installerar, konfigurerar och använder Microsoft Defender för Slutpunkt för Android.
+- [Microsoft Defender för slutpunkt på Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender för Endpoint lägger nu till stöd för Android. Lär dig hur du installerar, konfigurerar och använder Microsoft Defender för slutpunkt på Android.
 
 
 ## <a name="july-2020"></a>Juli 2020
 - [Skapa indikatorer för certifikat](manage-indicators.md) <br> Skapa indikatorer för att tillåta eller blockera certifikat. 
 
 ## <a name="june-2020"></a>Juni 2020
-- [Microsoft Defender för Endpoint För Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender för Endpoint lägger nu till stöd för Linux. Lär dig hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för Endpoint för Linux.
+- [Microsoft Defender för Endpoint i Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender för Endpoint lägger nu till stöd för Linux. Lär dig hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för Endpoint på Linux.
 
 - [Attackattack i utvärderingslabb](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender för Endpoint har samarbetat med olika simuleringsplattformar för hot för att ge dig bekväm åtkomst till att testa plattformens funktioner direkt från portalen.
 
@@ -78,7 +78,7 @@ Mer information om förhandsgranskningsfunktioner finns i [Förhandsgranskningsf
 
 ## <a name="november-december-2019"></a>November-December 2019
 
-- [Microsoft Defender för Endpoint för Mac](microsoft-defender-endpoint-mac.md) <BR> Med Microsoft Defender för Endpoint för Mac får du nästa generations skydd till Mac-enheter. Baskomponenterna i den enhetliga slutpunktssäkerhetsplattformen blir nu tillgängliga för Mac-enheter, inklusive identifiering [av slutpunkter och svar.](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender för Slutpunkt på macOS](microsoft-defender-endpoint-mac.md) <BR> Med Microsoft Defender för Slutpunkt i macOS får du nästa generations skydd till Mac-enheter. Baskomponenterna i den enhetliga slutpunktssäkerhetsplattformen blir nu tillgängliga för Mac-enheter, inklusive identifiering [av slutpunkter och svar.](microsoft-defender-endpoint-mac.md)
  
 - [Threat & Vulnerability Management application and application version end-of-life information](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation) <BR>Program och programversioner som har nått slutet av livscykeln är märkta eller märkta med sådana så att du är medveten om att de inte längre kommer att stödjas och kan vidta åtgärder för att avinstallera eller ersätta. Att göra det hjälper till att minska riskerna som är relaterade till olika exponeringar av sårbarheter på grund av program som inte är kompatibla.
 

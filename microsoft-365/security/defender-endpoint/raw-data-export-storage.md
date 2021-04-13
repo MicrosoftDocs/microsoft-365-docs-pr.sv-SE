@@ -1,6 +1,6 @@
 ---
 title: Strömma Microsoft Defender för slutpunktshändelser till ditt lagringskonto
-description: Lär dig hur du konfigurerar Microsoft Defender ATP för att strömma Advanced Hunting-händelser till ditt lagringskonto.
+description: Läs om hur du konfigurerar Microsoft Defender för Slutpunkt för att strömma Advanced Hunting-händelser till ditt lagringskonto.
 keywords: raw data export, streaming API, API, Event Hubs, Azure Storage, Storage Account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9f1eb79bbf617afad58b7e4d70e1f40e422f9046
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 19fe0c9c3dc6f2e4226a4aa9a6cd983bc95bae3a
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071889"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688795"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Konfigurera Microsoft Defender för slutpunkt för att strömma Advanced Hunting-händelser till ditt lagringskonto
 

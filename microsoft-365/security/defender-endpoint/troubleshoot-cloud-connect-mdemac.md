@@ -1,6 +1,6 @@
 ---
-title: Felsöka problem med molnanslutning för Microsoft Defender för Endpoint för Mac
-description: I det här avsnittet beskrivs hur du felsöker molnanslutningsproblem för Microsoft Defender för Endpoint för Mac
+title: Felsöka molnanslutningsproblem för Microsoft Defender för slutpunkt i macOS
+description: I det här avsnittet beskrivs hur du felsöker problem med molnanslutningen för Microsoft Defender för slutpunkt på macOS
 keywords: microsoft, defender, atp, mac, installation, distribuera, avinstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e522495fa86b5a71faa9f25cc863c29cc5d124c0
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: a8871274cabae0762cecc2ff513afe93c2d4811f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476719"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688507"
 ---
-# <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-for-mac"></a>Felsöka problem med molnanslutning för Microsoft Defender för Endpoint för Mac
+# <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Felsöka molnanslutningsproblem för Microsoft Defender för slutpunkt i macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "51476719"
 
 **Plattform** macOS
 
-I det här avsnittet beskrivs hur du felsöker molnanslutningsproblem för Microsoft Defender för Endpoint för Mac.
+I det här avsnittet beskrivs hur du felsöker molnanslutningsproblem för Microsoft Defender för slutpunkt på macOS.
 
 ## <a name="run-the-connectivity-test"></a>Köra anslutningstestet
 Testa om Defender för Slutpunkt för Mac kan kommunicera till molnet med de aktuella nätverksinställningarna genom att köra ett anslutningstest från kommandoraden:
@@ -72,7 +72,7 @@ Använd följande procedur för att testa att en anslutning inte blockeras i en 
 Om en proxy eller brandvägg blockerar anonym trafik kontrollerar du att anonym trafik tillåts i tidigare angivna URL:er.
 
 > [!WARNING]
-> Autentiserad proxy. Se till att endast PAC, WPAD eller en statisk proxy används. SSL-proxy proxy och skärningspunkt stöds inte heller av säkerhetsskäl. Konfigurera ett undantag för SSL-kontroll och proxyservern för att direkt överföra data från Microsoft Defender för Endpoint för Mac till relevanta URL:er utan avlyssning. Om du lägger till ditt certifikat för avlyssning i det globala lagret tillåts inte avlyssning.
+> Autentiserad proxy. Se till att endast PAC, WPAD eller en statisk proxy används. SSL-proxy proxy och skärningspunkt stöds inte heller av säkerhetsskäl. Konfigurera ett undantag för SSL-kontroll och proxyservern för att direkt överföra data från Microsoft Defender för Slutpunkt i macOS till relevanta URL:er utan avlyssning. Om du lägger till ditt certifikat för avlyssning i det globala lagret tillåts inte avlyssning.
 Så här testar du att en anslutning inte är blockerad: Öppna en webbläsare som Microsoft Edge för Mac eller Safari och https://x.cp.wd.microsoft.com/api/report https://cdn.x.cp.wd.microsoft.com/ping .
 
 Du kan också köra följande kommando i Terminal:

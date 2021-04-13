@@ -16,16 +16,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b4c2e4d80628dab40de9e99abb27237176b9f171
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a967333a58f74938ea70e32e0c48d2decb597e98
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51070505"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688807"
 ---
-# <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Schemalägga en uppdatering av Microsoft Defender för Slutpunkt (Linux)
+# <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Schemalägga en uppdatering av Microsoft Defender för Endpoint (Linux)
 
-Information om hur du kör en uppdatering på Microsoft Defender för Endpoint för Linux finns i [Distribuera uppdateringar för Microsoft Defender för Endpoint för Linux.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates)
+Information om hur du kör en uppdatering på Microsoft Defender för Slutpunkt på Linux finns i [Distribuera uppdateringar för Microsoft Defender för slutpunkt i Linux.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates)
 
 Linux (och Unix) har verktyget **t.ex.tab** (liknar Schemaläggaren) för att kunna köra schemalagda aktiviteter.
 

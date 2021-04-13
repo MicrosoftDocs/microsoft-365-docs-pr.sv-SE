@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c292c57c179a832728b03a7fc94fb7085d3ea0ec
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 71f230f557792d75659dc4dbfc5911811514d5ea
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166083"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687883"
 ---
-# <a name="onboard-non-windows-devices"></a>Introducera enheter som inte är Windows-enheter
+# <a name="onboard-non-windows-devices"></a>Registrera icke-Windows-enheter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,23 +41,20 @@ ms.locfileid: "51166083"
 Defender för Endpoint ger en centraliserad säkerhetsoperationer för Windows och för icke-Windows-plattformar. Du kan se aviseringar från olika operativsystem som stöds (OS) i Microsoft Defender Säkerhetscenter och bättre skydda organisationens nätverk. 
 
 Du måste känna till exakt vilka Linux-distributioner och macOS-versioner som är kompatibla med Defender för Endpoint för att integreringen ska fungera. Mer information finns i:
-- [Systemkrav för Microsoft Defender för Slutpunkt för Linux](microsoft-defender-endpoint-linux.md#system-requirements)  
-- [Systemkrav för Microsoft Defender för Endpoint för Mac.](microsoft-defender-endpoint-mac.md#system-requirements)
+- [Systemkrav för Microsoft Defender för Slutpunkt på Linux](microsoft-defender-endpoint-linux.md#system-requirements)  
+- [Microsoft Defender för Slutpunkt på systemkrav för macOS](microsoft-defender-endpoint-mac.md#system-requirements).
 
 ## <a name="onboarding-non-windows-devices"></a>Onboarding icke-Windows-enheter
 Du måste vidta följande steg för att registrera enheter som inte är Windows:
 1. Välj önskad onboardingmetod:
 
-   - För macOS-enheter kan du välja att registrera dig via Microsoft Defender ATP eller via en tredjepartslösning. Mer information finns i [Microsoft Defender för Slutpunkt för Mac.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac)
+   - För macOS-enheter kan du välja att registrera dig via Microsoft Defender ATP eller via en tredjepartslösning. Mer information finns i [Microsoft Defender för Slutpunkt för Mac.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
+
    - För andra enheter som inte är **Windows-enheter väljer du Registrera icke-Windows-enheter via tredjepartsintegrering.**   
-       
-     1. Välj Partner med **interoperabilitet i**  >  **navigeringsfönstret.** Kontrollera att tredjepartslösningen visas.
-
-        2. På fliken **Partnerprogram** väljer du den partner som stöder dina enheter som inte är Windows.
-
-        3. Välj **Öppna partnersida** för att öppna partnerns sida. Följ instruktionerna på sidan.
-
-        4. När du har skapat ett konto eller prenumererat på partnerlösningen bör du komma till ett steg där en global administratör för klientorganisationen i organisationen uppmanas att acceptera en begäran om behörighet från partnerprogrammet. Läs begäran om behörighet noga så att den stämmer överens med den tjänst du kräver. 
+    1. Välj Partner med **interoperabilitet i**  >  **navigeringsfönstret.** Kontrollera att tredjepartslösningen visas.
+    2. På fliken **Partnerprogram** väljer du den partner som stöder dina enheter som inte är Windows.
+    3. Välj **Öppna partnersida** för att öppna partnerns sida. Följ instruktionerna på sidan.
+    4. När du har skapat ett konto eller prenumererat på partnerlösningen bör du komma till ett steg där en global administratör för klientorganisationen i organisationen uppmanas att acceptera en begäran om behörighet från partnerprogrammet. Läs begäran om behörighet noga så att den stämmer överens med den tjänst du kräver. 
 
         
 2. Kör ett identifieringstest genom att följa anvisningarna för tredjepartslösningen.
@@ -74,7 +71,7 @@ Du måste vidta följande steg för att registrera enheter som inte är Windows:
 
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Introducera Windows 10-enheter](configure-endpoints.md)
+- [Registrera Windows 10-enheter](configure-endpoints.md)
 - [Onboard servers](configure-server-endpoints.md)
-- [Konfigurera proxy- och Internetanslutningsinställningar](configure-proxy-internet.md)
+- [Konfigurera inställningar för proxy- och Internetanslutning](configure-proxy-internet.md)
 - [Felsökning av problem med introduktion till Microsoft Defender för slutpunkt](troubleshoot-onboarding.md)

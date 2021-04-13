@@ -18,20 +18,20 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e489d5bece292065ad2e82a7eb9011747733b4f6
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 5981cb75b4c835390e27d902b5950e3c68305200
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51073745"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687460"
 ---
-# <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-for-linux"></a>Felsöka händelser eller aviseringar som saknas för Microsoft Defender för Endpoint för Linux
+# <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Felsöka händelser eller aviseringar som saknas för Microsoft Defender för Slutpunkt i Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
 
-- [Microsoft Defender för Endpoint för Linux](microsoft-defender-endpoint-linux.md)
+- [Microsoft Defender för Endpoint i Linux](microsoft-defender-endpoint-linux.md)
 
 Den här artikeln innehåller några allmänna steg för att minimera saknade händelser eller varningar i [säkerhetscenterportalen.](https://securitycenter.windows.com/)
 

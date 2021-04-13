@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0d9e63c5d89b13b02dfcf116c1555c8db319d23f
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: d5a19464b9d5d1b9659d7bfae2d853f7a640a00b
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445370"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687895"
 ---
-# <a name="configure-alert-notifications-in-microsoft-defender-atp"></a>Konfigurera aviseringsmeddelanden i Microsoft Defender ATP
+# <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Konfigurera aviseringsmeddelanden i Microsoft Defender för Slutpunkt
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ Du kan konfigurera Defender för Endpoint så att e-postaviseringar skickas till
 > [!NOTE]
 > Endast användare med behörigheten Hantera säkerhetsinställningar kan konfigurera e-postaviseringar. Om du har valt att använda grundläggande behörighetshantering kan användare med roller som säkerhetsadministratör eller global administratör konfigurera e-postaviseringar.
 
-Du kan ange allvarlighetsnivåer för aviseringar som utlöser aviseringar. Du kan också lägga till eller ta bort mottagare av e-postaviseringen. Nya mottagare får ett meddelande om påträffade aviseringar när de har lagts till. Mer information om aviseringar finns i [Visa och ordna kön Aviseringar.](alerts-queue.md)
+Du kan ange allvarlighetsnivåer för aviseringar som utlöser aviseringar. Du kan också lägga till eller ta bort mottagare av e-postaviseringen. Nya mottagare får ett meddelande om aviseringar som utlöses när de läggs till. Mer information om aviseringar finns i [Visa och ordna kön Aviseringar.](alerts-queue.md)
 
 Om du använder rollbaserad åtkomstkontroll (RBAC) får mottagarna endast meddelanden baserat på enhetsgrupper som har konfigurerats i aviseringsregeln.
 Användare med rätt behörighet kan bara skapa, redigera eller ta bort meddelanden som är begränsade till enhetens grupphanteringsomfång.
@@ -71,7 +71,7 @@ Du kan skapa regler som bestämmer enheter och allvarlighetsgrad för aviseringa
     
 5. Ange mottagarens e-postadress och klicka sedan på **Lägg till mottagare.** Du kan lägga till flera e-postadresser.
 
-6. Kontrollera att e-postmottagarna kan ta emot e-postaviseringar genom att välja **Skicka testmeddelande**.
+6. Kontrollera att e-postmottagarna kan få e-postaviseringar genom att **välja Skicka testmeddelande**.
 
 7. Klicka **på Spara meddelanderegel.**
 
@@ -98,7 +98,7 @@ Det här avsnittet innehåller en lista över olika problem som kan uppstå när
 **Lösning:** Kontrollera att meddelandena inte blockeras av e-postfilter:
 
 1. Kontrollera att Defender för slutpunktens e-postaviseringar inte skickas till mappen Skräppost. Markera dem som Inte skräppost.
-2. Kontrollera att e-postsäkerhetsprodukten inte blockerar e-postaviseringarna från Defender för Endpoint.
+2. Kontrollera att din e-postsäkerhetsprodukt inte blockerar e-postaviseringarna från Defender för Endpoint.
 3. Kontrollera dina e-postprogramsregler som kanske fångar och flyttar din Defender för slutpunkts-e-postaviseringar.
 
 ## <a name="related-topics"></a>Relaterade ämnen

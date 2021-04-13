@@ -1,6 +1,6 @@
 ---
 title: Säkerhetsproblem i min organisation – hantering av hot och risker
-description: Här listas vanliga säkerhetsproblem och exponeringar (CVE) för svagheter i den programvara som körs i organisationen. Upptäcks av funktionen för säkerhetshot och sårbarhetshantering i Microsoft Defender ATP.
+description: Här listas vanliga säkerhetsproblem och exponeringar (CVE) för svagheter i den programvara som körs i organisationen. Upptäcks av Microsoft Defender för funktioner för slutpunktshot och sårbarhetshantering.
 keywords: mdatp-hot & sårbarhetshantering, hot och sårbarhetshantering, mdatp tvm-ändringssida, hitta svagheter via tvm, tvm-sårbarhetslista, sårbarhetsinformation i tvm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 775592cd2ed9c29df79b04e07cb53efb7bea82d6
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 0f573b2425764876e877de44555691979a0e1fcf
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501238"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689407"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Säkerhetsproblem i min organisation – hantering av hot och risker
 

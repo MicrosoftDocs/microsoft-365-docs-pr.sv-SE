@@ -1,6 +1,6 @@
 ---
 title: Enhetskontroll för macOS
-description: Läs om hur du konfigurerar Microsoft Defender för Slutpunkt för Mac för att minska hoten från flyttbara lagringsmedia, till exempel USB-enheter.
+description: Läs om hur du konfigurerar Microsoft Defender för slutpunkt på Mac för att minska hoten från flyttbara lagringsmedia, till exempel USB-enheter.
 keywords: microsoft, defender, atp, mac, enhet, kontroll, usb, flyttbart, media
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 098eb30764870e69c5b1b6c2cec3cf8e5cb11691
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 696bc45f7bb66313cc9353e252d76c2e9fd73259
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186575"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688687"
 ---
 # <a name="device-control-for-macos"></a>Enhetskontroll för macOS
 
@@ -52,7 +52,7 @@ Enhetskontroll för macOS har följande krav:
 >   ```bash
 >   mdatp health --field real_time_protection_subsystem 
 >   ```
-> - Enheten måste finnas i `Beta` (kallades tidigare `InsiderFast` ) Uppdateringskanal för Microsoft AutoUpdate. Mer information finns i [Distribuera uppdateringar för Microsoft Defender för Endpoint för Mac.](mac-updates.md)
+> - Enheten måste finnas i `Beta` (kallades tidigare `InsiderFast` ) Uppdateringskanal för Microsoft AutoUpdate. Mer information finns i [Distribuera uppdateringar för Microsoft Defender för Slutpunkt på Mac.](mac-updates.md)
 > 
 >   Du kan kontrollera uppdateringskanalen med hjälp av följande kommando: 
 > 
@@ -66,7 +66,7 @@ Enhetskontroll för macOS har följande krav:
 >    defaults write com.microsoft.autoupdate2 ChannelName -string Beta
 >    ```
 >
->    Om du befinner dig i en hanterad miljö (JAMF eller Intune) kan du även fjärrkonfigurera uppdateringskanalen. Mer information finns i [Distribuera uppdateringar för Microsoft Defender för Endpoint för Mac.](mac-updates.md) 
+>    Om du befinner dig i en hanterad miljö (JAMF eller Intune) kan du även fjärrkonfigurera uppdateringskanalen. Mer information finns i [Distribuera uppdateringar för Microsoft Defender för Slutpunkt på Mac.](mac-updates.md) 
 
 ## <a name="device-control-policy"></a>Princip för enhetskontroll
 
@@ -76,9 +76,9 @@ Principen för enhetskontroll ingår i konfigurationsprofilen som används för 
 
 I konfigurationsprofilen definieras enhetens kontrollprincip i följande avsnitt:
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | deviceControl |
 | **Datatyp** | Ordlista (kapslad inställning) |
 | **Kommentarer** | I följande avsnitt finns en beskrivning av innehållet i ordlistan. |
@@ -96,9 +96,9 @@ När den princip för enhetskontroll som du har tillämpat tillämpas på en enh
 
 När slutanvändare klickar på det här meddelandet öppnas en webbsida i standardwebbläsaren. Du kan konfigurera URL-adressen som öppnas när slutanvändare klickar på meddelandet.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | navigationTarget |
 | **Datatyp** | Sträng |
 | **Kommentarer** | Om den inte är definierad använder produkten en standard-URL som pekar till en allmän sida som förklarar produktens åtgärder. |
@@ -110,9 +110,9 @@ Avsnittet för flyttbara mediefiler i enhetens kontrollprincip används för att
 > [!NOTE]
 > Följande typer av flyttbara media stöds för närvarande och kan ingå i principen: USB-lagringsenheter.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | removableMediaPolicy |
 | **Datatyp** | Ordlista (kapslad inställning) |
 | **Kommentarer** | I följande avsnitt finns en beskrivning av innehållet i ordlistan. |
@@ -143,9 +143,9 @@ Under avsnittet flyttbara media finns ett alternativ för att ställa in tilläm
 - `audit` – Om åtkomsten till en enhet är begränsad visas ett meddelande för användaren under den här tillämpningsnivån, men enheten kan fortfarande användas. Den här tillämpningsnivån kan vara användbar för att utvärdera en princips effektivitet.
 - `block` – Under den här tillämpningsnivån är åtgärderna som användaren kan utföra på enheten begränsade till vad som har definierats i principen. Dessutom skickas ett meddelande till användaren. 
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | enforcementLevel |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | granskning (standard) <br/> blockera |
@@ -168,9 +168,9 @@ Den här inställningen kan ställas in på:
 > [!NOTE]
 > Behörigheten `execute` refererar bara till körning av Binärfilerna i Så här många binärfiler. Den innehåller inte körning av skript eller andra typer av nyttolaster.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | behörighet |
 | **Datatyp** | Matris med strängar |
 | **Möjliga värden** | none (ingen) <br/> läsa <br/> skriva <br/> utföra |
@@ -183,34 +183,34 @@ På den högsta nivån i principen för flyttbara media kan du definiera mer det
 
 Ordlistan `vendors` innehåller en eller flera poster där varje post identifieras med leverantörs-ID.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | leverantörer |
 | **Datatyp** | Ordlista (kapslad inställning) |
 
 Du kan ange önskad behörighetsnivå för enheter från den leverantören för varje leverantör.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | behörighet |
 | **Datatyp** | Matris med strängar |
 | **Möjliga värden** | Samma som [standardbehörighetsnivå](#default-permission-level) |
 
 Alternativt kan du ange en uppsättning produkter som tillhör den leverantören och vilka mer detaljerade behörigheter definieras för. Ordlistan `products` innehåller en eller flera poster där varje post identifieras med produkt-ID: t. 
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | produkter |
 | **Datatyp** | Ordlista (kapslad inställning) |
 
 Du kan ange önskad behörighetsnivå för varje produkt.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | behörighet |
 | **Datatyp** | Matris med strängar |
 | **Möjliga värden** | Samma som [standardbehörighetsnivå](#default-permission-level) |
@@ -219,17 +219,17 @@ Du kan dessutom ange en valfri uppsättning serienummer som mer detaljerade beh�
 
 Ordlistan `serialNumbers` innehåller en eller flera poster där varje post identifieras med serienumret.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | serialNumbers |
 | **Datatyp** | Ordlista (kapslad inställning) |
 
 Du kan ange önskad behörighetsnivå för varje serienummer.
 
-|||
+|Avsnitt|Värde|
 |:---|:---|
-| **Domain** | `com.microsoft.wdav` |
+| **Domän** | `com.microsoft.wdav` |
 | **Nyckel** | behörighet |
 | **Datatyp** | Matris med strängar |
 | **Möjliga värden** | Samma som [standardbehörighetsnivå](#default-permission-level) |
@@ -336,7 +336,7 @@ DeviceEvents
 
 ## <a name="device-control-policy-deployment"></a>Distribution av princip för enhetskontroll
 
-Enhetens kontrollprincip måste finnas bredvid de andra produktinställningarna, enligt beskrivningen i Ange inställningar för [Microsoft Defender för Slutpunkt för Mac.](mac-preferences.md)
+Principen för enhetskontroll måste finnas bredvid de andra produktinställningarna, enligt beskrivningen i Ange inställningar för [Microsoft Defender för Slutpunkt på macOS.](mac-preferences.md)
 
 Den här profilen kan distribueras med hjälp av anvisningarna i [Distribution av konfigurationsprofil.](mac-preferences.md#configuration-profile-deployment)
 

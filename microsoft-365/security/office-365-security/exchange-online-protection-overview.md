@@ -15,12 +15,12 @@ ms.custom:
 description: Lär dig hur Exchange Online Protection (EOP) kan skydda din lokala e-postorganisation i fristående och hybridmiljöer.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3df7b376d559535e168bfa21d2a8770b19569c4f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b699c0d6353d725b8d03cf4cf556a3e2ac798041
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207476"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687059"
 ---
 # <a name="exchange-online-protection-overview"></a>Översikt över Exchange Online Protection
 
@@ -70,6 +70,9 @@ De tillgängliga EOP-abonnemangen är:
 - **Exchange Enterprise CAL med tjänster:** Om du har en lokal Exchange-organisation där du har köpt ytterligare Exchange Enterprise CAL med services-licenser är EOP en del av tjänsterna som ingår.
 
 Mer information om krav, viktiga begränsningar och funktionstillgänglighet för alla EOP-abonnemang finns i Tjänstbeskrivning [för Exchange Online Protection.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
+
+> [!NOTE]
+> Om du har en **Office 365 E3-prenumeration ingår EOP.** Information om steg för att konfigurera säkerhetsfunktionen EOP i din prenumeration och information om den extra säkerheten som en Microsoft Defender för Office 365-prenumeration kan ge dig finns i skydda [mot hot.](protect-against-threats.md) De rekommenderade inställningarna för EOP-funktionen för [](best-practices-for-configuring-eop.md) installation finns i artikeln Rekommendationer, där EOP-inställningar anges specifikt.
 
 ## <a name="setting-up-eop-for-on-premises-email-organizations"></a>Konfigurera EOP för lokala e-postorganisationer
 

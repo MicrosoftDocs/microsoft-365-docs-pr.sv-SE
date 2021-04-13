@@ -1,6 +1,6 @@
 ---
-title: Konfigurera Microsoft Defender för Endpoint för Android-funktioner
-description: Beskriver hur du konfigurerar Microsoft Defender för Slutpunkt för Android
+title: Konfigurera Microsoft Defender för slutpunkt på Android-funktioner
+description: Här beskrivs hur du konfigurerar Microsoft Defender för slutpunkt på Android
 keywords: microsoft, defender, atp, mde, android, konfiguration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c395aafc8a468cfdeaea973ab02421212870192a
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 8ec4a19bdd641c721bfcd7be2ceb59de1de92963
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587221"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688039"
 ---
 # <a name="configure-defender-for-endpoint-for-android-features"></a>Konfigurera Defender för slutpunkt för Android-funktioner
 
@@ -33,7 +33,7 @@ ms.locfileid: "51587221"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="conditional-access-with-defender-for-endpoint-for-android"></a>Villkorsstyrd åtkomst med Defender för Slutpunkt för Android  
-Microsoft Defender för slutpunkt för Android tillsammans med Microsoft Intune och Azure Active Directory gör det möjligt att tillämpa enhetsefterlevnad och villkorsstyrda åtkomstprinciper baserat på risknivåer för enheter. Defender för Endpoint är en MTD-lösning (Mobile Threat Defense) som du kan distribuera för att utnyttja den här funktionen via Intune.
+Microsoft Defender för slutpunkt på Android tillsammans med Microsoft Intune och Azure Active Directory gör det möjligt att tillämpa enhetsefterlevnad och villkorsstyrd åtkomstprincip baserat på risknivåer för enheter. Defender för Endpoint är en MTD-lösning (Mobile Threat Defense) som du kan distribuera för att utnyttja den här funktionen via Intune.
 
 Mer information om hur du konfigurera Defender för Slutpunkt för Android och Villkorsstyrd åtkomst finns [i Defender för Endpoint och Intune.](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection)
 
@@ -51,5 +51,5 @@ Med Defender för slutpunkt för Android kan IT-administratörer konfigurera web
 > Defender för Endpoint för Android skulle använda ett VPN för att tillhandahålla Web Protection-funktionen. Det här är inte en vanlig VPN och är en lokal/självslingande VPN som inte tar trafik utanför enheten. Mer information finns i [Konfigurera webbskydd på enheter som kör Android.](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-manage-android)
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Översikt över Microsoft Defender för Endpoint för Android](microsoft-defender-endpoint-android.md)
-- [Distribuera Microsoft Defender för Endpoint för Android med Microsoft Intune](android-intune.md)
+- [Översikt över Microsoft Defender för slutpunkt på Android](microsoft-defender-endpoint-android.md)
+- [Distribuera Microsoft Defender för slutpunkt på Android med Microsoft Intune](android-intune.md)

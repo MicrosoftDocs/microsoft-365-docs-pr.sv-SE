@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7d4bc095a9fbc0b9cd166d3133ed291a2c8c01da
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 6bf9691f390173ec86dcadd19707c980aa66336f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615429"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687775"
 ---
-# <a name="microsoft-defender-for-endpoint-for-ios"></a>Microsoft Defender för Endpoint för iOS
+# <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender för slutpunkt på iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "51615429"
 
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-**Microsoft Defender för Endpoint för iOS** skyddar mot nätfiske och osäkra nätverksanslutningar från webbplatser, e-postmeddelanden och appar. Alla aviseringar är tillgängliga i ett enda fönster med fönster i Microsoft Defender Säkerhetscenter. Portalen ger säkerhetsteamen en centraliserad bild av hot på iOS-enheter samt andra plattformar.
+**Microsoft Defender för Slutpunkt för iOS** skyddar mot nätfiske och osäkra nätverksanslutningar från webbplatser, e-postmeddelanden och appar. Alla aviseringar är tillgängliga i ett enda fönster med fönster i Microsoft Defender Säkerhetscenter. Portalen ger säkerhetsteamen en centraliserad bild av hot på iOS-enheter samt andra plattformar.
 
 > [!CAUTION]
 > Att köra andra produkter med slutpunktsskydd från tredje part tillsammans med Defender för Endpoint för iOS kan sannolikt orsaka prestandaproblem och oförutsägbara systemfel.
@@ -58,7 +58,7 @@ ms.locfileid: "51615429"
 - Åtkomst till Microsoft Defender Säkerhetscenter-portalen.
 
     > [!NOTE]
-    > Microsoft Intune är den enda mdm-lösning (Mobile Device Management) som stöds för distribution av Microsoft Defender för Slutpunkt för iOS. För närvarande stöds endast registrerade enheter för tvingande Defender för Endpoint för iOS-relaterade efterlevnadsprinciper för enheter i Intune.
+    > Microsoft Intune är den enda mdm-lösning (Mobile Device Management) som stöds för distribution av Microsoft Defender för slutpunkt i iOS. För närvarande stöds endast registrerade enheter för tvingande Defender för Endpoint för iOS-relaterade efterlevnadsprinciper för enheter i Intune.
 
 - Åtkomst till [administrationscentret för Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)för att distribuera programmet till registrerade användargrupper i organisationen.
 
@@ -73,16 +73,16 @@ ms.locfileid: "51615429"
 
 ## <a name="installation-instructions"></a>Installationsanvisningar
 
-Distribution av Microsoft Defender för Endpoint för iOS sker via Microsoft Intune (MDM) och både övervakade och ej övervakade enheter stöds.
-Mer information finns i Distribuera [Microsoft Defender för slutpunkt för iOS.](ios-install.md)
+Distribution av Microsoft Defender för Slutpunkt på iOS sker via Microsoft Intune (MDM) och både övervakade och ej övervakade enheter stöds.
+Mer information finns i Distribuera [Microsoft Defender för slutpunkt i iOS.](ios-install.md)
 
 ## <a name="resources"></a>Resurser
 
-- Håll dig informerad om kommande versioner genom [att besöka Vad är nytt i Microsoft Defender för Endpoint för iOS](ios-whatsnew.md) eller vår [blogg](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS).
+- Håll dig informerad om kommande versioner genom [att besöka Vad är nytt i Microsoft Defender för Endpoint i iOS](ios-whatsnew.md) eller vår [blogg](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS).
 
 - Ge feedback via feedbacksystem i appen eller via [SecOps-portalen](https://securitycenter.microsoft.com)
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Distribuera Microsoft Defender för slutpunkt för iOS](ios-install.md)
+- [Distribuera Microsoft Defender för Slutpunkt i iOS](ios-install.md)
 - [Konfigurera Microsoft Defender för slutpunkt för iOS-funktioner](ios-configure-features.md)

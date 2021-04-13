@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: I den här artikeln kan du läsa mer om Azure ExpressRoute-dirigeringskrav, kretsar och dirigeringsdomäner för användning med Office 365.
-ms.openlocfilehash: 9d3c381cfb6e24c1c87ef3dcfb83a9b93f991b93
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: b455ed7e53b3018babb1abd58919a077fb9d0685
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222413"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687175"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Dirigering med ExpressRoute för Office 365
 
@@ -106,7 +106,7 @@ Den här tabellen visar FQDN med jokertecken som annonseras till både internet 
 
 Vanligtvis är PAC-filer tänkta att skicka nätverksbegäran till ExpressRoute-annonserade slutpunkter direkt till kretsen och alla andra nätverksbegäran till din proxyserver. Om du konfigurerar en PAC-fil på så sätt komponerar du PAC-filen i följande ordning:
   
-1. Inkludera under-FQDN från kolumn två i tabellen ovan högst upp i PAC-filen, som skickar trafiken till din proxyserver. Vi har skapat ett exempel på en PAC-fil som du kan använda i vår artikel om hantering [av Office 365-slutpunkter.](./managing-expressroute-for-connectivity.md)
+1. Inkludera under-FQDN från kolumn två i tabellen ovan högst upp i PAC-filen, som skickar trafiken till din proxyserver. Vi har skapat ett exempel på en PAC-fil som du kan använda i vår artikel om hantering [av Office 365-slutpunkter.](./managing-office-365-endpoints.md)
 
 2. Inkludera alla FQDN som är [](./urls-and-ip-address-ranges.md) markerade som annonserade till ExpressRoute i den här artikeln under det första avsnittet och skicka trafiken direkt till ExpressRoute-kretsen.
 

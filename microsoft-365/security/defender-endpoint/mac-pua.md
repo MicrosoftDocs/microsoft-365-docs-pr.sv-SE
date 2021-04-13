@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6e65e847403160d24eac04a553ca16a46314e33d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: cf61c6a501a53ac03d3c4cc28068f7af4c0f88d6
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187427"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688111"
 ---
-# <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-for-mac"></a>Identifiera och blockera potentiellt oönskade program med Microsoft Defender för Slutpunkt för Mac
+# <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>Identifiera och blockera potentiellt oönskade program med Microsoft Defender för Slutpunkt i macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "51187427"
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-Skyddsfunktionen för potentiellt oönskade program (PUA) i Microsoft Defender för Endpoint för Mac kan identifiera och blockera PUA-filer på slutpunkter i nätverket.
+Skyddsfunktionen för potentiellt oönskade program (PUA) i Microsoft Defender för slutpunkt på macOS kan identifiera och blockera PUA-filer på slutpunkter i nätverket.
 
 Dessa program betraktas inte som virus, skadlig programvara eller andra typer av hot, men kan utföra åtgärder på slutpunkter som negativt påverkar deras prestanda eller användning. PUA kan också hänvisa till program som anses ha dåligt rykte.
 
@@ -44,13 +44,13 @@ Dessa program kan öka risken för att nätverket smittas med skadlig programvar
 
 ## <a name="how-it-works"></a>Så här fungerar det
 
-Microsoft Defender för Endpoint för Mac kan identifiera och rapportera PUA-filer. När PUA-filer konfigureras i blockeringsläge flyttas de till karantän.
+Microsoft Defender för slutpunkt på macOS kan identifiera och rapportera PUA-filer. När PUA-filer konfigureras i blockeringsläge flyttas de till karantän.
 
-När en PUA hittas på en slutpunkt visar Microsoft Defender för slutpunkt för Mac ett meddelande för användaren, om inte meddelanden har inaktiverats. Hotnamnet innehåller ordet "Program".
+När en PUA hittas på en slutpunkt visar Microsoft Defender för slutpunkt på macOS ett meddelande för användaren, om inte meddelanden har inaktiverats. Hotnamnet innehåller ordet "Program".
 
 ## <a name="configure-pua-protection"></a>Konfigurera PUA-skydd
 
-PUA-skydd i Microsoft Defender för Slutpunkt för Mac kan konfigureras på något av följande sätt:
+PUA-skydd i Microsoft Defender för slutpunkt i macOS kan konfigureras på något av följande sätt:
 
 - **Av**: PUA-skydd är inaktiverat.
 - **Granskning:** PUA-filer rapporteras i produktloggarna, men inte i Microsoft Defender Säkerhetscenter. Inget meddelande visas för användaren och ingen åtgärd vidtas av produkten.
@@ -71,8 +71,8 @@ mdatp threat policy set --type potentially_unwanted_application --action [off|au
 
 ### <a name="use-the-management-console-to-configure-pua-protection"></a>Använd hanteringskonsolen för att konfigurera PUA-skydd:
 
-I ditt företag kan du konfigurera PUA-skydd från en hanteringskonsol, till exempel JAMF eller Intune, på ungefär samma sätt som andra produktinställningar konfigureras. Mer information finns i avsnittet Inställningar [för hottyp](mac-preferences.md#threat-type-settings) i avsnittet Ange [inställningar för Microsoft Defender för slutpunkt för Mac.](mac-preferences.md)
+I ditt företag kan du konfigurera PUA-skydd från en hanteringskonsol, till exempel JAMF eller Intune, på ungefär samma sätt som andra produktinställningar konfigureras. Mer information finns i avsnittet Inställningar [för hottyp](mac-preferences.md#threat-type-settings) i avsnittet Ange [inställningar för Microsoft Defender för slutpunkt i macOS.](mac-preferences.md)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [Ange inställningar för Microsoft Defender för Slutpunkt för Mac](mac-preferences.md)
+- [Ange inställningar för Microsoft Defender för Slutpunkt i macOS](mac-preferences.md)

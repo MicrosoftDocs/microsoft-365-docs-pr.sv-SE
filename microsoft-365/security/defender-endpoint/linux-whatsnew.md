@@ -1,6 +1,6 @@
 ---
-title: Vad är nytt i Microsoft Defender för Endpoint för Linux
-description: Lista över större ändringar för Microsoft Defender ATP för Linux.
+title: Vad är nytt i Microsoft Defender för Endpoint på Linux
+description: Lista över större ändringar för Microsoft Defender ATP på Linux.
 keywords: microsoft, defender, atp, linux, whatsnew, release
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,21 +18,21 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7a55d254c20506913d0995bffc941a67bb34a38e
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 2866cd0c9ee9b40aa9c08c4ff7dce64f745d3d03
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615441"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688639"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-for-linux"></a>Vad är nytt i Microsoft Defender för Endpoint för Linux
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Vad är nytt i Microsoft Defender för Endpoint på Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 ## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0)
 
-- Microsoft Defender för Endpoint för Linux är nu tillgängligt i förhandsversion för kunder inom myndigheter i USA. Mer information finns i [Microsoft Defender för slutpunkt för kunder inom amerikanska myndigheter.](gov.md)
-- Åtgärdat ett problem där användningen av Microsoft Defender för Slutpunkt för Linux på system med IT-filsystem leder till att operativsystemet hänger sig
+- Microsoft Defender för slutpunkt i Linux är nu tillgängligt i förhandsversion för kunder inom myndigheter i USA. Mer information finns i [Microsoft Defender för slutpunkt för kunder inom amerikanska myndigheter.](gov.md)
+- Åtgärdat ett problem där användningen av Microsoft Defender för slutpunkt på Linux på system med IT-filsystem leder till att operativsystemet hänger sig
 - Prestandaförbättringar & andra felkorrigeringar
 
 ## <a name="1012563-30121022125630"></a>101.25.63 (30.121022.12563.0)

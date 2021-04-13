@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fb0cffb9716b2d0940e816dc69217486fd51a21d
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: b1282543a68ce4cb5c322423656d33c5db12b97b
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379339"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688591"
 ---
-# <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-for-mac"></a>Konfigurera och validera undantag för Microsoft Defender för Slutpunkt för Mac
+# <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>Konfigurera och validera undantag för Microsoft Defender för slutpunkt i macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -55,7 +55,7 @@ I följande tabell visas de undantagstyper som stöds av Defender för Slutpunkt
 Exkludering | Definition | Exempel
 ---|---|---
 Filnamnstillägg | Alla filer med tillägget, var som helst på datorn | `.test`
-Arkiv | En specifik fil som identifieras med den fullständiga sökvägen | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+Fil | En specifik fil som identifieras med den fullständiga sökvägen | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
 Mapp | Alla filer under den angivna mappen (rekursivt) | `/var/log/`<br/>`/var/*/`
 Process | En specifik process (anges antingen med den fullständiga sökvägen eller filnamnet) och alla filer som öppnas av den | `/bin/cat`<br/>`cat`<br/>`c?t`
 

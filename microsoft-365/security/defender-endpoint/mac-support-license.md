@@ -18,27 +18,27 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 645c3657bdd1540ac95b68460b4dff6d25627c2c
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 69dd85394837bb7f37e7d277110c8a5dbf7b6506
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185937"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689119"
 ---
-# <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-for-mac"></a>Felsöka licensproblem för Microsoft Defender för Slutpunkt för Mac
+# <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Felsöka licensproblem för Microsoft Defender för slutpunkt i macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Gäller för:**
 
-- [Microsoft Defender för Slutpunkt för Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender för Slutpunkt på macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-När du går igenom [Microsoft Defender](microsoft-defender-endpoint-mac.md) för Endpoint för Mac och testa [manuell](mac-install-manually.md) distribution eller använder PoC (Proof Of Concept) kan du få följande felmeddelande:
+När du går igenom Microsoft Defender för Slutpunkt på [macOS](microsoft-defender-endpoint-mac.md) och [testa manuell](mac-install-manually.md) distribution eller ett PoC (Proof Of Concept) kan du få följande felmeddelande:
 
 ![Bild på licensfel](images/no-license-found.png)
 
@@ -52,7 +52,7 @@ Kontakta administratören om du behöver hjälp.
 
 **Orsak:** 
 
-Du har distribuerat och/eller installerat Microsoft Defender för slutpunkt för macOS-paketet ("Ladda ned installationspaket") men du kanske har kört konfigurationsskriptet ("Hämta registreringspaket").
+Du har distribuerat och/eller installerat Microsoft Defender för slutpunkt på macOS-paket ("Ladda ned installationspaket") men du kanske har kört konfigurationsskriptet ("Hämta onboarding package").
 
 **Lösning:**
 

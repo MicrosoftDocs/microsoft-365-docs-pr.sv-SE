@@ -17,14 +17,14 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 64a19e9dd3d373c8092553ca9d60c711bfb500bc
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 7d9dd82d8c1beee77ea1f95b11a12bcddf01115f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186419"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688339"
 ---
-# <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Microsoft Defender för slutpunkt för icke-Windows-plattformar
+# <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Microsoft Defender för Endpoint för icke-Windows-plattformar
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -71,7 +71,7 @@ Kvalificerade licensierade användare kan använda Microsoft Defender för Slutp
 
 Kunder kan erhålla Microsoft Defender för Slutpunkt i macOS genom en fristående Microsoft Defender för slutpunktslicens som en del av Microsoft 365 A5/E5 eller Microsoft 365-säkerhet.
 
-Nyligen meddelade vi funktionerna i Microsoft Defender för Endpoint för Android och iOS i ovanstående omnämnda erbjudanden som en del av de fem kvalificerade enheterna för berättigade licensierade användare.
+Nyligen meddelade vi funktionerna i Microsoft Defender för Endpoint på Android och iOS ingår i ovanstående erbjudanden som en del av de fem kvalificerade enheterna för berättigade licensierade användare.
 
 Defender för slutpunkt på Linux är tillgänglig via Defender för Endpoint Server SKU som är tillgänglig för både kommersiella kunder och utbildningskunder.
 

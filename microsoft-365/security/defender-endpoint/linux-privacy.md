@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b56e8a74875b3377b6f3228bbefb339680dbc6e1
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: aaf537c84adaba3d632367567cc569069650d21a
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187787"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688363"
 ---
-# <a name="privacy-for-microsoft-defender-for-endpoint-for-linux"></a>Sekretess för Microsoft Defender för Endpoint för Linux
+# <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Sekretess för Microsoft Defender för Endpoint i Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ Microsoft strävar efter att tillhandahålla den information och de kontroller s
 
 I det här avsnittet beskrivs vilka sekretesskontroller som är tillgängliga i produkten, hur du hanterar kontrollerna med principinställningar och mer information om datahändelser som samlas in.
 
-## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-for-linux"></a>Översikt över sekretesskontroller i Microsoft Defender för Endpoint för Linux
+## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Översikt över sekretesskontroller i Microsoft Defender för Endpoint i Linux
 
 I det här avsnittet beskrivs sekretesskontroller för olika typer av data som samlas in av Defender för Endpoint för Linux.
 

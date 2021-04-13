@@ -1,7 +1,6 @@
 ---
 title: Registrera nya enheter själv
 description: Registrera enheter själv så att de kan hanteras av Microsoft Managed Desktop
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -12,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 3aff3bdc1260e9aa2a23760020aeabd71d6b28fd
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 4de1d173a26005d32fb07117d93ee78582b77d54
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445584"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689215"
 ---
 # <a name="register-new-devices-yourself"></a>Registrera nya enheter själv
 
@@ -91,8 +90,11 @@ I [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)väljer du **Enhe
 Gör så här:
 
 1. Ange **en sökväg** till CSV-filen du skapade tidigare i Filuppladdning.
+2. Välj en [enhetsprofil](../service-description/profiles.md) i listrutan.
 3. Välj **Registrera enheter**. Systemet lägger till enheterna i din lista med enheter på enheter , **markerade som** **Väntande registrering.** Registrering tar vanligtvis mindre än 10 minuter och  när enheten lyckas visas den som Redo för användare. Det innebär att den är redo att börja använda och väntar på att användaren ska börja använda den.
 
+> [!NOTE]
+> Om du manuellt ändrar azure Active Directory-gruppmedlemskap för en enhet omtilldekas den automatiskt till gruppen för dess enhetsprofil och tas bort från grupper med konflikter.
 
 Du kan övervaka förloppet för enhetsregistreringen på huvudsidan. Möjliga delstater som rapporterats där är:
 
@@ -119,6 +121,11 @@ Du kan övervaka förloppet för enhetsregistreringen på huvudsidan. Möjliga d
 Om enheten kommer från en Microsoft Managed Desktop-partnerleverantör ska bilden vara korrekt.
 
 Du får också gärna använda bilden på egen hand om du föredrar det. Kontakta microsofts representant som du arbetar med för att komma igång och informera dig om var och hur du använder bilden.
+
+### <a name="autopilot-group-tag"></a>Autopilot-grupptagg
+
+När du använder administratörsportalen för att registrera enheter tilldelar vi automatiskt **Microsoft365Managed_Autopilot** på Autopilot-grupptaggen.
+Tjänsten övervakar alla Microsoft Managed Desktop-enheter dagligen och tilldelar grupptaggen till alla som inte redan har den.
 
 ### <a name="deliver-the-device"></a>Leverera enheten
 

@@ -1,6 +1,6 @@
 ---
 title: Skydda din organisation mot webbhot
-description: Läs mer om webbskydd i Microsoft Defender ATP och hur du kan skydda din organisation.
+description: Läs mer om webbskydd i Microsoft Defender för Endpoint och hur du kan skydda din organisation.
 keywords: webbskydd, skydd mot webbhot, surfning, säkerhet, nätfiske, skadlig kod, sårbarhet, webbplatser, nätverksskydd, Edge, Internet Explorer, Chrome, Firefox, webbläsare
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: aeeea02ca1ef2d37623e9ab434b162237c2f4946
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 0c42c05e318390741b94b6d7d1b5394fca961714
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499900"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688951"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Skydda din organisation mot webbhot
 
@@ -38,7 +38,7 @@ Skydd mot webbhot är en del [av webbskyddet](web-protection-overview.md) i Defe
 >[!Note]
 >Det kan ta upp till en timme innan enheter får nya anpassade indikatorer.
 
-## <a name="prerequisites"></a>Krav
+## <a name="prerequisites"></a>Förutsättningar
 Webbskydd använder nätverksskydd för att tillhandahålla surfsäkerhet i Microsoft Edge och webbläsare från tredje part.
 
 Så här aktiverar du nätverksskydd på dina enheter:

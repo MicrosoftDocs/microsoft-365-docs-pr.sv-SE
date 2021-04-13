@@ -1,6 +1,6 @@
 ---
-title: Felsöka prestandaproblem för Microsoft Defender för Slutpunkt för Mac
-description: Felsöka prestandaproblem i Microsoft Defender för Slutpunkt för Mac.
+title: Felsöka prestandaproblem för Microsoft Defender för slutpunkt i macOS
+description: Felsöka prestandaproblem i Microsoft Defender för slutpunkt i macOS.
 keywords: microsoft, defender, atp, mac, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,39 +18,39 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6ff93b44627cf876384522f0c4f25d22347c8661
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 18bde560543fd1344a64cf1edd64f02f12831c25
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476261"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689107"
 ---
-# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-for-mac"></a>Felsöka prestandaproblem för Microsoft Defender för Slutpunkt för Mac
+# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Felsöka prestandaproblem för Microsoft Defender för slutpunkt i macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Gäller för:**
 
-- [Microsoft Defender för Endpoint för Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender för Slutpunkt på macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Det här avsnittet innehåller några allmänna steg som kan användas för att begränsa prestandaproblem som rör Microsoft Defender för Slutpunkt för Mac.
+Det här avsnittet innehåller några allmänna steg som kan användas för att begränsa prestandaproblem som rör Microsoft Defender för slutpunkt i macOS.
 
-Realtidsskydd (RTP) är en funktion i Microsoft Defender för Endpoint för Mac som kontinuerligt övervakar och skyddar din enhet mot hot. Den består av fil- och processövervakning och annan heuristics.
+Realtidsskydd (RTP) är en funktion i Microsoft Defender för Endpoint på macOS som kontinuerligt övervakar och skyddar din enhet mot hot. Den består av fil- och processövervakning och annan heuristics.
 
-Beroende på vilka program du kör och enhetens egenskaper kan du uppleva underoptimal prestanda när du kör Microsoft Defender för Endpoint för Mac. Särskilt program eller systemprocesser som har åtkomst till många resurser under ett kort tidspann kan leda till prestandaproblem i Microsoft Defender för Slutpunkt för Mac.
+Beroende på vilka program du kör och enhetens egenskaper kan du uppleva underoptimal prestanda när du kör Microsoft Defender för Endpoint på macOS. Särskilt program eller systemprocesser som har åtkomst till många resurser under ett kort tidspann kan leda till prestandaproblem i Microsoft Defender för slutpunkten i macOS.
 
 Följande steg kan användas för att felsöka och minimera dessa problem:
 
-1. Inaktivera realtidsskyddet med någon av följande metoder och se om prestandan förbättras. Den här metoden begränsar om Microsoft Defender för Endpoint för Mac bidrar till prestandaproblemen.
+1. Inaktivera realtidsskyddet med någon av följande metoder och se om prestandan förbättras. Den här metoden begränsar om Microsoft Defender för Slutpunkt på macOS bidrar till prestandaproblemen.
 
       Om din enhet inte hanteras av din organisation kan realtidsskydd inaktiveras med något av följande alternativ:
 
-    - Från användargränssnittet. Öppna Microsoft Defender för Slutpunkt för Mac och gå till **Hantera inställningar.**
+    - Från användargränssnittet. Öppna Microsoft Defender för slutpunkt i macOS och gå till **Hantera inställningar.**
 
       ![Skärmbild på Hantera realtidsskydd](images/mdatp-36-rtp.png)
 
@@ -60,7 +60,7 @@ Följande steg kan användas för att felsöka och minimera dessa problem:
       mdatp config real-time-protection --value disabled
       ```
 
-      Om enheten hanteras av din organisation kan realtidsskydd inaktiveras av administratören genom att följa anvisningarna i Ange inställningar för Microsoft Defender för [Slutpunkt för Mac.](mac-preferences.md)
+      Om enheten hanteras av din organisation kan realtidsskydd inaktiveras av administratören genom att följa anvisningarna i Ange inställningar för Microsoft Defender för [slutpunkt i macOS.](mac-preferences.md)
       
       Om prestandaproblemet kvarstår när realtidsskyddet är inaktiverat kan problemets ursprung vara slutpunktsidentifierings- och svarskomponenten. I så fall kan du kontakta kundsupport för ytterligare instruktioner och åtgärder.
 
@@ -154,6 +154,6 @@ Följande steg kan användas för att felsöka och minimera dessa problem:
       > [!NOTE]
       > Programmet lagrar statistik i minnet och håller bara reda på filaktiviteten sedan den startades och realtidsskyddet aktiverades. Processer som startats tidigare eller under perioder där realtidsskydd var inaktiverat räknas inte. Dessutom räknas bara händelser som utlöste genomsökningar.
       > 
-1. Konfigurera Microsoft Defender för slutpunkt för Mac med undantag för de processer eller diskutrymmen som bidrar till prestandaproblemen och återaktivera realtidsskydd.
+1. Konfigurera Microsoft Defender för slutpunkt på macOS med undantag för de processer eller diskutrymmen som bidrar till prestandaproblemen och återaktivera realtidsskydd.
 
-     Mer [information finns i Konfigurera och validera undantag för Microsoft Defender för Slutpunkt](mac-exclusions.md) för Mac.
+     Mer [information finns i Konfigurera och validera undantag för Microsoft Defender för slutpunkt på macOS.](mac-exclusions.md)
