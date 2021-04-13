@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6bf9691f390173ec86dcadd19707c980aa66336f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 1f20a81f5205c5734387214822fa87ac5cf9a09c
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687775"
+ms.locfileid: "51698214"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender för slutpunkt på iOS
 
@@ -39,7 +39,7 @@ ms.locfileid: "51687775"
 **Microsoft Defender för Slutpunkt för iOS** skyddar mot nätfiske och osäkra nätverksanslutningar från webbplatser, e-postmeddelanden och appar. Alla aviseringar är tillgängliga i ett enda fönster med fönster i Microsoft Defender Säkerhetscenter. Portalen ger säkerhetsteamen en centraliserad bild av hot på iOS-enheter samt andra plattformar.
 
 > [!CAUTION]
-> Att köra andra produkter med slutpunktsskydd från tredje part tillsammans med Defender för Endpoint för iOS kan sannolikt orsaka prestandaproblem och oförutsägbara systemfel.
+> Att köra andra slutpunktsskyddsprodukter från tredje part tillsammans med Defender för Endpoint på iOS kan sannolikt orsaka prestandaproblem och oförutsägbara systemfel.
 
 ## <a name="pre-requisites"></a>Förutsättningar
 
@@ -58,7 +58,7 @@ ms.locfileid: "51687775"
 - Åtkomst till Microsoft Defender Säkerhetscenter-portalen.
 
     > [!NOTE]
-    > Microsoft Intune är den enda mdm-lösning (Mobile Device Management) som stöds för distribution av Microsoft Defender för slutpunkt i iOS. För närvarande stöds endast registrerade enheter för tvingande Defender för Endpoint för iOS-relaterade efterlevnadsprinciper för enheter i Intune.
+    > Microsoft Intune är den enda mdm-lösning (Mobile Device Management) som stöds för distribution av Microsoft Defender för slutpunkt i iOS. För närvarande stöds endast registrerade enheter för tvingande Defender för Slutpunkt på iOS-relaterade efterlevnadsprinciper för enheter i Intune.
 
 - Åtkomst till [administrationscentret för Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)för att distribuera programmet till registrerade användargrupper i organisationen.
 
@@ -69,7 +69,7 @@ ms.locfileid: "51687775"
 - Enheten är registrerad med appen [Intune-företagsportal.](https://apps.apple.com/us/app/intune-company-portal/id719171358)
 
 > [!NOTE]
-> **Microsoft Defender ATP (Microsoft Defender för slutpunkt) för iOS är nu tillgängligt på [Apple App Store.](https://aka.ms/mdatpiosappstore)**
+> **Microsoft Defender ATP (Microsoft Defender för slutpunkt) på iOS är nu tillgängligt på [Apple App Store.](https://aka.ms/mdatpiosappstore)**
 
 ## <a name="installation-instructions"></a>Installationsanvisningar
 

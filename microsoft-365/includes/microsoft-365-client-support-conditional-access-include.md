@@ -35,6 +35,6 @@
 |TO-DO|Planerat|Planerat|Planerat|Uppgift saknas|Planerat|
 |VISIO|Uppgift saknas|✔|Uppgift saknas|Planerat|Uppgift saknas|
 |WHITEBOARD|Uppgift saknas|Planerat|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Planerat|
-|WORD|✔|Planerat|Planerat|Planerat|Planerat|
+|WORD|✔|Planerat|Planerat|Planerat|✔|
 |WORKPLACE ANALYTICS|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|
 |YAMMER|Planerat|Planerat|Planerat|Planerat|Uppgift saknas|

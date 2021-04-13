@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 32c42691b3a2b43f9740da26084bf45af0ee80f5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 8311cb703bc5232e1421d19892fec9cdbc94b052
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687787"
+ms.locfileid: "51698202"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender för slutpunkt på Android
 
@@ -36,10 +36,10 @@ ms.locfileid: "51687787"
 
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-I det här avsnittet beskrivs hur du installerar, konfigurerar, uppdaterar och använder Defender för slutpunkt för Android.
+I det här avsnittet beskrivs hur du installerar, konfigurerar, uppdaterar och använder Defender för slutpunkt på Android.
 
 > [!CAUTION]
-> Att köra andra produkter med slutpunktsskydd från tredje part tillsammans med Defender för Slutpunkt för Android kan sannolikt orsaka prestandaproblem och oförutsägbara systemfel.
+> Att köra andra produkter med slutpunktsskydd från tredje part tillsammans med Defender för Slutpunkt på Android kan sannolikt orsaka prestandaproblem och oförutsägbara systemfel.
 
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-android"></a>Så här installerar du Microsoft Defender för slutpunkt på Android

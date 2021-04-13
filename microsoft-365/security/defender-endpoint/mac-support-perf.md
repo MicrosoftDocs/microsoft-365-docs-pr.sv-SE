@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 18bde560543fd1344a64cf1edd64f02f12831c25
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 8dfaf1dbf2c3742cc97060c7f9e811c83d0cb023
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689107"
+ms.locfileid: "51698226"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Felsöka prestandaproblem för Microsoft Defender för slutpunkt i macOS
 
@@ -149,7 +149,7 @@ Följande steg kan användas för att felsöka och minimera dessa problem:
         125  CrashPlanService 164
       ```
 
-      Om du vill förbättra prestandan för Defender för Endpoint för Mac letar du reda på den med det högsta talet under raden Totalt antal genomsökta filer och lägger till ett undantag för det. Mer information finns i [Konfigurera och validera undantag för Defender för Endpoint för Linux.](linux-exclusions.md)
+      Om du vill förbättra prestandan för Defender för slutpunkt på Mac letar du reda på den med det högsta numret under raden Totalt antal genomsökta filer och lägger till ett undantag för det. Mer information finns i [Konfigurera och validera undantag för Defender för Endpoint på Linux.](linux-exclusions.md)
 
       > [!NOTE]
       > Programmet lagrar statistik i minnet och håller bara reda på filaktiviteten sedan den startades och realtidsskyddet aktiverades. Processer som startats tidigare eller under perioder där realtidsskydd var inaktiverat räknas inte. Dessutom räknas bara händelser som utlöste genomsökningar.

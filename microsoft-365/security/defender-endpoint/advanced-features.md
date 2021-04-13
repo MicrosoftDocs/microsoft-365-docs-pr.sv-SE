@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3ad31e385ed1a3c32a261286b91912c7b2562f87
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: c5e6edb40254ab905ef5ef3ddef9bf8bf54fc54b
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650296"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698274"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurera avancerade funktioner i Defender för Slutpunkt
 
@@ -228,6 +228,10 @@ När du aktiverar Intune-integrering skapar Intune automatiskt en klassisk CA-pr
 
 > [!NOTE]
 > Den klassiska CA-principen som skapas av Intune skiljer sig från moderna [villkorsstyrda](https://docs.microsoft.com/azure/active-directory/conditional-access/overview/)åtkomstprinciper, som används för att konfigurera slutpunkter.
+
+
+## <a name="device-discovery"></a>Enhetsidentifiering
+Hjälper dig att hitta ohanterade enheter anslutna till företagsnätverket utan att behöva extra utrustning eller krångliga processändringar. Med onboarded-enheter kan du hitta ohanterade enheter i nätverket och bedöma svagheter och risker. Mer information finns i [Enhetsidentifiering](device-discovery.md).
 
 ## <a name="preview-features"></a>Förhandsgranskningsfunktioner
 
