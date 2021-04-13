@@ -16,91 +16,91 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0d9e63c5d89b13b02dfcf116c1555c8db319d23f
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: d5a19464b9d5d1b9659d7bfae2d853f7a640a00b
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445370"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687895"
 ---
-# <a name="configure-alert-notifications-in-microsoft-defender-atp"></a><span data-ttu-id="3ac0b-104">Konfigurera aviseringsmeddelanden i Microsoft Defender ATP</span><span class="sxs-lookup"><span data-stu-id="3ac0b-104">Configure alert notifications in Microsoft Defender ATP</span></span>
+# <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a><span data-ttu-id="9190f-104">Konfigurera aviseringsmeddelanden i Microsoft Defender för Slutpunkt</span><span class="sxs-lookup"><span data-stu-id="9190f-104">Configure alert notifications in Microsoft Defender for Endpoint</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="3ac0b-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="3ac0b-105">**Applies to:**</span></span>
-- [<span data-ttu-id="3ac0b-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="3ac0b-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="3ac0b-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="3ac0b-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="9190f-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="9190f-105">**Applies to:**</span></span>
+- [<span data-ttu-id="9190f-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="9190f-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="9190f-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="9190f-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-><span data-ttu-id="3ac0b-108">Vill du använda Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="3ac0b-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="3ac0b-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
+><span data-ttu-id="9190f-108">Vill du använda Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="9190f-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="9190f-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="9190f-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
 
-<span data-ttu-id="3ac0b-110">Du kan konfigurera Defender för Endpoint så att e-postaviseringar skickas till vissa mottagare för nya aviseringar.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-110">You can configure Defender for Endpoint to send email notifications to specified recipients for new alerts.</span></span> <span data-ttu-id="3ac0b-111">Med den här funktionen kan du identifiera en grupp personer som omedelbart informeras och kan agera på aviseringar utifrån deras allvarlighetsgrad.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-111">This feature enables you to identify a group of individuals who will immediately be informed and can act on alerts based on their severity.</span></span>
+<span data-ttu-id="9190f-110">Du kan konfigurera Defender för Endpoint så att e-postaviseringar skickas till vissa mottagare för nya aviseringar.</span><span class="sxs-lookup"><span data-stu-id="9190f-110">You can configure Defender for Endpoint to send email notifications to specified recipients for new alerts.</span></span> <span data-ttu-id="9190f-111">Med den här funktionen kan du identifiera en grupp personer som omedelbart informeras och kan agera på aviseringar utifrån deras allvarlighetsgrad.</span><span class="sxs-lookup"><span data-stu-id="9190f-111">This feature enables you to identify a group of individuals who will immediately be informed and can act on alerts based on their severity.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="3ac0b-112">Endast användare med behörigheten Hantera säkerhetsinställningar kan konfigurera e-postaviseringar.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-112">Only users with 'Manage security settings' permissions can configure email notifications.</span></span> <span data-ttu-id="3ac0b-113">Om du har valt att använda grundläggande behörighetshantering kan användare med roller som säkerhetsadministratör eller global administratör konfigurera e-postaviseringar.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-113">If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications.</span></span>
+> <span data-ttu-id="9190f-112">Endast användare med behörigheten Hantera säkerhetsinställningar kan konfigurera e-postaviseringar.</span><span class="sxs-lookup"><span data-stu-id="9190f-112">Only users with 'Manage security settings' permissions can configure email notifications.</span></span> <span data-ttu-id="9190f-113">Om du har valt att använda grundläggande behörighetshantering kan användare med roller som säkerhetsadministratör eller global administratör konfigurera e-postaviseringar.</span><span class="sxs-lookup"><span data-stu-id="9190f-113">If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications.</span></span>
 
-<span data-ttu-id="3ac0b-114">Du kan ange allvarlighetsnivåer för aviseringar som utlöser aviseringar.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-114">You can set the alert severity levels that trigger notifications.</span></span> <span data-ttu-id="3ac0b-115">Du kan också lägga till eller ta bort mottagare av e-postaviseringen.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-115">You can also add or remove recipients of the email notification.</span></span> <span data-ttu-id="3ac0b-116">Nya mottagare får ett meddelande om påträffade aviseringar när de har lagts till.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-116">New recipients get notified about alerts encountered after they are added.</span></span> <span data-ttu-id="3ac0b-117">Mer information om aviseringar finns i [Visa och ordna kön Aviseringar.](alerts-queue.md)</span><span class="sxs-lookup"><span data-stu-id="3ac0b-117">For more information about alerts, see [View and organize the Alerts queue](alerts-queue.md).</span></span>
+<span data-ttu-id="9190f-114">Du kan ange allvarlighetsnivåer för aviseringar som utlöser aviseringar.</span><span class="sxs-lookup"><span data-stu-id="9190f-114">You can set the alert severity levels that trigger notifications.</span></span> <span data-ttu-id="9190f-115">Du kan också lägga till eller ta bort mottagare av e-postaviseringen.</span><span class="sxs-lookup"><span data-stu-id="9190f-115">You can also add or remove recipients of the email notification.</span></span> <span data-ttu-id="9190f-116">Nya mottagare får ett meddelande om aviseringar som utlöses när de läggs till.</span><span class="sxs-lookup"><span data-stu-id="9190f-116">New recipients get notified about alerts triggered after they're added.</span></span> <span data-ttu-id="9190f-117">Mer information om aviseringar finns i [Visa och ordna kön Aviseringar.](alerts-queue.md)</span><span class="sxs-lookup"><span data-stu-id="9190f-117">For more information about alerts, see [View and organize the Alerts queue](alerts-queue.md).</span></span>
 
-<span data-ttu-id="3ac0b-118">Om du använder rollbaserad åtkomstkontroll (RBAC) får mottagarna endast meddelanden baserat på enhetsgrupper som har konfigurerats i aviseringsregeln.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-118">If you're using role-based access control (RBAC), recipients will only receive notifications based on the device groups that were configured in the notification rule.</span></span>
-<span data-ttu-id="3ac0b-119">Användare med rätt behörighet kan bara skapa, redigera eller ta bort meddelanden som är begränsade till enhetens grupphanteringsomfång.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-119">Users with the proper permission can only create, edit, or delete notifications that are limited to their device group management scope.</span></span>
-<span data-ttu-id="3ac0b-120">Endast användare som tilldelats rollen Global administratör kan hantera meddelanderegler som är konfigurerade för alla enhetsgrupper.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-120">Only users assigned to the Global administrator role can manage notification rules that are configured for all device groups.</span></span>
+<span data-ttu-id="9190f-118">Om du använder rollbaserad åtkomstkontroll (RBAC) får mottagarna endast meddelanden baserat på enhetsgrupper som har konfigurerats i aviseringsregeln.</span><span class="sxs-lookup"><span data-stu-id="9190f-118">If you're using role-based access control (RBAC), recipients will only receive notifications based on the device groups that were configured in the notification rule.</span></span>
+<span data-ttu-id="9190f-119">Användare med rätt behörighet kan bara skapa, redigera eller ta bort meddelanden som är begränsade till enhetens grupphanteringsomfång.</span><span class="sxs-lookup"><span data-stu-id="9190f-119">Users with the proper permission can only create, edit, or delete notifications that are limited to their device group management scope.</span></span>
+<span data-ttu-id="9190f-120">Endast användare som tilldelats rollen Global administratör kan hantera meddelanderegler som är konfigurerade för alla enhetsgrupper.</span><span class="sxs-lookup"><span data-stu-id="9190f-120">Only users assigned to the Global administrator role can manage notification rules that are configured for all device groups.</span></span>
 
-<span data-ttu-id="3ac0b-121">E-postmeddelandet innehåller grundläggande information om aviseringen och en länk till portalen där du kan undersöka frågan ytterligare.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-121">The email notification includes basic information about the alert and a link to the portal where you can do further investigation.</span></span>
-
-
-## <a name="create-rules-for-alert-notifications"></a><span data-ttu-id="3ac0b-122">Skapa regler för aviseringar</span><span class="sxs-lookup"><span data-stu-id="3ac0b-122">Create rules for alert notifications</span></span>
-<span data-ttu-id="3ac0b-123">Du kan skapa regler som bestämmer enheter och allvarlighetsgrad för aviseringar för att skicka e-postaviseringar till och aviseringsmottagarna.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-123">You can create rules that determine the devices and alert severities to send email notifications for and the notification recipients.</span></span>
+<span data-ttu-id="9190f-121">E-postmeddelandet innehåller grundläggande information om aviseringen och en länk till portalen där du kan undersöka frågan ytterligare.</span><span class="sxs-lookup"><span data-stu-id="9190f-121">The email notification includes basic information about the alert and a link to the portal where you can do further investigation.</span></span>
 
 
-1. <span data-ttu-id="3ac0b-124">I navigeringsfönstret väljer du Inställningar  >  **E-postaviseringar**.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-124">In the navigation pane, select **Settings** > **Email notifications**.</span></span>
+## <a name="create-rules-for-alert-notifications"></a><span data-ttu-id="9190f-122">Skapa regler för aviseringar</span><span class="sxs-lookup"><span data-stu-id="9190f-122">Create rules for alert notifications</span></span>
+<span data-ttu-id="9190f-123">Du kan skapa regler som bestämmer enheter och allvarlighetsgrad för aviseringar för att skicka e-postaviseringar till och aviseringsmottagarna.</span><span class="sxs-lookup"><span data-stu-id="9190f-123">You can create rules that determine the devices and alert severities to send email notifications for and the notification recipients.</span></span>
 
-2. <span data-ttu-id="3ac0b-125">Klicka **på Lägg till objekt.**</span><span class="sxs-lookup"><span data-stu-id="3ac0b-125">Click **Add item**.</span></span>
 
-3. <span data-ttu-id="3ac0b-126">Ange allmän information:</span><span class="sxs-lookup"><span data-stu-id="3ac0b-126">Specify the General information:</span></span>
-    - <span data-ttu-id="3ac0b-127">**Regelnamn** – ange ett namn på meddelanderegeln.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-127">**Rule name** - Specify a name for the notification rule.</span></span>
-    - <span data-ttu-id="3ac0b-128">**Ta med organisationsnamn** – Ange kundens namn som visas i e-postmeddelandet.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-128">**Include organization name** - Specify the customer name that appears on the email notification.</span></span>
-    - <span data-ttu-id="3ac0b-129">**Inkludera klientspecifik portallänk – Lägger** till en länk med klientorganisations-ID:t för att tillåta åtkomst till en viss klientorganisation.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-129">**Include tenant-specific portal link** - Adds a link with the tenant ID to allow access to a specific tenant.</span></span>
-    - <span data-ttu-id="3ac0b-130">**Ta med enhetsinformation** – Innehåller enhetens namn i e-postaviseringstexten.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-130">**Include device information** - Includes the device name in the email alert body.</span></span>
+1. <span data-ttu-id="9190f-124">I navigeringsfönstret väljer du Inställningar  >  **E-postaviseringar**.</span><span class="sxs-lookup"><span data-stu-id="9190f-124">In the navigation pane, select **Settings** > **Email notifications**.</span></span>
+
+2. <span data-ttu-id="9190f-125">Klicka **på Lägg till objekt.**</span><span class="sxs-lookup"><span data-stu-id="9190f-125">Click **Add item**.</span></span>
+
+3. <span data-ttu-id="9190f-126">Ange allmän information:</span><span class="sxs-lookup"><span data-stu-id="9190f-126">Specify the General information:</span></span>
+    - <span data-ttu-id="9190f-127">**Regelnamn** – ange ett namn på meddelanderegeln.</span><span class="sxs-lookup"><span data-stu-id="9190f-127">**Rule name** - Specify a name for the notification rule.</span></span>
+    - <span data-ttu-id="9190f-128">**Ta med organisationsnamn** – Ange kundens namn som visas i e-postmeddelandet.</span><span class="sxs-lookup"><span data-stu-id="9190f-128">**Include organization name** - Specify the customer name that appears on the email notification.</span></span>
+    - <span data-ttu-id="9190f-129">**Inkludera klientspecifik portallänk – Lägger** till en länk med klientorganisations-ID:t för att tillåta åtkomst till en viss klientorganisation.</span><span class="sxs-lookup"><span data-stu-id="9190f-129">**Include tenant-specific portal link** - Adds a link with the tenant ID to allow access to a specific tenant.</span></span>
+    - <span data-ttu-id="9190f-130">**Ta med enhetsinformation** – Innehåller enhetens namn i e-postaviseringstexten.</span><span class="sxs-lookup"><span data-stu-id="9190f-130">**Include device information** - Includes the device name in the email alert body.</span></span>
     
         >[!NOTE]
-        > <span data-ttu-id="3ac0b-131">Den här informationen kan bearbetas av mottagarens e-postservrar som inte finns på den geografiska plats som du har valt för Defender för slutpunktsdata.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-131">This information might be processed by recipient mail servers that ar not in the geographic location you have selected for your Defender for Endpoint data.</span></span>
+        > <span data-ttu-id="9190f-131">Den här informationen kan bearbetas av mottagarens e-postservrar som inte finns på den geografiska plats som du har valt för Defender för slutpunktsdata.</span><span class="sxs-lookup"><span data-stu-id="9190f-131">This information might be processed by recipient mail servers that ar not in the geographic location you have selected for your Defender for Endpoint data.</span></span>
 
-    - <span data-ttu-id="3ac0b-132">**Enheter** – Välj om du vill meddela mottagare för aviseringar på alla enheter (endast rollen Global administratör) eller för valda enhetsgrupper.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-132">**Devices** - Choose whether to notify recipients for alerts on all devices (Global administrator role only) or on selected device groups.</span></span> <span data-ttu-id="3ac0b-133">Mer information finns i Skapa [och hantera enhetsgrupper](machine-groups.md).</span><span class="sxs-lookup"><span data-stu-id="3ac0b-133">For more information, see [Create and manage device groups](machine-groups.md).</span></span>
-    - <span data-ttu-id="3ac0b-134">**Aviserings allvarlighetsgrad** – välj en allvarlighetsnivå för aviseringen.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-134">**Alert severity** - Choose the alert severity level.</span></span>
+    - <span data-ttu-id="9190f-132">**Enheter** – Välj om du vill meddela mottagare för aviseringar på alla enheter (endast rollen Global administratör) eller för valda enhetsgrupper.</span><span class="sxs-lookup"><span data-stu-id="9190f-132">**Devices** - Choose whether to notify recipients for alerts on all devices (Global administrator role only) or on selected device groups.</span></span> <span data-ttu-id="9190f-133">Mer information finns i Skapa [och hantera enhetsgrupper](machine-groups.md).</span><span class="sxs-lookup"><span data-stu-id="9190f-133">For more information, see [Create and manage device groups](machine-groups.md).</span></span>
+    - <span data-ttu-id="9190f-134">**Aviserings allvarlighetsgrad** – välj en allvarlighetsnivå för aviseringen.</span><span class="sxs-lookup"><span data-stu-id="9190f-134">**Alert severity** - Choose the alert severity level.</span></span>
 
-4. <span data-ttu-id="3ac0b-135">Klicka på **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-135">Click **Next**.</span></span>
+4. <span data-ttu-id="9190f-135">Klicka på **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="9190f-135">Click **Next**.</span></span>
     
-5. <span data-ttu-id="3ac0b-136">Ange mottagarens e-postadress och klicka sedan på **Lägg till mottagare.**</span><span class="sxs-lookup"><span data-stu-id="3ac0b-136">Enter the recipient's email address then click **Add recipient**.</span></span> <span data-ttu-id="3ac0b-137">Du kan lägga till flera e-postadresser.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-137">You can add multiple email addresses.</span></span>
+5. <span data-ttu-id="9190f-136">Ange mottagarens e-postadress och klicka sedan på **Lägg till mottagare.**</span><span class="sxs-lookup"><span data-stu-id="9190f-136">Enter the recipient's email address then click **Add recipient**.</span></span> <span data-ttu-id="9190f-137">Du kan lägga till flera e-postadresser.</span><span class="sxs-lookup"><span data-stu-id="9190f-137">You can add multiple email addresses.</span></span>
 
-6. <span data-ttu-id="3ac0b-138">Kontrollera att e-postmottagarna kan ta emot e-postaviseringar genom att välja **Skicka testmeddelande**.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-138">Check that email recipients are able to receive the email notifications by selecting **Send test email**.</span></span>
+6. <span data-ttu-id="9190f-138">Kontrollera att e-postmottagarna kan få e-postaviseringar genom att **välja Skicka testmeddelande**.</span><span class="sxs-lookup"><span data-stu-id="9190f-138">Check that email recipients can receive the email notifications by selecting **Send test email**.</span></span>
 
-7. <span data-ttu-id="3ac0b-139">Klicka **på Spara meddelanderegel.**</span><span class="sxs-lookup"><span data-stu-id="3ac0b-139">Click **Save notification rule**.</span></span>
+7. <span data-ttu-id="9190f-139">Klicka **på Spara meddelanderegel.**</span><span class="sxs-lookup"><span data-stu-id="9190f-139">Click **Save notification rule**.</span></span>
 
-## <a name="edit-a-notification-rule"></a><span data-ttu-id="3ac0b-140">Redigera en aviseringsregel</span><span class="sxs-lookup"><span data-stu-id="3ac0b-140">Edit a notification rule</span></span>
-1. <span data-ttu-id="3ac0b-141">Välj den aviseringsregel som du vill redigera.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-141">Select the notification rule you'd like to edit.</span></span>
+## <a name="edit-a-notification-rule"></a><span data-ttu-id="9190f-140">Redigera en aviseringsregel</span><span class="sxs-lookup"><span data-stu-id="9190f-140">Edit a notification rule</span></span>
+1. <span data-ttu-id="9190f-141">Välj den aviseringsregel som du vill redigera.</span><span class="sxs-lookup"><span data-stu-id="9190f-141">Select the notification rule you'd like to edit.</span></span>
 
-2. <span data-ttu-id="3ac0b-142">Uppdatera informationen på fliken Allmänt och Mottagare.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-142">Update the General and Recipient tab information.</span></span>
+2. <span data-ttu-id="9190f-142">Uppdatera informationen på fliken Allmänt och Mottagare.</span><span class="sxs-lookup"><span data-stu-id="9190f-142">Update the General and Recipient tab information.</span></span>
 
-3. <span data-ttu-id="3ac0b-143">Klicka **på Spara meddelanderegel.**</span><span class="sxs-lookup"><span data-stu-id="3ac0b-143">Click **Save notification rule**.</span></span>
-
-
-## <a name="delete-notification-rule"></a><span data-ttu-id="3ac0b-144">Ta bort meddelanderegel</span><span class="sxs-lookup"><span data-stu-id="3ac0b-144">Delete notification rule</span></span>
-
-1. <span data-ttu-id="3ac0b-145">Välj den meddelanderegel som du vill ta bort.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-145">Select the notification rule you'd like to delete.</span></span>
-
-2. <span data-ttu-id="3ac0b-146">Klicka på **Ta bort**.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-146">Click **Delete**.</span></span>
+3. <span data-ttu-id="9190f-143">Klicka **på Spara meddelanderegel.**</span><span class="sxs-lookup"><span data-stu-id="9190f-143">Click **Save notification rule**.</span></span>
 
 
-## <a name="troubleshoot-email-notifications-for-alerts"></a><span data-ttu-id="3ac0b-147">Felsöka e-postaviseringar för aviseringar</span><span class="sxs-lookup"><span data-stu-id="3ac0b-147">Troubleshoot email notifications for alerts</span></span>
-<span data-ttu-id="3ac0b-148">Det här avsnittet innehåller en lista över olika problem som kan uppstå när du använder e-postaviseringar för aviseringar.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-148">This section lists various issues that you may encounter when using email notifications for alerts.</span></span>
+## <a name="delete-notification-rule"></a><span data-ttu-id="9190f-144">Ta bort meddelanderegel</span><span class="sxs-lookup"><span data-stu-id="9190f-144">Delete notification rule</span></span>
 
-<span data-ttu-id="3ac0b-149">**Problem:** Avsedd mottagare rapporterar att de inte får aviseringarna.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-149">**Problem:** Intended recipients report they are not getting the notifications.</span></span>
+1. <span data-ttu-id="9190f-145">Välj den meddelanderegel som du vill ta bort.</span><span class="sxs-lookup"><span data-stu-id="9190f-145">Select the notification rule you'd like to delete.</span></span>
 
-<span data-ttu-id="3ac0b-150">**Lösning:** Kontrollera att meddelandena inte blockeras av e-postfilter:</span><span class="sxs-lookup"><span data-stu-id="3ac0b-150">**Solution:** Make sure that the notifications are not blocked by email filters:</span></span>
+2. <span data-ttu-id="9190f-146">Klicka på **Ta bort**.</span><span class="sxs-lookup"><span data-stu-id="9190f-146">Click **Delete**.</span></span>
 
-1. <span data-ttu-id="3ac0b-151">Kontrollera att Defender för slutpunktens e-postaviseringar inte skickas till mappen Skräppost.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-151">Check that the Defender for Endpoint email notifications are not sent to the Junk Email folder.</span></span> <span data-ttu-id="3ac0b-152">Markera dem som Inte skräppost.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-152">Mark them as Not junk.</span></span>
-2. <span data-ttu-id="3ac0b-153">Kontrollera att e-postsäkerhetsprodukten inte blockerar e-postaviseringarna från Defender för Endpoint.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-153">Check that your email security product is not blocking the email notifications from Defender for Endpoint.</span></span>
-3. <span data-ttu-id="3ac0b-154">Kontrollera dina e-postprogramsregler som kanske fångar och flyttar din Defender för slutpunkts-e-postaviseringar.</span><span class="sxs-lookup"><span data-stu-id="3ac0b-154">Check your email application rules that might be catching and moving your Defender for Endpoint email notifications.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="3ac0b-155">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="3ac0b-155">Related topics</span></span>
-- [<span data-ttu-id="3ac0b-156">Uppdatera inställningar för datalagring</span><span class="sxs-lookup"><span data-stu-id="3ac0b-156">Update data retention settings</span></span>](data-retention-settings.md)
-- [<span data-ttu-id="3ac0b-157">Konfigurera avancerade funktioner</span><span class="sxs-lookup"><span data-stu-id="3ac0b-157">Configure advanced features</span></span>](advanced-features.md)
+## <a name="troubleshoot-email-notifications-for-alerts"></a><span data-ttu-id="9190f-147">Felsöka e-postaviseringar för aviseringar</span><span class="sxs-lookup"><span data-stu-id="9190f-147">Troubleshoot email notifications for alerts</span></span>
+<span data-ttu-id="9190f-148">Det här avsnittet innehåller en lista över olika problem som kan uppstå när du använder e-postaviseringar för aviseringar.</span><span class="sxs-lookup"><span data-stu-id="9190f-148">This section lists various issues that you may encounter when using email notifications for alerts.</span></span>
+
+<span data-ttu-id="9190f-149">**Problem:** Avsedd mottagare rapporterar att de inte får aviseringarna.</span><span class="sxs-lookup"><span data-stu-id="9190f-149">**Problem:** Intended recipients report they're not getting the notifications.</span></span>
+
+<span data-ttu-id="9190f-150">**Lösning:** Kontrollera att meddelandena inte blockeras av e-postfilter:</span><span class="sxs-lookup"><span data-stu-id="9190f-150">**Solution:** Make sure that the notifications aren't blocked by email filters:</span></span>
+
+1. <span data-ttu-id="9190f-151">Kontrollera att Defender för slutpunktens e-postaviseringar inte skickas till mappen Skräppost.</span><span class="sxs-lookup"><span data-stu-id="9190f-151">Check that the Defender for Endpoint email notifications aren't sent to the Junk Email folder.</span></span> <span data-ttu-id="9190f-152">Markera dem som Inte skräppost.</span><span class="sxs-lookup"><span data-stu-id="9190f-152">Mark them as Not junk.</span></span>
+2. <span data-ttu-id="9190f-153">Kontrollera att din e-postsäkerhetsprodukt inte blockerar e-postaviseringarna från Defender för Endpoint.</span><span class="sxs-lookup"><span data-stu-id="9190f-153">Check that your email security product isn't blocking the email notifications from Defender for Endpoint.</span></span>
+3. <span data-ttu-id="9190f-154">Kontrollera dina e-postprogramsregler som kanske fångar och flyttar din Defender för slutpunkts-e-postaviseringar.</span><span class="sxs-lookup"><span data-stu-id="9190f-154">Check your email application rules that might be catching and moving your Defender for Endpoint email notifications.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="9190f-155">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="9190f-155">Related topics</span></span>
+- [<span data-ttu-id="9190f-156">Uppdatera inställningar för datalagring</span><span class="sxs-lookup"><span data-stu-id="9190f-156">Update data retention settings</span></span>](data-retention-settings.md)
+- [<span data-ttu-id="9190f-157">Konfigurera avancerade funktioner</span><span class="sxs-lookup"><span data-stu-id="9190f-157">Configure advanced features</span></span>](advanced-features.md)
