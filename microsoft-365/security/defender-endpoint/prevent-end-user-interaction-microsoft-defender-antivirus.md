@@ -1,0 +1,94 @@
+---
+title: Dölja Antivirusgränssnittet i Microsoft Defender
+description: Du kan dölja panelen för skydd mot virus och hot i Windows-säkerhetsappen.
+keywords: nedlåst gränssnitt, huvudlöst läge, dölja app, dölja inställningar, dölja gränssnitt
+search.product: eADQiWindows 10XVcnh
+ms.prod: m365-security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.pagetype: security
+ms.localizationpriority: medium
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
+ms.date: 09/03/2018
+ms.reviewer: ''
+manager: dansimp
+ms.technology: mde
+ms.openlocfilehash: 6b5ce018db436aee35bfa1899fb42f1dca31efa6
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51691328"
+---
+# <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a><span data-ttu-id="a7b21-104">Hindra användare från att se eller interagera med användargränssnittet i Microsoft Defender Antivirus</span><span class="sxs-lookup"><span data-stu-id="a7b21-104">Prevent users from seeing or interacting with the Microsoft Defender Antivirus user interface</span></span>
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
+<span data-ttu-id="a7b21-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="a7b21-105">**Applies to:**</span></span>
+
+- [<span data-ttu-id="a7b21-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="a7b21-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
+
+<span data-ttu-id="a7b21-107">Du kan använda grupprinciper för att hindra användare på slutpunkter från att se Microsoft Defender Antivirus-gränssnittet.</span><span class="sxs-lookup"><span data-stu-id="a7b21-107">You can use Group Policy to prevent users on endpoints from seeing the Microsoft Defender Antivirus interface.</span></span> <span data-ttu-id="a7b21-108">Du kan också förhindra att genomsökningar pausas.</span><span class="sxs-lookup"><span data-stu-id="a7b21-108">You can also prevent them from pausing scans.</span></span>
+
+## <a name="hide-the-microsoft-defender-antivirus-interface"></a><span data-ttu-id="a7b21-109">Dölja Antivirusgränssnittet i Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="a7b21-109">Hide the Microsoft Defender Antivirus interface</span></span>
+
+<span data-ttu-id="a7b21-110">Om du döljer gränssnittet i Windows 10 version 1703 döljs meddelanden från Microsoft Defender Antivirus och skyddspanelen för Virus & förhindras från att visas i Windows-säkerhetsappen.</span><span class="sxs-lookup"><span data-stu-id="a7b21-110">In Windows 10, versions 1703, hiding the interface will hide Microsoft Defender Antivirus notifications and prevent the Virus & threat protection tile from appearing in the Windows Security app.</span></span>
+
+<span data-ttu-id="a7b21-111">Med inställningen **aktiverad:**</span><span class="sxs-lookup"><span data-stu-id="a7b21-111">With the setting set to **Enabled**:</span></span>
+
+![Skärmbild av Windows-säkerhet utan sköldikonen och avsnittet om skydd mot virus och hot](images/defender/wdav-headless-mode-1703.png)
+
+<span data-ttu-id="a7b21-113">Med inställningen inställd på **Inaktiverad** eller ej konfigurerad:</span><span class="sxs-lookup"><span data-stu-id="a7b21-113">With the setting set to **Disabled** or not configured:</span></span>
+
+![Skärmbild av Windows-säkerhet som visar sköldikonen samt avsnittet om skydd mot virus och hot](images/defender/wdav-headless-mode-off-1703.png)
+
+>[!NOTE]
+><span data-ttu-id="a7b21-115">Om du döljer gränssnittet förhindrar du också att meddelanden från Microsoft Defender Antivirus visas på slutpunkten.</span><span class="sxs-lookup"><span data-stu-id="a7b21-115">Hiding the interface will also prevent Microsoft Defender Antivirus notifications from appearing on the endpoint.</span></span> <span data-ttu-id="a7b21-116">Microsoft Defender för slutpunktsmeddelanden visas fortfarande.</span><span class="sxs-lookup"><span data-stu-id="a7b21-116">Microsoft Defender for Endpoint notifications will still appear.</span></span> <span data-ttu-id="a7b21-117">Du kan också [individuellt konfigurera meddelanden som visas på slutpunkter](configure-notifications-microsoft-defender-antivirus.md)</span><span class="sxs-lookup"><span data-stu-id="a7b21-117">You can also individually [configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)</span></span>
+
+<span data-ttu-id="a7b21-118">I tidigare versioner av Windows 10 döljs Windows Defender-klientgränssnittet vid inställningen.</span><span class="sxs-lookup"><span data-stu-id="a7b21-118">In earlier versions of Windows 10, the setting will hide the Windows Defender client interface.</span></span> <span data-ttu-id="a7b21-119">Om användaren försöker öppna den får de ett varningsmeddelande där det står "Systemadministratören har begränsad åtkomst till den här appen".</span><span class="sxs-lookup"><span data-stu-id="a7b21-119">If the user attempts to open it, they will receive a warning that says, "Your system administrator has restricted access to this app."</span></span>
+
+![Varningsmeddelande när huvudlöst läge är aktiverat i Windows 10, tidigare versioner än 1703](images/defender/wdav-headless-mode-1607.png)
+
+## <a name="use-group-policy-to-hide-the-microsoft-defender-av-interface-from-users"></a><span data-ttu-id="a7b21-121">Använda grupprinciper för att dölja Microsoft Defender AV-gränssnittet för användare</span><span class="sxs-lookup"><span data-stu-id="a7b21-121">Use Group Policy to hide the Microsoft Defender AV interface from users</span></span>
+
+1. <span data-ttu-id="a7b21-122">På hanteringsdatorn för grupprinciper öppnar du [Konsolen](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal)för grupprinciphantering, högerklickar på det grupprincipobjekt du vill konfigurera och klickar på **Redigera.**</span><span class="sxs-lookup"><span data-stu-id="a7b21-122">On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.</span></span>
+
+2. <span data-ttu-id="a7b21-123">Med **grupprinciphanteringsredigeraren går** du till **Datorkonfiguration**.</span><span class="sxs-lookup"><span data-stu-id="a7b21-123">Using the **Group Policy Management Editor** go to **Computer configuration**.</span></span>
+
+3. <span data-ttu-id="a7b21-124">Klicka **på Administrativa mallar**.</span><span class="sxs-lookup"><span data-stu-id="a7b21-124">Click **Administrative templates**.</span></span>
+
+4. <span data-ttu-id="a7b21-125">Expandera trädet till **Windows-komponenter > Microsoft Defender Antivirus> klientgränssnittet**.</span><span class="sxs-lookup"><span data-stu-id="a7b21-125">Expand the tree to **Windows components > Microsoft Defender Antivirus > Client interface**.</span></span>
+
+5. <span data-ttu-id="a7b21-126">Dubbelklicka på inställningen Aktivera **huvudlöst gränssnittsläge** och ange alternativet **Aktiverad**.</span><span class="sxs-lookup"><span data-stu-id="a7b21-126">Double-click the **Enable headless UI mode** setting and set the option to **Enabled**.</span></span> <span data-ttu-id="a7b21-127">Klicka på **OK**.</span><span class="sxs-lookup"><span data-stu-id="a7b21-127">Click **OK**.</span></span> 
+
+<span data-ttu-id="a7b21-128">Mer [information om hur du hindrar användare från att](configure-local-policy-overrides-microsoft-defender-antivirus.md) ändra skydd på datorer finns i Hindra användare från att ändra principinställningar lokalt.</span><span class="sxs-lookup"><span data-stu-id="a7b21-128">See [Prevent users from locally modifying policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) for more options on preventing users form modifying protection on their PCs.</span></span>
+
+## <a name="prevent-users-from-pausing-a-scan"></a><span data-ttu-id="a7b21-129">Hindra användare från att pausa en genomsökning</span><span class="sxs-lookup"><span data-stu-id="a7b21-129">Prevent users from pausing a scan</span></span>
+
+<span data-ttu-id="a7b21-130">Du kan förhindra att användare pausar genomsökningar, vilket kan vara användbart för att säkerställa att schemalagda eller on-demand-sökningar inte avbryts av användarna.</span><span class="sxs-lookup"><span data-stu-id="a7b21-130">You can prevent users from pausing scans, which can be helpful to ensure scheduled or on-demand scans are not interrupted by users.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="a7b21-131">Den här inställningen stöds inte i Windows 10.</span><span class="sxs-lookup"><span data-stu-id="a7b21-131">This setting is not supported on Windows 10.</span></span>
+
+### <a name="use-group-policy-to-prevent-users-from-pausing-a-scan"></a><span data-ttu-id="a7b21-132">Använda grupprinciper för att hindra användare från att pausa en genomsökning</span><span class="sxs-lookup"><span data-stu-id="a7b21-132">Use Group Policy to prevent users from pausing a scan</span></span>
+
+1. <span data-ttu-id="a7b21-133">På hanteringsdatorn för grupprinciper öppnar du [Konsolen](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal)för grupprinciphantering, högerklickar på det grupprincipobjekt du vill konfigurera och klickar på **Redigera.**</span><span class="sxs-lookup"><span data-stu-id="a7b21-133">On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.</span></span>
+
+2. <span data-ttu-id="a7b21-134">Med **grupprinciphanteringsredigeraren går** du till **Datorkonfiguration**.</span><span class="sxs-lookup"><span data-stu-id="a7b21-134">Using the **Group Policy Management Editor** go to **Computer configuration**.</span></span>
+
+3. <span data-ttu-id="a7b21-135">Klicka **på Administrativa mallar**.</span><span class="sxs-lookup"><span data-stu-id="a7b21-135">Click **Administrative templates**.</span></span>
+
+4. <span data-ttu-id="a7b21-136">Expandera trädet till **Windows-komponenterna**  >  **Microsoft Defender Antivirus**  >  **Scan**.</span><span class="sxs-lookup"><span data-stu-id="a7b21-136">Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Scan**.</span></span>
+
+5. <span data-ttu-id="a7b21-137">Dubbelklicka på inställningen Tillåt **användare att pausa genomsökning** och ange alternativet **Inaktiverad**.</span><span class="sxs-lookup"><span data-stu-id="a7b21-137">Double-click the **Allow users to pause scan** setting and set the option to **Disabled**.</span></span> <span data-ttu-id="a7b21-138">Klicka på **OK**.</span><span class="sxs-lookup"><span data-stu-id="a7b21-138">Click **OK**.</span></span> 
+
+## <a name="related-articles"></a><span data-ttu-id="a7b21-139">Relaterade artiklar</span><span class="sxs-lookup"><span data-stu-id="a7b21-139">Related articles</span></span>
+
+- [<span data-ttu-id="a7b21-140">Konfigurera meddelanden som visas på slutpunkter</span><span class="sxs-lookup"><span data-stu-id="a7b21-140">Configure the notifications that appear on endpoints</span></span>](configure-notifications-microsoft-defender-antivirus.md)
+
+- [<span data-ttu-id="a7b21-141">Konfigurera interaktion med slutanvändare med Microsoft Defender Antivirus</span><span class="sxs-lookup"><span data-stu-id="a7b21-141">Configure end-user interaction with Microsoft Defender Antivirus</span></span>](configure-end-user-interaction-microsoft-defender-antivirus.md)
+
+- [<span data-ttu-id="a7b21-142">Microsoft Defender Antivirus i Windows 10</span><span class="sxs-lookup"><span data-stu-id="a7b21-142">Microsoft Defender Antivirus in Windows 10</span></span>](microsoft-defender-antivirus-in-windows-10.md)
