@@ -20,16 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: 'Lär dig hur du konfigurerar Prioriterad inkorg för alla eller vissa användare i organisationen. '
-ms.openlocfilehash: 7059fbb886669af99c1471789cbbc623dc9719b8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 62a38f911e4e1b878af6489f096f17644e070978
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914288"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644518"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Konfigurera Prioriterad inkorg för alla i organisationen
 
-  Om du är ansvarig för att konfigurera hur e-post fungerar för ALLA i ett företag är den här artikeln för dig! Här förklaras det hur du anpassar eller inaktiverar den för ditt företag och här finns svar på [Vanliga frågor](#faq-for-focused-inbox).  <br/> Om du vill stänga av Prioriterad inkorg bara för dig själv läser du [Stänga av Prioriterad inkorg](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2).  
+Om du är ansvarig för att konfigurera hur e-post fungerar för ALLA i ett företag är den här artikeln för dig! Här förklaras det hur du anpassar eller inaktiverar den för ditt företag och här finns svar på [Vanliga frågor](#faq-for-focused-inbox).
+
+Om du vill stänga av Prioriterad inkorg bara för dig själv läser du [Stänga av Prioriterad inkorg](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2).  
 
 Om du vill se till att dina användare säkert får företagsspecifika e-postmeddelanden, till exempel från personalavdelningen eller löneavdelningen, kan du konfigurera Prioriterad inkorg så att dessa meddelanden hamnar i vyn Prioriterad. Du kan även ange om användarna i organisationen ska se Prioriterad inkorg i Inkorgen eller inte.
   
@@ -37,7 +39,7 @@ Om du vill se till att dina användare säkert får företagsspecifika e-postmed
 
 Du kan använda PowerShell för att aktivera eller inaktivera Prioriterad inkorg för alla i organisationen. Vill du göra detta i administrationscentret för Microsoft 365? Berätta gärna det för vårt tekniska team. **[Rösta här!](https://go.microsoft.com/fwlink/?linkid=862489)**
   
- **Stänga av Prioriterad inkorg**
+**Stänga av Prioriterad inkorg**
   
 I följande PowerShell-exempel **inaktiverar** du Prioriterad inkorg i din organisation. Men funktionens tillgänglighet blockeras inte för användarna. Om de vill kan de fortfarande aktivera Prioriterad inkorg igen på sina egna klienter.  
   
@@ -47,9 +49,9 @@ I följande PowerShell-exempel **inaktiverar** du Prioriterad inkorg i din organ
 
 3. Kör cmdlet **Get-OrganizationConfig**. 
 
- ``` PowerShell
-Get-OrganizationConfig
- ```
+    ```powershell
+    Get-OrganizationConfig
+    ```
 
 4. Leta efter **FocusedInboxOn** för att visa den aktuella inställningen: 
 
@@ -57,20 +59,20 @@ Get-OrganizationConfig
   
 5. Kör följande cmdlet om du vill inaktivera Prioriterad inkorg.
 
- ``` PowerShell
- Set-OrganizationConfig -FocusedInboxOn $false
- ```
+    ```powershell
+    Set-OrganizationConfig -FocusedInboxOn $false
+    ```
 
 6. Kör cmdlet **Get-OrganizationConfig** igen och så ser du att FocusedInboxOn anges till $false, vilket innebär att den har inaktiverats. 
 
- **Aktivera Prioriterad inkorg:**
+**Aktivera Prioriterad inkorg:**
   
 - I steg 5 ovan kör du följande cmdlet om du vill aktivera Prioriterad inkorg.
 
- ``` PowerShell
- Set-OrganizationConfig -FocusedInboxOn $true
- ```
-
+  ```powershell
+  Set-OrganizationConfig -FocusedInboxOn $true
+  ```
+    
 ## <a name="what-do-users-see-after-i-turn-on-focused-inbox"></a>Vad ser användarna ser när jag aktiverar Prioriterad inkorg? 
 
 Användarna kommer att se vyn Prioriterad efter att de stängt och startat om Outlook. När de startar om Outlook visas ett tips i Outlooks gränssnitt som hänvisar till den prioriterade inkorgen. 
@@ -93,9 +95,9 @@ I det här exemplet **inaktiveras** Prioriterad inkorg för Tim Matthews i organ
 
 3. Kör cmdleten **Get-FocusedInbox**, till exempel: 
 
- ``` PowerShell
- Get-FocusedInbox -Identity <tim@contoso.com>
- ```
+    ```powershell
+    Get-FocusedInbox -Identity <tim@contoso.com>
+    ```
 
 4. Leta efter FocusedInboxOn för att visa den aktuella inställningen:
 
@@ -103,15 +105,15 @@ I det här exemplet **inaktiveras** Prioriterad inkorg för Tim Matthews i organ
   
 5. Kör följande cmdlet om du vill inaktivera Prioriterad inkorg:
 
- ``` PowerShell
- Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $false
- ```
+    ```powershell
+    Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $false
+    ```
 
-6. ELLER, kör följande cmdlet om du vill aktivera den:
+    ELLER, kör följande cmdlet om du vill aktivera den:
 
- ``` PowerShell
- Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $true
- ```
+    ```powershell
+    Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $true
+    ```
 
 ## <a name="use-the-ui-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Använda gränssnittet till att skapa en transportregel som dirigerar e-postmeddelanden till vyn Prioriterad för alla användare
 
@@ -125,8 +127,8 @@ I det här exemplet **inaktiveras** Prioriterad inkorg för Tim Matthews i organ
 
     ![prioriterad inkorg löneavdelning](../../media/focusedinbox-transport-rule.PNG)
 
-> [!NOTE]
-> Värdetexten i meddelandehuvudet i det här exemplet är **X-MS-Exchange-Organization-BypassFocusedInbox**.
+    > [!NOTE]
+    > Värdetexten i meddelandehuvudet i det här exemplet är **X-MS-Exchange-Organization-BypassFocusedInbox**.
   
 ## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Använda PowerShell till att skapa en transportregel som dirigerar e-postmeddelanden till vyn Prioriterad för alla användare
 
@@ -136,9 +138,9 @@ I det här exemplet **inaktiveras** Prioriterad inkorg för Tim Matthews i organ
 
 3. Kör följande kommando om du vill skicka alla meddelanden från ”Löneavdelningen” till den prioriterade inkorgen.
 
- ``` PowerShell
- New-TransportRule -Name <name_of_the_rule> -From "Payroll Department" -SetHeaderName "X-MS-Exchange-Organization-BypassFocusedInbox" -SetHeaderValue "true"
- ```
+    ```powershell
+    New-TransportRule -Name <name_of_the_rule> -From "Payroll Department" -SetHeaderName "X-MS-Exchange-Organization-BypassFocusedInbox" -SetHeaderValue "true"
+    ```
 
 > [!IMPORTANT]
 > I det här exemplet är både ”X-MS-Exchange-Organization-BypassFocusedInbox” och ”true” skiftlägeskänsliga.
@@ -147,6 +149,10 @@ I det här exemplet **inaktiveras** Prioriterad inkorg för Tim Matthews i organ
 ### <a name="how-do-you-know-this-worked"></a>Hur vet du att det fungerade?
 
 Du kan kontrollera meddelandehuvudena och se efter om e-post hamnar i Inkorgen på grund av att transportregeln för Prioriterad inkorg kringgås. Välj ett e-postmeddelande i en postlåda i organisationen som transportregeln för Prioriterad inkorg använts för. Om du tittar på meddelandehuvudet ska du se **X-MS-Exchange-Organization-BypassFocusedInbox: true**. Det här innebär att regeln fungerar. Läs mer om att hitta informationen i meddelandehuvudet i [Visa e-postmeddelandehuvud](https://go.microsoft.com/fwlink/p/?LinkId=822530).
+
+### <a name="what-will-the-user-see"></a>Vad visas för användaren?
+
+Om en transportregel finns, visas ett meddelande om åsidosättningen. Outlook på webben inaktiverar "Flytta alltid till Annan" och visar en knappbeskrivning. Outlook-klienter på skrivbordet tillåter val för "Flytta alltid till Annan" och en dialogruta visas.
 
 ## <a name="turn-onoff-clutter"></a>Aktivera/inaktivera Övrig e-post
 
@@ -201,3 +207,4 @@ Det finns två cmdletar för att hantera Prioriterad inkorg. När du kör Get-Fo
 ### <a name="can-i-run-a-script-to-see-who-has-turned-on-focused-inbox"></a>Kan jag se vem som har aktiverat Prioriterad inkorg genom att köra ett skript?
 
 Nej, och det här är avsiktligt. Prioriterad inkorg aktiveras i inställningar på klientsidan, så allt du kan få veta med cmdlet är om användarens postlåda är berättigad till klientversionen. Det är möjligt att den samtidigt är aktiverad i vissa klienter och inaktiverad i andra. Till exempel kan den vara aktiverad i Outlook-appen och i Outlook Mobile men inaktiverad i Outlook på webben.
+

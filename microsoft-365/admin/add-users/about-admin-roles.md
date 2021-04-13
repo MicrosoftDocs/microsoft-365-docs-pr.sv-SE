@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Administratörsroller mappar till affärsfunktioner och ger behörighet att utföra särskilda uppgifter i administrationscentret. Tjänsteadministratören kan till exempel öppna supportbiljetter via administratörscentret.
-ms.openlocfilehash: 8092d199dc6ecfda5d76c9198ba44a72ec7b4d71
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e0155ee9e263d4b62dced0e2bd943781ccf93a4c
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197691"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644261"
 ---
 # <a name="about-admin-roles"></a>Om administratörsroller
 
@@ -80,7 +80,7 @@ Du behöver antagligen bara tilldela följande roller i organisationen. Som stan
 |Licensadministratör    |   Tilldela rollen licensadministratör till användare som behöver tilldela och ta bort licenser från användare och redigera deras användningsplats. <br/><br/> Licensadministratörer kan även: <br> – Omarbeta licensuppdrag för gruppbaserad licensiering <br> – Tilldela produktlicenser till grupper för gruppbaserad licensiering  |
 |Administratör för Office-program    |   Tilldela rollen som administratör för Office-program till användare som behöver göra följande: <br> – Använda tjänsten för molnprinciper i Office för att skapa och hantera molnbaserade principer för Office <br> – Skapa och hantera tjänsteförfrågningar <br> – Hantera nyhetsinnehållet som användarna ser i sina Office-program   <br> – Övervaka tjänstens status  |
 |Lösenordsadministratör  |   Tilldela rollen lösenordsadministratör till en användare som behöver återställa lösenord för icke-administratörer och lösenordsadministratörer.   |
-|Supportadministratör för tjänst   |   Tilldela supportadministratörsrollen för tjänster som en ytterligare roll för administratörer och användare som måste göra följande utöver deras vanliga administratörsroll: <br> – Öppna och hantera tjänsteförfrågningar <br> – Visa och dela inlägg från meddelandecenter   |
+|Supportadministratör för tjänst   |   Tilldela supportadministratörsrollen för tjänster som en ytterligare roll för administratörer och användare som måste göra följande utöver deras vanliga administratörsroll: <br> – Öppna och hantera tjänsteförfrågningar <br> – Visa och dela inlägg från meddelandecenter <br> – Övervaka tjänstens status   |
 |SharePoint-administratör    |   Tilldela SharePoint-administratörsrollen till användare som behöver åtkomst till och behöver hantera administrationscentret för SharePoint Online. <br><br>SharePoint-administratörer kan även: <br> – Skapa och ta bort webbplatser <br> – Hantera webbplatssamlingar och globala SharePoint-inställningar   |
 |Teams-tjänstadministratör    |   Tilldela Teams-tjänstadministratörsrollen till användare som behöver åtkomst till och behöver hantera administrationscentret för Teams. <br><br>Teams-tjänstadministratörer kan också: <br> – Hantera möten <br> – Hantera konferensbryggor <br> – Hantera alla organisationsomfattande inställningar, inklusive inställningar för federation, team-uppgradering och team-klienter   |
 |Användaradministratör     |    Tilldela rollen som användaradministratör till användare som behöver göra följande för alla användare: <br> – Lägga till användare och grupper <br> – Tilldela licenser <br> – Hantera de flesta användaregenskaper <br> – Skapa och hantera användarvyer <br> – Uppdatera giltighetsprinciper för lösenord <br> – Hantera tjänsteförfrågningar <br> – Övervaka tjänstens status <br><br>  Användaradministratören kan också utföra följande åtgärder för användare som inte är administratörer och för användare som har tilldelats följande roller: katalogläsare, gästinbjudare, supportadministratör, meddelandecenter-administratör, rapportläsare: <br> – Hantera användarnamn<br> – Ta bort och återställa användare<br> – Återställa lösenord <br> – Tvinga att användare loggar ut <br> – Uppdatera enhetsnycklar (FIDO)   |

@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Hantera feedback som dina användare kan skicka till Microsoft om Microsoft-produkter.
-ms.openlocfilehash: c92adec1689d6f0c46b03ae4f46c567f054b6457
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 490081ace32203d015ee8cf3561ccf0ae978bace
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650022"
+ms.locfileid: "51657013"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Hantera Microsoft-feedback för din organisation
 
-Som administratör för en Microsoft 365-organisation finns det nu flera principer som hjälper dig att hantera feedbackinsamlingen och kundens engagemang för användarna när de använder Microsoft 365-program. Du kan skapa och använda befintliga Azure Active Directory-grupper i organisationen för var och en av dessa principer. Med de här enheterna kan du styra hur olika avdelningar i organisationen kan skicka feedback till Microsoft. Microsoft granskar all feedback som skickats in av kunder och använder denna feedback för att förbättra produkten. Om du låter **feedbackupplevelsen vara** påslagen kan du se vad användarna säger om de Microsoft-produkter de använder. Den feedback vi samlar in från dina användare blir snart tillgänglig i administrationscentret för Microsoft 365."
+Som administratör för en Microsoft 365-organisation finns det nu flera principer som hjälper dig att hantera feedbackinsamlingen och kundens engagemang för användarna när de använder Microsoft 365-program. Du kan skapa och använda befintliga Azure Active Directory-grupper i organisationen för var och en av dessa principer. Med de här enheterna kan du styra hur olika avdelningar i organisationen kan skicka feedback till Microsoft. Microsoft granskar all feedback som skickats in av kunder och använder denna feedback för att förbättra produkten. Om du låter **feedbackupplevelsen vara** påslagen kan du se vad användarna säger om de Microsoft-produkter de använder. Den feedback vi samlar in från dina användare kommer snart att finnas tillgänglig i administrationscentret för Microsoft 365.
 
 Mer information om typer av feedback och hur Microsoft använder feedback från användare finns i [Läs mer om Microsoft-feedback för din organisation.](../misc/feedback-user-control.md)
 

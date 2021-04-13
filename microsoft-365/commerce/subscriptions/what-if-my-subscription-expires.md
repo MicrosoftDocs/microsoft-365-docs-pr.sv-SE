@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Läs om vad som händer med dina data när prenumerationen för Microsoft 365 för företag förfaller, inaktiveras eller om du avbryter den.
-ms.openlocfilehash: ee83e237d17dc2de60b08b8d4dbdc46c98fc8251
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 8f853000ebd20ab8f6625df9f773bbb182bdb7fd
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615405"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644662"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Vad händer med mina data och åtkomst när prenumerationen för Microsoft 365 för företag går ut?
 
@@ -68,6 +68,9 @@ Information om hur du avbryter prenumerationen finns i [Avbryt prenumeration](ca
 > [!IMPORTANT]
 > Om du vill att dina prenumerationsdata ska raderas innan det typiska tillståndet Inaktiverad är slut kan du [stänga ditt konto](../close-your-account.md).
   
+> [!NOTE]
+> Om du tar bort en prenumeration försvinner utgångna och inaktiverade faser så tas data och innehåll i SharePoint Online, inklusive OneDrive, bort omedelbart.
+
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>Vilka alternativ har jag när min prenumeration är på väg att förfalla?
 
 När en prenumeration är aktiv har du och slutanvändarna normal åtkomst till dina data, tjänster som e-post, OneDrive för företag och Office-program. Som administratör får du ett antal aviseringar via e-post och i administrationscentret när prenumerationen närmar sig förfallodatumet.
