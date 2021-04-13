@@ -18,21 +18,21 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 888bffdb85adeb7af58504439c1c31c7232cd73b
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 754f389f37bce3be1c5a636f1911b5d0fb3fd29c
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187631"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689623"
 ---
-# <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-for-mac"></a>Felsöka installationsproblem för Microsoft Defender för Slutpunkt för Mac
+# <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Felsöka installationsproblem för Microsoft Defender för slutpunkt i macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Gäller för:**
 
-- [Microsoft Defender för Slutpunkt för Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender för Slutpunkt på macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 

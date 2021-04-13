@@ -22,12 +22,12 @@ localization_priority: Priority
 description: Administratörer kan läsa mer om de skydd mot förfalskning som finns tillgängliga i Exchange Online Protection (EOP) och som kan hjälpa dig att minska riskerna för nätfiske från falska avsändare och domäner.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 746b00c7fbf1a90f8bda56c1ba031777f6dee409
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 54b94e2d2cc0395ce7a9785887c253df3addf7fa
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408617"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688783"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Skydd mot förfalskning i EOP
 
@@ -122,7 +122,8 @@ Microsoft skiljer mellan två olika typer av falska meddelanden:
 
   - SFTY är meddelandets säkerhetsnivå. 9 anger nätfiske, .22 anger förfalskning mellan domäner.
 
-Mer information om värdena för kategori och sammansatt autentisering (compauth) som är relaterade till förfalskning finns i [Meddelandehuvuden för antiskräppost i Microsoft 365](anti-spam-message-headers.md).
+> [!NOTE]
+> Om du har fått ett meddelande som ***compauth=fail reason=###** _ och behöver veta om sammansatt autentisering (compauth) och värdena relaterade till förfalskning kan du läsa mer under meddelanderubriker för [_Anti-skräppost i Microsoft 365*](anti-spam-message-headers.md). Eller gå direkt till koderna för [*orsak*](anti-spam-message-headers.md).
 
 Mer information om DMARC finns i [Använda DMARC för att validera e-post i Microsoft 365](use-dmarc-to-validate-email.md).
 

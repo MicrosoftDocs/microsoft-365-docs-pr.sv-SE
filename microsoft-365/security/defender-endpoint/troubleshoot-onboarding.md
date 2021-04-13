@@ -1,6 +1,6 @@
 ---
-title: Felsöka problem med Introduktion till Microsoft Defender ATP
-description: Felsöka problem som kan uppstå under registrering av enheter eller i Microsoft Defender ATP-tjänsten.
+title: Felsöka problem med Introduktion till Slutpunkt för Microsoft Defender
+description: Felsöka problem som kan uppstå under registrering av enheter eller i Microsoft Defender för slutpunktstjänsten.
 keywords: felsöka onboarding, onboarding-problem, händelsevisning, datainsamling och förhandsversioner, sensordata och diagnostik
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 3b2c944cd7fc9d629b47947db9d6e8856729e0d7
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4599741f501e9b55bc73e0eb8def9208bc988957
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51074065"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689671"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Felsöka problem med Introduktion till Slutpunkt för Microsoft Defender
 
@@ -306,7 +306,7 @@ Om du stöter på problem vid registrering av en server går du igenom följande
 
 Du kan också behöva kontrollera följande:
 
-- Kontrollera att microsoft Defender för slutpunktstjänsten körs på fliken **Processer** i **Aktivitetshanteraren.** Ett exempel:
+- Kontrollera att microsoft Defender för slutpunktstjänsten körs på fliken **Processer** i **Aktivitetshanteraren.** Till exempel:
 
     ![Bild av processvyn med Microsoft Defender för slutpunktstjänsten igång](images/atp-task-manager.png)
 
@@ -455,6 +455,6 @@ Anvisningarna nedan ger vägledning för följande scenario:
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [Felsöka Microsoft Defender för Slutpunkt](troubleshoot-mdatp.md)
+- [Felsöka Microsoft Defender för Endpoint](troubleshoot-mdatp.md)
 - [Onboard-enheter](onboard-configure.md)
 - [Konfigurera enhetsproxy och internetanslutningsinställningar](configure-proxy-internet.md)

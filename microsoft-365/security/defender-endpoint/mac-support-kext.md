@@ -1,6 +1,6 @@
 ---
-title: Felsöka problem med kernel-tillägg i Microsoft Defender för Slutpunkt för Mac
-description: Felsöka problem med kernel-tillägg i Microsoft Defender för Slutpunkt för Mac.
+title: Felsöka problem med kernel-tillägg i Microsoft Defender för Slutpunkt i macOS
+description: Felsöka kernel-tilläggsproblem i Microsoft Defender för Slutpunkt i macOS.
 keywords: microsoft, defender, atp, mac, kernel, tillägg
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,31 +18,31 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 877cc619d3ba048cdf6ecc8149f073461d9eac8e
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 32a4819f7a607c69b4dbf45b3284b2f4ea66ffc4
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379522"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689659"
 ---
-# <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-for-mac"></a>Felsöka problem med kernel-tillägg i Microsoft Defender för Slutpunkt för Mac
+# <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>Felsöka problem med kernel-tillägg i Microsoft Defender för Slutpunkt i macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Gäller för:**
 
-- [Microsoft Defender för Slutpunkt för Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender för Slutpunkt på macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Den här artikeln innehåller information om hur du felsöker problem med kerneltillägget som installeras som en del av Microsoft Defender för Slutpunkt för Mac.
+Den här artikeln innehåller information om hur du felsöker problem med kerneltillägget som installeras som en del av Microsoft Defender för slutpunkten i macOS.
 
 Från och med macOS High Sierra (10.13) kräver macOS att alla kernel-tillägg uttryckligen godkänns innan de får köras på enheten.
 
-Om du inte godkänna kernel-tillägget under distributionen/installationen av Microsoft Defender för Slutpunkt för Mac visas en banderoll i programmet där du uppmanas att aktivera det:
+Om du inte godkänna kernel-tillägget under distributionen/installationen av Microsoft Defender för Slutpunkt i macOS visas en banderoll i programmet där du uppmanas att aktivera det:
 
    ![Skärmbild som är inaktiverad av RTP](images/mdatp-32-main-app-fix.png)
 
@@ -58,7 +58,7 @@ real_time_protection_available              : true
 ...
 ```
 
-I följande avsnitt finns anvisningar om hur du kan åtgärda problemet, beroende på vilken metod du använde för att distribuera Microsoft Defender för Endpoint för Mac.
+I följande avsnitt finns anvisningar om hur du kan åtgärda problemet, beroende på vilken metod du använde för att distribuera Microsoft Defender för slutpunkt i macOS.
 
 ## <a name="managed-deployment"></a>Hanterad distribution
 

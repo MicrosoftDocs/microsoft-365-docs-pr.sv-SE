@@ -18,12 +18,12 @@ description: Administratörer kan lära sig mer om de fält som läggs till i me
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04b98ad6b1ca136429395dfd1636b43bbbc6878a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 469f28acb40017f3d431e3545c81877126f50c18
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207516"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688459"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Meddelandehuvuden för antiskräppost i Microsoft 365
 
@@ -74,7 +74,7 @@ De enskilda fälten och värdena beskrivs i följande tabell.
 |`LANG`|Det språk på vilket meddelandet skrevs, specificerat av landskoden (till exempel ru_RU för ryska).|
 |`PTR:[ReverseDNS]`|PTR-posten (även kallad omvänd DNS-sökning) för källans IP-adress.|
 |`SCL`|Meddelandets SCL (Spam Confidence Level). Ett högre värde innebär att det är mer troligt att meddelandet är skräppost. Mer information finns i [Konfidensnivå för skräppost (SCL)](spam-confidence-levels.md).|
-|`SFTY`|Meddelandet identifierades som phishing och kommer att markeras med något av följande värden: <ul><li>9.1: Standardvärde. Meddelandet innehåller några eller alla av följande element: en nät fiske webb adress, ett annat phishing-innehåll eller har marker ATS som nätfiske via lokalt Exchange.</li><li>9.11: [intra-org eller inom organisationen](anti-spoofing-protection.md#different-types-of-spoofing). Säkerhetstipset för förfalskningar inom organisationen läggs till i meddelandet.</li><li>9.19: Domänimitation. Den sändande domänen försöker [imitera en skyddad domän](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). Säkerhetstipset för domänskydd läggs till i meddelandet (om det är aktiverat).</li><li>9.20: Användarimitation. Den sändande användaren försöker imitera en användare i mottagarens organisation eller en skyddad användare som anges i en skyddprincip i Microsoft Defender för Office 365. Säkerhetstipset för användarefersonlighet läggs till i meddelandet (om det är aktiverat).</li><li>9.21: [Förfalskning mellan domäner](anti-spoofing-protection.md#different-types-of-spoofing). Meddelandet misslyckade skydd mot förfalskning. Avsändarens e-postdomän i från-huvudet verifierar inte och är en extern domän. Används i kombination med [sammansatt autentisering](#authentication-results-message-header-fields).</li><li>9.22: Samma som 9.21, förutom att användaren har en säker avsändare som har åsidosatts.</li><li>9.23: Samma som 9.22, förutom att organisationen har en betrodd användare eller domän som har åsidosatts.</li><li>9.24: Samma som 9.23, förutom att användaren har en Exchange-dataflödesregel (även känt som en transportregel) som har åsidosatts.</li></ul>|
+|`SFTY`|Meddelandet identifierades som phishing och kommer att markeras med något av följande värden: <ul><li>9.19: Domänimitation. Den sändande domänen försöker [imitera en skyddad domän](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). Säkerhetstipset för domänskydd läggs till i meddelandet (om det är aktiverat).</li><li>9.20: Användarimitation. Den sändande användaren försöker imitera en användare i mottagarens organisation eller [en skyddad användare som anges i en princip mot nätfiske](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) i Microsoft Defender för Office 365. Säkerhetstipset för användarimitationen läggs till i meddelandet (om det är aktiverat).</li></ul>|
 |`SFV:BLK`|Filtreringen hoppades över och meddelandet blockerades eftersom det skickades från en adress i en användares lista med spärrade avsändare. <p> Mer information om hur administratörer kan hantera användarens lista med blockerade avsändare finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor](configure-junk-email-settings-on-exo-mailboxes.md).|
 |`SFV:NSPM`|Meddelandet har markerats som icke skräppost av skräppostfiltret och det har skickats till avsedda mottagare.|
 |`SFV:SFE`|Filtreringen hoppades över och meddelandet tilläts eftersom det skickades från en adress i en användares listan Betrodda avsändare. <p> Mer information om hur administratörer kan hantera användarens lista med säkra avsändare finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor](configure-junk-email-settings-on-exo-mailboxes.md).|

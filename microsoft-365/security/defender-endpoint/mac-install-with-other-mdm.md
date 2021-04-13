@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5fa811b2419d107e91b301d5c9bad691fc016b5b
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 58e3b14dcb80db961f01b92f038ce4d32da7e2e8
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498968"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689713"
 ---
-# <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-for-mac"></a>Distribution med ett annat MDM-system (Mobile Device Management) för Microsoft Defender för Endpoint för Mac
+# <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>Distribution med ett annat MDM-system (Mobile Device Management) för Microsoft Defender för Slutpunkt i macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,16 +38,16 @@ ms.locfileid: "51498968"
  
 ## <a name="prerequisites-and-system-requirements"></a>Krav och systemkrav
 
-Innan du börjar kan du gå [till huvudsidan för Microsoft Defender](microsoft-defender-endpoint-mac.md) för Slutpunkt för Mac för att få en beskrivning av förutsättningarna och systemkraven för den aktuella programvaruversionen.
+Innan du börjar kan du gå [till huvudsidan för Microsoft Defender](microsoft-defender-endpoint-mac.md) för Slutpunkt på macOS för att få en beskrivning av förutsättningarna och systemkraven för den aktuella programvaruversionen.
 
 ## <a name="approach"></a>Metod
 
 > [!CAUTION]
-> För närvarande har Microsoft officiellt endast stöd för Intune och JAMF för distribution och hantering av Microsoft Defender för Endpoint för Mac. Microsoft ger inga garantier, uttryckliga eller underförstådda, med avseende på den information som anges nedan.
+> För närvarande har Microsoft officiellt endast stöd för Intune och JAMF för distribution och hantering av Microsoft Defender för Endpoint på macOS. Microsoft ger inga garantier, uttryckliga eller underförstådda, med avseende på den information som anges nedan.
 
-Om din organisation använder en MDM-lösning (Mobile Device Management) som inte stöds officiellt betyder det inte att du inte kan distribuera eller köra Microsoft Defender för Endpoint för Mac.
+Om din organisation använder en MDM-lösning (Mobile Device Management) som inte stöds officiellt betyder det inte att du inte kan distribuera eller köra Microsoft Defender för slutpunkt på macOS.
 
-Microsoft Defender för Slutpunkt för Mac är inte beroende av några leverantörsspecifika funktioner. Den kan användas med alla MDM-lösningar som har stöd för följande funktioner:
+Microsoft Defender för Slutpunkt på macOS är inte beroende av några leverantörsspecifika funktioner. Den kan användas med alla MDM-lösningar som har stöd för följande funktioner:
 
 - Distribuera en .pkg för macOS till hanterade enheter.
 - Distribuera macOS-systemkonfigurationsprofiler till hanterade enheter.
@@ -72,7 +72,7 @@ Följ instruktionerna som är kopplade till din MDM-lösning för att distribuer
 
 ### <a name="license-settings"></a>Licensinställningar
 
-Konfigurera en [systemkonfigurationsprofil](mac-install-with-jamf.md). Din MDM-lösning kan kalla den något i"anpassad inställningsprofil", eftersom Microsoft Defender för Endpoint för Mac inte är en del av macOS.
+Konfigurera en [systemkonfigurationsprofil](mac-install-with-jamf.md). Din MDM-lösning kan kalla den något liknande "Profil för anpassade inställningar", eftersom Microsoft Defender för Slutpunkt på macOS inte är en del av macOS.
 
 Använd egenskapslistan, jamf/WindowsDefenderATPOnboarding.plist, som kan extraheras från ett onboarding-paket som laddas ned från [Microsoft Defender Säkerhetscenter.](mac-install-with-jamf.md)
 Systemet kan ha stöd för en lista med godtyckliga egenskaper i XML-format. Du kan ladda upp filen jamf/WindowsDefenderATPOnboarding.plist som den är i så fall.
@@ -112,7 +112,7 @@ Bevilja fullständig diskåtkomst till följande komponenter:
 
 ### <a name="network-extension-policy"></a>Princip för nätverkstillägg
 
-Som en del av funktionerna Identifiering av slutpunkt och svar inspekterar Microsoft Defender för Slutpunkt för Mac sockettrafik och rapporterar den här informationen till Microsoft Defender Säkerhetscenter-portalen. Med följande princip kan nätverkstillägget utföra de här funktionerna.
+Som en del av funktionerna Identifiering och svar av slutpunkt inspekterar Microsoft Defender för slutpunkt på macOS sockettrafik och rapporterar den här informationen till Microsoft Defender Säkerhetscenter-portalen. Med följande princip kan nätverkstillägget utföra de här funktionerna.
 
 - Filtertyp: Plugin-program
 - Identifierare för plugin-paket: `com.microsoft.wdav`
