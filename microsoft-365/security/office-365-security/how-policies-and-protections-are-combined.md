@@ -17,12 +17,12 @@ ms.custom:
 description: Administratörer kan läsa mer om ordningen för programskydd i Exchange Online Protection (EOP) och hur prioritetsvärdet i skyddsprinciperna avgör vilken princip som används.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3419cba5781e7ab1042f7312c721069d88fb8767
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b36e66f095ff81f551a55d2dc2af0693f8b3455a
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687655"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51769016"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordning och prioritet för e-postskydd
 
@@ -41,6 +41,8 @@ Det finns två viktiga faktorer som avgör vilken princip som ska tillämpas på
 
 - **Prioriteten för e-postskyddstypen:** Den här ordningen kan inte konfigureras och beskrivs i följande tabell:
 
+  <br>
+
   ****
 
   |Priority|E-postskydd|Kategori|Här kan du hantera|
@@ -57,19 +59,21 @@ Det finns två viktiga faktorer som avgör vilken princip som ska tillämpas på
 
   <sup>\*</sup> De här funktionerna är endast tillgängliga i principer för skydd mot nätfiske i Microsoft Defender för Office 365.
 
-- **Prioriteten** för principen: För varje skyddstyp (skydd mot skräppost, skadlig programvara, nätfiske och så vidare) finns det en standardprincip som gäller för alla, men du kan skapa anpassade principer som gäller för specifika användare. Varje anpassad princip har ett prioritetsvärde som bestämmer i vilken ordning principerna ska tillämpas. Standardprincipen används alltid sist.
+- **Prioriteten** för principen: För varje typ av policy (skydd mot skräppost, skadlig programvara, skydd mot nätfiske osv.) finns det en standardprincip som gäller för alla, men du kan skapa anpassade principer som gäller för specifika användare. Varje anpassad princip har ett prioritetsvärde som bestämmer i vilken ordning principerna ska tillämpas. Standardprincipen används alltid sist.
 
   Om en användare har definierats i flera principer av samma typ tillämpas endast principen med högst prioritet på dem. Eventuella återstående principer av den typen utvärderas inte för användaren (inklusive standardprincipen).
 
 Tänk på följande principer mot nätfiske i Microsoft Defender för Office 365 som gäller för samma användare och ett meddelande som identifieras som både personifiering och förfalskning:
 
-  ****
+<br>
 
-  |Principnamn|Priority|Personifiering av användare|Förfalskningsskydd|
-  |---|---|---|---|
-  |Princip A|1|På|Av|
-  |Policy B|2|Av|På|
-  |
+****
+
+|Principnamn|Priority|Personifiering av användare|Förfalskningsskydd|
+|---|---|---|---|
+|Princip A|1|På|Av|
+|Policy B|2|Av|På|
+|
 
 1. Meddelandet markeras och behandlas som förfalskning, eftersom förfalskning har högre prioritet (4) än användarpersonifiering (5).
 2. Princip A tillämpas på användarna eftersom den har högre prioritet än princip B.

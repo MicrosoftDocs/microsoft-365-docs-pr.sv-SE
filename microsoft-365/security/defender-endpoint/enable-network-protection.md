@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a513013c4b5f41cf95b876648882cb56ba818b32
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 5c7a2d943ec1813623065e70330b914a3911d1eb
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51571002"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51769004"
 ---
 # <a name="turn-on-network-protection"></a>Aktivera nätverksskydd
 
@@ -28,20 +28,24 @@ ms.locfileid: "51571002"
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> [!TIP]
+> Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [Nätverksskydd](network-protection.md) förhindrar anställda från att använda ett program för att komma åt skadliga domäner som kan vara värdar för nätfiske, sårbarheter och annat skadligt innehåll på Internet. Du kan [granska nätverksskyddet](evaluate-network-protection.md) i en testmiljö för att se vilka appar som blockeras innan du aktiverar det.
 
-[Läs mer om konfigurationsalternativ för nätverksfiltrering](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
+[Läs mer om konfigurationsalternativ för nätverksfiltrering](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
 
 ## <a name="check-if-network-protection-is-enabled"></a>Kontrollera om nätverksskyddet är aktiverat
 
 Kontrollera om nätverksskyddet har aktiverats på en lokal enhet med registereditorn.
 
 1. Välj knappen **Start** i aktivitetsfältet och skriv **regedit för** att öppna Registereditorn
-1. Välj **HKEY_LOCAL_MACHINE** i sidomenyn
-1. Navigera genom de kapslade menyerna **till**  >  **PROGRAMVARUprinciper**  >  **Microsoft**  >  **Windows Defender** Windows Defender Exploit  >  **Guard**  >  **Network Protection**
-1. Välj **EnableNetworkProtection** för att se aktuell status för nätverksskydd på enheten
+
+2. Välj **HKEY_LOCAL_MACHINE** i sidomenyn
+
+3. Navigera genom de kapslade menyerna **till**  >  **PROGRAMVARUprinciper**  >  **Microsoft**  >  **Windows Defender** Windows Defender Exploit  >  **Guard**  >  **Network Protection**
+
+4. Välj **EnableNetworkProtection** för att se aktuell status för nätverksskydd på enheten
 
     * 0 eller **Av**
     * 1 eller **På**
@@ -83,9 +87,9 @@ Använd [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection-konfigurat
 
 1. Logga in i administrationscentret för Microsoft Endpoint Manager (https://endpoint.microsoft.com)
 
-2. Skapa eller redigera en [konfigurationsprofil för slutpunktsskydd](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-configure)
+2. Skapa eller redigera en [konfigurationsprofil för slutpunktsskydd](/mem/intune/protect/endpoint-protection-configure)
 
-3. Under "Konfigurationsinställningar" i profilflödet går du till **Microsoft Defender Sårbarhetsskydd**  >  **nätverksfiltrering**  >    >  **Aktivera eller** Granska **endast**
+3. Under **Konfigurationsinställningar** i profilflödet går du till **Microsoft Defender Sårbarhetsskydd**  >  **nätverksfiltrering**  >  **Aktivera**  >  **eller** **Granska endast**
 
 ### <a name="group-policy"></a>Grupprincip
 
@@ -116,7 +120,7 @@ Kontrollera att nätverksskyddet är aktiverat på en lokal dator med hjälp av 
 
 1. Välj **Start** och skriv **regedit för** att öppna **Registereditorn.**
 
-2. Gå till **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection**
+2. Gå till **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\EnableNetworkProtection**
 
 3. Välj **EnableNetworkProtection** och bekräfta värdet:
    * 0=Av

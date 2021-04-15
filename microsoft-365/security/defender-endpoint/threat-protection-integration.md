@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 287ad9adeccd527b756bdd5304d3c89fc1b2d789
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7d12afd27288655f4f5a82eeed24686f27171a7a
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076490"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765401"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender för Endpoint och andra Microsoft-lösningar
 
@@ -45,9 +45,9 @@ Microsoft Defender för Endpoint tillhandahåller en omfattande lösning för se
 Med Microsoft Defender för slutpunktskopplingen kan du strömma aviseringar från Microsoft Defender för Slutpunkt till Azure Sentinel. På så sätt kan du mer omfattande analysera säkerhetshändelser i organisationen och skapa spelböcker för effektiva och omedelbart svar.
 
 ### <a name="azure-information-protection"></a>Azure Information Protection
-Skydda känsliga data samtidigt som du aktiverar produktiviteten på arbetsplatsen genom dataidentifiering och dataskydd.
+Vi tog nyligen bort Azure Information Protection-integreringen eftersom våra Endpoint DLP-funktioner införlivar en förbättrad lösning för identifiering och skydd av känsliga data som lagras på slutpunktsenheter som underlättar bättre synlighet och integrering mellan lösningar. Det här meddelades i följande [blogg](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protecting-sensitive-information-on-devices/ba-p/2143555). Vi rekommenderar att kunder flyttar över till att använda Slutpunkt DLP.
 
-### <a name="conditional-access"></a>Med villkorsstyrd åtkomst
+### <a name="conditional-access"></a>Villkorsstyrd åtkomst
 Microsoft Defender för Endpoints riskpoäng för dynamiska enheter integreras i utvärderingen av villkorsstyrd åtkomst och säkerställer att endast säkra enheter har åtkomst till resurser. 
 
 ### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security

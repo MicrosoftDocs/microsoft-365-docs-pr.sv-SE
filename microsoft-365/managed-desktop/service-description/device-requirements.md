@@ -1,7 +1,7 @@
 ---
 title: Enhetskrav
 description: Sammanfattning av de lägsta maskin- och programvarukraven för att enheter ska fungera med Microsoft Managed Desktop
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 18422f74d87bbadf014de24849235ce5c25bd614
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: baaebd185389e7ac1f2173aed092141067a5629f
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920474"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768896"
 ---
 # <a name="device-requirements"></a>Enhetskrav
 
@@ -46,7 +46,7 @@ Enheten måste ha gjorts av någon av dessa tillverkare:
 Enheten måste ha den här programvaran förinstallerad:
 
 - Windows 10 Enterprise, Pro eller Pro Arbetsstation
-- 64-bitarsversionen av Microsoft Office Klicka-och-kör 
+- 64-bitarsversionen av Microsoft 365-appar för företag 
 - Alla tillämpliga drivrutiner
 
 
@@ -57,7 +57,7 @@ Enheter måste ha följande funktioner:
 - Aktiverad för säker UEFI-uppstart 
 - Trusted Platform Module 2.0 
 - Klarar virtualiseringsbaserad säkerhet 
-- Stöder Hypervisor-skyddad kodintegritet 
+- [Hypervisorskyddad kodintegritet](/windows-hardware/drivers/bringup/device-guard-and-credential-guard) som stöds av TIDE
 
 Mer information om dessa funktioner och tekniker som är relaterade till dem som används i tjänsten finns i [Microsoft Managed Desktop-tekniker.](../intro/technologies.md)
 
@@ -72,12 +72,13 @@ Enheter bör uppfylla eller överskrida följande begränsningar för lagring oc
 
 Om enheten gjordes efter 1 juli 2020 bör den också ha en IR-kamera, fingeravtrycksläsare eller båda, för att stödja [Windows Hello.](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
 
-## <a name="recommended-requirements"></a>Rekommenderade krav
+## <a name="recommended-features"></a>Rekommenderade funktioner
 
-Även om de inte är absolut krav, kommer dina användare att ha en mycket bättre upplevelse om du väljer enheter som har dessa funktioner:
+Användarna får en mycket bättre upplevelse om du väljer enheter som har följande funktioner:
 
 - Antingen en Intel vPro-processor eller en AMD Ryzen Pro-processor
 - Startenhet av SSD-typ med en kapacitet på minst 256 GB
+- Internt enhetsminne (RAM) på minst 16 GB
 - Stöd för modern vänteläge
 - Enheten är av skyddad datortyp
 - Stöder Kernel DMA Protection

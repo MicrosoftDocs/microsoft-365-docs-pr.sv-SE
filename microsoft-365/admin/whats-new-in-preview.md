@@ -21,12 +21,12 @@ description: Administrationscentret för Microsoft 365 – läs mer om de funkti
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 7b802556e051200bf39bc4bd9b97974d4d2d4c47
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 0c17c6840d73c5b0a2714c6c6a832c154e2a9640
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222009"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768727"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Vad är nytt i administrationscentret för Microsoft 365
 
@@ -50,6 +50,27 @@ Och om du vill veta vad som är nytt i andra Microsoft-molntjänster:
 - [Office-uppdateringar](/OfficeUpdates/)
 - [Kontrollera släpp-hälsohälsan för Windows](https://docs.microsoft.com/windows/deployment/update/check-release-health)
 
+## <a name="april-2021"></a>April 2021
+
+### <a name="admin-mobile-app"></a>Mobilapp för administratörer
+
+### <a name="manage-licenses-and-bills-from-the-admin-mobile-app"></a>Hantera licenser och fakturor från Admin-mobilappen
+
+- Nu kan du visa alla tillgängliga och tilldelade licenser för dina prenumerationer. Du kan också tilldela eller ta bort licenser för användare och lägga till eller ta bort licenser.
+- Nu kan du visa detaljerade fakturor i appen.
+- Dessa uppdateringar är tillgängliga på både [Android-](https://go.microsoft.com/fwlink/p/?linkid=2159786) och [iOS-enheter.](https://go.microsoft.com/fwlink/p/?linkid=2159787)
+
+:::image type="content" source="../media/assign-license-mobile-app2.png" alt-text="Skärmbild: Sidan Tilldela licens för mobilapp för administratör":::
+:::image type="content" source="../media/license-screen-mobile-app2.png" alt-text="Skärmbild: Admin-mobilappsskärmen med användare och deras licenser":::
+:::image type="content" source="../media/invoice-summary-mobile-app.png" alt-text="Skärmbild: Fakturasammanfattningssida för mobilappen för administratör":::
+
+### <a name="updated-message-center-feed-in-the-admin-mobile-app"></a>Feed för meddelandecenter uppdaterad i Admin-mobilappen
+
+- Nu har du en mer flexibel läsupplevelse i feeden i Meddelandecenter. Du har nu möjlighet att filtrera meddelanden baserat på tjänst eller taggar och markera meddelanden som favorit. Massåtgärder för att markera meddelanden som lästa, olästa eller arkiverade har också lagts till.
+- Dessa uppdateringar är tillgängliga på både [Android-](https://go.microsoft.com/fwlink/p/?linkid=2159786) och [iOS-enheter.](https://go.microsoft.com/fwlink/p/?linkid=2159787)
+
+:::image type="content" source="../media/mc-feed-mobile-app.png" alt-text="Skärmbild: Feedsida för administrations-mobilappen – Feed i Meddelandecenter":::
+
 ## <a name="ignite-2021-march"></a>Ignite 2021 (mars)
 
 Välkommen till Microsoft Ignite. Vi hoppas att du kunde delta i några av våra sessioner: [Microsoft Ignite 2021](https://myignite.microsoft.com/sessions). Här är några av de saker vi har pratat om på Ignite.
@@ -66,7 +87,7 @@ Mer information om de nya funktionerna finns i Hantera [meddelanden i Meddelande
 
 ### <a name="whats-new-features"></a>Nya funktioner
 
-Vi har gjort förbättringar av hur du ser funktionerna "Nya" för användare i Office-apparna. Nu kan du se det omfattande innehållet i det nya fönstret Vad är det som användarna kan se. Du kan också läsa mer om funktionen innan du bestämmer dig för att låta användarna veta om funktionen. For more info, check out [Manage which Office‎ features appear in What's New](manage/show-hide-new-features.md).
+Vi har gjort förbättringar av hur du ser funktionerna "Nya" för användare i Office-apparna. Nu kan du se det omfattande innehållet i det nya fönstret Vad är det som användarna kan se. Du kan också läsa mer om funktionen innan du bestämmer dig för att låta användarna veta om funktionen. Mer information finns i Hantera [vilka Office-funktioner som visas i Nyheter.](manage/show-hide-new-features.md)
 
 :::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Skärmbild: Office-program – en ny sida med förbättringar i Power BI":::
 
@@ -206,7 +227,7 @@ Vad är nytt i [Microsoft 365-videoserien:](https://youtu.be/m1Nu8WJgCDY) Den h�
 
 ### <a name="keeping-up-with-office-whats-new-management"></a>Hålla dig ajour med den nya hanteringen i Office
 
-För några månader sedan lade vi till en inställning som låter dig hantera meddelandena Vad är nytt som visas i en [användares Office-appar.](#office-whats-new-management) Den här månaden släppte vi ett nytt startsidaskort som  hjälper dig att agera snabbt och hålla reda på meddelanden om Vad är nytt som du vill visa för användarna i organisationen.
+För några månader sedan lade vi till en inställning som låter dig hantera meddelandena Vad är nytt som visas i en användares Office-program. Den här månaden släppte vi ett nytt startsidaskort som  hjälper dig att agera snabbt och hålla reda på meddelanden om Vad är nytt som du vill visa för användarna i organisationen.
 
 ### <a name="docs-training-and-videos-june"></a>Dokument, utbildning och videor (juni)
 
@@ -398,46 +419,3 @@ Några ändringar i gruppområdet den här månaden:
 - Nyheter i **Microsoft 365-videoserien:** Den här månaden fokuserar vi på anpassade sökfunktioner för SharePoint Online, hanteringsfunktionen Nyheter i Office som gör att du kan visa och dölja specifika funktioner för slutanvändare via hjälpfönstret i programmet, de senaste säkerhets- och efterlevnadsuppdateringarna i Yammer med mera. Här är det senaste avsnittet: [Nyheter i Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
 - **Docs move**: We combined the Office 365 admin web articles with the Microsoft 365 content and you might've noticed the new URL. Den här artikeln brukade exempelvis finnas **på:** docs.microsoft.com/Office365/Admin/whats-new-in-preview , men URL:en är nu: **docs.microsoft.com/microsoft-365/admin/whats-new-in-preview**. Om du har bokmärkt sidor bör du uppdatera länkarna. Men innehållslänkar omdirigeras till den nya lagringsplatsen för innehåll.
-
-## <a name="january-2020---happy-new-year"></a>Januari 2020 – Gott Nytt År
-
-> [!NOTE]
-> Visste du att det finns en Vad [är nytt i Microsoft 365-videoserien](https://go.microsoft.com/fwlink/p/?linkid=2118096) på YouTube? Det markerar de senaste funktionerna som vi har distribuerat till användarna. Varje månad börjar vi länka till det senaste avsnittet i [avsnittet Videor, utbildning och](#videos-training-and-docs) dokument. <br> <br> Här är det senaste avsnittet: [Nyheter i Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
-
-### <a name="dark-mode"></a>Mörkt läge
-
-När vi först distribuerade mörkt läge var det bara tillgängligt på startsidan. Mörkt läge är nu slut i förhandsversionen och finns i riktad version på de flesta sidor i administrationscentret.
-
-1. Först måste du aktivera Riktad version: Gå  till Inställningar Inställningar \>  \>  \> **OrganisationsprofilSläppinställningar.**
-1. Aktivera mörkt läge genom att gå till **startsidan och** sedan välja knappen **Mörkt** läge. (Den finns bredvid **sökfältet** och länken Nytt i den **här** artikeln.)
-1. För alla sidor med mörkt läge är knappen högst upp på sidan, bredvid Växlingsknappen **i det nya administrationscentret.**
-
-### <a name="office-whats-new-management"></a>Hantering av Nya Office-funktioner
-
-Administratörer vill ha kontroll över hur Microsoft kommunicerar "Vad är nytt" till sina användare i Office-apparna – och nu har du den kontrollen. Gå till **Inställningar** \> **Office– förhandsversion av ny hantering.** Välj en funktion för att visa dess  information och välj sedan knappen Dölj för användare om du inte vill att dina användare ska se ett särskilt meddelande om vad som är nytt. Din organisation kanske väntar på att meddela användarna om en funktion tills alla i organisationen har utbildning om den.
-
-![Skärmdump av förhandsversionen av Office Med en funktions informationsfönster öppet.](../media/whatsnew-officemgmt-preview.png)
-
-Den här funktionen släpptes första gången som förhandsversion i november, men det finns några funktionsuppdateringar som du bör känna till: Nyheter i förhandsversionen av [Office](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-what-s-new-management-preview/ba-p/1020438)
-
-### <a name="partners"></a>Partner
-
-Howdy, Partners! (Det hjälpte inte mig själv.) Vi har även en uppdatering den här månaden. Det finns en ny funktion som gör att partner kan ge CSP-kunder möjlighet  att acceptera sitt Microsoft-kundavtal (MCA) i avsnittet Faktureringskonton i administrationscentret. I den här nya upplevelsen:
-
-1. Kunden får en e-postinbjudan med en länk för att acceptera partnerrelationen och MCA.
-2. När kunden har loggar in kan de visa och acceptera behörigheterna MCA och partner – direkt från administrationscentret.
-
-### <a name="resource-mailboxes"></a>Resurspostlådor
-
-Listan Resurspostlådor har uppdaterats till den nya formatmallen. I administrationscentret för Microsoft 365 går du till **Resurser** \> **rum & utrustning.**
-
-### <a name="videos-training-and-docs-january"></a>Videor, utbildning och dokument (januari)
-
-Ta en titta på utbildning för administratörer för småföretag som vi släppte i januari:
-
-- [Skapa din företagswebbplats](https://support.microsoft.com/office/3325d50e-d131-403c-a278-7f3296fe33a9)
-- [Hitta svar och hjälp](https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988)
-- [Få hjälp eller support](https://support.microsoft.com/office/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
-- [Ta bort en användare](https://support.microsoft.com/office/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
-- [Välj en Microsoft-prenumeration](https://support.microsoft.com/office/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
-- [Översikt över Säkerhet i Microsoft 365 för företag](https://support.microsoft.com/office/3274b159-a825-46d7-9421-7d6e209389d1)

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 93715f761beded95cfaa91b4747a2e4b5a3c61c1
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: bf837dca5f05310045c06178b8fc587f3fc55137
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689683"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765785"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>Sekretess för Microsoft Defender för Slutpunkt i macOS
 
@@ -33,7 +33,6 @@ ms.locfileid: "51689683"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
-
 
 Microsoft strävar efter att tillhandahålla den information och de kontroller som du behöver för att göra val om hur dina data samlas in och används när du använder Microsoft Defender för slutpunkt på macOS.
 

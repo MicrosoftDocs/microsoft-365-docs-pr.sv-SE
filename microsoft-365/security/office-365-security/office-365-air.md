@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6dfa22b2afb33c318eae8937888b5b75a1742938
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 9850506771f53b125c08b1df2149ee024191d823
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599474"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768872"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Automatisk undersökning och svar (AIR) i Microsoft Defender för Office 365
 
@@ -123,7 +123,7 @@ Behörigheter beviljas genom vissa roller, till exempel de som beskrivs i följa
 
 ## <a name="changes-are-coming-soon-in-your-security-center"></a>Ändringar kommer snart i ditt säkerhetscenter
 
-Om du redan använder AIR-funktionerna i Microsoft Defender för Office 365 kommer du att se några ändringar i det förbättrade säkerhetscentret för [Microsoft 365.](../defender/overview-security-center.md) 
+Om du redan använder AIR-funktionerna i Microsoft Defender för Office 365 kommer du att se några ändringar i det förbättrade säkerhetscentret för [Microsoft 365.](../defender/overview-security-center.md)
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Enhetligt åtgärdscenter":::
 

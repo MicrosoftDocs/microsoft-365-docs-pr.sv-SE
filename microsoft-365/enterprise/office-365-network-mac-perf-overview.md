@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Översikt över nätverksanslutningen i administrationscentret för Microsoft 365 (förhandsversion)
-ms.openlocfilehash: dd97a6d5cc9662f01854e1432660784358bce7b8
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: cc01f2a22f6f8c89d0ae8fcd8b53498790930d3e
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581136"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768632"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Nätverksanslutning i administrationscentret för Microsoft 365 (förhandsversion)
 
@@ -39,9 +39,9 @@ Administrationscentret för Microsoft 365 innehåller nu aggregerade mått för 
 
 Första gången du navigerar till sidan nätverksprestanda visas ett översiktsfönster med en karta över globala nätverksprestanda, en nätverksutvärdering begränsad till hela klientorganisationen och en lista över aktuella problem. Från översikten kan du öka detalj detaljvyn för att visa specifika nätverksprestandamätvärden och -problem efter plats. Mer information finns i Översikt [av nätverksprestanda i Administrationscenter för Microsoft 365.](#network-connectivity-overview-in-the-microsoft-365-admin-center)
 
-Du kan bli ombedd att ansluta till den offentliga förhandsversionen för den här funktionen för din organisations räkning. Accepterande sker vanligtvis direkt och sedan visas sidan nätverksanslutning. 
+Du kan bli ombedd att ansluta till den offentliga förhandsversionen för den här funktionen för din organisations räkning. Accepterande sker vanligtvis omedelbart, därefter visas sidan för nätverksanslutning. 
 
-När du navigerar till sidan nätverksanslutning visas ett översiktsfönster med en karta över globala nätverksprestanda, en nätverksutvärdering begränsad till hela klientorganisationen och en lista över aktuella problem. För att komma åt den här sidan måste du vara administratör för organisationen i Microsoft 365. Den administrativa rollen Rapportläsare har läsbehörighet till den här informationen. För att konfigurera platser och andra element i nätverksanslutningen måste en administratör vara en del av serveradministratörsrollen, till exempel rollen Tjänstsupportadministratör. Från översikten kan du öka detalj detaljvyn för att visa specifika nätverksprestandamätvärden och -problem efter plats. Mer information finns i Översikt [över nätverksanslutning i Administrationscenter för Microsoft 365.](#network-connectivity-overview-in-the-microsoft-365-admin-center)
+När du navigerar till sidan nätverksanslutning visas ett översiktsfönster som innehåller en karta över globala nätverksprestanda, en nätverksutvärdering begränsad till hela klientorganisationen, procentandel av användarna som arbetar på distans kontra på plats och en lista över aktuella problem för att vidta åtgärder för eller för ytterligare efterforskningar. För att komma åt den här sidan måste du vara administratör för organisationen i Microsoft 365. Den administrativa rollen Rapportläsare har läsbehörighet till den här informationen. För att konfigurera platser och andra element i nätverksanslutningen måste en administratör vara en del av serveradministratörsrollen, till exempel rollen Tjänstsupportadministratör. Från översikten kan du öka detalj detaljvyn för att visa specifika nätverksprestandamätvärden och -problem efter plats. 
 
 ## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>Förutsättningar för att en utvärdering av nätverksanslutningen ska visas
 
@@ -61,17 +61,17 @@ Måttprov och kontorsplatser bör börja visas 24 timmar efter att dessa föruts
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. Lägga till platser och ange lan-undernätsinformation
 
-För det här alternativet krävs varken Windows Wi-Fi eller windows Wi-Fi plats. Din Version av OneDrive för Windows måste vara uppdaterad och installerad på varje dator på platsen.
+För det här alternativet krävs varken Windows Wi-Fi eller windows Wi-Fi plats. Din Version av OneDrive för Windows måste vara uppdaterad och installerad på minst en dator på platsen.
 
-Du måste också lägga till platser i sidan Admin Center-nätverksanslutning eller importera dem från en CSV-fil. Platserna som läggs till måste innehålla informationen om office LAN-undernätet.
+Du måste också lägga till platser på sidan Platser **eller importera** dem från en CSV-fil. Platserna som läggs till måste innehålla informationen om office LAN-undernätet.
 
-Eftersom du lägger till platser kan du ha flera kontor definierade på en stad.
+Med det här alternativet kan du ha flera kontor definierade i en stad.
 
 Alla testmått från klientdatorer innehåller LAN-undernätsinformationen, som är korrelerad med den platsinformation om kontoret som du har angett. Måttprov och kontorsplatser bör börja visas 24 timmar efter att dessa förutsättningar har uppfyllts.
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. Samla in testrapporter manuellt med testverktyget för Microsoft 365-nätverksanslutning
 
-För det här alternativet måste du identifiera en person på varje plats. Be dem bläddra till [Microsoft 365-nätverksanslutningstest](https://connectivity.office.com) på en Windows-dator där de har administratörsbehörighet. På webbplatsen måste de logga in på sitt Office 365-konto för samma organisation som du vill se resultaten för. Sedan ska de klicka på **Kör test**. Under testet finns det ett nedladdat anslutningstest MED EXE. De måste öppna och köra det också. När testerna har slutförts laddas testresultatet upp till Office 365.
+För det här alternativet måste du identifiera en person på varje plats. Be dem bläddra till [Microsoft 365-nätverksanslutningstest](https://connectivity.office.com) på en Windows-dator där de har administratörsbehörighet. På webbplatsen måste de logga in på sitt Office 365-konto för samma organisation som du vill se resultaten för. Sedan ska de klicka på **Kör test**. Under testet finns det ett nedladdat anslutningstest MED EXE. De måste öppna och köra det. När testerna har slutförts laddas testresultatet upp till Admin Center.
 
 Testrapporter länkas till en plats om den har lagts till med information om LAN-undernätet, annars visas de endast på platsen för staden.
 
@@ -79,7 +79,7 @@ Måttprov och kontorsplatser bör börja visas 2–3 minuter efter att en testra
 
 ## <a name="how-do-i-use-this-information"></a>Hur använder jag den här informationen?
 
-**Nätverksinsikter**, deras relaterade prestandarekommendationer och nätverksutvärderingar är avsedda att bidra till att utforma nätverks perimeter för kontorsplatser. Varje insikt ger information om prestandaegenskaper för ett specifikt vanligt problem för varje geografisk plats där användarna har åtkomst till din klientorganisation. **Prestandarekommendationer** för varje nätverksinsikt ger specifika ändringar i nätverksarkitekturdesignen som du kan göra för att förbättra användarupplevelsen relaterad till Microsoft 365-nätverksanslutning. Nätverksutvärderingen visar hur nätverksanslutningen påverkar användarupplevelsen, vilket gör det möjligt att jämföra olika nätverksanslutningar för användarplatser.
+**Nätverksinsikter**, deras relaterade prestandarekommendationer och nätverksutvärderingar är avsedda att bidra till att utforma nätverks perimeter för kontorsplatser. Varje insikt ger information om prestandaegenskaper för ett specifikt vanligt nätverksproblem för varje geografisk plats där användarna har åtkomst till din klientorganisation. **Prestandarekommendationer** för varje nätverksinsikt ger specifika ändringar i nätverksarkitekturdesignen som du kan göra för att förbättra användarupplevelsen relaterad till Microsoft 365-nätverksanslutning. Nätverksutvärderingen visar hur nätverksanslutningen påverkar användarupplevelsen, vilket gör det möjligt att jämföra olika nätverksanslutningar för användarplatser.
 
 **Nätverksutvärderingar** sammanfattar en mängd nätverksprestandamätvärden till en ögonblicksbild av företagets nätverkshälsa, som representeras av ett poängvärde mellan 0 och 100. Nätverksutvärderingar är begränsade till både hela klientorganisationen och för varje geografisk plats som användarna ansluter till klientorganisationen från, vilket ger Microsoft 365-administratörer ett enkelt sätt att snabbt förstå ett av företagets nätverkshälsa och snabbt öka detaljgranskningen i en detaljerad rapport för alla globala kontor.
 
@@ -93,13 +93,13 @@ Komplexa företag med flera kontorsplatser och perimeterarkitekturer utanför n�
 > [!div class="mx-imgBorder"]
 > ![Kundnätverk till molnet](../media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
 
-Många företag har nätverks perimeterkonfigurationer som har vuxit över tid och främst utformats för att ge de anställda tillgång till Internetwebbplatser där de flesta webbplatser inte är kända i förväg och inte är betrodda. Det nödvändiga fokuset är att undvika attacker mot skadlig programvara och fiske från dessa okända webbplatser. Den här nätverkskonfigurationsstrategin kan, även användbar för säkerhetsändamål, leda till försämring av Microsoft 365-användarprestanda och användarupplevelse.
+Många företag har nätverks perimeterkonfigurationer som har vuxit över tid och främst utformats för att ge de anställda tillgång till Internetwebbplatser där de flesta webbplatser inte är kända i förväg och inte är betrodda. Intrånget och det nödvändiga fokus är att undvika skadlig programvara och nätfiskeattacker från dessa okända webbplatser. Den här nätverkskonfigurationsstrategin kan, även användbar för säkerhetsändamål, leda till försämring av Microsoft 365-användarprestanda och användarupplevelse.
 
 ## <a name="how-we-can-solve-these-challenges"></a>Hur vi kan lösa de här problemen
 
 Företag kan förbättra den allmänna användarupplevelsen och skydda miljön genom att följa [Office 365-anslutningsprinciperna](./microsoft-365-network-connectivity-principles.md) och genom att använda nätverksanslutningsfunktionen i administrationscentret för Microsoft 365. I de flesta fall har följande allmänna principer betydande inverkan på slutanvändarens svarstid, tjänsttillförlitlighet och övergripande prestanda i Microsoft 365.
 
-Microsoft uppmanas ibland att undersöka problem med nätverksprestanda med Microsoft 365 för stora företagskunder, och dessa har ofta en orsak relaterad till kundernas perimeterinfrastruktur i nätverket. När en vanlig orsak till ett perimeterproblem i kundens nätverk påträffas försöker vi identifiera enkla testmått som identifierar det. Ett test med ett mättröskelvärde som identifierar ett specifikt problem är värdefullt eftersom vi kan testa samma mått på valfri plats, avgöra om orsaken finns där och dela den som en nätverksinsikt med administratören.
+Microsoft uppmanas ibland att undersöka prestandaproblem i nätverket med Microsoft 365 för stora företagskunder, och dessa har ofta en orsak till kundens perimeterinfrastruktur i nätverket. När en vanlig orsak till ett perimeterproblem i kundens nätverk påträffas försöker vi identifiera enkla testmått som identifierar det. Ett test med ett mättröskelvärde som identifierar ett specifikt problem är värdefullt eftersom vi kan testa samma mått på valfri plats, avgöra om orsaken finns där och dela den som en nätverksinsikt med administratören.
 
 Vissa nätverksinsikter anger bara ett problem som behöver undersökas ytterligare. En nätverksinsikt där vi har tillräckligt många tester för att visa en viss åtgärd för att korrigera orsaken visas som en **rekommenderad åtgärd.** De här rekommendationerna, baserat på livevärden som visar värden som faller utanför ett förutbestämt tröskelvärde, är mycket mer värdefulla än allmänna råd om metodtips eftersom de är specifika för din miljö och visar den faktiska förbättringen när de rekommenderade ändringarna har gjorts.
 
@@ -117,7 +117,7 @@ På översiktssidan visas även nätverksutvärderingen för kunden som ett vikt
 > [!div class="mx-imgBorder"]
 > ![Nätverksutvärdering](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
-Du kan visa en tabellvy över de platser där de kan filtreras, sorteras och redigeras på fliken Platser. Platser med specifika rekommendationer kan också innehålla en uppskattad potentiell förbättring av svarstiden. Beräkningen beräknas genom att ta mediansvarstid för organisationens användare på platsen och subtrahera mediansvarsfördröjningen för alla organisationer på samma ort.
+Du kan visa en tabellvy över de platser där de kan **filtreras, sorteras** och redigeras på fliken Platser. Platser med specifika rekommendationer kan också innehålla en uppskattad potentiell förbättring av svarstiden. Beräkningen beräknas genom att ta mediansvarstid för organisationens användare på platsen och subtrahera mediansvarsfördröjningen för alla organisationer på samma ort.
 
 > [!div class="mx-imgBorder"]
 > ![Platser med nätverksinsikter](../media/m365-mac-perf/m365-mac-perf-locations.png)
@@ -149,6 +149,7 @@ På fliken Information på kontorets platssida visas de specifika måttresultat 
 > [!div class="mx-imgBorder"]
 > ![Platsspecifik information](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
 
+
 ## <a name="sharing-network-assessment-data-with-microsoft"></a>Dela nätverksutvärderingsdata med Microsoft
 
 Som standard delas nätverksutvärderingarna för din organisation och nätverksinsikter med Microsoft-anställda. Det inkluderar inte några personliga data från din personal utan endast de specifika nätverksutvärderingsmåtten och nätverksinsikterna som visas i administrationscentret för kontoren. Dessutom ingår inte platsnamn på kontoret eller gatuadresser, så du måste ange ort och support-ID för det kontor som du vill diskutera. Om det här är inaktiverat kan inte Microsoft-tekniker som du diskuterar din nätverksanslutning med visa någon av den här informationen. Om du aktiverar den här inställningen innebär det bara att framtida data börjar dagen efter att du aktiverar den.
@@ -157,7 +158,7 @@ Som standard delas nätverksutvärderingarna för din organisation och nätverks
 
 För LAN-undernäts-office-ID måste du lägga till varje plats i förväg. I stället för att lägga till enskilda kontorsplatser **på fliken Platser** kan du importera dem från en CSV-fil. Du kan eventuellt hämta dessa data från andra platser som du har lagrat den, till exempel instrumentpanelen för samtalskvalitet eller Active Directory-webbplatser och -tjänster
 
-I CSV-filen visas en upptäckt ortplats som tom i kolumnen användareAnvändarkolumnen och en manuellt tillagd kontorsplats visas som 1.
+I CSV-filen visas en identifierat ortplats i kolumnen användareAnvändarkolumn som tom, och en manuellt tillagd kontorsplats visas som 1.
 
 1. Klicka på fliken Platser i huvudfönstret Anslutning  till _Microsoft 365._
 
@@ -170,7 +171,8 @@ I CSV-filen visas en upptäckt ortplats som tom i kolumnen användareAnvändarko
 
 1. Öppna CSV-filen och lägg till dina platser genom att fylla i följande fält på en ny rad för varje plats du vill lägga till. Lämna alla andra fält tomma. värden som du anger i andra fält ignoreras.
 
-   1. **userEntered** (obligatoriskt): Måste vara 1 för en ny LAN-undernätsplats för kontor
+   1. **userEntered** (obligatoriskt): Måste vara 1 för en ny LAN-undernätsplats som läggs till
+   1. **Namn** (obligatoriskt): Namnet på platsen för kontoret
    1. **Adress** (obligatoriskt): Kontorets fysiska adress
    1. **Latitud** (valfritt): Ifylld från Bing-kartor uppslag av adressen om den är tom
    1. **Longitud** (valfritt): Ifylld från Bing-kartor uppslag av adressen om den är tom
@@ -179,12 +181,12 @@ I CSV-filen visas en upptäckt ortplats som tom i kolumnen användareAnvändarko
    
 1. När du har lagt till dina kontorsplatser  och sparat filen  klickar du på knappen Bläddra bredvid fältet Ladda upp slutförda och väljer den sparade CSV-filen.
 
-1. Filen verifieras automatiskt. Om det finns verifieringsfel visas felmeddelandet _Det finns några fel i importfilen. Granska felen, korrigera importfilen och försök sedan igen._ Klicka på länken **Öppna felinformation för** en lista med specifika fältverifieringsfel.
+1. Filen verifieras automatiskt. Om det finns verifieringsfel visas felmeddelandet: _Det finns några fel i importfilen. Granska felen, korrigera importfilen och försök sedan igen._ Klicka på länken **Öppna felinformation för** en lista med specifika fältverifieringsfel.
 
    > [!div class="mx-imgBorder"]
    > ![Csv-importfelmeddelande](../media/m365-mac-perf/m365-mac-perf-import-error.png)
 
-1. Om det inte finns några fel i filen visas meddelandet Rapporten _är klar. Hittade x platser att lägga till och x platser att uppdatera._ Ladda upp **CSV-filen** genom att klicka på knappen Importera.
+1. Om det inte finns några fel i filen visas meddelandet: _Rapporten är klar. Hittade x platser att lägga till och x platser att uppdatera._ Ladda upp **CSV-filen** genom att klicka på knappen Importera.
 
    > [!div class="mx-imgBorder"]
    > ![CSV-importklara meddelanden](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
@@ -200,7 +202,7 @@ Microsoft 365-tjänstens klient är en startpunkt i Microsofts globala nätverk 
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>Vad är en optimal Microsoft 365 tjänst front dörr?
 
-En optimal Microsoft 365 tjänst front dörr är den som är närmast din nätverks utgång, oftast i din stad eller metro område. Använd [Microsoft 365-anslutningstestverktyget (förhandsversion)](office-365-network-mac-perf-onboarding-tool.md) för att avgöra var den Microsoft 365-tjänst som används är nära och optimal service så att den finns nära tillhands. Om verktyget avgör att den lokala dörren används optimalt ska du ha optimal anslutning till Microsofts globala nätverk.
+En optimal Microsoft 365 tjänst front dörr är den som är närmast din nätverks utgång, oftast i din stad eller metro område. Använd [Microsoft 365-anslutningstestverktyget (förhandsversion)](office-365-network-mac-perf-onboarding-tool.md) för att avgöra platsen för den Microsoft 365-tjänst som används front front och optimal serviceportport. Om verktyget avgör att den lokala dörren är optimal så är du optimalt ansluten till Microsofts globala nätverk.
 
 ### <a name="what-is-an-internet-egress-location"></a>Vad är en utgående Internetplats?
 

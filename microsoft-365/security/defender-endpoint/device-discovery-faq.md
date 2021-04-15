@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: medium
+localization_priority: normal
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7165d943fd39e298894531f1dabdec408144898d
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: b3fef3479fa2d36806e6657b31f5152c54b9251f
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698473"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765005"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Vanliga frågor och svar om enhetsidentifiering
 
@@ -70,7 +70,7 @@ Du kan stänga av enhetsidentifiering via sidan [Avancerade](advanced-features.m
  Eftersom enhetsidentifiering använder passiva metoder för att upptäcka enheter i nätverket, kan alla enheter som kommunicerar med dina onboarded-enheter i företagsnätverket upptäckas och listas i inventeringen. Du kan utesluta enheter från endast aktiv sannolikhet.
 
 ## <a name="how-frequent-is-the-active-probing"></a>Hur ofta är den aktiva boningen?
- Enheter söker aktivt efter ändringar i enhetsegenskaper och en gång i veckan för att kontrollera att den befintliga informationen är uppdaterad.
+ Enheter söker aktivt efter ändringar i enhetsegenskaper (var 1:e till 3:e vecka) för att säkerställa att den befintliga informationen är uppdaterad.
 
 ## <a name="my-security-tool-raised-alert-on-unicastscannerps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>Mitt säkerhetsverktyg upphöjd varning vid UnicastScanner.ps1 eller portsökningsaktivitet initierad av den, vad ska jag göra?
  De aktiva testskripten är signerade av Microsoft och är säkra. Du kan lägga till följande sökväg till undantagslistan: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps`

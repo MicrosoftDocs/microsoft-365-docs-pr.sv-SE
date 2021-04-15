@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: ae7dbea7d476e8a8f6198378e1d1bb29e24c37a2
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 95c87330eec3cb557e5fea96148d626b7e0ee4b3
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688351"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768920"
 ---
 # <a name="protect-your-network"></a>Skydda ditt nätverk
 
@@ -37,7 +37,7 @@ Nätverksskydd hjälper till att minska enheternas attackytor från Internetbase
 
 Nätverksskydd stöds i Windows från och med Windows 10, version 1709. Nätverksskydd stöds ännu inte på andra operativsystem, men webbskydd stöds med den nya Microsoft Edge baserat på Chromium. Mer information finns i [Webbskydd](web-protection-overview.md).
 
-nätverksskydd utökar skyddet i [webbskydd](web-protection-overview.md) till operativsystemets nivå. Det ger webbskyddsfunktioner i Microsoft Edge till andra webbläsare som stöds och program som inte är webbläsarbaserade. Dessutom tillhandahåller nätverksskydd synlighet och blockering av indikatorer på intrång (IOCs) när de används med identifiering och [svar av slutpunkter.](overview-endpoint-detection-response.md) Till exempel fungerar nätverksskydd med dina [anpassade indikatorer](manage-indicators.md).
+Nätverksskydd utökar skyddet i [webbskyddet](web-protection-overview.md) till operativsystemets nivå. Det ger webbskyddsfunktioner i Microsoft Edge till andra webbläsare som stöds och program som inte är webbläsarbaserade. Dessutom tillhandahåller nätverksskydd synlighet och blockering av indikatorer på intrång (IOCs) när de används med identifiering och [svar av slutpunkter.](overview-endpoint-detection-response.md) Till exempel fungerar nätverksskydd med dina [anpassade indikatorer](manage-indicators.md).
 
 Mer information om hur du aktiverar nätverksskydd finns [i Aktivera nätverksskydd.](enable-network-protection.md) Använd grupprinciper, PowerShell och MDM-CSP:er för att aktivera och hantera nätverksskydd i nätverket.
 

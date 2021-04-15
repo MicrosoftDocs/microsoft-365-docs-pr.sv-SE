@@ -22,12 +22,12 @@ localization_priority: Priority
 description: Administratörer kan läsa mer om de skydd mot förfalskning som finns tillgängliga i Exchange Online Protection (EOP) och som kan hjälpa dig att minska riskerna för nätfiske från falska avsändare och domäner.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 54b94e2d2cc0395ce7a9785887c253df3addf7fa
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 20294bf00c62e59da33b54ea0c8ee85f7b1372af
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688783"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51769028"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Skydd mot förfalskning i EOP
 
@@ -120,7 +120,7 @@ Microsoft skiljer mellan två olika typer av falska meddelanden:
 
   - `reason=000` betyder att meddelandet inte har klarat explicit e-postautentisering. `reason=001` betyder att meddelandet inte har klarat implicit e-postautentisering.
 
-  - SFTY är meddelandets säkerhetsnivå. 9 anger nätfiske, .22 anger förfalskning mellan domäner.
+  - `SFTY`är meddelandets säkerhetsnivå. 9 anger nätfiske, .22 anger förfalskning mellan domäner.
 
 > [!NOTE]
 > Om du har fått ett meddelande som ***compauth=fail reason=###** _ och behöver veta om sammansatt autentisering (compauth) och värdena relaterade till förfalskning kan du läsa mer under meddelanderubriker för [_Anti-skräppost i Microsoft 365*](anti-spam-message-headers.md). Eller gå direkt till koderna för [*orsak*](anti-spam-message-headers.md).

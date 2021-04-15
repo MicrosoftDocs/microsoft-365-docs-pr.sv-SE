@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 193e7e634ecf8407816db10c820edcd241b94b12
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 4f3b2b54370e3481699a540dd8fd2acc30be7514
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760170"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768884"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Felsöka problem med Introduktion till Slutpunkt för Microsoft Defender
 
@@ -302,8 +302,8 @@ Om verifieringen misslyckas och miljön använder en proxyserver för att anslut
 
 Om du stöter på problem vid registrering av en server går du igenom följande verifieringssteg för att åtgärda möjliga problem.
 
-- [Kontrollera att Microsoft Monitoring Agent (MMA) är installerat och konfigurerat för att rapportera sensordata till tjänsten](configure-server-endpoints.md#server-mma)
-- [Kontrollera att serverproxyn och internetanslutningsinställningarna är korrekt konfigurerade](configure-server-endpoints.md#server-proxy)
+- [Kontrollera att Microsoft Monitoring Agent (MMA) är installerat och konfigurerat för att rapportera sensordata till tjänsten](configure-server-endpoints.md)
+- [Kontrollera att serverproxyn och internetanslutningsinställningarna är korrekt konfigurerade](configure-server-endpoints.md)
 
 Du kan också behöva kontrollera följande:
 

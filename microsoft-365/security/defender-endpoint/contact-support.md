@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 726a85969dab715a1b6244f14d1bf0259cf301e8
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 4c44e2c73eabcb89c178235bc3ce6738d2322dfa
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163381"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768992"
 ---
-# <a name="contact-microsoft-defender-for-endpoint-support"></a>Kontakta Microsoft Defender för slutpunktssupport
+# <a name="contact-microsoft-defender-for-endpoint-support"></a>Kontakta support för Microsoft Defender för Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -79,8 +79,8 @@ Om de föreslagna artiklarna inte är tillräckliga kan du öppna en tjänstbeg�
 
 Lär dig hur du öppnar supportärenden genom att kontakta Defender för Endpoint-supporten. 
 
-
-
+> [!Note]
+> Om du har ett permiersupportavtal med Microsoft ser du Premier-taggen på widgeten. Annars kontaktar du din Microsoft-kontohanterare.
 
 ### <a name="contact-support"></a>Kontakta support
 Du kan välja det här alternativet genom att klicka på ikonen som ser ut som ett headset. Du får sedan följande sida för att skicka ditt supportfall:
@@ -96,4 +96,4 @@ Du kan välja det här alternativet genom att klicka på ikonen som ser ut som e
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Felsöka tjänstproblem](troubleshoot-mdatp.md)
-- [Kontrollera tjänstens hälsa](service-status.md)
+- [Kontrollera tjänststatus](service-status.md)
