@@ -245,6 +245,8 @@
               href: dlp-on-premises-scanner-learn.md
             - name: Läs mer om Microsofts Efterlevnadstillägg (förhandsversion)
               href: dlp-chrome-learn-about.md
+            - name: Lär dig om instrumentpanelen för dataförlustskyddsvarningar
+              href: dlp-alerts-dashboard-learn.md
         - name: Kom igång med DLP
           items:
             - name: Kom igång med DLP-standardprincipen
@@ -261,6 +263,8 @@
               href: endpoint-dlp-configure-proxy.md
             - name: Kom igång med Microsofts Efterlevnadstillägg (förhandsversion)
               href: dlp-chrome-get-started.md
+            - name: Komma igång med instrumentpanelen för dataförlustskyddsvarningar
+              href: dlp-alerts-dashboard-get-started.md
             - name: Endpoint DLP Registreringsverktyg och -metoder för Windows 10-enheter
               items:
                 - name: Registreringsverktyg och -metoder för Windows 10-enheter
@@ -594,6 +598,8 @@
               href: ediscovery-decryption.md
             - name: Samla in information om eDiscovery-diagnostik
               href: ediscovery-diagnostic-info.md
+            - name: Felsöka eDiscovery-undantag
+              href: hold-distribution-errors.md
             - name: Felsöka vanliga eDiscovery-problem
               href: ediscovery-troubleshooting-common-issues.md
             - name: Försöka med en misslyckad sökning igen
@@ -748,6 +754,8 @@
               href: what-is-stored-in-exo-mailbox.md
             - name: Dekryptering i eDiscovery-verktyg
               href: ediscovery-decryption.md
+            - name: Felsöka eDiscovery-undantag
+              href: hold-distribution-errors.md
             - name: Samla in information om eDiscovery-diagnostik
               href: ediscovery-diagnostic-info.md
             - name: Söka efter eDiscovery-aktiviteter i granskningsloggen
@@ -766,6 +774,8 @@
       href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
     - name: Öka kvoten för återställningsbara objekt för postlådor i undantag
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+    - name: Felsöka eDiscovery-undantag
+      href: hold-distribution-errors.md
     - name: Bevara hemlig kopia- och distributionsgruppsmottagare
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Hantera gransknings- och aviseringsprinciper

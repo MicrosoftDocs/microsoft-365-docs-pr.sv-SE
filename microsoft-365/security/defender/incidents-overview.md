@@ -1,5 +1,5 @@
 ---
-title: Översikt över incidenter i Microsoft 365 Defender
+title: Incidenter i Microsoft 365 Defender
 description: Undersök incidenter som visas på olika enheter, användare och postlådor.
 keywords: incidenter, aviseringar, undersöker, korrelation, attack, datorer, enheter, användare, identiteter, identiteter, postlåda, e-post, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
@@ -22,45 +22,92 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6dd13c5f83d05be3c77e5f84608fb6aa5172d9a4
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 5b2baa2041a8cffcea212eb449d40b9a9cbfc22a
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500925"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759509"
 ---
-# <a name="incidents-overview-in-microsoft-365-defender"></a><span data-ttu-id="dc219-104">Översikt över incidenter i Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="dc219-104">Incidents overview in Microsoft 365 Defender</span></span>
+# <a name="incidents-in-microsoft-365-defender"></a><span data-ttu-id="67e6c-104">Incidenter i Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="67e6c-104">Incidents in Microsoft 365 Defender</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="dc219-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="dc219-105">**Applies to:**</span></span>
-- <span data-ttu-id="dc219-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="dc219-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="67e6c-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="67e6c-105">**Applies to:**</span></span>
+- <span data-ttu-id="67e6c-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="67e6c-106">Microsoft 365 Defender</span></span>
 
-> <span data-ttu-id="dc219-107">Vill du uppleva Microsoft 365 Defender?</span><span class="sxs-lookup"><span data-stu-id="dc219-107">Want to experience Microsoft 365 Defender?</span></span> <span data-ttu-id="dc219-108">Du kan [utvärdera det i en laboratoriemiljö](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) eller [köra ett pilotprojekt i produktionen](m365d-pilot.md?ocid=cx-evalpilot).</span><span class="sxs-lookup"><span data-stu-id="dc219-108">You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).</span></span>
+> <span data-ttu-id="67e6c-107">Vill du uppleva Microsoft 365 Defender?</span><span class="sxs-lookup"><span data-stu-id="67e6c-107">Want to experience Microsoft 365 Defender?</span></span> <span data-ttu-id="67e6c-108">Du kan [utvärdera det i en laboratoriemiljö](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) eller [köra ett pilotprojekt i produktionen](m365d-pilot.md?ocid=cx-evalpilot).</span><span class="sxs-lookup"><span data-stu-id="67e6c-108">You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).</span></span>
 >
 
+<span data-ttu-id="67e6c-109">En incident i Microsoft 365 Defender är en samling korrelerade aviseringar och associerade data som utgör attackens historia.</span><span class="sxs-lookup"><span data-stu-id="67e6c-109">An incident in Microsoft 365 Defender is a collection of correlated alerts and associated data that make up the story of an attack.</span></span> 
 
-<span data-ttu-id="dc219-109">Incidenterna baseras på relaterade aviseringar.</span><span class="sxs-lookup"><span data-stu-id="dc219-109">Incidents are based on related alerts.</span></span> <span data-ttu-id="dc219-110">Aviseringar skapas när en skadlig händelse eller aktivitet visas i nätverket.</span><span class="sxs-lookup"><span data-stu-id="dc219-110">Alerts are created when a malicious event or activity is seen on your network.</span></span> <span data-ttu-id="dc219-111">Enskilda aviseringar ger värdefulla ledtrådar om en 1:e attack.</span><span class="sxs-lookup"><span data-stu-id="dc219-111">Individual alerts provide valuable clues about an on-going attack.</span></span> <span data-ttu-id="dc219-112">Men attacker använder vanligtvis olika vektorer och tekniker för att utföra ett intrång.</span><span class="sxs-lookup"><span data-stu-id="dc219-112">However, attacks typically employ various vectors and techniques to carry out a breach.</span></span> <span data-ttu-id="dc219-113">Det kan vara svårt och tidskrävande att samla enskilda ledtrådar.</span><span class="sxs-lookup"><span data-stu-id="dc219-113">Piecing individual clues together can be challenging and time-consuming.</span></span>
+<span data-ttu-id="67e6c-110">I Microsoft 365-tjänster och -appar skapas aviseringar när de upptäcker misstänkt eller skadlig händelse eller aktivitet.</span><span class="sxs-lookup"><span data-stu-id="67e6c-110">Microsoft 365 services and apps create alerts when they detect a suspicious or malicious event or activity.</span></span> <span data-ttu-id="67e6c-111">Enskilda aviseringar ger värdefulla ledtrådar om en slutförd eller pågående attack.</span><span class="sxs-lookup"><span data-stu-id="67e6c-111">Individual alerts provide valuable clues about a completed or ongoing attack.</span></span> <span data-ttu-id="67e6c-112">Men attacker använder vanligtvis olika tekniker mot olika typer av enheter, till exempel enheter, användare och postlådor.</span><span class="sxs-lookup"><span data-stu-id="67e6c-112">However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes.</span></span> <span data-ttu-id="67e6c-113">Resultatet är flera aviseringar för flera enheter i klientorganisationen.</span><span class="sxs-lookup"><span data-stu-id="67e6c-113">The result is multiple alerts for multiple entities in your tenant.</span></span> 
 
-<span data-ttu-id="dc219-114">Den här korta videon ger en översikt över incidenter i Microsoft 365 Defender.</span><span class="sxs-lookup"><span data-stu-id="dc219-114">This short video gives an overview of incidents in Microsoft 365 Defender.</span></span>
+<span data-ttu-id="67e6c-114">Eftersom det kan vara svårt och tidskrävande att samla ihop enskilda aviseringar för att få insikter i en attack aggregerar Microsoft 365 Defender automatiskt aviseringarna och deras tillhörande information till en incident.</span><span class="sxs-lookup"><span data-stu-id="67e6c-114">Because piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming, Microsoft 365 Defender automatically aggregates the alerts and their associated information into an incident.</span></span>
+
+:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="Hur Microsoft 365 Defender korrelerar händelser från enheter till ett incident":::
+
+<span data-ttu-id="67e6c-116">Titta på den här korta översikten över incidenter i Microsoft 365 Defender (4 minuter).</span><span class="sxs-lookup"><span data-stu-id="67e6c-116">Watch this short overview of incidents in Microsoft 365 Defender (4 minutes).</span></span>
+
 <br>
-
+<br>
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-<span data-ttu-id="dc219-115">En incident är en samling korrelerade varningar som utgör berättelse om en attack.</span><span class="sxs-lookup"><span data-stu-id="dc219-115">An incident is a collection of correlated alerts that make up the story of an attack.</span></span> <span data-ttu-id="dc219-116">Skadliga och misstänkta händelser som hittas på olika enheter, användare och postlådeenheter i nätverket aggregeras automatiskt av Microsoft 365 Defender.</span><span class="sxs-lookup"><span data-stu-id="dc219-116">Malicious and suspicious events that are found in different device, user, and mailbox entities in the network are automatically aggregated by Microsoft 365 Defender.</span></span> <span data-ttu-id="dc219-117">Att gruppera relaterade aviseringar till en händelse ger säkerhetssäkerhet en omfattande bild av en attack.</span><span class="sxs-lookup"><span data-stu-id="dc219-117">Grouping related alerts into an incident gives security defenders a comprehensive view of an attack.</span></span> 
+<span data-ttu-id="67e6c-117">Om du grupperar relaterade aviseringar i en incident får du en omfattande bild av en attack.</span><span class="sxs-lookup"><span data-stu-id="67e6c-117">Grouping related alerts into an incident gives you a comprehensive view of an attack.</span></span> <span data-ttu-id="67e6c-118">Du kan till exempel se:</span><span class="sxs-lookup"><span data-stu-id="67e6c-118">For example, you can see:</span></span>
 
-<span data-ttu-id="dc219-118">Säkerhetsvakten kan till exempel se var attacken började, vilka taktiker som användes och hur långt attacken har varit i nätverket.</span><span class="sxs-lookup"><span data-stu-id="dc219-118">For instance, security defenders can see where the attack started, what tactics were used, and how far the attack has gone into the network.</span></span> <span data-ttu-id="dc219-119">De kan också se attackens omfattning, till exempel hur många enheter, användare och postlådor som påverkades, hur allvarligt påverkan det var och annan information om berörda enheter.</span><span class="sxs-lookup"><span data-stu-id="dc219-119">They can also see the scope of the attack, like how many devices, users, and mailboxes were impacted, how severe the impact was, and other details about affected entities.</span></span>
+- <span data-ttu-id="67e6c-119">Var attacken började.</span><span class="sxs-lookup"><span data-stu-id="67e6c-119">Where the attack started.</span></span>
+- <span data-ttu-id="67e6c-120">Vilka taktiker användes.</span><span class="sxs-lookup"><span data-stu-id="67e6c-120">What tactics were used.</span></span>
+- <span data-ttu-id="67e6c-121">Hur långt attacken har varit i din klientorganisation.</span><span class="sxs-lookup"><span data-stu-id="67e6c-121">How far the attack has gone into your tenant.</span></span>
+- <span data-ttu-id="67e6c-122">Attackens omfattning, till exempel hur många enheter, användare och postlådor som påverkades.</span><span class="sxs-lookup"><span data-stu-id="67e6c-122">The scope of the attack, such as how many devices, users, and mailboxes were impacted.</span></span> 
+- <span data-ttu-id="67e6c-123">Alla data som är associerade med attacken.</span><span class="sxs-lookup"><span data-stu-id="67e6c-123">All of the data associated with the attack.</span></span>
 
-<span data-ttu-id="dc219-120">Om den är aktiverad kan Microsoft 365 Defender automatiskt undersöka och lösa enskilda aviseringar via automatisering och artificiell intelligens.</span><span class="sxs-lookup"><span data-stu-id="dc219-120">If enabled, Microsoft 365 Defender can automatically investigate and resolve the individual alerts through automation and artificial intelligence.</span></span> <span data-ttu-id="dc219-121">Säkerhetshändelser kan också utföra ytterligare åtgärdsåtgärder för att lösa attacken direkt från händelsevyn.</span><span class="sxs-lookup"><span data-stu-id="dc219-121">Security defenders can also perform additional remediation steps to resolve the attack straight from the incidents view.</span></span> 
+<span data-ttu-id="67e6c-124">Om [den](m365d-enable.md)är aktiverad kan Microsoft 365 Defender automatiskt undersöka och åtgärda varningar med hjälp av automatisering och artificiell intelligens.</span><span class="sxs-lookup"><span data-stu-id="67e6c-124">If [enabled](m365d-enable.md), Microsoft 365 Defender can automatically investigate and resolve alerts through automation and artificial intelligence.</span></span> <span data-ttu-id="67e6c-125">Du kan också utföra ytterligare åtgärdssteg för att lösa attacken.</span><span class="sxs-lookup"><span data-stu-id="67e6c-125">You can also perform additional remediation steps to resolve the attack.</span></span> 
 
-<span data-ttu-id="dc219-122">Incidenter från de senaste 30 dagarna visas i incidentkön.</span><span class="sxs-lookup"><span data-stu-id="dc219-122">Incidents from the last 30 days are shown in the incident queue.</span></span> <span data-ttu-id="dc219-123">Säkerhetsärenden kan direkt se vilka ärenden som ska prioriteras utifrån risknivå och andra faktorer.</span><span class="sxs-lookup"><span data-stu-id="dc219-123">From here, security defenders can see which incidents should be prioritized based on risk level and other factors.</span></span> 
+## <a name="incidents-and-alerts-in-the-microsoft-365-security-center"></a><span data-ttu-id="67e6c-126">Incidenter och aviseringar i Säkerhetscenter för Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="67e6c-126">Incidents and alerts in the Microsoft 365 security center</span></span>
 
-<span data-ttu-id="dc219-124">Säkerhetsärenden kan också byta namn på incidenter, tilldela dem till enskilda analytiker, klassificera och lägga till taggar i incidenter för att få en bättre och mer anpassad upplevelse med incidenthantering.</span><span class="sxs-lookup"><span data-stu-id="dc219-124">Security defenders can also rename incidents, assign them to individual analysts, classify, and add tags to incidents for a better and more customized incident management experience.</span></span>
+<span data-ttu-id="67e6c-127">Du hanterar incidenter **från & och > incidenter** i snabbstarten av Säkerhetscenter för Microsoft 365 [(security.microsoft.com).](https://security.microsoft.com)</span><span class="sxs-lookup"><span data-stu-id="67e6c-127">You manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)).</span></span> <span data-ttu-id="67e6c-128">Här är ett exempel.</span><span class="sxs-lookup"><span data-stu-id="67e6c-128">Here's an example.</span></span>
 
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Sidan Incidenter i Säkerhetscenter för Microsoft 365":::
 
+<span data-ttu-id="67e6c-130">När du väljer ett namn på incidenten visas en sammanfattning av händelsen och det ger tillgång till flikar med ytterligare information.</span><span class="sxs-lookup"><span data-stu-id="67e6c-130">Selecting an incident name displays a summary of the incident and provides access to tabs with additional information.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="dc219-125">Se även</span><span class="sxs-lookup"><span data-stu-id="dc219-125">See also</span></span>
-- [<span data-ttu-id="dc219-126">Prioritera incidenter</span><span class="sxs-lookup"><span data-stu-id="dc219-126">Prioritize incidents</span></span>](incident-queue.md)
-- [<span data-ttu-id="dc219-127">Undersöka incidenter</span><span class="sxs-lookup"><span data-stu-id="dc219-127">Investigate incidents</span></span>](investigate-incidents.md)
-- [<span data-ttu-id="dc219-128">Hantera incidenter</span><span class="sxs-lookup"><span data-stu-id="dc219-128">Manage incidents</span></span>](manage-incidents.md)
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exempel på sidan Sammanfattning för en incident i säkerhetscentret i Microsoft 365":::
+
+<span data-ttu-id="67e6c-132">Ytterligare flikar för en händelse är:</span><span class="sxs-lookup"><span data-stu-id="67e6c-132">The additional tabs for an incident are:</span></span>
+
+- <span data-ttu-id="67e6c-133">Varningar</span><span class="sxs-lookup"><span data-stu-id="67e6c-133">Alerts</span></span> 
+
+  <span data-ttu-id="67e6c-134">Alla aviseringar som rör händelsen och deras information.</span><span class="sxs-lookup"><span data-stu-id="67e6c-134">All the alerts related to the incident and their information.</span></span>
+
+- <span data-ttu-id="67e6c-135">Enheter</span><span class="sxs-lookup"><span data-stu-id="67e6c-135">Devices</span></span>
+
+  <span data-ttu-id="67e6c-136">Alla enheter som har identifierats vara en del av eller relaterade till händelsen.</span><span class="sxs-lookup"><span data-stu-id="67e6c-136">All the devices that have been identified to be part of or related to the incident.</span></span>
+
+- <span data-ttu-id="67e6c-137">Användare</span><span class="sxs-lookup"><span data-stu-id="67e6c-137">Users</span></span>
+
+  <span data-ttu-id="67e6c-138">Alla användare som har identifierats vara en del av eller relaterade till händelsen.</span><span class="sxs-lookup"><span data-stu-id="67e6c-138">All the users that have been identified to be part of or related to the incident.</span></span>
+
+- <span data-ttu-id="67e6c-139">Postlådor</span><span class="sxs-lookup"><span data-stu-id="67e6c-139">Mailboxes</span></span>
+
+  <span data-ttu-id="67e6c-140">Alla postlådor som har identifierats vara en del av eller relaterade till händelsen.</span><span class="sxs-lookup"><span data-stu-id="67e6c-140">All the mailboxes that have been identified to be part of or related to the incident.</span></span>
+
+- <span data-ttu-id="67e6c-141">Undersökningar</span><span class="sxs-lookup"><span data-stu-id="67e6c-141">Investigations</span></span>
+
+  <span data-ttu-id="67e6c-142">Alla automatiserade undersökningar som utlösts av aviseringar i händelsen.</span><span class="sxs-lookup"><span data-stu-id="67e6c-142">All the automated investigations triggered by alerts in the incident.</span></span>
+
+- <span data-ttu-id="67e6c-143">Bevis och svar</span><span class="sxs-lookup"><span data-stu-id="67e6c-143">Evidence and Response</span></span>
+
+  <span data-ttu-id="67e6c-144">Alla händelser som stöds och misstänkta enheter i aviseringarna om händelsen.</span><span class="sxs-lookup"><span data-stu-id="67e6c-144">All the supported events and suspicious entities in the alerts in the incident.</span></span>
+
+<span data-ttu-id="67e6c-145">Här är förhållandet mellan en incident och dess data och flikarna för ett incident i Säkerhetscenter i Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="67e6c-145">Here's the relationship between an incident and its data and the tabs of an incident in the Microsoft 365 security center.</span></span>
+
+:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="Relationen mellan en händelse och dess data till flikarna för en händelse i Säkerhetscenter i Microsoft 365":::
+
+## <a name="next-step"></a><span data-ttu-id="67e6c-147">Nästa steg</span><span class="sxs-lookup"><span data-stu-id="67e6c-147">Next step</span></span>
+
+<span data-ttu-id="67e6c-148">I incidentkön på **sidan Incidenter** visas de senaste incidenterna.</span><span class="sxs-lookup"><span data-stu-id="67e6c-148">The incident queue from the **Incidents** page lists the most recent incidents.</span></span> <span data-ttu-id="67e6c-149">Härifrån kan du:</span><span class="sxs-lookup"><span data-stu-id="67e6c-149">From here, you can:</span></span>
+
+- <span data-ttu-id="67e6c-150">Se vilka incidenter som [ska prioriteras](incident-queue.md) utifrån allvarlighetsgrad och andra faktorer.</span><span class="sxs-lookup"><span data-stu-id="67e6c-150">See which incidents should be [prioritized](incident-queue.md) based on severity and other factors.</span></span> 
+- <span data-ttu-id="67e6c-151">Undersöka [en](investigate-incidents.md) händelse.</span><span class="sxs-lookup"><span data-stu-id="67e6c-151">Perform an [investigation](investigate-incidents.md) of an incident.</span></span>
+- <span data-ttu-id="67e6c-152">[Hantera incidenter,](manage-incidents.md)som omfattar att byta namn på, tilldela dem, klassificera och lägga till taggar för arbetsflödet för incidenthantering.</span><span class="sxs-lookup"><span data-stu-id="67e6c-152">[Manage incidents](manage-incidents.md), which includes renaming, assigning them, classifying, and adding tags for your incident management workflow.</span></span>
