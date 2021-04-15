@@ -9,7 +9,7 @@
 ### [Översikt över Microsoft Defender Säkerhetscenter](use.md)
 ### [Portalöversikt](portal-overview.md)
 ### [Microsoft Defender för Endpoint för myndighetskunder i USA](gov.md)
-### [Microsoft Defender för Endpoint för icke-Windows-plattformar](non-windows.md)
+### [Microsoft Defender för Endpoint på andra plattformar än Windows](non-windows.md)
 
 ## [Utvärdera funktioner](evaluation-lab.md)
 
@@ -85,6 +85,65 @@
 ##### [Anpassa regler för minskning av attackytan](customize-attack-surface-reduction.md)
 ##### [Visa händelser för minskning av attackytan](event-views.md)
 
+### Nästa generations skydd
+#### [Översikt över Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
+#### [Microsoft Defender Antivirus på Windows Server](microsoft-defender-antivirus-on-windows-server.md)
+#### [Bättre tillsammans: Microsoft Defender Antivirus och Microsoft Defender för Endpoint](why-use-microsoft-defender-antivirus.md)
+#### [Bättre tillsammans: Microsoft Defender Antivirus och Office 365](office-365-microsoft-defender-antivirus.md)
+#### [Molnbaserat skydd och Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
+#### [Utvärdera Microsoft Defender Antivirus](evaluate-microsoft-defender-antivirus.md)
+#### [Konfigurera funktionerna i Microsoft Defender Antivirus](configure-microsoft-defender-antivirus-features.md)
+##### [Aktivera molnbaserat skydd](enable-cloud-protection-microsoft-defender-antivirus.md)
+##### [Ange nivå för molnbaserat skydd](specify-cloud-protection-level-microsoft-defender-antivirus.md)
+##### [Konfigurera och verifiera nätverksanslutningar för Microsoft Defender Antivirus](configure-network-connections-microsoft-defender-antivirus.md)
+##### [Skydda säkerhetsinställningarna med manipuleringsskydd](prevent-changes-to-security-settings-with-tamper-protection.md)
+##### [Aktivera blockera direkt](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+##### [Konfigurera tidsgräns för blockering i molnet](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
+##### [Konfigurera skydd för beteende, heuristisk och realtid](configure-protection-features-microsoft-defender-antivirus.md)
+##### [Identifiera och blockera potentiellt oönskade program](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
+##### [Aktivera och konfigurera alltid aktiverat skydd från Microsoft Defender Antivirus i grupprinciper](configure-real-time-protection-microsoft-defender-antivirus.md)
+##### [Konfigurera åtgärd för identifiering för Microsoft Defender Antivirus](configure-remediation-microsoft-defender-antivirus.md)
+##### [Konfigurera schemalagda snabb- eller fullständiga genomsökningar för Microsoft Defender Antivirus](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+##### [Använd begränsad periodisk genomsökning i Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md)
+#### [Kompatibilitet med andra säkerhetsprodukter](microsoft-defender-antivirus-compatibility.md)
+
+#### [Hämta uppdateringar för antivirusprogram och program mot skadlig programvara](manage-updates-baselines-microsoft-defender-antivirus.md)
+##### [Hantera källor för skyddsuppdateringar av Microsoft Defender Antivirus](manage-protection-updates-microsoft-defender-antivirus.md)
+##### [Hantera schemat för när skyddsuppdateringar ska laddas ned och tillämpas](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+##### [Hantera uppdateringar och genomsökningar för slutpunkter som utgått för Microsoft Defender Antivirus](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+##### [Hantera händelsebaserade uppdateringar](manage-event-based-updates-microsoft-defender-antivirus.md)
+##### [Hantera uppdateringar för mobila enheter och virtuella datorer(VM)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
+
+#### [Hantera Microsoft Defender Antivirus för organisationen](configuration-management-reference-microsoft-defender-antivirus.md)
+##### [Använd Microsoft Endpoint Manager för att hantera Microsoft Defender Antivirus](use-intune-config-manager-microsoft-defender-antivirus.md)
+##### [Använd inställningar för grupprinciper för att hantera Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md)
+##### [Använd cmdlets från PowerShell för att hantera Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+##### [Använd Windows Management Instrumentation (WMI) för att hantera Microsoft Defender Antivirus](use-wmi-microsoft-defender-antivirus.md)
+##### [Använd verktyget mpcmdrun.exe för att hantera Microsoft Defender Antivirus](command-line-arguments-microsoft-defender-antivirus.md)
+
+#### [Distribuera och rapport om Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
+##### [Distribuera och aktivera Microsoft Defender Antivirus](deploy-microsoft-defender-antivirus.md)
+##### [Distributionsguide för Microsoft Defender Antivirus i en VDI-miljö (Virtual Desktop Infrastructure)](deployment-vdi-microsoft-defender-antivirus.md)
+##### [Rapport om Microsoft Defender Antivirus](report-monitor-microsoft-defender-antivirus.md)
+
+#### [Genomsökningar och åtgärder](review-scan-results-microsoft-defender-antivirus.md)
+##### [Konfigurera och kör genomsökningar på begäran för Microsoft Defender Antivirus](run-scan-microsoft-defender-antivirus.md)
+##### [Kör och granska resultatet av en genomsökning för Microsoft Defender Offline](microsoft-defender-offline.md)
+##### [Konfigurera alternativ för genomsökning i Microsoft Defender Antivirus](configure-advanced-scan-types-microsoft-defender-antivirus.md)
+##### [Återställ filer i karantän i Microsoft Defender Antivirus](restore-quarantined-files-microsoft-defender-antivirus.md)
+
+#### [Undantag för Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
+##### [Undantag baserat på filtillägg och plats för mappar](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+##### [Undantag för filer som öppnats i processer](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+##### [Undantag för Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+##### [Vanliga misstag att undvika när man definierar undantag](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+
+#### Felsöka Microsoft Defender Antivirus
+##### [Felsök rapportering för Microsoft Defender Antivirus i Uppdateringsefterlevnad](troubleshoot-reporting.md)
+##### [Felsök problem med Microsoft Defender Antivirus genom att granska händelseloggar och felkoder](troubleshoot-microsoft-defender-antivirus.md)
+##### [Felsök Microsoft Defender Antivirus när du migrerar från en lösning från tredje part](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
+
+
 #### [Maskinvarubaserad isolering]()
 ##### [Maskinvarubaserad isolering i Windows 10](overview-hardware-based-isolation.md)
 
@@ -115,10 +174,17 @@
 ##### [Aktivera kontrollerad mappåtkomst](enable-controlled-folders.md)
 ##### [Anpassa kontrollerad mappåtkomst](customize-controlled-folders.md)
 
+
+### [Enhetsidentifiering]()
+#### [Översikt över enhetsidentifiering](device-discovery.md)
+#### [Konfigurera enhetsidentifiering](configure-device-discovery.md)
+#### [Vanliga frågor och svar om enhetsidentifiering](device-discovery-faq.md)
+
+
 ### [Nätverksenheter](network-devices.md)
 
-### [Microsoft Defender för Endpoint för Mac]()
-#### [Översikt över Microsoft Defender för Endpoint för Mac](microsoft-defender-endpoint-mac.md)
+### [Microsoft Defender för Endpoint för macOS]()
+#### [Översikt över Microsoft Defender för Endpoint för macOS](microsoft-defender-endpoint-mac.md)
 #### [Nyheter](mac-whatsnew.md)
 
 #### [Distribuera]()
@@ -165,7 +231,7 @@
 #### [Sekretess](ios-privacy.md)
 
 
-### [Microsoft Defender för Endpoint För Linux]()
+### [Microsoft Defender för Endpoint för Linux]()
 #### [Översikt över Microsoft Defender för Endpoint för Linux](microsoft-defender-endpoint-linux.md)
 #### [Nyheter](linux-whatsnew.md)
 #### [Distribuera]()

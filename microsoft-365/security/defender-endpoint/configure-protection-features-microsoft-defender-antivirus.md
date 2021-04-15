@@ -7,44 +7,44 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 7a0e0571445e8ec753c3813a81dbcca9c698e7df
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9fc51682b659670a21c3c293ea8996beb228802a
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690877"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765077"
 ---
-# <a name="configure-behavioral-heuristic-and-real-time-protection"></a><span data-ttu-id="b3af2-104">Konfigurera behavioruellt, heuristiskt och realtidsskydd</span><span class="sxs-lookup"><span data-stu-id="b3af2-104">Configure behavioral, heuristic, and real-time protection</span></span>
+# <a name="configure-behavioral-heuristic-and-real-time-protection"></a><span data-ttu-id="5052c-104">Konfigurera behavioruellt, heuristiskt och realtidsskydd</span><span class="sxs-lookup"><span data-stu-id="5052c-104">Configure behavioral, heuristic, and real-time protection</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="b3af2-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="b3af2-105">**Applies to:**</span></span>
+<span data-ttu-id="5052c-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="5052c-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="b3af2-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="b3af2-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
+- [<span data-ttu-id="5052c-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="5052c-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
 
-<span data-ttu-id="b3af2-107">Microsoft Defender Antivirus använder flera olika metoder för att skydda hot:</span><span class="sxs-lookup"><span data-stu-id="b3af2-107">Microsoft Defender Antivirus uses several methods to provide threat protection:</span></span>
+<span data-ttu-id="5052c-107">Microsoft Defender Antivirus använder flera olika metoder för att skydda hot:</span><span class="sxs-lookup"><span data-stu-id="5052c-107">Microsoft Defender Antivirus uses several methods to provide threat protection:</span></span>
 
-- <span data-ttu-id="b3af2-108">Molnskydd för omedelbar identifiering och blockering av nya och nya hot</span><span class="sxs-lookup"><span data-stu-id="b3af2-108">Cloud-delivered protection for near-instant detection and blocking of new and emerging threats</span></span>
-- <span data-ttu-id="b3af2-109">Ständigt skanna, med övervakning av fil- och processbeteenden och annan heuristik (kallas även "realtidsskydd")</span><span class="sxs-lookup"><span data-stu-id="b3af2-109">Always-on scanning, using file and process behavior monitoring and other heuristics (also known as "real-time protection")</span></span>
-- <span data-ttu-id="b3af2-110">Särskilda skyddsuppdateringar baserade på maskininlärning, mänsklig och automatiserad analys av stora data samt ingående forskning om hotresistens</span><span class="sxs-lookup"><span data-stu-id="b3af2-110">Dedicated protection updates based on machine-learning, human and automated big-data analysis, and in-depth threat resistance research</span></span>
+- <span data-ttu-id="5052c-108">Molnskydd för omedelbar identifiering och blockering av nya och nya hot</span><span class="sxs-lookup"><span data-stu-id="5052c-108">Cloud-delivered protection for near-instant detection and blocking of new and emerging threats</span></span>
+- <span data-ttu-id="5052c-109">Ständigt skanna, med övervakning av fil- och processbeteenden och annan heuristik (kallas även "realtidsskydd")</span><span class="sxs-lookup"><span data-stu-id="5052c-109">Always-on scanning, using file and process behavior monitoring and other heuristics (also known as "real-time protection")</span></span>
+- <span data-ttu-id="5052c-110">Särskilda skyddsuppdateringar baserade på maskininlärning, mänsklig och automatiserad analys av stora data samt ingående forskning om hotresistens</span><span class="sxs-lookup"><span data-stu-id="5052c-110">Dedicated protection updates based on machine-learning, human and automated big-data analysis, and in-depth threat resistance research</span></span>
 
-<span data-ttu-id="b3af2-111">Du kan konfigurera hur Microsoft Defender Antivirus använder de här metoderna med Grupprincip, System Center Configuration Manage, PowerShell-cmdlets och Windows Management Instrumentation (WMI).</span><span class="sxs-lookup"><span data-stu-id="b3af2-111">You can configure how Microsoft Defender Antivirus uses these methods with Group Policy, System Center Configuration Manage, PowerShell cmdlets, and Windows Management Instrumentation (WMI).</span></span>
+<span data-ttu-id="5052c-111">Du kan konfigurera hur Microsoft Defender Antivirus använder de här metoderna med Grupprincip, System Center Configuration Manage, PowerShell-cmdlets och Windows Management Instrumentation (WMI).</span><span class="sxs-lookup"><span data-stu-id="5052c-111">You can configure how Microsoft Defender Antivirus uses these methods with Group Policy, System Center Configuration Manage, PowerShell cmdlets, and Windows Management Instrumentation (WMI).</span></span>
 
-<span data-ttu-id="b3af2-112">Det här avsnittet beskriver konfiguration för alltid-on-skanning, inklusive hur du identifierar och blockerar appar som anses osäkra, men inte kan identifieras som skadlig programvara.</span><span class="sxs-lookup"><span data-stu-id="b3af2-112">This section covers configuration for always-on scanning, including how to detect and block apps that are deemed unsafe, but may not be detected as malware.</span></span>
+<span data-ttu-id="5052c-112">Det här avsnittet beskriver konfiguration för alltid-on-skanning, inklusive hur du identifierar och blockerar appar som anses osäkra, men inte kan identifieras som skadlig programvara.</span><span class="sxs-lookup"><span data-stu-id="5052c-112">This section covers configuration for always-on scanning, including how to detect and block apps that are deemed unsafe, but may not be detected as malware.</span></span>
 
-<span data-ttu-id="b3af2-113">Se [Använda nästa generationens Microsoft Defender Antivirus-tekniker via](cloud-protection-microsoft-defender-antivirus.md) moln levererat skydd för att aktivera och konfigurera moln levererat skydd för Microsoft Defender Antivirus.</span><span class="sxs-lookup"><span data-stu-id="b3af2-113">See [Use next-gen Microsoft Defender Antivirus technologies through cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) for how to enable and configure Microsoft Defender Antivirus cloud-delivered protection.</span></span>
+<span data-ttu-id="5052c-113">Se [Använda nästa generationens Microsoft Defender Antivirus-tekniker via](cloud-protection-microsoft-defender-antivirus.md) moln levererat skydd för att aktivera och konfigurera moln levererat skydd för Microsoft Defender Antivirus.</span><span class="sxs-lookup"><span data-stu-id="5052c-113">See [Use next-gen Microsoft Defender Antivirus technologies through cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) for how to enable and configure Microsoft Defender Antivirus cloud-delivered protection.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="b3af2-114">I det här avsnittet</span><span class="sxs-lookup"><span data-stu-id="b3af2-114">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="5052c-114">I det här avsnittet</span><span class="sxs-lookup"><span data-stu-id="5052c-114">In this section</span></span>
 
- <span data-ttu-id="b3af2-115">Ämne</span><span class="sxs-lookup"><span data-stu-id="b3af2-115">Topic</span></span> | <span data-ttu-id="b3af2-116">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="b3af2-116">Description</span></span>
+ <span data-ttu-id="5052c-115">Ämne</span><span class="sxs-lookup"><span data-stu-id="5052c-115">Topic</span></span> | <span data-ttu-id="5052c-116">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="5052c-116">Description</span></span>
 ---|---
-[<span data-ttu-id="b3af2-117">Identifiera och blockera potentiellt oönskade program</span><span class="sxs-lookup"><span data-stu-id="b3af2-117">Detect and block potentially unwanted applications</span></span>](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | <span data-ttu-id="b3af2-118">Identifiera och blockera appar som kan vara oönskade i nätverket, till exempel reklamprogram, webbläsarrektatörer och verktygsfält och falska eller falska antivirusprogram</span><span class="sxs-lookup"><span data-stu-id="b3af2-118">Detect and block apps that may be unwanted in your network, such as adware, browser modifiers and toolbars, and rogue or fake antivirus apps</span></span>
-[<span data-ttu-id="b3af2-119">Aktivera och konfigurera skyddsfunktioner i Microsoft Defender Antivirus</span><span class="sxs-lookup"><span data-stu-id="b3af2-119">Enable and configure Microsoft Defender Antivirus protection capabilities</span></span>](configure-real-time-protection-microsoft-defender-antivirus.md) | <span data-ttu-id="b3af2-120">Aktivera och konfigurera realtidsskydd, heuristics och andra ständigt tillgängliga övervakningsfunktioner i Microsoft Defender Antivirus</span><span class="sxs-lookup"><span data-stu-id="b3af2-120">Enable and configure real-time protection, heuristics, and other always-on Microsoft Defender Antivirus monitoring features</span></span>
+[<span data-ttu-id="5052c-117">Identifiera och blockera potentiellt oönskade program</span><span class="sxs-lookup"><span data-stu-id="5052c-117">Detect and block potentially unwanted applications</span></span>](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | <span data-ttu-id="5052c-118">Identifiera och blockera appar som kan vara oönskade i nätverket, till exempel reklamprogram, webbläsarrektatörer och verktygsfält och falska eller falska antivirusprogram</span><span class="sxs-lookup"><span data-stu-id="5052c-118">Detect and block apps that may be unwanted in your network, such as adware, browser modifiers and toolbars, and rogue or fake antivirus apps</span></span>
+[<span data-ttu-id="5052c-119">Aktivera och konfigurera skyddsfunktioner i Microsoft Defender Antivirus</span><span class="sxs-lookup"><span data-stu-id="5052c-119">Enable and configure Microsoft Defender Antivirus protection capabilities</span></span>](configure-real-time-protection-microsoft-defender-antivirus.md) | <span data-ttu-id="5052c-120">Aktivera och konfigurera realtidsskydd, heuristics och andra ständigt tillgängliga övervakningsfunktioner i Microsoft Defender Antivirus</span><span class="sxs-lookup"><span data-stu-id="5052c-120">Enable and configure real-time protection, heuristics, and other always-on Microsoft Defender Antivirus monitoring features</span></span>
