@@ -1,25 +1,25 @@
 ---
 title: Nästa generations skydd
-description: Lär dig hur du hanterar, konfigurerar och använder Microsoft Defender Antivirus, inbyggt skydd mot skadlig programvara och antivirusskydd.
-keywords: Microsoft Defender Antivirus, Windows Defender, program mot skadlig kod, s dimension, slutpunktsskydd i systemcenter, systemcenter configuration manager, virus, skadlig kod, hot, identifiering, skydd, säkerhet
+description: Lär dig att hantera, konfigurera och använda Microsoft Defender Antivirus, inbyggt skydd mot skadlig programvara och antivirusskydd.
+keywords: Microsoft Defender Antivirus, windows defender, skydd mot skadlig kod, scep, system center endpoint protection, system center configuration manager, virus, skadlig programvara, hot, identifiering, skydd, säkerhet
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: priority
+localization_priority: Priority
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: eb7e0253b3761d05d112500c0410fffa58548221
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 6fc6ad69df554cf20fbae0d97fcb30f211f48705
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765425"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768800"
 ---
 # <a name="next-generation-protection"></a>Nästa generations skydd
 
@@ -29,37 +29,37 @@ ms.locfileid: "51765425"
 
 - [Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/)
 
-## <a name="microsoft-defender-antivirus-your-next-generation-protection"></a>Microsoft Defender Antivirus: Nästa generations skydd
+## <a name="microsoft-defender-antivirus-your-next-generation-protection"></a>Microsoft Defender Antivirus: Din nästa generations skydd
 
-Microsoft Defender Antivirus är nästa generations skyddskomponent i Microsoft Defender för Slutpunkt. Skyddet samlar maskininlärning, analys av stora data, djupgående forskning om hot och Microsofts molninfrastruktur för att skydda enheter i din företagsorganisation. Dina nästa generations skyddstjänster omfattar följande funktioner:
+Microsoft Defender Antivirus är nästa generations skyddskomponent i Microsoft Defender för Endpoint. Det här skyddet sammanför maskininlärning, stordataanalys, djupgående forskning om resistens mot hot och Microsofts molninfrastruktur för att skydda enheter inom ditt företagsorganisation. Din nästa generations skyddstjänster inkluderar följande funktioner:
 
-- [Funktionsbaserat, heuristiskt](configure-protection-features-microsoft-defender-antivirus.md)och realtidsskydd mot antivirus , som omfattar alltid-on-skanning med fil- och processbeteendeövervakning och annan heuristics (kallas även *realtidsskydd).* Den omfattar även identifiering och blockering av appar som anses osäkra, men inte kan identifieras som skadlig programvara.
-- [Molnskydd, som](cloud-protection-microsoft-defender-antivirus.md)inkluderar omedelbar identifiering och blockering av nya och nya hot.
-- [Särskilda skydd och produktuppdateringar,](manage-updates-baselines-microsoft-defender-antivirus.md)vilket omfattar uppdateringar som gör att Microsoft Defender Antivirus är uppdaterat.
+- [Beteendebaserat, heuristiskt och antivirusprogram i realtid](configure-protection-features-microsoft-defender-antivirus.md), som omfattar alltid på-skanning med fil- och processbeteendeövervakning och andra heuristics (kallas även *realtidsskydd*). Det omfattar även identifiering och blockering av appar som anses vara osäkra, men som inte kan identifieras som skadlig programvara.
+- [Molnbaserat skydd](cloud-protection-microsoft-defender-antivirus.md), som omfattar nästan omedelbar identifiering och blockering av nya och framväxande hot.
+- [Dedikerade uppdateringar av skydd och produkt](manage-updates-baselines-microsoft-defender-antivirus.md), som inkluderar uppdateringar som håller Microsoft Defender Antivirus uppdaterad.
 
 ## <a name="try-a-demo"></a>Prova en demo!
 
-Besök [demowebbplatsen Microsoft Defender för Slutpunkt för](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) att bekräfta att följande skyddsfunktioner fungerar och utforska dem med demoscenarier:
-- Moln levererat skydd
-- Skydd mot block vid första syn (BAFS)
-- PuA-skydd (Potentiellt oönskade program)
+Gå till [Microsoft Defender för Endpoint-demowebbplatsen](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) för att kontrollera att följande skyddsfunktioner fungerar och utforska dem med hjälp av demoscenarier:
+- Molnbaserat skydd
+- Blockera vid första anblicken (BAFS)-skydd
+- Skydd mot potentiellt oönskade program (PUA)
 
-## <a name="minimum-system-requirements"></a>Lägsta systemkrav
+## <a name="minimum-system-requirements"></a>Minimikrav för system
 
-Microsoft Defender Antivirus har samma maskinvarukrav som för Windows 10. Mer information finns i följande resurser:
+Microsoft Defender Antivirus har samma maskinvarukrav som Windows 10. Mer information finns i följande resurser:
 
 - [Minimikrav för maskinvara](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
 - [Riktlinjer för maskinvarukomponenter](/windows-hardware/design/component-guidelines/components)
 
 ## <a name="configure-next-generation-protection-services"></a>Konfigurera nästa generations skyddstjänster
 
-Information om hur du konfigurerar nästa generations skyddstjänster finns i [Konfigurera Microsoft Defender Antivirus-funktioner.](configure-microsoft-defender-antivirus-features.md)
+Information om hur du konfigurerar nästa generations skyddstjänster finns i [Konfigurera funktioner för Microsoft Defender Antivirus](configure-microsoft-defender-antivirus-features.md).
 
 > [!Note]  
-> Konfiguration och hantering är till stor del detsamma i Windows Server 2016 och Windows Server 2019, medan du kör Microsoft Defender Antivirus. Det finns dock vissa skillnader. Mer information finns i [Microsoft Defender Antivirus på Windows Server 2016 och 2019.](microsoft-defender-antivirus-on-windows-server.md)
+> Konfiguration och hantering är i huvudsak detsamma i Windows Server 2016 och Windows Server 2019, när du kör Microsoft Defender Antivirus; det finns dock vissa skillnader. Mer information finns i [Microsoft Defender Antivirus i Windows Server 2016 och 2019](microsoft-defender-antivirus-on-windows-server.md).
 
 ## <a name="see-also"></a>Se även
 
 - [Microsoft Defender Antivirus på Windows Server 2016 och 2019](microsoft-defender-antivirus-on-windows-server.md)
 - [Hantering och konfiguration av Microsoft Defender Antivirus](configuration-management-reference-microsoft-defender-antivirus.md)
-- [Utvärdera antivirusskyddet i Microsoft Defender](evaluate-microsoft-defender-antivirus.md)
+- [Utvärdera Microsoft Defender Antivirus skydd](evaluate-microsoft-defender-antivirus.md)
