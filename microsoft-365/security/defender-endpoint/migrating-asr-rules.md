@@ -15,34 +15,136 @@ ms.author: v-lsaldanha
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: ced969fdd3e8b63136f8bd3f043272e76d99bc5e
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 4385a99206b6d10dee710e4315e690c82359f397
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476554"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755558"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migrera från tredjeparts hips till ASR-regler
 
-I den här artikeln får du hjälp att mappa vanliga regler till Microsoft Defender för Endpoint. Följande tabell visar vanliga frågor och scenarier vid migrering från en HIPS-produkt från tredje part till ASR-regler.
+I den här artikeln får du hjälp att mappa vanliga regler till Microsoft Defender för Endpoint.
 
-|Omfattning och åtgärd|Processer|Åtgärd|Exempel på filer/mappar, registernycklar/värden, processer, tjänster|Regler för att minska attackytan|Andra rekommenderade funktioner|
-|:--|:--|:--|:--|:--|:--|
-|Alla processer: Blockera skapandet av specifika filer och registernycklar||Skapa filer|*.zeppel, *.odin, *.locky, *.jaff, *.lukitus, *.wnry, *.krab|ASR-regler blockerar attacktekniker och inte indikatorerna på kompromettering (IOC). Att blockera ett specifikt filtillägg är inte alltid praktiskt, eftersom det inte hindrar en enhet från att kompromettera. Det endast delvis överlappar en attack tills attacker skapar en ny typ av förlängning för nyttolasten.|Vi rekommenderar att du har Microsoft Defender AV aktiverat, tillsammans med molnskydds- och funktionsanalys. Vi rekommenderar att du använder andra skydd mot utpressningstrojaner, till exempel ASR-regeln "Använd avancerat skydd mot utpressningstrojaner". Detta ger bättre skydd mot utpressningstrojaner. Dessutom övervakas flera av dessa registernycklar av Microsoft Defender för Endpoint, till exempel ASEP-tekniker som utlöser specifika aviseringar. De registernycklar som används kräver minst lokal administratör eller behörigheter för betrodd installationsprogram för att kunna ändras. Vi rekommenderar att du använder en låst miljö, med lägsta administrativa konton eller rättigheter. Andra systemkonfigurationer kan aktiveras, bland annat "Disable SeDebug for non-required roles" (inaktivera Felsökning för icke-obligatoriska roller) som är en del av våra bredare säkerhetsrekommendationer.|
-|Alla processer: Blockera skapandet av specifika filer och registernycklar||Registerändringar|*\Software \* ,HKCU\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs \* \StartExe, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options \* \Debugger,HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit \* \MonitorProcess|ASR-regler blockerar attacktekniker och inte indikatorerna på kompromettering (IOC). Att blockera ett specifikt filtillägg är inte alltid praktiskt, eftersom det inte hindrar en enhet från att kompromettera. Det endast delvis överlappar en attack tills attacker skapar en ny typ av förlängning för nyttolasten.|Vi rekommenderar att du har Microsoft Defender AV aktiverat, tillsammans med molnskydds- och funktionsanalys. Vi rekommenderar att du använder ytterligare skydd mot utpressningstrojaner, till exempel ASR-regeln "Använd avancerat skydd mot utpressningstrojaner". Detta ger bättre skydd mot utpressningstrojaner. Dessutom övervakas flera av dessa registernycklar av Microsoft Defender för Endpoint, till exempel ASEP-tekniker som utlöser specifika aviseringar. Dessutom måste de registernycklar som används ha minst lokal administratörsbehörighet eller behörigheten för ett betrott installationsprogram för att kunna ändras. Vi rekommenderar att du använder en låst miljö, med lägsta administrativa konton eller rättigheter. Andra systemkonfigurationer kan aktiveras, bland annat "Disable SeDebug for non-required roles" (inaktivera Felsökning för icke-obligatoriska roller) som är en del av våra bredare säkerhetsrekommendationer.|
-|Icke betrodda program från USB: Blockera icke betrodda program från att köras från flyttbara enheter|*|Processkörning|*|ASR-regler har en inbyggd regel för att förhindra lanseringen av icke betrodda och osignerade program från flyttbara enheter: "Blockera icke betrodda och osignerade processer som körs från USB", GUID "b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4".|Utforska ytterligare kontroller för USB-enheter och andra flyttbara medium med hjälp av Microsoft Defender för Endpoint: Styra USB-enheter och andra flyttbara medium med hjälp av [Microsoft Defender för Slutpunkt.](https://docs.microsoft.com/windows/security/threat-protection/device-control/control-usb-devices-using-intune) |
-|Mshta: Blockera Mshta från att starta vissa underordnade processer|mshta.exe|Processkörning|powershell.exe, cmd.exe, regsvr32.exe|ASR-reglerna innehåller inte någon särskild regel för att förhindra att underordnade processer "mshta.exe". Den här kontrollen ligger inom ramen för Sårbarhetsskydd eller Windows Defender-programkontroll.|Aktivera Programkontroll i Windows Defender för att mshta.exe att inte köras helt och hållet. Om din organisation kräver "mshta.exe" för verksamhetsspecifika appar konfigurerar du en specifik regel för sårbarhetsskydd i Windows Defender för att förhindra att mshta.exe startar underordnade processer.|
-|Outlook: Blockera Outlook från att starta underordnade processer|outlook.exe|Processkörning|powershell.exe|ASR-regler har en inbyggd regel för att förhindra att Office-kommunikationsappar (Outlook, Skype och Teams) startar underordnade processer: "Blockera Office-kommunikationsprogram från att skapa underordnade processer", GUID "26190899-1602-49e8-8b27-eb1d0a1ce869".|Vi rekommenderar att du aktiverar begränsat språkläge i PowerShell för att minimera attackytan från PowerShell.|
-|Office: Blockera Office-program från att starta underordnade processer och från att skapa körbart innehåll|winword.exe, powerpnt.exe, excel.exe|Processkörning|powershell.exe, cmd.exe, wscript.exe, mshta.exe, EQNEDT32.EXE, regsrv32.exe|ASR-regler har en inbyggd regel som hindrar Office-appar från att starta underordnade processer: "Blockera alla Office-program från att skapa underordnade processer", GUID "D4F940AB-401B-4EFC-AADC-AD5F3C50688A".|Uppgift saknas|
-|Office: Blockera Office-program från att starta underordnade processer och från att skapa körbart innehåll|winword.exe, powerpnt.exe, excel.exe|Skapa filer|C:\Användare \* \AppData \* *\* .exe, C:\ProgramData \** \* .exe, C:\ProgramData \* *\* .com, C:\Users \* AppData\Local\Temp \** \* .com, C:\Users \* *\Downloads \** \* .exe, C:\Users \* \AppData \* *\* .scf, C:\ProgramData \** \* .scf, C:\Users\Public \* .exe, C:\Users \* \Desktop \* * \* .exe|Uppgift saknas|
-|Wscript: Blockera Wscript från att läsa vissa typer av filer|wscript.exe|Läsa filen|C:\Users \* \AppData \* *\* .js*, C:\Users \* \Downloads \* *\* .js*|På grund av tillförlitlighets- och prestandaproblem har ASR-regler inte möjlighet att förhindra att en viss process läser en viss skriptfiltyp. Vi har en regel för att förhindra attackvektorer som kan komma från dessa scenarier. Regelnamnet är "Blockera JavaScript eller VBScript från att starta hämtat körbart innehåll" (GUID "D3E037E1-3EB8-44C8-A917-5792794759) "Blockera körning av potentiellt oönskade skript" (GUID " 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC")|Även om det finns specifika ASR-regler som minimerar vissa attackvektorer i dessa scenarier är det viktigt att nämna att AV som standard kan kontrollera skript (PowerShell, Windows Script Host, JavaScript, VBScript med mera) i realtid, via AMSI (Antimalware Scan Interface). Mer information finns här: [Amsi (Antimalware Scan Interface).](https://docs.microsoft.com/windows/win32/amsi/antimalware-scan-interface-portal) |
-|Adobe Acrobat: Blockera lansering av underordnade processer|AcroRd32.exe, Acrobat.exe|Processkörning|cmd.exe, powershell.exe, wscript.exe|ASR-regler tillåter att Adobe Reader inte startar underordnade processer. Regelnamnet är "Blockera Adobe Reader från att skapa underordnade processer", GUID "7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c".|Uppgift saknas|
-|CertUtil: Blockera nedladdning eller skapande av körbart innehåll|certutil.exe|Skapa filer|*.exe|ASR-reglerna stöder inte dessa scenarier eftersom de är en del av Microsoft Defender Antivirus Protection.|Microsoft Defender AV förhindrar Att CertUtil skapar eller laddar ned körbart innehåll.|
-|Alla processer: Blockera processer från att stoppa kritiska systemkomponenter|*|Avtalsavslut|MsSense.exe, MsMpEng.exe, NisSrv.exe, svchost.exe*, services.exe, csrss.exe, smss.exe, wininit.exe med mera.|ASR-reglerna stöder inte dessa scenarier eftersom de skyddas med inbyggda säkerhetsskydd i Windows 10.|ELAM (early launch AntiMalware), PPL (Protection Process Light), PPL AntiMalware Light och System Guard.|
-|Specifika processer: Blockera specifikt processförsök för lansering|"Namnge din process"|Processkörning|tor.exe, bittorrent.exe, cmd.exe, powershell.exe med mera.|Generellt sett är INTE ASR-reglerna utformade att fungera som programhanterare.|För att förhindra att användare startar specifika processer eller program rekommenderas du att använda Windows Defender-programkontrollen. Microsoft Defender för slutpunktsfiler och certifikatindikatorer kan användas i ett scenario med incidentsvar (ska inte ses som en programkontrollmekanism).|
-|Alla processer: Blockera obehöriga ändringar i MDATP AV-konfigurationer|*|Registerändringar|HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware, HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\AllowRealTimeMonitoring osv.|ASR-reglerna omfattar inte dessa typer av scenarier eftersom de är en del av det inbyggda skyddet för Microsoft Defender för Slutpunkt.|Manipuleringsskydd (opt-in, hanteras från Intune) förhindrar obehöriga ändringar av DisableAntiVirus, DisableAntiSpyware, DisableRealtimeMonitoring, DisableOnAccessProtection, DisableBehaviorMonitoring och DisableIOAVProtection-registernycklar (med mera). |
+## <a name="scenarios-when-migrating-from-a-third-party-hips-product-to-asr-rules"></a>Scenarier vid migrering från en HIPS-produkt från tredje part till ASR-regler
+
+### <a name="block-creation-of-specific-files-and-registry-keys"></a>Blockera skapandet av specifika filer och registernycklar
+
+- **Gäller för**– alla processer
+- **Åtgärd –** skapa filer
+- **Exempel på filer/mappar, registernycklar/värden, processer,** tjänster - *.zemapp, *.odin, *.locky, *.jaff, *.lukitus, *.wnry, *.krab
+- **Regler för att minska attackytan**– ASR-regler blockerar attacktekniker och inte symboler för kompromettering (IOC). Att blockera ett specifikt filnamnstillägg är inte alltid praktiskt, eftersom det inte hindrar en enhet från att kompromettera. Det endast delvis överlappar en attack tills attacker skapar en ny typ av förlängning för nyttolasten.
+- **Andra rekommenderade funktioner**– Vi rekommenderar att du har Microsoft Defender AV aktiverat, tillsammans med molnskydds- och funktionsanalys. Vi rekommenderar att du använder andra skydd mot utpressningstrojaner, till exempel ASR-regeln "Använd avancerat skydd mot utpressningstrojaner". Detta ger bättre skydd mot utpressningstrojaner. Dessutom övervakas många av dessa registernycklar av Microsoft Defender för Endpoint, till exempel ASEP-tekniker som utlöser specifika aviseringar. De registernycklar som används kräver minst lokal administratör eller behörigheten för ett betrott installationsprogram kan ändras. Vi rekommenderar att du använder en låst miljö, med lägsta administrativa konton eller rättigheter. Andra systemkonfigurationer kan aktiveras, bland annat "Disable SeDebug for non-required roles" (inaktivera Felsökning för icke-obligatoriska roller) som är en del av våra bredare säkerhetsrekommendationer.
+
+### <a name="block-creation-of-specific-files-and-registry-keys"></a>Blockera skapandet av specifika filer och registernycklar
+
+- **Gäller för**– alla processer
+- **Processer**– ej a:
+- **Åtgärd**– registerändringar
+- **Exempel på filer/mappar, registernycklar/värden, processer, tjänster** -  *\Software*,HKCU\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs *\StartExe, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options*\Debugger,HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\MonitorProcess
+- **Regler för att minska attackytan**– ASR-regler blockerar attacktekniker och inte symboler för kompromettering (IOC). Att blockera ett specifikt filnamnstillägg är inte alltid praktiskt, eftersom det inte hindrar en enhet från att kompromettera. Det endast delvis överlappar en attack tills attacker skapar en ny typ av förlängning för nyttolasten.
+- **Andra rekommenderade funktioner**– Vi rekommenderar att du har Microsoft Defender AV aktiverat, tillsammans med molnskydds- och funktionsanalys. Vi rekommenderar att du använder ytterligare skydd, till exempel ASR-regeln "Använd avancerat skydd mot utpressningstrojaner". Detta ger bättre skydd mot utpressningstrojaner. Dessutom övervakas flera av dessa registernycklar av Microsoft Defender för Endpoint, till exempel ASEP-tekniker som utlöser specifika aviseringar. Dessutom måste de registernycklar som används kräva minst lokal administratör eller behörigheten för ett betrott installationsprogram kan ändras. Vi rekommenderar att du använder en låst miljö, med lägsta administrativa konton eller rättigheter. Andra systemkonfigurationer kan aktiveras, bland annat "Disable SeDebug for non-required roles" (inaktivera Felsökning för icke-obligatoriska roller) som är en del av våra bredare säkerhetsrekommendationer.
+
+### <a name="block-untrusted-programs-from-running-from-removable-drives"></a>Blockera program som inte är betrodda från att köras från flyttbara enheter
+
+- **Gäller för**- Icke betrodda program från USB
+- **Processer**– *
+- **Operation**– Processkörning
+- **Exempel på filer/mappar, registernycklar/värden, processer,tjänster:-*
+- Minskningsregler för **Attack Surface**– ASR-regler har en inbyggd regel för att förhindra att icke betrodda och osignerade program startas från flyttbara enheter: "Blockera icke betrodda och osignerade processer som körs från USB", GUID "b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4".
+- **Andra rekommenderade funktioner**– Utforska ytterligare kontroller för USB-enheter och andra flyttbara media med hjälp av Microsoft Defender för Slutpunkt: Styra USB-enheter och andra flyttbara medium med hjälp av [Microsoft Defender för Endpoint.](/windows/security/threat-protection/device-control/control-usb-devices-using-intune)
+
+### <a name="block-mshta-from-launching-certain-child-processes"></a>Blockera Mshta från att starta vissa underordnade processer
+
+- **Gäller för**- Mshta
+- **Processer**– mshta.exe
+- **Operation**– Processkörning
+- **Exempel på filer/mappar, registernycklar/värden, processer,tjänster**- powershell.exe, cmd.exe, regsvr32.exe
+- **Regler för att minska attackytan**– ASR-regler innehåller inga specifika regler för att förhindra att underordnade processer "mshta.exe". Den här kontrollen ligger inom ramen för Sårbarhetsskydd eller Windows Defender-programkontroll.
+- **Andra rekommenderade funktioner**– Aktivera Windows Defender-programkontrollen för att mshta.exe att köras helt och hållet. Om din organisation kräver "mshta.exe" för verksamhetsspecifika appar konfigurerar du en specifik regel för Sårbarhetsskydd i Windows Defender för att förhindra att mshta.exe startar underordnade processer.
+
+### <a name="block-outlook-from-launching-child-processes"></a>Blockera Outlook från att starta underordnade processer
+
+- **Gäller för**– Outlook
+- **Processer**– outlook.exe
+- **Operation**– Processkörning
+- **Exempel på filer/mappar, registernycklar/värden, processer,tjänster**- powershell.exe
+- Regler för att minska attackytan **–** ASR-regler har en inbyggd regel för att förhindra att Office-kommunikationsappar (Outlook, Skype och Teams) startar underprocesser: "Blockera Office-kommunikationsprogram från att skapa barnprocesser", GUID "26190899-1602-49e8-8b27-eb1d0a1ce869".
+- **Andra rekommenderade funktioner**– Vi rekommenderar att du aktiverar PowerShell begränsat språkläge för att minimera attackytan från PowerShell.
 
 
+### <a name="block-office-apps-from-launching-child-processes-and-from-creating-executable-content"></a>Blockera Office-appar från att starta underordnade processer och från att skapa körbart innehåll
+
+- **Gäller för**– Office  
+- **Processer**– winword.exe, powerpnt.exe, excel.exe
+- **Operation**– Processkörning
+- **Exempel på filer/mappar, registernycklar/värden, processer,tjänster**- powershell.exe, cmd.exe, wscript.exe, mshta.exe, EQNEDT32.EXE, regsrv32.exe
+- Regler **för** att minska attackytan – ASR-regler har en inbyggd regel som hindrar Office-appar från att starta underordnade processer: "Blockera alla Office-program från att skapa underordnade processer", GUID "D4F940AB-401B-4EFC-AADC-AD5F3C50688A".
+- **Andra rekommenderade funktioner**– ej tillgängliga
+    
+### <a name="block-office-apps-from-launching-child-processes-and-from-creating-executable-content"></a>Blockera Office-appar från att starta underordnade processer och från att skapa körbart innehåll
+
+- **Gäller för**– Office
+- **Processer**– winword.exe, powerpnt.exe, excel.exe
+- **Åtgärd –** skapa filer
+- Exempel på **filer/mappar, registernycklar/värden, processer,tjänster**- C:\Användare *\AppData **.exe, C:\ProgramData**.exe, C:\ProgramData**.com, C:\Users* AppData\Local\Temp **.com, C:\Users*\Downloads**.exe, C:\Users *\AppData **.scf, C:\ProgramData**.scf, C:\Users\Public*.exe, C:\Users*\Desktop***.exe
+- **Regler för att minska attackytan**– EJ!.
+
+### <a name="block-wscript-from-reading-certain-types-of-files"></a>Förhindra att Wscript läser vissa typer av filer
+
+- **Gäller för**- Wscript
+- **Processer**– wscript.exe
+- **Åtgärd –** Läsning av fil
+- **Exempel på filer/mappar, registernycklar/värden, processer,** tjänster - C:\Användare *\AppData**.js, C:\Användare*\Nedladdningar**.js
+- **Minskningsregler för attackytan**– På grund av tillförlitlighets- och prestandaproblem har ASR-regler inte möjlighet att förhindra att en viss process läser en viss skriptfiltyp. Vi har en regel för att förhindra attackvektorer som kan komma från dessa scenarier. Regelnamnet är "Blockera JavaScript eller VBScript från att starta hämtat körbart innehåll" (GUID "D3E037E1-3EB8-44C8-A917-5792794759) "Blockera körning av potentiellt oönskade skript" (GUID " 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC").
+- Andra rekommenderade funktioner – Även om det finns specifika ASR-regler som minimerar vissa attackvektorer i sådana scenarier är det viktigt att nämna att AV som standard kan kontrollera skript (PowerShell, Windows Script Host, JavaScript, VBScript med mera) i realtid, via AMSI (Antimalware Scan Interface). Mer information finns här: [Amsi (Antimalware Scan Interface).](/windows/win32/amsi/antimalware-scan-interface-portal)
+
+### <a name="block-launch-of-child-processes"></a>Blockera lansering av underordnade processer
+
+- **Gäller för**- Adobe Acrobat
+- **Processer**– AcroRd32.exe, Acrobat.exe
+- **Operation**– Processkörning
+- **Exempel på filer/mappar, registernycklar/värden, processer,** tjänster - cmd.exe, powershell.exe, wscript.exe
+- **Regler för att minska attackytan**– ASR-regler tillåter att Adobe Reader inte startar underordnade processer. Regelnamnet är "Blockera Adobe Reader från att skapa underordnade processer", GUID "7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c".
+- **Andra rekommenderade funktioner**– ej tillgängliga
+
+
+### <a name="block-download-or-creation-of-executable-content"></a>Blockera hämtning eller skapande av körbart innehåll
+
+- **Gäller för**- CertUtil: Blockera nedladdning eller skapande av körbara filer 
+- **Processer**– certutil.exe
+- **Åtgärd –** skapa filer
+- **Exempel på filer/mappar, registernycklar/värden, processer, tjänster**- *.exe
+- **Regler för att minska attackytan**– ASR-reglerna stöder inte dessa scenarier eftersom de är en del av Microsoft Defender Antivirus protection.
+- **Andra rekommenderade funktioner**– Microsoft Defender AV förhindrar CertUtil från att skapa eller ladda ned körbart innehåll.
+
+
+### <a name="block-processes-from-stopping-critical-system-components"></a>Blockera processer från att stoppa kritiska systemkomponenter
+
+- **Gäller för**– alla processer
+- **Processer**– *
+- **Operation**– Processavslutning
+- **Exempel på filer/mappar, registernycklar/värden, processer,** tjänster – MsSense.exe, MsMpEng.exe, NisSrv.exe, svchost.exe*, services.exe, csrss.exe, smss.exe, wininit.exe med mera.
+- **Regler för att minska attackytan**– ASR-reglerna stöder inte dessa scenarier eftersom de är skyddade med inbyggda säkerhetsskydd i Windows 10.
+- **Andra rekommenderade funktioner**– ELAM (Early Launch AntiMalware), PPL (Protection Process Light), PPL AntiMalware Light och System Guard.
+
+### <a name="block-specific-launch-process-attempt"></a>Blockera specifikt startprocessförsök
+
+- **Gäller för**– specifika processer
+- **Processer**- "Namnge din process"
+- **Operation**– Processkörning
+- **Exempel på filer/mappar, registernycklar/värden, processer,** tjänster - tor.exe, bittorrent.exe, cmd.exe, powershell.exe med mera
+- **Regler för att minska attackytan**– ASR-regler är inte utformade för att fungera som programhanterare.
+- **Andra rekommenderade funktioner**– Om du vill förhindra att användare startar specifika processer eller program bör du använda Windows Defender-programkontrollen. Microsoft Defender för slutpunktsfiler och certifikatindikatorer kan användas i ett scenario med incidentsvar (ska inte ses som en mekanism för programkontroll).
+    
+### <a name="block-unauthorized-changes-to-mdatp-av-configurations"></a>Blockera obehöriga ändringar i MDATP AV-konfigurationer
+
+- **Gäller för**– alla processer
+- **Processer**– *
+- **Åtgärd**– registerändringar
+- **Exempel på filer/mappar, registernycklar/värden, processer,** tjänster - HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware, HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\AllowRealTimeMonitoring och så vidare.
+- **Regler för att minska attackytan**– ASR-regler täcker inte in dessa scenarier eftersom de är en del av Microsoft Defender för inbyggt skydd av Slutpunkt.
+- Andra rekommenderade funktioner – Skydd mot manipulering (registrering, hanteras från Intune) förhindrar obehöriga ändringar av DisableAntiVirus, DisableAntiSpyware, DisableRealtimeMonitoring, DisableOnAccessProtection, DisableBehaviorMonitoring och DisableIOAVProtection-registernycklar (med mera).
 
 Se även
 

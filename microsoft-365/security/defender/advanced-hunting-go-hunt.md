@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 392db06aa517e3e970f85ccc971c3a6a6bc6e548
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 0f09f74a1cefad5a9b6b438752ebe57e583397c7
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498294"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759984"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Snabbt jaga efter entitets- eller händelseinformation med go-hunt
 
@@ -39,7 +39,7 @@ Med *sökåtgärden* sök kan du snabbt undersöka händelser och olika entitets
 
 Åtgärden *gåsök* är tillgänglig i olika delar av säkerhetscentret när händelse- eller entitetsinformation visas. Du kan till exempel använda *gå jag* från följande avsnitt:
 
-- På [incidentsidan kan](investigate-incidents.md#incident-overview)du granska information om användare, enheter och många andra enheter som är kopplade till ett problem. När du väljer en entitet får du ytterligare information samt olika åtgärder du kan utföra på den titel. I exemplet nedan är en postlåda markerad och visar information om postlådan samt alternativet för att leta efter mer information om postlådan.
+- På [incidentsidan kan](investigate-incidents.md#summary)du granska information om användare, enheter och många andra enheter som är kopplade till ett problem. När du väljer en entitet får du ytterligare information samt olika åtgärder du kan utföra på den titel. I exemplet nedan är en postlåda markerad och visar information om postlådan samt alternativet för att leta efter mer information om postlådan.
 
     ![Bild som visar postlådeinformation med alternativet gå-jaga](../../media/mtp-ah/go-hunt-email.png)
 

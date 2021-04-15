@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: ddd10e6164a8fae5d0d3d60c04ca854ef9771dba
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f2615cf5ec49c9df27472f04c367f30511e9c0cc
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688747"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759876"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Åtgärda falska positiva/negativa i Microsoft Defender för Endpoint
 
@@ -125,9 +125,11 @@ Om du har aviseringar som antingen är falska positiva eller som är sanna posit
 Andra åtgärder, som att starta en antivirussökning eller samla in ett undersökningspaket, kan inträffa manuellt eller via [Live Response.](live-response.md) Åtgärder som vidtas i Live Response kan inte ångras.
 
 När du har granskat dina aviseringar är nästa steg att [granska åtgärder](manage-auto-investigation.md). Om några åtgärder har vidtagits på grund av falska positiva resultat kan du ångra de flesta typerna av åtgärdsåtgärder. Specifikt kan du:
-- [Ångra en åtgärd i taget](#undo-an-action);
-- [Ångra flera åtgärder samtidigt](#undo-multiple-actions-at-one-time); och 
-- [Ta bort en fil från karantän på flera enheter.](#remove-a-file-from-quarantine-across-multiple-devices) 
+
+- [Återställa en fil i karantän från Åtgärdscenter](#restore-a-quarantined-file-from-the-action-center)
+- [Ångra flera åtgärder samtidigt](#undo-multiple-actions-at-one-time)
+- [Ta bort en fil från karantän på flera enheter.](#remove-a-file-from-quarantine-across-multiple-devices)  och 
+- [Återställa fil från karantän](#restore-file-from-quarantine)
 
 När du har granskat och ångrat åtgärder som har [utförts](#part-3-review-or-define-exclusions)på grund av falska positiva resultat kan du fortsätta att granska eller definiera undantag .
 
@@ -139,7 +141,7 @@ När du har granskat och ångrat åtgärder som har [utförts](#part-3-review-or
 
 3. Välj ett objekt om du vill visa mer information om åtgärden som har vidtagits.
 
-### <a name="undo-an-action"></a>Ångra en åtgärd
+### <a name="restore-a-quarantined-file-from-the-action-center"></a>Återställa en fil i karantän från Åtgärdscenter
 
 1. Gå till Åtgärdscenter ( [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) ) och logga in.
 
@@ -164,7 +166,33 @@ När du har granskat och ångrat åtgärder som har [utförts](#part-3-review-or
 
 2. På fliken **Historik** väljer du en fil som har karantänfilen **Åtgärdstyp.**
 
+3. I fönstret till höger på skärmen väljer du Använd för **fler X-instanser** av den här filen och sedan **Ångra**.
+
+### <a name="restore-file-from-quarantine"></a>Återställa fil från karantän
+
+Du kan återställa och ta bort en fil från karantän om du har fastställt att den är ren efter en undersökning. Kör följande kommando på varje enhet där filen satts i karantän.
+
+1. Öppna en upphöjd kommandoradsfråga på enheten:
+
+   1. Gå till **Start** och skriv _cmd_.
+
+   1. Högerklicka på **Kommandotolken** och välj **Kör som administratör.**
+
+2. Ange följande kommando och tryck på **Retur:**
+
+    ```console
+    "ProgramFiles%\Windows Defender\MpCmdRun.exe" –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+    ```
+
+    > [!NOTE]
+    > I vissa fall kan **ThreatName visas** som: `EUS:Win32/
+CustomEnterpriseBlock!cl` . Defender för Endpoint återställer alla egna blockerade filer som har satts i karantän på den här enheten under de senaste 30 dagarna.
+
+    > [!IMPORTANT]
+    > En fil som har satts i karantän som ett potentiellt nätverkshot kanske inte kan återställas. Om en användare försöker återställa filen efter karantänen är filen kanske inte tillgänglig. Det kan bero på att systemet inte längre har nätverksautentiseringsuppgifter för att få åtkomst till filen. Vanligtvis beror det på en tillfällig inloggning till ett system eller en delad mapp och åtkomsttoken har upphört att gälla.
+
 3. I fönstret till höger på skärmen väljer du Använd för **fler X-instanser** av den här filen och sedan **Ångra**. 
+
 
 ## <a name="part-3-review-or-define-exclusions"></a>Del 3: Granska eller definiera undantag
 

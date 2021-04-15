@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 3f925fdc514c5e53b50f748d991f54d20fb49bd0
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: 6ad61d583815f669affe989d7519ba0ade6fe08d
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488151"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760092"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Registrera Windows 10-multisessionsenheter i det Windows Virtual Desktop 
 6 minuter att läsa 
@@ -54,7 +54,7 @@ Det finns flera sätt att introducera en WVD-värddator:
 #### <a name="scenario-1-using-local-group-policy"></a>*Scenario 1: Använda lokal grupprincip*
 Det här scenariot kräver att skriptet placeras i en gyllene bild och att lokala grupprinciper används för att köras tidigt i startprocessen.
 
-Följ anvisningarna i Hantera [icke-beständiga VDI-enheter med virtuell skrivbordsinfrastruktur.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)
+Följ anvisningarna i Hantera [icke-beständiga VDI-enheter med virtuell skrivbordsinfrastruktur.](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)
 
 Följ instruktionerna för en enskild post för varje enhet.
 
@@ -62,32 +62,41 @@ Följ instruktionerna för en enskild post för varje enhet.
 Det här scenariot använder ett centralt placerade skript och kör det med en domänbaserad grupprincip. Du kan också placera skriptet i den gyllene bilden och köra det på samma sätt.
 
 **Ladda ned WindowsDefenderATPOnboardingPackage.zip-filen från Windows Defender Säkerhetscenter**
+
 1. Öppna ZIP-filen med VDI-konfigurationspaket (WindowsDefenderATPOnboardingPackage.zip)  
-    - I navigeringsfönstret för Microsoft Defender Säkerhetscenter väljer du **Inställningar**  >  **Onboarding**. 
-    - Välj Windows 10 som operativsystem. 
-    - I fältet **Distributionsmetod** väljer du VDI-onboardingskript för icke-beständiga slutpunkter. 
-    - Klicka **på Ladda ned** paket och spara ZIP-filen. 
+
+    1. I navigeringsfönstret för Microsoft Defender Säkerhetscenter väljer du **Inställningar**  >  **Onboarding**. 
+    1. Välj Windows 10 som operativsystem. 
+    1. I fältet **Distributionsmetod** väljer du VDI-onboardingskript för icke-beständiga slutpunkter. 
+    1. Klicka **på Ladda ned** paket och spara ZIP-filen. 
+
 2. Extrahera innehållet i ZIP-filen till en delad, skrivskyddad plats som kan nås av enheten. Du bör ha en mapp med namnet **OptionalParamsPolicy** och filerna **WindowsDefenderATPOnboardingScript.cmd** **ochOnboard-NonPersistentMachine.ps1**.
 
 **Använda konsolen för hantering av grupprinciper för att köra skriptet när den virtuella datorn startar**
+
 1. Öppna GPMC (Group Policy Management Console), högerklicka på det grupprincipobjekt (GPO) du vill konfigurera och klicka på **Redigera.**
+
 1. Gå till Inställningar för datorkonfiguration i **redigeraren för hantering** av \>  \> **grupprinciper på Kontrollpanelen.** 
+
 1. Högerklicka på **Schemalagda aktiviteter,** klicka **på Nytt** och klicka sedan på Direkt **aktivitet** (minst Windows 7). 
+
 1. I uppgiftsfönstret som öppnas går du till **fliken** Allmänt. Under **Säkerhetsalternativ klickar** du **på Ändra användare eller grupp** och skriver SYSTEM. Klicka **på Kontrollera namn** och sedan på OK. NT AUTHORITY\SYSTEM visas som det användarkonto som aktiviteten körs som. 
+
 1. Välj **Kör om användaren är inloggad eller inte** och markera kryssrutan Kör med **högst** behörighet. 
+
 1. Gå till fliken **Åtgärder** och klicka på **Ny**. Kontrollera att **Starta ett program** är markerat i fältet Åtgärd. Ange följande: 
 
-> Åtgärd = "Starta ett program" <br>
-> Program/Skript = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
-> Add arguments (optional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"
+    > Åtgärd = "Starta ett program" <br>
+    > Program/Skript = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
+    > Add arguments (optional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"
 
-Klicka **på OK** och stäng alla öppna GPMC-fönster.
+1. Klicka **på OK** och stäng alla öppna GPMC-fönster.
 
 #### <a name="scenario-3-onboarding-using-management-tools"></a>*Scenario 3: Introduktion med hanteringsverktyg*
 
 Om du planerar att hantera dina datorer med ett hanteringsverktyg kan du hantera enheter med Microsoft Endpoint Configuration Manager.
 
-Mer information finns i: Informera [Windows 10-enheter med Konfigurationshanteraren](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm) 
+Mer information finns i Informera [Windows 10-enheter med Konfigurationshanteraren.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm) 
 
 > [!WARNING]
 > Om du tänker använda minskningsregler för [attackytan](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)bör du observera att regeln " Blockera processskapanden som kommer från[PSExec-](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)och WMI-kommandon " inte bör användas eftersom den är inkompatibel med hantering via Microsoft Endpoint Configuration Manager eftersom den här regeln blockerar WMI-kommandon som Configuration Manager-klienten använder för att fungera korrekt. 

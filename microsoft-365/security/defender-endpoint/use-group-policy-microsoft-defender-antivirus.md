@@ -10,16 +10,18 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 03/31/2021
+ms.date: 04/13/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6c411507b834bd7f09f4688bda11e3ece9f6d7c8
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+audience: ITPro
+ms.topic: how-to
+ms.openlocfilehash: b8122807b8e26a848781f9f66f8e13032345f3fd
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51691295"
+ms.locfileid: "51749920"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Använda grupprincipinställningar för att konfigurera och hantera Microsoft Defender Antivirus
 
@@ -87,9 +89,9 @@ Följande tabell i det här avsnittet innehåller de grupprincipinställningar s
 | Åtgärda | Ange tid på dagen då en schemalagd fullständig genomsökning ska köras för att slutföra åtgärd | [Konfigurera schemalagda genomsökningar för Microsoft Defender Antivirus](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Rapportering | Inaktivera utökade meddelanden | [Konfigurera meddelanden som visas på slutpunkter](configure-notifications-microsoft-defender-antivirus.md)
 | Rot | Inaktivera Microsoft Defender Antivirus | Används inte (Inställningen måste vara Ej **konfigurerad för att säkerställa** att alla installerade antivirusappar från tredje part fungerar som de ska)
-| Rot | Definiera adresser för att kringgå proxyserver | Inte längre relevant |
-| Rot | Definiera autoconfig proxy (.pac) för anslutning till nätverket | Inte längre relevant |
-| Rot | Definiera proxyserver för anslutning till nätverket | Inte längre relevant |
+| Rot | Definiera adresser för att kringgå proxyserver | Används inte |
+| Rot | Definiera autoconfig proxy (.pac) för anslutning till nätverket | Används inte |
+| Rot | Definiera proxyserver för anslutning till nätverket | Används inte |
 | Rot | Konfigurera lokala administratörskopplingsbeteenden för listor | [Förhindra eller tillåta användare att lokalt ändra principinställningar](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Rot | Tillåt att program mot skadlig programvara startar med vanlig prioritet | [Konfigurera åtgärder för genomsökningar för Microsoft Defender Antivirus](configure-remediation-microsoft-defender-antivirus.md) |
 | Rot | Tillåt att program mot skadlig programvara alltid körs | [Konfigurera åtgärder för genomsökningar för Microsoft Defender Antivirus](configure-remediation-microsoft-defender-antivirus.md) |

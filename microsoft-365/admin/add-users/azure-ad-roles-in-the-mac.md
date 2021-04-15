@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Hantera dessa Azure-administratörsroller i administrationscentret för Microsoft 365.
-ms.openlocfilehash: b07174763384150a7ae8cda6709f5d0ec5cb40ec
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 72835a0f9fdf9a15fc3ffa07c0fab6ca6f0260cb
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904498"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759948"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Azure Active Directory-roller i administrationscentret för Microsoft 365
 
@@ -29,15 +29,11 @@ I administrationscentret för Microsoft 365 kan du hantera över 30 Azure AD-rol
 
 En användare som har tilldelats en administratörsroll får samma behörigheter till alla molntjänster som organisationen prenumererar på, oavsett om du tilldelar rollen i administrationscentret för Microsoft 365, i Azure-portalen eller med Azure AD-modulen för Windows PowerShell.
 
-::: moniker range="o365-worldwide"
-
 I Administrationscenter för Microsoft 365 går du till **Roller** och väljer sedan en roll för att öppna informationsfönstret. Välj fliken **Behörigheter** om du vill visa en detaljerad lista över vilka behörigheter som administratörer som tilldelats rollen har. Välj fliken **Tilldelad** eller **Tilldelade administratörer** om du vill lägga till användare i roller. Mer information om hur du tilldelar roller i Administrationscenter för Microsoft 365 finns i [Tilldela administratörsroller](assign-admin-roles.md).
-
-::: moniker-end
 
 ## <a name="all-azure-ad-roles"></a>Alla Azure Active Directory-roller
 
-Här följer en lista över alla tillgängliga administratörsroller i administrationscentret för Microsoft 365. Letar du efter detaljerade rollbeskrivningar för Microsoft 365-administratörsrollerna? Se [Om administratörsroller](./about-admin-roles.md?view=o365-worldwide).
+Här följer en lista över alla tillgängliga administratörsroller i administrationscentret för Microsoft 365. Letar du efter detaljerade rollbeskrivningar för Microsoft 365-administratörsrollerna? Se [Om administratörsroller](./about-admin-roles.md).
 
 |Administratörsroll     |Beskrivning  |
 |---------|---------|

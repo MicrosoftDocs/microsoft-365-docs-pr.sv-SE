@@ -1,5 +1,5 @@
 ---
-title: Översikt över incidenter i Microsoft 365 Defender
+title: Incidenter i Microsoft 365 Defender
 description: Undersök incidenter som visas på olika enheter, användare och postlådor.
 keywords: incidenter, aviseringar, undersöker, korrelation, attack, datorer, enheter, användare, identiteter, identiteter, postlåda, e-post, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6dd13c5f83d05be3c77e5f84608fb6aa5172d9a4
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 5b2baa2041a8cffcea212eb449d40b9a9cbfc22a
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500925"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759509"
 ---
-# <a name="incidents-overview-in-microsoft-365-defender"></a>Översikt över incidenter i Microsoft 365 Defender
+# <a name="incidents-in-microsoft-365-defender"></a>Incidenter i Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,27 +40,74 @@ ms.locfileid: "51500925"
 > Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera det i en laboratoriemiljö](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) eller [köra ett pilotprojekt i produktionen](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
+En incident i Microsoft 365 Defender är en samling korrelerade aviseringar och associerade data som utgör attackens historia. 
 
-Incidenterna baseras på relaterade aviseringar. Aviseringar skapas när en skadlig händelse eller aktivitet visas i nätverket. Enskilda aviseringar ger värdefulla ledtrådar om en 1:e attack. Men attacker använder vanligtvis olika vektorer och tekniker för att utföra ett intrång. Det kan vara svårt och tidskrävande att samla enskilda ledtrådar.
+I Microsoft 365-tjänster och -appar skapas aviseringar när de upptäcker misstänkt eller skadlig händelse eller aktivitet. Enskilda aviseringar ger värdefulla ledtrådar om en slutförd eller pågående attack. Men attacker använder vanligtvis olika tekniker mot olika typer av enheter, till exempel enheter, användare och postlådor. Resultatet är flera aviseringar för flera enheter i klientorganisationen. 
 
-Den här korta videon ger en översikt över incidenter i Microsoft 365 Defender.
+Eftersom det kan vara svårt och tidskrävande att samla ihop enskilda aviseringar för att få insikter i en attack aggregerar Microsoft 365 Defender automatiskt aviseringarna och deras tillhörande information till en incident.
+
+:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="Hur Microsoft 365 Defender korrelerar händelser från enheter till ett incident":::
+
+Titta på den här korta översikten över incidenter i Microsoft 365 Defender (4 minuter).
+
 <br>
-
+<br>
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-En incident är en samling korrelerade varningar som utgör berättelse om en attack. Skadliga och misstänkta händelser som hittas på olika enheter, användare och postlådeenheter i nätverket aggregeras automatiskt av Microsoft 365 Defender. Att gruppera relaterade aviseringar till en händelse ger säkerhetssäkerhet en omfattande bild av en attack. 
+Om du grupperar relaterade aviseringar i en incident får du en omfattande bild av en attack. Du kan till exempel se:
 
-Säkerhetsvakten kan till exempel se var attacken började, vilka taktiker som användes och hur långt attacken har varit i nätverket. De kan också se attackens omfattning, till exempel hur många enheter, användare och postlådor som påverkades, hur allvarligt påverkan det var och annan information om berörda enheter.
+- Var attacken började.
+- Vilka taktiker användes.
+- Hur långt attacken har varit i din klientorganisation.
+- Attackens omfattning, till exempel hur många enheter, användare och postlådor som påverkades. 
+- Alla data som är associerade med attacken.
 
-Om den är aktiverad kan Microsoft 365 Defender automatiskt undersöka och lösa enskilda aviseringar via automatisering och artificiell intelligens. Säkerhetshändelser kan också utföra ytterligare åtgärdsåtgärder för att lösa attacken direkt från händelsevyn. 
+Om [den](m365d-enable.md)är aktiverad kan Microsoft 365 Defender automatiskt undersöka och åtgärda varningar med hjälp av automatisering och artificiell intelligens. Du kan också utföra ytterligare åtgärdssteg för att lösa attacken. 
 
-Incidenter från de senaste 30 dagarna visas i incidentkön. Säkerhetsärenden kan direkt se vilka ärenden som ska prioriteras utifrån risknivå och andra faktorer. 
+## <a name="incidents-and-alerts-in-the-microsoft-365-security-center"></a>Incidenter och aviseringar i Säkerhetscenter för Microsoft 365
 
-Säkerhetsärenden kan också byta namn på incidenter, tilldela dem till enskilda analytiker, klassificera och lägga till taggar i incidenter för att få en bättre och mer anpassad upplevelse med incidenthantering.
+Du hanterar incidenter **från & och > incidenter** i snabbstarten av Säkerhetscenter för Microsoft 365 [(security.microsoft.com).](https://security.microsoft.com) Här är ett exempel.
 
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Sidan Incidenter i Säkerhetscenter för Microsoft 365":::
 
+När du väljer ett namn på incidenten visas en sammanfattning av händelsen och det ger tillgång till flikar med ytterligare information.
 
-## <a name="see-also"></a>Se även
-- [Prioritera incidenter](incident-queue.md)
-- [Undersöka incidenter](investigate-incidents.md)
-- [Hantera incidenter](manage-incidents.md)
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exempel på sidan Sammanfattning för en incident i säkerhetscentret i Microsoft 365":::
+
+Ytterligare flikar för en händelse är:
+
+- Varningar 
+
+  Alla aviseringar som rör händelsen och deras information.
+
+- Enheter
+
+  Alla enheter som har identifierats vara en del av eller relaterade till händelsen.
+
+- Användare
+
+  Alla användare som har identifierats vara en del av eller relaterade till händelsen.
+
+- Postlådor
+
+  Alla postlådor som har identifierats vara en del av eller relaterade till händelsen.
+
+- Undersökningar
+
+  Alla automatiserade undersökningar som utlösts av aviseringar i händelsen.
+
+- Bevis och svar
+
+  Alla händelser som stöds och misstänkta enheter i aviseringarna om händelsen.
+
+Här är förhållandet mellan en incident och dess data och flikarna för ett incident i Säkerhetscenter i Microsoft 365.
+
+:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="Relationen mellan en händelse och dess data till flikarna för en händelse i Säkerhetscenter i Microsoft 365":::
+
+## <a name="next-step"></a>Nästa steg
+
+I incidentkön på **sidan Incidenter** visas de senaste incidenterna. Härifrån kan du:
+
+- Se vilka incidenter som [ska prioriteras](incident-queue.md) utifrån allvarlighetsgrad och andra faktorer. 
+- Undersöka [en](investigate-incidents.md) händelse.
+- [Hantera incidenter,](manage-incidents.md)som omfattar att byta namn på, tilldela dem, klassificera och lägga till taggar för arbetsflödet för incidenthantering.

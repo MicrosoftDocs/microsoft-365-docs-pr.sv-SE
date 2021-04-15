@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Lär dig hur du tar bort ett användarkonto. Bestäm vad du vill göra med användarens e-post och OneDrive-innehåll. Och bestäm om du vill behålla produktlicensen eller sluta betala för den.
-ms.openlocfilehash: 5c647d353f807f20a35c889ba1d6f7715343c5cb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0069577b83c318fa57eaceddccc93b5832e634e0
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904450"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755566"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Ta bort en användare från organisationen
   
@@ -59,15 +59,21 @@ Innan du börjar ska du bestämma dig för vad du vill göra med användarens e-
 Du blir guidad genom processen för att ta bort en användare. Så här kommer du igång.
 
 ::: moniker range="o365-worldwide"
+
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
+
+ 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
+
+ 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
+
 ::: moniker-end
 
 2. Markera den användare som du vill ta bort och välj sedan Ta **bort användare.**

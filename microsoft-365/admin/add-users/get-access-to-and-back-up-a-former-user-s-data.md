@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: Lär dig hur du bevarar en anställds filer och e-postmeddelanden när personen lämnar organisationen.
-ms.openlocfilehash: 38cc44bbe602f3c8c38ca54391d0967fbafbfcf7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 17911e4a4551bba07d2c2ad034941bba737dcc1d
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906318"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755612"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Få åtkomst till och säkerhetskopiera en tidigare anställds användardata.
 
@@ -44,8 +44,22 @@ Om du vill behålla en tidigare användares OneDrive-filer ger du först dig sj�
 
 ::: moniker range="o365-worldwide"
 
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.  
-    
+1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
+
+::: moniker-end
+
 2. Välj en användare.
 
 3. Välj OneDrive i det **högra fönstret.** Under **Få åtkomst till filer** väljer du Skapa länk till **filer**.
@@ -56,69 +70,27 @@ Om du vill behålla en tidigare användares OneDrive-filer ger du först dig sj�
 > Du kan flytta eller kopiera upp till 500 MB filer och mappar i taget.<br/>
 > När du flyttar eller kopierar dokument som har versionshistorik flyttas bara den senaste versionen.  
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.  
-
-2. Välj en användare.
-
-3. I det högra fönstret expanderar **du OneDrive-inställningar,** och bredvid **Access** väljer du sedan **Access-filer**.
-
-4. Klicka på länken för att öppna filens plats. Ladda ned filerna till datorn  eller  välj Flytta till eller Kopiera för att flytta eller kopiera dem till din egen OneDrive eller till ett delat bibliotek. 
-
-> [!NOTE]
-> Du kan flytta eller kopiera upp till 500 MB filer och mappar i taget.<br/>
-> När du flyttar eller kopierar dokument som har versionshistorik flyttas bara den senaste versionen.  
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>. 
-
-2. Välj en användare.
-
-3. I det högra fönstret expanderar **du OneDrive-inställningar,** och bredvid **Access** väljer du sedan **Access-filer**.
-
-4. Klicka på länken för att öppna filens plats. Ladda ned filerna till datorn  eller  välj Flytta till eller Kopiera för att flytta eller kopiera dem till din egen OneDrive eller till ett delat bibliotek.  
-
-> [!NOTE]
-> Du kan flytta eller kopiera upp till 500 MB filer och mappar i taget.<br/>
-> När du flyttar eller kopierar dokument som har versionshistorik flyttas bara den senaste versionen.  
-
-::: moniker-end
-    
-
-
 ## <a name="revoke-admin-access-to-a-users-onedrive"></a>Återkalla administratörsåtkomst till en användares OneDrive
 
 Som global administratör kan du ge dig själv åtkomst till innehållet på en användares OneDrive, men du kanske vill ta bort åtkomsten när du inte längre behöver den. 
 
-::: moniker range="o365-worldwide"
+ ::: moniker range="o365-worldwide"
 
-1. Logga in i <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrationscentret som</a> global administratör eller SharePoint-administratör. 
-
-    Om du får ett meddelande om att du inte har behörighet att komma åt administrationscentret har du inte administratörsbehörighet i din organisation.
+1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Logga in i <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret som</a> global administratör eller SharePoint-administratör.
-
-    Om du får ett meddelande om att du inte har behörighet att komma åt administrationscentret har du inte administratörsbehörighet i din organisation.
+1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Logga in i <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret som</a> global administratör eller SharePoint-administratör.
+1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
-    Om du får ett meddelande om att du inte har behörighet att komma åt administrationscentret har du inte administratörsbehörighet i din organisation.
-
-::: moniker-end
+::: moniker-end 
 
 2. I den vänstra rutan väljer du **Administrationscenter** \> **SharePoint**. (Eventuellt måste du välja **Visa alla för** att listan över administrationscenter ska visas.)
 

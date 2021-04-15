@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Få reda på hur du avbryter din utvärderingsversion eller betalda prenumeration för Microsoft 365 för företag.
 ms.date: ''
-ms.openlocfilehash: 0d37a2459c89bf5931af26a91ed14e2898c1c8c4
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 2163462ae206871d66155331096337c29d6a87c2
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615393"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644650"
 ---
 # <a name="cancel-your-subscription"></a>Avbryt din prenumeration
 
@@ -47,6 +47,15 @@ Om du har lagt till ett eget domännamn för användning med din prenumeration m
 ::: moniker range="o365-worldwide"
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
+2. Hitta den prenumeration du vill avbryta. Välj **Fler åtgärder** (tre punkter) och välj sedan **Avbryt prenumeration**.
+3. I fönstret **Avbryt prenumeration** väljer du en anledning till varför du avbryter prenumerationen. Alternativt kan du ge valfri feedback.
+4. Välj **Spara**.
+
+Din prenumeration får status **Inaktiverad** och har begränsad funktionalitet tills den tas bort. Mer information om vad du kan förvänta dig när en betald Microsoft 365 för företag-prenumeration avbryts finns i [Vad händer med data och åtkomst när min Microsoft 365 för företag-prenumeration avslutas?](what-if-my-subscription-expires.md)
+
+> [!NOTE]
+> Om du tar bort en prenumeration försvinner utgångna och inaktiverade faser så tas data och innehåll i SharePoint Online, inklusive OneDrive, bort omedelbart.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"

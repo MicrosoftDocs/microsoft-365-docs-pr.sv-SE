@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.date: 02/02/2021
+ms.date: 04/07/2021
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -19,18 +19,16 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 142bc305950f9322c90e0d207f255c14abbc6b8c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d89e5dc29bfe7f980d40a9a5b139884750a966bc
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197939"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760020"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>Översikt över det enhetliga säkerhetscentret för Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 **Gäller för:**
 
@@ -57,39 +55,39 @@ Om du behöver information om vad som har ändrats från Säkerhets- och efterle
 
 Allt säkerhetsinnehåll som du använder i Säkerhets- och efterlevnadscenter för Office 365 (protection.office.com) och Microsoft Defender säkerhetscenter (securitycenter.microsoft.com) finns nu i Säkerhetscenter för *Microsoft 365.*
 
-Microsoft 365 säkerhetscenter hjälper säkerhetsteam att undersöka och svara på attacker genom att salta i signaler från olika arbetsbelastningar till en enda enhetlig upplevelse:
+Microsoft 365 säkerhetscenter hjälper säkerhetsteam att undersöka och svara på attacker genom att ta in signaler från olika arbetsbelastningar i en uppsättning enhetliga upplevelser för:
 
 - Incidenter & aviseringar
 - Jakt
 - Åtgärdscenter
 - Analys av hot
 
-Säkerhetscentret i Microsoft 365 framhäver *enhet, tydlighet* och gemensamma mål när Microsoft Defender för Office 365 och Microsoft Defender för Slutpunkt sammanfogas. Kopplingen gjordes utifrån de prioriteringar som anges nedan och skapade utan att ha tagit av de funktioner som respektive säkerhetssvit hade i kombination:
+Säkerhetscentret i Microsoft 365 framhäver *enhet, tydlighet* och gemensamma mål när Microsoft Defender för Office 365 och Microsoft Defender för Slutpunkt sammanfogas. Kopplingen gjordes utifrån de prioriteringar som anges nedan och skapade utan att ha tagit av de funktioner som respektive säkerhetssvit hade i kombination av:
 
-- vanliga byggblock
-- vanlig terminologi
-- vanliga enheter
-- funktionsparitet med andra arbetsbelastningar
+- Vanliga byggblock
+- Vanlig terminologi
+- Vanliga enheter
+- Funktionsparitet med andra arbetsbelastningar
 
 ## <a name="unified-investigations"></a>Enhetliga undersökningar
 
-Effektiviserade säkerhetscenter skapar ett enda fönster för att undersöka eventuella incidenter i en Microsoft 365-organisation. Ett primärt exempel är **noden Incidenter** i snabbstarten för Säkerhetscenter för Microsoft 365.
+Konvergerande säkerhetscenter skapar en enda plats för att undersöka säkerhetstillbud i Microsoft 365. Ett primärt exempel är **Incidenter** under **& aviseringar** i snabbstarten av Microsoft 365 Säkerhetscenter.
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Sidan Incidenter i MDO.":::
+:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Sidan Incidenter i Säkerhetscenter för Microsoft 365.":::
 
-Om du till exempel dubbelklickar på  ett incidentnamn med hög allvarlighetsgrad kommer du till en sida som visar fördelarna med att skapa konvergerande centra.
+När du väljer ett incidentnamn visas en sida som visar värdet på konvergerande säkerhetscenter.
 
-![Incident i flera steg som innefattar eskalering av behörighet på flera slutpunkter, med visning av 16 påverkade enheter och 9 påverkade användare.](../../media/converged-incident-info-3.png)
+:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Exempel på sidan Sammanfattning för en incident i säkerhetscentret i Microsoft 365":::
 
-> [!TIP]
-> Fliken Konvergerade **användare** är en bra plats att påbörja dina förfrågningar på. Den här sidan visar information för användare från konvergerade arbetsbelastningar (Microsoft Defender för slutpunkt, Microsoft Defender för identitet och MCAS om du använder det) och ett antal källor, till exempel lokal Active Directory, Azure Active Directory, synkroniserade användare, lokala användare och tredjepartsanvändare. Läs mer om [den nya användarupplevelsen.](investigate-users.md)
+<!--
+![Example of the Summary page for an incident in the Microsoft 365 security center](../../media/converged-incident-info-3.png)
+--> 
 
-Incidentinformation visar användar-/identitetsspecifik information och enheter med risk, bredvid berörda postlådor. Den relaterar även eventuell **undersökningsinformation och** samlade **bevis**. Det gör det enklare för administratörer och säkerhetsåtgärdsteam att pivotera från en högriskvarning till berörda användare och postlådor. När du tittar **på flikarna** Incident högst upp på den här sidan finns det andra viktiga säkerhetspivot tillgängliga på den här platsen.
+Längst upp på en incidentsida visas flikarna Sammanfattning **,** Aviseringar **,** Enheter **,** Användare **,** **Postlådor,** Undersökningar **och** Bevis. Välj de här flikarna om du vill ha mer detaljerad information. På fliken  Användare visas till exempel information om användare från konvergerade arbetsbelastningar (Microsoft Defender för slutpunkt, Microsoft Defender för identitet och Microsoft Cloud App Security) och ett antal källor, till exempel AD DS (Active Directory Domain Services), Azure Active Directory (Azure AD) och tredjepartsidentitetsproviders. Mer information finns i [undersöka användare](investigate-users.md).
 
-> [!IMPORTANT]
-> Längst upp på valfri sida för en specifik händelse visas flikarna Sammanfattning **,** Aviseringar **,** Enheter **,** Användare **,** **Postlådor,** Undersökningar **och** Bevis.
+Ta dig tid att granska alla incidenter i din miljö, gå in på följande flikar och öva på att bygga upp en förståelse för hur du får åtkomst till informationen för incidenter för olika typer av hot.
 
-Om **du** väljer Undersökningar öppnas en sida med en bild av analysen som äger rum och en status (t.ex. väntande **godkännande)** för åtgärd. Ta dig tid att välja specifika incidenter i din miljö, gå in på följande flikar och öva på att skapa en profil för olika typer av hot. All kunskap kan vara till nytta i alla senare trycka undersökningar.
+Mer information finns i [incidenter i Säkerhetscenter för Microsoft 365.](incidents-overview.md)
 
 ## <a name="improved-processes"></a>Förbättrade processer
 

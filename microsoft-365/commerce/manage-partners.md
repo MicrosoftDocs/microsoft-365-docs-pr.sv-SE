@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Lär dig hur du arbetar med Microsoft-certifierade lösningsleverantörer (partners) för att köpa och hantera produkter och tjänster för din organisation eller skola.
-ms.openlocfilehash: a0c70f229ff11132beccf118f4158ab2880a8aa6
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: f4c270e179a3d52616f6d7efb049beac4d1a8e03
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579740"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51749860"
 ---
 # <a name="manage-partner-relationships"></a>Hantera partnerrelationer
 
@@ -85,7 +85,7 @@ Om du inte vill ge partnern administratörsroller avbryter du inbjudan i ställe
 
 Du kan när som helst ta bort administratörsroller från en partner. Partnerrelationen tas inte bort om du tar bort administratörsrollerna. De kan fortfarande arbeta med dig i en annan kapacitet, till exempel som återförsäljare. Om du bestämmer dig för att du inte längre vill arbeta med en partner kontaktar du din partner för att avsluta relationen.
 
-1. Gå till sidan Relationer för  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">faktureringspartner i administrationscentret.</a>
+1. Gå till sidan Inställningar **Partnerrelationer**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">i administrationscentret.</a>
 2. På sidan **Partnerrelationer** markerar du den rad som innehåller namnet på den partner som du vill ta bort.
 3. Markera raden som innehåller namnet på partnern.
 4. Välj Ta bort roller på **partnersidan.**

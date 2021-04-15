@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 784e73467efc114f05ebdfca9bc4034e2d75f6c6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 235df8c84077311444c597b120a19477cfd0986a
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185713"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760422"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Undersök enheter på enheter med live-svar
 
@@ -144,11 +144,13 @@ Följande kommandon är tillgängliga för användarroller som ges möjlighet at
 |`connections` | Visar alla aktiva anslutningar. |
 |`dir` | Visar en lista med filer och undermappar i en katalog. |
 |`download <file_path> &` | En fil laddas ned i bakgrunden. |
-drivrutiner |  Visar alla drivrutiner som är installerade på enheten. |
-|`fg <command ID>` | Returnerar en fil som laddats ned till förgrunden. |
+|`drivers` |  Visar alla drivrutiner som är installerade på enheten. |
+|`fg <command ID>` | Placera det angivna jobbet i förgrunden, vilket gör det till aktuellt jobb. <br> Obs! FG tar ett kommando-ID som är tillgängligt från jobb, inte från PID |
 |`fileinfo` | Hämta information om en fil. |
 |`findfile` | Söker efter ett namn på enheten. |
+|`getfile <file_path>` | En fil laddas ned. |
 |`help` | Innehåller hjälpinformation för livesvarskommandon. |
+|`jobs` | Visar jobb som körs, deras ID och status. |
 |`persistence` | Visar alla kända beständighetsmetoder på enheten. |
 |`processes` | Visar alla processer som körs på enheten. |
 |`registry` | Visar registervärden. |
@@ -162,7 +164,6 @@ Följande kommandon är tillgängliga för användarroller som ges möjlighet at
 | Kommando | Beskrivning |
 |---|---|
 | `analyze` | Analyserar enheten med olika informationsmotorer för att nå ett omdöme. |
-| `getfile` | Hämtar en fil från enheten. <br> Obs! Det här kommandot har ett kommando som krävs. Du kan använda kommandot `-auto` tillsammans med för att automatiskt köra kommandot som `getfile` krävs. |
 | `run` | Kör ett PowerShell-skript från biblioteket på enheten. |
 | `library` | Visar filer som har laddats upp till livesvarsbiblioteket. |
 | `putfile` | Lägger till en fil från biblioteket till enheten. Filer sparas i en arbetsmapp och tas bort när enheten startas om som standard. |
@@ -303,10 +304,9 @@ Välj fliken **Kommandologg** för att se de kommandon som används på enheten 
 
 ## <a name="limitations"></a>Begränsningar
 
-- Livesvarssessioner är begränsade till 10 svarssessioner i taget.
-- Det går inte att utföra storskaliga kommandon.
-- Värdet för inaktiv timeout för livesvarssession är 5 minuter. 
-- En användare kan bara starta en session i taget.
+- Livesvarssessioner är begränsade till 25 livesvarssessioner åt gången.
+- Värdet för inaktiv timeout för livesvarssession är 30 minuter. 
+- En användare kan starta upp till 10 samtidiga sessioner.
 - En enhet kan bara vara i en session i taget.
 - Följande filstorleksbegränsningar gäller:
    - `getfile` gräns: 3 GB
@@ -314,4 +314,4 @@ Välj fliken **Kommandologg** för att se de kommandon som används på enheten 
    - `library` gräns: 250 MB
 
 ## <a name="related-article"></a>Relaterad artikel
-- [Exempel på livesvarskommando](live-response-command-examples.md)
+- [Kommandoexempel för livesvar](live-response-command-examples.md)

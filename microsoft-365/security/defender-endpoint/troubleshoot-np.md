@@ -11,26 +11,26 @@ localization_priority: Normal
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.date: 01/26/2021
-ms.reviewer: ''
+ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 34bebddcf052a643529f1d2b8a8a869a0ffe4a91
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.topic: how-to
+ms.openlocfilehash: 9efc42441c2cb30f35abf658071088f7f7bbaf00
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51183831"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760104"
 ---
 # <a name="troubleshoot-network-protection"></a>Felsöka nätverksskydd
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Gäller för:**
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+> [!TIP]
 > Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
@@ -103,9 +103,29 @@ När du rapporterar ett problem med nätverksskydd uppmanas du att samla in och 
    mpcmdrun -getfiles
    ```
 
-3. Som standard sparas de i C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab. Bifoga filen i inskickat formulär.
+3. Bifoga filen i inskickat formulär. Som standard sparas diagnostikloggar på `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` . 
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="resolve-connectivity-issues-with-network-protection-for-e5-customers"></a>Lösa anslutningsproblem med nätverksskydd (för E5-kunder)
+
+På grund av miljön där nätverksskyddet körs kan Microsoft inte se dina proxyinställningar för operativsystemet. I vissa fall kan inte nätverksskyddsklienter nå molntjänsten. Lös anslutningsproblem med nätverksskydd genom att konfigurera en av följande registernycklar så att nätverksskyddet blir medvetna om proxykonfigurationen:
+
+```powershell
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
+```
+
+---ELLER---
+
+
+```powershell
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
+```
+
+Du kan konfigurera registernyckeln med hjälp av PowerShell, Microsoft Endpoint Manager eller Grupprincip. Här är några resurser som kan vara till hjälp:
+- [Arbeta med registernycklar](/powershell/scripting/samples/working-with-registry-keys)
+- [Konfigurera anpassade klientinställningar för Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
+- [Använda grupprincipinställningar för att hantera Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
+
+## <a name="see-also"></a>Se även
 
 - [Nätverksskydd](network-protection.md)
 - [Utvärdera nätverksskydd](evaluate-network-protection.md)

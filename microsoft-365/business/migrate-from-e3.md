@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Lär dig hur du flyttar över ditt företag till Microsoft 365 Business Premium från Office 365 E3.
-ms.openlocfilehash: ffb82fa40f05383260ac1b97ed0bdf5f2f30c1df
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: f2b7962918186f4a1063c5a66596135c2972ec71
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578336"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51750009"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrera från Office 365 E3 till Microsoft 365 Business Premium
 
@@ -49,7 +49,7 @@ I den här tabellen visas skillnaderna mellan Microsoft 365 Business Premium och
 | OneDrive för företag    | 1 TB lagringsgräns per användare    | Obegränsat | 
 | Yammer, SharePoint Online, Planner, Stream    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Office 365 E3](../media/check-mark.png) | 
 | StaffHub    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Office 365 E3](../media/check-mark.png) | 
-| Outlook Customer Manager    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | | 
+| MileIQ    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | | 
 | **Skydd mot hot**        | | | 
 | Microsoft Defender för Office 365 Abonnemang 1 | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | Ingår inte men kan läggas till på | 
 | **Identitetshantering**        | | | 
