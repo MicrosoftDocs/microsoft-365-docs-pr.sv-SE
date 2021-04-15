@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 58e3b14dcb80db961f01b92f038ce4d32da7e2e8
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 3343eb433a6ae5c708651abf298bd4f061817543
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689713"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764139"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>Distribution med ett annat MDM-system (Mobile Device Management) för Microsoft Defender för Slutpunkt i macOS
 
@@ -40,9 +40,11 @@ ms.locfileid: "51689713"
 
 Innan du börjar kan du gå [till huvudsidan för Microsoft Defender](microsoft-defender-endpoint-mac.md) för Slutpunkt på macOS för att få en beskrivning av förutsättningarna och systemkraven för den aktuella programvaruversionen.
 
+
 ## <a name="approach"></a>Metod
 
 > [!CAUTION]
+
 > För närvarande har Microsoft officiellt endast stöd för Intune och JAMF för distribution och hantering av Microsoft Defender för Endpoint på macOS. Microsoft ger inga garantier, uttryckliga eller underförstådda, med avseende på den information som anges nedan.
 
 Om din organisation använder en MDM-lösning (Mobile Device Management) som inte stöds officiellt betyder det inte att du inte kan distribuera eller köra Microsoft Defender för slutpunkt på macOS.
@@ -72,7 +74,9 @@ Följ instruktionerna som är kopplade till din MDM-lösning för att distribuer
 
 ### <a name="license-settings"></a>Licensinställningar
 
-Konfigurera en [systemkonfigurationsprofil](mac-install-with-jamf.md). Din MDM-lösning kan kalla den något liknande "Profil för anpassade inställningar", eftersom Microsoft Defender för Slutpunkt på macOS inte är en del av macOS.
+Konfigurera en [systemkonfigurationsprofil](mac-install-with-jamf.md). 
+
+Din MDM-lösning kan kalla den något liknande "Profil för anpassade inställningar", eftersom Microsoft Defender för Slutpunkt på macOS inte är en del av macOS.
 
 Använd egenskapslistan, jamf/WindowsDefenderATPOnboarding.plist, som kan extraheras från ett onboarding-paket som laddas ned från [Microsoft Defender Säkerhetscenter.](mac-install-with-jamf.md)
 Systemet kan ha stöd för en lista med godtyckliga egenskaper i XML-format. Du kan ladda upp filen jamf/WindowsDefenderATPOnboarding.plist som den är i så fall.

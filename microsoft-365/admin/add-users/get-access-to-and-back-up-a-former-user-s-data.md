@@ -28,7 +28,7 @@ ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755612"
+ms.locfileid: "51759996"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Få åtkomst till och säkerhetskopiera en tidigare anställds användardata.
 

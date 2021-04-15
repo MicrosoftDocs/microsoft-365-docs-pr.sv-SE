@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 18564b2a5a47b2cf4a8bbd94a3e3a315c8f269ec
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: bf8fdb2a8a42ef7b70b744cbbb5663e6afe51989
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200263"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764392"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Aktivera Microsoft 365 Defender
 
@@ -72,12 +72,12 @@ Välj **Behöver du hjälp?** på Säkerhetscenter i Microsoft 365 om du vill ko
 När tjänsten har etablerats läggs följande till:
 
 - [Incidenthantering](incidents-overview.md)
-- [Kön Aviseringar](investigate-alerts.md)
+- [Varningskö](investigate-alerts.md)
 - Ett åtgärdscenter för hantering [av automatiserad undersökning och svar](m365d-autoir.md)
 - [Avancerade sökfunktioner](advanced-hunting-overview.md)
 - Analys av hot
 
-![Bild av navigeringsfönstret i Microsoft 365 Säkerhetscenter med Microsoft 365 Defender-funktioner Microsoft 365 Säkerhetscenter med incidenthantering och andra ](../../media/mtp-enable/mtp-on.png)
+![Bild av navigeringsfönstret i Microsoft 365 Säkerhetscenter med Microsoft 365 Defender-funktioner Microsoft 365 Säkerhetscenter med incidenthantering och andra ](../../media/overview-incident.png)
  *Microsoft 365 Defender-funktioner*
 
 ### <a name="getting-microsoft-defender-for-identity-data"></a>Hämta Microsoft Defender för identitetsdata 

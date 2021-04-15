@@ -18,14 +18,15 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7486bde0886506a5966a95cdb0b85fc009858801
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: dbb4e3a558256f19594ab0aa4efbd2c9eed6b7f8
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689755"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764221"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Intune-baserad distribution för Microsoft Defender för Slutpunkt i macOS
+
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -50,9 +51,10 @@ I det här avsnittet beskrivs hur du distribuerar Microsoft Defender för slutpu
 
 Innan du börjar kan du gå [till huvudsidan för Microsoft Defender](microsoft-defender-endpoint-mac.md) för Slutpunkt på macOS för att få en beskrivning av förutsättningarna och systemkraven för den aktuella programvaruversionen.
 
+
 ## <a name="overview"></a>Översikt
 
-I följande tabell sammanfattas de steg du måste vidta för att distribuera och hantera Microsoft Defender för Endpoint för Mac-datorer via Intune. Mer detaljerade anvisningar finns nedan.
+I följande tabell sammanfattas de steg du måste vidta för att distribuera och hantera Microsoft Defender för Slutpunkt på Mac-datorer, via Intune. Mer detaljerade anvisningar finns nedan.
 
 | Steg | Exempelfilnamn | BundleIdentifier |
 |-|-|-|

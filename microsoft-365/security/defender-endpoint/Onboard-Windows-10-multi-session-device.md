@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 6ad61d583815f669affe989d7519ba0ade6fe08d
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 0ef80e2aaccbf25a79083c2f95ea7399e30ea651
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760092"
+ms.locfileid: "51764323"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Registrera Windows 10-multisessionsenheter i det Windows Virtual Desktop 
 6 minuter att läsa 
@@ -76,62 +76,75 @@ Det här scenariot använder ett centralt placerade skript och kör det med en d
 
 1. Öppna GPMC (Group Policy Management Console), högerklicka på det grupprincipobjekt (GPO) du vill konfigurera och klicka på **Redigera.**
 
-1. Gå till Inställningar för datorkonfiguration i **redigeraren för hantering** av \>  \> **grupprinciper på Kontrollpanelen.** 
+2. Gå till Inställningar för datorkonfiguration i **redigeraren för hantering** av \>  \> **grupprinciper på Kontrollpanelen.** 
 
-1. Högerklicka på **Schemalagda aktiviteter,** klicka **på Nytt** och klicka sedan på Direkt **aktivitet** (minst Windows 7). 
+3. Högerklicka på **Schemalagda aktiviteter,** klicka **på Nytt** och klicka sedan på Direkt **aktivitet** (minst Windows 7). 
 
-1. I uppgiftsfönstret som öppnas går du till **fliken** Allmänt. Under **Säkerhetsalternativ klickar** du **på Ändra användare eller grupp** och skriver SYSTEM. Klicka **på Kontrollera namn** och sedan på OK. NT AUTHORITY\SYSTEM visas som det användarkonto som aktiviteten körs som. 
+4. I uppgiftsfönstret som öppnas går du till **fliken** Allmänt. Under **Säkerhetsalternativ klickar** du **på Ändra användare eller grupp** och skriver SYSTEM. Klicka **på Kontrollera namn** och sedan på OK. NT AUTHORITY\SYSTEM visas som det användarkonto som aktiviteten körs som. 
 
-1. Välj **Kör om användaren är inloggad eller inte** och markera kryssrutan Kör med **högst** behörighet. 
+5. Välj **Kör om användaren är inloggad eller inte** och markera kryssrutan Kör med **högst** behörighet. 
 
-1. Gå till fliken **Åtgärder** och klicka på **Ny**. Kontrollera att **Starta ett program** är markerat i fältet Åtgärd. Ange följande: 
+6. Gå till fliken **Åtgärder** och klicka på **Ny**. Kontrollera att **Starta ett program** är markerat i fältet Åtgärd. Ange följande: 
 
-    > Åtgärd = "Starta ett program" <br>
-    > Program/Skript = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
-    > Add arguments (optional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"
+   `Action = "Start a program"`
 
-1. Klicka **på OK** och stäng alla öppna GPMC-fönster.
+   `Program/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe`
+
+   `Add Arguments (optional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"`
+
+   Välj sedan **OK** och stäng alla öppna GPMC-fönster.
 
 #### <a name="scenario-3-onboarding-using-management-tools"></a>*Scenario 3: Introduktion med hanteringsverktyg*
 
 Om du planerar att hantera dina datorer med ett hanteringsverktyg kan du hantera enheter med Microsoft Endpoint Configuration Manager.
 
-Mer information finns i Informera [Windows 10-enheter med Konfigurationshanteraren.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm) 
+Mer information finns i Informera [Windows 10-enheter med Konfigurationshanteraren.](configure-endpoints-sccm.md)
 
 > [!WARNING]
-> Om du tänker använda minskningsregler för [attackytan](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)bör du observera att regeln " Blockera processskapanden som kommer från[PSExec-](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)och WMI-kommandon " inte bör användas eftersom den är inkompatibel med hantering via Microsoft Endpoint Configuration Manager eftersom den här regeln blockerar WMI-kommandon som Configuration Manager-klienten använder för att fungera korrekt. 
+> Om du planerar att använda minskningsregler för [attackytan](attack-surface-reduction.md)bör du observera att regeln " Blockera processskapanden som kommer från[PSExec-](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)och WMI-kommandon " inte ska användas, eftersom regeln är inkompatibel med hantering via Microsoft Endpoint Configuration Manager. Regeln blockerar WMI-kommandon som Configuration Manager-klienten använder för att fungera korrekt. 
 
 > [!TIP]
-> När du har introducerat enheten kan du välja att köra ett identifieringstest för att verifiera att enheten är korrekt onboarded till tjänsten. Mer information finns i Köra [ett identifieringstest på en nyligen onboarded Microsoft Defender för Endpoint-enhet.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/run-detection-test) 
+> När du har introducerat enheten kan du välja att köra ett identifieringstest för att verifiera att enheten är korrekt onboarded till tjänsten. Mer information finns i Köra [ett identifieringstest på en nyligen onboarded Microsoft Defender för Endpoint-enhet.](run-detection-test.md) 
 
 #### <a name="tagging-your-machines-when-building-your-golden-image"></a>Tagga dina maskiner när du skapar en gyllene bild 
 
-Som en del av introduktionen kan du överväga att ställa in en maskintagg så att det blir lättare att skilja WVD-maskinerna åt i Microsofts säkerhetscenter. Mer information finns i Lägga [till enhetstaggar genom att ange ett registernyckelvärde.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-tags#add-device-tags-by-setting-a-registry-key-value) 
+Som en del av introduktionen kan du överväga att ställa in en maskintagg så att det blir lättare att skilja WVD-maskinerna åt i Microsofts säkerhetscenter. Mer information finns i Lägga [till enhetstaggar genom att ange ett registernyckelvärde.](machine-tags.md#add-device-tags-by-setting-a-registry-key-value) 
 
 #### <a name="other-recommended-configuration-settings"></a>Andra rekommenderade konfigurationsinställningar 
 
-När du skapar den gyllene bilden kanske du även vill konfigurera inställningar för det första skyddet. Mer information finns i [Andra rekommenderade konfigurationsinställningar](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-gp#other-recommended-configuration-settings). 
+När du skapar den gyllene bilden kanske du även vill konfigurera inställningar för det första skyddet. Mer information finns i [Andra rekommenderade konfigurationsinställningar](configure-endpoints-gp.md#other-recommended-configuration-settings). 
 
 Om du använder FSlogix-användarprofiler rekommenderar vi att du undantar följande filer från alltid-on-skydd: 
 
 **Undanta filer:** 
 
-> %ProgramFiles%\FSLogix\Apps\frxdrv.sys <br>
-> %ProgramFiles%\FSLogix\Apps\frxdrvvt.sys <br>
-> %ProgramFiles%\FSLogix\Apps\frxccd.sys <br>
-> %TEMP% \* . VHD <br>
-> %TEMP% \* . VHDX <br>
-> %Windir%\TEMP \* . VHD <br>
-> %Windir%\TEMP \* . VHDX <br>
-> \\storageaccount.file.core.windows.net\share \* \* . VHD <br>
-> \\storageaccount.file.core.windows.net\share \* \* . VHDX <br>
+`%ProgramFiles%\FSLogix\Apps\frxdrv.sys`
+
+`%ProgramFiles%\FSLogix\Apps\frxdrvvt.sys`
+
+`%ProgramFiles%\FSLogix\Apps\frxccd.sys`
+
+`%TEMP%\*.VHD`
+
+`%TEMP%\*.VHDX`
+
+`%Windir%\TEMP\*.VHD`
+
+`%Windir%\TEMP\*.VHDX`
+
+`\\storageaccount.file.core.windows.net\share\*\*.VHD`
+
+`\\storageaccount.file.core.windows.net\share\*\*.VHDX`
 
 **Exkludera processer:**
 
-> %ProgramFiles%\FSLogix\Apps\frxccd.exe <br>
-> %ProgramFiles%\FSLogix\Apps\frxccds.exe <br>
-> %ProgramFiles%\FSLogix\Apps\frxsvc.exe <br>
+`%ProgramFiles%\FSLogix\Apps\frxccd.exe`
+
+`%ProgramFiles%\FSLogix\Apps\frxccds.exe`
+
+`%ProgramFiles%\FSLogix\Apps\frxsvc.exe`
 
 #### <a name="licensing-requirements"></a>Licenskrav 
 
-Windows 10 Multi-session är ett klientoperativsystem. Licenskrav för Microsoft Defender för slutpunkt finns i: [Licenskrav](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements).
+Anmärkning om licensiering: När du använder flera Windows 10 Enterprise-sessioner, beroende på dina krav, kan du välja att antingen få alla användare licensierade via Microsoft Defender för slutpunkt (per användare), Windows Enterprise E5, Microsoft 365 Security eller Microsoft 365 E5, eller att ha den VM-licens som licensieras via Azure Defender.
+Licenskrav för Microsoft Defender för slutpunkt finns i: [Licenskrav](minimum-requirements.md#licensing-requirements).

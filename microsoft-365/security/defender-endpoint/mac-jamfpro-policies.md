@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9b00d81d3d51c343565ec4eb743181baa2750b01
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 79f5837ae6bae6e6a9d952d90605f4cf7b31262e
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687739"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765137"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Konfigurera microsoft Defender för slutpunkt på macOS-principer i Jamf Pro
 
@@ -32,7 +32,7 @@ ms.locfileid: "51687739"
 
 **Gäller för:**
 
-- [Defender för Slutpunkt för Mac](microsoft-defender-endpoint-mac.md)
+- [Defender för Slutpunkt på Mac](microsoft-defender-endpoint-mac.md)
 
 På den här sidan går du igenom de steg du måste vidta för att konfigurera macOS-principer i Jamf Pro.
 
@@ -731,8 +731,10 @@ De här stegen gäller för macOS 10.15 (Catalina) eller nyare.
 
 Du kan också ladda ned [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) och ladda upp den till JAMF-konfigurationsprofiler enligt beskrivningen i Distribuera anpassade konfigurationsprofiler med [Jamf Pro| Metod 2: Ladda upp en konfigurationsprofil till Jamf Pro.](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
 
+
 ## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Steg 10: Schemalägga genomsökningar med Microsoft Defender för Slutpunkt i macOS
 Följ anvisningarna i [Schemalägga genomsökningar med Microsoft Defender för slutpunkt på macOS.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+
 
 ## <a name="step-11-deploy-microsoft-defender-for-endpoint-on-macos"></a>Steg 11: Distribuera Microsoft Defender för slutpunkt i macOS
 

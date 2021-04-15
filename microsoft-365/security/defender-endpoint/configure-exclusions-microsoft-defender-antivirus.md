@@ -1,24 +1,26 @@
 ---
-title: Konfigurera undantag för Microsoft Defender AV-skanningar
+title: Konfigurera undantag för genomsökningar för Microsoft Defender Antivirus
 description: Du kan undanta filer (inklusive filer som ändrats av angivna processer) och mappar från att genomsökas av Microsoft Defender AV. Validera dina undantag med PowerShell.
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: ''
+ms.reviewer: ksarens
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 47db9b4451a885c92ca4fda0f87f0150415d3338
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.audience: ITPro
+ms.topic: how-to
+ms.openlocfilehash: 08f7f9d4a6e9e70d3ef071f30712b2ae53f4ea52
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51691508"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764669"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>Konfigurera och validera undantag för genomsökningar för Microsoft Defender Antivirus
 
@@ -40,7 +42,8 @@ Information om hur du konfigurerar och validerar undantag finns i följande avsn
 - [Konfigurera och validera undantag för filer som öppnas med processer](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md). Det här gör att du kan utesluta filer från genomsökningar som har öppnats av en viss process.
 
 ## <a name="recommendations-for-defining-exclusions"></a>Rekommendationer för att definiera undantag
-
+[!IMPORTANT]
+Microsoft Defender Antivirus innehåller många automatiska undantag baserade på kända operativsystemsbeteenden och vanliga hanteringsfiler, till exempel de som används i företagshantering, databashantering och andra företagsscenarier och situationer.  
 Om du definierar undantag sänks skyddet som erbjuds av Microsoft Defender Antivirus. Du bör alltid utvärdera riskerna som är associerade med att implementera undantag och du bör endast utesluta filer som du är säker på inte är skadliga.
 
 Följande är en lista med rekommendationer som du bör tänka på när du definierar undantag:  
