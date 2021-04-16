@@ -1,5 +1,5 @@
 ---
-title: Använda domän anslutning
+title: Använda Domain Connect
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -21,39 +21,39 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
-description: Lär dig hur du arbetar med domän Connect-reservdomänkontrollanter och lägger till din domän i Microsoft 365.
-ms.openlocfilehash: 109255d82100e636e3472242866a519ff64a9e54
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Lär dig hur du arbetar med domänaktiverade domänregistratorer och lägger till din domän i Microsoft 365.
+ms.openlocfilehash: 5dec69f70273e6a9430ce5926ed07888e197adcd
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655618"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860661"
 ---
-# <a name="using-domain-connect"></a><span data-ttu-id="859c6-103">Använda domän anslutning</span><span class="sxs-lookup"><span data-stu-id="859c6-103">Using Domain Connect</span></span>
+# <a name="using-domain-connect"></a><span data-ttu-id="731f0-103">Använda Domain Connect</span><span class="sxs-lookup"><span data-stu-id="731f0-103">Using Domain Connect</span></span>
 
- <span data-ttu-id="859c6-104">**[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter.</span><span class="sxs-lookup"><span data-stu-id="859c6-104">**[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.</span></span>
+ <span data-ttu-id="731f0-104">**[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter.</span><span class="sxs-lookup"><span data-stu-id="731f0-104">**[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.</span></span>
   
-<span data-ttu-id="859c6-105">Med [domän Connect-reservdomänkontrollanter](https://www.domainconnect.org/) kan du lägga till din domän i Microsoft 365 i en tre stegs process som tar minuter.</span><span class="sxs-lookup"><span data-stu-id="859c6-105">[Domain Connect ](https://www.domainconnect.org/) enabled registrars let you add your domain to Microsoft 365 in a three-step process that takes minutes.</span></span> 
+<span data-ttu-id="731f0-105">[Med domän ](https://www.domainconnect.org/) connect-aktiverade registratorer kan du lägga till din domän i Microsoft 365 i en trestegsprocess som bara tar några minuter.</span><span class="sxs-lookup"><span data-stu-id="731f0-105">[Domain Connect ](https://www.domainconnect.org/) enabled registrars let you add your domain to Microsoft 365 in a three-step process that takes minutes.</span></span> 
   
-<span data-ttu-id="859c6-106">I guiden bekräftar vi bara att du äger domänen och registrerar sedan automatiskt domänens poster, så att e-post kommer till Microsoft 365 och andra Microsoft 365-tjänster, till exempel Teams, fungerar med din domän.</span><span class="sxs-lookup"><span data-stu-id="859c6-106">In the wizard, we'll just confirm that you own the domain, and then automatically set up your domain's records, so email comes to Microsoft 365 and other Microsoft 365 services, like Teams, work with your domain.</span></span>
+<span data-ttu-id="731f0-106">I guiden bekräftar vi bara att du äger domänen och sedan konfigureras domänens poster automatiskt, så att e-post kommer till Microsoft 365 och andra Microsoft 365-tjänster, som Teams, fungerar med din domän.</span><span class="sxs-lookup"><span data-stu-id="731f0-106">In the wizard, we'll just confirm that you own the domain, and then automatically set up your domain's records, so email comes to Microsoft 365 and other Microsoft 365 services, like Teams, work with your domain.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="859c6-107">Se till att inaktivera popup-blockerare i webbläsaren innan du startar installationsguiden.</span><span class="sxs-lookup"><span data-stu-id="859c6-107">Make sure you disable any popup blockers in your browser before you start the setup wizard.</span></span>
+> <span data-ttu-id="731f0-107">Se till att inaktivera popup-blockerare i webbläsaren innan du startar installationsguiden.</span><span class="sxs-lookup"><span data-stu-id="731f0-107">Make sure you disable any popup blockers in your browser before you start the setup wizard.</span></span>
   
-## <a name="domain-connect-registrars-integrating-with-microsoft-365"></a><span data-ttu-id="859c6-108">Domän anslutnings registratorer som integreras med Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="859c6-108">Domain Connect registrars integrating with Microsoft 365</span></span>
+## <a name="domain-connect-registrars-integrating-with-microsoft-365"></a><span data-ttu-id="731f0-108">Domän connect-domänregistratorer som integrerar med Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="731f0-108">Domain Connect registrars integrating with Microsoft 365</span></span>
 
-- [<span data-ttu-id="859c6-109">1 &amp; 1 IONOS</span><span class="sxs-lookup"><span data-stu-id="859c6-109">1&amp;1 IONOS</span></span>](https://www.1and1.com/)
-- [<span data-ttu-id="859c6-110">123Reg</span><span class="sxs-lookup"><span data-stu-id="859c6-110">123Reg</span></span>](https://www.123-reg.co.uk/)
-- [<span data-ttu-id="859c6-111">GoDaddy</span><span class="sxs-lookup"><span data-stu-id="859c6-111">GoDaddy</span></span>](https://www.godaddy.com/)
-- [<span data-ttu-id="859c6-112">WordPress</span><span class="sxs-lookup"><span data-stu-id="859c6-112">WordPress</span></span>](https://wordpress.com/)
-- [<span data-ttu-id="859c6-113">Plesk</span><span class="sxs-lookup"><span data-stu-id="859c6-113">Plesk</span></span>](https://www.plesk.com/)
-- [<span data-ttu-id="859c6-114">MediaTemple</span><span class="sxs-lookup"><span data-stu-id="859c6-114">MediaTemple</span></span>](https://mediatemple.net/)
-- <span data-ttu-id="859c6-115">SecureServer eller WildWestDomains (GoDaddy åter försäljare med SecureServer DNS-värd)</span><span class="sxs-lookup"><span data-stu-id="859c6-115">SecureServer or WildWestDomains (GoDaddy resellers using SecureServer DNS hosting)</span></span>
-    - [<span data-ttu-id="859c6-116">MadDog-domäner</span><span class="sxs-lookup"><span data-stu-id="859c6-116">MadDog Domains</span></span>](https://www.maddogdomains.com/)
-    - [<span data-ttu-id="859c6-117">CheapNames</span><span class="sxs-lookup"><span data-stu-id="859c6-117">CheapNames</span></span>](https://www.cheapnames.com)
+- [<span data-ttu-id="731f0-109">1 &amp; 1 I ENTISKT</span><span class="sxs-lookup"><span data-stu-id="731f0-109">1&amp;1 IONOS</span></span>](https://www.1and1.com/)
+- [<span data-ttu-id="731f0-110">123Reg</span><span class="sxs-lookup"><span data-stu-id="731f0-110">123Reg</span></span>](https://www.123-reg.co.uk/)
+- [<span data-ttu-id="731f0-111">GoDaddy</span><span class="sxs-lookup"><span data-stu-id="731f0-111">GoDaddy</span></span>](https://www.godaddy.com/)
+- [<span data-ttu-id="731f0-112">WordPress</span><span class="sxs-lookup"><span data-stu-id="731f0-112">WordPress</span></span>](https://wordpress.com/)
+- [<span data-ttu-id="731f0-113">Hannsk</span><span class="sxs-lookup"><span data-stu-id="731f0-113">Plesk</span></span>](https://www.plesk.com/)
+- [<span data-ttu-id="731f0-114">MediaTemple</span><span class="sxs-lookup"><span data-stu-id="731f0-114">MediaTemple</span></span>](https://mediatemple.net/)
+- <span data-ttu-id="731f0-115">SecureServer eller WildWestDomains (GoDaddy-återförsäljare som använder SecureServer DNS-värd)</span><span class="sxs-lookup"><span data-stu-id="731f0-115">SecureServer or WildWestDomains (GoDaddy resellers using SecureServer DNS hosting)</span></span>
+    - [<span data-ttu-id="731f0-116">MadDog Web Hosting</span><span class="sxs-lookup"><span data-stu-id="731f0-116">MadDog Web Hosting</span></span>](https://maddogwebhosting.com/domains/)
+    - [<span data-ttu-id="731f0-117">BilligaNamn</span><span class="sxs-lookup"><span data-stu-id="731f0-117">CheapNames</span></span>](https://www.cheapnames.com)
 
-## <a name="what-happens-to-my-email-and-website"></a><span data-ttu-id="859c6-118">Vad händer med min e-post och webbplats?</span><span class="sxs-lookup"><span data-stu-id="859c6-118">What happens to my email and website?</span></span>
+## <a name="what-happens-to-my-email-and-website"></a><span data-ttu-id="731f0-118">Vad händer med min e-post och webbplats?</span><span class="sxs-lookup"><span data-stu-id="731f0-118">What happens to my email and website?</span></span>
 
-<span data-ttu-id="859c6-119">När du har slutfört installationen uppdateras MX-posten för domänen så att den pekar på Microsoft 365 och alla e-postmeddelanden för domänen kommer att komma till Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="859c6-119">After you finish setup, the MX record for your domain is updated to point to Microsoft 365 and all email for your domain will start coming to Microsoft 365.</span></span> <span data-ttu-id="859c6-120">Kontrol lera att du har lagt till användare och konfigurerat post lådor i Microsoft 365 för alla som får e-post på din domän!</span><span class="sxs-lookup"><span data-stu-id="859c6-120">Make sure you've added users and set up mailboxes in Microsoft 365 for everyone who gets email on your domain!</span></span>
+<span data-ttu-id="731f0-119">När du är klar med konfigurationen uppdateras MX-posten för din domän så att den pekar på Microsoft 365 och all e-post för domänen börjar komma till Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="731f0-119">After you finish setup, the MX record for your domain is updated to point to Microsoft 365 and all email for your domain will start coming to Microsoft 365.</span></span> <span data-ttu-id="731f0-120">Kontrollera att du har lagt till användare och konfigurerat postlådor i Microsoft 365 för alla som får e-post i din domän!</span><span class="sxs-lookup"><span data-stu-id="731f0-120">Make sure you've added users and set up mailboxes in Microsoft 365 for everyone who gets email on your domain!</span></span>
   
-<span data-ttu-id="859c6-121">Om du har en webbplats som du använder med ditt företag kommer den att fortsätta fungera där den är.</span><span class="sxs-lookup"><span data-stu-id="859c6-121">If you have a website that you use with your business, it will keep working where it is.</span></span> <span data-ttu-id="859c6-122">Anvisningarna för att konfigurera domänen påverkar inte din webbplats.</span><span class="sxs-lookup"><span data-stu-id="859c6-122">The Domain Connect setup steps don't affect your website.</span></span>
+<span data-ttu-id="731f0-121">Om du har en webbplats som du använder med ditt företag kommer den att fortsätta fungera där den är.</span><span class="sxs-lookup"><span data-stu-id="731f0-121">If you have a website that you use with your business, it will keep working where it is.</span></span> <span data-ttu-id="731f0-122">Konfigurationsstegen för Domain Connect påverkar inte din webbplats.</span><span class="sxs-lookup"><span data-stu-id="731f0-122">The Domain Connect setup steps don't affect your website.</span></span>

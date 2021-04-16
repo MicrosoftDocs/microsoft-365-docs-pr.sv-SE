@@ -18,24 +18,30 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f4d65c1f730bfa8c1611f3f85da4b5c0e49312e5
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: e47631682b5620a3f42746c3e3848a8bc3ee1f76
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764525"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861797"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a><span data-ttu-id="5417b-104">Vad är nytt i Microsoft Defender för Slutpunkt i iOS</span><span class="sxs-lookup"><span data-stu-id="5417b-104">What's new in Microsoft Defender for Endpoint on iOS</span></span>
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a><span data-ttu-id="3a0ae-104">Vad är nytt i Microsoft Defender för Slutpunkt i iOS</span><span class="sxs-lookup"><span data-stu-id="3a0ae-104">What's new in Microsoft Defender for Endpoint on iOS</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="5417b-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="5417b-105">**Applies to:**</span></span>
-- [<span data-ttu-id="5417b-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="5417b-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="5417b-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="5417b-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="3a0ae-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="3a0ae-105">**Applies to:**</span></span>
+- [<span data-ttu-id="3a0ae-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="3a0ae-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="3a0ae-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="3a0ae-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-<span data-ttu-id="5417b-108">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="5417b-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="5417b-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="5417b-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+<span data-ttu-id="3a0ae-108">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="3a0ae-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="3a0ae-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="3a0ae-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## <a name="1115010101"></a><span data-ttu-id="5417b-110">1.1.15010101</span><span class="sxs-lookup"><span data-stu-id="5417b-110">1.1.15010101</span></span>
+## <a name="1115140101"></a><span data-ttu-id="3a0ae-110">1.1.15140101</span><span class="sxs-lookup"><span data-stu-id="3a0ae-110">1.1.15140101</span></span>
 
-- <span data-ttu-id="5417b-111">Med den här versionen presenterar vi stöd för iPadOS/iPad-enheter.</span><span class="sxs-lookup"><span data-stu-id="5417b-111">With this version, we are announcing support for iPadOS/iPad devices.</span></span>
-- <span data-ttu-id="5417b-112">Felkorrigeringar.</span><span class="sxs-lookup"><span data-stu-id="5417b-112">Bug fixes.</span></span>
+- <span data-ttu-id="3a0ae-111">Microsoft Defender ATP-produktnamnet har nu uppdaterats till Microsoft Defender för Slutpunkt i appbutiken.</span><span class="sxs-lookup"><span data-stu-id="3a0ae-111">The Microsoft Defender ATP product name has now been updated to Microsoft Defender for Endpoint in the app store.</span></span>
+- <span data-ttu-id="3a0ae-112">Förbättrad inloggning.</span><span class="sxs-lookup"><span data-stu-id="3a0ae-112">Improved sign-in experience.</span></span>
+- <span data-ttu-id="3a0ae-113">Felkorrigeringar.</span><span class="sxs-lookup"><span data-stu-id="3a0ae-113">Bug fixes.</span></span>
+
+## <a name="1115010101"></a><span data-ttu-id="3a0ae-114">1.1.15010101</span><span class="sxs-lookup"><span data-stu-id="3a0ae-114">1.1.15010101</span></span>
+
+- <span data-ttu-id="3a0ae-115">Med den här versionen presenterar vi stöd för iPadOS/iPad-enheter.</span><span class="sxs-lookup"><span data-stu-id="3a0ae-115">With this version, we are announcing support for iPadOS/iPad devices.</span></span>
+- <span data-ttu-id="3a0ae-116">Felkorrigeringar.</span><span class="sxs-lookup"><span data-stu-id="3a0ae-116">Bug fixes.</span></span>
