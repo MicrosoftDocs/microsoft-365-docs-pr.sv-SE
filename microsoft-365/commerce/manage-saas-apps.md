@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Läs om hur du aktiverar och hanterar appar från tredje part i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 974ce99b55dcb078286d7f6dba35166e51ce62a7
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 457545282801829ca34de0318dd9eb7791866214
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576919"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860541"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Hantera appprenumerationer från tredje part för din organisation
 
@@ -31,7 +31,7 @@ Du kan hantera licenser och fakturering för appar från tredje part i administr
 
 Det finns några olika sätt att köpa appar från tredje part.
 
-- **Direktköp** – kunder kan köpa prenumerationer direkt från [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)eller [AppSource.](https://www.appsource.com/)
+- **Direktköp** – kunder kan köpa prenumerationer direkt från [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)eller [AppSource.](https://appsource.microsoft.com/)
 - **Partnerköp** – arbeta med en partner via Partner Center för att köpa prenumerationer.
 - **Microsoft-förslag** – svara på ett förslag från Microsoft Sales som innehåller appar från tredje part.
 

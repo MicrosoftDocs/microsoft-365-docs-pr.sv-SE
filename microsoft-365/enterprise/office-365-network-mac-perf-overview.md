@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Översikt över nätverksanslutningen i administrationscentret för Microsoft 365 (förhandsversion)
-ms.openlocfilehash: cc01f2a22f6f8c89d0ae8fcd8b53498790930d3e
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 99c05c18f3825680824854f86e469ab4aa8bbcba
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768632"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860869"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Nätverksanslutning i administrationscentret för Microsoft 365 (förhandsversion)
 
@@ -63,7 +63,7 @@ Måttprov och kontorsplatser bör börja visas 24 timmar efter att dessa föruts
 
 För det här alternativet krävs varken Windows Wi-Fi eller windows Wi-Fi plats. Din Version av OneDrive för Windows måste vara uppdaterad och installerad på minst en dator på platsen.
 
-Du måste också lägga till platser på sidan Platser **eller importera** dem från en CSV-fil. Platserna som läggs till måste innehålla informationen om office LAN-undernätet.
+Du måste också lägga till platser på sidan **Platser eller importera** dem från en CSV-fil. Platserna som läggs till måste innehålla informationen om office LAN-undernätet.
 
 Med det här alternativet kan du ha flera kontor definierade i en stad.
 
@@ -97,7 +97,7 @@ Många företag har nätverks perimeterkonfigurationer som har vuxit över tid o
 
 ## <a name="how-we-can-solve-these-challenges"></a>Hur vi kan lösa de här problemen
 
-Företag kan förbättra den allmänna användarupplevelsen och skydda miljön genom att följa [Office 365-anslutningsprinciperna](./microsoft-365-network-connectivity-principles.md) och genom att använda nätverksanslutningsfunktionen i administrationscentret för Microsoft 365. I de flesta fall har följande allmänna principer betydande inverkan på slutanvändarens svarstid, tjänsttillförlitlighet och övergripande prestanda i Microsoft 365.
+Företag kan förbättra den allmänna användarupplevelsen och skydda miljön genom att följa [Office 365-anslutningsprinciperna](./microsoft-365-network-connectivity-principles.md) och genom att använda nätverksanslutningsfunktionen i administrationscentret för Microsoft 365. I de flesta fall har följande allmänna principer betydande inverkan på slutanvändarfördröjningen, tjänstens pålitlighet och övergripande prestanda i Microsoft 365.
 
 Microsoft uppmanas ibland att undersöka prestandaproblem i nätverket med Microsoft 365 för stora företagskunder, och dessa har ofta en orsak till kundens perimeterinfrastruktur i nätverket. När en vanlig orsak till ett perimeterproblem i kundens nätverk påträffas försöker vi identifiera enkla testmått som identifierar det. Ett test med ett mättröskelvärde som identifierar ett specifikt problem är värdefullt eftersom vi kan testa samma mått på valfri plats, avgöra om orsaken finns där och dela den som en nätverksinsikt med administratören.
 
@@ -121,6 +121,14 @@ Du kan visa en tabellvy över de platser där de kan **filtreras, sorteras** och
 
 > [!div class="mx-imgBorder"]
 > ![Platser med nätverksinsikter](../media/m365-mac-perf/m365-mac-perf-locations.png)
+
+## <a name="remote-worker-assessment-and-user-connection-metrics"></a>Utvärderingsmått för fjärranvändare och anslutning av användare
+
+Vi klassificerar nätverkstrafikloggar som fjärranvändare eller användare på plats och visar deras procentandelar i avsnittet för användaranslutning i översiktsfönstret. I städer där du har fjärranvändare hittar du den platsspecifika utvärderingsresultatet för fjärrnätverket när du öppnar den platsens sida. Platslistan innehåller både kontorsplatser och städer för fjärranslutna medarbetare, som kan filtreras och sorteras. Vi tillhandahåller utvärderingsresultatet för distansarbetare med poängfördelning för Exchange, SharePoint och Teams.
+
+Insikter om nätverk för hemanvändare aggregeras och rapporteras på en ort och begränsas till städer med minst 5 fjärranslutna medarbetare. Vi identifierar inte enskilda anställda som arbetar hemifrån.
+
+Platser klassificeras automatiskt som på plats eller fjärranslutna men du kan ange alla utgående IP-adresser manuellt för att säkerställa en klassificering på 100 %. Om du bestämmer dig för att gå den här vägen måste du markera kryssrutan Ange alla utgående **IP-adresser** på plats manuellt i den utfällbar menyn Platsinställningar när du har lagt till alla utgående IP-adresser. När detta är gjort kommer alla nätverkstrafikloggar från utgående IP-adresser som du har markerat som lokal att alltid klassificeras som kontor och varannan utgående IP-adress klassificeras som fjärransluten.
 
 ## <a name="specific-office-location-network-performance-summary-and-insights"></a>Nätverksprestandasammanfattning och information för specifik kontorsplats
 

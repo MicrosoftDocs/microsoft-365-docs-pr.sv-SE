@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 12207d69b0a1565caf762a265c1a0d32158ca291
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 8acd8d85826d7bda399c03cc60f2806af954c6c3
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759859"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861609"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Prioritera incidenter i Microsoft 365 Defender
 
@@ -44,9 +44,9 @@ Du kommer till incidentkön från **Incidenter & aviseringar > Incidenter** i sn
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Exempel på incidentkön":::
 
-Som standard visar kön i Microsoft 365 säkerhetscenter incidenter som har setts under de senaste sex månaderna. Det senaste incidenten visas högst upp i listan så att du kan se den först.
+Som standard visar incidentkön i Microsoft 365-säkerhetscentret incidenter som har setts under de senaste sex månaderna. Det senaste incidenten visas högst upp i listan så att du kan se den först.
 
-Incidentkön har anpassningsbara kolumner (välj **Välj** kolumner) som ger dig insyn i olika egenskaper för incidenten eller berörda enheter. Det hjälper dig att fatta ett välgrundat beslut om prioritering av incidenter för anaylsis.
+Incidentkön har anpassningsbara kolumner (välj **Välj** kolumner) som ger dig insyn i olika egenskaper för incidenten eller berörda enheter. På så sätt kan du fatta ett välgrundat beslut om prioritering av incidenter för analys.
 
 Om du vill ha bättre insyn genererar namn på automatiska incidenter incidentnamn baserat på aviseringsattribut, till exempel antalet slutpunkter som påverkas, användare som påverkas, identifieringskällor eller kategorier. På så sätt kan du snabbt förstå incidentens omfattning.
 
@@ -108,7 +108,7 @@ När du har löst problemet bör du ta en stund att lära dig från den för att
 
 - Förstå typen av attack och dess påverkan.
 - Undersöka säkerhetsgemenskapen efter en trend för säkerhetsattacker.
-- Återkalla det arbetsflöde som du använde för att lösa problemet och uppdatera standardarbetsflöden och plalböcker efter behov.
+- Återkalla arbetsflödet som du använde för att lösa problemet och uppdatera standardarbetsflöden och spelböcker efter behov.
 
 Här följer en sammanfattning av grunderna.
 

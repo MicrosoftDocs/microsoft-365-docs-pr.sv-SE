@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5b2baa2041a8cffcea212eb449d40b9a9cbfc22a
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: e1e028f7b58df07eccf945b3a79012b4ea12366d
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759509"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861629"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Incidenter i Microsoft 365 Defender
 
@@ -51,7 +51,7 @@ Eftersom det kan vara svårt och tidskrävande att samla ihop enskilda avisering
 Titta på den här korta översikten över incidenter i Microsoft 365 Defender (4 minuter).
 
 <br>
-<br>
+
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
 Om du grupperar relaterade aviseringar i en incident får du en omfattande bild av en attack. Du kan till exempel se:

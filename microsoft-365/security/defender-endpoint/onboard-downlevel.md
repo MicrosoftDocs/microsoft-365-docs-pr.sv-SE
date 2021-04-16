@@ -1,6 +1,6 @@
 ---
-title: Introducera tidigare versioner av Windows på Microsoft Defender ATP
-description: Registrera tidigare versioner av Windows-enheter som stöds så att de kan skicka sensordata till Microsoft Defender ATP-sensorn
+title: Introducera tidigare versioner av Windows på Microsoft Defender för Slutpunkt
+description: Registrera tidigare versioner av Windows-enheter som stöds så att de kan skicka sensordata till Microsoft Defender för slutpunkts sensor
 keywords: onboard, windows, 7, 81, oms, sp1, enterprise, pro, nedåtnivå
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b180e7555bb3339324d3b99956d8f8ad73dc13c3
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 945645e0f20f316c094f746adb6ba193f6806f86
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186395"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861365"
 ---
-# <a name="onboard-previous-versions-of-windows"></a>Introducera tidigare versioner av Windows
+# <a name="onboard-previous-versions-of-windows"></a>Registrera tidigare versioner av Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -102,7 +102,7 @@ Granska följande information för att verifiera lägsta systemkrav:
 
 När den är klar bör du se onboarded endpoints i portalen inom en timme.
 
-### <a name="configure-proxy-and-internet-connectivity-settings"></a>Konfigurera proxy- och Internetanslutningsinställningar
+### <a name="configure-proxy-and-internet-connectivity-settings"></a>Konfigurera inställningar för proxy- och Internetanslutning
  
 - Varje Windows-slutpunkt måste kunna ansluta till Internet med https. Den här anslutningen kan vara direkt, med hjälp av en proxy eller via [OMS-gatewayen.](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway)
 - Om en proxy eller brandvägg blockerar all trafik som standard och bara tillåter specifika domäner via eller HTTPS-genomsökning (SSL-kontroll) är aktiverat ska du se till att du aktiverar åtkomst till Defender för [slutpunktstjänst-URL:er.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)

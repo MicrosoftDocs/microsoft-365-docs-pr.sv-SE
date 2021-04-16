@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Lär dig hur du tar bort ett användarkonto. Bestäm vad du vill göra med användarens e-post och OneDrive-innehåll. Och bestäm om du vill behålla produktlicensen eller sluta betala för den.
-ms.openlocfilehash: 0069577b83c318fa57eaceddccc93b5832e634e0
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: d40f70534499b08073278ffc2bed2b098ae1c4da
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759924"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860743"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Ta bort en användare från organisationen
   
@@ -155,7 +155,7 @@ När du sedan följer anvisningarna och lägger till en annan person i verksamhe
 
 ## <a name="delete-many-users-at-the-same-time"></a>Ta bort flera användare samtidigt
 
-Läs mer om PowerShell-cmdleten [Remove-MsolUser](https://go.microsoft.com/fwlink/p/?linkid=842230).
+Läs mer om PowerShell-cmdleten [Remove-MsolUser](https://docs.microsoft.com/powershell/module/msonline/remove-msoluser).
 
 ## <a name="fix-issues-with-deleting-a-user"></a>Åtgärda problem med att ta bort en användare
 

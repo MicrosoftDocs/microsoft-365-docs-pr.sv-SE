@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 6535493efb844f1413c569a28ebf36ddb05c167d
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 68fc924ee14932ebdf92ef76306ba00e352b6030
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760206"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861279"
 ---
 # <a name="investigate-users-in-microsoft-365-security-center"></a>Undersöka användare i Microsoft 365 Säkerhetscenter
 
@@ -34,16 +34,44 @@ ms.locfileid: "51760206"
 
 - Microsoft 365 Defender
 
-Som en del av din undersökning kan du se att en användare har komprometterats.
+En del av incidentundersökningen kan omfatta användarkonton. Börja med fliken **Användare** för ett incident från Incidenter **& aviseringar >** *incident* **> Användare.** 
 
-Användarsidan för Microsoft 365 säkerhetscenter kombinerar information från Microsoft Defender för Slutpunkt, Microsoft Defender för identitet och Microsoft Cloud App-säkerhet (beroende på vilka licenser du har). Den här sidan är en idealisk utgångspunkt för att undersöka användare och potentiella incidenter.
-![Användarsida](../../media/m3d-userpage.png)
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Exempel på en sida för användare för ett incident":::
 
-På den här sidan visas information som är specifik för säkerhetsrisken för en användare. Detta omfattar en poäng som hjälper till att utvärdera risker, nya händelser och varningar som bidragit till den totala risken för användaren med mera.
+Om du vill få en snabb sammanfattning av ett användarkonto för incidenten väljer du bockmarkeringen bredvid användarnamnet. Här är ett exempel.
 
-Du kan komma åt den här sidan från flera områden i Säkerhetscenter för Microsoft 365. Du kan komma åt den här sidan från en specifik händelse på **fliken** Användare. Vissa aviseringar kan inkludera användare som en specifik tillgång som påverkas. Du kan också söka efter användare.  
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Exempel på sammanfattningsfönstret för användarkontot för en incident i säkerhetscentret i Microsoft 365":::
 
-Läs mer om hur du undersöker användare och potentiella risker [i den här självstudiekursen om Cloud App-säkerhet.](/cloud-app-security/tutorial-ueba#:~:text=To%20identify%20who%20your%20riskiest,user%20page%20to%20investigate%20them)
+Härifrån kan du välja Gå **till användarsida om** du vill visa information om ett användarkonto. Här är ett exempel.
+
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Exempel på användarkontosidan för en incident i Säkerhetscenter för Microsoft 365":::
+
+Du kan även visa den här sidan genom att välja namnet på användarkontot i listan på **sidan** Användare.
+
+Användarsidan för Microsoft 365 säkerhetscenter kombinerar information från Microsoft Defender för Slutpunkt, Microsoft Defender för identitet och Microsoft Cloud App-säkerhet (beroende på vilka licenser du har). 
+
+På den här sidan visas information som är specifik för säkerhetsrisken för ett användarkonto. Detta omfattar en poäng som hjälper till att utvärdera risker och nya händelser och varningar som bidragit till den totala risken för användaren.
+
+Från den här sidan kan du utföra följande ytterligare åtgärder: 
+
+- Markera användarkontot som komprometterat
+- Kräv att användaren loggar in igen
+- Stäng av användarkontot
+- Se inställningar för användarkonton i Azure Active Directory (Azure AD)
+- Visa de filer som ägs av användarkontot
+- Visa filer som delats med den här användaren. 
+
+Här är ett exempel.
+
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Exempel på åtgärder för ett användarkonto för en händelse i Säkerhetscenter för Microsoft 365":::
+
+
+<!--
+You can access this page from multiple areas in the Microsoft 365 security center. You can access this page from a specific incident in the **Users** tab. Some alerts might include users as a specific affected asset. You can also search for users.  
+
+Learn more about how to investigate users and potential risk [in this Cloud App Security tutorial](/cloud-app-security/tutorial-ueba#:~:text=To%20identify%20who%20your%20riskiest,user%20page%20to%20investigate%20them).
+
+--> 
 
 ## <a name="related-topics"></a>Relaterade ämnen
 

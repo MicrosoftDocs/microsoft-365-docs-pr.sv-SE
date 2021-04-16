@@ -1,5 +1,5 @@
 ---
-title: Rapport om enhetshälsa och efterlevnad i Microsoft Defender ATP
+title: Rapport om enhetshälsa och efterlevnad i Microsoft Defender för Endpoint
 description: Spåra identifieringar av enhetens hälsa, antivirusstatus, OS-plattform och Windows 10-versioner med hjälp av hälso- och efterlevnadsrapporten för enheter
 keywords: hälsotillstånd, antivirus, os-plattform, windows 10-version, version, hälsa, efterlevnad, status
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5229ba068672035c2dce3afee1919f9c2d7f9e44
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 35100a4b8bdaee23c427816450e948ced9ed3191
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186455"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860297"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Rapport om enhetshälsa och efterlevnad i Microsoft Defender för Endpoint
 

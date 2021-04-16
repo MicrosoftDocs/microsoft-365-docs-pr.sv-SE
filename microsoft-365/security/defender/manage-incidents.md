@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2d2bf18c6cacb377e710f34b74ec8f83bb77d3b1
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: da5a2190a53dfe7f8dd0cc3cf7b410af92ca4ec5
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760074"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861737"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Hantera incidenter i Microsoft 365 Defender
 
@@ -65,12 +65,12 @@ I de fall du undersöker när du undersöker om du vill flytta  aviseringar frå
 
 ## <a name="edit-the-incident-name"></a>Redigera incidentens namn
 
-Incidenter tilldelas automatiskt ett namn baserat på aviseringsattribut, till exempel antalet slutpunkter som påverkas, användare som påverkas, identifieringskällor eller kategorier. På så sätt kan du snabbt förstå incidentens omfattning. Till exempel: *Incident i flera steg på flera slutpunkter som rapporterats av flera källor.*
+Microsoft 365 Defender tilldelar automatiskt ett namn baserat på aviseringsattribut, till exempel antalet slutpunkter som påverkas, användare som påverkas, identifieringskällor eller kategorier. På så sätt kan du snabbt förstå incidentens omfattning. Till exempel: *Incident i flera steg på flera slutpunkter som rapporterats av flera källor.*
 
 Du kan redigera incidentnamnet från **fältet Incidentnamn** i **fönstret Hantera** incident.
 
 > [!NOTE]
-> Incidenter som fanns innan de automatiska namnnamnen för incidenter distribuerades kommer att behålla sitt namn.
+> Incidenter som fanns innan namnfunktionen för automatiska incidenter distribuerades behåller sitt namn.
 
 ## <a name="add-incident-tags"></a>Lägg till incidenttaggar
 
@@ -97,3 +97,9 @@ Om det var en verklig varning bör du också ange vilken typ av hot det var med 
 ## <a name="add-comments"></a>Lägga till kommentarer
 
 Du kan lägga till flera kommentarer till en händelse med **fältet** Kommentar. Varje kommentar läggs till i de historiska händelserna för händelsen. Du kan se kommentarer och historik för en händelse via **länken Kommentarer och historik** på **sidan** Sammanfattning.
+
+## <a name="related-topics"></a>Relaterade ämnen
+
+- [Översikt över incidenter](incidents-overview.md)
+- [Prioritera incidenter](incident-queue.md)
+- [Undersöka incidenter](investigate-incidents.md)

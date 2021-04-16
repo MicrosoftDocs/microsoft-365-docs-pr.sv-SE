@@ -1,6 +1,6 @@
 ---
-title: Felsöka installationsproblem för Microsoft Defender ATP för Mac
-description: Felsöka installationsproblem i Microsoft Defender ATP för Mac.
+title: Felsöka installationsproblem för Microsoft Defender för Slutpunkt för Mac
+description: Felsöka installationsproblem i Microsoft Defender för Slutpunkt för Mac.
 keywords: microsoft, defender, atp, mac, installera
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 754f389f37bce3be1c5a636f1911b5d0fb3fd29c
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d2ad3160c9f36a27dc98f44365433de5f8b26bb2
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689623"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861437"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Felsöka installationsproblem för Microsoft Defender för slutpunkt i macOS
 
@@ -32,7 +32,7 @@ ms.locfileid: "51689623"
 
 **Gäller för:**
 
-- [Microsoft Defender för Slutpunkt på macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender för Endpoint för macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 

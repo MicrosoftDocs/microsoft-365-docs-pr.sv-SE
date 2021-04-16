@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender för Endpoint i Linux
+title: Microsoft Defender för Endpoint för Linux
 ms.reviewer: ''
-description: Här beskrivs hur du installerar och använder Microsoft Defender ATP för Linux.
+description: Här beskrivs hur du installerar och använder Microsoft Defender för Endpoint för Linux.
 keywords: microsoft, defender, atp, linux, installation, distribuera, avinstallation, enkel, ansible, linux, redhat, ubuntu, ubuntu, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0fea9d4dd46be2a77ea27728787a43b5273f92f5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f67dd28902e8b45a5401b60c027faa89d7467cd8
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687763"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861401"
 ---
-# <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender för Endpoint i Linux
+# <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender för Endpoint för Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -83,7 +83,7 @@ Om du får problem med installationen kan du gå till [Felsöka installationspro
   > Det går inte att köra Defender för Slutpunkt för Linux sida vid sida med `fanotify` andra -baserade säkerhetslösningar. Det kan leda till oväntade resultat, till exempel att operativsystemet hänger sig.
 
 - Diskutrymme: 1 GB
-- /opt/microsoft/mdatp/sbin/wdavdaemon kräver körbar behörighet. Mer information finns i "Se till att daemon har körbar behörighet" i Felsöka [installationsproblem för Microsoft Defender ATP för Linux.](/microsoft-365/security/defender-endpoint/linux-support-install)
+- /opt/microsoft/mdatp/sbin/wdavdaemon kräver körbar behörighet. Mer information finns i "Se till att daemon har körbar behörighet" i Felsöka installationsproblem för [Microsoft Defender för Endpoint för Linux.](/microsoft-365/security/defender-endpoint/linux-support-install)
 - Minne: 1 GB
     > [!NOTE]
     > Kontrollera att du har ledigt diskutrymme i /varians.

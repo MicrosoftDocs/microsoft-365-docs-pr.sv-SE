@@ -17,12 +17,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Lär dig hur du stänger ditt konto hos Microsoft.
-ms.openlocfilehash: 0ee0a649a9adb93ecdbb1cd9dbedbc04dfb46ba0
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 44428654946d31ad249bfd3e7a3609da3e3634a6
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579752"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860553"
 ---
 # <a name="close-your-account"></a>Avsluta ditt konto
 
@@ -42,7 +42,7 @@ Om användarna synkroniseras från en lokal miljö inaktiverar du först synkron
 
 Information om hur du tar bort användare <a href="/office365/admin/add-users/delete-a-user?view=o365-worldwide#user-management-admin-delete-one-or-more-users-from-office-365">finns i Användarhanteringsadministratör: Ta bort en eller flera användare</a>.
 
-Du kan också använda <a href="https://go.microsoft.com/fwlink/?linkid=842230">PowerShell-cmdleten Remove-MsolUser</a> för att massborttagning av användare.
+Du kan också använda <a href="https://docs.microsoft.com/powershell/module/msonline/remove-msoluser">PowerShell-cmdleten Remove-MsolUser</a> för att massborttagning av användare.
 
 Om din organisation använder Active Directory som synkroniserar med Microsoft Azure Active Directory (Azure AD) ska du ta bort användarkontot från Active Directory i stället. Instruktioner finns i <a href="/azure/active-directory/users-groups-roles/users-bulk-delete">Massborttagning av användare i Azure Active Directory.</a>
 

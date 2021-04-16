@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 601a8674327c424592c65014793599dc19b2bcd3
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 77b30e8a8eee70470115bcd61f081863fa5a41ee
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51759438"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862039"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Undersöka aviseringar i Microsoft 365 Defender
 
@@ -36,76 +36,108 @@ ms.locfileid: "51759438"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Aviseringar utgör grunden för alla händelser och anger förekomsten av skadliga eller misstänkta händelser i din miljö. Aviseringar är vanligtvis en del av en bredare attack och ger ledtrådar om ett incidenter.
+Aviseringar utgör grunden för alla händelser och anger förekomsten av skadliga eller misstänkta händelser i din miljö. Aviseringar är vanligtvis en del av en bredare attack och ger ledtrådar om en händelse.
 
-I Microsoft 365 Defender sammanställs relaterade aviseringar till formulärincidenter. Incidenter ger alltid en bredare kontext för en attack, men det kan vara värdefullt att undersöka aviseringar när en djupare analys krävs. 
+I Microsoft 365 Defender sammanställs relaterade aviseringar till [formulärincidenter](incidents-overview.md). Incidenter ger alltid en bredare kontext för en attack, men det kan vara värdefullt att undersöka aviseringar när en djupare analys krävs. 
 
+I **kön Aviseringar** visas den aktuella uppsättningen aviseringar. Du kommer till aviseringskön från **incidenter &** aviseringar > aviseringar i snabbstarten av säkerhetscentret för Microsoft 365 [(security.microsoft.com).](https://security.microsoft.com)
 
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Exempel på aviseringskön":::
 
-## <a name="using-alert-pages-in-investigations"></a>Med aviseringssidor i undersökningar
+Aviseringar från olika Microsoft-säkerhetslösningar som Microsoft Defender för Endpoint, Microsoft Defender för Office 365 och Microsoft 365 Defender visas här.
 
-Om du markerar en avisering på fliken Aviseringar på sidan Incidenter kommer du till de enskilda aviseringssidorna. En aviseringssida består av tre avsnitt: påverkade tillgångar, aviseringsavsnitt och informationsfönstret.
+Som standard visar aviseringskön i Säkerhetscenter för Microsoft 365 de nya och pågående aviseringarna från de senaste 30 dagarna. Den senaste aviseringen visas högst upp i listan så att du kan se den först. 
 
-![Bild på exempelaviseringssida](../../media/new-alert-page2.png)
+Från standardaviseringskön kan  du välja  Filter för att visa ett filterfönster där du kan ange en delmängd av aviseringarna. Här är ett exempel.
 
-På en aviseringssida kan du välja ikonen med tre punkter (**...**) bredvid en enhet så att du kan se tillgängliga åtgärder som att öppna en specifik tillgångssida eller utföra specifika åtgärdssteg.
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Exempel på filterfönstret för aviseringskön":::
 
-### <a name="analyze-affected-assets"></a>Analysera påverkade tillgångar
-I avsnittet berörda tillgångar visas postlådor, enheter och användare som påverkas av den här aviseringen. Om du markerar något av resurskorten fylls informationsfönstret i med information, inklusive andra aviseringar som rör tillgångarna, om det finns några.
-
-
-### <a name="trace-an-alerts-role-in-the-alert-story"></a>Spåra en aviserings roll i aviseringsartikeln
-I aviseringsartikeln visas alla tillgångar eller enheter som är relaterade till aviseringen i en processträdvy. Aviseringen i rubriken är den som är i fokus när du först kommer till den valda aviseringens sida. Tillgångar i aviseringsartikeln är expanderbara och klickbara. De ger ytterligare information och snabb respons genom att göra det möjligt för dig att vidta åtgärder direkt i kontexten för aviseringssidan. 
-
-> [!NOTE]
-> Avsnittet med aviseringsavsnittet kan innehålla fler än en avisering, och ytterligare aviseringar om samma körningsträd visas före eller efter den avisering du har markerat.
-
-### <a name="view-more-alert-information-in-the-details-pane"></a>Visa mer aviseringsinformation i informationsfönstret
-
-I informationsfönstret visas först information om den markerade aviseringen med information och relaterade åtgärder. Om du väljer någon av de berörda tillgångarna eller enheterna i aviseringsinformationen ändras informationsfönstret för att ge sammanhangsberoende information och åtgärder för det valda objektet.
-
-När du har valt en intresseenhet ändras informationsfönstret för att visa information om den valda entitetstypen, historisk information när den är tillgänglig och alternativ för att vidta åtgärder på den här enheten direkt från aviseringssidan.
-
-### <a name="manage-alerts"></a>Hantera varningar
-
-När du har undersökt aviseringarna kan du gå tillbaka till den avisering du började med, markera aviseringens status som Löst och klassificera den som en falsk avisering eller Sant-avisering. Klassificera aviseringar hjälper till att finjustera produkten och ge mer sanna aviseringar och mindre falska aviseringar.
-
-> [!NOTE]
-> Ett sätt att hantera aviseringar via taggar. Taggningsfunktioner för Microsoft Defender för Office 365 distribueras stegvis och är för närvarande i förhandsversion. <br>
-> För närvarande används ändrade taggnamn bara på aviseringar som skapats *efter* uppdateringen. Aviseringar som skapades innan ändringen återspeglar inte det uppdaterade taggnamnet. 
-
-
-## <a name="manage-the-unified-alert-queue"></a>Hantera den enhetliga aviseringskön
-
-Om du väljer Aviseringar & incidenter i navigeringsfönstret för Microsoft 365 säkerhetscenter kommer du till den enhetliga aviseringskön. Aviseringar från olika Microsoft-säkerhetslösningar som Microsoft Defender för Endpoint, Microsoft Defender för Office 365 och Microsoft 365 Defender visas i det här avsnittet. 
-
-![Bild av exempelaviseringssida](../../media/unified-alert-queue.png)
-
-I kön Aviseringar visas en lista med aviseringar som har flaggats i nätverket. Som standard visar kön aviseringar som har setts de senaste 30 dagarna. De senaste aviseringarna visas högst upp i listan, vilket hjälper dig att se de senaste aviseringarna först.
-
-> [!NOTE]
-> Vid start har den enhetliga aviseringskön bara sju dagars tillgängligt aviseringar för Microsoft Defender för Office 365. Kön fortsätter att byggas med tiden. Om du behöver prioritera aviseringar innan den enhetliga aviseringskön startas använder du kön aviseringar i [Säkerhets- och efterlevnadscenter.](https://protection.office.com/viewalerts)
-
-
-I det övre navigeringsfältet kan du:
-
-- Använda filter
-- Anpassa kolumner för att lägga till eller ta bort kolumner
-- Exportera data
-
-Du kan också filtrera aviseringar enligt olika villkor:
+Du kan filtrera aviseringar enligt följande kriterier:
 
 - Allvarlighetsgrad
 - Status
 - Kategori
 - Identifieringskälla
+- Taggar
 - Princip
 - Påverkade tillgångar
-- Första aktiviteten
-- Senaste aktivitet
 
+## <a name="analyze-an-alert"></a>Analysera en avisering
 
-Information om hur du startar en undersökning av en händelse finns [i Undersöka incidenter i Microsoft 365 Defender](investigate-incidents.md)
+Markera namnet på aviseringen om du vill se huvudaviseringssidan. Här är ett exempel.
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Exempel på informationssidan för en avisering i Säkerhetscenter för Microsoft 365":::
+
+Du kan också välja **åtgärden Öppna huvudaviseringssidan** i **fönstret Hantera** avisering.
+
+En aviseringssida består av följande avsnitt: 
+
+- Aviseringsartikel
+- Åtgärder som vidtas (inklusive påverkade tillgångar)
+- Relaterade händelser
+- Sammanfattningsinformation
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Exempel på informationssidan för en avisering i Säkerhetscenter för Microsoft 365":::
+
+På en aviseringssida kan du välja ellipsen (**...**) bredvid en enhet för att se tillgängliga åtgärder, till exempel öppna sidan för specifika tillgångar eller vidta specifika åtgärdssteg.
+
+### <a name="analyze-affected-assets"></a>Analysera påverkade tillgångar
+
+Avsnittet **Åtgärder som** vidtas har en lista över påverkade tillgångar, till exempel postlådor, enheter och användare som påverkas av den här aviseringen. 
+
+Du kan också välja Visa i  **åtgärdscenter** för att visa fliken Historik i Åtgärdscenter  i Säkerhetscenter för Microsoft 365. 
+
+### <a name="trace-an-alerts-role-in-the-alert-story"></a>Spåra en aviserings roll i aviseringsartikeln
+
+I aviseringsartikeln visas alla tillgångar eller enheter som är relaterade till aviseringen i en processträdvy. Aviseringen i rubriken är den som är i fokus när du först kommer till den valda aviseringens sida. Tillgångar i aviseringsartikeln är expanderbara och klickbara. De ger ytterligare information och underlättar ditt svar genom att göra det möjligt för dig att vidta åtgärder direkt i samband med aviseringssidan. 
+
+> [!NOTE]
+> Avsnittet med aviseringsavsnittet kan innehålla fler än en avisering, och ytterligare aviseringar om samma körningsträd visas före eller efter den avisering du har markerat.
+
+### <a name="view-more-alert-information-on-the-details-page"></a>Visa mer aviseringsinformation på informationssidan
+
+På informationssidan visas information om den valda aviseringen, med information och relaterade åtgärder. Om du väljer någon av de berörda tillgångarna eller enheterna i aviseringsinformationen ändras informationssidan för att ge sammanhangsberoende information och åtgärder för det valda objektet.
+
+När du har valt en intresseenhet ändras informationssidan för att visa information om den valda entitetstypen, historisk information när den är tillgänglig och alternativ för att vidta åtgärder på den här enheten direkt från aviseringssidan.
+
+## <a name="manage-alerts"></a>Hantera varningar
+
+Om du vill hantera en avisering markerar du aviseringen i kön med aviseringar på raden så att fönstret **Hantera avisering** visas. Här är ett exempel.
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Exempel på sammanfattningsfönstret för en avisering":::
+
+I **aviseringsfönstret** Hantera kan du ange:
+
+- Aviseringsstatus (Ny, Löst, Pågår).
+- Aviseringens klassificering (Inte inställd, Sant meddelande, Falsk avisering).
+- För klassificering som en verklig avisering anger du typen av hot för aviseringen i **fältet Determination** .
+- En kommentar om aviseringen.
+
+> [!NOTE]
+> Ett sätt att hantera aviseringar via taggar. Taggningsfunktioner för Microsoft Defender för Office 365 distribueras stegvis och är för närvarande i förhandsversion. <br>
+> För närvarande används ändrade taggnamn bara på aviseringar som skapats *efter* uppdateringen. Aviseringar som har genererats innan ändringen återspeglar inte det uppdaterade taggnamnet. 
+
+Från det här fönstret kan du även utföra följande ytterligare åtgärder: 
+
+- Öppna huvudaviseringssidan
+- Kontakta en Microsoft-expert på hot
+- Visa inskickat material
+- Länka till ett annat incident
+- Se aviseringen på en tidslinje
+- Skapa en regel för en regel
+
+Här är ett exempel.
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Exempel på åtgärder för en avisering i Säkerhetscenter för Microsoft 365":::
+
+Listan med ytterligare åtgärder beror på typen av avisering.
+
+## <a name="resolve-an-alert"></a>Lösa en avisering
+
+När du har undersökt en avisering och den  kan lösas går du till fönstret  Hantera avisering för  aviseringen och markerar dess status som Löst och klassificerar den som en falsk avisering eller **Sant-avisering.** För verkliga varningar anger du aviseringens hottyp i **fältet Determination.**
+
+Genom att klassificera aviseringar och ange deras avgörande hjälper du Microsoft 365 Defender att tillhandahålla mer sanna aviseringar och mindre falska aviseringar.
+
 ## <a name="see-also"></a>Se även
 
 - [Översikt över incidenter](incidents-overview.md)

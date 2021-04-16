@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 43ade52e18ffc8e5db890cb0776090e9b32419e2
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: da15519211599bfc248c20c36cfab456c1661caa
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687679"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862073"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Identifiering och sårbarhetshantering för nätverksenhet
 
@@ -41,6 +41,9 @@ ms.locfileid: "51687679"
 > Mer information finns i [Förhandsversionsfunktioner för Microsoft Defender för slutpunkt.](preview.md)
 
 >Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+
+> [!NOTE]  
+> Blogg [som](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) publicerats \( 2021-04-13-2021 med insikter om de nya funktionerna för identifiering av nätverksenhet i \) Defender för Slutpunkt.  Den här artikeln innehåller en översikt över utmaningen **som** upptäckten av nätverksenhet är utformad för att hantera och detaljerad information om hur du kommer igång med de här nya funktionerna.
 
 Funktioner för nätverksidentifiering  är tillgängliga i avsnittet Enhetsinventering i Säkerhetscenter för Microsoft 365 och Microsoft Defender Säkerhetscenter-konsoler.  
 
@@ -97,20 +100,22 @@ Det första steget är att välja en enhet som ska utföra autentiserade nätver
     - login.microsoftonline.com
     - *.blob.core.windows.net/networkscannerstable/ *
 
-    Obs! Inte alla URL:er anges i Defender för Slutpunkt-dokumenterad lista över tillåtna datainsamling.
+    > [!NOTE]
+    > Inte alla URL:er anges i Defender för Slutpunkt-dokumenterad lista över tillåtna datainsamling.
 
 ## <a name="permissions"></a>Behörigheter
 
-För att konfigurera utvärderingsjobb krävs följande användarbehörighetsalternativ: **Hantera säkerhetsinställningar i Säkerhetscenter.** Du hittar behörigheten genom att gå till **Inställningar**  >  **Roller.** Mer information finns i [Skapa och hantera roller för rollbaserad åtkomstkontroll](user-roles.md)
+För att konfigurera utvärderingsjobb krävs följande användarbehörighetsalternativ: **Hantera säkerhetsinställningar i Säkerhetscenter.** Du hittar behörigheten genom att gå till **Inställningar**  >  **Roller.** Mer information finns i [Skapa och hantera roller för rollbaserad åtkomstkontroll.](user-roles.md)
 
 ## <a name="install-the-network-scanner"></a>Installera nätverksskannern
 
-1. Gå till **Slutpunkter för säkerhetsinställningar för Microsoft 365**  >    >    >  **Utvärderingsjobb** (under Nätverksutvärderingar).
+1. Gå till **Slutpunkter för säkerhetsinställningar för Microsoft 365**  >    >    >  **Utvärderingsjobb** (under **Nätverksutvärderingar**).
     1. I Microsoft Defender Säkerhetscenter går du till sidan Inställningar > Utvärderingsjobb.
 
 2. Ladda ned nätverksskannern och installera den på den angivna Defender för Endpoint-utvärderingsenheten.
 
-![Knappen Ladda ned skanner](images/assessment-jobs-download-scanner.png)
+    > [!div class="mx-imgBorder"]
+    > ![Knappen Ladda ned skanner](images/assessment-jobs-download-scanner.png)
 
 ## <a name="network-scanner-installation--registration"></a>Installation av nätverksskanner & registrering
 
@@ -119,7 +124,9 @@ Inloggningsprocessen kan slutföras på den angivna utvärderingsenheten eller n
 Så här slutför du registreringen av nätverksskannern:
 
 1. Kopiera och följ URL-adressen som visas på kommandoraden och använd den angivna installationskoden för att slutföra registreringsprocessen.
-    - Obs! Du kan behöva ändra inställningarna för Kommandotolken för att kunna kopiera URL-adressen.
+
+    > [!NOTE]
+    > Du kan behöva ändra inställningarna för kommandotolken för att kunna kopiera URL-adressen.
 
 2. Ange koden och logga in med ett Microsoft-konto som har Behörigheten Defender för slutpunkt som kallas "Hantera säkerhetsinställningar i Säkerhetscenter".
 
@@ -131,13 +138,17 @@ På sidan Utvärderingsjobb i Inställningar **väljer** du **Lägg till nätver
 
 För att förhindra duplicering av enheter i nätverkets enhetslager ska du se till att varje IP-adress bara är konfigurerad en gång på flera utvärderingsenheter.
 
-![Knappen Lägg till nätverksutvärderingsjobb](images/assessment-jobs-add.png)
+> [!div class="mx-imgBorder"]
+> ![Knappen Lägg till nätverksutvärderingsjobb](images/assessment-jobs-add.png)
 
 Lägga till steg för nätverksutvärderingsjobb:
 
-1. Välj ett namn för utvärderingsjobbet och "Utvärderingsenheten" som nätverksskannern installerades på. Den här enheten utför periodiska autentiserade genomsökningar. 
+1. Välj ett namn för utvärderingsjobbet och "Utvärderingsenheten" som nätverksskannern installerades på. Den här enheten utför periodiska autentiserade genomsökningar.
+
 2. Lägg till IP-adresser för målnätverksenheter som ska skannas (eller undernäten där de här enheterna är distribuerade). 
+
 3. Lägg till nödvändiga SNMP-autentiseringsuppgifter för målnätverksenheterna. 
+
 4. Spara det konfigurerade nätverksutvärderingsjobbet för att starta den periodiska nätverkssökningen. 
 
 ### <a name="scan-and-add-network-devices"></a>Skanna och lägg till nätverksenheter
@@ -157,13 +168,14 @@ När resultatet visas kan du välja vilka enheter som ska ingå i den periodiska
 
 Nyligen identifierade enheter visas under den nya fliken **Nätverksenheter** på sidan **Enhetsinventering.** Det kan ta upp till två timmar efter att du har lagt till ett utvärderingsjobb tills enheterna har uppdaterats.
 
-![Avsnittet Nätverksenheter i inventeringen av enheter](images/assessment-jobs-device-inventory.png)
+> [!div class="mx-imgBorder"]
+> ![Avsnittet Nätverksenheter i inventeringen av enheter](images/assessment-jobs-device-inventory.png)
 
 ## <a name="troubleshooting"></a>Felsökning
 
 ### <a name="network-scanner-installation-has-failed"></a>Installationen av nätverksskannern misslyckades
 
-Kontrollera att obligatoriska URL:er läggs till i de tillåtna domänerna i brandväggsinställningarna. Kontrollera också att proxyinställningarna är konfigurerade enligt beskrivningen i Konfigurera [enhetsproxy och Internetanslutningsinställningar](configure-proxy-internet.md)
+Kontrollera att obligatoriska URL:er läggs till i de tillåtna domänerna i brandväggsinställningarna. Kontrollera även att proxyinställningarna är konfigurerade enligt beskrivningen i Konfigurera [enhetsproxy och internetanslutningsinställningar.](configure-proxy-internet.md)
 
 ### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>Webbsidan Microsoft.com/devicelogin inte visas
 

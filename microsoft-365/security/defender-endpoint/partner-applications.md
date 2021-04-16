@@ -1,5 +1,5 @@
 ---
-title: Partnerprogram i Microsoft Defender ATP
+title: Partnerprogram i Microsoft Defender för Slutpunkt
 ms.reviewer: ''
 description: Visa partnerprogram som stöds för att förbättra plattformens funktioner för identifiering, undersökning och hotinformation
 keywords: partner, program, tredje part, anslutningar, sentinelone, lookout, bitdefender, corrata, morphisec, paloalto, ziften, bättre mobil
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 563dd2a5102ec66a1e953ae6ab30d56ea4f99036
-ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
+ms.openlocfilehash: 60a2eca25090f60414e91eacfed090bc86a4cf93
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51382938"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862217"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Partnerprogram i Microsoft Defender för Slutpunkt 
 

@@ -1,6 +1,6 @@
 ---
-title: Offboard-enheter från Microsoft Defender ATP-tjänsten
-description: Introducera Windows 10-enheter, servrar, icke-Windows-enheter från Microsoft Defender ATP-tjänsten
+title: Offboard-enheter från Microsoft Defender för Slutpunkt-tjänsten
+description: Introducera Windows 10-enheter, servrar, icke-Windows-enheter från Microsoft Defender för slutpunktstjänsten
 keywords: offboarding, microsoft defender för slutpunkt offboarding, fönster atp offboarding
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4a95ff5214ea9f696622ea184ece1c5aa9fb3db2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 18c708904e0fbfceafa2aeb387ffa9ce26e83c87
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186971"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861137"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>Offboard-enheter från Microsoft Defender för Slutpunkt-tjänsten
 

@@ -1,7 +1,7 @@
 ---
 title: Översikt över hantering och API:er
 ms.reviewer: ''
-description: Läs mer om hanteringsverktyg och API-kategorier i Microsoft Defender ATP
+description: Läs mer om hanteringsverktyg och API-kategorier i Microsoft Defender för Slutpunkt
 keywords: onboarding, api, siem, rbac, access, portal, integrering, undersökning, svar, enheter, entitet, användarkontext, programkontext, direktuppspelning
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 94cfe1cc053be896c137e0c0b9ee02ea53dd2717
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 9e54fb5f2105f0a77c4b63e8d880135005c17168
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187559"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862097"
 ---
 # <a name="overview-of-management-and-apis"></a>Översikt över hantering och API:er 
 
@@ -85,5 +85,5 @@ När du aktiverar säkerhetsinformation och händelsehanteringsintegrering (SIEM
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Få åtkomst till API:er för Microsoft Defender för slutpunkt ](apis-intro.md)
 - [API:er som stöds](exposed-apis-list.md)
-- [Tekniska partnermöjligheter](partner-integration.md)
+- [Möjligheter för tekniska partner](partner-integration.md)
 

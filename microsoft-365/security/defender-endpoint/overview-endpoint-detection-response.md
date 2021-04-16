@@ -1,8 +1,8 @@
 ---
 title: Översikt över funktioner för identifiering av slutpunkt och svar
 ms.reviewer: ''
-description: Läs mer om funktionerna för identifiering och svar av slutpunkter i Microsoft Defender ATP
-keywords: ''
+description: Läs mer om funktionerna för identifiering och svar av slutpunkter i Microsoft Defender för Endpoint
+keywords: microsoft defender för slutpunkt, identifiering och svar av slutpunkter, svar, identifiering, identifiering, cybersäkerhet, skydd
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0a5a665fac1883016ac222197ba8322f78e2558f
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 138a6afde9e8c601fd41811928580644b85bf2e2
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186179"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861725"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>Översikt över identifiering och svar av slutpunkter
 
@@ -49,6 +49,6 @@ Med svarsfunktionerna kan du snabbt åtgärda hot genom att agera på de berörd
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Instrumentpanel för säkerhetsåtgärder](security-operations-dashboard.md)
 - [Incidentkö](view-incidents-queue.md)
-- [Kön Aviseringar](alerts-queue.md)
-- [Listan Enheter](machines-view-overview.md)
+- [Varningskö](alerts-queue.md)
+- [Enhetslista](machines-view-overview.md)
 

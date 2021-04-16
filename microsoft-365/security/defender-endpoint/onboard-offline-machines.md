@@ -1,7 +1,7 @@
 ---
 title: Onboard-enheter utan internetanslutning till Microsoft Defender för Endpoint
 ms.reviewer: ''
-description: Onboard-enheter utan internetanslutning så att de kan skicka sensordata till Microsoft Defender ATP-sensorn
+description: Onboard-enheter utan internetanslutning så att de kan skicka sensordata till Microsoft Defender för Slutpunkts sensor
 keywords: onboard, servers, VM, on-premise, oms gateway, log analytics, azure log analytics, mma
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b31705a4e6dc8cdd480c8b43c2154a2d6ddacddd
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: fb5a9a4d35af2d400cdff1e417727e662738514e
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186947"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861353"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Onboard-enheter utan internetanslutning till Microsoft Defender för Endpoint
 
@@ -48,7 +48,7 @@ Om du vill registrera enheter utan åtkomst till Internet måste du göra följa
 > - Mer information om hur du uppdaterar CTLs offline finns i [Konfigurera en fil eller webbserver för att ladda ned CTL-filer.](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files)
 
 Mer information om onboarding-metoder finns i följande artiklar:
-- [Introducera tidigare versioner av Windows](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-downlevel)
+- [Registrera tidigare versioner av Windows](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-downlevel)
 - [Onboard servers to the Microsoft Defender for Endpoint service](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
 - [Konfigurera enhetsproxy och internetanslutningsinställningar](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
 

@@ -1,6 +1,6 @@
 ---
-title: Förbereda Microsoft Defender ATP-distribution
-description: Förbereda godkännanden från intressenter, tidslinjer, miljööverväganden och införandeordning när du distribuerar Microsoft Defender ATP
+title: Förbereda Microsoft Defender för distribution av Endpoint
+description: Förbereda godkännanden från intressenter, tidslinjer, miljööverväganden och införandeordning när du distribuerar Microsoft Defender för Slutpunkt
 keywords: distribuera, förbereda, intressenter, tidslinje, miljö, slutpunkt, server, hantering, införande
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2704aefb3f15cc3244de6580137fa12204bfc3ce
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a59d09aa4de2644e9904eb854c183d0352aa65c9
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187475"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861173"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Förbereda Microsoft Defender för distribution av Endpoint
 
@@ -38,7 +38,7 @@ ms.locfileid: "51187475"
 
 Distribution av Defender för Endpoint är en process i tre steg:
 
-| ![distributionsfas – förbereda](images/phase-diagrams/prepare.png)<br>Fas 1: Förbereda | [![distributionsfas – konfiguration](images/phase-diagrams/setup.png)](production-deployment.md)<br>[Fas 2: Konfigurera](production-deployment.md) | [![distributionsfas – onboard](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Fas 3: Introduktion](onboarding.md) |
+| ![distributionsfas – förbereda](images/phase-diagrams/prepare.png)<br>Fas 1: Förbereda | [![distributionsfas – konfiguration](images/phase-diagrams/setup.png)](production-deployment.md)<br>[Fas 2: Installation](production-deployment.md) | [![distributionsfas – onboard](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Fas 3: Introduktion](onboarding.md) |
 | ----- | ----- | ----- |
 |*Du är här!* | ||
 
@@ -136,5 +136,5 @@ Välj komponenten i Defender för slutpunkt som ska användas och ta bort de som
 ## <a name="next-step"></a>Nästa steg
 |||
 |:-------|:-----|
-|![Fas 2: Konfigurera](images/setup.png) <br>[Fas 2: Konfigurera](production-deployment.md) | Konfigurera Microsoft Defender för distribution av Slutpunkt
+|![Fas 2: Installation](images/setup.png) <br>[Fas 2: Installation](production-deployment.md) | Konfigurera Microsoft Defender för distribution av Slutpunkt
 

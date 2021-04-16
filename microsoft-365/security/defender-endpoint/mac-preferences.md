@@ -1,6 +1,6 @@
 ---
-title: Ange inställningar för Microsoft Defender ATP för Mac
-description: Konfigurera Microsoft Defender ATP för Mac i företagsorganisationer.
+title: Ange inställningar för Microsoft Defender för Slutpunkt för Mac
+description: Konfigurera Microsoft Defender för Slutpunkt för Mac i företagsorganisationer.
 keywords: microsoft, defender, atp, mac, management, preferences, enterprise, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 951c51c767ba09ebc6056481b4fac45da09c5671
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d2bea469031e2c5932e859fbad7d442ebe4d34ed
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688555"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860929"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Ange inställningar för Microsoft Defender för Slutpunkt i macOS
 
@@ -32,7 +32,7 @@ ms.locfileid: "51688555"
 
 **Gäller för:**
 
-- [Microsoft Defender för Slutpunkt på macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender för Endpoint för macOS](microsoft-defender-endpoint-mac.md)
 
 >[!IMPORTANT]
 >Den här artikeln innehåller instruktioner för hur du anger inställningar för Microsoft Defender för Slutpunkt på macOS i företagsorganisationer. Information om hur du konfigurerar Microsoft Defender för slutpunkt i macOS med kommandoradsgränssnittet finns i [Resurser](mac-resources.md#configuring-from-the-command-line).

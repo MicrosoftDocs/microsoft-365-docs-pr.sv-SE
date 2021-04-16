@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP partner affärsmöjligheter och scenarier
+title: Microsoft Defender för slutpunkt partner affärsmöjligheter och scenarier
 ms.reviewer: ''
-description: Lär dig hur du kan utöka befintliga säkerhetserbjudanden ovanpå det öppna ramverket och en omfattande uppsättning API:er för att skapa tillägg och integreringar med Microsoft Defender ATP
+description: Lär dig hur du kan utöka befintliga säkerhetserbjudanden ovanpå det öppna ramverket och en omfattande uppsättning API:er för att skapa tillägg och integreringar med Microsoft Defender för Slutpunkt
 keywords: API, partner, utöka, öppna ramverket, api:er, tillägg, integreringar, identifiering, hantering, svar, svagheter, information
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1db82afa06fd0b6b3d7228aaf3020c5496ed69e7
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: be2f33514a568f290a3fc5cf0adc62db72243a6f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186899"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861115"
 ---
 # <a name="microsoft-defender-for-endpoint-partner-opportunities-and-scenarios"></a>Microsoft Defender för slutpunkt partner affärsmöjligheter och scenarier
 

@@ -1,6 +1,6 @@
 ---
-title: Distribuera uppdateringar för Microsoft Defender ATP för Mac
-description: Kontrollera uppdateringar för Microsoft Defender ATP för Mac i företagsmiljöer.
+title: Distribuera uppdateringar för Microsoft Defender för Slutpunkt för Mac
+description: Kontrollera uppdateringar för Microsoft Defender för Slutpunkt för Mac i företagsmiljöer.
 keywords: microsoft, defender, atp, mac, uppdateringar, distribuera
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3321c1bd181b89c53e2618fc20fa7f733a20cfc1
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9d373594771efe4eb647c007db3a26efe83e330e
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689059"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860321"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Distribuera uppdateringar för Microsoft Defender för slutpunkt i macOS
 
@@ -32,7 +32,7 @@ ms.locfileid: "51689059"
 
 **Gäller för:**
 
-- [Microsoft Defender för Slutpunkt på macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender för Endpoint för macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -78,7 +78,7 @@ Kanalen `Current` innehåller den mest stabila versionen av produkten.
 
 |Avsnitt|Värde|
 |:--|:--|
-| **Domän** | com.microsoft.autoupdate2 |
+| **Domän** | `com.microsoft.autoupdate2` |
 | **Nyckel** | ChannelName |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | Beta <br/> Förhandsgranska <br/> Aktuell |
@@ -96,7 +96,7 @@ Kanalen `Current` innehåller den mest stabila versionen av produkten.
 
 |Avsnitt|Värde|
 |:--|:--|
-| **Domän** | com.microsoft.autoupdate2 |
+| **Domän** | `com.microsoft.autoupdate2` |
 | **Nyckel** | UpdateCheckFrequency |
 | **Datatyp** | Heltal |
 | **Standardvärde** | 720 (minuter) |
@@ -109,7 +109,7 @@ Kanalen `Current` innehåller den mest stabila versionen av produkten.
 
 |Avsnitt|Värde|
 |:--|:--|
-| **Domän** | com.microsoft.autoupdate2 |
+| **Domän** | `com.microsoft.autoupdate2` |
 | **Nyckel** | HowToCheck |
 | **Datatyp** | Sträng |
 | **Möjliga värden** | Manuellt <br/> AutomaticCheck <br/> AutomaticDownload |
@@ -122,7 +122,7 @@ Kanalen `Current` innehåller den mest stabila versionen av produkten.
 
 |Avsnitt|Värde|
 |:--|:--|
-| **Domän** | com.microsoft.autoupdate2 |
+| **Domän** | `com.microsoft.autoupdate2` |
 | **Nyckel** | EnableCheckForUpdatesButton |
 | **Datatyp** | Boolesk |
 | **Möjliga värden** | True (standard) <br/> False |
@@ -134,7 +134,7 @@ Inställd på sant för att göra "Gå med i Office Insider Program..." inte til
 
 |Avsnitt|Värde|
 |:--|:--|
-| **Domän** | com.microsoft.autoupdate2 |
+| **Domän** | `com.microsoft.autoupdate2` |
 | **Nyckel** | DisableInsiderCheckbox |
 | **Datatyp** | Boolesk |
 | **Möjliga värden** | False (standard) <br/> True |
@@ -146,7 +146,7 @@ Ange falskt om du vill skicka minimalt med data om hjärtslag, ingen programanv�
 
 |Avsnitt|Värde|
 |:--|:--|
-| **Domän** | com.microsoft.autoupdate2 |
+| **Domän** | `com.microsoft.autoupdate2` |
 | **Nyckel** | SendAllTelemetryEnabled |
 | **Datatyp** | Boolesk |
 | **Möjliga värden** | True (standard) <br/> False |

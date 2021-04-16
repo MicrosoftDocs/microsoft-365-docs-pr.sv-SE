@@ -1,5 +1,5 @@
 ---
-title: Kom igång med Microsoft Teams i småföretag
+title: Kom igång med Microsoft Teams i små företag
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -20,14 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du använder Microsoft Teams i småföretag.
-ms.openlocfilehash: 592d5eda985239f79ce42291af840ff7762a903c
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: b77ad43722764895a4f89c623d4af9403aa25e5b
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034317"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860565"
 ---
-# <a name="get-started-with-microsoft-teams-in-your-small-business"></a>Kom igång med Microsoft Teams i småföretag
+# <a name="get-started-with-microsoft-teams-in-your-small-business"></a>Kom igång med Microsoft Teams i små företag
 
 - [Använda Teams för ditt företag (video)](#use-teams-for-your-business-video)
 - [Hålla onlinemöten för ditt företag (video)](#host-online-meetings-for-your-business-video)
@@ -47,7 +47,7 @@ Om du vill ha hjälp med att arbeta på distans rekommenderar vi att du börjar 
 
 ## <a name="1-get-ready"></a>1. Gör dig redo 
 
-Det är enkelt att komma igång. Om du redan har en Microsoft 365-prenumeration kontrollerar du att alla har en licens som innehåller Microsoft Teams. Om ditt företag inte har Microsoft Teams ännu kan du [hitta rätt Microsoft Teams för ditt företag och](https://aka.ms/TeamsBusinessBasic) registrera dig.
+Det är enkelt att komma igång. Om du redan har en Microsoft 365-prenumeration kontrollerar du att alla har en licens som innehåller Microsoft Teams. Om ditt företag inte har Microsoft Teams ännu kan du [hitta rätt Microsoft Teams för ditt företag och](https://www.microsoft.com/microsoft-teams/teams-for-work) registrera dig.
 
 ### <a name="get-microsoft-teams-ready-for-your-customers"></a>Gör Microsoft Teams redo för dina kunder
 
@@ -133,4 +133,4 @@ Förvandla en PC, Mac eller mobil enhet till en fungerande arbetstelefon genom a
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Förbättra småföretag med distansarbete](https://docs.microsoft.com/microsoft-365/admin/misc/empower-your-small-business-with-remote-work.md) (artikel)
+[Förbättra småföretag med distansarbete](https://docs.microsoft.com/microsoft-365/admin/misc/empower-your-small-business-with-remote-work) (artikel)

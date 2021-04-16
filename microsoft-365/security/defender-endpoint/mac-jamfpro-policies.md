@@ -1,6 +1,6 @@
 ---
-title: Konfigurera principerna för Microsoft Defender ATP för macOS i Jamf Pro
-description: Lär dig konfigurera principerna för Microsoft Defender ATP för macOS i Jamf Pro
+title: Konfigurera Principer för Microsoft Defender för Slutpunkt för macOS i Jamf Pro
+description: Lär dig konfigurera Microsoft Defender Endpoint för macOS-principer i Jamf Pro
 keywords: principer, microsoft, defender, atp, mac, installation, distribuera, avinstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79f5837ae6bae6e6a9d952d90605f4cf7b31262e
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 1a00d1c0863db7f4f5f853312f202b5e985b1512
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765137"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862277"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Konfigurera microsoft Defender för slutpunkt på macOS-principer i Jamf Pro
 
@@ -360,7 +360,7 @@ De här stegen gäller för macOS 10.15 (Catalina) eller nyare.
         - **Distributionsmetod:** Installera automatiskt *(standard)*
         - **Nivå:** Datornivå *(standard)*
 
-        ![Bild av konfigurationsprofilinställningar mdatpmdav](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+        ![Bild av skärmen med den nya macOS-konfigurationsprofilen](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
     - **Flikmeddelanden**, klicka **på** Lägg till och ange följande värden:
         - **Paket-ID:**`com.microsoft.wdav.tray`

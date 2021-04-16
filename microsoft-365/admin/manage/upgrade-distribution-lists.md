@@ -20,28 +20,43 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Lär dig hur du uppgraderar en eller flera distributionslistor till Microsoft 365-grupper i Outlook och hur du använder PowerShell för att uppgradera flera distributionslistor samtidigt.
-ms.openlocfilehash: ab7c2ff68b1f16915d65fff0d7292e3b3ad72d02
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: ef2d6d87d01d0e4874312026909fdeed9c0a8d43
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579248"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860613"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Uppgradera distributionslistor till Microsoft 365-grupper i Outlook
 
-Du kan uppgradera distributionslistor till Microsoft 365-grupper med Outlook. Det här är ett bra sätt att ge organisationens distributionslistor alla funktioner som finns i Microsoft 365 Groups. [Varför du bör uppgradera dina distributionslistor till grupper i Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
+Du kan uppgradera distributionslistor till Microsoft 365-grupper i Outlook. Det här är ett bra sätt att ge organisationens distributionslistor alla funktioner som finns i Microsoft 365 Groups. [Varför du bör uppgradera dina distributionslistor till grupper i Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
 Du kan uppgradera dina distributionslistor en i taget eller flera samtidigt.
 
-## <a name="upgrade-one-or-many-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Uppgradera en eller flera distributionslistor till Microsoft 365-grupper i Outlook
+## <a name="upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>Uppgradera en eller flera distributionsgrupper till Microsoft 365-grupper i Outlook
 
-Du måste vara global administratör eller Exchange-administratör för att uppgradera en distributionslista. Om du vill uppgradera till Microsoft 365-grupper måste distributionsgruppen ha en ägare med en postlåda.
+Du måste vara global administratör eller Exchange-administratör för att uppgradera en distributionsgrupp. Om du vill uppgradera till Microsoft 365-grupper måste distributionsgruppen ha en ägare med en postlåda.
 
-1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administrationscentret för Exchange</a>.
+### <a name="use-the-new-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>Använda den nya EAC för att uppgradera en eller flera distributionsgrupper till Microsoft 365-grupper i Outlook
 
-2. Gå till Mottagare grupper i **administrationscentret för** \> Exchange.<br/>Det visas ett meddelande om att du har distributionslistor (kallas även **distributionsgrupper)** som är kvalificerade för uppgradering till Microsoft 365-grupper.<br/> ![Välj knappen Komma igång](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+1. Gå till det nya [administrationscentret för Exchange](https://admin.exchange.microsoft.com)och gå till **Mottagare** \> **grupper**.
 
-3. Välj en eller flera distributionslistor (kallas även för **distributionsgrupp** ) från **gruppsidan**.<br/>![Välj en distributionsgrupp](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
+2. Välj den distributionsgrupp (även kallad **distributionsgrupp)** som du vill uppgradera till Microsoft 365-grupp från **sidan** Grupper.
+
+3. Välj **distributionsgruppen Uppgradera** i verktygsfältet.
+
+4. I dialogrutan Är du **redo att uppgradera? klickar** du på **Uppgradera.** Processen börjar direkt. Beroende på storleken på och antalet distributionsgrupper som du uppgraderar kan processen ta några minuter eller timmar.
+
+> [!NOTE]
+> En banderoll högst upp anger uppgraderingen, till exempel *att distributionsgrupp(er) har uppgraderats. Det tar 5 minuter att återspegla ändringarna. Filtrera efter Microsoft 365-grupper* för att se uppgraderade distrutionsgrupper.
+
+### <a name="use-the-classic-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>Använd den klassiska versionen av EAC för att uppgradera en eller flera distributionsgrupper till Microsoft 365-grupper i Outlook
+
+1. Gå till det klassiska <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administrationscentret för Exchange.</a>
+
+2. Gå till Mottagare grupper i det klassiska **administrationscentret för** \> **Exchange.**<br/>Det visas ett meddelande om att du har distributionslistor (kallas även **distributionsgrupper)** som är kvalificerade för uppgradering till Microsoft 365-grupper.<br/> ![Välj knappen Komma igång](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+
+3. Välj en eller flera distributionslistor (kallas även **distributionsgrupp)** på **gruppsidan.**<br/>![Välj en distributionsgrupp](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
 4. Välj uppgraderingsikonen.<br/>![Ikonen Uppgradera till Microsoft 365 Grupper](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
@@ -49,7 +64,7 @@ Du måste vara global administratör eller Exchange-administratör för att uppg
 
 6. Om du uppgraderar flera distributionslistor använder du listrutan för att filtrera fram vilka distributionslistor som har uppgraderats. Om listan inte är färdig väntar du lite till och väljer Uppdatera **för** att se vad som har uppgraderats.<br/>Du får inget meddelande om att uppgraderingen har slutförts för alla distributionslistor du valde. Det här kan du se genom att visa vad som står under **Tillgängliga för uppgradering** eller **Uppgraderade distributionslistor**.
 
-7. Om du valde en distributionslista för uppgradering, men den fortfarande visas på sidan som Tillgänglig för uppgradering, så gick det inte att uppgradera listan. Läs mer i [Vad gör jag om uppgraderingen inte fungerar](#what-to-do-if-the-upgrade-doesnt-work).
+7. Om du valde en dl för uppgradering, men den fortfarande visas på sidan som Tillgänglig för uppgradering, gick det inte att uppgradera den. Läs mer i [Vad gör jag om uppgraderingen inte fungerar](#what-to-do-if-the-upgrade-doesnt-work).
 
 > [!NOTE]
 > Om du får e-postsammandrag för grupper kanske du har lagt märke till erbjudandet om att uppgradera de kvalificerade distributionslistor du äger. Mer information om e-postsammandrag finns i [Hålla en gruppkonversation i Outlook](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22).
@@ -60,7 +75,7 @@ Distributionslistor som inte går att uppgradera förändras inte.
 
 Om du inte kan uppgradera en eller flera **kvalificerade** distributionslistor ska du öppna ett [supportärende](../contact-support-for-business-products.md). Ärendet eskaleras till ingenjörsteamet för grupper som försöker lösa problemet.
 
-Det är möjligt att distributionslistan inte uppgraderades på grund av ett avbrott i tjänsten, men det är ganska osannolikt. Om du vill kan du vänta en stund och sedan försöka uppgradera distributionslistan igen.
+Det är möjligt att distributionslistan inte uppgraderades på grund av ett avbrott i tjänsten, men osannolikt. Om du vill kan du vänta en stund och sedan försöka uppgradera distributionslistan igen.
 
 ## <a name="how-to-use-powershell-to-upgrade-several-distribution-lists-at-the-same-time"></a>Använda PowerShell till att uppgradera flera distributionslistor åt gången
 
@@ -68,7 +83,7 @@ Om du är van vid att använda PowerShell kanske du vill göra det i stället f�
 
 ### <a name="upgrade-a-single-dl"></a>Uppgradera en enstaka dl
 
-Om du vill uppgradera en enstaka DLL kör du följande kommando:
+Om du vill uppgradera en enda DLL-lista kör du följande kommando:
 
 ```PowerShell
 Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>`
@@ -131,8 +146,8 @@ Du kan bara uppgradera enkla distributionslistor som hanteras i molnet och inte 
 |Kapslade distributionslistor Distributionslistan har antingen underordnade grupper eller är medlem i en annan grupp.  <br/> |Nej  <br/> |
 |Distributionslistor med en **annan RecipientTypeDetails** för medlemmar än **UserMailbox,** **SharedMailbox,** **TeamMailbox** och **MailUser**  <br/> |Nej  <br/> |
 |Distributionslista med fler än 100 ägare  <br/> |Nej  <br/> |
-|Distributionslista som endast har medlemmar och ingen ägare  <br/> |Nej  <br/> |
-|Distributionslista med ett alias som innehåller specialtecken  <br/> |Nej  <br/> |
+|Distributionslista som bara har medlemmar men ingen ägare  <br/> |Nej  <br/> |
+|Distributionslista med alias som innehåller specialtecken  <br/> |Nej  <br/> |
 |Om distributionslistan är konfigurerad som en adress för vidarebefordran för Delad postlåda  <br/> |Nej  <br/> |
 |Om dl är en del av **avsändarbegränsningen** i en annan dl.  <br/> |Nej  <br/> |
 |Säkerhetsgrupper  <br/> |Nej  <br/> |
@@ -154,9 +169,9 @@ Om du vill kontrollera vilka adresser som är kvalificerade för uppgradering k�
 
 Användare med globala administratörs- eller Exchange-administratörsrättigheter.
 
-### <a name="why-is-the-contact-card-still-showing-a-distribution-list-what-should-i-do-to-prevent-a-upgraded-distribution-list-from-showing-up-in-my-auto-suggest-list"></a>Varför visas det fortfarande en distributionslista på kontaktkortet? Hur kan jag förhindra att en uppgraderad distributionslista visas i min lista med automatiska förslag?
+### <a name="why-is-the-contact-card-still-showing-a-distribution-list-what-should-i-do-to-prevent-an-upgraded-distribution-list-from-showing-up-in-my-auto-suggest-list"></a>Varför visas det fortfarande en distributionslista på kontaktkortet? Hur kan jag förhindra att en uppgraderad distributionslista visas i min lista med automatiska förslag?
 
-- För Outlook: När någon försöker skicka ett e-postmeddelande i Outlook genom att skriva namnet på Microsoft 365-gruppen efter migrering matchas mottagaren som distributionslistan i stället för gruppen. Mottagarens kontaktkort blir distributionslistans kontaktkort. Det här beror på mottagarens cache eller cachen för smeknamn i Outlook. E-postmeddelandet kommer att skickas till gruppen, men det kan vara förvirrande för avsändaren.<br/>Du kan följa instruktionerna i [Information om listan Komplettera automatiskt i Outlook](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list) om du vill återställa cachen, vilket löser problemet.
+- För Outlook: När någon försöker skicka ett e-postmeddelande i Outlook genom att skriva namnet på Microsoft 365-gruppen efter migrering matchas mottagaren som distributionslistan i stället för gruppen. Mottagarens kontaktkort blir distributionslistans kontaktkort. Det här beror på mottagarens cache eller cachen för smeknamn i Outlook. E-postmeddelandet kommer att skickas till gruppen, men det kan vara förvirrande för avsändaren.<br/>Du kan utföra stegen i den här artikeln Information om listan Komplettera automatiskt [i Outlook](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list) om du vill återställa cachen, vilket löser problemet.
 
 - För Outlook på webben: Om du använder Outlook på webben ligger distributionslistan kvar som mottagare i cachen. Du kan följa stegen i Ta bort föreslagna namn eller [e-postadresser](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58) från listan Komplettera automatiskt om du vill uppdatera cachen så att gruppkontaktkortet visas.
 

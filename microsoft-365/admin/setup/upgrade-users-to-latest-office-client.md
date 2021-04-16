@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Läs mer om hur du uppgraderar Microsoft Office till den senaste Office-klienten för användare i organisationen.
-ms.openlocfilehash: 14be8d63b2acb3e4838640dc399595c0ba3f97f5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3d2d5e54506d06662c6c2feef0d142f1e195163f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914000"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860577"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Uppgradera dina Microsoft 365 för företag-användare till den senaste Office-klienten
 
@@ -91,7 +91,7 @@ Byt till en prenumeration som innehåller Office. Se [Byta till ett annat Micros
 
 **Alternativ 2: Gör enskilda, enstaka köp av Office eller köp Office via en volymlicens**
 
- - Gör ett enskilt, enstaka köp av Office. Se [Office Home &amp; Business](https://products.office.com/home-and-business) eller [Office Professional](https://products.office.com/professional)
+ - Gör ett enskilt, enstaka köp av Office. Se [Office Home &amp; Business](https://www.microsoft.com/microsoft-365/buy/compare-all-microsoft-365-products-b) eller [Office Professional](https://www.microsoft.com/microsoft-365/p/office-professional-2019/CFQ7TTC0K7C5/)
 
      ELLER
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Avgör om klientorganisationen och användarna uppfyller kraven, så att du kan använda centraliserad distribution för att distribuera Office-tillägg.
-ms.openlocfilehash: 1516a10932158ba137f58900e0c19c5fea3bd119
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 7eb15563ca11e8fcce17dc6b505347475d18641e
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580960"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860697"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Avgöra om centraliserad distribution av tillägg fungerar för din organisation
 
@@ -155,5 +155,5 @@ Om du eller dina användare stöter på problem med att läsa in tillägget när
   
 |**Plattform**|**Felsökningsinformation**|
 |:-----|:-----|
-|Office  <br/> | Charles-/Fiddler-loggar  <br/>  Klientorganisationens id ( [så här gör du](/onedrive/find-your-office-365-tenant-id.aspx))  <br/>  CorrelationID. Visa källan för en av Office-sidorna, leta efter värdet för Korrelations-ID och skicka det till supporten:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Office  <br/> | Charles-/Fiddler-loggar  <br/>  Klientorganisationens id ( [så här gör du](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Visa källan för en av Office-sidorna, leta efter värdet för Korrelations-ID och skicka det till supporten:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |RTF-klienter (Windows, Mac)  <br/> | Charles-/Fiddler-loggar  <br/>  Versionsnummer för klientappen (helst som en skärmbild från **Arkiv/Konto**)  <br/> |

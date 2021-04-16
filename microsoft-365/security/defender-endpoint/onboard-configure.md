@@ -1,5 +1,5 @@
 ---
-title: Introducera enheter till Microsoft Defender ATP-tjänsten
+title: Introducera enheter till Microsoft Defender för slutpunktstjänsten
 description: Introducera Windows 10-enheter, servrar, icke-Windows-enheter och lär dig hur du kör ett identifieringstest.
 keywords: onboarding, microsoft defender för slutpunkts onboarding, windows atp onboarding, sccm, grupprincip, mdm, lokalt skript, identifieringstest
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9b7a225e29b4b79b2e6caf95332cb91da3dade7f
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 4aa3e30f34e7d9dc362cc0bbb277aaee5834b4fe
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186959"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861381"
 ---
 # <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>Introducera enheter till Microsoft Defender för slutpunktstjänsten
 
@@ -63,12 +63,12 @@ I följande tabell visas de tillgängliga verktygen baserat på slutpunkten som 
 ## <a name="in-this-section"></a>I det här avsnittet
 Ämne | Beskrivning
 :---|:---
-[Introducera tidigare versioner av Windows](onboard-downlevel.md)| Introducera Windows 7- och Windows 8.1-enheter i Defender för Slutpunkt. 
-[Introducera Windows 10-enheter](configure-endpoints.md) | Du måste registrera enheter för att rapporten ska kunna rapportera till Defender för slutpunktstjänsten. Läs mer om verktyg och metoder som du kan använda för att konfigurera enheter i företaget.
+[Registrera tidigare versioner av Windows](onboard-downlevel.md)| Introducera Windows 7- och Windows 8.1-enheter i Defender för Slutpunkt. 
+[Registrera Windows 10-enheter](configure-endpoints.md) | Du måste registrera enheter för att rapporten ska kunna rapportera till Defender för slutpunktstjänsten. Läs mer om verktyg och metoder som du kan använda för att konfigurera enheter i företaget.
 [Onboard servers](configure-server-endpoints.md) |  Onboard Windows Server 2008 R2 SP1, Windows Server 2012 R2, Windows Server 2016, Windows Server (SACK) version 1803 and later, Windows Server 2019 and later, and Windows Server 2019 core edition to Defender for Endpoint.
-[Introducera enheter som inte är Windows-enheter](configure-endpoints-non-windows.md) | Defender för Endpoint ger en centraliserad säkerhetsoperationer för Windows och för icke-Windows-plattformar. Du kan se aviseringar från olika operativsystem som stöds (OS) i Microsoft Defender Säkerhetscenter och bättre skydda organisationens nätverk. Den här upplevelsen utnyttjar sensordata från tredje part. 
-[Köra ett identifieringstest på en nyligen onboarded-enhet](run-detection-test.md) | Kör ett skript på en nyligen onboarded-enhet för att verifiera att den rapporterar korrekt till Defender för slutpunkt-tjänsten.
+[Registrera icke-Windows-enheter](configure-endpoints-non-windows.md) | Defender för Endpoint ger en centraliserad säkerhetsoperationer för Windows och för icke-Windows-plattformar. Du kan se aviseringar från olika operativsystem som stöds (OS) i Microsoft Defender Säkerhetscenter och bättre skydda organisationens nätverk. Den här upplevelsen utnyttjar sensordata från tredje part. 
+[Kör ett identifieringstest på en nyligen registrerad enhet](run-detection-test.md) | Kör ett skript på en nyligen onboarded-enhet för att verifiera att den rapporterar korrekt till Defender för slutpunkt-tjänsten.
 [Konfigurera proxy- och Internetinställningar](configure-proxy-internet.md)| Aktivera kommunikation med Defender för slutpunktsmolntjänsten genom att konfigurera proxy- och Internetanslutningsinställningarna.
-[Felsöka onboarding-problem](troubleshoot-onboarding.md) | Läs mer om hur du löser problem som kan uppstå under registrering.
+[Felsöka registreringsproblem](troubleshoot-onboarding.md) | Läs mer om hur du löser problem som kan uppstå under registrering.
 
 >Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

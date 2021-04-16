@@ -1,6 +1,6 @@
 ---
 title: Hantera regler för Microsoft Defender för slutpunktsslutpunkter
-description: Du kan behöva förhindra att aviseringar visas i portalen genom att använda regler som gäller här. Lär dig hur du hanterar regler som gäller i Microsoft Defender ATP.
+description: Du kan behöva förhindra att aviseringar visas i portalen genom att använda regler som gäller här. Lär dig hur du hanterar regler som gäller i Microsoft Defender för Endpoint.
 keywords: hantera hantera hantera regler, regelnamn, omfattning, åtgärd, aviseringar, aktivera, inaktivera
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d2ff8fa1f07f82c3cc719f49f50ee25937aea243
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: f1549512a02fe3af71d32c6b33c69cc705de99a8
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187571"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862133"
 ---
-# <a name="manage-suppression-rules"></a>Hantera regelhanter
+# <a name="manage-suppression-rules"></a>Hantera undertryckande regler
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -55,4 +55,4 @@ Du kan visa en lista över alla regler och hantera dem på ett och samma ställe
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [Hantera aviseringar](manage-alerts.md)
+- [Hantera varningar](manage-alerts.md)

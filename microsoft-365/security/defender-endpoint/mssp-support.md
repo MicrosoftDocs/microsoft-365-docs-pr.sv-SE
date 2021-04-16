@@ -1,6 +1,6 @@
 ---
 title: Affärsmöjligheter för hanterad säkerhetstjänstleverantör (MSSP)
-description: Förstå hur Microsoft Defender ATP integreras med tjänstleverantörer för hanterade säkerhetstjänster (MSSP)
+description: Förstå hur Microsoft Defender för Endpoint integreras med tjänstleverantörer för hanterade säkerhetstjänster (MSSP)
 keywords: mssp, integrering, hanterad, säkerhet, tjänst, leverantör
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a3f357553e259075b3a47d6866faee06c98036a8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 790abaad5506a77b70cb8d772e83289d8dbd791f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186587"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860791"
 ---
 # <a name="managed-security-service-provider-partnership-opportunities"></a>Affärsmöjligheter för samarbete med tjänstleverantör för hanterade säkerhetstjänster
 
@@ -49,7 +49,7 @@ Defender för Endpoint lägger till möjligheter till samarbete för det här sc
 
 
 ## <a name="related-topic"></a>Relaterat ämne
-- [Konfigurera integrering av tjänstleverantör för hanterad säkerhet](configure-mssp-support.md)
+- [Konfigurera integrering med hanterad säkerhetstjänstleverantör](configure-mssp-support.md)
 
 
 

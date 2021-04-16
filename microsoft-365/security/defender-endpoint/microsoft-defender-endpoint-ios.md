@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP för iOS
+title: Microsoft Defender för Endpoint för iOS
 ms.reviewer: ''
-description: Här beskrivs hur du installerar och använder Microsoft Defender ATP för iOS
+description: Beskriver hur du installerar och använder Microsoft Defender för Slutpunkt för iOS
 keywords: microsoft, defender, atp, ios, overview, installation, deploy, avinstallation, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bc28c40443a6cae2815ad97126073df4579c494c
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: a04d939d5c25341f07090ac896cfb80b43ab1a1c
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768788"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861389"
 ---
-# <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender för slutpunkt på iOS
+# <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender för Endpoint för iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fec2263599f3ed727d3d9d70023927084eb1c094
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 72a1f8fe71efcfa7f4f73671611576a454b508e6
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501076"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861323"
 ---
 # <a name="get-incident-notifications-by-email"></a>Få incidentaviseringar via e-post
 
@@ -37,42 +37,44 @@ ms.locfileid: "51501076"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Du kan konfigurera Microsoft 365 Defender så att du får ett e-postmeddelande varje gång det finns nya incidenter eller nya uppdateringar av befintliga incidenter. 
+Du kan konfigurera Microsoft 365 Defender så att din personal får ett e-postmeddelande om nya incidenter eller uppdateringar av befintliga incidenter. Du kan välja att få aviseringar baserat på:
 
-Du kan välja att få aviseringar utifrån allvarlighetsgrad eller enhetsgrupp. Du kan också välja att bara få ett meddelande vid den första uppdateringen per incident.
+- Incidentens allvarlighetsgrad.
+- Enhetsgrupp.
+- Endast vid den första uppdateringen per incident.
 
-Du kan lägga till eller ta bort mottagare i e-postaviseringarna. Nyligen tillagda mottagare får ett meddelande om incidenter när de har lagts till. 
+E-postmeddelandet innehåller viktig information om incidenten, bland annat incidentens namn, allvarlighetsgrad och kategorier. Du kan också gå direkt till händelsen och påbörja din undersökning direkt. Mer information finns i [Undersöka incidenter.](investigate-incidents.md)
 
-E-postmeddelandet innehåller viktig information om incidenten, bland annat incidentens namn, allvarlighetsgrad och kategorier. Du kan också gå direkt till incidenterna så att du kan börja din undersökning direkt. Mer information om hur du undersöker incidenter [finns i Undersöka incidenter i Microsoft 365 Defender.](./investigate-incidents.md)
+Du kan lägga till eller ta bort mottagare i e-postaviseringarna. Nya mottagare får ett meddelande om incidenter när de har lagts till. 
 
 >[!NOTE]
 >Du behöver behörigheten Hantera säkerhetsinställningar för att konfigurera inställningar för e-postaviseringar. Om du har valt att använda grundläggande behörighetshantering kan användare med roller som säkerhetsadministratör eller global administratör konfigurera e-postaviseringar åt dig. <br> <br>
 På samma sätt kan du, om din organisation använder rollbaserad åtkomstkontroll (RBAC), bara skapa, redigera, ta bort och ta emot meddelanden baserat på enhetsgrupper som du har behörighet att hantera.
 
-## <a name="create-rules-for-incident-notifications"></a>Skapa regler för incidentmeddelanden
+## <a name="create-a-rule-for-email-notifications"></a>Skapa en regel för e-postaviseringar
 
-Om du vill konfigurera din första e-postavisering för incidenter skapar du en ny regel och anpassar inställningarna för e-postaviseringar.
+Följ de här anvisningarna för att skapa en ny regel och anpassa inställningarna för e-postaviseringar.
 
-1. Välj Inställningar Incident-e-postaviseringar   >  **i navigeringsfönstret.**
+1. I navigeringsfönstret väljer du Inställningar **> Microsoft 365 Defender och > e-postmeddelanden om incidenter**.
 2. Välj **Lägg till objekt.**
-3. Ge regeln ett namn i **Namn och** ange en **beskrivning**.
+3. Skriv **regelnamnet** och en beskrivning på sidan Grunder och välj sedan **Nästa.**
+4. På sidan **Meddelandeinställningar** konfigurerar du:
+    - **Aviserings allvarlighetsgrad** – Välj den aviserings allvarlighetsgrad som utlöser en incidentavisering. Om du till exempel bara vill informeras om incidenter med hög allvarlighetsgrad väljer du **Hög.**
+    - **Enhetsgruppomfattning** – Du kan ange alla enhetsgrupper eller välja i listan över enhetsgrupper i klientorganisationen.
+    - **Meddela endast vid första förekomsten per incident** – Välj om du bara vill ha en avisering på den första aviseringen som matchar dina andra val. Senare uppdateringar eller aviseringar relaterade till händelsen skickar inte ytterligare meddelanden.
+    - **Inkludera organisationens namn i e-postmeddelandet** – Välj om du vill att organisationens namn ska visas i e-postmeddelandet.
+    - **Inkludera klientspecifik portallänk** – välj om du vill lägga till en länk med klientorganisations-ID:t i e-postmeddelandet för åtkomst till en viss Microsoft 365-klient.
 
-    ![Skapa regelfönster för meddelanden om incidenter](../../media/incidentemailnotif1.png) 
-4. Välj **Nästa för** att gå till **Meddelandeinställningar**. Här kan du ange:
-    - **Aviserings allvarlighetsgrad** – Välj den aviserings allvarlighetsgrad som utlöser en incidentavisering. Om du till exempel bara vill informeras om incidenter med hög allvarlighetsgrad väljer du Hög.
-    - **Enhetsgruppomfattning** – I den här listrutan visas alla enhetsgrupper som användaren kan komma åt. Välj vilken enhetsgrupper du skapar aviseringsregler för.
-    - **Meddela endast vid första förekomsten per incident** – Om du väljer det här alternativet skickas bara en e-postavisering i den första aviseringen som matchar dina andra val. Senare uppdateringar eller aviseringar relaterade till händelsen utlöser inte någon avisering.
-    - **Inkludera organisationsnamn** – anger om kundnamnet visas i e-postmeddelandet eller inte.
-    - **Inkludera klientspecifik portallänk – Lägger** till en länk med klientorganisations-ID:t för att tillåta åtkomst till en viss klientorganisation.
-    
-    ![Fönstret Notif-inställningar för incident-e-postmeddelanden](../../media/incidentemailnotif2.png)
-5. Välj **Nästa** för att gå **till avsnittet** Mottagare. Här kan du ange e-postadresser som ska ta emot e-postaviseringarna. Välj **Lägg till en mottagare när** du har skrivit varje e-postadress.
+    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="Meddelandeinställningar för incidentmeddelanden":::
 
-    ![Fönstret Lägg till mottagare för meddelanden om incidenter](../../media/incidentemailnotif3.png) 
+5. Välj **Nästa**. På sidan **Mottagare** lägger du till de e-postadresser som ska ta emot incidentaviseringarna. Välj **Lägg till** när du har skrivit varje ny e-postadress. Om du vill testa aviseringar och se till att mottagarna får dem i inkorgarna väljer du **Skicka test-e-post.** 
+6. Välj **Nästa**. Granska **inställningarna för** regeln på sidan Granska regel och välj sedan **Skapa regel.** Mottagarna får incidentaviseringar via e-post baserat på inställningarna.
 
-6. Välj Nästa **för att** gå till Granska regel **så** att du kan se alla inställningar som är kopplade till den nya regeln. Mottagarna får incidentaviseringar via e-post baserat på inställningarna.
+Om du vill redigera en befintlig regel väljer du den i listan med regler. I fönstret med regelnamnet väljer du **Redigera regel** och gör ändringarna på sidorna **Grunder,** **Meddelandeinställningar** **och** Mottagare.
+
+Om du vill redigera en befintlig regel väljer du den i listan med regler. I fönstret med regelnamnet väljer du Ta **bort**.
 
 ## <a name="see-also"></a>Se även
-- [Översikt över incidenter i Microsoft 365 Defender](./incidents-overview.md)
-- [Prioritera incidenter i Microsoft 365 Defender](./incident-queue.md)
-- [Undersöka incidenter i Microsoft 365 Defender](./investigate-incidents.md)
+- [Översikt över incidenter](incidents-overview.md)
+- [Prioritera incidenter](incident-queue.md)
+- [Undersöka incidenter](investigate-incidents.md)

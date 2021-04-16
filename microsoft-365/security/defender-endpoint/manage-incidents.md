@@ -1,5 +1,5 @@
 ---
-title: Hantera MICROSOFT Defender ATP-incidenter
+title: Hantera Microsoft Defender för slutpunktsincidenter
 description: Hantera ärenden genom att tilldela den, uppdatera dess status eller ange dess klassificering.
 keywords: incidenter, hantera, tilldela, status, klassificering, sant meddelande, falsk avisering
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b8b5e806d09f08a12c090a1055f2c165f25b7ea1
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: abb538972b48f8790286c0a546eecdd69fc83fb5
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185821"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862145"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-incidents"></a>Hantera Microsoft Defender för slutpunktsincidenter
 
@@ -82,5 +82,5 @@ Tillagda kommentarer visas direkt i fönstret.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Incidentkö](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
-- [Visa och ordna kö för incidenter](view-incidents-queue.md)
+- [Visa och ordna incidentkö](view-incidents-queue.md)
 - [Undersöka incidenter](investigate-incidents.md)

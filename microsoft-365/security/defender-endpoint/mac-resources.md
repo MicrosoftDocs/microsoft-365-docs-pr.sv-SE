@@ -1,6 +1,6 @@
 ---
-title: Resurser för Microsoft Defender ATP för Mac
-description: Resurser för Microsoft Defender ATP för Mac, inklusive hur du avinstallerar det, hur du samlar in diagnostikloggar, CLI-kommandon och kända problem med produkten.
+title: Resurser för Microsoft Defender för Slutpunkt för Mac
+description: Resurser för Microsoft Defender för Endpoint för Mac, inklusive hur du avinstallerar det, hur du samlar in diagnostikloggar, CLI-kommandon och kända problem med produkten.
 keywords: microsoft, defender, atp, mac, installation, distribuera, avinstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 71ebe48fdbb8f9995ef2f3429cb8a824ed76f244
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 98e123ac4775096c968bc831965a562481c848b6
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689647"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862181"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Resurser för Microsoft Defender för slutpunkt i macOS
 
@@ -84,7 +84,7 @@ Det finns flera sätt att avinstallera Microsoft Defender för slutpunkt i macOS
 
 ### <a name="interactive-uninstallation"></a>Interaktiv avinstallation
 
-- Öppna **Finder > Program**. Högerklicka på **Microsoft Defender ATP-> flytta till papperskorgen**.
+- Öppna **Finder > Program**. Högerklicka på **Microsoft Defender för slutpunkts-> flytta till papperskorgen**.
 
 ### <a name="from-the-command-line"></a>Från kommandoraden
 

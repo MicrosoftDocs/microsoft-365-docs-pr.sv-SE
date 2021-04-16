@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Läs om hur du får en rapport om Microsoft 365-appar för användning med instrumentpanelen Rapporter i Microsoft 365 i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 5b45e7994126018701c409d4fbfc6f1172924773
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: d41a1680b46709c3f41b5238d309794c68101cee
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644273"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860755"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Microsoft 365-rapporter i administrationscentret – användning av Microsoft 365-appar
 
@@ -33,7 +33,7 @@ På instrumentpanelen Rapporter **i** Microsoft 365 ser du en översikt över ak
 
 
  > [!NOTE]
- > Du måste vara global administratör, global läsare eller rapportläsare i Microsoft 365 eller Exchange-, SharePoint- eller Skype för företag-administratör för att kunna se rapporter. Aktiveringar på delade datorer stöds inte i den här rapporten.
+ > Du måste vara global administratör, global läsare eller rapportläsare i Microsoft 365 eller Exchange-, SharePoint- eller Skype för företag-administratör för att kunna se rapporter. Aktiveringar på delade datorer ingår inte i den här rapporten.
 
 ## <a name="how-to-get-to-the-microsoft-365-apps-usage-report"></a>Öppna användningsrapporten för Microsoft 365-appar
 
@@ -50,7 +50,7 @@ Du kan få en uppfattning om användarnas aktiviteter i Microsoft 365-appar geno
 |Objekt|Beskrivning|
  |:-----|:-----|
  |1. <br/> |I **användningsrapporten för Microsoft 365-appar** kan du se trender för de senaste 7, 30, 90 eller 180 dagarna. Men om du väljer en viss dag i rapporten visar tabellen (7) data för de senaste 28 dagarna (inte från det datum då rapporten skapades). <br/> |
- |2. <br/> |Data i varje rapport täcker vanligtvis upp till de senaste sju dagarna. <br/> |
+ |2. <br/> |Data i varje rapport täcker vanligtvis upp till de senaste två dagarna. Var sjätte dag uppdaterar vi rapporten med mindre uppdateringar för att säkerställa datakvaliteten. <br/> |
  |3. <br/> |Vyn **Användare** visar trenden för antalet aktiva användare för varje app – Outlook, Word, Excel, PowerPoint, OneNote och Teams. "Aktiva användare" är alla användare som utför alla avsiktliga åtgärder i dessa appar. <br/> |
  |4. <br/> |I **vyn** Plattformar visas trenden för aktiva användare i alla appar för varje plattform – Windows, Mac, Webben och Mobil. <br/> |
  |5.<br/>|I **diagrammet** Användare visar Y-axeln antalet unika aktiva användare för respektive app. I **diagrammet Plattformar**   är Y-axeln antalet unika användare för respektive plattform. X-axeln i båda diagrammen är det datum då en app användes på en viss plattform.<br/>|
