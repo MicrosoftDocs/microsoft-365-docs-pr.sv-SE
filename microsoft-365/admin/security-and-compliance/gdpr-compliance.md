@@ -1,5 +1,5 @@
 ---
-title: GDPR förenklad en guide för ditt småföretag
+title: GDPR förenklat En guide för småföretag
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -18,153 +18,153 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
-description: Lär dig hur Microsoft 365 för företag kan hjälpa dig med dataskyddsförordningen (GDPR).
+description: Läs om hur Microsoft 365 för företag kan hjälpa dig i processen med den allmänna dataskyddsförordningen (GDPR).
 ms.openlocfilehash: c00dec46e47bde8afef8ffb2cd67dfc00ea98950
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50914504"
 ---
-# <a name="gdpr-simplified-a-guide-for-your-small-business"></a>GDPR förenklad: En guide för småföretag
+# <a name="gdpr-simplified-a-guide-for-your-small-business"></a>GDPR förenklat: En guide för småföretag
 
- *Använda Microsoft 365 för företag för att minimera och hantera GDPR:s efterlevnad* 
+ *Använda Microsoft 365 för företag för att minimera och hantera GDPR-efterlevnad* 
   
-Allmänna Dataskyddsförordningen (GDPR) är en EU-bestämmelse som ger fullmakter hur en organisation ska hantera personuppgifter. GDPR ska träder i kraft den 25 maj 2018. Om ditt företag säljer till, tillhandahåller tjänster till eller använder eu:s invånare kommer [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) att påverka dig. 
+Allmänna dataskyddsförordning (GDPR) är en EU-förordning som bestämmer hur en organisation ska hantera personuppgifter. GDPR träder i kraft den 25 maj 2018. Om ditt företag säljer eller tillhandahåller tjänster till Europeiska Unionen eller anställer EU-medborgare så påverkas du av [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en). 
   
-Den här artikeln hjälper dig att förstå vad GDPR är, varför den gäller och hur Microsoft 365 för företag kan hjälpa din organisation att uppfylla GDPR.
+Den här artikeln hjälper dig att förstå vad GDPR är, varför den kom till och hur Microsoft 365 för företag kan hjälpa din organisation att följa GDPR.
   
-## <a name="a-quick-overview-of-the-gdpr"></a>En snabb överblick av GDPR
+## <a name="a-quick-overview-of-the-gdpr"></a>En snabb översikt av GDPR
 
-GDPR är en EU-bestämmelse som uppdaterar och expanderar det tidigare direktiv för dataskydd som infördes 1995. GDPR handlar om integriteten för en enskild individs data, var för sig en kund, kund, anställd eller affärspartner. GDPR:s mål är att förstärka det personliga dataskyddet för EU:s människor, oavsett om de finns i EU eller någon annanstans. I lagstiftningen anges förväntningar och råd om hur du uppnår dem. När GDPR blir verkställbart i slutet av maj 2018 måste organisationer ha åtgärder på plats som uppfyller kraven i GDPR.
+GDPR är en EU-förordning som uppdaterar och utökar det tidigare Dataskyddsdirektivet som antogs 1995. GDPR berör sekretessen för enskilda personers uppgifter, vare sig det är en klient, en kund, en anställd eller en affärspartner. Målet med GDPR är att stärka det personliga dataskyddet för EU:s medborgare, oavsett om de bor i EU eller någon annanstans. I reglerna anges förväntningar och råd om hur du ska uppnå dem. När GDPR blir verkställbar i slutet av maj 2018 måste organisationer ha åtgärder på plats som uppfyller kraven i GDPR.
   
-GDPR handlar om data och hur de används. Tänk på att data har en livscykel. Cykeln startar när du samlar in data, fortsätter när du lagrar och använder dem (bearbetas) och slutar när du tar bort dem helt från dina system. 
+GDPR handlar om data och hur de används. Tänk på data som en livscykel. Cykeln startar när du samlar in data, fortsätter när du lagrar och använder dem (bearbetning) och slutar när du tar bort dem helt från dina system. 
   
-GDPR tar upp följande typer av data: 
+GDPR berör följande typer av data: 
   
-- **Personliga data:** Om du kan länka data till en person och identifiera dem, anses dessa data vara personliga i förhållande till GDPR. Exempel på personuppgifter är namn, adress, födelsedatum och IP-adress. GDPR behandlar även kodad information (även kallad "anonym" information) som personuppgifter, oavsett hur skymda eller tekniska data är, om data kan länkas till en enskild person.
+- **Personuppgifter:** Om du kan länka data till en enskild person och identifiera dem anses dessa data vara personliga med avseende på GDPR. Exempel på personuppgifter är namn, adress, födelsedatum och IP-adress. GDPR anser även att kodad information (även kallad pseudonymiserad information) är personuppgifter, oavsett hur dolda eller tekniska data är, om data kan länkas till en enskild person.
     
-- **Känsliga personuppgifter** Det här är data som lägger till mer information i personliga data. Exempel är religion, medlemskap i en bransch, ursprungsbeteckningar och så vidare. Känsliga personuppgifter omfattar även biometriska data och TIDE. Under GDPR har känsliga data striktare skyddsregler än personuppgifter. 
+- **Känsliga personuppgifter** Det här är data som tillför ytterligare information till de personliga uppgifterna. Några exempel är religion, medlemskap i fackförening, etniskt ursprung och så vidare. Känsliga personuppgifter inkluderar även biometriska data och dna. Under GDPR har känsliga uppgifter striktare skyddsregler än personuppgifter. 
     
 ## <a name="gdpr-terms"></a>GDPR-villkor
 
-Du kommer att se några termer som ofta hänvisas till i GDPR. Det är viktigt att du förstår termerna.
+Det finns några återkommande termer som omnämns i GDPR. Det är viktigt att förstå dessa termer.
   
- **Medgivande**
+ **Samtycke**
   
-GDPR förklarar: "Behandlingen av personuppgifter ska vara utformad för att fungera som servering." GDPR: vår målsättning att uppnå detta mål genom att använda ett medgivande när personuppgifter bearbetas. Det kan vara enkelt att fråga kunderna om de vill ta emot e-postmeddelanden från ditt företag. Det innebär också att det inte finns fler kryssrutor för avanmälning på webbplatsen när du vill använda data för marknadsföring. Du måste ta uttryckligt medgivande genom att använda en "tydlig bekräftande handling". Och du måste också föra register över när ett medgivande tas eller återkallas.
+GDPR förklarar: "Behandlingen av personuppgifter bör utformas så att den tjänar människor." GDPR önskar att uppnå detta mål genom att använda samtycke vid bearbetning av personuppgifter. Det kan vara en så enkel handling som att fråga dina kunder om de vill få e-postmeddelanden från företaget. Det innebär också slutet för kryssrutor för avanmälan på din webbplats när du vill använda data till marknadsföring. Du måste ha ett uttryckligt samtycke genom en "entydigt bekräftande handling". Och du behöver även föra register över när ett samtycke ges eller återkallas.
   
- **Rättigheter för registrerade personer**
+ **Den registrerades rättigheter**
   
-GDPR upprättar rättigheter för registrerade personer, vilket innebär att, med avseende på deras personliga data, kunder, anställda, affärspartner, klienter, leverantörer och så vidare, har de rätt att:
+GDPR upprättar rättigheter för den registrerade, vilket innebär att kunder, anställda, affärspartners, klienter, entreprenörer, studenter, leverantörer och så vidare, med avseende på deras personuppgifter, har rätt att:
   
-- **Informeras om deras data:** Du måste informera enskilda personer om hur du använder deras data. 
+- **Informeras om sina uppgifter:** Du måste informera enskilda personer om hur du använder deras uppgifter. 
     
-- **Ha åtkomst till deras data:** Du måste ge enskilda personer åtkomst till deras data som du har (t.ex. via kontoåtkomst eller på något manuellt sätt). 
+- **Ha åtkomst till sina uppgifter:** Du måste ge enskilda personer åtkomst till deras uppgifter som du har sparat (t.ex. genom att använda kontoåtkomst eller på något manuellt sätt). 
     
-- **Be om att få fram information:** Personer kan be dig korrigera felaktiga data. 
+- **Be om rättelse av uppgifter:** Enskilda personer kan be dig korrigera felaktiga uppgifter. 
     
-- **Be om att data tas bort:** Denna rättighet, som även kallas "right to erasure", gör att en person kan begära att någon av deras personliga data som ett företag har samlat in tas bort i alla system som använder den eller delar den. 
+- **Be om att uppgifter ska raderas:** Även kallat "rätten att bli bortglömd". Enskilda personer har rätt att begära att deras personuppgifter som ett företag har samlat in ska raderas från alla system som använder eller delar dem. 
     
-- **Begär begränsad bearbetning:** En person kan begära att du ignorerar eller begränsar hans eller hons data. Under vissa omständigheter är den dock endast tillämplig. 
+- **Begära begränsad behandling:** En enskild person kan begära att du utelämnar eller begränsar deras uppgifter. Den gäller dock endast under vissa omständigheter. 
     
-- **Ha dataporterbarhet:** En enskild person kan begära att deras data överförs till ett annat företag. 
+- **Ha dataportabilitet:** En enskild person kan begära att deras uppgifter överförs till ett annat företag. 
     
-- **Objekt:** En enskild person kan motse att deras data används för olika ändamål, inklusive direkt marknadsföring. 
+- **Göra invändningar:** En enskild person kan göra invändningar mot att deras uppgifter används för olika ändamål, inklusive direkt marknadsföring. 
     
-- **Be att inte vara föremål för automatiserat beslut, t.ex. profil:** GDPR har strikta regler för att använda data för att profilera personer och automatisera beslut baserat på den profileringen. 
+- **Be om att inte vara föremål för automatiserat beslutsfattande, inbegripet profilering:** GDPR har strikta regler för användning av data för profilering av personer och automatiserade beslut baserade på den profileringen. 
     
-## <a name="common-small-business-questions-about-the-gdpr"></a>Vanliga frågor om SMALL Business om GDPR
+## <a name="common-small-business-questions-about-the-gdpr"></a>Vanliga frågor om GDPR för småföretagare
 
-### <a name="im-a-sole-proprietor---do-i-really-have-to-worry-about-the-gdpr"></a>Jag är en enmansföretag – behöver jag verkligen bry mig om GDPR?
+### <a name="im-a-sole-proprietor---do-i-really-have-to-worry-about-the-gdpr"></a>Jag är enskild näringsidkare – behöver jag verkligen bry mig om GDPR?
 
-GDPR handlar om de data du bearbetar, inte antalet anställda som du har. Det påverkar företag av alla storlekar, även enman som är ensam om att vara företag. Företag med färre än 250 anställda har emellertid vissa undantag, till exempel för begränsad registrering, men endast om du är säker på att databearbetningen inte påverkar den enskilda personens rättigheter och bearbetas då och då.
+GDPR handlar om de uppgifter du behandlar och inte om hur många anställda du har. Det påverkar företag av alla storlekar, även de som driver enskild näringsverksamhet. Företag med färre än 250 anställda har emellertid vissa undantag, såsom reducerad registerföring, men bara om du är säker på att databehandlingen inte påverkar de enskildas rättigheter och är tillfällig behandling.
   
-Som exempel kan bearbetning av icke-personliga data undantas eller behöva minskas. Men om du bearbetar några data som ses som "särskilda kategorikänsliga data", även om det bara ibland, måste du registrera denna databearbetning. Definitionen av "tillfällig bearbetning" är vag, men den är avsedd att gälla för data som används en gång eller sällan.
+Till exempel kan bearbetning av andra data än personuppgifter undantas eller behöva minskade åtgärder. Om du däremot behandlar data som ses som "särskilda kategorier av personuppgifter" (känsliga personuppgifter), även om det bara är ibland, måste du registrera denna databehandling. Definitionen av "tillfällig behandling" är vag, men den är avsedd att gälla uppgifter som används en gång eller sällan.
   
-Du bör också se till att personuppgifter som du samlar in är skyddade. Det innebär att du måste kryptera den och kontrollera att åtkomsten till den styrs med minst ett lösenord. Att ha kunddata i ett kalkylblad på skrivbordet utan skydd uppfyller inte GDPR:s förväntningar. 
+Du bör också se till att personuppgifterna som du samlar in är skyddade. Det innebär att du måste kryptera dem och säkerställa att åtkomsten till dem kontrolleras med hjälp av minst ett lösenord. Att lagra dina kunddata i ett kalkylblad på skrivbordet utan skydd uppfyller inte GDPR-förväntningarna. 
   
-### <a name="how-can-i-tell-if-our-company-website-is-gdpr-compliant"></a>Hur vet jag om vår webbplats på företaget följer GDPR?
+### <a name="how-can-i-tell-if-our-company-website-is-gdpr-compliant"></a>Hur vet jag om företagets webbplats är GDPR-kompatibel?
 
-Den första frågan att ställa dig själv är: Samlar du in personlig information var som helst på din webbplats? Du kan till exempel ha ett kontaktformulär där du ombeds ange ett namn och en e-postadress. Om du vill skicka marknadsföringsmeddelanden ska du se till att lägga till en kryssruta för avanmälning som förklarar exakt vad du kommer att använda data för. Endast om mottagaren kontrollerar rutan kan du använda deras personliga data i marknadsföringssyfte.
+Den första frågan du måste ställa dig själv är: Samlar du in personliga uppgifter någonstans på webbplats? Det kan till exempel vara ett kontaktformulär där du ber om ett namn och en e-postadress. Om du vill skicka marknadsföring via e-post behöver du ha en kryssruta där man frivilligt kan anmäla sig och som förklarar exakt vad du ska använda uppgifterna till. Du kan endast använda mottagarens personuppgifter i marknadsföringssyfte om de har kryssat för den rutan. 
   
-Kontrollera även att databasen som lagrar data är skyddad. Ditt webbhotellföretag eller din molnlagringsleverantör kommer att kunna informera om detta. Om du använder Microsoft 365 för företag följer GDPR-lagringen av data. 
+Kontrollera också att den databas som lagrar uppgifterna är skyddad. Ditt webbhotell eller din molnlagringsleverantör kan ge dig råd om detta. Om du använder Microsoft 365 för företag är lagringen av data GDPR-kompatibelt. 
   
 ### <a name="my-company-is-outside-europe-does-the-gdpr-really-affect-us"></a>Mitt företag är utanför Europa. Påverkar GDPR oss?
 
-GDPR är en bestämmelse som skyddar EU:s invånare. Om ditt företag gör affärer med EU-medborgare nu, eller om du hoppas på det i framtiden, kommer du att påverkas. Det här gäller både de som bor i en EU-stat och de som bor någon annanstans.
+GDPR är en lagstiftning som skyddar EU-medborgare. Om ditt företag har avtal med EU-medborgare nu, eller om du hoppas kunna ha det i framtiden, så påverkas du. Det här gäller både för medborgare som bor i en EU-stat och de som bor någon annanstans.
   
-Tänk på följande exempel:
+Begrunda följande exempel:
   
-- Ett amerikanskt företag som anlitar bilar för EU:s invånare måste uppfylla GDPR-kraven när de samlar in och bearbetar kundens data. Företaget måste godkännas när de tar kundens data och ser till att dessa data lagras på ett säkert sätt. De måste också se till att kunden kan tillämpa alla sina rättigheter som registrerade. 
+- Ett amerikanskt företag som hyr ut bilar till EU-medborgare måste uppfylla GDPR-kraven när de samlar in och behandlar kunduppgifterna. Företaget måste inhämta samtycke när de tar kundernas uppgifter och säkerställa att de lagras säkert. Företaget måste också säkerställa att kunden kan tillämpa alla sina registrerades rättigheter. 
     
-- Ett australiensiskt företag säljer produkter online och dess användare har ställt in onlinekonton. GDPR:s rättigheter och medgivande tillämpas för EU:s användare som öppnar ett konto. Företaget måste se till att kunden kan tillämpa alla sina rättigheter som registrerade. 
+- Ett australienskt företag säljer produkter online och dess användare skapar onlinekonton. GDPR för samtycke och de registrerades rättigheter tillämpas för alla EU-medborgare som öppnar ett konto. Företaget måste säkerställa att kunden kan tillämpa alla sina registrerade rättigheter. 
     
-- En internationell välgörenhetsorganisation samlar in data om donatorer och använder den för att skicka ut uppdateringar och förfrågningar om gåvor. GDPR-tillstånden: '... bearbetningen av personuppgifter i direkt marknadsföringssyfte kan ses som utförd av legitima skäl." Organisationen ansvarar dock för att bevisa sina intressen i åsidosättningen av dataämnet. Företaget (eller i det här fallet den ideella organisationen) bör alltid få ett välgrundat, uttryckligt, inanmält medgivande.
+- En internationell välgörenhetsorganisation samlar in uppgifter om donatorer och använder dem för att skicka ut uppdateringar och förfrågningar om donationer. GDPR uppger: "Behandling av personuppgifter för direktmarknadsföring kan betraktas som ett berättigat intresse." Organisationen ansvarar dock för att bevisa att deras intressen åsidosätter intressena till den registrerade. Företaget (eller välgörenhetsorganisationen i det här fallet) måste alltid få ett meddelat uttryckligt samtycke.
     
-GDPR gäller även om kunddata flyttas över gränserna. Om du använder molntjänster för datalagring måste du kontrollera att tjänsten är helt GDPR-kompatibel. Det kan bli komplicerat om datalagring finns på platser som har en dålig registrering av dataskydd. Om du använder Microsoft 365 för företag har vi rätt juridisk dokumentation för att täcka GDPR-kraven.
+GDPR gäller också när kunddata flyttas över gränserna. Om du använder molntjänster för datalagring måste du säkerställa att tjänsten är helt GDPR-kompatibel. Det kan bli komplicerat om datalagringen sker på platser som har bristande dataskydd. Om du använder Microsoft 365 för företag har vi korrekt juridisk dokumentation för att täcka GDPR-kraven.
   
-### <a name="sure-i-collect-data-but-some-other-company-stores-it-does-that-get-me-off-the-hook"></a>Visst, jag samlar in data, men vissa andra företag lagrar dem. Får jag det att hänga med?
+### <a name="sure-i-collect-data-but-some-other-company-stores-it-does-that-get-me-off-the-hook"></a>Visst, jag samlar in uppgifter, men det är något annat företag som lagrar dem. Har jag mitt på det torra då?
 
-Om du samlar in data påverkas du i viss utsträckning av GDPR. GDPR har begreppet databehandlare och en datakontrollant: 
+Om du samlar in uppgifter påverkas du i viss utsträckning av GDPR. GDPR använder begreppen personuppgiftsbiträde och personuppgiftsansvarig: 
   
-- **Datakontrollant:** En person eller organisation (du kan ha gemensamma handkontrollanter) som bestämmer hur, vad och varför data samlas in. De kan lagra den med hjälp av ett annat företags molnservrar. En webbplats som samlar in kunddata är till exempel en kontrollant. 
+- **Personuppgiftsansvarig:** En enskild person eller organisation (ni kan ha gemensamma ansvariga) som avgör hur och vad för uppgifter som samlas in och varför. Uppgifterna kan lagras på ett annat företags molnservrar. Till exempel är en webbplats som samlar in kunddata en personuppgiftsansvarig. 
     
-- **Dataprocessor:** En person eller organisation som lagrar data åt kontrollanterna och bearbetar dessa data på begäran. Till exempel fungerar Microsoft 365 Apps för företags datalagring som en processor och uppfyller GDPR helt och hållet. 
+- **Personuppgiftsbiträde:** En enskild person eller organisation som lagrar data på uppdrag av de personuppgiftsansvariga och som behandlar dem på begäran. Till exempel fungerar datalagringen till Microsoft 365-applikationer för affärsverksamhet som personuppgiftsbiträde och är fullt GDPR-kompatibel. 
     
-    En organisation eller ett system kan fungera som både handkontroll och processor. Microsoft 365 för företag kan fungera som både och uppfyller GDPR.
+    En organisation eller ett system kan fungera både som ansvarig och biträde. Microsoft 365 för företag kan fungera som båda och uppfyller GDPR.
     
 ### <a name="can-i-still-send-out-marketing-emails-to-my-old-customers"></a>Kan jag fortfarande skicka ut marknadsföringsmeddelanden till mina gamla kunder?
 
-Du måste se till att dina kunder, även sådana som du har haft i många år, har gått med på att använda sina data för marknadsföring. Du kanske redan har fångat ditt medgivande, samt en post för att visa det. I så fall är allt klart för att fortsätta marknadsföringen. Om inte, måste du få behörighet från kunden för att fortsätta marknadsföringen till dem. Det omfattar vanligtvis att skicka ett e-postmeddelande där kunderna uppmanas att gå till din webbplats och välja ett alternativ för att ge sitt medgivande för att ta emot framtida e-postmeddelanden. 
+Du måste se till att dina kunder, även de som du har haft i flera år, har gett sitt samtycke till att deras uppgifter används till marknadsföring. Kanske har du samlat in samtycke tidigare och har ett dokument som bevisar det. I så fall kan du fortsätta marknadsföringen. Om inte så måste du få behörighet från kunden till att fortsätta marknadsföringen till dem. Vanligtvis innebär detta att du skickar ett e-postmeddelande till kunderna där du ber dem besöka din webbplats och välja ett alternativ för att ge sitt samtycke till framtida e-postmeddelanden. 
   
-### <a name="do-i-have-to-worry-about-the-gdpr-when-i-recruit-new-employees-what-about-current-employees"></a>Måste jag oroa mig för GDPR när jag rekryteringar nya anställda? Vad gäller för nuvarande anställda?
+### <a name="do-i-have-to-worry-about-the-gdpr-when-i-recruit-new-employees-what-about-current-employees"></a>Behöver jag bry mig om GDPR när jag rekryterar ny personal? Vad gäller för nuvarande anställda?
 
-GDPR påverkar inte bara kunddata; Det omfattar även data om anställda. Nya rekryteringar finns ofta via plattformar för sociala medier som LinkedIn. Se till att du inte lagrar potentiella rekryteringsdata utan uttryckligt tillstånd.
+GDPR påverkar inte bara kunddata, det omfattar anställdas personuppgifter också. Nya rekryteringar hittas ofta med hjälp av plattformar för sociala medier såsom LinkedIn. Se till att du inte lagrar potentiella rekryteringsdata utan deras uttryckliga samtycke.
   
-Precis som för befintliga anställda och kontrakt för nyanställda krävs inte nödvändigtvis en signatur i slutet av ett avtal, särskilt när en icke-bekräftande sats används i ett kontrakt. I det här fallet måste du samla in medgivande på ett explicit sätt som är kopplat till satsen. Vad det innebär beror på ditt avtal med den anställda, men du kan använda "legitimt intresse" i vissa fall och lägga till en databearbetningsmeddelande för de anställda för att kontrollera att dina anställda är medvetna om vad du ska göra med deras data.
+När det gäller kontrakt för befintliga anställda och nya medarbetare behöver inte en signatur i slutet av ett avtal nödvändigtvis innebära samtycke, i synnerhet när en icke-bekräftande sats används i ett kontrakt. I det fallet behöver du samla in samtycke på ett tydligt sätt som är förbundet med den satsen. Vad detta innebär beror på anställningskontraktet, men i vissa fall kan du använda "berättigat intresse" och lägga till ett stycke om databehandling för anställda för att säkerställa att personalen är medvetna om hur du använder deras uppgifter.
   
-## <a name="satisfy-privacy-concerns-using-microsoft-365-for-business"></a>Uppfyller sekretessproblem med Microsoft 365 för företag
+## <a name="satisfy-privacy-concerns-using-microsoft-365-for-business"></a>Uppfyll integritetsfrågor med hjälp av Microsoft 365 för företag
 
-Om att uppfylla GDPR handlar det om att se till att personuppgifter skyddas. GDPR har ett begrepp som kallas Sekretess enligt Design och Standard. Det innebär att dataskyddet ska "bakas" i ett system och en produkt så att det är till hjälp att ta hänsyn till sekretessproblem. 
+Att bli GDPR-kompatibel handlar om att säkerställa att personuppgifter skyddas. GDPR har en princip som kallas Inbyggt dataskydd och dataskydd som standard.  Det innebär att dataskyddet bör "bakas in" i ett system och i en produkt så det att uppfylla integritetsfrågor blir något helt naturligt. 
   
-I och med sina större motparter behöver småföretagen en smidig och bekväm säkerhet. Microsoft 365 för företag är avsett för företag med färre än 300 anställda. Små företag kan använda Microsofts molnbaserade verktyg för att förbättra företagets produktivitet. Med Microsoft 365 för företag kan ett litet företag hantera e-post, dokumentation och till och med möten och händelser. Det har också inbyggda säkerhetsåtgärder och enhetshantering, som är viktiga för GDPR:s efterlevnad.
+Precis som sina större motsvarigheter har även ett litet företag behov för bekvämlighet utan att behöva kompromissa med säkerheten. Microsoft 365 för företag är avsett för företag med färre än 300 anställda. Småföretag kan använda Microsofts molnbaserade verktyg för att förbättra produktiviteten. Med Microsoft 365 för företag kan småföretag hantera e-postmeddelanden, dokumentation och till och med möten och händelser. Den har också inbyggda säkerhetsåtgärder och enhetshantering, vilket är avgörande för GDPR-efterlevnad.
   
-Microsoft 365 för företag kan hjälpa dig med GDPR på följande sätt:
+Microsoft 365 för företag kan hjälpa dig med GDPR-processen på följande sätt:
   
-- **Upptäck:** Ett viktigt steg för GDPR:s efterlevnad är att veta vilka data du har. 
+- **Identifiera:** Ett viktigt steg för GDPR-efterlevnad är att veta vilka data du har. 
     
-- **Hantera:** Att kontrollera åtkomsten till och hantera dess användning är en viktig del av GDPR. Microsoft 365 för företag skyddar affärsdata baserat på policyer du vill tillämpa på enheter. Enhetshantering är viktigt i en ålder där anställda arbetar på distans. Microsoft 365 för företag innehåller funktioner för enhetshantering som ser till att data skyddas på alla enheter. Du kan till exempel ange att alla Windows 10-enheter i företaget ska skyddas via Windows Defender. 
+- **Hantera:** Att styra åtkomsten till data och hantera dess användning är en viktig del av GDPR. Microsoft 365 för företag skyddar företagsdata baserat på principer som du vill tillämpa på enheter. Enhetshantering är viktigt i en tid där anställda arbetar på distans. Microsoft 365 för företag innehåller funktioner för enhetshantering som säkerställer att data skyddas på alla enheter. Du kan till exempel ange att alla Windows 10-enheter i ditt företag ska skyddas via Windows Defender. 
     
-- **Skydda:** Microsoft 365 för företag har utformats för säkerhet. Dess enhetshanterings- och dataskyddskontroller fungerar över affärsnätverket, inklusive fjärrenheter, för att skydda data. Microsoft 365 för företag erbjuder kontroller, till exempel sekretessinställningar i Office-program och kryptering av dokument. Med Microsoft 365 för företag kan du utföra GDPR-efterlevnadsövervakning för att se till att du har rätt skyddsnivå inställd. 
+- **Skydda:** Microsoft 365 för företag är utformat för säkerhet. Dess kontroller för enhetshantering och dataskydd fungerar i hela företagsnätverket, inklusive fjärrenheter, för att skydda dina data. Microsoft 365 för företag erbjuder kontroller såsom sekretessinställningar i Office-program och dokumentkryptering. Med Microsoft 365 för företag kan du utföra övervakning av GDPR-efterlevnad för att säkerställa att du har rätt skyddsnivå. 
     
-- **Rapport:** GDPR betonar mycket rapportering. Även ett företag med en enda anställd, om det företaget bearbetar stora mängder data, krävs för att dokumentera och rapportera om deras procedurer. Microsoft 365 för företag tar problem med rapporteringskraven för mindre organisationer. 
+- **Rapportera:** GDPR lägger stort fokus på rapportering. Även företag som endast har en anställd måste dokumentera och rapportera sina procedurer om verksamheten hanterar stora mängder data. Microsoft 365 för företag gör rapporteringskraven för mindre organisationer smärtfritt. 
     
-    Med verktyg som granskningsloggar kan du spåra och rapportera om dataförflyttningar. Rapporterna omfattar klassificering av data som du samlar in och lagrar, vad du gör med data och överföring av data. 
+    Med verktyg som granskningsloggar kan du spåra och rapportera dataflyttning. Rapporterna inkluderar klassificering av de data du samlar in och lagrar, vad du gör med all data och överföringar av data. 
     
-Kunder, anställda och klienter börjar bli medvetna om hur viktig datasekretessen är och förväntar sig nu att ett företag eller en organisation respekterar den integriteten. Microsoft 365 för företag ger dig verktyg för att uppnå och upprätthålla GDPR:s efterlevnad utan ett enormt underhåll av ditt företag.
+Kunder, anställda och klienter blir allt mer medvetna om vikten av datasekretess och förväntar sig nu att ett företag eller en organisation ska respektera den sekretessen. Med Microsoft 365 för företag får du verktyg för att uppnå och upprätthålla GDPR-efterlevnad utan stor omvälvning för företaget.
   
 ## <a name="next-steps"></a>Nästa steg
 
-Här är några förslag på vad du kan göra för att förbereda dig för GDPR:
+Här är några förslag på nästa steg du kan vidta för att förbereda dig för GDPR:
   
-- Utvärdera ditt GDPR-program med [checklista för beredskap.](/compliance/regulatory/gdpr-arc)
+- Utvärdera ditt GDPR-program med [checklistor för beredskap av ansvarsskyldighet](/compliance/regulatory/gdpr-arc).
     
-- Undersök [Microsoft 365 för företag som](https://www.microsoft.com/microsoft-365/business) en lösning för att uppnå och underhålla efterlevnad av GDPR. 
+- Undersök [Microsoft 365 för företag](https://www.microsoft.com/microsoft-365/business) som en lösning för att uppnå och upprätthålla efterlevnaden av GDPR. 
    
 
 > [!IMPORTANT]
-> Få juridiska råd lämpliga för ditt företag eller din organisation.
+> Be om juridisk hjälp anpassat för ditt företag eller din organisation.
   
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Översikt över Microsoft Trust Center för GDPR](https://www.microsoft.com/trust-center/privacy/gdpr-overview
+[Översikt av GDPR i Microsoft Säkerhetscenter](https://www.microsoft.com/trust-center/privacy/gdpr-overview
 )
   
-Den officiella Microsoft-bloggen: [Microsofts engagemang i GDPR](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)
+Den officiella Microsoft-bloggen: [Microsofts GDPR-åtaganden](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)
   
-EU-webbplatser:
+Europeiska unionens webbplatser:
   
 - [Dataskydd](https://ec.europa.eu/info/law/law-topic/data-protection)
     
-- [Reform av EU:s dataskyddsregler för 2018](https://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules)
+- [Reform av EU:s dataskyddsregler 2018](https://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules)
