@@ -222,6 +222,7 @@
 
 ### [Microsoft Defender för Endpoint för iOS]()
 #### [Översikt över Microsoft Defender för Endpoint för iOS](microsoft-defender-endpoint-ios.md)
+#### [Nyheter](ios-whatsnew.md)
 
 #### [Distribuera]()
 ##### [Distribuera Microsoft Defender för Endpoint för iOS via Intune](ios-install.md)
@@ -631,4 +632,5 @@
 ##### [Migrera till Regler för minskning av attackytan](migrating-asr-rules.md)
 
 # [Microsoft 365 Defender](../index.yml)
-# [Microsoft Defender för Office 365](../office-365-security/overview.md)
+# [Microsoft Defender för Office 365](../office-365-security/index.yml)
+# [Defender för identitet](https://docs.microsoft.com/defender-for-identity/)
