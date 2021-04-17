@@ -201,7 +201,7 @@
           href: misc/pilot-microsoft-365-from-my-custom-domain.md
         - name: Vanliga frågor och svar om domäner
           href: setup/domains-faq.yml
-        - name: Värdspecifika instruktioner
+        - name: DNS instruktioner
           items:
             - name: Ändra namnservrar för valfri DNS-värd
               href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
