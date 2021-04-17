@@ -301,7 +301,7 @@
               href: how-dlp-works-between-admin-centers.md
             - name: Konfigurera och visa varningar för DLP-principer (förhandsversion)
               href: dlp-configure-view-alerts-policies.md
-            - name: Använda känslighetsetiketter som villkor i DLP-principer (förhandsversion)
+            - name: Använda känslighetsetiketter som ett villkor i DLP-principer
               href: dlp-sensitivity-label-as-condition.md
             - name: Använda principer för skydd mot dataförlust för appar som inte kommer från Microsoft-molnet
               href: dlp-use-policies-non-microsoft-cloud-apps.md
@@ -385,8 +385,12 @@
           items:
             - name: CellTrust
               href: archive-celltrust-data.md
-            - name: Cisco Jabber
+            - name: Cisco Jabber på MS SQL
               href: archive-ciscojabberonmssql-data.md
+            - name: Cisco Jabber på Oracle (förhandsversion)
+              href: archive-ciscojabberonoracle-data.md
+            - name: Cisco Jabber på PostgreSQL (förhandsversion)
+              href: archive-ciscojabberonpostgresql-data.md
             - name: EML
               href: archive-eml-data.md
             - name: FX-anslutning

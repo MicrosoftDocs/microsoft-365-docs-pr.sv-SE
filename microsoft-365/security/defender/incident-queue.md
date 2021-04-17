@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8acd8d85826d7bda399c03cc60f2806af954c6c3
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: cd571414512ce876e730199b21bf755e4c4b733f
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861609"
+ms.locfileid: "51876205"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Prioritera incidenter i Microsoft 365 Defender
 
@@ -88,7 +88,7 @@ Här är ett vanligt arbetsflöde för att svara på incidenter:
 1. Identifiera och prioritera ärenden med högst prioritet för undersökning och lösning.
 2. Påbörja en undersökning för varje incident med hög [prioritet:](investigate-incidents.md)
 
-   a. Visa sammanfattningen av incidenten för att förstå dess omfattning, vilka enheter som påverkas och allvarlighetsgrad **(fliken** Sammanfattning).
+   a. Visa sammanfattningen av incidenten för att förstå dess omfattning och allvarlighetsgrad och vilka enheter som påverkas **(fliken** Sammanfattning).
 
    b. Börja titta på aviseringarna för att förstå deras ursprung, omfattning och allvarlighetsgrad **(fliken Aviseringar).**
 
@@ -98,17 +98,18 @@ Här är ett vanligt arbetsflöde för att svara på incidenter:
    
    e. Vid behov kan du använda informationen i datauppsättningen för incidenten för mer information **(fliken Bevis och** svar).
 
-När du undersöker bör du vara orolig:
+   När du undersöker bör du vara orolig:
 
-- Inneslutning: Minska eventuella ytterligare påverkan på klientorganisationen.
-- Överflödigt: Ta bort säkerhetshotet.
-- Återställning: Återställa klientorganisationens resurser till det läge de var i före attacken.
+   - Inneslutning: Minska eventuella ytterligare påverkan på klientorganisationen.
+   - Överflödigt: Ta bort säkerhetshotet.
+   - Återställning: Återställa klientorganisationens resurser till det läge de var i före attacken.
 
-När du har löst problemet bör du ta en stund att lära dig från den för att:
+3. När du har löst problemet bör du ta dig tid att:
 
-- Förstå typen av attack och dess påverkan.
-- Undersöka säkerhetsgemenskapen efter en trend för säkerhetsattacker.
-- Återkalla arbetsflödet som du använde för att lösa problemet och uppdatera standardarbetsflöden och spelböcker efter behov.
+   - Förstå typen av attack och dess påverkan.
+   - Undersöka säkerhetsgemenskapen efter en trend för säkerhetsattacker.
+   - Återkalla arbetsflödet som du använde för att lösa problemet och uppdatera standardarbetsflöden och spelböcker efter behov.
+   - Bestäm om ändringar i din säkerhetssäkerhet behövs och vidta åtgärder för att implementera dem.
 
 Här följer en sammanfattning av grunderna.
 

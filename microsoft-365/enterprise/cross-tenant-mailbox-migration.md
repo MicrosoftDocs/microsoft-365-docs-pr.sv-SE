@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: f24f519ec3bb12622d74c1d02fbc0bb017aa2b24
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: d52a0ca4a2dc9b799a32f70962416ffe190e16db
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476415"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876193"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Postlådemigrering mellan klientorganisationen (förhandsversion)
 
@@ -435,6 +435,10 @@ När postlådan flyttas från källa till mål bör du se till att de lokala e-p
 **Behöver vi uppdatera RemoteMailboxes lokalt i källan efter flytten?**
 
 Ja, du bör uppdatera targetAddress (RemoteRoutingAddress/ExternalEmailAddress) för den lokala källans användare när källklientorganisationens postlåda flyttas till målklientorganisationen.  Även om e-postdirigering kan följa referenserna för flera e-postanvändare med olika targetAddresses måste uppslag för ledig/upptagen för e-postanvändare vara rätt mål för postlådans användare. Uppslag av ledig/upptagen-information duar inte efter flera omdirigeringar. 
+
+**Migrerar Teams-möten mellan klientorganisationen?**  
+
+Mötena flyttas men Teams mötes-URL uppdateras inte när objekt migreras mellan klientorganisationen. Eftersom URL:en blir ogiltig i målklientorganisationen måste du ta bort och återskapa Teams-mötena.
 
 **Migrerar innehållet i chattmappen i Teams mellan klientorganisationen?**  
 

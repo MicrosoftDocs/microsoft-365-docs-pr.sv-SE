@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 560eeb1e1099576f9f4babf02cc38eb842094fd1
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5175d630dd5d80b62451b3a1eafc4c2f6350ac32
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862491"
+ms.locfileid: "51876343"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Felsöka prestandaproblem relaterade till realtidsskydd
 
@@ -60,7 +60,7 @@ I **MPLog-xxxxxxxx-xxxxxx.log** kan du hitta information om beräknad prestandae
 
 | Fältnamn | Beskrivning |
 |---|---|
-|ProcessImageName   | Namn på processbild |
+|ProcessImageName | Namn på processbild |
 | TotalTime | Den kumulativa varaktigheten i millisekunder som spenderas i genomsökningar av filer som används i den här processen |
 |Antal | Antalet genomsökta filer som används i den här processen |
 |MaxTime |  Varaktigheten i millisekunder vid den längsta enskilda genomsökningen av en fil som används av den här processen |
@@ -69,13 +69,13 @@ I **MPLog-xxxxxxxx-xxxxxx.log** kan du hitta information om beräknad prestandae
 
 Om prestandan är hög kan du prova att lägga till processen i undantag för sökväg/process genom att följa stegen i Konfigurera och validera undantag för [genomsökningar för Microsoft Defender Antivirus.](collect-diagnostic-data.md)
 
-Om det föregående steget inte löser problemet kan du samla in mer information via [processövervakningen](#capture-process-logs-using-process-monitor) eller [Med](#capture-performance-logs-using-windows-performance-recorder) prestandainspelaren i följande avsnitt. 
+Om det föregående steget inte löser problemet kan du samla in mer information via [processövervakningen](#capture-process-logs-using-process-monitor) eller [Med](#capture-performance-logs-using-windows-performance-recorder) prestandainspelaren i följande avsnitt.
      
 ## <a name="capture-process-logs-using-process-monitor"></a>Registrera processloggar med processövervakning
 
-Processövervakning (ProcMon) är ett avancerat övervakningsverktyg som kan visa realtidsprocesser. Du kan använda detta för att registrera prestandaproblemet medan det inträffar. 
+Processövervakning (ProcMon) är ett avancerat övervakningsverktyg som kan visa realtidsprocesser. Du kan använda detta för att registrera prestandaproblemet medan det inträffar.
 
-1. Ladda [ned Processövervakning v3.60](/sysinternals/downloads/procmon) till en mapp som `C:\temp` . 
+1. Ladda [ned Processövervakning v3.60](/sysinternals/downloads/procmon) till en mapp som `C:\temp` .
 
 2. Så här tar du bort filens markering på webben:
     1. Högerklicka på **ProcessMonitor.zip** välj **Egenskaper**.
@@ -188,7 +188,9 @@ Du kan också använda kommandoradsverktyget *wpr.exe* som finns i Windows 8 och
 6. Välj **Lägg till profiler...** och bläddra till sökvägen till `WD.wprp` filen.
 
 7. Därefter bör du se en ny profiluppsättning under Anpassade mått med namnet *Microsoft Defender för slutpunktsanalys* under det. 
+
     ![in-file](images/wpr-infile.png)
+
     >[!WARNING]
     >Om Windows Server har 64 GB RAM-minne eller mer kan du använda det anpassade måttet `Microsoft Defender for Endpoint analysis for large servers` i stället för `Microsoft Defender for Endpoint analysis` . I annat fall kan det ta upp ett stort antal icke-sidbaserade poolminnen eller buffertar som kan leda till systeminstabilitet. Du kan välja vilka profiler du vill lägga till genom att expandera **Resursanalys.** Den här anpassade profilen ger den kontext som krävs för djupgående prestandaanalys.
  
@@ -227,8 +229,8 @@ Du kan också använda kommandoradsverktyget *wpr.exe* som finns i Windows 8 och
 
     ![Fyll i information](images/wpr-12.png)
 
-    1. Välj **Filnamn: för** att avgöra var spårningsfilen ska sparas. Som standard sparas 1.is till `%user%\Documents\WPR Files\` . 
-    1. Välj **Spara**. 
+    1. Välj **Filnamn: för** att avgöra var spårningsfilen ska sparas. Som standard sparas 1.is till `%user%\Documents\WPR Files\` .
+    1. Välj **Spara**.
 
 14. Vänta medan spårningen sammanfogas.
 
