@@ -140,6 +140,7 @@
 
 #### Felsöka Microsoft Defender Antivirus
 ##### [Felsök rapportering för Microsoft Defender Antivirus i Uppdateringsefterlevnad](troubleshoot-reporting.md)
+##### [Felsöka prestandaproblem](troubleshoot-performance-issues.md)
 ##### [Felsök problem med Microsoft Defender Antivirus genom att granska händelseloggar och felkoder](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Felsök Microsoft Defender Antivirus när du migrerar från en lösning från tredje part](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
@@ -249,6 +250,7 @@
 ##### [Identifiera och blockera potentiellt oönskade program](linux-pua.md)
 ##### [Schemalägga genomsökningar med Microsoft Defender för Endpoint för Linux](linux-schedule-scan-atp.md)
 ##### [Schemalägga en uppdatering av Microsoft Defender för Endpoint (Linux)](linux-update-MDE-Linux.md)
+##### [Distribuera Defender för Endpoint på Linux med Chef](linux-deploy-defender-for-endpoint-with-chef.md)
 
 #### [Felsökning]()
 ##### [Felsöka installationsproblem](linux-support-install.md)

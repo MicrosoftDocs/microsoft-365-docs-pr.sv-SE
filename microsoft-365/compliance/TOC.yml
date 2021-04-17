@@ -208,7 +208,7 @@
             - name: Jämföra OME-versioner
               href: ome-version-comparison.md
             - name: Vanliga frågor och svar om meddelandekryptering i Office 365
-              href: ome-faq.md
+              href: ome-faq.yml
             - name: Så säkrar Exchange Online dina e-posthemligheter
               href: exchange-online-secures-email-secrets.md
             - name: Hur Exchange Online använder TLS för att säkra e-postanslutningar i Office 365
@@ -305,8 +305,10 @@
               href: dlp-sensitivity-label-as-condition.md
             - name: Använda principer för skydd mot dataförlust för appar som inte kommer från Microsoft-molnet
               href: dlp-use-policies-non-microsoft-cloud-apps.md
-            - name: Villkor och undantag för DLP-princip (förhandsversion)
+            - name: Villkor och undantag för DLP-princip
               href: dlp-conditions-and-exceptions.md
+            - name: Referensinformation om principtips för dataförlustskydd
+              href: dlp-policy-tips-reference.md
 - name: Hantera informationsstyrning
   items:
     - name: Styr dina data
