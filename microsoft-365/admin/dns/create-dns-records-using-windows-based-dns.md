@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster hos Windows-baserad DNS för Microsoft.
-ms.openlocfilehash: 9e5e42f847e740571944ea3db205282ec9a7a0e6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fd7c56b6db9fe5f5dbb0637ad5abcb40a64bef8f
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916052"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876355"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Skapa DNS-poster för Microsoft med Windows-baserad DNS
 
@@ -205,3 +205,11 @@ Om du planerar att synkronisera din lokala Active Directory med Microsoft bör d
   
 > [!NOTE]
 >  Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Överföra en domän från Micrsoft 365 till en annan värd](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host) (artikel)
+
+[Pilottesta Microsoft 365 från min egen domän](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain) (artikel)
+
+[Vanliga frågor och svar](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) om domäner (artikel)

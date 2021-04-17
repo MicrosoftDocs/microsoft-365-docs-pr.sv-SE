@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d38d7a54aa860049e1968e5b92c801107bea0514
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 79f8882e21f23e75d85813cde03260ef17adf246
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687967"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876115"
 ---
-#  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender för slutpunkt på Android – information om sekretess
+#  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender för Endpoint för Android – Sekretessinformation
 
 **Gäller för:**
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -32,7 +32,9 @@ ms.locfileid: "51687967"
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-Defender för slutpunkt för Android samlar in information från dina konfigurerade Android-enheter och lagrar den i samma klientorganisation där du har Defender för Slutpunkt.
+Defender för slutpunkt för Android samlar in information från dina konfigurerade Android-enheter och lagrar den i samma klientorganisation där du har Defender för Slutpunkt. Informationen samlas in för att hålla Defender för Endpoint för iOS säker, uppdaterad och fungerar som förväntat, och för att stödja tjänsten.
+
+Mer information om datalagring finns i [Microsoft Defender för Slutpunktens datalagring och sekretess.](data-storage-privacy.md)
 
 Information samlas in för att hålla Defender för Endpoint för Android säkert och uppdaterat så att det fungerar som förväntat och för att stödja tjänsten.
 
@@ -42,7 +44,7 @@ Data som krävs består av data som krävs för att Defender för Slutpunkt för
 
 ### <a name="app-information"></a>Appinformation
 
-Information om Android-programpaket (APKs) på enheten, inklusive
+Information om **skadliga** Android-programpaket (APKs) på enheten, inklusive
 
 -  Installera källa
 -  Lagringsplats (sökväg) för APK
@@ -50,7 +52,7 @@ Information om Android-programpaket (APKs) på enheten, inklusive
 
 ### <a name="web-page--network-information"></a>Webbsida/nätverksinformation
 
-- Fullständig URL (på webbläsare som stöds), vid klickning
+- Fullständig URL för webbplatsen endast när en skadlig anslutning eller webbsida identifieras.
 - Anslutningsinformation
 - Protokolltyp (till exempel HTTP, HTTPS osv.)
 
@@ -73,6 +75,9 @@ Information om Android-programpaket (APKs) på enheten, inklusive
     -   User Principal Name – Användarens e-post-ID
 
 ### <a name="product-and-service-usage-data"></a>Användningsdata för produkter och tjänster
+
+Följande information samlas endast in för appen Microsoft Defender för slutpunkt som är installerad på enheten. 
+
 -   Information om programpaket, inklusive namn, version och appuppgraderingsstatus
 
 -   Åtgärder som utförs i appen

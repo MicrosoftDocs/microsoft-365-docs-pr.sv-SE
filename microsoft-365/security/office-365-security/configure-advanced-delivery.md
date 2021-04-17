@@ -18,12 +18,12 @@ description: Administratörer kan lära sig att använda den avancerade leverans
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX
-ms.openlocfilehash: 09e07d8406b470fd3dac25944d013b997f2f90c1
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 9d737472be5da2af0a0a36beb4b7914b8bfe3a10
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760441"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876071"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Konfigurera leverans av nätfiskebedrägerier från tredje part till användare och ofiltrerade meddelanden till SecOps-postlådor
 
@@ -35,7 +35,7 @@ ms.locfileid: "51760441"
 > [!NOTE]
 > Funktionen som beskrivs i den här artikeln är i förhandsversion, är inte tillgänglig för alla och kan komma att ändras.
 
-Vi vill att organisationen ska vara säker som [standard,](secure-by-default.md)så Exchange Online Protection (EOP) tillåter inte säkra listor eller filtrering av förbikoppling för meddelanden som resulterar i skadlig programvara eller nätfiskeförsök med hög konfidens. Men vi känner igen att det finns särskilda scenarier som kräver leverans av ofiltrerade meddelanden. Till exempel:
+För att [](secure-by-default.md)skydda organisationen som standard tillåter Exchange Online Protection (EOP) inte säkra listor eller filtrering av förbikoppling för meddelanden som resulterar i skadlig programvara eller nätfiskeförsök med hög konfidens. Men det finns särskilda scenarier som kräver leverans av ofiltrerade meddelanden. Till exempel:
 
 - **Nätfiskebedrägerier från tredje** part : Simulerade attacker kan hjälpa dig att identifiera sårbara användare innan en verklig attack påverkar din organisation.
 - **Säkerhetsåtgärder (SecOps)-postlådor:** Dedikerade postlådor som används av säkerhetsteam för att samla in och analysera ofiltrerade meddelanden (både bra och dåliga).
@@ -48,7 +48,7 @@ Du använder principen _för avancerad leverans_ i Microsoft 365 för att förhi
 - [AIR och kluster i Defender för Office 365](office-365-air.md) ignorerar dessa meddelanden.
 - Särskilt för nätfiskebedrägerier från tredje part:
   - [Administratörsinskick](admin-submission.md) genererar ett automatiskt svar som säger att meddelandet är en del av en phishing-simuleringskampanj och inte är ett riktigt hot. Aviseringar och AIR utlöses inte.
-  - [Säkra länkar i Defender för Office 365](safe-links.md) blockerar eller kopplar inte från de specifikt identifierade webbadresserna i dessa meddelanden.
+  - [Säkra länkar i Defender för Office 365](safe-links.md) blockerar eller kopplar inte bort specifika URL:er i dessa meddelanden.
   - [Säkra bifogade filer i Defender för Office 365](safe-attachments.md) avaktiverar inte bifogade filer i dessa meddelanden.
 
 <sup>\*</sup> Du kan inte kringgå filtrering av skadlig programvara eller ZAP för skadlig programvara.
@@ -106,8 +106,8 @@ Postlådepostlådorna för SecOps som du har konfigurerat visas på **fliken Sec
 
 Utöver de två scenarier som den avancerade leveransprincipen kan hjälpa dig med finns det andra scenarier som kan innebära att du måste kringgå filtrering:
 
-- **Filter från tredje part:** Om din domäns MX-post inte pekar på Office 365 (meddelanden dirigeras någon annanstans [först)](secure-by-default.md) är secure som standard inte tillgängligt.
+- **Filter från tredje part:** Om din  domäns MX-post inte pekar på Office 365 (meddelanden dirigeras någon annanstans [först)](secure-by-default.md) är säker som standard *inte tillgänglig.*
 
   Om du vill kringgå Microsoft-filtrering för meddelanden som redan har utvärderats av filtrering från tredje part använder du e-postflödesregler (kallas även transportregler) i Använda e-postflödesregler för att ange SCL i [meddelanden.](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 
-- **Falska** positiva resultat under granskning: Du kanske tillfälligt vill tillåta att vissa meddelanden som fortfarande analyseras av Microsoft via administratörer rapporterar kända bra meddelanden som felaktigt [markeras](admin-submission.md) som dåliga för Microsoft (falska positiva resultat). Precis som med alla åsidosättningar rekommenderar vi att dessa tillåtna produkter är tillfälliga.
+- **Falska** positiva resultat under granskning: Du kanske tillfälligt vill tillåta att vissa meddelanden som fortfarande analyseras av Microsoft via administratörer rapporterar kända bra meddelanden som felaktigt [markeras](admin-submission.md) som dåliga för Microsoft (falska positiva resultat). Precis som med alla åsidosättningar **_rekommenderar vi starkt_** att dessa tillägg görs tillfälligt.
