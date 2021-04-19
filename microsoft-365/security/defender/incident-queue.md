@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: cd571414512ce876e730199b21bf755e4c4b733f
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 3b381749108d4a75024d9a546c0d3f1631c948ed
+ms.sourcegitcommit: 76f3c75413cc960289489d0ca29efadb8a9a5b31
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876205"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "51887263"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Prioritera incidenter i Microsoft 365 Defender
 
@@ -102,7 +102,7 @@ Här är ett vanligt arbetsflöde för att svara på incidenter:
 
    - Inneslutning: Minska eventuella ytterligare påverkan på klientorganisationen.
    - Överflödigt: Ta bort säkerhetshotet.
-   - Återställning: Återställa klientorganisationens resurser till det läge de var i före attacken.
+   - Återställning: Återställa klientorganisationens resurser till det tillstånd de var i före händelsen.
 
 3. När du har löst problemet bör du ta dig tid att:
 

@@ -3,7 +3,7 @@ title: Ytterligare slutpunkter ingår inte i IP-adressen och URL-webbtjänsten f
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/29/2020
+ms.date: 04/19/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Sammanfattning: Den nya slutpunktswebbtjänsten innehåller inte ett litet antal slutpunkter för specifika scenarier.'
 hideEdit: true
-ms.openlocfilehash: e9c9f28749691a8a2585c0865895718ea86d7141
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6c545b6060b44ebe234baaebd3ae1eb2fdb0fb89
+ms.sourcegitcommit: 76f3c75413cc960289489d0ca29efadb8a9a5b31
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927012"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "51887215"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Ytterligare slutpunkter ingår inte i IP-adressen och URL-webbtjänsten för Office 365
 
@@ -43,10 +43,10 @@ Vissa nätverksslutpunkter har publicerats tidigare och har inte inkluderats i [
 
 Förutom DNS är alla dessa valfria för de flesta kunder såvida du inte behöver det specifika scenario som beskrivs.
 
-| Rad | Syfte | Destination | Type (Typ) |
+| Rad | Syfte | Destination | Skriv |
 |:-----|:-----|:-----|:-----|
 | 1  | [Importtjänst](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6) för PST- och filtillägg | Se [importtjänsten för](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6) ytterligare krav. | Ovanligt utgående scenario |
-| 2  | [Microsoft Support- och återställningsassistenten för Office 365](https://diagnostics.office.com/#/)  | https<span>://</span>autodiscover.outlook.com <BR> <span>https://</span>officecdn.microsoft.com <BR> <span>https://</span>api.diagnostics.office.com <BR> <span>https://</span>apibasic.diagnostics.office.com <BR> <span>https://</span>autodiscover-s.outlook.com <BR> <span>https://</span>cloudcheckenabler.azurewebsites.net <BR> <span>https://</span>dcs-staging.azure-api.net <BR> <span>https://</span>login.live.com <BR> <span>https://</span>login.microsoftonline.com <BR> <span>https://</span>login.windows.net <BR> <span>https://</span>o365diagtelemetry.trafficmanager.net <BR> <span>https://</span>odc.officeapps.live.com <BR> <span>https://</span>offcatedge.azureedge.net <BR> <span>https://</span>officeapps.live.com <BR> <span>https://</span>outlook.office365.com <BR> <span>https://</span>outlookdiagnostics.azureedge.net | Utgående servertrafik |
+| 2  | [Microsoft Support- och återställningsassistenten för Office 365](https://diagnostics.office.com/#/)  | https<span>://</span>autodiscover.outlook.com <BR> <span>https://</span>officecdn.microsoft.com <BR> <span>https://</span>api.diagnostics.office.com <BR> <span>https://</span>apibasic.diagnostics.office.com <BR> <span>https://</span>autodiscover-s.outlook.com <BR> <span>https://</span>cloudcheckenabler.azurewebsites.net <BR> <span>https://</span>login.live.com <BR> <span>https://</span>login.microsoftonline.com <BR> <span>https://</span>login.windows.net <BR> <span>https://</span>o365diagtelemetry.trafficmanager.net <BR> <span>https://</span>odc.officeapps.live.com <BR> <span>https://</span>offcatedge.azureedge.net <BR> <span>https://</span>officeapps.live.com <BR> <span>https://</span>outlook.office365.com <BR> <span>https://</span>outlookdiagnostics.azureedge.net | Utgående servertrafik |
 | 3  | Azure AD Connect (med SSO-alternativ) – WinRM & fjärr-PowerShell | KUNDENS STS-miljö (AD FS-server och AD FS-proxy) \| TCP-portar 80 & 443 | Inkommande servertrafik |
 | 4  | STS som AD FS-proxyservrar (endast för externa kunder) | Kundens STS-portar (till exempel AD FS-proxy) \| TCP 443 eller TCP 49443 med/ClientTLS | Inkommande servertrafik |
 | 5  | [Exchange Online Unified Messaging/SBC-integrering](/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers) | Dubbelriktad mellan lokal sessionsgränskontroll och *.um.outlook.com | Utgående servertrafik |
@@ -74,7 +74,7 @@ Förutom DNS är alla dessa valfria för de flesta kunder såvida du inte behöv
 
 [Hantera Office 365-slutpunkter](managing-office-365-endpoints.md)
   
-[Övervaka Microsoft 365 anslutning](./monitor-connectivity.md?view=o365-worldwide)
+[Övervaka Microsoft 365 anslutning](./monitor-connectivity.md)
   
 [Klientanslutning](https://support.office.com/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b)
   

@@ -1,5 +1,5 @@
 ---
-title: Rapporterings information för Microsoft-bokningar
+title: Rapportera information för Microsoft Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,26 +8,56 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
-description: Lär dig hur du kan se en 120-dagsvy av din boknings aktivitet
-ms.openlocfilehash: ae0a9bb4f8d79d1740e001e972a3e4b7677841af
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+description: Läs om hur du kan se en vy på 4 månader av din Bookings-aktivitet
+ms.openlocfilehash: ad0a21454cfe28cec521e545e587105e8f8a7454
+ms.sourcegitcommit: 76f3c75413cc960289489d0ca29efadb8a9a5b31
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47420201"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "51887247"
 ---
-# <a name="reporting-info-for-bookings"></a>Rapporterings information för bokningar
+# <a name="reporting-info-for-bookings"></a>Rapportera information för Bookings
 
-Du kan nu se en 120-dagsvy av en boknings kalender i en TSV-fil. TSV-filer är tabbavgränsade filer. Du kan visa eller redigera en fil som detta med valfri text redigerare eller ett kalkyl blads program, till exempel Excel.
+Nu kan du se en fyra månadsvy av bookingskalendern i en TSV-fil. I TSV-filen visas fyra månader med data, men du kan välja olika fyra månader under ett år.
 
-## <a name="see-120-days-booking-activity"></a>Se 120 dagars boknings aktivitet
+Den här informationen på avtalad tidsnivå kan användas för att visualisera kundaktiviteten runt din Bookings-kalender. TSV-filer är tabbavgränsade värdefiler. Du kan visa eller redigera en sådan fil med valfri textredigerare eller ett kalkylprogram, till exempel Excel.
 
-1. På instrument panelen boknings Kalender väljer du exportera fler data som TSV.
+## <a name="see-four-months-of-booking-activity"></a>Se fyra månaders bokningsaktivitet
 
-:::image type="content" source="../media/bookings-activity.png" alt-text="Skärm bild: 30 dagars bokning av aktiviteter":::
+1. På instrumentpanelen för kalendern i Bookings väljer **du Exportera mer data som TSV.**
 
-1. Spara filen med ett nytt namn och ange formaten. xls eller xlsx.
+:::image type="content" source="../media/bookings-activities.png" alt-text="Skärmbild: 4 månader med Bookings-aktivitet":::
 
-1. Öppna filen för att visa vyn 120 i din boknings kalender.
+1. Spara filen med ett nytt namn och ange formatet .xls eller xlsx.
 
-Filen innehåller en rad för varje händelse i boknings kalendern för de föregående 60 dagarna samt kommande 60-dagar. Varje rad innehåller datum-och tidsinformation för händelsen, kund namn, kund epost, kund telefonnummer, kund adress, anställd, tjänst vald, plats och avtalad tid.
+1. Öppna filen för att visa den fyra månadsvy i kalendern i Bookings.
+
+1. Välj rapportdatum och välj **Exportera**.
+
+:::image type="content" source="../media/bookings-reporting-dates.png" alt-text="Skärmbild: Välj ett tidsintervall och exportera data till TSV-fil.":::
+
+1. Den nedladdade rapporten innehåller en ny uppsättning fält utöver de befintliga fälten.
+
+Rapporten innehåller följande fält.
+
+ - **Datum & tid**
+- **Kundnamn**
+- **Kund-e-post**
+- **Kundtelefon**
+- **Kundadress**
+- **Personal**
+- **Tjänst**
+- **Plats**
+- **Varaktighet (minuter)**
+- **Händelsetyp**
+
+Den förbättrade rapporten innehåller nu följande fält.
+
+- **Pristyp**   Standardpristyp som angetts för en tjänst när tjänsten skapas.
+- **Pris**   Pris som motsvarar den valda pristypen.
+- **Valuta**   Valutatyp inställd för ett företag.
+- **Cc-deltagare**   De mottagare som kommer att få e-postaviseringar för en bokning. Detta kan anges från Teams-appen när du skapar en bokning.
+- **Registrerade deltagare Count**   Hur många kunder har bokat en gruppbokningstjänst.
+- **Sms-aviseringar aktiverat**   Om kunder kan ta emot SMS-sms-relaterade aviseringar.
+- **Anpassade fält**   Alla frågor och svar som rör en enskild bokning kombineras i det här fältet.
+- **Boknings-ID**   Det här är användbart för att identifiera samma bokningar för en grupptjänst.
