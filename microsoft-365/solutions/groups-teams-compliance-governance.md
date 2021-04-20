@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Läs mer om kompatibilitetsalternativ för Microsoft 365-grupper, Teams och SharePoint-samarbete.
-ms.openlocfilehash: 88083d88b274e750e0fc6f1907268c996312163c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5006f0cf9f7eb174082d4fc2508bf112864fcba3
+ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920898"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899358"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Efterlevnadsalternativ för Microsoft 365-grupper, Teams och SharePoint-samarbete
 
@@ -60,7 +60,7 @@ Användarchattar behålls på obestämd tid även om ett användarkonto tas bort
 
 - [Bevarandeprinciper i Microsoft Teams](/microsoftteams/retention-policies)
 
-En enda bevarandeprincip kan ställas in att gälla för Microsoft 365-grupper, Teams-chatt och Teams-kanalmeddelanden. 
+En enda bevarandeprincip kan ställas in att gälla för chatt- och teams-kanalmeddelanden i Teams. 
 
 Fler resurser:
 
@@ -82,7 +82,7 @@ Du kan använda känslighetsetiketter för att kryptera filer, så att bara de m
 
 - [Begränsa åtkomst till innehåll med hjälp av känslighetsetiketter för att tillämpa kryptering](../compliance/encryption-sensitivity-labels.md)
 
-- [Konfigurera en team med säkerhetsisolering](./secure-teams-security-isolation.md)
+- [Konfigurera ett team med säkerhetsisolering](./secure-teams-security-isolation.md)
 
 Fler resurser:
 

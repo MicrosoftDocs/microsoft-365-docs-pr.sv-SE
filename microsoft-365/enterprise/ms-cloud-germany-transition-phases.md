@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: Sammanfattning Förstå åtgärderna i migreringsfaserna och hur de påverkar flytten från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i den nya tyska datacenterområdet.
-ms.openlocfilehash: cd83d2abcc061562047aeb384856cc9ab04dcad3
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 121f2059e4a13684169ab40b7bfdaae13ef6045e
+ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760044"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899254"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Åtgärder i migreringsfaser och påverkan på migreringen från Microsoft Cloud Deutschland
 
@@ -41,7 +41,7 @@ Migreringsprocessen slutförs under många veckor beroende på organisationens t
 |Azure|Veckor|Kund|Skapa nya globala Azure-prenumerationer och övergång Azure-tjänster.|
 |Övergången & prenumerationslicens|1–2 dagar|Microsoft|Köp globala prenumerationer, avbryt Microsoft Cloud Deutschland-prenumerationer och gå över användarlicenser.|
 |SharePoint och OneDrive|15+ dagar|Microsoft|Migrera innehåll i SharePoint och OneDrive för företag, men sharepoint.de URL:er.|
-|Exchange online|15+ dagar|Microsoft|Migrera Exchange Online-innehåll och gå över till globala URL:er.|
+|Exchange Online|15+ dagar|Microsoft|Migrera Exchange Online-innehåll och gå över till globala URL:er.|
 |Säkerhets- & efterlevnad|1–2 dagar|Microsoft|Säkerhet och & och innehåll för övergång.|
 |Skype för företag|1–2 dagar|Microsoft|Gå över från Skype för företag till Microsoft Teams.|
 |Power BI & Dynamics 365|15+ dagar|Microsoft|Migrera innehåll i Power BI och Dynamics 365.|
@@ -131,11 +131,8 @@ Om du fortfarande använder SharePoint 2013-arbetsflöden begränsar du användn
 Ytterligare överväganden:
 
 - Om din organisation fortfarande använder SharePoint 2010-arbetsflöden kommer de inte längre att fungera efter den 31 december 2021. SharePoint 2013-arbetsflöden kommer att fortsätta stödjas, även om det är inaktiverat som standard för nya klientorganisationar som startar den 1 november 2020. När migreringen till SharePoint Online-tjänsten är klar rekommenderar vi att du flyttar till Power Automate eller andra lösningar som stöds.
- 
-- Microsoft Cloud Deutschland-kunder vars SharePoint Online-instans ännu inte migrerats måste vara kvar på SharePoint Online PowerShell-modulen/Microsoft.SharePointOnline.CSOM version 16.0.20616.12000 eller senare. I annat fall går det inte att använda anslutningar till SharePoint Online via PowerShell eller objektmodellen på klientsidan.
-
+ - Microsoft Cloud Deutschland-kunder vars SharePoint Online-instans ännu inte migrerats måste vara kvar på SharePoint Online PowerShell-modulen/Microsoft.SharePointOnline.CSOM version 16.0.20616.12000 eller senare. I annat fall går det inte att använda anslutningar till SharePoint Online via PowerShell eller objektmodellen på klientsidan.
 - Under den här fasen kommer IP-adresserna som ligger bakom SharePoint-webbadresserna att ändras. Efter övergången till globala Office 365-tjänster ändras adresserna för de bevaras klientorganisations-URL:er (till exempel och ) till url-adresser och `contoso.sharepoint.de` `contoso-my.sharepoint.de` [IP-adressintervall för Microsoft 365 (SharePoint Online](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#sharepoint-online-and-onedrive-for-business)och OneDrive för företag).
-
 
 > [!NOTE]
 > Om du använder eDiscovery ska du kontrollera att du är medveten om [eDiscovery-migreringsupplevelsen.](ms-cloud-germany-transition-add-scc.md)
@@ -150,7 +147,8 @@ Den nya regionen "Tyskland" läggs till i organisationens konfiguration. Exchang
 - Gå över användare och tjänster från äldre MCD-URL:er () till nya URL-adresser för `https://outlook.office.de` Office 365-tjänster ( `https://outlook.office365.com` ).
 -  Exchange Online-tjänsterna (Outlook Web Access och Administrationscenter för Exchange) för den nya tyska datacenterområdet kommer att vara tillgängliga från den här fasen, de kommer inte att vara tillgängliga tidigare.
 - Användarna kan fortsätta att få åtkomst till tjänsten via äldre MCD-URL:er under migreringen, men de måste sluta använda de äldre webbadresserna när migreringen slutförts.
-- Användarna bör gå över till att använda den globala Office-portalen för Office Online-funktionerna (Kalender, E-post, Kontakter). Navigering till tjänster som ännu inte har migrerats till Office 365-tjänster fungerar inte förrän de migreras.
+- Användarna bör gå över till att använda den globala Office-portalen för Office Online-funktionerna (Kalender, E-post, Kontakter). Navigering till tjänster som ännu inte har migrerats till Office 365-tjänster fungerar inte förrän de migreras. 
+- Den här begränsningen gäller även för bakgrundstjänster som Mitt konto. Mitt konto för globala tjänster blir tillgängligt när fas 9 är klar. Tills dess måste användarna använda MCD-portalen för att hantera sina kontoinställningar.
 - Outlook Web App tillhandahåller inte de gemensamma mapparna under migreringen.
 
 Om du vill ändra användarfoton under fas 5 kan du gå till [Exchange Online PowerShell – Set-UserPhoto under fas 5.](#exchange-online-powershell)
@@ -158,9 +156,12 @@ Om du vill ändra användarfoton under fas 5 kan du gå till [Exchange Online Po
 ### <a name="dns-record-for-autodiscover-in-exchange-online"></a>DNS-post för automatisk upptäckt i Exchange Online
 **Gäller för:** Kunder som använder Exchange Online med en egen domän
 
-Customer-managed DNS settings for AutoDiscover that currently point to Microsoft Cloud Deutschland need to be updated to refer to the Office 365 Global endpoint on completion of the Exchange Online phase (phase 5). <br> Befintliga DNS-poster med CNAME som pekar autodiscover-outlook.office.de måste uppdateras så att de pekar på **autodiscover.outlook.com.**
+Customer-managed DNS settings for Autodiscover that currently point to Microsoft Cloud Deutschland need to be updated to refer to the Office 365 Global endpoint on completion of the Exchange Online phase (phase 5). <br> Befintliga DNS-poster med CNAME som pekar autodiscover-outlook.office.de måste uppdateras så att de pekar på **autodiscover.outlook.com.**
 
 Kunder som inte utför de här DNS-uppdateringarna vid slutförande av migreringsfasen **9** kan uppleva tjänstproblem när migreringen slutförs.
+
+> [!NOTE]
+> Verifieringsfel i administrationscentret för anpassade domäner för posten Automatisk upptäckt kan ignoreras. Tjänsterna fungerar korrekt endast när CNAME-posten har ändrats till autodiscover.outlook.com.
 
 ### <a name="exchange-online-powershell"></a>Exchange Online PowerShell
 **Gäller för:** Exchange Online-administratörer med Exchange Online PowerShell
@@ -182,29 +183,21 @@ Om du använder PowerShell-cmdleten **Set-UserPhoto** uppstår ett fel om en anv
  där `<user_email>` är platshållaren för användarens e-post-ID. 
 
 Ytterligare överväganden:
-<!--
-    The statement below is not clear. What does myaccount.microsoft.com mean?
-
-
-- `myaccount.microsoft.com` will only work after the tenant cutover in phase 9. Links will produce "something went wrong" error messages until that time.
--->
 - Användare av Outlook Web App som har åtkomst till en delad postlåda i en annan miljö (till exempel en användare i MCD-miljön får åtkomst till en delad postlåda i den globala miljön) uppmanas att autentisera en andra gång. Användaren måste först autentisera och komma åt sin postlåda i `outlook.office.de` och sedan öppna den delade postlådan som finns i `outlook.office365.com` . De måste autentiseras en andra gång när de får åtkomst till de delade resurser som finns i den andra tjänsten.
 - För befintliga Microsoft Cloud Deutschland-kunder eller användare som är under övergång kan det hända att en delad postlåda läggs till i Outlook med Arkiv **> Info >** Lägg till konto och kalenderbehörigheter kan misslyckas (Outlook-klienten försöker använda Rest `https://outlook.office.de/api/v2.0/Me/Calendars` API). Kunder som vill lägga till ett konto för att visa kalenderbehörigheter kan lägga till registernyckeln enligt beskrivningen i Ändringar i användarupplevelsen för delning av en kalender i [Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) för att säkerställa att den här åtgärden lyckas. Den här registernyckeln kan distribueras i hela organisationen med hjälp av Grupprincip.
+- Alla kunder som använder en aktiv Exchange-hybridkonfiguration kan inte flytta postlådor från en lokal Exchange Server till Exchange Online, varken till Microsoft Cloud Deutschland eller till den nya datacenterområdet i Tyskland. Kunder måste säkerställa att löpande postlådeflyttningar har slutförts före fas 5 och återupptas efter den här fasen.
 - Se till att alla användare som använder äldre protokoll (POP3/IMAP4/SMTP) för sina enheter är redo att ändra slutpunkterna i sin klient när [Exchange-postlådan](ms-cloud-germany-transition-add-pre-work.md#exchange-online)har flyttats till den nya tyska datacenterområdet enligt anvisningarna före migreringen för Exchange Online.
+- Schemaläggning av Skype för företag-möten i Outlook Web App är inte längre tillgängligt efter att postlådan har migrerats. Om det behövs måste användarna använda Outlook i stället.
 
 Om du vill veta mer om skillnaderna för organisationer i migrering och när Exchange Online-resurser har migrerats kan du läsa informationen i Kundupplevelse under migreringen till [Office 365-tjänster](ms-cloud-germany-transition-experience.md)i de nya tyska datacenterområdena.
-
 
 ## <a name="phase-6-exchange-online-protection--security-and-compliance"></a>Fas 6: Exchange Online Protection/Säkerhet och efterlevnad
 
 **Gäller för:** Alla kunder som använder Exchange Online<br>
 
-EOP-funktioner (Back-end Exchange Online Protection) kopieras till den nya regionen "Tyskland".
+EOP-funktioner (Back-end Exchange Online Protection) kopieras till den nya regionen "Tyskland". Exchange Online möjliggör dirigering från externa värdar till Office 365 och information om klientorganisationens historia som migreras, vilket också omfattar serverslutstjänster för funktioner för säkerhet och efterlevnad.
 
-| Steg | Beskrivning | Påverkan |
-|:-------|:-------|:-------|
-| Migrering av Exchange Online-routning och historiska meddelandedetaljer. | Exchange Online aktiverar routning från externa värdar till Office 365. De externa MX-posterna går över till EOP-tjänsten. Klientkonfiguration och historisk information migreras. |<ul><li>Microsoft-hanterade DNS-poster uppdateras från Office 365 Germany EOP till Office 365-tjänster.</li><li>Kunder bör vänta i 30 dagar efter att EOP har skrivit dubbelt så för EOP-migrering. Annars kan data gå förlorade.</li></ul>|
-||||
+Kunder som använder endast Exchange Online-funktioner (icke-hybrid) behöver inte vara uppmärksamma i det här skedet.
 
 ### <a name="exchange-online-hybrid-deployments"></a>Exchange Online-hybriddistributioner
 **Gäller för:** Alla kunder som använder en aktiv Exchange-hybridkonfiguration med Exchange-servrar lokalt
@@ -223,19 +216,18 @@ Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outl
 
 **Gäller för:** Alla kunder som använder Skype för företag – Online
 
-Kontrollera att du är bekant med förarbetet [med migreringsprocessen för Skype för företag – Online.](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online)
+Gå igenom [stegen före migreringen av Skype för företag – Online](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online) och kontrollera att du har slutfört alla steg.
+I den här fasen kommer Skype för företag att migreras till Microsoft Teams. Befintliga Skype för företag-kunder migreras till globala Office 365-tjänster i Europa och flyttas sedan över till Microsoft Teams i regionen "Tyskland" för Office 365-tjänster.
 
-<!--
-    Question from ckinder
-    the PowerShell command seems to be incomplete
--->
+- Användarna kan inte logga in på Skype för företag på migreringsdatumet. Tio dagar före migreringen får kunden ett meddelande i administrationscentret som meddelar när migreringen sker, och igen när migreringen påbörjas.
+- Principkonfigurationen migreras.
+- Användare migreras till Teams och har inte längre åtkomst till Skype för företag efter migreringen.
+- Användarna måste ha Microsoft Teams-skrivbordsklienten installerad. Installationen sker under tio dagar via policyn för Skype för företag-infrastrukturen, men om det misslyckas måste användarna fortfarande hämta klienten eller ansluta med en webbläsare som stöds.
+- Kontakter och möten migreras till Microsoft Teams.
+- Användarna kan inte logga in i Skype för företag mellan tidstjänstens övergångar till Office 365-tjänster och inte förrän DNS-posterna för kunder har slutförts.
+- Kontakter och befintliga möten fortsätter att fungera som Skype för företag-möten.
 
-| Steg | Beskrivning | Påverkan |
-|:-------|:-------|:-------|
-| Migrering av Skype för företag till Teams. | Befintliga Skype för företag-kunder migreras till globala Office 365-tjänster i Europa och flyttas sedan över till Microsoft Teams i regionen "Tyskland" för Office 365-tjänster. |<ul><li>Användarna kan inte logga in på Skype för företag på migreringsdatumet. Tio dagar före migreringen publicerar vi ett inlägg i administrationscentret för att meddela dig om när migreringen kommer att ske, och igen när vi påbörjar migreringen.</li><li> Principkonfigurationen migreras. </li><li>Användarna migreras till Teams och har inte längre Skype för företag efter migreringen. </li><li>Användarna måste ha Teams-skrivbordsklienten installerad. Installationen sker under tio dagar via policyn för Skype för företag-infrastrukturen, men om det misslyckas måste användarna fortfarande hämta klienten eller ansluta med en webbläsare som stöds. </li><li>Kontakter och möten migreras till Teams.</li><li>Användarna kan inte logga in i Skype för företag mellan tidstjänstens övergångar till Office 365-tjänster och inte förrän DNS-posterna för kunder har slutförts. </li><li>Kontakter och befintliga möten fortsätter att fungera som Skype för företag-möten. </li></ul>|
-||||
-
-Om du måste ansluta till Skype för företag – Online med PowerShell efter att migreringsfasen 9 har slutförts använder du följande kod för att ansluta:
+Om du måste ansluta till Skype för företag – Online med PowerShell efter att migreringsfasen 9 har slutförts använder du följande PowerShell-kod för att ansluta:
 
 ```powershell
 Import-Module MicrosoftTeams
@@ -294,13 +286,21 @@ Om du har verksamhetsbaserade appar ska du kontrollera [](ms-cloud-germany-trans
 
 **Gäller för:** Alla kunder
 
-När Office 365-klientorganisationen har slutfört det sista steget av migreringen [Azure AD-slutförande (fas 9)] går alla tjänster över till hela världen. Inga program eller användare ska ha åtkomst till resurser för klientorganisationen mot någon av Microsoft Cloud Deutschland-slutpunkterna. Efter 30 dagar efter att slutförandet kommer Microsoft Cloud Deutschland Azure AD-tjänsten att stoppa slutpunktsåtkomst för den övergångde klientorganisationen. Slutpunktsbegäranden, till exempel autentisering, kommer att misslyckas från och med nu mot Microsoft Cloud Deutschland-tjänsten. 
+När Office 365-klientorganisationen har slutfört det sista steget av migreringen (Azure AD-slutförande (fas 9)) är alla tjänster över hela världen. Inga program eller användare ska ha åtkomst till resurser för klientorganisationen mot någon av Microsoft Cloud Deutschland-slutpunkterna. Efter 30 dagar efter att slutförandet kommer Microsoft Cloud Deutschland Azure AD-tjänsten att stoppa slutpunktsåtkomst för den övergångde klientorganisationen. Slutpunktsbegäranden, till exempel autentisering, kommer att misslyckas från och med nu mot Microsoft Cloud Deutschland-tjänsten. 
 
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
 | Uppdatera användarslutpunkter | Se till att alla användare får åtkomst till tjänsten med hjälp av rätt globala Microsoft-slutpunkter |Efter migreringen 30 dagar slutar Microsoft Cloud Deutschland-slutpunkterna att respektera förfrågningar. klient- eller programtrafiken misslyckas.  |
 | Uppdatera Slutpunkter för Azure AD-program | Du måste uppdatera slutpunkter för autentisering, Azure Active Directory (Azure AD) Graph och MS Graph för dina program till slutpunkterna för Microsofts globala tjänst. | Efter migreringen 30 dagar slutar Microsoft Cloud Deutschland-slutpunkterna att respektera förfrågningar. klient- eller programtrafiken misslyckas. |
 ||||
+
+### <a name="azure-ad-connect"></a>Azure AD Connect
+**Gäller för:** Alla kunder synkroniserar identiteter med Azure AD Connect
+
+| Steg | Beskrivning | Påverkan |
+|:-------|:-------|:-------|
+| Uppdatera Azure AD Connect. | Efter att användningen av Azure AD har slutförts använder organisationen alla Office 365-tjänster och är inte längre ansluten till Microsoft Cloud Deutschland. I det här läget måste kunden säkerställa att deltasynkroniseringsprocessen har slutförs och sedan ändra strängvärdet från `AzureInstance` 3 (Microsoft Cloud Deutschland) till 0 i `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect` registersökvägen. | Ändra `AzureInstance` registernyckelns värde. Om du inte gör det kommer objekten inte att synkroniseras efter att Microsoft Cloud Deutschland-slutpunkterna inte längre är tillgängliga. |
+|||||
 
 ## <a name="post-migration"></a>Efter migreringen
 
