@@ -175,6 +175,9 @@
 ##### [Aktivera kontrollerad mappåtkomst](enable-controlled-folders.md)
 ##### [Anpassa kontrollerad mappåtkomst](customize-controlled-folders.md)
 
+#### [Enhetskontroll]()
+##### [Rapporter för enhetskontroll](device-control-report.md)
+##### [Styra USB-enheter](control-usb-devices-using-intune.md)
 
 ### [Enhetsidentifiering]()
 #### [Översikt över enhetsidentifiering](device-discovery.md)
