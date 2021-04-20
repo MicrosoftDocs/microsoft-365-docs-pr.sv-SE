@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Läs om hur du kan ha mer än en e-postadress, ett så kallat e-postalias, kopplat till ditt Microsoft 365 för företag-konto. '
-ms.openlocfilehash: a44271cdbf52136e61702697a960cc3cbcd8119d
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 4003dcfca29a722ccdf9b86cca5aa1141fbdb367
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471007"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892811"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Lägga till ytterligare ett e-postalias för en användare
   
@@ -75,7 +75,7 @@ Du måste ha [administratörsbehörighet för](../add-users/about-admin-roles.md
     Användaren har nu en primär adress och ett alias. Till exempel skickas all e-post som skickas till Erna Hanssons primära adress, Eliza@NodPublishers.com, och hennes alias, Sales@NodPublishers.com, till Ernas inkorg.
     
   
-7. **När användaren svarar kommer den adress som det *primära e-postaliaset*  att vara hennes primära e-postalias.** Anta till exempel att ett meddelande skickas till Sales@NodPublishers.com och kommer till Ernas inkorg. När Erna besvarar meddelandet visas hennes primära e-postadress som avsändare, inte Sales@NodPublishers.com. 
+7. **När användaren svarar beror *Av-adressen* på hans eller hennes Outlook-klient. Outlook på webben använder aliaset som e-postmeddelandet togs emot från (vi kallar det för ping-principle). Outlook på datorn använder hennes primära e-postalias.** Anta till exempel att ett meddelande skickas till Sales@NodPublishers.com och kommer till Ernas inkorg. När Erna svarar på meddelandet med Outlook på datorn visas hennes primära e-postadress Eliza@NodPublishers.com, inte Sales@NodPublishers.com.
     
 ::: moniker-end
 
@@ -106,7 +106,7 @@ Du måste ha [administratörsbehörighet för](../add-users/about-admin-roles.md
     Användaren har nu en primär adress och ett alias. Till exempel skickas all e-post som skickas till Erna Hanssons primära adress, Eliza@NodPublishers.com, och hennes alias, Sales@NodPublishers.com, till Ernas inkorg.
     
   
-7. **När användaren svarar kommer den adress som det *primära e-postaliaset*  att vara hennes primära e-postalias.** Anta till exempel att ett meddelande skickas till Sales@NodPublishers.com och kommer till Ernas inkorg. När Erna besvarar meddelandet visas hennes primära e-postadress som avsändare, inte Sales@NodPublishers.com. 
+7. **När användaren svarar beror *Av-adressen* på hans eller hennes Outlook-klient. Outlook på webben använder aliaset som e-postmeddelandet togs emot från (vi kallar det för ping-principle). Outlook på datorn använder hennes primära e-postalias.** Anta till exempel att ett meddelande skickas till Sales@NodPublishers.com och kommer till Ernas inkorg. När Erna svarar på meddelandet med Outlook på datorn visas hennes primära e-postadress Eliza@NodPublishers.com, inte Sales@NodPublishers.com.
 
 ::: moniker-end
 
@@ -137,7 +137,7 @@ Du måste ha [administratörsbehörighet för](../add-users/about-admin-roles.md
     Användaren har nu en primär adress och ett alias. Till exempel skickas all e-post som skickas till Erna Hanssons primära adress, Eliza@NodPublishers.com, och hennes alias, Sales@NodPublishers.com, till Ernas inkorg.
     
   
-7. **När användaren svarar kommer den adress som det *primära e-postaliaset*  att vara hennes primära e-postalias.** Anta till exempel att ett meddelande skickas till Sales@NodPublishers.com och kommer till Ernas inkorg. När Erna besvarar meddelandet visas hennes primära e-postadress som avsändare, inte Sales@NodPublishers.com. 
+7. **När användaren svarar beror *Av-adressen* på hans eller hennes Outlook-klient. Outlook på webben använder aliaset som e-postmeddelandet togs emot från (vi kallar det för ping-principle). Outlook på datorn använder hennes primära e-postalias.** Anta till exempel att ett meddelande skickas till Sales@NodPublishers.com och kommer till Ernas inkorg. När Erna svarar på meddelandet med Outlook på datorn visas hennes primära e-postadress Eliza@NodPublishers.com, inte Sales@NodPublishers.com.
 
 ::: moniker-end
 
@@ -151,6 +151,10 @@ Om du får felmeddelandet " Det hittades ingen parameter som matchar **parameter
 
 
 Om du har köpt prenumerationen från GoDaddy eller från en annan partner och vill ange ett nytt alias som den primära e-postadressen måste du gå till hanteringskonsolen för GoDaddy eller partnern.
+
+## <a name="sending-email-from-the-proxy-address-easily"></a>Skicka enkelt e-post från proxyadressen
+
+En ny funktion lanseras i april 2021 som gör att användare enkelt kan skicka från sina alias när de använder Outlook på webben. När funktionen distribueras till ett innehavaradministratör som använder cmdleten får användare i innehavarorganisationen tillgång till en lista med kryssrutor där varje post motsvarar ett alias i `Set-OrganizationConfig -SendFromAliasEnabled $true` Sina Outlook-inställningar. När du väljer ett alias visas det i listrutan Från i formuläret Skriv.
   
 ## <a name="related-articles"></a>Relaterade artiklar
 

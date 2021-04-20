@@ -1,7 +1,7 @@
 ---
 title: Konfigurera aviseringsmeddelanden i Microsoft Defender för Slutpunkt
 description: Du kan använda Microsoft Defender för Endpoint för att konfigurera inställningar för e-postaviseringar för säkerhetsvarningar, baserat på allvarlighetsgrad och andra villkor.
-keywords: e-postaviseringar, konfigurera aviseringsmeddelanden, microsoft defender atp-meddelanden, microsoft defender atp-aviseringar, windows 10 enterprise, windows 10 education
+keywords: e-postaviseringar, konfigurera aviseringsmeddelanden, Microsoft Defender för slutpunkt, Microsoft Defender för slutpunktsaviseringar, windows 10 Enterprise, windows 10 education
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d5a19464b9d5d1b9659d7bfae2d853f7a640a00b
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b629d6a90931026ce28ce241e74d490ce67c6962
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687895"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893640"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Konfigurera aviseringsmeddelanden i Microsoft Defender för Slutpunkt
 

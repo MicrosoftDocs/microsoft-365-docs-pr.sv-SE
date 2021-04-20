@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: f2b3e109493331a4b63d669501525a48cb996809
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 21b0062a337dbeb3c7dec8b715971dbbc4917db1
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689227"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893281"
 ---
 # <a name="register-existing-devices-yourself"></a>Registrera befintliga enheter själv
 
@@ -136,7 +136,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 Med hash-data kopplade till en CSV-fil kan du nu fortsätta att [registrera enheterna](#register-devices-by-using-the-admin-portal).
 
 
-#### <a name="register-devices-by-using-the-admin-portal"></a>Registrera enheter med hjälp av administrationsportalen
+## <a name="register-devices-by-using-the-admin-portal"></a>Registrera enheter med hjälp av administrationsportalen
 
 I [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)väljer du **Enheter** i det vänstra navigeringsfönstret. Titta efter avsnittet Microsoft Managed Desktop på menyn och välj **Enheter**. På arbetsytan Microsoft Hanterade skrivbordsenheter väljer du **+ Registrera-enheter,** som gör att du kan registrera nya enheter.
 
@@ -165,7 +165,7 @@ Du kan övervaka förloppet för enhetsregistreringen på huvudsidan. Möjliga d
 | Aktiv | Enheten har levererats till användaren och de har registrerats i din klientorganisation. Det här betyder också att de regelbundet använder enheten. |
 | Inaktiv | Enheten har levererats till användaren och de har registrerats i din klientorganisation. Men de har inte använt enheten nyligen (under de senaste 7 dagarna).  | 
 
-#### <a name="troubleshooting-device-registration"></a>Felsökning av enhetsregistrering
+### <a name="troubleshooting-device-registration"></a>Felsökning av enhetsregistrering
 
 | Felmeddelande | Information |
 |---------------|-------------|
@@ -175,13 +175,13 @@ Du kan övervaka förloppet för enhetsregistreringen på huvudsidan. Möjliga d
 | Enhet som påstås av en annan organisation | Den här enheten har redan blivit anspråksad av en annan organisation. Kontrollera med din enhetsleverantör. |
 | Oväntat fel | Det gick inte att behandla din begäran automatiskt. Kontakta supporten och ange ditt begärande-ID: <requestId> |
 
-### <a name="check-the-image"></a>Kontrollera bilden
+## <a name="check-the-image"></a>Kontrollera bilden
 
 Om enheten kommer från en Microsoft Managed Desktop-partnerleverantör ska bilden vara korrekt.
 
 Du får också gärna använda bilden på egen hand om du föredrar det. Kontakta microsofts representant som du arbetar med för att komma igång och informera dig om var och hur du använder bilden.
 
-### <a name="deliver-the-device"></a>Leverera enheten
+## <a name="deliver-the-device"></a>Leverera enheten
 
 > [!IMPORTANT]
 > Innan du lämnar över enheten till användaren kontrollerar du att du har skaffat och [tillämpat lämpliga licenser](../get-ready/prerequisites.md) för den användaren.

@@ -13,12 +13,12 @@ ms.author: deniseb
 ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: d9452b6d2eeaad3880894b9ec66c8bc71797b429
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 50e6f9b16dbc633e75e86acdc54ac43580107ae3
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764609"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893383"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Microsoft Defender Antivirus på Windows Server
 
@@ -181,7 +181,7 @@ Om du använder en produkt som inte är en Microsoft-antivirusprodukt som primä
 
 Om du använder Windows Server, version 1803 eller Windows Server 2019 kan du ställa in Microsoft Defender Antivirus på passiv form genom att ange följande registernyckel:
 - Sökväg: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-- Namn: `ForcePassiveMode`
+- Namn: `ForceDefenderPassiveMode`
 - Typ: `REG_DWORD`
 - Värde: `1`
 

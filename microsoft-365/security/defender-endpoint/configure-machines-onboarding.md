@@ -1,6 +1,6 @@
 ---
-title: Få enheter onboarded to Microsoft Defender ATP
-description: Spåra registrering av Intune-hanterade enheter i Microsoft Defender ATP och öka onboarding rate.
+title: Få enheter skickade till Microsoft Defender för Endpoint
+description: Spåra registrering av Intune-hanterade enheter i Microsoft Defender för Endpoint och öka introduktionshastigheten.
 keywords: onboard, Intune-hantering, MDATP, WDATP, Microsoft Defender, Windows Defender, avancerat skydd mot hot, konfigurationshantering
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6145acd5e8e2743ff42dce3cf01af0128e8ca225
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 5e20c424f15561c8b6f0544b80aca6e30c56409d
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166095"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893335"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Få enheter skickade till Microsoft Defender för Endpoint
 
@@ -74,6 +74,6 @@ Mer information finns i [om hur du använder konfigurationsprofiler för Intune-
 >Vill du uppleva Microsoft Defender ATP? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Kontrollera att dina enheter är korrekt konfigurerade](configure-machines.md)
+- [Se till att dina enheter är korrekt konfigurerade](configure-machines.md)
 - [Öka efterlevnad för Defender för slutpunktens säkerhetsbaslinje](configure-machines-security-baseline.md)
 - [Optimera ASR-regeldistribution och identifiering](configure-machines-asr.md)

@@ -1,7 +1,7 @@
 ---
-title: Öka efterlevnad för Säkerhetsbaslinje för Microsoft Defender ATP
-description: Med säkerhetsbaslinjen för Microsoft Defender ATP ställs Säkerhetskontroller i Microsoft Defender ATP in för att ge optimalt skydd.
-keywords: Intune-hantering, MDATP, WDATP, Microsoft Defender, avancerat skydd ASR, säkerhetsbaslinje
+title: Öka efterlevnad för Microsoft Defender för slutpunktens säkerhetsbaslinje
+description: Säkerhetsbaslinjen för Microsoft Defender för Slutpunkt anger säkerhetskontroller för att ge optimalt skydd.
+keywords: Intune-hantering, MDATP, WDATP, MDE, Microsoft Defender för slutpunkt, avancerat skydd för hot, säkerhetsbaslinje
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 74073441ad7be89e0af278ff1e371133251b5ea7
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 19a2276955b253a23ee1552a3f1d4d0345dfe247
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163405"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893547"
 ---
 # <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>Öka efterlevnad för Microsoft Defender för slutpunktens säkerhetsbaslinje
 
@@ -41,11 +41,11 @@ Innan du kan distribuera och spåra efterlevnad för säkerhetsbaslinjer:
 - [Registrera dina enheter till Intune-hantering](configure-machines.md#enroll-devices-to-intune-management)
 - [Kontrollera att du har de behörigheter som krävs](configure-machines.md#obtain-required-permissions)
 
-## <a name="compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines"></a>Jämföra Säkerhetsbaslinjer för Microsoft Defender ATP och Windows Intune
+## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>Jämför Säkerhetsbaslinjer för Microsoft Defender för Slutpunkt och Windows Intune
 Säkerhetsbaslinjen för Windows Intune innehåller en omfattande uppsättning rekommenderade inställningar som krävs för att säkert konfigurera enheter som kör Windows, inklusive webbläsarinställningar, PowerShell-inställningar samt inställningar för vissa säkerhetsfunktioner som Microsoft Defender Antivirus. Defender för slutpunktsbaslinje tillhandahåller däremot inställningar som optimerar alla säkerhetskontroller i Defender för slutpunktsstacken, inklusive inställningar för identifiering av slutpunkt och svar (EDR) samt inställningar som också finns i Windows Intune-säkerhetsbaslinjen. Mer information om varje baslinje finns i:
 
 - [Inställningar för Windows-säkerhetsbaslinje för Intune](https://docs.microsoft.com/intune/security-baseline-settings-windows)
-- [Baslinjeinställningar för Microsoft Defender ATP för Intune](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp)
+- [Baslinjeinställningar för Microsoft Defender för Slutpunkt för Intune](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp)
 
 Under idealiska förhållanden distribueras enheter som finns i Defender för Slutpunkt med båda baslinjerna: Säkerhetsbaslinjen för Windows Intune till att först skydda Windows och sedan Defender för slutpunktens säkerhetsbaslinje lagd ovanpå för att optimalt konfigurera Defender för slutpunktssäkerhetskontroller. För att dra nytta av de senaste data om risker och hot och för att minimera konflikter allt eftersom baslinjer utvecklas ska du alltid använda de senaste versionerna av baslinjerna för alla produkter så snart de släpps.
 
@@ -107,6 +107,6 @@ Enhetshantering övervakar endast grundläggande efterlevnad av Windows 10-enhet
 >Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Kontrollera att dina enheter är korrekt konfigurerade](configure-machines.md)
+- [Se till att dina enheter är korrekt konfigurerade](configure-machines.md)
 - [Få enheter skickade till Microsoft Defender för Endpoint](configure-machines-onboarding.md)
 - [Optimera ASR-regeldistribution och identifiering](configure-machines-asr.md)

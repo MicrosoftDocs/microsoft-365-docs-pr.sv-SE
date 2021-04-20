@@ -1,6 +1,6 @@
 ---
 title: Få åtkomst till Microsoft Defender för Endpoint Community Center
-description: Få åtkomst till Microsoft Defender ATP Community Center för att dela upplevelser, kommunicera och lära dig mer om produkten.
+description: Få åtkomst till Microsoft Defender för Endpoint Community Center för att dela upplevelser, kommunicera och lära dig mer om produkten.
 keywords: community, community center, tech community, konversationer, meddelanden
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 71dc2a004f188eac34258afb2200cfd4e67f47ab
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: ef1076fb5b8bfc38090374671998460190faaba9
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165243"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893431"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>Få åtkomst till Microsoft Defender för Endpoint Community Center
 

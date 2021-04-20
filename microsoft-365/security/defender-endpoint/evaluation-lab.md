@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ead616b7af3df05f4c0c5755ad779f0251555734
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2382281fbb975daa18ec21aabaf5acf8d3fbfb2f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51074585"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893443"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender för utvärderingslabb med slutpunkt
 
@@ -74,10 +74,10 @@ Du kan komma åt labbet från menyn. I navigeringsmenyn väljer du **Utvärderin
 ![Bild på utvärderingslabb på menyn](images/evaluation-lab-menu.png)
 
 >[!NOTE]
->- Varje miljö etableras med ett begränsat antal testenheter.
 >- Beroende på vilken typ av miljöstruktur du väljer blir enheter tillgängliga under det angivna antalet timmar från aktiveringsdagen.
->- När du använt de etablerade enheterna tillhandahålls inga nya enheter. En borttagna enhet uppdaterar inte antalet tillgängliga testenhet.
->- Vi rekommenderar att du använder enheterna noggrant med hänsyn till de begränsade resurserna.
+>- Varje miljö etableras med ett begränsat antal testenheter. När du använt de etablerade enheterna tillhandahålls inga nya enheter. En borttagna enhet uppdaterar inte antalet tillgängliga testenhet.
+>- Du kan inte längre använda labbet när resurserna har använts upp. Den återställs inte eller uppdateras inte.
+>- Vi rekommenderar att du använder resurserna noggrant. Labbresurserna är begränsade. De återställs inte eller uppdateras inte. 
 
 Har du redan ett labb? Se till att aktivera de nya hoten och ha aktiva enheter.
 
@@ -124,11 +124,11 @@ Följande säkerhetskomponenter är förkonfigurerade i testenheterna:
 
 - [Minskning av attackytan](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
 - [Blockera vid första synen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
-- [Reglerad mappåtkomst](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
-- [Sårbarhetsskydd](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
+- [Kontrollerad mappåtkomst](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
+- [Exploateringsskydd](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
 - [Nätverksskydd](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
 - [Potentiellt oönskad identifiering av program](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [Moln levererat skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
+- [Molnbaserat skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
 - [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
 
 >[!NOTE]

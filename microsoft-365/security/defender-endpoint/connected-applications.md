@@ -1,7 +1,7 @@
 ---
-title: Anslutna program i Microsoft Defender ATP
+title: Anslutna program i Microsoft Defender för Slutpunkt
 ms.reviewer: ''
-description: Visa anslutna partnerprogram som använder OAuth 2.0-standardprotokoll för att autentisera och ange token som ska användas med Microsoft Defender ATP-API:er.
+description: Visa anslutna partnerprogram som använder OAuth 2.0-standardprotokoll för att autentisera och ange token som ska användas med Microsoft Defender för slutpunkts-API:er.
 keywords: partner, program, tredje part, anslutningar, sentinelone, lookout, bitdefender, corrata, morphisec, paloalto, ziften, bättre mobil
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 294d6cfa5f8bf6b883c37e527cb492e8d65fc94c
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 26c531c0544f92d664bfa0f1a21e4f33a0765d24
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163605"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893503"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Anslutna program i Microsoft Defender för Slutpunkt
 

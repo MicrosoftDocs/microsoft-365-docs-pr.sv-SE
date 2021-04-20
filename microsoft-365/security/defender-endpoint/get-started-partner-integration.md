@@ -1,7 +1,7 @@
 ---
 title: Bli en Microsoft Defender för Endpoint-partner
 ms.reviewer: ''
-description: Läs om stegen och kraven för att integrera din lösning med Microsoft Defender ATP och bli partner
+description: Läs om stegen och kraven för att integrera din lösning med Microsoft Defender för Endpoint och bli partner
 keywords: partner, integrering, lösningsvalidering, certifiering, krav, medlem, fela, programportal
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: ea7ebe1656c0173395df158b8f934ab388bea4ba
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 35ba1fe85fa9b62770142636d46303b37534b976
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51072218"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893323"
 ---
 # <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Bli en Microsoft Defender för Endpoint-partner
 
@@ -71,4 +71,4 @@ För att ditt företag ska visas som partner på sidan för produktpartner måst
 Samarbeten med Microsoft Defender för Endpoint hjälper våra gemensamma kunder att ytterligare effektivisera, integrera och skydda skydd. Vi är glada att du har valt att bli Microsoft Defender för Endpoint-partner och att nå vårt gemensamma mål att effektivt skydda kunder och deras tillgångar genom att förhindra och svara på moderna hot tillsammans.
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Tekniska partnermöjligheter](partner-integration.md)
+- [Möjligheter för tekniska partner](partner-integration.md)

@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Vanliga frågor och svar om Microsoft Bookings.
-ms.openlocfilehash: d357ae83d7fe6fdd9f3d0bff724b037e82a3f5d0
-ms.sourcegitcommit: 1df94f04f138ccf1a2356d26174335c44de7052b
+ms.openlocfilehash: 5338d710fa58ff9eba88b068f4fb412cecb83ae1
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "50999535"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892923"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Vanliga frågor och svar om Microsoft Bookings
 
@@ -118,7 +118,7 @@ Bookings är en idealisk lösning för både företags- och småföretagkunder i
 
 ### <a name="how-do-i-get-microsoft-bookings"></a>Hur får jag Microsoft Bookings?
 
-Bookings finns i Microsoft 365 för kunder med licenser för Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3 och E5 samt en app för iOS och Android. Bookings är inte tillgängligt som en fristående app. Outlook Web App eller Outlook på webben måste vara aktiverade för att du ska kunna använda Bookings, eftersom det lagrar data i Outlook.
+Bookings är tillgänglig för kunder med Office 365 A3, A5, E3 och E5, samt Microsoft 365 Business Standard, Microsoft 365 Business Premium, A3, A5, E3 och E5. Du kan använda Bookings med en iOS- och Android-kompletterande app. Bookings är inte tillgängligt som en fristående app. Outlook Web App eller Outlook på webben måste vara aktiverade för att du ska kunna använda Bookings, eftersom det lagrar data i Outlook.
 
 En Bookings-licens ger tillgång till alla funktioner i produkten, inklusive att skapa och hantera kalendrar. Det gör det också möjligt för användare att visa och redigera befintliga kalendrar när dessa användare läggs till som personal med en administratörs- eller visningsroll.
 

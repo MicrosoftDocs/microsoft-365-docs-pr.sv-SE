@@ -1,5 +1,5 @@
 ---
-title: Introducera Windows 10-enheter i Microsoft Defender ATP via grupprincip
+title: Introducera Windows 10-enheter i Microsoft Defender för Slutpunkt via Grupprincip
 description: Använd Grupprincip för att distribuera konfigurationspaketet på Windows 10-enheter så att de introduceras till tjänsten.
 keywords: konfigurera enheter med grupprincip, enhetshantering, konfigurera Windows ATP-enheter, hantera Microsoft Defender för slutpunktsenheter, grupprincip
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: fc4b17ef96e85d3bacd4e83c2de3f4bb7fbfa5c3
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b839cf204e8ab042e0c88a8f8c48df79770e7b4f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166179"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893643"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Introducera Windows 10-enheter med grupprincip 
 
@@ -42,7 +42,7 @@ ms.locfileid: "51166179"
 > 
 > För Windows Server 2019 kan du behöva ersätta NT AUTHORITY\Well-Known-System-Account med NT AUTHORITY\SYSTEM för den XML-fil som grupprincipinställning skapar.
 
-## <a name="onboard-devices-using-group-policy"></a>Onboard-enheter med grupprincip
+## <a name="onboard-devices-using-group-policy"></a>Registrera enheter med grupprinciper
 
 [![Bild av PDF-filen som visar de olika distributionssökvägarna](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
 
@@ -242,6 +242,6 @@ Med Grupprincip finns det inte något alternativ för att övervaka distribution
 - [Introducera Windows 10-enheter med Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Registrera Windows 10-enheter med hanteringsverktyg för mobila enheter](configure-endpoints-mdm.md)
 - [Registrera Windows 10-enheter med ett lokalt skript](configure-endpoints-script.md)
-- [Registrera icke beständiga enheter för virtual desktop infrastructure (VDI)](configure-endpoints-vdi.md)
+- [Registrera enheter för icke beständiga VDI-enheter (Virtual Desktop Infrastructure)](configure-endpoints-vdi.md)
 - [Köra ett identifieringstest på en nyligen onboarded Microsoft Defender för Slutpunkt-enheter](run-detection-test.md)
 - [Felsöka problem med Introduktion till Slutpunkt för Microsoft Defender](troubleshoot-onboarding.md)

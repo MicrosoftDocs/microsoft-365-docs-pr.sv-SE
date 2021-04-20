@@ -1,7 +1,7 @@
 ---
 title: Identifiering och svar av slutpunkter i blockläge
 description: Läs mer om identifiering av slutpunkter och svar i blockläge
-keywords: Microsoft Defender ATP, mde, EDR i blockläge, blockering i passivt läge
+keywords: Microsoft Defender för Endpoint, mde, EDR i blockläge, blockering i passivt läge
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: e492d57d8a7e10a1fff57980408ed8234bbeead0
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: a2fbb8f1b48dacb27468f8f088f5000da9fcb3b9
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587209"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893571"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Identifiering av slutpunkt och svar (EDR) i blockeringsläge
 
@@ -79,7 +79,7 @@ Följande bild visar en instans av oönskad programvara som har upptäckts och b
 |Operativsystem     |Någon av följande versioner: <br/>– Windows 10 (alla versioner) <br/>- Windows Server, version 1803 eller senare <br/>- Windows Server 2019         |
 |Registrering i Windows E5     |Windows E5 ingår i följande prenumerationer: <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 tillsammans med erbjudandet & Identity Protection <br/><br/>Se [Komponenter](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview?view=o365-worldwide&preserve-view=true#components) [och funktioner för varje abonnemang.](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)       |
 |Microsoft Defender Antivirus  |Microsoft Defender Antivirus måste installeras och köras i antingen aktivt läge eller passivt läge. (Du kan använda Microsoft Defender Antivirus tillsammans med en antiviruslösning som inte är en Microsoft-lösning.) [Kontrollera att Microsoft Defender Antivirus är i aktivt eller passivt läge](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode). |
-|Moln levererat skydd |Se till att Microsoft Defender Antivirus är konfigurerat så att [moln levererat skydd är aktiverat.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) |
+|Molnbaserat skydd |Se till att Microsoft Defender Antivirus är konfigurerat så att [moln levererat skydd är aktiverat.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) |
 |Microsoft Defender Antivirus-klienten mot skadlig programvara |Kontrollera att din klient är uppdaterad. Med PowerShell kör du [cmdleten Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) som administratör. I **raden AMProductVersion** bör du se **4.18.2001.10** eller högre. |
 |Microsoft Defender Antivirus-motor |Kontrollera att motorn är uppdaterad. Med PowerShell kör du [cmdleten Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) som administratör. På **raden AMEngineVersion** bör du se **1.1.16700.2** eller högre. |
 
@@ -140,5 +140,5 @@ Om du väljer att inaktivera EDR i blockläge kan det ta upp till 30 minuter fö
 
 - [Tech Community-blogg: Introduktion till EDR i blockläge: Stoppa attacker i deras spår](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
 - [Beteendeblockering och inneslutning](behavioral-blocking-containment.md)
-- [Bättre tillsammans: Microsoft Defender Antivirus och Microsoft Defender för Slutpunkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus)
+- [Bättre tillsammans: Microsoft Defender Antivirus och Microsoft Defender för Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus)
 

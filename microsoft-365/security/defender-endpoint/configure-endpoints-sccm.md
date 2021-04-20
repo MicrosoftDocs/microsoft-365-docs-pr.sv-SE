@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: b477f302855cb5d4b00e0502bcfa9aa3aeb6b5c2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 3550bec28945ab888efbe2ca46f12ca7f96aab4a
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165579"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892869"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Registrera Windows 10-enheter med konfigurationshanteraren
 
@@ -160,7 +160,7 @@ Följande konfigurationsinställningar rekommenderas:
 Innan du aktiverar nätverksskydd i gransknings- eller blockeringsläge bör du kontrollera att du har installerat uppdateringen för program mot skadlig kod som kan fås från [supportsidan.](https://support.microsoft.com/en-us/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing)
 
 
-**Reglerad mappåtkomst**<br>
+**Kontrollerad mappåtkomst**<br>
 Aktivera funktionen i granskningsläge i minst 30 dagar. Granska identifieringar och skapa en lista över program som får skriva i skyddade kataloger efter den här perioden.
 
 Mer information finns i Utvärdera [reglerad mappåtkomst.](evaluate-controlled-folder-access.md)
@@ -223,7 +223,7 @@ Om du använder System Center 2012 R2 Configuration Manager består övervakning
 
     ![Konfigurationshanteraren visar en lyckad distribution utan fel](images/sccm-deployment.png)
 
-### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-atp-service"></a>Kontrollera att enheterna är kompatibla med Microsoft Defender ATP-tjänsten
+### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>Kontrollera att enheterna är kompatibla med Microsoft Defender för slutpunktstjänsten
 
 Du kan ange en regel för efterlevnad för konfigurationsobjekt i System Center 2012 R2 Configuration Manager för att övervaka distributionen.
 
@@ -243,6 +243,6 @@ Mer information finns i Introduktion [till efterlevnadsinställningar i System C
 - [Introducera Windows 10-enheter med grupprincip](configure-endpoints-gp.md)
 - [Registrera Windows 10-enheter med hanteringsverktyg för mobila enheter](configure-endpoints-mdm.md)
 - [Registrera Windows 10-enheter med ett lokalt skript](configure-endpoints-script.md)
-- [Registrera icke beständiga enheter för virtual desktop infrastructure (VDI)](configure-endpoints-vdi.md)
-- [Köra ett identifieringstest på en nyligen onboarded Microsoft Defender ATP-enhet](run-detection-test.md)
+- [Registrera enheter för icke beständiga VDI-enheter (Virtual Desktop Infrastructure)](configure-endpoints-vdi.md)
+- [Köra ett identifieringstest på en nyligen onboarded Microsoft Defender för Endpoint-enhet](run-detection-test.md)
 - [Felsöka problem med Introduktion till Slutpunkt för Microsoft Defender](troubleshoot-onboarding.md)

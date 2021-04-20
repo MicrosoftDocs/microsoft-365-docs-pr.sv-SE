@@ -1,6 +1,6 @@
 ---
 title: Konfigurera enhetsproxy och internetanslutningsinställningar
-description: Konfigurera Microsoft Defender ATP-proxy- och Internetinställningar för att aktivera kommunikation med molntjänsten.
+description: Konfigurera Microsoft Defender för slutpunktsproxy och Internetinställningar för att aktivera kommunikation med molntjänsten.
 keywords: konfigurera, proxy, internet, internetanslutning, inställningar, proxyinställningar, netsh, winhttp, proxyserver
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 97d1d50e2557cbb760248738b1f096614873958f
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: ebfff7721bc61012811a66146079ac9758889594
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644710"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893607"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Konfigurera enhetsproxy och internetanslutningsinställningar
 
@@ -178,7 +178,7 @@ Slutpunkten *.blob.core.windows.net-URL kan ersättas med WEBBADRESSerna som vis
 > [!NOTE]
 > När det gäller registrering via Azure Säkerhetscenter (ASC) kan flera arbetsytor användas. Du måste utföra TestCloudConnection.exe ovan på en inbyggd dator från varje arbetsyta (för att avgöra om det finns några ändringar i URL blob.core.windows.net adresserna mellan arbetsytorna).
 
-## <a name="verify-client-connectivity-to-microsoft-defender-atp-service-urls"></a>Kontrollera klientanslutningen till URL-adresser för Microsoft Defender ATP-tjänsten
+## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>Verifiera klientanslutningen till URL-adresser för Microsoft Defender för slutpunktstjänsten
 
 Verifiera att proxykonfigurationen har slutförts, att WinHTTP kan identifiera och kommunicera via proxyservern i din miljö och att proxyservern tillåter trafik till URL:er för Defender för slutpunktstjänsten.
 

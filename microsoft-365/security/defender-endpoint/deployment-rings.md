@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2d34b984436b3ed0537af2eebcd8475ec270cd8e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 8123bdf610b30407e5d262296f9c3639bc21b12f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165795"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893491"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Distribuera Microsoft Defender för slutpunkt i ringar
 
@@ -75,7 +75,7 @@ Identifiera ett litet antal testdatorer i din miljö som kan komma igång med tj
 
 
 ### <a name="pilot"></a>Pilot
-Microsoft Defender ATP har stöd för flera olika slutpunkter som du kan introducera till tjänsten. I den här ringen identifierar du flera enheter som kan introduceras och utifrån de utgångsvillkor som du anger, bestämmer dig för att gå vidare till nästa distributionsring.
+Microsoft Defender för Endpoint har stöd för ett antal olika slutpunkter som du kan introducera till tjänsten. I den här ringen identifierar du flera enheter som kan introduceras och utifrån de utgångsvillkor som du anger, bestämmer dig för att gå vidare till nästa distributionsring.
 
 I följande tabell visas de slutpunkter som stöds och motsvarande verktyg som du kan använda för att registrera enheter i tjänsten. 
 
@@ -94,11 +94,11 @@ I följande tabell visas de slutpunkter som stöds och motsvarande verktyg som d
 I det här läget kan du använda planera [distributionsmaterial](deployment-strategy.md) för att planera distributionen. 
 
 
-Använd följande material för att välja lämplig Microsoft Defender ATP-arkitektur som bäst passar din organisation.
+Använd följande material för att välja lämplig Microsoft Defender för Slutpunktsarkitektur som bäst passar din organisation.
 
 |**Objekt**|**Beskrivning**|
 |:-----|:-----|
-|[![Miniatyrbild av distributionsstrategin för Microsoft Defender Avancerat skydd](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | Med hjälp av arkitekturmaterialet kan du planera din distribution för följande arkitekturer: <ul><li> Molnbaserad </li><li> Samhantering </li><li> Lokal</li><li>Utvärdering och lokal registrering</li>
+|[![Thumb-bild för Microsoft Defender för distributionsstrategi för slutpunkt](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | Med hjälp av arkitekturmaterialet kan du planera din distribution för följande arkitekturer: <ul><li> Molnbaserad </li><li> Samhantering </li><li> Lokal</li><li>Utvärdering och lokal registrering</li>
 
 
 

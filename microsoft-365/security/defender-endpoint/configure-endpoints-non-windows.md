@@ -1,6 +1,6 @@
 ---
 title: Introducera enheter som inte är Windows-enheter i Microsoft Defender för slutpunktstjänsten
-description: Konfigurera enheter som inte är Windows-enheter så att de kan skicka sensordata till Microsoft Defender ATP-tjänsten.
+description: Konfigurera enheter som inte är Windows-enheter så att de kan skicka sensordata till Microsoft Defender för slutpunktstjänsten.
 keywords: onboard non-Windows devices, macos, linux, device management, configure Windows ATP devices, configure Microsoft Defender for Endpoint devices
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71f230f557792d75659dc4dbfc5911811514d5ea
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: c78779cd4a8a329864b6ac7e0debfc30ca0b3a56
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687883"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893595"
 ---
 # <a name="onboard-non-windows-devices"></a>Registrera icke-Windows-enheter
 
@@ -48,7 +48,7 @@ Du måste känna till exakt vilka Linux-distributioner och macOS-versioner som �
 Du måste vidta följande steg för att registrera enheter som inte är Windows:
 1. Välj önskad onboardingmetod:
 
-   - För macOS-enheter kan du välja att registrera dig via Microsoft Defender ATP eller via en tredjepartslösning. Mer information finns i [Microsoft Defender för Slutpunkt för Mac.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
+   - För macOS-enheter kan du välja att registrera dig via Microsoft Defender för Endpoint eller via en tredjepartslösning. Mer information finns i [Microsoft Defender för Slutpunkt för Mac.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
 
    - För andra enheter som inte är **Windows-enheter väljer du Registrera icke-Windows-enheter via tredjepartsintegrering.**   
     1. Välj Partner med **interoperabilitet i**  >  **navigeringsfönstret.** Kontrollera att tredjepartslösningen visas.
@@ -64,7 +64,7 @@ Du måste vidta följande steg för att registrera enheter som inte är Windows:
 1. Följ dokumentationen från tredje part för att koppla bort tredjepartslösningen från Microsoft Defender för Endpoint.
 
 2. Ta bort behörigheter för tredjepartslösningen i Azure AD-klientorganisationen.
-   1. Logga in på [Azure Portal.](https://portal.azure.com)
+   1. Logga in på [Azure-portalen](https://portal.azure.com).
    2. Välj **Azure Active Directory > Enterprise Applications.**
    3. Välj det program du vill ta bort.
    4. Välj knappen **Ta** bort.
