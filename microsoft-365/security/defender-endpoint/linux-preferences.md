@@ -1,7 +1,7 @@
 ---
-title: Ange inställningar för Microsoft Defender ATP för Linux
+title: Ange inställningar för Microsoft Defender för Slutpunkt i Linux
 ms.reviewer: ''
-description: Här beskrivs hur du konfigurerar Microsoft Defender ATP för Linux på företag.
+description: Här beskrivs hur du konfigurerar Microsoft Defender för Slutpunkt på Linux på företag.
 keywords: microsoft, defender, atp, linux, installation, distribuera, avinstallation, enkel, ansible, linux, redhat, ubuntu, ubuntu, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6ca6b3dd41b867145bfc4af331fb742be469d2a9
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 2c162d652656afb61f1d74bad9ec963825d25a14
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688399"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903876"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Ange inställningar för Microsoft Defender för Slutpunkt i Linux
 

@@ -1,6 +1,6 @@
 ---
-title: Felsöka problem med saknade händelser eller aviseringar för Microsoft Defender ATP för Linux
-description: Felsöka problem med saknade händelser eller aviseringar i Microsoft Defender ATP för Linux.
+title: Felsöka händelser eller aviseringar som saknas för Microsoft Defender för Slutpunkt i Linux
+description: Felsöka problem med saknade händelser eller aviseringar i Microsoft Defender för Slutpunkt i Linux.
 keywords: microsoft, defender, atp, linux, events
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5981cb75b4c835390e27d902b5950e3c68305200
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 40d394a4fc7349789dea9bd96ccdaf71067ab39e
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687460"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904004"
 ---
 # <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Felsöka händelser eller aviseringar som saknas för Microsoft Defender för Slutpunkt i Linux
 
@@ -31,7 +31,7 @@ ms.locfileid: "51687460"
 
 **Gäller för:**
 
-- [Microsoft Defender för Endpoint i Linux](microsoft-defender-endpoint-linux.md)
+- [Microsoft Defender för Endpoint för Linux](microsoft-defender-endpoint-linux.md)
 
 Den här artikeln innehåller några allmänna steg för att minimera saknade händelser eller varningar i [säkerhetscenterportalen.](https://securitycenter.windows.com/)
 

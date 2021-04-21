@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 406a0e699ea563670f41355d122aa54ba8667a0e
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 705b1fffbc38282441f66e0dc411cf09699cb3f9
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687751"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903772"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender för slutpunkt på Mac
 
@@ -86,6 +86,8 @@ De tre senaste större versionerna av macOS stöds.
 - Diskutrymme: 1 GB
 
 Betaversioner av macOS stöds inte.
+
+MacOS-enheter med M1-processorer stöds inte.
 
 När du har aktiverat tjänsten kan du behöva konfigurera nätverket eller brandväggen för att tillåta utgående anslutningar mellan den och dina slutpunkter.
 

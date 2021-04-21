@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a7d13da6abfb2cd6c829b6fd04fdf94de8cd20b8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 06028f64a3340aeeef52269bc8a1e739d18e6db7
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186875"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903124"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>Hämta Microsoft Defender för slutpunktsidentifiering med HJÄLP av SIEM REST API
 
@@ -125,7 +125,7 @@ sinceTimeUtc | DateTime | Definierar att aviseringar med lägre tidsbunden tid h
 untilTimeUtc | DateTime | Definierar den övre tidsbundna aviseringarna hämtas. <br> Tidsperioden blir då och `sinceTimeUtc` `untilTimeUtc` då. <br><br> **Obs!** När det inte anges används den aktuella tiden som standardvärde.
 sedan | sträng | Hämtar aviseringar i följande tidsperiod: från `(current_time - ago)` tid till `current_time` tid. <br><br> Värdet ska anges i enlighet med **iso 8601-varaktighetsformatet** <br> Exempel: `ago=PT10M` hämtar aviseringar som tagits emot de senaste 10 minuterna.
 gräns | int | Definierar antalet aviseringar som ska hämtas. De senaste aviseringarna hämtas baserat på det definierade antalet.<br><br> **Obs!** När det inte anges hämtas alla aviseringar som finns tillgängliga inom tidsperioden.
-maskingrupper | sträng | Anger vilka enhetsgrupper som aviseringar ska hämta aviseringar från. <br><br> **Obs!** När det inte anges hämtas aviseringar från alla enhetsgrupper. <br><br> Exempel: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/Alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
+maskingrupper | sträng | Anger vilka enhetsgrupper som aviseringar ska hämta aviseringar från. <br><br> **Obs!** När det inte anges hämtas aviseringar från alla enhetsgrupper. <br><br> Exempel: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
 DeviceCreatedMachineTags | sträng | En enstaka enhetstagg från registret.
 CloudCreatedMachineTags | sträng | Enhetstaggar som har skapats i Microsoft Defender Säkerhetscenter.
 

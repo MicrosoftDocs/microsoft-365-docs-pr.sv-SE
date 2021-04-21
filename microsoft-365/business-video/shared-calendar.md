@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du skapar en delad kalender.
-ms.openlocfilehash: 8877cce7234890dca5cd83a74c69b93d3b1dcd04
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 684122bcbccd7e8a419cc98eb0d0028c6218141a
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580396"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903700"
 ---
 # <a name="create-a-shared-calendar"></a>Skapa en delad kalender
 
@@ -40,3 +40,7 @@ Med en delad kalender kan du snabbt se när personer är tillgängliga för möt
 1. Lägg till användare i den delade kalendern genom att ange deras namn eller välja deras namn i listan och välj sedan **OK.**
 1. Nu kan du visa din kalender och kalendrar för de personer som du lagt till.
 1. Om du vill kontrollera gruppens tillgänglighet väljer du **dagsvyn.**
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Hantera kalender och kontakter i Outlook](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d) (artikel) E-postsamarbete (artikel) Översikt över administrationscentret för Microsoft [365](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) (artikel) [](https://docs.microsoft.com/microsoft-365/admin/email/email-collaboration)

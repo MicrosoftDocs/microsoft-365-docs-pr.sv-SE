@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du stoppar automatisk vidarebefordran av e-postmeddelanden.
-ms.openlocfilehash: b6715cfdf8622521d977e0746cb9a340a8f70a5c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: f8bd599c7c8bca8d4789188acbcd3574b7473dcb
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578609"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903688"
 ---
 # <a name="stop-email-auto-forward"></a>Stoppa vidarebefordran av e-post automatiskt
 
@@ -47,3 +47,7 @@ Om en hackare får åtkomst till en användares postlåda kan de automatiskt vid
 1. Rulla längst ned och välj **Spara**.
 
     Din regel har skapats och hackare kommer inte längre att kunna vidarebefordra meddelanden automatiskt.
+
+## <a name="related-content"></a>Relaterat innehåll
+
+Lägga till ytterligare [ett e-postalias](https://docs.microsoft.com/microsoft-365/admin/email/add-another-email-alias-for-a-user) för en användare (artikel) Konfigurera vidarebefordran av e-post i [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding) (artikel) Hitta och korrigera problem med e-postleverans som administratör för [Office 365](https://docs.microsoft.com/exchange/troubleshoot/email-delivery/email-delivery-issues) för företag (artikel)

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 482f86d4a0a181b72a0a33eeb1a857dce0664584
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: e68a8c35fb1028fa8e60cf52a8e8bb411a534b19
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893655"
+ms.locfileid: "51903784"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Konfigurera villkorsstyrd åtkomst i Microsoft Defender för Slutpunkt
 
@@ -98,7 +98,7 @@ Gör följande för att aktivera villkorsstyrd åtkomst:
 
 ### <a name="step-4-assign-the-policy"></a>Steg 4: Tilldela principen
 1. I [Azure-portalen](https://portal.azure.com)väljer du **Alla tjänster**, filtrera på **Intune** och sedan **Microsoft Intune.**
-2. Välj **Policyer**  >  **för enhetsefterlevnad**> välj din Microsoft Defender ATP-efterlevnadsprincip.
+2. Välj **Principer för**  >  **enhetsefterlevnad**> välj Microsoft Defender för Endpoints efterlevnadsprincip.
 3. Välj **Uppgifter**.
 4. Inkludera eller exkludera dina Azure AD-grupper för att tilldela dem principen.
 5. Välj Spara om du vill distribuera principen till **grupperna.** Användarenheterna som principen riktar sig till utvärderas för efterlevnad.
@@ -114,6 +114,6 @@ Gör följande för att aktivera villkorsstyrd åtkomst:
 
 6. Välj **Aktivera princip** och sedan Skapa **för** att spara ändringarna.
 
-Mer information finns i Aktivera [Microsoft Defender ATP med villkorsstyrd åtkomst i Intune.](https://docs.microsoft.com/intune/advanced-threat-protection)
+Mer information finns i Tillämpa [efterlevnad för Microsoft Defender för Slutpunkt med villkorsstyrd åtkomst i Intune.](https://docs.microsoft.com/intune/advanced-threat-protection)
 
 >Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)

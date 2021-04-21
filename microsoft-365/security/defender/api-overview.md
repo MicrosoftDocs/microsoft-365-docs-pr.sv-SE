@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 14553f3891fd81a672b62fa0575f6c253fbb0224
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 496ad5695d9cd491817bad5daf3c76a02addefd1
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068977"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904194"
 ---
 # <a name="overview-of--microsoft-365-defender-apis"></a>Översikt över Microsoft 365 Defender-API:er
 
@@ -47,6 +47,11 @@ Använd Microsoft 365 Defender-API:er för att automatisera arbetsflöden basera
 - **[Skydd](api-advanced-hunting.md)** mot hot för flera produkter – Använd säkerhetsteamets organisationskunskaper till att leta efter komprometterade tecken på kompromisser genom att skapa egna anpassade frågor för att gå igenom rådata som samlas in över flera skyddsprodukter.
 
 Tillsammans med dessa Microsoft 365 Defender-specifika API:er visar var och en av våra andra säkerhetsprodukter ytterligare [API:er](api-articles.md) så att du kan använda deras unika funktioner.
+
+
+> [!NOTE]
+> Övergången till den enhetliga portalen bör inte påverka PowerBi-instrumentpanelerna baserade på Microsoft Defender för slutpunkts-API:er. Du kan fortsätta att arbeta med befintliga API:er oavsett den interaktiva portalövergången.
+
 
 ## <a name="learn-more"></a>Mer information
 

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d89e5dc29bfe7f980d40a9a5b139884750a966bc
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 2e1553b231692d184146897ddc05e11930ed1bf0
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760020"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903980"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>Översikt över det enhetliga säkerhetscentret för Microsoft 365
 
@@ -149,6 +149,9 @@ När du har klickat till innehållet kan det vara bra att bokmärka den här web
 > Det finns användbara **filter** högst upp på utbildningshubben för Microsoft 365 Säkerhetscenter som gör att du kan välja mellan produkter (för närvarande Microsoft 365 Defender, Microsoft Defender för slutpunkt och Microsoft Defender för Office 365). Observera att antalet utbildningsresurser för varje avsnitt visas, vilket kan hjälpa eleverna att hålla reda på hur många resurser de har till hands för utbildning och inlärning.
 >
 > Tillsammans med produktfiltret visas aktuella ämnen, typer av resurser (från videoklipp till webbsportaler), kunskapsnivåer eller erfarenhet inom säkerhetsområden, säkerhetsroller och produktfunktioner.
+
+> [!TIP]
+> Det finns massor av andra utbildningsmöjligheter i [Microsoft Learn.](https://docs.microsoft.com/e/learn/) Du kommer att hitta certifieringsutbildning, till exempel [Course MS-500T02-A: Implementera Microsoft 365 Threat Protection.](https://docs.microsoft.com/learn/certifications/courses/ms-500t02)
 
 ## <a name="send-us-your-feedback"></a>Skicka oss dina synpunkter
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du ansluter till ett team som gäst i Microsoft Teams.
-ms.openlocfilehash: 9e60882907021c11d906ce9cd778a0f1eef32beb
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 0260365e8a064dd96cda75c9becf9f82bc6871a3
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578861"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903724"
 ---
 # <a name="join-a-team-as-a-guest"></a>Ansluta till ett team som gäst
 
@@ -48,3 +48,7 @@ Om du får en Microsoft Teams-inbjudan om att gå med i ett team finns det någr
 
 1. Öppna bara Microsoft Teams-appen och välj  **Ja för**  att växla till det team som du är inbjuden till.  Nu kan du samarbeta i projektet i Teams.
 2. Om du vill växla tillbaka till företagets team väljer du det  **i listrutan**  Organisation.
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Gästupplevelse i Teams](https://docs.microsoft.com/microsoftteams/guest-experience) (artikel) Hantera [Microsoft Teams-inställningar](https://docs.microsoft.com/microsoftteams/enable-features-office-365) för din organisation (artikel) Använda gäståtkomst och extern åtkomst för att samarbeta med [personer utanför](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations) organisationen (artikel)

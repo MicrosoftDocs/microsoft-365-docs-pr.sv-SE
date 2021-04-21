@@ -1,6 +1,6 @@
 ---
-title: Konfigurera och validera undantag för Microsoft Defender ATP för Linux
-description: Tillhandahålla och validera undantag för Microsoft Defender ATP för Linux. Undantag kan anges för filer, mappar och processer.
+title: Konfigurera och validera undantag för Microsoft Defender för Slutpunkt i Linux
+description: Tillhandahålla och validera undantag för Microsoft Defender för Endpoint på Linux. Undantag kan anges för filer, mappar och processer.
 keywords: microsoft, defender, atp, linux, undantag, skanningar, antivirus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fbc8fe7ef6f9af86debdeb0826865c88e86b2c6a
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 56fe152532b77f7f04c9edd52998fea83493adfe
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688195"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903946"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>Konfigurera och validera undantag för Microsoft Defender för Slutpunkt i Linux
 

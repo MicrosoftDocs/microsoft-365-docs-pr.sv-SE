@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c5e6edb40254ab905ef5ef3ddef9bf8bf54fc54b
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 9c77cb19731e55976058ce2f628baf4026639949
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698274"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903796"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurera avancerade funktioner i Defender för Slutpunkt
 
@@ -71,8 +71,7 @@ Aktivera den här funktionen så att potentiellt oönskade program (PUA) åtgär
 
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>Begränsa korrelationen till inom begränsade enhetsgrupper
-När den här inställningen är aktiverad korreleras aviseringar till separata incidenter utifrån deras begränsade enhetsgrupp. Som standard sker korrelationen mellan incidenter i hela klientorganisationen.
-
+Den här konfigurationen kan användas för scenarier där lokala SOC-åtgärder vill begränsa korrelationer endast till enhetsgrupper som de kan komma åt. Genom att aktivera den här inställningen kommer en incident som består av aviseringar som inte längre kan ses som en enda incident i en grupp av enheter. Den lokala soc-datagruppen kan sedan vidta åtgärder för incidenten eftersom de har åtkomst till en av de berörda enhetsgrupper. Globala SOC ser emellertid flera olika incidenter efter enhetsgrupp istället för ett incident. Vi rekommenderar inte att du slår på den här inställningen om det inte gäller fördelarna med incidentrelationer i hela organisationen
 >[!NOTE]
 >Om du ändrar den här inställningen påverkas bara framtida korrelationer.
 

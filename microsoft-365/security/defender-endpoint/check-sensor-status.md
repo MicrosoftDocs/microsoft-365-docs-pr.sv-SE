@@ -1,5 +1,5 @@
 ---
-title: Kontrollera sensorns hälsotillstånd i Microsoft Defender ATP
+title: Kontrollera sensorns hälsotillstånd i Microsoft Defender för Slutpunkt
 description: Kontrollera sensorhälsan på enheter för att identifiera vilka som är felkonfigurerade, inaktiva eller inte rapporterar sensordata.
 keywords: sensor, sensorhälsa, felkonfigurerad, inaktiv, inga sensordata, sensordata, nedsatt kommunikation, kommunikation
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 21313463519383f4bf052465a0d907d2df293ec8
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 0361b7956339670d006c9f050274e07d4e979bca
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165279"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904170"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>Kontrollera sensorhälsan i Microsoft Defender för Endpoint
 
@@ -60,5 +60,5 @@ Du kan också ladda ned hela listan i CSV-format med **hjälp av funktionen** Ex
 
 Du kan visa enhetsinformationen när du klickar på en felkonfigurerad eller inaktiv enhet.
 
-## <a name="related-topic"></a>Relaterade ämnen
+## <a name="related-topic"></a>Relaterat ämne
 - [Åtgärda defekta sensorer i Defender för Endpoint](fix-unhealthy-sensors.md)

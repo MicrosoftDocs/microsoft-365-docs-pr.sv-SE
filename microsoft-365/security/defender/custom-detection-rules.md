@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 220e4e6546899dd00f3a02bf83039a928be4f8dc
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: bfc8724f8dc27aa2475c293e7370488b2ea392b8
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498850"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903760"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Skapa och hantera anpassade identifieringsregler
 
@@ -178,6 +178,9 @@ Du behåller kontrollen över hur omfattande eller specifika dina anpassade iden
 
 ## <a name="manage-existing-custom-detection-rules"></a>Hantera befintliga anpassade identifieringsregler
 Du kan visa listan över befintliga anpassade identifieringsregler, kontrollera deras tidigare körningar och granska de aviseringar som de har utlöst. Du kan även köra en regel på begäran och ändra den.
+
+>[!TIP]
+> Aviseringar som upphöjs med anpassade identifieringar är tillgängliga via API:er för aviseringar och incidenter. Mer information finns i Microsoft [365 Defender-API:er som stöds.](api-supported.md)
 
 ### <a name="view-existing-rules"></a>Visa befintliga regler
 

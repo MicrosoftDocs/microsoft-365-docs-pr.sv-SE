@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du ändrar en användares namn eller e-postadress.
-ms.openlocfilehash: 6c08110e8725645f2e1d0deffcadd9f34354e1f9
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 0f2a378cccf2def9cd951483b23a11c2a414607d
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580684"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903736"
 ---
 # <a name="change-a-users-name-or-email-address"></a>Ändra en användares namn eller e-postadress
 
@@ -60,3 +60,7 @@ Ibland kan du behöva ändra en användares namn eller e-postadress. Det kan du 
 1. Ange det nya användarnamnet, verifiera domänen och välj **Spara ändringar**.
 
     På grund av den här ändringen måste användaren logga in på Microsoft 365 med det nya användarnamnet och lägga till det nya e-postkontot i Outlook.
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Ge postlådebehörigheter till en annan användare](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user) (artikel) Konvertera en [användarpostlåda](https://docs.microsoft.com/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox) till en delad postlåda (artikel) Inställningar för [användarens e-post](https://docs.microsoft.com/microsoft-365/admin/email/office-365-user-email-settings) (artikel)

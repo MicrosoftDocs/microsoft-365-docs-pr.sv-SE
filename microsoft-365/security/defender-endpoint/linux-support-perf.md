@@ -1,6 +1,6 @@
 ---
-title: Felsöka prestandaproblem för Microsoft Defender för Endpoint för Linux
-description: Felsöka prestandaproblem i Microsoft Defender Endpoint för Linux.
+title: Felsöka prestandaproblem för Microsoft Defender för Endpoint i Linux
+description: Felsöka prestandaproblem i Microsoft Defender Endpoint på Linux.
 keywords: microsoft, defender, atp, linux, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb43fd383606ab26ba2688ad5704bb7653e82a7f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5aaa95ef8202f3d0957113d8f20a39e4d3840227
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860345"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903992"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Felsöka prestandaproblem för Microsoft Defender för Endpoint i Linux
 
@@ -145,6 +145,6 @@ Följande steg kan användas för att felsöka och minimera dessa problem:
     >[!NOTE]
     > Programmet lagrar statistik i minnet och håller bara reda på filaktiviteten sedan den startades och realtidsskyddet aktiverades. Processer som startats tidigare eller under perioder där realtidsskydd var inaktiverat räknas inte. Dessutom räknas bara händelser som utlöste genomsökningar.
 
-5. Konfigurera Microsoft Defender ATP för Linux med undantag för de processer eller diskutrymmen som bidrar till prestandaproblemen och återaktivera realtidsskydd.
+5. Konfigurera Microsoft Defender Endpoint på Linux med undantag för de processer eller diskutrymmen som bidrar till prestandaproblemen och återaktivera realtidsskydd.
 
-    Mer information finns i [Konfigurera och validera undantag för Microsoft Defender ATP för Linux.](linux-exclusions.md)
+    Mer information finns i [Konfigurera och validera undantag för Microsoft Defender för Endpoint för Linux.](linux-exclusions.md)

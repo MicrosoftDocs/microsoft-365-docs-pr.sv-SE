@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Delade postlådor används när flera personer behöver åtkomst till samma postlåda. Lär dig vad du behöver veta innan du skapar en delad postlåda.
-ms.openlocfilehash: eb1947b5baffd97f067bfe4e0c6d71d5c1329d65
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 83e779d59a8e763b3d0c0482966e75604d5f1574
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915992"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903220"
 ---
 # <a name="about-shared-mailboxes"></a>Om delade postlådor
 
@@ -63,7 +63,7 @@ Innan du [skapar en delad postlåda](create-a-shared-mailbox.md)finns det några
 > [!NOTE]
 > För att komma åt en delad postlåda måste en användare ha en Exchange Online-licens, men den delade postlådan kräver ingen separat licens. Alla delade postlådor har ett motsvarande användarkonto. Lade du märke till att du inte behövde ange något lösenord när du skapade den delade postlådan? Kontot har ett lösenord, men det genereras av systemet (okänt). Du bör inte använda kontot för att logga in på den delade postlådan. Utan licens är delade postlådor begränsade till 50 GB. För att storleksgränsen ska höjas till 100 GB måste den delade postlådan tilldelas en licens för Exchange Online abonnemang 2 eller en licens för Exchange Online abonnemang 1 med en tilläggslicens för Exchange Online arkivering. Det här gör det också möjligt att aktivera automatiskt expanderande arkivering för en obegränsad mängd arkivlagringskapacitet. Om du vill placera en delad postlåda i bevarande av juridiska skäl måste den delade postlådan ha en licens för Exchange Online abonnemang 2 eller en Exchange Online-abonnemang 1-licens med en tilläggslicens för Exchange Online arkivering. Om du vill använda avancerade funktioner, till exempel Microsoft Defender för Office 365, Advanced eDiscovery eller automatiska bevarandeprinciper, måste den delade postlådan vara licensierad för de funktionerna.
 
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-content"></a>Relaterat innehåll
 
 [Skapa en delad postlåda](create-a-shared-mailbox.md)
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Läs om hur du låter användare återställa sina egna lösenord i Microsoft 365 Business Premium.
-ms.openlocfilehash: 3ba46529dcbb8d5af7343aafbb9e5a5863b9139f
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 62f82f106327c5378310bac0d41fde8462449329
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580432"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903712"
 ---
 # <a name="set-up-self-service-password-reset"></a>Installera lösenordsåterställning via självbetjäning
 
@@ -42,3 +42,7 @@ Om du vill att användarna ska kunna återställa sina egna lösenord utan att b
 1. Markera **Alla** för att aktivera självbetjäning för återställning av lösenord och välj sedan **Spara**.
 
 Nästa gång en användare loggar in på sitt konto ombeds de ange sitt användar-ID och lösenord. De väljer **Nästa** och sedan om de ska autentisera med sin telefon, e-post eller båda. De anger den kod de får, väljer **Verifiera** och väljer sedan **Slutför**. När de är klara kan de återställa sina egna lösenord.
+
+## <a name="related-content"></a>Relaterat innehåll 
+
+[Ange förfalloprincip för](https://docs.microsoft.com/microsoft-365/admin/manage/set-password-expiration-policy) lösenord för din organisation (artikel) [](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire) Ange att en enskild användares lösenord aldrig ska upphöra (artikel) Inaktivera starka lösenordskrav för [användare](https://docs.microsoft.com/microsoft-365/admin/add-users/strong-password) (artikel)

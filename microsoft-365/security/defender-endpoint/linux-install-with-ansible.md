@@ -1,7 +1,7 @@
 ---
-title: Distribuera Microsoft Defender ATP för Linux med Ansible
+title: Distribuera Microsoft Defender för Slutpunkt på Linux med Ansible
 ms.reviewer: ''
-description: Här beskrivs hur du distribuerar Microsoft Defender ATP för Linux med Ansible.
+description: Här beskrivs hur du distribuerar Microsoft Defender för Slutpunkt på Linux med Ansible.
 keywords: microsoft, defender, atp, linux, installation, distribuera, avinstallation, enkel, ansible, linux, redhat, ubuntu, ubuntu, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 48c34f2a8fb65cb0fc8ecbb616b9d041f61ae044
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 697fcddad595c6883fe1e1f7258ca6154c48b94d
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688135"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903910"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Distribuera Microsoft Defender för Slutpunkt på Linux med Ansible
 

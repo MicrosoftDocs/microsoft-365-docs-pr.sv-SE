@@ -1,5 +1,5 @@
 ---
-title: Informationsskydd i Windows – översikt
+title: Översikt över informationsskydd i Windows
 ms.reviewer: ''
 description: Läs om hur informationsskydd fungerar i Windows för att identifiera och skydda känslig information
 keywords: information, skydd, dlp, data, förlust, skydd, skydda
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 733f86ed48b9cc7a68fb0cd346c7b15fdcc3ce65
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 803c0af0c495eedfd26023d4e71d98df6a1b1b64
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187511"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904028"
 ---
-# <a name="information-protection-in-windows-overview"></a>Informationsskydd i Windows – översikt
+# <a name="information-protection-in-windows-overview"></a>Översikt över informationsskydd i Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,7 +41,7 @@ Informationsskydd är en integrerad del av Microsoft 365 Enterprise Suite, vilke
 
 
 >[!TIP]
-> Läs vårt blogginlägg om hur Microsoft Defender ATP integreras med Microsoft Information Protection för att upptäcka, skydda och [övervaka känsliga data på Windows-enheter.](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)
+> Läs vårt blogginlägg om hur Microsoft Defender för Slutpunkt (tidigare kallat Microsoft Defender ATP) integreras med Microsoft Information Protection för att upptäcka, skydda och övervaka [känsliga data på Windows-enheter.](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)
 
 Defender för Endpoint tillämpar följande metoder för att identifiera, klassificera och skydda data:
 

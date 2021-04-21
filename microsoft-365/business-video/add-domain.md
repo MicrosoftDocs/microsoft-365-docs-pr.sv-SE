@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du lägger till en annan domän i din prenumeration.
-ms.openlocfilehash: 8899cb9667ffa080746ca9173b61897f9c5db399
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: a641005913f7dfd866366f0f8065019dd5c17fe8
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579007"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903748"
 ---
 # <a name="add-another-domain"></a>Lägga till en annan domän
 
@@ -53,3 +53,7 @@ Om du vill ta emot e-post på din nya domän måste du lägga till ett nytt e-po
 1. Ange användarnamnet och välj sedan den nya domänen i listrutan.
 1. Välj **Spara** ändringar och stäng sedan fönstret.
 1. Upprepa de här stegen för alla användare som ska få e-post på den nya domänen.
+
+## <a name="related-content"></a>Relaterat innehåll
+
+Lägga till en domän i [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) (artikel) Lägga till [DNS-poster](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) för att ansluta din domän (artikel) Ändra namnservrar för att konfigurera [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar) med valfri domänregistrator (artikel) [Vanliga](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) frågor och svar om domäner (artikel)

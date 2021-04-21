@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 01b3310f5f822f3f6f38bf4d9e727d41fe2b179b
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 290c06d95c6569b5a446a7a7410d34ff3b57055d
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760116"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904076"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Ämnescenteröversikt i Microsoft Viva-ämnen
 
@@ -73,9 +73,9 @@ När en användare bekräftar sin anslutning till ett ämne kan användaren gör
 För att kunna arbeta **i avsnittet** Hantera ämnen i ämnescentret måste du ha den behörighet för Hantera ämne som krävs för knowledge manager-rollen. Administratören kan tilldela de här [](set-up-topic-experiences.md)behörigheterna till användare under [kunskapshanteringskonfigurationen,](topic-experiences-knowledge-rules.md) eller så kan nya användare läggas till efteråt av en administratör via administrationscentret för Microsoft 365.
 
 På sidan Hantera ämnen visar instrumentpanelen ämne alla ämnen som du har åtkomst till och som identifierats från dina angivna källplatser. Varje ämne kommer att visa det datum då ämnet upptäcktes. En användare som har tilldelats behörigheten Hantera ämnen kan granska de ofirmerade ämnena och välja att:
-- Bekräfta ämnet: Markerar avsnittet för användare som har åtkomst till filer och sidor relaterade till avsnittet, och gör att de kan se det associerade ämneskortet och ämnessidan.
+- Bekräfta ämnet: Anger för användare att ett AI-föreslaget ämne har validerats av en mänsklig man. 
 - Publicera ämnet: Redigera ämnesinformationen för att förbättra kvaliteten på det ämne som ursprungligen identifierades och markerar avsnittet för alla användare som har åtkomst till ämnen. 
-- Avvisa ämnet: Gör avsnittet inte tillgängligt för användarna. Avsnittet flyttas till fliken **Avvisat och** kan bekräftas senare om det behövs. 
+- Avvisa ämnet: Gör att ämnet inte kan upptäckts för slutanvändare. Avsnittet flyttas till fliken **Avvisat och** kan bekräftas senare om det behövs. 
 
 > [!Note] 
 > Mer [information om ämnenhantering](manage-topics.md) finns i Hantera ämnen på sidan Hantera ämnen.

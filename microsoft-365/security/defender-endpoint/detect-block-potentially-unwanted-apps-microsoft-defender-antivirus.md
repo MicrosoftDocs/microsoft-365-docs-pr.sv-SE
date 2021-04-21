@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 8350db473580fd4d1728c3473742da5b63196c52
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 808eff2074dfe1573708264590b401f3d38db982
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893583"
+ms.locfileid: "51904016"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Identifiera och blockera potentiellt oönskade program
 
@@ -61,7 +61,7 @@ Nya [Microsoft Edge,](https://support.microsoft.com/microsoft-edge/get-to-know-m
 > [!TIP]
 > Om du kör Microsoft Edge (Chromium-baserad) kan du tryggt utforska funktionen för URL-blockering av PUA-skydd genom att testa den på en av våra [Microsoft Defender SmartScreen-demosidor.](https://demo.smartscreen.msft.net/)
 
-### <a name="blocking-urls-with-microsoft-defender-smartscreen"></a>Blockera URL-adresser med Microsoft Defender SmartScreen
+### <a name="block-urls-with-microsoft-defender-smartscreen"></a>Blockera URL-adresser med Microsoft Defender SmartScreen
 
 I Chromium-baserad Edge med PUA-skydd aktiverat skyddar Microsoft Defender SmartScreen dig från PUA-associerade URL:er.
 
@@ -69,9 +69,9 @@ Säkerhetsadministratörer kan [konfigurera hur](/DeployEdge/configure-microsoft
 
 Även om Microsoft Defender för Endpoint har en egen blockeringslista baserat på en datauppsättning som hanteras av Microsoft kan du anpassa den här listan baserat på din egen information om hot. Om du [skapar och hanterar indikatorer](manage-indicators.md) i Microsoft Defender för slutpunktsportalen respekterar Microsoft Defender SmartScreen de nya inställningarna.
 
-## <a name="microsoft-defender-antivirus"></a>Microsoft Defender Antivirus
+## <a name="microsoft-defender-antivirus-and-pua-protection"></a>Microsoft Defender Antivirus- och PUA-skydd
 
-Skyddsfunktionen för potentiellt oönskade program (PUA) i Microsoft Defender Antivirus kan identifiera och blockera PUA-program på slutpunkter i nätverket.
+Skyddsfunktionen för potentiellt oönskade program (PUA) i Microsoft Defender Antivirus kan identifiera och blockera PUA på slutpunkter i nätverket.
 
 > [!NOTE]
 > Den här funktionen är tillgänglig i Windows 10, Windows Server 2019 och Windows Server 2016.
@@ -80,7 +80,7 @@ Microsoft Defender Antivirus blockerar identifierade PUA-filer och alla försök
 
 Meddelandet visas i den vanliga [karantänlistan i Windows-säkerhetsappen.](microsoft-defender-security-center-antivirus.md)
 
-### <a name="configure-pua-protection-in-microsoft-defender-antivirus"></a>Konfigurera PUA-skydd i Microsoft Defender Antivirus
+## <a name="configure-pua-protection-in-microsoft-defender-antivirus"></a>Konfigurera PUA-skydd i Microsoft Defender Antivirus
 
 Du kan aktivera PUA-skydd [med Microsoft Intune-,](/mem/intune/protect/device-protect)Microsoft Endpoint Configuration [Manager-, Grupprincip-](/azure/active-directory-domain-services/manage-group-policy)eller via [PowerShell-cmdlets.](/powershell/module/defender/?preserve-view=true&view=win10-ps) [](/mem/configmgr/protect/deploy-use/endpoint-protection)
 
@@ -91,11 +91,11 @@ Du kan också använda PUA-skydd i granskningsläge för att identifiera potenti
 
 PUA-skydd i granskningsläge är användbart om ditt företag genomför en intern säkerhetskontroll av programvarans efterlevnad och du vill undvika falska positiva resultat.
 
-#### <a name="use-intune-to-configure-pua-protection"></a>Använda Intune för att konfigurera PUA-skydd
+### <a name="use-intune-to-configure-pua-protection"></a>Använda Intune för att konfigurera PUA-skydd
 
 Mer information finns i Konfigurera inställningar för enhetsbegränsningar i [Microsoft Intune](/intune/device-restrictions-configure) och Microsoft Defender Antivirus för [Windows 10 i Intune.](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
-#### <a name="use-configuration-manager-to-configure-pua-protection"></a>Konfigurera PUA-skydd med Konfigurationshanteraren
+### <a name="use-configuration-manager-to-configure-pua-protection"></a>Konfigurera PUA-skydd med Konfigurationshanteraren
 
 PUA-skydd är aktiverat som standard i Microsoft Endpoint Manager (Current Branch).
 
@@ -106,7 +106,7 @@ Information om System Center 2012 Configuration Manager finns i Distribuera pote
 > [!NOTE]
 > PUA-händelser som blockerats av Microsoft Defender Antivirus rapporteras i Windows loggboken och inte i Microsoft Endpoint Configuration Manager.
 
-#### <a name="use-group-policy-to-configure-pua-protection"></a>Använda grupprincip för att konfigurera PUA-skydd
+### <a name="use-group-policy-to-configure-pua-protection"></a>Använda grupprincip för att konfigurera PUA-skydd
 
 1. Ladda ned och [installera administrativa mallar (.admx) för Windows 10 oktober 2020-uppdatering (20H2)](https://www.microsoft.com/download/details.aspx?id=102157)
 
@@ -126,9 +126,9 @@ Information om System Center 2012 Configuration Manager finns i Distribuera pote
 
 9. Distribuera grupprincipobjektet som vanligt.
 
-#### <a name="use-powershell-cmdlets-to-configure-pua-protection"></a>Använda PowerShell-cmdlets för att konfigurera PUA-skydd
+### <a name="use-powershell-cmdlets-to-configure-pua-protection"></a>Använda PowerShell-cmdlets för att konfigurera PUA-skydd
 
-##### <a name="to-enable-pua-protection"></a>Aktivera PUA-skydd
+#### <a name="to-enable-pua-protection"></a>Aktivera PUA-skydd
 
 ```PowerShell
 Set-MpPreference -PUAProtection Enabled
@@ -136,7 +136,7 @@ Set-MpPreference -PUAProtection Enabled
 
 Om du anger värdet för den här cmdleten `Enabled` aktiverar du funktionen om den har inaktiverats.
 
-##### <a name="to-set-pua-protection-to-audit-mode"></a>Så här ställer du in PUA-skydd till granskningsläge
+#### <a name="to-set-pua-protection-to-audit-mode"></a>Så här ställer du in PUA-skydd till granskningsläge
 
 ```PowerShell
 Set-MpPreference -PUAProtection AuditMode
@@ -144,7 +144,7 @@ Set-MpPreference -PUAProtection AuditMode
 
 Inställningen `AuditMode` identifierar PUA:er utan att blockera dem.
 
-##### <a name="to-disable-pua-protection"></a>Inaktivera PUA-skydd
+#### <a name="to-disable-pua-protection"></a>Inaktivera PUA-skydd
 
 Vi rekommenderar att du behåller PUA-skydd aktiverat. Du kan dock inaktivera det med hjälp av följande cmdlet:
 
@@ -154,9 +154,9 @@ Set-MpPreference -PUAProtection Disabled
 
 Om du anger värdet för den här cmdleten `Disabled` inaktiveras funktionen om den är aktiverad.
 
-Mer information om hur du använder PowerShell med Microsoft Defender Antivirus finns i Använda [PowerShell-cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) för att konfigurera och köra Microsoft Defender Antivirus- och [Defender-cmdlets.](/powershell/module/defender/index)
+Mer information finns i Använda [PowerShell-cmdlets för att konfigurera och köra cmdlets för Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) och [Defender.](/powershell/module/defender/index)
 
-## <a name="view-pua-events"></a>Visa PUA-händelser
+## <a name="view-pua-events-using-powershell"></a>Visa PUA-händelser med hjälp av PowerShell
 
 PUA-händelser rapporteras i Windows loggboken, men inte i Microsoft Endpoint Manager eller i Intune. Du kan också använda `Get-MpThreat` cmdleten för att visa hot som Microsoft Defender Antivirus hanterat. Här är ett exempel:
 
@@ -175,11 +175,15 @@ TypeID           : 0
 PSComputerName   :
 ```
 
+## <a name="get-email-notifications-about-pua-detections"></a>Få e-postaviseringar om PUA-identifieringar
+
 Du kan aktivera e-postaviseringar för att ta emot e-post om PUA-identifieringar.
 
 Mer [information om hur du visar antivirushändelser](troubleshoot-microsoft-defender-antivirus.md) i Microsoft Defender finns i Felsöka händelse-IDn. PUA-händelser registreras under händelse-ID **1160.**
 
-Om du använder Microsoft Defender för Slutpunkt kan du använda en avancerad fråga för att visa PUA-händelser. Här är en exempelfråga:
+## <a name="view-pua-events-using-advanced-hunting"></a>Visa PUA-händelser med avancerad sökning
+
+Om du använder [Microsoft Defender för Slutpunkt kan du använda](microsoft-defender-endpoint.md)en avancerad fråga för att visa PUA-händelser. Här är en exempelfråga:
 
 ```console
 DeviceEvents
@@ -190,7 +194,9 @@ DeviceEvents
 | project Timestamp, DeviceName, FolderPath, FileName, SHA256, ThreatName, WasExecutingWhileDetected, WasRemediated
 ```
 
-## <a name="excluding-files"></a>Exklusive filer
+Mer information om avancerad sökning finns i [Proaktivt sök efter hot med avancerad sökning.](advanced-hunting-overview.md)
+
+## <a name="exclude-files-from-pua-protection"></a>Undanta filer från PUA-skydd
 
 Ibland är en fil felaktigt blockerad av PUA-skydd eller så krävs en funktion i en PUA för att slutföra en aktivitet. I sådana fall kan en fil läggas till i en undantagslista.
 

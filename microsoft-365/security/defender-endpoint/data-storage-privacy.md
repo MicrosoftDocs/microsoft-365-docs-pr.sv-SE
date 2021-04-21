@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2b191c4a24ce170d23fc3d9e43293cc7bbe59e80
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: dfdfcdcfb8d76f95e3b866f5f95af7efd94ed59e
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892824"
+ms.locfileid: "51904134"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Datalagring och sekretess i Microsoft Defender för Endpoint
 
@@ -90,7 +90,7 @@ Nej. Kunddata isoleras från andra kunder och delas inte. Men insikter om data f
 
 ## <a name="how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy"></a>Hur länge kommer Microsoft att lagra mina data? Vad är Microsofts policy för datalagring?
 **Vid service onboarding**<br>
-Du kan välja datalagringsprincip för dina data. Det här anger hur länge Window Defender för slutpunkt lagrar dina data. Du kan välja mellan en månad och sex månader så att du kan uppfylla företagets efterlevnadsbehov av regelverk.
+Som standard behålls data i 180 dagar. Men du kan ange databevarandeprincipen för dina data. Det här anger hur länge Window Defender för slutpunkt lagrar dina data. Du kan välja mellan en månad och sex månader så att du kan uppfylla företagets efterlevnadsbehov av regelverk.
 
 **När avtalet avslutas eller avslutas**<br>
 Dina data sparas och blir tillgängliga för dig under respitperioden eller inställt läge för licensen. I slutet av perioden raderas dessa data från Microsofts system för att de inte ska återskapas, senast 180 dagar efter att avtalet avslutats eller avslutats.

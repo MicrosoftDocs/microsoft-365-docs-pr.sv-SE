@@ -1,6 +1,6 @@
 ---
 title: Konfigurera Microsoft Defender för slutpunkt för iOS-funktioner
-description: Här beskrivs hur du distribuerar Microsoft Defender ATP för iOS-funktioner
+description: Här beskrivs hur du distribuerar Microsoft Defender för Slutpunkt i iOS-funktioner
 keywords: microsoft, defender, atp, ios, konfigurera, funktioner, ios
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0e351f6500d5076e724653d0fde1940592dd1ae5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f5f7345f92b3ac76aa647a9caed63e5684be9c30
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687491"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903316"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Konfigurera Microsoft Defender för slutpunkt för iOS-funktioner
 
@@ -49,7 +49,7 @@ Som standard innehåller och aktiverar Defender för Slutpunkt för iOS webbskyd
 När den är aktiverad som standard kan det finnas fall där du måste inaktivera VPN. Du kanske till exempel vill köra vissa appar som inte fungerar när en VPN konfigureras. I sådana fall kan du välja att inaktivera VPN från appen på enheten genom att följa stegen nedan:
 
 1. På din iOS-enhet öppnar du **appen Inställningar,** klickar eller trycker på **Allmänt** och sedan **VPN.**
-1. Klicka eller tryck på i-knappen för Microsoft Defender ATP.
+1. Klicka eller tryck på i-knappen för Microsoft Defender för Slutpunkt.
 1. Inaktivera VPN **genom att stänga av** Anslut på begäran.
 
     > [!div class="mx-imgBorder"]

@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 362222e4737b1a8dd6b8a0a284bf3bfb1903c288
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: aa699aae24b1e6383f5a2afbe7fce31e0f53805c
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861456"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903934"
 ---
-# <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Distribuera Defender för slutpunkt på Linux med Chef
+# <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Distribuera Defender för Endpoint på Linux med Chef
 
 Innan du börjar:
 
@@ -110,7 +110,7 @@ end
 
 Uppdatera sökvägen till introduktionsfilens plats.
 Testa att distribuera den på arbetsstationen Chef genom att bara köra ``sudo chef-client -z -o mdatp`` .
-Efter distributionen bör du överväga att skapa och distribuera en konfigurationsfil till servrarna baserat på Ange inställningar för Microsoft Defender ATP för [Linux – Windows | Microsoft Docs.](/windows/security/threat-protection/microsoft-defender-atp/linux-preferences)  
+Efter distributionen bör du överväga att skapa och distribuera en konfigurationsfil till servrarna baserat på Ange inställningar för [Microsoft Defender för Slutpunkt i Linux.](/linux-preferences.md)  
 När du har skapat och testat konfigurationsfilen kan du placera den i cookboken/mdatp/files-mappen där du också placerade onboarding-paketet.  Sedan kan du skapa en settings_mdatp.rb-fil i mappen mdatp/recipies och lägga till den här texten:
 
 ```powershell

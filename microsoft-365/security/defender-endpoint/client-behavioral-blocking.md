@@ -1,7 +1,7 @@
 ---
 title: Beteendeblockering av klientdator
 description: Klientbeteendeblockering är en del av funktioner för blockering och inneslutning i Microsoft Defender för slutpunkt
-keywords: blockering av beteende, snabbt skydd, klientbeteende, Microsoft Defender ATP
+keywords: blockering av beteende, snabbt skydd, klientbeteende, Microsoft Defender ATP, microsoft defender för slutpunkt
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 9fcff96b2583c6ef6bec05429ec50a71f3872e43
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 48929d0e2b0c932d37cb5d29783712d00b17117f
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587113"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904158"
 ---
 # <a name="client-behavioral-blocking"></a>Beteendeblockering av klientdator
 
