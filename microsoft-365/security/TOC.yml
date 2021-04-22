@@ -129,15 +129,15 @@
                   href: defender/incidents-overview.md
                 - name: Prioritera incidenter
                   href: defender/incident-queue.md
-                - name: Undersöka incidenter
+                - name: Hantera incidenter
+                  href: defender/manage-incidents.md
+                - name: Incidentsvar
                   items:
-                    - name: Undersöka incidenter
+                    - name: Analysera incidenter
                       href: defender/investigate-incidents.md
-                    - name: Hantera incidenter
-                      href: defender/manage-incidents.md
-                    - name: Undersöka aviseringar
+                    - name: Analysera aviseringar
                       href: defender/investigate-alerts.md
-                    - name: Undersöka användare i Microsoft 365 Säkerhetscenter
+                    - name: Analysera användare
                       href: defender/investigate-users.md
                 - name: Få e-postaviseringar
                   href: defender/get-incident-notifications.md
