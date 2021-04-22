@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: f3920942925efbe334df84370c61fbe6a98ad49f
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: f9bb0690cf48c4cc694c0d563ba7d4203953358a
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939270"
+ms.locfileid: "51943059"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>Översikt över det enhetliga säkerhetscentret för Microsoft 365
 
@@ -50,6 +50,9 @@ Om du behöver information om vad som har ändrats från Säkerhets- och efterle
 
 - [Defender för Office 365 i Microsoft 365 Säkerhetscenter](microsoft-365-security-center-mdo.md)
 - [Defender för Endpoint i Microsoft 365 Säkerhetscenter](microsoft-365-security-center-mde.md)
+
+> [!NOTE]
+> Microsoft 365-säkerhetsportalen använder och framtvingar befintlig rollbaserad åtkomst och flyttar varje säkerhetsmodell till den enhetliga portalen. Varje konvergerad arbetsbelastning (till exempel MDO eller MDE) har sin egen rollbaserade åtkomst. De roller som redan finns i produkterna kommer automatiskt att konvergerats till Microsoft 365-säkerhetsportalen. Roller och behörigheter för MCAS kommer dock fortfarande att hanteras i MCAS.
 
 ## <a name="what-to-expect"></a>Vad du kan förvänta dig
 

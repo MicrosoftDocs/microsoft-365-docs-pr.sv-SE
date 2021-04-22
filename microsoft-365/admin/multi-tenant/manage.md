@@ -19,21 +19,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du använder klientorganisationens omkopplare och om vyer för flera innehavare.
-ms.openlocfilehash: 21b51a5e0c79496bf73e60c04aea68def3cf8ad6
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d59760b8a143acc33747aff9f7deaa0b6dd3e711
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580888"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51943035"
 ---
 # <a name="multi-tenant-management"></a>Hantering av flera innehavare
 
-Hantering för flera innehavare erbjuder en enhetlig form av hantering som gör att administratörer kan administrera alla klientorganisationen de hanterar från en enda plats. Om du hanterar flera klientorganisationsklienter kan du:
+Hantering för flera klientorganisationen erbjuder en enhetlig form av hantering som gör att Microsoft 365-partneradministratörer kan administrera alla klientorganisationen de hanterar från en enda plats. Om du är en partner som hanterar flera klientorganisationar kan du:
 
 - Flytta snabbt mellan klientorganisationar som du hanterar.
 - Utvärdera tjänstehälsa, produkter och fakturering för flera klientorganisationar.
 - På sidan **Alla klientorganisationen** kan du snabbt se hälsotillståndet för alla klientorganisationens tjänster, alla öppna tjänstförfrågningar, dina produkter och fakturering samt antalet användare i klientorganisationen.
-
 
 ## <a name="move-between-tenants"></a>Flytta mellan klientorganisationen
 
@@ -54,7 +53,6 @@ Hantering för flera innehavare erbjuder en enhetlig form av hantering som gör 
   - Sök efter eller välj den klientorganisation du vill hantera
   - Du kan också fästa den klientorganisation du besöker oftast överst i listan.
 
-
 Om du har markerat en klientorganisation som favorit expanderas den automatiskt så att du direkt kan visa statusinformation.
 
 ## <a name="view-service-health-for-all-accounts"></a>Visa tjänsthälsa för alla konton
@@ -63,7 +61,7 @@ I vyn Tjänstens hälsa visas om några incidenter eller rådgivningar påverkar
 
 1. Välj Tjänstens hälsa i flerklientsvyn i administrationscentret för Microsoft 365.
 2. På sidan **Tjänstens** hälsa i den sammantagna vyn kan du även se det totala antalet incidenter, det totala antalet rådgivningar som påverkar någon av de hanterade klientorganisationen och antalet tjänster med aktiva incidenter. Du kan också se hur många av dina klienter som påverkas av incidenter och rådgivningar.
-    
+
     - Du kan använda filteralternativet för att visa problem per typ av problem eller tjänst
 
     - Du kan granska problem under **Alla tjänster eller** fliken **Alla** problem.

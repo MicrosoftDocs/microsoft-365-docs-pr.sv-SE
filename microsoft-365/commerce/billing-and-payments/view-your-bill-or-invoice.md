@@ -28,12 +28,12 @@ ms.custom:
 - AdminSurgePortfolio
 description: Hitta din faktura eller ditt faktureringsutdrag i administrationscentret för Microsoft 365. Du kan också spara och skriva ut en kopia av fakturan.
 ms.date: 07/31/2020
-ms.openlocfilehash: 395c9773d4bc67ed466d7b3f8d568cecedddfd36
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b117071fa708ad9d425d578833d8b0ad85537151
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911656"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939492"
 ---
 # <a name="view-your-bill-or-invoice"></a>Visa din faktura
 
@@ -55,6 +55,22 @@ Du måste vara global administratör eller faktureringsadministratörer för att
 2. Välj ett datumintervall i listrutan på fliken **Fakturor** och välj sedan den beställning du vill visa.
 3. På sidan Sammanfattning visas artiklarna, kvantiteten, priset, rabatten och summan för alla artiklar i fakturan.
 4. Om du vill skriva ut eller spara en pdf-kopia av fakturan väljer du **Ladda ned PDF**.
+
+::: moniker region="o365-21vianet"
+
+## <a name="request-a-fapiao"></a>Begära en Fapiao
+
+Du kan skicka din Fapiao-begäran till vårt [Fapiao-hanteringssystem](https://go.microsoft.com/fwlink/p/?linkid=837465) cirka tre (3) dagar efter att du har betalat.
+
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a>, gå till sidan **Fakturering** > **Fakturor och betalningar**.
+
+2. Leta upp den faktura du vill använda och välj sedan **Få Fapiaos**.
+
+> [!NOTE]
+
+> Du behöver ett registrerat konto för att komma åt [Fapiao-hanteringssystemet](https://go.microsoft.com/fwlink/p/?linkid=837465). Om du inte redan har konfigurerat ett konto kan du gå till [Ansök om Fapiao för Office 365 som drivs av 21Vianet](../../admin/services-in-china/apply-for-a-fapiao.md).
+
+::: moniker-end
 
 ## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>Få en kopia av ditt faktureringsutdrag via e-post
 

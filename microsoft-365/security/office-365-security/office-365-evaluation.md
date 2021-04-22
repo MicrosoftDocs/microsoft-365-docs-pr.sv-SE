@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
+ms.date: 04/21/2021
 audience: ITPro
 ms.topic: article
 localization_priority: Normal
@@ -18,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 86433ef505cd1b9afca100dc731f1885e22c8401
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 005c1f6ad7806c8d1ba1d38e4e82edd25034075d
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935143"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51942999"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Utvärdera Microsoft Defender för Office 365
 
@@ -32,11 +33,14 @@ ms.locfileid: "51935143"
 > [!IMPORTANT]
 > Utvärdering av Microsoft Defender för Office 365 är en offentlig förhandsversion. Den här förhandsversionen tillhandahålls utan ett servicenivåavtal. Vissa funktioner kanske inte stöds eller kan ha begränsade funktioner.
 
-Om du genomför en omfattande utvärdering av säkerhetsprodukter kan det vara bra att fatta välgrundade beslut om uppgraderingar och inköp. Det underlättar att prova säkerhetsproduktens funktioner för att bedöma hur den kan hjälpa teamet med säkerhetsåtgärder i sina dagliga uppgifter.
+Genom att göra en noggrann utvärdering av säkerhetsprodukter kan du få välgrundade beslut om uppgraderingar och inköp. Det underlättar att prova säkerhetsproduktens funktioner för att bedöma hur den kan hjälpa teamet med säkerhetsåtgärder i sina dagliga uppgifter.
 
 Utvärderingsupplevelsen i Microsoft Defender för [Office 365](defender-for-office-365.md) är utformad för att eliminera komplexiteten hos enhets- och miljökonfigurationen så att du kan fokusera på att utvärdera funktionerna i Microsoft Defender för Office 365. Med utvärderingsläget kan alla meddelanden som skickas till Exchange Online-postlådor utvärderas utan att MX-poster pekar på Microsoft. Funktionen gäller endast e-postskydd och inte Office-klienter som Word, SharePoint eller Teams.
 
 Om du inte redan har en licens som stöder Microsoft Defender för Office 365 kan du påbörja en kostnadsfri utvärdering under [30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) dagar och testa funktionerna i Säkerhets- och efterlevnadscenter för Office 365 & ( https://protection.office.com/homepage) . Du kommer att njuta av den snabba uppsättningen och du kan enkelt stänga av den om det behövs.
+
+> [!NOTE]
+> Om du är på den enhetliga Microsoft 365-säkerhetsportalen (security.microsoft.com) kan du starta en utvärdering av Defender för Office 365 här: E-post&-principer för samarbete > & > principer > ytterligare principer.
 
 ## <a name="how-the-evaluation-works"></a>Så här fungerar utvärderingen
 

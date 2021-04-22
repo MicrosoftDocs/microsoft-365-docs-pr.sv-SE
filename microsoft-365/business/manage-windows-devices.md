@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Läs om hur du aktiverar Microsoft 365 för att skydda lokala Active-Directory-anslutna Windows 10-enheter med några få steg.
-ms.openlocfilehash: 8a45c6959bee368491c5c6424e3713300c443779
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: c9f5a21d993200abcf9ecf1fa236879245e1c153
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580143"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939511"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Aktivera att domän anslutna Windows 10-enheter hanteras av Microsoft 365 Business Premium
 
@@ -116,3 +116,7 @@ Om du inte ser principen Aktivera automatisk **MDM-registrering** med standardau
 6.  Om du har flera domänkontrollanter väntar du tills SYSVOL replikerar för att principerna ska vara tillgängliga. Den här proceduren fungerar även för alla framtida versioner av administrativa mallar.
 
 Nu bör du kunna se principen Aktivera automatisk MDM-registrering med hjälp av **standardautentiseringsuppgifter för Azure AD.**
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Synkronisera domänanvändare till Microsoft 365](manage-domain-users.md) [(artikel)](../admin/create-groups/create-groups.md) Skapa en grupp i administrationscentret (artikel) Självstudiekurs: Konfigurera azure Active [Directory-hybridkoppling](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md) för hanterade domäner (artikel)
