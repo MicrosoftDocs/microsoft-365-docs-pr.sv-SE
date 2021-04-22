@@ -2,7 +2,7 @@
 title: Distribuera Microsoft Defender för Slutpunkt på Linux med Ansible
 ms.reviewer: ''
 description: Här beskrivs hur du distribuerar Microsoft Defender för Slutpunkt på Linux med Ansible.
-keywords: microsoft, defender, atp, linux, installation, distribuera, avinstallation, enkel, ansible, linux, redhat, ubuntu, ubuntu, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender för Endpoint, linux, installation, distribuera, avinstallation, installationse, ansible, linux, redhat, ubuntu, ubuntu, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,44 +18,44 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 697fcddad595c6883fe1e1f7258ca6154c48b94d
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 15ee02d90e81c48bf5ec718e669bf8f88f6424ff
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903910"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934783"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a><span data-ttu-id="c2c87-104">Distribuera Microsoft Defender för Slutpunkt på Linux med Ansible</span><span class="sxs-lookup"><span data-stu-id="c2c87-104">Deploy Microsoft Defender for Endpoint on Linux with Ansible</span></span>
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a><span data-ttu-id="96e53-104">Distribuera Microsoft Defender för Slutpunkt på Linux med Ansible</span><span class="sxs-lookup"><span data-stu-id="96e53-104">Deploy Microsoft Defender for Endpoint on Linux with Ansible</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="c2c87-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="c2c87-105">**Applies to:**</span></span>
-- [<span data-ttu-id="c2c87-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="c2c87-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="c2c87-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="c2c87-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="96e53-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="96e53-105">**Applies to:**</span></span>
+- [<span data-ttu-id="96e53-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="96e53-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="96e53-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="96e53-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="c2c87-108">Vill du använda Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="c2c87-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="c2c87-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="c2c87-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> <span data-ttu-id="96e53-108">Vill du använda Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="96e53-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="96e53-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="96e53-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-<span data-ttu-id="c2c87-110">I den här artikeln beskrivs hur du distribuerar Defender för Endpoint för Linux med Ansible.</span><span class="sxs-lookup"><span data-stu-id="c2c87-110">This article describes how to deploy Defender for Endpoint for Linux using Ansible.</span></span> <span data-ttu-id="c2c87-111">För en lyckad distribution måste alla följande uppgifter slutföras:</span><span class="sxs-lookup"><span data-stu-id="c2c87-111">A successful deployment requires the completion of all of the following tasks:</span></span>
+<span data-ttu-id="96e53-110">I den här artikeln beskrivs hur du distribuerar Defender för Slutpunkt på Linux med Ansible.</span><span class="sxs-lookup"><span data-stu-id="96e53-110">This article describes how to deploy Defender for Endpoint on Linux using Ansible.</span></span> <span data-ttu-id="96e53-111">För en lyckad distribution måste alla följande uppgifter slutföras:</span><span class="sxs-lookup"><span data-stu-id="96e53-111">A successful deployment requires the completion of all of the following tasks:</span></span>
 
-- [<span data-ttu-id="c2c87-112">Ladda ned onboarding-paketet</span><span class="sxs-lookup"><span data-stu-id="c2c87-112">Download the onboarding package</span></span>](#download-the-onboarding-package)
-- [<span data-ttu-id="c2c87-113">Skapa ansible YAML-filer</span><span class="sxs-lookup"><span data-stu-id="c2c87-113">Create Ansible YAML files</span></span>](#create-ansible-yaml-files)
-- [<span data-ttu-id="c2c87-114">Distribution</span><span class="sxs-lookup"><span data-stu-id="c2c87-114">Deployment</span></span>](#deployment)
-- [<span data-ttu-id="c2c87-115">Referenser</span><span class="sxs-lookup"><span data-stu-id="c2c87-115">References</span></span>](#references)
+- [<span data-ttu-id="96e53-112">Ladda ned onboarding-paketet</span><span class="sxs-lookup"><span data-stu-id="96e53-112">Download the onboarding package</span></span>](#download-the-onboarding-package)
+- [<span data-ttu-id="96e53-113">Skapa ansible YAML-filer</span><span class="sxs-lookup"><span data-stu-id="96e53-113">Create Ansible YAML files</span></span>](#create-ansible-yaml-files)
+- [<span data-ttu-id="96e53-114">Distribution</span><span class="sxs-lookup"><span data-stu-id="96e53-114">Deployment</span></span>](#deployment)
+- [<span data-ttu-id="96e53-115">Referenser</span><span class="sxs-lookup"><span data-stu-id="96e53-115">References</span></span>](#references)
 
-## <a name="prerequisites-and-system-requirements"></a><span data-ttu-id="c2c87-116">Krav och systemkrav</span><span class="sxs-lookup"><span data-stu-id="c2c87-116">Prerequisites and system requirements</span></span>
+## <a name="prerequisites-and-system-requirements"></a><span data-ttu-id="96e53-116">Krav och systemkrav</span><span class="sxs-lookup"><span data-stu-id="96e53-116">Prerequisites and system requirements</span></span>
 
-<span data-ttu-id="c2c87-117">Innan du börjar kan du gå [till huvudsidan för Defender](microsoft-defender-endpoint-linux.md) för Endpoint för Linux för att få en beskrivning av förutsättningarna och systemkraven för den aktuella programvaruversionen.</span><span class="sxs-lookup"><span data-stu-id="c2c87-117">Before you get started, see [the main Defender for Endpoint for Linux page](microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements for the current software version.</span></span>
+<span data-ttu-id="96e53-117">Innan du börjar kan du gå [till huvudsidan för Defender](microsoft-defender-endpoint-linux.md) för Slutpunkt på Linux för att få en beskrivning av förutsättningarna och systemkraven för den aktuella programvaruversionen.</span><span class="sxs-lookup"><span data-stu-id="96e53-117">Before you get started, see [the main Defender for Endpoint on Linux page](microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements for the current software version.</span></span>
 
-<span data-ttu-id="c2c87-118">För ansible-distribution måste du dessutom känna till Ansible-administrationsuppgifter, ha Ansible konfigurerat och veta hur du distribuerar spelböcker och uppgifter.</span><span class="sxs-lookup"><span data-stu-id="c2c87-118">In addition, for Ansible deployment, you need to be familiar with Ansible administration tasks, have Ansible configured, and know how to deploy playbooks and tasks.</span></span> <span data-ttu-id="c2c87-119">Det finns många sätt att slutföra samma aktivitet på ansible.</span><span class="sxs-lookup"><span data-stu-id="c2c87-119">Ansible has many ways to complete the same task.</span></span> <span data-ttu-id="c2c87-120">De här instruktionerna förutsätter tillgänglighet för ansible-moduler som stöds, till exempel *apt* och *inte arkiverade för* distribution av paketet.</span><span class="sxs-lookup"><span data-stu-id="c2c87-120">These instructions assume availability of supported Ansible modules, such as *apt* and *unarchive* to help deploy the package.</span></span> <span data-ttu-id="c2c87-121">Din organisation kan använda ett annat arbetsflöde.</span><span class="sxs-lookup"><span data-stu-id="c2c87-121">Your organization might use a different workflow.</span></span> <span data-ttu-id="c2c87-122">Mer information finns [i dokumentationen till Ansible.](https://docs.ansible.com/)</span><span class="sxs-lookup"><span data-stu-id="c2c87-122">Refer to the [Ansible documentation](https://docs.ansible.com/) for details.</span></span>
+<span data-ttu-id="96e53-118">För ansible-distribution måste du dessutom känna till Ansible-administrationsuppgifter, ha Ansible konfigurerat och veta hur du distribuerar spelböcker och uppgifter.</span><span class="sxs-lookup"><span data-stu-id="96e53-118">In addition, for Ansible deployment, you need to be familiar with Ansible administration tasks, have Ansible configured, and know how to deploy playbooks and tasks.</span></span> <span data-ttu-id="96e53-119">Det finns många sätt att slutföra samma aktivitet på ansible.</span><span class="sxs-lookup"><span data-stu-id="96e53-119">Ansible has many ways to complete the same task.</span></span> <span data-ttu-id="96e53-120">De här instruktionerna förutsätter tillgänglighet för ansible-moduler som stöds, till exempel *apt* och *inte arkiverade för* distribution av paketet.</span><span class="sxs-lookup"><span data-stu-id="96e53-120">These instructions assume availability of supported Ansible modules, such as *apt* and *unarchive* to help deploy the package.</span></span> <span data-ttu-id="96e53-121">Din organisation kan använda ett annat arbetsflöde.</span><span class="sxs-lookup"><span data-stu-id="96e53-121">Your organization might use a different workflow.</span></span> <span data-ttu-id="96e53-122">Mer information finns [i dokumentationen till Ansible.](https://docs.ansible.com/)</span><span class="sxs-lookup"><span data-stu-id="96e53-122">Refer to the [Ansible documentation](https://docs.ansible.com/) for details.</span></span>
 
-- <span data-ttu-id="c2c87-123">Ansible måste vara installerat på minst en dator (vi kallar det för primär dator).</span><span class="sxs-lookup"><span data-stu-id="c2c87-123">Ansible needs to be installed on at least one computer (we will call it the primary computer).</span></span>
-- <span data-ttu-id="c2c87-124">SSH måste konfigureras för ett administratörskonto mellan den primära datorn och alla klienter, och det rekommenderas att konfigureras med offentlig nyckelautentisering.</span><span class="sxs-lookup"><span data-stu-id="c2c87-124">SSH must be configured for an administrator account between the primary computer and all clients, and it is recommended be configured with public key authentication.</span></span>
-- <span data-ttu-id="c2c87-125">Följande programvara måste vara installerad på alla klienter:</span><span class="sxs-lookup"><span data-stu-id="c2c87-125">The following software must be installed on all clients:</span></span>
-  - <span data-ttu-id="c2c87-126">böjning</span><span class="sxs-lookup"><span data-stu-id="c2c87-126">curl</span></span>
-  - <span data-ttu-id="c2c87-127">python-apt</span><span class="sxs-lookup"><span data-stu-id="c2c87-127">python-apt</span></span>
+- <span data-ttu-id="96e53-123">Ansible måste vara installerat på minst en dator (vi kallar det för primär dator).</span><span class="sxs-lookup"><span data-stu-id="96e53-123">Ansible needs to be installed on at least one computer (we will call it the primary computer).</span></span>
+- <span data-ttu-id="96e53-124">SSH måste konfigureras för ett administratörskonto mellan den primära datorn och alla klienter, och det rekommenderas att konfigureras med offentlig nyckelautentisering.</span><span class="sxs-lookup"><span data-stu-id="96e53-124">SSH must be configured for an administrator account between the primary computer and all clients, and it is recommended be configured with public key authentication.</span></span>
+- <span data-ttu-id="96e53-125">Följande programvara måste vara installerad på alla klienter:</span><span class="sxs-lookup"><span data-stu-id="96e53-125">The following software must be installed on all clients:</span></span>
+  - <span data-ttu-id="96e53-126">böjning</span><span class="sxs-lookup"><span data-stu-id="96e53-126">curl</span></span>
+  - <span data-ttu-id="96e53-127">python-apt</span><span class="sxs-lookup"><span data-stu-id="96e53-127">python-apt</span></span>
 
-- <span data-ttu-id="c2c87-128">Alla värdar måste visas i följande format i `/etc/ansible/hosts` den eller relevanta filen:</span><span class="sxs-lookup"><span data-stu-id="c2c87-128">All hosts must be listed in the following format in the `/etc/ansible/hosts` or relevant file:</span></span>
+- <span data-ttu-id="96e53-128">Alla värdar måste visas i följande format i `/etc/ansible/hosts` den eller relevanta filen:</span><span class="sxs-lookup"><span data-stu-id="96e53-128">All hosts must be listed in the following format in the `/etc/ansible/hosts` or relevant file:</span></span>
 
     ```bash
     [servers]
@@ -63,23 +63,23 @@ ms.locfileid: "51903910"
     host2 ansible_ssh_host=51.143.50.51
     ```
 
-- <span data-ttu-id="c2c87-129">Ping-test:</span><span class="sxs-lookup"><span data-stu-id="c2c87-129">Ping test:</span></span>
+- <span data-ttu-id="96e53-129">Ping-test:</span><span class="sxs-lookup"><span data-stu-id="96e53-129">Ping test:</span></span>
 
     ```bash
     ansible -m ping all
     ```
 
-## <a name="download-the-onboarding-package"></a><span data-ttu-id="c2c87-130">Ladda ned onboarding-paketet</span><span class="sxs-lookup"><span data-stu-id="c2c87-130">Download the onboarding package</span></span>
+## <a name="download-the-onboarding-package"></a><span data-ttu-id="96e53-130">Ladda ned onboarding-paketet</span><span class="sxs-lookup"><span data-stu-id="96e53-130">Download the onboarding package</span></span>
 
-<span data-ttu-id="c2c87-131">Ladda ned introduktionspaketet från Microsoft Defender Säkerhetscenter:</span><span class="sxs-lookup"><span data-stu-id="c2c87-131">Download the onboarding package from Microsoft Defender Security Center:</span></span>
+<span data-ttu-id="96e53-131">Ladda ned introduktionspaketet från Microsoft Defender Säkerhetscenter:</span><span class="sxs-lookup"><span data-stu-id="96e53-131">Download the onboarding package from Microsoft Defender Security Center:</span></span>
 
-1. <span data-ttu-id="c2c87-132">I Microsoft Defender Säkerhetscenter går du till **Inställningar > Enhetshantering > Onboarding**.</span><span class="sxs-lookup"><span data-stu-id="c2c87-132">In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.</span></span>
-2. <span data-ttu-id="c2c87-133">I den första listrutan väljer du **Linux Server** som operativsystem.</span><span class="sxs-lookup"><span data-stu-id="c2c87-133">In the first drop-down menu, select **Linux Server** as the operating system.</span></span> <span data-ttu-id="c2c87-134">I den andra nedrullningsmenyn väljer du **Det konfigurationshanteringsverktyg du** föredrar i Linux som distributionsmetod.</span><span class="sxs-lookup"><span data-stu-id="c2c87-134">In the second drop-down menu, select **Your preferred Linux configuration management tool** as the deployment method.</span></span>
-3. <span data-ttu-id="c2c87-135">Välj **Hämta introduktionspaket**.</span><span class="sxs-lookup"><span data-stu-id="c2c87-135">Select **Download onboarding package**.</span></span> <span data-ttu-id="c2c87-136">Spara filen som WindowsDefenderATPOnboardingPackage.zip.</span><span class="sxs-lookup"><span data-stu-id="c2c87-136">Save the file as WindowsDefenderATPOnboardingPackage.zip.</span></span>
+1. <span data-ttu-id="96e53-132">I Microsoft Defender Säkerhetscenter går du till **Inställningar > Enhetshantering > Onboarding**.</span><span class="sxs-lookup"><span data-stu-id="96e53-132">In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.</span></span>
+2. <span data-ttu-id="96e53-133">I den första listrutan väljer du **Linux Server** som operativsystem.</span><span class="sxs-lookup"><span data-stu-id="96e53-133">In the first drop-down menu, select **Linux Server** as the operating system.</span></span> <span data-ttu-id="96e53-134">I den andra nedrullningsmenyn väljer du **Det konfigurationshanteringsverktyg du** föredrar i Linux som distributionsmetod.</span><span class="sxs-lookup"><span data-stu-id="96e53-134">In the second drop-down menu, select **Your preferred Linux configuration management tool** as the deployment method.</span></span>
+3. <span data-ttu-id="96e53-135">Välj **Hämta introduktionspaket**.</span><span class="sxs-lookup"><span data-stu-id="96e53-135">Select **Download onboarding package**.</span></span> <span data-ttu-id="96e53-136">Spara filen som WindowsDefenderATPOnboardingPackage.zip.</span><span class="sxs-lookup"><span data-stu-id="96e53-136">Save the file as WindowsDefenderATPOnboardingPackage.zip.</span></span>
 
     ![Skärmbild av Microsoft Defender Säkerhetscenter](images/atp-portal-onboarding-linux-2.png)
 
-4. <span data-ttu-id="c2c87-138">Kontrollera att filen finns i kommandotolken.</span><span class="sxs-lookup"><span data-stu-id="c2c87-138">From a command prompt, verify that you have the file.</span></span> <span data-ttu-id="c2c87-139">Extrahera innehållet i arkivet:</span><span class="sxs-lookup"><span data-stu-id="c2c87-139">Extract the contents of the archive:</span></span>
+4. <span data-ttu-id="96e53-138">Kontrollera att filen finns i kommandotolken.</span><span class="sxs-lookup"><span data-stu-id="96e53-138">From a command prompt, verify that you have the file.</span></span> <span data-ttu-id="96e53-139">Extrahera innehållet i arkivet:</span><span class="sxs-lookup"><span data-stu-id="96e53-139">Extract the contents of the archive:</span></span>
 
     ```bash
     ls -l
@@ -96,11 +96,11 @@ ms.locfileid: "51903910"
     inflating: mdatp_onboard.json
     ```
 
-## <a name="create-ansible-yaml-files"></a><span data-ttu-id="c2c87-140">Skapa ansible YAML-filer</span><span class="sxs-lookup"><span data-stu-id="c2c87-140">Create Ansible YAML files</span></span>
+## <a name="create-ansible-yaml-files"></a><span data-ttu-id="96e53-140">Skapa ansible YAML-filer</span><span class="sxs-lookup"><span data-stu-id="96e53-140">Create Ansible YAML files</span></span>
 
-<span data-ttu-id="c2c87-141">Skapa en underaktivitet eller rollfiler som bidrar till en spelbok eller uppgift.</span><span class="sxs-lookup"><span data-stu-id="c2c87-141">Create a subtask or role files that contribute to an playbook or task.</span></span>
+<span data-ttu-id="96e53-141">Skapa en underaktivitet eller rollfiler som bidrar till en spelbok eller uppgift.</span><span class="sxs-lookup"><span data-stu-id="96e53-141">Create a subtask or role files that contribute to an playbook or task.</span></span>
 
-- <span data-ttu-id="c2c87-142">Skapa onboarding-uppgiften: `onboarding_setup.yml`</span><span class="sxs-lookup"><span data-stu-id="c2c87-142">Create the onboarding task, `onboarding_setup.yml`:</span></span>
+- <span data-ttu-id="96e53-142">Skapa onboarding-uppgiften: `onboarding_setup.yml`</span><span class="sxs-lookup"><span data-stu-id="96e53-142">Create the onboarding task, `onboarding_setup.yml`:</span></span>
 
     ```bash
     - name: Create MDATP directories
@@ -127,23 +127,23 @@ ms.locfileid: "51903910"
       when: not mdatp_onboard.stat.exists
     ```
 
-- <span data-ttu-id="c2c87-143">Lägg till Defender för slutpunktens lagringsplats och nyckel.</span><span class="sxs-lookup"><span data-stu-id="c2c87-143">Add the Defender for Endpoint repository and key.</span></span>
+- <span data-ttu-id="96e53-143">Lägg till Defender för slutpunktens lagringsplats och nyckel.</span><span class="sxs-lookup"><span data-stu-id="96e53-143">Add the Defender for Endpoint repository and key.</span></span>
 
-    <span data-ttu-id="c2c87-144">Defender för Endpoint för Linux kan distribueras från någon av följande kanaler (anges nedan som *[kanal]*): *insiders-fast,* *insiders-slow* eller *prod*. Var och en av dessa kanaler motsvarar en linux-programvarudatabas.</span><span class="sxs-lookup"><span data-stu-id="c2c87-144">Defender for Endpoint for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository.</span></span>
+    <span data-ttu-id="96e53-144">Defender för Slutpunkt i Linux kan distribueras från någon av följande kanaler (anges nedan som *[kanal]*): *insiders-fast,* *insiders-slow* eller *prod*. Var och en av dessa kanaler motsvarar en linux-programvarudatabas.</span><span class="sxs-lookup"><span data-stu-id="96e53-144">Defender for Endpoint on Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository.</span></span>
 
-    <span data-ttu-id="c2c87-145">Valet av kanal avgör typ och frekvens för uppdateringar som erbjuds till din enhet.</span><span class="sxs-lookup"><span data-stu-id="c2c87-145">The choice of the channel determines the type and frequency of updates that are offered to your device.</span></span> <span data-ttu-id="c2c87-146">Enheter inom *insiders – snabbt* är de första som får uppdateringar och nya funktioner, följt senare av *insiders-slow* och slutligen *av prod*.</span><span class="sxs-lookup"><span data-stu-id="c2c87-146">Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.</span></span>
+    <span data-ttu-id="96e53-145">Valet av kanal avgör typ och frekvens för uppdateringar som erbjuds till din enhet.</span><span class="sxs-lookup"><span data-stu-id="96e53-145">The choice of the channel determines the type and frequency of updates that are offered to your device.</span></span> <span data-ttu-id="96e53-146">Enheter inom *insiders – snabbt* är de första som får uppdateringar och nya funktioner, följt senare av *insiders-slow* och slutligen *av prod*.</span><span class="sxs-lookup"><span data-stu-id="96e53-146">Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.</span></span>
 
-    <span data-ttu-id="c2c87-147">Om du vill förhandsgranska nya funktioner och ge tidig feedback rekommenderar vi att du konfigurerar vissa enheter i företaget så att de använder *insiders snabbt* eller *insiders -långsamt.*</span><span class="sxs-lookup"><span data-stu-id="c2c87-147">In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.</span></span>
+    <span data-ttu-id="96e53-147">Om du vill förhandsgranska nya funktioner och ge tidig feedback rekommenderar vi att du konfigurerar vissa enheter i företaget så att de använder *insiders snabbt* eller *insiders -långsamt.*</span><span class="sxs-lookup"><span data-stu-id="96e53-147">In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.</span></span>
 
     > [!WARNING]
-    > <span data-ttu-id="c2c87-148">Om du byter kanal efter den första installationen måste produkten installeras om.</span><span class="sxs-lookup"><span data-stu-id="c2c87-148">Switching the channel after the initial installation requires the product to be reinstalled.</span></span> <span data-ttu-id="c2c87-149">Om du vill byta produktkanal: avinstallera det befintliga paketet, konfigurera om enheten så att den nya kanalen används och följ stegen i det här dokumentet för att installera paketet från den nya platsen.</span><span class="sxs-lookup"><span data-stu-id="c2c87-149">To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.</span></span>
+    > <span data-ttu-id="96e53-148">Om du byter kanal efter den första installationen måste produkten installeras om.</span><span class="sxs-lookup"><span data-stu-id="96e53-148">Switching the channel after the initial installation requires the product to be reinstalled.</span></span> <span data-ttu-id="96e53-149">Om du vill byta produktkanal: avinstallera det befintliga paketet, konfigurera om enheten så att den nya kanalen används och följ stegen i det här dokumentet för att installera paketet från den nya platsen.</span><span class="sxs-lookup"><span data-stu-id="96e53-149">To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.</span></span>
 
-    <span data-ttu-id="c2c87-150">Notera distribution och version och ange den mest närmaste posten för den under `https://packages.microsoft.com/config/` .</span><span class="sxs-lookup"><span data-stu-id="c2c87-150">Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`.</span></span>
+    <span data-ttu-id="96e53-150">Notera distribution och version och ange den mest närmaste posten för den under `https://packages.microsoft.com/config/` .</span><span class="sxs-lookup"><span data-stu-id="96e53-150">Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`.</span></span>
 
-    <span data-ttu-id="c2c87-151">I följande kommandon ersätter *du [distro]* *och [version]* med den information som du har identifierat.</span><span class="sxs-lookup"><span data-stu-id="c2c87-151">In the following commands, replace *[distro]* and *[version]* with the information you've identified.</span></span>
+    <span data-ttu-id="96e53-151">I följande kommandon ersätter *du [distro]* *och [version]* med den information som du har identifierat.</span><span class="sxs-lookup"><span data-stu-id="96e53-151">In the following commands, replace *[distro]* and *[version]* with the information you've identified.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="c2c87-152">Om du använder Oracle Linux *ersätter du [distro]* med "rhel".</span><span class="sxs-lookup"><span data-stu-id="c2c87-152">In case of Oracle Linux, replace *[distro]* with “rhel”.</span></span>
+    > <span data-ttu-id="96e53-152">Om du använder Oracle Linux *ersätter du [distro]* med "rhel".</span><span class="sxs-lookup"><span data-stu-id="96e53-152">In case of Oracle Linux, replace *[distro]* with “rhel”.</span></span>
 
   ```bash
   - name: Add Microsoft APT key
@@ -177,9 +177,9 @@ ms.locfileid: "51903910"
     when: ansible_os_family == "RedHat"
   ```
 
-- <span data-ttu-id="c2c87-153">Skapa ansible-installationen och avinstallera YAML-filer.</span><span class="sxs-lookup"><span data-stu-id="c2c87-153">Create the Ansible install and uninstall YAML files.</span></span>
+- <span data-ttu-id="96e53-153">Skapa ansible-installationen och avinstallera YAML-filer.</span><span class="sxs-lookup"><span data-stu-id="96e53-153">Create the Ansible install and uninstall YAML files.</span></span>
 
-    - <span data-ttu-id="c2c87-154">För apt-baserade distributioner använder du följande YAML-fil:</span><span class="sxs-lookup"><span data-stu-id="c2c87-154">For apt-based distributions use the following YAML file:</span></span>
+    - <span data-ttu-id="96e53-154">För apt-baserade distributioner använder du följande YAML-fil:</span><span class="sxs-lookup"><span data-stu-id="96e53-154">For apt-based distributions use the following YAML file:</span></span>
 
         ```bash
         cat install_mdatp.yml
@@ -208,7 +208,7 @@ ms.locfileid: "51903910"
                 state: absent
         ```
 
-    - <span data-ttu-id="c2c87-155">För dnf-baserade distributioner använder du följande YAML-fil:</span><span class="sxs-lookup"><span data-stu-id="c2c87-155">For dnf-based distributions use the following YAML file:</span></span>
+    - <span data-ttu-id="96e53-155">För dnf-baserade distributioner använder du följande YAML-fil:</span><span class="sxs-lookup"><span data-stu-id="96e53-155">For dnf-based distributions use the following YAML file:</span></span>
 
         ```bash
         cat install_mdatp_dnf.yml
@@ -237,20 +237,20 @@ ms.locfileid: "51903910"
                 state: absent
         ```
 
-## <a name="deployment"></a><span data-ttu-id="c2c87-156">Distribution</span><span class="sxs-lookup"><span data-stu-id="c2c87-156">Deployment</span></span>
+## <a name="deployment"></a><span data-ttu-id="96e53-156">Distribution</span><span class="sxs-lookup"><span data-stu-id="96e53-156">Deployment</span></span>
 
-<span data-ttu-id="c2c87-157">Kör nu uppgiftsfilerna under `/etc/ansible/playbooks/` eller relevant katalog.</span><span class="sxs-lookup"><span data-stu-id="c2c87-157">Now run the tasks files under `/etc/ansible/playbooks/` or relevant directory.</span></span>
+<span data-ttu-id="96e53-157">Kör nu uppgiftsfilerna under `/etc/ansible/playbooks/` eller relevant katalog.</span><span class="sxs-lookup"><span data-stu-id="96e53-157">Now run the tasks files under `/etc/ansible/playbooks/` or relevant directory.</span></span>
 
-- <span data-ttu-id="c2c87-158">Installation:</span><span class="sxs-lookup"><span data-stu-id="c2c87-158">Installation:</span></span>
+- <span data-ttu-id="96e53-158">Installation:</span><span class="sxs-lookup"><span data-stu-id="96e53-158">Installation:</span></span>
 
     ```bash
     ansible-playbook /etc/ansible/playbooks/install_mdatp.yml -i /etc/ansible/hosts
     ```
 
 > [!IMPORTANT]
-> <span data-ttu-id="c2c87-159">När produkten startas för första gången laddas de senaste definitionerna för program mot skadlig programvara ned.</span><span class="sxs-lookup"><span data-stu-id="c2c87-159">When the product starts for the first time, it downloads the latest antimalware definitions.</span></span> <span data-ttu-id="c2c87-160">Beroende på din Internetanslutning kan det ta upp till några minuter.</span><span class="sxs-lookup"><span data-stu-id="c2c87-160">Depending on your Internet connection, this can take up to a few minutes.</span></span>
+> <span data-ttu-id="96e53-159">När produkten startas för första gången laddas de senaste definitionerna för program mot skadlig programvara ned.</span><span class="sxs-lookup"><span data-stu-id="96e53-159">When the product starts for the first time, it downloads the latest antimalware definitions.</span></span> <span data-ttu-id="96e53-160">Beroende på din Internetanslutning kan det ta upp till några minuter.</span><span class="sxs-lookup"><span data-stu-id="96e53-160">Depending on your Internet connection, this can take up to a few minutes.</span></span>
 
-- <span data-ttu-id="c2c87-161">Verifiering/konfiguration:</span><span class="sxs-lookup"><span data-stu-id="c2c87-161">Validation/configuration:</span></span>
+- <span data-ttu-id="96e53-161">Verifiering/konfiguration:</span><span class="sxs-lookup"><span data-stu-id="96e53-161">Validation/configuration:</span></span>
 
     ```bash
     ansible -m shell -a 'mdatp connectivity test' all
@@ -259,26 +259,26 @@ ms.locfileid: "51903910"
     ansible -m shell -a 'mdatp health' all
     ```
 
-- <span data-ttu-id="c2c87-162">Avinstallation:</span><span class="sxs-lookup"><span data-stu-id="c2c87-162">Uninstallation:</span></span>
+- <span data-ttu-id="96e53-162">Avinstallation:</span><span class="sxs-lookup"><span data-stu-id="96e53-162">Uninstallation:</span></span>
 
     ```bash
     ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts
     ```
 
-## <a name="log-installation-issues"></a><span data-ttu-id="c2c87-163">Logga installationsproblem</span><span class="sxs-lookup"><span data-stu-id="c2c87-163">Log installation issues</span></span>
+## <a name="log-installation-issues"></a><span data-ttu-id="96e53-163">Logga installationsproblem</span><span class="sxs-lookup"><span data-stu-id="96e53-163">Log installation issues</span></span>
 
-<span data-ttu-id="c2c87-164">Mer [information om hur](linux-resources.md#log-installation-issues) du hittar den automatiskt genererade loggen som skapas av installationsprogrammet när ett fel uppstår finns i Problem med logginstallationen.</span><span class="sxs-lookup"><span data-stu-id="c2c87-164">See [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.</span></span>
+<span data-ttu-id="96e53-164">Mer [information om hur](linux-resources.md#log-installation-issues) du hittar den automatiskt genererade loggen som skapas av installationsprogrammet när ett fel uppstår finns i Problem med logginstallationen.</span><span class="sxs-lookup"><span data-stu-id="96e53-164">See [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.</span></span>
 
-## <a name="operating-system-upgrades"></a><span data-ttu-id="c2c87-165">Uppgraderingar av operativsystem</span><span class="sxs-lookup"><span data-stu-id="c2c87-165">Operating system upgrades</span></span>
+## <a name="operating-system-upgrades"></a><span data-ttu-id="96e53-165">Uppgraderingar av operativsystem</span><span class="sxs-lookup"><span data-stu-id="96e53-165">Operating system upgrades</span></span>
 
-<span data-ttu-id="c2c87-166">När du uppgraderar ditt operativsystem till en ny huvudversion måste du först avinstallera Defender för Endpoint för Linux, installera uppgraderingen och slutligen konfigurera om Defender för Endpoint för Linux på din enhet.</span><span class="sxs-lookup"><span data-stu-id="c2c87-166">When upgrading your operating system to a new major version, you must first uninstall Defender for Endpoint for Linux, install the upgrade, and finally reconfigure Defender for Endpoint for Linux on your device.</span></span>
+<span data-ttu-id="96e53-166">När du uppgraderar ditt operativsystem till en ny huvudversion måste du först avinstallera Defender för Slutpunkt i Linux, installera uppgraderingen och slutligen konfigurera om Defender för Slutpunkt på Linux på din enhet.</span><span class="sxs-lookup"><span data-stu-id="96e53-166">When upgrading your operating system to a new major version, you must first uninstall Defender for Endpoint on Linux, install the upgrade, and finally reconfigure Defender for Endpoint on Linux on your device.</span></span>
 
-## <a name="references"></a><span data-ttu-id="c2c87-167">Referenser</span><span class="sxs-lookup"><span data-stu-id="c2c87-167">References</span></span>
+## <a name="references"></a><span data-ttu-id="96e53-167">Referenser</span><span class="sxs-lookup"><span data-stu-id="96e53-167">References</span></span>
 
-- [<span data-ttu-id="c2c87-168">Lägga till eller ta bort YUM-lagringsplatsen</span><span class="sxs-lookup"><span data-stu-id="c2c87-168">Add or remove YUM repositories</span></span>](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/yum_repository_module.html)
+- [<span data-ttu-id="96e53-168">Lägga till eller ta bort YUM-lagringsplatsen</span><span class="sxs-lookup"><span data-stu-id="96e53-168">Add or remove YUM repositories</span></span>](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/yum_repository_module.html)
 
-- [<span data-ttu-id="c2c87-169">Hantera paket med pakethanteraren för dnf</span><span class="sxs-lookup"><span data-stu-id="c2c87-169">Manage packages with the dnf package manager</span></span>](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/dnf_module.html)
+- [<span data-ttu-id="96e53-169">Hantera paket med pakethanteraren för dnf</span><span class="sxs-lookup"><span data-stu-id="96e53-169">Manage packages with the dnf package manager</span></span>](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/dnf_module.html)
 
-- [<span data-ttu-id="c2c87-170">Lägga till och ta bort APT-lagringsplatsen</span><span class="sxs-lookup"><span data-stu-id="c2c87-170">Add and remove APT repositories</span></span>](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_repository_module.html)
+- [<span data-ttu-id="96e53-170">Lägga till och ta bort APT-lagringsplatsen</span><span class="sxs-lookup"><span data-stu-id="96e53-170">Add and remove APT repositories</span></span>](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_repository_module.html)
 
-- [<span data-ttu-id="c2c87-171">Hantera avd-paket</span><span class="sxs-lookup"><span data-stu-id="c2c87-171">Manage apt-packages</span></span>](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
+- [<span data-ttu-id="96e53-171">Hantera avd-paket</span><span class="sxs-lookup"><span data-stu-id="96e53-171">Manage apt-packages</span></span>](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
