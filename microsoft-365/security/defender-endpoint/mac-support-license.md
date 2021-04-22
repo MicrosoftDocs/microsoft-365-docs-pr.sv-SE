@@ -1,7 +1,7 @@
 ---
-title: Felsöka licensproblem för Microsoft Defender för Slutpunkt för Mac
-description: Felsöka licensproblem i Microsoft Defender för Slutpunkt för Mac.
-keywords: microsoft, defender, atp, mac, performance
+title: Felsöka licensproblem för Microsoft Defender för slutpunkt på Mac
+description: Felsöka licensproblem i Microsoft Defender för slutpunkt på Mac.
+keywords: microsoft, defender, Microsoft Defender för slutpunkt, mac, prestanda
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,43 +18,43 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3fb351d9ce8e9beef812e6aaa7d463161a6af8df
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: e8084fab434246a5c9f12af40872ade66e6fa163
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862193"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934267"
 ---
-# <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a><span data-ttu-id="c53d2-104">Felsöka licensproblem för Microsoft Defender för slutpunkt i macOS</span><span class="sxs-lookup"><span data-stu-id="c53d2-104">Troubleshoot license issues for Microsoft Defender for Endpoint on macOS</span></span>
+# <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a><span data-ttu-id="6e248-104">Felsöka licensproblem för Microsoft Defender för slutpunkt i macOS</span><span class="sxs-lookup"><span data-stu-id="6e248-104">Troubleshoot license issues for Microsoft Defender for Endpoint on macOS</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="c53d2-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="c53d2-105">**Applies to:**</span></span>
+<span data-ttu-id="6e248-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="6e248-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="c53d2-106">Microsoft Defender för Endpoint för macOS</span><span class="sxs-lookup"><span data-stu-id="c53d2-106">Microsoft Defender for Endpoint on macOS</span></span>](microsoft-defender-endpoint-mac.md)
-- [<span data-ttu-id="c53d2-107">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="c53d2-107">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="c53d2-108">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="c53d2-108">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [<span data-ttu-id="6e248-106">Microsoft Defender för Endpoint för macOS</span><span class="sxs-lookup"><span data-stu-id="6e248-106">Microsoft Defender for Endpoint on macOS</span></span>](microsoft-defender-endpoint-mac.md)
+- [<span data-ttu-id="6e248-107">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="6e248-107">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="6e248-108">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="6e248-108">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="c53d2-109">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="c53d2-109">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="c53d2-110">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="c53d2-110">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="6e248-109">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="6e248-109">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="6e248-110">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="6e248-110">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-<span data-ttu-id="c53d2-111">När du går igenom Microsoft Defender för Slutpunkt på [macOS](microsoft-defender-endpoint-mac.md) och [testa manuell](mac-install-manually.md) distribution eller ett PoC (Proof Of Concept) kan du få följande felmeddelande:</span><span class="sxs-lookup"><span data-stu-id="c53d2-111">While you are going through [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md) and [Manual deployment](mac-install-manually.md) testing or a Proof Of Concept (PoC), you might get the following error:</span></span>
+<span data-ttu-id="6e248-111">När du går igenom Microsoft Defender för Slutpunkt på [macOS](microsoft-defender-endpoint-mac.md) och [testa manuell](mac-install-manually.md) distribution eller ett PoC (Proof Of Concept) kan du få följande felmeddelande:</span><span class="sxs-lookup"><span data-stu-id="6e248-111">While you are going through [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md) and [Manual deployment](mac-install-manually.md) testing or a Proof Of Concept (PoC), you might get the following error:</span></span>
 
 ![Bild på licensfel](images/no-license-found.png)
 
-<span data-ttu-id="c53d2-113&quot;>**Meddelande:**</span><span class=&quot;sxs-lookup&quot;><span data-stu-id=&quot;c53d2-113&quot;>**Message:**</span></span> 
+<span data-ttu-id="6e248-113&quot;>**Meddelande:**</span><span class=&quot;sxs-lookup&quot;><span data-stu-id=&quot;6e248-113&quot;>**Message:**</span></span> 
 
-<span data-ttu-id=&quot;c53d2-114&quot;>Ingen licens hittades</span><span class=&quot;sxs-lookup&quot;><span data-stu-id=&quot;c53d2-114&quot;>No license found</span></span>
+<span data-ttu-id=&quot;6e248-114&quot;>Ingen licens hittades</span><span class=&quot;sxs-lookup&quot;><span data-stu-id=&quot;6e248-114&quot;>No license found</span></span>
 
-<span data-ttu-id=&quot;c53d2-115&quot;>Det verkar som att din organisation inte har någon licens för Microsoft 365 Enterprise-prenumeration.</span><span class=&quot;sxs-lookup&quot;><span data-stu-id=&quot;c53d2-115&quot;>Looks like your organization does not have a license for Microsoft 365 Enterprise subscription.</span></span>
+<span data-ttu-id=&quot;6e248-115&quot;>Det verkar som att din organisation inte har någon licens för Microsoft 365 Enterprise-prenumeration.</span><span class=&quot;sxs-lookup&quot;><span data-stu-id=&quot;6e248-115&quot;>Looks like your organization does not have a license for Microsoft 365 Enterprise subscription.</span></span>
 
-<span data-ttu-id=&quot;c53d2-116&quot;>Kontakta administratören om du behöver hjälp.</span><span class=&quot;sxs-lookup&quot;><span data-stu-id=&quot;c53d2-116&quot;>Contact your administrator for help.</span></span>
+<span data-ttu-id=&quot;6e248-116&quot;>Kontakta administratören om du behöver hjälp.</span><span class=&quot;sxs-lookup&quot;><span data-stu-id=&quot;6e248-116&quot;>Contact your administrator for help.</span></span>
 
-<span data-ttu-id=&quot;c53d2-117&quot;>**Orsak:**</span><span class=&quot;sxs-lookup&quot;><span data-stu-id=&quot;c53d2-117&quot;>**Cause:**</span></span> 
+<span data-ttu-id=&quot;6e248-117&quot;>**Orsak:**</span><span class=&quot;sxs-lookup&quot;><span data-stu-id=&quot;6e248-117&quot;>**Cause:**</span></span> 
 
-<span data-ttu-id=&quot;c53d2-118&quot;>Du har distribuerat och/eller installerat Microsoft Defender för slutpunkt på macOS-paket (&quot;Ladda ned installationspaket") men du kanske har kört konfigurationsskriptet ("Hämta onboarding package").</span><span class="sxs-lookup"><span data-stu-id="c53d2-118">You deployed and/or installed the Microsoft Defender for Endpoint on macOS package ("Download installation package") but you might have run the configuration script ("Download onboarding package").</span></span>
+<span data-ttu-id=&quot;6e248-118&quot;>Du har distribuerat och/eller installerat Microsoft Defender för slutpunkt på macOS-paket (&quot;Ladda ned installationspaket") men du kanske har kört konfigurationsskriptet ("Hämta onboarding package").</span><span class="sxs-lookup"><span data-stu-id="6e248-118">You deployed and/or installed the Microsoft Defender for Endpoint on macOS package ("Download installation package") but you might have run the configuration script ("Download onboarding package").</span></span>
 
-<span data-ttu-id="c53d2-119">**Lösning:**</span><span class="sxs-lookup"><span data-stu-id="c53d2-119">**Solution:**</span></span>
+<span data-ttu-id="6e248-119">**Lösning:**</span><span class="sxs-lookup"><span data-stu-id="6e248-119">**Solution:**</span></span>
 
-<span data-ttu-id="c53d2-120">Följ de MicrosoftDefenderATPOnboardingMacOs.py som beskrivs här: [Klientkonfiguration](mac-install-manually.md#client-configuration)</span><span class="sxs-lookup"><span data-stu-id="c53d2-120">Follow the MicrosoftDefenderATPOnboardingMacOs.py instructions documented here: [Client configuration](mac-install-manually.md#client-configuration)</span></span>
+<span data-ttu-id="6e248-120">Följ de MicrosoftDefenderATPOnboardingMacOs.py som beskrivs här: [Klientkonfiguration](mac-install-manually.md#client-configuration)</span><span class="sxs-lookup"><span data-stu-id="6e248-120">Follow the MicrosoftDefenderATPOnboardingMacOs.py instructions documented here: [Client configuration](mac-install-manually.md#client-configuration)</span></span>
 

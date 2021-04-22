@@ -1,7 +1,7 @@
 ---
-title: Distribuera uppdateringar för Microsoft Defender för Slutpunkt för Mac
-description: Kontrollera uppdateringar för Microsoft Defender för Slutpunkt för Mac i företagsmiljöer.
-keywords: microsoft, defender, atp, mac, uppdateringar, distribuera
+title: Distribuera uppdateringar för Microsoft Defender för slutpunkt på Mac
+description: Kontrollera uppdateringar för Microsoft Defender för Slutpunkt på Mac i företagsmiljöer.
+keywords: microsoft, defender, Microsoft Defender för slutpunkt, mac, uppdateringar, distribuera
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,149 +18,149 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9d373594771efe4eb647c007db3a26efe83e330e
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 886195de38856306d69932446eae34212fe4bb0d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860321"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934507"
 ---
-# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a><span data-ttu-id="2638d-104">Distribuera uppdateringar för Microsoft Defender för slutpunkt i macOS</span><span class="sxs-lookup"><span data-stu-id="2638d-104">Deploy updates for Microsoft Defender for Endpoint on macOS</span></span>
+# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a><span data-ttu-id="7fac5-104">Distribuera uppdateringar för Microsoft Defender för slutpunkt i macOS</span><span class="sxs-lookup"><span data-stu-id="7fac5-104">Deploy updates for Microsoft Defender for Endpoint on macOS</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="2638d-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="2638d-105">**Applies to:**</span></span>
+<span data-ttu-id="7fac5-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="7fac5-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="2638d-106">Microsoft Defender för Endpoint för macOS</span><span class="sxs-lookup"><span data-stu-id="2638d-106">Microsoft Defender for Endpoint on macOS</span></span>](microsoft-defender-endpoint-mac.md)
-- [<span data-ttu-id="2638d-107">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="2638d-107">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="2638d-108">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="2638d-108">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [<span data-ttu-id="7fac5-106">Microsoft Defender för Endpoint för macOS</span><span class="sxs-lookup"><span data-stu-id="7fac5-106">Microsoft Defender for Endpoint on macOS</span></span>](microsoft-defender-endpoint-mac.md)
+- [<span data-ttu-id="7fac5-107">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="7fac5-107">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="7fac5-108">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="7fac5-108">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="2638d-109">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="2638d-109">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="2638d-110">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="2638d-110">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="7fac5-109">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="7fac5-109">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="7fac5-110">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="7fac5-110">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-<span data-ttu-id="2638d-111">Microsoft publicerar regelbundet programuppdateringar för att förbättra prestanda, säkerhet och för att leverera nya funktioner.</span><span class="sxs-lookup"><span data-stu-id="2638d-111">Microsoft regularly publishes software updates to improve performance, security, and to deliver new features.</span></span>
+<span data-ttu-id="7fac5-111">Microsoft publicerar regelbundet programuppdateringar för att förbättra prestanda, säkerhet och för att leverera nya funktioner.</span><span class="sxs-lookup"><span data-stu-id="7fac5-111">Microsoft regularly publishes software updates to improve performance, security, and to deliver new features.</span></span>
 
-<span data-ttu-id="2638d-112">För att uppdatera Microsoft Defender för slutpunkt i macOS används ett program med namnet Microsoft AutoUpdate (MAU).</span><span class="sxs-lookup"><span data-stu-id="2638d-112">To update Microsoft Defender for Endpoint on macOS, a program named Microsoft AutoUpdate (MAU) is used.</span></span> <span data-ttu-id="2638d-113">Som standard söker MAU automatiskt efter uppdateringar varje dag, men du kan ändra det till varje vecka, varje månad eller manuellt.</span><span class="sxs-lookup"><span data-stu-id="2638d-113">By default, MAU automatically checks for updates daily, but you can change that to weekly, monthly, or manually.</span></span>
+<span data-ttu-id="7fac5-112">För att uppdatera Microsoft Defender för slutpunkt i macOS används ett program med namnet Microsoft AutoUpdate (MAU).</span><span class="sxs-lookup"><span data-stu-id="7fac5-112">To update Microsoft Defender for Endpoint on macOS, a program named Microsoft AutoUpdate (MAU) is used.</span></span> <span data-ttu-id="7fac5-113">Som standard söker MAU automatiskt efter uppdateringar varje dag, men du kan ändra det till varje vecka, varje månad eller manuellt.</span><span class="sxs-lookup"><span data-stu-id="7fac5-113">By default, MAU automatically checks for updates daily, but you can change that to weekly, monthly, or manually.</span></span>
 
 ![MAU skärmbild](images/MDATP-34-MAU.png)
 
-<span data-ttu-id="2638d-115">Om du bestämmer dig för att distribuera uppdateringar med dina verktyg för programvarudistribution bör du konfigurera MAU att manuellt söka efter programuppdateringar.</span><span class="sxs-lookup"><span data-stu-id="2638d-115">If you decide to deploy updates by using your software distribution tools, you should configure MAU to manually check for software updates.</span></span> <span data-ttu-id="2638d-116">Du kan distribuera inställningar för att konfigurera hur och när MAU söker efter uppdateringar för Mac-datorer i organisationen.</span><span class="sxs-lookup"><span data-stu-id="2638d-116">You can deploy preferences to configure how and when MAU checks for updates for the Macs in your organization.</span></span>
+<span data-ttu-id="7fac5-115">Om du bestämmer dig för att distribuera uppdateringar med dina verktyg för programvarudistribution bör du konfigurera MAU att manuellt söka efter programuppdateringar.</span><span class="sxs-lookup"><span data-stu-id="7fac5-115">If you decide to deploy updates by using your software distribution tools, you should configure MAU to manually check for software updates.</span></span> <span data-ttu-id="7fac5-116">Du kan distribuera inställningar för att konfigurera hur och när MAU söker efter uppdateringar för Mac-datorer i organisationen.</span><span class="sxs-lookup"><span data-stu-id="7fac5-116">You can deploy preferences to configure how and when MAU checks for updates for the Macs in your organization.</span></span>
 
-## <a name="use-msupdate"></a><span data-ttu-id="2638d-117">Använda msupdate</span><span class="sxs-lookup"><span data-stu-id="2638d-117">Use msupdate</span></span>
+## <a name="use-msupdate"></a><span data-ttu-id="7fac5-117">Använda msupdate</span><span class="sxs-lookup"><span data-stu-id="7fac5-117">Use msupdate</span></span>
 
-<span data-ttu-id="2638d-118">MAU innehåller ett kommandoradsverktyg, *msupdate,* som är utformat för IT-administratörer så att de får mer exakt kontroll över när uppdateringar tillämpas.</span><span class="sxs-lookup"><span data-stu-id="2638d-118">MAU includes a command-line tool, called *msupdate*, that is designed for IT administrators so that they have more precise control over when updates are applied.</span></span> <span data-ttu-id="2638d-119">Anvisningar för hur du använder verktyget finns i Uppdatera [Office för Mac med hjälp av msupdate.](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate)</span><span class="sxs-lookup"><span data-stu-id="2638d-119">Instructions for how to use this tool can be found in [Update Office for Mac by using msupdate](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate).</span></span>
+<span data-ttu-id="7fac5-118">MAU innehåller ett kommandoradsverktyg, *msupdate,* som är utformat för IT-administratörer så att de får mer exakt kontroll över när uppdateringar tillämpas.</span><span class="sxs-lookup"><span data-stu-id="7fac5-118">MAU includes a command-line tool, called *msupdate*, that is designed for IT administrators so that they have more precise control over when updates are applied.</span></span> <span data-ttu-id="7fac5-119">Anvisningar för hur du använder verktyget finns i Uppdatera [Office för Mac med hjälp av msupdate.](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate)</span><span class="sxs-lookup"><span data-stu-id="7fac5-119">Instructions for how to use this tool can be found in [Update Office for Mac by using msupdate](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate).</span></span>
 
-<span data-ttu-id="2638d-120">I MAU är programidentifieraren för Microsoft Defender för Slutpunkt i macOS *WDAV00.*</span><span class="sxs-lookup"><span data-stu-id="2638d-120">In MAU, the application identifier for Microsoft Defender for Endpoint on macOS is *WDAV00*.</span></span> <span data-ttu-id="2638d-121">Ladda ned och installera de senaste uppdateringarna för Microsoft Defender för Slutpunkt i macOS genom att köra följande kommando från ett terminalfönster:</span><span class="sxs-lookup"><span data-stu-id="2638d-121">To download and install the latest updates for Microsoft Defender for Endpoint on macOS, execute the following command from a Terminal window:</span></span>
+<span data-ttu-id="7fac5-120">I MAU är programidentifieraren för Microsoft Defender för Slutpunkt i macOS *WDAV00.*</span><span class="sxs-lookup"><span data-stu-id="7fac5-120">In MAU, the application identifier for Microsoft Defender for Endpoint on macOS is *WDAV00*.</span></span> <span data-ttu-id="7fac5-121">Ladda ned och installera de senaste uppdateringarna för Microsoft Defender för Slutpunkt i macOS genom att köra följande kommando från ett terminalfönster:</span><span class="sxs-lookup"><span data-stu-id="7fac5-121">To download and install the latest updates for Microsoft Defender for Endpoint on macOS, execute the following command from a Terminal window:</span></span>
 
 ```
 ./msupdate --install --apps wdav00
 ```
 
-## <a name="set-preferences-for-microsoft-autoupdate"></a><span data-ttu-id="2638d-122">Ange inställningar för Microsoft AutoUpdate</span><span class="sxs-lookup"><span data-stu-id="2638d-122">Set preferences for Microsoft AutoUpdate</span></span>
+## <a name="set-preferences-for-microsoft-autoupdate"></a><span data-ttu-id="7fac5-122">Ange inställningar för Microsoft AutoUpdate</span><span class="sxs-lookup"><span data-stu-id="7fac5-122">Set preferences for Microsoft AutoUpdate</span></span>
 
-<span data-ttu-id="2638d-123">I det här avsnittet beskrivs de vanligaste inställningarna som kan användas för att konfigurera MAU.</span><span class="sxs-lookup"><span data-stu-id="2638d-123">This section describes the most common preferences that can be used to configure MAU.</span></span> <span data-ttu-id="2638d-124">De här inställningarna kan distribueras som en konfigurationsprofil via hanteringskonsolen som ditt företag använder.</span><span class="sxs-lookup"><span data-stu-id="2638d-124">These settings can be deployed as a configuration profile through the management console that your enterprise is using.</span></span> <span data-ttu-id="2638d-125">Ett exempel på en konfigurationsprofil visas i följande avsnitt.</span><span class="sxs-lookup"><span data-stu-id="2638d-125">An example of a configuration profile is shown in the following sections.</span></span>
+<span data-ttu-id="7fac5-123">I det här avsnittet beskrivs de vanligaste inställningarna som kan användas för att konfigurera MAU.</span><span class="sxs-lookup"><span data-stu-id="7fac5-123">This section describes the most common preferences that can be used to configure MAU.</span></span> <span data-ttu-id="7fac5-124">De här inställningarna kan distribueras som en konfigurationsprofil via hanteringskonsolen som ditt företag använder.</span><span class="sxs-lookup"><span data-stu-id="7fac5-124">These settings can be deployed as a configuration profile through the management console that your enterprise is using.</span></span> <span data-ttu-id="7fac5-125">Ett exempel på en konfigurationsprofil visas i följande avsnitt.</span><span class="sxs-lookup"><span data-stu-id="7fac5-125">An example of a configuration profile is shown in the following sections.</span></span>
 
-### <a name="set-the-channel-name"></a><span data-ttu-id="2638d-126">Ange kanalnamn</span><span class="sxs-lookup"><span data-stu-id="2638d-126">Set the channel name</span></span>
+### <a name="set-the-channel-name"></a><span data-ttu-id="7fac5-126">Ange kanalnamn</span><span class="sxs-lookup"><span data-stu-id="7fac5-126">Set the channel name</span></span>
 
-<span data-ttu-id="2638d-127">Kanalen avgör typ och frekvens för uppdateringar som erbjuds via MAU.</span><span class="sxs-lookup"><span data-stu-id="2638d-127">The channel determines the type and frequency of updates that are offered through MAU.</span></span> <span data-ttu-id="2638d-128">Enheter i `Beta` kan prova nya funktioner före enheter i och `Preview` `Current` .</span><span class="sxs-lookup"><span data-stu-id="2638d-128">Devices in `Beta` can try out new features before devices in `Preview` and `Current`.</span></span> 
+<span data-ttu-id="7fac5-127">Kanalen avgör typ och frekvens för uppdateringar som erbjuds via MAU.</span><span class="sxs-lookup"><span data-stu-id="7fac5-127">The channel determines the type and frequency of updates that are offered through MAU.</span></span> <span data-ttu-id="7fac5-128">Enheter i `Beta` kan prova nya funktioner före enheter i och `Preview` `Current` .</span><span class="sxs-lookup"><span data-stu-id="7fac5-128">Devices in `Beta` can try out new features before devices in `Preview` and `Current`.</span></span> 
 
-<span data-ttu-id="2638d-129">Kanalen `Current` innehåller den mest stabila versionen av produkten.</span><span class="sxs-lookup"><span data-stu-id="2638d-129">The `Current` channel contains the most stable version of the product.</span></span>
+<span data-ttu-id="7fac5-129">Kanalen `Current` innehåller den mest stabila versionen av produkten.</span><span class="sxs-lookup"><span data-stu-id="7fac5-129">The `Current` channel contains the most stable version of the product.</span></span>
 
 >[!IMPORTANT]
-> <span data-ttu-id="2638d-130">Före Microsoft AutoUpdate version 4.29 hade kanaler olika namn:</span><span class="sxs-lookup"><span data-stu-id="2638d-130">Prior to Microsoft AutoUpdate version 4.29, channels had different names:</span></span> 
+> <span data-ttu-id="7fac5-130">Före Microsoft AutoUpdate version 4.29 hade kanaler olika namn:</span><span class="sxs-lookup"><span data-stu-id="7fac5-130">Prior to Microsoft AutoUpdate version 4.29, channels had different names:</span></span> 
 > 
-> - <span data-ttu-id="2638d-131">`Beta` hette `InsiderFast` (Insider – snabbt)</span><span class="sxs-lookup"><span data-stu-id="2638d-131">`Beta` was named `InsiderFast` (Insider Fast)</span></span>
-> - <span data-ttu-id="2638d-132">`Preview` hette `External` (Insider – långsamt)</span><span class="sxs-lookup"><span data-stu-id="2638d-132">`Preview` was named `External` (Insider Slow)</span></span>
-> - <span data-ttu-id="2638d-133">`Current` hette `Production`</span><span class="sxs-lookup"><span data-stu-id="2638d-133">`Current` was named `Production`</span></span>
+> - <span data-ttu-id="7fac5-131">`Beta` hette `InsiderFast` (Insider – snabbt)</span><span class="sxs-lookup"><span data-stu-id="7fac5-131">`Beta` was named `InsiderFast` (Insider Fast)</span></span>
+> - <span data-ttu-id="7fac5-132">`Preview` hette `External` (Insider – långsamt)</span><span class="sxs-lookup"><span data-stu-id="7fac5-132">`Preview` was named `External` (Insider Slow)</span></span>
+> - <span data-ttu-id="7fac5-133">`Current` hette `Production`</span><span class="sxs-lookup"><span data-stu-id="7fac5-133">`Current` was named `Production`</span></span>
 
 >[!TIP]
-><span data-ttu-id="2638d-134">Om du vill förhandsgranska nya funktioner och ge tidig feedback rekommenderar vi att du konfigurerar vissa enheter i ditt företag `Beta` för eller `Preview` .</span><span class="sxs-lookup"><span data-stu-id="2638d-134">In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to `Beta` or `Preview`.</span></span>
+><span data-ttu-id="7fac5-134">Om du vill förhandsgranska nya funktioner och ge tidig feedback rekommenderar vi att du konfigurerar vissa enheter i ditt företag `Beta` för eller `Preview` .</span><span class="sxs-lookup"><span data-stu-id="7fac5-134">In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to `Beta` or `Preview`.</span></span>
 
-|<span data-ttu-id="2638d-135">Avsnitt</span><span class="sxs-lookup"><span data-stu-id="2638d-135">Section</span></span>|<span data-ttu-id="2638d-136">Värde</span><span class="sxs-lookup"><span data-stu-id="2638d-136">Value</span></span>|
+|<span data-ttu-id="7fac5-135">Avsnitt</span><span class="sxs-lookup"><span data-stu-id="7fac5-135">Section</span></span>|<span data-ttu-id="7fac5-136">Värde</span><span class="sxs-lookup"><span data-stu-id="7fac5-136">Value</span></span>|
 |:--|:--|
-| <span data-ttu-id="2638d-137">**Domän**</span><span class="sxs-lookup"><span data-stu-id="2638d-137">**Domain**</span></span> | `com.microsoft.autoupdate2` |
-| <span data-ttu-id="2638d-138">**Nyckel**</span><span class="sxs-lookup"><span data-stu-id="2638d-138">**Key**</span></span> | <span data-ttu-id="2638d-139">ChannelName</span><span class="sxs-lookup"><span data-stu-id="2638d-139">ChannelName</span></span> |
-| <span data-ttu-id="2638d-140">**Datatyp**</span><span class="sxs-lookup"><span data-stu-id="2638d-140">**Data type**</span></span> | <span data-ttu-id="2638d-141">Sträng</span><span class="sxs-lookup"><span data-stu-id="2638d-141">String</span></span> |
-| <span data-ttu-id="2638d-142">**Möjliga värden**</span><span class="sxs-lookup"><span data-stu-id="2638d-142">**Possible values**</span></span> | <span data-ttu-id="2638d-143">Beta</span><span class="sxs-lookup"><span data-stu-id="2638d-143">Beta</span></span> <br/> <span data-ttu-id="2638d-144">Förhandsgranska</span><span class="sxs-lookup"><span data-stu-id="2638d-144">Preview</span></span> <br/> <span data-ttu-id="2638d-145">Aktuell</span><span class="sxs-lookup"><span data-stu-id="2638d-145">Current</span></span> |
+| <span data-ttu-id="7fac5-137">**Domän**</span><span class="sxs-lookup"><span data-stu-id="7fac5-137">**Domain**</span></span> | `com.microsoft.autoupdate2` |
+| <span data-ttu-id="7fac5-138">**Nyckel**</span><span class="sxs-lookup"><span data-stu-id="7fac5-138">**Key**</span></span> | <span data-ttu-id="7fac5-139">ChannelName</span><span class="sxs-lookup"><span data-stu-id="7fac5-139">ChannelName</span></span> |
+| <span data-ttu-id="7fac5-140">**Datatyp**</span><span class="sxs-lookup"><span data-stu-id="7fac5-140">**Data type**</span></span> | <span data-ttu-id="7fac5-141">Sträng</span><span class="sxs-lookup"><span data-stu-id="7fac5-141">String</span></span> |
+| <span data-ttu-id="7fac5-142">**Möjliga värden**</span><span class="sxs-lookup"><span data-stu-id="7fac5-142">**Possible values**</span></span> | <span data-ttu-id="7fac5-143">Beta</span><span class="sxs-lookup"><span data-stu-id="7fac5-143">Beta</span></span> <br/> <span data-ttu-id="7fac5-144">Förhandsgranska</span><span class="sxs-lookup"><span data-stu-id="7fac5-144">Preview</span></span> <br/> <span data-ttu-id="7fac5-145">Aktuell</span><span class="sxs-lookup"><span data-stu-id="7fac5-145">Current</span></span> |
 |||
 
 >[!WARNING]
-><span data-ttu-id="2638d-146">Den här inställningen ändrar kanalen för alla program som uppdateras via Microsoft AutoUpdate.</span><span class="sxs-lookup"><span data-stu-id="2638d-146">This setting changes the channel for all applications that are updated through Microsoft AutoUpdate.</span></span> <span data-ttu-id="2638d-147">Om du vill ändra endast kanalen för Microsoft Defender för slutpunkt i macOS kör du följande kommando efter att `[channel-name]` du har ersatt med önskad kanal:</span><span class="sxs-lookup"><span data-stu-id="2638d-147">To change the channel only for Microsoft Defender for Endpoint on macOS, execute the following command after replacing `[channel-name]` with the desired channel:</span></span>
+><span data-ttu-id="7fac5-146">Den här inställningen ändrar kanalen för alla program som uppdateras via Microsoft AutoUpdate.</span><span class="sxs-lookup"><span data-stu-id="7fac5-146">This setting changes the channel for all applications that are updated through Microsoft AutoUpdate.</span></span> <span data-ttu-id="7fac5-147">Om du vill ändra endast kanalen för Microsoft Defender för slutpunkt i macOS kör du följande kommando efter att `[channel-name]` du har ersatt med önskad kanal:</span><span class="sxs-lookup"><span data-stu-id="7fac5-147">To change the channel only for Microsoft Defender for Endpoint on macOS, execute the following command after replacing `[channel-name]` with the desired channel:</span></span>
 > ```bash
 > defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
 > ```
 
-### <a name="set-update-check-frequency"></a><span data-ttu-id="2638d-148">Ange uppdateringsintervall</span><span class="sxs-lookup"><span data-stu-id="2638d-148">Set update check frequency</span></span>
+### <a name="set-update-check-frequency"></a><span data-ttu-id="7fac5-148">Ange uppdateringsintervall</span><span class="sxs-lookup"><span data-stu-id="7fac5-148">Set update check frequency</span></span>
 
-<span data-ttu-id="2638d-149">Ändra hur ofta MAU söker efter uppdateringar.</span><span class="sxs-lookup"><span data-stu-id="2638d-149">Change how often MAU searches for updates.</span></span>
+<span data-ttu-id="7fac5-149">Ändra hur ofta MAU söker efter uppdateringar.</span><span class="sxs-lookup"><span data-stu-id="7fac5-149">Change how often MAU searches for updates.</span></span>
 
-|<span data-ttu-id="2638d-150">Avsnitt</span><span class="sxs-lookup"><span data-stu-id="2638d-150">Section</span></span>|<span data-ttu-id="2638d-151">Värde</span><span class="sxs-lookup"><span data-stu-id="2638d-151">Value</span></span>|
+|<span data-ttu-id="7fac5-150">Avsnitt</span><span class="sxs-lookup"><span data-stu-id="7fac5-150">Section</span></span>|<span data-ttu-id="7fac5-151">Värde</span><span class="sxs-lookup"><span data-stu-id="7fac5-151">Value</span></span>|
 |:--|:--|
-| <span data-ttu-id="2638d-152">**Domän**</span><span class="sxs-lookup"><span data-stu-id="2638d-152">**Domain**</span></span> | `com.microsoft.autoupdate2` |
-| <span data-ttu-id="2638d-153">**Nyckel**</span><span class="sxs-lookup"><span data-stu-id="2638d-153">**Key**</span></span> | <span data-ttu-id="2638d-154">UpdateCheckFrequency</span><span class="sxs-lookup"><span data-stu-id="2638d-154">UpdateCheckFrequency</span></span> |
-| <span data-ttu-id="2638d-155">**Datatyp**</span><span class="sxs-lookup"><span data-stu-id="2638d-155">**Data type**</span></span> | <span data-ttu-id="2638d-156">Heltal</span><span class="sxs-lookup"><span data-stu-id="2638d-156">Integer</span></span> |
-| <span data-ttu-id="2638d-157">**Standardvärde**</span><span class="sxs-lookup"><span data-stu-id="2638d-157">**Default value**</span></span> | <span data-ttu-id="2638d-158">720 (minuter)</span><span class="sxs-lookup"><span data-stu-id="2638d-158">720 (minutes)</span></span> |
-| <span data-ttu-id="2638d-159">**Kommentar**</span><span class="sxs-lookup"><span data-stu-id="2638d-159">**Comment**</span></span> | <span data-ttu-id="2638d-160">Det här värdet anges i minuter.</span><span class="sxs-lookup"><span data-stu-id="2638d-160">This value is set in minutes.</span></span> |
+| <span data-ttu-id="7fac5-152">**Domän**</span><span class="sxs-lookup"><span data-stu-id="7fac5-152">**Domain**</span></span> | `com.microsoft.autoupdate2` |
+| <span data-ttu-id="7fac5-153">**Nyckel**</span><span class="sxs-lookup"><span data-stu-id="7fac5-153">**Key**</span></span> | <span data-ttu-id="7fac5-154">UpdateCheckFrequency</span><span class="sxs-lookup"><span data-stu-id="7fac5-154">UpdateCheckFrequency</span></span> |
+| <span data-ttu-id="7fac5-155">**Datatyp**</span><span class="sxs-lookup"><span data-stu-id="7fac5-155">**Data type**</span></span> | <span data-ttu-id="7fac5-156">Heltal</span><span class="sxs-lookup"><span data-stu-id="7fac5-156">Integer</span></span> |
+| <span data-ttu-id="7fac5-157">**Standardvärde**</span><span class="sxs-lookup"><span data-stu-id="7fac5-157">**Default value**</span></span> | <span data-ttu-id="7fac5-158">720 (minuter)</span><span class="sxs-lookup"><span data-stu-id="7fac5-158">720 (minutes)</span></span> |
+| <span data-ttu-id="7fac5-159">**Kommentar**</span><span class="sxs-lookup"><span data-stu-id="7fac5-159">**Comment**</span></span> | <span data-ttu-id="7fac5-160">Det här värdet anges i minuter.</span><span class="sxs-lookup"><span data-stu-id="7fac5-160">This value is set in minutes.</span></span> |
 
 
-### <a name="change-how-mau-interacts-with-updates"></a><span data-ttu-id="2638d-161">Ändra hur MAU interagerar med uppdateringar</span><span class="sxs-lookup"><span data-stu-id="2638d-161">Change how MAU interacts with updates</span></span>
+### <a name="change-how-mau-interacts-with-updates"></a><span data-ttu-id="7fac5-161">Ändra hur MAU interagerar med uppdateringar</span><span class="sxs-lookup"><span data-stu-id="7fac5-161">Change how MAU interacts with updates</span></span>
 
-<span data-ttu-id="2638d-162">Ändra hur MAU söker efter uppdateringar.</span><span class="sxs-lookup"><span data-stu-id="2638d-162">Change how MAU searches for updates.</span></span>
+<span data-ttu-id="7fac5-162">Ändra hur MAU söker efter uppdateringar.</span><span class="sxs-lookup"><span data-stu-id="7fac5-162">Change how MAU searches for updates.</span></span>
 
-|<span data-ttu-id="2638d-163">Avsnitt</span><span class="sxs-lookup"><span data-stu-id="2638d-163">Section</span></span>|<span data-ttu-id="2638d-164">Värde</span><span class="sxs-lookup"><span data-stu-id="2638d-164">Value</span></span>|
+|<span data-ttu-id="7fac5-163">Avsnitt</span><span class="sxs-lookup"><span data-stu-id="7fac5-163">Section</span></span>|<span data-ttu-id="7fac5-164">Värde</span><span class="sxs-lookup"><span data-stu-id="7fac5-164">Value</span></span>|
 |:--|:--|
-| <span data-ttu-id="2638d-165">**Domän**</span><span class="sxs-lookup"><span data-stu-id="2638d-165">**Domain**</span></span> | `com.microsoft.autoupdate2` |
-| <span data-ttu-id="2638d-166">**Nyckel**</span><span class="sxs-lookup"><span data-stu-id="2638d-166">**Key**</span></span> | <span data-ttu-id="2638d-167">HowToCheck</span><span class="sxs-lookup"><span data-stu-id="2638d-167">HowToCheck</span></span> |
-| <span data-ttu-id="2638d-168">**Datatyp**</span><span class="sxs-lookup"><span data-stu-id="2638d-168">**Data type**</span></span> | <span data-ttu-id="2638d-169">Sträng</span><span class="sxs-lookup"><span data-stu-id="2638d-169">String</span></span> |
-| <span data-ttu-id="2638d-170">**Möjliga värden**</span><span class="sxs-lookup"><span data-stu-id="2638d-170">**Possible values**</span></span> | <span data-ttu-id="2638d-171">Manuellt</span><span class="sxs-lookup"><span data-stu-id="2638d-171">Manual</span></span> <br/> <span data-ttu-id="2638d-172">AutomaticCheck</span><span class="sxs-lookup"><span data-stu-id="2638d-172">AutomaticCheck</span></span> <br/> <span data-ttu-id="2638d-173">AutomaticDownload</span><span class="sxs-lookup"><span data-stu-id="2638d-173">AutomaticDownload</span></span> |
-| <span data-ttu-id="2638d-174">**Kommentar**</span><span class="sxs-lookup"><span data-stu-id="2638d-174">**Comment**</span></span> |  <span data-ttu-id="2638d-175">Observera att AutomaticDownload gör en nedladdning och installation utan att du behöver göra det.</span><span class="sxs-lookup"><span data-stu-id="2638d-175">Note that AutomaticDownload will do a download and install silently if possible.</span></span> |
+| <span data-ttu-id="7fac5-165">**Domän**</span><span class="sxs-lookup"><span data-stu-id="7fac5-165">**Domain**</span></span> | `com.microsoft.autoupdate2` |
+| <span data-ttu-id="7fac5-166">**Nyckel**</span><span class="sxs-lookup"><span data-stu-id="7fac5-166">**Key**</span></span> | <span data-ttu-id="7fac5-167">HowToCheck</span><span class="sxs-lookup"><span data-stu-id="7fac5-167">HowToCheck</span></span> |
+| <span data-ttu-id="7fac5-168">**Datatyp**</span><span class="sxs-lookup"><span data-stu-id="7fac5-168">**Data type**</span></span> | <span data-ttu-id="7fac5-169">Sträng</span><span class="sxs-lookup"><span data-stu-id="7fac5-169">String</span></span> |
+| <span data-ttu-id="7fac5-170">**Möjliga värden**</span><span class="sxs-lookup"><span data-stu-id="7fac5-170">**Possible values**</span></span> | <span data-ttu-id="7fac5-171">Manuellt</span><span class="sxs-lookup"><span data-stu-id="7fac5-171">Manual</span></span> <br/> <span data-ttu-id="7fac5-172">AutomaticCheck</span><span class="sxs-lookup"><span data-stu-id="7fac5-172">AutomaticCheck</span></span> <br/> <span data-ttu-id="7fac5-173">AutomaticDownload</span><span class="sxs-lookup"><span data-stu-id="7fac5-173">AutomaticDownload</span></span> |
+| <span data-ttu-id="7fac5-174">**Kommentar**</span><span class="sxs-lookup"><span data-stu-id="7fac5-174">**Comment**</span></span> |  <span data-ttu-id="7fac5-175">Observera att AutomaticDownload gör en nedladdning och installation utan att du behöver göra det.</span><span class="sxs-lookup"><span data-stu-id="7fac5-175">Note that AutomaticDownload will do a download and install silently if possible.</span></span> |
 
 
-### <a name="change-whether-the-check-for-updates-button-is-enabled"></a><span data-ttu-id="2638d-176">Ändra om knappen Sök efter uppdateringar ska vara aktiverad</span><span class="sxs-lookup"><span data-stu-id="2638d-176">Change whether the "Check for Updates" button is enabled</span></span>
+### <a name="change-whether-the-check-for-updates-button-is-enabled"></a><span data-ttu-id="7fac5-176">Ändra om knappen Sök efter uppdateringar ska vara aktiverad</span><span class="sxs-lookup"><span data-stu-id="7fac5-176">Change whether the "Check for Updates" button is enabled</span></span>
 
-<span data-ttu-id="2638d-177">Ändra om lokala användare ska kunna klicka på alternativet "Sök efter uppdateringar" i användargränssnittet för Microsoft AutoUpdate.</span><span class="sxs-lookup"><span data-stu-id="2638d-177">Change whether local users will be able to click the "Check for Updates" option in the Microsoft AutoUpdate user interface.</span></span>
+<span data-ttu-id="7fac5-177">Ändra om lokala användare ska kunna klicka på alternativet "Sök efter uppdateringar" i användargränssnittet för Microsoft AutoUpdate.</span><span class="sxs-lookup"><span data-stu-id="7fac5-177">Change whether local users will be able to click the "Check for Updates" option in the Microsoft AutoUpdate user interface.</span></span>
 
-|<span data-ttu-id="2638d-178">Avsnitt</span><span class="sxs-lookup"><span data-stu-id="2638d-178">Section</span></span>|<span data-ttu-id="2638d-179">Värde</span><span class="sxs-lookup"><span data-stu-id="2638d-179">Value</span></span>|
+|<span data-ttu-id="7fac5-178">Avsnitt</span><span class="sxs-lookup"><span data-stu-id="7fac5-178">Section</span></span>|<span data-ttu-id="7fac5-179">Värde</span><span class="sxs-lookup"><span data-stu-id="7fac5-179">Value</span></span>|
 |:--|:--|
-| <span data-ttu-id="2638d-180">**Domän**</span><span class="sxs-lookup"><span data-stu-id="2638d-180">**Domain**</span></span> | `com.microsoft.autoupdate2` |
-| <span data-ttu-id="2638d-181">**Nyckel**</span><span class="sxs-lookup"><span data-stu-id="2638d-181">**Key**</span></span> | <span data-ttu-id="2638d-182">EnableCheckForUpdatesButton</span><span class="sxs-lookup"><span data-stu-id="2638d-182">EnableCheckForUpdatesButton</span></span> |
-| <span data-ttu-id="2638d-183">**Datatyp**</span><span class="sxs-lookup"><span data-stu-id="2638d-183">**Data type**</span></span> | <span data-ttu-id="2638d-184">Boolesk</span><span class="sxs-lookup"><span data-stu-id="2638d-184">Boolean</span></span> |
-| <span data-ttu-id="2638d-185">**Möjliga värden**</span><span class="sxs-lookup"><span data-stu-id="2638d-185">**Possible values**</span></span> | <span data-ttu-id="2638d-186">True (standard)</span><span class="sxs-lookup"><span data-stu-id="2638d-186">True (default)</span></span> <br/> <span data-ttu-id="2638d-187">False</span><span class="sxs-lookup"><span data-stu-id="2638d-187">False</span></span> |
+| <span data-ttu-id="7fac5-180">**Domän**</span><span class="sxs-lookup"><span data-stu-id="7fac5-180">**Domain**</span></span> | `com.microsoft.autoupdate2` |
+| <span data-ttu-id="7fac5-181">**Nyckel**</span><span class="sxs-lookup"><span data-stu-id="7fac5-181">**Key**</span></span> | <span data-ttu-id="7fac5-182">EnableCheckForUpdatesButton</span><span class="sxs-lookup"><span data-stu-id="7fac5-182">EnableCheckForUpdatesButton</span></span> |
+| <span data-ttu-id="7fac5-183">**Datatyp**</span><span class="sxs-lookup"><span data-stu-id="7fac5-183">**Data type**</span></span> | <span data-ttu-id="7fac5-184">Boolesk</span><span class="sxs-lookup"><span data-stu-id="7fac5-184">Boolean</span></span> |
+| <span data-ttu-id="7fac5-185">**Möjliga värden**</span><span class="sxs-lookup"><span data-stu-id="7fac5-185">**Possible values**</span></span> | <span data-ttu-id="7fac5-186">True (standard)</span><span class="sxs-lookup"><span data-stu-id="7fac5-186">True (default)</span></span> <br/> <span data-ttu-id="7fac5-187">False</span><span class="sxs-lookup"><span data-stu-id="7fac5-187">False</span></span> |
 
 
-### <a name="disable-insider-checkbox"></a><span data-ttu-id="2638d-188">Kryssrutan Inaktivera Insider</span><span class="sxs-lookup"><span data-stu-id="2638d-188">Disable Insider checkbox</span></span>
+### <a name="disable-insider-checkbox"></a><span data-ttu-id="7fac5-188">Kryssrutan Inaktivera Insider</span><span class="sxs-lookup"><span data-stu-id="7fac5-188">Disable Insider checkbox</span></span>
 
-<span data-ttu-id="2638d-189">Inställd på sant för att göra "Gå med i Office Insider Program..." inte tillgänglig/nedtonad för användare.</span><span class="sxs-lookup"><span data-stu-id="2638d-189">Set to true to make the "Join the Office Insider Program..." checkbox unavailable / greyed out to users.</span></span>
+<span data-ttu-id="7fac5-189">Inställd på sant för att göra "Gå med i Office Insider Program..." inte tillgänglig/nedtonad för användare.</span><span class="sxs-lookup"><span data-stu-id="7fac5-189">Set to true to make the "Join the Office Insider Program..." checkbox unavailable / greyed out to users.</span></span>
 
-|<span data-ttu-id="2638d-190">Avsnitt</span><span class="sxs-lookup"><span data-stu-id="2638d-190">Section</span></span>|<span data-ttu-id="2638d-191">Värde</span><span class="sxs-lookup"><span data-stu-id="2638d-191">Value</span></span>|
+|<span data-ttu-id="7fac5-190">Avsnitt</span><span class="sxs-lookup"><span data-stu-id="7fac5-190">Section</span></span>|<span data-ttu-id="7fac5-191">Värde</span><span class="sxs-lookup"><span data-stu-id="7fac5-191">Value</span></span>|
 |:--|:--|
-| <span data-ttu-id="2638d-192">**Domän**</span><span class="sxs-lookup"><span data-stu-id="2638d-192">**Domain**</span></span> | `com.microsoft.autoupdate2` |
-| <span data-ttu-id="2638d-193">**Nyckel**</span><span class="sxs-lookup"><span data-stu-id="2638d-193">**Key**</span></span> | <span data-ttu-id="2638d-194">DisableInsiderCheckbox</span><span class="sxs-lookup"><span data-stu-id="2638d-194">DisableInsiderCheckbox</span></span> |
-| <span data-ttu-id="2638d-195">**Datatyp**</span><span class="sxs-lookup"><span data-stu-id="2638d-195">**Data type**</span></span> | <span data-ttu-id="2638d-196">Boolesk</span><span class="sxs-lookup"><span data-stu-id="2638d-196">Boolean</span></span> |
-| <span data-ttu-id="2638d-197">**Möjliga värden**</span><span class="sxs-lookup"><span data-stu-id="2638d-197">**Possible values**</span></span> | <span data-ttu-id="2638d-198">False (standard)</span><span class="sxs-lookup"><span data-stu-id="2638d-198">False (default)</span></span> <br/> <span data-ttu-id="2638d-199">True</span><span class="sxs-lookup"><span data-stu-id="2638d-199">True</span></span> |
+| <span data-ttu-id="7fac5-192">**Domän**</span><span class="sxs-lookup"><span data-stu-id="7fac5-192">**Domain**</span></span> | `com.microsoft.autoupdate2` |
+| <span data-ttu-id="7fac5-193">**Nyckel**</span><span class="sxs-lookup"><span data-stu-id="7fac5-193">**Key**</span></span> | <span data-ttu-id="7fac5-194">DisableInsiderCheckbox</span><span class="sxs-lookup"><span data-stu-id="7fac5-194">DisableInsiderCheckbox</span></span> |
+| <span data-ttu-id="7fac5-195">**Datatyp**</span><span class="sxs-lookup"><span data-stu-id="7fac5-195">**Data type**</span></span> | <span data-ttu-id="7fac5-196">Boolesk</span><span class="sxs-lookup"><span data-stu-id="7fac5-196">Boolean</span></span> |
+| <span data-ttu-id="7fac5-197">**Möjliga värden**</span><span class="sxs-lookup"><span data-stu-id="7fac5-197">**Possible values**</span></span> | <span data-ttu-id="7fac5-198">False (standard)</span><span class="sxs-lookup"><span data-stu-id="7fac5-198">False (default)</span></span> <br/> <span data-ttu-id="7fac5-199">True</span><span class="sxs-lookup"><span data-stu-id="7fac5-199">True</span></span> |
 
 
-### <a name="limit-the-telemetry-that-is-sent-from-mau"></a><span data-ttu-id="2638d-200">Begränsa telemetrin som skickas från MAU</span><span class="sxs-lookup"><span data-stu-id="2638d-200">Limit the telemetry that is sent from MAU</span></span>
+### <a name="limit-the-telemetry-that-is-sent-from-mau"></a><span data-ttu-id="7fac5-200">Begränsa telemetrin som skickas från MAU</span><span class="sxs-lookup"><span data-stu-id="7fac5-200">Limit the telemetry that is sent from MAU</span></span>
 
-<span data-ttu-id="2638d-201">Ange falskt om du vill skicka minimalt med data om hjärtslag, ingen programanvändning och ingen miljöinformation.</span><span class="sxs-lookup"><span data-stu-id="2638d-201">Set to false to send minimal heartbeat data, no application usage, and no environment details.</span></span>
+<span data-ttu-id="7fac5-201">Ange falskt om du vill skicka minimalt med data om hjärtslag, ingen programanvändning och ingen miljöinformation.</span><span class="sxs-lookup"><span data-stu-id="7fac5-201">Set to false to send minimal heartbeat data, no application usage, and no environment details.</span></span>
 
-|<span data-ttu-id="2638d-202">Avsnitt</span><span class="sxs-lookup"><span data-stu-id="2638d-202">Section</span></span>|<span data-ttu-id="2638d-203">Värde</span><span class="sxs-lookup"><span data-stu-id="2638d-203">Value</span></span>|
+|<span data-ttu-id="7fac5-202">Avsnitt</span><span class="sxs-lookup"><span data-stu-id="7fac5-202">Section</span></span>|<span data-ttu-id="7fac5-203">Värde</span><span class="sxs-lookup"><span data-stu-id="7fac5-203">Value</span></span>|
 |:--|:--|
-| <span data-ttu-id="2638d-204">**Domän**</span><span class="sxs-lookup"><span data-stu-id="2638d-204">**Domain**</span></span> | `com.microsoft.autoupdate2` |
-| <span data-ttu-id="2638d-205">**Nyckel**</span><span class="sxs-lookup"><span data-stu-id="2638d-205">**Key**</span></span> | <span data-ttu-id="2638d-206">SendAllTelemetryEnabled</span><span class="sxs-lookup"><span data-stu-id="2638d-206">SendAllTelemetryEnabled</span></span> |
-| <span data-ttu-id="2638d-207">**Datatyp**</span><span class="sxs-lookup"><span data-stu-id="2638d-207">**Data type**</span></span> | <span data-ttu-id="2638d-208">Boolesk</span><span class="sxs-lookup"><span data-stu-id="2638d-208">Boolean</span></span> |
-| <span data-ttu-id="2638d-209">**Möjliga värden**</span><span class="sxs-lookup"><span data-stu-id="2638d-209">**Possible values**</span></span> | <span data-ttu-id="2638d-210">True (standard)</span><span class="sxs-lookup"><span data-stu-id="2638d-210">True (default)</span></span> <br/> <span data-ttu-id="2638d-211">False</span><span class="sxs-lookup"><span data-stu-id="2638d-211">False</span></span> |
+| <span data-ttu-id="7fac5-204">**Domän**</span><span class="sxs-lookup"><span data-stu-id="7fac5-204">**Domain**</span></span> | `com.microsoft.autoupdate2` |
+| <span data-ttu-id="7fac5-205">**Nyckel**</span><span class="sxs-lookup"><span data-stu-id="7fac5-205">**Key**</span></span> | <span data-ttu-id="7fac5-206">SendAllTelemetryEnabled</span><span class="sxs-lookup"><span data-stu-id="7fac5-206">SendAllTelemetryEnabled</span></span> |
+| <span data-ttu-id="7fac5-207">**Datatyp**</span><span class="sxs-lookup"><span data-stu-id="7fac5-207">**Data type**</span></span> | <span data-ttu-id="7fac5-208">Boolesk</span><span class="sxs-lookup"><span data-stu-id="7fac5-208">Boolean</span></span> |
+| <span data-ttu-id="7fac5-209">**Möjliga värden**</span><span class="sxs-lookup"><span data-stu-id="7fac5-209">**Possible values**</span></span> | <span data-ttu-id="7fac5-210">True (standard)</span><span class="sxs-lookup"><span data-stu-id="7fac5-210">True (default)</span></span> <br/> <span data-ttu-id="7fac5-211">False</span><span class="sxs-lookup"><span data-stu-id="7fac5-211">False</span></span> |
 
 
-## <a name="example-configuration-profile"></a><span data-ttu-id="2638d-212">Exempel på konfigurationsprofil</span><span class="sxs-lookup"><span data-stu-id="2638d-212">Example configuration profile</span></span>
+## <a name="example-configuration-profile"></a><span data-ttu-id="7fac5-212">Exempel på konfigurationsprofil</span><span class="sxs-lookup"><span data-stu-id="7fac5-212">Example configuration profile</span></span>
 
-<span data-ttu-id="2638d-213">Följande konfigurationsprofil används för att:</span><span class="sxs-lookup"><span data-stu-id="2638d-213">The following configuration profile is used to:</span></span>
-- <span data-ttu-id="2638d-214">Placera enheten i Beta-kanalen</span><span class="sxs-lookup"><span data-stu-id="2638d-214">Place the device in the Beta channel</span></span>
-- <span data-ttu-id="2638d-215">Ladda ned och installera uppdateringar automatiskt</span><span class="sxs-lookup"><span data-stu-id="2638d-215">Automatically download and install updates</span></span>
-- <span data-ttu-id="2638d-216">Aktivera knappen Sök efter uppdateringar i användargränssnittet</span><span class="sxs-lookup"><span data-stu-id="2638d-216">Enable the "Check for updates" button in the user interface</span></span>
-- <span data-ttu-id="2638d-217">Tillåt användare på enheten att registrera sig i Insider-kanalerna</span><span class="sxs-lookup"><span data-stu-id="2638d-217">Allow users on the device to enroll into the Insider channels</span></span>
+<span data-ttu-id="7fac5-213">Följande konfigurationsprofil används för att:</span><span class="sxs-lookup"><span data-stu-id="7fac5-213">The following configuration profile is used to:</span></span>
+- <span data-ttu-id="7fac5-214">Placera enheten i Beta-kanalen</span><span class="sxs-lookup"><span data-stu-id="7fac5-214">Place the device in the Beta channel</span></span>
+- <span data-ttu-id="7fac5-215">Ladda ned och installera uppdateringar automatiskt</span><span class="sxs-lookup"><span data-stu-id="7fac5-215">Automatically download and install updates</span></span>
+- <span data-ttu-id="7fac5-216">Aktivera knappen Sök efter uppdateringar i användargränssnittet</span><span class="sxs-lookup"><span data-stu-id="7fac5-216">Enable the "Check for updates" button in the user interface</span></span>
+- <span data-ttu-id="7fac5-217">Tillåt användare på enheten att registrera sig i Insider-kanalerna</span><span class="sxs-lookup"><span data-stu-id="7fac5-217">Allow users on the device to enroll into the Insider channels</span></span>
 
-### <a name="jamf"></a><span data-ttu-id="2638d-218">JAMF</span><span class="sxs-lookup"><span data-stu-id="2638d-218">JAMF</span></span>
+### <a name="jamf"></a><span data-ttu-id="7fac5-218">JAMF</span><span class="sxs-lookup"><span data-stu-id="7fac5-218">JAMF</span></span>
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -181,7 +181,7 @@ ms.locfileid: "51860321"
 </plist>
 ```
 
-### <a name="intune"></a><span data-ttu-id="2638d-219">Intune</span><span class="sxs-lookup"><span data-stu-id="2638d-219">Intune</span></span>
+### <a name="intune"></a><span data-ttu-id="7fac5-219">Intune</span><span class="sxs-lookup"><span data-stu-id="7fac5-219">Intune</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -243,10 +243,10 @@ ms.locfileid: "51860321"
 </plist>
 ```
 
-<span data-ttu-id="2638d-220">Om du vill konfigurera MAU kan du distribuera den här konfigurationsprofilen från det hanteringsverktyg som företaget använder:</span><span class="sxs-lookup"><span data-stu-id="2638d-220">To configure MAU, you can deploy this configuration profile from the management tool that your enterprise is using:</span></span>
-- <span data-ttu-id="2638d-221">Från JAMF laddar du upp den här konfigurationsprofilen och anger preference domain *till com.microsoft.autoupdate2*.</span><span class="sxs-lookup"><span data-stu-id="2638d-221">From JAMF, upload this configuration profile and set the Preference Domain to *com.microsoft.autoupdate2*.</span></span>
-- <span data-ttu-id="2638d-222">Från Intune laddar du upp den här konfigurationsprofilen och anger namnet på den anpassade konfigurationsprofilen *på com.microsoft.autoupdate2.*</span><span class="sxs-lookup"><span data-stu-id="2638d-222">From Intune, upload this configuration profile and set the custom configuration profile name to *com.microsoft.autoupdate2*.</span></span>
+<span data-ttu-id="7fac5-220">Om du vill konfigurera MAU kan du distribuera den här konfigurationsprofilen från det hanteringsverktyg som företaget använder:</span><span class="sxs-lookup"><span data-stu-id="7fac5-220">To configure MAU, you can deploy this configuration profile from the management tool that your enterprise is using:</span></span>
+- <span data-ttu-id="7fac5-221">Från JAMF laddar du upp den här konfigurationsprofilen och anger preference domain *till com.microsoft.autoupdate2*.</span><span class="sxs-lookup"><span data-stu-id="7fac5-221">From JAMF, upload this configuration profile and set the Preference Domain to *com.microsoft.autoupdate2*.</span></span>
+- <span data-ttu-id="7fac5-222">Från Intune laddar du upp den här konfigurationsprofilen och anger namnet på den anpassade konfigurationsprofilen *på com.microsoft.autoupdate2.*</span><span class="sxs-lookup"><span data-stu-id="7fac5-222">From Intune, upload this configuration profile and set the custom configuration profile name to *com.microsoft.autoupdate2*.</span></span>
 
-## <a name="resources"></a><span data-ttu-id="2638d-223">Resurser</span><span class="sxs-lookup"><span data-stu-id="2638d-223">Resources</span></span>
+## <a name="resources"></a><span data-ttu-id="7fac5-223">Resurser</span><span class="sxs-lookup"><span data-stu-id="7fac5-223">Resources</span></span>
 
-- [<span data-ttu-id="2638d-224">referens för msupdate</span><span class="sxs-lookup"><span data-stu-id="2638d-224">msupdate reference</span></span>](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate)
+- [<span data-ttu-id="7fac5-224">referens för msupdate</span><span class="sxs-lookup"><span data-stu-id="7fac5-224">msupdate reference</span></span>](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate)
