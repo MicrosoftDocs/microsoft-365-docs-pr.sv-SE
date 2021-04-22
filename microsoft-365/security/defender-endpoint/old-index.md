@@ -1,7 +1,7 @@
 ---
 title: Skydd mot hot (Windows 10)
 description: Microsoft Defender för Endpoint är en enhetlig plattform för förebyggande skydd, identifiering efter intrång, automatiserad undersökning och svar.
-keywords: Skydd mot hot, Microsoft Defender Avancerat skydd, minskning av attackytan, nästa generations skydd, identifiering och svar av slutpunkter, automatisk undersökning och svar, Microsoft Threat-experter, Microsoft Secure Score för enheter, avancerad sökning, sökning efter cyberhot, skydd mot webbhot
+keywords: Skydd mot hot, Microsoft Defender för Endpoint, minskning av attackytan, nästa generations skydd, identifiering och svar av slutpunkter, automatisk undersökning och svar, Microsoft Threat-experter, Microsoft Secure Score för enheter, avancerad sökning, sökning efter cyberhot, skydd mot webbhot
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 4206519d62feb82bbc297659e01b0cc3902b83dc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3098c2786874650ad14d226beacd5ec760decef0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51069205"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934939"
 ---
 # <a name="threat-protection"></a>Skydd mot hot
 [Microsoft Defender för Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) är en enhetlig plattform för förebyggande skydd, identifiering efter intrång, automatiserad undersökning och svar. Defender för Endpoint skyddar slutpunkter mot cyberhot, identifierar avancerade attacker och databrott, automatiserar säkerhetstillbud och förbättrar säkerhetsriskerna.
@@ -27,7 +27,7 @@ ms.locfileid: "51069205"
 > [!TIP]
 > Gör det enkelt för användarna att få tillgång till molntjänster och lokala program och möjliggöra moderna hanteringsfunktioner för alla enheter. Mer information finns i Skydda [din fjärranslutna arbetsstyrka.](https://docs.microsoft.com/enterprise-mobility-security/remote-work/) 
 
-<center><h2>Microsoft Defender för Slutpunkt</center></h2>
+<center><h2>Microsoft Defender för Endpoint</center></h2>
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="threat and vulnerability icon"> <br><b>Hot & sårbarhetshantering</b></center></a></td>
@@ -52,14 +52,14 @@ ms.locfileid: "51069205"
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4obJq]
 
-**[Hot & sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)**<br>
+**[Hot och sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)**<br>
 Den inbyggda funktionen använder en spelförändrande riskbaserad metod för identifiering, prioritering och åtgärd av svagheter och felkonfigurationer i slutpunkten.
 
 - [Översikt & om hot och sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)
 - [Komma igång](tvm-prerequisites.md)
 - [Komma åt din säkerhet](tvm-dashboard-insights.md)
 - [Förbättra säkerheten och minska risken](tvm-security-recommendation.md)
-- [Förstå säkerhetsproblem på dina enheter](tvm-software-inventory.md)
+- [Förstå sårbarhet på dina enheter](tvm-software-inventory.md)
 
 <a name="asr"></a>
 
@@ -69,11 +69,11 @@ Minskningsuppsättningen för attackytan ger den första försvarslinjen i höge
 - [Maskinvarubaserad avgränsning](overview-hardware-based-isolation.md)
 - [Applikationskontroll](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
 - [Enhetskontroll](https://docs.microsoft.com/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
-- [Sårbarhetsskydd](exploit-protection.md)
+- [Exploateringsskydd](exploit-protection.md)
 - [Nätverksskydd](network-protection.md), [webbskydd](web-protection-overview.md)
-- [Reglerad mappåtkomst](controlled-folders.md)
+- [Kontrollerad mappåtkomst](controlled-folders.md)
 - [Nätverksbrandvägg](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
-- [Minskningsregler för attackytor](attack-surface-reduction.md)
+- [Regler för minskning av attackytan](attack-surface-reduction.md)
 
 <a name="ngp"></a>
 
@@ -88,7 +88,7 @@ För att ytterligare förstärka nätverkets säkerhets perimeter använder Micr
 
 <a name="edr"></a>
 
-**[Identifiering och svar av slutpunkter](overview-endpoint-detection-response.md)**<br>
+**[Identifiering och svar för slutpunkt](overview-endpoint-detection-response.md)**<br>
 Funktioner för identifiering och svar av slutpunkter används för att identifiera, undersöka och svara på intrångsförsök och aktiva intrång. Med Avancerad sökning har du ett frågebaserat verktyg för hotsökning som gör att du proaktivt kan hitta överträdelser och skapa anpassade identifieringar.
 
 - [Varningar](alerts-queue.md)
@@ -106,12 +106,12 @@ Funktioner för identifiering och svar av slutpunkter används för att identifi
 Förutom att snabbt svara på avancerade attacker erbjuder Microsoft Defender för Endpoint funktioner för automatisk undersökning och åtgärder som hjälper till att minska mängden aviseringar i minuter i skala.
 
 - [Automatiserad undersökning och åtgärder](automated-investigations.md)
-- [Visa detaljer och resultat av automatiserade utredningar](auto-investigation-action-center.md)
-- [Visa och godkänna åtgärder](manage-auto-investigation.md)
+- [Visa detaljer och resultat av automatiserade undersökningar](auto-investigation-action-center.md)
+- [Visa och godkänna reparationsåtgärder](manage-auto-investigation.md)
 
 <a name="mte"></a>
 
-**[Microsoft Threat Experts](microsoft-threat-experts.md)**<br>
+**[Microsoft Hotexperter](microsoft-threat-experts.md)**<br>
 Med Microsoft Defender för Endpoints nya tjänst för att hantera hot får du proaktiva produkter, prioritering samt ytterligare kontext och insikter. Microsoft Threat Experts ger ytterligare möjligheter för säkerhetscenter (SOCs) att identifiera och reagera på hot snabbt och korrekt.
 
 - [Riktad attackavisering](microsoft-threat-experts.md)

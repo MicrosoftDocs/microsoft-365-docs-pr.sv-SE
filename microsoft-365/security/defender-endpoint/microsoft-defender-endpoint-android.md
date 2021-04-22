@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender för slutpunkt på Android
+title: Microsoft Defender för Endpoint för Android
 ms.reviewer: ''
 description: Beskriver hur du installerar och använder Microsoft Defender för slutpunkt på Android
-keywords: microsoft, defender, atp, android, installation, distribuera, avinstallation, intune
+keywords: microsoft, defender, Microsoft Defender för slutpunkt, android, installation, distribuera, avinstallation, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8a78fc7e07f89c2e13a698ee526403989f26dd65
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 35a43aa7bfcd9ed8c83d10c2ec44a974b03bca72
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768848"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935575"
 ---
-# <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender för slutpunkt på Android
+# <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender för Endpoint för Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -62,7 +62,7 @@ I det här avsnittet beskrivs hur du installerar, konfigurerar, uppdaterar och a
     -   Åtkomst till Microsoft Defender Säkerhetscenter-portalen.
 
         > [!NOTE]
-        > Microsoft Intune är den enda MDM-lösning (Mobile Device Management) som stöds för distribution av Microsoft Defender för slutpunkt på Android. För närvarande stöds endast registrerade enheter för tvingande Defender för Endpoint för Android-relaterade efterlevnadsprinciper för enheter i Intune. 
+        > Microsoft Intune är den enda MDM-lösning (Mobile Device Management) som stöds för distribution av Microsoft Defender för slutpunkt på Android. För närvarande stöds endast registrerade enheter för tvingande Defender för Slutpunkt på Android-relaterade efterlevnadsprinciper för enheter i Intune. 
 
     -   Access [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431)för att distribuera appen till registrerade användargrupper i organisationen.
 
@@ -90,6 +90,6 @@ Anvisningar om hur du konfigurerar Microsoft Defender för slutpunkt på Android
 
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Distribuera Microsoft Defender för slutpunkt på Android med Microsoft Intune](android-intune.md)
-- [Konfigurera Microsoft Defender för slutpunkt på Android-funktioner](android-configure.md)
+- [Distribuera Microsoft Defender för Endpoint för Android med Microsoft Intune](android-intune.md)
+- [Konfigurera Microsoft Defender för Endpoint för Android-funktioner](android-configure.md)
 

@@ -1,7 +1,7 @@
 ---
 title: Förbereda testlabbmiljön i Microsoft 365 Defender
 description: Förbereda godkännanden från intressenter, tidslinjer, miljööverväganden och införandeordningen när du beställer en testlabb eller pilotmiljö i Microsoft 365 Defender
-keywords: MTP-provförberedelser, MTP-pilotförberedelser, förberedelser för att köra ett MTP-pilotprojekt, köra ett MTP-projekt, distribuera, förbereda, intressenter, tidslinje, miljö, slutpunkt, server, hantering, införande
+keywords: Utvärderingsförberedelser av Microsoft 365 Defender, pilotförberedelser av Microsoft 365 Defender, köra ett pilotprojekt i Microsoft 365 Defender, distribuera, förbereda, intressenter, tidslinje, miljö, slutpunkt, server, hantering, införande
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: dada110faca71c9e8fcf384eb5bb0a78faefaad9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d5e98cead84c0be76ca252b23f3c2d062b22dd73
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199143"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935623"
 ---
 # <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Förbereda utvärderingslabb eller pilotmiljö med Microsoft 365 Defender
 
@@ -45,7 +45,7 @@ Du befinner dig för närvarande i förberedelsefasen.
 
 Förberedelse är avgörande för en lyckad distribution. Det här avsnittet vägleder dig genom vad du behöver tänka på när du förbereder för att skapa ett testlabb eller pilotmiljö för din Microsoft 365 Defender-distribution.
 
-## <a name="prerequisites"></a>Krav
+## <a name="prerequisites"></a>Förutsättningar
 Läs mer om licens-, maskinvaru- och programvarukrav och andra konfigurationsinställningar för att tillhandahålla och använda Microsoft 365 Defender. Se minimikraven för [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/prerequisites), Microsoft Defender för [slutpunkt,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements)Microsoft Defender för [Office 365,](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) [Microsoft Defender för](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)identitet och Microsoft [Cloud App-säkerhet.](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)
 
 ## <a name="stakeholders-and-sign-off"></a>Intressenter och av inloggning
@@ -111,5 +111,5 @@ I följande tabell visas den ordning som Microsoft rekommenderar för konfigurat
 |Microsoft Defender för Endpoint | Microsoft Defender för Endpointslutpunktsidentifiering och svarsfunktioner tillhandahåller avancerad identifiering av attacker som finns i närheten och kan vidtas. Säkerhetsanalytiker kan effektivt prioritera varningar, få synlighet över helheten av ett intrång och vidta åtgärder för att åtgärda hot. <br> [Lära sig mer.](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                   |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>Nästa steg
-|![Fas 2: Konfigurera](../../media/setup.png) <br>[Fas 2: Konfigurera](setup-m365deval.md) | Konfigurera utvärderingslabb eller pilotmiljö med Microsoft 365 Defender
+|![Fas 2: Installation](../../media/setup.png) <br>[Fas 2: Installation](setup-m365deval.md) | Konfigurera utvärderingslabb eller pilotmiljö med Microsoft 365 Defender
 |:-------|:-----|

@@ -1,7 +1,7 @@
 ---
-title: Lista över distribution av programvaruversion
+title: Lista distribution av programvaruversion
 description: Hämtar en lista över organisationens programvaruversionsdistribution
-keywords: apis, graph api, API som stöds, get, software version distribution, mdatp tvm api
+keywords: apis, graph api, API som stöds, skaffa, distribution av programvaruversion, Microsoft Defender för Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 88f446ddd87768817099c1a206bab17aa8be5b7b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e47a97477500491f634e3f5134a32241bd68985b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198583"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935299"
 ---
-# <a name="list-software-version-distribution"></a>Lista över distribution av programvaruversion 
+# <a name="list-software-version-distribution"></a>Lista distribution av programvaruversion 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

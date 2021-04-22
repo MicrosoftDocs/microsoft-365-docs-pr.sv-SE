@@ -1,7 +1,7 @@
 ---
 title: Felsöka problem med minskningsregler för attackytan
 description: Resurser och exempelkod för att felsöka problem med minskningsregler för attackytan i Microsoft Defender för Slutpunkt.
-keywords: troubleshoot, error, fix, windows defender eg, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking, microsoft defender for endpoint, microsoft defender advanced threat protection
+keywords: troubleshoot, error, fix, windows defender eg, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: d483c098f221e2d4d2e61a10393154b8f5d1498d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9ff00c706b0fb336c178e227b1cb33eff9e9ebbc
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198747"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935227"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>Felsöka minskningsregler för attackytor
 
@@ -122,8 +122,8 @@ När du rapporterar ett problem med minskningsregler för attackytan uppmanas du
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Minskningsregler för attackytor](attack-surface-reduction.md)
+- [Regler för minskning av attackytan](attack-surface-reduction.md)
 
-- [Aktivera minskningsregler för attackytor](enable-attack-surface-reduction.md)
+- [Aktivera regler för minskning av attackytan](enable-attack-surface-reduction.md)
 
-- [Utvärdera minskningsregler för attackytor](evaluate-attack-surface-reduction.md)
+- [Utvärdera regler för minskning av attackytan](evaluate-attack-surface-reduction.md)

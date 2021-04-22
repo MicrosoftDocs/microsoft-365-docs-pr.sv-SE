@@ -1,7 +1,7 @@
 ---
-title: Konfigurera Principer för Microsoft Defender för Slutpunkt för macOS i Jamf Pro
-description: Lär dig konfigurera Microsoft Defender Endpoint för macOS-principer i Jamf Pro
-keywords: principer, microsoft, defender, atp, mac, installation, distribuera, avinstallation, intune, jamfpro, macos, catalina, mojave, high sierra
+title: Konfigurera microsoft Defender för slutpunkt på macOS-principer i Jamf Pro
+description: Lär dig konfigurera Microsoft Defender för slutpunkt på macOS-principer i Jamf Pro
+keywords: principer, microsoft, defender, Microsoft Defender för slutpunkt, mac, installation, distribuera, avinstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1a00d1c0863db7f4f5f853312f202b5e985b1512
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 84d0b37632dc23615a37bbbd73c17fe509dedae5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862277"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934687"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Konfigurera microsoft Defender för slutpunkt på macOS-principer i Jamf Pro
 
@@ -772,7 +772,7 @@ Följ anvisningarna i [Schemalägga genomsökningar med Microsoft Defender för 
 
 7. Välj **Öppna**. Ställ in **visningsnamnet** på **Microsoft Defender Advanced Threat Protection och Microsoft Defender Antivirus.**
 
-    **Manifestfil** krävs inte. Microsoft Defender Avancerat skydd fungerar utan manifestfil.
+    **Manifestfil** krävs inte. Microsoft Defender för slutpunkt fungerar utan manifestfil.
     
     **Fliken Alternativ**<br> Behåll standardvärden.
 

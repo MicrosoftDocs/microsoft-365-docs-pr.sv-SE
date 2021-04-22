@@ -1,7 +1,7 @@
 ---
 title: Undersöka ett användarkonto i Microsoft Defender för Endpoint
 description: Undersök ett användarkonto för möjliga komprometterade autentiseringsuppgifter eller pivotera på det associerade användarkontot under en undersökning.
-keywords: undersöker, konto, användare, användar entitet, avisering, microsoft defender atp
+keywords: undersöker, konto, användare, användar entitet, avisering, Microsoft Defender för slutpunkt
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 672867d107d005004201caab7d6497ceb048ac97
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: e98142e4076c5e695f16eb06c062bc69d3d7dd55
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587713"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935071"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Undersöka ett användarkonto i Microsoft Defender för Endpoint
 
@@ -51,7 +51,7 @@ I de här vyerna finns det en klickbar länk till användarkontots informationss
 
 När du undersöker en användarkontotitet visas:
 
-- Användarkontoinformation, Azure Advanced Threat Protection-aviseringar (Azure ATP) och inloggade på enheter, roll, inloggningstyp och annan information
+- Användarkontoinformation, Microsoft Defender för identitetsaviseringar och inloggad på enheter, roll, inloggningstyp och annan information
 - Översikt över incidenter och användarens enheter
 - Aviseringar relaterade till den här användaren
 - Observerad i organisationen (enheter som är inloggade)
@@ -60,10 +60,10 @@ När du undersöker en användarkontotitet visas:
 
 ### <a name="user-details"></a>Användarinformation
 
-I  fönstret Användarinformation till vänster finns information om användaren, till exempel relaterade öppna incidenter, aktiva aviseringar, SAM-namn, SID, Azure ATP-aviseringar, antal enheter som användaren är inloggad på, när användaren sågs för första och sista gången, roll- och inloggningstyper. Beroende på vilka integrationsfunktioner du har aktiverat visas annan information. Om du till exempel aktiverar Skype för företag-integreringen kan du kontakta användaren från portalen. Avsnittet **Azure ATP-aviseringar** innehåller en länk som tar dig till Azure ATP-sidan, om du har aktiverat Azure ATP-funktionen och det finns aviseringar relaterade till användaren. På Azure ATP-sidan finns mer information om aviseringarna.
+I  fönstret Användarinformation till vänster finns information om användaren, till exempel relaterade öppna incidenter, aktiva aviseringar, SAM-namn, SID, Microsoft Defender för identitetsaviseringar, antalet enheter som användaren är inloggad på, när användaren sågs för första och sista gången, roll och inloggning. Beroende på vilka integrationsfunktioner du har aktiverat visas annan information. Om du till exempel aktiverar Skype för företag-integreringen kan du kontakta användaren från portalen. Avsnittet **Azure ATP-aviseringar** innehåller en länk som tar dig till sidan Microsoft Defender för identitet om du har aktiverat Microsoft Defender för identitetsfunktionen och det finns aviseringar relaterade till användaren. På sidan Microsoft Defender för identitet hittar du mer information om aviseringarna.
 
 >[!NOTE]
->Du måste aktivera integreringen på både Azure ATP och Defender för Endpoint om du vill använda den här funktionen. I Defender för Slutpunkt kan du aktivera den här funktionen i avancerade funktioner. Mer information om hur du aktiverar avancerade funktioner finns i [Aktivera avancerade funktioner.](advanced-features.md)
+>Du måste aktivera integreringen på både Microsoft Defender för identitet och Defender för Endpoint om du vill använda den här funktionen. I Defender för Slutpunkt kan du aktivera den här funktionen i avancerade funktioner. Mer information om hur du aktiverar avancerade funktioner finns i [Aktivera avancerade funktioner.](advanced-features.md)
 
 Översikt, aviseringar och observerade i organisationen är olika flikar som visar olika attribut om användarkontot.
 

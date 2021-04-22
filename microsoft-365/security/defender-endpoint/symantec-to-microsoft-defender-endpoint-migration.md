@@ -1,7 +1,7 @@
 ---
 title: Migrera från Symantec till Microsoft Defender för Endpoint
 description: Få en översikt över hur du byter från Symantec till Microsoft Defender för Endpoint
-keywords: migrering, windows defender avancerat skydd, atp, edr
+keywords: migrering, Microsoft Defender för Slutpunkt, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 6517359c805bb449d075e401283a79a791461630
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: 587cf49ddc8d6135047fbb5e0207ed0f94d1dbe0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218830"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934735"
 ---
 # <a name="migrate-from-symantec-to-microsoft-defender-for-endpoint"></a>Migrera från Symantec till Microsoft Defender för Endpoint
 Om du planerar att byta från Symantec Endpoint Protection (Symantec) till [Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection) för Slutpunkt (Microsoft Defender för Slutpunkt) har du rätt plats. Använd den här artikeln som en guide.
@@ -58,12 +58,12 @@ I den här migreringsguiden fokuserar [](https://docs.microsoft.com/microsoft-36
 
 | Funktion/funktion | Beskrivning |
 |---|---|
-| [Hot & sårbarhetshantering](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | Hot & funktioner för sårbarhetshantering hjälper till att identifiera, bedöma och åtgärda svagheter mellan dina slutpunkter (t.ex. enheter). |
+| [Hot och sårbarhetshantering](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | Hot & funktioner för sårbarhetshantering hjälper till att identifiera, bedöma och åtgärda svagheter mellan dina slutpunkter (t.ex. enheter). |
 | [Minskning av attackytan](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction) | Minskningsregler för attackytan hjälper till att skydda organisationens enheter och program från cyberhot och attacker. |
 | [Nästa generations skydd](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) | Nästa generations skydd inkluderar Microsoft Defender Antivirus för att blockera hot och skadlig programvara. |
-| [Identifiering och svar av slutpunkter](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) | Funktioner för identifiering av slutpunkter och svar identifierar, undersöker och svarar på intrångsförsök och aktiva intrång.  |
+| [Identifiering och svar för slutpunkt](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) | Funktioner för identifiering av slutpunkter och svar identifierar, undersöker och svarar på intrångsförsök och aktiva intrång.  |
 | [Avancerad jakt](advanced-hunting-overview.md) | Med avancerade sökfunktioner kan ditt säkerhetsteam hitta indikatorer och enheter för kända eller potentiella hot. |
-| [Blockering och inneslutning av beteende](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) | Funktioner för blockering och inneslutning hjälper till att identifiera och stoppa hot, baserat på deras beteende och processträd även när hoten har börjat körs. |
+| [Beteendeblockering och inneslutning](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) | Funktioner för blockering och inneslutning hjälper till att identifiera och stoppa hot, baserat på deras beteende och processträd även när hoten har börjat körs. |
 | [Automatiserad undersökning och åtgärder](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/automated-investigations) | Med automatiska undersöknings- och svarsfunktioner undersöks aviseringar och åtgärder vidtas omedelbart för att lösa överträdelser. |
 | [Service för hot efter](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-threat-experts) hot (Microsoft Threat Experts) | Med tjänster för hotsäkerhet kan säkerhetsgrupper med övervakning och analys på expertnivå säkerställa att inga kritiska hot missas. |
 

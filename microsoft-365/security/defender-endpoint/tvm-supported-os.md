@@ -1,7 +1,7 @@
 ---
 title: Operativsystem och plattformar som stöds för hot- och sårbarhetshantering
 description: Se till att du uppfyller kraven på operativsystemet eller plattformen för hot och sårbarhetshantering, så att aktiviteterna på alla enheter redovisas korrekt.
-keywords: hot & hantering av sårbarhet, hot och sårbarhetshantering, operativsystem, plattformskrav, förutsättningar, mdatp-tvm som stöds os, mdatp-tvm,
+keywords: threat & vulnerability management, threat and vulnerability management, operating system, platform requirements, prerequisites, Microsoft Defender for Endpoint-tvm supported os, Microsoft Defender for Endpoint-tvm,
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fd778b66e85507d5e6d91ed786b16454a5c0fc8f
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 55322d238839d347882ec1d74b767c68fd2be2b3
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500433"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935527"
 ---
 # <a name="supported-operating-systems-and-platforms---threat-and-vulnerability-management"></a>Operativsystem och plattformar som stöds – hot- och sårbarhetshantering
 

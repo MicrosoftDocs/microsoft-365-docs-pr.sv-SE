@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender för slutpunkt för Mac – systemtillägg (förhandsversion)
-description: Den här artikeln innehåller instruktioner för att prova systemtilläggsfunktionen i Microsoft Defender för Slutpunkt för Mac. Den här funktionen är för närvarande i offentlig förhandsversion.
-keywords: microsoft, defender, atp, mac, kernel, system, tillägg, catalina
+title: Microsoft Defender för slutpunkt på Mac – systemtillägg (förhandsversion)
+description: Den här artikeln innehåller instruktioner för att prova systemtilläggsfunktionen i Microsoft Defender för slutpunkt på Mac. Den här funktionen är för närvarande i offentlig förhandsversion.
+keywords: microsoft, defender, Microsoft Defender för Slutpunkt, mac, kernel, system, tillägg, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 0b593aa0046a28e558523c2f3ebc7da9976f62d3
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: cc148bcc0b2623eaaa8d31ef50708174264fa3b2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860333"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934951"
 ---
 # <a name="microsoft-defender-for-endpoint-on-macos---system-extensions-public-preview"></a>Microsoft Defender för slutpunkt på macOS – den offentliga förhandsversionen av systemtillägg)
 
@@ -34,7 +34,7 @@ ms.locfileid: "51860333"
 
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-I linje med macOS-utveckling förbereder vi en Defender för slutpunkt för Mac-uppdatering som utnyttjar systemtillägg istället för kernel-tillägg. Den här uppdateringen gäller endast för macOS Catalina (10.15.4) och senare versioner av macOS.
+I linje med macOS-utveckling förbereder vi en Defender för slutpunkt på Mac-uppdatering som utnyttjar systemtillägg istället för kernel-tillägg. Den här uppdateringen gäller endast för macOS Catalina (10.15.4) och senare versioner av macOS.
 
 Den här funktionen är för närvarande i offentlig förhandsversion. I den här artikeln beskrivs hur du aktiverar den här funktionen på din enhet. Du kan prova den här funktionen lokalt på din egen enhet eller konfigurera den via ett hanteringsverktyg.
 
@@ -62,7 +62,7 @@ De här instruktionerna förutsätter att du redan har Defender för Endpoint ig
   defaults write com.microsoft.autoupdate2 ChannelName -string Beta
   ```
 
-  Om du är i en hanterad miljö (JAMF eller Intune) kan du även konfigurera uppdateringskanalen via fjärrstyrd anslutning. Mer information finns i [Distribuera uppdateringar för Microsoft Defender för Slutpunkt för Mac: Ange kanalnamn](mac-updates.md#set-the-channel-name).
+  Om du är i en hanterad miljö (JAMF eller Intune) kan du även konfigurera uppdateringskanalen via fjärrstyrd anslutning. Mer information finns i [Distribuera uppdateringar för Microsoft Defender för Slutpunkt på Mac: Ange kanalnamnet](mac-updates.md#set-the-channel-name).
 
 ## <a name="deployment-steps"></a>Distributionssteg
 
@@ -74,7 +74,7 @@ Följ distributionsanvisningarna som motsvarar din miljö och den metod du före
 
 1. När alla distributionsförutsättningarna är uppfyllda startar du om enheten för att starta godkännande- och aktiveringsprocessen för systemtillägg.
 
-   Du ser en serie systemuppslag om att godkänna Defender för slutpunktssystemtillägg. Du måste godkänna **alla** uppmaningar i serien eftersom macOS kräver ett uttryckligt godkännande för varje tillägg som Defender för Endpoint för Mac installerar på enheten.
+   Du ser en serie systemuppslag om att godkänna Defender för slutpunktssystemtillägg. Du måste godkänna **alla** uppmaningar i serien eftersom macOS kräver ett uttryckligt godkännande för varje tillägg som Defender för Slutpunkt på Mac installerar på enheten.
    
    För varje godkännande väljer du **Öppna säkerhetsinställningar** och sedan Tillåt **för** att tillåta att systemtillägget körs.
 

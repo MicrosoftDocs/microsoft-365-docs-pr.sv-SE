@@ -1,7 +1,7 @@
 ---
 title: Registrera Windows 10-enheter med hanteringsverktyg för mobila enheter
 description: Använd verktyg för hantering av mobila enheter för att distribuera konfigurationspaketet på enheter så att de kan kommas in i tjänsten.
-keywords: onboard-enheter som använder mdm, enhetshantering, onboard Windows ATP-enheter, onboard Microsoft Defender för Endpoint-enheter, mdm
+keywords: onboard devices using mdm, device management, onboard Microsoft Defender for Endpoint devices, mdm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f3042ef9ced11ebc5439308d2781528d5267975f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 951b0f33356ab99485f09ccc4147691e13ed3c6e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893619"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935011"
 ---
 # <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>Registrera Windows 10-enheter med hanteringsverktyg för mobila enheter
 

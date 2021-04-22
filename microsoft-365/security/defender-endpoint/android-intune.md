@@ -1,7 +1,7 @@
 ---
-title: Distribuera Microsoft Defender för slutpunkt på Android med Microsoft Intune
+title: Distribuera Microsoft Defender för Endpoint för Android med Microsoft Intune
 description: Här beskrivs hur du distribuerar Microsoft Defender för slutpunkt på Android med Microsoft Intune
-keywords: microsoft, defender, atp, mde, android, installation, distribuera, avinstallation,
+keywords: microsoft, defender, Microsoft Defender för slutpunkt, mde, android, installation, distribuera, avinstallation,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 350345acbaadcdd6bc8ef901f03c419a7f8decff
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f14d79d98bfffda675cd71b96068b179f30f059e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687727"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934639"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Distribuera Microsoft Defender för slutpunkt på Android med Microsoft Intune 
+# <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Distribuera Microsoft Defender för Endpoint för Android med Microsoft Intune 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,18 +34,18 @@ ms.locfileid: "51687727"
 
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-Lär dig hur du distribuerar Defender för Slutpunkt för Android på registrerade enheter i Intune-företagsportal. Mer information om registrering av Intune-enheter finns  [i Registrera din enhet](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-company-portal).
+Lär dig hur du distribuerar Defender för slutpunkt på Android på registrerade enheter i Intune-företagsportal. Mer information om registrering av Intune-enheter finns  [i Registrera din enhet](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-company-portal).
 
 > [!NOTE]
-> **Defender för slutpunkt för Android är nu tillgänglig på [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx)** <br>
+> **Defender för slutpunkt på Android är nu tillgängligt på [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx)** <br>
 > Du kan ansluta till Google Play från Intune för att distribuera Defender för slutpunktsappen i alla registreringslägena för Enhetsadministratör och Android Enterprise.
 Uppdateringar av appen sker automatiskt via Google Play.
 
 ## <a name="deploy-on-device-administrator-enrolled-devices"></a>Distribuera på registrerade enheter med enhetsadministratör
 
-**Distribuera Defender för slutpunkt för Android på Intune-företagsportal – registrerade enheter som enhetsadministratör**
+**Distribuera Defender för slutpunkt på Android på företagsportalen för Intune – enheter registrerade enheter som enhetsadministratör**
 
-Lär dig hur du distribuerar Defender för Slutpunkt för Android på Intune-företagsportal – registrerade enheter som enhetsadministratör. 
+Lär dig hur du distribuerar Defender för slutpunkt på Android på Intune-företagsportal – registrerade enheter som enhetsadministratör. 
 
 ### <a name="add-as-android-store-app"></a>Lägg till som Android Store-app
 
@@ -64,7 +64,7 @@ Lär dig hur du distribuerar Defender för Slutpunkt för Android på Intune-fö
 
    ![Bild av Lägg till appinformation i administrationscentret för Microsoft Endpoint Manager](images/mda-addappinfo.png)
 
-3. Gå till *avsnittet* Obligatoriska i avsnittet Uppgifter **och** välj Lägg **till grupp.** Du kan sedan välja den användargrupp du vill rikta Defender för Endpoint för Android-appen till. Välj **Markera** och sedan **Nästa.**
+3. Gå till *avsnittet* Obligatoriska i avsnittet Uppgifter **och** välj Lägg **till grupp.** Du kan sedan välja den användargrupp(er) som du vill rikta Defender för Endpoint på Android-appen till. Välj **Markera** och sedan **Nästa.**
 
     >[!NOTE]
     >Den valda användargruppen ska bestå av intune-registrerade användare.
@@ -86,11 +86,11 @@ Lär dig hur du distribuerar Defender för Slutpunkt för Android på Intune-fö
 
 ### <a name="complete-onboarding-and-check-status"></a>Fullständig registrering och kontrollstatus
 
-1. När Defender för slutpunkt för Android har installerats på enheten visas appikonen.
+1. När Defender för slutpunkt på Android har installerats på enheten visas appikonen.
 
     ![Ikon på mobil enhet](images/7cf9311ad676ec5142002a4d0c2323ca.jpg)
 
-2. Tryck på appikonen Microsoft Defender ATP och följ anvisningarna på skärmen för att slutföra introduktionen av appen. Informationen innefattar godkännande av Android-behörigheter som krävs av Defender för Endpoint för Android.
+2. Tryck på appikonen Microsoft Defender för Slutpunkt och följ anvisningarna på skärmen för att slutföra introduktionen av appen. Informationen innefattar godkännande av Android-behörigheter som krävs av Defender för Endpoint på Android.
 
 3. Om onboarding lyckas visas enheten i listan Enheter i Microsoft Defender Säkerhetscenter.
 
@@ -98,7 +98,7 @@ Lär dig hur du distribuerar Defender för Slutpunkt för Android på Intune-fö
 
 ## <a name="deploy-on-android-enterprise-enrolled-devices"></a>Distribuera på registrerade enheter för Android Enterprise
 
-Defender för slutpunkt för Android stöder registrerade enheter för Android Enterprise.
+Defender för slutpunkt på Android stöder registrerade enheter för Android Enterprise.
 
 Mer information om de registreringsalternativ som stöds av Intune finns i [Alternativ för registrering.](https://docs.microsoft.com/mem/intune/enrollment/android-enroll)
 
@@ -126,7 +126,7 @@ Följ stegen nedan för att lägga till appen Microsoft Defender för slutpunkt 
 
     ![En skärmbild av Defender för godkännande av slutpunktsförhandsgranskningsappen](images/206b3d954f06cc58b3466fb7a0bd9f74.png)
 
-5. Då visas sidan Inställningar för godkännande. Sidan bekräftar din inställning för att hantera nya appbehörigheter som Defender för Endpoint för Android kan fråga. Granska alternativen och välj det alternativ du vill använda. Välj **Klar**.
+5. Då visas sidan Inställningar för godkännande. Sidan bekräftar din inställning för att hantera nya appbehörigheter som Defender för Slutpunkt på Android kan fråga. Granska alternativen och välj det alternativ du vill använda. Välj **Klar**.
 
     Som standard markeras Behåll godkänd som hanterad Google Play *när appen begär nya behörigheter*
 
@@ -142,7 +142,7 @@ Följ stegen nedan för att lägga till appen Microsoft Defender för slutpunkt 
 
     ![Bild på Android-appen](images/9fc07ffc150171f169dc6e57fe6f1c74.png)
 
-8. Välj **uppdatera-knappen** på skärmen Android-appar så ska Microsoft Defender ATP visas i applistan.
+8. Välj knappen **Uppdatera** på skärmen Android-appar så ska Microsoft Defender för Slutpunkt visas i applistan.
 
     > [!div class="mx-imgBorder"]
     > ![Bild på listan med Android-appar](images/fa4ac18a6333335db3775630b8e6b353.png)
@@ -155,7 +155,7 @@ Följ stegen nedan för att lägga till appen Microsoft Defender för slutpunkt 
 
     1. På sidan **Skapa appkonfigurationsprincip** anger du följande information:
     
-        - Namn: Microsoft Defender ATP.
+        - Namn: Microsoft Defender för Slutpunkt.
         - Välj **Android Enterprise** som plattform.
         - Välj **Endast Arbetsprofil** som Profiltyp.
         - Klicka **på Välj app**, välj Microsoft Defender **ATP**, välj **OK** och sedan **Nästa.**
@@ -223,9 +223,9 @@ Välj **Skapa**.
 - Aktivera **att alltid på VPN** konfigurera en VPN-klient i arbetsprofilen så att den automatiskt ansluter och återansluter till VPN när det är möjligt. Endast en VPN-klient kan konfigureras för alltid-på VPN på en viss enhet, så se till att inte ha fler än en alltid-på VPN-policy distribuerad till en enda enhet. 
 - Välj **Custom** i VPN-klientlistrutan Custom VPN i det här fallet Defender för Endpoint VPN som används för att tillhandahålla Web Protection-funktionen. 
     > [!NOTE]
-    > Appen Microsoft Defender ATP måste vara installerad på användarens enhet för att den automatiska konfigurationen av VPN ska fungera.
+    > Appen Microsoft Defender för slutpunkt måste installeras på användarens enhet för att den ska fungera automatiskt.
 
-- Ange **paket-ID** för Microsoft Defender ATP-appen i Google Play Butik. För Defender-appens URL https://play.google.com/store/apps/details?id=com.microsoft.scmx är Paket-ID **com.microsoft.scmx**  
+- Ange **paket-ID** för Microsoft Defender för slutpunktsappen i Google Play Store. För Defender-appens URL https://play.google.com/store/apps/details?id=com.microsoft.scmx är Paket-ID **com.microsoft.scmx**  
 - **Nedlåst listläge** Inte konfigurerad (standard) 
 
      ![Bild på konfigurationsprofil för enheter aktiverar Alltid VPN](images/3autosetupofvpn.png)
@@ -254,11 +254,11 @@ Välj **Skapa**.
 
     ![Bild på mobil enhet med Microsoft Defender för Endpoint-appen](images/mda-devicesafe.png)
 
-4. I det här läget har enheten loggats in på Defender för Slutpunkt för Android. Du kan kontrollera detta på [Microsoft Defender Säkerhetscenter genom](https://securitycenter.microsoft.com) att gå till **sidan** Enheter.
+4. I det här läget har enheten introducerats till Defender för slutpunkt på Android. Du kan kontrollera detta på [Microsoft Defender Säkerhetscenter genom](https://securitycenter.microsoft.com) att gå till **sidan** Enheter.
 
     ![Bild av Microsoft Defender för Slutpunktsportalen](images/9fe378a1dce0f143005c3aa53d8c4f51.png)
 
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Översikt över Microsoft Defender för slutpunkt på Android](microsoft-defender-endpoint-android.md)
-- [Konfigurera Microsoft Defender för slutpunkt på Android-funktioner](android-configure.md)
+- [Översikt över Microsoft Defender för Endpoint för Android](microsoft-defender-endpoint-android.md)
+- [Konfigurera Microsoft Defender för Endpoint för Android-funktioner](android-configure.md)

@@ -1,10 +1,10 @@
 ---
 title: Integrera Microsoft Defender för Endpoint med andra Microsoft-lösningar
-description: Läs om hur Microsoft Defender för Endpoint integreras med andra Microsoft-lösningar, bland annat Microsoft Defender för identitet och Azure Säkerhetscenter.
+description: Läs om hur Microsoft Defender för Endpoint integreras med andra Microsoft-lösningar, bland annat Microsoft Defender för identitet och Azure Defender.
 author: mjcaparas
 ms.author: macapara
 ms.prod: m365-security
-keywords: microsoft 365 defender, villkorsstyrd åtkomst, office, avancerat skydd mot hot, microsoft defender för identitet, microsoft defender för office, azure säkerhetscenter, microsoft cloud app security, azure sentinel
+keywords: microsoft 365 defender, villkorsstyrd åtkomst, office, Microsoft Defender för slutpunkt, microsoft defender för identitet, microsoft defender för office, Azure Defender, microsoft cloud app security, azure sentinel
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7d12afd27288655f4f5a82eeed24686f27171a7a
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: ce8dbef2f4fb7c3503f04f15148d2071b449b2dc
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765401"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935539"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender för Endpoint och andra Microsoft-lösningar
 
@@ -38,7 +38,7 @@ ms.locfileid: "51765401"
 
 Microsoft Defender för Endpoint är direkt integrerat med olika Microsoft-lösningar.
 
-### <a name="azure-security-center"></a>Azure Security Center
+### <a name="azure-defender"></a>Azure Defender
 Microsoft Defender för Endpoint tillhandahåller en omfattande lösning för serverskydd, inklusive funktioner för identifiering av slutpunkt och svar (EDR) på Windows-servrar.
 
 ### <a name="azure-sentinel"></a>Azure Sentinel
@@ -54,10 +54,10 @@ Microsoft Defender för Endpoints riskpoäng för dynamiska enheter integreras i
 Microsoft Cloud App Security utnyttjar Microsoft Defender för Slutpunktsslutpunktssignaler för att tillåta direkt insyn i användning av molnprogram, inklusive användning av molntjänster som inte stöds (skugg-IT) från alla Microsoft Defender för övervakade slutpunktsenheter.
 
 ### <a name="microsoft-defender-for-identity"></a>Microsoft Defender for Identity
-Misstänkta aktiviteter körs under ett användarsammanhang. Integreringen mellan Microsoft Defender för Endpoint och Azure ATP ger flexibiliteten att genomföra undersökning av cybersäkerhet för aktiviteter och identiteter.
+Misstänkta aktiviteter körs under ett användarsammanhang. Integreringen mellan Microsoft Defender för Endpoint och Microsoft Defender för identitet ger flexibiliteten att utföra undersökning av cybersäkerhet för alla aktiviteter och identiteter.
 
 ### <a name="microsoft-defender-for-office"></a>Microsoft Defender för Office
-[Defender för Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) skyddar organisationen mot skadlig programvara i e-postmeddelanden och filer via ATP – säkra länkar, ATP – säkra bifogade filer, avancerade skydd mot nätfiske och förfalskningsfunktioner. Integreringen mellan Office 365 ATP och Microsoft Defender för Endpoint gör att säkerhetsanalytiker är bättre på att undersöka startpunkten för en attack. Genom delning av hotinformation kan attacker finnas och blockeras. 
+[Defender för Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) skyddar organisationen mot skadlig programvara i e-postmeddelanden och filer via säkra länkar, säkra bifogade filer, avancerade funktioner för nätfiske och förfalskningsinformation. Integreringen mellan Microsoft Defender för Office 365 och Microsoft Defender för Endpoint gör att säkerhetsanalytiker kan gå över till att undersöka startpunkten för en attack. Genom delning av hotinformation kan attacker finnas och blockeras. 
 
 >[!NOTE]
 > Defender för Office 365-data visas för händelser under de senaste 30 dagarna. För aviseringar visas Defender för Office 365-data baserat på första aktivitetstiden. Därefter är data inte längre tillgängliga i Defender för Office 365.

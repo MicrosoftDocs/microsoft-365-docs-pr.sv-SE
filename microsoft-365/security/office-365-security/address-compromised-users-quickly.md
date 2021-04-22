@@ -1,6 +1,6 @@
 ---
 title: Adress komprometterade användarkonton med automatiserad undersökning och svar
-keywords: AIR, autoIR, ATP, automatiserad, undersökning, svar, åtgärd, hot, avancerat, hot, skydd, komprometterad
+keywords: AIR, autoIR, Microsoft Defender för Slutpunkt, automatiserad, undersökning, svar, åtgärd, hot, avancerat, hot, skydd, komprometterat
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.date: 02/25/2020
 description: Lär dig hur du kan snabba upp processen med att identifiera och åtgärda komprometterade användarkonton med funktioner för automatisk undersökning och svar i Microsoft Defender för Office 365 abonnemang 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2428cc2c1f82b4f2b881433fde991dd04b268d6e
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: c500221a10c00cc3b8d9d99c102ce8ec54fa2a48
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207461"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934699"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Adress komprometterade användarkonton med automatiserad undersökning och svar
 

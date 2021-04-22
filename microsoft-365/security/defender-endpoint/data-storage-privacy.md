@@ -1,7 +1,7 @@
 ---
 title: Datalagring och sekretess i Microsoft Defender för Endpoint
 description: Läs mer om hur Microsoft Defender för Endpoint hanterar sekretess och data som samlas in.
-keywords: Microsoft Defender för slutpunkt, Microsoft Defender för slutpunkt, datalagring och sekretess, lagring, sekretess, licensiering, geolokalisering, datalagring, data
+keywords: Microsoft Defender för Slutpunkt, datalagring och sekretess, lagring, sekretess, licensiering, geolokalisering, datalagring, data
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dfdfcdcfb8d76f95e3b866f5f95af7efd94ed59e
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 2279045093ebfac4a7eb4544a3e0c137c08c9c0c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904134"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935395"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Datalagring och sekretess i Microsoft Defender för Endpoint
 

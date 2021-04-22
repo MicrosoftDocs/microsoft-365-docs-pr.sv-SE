@@ -1,7 +1,7 @@
 ---
 title: Tilldela enhetsvärde – hantering av hot och sårbarhet
 description: Lär dig hur du tilldelar ett lågt, normalt eller högt värde till en enhet så att du kan skilja mellan resursprioriteringar.
-keywords: Microsoft Defender för endpoint device value, threat and vulnerability management device value, high value devices, device value exposure score
+keywords: Microsoft Defender för Endpoint-enhetsvärdet, enhetsvärdet för hot och sårbarhetshanteringsenheter, enheter med höga värden, exponeringsresultat för enhetsvärden
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1f5d90190418f84795bdd899ea0e48ac25831a96
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: ca6c88b08b331eb65035387a9c070d0914b1651d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689395"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935203"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>Tilldela enhetsvärde – hantering av hot och sårbarhet
 
@@ -47,7 +47,7 @@ Alternativ för enhetsvärde:
 
 - Låg
 - Normal (standard)
-- Högsta
+- Hög
 
 Exempel på enheter som bör tilldelas ett högt värde:
 

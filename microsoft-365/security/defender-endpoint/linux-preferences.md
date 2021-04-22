@@ -2,7 +2,7 @@
 title: Ange inställningar för Microsoft Defender för Slutpunkt i Linux
 ms.reviewer: ''
 description: Här beskrivs hur du konfigurerar Microsoft Defender för Slutpunkt på Linux på företag.
-keywords: microsoft, defender, atp, linux, installation, distribuera, avinstallation, enkel, ansible, linux, redhat, ubuntu, ubuntu, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender för Endpoint, linux, installation, distribuera, avinstallation, installationse, ansible, linux, redhat, ubuntu, ubuntu, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2c162d652656afb61f1d74bad9ec963825d25a14
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 7f3dd65aea0efa570ec5d6a1d27479b787e16831
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903876"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935287"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Ange inställningar för Microsoft Defender för Slutpunkt i Linux
 
@@ -37,9 +37,9 @@ ms.locfileid: "51903876"
 > Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 >[!IMPORTANT]
->Det här avsnittet innehåller instruktioner för hur du anger inställningar för Defender för Slutpunkt för Linux i företagsmiljöer. Om du är intresserad av att konfigurera produkten på en enhet från kommandoraden kan du gå till [Resurser](linux-resources.md#configure-from-the-command-line).
+>Det här avsnittet innehåller instruktioner för hur du anger inställningar för Defender för Slutpunkt på Linux i företagsmiljöer. Om du är intresserad av att konfigurera produkten på en enhet från kommandoraden kan du gå till [Resurser](linux-resources.md#configure-from-the-command-line).
 
-I företagsmiljöer kan Defender för Endpoint för Linux hanteras via en konfigurationsprofil. Den här profilen distribueras från valfri hanteringsverktyg. Inställningar som hanteras av företaget har företräde framför inställningar som anges lokalt på enheten. Med andra ord kan användarna i företaget inte ändra inställningar som anges i den här konfigurationsprofilen.
+I företagsmiljöer kan Defender för Slutpunkt i Linux hanteras via en konfigurationsprofil. Den här profilen distribueras från valfri hanteringsverktyg. Inställningar som hanteras av företaget har företräde framför inställningar som anges lokalt på enheten. Med andra ord kan användarna i företaget inte ändra inställningar som anges i den här konfigurationsprofilen.
 
 I den här artikeln beskrivs profilens struktur (inklusive en rekommenderad profil som du kan använda för att komma igång) och instruktioner om hur du distribuerar profilen.
 
@@ -450,4 +450,4 @@ Kontrollera att din /etc/opt/microsoft/mdatp/managed/mdatp_managed.jsfungerar ko
 
 ## <a name="configuration-profile-deployment"></a>Konfigurationsprofildistribution
 
-När du har skapat konfigurationsprofilen för ditt företag kan du distribuera den via det hanteringsverktyg som företaget använder. Defender för Endpoint för Linux läser den hanterade konfigurationen från *filen /etc/opt/microsoft/mdatp/managed/mdatp_managed.js.*
+När du har skapat konfigurationsprofilen för ditt företag kan du distribuera den via det hanteringsverktyg som företaget använder. Defender för slutpunkt i Linux läser den hanterade konfigurationen från *filen /etc/opt/microsoft/mdatp/managed/mdatp_managed.js.*

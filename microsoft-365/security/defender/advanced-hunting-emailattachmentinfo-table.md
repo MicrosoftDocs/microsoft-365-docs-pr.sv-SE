@@ -1,7 +1,7 @@
 ---
 title: Tabellen EmailAttachmentInfo i det avancerade sökschemat
 description: Mer information om e-postbilagan i tabellen EmailAttachmentInfo i det avancerade sökschemat
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailAttachmentInfo, network message id, sender, recipient, attachment id, attachment name, malware
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailAttachmentInfo, network message id, sender, recipient, attachment id, attachment id, malware
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ mms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 84d0c1fd256b013291e3df33dc5d7a0524741685
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 961474fa62981364919ae3bf482a886eb9a5e821
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498930"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935503"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 

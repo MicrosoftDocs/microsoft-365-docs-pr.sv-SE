@@ -1,6 +1,6 @@
 ---
 title: Automatiserad undersökning och svar i Microsoft Defender för Office 365
-keywords: AIR, autoIR, ATP, automatiserad, undersökning, svar, åtgärd, hot, avancerat, hot, skydd
+keywords: AIR, autoIR, Microsoft Defender för Slutpunkt, automatiserad, undersökning, svar, åtgärd, hot, avancerat, hot, skydd
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9850506771f53b125c08b1df2149ee024191d823
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 89421348d858a869e033380802e402465949c554
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768872"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935179"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Automatisk undersökning och svar (AIR) i Microsoft Defender för Office 365
 
@@ -93,12 +93,12 @@ Microsoft 365 innehåller många inbyggda aviseringsprinciper som hjälper till 
 
 |Varning|Allvarlighetsgrad|Så här genereras aviseringen|
 |---|---|---|
-|Ett potentiellt skadligt URL-klick upptäcktes|**Högsta**|Den här aviseringen genereras när något av följande inträffar: <ul><li>En användare som skyddas [av säkra](safe-links.md) länkar i organisationen klickar på en skadlig länk</li><li>Omdömesändringar för URL-adresser identifieras av Microsoft Defender för Office 365</li><li>Användarna åsidosätter varningssidor för säkra länkar (baserat på organisationens [princip för säkra länkar).](set-up-safe-links-policies.md)</li></ul> <p> Mer information om händelser som utlöser den här aviseringen finns [i Konfigurera principer för säkra länkar.](set-up-safe-links-policies.md)|
-|Ett e-postmeddelande rapporteras av en användare som skadlig kod eller nätt|**Information**|Den här varningen genereras när användare i organisationen [](enable-the-report-message-add-in.md) rapporterar meddelanden som nätfiskemeddelanden med hjälp av tilläggen Rapportmeddelande eller [Rapportera nätfiske.](enable-the-report-phish-add-in.md)|
-|E-postmeddelanden som innehåller skadlig programvara tas bort efter leverans|**Information**|Den här aviseringen genereras när e-postmeddelanden som innehåller skadlig programvara levereras till postlådor i organisationen. Om detta inträffar tar Microsoft bort de smittade meddelandena från Exchange Online-postlådor med automatisk [rensning utan timme.](zero-hour-auto-purge.md)|
-|E-postmeddelanden som innehåller webbadresser tas bort efter leverans|**Information**|Den här aviseringen genereras när några meddelanden som innehåller phish levereras till postlådor i din organisation. Om detta inträffar tar Microsoft bort de smittade meddelandena från Exchange Online-postlådor med automatisk [rensning utan timme.](zero-hour-auto-purge.md)|
+|Ett potentiellt skadligt URL-klick upptäcktes|**Hög**|Den här aviseringen genereras när något av följande inträffar: <ul><li>En användare som skyddas [av säkra](safe-links.md) länkar i organisationen klickar på en skadlig länk</li><li>Omdömesändringar för URL-adresser identifieras av Microsoft Defender för Office 365</li><li>Användarna åsidosätter varningssidor för säkra länkar (baserat på organisationens [princip för säkra länkar).](set-up-safe-links-policies.md)</li></ul> <p> Mer information om händelser som utlöser den här aviseringen finns [i Konfigurera principer för säkra länkar.](set-up-safe-links-policies.md)|
+|Ett e-postmeddelande rapporteras av en användare som skadlig kod eller nätt|**Informativ**|Den här varningen genereras när användare i organisationen [](enable-the-report-message-add-in.md) rapporterar meddelanden som nätfiskemeddelanden med hjälp av tilläggen Rapportmeddelande eller [Rapportera nätfiske.](enable-the-report-phish-add-in.md)|
+|E-postmeddelanden som innehåller skadlig programvara tas bort efter leverans|**Informativ**|Den här aviseringen genereras när e-postmeddelanden som innehåller skadlig programvara levereras till postlådor i organisationen. Om detta inträffar tar Microsoft bort de smittade meddelandena från Exchange Online-postlådor med automatisk [rensning utan timme.](zero-hour-auto-purge.md)|
+|E-postmeddelanden som innehåller webbadresser tas bort efter leverans|**Informativ**|Den här aviseringen genereras när några meddelanden som innehåller phish levereras till postlådor i din organisation. Om detta inträffar tar Microsoft bort de smittade meddelandena från Exchange Online-postlådor med automatisk [rensning utan timme.](zero-hour-auto-purge.md)|
 |Mönster för att skicka misstänkta e-postmeddelanden identifieras|**Medel**|Den här aviseringen genereras när någon i organisationen har skickat misstänkta e-postmeddelanden och riskerar att bli begränsad från att skicka e-post. Aviseringen är en tidig varning om beteende som kan indikera att kontot har komprometterats, men inte tillräckligt allvarligt för att begränsa användaren. <p> Även om det är ovanligt kan en varning som genereras av den här principen vara en avvikande avvikelse. Du bör dock kontrollera om [användarkontot har komprometterats.](responding-to-a-compromised-email-account.md)|
-|En användare är begränsad från att skicka e-post|**Högsta**|Den här aviseringen genereras när någon i din organisation är begränsad från att skicka utgående e-post. Den här aviseringen resulterar vanligtvis när ett [e-postkonto har komprometterats](responding-to-a-compromised-email-account.md). <p> Mer information om begränsade användare finns i [Ta bort blockerade användare från portalen Begränsade användare i Microsoft 365.](removing-user-from-restricted-users-portal-after-spam.md)|
+|En användare är begränsad från att skicka e-post|**Hög**|Den här aviseringen genereras när någon i din organisation är begränsad från att skicka utgående e-post. Den här aviseringen resulterar vanligtvis när ett [e-postkonto har komprometterats](responding-to-a-compromised-email-account.md). <p> Mer information om begränsade användare finns i [Ta bort blockerade användare från portalen Begränsade användare i Microsoft 365.](removing-user-from-restricted-users-portal-after-spam.md)|
 |
 
 > [!TIP]

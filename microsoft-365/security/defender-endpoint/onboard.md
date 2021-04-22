@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3ad23e030048506784edd8f1988fa33263a085ae
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 25b70f91824db2a6d05db5d3981dd50f4f2b477a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861341"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934747"
 ---
 # <a name="configure-and-manage-microsoft-defender-for-endpoint-capabilities"></a>Konfigurera och hantera Microsoft Defender för slutpunktsfunktioner
 
@@ -49,5 +49,5 @@ Praktiska råd om hur du ansluter nya enheter i organisationen finns i Artikeln 
 [Konfigurera funktioner för att minska attackytan](configure-attack-surface-reduction.md) | Konfigurera funktioner för att minska attackytan för att säkerställa att inställningarna tillämpas på rätt sätt och utnyttja tekniker för minskning av attackytan har ställts in.
 [Konfigurera nästa generations skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) | Konfigurera nästa generations skydd för att fånga alla typer av nya hot.
 [Konfigurera microsoft Threat Experts-funktioner](configure-microsoft-threat-experts.md) | Konfigurera och hantera hotinformation om cybersäkerhet från Microsoft Threat Experts.
-[Konfigurera Microsoft Threat Protection-integrering](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-protection-integration) | Konfigurera andra lösningar som integrerar med Defender för Slutpunkt.
+[Konfigurera Microsoft 365 Defender-integrering](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-protection-integration) | Konfigurera andra lösningar som integrerar med Defender för Slutpunkt.
 [Hanterings- och API-support](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/management-apis) | Hämta aviseringar till din säkerhetsinformation och händelsehantering (SIEM) eller använd API:er för att skapa anpassade varningar. Skapa och skapa Power BI-rapporter.

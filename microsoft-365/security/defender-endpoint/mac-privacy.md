@@ -1,7 +1,7 @@
 ---
-title: Sekretess för Microsoft Defender för Slutpunkt för Mac
-description: Sekretesskontroller, hur du konfigurerar principinställningar som påverkar sekretess och information om diagnostikdata som samlas in i Microsoft Defender för Slutpunkt för Mac.
-keywords: microsoft, defender, atp, mac, sekretess, diagnostik
+title: Sekretess för Microsoft Defender för Slutpunkt på Mac
+description: Sekretesskontroller, hur du konfigurerar principinställningar som påverkar sekretess och information om diagnostikdata som samlas in i Microsoft Defender för Slutpunkt på Mac.
+keywords: microsoft, defender, Microsoft Defender för slutpunkt, mac, sekretess, diagnostik
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 26ae83dc8a8b3bb7d686e3674437a12999b5146f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: b2897766570c6ef8979a7944a687ba024e55b3ce
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862241"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934555"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>Sekretess för Microsoft Defender för Slutpunkt i macOS
 

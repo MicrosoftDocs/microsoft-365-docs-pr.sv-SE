@@ -1,7 +1,7 @@
 ---
-title: Identifiera och blockera potentiellt oönskade program med Microsoft Defender för Slutpunkt för Mac
-description: Identifiera och blockera potentiellt oönskade program (PUA) med Hjälp av Microsoft Defender för Slutpunkt för Mac.
-keywords: microsoft, defender, atp, mac, pua, pus
+title: Identifiera och blockera potentiellt oönskade program med Microsoft Defender för slutpunkt på Mac
+description: Identifiera och blockera POTENTIELLT oönskade program (PUA) med Microsoft Defender på slutpunkt för Mac.
+keywords: microsoft, defender, Microsoft Defender för Endpoint, mac, pua, pus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 93462b37c9150f1e38239a0ca70b96ad8d07830f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 2d32dd96cd506ebf1752e48d2b7c66208b1abc11
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862229"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934543"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>Identifiera och blockera potentiellt oönskade program med Microsoft Defender för Slutpunkt i macOS
 

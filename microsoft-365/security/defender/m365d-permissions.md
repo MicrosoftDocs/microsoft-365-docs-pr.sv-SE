@@ -1,7 +1,7 @@
 ---
 title: Hantera åtkomst till Microsoft 365 Defender-data i Säkerhetscenter för Microsoft 365
 description: Lär dig hur du hanterar behörigheter till data i Microsoft 365 Defender
-keywords: åtkomst, behörigheter, MTP, Microsoft Threat Protection, M365, säkerhet, MCAS, MDATP, Cloud App Security, Microsoft Defender Advanced Threat Protection, omfattning, omfattning, RBAC
+keywords: åtkomst, behörigheter, Microsoft 365 Defender, M365, säkerhet, MCAS, Cloud App Security, Microsoft Defender för slutpunkt, omfattning, omfattning, RBAC
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e1be2cf4d5510b2a31a61f848d7d99d6a6704d49
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 52e4e9fc8c73d1adca0c24c5bebb50f9dcf7ac6f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076650"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935635"
 ---
 # <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>Hantera åtkomst till Microsoft 365 Defender med globala roller i Azure Active Directory
 

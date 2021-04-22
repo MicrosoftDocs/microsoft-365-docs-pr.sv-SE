@@ -19,12 +19,12 @@ description: Använd Explorer och realtidsidentifiering i &amp; säkerhetsefterl
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7c601169d76fe92ac3038ccb25c5c50aa390f714
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 0dcda063fc544c88157cff21b8a28f7a84a6a6fb
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599893"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934711"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Identifiering av hot i Utforskaren och i realtid
 
@@ -520,7 +520,7 @@ Utöver scenarierna som beskrivs i den här artikeln finns det många fler rappo
 - [Visa skadliga filer som upptäckts i SharePoint Online, OneDrive och Microsoft Teams](./mdo-for-spo-odb-and-teams.md)
 - [Få en översikt över vyerna i Hotutforskaren (och identifieringar i realtid)](threat-explorer-views.md)
 - [Statusrapport för hotskydd](view-email-security-reports.md#threat-protection-status-report)
-- [Automatisk undersökning och svar i Microsoft Threat Protection](../defender/m365d-autoir.md)
+- [Automatiserad undersökning och svar i Microsoft 365 Defender](../defender/m365d-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>Licenser och behörigheter som krävs
 

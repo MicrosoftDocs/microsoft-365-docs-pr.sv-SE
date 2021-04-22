@@ -1,7 +1,7 @@
 ---
 title: Få expertutbildning om avancerad sökning
 description: Kostnadsfri utbildning och vägledning från avancerade experter på sökning
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, language, training, scenarios, basic to advanced, videos, step-by-step
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, language, training, scenarios, basic to advanced, videos, step-by-step
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3aee0a210b9381174650a4a817be510bcfaa00c2
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: aee2d3204a5d30005c15199baa3af08f5e583a33
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498532"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935443"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Få expertutbildning om avancerad sökning
 

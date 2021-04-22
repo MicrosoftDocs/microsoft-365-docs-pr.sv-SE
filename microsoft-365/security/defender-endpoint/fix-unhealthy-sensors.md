@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
-ms.openlocfilehash: 3a26951a796d72237f992e520e1b793654e467e3
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: c4cdc80170b49a111f476d2d17222c41e2b5c55f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893407"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935371"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Åtgärda defekta sensorer i Microsoft Defender för Endpoint
 
@@ -66,7 +66,7 @@ Den här statusen anger att det finns begränsad kommunikation mellan enheten oc
 Följande föreslagna åtgärder kan hjälpa dig att åtgärda problem som rör en felkonfigurerad enhet med nedsatt kommunikation:
 
 - [Kontrollera att enheten har internetanslutning](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
-  Windows Defender ATP-sensorn kräver Microsoft Windows HTTP (WinHTTP) för att rapportera sensordata och kommunicera med Microsoft Defender för slutpunktstjänsten.
+  Microsoft Defender för slutpunkts sensoren kräver Microsoft Windows HTTP (WinHTTP) för att rapportera sensordata och kommunicera med Microsoft Defender för slutpunktstjänsten.
 
 - [Verifiera klientanslutningen till URL-adresser för Microsoft Defender för slutpunktstjänsten](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
   Verifiera att proxykonfigurationen har slutförts, att WinHTTP kan identifiera och kommunicera via proxyservern i din miljö och att proxyservern tillåter trafik till URL-adresser för Microsoft Defender för slutpunktstjänsten.
@@ -78,7 +78,7 @@ En felkonfigurerad enhet med statusen Inga sensordata har kommunikation med tjä
 Följ dessa åtgärder för att korrigera kända problem relaterade till en felkonfigurerad enhet med statusen Inga sensordata:
 
 - [Kontrollera att enheten har internetanslutning](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
-  Windows Defender ATP-sensorn kräver Microsoft Windows HTTP (WinHTTP) för att rapportera sensordata och kommunicera med Microsoft Defender för slutpunktstjänsten.
+  Microsoft Defender för slutpunkts sensoren kräver Microsoft Windows HTTP (WinHTTP) för att rapportera sensordata och kommunicera med Microsoft Defender för slutpunktstjänsten.
 
 - [Verifiera klientanslutningen till URL-adresser för Microsoft Defender för slutpunktstjänsten](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
   Verifiera att proxykonfigurationen har slutförts, att WinHTTP kan identifiera och kommunicera via proxyservern i din miljö och att proxyservern tillåter trafik till URL-adresser för Microsoft Defender för slutpunktstjänsten.

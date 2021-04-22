@@ -1,5 +1,5 @@
 ---
-title: Anslutning till Power BI för ATP-API:er för Microsoft Defender
+title: Anslutning till Power BI för Microsoft Defender för slutpunkts-API:er
 ms.reviewer: ''
 description: Skapa en Bi-rapport (Power Business Intelligence) överst i Microsoft Defender för slutpunkts-API:er.
 keywords: apis, API:er som stöds, Power BI, rapporter
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 696782ca03e5494c3fc5ca08943d1079c5d78f8a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7c99267d75c89b3484d207cd763131e4bcc91527
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167037"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935047"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>Skapa anpassade rapporter med Power BI
 
@@ -141,10 +141,10 @@ I det första exemplet visas hur du ansluter Power BI till Advanced Hunting API 
 Mer information finns i Power [BI-rapportmallar.](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)
 
 ## <a name="sample-reports"></a>Exempelrapporter
-Visa exempel på Microsoft Defender ATP Power BI-rapporter. Mer information finns i Bläddra [i kodexempel](https://docs.microsoft.com/samples/browse/?products=mdatp).
+Visa exemplen på Microsoft Defender för Endpoint Power BI-rapport. Mer information finns i Bläddra [i kodexempel](https://docs.microsoft.com/samples/browse/?products=mdatp).
 
 
-## <a name="related-topic"></a>Relaterade ämnen
+## <a name="related-topic"></a>Relaterat ämne
 - [Defender för slutpunkts-API:er](apis-intro.md)
 - [Advanced jakt-API](run-advanced-query-api.md)
 - [Använda OData-frågor](exposed-apis-odata-samples.md)

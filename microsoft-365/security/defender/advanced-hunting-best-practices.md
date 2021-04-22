@@ -1,7 +1,7 @@
 ---
 title: Avancerade metodtips för sökning i Microsoft 365 Defender
 description: Lär dig hur du skapar snabba, effektiva och felfria hotförfrågningar med avancerad sökning
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema, kusto, avoid timeout, command lines, process id, optimize, best practice, parse, join, summarize
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema, kusto, avoid timeout, command lines, process-id, optimize, best practice, parse, join, summarize
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e0744a01fc599b66f371b01194579f4845ed19fb
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 7db7607d3ed9d6f1b215fb842d5b6dd2415a770a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498733"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934903"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Avancerade metodtips för sökningsfrågor
 

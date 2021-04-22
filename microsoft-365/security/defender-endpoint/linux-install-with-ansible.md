@@ -2,7 +2,7 @@
 title: Distribuera Microsoft Defender för Slutpunkt på Linux med Ansible
 ms.reviewer: ''
 description: Här beskrivs hur du distribuerar Microsoft Defender för Slutpunkt på Linux med Ansible.
-keywords: microsoft, defender, atp, linux, installation, distribuera, avinstallation, enkel, ansible, linux, redhat, ubuntu, ubuntu, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender för Endpoint, linux, installation, distribuera, avinstallation, installationse, ansible, linux, redhat, ubuntu, ubuntu, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 697fcddad595c6883fe1e1f7258ca6154c48b94d
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 15ee02d90e81c48bf5ec718e669bf8f88f6424ff
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903910"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934783"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Distribuera Microsoft Defender för Slutpunkt på Linux med Ansible
 
@@ -36,7 +36,7 @@ ms.locfileid: "51903910"
 
 > Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-I den här artikeln beskrivs hur du distribuerar Defender för Endpoint för Linux med Ansible. För en lyckad distribution måste alla följande uppgifter slutföras:
+I den här artikeln beskrivs hur du distribuerar Defender för Slutpunkt på Linux med Ansible. För en lyckad distribution måste alla följande uppgifter slutföras:
 
 - [Ladda ned onboarding-paketet](#download-the-onboarding-package)
 - [Skapa ansible YAML-filer](#create-ansible-yaml-files)
@@ -45,7 +45,7 @@ I den här artikeln beskrivs hur du distribuerar Defender för Endpoint för Lin
 
 ## <a name="prerequisites-and-system-requirements"></a>Krav och systemkrav
 
-Innan du börjar kan du gå [till huvudsidan för Defender](microsoft-defender-endpoint-linux.md) för Endpoint för Linux för att få en beskrivning av förutsättningarna och systemkraven för den aktuella programvaruversionen.
+Innan du börjar kan du gå [till huvudsidan för Defender](microsoft-defender-endpoint-linux.md) för Slutpunkt på Linux för att få en beskrivning av förutsättningarna och systemkraven för den aktuella programvaruversionen.
 
 För ansible-distribution måste du dessutom känna till Ansible-administrationsuppgifter, ha Ansible konfigurerat och veta hur du distribuerar spelböcker och uppgifter. Det finns många sätt att slutföra samma aktivitet på ansible. De här instruktionerna förutsätter tillgänglighet för ansible-moduler som stöds, till exempel *apt* och *inte arkiverade för* distribution av paketet. Din organisation kan använda ett annat arbetsflöde. Mer information finns [i dokumentationen till Ansible.](https://docs.ansible.com/)
 
@@ -129,7 +129,7 @@ Skapa en underaktivitet eller rollfiler som bidrar till en spelbok eller uppgift
 
 - Lägg till Defender för slutpunktens lagringsplats och nyckel.
 
-    Defender för Endpoint för Linux kan distribueras från någon av följande kanaler (anges nedan som *[kanal]*): *insiders-fast,* *insiders-slow* eller *prod*. Var och en av dessa kanaler motsvarar en linux-programvarudatabas.
+    Defender för Slutpunkt i Linux kan distribueras från någon av följande kanaler (anges nedan som *[kanal]*): *insiders-fast,* *insiders-slow* eller *prod*. Var och en av dessa kanaler motsvarar en linux-programvarudatabas.
 
     Valet av kanal avgör typ och frekvens för uppdateringar som erbjuds till din enhet. Enheter inom *insiders – snabbt* är de första som får uppdateringar och nya funktioner, följt senare av *insiders-slow* och slutligen *av prod*.
 
@@ -271,7 +271,7 @@ Mer [information om hur](linux-resources.md#log-installation-issues) du hittar d
 
 ## <a name="operating-system-upgrades"></a>Uppgraderingar av operativsystem
 
-När du uppgraderar ditt operativsystem till en ny huvudversion måste du först avinstallera Defender för Endpoint för Linux, installera uppgraderingen och slutligen konfigurera om Defender för Endpoint för Linux på din enhet.
+När du uppgraderar ditt operativsystem till en ny huvudversion måste du först avinstallera Defender för Slutpunkt i Linux, installera uppgraderingen och slutligen konfigurera om Defender för Slutpunkt på Linux på din enhet.
 
 ## <a name="references"></a>Referenser
 

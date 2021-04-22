@@ -1,8 +1,8 @@
 ---
-title: Få åtkomst till API:er för Microsoft Defender för slutpunkt
+title: Få åtkomst till Microsoft Defender för Endpoint API
 ms.reviewer: ''
-description: Lär dig hur du kan använda API:er för att automatisera arbetsflöden och ny information baserat på Microsoft Defender ATP-funktioner
-keywords: apis, api, wdatp, open api, microsoft defender atp api, public api, apis som stöds, aviseringar, enhet, användare, domän, ip, fil, avancerad sökning, fråga
+description: Lär dig hur du kan använda API:er för att automatisera arbetsflöden och ny information baserat på Microsoft Defender för slutpunktsfunktioner
+keywords: apis, api, Microsoft Defender för slutpunkt, open api, Microsoft Defender för Endpoint api, public api, apis som stöds, aviseringar, enhet, användare, domän, ip, fil, avancerad sökning, fråga
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 70a8ba9d3ff864ca58c856714b00f0e8feba933a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 87dce8ff4fde505eb8d4e458c8d9fb56556f4d78
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164778"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935113"
 ---
-# <a name="access-the-microsoft-defender-for-endpoint-apis"></a>Få åtkomst till API:er för Microsoft Defender för slutpunkt 
+# <a name="access-the-microsoft-defender-for-endpoint-apis"></a>Få åtkomst till Microsoft Defender för Endpoint API 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -61,7 +61,7 @@ Du kan komma åt Defender för Endpoint API med **programkontext** eller **anvä
   2. Tilldela önskat tillstånd till programmet, till exempel "Läsaviseringar", "Isolera maskiner". 
   3. Skapa en nyckel för det här programmet.
   4. Hämta token genom att använda programmet med dess nyckel.
-  5. Använda token för att få åtkomst till Microsoft Defender ATP API
+  5. Använda token för att komma åt Microsoft Defender för Endpoint API
 
      Mer information finns i Få [åtkomst med programmets kontext.](exposed-apis-create-app-webapp.md)
 
@@ -74,7 +74,7 @@ Du kan komma åt Defender för Endpoint API med **programkontext** eller **anvä
   1. Skapa det ursprungliga AAD-programmet.
   2. Tilldela önskat tillstånd till programmet, t.ex. "Läsaviseringar", "Isolera maskiner" osv. 
   3. Hämta token genom att använda programmet med användaruppgifter.
-  4. Använda token för att få åtkomst till Microsoft Defender ATP API
+  4. Använda token för att komma åt Microsoft Defender för Endpoint API
 
      Mer information finns i Få [åtkomst med användarkontext.](exposed-apis-create-app-nativeapp.md)
 

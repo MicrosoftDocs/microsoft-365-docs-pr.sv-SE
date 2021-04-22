@@ -1,7 +1,7 @@
 ---
 title: Växla till Microsoft Defender för slutpunkt – konfigurera
 description: Det här är fas 2, installationsprogrammet, för att växla till Microsoft Defender för Endpoint.
-keywords: migrering, windows defender avancerat skydd, atp, edr
+keywords: migrering, Microsoft Defender för Slutpunkt, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 6f2104e38bd55806e0873166b07a31aff46e9c24
-ms.sourcegitcommit: 847b0920016ae20c82a0501bda6019cd940482df
+ms.openlocfilehash: 656ee0bda769cb5ff2cdbe406db2a95e791210c1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51484762"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935563"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Växla till Microsoft Defender för slutpunkt – fas 2: Installation
 

@@ -1,7 +1,7 @@
 ---
 title: Introduktion med Microsoft Endpoint Manager
 description: Lär dig hur du onboardar till Microsoft Defender för Endpoint med Microsoft Endpoint Manager
-keywords: onboarding, configuration, deploy, deployment, endpoint manager, mdatp, advanced threat protection, collection creation, endpoint detection response, next generation protection, attack surface reduction, microsoft endpoint manager
+keywords: onboarding, configuration, deploy, deployment, endpoint manager, Microsoft Defender for Endpoint, collection creation, endpoint detection response, next generation protection, attack surface reduction, microsoft endpoint manager
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9edcceca2f6cc7c2377eb388d7394a23dfbae99d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: e744262cfd63383e69abf02be9fbf91d2d229db2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186263"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935263"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Introduktion med Microsoft Endpoint Manager
 
@@ -123,14 +123,14 @@ I följande avsnitt ska du skapa ett antal konfigurationsprinciper.
 
 Först finns en konfigurationsprincip för att välja vilka grupper av användare eller enheter som ska introduceras i Defender för Slutpunkt:
 
-- [Identifiering och svar av slutpunkter](#endpoint-detection-and-response) 
+- [Identifiering och svar för slutpunkt](#endpoint-detection-and-response) 
 
 Sedan fortsätter du genom att skapa flera olika typer av slutpunktssäkerhetsprinciper:
 
 - [Nästa generations skydd](#next-generation-protection)
 - [Minskning av attackytan](#attack-surface-reduction--attack-surface-reduction-rules)
 
-### <a name="endpoint-detection-and-response"></a>Identifiering och svar av slutpunkter
+### <a name="endpoint-detection-and-response"></a>Identifiering och svar av slutpunkt
 
 1.  Öppna MEM-portalen.
 
@@ -355,7 +355,7 @@ Bekräfta att konfigurationsprincipen har använts på testenheten genom att fö
     > [!div class="mx-imgBorder"]
     > [![Bild av Microsoft Endpoint Manager portal37 ](images/42acc69d0128ed09804010bdbdf0a43c.png)](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
 
-### <a name="endpoint-detection-and-response"></a>Identifiering och svar av slutpunkter
+### <a name="endpoint-detection-and-response"></a>Identifiering och svar av slutpunkt
 
 
 1.  Innan du använder konfigurationen bör inte tjänsten Defender för Endpoint Protection startas.

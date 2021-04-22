@@ -1,8 +1,8 @@
 ---
-title: Licensvillkor för Microsoft Defender ATP för Android-appar
+title: Licensvillkor för Microsoft Defender för slutpunkt på Android-appar
 ms.reviewer: ''
-description: Beskriver licensvillkoren för Microsoft Defender ATP för Android
-keywords: microsoft, defender, atp, android,licens, villkor, program, användning, installation, tjänst, feedback, omfattning,
+description: Beskriver licensvillkoren för Microsoft Defender för slutpunkt på Android
+keywords: microsoft, defender, Microsoft Defender för slutpunkt, android, licens, villkor, program, användning, installation, tjänst, feedback, omfattning,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: 2bcc8c1f977a6060ac94dc3a634f075a5c1ee041
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d73ddb3a8defb7697a995c2593d6a240a59c9cfe
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687955"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934627"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android-application-license-terms"></a>Licensvillkor för Microsoft Defender för slutpunkt på Android-program
 
@@ -105,7 +105,7 @@ för den här appen, såvida inte andra termer medföljer de objekten. I så fal
 
     2.  Respektive app store-leverantör och dess dotterbolag är mottagare av dessa villkor som mottagare av dessa villkor, och när du godkänner dessa villkor, har leverantören/appbutiken rätt att direkt tillämpa och förlita sig på alla bestämmelser i dessa villkor som ger dem en förmån eller rättigheter.
 
-9.  **MEDDELANDEN OM VARUMÄRKEN.** Microsoft, Microsoft Defender ATP, MDATP och Microsoft 365 är registrerade eller varumärken som är gemensamma för Microsoft Corporation i USA och/eller andra länder.
+9.  **MEDDELANDEN OM VARUMÄRKEN.** Microsoft, Microsoft Defender för Endpoint och Microsoft 365 är registrerade eller varumärken som ägs av andra länder än Microsoft Corporation i USA och/eller andra länder.
 
 10. **ENTIRE AGREEMENT.** Det här avtalet och villkoren för tillägg, uppdateringar, Internetbaserade tjänster och supporttjänster som du använder är det avtalet som gäller hela avtalet för program- och supporttjänsterna.
 

@@ -2,7 +2,7 @@
 title: Distribuera Microsoft Defender för slutpunkt på Linux med Defender
 ms.reviewer: ''
 description: Här beskrivs hur du distribuerar Microsoft Defender för Slutpunkt på Linux med Hjälp av Linux.
-keywords: microsoft, defender, atp, linux, installation, distribuera, avinstallation, enkel, ansible, linux, redhat, ubuntu, ubuntu, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender för Endpoint, linux, installation, distribuera, avinstallation, installationse, ansible, linux, redhat, ubuntu, ubuntu, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 413f8113d2f782c0a57d648a6db8178f2e522270
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: d54732134e91b87b2639634c365556beda5312b0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903888"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934579"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Distribuera Microsoft Defender för slutpunkt på Linux med Defender
 
@@ -36,7 +36,7 @@ ms.locfileid: "51903888"
 
 > Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-I den här artikeln beskrivs hur du distribuerar Defender för Endpoint för Linux med Hjälp av Linux. För en lyckad distribution måste alla följande uppgifter slutföras:
+I den här artikeln beskrivs hur du distribuerar Defender för Endpoint på Linux med Hjälp av Linux. För en lyckad distribution måste alla följande uppgifter slutföras:
 
 - [Ladda ned onboarding-paketet](#download-the-onboarding-package)
 - [Create Manifest](#create-a-puppet-manifest)
@@ -45,7 +45,7 @@ I den här artikeln beskrivs hur du distribuerar Defender för Endpoint för Lin
 
 ## <a name="prerequisites-and-system-requirements"></a>Krav och systemkrav
 
- En beskrivning av krav och systemkrav för den aktuella programvaruversionen finns på [huvudsidan för Defender för Endpoint för Linux.](microsoft-defender-endpoint-linux.md)
+ En beskrivning av krav och systemkrav för den aktuella programvaruversionen finns på [huvudsidan för Defender för slutpunkt på Linux.](microsoft-defender-endpoint-linux.md)
 
 För distributionen av distributionsen så måste du dessutom vara bekant med projektadministrationsuppgifter, har konfigurering av första hand och vet hur du distribuerar paket. Det finns många sätt att slutföra samma uppgift på. I de här instruktionerna förutsätts att det finns stöd för moduler som stöds, till exempel *apt* för att distribuera paketet. Din organisation kan använda ett annat arbetsflöde. Mer information finns [i dokumentation](https://puppet.com/docs) om Dokumentation.
 
@@ -79,7 +79,7 @@ Ladda ned introduktionspaketet från Microsoft Defender Säkerhetscenter:
 
 ## <a name="create-a-puppet-manifest"></a>Skapa ett manifest av semanifest
 
-Du måste skapa ett Manifest för att distribuera Defender för Endpoint för Linux till enheter som hanteras av en server för server av ett företag. I det här exemplet används de *apt-* och *yumrepo-moduler* som är tillgängliga från celllabs, och förutsätter att modulerna har installerats på din Server för server för server, så att du kan installera dem på den.
+Du måste skapa ett Manifest för att distribuera Defender för Slutpunkt på Linux till enheter som hanteras av en Server för server av en klient. I det här exemplet används de *apt-* och *yumrepo-moduler* som är tillgängliga från celllabs, och förutsätter att modulerna har installerats på din Server för server för server, så att du kan installera dem på den.
 
 Skapa mapparna *install_mdatp/filer* *och install_mdatp/manifest* under modulmappen i din arkivinstallation. Den här mappen finns normalt *i /etc/lablabs/code/environments/production/modules* på din Server för server för server, där du kan installera en server. Kopiera filen mdatp_onboard.jsfilen som skapats ovan till mappen *install_mdatp/filer.* Skapa en *init.pp* som innehåller distributionsanvisningarna:
 
@@ -103,7 +103,7 @@ install_mdatp
 
 ### <a name="contents-of-install_mdatpmanifestsinitpp"></a>Innehållet i `install_mdatp/manifests/init.pp`
 
-Defender för Endpoint för Linux kan distribueras från någon av följande kanaler (anges nedan som *[kanal]*): *insiders-fast,* *insiders-slow* eller *prod*. Var och en av dessa kanaler motsvarar en linux-programvarudatabas.
+Defender för Slutpunkt i Linux kan distribueras från någon av följande kanaler (anges nedan som *[kanal]*): *insiders-fast,* *insiders-slow* eller *prod*. Var och en av dessa kanaler motsvarar en linux-programvarudatabas.
 
 Valet av kanal avgör typ och frekvens för uppdateringar som erbjuds till din enhet. Enheter inom *insiders – snabbt* är de första som får uppdateringar och nya funktioner, följt senare av *insiders-slow* och slutligen *av prod*.
 
@@ -238,7 +238,7 @@ Om produkten inte är felfri visar utgångskoden (som kan kontrolleras `echo $?`
 
 ## <a name="operating-system-upgrades"></a>Uppgraderingar av operativsystem
 
-När du uppgraderar ditt operativsystem till en ny huvudversion måste du först avinstallera Defender för Endpoint för Linux, installera uppgraderingen och slutligen konfigurera om Defender för Endpoint för Linux på din enhet.
+När du uppgraderar ditt operativsystem till en ny huvudversion måste du först avinstallera Defender för Slutpunkt i Linux, installera uppgraderingen och slutligen konfigurera om Defender för Slutpunkt på Linux på din enhet.
 
 ## <a name="uninstallation"></a>Avinstallation
 

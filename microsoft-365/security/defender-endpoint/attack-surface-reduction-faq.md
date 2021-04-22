@@ -1,6 +1,6 @@
 ---
 title: Vanliga frågor och svar om att minska attackytan
-description: Hitta svar på vanliga frågor om minskningsregler för attackytor i Microsoft Defender ATP.
+description: Hitta svar på vanliga frågor om Microsoft Defender för Endpoints minskningsregler för attackytor.
 keywords: Minskningsregler för attackytan, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, prevention av smitta, microsoft defender för slutpunkt
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71c3f89b721039753709d65daa135cad74a81711
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: cf41dda4ff61137d6b60b2fc735227f15418477e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476466"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935599"
 ---
 # <a name="attack-surface-reduction-frequently-asked-questions-faq"></a>Vanliga frågor och svar om att minska attackytan
 

@@ -1,7 +1,7 @@
 ---
 title: Tabellen EmailPostDeliveryEvents i det avancerade sökschemat
 description: Läs mer om åtgärder efter leverans som har vidtagits för Microsoft 365-e-postmeddelanden i tabellen EmailPostDeliveryEvents i det avancerade sökschemat
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailPostDeliveryEvents, network message id, sender, recipient, attachment id, attachment id, attachment name, malware phishing phishing phishing phishing, attachment count, link count, url count
+keywords: avancerad sökning, hotsökning, sökning efter cyberhot, Microsoft 365 Defender, microsoft 365, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, EmailPostDeliveryEvents, nätverksmeddelande-ID, avsändare, mottagare, bifogad fil, bifogade filer, namn på bifogad fil, skadlig kod, nätfiskeutdrag, antal bifogade filer, antal bifogade filer, antal url-adresser
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c6612127f43e650dee18bdc9390fc26b0a693f69
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 444af2441eef5a3720325656f996e6bcdb42937e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498894"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935479"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 

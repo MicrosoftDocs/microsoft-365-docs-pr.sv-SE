@@ -2,7 +2,7 @@
 title: Appbaserad distribution av Microsoft Defender för Slutpunkt i iOS
 ms.reviewer: ''
 description: Här beskrivs hur du distribuerar Microsoft Defender för slutpunkt i iOS med hjälp av en app
-keywords: microsoft, defender, atp, ios, app, installation, distribuera, avinstallation, intune
+keywords: microsoft, defender, Microsoft Defender för slutpunkt, ios, app, installation, distribuera, avinstallation, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4ddaf8759fa0f2ffb4ed3eb3bb940426dfb3da2c
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 62eefbd17b826aa2cfb541c04ba206d0f58f9bbf
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904064"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935059"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Distribuera Microsoft Defender för Slutpunkt i iOS
 
@@ -35,20 +35,20 @@ ms.locfileid: "51904064"
 
 > Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-I det här avsnittet beskrivs hur du distribuerar Defender för Slutpunkt för iOS på registrerade enheter i Intune-företagsportal. Mer information om registrering av Intune-enheter finns i [Registrera iOS-/iPadOS-enheter i Intune.](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll)
+I det här avsnittet beskrivs distribution av Defender för Slutpunkt på iOS på Registrerade enheter i Intune-företagsportal. Mer information om registrering av Intune-enheter finns i [Registrera iOS-/iPadOS-enheter i Intune.](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll)
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
 - Kontrollera att du har åtkomst till [administrationscentret för Microsoft Endpoint Manager.](https://go.microsoft.com/fwlink/?linkid=2109431)
 
-- Se till att iOS-registreringen utförs för dina användare. Användarna måste ha en Defender för slutpunktslicens tilldelad för att kunna använda Defender för slutpunkt för iOS. Anvisningar om [hur du tilldelar licenser](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) finns i Tilldela licenser till användare.
+- Se till att iOS-registreringen utförs för dina användare. Användarna måste ha en Defender för slutpunktslicens tilldelad för att kunna använda Defender för slutpunkt i iOS. Anvisningar om [hur du tilldelar licenser](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) finns i Tilldela licenser till användare.
 
 > [!NOTE]
 > Microsoft Defender för slutpunkt på iOS är nu tillgängligt i [Apple App Store.](https://aka.ms/mdatpiosappstore)
 
 ## <a name="deployment-steps"></a>Distributionssteg
 
-Distribuera Defender för Slutpunkt för iOS via Intune-företagsportalen.
+Distribuera Defender för Slutpunkt i iOS via Intune-företagsportalen.
 
 ### <a name="add-ios-store-app"></a>Lägg till en iOS Store-app
 
@@ -61,7 +61,7 @@ Distribuera Defender för Slutpunkt för iOS via Intune-företagsportalen.
 
 1. Välj **iOS 11.0** som Minimum-operativsystem. Granska resten av informationen om programmet och klicka på **Nästa**.
 
-1. Gå till *avsnittet Obligatoriska* i avsnittet Uppgifter **och** välj Lägg **till grupp**. Du kan sedan välja den användargrupp(er) som du vill rikta Defender för Endpoint för iOS-appen till. Klicka **på Markera** och sedan på **Nästa.**
+1. Gå till *avsnittet Obligatoriska* i avsnittet Uppgifter **och** välj Lägg **till grupp**. Du kan sedan välja den användargrupp(er) som du vill rikta Defender mot Endpoint i iOS-appen. Klicka **på Markera** och sedan på **Nästa.**
 
     > [!NOTE]
     > Den valda användargruppen ska bestå av intune-registrerade användare.
@@ -78,11 +78,11 @@ Distribuera Defender för Slutpunkt för iOS via Intune-företagsportalen.
 
 ## <a name="complete-onboarding-and-check-status"></a>Fullständig registrering och kontrollstatus
 
-1. När Defender för Slutpunkt för iOS har installerats på enheten visas appikonen.
+1. När Defender för slutpunkt på iOS har installerats på enheten visas appikonen.
 
     ![En skärmbild av en beskrivning av en smartphone som genererats automatiskt](images/41627a709700c324849bf7e13510c516.png)
 
-2. Tryck på appikonen Defender för slutpunkt och följ instruktionerna på skärmen för att slutföra introduktionsstegen. Informationen innefattar godkännande av iOS-behörigheter som krävs av Defender för Endpoint för iOS.
+2. Tryck på appikonen Defender för slutpunkt och följ instruktionerna på skärmen för att slutföra introduktionsstegen. Informationen innefattar godkännande av iOS-behörigheter som krävs av Defender för Endpoint på iOS.
 
 3. Om onboarding lyckas visas enheten i listan Enheter i Microsoft Defender Säkerhetscenter.
 

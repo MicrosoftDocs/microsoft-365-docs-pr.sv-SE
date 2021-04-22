@@ -1,7 +1,7 @@
 ---
 title: Konfigurera utvärderingslabb eller pilotmiljö med Microsoft 365 Defender
 description: Gå till Microsoft 365 Säkerhetscenter och konfigurera sedan testlabbmiljön i Microsoft 365 Defender
-keywords: Utvärderingsversion av Microsoft Threat Protection, pilotkonfiguration av Microsoft Threat Protection, prova Microsoft Threat Protection, utvärderingslabbkonfiguration av Microsoft Threat Protection
+keywords: Utvärderingsversionskonfiguration för Microsoft 365 Defender, pilotinstallation av Microsoft 365 Defender, Microsoft 365 Defender utvärderingslabbkonfiguration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 976f6a1ec010348e8a281c251064acdd7a26748b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ae81f6be0a83d5d0141f0f0c8c89f8f2207cc56c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51074777"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935431"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-lab-environment"></a>Konfigurera utvärderingslabbmiljön i Microsoft 365 Defender 
 
