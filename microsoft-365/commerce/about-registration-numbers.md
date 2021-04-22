@@ -19,12 +19,12 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: a9625b391260d27610bb304b0ae3788b541b7709
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9f6489425a924c15d1a5cddb8c9a7d3d7812e5f0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912014"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930239"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>Om registreringsnummer och under Granska aviseringar
 
@@ -36,7 +36,7 @@ Vi använder registreringsnumret för att granska informationen om ditt konto. V
 
 I länder där registreringsnumret är obligatoriskt anger etiketten ovanför textrutan vilken typ av nummer som krävs.
 
-På följande skärmbild anger etiketten till exempel att ett CNPJ-registreringsnummer krävs.
+På följande skärmbild anger etiketten till exempel att ett registernummer för CNPJ (Brasilien) krävs.
 
 :::image type="content" source="../media/macregnum-cnpj-screenshot-400.png" alt-text="Skärmbild av fältet med registreringsnummer för C N P J-nummer.":::
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender
 description: Konfigurera utvärderingslabb eller pilotmiljö i Microsoft 365 Defender för att prova och uppleva den säkerhetslösning som utformats för att skydda enheter, identitet, data och program i organisationen.
-keywords: Utvärderingsversion av Microsoft Threat Protection, prova Microsoft Threat Protection, utvärdera Microsoft Threat Protection utvärderingslabb, Microsoft Threat Protection pilot, cybersäkerhet, avancerade beständiga hot, företagssäkerhet, enheter, enhet, identitet, användare, data, program, incidenter, automatiserad undersökning och åtgärd, avancerad sökning
+keywords: Utvärderingsversion av Microsoft 365 Defender, prova Microsoft 365 Defender, utvärdera Microsoft 365 Defender, utvärderingslabb med Microsoft 365 Defender, pilotversion, cybersäkerhet, avancerade hot, företagssäkerhet, enheter, enheter, identitet, användare, data, program, incidenter, automatisk undersökning och åtgärd, avancerad sökning
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2ea829e0e2697facd2522dbf16ced7d620662eee
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1c260588b80d8325567b74148a7a62586cfbc707
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076657"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933175"
 ---
 # <a name="create-a-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Skapa en testlabb- eller pilotmiljö med Microsoft 365 Defender 
 
@@ -64,7 +64,7 @@ Det finns tre faser i att skapa en testlabbmiljö med Microsoft 365 Defender.
 |Fas | Beskrivning | 
 |:-------|:-----|
 |[Fas 1: Förbereda](prepare-m365d-eval.md)| Lär dig vad du behöver tänka på när du distribuerar Microsoft 365 Defender i ett testlabb eller pilotmiljö: <br><br>- Intressenter och av inloggning <br> - Att tänka på när det gäller miljön <br>- Access <br>- Azure Active Directory-konfiguration <br> - Konfigurationsordning
-|[Fas 2: Konfigurera](setup-m365deval.md)|  Ta de första stegen för att få åtkomst till Säkerhetscenter för Microsoft 365 för att konfigurera utvärderingslabb eller pilotmiljö för Microsoft 365 Defender. Du vägleds till:<br><br>- Registrera dig för utvärderingsversionen av Microsoft 365 E5 <br>  - Konfigurera domän<br>- Tilldela Microsoft 365 E5-licenser<br>- Slutför installationsguiden i portalen|
+|[Fas 2: Installation](setup-m365deval.md)|  Ta de första stegen för att få åtkomst till Säkerhetscenter för Microsoft 365 för att konfigurera utvärderingslabb eller pilotmiljö för Microsoft 365 Defender. Du vägleds till:<br><br>- Registrera dig för utvärderingsversionen av Microsoft 365 E5 <br>  - Konfigurera domän<br>- Tilldela Microsoft 365 E5-licenser<br>- Slutför installationsguiden i portalen|
 |[Fas 3: Konfigurera & onboard](config-m365d-eval.md) | Konfigurera varje Microsoft 365 Defender-klient och slutpunkter för onboard. Du vägleds till:<br><br>- Konfigurera Microsoft Defender för Office 365<br>- Konfigurera Microsoft Cloud App-säkerhet<br>- Konfigurera Microsoft Defender för identitet<br>- Konfigurera Microsoft Defender för Slutpunkt
 
 

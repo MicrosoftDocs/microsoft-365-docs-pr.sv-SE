@@ -1,7 +1,7 @@
 ---
 title: Beteendeblockering och inneslutning
 description: Läs mer om funktioner för beteendeblockering och inneslutning i Microsoft Defender för Endpoint
-keywords: Microsoft Defender ATP, EDR i blockläge, blockering av passivt läge
+keywords: Microsoft Defender för Slutpunkt, EDR i blockeringsläge, blockering av passivt läge
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 7cea65292c427cb953e2e8e3ca866c89f83128b1
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: fdaa4d7cbc24ae2ebe28d0856b413f4982fe6b01
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587173"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929055"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Beteendeblockering och inneslutning
 

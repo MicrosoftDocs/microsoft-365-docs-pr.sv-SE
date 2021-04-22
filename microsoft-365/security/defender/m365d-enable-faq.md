@@ -1,7 +1,7 @@
 ---
 title: Vanliga frågor och svar när du slår på Microsoft 365 Defender
 description: Få svar på de vanligaste frågorna om licensiering, behörigheter, initiala inställningar och andra produkter och tjänster relaterade till att aktivera Microsoft 365 Defender
-keywords: vanliga frågor och svar, vanliga frågor och svar, GCC, komma igång, aktivera MTP, Microsoft Threat Protection, M365, säkerhet, dataplats, obligatoriska behörigheter, licensberättigande, inställningssidan
+keywords: Vanliga frågor och svar, vanliga frågor och svar, GCC, kom igång, aktivera Microsoft 365 Defender, Microsoft 365 Defender, M365, säkerhet, dataplats, nödvändiga behörigheter, licensberättigande, inställningssidan
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7482bf614e7cb3ffad6596f3c5d8bc554d46d912
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 55c1a3807fe8e28ca12f4f638c1ab2ca717523ed
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076689"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933439"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Vanliga frågor och svar när du slår på Microsoft 365 Defender
 

@@ -1,7 +1,7 @@
 ---
 title: Vidta åtgärder för avancerade frågeresultat för sökning i Microsoft 365 Defender
 description: Hantera snabbt hot och påverkade tillgångar i dina avancerade frågeresultat för sökning
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, take action
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, take action
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ee35bcc29ef8a283b6b04cb34ab97705d5dd15f4
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 0c088375cd784b411fdce417d77b1ea176bcee26
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498231"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932911"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Vidta åtgärder för avancerade frågeresultat för sökning
 

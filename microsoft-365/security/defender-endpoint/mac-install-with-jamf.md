@@ -1,7 +1,7 @@
 ---
-title: Distribuera Microsoft Defender för Slutpunkt för macOS med Jamf Pro
-description: Distribuera Microsoft Defender för Slutpunkt för macOS med Jamf Pro
-keywords: microsoft, defender, atp, mac, installation, distribuera, avinstallation, intune, jamfpro, macos, catalina, mojave, high sierra
+title: Distribuera Microsoft Defender för slutpunkt på macOS med Jamf Pro
+description: Distribuera Microsoft Defender för slutpunkt på macOS med Jamf Pro
+keywords: microsoft, defender, Microsoft Defender för slutpunkt, mac, installation, distribuera, avinstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e49a56b138e792f06229345d19a5867c9f6438af
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: d102635a284ec5c802e352f097d1632e2f20e166
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862265"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929067"
 ---
 # <a name="deploying-microsoft-defender-for-endpoint-on-macos-with-jamf-pro"></a>Distribuera Microsoft Defender för slutpunkt på macOS med Jamf Pro
 

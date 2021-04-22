@@ -1,7 +1,7 @@
 ---
 title: Sammanfattning av dina microsoft 365 Defender-pilotprojektresultat
 description: Avsluta microsoft 365 Defender-pilotprojektet genom att slutföra ditt styrkort, analysera resultaten i rapporten och bestämma hur du ska gå framåt.
-keywords: Microsoft Threat Protection-pilot, bestäm vad du ska göra härnäst efter att ha pilottestat Microsoft Threat Protection-projektet, vad du ska göra efter att ha utvärderat Microsoft Threat Protection i produktionen, övergång från Microsoft Threat Protection Pilot till distribution, cybersäkerhet, avancerade beständiga hot, företagssäkerhet, enheter, enheter, identitet, användare, data, program, incidenter, automatisk undersökning och åtgärd, avancerad sökning
+keywords: Microsoft 365 Defender Pilot, bestäm vad du ska göra härnäst efter pilottestet av Microsoft 365 Defender-projektet, vad du ska göra efter utvärdering av Microsoft 365 Defender i produktionen, övergång från Microsoft 365 Defender pilottest till distribution, cybersäkerhet, avancerade beständiga hot, företagssäkerhet, enheter, enheter, identitet, användare, data, program, incidenter, automatiserad undersökning och åtgärd, avancerad sökning
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2553e88992b7eca906b4697edee4cdf632929444
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 64cdb37b64780a651b2689e68e21c5a385df5ba9
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076649"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932875"
 ---
 # <a name="closing-and-summarizing-your-microsoft-365-defender-pilot"></a>Stänga och sammanfatta din Microsoft 365 Defender-pilot  
 

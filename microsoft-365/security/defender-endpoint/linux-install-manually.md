@@ -2,7 +2,7 @@
 title: Distribuera Microsoft Defender för Slutpunkt i Linux manuellt
 ms.reviewer: ''
 description: Här beskrivs hur du distribuerar Microsoft Defender för slutpunkt i Linux manuellt från kommandoraden.
-keywords: microsoft, defender, atp, linux, installation, distribuera, avinstallation, enkel, ansible, linux, redhat, ubuntu, ubuntu, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender för Endpoint, linux, installation, distribuera, avinstallation, installationse, ansible, linux, redhat, ubuntu, ubuntu, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2beb46c62de2e9720d1626e0e1e5ce806a6d7e19
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 0374c1a44a4d942ea631d97f51fa48df15d3ec13
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903922"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929091"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Distribuera Microsoft Defender för Slutpunkt i Linux manuellt
 
@@ -58,7 +58,7 @@ Innan du börjar kan du gå till [Microsoft Defender för Slutpunkt](microsoft-d
 
 ## <a name="configure-the-linux-software-repository"></a>Konfigurera linux-programvarans lagringsplats
 
-Defender för Endpoint för Linux kan distribueras från någon av följande kanaler (anges nedan som *[kanal]*): *insiders-fast,* *insiders-slow* eller *prod*. Var och en av dessa kanaler motsvarar en linux-programvarudatabas. Anvisningar för hur du konfigurerar enheten för att använda någon av dessa lagringsningar finns nedan.
+Defender för Slutpunkt i Linux kan distribueras från någon av följande kanaler (anges nedan som *[kanal]*): *insiders-fast,* *insiders-slow* eller *prod*. Var och en av dessa kanaler motsvarar en linux-programvarudatabas. Anvisningar för hur du konfigurerar enheten för att använda någon av dessa lagringsningar finns nedan.
 
 Valet av kanal avgör typ och frekvens för uppdateringar som erbjuds till din enhet. Enheter inom *insiders – snabbt* är de första som får uppdateringar och nya funktioner, följt senare av *insiders-slow* och slutligen *av prod*.
 
@@ -86,7 +86,7 @@ Om du vill förhandsgranska nya funktioner och ge tidig feedback rekommenderar v
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    Om du till exempel kör CentOS 7 och vill distribuera Defender för Endpoint för Linux från *prod-kanalen:*
+    Om du till exempel kör CentOS 7 och vill distribuera Defender för Endpoint på Linux från *prod-kanalen:*
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
@@ -328,7 +328,7 @@ Ladda ned introduktionspaketet från Microsoft Defender Säkerhetscenter:
     > ```bash
     > mdatp health --field definitions_status
     > ```
-    > Observera att du kan också behöva konfigurera en proxy när du har slutfört den första installationen. Se [Konfigurera Defender för slutpunkt för Linux för statisk proxyidentifiering: Konfiguration efter installation.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)
+    > Observera att du kan också behöva konfigurera en proxy när du har slutfört den första installationen. Se [Konfigurera Defender för slutpunkt på Linux för statisk proxyidentifiering: Konfiguration efter installation.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)
 
 5. Kör ett identifieringstest för att verifiera att enheten är korrekt onboarded och rapporterar till tjänsten. Utför följande steg på den nyligen inbyggda enheten:
 
@@ -344,7 +344,7 @@ Ladda ned introduktionspaketet från Microsoft Defender Säkerhetscenter:
         curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    - Filen borde ha satts i karantän av Defender för Endpoint för Linux. Använd följande kommando för att lista alla identifierade hot:
+    - Filen skulle ha satts i karantän av Defender för Endpoint på Linux. Använd följande kommando för att lista alla identifierade hot:
 
         ```bash
         mdatp threat list
@@ -381,7 +381,7 @@ Mer [information om hur](linux-resources.md#log-installation-issues) du hittar d
 
 ## <a name="operating-system-upgrades"></a>Uppgraderingar av operativsystem
 
-När du uppgraderar ditt operativsystem till en ny huvudversion måste du först avinstallera Defender för Endpoint för Linux, installera uppgraderingen och slutligen konfigurera om Defender för Endpoint för Linux på din enhet.
+När du uppgraderar ditt operativsystem till en ny huvudversion måste du först avinstallera Defender för Slutpunkt i Linux, installera uppgraderingen och slutligen konfigurera om Defender för Slutpunkt på Linux på din enhet.
 
 ## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>Migrera från Insiders-Fast till produktionskanalen
 
@@ -406,4 +406,4 @@ När du uppgraderar ditt operativsystem till en ny huvudversion måste du först
 
 ## <a name="uninstallation"></a>Avinstallation
 
-Se [Avinstallera](linux-resources.md#uninstall) för mer information om hur du tar bort Defender för Endpoint för Linux från klientenheter.
+Se [Avinstallera](linux-resources.md#uninstall) för mer information om hur du tar bort Defender för Slutpunkt på Linux från klientenheter.

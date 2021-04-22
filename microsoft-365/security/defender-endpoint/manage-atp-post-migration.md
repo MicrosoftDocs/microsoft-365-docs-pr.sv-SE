@@ -1,7 +1,7 @@
 ---
 title: Hantera Microsoft Defender för slutpunkt efter migrering
 description: Nu när du har gått över till Microsoft Defender för Endpoint är nästa steg att hantera dina skyddsfunktioner för hot
-keywords: efter migrering, hantera, åtgärder, underhåll, användning, windows defender avancerat skydd mot hot, atp, edr
+keywords: efter migrering, hantera, åtgärder, underhåll, användning, Microsoft Defender för Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 01/26/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 54302f38f0fd63560ecd1c5545efa4621c6b9bbd
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: eedd13030fd6a649985dc7280dc256e4ab35089a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185867"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933199"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-post-migration"></a>Hantera Microsoft Defender för Slutpunkt efter migrering
 
@@ -48,8 +48,8 @@ I följande tabell finns olika verktyg/metoder som du kan använda, med länkar 
 |**[Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)**  (rekommenderas)    |Microsoft Intune (Intune), en komponent i [Microsoft Endpoint Manager,](https://docs.microsoft.com/mem/endpoint-manager-overview)fokuserar på hantering av mobila enheter (MDM) och hantering av mobila enheter (MAM). Med Intune kan du styra hur organisationens enheter används, till exempel mobiltelefoner, surfplattor och bärbara datorer. Du kan också konfigurera specifika principer för att styra program. <br/><br/>Se [Hantera Microsoft Defender för Slutpunkt med Intune](manage-atp-post-migration-intune.md).         |
 |**[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction)**     |Microsoft Endpoint Manager (Configuration Manager), kallades tidigare System Center Configuration Manager, är en komponent i [Microsoft Endpoint Manager.](https://docs.microsoft.com/mem/endpoint-manager-overview) Konfigurationshanteraren är ett kraftfullt verktyg för att hantera användare, enheter och programvara.<br/><br/>Se [Hantera Microsoft Defender för Slutpunkt med Konfigurationshanteraren](manage-atp-post-migration-configuration-manager.md).        |
 |**[Grupprincipobjekt i Azure Active Directory Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy)** |[Azure Active Directory Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services/overview) innehåller inbyggda grupprincipobjekt för användare och enheter. Du kan anpassa de inbyggda grupprincipobjekten efter behov för din miljö, samt skapa egna grupprincipobjekt och organisationsenheter (OUs). <br/><br/>Se [Hantera Microsoft Defender för slutpunkt med grupprincipobjekt](manage-atp-post-migration-group-policy-objects.md). |
-|**[PowerShell, WMI och MPCmdRun.exe](manage-atp-post-migration-other-tools.md)** |*Vi rekommenderar att du använder Microsoft Endpoint Manager (som innehåller Intune och Konfigurationshanteraren) för att hantera skyddsfunktioner för hot på din organisations enheter. Du kan konfigurera vissa inställningar, till exempel inställningar för Microsoft Defender Antivirus på enskilda enheter (slutpunkter) med PowerShell, WMI eller MPCmdRun.exe antivirusverktyget.*<br/><br/>Du kan använda PowerShell för att hantera Microsoft Defender Antivirus, sårbarhetsskydd och minskningsregler för attackytor. Se [Konfigurera Microsoft Defender för slutpunkt med PowerShell](manage-atp-post-migration-other-tools.md#configure-microsoft-defender-for-endpoint-with-powershell).<br/><br/>Du kan använda Windows Management Instrumentation (WMI) för att hantera Microsoft Defender Antivirus och undantag. Se [Konfigurera Microsoft Defender för slutpunkt med WMI.](manage-atp-post-migration-other-tools.md#configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi)<br/><br/>Du kan använda Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe) för att hantera Microsoft Defender Antivirus och undantag, samt verifiera anslutningar mellan nätverket och molnet. Se [Konfigurera Microsoft Defender för slutpunkt med MPCmdRun.exe](manage-atp-post-migration-other-tools.md#configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe). |
+|**[PowerShell, WMI, and MPCmdRun.exe](manage-atp-post-migration-other-tools.md)** |*Vi rekommenderar att du använder Microsoft Endpoint Manager (som innehåller Intune och Konfigurationshanteraren) för att hantera skyddsfunktioner för hot på din organisations enheter. Du kan konfigurera vissa inställningar, till exempel inställningar för Microsoft Defender Antivirus på enskilda enheter (slutpunkter) med PowerShell, WMI eller MPCmdRun.exe antivirusverktyget.*<br/><br/>Du kan använda PowerShell för att hantera Microsoft Defender Antivirus, sårbarhetsskydd och minskningsregler för attackytor. Se [Konfigurera Microsoft Defender för slutpunkt med PowerShell](manage-atp-post-migration-other-tools.md#configure-microsoft-defender-for-endpoint-with-powershell).<br/><br/>Du kan använda Windows Management Instrumentation (WMI) för att hantera Microsoft Defender Antivirus och undantag. Se [Konfigurera Microsoft Defender för slutpunkt med WMI.](manage-atp-post-migration-other-tools.md#configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi)<br/><br/>Du kan använda Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe) för att hantera Microsoft Defender Antivirus och undantag, samt verifiera anslutningar mellan nätverket och molnet. Se [Konfigurera Microsoft Defender för slutpunkt med MPCmdRun.exe](manage-atp-post-migration-other-tools.md#configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe). |
 
 ## <a name="see-also"></a>Se även
 
-- [Adressera falska positiva/negativa tal i Microsoft Defender för Endpoint](defender-endpoint-false-positives-negatives.md)
+- [Åtgärda falska positiva/negativa i Microsoft Defender för Endpoint](defender-endpoint-false-positives-negatives.md)

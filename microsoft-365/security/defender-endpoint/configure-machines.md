@@ -1,7 +1,7 @@
 ---
-title: Kontrollera att dina enheter är korrekt konfigurerade
+title: Se till att dina enheter är korrekt konfigurerade
 description: Konfigurera enheter på rätt sätt för att öka den totala motståndskraften mot hot och förbättra din förmåga att identifiera och reagera på attacker.
-keywords: onboard, Intune-hantering, MDATP, WDATP, Microsoft Defender, Windows Defender, avancerat skydd mot hot, minska attackytan, ASR, säkerhetsbaslinje
+keywords: onboard, Intune-hantering, Microsoft Defender för slutpunkt, Microsoft Defender, Windows Defender, minskning av attackytan, ASR, säkerhetsbaslinje
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e7b00ceafc2761f42c316f434a27acf7c551e7cf
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 3fd58ee17b2cb86c0bcc858b9b0fd57c12ac501e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163369"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932817"
 ---
-# <a name="ensure-your-devices-are-configured-properly"></a>Kontrollera att dina enheter är korrekt konfigurerade
+# <a name="ensure-your-devices-are-configured-properly"></a>Se till att dina enheter är korrekt konfigurerade
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

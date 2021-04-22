@@ -1,7 +1,7 @@
 ---
 title: Konfigurera Microsoft 365 Defender-pelarna för testlabb eller pilotmiljö
 description: Konfigurera Microsoft 365 Defender-pelare, till exempel Microsoft Defender för Office 365, Microsoft Defender för identitet, Microsoft Cloud App Security och Microsoft Defender för Slutpunkt, för din testlabb- eller pilotmiljö.
-keywords: konfigurera utvärderingsversion av Microsoft Threat Protection, utvärderingsversion av Microsoft Threat Protection, konfigurera Microsoft Threat Protection-pilotprojekt, konfigurera Microsoft Threat Protection-pelarna, Microsoft Threat Protection-pelarna
+keywords: konfigurera utvärderingsversionen av Microsoft 365 Defender, utvärderingsversionen av Microsoft 365 Defender, konfigurera Microsoft 365 Defender-pilotprojekt, konfigurera Microsoft 365 Defender-pelarna, Microsoft 365 Defender-pelar
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9b192a029704d1354867b169efdf0d489345030e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 05bdc9cbb678a3d6c1cee726fc4d8c2e45d2d360
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580972"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933511"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Konfigurera Microsoft 365 Defender-pelarna för din testlabb- eller pilotmiljö
 
@@ -163,9 +163,6 @@ Det finns en PowerShell-modul som kallas *Office 365 Advanced Threat Protection 
 
     ![Bild of_the microsoft Defender för identitetsinställningar, där du ska aktivera växlingsknappen Microsoft Defender för slutpunkt](../../media/mtp-eval-52.png)
 
-> [!NOTE]
-> Windows Defender ATP har rebranderats som Microsoft Defender för Endpoint. Ändringar som rebranderas i alla våra portaler distribueras för att skapa konsekvens.
-
 
 ## <a name="configure-microsoft-cloud-app-security"></a>Konfigurera Microsoft Cloud App-säkerhet
 
@@ -285,7 +282,7 @@ Mer omfattande vägledning finns i Aktivera [Microsoft 365 Defender.](m365d-enab
 
 Grattis! Du har just skapat din utvärderingsversionsmiljö i Microsoft 365 Defender! Nu kan du bekanta dig med Användargränssnittet i Microsoft 365 Defender! Se vad du kan lära dig av följande interaktiva guide i Microsoft 365 Defender och hur du använder varje instrumentpanel för dina dagliga säkerhetsåtgärdsuppgifter.
 
-[Ta en titta på den interaktiva guiden](https://aka.ms/MTP-Interactive-Guide)
+[Ta del av den interaktiva guiden](https://aka.ms/MTP-Interactive-Guide)
 
 Sedan kan du simulera en attack och se hur funktionerna i olika produkter identifierar, skapar aviseringar och automatiskt svarar på fillösa angrepp mot en slutpunkt.
 

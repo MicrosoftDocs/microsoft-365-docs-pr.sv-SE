@@ -1,7 +1,7 @@
 ---
 title: Nyheter i Microsoft 365 Defender
 description: Visar de nya funktionerna i Microsoft 365 Defender
-keywords: vad är nytt i microsoft threat protection, ga, generally available, capabilities, available, new
+keywords: vad är nytt i Microsoft 365 Defender, ga, allmänt tillgänglig, funktioner, tillgänglig, ny
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e75cfe445f62860f8bdb1480fcf9029daa8ac6ea
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 9f4cc36172b0ac598b2719bee8ce56bf0f8a1b84
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076281"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933391"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nyheter i Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-> Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera den i en labbmiljö](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) eller köra [pilotprojektet i produktion.](m365d-pilot.md?ocid=cx-evalpilot)
+> Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera det i en laboratoriemiljö](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) eller [köra ett pilotprojekt i produktionen](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
 Följande funktioner är allmänt tillgängliga (GA) i den senaste versionen av Microsoft 365 Defender.

@@ -1,7 +1,7 @@
 ---
 title: Identifiera och blockera potentiellt oönskade program med Microsoft Defender för Endpoint på Linux
 description: Identifiera och blockera potentiellt oönskade program (PUA) med Microsoft Defender för Endpoint på Linux.
-keywords: microsoft, defender, atp, linux, pua, pus
+keywords: microsoft, defender, Microsoft Defender för Endpoint, linux, pua, pus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9631fc2eb1cb791f48f107482474d1bb8e2fd62b
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 7ec3399129cc65d75b464f5d5f56bb11250ccaf2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903864"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933163"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>Identifiera och blockera potentiellt oönskade program med Microsoft Defender för Endpoint på Linux
 
@@ -35,7 +35,7 @@ ms.locfileid: "51903864"
 
 > Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Skyddsfunktionen för potentiellt oönskade program (PUA) i Defender för Endpoint för Linux kan identifiera och blockera PUA-filer på slutpunkter i nätverket.
+Skyddsfunktionen för potentiellt oönskade program (PUA) i Defender för Endpoint på Linux kan identifiera och blockera PUA-filer på slutpunkter i nätverket.
 
 Dessa program betraktas inte som virus, skadlig programvara eller andra typer av hot, men kan utföra åtgärder på slutpunkter som negativt påverkar deras prestanda eller användning. PUA kan också hänvisa till program som anses ha dåligt rykte.
 
@@ -43,13 +43,13 @@ Dessa program kan öka risken för att nätverket smittas med skadlig programvar
 
 ## <a name="how-it-works"></a>Så här fungerar det
 
-Defender för Endpoint för Linux kan identifiera och rapportera PUA-filer. När PUA-filer konfigureras i blockeringsläge flyttas de till karantän.
+Defender för Endpoint i Linux kan identifiera och rapportera PUA-filer. När PUA-filer konfigureras i blockeringsläge flyttas de till karantän.
 
-När en PUA upptäcks på en slutpunkt behåller Defender för Endpoint för Linux ett register över smittan i hothistoriken. Historiken kan visualiseras från Microsoft Defender Säkerhetscenter-portalen eller `mdatp` kommandoradsverktyget. Hotnamnet innehåller ordet "Program".
+När en PUA upptäcks på en slutpunkt behåller Defender för Endpoint på Linux ett register över smittan i hothistoriken. Historiken kan visualiseras från Microsoft Defender Säkerhetscenter-portalen eller `mdatp` kommandoradsverktyget. Hotnamnet innehåller ordet "Program".
 
 ## <a name="configure-pua-protection"></a>Konfigurera PUA-skydd
 
-PUA-skydd i Defender för Slutpunkt för Linux kan konfigureras på något av följande sätt:
+PUA-skydd i Defender för Slutpunkt i Linux kan konfigureras på något av följande sätt:
 
 - **Av**: PUA-skydd är inaktiverat.
 - **Granskning:** PUA-filer rapporteras i produktloggarna, men inte i Microsoft Defender Säkerhetscenter. Ingen information om smittan lagras i hothistoriken och ingen åtgärd vidtas av produkten.
@@ -70,8 +70,8 @@ mdatp threat policy set --type potentially_unwanted_application --action [off|au
 
 ### <a name="use-the-management-console-to-configure-pua-protection"></a>Använd hanteringskonsolen för att konfigurera PUA-skydd:
 
-I ditt företag kan du konfigurera PUA-skydd från en hanteringskonsol, till exempel a6 eller Ansible, på ungefär samma sätt som andra produktinställningar konfigureras. Mer information finns i avsnittet Inställningar [för hottyp](linux-preferences.md#threat-type-settings) i artikeln [Ange inställningar för Defender för slutpunkt för Linux.](linux-preferences.md)
+I ditt företag kan du konfigurera PUA-skydd från en hanteringskonsol, till exempel a6 eller Ansible, på ungefär samma sätt som andra produktinställningar konfigureras. Mer information finns i avsnittet Inställningar [för hottyp](linux-preferences.md#threat-type-settings) i artikeln [Ange inställningar för Defender för slutpunkt på Linux.](linux-preferences.md)
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Ange inställningar för Defender för Endpoint för Linux](linux-preferences.md)
+- [Ange inställningar för Defender för Endpoint i Linux](linux-preferences.md)

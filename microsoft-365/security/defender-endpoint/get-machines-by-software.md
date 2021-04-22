@@ -1,7 +1,7 @@
 ---
 title: Lista enheter efter programvara
 description: Hämta en lista över enheter som har den här programvaran installerad.
-keywords: apis, graph api, API som stöds, skaffa, lista enheter, lista över enheter, lista enheter efter programvara, mdatp tvm api
+keywords: apis, graph api, api som stöds, skaffa, lista enheter, lista över enheter, listenheter efter programvara, Microsoft Defender för Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 78cccee6380f0c403aab21eac4f07b64b8f8d510
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ff0bb9a6f17b8d4dc6432292ec98743d3eaf952c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200395"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929103"
 ---
 # <a name="list-devices-by-software"></a>Lista enheter efter programvara
 

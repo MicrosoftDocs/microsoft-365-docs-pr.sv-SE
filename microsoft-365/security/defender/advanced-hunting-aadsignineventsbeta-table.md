@@ -1,7 +1,7 @@
 ---
 title: AADSignInEventsBeta-tabell i det avancerade sökschemat
 description: Läs mer om informationen som är kopplad till tabellen för azure Active Directory-inloggningshändelser i det avancerade sökschemat
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, file, IP address, device, machine, user, account, identity, AAD
+keywords: avancerad sökning, hotsökning, sökning efter cyberhot, Microsoft 365 Defender, microsoft 365, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, fil, IP-adress, enhet, dator, användare, konto, identitet, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7b595496c28710bfa25fc88653425242770bf57f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 93735ee3bf8d9b95ab320c2bc158d6ebfe27186c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071657"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932613"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -35,7 +35,7 @@ ms.locfileid: "51071657"
 
 >[!IMPORTANT]
 > Tabellen är för närvarande i betaversion och erbjuds inom kort för att du ska kunna leta efter inloggningshändelser i `AADSignInEventsBeta` Azure Active Directory (AAD). Så småningom flyttar vi all information i inloggningsschemat till `IdentityLogonEvents` tabellen.<br><br>
-> Kunder som har åtkomst till Microsoft 365 Defender via Azure Säkerhetscenters integrerade Microsoft Defender för slutpunktslösning, men inte har licenser för Microsoft Defender för Office, Microsoft Defender för identitet eller Microsoft Cloud App Security, kommer inte att kunna se det här schemat. 
+> Kunder som har åtkomst till Microsoft 365 Defender via Azure Defenders integrerade Microsoft Defender för slutpunktslösning, men inte har licenser för Microsoft Defender för Office, Microsoft Defender för identitet eller Microsoft Cloud App Security, kommer inte att kunna se det här schemat. 
 
  
 

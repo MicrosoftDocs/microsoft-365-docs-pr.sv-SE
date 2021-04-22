@@ -1,6 +1,6 @@
 ---
 title: Bevilja åtkomst till hanterad säkerhetstjänstleverantör (MSSP)
-description: Konfigurera MSSP-integrering med Microsoft Defender ATP
+description: Vidta nödvändiga åtgärder för att konfigurera MSSP-integrering med Microsoft Defender för slutpunkt
 keywords: hanterad säkerhetstjänstleverantör, mssp, konfigurera, integrering
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1bb7bc3565bbb7c05f165c5649f3672ff33bb18b
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 320355f838db5dbb1540350e95e4cc0645acd805
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165459"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932757"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>Bevilja åtkomst för hanterad säkerhetstjänstleverantör (MSSP) (förhandsversion)
 
@@ -135,9 +135,9 @@ Om du vill implementera en lösning med flera klientorganisationens delegerade �
     I det här läget har analytikernas åtkomst etablerats och varje analytiker ska kunna komma åt kundens Microsoft Defender Säkerhetscenter: `https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Få åtkomst till kundportalen för MSSP](access-mssp-portal.md)
-- [Konfigurera aviseringsmeddelanden](configure-mssp-notifications.md)
-- [Hämta aviseringar från kundklientorganisationen](fetch-alerts-mssp.md)
+- [Få åtkomst till MSSP-kundportalen](access-mssp-portal.md)
+- [Konfigurera varningsaviseringar](configure-mssp-notifications.md)
+- [Hämta varningar från kundens klientorganisation](fetch-alerts-mssp.md)
 
 
 

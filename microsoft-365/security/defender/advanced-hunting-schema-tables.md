@@ -1,7 +1,7 @@
 ---
 title: Datatabeller i det avancerade sökschemat i Microsoft 365 Defender
 description: Läs mer om tabellerna i det avancerade sökschemat för att förstå vilka data du kan köra sökning efter hot på
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, data
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, data
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 48e72bf2384361315c1ed94e83f3e61f667da714
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 0313d1e95682d52e44cf90360c8ef322f0cad5db
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499701"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932923"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Förstå det avancerade sökschemat
 

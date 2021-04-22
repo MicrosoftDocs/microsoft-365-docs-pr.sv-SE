@@ -1,7 +1,7 @@
 ---
-title: Lista säkerhetsproblem efter programvara
+title: Lista sårbarhet efter programvara
 description: Hämta en lista över säkerhetsproblem i den installerade programvaran.
-keywords: apis, graph api, api som stöds, skaffa, sårbarhetslista, mdatp tvm api
+keywords: apis, graph api, API som stöds, skaffa, sårbarhetslista, Microsoft Defender för Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8f05c1a67c845e7f88cbcb3ee88cf7a664d5a4bf
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: c28417d9782d14d890e771ed401f8ee5d3c26bc0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167206"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932769"
 ---
-# <a name="list-vulnerabilities-by-software"></a>Lista säkerhetsproblem efter programvara
+# <a name="list-vulnerabilities-by-software"></a>Lista sårbarhet efter programvara
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -56,7 +56,7 @@ GET /api/Software/{Id}/vulnerabilities
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-| Namn        | Type (Typ) | Beskrivning
+| Namn        | Skriv | Beskrivning
 |:--------------|:-------|:--------------|
 | Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 

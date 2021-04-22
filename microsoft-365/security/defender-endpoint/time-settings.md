@@ -1,7 +1,7 @@
 ---
 title: Tidszonsinställningar i Microsoft Defender Säkerhetscenter
 description: Använd informationen här om du vill konfigurera tidszonsinställningarna för säkerhetscentret i Microsoft Defender och visa licensinformation.
-keywords: inställningar, Microsoft Defender, hotintelligens för cybersäkerhet, avancerat skydd mot hot, tidszon, utc, lokal tid, licens
+keywords: inställningar, Microsoft Defender, hotinformation för cybersäkerhet, Microsoft Defender för slutpunkt, tidszon, utc, lokal tid, licens
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e395420b92c29977f1c802d1c10683492c1aba10
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: df55a1b0e92c24b5f52032330ef95bf19aeb8cb3
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470471"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932637"
 ---
 # <a name="microsoft-defender-security-center-time-zone-settings"></a>Tidszonsinställningar i Microsoft Defender Säkerhetscenter
 

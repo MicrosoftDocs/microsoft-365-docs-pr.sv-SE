@@ -2,7 +2,7 @@
 title: Felsöka problem med molnanslutning för Microsoft Defender för Slutpunkt i Linux
 ms.reviewer: ''
 description: Felsöka problem med molnanslutning för Microsoft Defender för Slutpunkt i Linux
-keywords: microsoft, defender, atp, linux, moln, anslutning, kommunikation
+keywords: microsoft, defender, Microsoft Defender för slutpunkt, linux, moln, anslutning, kommunikation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 985e4c39c60600da892c010b6ee26e9c98bb0611
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 0345d7f88d147abb750e66a5e61f516abf38d553
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903172"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933115"
 ---
 # <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Felsöka problem med molnanslutning för Microsoft Defender för Slutpunkt i Linux
 
@@ -37,7 +37,7 @@ ms.locfileid: "51903172"
 
 ## <a name="run-the-connectivity-test"></a>Köra anslutningstestet
 
-Om du vill testa om Defender för Slutpunkt för Linux kan kommunicera till molnet med de aktuella nätverksinställningarna kör du ett anslutningstest från kommandoraden:
+Testa om Defender för Slutpunkt i Linux kan kommunicera till molnet med de aktuella nätverksinställningarna genom att köra ett anslutningstest från kommandoraden:
 
 ```bash
 mdatp connectivity test
@@ -86,7 +86,7 @@ OK https://cdn.x.cp.wd.microsoft.com/ping
 > [!WARNING]
 > PAC, WPAD och autentiserad proxy går inte att använda. Se till att bara en statisk proxy eller transparent proxy används.
 >
-> SSL-proxy proxy och skärningspunkt stöds inte heller av säkerhetsskäl. Konfigurera ett undantag för SSL-kontroll och din proxyserver för att direkt överföra data från Defender för Endpoint för Linux till relevanta URL:er utan avlyssning. Om du lägger till ditt certifikat för avlyssning i det globala lagret tillåts inte avlyssning.
+> SSL-proxy proxy och skärningspunkt stöds inte heller av säkerhetsskäl. Konfigurera ett undantag för SSL-kontrollen och proxyservern för att direkt överföra data från Defender för Slutpunkt i Linux till relevanta URL:er utan avlyssning. Om du lägger till ditt certifikat för avlyssning i det globala lagret tillåts inte avlyssning.
 
 Om en statisk proxy krävs lägger du till en proxyparameter till kommandot ovan, `proxy_address:port` där det motsvarar proxyadressen och port:
 
@@ -107,7 +107,7 @@ Om du vill använda en statisk `mdatp.service` proxyserver måste filen ändras.
 
 Se också till att rätt statisk proxyadress fylls i för att ersätta `address:port` .
 
-Om filen är korrekt kan du prova att köra följande kommando i terminalen för att läsa in Defender för Endpoint för Linux på nytt och sprida inställningen:
+Om filen är korrekt kan du prova att köra följande kommando i terminalen för att läsa in Defender för Endpoint på Linux och sprida inställningen:
 
 ```bash
 sudo systemctl daemon-reload; sudo systemctl restart mdatp

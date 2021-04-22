@@ -1,7 +1,7 @@
 ---
 title: Nya konfigurationsprofiler för macOS Catalina och nyare versioner av macOS
 description: I det här avsnittet beskrivs de ändringar som måste göras för att kunna dra nytta av systemtilläggen, som ersätter kernel-tillägg på macOS Catalina och nyare versioner av macOS.
-keywords: microsoft, defender, atp, mac, kernel, system, tillägg, catalina
+keywords: microsoft, defender, Microsoft Defender för Slutpunkt, mac, kernel, system, tillägg, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: db24bea3bddc682eceda8e6ea3fe2749b6b2778f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 28a332cec68521741bdda62aeecd25440552344a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689131"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932745"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>Nya konfigurationsprofiler för macOS Catalina och nyare versioner av macOS
 

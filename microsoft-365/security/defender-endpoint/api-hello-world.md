@@ -1,7 +1,7 @@
 ---
 title: Hello World för Microsoft Defender för Endpoint API
 ms.reviewer: ''
-description: Skapa api-anropet Hello i stil med Hello till API-anropet Microsoft Defender för slutpunkt (Microsoft Defender ATP).
+description: Skapa ett API-anrop av stil för Hello till Microsoft Defender för Endpoint API.
 keywords: apis, apis som stöds, avancerad sökning, fråga
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3b076d0fa6e01be2a810e8fa810cc3e32955388e
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f4571607181fc96d87934ff60801643f5969e7e9
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199662"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929257"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Microsoft Defender för slutpunkts-API – Hello World 
 

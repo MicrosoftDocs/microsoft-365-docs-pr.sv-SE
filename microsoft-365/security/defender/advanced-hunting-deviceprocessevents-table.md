@@ -1,7 +1,7 @@
 ---
 title: Tabellen DeviceProcessEvents i det avancerade sökschemat
 description: Läs mer om processen som gäller för att skapa och hantera händelser i tabellen DeviceProcessEventstable för den avancerade sökschemat
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schemareferens, kusto, tabell, kolumn, datatyp, processcreationevents, DeviceProcessEvents, process-id, kommandorad, DeviceProcessEvents
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, processcreationevents, DeviceProcessEvents, process-id, kommandorad, DeviceProcessEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d3a7943d5d04178587b95b4c0b4266b3e8cf54bb
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 88c0692e776146b54ff559dd51b7ca48d10c6be3
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501171"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933043"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 

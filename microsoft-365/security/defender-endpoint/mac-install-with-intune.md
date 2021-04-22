@@ -1,7 +1,7 @@
 ---
-title: Intune-baserad distribution för Microsoft Defender för Slutpunkt i macOS
-description: Installera Microsoft Defender för slutpunkt på macOS med Microsoft Intune.
-keywords: microsoft, defender, atp, mac, installation, distribuera, avinstallation, intune, jamf, macos, catalina, mojave, high sierra
+title: Intune-baserad distribution för Microsoft Defender för Slutpunkt på Mac
+description: Installera Microsoft Defender för slutpunkt på Mac med Microsoft Intune.
+keywords: microsoft, defender, Microsoft Defender för slutpunkt, mac, installation, distribuera, avinstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dbb4e3a558256f19594ab0aa4efbd2c9eed6b7f8
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: c98ce17b7b71f2d05aeffe66dbb1e08f9046f463
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764221"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933151"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Intune-baserad distribution för Microsoft Defender för Slutpunkt i macOS
 
@@ -37,7 +37,7 @@ ms.locfileid: "51764221"
 
 **Gäller för:**
 
-- [Microsoft Defender för Slutpunkt på macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender för Endpoint för macOS](microsoft-defender-endpoint-mac.md)
 
 I det här avsnittet beskrivs hur du distribuerar Microsoft Defender för slutpunkt på macOS via Intune. För en lyckad distribution måste du slutföra alla följande steg:
 

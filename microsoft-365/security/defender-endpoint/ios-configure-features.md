@@ -1,7 +1,7 @@
 ---
 title: Konfigurera Microsoft Defender för slutpunkt för iOS-funktioner
 description: Här beskrivs hur du distribuerar Microsoft Defender för Slutpunkt i iOS-funktioner
-keywords: microsoft, defender, atp, ios, konfigurera, funktioner, ios
+keywords: microsoft, defender, Microsoft Defender för Slutpunkt, ios, konfigurera, funktioner, ios
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f5f7345f92b3ac76aa647a9caed63e5684be9c30
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 834ce13917237dd822bdfbb7b88967dcac4bc0f8
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903316"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929019"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Konfigurera Microsoft Defender för slutpunkt för iOS-funktioner
 
@@ -35,16 +35,16 @@ ms.locfileid: "51903316"
 > Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 > [!NOTE]
-> Defender för Endpoint för iOS skulle använda en VPN för att tillhandahålla webskyddsfunktionen. Det här är inte en vanlig VPN och är en lokal/självslingande VPN som inte tar trafik utanför enheten.
+> Defender för Endpoint i iOS skulle använda ett VPN för att tillhandahålla webskyddsfunktionen. Det här är inte en vanlig VPN och är en lokal/självslingande VPN som inte tar trafik utanför enheten.
 
-## <a name="conditional-access-with-defender-for-endpoint-for-ios"></a>Villkorsstyrd åtkomst med Defender för Slutpunkt för iOS  
+## <a name="conditional-access-with-defender-for-endpoint-on-ios"></a>Villkorsstyrd åtkomst med Defender för slutpunkt i iOS  
 Microsoft Defender för Slutpunkt för iOS tillsammans med Microsoft Intune och Azure Active Directory gör det möjligt att tillämpa enhetsefterlevnad och villkorsstyrd åtkomstprincip baserat på risknivåer för enheter. Defender för Endpoint är en MTD-lösning (Mobile Threat Defense) som du kan distribuera för att utnyttja den här funktionen via Intune.
 
-Mer information om hur du konfigurera villkorsstyrd åtkomst med Defender för slutpunkt för iOS finns [i Defender för Endpoint och Intune.](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection)
+Mer information om hur du konfigurera villkorsstyrd åtkomst med Defender för slutpunkt i iOS finns [i Defender för Endpoint och Intune.](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection)
 
 ## <a name="web-protection-and-vpn"></a>Web Protection och VPN
 
-Som standard innehåller och aktiverar Defender för Slutpunkt för iOS webbskyddsfunktionen. [Webbskydd](web-protection-overview.md) hjälper till att skydda enheter mot webbhot och skyddar användare mot nätfiskeattacker. Defender för Endpoint för iOS använder en VPN för att tillhandahålla detta skydd. Observera att det här är en lokal VPN och till skillnad från traditionell VPN skickas inte nätverkstrafik utanför enheten.
+Som standard inkluderar och aktiverar Defender för Slutpunkt i iOS webbskyddsfunktionen. [Webbskydd](web-protection-overview.md) hjälper till att skydda enheter mot webbhot och skyddar användare mot nätfiskeattacker. Defender för Endpoint på iOS använder en VPN för att tillhandahålla detta skydd. Observera att det här är en lokal VPN och till skillnad från traditionell VPN skickas inte nätverkstrafik utanför enheten.
 
 När den är aktiverad som standard kan det finnas fall där du måste inaktivera VPN. Du kanske till exempel vill köra vissa appar som inte fungerar när en VPN konfigureras. I sådana fall kan du välja att inaktivera VPN från appen på enheten genom att följa stegen nedan:
 
@@ -93,10 +93,10 @@ Följ stegen nedan för att skapa en efterlevnadsprincip mot jailbroken enheter.
 
 ## <a name="configure-custom-indicators"></a>Konfigurera anpassade indikatorer
 
-Med Defender för Endpoint för iOS kan administratörer även konfigurera anpassade indikatorer på iOS-enheter. Mer information om hur du konfigurerar anpassade indikatorer finns [i Hantera indikatorer.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-indicators)
+Med Defender för Slutpunkt i iOS kan administratörer även konfigurera anpassade indikatorer på iOS-enheter. Mer information om hur du konfigurerar anpassade indikatorer finns [i Hantera indikatorer.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-indicators)
 
 > [!NOTE]
-> Defender för Endpoint för iOS har stöd för att endast skapa anpassade indikatorer för IP-adresser och URL:er/domäner.
+> Defender för Slutpunkt i iOS har stöd för att endast skapa anpassade indikatorer för IP-adresser och URL:er/domäner.
 
 ## <a name="report-unsafe-site"></a>Rapportera osäker webbplats
 

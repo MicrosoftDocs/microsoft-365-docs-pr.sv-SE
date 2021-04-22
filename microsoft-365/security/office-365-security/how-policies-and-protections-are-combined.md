@@ -1,6 +1,6 @@
 ---
 title: Ordning och prioritet för e-postskydd
-keywords: säkerhet, skadlig programvara, Microsoft 365, M365, säkerhetscenter, ATP, Microsoft Defender för slutpunkt, Office 365 ATP, Azure ATP
+keywords: säkerhet, skadlig programvara, Microsoft 365, M365, säkerhetscenter, Microsoft Defender för slutpunkt, Microsoft Defender för Office 365, Microsoft Defender för identitet
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,12 +17,12 @@ ms.custom:
 description: Administratörer kan läsa mer om ordningen för programskydd i Exchange Online Protection (EOP) och hur prioritetsvärdet i skyddsprinciperna avgör vilken princip som används.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b36e66f095ff81f551a55d2dc2af0693f8b3455a
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 8cd2809fa69064c2058516f459eeba60683c91b9
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51769016"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930383"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordning och prioritet för e-postskydd
 

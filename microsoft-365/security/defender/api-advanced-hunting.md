@@ -1,7 +1,7 @@
 ---
 title: API för avancerad sökning för Microsoft 365 Defender
 description: Lär dig hur du kör avancerade sökfrågor med hjälp av Microsoft 365 Defenders avancerade API för sökning
-keywords: Advanced Hunting, API:er, api, MTP, M365 Defender, Microsoft 365 Defender
+keywords: Advanced Hunting, API:er, api, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 482801bb47429ae370e06cfcbcf26bacfb8b2a92
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c988a609a329c8f7f8988314e56aae942beebac5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51074801"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932899"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>API för avancerad sökning för Microsoft 365 Defender
 
@@ -33,7 +33,7 @@ ms.locfileid: "51074801"
 
 **Gäller för:**
 
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 > [!IMPORTANT]
 > En del information gäller förinstallerad produkt som kan ha ändrats mycket innan den släpps kommersiellt. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på den information som anges här.
@@ -78,7 +78,7 @@ POST https://api.security.microsoft.com/api/advancedhunting/run
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Sidhuvud | Value
+Sidhuvud | Värde
 -|-
 Auktorisering | Bearer {token} **Obs! obligatoriskt**
 Innehållstyp | application/json
@@ -87,7 +87,7 @@ Innehållstyp | application/json
 
 Ange följande parametrar för ett JSON-objekt i begärans brödtext:
 
-Parameter | Type (Typ) | Beskrivning
+Parameter | Skriv | Beskrivning
 -|-|-
 Fråga | Text | Frågan som ska köras. **Obs! obligatoriskt**
 

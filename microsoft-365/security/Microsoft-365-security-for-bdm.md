@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: de vanligaste hoten och attackscenarierna som organisationer för närvarande ställs inför för sina Microsoft 365-miljöer, och rekommenderade åtgärder för att minska dessa risker.
-ms.openlocfilehash: 504a2d4628c265b387941e2e4de0461f7ac3be9b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 056e1e64a992f12f3bf9a4b76c29f723ac1b5f3a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199047"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930179"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Security for Business Decision Makers (BDMs)
 
@@ -37,7 +37,7 @@ En sak till innan vi börjar . . . se till [att aktivera granskningsloggen](../c
 
 ## <a name="protect-privileged-accounts"></a>Skydda privilegierade konton
 
-Som ett första steg rekommenderar vi att se till att kritiska konton i miljön får ett extra skyddslager eftersom dessa konton har åtkomst och behörigheter att hantera och ändra kritiska tjänster och resurser som kan påverka hela organisationen negativt, om de har komprometterats. Att skydda behöriga konton är ett av de mest effektiva sätten att skydda mot en attackerare som vill höja behörigheterna för ett komprometterat konto till ett administrativt konto. 
+Som ett första steg rekommenderar vi att se till att kritiska konton i miljön får ett extra skyddslager eftersom dessa konton har åtkomst och behörigheter att hantera och ändra kritiska tjänster och resurser, som kan påverka hela organisationen negativt, om de har komprometterats. Att skydda behöriga konton är ett av de mest effektiva sätten att skydda mot en attackerare som vill höja behörigheterna för ett komprometterat konto till ett administrativt konto. 
 
 |Rekommendation  |E3 |E5  |
 |---------|---------|---------|
@@ -50,7 +50,7 @@ I följande diagram visas de här funktionerna.
 ![Rekommenderade funktioner för att skydda behöriga konton](../media/m365-security-bdm-illustrations-privileged-accounts.png)
 
 Ytterligare rekommendationer:
-- Se till att konton som synkroniseras från den lokala platsen inte har administratörsroller för molntjänster. Det här förhindrar att en attackerare utnyttjar lokala konton för att få administrativ åtkomst till molntjänster. 
+- Se till att konton som synkroniseras från den lokala platsen inte har administratörsroller för molntjänster. Det här förhindrar att en attackerare använder lokala konton för att få administrativ åtkomst till molntjänster. 
 - Kontrollera att tjänstkonton inte har administratörsroller. Dessa konton övervakas ofta inte och konfigureras med lösenord som inte förfaller. Börja med att kontrollera att AADConnect- och ADFS-tjänstkonton inte är globala administratörer som standard.
 - Ta bort licenser från administratörskonton. Ta bort licenser från dessa konton såvida det inte finns ett specifikt användningsfall för att tilldela licenser till specifika administratörskonton. 
 
@@ -82,12 +82,12 @@ I följande diagram visas de här funktionerna.
 
 ## <a name="protect-against-unknown-threats"></a>Skydda mot okända hot
 
-När du har lagt till extra skydd för dina konton med privilegierade konton och skyddat mot kända attacker kan du flytta din uppmärksamhet för att skydda mot okända hot. De mer beslutsamma och avancerade adversariesna använder innovativa och nya, okända metoder för att attackera organisationer. Med Microsofts omfattande telemetri med data som samlats över flera miljoner enheter, program och tjänster kan vi utföra Defender för Office 365 på Windows, Office 365 och Azure för att förhindra attacker mot nolldagarsattacker, användning av sandboxmiljöer och kontrollera giltighet innan åtkomst till ditt innehåll tillåts. 
+När du har lagt till extra skydd för dina konton med privilegierade konton och skyddat mot kända attacker kan du flytta din uppmärksamhet för att skydda mot okända hot. De mer beslutsamma och avancerade adversariesna använder innovativa och nya, okända metoder för att attackera organisationer. Med Microsofts omfattande telemetri med data som samlats över en miljon enheter, program och tjänster kan vi utföra Defender för Office 365 på Windows, Office 365 och Azure för att förhindra Zero-Day-attacker, användning av sandboxmiljöer och kontrollera giltighet innan åtkomst till ditt innehåll tillåts. 
 
 
 |Rekommendation  |E3  |E5  |
 |---------|---------|---------|
-|**Konfigurera Microsoft Defender för Office 365:**<br>* Säkra bifogade filer<br>* Säkra länkar<br>* ATP för SharePoint, OneDrive och Microsoft Teams<br>* Skydd mot nätfiske i Defender för Office 365-skydd|         |![grön bockmarkering](../media/green-check-mark.png) |
+|**Konfigurera Microsoft Defender för Office 365:**<br>* Säkra bifogade filer<br>* Säkra länkar<br>* Microsoft Defender för slutpunkt för SharePoint, OneDrive och Microsoft Teams<br>* Skydd mot nätfiske i Defender för Office 365-skydd|         |![grön bockmarkering](../media/green-check-mark.png) |
 |**Konfigurera Microsoft Defender för slutpunktsfunktioner:**<br>* Windows Defender Antivirus <br>* Sårbarhetsskydd <br> * Minskning av attackytan <br> * Maskinvarubaserad avgränsning <br>* Reglerad mappåtkomst     |         |![grön bockmarkering](../media/green-check-mark.png) |
 |**Använd Microsoft Cloud App Security för** att upptäcka SaaS-appar och börja använda funktionsanalys och avvikande identifiering. |         |![grön bockmarkering](../media/green-check-mark.png) |
 
@@ -97,17 +97,17 @@ I följande diagram visas de här funktionerna.
 Ytterligare rekommendationer:
 - Skydda meddelanden från partnerkanaler som e-postmeddelanden med TLS.
 - Öppna endast Teams-federation för partner som du kommunicerar med.
-- Lägg inte till avsändardomäner, enskilda avsändare eller käll-IP:er till listan över tillåtna adresser eftersom det gör att dessa kan kringgå kontroller av skräppost och skadlig programvara – En vanlig metod är att lägga till sina egna godkända domäner eller ett antal andra domäner där problem med e-postflödet kan ha rapporterats till listan över tillåtna. Lägg inte till domäner i listan Skräppost- och anslutningsfiltrering eftersom det kan leda till att du kringgår alla skräppostkontroller. 
+- Lägg inte till avsändardomäner, enskilda avsändare eller käll-IP:er till listan över tillåtna adresser eftersom det gör att dessa kringgår kontroller av skräppost och skadlig programvara – En vanlig metod är att lägga till sina egna godkända domäner eller ett antal andra domäner där problem med e-postflödet kan ha rapporterats till listan över tillåtna. Lägg inte till domäner i listan Skräppost- och anslutningsfiltrering eftersom det kan leda till att du kringgår alla skräppostkontroller. 
 - Aktivera utgående skräppostaviseringar – Aktivera utgående skräppostaviseringar till en distributionslista internt till support- eller IT-administratörsteamet för att rapportera om någon av de interna användarna skickar ut skräppost-e-postmeddelanden externt. Det kan vara en indikator på att kontot har komprometterats.
 - Inaktivera Remote PowerShell för alla användare – Remote PowerShell används huvudsakligen av administratörer för att få åtkomst till tjänster i administrativa syften eller programmässiga API-åtkomst. Vi rekommenderar att du inaktiverar det här alternativet för användare som inte är administratörer för att undvika ny information om de inte har ett företagskrav för att komma åt det. 
-- Blockera åtkomst till Microsoft Azure Management-portalen för alla icke-administratörer. Du kan åstadkomma detta genom att skapa en regel för villkorsstyrd åtkomst för att blockera alla användare, med undantag för administratörer. 
+- Blockera åtkomst till Microsoft Azure Management-portalen för alla icke-administratörer. Du kan åstadkomma detta genom att skapa en regel för villkorsstyrd åtkomst för att blockera alla användare, förutom administratörer. 
 
 
 ## <a name="assume-breach"></a>Anta intrång
 
 Även om Microsoft vidtar alla möjliga åtgärder för att förhindra mot hot och attacker, rekommenderar vi att alltid arbeta under tänkesättet "Anta intrång". Även om en attackerare har hanterat intrång i miljön måste vi se till att de inte kan föra ut data eller identitetsinformation från miljön. Därför rekommenderar vi att skydd mot känsliga data läcker ut, till exempel personnummer, kreditkortsnummer, ytterligare personlig information och annan konfidentiell information på organisationsnivå. 
 
-Tänkesättet "Anta intrång" kräver att en strategi med noll förtroende-nätverk implementeras, vilket innebär att användarna inte är helt betrodda bara för att de är interna i nätverket. Som en del av auktoriseringen av vad användarna kan göra anges villkorsuppsättningar och när sådana villkor uppfylls, tillämpas vissa kontroller. Villkoren kan omfatta enhetens hälsostatus, program som används, åtgärder som utförs och användarrisk. Till exempel bör en åtgärd för enhetsregistrering alltid utlösa MFA-autentisering för att säkerställa att inga enheter läggs till i din miljö. 
+Tänkesättet "Anta intrång" kräver att en strategi med noll förtroende-nätverk implementeras, vilket innebär att användarna inte är helt betrodda bara för att de är interna i nätverket. Som en del av auktoriseringen av vad användarna kan göra anges villkorsuppsättningar och när sådana villkor uppfylls, tillämpas vissa kontroller. Villkoren kan omfatta enhetens hälsotillstånd, programmet som används, åtgärder som utförs och användarrisk. Till exempel bör en åtgärd för enhetsregistrering alltid utlösa MFA-autentisering för att säkerställa att inga enheter läggs till i din miljö. 
 
 En nollförtroendestrategi för nätverk kräver också att du vet var informationen lagras och tillämpar lämpliga kontroller för klassificering, skydd och bevarande. För att effektivt skydda dina viktigaste och känsliga tillgångar måste du först identifiera var dessa finns och göra inventeringar, vilket kan vara svårt. Arbeta sedan med din organisation för att definiera en strategi för styrning. Att definiera ett klassificeringsschema för en organisation och konfigurera principer, etiketter och villkor kräver noggrann planering och förberedelse. Det är viktigt att inse att det inte är en IT-drivna process. Se till att tillsammans med ditt team för juridisk information och efterlevnad ta fram ett lämpligt klassificerings- och etikettschema för organisationens data.
 
@@ -116,7 +116,7 @@ Informationsskyddsfunktioner i Microsoft 365 kan hjälpa dig att upptäcka vilke
 
 |Rekommendation |E3|E5 |
 |---------|---------|---------|
-|**Granska och optimera villkorsstyrd åtkomst och relaterade principer för att uppfylla dina mål för ett nätverk utan förtroende.** Skydd mot kända hot omfattar implementering av en uppsättning [rekommenderade principer.](./office-365-security/microsoft-365-policies-configurations.md) Granska din implementering av de här principerna för att säkerställa att du skyddar dina appar och data mot hackare som har fått åtkomst till ditt nätverk. Observera att den rekommenderade appskyddsprincipen för Intune för Windows 10 aktiverar Windows informationsskydd (WIP). WiP skyddar mot oavsiktliga läckor av organisationsdata via appar och tjänster, t.ex. e-post, sociala medier och det offentliga molnet. |         |![grön bockmarkering](../media/green-check-mark.png)|
+|**Granska och optimera villkorsstyrd åtkomst och relaterade principer för att uppfylla dina mål för ett nätverk utan förtroende.** Skydd mot kända hot omfattar implementering av en uppsättning [rekommenderade principer.](./office-365-security/microsoft-365-policies-configurations.md) Granska din implementering av de här principerna för att säkerställa att du skyddar dina appar och data mot hackare som har fått åtkomst till ditt nätverk. Den rekommenderade programskyddsprincipen för Intune för Windows 10 aktiverar Windows informationsskydd (WIP). WiP skyddar mot oavsiktliga läckor av organisationsdata via appar och tjänster, t.ex. e-post, sociala medier och det offentliga molnet. |         |![grön bockmarkering](../media/green-check-mark.png)|
 |**Inaktivera extern vidarebefordran av e-post**. Hackare som får åtkomst till en användares postlåda kan stjäla din e-post genom att ställa in så att postlådan automatiskt vidarebefordrar e-post. Det här kan inträffa även utan användarens uppmärksamhet. Du kan förhindra detta genom att konfigurera en e-postflödesregel.|![grön bockmarkering](../media/green-check-mark.png) |![grön bockmarkering](../media/green-check-mark.png)|
 |**Inaktivera anonym extern kalenderdelning**. Som standard tillåts extern anonym kalenderdelning. [Inaktivera kalenderdelning för](/exchange/sharing/sharing-policies/modify-a-sharing-policy) att minska potentiella läckage av känslig information.|![grön bockmarkering](../media/green-check-mark.png) |![grön bockmarkering](../media/green-check-mark.png)|
 |**Konfigurera principer för skydd mot dataförlust för känsliga data.** Skapa en policy för dataförlustskydd i Säkerhetsefterlevnad för att upptäcka och skydda känsliga data, t.ex. &amp; kreditkortsnummer, personnummer och bankkontonummer. Microsoft 365 innehåller många fördefinierade typer av känslig information som du kan använda i principer för skydd mot dataförlust. Du kan också skapa egna typer av känslig information för känsliga data som är anpassade för din miljö. |![grön bockmarkering](../media/green-check-mark.png)|![grön bockmarkering](../media/green-check-mark.png)|

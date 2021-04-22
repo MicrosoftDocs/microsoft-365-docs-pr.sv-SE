@@ -1,7 +1,7 @@
 ---
 title: Felsöka tjänstproblem i Microsoft 365 Defender
 description: Hitta lösningar och lösningar på kända problem med Microsoft 365 Defender
-keywords: felsöka Microsoft Threat Protection, felsöka, Azure ATP, problem, tillägg, inställningssida
+keywords: felsöka Microsoft 365 Defender, felsök, microsoft Defender för identitet, problem, tillägg, inställningssida
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a2cd27bf7bf8b1c4931b9d768f3a6b5e5f2a0d93
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 0c933edfe80275dbfa60464ff862a7609b269332
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592042"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933403"
 ---
 # <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Felsöka tjänstproblem i Microsoft 365 Defender
 

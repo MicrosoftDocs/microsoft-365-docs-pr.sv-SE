@@ -1,7 +1,7 @@
 ---
 title: Schemalägga genomsökningar med Microsoft Defender för Endpoint (Linux)
 description: Lär dig hur du schemalägger en automatisk genomsökningstid för Microsoft Defender för Endpoint (Linux) för att bättre skydda organisationens tillgångar.
-keywords: microsoft, defender, atp, linux, genomsökningar, antivirus, microsoft defender för slutpunkt (linux)
+keywords: microsoft, defender, Microsoft Defender för slutpunkt, linux, genomsökningar, antivirus, microsoft defender för slutpunkt (linux)
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d3f5d4c490e28c7985a0420fa5013a8e0f51a167
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f868570fccf9b30cde5f16aa8e71292fb8b09497
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51073761"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933139"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>Schemalägga genomsökningar med Microsoft Defender för Endpoint (Linux)
 

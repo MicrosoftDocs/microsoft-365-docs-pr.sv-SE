@@ -1,7 +1,7 @@
 ---
 title: Planera ditt Microsoft 365 Defender-pilotprojekt
 description: Planera ditt Microsoft 365 Defender-pilotprojekt med intressenter för att hantera förväntningar och säkerställa ett lyckat resultat.
-keywords: Microsoft Threat Protection-pilot, planera pilottestet för Microsoft Threat Protection-projektet, utvärdera Microsoft Threat Protection i produktionen, Microsoft Threat Protection-pilotprojekt, cybersäkerhet, avancerade fortlöpande hot, företagssäkerhet, enheter, enheter, identitet, användare, data, program, incidenter, automatiserad undersökning och åtgärd, avancerad sökning
+keywords: Microsoft 365 Defender-pilot, planera pilottestning av Microsoft 365 Defender-projekt, utvärdera Microsoft 365 Defender i produktion, Microsoft 365 Defender-pilotprojekt, cybersäkerhet, avancerade beständiga hot, företagssäkerhet, enheter, enheter, identitet, användare, data, program, incidenter, automatisk undersökning och åtgärd, avancerad sökning
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: aee508414b2388b04ab362eedb1f894a4c3d54fd
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 98f0c91a51cc2b73cc26e6fb53143a417a7a147e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071474"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932553"
 ---
 # <a name="planning-your-pilot-microsoft-365-defender-project"></a>Planera ditt Microsoft 365 Defender-pilotprojekt 
 
@@ -63,7 +63,7 @@ Vilka typer av operativsystem som ska utvärderas bör också definieras utifrå
 
 ## <a name="use-cases"></a>Användningsfall
 
-Användningsfall representerar instruktioner om hur verktyget som testas är avsett att användas av de avsedda användarna. De kan utformas som användarberättelser ur perspektiv hos en viss person, till exempel som SOC-analytiker. Ett exempel:
+Användningsfall representerar instruktioner om hur verktyget som testas är avsett att användas av de avsedda användarna. De kan utformas som användarberättelser ur perspektiv hos en viss person, till exempel som SOC-analytiker. Till exempel:
 - Som SOC-analytiker behöver jag visa, korrelera, bedöma och hantera aviseringar och händelser för olika enheter, användare och postlådor i nätverket. [Incidenthantering]
 - Som SOC-analytiker måste jag ha verktyget och processen för att automatiskt undersöka och svara på skadliga händelser i nätverket. [Automatisk IR]
 - Som SOC-analytiker måste jag söka efter data från min miljö för att hitta kända och potentiella hot och misstänkta aktiviteter. [Advanced Hunting]

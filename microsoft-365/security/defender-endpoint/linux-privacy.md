@@ -1,7 +1,7 @@
 ---
 title: Sekretess för Microsoft Defender för Endpoint i Linux
 description: Sekretesskontroller, hur du konfigurerar principinställningar som påverkar sekretess och information om diagnostikdata som samlas in i Microsoft Defender för Slutpunkt på Linux.
-keywords: microsoft, defender, atp, linux, sekretess, diagnostik
+keywords: microsoft, defender, Microsoft Defender för slutpunkt, linux, sekretess, diagnostik
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 69af56efa57f389842ed31afa5f0a74667bd8f7b
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: cbf68b6ce8397f0339b374a041ba2629b20db699
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903256"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933343"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Sekretess för Microsoft Defender för Endpoint i Linux
 
@@ -33,13 +33,13 @@ ms.locfileid: "51903256"
 
 > Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Microsoft strävar efter att tillhandahålla den information och de kontroller som du behöver för att göra val kring hur dina data samlas in och används när du använder Defender för Endpoint för Linux.
+Microsoft strävar efter att tillhandahålla den information och de kontroller som du behöver för att göra val kring hur dina data samlas in och används när du använder Defender för slutpunkt på Linux.
 
 I det här avsnittet beskrivs vilka sekretesskontroller som är tillgängliga i produkten, hur du hanterar kontrollerna med principinställningar och mer information om datahändelser som samlas in.
 
 ## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Översikt över sekretesskontroller i Microsoft Defender för Endpoint i Linux
 
-I det här avsnittet beskrivs sekretesskontroller för olika typer av data som samlas in av Defender för Endpoint för Linux.
+I det här avsnittet beskrivs sekretesskontroller för olika typer av data som samlas in av Defender för Endpoint på Linux.
 
 ### <a name="diagnostic-data"></a>Diagnostikdata
 
@@ -75,7 +75,7 @@ Det finns tre nivåer för kontroll av exempelinskick:
 
 Om du är IT-administratör kanske du vill konfigurera kontrollerna på företagsnivå. 
 
-Sekretesskontrollerna för de olika typerna av data som beskrivs i föregående avsnitt beskrivs i detalj i Ange inställningar för [Defender för Endpoint för Linux.](linux-preferences.md)
+Sekretesskontrollerna för de olika typerna av data som beskrivs i föregående avsnitt beskrivs i detalj i Ange inställningar för [Defender för Slutpunkt i Linux.](linux-preferences.md)
 
 Precis som med alla nya principinställningar bör du noggrant testa dem i en begränsad, kontrollerad miljö för att säkerställa att de inställningar som du konfigurerar har önskad effekt innan du implementerar principinställningarna i en större utsträckning i organisationen.
 
@@ -96,7 +96,7 @@ Följande fält är gemensamma för alla händelser:
 | org_id                  | Unikt ID associerat med företaget som enheten tillhör. Microsoft kan identifiera om problem påverkar en uppsättning utvalda företag och hur många företag som påverkas. |
 | hostname                | Namn på lokal enhet (utan DNS-suffix). Gör att Microsoft kan identifiera huruvida problem påverkar en uppsättning utvalda installationer och hur många användare som påverkas. |
 | product_guid            | Unikt ID för produkten. Gör att Microsoft kan särskilja problem som påverkar olika typer av produkten. |
-| app_version             | Version av Defender för Slutpunkt för Linux. Gör att Microsoft kan identifiera vilka versioner av produkten som visar ett problem så att det kan prioriteras korrekt.|
+| app_version             | Version av Defender för Slutpunkt i Linux. Gör att Microsoft kan identifiera vilka versioner av produkten som visar ett problem så att det kan prioriteras korrekt.|
 | sig_version             | Version av databasen för säkerhetsintelligens. Gör att Microsoft kan identifiera vilka versioner av säkerhetsinformation som visar ett problem så att det kan prioriteras korrekt. |
 | supported_compressions  | Lista över komprimeringsalgoritmer som stöds av programmet, till exempel `['gzip']` . Gör att Microsoft förstår vilka typer av komprimering som kan användas när de kommunicerar med programmet. |
 | release_ring            | Ring som enheten är kopplad till (till exempel Insider – snabbt, Insider – långsamt, Produktion). Gör att Microsoft kan identifiera vilken version som ett problem kan inträffa så att det kan prioriteras korrekt. |
@@ -163,7 +163,7 @@ Följande fält samlas in:
 
 | Fält            | Beskrivning |
 | ---------------- | ----------- |
-| version          | Version av Defender för Slutpunkt för Linux. |
+| version          | Version av Defender för Slutpunkt på Linux. |
 | instance_id      | Unikt ID som genererades vid start av kernel-tillägg. |
 | trace_level      | Spårningsnivån för kernel-tillägget. |
 | undersystem        | Det underliggande undersystemet som används för realtidsskydd. |
@@ -178,7 +178,7 @@ Följande fält samlas in:
 Diagnostikloggar samlas bara in med användarens medgivande som en del av funktionen för feedbackinskick. Följande filer samlas in som en del av supportloggarna:
 
 - Alla filer under */var/log/microsoft/mdatp*
-- Delmängd filer under */etc/opt/microsoft/mdatp* som skapas och används av Defender för Endpoint för Linux
+- Delmängd filer under */etc/opt/microsoft/mdatp* som skapas och används av Defender för Slutpunkt i Linux
 - Produktinstallations- och avinstallationsloggar under */var/log/microsoft_mdatp_ \* .log*
 
 ### <a name="optional-diagnostic-data"></a>Valfria diagnostikdata

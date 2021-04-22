@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP för Android – information om sekretess
-description: Sekretesskontroller, hur du konfigurerar principinställningar som påverkar sekretess och information om diagnostikdata som samlas in i Microsoft Defender ATP för Android.
-keywords: microsoft, defender, atp, android, sekretess, diagnostik
+title: Microsoft Defender för Endpoint för Android – Sekretessinformation
+description: Sekretesskontroller, hur du konfigurerar principinställningar som påverkar sekretess och information om diagnostikdata som samlas in i Microsoft Defender för slutpunkt på Android.
+keywords: microsoft, defender, Microsoft Defender för slutpunkt, android, sekretess, diagnostik
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79f8882e21f23e75d85813cde03260ef17adf246
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 415a1f555e1a33c103894221086b783aa754cf32
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876115"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930143"
 ---
 #  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender för Endpoint för Android – Sekretessinformation
 
@@ -32,7 +32,7 @@ ms.locfileid: "51876115"
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-Defender för slutpunkt för Android samlar in information från dina konfigurerade Android-enheter och lagrar den i samma klientorganisation där du har Defender för Slutpunkt. Informationen samlas in för att hålla Defender för Endpoint för iOS säker, uppdaterad och fungerar som förväntat, och för att stödja tjänsten.
+Defender för slutpunkt på Android samlar in information från dina konfigurerade Android-enheter och lagrar den i samma klientorganisation där du har Defender för slutpunkt. Informationen samlas in för att hålla Defender för Endpoint för Android säker, uppdaterad och fungerar som förväntat, och för att stödja tjänsten.
 
 Mer information om datalagring finns i [Microsoft Defender för Slutpunktens datalagring och sekretess.](data-storage-privacy.md)
 

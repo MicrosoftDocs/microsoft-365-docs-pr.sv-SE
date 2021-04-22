@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP Flow-koppling
+title: Microsoft Defender för slutpunktsflödeskoppling
 ms.reviewer: ''
-description: Använd Microsoft Defender ATP Flow-kopplingen för att automatisera säkerhet och skapa ett flöde som utlöses när en ny avisering inträffar för klientorganisationen.
+description: Använd Microsoft Defender för Slutpunktsflödeskoppling för att automatisera säkerhet och skapa ett flöde som utlöses varje gång en ny avisering inträffar i klientorganisationen.
 keywords: flöde, apis som stöds, api, Microsoft flow, fråga, automation
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6fd210ddfb8e3ab6e4f1f4ffc0635c8b813e3a07
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 33a7c7b1907ac761dfdde43a70bfb8f515235150
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163393"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929305"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (tidigare Microsoft Flow) och Azure-funktioner
 
@@ -92,5 +92,5 @@ Aviseringsutlösaren anger endast aviserings-ID och maskin-ID. Du kan använda k
 
 Du kan också skapa ett **schemalagt** flöde som kör Avancerad sökning och mycket mer!
 
-## <a name="related-topic"></a>Relaterade ämnen
+## <a name="related-topic"></a>Relaterat ämne
 - [Microsoft Defender för slutpunkts-API:er](apis-intro.md)

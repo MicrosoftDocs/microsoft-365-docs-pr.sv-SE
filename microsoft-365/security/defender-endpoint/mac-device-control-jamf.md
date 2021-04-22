@@ -1,7 +1,7 @@
 ---
 title: Exempel på principer för enhetskontroll för JAMF
 description: Lär dig hur du använder principer för enhetskontroll med exempel som kan användas med JAMF.
-keywords: microsoft, defender, slutpunkt, atp, mac, enhet, kontroll, usb, flyttbart, media, jamf
+keywords: microsoft, defender, slutpunkt, Microsoft Defender för slutpunkt, mac, enhet, kontroll, usb, flyttbart, media, jamf
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8990979024c033d4142b595d6fef94f7b872e7c9
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: b9ce161a472366d11b267824c9bd08ceccf285aa
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187691"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933463"
 ---
 # <a name="examples-of-device-control-policies-for-jamf"></a>Exempel på principer för enhetskontroll för JAMF
 

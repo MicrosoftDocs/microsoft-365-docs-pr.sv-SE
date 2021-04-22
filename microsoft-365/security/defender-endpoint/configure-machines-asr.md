@@ -1,7 +1,7 @@
 ---
 title: Optimera ASR-regeldistribution och identifiering
 description: Optimera ASR-reglerna (attack surface reduction) för att identifiera och förhindra vanliga sårbarheter för skadlig programvara.
-keywords: onboard, Intune-hantering, MDATP, WDATP, Microsoft Defender, Windows Defender, avancerat skydd mot hot, minska attackytan, ASR, säkerhetsbaslinje
+keywords: onboard, Intune-hantering, Microsoft Defender för slutpunkt, Microsoft Defender, Windows Defender, minskning av attackytan, ASR, säkerhetsbaslinje
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a5ce39bb3ff0bf3eea4ac4e89c554de43499b15f
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 91295135c833c6b403078bdfd517c7b84ec7d630
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165483"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932853"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>Optimera ASR-regeldistribution och identifiering
 
@@ -54,8 +54,8 @@ Fliken ***Lägg till undantag** på sidan För att minska attackytan i Microsoft
 
 Mer information om distribution av ASR-regler i Säkerhetscenter för Microsoft 365 finns i Övervaka och hantera distribution och identifiering av [ASR-regler.](https://docs.microsoft.com/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)
 
-**Relaterade ämnen**
+**Närliggande ämnen**
 
-* [Kontrollera att dina enheter är korrekt konfigurerade](configure-machines.md)
+* [Se till att dina enheter är korrekt konfigurerade](configure-machines.md)
 * [Få enheter skickade till Microsoft Defender för Endpoint](configure-machines-onboarding.md)
 * [Övervaka efterlevnad av Microsoft Defender för slutpunktens säkerhetsbaslinje](configure-machines-security-baseline.md)

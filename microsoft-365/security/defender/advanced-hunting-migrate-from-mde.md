@@ -1,7 +1,7 @@
 ---
 title: Migrera avancerade frågor om sökning från Microsoft Defender för Endpoint
 description: Läs om hur du justerar dina Frågor om Microsoft Defender för slutpunkt så att du kan använda dem i Microsoft 365 Defender
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, microsoft defender atp, mdatp, search, query, telemetry, custom detections, schema, kusto, microsoft 365, mapping
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, Microsoft Defender for Endpoint, search, query, telemetry, custom detections, schema, kusto, mapping
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: c0a29f93b9ea926beaeecb840ba108da04a89ebb
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 5513c4b4fd8c5e24f9ada989113abc8a10e6a864
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501137"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933451"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Migrera avancerade frågor om sökning från Microsoft Defender för Endpoint
 

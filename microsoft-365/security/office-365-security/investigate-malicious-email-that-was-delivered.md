@@ -1,6 +1,6 @@
 ---
 title: Undersöka skadlig e-post som levererats i Office 365, hitta och undersöka skadlig e-post
-keywords: TIMailData-Inline, Security Incident, Incident, ATP PowerShell, email malware, compromised users, email phish, email malware, read email headers, read headers, open email headers, special actions
+keywords: TIMailData-Inline, Säkerhetshändelse, incident, Microsoft Defender för Endpoint PowerShell, skadlig e-post, komprometterade användare, e-post phish, skadlig programvara för e-post, läsa e-postrubriker, öppna e-posthuvuden, specialåtgärder
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -20,12 +20,12 @@ description: Lär dig hur du använder funktioner för undersökning av hot och 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2781850eacf8b0fcf4909406aca335f1bbeb0753
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 02e396cac060f2b8431b2b70e89c18950596d9c2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207106"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933379"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Undersöka skadlig e-post som levererats i Office 365
 

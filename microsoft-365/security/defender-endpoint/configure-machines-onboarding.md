@@ -1,7 +1,7 @@
 ---
 title: Få enheter skickade till Microsoft Defender för Endpoint
 description: Spåra registrering av Intune-hanterade enheter i Microsoft Defender för Endpoint och öka introduktionshastigheten.
-keywords: onboard, Intune-hantering, MDATP, WDATP, Microsoft Defender, Windows Defender, avancerat skydd mot hot, konfigurationshantering
+keywords: onboard, Intune-hantering, Microsoft Defender för slutpunkt, Microsoft Defender, Windows Defender, konfigurationshantering
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 09ca9fb466efd7764f7459a4754cfb30c8100bdb
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: e0d5a13b0c33516209bd2d18361a1de6ab9245c2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904146"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932947"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Få enheter skickade till Microsoft Defender för Endpoint
 
@@ -71,7 +71,7 @@ På sidan för enhetsefterlevnad skapar du en konfigurationsprofil specifikt fö
 
 Mer information finns i [om hur du använder konfigurationsprofiler för Intune-enheter för att registrera enheter i Defender för slutpunkt.](https://docs.microsoft.com/intune/advanced-threat-protection#onboard-devices-by-using-a-configuration-profile)
 
->Vill du uppleva Microsoft Defender ATP? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+>Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Se till att dina enheter är korrekt konfigurerade](configure-machines.md)

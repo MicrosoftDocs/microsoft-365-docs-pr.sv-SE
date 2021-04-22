@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Lär dig hur du anger en förfalloprincip för lösenord i organisationen i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 0280f4fd43034f9ffb70104771fa4a099943af2d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 14ff08126533d5c530fb56761a2ef1676d5864b8
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500238"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903160"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Ange förfalloprincip för lösenord i organisationen
 
@@ -45,7 +45,7 @@ Den här artikeln är avsedd för personer som anger en förfalloprincip för l�
 
 Som administratör kan du göra så att användarlösenord upphör efter ett visst antal dagar, eller ställa in så att lösenord aldrig upphör. Som standard är lösenord inställda på att aldrig upphöra att gälla för din organisation.
 
-Aktuella undersökningar tyder starkt på att tvingande lösenordsändringar gör mer skada än nytta. Det får användarna att välja svagare lösenord, återanvända lösenord eller uppdatera gamla lösenord på ett sätt som gör det enkelt för hackare att gissa sig till dem. Vi rekommenderar att du [multifaktorautentisering](../security-and-compliance/set-up-multi-factor-authentication.md).
+Aktuella undersökningar tyder starkt på att tvingande lösenordsändringar gör mer skada än nytta. Det får användarna att välja svagare lösenord, återanvända lösenord eller uppdatera gamla lösenord på ett sätt som gör det enkelt för hackare att gissa sig till dem. Vi rekommenderar att du [multifaktorautentisering](../security-and-compliance/set-up-multi-factor-authentication.md). Mer information om lösenordsprincip finns i [Rekommendationer om lösenordsprinciper](../misc/password-policy-recommendations.md).
 
 Du måste vara [global administratör](../add-users/about-admin-roles.md) för att utföra de här stegen.
 

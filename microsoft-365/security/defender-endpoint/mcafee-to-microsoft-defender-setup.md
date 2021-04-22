@@ -1,7 +1,7 @@
 ---
 title: McAfee till Microsoft Defender för Slutpunkt – installation
 description: Fas 2, installation, för migrering från McAfee till Microsoft Defender för Endpoint.
-keywords: migrering, windows defender avancerat skydd, atp, edr
+keywords: migrering, Microsoft Defender för Slutpunkt, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: be39d64743979fe903193a388ce491523819f299
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 36dc50aa66df932703e50a5d2c57afb42871e5b1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185617"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933091"
 ---
 # <a name="migrate-from-mcafee---phase-2-set-up-microsoft-defender-for-endpoint"></a>Migrera från McAfee – fas 2: Konfigurera Microsoft Defender för Endpoint
 

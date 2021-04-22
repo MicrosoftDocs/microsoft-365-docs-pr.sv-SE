@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Lär dig hur du ställer in Microsoft Viva-ämnen
-ms.openlocfilehash: 629008e083d71e09632b05e21eaefb011d7d9ce2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 19395cf3a9ecc991f08f375425803cb81a2a1d35
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929450"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930227"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Konfigurera Microsoft Viva-ämnen
 
@@ -36,6 +36,27 @@ Den här videon visar processen för att konfigurera ämnen i Microsoft 365.
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Li0E]  
 
 <br>
+
+## <a name="assign-licenses"></a>Tilldela licenser
+
+Du måste tilldela licenser för de användare som ska använda ämnen. Endast användare med en licens kan se information om ämnen, till exempel höjdpunkter, ämneskort, ämnessidor och ämnescentret. 
+
+För att tilldela licenser:
+
+1. I Administrationscenter för Microsoft 365 klickar du på **Användare** > **Aktiva användare**.
+
+2. Välj de användare som du vill licensiera och klicka på **Licenser och appar.**
+
+3. Under **Licenser** väljer du **Viva Ämnen.**
+
+4. Kontrollera **att** sökningen med **Index (Viva Topics)** och **Viva** Topics är markerad under Appar.
+
+   > [!div class="mx-imgBorder"]
+   > ![Microsoft Viva Topics-licenser i administrationscentret för Microsoft 365](../media/topic-experiences-licenses.png)
+
+5. Klicka på **Spara ändringar**.
+
+Det kan ta upp till en timme för användarna att få åtkomst till Ämnen när licenserna har tilldelats.
 
 ## <a name="set-up-topics"></a>Konfigurera ämnen
 
@@ -124,25 +145,6 @@ Så här ställer du in ämnen
     ![Inställningar som används](../media/ksetup7.png)    
 
 Observera att första gången ämnesidentifiering är aktiverat kan det ta upp till två veckor för alla föreslagna ämnen att visas i vyn Hantera ämnen. Ämnesidentifiering fortsätter allt eftersom nytt innehåll eller uppdateringar av innehåll görs. Det är normalt att ha fluktuationer i antalet föreslagna ämnen i organisationen eftersom Viva Topics utvärderar ny information.
-
-## <a name="assign-licenses"></a>Tilldela licenser
-
-När du har konfigurerat ämnesupplevelsen måste du tilldela licenser för de användare som kommer att använda ämnen. Endast användare med en licens kan se information om ämnen, till exempel höjdpunkter, ämneskort, ämnessidor och ämnescentret. 
-
-För att tilldela licenser:
-
-1. I Administrationscenter för Microsoft 365 klickar du på **Användare** > **Aktiva användare**.
-
-2. Välj de användare som du vill licensiera och klicka på **Licenser och appar.**
-
-3. Under **Licenser** väljer du **Viva Ämnen.**
-
-4. Kontrollera **att** sökningen med **Index (Viva Topics)** och **Viva** Topics är markerad under Appar.
-
-   > [!div class="mx-imgBorder"]
-   > ![Microsoft Viva Topics-licenser i administrationscentret för Microsoft 365](../media/topic-experiences-licenses.png)
-
-5. Klicka på **Spara ändringar**.
 
 ## <a name="manage-topic-experiences"></a>Hantera ämnesupplevelser
 

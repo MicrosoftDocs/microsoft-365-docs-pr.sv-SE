@@ -1,7 +1,7 @@
 ---
 title: Vad är nytt i Microsoft Defender för Office 365
 description: Läs mer om de nya funktionerna som är tillgängliga i den senaste versionen av Microsoft Defender för Office 365.
-keywords: vad är nytt i Office 365 atp, ga, allmänt tillgänglig, funktioner, tillgänglig, ny
+keywords: vad är nytt i Microsoft Defender för Office 365, ga, allmänt tillgänglig, funktioner, tillgänglig, ny
 search.appverid: met150
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7dd691b0d018db2b7afb3b88a2c1f9f7f8a39a33
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 4bb1450790883deec295f554ddf9614c0f01fe2d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569785"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930489"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Vad är nytt i Microsoft Defender för Office 365
 
@@ -38,7 +38,7 @@ ms.locfileid: "51569785"
 
 Den här artikeln innehåller nya funktioner i den senaste versionen av Microsoft Defender för Office 365. Funktioner som för närvarande finns i förhandsgranskningsvyn betecknas med **(förhandsversion).**
 
-Lär dig mer genom att titta [på videon](https://www.youtube.com/watch?v=Tdz6KfruDGo&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=3).
+Lär dig mer genom att titta på [den här videon](https://www.youtube.com/watch?v=Tdz6KfruDGo&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=3).
 > [!TIP]
 > Har du inte Microsoft Defender för Office 365 än? [Kontakta försäljning för att påbörja en utvärderingsversion](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html).
 

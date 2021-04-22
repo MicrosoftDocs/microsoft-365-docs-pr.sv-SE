@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 154ecd66399b031ef2e60eef16227bb9bc2f8785
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: c1e572910ad311daba18a8b0f5eeb546ffe36956
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587725"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929115"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Undersöka enheter i listan Microsoft Defender för slutpunktsenheter
 
@@ -172,12 +172,12 @@ På **fliken saknade KB** visas de säkerhetsuppdateringar som saknas för enhet
 
 ### <a name="active-alerts"></a>Aktiva aviseringar
 
-**Kortet Azure Advanced Threat Protection** visar en översikt över aviseringar relaterade till enheten och deras risknivå, om du har aktiverat Azure ATP-funktionen och det finns aktiva aviseringar. Mer information finns i den granskande detaljgranskningen "Aviseringar".
+**Kortet Azure Advanced Threat Protection** visar en översikt över aviseringar relaterade till enheten och deras risknivå, om du har aktiverat funktionen Microsoft Defender för identitet och det finns aktiva aviseringar. Mer information finns i den granskande detaljgranskningen "Aviseringar".
 
 ![Bild på aktiva varningskort](images/risk-level-small.png)
 
 >[!NOTE]
->Du måste aktivera integreringen på både Azure ATP och Defender för Endpoint om du vill använda den här funktionen. I Defender för Slutpunkt kan du aktivera den här funktionen i avancerade funktioner. Mer information om hur du aktiverar avancerade funktioner finns i [Aktivera avancerade funktioner.](advanced-features.md)
+>Du måste aktivera integreringen på både Microsoft Defender för identitet och Defender för Endpoint om du vill använda den här funktionen. I Defender för Slutpunkt kan du aktivera den här funktionen i avancerade funktioner. Mer information om hur du aktiverar avancerade funktioner finns i [Aktivera avancerade funktioner.](advanced-features.md)
 
 ### <a name="logged-on-users"></a>Inloggade användare
 

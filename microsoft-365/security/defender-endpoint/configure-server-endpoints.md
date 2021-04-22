@@ -1,7 +1,7 @@
 ---
 title: Introducera Windows-servrar till Microsoft Defender för slutpunktstjänsten
 description: Introducera Windows-servrarna så att de kan skicka sensordata till Microsoft Defender för slutpunkts sensoren.
-keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, device management, configure Windows ATP servers, onboard Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
+keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, device management, configure Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f2660f19d4b6b0d5f8e2dbf48843002a2bfb7f1d
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 4eea2931196c192620812c1609c506e1fb99093d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51769100"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932959"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Introducera Windows-servrar till Microsoft Defender för slutpunktstjänsten
 
@@ -55,7 +55,7 @@ Du kan registrera Windows Server 2008 R2 SP1, Windows Server 2012 R2 och Windows
 När du har slutfört introduktionsstegen med något av de angivna alternativen måste du Konfigurera och uppdatera [System Center Endpoint Protection-klienter.](#configure-and-update-system-center-endpoint-protection-clients)
 
 > [!NOTE]
-> Defender för fristående slutpunkt för serverlicens krävs per nod, för att kunna introducera en Windows-server via Microsoft Monitoring Agent (alternativ 1) eller via Microsoft Endpoint Manager (Alternativ 3). Du kan också behöva en Azure Defender för servrar-licens per nod för att kunna hantera en Windows-server via Azure Säkerhetscenter (alternativ 2) i Funktioner som stöds i [Azure Säkerhetscenter.](https://docs.microsoft.com/azure/security-center/security-center-services)
+> Defender för fristående slutpunkt för serverlicens krävs per nod, för att kunna introducera en Windows-server via Microsoft Monitoring Agent (alternativ 1) eller via Microsoft Endpoint Manager (Alternativ 3). Du kan också behöva en Azure Defender för servrar-licens per nod för att kunna hantera en Windows-server via Azure Security Center (alternativ 2) i Funktioner som stöds i [Azure Defender.](https://docs.microsoft.com/azure/security-center/security-center-services)
 
 ### <a name="option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma"></a>Alternativ 1: Registrera dig genom att installera och konfigurera Microsoft Monitoring Agent (MMA)
 
@@ -127,13 +127,13 @@ När den är klar bör du se de onboarded Windows-servrarna i portalen inom en t
 
 3. Klicka **på Onboard Servers i Azure Security Center.**
 
-4. Följ introduktionsanvisningarna i Microsoft Defender för Endpoint med [Azure Säkerhetscenter](https://docs.microsoft.com/azure/security-center/security-center-wdatp) och Om du använder Azure ARC följer du introduktionsanvisningarna i Aktivera Microsoft Defender för [slutpunktsintegrering.](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration)
+4. Följ introduktionsanvisningarna i [Microsoft Defender](https://docs.microsoft.com/azure/security-center/security-center-wdatp) för Endpoint med Azure Defender och Om du använder Azure ARC följer du introduktionsanvisningarna i Aktivera Microsoft Defender för [slutpunktsintegrering.](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration)
 
 När du har slutfört introduktionsstegen måste du Konfigurera och uppdatera [Slutpunktsskydd-klienter i System Center.](#configure-and-update-system-center-endpoint-protection-clients)
 
 > [!NOTE]
 >
-> - För att onboarding via Azure Defender for Servers (tidigare Azure Security Center Standard Edition) ska fungera som förväntat måste servern ha en lämplig arbetsyta och nyckel konfigurerad i inställningarna för Microsoft Monitoring Agent (MMA).
+> - För att onboarding via Azure Defender for Servers ska fungera som förväntat måste servern ha en lämplig arbetsyta och nyckel konfigurerad i inställningarna för Microsoft Monitoring Agent (MMA).
 > - När det har konfigurerats distribueras rätt molnhanteringspaket på datorn och sensorprocessen (MsSenseS.exe) distribueras och startas.
 > - Det här krävs också om servern är konfigurerad att använda en OMS Gateway-server som proxy.
 
@@ -188,26 +188,25 @@ Stöd för Windows Server ger djupare insikter i serveraktiviteter, vad gäller 
 
     Mer information om hur du använder grupprinciper för att konfigurera och hantera Microsoft Defender Antivirus på dina Windows-servrar finns i Använda grupprincipinställningar för att konfigurera och hantera [Microsoft Defender Antivirus.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)
 
-## <a name="integration-with-azure-security-center"></a>Integrering med Azure Säkerhetscenter
+## <a name="integration-with-azure-defender"></a>Integrering med Azure Defender
 
-Defender för Endpoint kan integreras med Azure Security Center för att tillhandahålla en omfattande lösning för Windows serverskydd. Med den här integreringen kan Azure Säkerhetscenter använda kraften i Defender för Endpoint för att tillhandahålla förbättrad identifiering av hot för Windows-servrar.
+Defender för Endpoint kan integreras med Azure Defender för att tillhandahålla en omfattande lösning för Windows-serverskydd. Med den här integreringen kan Azure Defender använda kraften i Defender för Slutpunkt för att tillhandahålla förbättrad identifiering av hot för Windows-servrar.
 
 Följande funktioner ingår i den här integreringen:
 
-- Automatisk onboarding – Defender för slutpunkts sensor aktiveras automatiskt på Windows-servrar som skickas till Azure Säkerhetscenter. Mer information om onboarding av Azure Säkerhetscenter finns i [Onboarding till Azure Security Center Standard för förbättrad säkerhet.](https://docs.microsoft.com/azure/security-center/security-center-onboarding)
+- Automatisk onboarding – Defender för slutpunkts sensor aktiveras automatiskt på Windows-servrar som är onboarded to Azure Defender. Mer information om Azure Defender-registrering finns i [Onboarding till Azure Defender Standard för förbättrad säkerhet.](https://docs.microsoft.com/azure/security-center/security-center-onboarding)
 
     > [!NOTE]
     > Integreringen mellan Azure Defender för servrar och Microsoft Defender för slutpunkt har utökats med stöd för [Windows Server 2019 och Windows Virtual Desktop (WVD).](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
-- Windows-servrar som övervakas av Azure Säkerhetscenter blir också tillgängliga i Defender för slutpunkt – Azure Säkerhetscenter ansluter smidigt till Defender för slutpunktsklientorganisationen, vilket ger en enda vy mellan klienter och servrar.  Dessutom är Defender för slutpunktsaviseringar tillgängliga i Azure Säkerhetscenter-konsolen.
-- Serverundersökning – Azure Säkerhetscenter-kunder kan använda Microsoft Defender Säkerhetscenter för att utföra detaljerad undersökning för att upptäcka omfattningen av en möjlig intrång.
+- Windows-servrar som övervakas av Azure Defender blir också tillgängliga i Defender för slutpunkt – Azure Defender ansluter sömlöst till Defender för slutpunktsklientorganisationen, vilket ger en enda vy över alla klienter och servrar.  Dessutom är Defender för slutpunktsaviseringar tillgängliga i Azure Defender-konsolen.
+- Serverundersökning – Azure Defender-kunder kan få åtkomst till Microsoft Defender Säkerhetscenter för att utföra detaljerad undersökning för att ta reda på omfattningen av en möjlig överträdelse.
 
 > [!IMPORTANT]
->
-> - När du använder Azure Säkerhetscenter för att övervaka servrar skapas automatiskt en Defender för slutpunktsklientorganisation (i USA för USA-användare i EU för europeiska och brittiska användare).
+> - När du använder Azure Defender för att övervaka servrar skapas automatiskt en Defender för slutpunktsklientorganisation (i USA för USA-användare i EU för europeiska och brittiska användare).<br>
 Data som samlas in av Defender för Endpoint lagras på klientorganisationens geoplats som identifieras under etableringen.
-> - Om du använder Defender för slutpunkt innan du använder Azure Säkerhetscenter lagras dina data på den plats som du angav när du skapade klientorganisationen, även om du integrerar med Azure Säkerhetscenter vid ett senare tillfälle.
-> - När den har konfigurerats kan du inte ändra platsen där dina data lagras. Om du behöver flytta dina data till en annan plats måste du kontakta Microsoft Support för att återställa klientorganisationen.
+> - Om du använder Defender för slutpunkt innan du använder Azure Defender lagras dina data på den plats som du angav när du skapade klientorganisationen, även om du integrerar med Azure Defender vid ett senare tillfälle.
+> - När den har konfigurerats kan du inte ändra platsen där dina data lagras. Om du behöver flytta dina data till en annan plats måste du kontakta Microsoft Support för att återställa klientorganisationen. <br>
 Serverslutpunktsövervakning som använder den här integreringen har inaktiverats för Office 365 GCC-kunder.
 
 ## <a name="configure-and-update-system-center-endpoint-protection-clients"></a>Konfigurera och uppdatera System Center Endpoint Protection-klienter

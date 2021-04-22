@@ -1,7 +1,7 @@
 ---
 title: Översikt – Avancerad sökning
 description: Läs mer om avancerade sökfrågor i Microsoft 365 och hur du använder dem för att proaktivt hitta hot och svagheter i nätverket
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, custom detections, schema, kusto, microsoft 365, Microsoft Threat Protection
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 3532fd461fff02fac54e96e0a1a1e69c39c16907
-ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
+ms.openlocfilehash: df48ec921dee7d8f3b441ed3f68ed148c5c6c857
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51657025"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932983"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Proaktiv sökning efter hot med avancerad sökning i Microsoft 365 Defender
 

@@ -2,7 +2,7 @@
 title: Microsoft Defender för Slutpunkt på Linux-resurser
 ms.reviewer: ''
 description: Här beskrivs resurser för Microsoft Defender för Slutpunkt i Linux, inklusive hur du avinstallerar det, hur du samlar in diagnostikloggar, CLI-kommandon och kända problem med produkten.
-keywords: microsoft, defender, atp, linux, installation, distribuera, avinstallation, enkel, ansible, linux, redhat, ubuntu, ubuntu, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender för Endpoint, linux, installation, distribuera, avinstallation, installationse, ansible, linux, redhat, ubuntu, ubuntu, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: de2602bdc94507d27236b939553a6567b2587f36
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 176ee89c8d60a1515855296e2565f0649f908a33
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903148"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933331"
 ---
 # <a name="resources"></a>Resurser
 
@@ -81,7 +81,7 @@ Den detaljerade loggen sparas i `/var/log/microsoft/mdatp_install.log` . Om du u
 
 ## <a name="uninstall"></a>Avinstallera
 
-Det finns flera sätt att avinstallera Defender för Endpoint för Linux. Om du använder ett konfigurationsverktyg, till exempel Beser, följer du paketinstallationsanvisningarna för konfigurationsverktyget.
+Det finns flera sätt att avinstallera Defender för Endpoint i Linux. Om du använder ett konfigurationsverktyg, till exempel Beser, följer du paketinstallationsanvisningarna för konfigurationsverktyget.
 
 ### <a name="manual-uninstallation"></a>Manuell avinstallation
 
