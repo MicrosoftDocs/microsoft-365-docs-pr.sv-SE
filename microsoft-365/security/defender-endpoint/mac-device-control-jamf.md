@@ -1,7 +1,7 @@
 ---
 title: Exempel på principer för enhetskontroll för JAMF
 description: Lär dig hur du använder principer för enhetskontroll med exempel som kan användas med JAMF.
-keywords: microsoft, defender, slutpunkt, atp, mac, enhet, kontroll, usb, flyttbart, media, jamf
+keywords: microsoft, defender, slutpunkt, Microsoft Defender för slutpunkt, mac, enhet, kontroll, usb, flyttbart, media, jamf
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,30 +18,30 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8990979024c033d4142b595d6fef94f7b872e7c9
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: b9ce161a472366d11b267824c9bd08ceccf285aa
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187691"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933463"
 ---
-# <a name="examples-of-device-control-policies-for-jamf"></a><span data-ttu-id="f3085-104">Exempel på principer för enhetskontroll för JAMF</span><span class="sxs-lookup"><span data-stu-id="f3085-104">Examples of device control policies for JAMF</span></span>
+# <a name="examples-of-device-control-policies-for-jamf"></a><span data-ttu-id="80ce7-104">Exempel på principer för enhetskontroll för JAMF</span><span class="sxs-lookup"><span data-stu-id="80ce7-104">Examples of device control policies for JAMF</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="f3085-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="f3085-105">**Applies to:**</span></span>
-- [<span data-ttu-id="f3085-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="f3085-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="f3085-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="f3085-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="80ce7-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="80ce7-105">**Applies to:**</span></span>
+- [<span data-ttu-id="80ce7-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="80ce7-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="80ce7-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="80ce7-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="f3085-108">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="f3085-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="f3085-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="f3085-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="80ce7-108">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="80ce7-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="80ce7-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="80ce7-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-<span data-ttu-id="f3085-110">Det här dokumentet innehåller exempel på principer för enhetskontroll som du kan anpassa för din egen organisation.</span><span class="sxs-lookup"><span data-stu-id="f3085-110">This document contains examples of device control policies that you can customize for your own organization.</span></span> <span data-ttu-id="f3085-111">De här exemplen gäller om du använder JAMF för att hantera enheter i ditt företag.</span><span class="sxs-lookup"><span data-stu-id="f3085-111">These examples are applicable if you are using JAMF to manage devices in your enterprise.</span></span>
+<span data-ttu-id="80ce7-110">Det här dokumentet innehåller exempel på principer för enhetskontroll som du kan anpassa för din egen organisation.</span><span class="sxs-lookup"><span data-stu-id="80ce7-110">This document contains examples of device control policies that you can customize for your own organization.</span></span> <span data-ttu-id="80ce7-111">De här exemplen gäller om du använder JAMF för att hantera enheter i ditt företag.</span><span class="sxs-lookup"><span data-stu-id="80ce7-111">These examples are applicable if you are using JAMF to manage devices in your enterprise.</span></span>
 
-## <a name="restrict-access-to-all-removable-media"></a><span data-ttu-id="f3085-112">Begränsa åtkomsten till alla flyttbara medium</span><span class="sxs-lookup"><span data-stu-id="f3085-112">Restrict access to all removable media</span></span>
+## <a name="restrict-access-to-all-removable-media"></a><span data-ttu-id="80ce7-112">Begränsa åtkomsten till alla flyttbara medium</span><span class="sxs-lookup"><span data-stu-id="80ce7-112">Restrict access to all removable media</span></span>
 
-<span data-ttu-id="f3085-113">I följande exempel begränsas åtkomsten till alla flyttbara medium.</span><span class="sxs-lookup"><span data-stu-id="f3085-113">The following example restricts access to all removable media.</span></span> <span data-ttu-id="f3085-114">Observera `none` behörigheten som tillämpas på den högsta nivån i principen, vilket innebär att alla filåtgärder blir förbjudna.</span><span class="sxs-lookup"><span data-stu-id="f3085-114">Note the `none` permission that is applied at the top level of the policy, meaning that all file operations will be prohibited.</span></span>
+<span data-ttu-id="80ce7-113">I följande exempel begränsas åtkomsten till alla flyttbara medium.</span><span class="sxs-lookup"><span data-stu-id="80ce7-113">The following example restricts access to all removable media.</span></span> <span data-ttu-id="80ce7-114">Observera `none` behörigheten som tillämpas på den högsta nivån i principen, vilket innebär att alla filåtgärder blir förbjudna.</span><span class="sxs-lookup"><span data-stu-id="80ce7-114">Note the `none` permission that is applied at the top level of the policy, meaning that all file operations will be prohibited.</span></span>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -64,9 +64,9 @@ ms.locfileid: "51187691"
 </plist>
 ```
 
-## <a name="set-all-removable-media-to-be-read-only"></a><span data-ttu-id="f3085-115">Ange att alla flyttbara medium ska vara skrivskyddade</span><span class="sxs-lookup"><span data-stu-id="f3085-115">Set all removable media to be read-only</span></span>
+## <a name="set-all-removable-media-to-be-read-only"></a><span data-ttu-id="80ce7-115">Ange att alla flyttbara medium ska vara skrivskyddade</span><span class="sxs-lookup"><span data-stu-id="80ce7-115">Set all removable media to be read-only</span></span>
 
-<span data-ttu-id="f3085-116">I följande exempel konfigureras alla flyttbara medium som skrivskyddade.</span><span class="sxs-lookup"><span data-stu-id="f3085-116">The following example configures all removable media to be read-only.</span></span> <span data-ttu-id="f3085-117">Observera att behörigheten som används på den högsta nivån i principen, vilket innebär att alla skriv- och köråtgärder inte `read` kommer att gälla.</span><span class="sxs-lookup"><span data-stu-id="f3085-117">Note the `read` permission that is applied at the top level of the policy, meaning that all write and execute operations will be disallowed.</span></span>
+<span data-ttu-id="80ce7-116">I följande exempel konfigureras alla flyttbara medium som skrivskyddade.</span><span class="sxs-lookup"><span data-stu-id="80ce7-116">The following example configures all removable media to be read-only.</span></span> <span data-ttu-id="80ce7-117">Observera att behörigheten som används på den högsta nivån i principen, vilket innebär att alla skriv- och köråtgärder inte `read` kommer att gälla.</span><span class="sxs-lookup"><span data-stu-id="80ce7-117">Note the `read` permission that is applied at the top level of the policy, meaning that all write and execute operations will be disallowed.</span></span>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -89,9 +89,9 @@ ms.locfileid: "51187691"
 </plist>
 ```
 
-## <a name="disallow-program-execution-from-removable-media"></a><span data-ttu-id="f3085-118">Tillåta programkörning från flyttbara medium</span><span class="sxs-lookup"><span data-stu-id="f3085-118">Disallow program execution from removable media</span></span>
+## <a name="disallow-program-execution-from-removable-media"></a><span data-ttu-id="80ce7-118">Tillåta programkörning från flyttbara medium</span><span class="sxs-lookup"><span data-stu-id="80ce7-118">Disallow program execution from removable media</span></span>
 
-<span data-ttu-id="f3085-119">I följande exempel visas hur programkörning från flyttbara media inte kan förhindras.</span><span class="sxs-lookup"><span data-stu-id="f3085-119">The following example shows how program execution from removable media can be disallowed.</span></span> <span data-ttu-id="f3085-120">Observera de `read` behörigheter som tillämpas på den högsta nivån i `write` principen.</span><span class="sxs-lookup"><span data-stu-id="f3085-120">Note the `read` and `write` permissions that are applied at the top level of the policy.</span></span>
+<span data-ttu-id="80ce7-119">I följande exempel visas hur programkörning från flyttbara media inte kan förhindras.</span><span class="sxs-lookup"><span data-stu-id="80ce7-119">The following example shows how program execution from removable media can be disallowed.</span></span> <span data-ttu-id="80ce7-120">Observera de `read` behörigheter som tillämpas på den högsta nivån i `write` principen.</span><span class="sxs-lookup"><span data-stu-id="80ce7-120">Note the `read` and `write` permissions that are applied at the top level of the policy.</span></span>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -115,9 +115,9 @@ ms.locfileid: "51187691"
 </plist>
 ```
 
-## <a name="restrict-all-devices-from-specific-vendors"></a><span data-ttu-id="f3085-121">Begränsa alla enheter från specifika leverantörer</span><span class="sxs-lookup"><span data-stu-id="f3085-121">Restrict all devices from specific vendors</span></span>
+## <a name="restrict-all-devices-from-specific-vendors"></a><span data-ttu-id="80ce7-121">Begränsa alla enheter från specifika leverantörer</span><span class="sxs-lookup"><span data-stu-id="80ce7-121">Restrict all devices from specific vendors</span></span>
 
-<span data-ttu-id="f3085-122">I följande exempel begränsas alla enheter från specifika leverantörer (i det här fallet identifierade av `fff0` och `4525` ).</span><span class="sxs-lookup"><span data-stu-id="f3085-122">The following example restricts all devices from specific vendors (in this case identified by `fff0` and `4525`).</span></span> <span data-ttu-id="f3085-123">Alla andra enheter är obegränsade eftersom behörigheten som definieras på den högsta nivån i principen listar alla möjliga behörigheter (läsa, skriva och köra).</span><span class="sxs-lookup"><span data-stu-id="f3085-123">All other devices will be unrestricted, since the permission defined at the top level of the policy lists all possible permissions (read, write, and execute).</span></span>
+<span data-ttu-id="80ce7-122">I följande exempel begränsas alla enheter från specifika leverantörer (i det här fallet identifierade av `fff0` och `4525` ).</span><span class="sxs-lookup"><span data-stu-id="80ce7-122">The following example restricts all devices from specific vendors (in this case identified by `fff0` and `4525`).</span></span> <span data-ttu-id="80ce7-123">Alla andra enheter är obegränsade eftersom behörigheten som definieras på den högsta nivån i principen listar alla möjliga behörigheter (läsa, skriva och köra).</span><span class="sxs-lookup"><span data-stu-id="80ce7-123">All other devices will be unrestricted, since the permission defined at the top level of the policy lists all possible permissions (read, write, and execute).</span></span>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -159,9 +159,9 @@ ms.locfileid: "51187691"
 </plist> 
 ```
 
-## <a name="restrict-specific-devices-identified-by-vendor-id-product-id-and-serial-number"></a><span data-ttu-id="f3085-124">Begränsa specifika enheter som identifieras med leverantörs-ID, produkt-ID och serienummer</span><span class="sxs-lookup"><span data-stu-id="f3085-124">Restrict specific devices identified by vendor ID, product ID, and serial number</span></span>
+## <a name="restrict-specific-devices-identified-by-vendor-id-product-id-and-serial-number"></a><span data-ttu-id="80ce7-124">Begränsa specifika enheter som identifieras med leverantörs-ID, produkt-ID och serienummer</span><span class="sxs-lookup"><span data-stu-id="80ce7-124">Restrict specific devices identified by vendor ID, product ID, and serial number</span></span>
 
-<span data-ttu-id="f3085-125">I följande exempel begränsas två specifika enheter som identifieras med leverantörs-ID, `fff0` produkt-ID `1000` och serienummer och `04ZSSMHI2O7WBVOA` `04ZSSMHI2O7WBVOB` .</span><span class="sxs-lookup"><span data-stu-id="f3085-125">The following example restricts two specific devices, identified by vendor ID `fff0`, product ID `1000`, and serial numbers `04ZSSMHI2O7WBVOA` and `04ZSSMHI2O7WBVOB`.</span></span> <span data-ttu-id="f3085-126">På alla andra nivåer i principen omfattar behörigheterna alla möjliga värden (läsa, skriva och köra), vilket innebär att alla andra enheter kommer att vara obegränsade.</span><span class="sxs-lookup"><span data-stu-id="f3085-126">At all other levels of the policy the permissions include all possible values (read, write, and execute), meaning that all other devices will be unrestricted.</span></span>
+<span data-ttu-id="80ce7-125">I följande exempel begränsas två specifika enheter som identifieras med leverantörs-ID, `fff0` produkt-ID `1000` och serienummer och `04ZSSMHI2O7WBVOA` `04ZSSMHI2O7WBVOB` .</span><span class="sxs-lookup"><span data-stu-id="80ce7-125">The following example restricts two specific devices, identified by vendor ID `fff0`, product ID `1000`, and serial numbers `04ZSSMHI2O7WBVOA` and `04ZSSMHI2O7WBVOB`.</span></span> <span data-ttu-id="80ce7-126">På alla andra nivåer i principen omfattar behörigheterna alla möjliga värden (läsa, skriva och köra), vilket innebär att alla andra enheter kommer att vara obegränsade.</span><span class="sxs-lookup"><span data-stu-id="80ce7-126">At all other levels of the policy the permissions include all possible values (read, write, and execute), meaning that all other devices will be unrestricted.</span></span>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -221,6 +221,6 @@ ms.locfileid: "51187691"
 </plist> 
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="f3085-127">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="f3085-127">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="80ce7-127">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="80ce7-127">Related topics</span></span>
 
-- [<span data-ttu-id="f3085-128">Översikt över enhetskontroll för macOS</span><span class="sxs-lookup"><span data-stu-id="f3085-128">Overview of device control for macOS</span></span>](mac-device-control-overview.md)
+- [<span data-ttu-id="80ce7-128">Översikt över enhetskontroll för macOS</span><span class="sxs-lookup"><span data-stu-id="80ce7-128">Overview of device control for macOS</span></span>](mac-device-control-overview.md)
