@@ -1,7 +1,7 @@
 ---
-title: Undersöka aviseringar i Microsoft 365 Defender
-description: Undersök aviseringar som visas på olika enheter, användare och postlådor.
-keywords: incidenter, aviseringar, undersöker, korrelation, attack, datorer, enheter, användare, identiteter, identiteter, postlåda, e-post, 365, microsoft, m365
+title: Analysera aviseringar i Microsoft 365 Defender
+description: Analysera aviseringar som visas på olika enheter, användare och postlådor.
+keywords: incidenter, aviseringar, undersöker, analyserar, svar, korrelation, attack, datorer, enheter, användare, identiteter, identitet, postlåda, e-post, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 77b30e8a8eee70470115bcd61f081863fa5a41ee
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 18b4df6a2dbb22235d6781f1430f7a75e319fbcf
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862039"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939548"
 ---
-# <a name="investigate-alerts-in-microsoft-365-defender"></a>Undersöka aviseringar i Microsoft 365 Defender
+# <a name="analyze-alerts-in-microsoft-365-defender"></a>Analysera aviseringar i Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51862039"
 
 Aviseringar utgör grunden för alla händelser och anger förekomsten av skadliga eller misstänkta händelser i din miljö. Aviseringar är vanligtvis en del av en bredare attack och ger ledtrådar om en händelse.
 
-I Microsoft 365 Defender sammanställs relaterade aviseringar till [formulärincidenter](incidents-overview.md). Incidenter ger alltid en bredare kontext för en attack, men det kan vara värdefullt att undersöka aviseringar när en djupare analys krävs. 
+I Microsoft 365 Defender sammanställs relaterade aviseringar till [formulärincidenter](incidents-overview.md). Incidenter ger alltid ett bredare sammanhang för en attack, men det kan vara värdefullt att analysera aviseringar när en djupare analys krävs. 
 
 I **kön Aviseringar** visas den aktuella uppsättningen aviseringar. Du kommer till aviseringskön från **incidenter &** aviseringar > aviseringar i snabbstarten av säkerhetscentret för Microsoft 365 [(security.microsoft.com).](https://security.microsoft.com)
 
@@ -134,12 +134,12 @@ Listan med ytterligare åtgärder beror på typen av avisering.
 
 ## <a name="resolve-an-alert"></a>Lösa en avisering
 
-När du har undersökt en avisering och den  kan lösas går du till fönstret  Hantera avisering för  aviseringen och markerar dess status som Löst och klassificerar den som en falsk avisering eller **Sant-avisering.** För verkliga varningar anger du aviseringens hottyp i **fältet Determination.**
+När du är klar med att analysera en avisering  och den kan lösas går du  till fönstret Hantera avisering för aviseringen och markerar dess status som Löst och klassificerar den som en **falsk** avisering eller **Sant-avisering.** För verkliga varningar anger du aviseringens hottyp i **fältet Determination.**
 
 Genom att klassificera aviseringar och ange deras avgörande hjälper du Microsoft 365 Defender att tillhandahålla mer sanna aviseringar och mindre falska aviseringar.
 
 ## <a name="see-also"></a>Se även
 
 - [Översikt över incidenter](incidents-overview.md)
-- [Undersöka incidenter](investigate-incidents.md)
 - [Hantera incidenter](manage-incidents.md)
+- [Analysera incidenter](investigate-incidents.md)

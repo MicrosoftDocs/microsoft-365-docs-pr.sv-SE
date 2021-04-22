@@ -1,7 +1,7 @@
 ---
 title: Generera ett test för Microsoft 365 Defender-aviseringen
 description: Generera en testavisering för att prova hur din Microsoft 365 Defender-labmiljö fungerar
-keywords: Simulering av Microsoft Threat Protection, prova Microsoft Threat Protection, generera testvarning i Microsoft Threat Protection, testvarning i utvärderingslabb för Microsoft Threat Protection
+keywords: Microsoft 365 Defender-simulering, prova Microsoft 365 Defender, generera testavisering i Microsoft 365 Defender, testavisering i utvärderingslabb för Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: eae17a2cec3aa4da036ef1de52c3cd637701b929
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ebe01570b8b425b45acdcb11cc7df47d2d62e547
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068917"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935659"
 ---
 # <a name="generate-a-test-alert-in-your-microsoft-365-defender-evaluation-lab"></a>Generera en testavisering i ett utvärderingslabb i Microsoft 365 Defender  
 

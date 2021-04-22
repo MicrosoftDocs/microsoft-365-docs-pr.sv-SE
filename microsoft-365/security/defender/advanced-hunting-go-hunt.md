@@ -1,7 +1,7 @@
 ---
 title: Få relevant information om en entitet med go-leta
 description: Lär dig hur du använder sökverktyget för att snabbt söka efter relevant information om en enhet eller händelse som använder avancerad sökning.
-keywords: avancerad sökning, incident, pivot, entitet, go hunt, relevanta händelser, hotsökning, sökning, sökning, fråga, telemetri, Microsoft 365, Microsoft Threat Protection
+keywords: avancerad sökning, incident, pivot, enhet, sök, relevanta händelser, hotsökning, sökning efter cyberhot, sökning, fråga, telemetri, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0f09f74a1cefad5a9b6b438752ebe57e583397c7
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 51d33ea9a372b5bfe017f4c3544e0d6413d53001
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759984"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935839"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Snabbt jaga efter entitets- eller händelseinformation med go-hunt
 

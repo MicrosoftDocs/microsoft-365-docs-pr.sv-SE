@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender för Endpoint
 description: Microsoft Defender för Endpoint är en plattform för säkerhet för företagsslutpunkter som hjälper dem att försvara sig mot avancerade fortlöpande hot.
-keywords: Introduktion till Microsoft Defender för Endpoint, introduktion till Microsoft Defender Advanced Threat Protection, introduktion till Microsoft Defender för Slutpunkt, cybersäkerhet, avancerade beständig hot, företagssäkerhet, datorbeteende sensor, molnsäkerhet, analys, hotinformation, minskning av attackytan, nästa generations skydd, automatisk undersökning och åtgärd, microsoft threat experts, secure score, advanced hunting, microsoft threat protection, cyber threat hunting
+keywords: Introduktion till Microsoft Defender för Endpoint, introduktion till Microsoft Defender för Endpoint, cybersäkerhet, avancerade fortlöpande hot, företagssäkerhet, sensor för maskinbeteende, molnsäkerhet, analys, hotinformation, minskning av hotytan, nästa generations skydd, automatisk undersökning och åtgärd, microsoft threat-experter, säker poäng, avancerad sökning, Microsoft 365 Defender, cyberhotssäkerhet
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: adc7d780c1af73d8cb4fe229720ac2ed74f90251
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 57d4506e32db5defe29f2d0e59f72bd4c1998310
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861833"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935935"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender för Endpoint
 
@@ -49,7 +49,7 @@ Defender för Endpoint använder följande kombination av teknik som är inbyggd
 
 -   **Hotinformation:** Genereras av Microsoft-säkerhetsteam, säkerhetsteam och utökas av hotinformation som tillhandahålls av partner, och med hjälp av hotinformation kan Defender för Endpoint identifiera attackersverktyg, tekniker och procedurer, och generera aviseringar när de observeras i insamlade sensordata.
 
-<center><h2>Microsoft Defender för Slutpunkt</center></h2>
+<center><h2>Microsoft Defender för Endpoint</center></h2>
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Threat & Vulnerability Management"> <br><b>Hot & sårbarhetshantering</b></center></a></td>
@@ -64,7 +64,7 @@ Defender för Endpoint använder följande kombination av teknik som är inbyggd
 <a href="#apis"><center><b>Centraliserad konfiguration och administration, API:er</a></b></center></td>
 </tr>
 <tr>
-<td colspan="7"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
+<td colspan="7"><a href="#mtp"><center><b>Microsoft 365 Defender</a></center></b></td>
 </tr>
 </table>
 <br>
@@ -126,7 +126,7 @@ Integrera Microsoft Defender för Slutpunkt i dina befintliga arbetsflöden.
 
 **[Integrering med Microsoft-lösningar](threat-protection-integration.md)** <br>
 Defender för Endpoint är direkt integrerat med olika Microsoft-lösningar, bland annat:
-- Azure Security Center
+- Azure Defender
 - Azure Sentinel
 - Intune
 - Microsoft Cloud App Security

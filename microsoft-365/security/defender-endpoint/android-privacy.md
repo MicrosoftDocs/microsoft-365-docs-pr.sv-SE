@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 415a1f555e1a33c103894221086b783aa754cf32
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1aaae2970cfb2f6da82507eefa87c8d0e2227661
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930143"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939630"
 ---
 #  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender för Endpoint för Android – Sekretessinformation
 
@@ -70,7 +70,7 @@ Information om **skadliga** Android-programpaket (APKs) på enheten, inklusive
 
     -   Azure-klientorganisations-ID – GUID som identifierar organisationen i Azure Active Directory
 
-    -   Organisations-ID för Microsoft Defender ATP – Unikt ID associerat med företaget som enheten tillhör. Gör att Microsoft kan identifiera huruvida problem påverkar en uppsättning utvalda företag och hur många företag som påverkas 
+    -   Microsoft Defender för slutpunktens organisations-ID – Unikt ID som associeras med företaget som enheten tillhör. Gör att Microsoft kan identifiera huruvida problem påverkar en uppsättning utvalda företag och hur många företag som påverkas 
 
     -   User Principal Name – Användarens e-post-ID
 

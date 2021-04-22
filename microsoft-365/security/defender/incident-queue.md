@@ -1,7 +1,7 @@
 ---
 title: Prioritera incidenter i Microsoft 365 Defender
 description: Läs om hur du filtrerar incidentköer i Microsoft 365 Defender
-keywords: incident, kö, översikt, enheter, identiteter, användare, postlåda, e-post, incidenter
+keywords: incident, kö, översikt, enheter, identiteter, användare, postlåda, e-post, incidenter, analysera, svara
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3b381749108d4a75024d9a546c0d3f1631c948ed
-ms.sourcegitcommit: 76f3c75413cc960289489d0ca29efadb8a9a5b31
+ms.openlocfilehash: c3efff1e7ebb3a5e868ede018512d12cf38e38fc
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "51887263"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939712"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Prioritera incidenter i Microsoft 365 Defender
 
@@ -81,45 +81,11 @@ I den här tabellen visas de tillgängliga filternamnen.
 | Status | Du kan välja att begränsa listan över incidenter som visas baserat på deras status för att se vilka som är aktiva eller lösta. |
 |||
 
-## <a name="incident-response-workflow"></a>Arbetsflöde för incidentsvar
-
-Här är ett vanligt arbetsflöde för att svara på incidenter:
-
-1. Identifiera och prioritera ärenden med högst prioritet för undersökning och lösning.
-2. Påbörja en undersökning för varje incident med hög [prioritet:](investigate-incidents.md)
-
-   a. Visa sammanfattningen av incidenten för att förstå dess omfattning och allvarlighetsgrad och vilka enheter som påverkas **(fliken** Sammanfattning).
-
-   b. Börja titta på aviseringarna för att förstå deras ursprung, omfattning och allvarlighetsgrad **(fliken Aviseringar).**
-
-   c. Vid behov samlar du in information om påverkade enheter, användare och postlådor **(flikarna** **Enheter,** Användare **och Postlådor).**
-
-   d. Se hur Microsoft 365 Defender automatiskt har löst vissa aviseringar **(fliken Undersökningar).**
-   
-   e. Vid behov kan du använda informationen i datauppsättningen för incidenten för mer information **(fliken Bevis och** svar).
-
-   När du undersöker bör du vara orolig:
-
-   - Inneslutning: Minska eventuella ytterligare påverkan på klientorganisationen.
-   - Överflödigt: Ta bort säkerhetshotet.
-   - Återställning: Återställa klientorganisationens resurser till det tillstånd de var i före händelsen.
-
-3. När du har löst problemet bör du ta dig tid att:
-
-   - Förstå typen av attack och dess påverkan.
-   - Undersöka säkerhetsgemenskapen efter en trend för säkerhetsattacker.
-   - Återkalla arbetsflödet som du använde för att lösa problemet och uppdatera standardarbetsflöden och spelböcker efter behov.
-   - Bestäm om ändringar i din säkerhetssäkerhet behövs och vidta åtgärder för att implementera dem.
-
-Här följer en sammanfattning av grunderna.
-
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-process.png" alt-text="Grundläggande process för att undersöka ärenden":::
-
 ## <a name="next-step"></a>Nästa steg
 
-När du har fastställt vilken händelse som kräver högsta prioritet markerar du den och påbörjar [din undersökning](investigate-incidents.md).
+När du har fastställt vilken händelse som kräver högsta prioritet markerar du den och påbörjar [analysen.](investigate-incidents.md)
 
 ## <a name="see-also"></a>Se även
 - [Översikt över incidenter](incidents-overview.md)
-- [Undersöka incidenter](investigate-incidents.md)
+- [Analysera incidenter](investigate-incidents.md)
 - [Hantera incidenter](manage-incidents.md)

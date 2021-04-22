@@ -1,7 +1,7 @@
 ---
 title: Hantera incidenter i Microsoft 365 Defender
 description: Lär dig hur du tilldelar, uppdaterar status,
-keywords: incident, incidenter, aviseringar, korrelerade aviseringar, tilldela, uppdatera, status, hantera, klassificering, microsoft, 365, m365
+keywords: incident, incidenter, analysera, svar, aviseringar, korrelerade aviseringar, tilldela, uppdatera, status, hantera, klassificering, microsoft, 365, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: da5a2190a53dfe7f8dd0cc3cf7b410af92ca4ec5
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5f66189979f401430353f4c15978a85276b48840
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861737"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939760"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Hantera incidenter i Microsoft 365 Defender
 
@@ -61,7 +61,7 @@ Du kan visa det här fönstret från **länken Hantera** incident på:
 - Egenskapsfönster för en incident i incidentkön.
 - **Sammanfattningssida** för en incident.
 
-I de fall du undersöker när du undersöker om du vill flytta  aviseringar från en händelse till en annan kan du även göra det från fliken Aviseringar, vilket innebär att en större eller mindre händelse som inkluderar alla relevanta aviseringar skapas.
+I fall där du genom att analysera vill flytta aviseringar från en händelse  till en annan kan du även göra det från fliken Aviseringar, och på så sätt skapa en större eller mindre incident som inkluderar alla relevanta aviseringar.
 
 ## <a name="edit-the-incident-name"></a>Redigera incidentens namn
 
@@ -102,4 +102,4 @@ Du kan lägga till flera kommentarer till en händelse med **fältet** Kommentar
 
 - [Översikt över incidenter](incidents-overview.md)
 - [Prioritera incidenter](incident-queue.md)
-- [Undersöka incidenter](investigate-incidents.md)
+- [Analysera incidenter](investigate-incidents.md)

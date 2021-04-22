@@ -1,7 +1,7 @@
 ---
 title: 'Microsoft 365 Defender API: er som stöds'
 description: 'Microsoft 365 Defender API: er som stöds'
-keywords: MTP, API:er, api
+keywords: Microsoft 365 Defender, API:er, api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b2239b960106d756cbd29504af05af77a553067d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f2c66dca326589807f5712c5548c177a0d08ade0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068976"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935731"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>Microsoft 365 Defender API: er som stöds 
 
@@ -59,6 +59,6 @@ Alla API:er längs sökvägen använder till exempel `/api` [OData-protokollet.]
 ## <a name="related-articles"></a>Relaterade artiklar
 
 - [Översikt över Microsoft 365 Defender-API:er](api-overview.md)
-- [Åtkomst till API:er för Microsoft Threat Protection](api-access.md)
+- [Åtkomst till Microsoft 365 Defender-API:er](api-access.md)
 - [Läs mer om API-begränsningar och licensiering](api-terms.md)
 - [Förstå felkoder](api-error-codes.md)

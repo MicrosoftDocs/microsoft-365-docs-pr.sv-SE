@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Läs om hur du får en kostnadsfri utvärderingsversion eller köper en prenumeration för Microsoft 365 för företag.
 ms.date: 08/07/2020
-ms.openlocfilehash: 9daa7022007aa3c71dc7291f592d3b166a2c45a5
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 505ce060b9b40d72a54adbfffbcb2b3cf47a66e6
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576907"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939190"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Prova eller köp en Microsoft 365 för företag-prenumeration
 
@@ -32,6 +32,16 @@ Microsoft 365 för företag är en prenumerationstjänst där du kan köra organ
 
 > [!NOTE]
 > Du måste använda ett kreditkort när du registrerar dig för en kostnadsfri utvärderingsversion. När den kostnadsfria utvärderingsperioden är slut konverteras utvärderingsprenumerationen automatiskt till en betalprenumeration. Ditt kreditkort debiteras inte förrän utvärderingsperioden är slut.
+
+
+::: moniker region="o365-21vianet"
+
+> [!IMPORTANT]
+> **Betalningsalternativ för Office 365 som drivs av 21Vianet i Kina** Internationella kreditkort accepteras inte. Du kan betala för prenumerationen genom att:
+> - Faktura
+> - Onlinebetalning med Alipay eller China UnionPay betalningsbevis tillhandahålls i form av Fapiaos. Du kan skicka din Fapiao-begäran till [vårt Fapiao-system](https://go.microsoft.com/fwlink/p/?LinkId=395314) ungefär tre (3) dagar efter att du har betalat. Mer information finns i [Använda för en Fapiao för Office 365 som drivs av 21Vianet.](../admin/services-in-china/apply-for-a-fapiao.md)
+
+::: moniker-end
 
 ## <a name="before-you-begin"></a>Innan du börjar
 

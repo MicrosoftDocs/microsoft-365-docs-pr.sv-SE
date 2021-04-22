@@ -1,7 +1,7 @@
 ---
-title: Undersöka incidenter i Microsoft 365 Defender
+title: Analysera incidenter i Microsoft 365 Defender
 description: Analysera incidenter relaterade till enheter, användare och postlådor.
-keywords: incidenter, incidenter, datorer, enheter, användare, identiteter, e-post, e-post, postlåda, undersökning, diagram, bevis
+keywords: incidenter, incidenter, analysera, svar, datorer, enheter, användare, identiteter, e-post, e-post, postlåda, undersökning, diagram, bevis
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,17 +22,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 99acc25c3949b758dab990a9c2e9104b9158accd
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 22d3bba03745cee330f89b67061e6c6b13e78aed
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861908"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939748"
 ---
-# <a name="investigate-incidents-in-microsoft-365-defender"></a>Undersöka incidenter i Microsoft 365 Defender
+# <a name="analyze-incidents-in-microsoft-365-defender"></a>Analysera incidenter i Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 **Gäller för:**
 
@@ -40,9 +39,9 @@ ms.locfileid: "51861908"
 
 I Microsoft 365 Defender sammanställs alla relaterade aviseringar, tillgångar, undersökningar och bevis från olika enheter, användare och postlådor för att ge dig en fullständig översikt över hela attacken.
 
-Inom en incident undersöker du aviseringarna som påverkar nätverket, förstår vad de betyder och sorterar bevisen så att du kan skapa en plan för effektiv åtgärd.
+Inom en incident analyserar du aviseringarna som påverkar nätverket, förstår vad de betyder och sorterar bevisen så att du kan skapa en gällande åtgärdsplan.
 
-## <a name="initial-investigation"></a>Inledande undersökning
+## <a name="initial-analysis"></a>Första analysen
 
 Innan du börjar med detaljerna tar du en titt på egenskaperna och sammanfattningen av händelsen.
 
@@ -87,9 +86,9 @@ Här är ett exempel.
 
 :::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="Exempel på en aviseringssida för ett incident":::
 
-Som standard sorteras aviseringarna kronologiskt så att du kan se hur händelsen spelats ut med tiden. Om du markerar varje avisering kommer du till aviseringens huvudsida, där du kan undersöka den aviseringen på djupet. 
+Som standard sorteras aviseringarna kronologiskt så att du kan se hur händelsen spelats ut med tiden. Om du markerar varje avisering kommer du till huvudsidan för den aviseringen, där du kan göra en detaljerad analys av den aviseringen. 
 
-Lär dig hur du använder aviseringskön och aviseringssidorna i [Undersöka aviseringar](investigate-alerts.md)
+Lär dig hur du använder aviseringskön och aviseringssidorna i [analysera aviseringar](investigate-alerts.md)
 
 ## <a name="devices"></a>Enheter
 

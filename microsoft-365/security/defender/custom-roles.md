@@ -1,7 +1,7 @@
 ---
 title: Anpassade roller för rollbaserad åtkomstkontroll
 description: Lär dig hur du hanterar anpassade roller i Säkerhetscenter för Microsoft 365
-keywords: åtkomst, behörigheter, MTP, Microsoft Threat Protection, M365, säkerhet, MCAS, MDATP, Cloud App Security, Microsoft Defender Advanced Threat Protection, omfattning, omfattning, RBAC, rollbaserad åtkomst, anpassad rollerbaserad åtkomst, rollbaserad autentisering, RBAC i MDO, roller, rollgrupper, behörighetsarv, mer begränsade behörigheter
+keywords: åtkomst, behörigheter, Microsoft 365 Defender, M365, säkerhet, MCAS, Cloud App Security, Microsoft Defender för Slutpunkt, omfattning, omfattning, RBAC, rollbaserad åtkomst, anpassad rollbaserad åtkomst, rollbaserad autentisering, RBAC i MDO, roller, rollgrupper, behörighetsarv, mer specifika behörigheter
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6582e4e940dc9910e7d341c92b525379b924f35b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9dfa9f113c0a7d57360c2da6105cbfa07fcf6a99
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199963"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935695"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>Anpassade roller i rollbaserad åtkomstkontroll för Microsoft 365 Defender
 
@@ -83,12 +83,12 @@ I följande tabell beskrivs de roller och behörigheter som krävs för att få 
  
 | **En av följande roller krävs för Microsoft 365 Defender**  | **En av följande roller krävs för Defender för Slutpunkt**  | **En av följande roller krävs för Defender för Office 365** | **En av följande roller krävs för Cloud App Security** | 
 |---------|---------|---------|---------|
-| Visa undersökningsdata: <ul><li>Aviseringssida</li> <li>Kön Aviseringar</li> <li>Incidenter</li>  <li>Incidentkö</li> <li>Åtgärdscenter</li></ul>| Visa datasäkerhetsåtgärder | <ul><li>Endast visa Hantera aviseringar </li> <li>Organisationskonfiguration</li><li>Granskningsloggar</li> <li>Visningsbaserade granskningsloggar</li> <li>Säkerhetsläsare</li> <li>Säkerhetsadministratör</li><li>Endast visa-mottagare</li></ul>  | <ul><li>Global administratör</li> <li>Säkerhetsadministratör</li> <li>Efterlevnadsadministratör</li> <li>Säkerhetsoperatör</li> <li>Säkerhetsläsare</li> <li>Global läsare</li></ul> |
+| Visa undersökningsdata: <ul><li>Aviseringssida</li> <li>Varningskö</li> <li>Incidenter</li>  <li>Incidentkö</li> <li>Åtgärdscenter</li></ul>| Visa datasäkerhetsåtgärder | <ul><li>Endast visa Hantera aviseringar </li> <li>Organisationskonfiguration</li><li>Granskningsloggar</li> <li>Visningsbaserade granskningsloggar</li> <li>Säkerhetsläsare</li> <li>Säkerhetsadministratör</li><li>Endast visa-mottagare</li></ul>  | <ul><li>Global administratör</li> <li>Säkerhetsadministratör</li> <li>Efterlevnadsadministratör</li> <li>Säkerhetsoperatör</li> <li>Säkerhetsläsare</li> <li>Global läsare</li></ul> |
 | Visa data om du vill ta del av dina data | Visa datasäkerhetsåtgärder | <ul><li>Säkerhetsläsare</li> <li>Säkerhetsadministratör</li> <li>Endast visa-mottagare</li> | <ul><li>Global administratör</li> <li>Säkerhetsadministratör</li> <li>Efterlevnadsadministratör</li> <li>Säkerhetsoperatör</li> <li>Säkerhetsläsare</li> <li>Global läsare</li></ul> |
-| Hantera aviseringar och incidenter | Undersökning av aviseringar | <ul><li>Hantera aviseringar</li> <li>Säkerhetsadministratör</li> | <ul><li>Global administratör</li> <li>Säkerhetsadministratör</li> <li>Efterlevnadsadministratör</li> <li>Säkerhetsoperatör</li> <li>Säkerhetsläsare</li></ul> |
+| Hantera aviseringar och incidenter | Undersökning av aviseringar | <ul><li>Hantera varningar</li> <li>Säkerhetsadministratör</li> | <ul><li>Global administratör</li> <li>Säkerhetsadministratör</li> <li>Efterlevnadsadministratör</li> <li>Säkerhetsoperatör</li> <li>Säkerhetsläsare</li></ul> |
 | Åtgärdscenteråtgärd | Aktiva åtgärdsåtgärder – säkerhetsåtgärder | Sök och rensa | |
-| Ställa in anpassade identifieringar | Hantera säkerhetsinställningar |<ul><li>Hantera aviseringar</li> <li>Säkerhetsadministratör</li></ul> | <ul><li>Global administratör</li> <li>Säkerhetsadministratör</li> <li>Efterlevnadsadministratör</li> <li>Säkerhetsoperatör</li> <li>Säkerhetsläsare</li> <li>Global läsare</li></ul> |
-| Analys av hot | Information om aviseringar och incidenter: <ul><li>Visa datasäkerhetsåtgärder</li></ul>Minskningar av TVM:<ul><li>Visa data – hantering av hot och sårbarhet</li></ul> | Information om aviseringar och incidenter:<ul> <li>Endast visa Hantera aviseringar</li> <li>Hantera aviseringar</li> <li>Organisationskonfiguration</li><li>Granskningsloggar</li> <li>Visningsbaserade granskningsloggar</li><li>Säkerhetsläsare</li> <li>Säkerhetsadministratör</li><li>Endast visa-mottagare</li> </ul> Förhindrade e-postförsök: <ul><li>Säkerhetsläsare</li> <li>Säkerhetsadministratör</li><li>Endast visa-mottagare</li> | Inte tillgängligt för MCAS- eller MDI-användare |
+| Ställa in anpassade identifieringar | Hantera säkerhetsinställningar |<ul><li>Hantera varningar</li> <li>Säkerhetsadministratör</li></ul> | <ul><li>Global administratör</li> <li>Säkerhetsadministratör</li> <li>Efterlevnadsadministratör</li> <li>Säkerhetsoperatör</li> <li>Säkerhetsläsare</li> <li>Global läsare</li></ul> |
+| Analys av hot | Information om aviseringar och incidenter: <ul><li>Visa datasäkerhetsåtgärder</li></ul>Minskningar av TVM:<ul><li>Visa data – hantering av hot och sårbarhet</li></ul> | Information om aviseringar och incidenter:<ul> <li>Endast visa Hantera aviseringar</li> <li>Hantera varningar</li> <li>Organisationskonfiguration</li><li>Granskningsloggar</li> <li>Visningsbaserade granskningsloggar</li><li>Säkerhetsläsare</li> <li>Säkerhetsadministratör</li><li>Endast visa-mottagare</li> </ul> Förhindrade e-postförsök: <ul><li>Säkerhetsläsare</li> <li>Säkerhetsadministratör</li><li>Endast visa-mottagare</li> | Inte tillgängligt för MCAS- eller MDI-användare |
 
 Om du till exempel vill visa letar efter data från Microsoft Defender för Endpoint krävs behörigheten Visa datasäkerhetsåtgärder.  
 

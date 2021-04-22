@@ -1,7 +1,7 @@
 ---
-title: Undersöka användare i Microsoft 365 Säkerhetscenter
-description: undersöka användare i Säkerhetscenter för Microsoft 365
-keywords: säkerhet, skadlig programvara, Microsoft 365, M365, säkerhetscenter, bildskärm, rapport, identiteter, data, enheter, appar
+title: Analysera användare i Microsoft 365 Säkerhetscenter
+description: Analysera användare i Säkerhetscenter för Microsoft 365
+keywords: säkerhet, skadlig programvara, Microsoft 365, M365, säkerhetscenter, bildskärm, rapport, identiteter, data, enheter, appar, incident, analysera, svar
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -19,14 +19,14 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 68fc924ee14932ebdf92ef76306ba00e352b6030
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 1fb5a4eee41384ef1afc9b46e5bf538344718fe9
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861279"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939736"
 ---
-# <a name="investigate-users-in-microsoft-365-security-center"></a>Undersöka användare i Microsoft 365 Säkerhetscenter
+# <a name="analyze-users-in-microsoft-365-security-center"></a>Analysera användare i Microsoft 365 Säkerhetscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "51861279"
 
 - Microsoft 365 Defender
 
-En del av incidentundersökningen kan omfatta användarkonton. Börja med fliken **Användare** för ett incident från Incidenter **& aviseringar >** *incident* **> Användare.** 
+En del av incidentanalysen kan omfatta användarkonton. Börja med fliken **Användare** för ett incident från Incidenter **& aviseringar >** *incident* **> Användare.** 
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Exempel på en sida för användare för ett incident":::
 

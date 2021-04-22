@@ -20,19 +20,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: Lär dig hur du uppgraderar till ett annat abonnemang.
-ms.openlocfilehash: 79ca18df28505c457e085dbd73c2fbd04eff53ca
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: c8d71e6ab79bfea35334f2c034dbc13f60397227
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580984"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939178"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Uppgradera till ett annat abonnemang
 
 När ditt företag förändras eller du behöver fler funktioner kan du uppgradera planer. Det enklaste sättet att göra det på är **att använda fliken** Uppgradera i administrationscentret. Men det finns **inte stöd** för att använda fliken Uppgradera i alla situationer. I vissa fall kan du kanske ändra abonnemang manuellt.
-
-> [!NOTE]
-> Den här artikeln gäller det nya administrationscentret. Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan. Läs artikeln om det gamla administrationscentret i Byta [till ett annat Microsoft 365 för företag-abonnemang.](switch-to-a-different-plan.md)
 
 ## <a name="use-the-upgrade-tab"></a>Använd fliken Uppgradera
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4488a552475121adc4a439106bc0bf0d97cb509a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7fb0de4f8dc67331e7acca59e70d061fe7c19493
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51070081"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935743"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>API för listincidenter i Microsoft 365 Defender
 
@@ -80,7 +80,7 @@ GET /api/incidents
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Type (Typ) | Beskrivning
+Namn | Skriv | Beskrivning
 -|-|-
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt**
 
@@ -142,7 +142,7 @@ enheter | Alla enheter där aviseringar om incidenten har skickats. | \[\] (mer 
 
 Fältnamn | Beskrivning | Exempelvärde
 -|-|-
-DeviceId | Enhets-ID:t som angetts i Microsoft Defender ATP. | 24c222b0b60fe148eeece49ac83910cc6a7ef491
+DeviceId | Enhets-ID:t som angetts i Microsoft Defender för Endpoint. | 24c222b0b60fe148eeece49ac83910cc6a7ef491
 aadDeviceId |  Det enhets-ID som angetts [i Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis). Endast tillgängligt för domän anslutna enheter. | null
 deviceDnsName | Det fullständigt kvalificerade domännamnet för enheten. | user5cx.middleeast.corp.contoso.com
 osPlatform | Den OS-plattform som enheten körs på.| WindowsServer2016
@@ -150,7 +150,7 @@ osBuild | Versionsversionen för operativsystemet som enheten kör. | 14393
 rbacGroupName | Den [rollbaserade åtkomstkontrollgruppen](/azure/role-based-access-control/overview) (RBAC) som är kopplad till enheten. | WDATP-Ring0
 firstSeen | Tid när enheten sågs första gången. | 2020-02-06T14:16:01.9330135Z
 healthStatus | Status för enheten. | Aktiv
-riskScore | Riskresultatet för enheten. | Högsta
+riskScore | Riskresultatet för enheten. | Hög
 enheter | Alla enheter som har identifierats vara en del av eller relaterade till en viss avisering. | \[\] (mer information om entitetsfälten finns nedan)
 
 ### <a name="entity-format"></a>Enhetsformat

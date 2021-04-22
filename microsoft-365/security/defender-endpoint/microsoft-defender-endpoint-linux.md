@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender för Endpoint för Linux
 ms.reviewer: ''
-description: Här beskrivs hur du installerar och använder Microsoft Defender för Endpoint för Linux.
-keywords: microsoft, defender, atp, linux, installation, distribuera, avinstallation, enkel, ansible, linux, redhat, ubuntu, ubuntu, sles, suse, centos
+description: Här beskrivs hur du installerar och använder Microsoft Defender för Endpoint på Linux.
+keywords: microsoft, defender, Microsoft Defender för Endpoint, linux, installation, distribuera, avinstallation, installationse, ansible, linux, redhat, ubuntu, ubuntu, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f67dd28902e8b45a5401b60c027faa89d7467cd8
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 34274e260da2e8acc8088fcff6d324b6b31fc2ef
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861401"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935947"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender för Endpoint för Linux
 
@@ -39,7 +39,7 @@ ms.locfileid: "51861401"
 I det här avsnittet beskrivs hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för Endpoint på Linux.
 
 > [!CAUTION]
-> Att köra andra produkter med slutpunktsskydd från tredje part tillsammans med Microsoft Defender för Endpoint på Linux kan sannolikt leda till prestandaproblem och oförutsägbara sidoeffekter. Om skydd mot slutpunkter som inte är Microsoft är ett absolut krav i din miljö kan du fortfarande tryggt dra nytta av Defender för Endpoint för Linux EDR-funktioner när antivirusfunktionen har konfigurerats så att den körs i [passivt läge.](linux-preferences.md#enable--disable-passive-mode)
+> Att köra andra produkter med slutpunktsskydd från tredje part tillsammans med Microsoft Defender för Endpoint på Linux kan sannolikt leda till prestandaproblem och oförutsägbara sidoeffekter. Om skydd mot slutpunkter som inte är Microsoft är ett absolut krav i din miljö kan du ändå tryggt dra nytta av Defender för Endpoint i Linux EDR-funktionen när du har konfigurerat antivirusfunktionerna så att de körs i [passivt läge.](linux-preferences.md#enable--disable-passive-mode)
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Så här installerar du Microsoft Defender för Slutpunkt i Linux
 
@@ -80,10 +80,10 @@ Om du får problem med installationen kan du gå till [Felsöka installationspro
 - Minsta kernel-version 3.10.0-327
 - `fanotify`Kernel-alternativet måste vara aktiverat
   > [!CAUTION]
-  > Det går inte att köra Defender för Slutpunkt för Linux sida vid sida med `fanotify` andra -baserade säkerhetslösningar. Det kan leda till oväntade resultat, till exempel att operativsystemet hänger sig.
+  > Det går inte att köra Defender för slutpunkt på Linux sida vid sida med `fanotify` andra -baserade säkerhetslösningar. Det kan leda till oväntade resultat, till exempel att operativsystemet hänger sig.
 
 - Diskutrymme: 1 GB
-- /opt/microsoft/mdatp/sbin/wdavdaemon kräver körbar behörighet. Mer information finns i "Se till att daemon har körbar behörighet" i Felsöka installationsproblem för [Microsoft Defender för Endpoint för Linux.](/microsoft-365/security/defender-endpoint/linux-support-install)
+- /opt/microsoft/mdatp/sbin/wdavdaemon kräver körbar behörighet. Mer information finns i "Se till att daemon har körbar behörighet" i Felsöka installationsproblem för [Microsoft Defender för slutpunkt i Linux.](/microsoft-365/security/defender-endpoint/linux-support-install)
 - Minne: 1 GB
     > [!NOTE]
     > Kontrollera att du har ledigt diskutrymme i /varians.

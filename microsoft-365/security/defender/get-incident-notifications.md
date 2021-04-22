@@ -1,7 +1,7 @@
 ---
-title: Få incidentmeddelanden i Microsoft 365 Defender
+title: Få incidentmeddelanden via e-post i Microsoft 365 Defender
 description: Lär dig hur du skapar regler för att få e-postaviseringar för incidenter i Microsoft 365 Defender
-keywords: incident, e-post, e-postmeddelanden, konfigurera, användare, postlåda, e-post, incidenter
+keywords: incident, e-post, e-postmeddelanden, konfigurera, användare, postlåda, e-post, incidenter, analysera, svara
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 72a1f8fe71efcfa7f4f73671611576a454b508e6
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 7ba21e08f72760654993335764df00e78abc87b2
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861323"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939724"
 ---
 # <a name="get-incident-notifications-by-email"></a>Få incidentaviseringar via e-post
 
@@ -43,7 +43,7 @@ Du kan konfigurera Microsoft 365 Defender så att din personal får ett e-postme
 - Enhetsgrupp.
 - Endast vid den första uppdateringen per incident.
 
-E-postmeddelandet innehåller viktig information om incidenten, bland annat incidentens namn, allvarlighetsgrad och kategorier. Du kan också gå direkt till händelsen och påbörja din undersökning direkt. Mer information finns i [Undersöka incidenter.](investigate-incidents.md)
+E-postmeddelandet innehåller viktig information om incidenten, bland annat incidentens namn, allvarlighetsgrad och kategorier. Du kan också gå direkt till incidenten och börja analysera direkt. Mer information finns i [Analysera incidenter.](investigate-incidents.md)
 
 Du kan lägga till eller ta bort mottagare i e-postaviseringarna. Nya mottagare får ett meddelande om incidenter när de har lagts till. 
 
@@ -77,4 +77,4 @@ Om du vill redigera en befintlig regel väljer du den i listan med regler. I fö
 ## <a name="see-also"></a>Se även
 - [Översikt över incidenter](incidents-overview.md)
 - [Prioritera incidenter](incident-queue.md)
-- [Undersöka incidenter](investigate-incidents.md)
+- [Analysera incidenter](investigate-incidents.md)

@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: e6f3d6da2424b2b3b6b7c1f2c9973e4046d6e27f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 7aeda679d5ce350ef64a2758359390adc4a280f0
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689173"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939248"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Aktivera regler för minskning av attackytan
 
@@ -38,6 +38,15 @@ ms.locfileid: "51689173"
 - Windows 10 Enterprise, [version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) eller senare
 - Windows Server, [version 1803 (Halvårskanal)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) eller senare
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+
+**Krav** Du kan ange minskningsregler för attackytan för enheter som kör någon av följande versioner av Windows:
+
+- Windows 10 Pro, version 1709 eller senare
+- Windows 10 Enterprise, version 1709 eller senare
+- Windows Server, version 1803 (Halvårskanal) eller senare
+- Windows Server 2019
+
+Även om minskningsregler för attackytor inte kräver en Windows E5-licens, får du avancerade hanteringsfunktioner om du har Windows E5. Dessa funktioner är endast tillgängliga i Windows E5: övervakning, analys och arbetsflöden som är tillgängliga i Defender för Slutpunkt, samt rapporterings- och konfigurationsfunktioner i Säkerhetscenter för Microsoft 365. Dessa avancerade funktioner är inte tillgängliga med en Windows Professional- eller Windows E3-licens. Men om du har de licenserna kan du använda Loggboken och Microsoft Defender Antivirus-loggarna för att granska dina minskningsregelhändelser för attackytan.
 
 Varje ASR-regel innehåller en av fyra inställningar:
 
@@ -108,7 +117,7 @@ Värdena som du aktiverar (blockera), inaktiverar, varnar eller aktiverar i gran
 - 0: Inaktivera (Inaktivera ASR-regeln)
 - 1: Blockera (aktivera ASR-regeln)
 - 2: Granska (Utvärdera hur ASR-regeln skulle påverka organisationen om den skulle aktiveras)
-- 6: Varna (Aktivera ASR-regeln men tillåta slutanvändaren att kringgå blocket)
+- 6: Varna (aktivera ASR-regeln men tillåt slutanvändaren att kringgå blocket). Varningsläge är nu tillgängligt för de flesta ASR-regler.
 
 Använd [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions-konfigurationstjänsten](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) (CSP) för att lägga till undantag.
 
@@ -159,8 +168,8 @@ Exempel:
 
 5. Om du vill utesluta filer och  mappar från ASR-regler markerar du inställningen Exkludera filer och sökvägar från reglerna för att minska attackytan och ställer in alternativet **Aktiverad.** Välj **Visa** och ange varje fil eller mapp i **kolumnen Värdenamn.** Ange **0** i **värdekolumnen** för varje objekt.
 
-> [!WARNING]
-> Använd inte citattecken eftersom de inte stöds för antingen **värdenamnskolumnen** eller **värdekolumnen.**
+   > [!WARNING]
+   > Använd inte citattecken eftersom de inte stöds för antingen **värdenamnskolumnen** eller **värdekolumnen.**
 
 ## <a name="powershell"></a>PowerShell
 

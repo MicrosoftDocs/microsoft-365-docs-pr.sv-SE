@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Få en Microsoft 365-grupprapport som visar grupperna och deras aktiviteter.
-ms.openlocfilehash: 9ab034531099b5572c42eb3a48ec28d99487ac99
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d123e3beb55ba6e636084fabe995f4dd0ff56707
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579560"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939144"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365-rapporter i administrationscentret – Microsoft 365-grupper
 
@@ -60,4 +60,5 @@ Du kan få en uppfattning om gruppaktivitet genom att titta på **diagrammen** *
 |10,  <br/> |Välj eller tryck **på knappen Fler** åtgärder Mobile ![ OWA Fler åtgärder bredvid en ](../../media/80044eef-2368-4c7e-8d31-7155b029e0cf.png) kolumnrubrik för att lägga till eller ta bort kolumner i rapporten.  <br/> ![Grupprapport – välj kolumner](../../media/d7fb95d6-2a2e-4144-b80d-581223e48043.png)|
 |11,  <br/> |Du kan också exportera rapportdata till en Excel-CSV-fil genom att välja **länken** Exportera. Då exporteras data för alla användare och du kan göra enkel sortering och filtrering för vidare analys. Om du har mindre än 2 000 användare kan du sortera och filtrera i tabellen i själva rapporten. Om du har fler än 2 000 användare måste du exportera data för att kunna filtrera och sortera.  <br/> |
 |||
-   
+
+

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Säkerhetscenter översikt
+title: Översikt över Microsoft 365 säkerhetscenter, kombinerar MDO, MDE, MDI och MCAS
 description: Fördelar i Microsoft 365 säkerhetscenter, att kombinera Microsoft Defender för Office 365 (MDO) och Microsoft Defender för slutpunkt (MDE) med Microsoft Defender för identitet (MDI) och Microsoft Cloud App Security (MCAS). I den här artikeln beskrivs hur säkerhetscentret för Microsoft 365 avancerar för administratörer.
 keywords: säkerhet, skadlig programvara, Microsoft 365, M365, säkerhetscenter, bildskärm, rapport, identiteter, data, enheter, appar
 ms.prod: m365-security
@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.date: 04/07/2021
+ms.date: 04/21/2021
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 2e1553b231692d184146897ddc05e11930ed1bf0
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: f3920942925efbe334df84370c61fbe6a98ad49f
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903980"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939270"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>Översikt över det enhetliga säkerhetscentret för Microsoft 365
 
@@ -68,6 +68,9 @@ Säkerhetscentret i Microsoft 365 framhäver *enhet, tydlighet* och gemensamma m
 - Vanlig terminologi
 - Vanliga enheter
 - Funktionsparitet med andra arbetsbelastningar
+
+> [!NOTE]
+> Det enhetliga Microsoft 365-säkerhetscentret blir tillgängligt utan att kunderna behöver vidta migreringssteg eller köpa en ny licens. Den här nya portalen blir till exempel tillgänglig för administratörer med en E3-prenumeration, precis som för administratörer med Microsoft Defender för Office 365 abonnemang 1 och abonnemang 2. Men Exchange Online Protection- eller MDO Plan 1-kunder ser bara de säkerhetsfunktioner som deras prenumerationslicens stöder. Syftet med det nya mitten är att centralisera säkerheten.
 
 ## <a name="unified-investigations"></a>Enhetliga undersökningar
 

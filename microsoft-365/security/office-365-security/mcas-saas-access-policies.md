@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 61509c88ea2289509abd5ec7b6c0dcd54395d5f0
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 414d6ae0586078551c737e45763ea665d5eec4e6
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599977"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939560"
 ---
 # <a name="recommended-microsoft-cloud-app-security-policies-for-saas-apps"></a>Rekommenderade säkerhetsprinciper för Microsoft Cloud App för SaaS-appar
 Microsoft Cloud App Security bygger på villkorliga åtkomstprinciper i Azure AD för att möjliggöra övervakning i realtid och kontroll av detaljerade åtgärder med SaaS-appar, till exempel blockera nedladdningar, uppladdningar, kopiera och klistra in och skriva ut. Den här funktionen ger säkerhet till sessioner som medför risker, till exempel när företagsresurser används från ohanterade enheter eller av gästanvändare.

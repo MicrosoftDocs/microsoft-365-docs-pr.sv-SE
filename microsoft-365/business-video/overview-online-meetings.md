@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du är värd för onlinemöten för ditt företag.
-ms.openlocfilehash: dffdf847962962b2f2e9daf70dae210abbb7614b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 893a03b064b6f73711b69a61c90cd40023241c48
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580516"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939524"
 ---
 # <a name="host-online-meetings-for-your-business"></a>Hålla onlinemöten för ditt företag
 
@@ -35,9 +35,9 @@ De måste ladda ned den kostnadsfria [versionen eller ansluta sig](https://suppo
 
 Om du ofta samarbetar kring projekt med en kund, kund eller partner bör du överväga att skapa ett [team](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7) för dina klienter så att du enkelt kan bjuda in dem till möten och även föra konversationer, dela filer och spåra projekt i Microsoft Teams.
 
-Ladda ned en infografik för att få en snabb överblick över hur du ansluter till eller är värd för ett onlinemöte med Microsoft Teams.
+Ladda ned en infografik för att få en snabb överblick över hur du ansluter till eller är värd för ett onlinemöte med Microsoft Teams:
 
-Ladda ned en infografik för att få en snabb överblick över hur du ansluter till eller är värd för ett onlinemöte med Microsoft Teams. [PDF](https://go.microsoft.com/fwlink/?linkid=2078712)  |  [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)
+[PDF](https://go.microsoft.com/fwlink/?linkid=2078712)  |  [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)
 
 ## <a name="1-schedule-a-meeting"></a>1. Schemalägga ett möte
 
