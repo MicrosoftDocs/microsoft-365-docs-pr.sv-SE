@@ -1,7 +1,7 @@
 ---
-title: Felsöka problem med Tjänsten Microsoft Defender för Slutpunkt
+title: Felsöka tjänsteproblem med Microsoft Defender för Endpoint
 description: Hitta lösningar och lösningar på kända problem, till exempel serverfel när du försöker komma åt tjänsten.
-keywords: felsöka Microsoft Defender för slutpunkt, felsöka Windows ATP, serverfel, åtkomst nekad, ogiltiga autentiseringsuppgifter, inga data, instrumentpanelsportal, tillåt, loggboken
+keywords: felsöka Microsoft Defender för slutpunkt, serverfel, åtkomst nekad, ogiltiga autentiseringsuppgifter, inga data, instrumentpanelsportal, tillåt, loggboken
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 112f682836da37ddfb51c103282518ff74563727
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 81f1b4154de25f6186679adc5b1f24f78f302415
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186023"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933763"
 ---
 # <a name="troubleshoot-service-issues"></a>Felsöka tjänstproblem
 
@@ -80,7 +80,7 @@ Stöd för användning av kommatecken som avgränsare i tal stöds inte. Regione
 >Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshoot-belowfoldlink)
 
 ## <a name="microsoft-defender-for-endpoint-tenant-was-automatically-created-in-europe"></a>Microsoft Defender för slutpunktsklientorganisationen skapades automatiskt i Europa
-När du använder Azure Säkerhetscenter för att övervaka servrar skapas automatiskt en Microsoft Defender för slutpunktsklientorganisation. Microsoft Defender för slutpunktsdata lagras i Europa som standard.
+När du använder Azure Defender för att övervaka servrar skapas automatiskt en Microsoft Defender för slutpunktsklientorganisation. Microsoft Defender för slutpunktsdata lagras i Europa som standard.
 
 
 

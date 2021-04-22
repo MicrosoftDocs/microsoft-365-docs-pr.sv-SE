@@ -1,6 +1,6 @@
 ---
 title: Api för Offboard-dator
-description: Lär dig hur du använder ett API för att ta bort en enhet från Windows Defender Advanced Threat Protection (WDATP).
+description: Lär dig hur du använder ett API för att ta bort en enhet från Microsoft Defender för Endpoint.
 keywords: apis, graph api, api som stöds, paket för insamling av undersökning
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0b3fa5a5daba1aa09eef0f733c7439848ce66a2c
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 03a1ef11224021703a6f33f82fa2c4f135a317a7
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187347"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934183"
 ---
 # <a name="offboard-machine-api"></a>Api för Offboard-dator
 

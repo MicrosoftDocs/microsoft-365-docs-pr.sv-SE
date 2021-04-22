@@ -1,7 +1,7 @@
 ---
 title: Kör dina Microsoft 365 Defender-attackspel
 description: Kör attack simuleringar för ditt Microsoft 365 Defender-pilotprojekt för att se hur det utvecklas och snabbt åtgärdas.
-keywords: Microsoft Threat Protection pilotattack simulering, kör Microsoft Threat Protection pilot attack simulering, simulera attack i Microsoft Threat Protection, Microsoft Threat Protection pilotprojekt, cyber säkerhet, avancerade beständiga hot, företag säkerhet, enheter, enhet, identitet, användare, data, program, incidenter, automatiserad undersökning och åtgärd, avancerad sökning
+keywords: Microsoft 365 Defender pilotattack simulering, kör Microsoft 365 Defender pilotattack simulering, simulera attack i Microsoft 365 Defender, Microsoft 365 Defender pilotprojekt, cybersäkerhet, avancerade fortlöpande hot, företagssäkerhet, enheter, enhet, identitet, användare, data, program, incidenter, automatisk undersökning och åtgärd, avancerad sökning
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bb6472fdd52cdab0ab649fbb76b1ff6a683d6c80
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 767a7ea4c4c7604d1d4b227f08e4ca32c62737c5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076290"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934483"
 ---
 # <a name="run-your-microsoft-365-defender-attack-simulations"></a>Kör dina Microsoft 365 Defender-attackspel
 

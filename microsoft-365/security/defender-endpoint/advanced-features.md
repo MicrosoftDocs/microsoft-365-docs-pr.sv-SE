@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9c77cb19731e55976058ce2f628baf4026639949
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 34ca51c066eddb65f2df0cf8a5d85732bd84a9c0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903796"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934375"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurera avancerade funktioner i Defender för Slutpunkt
 
@@ -151,7 +151,7 @@ Om du aktiverar Skype för företag-integreringen kan du kommunicera med använd
 
 ## <a name="microsoft-defender-for-identity-integration"></a>Microsoft Defender för identitetsintegrering
 
-Integreringen med Azure Advanced Threat Protection gör att du kan pivotera direkt till en annan Microsoft Identity-säkerhetsprodukt. Med Azure Avancerat skydd utökas en undersökning med ytterligare insikter om ett misstänkt komprometterat konto och relaterade resurser. Genom att aktivera den här funktionen kan du utöka den enhetsbaserade undersökningsfunktionen genom att pivotera över nätverket från en synpunkt.
+Integreringen med Microsoft Defender för identitet gör att du kan pivotera direkt till en annan Microsoft Identity-säkerhetsprodukt. Microsoft Defender för identitet utökar en undersökning med ytterligare insikter om ett misstänkt komprometterat konto och relaterade resurser. Genom att aktivera den här funktionen kan du utöka den enhetsbaserade undersökningsfunktionen genom att pivotera över nätverket från en synpunkt.
 
 > [!NOTE]
 > Du måste ha rätt licens för att aktivera den här funktionen.
@@ -160,7 +160,7 @@ Integreringen med Azure Advanced Threat Protection gör att du kan pivotera dire
 
 Den här funktionen är endast tillgänglig om du har ett aktivt Office 365 E5- eller Threat Intelligence-tillägg. Mer information finns på produktsidan för Office 365 Enterprise, E5.
 
-När du aktiverar den här funktionen kan du införliva data från Avancerat skydd för Office 365 i Microsoft Defender Säkerhetscenter för att genomföra en omfattande säkerhetsundersökning i alla Office 365-postlådor och Windows-enheter.
+När du aktiverar den här funktionen kan du införliva data från Microsoft Defender för Office 365 i Microsoft Defender Säkerhetscenter för att genomföra en omfattande säkerhetsundersökning i alla Office 365-postlådor och Windows-enheter.
 
 > [!NOTE]
 > Du måste ha rätt licens för att aktivera den här funktionen.

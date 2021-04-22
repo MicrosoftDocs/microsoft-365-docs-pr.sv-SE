@@ -1,7 +1,7 @@
 ---
 title: Tabellen DeviceFileCertificateInfo i det avancerade sökschemat
 description: Mer information om filsignering i tabellen DeviceFileCertificateInfo i det avancerade sökschemat
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, digital signature, certificate, file signing, DeviceFileCertificateInfo
+keywords: avancerad sökning, hotsökning, sökning efter cyberhot, Microsoft 365 Defender, microsoft 365, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, digital signatur, certifikat, filsignering, DeviceFileCertificateInfo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: eafe84e2d08ce15fe2c3a7cbfafb0822a2f38666
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 272896c745386f13fc0e36301c5c16f5f24dbb42
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498633"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933679"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 

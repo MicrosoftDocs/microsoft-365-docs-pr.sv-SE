@@ -1,6 +1,6 @@
 ---
-title: Visa och ordna kön för Microsoft Defender ATP-aviseringar
-description: Lär dig hur köer av Microsoft Defender ATP-aviseringar fungerar och hur du sorterar och filtrerar listor med aviseringar.
+title: Visa och ordna kön Microsoft Defender för slutpunktsaviseringar
+description: Lär dig hur köer av Microsoft Defender för slutpunktsaviseringar fungerar och hur du sorterar och filtrerar listor med aviseringar.
 keywords: aviseringar, köer, aviseringar, sortera, ordna, filtrera, hantera aviseringar, nya, pågående, lösta, nyaste, tid i kö, allvarlighetsgrad, tidsperiod, microsoft threat experts varningar
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: e1c85db5afac70ec4f2520eed55dcc4f3773fd03
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 48a3ff8dba5bccd62d7d43b295c136a814056a15
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51075969"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934339"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Visa och ordna kön Microsoft Defender för slutpunktsaviseringar
 
@@ -58,10 +58,10 @@ Du kan använda följande filter för att begränsa listan med aviseringar och f
 
 Aviserings allvarlighetsgrad | Beskrivning
 :---|:---
-Högsta </br>(Röd) | Varningar som ofta ses associerade med avancerade beständiga hot (APT). Dessa varningar indikerar en hög risk på grund av hur allvarlig skada de kan orsaka på enheter. Några exempel är: aktiviteter för autentiseringsstöld, aktiviteter för utpressningstrojaner som inte associeras med någon grupp, ändring av säkerhetssensorer eller skadliga aktiviteter som utser människor.
+Hög </br>(Röd) | Varningar som ofta ses associerade med avancerade beständiga hot (APT). Dessa varningar indikerar en hög risk på grund av hur allvarlig skada de kan orsaka på enheter. Några exempel är: aktiviteter för autentiseringsstöld, aktiviteter för utpressningstrojaner som inte associeras med någon grupp, ändring av säkerhetssensorer eller skadliga aktiviteter som utser människor.
 Medel </br>(Orange) | Varningar från identifiering av slutpunkt och svar efter intrång som kan vara en del av ett avancerat beständigt hot (APT). Detta omfattar observerade beteenden som är typiska för attackfaser, avvikande registerändring, körning av misstänkta filer och så vidare. Även om vissa kan vara en del av intern säkerhetstestning kräver det undersökning eftersom det också kan vara en del av en avancerad attack.
 Låg </br>(Gul) | Varningar om hot som är associerade med vanligt skadlig programvara. Till exempel hacka-verktyg, icke-skadlig hacka verktyg, som att köra utforskningskommandon, rensa loggar, som ofta inte anger ett avancerat hot som riktar sig till organisationen. Det kan också komma från en isolerad säkerhetsverktygstestning av en användare i organisationen.
-Information </br>(Grå) | Varningar som inte kan anses vara skadliga för nätverket, men som kan öka organisationens säkerhetskännedom om potentiella säkerhetsproblem.
+Informativ </br>(Grå) | Varningar som inte kan anses vara skadliga för nätverket, men som kan öka organisationens säkerhetskännedom om potentiella säkerhetsproblem.
 
 #### <a name="understanding-alert-severity"></a>Förstå allvarlighetsgrad för aviseringar
 
@@ -136,7 +136,7 @@ Välj den källa som utlöste aviseringen. Deltagare i förhandsversionen av Mic
 | EDR                               | WindowsDefenderAtp         |
 | Microsoft 365 Defender            | MTP                        |
 | Microsoft Defender för Office 365 | OfficeATP                  |
-| Microsoft Threat Experts          | ThreatExperts              |
+| Microsoft Hotexperter          | ThreatExperts              |
 | SmartScreen                       | WindowsDefender SmartScreen |
 
 ### <a name="os-platform"></a>OS-plattform

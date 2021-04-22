@@ -1,6 +1,6 @@
 ---
 title: Åtgärdsåtgärder i Microsoft Defender för Office 365
-keywords: AIR, autoIR, ATP, automatiserad, undersökning, svar, åtgärd, hot, avancerat, hot, skydd
+keywords: AIR, autoIR, Microsoft Defender för Slutpunkt, automatiserad, undersökning, svar, åtgärd, hot, avancerat, hot, skydd
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fa4e2d6656ec430edc221ab94cac494e1ec0ca98
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 37953ad1125d5dad10eb5c6933b1ed9931d5de60
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207042"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933667"
 ---
 # <a name="remediation-actions-in-microsoft-defender-for-office-365"></a>Åtgärdsåtgärder i Microsoft Defender för Office 365
 
@@ -55,7 +55,7 @@ Microsoft Defender för Office 365 innehåller åtgärdsåtgärder för att hant
 |:---|:---|:---|
 |E-post|Skadlig programvara|Mjuk borttagning av e-post/kluster <p> Om mer än ett litet antal e-postmeddelanden i ett kluster innehåller skadlig programvara anses klustret vara skadligt.|
 |E-post|Skadlig URL<br/>(En skadlig URL identifierades av [Säkra länkar](safe-links.md).)|Mjuk borttagning av e-post/kluster <br/>Blockera URL (tid för klickning av verifiering)<p> E-post som innehåller en skadlig URL anses vara skadlig.|
-|E-post|Phish|Mjuk borttagning av e-post/kluster <p> Om mer än ett litet antal e-postmeddelanden i ett kluster innehåller nätfiskeförsök betraktas hela klustret som ett försök till nätfiske.|
+|E-post|Nätfiske|Mjuk borttagning av e-post/kluster <p> Om mer än ett litet antal e-postmeddelanden i ett kluster innehåller nätfiskeförsök betraktas hela klustret som ett försök till nätfiske.|
 |E-post|Zapped phish <br>(E-postmeddelanden levererades och [sedan zapped](zero-hour-auto-purge.md).)|Mjuk borttagning av e-post/kluster <p>Rapporter finns tillgängliga för att visa zapped meddelanden. [Se om ZAP har flyttat ett meddelande och vanliga frågor och svar](zero-hour-auto-purge.md#how-to-see-if-zap-moved-your-message).|
 |E-post|Missat e-postmeddelande [som rapporterats](enable-the-report-message-add-in.md) av en användare|[Automatiserad undersökning som utlösts av användarens rapport](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)|
 |E-post|Volymnormnormy <br> (Antalet nya e-postmeddelanden överskrider de föregående 7–10 dagarna för matchande villkor.)|Automatisk undersökning leder inte till en viss väntande åtgärd. <p>Volymnormer är inte ett tydligt hot, utan är bara en indikation på större e-postvolymer under de senaste dagarna jämfört med de senaste 7–10 dagarna. <p>Även om en stor mängd e-post kan indikera potentiella problem behövs bekräftelse på antingen skadliga omdömen eller en manuell granskning av e-postmeddelanden/kluster. Se [Hitta misstänkta e-postmeddelanden som har levererats](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered).|

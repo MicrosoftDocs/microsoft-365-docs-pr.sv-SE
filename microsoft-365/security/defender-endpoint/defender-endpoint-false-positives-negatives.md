@@ -1,7 +1,7 @@
 ---
 title: Åtgärda falska positiva/negativa i Microsoft Defender för Endpoint
 description: Lär dig hur du hanterar falska positiva eller falska negativa resultat i Microsoft Defender för Slutpunkt.
-keywords: antivirus, undantag, undantag, defender atp, false positive, false negative, blockerad fil, blockerad url
+keywords: antivirus, undantag, undantag, Microsoft Defender för slutpunkt, falsk positiv, falskt negativt, blockerad fil, blockerad url
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: f2615cf5ec49c9df27472f04c367f30511e9c0cc
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 368de770f772dc75a366b2120c8824fda6a7ba11
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759876"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933595"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Åtgärda falska positiva/negativa i Microsoft Defender för Endpoint
 
@@ -338,11 +338,11 @@ Du kan söka efter uppdateringar om din inskickning genom att logga in på webbp
 
 Microsoft Defender för Slutpunkt har ett brett utbud av alternativ, bland annat möjligheten att finjustera inställningar för olika funktioner. Om du får flera falska positiva resultat bör du granska organisationens inställningar för skydd mot hot. Du kan behöva göra några justeringar för att:
 
-- [Moln levererat skydd](#cloud-delivered-protection)
+- [Molnbaserat skydd](#cloud-delivered-protection)
 - [Åtgärd för potentiellt oönskade program](#remediation-for-potentially-unwanted-applications)
 - [Automatiserad undersökning och åtgärder](#automated-investigation-and-remediation)
 
-### <a name="cloud-delivered-protection"></a>Moln levererat skydd
+### <a name="cloud-delivered-protection"></a>Molnbaserat skydd
 
 Kontrollera din moln levererat skyddsnivå för Microsoft Defender Antivirus. Som standard har moln levererat skydd inställningen **Ej konfigurerad,** vilket motsvarar en normal skyddsnivå för de flesta organisationer. Om ditt moln levererat skydd är inställt på **Hög,** Hög **+** eller Nolldögont kan du uppleva ett högre antal falska positiva resultat. 
 

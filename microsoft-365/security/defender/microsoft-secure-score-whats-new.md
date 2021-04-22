@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 5a868904a43e17952368e097c0b0e963252d5bed
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: b3f86dfbc1ae89eff61c680737061b01998a527b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570369"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933871"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Vad är nytt i Microsoft Secure Score
 
@@ -50,7 +50,7 @@ Microsoft Teams-kunder ser "Begränsa anonyma användare från att ansluta till 
 
 ## <a name="december-2020"></a>December 2020
 
-### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Sex kontorelaterade förbättringsåtgärder för Microsoft Defender för Endpoint (tidigare Microsoft Defender ATP):
+### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Sex kontorelaterade förbättringsåtgärder för Microsoft Defender för Endpoint har lagts till:
 
 - Ange "Minsta lösenordslängd" till 14 eller fler tecken
 - Ange "Framtvinga lösenordshistorik" till 24 eller fler lösenord
@@ -65,7 +65,7 @@ Microsoft Teams-kunder ser "Begränsa anonyma användare från att ansluta till 
 
 Möjligheten att skapa ServiceNow-biljetter via Secure Score genom att gå till **Share > ServiceNow** är inte längre tillgänglig. Tack för din feedback och fortsatt support medan vi fastställer nästa steg.
 
-### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Tre tjänstrelaterade förbättringsåtgärder för Microsoft Defender för Slutpunkt (tidigare Microsoft Defender ATP):
+### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Tre tjänstrelaterade förbättringsåtgärder för Microsoft Defender för Slutpunkt har lagts till:
 
 - Åtgärda okvotad tjänstsökväg för Windows-tjänster
 - Ändra den körbara sökvägen för tjänsten till en gemensam skyddad plats

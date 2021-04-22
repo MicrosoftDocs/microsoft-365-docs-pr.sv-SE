@@ -1,7 +1,7 @@
 ---
-title: Distribution med ett annat MDM-system (Mobile Device Management) för Microsoft Defender för Endpoint för Mac
-description: Installera Microsoft Defender för Slutpunkt för Mac på andra hanteringslösningar.
-keywords: microsoft, defender, atp, mac, installation, distribuera, macos, catalina, mojave, high sierra
+title: Distribution med ett annat MDM-system (Mobile Device Management) för Microsoft Defender för Endpoint på Mac
+description: Installera Microsoft Defender för Slutpunkt på Mac på andra hanteringslösningar.
+keywords: microsoft, defender, Microsoft Defender för slutpunkt, mac, installation, distribuera, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e929c17ada761a334700f6e66d2921483686834b
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ca779fc4cc8c40adb25a0e95a9450f59954dc605
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861569"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933799"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>Distribution med ett annat MDM-system (Mobile Device Management) för Microsoft Defender för Slutpunkt i macOS
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: 1b8454107b6a2737f1236a066c3a24a2b9c776cb
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: a8b7268e89470a85a34015967b69abb1818fe64f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222663"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933847"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>Granska händelser och fel med hjälp av Loggboken
 
@@ -301,13 +301,13 @@ Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices
 </tr>
 <tr>
 <td>42</td>
-<td>Microsoft Defender för Slutpunkt WDATP-komponent kunde inte utföra någon åtgärd. Komponent: %1, Åtgärd: %2, Undantagstyp: %3, Undantagsmeddelande: %4</td>
+<td>Microsoft Defender för slutpunktskomponenten kunde inte utföra någon åtgärd. Komponent: %1, Åtgärd: %2, Undantagstyp: %3, Undantagsmeddelande: %4</td>
 <td>Internt fel. Det gick inte att starta tjänsten.</td>
 <td>Om det här felet kvarstår kontaktar du supporten.</td>
 </tr>
 <tr>
 <td>43</td>
-<td>Microsoft Defender för Slutpunkt WDATP-komponent kunde inte utföra någon åtgärd. Komponent: %1, Åtgärd: %2, Undantagstyp: %3, Undantagsfel: %4, Undantagsmeddelande: %5</td>
+<td>Microsoft Defender för slutpunktskomponenten kunde inte utföra någon åtgärd. Komponent: %1, Åtgärd: %2, Undantagstyp: %3, Undantagsfel: %4, Undantagsmeddelande: %5</td>
 <td>Internt fel. Det gick inte att starta tjänsten.</td>
 <td>Om det här felet kvarstår kontaktar du supporten.</td>
 </tr>
@@ -482,13 +482,13 @@ Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices
 </tr>
 <tr>
    <td>81</td>
-   <td>Det gick inte att skapa Windows Defender Advanced Threat Protection ETW – automatisklogg. Felkod: %1</td>
+   <td>Det gick inte att skapa Microsoft Defender för slutpunkt ETW – automatisklogg. Felkod: %1</td>
    <td>Det gick inte att skapa ETW-sessionen.</td>
    <td>Starta om enheten. Om det här felet kvarstår kontaktar du supporten.</td>
 </tr>
 <tr>
    <td>82</td>
-   <td>Det gick inte att ta bort Windows Defender Advanced Threat Protection ETW – automatisklogg. Felkod: %1</td>
+   <td>Det gick inte att ta bort Microsoft Defender för endpoint ETW autologger. Felkod: %1</td>
    <td>Det gick inte att ta bort ETW-sessionen.</td>
    <td>Kontakta support.</td>
 </tr>
@@ -500,7 +500,7 @@ Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices
 </tr>
 <tr>
    <td>85</td>
-   <td>Det gick inte att utlösa körbart windows Defender Advanced Threat Protection. Felkod: %1</td>
+   <td>Det gick inte att utlösa Microsoft Defender för körbar slutpunkt. Felkod: %1</td>
    <td>Körbar Stjärn senseIR misslyckades.</td>
    <td>Starta om enheten. Om det här felet kvarstår kontaktar du supporten.</td>
 </tr>
@@ -554,19 +554,19 @@ Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices
 </tr>
 <tr>
    <td>94</td>
-   <td>Körbar fil för Avancerat skydd för Windows Defender har startat</td>
+   <td>Körbar Microsoft Defender för slutpunkt har startat</td>
    <td>Den körbara SenseCE-filen har startat.</td>
    <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
 </tr>
 <tr>
    <td>95</td>
-   <td>Körbar fil för Windows Defender Advanced Threat Protection har avslutats</td>
+   <td>Körbar Microsoft Defender för slutpunkt har avslutats</td>
    <td>Den körbara SenseCE-filen har avslutats.</td>
    <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
 </tr>
 <tr>
    <td>96</td>
-   <td>Windows Defender Avancerat skydd Iit har anropats. Resultatkod: %2</td>
+   <td>Microsoft Defender för Slutpunkt Init har anropats. Resultatkod: %2</td>
    <td>Den körbara SenseCE-filen har kallat MCE-initiering.</td>
    <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
 </tr>
@@ -590,19 +590,19 @@ Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices
 </tr>
 <tr>
    <td>100</td>
-   <td>Det gick inte att starta windows Defender Advanced Threat Protection (körbart skydd). Felkod: %1</td>
+   <td>Körbar Microsoft Defender för slutpunkt kunde inte starta. Felkod: %1</td>
    <td>Det gick inte att starta SenseCE-körbara filer.</td>
    <td>Starta om enheten. Om det här felet kvarstår kontaktar du supporten.</td>
 </tr>
 <tr>
    <td>102</td>
-   <td>Körbar nätverksidentifiering och svar i Windows Defender Advanced Threat Protection har startat</td>
+   <td>Körbar microsoft Defender för slutpunktsnätverksidentifiering och svar har startat</td>
    <td>Körbar SenseNdr har startat.</td>
    <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
 </tr>
 <tr>
    <td>103</td>
-   <td>Körbar nätverksidentifiering och svar för Windows Defender Advanced Threat Protection har avslutats</td>
+   <td>Microsoft Defender för slutpunkt nätverksidentifiering och svar körbar fil har avslutats</td>
    <td>Den körbara SenseNdr-filen har avslutats.</td>
    <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
 </tr>
@@ -612,6 +612,6 @@ Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices
 >Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Introducera Windows 10-enheter](configure-endpoints.md)
+- [Registrera Windows 10-enheter](configure-endpoints.md)
 - [Konfigurera enhetsproxy och internetanslutningsinställningar](configure-proxy-internet.md)
-- [Felsöka Microsoft Defender för Slutpunkt](troubleshoot-onboarding.md)
+- [Felsöka Microsoft Defender för Endpoint](troubleshoot-onboarding.md)

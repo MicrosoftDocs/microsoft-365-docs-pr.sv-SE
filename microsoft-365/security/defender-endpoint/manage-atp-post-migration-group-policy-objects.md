@@ -1,7 +1,7 @@
 ---
 title: Hantera Microsoft Defender för slutpunkt med grupprincipobjekt
 description: Lär dig hur du hanterar Microsoft Defender för slutpunkt med grupprincipobjekt
-keywords: efter migrering, hantera, åtgärder, underhåll, användning, PowerShell, windows defender avancerat skydd mot hot, atp, edr
+keywords: efter migrering, hantera, åtgärder, underhåll, användning, PowerShell, Microsoft Defender för Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 6d10bd932d9414f1460076d3fe7ca8dbed8041a6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 1b8f2e7c7435f2161f7261722795b35ca848ec2f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185665"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934243"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>Hantera Microsoft Defender för slutpunkt med grupprincipobjekt
 
@@ -52,7 +52,7 @@ I följande tabell finns olika uppgifter som du kan utföra för att konfigurera
 |**Hantera inställningar för användar- och datorobjekt** <br/><br/>*Anpassa inbyggda grupprincipobjekt eller skapa anpassade grupprincipobjekt och organisationsenheter så att de passar organisationens behov.*     |[Administrera grupprinciper i en hanterad azure Active Directory Domain Services-domän](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy)   |
 |**Konfigurera Microsoft Defender Antivirus** <br/><br/>*Konfigurera antivirusfunktioner & funktioner, inklusive principinställningar, undantag, åtgärder och schemalagda genomsökningar på organisationens enheter (kallas även slutpunkter).*   |[Använda grupprincipinställningar för att konfigurera och hantera Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus) <br/><br/>[Använda grupprinciper för att aktivera moln levererat skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-group-policy-to-enable-cloud-delivered-protection)      |
 |**Hantera organisationens minskningsregler för attackytor** <br/><br/>*Anpassa dina minskningsregler för attackytan genom att utesluta filer & mappar eller genom att lägga till anpassad text i aviseringar som visas på användarnas enheter.* |[Anpassa minskningsregler för attackytor med grupprincipobjekt](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction#use-group-policy-to-exclude-files-and-folders) |
-|**Hantera inställningar för sårbarhetsskydd**<br/><br/>*Du kan anpassa inställningarna för sårbarhetsskydd, importera en konfigurationsfil och sedan använda grupprincipen för att distribuera konfigurationsfilen.*  |[Anpassa inställningarna för sårbarhetsskydd](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection) <br/><br/>[Importera, exportera och distribuera sårbarhetsskyddskonfigurationer](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml)<br/><br/>[Distribuera konfigurationen med grupprinciper](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml#use-group-policy-to-distribute-the-configuration)  |
+|**Hantera inställningar för sårbarhetsskydd**<br/><br/>*Du kan anpassa inställningarna för sårbarhetsskydd, importera en konfigurationsfil och sedan använda grupprincipen för att distribuera konfigurationsfilen.*  |[Anpassa inställningarna för sårbarhetsskydd](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection) <br/><br/>[Konfigurationer för att import, export och distribuering av exploateringsskydd](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml)<br/><br/>[Distribuera konfigurationen med grupprinciper](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml#use-group-policy-to-distribute-the-configuration)  |
 |**Aktivera nätverksskydd för** att förhindra att anställda använder program som skadligt innehåll på Internet <br/><br/>*Vi rekommenderar att [du först](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-network-protection) använder granskningsläge för nätverksskydd i en testmiljö för att se vilka appar som ska blockeras innan de lanseras.* |[Aktivera nätverksskydd med grupprincip](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-network-protection#group-policy)  |
 |**Konfigurera kontrollerad mappåtkomst för** att skydda mot utpressningstrojaner <br/><br/>*[Kontrollerad mappåtkomst](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders) kallas även skydd mot skadlig programvara.*  |[Aktivera reglerad mappåtkomst med grupprincip](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-controlled-folders#group-policy) |
 |**Konfigurera Microsoft Defender SmartScreen** för att skydda mot skadliga webbplatser och filer på Internet.  |[Konfigurera Microsoft Defender SmartScreen-grupprinciper och MDM-inställningar (Mobile Device Management) med grupprinciper](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#group-policy-settings)  |

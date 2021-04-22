@@ -1,7 +1,7 @@
 ---
 title: Hantera Microsoft Defender för Slutpunkt med Hjälp av PowerShell, WMI och MPCmdRun.exe
 description: Lär dig hur du hanterar Microsoft Defender för Slutpunkt med PowerShell, WMI och MPCmdRun.exe
-keywords: efter migrering, hantera, åtgärder, underhåll, utnyttjandet, PowerShell, WMI, MPCmdRun.exe, windows defender avancerat skydd, atp, edr
+keywords: efter migrering, hantera, åtgärder, underhåll, utnyttjandet, PowerShell, WMI, MPCmdRun.exe, Microsoft Defender för Slutpunkt, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 5f0e94360cfaa0c66aedec400e81adc85f4f5450
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 98b192551a351b58709185022cf311174052592b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185879"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934471"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>Hantera Microsoft Defender för slutpunkt med PowerShell, WMI och MPCmdRun.exe
 
@@ -55,7 +55,7 @@ Du kan använda PowerShell för att hantera Microsoft Defender Antivirus, sårba
 |Uppgift  |Resurser för att få mer information  |
 |---------|---------|
 |**Hantera Microsoft Defender Antivirus** <br/><br/>*Visa status för skydd mot skadlig programvara, konfigurera inställningar för antivirussökningar & uppdateringar och göra andra ändringar i antivirusskyddet.*    |[Använda PowerShell-cmdlets för att konfigurera och hantera Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus)  <br/><br/>[Använda PowerShell-cmdlets för att aktivera moln levererat skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-powershell-cmdlets-to-enable-cloud-delivered-protection)       |
-|**Konfigurera sårbarhetsskydd** för att minska hot på organisationens enheter<br/><br/> *Vi rekommenderar att du först använder [sårbarhetsskydd i](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-exploit-protection#powershell) granskningsläge. På så sätt kan du se hur sårbarhetsskydd påverkar appar som din organisation använder.*     | [Anpassa sårbarhetsskydd](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection)<br/><br/>[PowerShell-cmdlets för sårbarhetsskydd](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection#powershell-reference)        |
+|**Konfigurera sårbarhetsskydd** för att minska hot på organisationens enheter<br/><br/> *Vi rekommenderar att du först använder [sårbarhetsskydd i](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-exploit-protection#powershell) granskningsläge. På så sätt kan du se hur sårbarhetsskydd påverkar appar som din organisation använder.*     | [Anpassa exploateringsskydd](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection)<br/><br/>[PowerShell-cmdlets för sårbarhetsskydd](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection#powershell-reference)        |
 |**Konfigurera regler för att minska attackytan** med PowerShell <br/><br/>*Du kan använda PowerShell för att utesluta filer och mappar från minskningsregler för attackytor.* |[Anpassa minskningsregler för attackytan: Använd PowerShell för att utesluta filer & mappar](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction#use-powershell-to-exclude-files-and-folders)<br/><br/>Se även [António Vasconcelos](https://github.com/anvascon/MDATP_PoSh_Scripts/tree/master/ASR%20GUI)grafiska användargränssnittsverktyg för att ställa in regler för att minska attackytan med PowerShell. |
 |**Aktivera nätverksskydd** med PowerShell <br/><br/>*Du kan använda PowerShell för att aktivera nätverksskydd.* |[Aktivera nätverksskydd med PowerShell](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-network-protection#powershell) |
 |**Konfigurera kontrollerad mappåtkomst för** att skydda mot utpressningstrojaner <br/><br/>*[Kontrollerad mappåtkomst](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders) kallas även skydd mot skadlig programvara.* |[Aktivera reglerad mappåtkomst med PowerShell](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-controlled-folders#powershell) |

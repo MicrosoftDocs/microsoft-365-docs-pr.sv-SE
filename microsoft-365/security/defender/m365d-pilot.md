@@ -1,7 +1,7 @@
 ---
 title: Kör ditt pilotprojekt i Microsoft 365 Defender
 description: Kör ditt pilotprojekt i Microsoft 365 Defender i produktionen för att effektivt avgöra vilka fördelar och införande av Microsoft 365 Defender är.
-keywords: Microsoft Threat Protection-pilot, kör pilotprojekt för Microsoft Threat Protection, utvärderar Microsoft Threat Protection i produktionen, Microsoft Threat Protection-pilotprojekt, cybersäkerhet, avancerade fortlöpande hot, företagssäkerhet, enheter, enheter, identitet, användare, data, program, incidenter, automatiserad undersökning och åtgärd, avancerad sökning
+keywords: Microsoft 365 Defender-pilot, pilottesta Microsoft 365 Defender-projektet, utvärdera Microsoft 365 Defender i produktion, Microsoft 365 Defender-pilotprojekt, cybersäkerhet, avancerade beständiga hot, företagssäkerhet, enheter, enheter, identitet, användare, data, program, incidenter, automatisk undersökning och åtgärd, avancerad sökning
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1dd310d962cbce2b339cf09d5be6317c227d3f13
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b1616b39597a90ff8e8f7b4c92f29f75c62fea18
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076289"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934435"
 ---
 # <a name="run-your-pilot-microsoft-365-defender-project"></a>Kör ditt pilotprojekt i Microsoft 365 Defender 
 
@@ -50,9 +50,9 @@ Genom att köra ett pilottest kan du effektivt avgöra fördelarna med att anvä
 Den här guiden innehåller en översikt över Microsoft 365 Defender och stegvisa instruktioner om hur du ställer in ditt pilotprojekt. 
 
 Microsoft 365 Defender är en enhetlig företagsskyddssvit före och efter intrång som inbyggt koordinerar skydd, identifiering, skydd, undersökning och svar mellan slutpunkter, identiteter, e-post och program för att tillhandahålla integrerat skydd mot avancerade attacker. Det gör det genom att kombinera och lösa följande funktioner till en enda säkerhetslösning:
-  - Microsoft Defender för Slutpunkt, det nya namnet för Microsoft Defender Avancerat skydd (slutpunkter)
-  - Microsoft Defender för Office 365, det nya namnet för Office 365 ATP (e-post) 
-  - Microsoft Defender för identitet, det nya namnet för Azure ATP (identitet) 
+  - Microsoft Defender för Slutpunkt (slutpunkter)
+  - Microsoft Defender för Office 365 (e-post) 
+  - Microsoft Defender för identitet (identitet) 
   - Microsoft Cloud App Security (appar)
 
 ![Bild of_Microsoft 365 Defender-lösning för användare, Microsoft Defender för identitet, för slutpunkter Microsoft Defender för Slutpunkt, för molnappar, Microsoft Cloud App Security och för data, Microsoft Defender för Office 365](../../media/mtp/m365pillars.png)

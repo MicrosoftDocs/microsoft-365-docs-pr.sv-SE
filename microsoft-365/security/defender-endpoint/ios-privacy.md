@@ -2,7 +2,7 @@
 title: Information om sekretess – Microsoft Defender för Slutpunkt i iOS
 ms.reviewer: ''
 description: Beskriver sekretessinformation för Microsoft Defender för Slutpunkt i iOS
-keywords: microsoft, defender, atp, ios, princip, översikt
+keywords: microsoft, defender, Microsoft Defender för Slutpunkt, ios, princip, översikt
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f5598df8a9e3493a1c4922f672468dd54e84c31e
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 15c22a6f6b581ff68488db6628f7647d49487652
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688207"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934291"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>Information om sekretess – Microsoft Defender för Slutpunkt i iOS
 
@@ -34,15 +34,15 @@ ms.locfileid: "51688207"
 > Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!NOTE]
-> Defender för Endpoint för iOS använder en VPN för att tillhandahålla webskyddsfunktionen. Det här är inte en vanlig VPN och är en lokal eller självslingande VPN som inte tar trafik utanför enheten. **Microsoft eller din organisation ser inte din webbaktivitet.**
+> Defender för Endpoint på iOS använder en VPN för att tillhandahålla webskyddsfunktionen. Det här är inte en vanlig VPN och är en lokal eller självslingande VPN som inte tar trafik utanför enheten. **Microsoft eller din organisation ser inte din webbaktivitet.**
 
-Defender för Slutpunkt för iOS samlar in information från dina konfigurerade iOS-enheter och lagrar den i samma klientorganisation där du har Defender för Slutpunkt. Informationen samlas in för att hålla Defender för Endpoint för iOS säker, uppdaterad och fungerar som förväntat, och för att stödja tjänsten.
+Defender för Slutpunkt på iOS samlar in information från dina konfigurerade iOS-enheter och lagrar den i samma klientorganisation där du har Defender för Slutpunkt. Informationen samlas in för att hålla Defender för Endpoint på iOS säker, uppdaterad och fungerar som förväntat, och för att stödja tjänsten.
 
 Mer information om datalagring finns i [Microsoft Defender för Slutpunktens datalagring och sekretess.](data-storage-privacy.md)
 
 ## <a name="required-data"></a>Data som krävs 
 
-Obligatoriska data består av data som krävs för att Defender för Endpoint för iOS ska fungera som förväntat. Dessa data är viktiga för att tjänsten ska kunna användas och kan innehålla data relaterade till slutanvändare, organisation, enhet och appar. 
+Obligatoriska data består av data som krävs för att Defender för Endpoint på iOS ska fungera som förväntat. Dessa data är viktiga för att tjänsten ska kunna användas och kan innehålla data relaterade till slutanvändare, organisation, enhet och appar. 
 
 Här är en lista över de typer av data som samlas in: 
 

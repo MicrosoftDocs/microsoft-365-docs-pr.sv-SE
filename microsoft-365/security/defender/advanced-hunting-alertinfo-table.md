@@ -1,7 +1,7 @@
 ---
 title: AlertInfo-tabell i det avancerade sökschemat
 description: Läs mer om händelser för aviseringsgenerering i tabellen AlertInfo i det avancerade sökschemat
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, datatyp, description, AlertInfo, alert, severity, category, MITRE, ATT&CK, Microsoft Defender ATP, MDATP, Office 365 ATP, Microsoft Cloud App Security, MCAS och Azure ATP
+keywords: avancerad sökning, hotsökning, sökning efter cyberhot, Microsoft 365 Defender, microsoft 365, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, AlertInfo, varning, allvarlighetsgrad, kategori, MITRE, ATT&CK, Microsoft Defender för slutpunkt, Microsoft Defender för Office 365, Microsoft Cloud App Security, MCAS och Microsoft Defender för identitet
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1386830a4b3e05009b19a7d0e3a4ea62ce3321f2
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 69c9201dbc3458cd4ad09a72f2ea0d7ea3bb2d2a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499832"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933703"
 ---
 # <a name="alertinfo"></a>AlertInfo
 

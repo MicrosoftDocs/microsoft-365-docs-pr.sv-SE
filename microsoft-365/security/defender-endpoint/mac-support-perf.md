@@ -1,7 +1,7 @@
 ---
 title: Felsöka prestandaproblem för Microsoft Defender för slutpunkt i macOS
 description: Felsöka prestandaproblem i Microsoft Defender för slutpunkt i macOS.
-keywords: microsoft, defender, atp, mac, performance
+keywords: microsoft, defender, Microsoft Defender för slutpunkt, mac, prestanda
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8dfaf1dbf2c3742cc97060c7f9e811c83d0cb023
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 623717e7b1a3149dbccf07d32200820a7f9083cb
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698226"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934255"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Felsöka prestandaproblem för Microsoft Defender för slutpunkt i macOS
 
@@ -32,7 +32,7 @@ ms.locfileid: "51698226"
 
 **Gäller för:**
 
-- [Microsoft Defender för Slutpunkt på macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender för Endpoint för macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -66,7 +66,7 @@ Följande steg kan användas för att felsöka och minimera dessa problem:
 
 2. Öppna Finder och gå **till**  >  **Programverktyg.** Öppna **Aktivitetsrapporter** och analysera vilka program som använder resurserna på ditt system. Vanliga exempel är programuppdateringsprogram och kompilatorer.
 
-1. Du kan använda statistik i realtid som har samlats av Defender för Endpoint för Mac för att hitta de program som utlöser flest genomsökningar.
+1. Om du vill hitta de program som utlöser flest genomsökningar kan du använda statistik i realtid som har samlats av Defender för Slutpunkt på Mac.
 
       > [!NOTE]
       > Den här funktionen är tillgänglig i version 100.90.70 eller senare.

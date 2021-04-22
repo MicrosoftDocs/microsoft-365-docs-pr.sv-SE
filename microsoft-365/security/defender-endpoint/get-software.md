@@ -1,7 +1,7 @@
 ---
-title: Listprogramvara
+title: Lista programvara
 description: Hämtar en lista över programvaruinventering
-keywords: apis, graph api, api som stöds, skaffa, lista, fil, information, programvaruinventering, hot & sårbarhetshantering api, mdatp tvm api
+keywords: apis, graph api, api som stöds, skaffa, lista, fil, information, programvaruinventering, & sårbarhetshantering api, Microsoft Defender för Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 867fb57f61bd98b7c0afabd20b27e68d6bf45ef7
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6522b546dfde7447a03b3c417be93d288e261908
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198571"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934015"
 ---
 # <a name="list-software-inventory-api"></a>Lista API för programvaruinventering
 

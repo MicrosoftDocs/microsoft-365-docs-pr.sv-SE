@@ -1,7 +1,7 @@
 ---
 title: Programvaruinventering med hot och sårbarhetshantering
 description: Sidan för programvaruinventering för Microsoft Defender för Endpoints hot och sårbarhetshantering visar hur många svagheter och svagheter som har upptäckts i programvaran.
-keywords: hantering av hot och sårbarhet, Microsoft Defender för slutpunkt, Microsoft Defender för lager av slutpunktsprogramvara, mdatp-hot & sårbarhetshantering, mdatp-hot & inventering av sårbarhetshanteringsprogram, mdatp tvm-programinventering, tvm-programinventering
+keywords: Hantering av hot och sårbarhet, Microsoft Defender för Slutpunkt, Microsoft Defender för programvaruinventering av slutpunkter, Microsoft Defender för slutpunktshot & sårbarhetshantering, Microsoft Defender för slutpunktshot & inventering av sårbarhetshanteringsprogram, Microsoft Defender för Endpoint tvm-programinventering, inventering av TVM-programvara
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a4ceb7cc4d39dbddbb4cd325491c16f4503bfc52
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 0d270760cfed965c8190668afcdb1cc25223d2b1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689383"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933727"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>Programvaruinventering – hantering av hot och sårbarhet
 

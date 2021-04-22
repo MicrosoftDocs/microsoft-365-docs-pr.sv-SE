@@ -1,5 +1,5 @@
 ---
-title: API-fält för identifiering av Microsoft Defender ATP
+title: API-fält för identifiering av slutpunkter i Microsoft Defender
 description: Förstå hur API-fält för identifiering mappning till värdena i Microsoft Defender Säkerhetscenter
 keywords: identifieringar, identifieringsfält, fält, api, fält, dra identifieringar, rest api, begäran, svar
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e304d731409c4cd0fac722d492b3fab5ed28fd35
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: d6d2ad9abe88d0099b58dd2df486120082bb22c1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164887"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933643"
 ---
 # <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>API-fält för identifiering av slutpunkter i Microsoft Defender
 
@@ -52,7 +52,7 @@ Fältnummer motsvarar talen i bilderna nedan.
 > | Portaletikett   | SIEM-fältnamn           | Fältet ArcSight      | Exempelvärde                                                                      | Beskrivning                                                                                                                                                                    |
 > |------------------|---------------------------|---------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 > | 1                | AlertTitle                | Namn                | Microsoft Defender AV upptäckte "Mikatz" skadlig programvara med hög allvarlighetsgrad | Tillgängligt värde för varje identifiering.                                                                                                                                               |
-> | 2                | Allvarlighetsgrad                  | deviceSeverity      | Högsta                                                                             | Tillgängligt värde för varje identifiering.                                                                                                                                               |
+> | 2                | Allvarlighetsgrad                  | deviceSeverity      | Hög                                                                             | Tillgängligt värde för varje identifiering.                                                                                                                                               |
 > | 3                | Kategori                  | deviceEventCategory | Skadlig programvara                                                               | Tillgängligt värde för varje identifiering.                                                                                                                                               |
 > | 4                | Identifieringskälla                    | sourceServiceName   | Antivirus                                                                 | Microsoft Defender Antivirus eller Defender för Slutpunkt. Tillgängligt värde för varje identifiering.                                                                                         |
 > | 5                | Maskinnamn               | sourceHostName      | desktop-4a5ngd6                                                                           | Tillgängligt värde för varje identifiering.                                                                                                                                               |

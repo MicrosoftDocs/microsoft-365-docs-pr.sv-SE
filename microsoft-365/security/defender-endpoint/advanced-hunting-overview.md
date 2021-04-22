@@ -1,7 +1,7 @@
 ---
-title: Översikt över avancerad sökning i Microsoft Defender ATP
-description: Använda sökfunktioner för hot i Microsoft Defender ATP för att skapa frågor som hittar hot och svagheter i ditt nätverk
-keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, microsoft defender atp, wdatp, search, query, telemetry, custom detections, schema, kusto, time zone, UTC
+title: Översikt över avancerad sökning i Microsoft Defender för Endpoint
+description: Använda sökfunktioner för hot i Microsoft Defender för Endpoint för att skapa frågor som hittar hot och svagheter i ditt nätverk
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender for Endpoint, search, query, telemetry, custom detections, schema, kusto, time zone, UTC
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9e5f29874ae42f2b82906a5ac0d2e615009d499f
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 114c0192f77411016fcb13ec2b912f4440ffa6e0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615489"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934363"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>Proaktiv sökning efter hot med avancerad sökning
 

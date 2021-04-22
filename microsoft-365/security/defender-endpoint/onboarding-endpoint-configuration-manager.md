@@ -1,7 +1,7 @@
 ---
-title: Introduktion med Konfigurationshanteraren för Microsoft Endpoint
+title: Introduktion med hjälp av Microsoft Endpoint Configuration Manager
 description: Lär dig hur du onboardar till Microsoft Defender för Endpoint med Hjälp av Konfigurationshanteraren för Microsoft Endpoint
-keywords: onboarding, configuration, deploy, deployment, endpoint configuration manager, mdatp, advanced threat protection, collection creation, endpoint detection response, next generation protection, attack surface reduction, microsoft endpoint configuration manager
+keywords: onboarding, configuration, deploy, deployment, endpoint configuration manager, Microsoft Defender for Endpoint, collection creation, endpoint detection response, next generation protection, attack surface reduction, microsoft endpoint configuration manager
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,14 +18,14 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 31c946ccad84aca3b2fc86c95655cea9e66e182f
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 84273ce3e060eb86ee246a5cc6a8cae3cba743b5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186407"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934495"
 ---
-# <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Introduktion med Konfigurationshanteraren för Microsoft Endpoint
+# <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Introduktion med hjälp av Microsoft Endpoint Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -117,12 +117,12 @@ När du har slutfört den här uppgiften har du en enhetssamling med alla Window
 ## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>Steg 2: Konfigurera Microsoft Defender för slutpunktsfunktioner 
 I det här avsnittet får du hjälp med att konfigurera följande funktioner med Konfigurationshanteraren för Microsoft Endpoint på Windows-enheter:
 
-- [**Identifiering och svar av slutpunkter**](#endpoint-detection-and-response)
+- [**Identifiering och svar för slutpunkt**](#endpoint-detection-and-response)
 - [**Nästa generations skydd**](#next-generation-protection)
 - [**Minskning av attackytan**](#attack-surface-reduction)
 
 
-### <a name="endpoint-detection-and-response"></a>Identifiering och svar av slutpunkter
+### <a name="endpoint-detection-and-response"></a>Identifiering och svar av slutpunkt
 #### <a name="windows-10"></a>Windows 10
 I Microsoft Defender Säkerhetscenter kan du ladda ned onboarding-principen som kan användas för att skapa principen i System Center Configuration Manager och distribuera den principen på Windows 10-enheter.
 
@@ -264,7 +264,7 @@ Microsoft Defender Antivirus är en inbyggd antimalwarelösning som ger nästa g
 
 När du har slutfört den här uppgiften har du nu konfigurerat Windows Defender Antivirus.
 
-### <a name="attack-surface-reduction"></a>Minskning av attackytan
+### <a name="attack-surface-reduction"></a>Minska attackytan
 Minskning av attackytan hos Defender för Endpoint inkluderar funktionsuppsättningen som är tillgänglig under Exploit Guard. ASR-regler (Attack Surface Reduction), kontrollerad mappåtkomst, nätverksskydd och sårbarhetsskydd. 
 
 Alla dessa funktioner ger ett granskningsläge och ett blockläge. I granskningsläge påverkas inte slutanvändarna. Allt som det gör är att samla in ytterligare telemetri och göra den tillgänglig i Microsoft Defender Säkerhetscenter. Syftet med en distribution är att stegvis flytta säkerhetskontroller till blockläge.

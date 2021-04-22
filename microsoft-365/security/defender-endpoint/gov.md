@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender för slutpunkt för myndighetskunder i USA
+title: Microsoft Defender för Endpoint för myndighetskunder i USA
 description: Läs mer om kraven och funktionerna för Microsoft Defender för slutpunkt för kunder inom myndigheter i USA tillgängliga
-keywords: myndigheter, gcc, hög, krav, funktioner, defender, defender atp, mdatp, slutpunkt, dod
+keywords: myndigheter, gcc, hög, krav, funktioner, defender, Microsoft Defender för slutpunkt, slutpunkt, dod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 320913058f1d3cab36b3a279996443c2e4ef117f
-ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
+ms.openlocfilehash: 16a7d289889940754a6d56058544a675b31192be
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51382919"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934003"
 ---
-# <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender för slutpunkt för myndighetskunder i USA
+# <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender för Endpoint för myndighetskunder i USA
 
 **Gäller för:**
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -171,7 +171,7 @@ Hanterings- och API:er: Hälso- och efterlevnadsrapport för enheter | ![Ja](ima
 Hantering och API:er: Integrering med produkter från tredje part | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Hantering och API:er: Streaming API | ![Ja](images/svg/check-yes.svg) | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling
 Hanterings- och API:er: Rapport om skydd mot hot | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
-Hot & sårbarhetshantering | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Hot och sårbarhetshantering | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Analys av hot | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Filtrering av webbinnehåll | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling
 Integrationer: Azure Sentinel | ![Ja](images/svg/check-yes.svg) | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling
@@ -183,4 +183,4 @@ Integrationer: Microsoft Endpoint DLP | ![Nej](images/svg/check-no.svg) När det
 Integrationer: Microsoft Intune | ![Ja](images/svg/check-yes.svg) | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling
 Integrationer: Microsoft Power Automate & Azure Logic-appar | ![Ja](images/svg/check-yes.svg) | ![Nej](images/svg/check-no.svg) Under utveckling | ![Nej](images/svg/check-no.svg) Under utveckling
 Integrationer: Skype för företag/Teams | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
-Microsoft Threat Experts | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg
+Microsoft Hotexperter | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg | ![Nej](images/svg/check-no.svg) När det gäller teknisk logg

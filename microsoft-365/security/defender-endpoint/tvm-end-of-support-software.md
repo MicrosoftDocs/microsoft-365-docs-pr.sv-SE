@@ -1,7 +1,7 @@
 ---
 title: Planera för programvara och programvaruversioner som slutar på grund av support
 description: Upptäck och planera för program- och programvaruversioner som inte längre stöds och inte får säkerhetsuppdateringar.
-keywords: hot- och sårbarhetshantering, mdatp tvm-säkerhetsrekommendationer, rekommendation för cybersäkerhet, rekommendation om säkerhet på åtgärd
+keywords: Hantering av hot och sårbarhet, Microsoft Defender för Endpoint tvm-säkerhetsrekommendationer, rekommendation om cybersäkerhet, rekommendation om säkerhet på åtgärd
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 29adf8a542d97a981a07dac167343f3774aa5af4
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 8e8fc228b8856df03b580e748bf00efc8d4333c3
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500146"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934135"
 ---
 # <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>Planera för slutet av supportprogramvara och programvaruversioner med hot och sårbarhetshantering
 

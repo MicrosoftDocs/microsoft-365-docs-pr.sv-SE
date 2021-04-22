@@ -1,7 +1,7 @@
 ---
 title: Exponeringsresultat för hantering av hot och sårbarhet
 description: Exponeringsresultatet för hantering av hot och risker återspeglar hur sårbar organisationen är för hot om cybersäkerhet.
-keywords: exponeringspoäng, mdatp-exponeringspoäng, mdatp-tvm-exponeringsresultat, exponeringspoäng för organisation, exponeringsresultat för tvmorganisation, hantering av hot och sårbarhet, Microsoft Defender för Slutpunkt
+keywords: exponeringspoäng, Microsoft Defender för exponeringsresultat för slutpunkt, Microsoft Defender för exponeringspoäng för endpoint tvm, exponeringspoäng för organisation, exponeringsresultat för tvmorganisation, hantering av hot och sårbarhet, Microsoft Defender för Slutpunkt
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34c3122b017b14605fdbb3358f31f73e26361a4d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: fcea240fe1dc0ce97a2800391320b04c39c84336
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500131"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934111"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>Exponeringsresultat – hantering av hot och risker
 

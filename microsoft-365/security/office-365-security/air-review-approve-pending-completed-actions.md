@@ -1,6 +1,6 @@
 ---
 title: Granska och hantera åtgärder i Microsoft Defender för Office 365
-keywords: AIR, autoIR, ATP, automatiserad, undersökning, svar, åtgärd, hot, avancerat, hot, skydd
+keywords: AIR, autoIR, Microsoft Defender för Slutpunkt, automatiserad, undersökning, svar, åtgärd, hot, avancerat, hot, skydd
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -19,12 +19,12 @@ description: Läs mer om åtgärder i funktioner för automatisk undersökning o
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: 61e9df45419cc73dae27b86dad47e1938183593d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ce6cfd920845f5a85dbc7d7d48cfefdd6209ec3a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207041"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933655"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Granska och hantera åtgärder i Office 365
 

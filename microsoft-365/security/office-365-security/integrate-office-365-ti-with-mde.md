@@ -2,7 +2,7 @@
 title: Använda Microsoft Defender för Office 365 tillsammans med Microsoft Defender för Endpoint
 f1.keywords:
 - NOCSH
-keywords: integrera, Microsoft Defender, ATP
+keywords: integrera, Microsoft Defender, Microsoft Defender för Slutpunkt
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -19,12 +19,12 @@ description: Använd Microsoft Defender för Office 365 tillsammans med Microsof
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c2e7a3eeb9576b53723a786de85f0c4bece679b4
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e6ad81102a9702a725f40fcdb5421a2b19b0086d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207108"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934039"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Använda Microsoft Defender för Office 365 tillsammans med Microsoft Defender för Endpoint
 

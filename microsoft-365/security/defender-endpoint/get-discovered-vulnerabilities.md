@@ -1,7 +1,7 @@
 ---
 title: Hämta upptäckta sårbarheter
 description: Hämtar en samling av identifierade svagheter i samband med ett visst enhets-ID.
-keywords: apis, graph api, api som stöds, skaffa, lista, fil, information, identifierade säkerhetsproblem, hot & sårbarhetshantering api, mdatp tvm api
+keywords: apis, graph api, api som stöds, hämta, lista, fil, information, identifierade säkerhetsproblem, & sårbarhetshantering api, Microsoft Defender för Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 73b8fe5140ff635791e7d42358024bb7fb4ee926
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 133a8525a2e561062a492f7148de97a77d37444e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570333"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934327"
 ---
 # <a name="get-discovered-vulnerabilities"></a>Hämta upptäckta sårbarheter
 

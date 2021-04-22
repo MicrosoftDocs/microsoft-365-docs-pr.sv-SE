@@ -1,7 +1,7 @@
 ---
 title: Hantera Microsoft Defender för slutpunkt med Intune
 description: Lär dig hur du hanterar Microsoft Defender för slutpunkt med Intune
-keywords: efter migrering, hantera, åtgärder, underhåll, användning, intune, windows defender avancerat skydd mot hot, atp, edr
+keywords: efter migrering, hantera, åtgärder, underhåll, användning, intune, Microsoft Defender för Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 01936eb323060190f2e785df04c3d317f7999d08
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: d8396c352e593f9922b11e23119f7d9718eaf752
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185891"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934231"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Hantera Microsoft Defender för slutpunkt med Intune
 

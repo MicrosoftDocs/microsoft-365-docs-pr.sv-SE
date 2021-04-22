@@ -1,7 +1,7 @@
 ---
 title: Använd minskningsregler för attackytan för att förhindra skadlig smitta
 description: Minskningsregler för attackytan kan förhindra sårbarheter från att använda appar och skript för att smitta enheter med skadlig programvara.
-keywords: Minskningsregler för attackytan, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, prevention av smitta, Microsoft Defender för Endpoint, Microsoft Defender ATP
+keywords: Minskningsregler för attackytan, asr, hips, värdskyddssystem mot intrång, skyddsregler, anti-sårbarhet, antiexploit, sårbarhet, smittande skydd, Microsoft Defender för slutpunkt
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 8790d959dc41e3edea684c66e556a2ec67f85ae1
-ms.sourcegitcommit: 0fe5989b7ee2f7ae0181f2781e31db7f58689441
+ms.openlocfilehash: 98f04a9aa34fda78c7caba2f6cb71c135428784f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697533"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933991"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Använd minskningsregler för attackytan för att förhindra skadlig smitta
 

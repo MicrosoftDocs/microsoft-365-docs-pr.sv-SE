@@ -1,7 +1,7 @@
 ---
 title: Säkerhetsrekommendationer med hjälp av hantering av hot och hot
 description: Få handlingsbara säkerhetsrekommendationer prioriterade efter hot, risk för intrång och värde, i hot och sårbarhetshantering.
-keywords: hot- och sårbarhetshantering, mdatp tvm-säkerhetsrekommendationer, rekommendation för cybersäkerhet, rekommendation om säkerhet på åtgärd
+keywords: Hantering av hot och sårbarhet, Microsoft Defender för Endpoint tvm-säkerhetsrekommendationer, rekommendation om cybersäkerhet, rekommendation om säkerhet på åtgärd
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 97d496271c1ef7185419f7d39956da0429f070aa
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: af22bac911339de9c2e02df24a77c1889a33d43a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500481"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933739"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>Säkerhetsrekommendationer – hantering av hot och hot
 

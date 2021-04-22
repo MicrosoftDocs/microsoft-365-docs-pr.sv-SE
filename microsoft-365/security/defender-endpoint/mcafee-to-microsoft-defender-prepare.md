@@ -1,7 +1,7 @@
 ---
 title: McAfee till Microsoft Defender för Endpoint – förbereda
 description: Det här är fas 1, Förbereda, för migrering från McAfee till Microsoft Defender för Endpoint.
-keywords: migrering, windows defender avancerat skydd, atp, edr
+keywords: migrering, Microsoft Defender för Slutpunkt, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 45b22d0066496e40bb8f2e17d9f82de860d73ea4
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: cb480e743be9184fd60cba0f82a287b8562c1901
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861429"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934219"
 ---
 # <a name="migrate-from-mcafee---phase-1-prepare-for-your-migration"></a>Migrera från McAfee – fas 1: Förbereda migreringen
 

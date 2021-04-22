@@ -1,7 +1,7 @@
 ---
 title: Migrera från tredjeparts hips till ASR-regler
 description: Här beskrivs hur du ska hantera en migrering från en HIPS-lösning (Host Intrusion Prevention System) från tredje part till ASR-regler.
-keywords: Minskningsregler för attackytor, asr- och asr-regler, hips, värdskyddssystem mot intrång, skyddsregler, anti-sårbarhet, antiexploit, sårbarhet, skydd mot virus, Microsoft Defender för slutpunkt, Microsoft Defender ATP
+keywords: Minskningsregler för attackytor, asr- och asr-regler, hips, värdskyddssystem mot intrång, skyddsregler, anti-sårbarhet, antiexploit, sårbarhet, skydd mot virus, Microsoft Defender för slutpunkt
 search.product: eADQiWindows 10XVcnh
 ms.topic: article
 ms.prod: m365-security
@@ -15,12 +15,12 @@ ms.author: v-lsaldanha
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: 5b2c6c12de7b87a045a81a552e3fe74b4829e94d
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: de65c134560ecca219de9174ff222d31dd578d31
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764789"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933787"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migrera från tredjeparts hips till ASR-regler
 
@@ -41,7 +41,7 @@ I den här artikeln får du hjälp att mappa vanliga regler till Microsoft Defen
 - **Gäller för**– alla processer
 - **Processer**– ej a:
 - **Åtgärd**– registerändringar
-- **Exempel på filer/mappar, registernycklar/värden, processer, tjänster** -  *\Software*,HKCU\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs *\StartExe, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options*\Debugger,HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\MonitorProcess
+- **Exempel på filer/mappar, registernycklar/värden, processer, tjänster** -  *\Software*,HKCU\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs *\StartExe, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options*\Debugger, HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\MonitorProcess
 - **Regler för att minska attackytan**– ASR-regler blockerar attacktekniker och inte symboler för kompromettering (IOC). Att blockera ett specifikt filnamnstillägg är inte alltid praktiskt, eftersom det inte hindrar en enhet från att kompromettera. Det endast delvis överlappar en attack tills attacker skapar en ny typ av förlängning för nyttolasten.
 - **Andra rekommenderade funktioner**– Vi rekommenderar att du har Microsoft Defender AV aktiverat, tillsammans med molnskydds- och funktionsanalys. Vi rekommenderar att du använder ytterligare skydd, till exempel ASR-regeln "Använd avancerat skydd mot utpressningstrojaner". Detta ger bättre skydd mot utpressningstrojaner. Dessutom övervakas flera av dessa registernycklar av Microsoft Defender för Endpoint, till exempel ASEP-tekniker som utlöser specifika aviseringar. Dessutom måste de registernycklar som används kräva minst lokal administratör eller behörigheten för ett betrott installationsprogram kan ändras. Vi rekommenderar att du använder en låst miljö, med lägsta administrativa konton eller rättigheter. Andra systemkonfigurationer kan aktiveras, bland annat "Disable SeDebug for non-required roles" (inaktivera Felsökning för icke-obligatoriska roller) som är en del av våra bredare säkerhetsrekommendationer.
 
@@ -50,7 +50,7 @@ I den här artikeln får du hjälp att mappa vanliga regler till Microsoft Defen
 - **Gäller för**- Icke betrodda program från USB
 - **Processer**– *
 - **Operation**– Processkörning
-- **Exempel på filer/mappar, registernycklar/värden, processer,tjänster:-*
+- **Exempel på filer/mappar, registernycklar/värden, processer, tjänster:-*
 - Minskningsregler för **Attack Surface**– ASR-regler har en inbyggd regel för att förhindra att icke betrodda och osignerade program startas från flyttbara enheter: "Blockera icke betrodda och osignerade processer som körs från USB", GUID "b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4".
 - **Andra rekommenderade funktioner**– Utforska ytterligare kontroller för USB-enheter och andra flyttbara media med hjälp av Microsoft Defender för Slutpunkt: Styra USB-enheter och andra flyttbara medium med hjälp av [Microsoft Defender för Endpoint.](/windows/security/threat-protection/device-control/control-usb-devices-using-intune)
 
@@ -59,7 +59,7 @@ I den här artikeln får du hjälp att mappa vanliga regler till Microsoft Defen
 - **Gäller för**- Mshta
 - **Processer**– mshta.exe
 - **Operation**– Processkörning
-- **Exempel på filer/mappar, registernycklar/värden, processer,tjänster**- powershell.exe, cmd.exe, regsvr32.exe
+- **Exempel på filer/mappar, registernycklar/värden, processer,** tjänster - powershell.exe, cmd.exe, regsvr32.exe
 - **Regler för att minska attackytan**– ASR-regler innehåller inga specifika regler för att förhindra att underordnade processer "mshta.exe". Den här kontrollen ligger inom ramen för Sårbarhetsskydd eller Windows Defender-programkontroll.
 - **Andra rekommenderade funktioner**– Aktivera Windows Defender-programkontrollen för att mshta.exe att köras helt och hållet. Om din organisation kräver "mshta.exe" för verksamhetsspecifika appar konfigurerar du en specifik regel för Sårbarhetsskydd i Windows Defender för att förhindra att mshta.exe startar underordnade processer.
 
@@ -68,8 +68,8 @@ I den här artikeln får du hjälp att mappa vanliga regler till Microsoft Defen
 - **Gäller för**– Outlook
 - **Processer**– outlook.exe
 - **Operation**– Processkörning
-- **Exempel på filer/mappar, registernycklar/värden, processer,tjänster**- powershell.exe
-- Regler för att minska attackytan **–** ASR-regler har en inbyggd regel för att förhindra att Office-kommunikationsappar (Outlook, Skype och Teams) startar underprocesser: "Blockera Office-kommunikationsprogram från att skapa barnprocesser", GUID "26190899-1602-49e8-8b27-eb1d0a1ce869".
+- **Exempel på filer/mappar, registernycklar/värden, processer, tjänster**- powershell.exe
+- Regler för att minska attackytan **–** ASR-regler har en inbyggd regel för att förhindra att Office-kommunikationsappar (Outlook, Skype och Teams) startar underordnade processer: "Blockera Office-kommunikationsprogram från att skapa underordnade processer", GUID "26190899-1602-49e8-8b27-eb1d0a1ce869".
 - **Andra rekommenderade funktioner**– Vi rekommenderar att du aktiverar PowerShell begränsat språkläge för att minimera attackytan från PowerShell.
 
 
@@ -78,7 +78,7 @@ I den här artikeln får du hjälp att mappa vanliga regler till Microsoft Defen
 - **Gäller för**– Office  
 - **Processer**– winword.exe, powerpnt.exe, excel.exe
 - **Operation**– Processkörning
-- **Exempel på filer/mappar, registernycklar/värden, processer,tjänster**- powershell.exe, cmd.exe, wscript.exe, mshta.exe, EQNEDT32.EXE, regsrv32.exe
+- **Exempel på filer/mappar, registernycklar/värden, processer,** tjänster - powershell.exe, cmd.exe, wscript.exe, mshta.exe, EQNEDT32.EXE, regsrv32.exe
 - Regler **för** att minska attackytan – ASR-regler har en inbyggd regel som hindrar Office-appar från att starta underordnade processer: "Blockera alla Office-program från att skapa underordnade processer", GUID "D4F940AB-401B-4EFC-AADC-AD5F3C50688A".
 - **Andra rekommenderade funktioner**– ej tillgängliga
     
@@ -87,7 +87,7 @@ I den här artikeln får du hjälp att mappa vanliga regler till Microsoft Defen
 - **Gäller för**– Office
 - **Processer**– winword.exe, powerpnt.exe, excel.exe
 - **Åtgärd –** skapa filer
-- Exempel på **filer/mappar, registernycklar/värden, processer,tjänster**- C:\Användare *\AppData **.exe, C:\ProgramData**.exe, C:\ProgramData**.com, C:\Users* AppData\Local\Temp **.com, C:\Users*\Downloads**.exe, C:\Users *\AppData **.scf, C:\ProgramData**.scf, C:\Users\Public*.exe, C:\Users*\Desktop***.exe
+- Exempel på **filer/mappar, registernycklar/värden, processer,** tjänster - C:\Användare *\AppData **.exe, C:\ProgramData**.exe, C:\ProgramData**.com, C:\Users* AppData\Local\Temp **.com, C:\Users*\Downloads**.exe, C:\Users *\AppData **.scf, C:\ProgramData**.scf, C:\Users\Public*.exe, C:\Users*\Desktop***.exe
 - **Regler för att minska attackytan**– EJ!.
 
 ### <a name="block-wscript-from-reading-certain-types-of-files"></a>Förhindra att Wscript läser vissa typer av filer
@@ -137,14 +137,14 @@ I den här artikeln får du hjälp att mappa vanliga regler till Microsoft Defen
 - **Regler för att minska attackytan**– ASR-regler är inte utformade för att fungera som programhanterare.
 - **Andra rekommenderade funktioner**– Om du vill förhindra att användare startar specifika processer eller program bör du använda Windows Defender-programkontrollen. Microsoft Defender för slutpunktsfiler och certifikatindikatorer kan användas i ett scenario med incidentsvar (ska inte ses som en mekanism för programkontroll).
     
-### <a name="block-unauthorized-changes-to-mdatp-av-configurations"></a>Blockera obehöriga ändringar i MDATP AV-konfigurationer
+### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>Blockera obehöriga ändringar i Microsoft Defender Antivirus-konfigurationer
 
 - **Gäller för**– alla processer
 - **Processer**– *
 - **Åtgärd**– registerändringar
 - **Exempel på filer/mappar, registernycklar/värden, processer,** tjänster - HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware, HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\AllowRealTimeMonitoring och så vidare.
 - **Regler för att minska attackytan**– ASR-regler täcker inte in dessa scenarier eftersom de är en del av Microsoft Defender för inbyggt skydd av Slutpunkt.
-- Andra rekommenderade funktioner – Skydd mot manipulering (registrering, hanteras från Intune) förhindrar obehöriga ändringar av DisableAntiVirus, DisableAntiSpyware, DisableRealtimeMonitoring, DisableOnAccessProtection, DisableBehaviorMonitoring och DisableIOAVProtection-registernycklar (med mera).
+- Andra rekommenderade funktioner **–** Skydd mot manipulering (registrering, hanteras från Intune) förhindrar obehöriga ändringar av DisableAntiVirus, DisableAntiSpyware, DisableRealtimeMonitoring, DisableOnAccessProtection, DisableBehaviorMonitoring och DisableIOAVProtection-registernycklar (med mera).
 
 Se även
 

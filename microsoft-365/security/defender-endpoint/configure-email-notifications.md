@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b629d6a90931026ce28ce241e74d490ce67c6962
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: c60bed1fb2cc17c9f5dfbd1289ae5f5b5e13faec
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893640"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933955"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Konfigurera aviseringsmeddelanden i Microsoft Defender för Slutpunkt
 

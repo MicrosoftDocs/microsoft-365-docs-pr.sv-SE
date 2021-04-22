@@ -1,7 +1,7 @@
 ---
 title: Kontakta Microsoft Defender för Endpoint-support för kunder i amerikanska myndigheter
 description: Lär dig hur du kontaktar Microsoft Defender för slutpunktssupport för kunder inom myndigheter i USA
-keywords: support, kontakt, premier-support, lösningar, problem, ärende, myndigheter, gcc, gcc-m, gcc-h, defender, slutpunkt, mdatp, mde
+keywords: support, kontakt, premier-support, lösningar, problem, ärende, myndigheter, gcc, gcc-m, gcc-h, defender, slutpunkt, Microsoft Defender för slutpunkt, mde
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: efdd2807db53f37a76108b872ca0822acfb2af81
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 97971699ec6000ab9233c2fd739f471cdda01b2d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51070706"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933859"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support-for-us-government-customers"></a>Kontakta Microsoft Defender för Endpoint-support för kunder i amerikanska myndigheter
 

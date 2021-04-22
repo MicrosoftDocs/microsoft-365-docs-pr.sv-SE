@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9e54fb5f2105f0a77c4b63e8d880135005c17168
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: a57cebd2cb7d35f968ed9ddfa4d9215eac2182d6
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862097"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934466"
 ---
 # <a name="overview-of-management-and-apis"></a>Översikt över hantering och API:er 
 
@@ -41,7 +41,7 @@ Eftersom kundmiljöer och kundstrukturer kan variera skapades Defender för Endp
 
 ## <a name="endpoint-onboarding-and-portal-access"></a>Slutpunkts onboarding och portalåtkomst 
 
-Enhets onboarding är helt integrerat i Microsoft Endpoint Manager och Microsoft Intune för klientenheter och Azure Säkerhetscenter för serverenheter, med fullständig heltäckande upplevelse av konfiguration, distribution och övervakning. Dessutom har Microsoft Defender för Endpoint stöd för grupprinciper och andra verktyg från tredje part som används för hantering av enheter.
+Enhets onboarding är helt integrerat i Microsoft Endpoint Manager och Microsoft Intune för klientenheter och Azure Defender för serverenheter, med fullständig heltäckande upplevelse av konfiguration, distribution och övervakning. Dessutom har Microsoft Defender för Endpoint stöd för grupprinciper och andra verktyg från tredje part som används för hantering av enheter.
 
 Defender för Endpoint ger mer exakt kontroll över vad användare med åtkomst till portalen kan se och göra genom flexibiliteten hos rollbaserad åtkomstkontroll (RBAC). RBAC-modellen har stöd för alla typer av säkerhetsteamsstruktur:
 - Globalt fördelade organisationer och säkerhetsteam

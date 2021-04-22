@@ -2,7 +2,7 @@
 title: Översikt för minskning av attackytan
 ms.reviewer: ''
 description: Läs mer om funktionerna för att minska attackytan i Microsoft Defender för Endpoint.
-keywords: asr, minskning av attackytan, microsoft defender atp, microsoft defender för slutpunkt, microsoft defender, antivirus, av, windows defender
+keywords: asr, minskning av attackytan, Microsoft Defender för Slutpunkt, microsoft defender, antivirus, av, windows defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 60efae91e4b65c5977bd2aebf111d9174d7c1042
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 68c9bad95e36863a57d27d49adc2ad46744cbd4a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893559"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933535"
 ---
 # <a name="overview-of-attack-surface-reduction"></a>Översikt för minskning av attackytan
 

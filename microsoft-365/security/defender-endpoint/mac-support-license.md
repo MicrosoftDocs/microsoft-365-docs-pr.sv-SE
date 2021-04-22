@@ -1,7 +1,7 @@
 ---
-title: Felsöka licensproblem för Microsoft Defender för Slutpunkt för Mac
-description: Felsöka licensproblem i Microsoft Defender för Slutpunkt för Mac.
-keywords: microsoft, defender, atp, mac, performance
+title: Felsöka licensproblem för Microsoft Defender för slutpunkt på Mac
+description: Felsöka licensproblem i Microsoft Defender för slutpunkt på Mac.
+keywords: microsoft, defender, Microsoft Defender för slutpunkt, mac, prestanda
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3fb351d9ce8e9beef812e6aaa7d463161a6af8df
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: e8084fab434246a5c9f12af40872ade66e6fa163
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862193"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934267"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Felsöka licensproblem för Microsoft Defender för slutpunkt i macOS
 

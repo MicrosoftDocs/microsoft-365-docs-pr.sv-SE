@@ -1,7 +1,7 @@
 ---
-title: Distribuera uppdateringar för Microsoft Defender för Slutpunkt för Mac
-description: Kontrollera uppdateringar för Microsoft Defender för Slutpunkt för Mac i företagsmiljöer.
-keywords: microsoft, defender, atp, mac, uppdateringar, distribuera
+title: Distribuera uppdateringar för Microsoft Defender för slutpunkt på Mac
+description: Kontrollera uppdateringar för Microsoft Defender för Slutpunkt på Mac i företagsmiljöer.
+keywords: microsoft, defender, Microsoft Defender för slutpunkt, mac, uppdateringar, distribuera
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9d373594771efe4eb647c007db3a26efe83e330e
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 886195de38856306d69932446eae34212fe4bb0d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860321"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934507"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Distribuera uppdateringar för Microsoft Defender för slutpunkt i macOS
 

@@ -1,7 +1,7 @@
 ---
 title: Få saknade KBs genom programvaru-ID
 description: Hämtar säkerhetsuppdateringar som saknas med hjälp av programvaru-ID
-keywords: apis, graph api, api som stöds, skaffa, lista, fil, information, programvaru-ID, hot & sårbarhetshantering api, mdatp tvm api
+keywords: apis, graph api, api som stöds, skaffa, lista, fil, information, programvaru-ID, & sårbarhetshantering api, Microsoft Defender för Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e5d84a3eadab85713779dd70848bc11d27484dcc
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 25ac8ce2c9fb17b2576f86dae1da984865b19018
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499395"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933895"
 ---
 # <a name="get-missing-kbs-by-software-id"></a>Få saknade KBs genom programvaru-ID
 

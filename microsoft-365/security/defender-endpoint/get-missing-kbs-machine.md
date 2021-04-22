@@ -1,7 +1,7 @@
 ---
 title: Få saknade KBs efter enhets-ID
 description: Hämtar säkerhetsuppdateringar efter enhets-ID
-keywords: apis, graph api, api som stöds, skaffa, lista, fil, information, enhets-ID, & sårbarhetshantering api, mdatp tvm api
+keywords: apis, graph api, api som stöds, skaffa, lista, fil, information, enhets-ID, & sårbarhetshantering api, Microsoft Defender för Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4364e6a38d4597a95d4d9a1f05dcce6fce5797ef
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: aa22b90b95788d9f5a65d54c7a335a2e0f4c3091
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500693"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933583"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>Få saknade KBs efter enhets-ID
 

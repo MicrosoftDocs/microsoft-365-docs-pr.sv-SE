@@ -1,7 +1,7 @@
 ---
-title: Upplev Microsoft Defender ATP genom simulerade attacker
-description: Kör de angivna attackscenarion för att uppleva hur Microsoft Defender ATP kan upptäcka, undersöka och hantera överträdelser.
-keywords: wdatp, test, scenario, attack, simulering, simulerad, gör-det-själv, Microsoft Defender för slutpunkt
+title: Upplev Microsoft Defender för Endpoint genom simulerade attacker
+description: Kör simuleringar av angivna attackscenarion för att se hur Microsoft Defender för Endpoint kan upptäcka, undersöka och hantera överträdelser.
+keywords: test, scenario, attack, simulering, simulerad, gör-det-själv, Microsoft Defender för slutpunkt
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/20/2018
 ms.technology: mde
-ms.openlocfilehash: b3fb862ac6e845ed4a3f5b72bae902f00c125b53
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 6ecbf98c81b1f68e42f39269809592fb446e6036
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498304"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934387"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>Upplev Microsoft Defender för Endpoint genom simulerade attacker 
 
@@ -36,7 +36,7 @@ ms.locfileid: "51498304"
 >Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-attacksimulations-abovefoldlink)
 
 >[!TIP]
->- Läs mer om de senaste förbättringarna i Microsoft Defender ATP: [Nyheter i Defender för Slutpunkt.](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/)
+>- Läs mer om de senaste förbättringarna i Microsoft Defender för Slutpunkt: [Nyheter i Defender för Slutpunkt.](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/)
 >- Defender för Endpoint visade branschledandeoptisk och identifieringsfunktioner i den senaste MITRE-utvärderingen. Läs: [Insikter från MITRE ATT&CK-baserad utvärdering.](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)
 
 Du kanske vill använda Defender för Slutpunkt innan du inför mer än ett fåtal enheter i tjänsten. Det kan du göra genom att köra kontrollerad attack simulering på några testenheter. När du har kört de simulerade attackerna kan du se hur Defender för Endpoint visar skadlig aktivitet och undersöker hur det möjliggör ett effektivt svar.

@@ -1,7 +1,7 @@
 ---
-title: Resurser för Microsoft Defender för Slutpunkt för Mac
-description: Resurser för Microsoft Defender för Endpoint för Mac, inklusive hur du avinstallerar det, hur du samlar in diagnostikloggar, CLI-kommandon och kända problem med produkten.
-keywords: microsoft, defender, atp, mac, installation, distribuera, avinstallation, intune, jamf, macos, catalina, mojave, high sierra
+title: Resurser för Microsoft Defender för Slutpunkt på Mac
+description: Resurser för Microsoft Defender för slutpunkt på Mac, inklusive hur du avinstallerar det, hur du samlar in diagnostikloggar, CLI-kommandon och kända problem med produkten.
+keywords: microsoft, defender, Microsoft Defender för slutpunkt, mac, installation, distribuera, avinstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 98e123ac4775096c968bc831965a562481c848b6
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 34feeec0f8c34748678862b9aa7b20f84087eb5e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862181"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934531"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Resurser för Microsoft Defender för slutpunkt i macOS
 

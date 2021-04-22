@@ -1,7 +1,7 @@
 ---
 title: Konfigurera och validera undantag för Microsoft Defender för Slutpunkt i Linux
 description: Tillhandahålla och validera undantag för Microsoft Defender för Endpoint på Linux. Undantag kan anges för filer, mappar och processer.
-keywords: microsoft, defender, atp, linux, undantag, skanningar, antivirus
+keywords: microsoft, defender, Microsoft Defender för Endpoint, linux, undantag, skanningar, antivirus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 56fe152532b77f7f04c9edd52998fea83493adfe
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 8e861055067a55630da458e87b7376a607dc69c4
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903946"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934303"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>Konfigurera och validera undantag för Microsoft Defender för Slutpunkt i Linux
 
@@ -38,18 +38,18 @@ ms.locfileid: "51903946"
 Den här artikeln innehåller information om hur du definierar undantag som gäller för sökning på begäran, skydd och övervakning i realtid.
 
 > [!IMPORTANT]
-> Undantagen som beskrivs i den här artikeln gäller inte för andra Defender för Endpoint för Linux-funktioner, inklusive slutpunktsidentifiering och svar (EDR). Filer som du undantar med hjälp av metoderna som beskrivs i den här artikeln kan fortfarande utlösa EDR-aviseringar och andra identifieringar.
+> Undantag som beskrivs i den här artikeln gäller inte för andra Defender för Endpoint på Linux-funktioner, inklusive slutpunktsidentifiering och svar (EDR). Filer som du undantar med hjälp av metoderna som beskrivs i den här artikeln kan fortfarande utlösa EDR-aviseringar och andra identifieringar.
 
-Du kan utesluta vissa filer, mappar, processer och process öppna filer från Defender för Endpoint för Linux-genomsökningar.
+Du kan utesluta vissa filer, mappar, processer och process öppna filer från Defender för Slutpunkt på Linux-genomsökningar.
 
-Undantag kan vara bra för att undvika felaktiga identifieringar av filer eller programvara som är unika eller anpassade för din organisation. De kan också vara användbara för att minska prestandaproblem som orsakas av Defender för Endpoint för Linux.
+Undantag kan vara bra för att undvika felaktiga identifieringar av filer eller programvara som är unika eller anpassade för din organisation. De kan också vara användbara för att minska prestandaproblem som orsakas av Defender för Endpoint på Linux.
 
 > [!WARNING]
-> När du definierar undantag sänks skyddet som erbjuds av Defender för Endpoint för Linux. Du bör alltid utvärdera riskerna som är associerade med att implementera undantag och du bör endast utesluta filer som du är säker på inte är skadliga.
+> När du definierar undantag sänks skyddet som erbjuds av Defender för Endpoint på Linux. Du bör alltid utvärdera riskerna som är associerade med att implementera undantag och du bör endast utesluta filer som du är säker på inte är skadliga.
 
 ## <a name="supported-exclusion-types"></a>Undantagstyper som stöds
 
-I följande tabell visas de undantagstyper som stöds av Defender för Endpoint för Linux.
+I följande tabell visas de undantagstyper som stöds av Defender för Slutpunkt på Linux.
 
 Exkludering | Definition | Exempel
 ---|---|---
@@ -72,7 +72,7 @@ Jokertecken | Beskrivning | Exempel | Matchningar | Matchar inte
 
 ### <a name="from-the-management-console"></a>Från hanteringskonsolen
 
-Mer information om hur du konfigurerar undantag från Gör en klient, en ansible eller en annan hanteringskonsol finns i Ange inställningar för [Defender för Slutpunkt för Linux.](linux-preferences.md)
+Mer information om hur du konfigurerar undantag från Gör en klient, en ansible eller en annan hanteringskonsol finns i Ange inställningar för [Defender för slutpunkt i Linux.](linux-preferences.md)
 
 ### <a name="from-the-command-line"></a>Från kommandoraden
 
@@ -152,7 +152,7 @@ I följande Bash-kodstycke `test.txt` ersätter du med en fil som överensstämm
 curl -o test.txt https://www.eicar.org/download/eicar.com.txt
 ```
 
-Om Defender för Slutpunkt för Linux rapporterar skadlig programvara fungerar inte regeln. Om det inte finns någon rapport om skadlig programvara, och den hämtade filen finns, fungerar undantaget. Du kan öppna filen för att bekräfta att innehållet är detsamma som det som beskrivs på [EICAR-testfilens webbplats](http://2016.eicar.org/86-0-Intended-use.html).
+Om Defender för Slutpunkt på Linux rapporterar skadlig programvara fungerar regeln inte. Om det inte finns någon rapport om skadlig programvara, och den hämtade filen finns, fungerar undantaget. Du kan öppna filen för att bekräfta att innehållet är detsamma som det som beskrivs på [EICAR-testfilens webbplats](http://2016.eicar.org/86-0-Intended-use.html).
 
 Om du inte har tillgång till Internet kan du skapa en egen EICAR-testfil. Skriv EICAR-strängen till en ny textfil med följande Bash-kommando:
 
