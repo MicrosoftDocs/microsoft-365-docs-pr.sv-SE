@@ -20,64 +20,68 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0194a752a0050fe68c5372bbfc93ea5f17d1d8e6
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 83c78f9df5560c75e40a171d770e994b86049204
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935767"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952590"
 ---
-# <a name="use-shared-queries-in-advanced-hunting"></a><span data-ttu-id="11d6e-105">Använda delade frågor för avancerad sökning</span><span class="sxs-lookup"><span data-stu-id="11d6e-105">Use shared queries in advanced hunting</span></span>
+# <a name="use-shared-queries-in-advanced-hunting"></a><span data-ttu-id="56e5d-105">Använda delade frågor för avancerad sökning</span><span class="sxs-lookup"><span data-stu-id="56e5d-105">Use shared queries in advanced hunting</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="11d6e-106">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="11d6e-106">**Applies to:**</span></span>
-- <span data-ttu-id="11d6e-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="11d6e-107">Microsoft 365 Defender</span></span>
+<span data-ttu-id="56e5d-106">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="56e5d-106">**Applies to:**</span></span>
+- <span data-ttu-id="56e5d-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="56e5d-107">Microsoft 365 Defender</span></span>
+- <span data-ttu-id="56e5d-108">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="56e5d-108">Microsoft Defender for Endpoint</span></span>
 
 
 
-<span data-ttu-id="11d6e-108">[Avancerade sökfrågor](advanced-hunting-overview.md) kan delas mellan användare i samma organisation.</span><span class="sxs-lookup"><span data-stu-id="11d6e-108">[Advanced hunting](advanced-hunting-overview.md) queries can be shared among users in the same organization.</span></span> <span data-ttu-id="11d6e-109">Du kan också hitta frågor som delats offentligt på GitHub.</span><span class="sxs-lookup"><span data-stu-id="11d6e-109">You can also find queries shared publicly on GitHub.</span></span> <span data-ttu-id="11d6e-110">Med de här frågorna kan du snabbt söka efter specifika hot utan att behöva skriva frågor från grunden.</span><span class="sxs-lookup"><span data-stu-id="11d6e-110">These queries let you quickly pursue specific threat hunting scenarios without having to write queries from scratch.</span></span>
+<span data-ttu-id="56e5d-109">[Avancerade sökfrågor](advanced-hunting-overview.md) kan delas mellan användare i samma organisation.</span><span class="sxs-lookup"><span data-stu-id="56e5d-109">[Advanced hunting](advanced-hunting-overview.md) queries can be shared among users in the same organization.</span></span> <span data-ttu-id="56e5d-110">Du kan också hitta frågor som delats offentligt på GitHub.</span><span class="sxs-lookup"><span data-stu-id="56e5d-110">You can also find queries shared publicly on GitHub.</span></span> <span data-ttu-id="56e5d-111">Med de här frågorna kan du snabbt söka efter specifika hot utan att behöva skriva frågor från grunden.</span><span class="sxs-lookup"><span data-stu-id="56e5d-111">These queries let you quickly pursue specific threat hunting scenarios without having to write queries from scratch.</span></span>
 
 ![Bild på delade frågor](../../media/advanced-hunting-shared-queries.png)
 
-## <a name="save-modify-and-share-a-query"></a><span data-ttu-id="11d6e-112">Spara, ändra och dela en fråga</span><span class="sxs-lookup"><span data-stu-id="11d6e-112">Save, modify, and share a query</span></span>
-<span data-ttu-id="11d6e-113">Du kan spara en ny eller befintlig fråga så att den bara är tillgänglig för dig eller delas med andra användare i organisationen.</span><span class="sxs-lookup"><span data-stu-id="11d6e-113">You can save a new or existing query so that it is only accessible to you or shared with other users in your organization.</span></span> 
+## <a name="save-modify-and-share-a-query"></a><span data-ttu-id="56e5d-113">Spara, ändra och dela en fråga</span><span class="sxs-lookup"><span data-stu-id="56e5d-113">Save, modify, and share a query</span></span>
+<span data-ttu-id="56e5d-114">Du kan spara en ny eller befintlig fråga så att den bara är tillgänglig för dig eller delas med andra användare i organisationen.</span><span class="sxs-lookup"><span data-stu-id="56e5d-114">You can save a new or existing query so that it is only accessible to you or shared with other users in your organization.</span></span> 
 
-1. <span data-ttu-id="11d6e-114">Skapa eller ändra en fråga.</span><span class="sxs-lookup"><span data-stu-id="11d6e-114">Create or modify a query.</span></span> 
+1. <span data-ttu-id="56e5d-115">Skapa eller ändra en fråga.</span><span class="sxs-lookup"><span data-stu-id="56e5d-115">Create or modify a query.</span></span> 
 
-2. <span data-ttu-id="11d6e-115">Klicka på **listrutan** Spara fråga och välj **Spara som**.</span><span class="sxs-lookup"><span data-stu-id="11d6e-115">Click the **Save query** drop-down button and select **Save as**.</span></span>
+2. <span data-ttu-id="56e5d-116">Klicka på **listrutan** Spara fråga och välj **Spara som**.</span><span class="sxs-lookup"><span data-stu-id="56e5d-116">Click the **Save query** drop-down button and select **Save as**.</span></span>
     
-3. <span data-ttu-id="11d6e-116">Ange ett namn för frågan.</span><span class="sxs-lookup"><span data-stu-id="11d6e-116">Enter a name for the query.</span></span> 
+3. <span data-ttu-id="56e5d-117">Ange ett namn för frågan.</span><span class="sxs-lookup"><span data-stu-id="56e5d-117">Enter a name for the query.</span></span> 
 
    ![Bild av att spara en fråga](../../media/advanced-hunting-save-query.png)
 
-4. <span data-ttu-id="11d6e-118">Välj den mapp där du vill spara frågan.</span><span class="sxs-lookup"><span data-stu-id="11d6e-118">Select the folder where you'd like to save the query.</span></span>
-    - <span data-ttu-id="11d6e-119">**Delade frågor –** delas för alla användare i organisationen</span><span class="sxs-lookup"><span data-stu-id="11d6e-119">**Shared queries** — shared to all users your organization</span></span>
-    - <span data-ttu-id="11d6e-120">**Mina frågor –** endast tillgänglig för dig</span><span class="sxs-lookup"><span data-stu-id="11d6e-120">**My queries** — accessible only to you</span></span>
+4. <span data-ttu-id="56e5d-119">Välj den mapp där du vill spara frågan.</span><span class="sxs-lookup"><span data-stu-id="56e5d-119">Select the folder where you'd like to save the query.</span></span>
+    - <span data-ttu-id="56e5d-120">**Delade frågor –** delas för alla användare i organisationen</span><span class="sxs-lookup"><span data-stu-id="56e5d-120">**Shared queries** — shared to all users your organization</span></span>
+    - <span data-ttu-id="56e5d-121">**Mina frågor –** endast tillgänglig för dig</span><span class="sxs-lookup"><span data-stu-id="56e5d-121">**My queries** — accessible only to you</span></span>
     
-5. <span data-ttu-id="11d6e-121">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="11d6e-121">Select **Save**.</span></span> 
+5. <span data-ttu-id="56e5d-122">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="56e5d-122">Select **Save**.</span></span> 
 
-## <a name="delete-or-rename-a-query"></a><span data-ttu-id="11d6e-122">Ta bort eller byta namn på en fråga</span><span class="sxs-lookup"><span data-stu-id="11d6e-122">Delete or rename a query</span></span>
-1. <span data-ttu-id="11d6e-123">Högerklicka på en fråga som du vill byta namn på eller ta bort.</span><span class="sxs-lookup"><span data-stu-id="11d6e-123">Right-click on a query you want to rename or delete.</span></span>
+## <a name="delete-or-rename-a-query"></a><span data-ttu-id="56e5d-123">Ta bort eller byta namn på en fråga</span><span class="sxs-lookup"><span data-stu-id="56e5d-123">Delete or rename a query</span></span>
+1. <span data-ttu-id="56e5d-124">Högerklicka på en fråga som du vill byta namn på eller ta bort.</span><span class="sxs-lookup"><span data-stu-id="56e5d-124">Right-click on a query you want to rename or delete.</span></span>
 
     ![Bild av borttagningsfråga](../../media/advanced_hunting_delete_rename.png)
 
-2. <span data-ttu-id="11d6e-125">Välj **Ta bort** och bekräfta borttagningen.</span><span class="sxs-lookup"><span data-stu-id="11d6e-125">Select **Delete** and confirm deletion.</span></span> <span data-ttu-id="11d6e-126">Eller välj **Byt** namn och ange ett nytt namn för frågan.</span><span class="sxs-lookup"><span data-stu-id="11d6e-126">Or select **Rename** and provide a new name for the query.</span></span>
+2. <span data-ttu-id="56e5d-126">Välj **Ta bort** och bekräfta borttagningen.</span><span class="sxs-lookup"><span data-stu-id="56e5d-126">Select **Delete** and confirm deletion.</span></span> <span data-ttu-id="56e5d-127">Eller välj **Byt** namn och ange ett nytt namn för frågan.</span><span class="sxs-lookup"><span data-stu-id="56e5d-127">Or select **Rename** and provide a new name for the query.</span></span>
 
-## <a name="create-a-direct-link-to-a-query"></a><span data-ttu-id="11d6e-127">Skapa en direktlänk till en fråga</span><span class="sxs-lookup"><span data-stu-id="11d6e-127">Create a direct link to a query</span></span>
-<span data-ttu-id="11d6e-128">Om du vill skapa en länk som öppnar frågan direkt i den avancerade frågeredigeraren för sökning slutför du frågan och väljer **Dela länk**.</span><span class="sxs-lookup"><span data-stu-id="11d6e-128">To generate a link that opens your query directly in the advanced hunting query editor, finalize your query and select **Share link**.</span></span>
+## <a name="create-a-direct-link-to-a-query"></a><span data-ttu-id="56e5d-128">Skapa en direktlänk till en fråga</span><span class="sxs-lookup"><span data-stu-id="56e5d-128">Create a direct link to a query</span></span>
+<span data-ttu-id="56e5d-129">Om du vill skapa en länk som öppnar frågan direkt i den avancerade frågeredigeraren för sökning slutför du frågan och väljer **Dela länk**.</span><span class="sxs-lookup"><span data-stu-id="56e5d-129">To generate a link that opens your query directly in the advanced hunting query editor, finalize your query and select **Share link**.</span></span>
 
-## <a name="access-queries-in-the-github-repository"></a><span data-ttu-id="11d6e-129">Åtkomstfrågor på GitHub-lagringsplatsen</span><span class="sxs-lookup"><span data-stu-id="11d6e-129">Access queries in the GitHub repository</span></span>  
-<span data-ttu-id="11d6e-130">Microsoft-säkerhetsvakterna delar regelbundet avancerade sökfrågor på en [angiven offentlig lagringsplats på GitHub.](https://aka.ms/hunting-queries)</span><span class="sxs-lookup"><span data-stu-id="11d6e-130">Microsoft security researchers regularly share advanced hunting queries in a [designated public repository on GitHub](https://aka.ms/hunting-queries).</span></span> <span data-ttu-id="11d6e-131">Lagringsplatsen är öppen för bidrag.</span><span class="sxs-lookup"><span data-stu-id="11d6e-131">This repository is open to contributions.</span></span> <span data-ttu-id="11d6e-132">Delta genom [att kostnadsfritt ansluta till GitHub.](https://github.com/)</span><span class="sxs-lookup"><span data-stu-id="11d6e-132">To contribute, [join GitHub for free](https://github.com/).</span></span>
+## <a name="access-queries-in-the-github-repository"></a><span data-ttu-id="56e5d-130">Åtkomstfrågor på GitHub-lagringsplatsen</span><span class="sxs-lookup"><span data-stu-id="56e5d-130">Access queries in the GitHub repository</span></span>  
+<span data-ttu-id="56e5d-131">Microsoft-säkerhetsvakterna delar regelbundet avancerade sökfrågor på en [angiven offentlig lagringsplats på GitHub.](https://aka.ms/hunting-queries)</span><span class="sxs-lookup"><span data-stu-id="56e5d-131">Microsoft security researchers regularly share advanced hunting queries in a [designated public repository on GitHub](https://aka.ms/hunting-queries).</span></span> <span data-ttu-id="56e5d-132">Lagringsplatsen är öppen för bidrag.</span><span class="sxs-lookup"><span data-stu-id="56e5d-132">This repository is open to contributions.</span></span> <span data-ttu-id="56e5d-133">Delta genom [att kostnadsfritt ansluta till GitHub.](https://github.com/)</span><span class="sxs-lookup"><span data-stu-id="56e5d-133">To contribute, [join GitHub for free](https://github.com/).</span></span>
 
 >[!tip]
-><span data-ttu-id="11d6e-133">Microsoft-säkerhetsvakter erbjuder också avancerade sökfrågor som du kan använda för att hitta aktiviteter och indikatorer som är associerade med nya hot.</span><span class="sxs-lookup"><span data-stu-id="11d6e-133">Microsoft security researchers also provide advanced hunting queries that you can use to locate activities and indicators associated with emerging threats.</span></span> <span data-ttu-id="11d6e-134">Dessa frågor tillhandahålls som en del av rapporterna [över hotanalyser](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) i Microsoft Defender Säkerhetscenter.</span><span class="sxs-lookup"><span data-stu-id="11d6e-134">These queries are provided as part of the [threat analytics](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) reports in Microsoft Defender Security Center.</span></span>
+><span data-ttu-id="56e5d-134">Microsoft-säkerhetsvakter erbjuder också avancerade sökfrågor som du kan använda för att hitta aktiviteter och indikatorer som är associerade med nya hot.</span><span class="sxs-lookup"><span data-stu-id="56e5d-134">Microsoft security researchers also provide advanced hunting queries that you can use to locate activities and indicators associated with emerging threats.</span></span> <span data-ttu-id="56e5d-135">Dessa frågor tillhandahålls som en del av rapporterna [över hotanalyser](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) i Microsoft Defender Säkerhetscenter.</span><span class="sxs-lookup"><span data-stu-id="56e5d-135">These queries are provided as part of the [threat analytics](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) reports in Microsoft Defender Security Center.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="11d6e-135">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="11d6e-135">Related topics</span></span>
-- [<span data-ttu-id="11d6e-136">Översikt över avancerad jakt</span><span class="sxs-lookup"><span data-stu-id="11d6e-136">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="11d6e-137">Lär dig frågespråket</span><span class="sxs-lookup"><span data-stu-id="11d6e-137">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="11d6e-138">Arbeta med frågeresultat</span><span class="sxs-lookup"><span data-stu-id="11d6e-138">Work with query results</span></span>](advanced-hunting-query-results.md)
-- [<span data-ttu-id="11d6e-139">Jaga över olika enheter, e-postmeddelanden, appar och identiteter</span><span class="sxs-lookup"><span data-stu-id="11d6e-139">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="11d6e-140">Förstå schemat</span><span class="sxs-lookup"><span data-stu-id="11d6e-140">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="11d6e-141">Använda metodtips för frågor</span><span class="sxs-lookup"><span data-stu-id="11d6e-141">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+>[!NOTE]
+><span data-ttu-id="56e5d-136">Vissa tabeller i den här artikeln kanske inte är tillgängliga i Microsoft Defender för Endpoint.</span><span class="sxs-lookup"><span data-stu-id="56e5d-136">Some tables in this article might not be available in Microsoft Defender for Endpoint.</span></span> <span data-ttu-id="56e5d-137">[Aktivera Microsoft 365 Defender för](m365d-enable.md) att leta efter hot med hjälp av fler datakällor.</span><span class="sxs-lookup"><span data-stu-id="56e5d-137">[Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources.</span></span> <span data-ttu-id="56e5d-138">Du kan flytta dina avancerade arbetsflöden för sökning från Microsoft Defender för Slutpunkt till Microsoft 365 Defender genom att följa stegen i Migrera avancerade sökfrågor från [Microsoft Defender för Slutpunkt.](advanced-hunting-migrate-from-mde.md)</span><span class="sxs-lookup"><span data-stu-id="56e5d-138">You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="56e5d-139">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="56e5d-139">Related topics</span></span>
+- [<span data-ttu-id="56e5d-140">Översikt över avancerad jakt</span><span class="sxs-lookup"><span data-stu-id="56e5d-140">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="56e5d-141">Lär dig frågespråket</span><span class="sxs-lookup"><span data-stu-id="56e5d-141">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="56e5d-142">Arbeta med frågeresultat</span><span class="sxs-lookup"><span data-stu-id="56e5d-142">Work with query results</span></span>](advanced-hunting-query-results.md)
+- [<span data-ttu-id="56e5d-143">Jaga över olika enheter, e-postmeddelanden, appar och identiteter</span><span class="sxs-lookup"><span data-stu-id="56e5d-143">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="56e5d-144">Förstå schemat</span><span class="sxs-lookup"><span data-stu-id="56e5d-144">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="56e5d-145">Använda metodtips för frågor</span><span class="sxs-lookup"><span data-stu-id="56e5d-145">Apply query best practices</span></span>](advanced-hunting-best-practices.md)

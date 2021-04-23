@@ -138,6 +138,8 @@
           href: data-classification-content-explorer.md
         - name: Kom igång med aktivitetsutforskaren
           href: data-classification-activity-explorer.md
+        - name: Etikettering av åtgärder som rapporterats i Utforskaren
+          href: data-classification-activity-explorer-available-events.md
         - name: Viktig information för dataklassificering
           href: data-classification-pub-preview-relnotes.md
     - name: Känslighetsetiketter
