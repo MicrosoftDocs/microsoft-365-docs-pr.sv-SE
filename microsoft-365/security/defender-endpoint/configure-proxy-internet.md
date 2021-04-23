@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a3885a462265368bc42c758ee5a8fd1c673ec08c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c8f25b924109823951c331fe744b548d372eaf11
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932805"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51957623"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Konfigurera enhetsproxy och internetanslutningsinställningar
 
@@ -60,6 +60,7 @@ Konfigurera en registerbaserad statisk proxy så att endast Defender för slutpu
 
 > [!NOTE]
 > - När du använder det här alternativet på Windows 10 eller Windows Server 2019 rekommenderar vi att du har följande (eller senare) samlad version och kumulativ uppdatering:</br>
+> Windows 10, version 1809 eller Windows Server 2019 – https://support.microsoft.com/kb/5001384 <br>
 > Windows 10, version 1909 – https://support.microsoft.com/kb/4601380</br>
 > Windows 10, version 2004 – https://support.microsoft.com/kb/4601382</br>
 > Windows 10, version 20H2 - https://support.microsoft.com/kb/4601382</br>

@@ -475,6 +475,7 @@
 ####### [Hämta säkerhetsrekommendationer](get-security-recommendations.md)
 ####### [Lägga till eller ta bort maskintaggar](add-or-remove-machine-tags.md)
 ####### [Hitta maskiner efter IP](find-machines-by-ip.md)
+####### [Hitta maskiner efter tagg](find-machines-by-tag.md)
 ####### [Hämta saknade KB:er](get-missing-kbs-machine.md)
 ####### [Ange enhetsvärde](set-device-value.md)
 

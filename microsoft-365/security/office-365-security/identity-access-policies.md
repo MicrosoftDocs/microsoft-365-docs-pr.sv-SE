@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 7ade29259a5552bc9bbaac4b143842c69d05f917
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4b7315cbb8704b691ce4f3d6b96958f18248b478
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207082"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952638"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Vanliga principer för identitets- och enhetsåtkomst
 
@@ -55,18 +55,18 @@ I resten av den här artikeln beskrivs hur du konfigurerar de här principerna.
 
 För att ge dig tid att utföra dessa uppgifter rekommenderar vi att du implementerar baslinjeprinciperna i den ordning som anges i den här tabellen. Men MFA-principerna för känsliga och starkt reglerade skyddsnivåer kan implementeras när som helst.
 
-|Skyddsnivå|Principer|Mer information|
-|---|---|---|
-|**Grundläggande**|[Kräv MFA när inloggningsrisken är *medium* eller *hög*](#require-mfa-based-on-sign-in-risk)||
-||[Blockera klienter som inte har stöd för modern autentisering](#block-clients-that-dont-support-multi-factor)|Klienter som inte använder modern autentisering kan åsidosätta villkorsstyrda åtkomstprinciper, så det är viktigt att blockera dessa.|
-||[Användare med hög risk måste byta lösenord](#high-risk-users-must-change-password)|Tvingar användarna att ändra sitt lösenord vid inloggning om högriskaktivitet identifieras för deras konto.|
-||[Tillämpa principer för appdataskydd](#apply-app-data-protection-policies)|Appskyddsprincipen för One Intune per plattform (Windows, iOS/iPadOS, Android).|
-||[Kräv godkända appar och programskydd](#require-approved-apps-and-app-protection)|Tillämpar mobil appskydd för telefoner och surfplattor med iOS, iPadOS eller Android.|
-||[Definiera principer för enhetsefterlevnad](#define-device-compliance-policies)|En princip för varje plattform.|
-||[Kräv kompatibla PC-datorer](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Framtvingar Intune-hantering av PC-datorer med Windows eller MacOS.|
-|**Känslig**|[Kräv MFA när inloggningsrisken *är låg,* *medel* eller *hög*](#require-mfa-based-on-sign-in-risk)||
-||[Kräv kompatibla datorer *och* mobila enheter](#require-compliant-pcs-and-mobile-devices)|Framtvingar Intune-hantering för både PC-datorer (Windows eller MacOS) och telefoner och surfplattor (iOS, iPadOS eller Android).|
-|**Strikt reglerad**|[*Kräv* alltid MFA](#require-mfa-based-on-sign-in-risk)|
+|Skyddsnivå|Principer|Mer information|Licensiering|
+|---|---|---|---|
+|**Grundläggande**|[Kräv MFA när inloggningsrisken är *medium* eller *hög*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 eller Microsoft 365 E3 med E5-säkerhets tillägg|
+||[Blockera klienter som inte har stöd för modern autentisering](#block-clients-that-dont-support-multi-factor)|Klienter som inte använder modern autentisering kan åsidosätta villkorsstyrda åtkomstprinciper, så det är viktigt att blockera dessa.|Microsoft 365 E3 eller E5|
+||[Användare med hög risk måste byta lösenord](#high-risk-users-must-change-password)|Tvingar användarna att ändra sitt lösenord vid inloggning om högriskaktivitet identifieras för deras konto.|Microsoft 365 E5 eller Microsoft 365 E3 med E5-säkerhets tillägg|
+||[Tillämpa programskyddsprinciper (APP)-dataskydd](#apply-app-data-protection-policies)|Appskyddsprincipen för One Intune per plattform (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 eller E5|
+||[Kräv godkända appar och programskydd](#require-approved-apps-and-app-protection)|Tillämpar mobil appskydd för telefoner och surfplattor med iOS, iPadOS eller Android.|Microsoft 365 E3 eller E5|
+||[Definiera principer för enhetsefterlevnad](#define-device-compliance-policies)|En princip för varje plattform.|Microsoft 365 E3 eller E5|
+||[Kräv kompatibla PC-datorer](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Framtvingar Intune-hantering av PC-datorer med Windows eller MacOS.|Microsoft 365 E3 eller E5|
+|**Känslig**|[Kräv MFA när inloggningsrisken *är låg,* *medel* eller *hög*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 eller Microsoft 365 E3 med E5-säkerhets tillägg|
+||[Kräv kompatibla datorer *och* mobila enheter](#require-compliant-pcs-and-mobile-devices)|Framtvingar Intune-hantering för både PC-datorer (Windows eller MacOS) och telefoner och surfplattor (iOS, iPadOS eller Android).|Microsoft 365 E3 eller E5|
+|**Strikt reglerad**|[*Kräv* alltid MFA](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 eller E5|
 |
 
 ## <a name="assigning-policies-to-groups-and-users"></a>Tilldela principer till grupper och användare
@@ -95,11 +95,11 @@ Var försiktig när du använder högre skyddsnivåer för grupper och användar
 
 Alla Azure AD-grupper som skapats som en del av dessa rekommendationer måste skapas som Microsoft 365-grupper. Detta är viktigt för distribution av känslighetsetiketter när du skyddar dokument i Microsoft Teams och SharePoint.
 
-![Skärmdump för att skapa Microsoft 365-grupper](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
+![Exempel på hur du skapar en Microsoft 365-grupp](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Kräv MFA baserat på inloggningsrisk
 
-Du bör be användarna registrera sig för MFA innan de behöver använda den. Om du har Microsoft 365 E5, Microsoft 365 E3 med tillägget Identity & Threat Protection, Office 365 med EMS E5 eller enskilda Azure AD Premium P2-licenser, kan du använda MFA-registreringsprincipen med Azure AD Identity Protection för att kräva att användare registrerar sig för MFA. Det [nödvändiga arbetet omfattar](identity-access-prerequisites.md) registrering av alla användare med MFA.
+Du bör be användarna registrera sig för MFA innan de behöver använda den. Om du har Microsoft 365 E5, Microsoft 365 E3 med tillägget E5-säkerhet, Office 365 med EMS E5 eller enskilda Azure AD Premium P2-licenser kan du använda MFA-registreringsprincipen med Azure AD Identity Protection för att kräva att användare registrerar sig för MFA. Det [nödvändiga arbetet omfattar](identity-access-prerequisites.md) registrering av alla användare med MFA.
 
 När användarna har registrerats kan du kräva MFA för inloggning med en ny princip för villkorsstyrd åtkomst.
 
@@ -190,7 +190,7 @@ I **avsnittet** Uppgifter:
 |Skriv|Egenskaper|Värden|Åtgärd|
 |---|---|---|---|
 |Användare|Inkludera|**Alla användare**|Välj|
-|Användarrisk|**Högsta**||Välj|
+|Användarrisk|**Hög**||Välj|
 |
 
 I det andra **avsnittet uppgifter:**
@@ -211,7 +211,7 @@ Använd den här principen tillsammans med [Konfigurera Lösenordsskydd](/azure/
 
 ## <a name="apply-app-data-protection-policies"></a>Använda principer för APP-dataskydd
 
-Appskyddsprinciper (APP) definierar vilka appar som tillåts och vilka åtgärder de kan vidta med organisationens data. De val som finns tillgängliga i APP gör det möjligt för organisationer att anpassa skyddet efter sina specifika behov. För vissa är det kanske inte uppenbart vilka principinställningar som krävs för att implementera ett fullständigt scenario. För att hjälpa organisationer att prioritera klientslutpunktens hårdnande har Microsoft introducerat taxonomi för sitt APP-dataskyddsramverk för hantering av iOS- och Android-mobilappar.
+APP:er definierar vilka appar som tillåts och vilka åtgärder de kan vidta med organisationens data. De val som finns tillgängliga i APP gör det möjligt för organisationer att anpassa skyddet efter sina specifika behov. För vissa är det kanske inte uppenbart vilka principinställningar som krävs för att implementera ett fullständigt scenario. För att hjälpa organisationer att prioritera klientslutpunktens hårdnande har Microsoft introducerat taxonomi för sitt APP-dataskyddsramverk för hantering av iOS- och Android-mobilappar.
 
 Ramverket för APP-dataskydd är indelade i tre distinkta konfigurationsnivåer, med varje nivå som bygger på den föregående nivån:
 
@@ -331,12 +331,12 @@ Information **om Systemsäkerhet** finns i den här tabellen.
 
 |Skriv|Egenskaper|Värde|Åtgärd|
 |---|---|---|---|
-|Microsoft Defender för slutpunktsregler|Kräv att enheten ligger på eller under maskinriskresultatet|Medel|Välj|
+|Microsoft Defender för slutpunktsregler i administrationscentret för Microsoft Endpoint Manager|[Kräv att enheten ligger på eller under maskinriskresultatet](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Medel|Välj|
 |
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Kräv kompatibla datorer (men inte kompatibla telefoner och surfplattor)
 
-Innan du lägger till en princip för att kräva kompatibla datorer måste du registrera enheter för hantering i Intune. Användning av multifaktorautentisering rekommenderas innan enheter registreras i Intune för att säkerställa att enheten ligger hos den avsedda användaren.
+Innan du lägger till en princip för att kräva kompatibla datorer måste du registrera dina enheter för hantering i Intune. Användning av multifaktorautentisering rekommenderas innan enheter registreras i Intune för att säkerställa att enheten ligger hos den avsedda användaren.
 
 Så här kräver du kompatibla datorer:
 

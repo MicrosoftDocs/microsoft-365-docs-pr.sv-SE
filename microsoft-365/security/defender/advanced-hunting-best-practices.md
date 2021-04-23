@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7db7607d3ed9d6f1b215fb842d5b6dd2415a770a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: abc6b561c2fca8106397b1656432628c983e2ece
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934903"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952698"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Avancerade metodtips för sökningsfrågor
 
@@ -263,6 +263,9 @@ Det finns olika funktioner som du kan använda för att effektivt hantera strän
 | IPv6-adresser | [parse_ipv6()](/azure/data-explorer/kusto/query/parse-ipv6function)  | Konvertera en IPv4- eller IPv6-adress till den kanoniska IPv6-notationen. Jämför IPv6-adresser med hjälp [av ipv6_compare()](/azure/data-explorer/kusto/query/ipv6-comparefunction). |
 
 Mer information om alla parsingsfunktioner som stöds finns [i Kusto-strängfunktioner.](/azure/data-explorer/kusto/query/scalarfunctions#string-functions) 
+
+>[!NOTE]
+>Vissa tabeller i den här artikeln kanske inte är tillgängliga i Microsoft Defender för Endpoint. [Aktivera Microsoft 365 Defender för](m365d-enable.md) att leta efter hot med hjälp av fler datakällor. Du kan flytta dina avancerade arbetsflöden för sökning från Microsoft Defender för Slutpunkt till Microsoft 365 Defender genom att följa stegen i Migrera avancerade sökfrågor från [Microsoft Defender för Slutpunkt.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Språkdokumentation för kustofrågor](/azure/data-explorer/kusto/query/)

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 40cec28bf88445df13f78e672c4289d440b2b848
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f4b1399b77583e95b109575a9577d8b1af89e6ad
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935863"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952674"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>Utöka den avancerade söktäckningen med rätt inställningar
 
@@ -34,6 +34,7 @@ ms.locfileid: "51935863"
 
 **Gäller för:**
 - Microsoft 365 Defender
+- Microsoft Defender för Endpoint
 
 [Avancerad sökning](advanced-hunting-overview.md) använder data från olika källor, till exempel dina enheter, Office 365-arbetsytor, Azure AD och Microsoft Defender för identitet. För att få så omfattande data som möjligt bör du kontrollera att du har rätt inställningar i motsvarande datakällor.
 
@@ -52,6 +53,9 @@ Om du kör Active Directory lokalt måste du installera Microsoft Defender för 
 | Data | Beskrivning | Schematabell | Så här konfigurerar du |
 | --- | --- | --- | --- |
 | Domänkontrollant | Data från lokalt Active Directory som skickas till Microsoft Defender för identitet, och identifiering av identitetsrelaterad information, till exempel kontoinformation, inloggningsaktivitet och Active Directory-frågor | Flera tabeller, inklusive [IdentityInfo,](advanced-hunting-identityinfo-table.md) [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)och [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Installera Microsoft Defender för identitets sensor](/azure-advanced-threat-protection/install-atp-step4)<br>- [Aktivera relevanta Windows-händelser](/azure-advanced-threat-protection/configure-event-collection) |
+
+>[!NOTE]
+>Vissa tabeller i den här artikeln kanske inte är tillgängliga i Microsoft Defender för Endpoint. [Aktivera Microsoft 365 Defender för](m365d-enable.md) att leta efter hot med hjälp av fler datakällor. Du kan flytta dina avancerade arbetsflöden för sökning från Microsoft Defender för Slutpunkt till Microsoft 365 Defender genom att följa stegen i Migrera avancerade sökfrågor från [Microsoft Defender för Slutpunkt.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

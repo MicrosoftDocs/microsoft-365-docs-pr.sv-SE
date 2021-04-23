@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 5bf879bed31f4a8ddea868f28084148c3ec8afae
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: edce65314062f731673926195be791f77d1cb823
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207019"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952554"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Nödvändiga åtgärder för att implementera principer för identitets- och enhetsåtkomst
 
@@ -35,7 +35,7 @@ ms.locfileid: "51207019"
 
 I den här artikeln beskrivs vilka förutsättningar administratörer måste uppfylla för att kunna använda rekommenderade principer för identitet och enhetsåtkomst, och för att använda villkorsstyrd åtkomst. Dessutom diskuteras de rekommenderade standarderna för konfiguration av klientplattformar för bästa möjliga enkel inloggning (SSO).
 
-## <a name="prerequisites"></a>Krav
+## <a name="prerequisites"></a>Förutsättningar
 
 Innan du använder de identitets- och enhetsåtkomstprinciper som rekommenderas måste organisationen uppfylla kraven. Kraven är olika för de olika identitets- och autentiseringsmodellerna som anges:
 
@@ -46,18 +46,18 @@ Innan du använder de identitets- och enhetsåtkomstprinciper som rekommenderas 
 
 I följande tabell finns information om de nödvändiga funktionerna och deras konfiguration som gäller för alla identitetsmodeller, om inget annat anges.
 
-|Konfiguration|Undantag|
-|---|:---:|
-|[Konfigurera PHS](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Detta måste vara aktiverat för att identifiera läckta autentiseringsuppgifter och agera på dem för riskbaserad villkorsstyrd åtkomst. **Obs!** Detta är obligatoriskt oavsett om organisationen använder federerad autentisering.|Endast molnet|
-|[Aktivera sömlös enkel inloggning för att](/azure/active-directory/connect/active-directory-aadconnect-sso) automatiskt logga in användare när de använder sina organisationsenheter som är anslutna till organisationens nätverk.|Endast molnet och externa|
-|[Konfigurera namngivna platser](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations). Azure AD Identity Protection samlar in och analyserar alla tillgängliga sessionsdata för att skapa en risknivå. Vi rekommenderar att du anger organisationens offentliga IP-intervall för nätverket i konfigurationen av namngivna azure AD-platser. Trafik från dessa intervall ges lägre riskresultat och trafik utanför organisationsmiljön får högre risknivå.||
-|[Registrera alla användare för självbetjäning för återställning av lösenord (SSPR) och multifaktorautentisering (MFA).](/azure/active-directory/authentication/concept-registration-mfa-sspr-converged) Vi rekommenderar att du registrerar användare för Azure AD Multi-Factor Authentication i förväg. Azure AD Identity Protection använder Azure AD Multi-Factor Authentication för att utföra ytterligare säkerhetsverifiering. För bästa inloggningsupplevelse rekommenderar vi dessutom att användarna installerar [appen Microsoft Authenticator](/azure/active-directory/user-help/microsoft-authenticator-app-how-to) och appen Microsoft Company Portal på sina enheter. De kan installeras från appbutiken för varje plattform.||
-|[Aktivera automatisk enhetsregistrering för domänbaserade Windows-datorer.](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup) Villkorsstyrd åtkomst ser till att enheter som ansluter till appar är domänanslutna eller kompatibla. Enheten måste vara registrerad med Azure AD för att stödja detta på Windows-datorer.  I den här artikeln beskrivs hur du konfigurerar automatisk enhetsregistrering.|Endast molnet|
-|**Förbered ditt supportteam**. Ha en plan för användare som inte kan slutföra MFA. Det kan vara att lägga till dem i en princip undantagsgrupp eller registrera ny MFA-information för dem. Innan du gör någon av dessa säkerhetskänsliga ändringar måste du se till att den faktiska användaren gör begäran. Att kräva att användarnas chefer hjälper till med godkännandet är ett effektivt steg.||
-|[Konfigurera tillbakaskrivning av lösenord till lokal AD.](/azure/active-directory/active-directory-passwords-getting-started) Med tillbakaskrivning av lösenord kan Azure AD kräva att användarna ändrar sina lokala lösenord när en högriskkontokompromettering upptäcks. Du kan aktivera den här funktionen med Azure AD  Connect på ett av två sätt: antingen aktivera Tillbakaskrivning av lösenord på skärmen med valfria funktioner i installationsguiden för Azure AD Connect eller aktivera den via Windows PowerShell.|Endast molnet|
-|[Konfigurera Lösenordsskydd i Azure AD.](/azure/active-directory/authentication/concept-password-ban-bad) Azure AD-lösenordsskydd upptäcker och blockerar kända svaga lösenord och deras varianter och kan också blockera ytterligare svaga termer som är specifika för din organisation. Standard globala förbjudna lösenordslistor tillämpas automatiskt på alla användare i en Azure AD-klient. Du kan definiera ytterligare poster i en anpassad förbjuden lösenordslista. När användare ändrar eller återställer sina lösenord kontrolleras dessa förbjudna lösenordslistor för att använda starka lösenord.||
-|[Aktivera Azure Active Directory-identitetsskydd](/azure/active-directory/identity-protection/overview-identity-protection). Med Azure AD Identity Protection kan du upptäcka potentiella säkerhetsproblem som påverkar organisationens identiteter och konfigurera en automatiserad åtgärdsprincip för låg, medium och hög inloggningsrisk och användarrisk.||
-|**Aktivera modern autentisering** för [Exchange Online och](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) Skype för företag – [Online.](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) Modern autentisering krävs för att använda MFA. Modern autentisering är aktiverad som standard för Office 2016- och 2019-klienter, SharePoint och OneDrive för företag.||
+|Konfiguration|Undantag|Licensiering|
+|---|:---:|---|
+|[Konfigurera PHS](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Detta måste vara aktiverat för att identifiera läckta autentiseringsuppgifter och agera på dem för riskbaserad villkorsstyrd åtkomst. **Obs!** Detta är obligatoriskt oavsett om organisationen använder federerad autentisering.|Endast molnet|Microsoft 365 E3 eller E5|
+|[Aktivera sömlös enkel inloggning för att](/azure/active-directory/connect/active-directory-aadconnect-sso) automatiskt logga in användare när de använder sina organisationsenheter som är anslutna till organisationens nätverk.|Endast molnet och externa|Microsoft 365 E3 eller E5|
+|[Konfigurera namngivna platser](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations). Azure AD Identity Protection samlar in och analyserar alla tillgängliga sessionsdata för att skapa en risknivå. Vi rekommenderar att du anger organisationens offentliga IP-intervall för nätverket i konfigurationen av namngivna azure AD-platser. Trafik från dessa intervall ges lägre riskresultat och trafik utanför organisationsmiljön får högre risknivå.||Microsoft 365 E3 eller E5|
+|[Registrera alla användare för självbetjäning för återställning av lösenord (SSPR) och multifaktorautentisering (MFA).](/azure/active-directory/authentication/concept-registration-mfa-sspr-converged) Vi rekommenderar att du registrerar användare för Azure AD Multi-Factor Authentication i förväg. Azure AD Identity Protection använder Azure AD Multi-Factor Authentication för att utföra ytterligare säkerhetsverifiering. För bästa inloggningsupplevelse rekommenderar vi dessutom att användarna installerar [appen Microsoft Authenticator](/azure/active-directory/user-help/microsoft-authenticator-app-how-to) och appen Microsoft Company Portal på sina enheter. De kan installeras från appbutiken för varje plattform.||Microsoft 365 E3 eller E5|
+|[Aktivera automatisk enhetsregistrering för domänbaserade Windows-datorer.](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup) Villkorsstyrd åtkomst ser till att enheter som ansluter till appar är domänanslutna eller kompatibla. Enheten måste vara registrerad med Azure AD för att stödja detta på Windows-datorer.  I den här artikeln beskrivs hur du konfigurerar automatisk enhetsregistrering.|Endast molnet|Microsoft 365 E3 eller E5|
+|**Förbered ditt supportteam**. Ha en plan för användare som inte kan slutföra MFA. Det kan vara att lägga till dem i en princip undantagsgrupp eller registrera ny MFA-information för dem. Innan du gör någon av dessa säkerhetskänsliga ändringar måste du se till att den faktiska användaren gör begäran. Att kräva att användarnas chefer hjälper till med godkännandet är ett effektivt steg.||Microsoft 365 E3 eller E5|
+|[Konfigurera tillbakaskrivning av lösenord till lokal AD.](/azure/active-directory/active-directory-passwords-getting-started) Med tillbakaskrivning av lösenord kan Azure AD kräva att användarna ändrar sina lokala lösenord när en högriskkontokompromettering upptäcks. Du kan aktivera den här funktionen med Azure AD  Connect på ett av två sätt: antingen aktivera Tillbakaskrivning av lösenord på skärmen med valfria funktioner i installationsguiden för Azure AD Connect eller aktivera den via Windows PowerShell.|Endast molnet|Microsoft 365 E3 eller E5|
+|[Konfigurera Lösenordsskydd i Azure AD.](/azure/active-directory/authentication/concept-password-ban-bad) Azure AD-lösenordsskydd upptäcker och blockerar kända svaga lösenord och deras varianter och kan också blockera ytterligare svaga termer som är specifika för din organisation. Standard globala förbjudna lösenordslistor tillämpas automatiskt på alla användare i en Azure AD-klient. Du kan definiera ytterligare poster i en anpassad förbjuden lösenordslista. När användare ändrar eller återställer sina lösenord kontrolleras dessa förbjudna lösenordslistor för att använda starka lösenord.||Microsoft 365 E3 eller E5|
+|[Aktivera Azure Active Directory-identitetsskydd](/azure/active-directory/identity-protection/overview-identity-protection). Med Azure AD Identity Protection kan du upptäcka potentiella säkerhetsproblem som påverkar organisationens identiteter och konfigurera en automatiserad åtgärdsprincip för låg, medium och hög inloggningsrisk och användarrisk.||Microsoft 365 E5 eller Microsoft 365 E3 med E5-säkerhets tillägg|
+|**Aktivera modern autentisering** för [Exchange Online och](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) Skype för företag – [Online.](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) Modern autentisering krävs för att använda MFA. Modern autentisering är aktiverad som standard för Office 2016- och 2019-klienter, SharePoint och OneDrive för företag.||Microsoft 365 E3 eller E5|
 |
 
 ## <a name="recommended-client-configurations"></a>Rekommenderade klientkonfigurationer

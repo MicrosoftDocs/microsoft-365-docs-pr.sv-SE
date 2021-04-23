@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0194a752a0050fe68c5372bbfc93ea5f17d1d8e6
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 83c78f9df5560c75e40a171d770e994b86049204
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935767"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952590"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Använda delade frågor för avancerad sökning
 
@@ -34,6 +34,7 @@ ms.locfileid: "51935767"
 
 **Gäller för:**
 - Microsoft 365 Defender
+- Microsoft Defender för Endpoint
 
 
 
@@ -73,6 +74,9 @@ Microsoft-säkerhetsvakterna delar regelbundet avancerade sökfrågor på en [an
 
 >[!tip]
 >Microsoft-säkerhetsvakter erbjuder också avancerade sökfrågor som du kan använda för att hitta aktiviteter och indikatorer som är associerade med nya hot. Dessa frågor tillhandahålls som en del av rapporterna [över hotanalyser](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) i Microsoft Defender Säkerhetscenter.
+
+>[!NOTE]
+>Vissa tabeller i den här artikeln kanske inte är tillgängliga i Microsoft Defender för Endpoint. [Aktivera Microsoft 365 Defender för](m365d-enable.md) att leta efter hot med hjälp av fler datakällor. Du kan flytta dina avancerade arbetsflöden för sökning från Microsoft Defender för Slutpunkt till Microsoft 365 Defender genom att följa stegen i Migrera avancerade sökfrågor från [Microsoft Defender för Slutpunkt.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

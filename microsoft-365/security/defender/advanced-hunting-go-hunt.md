@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 51d33ea9a372b5bfe017f4c3544e0d6413d53001
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: a78f37d8c1fed1063095e25f19136f0362f17db7
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935839"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952662"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Snabbt jaga efter entitets- eller händelseinformation med go-hunt
 
@@ -34,12 +34,13 @@ ms.locfileid: "51935839"
 
 **Gäller för:**
 - Microsoft 365 Defender
+- Microsoft Defender för Endpoint
 
 Med *sökåtgärden* sök kan du snabbt undersöka händelser och olika entitetstyper med hjälp av kraftfulla [frågebaserade, avancerade](advanced-hunting-overview.md) sökfunktioner. Den här åtgärden kör automatiskt en avancerad fråga för att hitta relevant information om den valda händelsen eller enheten.
 
 Åtgärden *gåsök* är tillgänglig i olika delar av säkerhetscentret när händelse- eller entitetsinformation visas. Du kan till exempel använda *gå jag* från följande avsnitt:
 
-- På [incidentsidan kan](investigate-incidents.md#summary)du granska information om användare, enheter och många andra enheter som är kopplade till ett problem. När du väljer en entitet får du ytterligare information samt olika åtgärder du kan utföra på den titel. I exemplet nedan är en postlåda markerad och visar information om postlådan samt alternativet för att leta efter mer information om postlådan.
+- På [incidentsidan kan](investigate-incidents.md#summary)du granska information om användare, enheter och många andra enheter som är kopplade till ett problem. När du väljer en entitet får du ytterligare information samt olika åtgärder du kan utföra på den enheten. I exemplet nedan är en postlåda markerad och visar information om postlådan samt alternativet för att leta efter mer information om postlådan.
 
     ![Bild som visar postlådeinformation med alternativet gå-jaga](../../media/mtp-ah/go-hunt-email.png)
 
@@ -106,6 +107,9 @@ Timestamp between ((selectedTimestamp - 1h) .. (selectedTimestamp + 1h))
 Förutom att ändra frågan för att få mer relevanta resultat kan du också:
 - [Visa resultatet som diagram](advanced-hunting-query-results.md#view-query-results-as-a-table-or-chart)
 - [Skapa en anpassad identifieringsregel](custom-detection-rules.md)
+
+>[!NOTE]
+>Vissa tabeller i den här artikeln kanske inte är tillgängliga i Microsoft Defender för Endpoint. [Aktivera Microsoft 365 Defender för](m365d-enable.md) att leta efter hot med hjälp av fler datakällor. Du kan flytta dina avancerade arbetsflöden för sökning från Microsoft Defender för Slutpunkt till Microsoft 365 Defender genom att följa stegen i Migrera avancerade sökfrågor från [Microsoft Defender för Slutpunkt.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

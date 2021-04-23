@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e7bae0577b83deed26b0a3beb0f16efc80bb5846
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 14287fb6dea9dda8accb580246b383f0427c3b3f
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935791"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952626"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Lär dig språket för avancerad fråga om sökning
 
@@ -34,6 +34,7 @@ ms.locfileid: "51935791"
 
 **Gäller för:**
 - Microsoft 365 Defender
+- Microsoft Defender för Endpoint
 
 Avancerad sökning är baserad på [språket i Kusto-frågan.](/azure/kusto/query/) Du kan använda kustooperatorer och -uttryck till att skapa frågor som söker efter information i ett särskilt [schema.](advanced-hunting-schema-tables.md) För att förstå begreppen bättre bör du köra din första fråga.
 
@@ -180,6 +181,9 @@ I **avsnittet Komma** igång finns några enkla frågor som används med vanliga
 ## <a name="access-query-language-documentation"></a>Dokumentation om frågespråk i Access
 
 Mer information om Kusto-frågespråk och operatorer som stöds finns i [Kusto-frågespråks dokumentation.](/azure/kusto/query/)
+
+>[!NOTE]
+>Vissa tabeller i den här artikeln kanske inte är tillgängliga i Microsoft Defender för Endpoint. [Aktivera Microsoft 365 Defender för](m365d-enable.md) att leta efter hot med hjälp av fler datakällor. Du kan flytta dina avancerade arbetsflöden för sökning från Microsoft Defender för Slutpunkt till Microsoft 365 Defender genom att följa stegen i Migrera avancerade sökfrågor från [Microsoft Defender för Slutpunkt.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bcb31b904f8e6156d644864f03143e9fc37ae34b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f37cc63c958331f7c03e09689de92c73fd06b4d4
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935719"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952566"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Skapa och hantera anpassade identifieringsregler
 
@@ -34,6 +34,7 @@ ms.locfileid: "51935719"
 
 **Gäller för:**
 - Microsoft 365 Defender
+- Microsoft Defender för Endpoint
 
 Anpassade identifieringsregler är regler som du kan utforma och modifiera [med hjälp av avancerade sökfrågor.](advanced-hunting-overview.md) Med dessa regler kan du proaktivt övervaka olika händelser och systemhändelser, inklusive misstänkt intrång och felkonfigurerade slutpunkter. Du kan ange att de ska köras med jämna mellanrum, generera aviseringar och vidta svarsåtgärder när det finns matchningar.
 
@@ -219,6 +220,9 @@ På skärmen med regeldetaljer **(** Anpassade identifieringar av uppgifter  >  
 
 >[!TIP]
 >Om du snabbt vill visa information och vidta åtgärder för ett objekt i en tabell använder du urvalskolumnen [&#10003;] till vänster om tabellen.
+
+>[!NOTE]
+>Vissa kolumner i den här artikeln kanske inte är tillgängliga i Microsoft Defender för Endpoint. [Aktivera Microsoft 365 Defender för](m365d-enable.md) att leta efter hot med hjälp av fler datakällor. Du kan flytta dina avancerade arbetsflöden för sökning från Microsoft Defender för Slutpunkt till Microsoft 365 Defender genom att följa stegen i Migrera avancerade sökfrågor från [Microsoft Defender för Slutpunkt.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="see-also"></a>Se även
 - [Översikt över anpassade identifieringar](custom-detections-overview.md)

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4eea2931196c192620812c1609c506e1fb99093d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 17aca5fb388aef26504902ee63b22410420c8827
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932959"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952494"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Introducera Windows-servrar till Microsoft Defender för slutpunktstjänsten
 
@@ -194,7 +194,7 @@ Defender för Endpoint kan integreras med Azure Defender för att tillhandahåll
 
 Följande funktioner ingår i den här integreringen:
 
-- Automatisk onboarding – Defender för slutpunkts sensor aktiveras automatiskt på Windows-servrar som är onboarded to Azure Defender. Mer information om Azure Defender-registrering finns i [Onboarding till Azure Defender Standard för förbättrad säkerhet.](https://docs.microsoft.com/azure/security-center/security-center-onboarding)
+- Automatisk onboarding – Defender för slutpunkts sensor aktiveras automatiskt på Windows-servrar som är onboarded to Azure Defender. Mer information om Azure Defender-registrering finns i Använda [den integrerade Microsoft Defender för Slutpunktslicensen.](https://docs.microsoft.com/azure/security-center/security-center-wdatp)
 
     > [!NOTE]
     > Integreringen mellan Azure Defender för servrar och Microsoft Defender för slutpunkt har utökats med stöd för [Windows Server 2019 och Windows Virtual Desktop (WVD).](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
@@ -338,7 +338,8 @@ När det är klart måste du skapa en princip för startskript:
 
 :::image type="content" source="images/startupprops.png" alt-text="startegenskaper":::
 
-Namnet på filen som ska köras här är c:\windows\MMA\DeployMMA.cmd När servern startas om som en del av startprocessen installeras uppdatering för kundupplevelse och diagnostisk telemetri KB, och SEDAN installera MMAAgent, samtidigt som du anger arbetsyte-ID och -nyckel, så tas servern med.
+Namnet på filen som ska köras här är c:\windows\MMA\DeployMMA.cmd.
+När servern startas om som en del av startprocessen installeras uppdateringen för kundupplevelse och diagnostisk telemetri KB, och mma-agenten installeras samtidigt som arbetsyte-ID och nyckel konfigureras för servern.
 
 Du kan också använda en **omedelbar uppgift** för att köra distribueraMMA.cmd om du inte vill starta om alla servrar.
 Det kan du göra i två faser. Skapa först **filerna och** mappen i GPO – Se till att GPO:t tillämpas och att alla servrar har installationsfilerna. Lägg sedan till den direkta uppgiften. Det här uppnår samma resultat utan att behöva starta om datorn.

@@ -20,16 +20,21 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d8d165f39c45bd235800dc951d50934b47dd7ff5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 32d50103c6476a89f24568edeea75a206e37e227
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935455"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952686"
 ---
 # <a name="handle-advanced-hunting-errors"></a>Hantera avancerade sökfel
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
+**Gäller för:**
+- Microsoft 365 Defender
+- Microsoft Defender för Endpoint
 
 
 Avancerad sökning visar fel för att meddela om syntaxfel och när frågor träffar fördefinierade [kvoter och användningsparametrar.](advanced-hunting-limits.md) I tabellen nedan finns tips om hur du löser eller undviker fel.
@@ -43,6 +48,8 @@ Avancerad sökning visar fel för att meddela om syntaxfel och när frågor trä
 | Överskriden storleksgräns för resultat  | Den sammanlagda storleken på resultatuppsättningen för frågan har överskridit den maximala storleken. Det här felet kan uppstå om resultatuppsättningen är så stor att trunkeringen vid gränsen på 10 000 poster inte kan minska den till en godtagbar storlek. Resultat som har flera kolumner med anpassningsbart innehåll är mer sannolikt att påverkas av det här felet. | [Optimera frågan](advanced-hunting-best-practices.md) | `Result size limit exceeded. Use "summarize" to aggregate results, "project" to drop uninteresting columns, or "take" to truncate results.` |
 | Överflödig resursanvändning | Frågan har förbrukat alltför mycket resurser och har slutat slutföras. I vissa fall identifierar avancerad sökning den specifika operatorn som inte optimerades. | [Optimera frågan](advanced-hunting-best-practices.md) | -`Query stopped due to excessive resource consumption.`<br>-`Query stopped. Adjust use of the <operator name> operator to avoid excessive resource consumption.` |
 | Okända fel | Frågan misslyckades på grund av en okänd orsak. | Försök att köra frågan igen. Kontakta Microsoft via portalen om frågor fortsätter att returnera okända fel. | `An unexpected error occurred during query execution. Please try again in a few minutes.`
+
+
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Avancerade metodtips för sökning](advanced-hunting-best-practices.md)

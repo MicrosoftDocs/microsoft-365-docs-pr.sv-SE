@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dce9a3d41d8a9d7c260cda8a930867da8c2ae8ac
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: a4714ad9a4388654cbf865ed54afe260a67d724f
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862253"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51957509"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Microsoft Defender för Endpoint för icke-Windows-plattformar
 
@@ -45,25 +45,25 @@ Med Microsoft Defender för slutpunkt drar kunder nytta av en enhetlig vy över 
 
 Microsoft Defender för slutpunkt på macOS erbjuder funktioner för identifiering och svar av antivirus och slutpunkt (EDR) för de tre senaste släppta versionerna av macOS. Kunder kan distribuera och hantera lösningen via Microsoft Endpoint Manager och Jamf. Precis som för Microsoft Office-program i macOS används Microsoft Auto Update för att hantera Microsoft Defender för slutpunkt på Mac-uppdateringar. Mer information om viktiga funktioner och fördelar finns i [våra meddelanden.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)
 
-Mer information om hur du kommer igång finns i dokumentationen för Defender för slutpunkt på [macOS.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac)
+Mer information om hur du kommer igång finns i dokumentationen för Defender för slutpunkt på [macOS.](microsoft-defender-endpoint-mac.md)
 
 ## <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender för Endpoint för Linux
 
 Microsoft Defender för Slutpunkt på Linux erbjuder preventativa funktioner (AV) för Linux-servrar. Detta inkluderar en fullständig kommandoradsupplevelse för att konfigurera och hantera agenten, initiera genomsökningar och hantera hot. Vi stöder de senaste versionerna av de sex vanligaste Linux Server-distributionerna: RHEL 7.2+, CentOS Linux 7.2+, Ubuntu 16 LTS eller senare LTS, SLES 12+, Liter 9+och Oracle Linux 7.2. Microsoft Defender för slutpunkt på Linux kan distribueras och konfigureras med hjälp av Klient, Ansible eller ditt befintliga konfigurationsverktyg för Linux. Mer information om viktiga funktioner och fördelar finns i [våra meddelanden.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux)
 
-Mer information om hur du kommer igång finns i dokumentationen för Microsoft Defender för Endpoint [på](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-linux)Linux.
+Mer information om hur du kommer igång finns i dokumentationen för Microsoft Defender för Endpoint [på](microsoft-defender-endpoint-linux.md)Linux.
 
 ## <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender för Endpoint för Android
 
 Microsoft Defender för slutpunkt på Android är vår lösning för skydd mot mobila hot för enheter med Android 6.0 och senare. Både lägena Android Enterprise (arbetsprofil) och Enhetsadministratör stöds. I Android erbjuder vi webbskydd, som omfattar skydd mot nätfiske, blockering av osäkra anslutningar och inställning av anpassade indikatorer. Lösningen söker efter skadlig kod och potentiellt oönskade program (PUA) och erbjuder ytterligare skyddsfunktioner mot intrång genom integrering med Microsoft Endpoint Manager och Villkorsstyrd åtkomst. Mer information om viktiga funktioner och fördelar finns i [våra meddelanden.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Android)
 
-Mer information om hur du kommer igång finns i dokumentationen för Microsoft Defender för slutpunkt [på](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-android)Android.
+Mer information om hur du kommer igång finns i dokumentationen för Microsoft Defender för slutpunkt [på](microsoft-defender-endpoint-android.md)Android.
 
 ## <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender för Endpoint för iOS
 
 Microsoft Defender för Endpoint på iOS är vår lösning för mobilt skydd mot hot för enheter med iOS 11.0 och senare. Både övervakade och ej övervakade enheter stöds. I iOS erbjuder vi webbskydd som omfattar skydd mot nätfiske, blockering av osäkra anslutningar och inställning av anpassade indikatorer. Mer information om viktiga funktioner och fördelar finns i [våra meddelanden.](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS) 
 
-Mer information om hur du kommer igång finns i dokumentationen för Microsoft Defender för Slutpunkt på [iOS.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-ios)
+Mer information om hur du kommer igång finns i dokumentationen för Microsoft Defender för Slutpunkt på [iOS.](microsoft-defender-endpoint-ios.md)
 
 ## <a name="licensing-requirements"></a>Licenskrav 
 

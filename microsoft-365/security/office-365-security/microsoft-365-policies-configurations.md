@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 104ef919d356642985e7b34d16650c27a8141e86
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 464a99ca67da72633879840263fe64ad8311fd4c
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615105"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952578"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationer av identiteter och enhetsåtkomst
 
@@ -50,6 +50,8 @@ Om organisationen har unika miljökrav eller komplexitet kan du använda de här
 
 Titta på den här videon för en snabb överblick över identitets- och enhetsåtkomstkonfigurationer för Microsoft 365 för företag.
 
+<br>
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxEDQ]
 
 > [!NOTE]
@@ -57,13 +59,13 @@ Titta på den här videon för en snabb överblick över identitets- och enhets�
 
 ## <a name="intended-audience"></a>Avsedd målgrupp
 
-De här rekommendationerna är avsedda för företagsarkitekter och IT-personal som känner till Microsoft 365-molnproduktivitets- och säkerhetstjänsterna, som omfattar Azure AD (identitet), Microsoft Intune (enhetshantering) och Azure Information Protection (dataskydd).
+De här rekommendationerna är avsedda för företagsarkitekter och IT-personal som känner till Microsoft 365-molnproduktivitets- och säkerhetstjänsterna, som omfattar Azure AD (identitet), Microsoft Intune (enhetshantering) och Microsoft Information Protection (dataskydd).
 
 ### <a name="customer-environment"></a>Kundmiljö
 
 De rekommenderade principerna gäller för företagsorganisationer som arbetar både helt i Microsoft-molnet och för kunder med hybrididentitetsinfrastruktur, som är en lokal AD DS-skog (Active Directory Domain Services) som synkroniseras med en Azure AD-klientorganisation.
 
-Många av de medföljande rekommendationerna förlitar sig på tjänster som endast är tillgängliga med Microsoft 365 E5, Microsoft 365 E3 med licenserna Identity & Threat Protection, EMS E5 och Azure Premium P2.
+Många av de angivna rekommendationerna förlitar sig på tjänster som endast är tillgängliga med licenserna Microsoft 365 E5, Microsoft 365 E3 och E5-säkerhet, EMS E5 eller Azure AD Premium P2.
 
 För de organisationer som inte har dessa licenser rekommenderar [](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)Microsoft dig att åtminstone implementera säkerhetsstandarder , som ingår i alla Microsoft 365-abonnemang.
 
@@ -122,7 +124,7 @@ Azure AD innehåller en komplett uppsättning identitetshanteringsfunktioner. Vi
 |[Villkorsstyrd åtkomst](/azure/active-directory/conditional-access/overview)|Azure AD utvärderar villkoren för användarens inloggning och använder villkorsstyrda åtkomstprinciper för att fastställa tillåten åtkomst. I den här vägledningen visar vi till exempel hur du skapar en princip för villkorsstyrd åtkomst för att kräva enhetsefterlevnad för åtkomst till känsliga data. Det här minskar kraftigt risken att en hackare med sin egen enhet och stulna autentiseringsuppgifter kan komma åt känsliga data. Den skyddar även känsliga data på enheterna, eftersom enheterna måste uppfylla särskilda hälso- och säkerhetskrav.|Microsoft 365 E3 eller E5|
 |[Azure AD-grupper](/azure/active-directory/fundamentals/active-directory-manage-groups)|Villkorsstyrda åtkomstprinciper, enhetshantering med Intune och även behörigheter till filer och webbplatser i organisationen förlitar sig på tilldelning till användarkonton eller Azure AD-grupper. Vi rekommenderar att du skapar Azure AD-grupper som motsvarar de skyddsnivåer som du implementerar. Din chef kan exempelvis få högre värdemål för hackare. Därför är det vettigt att lägga till användarkonton för dessa anställda i en Azure AD-grupp och tilldela gruppen villkorsstyrda åtkomstprinciper och andra principer som upprätthåller en högre skyddsnivå för åtkomst.|Microsoft 365 E3 eller E5|
 |[Enhetsregistrering](/azure/active-directory/devices/overview)|Du registrerar en enhet i Azure AD för att skapa en identitet för enheten. Den här identiteten används för att autentisera enheten när en användare loggar in och för att använda villkorsstyrda åtkomstprinciper som kräver domän- eller kompatibla datorer. För den här vägledningen använder vi enhetsregistrering för att automatiskt registrera domän sammanskrivna Windows-datorer. Enhetsregistrering krävs för att hantera enheter med Intune.|Microsoft 365 E3 eller E5|
-|[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|Gör att du kan upptäcka potentiella säkerhetsproblem som påverkar organisationens identiteter och konfigurera en automatiserad åtgärdsprincip på låg, medium och hög inloggningsrisk och användarrisk. Den här vägledningen förlitar sig på den här riskutvärderingen för att tillämpa villkorsstyrda åtkomstprinciper för multifaktorautentisering. Den här vägledningen innehåller även en princip för villkorsstyrd åtkomst som kräver att användarna ändrar sitt lösenord om högriskaktivitet identifieras för kontot.|Microsoft 365 E5, Microsoft 365 E3 med licenserna Identity & Threat Protection, EMS E5 eller Azure Premium P2|
+|[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|Gör att du kan upptäcka potentiella säkerhetsproblem som påverkar organisationens identiteter och konfigurera en automatiserad åtgärdsprincip på låg, medium och hög inloggningsrisk och användarrisk. Den här vägledningen förlitar sig på den här riskutvärderingen för att tillämpa villkorsstyrda åtkomstprinciper för multifaktorautentisering. Den här vägledningen innehåller även en princip för villkorsstyrd åtkomst som kräver att användarna ändrar sitt lösenord om högriskaktivitet identifieras för kontot.|Microsoft 365 E5, Microsoft 365 E3 med licenserna E5 Security add-on, EMS E5 eller Azure AD Premium P2|
 |[Självbetjäning för återställning av lösenord (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|Låt användarna återställa sina lösenord på ett säkert sätt och utan åtgärder från supportavdelningen genom att tillhandahålla verifiering av flera autentiseringsmetoder som administratören kan kontrollera.|Microsoft 365 E3 eller E5|
 |[Lösenordsskydd i Azure AD](/azure/active-directory/authentication/concept-password-ban-bad)|Identifiera och blockera kända svaga lösenord och deras varianter och ytterligare svaga termer som är specifika för din organisation. Standard globala förbjudna lösenordslistor tillämpas automatiskt på alla användare i en Azure AD-klient. Du kan definiera ytterligare poster i en anpassad förbjuden lösenordslista. När användare ändrar eller återställer sina lösenord kontrolleras dessa förbjudna lösenordslistor för att använda starka lösenord.|Microsoft 365 E3 eller E5|
 |
@@ -194,7 +196,7 @@ På samma sätt kan du för känsliga appar skapa en uppsättning principer och 
 
 Microsoft rekommenderar att du inte skapar principuppsättningar som gäller för alla appar eftersom det kan resultera i oavsiktliga konfigurationer. Principer som blockerar alla appar kan till exempel låsa administratörerna från Azure-portalen och undantag kan inte konfigureras för viktiga slutpunkter som Microsoft Graph.
 
-## <a name="steps-in-the-process-of-configuring-identity-and-device-access"></a>Steg i processen med att konfigurera identitet och enhetsåtkomst
+## <a name="steps-to-configure-identity-and-device-access"></a>Steg för att konfigurera identitet och enhetsåtkomst
 
 ![Anvisningar för att konfigurera identitet och enhetsåtkomst.](../../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
 

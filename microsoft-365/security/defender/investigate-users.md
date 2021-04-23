@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 1fb5a4eee41384ef1afc9b46e5bf538344718fe9
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 2fd9b958cdbdaf22346f8171c789f2ca9a8336d1
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939736"
+ms.locfileid: "51957613"
 ---
 # <a name="analyze-users-in-microsoft-365-security-center"></a>Analysera användare i Microsoft 365 Säkerhetscenter
 
@@ -41,6 +41,13 @@ En del av incidentanalysen kan omfatta användarkonton. Börja med fliken **Anv�
 Om du vill få en snabb sammanfattning av ett användarkonto för incidenten väljer du bockmarkeringen bredvid användarnamnet. Här är ett exempel.
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Exempel på sammanfattningsfönstret för användarkontot för en incident i säkerhetscentret i Microsoft 365":::
+
+> [!NOTE]
+> På användarsidan visas organisationen i Azure Active Directory (AD) samt grupper, vilket hjälper dig att förstå vilka grupper och behörigheter som är kopplade till en användare.
+
+På den här utfällande sidan kan du granska information om användarhot, inklusive aktuella incidenter, aktiva varningar och risknivå samt exponering av användare, konton, enheter med mera.
+
+Dessutom kan du vidta åtgärder direkt i Microsoft 365 säkerhetscenter för att adressera en komprometterad användare, bekräfta att användaren har komprometterats eller att de måste logga in igen.
 
 Härifrån kan du välja Gå **till användarsida om** du vill visa information om ett användarkonto. Här är ett exempel.
 

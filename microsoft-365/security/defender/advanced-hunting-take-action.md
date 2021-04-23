@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0c088375cd784b411fdce417d77b1ea176bcee26
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 15eebbba102640a92f9c7712194aaef685a96cfb
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932911"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952614"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Vidta åtgärder för avancerade frågeresultat för sökning
 
@@ -34,6 +34,7 @@ ms.locfileid: "51932911"
 
 **Gäller för:**
 - Microsoft 365 Defender
+- Microsoft Defender för Endpoint
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -79,6 +80,9 @@ Om du vill utföra någon av de åtgärder som beskrivs markerar du en eller fle
 ## <a name="review-actions-taken"></a>Granska åtgärder som har vidtagits
 Varje åtgärd registreras individuellt i [åtgärdscenter](m365d-action-center.md) under **Historik för åtgärdscenter**  >   [(security.microsoft.com/action-center/history).](https://security.microsoft.com/action-center/history) Gå till åtgärdscenter för att kontrollera status för varje åtgärd.
  
+>[!NOTE]
+>Vissa tabeller i den här artikeln kanske inte är tillgängliga i Microsoft Defender för Endpoint. [Aktivera Microsoft 365 Defender för](m365d-enable.md) att leta efter hot med hjälp av fler datakällor. Du kan flytta dina avancerade arbetsflöden för sökning från Microsoft Defender för Slutpunkt till Microsoft 365 Defender genom att följa stegen i Migrera avancerade sökfrågor från [Microsoft Defender för Slutpunkt.](advanced-hunting-migrate-from-mde.md)
+
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)

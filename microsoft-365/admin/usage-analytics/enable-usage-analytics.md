@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Lär dig hur du börjar samla in data för klientorganisationen med hjälp av mallappen Microsoft 365 användningsanalys i Power BI.
-ms.openlocfilehash: 7c92fb643f9be6b5f1474f08df659c4f488a9a41
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d9cadcc8258478fd1d5dbc0d9ae6bf4e814a8435
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579068"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51957521"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Aktivera Microsoft 365 användningsanalyser
 
@@ -53,11 +53,11 @@ Du måste vara global administratör för att kunna aktivera **mallappen.**
   
 Mer information [finns i om](../add-users/about-admin-roles.md) administratörsroller. 
   
-1. I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>. 
+1. I administrationscentret går du till fliken **Inställningar** \> **För organisationsinställningar** \> **Tjänster.** 
     
-2. På sidan **Användning** letar du reda på **kortet Microsoft 365 användningsanalyser** och väljer **Komma igång.**
+2. Välj **Rapporter** på fliken **Tjänster.**
     
-3. I panelen Rapporter som öppnas ställer du in Spara data för **Microsoft 365 användningsanalyser** **för** Power \> BI. 
+3. På panelen Rapporter som öppnas ställer du in Gör rapportdata tillgängliga för **Microsoft 365 användningsanalyser för Power BI** till Spara  \> **på**. 
   
 Datainsamlingsprocessen slutförs om två till 48 timmar beroende på klientorganisationens storlek. Knappen **Gå till Power BI** aktiveras (ej längre gråmarkerad) när datainsamlingen är klar. 
     
