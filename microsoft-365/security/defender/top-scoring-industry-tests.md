@@ -2,7 +2,7 @@
 title: Ledande inom branschtester – Microsoft 365 Defender
 ms.reviewer: ''
 description: Visa de senaste resultaten och analyserna av Microsoft 365 Defender. Det får genomgående höga poäng i oberoende tester (AV-TEST, AV-jämförande, SE-labbar, MITRE ATT&CK). Visa de senaste resultaten och analyserna.
-keywords: Microsoft Defender Antivirus, Windows Defender Antivirus, av-granskningar, antivirustest, av-test, senaste av-resultat, identifieringsresultat, test av säkerhetsprodukter, branschtester av säkerhet, branschtester av antivirusprogram, bästa antivirus, av-test, av-jämförande, SE-labbar, MITRE ATT&CK, plattform för slutpunktsskydd, EPP, slutpunktsidentifiering och svar, EDR, Windows 10, Microsoft Defender Antivirus, WDAV, MDATP, Microsoft Threat Protection, säkerhet, skadlig programvara, av, antivirus, resultat, bedömning, nästa generationens skydd, rankning, framgång
+keywords: Microsoft Defender Antivirus, Windows Defender Antivirus, granskningar av antivirusprogram, antivirustest, antivirustest, senaste resultat om antivirusprogram, identifieringsresultat, test av säkerhetsprodukter, branschtester av säkerhet, branschtester av antivirusprogram, bästa antivirus, antivirustest, jämförande av antivirus, SE-labbar, MITRE ATT&CK, plattform för slutpunktsskydd, EPP, slutpunktsidentifiering och svar, EDR, Windows 10, Microsoft Defender Antivirus, WDAV, Microsoft Defender för Endpoint, Microsoft 365 Defender, säkerhet, skadlig programvara, antivirusprogram, antivirus, resultat, bedömning, nästa generationens skydd, rankning, framgång
 ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 1f649af2ca6089d1366cc6e080a430a6a00fc300
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: a49fb83f9186541094910ec8842a09b5121ffb5b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569871"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934399"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Ledande inom branschtester
 

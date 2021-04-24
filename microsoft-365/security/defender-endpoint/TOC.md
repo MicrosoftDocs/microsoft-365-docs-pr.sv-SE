@@ -457,6 +457,7 @@
 ####### [Listvarningar](get-alerts.md)
 ####### [Skapa varning](create-alert-by-reference.md)
 ####### [Uppdateringsvarning](update-alert.md)
+####### [Uppdateringsavisering för batch](batch-update-alerts.md)
 ####### [Hämta varningsinformation efter ID](get-alert-info-by-id.md)
 ####### [Hämta varningsinformation om relaterade domäner](get-alert-related-domain-info.md)
 ####### [Hämta varningsinformation om relaterad fil](get-alert-related-files-info.md)
@@ -501,6 +502,7 @@
 
 ###### [Indikatorer]()
 ####### [Indikatormetoder och -egenskaper](ti-indicator.md)
+####### [Importindikatorer](import-ti-indicators.md)
 ####### [Skicka indikator](post-ti-indicator.md)
 ####### [Lista indikatorer](get-ti-indicators-collection.md)
 ####### [Ta bort indikator](delete-ti-indicator-by-id.md)
