@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Konfigurera innehållstolkning i Project Cortex
-ms.openlocfilehash: cc6fbfbfc130cc6e64b5d7c30e0a9db5f39036ac
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2f9fd4e035152a127f9f1c254f4c489a6ca4c976
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051573"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994712"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Konfigurera SharePoint Syntex
 
@@ -59,7 +59,9 @@ Om du har 300 eller fler SharePoint Syntex-licenser för SharePoint Syntex i din
 
 Du kan beräkna den AI Builder-kapacitet som passar dig bäst med [Kalkylatorn för AI Builder](https://powerapps.microsoft.com/ai-builder-calculator).
 
-Gå till [Administrationscenter för Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) om du vill kontrollera krediterna och användningen.
+Om du planerar att använda en anpassad Power Platform-miljö måste du [tilldela krediter till den miljö](/power-platform/admin/capacity-add-on).
+
+Gå till [Administrationscenter för Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) om du vill kontrollera dina krediter och användning.
 
 ## <a name="to-set-up-sharepoint-syntex"></a>Att konfigurera SharePoint Syntex
 
@@ -80,11 +82,21 @@ Gå till [Administrationscenter för Power Platform](https://admin.powerplatform
       - **Inga SharePoint-bibliotek** om du inte vill att det ska vara tillgängligt för några webbplatser (du kan ändra det när konfigurationen är slutförd).
 
    > [!div class="mx-imgBorder"]
-   > ![Konfigurera formulärbearbetning](../media/content-understanding/admin-configforms.png)
+   > ![Konfigurera webbplatsalternativ för formulärbearbetning](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
    > Att ta bort en webbplats efter att den har inkluderats påverkar inte befintliga modeller som används i biblioteken på webbplatsen eller möjligheten att använda modeller för dokumenttolkning på ett bibliotek. 
     
+    Om du har konfigurerat flera Power Platform-miljöer kan du välja vilken du vill använda för formulärbearbetning. (Det här alternativet visas inte om du bara har en miljö.)
+
+    ![Konfigurera alternativ för formulärbearbetning i Power Platform](../media/content-understanding/setup-power-platform-env.png)
+
+    För **Power Platform-miljö** kan du välja:
+    - **Använd standardmiljön** för att använda din standardmiljö för Power Platform.
+    - **Använd en anpassad miljö** för att använda en anpassad miljö. Välj den miljö du vill använda från listan. Du måste installera *AI Builder för Project Cortex*-appen i den här miljön och tilldela AI Builder-krediter till den innan du kan skapa formulärbearbetningsmodeller.
+
+    Klicka på **Nästa**.
+
 5. På sidan **Skapa innehållscenter** kan du skapa en SharePoint-webbplats för innehållscenter där dina användare kan skapa och hantera modeller för dokumenttolkning.
 
     1. För **Webbplatsnamn** skriver du namnet som du vill använda på webbplatsen för innehållscenter.
@@ -126,3 +138,5 @@ För att tilldela licenser:
 [Översikt över modellen för formulärbearbetning](/ai-builder/form-processing-model-overview)
 
 [Steg för steg: Hur du skapar en modell för dokumenttolkning (video)](https://www.youtube.com/watch?v=DymSHObD-bg)
+
+[Skapa och hantera miljöer i administrationscentret för Power Platform](/power-platform/admin/create-environment)
