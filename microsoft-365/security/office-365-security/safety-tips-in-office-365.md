@@ -19,12 +19,12 @@ description: Läs mer om hur EOP och Office 365 skyddar dig mot skräppost, nät
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1820cab63abbbac09aa60a9c1684f3672882451
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 659a83c73b4fef9097aa317332c9951d53b09a33
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207138"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994991"
 ---
 # <a name="safety-tips-in-email-messages"></a>Säkerhetstips i e-postmeddelanden
 
@@ -55,6 +55,6 @@ Säkerhetstipset är ett färgkodat varningsmeddelande om eventuellt skadliga me
 
 ## <a name="working-with-safety-tips"></a>Arbeta med säkerhetstips
 
-Säkerhetstips är alltid aktiverade för Outlook på webben, även om inte alla meddelanden får något. Administratörer kan inaktivera säkerhetstips för andra e-postklienter, till exempel Outlook. Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
+Administratörer kan aktivera eller inaktivera säkerhetstips i principer mot skräppost. Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
 
 Om du inte tycker att EOP har kategoriserat ett meddelande (det vill säga om meddelandet inte är skräppost eller om det borde ha markerats som skräppost) kan du skicka meddelandena till Microsoft för analys för att förbättra upplevelsen. Anvisningar finns i [Artikeln om att rapportera meddelanden och filer till Microsoft.](report-junk-email-messages-to-microsoft.md) Du kan också klicka på länken Feedback i säkerhetstipset och skicka kommentarer direkt till Microsoft för att hjälpa oss att bli bättre.

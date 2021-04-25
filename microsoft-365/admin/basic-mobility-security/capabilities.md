@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security kan hjälpa dig att skydda och hantera mobila enheter.
-ms.openlocfilehash: 468f06edf16eb6ea00fd4d26c716bc145474dd25
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 60de4e3f36427a69ecf0bf52e5dfd34f089991f3
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904282"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994979"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Funktioner i grundläggande Mobility and Security
 
@@ -47,11 +47,9 @@ Du kan använda Basic Mobility and Security för att skydda och hantera följand
 
 <sup>1</sup> Åtkomstkontrollen för Windows 8.1 RT-enheter är begränsad till Exchange ActiveSync.
 
-<sup>2</sup> Åtkomstkontrollen för Windows 8.1 RT-enheter är begränsad till Exchange ActiveSync.
-Åtkomstkontroll för Windows 10 kräver en prenumeration som innehåller Azure AD Premium och enheten måste vara ansluten till Azure Active Directory.
+<sup>2</sup> Åtkomstkontroll för Windows 10 kräver en prenumeration som innehåller Azure AD Premium och enheten måste vara ansluten till Azure Active Directory.
 
-<sup>3</sup> Åtkomstkontrollen för Windows 8.1 RT-enheter är begränsad till Exchange ActiveSync.
-Efter juni 2020 kan Android-versioner senare än 9 inte hantera lösenordsinställningar utom på Samsung Knox-enheter.
+<sup>3</sup> Efter juni 2020 kan Android-versioner senare än 9 inte hantera lösenordsinställningar utom på Samsung Knox-enheter.
 
 >[!NOTE]
 >Enheter som redan har registrerats med tidigare os-versioner fortsätter att fungera, men funktionerna kan ändras utan föregående meddelande.

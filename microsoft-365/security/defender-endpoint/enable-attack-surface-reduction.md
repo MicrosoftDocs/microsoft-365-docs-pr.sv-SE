@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 7aeda679d5ce350ef64a2758359390adc4a280f0
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: df77a3d6c1f66882600a200b83b3b2585473f42b
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939248"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995075"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Aktivera regler för minskning av attackytan
 
@@ -33,27 +33,23 @@ ms.locfileid: "51939248"
 > [!TIP]
 > Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[Minskningsregler för attackytor](attack-surface-reduction.md) (ASR-regler) hjälper till att förhindra åtgärder som ofta används för missbruk av skadlig programvara för att avslöja enheter och nätverk. Du kan ange ASR-regler för enheter med någon av följande versioner och versioner av Windows:
-- Windows 10 Pro, [version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) eller senare
-- Windows 10 Enterprise, [version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) eller senare
-- Windows Server, [version 1803 (Halvårskanal)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) eller senare
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+[Minskningsregler för attackytor](attack-surface-reduction.md) (ASR-regler) hjälper till att förhindra åtgärder som ofta används för missbruk av skadlig programvara för att avslöja enheter och nätverk.
 
 **Krav** Du kan ange minskningsregler för attackytan för enheter som kör någon av följande versioner av Windows:
 
-- Windows 10 Pro, version 1709 eller senare
-- Windows 10 Enterprise, version 1709 eller senare
-- Windows Server, version 1803 (Halvårskanal) eller senare
-- Windows Server 2019
+- Windows 10 Pro, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
+- Windows 10 Enterprise, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
+- Windows Server, [version 1803 (Halvårskanal)](/windows-server/get-started/whats-new-in-windows-server-1803) eller senare
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Även om minskningsregler för attackytor inte kräver en Windows E5-licens, får du avancerade hanteringsfunktioner om du har Windows E5. Dessa funktioner är endast tillgängliga i Windows E5: övervakning, analys och arbetsflöden som är tillgängliga i Defender för Slutpunkt, samt rapporterings- och konfigurationsfunktioner i Säkerhetscenter för Microsoft 365. Dessa avancerade funktioner är inte tillgängliga med en Windows Professional- eller Windows E3-licens. Men om du har de licenserna kan du använda Loggboken och Microsoft Defender Antivirus-loggarna för att granska dina minskningsregelhändelser för attackytan.
+Även om minskningsregler för attackytor inte kräver en [Windows E5-licens](/windows/deployment/deploy-enterprise-licenses)får du avancerade hanteringsfunktioner om du har Windows E5. Dessa funktioner är endast tillgängliga i Windows E5: övervakning, analys och arbetsflöden som är tillgängliga i Defender för [slutpunkt,](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)samt rapporterings- och konfigurationsfunktioner i [Säkerhetscenter för Microsoft 365.](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true) Dessa avancerade funktioner är inte tillgängliga med en Windows Professional- eller Windows E3-licens. Men om du har de licenserna kan du använda Loggboken och Microsoft Defender Antivirus-loggarna för att granska dina minskningsregelhändelser för attackytan.
 
 Varje ASR-regel innehåller en av fyra inställningar:
 
 - **Inte konfigurerad:** Inaktivera ASR-regeln
 - **Block:** Aktivera ASR-regeln
 - **Granskning:** Utvärdera hur ASR-regeln skulle påverka organisationen om den skulle aktiveras
-- **Varna**: Aktivera ASR-regeln men alow slutanvändaren att kringgå blocket
+- **Varna**: Aktivera ASR-regeln men tillåta slutanvändaren att kringgå blocket
 
 > [!IMPORTANT]
 > För närvarande stöds inte varningsläge för tre ASR-regler när du konfigurerar ASR-regler i Microsoft Endpoint Manager (MEM). Mer information finns i [Fall där varningsläge inte stöds.](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)

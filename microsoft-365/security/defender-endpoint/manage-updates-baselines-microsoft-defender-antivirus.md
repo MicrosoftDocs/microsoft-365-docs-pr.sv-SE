@@ -8,18 +8,20 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: normal
+audience: ITPro
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: b70cf96cde7d4dff8e2a4db6ce2469090dba7eb1
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: ae17aa6e2cb0cefd460ef0db0730570af8c84bb8
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765617"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995039"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Hantera uppdateringar för Microsoft Defender Antivirus och tillämpa baslinjer
 
@@ -34,7 +36,8 @@ Det finns två typer av uppdateringar som är relaterade till att hålla Microso
 - Produktuppdateringar
 
 > [!IMPORTANT]
-> Att hålla Microsoft Defender Antivirus uppdaterat är viktigt för att säkerställa att dina enheter har den senaste tekniken och funktionerna som behövs för att skydda mot nya tekniker för skadlig programvara och attack.  
+> Att hålla Microsoft Defender Antivirus uppdaterat är viktigt för att säkerställa att dina enheter har den senaste tekniken och funktionerna som behövs för att skydda mot nya tekniker för skadlig programvara och attack.
+> 
 > Uppdatera antivirusskyddet även om Microsoft Defender Antivirus körs i passiv [form.](./microsoft-defender-antivirus-compatibility.md)
 > 
 > Om du vill se de senaste motor-, plattforms- och signaturdatumen går du till Säkerhetsintelligensuppdateringar för [Microsoft Defender Antivirus och andra Microsoft-program mot skadlig programvara.](https://www.microsoft.com/en-us/wdsi/defenderupdates)
@@ -147,7 +150,7 @@ När en ny paketversion har släppts begränsas stödet för de tidigare två ve
 &ensp;Utgiven: **3 december 2020**  
 &ensp;Plattform: **4.18.2011.6**  
 &ensp;Motor: **1.1.17700.4**  
-&ensp;Supportfas: **Säkerhets- och kritiska uppdateringar**
+&ensp;Supportfas: **Teknisk uppgraderingssupport (endast)**
     
 ### <a name="whats-new"></a>Nyheter
 
@@ -163,7 +166,7 @@ Inga kända problem
 &ensp;**Utgiven: 29 oktober 2020**  
 &ensp;Plattform: **4.18.2010.7**  
 &ensp;Motor: **1.1.17600.5**  
-&ensp;Supportfas: **Säkerhets- och kritiska uppdateringar**
+&ensp;Supportfas: **Teknisk uppgraderingssupport (endast)**
     
 ### <a name="whats-new"></a>Nyheter
 
@@ -565,5 +568,5 @@ Mer information finns i [Installationsbilder för Microsoft Defender-operativsys
 |[Hantera hur skyddsuppdateringar hämtas och tillämpas](manage-protection-updates-microsoft-defender-antivirus.md) | Skyddsuppdateringar kan skickas via många källor. |
 |[Hantera när skyddsuppdateringar ska hämtas och tillämpas](manage-protection-update-schedule-microsoft-defender-antivirus.md) | Du kan schemalägga när skyddsuppdateringar ska hämtas. |
 |[Hantera uppdateringar för slutpunkter som är in uppdaterade](manage-outdated-endpoints-microsoft-defender-antivirus.md) | Om en slutpunkt missar en uppdatering eller schemalagd genomsökning kan du tvinga fram en uppdatering eller genomsökning nästa gång en användare loggar in. |
-|[Hantera händelsebaserade tvingade uppdateringar](manage-event-based-updates-microsoft-defender-antivirus.md) | Du kan ange att skyddsuppdateringar ska hämtas vid start eller efter vissa molnskyddshändelser. |
-|[Hantera uppdateringar för mobila enheter och virtuella maskiner (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| Du kan ange inställningar, till exempel om uppdateringar ska göras på batterikraft, som är särskilt användbara för mobila enheter och virtuella datorer. |
+|[Hantera händelsebaserade uppdateringar](manage-event-based-updates-microsoft-defender-antivirus.md) | Du kan ange att skyddsuppdateringar ska hämtas vid start eller efter vissa molnskyddshändelser. |
+|[Hantera uppdateringar för mobila enheter och virtuella datorer(VM)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| Du kan ange inställningar, till exempel om uppdateringar ska göras på batterikraft, som är särskilt användbara för mobila enheter och virtuella datorer. |

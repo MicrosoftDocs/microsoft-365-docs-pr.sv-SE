@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: edbabf83c7bf1ac8dbe1ca9451ad191b45a862ac
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: a1e07ac2e2e544605f04e9090177004db64d2f04
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932733"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995003"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Vad är nytt i Microsoft Defender för slutpunkt på Mac
 
@@ -38,10 +38,14 @@ ms.locfileid: "51932733"
 > [!IMPORTANT]
 > På macOS 11 (Big Sur) kräver Microsoft Defender för Endpoint ytterligare konfigurationsprofiler. Om du är en befintlig kund som uppgraderar från tidigare versioner av macOS distribuerar du de ytterligare konfigurationsprofiler som listas på [den här sidan.](mac-sysext-policies.md)
 
+## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0)
+
+- Åtgärd för att hantera förfallotiden för Apple-certifikat för macOS Catalina och tidigare. Den här korrigeringen återställer & funktioner för sårbarhetshantering (TVM).
+
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0)
 
 - Microsoft Defender för Slutpunkt på macOS är nu tillgänglig i förhandsversion för kunder inom myndigheter i USA. Mer information finns i [Microsoft Defender för slutpunkt för kunder inom amerikanska myndigheter.](gov.md)
-- Prestandaförbättringar (särskilt vid den situation då appen XCode Bugg används) som & programkorrigeringar
+- Prestandaförbättringar (särskilt vid den situation då appen XCode Bugg används) som & programkorrigeringar.
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0)
 

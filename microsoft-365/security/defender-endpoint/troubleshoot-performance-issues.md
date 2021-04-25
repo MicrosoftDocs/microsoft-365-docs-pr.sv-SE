@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 5175d630dd5d80b62451b3a1eafc4c2f6350ac32
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 71c2391361c645d26cdaddff0bff86796da50391
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876343"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995087"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Felsöka prestandaproblem relaterade till realtidsskydd
 
@@ -33,7 +33,7 @@ ms.locfileid: "51876343"
 
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
  
-Om ditt system har problem med hög CPU-användning eller prestanda relaterade till realtidsskyddstjänsten i Microsoft Defender för Endpoint kan du skicka ett ärende till Microsoft Support. Följ stegen i Samla in [Microsoft Defender AV-diagnostikdata.](/collect-diagnostic-data.md)
+Om ditt system har problem med hög CPU-användning eller prestanda relaterade till realtidsskyddstjänsten i Microsoft Defender för Endpoint kan du skicka ett ärende till Microsoft Support. Följ stegen i Samla in [diagnostikdata för Microsoft Defender Antivirus.](collect-diagnostic-data.md)
 
 Som administratör kan du också felsöka dessa problem på egen hand. 
 
@@ -132,7 +132,6 @@ Processövervakning (ProcMon) är ett avancerat övervakningsverktyg som kan vis
  
     >[!TIP] 
     >Vänta tills problemet återskapas helt och notera tidsstämpeln när spårningen startade.
-    
 
 10. När du har två till fyra minuters processaktivitet under villkoret om hög CPU-användning stoppar du hämtningen genom att välja förstoringsglasikonen.
 
@@ -250,7 +249,7 @@ Kommandoradsverktyget är *wpr.exe* en del av operativsystemet med början i Win
 
 1. Ladda **[ned Microsoft Defender för slutpunktsanalysprofilen](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** för prestandaspårningar till en fil som `WD.wprp` namnges i en lokal katalog, till exempel `C:\traces` .
 
-3. Högerklicka på **startmenyikonen och** välj **Windows Powershell (administratör)** eller **Kommandotolken (administratör)** för att öppna kommandotolken för administratör.
+3. Högerklicka på **Start-menyikonen** och välj **Windows PowerShell (administratör)** eller **Kommandotolken (administratör)** för att öppna kommandotolken för administratör.
 
 4. När dialogrutan User Account Control visas väljer du **Ja.**
 
@@ -280,5 +279,5 @@ Kommandoradsverktyget är *wpr.exe* en del av operativsystemet med början i Win
 
 ## <a name="see-also"></a>Se även
 
-- [Samla in Microsoft Defender AV-diagnostikdata](collect-diagnostic-data.md)
+- [Samla in diagnostikdata för Microsoft Defender Antivirus](collect-diagnostic-data.md)
 - [Konfigurera och validera undantag för genomsökningar för Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)

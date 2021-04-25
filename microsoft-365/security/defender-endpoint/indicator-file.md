@@ -17,75 +17,107 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 35a0b66a4cdc4cf39c15329eda2e0aafced79f34
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 103f5d0ad9d12a37f3a3b8065f39c24d592cc252
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199615"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995063"
 ---
 # <a name="create-indicators-for-files"></a>Skapa indikatorer för filer
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Gäller för:**
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
-
 > [!TIP]
 > Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
-Du kan förhindra ytterligare spridning av en attack i organisationen genom att förbjuda potentiellt skadliga filer eller misstänkt skadlig kod. Om du vet en potentiellt skadlig körbar fil (PE) kan du blockera den. Den här åtgärden förhindrar att den läses, skrivs eller körs på datorer i organisationen.
+Förhindra ytterligare spridning av en attack i organisationen genom att förbjuda potentiellt skadliga filer eller misstänkt skadlig kod. Om du vet en potentiellt skadlig körbar fil (PE) kan du blockera den. Den här åtgärden gör att den inte kan läsas, skrivas eller köras på enheter i organisationen.
 
-Du kan skapa indikatorer för filer på två sätt:
+Du kan skapa indikatorer för filer på tre olika sätt:
+
 - Genom att skapa en indikator via inställningssidan
 - Genom att skapa en sammanhangsberoende indikator med knappen lägg till indikator från filinformationssidan
+- Genom att skapa en indikator via [indikator-API:t](ti-indicator.md)
 
-### <a name="before-you-begin"></a>Innan du börjar
+## <a name="before-you-begin"></a>Innan du börjar
+
 Det är viktigt att förstå följande förutsättningar innan du skapar indikatorer för filer:
 
-- Den här funktionen är tillgänglig om din organisation använder Windows Defender Antivirus och Molnbaserat skydd är aktiverat. Mer information finns i [Använda nästa generations teknik i Microsoft Defender Antivirus via moln levererat skydd.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
-- Klientversionen av Antimalware måste vara 4.18.1901.x eller senare.
-- Stöds på datorer med Windows 10, version 1703 eller senare, Windows Server 2016 och 2019.
-- För att börja blockera filer måste du först [aktivera funktionen Spärra eller **tillåt**](advanced-features.md) i Inställningar.
-- Den här funktionen är utformad för att förhindra att misstänkt skadlig programvara (eller potentiellt skadliga filer) laddas ned från webben. Den har för närvarande stöd för bärbara körbara (PE) filer, inklusive _.exe-_ _och .dll-filer._ Täckningen utökas med tiden.
+- Den här funktionen är tillgänglig om din organisation **använder Microsoft Defender Antivirus (i** aktivt läge) och **molnbaserat skydd är aktiverat.** Mer information finns i [Hantera molnbaserat skydd](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 
-Prestandan kan påverkas om du kopierar stora filer från en nätverksresurs till din lokala enhet, särskilt via en VPN-anslutning. 
+- Klientversionen av Antimalware måste vara 4.18.1901.x eller senare. Se [Månadsplattform och motorversioner](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-> [!IMPORTANT]
-> - Funktionen tillåt eller blockera kan inte utföras för filer om filens klassificering finns på enhetens cache innan åtgärden för att tillåta eller blockera 
-> - Betrodda signerade filer behandlas annorlunda. Defender för Endpoint är optimerad för att hantera skadliga filer. Att försöka blockera betrodda signerade filer kan i vissa fall ha prestandakonsekvenser.
-> - Vanligtvis används filblock inom några minuter, men det kan ta upp till 30 minuter.
-> - Om det finns filindikatorprinciper som står i konflikt tillämpas den säkrare principens tillämpningsprincip. En SHA-256-princip för hash-kod för filer har till exempel företräde framför en MD5-princip för hash-hash-kod för filer om båda hash-typerna definierar samma fil.
+- Stöds på enheter med Windows 10, version 1703 eller senare, Windows Server 2016 och 2019.
 
-### <a name="create-an-indicator-for-files-from-the-settings-page"></a>Skapa en indikator för filer från inställningssidan
+- För att börja blockera filer måste du först aktivera [funktionen "blockera eller tillåt"](advanced-features.md) i Inställningar.
 
-1. Välj Inställningar Indikatorer i  >  **navigeringsfönstret.**  
+Den här funktionen är utformad för att förhindra att misstänkt skadlig programvara (eller potentiellt skadliga filer) laddas ned från webben. Den har för närvarande stöd för bärbara körbara (PE) filer, inklusive .exe- och .dll-filer. Täckningen utökas med tiden.
 
-2. Välj fliken **Filhash.**
+## <a name="create-an-indicator-for-files-from-the-settings-page"></a>Skapa en indikator för filer från inställningssidan
 
-3. Välj **Lägg till indikator**.
+1. I navigeringsfönstret väljer du **Inställningar > Indikatorer**.
+
+2. Välj fliken **Filhash.**  
+
+3. Välj **Lägg till indikator**.
 
 4. Ange följande information:
-   - Indikator – Ange entitetsinformation och definiera indikatorns förfallotid.
-   - Åtgärd – Ange vilken åtgärd som ska vidtas och ange en beskrivning.
-   - Omfattning – Definiera datorgruppens omfattning.
+    - Indikator – Ange entitetsinformation och definiera indikatorns förfallotid.
+    - Åtgärd – Ange vilken åtgärd som ska vidtas och ange en beskrivning.
+    - Omfattning – Definiera enhetens omfattning.
 
-5. Granska informationen på fliken Sammanfattning och klicka sedan på **Spara**.
+5. Granska informationen på fliken Sammanfattning och välj sedan **Spara**.
 
-### <a name="create-a-contextual-indicator-from-the-file-details-page"></a>Skapa en sammanhangsberoende indikator från filinformationssidan
-Ett av alternativen när du vidtar [svarsåtgärder för en fil är](respond-file-alerts.md) att lägga till en indikator för filen. 
+## <a name="create-a-contextual-indicator-from-the-file-details-page"></a>Skapa en sammanhangsberoende indikator från filinformationssidan
 
-När du lägger till en indikatorhash för en fil kan du välja att avisering ska visas och blockera filen när en dator i organisationen försöker köra den.
+Ett av alternativen när du vidtar [svarsåtgärder för en fil är](respond-file-alerts.md)att lägga till en indikator för   filen. När du lägger till en indikatorhash för en fil kan du välja att avisering ska visas och blockera filen när en enhet i organisationen försöker köra den.
 
 Filer som blockeras automatiskt av en indikator visas inte i filens Åtgärdscenter, men aviseringarna visas fortfarande i kön Aviseringar.
 
+>[!IMPORTANT]
+>- Vanligtvis används filblock och tas bort inom några minuter, men det kan ta upp till 30 minuter.
+>- Om det finns filindikatorprinciper som står i konflikt tillämpas den säkrare principens tillämpningsprincip. En SHA-256-princip för hash-kod för filer har till exempel företräde framför en MD5-princip för hash-hash-kod för filer om båda hash-typerna definierar samma fil.
+>- Om grupprincipen EnableFileHashComputation är inaktiverad minskar blockeringsprecisionen för filens IoC. Men aktivering av EnableFileHashComputation kan påverka enhetens prestanda.
+>    - Till exempel kan kopiering av stora filer från en nätverksresurs till din lokala enhet, särskilt via en VPN-anslutning, påverka enhetens prestanda.
+>    - Mer information om grupprincipen EnableFileHashComputation finns i [Defender CSP](/windows/client-management/mdm/defender-csp)
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="policy-conflict-handling"></a>Hantering av policykonflikter  
+
+Konflikter i hanteringen av certifikat- och fil-IoC-policyer följer nedanstående ordning:
+
+- Om filen inte tillåts av windows Defender-programkontrollen och AppLocker-framtvinga-principen/-principerna blockerar **du**
+
+- Annars om filen tillåts av Defender Anti-Virus Exclusion ska du **tillåta**
+
+- Annars om filen blockeras eller varnas av ett block eller varnar fil-IoC ska du **blockera/varna**
+
+- Annars om filen tillåts av en IOC-princip för filen och sedan **Tillåt**
+
+- Om filen annars blockeras av ASR-regler, CFA, AV, SmartScreen och sedan **Blockera**  
+
+- Tillåt **annars** (skickar Windows Defender-programkontroll & AppLocker-principen, inga IoC-regler gäller för den)
+
+Om det finns IoC-principer i konflikt med samma tillämpningstyp och mål tillämpas principen för den säkrare hashen (vilket innebär längre). En SHA-256-IoC-princip för filshashar vinner till exempel över en MD5-IoC-princip för filshashar om båda hashtyperna definierar samma fil.
+
+Observera att funktionerna för hantering av hot och sårbarhet använder fil-IoCs för tillämpning och följer konflikthanteringsordningen ovan.
+
+### <a name="examples"></a>Exempel
+
+|Komponent |Tillämpning av komponenter |Filindikatoråtgärd |Resultat
+|--|--|--|--|
+|Undantag för filsökväg för att minska attackytan |Tillåt |Blockera |Blockera
+|Minskningsregel för attackytan |Blockera |Tillåt |Tillåt
+|Windows Defender-programreglering |Tillåt |Blockera |Tillåt |
+|Windows Defender-programreglering |Blockera |Tillåt |Blockera
+|Undantag för Microsoft Defender Antivirus |Tillåt |Blockera |Tillåt
+
+## <a name="see-also"></a>Se även
+
 - [Skapa indikatorer](manage-indicators.md)
-- [Skapa indikatorer för IP-adresser och URL:er/domäner](indicator-ip-domain.md)
+- [Skapa indikatorer för IP:er och URL:er/domäner](indicator-ip-domain.md)
 - [Skapa indikatorer baserade på certifikat](indicator-certificates.md)
 - [Hantera indikatorer](indicator-manage.md)

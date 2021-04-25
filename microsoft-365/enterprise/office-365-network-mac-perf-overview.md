@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Översikt över nätverksanslutningen i administrationscentret för Microsoft 365 (förhandsversion)
-ms.openlocfilehash: 99c05c18f3825680824854f86e469ab4aa8bbcba
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: c3ce053ecc859d3ac0cf53b0a132a7032ce6a87a
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860869"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994683"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Nätverksanslutning i administrationscentret för Microsoft 365 (förhandsversion)
 
@@ -152,7 +152,9 @@ På sidan För kontorsplatser visas dessutom platsens nätverksutvärdering, nä
 
 Jämförelser mellan kunder i samma stad baseras på förväntningarna att alla kunder har samma tillgång till nätverkstjänstleverantörer, telekommunikationsinfrastruktur och närliggande Microsoft-nätverkspunkter för närvaro.
 
-På fliken Information på kontorets platssida visas de specifika måttresultat som användes för att få med insikter, rekommendationer och nätverksutvärderingen. Detta tillhandahålls så att nätverkstekniker kan validera rekommendationerna och faktorn för alla begränsningar eller specifika frågor i miljön.
+Platsnamnen kan anpassas när du lägger till en ny plats eller redigerar en befintlig plats på den utfällade platsen. Det ger dig möjlighet att när som helst anpassa dina platsnamn. När du lägger till LAN-undernät direkt på den utfällande platsen visas dessutom en listrutan med mjukt matchade LAN-undernät som du kan välja bland. Kretsnamn för specifika ip-adresser för kontor kan läggas till och redigeras.
+
+På fliken Information på kontorets platssida visas de specifika måttresultat som användes för att få med insikter, rekommendationer och nätverksutvärderingen. Detta tillhandahålls så att nätverkstekniker kan validera rekommendationerna och faktorn för alla begränsningar eller specifika frågor i miljön. Du hittar också det uppskattade antalet användare för insamlade exempel på dessa kontor och fjärranslutna medarbetare på den staden.
 
 > [!div class="mx-imgBorder"]
 > ![Platsspecifik information](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)

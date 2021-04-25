@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 34ca51c066eddb65f2df0cf8a5d85732bd84a9c0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 15909684d07bac46fd42163cee545bc4752b61d4
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934375"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995015"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurera avancerade funktioner i Defender för Slutpunkt
 
@@ -127,6 +127,8 @@ Mer information finns i [Hantera indikatorer](manage-indicators.md).
 Under vissa typer av cyberattacker försöker dåliga aktör att inaktivera säkerhetsfunktioner, till exempel antivirusskydd, på dina datorer. Dåliga aktör vill inaktivera dina säkerhetsfunktioner för att få enklare åtkomst till dina data, installera skadlig programvara eller på annat sätt utnyttja dina data, din identitet och dina enheter.
 
 Skydd mot manipulering låser i princip Microsoft Defender Antivirus och förhindrar att säkerhetsinställningarna ändras genom appar och metoder.
+
+Den här funktionen är tillgänglig om ditt företag använder Microsoft Defender Antivirus och molnbaserat skydd är aktiverat. Mer information finns i [Använda nästa generations teknik i Microsoft Defender Antivirus via moln levererat skydd.](cloud-protection-microsoft-defender-antivirus.md)
 
 Behåll skydd mot manipulering aktiverat för att förhindra oönskade ändringar i din säkerhetslösning och dess viktiga funktioner.
 
