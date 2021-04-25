@@ -243,6 +243,8 @@
 ##### [Manuell distribution](linux-install-manually.md)
 ##### [Puppet-baserad distribution](linux-install-with-puppet.md)
 ##### [Ansible-baserad distribution](linux-install-with-ansible.md)
+##### [Distribuera Defender för Endpoint på Linux med Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+
 
 #### [Uppdatera](linux-updates.md)
 
@@ -253,7 +255,6 @@
 ##### [Identifiera och blockera potentiellt oönskade program](linux-pua.md)
 ##### [Schemalägga genomsökningar med Microsoft Defender för Endpoint för Linux](linux-schedule-scan-atp.md)
 ##### [Schemalägga en uppdatering av Microsoft Defender för Endpoint (Linux)](linux-update-MDE-Linux.md)
-##### [Distribuera Defender för Endpoint på Linux med Chef](linux-deploy-defender-for-endpoint-with-chef.md)
 
 #### [Felsökning]()
 ##### [Felsöka installationsproblem](linux-support-install.md)
