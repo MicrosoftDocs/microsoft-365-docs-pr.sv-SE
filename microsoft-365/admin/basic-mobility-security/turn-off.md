@@ -1,5 +1,5 @@
 ---
-title: Stänga av grundläggande mobilitet och säkerhet
+title: Stäng av grundläggande Mobility and Security
 f1.keywords: NOCSH
 ms.author: kwekua
 author: kwekua
@@ -13,46 +13,46 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-description: Ta bort grupper eller principer för att stänga av grundläggande mobilitet och säkerhet.
-ms.openlocfilehash: 0786ac8ebd190b9af3211c211cc6db2ea9e0ea48
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+description: Ta bort grupper eller principer för att inaktivera Grundläggande rörlighet och säkerhet.
+ms.openlocfilehash: 1d81aed01193fb2ba821ebc055958ac6cd8ac382
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876846"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023875"
 ---
-# <a name="turn-off-basic-mobility-and-security"></a><span data-ttu-id="fe204-103">Stänga av grundläggande mobilitet och säkerhet</span><span class="sxs-lookup"><span data-stu-id="fe204-103">Turn off Basic Mobility and Security</span></span>
+# <a name="turn-off-basic-mobility-and-security"></a><span data-ttu-id="07eba-103">Stäng av grundläggande Mobility and Security</span><span class="sxs-lookup"><span data-stu-id="07eba-103">Turn off Basic Mobility and Security</span></span>
 
-<span data-ttu-id="fe204-104">För att effektivt stänga av grundläggande mobilitet och säkerhet tar du bort grupper av personer som definieras av säkerhets grupper från enhets hanterings principer eller tar bort själva principer.</span><span class="sxs-lookup"><span data-stu-id="fe204-104">To effectively turn off Basic Mobility and Security, you remove groups of people defined by security groups from the device management policies, or remove the policies themselves.</span></span>
+<span data-ttu-id="07eba-104">För att effektivt inaktivera Grundläggande rörlighet och säkerhet tar du bort grupper av personer som definieras av säkerhetsgrupper från principer för enhetshantering eller tar bort principerna själva.</span><span class="sxs-lookup"><span data-stu-id="07eba-104">To effectively turn off Basic Mobility and Security, you remove groups of people defined by security groups from the device management policies, or remove the policies themselves.</span></span>
 
-- <span data-ttu-id="fe204-105">Ta bort grupper med användare genom att ta bort säkerhets grupper för användare från de enheter som du har skapat.</span><span class="sxs-lookup"><span data-stu-id="fe204-105">Remove groups of users by removing user security groups from the device policies you've created.</span></span>
+- <span data-ttu-id="07eba-105">Ta bort grupper av användare genom att ta bort användarsäkerhetsgrupper från enhetsprinciperna som du har skapat.</span><span class="sxs-lookup"><span data-stu-id="07eba-105">Remove groups of users by removing user security groups from the device policies you've created.</span></span>
 
-- <span data-ttu-id="fe204-106">Inaktivera grundläggande mobilitet och säkerhet för alla genom att ta bort alla grundläggande principer för mobilitet och säkerhet.</span><span class="sxs-lookup"><span data-stu-id="fe204-106">Disable Basic Mobility and Security for everyone by removing all Basic Mobility and Security device policies.</span></span>
+- <span data-ttu-id="07eba-106">Inaktivera grundläggande rörlighet och säkerhet för alla genom att ta bort alla principer för grundläggande rörlighet och säkerhetsenhet.</span><span class="sxs-lookup"><span data-stu-id="07eba-106">Disable Basic Mobility and Security for everyone by removing all Basic Mobility and Security device policies.</span></span>
 
-<span data-ttu-id="fe204-107">De här alternativen tar bort grundläggande mobilitet och säkerhet för enheter i din organisation.</span><span class="sxs-lookup"><span data-stu-id="fe204-107">These options remove Basic Mobility and Security enforcement for devices in your organization.</span></span> <span data-ttu-id="fe204-108">Tyvärr kan du inte helt enkelt "avetablera" grundläggande mobilitet och säkerhet när du har konfigurerat det.</span><span class="sxs-lookup"><span data-stu-id="fe204-108">Unfortunately, you can't simply "unprovision" Basic Mobility and Security after you've set it up.</span></span> 
+<span data-ttu-id="07eba-107">Med de här alternativen tas tillämpning av Basic Mobility och Security bort för enheter i organisationen.</span><span class="sxs-lookup"><span data-stu-id="07eba-107">These options remove Basic Mobility and Security enforcement for devices in your organization.</span></span> <span data-ttu-id="07eba-108">Tyvärr kan du inte bara "återkalla" Basic Mobility and Security när du har konfigurerat den.</span><span class="sxs-lookup"><span data-stu-id="07eba-108">Unfortunately, you can't simply "unprovision" Basic Mobility and Security after you've set it up.</span></span> 
 
 >[!IMPORTANT]
-><span data-ttu-id="fe204-109">Observera att det påverkar användarnas enheter när du tar bort säkerhets grupper för användare från principer eller tar bort själva principer.</span><span class="sxs-lookup"><span data-stu-id="fe204-109">Be aware of the impact on users' devices when you remove user security groups from policies or remove the policies themselves.</span></span> <span data-ttu-id="fe204-110">E-postprofiler och cachelagrade e-postmeddelanden kan till exempel tas bort beroende på enheten.</span><span class="sxs-lookup"><span data-stu-id="fe204-110">For example, email profiles and cached emails might be removed, depending on the device.</span></span> <span data-ttu-id="fe204-111">Mer information finns i  [vad som händer när du tar bort en princip eller tar bort en användare från policyn?](https://support.microsoft.com/office/create-device-security-policies-in-basic-mobility-and-security-d310f556-8bfb-497b-9bd7-fe3c36ea2fd6#bkmk_changeimpact)</span><span class="sxs-lookup"><span data-stu-id="fe204-111">For more info, see  [What happens when you delete a policy or remove a user from the policy?](https://support.microsoft.com/office/create-device-security-policies-in-basic-mobility-and-security-d310f556-8bfb-497b-9bd7-fe3c36ea2fd6#bkmk_changeimpact)</span></span>
+><span data-ttu-id="07eba-109">Tänk på hur användarnas enheter påverkas när du tar bort användarnas säkerhetsgrupper från principerna eller tar bort principerna.</span><span class="sxs-lookup"><span data-stu-id="07eba-109">Be aware of the impact on users' devices when you remove user security groups from policies or remove the policies themselves.</span></span> <span data-ttu-id="07eba-110">Till exempel kan e-postprofiler och cachelagrade e-postmeddelanden tas bort, beroende på enhet.</span><span class="sxs-lookup"><span data-stu-id="07eba-110">For example, email profiles and cached emails might be removed, depending on the device.</span></span> <span data-ttu-id="07eba-111">Mer information finns i Vad  [händer när du tar bort en princip eller tar bort en användare från principen?](../../admin/basic-mobility-security/create-device-security-policies.md)</span><span class="sxs-lookup"><span data-stu-id="07eba-111">For more info, see  [What happens when you delete a policy or remove a user from the policy?](../../admin/basic-mobility-security/create-device-security-policies.md)</span></span>
 
-## <a name="remove-user-security-groups-from-basic-mobility-and-security-device-policies"></a><span data-ttu-id="fe204-112">Ta bort säkerhets grupper för användare från grundläggande principer för mobilitet och säkerhets enheter</span><span class="sxs-lookup"><span data-stu-id="fe204-112">Remove user security groups from Basic Mobility and Security device policies</span></span>
+## <a name="remove-user-security-groups-from-basic-mobility-and-security-device-policies"></a><span data-ttu-id="07eba-112">Ta bort användarsäkerhetsgrupper från principer för grundläggande rörlighet och säkerhetsenhet</span><span class="sxs-lookup"><span data-stu-id="07eba-112">Remove user security groups from Basic Mobility and Security device policies</span></span>
 
-1. <span data-ttu-id="fe204-113">I webbläsaren:  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .</span><span class="sxs-lookup"><span data-stu-id="fe204-113">In your browser type: [https://protection.office.com/devicev2](https://protection.office.com/devicev2).</span></span>
+1. <span data-ttu-id="07eba-113">Skriv följande i webbläsaren:  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .</span><span class="sxs-lookup"><span data-stu-id="07eba-113">In your browser type: [https://protection.office.com/devicev2](https://protection.office.com/devicev2).</span></span>
 
-2. <span data-ttu-id="fe204-114">Välj en enhets princip och välj sedan **Redigera princip**.</span><span class="sxs-lookup"><span data-stu-id="fe204-114">Select a device policy, and select **Edit policy**.</span></span> 
+2. <span data-ttu-id="07eba-114">Välj en enhetsprincip och sedan **Redigera princip**.</span><span class="sxs-lookup"><span data-stu-id="07eba-114">Select a device policy, and select **Edit policy**.</span></span> 
 
-3. <span data-ttu-id="fe204-115"> \*\*\*\*   Välj *\*ta bort** på sidan distribution.</span><span class="sxs-lookup"><span data-stu-id="fe204-115">On the  **Deployment**  page, select **Remove**.</span></span>
+3. <span data-ttu-id="07eba-115">Välj  **Ta bort**   på sidan **Distribution.**</span><span class="sxs-lookup"><span data-stu-id="07eba-115">On the  **Deployment**  page, select **Remove**.</span></span>
 
-4. <span data-ttu-id="fe204-116">Under  **grupper** väljer du en säkerhets grupp.</span><span class="sxs-lookup"><span data-stu-id="fe204-116">Under  **Groups**, select a security group.</span></span>
+4. <span data-ttu-id="07eba-116">Välj  **en** säkerhetsgrupp under Grupper.</span><span class="sxs-lookup"><span data-stu-id="07eba-116">Under  **Groups**, select a security group.</span></span>
 
-5. <span data-ttu-id="fe204-117">Välj  **ta bort** och välj sedan **Spara**.</span><span class="sxs-lookup"><span data-stu-id="fe204-117">Select  **Remove**, and select **Save**.</span></span>
+5. <span data-ttu-id="07eba-117">Välj  **Ta** bort och sedan **Spara**.</span><span class="sxs-lookup"><span data-stu-id="07eba-117">Select  **Remove**, and select **Save**.</span></span>
 
-## <a name="remove-basic-mobility-and-security-device-policies"></a><span data-ttu-id="fe204-118">Ta bort principer för mobilitet och säkerhets enheter</span><span class="sxs-lookup"><span data-stu-id="fe204-118">Remove Basic Mobility and Security device policies</span></span>
+## <a name="remove-basic-mobility-and-security-device-policies"></a><span data-ttu-id="07eba-118">Ta bort principer för grundläggande rörlighet och säkerhetsenhet</span><span class="sxs-lookup"><span data-stu-id="07eba-118">Remove Basic Mobility and Security device policies</span></span>
 
-1.  <span data-ttu-id="fe204-119">I webbläsaren:  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .</span><span class="sxs-lookup"><span data-stu-id="fe204-119">In your browser type: [https://protection.office.com/devicev2](https://protection.office.com/devicev2).</span></span> 
+1.  <span data-ttu-id="07eba-119">Skriv följande i webbläsaren:  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .</span><span class="sxs-lookup"><span data-stu-id="07eba-119">In your browser type: [https://protection.office.com/devicev2](https://protection.office.com/devicev2).</span></span> 
 
-2.  <span data-ttu-id="fe204-120">Välj en enhets princip och välj sedan  **ta bort princip**.</span><span class="sxs-lookup"><span data-stu-id="fe204-120">Select a device policy, and then select  **Delete policy**.</span></span>
+2.  <span data-ttu-id="07eba-120">Välj en enhetsprincip och välj sedan Ta  **bort princip**.</span><span class="sxs-lookup"><span data-stu-id="07eba-120">Select a device policy, and then select  **Delete policy**.</span></span>
     
-3.  <span data-ttu-id="fe204-121">I dialog rutan varning väljer du **Ja**.</span><span class="sxs-lookup"><span data-stu-id="fe204-121">In the Warning dialog box, select **Yes**.</span></span>
+3.  <span data-ttu-id="07eba-121">Välj Ja i dialogrutan **Varning.**</span><span class="sxs-lookup"><span data-stu-id="07eba-121">In the Warning dialog box, select **Yes**.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="fe204-122">Om du vill veta mer om hur du avblockerar enheter om dina organisations enheter fortfarande är spärrade kan du läsa blogg inlägget [ta bort åtkomst kontroll från hantering av mobila enheter för Office 365](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934).</span><span class="sxs-lookup"><span data-stu-id="fe204-122">For more steps to unblock devices if your organization devices are still in a blocked state,  see the blog post [Removing Access Control from Mobile Device Management for Office 365](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934).</span></span>
+><span data-ttu-id="07eba-122">Mer information om hur du tar bort blockering av enheter om organisationens enheter fortfarande är blockerade finns i blogginlägget Ta bort åtkomstkontroll från Hantering av mobila enheter för [Office 365.](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)</span><span class="sxs-lookup"><span data-stu-id="07eba-122">For more steps to unblock devices if your organization devices are still in a blocked state,  see the blog post [Removing Access Control from Mobile Device Management for Office 365](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934).</span></span>
