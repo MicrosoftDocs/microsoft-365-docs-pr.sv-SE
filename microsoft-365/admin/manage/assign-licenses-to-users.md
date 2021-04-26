@@ -22,12 +22,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Lär dig hur man tilldelar licenser till användare.
-ms.openlocfilehash: 3622be180ae622d5d08066cc03773a8175fe9342
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 9fa8981949215c4cf7779a21ff7089d7534e1ef0
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398169"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023755"
 ---
 # <a name="assign-licenses-to-users"></a>Tilldela licenser till användare
 
@@ -174,7 +174,7 @@ Du kan bjuda in gästanvändare att samarbeta med din organisation i Azure Activ
 
 ## <a name="next-steps"></a>Nästa steg
 
-Om dina användare inte har installerat Office-apparna kan du dela [snabbstartsguide för anställda](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f) med dina användare att konfigurera saker, t. ex. [hur du laddar ned och installerar Microsoft 365 eller Office 2019 på en PC-eller Mac-](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) och [hur du konfigurerar Office-appar och e-post på en mobil enhet](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
+Om dina användare inte har installerat Office-apparna kan du dela [snabbstartsguide för anställda](../../business-video/employee-quick-setup.md) med dina användare att konfigurera saker, t. ex. [hur du laddar ned och installerar Microsoft 365 eller Office 2019 på en PC-eller Mac-](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) och [hur du konfigurerar Office-appar och e-post på en mobil enhet](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
 
 ## <a name="related-content"></a>Relaterat innehåll
 

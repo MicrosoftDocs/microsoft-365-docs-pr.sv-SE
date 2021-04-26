@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Du kan använda Administrationscenter för att konfigurera din organisation i molnet, hantera användare och prenumerationer. Kom igång genom att logga in på kontot som har administratörsbehörighet.
-ms.openlocfilehash: ef606565d7cad94bc0c7ff81630ef6c2fe8a6fc4
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 8dcd806318bad4aed37aa8cccce4bf90c32e824c
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222093"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023959"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Om Administrationscenter för Microsoft 365
 
@@ -43,7 +43,7 @@ Titta på en kort video om administrationscenter. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL]
 
-Om den här videon har hjälp dig kan du ta en titt på den[fullständiga utbildningsserien för småföretag och de som är nya för Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Om den här videon har hjälp dig kan du ta en titt på den[fullständiga utbildningsserien för småföretag och de som är nya för Microsoft 365](../../business-video/index.yml).
 
 ## <a name="how-to-get-to-the-admin-center"></a>Så här kommer du till Administrationscenter
 
@@ -99,6 +99,6 @@ Här är funktionerna och inställningarna du hittar i navigeringen till vänste
 
 - [Hantera en Microsoft 365-grupp](../create-groups/manage-groups.md)
 
-## <a name="see-also"></a>Se även
+## <a name="related-content"></a>Relaterat innehåll
 
-[Utbildningsvideor för Microsoft 365 Business](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Utbildningsvideor om Microsoft 365 för företag](../../business-video/index.yml) (länkar)

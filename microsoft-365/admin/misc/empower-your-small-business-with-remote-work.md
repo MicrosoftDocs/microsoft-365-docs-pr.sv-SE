@@ -15,12 +15,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: Hitta den senaste informationen, tips, resurser och vägledning om distansarbete för företag som använder Microsoft 365.
-ms.openlocfilehash: 3ef8bb3527e6be258eda8d745d841e8bd81cdd6c
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5bdff59f3d07c59951c6da87d7b28432fb7c5878
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860589"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023743"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>Förbättra småföretagen med distansarbete
 
@@ -37,9 +37,9 @@ När företag anpassar sig till det ökade behovet av att få människor att arb
 
 Mot bakgrund av utbrottet av COVID-19 (coronavirus), står många företagsägare med en helt fjärransluten arbetspersonal. Det här kan du göra för att göra en övergång till distansarbete säkert, säkert och produktivt.
 
-Mer information finns i [Komma igång med Microsoft Teams i småföretag.](https://support.microsoft.com/office/get-started-with-microsoft-teams-in-your-small-business-184f1aba-2f91-43f0-86e1-9fae607e24f6)
+Mer information finns i [Komma igång med Microsoft Teams i småföretag.](../../business-video/get-started-teams-small-business.md)
 
-Har du redan en prenumeration men behöver konfigurera den? Se [utbildning för Microsoft 365 Small Business.](https://support.microsoft.com/office/set-up-your-small-business-6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+Har du redan en prenumeration men behöver konfigurera den? Se [utbildning för Microsoft 365 Small Business.](../../business-video/index.yml)
 
 ## <a name="connect-with-employees-and-customers"></a>Få kontakt med anställda och kunder
 
@@ -49,19 +49,19 @@ Du kan fortfarande ansluta till anställda, kunder, klienter och partner, även 
 
 Hålla ljud-, video- och webbmöten med anställda, kunder och partner i Microsoft Teams.
 
-Mer information finns i Vara [värd för onlinemöten](https://support.microsoft.com/topic/host-online-meetings-for-your-business-d5101f5c-30e3-4097-bb10-6d2fdeb9cf53) [och Chatta med anställda och kunder.](https://support.microsoft.com/office/chat-with-employees-and-customers-65748808-a403-462c-a6e1-b169e5bc6c92)
+Mer information finns i Vara [värd för onlinemöten](../../business-video/start-and-pin-chats.md) [och Chatta med anställda och kunder.](https://support.microsoft.com/office/chat-with-employees-and-customers-65748808-a403-462c-a6e1-b169e5bc6c92)
 
 ### <a name="store-and-share-files"></a>Lagra och dela filer
 
 Placera affärsdokumenten i molnet och dela dem på ett säkert sätt, både internt och externt.
 
-Mer information finns i översikten [över delning av affärsfiler och](https://support.microsoft.com/topic/share-your-business-files-overview-6725104a-6df7-4778-99c4-c06217dffecc) Ladda upp och dela [filer.](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12)
+Mer information finns i översikten [över delning av affärsfiler och](../../business-video/overview-file-sharing.md) Ladda upp och dela [filer.](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12)
 
 ### <a name="collaborate-with-customers"></a>Samarbeta med kunder
 
 Bjud in anställda och kunder till ett team så att du kan arbeta direkt med dem och samordna och samarbeta på ett och samma ställe.
 
-Mer information finns i [Skapa ett team och](https://support.microsoft.com/office/create-a-team-with-guests-11fbb083-52ee-434d-8c6e-63711fdafac7) Aktivera [gäståtkomst.](https://docs.microsoft.com/MicrosoftTeams/guest-joins)
+Mer information finns i [Skapa ett team och](../../business-video/team-with-guests.md) Aktivera [gäståtkomst.](/MicrosoftTeams/guest-access)
 
 ## <a name="manage-and-secure-your-business-to-run-remotely"></a>Hantera och skydda ditt företag för att driva det från distans
 
@@ -71,13 +71,13 @@ Med bara några få steg kan du skydda företaget, även med fjärranslutna anst
 
 Använd multifaktorautentisering för att skydda dina data och enheter.
 
-Mer information finns i [Aktivera multifaktorautentisering.](https://support.microsoft.com/office/secure-employee-accounts-with-mfa-in-microsoft-365-business-e12187b8-216a-4490-9e3b-df34a06fb787)
+Mer information finns i [Aktivera multifaktorautentisering.](../../business-video/turn-on-mfa.md)
 
 ### <a name="secure-your-devices"></a>Skydda dina enheter
 
 Hantera datorer och telefoner på distans och se till att de är skyddade och uppdaterade. Kräver Microsoft 365 Business.
 
-Mer information finns i [Hantera enheter](https://support.microsoft.com/office/manage-policies-for-windows-10-pcs-5b5aec9e-e267-463a-bc39-54753375e579).
+Mer information finns i [Hantera enheter](../../business-video/secure-win-10-pro-devices.md).
 
 ### <a name="more-for-admins-and-partners"></a>Mer för administratörer och partner
 

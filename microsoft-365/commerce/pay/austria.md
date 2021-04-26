@@ -10,24 +10,24 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
-description: Lär dig var du skickar betalningen för din prenumeration.
+description: Lär dig vart du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f973737f3be59a9206b207e58605784da617fc81
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 6b405536aaa86df5ca6f7f959bd5e9b1cf942ca4
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549610"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024163"
 ---
 # <a name="payment-information-for-austria"></a>Betalningsinformation för Österrike
 
-[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md)
+[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
 **Betala i euro och ange fakturanumret som referens vid betalning.**
 
-Använd den här bankinformationen om du har en faktura som faktureras av **Microsoft Ireland Operations Limited:**
+Om du har en faktura som faktureras av **Microsoft Ireland Operations Limited använder** du den här bankinformationen:
 
 Bank: Citibank, London\
 SWIFT-kod: CITIGB2L\
@@ -43,3 +43,5 @@ SWIFT-kod: CITIIE2X\
 IBAN-kod: IE81CITI99005170000124\
 Kontonummer: 70000124\
 Kontonamn: MICROSOFT
+
+Fakturor som utfärdats från ett lokalt Microsoft-dotterbolag utfärdas med standardsatsen för moms/moms/GST och anses vara en inhemsk tjänstleveranser för moms-/moms-/GST-syften.

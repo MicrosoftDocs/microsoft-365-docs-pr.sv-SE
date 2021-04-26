@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 20456ce837be60b707569ae07d4fb00b695b3a98
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 354f61284bbd95c1c7ca4cd50459a1644a89d090
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51446047"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023267"
 ---
 # <a name="localize-the-user-experience"></a>Lokalisera användarupplevelsen
 
@@ -62,43 +62,43 @@ Om du återanvänder befintliga enheter kan du behöva kontakta din Microsoft-ko
 
 Den [universella bilden](../service-description/device-images.md#universal-image) som tillhandahålls av Microsoft Managed Desktop inkluderar dessa språk och för Windows 10:
 
+- Arabiska
+- Bulgarian
+- Chinese Simplified
+- Chinese Traditional
+- Croatian
+- Czech
+- Danish  
+- Dutch  
 - Engelska (USA, GB, AU, CA, IN)
-- Spanska (Spanien, Mexiko)
-- Japanese
+- Estonian
+- Finnish 
 - Franska (Frankrike, Kanada)
 - German
-- Portugisiska (Brasilien)
-- Italian
-- Chinese Simplified
-- Dutch  
-- Swedish
-- Danish  
-- Finnish 
-- Russian 
-- Norska (bokmål)
-- Korean
-- Chinese Traditional
-- Polish
-- Turkish
-- Arabiska
-- Hebrew
-- Portugisiska (Portugal)
-- Czech
-- Hungarian
-- Thai
-- Indonesian
 - Greek
-- Slovak
-- Vietnamese
-- Slovenian
-- Croatian
-- Romanian
-- Lithuanian
-- Bulgarian
-- Serbiska (latinskt alfabet)
+- Hebrew
+- Hungarian
+- Indonesian
+- Italian
+- Japanese
+- Korean
 - Latvian
+- Lithuanian
+- Norska (bokmål)
+- Polish
+- Portugisiska (Brasilien)
+- Portugisiska (Portugal)
+- Romanian
+- Russian 
+- Serbiska (latinskt alfabet)
+- Slovak
+- Slovenian
+- Spanska (Spanien, Mexiko)
+- Swedish
+- Thai
+- Turkish
 - Ukrainian
-- Estonian
+- Vietnamese
 
 Microsoft 365 Apps för företag kan ha stöd för en något annorlunda lista.
 

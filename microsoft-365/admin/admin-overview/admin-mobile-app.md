@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Skaffa Microsoft 365 Admin-appen och lär dig att hantera din online organisation från din telefon eller surfplatta.
-ms.openlocfilehash: eba3783e3673efe84bdb823da2a14e06c06c5fbe
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: 20a44501db43b8cba7f31bcfded039b00f3ab341
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826129"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023947"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Om Microsoft 365 Admin-mobilappen
 
@@ -116,6 +116,6 @@ I den vänstra navigeringsmenyn går du till **Inställningar**  >  **Meddelande
 
 [E feedback365@microsoft.com postmeddelande](mailto:feedback365@microsoft.com) om du vill rapportera ett problem med programmet. Du kan också lämna feedback längst ned i den här artikeln.
   
-## <a name="see-also"></a>Se även
+## <a name="related-content"></a>Relaterat innehåll 
 
-[Utbildningsvideor för Microsoft 365 Business](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Utbildningsvideor om Microsoft 365 för företag](../../business-video/index.yml) (länkar)

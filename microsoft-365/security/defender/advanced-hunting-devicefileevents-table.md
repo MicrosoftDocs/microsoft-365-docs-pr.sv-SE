@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 40663a06e380377ccfa33dcb41a69c42e729704d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1b716a37aa39dffc8dc541335f42265ae47fe989
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935515"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023014"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -34,6 +34,7 @@ ms.locfileid: "51935515"
 
 **Gäller för:**
 - Microsoft 365 Defender
+- Microsoft Defender för Endpoint
 
 Tabellen `DeviceFileEvents` i det avancerade [sökschemat](advanced-hunting-overview.md) innehåller information om hur du skapar filer, ändras och andra filsystemhändelser. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 

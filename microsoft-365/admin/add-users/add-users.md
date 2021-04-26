@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Lär dig hur du lägger till användare och tilldelar licenser till Microsoft 365 samtidigt.
 ms.date: 07/01/2020
-ms.openlocfilehash: a7c5fcf1a129a1d434b6e641688ce4c5d234817d
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 97b7118f4052d4ab4e0ffe8ecec96f32e4042108
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760008"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024019"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Lägga till användare och tilldela licenser samtidigt
 
@@ -85,7 +85,7 @@ Du kan använda någon av följande metoder för att lägga till flera användar
 
 ## <a name="next-steps"></a>Nästa steg
 
-Efter du lagt till en användare får du en avisering från Microsoft via e-post. E-postmeddelandet innehåller personens användar-ID och lösenord för så att hen kan logga in på Microsoft 365. Använd din vanliga process för att förmedla nya lösenord. Om dina användare inte har installerat Office-apparna kan du dela [snabbstartsguiden för anställda](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f) med dina användare för att konfigurera saker, t. ex. hur man [laddar ned och installerar Office-program på PC eller Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) och hur man [konfigurerar Office-appar och e-post på en mobil enhet](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
+Efter du lagt till en användare får du en avisering från Microsoft via e-post. E-postmeddelandet innehåller personens användar-ID och lösenord för så att hen kan logga in på Microsoft 365. Använd din vanliga process för att förmedla nya lösenord. Om dina användare inte har installerat Office-apparna kan du dela [snabbstartsguiden för anställda](../../business-video/employee-quick-setup.md) med dina användare för att konfigurera saker, t. ex. hur man [laddar ned och installerar Office-program på PC eller Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) och hur man [konfigurerar Office-appar och e-post på en mobil enhet](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
 
 ## <a name="related-content"></a>Relaterat innehåll
 

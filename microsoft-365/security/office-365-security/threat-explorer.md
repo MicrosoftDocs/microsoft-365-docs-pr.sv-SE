@@ -19,15 +19,14 @@ description: Använd Explorer och realtidsidentifiering i &amp; säkerhetsefterl
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0dcda063fc544c88157cff21b8a28f7a84a6a6fb
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c6bea6cb60579263515d21e159c4032fe4281cad
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934711"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024187"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Identifiering av hot i Utforskaren och i realtid
-
 
 **Gäller för**
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
@@ -35,6 +34,9 @@ ms.locfileid: "51934711"
 
 Om din organisation har Microsoft Defender för [Office 365](defender-for-office-365.md)och du har nödvändiga behörigheter har du antingen **Utforskaren** eller **realtidsidentifiering** (tidigare realtidsrapporter *–* nyheter [!).](#new-features-in-threat-explorer-and-real-time-detections) [](#required-licenses-and-permissions) I Säkerhets- & säkerhets- och efterlevnadscenter går du till Hantering av hot och väljer **sedan Utforskaren** _eller_ **Identifieringar i realtid.**
 
+<br>
+
+****
 
 |Med Microsoft Defender för Office 365 abonnemang 2 ser du:|Med Microsoft Defender för Office 365 abonnemang 1 ser du:|
 |---|---|
@@ -55,8 +57,9 @@ Med den här rapporten kan du:
 ## <a name="improvements-to-threat-hunting-experience"></a>Förbättringar av Threat Hunting Experience
 
 ### <a name="introduction-of-alert-id-for-mdo-alerts-within-explorerreal-time-detections-preview"></a>Introduktion till aviserings-ID för MDO-aviseringar i Utforskaren/realtidsidentifiering (förhandsversion)
+
 Om du i dag navigerar från en avisering till Hotutforskaren öppnas en filtrerad vy i Utforskaren, med vyn filtrerad med aviseringsprincip-ID (princip-ID är en unik identifierare för en aviseringsprincip).
-Vi gör den här integreringen mer relevant genom att introducera aviserings-ID (se ett exempel på aviserings-ID nedan) i Threat Explorer och i realtidsidentifiering så att du ser meddelanden som är relevanta för den specifika aviseringen och antalet e-postmeddelanden. Du kan också se om ett meddelande var en del av en avisering och även navigera från det meddelandet till den specifika aviseringen.  
+Vi gör den här integreringen mer relevant genom att introducera aviserings-ID (se ett exempel på aviserings-ID nedan) i Threat Explorer och i realtidsidentifiering så att du ser meddelanden som är relevanta för den specifika aviseringen och antalet e-postmeddelanden. Du kan också se om ett meddelande var en del av en avisering och även navigera från det meddelandet till den specifika aviseringen.
 
 Aviserings-ID är tillgängligt i URL-adressen när du visar en enskild avisering. ett exempel som är `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1` .
 
@@ -66,11 +69,13 @@ Aviserings-ID är tillgängligt i URL-adressen när du visar en enskild aviserin
 > [!div class="mx-imgBorder"]
 > ![Aviserings-ID i den utfällade informationen](../../media/AlertID-DetailsFlyout.png)
 
- 
-### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days-preview"></a>Utöka databevarandet i Utforskaren (och realtidsidentifiering) och sökbegränsningen för utvärderingsklienter från 7 till 30 dagar (förhandsversion)  
-Som en del av den här ändringen kommer du att kunna söka efter och filtrera e-postdata över 30 dagar (en ökning från de föregående sju dagarna) i Threat Explorer/Realtidsidentifiering för både Defender för utvärderingsklienter för Office P1 och P2. Detta påverkar inte produktionsklienter för både P1- och P2/E5-kunder som redan har 30 dagars datalagring och sökfunktioner. 
+### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days-preview"></a>Utöka databevarandet i Utforskaren (och realtidsidentifiering) och sökbegränsningen för utvärderingsklienter från 7 till 30 dagar (förhandsversion)
 
-### <a name="updated-limits-for-export-of-records-for-threat-explorer-preview"></a>Uppdaterade begränsningar för export av poster för Threat Explorer (förhandsversion) 
+Som en del av den här ändringen kommer du att kunna söka efter och filtrera e-postdata över 30 dagar (en ökning från de föregående sju dagarna) i Threat Explorer/Realtidsidentifiering för både Defender för utvärderingsklienter för Office P1 och P2.
+Detta påverkar inte produktionsklienter för både P1- och P2/E5-kunder som redan har 30 dagars datalagring och sökfunktioner.
+
+### <a name="updated-limits-for-export-of-records-for-threat-explorer-preview"></a>Uppdaterade begränsningar för export av poster för Threat Explorer (förhandsversion)
+
 Som en del av den här uppdateringen kommer antalet rader för e-postposter som kan exporteras från Threat Explorer att ökas från 9 990 till 200 000 poster. Den uppsättning kolumner som kan exporteras för närvarande förblir densamma, men antalet rader ökar från den aktuella gränsen.
 
 ### <a name="tags-in-threat-explorer"></a>Taggar i Hotutforskaren
@@ -99,6 +104,7 @@ Du kan använda taggar som ett filter. Jaga bara på prioritetskonton eller spec
 > ![Inte filtertaggar](../../media/tags-filter-not.png)
 
 #### <a name="email-detail-flyout"></a>Utfällblad för e-postinformation
+
 Om du vill visa de enskilda taggarna för avsändare och mottagare markerar du ämnet för att öppna den utfällade meddelandeinformationen. På fliken **Sammanfattning** visas taggarna för avsändare och mottagare separat, om de finns för e-post.
 Informationen om enskilda taggar för avsändare och mottagare utökas också till exporterade CSV-data, där du kan se den här informationen i två separata kolumner.
 
@@ -107,13 +113,12 @@ Informationen om enskilda taggar för avsändare och mottagare utökas också ti
 
 Information om taggar visas också i den utfällade URL-klickningen. Om du vill visa den går du till vyn Phish eller All e-post och **går sedan** till fliken **URL:er eller URL-klickningar.** Välj en enskild utfällsida för URL om du vill visa ytterligare information om klickningar för URL-adressen, inklusive taggar kopplade till den klickningen.
 
-
 ### <a name="updated-timeline-view"></a>Uppdaterad tidslinjevy
 
 > [!div class="mx-imgBorder"]
 > ![URL-taggar](../../media/tags-urls.png)
-> 
-Lär dig mer genom att titta på [den här videon](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4). 
+>
+Lär dig mer genom att titta på [den här videon](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4).
 
 ## <a name="improvements-to-the-threat-hunting-experience-upcoming"></a>Förbättringar av upplevelsen av hot efter hot (kommande)
 
@@ -174,6 +179,7 @@ För närvarande befinner vi oss på leveransplats i det utfällfältet för e-p
 *Ytterligare åtgärder* vid leveransen av e-postmeddelandet har tillämpats. De kan inkludera *ZAP,* manuell åtgärd *(åtgärd* som vidtas av en administratör *som* mjuk borttagning), dynamisk leverans och ombearbetning *(för* e-postmeddelanden som retroaktivt identifierades som bra).
 
 > [!NOTE]
+>
 > - Som en del av de väntande ändringarna försvinner värdet "Tas bort av ZAP" som visas i filtret Leveransåtgärd. Du kan söka efter all e-post med ZAP-försöket via **Ytterligare åtgärder**.
 >
 > - Det kommer att finnas nya fält och värden för teknik **för identifiering och** ytterligare **åtgärder** (särskilt för ZAP-scenarier). Du måste utvärdera dina befintliga sparade frågor och spårade frågor för att se till att de fungerar med de nya värdena.
@@ -207,12 +213,9 @@ Förbättringarna är bland annat:
 - Visa hela klickade URL:en (inklusive alla frågeparametrar som  är en del av URL:en) i avsnittet Klick på den utfällliga URL-adressen. För närvarande visas URL-domänen och sökvägen i namnlisten. Vi utökar den informationen så att den fullständiga URL:en visas.
 
 - Korrigeringar med URL-filter *(URL-fil* kontra *URL-domän* kontra *URL-domän* och sökväg): Uppdateringarna påverkar sökningen efter meddelanden som innehåller en URL-adress/klick-bedömning. Vi har aktiverat stöd för protokoll-agnostic sökningar, så att du kan söka efter en URL utan att använda `http` . Som standard mappas URL-sökningen till http, om inte ett annat värde uttryckligen anges. Till exempel:
-
-   -  Sök med och utan `http://` prefixet i **filterfälten URL**, **URL Domain** och URL Domain **och Path.** Sökningarna bör visa samma resultat.
-
-   -  Sök efter `https://` prefixet i **URL.** När inget värde anges `http://` antas prefixet.
-
-   - `/`ignoreras i början och slutet av fälten **URL-sökväg**, **URL-domän,** **URL-domän och sökväg.** `/` i slutet av **URL-fältet** ignoreras.
+  - Sök med och utan `http://` prefixet i **filterfälten URL**, **URL Domain** och URL Domain **och Path.** Sökningarna bör visa samma resultat.
+  - Sök efter `https://` prefixet i **URL.** När inget värde anges `http://` antas prefixet.
+  - `/`ignoreras i början och slutet av fälten **URL-sökväg**, **URL-domän,** **URL-domän och sökväg.** `/` i slutet av **URL-fältet** ignoreras.
 
 ### <a name="phish-confidence-level"></a>Konfidensnivå i phish
 
@@ -290,16 +293,16 @@ Du kan se både GUID och namnet på transportreglerna som tillämpats på meddel
 
 > [!IMPORTANT]
 > ETR-sökning och ETR-namntillgänglighet beror på den specifika roll som har tilldelats till dig. Du måste ha någon av följande roller/behörigheter för att visa ETR-namn och sökning. Om du inte har någon av de här rollerna kan du inte se namnen på transportreglerna eller söka efter meddelanden med hjälp av ETR-namn. Men du kan se ETR-etiketten och GUID-informationen i e-postinformationen. Andra funktioner för postvisning i e-postrutnät, utfällningar av e-post, filter och export påverkas inte.
-> 
+>
 > - Endast EXO – skydd mot dataförlust: alla
 > - Endast EXO – O365SupportViewConfig: Alla
 > - Microsoft Azure Active Directory eller EXO – säkerhetsadministratör: Alla
 > - AAD eller EXO – Säkerhetsläsare: Alla
 > - Endast EXO – Transportregler: Alla
 > - Endast EXO – View-Only konfiguration: Alla
-> 
+>
 > I e-postrutnätet, den utfällliga listan Information och Exporterad CSV visas ETR-trafikerna med ett Namn/GUID enligt nedan.
-> 
+>
 > > [!div class="mx-imgBorder"]
 > > ![Exchange-transportregler](../../media/ETR_Details.png)
 
@@ -315,7 +318,7 @@ Sökningen efter kopplingar är "innehåller" till sin natur, vilket innebär at
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>Nya funktioner i Hotutforskaren och identifiering i realtid
 
 - [Visa nätfiskemeddelande som skickats till imiterade användare och domäner](#view-phishing-emails-sent-to-impersonated-users-and-domains)
--  [Förhandsgranska e-posthuvud och ladda ned e-posttext](#preview-email-header-and-download-email-body)
+- [Förhandsgranska e-posthuvud och ladda ned e-posttext](#preview-email-header-and-download-email-body)
 - [E-posttidslinje](#email-timeline)
 - [Exportera URL-klick på data](#export-url-click-data)
 
@@ -339,7 +342,7 @@ I det här exemplet används Threat Explorer.
 
 4. Välj Ämne för ett meddelande under fliken E-> Information om du vill se ytterligare personifieringsinformation som Personifierad domän/Identifierade plats.
 
-    **ELLER** 
+    **ELLER**
 
     Välj **Personifierad användare** och skriv en skyddad användares e-postadress i textrutan.
 
@@ -351,7 +354,7 @@ I det här exemplet används Threat Explorer.
     :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="Informationsfönstret i Informationsrutan för hotutforskaren för en skyddad användare som visar identifieringsplatsen och det hot som har upptäckts (här är en person som utger sig för att vara en användare).":::
 
 > [!NOTE]
-> Om du i steg 3  eller 5  väljer Identifieringsteknik  och väljer Personifieringsdomän eller Personifieringsanvändare visas informationen på fliken   >   *E-postinformation* om användaren eller domänen, och den identifierade platsen visas endast på meddelanden som är relaterade till användaren eller domänen på sidan Princip mot nätfiske.  
+> Om du i steg 3  eller 5  väljer Identifieringsteknik  och väljer Personifieringsdomän eller Personifieringsanvändare visas informationen på fliken   >   *E-postinformation* om användaren eller domänen, och den identifierade platsen visas endast på meddelanden som är relaterade till användaren eller domänen på sidan Princip mot nätfiske. 
 
 ### <a name="preview-email-header-and-download-email-body"></a>Förhandsgranska e-posthuvud och ladda ned e-posttext
 
@@ -366,16 +369,26 @@ Hur gör man det? Leveransstatus delas nu upp i två kolumner:
 
 *Leveransåtgärd* är den åtgärd som vidtas på ett e-postmeddelande på grund av befintliga principer eller identifieringar. Här är de möjliga åtgärderna för ett e-postmeddelande:
 
+<br>
+
+****
+
 |Levererad|Skräppost|Blockerad|Ersatt|
 |---|---|---|---|
 |E-post levererades till en användares inkorg eller mapp och användaren kan komma åt den.|E-post skickades till användarens skräppostmapp eller mappen Borttaget och användaren kan komma åt den.|E-postmeddelanden som har satts i karantän, som misslyckades eller som har släppts. Dessa e-postmeddelanden är inte tillgängliga för användaren.|E-post hade skadliga bifogade filer ersatts med TXT-filer som uppger att den bifogade filen var skadlig.|
+|
 
 Här är vad användaren kan och inte kan se:
+
+<br>
+
+****
 
 |Tillgänglig för slutanvändare|Inte tillgänglig för slutanvändare|
 |---|---|
 |Levererad|Blockerad|
 |Skräppost|Ersatt|
+|
 
 **Leveransplats** visar resultatet av principer och identifieringar som körs efter leveransen. Det är länkat till **_leveransåtgärden_**. Det här är de möjliga värdena:
 

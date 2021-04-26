@@ -21,12 +21,12 @@ description: Administrationscentret för Microsoft 365 – läs mer om de funkti
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 0c17c6840d73c5b0a2714c6c6a832c154e2a9640
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 90f75b0c1ea38833325c51399108551286f55e92
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768727"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024199"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Vad är nytt i administrationscentret för Microsoft 365
 
@@ -231,7 +231,7 @@ För några månader sedan lade vi till en inställning som låter dig hantera m
 
 ### <a name="docs-training-and-videos-june"></a>Dokument, utbildning och videor (juni)
 
-- [Komma igång med Teams](https://support.microsoft.com/office/184f1aba-2f91-43f0-86e1-9fae607e24f6)
+- [Komma igång med Teams](../business-video/get-started-teams-small-business.md)
 
 ## <a name="may-2020"></a>Maj 2020
 
@@ -333,19 +333,19 @@ Vad är nytt i **Microsoft 365-videoserien:** Den här månaden tar vi upp tips 
 
 #### <a name="for-your-users"></a>För dina användare
 
-- [Schemalägga ett möte](https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
+- [Schemalägga ett möte](../business-video/schedule-guest-meeting.md)
 - [Ansluta till ett Teams-möte](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [Skapa ett organisationsteam](https://support.microsoft.com/office/037bb27a-bcc9-48fe-8d72-44d9482420a3)
-- [Skapa ett team med gäster](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)
-- [Gå med i ett team som gäst](https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824)
-- [Skapa en grupp-e-postadress](https://support.microsoft.com/office/ded875f9-a9de-437f-b559-2ae4f235bb2b)
+- [Skapa ett organisationsteam](../business-video/org-wide-team.md)
+- [Skapa ett team med gäster](../business-video/team-with-guests.md)
+- [Gå med i ett team som gäst](../business-video/join-team-guest.md)
+- [Skapa en grupp-e-postadress](../business-video/group-email.md)
 
 #### <a name="for-admins-and-business-owners"></a>För administratörer och företagsägare
 
 - [Förbättra småföretagen med distansarbete](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
-- [Driva ett litet företag på distans](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Registrera dig för Microsoft Business Basic](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Konfigurera tvåfaktorautentisering](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Driva ett litet företag på distans](../business-video/sign-up.md)
+- [Registrera dig för Microsoft Business Basic](../business-video/sign-up.md)
+- [Konfigurera tvåfaktorautentisering](../business-video/sign-up.md)
 
 ## <a name="march-2020"></a>Mars 2020
 

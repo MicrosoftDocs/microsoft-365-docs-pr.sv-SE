@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e6bfb781b3454025c5ce0f43899180c91761a56d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 11a6fd00524e3dd7ad456f68da6f493d74deee69
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932565"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023199"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 
@@ -34,6 +34,7 @@ ms.locfileid: "51932565"
 
 **Gäller för:**
 - Microsoft 365 Defender
+- Microsoft Defender för Endpoint
 
 
 
@@ -48,8 +49,8 @@ Information om andra tabeller i det avancerade sökschemat finns [i den avancera
 | `DeviceName` | sträng | Fullständigt kvalificerat domännamn (FQDN) för datorn |
 | `NetworkAdapterName` | sträng | Namn på nätverksadaptern |
 | `MacAddress` | sträng | MAC-adressen för nätverksadaptern |
-| `NetworkAdapterType` | sträng | Nätverksadaptertyp. Information om möjliga värden finns i [denna uppräkning](/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
-| `NetworkAdapterStatus` | sträng | Driftstatus för nätverksadaptern. Information om möjliga värden finns i [denna uppräkning](/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2) |
+| `NetworkAdapterType` | sträng | Nätverksadaptertyp. Information om möjliga värden finns i [denna uppräkning](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `NetworkAdapterStatus` | sträng | Driftstatus för nätverksadaptern. Information om möjliga värden finns i [denna uppräkning](/dotnet/api/system.net.networkinformation.operationalstatus) |
 | `TunnelType` | sträng | Tunnelprotokoll, om gränssnittet används för detta ändamål, t.ex. 6to4, Det här exemplet För företag, ISATAP, PPTP, SSTP och SSH |
 | `ConnectedNetworks` | sträng | Nätverk som adaptern är ansluten till. Varje JSON-matris innehåller nätverksnamn, kategori (offentlig, privat eller domän), en beskrivning och en flagga som anger om den är ansluten offentligt till Internet |
 | `DnsAddresses` | sträng | DNS-serveradresser i JSON-matrisformat |

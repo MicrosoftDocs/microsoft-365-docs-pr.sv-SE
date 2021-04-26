@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a256282ffd8afabae7ffe6dab9a2b132e4fee475
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 0eef71a7ab88d24c1f9d0b3ebdba16b13c855355
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934879"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024269"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 
@@ -34,6 +34,7 @@ ms.locfileid: "51934879"
 
 **Gäller för:**
 - Microsoft 365 Defender
+- Microsoft Defender för Endpoint
 
 Tabellen `DeviceRegistryEvents` i det avancerade [sökschemat](advanced-hunting-overview.md) innehåller information om hur registerposter skapas och ändras. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Lär dig hur du överför data manuellt mellan två Microsoft 365-konton när du ändrade abonnemang eller företagsnamn eller kombinerade flera prenumerationer till ett.
-ms.openlocfilehash: 9916da50f4589f949d35466ca6aa8f1d79cc40ea
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b240ffbbdbfb6ed7d20a9ead9b1ee90a3af4570d
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915512"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023839"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Överföra data manuellt mellan två konton
 
@@ -91,11 +91,11 @@ Det finns flera sätt att spara eller överföra data för en gruppwebbplats:
   
 - Du kan spara den gamla webbplatsen som en mall och importera mallen i den nya webbplatsen.
 
-- För att överföra dokument återskapar du först hierarkin manuellt på den nya webbplatsen. Sedan kan du öppna båda SharePoint-gruppwebbplatserna samtidigt, öppna båda dokumentbiblioteken med Utforskaren och kopiera och klistra in dokumenten. Se [video: Kopiera eller flytta biblioteksfiler med hjälp av Öppna med Utforskaren](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
+- För att överföra dokument återskapar du först hierarkin manuellt på den nya webbplatsen. Sedan kan du öppna båda SharePoint-gruppwebbplatserna samtidigt, öppna båda dokumentbiblioteken med Utforskaren och kopiera och klistra in dokumenten. Se [video: Kopiera eller flytta biblioteksfiler med hjälp av Öppna med Utforskaren](../../business-video/store-files.md).
 
 - För att överföra listdata sparar du en [listmall](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393) och använder den sparade mallen för att återskapa listan på den nya webbplatsen.
 
-- Om du vill spara ett dokumentbibliotek eller listinnehåll från en SharePoint Online-miljö (OneDrive för företag eller gruppwebbplatser) på filresurser eller på en lokal dator, se Information om manuell migrering av [SharePoint Online-innehåll.](https://support.microsoft.com/kb/2783484)
+- Om du vill spara ett dokumentbibliotek eller listinnehåll från en SharePoint Online-miljö (OneDrive för företag eller gruppwebbplatser) på filresurser eller på en lokal dator, se Information om manuell migrering av [SharePoint Online-innehåll.](/sharepoint/troubleshoot/migration-tool/content-manual-migration)
 
 ## <a name="transfer-users-data-between-subscriptions"></a>Överföra användarnas data mellan abonnemang
 

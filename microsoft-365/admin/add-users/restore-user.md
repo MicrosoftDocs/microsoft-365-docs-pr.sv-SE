@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Lär dig hur du återställer borttagna användarkonton och alla associerade data.
-ms.openlocfilehash: 75e664c68dec13b857e4bd308d49e5b58d5edfc8
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 4893f7468a8ab5919dd3be1cce233917323f2076
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471019"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023971"
 ---
 # <a name="restore-a-user"></a>Återställa en användare
    
@@ -38,7 +38,7 @@ Här är några tips:
   
 - Se till att det finns tillgängliga licenser att tilldela kontot.
     
-- Om ditt företag använder Active Directory, se [Felsökning av borttagna konton i Office 365](https://support.microsoft.com/kb/2619308) för instruktioner om återställning av användarkonton. 
+- Om ditt företag använder Active Directory, se [Felsökning av borttagna konton i Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts.md) för instruktioner om återställning av användarkonton. 
     
 ## <a name="restore-one-or-more-user-accounts"></a>Återställa ett eller flera användarkonton
 

@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Lär dig hur du återställer dina lösenord med självbetjäningsverktyget för återställning av lösenord.
-ms.openlocfilehash: f43c409e98aa98e942bd7c7cbb15302422df241d
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 0842430eda8c96647dd12d0da6d0c9e0481346dc
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222129"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023767"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Låt användare återställa sina egna lösenord
 
@@ -52,7 +52,7 @@ Du måste vara global [administratör eller lösenordsadministratör för att](a
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](../../business-video/index.yml).
 
 ## <a name="steps-let-people-reset-their-own-passwords"></a>Steg: Låt användare återställa sina egna lösenord
 
@@ -94,4 +94,4 @@ Anvisningarna aktiverar Självbetjäning för återställning av lösenord för 
 
 [Ange att en enskild användares lösenord aldrig ska förfalla](set-password-to-never-expire.md)
 
-[Utbildningsvideor för Microsoft 365 Business](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Utbildningsvideor för Microsoft 365 Business](../../business-video/index.yml)

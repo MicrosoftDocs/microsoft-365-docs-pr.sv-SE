@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Vanliga frågor och svar om Grundläggande rörlighet och säkerhet.
-ms.openlocfilehash: a538c0b3f9fa6a4bf1861734fc9dea94030760a3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 14e12678ec210325f63914594fb6debcf7abb880
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906270"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023899"
 ---
 # <a name="basic-mobility-and-security-frequently-asked-questions-faq"></a>Vanliga frågor och svar om Basic Mobility and Security (Vanliga frågor och svar)
 
@@ -51,7 +51,7 @@ Mer information finns i [Konfigurera Grundläggande rörlighet och säkerhet.](s
 
 ## <a name="im-trying-to-set-up-basic-mobility-and-security-but-it-seems-stuck-the-microsoft-365-service-health-has-been-showing-provisioning-for-a-while-what-can-i-do"></a>Jag försöker konfigurera Basic Mobility and Security men den verkar ha låst sig. Microsoft 365-tjänstens hälsa har visat "etablering" ett tag. Vad kan jag göra?
 
-Det kan ta lite tid att förbereda tjänsten åt dig. När etableringen är klar visas sidan Grundläggande rörlighet och säkerhet. Om du har väntat 24 timmar och status fortfarande är etablering kan du kontakta supporten så hjälper vi dig att ta reda på vad problemet är. Mer information om supportalternativ finns [i Behöver du mer hjälp?](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp).
+Det kan ta lite tid att förbereda tjänsten åt dig. När etableringen är klar visas sidan Grundläggande rörlighet och säkerhet. Om du har väntat 24 timmar och status fortfarande är etablering kan du kontakta supporten så hjälper vi dig att ta reda på vad problemet är.
 
 ## <a name="what-can-i-do-if-device-enrollment-fails"></a>Vad kan jag göra om enhetsregistrering misslyckas?
 
@@ -73,7 +73,7 @@ Basic Mobility and Security är värd för Intune-tjänsten. Det är en delmäng
 
 ## <a name="how-do-policies-work-for-basic-mobility-and-security-how-do-i-set-them-up-disable-them"></a>Hur fungerar principer för grundläggande rörlighet och säkerhet? Hur ställer jag in dem? Inaktivera dem?
 
-När du har slutfört den första konfigurationen för grundläggande rörlighet och säkerhet skapar du principer och tillämpar dem på grupper av användare i säkerhets- & efterlevnadscenter. Principer kräver att användare av principerna registrerar sina enheter i Basic Mobility and Security innan enheten kan användas för att få åtkomst till Microsoft 365-data. Principerna som du bestämr bestämmer inställningar för mobila enheter, till exempel hur ofta lösenord måste återställas eller om datakryptering krävs. Mer information finns i Skapa [säkerhetsprinciper för enheter i Kompatibilitetscenter](create-device-security-policies.md)för grundläggande   rörlighet och säkerhet och Microsoft [365.](https://support.microsoft.com/office/7e696a40-b86b-4a20-afcc-559218b7b1b8)
+När du har slutfört den första konfigurationen för grundläggande rörlighet och säkerhet skapar du principer och tillämpar dem på grupper av användare i säkerhets- & efterlevnadscenter. Principer kräver att användare av principerna registrerar sina enheter i Basic Mobility and Security innan enheten kan användas för att få åtkomst till Microsoft 365-data. Principerna som du bestämr bestämmer inställningar för mobila enheter, till exempel hur ofta lösenord måste återställas eller om datakryptering krävs. Mer information finns i Skapa [säkerhetsprinciper för enheter i Kompatibilitetscenter](create-device-security-policies.md)för grundläggande   rörlighet och säkerhet och Microsoft [365.](../../compliance/microsoft-365-compliance-center.md)
 
 Stegvisa instruktioner för hur du skapar och distribuerar enhetsprinciper finns i Skapa säkerhetsprinciper för [enheter i Basic Mobility and Security.](create-device-security-policies.md)
 

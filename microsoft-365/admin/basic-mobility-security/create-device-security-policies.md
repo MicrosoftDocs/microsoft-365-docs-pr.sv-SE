@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Använd Basic Mobility and Security för att skapa enhetsprinciper som skyddar din organisations information.
-ms.openlocfilehash: f31930f1a753259622520e50da8c255e7cd410e5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5abd27f963208140a53cfd885152301992830b5e
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904294"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023911"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Skapa säkerhetsprinciper för enheter i Basic Mobility and Security
 
@@ -36,7 +36,7 @@ Du kan använda Grundläggande rörlighet och säkerhet för att skapa enhetspri
 
 - Läs mer om enheter, appar för mobila enheter och säkerhetsinställningar som stöder Basic Mobility and Security. Läs [mer i Funktioner för grundläggande rörlighet och säkerhet.](capabilities.md)
 - Skapa säkerhetsgrupper som innehåller Microsoft 365-användare som du vill distribuera principer till och för användare som du kanske vill utesluta från att blockeras åtkomst till Microsoft 365. Vi rekommenderar att du innan du distribuerar en ny princip i organisationen testar principen genom att distribuera den till ett litet antal användare. Du kan skapa och använda en säkerhetsgrupp som bara innehåller dig själv eller ett litet antal Microsoft 365-användare som kan testa principen åt dig. Mer information om säkerhetsgrupper finns i [Skapa, redigera eller ta bort en säkerhetsgrupp.](../email/create-edit-or-delete-a-security-group.md)
-- För att skapa och distribuera principer för grundläggande rörlighet och säkerhet i Microsoft 365 måste du vara en global Microsoft 365-administratör. Mer information finns i [Behörigheter i säkerhets- & Säkerhets- och efterlevnadscenter.](https://support.microsoft.com/office/d10608af-7934-490a-818e-e68f17d0e9c1)
+- För att skapa och distribuera principer för grundläggande rörlighet och säkerhet i Microsoft 365 måste du vara en global Microsoft 365-administratör. Mer information finns i [Behörigheter i säkerhets- & Säkerhets- och efterlevnadscenter.](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
 - Innan du distribuerar principer bör du meddela organisationen hur de kan påverkas av att registrera en enhet i Basic Mobility and Security. Beroende på hur du installerar principerna kan enheter som inte är kompatibla blockeras från att komma åt Microsoft 365 och data, inklusive installerade program, foton och personlig information på en registrerad enhet, och data kan tas bort.
 
 >[!NOTE]
@@ -85,7 +85,7 @@ Principen skickas till den mobila enheten för varje användare. Principen gäll
 
 ## <a name="step-4-block-email-access-for-unsupported-devices"></a>Steg 4: Blockera e-poståtkomst för enheter som inte stöds
 
-För att skydda organisationsinformationen bör du blockera appåtkomst till Microsoft 365-e-post för mobila enheter som inte stöds av Basic Mobility and Security. En lista över enheter som stöds finns i [Enheter som stöds.](https://support.microsoft.com/office/capabilities-of-basic-mobility-and-security-a1da44e5-7475-4992-be91-9ccec25905b0#bkmk_supporteddevices)
+För att skydda organisationsinformationen bör du blockera appåtkomst till Microsoft 365-e-post för mobila enheter som inte stöds av Basic Mobility and Security. En lista över enheter som stöds finns i [Enheter som stöds.](../../admin/basic-mobility-security/capabilities.md)
 
 **Så här blockerar du appåtkomst:**
 

@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Förstå vad du behöver veta innan du går igenom registreringsprocessen för Office 365. '
-ms.openlocfilehash: 93d3f58db24e4233e8d7b2929fd2471707614097
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f2a4f555540b801441644af28435170f82229909
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904378"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023923"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Så här registrerar du dig – hjälp för administratörer
 
@@ -70,7 +70,7 @@ Titta på en kort video om att välja ett Microsoft 365 för företag-abonnemang
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](../../business-video/index.yml).
 
 Behöver du hjälp med att välja ett abonnemang? Säljrådgivare finns tillgängliga för att svara på dina frågor. Gå till [Jämför alla produkter](https://products.office.com/compare-all-microsoft-office-products?tab=2) och välj ett av alternativen för att kontakta support som visas till vänster på sidan.
   
@@ -135,6 +135,6 @@ Du behöver inte avbryta utvärderingsversionen. Om du inte köper utvärderings
     > [!IMPORTANT]
     >  När du registrerar dig bör du välja det bästa betalningsalternativet för din organisation. Om du vill byta betalningsalternativ senare måste du ringa betalningssupporten.
 
-## <a name="see-also"></a>Se även
+## <a name="related-content"></a>Relaterat innehåll
 
-[Utbildningsvideor för Microsoft 365 Business](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Utbildningsvideor om Microsoft 365 för företag](../../business-video/index.yml) (länkar)
