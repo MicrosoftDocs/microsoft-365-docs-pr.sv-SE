@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9f4cc36172b0ac598b2719bee8ce56bf0f8a1b84
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 91029f03e089f44f49800bfe2d18536a8d415411
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933391"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029034"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nyheter i Microsoft 365 Defender
 
@@ -38,6 +38,12 @@ RSS-feed: Få ett meddelande när sidan uppdateras genom att kopiera och klistra
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
+
+## <a name="april-2021"></a>April 2021
+- Förbättrat Microsoft 365 säkerhetscenter <br> Det förbättrade [Microsoft 365 Säkerhetscenter](https://security.microsoft.com) är nu tillgänglig i allmänt tillgänglig förhandsversion. Med den här nya upplevelsen kommer Defender för Endpoint, Defender för Office, 365 Microsoft 365 Defender och annat till Microsoft 365 säkerhetscenter. Det här är det nya hemmet för att hantera dina säkerhetskontroller. [Läs om de senaste](./overview-security-center.md).
+
+- [Rapport om hotanalyser i Microsoft 365 Defender](threat-analytics.md)<br>
+ Hotanalyser hjälper dig att svara på och minimera påverkan på aktiva attacker. Du kan också lära dig mer om attackförsök som blockeras av Microsoft 365 Defender-lösningar och vidta förebyggande åtgärder som minskar risken för ytterligare exponering och ökar motståndskraft. Som en del av den enhetliga säkerhetsupplevelsen finns nu hotanalyser tillgängliga för Microsoft Defender för Endpoint och Microsoft Defender för Office E5-licensinnehavare.
 
 ## <a name="march-2021"></a>Mars 2021
 - [Tabellen CloudAppEvents](advanced-hunting-cloudappevents-table.md) <br>Hitta information om händelser i olika molnappar och tjänster som omfattas av Microsoft Cloud App Security. Den här tabellen innehåller också information som tidigare var tillgänglig i `AppFileEvents` .

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: Sammanfattning Förstå åtgärderna i migreringsfaserna och hur de påverkar flytten från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i den nya tyska datacenterområdet.
-ms.openlocfilehash: 8e3e6fb228445823481b52d27e5a7b6c623349e2
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 5764b5cedf17487320fbfd05885120de86da3a84
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995027"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029068"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Åtgärder i migreringsfaser och påverkan på migreringen från Microsoft Cloud Deutschland
 
@@ -226,7 +226,7 @@ I den här fasen kommer Skype för företag att migreras till Microsoft Teams. B
 - Kontakter och möten migreras till Microsoft Teams.
 - Användarna kan inte logga in i Skype för företag mellan tidstjänstens övergångar till Office 365-tjänster och inte förrän DNS-posterna för kunder har slutförts.
 - Kontakter och befintliga möten fortsätter att fungera som Skype för företag-möten.
-- Webbläsarversionen av Microsoft Teams fungerar inte när fas 9 har slutförts.
+- Webbläsarversionen av Microsoft Teams fungerar inte förrän fas 9 har slutförts.
 
 Om du måste ansluta till Skype för företag – Online med PowerShell efter att migreringsfasen 9 har slutförts använder du följande PowerShell-kod för att ansluta:
 

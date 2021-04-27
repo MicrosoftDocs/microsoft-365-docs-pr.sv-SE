@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Läs mer om Deployment Lab kit för Windows och Office, och var du hittar det.
-ms.openlocfilehash: dd066339ccfefdc58eb241bb9fdb69cdd5a458d8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: efbcec6417b082311d3f094b0251702d8e0dbeac
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907462"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52028670"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Distributionslabbpaket för Windows och Office
 
@@ -99,7 +99,7 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
 
 [Ladda ned Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-* Den installerade baslinjeversionen 2002 kan uppdateras till version 2010 med hjälp av uppdateringen i konsolen. Använd en bred bandbredd på Internetanslutningen för att ladda ned innehållet och ge 30–45 minuter för automatisk etablering. Labbmiljön kräver minst 16 GB tillgängligt minne och 150 GB ledigt diskutrymme. För optimala prestanda rekommenderas 32 GB tillgängligt minne och 300 GB ledigt utrymme. Paketet går ut den 2 maj 2021. En ny version publiceras före utgångsdatumet.
+* Den installerade baslinjeversionen 2002 kan uppdateras till version 2010 med hjälp av uppdateringen i konsolen. Använd en bred bandbredd på Internetanslutningen för att ladda ned innehållet och ge 30–45 minuter för automatisk etablering. Labbmiljön kräver minst 16 GB tillgängligt minne och 150 GB ledigt diskutrymme. För optimala prestanda rekommenderas 32 GB tillgängligt minne och 300 GB ledigt utrymme. Paketet går ut 22 juli 2021. En ny version publiceras före utgångsdatumet.
 
 ## <a name="additional-guidance"></a>Ytterligare vägledning
 

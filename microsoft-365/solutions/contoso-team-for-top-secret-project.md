@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-manager: laurawi
+manager: dansimp
 ms.date: 08/14/2020
 audience: ITPro
 ms.topic: overview
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Sammanfattning: Hur Contoso använde en grupp med säkerhetsisolering för ett hemligt projekt för att utveckla en ny uppsättning produkter och tjänster.'
-ms.openlocfilehash: d5ab2808251ff6a53f8975ea868431691d3301e2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 751bf3972d148219a6cc341067c0bf34cd581447
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051012"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029022"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Isolerat team för ett hemligt projekt av Contoso Corporation
 
@@ -40,7 +40,7 @@ Contosos IT-personal använde en [grupp med säkerhetsisolering](secure-teams-se
 
 ## <a name="step-1-created-a-private-team"></a>Steg 1: Skapat ett privat team
 
-För att skydda åtkomsten till den underliggande SharePoint-webbplatsen för gruppen konfigurerade Contoso IT-administratörer den [rekommenderade SharePoint-åtkomstprincipen.](../security/defender-365-security/sharepoint-file-access-policies.md)
+För att skydda åtkomsten till den underliggande SharePoint-webbplatsen för gruppen konfigurerade Contoso IT-administratörer den [rekommenderade SharePoint-åtkomstprincipen.](../security/office-365-security/sharepoint-file-access-policies.md)
 
 En Contoso IT-administratör skapade sedan ett nytt privat team med namnet Project 2X och lade till användarkontona för Project 2X-personal som medlemmar. De har även konfigurerat teamet så att endast Project 2X-teamägare kan skapa privata kanaler.
 
@@ -64,7 +64,7 @@ Mer information om konfiguration finns i [Skapa en känslighetsetikett](secure-t
 
 ## <a name="step-3-configured-the-underlying-sharepoint-site"></a>Steg 3: Konfigurerade den underliggande SharePoint-webbplatsen
 
-För att skydda åtkomsten till den underliggande SharePoint-webbplatsen för gruppen konfigurerade Contoso IT-administratörer den [rekommenderade SharePoint-åtkomstprincipen.](../security/defender-365-security/sharepoint-file-access-policies.md)
+För att skydda åtkomsten till den underliggande SharePoint-webbplatsen för gruppen konfigurerade Contoso IT-administratörer den [rekommenderade SharePoint-åtkomstprincipen.](../security/office-365-security/sharepoint-file-access-policies.md)
 
 Därefter har de konfigurerat ytterligare behörighetsinställningar för webbplatsen:
 

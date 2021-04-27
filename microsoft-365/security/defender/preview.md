@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 291ee6d2f72579a6daf731c121265164b2aaa547
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c82e1abf9e539ad169bbc488ade9cd21bb8e6727
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51074778"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029080"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Förhandsgranskningsfunktioner i Microsoft 365 Defender
 
@@ -68,10 +68,6 @@ Du vet att du har aktiverat förhandsgranskningsfunktionerna när kryssrutan **A
 
 Följande funktioner och förbättringar är för närvarande tillgängliga för förhandsgranskning:
 
-### <a name="improved-microsoft-365-security-center"></a>Förbättrat Microsoft 365 säkerhetscenter
-Det förbättrade [Microsoft 365 Säkerhetscenter](https://security.microsoft.com) är nu tillgänglig i allmänt tillgänglig förhandsversion. Med den här nya upplevelsen kommer Defender för Endpoint, Defender för Office, 365 Microsoft 365 Defender och annat till Microsoft 365 säkerhetscenter. Det här är det nya hemmet för att hantera dina säkerhetskontroller. [Läs om de senaste](./overview-security-center.md).
-
-- **[Microsoft 365 Defender rapport om hotanalyser](threat-analytics.md)** – Hotanalyser hjälper dig att svara på och minimera påverkan på aktiva attacker. Du kan också lära dig mer om attackförsök som blockeras av Microsoft 365 Defender-lösningar och vidta förebyggande åtgärder som minskar risken för ytterligare exponering och ökar motståndskraft. Som en del av den enhetliga säkerhetsupplevelsen finns nu hotanalyser tillgängliga för Microsoft Defender för Endpoint och Microsoft Defender för Office E5-licensinnehavare.
 - **[Microsoft 365 Defender-API:er](api-overview.md)** – Microsoft 365 Defender-API:er på toppnivån gör att du kan automatisera arbetsflöden baserat på delade incidenter och avancerade tabeller för sökning. 
 - **[Vidta åtgärder inom avancerad sökning](advanced-hunting-take-action.md)**– Innehåller snabbt hot eller hantera komprometterade tillgångar som du hittar vid avancerad [sökning.](advanced-hunting-overview.md)
 - **[Schemareferens på portalen](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**– Få information om avancerade schematabeller för sökning direkt i säkerhetscentret. Förutom tabell- och kolumnbeskrivningar innehåller den här referensen händelsetyper `ActionType` (värden) och exempelfrågor som stöds.
