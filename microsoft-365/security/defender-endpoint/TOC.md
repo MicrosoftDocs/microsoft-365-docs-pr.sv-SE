@@ -49,7 +49,163 @@
 #### [Grupprincipobjekt](manage-atp-post-migration-group-policy-objects.md)
 #### [PowerShell, WMI, and MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
 
-## [Säkerhetsadministration]()
+
+## [Konfigurera och introducera enheter]()
+### [Microsoft Defender för Endpoint i Windows och på Windows Server]()
+#### [Registrera enheter till Microsoft Defender för Endpoint](onboard-configure.md)
+#### [Registrera tidigare versioner av Windows](onboard-downlevel.md)
+#### [Registrera Windows 10-enheter]()
+##### [Verktyg och metoder för introducering](configure-endpoints.md)
+##### [Registrera enheter med grupprinciper](configure-endpoints-gp.md)
+##### [Registrera enheter med Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+##### [Registrera enheter med verktyg för enhetshantering för mobila enheter](configure-endpoints-mdm.md)
+##### [Registrera enheter med ett lokalt skript](configure-endpoints-script.md)
+##### [Registrera enheter för icke beständiga VDI-enheter (Virtual Desktop Infrastructure)](configure-endpoints-vdi.md)
+##### [Registrera Windows 10-multisessionsenheter i det Windows Virtual Desktop](Onboard-Windows-10-multi-session-device.md)
+#### [Registrera Windows-servrar](configure-server-endpoints.md)
+
+#### [Registrera enheter utan Internetanslutning](onboard-offline-machines.md)
+#### [Kör ett identifieringstest på en nyligen registrerad enhet](run-detection-test.md)
+#### [Köra simulerade attacker på enheter](attack-simulations.md)
+#### [Konfigurera inställningar för proxy- och Internetanslutning](configure-proxy-internet.md)
+#### [Skapa en regel för registrering eller avregistrering](onboarding-notification.md)
+
+### [Microsoft Defender för Endpoint på andra operativsystem]()
+#### [Introducera icke-Windows-enheter](configure-endpoints-non-windows.md)
+
+#### [Microsoft Defender för Endpoint för macOS]()
+##### [Översikt över Microsoft Defender för Endpoint för macOS](microsoft-defender-endpoint-mac.md)
+##### [Nyheter](mac-whatsnew.md)
+ 
+##### [Distribuera]()
+###### [Microsoft Intune-baserad distribution](mac-install-with-intune.md)
+###### [JAMF Pro-baserad distribution]()
+####### [Distribuera Microsoft Defender för Endpoint för macOS med Jamf Pro](mac-install-with-jamf.md)
+####### [Logga in på Jamf Pro](mac-install-jamfpro-login.md)
+####### [Konfigurera enhetsgrupper](mac-jamfpro-device-groups.md)
+####### [Konfigurera principer](mac-jamfpro-policies.md)
+####### [Registrera enheter](mac-jamfpro-enroll-devices.md)
+ 
+###### [Distribution med ett annat MDM-system (Mobile Device Management)](mac-install-with-other-mdm.md)
+###### [Manuell distribution](mac-install-manually.md)
+##### [Uppdatera](mac-updates.md)
+ 
+##### [Konfigurera]()
+###### [Konfigurera och validera undantag](mac-exclusions.md)
+###### [Ange inställningar](mac-preferences.md)
+###### [Identifiera och blockera potentiellt oönskade program](mac-pua.md)
+###### [Enhetskontroll]()
+####### [Översikt över enhetskontroll](mac-device-control-overview.md)
+####### [Exempel på JAMF](mac-device-control-jamf.md)
+####### [Exempel på Intune](mac-device-control-intune.md)
+###### [Schemalägga genomsökningar](mac-schedule-scan.md)
+ 
+##### [Felsökning]()
+###### [Felsöka installationsproblem](mac-support-install.md)
+###### [Felsöka prestandaproblem](mac-support-perf.md)
+###### [Felsöka molnanslutning](troubleshoot-cloud-connect-mdemac.md)
+###### [Felsöka problem med kernel-tillägg](mac-support-kext.md)
+###### [Felsöka licensproblem](mac-support-license.md)
+ 
+##### [Sekretess](mac-privacy.md)
+##### [Resurser](mac-resources.md)
+
+
+#### [Microsoft Defender för Endpoint för iOS]()
+##### [Översikt över Microsoft Defender för Endpoint för iOS](microsoft-defender-endpoint-ios.md)
+##### [Nyheter](ios-whatsnew.md)
+ 
+##### [Distribuera]()
+###### [Distribuera Microsoft Defender för Endpoint för iOS via Intune](ios-install.md)
+ 
+##### [Konfigurera]()
+###### [Konfigurera iOS-funktioner](ios-configure-features.md)
+##### [Sekretess](ios-privacy.md)
+ 
+ 
+#### [Microsoft Defender för Endpoint för Linux]()
+##### [Översikt över Microsoft Defender för Endpoint för Linux](microsoft-defender-endpoint-linux.md)
+##### [Nyheter](linux-whatsnew.md)
+##### [Distribuera]()
+###### [Manuell distribution](linux-install-manually.md)
+###### [Puppet-baserad distribution](linux-install-with-puppet.md)
+###### [Ansible-baserad distribution](linux-install-with-ansible.md)
+ 
+##### [Uppdatera](linux-updates.md)
+ 
+##### [Konfigurera]()
+###### [Konfigurera och validera undantag](linux-exclusions.md)
+###### [Konfiguration av statisk proxy](linux-static-proxy-configuration.md)
+###### [Ange inställningar](linux-preferences.md)
+###### [Identifiera och blockera potentiellt oönskade program](linux-pua.md)
+###### [Schemalägga genomsökningar med Microsoft Defender för Endpoint för Linux](linux-schedule-scan-atp.md)
+###### [Schemalägga en uppdatering av Microsoft Defender för Endpoint (Linux)](linux-update-MDE-Linux.md)
+###### [Distribuera Defender för Endpoint på Linux med Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+ 
+##### [Felsökning]()
+###### [Felsöka installationsproblem](linux-support-install.md)
+###### [Felsöka anslutningsproblem med molnet](linux-support-connectivity.md)
+###### [Felsöka prestandaproblem](linux-support-perf.md)
+###### [Felsöka problem med saknade händelser](linux-support-events.md)
+ 
+##### [Sekretess](linux-privacy.md)
+##### [Resurser](linux-resources.md)
+ 
+#### [Microsoft Defender för Endpoint för Android]()
+##### [Översikt över Microsoft Defender för Endpoint för Android](microsoft-defender-endpoint-android.md)
+ 
+##### [Distribuera]()
+###### [Distribuera Microsoft Defender för Endpoint för Android med Microsoft Intune](android-intune.md)
+ 
+##### [Konfigurera]()
+###### [Konfigurera Microsoft Defender för Endpoint för Android-funktioner](android-configure.md)
+ 
+##### [Sekretess]()
+###### [Microsoft Defender för Endpoint för Android – Sekretessinformation](android-privacy.md)
+ 
+##### [Felsökning]()
+###### [Felsöka problem](android-support-signin.md)
+
+### [Felsöka registreringsproblem]()
+#### [Felsöka problem under registrering](troubleshoot-onboarding.md)
+#### [Felsöka problem med prenumerationer och portalåtkomst](troubleshoot-onboarding-error-messages.md)
+
+
+
+
+### [Konfigurera portalinställningar]()
+#### [Konfigurera inställningar](preferences-setup.md)
+#### [Allmänt]()
+##### [Verifiera datalagringsplatsen och uppdatera inställningarna för datalagring](data-retention-settings.md)
+##### [Konfigurera varningsaviseringar](configure-email-notifications.md)
+##### [Konfigurera avancerade funktioner](advanced-features.md)
+
+#### [Behörigheter]()
+##### [Använda grundläggande behörigheter för att komma åt portalen](basic-permissions.md)
+##### [Hantera portalåtkomst med RBAC](rbac.md)
+###### [Skapa och hantera roller](user-roles.md)
+###### [Skapa och hantera enhetsgrupper](machine-groups.md)
+###### [Skapa och hantera enhetstaggar](machine-tags.md)
+
+#### [Regler]()
+##### [Hantera undertryckande regler](manage-suppression-rules.md)
+##### [Skapa indikatorer](manage-indicators.md)
+###### [Skapa indikatorer för filer](indicator-file.md)
+###### [Skapa indikatorer för IP:er och URL:er/domäner](indicator-ip-domain.md)
+###### [Skapa indikatorer för certifikat](indicator-certificates.md)
+###### [Hantera indikatorer](indicator-manage.md)
+##### [Hantera uppladdningar av automationsfil](manage-automation-file-uploads.md)
+##### [Hantera undantag från automationsmappar](manage-automation-folder-exclusions.md)
+
+#### [Enhetshantering]()
+##### [Registrera enheter](onboard-configure.md)
+##### [Avregistrera enheter](offboard-machines.md)
+##### [Se till att dina enheter är korrekt konfigurerade](configure-machines.md)
+##### [Övervaka och öka enhetsregistrering](configure-machines-onboarding.md)
+
+#### [Konfigurera tidzoninställningar för Microsoft Defender Säkerhetscenter](time-settings.md)
+
+## [Identifiera hot och skydda slutpunkter]()
 ### [Hot och sårbarhetshantering]()
 #### [Översikt](next-gen-threat-and-vuln-mgt.md)
 #### [Komma igång]()
@@ -73,6 +229,13 @@
 ##### [Rapport om sårbara enheter](tvm-vulnerable-devices-report.md)
 ##### [Jaga efter exponerade enheter](tvm-hunt-exposed-devices.md)
 
+### [Enhetsidentifiering]()
+#### [Översikt över enhetsidentifiering](device-discovery.md)
+#### [Konfigurera enhetsidentifiering](configure-device-discovery.md)
+#### [Vanliga frågor och svar om enhetsidentifiering](device-discovery-faq.md)
+
+### [Nätverksenheter](network-devices.md)
+
 ### [Minskning av attackytan]()
 #### [Översikt för minskning av attackytan](overview-attack-surface-reduction.md)
 #### [Utvärdera regler för minskning av attackytan](evaluate-attack-surface-reduction.md)
@@ -84,6 +247,8 @@
 ##### [Aktivera regler för minskning av attackytan](enable-attack-surface-reduction.md)
 ##### [Anpassa regler för minskning av attackytan](customize-attack-surface-reduction.md)
 ##### [Visa händelser för minskning av attackytan](event-views.md)
+
+#### [Använda granskningsläge](audit-windows-defender.md)
 
 ### Nästa generations skydd
 #### [Översikt över Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
@@ -179,112 +344,21 @@
 ##### [Rapporter för enhetskontroll](device-control-report.md)
 ##### [Styra USB-enheter](control-usb-devices-using-intune.md)
 
-### [Enhetsidentifiering]()
-#### [Översikt över enhetsidentifiering](device-discovery.md)
-#### [Konfigurera enhetsidentifiering](configure-device-discovery.md)
-#### [Vanliga frågor och svar om enhetsidentifiering](device-discovery-faq.md)
+#### [Beteendeblockering och inneslutning]()
+##### [Beteendeblockering och inneslutning](behavioral-blocking-containment.md)
+##### [Beteendeblockering av klientdator](client-behavioral-blocking.md)
+##### [Blockering av feedbackslinga](feedback-loop-blocking.md)
 
 
-### [Nätverksenheter](network-devices.md)
-
-### [Microsoft Defender för Endpoint för macOS]()
-#### [Översikt över Microsoft Defender för Endpoint för macOS](microsoft-defender-endpoint-mac.md)
-#### [Nyheter](mac-whatsnew.md)
-
-#### [Distribuera]()
-##### [Microsoft Intune-baserad distribution](mac-install-with-intune.md)
-##### [JAMF Pro-baserad distribution]()
-###### [Distribuera Microsoft Defender för Endpoint för macOS med Jamf Pro](mac-install-with-jamf.md)
-###### [Logga in på Jamf Pro](mac-install-jamfpro-login.md)
-###### [Konfigurera enhetsgrupper](mac-jamfpro-device-groups.md)
-###### [Konfigurera principer](mac-jamfpro-policies.md)
-###### [Registrera enheter](mac-jamfpro-enroll-devices.md)
-
-##### [Distribution med ett annat MDM-system (Mobile Device Management)](mac-install-with-other-mdm.md)
-##### [Manuell distribution](mac-install-manually.md)
-#### [Uppdatera](mac-updates.md)
-
-#### [Konfigurera]()
-##### [Konfigurera och validera undantag](mac-exclusions.md)
-##### [Ange inställningar](mac-preferences.md)
-##### [Identifiera och blockera potentiellt oönskade program](mac-pua.md)
-##### [Enhetskontroll]()
-###### [Översikt över enhetskontroll](mac-device-control-overview.md)
-###### [Exempel på JAMF](mac-device-control-jamf.md)
-###### [Exempel på Intune](mac-device-control-intune.md)
-##### [Schemalägga genomsökningar](mac-schedule-scan.md)
-
-#### [Felsökning]()
-##### [Felsöka installationsproblem](mac-support-install.md)
-##### [Felsöka prestandaproblem](mac-support-perf.md)
-##### [Felsöka molnanslutning](troubleshoot-cloud-connect-mdemac.md)
-##### [Felsöka problem med kernel-tillägg](mac-support-kext.md)
-##### [Felsöka licensproblem](mac-support-license.md)
-
-#### [Sekretess](mac-privacy.md)
-#### [Resurser](mac-resources.md)
-
-### [Microsoft Defender för Endpoint för iOS]()
-#### [Översikt över Microsoft Defender för Endpoint för iOS](microsoft-defender-endpoint-ios.md)
-#### [Nyheter](ios-whatsnew.md)
-
-#### [Distribuera]()
-##### [Distribuera Microsoft Defender för Endpoint för iOS via Intune](ios-install.md)
-
-#### [Konfigurera]()
-##### [Konfigurera iOS-funktioner](ios-configure-features.md)
-#### [Sekretess](ios-privacy.md)
+### [Åtgärda falska positiva/negativa i Microsoft Defender för Endpoint](defender-endpoint-false-positives-negatives.md)
 
 
-### [Microsoft Defender för Endpoint för Linux]()
-#### [Översikt över Microsoft Defender för Endpoint för Linux](microsoft-defender-endpoint-linux.md)
-#### [Nyheter](linux-whatsnew.md)
-#### [Distribuera]()
-##### [Manuell distribution](linux-install-manually.md)
-##### [Puppet-baserad distribution](linux-install-with-puppet.md)
-##### [Ansible-baserad distribution](linux-install-with-ansible.md)
-##### [Distribuera Defender för Endpoint på Linux med Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+### [Hantera enhetskonfiguration]()
 
+#### [Öka uppfyllelse (av myndighetskrav) till säkerhetsbaslinje](configure-machines-security-baseline.md)
+#### [Optimera distribution och identifiering för regel för minskning av attackytan](configure-machines-asr.md)
 
-#### [Uppdatera](linux-updates.md)
-
-#### [Konfigurera]()
-##### [Konfigurera och validera undantag](linux-exclusions.md)
-##### [Konfiguration av statisk proxy](linux-static-proxy-configuration.md)
-##### [Ange inställningar](linux-preferences.md)
-##### [Identifiera och blockera potentiellt oönskade program](linux-pua.md)
-##### [Schemalägga genomsökningar med Microsoft Defender för Endpoint för Linux](linux-schedule-scan-atp.md)
-##### [Schemalägga en uppdatering av Microsoft Defender för Endpoint (Linux)](linux-update-MDE-Linux.md)
-
-#### [Felsökning]()
-##### [Felsöka installationsproblem](linux-support-install.md)
-##### [Felsöka anslutningsproblem med molnet](linux-support-connectivity.md)
-##### [Felsöka prestandaproblem](linux-support-perf.md)
-##### [Felsöka problem med saknade händelser](linux-support-events.md)
-
-#### [Sekretess](linux-privacy.md)
-#### [Resurser](linux-resources.md)
-
-### [Microsoft Defender för Endpoint för Android]()
-#### [Översikt över Microsoft Defender för Endpoint för Android](microsoft-defender-endpoint-android.md)
-
-#### [Distribuera]()
-##### [Distribuera Microsoft Defender för Endpoint för Android med Microsoft Intune](android-intune.md)
-
-#### [Konfigurera]()
-##### [Konfigurera Microsoft Defender för Endpoint för Android-funktioner](android-configure.md)
-
-#### [Sekretess]()
-##### [Microsoft Defender för Endpoint för Android – Sekretessinformation](android-privacy.md)
-
-#### [Felsökning]()
-##### [Felsöka problem](android-support-signin.md)
-
-
-### [Konfigurera och hantera funktioner för Microsoft Hotexperter](configure-microsoft-threat-experts.md)
-
-## [Säkerhetsåtgärder]()
-
+## [Undersöka och svara på hot]()
 ### [Identifiering och svar för slutpunkt]()
 #### [Översikt över identifiering och svar för slutpunkt](overview-endpoint-detection-response.md)
 #### [Instrumentpanel för säkerhetsåtgärder](security-operations-dashboard.md)
@@ -347,96 +421,31 @@
 ##### [Rapporter om skydd mot hot](threat-protection-reports.md)
 #### [Rapporter om enhetens hälsa och efterlevnad](machine-reports.md)
 
-### [Beteendeblockering och inneslutning]()
-#### [Beteendeblockering och inneslutning](behavioral-blocking-containment.md)
-#### [Beteendeblockering av klientdator](client-behavioral-blocking.md)
-#### [Blockering av feedbackslinga](feedback-loop-blocking.md)
-#### [EDR i blockläge](edr-in-block-mode.md)
+### [Avancerad jakt]()
+#### [Översikt över avancerad jakt](advanced-hunting-overview.md)
+#### [Förstå schemat](advanced-hunting-schema-reference.md)
+#### [DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)
+
+### [Översikt över hotanalys](threat-analytics.md)
+#### [Läs analysrapporten](threat-analytics-analyst-reports.md)
+
+### [EDR i blockläge](edr-in-block-mode.md)
 
 ### [Automatiska undersökningar och svar (AIR)]()
 #### [Översikt över AIR](automated-investigations.md)
 #### [Automatiseringsnivåer i AIR](automation-levels.md)
 #### [Konfigurera AIR-funktioner](configure-automated-investigations-remediation.md)
 
-### [Avancerad jakt]()
-#### [Översikt över avancerad jakt](advanced-hunting-overview.md)
-#### [Förstå schemat](advanced-hunting-schema-reference.md)
-#### [DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)
+### [Microsoft Hotexperter]()
+#### [Översikt över Microsoft Hotexperter](microsoft-threat-experts.md)
+#### [Konfigurera och hantera funktioner för Microsoft Hotexperter](configure-microsoft-threat-experts.md)
 
-### [Microsoft Hotexperter](microsoft-threat-experts.md)
 
-### [Översikt över hotanalys](threat-analytics.md)
-#### [Läs analysrapporten](threat-analytics-analyst-reports.md)
 
-## [Anvisningar]()
-### [Registrera enheter till tjänsten]()
-#### [Registrera enheter till Microsoft Defender för Endpoint](onboard-configure.md)
-#### [Registrera tidigare versioner av Windows](onboard-downlevel.md)
-#### [Registrera Windows 10-enheter]()
-##### [Verktyg och metoder för introducering](configure-endpoints.md)
-##### [Registrera enheter med grupprinciper](configure-endpoints-gp.md)
-##### [Registrera enheter med Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-##### [Registrera enheter med verktyg för enhetshantering för mobila enheter](configure-endpoints-mdm.md)
-##### [Registrera enheter med ett lokalt skript](configure-endpoints-script.md)
-##### [Registrera enheter för icke beständiga VDI-enheter (Virtual Desktop Infrastructure)](configure-endpoints-vdi.md)
-##### [Registrera Windows 10-multisessionsenheter i det Windows Virtual Desktop](Onboard-Windows-10-multi-session-device.md)
-#### [Registrera Windows-servrar](configure-server-endpoints.md)
-#### [Registrera icke-Windows-enheter](configure-endpoints-non-windows.md)
-#### [Registrera enheter utan Internetanslutning](onboard-offline-machines.md)
-#### [Kör ett identifieringstest på en nyligen registrerad enhet](run-detection-test.md)
-#### [Köra simulerade attacker på enheter](attack-simulations.md)
-#### [Konfigurera inställningar för proxy- och Internetanslutning](configure-proxy-internet.md)
-#### [Skapa en regel för registrering eller avregistrering](onboarding-notification.md)
- 
-#### [Felsöka registreringsproblem]()
-##### [Felsöka problem under registrering](troubleshoot-onboarding.md)
-##### [Felsöka problem med prenumerationer och portalåtkomst](troubleshoot-onboarding-error-messages.md)
-
-### [Hantera enhetskonfiguration]()
-#### [Se till att dina enheter är korrekt konfigurerade](configure-machines.md)
-#### [Övervaka och öka enhetsregistrering](configure-machines-onboarding.md)
-#### [Öka uppfyllelse (av myndighetskrav) till säkerhetsbaslinje](configure-machines-security-baseline.md)
-#### [Optimera distribution och identifiering för regel för minskning av attackytan](configure-machines-asr.md)
-
-### [Konfigurera portalinställningar]()
-#### [Konfigurera inställningar](preferences-setup.md)
-#### [Allmänt]()
-##### [Verifiera datalagringsplatsen och uppdatera inställningarna för datalagring](data-retention-settings.md)
-##### [Konfigurera varningsaviseringar](configure-email-notifications.md)
-##### [Konfigurera avancerade funktioner](advanced-features.md)
-
-#### [Behörigheter]()
-##### [Använda grundläggande behörigheter för att komma åt portalen](basic-permissions.md)
-##### [Hantera portalåtkomst med RBAC](rbac.md)
-###### [Skapa och hantera roller](user-roles.md)
-###### [Skapa och hantera enhetsgrupper](machine-groups.md)
-###### [Skapa och hantera enhetstaggar](machine-tags.md)
-
-#### [Regler]()
-##### [Hantera undertryckande regler](manage-suppression-rules.md)
-##### [Skapa indikatorer](manage-indicators.md)
-###### [Skapa indikatorer för filer](indicator-file.md)
-###### [Skapa indikatorer för IP:er och URL:er/domäner](indicator-ip-domain.md)
-###### [Skapa indikatorer för certifikat](indicator-certificates.md)
-###### [Hantera indikatorer](indicator-manage.md)
-##### [Hantera uppladdningar av automationsfil](manage-automation-file-uploads.md)
-##### [Hantera undantag från automationsmappar](manage-automation-folder-exclusions.md)
-
-#### [Enhetshantering]()
-##### [Registrera enheter](onboard-configure.md)
-##### [Avregistrera enheter](offboard-machines.md)
-
-#### [Konfigurera inställningar för Microsoft Defender Säkerhetscenter tidzon](time-settings.md)
-
-### [Åtgärda falska positiva/negativa i Microsoft Defender för Endpoint](defender-endpoint-false-positives-negatives.md)
-
+## Referens
 ### [Konfigurera integrering med andra Microsoft-lösningar]()
 #### [Konfigurera villkorad åtkomst](configure-conditional-access.md)
 #### [Konfigurera integration av Microsoft Cloud App Security](microsoft-cloud-app-security-config.md)
-
-### [Använda granskningsläge](audit-windows-defender.md)
-
-## Referens
 ### [Hantering och API:er]()
 #### [Översikt över hantering och API:er](management-apis.md)
 #### [API Viktig information](api-release-notes.md)
