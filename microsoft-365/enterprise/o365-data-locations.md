@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Bestäm var dina Microsoft 365 kunddata lagras globalt
-ms.openlocfilehash: 4c55010508f2b5bde1641b9b7552e4acb95a12d3
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: b3a3978bc166f9c302fe9c28b016d56742acd9de
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760242"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52028962"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Där dina Microsoft 365 kundens data lagras
 
@@ -482,7 +482,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -650,7 +650,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -813,7 +813,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 | Workplace Analytics | USA |
 </p></details>
 
-## <a name="bosnia"></a>Bosnia
+## <a name="bosnia-and-herzegovina"></a>Bosnien och Hercegovina
 <details><summary>Klicka för att Visa</summary><p>
 
 | Tjänst | Plats |
@@ -986,7 +986,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -1490,7 +1490,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -1538,7 +1538,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -1562,7 +1562,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -1586,7 +1586,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -1802,7 +1802,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -1946,7 +1946,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -1970,7 +1970,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | Frankrike |
+| Exchange Online | Frankrike |
 | OneDrive för företag | Frankrike |
 | SharePoint Online | Frankrike |
 | Skype för företag | EU |
@@ -2210,7 +2210,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -2594,7 +2594,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -2714,7 +2714,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -2786,7 +2786,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -3098,7 +3098,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -3242,7 +3242,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -3266,7 +3266,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -3410,7 +3410,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -3842,7 +3842,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -4346,7 +4346,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -4370,7 +4370,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -4490,7 +4490,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -4970,7 +4970,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -4994,7 +4994,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -5114,7 +5114,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
@@ -5234,7 +5234,7 @@ Nya Microsoft 365-klient organisationer används som standard till geo baserat p
 
 | Tjänst | Plats |
 | --- | --- |
-| Exchange online | EU |
+| Exchange Online | EU |
 | OneDrive för företag | EU |
 | SharePoint Online | EU |
 | Skype för företag | EU |
