@@ -362,7 +362,7 @@
         - name: Filtrera data vid import av PST-filer
           href: filter-data-when-importing-pst-files.md
         - name: Vanliga frågor om import av PST-filer
-          href: faqimporting-pst-files-to-office-365.md
+          href: faqimporting-pst-files-to-office-365.yml
     - name: Arkivera data från tredje part
       items:
         - name: Översikt över arkivering av data från tredje part
