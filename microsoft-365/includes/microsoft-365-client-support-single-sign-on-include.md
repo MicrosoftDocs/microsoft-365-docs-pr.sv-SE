@@ -26,7 +26,7 @@
 |FÄSTISAR|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|✔|
 |STREAM|Planerat|Planerat|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|
 |SWAY|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|✔|
-|TEAMS|✔|✔|Planerat|Planerat|Uppgift saknas|
+|TEAMS|✔|✔|Planerat|✔|Uppgift saknas|
 |TO-DO|✔|✔|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|✔|
 |VISIO|Uppgift saknas|✔|Uppgift saknas|✔|Uppgift saknas|
 |WHITEBOARD|Uppgift saknas|✔|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|✔|

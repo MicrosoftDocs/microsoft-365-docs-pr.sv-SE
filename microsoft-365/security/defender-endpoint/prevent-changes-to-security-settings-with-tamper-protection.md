@@ -1,5 +1,5 @@
 ---
-title: Skydda säkerhetsinställningar med skydd mot manipulering
+title: Skydda säkerhetsinställningarna med manipuleringsskydd
 ms.reviewer: shwjha, hayhov
 manager: dansimp
 description: Använd skydd mot manipulering för att förhindra att skadliga program ändrar viktiga säkerhetsinställningar.
@@ -15,14 +15,14 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 84864965d7a18902a01307c1dcf373fa7c0534e8
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: ff98b78d113a67ad6bd816753c691e8afe71dd77
+ms.sourcegitcommit: ddb1bf56bcba4f03c803f79492e8cd0dc41a3d7a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765581"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52065079"
 ---
-# <a name="protect-security-settings-with-tamper-protection"></a>Skydda säkerhetsinställningar med skydd mot manipulering
+# <a name="protect-security-settings-with-tamper-protection"></a>Skydda säkerhetsinställningarna med manipuleringsskydd
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -61,6 +61,8 @@ Skydd mot manipulering låser i princip Microsoft Defender Antivirus och förhin
 
 Skydd mot manipulering hindrar dig inte från att visa dina säkerhetsinställningar. Skydd mot manipulering påverkar inte heller hur antivirusappar från tredje part registreras i Windows-säkerhetsappen. Om din organisation använder Windows 10 Enterprise, E5 kan enskilda användare inte ändra inställningen för skydd mot manipulering. I så fall hanteras skydd mot manipulering av säkerhetsteamet.
 
+
+
 ### <a name="what-do-you-want-to-do"></a>Vad vill du göra?
 
 | När du ska utföra den här uppgiften ... | Se det här avsnittet... |
@@ -73,6 +75,19 @@ Skydd mot manipulering hindrar dig inte från att visa dina säkerhetsinställni
 | Granska dina säkerhetsrekommendationer | [Granska säkerhetsrekommendationer](#review-your-security-recommendations) |
 | Granska listan med vanliga frågor och svar | [Bläddra i vanliga frågor och svar](#view-information-about-tampering-attempts) |
 
+Beroende på vilken metod eller vilket hanteringsverktyg du använder för att aktivera skydd mot manipulering kan det finnas ett beroende av KARTOR (moln levererat skydd). 
+
+Följande tabell innehåller information om metoder, verktyg och beroenden.
+
+
+
+|     Så här aktiveras skydd mot manipulering                                         |     Beroende på KARTOR (moln levererat skydd)    |
+|------------------------------------------------------------------------------|--------------------------------------------------------|
+|     Microsoft Intune                                                         |     Nej                                                 |
+| Konfigurationshanteraren för Microsoft Endpoint + Klientorganisationens bifoga                     |     Nej                                                 |
+|     Microsoft Defender för Endpoint-portalen (securitycenter.microsoft.com)    |     Ja                                                |
+|     Microsoft 365 Defender-portalen (security.microsoft.com)                   |     Ja                                                |
+
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center"></a>Hantera skydd mot manipulering för organisationen med hjälp av Säkerhetscenter för Microsoft Defender
 
 Skydd mot manipulering kan aktiveras eller inaktiveras för klientorganisationen med hjälp av Microsoft Defender Säkerhetscenter ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ). Här är några saker att tänka på:
@@ -84,6 +99,9 @@ Skydd mot manipulering kan aktiveras eller inaktiveras för klientorganisationen
 - När du hanterar skydd mot manipulering i Microsoft Defender Säkerhetscenter används inställningen för hela klientorganisationen, vilket påverkar alla enheter som kör Windows 10, Windows Server 2016 eller Windows Server 2019. Om du vill finjustera skydd mot manipulering (t.ex. om du har skydd mot manipulering på vissa enheter men inaktiverat för andra) använder du [antingen Intune](#manage-tamper-protection-for-your-organization-using-intune) eller [Konfigurationshanteraren med klientorganisationens bifoga](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006).
 
 - Om du har en hybridmiljö har inställningar för skydd mot manipulering i Intune företräde framför inställningar som konfigurerats i Microsoft Defender Säkerhetscenter. 
+
+
+
 
 ### <a name="requirements-for-managing-tamper-protection-in-the-microsoft-defender-security-center"></a>Krav för hantering av skydd mot manipulering i Säkerhetscenter för Microsoft Defender
 
@@ -297,4 +315,4 @@ Ditt säkerhetsteam kan också använda sökfrågor, till exempel följande exem
 
 [Få en översikt över Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint)
 
-[Bättre tillsammans: Microsoft Defender Antivirus och Microsoft Defender för Slutpunkt](why-use-microsoft-defender-antivirus.md)
+[Bättre tillsammans: Microsoft Defender Antivirus och Microsoft Defender för Endpoint](why-use-microsoft-defender-antivirus.md)
