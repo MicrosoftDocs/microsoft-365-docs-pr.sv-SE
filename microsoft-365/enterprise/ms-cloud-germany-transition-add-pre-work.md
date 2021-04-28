@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: Arbeta i förväg när du flyttar från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i den nya tyska datacenterområdet.'
-ms.openlocfilehash: ce7aad932482d7a9d1681957c06b85ab22a82149
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 9c3aff56f5d85cd1b98747ef5b747720af74fe02
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760398"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073943"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Aktiviteter före migreringen från Microsoft Cloud Deutschland
 
@@ -33,7 +33,7 @@ Om du använder
 
 - **Office 365 i Microsoft Cloud Deutschland** gör [du följande.](#general-tenant-migration-considerations)
 - **Anpassade domäner** gör du [det här steget.](#dns-entries-for-custom-domains)
-
+- **Office-appar**– tänk på [det här steget.](#office-apps)
 - **SharePoint Online**– gör [det här steget.](#sharepoint-online)
 - **Exchange Online eller** **Exchange-hybrid** gör du [det här steget.](#exchange-online)
 - **Skype för företag – Online**– gör detta [steg.](#skype-for-business-online)
@@ -84,6 +84,19 @@ Om kommandoraden returnerar en DNS-post tar du bort _msoid_ CNAME från domänen
 > [!NOTE]
 > Om du använder en egen domän för Exchange Online måste du ha åtkomst till din DNS-värd. Se till att du kan komma åt och redigera DNS-inställningarna, så kommer du att ändra DNS-poster under migreringen.
 
+## <a name="office-apps"></a>Office-program
+
+**Gäller för:** Kunder som använder Office-appar, särskilt på Windows-klienter <br>
+**När den används:** Varje gång före fas 9 startar
+
+För klientorganisationen av Office 365 under övergången till regionen "Tyskland" måste alla användare stänga, logga ut från Office 365 och tillbaka in för alla Office-skrivbordsprogram (Word, Excel, PowerPoint, Outlook osv.) och OneDrive för företag-klienten när klientorganisationens migrering har nått fas 9. Genom att logga ut och in kan Office-tjänsterna hämta nya autentiseringstoken från den globala Azure AD-tjänsten.
+
+Detta krävs för alla klienter. För att migreringen ska gå smidigt rekommenderas det starkt att informera och instruera alla berörda användare i förväg och i ett tidigt skede om den här aktiviteten.
+
+Kunder med hanterade Windows-klienter kan förbereda Windows-datorer med [Office CLIENT Cutover Tool (TIDE)](https://github.com/microsoft/OCCT). THE TIDE är utformad för att köras med jämna mellanrum på Windows-klienter tills klientorganisationen nått fas 9 av migreringen. När fas 9 har uppnåtts utför TIDE SÅ att alla nödvändiga ändringar utförs på datorn automatiskt utan interaktion med användaren.
+
+TIDSFÖRD kan distribueras på Windows-klienter när som helst före fas 9. Om TIDE:t ska stödja migreringsupplevelsen rekommenderar vi att du startar distributionen så snart som möjligt för att hjälpa till med maximalt antal klienter.
+
 ## <a name="active-directory-federation-services-ad-fs"></a>AD FS (Active Directory Federation Services)
 
 <!-- before phase 4 -->
@@ -105,7 +118,7 @@ Läsa och använda [ADFS-migreringsstegen](ms-cloud-germany-transition-add-adfs.
 | Begränsa SharePoint 2013-arbetsflöden som används under SharePoint Online-migreringen. | Minska SharePoint 2013-arbetsflöden och slutför direktarbetsflöden före övergångar. | Inaction may result in user confusion and help desk calls. |
 ||||
 
-## <a name="exchange-online"></a>Exchange online
+## <a name="exchange-online"></a>Exchange Online
 
 <!-- before phase 5 -->
 
