@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: ea28e9c244b6b8faaeb9b1f3685d57169605cbb9
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 0edc3847d6b832f254c6f289355570a3a044b1f4
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650320"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061043"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>Distribuera skyddsfunktioner för hot i Microsoft 365 E5
 
-Den här lösningen beskriver kraftfulla skyddsfunktioner i Microsoft 365 E5. Läs den här lösningen för att få en översikt över vad som ingår, hur det fungerar och hur du kommer igång med distributionen av funktionerna i organisationen.
+Den här lösningen beskriver kraftfulla skyddsfunktioner i Microsoft 365 E5 och varför dessa funktioner är viktiga. Läs den här lösningen för att få en översikt över vad som ingår i Microsoft 365 E5, hur skyddsfunktioner för hot fungerar och hur du konfigurerar skydd mot hot i din organisation.
 
-## <a name="why-protecting-against-threats-is-important"></a>Varför det är viktigt att skydda mot hot 
+## <a name="why-threat-protection-is-important"></a>Varför skydd mot hot är viktigt 
 
 [Skadlig](/windows/security/threat-protection/intelligence/understanding-malware)programvara och avancerade cyberattacker, till exempel [fillösa hot,](/windows/security/threat-protection/intelligence/fileless-threats)är vanligt förekommande. Företag måste skydda sig själva och sina kunder med effektiva IT-säkerhetsfunktioner. Cyberattacker kan orsaka stora problem för organisationen, allt från förlust av förtroende till ekonomiska problem, verksamhetsproblem och mycket mer. Det är viktigt att skydda mot hot, men det kan vara svårt att avgöra var du ska fokusera organisationens tid, arbete och resurser. Microsoft 365 E5 kan hjälpa dig. 
 

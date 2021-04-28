@@ -18,18 +18,18 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: Sammanfattning Förstå åtgärderna i migreringsfaserna och hur de påverkar flytten från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i den nya tyska datacenterområdet.
-ms.openlocfilehash: 5764b5cedf17487320fbfd05885120de86da3a84
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: 481447fa291354b3377648089cff193a2ad6fc2a
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029068"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061091"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Åtgärder i migreringsfaser och påverkan på migreringen från Microsoft Cloud Deutschland
 
 Klientmigrering från Microsoft Cloud Deutschland (MCD) till regionen "Tyskland" av Microsofts globala Office 365-tjänster körs som en uppsättning faser och deras konfigurerade åtgärder för varje arbetsbelastning. I den här bilden visas de tio faserna av migreringen till de nya tyska datacenteren.
 
-![De tio migreringsfaserna till de nya Tyskland-datacenter](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+[![De tio migreringsfaserna till de nya Tyskland-datacenter ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)](../media/ms-cloud-germany-migration-opt-in/migration-organization.png#lightbox)
 
 Migreringsprocessen slutförs under många veckor beroende på organisationens totala storlek och komplexitet. Under tiden migreringen pågår kan användare och administratörer fortsätta använda tjänsterna med märkbara ändringar i den här dokumentationen. Grafiken och tabellen definierar faser och steg under migreringen.
 
@@ -125,7 +125,7 @@ Om du fortfarande använder SharePoint 2013-arbetsflöden begränsar du användn
 |:-------|:-----|:-------|
 | SharePoint och OneDrive har övergångar | SharePoint Online och OneDrive för företag migreras från Microsoft Cloud Deutschland till globala Office 365-tjänster i den här fasen.<br><ul><li>Befintliga Microsoft Cloud Deutschland-WEBBADRESSer bevaras (till exempel `contoso.sharepoint.de` ).</li><li>Befintliga webbplatser bevaras.</li><li>Klientbaserade autentiseringstoken som utfärdats av STS (Security Token Service) i Microsoft Cloud Deutschland eller Office 365 Global Services-instansen är giltiga under övergången.</li></ul>|<ul><li>Innehållet kommer att vara skrivskyddat under två korta perioder under migreringen. Under tiden kan du förvänta dig en banderoll i SharePoint som säger att du inte kan redigera innehåll.</li><li>Sökindexet bevaras inte, och det kan ta upp till tio dagar att återskapa det.</li><li>SharePoint Online- och OneDrive för företag-innehåll kommer att vara skrivskyddat under två korta perioder under migreringen. Under den här tiden visas en banderoll som säger att du inte kan redigera innehåll.</li><li>När SharePoint Online-migreringen slutförts kanske sökresultaten för SharePoint Online- och OneDrive för företag-innehåll inte är tillgängliga medan indexet återskapas. Under den här perioden kan det hända att sökfrågor inte returnerar fullständiga resultat. Funktioner som är beroende av sökindex, till exempel SharePoint Online Nyheter, kan påverkas när indexeringen slutförs.</li><li>SharePoint 2013-arbetsflöden bryts under migreringen och måste publiceras på nytt efter migreringen.</li></ul>
 |**SPO-administratör:** Publicera om SharePoint 2013-arbetsflöden| En SharePoint Online-administratör publicerar sharePoint 2013-arbetsflödena på nytt efter migreringen.|SharePoint 2013-arbetsflöden är tillgängliga.
-|**PowerShell-användare:** Uppdatera till ny modul| Alla användare av SharePoint Online Powershell-modulen måste uppdatera modulen/Microsoft.SharePointOnline.CSOM till version 16.0.20717.12000 eller senare när SharePoint Online-migreringen är slutförd. Slutförande meddelas i meddelandecentret.| SharePoint Online via PowerShell eller klientobjektmodellen kommer inte längre att misslyckas.
+|**PowerShell-användare:** Uppdatera till ny modul| Alla användare av SharePoint Online PowerShell-modulen måste uppdatera modulen/Microsoft.SharePointOnline.CSOM till version 16.0.20717.12000 eller senare när SharePoint Online-migreringen är slutförd. Slutförande meddelas i meddelandecentret.| SharePoint Online via PowerShell eller klientobjektmodellen kommer inte längre att misslyckas.
 ||||
 
 Ytterligare överväganden:

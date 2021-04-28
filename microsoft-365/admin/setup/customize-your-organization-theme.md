@@ -21,68 +21,141 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
-description: 'Lär dig hur du ändrar standardtemat för Microsoft 365 och anpassar det så att det matchar ditt företags logotyp eller färg. '
-ms.openlocfilehash: 9d17ac800fb0fe38627fcb7842ed5555d2ac28ae
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: 'Lär dig hur du ändrar standardtemat för Microsoft 365 och anpassar det så att det matchar företagets logotyp eller färg. '
+ms.openlocfilehash: b7a0b142b8bd465a9e3258aaaeb951b72bc53fc7
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926888"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52060932"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Anpassa Microsoft 365-temat för din organisation
 
-Som administratör för Microsoft 365 för företag-prenumerationen kan du ändra standardtemat som visas i det övre navigeringsfältet för alla i organisationen:
+Som administratör för organisationen kan du skapa flera teman för personerna i organisationen och välja vilka teman som ska gälla för olika medlemmar i organisationen. Organisationsschemat är det som visas i det övre navigeringsfältet för personer i organisationen.
 
-- Lägg till företagets logotyp.
-- Ändra färgerna så att de matchar resten av ditt varumärke.
-- Lägg till en mållänk som användare går när de väljer din logotyp.
+Du kan lägga till eller uppdatera ett standardtema som gäller för alla i din organisation. Du kan också skapa upp till fyra ytterligare gruppteman som kan tilldelas flera Microsoft 365-grupper.
   
-## <a name="customize-your-theme-in-the-admin-center"></a>Anpassa temat i administrationscentret
+## <a name="add-or-update-your-organizations-theme"></a>Lägga till eller uppdatera organisationens tema
 
-1. Gå till sidan Inställningar för organisationens **inställningar** \> **i** administrationscentret och välj sedan **fliken Organisationsprofil.**
+1. I administrationscentret går du till **sidan Inställningar** \> **för** organisationens inställningar och väljer sedan **fliken Organisationsprofil.**
 
-2. Välj **Anpassade teman på** fliken **Organisationsprofil.**
+2. På fliken **Organisationsprofil** väljer du **Organisationsschema**.
 
-3. Ändra **temaelementen som** du vill använda för din organisation på panelen tullteman:
+Alla teman kan anpassas på följande flikar.
 
-    - **Använd en anpassad logotypbild:** Välj om du vill använda en bild från en URL eller ladda upp en bild. Om du använder en URL kontrollerar du att URL-adressen använder HTTPS och att bilden är 200 x 30 bildpunkter i alla format av alla storlekar. Du kan ladda upp en logotyp under 10 kB som är 200 x 30 bildpunkter i JPG-, PNG-, GIF- eller SVG-format.
+|**Tabb**|**Vad kan du göra?**|
+|:-----|:-----|
+|[Allmänt](#general-modify-a-theme) <br/> |Ändra ett temanamn och tilldela till upp till fem grupper (om tillämpligt).  <br/> |
+|[Logotyper](#logos-specify-your-theme-logos) <br/> |Lägg till din temalogotyp, bland annat mörkt tema i Office och mobila alternativ.  <br/> |
+|[Färger](#colors-choose-theme-colors) <br/> |Anpassa ett färgschema genom att ange navigeringsfält, accenter, text och ikonfärger. <br/> |
 
-      > [!NOTE]
-      > För att logotypen ska visas i SharePoint-mobilappen ska du bara använda SVG-bilder. Bilder som laddats upp i något annat format visas inte i appen. Logotyper går inte att klicka på i SharePoint Mobile-appen.
+## <a name="general-modify-a-theme"></a>Allmänt: Ändra ett tema
 
-    - **Gör logotypen klickbar:** Du kan använda din logotyp i navigeringsfältet som en länk till en företagsresurs. Här kan du ange URL-adressen för logotypen, som börjar http:// eller https://. Det här är valfritt.
+Användarupplevelsen på fliken Allmänt beror på om du lägger till eller ändrar standardtemat eller ett grupptema.
 
-    - **Välj bakgrundsbild:** Markera bilden och ladda upp en egen JPG-, PNG- eller GIF-fil med en upplösning på 1366 x 50 bildpunkter och inte större än 15 KB. Bakgrundsbilden visas i det övre navigeringsfältet på varje sida.
+### <a name="update-the-default-theme"></a>Uppdatera standardtemat
 
-      > [!NOTE]
-      > Bilder som innehåller text kanske inte visas som förväntat. Inbyggda element som visas på höger och vänster sida i navigeringsfältet kan variera mellan olika tjänster och texten kan döljas vid dessa element.
+Standardtemat är det första temat som visas.  
 
-    - **Navigeringsfältsfärg:** Välj en färg som ska användas som bakgrund i navigeringsfältet. Navigeringsfältet visas högst upp på varje sida.
+1. Om du tidigare har anpassat ett tema för din organisation väljer du **Standardtema** och använder en av dina sparade anpassningar eller väljer Lägg **till tema.**
+2. På **sidan** Allmänt kan du hindra användare från att åsidosätta deras tema och visa användarens visningsnamn.
+3. Välj **Spara** för att spara ändringarna.  
 
-    - **Text and ikoner**: Välj en färg som ska användas för text och ikoner i det övre navigeringsfältet.
+> [!IMPORTANT]
+> Standardtemat är unikt, det går inte att byta namn på det och det gäller alla i organisationen. Om du vill ta bort standardtemat måste du först ta bort alla andra teman.
 
-    - **Accentfärg:** Välj en färg som du vill använda för hovringsfärgen i navigeringsfältet och sidaccent som knappar och text i vissa program.
+:::image type="content" source="../../media/default-theme-general.png" alt-text="Skärmbild: Fliken Allmänt med organisationens standardtema":::
 
-    - **Hindra användare från att åsidosätta teman:** Vänd den här växlingsknappen för att hindra användare från att välja ett eget tema från vårt temaval. Det hindrar inte användare från att ange ett högkontrasttema.
+### <a name="create-a-group-theme"></a>Skapa ett grupptema
 
-    - **Visa användarnamnet:** Välj om du vill visa en användares fullständiga namn vid startpunkten för kontohanteraren längst upp till höger på sidan när användaren är inloggad. Standardinställningen är att användare ser sitt foto eller sina initialer, om inget foto har laddats upp.
+Du kan skapa upp till fyra ytterligare gruppteman.
 
-4. Välj **Spara ändringar**.
+1. Ange **ett** namn för ditt tema på sidan Allmänt.
 
-Du kan se det nya temat i administrationscentret direkt. Efter en kort fördröjning kan du se den i hela Microsoft 365, inklusive på sidor i Outlook, SharePoint, [SharePoint-mobilappen](https://support.microsoft.com/office/339402ce-16bb-4c97-9475-0c5375ccef7a)för iOS och [SharePoint-mobilappen](https://support.microsoft.com/office/d875654b-fb0a-4dbe-a17a-a676cf936284)för Android.
+2. Under **Grupper** kan du välja upp till 5 Microsoft 365-grupper som kan se gruppens tema i stället för att använda standardtemat. Du kan också förhindra att användare åsidosätter temat och visa användarens visningsnamn.
 
-Du kan ta bort den anpassade ikonen eller de anpassade färgerna när som helst. Gå bara tillbaka till temasidan och välj **Ta bort anpassade teman.**
+3. Välj **Spara**.
+
+:::image type="content" source="../../media/default-theme-general-users.png" alt-text="Skärmbild: Fliken Allmänt med standardtemat för en grupp användare i organisationen":::
+
+## <a name="logos-specify-your-theme-logos"></a>Logotyper: Ange temalogotyp
+
+På sidan **Logotyper kan** du lägga till dina logotyper och ange URL-adressen dit användarna ska navigera när de markerar logotypen.
+
+- **Standardlogotyp:** Lägg till en URL-plats som pekar på din logotyp. Kontrollera att URL:en använder HTTPS och att bilden är minst 200 x 30 bildpunkter. Standardlogotypen kan vara i JPG-, PNG-, GIF- eller SVG-format.
+- **Alternativ logotyp:** Lägg till en URL-plats som pekar på din logotyp. Din alternativa logotyp bör vara optimerad för användning i mörka Office-teman. Samma krav som för standardlogotypen.
+- **Liten standardlogotyp:** Lägg till en URL-plats som pekar på logotypen. Bilden måste vara minst 48 x 48 bildpunkter. Du kan skala den här bilden så att den får plats på mindre eller mobila enheter.
+- **Liten alternativ logotyp:** Lägg till en URL-plats som pekar på din logotyp. Den här bilden har samma krav som den lilla standardlogotypen.
+- **Vid klickning länk:** Lägg till en URL-plats som pekar på din logotyp. Du kan använda din logotyp som en länk till valfri företagsresurs, till exempel företagets webbplats.
+
+Välj **Spara** för att spara ändringarna.
+
+Du kan ta bort dina logotyper när som helst. Gå bara tillbaka till **sidan Logotyper och** välj Ta **bort**.
+
+:::image type="content" source="../../media/default-theme-logos.png" alt-text="Skärmbild: Fliken Logotyper som visar organisationens standardlogotyp för teman":::
+
+> [!NOTE]
+> Som standard visar vi först de logotypval som de flesta organisationer använder. Om du vill se alla val av logotyper går du längst ned i listan och väljer **Visa avancerade alternativ.**
   
-## <a name="best-practices"></a>Metodtips
+## <a name="colors-choose-theme-colors"></a>Färger: Välj temafärger
 
-- **Logotypbild:** Använd en SVG-filtyp så att logotypen visas med hög upplösning på alla skärmar och på alla zoomnivåer.
+På sidan **Färger** kan du ange standardfärger och välja vilken logotyp som ska användas.
 
-- **Anpassade färger:** Välj en **bakgrundsfärg i navigeringslisten** med ett högkontrastförhållande med **den logotypbild** som du valde. Välj en **färg för text och** ikoner  med hög kontrast till bakgrundsfärgen i navigeringslisten så att all text och alla ikoner syns tydligt.
+- **Navigeringsfältsfärg:** Välj en färg som ska användas i navigeringsfältets bakgrund. Navigeringsfältet visas högst upp på varje sida.
+- **Text- och ikonfärg:** Välj en färg som ska användas för text och ikoner i det övre navigeringsfältet.
+- **Accentfärg:** Välj en färg som syns bra mot en vit eller ljus bakgrund. Accentfärgen används som färg på vissa länkar och knappar som visas mot en vit eller ljus bakgrund. Accentfärgen används till exempel som färg på element i en användares inkorg och på Office.com portalsida.
+- **Återställ färg:** Välj den här länken om du vill återställa färgerna till standardfärgerna.
+- **Vilken logotyp ska användas?**: Välj standardlogotyp eller andra logotyper som du själv har skapat.
 
-- **Accentfärg:** Välj en färg som syns bra mot en vit eller ljus bakgrund. Accentfärgen används för att färglägga vissa länkar och knappar som visas på en vit eller ljus bakgrund. Accentfärgen används till exempel för att färglägga element i en användares inkorg och på deras Office.com portalsida.
-  
-- **Kontrastförhållande:** Det rekommenderade kontrastförhållandet mellan text, ikon eller knappfärg och bakgrundsfärg är 4,5:1.
+:::image type="content" source="../../media/default-theme-colors.png" alt-text="Skärmbild: Fliken Färger med standardtemafärger för organisationen":::
+
+## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
+
+### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>Min organisation har redan ett tema för alla anställda. Hur kommer den här ändringen att ändras?
+
+Standardtemat fortsätter att visas för alla anställda.Om du lägger till ett nytt grupptema blir det bara tillgängligt för Microsoft 365-grupper som är kopplade till temat.
+
+### <a name="whydont-isee-group-themes-in-the-admin-center"></a>Varför visas inte gruppteman i administrationscentret?
+
+Det är bara globala administratörer som kan anpassa företagsteman.Globala läsare har skrivskyddsåtkomst.
+
+### <a name="how-many-different-themes-can-i-set-up-for-my-organization"></a>Hur många olika teman kan jag konfigurera för min organisation?  
+
+Du kan skapa upp till fem teman. Ett standardtema och fyra gruppteman.  
+
+### <a name="can-i-use-security-groups-or-distribution-groups-instead-of-microsoft-365-groups"></a>Kan jag använda säkerhetsgrupper eller distributionsgrupper i stället för Microsoft 365-grupper?
+
+Nej, nya gruppteman måste mappas till en eller flera Microsoft 365-grupper och inte till säkerhetsgrupper eller distributionsgrupper.
+
+> [!NOTE]
+> Du kan konvertera [distributionsgrupper till Microsoft 365-grupper](../manage/upgrade-distribution-lists.md) i Outlook.
+
+### <a name="can-imanually-assign-a-theme-independent-ofmicrosoft-365-groups"></a>Kan jag tilldela ett tema manuellt oberoende av Microsoft 365-grupper?  
+
+Nej, nya gruppteman måste mappas till en eller flera Microsoft 365-grupper. Användare som är medlemmar i Microsoft 365-gruppen får temat tillämpat på gruppen. Du kan [skapa och lägga till nya medlemmar i en Microsoft 365-grupp](../create-groups/create-groups.md) genom att gå **till**   >  **inställningsgrupperna** i administrationscentret.
+
+### <a name="what-happens-if-a-user-is-assigned-to-multiple-group-themes"></a>Vad händer om en användare har tilldelats flera gruppteman?  
+
+Användare som har tilldelats flera gruppteman kommer att se standardtemat.  
+
+### <a name="why-cant-i-delete-the-default-theme"></a>Varför kan jag inte ta bort standardtemat?  
+
+Standardtemat kan bara tas bort när alla gruppteman tas bort. Se till att du tar bort alla gruppteman innan du försöker ta bort grupptemat.
+
+### <a name="why-am-i-receiving-an-error-message-every-time-i-uploadalogo-url"></a>Varför får jag ett felmeddelande varje gång jag laddar upp en logotyp-URL.  
+
+Kontrollera att den logotyp du använder har angetts som en offentlig adressbar URL. Följ de här anvisningarna [för att ladda upp logotyper](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet) till Azure Blob Storage eller Office [365 Content Delivery Network med SharePoint Online.](../../enterprise/use-microsoft-365-cdn-with-spo.md)
+
+### <a name="why-am-i-receiving-themessagedoesnt-meet-minimum-color-contrast-ratio-of-451"></a>Varför får jag meddelandet "Uppfyller inte det minsta färgkontrastförhållandet på 4,5:1"?
+
+Det rekommenderade kontrastförhållandet mellan text, ikon- eller knappfärg och bakgrundsfärg är 4,5:1. Du kan åsidosätta den här rekommendationen och fortfarande spara ditt tema eftersom det inte är ett krav.
+
+### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>Om jag definierar ett tema, vilka platser i Microsoft 365 används detta?
+
+Alla teman visas i det övre navigeringsfältet för alla i organisationen som en del av rubriken för Microsoft 365-paketet.  
   
 ## <a name="related-articles"></a>Relaterade artiklar
 
 [Lägga till anpassade paneler på sidan Mina program och startprogram](../manage/customize-the-app-launcher.md)
+
+[Översikt över Microsoft 365-grupper för administratörer](https://docs.microsoft.com/microsoft-365/admin/create-groups/office-365-groups)
