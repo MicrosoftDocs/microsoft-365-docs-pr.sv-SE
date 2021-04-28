@@ -127,6 +127,8 @@
           href: act-on-report.md
         - name: Lägga till en annan domän
           href: add-domain.md
+        - name: Konfigurera en ny e-postadress för företaget
+          href: set-up-a-new-business-email-address.md
     - name: Hantera enheter
       items:
         - name: Säkra Windows 10 Pro-enheter
