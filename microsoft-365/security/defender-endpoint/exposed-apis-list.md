@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ab3d3aa9a13b71f65d3d4335646e32a7e4270242
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 656aa26d80db73bfc52511f9dd94e58e771f3ac6
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061055"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073847"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>Microsoft Defender för Endpoint API:er som stöds
 
@@ -69,7 +69,6 @@ Läs mer om de enskilda enheter som stöds, där du kan köra API-anrop till, oc
 [Maskinmetoder och egenskaper](machine.md) | Kör API-anrop \- som att hämta enheter, hämta enheter efter ID, information om inloggade användare, redigera taggar med mera.
 [Metoder och egenskaper för maskinåtgärd](machineaction.md) | Kör API-anrop som \- isolation, kör antivirussökning och mycket mer.
 [Metoder och egenskaper för rekommendation](recommendation.md) | Kör API-anrop som \- få rekommendation från ID.
-[Metoder och egenskaper för åtgärdsaktivitet](get-remediation-methods-properties.md) | Kör API-anrop som få alla åtgärder, få åtgärder på exponerade enheter och \- få en åtgärdsaktivitet per id.
 [Poängmetoder och egenskaper](score.md) | Kör API-anrop, \- till exempel för att få exponeringsresultat eller för att få ett säkert enhetsresultat.
 [Programvarumetoder och egenskaper](software.md) | Kör API-anrop, \- till exempel säkerhetsproblem efter programvara.
 [Användarmetoder](user.md) | Kör \- API-anrop, till exempel få användarrelaterade aviseringar och användarrelaterade enheter.

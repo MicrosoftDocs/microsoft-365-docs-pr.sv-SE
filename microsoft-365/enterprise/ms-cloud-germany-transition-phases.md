@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: Sammanfattning Förstå åtgärderna i migreringsfaserna och hur de påverkar flytten från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i den nya tyska datacenterområdet.
-ms.openlocfilehash: 481447fa291354b3377648089cff193a2ad6fc2a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 354ca55bae7704c011af5a76a1112e4d2ecb47ca
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061091"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073931"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Åtgärder i migreringsfaser och påverkan på migreringen från Microsoft Cloud Deutschland
 
@@ -264,18 +264,26 @@ Kunder med Dynamics 365 kräver ytterligare engagemang för att migrera organisa
 
 ## <a name="phase-9-office-apps"></a>Fas 9: Office-program
 
-**Gäller för:** Alla kunder som använder Office-skrivbordsprogram (Word, Excel, PowerPoint, Outlook, ...)
+**Gäller för:** Alla kunder som använder Office-skrivbordsprogram (Word, Excel, PowerPoint, Outlook, OneDrive ...)
+
+I den här fasen utför alla klientprogram och Office Online klientuppeställningen. Azure AD slutför klientorganisationens omfattning så att den pekar på Office 365-tjänsterna och de relaterade slutpunkterna.
 
 För klientorganisationen av Office 365 under övergången till regionen "Tyskland" måste alla användare stänga, logga ut från Office 365 och tillbaka in för alla Office-skrivbordsprogram (Word, Excel, PowerPoint, Outlook osv.) och OneDrive för företag-klienten när klientorganisationens migrering har nått fas 9. Genom att logga ut och in kan Office-tjänsterna hämta nya autentiseringstoken från den globala Azure AD-tjänsten.
+
+Om Office-skrivbordsprogrammen inte fungerar när de har loggat ut och loggat in från programmen rekommenderar vi starkt att du kör [Office Client Cutover Tool (SÅDD)](https://github.com/microsoft/OCCT) på den aktuella datorn för att åtgärda problemet.
+
+Om [OFFICE CLIENT Cutover Tool (SÅ HÄR)](https://github.com/microsoft/OCCT) har distribuerats och schemalagts på Windows-klienter i förväg krävs ingen ut-/inloggningsprocedur.
 
 Den bästa användarupplevelsen kan säkerställas genom att använda de senaste Office-programmen. Företag bör överväga att använda Månadskanal för företag.
 
 Kontrollera att du har slutfört [proceduren för mobila](ms-cloud-germany-transition-add-pre-work.md#mobile-device-management) enheter.
 
-| Steg | Beskrivning | Påverkan |
-|:-------|:-------|:-------|
-| Klienter, Office Online under office-klientens övergången, slutför Azure AD klientorganisationens omfattning så att den pekar på Office 365-tjänsterna. | Med den här konfigurationsändringen kan Office-klienter uppdatera och peka på Slutpunkter för Office 365-tjänster. | <ul><li>Meddela användarna att stänga _alla_ Office-program och logga in igen (eller tvinga klienter att starta om och användarna att logga in) för att aktivera Office-klienter för att hämta ändringen. </li><li>Meddela användare och supportpersonal  att användarna kan se en Office-banderoll som uppmanar dem att återaktivera Office-program inom 72 timmar efter övergången. </li><li>Alla Office-program på persondatorer måste vara stängda och användarna måste logga ut och sedan logga in igen. I det gula aktiveringsfältet loggar du in för att återaktivera mot Office 365-tjänster.</li><li>Delade datorer kräver åtgärder som liknar personliga maskiner och kräver ingen särskild procedur. </li><li>På mobila enheter måste användarna logga ut från appar, stänga dem och sedan logga in igen.</li></ul>|
-||||
+Ytterligare överväganden:
+- Meddela användarna att stänga alla Office-program och logga in igen (eller tvinga klienter att starta om och användarna att logga in) för att aktivera Office-klienter för att hämta ändringen.
+- Meddela användare och supportpersonal att användarna kan se en Office-banderoll som uppmanar dem att återaktivera Office-program inom 72 timmar efter övergången.
+- Alla Office-program på persondatorer måste vara stängda och användarna måste logga ut och sedan logga in igen. I det gula aktiveringsfältet loggar du in för att återaktivera mot Office 365-tjänster.
+- Delade datorer kräver åtgärder som liknar personliga maskiner och kräver ingen särskild procedur.
+- På mobila enheter måste användarna logga ut från appar, stänga dem och sedan logga in igen.
 
 ## <a name="phase-9-line-of-business-apps"></a>Fas 9: Verksamhetsbaserade appar
 
