@@ -21,12 +21,12 @@ description: Administrationscentret för Microsoft 365 – läs mer om de funkti
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 90f75b0c1ea38833325c51399108551286f55e92
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: b226f48edd5f65100c81e95d2026c7c172959c8d
+ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52024199"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52077317"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Vad är nytt i administrationscentret för Microsoft 365
 
@@ -83,7 +83,7 @@ Vi har moderniserat meddelandecentret för att hjälpa dig att upptäcka relevan
 
 :::image type="content" source="../media/message-center.png" alt-text="Skärmbild: Startsidan för Meddelandecenter med inkorgen och meddelanden":::
 
-Mer information om de nya funktionerna finns i Hantera [meddelanden i Meddelandecenter.](manage/manage-messages.md)
+Mer information om de nya funktionerna finns i [Meddelandecenter.](manage/message-center.md)
 
 ### <a name="whats-new-features"></a>Nya funktioner
 

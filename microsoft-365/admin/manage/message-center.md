@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Få en översikt över Microsoft 365 Meddelandecenter och dess roll i ändringshantering.
-ms.openlocfilehash: 905aa411e931f802735c913922a6431e7466cdb5
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 52d2c0815757127ad0c4e34d077a8807f926740e
+ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727229"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52077161"
 ---
 # <a name="message-center"></a>Meddelandecenter
 
@@ -54,8 +54,11 @@ Så här öppnar du Meddelandecenter:
 ::: moniker-end
 
 Du kan också använda [appen Microsoft 365 Admin](https://go.microsoft.com/fwlink/p/?linkid=627216) på din mobila enhet för att visa Meddelandecenter, vilket är ett bra sätt att hålla dig aktuell med push-meddelanden.
+
+Information om hur du avslutar prenumerationen på e-postmeddelanden i Meddelandecenter finns i [Avbryta prenumerationen](#unsubscribe-from-message-center-emails) på e-postmeddelanden i Meddelandecenter i den här artikeln.
+
   
-### <a name="frequently-asked-questions"></a>Vanliga frågor och svar
+## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
 
 |**Fråga**|**Svar**|
 |:-----|:-----|
@@ -70,34 +73,40 @@ Du kan också använda [appen Microsoft 365 Admin](https://go.microsoft.com/fwli
 |Hur kan jag se till att aviseringar om datasekretess tas emot av rätt kontakter i min organisation? <br/> |Som global administratör får du datasekretessmeddelanden för organisationen. Du kan även tilldela rollen Sekretessläsare i Meddelandecenter till personer som ska se datasekretessmeddelanden. Andra administratörsroller med åtkomst till Meddelandecenter kan inte visa datasekretessmeddelanden.   <br/><br/>Mer information finns i Inställningar [i](#preferences) den här artikeln.<br/> |
 |Varför kan jag inte se ett meddelande som tidigare fanns där? <br/> |För att hantera antalet meddelanden i Meddelandecenter förfaller varje meddelande och tas bort efter en tidsperiod. Meddelanden förfaller i allmänhet 30 dagar efter tidsperioden som anges i meddelandets brödtext. <br/> |
 
-### <a name="messages"></a>Meddelanden
+## <a name="filter-messages"></a>Filtrera meddelanden
 
 I Meddelandecenter visas alla aktiva meddelanden i tabellformat. Som standard visas det senaste meddelandet högst upp i listan. Du kan välja **Tjänst om** du vill visa meddelanden för olika tjänster, till exempel Microsoft 365-appar, SharePoint Online osv.   Under **Tagg** kan du välja **Administratörseffekter,** Datasekretess, Funktionsuppdatering, Huvuduppdatering,  **Ny** funktion, Retirement eller Meddelanden **som påverkar** användaren.   Under **Meddelandetillstånd** kan du välja **Favoriter,** **Olästa** eller **Uppdaterade** meddelanden.
 
 På fliken Arkivera visas de meddelanden som du har arkiverat. Om du vill arkivera ett meddelande väljer du Arkivera i **meddelandefönstret.**
 
-### <a name="choose-columns"></a>Välj kolumner
+::: moniker range="o365-worldwide"
 
-Välj Kolumner längst till höger på sidan Meddelandecenter om du vill  välja kolumner. I fönstret Välj kolumner väljer du de kolumner som du vill ska visas. 
+Används listmenyerna **Tjänst**, **Tagg** och **Meddelandestatus** för att välja en filtrerad vy av meddelanden. I det här diagrammet taggas till exempel meddelanden med taggningen **Administratörspåverkan**.
 
-Här är en snabb överblick över informationen som visas i varje kolumn.
+Du kan välja en kolumnrubrik, förutom **Tjänst** och **Tagg**, för att sortera meddelanden i stigande eller fallande ordning.
 
-#### <a name="column-information"></a>Kolumninformation
+:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="Vy över meddelandecenter sorterad efter Administratörspåverkan":::
 
-|**Kolumn**|**Beskrivning**|
-|:-----|:-----|
-|Bockmarkering  <br/> |Om du markerar bockmarkeringen i kolumnrubrikraden markeras alla meddelanden som visas för närvarande. Om du markerar bockmarkeringen bredvid ett eller flera meddelanden kan du vidta åtgärder för dessa meddelanden.  <br/> |
-|Meddelanderubrik  <br/> |Meddelanderubriker är korta beskrivningar av kommande ändringar. Om den fullständiga rubriken inte visas placerar du markören över den så visas hela rubriken i en popup-ruta.  <br/> |
-|Tjänst <br/> |Ikoner anger vilket program som meddelandet gäller för.<br/> |
-|Fler alternativ <br/> |Med fler alternativ kan du stänga ett meddelande, markera det som läst eller oläst, eller dela det med en annan administratör. Om du vill återställa ett arkiverat meddelande **väljer du fliken** Arkiv, markerar bockmarkeringen bredvid meddelandet och väljer **Återställ**. <br/> |
-|Taggar <br/> |Du kan välja taggar i **listrutan** Taggar för att filtrera meddelanden. De tillgängliga taggarna är: **Administratörseffekter,** **Större uppdatering,** Datasekretess, **Funktionsuppdatering,** **Ny** funktion, Retirement och **Användareffekter.**  <br/> |
-|Kategori  <br/> | Det här visas inte som standard, men kan anges i **panelen Välj** kolumner. Meddelanden identifieras med någon av följande tre kategorier: <br/><br/> **Förhindra eller åtgärda problem:** Informerar dig om kända problem som påverkar organisationen och kan innebära att du måste vidta åtgärder för att undvika avbrott i tjänsten. Meddelanden i Förhindra eller åtgärda problem skiljer från meddelanden om tjänstens tillstånd eftersom de förra uppmanar dig att ha framförhållning för att undvika problem. <br/> <br/> **Planera för förändring:** Informerar dig om ändringar i Microsoft 365 som kan innebära att du måste agera för att undvika avbrott i tjänsten. Vi kan till exempel meddela dig om ändringar av systemkrav eller om funktioner som tas bort. Vi försöker informera minst 30 dagar i förväg om alla ändringar som kräver att en administratör agerar för att tjänsten ska fortsätta fungera normalt. <br/> <br/> **Håll dig** informerad: Informerar dig om nya eller uppdaterade funktioner som vi slår på i din organisation. Funktionerna annonseras vanligtvis först i Översikt över [Microsoft 365.](https://go.microsoft.com/fwlink/?linkid=2070821) <br/><br/>Kan även meddela dig om planerat underhåll enlighet vårt servicenivåavtal. Planerat underhåll kan resultera i driftstopp, då du eller dina användare inte kan komma åt Microsoft 365, en viss funktion eller en tjänst som e-post eller OneDrive för företag.  <br/> |
-|Åtgärd senast  <br/> |Vi anger datum här endast om vi gör en ändring som kräver att du vidtar en åtgärd före ett visst datum. Eftersom vi sällan använder **kolumnen Agera** senast bör du vara extra uppmärksam om du ser något här.  <br/> |
-|Uppdaterades senast  <br/> |Datumet då meddelandet publicerades eller uppdaterades senast.  <br/> |
-|Meddelande-ID  <br/> |Microsoft håller reda på inläggen i Meddelandecenter med hjälp av meddelande-ID:n. Du kan hänvisa till detta ID om du vill ge feedback eller om du ringer supporten angående ett särskilt meddelande.  <br/> |
+::: moniker-end
 
-Mer information om vad du kan göra med meddelanden finns i [Hantera meddelanden i Meddelandecenter](manage-messages.md).
-  
+::: moniker range="o365-germany"
+
+Använd listrutan **Views** för att välja en filtrerad vy med meddelanden.
+
+Du kan välja en kolumnrubrik för att sortera meddelanden i stigande eller fallande ordning. Till exempel sorteras i den här bilden meddelanden på **Agera senast-datum**.
+
+![Vy över meddelandecenter sorterad efter Administratörspåverkan-taggen](../../media/message-center-filter-act-by.png)
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+Används listmenyerna **Tjänst**, **Tagg** och **Meddelandestatus** för att välja en filtrerad vy av meddelanden. I det här diagrammet taggas till exempel meddelanden med **Administratörspåverkan**.
+
+Du kan välja en kolumnrubrik, förutom **Tjänst** och **Taggar**, för att sortera meddelanden i stigande eller fallande ordning.
+
+::: moniker-end
+
 ### <a name="major-updates"></a>Större uppdateringar
 
 Du kan granska större uppdateringar genom att **välja huvuduppdateringen** **i listrutan** Taggar.
@@ -180,13 +189,33 @@ Om administrationen har fördelats i organisationen kanske du inte vill eller be
 
 ::: moniker-end
 
-#### <a name="display-messages-in-your-preferred-language"></a>Visa meddelanden på det språk du föredrar
+### <a name="display-messages-in-your-preferred-language"></a>Visa meddelanden på det språk du föredrar
   
 Vi använder maskinöversättning för att automatiskt visa meddelanden på det valda språket. Läs [Översättningar för inlägg i Meddelandecenter](language-translation-for-message-center-posts.md) om du vill ha mer information om hur du anger språk.
   
 > [!NOTE]
 > Veckoinlägget och alla inlägg som skickas via e-post skickas endast på engelska. Mottagarna kan använda [Translator för Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) för att läsa meddelandet på det språk de föredrar. 
-  
+
+## <a name="choose-columns"></a>Välj kolumner
+
+Välj Kolumner längst till höger på sidan Meddelandecenter om du vill  välja kolumner. I fönstret Välj kolumner väljer du de kolumner som du vill ska visas. 
+
+Här är en snabb överblick över informationen som visas i varje kolumn.
+
+### <a name="column-information"></a>Kolumninformation
+
+|**Kolumn**|**Beskrivning**|
+|:-----|:-----|
+|Bockmarkering  <br/> |Om du markerar bockmarkeringen i kolumnrubrikraden markeras alla meddelanden som visas för närvarande. Om du markerar bockmarkeringen bredvid ett eller flera meddelanden kan du vidta åtgärder för dessa meddelanden.  <br/> |
+|Meddelanderubrik  <br/> |Meddelanderubriker är korta beskrivningar av kommande ändringar. Om den fullständiga rubriken inte visas placerar du markören över den så visas hela rubriken i en popup-ruta.  <br/> |
+|Tjänst <br/> |Ikoner anger vilket program som meddelandet gäller för.<br/> |
+|Fler alternativ <br/> |Med fler alternativ kan du stänga ett meddelande, markera det som läst eller oläst, eller dela det med en annan administratör. Om du vill återställa ett arkiverat meddelande **väljer du fliken** Arkiv, markerar bockmarkeringen bredvid meddelandet och väljer **Återställ**. <br/> |
+|Taggar <br/> |Du kan välja taggar i **listrutan** Taggar för att filtrera meddelanden. De tillgängliga taggarna är: **Administratörseffekter,** **Större uppdatering,** Datasekretess, **Funktionsuppdatering,** **Ny** funktion, Retirement och **Användareffekter.**  <br/> |
+|Kategori  <br/> | Det här visas inte som standard, men kan anges i **panelen Välj** kolumner. Meddelanden identifieras med någon av följande tre kategorier: <br/><br/> **Förhindra eller åtgärda problem:** Informerar dig om kända problem som påverkar organisationen och kan innebära att du måste vidta åtgärder för att undvika avbrott i tjänsten. Meddelanden i Förhindra eller åtgärda problem skiljer från meddelanden om tjänstens tillstånd eftersom de förra uppmanar dig att ha framförhållning för att undvika problem. <br/> <br/> **Planera för förändring:** Informerar dig om ändringar i Microsoft 365 som kan innebära att du måste agera för att undvika avbrott i tjänsten. Vi kan till exempel meddela dig om ändringar av systemkrav eller om funktioner som tas bort. Vi försöker informera minst 30 dagar i förväg om alla ändringar som kräver att en administratör agerar för att tjänsten ska fortsätta fungera normalt. <br/> <br/> **Håll dig** informerad: Informerar dig om nya eller uppdaterade funktioner som vi slår på i din organisation. Funktionerna annonseras vanligtvis först i Översikt över [Microsoft 365.](https://go.microsoft.com/fwlink/?linkid=2070821) <br/><br/>Kan även meddela dig om planerat underhåll enlighet vårt servicenivåavtal. Planerat underhåll kan resultera i driftstopp, då du eller dina användare inte kan komma åt Microsoft 365, en viss funktion eller en tjänst som e-post eller OneDrive för företag.  <br/> |
+|Åtgärd senast  <br/> |Vi anger datum här endast om vi gör en ändring som kräver att du vidtar en åtgärd före ett visst datum. Eftersom vi sällan använder **kolumnen Agera** senast bör du vara extra uppmärksam om du ser något här.  <br/> |
+|Uppdaterades senast  <br/> |Datumet då meddelandet publicerades eller uppdaterades senast.  <br/> |
+|Meddelande-ID  <br/> |Microsoft håller reda på inläggen i Meddelandecenter med hjälp av meddelande-ID:n. Du kan hänvisa till detta ID om du vill ge feedback eller om du ringer supporten angående ett särskilt meddelande.  <br/> |
+
 ### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>Administratörsroller som inte har åtkomst till meddelandecentret
 
 - Efterlevnadsadministratör
@@ -200,6 +229,114 @@ Vi använder maskinöversättning för att automatiskt visa meddelanden på det 
 - Privilegierad rolladministratör
 - Rapportläsare
 
+## <a name="give-feedback-on-a-post"></a>Ge feedback om ett epost-meddelande
+
+I Meddelandecenter kan du välja ett meddelande för att visa information.
+
+För att ge feedback till meddelandet går du till detaljfönstret och väljer antingen ikonen för **Gilla** eller **Ogilla** längst ned i meddelandet för detaljfönstret och ger feedback i textrutan som visas. Uppge ingen personlig information. Du kan även välja **Det är ok att kontakta mig om den här feedbacken** och sedan välja **Skicka**.
+
+## <a name="share-a-message"></a>Dela ett meddelande
+
+Ser du ett meddelande som någon annan måste göra något åt? Du kan dela innehållet i meddelandet med en annan användare via e-post:
+  
+1. Markera meddelandet för att öppna det och välj sedan **Dela**.
+  
+2. Om du vill dela meddelandet anger du upp till två e-postadresser avgränsade med ett kolon. Du kan skicka till enskilda e-postadresser och till grupperade e-postadresser. Alternativt kan du välja att få en kopia av meddelandet via e-post (meddelandet går till din primära e-postadress) eller lägga till ett personligt meddelande för att ge mottagarna mer kontext.
+  
+3. Välj **Dela** för att skicka epost-meddelandet.
+
+## <a name="get-a-link"></a>Hämta en länk
+
+Behöver du följa upp med en annan administratör för att se till att han/hon är medveten om ändringen och vidtar en åtgärd. Du kan skapa en länk att dela i till exempel e-post eller snabbmeddelanden som kopplar användaren direkt till det meddelandet. Personen du delar länken med måste ha åtkomst till Meddelandecenter. För mer information se [administratörsroller som inte har åtkomst till Meddelandecenter](message-center.md#admin-roles-that-dont-have-access-to-the-message-center). 
+
+::: moniker range="o365-worldwide"
+
+1. Välj meddelandet för att öppna det.
+
+2. Välj **Kopiera länk**.
+
+3. Använd Ctrl + V eller högerklicka och välj **Klistra in** för att infoga länken till vilket dokument du vill.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Välj meddelandet för att öppna det.
+
+2. Välj **Mer** \> **Hämta en länk** från åtgärdsfältet.
+
+3. Tillåt webbsidan att få åtkomst till Urklipp. En direktlänk kopieras till Urklipp.
+
+4. Använd Ctrl + V eller högerklicka och välj **Klistra in** för att infoga länken.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Välj meddelandet för att öppna det.
+
+2. Välj **Kopiera länk**.
+
+3. Använd Ctrl + V eller högerklicka och välj **Klistra in** för att infoga länken till vilket dokument du vill.
+
+::: moniker-end
+
+## <a name="read-and-unread-states"></a>Läst och oläst
+
+Alla meddelanden i Meddelandecenter som är olästa visas i fetstil. Om du öppnar ett meddelande markeras det som läst. Du kan markera ett meddelande som oläst.
+
+::: moniker range="o365-worldwide"
+
+- På huvudsidan i Meddelandecentret markerar du ellipsen **Fler alternativ** bredvid ett meddelande och väljer sedan **Markera som oläst**.
+
+Det går även att öppna och markera ett meddelande som oläst via detaljfönstret.
+  
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Välj meddelandet för att öppna det.
+
+2. Välj **Mer** \> **Markera som oläst**.
+
+3. Stäng meddelandet.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+- På huvudsidan i Meddelandecentret markerar du ellipsen **Fler alternativ** bredvid ett meddelande och väljer sedan **Markera som oläst**.
+
+::: moniker-end
+
+## <a name="archive-and-restore"></a>Arkivera och återställ
+
+Om du ser ett meddelande som inte gäller dig, eller om du redan har hanterat det, kan du arkivera meddelandet för att ta bort det från inkorgen. Vyn du ser i Meddelandecenter är specifikt för ditt användarkonto, så andra administratörer påverkas inte om du arkiverar meddelandet så att det försvinner från vyn. Det finns två sätt att arkivera ett meddelande.
+
+- Markera ett meddelande på huvudsidan i Meddelandecenter och välj sedan **Arkivera** ovanför listan med meddelanden.
+
+- Öppna meddelandet och välj sedan **Arkivera** högst upp i meddelandefönstret.
+
+Behöver du få tillbaka ett arkiverat meddelande? Inga problem.
+  
+1. Välj fliken **Arkiverade meddelande** högst upp i Meddelandecenter. En lista över arkiverade meddelanden visas.
+
+2. Markera ett meddelande och välj **Återställ**, så återställs meddelandet till inkorgen.
+
+## <a name="favorite-messages"></a>Favoritmeddelanden
+
+För att markera ett meddelande som en favorit hovrar du över meddelanderubriken för att visa en **Favorit** :::image type="icon" source="../../media/favorite-star.png" border="false":::-stjärna som du kan markera vid ellipsen **Fler**. När meddelandena är favoritmarkerade går det även att sortera och filtrera dem.
+
+## <a name="scroll-messages-in-the-message-pane"></a>Skrolla bland meddelanden i meddelandefönstret
+
+När ett meddelande öppnas i ett läsfönster kan du gå till nästa eller föregående meddelande med hjälp av **Upp-** och **Ned-** :::image type="icon" source="../../media/updownarrows.png" border="false":::pilarna längst upp i fönstret.
+
+## <a name="track-your-message-center-tasks-in-planner"></a>Följ upp dina meddelande i Meddelandecenter i Planner
+
+Mycket användbar information om ändringar av Microsoft 365-tjänster kommer till meddelandecentret i Microsoft 365. Det kan vara svårt att hålla reda på vilka ändringar som kräver att aktiviteter utförs, när, och av vem, och att spåra varje aktivitet som ska slutföras. Du kanske även vill anteckna något och tagga det så att du kan se det senare. Du kan göra allt detta och mer när du synkroniserar meddelanden från Administrationscenter för Microsoft 365 till Microsoft Planner. Mer information finns i [Följ upp dina meddelande i Meddelandecenter i Planner](/office365/planner/track-message-center-tasks-planner).
+
+En översikt över Meddelandecenter finns i [Meddelandecenter i Microsoft 365](message-center.md). Eller, om du vill ha mer informationen om hur du ställer in språkinställningar för att aktivera maskinöversättning för inlägg i Meddelandecenter se[Aktivera översättningar för inlägg i Meddelandecenter](language-translation-for-message-center-posts.md). Om du vill programmera ett alternativt sätt att få statusinformation för tjänsten i realtid och kommunikation via Meddelandecenter läser du [Microsoft 365 Service Communications API Overview ](/previous-versions/office/developer/o365-enterprise-developers/jj984343(v=office.15)).
+
 ## <a name="unsubscribe-from-message-center-emails"></a>Avbryta prenumerationen från e-postmeddelanden i Meddelandecenter
 
 1. Sammanfattningsmeddelanden är aktiverat som standard och skickas till din primära e-postadress. Om du inte vill få sammanfattningen varje vecka väljer du **Inställningar** och sedan **E-post.**
@@ -209,3 +346,11 @@ Vi använder maskinöversättning för att automatiskt visa meddelanden på det 
     -   Om du inte vill ta emot e-postmeddelanden om datasekretessmeddelanden kontrollerar du att kryssrutan Skicka e-post för datasekretessmeddelanden inte är markerad.   (Datasekretessmeddelanden ingår inte i veckoinformationen.)
 
 2. Välj **Spara** för att behålla ändringarna.<br/>
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Konfigurera alternativen Standard eller Riktad version](../manage/release-options-in-office-365.md) (artikel)
+
+[Hantera vilka Office-funktioner som visas i Vad är nytt](../manage/show-hide-new-features.md) (artikel)
+
+[Dokumentation om företagsprenumerationer och](../../commerce/index.yml) fakturering (länkar)
