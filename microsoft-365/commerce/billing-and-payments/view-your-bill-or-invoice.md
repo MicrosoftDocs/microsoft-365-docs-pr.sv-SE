@@ -28,12 +28,12 @@ ms.custom:
 - AdminSurgePortfolio
 description: Hitta din faktura eller ditt faktureringsutdrag i administrationscentret för Microsoft 365. Du kan också spara och skriva ut en kopia av fakturan.
 ms.date: 07/31/2020
-ms.openlocfilehash: b117071fa708ad9d425d578833d8b0ad85537151
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: d391d99f5d5870d964fc4c420a105f25032e3640
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939492"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52060973"
 ---
 # <a name="view-your-bill-or-invoice"></a>Visa din faktura
 
@@ -62,7 +62,7 @@ Du måste vara global administratör eller faktureringsadministratörer för att
 
 Du kan skicka din Fapiao-begäran till vårt [Fapiao-hanteringssystem](https://go.microsoft.com/fwlink/p/?linkid=837465) cirka tre (3) dagar efter att du har betalat.
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a>, gå till sidan **Fakturering** > **Fakturor och betalningar**.
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> administrationscentret</a>, går du till sidan **Fakturering** > **Fakturor och betalningar**.
 
 2. Leta upp den faktura du vill använda och välj sedan **Få Fapiaos**.
 
