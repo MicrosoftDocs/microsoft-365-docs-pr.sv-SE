@@ -204,18 +204,10 @@
           href: ../../compliance/alert-policies.md
         - name: Smarta rapporter och insikter i Säkerhets- och efterlevnadscenter
           href: reports-and-insights-in-security-and-compliance.md
-        - name: Aktivera tillägget för att rapportera meddelande
-          href: enable-the-report-message-add-in.md
-        - name: Aktivera tillägget för att rapportera nätfiske
-          href: enable-the-report-phish-add-in.md
-        - name: Installera och använda tillägget för rapportering av skräppost
-          href: junk-email-reporting-add-in-for-microsoft-outlook.md
-        - name: E-postflödesregler (transportregler) i fristående EOP
+        - name: Rapportera falska positiva och falska negativa i Outlook
+          href: report-false-positives-and-false-negatives.md
+        - name: Regler för e-postflöde (transportregler) i fristående EOP
           href: mail-flow-rules-transport-rules-0.md
-        - name: Rapportera skräppost och nätfiske i Outlook på webben
-          href: report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
-        - name: Rapportera skräppost och phishing i Outlook för iOS och Android
-          href: report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android.md
         - name: Köra en administratörsrapport för rollgrupp i fristående EOP
           href: run-an-administrator-role-group-report-in-eop-eop.md
     - name: Undersöka

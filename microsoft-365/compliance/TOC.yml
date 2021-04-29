@@ -118,8 +118,6 @@
           href: create-a-keyword-dictionary.md
         - name: Fingeravtrycksfunktioner för dokument
           href: document-fingerprinting.md
-        - name: DLP-funktioner för känslig information
-          href: what-the-dlp-functions-look-for.md
     - name: Utbildningsbara klassificerare
       items:
         - name: Mer information om utbildningsbara klassificerare
