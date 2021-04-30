@@ -6,7 +6,7 @@ author: chrfox
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,18 +16,19 @@ ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+recommendations: false
 description: Lär dig hur du lägger till ett principtips i en DLP-princip (Data Loss Prevention) om att de arbetar med innehåll som står i konflikt med en DLP-princip.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 36e4d4f96146b51e0b31731c9e93222eed767045
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 0c42569da3fcac40d3121a59f7dc004f25dd3f74
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903808"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086765"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>Referensinformation om principtips för dataförlustskydd
 
-DLP-principtips i Outlook Web Access stöds för alla villkor, undantag och åtgärder som är tillämpliga för Exchange-arbetsbelastning i en DLP-princip, förutom följande:
+Tips för DLP-Outlook i Web Access stöds för alla villkor, undantag och åtgärder som är tillämpliga för Exchange-arbetsbelastningar i en DLP-princip, förutom följande:
 
 **Villkor:**
 
@@ -66,16 +67,16 @@ DLP-principtips i Outlook Web Access stöds för alla villkor, undantag och åtg
 
 ## <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions"></a>Outlook 2013 och senare har stöd för att visa principtips för bara vissa villkor och undantag
 
-För närvarande har Outlook 2013 och senare stöd för att visa principtips för principer som inte innehåller några villkor eller undantag utöver nedan nämnda villkor och motsvarande undantag:
+I Outlook 2013 och senare stöds för närvarande policytips för principer som inte innehåller några villkor eller undantag från nedanstående villkor och motsvarande undantag:
 
 - Innehållet innehåller (fungerar endast för typer av känslig information. Känslighetsetiketter stöds inte)
 - Innehåll delas
 
-Observera att alla villkor fungerar för e-postmeddelanden som redigeras i Outlook-klientappen, där de matchar innehåll och tillämpar skyddsåtgärder för innehåll. Men det går inte att visa principtips för användare för villkor som används utöver de som nämns ovan.
+Observera att alla villkor fungerar för e-postmeddelanden som Outlook i klientappen, där de matchar innehåll och tillämpar skyddsåtgärder på innehåll. Men det går inte att visa principtips för användare för villkor som används utöver de som nämns ovan.
 
-## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Outlook 2013 och senare samt stöd för Office-program på stationära datorer som visar principtips för endast vissa typer av känslig information
+## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Outlook 2013 och senare samt Office-program på skrivbordet som visar principtips för endast vissa typer av känslig information
 
-Följande är en lista med för indelad känslig informationstyper som identifieras för visning av DLP-principtips i Outlook på skrivbordet (2013 och senare) och Office-program (Word, Excel, PowerPoint) på skrivbordet:
+Följande är en lista över de in alltid använda typer av känslig information som identifieras för visning av DLP-principtips i Outlook på skrivbordet (2013 och senare) och Office-program (Word, Excel, PowerPoint) på skrivbordet:
 
 - ABA-routningsnummer
 - Argentina National Identity (DNI) Number
@@ -89,16 +90,16 @@ Följande är en lista med för indelad känslig informationstyper som identifie
 - Lösenord för Inställning av Azure-publicering  
 - Azure Redis Cache-anslutningssträng  
 - Azure SAS  
-- Azure Service Bus Connection String  
-- Azure Storage Account Key  
-- Azure Storage Account Key (generic)  
+- Azure Service Bus-anslutningssträng  
+- Azure Storage Kontonyckel  
+- Azure Storage Kontonyckel (allmän)  
 - Belgiens nationalnummer
 - Brasilien CPF-nummer
 - Brazil Legal Entity Number (CNPJ)
 - Brazil National ID Card (RG)
 - Bank Account Number för Kanada
 - Kanadas driver's License Number
-- Canada Health Service Number
+- Kanada Hälsotjänst Kanada
 - Canada Passport Number
 - Canada Personal Health Identification Number (PHIN)
 - Canada Social Insurance Number
@@ -158,7 +159,7 @@ Följande är en lista med för indelad känslig informationstyper som identifie
 - South Africa Identification Number  
 - Sydkoreas invånarregistreringsnummer
 - Spain Social Security Number (SSN)
-- SQL Server-anslutningssträng  
+- SQL Server Anslutningssträng  
 - National ID för Sverige
 - Sverige Passport Number
 - SWIFT-kod
@@ -169,7 +170,7 @@ Följande är en lista med för indelad känslig informationstyper som identifie
 - Turkiska National Identification Number
 - Storbritannien Driver's License Number
 - Storbritannien E-nummer för att samla in
-- Storbritannien National Health Service Number
+- Storbritannien National Hälsotjänst Number
 - Storbritannien National Insurance Number (NINO)
 - U.S. / Storbritannien Passport Number
 - U.S. Bank Account Number
@@ -203,9 +204,9 @@ Listan över inringningstyper för känslig information som identifieras i dokum
 - Lösenord för Inställning av Azure-publicering 
 - Azure Redis Cache-anslutningssträng 
 - Azure SAS 
-- Azure Service Bus Connection String 
-- Azure Storage Account Key 
-- Azure Storage Account Key (generic) 
+- Azure Service Bus-anslutningssträng 
+- Azure Storage Kontonyckel 
+- Azure Storage Kontonyckel (allmän) 
 - Belgien Driver's License Number 
 - Belgiens nationalnummer 
 - Belgien Passport Number 
@@ -218,7 +219,7 @@ Listan över inringningstyper för känslig information som identifieras i dokum
 - Bulgariens enhetliga civilnummer 
 - Bank Account Number för Kanada 
 - Kanadas driver's License Number 
-- Canada Health Service Number 
+- Kanada Hälsotjänst Kanada 
 - Canada Passport Number 
 - Canada Personal Health Identification Number (PHIN) 
 - Canada Social Insurance Number 
@@ -230,7 +231,7 @@ Listan över inringningstyper för känslig information som identifieras i dokum
 - Kroatiens National ID-kortnummer 
 - Kroatien Passport Number 
 - Kroatiens OIB-nummer (Personal Identification) 
-- CSCAN-AZURE0060 Signatur för delat åtkomstkonto för Azure-lagring 
+- CSCAN-AZURE0060 Azure Storage signatur för delad åtkomst 
 - CSCAN-GENERAL0140 allmän symmetrisk nyckel 
 - Cyperns drivrutinslicensnummer 
 - Cypern-identitetskort 
@@ -362,7 +363,7 @@ Listan över inringningstyper för känslig information som identifieras i dokum
 - Spain Passport Number 
 - Spain Social Security Number (SSN) 
 - Spaniens skatteidentifieringsnummer 
-- SQL Server-anslutningssträng 
+- SQL Server Anslutningssträng 
 - Sverige driver's License Number 
 - National ID för Sverige 
 - Sverige Passport Number 
@@ -376,7 +377,7 @@ Listan över inringningstyper för känslig information som identifieras i dokum
 - Turkiska National Identification Number 
 - Storbritannien Driver's License Number 
 - Storbritannien E-nummer för att samla in 
-- Storbritannien National Health Service Number 
+- Storbritannien National Hälsotjänst Number 
 - Storbritannien National Insurance Number (NINO) 
 - Storbritannien Unique Taxpayer-referensnummer 
 - U.S. / Storbritannien Passport Number 
@@ -394,16 +395,16 @@ Observera att anpassade typer av känslig information också identifieras, utöv
 |**App och plattform**|**Stöd för DLP-principtips**|**Typer av känslig information som stöds**|**Predikat och åtgärder som stöds**|**Kommentarer**|
 |:--|:--|:--|:--|:--|
 |**Outlook Web Access**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Alla|Delmängd|Se [referens för policytips för skydd mot dataförlust](#data-loss-prevention-policy-tips-reference)|
-|**Outlook Win32 (Outlook 2013 och vidare)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Delmängd|Delmängd|Se [Outlook 2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) och senare med stöd för att visa principtips för bara vissa villkor och undantag och stöd för Outlook [2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) och senare samt Stöd för Office-program på skrivbordet med principtips för endast vissa typer av känslig information om information om stöd för typer av känslig information och vilka DLP-villkor och åtgärder som stöds för att visa DLP-principtips i Outlook Win32.|
-|**Outlook Mobile (iOS, Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Inga|Inga|Tips för DLP-policyer stöds inte i Outlook Mobile|
+|**Outlook Win32 (Outlook 2013 och därefter)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Delmängd|Delmängd|Se [Outlook 2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) och senare funktioner med principtips för bara vissa villkor och undantag, [och i Outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) och senare samt i Office-program på skrivbordet visas principtips för endast vissa typer av känslig information, information om stöd för typer av känslig information och vilka DLP-villkor och åtgärder som stöds för att visa DLP-principtips på Outlook Win32.|
+|**Outlook Mobil (iOS, Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Inga|Inga|DLP-principtips stöds inte på Outlook mobil|
 |**Sharepoint Online/One Drive för företag-webbklient**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Alla|Alla SPO/ODB-predikat och åtgärder i DLP||
-|**Sharepoint Win32/ One Drive för företag Win32-klient**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Inga|Inga|Tips för DLP-princip stöds inte i Sharepoint- eller OneDrive-klientprogram|
-|**Word, Excel, PowerPoint Web Client**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Alla|Alla SPO/ODB-predikat och åtgärder i DLP|Tips för DLP-princip stöds om dokumentet ligger på SPO- eller ODB-webbappen och DLP-principen redan har stämplats.|
-|**Word, Excel, PowerPoint Mobile-klient**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Inga|Inga|Tips för DLP-princip stöds inte i mobilappar för Office.|
-|**Teams Webb/ Teams skrivbords- / Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Alla|Alla Teams-predikat i DLP-princip|Principtips visas när ett meddelande flaggas som "Det här meddelandet har flaggats. Vad kan jag göra?" När användaren klickar på länken kan han eller hon granska de typer av känslig information som upptäckts och åsidosätta eller rapportera ett problem om administratören tillåtit det. Observera att inga principtips visas för filer. När mottagaren försöker komma åt dokumentet kan de få åtkomst nekad om det inte är tillåtet.|
+|**Sharepoint Win32/ One Drive för företag Win32-klient**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Inga|Inga|Tips för DLP-princip stöds inte i Sharepoint- OneDrive-klientprogram på datorn|
+|**Word, Excel, PowerPoint webbklient**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Alla|Alla SPO/ODB-predikat och åtgärder i DLP|Tips för DLP-princip stöds om dokumentet ligger på SPO- eller ODB-webbappen och DLP-principen redan har stämplats.|
+|**Word Excel PowerPoint Mobile klient**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Inga|Inga|Tips för DLP-princip stöds inte i mobilappar för Office.|
+|**Teams Web/ Teams Desktop/ Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Alla|Alla Teams i DLP-principen|Principtips visas när ett meddelande flaggas som "Det här meddelandet har flaggats. Vad kan jag göra?" När användaren klickar på länken kan han eller hon granska de typer av känslig information som upptäckts och åsidosätta eller rapportera ett problem om administratören tillåtit det. Observera att inga principtips visas för filer. När mottagaren försöker komma åt dokumentet kan de få åtkomst nekad om det inte är tillåtet.|
 |**Win32-slutpunktsenheter**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Delmängd|Alla endpoint DLP-predikat och åtgärder i DLP-princip|Se [Skydd mot dataförlust i Slutpunkt som stöder principtips för endast vissa typer av känslig information](#data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types)|
 |**Mac-enheter**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Inga|Inga|Principer för skydd mot dataförlust är i dag inte tillgängliga på Mac-enheter|
 |**Molnbaserade appar från tredje part**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Inga|Inga|Policytips för skydd mot dataförlust stöds inte i molnappar från tredje part|
 |**On-prem**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Inga|Inga||
-|**Word, Excel, PowerPoint Win32-klient**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Delmängd|Delmängd|Se [Outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) och senare, och stöd för Office-program på stationära datorer med policytips för endast vissa typer av känslig information för listan över typer av känslig information som stöds</br></br>Principtips för WXP-klientprogram fungerar för dokument som lagras på Sharepoint Online- eller One Drive för företag-webbplatser för alla DLP-principer som har exakt nedanstående eller en delmängd villkor eller åtgärder i DLP-principen:</br> <ul><li>Innehållet innehåller typer av känslig information</li><li>Åtkomstomfattning (innehåll delas internt/externt)</li><li>Meddela användare (principtips/användarmeddelanden)</li><li>Blockera alla</li><li>Incidentrapporter</li></ul></br> Om det finns andra villkor eller åtgärder visas inte DLP-principtipset för den principen i skrivbordsapparna för Word, Excel eller PowerPoint.</br>Mer [information finns i Principtips i Excel, PowerPoint](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word) och Word|
+|**Word-, Excel-, PowerPoint Win32-klient**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Delmängd|Delmängd|Se [Outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) och senare samt stöd för Office-program på stationära datorer med policytips för endast vissa typer av känslig information för listan över typer av känslig information som stöds</br></br>Principtips för WXP-klientprogram fungerar för dokument som lagras på Sharepoint Online- eller One Drive för företag-webbplatser för alla DLP-principer som har exakt nedanstående eller en delmängd villkor eller åtgärder i DLP-principen:</br> <ul><li>Innehållet innehåller typer av känslig information</li><li>Åtkomstomfattning (innehåll delas internt/externt)</li><li>Meddela användare (principtips/användarmeddelanden)</li><li>Blockera alla</li><li>Incidentrapporter</li></ul></br> Om det finns andra villkor eller åtgärder visas inte DLP-principtipset för den principen i skrivbordsapparna i Word, Excel eller PowerPoint.</br>Mer [information finns i Excel, PowerPoint och Word](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word)|
 ||||||

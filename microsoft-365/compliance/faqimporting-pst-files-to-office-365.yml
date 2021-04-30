@@ -1,0 +1,169 @@
+### YamlMime:FAQ
+metadata:
+  title: Vanliga frågor om import av PST-filer
+  f1.keywords:
+  - NOCSH
+  ms.author: markjjo
+  author: markjjo
+  manager: laurawi
+  audience: Admin
+  ms.topic: article
+  ms.service: O365-seccomp
+  localization_priority: Normal
+  ms.collection: M365-security-compliance
+  search.appverid:
+  - MOE150
+  - MED150
+  - MET150
+  ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
+  ms.custom: seo-marvel-apr2020
+  description: Den här artikeln innehåller svar på några vanliga frågor för administratörer om hur du importerar PST-filer Microsoft 365 använder Office 365 importtjänsten.
+  ms.openlocfilehash: 27fa3b93b53a497fcff63524b04f427049bac412
+  ms.sourcegitcommit: ddb1bf56bcba4f03c803f79492e8cd0dc41a3d7a
+  ms.translationtype: MT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 04/28/2021
+  ms.locfileid: "52090641"
+title: Vanliga frågor om import av PST-filer
+summary: "**Den här artikeln är för administratörer. Vill du importera PST-filer till din egen postlåda? Läs [Importera e-post, kontakter och kalender från en Outlook PST-fil](https://go.microsoft.com/fwlink/p/?LinkID=785075)**\n\nHär är några vanliga frågor om hur du Office 365 importtjänsten för att massimporterar PST-filer till Microsoft 365 postlådor. Mer information om hur du importerar PST-filer finns i [Översikt över import av PST-filer till Office 365.](./importing-pst-files-to-office-365.md)\n  \n## <a name=\"using-network-upload-to-import-pst-files\"></a>Använda nätverksuppladdning för att importera PST-filer\n\nStegvisa anvisningar finns i Använda nätverksuppladdning [för att importera PST-filer till Office 365](use-network-upload-to-import-pst-files.md).\n"
+sections:
+- name: Allmänt
+  questions:
+  - question: >
+      Vilka behörigheter krävs för att skapa importjobb i Office 365 importtjänsten?
+    answer: "Du måste vara tilldelad rollen Importera och exportera postlåda i Exchange Online importera PST-filer till Microsoft 365 postlådor. Som standard är den här rollen inte tilldelad någon rollgrupp i Exchange Online. Du kan lägga till rollen Importera och exportera postlåda i rollgruppen Organisationshantering. Du kan också skapa en ny rollgrupp, tilldela rollen Importera och exportera postlåda och sedan lägga till dig själv eller andra användare som medlemmar. Mer information finns i avsnitten \"Lägga till en roll i rollgrupp\" och \"Skapa en rollgrupp\" i Hantera [rollgrupper i Exchange Online](/Exchange/permissions-exo/role-groups).\n  \nOm du vill skapa importjobb i Säkerhets- & säkerhets- och efterlevnadscenter måste dessutom något av följande stämma:\n  \n- Du måste ha tilldelats rollen E-postmottagare i Exchange Online. Som standard är den här rollen tilldelad rollgrupperna Organisationshantering och Mottagarhantering.\n    \n    Eller\n    \n- Du måste vara global administratör i organisationen.\n    \n> [!TIP]\n> Du kan skapa en ny rollgrupp i Exchange Online som är specifikt avsedd att importera PST-filer till Office 365. För den lägsta nivån av behörighet som krävs för att importera PST-filer tilldelar du rollerna Importera och exportera postlåda och E-postmottagare till den nya rollgruppen och lägger sedan till medlemmar. \n  \n"
+  - question: >
+      Var är nätverksuppladdning tillgängligt?
+    answer: "Nätverksuppladdning är för närvarande tillgängligt i följande regioner: USA, Kanada, Brasilien, Storbritannien, Frankrike, Tyskland, Schweiz, Norge, Europa, Indien, Östasien, Sydostasien, Japan, Republiken Korea, Australien och Förenade Arabemiraten. Nätverksuppladdning kommer snart att finnas i fler områden.\n  \n"
+  - question: >
+      Vad är det för priser för import av PST-filer med hjälp av nätverksuppladdning?
+    answer: "Det är kostnadsfritt att använda nätverksuppladdning för att importera PST-filer.\n  \nDet innebär också att när PST-filer tas bort från Azure Storage-området visas de inte längre i listan över filer för slutförda importjobb i Microsoft 365 administrationscenter. Även om ett importjobb kanske fortfarande finns med på sidan **Importera data** till Office 365 kan listan över PST-filer vara tom när du visar information om äldre importjobb. \n  \n"
+  - question: >
+      Vilken version av PST-filformatet stöds för import till Office 365?
+    answer: "Det finns två versioner av PST-filformatet: ANSI och Unicode. Vi rekommenderar att du importerar filer som använder Unicode PST-filformatet. Men filer som använder ANSI PST-filformatet, till exempel för språk som använder en teckenuppsättning med dubbla byte (DBCS), kan också importeras till Office 365. Mer information om hur du importerar ANSI PST-filer finns i Steg 4 i Använda nätverksuppladdning för att importera organisationens [PST-filer till Office 365](use-network-upload-to-import-pst-files.md#step-4-create-the-pst-import-mapping-file).\n  \nDESSUTOM kan PST-filer från Outlook 2007 och senare versioner importeras till Office 365.\n  \n"
+  - question: >
+      När jag har laddat upp mina PST-filer till området Azure Storage, hur lång tid bevaras de i Azure innan de tas bort?
+    answer: "När du importerar PST-filer med nätverksuppladdningsmetoden laddar du upp dem till en Azure-blobbehållare med namnet `ingestiondata` . Om inga importjobb pågår på sidan Importera **PST-filer** i efterlevnadscentret för säkerhet &) tas alla PST-filer i behållaren i Azure bort 30 dagar efter att det senaste importjobbet skapades i efterlevnadscentret för & säkerhet och `ingestiondata` säkerhet. Det innebär också att du måste skapa ett nytt importjobb i Säkerhets- och efterlevnadscenter för & (beskrivs i steg 5 i instruktionerna för nätverksuppladdning) inom 30 dagar efter att PST-filer laddats upp till Azure. \n  \nDet innebär också att när PST-filer tas bort från Azure Storage-området visas de inte längre i listan över filer för slutförda importjobb i Säkerhets- & efterlevnadscenter. Även om ett importjobb kanske fortfarande finns med på sidan Importera **PST-filer** i efterlevnadscentret för säkerhet och & kan listan över PST-filer vara tom när du visar information om äldre importjobb. \n  \n"
+  - question: >
+      Hur lång tid tar det att importera en PST-fil till en postlåda?
+    answer: "Det beror på kapaciteten i nätverket, men det tar normalt flera timmar att ladda upp varje terabyte (TB) data till Azure Storage för din organisation. När PST-filerna har kopierats till Azure Storage importeras en PST-fil till en Microsoft 365-postlåda med en hastighet på minst 24 GB per dag. Om hastigheten inte uppfyller dina behov bör du fundera på andra metoder för att migrera e-postdata till Office 365. Mer information finns i Olika [sätt att migrera flera e-postkonton till Office 365](/Exchange/mailbox-migration/mailbox-migration).\n  \nOm olika PST-filer importeras till olika målpostlådor sker importen parallellt. Med andra ord importeras varje PST-/postlådepar samtidigt. På samma sätt importeras flera PST-filer till samma postlåda samtidigt.\n  \n"
+  - question: >
+      Hur hanteras dubbletter av e-postobjekt med PST-importprocessen?
+    answer: >
+      PST-importen söker efter dubbletter av objekt och kopierar inte objekten från en PST-fil till postlådan eller arkivet om ett matchande objekt finns i målmappen i målpostlådan eller målarkivet. Om du importerar samma PST-fil på nytt och anger en annan målmapp (med egenskapen TargetRootFolder i PST-importmappningsfilen) än den du angav i ett tidigare importjobb, importeras alla objekt i PST-filen på nytt.
+  - question: >
+      Finns det någon storleksgräns för meddelanden när PST-filer importeras?
+    answer: "Ja. Om en PST-fil innehåller ett postlådeobjekt som är större än 150 MB hoppas objektet över och importeras inte under importen. Objekt som är större än 150 MB importeras inte eftersom 150 MB är meddelandestorleksgränsen i Exchange Online. Mer information finns i [Meddelandebegränsningar i Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits).\n  \n"
+  - question: >
+      Bevaras meddelandeegenskaper, till exempel när meddelandet skickades eller togs emot, listan över mottagare och andra egenskaper, när PST-filer importeras till en Microsoft 365 postlåda?
+    answer: >
+      Ja. Ursprungliga metadata för ett meddelande ändras inte under importen.
+  - question: >
+      Finns det någon gräns för antalet nivåer i en mapphierarki för en PST-fil som jag vill importera till en postlåda?
+    answer: >
+      Ja. Du kan inte importera en PST-fil som har 300 eller fler nivåer med kapslade mappar.
+  - question: >
+      Kan jag använda nätverksuppladdning för att importera PST-filer till en inaktiv postlåda Office 365?
+    answer: >
+      Ja, den här funktionen är nu tillgänglig.
+  - question: >
+      Kan jag använda nätverksuppladdning för att importera PST-filer till en onlinearkivpostlåda i Exchange hybriddistribution?
+    answer: >
+      Ja, den här funktionen är nu tillgänglig.
+  - question: >
+      Kan jag använda nätverksuppladdning för att importera PST-filer till gemensamma mappar i Exchange Online?
+    answer: >
+      Nej, du kan inte importera PST-filer till gemensamma mappar.
+
+
+      ## <a name="using-drive-shipping-to-import-pst-files"></a>Använda skickad hårddisk för att importera PST-filer
+
+
+      Stegvisa anvisningar finns i Använda hårddiskleverans [för att importera PST-filer till en Office 365.](use-drive-shipping-to-import-pst-files-to-office-365.md)
+  - question: >
+      Vilka behörigheter krävs för att skapa importjobb i Office 365 importtjänsten?
+    answer: "Du måste vara tilldelad rollen Importera och exportera postlåda för att kunna importera PST-filer Microsoft 365 postlådor. Som standard är den här rollen inte tilldelad någon rollgrupp i Exchange Online. Du kan lägga till rollen Importera och exportera postlåda i rollgruppen Organisationshantering. Du kan också skapa en ny rollgrupp, tilldela rollen Importera och exportera postlåda och sedan lägga till dig själv eller andra användare som medlemmar. Mer information finns i avsnitten \"Lägga till en roll i rollgrupp\" och \"Skapa en rollgrupp\" i Hantera [rollgrupper i Exchange Online](/Exchange/permissions-exo/role-groups).\n  \nOm du vill skapa importjobb i Säkerhets- & säkerhets- och efterlevnadscenter måste dessutom något av följande stämma:\n  \n- Du måste ha tilldelats rollen E-postmottagare i Exchange Online. Som standard är den här rollen tilldelad rollgrupperna Organisationshantering och Mottagarhantering.\n    \n    Eller\n    \n- Du måste vara global administratör i organisationen.\n    \n> [!TIP]\n> Du kan skapa en ny rollgrupp i Exchange Online som är specifikt avsedd att importera PST-filer till Office 365. För den lägsta nivån av behörighet som krävs för att importera PST-filer tilldelar du rollerna Importera och exportera postlåda och E-postmottagare till den nya rollgruppen och lägger sedan till medlemmar. \n  \n"
+  - question: >
+      Var är leverans av hårddisk tillgänglig?
+    answer: "Hårddiskleverans är för närvarande tillgänglig i USA, Kanada, Brasilien, Storbritannien, Europa, Indien, Östasien, Sydostasien, Japan, Republiken Korea och Australien. Skicka in en hårddisk kommer snart att vara tillgänglig i fler områden.\n\n> [!NOTE]\n> För närvarande går det inte att skicka in en hårddisk för att importera PST-filer i Tyskland eller Schweiz. De här vanliga frågorna uppdateras när det går att skicka in en hårddisk i dessa länder.\n  \n"
+  - question: >
+      Vilka kommersiella licensavtal har stöd för att skicka in en hårddisk?
+    answer: >
+      Skicka in en hårddisk för att kunna importera PST Microsoft 365 filer är tillgänglig via en Microsoft företagsavtal (EA). Hårddiskleverans är inte tillgängligt via ett MPSA-avtal (Microsoft Products and Services Agreement).
+  - question: >
+      Vad är det för priser för att använda hårddiskleverans för att importera PST-filer till Microsoft 365?
+    answer: "Kostnaden för att skicka in en hårddisk för att importera PST-filer Microsoft 365 en postlåda är 2 USD per GB data. Om du till exempel skickar in en hårddisk som innehåller 1 000 GB (1 TB) PST-filer är kostnaden 2 000 USD. Du kan samarbeta med en partner för att betala importavgiften. Information om hur du hittar en partner finns i [Hitta en Microsoft-partner eller återförsäljare.](../admin/manage/find-your-partner-or-reseller.md)\n  \n"
+  - question: >
+      Vilken typ av hårddiskar stöds för att skicka in en hårddisk?
+    answer: "Endast 2,5-tums SSD (Solid-state Drives) eller 2,5- eller 3,5-tums SATA II/III interna hårddiskar stöds för användning med Office 365-importtjänsten. Du kan använda hårddiskar på upp till 10 TB. För importjobb är det endast den första datavolymen på hårddisken som bearbetas. Datavolymen måste vara formaterad med NTFS. När du kopierar data till en hårddisk kan du ansluta den direkt med en 2,5-tums SSD- eller 2,5- eller 3,5-tums SATA II/III-koppling eller så kan du ansluta den externt med hjälp av en extern 2,5-tums SSD- eller 2,5- eller 3,5-tums SATA II/III USB-adapter.\n  \n> [!IMPORTANT]\n> Externa hårddiskar som har en inbyggd USB-adapter stöds inte av Office 365 Import-tjänsten. Det går inte att använda disken inuti en extern hårddisks hölje. Skicka inte in externa hårddiskar. \n  \n"
+  - question: >
+      Hur många hårddiskar kan jag skicka in för ett importjobb?
+    answer: >
+      Du kan skicka maximalt 10 hårddiskar för ett importjobb.
+  - question: >
+      När jag har skickar in min hårddisk, hur lång tid tar det då för den att komma till Microsofts datacenter?
+    answer: >
+      Det beror på några olika saker, till exempel hur nära du ligger Microsofts datacenter och vilken typ av leveransalternativ du använde för att skicka hårddisken (till exempel leverans nästa dag, två dagars leveranstid eller grundleverans). Hos de flesta shippers kan du använda spårningsnumret för att spåra status för din leverans.
+  - question: >
+      Hur lång tid tar det att ladda upp PST-filer till Azure när min hårddisk anländer till Microsofts datacenter?
+    answer: >
+      När hårddisken har tagits emot på Microsofts datacenter tar det mellan 7 och 10 arbetsdagar att ladda upp PST-filer till Azure Storage för din organisation. PST-filerna laddas upp till en blob-behållare i Azure med namnet `ingestiondata` .
+  - question: >
+      Hur lång tid tar det att importera en PST-fil till en postlåda?
+    answer: "När PST-filerna har laddats upp till Azure Storage-området analyserar Microsoft 365 data i PST-filerna (på ett säkert sätt) för att identifiera åldern på objekten och de olika meddelandetyper som ingår i PST-filerna. När analysen är klar kan du välja att importera alla data i PST-filerna eller ange filter som styr vilka data som importeras. När du startar importjobbet importeras en PST-fil till en Microsoft 365 med en hastighet på minst 24 GB per dag. Om hastigheten inte uppfyller dina behov bör du fundera på andra metoder för att importera e-postdata till Office 365. Mer information finns i Olika [sätt att migrera flera e-postkonton till Office 365](/Exchange/mailbox-migration/mailbox-migration).\n  \nOm olika PST-filer importeras till olika målpostlådor sker importen parallellt. Med andra ord importeras varje PST-/postlådepar samtidigt. På samma sätt importeras flera PST-filer till samma postlåda samtidigt.\n  \n"
+  - question: >
+      När Microsoft har laddat upp mina PST-filer till Azure, hur länge lagras de i Azure innan de tas bort?
+    answer: "Alla PST-filer på Azure Storage-platsen för organisationen (i en blob-behållare med namnet ) tas bort 30 dagar efter att det senaste importjobbet skapades på sidan Importera PST-filer i säkerhets- och `ingestiondata` & efterlevnadscenter.  \n  \nDet innebär också att när PST-filer tas bort från Azure Storage-området visas de inte längre i listan över filer för slutförda importjobb i Säkerhets- & efterlevnadscenter. Även om ett importjobb kanske fortfarande finns med på sidan Importera **PST-filer** i efterlevnadscentret för säkerhet och & kan listan över PST-filer vara tom när du visar information om äldre importjobb. \n  \n"
+  - question: >
+      Vilken version av PST-filformatet stöds för import till Microsoft 365?
+    answer: "Det finns två versioner av PST-filformatet: ANSI och Unicode. Vi rekommenderar att du importerar filer som använder Unicode PST-filformatet. Men filer som använder ANSI PST-filformatet, till exempel för språk som använder en teckenuppsättning med dubbla byte (DBCS), kan också importeras till Microsoft 365. Mer information om hur du importerar ANSI PST-filer finns i Steg 3 i Använda möjligheten att skicka in en hårddisk för att importera [PST-filer Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file).\n  \nDESSUTOM kan PST-filer från Outlook 2007 och senare versioner importeras till Office 365.\n  \n"
+  - question: >
+      Finns det någon storleksgräns för meddelanden när PST-filer importeras?
+    answer: "Ja. Om en PST-fil innehåller ett postlådeobjekt som är större än 150 MB hoppas objektet över och importeras inte under importen. Objekt som är större än 150 MB importeras inte eftersom 150 MB är meddelandestorleksgränsen i Exchange Online. Mer information finns i [Meddelandebegränsningar i Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits).\n  \n"
+  - question: >
+      Hur hanteras dubbletter av e-postobjekt med PST-importprocessen?
+    answer: >
+      PST-importen söker efter dubbletter av objekt och kopierar inte objekten från en PST-fil till postlådan eller arkivet om ett matchande objekt finns i målmappen i målpostlådan eller målarkivet. Om du importerar samma PST-fil på nytt och anger en annan målmapp (med egenskapen TargetRootFolder i PST-importmappningsfilen) än den du angav i ett tidigare importjobb, importeras alla objekt i PST-filen på nytt.
+  - question: >
+      Bevaras meddelandeegenskaper, till exempel när meddelandet skickades eller togs emot, listan över mottagare och andra egenskaper, när PST-filer importeras till en Microsoft 365 postlåda?
+    answer: >
+      Ja. Ursprungliga metadata för ett meddelande ändras inte under importen
+  - question: >
+      Finns det någon gräns för antalet nivåer i en mapphierarki för en PST-fil som jag vill importera till en postlåda?
+    answer: >
+      Ja. Du kan inte importera en PST-fil som har 300 eller fler nivåer med kapslade mappar.
+  - question: >
+      Kan jag använda hårddiskleverans för att importera PST-filer till en inaktiv postlåda Microsoft 365?
+    answer: >
+      Ja, den här funktionen är nu tillgänglig.
+  - question: >
+      Kan jag använda hårddiskleverans för att importera PST-filer till en onlinearkivpostlåda i Exchange hybriddistribution?
+    answer: >
+      Ja, den här funktionen är nu tillgänglig.
+  - question: >
+      Kan jag använda hårddiskleverans för att importera PST-filer till gemensamma mappar i Exchange Online?
+    answer: >
+      Nej, du kan inte importera PST-filer till gemensamma mappar.
+  - question: >
+      Kan Microsoft rensa min hårddisk innan de skickar tillbaka den till mig?
+    answer: >
+      Nej, Microsoft kan inte rensa hårddiskar innan de skickas tillbaka till kunderna. Hårddiskar returneras till dig i samma skick som de var när de togs emot av Microsoft.
+  - question: >
+      Kan Microsoft förstöra min hårddisk i stället för att skicka tillbaka den till mig?
+    answer: >
+      Nej, Microsoft kan inte förstöra hårddisken. Hårddiskar returneras till dig i samma skick som de var när de togs emot av Microsoft.
+  - question: >
+      Vilka posttjänster stöds för returleveransen?
+    answer: >
+      Om du är kund i USA eller Europa använder Microsoft FedEx för att returnera hårddisken. För alla andra regioner använder Microsoft DHL.
+  - question: >
+      Vad kostar returleveransen?
+    answer: >
+      Kostnaden för returleveransen varierar beroende på hur nära du är det Microsoft-datacenter som du skickat hårddisken till. Microsoft kommer att debitera ditt FedEx- eller DHL-konto för returen av hårddisken. Kostnaden för returleveransen ansvarar du för.
+  - question: >
+      Kan jag använda en anpassad postleveranstjänst, till exempel FedEx:s anpassade leverans, för att skicka in min hårddisk till Microsoft?
+    answer: >
+      Ja.
+  - question: >
+      Om jag måste skicka min hårddisk till ett annat land, finns det något jag behöver göra?
+    answer: Hårddisken som du skickar till Microsoft kan behöva korsa internationella gränslinjer. I så fall är du ansvarig för att säkerställa att hårddisken och de data den innehåller importeras och/eller exporteras i enlighet med gällande lagstiftning. Kontrollera med dina rådgivare att din hårddisk och dina data lagligt kan skickas till det angivna Microsoft-datacentret innan du skickar hårddisken. Det här gör det möjligt att se till att det når Microsoft i tid.
