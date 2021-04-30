@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Lär dig hur du gör organisationen säkrare mot lösenordsattacker och varför du bör förbjuda vanliga lösenord och aktivera riskbaserad multifaktorautentisering.
-ms.openlocfilehash: ca9a88b0bb154416837254d785cf9cfee8876ae6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d3f86a6e85ab2f8e469a57ea98a661e4cc453673
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914732"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073871"
 ---
 # <a name="password-policy-recommendations"></a>Policyrekommendationer för lösenord
 
@@ -34,7 +34,15 @@ Som administratör för en organisation är du ansvarig för att bestämma polic
   
 Information om hur du anger hur ofta Microsoft 365-lösenord ska upphöra att gälla i organisationen finns i [Ange förfalloprincip för lösenord för Microsoft 365](../manage/set-password-expiration-policy.md).
 
-Mer information om Microsoft 365-lösenord finns i följande [relaterade artiklar](#related-articles).
+För mer information om Microsoft 365-lösenord se:
+
+[Återställ lösenord](../add-users/reset-passwords.md) (artikel)
+
+[Ange att en enskild användares lösenord aldrig ska förfalla](../add-users/set-password-to-never-expire.md) (artikel)
+
+[Låt användare återställa sina egna lösenord](../add-users/let-users-reset-passwords.md) (artikel)
+
+[Skicka om en användares lösenord – hjälp för administratörer](../add-users/resend-user-password.md) (artikel)
   
 ## <a name="understanding-password-recommendations"></a>Förstå rekommendationer om lösenord
 
@@ -134,12 +142,12 @@ Med riskbaserad multifaktorautentisering går det att kontrollera att användare
 
 - [2015 års sämsta lösenord](https://go.microsoft.com/fwlink/p/?linkid=861020)
 
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-content"></a>Relaterat innehåll
 
-[Återställa lösenord](../add-users/reset-passwords.md)
+[Återställ lösenord](../add-users/reset-passwords.md) (artikel)
 
-[Ange att en enskild användares lösenord aldrig ska förfalla](../add-users/set-password-to-never-expire.md)
+[Ange att en enskild användares lösenord aldrig ska förfalla](../add-users/set-password-to-never-expire.md)(artikel)
 
-[Låt användare återställa sina egna lösenord](../add-users/let-users-reset-passwords.md)
+[Låt användare återställa sina egna lösenord](../add-users/let-users-reset-passwords.md) (artikel)
 
-[Skicka om en användares lösenord – hjälp för administratörer](../add-users/resend-user-password.md)
+[Skicka om en användares lösenord – hjälp för administratörer](../add-users/resend-user-password.md) (artikel)
