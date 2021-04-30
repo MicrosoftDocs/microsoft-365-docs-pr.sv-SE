@@ -1,0 +1,14 @@
+- name: Microsoft Viva Learning (förhandsversion)
+  href: index.md
+- name: Komma igång med Viva Learning (förhandsversion)
+  items:
+    - name: Översikt över Viva Learning (förhandsversion)
+      href: overview-viva-learning.md
+- name: Konfiguration och administration
+  items:
+    - name: Konfigurera i Teams administrationscenter
+      href: set-up-teams-admin-center.md
+    - name: Konfigurera utbildningsinnehållskällor
+      href: content-sources-365-admin-center.md
+    - name: Konfigurera SharePoint som en innehållskälla
+      href: configure-sharepoint-content-source.md
