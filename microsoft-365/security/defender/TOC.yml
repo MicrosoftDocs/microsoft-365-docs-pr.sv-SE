@@ -100,6 +100,24 @@
                   href: investigate-alerts.md
                 - name: Analysera användare
                   href: investigate-users.md
+                - name: Svara på din första incident
+                  items:
+                    - name: Introduktion
+                      href: first-incident-overview.md
+                    - name: Förbereda
+                      href: first-incident-prepare.md
+                    - name: Steg 1. Triage och analysera
+                      href: first-incident-analyze.md
+                    - name: Steg 2. Åtgärda
+                      href: first-incident-remediate.md
+                    - name: Steg 3. Granska
+                      href: first-incident-post.md
+                    - name: Ytterligare incidentexempel
+                      items:
+                        - name: Nätfiske-e-post
+                          href: first-incident-path-phishing.md
+                        - name: Identitet
+                          href: first-incident-path-identity.md
             - name: Få e-postaviseringar
               href: get-incident-notifications.md
         - name: Automatiska undersökningar och svar
