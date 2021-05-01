@@ -40,6 +40,8 @@
       href: ../admin/manage/remove-licenses-from-users.md
     - name: Flytta användare till en annan prenumeration
       href: subscriptions/move-users-different-subscription.md
+    - name: Hantera programlicenser från tredje part
+      href: licenses/manage-third-party-app-licenses.md
     - name: Hantera principer för automatiska anspråk
       href: licenses/manage-auto-claim-policies.md
     - name: Allmänt om prenumerationer och licenser

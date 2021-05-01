@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: noindex,nofollow
 description: Vi lanserar nya varningsprinciper för Microsoft Defender för Office 365. Vi tar även bort två gamla varningsprinciper som har ersatts av de nya.
-ms.openlocfilehash: 247b8c8be26016a8492f25243b8c5bcc555d35b3
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 7074002a78d6e776f24395bf6492177c1d789033
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760751"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086777"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Nya varningsprinciper i Microsoft Defender för Office 365
 
@@ -67,17 +67,17 @@ Följande tabell anger när nya varningsprinciper kommer att utlösa varningar f
 |:------------|:-----|
 | **E-postmeddelanden som innehåller en skadlig webbadress har tagits bort efter leverans** (ny) | Varningar kommer att utlösas från och med den 11 april 2021|
 | **E-postmeddelanden som innehåller en skadlig fil har tagits bort efter leverans** (ny) | Varningar kommer att utlösas från och med den 11 april 2021 |
-| **E-postmeddelande från en kampanj levererades och togs sedan bort** (new) | Varningar kommer att utlösas från och med den 30 april 2021|
-| **Skadliga e-postmeddelanden levererades och togs sedan bort** (ny) | Varningar kommer att utlösas från och med den 30 april 2021|
-| **E-postmeddelanden med nätfiske togs bort efter leverans** (existerande, kommer att tas bort)| Varningsprincipen kommer att tas bort den 30 april 2021. Se avsnittet [Vad du behöver göra för att förbereda dig på ändringarna](#what-you-need-to-do-to-prepare-for-these-changes).|
-| **E-postmeddelanden med skadlig programvara togs bort efter leverans** (existerande, kommer att tas bort) | Varningsprincipen kommer att tas bort den 30 april 2021. Se avsnittet [Vad du behöver göra för att förbereda dig på ändringarna](#what-you-need-to-do-to-prepare-for-these-changes). |
+| **E-postmeddelande från en kampanj levererades och togs sedan bort** (new) | Varningar kommer att utlösas från och med den 14 maj 2021|
+| **Skadliga e-postmeddelanden levererades och togs sedan bort** (ny) | Varningar kommer att utlösas från och med den 14 maj 2021|
+| **E-postmeddelanden med nätfiske togs bort efter leverans** (existerande, kommer att tas bort)| Varningsprincipen kommer att tas bort den 14 maj 2021. Se avsnittet [Vad du behöver göra för att förbereda dig på ändringarna](#what-you-need-to-do-to-prepare-for-these-changes).|
+| **E-postmeddelanden med skadlig programvara togs bort efter leverans** (existerande, kommer att tas bort) | Varningsprincipen kommer att tas bort den 14 maj 2021. Se avsnittet [Vad du behöver göra för att förbereda dig på ändringarna](#what-you-need-to-do-to-prepare-for-these-changes). |
 |||
 
-Ändringarna på allvarlighetsnivåer kommer att lanserar till alla organisationer den 30 april 2021.
+Ändringarna på allvarlighetsnivåer kommer att lanserar till alla organisationer den 14 maj 2021.
 
 ## <a name="how-this-will-affect-your-organization"></a>Hur kommer detta att påverka din organisation
 
-De nya varningarna kommer börja utlösa AIR-undersökningar i din organisation på datumen som angetts ovan. För att minska påverkan på säkerhetsorganisationer som har opererat med de två varningarna som nu ska tas bort kommer varningar som utlöses av de existerande varningsprinciperna *och* varningar som utlöses av de nya varningsprinciperna att ses samtidigt, mellan den 5 april 2021 och 30 april 2021. Det ger säkerhetsteamen tid till att hantera de nödvändiga ändringarna. För att hjälpa säkerhetsteamen med den ökade mängden varningar under denna korta tidsperiod kommer både existerande varningar och nya varningar att korreleras till samma AIR-undersökningar och korrelera till samma incident. Mer specifikt kommer det att inkludera följande beteenden för varningar, AIR-undersökningar och incidenter:
+De nya varningarna kommer börja utlösa AIR-undersökningar i din organisation på datumen som angetts ovan. För att minska påverkan på säkerhetsorganisationer som har opererat med de två varningarna som nu ska tas bort kommer varningar som utlöses av de existerande varningsprinciperna *och* varningar som utlöses av de nya varningsprinciperna att ses samtidigt, mellan den 5 april 2021 och 14 maj 2021. Det ger säkerhetsteamen tid till att hantera de nödvändiga ändringarna. För att hjälpa säkerhetsteamen med den ökade mängden varningar under denna korta tidsperiod kommer både existerande varningar och nya varningar att korreleras till samma AIR-undersökningar och korrelera till samma incident. Mer specifikt kommer det att inkludera följande beteenden för varningar, AIR-undersökningar och incidenter:
 
 - **Varningar**: Enligt design kommer du att se följande varningspar för befintliga och nya varningar:
 
@@ -109,11 +109,11 @@ Hur din organisation använder varningarna kommer att avgöra vilka förberedels
 
   - **E-postmeddelanden som innehåller skadlig kod har tagits bort efter leverans**
 
-- Gör ingenting. Existerande principvarningar kommer att inaktiveras den 30 april 2021.
+- Gör ingenting. Existerande principvarningar kommer att inaktiveras den 14 maj 2021.
 
 **Om du har initierat varningarna:**
 
-- Börja konsumera de nya varningarna som en del av dina arbetsflöden i väntan på de nya varningsprinciperna den 30 april 2021. Om du kör egen kod i ditt ärendesystem, har en e-postadress där e-postmeddelande med varningar mottas eller en lösning för säkerhetsinformation och händelsehantering som är beroende av varningsnamnet eller varningsprincipens ID (korrelationsID) måste du ändra på logiken för att tillgodose ändringen.
+- Börja konsumera de nya varningarna som en del av dina arbetsflöden i väntan på de nya varningsprinciperna den 14 maj 2021. Om du kör egen kod i ditt ärendesystem, har en e-postadress där e-postmeddelande med varningar mottas eller en lösning för säkerhetsinformation och händelsehantering som är beroende av varningsnamnet eller varningsprincipens ID (korrelationsID) måste du ändra på logiken för att tillgodose ändringen.
 
   > [!NOTE]
   > Informationen i varningarna, undersökningarna och incidenterna har inte ändrats. Faktum är att informationen har förbättrats med ytterligare detaljer om hoten som associeras till dem.
@@ -124,4 +124,4 @@ Hur din organisation använder varningarna kommer att avgöra vilka förberedels
 
   - **E-postmeddelanden som innehåller skadlig kod har tagits bort efter leverans**
 
-  Alternativt kan du lämna dessa varningsprinciper aktiverade tills vi tar bort dem den 30 april 2021.
+  Alternativt kan du lämna dessa varningsprinciper aktiverade tills vi tar bort dem den 14 maj 2021.
