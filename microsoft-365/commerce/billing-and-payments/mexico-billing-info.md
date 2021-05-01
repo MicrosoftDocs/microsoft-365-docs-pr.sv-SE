@@ -1,5 +1,5 @@
 ---
-title: Fakturerings information för Microsoft 365 för företag i Mexiko
+title: Faktureringsinformation för Microsoft 365 företag i Mexiko
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -12,56 +12,58 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- commerce
 search.appverid:
 - MET150
-description: Lär dig mer om information för Microsoft 365 för företag i Mexiko.
+description: Läs mer om information specifikt för Microsoft 365 för företag i Mexiko.
 ms.custom:
 - AdminSurgePortfolio
-- Commerce
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: jkinma
 monikerRange: o365-worldwide
-ms.openlocfilehash: ea6a60d205c7fbe91b35b22b7ec7b3ee51715444
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.date: 11/20/2020
+ms.openlocfilehash: ace8712718dc960f846bd366c8e8dbb7b074f428
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376299"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107188"
 ---
-# <a name="billing-information-for-microsoft-365-for-business-in-mexico"></a>Fakturerings information för Microsoft 365 för företag i Mexiko
+# <a name="billing-information-for-microsoft-365-for-business-in-mexico"></a>Faktureringsinformation för Microsoft 365 företag i Mexiko
 
-## <a name="1-where-can-i-get-an-invoice-for-my-microsoft-365-for-business-purchase"></a>1. var kan jag få en faktura för min Microsoft 365 för företag-köp?
+## <a name="1-where-can-i-get-an-invoice-for-my-microsoft-365-for-business-purchase"></a>1. Var kan jag få en faktura för mitt köp Microsoft 365 för företag?
 
-Din faktura skickas till e-postadressen för det registrerade fakturerings meddelandet 24 timmar efter att köpet bekräftats. Om du vill ladda ned fakturan i administrations centret för Microsoft 365 går du till sidan **betalnings**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">fakturor &-betalningar</a> .
+Din faktura skickas till e-postadressen för det registrerade faktureringsmeddelandet 24 timmar efter att köpet har bekräftats. Om du vill ladda ned din faktura Microsoft 365 administrationscentret går du till **sidan**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Faktureringsfakturor & betalningar.</a>
 
 > [!IMPORTANT]
-> Om du vill att fakturan ska ingå i din RFC måste du lägga till den före bekräftelsen.
+> Om du vill att fakturan ska inkludera din offert, måste du lägga till den innan du kan bekräfta köpet.
 
-## <a name="2-how-can-i-add-my-rfc-registro-federal-de-contribuyentes-to-the-invoice-i-get-for-the-purchase-of-microsoft-365-for-business"></a>2. Hur kan jag lägga till min RFC (registre Federal de Contribuyentes) i fakturan jag får för att köpa Microsoft 365 för företag?
+## <a name="2-how-can-i-add-my-rfc-registro-federal-de-contribuyentes-to-the-invoice-i-get-for-the-purchase-of-microsoft-365-for-business"></a>2. Hur lägger jag till min RFC (Registro Federal de Contribuyentes) på fakturan som jag får för köpet av Microsoft 365 för företag?
 
-### <a name="during-the-purchase-process-checkout"></a>Under inköps processen (utcheckning)
+### <a name="during-the-purchase-process-checkout"></a>Under köpet (till kassan)
 
-När du kommer till steg 4 under utcheckningen **. Betalning och fakturering** markerar du rutan för att ange en RFC. Det här steget är nödvändigt för att du ska kunna se det i din inköps faktura.
+När du går till kassan går du till steg **4. Betalning och fakturering**– markera rutan för att ange en RFC. Det här steget är nödvändigt så att det återspeglas på inköpsfakturan.
 
-### <a name="for-your-future-purchases"></a>För dina framtida inköp
+### <a name="for-your-future-purchases"></a>För framtida köp
 
-Du kan lägga till eller ändra din RFC så att informationen visas i framtida Microsoft 365 för företag-inköp. Om du vill lägga till eller ändra din RFC går du till sidan **fakturerings**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">konton</a> .
+Du kan lägga till eller ändra din offert så att informationen återspeglas i framtida Microsoft 365 för affärsköp. Om du vill lägga till eller ändra din offertförfrågan går du till **sidan**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Faktureringsfaktureringskonton.</a>
 
 > [!NOTE]
-> Om du befinner dig i ett månads abonnemang för återkommande eller årlig återspeglas den från den på fakturan.
+> Om du prenumererar på fakturering varje månad eller varje år visas tillägget eller ändringen av RFC på fakturan för nästa debitering.
 
-## <a name="3-can-i-add-or-modify-my-rfc-to-an-invoice-that-was-already-generated"></a>3. kan jag lägga till eller ändra min RFC till en faktura som redan har skapats?
+## <a name="3-can-i-add-or-modify-my-rfc-to-an-invoice-that-was-already-generated"></a>3. Kan jag lägga till eller ändra min offert på en faktura som redan har genererats?
 
-Det är viktigt att du lägger till eller ändrar din RFC innan du gör köpet. När vi har genererat din Microsoft 365 för företag-faktura kan du inte lägga till eller ändra RFC-informationen.
+Det är viktigt att du lägger till eller ändrar din offert innan du gör ditt köp. När vi har genererat Microsoft 365 för företag-faktura kan du inte lägga till eller ändra RFC-informationen.
 
-## <a name="4-why-dont-i-get-a-cfdi-comprobante-fiscal-digital-por-internet"></a>4. Varför får jag inget CFDI (Comprobante fiskal Digital por Internet)?
+## <a name="4-why-dont-i-get-a-cfdi-comprobante-fiscal-digital-por-internet"></a>4. Varför får jag inte en CFDI (Comprobante Fiscal Digital por Internet)?
 
-Microsoft Corporation, som skatt bosatt i USA, kan bara utfärda fakturor under jurisdiktions lagar och är inte förpliktigade att tillhandahålla en CFDI elektronisk faktura.
+Microsoft Corporation, som är bosatt i USA, kan endast utfärda fakturor enligt lagarna i jurisdiktionen och är inte förpliktigad att tillhandahålla en elektronisk CFDI-faktura.
 
-## <a name="5-is-the-invoice-i-receive-valid-for-my-accounting-operations-in-mexico"></a>5. är fakturan jag får giltig för mina redovisnings åtgärder i Mexiko?
+## <a name="5-is-the-invoice-i-receive-valid-for-my-accounting-operations-in-mexico"></a>5. Är fakturan jag får giltig för mina redovisningsåtgärder i Mexiko?
 
-En faktura som genereras av externa enheter (i det här fallet Microsoft Corporation) som innehåller respektive RFC är giltig i skatte syfte i Mexiko. (Vi rekommenderar att du rådfrågar din revisor för mer information).
+En faktura som genereras av externa enheter (i detta fall Microsoft Corporation) som inkluderar respektive RFC är giltig för skatteändamål i Mexiko. (Vi rekommenderar att du ger din revisor mer information).
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Visa din faktura](view-your-bill-or-invoice.md) (artikel) \
-[Förstå fakturan för Microsoft 365 för företag](understand-your-invoice2.md) (artikel)
+[Visa din räkning eller faktura](view-your-bill-or-invoice.md) (artikel)\
+[Förstå din faktura för Microsoft 365 för företag](understand-your-invoice2.md) (artikel)

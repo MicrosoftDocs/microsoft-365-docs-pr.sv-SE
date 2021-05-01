@@ -19,12 +19,12 @@ description: Under och efter en automatiserad undersökning i Microsoft 365 kan 
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ebdd25e9bddf53682f747fff7477d49dd1c94755
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b6ec188f37faeed283d49f68b0cb381fcb1af86e
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933499"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114210"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Information och resultat från en automatiserad undersökning i Microsoft 365
 
@@ -32,10 +32,10 @@ ms.locfileid: "51933499"
 - [Microsoft Defender för Office 365 abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-När en [automatiserad undersökning](office-365-air.md) sker i Microsoft Defender för [Office 365](defender-for-office-365.md)finns information om undersökningen tillgänglig under och efter den automatiska undersökningen. Om du har nödvändiga behörigheter kan du visa den informationen i Säkerhetscenter för Microsoft 365. Undersökningsinformation ger dig aktuell status och möjlighet att godkänna eventuella väntande åtgärder.
+När en [automatiserad undersökning](office-365-air.md) sker i [Microsoft Defender](defender-for-office-365.md)för Office 365 , finns det information om undersökningen tillgänglig under och efter den automatiska undersökningen. Om du har den behörighet som krävs kan du visa den informationen i Microsoft 365 säkerhetscenter. Undersökningsinformation ger dig aktuell status och möjlighet att godkänna eventuella väntande åtgärder.
 
 > [!TIP]
-> Titta på den nya sidan för enhetlig undersökning i Säkerhetscenter för Microsoft 365. Mer information finns i [(NYTT!) Sida för enhetlig undersökning](../defender/m365d-autoir-results.md#new-unified-investigation-page).
+> Titta på den nya sidan för enhetlig undersökning i Microsoft 365 säkerhetscenter. Mer information finns i [(NYTT!) Sida för enhetlig undersökning](../defender/m365d-autoir-results.md#new-unified-investigation-page).
 
 ## <a name="investigation-status"></a>Undersökningsstatus
 
@@ -46,7 +46,7 @@ Undersökningsstatusen anger förloppet för analysen och åtgärderna. När und
 |**Startar**|Undersökningen har utlösts och väntar på att starta.|
 |**Körs**|Undersökningsprocessen har startat och pågår. Det här tillståndet inträffar även [när väntande åtgärder](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) har godkänts.|
 |**Inga hot hittades**|Undersökningen har slutförts och inga hot (användarkonto, e-postmeddelande, URL eller fil) har identifierats. <p> **TIPS:** Om du misstänker att något har missats (t.ex. falskt negativa) kan du vidta åtgärder med hjälp av [Hotutforskaren.](threat-explorer.md)|
-|**Hot hittades**|Den automatiska undersökningen hittade problem, men det finns inga specifika åtgärdsåtgärder för att lösa problemen. <p> Statusen **Hot hittades** kan uppstå när någon typ av användaraktivitet har identifierats men inga rensningsåtgärder är tillgängliga. Några exempel är några av följande användaraktiviteter: <br/>- En [DLP-händelse (skydd](../../compliance/data-loss-prevention-policies.md) mot dataförlust)<br/>- Ett e-postmeddelande som skickar avvikande avvikelse<br/>- Skickad skadlig programvara<br/>- Skickad phish <p> Undersökningen hittade inga skadliga URL:er, filer eller e-postmeddelanden för att åtgärda och ingen postlådeaktivitet för att åtgärda, till exempel inaktivera regler för vidarebefordran eller delegering. <p> **TIPS:** Om du misstänker att något har missats (t.ex. falskt negativa) kan du undersöka och vidta åtgärder med hjälp av [Hotutforskaren.](threat-explorer.md)|
+|**Hot hittades**|Den automatiska undersökningen hittade problem, men det finns inga specifika åtgärdsåtgärder för att lösa problemen. <p> Statusen **Hot hittades** kan uppstå när någon typ av användaraktivitet har identifierats men inga rensningsåtgärder är tillgängliga. Några exempel är några av följande användaraktiviteter: <br/>- En [dataförlustskyddshändelse](../../compliance/dlp-learn-about-dlp.md)<br/>- Ett e-postmeddelande som skickar avvikande avvikelse<br/>- Skickad skadlig programvara<br/>- Skickad phish <p> Undersökningen hittade inga skadliga URL:er, filer eller e-postmeddelanden för att åtgärda och ingen postlådeaktivitet för att åtgärda, till exempel inaktivera regler för vidarebefordran eller delegering. <p> **TIPS:** Om du misstänker att något har missats (t.ex. falskt negativa) kan du undersöka och vidta åtgärder med hjälp av [Hotutforskaren.](threat-explorer.md)|
 |**Avslutas av system**|Undersökningen har stoppats. En undersökning kan avbrytas av flera orsaker: <br/>- Undersökningens väntande åtgärder har upphört att gälla. Väntande åtgärder tar slut när du väntar på godkännande för en vecka.<br/>- Det finns för många åtgärder. Om till exempel för många användare klickar på skadliga URL-adresser kan det överskrida undersökningens möjlighet att köra alla analysverktyg, så undersökningen pausar.<p> **TIPS:** Om en undersökning stannar innan åtgärder vidtas kan du använda [Hotutforskaren](threat-explorer.md) för att hitta och åtgärda hot.|
 |**Väntande åtgärd**|Undersökningen har hittat ett hot, till exempel en skadlig e-post, en skadlig URL-adress eller en riskabel postlåda samt en åtgärd för att åtgärda att hoten [väntar på godkännande.](air-review-approve-pending-completed-actions.md) <p> Statusen **Väntande** åtgärd utlöses när ett hot med en motsvarande åtgärd hittas. Listan med väntande åtgärder kan dock öka i och med att en undersökning körs. Visa undersökningsinformation för att se om andra objekt fortfarande är slutförda.|
 |**Åtgärdat**|Undersökningen slutfördes och alla åtgärder godkänts (antecknas som helt åtgärdade). <p> **Obs!** Godkända åtgärdsåtgärder kan ha fel som hindrar att åtgärderna vidtas. Oavsett om åtgärdsåtgärder slutförs ändras inte undersökningsstatusen. Visa undersökningsinformation.|
@@ -58,7 +58,7 @@ Undersökningsstatusen anger förloppet för analysen och åtgärderna. När und
 
 ## <a name="view-details-of-an-investigation"></a>Visa information om en undersökning
 
-1. Gå till Säkerhetscenter för Microsoft 365 ( <https://security.microsoft.com> ) och logga in.
+1. Gå till Microsoft 365 ( ) <https://security.microsoft.com> och logga in.
 2. Välj Åtgärdscenter i **navigeringsfönstret.**
 3. Välj en **åtgärd på flikarna** **Väntande** eller Historik. Den utfällna rutan öppnas.
 4. Välj Öppna undersökningssida i den **utfällfällade fönsterrutan**. 
@@ -68,7 +68,7 @@ Undersökningsstatusen anger förloppet för analysen och åtgärderna. När und
 
 Vissa typer av aviseringar utlöser automatisk undersökning i Microsoft 365. Mer information finns i [aviseringsprinciper som utlöser automatiska undersökningar.](office-365-air.md#which-alert-policies-trigger-automated-investigations)
 
-1. Gå till Säkerhetscenter för Microsoft 365 ( <https://security.microsoft.com> ) och logga in.
+1. Gå till Microsoft 365 ( ) <https://security.microsoft.com> och logga in.
 2. Välj Åtgärdscenter i **navigeringsfönstret.**
 3. Välj en **åtgärd på flikarna** **Väntande** eller Historik. Den utfällna rutan öppnas.
 4. Välj Öppna undersökningssida i den **utfällfällade fönsterrutan**. 
@@ -83,7 +83,7 @@ Vissa typer av aviseringar utlöser automatisk undersökning i Microsoft 365. Me
 
 - Antalet e-postmeddelanden som visas  längst ned på fliken E-post i e-postkluster som visas och antalet e-postmeddelanden som visas i Utforskaren speglar e-postmeddelanden som tagits emot efter undersökningens första analys.
 
-  Ett e-postkluster som visar den ursprungliga mängden 10 e-postmeddelanden skulle alltså visa en e-postlista på totalt 15 när ytterligare fem e-postmeddelanden kommer mellan undersökningsanalysfasen och när administratören granskar undersökningen. På samma sätt kan gamla undersökningar börja visa högre antal än vad Explorer-frågor visar, eftersom data i Microsoft Defender för Office 365 abonnemang 2 förfaller efter sju dagar för provperioder och efter 30 dagar för betalda licenser.
+  Ett e-postkluster som visar den ursprungliga mängden 10 e-postmeddelanden skulle alltså visa en e-postlista på totalt 15 när ytterligare fem e-postmeddelanden kommer mellan undersökningsanalysfasen och när administratören granskar undersökningen. På samma sätt kan gamla undersökningar börja visa högre antal än vad Frågorna i Utforskaren visar, eftersom data i Microsoft Defender för Office 365 abonnemang 2 förfaller efter sju dagar för provperioder och efter 30 dagar för betalda licenser.
 
   Både antal historiska och aktuella antal i olika vyer utförs för att ange e-post påverkan vid undersökningsstiden och den aktuella påverkan fram till den tidpunkt då reparationen körs.
 

@@ -10,16 +10,16 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Lär dig planera för säkerhet och sekretess i Microsoft Viva Topics
-ms.openlocfilehash: 91d0d5c25502a1938976b9457f8a5dafc6ab957b
-ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
+ms.openlocfilehash: 587b6a2921e7d1a3cc8d4ab663ff199fdd36871d
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "50994552"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114068"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Säkerhet och sekretess för Microsoft Viva Topics
 
-Ämnen använder befintliga innehållssäkerhetsfunktioner i Microsoft 365, tillsammans med administrativa kontroller, för att styra vilket AI-genererat innehåll som visas för användarna i organisationen. Det är kombinationen av säkerhetsinställningarna för Microsoft 365 (behörigheter till webbplatser, filer och mappar) och administratörsinställningarna för ämnen som bestämmer vad en viss användare kan se i avsnitten.
+Ämnen använder befintliga innehållssäkerhetsfunktioner i Microsoft 365, tillsammans med administrativa kontroller, för att styra vilket AI-genererat innehåll som visas för användarna i organisationen. Det är kombinationen av de Microsoft 365 -säkerhetsinställningarna (behörigheter till webbplatser, filer och mappar) och administratörsinställningarna för ämnen som bestämmer vad en viss användare kan se i avsnitten.
 
 När du ställer in ämnen ändras inte befintliga åtkomstkontroller för innehåll i din organisation. Användarna kan bara se det som de redan har åtkomst till.
 
@@ -60,13 +60,13 @@ I följande tabell beskrivs vad användare – ämnesanvändare, deltagare och k
 
 ## <a name="best-practices"></a>Metodtips
 
-Ämnen presenterar information för användare baserat på deras befintliga behörigheter till innehåll. I Microsoft 365 finns en mängd olika sätt att säkerställa att känsligt innehåll begränsas till rätt användare. Förutom standardbehörigheter för grupp eller webbplats kan du använda [känslighetsetiketter](../compliance/sensitivity-labels.md) eller skydd mot [dataförlust](../compliance/data-loss-prevention-policies.md) för att begränsa åtkomst till innehåll och åtkomstgranskningar för att regelbundet granska användaråtkomst till känslig information. [](/azure/active-directory/governance/access-reviews-overview)
+Ämnen presenterar information för användare baserat på deras befintliga behörigheter till innehåll. Microsoft 365 finns en mängd olika sätt att säkerställa att känsligt innehåll är begränsat till rätt användare. Förutom standardbehörigheter för grupp eller webbplats kan du använda [känslighetsetiketter](../compliance/sensitivity-labels.md) eller skydd mot [dataförlust](../compliance/dlp-learn-about-dlp.md) för att begränsa åtkomst till innehåll och åtkomstgranskningar för att regelbundet granska användaråtkomst till känslig information. [](/azure/active-directory/governance/access-reviews-overview)
 
 Vi rekommenderar att du använder de här verktygen för att säkerställa att din innehållsbehörighet anges på rätt sätt i din organisation. Ämnesupplevelser kan sedan ge användarna användbar och lämplig information.
 
 Om det finns ämnen som du vill utesluta helt från ämnesupplevelser kan du även:
 
-- [Undanta känsliga SharePoint-webbplatser från identifiering av ämnen.](topic-experiences-discovery.md#select-sharepoint-topic-sources) Innehållet på de här webbplatserna visas inte i ämnesupplevelser.
+- [Undanta känsliga SharePoint från identifiering av ämnen.](topic-experiences-discovery.md#select-sharepoint-topic-sources) Innehållet på de här webbplatserna visas inte i ämnesupplevelser.
 
 - [Utesluta ämnen efter namn](topic-experiences-discovery.md#exclude-topics-by-name). Ämnen som uttryckligen utesluts visas inte i ämnesupplevelser.
 

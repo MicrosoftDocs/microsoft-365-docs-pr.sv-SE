@@ -15,16 +15,19 @@ ms.collection:
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: tugu
 search.appverid:
 - MET150
 description: Lär dig hur du uppdaterar dina faktureringsadresser för Microsoft 365 för företag. Du kan också uppdatera e-postadressen som du får faktureringsaviseringar från.
-ms.openlocfilehash: 5d6e9eac3ef1caccb2672bfc7f46e8e5b9ac3721
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.date: 04/07/2021
+ms.openlocfilehash: ea212d79ef28d5d387bdb5503c267d7cd5113786
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615417"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107200"
 ---
 # <a name="change-your-billing-addresses"></a>Ändra dina faktureringsadresser
 
@@ -122,7 +125,7 @@ Mer information om fakturan finns i Visa din [faktura och](view-your-bill-or-inv
 
 Din organisations faktureringsaviseringar skickas som standard till Microsofts e-postadress och den alternativa e-postadressen för varje global administratör och faktureringsadministratör i organisationen. Alla administratörer kan ändra sin alternativa e-postadress genom att uppdatera profilinformationen.
   
-1. Logga in på Microsoft 365 med ditt arbets- eller skolkonto som global administratör. [Så här loggar du in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Logga in på Microsoft 365 ditt arbets- eller skolkonto som global administratör. [Så här loggar du in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Välj **användarikonen** och välj sedan **Mitt konto.**
   

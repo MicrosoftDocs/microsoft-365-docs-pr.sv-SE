@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 15ee02d90e81c48bf5ec718e669bf8f88f6424ff
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 12ff9834e2853c1745c20847f869bc2cba4e082e
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934783"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114276"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Distribuera Microsoft Defender för Slutpunkt på Linux med Ansible
 
@@ -49,13 +49,13 @@ Innan du börjar kan du gå [till huvudsidan för Defender](microsoft-defender-e
 
 För ansible-distribution måste du dessutom känna till Ansible-administrationsuppgifter, ha Ansible konfigurerat och veta hur du distribuerar spelböcker och uppgifter. Det finns många sätt att slutföra samma aktivitet på ansible. De här instruktionerna förutsätter tillgänglighet för ansible-moduler som stöds, till exempel *apt* och *inte arkiverade för* distribution av paketet. Din organisation kan använda ett annat arbetsflöde. Mer information finns [i dokumentationen till Ansible.](https://docs.ansible.com/)
 
-- Ansible måste vara installerat på minst en dator (vi kallar det för primär dator).
-- SSH måste konfigureras för ett administratörskonto mellan den primära datorn och alla klienter, och det rekommenderas att konfigureras med offentlig nyckelautentisering.
-- Följande programvara måste vara installerad på alla klienter:
+- Ansible måste installeras på minst en dator (Ansible anropar den här kontrollnoden).
+- SSH måste konfigureras för ett administratörskonto mellan kontrollnoden och alla hanterade noder (enheter som har Defender för Slutpunkt installerat på dem) och vi rekommenderar att du konfigurerar med offentlig nyckelautentisering.
+- Följande programvara måste installeras på alla hanterade noder:
   - böjning
   - python-apt
 
-- Alla värdar måste visas i följande format i `/etc/ansible/hosts` den eller relevanta filen:
+- Alla hanterade noder måste visas i följande format i `/etc/ansible/hosts` den eller relevanta filen:
 
     ```bash
     [servers]
@@ -73,11 +73,11 @@ För ansible-distribution måste du dessutom känna till Ansible-administrations
 
 Ladda ned introduktionspaketet från Microsoft Defender Säkerhetscenter:
 
-1. I Microsoft Defender Säkerhetscenter går du till **Inställningar > Enhetshantering > Onboarding**.
+1. I Microsoft Defender Säkerhetscenter går du till Inställningar > **på Enhetshantering > Onboarding.**
 2. I den första listrutan väljer du **Linux Server** som operativsystem. I den andra nedrullningsmenyn väljer du **Det konfigurationshanteringsverktyg du** föredrar i Linux som distributionsmetod.
 3. Välj **Hämta introduktionspaket**. Spara filen som WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Skärmbild av Microsoft Defender Säkerhetscenter](images/atp-portal-onboarding-linux-2.png)
+    ![Microsoft Defender Säkerhetscenter skärmbild](images/atp-portal-onboarding-linux-2.png)
 
 4. Kontrollera att filen finns i kommandotolken. Extrahera innehållet i arkivet:
 

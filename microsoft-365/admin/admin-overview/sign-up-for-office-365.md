@@ -12,45 +12,44 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - TRN_SMB
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - okr_SMB
 - AdminSurgePortfolio
+- commerce_signup
+- PPM_pablom
+ms.reviewer: seemg
 search.appverid:
 - MET150
-- MOE150
-- BEA160
-- GEA150
-ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
-description: 'Förstå vad du behöver veta innan du går igenom registreringsprocessen för Office 365. '
-ms.openlocfilehash: f2a4f555540b801441644af28435170f82229909
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+description: Förstå vad du behöver veta innan du går igenom registreringsprocessen för Office 365.
+ms.date: 03/17/2021
+ms.openlocfilehash: 37cbe20a5cc1a7506e8db218c3e9ffe2b4e64478
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023923"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107032"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Så här registrerar du dig – hjälp för administratörer
 
 ::: moniker range="o365-worldwide"
 
-Registrera dig för Microsoft 365 för företag så att din grupp kan börja använda de senaste versionerna av Word, Excel, PowerPoint och andra Office-program.
+Registrera dig för Microsoft 365 för företag så att din grupp kan börja använda de senaste versionerna av Word, Excel, PowerPoint och andra Office program.
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Registrera dig för Microsoft 365 för företag så att din grupp kan börja använda de senaste versionerna av Word, Excel, PowerPoint och andra Office-program.
+Registrera dig för Microsoft 365 för företag så att din grupp kan börja använda de senaste versionerna av Word, Excel, PowerPoint och andra Office program.
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Office 365 som drivs av 21Vianet har utformats för att uppfylla behoven för säkra, tillförlitliga och skalbara molntjänster i Kina. Den här tjänsten använder teknik som Microsoft har licens för 21Vianet. Microsoft sköter inte själva tjänsten. 21Vianet sköter, tillhandahåller och hanterar leveransen av tjänsten. 21Vianet är den största leverantör av internetdatacentertjänster i Kina som tillhandahåller värdtjänster, hanterade nätverkstjänster och infrastrukturtjänster för molnbaserad databehandling. Genom licensiering av Microsoft-tekniker driver 21Vianet lokala Microsoft-datacenter för att ge dig möjlighet att använda Microsoft-tjänster och samtidigt behålla dina data i Kina. 21Vianet tillhandahåller även dina prenumerations- och faktureringstjänster samt support.
+Office 365 som drivs av 21Vianet har utformats för att uppfylla behoven för säkra, tillförlitliga och skalbara molntjänster i Kina. Den här tjänsten använder teknik som Microsoft har licens för 21Vianet. Microsoft sköter inte själva tjänsten. 21Vianet sköter, tillhandahåller och hanterar leveransen av tjänsten. 21Vianet är den största leverantör av internetdatacentertjänster i Kina som tillhandahåller värdtjänster, hanterade nätverkstjänster och infrastrukturtjänster för molnbaserad databehandling. Genom licensiering av Microsoft-tekniker driver 21Vianet lokala Microsoft-datacenter för att ge dig möjlighet att använda Microsoft-tjänster och samtidigt lagra dina data i Kina. 21Vianet tillhandahåller även dina prenumerations- och faktureringstjänster samt support.
   
 > [!NOTE]
 > Dessa tjänster omfattas av den kinesiska lagstiftningen.
@@ -66,7 +65,7 @@ Registrera dig för Office 365 som drivs av 21Vianet så att din grupp kan börj
 
 Innan du köper bör du tänka över det abonnemang du registrerar dig för. På så sätt undviker du problem när organisationen växer.
 
-Titta på en kort video om att välja ett Microsoft 365 för företag-abonnemang.<br><br>
+Titta på en kort video om att välja Microsoft 365 för företag-abonnemang.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
@@ -120,9 +119,9 @@ Du behöver inte avbryta utvärderingsversionen. Om du inte köper utvärderings
   - **E-postadress** och **telefonnummer** så att vi kan kontakta dig angående prenumerationen om så behövs. Om du till exempel glömt ditt lösenord använder vi informationen för att skicka dig ett tillfälligt lösenord. Vi skickar också faktureringsinformation till den e-postadress du anger.
 
     > [!NOTE]
-    > Den e-postadress du anger här skiljer sig från din Microsoft 365 e-postadress (ditt inloggningsnamn, nedan). Eftersom det är hit vi skickar din faktureringsinformation rekommenderar vi att du använder en e-postadress som är lämplig för att ta emot affärs-e-post.
+    > Den e-postadress du anger här skiljer sig från Microsoft 365 e-postadress (ditt inloggningsnamn, nedan). Eftersom det är hit vi skickar din faktureringsinformation rekommenderar vi att du använder en e-postadress som är lämplig för att ta emot affärs-e-post.
   
-- **Ett inloggningsnamn (användar-ID):** Detta användar-ID blir din första Microsoft 365-e-postadress, bara för att komma igång snabbt.
+- **Ett inloggningsnamn (användar-ID):** Det här användar-ID:t blir Microsoft 365 första e-postadressen, bara för att komma igång snabbt.
 
     Detta användar-ID är den e-postadress som du använder för att logga in. Om namnet på företaget är till exempel Fourth Coffee kan du välja rob@fourthcoffee.onmicrosoft.com som användar-ID.
 
@@ -137,4 +136,4 @@ Du behöver inte avbryta utvärderingsversionen. Om du inte köper utvärderings
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Utbildningsvideor om Microsoft 365 för företag](../../business-video/index.yml) (länkar)
+[Microsoft 365 om utbildningsvideor för företag](../../business-video/index.yml) (länkar)

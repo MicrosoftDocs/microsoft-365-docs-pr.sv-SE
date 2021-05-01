@@ -14,17 +14,20 @@ ms.collection:
 - Adm_O365
 search.appverid:
 - MET150
-description: Läs mer om registreringsnummer och undergranskningsmeddelanden när du köper Microsofts produkter eller tjänster.
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
-ms.openlocfilehash: 9f6489425a924c15d1a5cddb8c9a7d3d7812e5f0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: drjones
+description: Läs mer om registreringsnummer och undergranskningsmeddelanden när du köper Microsofts produkter eller tjänster.
+ms.date: 03/17/2021
+ms.openlocfilehash: 25302ce9481fba146d4fcda5fe72c31b5126fd08
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930239"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107406"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>Om registreringsnummer och under Granska aviseringar
 

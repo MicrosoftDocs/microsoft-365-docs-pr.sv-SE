@@ -12,21 +12,23 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_NonTOC
-- commerce
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 - GEA150
-ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
 description: Lär dig hur du skickar din Fapiao-begäran till 21Vianets Fapiao-hanteringssystem när du har gjort en betalning i Office 365 som drivs av 21Vianet i Kina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: d9f75dfd00bb547e9d2e0f53826e5bc50926de39
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.date: 03/30/2021
+ms.openlocfilehash: 1f2dec1ca224b7f8c6c22d5d9d0d2a0cac8630ea
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470959"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107466"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>Ansök om en Fapiao för Office 365 som drivs av 21Vianet
 
@@ -38,18 +40,18 @@ Du kan skicka din Fapiao-begäran till 21Vianets Fapiao-hanteringssystem ungefä
 
 Det finns två sätt att ansöka om en Fapiao:
   
-1. När du har gjort en betalning på webbplatsen För Office 365 som drivs av 21Vianet får du en orderbekräftelse via e-post med ditt ordernummer och en länk till Fapiao-hanteringssystemet. Du kan använda länken i e-postmeddelandet för att skapa ett konto i <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianets informationshanteringssystem Fapiao.</a>
+1. När du har gjort en betalning på webbplatsen Office 365 som drivs av 21Vianet får du en orderbekräftelse via e-post som innehåller ditt ordernummer och en länk till Fapiao-hanteringssystemet. Du kan använda länken i e-postmeddelandet för att skapa ett konto i <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianets informationshanteringssystem Fapiao.</a>
 
     Eller
 
 2. Du kan ansöka om en Fapiao från <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret.</a>
 
-    ![Sidan Fakturor i administrationscentret för Microsoft 365.](../../media/a6e3b953-abd4-46aa-a910-08c517915a21.png)
+    ![Sidan Fakturor i Microsoft 365 administrationscentret.](../../media/a6e3b953-abd4-46aa-a910-08c517915a21.png)
   
 ## <a name="step-2-register-with-the-21vianet-fapiao-management-system"></a>Steg 2: Registrera dig med 21Vianet Fapiao-hanteringssystemet
 
 > [!NOTE]
-> Du kan använda samma e-postnamn och lösenord som Office 365-kontot, eller så kan du använda något annat.
+> Du kan använda samma e-postnamn och lösenord Office 365 konto, eller så kan du använda något annat.
   
 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianets fapiaoinformationssystem</a>.
 

@@ -12,18 +12,21 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- commerce
-- Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- commerce_subscriptions
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: Lär dig hur du hanterar kostnadsfria registreringsprenumerationer för självbetjäning för din organisation.
-ms.openlocfilehash: 5910ed5d65f93a4dab15c681610d4d59d0427fb0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/17/2021
+ms.openlocfilehash: 64648151d7761bd8bb0d2301d59fb093de98b127
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920174"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107622"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Hantera prenumerationer på självbetjäning
 
@@ -57,4 +60,4 @@ Du använder cmdleten [**Set-MsolCompanySettings**](/powershell/module/msonline/
 
 ## <a name="i-have-a-self-service-sign-up-subscription-that-blocks-directory-deletion"></a>Jag har en prenumeration med självbetjäning som blockerar katalogborttagning
 
-Självbetjäning för registrering av produkter som enskilda användare kan registrera sig för skapar även en gästanvändare för autentisering i din Azure AD-katalog. För att undvika dataförlust blockerar dessa självbetjäningsprodukter katalogborttagningar tills de helt tas bort från katalogen. De kan bara tas bort av Azure AD-administratören. Mer information finns i Ta [bort en katalog i Azure Active Directory.](/azure/active-directory/users-groups-roles/directory-delete-howto)
+Självbetjäning för registrering av produkter som enskilda användare kan registrera sig för skapar även en gästanvändare för autentisering i din Azure AD-katalog. För att undvika dataförlust blockerar dessa självbetjäningsprodukter katalogborttagningar tills de helt tas bort från katalogen. De kan bara tas bort av Azure AD-administratören. Mer information finns i Ta [bort en katalog i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-delete-howto).

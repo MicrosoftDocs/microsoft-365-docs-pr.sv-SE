@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du distribuerar team med en grundläggande nivå av skydd.
-ms.openlocfilehash: 728a41bd521ed32c57c981be576e46eaee344099
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: db1a58fd06a62240cbcfcc74f83ba6196f33df80
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222749"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114300"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Konfigurera teams med grundläggande skydd
 
@@ -96,7 +96,7 @@ Microsoft 365 tillhandahåller fler metoder för att skydda innehållet. Överv�
 
 - Låt gästanvändaren godkänna [användningsvillkor](/azure/active-directory/conditional-access/terms-of-use).
 - Konfigurera en [princip om tidsgräns för sessioner](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) för gäster.
-- Skapa [känslig informationstyper](../compliance/sensitive-information-type-learn-about.md) och Använd [skydd mot dataförlust](../compliance/data-loss-prevention-policies.md) för att ange principer för åtkomst av känslig information.
+- Skapa [känslig informationstyper](../compliance/sensitive-information-type-learn-about.md) och Använd [skydd mot dataförlust](../compliance/dlp-learn-about-dlp.md) för att ange principer för åtkomst av känslig information.
 
 ## <a name="see-also"></a>Se även
 

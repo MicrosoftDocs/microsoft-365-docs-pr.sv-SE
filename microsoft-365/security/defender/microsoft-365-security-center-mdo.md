@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender för Office 365 i Microsoft 365 Säkerhetscenter
 description: Läs om ändringar från Säkerhets- och efterlevnadscenter för Office 365 till Microsoft 365 Säkerhetscenter.
-keywords: Microsoft 365-säkerhet, Komma igång med Microsoft 365 säkerhetscenter, Microsoft Defender för Office 365, Microsoft Defender för slutpunkt, MDO, MDE, ett fönster av glas, ny säkerhetsportal, nya Defender-säkerhetsportalen
+keywords: 'Microsoft 365 säkerhet: Komma igång med säkerhetscentret i Microsoft 365, Microsoft Defender för Office 365, Microsoft Defender för slutpunkt, MDO, MDE, en fönsterruta av glas, ny säkerhetsportal, den nya säkerhetsportalen för Defender'
 ms.date: 02/21/2021
 ms.author: tracyp
 author: msfttracyp
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: b5decd562509d134899b85b380791087a913cd58
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+ms.openlocfilehash: a0ab671f879119c1ab490bcb726f08224e59bfdd
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943071"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114418"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft Defender för Office 365 i Microsoft 365 Säkerhetscenter
 
@@ -66,7 +66,7 @@ Titta också i avsnittet **Relaterad information** längst ned i den här artike
 > Microsoft 365 säkerhetsportalen (https://security.microsoft.com) kombinerar säkerhetsfunktioner i https://securitycenter.windows.com och https://protection.office.com. Vad som visas beror dock på din prenumeration. Om du bara har Microsoft Defender för Office 365 Abonnemang 1 eller 2, som fristående prenumerationer, visas inte funktioner för säkerhet för slutpunkter och Defender för Office Abonnemang 1-kunder, ser inte objekt som hotanalys.
 
 > [!TIP]
->  Alla Exchange Online Protection-funktioner (EOP) kommer att ingå i Microsoft 365 säkerhetscenter, eftersom EOP är en av grundelementen i Defender för Office 365.
+>  Alla Exchange Online Protection (EOP) ingår i säkerhetscentret i Microsoft 365, eftersom EOP är en av grundelementen i Defender för Office 365.
 
 ## <a name="microsoft-365-security-center-home-page"></a>Startsida för Microsoft 365 Säkerhetscenter
 
@@ -74,7 +74,7 @@ Startsidan på portalen visar:
 
 - Secure Score-betyg
 - antalet användare och enheter som är i riskabelt
-- listor över aktiva incidenter
+- aktiv incidentkö
 - Listor över privilegierade OAuth-appar
 - hälsodata för enheter
 - twitter-inlägg från Microsofts twitter-feed för säkerhetsinformation

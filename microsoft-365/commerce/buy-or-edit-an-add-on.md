@@ -14,17 +14,20 @@ ms.collection:
 - Adm_O365
 search.appverid:
 - MET150
-description: Läs om hur du köper och hanterar tillägg för din Microsoft 365 för företag-prenumeration.
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- Commerce
-ms.openlocfilehash: b470fb727ed55ba066cd0371e2e707c72b50ae99
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: jkinma
+description: Läs om hur du köper och hanterar tillägg för din Microsoft 365 för företag-prenumeration.
+ms.date: 04/02/2021
+ms.openlocfilehash: c0b5a76f8690c64723782640738ac3817bc64714
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576931"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107442"
 ---
 # <a name="buy-or-manage-add-ons"></a>Köp eller hantera tilläggsprogram
 
@@ -43,7 +46,7 @@ Du måste vara global administratör eller faktureringsadministratörer för att
 
 Använd följande steg för att hitta och köpa tillägg. Listan innehåller bara tillägg som är tillgängliga för dig. Den här listan baseras på dina aktiva prenumerationer och andra befintliga tillägg som du redan har. Om ett tillägg inte finns med i listan kan du inte köpa det.
 
-Mer information om Skype för företag-tillägg finns i Licensiering för [Skype för företag- och Microsoft Teams-tillägg.](/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing)
+Mer information Skype för företag tillägg finns i Skype för företag [och Microsoft Teams tilläggslicensiering.](/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing)
 
 1. I administrationscentret går du  till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Faktureringsköpstjänster.</a>
 2. Längst ned på **sidan Köp** tjänster, i avsnittet Tillägg, hittar du tillägget som du vill köpa och väljer **Information.** 

@@ -19,12 +19,12 @@ ms.custom:
 description: Administratörer kan ta reda på hur de använder portalen för inskickade innehåll i Säkerhets- och efterlevnadscenter för & för att skicka misstänkta e-postmeddelanden, misstänkta nätfiskemeddelanden, skräppost och andra potentiellt skadliga meddelanden, URL:er och filer till Microsoft för genomsökning.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e0975d5b6c2d29c94a30f7bbc703221b80217761
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: d0b91808aa9008f467f66b8200f2c05a120fbcd9
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599881"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107236"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Använd administrationsinskick för att skicka misstänkt skräppost, nättr ut, URL:er och filer till Microsoft
 
@@ -35,7 +35,7 @@ ms.locfileid: "51599881"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 
 
-I Microsoft 365-organisationer med postlådor i Exchange Online kan administratörer använda portalen för inskickade meddelanden i säkerhets- och efterlevnadscentret för & för att skicka e-postmeddelanden, URL:er och bifogade filer till Microsoft för genomsökning.
+I Microsoft 365 organisationer med postlådor i Exchange Online kan administratörer använda portalen för inskickade meddelanden i säkerhets- och efterlevnadscentret för & för att skicka e-postmeddelanden, URL:er och bifogade filer till Microsoft för genomsökning.
 
 När du skickar ett e-postmeddelande får du:
 
@@ -57,7 +57,7 @@ Andra sätt att skicka e-postmeddelanden, URL:er och bifogade filer till Microso
 
   - **Organisationshantering** eller **Säkerhetsläsare** i [Säkerhets- & Säkerhets- och efterlevnadscenter.](permissions-in-the-security-and-compliance-center.md)
 
-  - **Organisationshantering** i [Exchange Online.](/Exchange/permissions-exo/permissions-exo#role-groups)
+  - **Organisationshantering** i [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
     Observera att medlemskap i den här rollgruppen krävs för att [visa användarinskick till den anpassade postlådan enligt](#view-user-submissions-to-the-custom-mailbox) beskrivningen längre fram i den här artikeln.
 
@@ -73,12 +73,12 @@ Andra sätt att skicka e-postmeddelanden, URL:er och bifogade filer till Microso
 
 1. Välj **E-post** i avsnittet **Objekttyp.** Använd **något av följande** alternativ i avsnittet Överföringsformat:
 
-   - **Nätverksmeddelande-ID:** Det här är ett GUID-värde som är tillgängligt i rubriken **X-MS-Exchange-Organization-Network-Message-Id** i meddelandet eller i **rubriken X-MS-Office365-Filtering-Correlation-Id** i meddelanden i karantän.
+   - **Nätverksmeddelande-ID:** Det här är ett GUID-värde som är tillgängligt i rubriken **X-MS-Exchange-Organization-Network-Message-Id** i meddelandet eller i rubriken **X-MS-Office365-Filtering-Correlation-Id** i karantänmeddelanden.
 
    - **Fil:** Klicka på **Välj fil**. Leta rätt på och välj .eml- eller .msg-filen i dialogrutan som öppnas och klicka sedan på **Öppna**.
 
    > [!NOTE]
-   > Möjligheten att skicka meddelanden som gamla som 30 dagar har tillfälligt stängts av för Defender för Office 365-kunder. Administratörer kan bara gå tillbaka 7 dagar.
+   > Möjligheten att skicka meddelanden som gamla som 30 dagar har tillfälligt stängts av för Defender för Office 365 kunder. Administratörer kan bara gå tillbaka 7 dagar.
 
 2. I avsnittet **Mottagare** anger du en eller flera mottagare som du vill köra en principkontroll mot. Principkontrollen avgör om förbikoppling av e-post beror på användar- eller organisationsprinciper.
 
@@ -90,7 +90,7 @@ Andra sätt att skicka e-postmeddelanden, URL:er och bifogade filer till Microso
 
 4. När du är klar klickar du på **skicka-knappen.**
 
-   ![Exempel på URL-inskickning](../../media/submission-flyout-email.PNG)
+   ![Exempel på ny URL-inskickning](../../media/submission-flyout-email.PNG)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Skicka en misstänkt URL till Microsoft
 
@@ -104,7 +104,7 @@ Andra sätt att skicka e-postmeddelanden, URL:er och bifogade filer till Microso
 
 3. När du är klar klickar du på **skicka-knappen.**
 
-   ![Exempel på e-postinskickning](../../media/submission-url-flyout.png)
+   ![Exempel på ny e-postinskickning](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>Skicka en misstänkt fil till Microsoft
 
@@ -120,7 +120,7 @@ Andra sätt att skicka e-postmeddelanden, URL:er och bifogade filer till Microso
 
 4. När du är klar klickar du på **skicka-knappen.**
 
-   ![Exempel på inskickade bifogade filer](../../media/submission-file-flyout.PNG)
+   ![Exempel på ny inskickade bifogade filer](../../media/submission-file-flyout.PNG)
 
 ## <a name="view-items-submitted-for-analysis"></a>Visa objekt som skickats för analys
 
@@ -136,9 +136,9 @@ Om du vill ändra filtervillkor klickar du på knappen Inskickat **ID** och väl
 - **Typ av inskickat material**
 - **Status**
 
-![Filteralternativ för administratörsinskick](../../media/admin-submission-email-filter-options.png)
+![Nya filteralternativ för administratörsinskick](../../media/admin-submission-email-filter-options.png)
 
-Om du vill exportera resultaten klickar **du på** Exportera högst upp på sidan och väljer **Diagramdata** eller **Tabell.** Spara CSV-filen i dialogrutan som visas.
+Om du vill exportera resultaten klickar **du på** Exportera högst upp på sidan och väljer **Diagramdata** eller **Tabell.** I dialogrutan som visas sparar du den .csv filen.
 
 Under diagrammet finns tre **flikar:** E-post (standard), **URL och** **Bifogad fil**.
 
@@ -203,7 +203,7 @@ Du kan klicka på **knappen Kolumnalternativ** längst ned på sidan om du vill 
 
 ## <a name="view-user-submissions-to-microsoft"></a>Visa användarinskick till Microsoft
 
-Om du har distribuerat tillägget Rapportmeddelande, [](enable-the-report-phish-add-in.md) [](enable-the-report-message-add-in.md)tillägget Rapportfiske eller om användarna använder den [inbyggda](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)rapporteringen i Outlook på webben, kan du se vad användarna rapporterar på fliken Användarinsändning. 
+Om du har distribuerat tillägget Rapportmeddelande, [](enable-the-report-phish-add-in.md) [](enable-the-report-message-add-in.md)tillägget Rapportfiske eller om användarna använder den [inbyggda](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)rapporteringen i Outlook på webben kan  du se vad användarna rapporterar på fliken Användarinsändning.
 
 1. I Säkerhets- & efterlevnadscenter går du till **Sändning av** \> **hothantering.**
 
@@ -230,9 +230,9 @@ Om du vill ändra filtervillkor klickar du **på knappen** Avsändare och välje
 - **Typ av inskickat material**
 - **Sender IP**
 
-![Filteralternativ för användarinskick](../../media/user-submissions-filter-options.png)
+![Nya filteralternativ för användarinskick](../../media/user-submissions-filter-options.png)
 
-Om du vill exportera resultaten klickar **du på** Exportera högst upp på sidan och väljer **Diagramdata** eller **Tabell.** Spara CSV-filen i dialogrutan som visas.
+Om du vill exportera resultaten klickar **du på** Exportera högst upp på sidan och väljer **Diagramdata** eller **Tabell.** I dialogrutan som visas sparar du den .csv filen.
 
 ## <a name="view-user-submissions-to-the-custom-mailbox"></a>Visa användarinskick till den anpassade postlådan
 
@@ -253,7 +253,7 @@ Du kan klicka på **knappen Kolumnalternativ** längst ned på sidan om du vill 
 
 Högst upp på sidan kan du ange ett startdatum, ett slutdatum och du kan filtrera efter **Skickat** genom att ange ett värde i rutan och klicka på ![ ](../../media/scc-quarantine-refresh.png) Uppdatera. Du kan ange flera värden avgränsade med kommatecken.
 
-Om du vill exportera resultaten klickar **du på** Exportera högst upp på sidan och väljer **Diagramdata** eller **Tabell.** Spara CSV-filen i dialogrutan som visas.
+Om du vill exportera resultaten klickar **du på** Exportera högst upp på sidan och väljer **Diagramdata** eller **Tabell.** I dialogrutan som visas sparar du den .csv filen.
 
 > [!NOTE]
 > Om organisationer är konfigurerade att endast skicka till en anpassad postlåda skickas inte rapporterade meddelanden för sökning och resultat i portalen för användarrapporter är alltid tomma.
@@ -266,11 +266,11 @@ När en användare skickar ett misstänkt e-postmeddelande till den anpassade po
 
 Om du har konfigurerat den anpassade postlådan för att snappa upp användarrapporterade meddelanden utan att skicka meddelanden till Microsoft kan du hitta och skicka specifika meddelanden till Microsoft för analys. Då flyttas en användarinskickning till en administratörsinskickning.
 
-Markera **ett meddelande i** listan på fliken Anpassad postlåda, klicka **på** knappen Åtgärd och gör något av följande:
+På fliken **Användarrapporterade** meddelanden väljer du ett  meddelande i listan, klickar på knappen Åtgärd och gör ett av följande val:
 
 - **Rapportrensning**
 - **Rapportera nätfiske**
 - **Rapportera skadlig programvara**
 - **Rapportera skräppost**
 
-![Alternativ på knappen Åtgärd](../../media/user-submission-custom-mailbox-action-button.png)
+![Nya alternativ på knappen Åtgärd](../../media/user-submission-custom-mailbox-action-button.png)

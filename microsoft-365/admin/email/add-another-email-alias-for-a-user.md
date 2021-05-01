@@ -22,18 +22,18 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Läs om hur du kan ha mer än en e-postadress, ett så kallat e-postalias, kopplat till ditt Microsoft 365 för företag-konto. '
-ms.openlocfilehash: 4003dcfca29a722ccdf9b86cca5aa1141fbdb367
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 00e1c55edfcfa9937ab6a18b4bf268adb858b775
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892811"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107128"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Lägga till ytterligare ett e-postalias för en användare
   
-Den här artikeln är för Microsoft 365-administratörer som har företagsprenumerationer. Den är inte avsedd för hemanvändare.
+Den här artikeln är Microsoft 365 administratörer som har företagsprenumerationer. Den är inte avsedd för hemanvändare.
   
-En primär e-postadress i Microsoft 365 är vanligtvis den e-postadress som användaren tilldelades när kontot skapades. När användaren skickar e-post till någon annan är det vanligtvis den primära e-postadressen som visas i fältet  *Från*  i e-postappar. De kan också ha mer än en e-postadress kopplad till sitt Microsoft 365 för företag-konto. Dessa ytterligare adresser kallas alias. 
+En primär e-postadress Microsoft 365 vanligtvis den e-postadress som användaren tilldelades när kontot skapades. När användaren skickar e-post till någon annan är det vanligtvis den primära e-postadressen som visas i fältet  *Från*  i e-postappar. De kan också ha mer än en e-postadress kopplad till sitt Microsoft 365 för företag-konto. Dessa ytterligare adresser kallas alias. 
   
 Anta till exempel att Jenna har e-postadressen jenna@contosoco.com, men hon vill också ta emot e-post på jen@contosoco.com eftersom vissa personer hänvisar till henne med det namnet. Du kan skapa alias för henne så att båda e-postadresserna går till Jennas inkorg.
 <br><br>  
@@ -53,7 +53,7 @@ Du måste ha [administratörsbehörighet för](../add-users/about-admin-roles.md
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
 
-2. På sidan **Aktiva användare** väljer du den användare som > **hantera e-postalias**. Du ser inte det här alternativet om personen inte har någon tilldelad licens. 
+2. På sidan **Aktiva användare** väljer du den användare som > användarnamn **och e-post**. Du ser inte det här alternativet om personen inte har någon tilldelad licens. 
     
 3. Välj **+ Lägg till ett alias** och ange ett nytt alias för användaren.   
     
@@ -65,17 +65,17 @@ Du måste ha [administratörsbehörighet för](../add-users/about-admin-roles.md
     > Om du har köpt prenumerationen från GoDaddy eller från en annan partner och vill ange ett nytt alias som den primära e-postadressen måste du gå till hanteringskonsolen för GoDaddy eller partnern. 
   
     > [!TIP]
-    > E-postaliaset måste sluta med en domän från listrutan. Om du vill lägga till ett annat domännamn i listan går du [till Lägga till en domän i Microsoft 365.](../setup/add-domain.md) 
+    > E-postaliaset måste sluta med en domän från listrutan. Om du vill lägga till ett annat domännamn i listan kan du [gå till Lägga till en domän Microsoft 365](../setup/add-domain.md). 
   
      
 5. När du är klar väljer du **Spara ändringar.**
     
-6. Vänta 24 timmar på att de nya alias aliasen ska fyllas i i hela Microsoft 365.
+6. Vänta 24 timmar för att de nya aliasen ska fyllas i Microsoft 365.
     
     Användaren har nu en primär adress och ett alias. Till exempel skickas all e-post som skickas till Erna Hanssons primära adress, Eliza@NodPublishers.com, och hennes alias, Sales@NodPublishers.com, till Ernas inkorg.
     
   
-7. **När användaren svarar beror *Av-adressen* på hans eller hennes Outlook-klient. Outlook på webben använder aliaset som e-postmeddelandet togs emot från (vi kallar det för ping-principle). Outlook på datorn använder hennes primära e-postalias.** Anta till exempel att ett meddelande skickas till Sales@NodPublishers.com och kommer till Ernas inkorg. När Erna svarar på meddelandet med Outlook på datorn visas hennes primära e-postadress Eliza@NodPublishers.com, inte Sales@NodPublishers.com.
+7. **När användaren svarar beror *Av-adressen* på hennes egen Outlook klient. Outlook på webben använder aliaset som e-postmeddelandet togs emot från (vi kallar detta ping-principle). Outlook datorn kommer att använda hennes primära e-postalias.** Anta till exempel att ett meddelande skickas till Sales@NodPublishers.com och kommer till Ernas inkorg. När Erna svarar på meddelandet Outlook datorn visas hennes primära e-postadress Eliza@NodPublishers.com, inte Sales@NodPublishers.com.
     
 ::: moniker-end
 
@@ -97,16 +97,16 @@ Du måste ha [administratörsbehörighet för](../add-users/about-admin-roles.md
     > Om du har köpt prenumerationen från GoDaddy eller från en annan partner och vill ange ett nytt alias som den primära e-postadressen måste du gå till hanteringskonsolen för GoDaddy eller partnern. 
   
     > [!TIP]
-    > E-postaliaset måste sluta med en domän från listrutan. Om du vill lägga till ett annat domännamn i listan går du [till Lägga till en domän i Microsoft 365.](../setup/add-domain.md) 
+    > E-postaliaset måste sluta med en domän från listrutan. Om du vill lägga till ett annat domännamn i listan kan du [gå till Lägga till en domän Microsoft 365](../setup/add-domain.md). 
 
 5. Välj Spara när du är **klar.**
 
-6. Vänta 24 timmar på att de nya alias aliasen ska fyllas i i hela Microsoft 365. 
+6. Vänta 24 timmar för att de nya aliasen ska fyllas i Microsoft 365. 
     
     Användaren har nu en primär adress och ett alias. Till exempel skickas all e-post som skickas till Erna Hanssons primära adress, Eliza@NodPublishers.com, och hennes alias, Sales@NodPublishers.com, till Ernas inkorg.
     
   
-7. **När användaren svarar beror *Av-adressen* på hans eller hennes Outlook-klient. Outlook på webben använder aliaset som e-postmeddelandet togs emot från (vi kallar det för ping-principle). Outlook på datorn använder hennes primära e-postalias.** Anta till exempel att ett meddelande skickas till Sales@NodPublishers.com och kommer till Ernas inkorg. När Erna svarar på meddelandet med Outlook på datorn visas hennes primära e-postadress Eliza@NodPublishers.com, inte Sales@NodPublishers.com.
+7. **När användaren svarar beror *Av-adressen* på hennes egen Outlook klient. Outlook på webben använder aliaset som e-postmeddelandet togs emot från (vi kallar detta ping-principle). Outlook datorn kommer att använda hennes primära e-postalias.** Anta till exempel att ett meddelande skickas till Sales@NodPublishers.com och kommer till Ernas inkorg. När Erna svarar på meddelandet Outlook datorn visas hennes primära e-postadress Eliza@NodPublishers.com, inte Sales@NodPublishers.com.
 
 ::: moniker-end
 
@@ -128,16 +128,16 @@ Du måste ha [administratörsbehörighet för](../add-users/about-admin-roles.md
     > Om du har köpt prenumerationen från GoDaddy eller från en annan partner och vill ange ett nytt alias som den primära e-postadressen måste du gå till hanteringskonsolen för GoDaddy eller partnern. 
   
     > [!TIP]
-    > E-postaliaset måste sluta med en domän från listrutan. Om du vill lägga till ett annat domännamn i listan går du [till Lägga till en domän i Microsoft 365.](../setup/add-domain.md) 
+    > E-postaliaset måste sluta med en domän från listrutan. Om du vill lägga till ett annat domännamn i listan kan du [gå till Lägga till en domän Microsoft 365](../setup/add-domain.md). 
 
 5. Välj Spara när du är **klar.**
 
-6. Vänta 24 timmar på att de nya alias aliasen ska fyllas i i hela Microsoft 365. 
+6. Vänta 24 timmar för att de nya aliasen ska fyllas i Microsoft 365. 
     
     Användaren har nu en primär adress och ett alias. Till exempel skickas all e-post som skickas till Erna Hanssons primära adress, Eliza@NodPublishers.com, och hennes alias, Sales@NodPublishers.com, till Ernas inkorg.
     
   
-7. **När användaren svarar beror *Av-adressen* på hans eller hennes Outlook-klient. Outlook på webben använder aliaset som e-postmeddelandet togs emot från (vi kallar det för ping-principle). Outlook på datorn använder hennes primära e-postalias.** Anta till exempel att ett meddelande skickas till Sales@NodPublishers.com och kommer till Ernas inkorg. När Erna svarar på meddelandet med Outlook på datorn visas hennes primära e-postadress Eliza@NodPublishers.com, inte Sales@NodPublishers.com.
+7. **När användaren svarar beror *Av-adressen* på hennes egen Outlook klient. Outlook på webben använder aliaset som e-postmeddelandet togs emot från (vi kallar detta ping-principle). Outlook datorn kommer att använda hennes primära e-postalias.** Anta till exempel att ett meddelande skickas till Sales@NodPublishers.com och kommer till Ernas inkorg. När Erna svarar på meddelandet Outlook datorn visas hennes primära e-postadress Eliza@NodPublishers.com, inte Sales@NodPublishers.com.
 
 ::: moniker-end
 
@@ -154,7 +154,7 @@ Om du har köpt prenumerationen från GoDaddy eller från en annan partner och v
 
 ## <a name="sending-email-from-the-proxy-address-easily"></a>Skicka enkelt e-post från proxyadressen
 
-En ny funktion lanseras i april 2021 som gör att användare enkelt kan skicka från sina alias när de använder Outlook på webben. När funktionen distribueras till ett innehavaradministratör som använder cmdleten får användare i innehavarorganisationen tillgång till en lista med kryssrutor där varje post motsvarar ett alias i `Set-OrganizationConfig -SendFromAliasEnabled $true` Sina Outlook-inställningar. När du väljer ett alias visas det i listrutan Från i formuläret Skriv.
+En ny funktion lanseras i april 2021 som gör att användare enkelt kan skicka från sina alias när de Outlook på webben. När funktionen distribueras till ett innehavaradministratör som använder cmdleten får användare inom innehavarorganisationen tillgång till en lista med kryssrutor där varje post motsvarar ett alias i `Set-OrganizationConfig -SendFromAliasEnabled $true` Outlook inställningar. När du väljer ett alias visas det i listrutan Från i formuläret Skriv.
   
 ## <a name="related-articles"></a>Relaterade artiklar
 

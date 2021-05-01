@@ -10,19 +10,24 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
+- M365-subscription-management
+- Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - fwlink 2133922 to Delete subscription heading
+- commerce_subscription
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: Lär dig hur du stänger ditt konto hos Microsoft.
-ms.openlocfilehash: 44428654946d31ad249bfd3e7a3609da3e3634a6
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.date: 04/02/2021
+ms.openlocfilehash: 4fa1366186f0a37d3319208224628332d958a0ea
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860553"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107478"
 ---
 # <a name="close-your-account"></a>Avsluta ditt konto
 
@@ -38,13 +43,13 @@ Du måste vara global administratör eller faktureringsadministratörer för att
 
 Ta bort alla användare utom en global administratör. Den globala administratören slutför stegen för att stänga kontot. Innan du kan ta bort katalogen i slutet av den här processen måste du ta bort alla andra användare.
 
-Om användarna synkroniseras från en lokal miljö inaktiverar du först synkroniseringen och tar sedan bort användarna i molnkatalogen med hjälp av Azure-portalen eller Azure PowerShell-cmdlets.
+Om användarna synkroniseras från en lokal miljö inaktiverar du först synkroniseringen och tar sedan bort användarna i molnkatalogen med hjälp av Azure-portalen Azure PowerShell-cmdlets.
 
-Information om hur du tar bort användare <a href="/office365/admin/add-users/delete-a-user?view=o365-worldwide#user-management-admin-delete-one-or-more-users-from-office-365">finns i Användarhanteringsadministratör: Ta bort en eller flera användare</a>.
+Information om hur du tar bort användare [finns i Användarhanteringsadministratör: Ta bort en eller flera användare](../admin/add-users/delete-a-user.md#user-management-admin-delete-one-or-more-users-from-office-365).
 
-Du kan också använda <a href="https://docs.microsoft.com/powershell/module/msonline/remove-msoluser">PowerShell-cmdleten Remove-MsolUser</a> för att massborttagning av användare.
+Du kan också använda [PowerShell-cmdleten Remove-MsolUser](/powershell/module/msonline/remove-msoluser) för att massborttagning av användare.
 
-Om din organisation använder Active Directory som synkroniserar med Microsoft Azure Active Directory (Azure AD) ska du ta bort användarkontot från Active Directory i stället. Instruktioner finns i <a href="/azure/active-directory/users-groups-roles/users-bulk-delete">Massborttagning av användare i Azure Active Directory.</a>
+Om din organisation använder Active Directory som synkroniserar med Microsoft Azure Active Directory (Azure AD) ska du ta bort användarkontot från Active Directory i stället. Instruktioner finns i [Massborttagning av användare i Azure Active Directory](/azure/active-directory/users-groups-roles/users-bulk-delete).
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Steg 2: Avbryt alla aktiva prenumerationer
 
@@ -64,7 +69,7 @@ Om din organisation använder Active Directory som synkroniserar med Microsoft A
 6. Upprepa steg 3 till 5 för varje inaktiverad prenumeration tills alla prenumerationer har tagits bort.
 
 > [!NOTE]
-> Om du inte kan ta bort en inaktiverad prenumeration direkt kontaktar <a href="/microsoft-365/Admin/contact-support-for-business-products" target="_blank">du supporten</a>
+> Om du inte kan ta bort en inaktiverad prenumeration direkt kontaktar [du support.](../admin/contact-support-for-business-products.md)
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>Steg 4: Inaktivera multifaktorautentisering
 
@@ -73,12 +78,13 @@ Om din organisation använder Active Directory som synkroniserar med Microsoft A
 3. Välj **Multifaktorautentisering**.
 4. På sidan Multifaktorautentisering inaktiverar du alla konton utom för det globala administratörskonto som du använder för närvarande.
 
-Du kan också <a href="/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell">använda PowerShell för att inaktivera multifaktorautentisering för flera användare.</a>
+Du kan också [använda PowerShell för att inaktivera multifaktorautentisering för flera användare.](/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell)
+
 
 ## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>Steg 5: Ta bort katalogen i Azure Active Directory
 
 1. Logga in på <a href="https://aad.portal.azure.com/" target="_blank">administrationscentret för Azure AD med</a> ett globalt administratörskonto.
-2. Välj **Azure Active Directory.**
+2. Välj **Azure Active Directory**.
 3. Växla till den organisation som du vill ta bort.
 4. Välj **Ta bort klientorganisation.**
 5. Om din organisation misslyckas med en eller flera kontroller visas en länk till mer information om hur du gör för att överföra kontrollerna. När du har slutfört alla kontroller väljer **du Ta** bort för att slutföra processen.

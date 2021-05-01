@@ -1,6 +1,6 @@
 ---
 title: API för uppdatering av incidenter
-description: Lär dig hur du uppdaterar incidenter med Hjälp av Microsoft 365 Defender API
+description: Lär dig hur du uppdaterar incidenter med Microsoft 365 Defender API
 keywords: uppdatering, api, incident
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 549f9bf2b9dc2ea5d1c734a809ad10a168c8123e
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d6872a7a4b1b2d2c131066076af02a65b4ef6d8a
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068971"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107610"
 ---
 # <a name="update-incidents-api"></a>API för uppdatering av incidenter
 
@@ -51,7 +51,7 @@ Om din begäran begränsas returneras en `429` svarskod. Svarstexten anger när 
 
 ## <a name="permissions"></a>Behörigheter
 
-En av följande behörigheter krävs för att anropa detta API. Mer information, inklusive hur du väljer behörigheter, finns i [Access-API:er för Microsoft 365 Defender.](api-access.md)
+En av följande behörigheter krävs för att anropa detta API. Mer information, inklusive hur du väljer behörigheter, finns i [Komma åt Microsoft 365 Defender-API:er.](api-access.md)
 
 Behörighetstyp | Behörighet | Visningsnamn för behörighet
 -|-|-
@@ -69,7 +69,7 @@ PATCH /api/incidents/{id}
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Type (Typ) | Beskrivning
+Namn | Skriv | Beskrivning
 -|-|-
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 Innehållstyp | Sträng | application/json. **Obligatoriskt.**
@@ -78,12 +78,12 @@ Innehållstyp | Sträng | application/json. **Obligatoriskt.**
 
 Ange värden för fälten som ska uppdateras i brödtexten för begäran. Befintliga egenskaper som inte finns i begärans brödtext bibehåller sina värden, såvida de inte behöver beräknas om på grund av ändringar av relaterade värden. För bästa prestanda bör du utelämna befintliga värden som inte har ändrats.
 
-Egenskap | Type (Typ) | Beskrivning
+Egenskap | Skriv | Beskrivning
 -|-|-
-status | Uppräkning | Anger aktuell status för aviseringen. Möjliga värden är: ```Active``` ```Resolved``` , och ```Redirected``` .
+status | Uppräkning | Anger incidentens aktuella status. Möjliga värden är: ```Active``` ```Resolved``` , och ```Redirected``` .
 assignedTo | sträng | Ägaren till händelsen.
-klassificering | Uppräkning | Specifikation för aviseringen. Möjliga värden är: ```Unknown``` , ```FalsePositive``` , ```TruePositive``` .
-determination | Uppräkning | Anger om aviseringen är bestämd. Möjliga värden är: ```NotAvailable``` , , , , , , ```Apt``` ```Malware``` ```SecurityPersonnel``` ```SecurityTesting``` ```UnwantedSoftware``` ```Other``` .
+klassificering | Uppräkning | Specifikation för incidenten. Möjliga värden är: ```Unknown``` , ```FalsePositive``` , ```TruePositive``` .
+determination | Uppräkning | Anger incidentens avgörande. Möjliga värden är: ```NotAvailable``` , , , , , , ```Apt``` ```Malware``` ```SecurityPersonnel``` ```SecurityTesting``` ```UnwantedSoftware``` ```Other``` .
 taggar | stränglista | Lista över incidenttaggar.
 
 ## <a name="response"></a>Svar
@@ -114,7 +114,7 @@ Här är ett exempel på begäran.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Åtkomst till Microsoft 365 Defender-API:er](api-access.md)
+- [Komma åt Microsoft 365 Defender-API:er](api-access.md)
 - [Läs mer om API-begränsningar och licensiering](api-terms.md)
 - [Förstå felkoder](api-error-codes.md)
 - [API:er för tillbud](api-incident.md)

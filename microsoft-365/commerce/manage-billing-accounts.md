@@ -10,23 +10,29 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: tugu
 search.appverid:
 - MET150
 description: Läs mer om faktureringskonton och hur du hanterar dem.
-ms.openlocfilehash: c2cf7584148bb846541328396885d20c00e2712a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/17/2021
+ms.openlocfilehash: 504811e8cdfb84569a4bc3cea021c3c37030fca7
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911428"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107586"
 ---
 # <a name="manage-billing-accounts"></a>Hantera faktureringskonton
 
-Ett faktureringskonto skapas när du registrerar dig för att prova eller köpa Microsoft-produkter. Du använder ditt faktureringskonto för att hantera dina kontoinställningar, fakturor, betalningsmetoder och köp. Du kan ha åtkomst till flera faktureringskonton. Om du till exempel registrerade dig för Microsoft 365 direkt eller om du har åtkomst till din organisations Enterprise-avtal, Microsofts &-tjänstavtal eller Microsofts kundavtal. För var och en av de här scenarierna skulle du ha ett separat faktureringskonto.
+Ett faktureringskonto skapas när du registrerar dig för att prova eller köpa Microsoft-produkter. Du använder ditt faktureringskonto för att hantera dina kontoinställningar, fakturor, betalningsmetoder och köp. Du kan ha åtkomst till flera faktureringskonton. Till exempel har du registrerat dig för Microsoft 365 direkt eller så har du åtkomst till din organisations avtal för företagsavtal, Microsofts &-tjänster eller Microsofts kundavtal. För var och en av de här scenarierna skulle du ha ett separat faktureringskonto.
 
-Administrationscentret för Microsoft 365 har för närvarande stöd för följande typer av faktureringskonton:
+I Microsoft 365 för närvarande stöds följande typer av faktureringskonton:
 
 - Microsoft Online Services Program: Det här faktureringskontot skapas när du registrerar dig för en Microsoft 365-prenumeration direkt.
 - Microsoft Products & Services Agreement (MPSA) Program: Det här faktureringskontot skapas när din organisation signerar ett MPSA-volymlicensieringsavtal för att köpa programvara och onlinetjänster.
@@ -63,14 +69,14 @@ Det här avsnittet innehåller leveransadresserna som är kopplade till ditt fak
 
 ## <a name="understand-access-to-billing-accounts"></a>Förstå åtkomst till faktureringskonton
 
-Du kan ge andra åtkomst till faktureringskontot i administrationscentret för Microsoft 365 via roller och behörigheter. Endast en faktureringskontoägare kan bevilja åtkomst till ett faktureringskonto. Du kan tilldela en av följande roller till användare:
+Du kan ge andra åtkomst till faktureringskontot i administrationscentret Microsoft 365 via roller och behörigheter. Endast en faktureringskontoägare kan bevilja åtkomst till ett faktureringskonto. Du kan tilldela en av följande roller till användare:
 
 - **Faktureringskontoägare** &mdash; Kan tilldela behörigheter, redigera konton, signera avtal och visa konton.
 - **Deltagare i faktureringskonto** &mdash; Kan redigera konton, signera avtal och visa konton.
 - **Läsare av faktureringskonto** &mdash; Kan visa konton.
 
 > [!Note]
-> Faktureringskontoroller gäller endast faktureringskonton och gäller inte för andra scenarier i administrationscentret för Microsoft 365.
+> Faktureringskontoroller gäller endast faktureringskonton och gäller inte för andra faktureringsscenarier Microsoft 365 administrationscenter.
 
 ## <a name="related-content"></a>Relaterat innehåll
 
