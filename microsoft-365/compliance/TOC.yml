@@ -235,8 +235,8 @@
       items:
         - name: Lär dig mer om DLP
           items:
-            - name: Lär dig mer om DLP
-              href: data-loss-prevention-policies.md
+            - name: Mer information om skydd mot dataförlust
+              href: dlp-learn-about-dlp.md
             - name: Mer information om skydd mot Endpoint data förlust
               href: endpoint-dlp-learn-about.md
             - name: Läs mer om standardprincipen för dataförlustskydd i Microsoft Teams (förhandsversion)
