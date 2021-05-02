@@ -12,22 +12,23 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - TopSMBIssues
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: jamitche
 search.appverid:
 - MET150
 description: Lär dig hur du hanterar dina betalningsmetoder i administrationscentret för Microsoft 365.
-ms.date: ''
-ms.openlocfilehash: 1d28d082c0a7c123aadaa2230930326139fdcb8e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.date: 04/02/2021
+ms.openlocfilehash: 4b35b7b8e874915e5f9c792686ff0e368292c802
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579788"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107045"
 ---
 # <a name="manage-payment-methods"></a>Hantera betalningsmetoder
 
@@ -122,7 +123,7 @@ Om en betalningsmetod är kopplad till prenumerationer eller faktureringsprofile
 | Problem | Felsökningssteg |
 |:----------|:-----|
 |**Jag får ett felmeddelande där det står "Webbläsaren är för tillfället inställd så att den blockerar cookies."** |Konfigurera din webbläsare så att den tillåter cookies från tredje part och försök igen. |
-|**Mitt kredit- eller betalkort nekades.** |Om du betalar med kredit- eller betalkort och kortet nekas får du ett e-postmeddelande med information om att Microsoft inte har kunnat bearbeta betalningen. Kontrollera att kortuppgifterna&mdash;kortnummer, utgångsdatum, namn på kortet och adress, inklusive stad, region och postnummer&mdash;visas exakt som de gör på kortet och ditt kontoutdrag. Du kan uppdatera kortuppgifterna och skicka betalningen direkt med hjälp av länken **Reglera saldo** i sektionen **Fakturering** på sidan med prenumerationsinformation. Läs mer i [Vad händer om jag har ett utestående saldo?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  Om meddelandet om nekat kort fortfarande visas kontaktar du banken. Det är möjligt att kortet inte är aktivt. Om du nyligen har fått kortet i posten med ett uppdaterat utgångsdatum kontrollerar du att det är aktiverat. Din bank kan också berätta om kreditkortet inte är godkänt för onlinetransaktioner, internationella eller återkommande transaktioner. |
+|**Mitt kredit- eller betalkort nekades.** |Om du betalar med kredit- eller betalkort och kortet nekas får du ett e-postmeddelande med information om att Microsoft inte har kunnat bearbeta betalningen. Kontrollera att kortuppgifterna&mdash;kortnummer, utgångsdatum, namn på kortet och adress, inklusive stad, region och postnummer&mdash;visas exakt som de gör på kortet och ditt kontoutdrag. Du kan uppdatera kortuppgifterna och skicka betalningen direkt med hjälp av länken **Reglera saldo** i sektionen **Fakturering** på sidan med prenumerationsinformation. Läs mer i [Vad händer om jag har ett utestående saldo?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  Om meddelandet om nekat kort fortfarande visas kontaktar du banken. Det är möjligt att kortet inte är aktivt. Om du har nyligen fått kortet via post med ett uppdaterat utgångsdatum kontrollerar du att det är aktiverat. Din bank kan också lämna information om kortet inte är godkänt för onlinetransaktioner, internationella eller återkommande transaktioner. |
 |**Jag behöver uppdatera ett kreditkorts- eller bankkontonummer.** |Du kan inte ändra kreditkorts- eller bankkontonumret för en befintlig betalningsmetod. Om ditt kort- eller kontonummer har ändrats [ersätter du det med en annan betalningsmetod](#replace-a-payment-method), vilket flyttar alla aktiva prenumerationer från betalningsmetoden till den nya och sedan [tar du bort den gamla betalningsmetoden](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached). |
 |**Jag har bara ett kreditkort eller bankkonto på kontot och vill ta bort det.** |Om du bara har en betalningsmetod måste du [ersätta den med en ny betalningsmetod](#replace-a-payment-method) innan du kan ta bort den. |
 |**Jag kan inte lägga till mitt kreditkort eller bankkonto.**  |Du måste använda en betalningsmetod som utfärdats från samma land/region som din klientorganisation. Om du har problem med att ange kreditkorts- eller bankkontoinformation kan du [kontakta supporten](../../admin/contact-support-for-business-products.md). |

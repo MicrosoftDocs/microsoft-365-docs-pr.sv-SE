@@ -12,20 +12,21 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- commerce
+- commerce_subscriptions
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: Få reda på hur du avbryter din utvärderingsversion eller betalda prenumeration för Microsoft 365 för företag.
-ms.date: ''
-ms.openlocfilehash: 2163462ae206871d66155331096337c29d6a87c2
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.date: 04/08/2021
+ms.openlocfilehash: f052a08cfe0e7582690864556cfc3039d6caf99c
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644650"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107008"
 ---
 # <a name="cancel-your-subscription"></a>Avbryt din prenumeration
 
@@ -103,7 +104,7 @@ Om du använder en egen domän med din prenumeration finns det några extra steg
 
 Om du har konfigurerat en anpassad domän har du lagt till DNS-poster så att domänen fungerar med Microsoft 365-tjänster. Innan du tar bort domänen behöver du uppdatera DNS-posterna, exempelvis domänens MX-post hos DNS-värden.
 
-Ändra till exempel MX-posten hos din DNS-värd. E-post som skickas till din domän kommer inte längre till din Microsoft-adress och skickas istället till din nya e-postleverantör. (En MX-post bestämmer vart e-post för domänen skickas.)
+Ändra till exempel MX-posten hos din DNS-värd. E-post som skickas till din domän inte längre kommer till din Microsoft-adress utan går till din nya e-postleverantör i stället. (En MX-post bestämmer vart e-post för domänen skickas.)
 
 - Om dina namnserverposter (NS) [pekar på Office 365-namnservrar](../../admin/setup/add-domain.md) kommer ändringar i MX-posten inte att börja gälla förrän du ändrar dina NS-poster så att de pekar på din nya DNS-värd (se Steg 2).
 
@@ -121,7 +122,7 @@ För att ändra dina NS-poster, se [Ta bort en domän](../../admin/get-help-with
 
 ### <a name="save-your-data"></a>Spara dina data
 
-När uppsägningen blivit aktiv förlorar användarna sin tillgång till sina data. Innan du avbryter prenumerationen ska du be dem spara sina OneDrive för företag- eller SharePoint Online-filer på en annan plats. Kvarlämnade kunddata kan komma att raderas efter 30 dagar, eller senast 180 dagar efter prenumerationen avbrutits.
+När uppsägningen blivit aktiv förlorar användarna sin tillgång till sina data. Se därför till att de sparar sina OneDrive för företag- eller SharePoint Online-filer till en annan plats. Kvarlämnade kunddata tas bort efter 30 dagar, senast 180 dagar efter prenumerationen avbrutits.
 
 - Om du vill flytta e-post, kontakter, uppgifter och kalenderinformation till ett annat konto hittar du information i artikeln om att [exportera eller säkerhetskopiera e-post, kontakter och kalender till en Outlook-datafil (.pst)](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
 
