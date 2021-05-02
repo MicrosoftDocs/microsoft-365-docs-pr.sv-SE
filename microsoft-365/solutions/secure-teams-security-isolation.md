@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du skapar ett team med en unik känslighetsetikett för säkerhet.
-ms.openlocfilehash: 7c9b770c712d2468369482ba3a6256e57f621f74
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4d305e952d48d42afffe91466121c67621aa9d85
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51042692"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113408"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Konfigurera en team med säkerhetsisolering
 
@@ -60,8 +60,8 @@ Se hur Contoso Corporation använde en isolerad grupp för ett topphemligt proje
 ## <a name="initial-protections"></a>Initiala skydd
 
 Läs följande metodtips för att skydda åtkomst till teamet och dess underliggande SharePoint-webbplats:
-- [Principer för identitets- och enhetsåtkomst](../security/defender-365-security/identity-access-policies.md)
-- [Åtkomstprinciper för SharePoint Online](../security/defender-365-security/sharepoint-file-access-policies.md).
+- [Principer för identitets- och enhetsåtkomst](../security/office-365-security/identity-access-policies.md)
+- [Åtkomstprinciper för SharePoint Online](../security/office-365-security/sharepoint-file-access-policies.md).
 - [Distribuera teams med grundläggande skydd](configure-teams-baseline-protection.md)
 
 ## <a name="guest-sharing"></a>Gästdelning
@@ -111,7 +111,7 @@ Att skapa en känslighetsetikett
 1. Öppna [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com).
 2. Under **Lösningar** klickar du på **Informationsskydd**.
 3. Klicka på **Skapa en etikett**.
-4. Namnge etiketten. Vi föreslår att du namnger det efter teamet som du ska använda det med.
+4. Namge etiketten. Vi föreslår att du namnger det efter teamet som du ska använda det med.
 5. Lägg till ett visningsnamn och en beskrivning och klicka på **Nästa**.
 6. På sidan **Definiera omfång för etikett** väljer du **filer och e-postmeddelanden** samt **grupper och webbplatser** och klickar på **Nästa**.
 7. På sidan **Välj säkerhetsinställningar för filer och e-postmeddelanden** väljer du **Kryptera filer och e-postmeddelande** och klickar på **Nästa**.
@@ -231,7 +231,7 @@ Microsoft 365 tillhandahåller fler metoder för att skydda innehållet. Överv�
 
 - Låt dina gästanvändare godkänna [användningsvillkor](/azure/active-directory/conditional-access/terms-of-use).
 - Konfigurera en [princip om tidsgräns för sessioner](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) för gäster.
-- Skapa [känslig informationstyper](../compliance/sensitive-information-type-learn-about.md) och Använd [skydd mot dataförlust](../compliance/data-loss-prevention-policies.md) för att ange principer för åtkomst av känslig information.
+- Skapa [känslig informationstyper](../compliance/sensitive-information-type-learn-about.md) och Använd [skydd mot dataförlust](../compliance/dlp-learn-about-dlp.md) för att ange principer för åtkomst av känslig information.
 - Använd [Azure Active Directory Access](/azure/active-directory/governance/access-reviews-overview) granskningar för att regelbundet granska teamåtkomst och medlemskap.
 
 ## <a name="drive-user-adoption-for-team-members"></a>Driva på teammedlemmarnas användning

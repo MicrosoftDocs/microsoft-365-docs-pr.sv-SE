@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: Institutioner för finansiella tjänster kan hålla ekonomiska säkerhets efterlevnad och effektivt samarbeta med Microsoft 365 och Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: f7e32502994f89451d8016ed5664ebe3591dcc8d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1e6aa7f25e536c1a66bd7713efa167691b81785e
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200347"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114046"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Viktig information om efterlevnad och säkerhet för amerikanska banker och stora marknader
 
@@ -109,7 +109,7 @@ Effektiva metoder som rekommenderas av FINRA omfattar följande:
 
 FINRAs upptäckter och iakttagelser för digital kommunikation relaterar direkt till organisationens möjlighet att uppfylla [SEC regel 17a–4](https://www.law.cornell.edu/cfr/text/17/240.17a-4) för att bibehålla all nätverksrelaterade kommunikation, FINRA regler [3110](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) och [3120](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) för övervakning och granskning av kommunikation, och regelserie [4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4510) för arkivföring. Commodity Futures Trading Commission (CFTC) kungör liknande krav under 17 CFR 131. De här reglerna beskrivs ingående senare i den här artikeln.
 
-***Teams, tillsammans med den omfattande paketet med Microsoft 365-säkerhets- och efterlevnadserbjudanden, erbjuder en digital kommunikationskanal för institutioner för finansiella tjänster för att effektivt bedriva affärer och följa regler.*** Återstoden av den här artikeln beskriver hur Microsoft 365 inbyggda funktioner för arkivhantering, informationsskydd, informationshinder och övervakningskontroll ger Teams en rejäl verktygslåda för att uppfylla dessa lagstadgade skyldigheter.
+***Teams, tillsammans med den omfattande uppsättningen av säkerhets- och efterlevnadserbjudanden i Microsoft 365, ger en digital kommunikationskanal för att institut för finansiella tjänster effektivt kan sköta affärer och efterleva föreskrifter.*** _ Återstoden av den här artikeln beskriver hur inbyggda funktioner i Microsoft 365 för hantering av arkivhandlingar, informationsskydd, informationshinder och övervakningskontroll ger Teams en robust verktygslåda för att uppfylla dessa lagstadgade skyldigheter.
 
 ## <a name="protect-modern-collaboration-with-microsoft-365"></a>Skydda modernt samarbete genom att använda Microsoft 365
 
@@ -142,7 +142,7 @@ Microsoft MFA-metoder som är lösenordslösa inkluderar:
 
 Med [Azure AD Villkorad åtkomst](/azure/active-directory/conditional-access/) får du en robust lösning för automatisering av beslut om åtkomstkontroll och för att upprätthålla organisatoriska principer för att skydda företagets tillgångar. Ett klassiskt exempel är när en finansiell planerare vill få åtkomst till ett program med känsliga kunddata. De måste automatiskt utföra multifaktorautentisering för att få åtkomst till det programmet, och åtkomst måste komma från en företagets enhet. Azure Villkorad åtkomst för samman signalerna om en användares åtkomstbegäran, t. ex. egenskaper för användaren, enheten, platsen och nätverket, och programmet som användaren försöker komma åt. Det utvärderar dynamiskt försök att komma åt programmet mot konfigurerade principer. Om en användar-eller enhetsrisk är förhöjd, eller om andra villkor inte uppfylls, kan Azure AD automatiskt framtvinga principer som kräver MFA, begära att få en säkerhetsåterställning av lösenordet eller begränsa eller blockera åtkomst. På så sätt kan du se till att känsliga organisatoriska tillgångar skyddas i dynamiskt föränderliga miljöer.
  
-Azure AD och tillhörande Microsoft 365-säkerhetstjänster tillhandahåller grunden för en modern molnbaserad samarbetsplattform som kan distribueras till finansiella institutioner så att åtkomsten till data och program kan skyddas och skyldigheterna för efterlevnad av regler kan uppfyllas. Verktygen har följande nyckelfunktioner:
+Azure AD och tillhörande Microsoft 365-säkerhetstjänster tillhandahåller grunden för en modern molnbaserad samarbetsplattform som kan distribueras till finansiella institutioner så att åtkomsten till data och program kan skyddas och skyldigheterna för efterlevnad av lagar och regler kan uppfyllas. Verktygen har följande nyckelfunktioner:
 
 * Lagrar och hanterar användaridentiteter centralt.
 * Använd ett starkt autentiseringsprotokoll, t. ex. multifaktorautentisering, för att autentisera användare med åtkomstförfrågningar och tillhandahåll en enhetlig och robust autentisering för alla program.
@@ -179,7 +179,7 @@ Dessutom tillhandahåller Microsoft "träningsbara klassificerare" som använder
 
 Genom att använda känslighetsetiketter i dokument och e-postmeddelanden bäddas metadata som identifierar den valda känsligheten in i objektet. Känsligheten överförs då med data. Även om du har sparat ett dokument på en användares skrivbord eller i ett lokalt system är det fortfarande skyddat. Denna funktionalitet gör det möjligt för andra Microsoft 365-lösningar, till exempel Microsoft Cloud App Security eller nätverksenheter, att identifiera känslig data och automatiskt genomföra säkerhetskontroller. Med känslighetsetiketter får du en bättre överblick över vilka data i en organisation som betraktas som känsliga och hur du hanterar dem när de får den.
 
-Med **[Office 365-dataförlustskydd (DLP)](../compliance/data-loss-prevention-policies.md?view=o365-worldwide)** identifieras automatiskt dokument, e-postmeddelanden och konversationer som innehåller känsliga data genom att söka efter känsliga data och sedan verkställa principer för dessa objekt. Principer tillämpas på dokument i SharePoint och OneDrive för företag. De används också när användare skickar e-post, och i Teams-chattar och i kanalkonversationer. Principer kan konfigureras för att söka efter nyckelord, känsliga datatyper, lagringsetiketter och om data delas i organisationen eller externt. Kontroller tillhandahålls för att hjälpa organisationer att finjustera DLP-policyer för att minska falska positiva. När känslig data hittas kan anpassningsbara policytips visas för användare i Microsoft 365-applikationer för att informera dem om att deras innehåll innehåller känslig information och sedan föreslå korrigerande åtgärder. Principer kan också hindra användare från att komma åt dokument, dela dokument eller skicka e-postmeddelanden som innehåller vissa typer av känslig information. Microsoft 365 har stöd för mer än 100 fördefinierade känsliga datatyper. Organisationer kan konfigurera egna känsliga datatyper så att de uppfyller sina principer.
+Med **[Office 365-dataförlustskydd (DLP)](../compliance/dlp-learn-about-dlp.md)** identifieras automatiskt dokument, e-postmeddelanden och konversationer som innehåller känsliga data genom att söka efter känsliga data och sedan verkställa principer för dessa objekt. Principer tillämpas på dokument i SharePoint och OneDrive för företag. De används också när användare skickar e-post, och i Teams-chattar och i kanalkonversationer. Principer kan konfigureras för att söka efter nyckelord, känsliga datatyper, lagringsetiketter och om data delas i organisationen eller externt. Kontroller tillhandahålls för att hjälpa organisationer att finjustera DLP-policyer för att minska falska positiva. När känslig data hittas kan anpassningsbara policytips visas för användare i Microsoft 365-applikationer för att informera dem om att deras innehåll innehåller känslig information och sedan föreslå korrigerande åtgärder. Principer kan också hindra användare från att komma åt dokument, dela dokument eller skicka e-postmeddelanden som innehåller vissa typer av känslig information. Microsoft 365 har stöd för mer än 100 fördefinierade känsliga datatyper. Organisationer kan konfigurera egna känsliga datatyper så att de uppfyller sina principer.
 
 Utarbetande av MIP-och DLP-principer för organisationer kräver omsorgsfull planering och ett utbildningsprogram för användare så att anställda förstår organisationens dataklassificeringsschema och vilka typer av data som betraktas som känsliga. Att tillhandahålla anställda med verktyg och utbildningsprogram som hjälper dem att identifiera känsliga data och förstå hur de hanteras gör dem till en del av lösningen för att minska risker med informationssäkerhet.
 
@@ -208,13 +208,13 @@ Med [Microsoft Cloud App Security (MCAS)](/cloud-app-security/what-is-cloud-app-
 * Identifiera och undersök misstänkta användaraktiviteter och avancerade attacker under alla attackfaserna.
 * Ge tydlig information om incidenten på en enkel tidslinje för snabb prioritering.
 
-![Kontorsarbetare träffas i ett litet konferensrum. En håller en presentation.](../media/clo1717-corporate-office-021.jpg)
+![Kontorspersonalen sammanträder i ett litet konferensrum. En av dem ger en presentation.](../media/clo1717-corporate-office-021.jpg)
  
 ## <a name="govern-data-and-manage-records"></a>Styr data och hantera arkivhandlingar
 
 Finansiella institut måste behålla sina arkiv och information enligt deras lagstadgade, lagliga och affärsmässiga skyldigheter som representeras i företagets lagring av data. Exempel: [SEC mandat för perioder av lagring](https://www.sec.gov/rules/interp/34-47806.htm) på tre till sex år, baserat på typ av information, med omedelbar tillgänglighet under de två första åren. Organisationer står inför lagliga och regulatoriska efterlevnadsrisker om data underhålls (kasseras för tidigt), och hanterar nu också föreskrifter som kräver bortskaffande när information inte längre krävs. Strategier för effektiv arkivhantering betonar en praktisk och konsekvent metod så att information avyttras på ett lämpligt sätt medan kostnader och risker i organisationen minimeras.
  
-Dessutom kräver regulatoriska mandat från New York State Department of Financial Services att täckta enheter upprätthåller policyer och förfaranden för bortskaffande av icke-offentlig information. 23 NYCRR 500, Avsnitt 500.13, Begränsningar för lagring av data kräver att "Som en del av sitt cybersäkerhetsprogram ska varje täckt enhet inkludera policyer och förfaranden för säkert bortskaffande med jämna mellanrum av all icke-offentlig information som identifieras i avsnitt 500.01 (g) (2)–(3) i denna del som inte längre är nödvändig för affärsverksamhet eller för andra berättigade affärsändamål för den täckta enheten, utom när sådan information annars ska bevaras enligt lag eller förordningar."
+I tillägg kräver regulatoriska mandat från New York State Department of Financial Services att organisationer som omfattas upprätthåller policyer och procedurer för bortskaffande av icke-offentlig information. 23 NYCRR 500, Avsnitt 500.13, Begränsningar för lagring av data kräver att "Som en del av sitt cybersäkerhetsprogram ska varje täckt enhet inkludera policyer och förfaranden för säkert bortskaffande med jämna mellanrum av all icke-offentlig information som identifieras i avsnitt 500.01 (g) (2)–(3) i denna del som inte längre är nödvändig för affärsverksamhet eller för andra berättigade affärsändamål för den täckta enheten, utom när sådan information annars ska bevaras enligt lag eller förordningar."
  
 Finansiella institut hanterar stora mängder data. Alla lagringsperioder initieras av händelser, t. ex. när ett avtal löper ut eller om en anställd lämnar organisationen. I den här miljön kan det vara svårt att tillämpa principer för arkivhållning. Olika metoder för att tilldela arkivlagringsperioder exakt i olika organisationers dokument kan variera. Vissa tillämpar lagringsprinciper på bred front eller utnyttjar autoklassificering och metoder för maskininlärning. Andra identifierar en metod som kräver en mer detaljerad process som tilldelar unika lagringsperioder för enskilda dokument.
 
@@ -233,12 +233,12 @@ Kvarhållningsetiketterna publiceras sedan till SharePoint- och OneDrive-webbpla
 * En organisation bryter inte mot kravet i punkt (f)(2)(ii)(A) i regeln om den använde ett elektroniskt lagringssystem som förhindrar överskrivning, radering eller på annat sätt förändring av en post under den obligatoriska lagringsperioden genom användning av integrerad kod för hårdvara och mjukvara.
 * System för elektronisk lagring som bara "minimerar" risken för att en post skrivs över eller raderas, t. ex. genom att förlita sig på åtkomstkontroll, uppfyller inte kraven för regeln.
 
-För att hjälpa finansiella institut att uppfylla kraven i SEC-regel 17a–4, finns det en kombination av funktioner i Microsoft 365 som rör hur data lagras, principer konfigureras och data lagras i tjänsten. De omfattar:
+För att hjälpa finansiella institut att uppfylla kraven i SEC-regel 17a–4, finns det en kombination av funktioner i Microsoft 365 som omfattar hur data lagras, principer konfigureras och data lagras i tjänsten. Detta inkluderar:
 
 * **Konservering av data (regel 17a–4 (a), (b)(4))** – lagringsetiketterna och principerna är flexibla för att uppfylla organisationens behov och kan automatiskt eller manuellt tillämpas på olika typer av data, dokument och information. En mängd olika datatyper och kommunikation stöds, inklusive dokument i SharePoint och OneDrive för företag, data i Exchange Online-postlådor och data i Teams.  
 * **Icke-omskrivningsbart, icke-raderbart format (regel 17a–4(f)(2)(ii)(A))** möjlighet till bevarandelås för bevarande av principer gör att arkivhanterare och administratörer kan konfigurera lagringsprinciper till att vara begränsade, så att de inte längre kan ändras. Det hindrar alla från att ta bort, inaktivera eller på något sätt ändra lagringsprincipen. Det innebär att när bevarandelåset är aktiverat så kan det inte inaktiveras, och det finns ingen metod för att skriva över, ändra eller ta bort data som bevaras av principen under lagringsperioden. Det går inte heller att korta ned lagringsperioden. Lagringsperioden kan dock förlängas, om det finns ett legalt behov av att fortsätta bevarandet av data.<br/><br/>När ett bevarandelås används för en bevarande princip begränsas följande åtgärder:
 
-  - Lagringsperioden för policyn kan bara ökas.. Det går inte att korta ned den.
+  - Kvarhållningsperioden för policyn kan bara ökas, den kan inte kortas ner.
   - Användare kan läggas till i principen, men befintliga användare som har konfigurerats i principen kan inte tas bort.
    - Det går inte att ta bort lagringsprincipen för någon administratör inom organisationen.
  
@@ -282,7 +282,7 @@ Informationshinder i Microsoft 365 har stöd för konversationer och filer i Tea
 
 ## <a name="implement-supervisory-control"></a>Implementera övervakningskontroll
 
-Finansiella institut måste vanligtvis upprätta och underhålla en tillsynsfunktion i sina organisationer för att kontrollera att de anställdas aktiviteter och hjälpa dem att uppnå efterlevnad av tillämpliga värdepapperslagar. FINRA har fastställt dessa övervakningskrav:
+Finansiella institut måste vanligtvis upprätta och underhålla en tillsynsfunktion i sina organisationer för att kontrollera de anställdas aktiviteter och hjälpa dem att uppnå efterlevnad av tillämpliga värdepapperslagar. FINRA har infört dessa övervakningskrav:
  
 * [FINRA regel 3110 (övervakning)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) kräver att företag har skriftliga tillsynsförfaranden (WSP) för att övervaka anställdas aktiviteter samt vilka typer av verksamheter som företaget bedriver. Förutom andra krav måste procedurerna innehålla:
    - Övervakning av tillsynspersonal

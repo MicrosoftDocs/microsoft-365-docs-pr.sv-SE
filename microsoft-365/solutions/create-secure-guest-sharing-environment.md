@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Få reda på mer om tillgängliga alternativ för att skapa en säker delningsmiljö för gäster i Microsoft 365 och ge gäståtkomst för bättre samarbete.
-ms.openlocfilehash: 0eb999d48bc0976d7c2bb32ff1bdba8d63409d81
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a04ee4a96b5e9124ca94a4ece16c32ccc6b072d1
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918472"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114312"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Skapa en säker miljö för gästdelning
 
@@ -256,7 +256,7 @@ När principen har skapats och en användare skriver ”Projekt Saturnus” i et
 
 ## <a name="create-a-dlp-policy-to-remove-guest-access-to-highly-sensitive-files"></a>Skapa en DLP-princip för att ta bort gäståtkomst till strikt känsliga filer
 
-Du kan använda [Dataförlustskydd (DLP](../compliance/data-loss-prevention-policies.md)) för att förhindra att oönskade gäster delar känsligt innehåll. Dataförlustskydd kan utföra åtgärder baserat på en fils känslighetsetikett och ta bort gäståtkomst.
+Du kan använda [Dataförlustskydd (DLP](../compliance/dlp-learn-about-dlp.md)) för att förhindra att oönskade gäster delar känsligt innehåll. Dataförlustskydd kan utföra åtgärder baserat på en fils känslighetsetikett och ta bort gäståtkomst.
 
 Skapa en DLP-regel
 

@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: I den här artikeln får du lära dig mer om metodtips för att dela filer och mappar med oautentiserade användare.
-ms.openlocfilehash: acc825a8fc445d224fbc91dd12dace2a5e1b25c8
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1e696611d37cd1b57f881457025464dccea54496
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199531"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114324"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Metodtips för att dela filer och mappar med oautentiserade användare
 
@@ -103,7 +103,7 @@ Ange standarddelningslänken för filer och mappar för den särskilda webbplats
 
 ## <a name="prevent-unauthenticated-sharing-of-sensitive-content"></a>Förhindra oautentiserad delning av känsligt innehåll
 
-Du kan använda [Dataförlustskydd (DLP](../compliance/data-loss-prevention-policies.md)) för att förhindra oautentiserad delning av känsligt innehåll. Dataförlustskydd kan utföra åtgärder baserat på en fils känslighetsetikett, kvarhållningsetikett eller känslig information i själva filen.
+Du kan använda [Dataförlustskydd (DLP](../compliance/dlp-learn-about-dlp.md)) för att förhindra oautentiserad delning av känsligt innehåll. Dataförlustskydd kan utföra åtgärder baserat på en fils känslighetsetikett, kvarhållningsetikett eller känslig information i själva filen.
 
 Skapa en DLP-regel
 1. I Microsoft 365 Efterlevnadscenter, gå till sidan [Dataförlustskydd](https://compliance.microsoft.com/datalossprevention).
