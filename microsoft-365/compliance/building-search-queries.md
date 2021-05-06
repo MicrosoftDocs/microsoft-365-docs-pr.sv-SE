@@ -1,0 +1,46 @@
+---
+title: Skapa sökfrågor i Advanced eDiscovery
+f1.keywords:
+- NOCSH
+ms.author: markjjo
+author: markjjo
+manager: laurawi
+ms.date: ''
+audience: Admin
+ms.topic: conceptual
+ms.service: O365-seccomp
+localization_priority: Normal
+ms.collection: M365-security-compliance
+search.appverid:
+- MOE150
+- MET150
+ms.custom: seo-marvel-mar2020
+description: Använd nyckelord och villkor för att begränsa sökningens omfattning när du söker efter data med hjälp av Advanced eDiscovery i Microsoft 365.
+ms.openlocfilehash: e0df319257776d3995a4b8e37781d7b5dad54d82
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "52161841"
+---
+# <a name="build-search-queries-for-collections-in-advanced-ediscovery"></a><span data-ttu-id="05baf-103">Skapa sökfrågor för samlingar i Advanced eDiscovery</span><span class="sxs-lookup"><span data-stu-id="05baf-103">Build search queries for collections in Advanced eDiscovery</span></span>
+
+<span data-ttu-id="05baf-104">När du konfigurerar sökfrågan när du skapar en samling i ett Advanced eDiscovery-ärende kan du använda nyckelord för att hitta specifikt innehåll och villkor för att begränsa sökningens omfattning för att returnera de objekt som är mest relevanta för den juridiska undersökningen. [](collections-overview.md)</span><span class="sxs-lookup"><span data-stu-id="05baf-104">When configuring the search query when creating a [collection](collections-overview.md) in an Advanced eDiscovery case, you can use keywords to find specific content and conditions to narrow the scope of the search to return items that are most relevant to your legal investigation.</span></span>
+
+![Använda nyckelord och villkor för att begränsa resultatet av en sökning](../media/SearchQueryBox.png)
+
+## <a name="keyword-searches"></a><span data-ttu-id="05baf-106">Nyckelordssökningar</span><span class="sxs-lookup"><span data-stu-id="05baf-106">Keyword searches</span></span>
+
+<span data-ttu-id="05baf-107">Skriv en nyckelordsfråga **i rutan** Nyckelord i sökfrågan.</span><span class="sxs-lookup"><span data-stu-id="05baf-107">Type a keyword query in the **Keywords** box in the search query.</span></span> <span data-ttu-id="05baf-108">Du kan ange nyckelord, egenskaper för e-postmeddelanden, till exempel datum för skickade och mottagna meddelanden, eller dokumentegenskaper, t.ex. filnamn eller det datum då ett dokument senast ändrades.</span><span class="sxs-lookup"><span data-stu-id="05baf-108">You can specify keywords, email message properties, such as sent and received dates, or document properties, such as file names or the date that a document was last changed.</span></span> <span data-ttu-id="05baf-109">Du kan använda mer komplexa frågor som använder en boolesk operator som **AND**, **OR,** **NOT och** **NEAR.**</span><span class="sxs-lookup"><span data-stu-id="05baf-109">You can use more complex queries that use a Boolean operator, such as **AND**, **OR**, **NOT**, and **NEAR**.</span></span> <span data-ttu-id="05baf-110">Du kan också söka efter känslig information (t.ex. personnummer) i dokument i SharePoint och OneDrive (inte i e-postmeddelanden), eller söka efter dokument som har delats externt.</span><span class="sxs-lookup"><span data-stu-id="05baf-110">You can also search for sensitive information (such as social security numbers) in documents in SharePoint and OneDrive (not in email messages), or search for documents that have been shared externally.</span></span> <span data-ttu-id="05baf-111">Om du lämnar **rutan Nyckelord** tom visas allt innehåll på de angivna innehållsplatserna i sökresultatet.</span><span class="sxs-lookup"><span data-stu-id="05baf-111">If you leave the **Keywords** box empty, all content located in the specified content locations is in the search results.</span></span>
+
+## <a name="keyword-list"></a><span data-ttu-id="05baf-112">Nyckelordslista</span><span class="sxs-lookup"><span data-stu-id="05baf-112">Keyword list</span></span>
+
+<span data-ttu-id="05baf-113">Alternativt kan du markera kryssrutan Visa **nyckelordslista och** skriva ett nyckelord eller en nyckelordsfras på varje rad.</span><span class="sxs-lookup"><span data-stu-id="05baf-113">Alternatively, you can select the **Show keyword list** check box and the type a keyword or keyword phrase in each row.</span></span> <span data-ttu-id="05baf-114">Nyckelorden på varje rad är sammankopplade med en logisk operator (som representeras som *c:er* i sökfrågesyntaxen) som liknar den **ELLER-operatorn** i sökfrågan som skapas.</span><span class="sxs-lookup"><span data-stu-id="05baf-114">The keywords in each row are connected by a logical operator (which is represented as *c:s* in the search query syntax) that is similar in functionality to the **OR** operator in the search query that's created.</span></span> <span data-ttu-id="05baf-115">Det innebär att objekt som innehåller ett nyckelord på valfri rad finns i sökresultaten.</span><span class="sxs-lookup"><span data-stu-id="05baf-115">This means items that contain any keyword in any row are in the search results.</span></span> <span data-ttu-id="05baf-116">Du kan lägga till upp till 180 rader i nyckelordslistan Advanced eDiscovery i sökfrågor.</span><span class="sxs-lookup"><span data-stu-id="05baf-116">You can add up to 180 rows in the keyword list in Advanced eDiscovery search queries.</span></span>
+
+![Använd nyckelordslistan för att få statistik för varje nyckelord i frågan](../media/KeywordListSearch.png)
+
+<span data-ttu-id="05baf-118">Varför ska jag använda nyckelordslistan?</span><span class="sxs-lookup"><span data-stu-id="05baf-118">Why use the keyword list?</span></span> <span data-ttu-id="05baf-119">Du kan få statistik som visar hur många objekt som matchar varje nyckelord i nyckelordslistan.</span><span class="sxs-lookup"><span data-stu-id="05baf-119">You can get statistics that show how many items match each keyword in the keyword list.</span></span> <span data-ttu-id="05baf-120">Det kan hjälpa dig att snabbt identifiera de nyckelord som är mest (och minst) effektiva.</span><span class="sxs-lookup"><span data-stu-id="05baf-120">This can help you quickly identify the keywords that are the most (and least) effective.</span></span> <span data-ttu-id="05baf-121">Du kan också använda en nyckelordsfras (inom parentes) i en rad i listan med nyckelord.</span><span class="sxs-lookup"><span data-stu-id="05baf-121">You can also use a keyword phrase (surrounded by parentheses) in a row in the keywords list.</span></span> <span data-ttu-id="05baf-122">Mer information om sökstatistik finns i [Sökstatistik](search-statistics-in-advanced-ediscovery.md).</span><span class="sxs-lookup"><span data-stu-id="05baf-122">For more information about search statistics, see [Search statistics](search-statistics-in-advanced-ediscovery.md).</span></span>
+
+## <a name="conditions"></a><span data-ttu-id="05baf-123">Villkor</span><span class="sxs-lookup"><span data-stu-id="05baf-123">Conditions</span></span>
+
+<span data-ttu-id="05baf-124">Du kan lägga till sökvillkor för att begränsa omfattningen av en sökning och returnera en mer förfinad uppsättning resultat.</span><span class="sxs-lookup"><span data-stu-id="05baf-124">You can add search conditions to narrow the scope of a search and return a more refined set of results.</span></span> <span data-ttu-id="05baf-125">Varje villkor lägger till en sats i sökfrågan som skapas och körs när du startar sökningen.</span><span class="sxs-lookup"><span data-stu-id="05baf-125">Each condition adds a clause to the search query that is created and run when you start the search.</span></span> <span data-ttu-id="05baf-126">Ett villkor är logiskt kopplat till nyckelordsfrågan som anges i nyckelordsrutan av en logisk operator (som representeras som *c:c* i sökfrågesyntaxen) som fungerar ungefär som operatorn **OCH.**</span><span class="sxs-lookup"><span data-stu-id="05baf-126">A condition is logically connected to the keyword query specified in the keyword box by a logical operator (which is represented as *c:c* in the search query syntax) that is similar in functionality to the **AND** operator.</span></span> <span data-ttu-id="05baf-127">Det innebär att objekt måste uppfylla både nyckelordsfrågan och ett eller flera villkor som ska tas med i sökresultatet.</span><span class="sxs-lookup"><span data-stu-id="05baf-127">That means items have to satisfy both the keyword query and one or more conditions to be included in the search results.</span></span> <span data-ttu-id="05baf-128">Så här kan du begränsa resultatet.</span><span class="sxs-lookup"><span data-stu-id="05baf-128">This is how conditions help to narrow your results.</span></span> <span data-ttu-id="05baf-129">En lista och en beskrivning av de villkor som du kan använda i en sökfråga finns i avsnittet "Sökvillkor" i [Nyckelordsfrågor och sökvillkor.](keyword-queries-and-search-conditions.md#search-conditions)</span><span class="sxs-lookup"><span data-stu-id="05baf-129">For a list and description of conditions that you can use in a search query, see the "Search conditions" section in [Keyword queries and search conditions](keyword-queries-and-search-conditions.md#search-conditions).</span></span>
