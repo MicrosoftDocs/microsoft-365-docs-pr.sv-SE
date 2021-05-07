@@ -1,0 +1,132 @@
+---
+title: Konfigurera en anslutare för att arkivera Twitter-data
+f1.keywords:
+- NOCSH
+ms.author: markjjo
+author: markjjo
+manager: laurawi
+ms.date: ''
+audience: Admin
+ms.topic: how-to
+ms.service: O365-seccomp
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.collection: M365-security-compliance
+ms.custom: seo-marvel-apr2020
+description: Lär dig hur administratörer kan konfigurera och använda en inbyggd anslutning för att importera Twitter-data till Microsoft 365.
+ms.openlocfilehash: 277af8ea7367936c4c9528a8ca50ccd678745bf6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "52162138"
+---
+# <a name="set-up-a-connector-to-archive-twitter-data-preview"></a><span data-ttu-id="8d77d-103">Konfigurera en anslutare för att arkivera Twitter-data (förhandsversion)</span><span class="sxs-lookup"><span data-stu-id="8d77d-103">Set up a connector to archive Twitter data (preview)</span></span>
+
+<span data-ttu-id="8d77d-104">Använd en anslutare i Microsoft 365 för att importera och arkivera data från Twitter till Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="8d77d-104">Use a connector in the Microsoft 365 compliance center to import and archive data from Twitter to Microsoft 365.</span></span> <span data-ttu-id="8d77d-105">När du har konfigurerat och konfigurerat anslutningen ansluts den till organisationens Twitter-konto (enligt schema), konverterar innehållet i ett objekt till ett e-postmeddelandeformat och importerar sedan objekten till en postlåda i Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="8d77d-105">After you set up and configure the connector, it connects to your organization's Twitter account (on a scheduled basis), converts the content of an item to an email message format, and then imports those items to a mailbox in Microsoft 365.</span></span>
+
+<span data-ttu-id="8d77d-106">När Twitter-data har importerats kan du tillämpa Microsoft 365-efterlevnadsfunktioner som Bevarande av juridiska skäl, Innehållssökning, In-Place Arkivering, Granskning och Microsoft 365 bevarandeprinciper på Twitter-data.</span><span class="sxs-lookup"><span data-stu-id="8d77d-106">After the Twitter data is imported, you can apply Microsoft 365 compliance features such as Litigation Hold, Content Search, In-Place Archiving, Auditing, and Microsoft 365 retention policies to the Twitter data.</span></span> <span data-ttu-id="8d77d-107">Om en postlåda till exempel sätts i bevarande av juridiska skäl eller tilldelas en bevarandeprincip bevaras Twitter-data.</span><span class="sxs-lookup"><span data-stu-id="8d77d-107">For example, when a mailbox is placed on Litigation Hold or assigned to a retention policy, the Twitter data is preserved.</span></span> <span data-ttu-id="8d77d-108">Du kan söka efter data från tredje part med hjälp av Innehållssökning eller associera postlådan där Twitter-data lagras med en vårdnadshavare i ett Advanced eDiscovery fall.</span><span class="sxs-lookup"><span data-stu-id="8d77d-108">You can search third-party data using Content Search or associate the mailbox where the Twitter data is stored with a custodian in an Advanced eDiscovery case.</span></span> <span data-ttu-id="8d77d-109">Om du använder en anslutare för att importera och arkivera Twitter-data i Microsoft 365 kan hjälpa din organisation att följa myndighets- och regelpolicyer.</span><span class="sxs-lookup"><span data-stu-id="8d77d-109">Using a connector to import and archive Twitter data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.</span></span>
+
+<span data-ttu-id="8d77d-110">När Twitter-data har importerats kan du tillämpa efterlevnadsfunktioner i Microsoft 365, till exempel Bevarande av juridiska skäl, Innehållssökning, In-Place Arkivering, Granskning, Kommunikationsefterlevnad och Microsoft 365-bevarandeprinciper på de data som lagras i postlådan.</span><span class="sxs-lookup"><span data-stu-id="8d77d-110">After Twitter data is imported, you can apply Microsoft 365 compliance features such as Litigation Hold, Content Search, In-Place Archiving, Auditing, Communication compliance, and Microsoft 365 retention policies to the data stored in the mailbox.</span></span> <span data-ttu-id="8d77d-111">Du kan till exempel söka efter Twitter-data med hjälp av Innehållssökning eller associera postlådan där data lagras med en vårdnadshavare i ett Advanced eDiscovery fall.</span><span class="sxs-lookup"><span data-stu-id="8d77d-111">For example, you can search Twitter data using Content Search or associate the mailbox where the data is stored with a custodian in an Advanced eDiscovery case.</span></span> <span data-ttu-id="8d77d-112">Om du använder en anslutare för att importera och arkivera Twitter-data i Microsoft 365 kan hjälpa din organisation att följa myndighets- och regelpolicyer.</span><span class="sxs-lookup"><span data-stu-id="8d77d-112">Using a connector to import and archive Twitter data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.</span></span>
+
+## <a name="before-you-set-up-a-connector"></a><span data-ttu-id="8d77d-113">Innan du skapa en koppling</span><span class="sxs-lookup"><span data-stu-id="8d77d-113">Before you set up a connector</span></span>
+
+<span data-ttu-id="8d77d-114">Gör följande innan du kan konfigurera och konfigurera en anslutning i efterlevnadscentret för Microsoft 365 för att importera och arkivera data från din organisations Twitter-konto.</span><span class="sxs-lookup"><span data-stu-id="8d77d-114">Complete the following prerequisites before you can set up and configure a connector in the Microsoft 365 compliance center to import and archive data from your organization's Twitter account.</span></span>
+
+- <span data-ttu-id="8d77d-115">Du behöver ett Twitter-konto för din organisation. måste du logga in på det här kontot när du inställningar för anslutningen.</span><span class="sxs-lookup"><span data-stu-id="8d77d-115">You need a Twitter account for your organization; you need to sign in to this account when setting up the connector.</span></span>
+
+- <span data-ttu-id="8d77d-116">Din organisation måste ha en giltig Azure-prenumeration.</span><span class="sxs-lookup"><span data-stu-id="8d77d-116">Your organization must have a valid Azure subscription.</span></span> <span data-ttu-id="8d77d-117">Om du inte har en befintlig Azure-prenumeration kan du registrera dig för något av följande alternativ:</span><span class="sxs-lookup"><span data-stu-id="8d77d-117">If you don't have an existing Azure subscription, you can sign up for one of these options:</span></span>
+
+    - [<span data-ttu-id="8d77d-118">Registrera dig för en kostnadsfri Azure-prenumeration på ett år</span><span class="sxs-lookup"><span data-stu-id="8d77d-118">Sign up for a free one year Azure subscription</span></span>](https://azure.microsoft.com/free) 
+
+    - [<span data-ttu-id="8d77d-119">Registrera dig för en Azure-prenumeration med betalning efter användning</span><span class="sxs-lookup"><span data-stu-id="8d77d-119">Sign up for a Pay-As-You-Go Azure subscription</span></span>](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
+
+    > [!NOTE]
+    > <span data-ttu-id="8d77d-120">Den [kostnadsfria Azure Active Directory-prenumeration](use-your-free-azure-ad-subscription-in-office-365.md) som ingår i Microsoft 365-prenumerationen har inte stöd för anslutningarna i Säkerhets- & efterlevnadscenter.</span><span class="sxs-lookup"><span data-stu-id="8d77d-120">The [free Azure Active Directory subscription](use-your-free-azure-ad-subscription-in-office-365.md) that's included with your Microsoft 365 subscription doesn't support the connectors in the Security & Compliance Center.</span></span>
+
+- <span data-ttu-id="8d77d-121">Med Twitter-anslutningen kan totalt 200 000 objekt importeras under en och samma dag.</span><span class="sxs-lookup"><span data-stu-id="8d77d-121">The Twitter connector can import a total of 200,000 items in a single day.</span></span> <span data-ttu-id="8d77d-122">Om det finns fler än 200 000 Twitter-objekt på ett dygn importeras inga av dessa objekt till Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="8d77d-122">If there are more than 200,000 Twitter items in a day, none of those items will be imported to Microsoft 365.</span></span>
+
+- <span data-ttu-id="8d77d-123">Den användare som uppsättningar av Twitter-anslutningen i efterlevnadscentret för Microsoft 365 (i steg 5) måste tilldelas rollen Importera och exportera postlåda i Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="8d77d-123">The user who sets up the Twitter connector in the Microsoft 365 compliance center (in Step 5) must be assigned the Mailbox Import Export role in Exchange Online.</span></span> <span data-ttu-id="8d77d-124">Som standard är den här rollen inte tilldelad någon rollgrupp i Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="8d77d-124">By default, this role isn't assigned to any role group in Exchange Online.</span></span> <span data-ttu-id="8d77d-125">Du kan lägga till rollen Importera och exportera postlåda i rollgruppen Organisationshantering i Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="8d77d-125">You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online.</span></span> <span data-ttu-id="8d77d-126">Du kan också skapa en rollgrupp, tilldela rollen Importera och exportera postlåda och sedan lägga till lämpliga användare som medlemmar.</span><span class="sxs-lookup"><span data-stu-id="8d77d-126">Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members.</span></span> <span data-ttu-id="8d77d-127">Mer information finns i avsnitten [Skapa rollgrupper](/Exchange/permissions-exo/role-groups#create-role-groups) och [Ändra rollgrupper](/Exchange/permissions-exo/role-groups#modify-role-groups) i artikeln "Hantera rollgrupper i Exchange Online".</span><span class="sxs-lookup"><span data-stu-id="8d77d-127">For more information, see the  [Create role groups](/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".</span></span>
+
+## <a name="step-1-create-an-app-in-azure-active-directory"></a><span data-ttu-id="8d77d-128">Steg 1: Skapa en app i Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="8d77d-128">Step 1: Create an app in Azure Active Directory</span></span>
+
+<span data-ttu-id="8d77d-129">Det första steget är att registrera ett nytt program i Azure Active Directory (AAD).</span><span class="sxs-lookup"><span data-stu-id="8d77d-129">The first step is to register a new app in Azure Active Directory (AAD).</span></span> <span data-ttu-id="8d77d-130">Det här programmet motsvarar webbappresursen som du implementerade i steg 2 för Twitter-anslutningen.</span><span class="sxs-lookup"><span data-stu-id="8d77d-130">This app corresponds to the web app resource that you implement in Step 2 for the Twitter connector.</span></span>
+
+<span data-ttu-id="8d77d-131">Stegvisa instruktioner finns i Skapa [en app i Azure Active Directory](deploy-twitter-connector.md#step-1-create-an-app-in-azure-active-directory).</span><span class="sxs-lookup"><span data-stu-id="8d77d-131">For step-by-step instructions, see [Create an app in Azure Active Directory](deploy-twitter-connector.md#step-1-create-an-app-in-azure-active-directory).</span></span>
+
+<span data-ttu-id="8d77d-132">När det här steget är slutfört (genom att följa de stegvisa instruktionerna) sparar du följande information i en textfil.</span><span class="sxs-lookup"><span data-stu-id="8d77d-132">During the completion of this step (by following the step-by-step instructions), you'll save the following information to a text file.</span></span> <span data-ttu-id="8d77d-133">Dessa värden används i senare steg i distributionsprocessen.</span><span class="sxs-lookup"><span data-stu-id="8d77d-133">These values will be used in later steps in the deployment process.</span></span>
+
+- <span data-ttu-id="8d77d-134">AAD-program-ID</span><span class="sxs-lookup"><span data-stu-id="8d77d-134">AAD application ID</span></span>
+
+- <span data-ttu-id="8d77d-135">AAD-programhemlighet</span><span class="sxs-lookup"><span data-stu-id="8d77d-135">AAD application secret</span></span>
+
+- <span data-ttu-id="8d77d-136">Klientorganisations-ID</span><span class="sxs-lookup"><span data-stu-id="8d77d-136">Tenant Id</span></span>
+
+## <a name="step-2-deploy-connector-web-service-from-github-repository-to-your-azure-account"></a><span data-ttu-id="8d77d-137">Steg 2: Distribuera anslutarwebbtjänsten från GitHub till Azure-kontot</span><span class="sxs-lookup"><span data-stu-id="8d77d-137">Step 2: Deploy connector web service from GitHub repository to your Azure account</span></span>
+
+<span data-ttu-id="8d77d-138">Nästa steg är att distribuera källkoden för Twitter-anslutningsappen som använder Twitter API för att ansluta till ditt Twitter-konto och extrahera data så att du kan importera dem till Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="8d77d-138">The next step is to deploy the source code for the Twitter connector app that will use Twitter API to connect to your Twitter account and extract data so you can import it to Microsoft 365.</span></span> <span data-ttu-id="8d77d-139">Den Twitter-anslutning som du distribuerar för organisationen laddar upp objekten från organisationens Twitter-konto till den Azure Storage som skapas i det här steget.</span><span class="sxs-lookup"><span data-stu-id="8d77d-139">The Twitter connector that you deploy for your organization will upload the items from your organization's Twitter account to the Azure Storage location that is created in this step.</span></span> <span data-ttu-id="8d77d-140">När du har skapat en Twitter-anslutning i efterlevnadscentret för Microsoft 365 (i steg 5) kopierar tjänsten Microsoft 365-import Twitter-data från Azure Storage-platsen till en postlåda i Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="8d77d-140">After you create a Twitter connector in the Microsoft 365 compliance center (in Step 5), the Microsoft 365 Import service will copy the Twitter data from the Azure Storage location to a mailbox in Microsoft 365.</span></span> <span data-ttu-id="8d77d-141">Som beskrivs ovan i avsnittet [Innan du konfigurerar en koppling](#before-you-set-up-a-connector) måste du ha en giltig Azure-prenumeration för att skapa ett Azure Storage konto.</span><span class="sxs-lookup"><span data-stu-id="8d77d-141">As previous explained in the [Before you set up a connector](#before-you-set-up-a-connector) section, you must have a valid Azure subscription to create an Azure Storage account.</span></span>
+
+<span data-ttu-id="8d77d-142">Så här distribuerar du källkoden för Twitter-anslutningsappen:</span><span class="sxs-lookup"><span data-stu-id="8d77d-142">To deploy the source code for the Twitter connector app:</span></span>
+
+1. <span data-ttu-id="8d77d-143">Gå till [den GitHub webbplatsen](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet).</span><span class="sxs-lookup"><span data-stu-id="8d77d-143">Go to [this GitHub site](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet).</span></span>
+
+2. <span data-ttu-id="8d77d-144">Klicka **på Distribuera till Azure.**</span><span class="sxs-lookup"><span data-stu-id="8d77d-144">Click **Deploy to Azure**.</span></span>
+
+<span data-ttu-id="8d77d-145">Stegvisa instruktioner finns i Distribuera [anslutarwebbtjänsten från e GitHub till ditt Azure-konto.](deploy-twitter-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account)</span><span class="sxs-lookup"><span data-stu-id="8d77d-145">For step-by-step instructions, see [Deploy the connector web service from GitHub to your Azure account](deploy-twitter-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account).</span></span>
+
+<span data-ttu-id="8d77d-146">När du följer de stegvisa anvisningarna för att slutföra det här steget anger du följande information</span><span class="sxs-lookup"><span data-stu-id="8d77d-146">While you follow the step-by-step instructions to complete this step, you provide the following information</span></span>
+
+- <span data-ttu-id="8d77d-147">APISecretKey: Du skapar den här hemligheten när det här steget slutförs.</span><span class="sxs-lookup"><span data-stu-id="8d77d-147">APISecretKey: You create this secret during the completion of this step.</span></span> <span data-ttu-id="8d77d-148">Det används i steg 5.</span><span class="sxs-lookup"><span data-stu-id="8d77d-148">It's used in Step 5.</span></span>
+
+- <span data-ttu-id="8d77d-149">tenantId: Klientorganisations-ID för Microsoft 365 organisationen som du kopierade när du har skapat Twitter-appen i Azure Active Directory steg 1.</span><span class="sxs-lookup"><span data-stu-id="8d77d-149">tenantId: The tenant ID of your Microsoft 365 organization that you copied after creating the Twitter app in Azure Active Directory in Step 1.</span></span>
+
+<span data-ttu-id="8d77d-150">När du har slutfört det här steget måste du kopiera programmets tjänst-URL (till `https://twitterconnector.azurewebsites.net` exempel).</span><span class="sxs-lookup"><span data-stu-id="8d77d-150">After completing this step, be sure to copy the app Service URL (for example, `https://twitterconnector.azurewebsites.net`).</span></span> <span data-ttu-id="8d77d-151">Du måste använda URL-adressen för att slutföra steg 3, steg 4 och steg 5).</span><span class="sxs-lookup"><span data-stu-id="8d77d-151">You need to use this URL to complete Step 3, Step 4, and Step 5).</span></span>
+
+## <a name="step-3-create-developer-app-on-twitter"></a><span data-ttu-id="8d77d-152">Steg 3: Skapa utvecklarappen på Twitter</span><span class="sxs-lookup"><span data-stu-id="8d77d-152">Step 3: Create developer app on Twitter</span></span>
+
+<span data-ttu-id="8d77d-153">Nästa steg är att skapa och konfigurera en utvecklarapp på Twitter.</span><span class="sxs-lookup"><span data-stu-id="8d77d-153">The next step is to create and configure a developer app on Twitter.</span></span> <span data-ttu-id="8d77d-154">Den anpassade anslutningen som du skapar i steg 7 använder Twitter-appen för att interagera med Twitter API:t för att hämta data från organisationens Twitter-konto.</span><span class="sxs-lookup"><span data-stu-id="8d77d-154">The custom connector that you create in Step 7 uses the Twitter app to interact with the Twitter API to obtain data from your organization's Twitter account.</span></span>
+
+<span data-ttu-id="8d77d-155">Stegvisa instruktioner finns i Skapa [Twitter-appen.](deploy-twitter-connector.md#step-3-create-the-twitter-app)</span><span class="sxs-lookup"><span data-stu-id="8d77d-155">For step-by-step instructions, see [Create the Twitter app](deploy-twitter-connector.md#step-3-create-the-twitter-app).</span></span>
+
+<span data-ttu-id="8d77d-156">När det här steget är slutfört (genom att följa de stegvisa anvisningarna) sparar du följande information i en textfil.</span><span class="sxs-lookup"><span data-stu-id="8d77d-156">During the completion of this step (by following the step-by-step instructions), you save the following information to a text file.</span></span> <span data-ttu-id="8d77d-157">Dessa värden används för att konfigurera Appen Twitter-anslutning i steg 4.</span><span class="sxs-lookup"><span data-stu-id="8d77d-157">These values will be used to configure the Twitter connector app in Step 4.</span></span>
+
+- <span data-ttu-id="8d77d-158">Api-nyckel för Twitter</span><span class="sxs-lookup"><span data-stu-id="8d77d-158">Twitter API Key</span></span>
+
+- <span data-ttu-id="8d77d-159">Twitter API-hemlig nyckel</span><span class="sxs-lookup"><span data-stu-id="8d77d-159">Twitter API Secret Key</span></span>
+
+- <span data-ttu-id="8d77d-160">Twitter-åtkomsttoken</span><span class="sxs-lookup"><span data-stu-id="8d77d-160">Twitter Access Token</span></span>
+
+- <span data-ttu-id="8d77d-161">Twitter Access Token Secret</span><span class="sxs-lookup"><span data-stu-id="8d77d-161">Twitter Access Token Secret</span></span>
+
+## <a name="step-4-configure-the-twitter-connector-app"></a><span data-ttu-id="8d77d-162">Steg 4: Konfigurera appen Twitter-anslutning</span><span class="sxs-lookup"><span data-stu-id="8d77d-162">Step 4: Configure the Twitter connector app</span></span>
+
+<span data-ttu-id="8d77d-163">Nästa steg är att lägga till konfigurationsinställningar i Twitter-anslutningsappen som du distribuerade i steg 2.</span><span class="sxs-lookup"><span data-stu-id="8d77d-163">The next step is to add configurations settings to the Twitter connector app that you deployed in Step 2.</span></span> <span data-ttu-id="8d77d-164">Det gör du genom att gå till startsidan för kopplingsappen och konfigurera den.</span><span class="sxs-lookup"><span data-stu-id="8d77d-164">You do this by going to the home page of your connector app and configuring it.</span></span>
+
+<span data-ttu-id="8d77d-165">Stegvisa instruktioner finns i Konfigurera [webbprogrammet för anslutning.](deploy-twitter-connector.md#step-4-configure-the-connector-web-app)</span><span class="sxs-lookup"><span data-stu-id="8d77d-165">For step-by-step instructions, see [Configure the connector web app](deploy-twitter-connector.md#step-4-configure-the-connector-web-app).</span></span>
+
+<span data-ttu-id="8d77d-166">När det här steget är slutfört (genom att följa de stegvisa instruktionerna) anger du följande information (som du har kopierat till en textfil när du har slutfört föregående steg):</span><span class="sxs-lookup"><span data-stu-id="8d77d-166">During the completion of this step (by following the step-by-step instructions), you'll provide the following information (that you've copied to a text file after completing the previous steps):</span></span>
+
+- <span data-ttu-id="8d77d-167">Twitter API-nyckel (erhållen i steg 3)</span><span class="sxs-lookup"><span data-stu-id="8d77d-167">Twitter API Key (obtained in Step 3)</span></span>
+
+- <span data-ttu-id="8d77d-168">Twitter API-hemlig nyckel (erhållen i steg 3)</span><span class="sxs-lookup"><span data-stu-id="8d77d-168">Twitter API Secret Key (obtained in Step 3)</span></span>
+
+- <span data-ttu-id="8d77d-169">Twitter-åtkomsttoken (erhållen i steg 3)</span><span class="sxs-lookup"><span data-stu-id="8d77d-169">Twitter Access Token (obtained in Step 3)</span></span>
+
+- <span data-ttu-id="8d77d-170">Twitter Access Token Secret (erhållen i steg 3)</span><span class="sxs-lookup"><span data-stu-id="8d77d-170">Twitter Access Token Secret (obtained in Step 3)</span></span>
+
+- <span data-ttu-id="8d77d-171">Azure Active Directory program-ID (AAD-program-ID: t som hämtas i steg 1)</span><span class="sxs-lookup"><span data-stu-id="8d77d-171">Azure Active Directory application ID (the AAD application ID obtained in Step 1)</span></span>
+
+- <span data-ttu-id="8d77d-172">Azure Active Directory programhemlighet (AAD-programhemligheten som erhålls i steg 1)</span><span class="sxs-lookup"><span data-stu-id="8d77d-172">Azure Active Directory application secret (the AAD application secret obtained in Step 1)</span></span>
+
+## <a name="step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center"></a><span data-ttu-id="8d77d-173">Steg 5: Konfigurera en Twitter-anslutning i Microsoft 365 för efterlevnadscenter</span><span class="sxs-lookup"><span data-stu-id="8d77d-173">Step 5: Set up a Twitter connector in the Microsoft 365 compliance center</span></span>
+
+<span data-ttu-id="8d77d-174">Det sista steget är att konfigurera Twitter-anslutningen i efterlevnadscentret för Microsoft 365 som importerar data från organisationens Twitter-konto till en viss postlåda i Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="8d77d-174">The final step is to set up the Twitter connector in the Microsoft 365 compliance center that will import data from your organization's Twitter account to a specified mailbox in Microsoft 365.</span></span> <span data-ttu-id="8d77d-175">När du har slutfört det här steget Microsoft 365 importtjänsten börjar importera data från organisationens Twitter-konto till Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="8d77d-175">After you complete this step, the Microsoft 365 Import service will start importing data from your organization's Twitter account to Microsoft 365.</span></span>
+
+<span data-ttu-id="8d77d-176">Stegvisa anvisningar finns i Konfigurera en [Twitter-anslutning i Microsoft 365 efterlevnadscenter.](deploy-twitter-connector.md#step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center)</span><span class="sxs-lookup"><span data-stu-id="8d77d-176">For step-by-step instructions, see [Set up a Twitter connector in the Microsoft 365 compliance center](deploy-twitter-connector.md#step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center).</span></span> 
+
+<span data-ttu-id="8d77d-177">När det här steget är slutfört (genom att följa de stegvisa instruktionerna) anger du följande information (som du har kopierat till en textfil när du har slutfört stegen).</span><span class="sxs-lookup"><span data-stu-id="8d77d-177">During the completion of this step (by following the step-by-step instructions), you'll provide the following information (that you've copied to a text file after completing the steps).</span></span>
+
+- <span data-ttu-id="8d77d-178">Azure-apptjänst-URL (erhållen i steg 2, till exempel `https://twitterconnector.azurewebsites.net` )</span><span class="sxs-lookup"><span data-stu-id="8d77d-178">Azure app service URL (obtained in Step 2; for example, `https://twitterconnector.azurewebsites.net`)</span></span>
+
+- <span data-ttu-id="8d77d-179">APISecretKey (som du skapade i steg 2)</span><span class="sxs-lookup"><span data-stu-id="8d77d-179">APISecretKey (that you created in Step 2)</span></span>

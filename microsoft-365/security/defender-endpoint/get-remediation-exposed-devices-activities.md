@@ -1,7 +1,7 @@
 ---
-title: Lista över exponerade enheter med en åtgärdsaktivitet
+title: Lista exponerade enheter av en åtgärdsaktivitet
 description: Returnerar information om exponerade enheter för den angivna åtgärdsaktiviteten.
-keywords: apis, remediation, remediation api, get, remediation tasks,
+keywords: apis, remediation, remediation api, get, remediation tasks, remediation exposed devices
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,23 +15,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 097d8d784ca7c02fce1fc0e9fc51bdc272951f4a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 92b5a93e86a20f36469d2b5cb606a8ddc2e97077
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061194"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241718"
 ---
-# <a name="list-exposed-devices-of-one-remediation-activity"></a><span data-ttu-id="182f1-104">Lista över exponerade enheter med en åtgärdsaktivitet</span><span class="sxs-lookup"><span data-stu-id="182f1-104">List exposed devices of one remediation activity</span></span>
+# <a name="list-exposed-devices-of-one-remediation-activity"></a><span data-ttu-id="e36fa-104">Lista exponerade enheter av en åtgärdsaktivitet</span><span class="sxs-lookup"><span data-stu-id="e36fa-104">List exposed devices of one remediation activity</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="182f1-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="182f1-105">**Applies to:**</span></span>
+<span data-ttu-id="e36fa-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="e36fa-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="182f1-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="182f1-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="182f1-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="182f1-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [<span data-ttu-id="e36fa-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="e36fa-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="e36fa-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="e36fa-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="182f1-108">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="182f1-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="182f1-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="182f1-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="e36fa-108">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="e36fa-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="e36fa-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="e36fa-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -39,34 +39,43 @@ ms.locfileid: "52061194"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="api-description"></a><span data-ttu-id="182f1-110">API-beskrivning</span><span class="sxs-lookup"><span data-stu-id="182f1-110">API Description</span></span>
+## <a name="api-description"></a><span data-ttu-id="e36fa-110">API-beskrivning</span><span class="sxs-lookup"><span data-stu-id="e36fa-110">API Description</span></span>
 
-<span data-ttu-id="182f1-111">Returnerar information om exponerade enheter för den angivna åtgärdsaktiviteten.</span><span class="sxs-lookup"><span data-stu-id="182f1-111">Returns information about exposed devices for the specified remediation task.</span></span>
+<span data-ttu-id="e36fa-111">Returnerar information om exponerade enheter för den angivna åtgärdsaktiviteten.</span><span class="sxs-lookup"><span data-stu-id="e36fa-111">Returns information about exposed devices for the specified remediation task.</span></span>
 
-<span data-ttu-id="182f1-112">[Läs mer om åtgärder](tvm-remediation.md).</span><span class="sxs-lookup"><span data-stu-id="182f1-112">[Learn more about remediation activities](tvm-remediation.md).</span></span>
+<span data-ttu-id="e36fa-112">[Läs mer om åtgärder](tvm-remediation.md).</span><span class="sxs-lookup"><span data-stu-id="e36fa-112">[Learn more about remediation activities](tvm-remediation.md).</span></span>
 
-## <a name="list-exposed-devices-associated-with-a-remediation-task-id"></a><span data-ttu-id="182f1-113">Lista över exponerade enheter som är associerade med en åtgärdsaktivitet (ID)</span><span class="sxs-lookup"><span data-stu-id="182f1-113">List exposed devices associated with a remediation task (id)</span></span>
+## <a name="list-exposed-devices-associated-with-a-remediation-task-id"></a><span data-ttu-id="e36fa-113">Lista över exponerade enheter som är associerade med en åtgärdsaktivitet (ID)</span><span class="sxs-lookup"><span data-stu-id="e36fa-113">List exposed devices associated with a remediation task (id)</span></span>
 
-<span data-ttu-id="182f1-114">**URL:** GET: /api/remediationTasks/ \{ id \} /machineReferences</span><span class="sxs-lookup"><span data-stu-id="182f1-114">**URL:** GET: /api/remediationTasks/\{id\}/machineReferences</span></span>
+<span data-ttu-id="e36fa-114">**URL:** GET: /api/remediationTasks/ \{ id \} /machineReferences</span><span class="sxs-lookup"><span data-stu-id="e36fa-114">**URL:** GET: /api/remediationTasks/\{id\}/machineReferences</span></span>
 
-<span data-ttu-id="182f1-115">**Egenskapsinformation**</span><span class="sxs-lookup"><span data-stu-id="182f1-115">**Properties** details</span></span>
+## <a name="permissions"></a><span data-ttu-id="e36fa-115">Behörigheter</span><span class="sxs-lookup"><span data-stu-id="e36fa-115">Permissions</span></span>
 
-<span data-ttu-id="182f1-116">Egenskap (id)</span><span class="sxs-lookup"><span data-stu-id="182f1-116">Property (id)</span></span> | <span data-ttu-id="182f1-117">Datatyp</span><span class="sxs-lookup"><span data-stu-id="182f1-117">Data type</span></span> | <span data-ttu-id="182f1-118">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="182f1-118">Description</span></span> | <span data-ttu-id="182f1-119">Exempel</span><span class="sxs-lookup"><span data-stu-id="182f1-119">Example</span></span>
+<span data-ttu-id="e36fa-116">En av följande behörigheter krävs för att anropa detta API.</span><span class="sxs-lookup"><span data-stu-id="e36fa-116">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="e36fa-117">Mer information, inklusive hur du väljer behörigheter, finns i Använda [Microsoft Defender för slutpunkts-API:er för mer information.](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="e36fa-117">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)</span></span>
+
+<span data-ttu-id="e36fa-118">Behörighetstyp</span><span class="sxs-lookup"><span data-stu-id="e36fa-118">Permission type</span></span> | <span data-ttu-id="e36fa-119">Behörighet</span><span class="sxs-lookup"><span data-stu-id="e36fa-119">Permission</span></span> | <span data-ttu-id="e36fa-120">Visningsnamn för behörighet</span><span class="sxs-lookup"><span data-stu-id="e36fa-120">Permission display name</span></span>
+:---|:---|:---
+<span data-ttu-id="e36fa-121">Program</span><span class="sxs-lookup"><span data-stu-id="e36fa-121">Application</span></span> | <span data-ttu-id="e36fa-122">RemediationTask.Read.All</span><span class="sxs-lookup"><span data-stu-id="e36fa-122">RemediationTask.Read.All</span></span> | <span data-ttu-id="e36fa-123">\'Läsa sårbarhetsinformation om hot och sårbarhetshantering\'</span><span class="sxs-lookup"><span data-stu-id="e36fa-123">\'Read Threat and Vulnerability Management vulnerability information\'</span></span>
+<span data-ttu-id="e36fa-124">Delegerat (arbets- eller skolkonto)</span><span class="sxs-lookup"><span data-stu-id="e36fa-124">Delegated (work or school account)</span></span> | <span data-ttu-id="e36fa-125">RemediationTask.Read.Read</span><span class="sxs-lookup"><span data-stu-id="e36fa-125">RemediationTask.Read.Read</span></span> | <span data-ttu-id="e36fa-126">\'Läsa sårbarhetsinformation om hot och sårbarhetshantering\'</span><span class="sxs-lookup"><span data-stu-id="e36fa-126">\'Read Threat and Vulnerability Management vulnerability information\'</span></span>
+
+## <a name="properties-details"></a><span data-ttu-id="e36fa-127">Egenskapsinformation</span><span class="sxs-lookup"><span data-stu-id="e36fa-127">Properties details</span></span>
+
+<span data-ttu-id="e36fa-128">Egenskap (id)</span><span class="sxs-lookup"><span data-stu-id="e36fa-128">Property (id)</span></span> | <span data-ttu-id="e36fa-129">Datatyp</span><span class="sxs-lookup"><span data-stu-id="e36fa-129">Data type</span></span> | <span data-ttu-id="e36fa-130">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="e36fa-130">Description</span></span> | <span data-ttu-id="e36fa-131">Exempel</span><span class="sxs-lookup"><span data-stu-id="e36fa-131">Example</span></span>
 :---|:---|:---|:---
-<span data-ttu-id="182f1-120">id</span><span class="sxs-lookup"><span data-stu-id="182f1-120">id</span></span> | <span data-ttu-id="182f1-121">Sträng</span><span class="sxs-lookup"><span data-stu-id="182f1-121">String</span></span> | <span data-ttu-id="182f1-122">Enhets-ID</span><span class="sxs-lookup"><span data-stu-id="182f1-122">Device ID</span></span> | <span data-ttu-id="182f1-123">w2957837fwda8w9ae7f023dba081059dw8d94503</span><span class="sxs-lookup"><span data-stu-id="182f1-123">w2957837fwda8w9ae7f023dba081059dw8d94503</span></span>
-<span data-ttu-id="182f1-124">computerDnsName</span><span class="sxs-lookup"><span data-stu-id="182f1-124">computerDnsName</span></span> | <span data-ttu-id="182f1-125">Sträng</span><span class="sxs-lookup"><span data-stu-id="182f1-125">String</span></span> | <span data-ttu-id="182f1-126">Enhetsnamn</span><span class="sxs-lookup"><span data-stu-id="182f1-126">Device name</span></span> | <span data-ttu-id="182f1-127">PC-SRV2012R2Foo.UserNameVldNet.local</span><span class="sxs-lookup"><span data-stu-id="182f1-127">PC-SRV2012R2Foo.UserNameVldNet.local</span></span>
-<span data-ttu-id="182f1-128">osPlatform</span><span class="sxs-lookup"><span data-stu-id="182f1-128">osPlatform</span></span> | <span data-ttu-id="182f1-129">Sträng</span><span class="sxs-lookup"><span data-stu-id="182f1-129">String</span></span> | <span data-ttu-id="182f1-130">Operativsystem för enheter</span><span class="sxs-lookup"><span data-stu-id="182f1-130">Device operating system</span></span> | <span data-ttu-id="182f1-131">WindowsServer2012R2</span><span class="sxs-lookup"><span data-stu-id="182f1-131">WindowsServer2012R2</span></span>
-<span data-ttu-id="182f1-132">rbacGroupName</span><span class="sxs-lookup"><span data-stu-id="182f1-132">rbacGroupName</span></span> | <span data-ttu-id="182f1-133">Sträng</span><span class="sxs-lookup"><span data-stu-id="182f1-133">String</span></span> | <span data-ttu-id="182f1-134">Namnet på enhetsgruppen som enheten är associerad med</span><span class="sxs-lookup"><span data-stu-id="182f1-134">Name of the device group this device is associated with</span></span> | <span data-ttu-id="182f1-135">Servrar</span><span class="sxs-lookup"><span data-stu-id="182f1-135">Servers</span></span>
+<span data-ttu-id="e36fa-132">id</span><span class="sxs-lookup"><span data-stu-id="e36fa-132">id</span></span> | <span data-ttu-id="e36fa-133">Sträng</span><span class="sxs-lookup"><span data-stu-id="e36fa-133">String</span></span> | <span data-ttu-id="e36fa-134">Enhets-ID</span><span class="sxs-lookup"><span data-stu-id="e36fa-134">Device ID</span></span> | <span data-ttu-id="e36fa-135">w2957837fwda8w9ae7f023dba081059dw8d94503</span><span class="sxs-lookup"><span data-stu-id="e36fa-135">w2957837fwda8w9ae7f023dba081059dw8d94503</span></span>
+<span data-ttu-id="e36fa-136">computerDnsName</span><span class="sxs-lookup"><span data-stu-id="e36fa-136">computerDnsName</span></span> | <span data-ttu-id="e36fa-137">Sträng</span><span class="sxs-lookup"><span data-stu-id="e36fa-137">String</span></span> | <span data-ttu-id="e36fa-138">Enhetsnamn</span><span class="sxs-lookup"><span data-stu-id="e36fa-138">Device name</span></span> | <span data-ttu-id="e36fa-139">PC-SRV2012R2Foo.UserNameVldNet.local</span><span class="sxs-lookup"><span data-stu-id="e36fa-139">PC-SRV2012R2Foo.UserNameVldNet.local</span></span>
+<span data-ttu-id="e36fa-140">osPlatform</span><span class="sxs-lookup"><span data-stu-id="e36fa-140">osPlatform</span></span> | <span data-ttu-id="e36fa-141">Sträng</span><span class="sxs-lookup"><span data-stu-id="e36fa-141">String</span></span> | <span data-ttu-id="e36fa-142">Operativsystem för enheter</span><span class="sxs-lookup"><span data-stu-id="e36fa-142">Device operating system</span></span> | <span data-ttu-id="e36fa-143">WindowsServer2012R2</span><span class="sxs-lookup"><span data-stu-id="e36fa-143">WindowsServer2012R2</span></span>
+<span data-ttu-id="e36fa-144">rbacGroupName</span><span class="sxs-lookup"><span data-stu-id="e36fa-144">rbacGroupName</span></span> | <span data-ttu-id="e36fa-145">Sträng</span><span class="sxs-lookup"><span data-stu-id="e36fa-145">String</span></span> | <span data-ttu-id="e36fa-146">Namnet på enhetsgruppen som enheten är associerad med</span><span class="sxs-lookup"><span data-stu-id="e36fa-146">Name of the device group this device is associated with</span></span> | <span data-ttu-id="e36fa-147">Servrar</span><span class="sxs-lookup"><span data-stu-id="e36fa-147">Servers</span></span>
 
-## <a name="example"></a><span data-ttu-id="182f1-136">Exempel</span><span class="sxs-lookup"><span data-stu-id="182f1-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e36fa-148">Exempel</span><span class="sxs-lookup"><span data-stu-id="e36fa-148">Example</span></span>
 
-<span data-ttu-id="182f1-137">**Exempel på** förfrågan</span><span class="sxs-lookup"><span data-stu-id="182f1-137">**Request** example</span></span>
+### <a name="request-example"></a><span data-ttu-id="e36fa-149">Exempel på förfrågan</span><span class="sxs-lookup"><span data-stu-id="e36fa-149">Request example</span></span>
 
 ```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c/machinereferences
 ```
 
-<span data-ttu-id="182f1-138">**Svarsexempel**</span><span class="sxs-lookup"><span data-stu-id="182f1-138">**Response** example</span></span>
+### <a name="response-example"></a><span data-ttu-id="e36fa-150">Svarsexempel</span><span class="sxs-lookup"><span data-stu-id="e36fa-150">Response example</span></span>
 
 ```json
 {
@@ -104,14 +113,14 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="182f1-139">Se även</span><span class="sxs-lookup"><span data-stu-id="182f1-139">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e36fa-151">Se även</span><span class="sxs-lookup"><span data-stu-id="e36fa-151">See also</span></span>
 
-- [<span data-ttu-id="182f1-140">Åtgärdsmetoder och egenskaper</span><span class="sxs-lookup"><span data-stu-id="182f1-140">Remediation methods and properties</span></span>](get-remediation-methods-properties.md)
+- [<span data-ttu-id="e36fa-152">Åtgärdsmetoder och egenskaper</span><span class="sxs-lookup"><span data-stu-id="e36fa-152">Remediation methods and properties</span></span>](get-remediation-methods-properties.md)
 
-- [<span data-ttu-id="182f1-141">Få en åtgärdsaktivitet efter ID</span><span class="sxs-lookup"><span data-stu-id="182f1-141">Get one remediation activity by Id</span></span>](get-remediation-one-activity.md)
+- [<span data-ttu-id="e36fa-153">Få en åtgärdsaktivitet efter ID</span><span class="sxs-lookup"><span data-stu-id="e36fa-153">Get one remediation activity by Id</span></span>](get-remediation-one-activity.md)
 
-- [<span data-ttu-id="182f1-142">Lista alla åtgärder</span><span class="sxs-lookup"><span data-stu-id="182f1-142">List all remediation activities</span></span>](get-remediation-all-activities.md)
+- [<span data-ttu-id="e36fa-154">Lista alla åtgärdsaktiviteter</span><span class="sxs-lookup"><span data-stu-id="e36fa-154">List all remediation activities</span></span>](get-remediation-all-activities.md)
 
-- [<span data-ttu-id="182f1-143">Riskbaserade hot & sårbarhetshantering</span><span class="sxs-lookup"><span data-stu-id="182f1-143">Risk-based threat & vulnerability management</span></span>](next-gen-threat-and-vuln-mgt.md)
+- [<span data-ttu-id="e36fa-155">Riskbaserade hot & hantering av säkerhetsrisker</span><span class="sxs-lookup"><span data-stu-id="e36fa-155">Risk-based threat & vulnerability management</span></span>](next-gen-threat-and-vuln-mgt.md)
 
-- [<span data-ttu-id="182f1-144">Svagheter i organisationen</span><span class="sxs-lookup"><span data-stu-id="182f1-144">Vulnerabilities in your organization</span></span>](tvm-weaknesses.md)
+- [<span data-ttu-id="e36fa-156">Svagheter i organisationen</span><span class="sxs-lookup"><span data-stu-id="e36fa-156">Vulnerabilities in your organization</span></span>](tvm-weaknesses.md)
