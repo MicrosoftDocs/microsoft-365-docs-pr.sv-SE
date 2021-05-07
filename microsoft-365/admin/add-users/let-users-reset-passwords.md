@@ -25,20 +25,20 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Lär dig hur du återställer dina lösenord med självbetjäningsverktyget för återställning av lösenord.
-ms.openlocfilehash: 0842430eda8c96647dd12d0da6d0c9e0481346dc
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: d24e826287f69f867fdaf9a5c8b424dbad4e0ebb
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023767"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241838"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Låt användare återställa sina egna lösenord
 
-Som Microsoft 365-administratör kan du [](https://go.microsoft.com/fwlink/p/?LinkId=522677) låta personer använda självbetjäningsverktyget för återställning av lösenord så att du inte behöver återställa lösenord åt dem. Det innebär mindre jobb för dig!
+Som Microsoft 365 kan du låta personer använda [](https://go.microsoft.com/fwlink/p/?LinkId=522677) självbetjäningsverktyget för återställning av lösenord så att du inte behöver återställa lösenord för dem. Det innebär mindre jobb för dig!
   
 ## <a name="before-you-begin"></a>Innan du börjar
   
-- Självbetjäning för återställning av  lösenord för molnanvändare krävs kostnadsfritt i alla betalabonnemang för Microsoft 365 Business, Education eller Office 365 för ideella föreningar. Det fungerar inte med utvärderingsversionen av Microsoft 365.
+- Självbetjäning för återställning av  lösenord för molnanvändare är kostnadsfritt i alla betalabonnemang Microsoft 365 företag, utbildning och ideella föreningar. Det fungerar inte med utvärderingsversionen Microsoft 365 utvärderingsversion.
 
 - Tjänsten använder Azure. Du får automatiskt den här funktionen **kostnadsfritt** när du utför de här stegen. Det kostar dig ingenting att aktivera självbetjäning för återställning av lösenord om du inte använder andra Azure-funktioner.
 
@@ -57,24 +57,8 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
 ## <a name="steps-let-people-reset-their-own-passwords"></a>Steg: Låt användare återställa sina egna lösenord
 
 Anvisningarna aktiverar Självbetjäning för återställning av lösenord för alla i organisationen.
-  
-::: moniker range="o365-worldwide"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrationscentret går</a>du till sidan **Inställningar** > **för** organisationen.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret går</a>du till sidan **Sekretess för** \> **&amp; inställningar.**
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret går</a>du till sidan **Inställningar för** \>  \> **sekretesssäkerhet. &amp;**
-
-::: moniker-end
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrationscentret går</a>du till sidan **Inställningar**  >  **Inställningar för** organisation.
 
 2. Högst upp på sidan **Organisationsinställningar** väljer du fliken **Säkerhet &** Sekretess.
   

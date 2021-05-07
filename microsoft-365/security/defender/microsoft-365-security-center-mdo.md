@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: a0ab671f879119c1ab490bcb726f08224e59bfdd
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 62a917b36355335c8eb52d83caecdbba691f8175
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114418"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52242138"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft Defender för Office 365 i Microsoft 365 Säkerhetscenter
 
@@ -45,14 +45,20 @@ Om du letar efter efterlevnadsrelaterade objekt kan du gå till [Microsoft 365 E
 
 Den här tabellen är en snabbreferens för områdena e-post och samarbete där ändringar har gjorts mellan **Säkerhets- och efterlevnadscenter** och **Microsoft 365 Säkerhets** portalen. Klicka på länkarna om du vill läsa mer om dessa områden.
 
-|**Område**  |**Beskrivning av ändring**  |
-|---------|---------|
-| [Sidan E-postenhet](../office-365-security/mdo-email-entity-page.md) | Den här sidan **förenar** information om e-postmeddelanden som varit utspridda över olika sidor eller vyer tidigare. Undersökning av e-post efter hot och trender är *centraliserat*. Rubrikinformation och förhandsgranskning av e-post kan nås via samma e-postsida och annan användbar e-postrelaterad information. På samma sätt kan detonationsstatus för skadliga bifogade filer eller URL-adresser finnas på en flik på samma sida. Sidan E-postenhet ger administratörer och säkerhetsteam möjlighet att förstå ett hot via e-postmeddelande och dess status, snabbt, och sedan agera för att snabbt avgöra hur hanteringen ska hanteras.  |
-| [Undersökning](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center) | Samlar AIR-funktioner i [Defender för Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) och [Defender för Endpoint](../defender-endpoint/automated-investigations.md). Med de här uppdateringarna och förbättringarna kommer säkerhetsgruppen att kunna visa information om automatiska undersökningar och åtgärder som gäller för e-post, samarbetsinnehåll, användarkonton och enheter, allt på ett och samma ställe.  | 
-| [Varningsvyn](../../compliance/alert-policies.md) | Fönstret **Visa varningar** visas i Office Säkerhets- och efterlevnadscenter innehåller nu länkar till Microsoft 365 Säkerhetscenter. Klicka på länken **Öppna aviseringssida** så öppnas Microsoft 365 Säkerhetscenter. Du kan öppna sidan **Visa varningar** genom att klicka på en Office 365-avisering i kön Aviseringar. |
-| [Attacksimulering-utbildning](../office-365-security/attack-simulation-training-insights.md)   | Använd Attacksimulering-utbildning för att köra realistiska attackscenarier i din organisation. De här simulerade attackerna kan utbilda din personal innan ett riktigt angrepp påverkar din organisation. Attacksimulering-utbildning innehåller fler alternativ, förbättrade rapporter och förbättrade utbildningsflöden som gör det enklare att leverera och hantera dina attacker samt utbildningsscenarier.  |
+<br>
+
+****
+
+|Område|Beskrivning av ändring|
+|---|---|
+|[Sidan E-postenhet](../office-365-security/mdo-email-entity-page.md)|Den här sidan **förenar** information om e-postmeddelanden som varit utspridda över olika sidor eller vyer tidigare. Undersökning av e-post efter hot och trender är *centraliserat*. Rubrikinformation och förhandsgranskning av e-post kan nås via samma e-postsida och annan användbar e-postrelaterad information. På samma sätt kan detonationsstatus för skadliga bifogade filer eller URL-adresser finnas på en flik på samma sida. Sidan E-postenhet ger administratörer och säkerhetsteam möjlighet att förstå ett hot via e-postmeddelande och dess status, snabbt, och sedan agera för att snabbt avgöra hur hanteringen ska hanteras.|
+|[Undersökning](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center)|Samlar AIR-funktioner i [Defender för Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) och [Defender för Endpoint](../defender-endpoint/automated-investigations.md). Med de här uppdateringarna och förbättringarna kommer säkerhetsgruppen att kunna visa information om automatiska undersökningar och åtgärder som gäller för e-post, samarbetsinnehåll, användarkonton och enheter, allt på ett och samma ställe.|
+|[Varningsvyn](../../compliance/alert-policies.md)|Fönstret **Visa varningar** visas i Office Säkerhets- och efterlevnadscenter innehåller nu länkar till Microsoft 365 Säkerhetscenter. Klicka på länken **Öppna aviseringssida** så öppnas Microsoft 365 Säkerhetscenter. Du kan öppna sidan **Visa varningar** genom att klicka på en Office 365-avisering i kön Aviseringar.|
+|[Attacksimulering-utbildning](../office-365-security/attack-simulation-training-insights.md)|Använd Attacksimulering-utbildning för att köra realistiska attackscenarier i din organisation. De här simulerade attackerna kan utbilda din personal innan ett riktigt angrepp påverkar din organisation. Attacksimulering-utbildning innehåller fler alternativ, förbättrade rapporter och förbättrade utbildningsflöden som gör det enklare att leverera och hantera dina attacker samt utbildningsscenarier.|
+|
 
 Inga ändringar i dessa områden:
+
 - [Explorer](../office-365-security/threat-explorer.md)
 - [Principer och regler](../../compliance/alert-policies.md)
 - [Kampanj](../office-365-security/campaigns.md)
@@ -66,7 +72,7 @@ Titta också i avsnittet **Relaterad information** längst ned i den här artike
 > Microsoft 365 säkerhetsportalen (https://security.microsoft.com) kombinerar säkerhetsfunktioner i https://securitycenter.windows.com och https://protection.office.com. Vad som visas beror dock på din prenumeration. Om du bara har Microsoft Defender för Office 365 Abonnemang 1 eller 2, som fristående prenumerationer, visas inte funktioner för säkerhet för slutpunkter och Defender för Office Abonnemang 1-kunder, ser inte objekt som hotanalys.
 
 > [!TIP]
->  Alla Exchange Online Protection (EOP) ingår i säkerhetscentret i Microsoft 365, eftersom EOP är en av grundelementen i Defender för Office 365.
+> Alla Exchange Online Protection (EOP) ingår i säkerhetscentret i Microsoft 365, eftersom EOP är en av grundelementen i Defender för Office 365.
 
 ## <a name="microsoft-365-security-center-home-page"></a>Startsida för Microsoft 365 Säkerhetscenter
 
@@ -80,7 +86,7 @@ Startsidan på portalen visar:
 - twitter-inlägg från Microsofts twitter-feed för säkerhetsinformation
 - och mer sammanfattningsinformation
 
-Använd den **Guidade rundturen** för att ta en snabb rundtur på sidorna endpoint eller e-post och samarbete. Observera att det du ser här beror på om du har licens för Defender för Office 365 och/eller Defender för Endpoint.  
+Använd den **Guidade rundturen** för att ta en snabb rundtur på sidorna endpoint eller e-post och samarbete. Observera att det du ser här beror på om du har licens för Defender för Office 365 och/eller Defender för Endpoint.
 
 Den innehåller en länk till **Office 365 Säkerhets- och efterlevnadscenter** att jämföra. Den sista länken är till sidan **Nyheter** beskriver de senaste uppdateringarna.
 
@@ -89,6 +95,7 @@ Den innehåller en länk till **Office 365 Säkerhets- och efterlevnadscenter** 
 Det vänstra navigeringsfältet eller snabbstartsfältet ser bekant ut. Det finns dock några nya och uppdaterade element i det här säkerhetscentret.
 
 ### <a name="incidents-and-alerts"></a>Incidenter och aviseringar
+
 Samlar incidenter och aviseringar för e-post, enheter och identiteter. Aviseringar är nu tillgängliga under noden Undersökning och bidrar till att ge en bredare bild av ett angrepp. Aviseringssidan ger en fullständig kontext till aviseringen genom att kombinera attackerande signaler för att skapa en detaljerad historia. Tidigare var aviseringar specifika för olika arbetsbelastningar. I en ny, enhetlig upplevelse samlas nu en enhetlig vy av aviseringar för arbetsbelastningar. Du kan snabbt göra triage, undersöka och vidta effektiva åtgärder.
 
 - [Läs mer om undersökningar](incidents-overview.md)
@@ -96,8 +103,8 @@ Samlar incidenter och aviseringar för e-post, enheter och identiteter. Aviserin
 
 ![Snabbstartfältet Aviseringar och Åtgärder](../../media/converge-1-alerts-and-actions.png)
 
-
 ### <a name="hunting"></a>Jakt
+
 Sök proaktivt efter hot, skadlig programvara och skadlig aktivitet i dina slutpunkter, Office 365-postlådor med mera med hjälp av [avancerade sökfrågor](advanced-hunting-overview.md). De här kraftfulla frågorna kan användas för att hitta och granska hotindikatorer och -enheter för både kända och potentiella hot.
 
 [Anpassade identifieringsregler](/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules) kan byggas från avancerade sökfrågor för att du proaktivt ska kunna hålla koll på händelser som kan vara intrångsaktiviteter och felkonfigurerade enheter.
@@ -109,11 +116,13 @@ Sök proaktivt efter hot, skadlig programvara och skadlig aktivitet i dina slutp
 [Läs mer om Åtgärdscenter](m365d-action-center.md)
 
 #### <a name="threat-analytics"></a>Analys av hot
+
 Få information om hot från Microsofts säkerhetsexpert. Hotanalys hjälper säkerhetsteam att bli mer effektiva när de står inför nya hot. Hotanalys omfattar:
 
 - E-postrelaterade identifieringar och metoder från Microsoft Defender för Office 365. Det här är ett tillägg till de slutpunktsdata som redan är tillgängliga från Microsoft Defender för Endpoint.
-- Incidenter visas relaterat till hoten. 
-- Förbättrad upplevelse för att snabbt identifiera och använda hanterbar information i rapporterna. Du kan komma Hotanalys antingen från det övre vänstra navigeringsfältet i Microsoft 365 Säkerhetscenter eller från ett dedikerat instrumentpanelskort som visar de viktigaste hoten för din organisation. 
+- Incidenter visas relaterat till hoten.
+- Förbättrad upplevelse för att snabbt identifiera och använda hanterbar information i rapporterna.
+Du kan komma Hotanalys antingen från det övre vänstra navigeringsfältet i Microsoft 365 Säkerhetscenter eller från ett dedikerat instrumentpanelskort som visar de viktigaste hoten för din organisation.
 
 Läs mer om hur du [spåra och svara på nya hot med hjälp av hotanalys](./threat-analytics.md)
 
@@ -129,22 +138,22 @@ Visa rapporter, ändra dina inställningar och ändra användarroller.
 
 :::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="Snabbstartmenyn för behörigheter och rapporter i Microsoft 365 Säkerhetscenter, till vänster i säkerhetscentret.":::
 
-
 > [!NOTE]
-> Defender för Office 365-användare kan nu *hantera och rotera* DKIM-nycklar (DomainKeys Identified Mail) via Microsoft 365 Säkerhetscenter: https://security.microsoft.com/threatpolicy eller gå till **Princip och regler > Hotprinciper > DKIM**.
+> För Defender för Office 365-användare kan  du nu hantera och rotera DKIM-tangenter (DomainKeys Identified Mail) via säkerhetscentret i Microsoft 365: eller gå till <https://security.microsoft.com/threatpolicy> Policy & **rules** \> **Threat policies** DKIM (principregler för \> **DKIM).**
 
 ## <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Exempel på Avancerad sökning för Microsoft Defender för Office 365
+
 Vill du komma igång med att söka efter e-posthot med avancerad sökning? Prova det här:
 
 Avsnittet [Komma igång](/microsoft-365/security/office-365-security/defender-for-office-365.md#getting-started) i artikeln [Microsoft Defender för Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) har en logisk tidig konfigurationsdel som ser ut så här:
 
 1. Konfigurera allt med "anti" i namnet.
-- anti-skadlig kod
-- anti-phishing
-- anti-spam
+   - anti-skadlig kod
+   - anti-phishing
+   - anti-spam
 2. Konfigurera allt med "säkra" i namnet.
-- säkra länkar
-- Säkra bifogade filer
+   - säkra länkar
+   - Säkra bifogade filer
 3. Försvara arbets belastningarna (t. ex. SharePoint Online, OneDrive och Teams)
 4. Skydda med Zero-Hour auto purge
 
@@ -152,12 +161,11 @@ Tillsammans med en [länk](../office-365-security/protect-against-threats.md) ka
 
 Det sista steget i **Komma igång** skyddar användare med **Automatisk rensning**, även kallat ZAP. Det kan vara mycket viktigt att veta om du har lyckats med ZAP:a ett misstänkt eller skadligt e-postmeddelande efter leverans.
 
-Att snabbt kunna navigera till Kusto frågespråk för att leta efter problem är en fördel med konvergering av dessa två säkerhetscenter. Säkerhetsteam kan övervaka ZAP-missar genom att göra nästa steg [här](https://security.microsoft.com/advanced-hunting), under **Jakt** > **Avancerad jakt**.
+Att snabbt kunna navigera till Kusto frågespråk för att leta efter problem är en fördel med konvergering av dessa två säkerhetscenter. Säkerhetsteam kan övervaka ZAP-misser genom att vidta nästa steg [här,](https://security.microsoft.com/advanced-hunting)under **Sökning** \> **efter avancerad sökning.**
 
 1. Klicka på Fråga på sidan Avancerad sökning.
 1. Kopiera frågan nedan till frågefönstret.
 1. Välj Kör fråga.
-
 
 ```kusto
 EmailPostDeliveryEvents 
@@ -178,6 +186,7 @@ LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, Lo
 Data från den här frågan visas i resultatpanelen under själva frågan. Resultaten innehåller information som ‘Enhetsnamn’, ‘KontoVisningsNamn’ och ‘ZapTid’ i en anpassningsbar resultatuppsättning. Resultat kan även exporteras för posterna. Om frågan är en du behöver igen väljer du **Spara** > **Spara som** och lägger till frågan i din lista med frågor, delade frågor eller communityfrågor.
 
 ## <a name="related-information"></a>Relaterad information
+
 - [Microsoft Defender för Office 365 i Microsoft 365 Säkerhetscenter](microsoft-365-security-center-mdo.md)
 - [Åtgärdscentret](./m365d-action-center.md)
 - [E-post- och samarbetsaviseringar](../../compliance/alert-policies.md#default-alert-policies)

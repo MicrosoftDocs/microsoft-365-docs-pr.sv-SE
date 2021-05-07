@@ -1,0 +1,312 @@
+---
+title: Skapa och hantera utvärderingar i Microsoft Compliance Manager
+f1.keywords:
+- NOCSH
+ms.author: chvukosw
+author: chvukosw
+manager: laurawi
+audience: Admin
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+ms.collection: M365-security-compliance
+search.appverid:
+- MOE150
+- MET150
+description: Skapa utvärderingar i Microsoft Compliance Manager för att hjälpa dig att uppfylla kraven i bestämmelser och certifieringar som är viktiga för din organisation.
+ms.openlocfilehash: b8051a036f2ffda2f3a2840880318466a2ec71af
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "52162619"
+---
+# <a name="build-and-manage-assessments-in-compliance-manager"></a>Skapa och hantera utvärderingar i Efterlevnadshanteraren
+
+**I den här artikeln:** Lär dig hur du anpassar Efterlevnadshanteraren för din organisation genom att skapa och hantera **utvärderingar.** Den här artikeln beskriver hur du skapar utvärderingar, organiserar dem i **grupper,** arbetar med **kontroller,** accepterar **uppdateringar** och exporterar **utvärderingsrapporter.**
+
+> [!IMPORTANT]
+> Vilka utvärderingar som är tillgängliga för din organisation beror på ditt licensavtal. [Granska informationen](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+
+## <a name="introduction-to-assessments"></a>Introduktion till utvärderingar
+
+Med Efterlevnadshanteraren kan du hantera efterlevnad av utvärderingar för bestämmelser och certifieringar som gäller för din organisation. Utvärderingar är gruppering av kontroller från en viss regel, standard eller princip. Efterlevnadshanteraren gör det enkelt att börja följa upp din efterlevnad genom att tillhandahålla färdiga bedömningar som omfattar en mängd olika bransch- och regionala bestämmelser och certifieringar.
+
+Varje bedömning skapas utifrån en [utvärderingsmall.](compliance-manager-templates.md) Mallar fungerar som ett ramverk som innehåller de kontroller, förbättringsåtgärder och Microsoft-åtgärder som krävs för att slutföra utvärderingen. Genom att konfigurera de mest relevanta utvärderingarna för din organisation kan du implementera principer och driftsmetoder för att begränsa risken för efterlevnad.
+
+Alla dina utvärderingar visas på utvärderingssidan. Läs mer om [hur du filtrerar vyn över dina utvärderingar och tolkar statustillstånd](compliance-manager-setup.md#assessments-page).
+
+## <a name="data-protection-baseline-default-assessment"></a>Standardutvärdering av dataskyddsbaslinje
+
+Microsoft tillhandahåller en standardutvärdering i **Compliance** Manager för den grundläggande Microsoft 365 du vill **komma igång.** Den här baslinjeutvärderingen har en uppsättning kontroller för viktiga bestämmelser och standarder för dataskydd och allmän datastyrning. Den här baslinjen ritar främst element från NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) och ISO (International Organization for Standardization), samt från FedRAMP (Federal Risk and Authorization Management Program) och GDPR (General Data Protection Regulation of the Eu).
+
+Den här utvärderingen används för att beräkna din ursprungliga efterlevnadspoäng första gången du kommer till Efterlevnadshanteraren innan du konfigurerar andra utvärderingar. Efterlevnadshanteraren samlar in initiala signaler från dina Microsoft 365 lösningar. Du kan direkt se hur organisationen fungerar i förhållande till viktiga standarder och bestämmelser för dataskydd, och se förslag på förbättringsåtgärder att vidta.
+
+Efterlevnadshanteraren blir mer användbar när du skapar och hanterar dina egna utvärderingar för att uppfylla organisationens behov.
+
+## <a name="assessment-creation-overview"></a>Översikt över att skapa bedömningar
+
+Det finns tre sätt att konfigurera utvärderingar:
+
+1. [Använd en färdig bedömning.](#use-a-pre-built-assessment)
+2. [Utöka en färdig bedömning så att den passar dina egna behov.](#extend-a-pre-built-assessment)
+3. [Skapa en egen anpassad bedömning.](#create-your-own-custom-assessment)
+
+> [!NOTE]
+> Endast användare som har rollen Global administratör, Efterlevnadshanteraren och Utvärderingshanteraren kan skapa och ändra utvärderingar. Läs mer om [roller och behörigheter.](compliance-manager-setup.md#set-user-permissions-and-assign-roles)
+
+**Använda en färdig bedömning**
+
+Kickstarta din efterlevnadsresa genom att välja en bedömning som redan har gjorts av Efterlevnadshanteraren. Vi tillhandahåller ett brett urval [mallar](compliance-manager-templates.md) för bestämmelser och certifieringar som passar branscher, regioner och vanliga dataskyddsstandarder, som GDPR och ISO 27001. Mallarna innehåller kontroller och förbättringsåtgärder som hjälper dig att uppfylla kraven för en viss certifiering. Du uppmanas att välja en mall när du börjar [skapa en utvärdering](#use-a-pre-built-assessment).
+
+**Utöka en färdig bedömning så att den passar dina behov**
+
+Du kan ändra en bedömning av Efterlevnadshanteraren – en process som vi kallar "utvidga" – genom att lägga till egna kontroller och åtgärder som bättre passar organisationens behov. Om du till exempel i allmänhet behöver följa HIPAA men kräver ytterligare dataskydd och säkerhetskontroller kan du utöka vår HIPAA-mall genom att lägga till egna kontroller i den. Läs instruktionerna för [att utöka en färdig bedömning.](#extend-a-pre-built-assessment)
+
+**Skapa en egen anpassad bedömning**
+
+Du kan skapa en egen utvärdering helt från grunden och hålla reda på exakt vad din organisation behöver. För att du ska kunna skapa en egen bedömning måste du först skapa en egen mall för utvärderingen i Efterlevnadshanteraren. Se anvisningarna för [att skapa en egen anpassad bedömning.](#create-your-own-custom-assessment)
+
+## <a name="understand-groups-before-creating-assessments"></a>Förstå grupper innan du skapar utvärderingar
+
+Innan du skapar eller ändrar utvärderingar är det viktigt att du förstår hur grupper fungerar. När du skapar en utvärdering måste du tilldela den till en grupp under processen. Därför rekommenderar vi att du planerar en grupperingsstrategi för utvärderingarna innan du skapar utvärderingar.
+
+### <a name="what-are-groups"></a>Vad är grupper
+
+Grupper är behållare som gör att du kan organisera utvärderingar. Du kan gruppera utvärderingar på ett sätt som är logiskt för dig, till exempel per år eller bestämmelser, eller baserat på din organisations avdelningar eller geografiska områden. Nedan finns exempel på två grupper och deras underliggande utvärderingar:
+
+- **FFIEC IS assessment 2020**
+  - FFIEC IS
+- **Datasäkerhets- och sekretessutvärderingar**
+  - ISO 27001:2013
+  - ISO 27018:2014
+
+När två olika utvärderingar i samma grupp delar förbättringsåtgärder som hanteras av dig kommer alla uppdateringar som du gör av en åtgärds implementeringsinformation eller status automatiskt att synkroniseras till samma åtgärd i någon annan utvärdering i gruppen. Med den här synkroniseringen kan du implementera en förbättringsåtgärd och uppfylla flera krav över flera bestämmelser.
+
+### <a name="how-to-create-a-group"></a>Så här skapar du en grupp
+
+Du skapar en grupp under processen med att [skapa en ny utvärdering.](#to-create-an-assessment)
+
+Grupper kan inte skapas som fristående enheter. En grupp måste innehålla minst en bedömning. För att kunna skapa en grupp måste du först skapa en bedömning som ska göras i gruppen.
+
+### <a name="what-to-know-when-working-with-groups"></a>Vad du ska veta när du arbetar med grupper
+
+- Gruppnamn måste vara unika inom organisationen.
+- Grupper har inte säkerhetsegenskaper. Alla behörigheter är kopplade till utvärderingar.
+- När du har lagt till en bedömning för en grupp kan gruppering inte ändras.
+- Relaterade utvärderingskontroller i olika utvärderingar inom samma grupp uppdateras automatiskt när de är slutförda.
+- Om du lägger till en ny utvärdering i en befintlig grupp kopieras vanlig information från utvärderingar i den gruppen till den nya utvärderingen.
+- Grupper kan innehålla utvärderingar för samma certifiering eller föreskrifter, men varje grupp kan bara innehålla en utvärdering för ett visst produktcertifieringspar. En grupp kan till exempel inte innehålla två utvärderingar för Office 365 och NIST CSF. En grupp kan innehålla flera utvärderingar för samma produkt endast om motsvarande certifiering eller bestämmelser för var och en är olika.
+- Om du tar bort en bedömning bryts relationen mellan utvärderingen och gruppen.
+- Grupper kan inte tas bort.
+- När en ändring görs av en förbättring som visas i flera grupper återspeglas den ändringen i alla fall av den förbättringsåtgärden.
+
+## <a name="use-a-pre-built-assessment"></a>Använda en färdig bedömning
+
+Det finns två utgångspunkter för att skapa en utvärdering från en mall för Efterlevnadshanteraren.
+
+Du kan börja processen från utvärderingssidan genom att välja **knappen Lägg** till utvärdering och sedan gå igenom guiden för att skapa utvärdering. Stegen för den här processen finns nedan.
+
+Du kan också utgå från sidan för utvärderingsmallar genom att leta reda på den mall du vill använda och välja den i listan för att få fram dess informationssida. Välj Skapa bedömning på sidan **med mallinformation.** Du kommer sedan att ange guiden där mallen redan är markerad.
+
+### <a name="to-create-an-assessment"></a>Skapa en bedömning
+
+1. Veta vilken grupp du ska tilldela din utvärdering till eller är redo att skapa en ny för den här utvärderingen. [Läs mer om grupper](#understand-groups-before-creating-assessments).  
+
+2. Gå till **utvärderingssidan** i Efterlevnadshanteraren och välj **Lägg till bedömning.** En utvärderingsguide visas i ett stort utfällt fönster.
+
+3. **Välj en mall**: Välj en mall som ska fungera som grund för din bedömning. Du ser en lista över mallar indelade i kategorierna Ingår och Premium (se [Malltyper](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) för mer information). Välj alternativknappen bredvid den valda mallen och välj sedan **Nästa**.
+
+4. **Namn och grupp:** Ange ett namn för utvärderingen i **fältet Utvärderingsnamn.** Utvärderingsnamn måste vara unika i grupper. Om namnet på din utvärdering matchar namnet på en annan bedömning i en viss grupp får du ett felmeddelande där du uppmanas att skapa ett annat namn.
+
+5. Tilldela utvärderingen till en grupp. Du kan antingen:
+    - Välj **Använd befintlig grupp för** att tilldela den till en grupp som du redan har skapat. eller
+    - Välj **Skapa ny grupp för** att skapa en ny grupp och tilldela den här utvärderingen till den:
+        - Fastställ ett namn på gruppen och ange det i fältet under alternativknappen.
+        - Du kan **kopiera data från en befintlig grupp,** till exempel implementerings- och testningsinformation och dokument, genom att markera lämpliga rutor.
+
+    Välj Nästa när du är **klar.**
+
+6. **Granska och slutför:** Den sista skärmen i guiden visar mallen, namnet och gruppen som valts för utvärderingen. Du kan redigera de här inställningarna via länkarna på skärmen, så att du kommer tillbaka till de relevanta stegen i guiden. Välj Skapa utvärdering när du **är klar.**
+
+7. På nästa skärm bekräftar du att du har skapat den nya utvärderingen. Välj **Klar** för att stänga guiden så visas informationssidan för din nya utvärdering på skärmen.
+
+Om du ser en **utvärderingsskärm** som misslyckades när **du har valt Skapa** utvärdering väljer du Försök **igen** för att skapa din utvärdering igen.
+
+Du kan ändra namnet på utvärderingen efter att  du skapat den genom att välja knappen Redigera namn i det övre högra hörnet på [utvärderingssidan.](#monitor-assessment-progress-and-controls)
+
+## <a name="extend-a-pre-built-assessment"></a>Utöka en färdig bedömning
+
+Du kan ändra en färdig bedömning genom att lägga till egna kontroller och förbättringsåtgärder i utvärderingsmallen. Den här processen kallas "utökning av en Microsoft-mall" i Efterlevnadshanteraren. När du utökar mallen för en bedömning får den alla uppdateringar som släpps av Microsoft, vilket kan hända när det finns ändringar i den relaterade lagstiftningen eller produkten (se Acceptera uppdateringar för [utvärderingar](#accepting-updates-to-assessments)).
+
+Du slutför processen genom att börja på sidan med **utvärderingsmallar** istället för på **utvärderingssidan.**
+
+**Before you begin**
+
+För att förbereda den här processen måste du först sätta ihop ett specialformaterat Excel-kalkylblad för att importera nödvändiga malldata. Det finns särskilda krav för de [formaterade Excel filer](compliance-manager-templates.md#formatting-your-template-data-with-excel) som används i tilläggsprocessen. Läs följande ytterligare punkter för att förhindra fel i importen:
+
+- Kalkylbladet ska bara innehålla de åtgärder och kontroller som du vill lägga till i utvärderingen. 
+- Kalkylbladet kan inte innehålla någon av de kontroller eller åtgärder som redan finns i utvärderingen som du vill ändra.
+- Överväg att inkludera "anknytning" i mallens titel, till exempel tillägget "GDPR – [ditt företagsnamn]." Det gör det enklare att i  listan på sidan för utvärderingsmallar identifiera sig som skild från standardmallen från Microsoft eller en anpassad mall med ett liknande namn.
+
+När du har formaterat kalkylbladet följer du stegen nedan.
+
+**Steg för att utöka en mall för Efterlevnadshanteraren**
+
+1. Gå till sidan **Utvärderingsmallar** och välj **Skapa ny mall**. En guide för att skapa mallar öppnas.
+
+2. Välj den typ av mall du vill skapa. I det här fallet väljer **du Utöka en Microsoft-mall** och **sedan Välj Microsoft-mall**.
+
+3. Ett utfällningsfönster för mallval visas till höger på skärmen med en lista över alla mallar och deras status som aktiv eller inaktiv. Räknare **för aktiverade** mallar visar hur många mallar som för närvarande används av det totala antal som är tillgängliga att använda. Om du är över gränsen visas ett meddelande i meddelandefältet. Mer information [finns](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) i Malltyper.
+
+4. Ett utfällningsfönster för mallval visas till höger på skärmen. Använd **Sök** för att använda filter för att hitta den mall du vill använda
+
+5. När du har hittat mallen väljer du alternativknappen till vänster om dess namn och väljer **sedan Spara**.
+
+6. På nästa skärm visas den mall du har valt. Om det är korrekt väljer du **Nästa.** (Om det är felaktigt väljer **du Välj en annan mall** för att välja igen.)
+
+7. På skärmen **Upload väljer** du  Bläddra för att hitta och ladda upp den formaterade Excel filen med alla obligatoriska malldata.
+
+8. Om det inte är problem med filen visas namnet på den fil som laddats upp på nästa skärm. Välj **Nästa** för att fortsätta (om du behöver ändra filen väljer du Ändra **Upload annan fil**).
+
+    - Om det är problem med filen visas ett felmeddelande högst upp som förklarar vad som är fel. Du måste åtgärda och ladda upp filen på ny tid. Fel uppstår om kalkylbladet är felaktigt formaterat eller om det finns ogiltig information i vissa fält.
+ 
+9. På **skärmen Granska och** slutför visas antalet förbättringsåtgärder och -kontroller och mallens högsta poäng. Välj Nästa när du är redo att **godkänna.** (Om du behöver göra ändringar väljer du **Upload en annan fil**.)
+
+10. På den sista skärmen bekräftar du att en ny mall har skapats. Välj **Klar** för att avsluta guiden.
+
+11. Du kommer till den nya mallens informationssida. Härifrån kan du skapa din utvärdering genom att välja **Skapa bedömning.** Om du vill ha vägledning börjar du #4 i [instruktionerna för utvärderingsskapande ovan.](#to-create-an-assessment)
+
+## <a name="create-your-own-custom-assessment"></a>Skapa en egen anpassad bedömning
+
+Om du vill skapa en anpassad bedömning i Efterlevnadshanteraren måste du skapa en egen mall. Om du vill skapa en egen mall skapar du först ett formaterat Excel-kalkylblad för att importera nödvändiga malldata. Det är också bra att bestämma i förväg vilken grupp du ska tilldela din utvärdering till när du skapar den (läs mer om [grupper).](#what-are-groups)
+
+**Följ stegen nedan för att skapa en anpassad bedömning:**
+
+1. **Formatera Excel filen.** Börja med att formatera dina malldata till ett Excel kalkylblad med hjälp av [de här anvisningarna](compliance-manager-templates.md#formatting-your-template-data-with-excel).
+
+2. **Skapa mallen genom att** följa [de här anvisningarna.](compliance-manager-templates.md#create-a-new-template)
+
+3. **Skapa din bedömning** utifrån mallen. Du kan börja med att öppna mallens informationssida och välja Skapa bedömning **,** eller gå till **utvärderingssidan** och välja **Skapa bedömning.**
+
+4. En utvärderingsguide visas i ett stort utfällfönster. Härifrån kan du följa de anvisningar som börjar på steg #3 i instruktionerna för utvärderingsskapande [,](#to-create-an-assessment)med hjälp av den nya anpassade mallen för utvärdering.
+
+## <a name="delete-an-assessment"></a>Ta bort en bedömning
+
+Om du tar bort en utvärdering tas den bort från listan på utvärderingssidan. Observera följande viktiga punkter om att ta bort utvärderingar:
+
+- **Borttagning av en bedömning är permanent. kan du inte få tillbaka den.** Om du vill använda samma bedömning igen måste du skapa den igen.
+- Om förbättringsåtgärderna i utvärderingen inte förekommer i någon annan bedömning, tas de bort när utvärderingen tas bort.
+- Vi rekommenderar [att du exporterar en](#export-an-assessment-report) rapport av utvärderingen innan du tar bort den permanent.
+
+Följ stegen nedan om du vill ta bort en bedömning:
+
+1. Välj den **utvärdering** du vill ta bort från utvärderingssidan för att öppna utvärderingssidan.
+
+2. Välj **Ta bort** utvärdering i det övre högra hörnet på skärmen.
+
+3. Ett fönster visas där du uppmanas att bekräfta att du vill ta bort utvärderingen permanent. Välj **Ta bort bedömning** för att stänga fönstret. Du får ett bekräftelsefönster på att din utvärdering har tagits bort från Efterlevnadshanteraren.
+
+Om du tar bort den enda utvärderingen i en grupp tas även den gruppen bort från Efterlevnadshanteraren.
+
+> [!NOTE]
+> Du kan inte ta bort alla dina utvärderingar. Organisationer behöver minst en utvärdering för att Efterlevnadshanteraren ska fungera korrekt. Om utvärderingen som du vill ta bort är den enda, lägger du till en annan bedömning innan du tar bort den andra utvärderingen.
+
+## <a name="monitor-assessment-progress-and-controls"></a>Övervaka utvärderingsförloppet och kontroller
+
+Varje utvärdering har en informationssida som ger en snabb överblick över dina framsteg när du genomför utvärderingen. På sidan visas förloppet för slutförande av kontroller samt teststatus för viktiga förbättringsåtgärder i kontrollerna.
+
+### <a name="overview-tab"></a>Fliken Översikt
+
+Översiktsfliken innehåller ett diagram som visar hur mycket du vill slutföra utvärderingen i procent. Det här diagrammet innehåller en uppdelning av punkter från åtgärder du äger och poäng från åtgärder som ägs av Microsoft så att du kan se hur många fler poäng du behöver för att slutföra utvärderingen.
+
+De viktigaste förbättringsåtgärderna för kontroller i utvärderingen anges i den ordning de ger störst möjlighet att tjäna poäng. Det associerade diagrammet visar den sammantagna teststatusen för dina förbättringsåtgärder så att du snabbt kan avgöra vad som har testats och vad som fortfarande behöver göras.
+
+Om du vill komma åt enskilda förbättringsåtgärder går **du till fliken** Kontroller eller fliken **Förbättringsåtgärder.**
+
+### <a name="controls-tab"></a>Fliken Kontroller
+
+På fliken kontroller visas detaljerad information om varje kontroll som mappats till utvärderingen. Ett **diagram över kontrollstatus** visar status för kontroller efter familj, så att du snabbt kan se vilka grupper av kontroller som behöver uppmärksammas.
+
+Nedanför diagrammet visas en tabell med detaljerad information om varje kontroll inom utvärderingen. Kontroller är grupperade efter kontrollfamilj. Expandera varje familjenamn och visa de enskilda kontrollerna som finns i den. Informationen som visas för varje kontroll omfattar:
+
+- **Kontrollrubrik**
+- **Status:** Återspeglar teststatusen för förbättringsåtgärderna i kontrollen 
+    - **Godkänd** – alla förbättringsåtgärder har teststatusen "godkänd" eller så överförs minst en och resten är "utanför omfattningen"
+    -  **Misslyckades** – minst en förbättringsåtgärd har teststatusen "misslyckades"
+    - **Ingen** – alla förbättringsåtgärder har inte testats
+    - **Utanför omfattningen –** alla förbättringsåtgärder är inte utrymmena för den här utvärderingen
+    - **Pågående** – förbättringsåtgärder har en annan status än de som anges ovan, som kan innehålla "pågående", "delvis kredit" eller "oupptäckta"
+- **Kontroll-ID:** Kontrollens ID-nummer, som tilldelats genom motsvarande bestämmelser, standard eller princip
+- **Poäng uppnåt:** antalet poäng som intjänas genom att utföra åtgärder av det totala antalet uppnåliga poäng 
+- **Dina åtgärder:** antalet åtgärder som slutförts av det totala antalet åtgärder som ska utföras
+- **Microsoft-åtgärder:** antalet åtgärder som slutförts av Microsoft 
+
+Om du vill visa information om en kontroll markerar du den på raden i tabellen. På sidan med kontrollinformation visas ett diagram som visar teststatus för åtgärderna i kontrollen. I en tabell under diagrammet visas viktiga förbättringsåtgärder för den kontrollen.
+
+Välj en förbättringsåtgärd i listan för att granska informationssidan för förbättringsåtgärden. På informationssidorna visas teststatus, implementeringsanteckningar och lansering i den rekommenderade lösningen.
+
+### <a name="your-improvement-actions-tab"></a>Fliken för förbättringsåtgärder
+
+På fliken för förbättringsåtgärder visas alla kontroller i utvärderingen som hanteras av din organisation. Statusfältet visar den sammanslagna teststatusen för dina förbättringsåtgärder i utvärderingen så att du snabbt kan avgöra vad som har testats och vad som fortfarande behöver göras. Under stapeln finns en fullständig lista över förbättringsåtgärder och nyckeldetaljer, inklusive: teststatus, antal potentiella och upparbetade poäng, tillhörande föreskrifter och standarder, tillämplig lösning, åtgärdstyp och kontrollfamilj. Läs mer om [hur åtgärder bidrar till ditt efterlevnadsresultat.](compliance-score-calculation.md#action-types-and-points)
+
+Välj en förbättringsåtgärd för att visa informationssidan och välj **länken Starta nu** för att öppna lösningen för att vidta åtgärder.
+
+### <a name="microsoft-actions-tab"></a>Fliken Microsoft-åtgärder
+
+På fliken Microsoft-åtgärder visas alla åtgärder i utvärderingen som hanteras av Microsoft. Listan visar viktiga åtgärder, bland annat: teststatus, poäng som bidrar till din övergripande efterlevnadspoäng, tillhörande bestämmelser och standarder, tillämplig lösning, åtgärdstyp och kontrollfamilj. Välj en förbättringsåtgärd för att visa informationssidan.
+
+Läs mer om [hur kontroller och förbättringsåtgärder spåras och poängs.](compliance-score-calculation.md)
+
+## <a name="accepting-updates-to-assessments"></a>Acceptera uppdateringar för utvärderingar
+
+När en uppdatering är tillgänglig för en utvärdering visas ett meddelande och du kan välja att acceptera uppdateringen eller skjuta upp den till en senare tid.
+
+### <a name="what-causes-an-update"></a>Vad som orsakar en uppdatering
+
+En utvärderingsuppdatering inträffar när det finns underliggande malländringar som påverkar poängsättning. Ändringar kan innefatta justering av kontrollmappning eller annan vägledning baserat på ändringar i föreskrifter eller produktändringar. Utvärderingsuppdateringar kan komma från din organisation (till exempel när [en anpassad mall ändras)](compliance-manager-templates.md#modify-a-template)och från Microsoft.
+
+Om Microsoft uppdaterar en mall för Efterlevnadshanteraren som du har utökat ärver din utvärdering dessa uppdateringar när du har accepterat dem. Din utvärdering behåller de ytterligare attribut som du använt för utvärderingen när du utökade den.
+
+Anpassade utvärderingar som du skapar får inte några malluppdateringar från Microsoft. Anpassade utvärderingar kan få uppdateringar av förbättringsåtgärder, men Microsoft-uppdateringar för kontroll av mappning mellan utvärderingar och förbättringsåtgärder gäller inte för anpassade mallar.
+
+> [!NOTE]
+> Uppdateringar av utvärderingar gäller endast på gruppnivå. Om du har två utvärderingar byggda från samma mall som finns i två olika grupper, har varje utvärdering ett väntande uppdateringsmeddelande och du måste godkänna uppdateringen för varje bedömning i respektive grupp för sig.
+
+#### <a name="where-youll-see-assessment-update-notifications"></a>Var du ser meddelanden om utvärderingsuppdatering
+
+På sidan utvärderingsinformation visas även **etiketten Väntande** uppdatering bredvid utvärderingen med en uppdatering. Välj utvärderingen för att komma till dess informationssida.
+
+Ett meddelande högst upp på sidan med bedömningsinformation visar att det finns en uppdatering för utvärderingen. Välj knappen **Granska uppdatering** i banderollen om du vill granska specifika ändringar och godkänna eller skjuta på uppdateringen.
+
+Sidan med utvärderingsinformation kan också lista förbättringsåtgärder som har **etiketten Väntande** uppdatering bredvid sig. Dessa uppdateringar är för specifika ändringar av själva förbättringsåtgärderna och måste godkännas separat. Mer [information finns i Acceptera uppdateringar för förbättringsåtgärder.](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions)
+
+#### <a name="review-update-to-accept-or-defer"></a>Granska uppdatering för att acceptera eller skjuta på
+
+När du **har valt** Granska uppdatering från sidan utvärderingsinformation visas ett utfällt fönster till höger på skärmen. Det utfällande fönstret innehåller viktig information nedan om den väntande uppdateringen:
+
+- Mallrubriken
+- Källan till uppdateringen (Microsoft, din organisation eller en viss användare)
+- Datumet då uppdateringen skapades
+- En översikt som förklarar uppdateringen
+- Specifik information om ändringarna, inklusive påverkan på efterlevnadsresultatet, hur långt utvärderingen kommer att slutföras och det specifika antalet ändringar av förbättringsåtgärder och kontroller.
+
+Om du **väljer länken Uppdaterad** mall hämtas en Excel fil som innehåller styrdata för versionen av mallen med de väntande uppdateringarna. Om du **väljer länken Aktuell** mall laddas en fil av den befintliga mallen ned utan ändringarna.
+
+Om du vill acceptera uppdateringen och göra ändringarna i din utvärdering väljer du **Acceptera uppdatering.** Godkända ändringar är permanenta.
+
+Om du **väljer** Avbryt tillämpas uppdateringen inte på utvärderingen. Meddelandet Väntar på uppdatering visas fortfarande **tills** du accepterar uppdateringen.
+
+**Därför rekommenderar vi att du accepterar uppdateringar**
+
+Genom att acceptera uppdateringar får du de senaste råden om hur du använder lösningar och vidtar lämpliga förbättringsåtgärder som hjälper dig att uppfylla kraven för certifieringen.
+
+**Varför det kan vara bra att skjuta på en uppdatering**
+
+Om du är mitt i en utvärdering kanske du vill vara säker på att du är klar med arbetet med det innan du accepterar en uppdatering av utvärderingen som kan störa kontrollmappningen. Du kan skjuta upp uppdateringen ett senare tillfälle genom att välja **Avbryt** i den utfällade granskningsuppdateringen.
+
+## <a name="export-an-assessment-report"></a>Exportera en utvärderingsrapport
+
+Du kan exportera en utvärdering till en Excel fil för intressenter i organisationen eller för externa granskare och såser. På sidan utvärderingsinformation väljer du knappen **Generera rapport** längst upp på sidan, som skapar en Excel fil som du kan spara och dela.
+
+Rapporten är en ögonblicksbild av utvärderingen efter datum och tid för exporten. Den innehåller information om kontroller som hanteras av både dig och Microsoft, inklusive implementeringsstatus, testdatum och testresultat.

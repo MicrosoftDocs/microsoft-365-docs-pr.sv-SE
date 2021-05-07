@@ -1,7 +1,7 @@
 ---
-title: Lista över exponerade enheter med en åtgärdsaktivitet
+title: Lista exponerade enheter av en åtgärdsaktivitet
 description: Returnerar information om exponerade enheter för den angivna åtgärdsaktiviteten.
-keywords: apis, remediation, remediation api, get, remediation tasks,
+keywords: apis, remediation, remediation api, get, remediation tasks, remediation exposed devices
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 097d8d784ca7c02fce1fc0e9fc51bdc272951f4a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 92b5a93e86a20f36469d2b5cb606a8ddc2e97077
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061194"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241718"
 ---
-# <a name="list-exposed-devices-of-one-remediation-activity"></a>Lista över exponerade enheter med en åtgärdsaktivitet
+# <a name="list-exposed-devices-of-one-remediation-activity"></a>Lista exponerade enheter av en åtgärdsaktivitet
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -49,7 +49,16 @@ Returnerar information om exponerade enheter för den angivna åtgärdsaktivitet
 
 **URL:** GET: /api/remediationTasks/ \{ id \} /machineReferences
 
-**Egenskapsinformation**
+## <a name="permissions"></a>Behörigheter
+
+En av följande behörigheter krävs för att anropa detta API. Mer information, inklusive hur du väljer behörigheter, finns i Använda [Microsoft Defender för slutpunkts-API:er för mer information.](apis-intro.md)
+
+Behörighetstyp | Behörighet | Visningsnamn för behörighet
+:---|:---|:---
+Program | RemediationTask.Read.All | \'Läsa sårbarhetsinformation om hot och sårbarhetshantering\'
+Delegerat (arbets- eller skolkonto) | RemediationTask.Read.Read | \'Läsa sårbarhetsinformation om hot och sårbarhetshantering\'
+
+## <a name="properties-details"></a>Egenskapsinformation
 
 Egenskap (id) | Datatyp | Beskrivning | Exempel
 :---|:---|:---|:---
@@ -60,13 +69,13 @@ rbacGroupName | Sträng | Namnet på enhetsgruppen som enheten är associerad me
 
 ## <a name="example"></a>Exempel
 
-**Exempel på** förfrågan
+### <a name="request-example"></a>Exempel på förfrågan
 
 ```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c/machinereferences
 ```
 
-**Svarsexempel**
+### <a name="response-example"></a>Svarsexempel
 
 ```json
 {
@@ -110,8 +119,8 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 
 - [Få en åtgärdsaktivitet efter ID](get-remediation-one-activity.md)
 
-- [Lista alla åtgärder](get-remediation-all-activities.md)
+- [Lista alla åtgärdsaktiviteter](get-remediation-all-activities.md)
 
-- [Riskbaserade hot & sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)
+- [Riskbaserade hot & hantering av säkerhetsrisker](next-gen-threat-and-vuln-mgt.md)
 
 - [Svagheter i organisationen](tvm-weaknesses.md)

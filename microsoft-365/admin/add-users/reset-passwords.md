@@ -26,13 +26,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: Läs om hur du återställer lösenord för en användare i en Microsoft 365 för företag-prenumeration.
-ms.openlocfilehash: 24fc6581837f71659a2ecc0359c6967e3969d868
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+description: Läs om hur du återställer lösenord för en användare i Microsoft 365 för företag-prenumeration.
+ms.openlocfilehash: fa368c7f44d4df847cf007568853c11970e7adc1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023983"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241706"
 ---
 # <a name="reset-passwords"></a>Återställ lösenord
 
@@ -54,23 +54,7 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>Steg: Återställa ett företagslösenord för en användare
 
-::: moniker range="o365-worldwide"
-
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
-
-::: moniker-end
 
 2. Markera användaren **på** sidan Aktiva användare och välj sedan **Återställ lösenord.**
 
@@ -84,7 +68,7 @@ Vi rekommenderar att du konfigurerar återställning av egna lösenord. På så 
 
 ## <a name="reset-my-admin-password"></a>Återställa administratörslösenordet
 
-Gör så här om du har glömt ditt lösenord men ändå kan logga in på Microsoft 365 eftersom lösenordet till exempel har sparats i webbläsaren:
+Använd de här stegen om du har glömt ditt lösenord men kan logga in på Microsoft 365 eftersom lösenordet till exempel har sparats i webbläsaren:
 
 1. Välj ditt namn (ikon) i det övre högra hörnet > **Personlig information för** Mitt  >  **konto.**
 
@@ -132,7 +116,7 @@ Mer information finns i [Hantera Microsoft 365 med PowerShell.](../../enterprise
 
 Läs det här blogginlägget av Vasil Michev, Microsoft MVP: [Framtvinga ändring av lösenord för alla användare i Office 365](https://go.microsoft.com/fwlink/?linkid=853693).
   
-## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>Jag har ingen Microsoft 365 för företag-prenumeration
+## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>Jag har ingen prenumeration på Microsoft 365 för företag
 
 Läs mer i den här artikeln: [Jag har glömt användarnamnet eller lösenordet för kontot som jag använder med Office.](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)
   

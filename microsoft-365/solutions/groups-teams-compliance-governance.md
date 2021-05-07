@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Läs mer om kompatibilitetsalternativ för Microsoft 365 grupper, Teams och SharePoint samarbete.
-ms.openlocfilehash: 92b668c5cbf5d105ccd1373a6ef8550400e4539f
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: a9a94f0c1886ac5b60292f5f4d4b9b9d6d84380c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114034"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241682"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Efterlevnadsalternativ för Microsoft 365 grupper, Teams och SharePoint samarbete
 
@@ -34,15 +34,17 @@ Följande tabell innehåller en snabbreferens för de efterlevnadskontroller som
 ||Behålla e-post och innehåll SharePoint grupper|[Läs mer om bevarandeprinciper för SharePoint och OneDrive](../compliance/retention-policies-sharepoint.md)|
 ||Behålla chatt och meddelanden|[Läs mer om bevarandeprinciper för Microsoft Teams](../compliance/retention-policies-teams.md)|
 |Informationsklassificering|||
-||Klassificera grupper och team|[Använda känslighetsetiketter för att skydda innehåll Microsoft Teams, Microsoft 365 grupper och SharePoint webbplatser](../compliance/sensitivity-labels-teams-groups-sites.md)|
+||Klassificera grupper och team|[Använd känslighetsetiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](../compliance/sensitivity-labels-teams-groups-sites.md)|
 ||Klassificera känsligt innehåll automatiskt|[Använda en känslighetsetikett för innehåll automatiskt](../compliance/apply-sensitivity-label-automatically.md)|
 ||Kryptera känsligt innehåll|[Begränsa åtkomst till innehåll med hjälp av känslighetsetiketter för att tillämpa kryptering](../compliance/encryption-sensitivity-labels.md)|
 |Informationsskydd|||
-||Förhindra förlust av känslig information|[Läs mer om skydd mot dataförlust](../compliance/dlp-learn-about-dlp.md)|
+||Förhindra förlust av känslig information|[Mer information om skydd mot dataförlust](../compliance/dlp-learn-about-dlp.md)|
 ||Skydda känslig information i chatten.|[Skydd mot dataförlust och Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
 ||Definiera känslig information för din organisation|[Vanliga typer av känslig information](../compliance/sensitive-information-type-learn-about.md)|
 |Användarsegmentering|||
 ||Begränsa kommunikationen mellan användarsegment|[Informationsbarriärer](../compliance/information-barriers.md)|
+|Datahem|||
+||Lagra data på specifika geoplatser|[Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)|
 
 ## <a name="information-retention"></a>Informationsbevarande
 
@@ -72,7 +74,7 @@ Fler resurser:
 
 Du kan använda känslighetsetiketter för att styra gäståtkomst, grupp- och teamsekretess och åtkomst via ohanterade enheter för grupper och team. Om du använder etiketten konfigureras de här inställningarna automatiskt enligt etikettinställningarna.
 
-- [Använda känslighetsetiketter för att skydda innehåll Microsoft Teams, Microsoft 365 grupper och SharePoint webbplatser](../compliance/sensitivity-labels-teams-groups-sites.md)
+- [Använd känslighetsetiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](../compliance/sensitivity-labels-teams-groups-sites.md)
 
 Du kan konfigurera Microsoft 365 att automatiskt tillämpa känslighetsetiketter på filer och e-postmeddelanden baserat på de villkor du anger, inklusive identifiering av typer av känslig information eller mönstermatchning med utbildande klassificerare.
 
@@ -93,7 +95,7 @@ Fler resurser:
 
 DLP-principer kan förhindra att känslig information oavsiktligt delas mellan olika SharePoint, Exchange och Teams. Du kan skapa principer som anger åtgärder som ska vidtas (t.ex. blockera åtkomst) baserat på en uppsättning regler.
 
-- [Läs mer om skydd mot dataförlust](../compliance/dlp-learn-about-dlp.md)
+- [Mer information om skydd mot dataförlust](../compliance/dlp-learn-about-dlp.md)
 
 Med DLP i Teams kan du skydda känslig information i Teams och kanalmeddelanden genom att ta bort meddelanden som innehåller känslig information.
 
@@ -112,6 +114,14 @@ Om det finns informationsbarriärer kan du segmentera dina data och användare f
 - [Informationsbarriärer i Microsoft Teams](/microsoftteams/information-barriers-in-teams)
 
 - [Använd informationsbarriärer med SharePoint](/sharepoint/information-barriers)
+
+## <a name="data-residency"></a>Datahem
+
+Med Microsoft 365 Multi-Geo kan du tillhandahålla och lagra data i vila på de geoplatser som du har valt att uppfylla krav för datalagring. I en Multi-Geo-miljö består Microsoft 365-klientorganisationen av en central plats (där Microsoft 365-prenumerationen ursprungligen skapades) och en eller flera satellitplatser där du kan lagra data.
+
+- [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)
+
+- [Planera för Microsoft 365 Multi-Geo](/microsoft-365/enterprise/plan-for-multi-geo)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
