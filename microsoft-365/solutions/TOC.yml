@@ -13,7 +13,7 @@
       href: architecture-icons-templates.md
 - name: Microsoft 365 Foundation-lösningar
   items:
-    - name: Underlätta för distansarbetare med Microsoft 365
+    - name: Konfigurera infrastrukturen för distansarbete
       items:
         - name: Översikt
           href: empower-people-to-work-remotely.md
@@ -121,9 +121,9 @@
               href: deploy-voice.md
             - name: Steg 1. Välj din röstlösning
               href: /MicrosoftTeams/cloud-voice-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Steg 2. - Inställning av telefonsystem
+            - name: Steg 2. – Konfigurera telefonsystemet
               href: /microsoftteams/setting-up-your-phone-system?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Steg 3. - Inställning av PSTN-anslutning
+            - name: Steg 3. – Konfigurera PSTN-anslutningen
               items:
                 - name: Samtalsabonnemang-alternativ
                   href: /microsoftteams/set-up-calling-plans?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
