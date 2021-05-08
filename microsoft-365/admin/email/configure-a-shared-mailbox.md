@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: När du har skapat en delad postlåda behöver du konfigurera vissa inställningar för den, till exempel vidarebefordran av e-post och automatiska svar. Senare kanske du vill ändra andra inställningar, till exempel postlådenamnet eller medlemmarna.
-ms.openlocfilehash: 2d0998ba2bdc95a9f78f59527bd9bd6fa98b4c45
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 01d5aaa686e1d64c9ea7d89913d8208f779dcfd1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915920"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52243978"
 ---
 # <a name="configure-shared-mailbox-settings"></a>Redigera inställningar för delad postlåda
 
@@ -34,23 +34,7 @@ När du har [skapat en delad](create-a-shared-mailbox.md)postlåda behöver du k
 
 ## <a name="change-the-name-or-email-alias-of-a-shared-mailbox-or-change-the-primary-email-address"></a>Ändra namn eller e-postalias för en delad postlåda eller ändra den primära e-postadressen
 
-::: moniker range="o365-worldwide"
-
 1. Gå till sidan **Grupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Delade postlådor</a> i administrationscentret.
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a> går du till sidan **Grupper** > **Delade postlådor**. 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a> går du till sidan **Grupper** > **Delade postlådor**. 
-
-::: moniker-end
 
 2. Markera den delade postlådan som du vill redigera och välj sedan **Redigera** bredvid **Namn, E-post, E-postalias**.
 
@@ -62,23 +46,7 @@ När du har [skapat en delad](create-a-shared-mailbox.md)postlåda behöver du k
 
 Du behöver inte tilldela en licens till den delade postlådan för att vidarebefordra e-post som skickas till den. Du kan vidarebefordra meddelandena till en giltig e-postadress eller distributionslista.
 
-::: moniker range="o365-worldwide"
-
 1. Gå till sidan **Grupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Delade postlådor</a> i administrationscentret.
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a> går du till sidan **Grupper** > **Delade postlådor**. 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a> går du till sidan **Grupper** > **Delade postlådor**. 
-
-::: moniker-end
 
 2. Markera den delade postlådan som du vill redigera och välj sedan Vidarebefordran av **e-post** \> **Redigera**.
     
@@ -88,23 +56,7 @@ Du behöver inte tilldela en licens till den delade postlådan för att vidarebe
 
 ## <a name="send-automatic-replies-from-a-shared-mailbox"></a>Skicka automatiska svar från en delad postlåda
 
-::: moniker range="o365-worldwide"
-
 1. Gå till sidan **Grupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Delade postlådor</a> i administrationscentret.
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a> går du till sidan **Grupper** > **Delade postlådor**. 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a> går du till sidan **Grupper** > **Delade postlådor**. 
-
-::: moniker-end
 
 2. Markera den delade postlådan som du vill redigera och välj sedan **Redigera** \> **autosvar.**
     
@@ -125,23 +77,7 @@ Om du vill att alla ska kunna se skickade e-postmeddelanden redigerar du instäl
 
 ## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a>Välj de appar som en delad postlåda kan använda för att komma åt e-post från Microsoft
 
-::: moniker range="o365-worldwide"
-
 1. Gå till sidan **Grupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Delade postlådor</a> i administrationscentret.
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a> går du till sidan **Grupper** > **Delade postlådor**. 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a> går du till sidan **Grupper** > **Delade postlådor**. 
-
-::: moniker-end
 
 2. Markera den delade postlådan som du vill redigera och välj sedan **E-postprogram** \> **Redigera**.
 
@@ -154,23 +90,7 @@ Om du vill att alla ska kunna se skickade e-postmeddelanden redigerar du instäl
 
 Mer information om bevarande av juridiska skäl finns i [Skapa ett bevarande av juridiska skäl.](../../compliance/create-a-litigation-hold.md)
 
-::: moniker range="o365-worldwide"
-
 1. Gå till sidan **Grupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Delade postlådor</a> i administrationscentret.
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a> går du till sidan **Grupper** > **Delade postlådor**. 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a> går du till sidan **Grupper** > **Delade postlådor**. 
-
-::: moniker-end
 
 2. Markera den delade postlådan du vill redigera och välj sedan Bevarande av juridiska **skäl** \> **Redigera**.
 
@@ -183,23 +103,7 @@ Mer information om bevarande av juridiska skäl finns i [Skapa ett bevarande av 
 
 ## <a name="add-or-remove-members"></a>Lägga till eller ta bort medlemmar
 
-::: moniker range="o365-worldwide"
-
 1. Gå till sidan **Grupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Delade postlådor</a> i administrationscentret.
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a> går du till sidan **Grupper** > **Delade postlådor**. 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a> går du till sidan **Grupper** > **Delade postlådor**. 
-
-::: moniker-end
 
 2. Välj den delade postlådan som du vill redigera och välj sedan **Medlemmar** \> **Redigera.**
 
@@ -211,23 +115,7 @@ Mer information om bevarande av juridiska skäl finns i [Skapa ett bevarande av 
 
 ## <a name="add-or-remove-permissions-of-members"></a>Lägga till eller ta bort behörigheter för medlemmar
 
-::: moniker range="o365-worldwide"
-
 1. Gå till sidan **Grupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Delade postlådor</a> i administrationscentret.
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a> går du till sidan **Grupper** > **Delade postlådor**. 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a> går du till sidan **Grupper** > **Delade postlådor**. 
-
-::: moniker-end
 
 2. Markera den delade postlådan som du vill redigera och välj sedan **Medlemmar** \> **Anpassa behörigheter.**
 
@@ -243,23 +131,7 @@ Mer information om bevarande av juridiska skäl finns i [Skapa ett bevarande av 
 
 Om du väljer att inte visa den delade postlådan i den globala adresslistan visas inte postlådan i organisationens adresslista, men den får fortfarande e-post som skickas till den. 
 
-::: moniker range="o365-worldwide"
-
 1. Gå till sidan **Grupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Delade postlådor</a> i administrationscentret.
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a> går du till sidan **Grupper** > **Delade postlådor**. 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a> går du till sidan **Grupper** > **Delade postlådor**. 
-
-::: moniker-end
 
 2. Markera den delade postlådan som du vill redigera och välj sedan **Visa i den globala adresslistan** \> **Redigera.**
 
@@ -268,16 +140,16 @@ Om du väljer att inte visa den delade postlådan i den globala adresslistan vis
 4. Välj **Spara**.
 
 > [!NOTE]
-> Om du döljer en delad postlåda från adresslistan blir det omöjligt för nya medlemmar i den delade postlådan att lägga till den dolda postlådan i sin Outlook-profil tills den delade postlådan visas igen i adresslistan. 
+> Om du döljer en delad postlåda från adresslistan blir det omöjligt för nya medlemmar i delade postlådor att lägga till den dolda postlådan i sin Outlook-profil tills den delade postlådan visas igen i adresslistan. 
 
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-content"></a>Relaterat innehåll
 
-[Om delade postlådor](about-shared-mailboxes.md)
+[Om delade postlådor](about-shared-mailboxes.md) (artikel)
 
-[Skapa en delad postlåda](create-a-shared-mailbox.md)
+[Skapa en delad postlåda](create-a-shared-mailbox.md) (artikel)
 
-[Konvertera en användarpostlåda till en delad postlåda](convert-user-mailbox-to-shared-mailbox.md)
+[Konvertera en användarpostlåda till en delad postlåda](convert-user-mailbox-to-shared-mailbox.md) (artikel)
 
-[Ta bort en licens från en delad postlåda](remove-license-from-shared-mailbox.md)
+[Ta bort en licens från en delad postlåda](remove-license-from-shared-mailbox.md) (artikel)
 
-[Lösa problem med delade postlådor](resolve-issues-with-shared-mailboxes.md)
+[Lösa problem med delade postlådor](resolve-issues-with-shared-mailboxes.md) (artikel)

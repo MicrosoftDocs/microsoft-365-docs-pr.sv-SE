@@ -22,17 +22,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Skaffa Microsoft 365 Admin-appen och lär dig att hantera din online organisation från din telefon eller surfplatta.
-ms.openlocfilehash: 20a44501db43b8cba7f31bcfded039b00f3ab341
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+description: Skaffa appen Microsoft 365 och lär dig att hantera din online organisation från din telefon eller surfplatta.
+ms.openlocfilehash: 2f6b27b409dd456a88a17a9825fae3ec24d787a4
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023947"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244026"
 ---
-# <a name="about-the-microsoft-365-admin-mobile-app"></a>Om Microsoft 365 Admin-mobilappen
+# <a name="about-the-microsoft-365-admin-mobile-app"></a>Om Microsoft 365-mobilappen
 
-Är du en administratör som vanligtvis är på språng? Även om du inte har det kan det finnas tillfällen när du behöver hantera Microsoft 365 från din telefon eller surfplatta. Kolla in den kostnadsfria [Microsoft 365 Admin-appen](https://go.microsoft.com/fwlink/?LinkID=627216), den perfekta assistenten till det webbaserade administrationscentret för Microsoft 365. Du kan ladda ned appen från [Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)och från Google Play [Store.](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)
+Är du en administratör som vanligtvis är på språng? Även om du inte har det kan det finnas tillfällen när du behöver hantera Microsoft 365 din telefon eller surfplatta. Kolla in den [kostnadsfria Microsoft 365-appen Admin](https://go.microsoft.com/fwlink/?LinkID=627216)– den perfekta assistenten till det webbaserade Microsoft 365 administrationscentret. Du kan ladda ned appen från [Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)och från Google Play [Store.](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)
 
 :::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="Skärmbild: Startsidan för administratörsmobilappen, med sökning, meddelandecenter, hälsa och snabblänkar":::
 
@@ -46,7 +46,7 @@ Administratörsappen har många funktioner som gör att du kan hantera Microsoft
 - **Tjänstens hälsa** Övervaka hälsotillståndet för alla tjänster genom att visa aktuell status för tjänsten och information om avbrott i tjänsten.
 - **Meddelanden** Håll dig informerad om all viktig information och alla uppdateringar som rör inlägg i meddelandecentret, tjänstens hälsa och fakturering via push-meddelanden. Du kan även anpassa vad du vill bli meddelad om.
 
-Om du är administratör och du ansvarar för mer än en Microsoft 365-organisation kan du logga in på flera organisationer och snabbt växla mellan dem. Appen har stöd för mörkt tema och finns på 39 språk.
+Om du är administratör och du ansvarar för mer än en Microsoft 365 organisation kan du logga in på flera organisationer och snabbt växla mellan dem. Appen har stöd för mörkt tema och finns på 39 språk.
   
 > [!IMPORTANT]
 > Om du har problem med att använda mobilappen Admin för iOS eller Android kan du skicka ett e-postmeddelande [till oss feedback365@microsoft.com](mailto:feedback365@microsoft.com) berätta det för oss.
@@ -67,21 +67,21 @@ Nedan finns svar på vanliga frågor.
   
 ### <a name="what-do-i-need-to-do-to-be-able-to-use-the-app"></a>Vad behöver jag göra för att kunna använda appen?
 
-Om du vill använda appen måste du ha administratörsbehörighet och en giltig prenumeration på någon av följande Microsoft 365-prenumerationer:
+Om du vill använda appen måste du ha administratörsbehörighet och en giltig prenumeration på någon av följande Microsoft 365 prenumerationer:
 
 - Microsoft 365-applikationer för företag
-- Microsoft 365-appar för företag
+- Microsoft 365 Appar för företag
 - Microsoft 365 Business Premium
 - Microsoft 365 Business Standard
 - Microsoft 365 Business Basic
 - Microsoft 365 E3/E5
 - Office 365: E1, E3/E5
-- Exchange Online-abonnemang
+- Exchange Online abonnemang
 - OneDrive för företag-abonnemang
   
-### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>Kan jag använda appen med min Microsoft 365 Family-prenumeration?
+### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>Kan jag använda appen med min Microsoft 365 Family prenumeration?
 
-Nej, appen fungerar inte med Microsoft 365 Family- eller Microsoft 365 Personal-prenumerationer.
+Nej, appen fungerar inte med Microsoft 365 Family eller Microsoft 365 Personal prenumerationer.
 
 ### <a name="will-the-app-work-if-my-organization-has-directory-synchronization-enabled"></a>Fungerar appen om organisationen har aktiverat katalogsynkronisering?
 
@@ -89,7 +89,7 @@ Ja, men med nedsatt funktionalitet. Du kan logga in och visa tjänstinformation,
   
 ### <a name="what-languages-are-supported-by-the-app"></a>Vilka språk stöds i appen?
 
-Appen har stöd för alla 39 språk som det webbaserade administrationscentret för Microsoft 365 har stöd för. Om du vill ändra språk går du till Inställningar Språk i den vänstra navigeringsmenyn i administrationscentret. Du kan också välja ikonen Språk i avsnittet Snabblänkar på startsidan för  >   mobilappen för  administration. 
+Appen har stöd för alla 39 språk som det webbaserade programmet Microsoft 365 stöder. Om du vill ändra språk går du till **sidan Inställningar** Språk i den vänstra navigeringsmenyn i administrationscentret. Du kan också välja språkikonen i avsnittet Snabblänkar på startsidan för  >  admin-mobilappen.  
   
 ### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a>Hur delar jag tjänstproblem och meddelanden med resten av min organisation?
 
@@ -105,12 +105,12 @@ Du kan prova några vanliga felsökningssteg för mobilappar:
 
 1. Stäng och öppna appen igen.
 1. Avinstallera och installera om appen. Kontrollera att du använder den senaste versionen av programmet.
-1. Om du har programmet Microsoft Authenticator eller Company Portal installerat på enheten kan du försöka installera om det eller uppdatera till den senaste versionen.
+1. Om du har Microsoft Authenticator Företagsportal installerad på enheten kan du försöka installera om den eller uppdatera till den senaste versionen.
 1. Om det inte fungerar kan du skicka ett e-postmeddelande till oss på feedback365@microsoft.com berätta det för oss.
 
 ### <a name="how-do-i-manage-notifications-in-the-app"></a>Hur hanterar jag meddelanden i appen?
 
-I den vänstra navigeringsmenyn går du till **Inställningar**  >  **Meddelanden**. Här kan du hantera tjänstens hälsa, meddelandecenter och faktureringsaviseringar.
+I den vänstra navigeringsmenyn går du **till Inställningar**  >  **Aviseringar.** Här kan du hantera tjänstens hälsa, meddelandecenter och faktureringsaviseringar.
 
 ### <a name="what-do-i-do-if-my-question-isnt-answered"></a>Vad gör jag om min fråga inte besvaras?
 
@@ -118,4 +118,4 @@ I den vänstra navigeringsmenyn går du till **Inställningar**  >  **Meddelande
   
 ## <a name="related-content"></a>Relaterat innehåll 
 
-[Utbildningsvideor om Microsoft 365 för företag](../../business-video/index.yml) (länkar)
+[Microsoft 365 om utbildningsvideor för företag](../../business-video/index.yml) (länksida)

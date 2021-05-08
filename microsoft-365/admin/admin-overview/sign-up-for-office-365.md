@@ -26,12 +26,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Förstå vad du behöver veta innan du går igenom registreringsprocessen för Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 37cbe20a5cc1a7506e8db218c3e9ffe2b4e64478
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 77fe0252a267b13fda19a6842ce0e07b1b8307b1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107032"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244014"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Så här registrerar du dig – hjälp för administratörer
 
@@ -136,4 +136,4 @@ Du behöver inte avbryta utvärderingsversionen. Om du inte köper utvärderings
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Microsoft 365 om utbildningsvideor för företag](../../business-video/index.yml) (länkar)
+[Microsoft 365 om utbildningsvideor för företag](../../business-video/index.yml) (länksida)
