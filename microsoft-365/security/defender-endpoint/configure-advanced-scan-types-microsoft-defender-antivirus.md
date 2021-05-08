@@ -1,27 +1,28 @@
 ---
-title: Konfigurera skanningsalternativ för Microsoft Defender AV
-description: Du kan konfigurera Microsoft Defender AV för att söka igenom lagringsfiler för e-post, kopierings- eller omparseringspunkter, nätverksfiler och arkiverade filer (till exempel ZIP-filer).
+title: Konfigurera skanningsalternativ för Microsoft Defender Antivirus
+description: Du kan konfigurera Microsoft Defender AV för att söka igenom lagringsfiler för e-post, back-up eller omparse-punkter, nätverksfiler och arkiverade filer (till exempel .zip filer).
 keywords: avancerade skanningar, skanning, e-post, arkiv, zip, rar, arkivera, skanna igen
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 72d5024446e56cc7fa1d94a7b9402cbe898db2a8
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 1efa72d5b8d204b6aec1cef05fe3c8afe1ca82f7
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764861"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275316"
 ---
-# <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Konfigurera sökalternativ för Microsoft Defender Antivirus
+# <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Konfigurera alternativ för genomsökning i Microsoft Defender Antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,11 +33,11 @@ ms.locfileid: "51764861"
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>Använda Microsoft Intune för att konfigurera skanningsalternativ
 
-Mer information finns i Konfigurera inställningar för enhetsbegränsningar i [Microsoft Intune](/intune/device-restrictions-configure) och Microsoft Defender Antivirus för [Windows 10 i Intune.](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+Mer [information finns i Konfigurera inställningar Microsoft Intune](/intune/device-restrictions-configure) enhet Microsoft Defender Antivirus enhetbegränsningar för Windows 10 i [Intune.](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
 ## <a name="use-microsoft-endpoint-manager-to-configure-scanning-options"></a>Använda Microsoft Endpoint Manager för att konfigurera skanningsalternativ
 
-Se [Skapa och distribuera principer för program mot skadlig programvara: Genomsökningsinställningar för](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) information om hur du konfigurerar Microsoft Endpoint Manager (current branch).
+Se [Skapa och distribuera principer för program mot skadlig programvara: Genomsökningsinställningar](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) för information om konfigurering av Microsoft Endpoint Manager (current branch).
 
 ## <a name="use-group-policy-to-configure-scanning-options"></a>Konfigurera genomsökningsalternativ med grupprinciper
 
@@ -46,7 +47,7 @@ Så här konfigurerar du grupprincipinställningarna som beskrivs i följande ta
 
 2. I **redigeraren för grupprinciphantering går** du till **Datorkonfiguration och** klickar på **Administrativa mallar**.
 
-3. Expandera trädet till **Windows-komponenter > Microsoft Defender Antivirus** och sedan den **plats** som anges i tabellen nedan.
+3. Expandera trädet för **att Windows delar > Microsoft Defender Antivirus** och sedan den **Plats** som anges i tabellen nedan.
 
 4. Dubbelklicka på den **principinställning** som anges i tabellen nedan och ange önskat alternativ. Klicka **på OK** och upprepa för alla andra inställningar.
 
@@ -55,7 +56,7 @@ Beskrivning | Plats och inställning | Standardinställning (om den inte konfigu
 E-postskanning Se [begränsningar av e-postskanning](#ref1)| Skanna > Aktivera genomsökning av e-post | Inaktiverad | `-DisableEmailScanning`
 Skanna [genom att göra genomläsningspunkter](/windows/win32/fileio/reparse-points) | Skanna > Aktivera skanning avparsningspunkt | Inaktiverad | Kan inte användas
 Skanna mappade nätverksenheter | Skanna > kör fullständig sökning på mappade nätverksenheter | Inaktiverad | `-DisableScanningMappedNetworkDrivesForFullScan`
- Skanna arkivfiler (till exempel .zip- eller .rar-filer). [Undantagslistan för tillägg](configure-extension-file-exclusions-microsoft-defender-antivirus.md) har företräde framför den här inställningen. | Skanna > arkivfiler | Aktiverad | `-DisableArchiveScanning`
+ Skanna arkivfiler (till exempel .zip filer .rar filer). [Undantagslistan för tillägg](configure-extension-file-exclusions-microsoft-defender-antivirus.md) har företräde framför den här inställningen. | Skanna > arkivfiler | Aktiverad | `-DisableArchiveScanning`
 Genomsöka filer i nätverket | Skanna > genomsöka nätverksfiler | Inaktiverad | `-DisableScanningNetworkFiles`
 Skanna packade körbara filer | Skanna > fullpackade körbara filer | Aktiverad | Kan inte användas
 Sök efter flyttbara enheter endast vid fullständiga skanningar | Skanna > flyttbara enheter med Skanna | Inaktiverad | `-DisableRemovableDriveScanning`
@@ -69,17 +70,17 @@ Ange nivån för undermappar i en arkivmapp som ska genomsökas | Skanna > Ange 
 
 ## <a name="use-powershell-to-configure-scanning-options"></a>Använda PowerShell för att konfigurera skanningsalternativ
 
-Mer information om hur du använder PowerShell med Microsoft Defender Antivirus finns i Hantera Microsoft Defender Antivirus med [PowerShell-cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) och [Defender-cmdlets.](/powershell/module/defender/)
+Se [Hantera Microsoft Defender Antivirus med PowerShell-cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) och [Defender-cmdlets för](/powershell/module/defender/) mer information om hur du använder PowerShell med Microsoft Defender Antivirus.
 
 ## <a name="use-wmi-to-configure-scanning-options"></a>Använda WMI för att konfigurera skanningsalternativ
 
-Information om hur du använder WMI-klasser finns [i Windows Defender WMIv2 API:er.](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+Information om hur du använder WMI-klasser [finns Windows Defender WMIv2-API:er.](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 <a id="ref1"></a>
 
 ## <a name="email-scanning-limitations"></a>Begränsningar av e-postskanning
 
-Genomsökning av e-post möjliggör genomsökning av e-postfiler som används av Outlook och andra e-postklienter vid sökning på begäran och schemalagda genomsökningar. Inbäddade objekt i en e-postfil (t.ex. bifogade filer och arkiverade filer) skannas också. Du kan skanna och åtgärda följande filformat:
+Genomsökning av e-post möjliggör genomsökning av e-postfiler som Outlook och andra e-postklienter vid sökning på begäran och schemalagda genomsökningar. Inbäddade objekt i en e-postfil (t.ex. bifogade filer och arkiverade filer) skannas också. Du kan skanna och åtgärda följande filformat:
 
 - DBX
 - MBX
@@ -87,14 +88,14 @@ Genomsökning av e-post möjliggör genomsökning av e-postfiler som används av
 
 PST-filer som används av Outlook 2003 eller äldre (där arkivtypen är inställd på icke-unicode) genomsöks också, men Windows Defender kan inte åtgärda hot som upptäckts i PST-filer.
 
-Om Microsoft Defender Antivirus identifierar ett hot i ett e-postmeddelande visas följande information som hjälper dig att identifiera det komprometterade e-postmeddelandet, så att du kan åtgärda risken manuellt:
+Om Microsoft Defender Antivirus upptäcker ett hot i ett e-postmeddelande visas följande information som hjälper dig att identifiera det komprometterade e-postmeddelandet, så att du kan åtgärda risken manuellt:
 
 - Ämne för e-post
 - Namn på bifogad fil
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [Anpassa, initiera och granska resultatet av genomsökningar och åtgärder i Microsoft Defender Antivirus](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Konfigurera och köra genomsökningar för Microsoft Defender Antivirus på begäran](run-scan-microsoft-defender-antivirus.md)
-- [Konfigurera schemalagda genomsökningar för Microsoft Defender Antivirus](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+- [Anpassa, initiera och granska resultaten av Microsoft Defender Antivirus genomsökningar och åtgärder](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Konfigurera och kör genomsökningar på begäran för Microsoft Defender Antivirus](run-scan-microsoft-defender-antivirus.md)
+- [Konfigurera schemalagda Microsoft Defender Antivirus genomsökningar](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus i Windows 10](microsoft-defender-antivirus-in-windows-10.md)

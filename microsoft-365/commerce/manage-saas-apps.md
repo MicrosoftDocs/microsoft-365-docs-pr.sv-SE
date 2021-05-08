@@ -5,27 +5,33 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jamitche
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- commerce_subscriptions
+- PPM_jmueller
 search.appverid: MET150
-description: Läs om hur du aktiverar och hanterar appar från tredje part i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 457545282801829ca34de0318dd9eb7791866214
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+description: Läs om hur du aktiverar och hanterar appar från tredje Microsoft 365 administrationscenter.
+ms.date: 04/15/2021
+ms.openlocfilehash: eece8154640dcdd55239511ed099abcdca39e807
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860541"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280529"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Hantera appprenumerationer från tredje part för din organisation
 
-Du kan hantera licenser och fakturering för appar från tredje part i det nya administrationscentret för Microsoft 365. De uppdaterade funktionerna omfattar förbättrad hantering av prenumerationer, förbättrad åtkomst till faktureringsinformation och förbättrad flexibilitet för att hantera fakturor. Prenumerationshanteringen baseras på Microsofts uppdaterade handelsplattform. Det här gäller programvaror som en tjänst som kunder köper direkt eller från en tredjepartsleverantör.
+Du kan hantera licenser och fakturering för appar från tredje part i det nya Microsoft 365 administrationscentret. De uppdaterade funktionerna omfattar förbättrad hantering av prenumerationer, förbättrad åtkomst till faktureringsinformation och förbättrad flexibilitet för att hantera fakturor. Prenumerationshanteringen baseras på Microsofts uppdaterade handelsplattform. Det här gäller programvaror som en tjänst som kunder köper direkt eller från en tredjepartsleverantör.
 
-Du kan hantera licenser och fakturering för appar från tredje part i administrationscentret för Microsoft 365 med förhandsgranskningsläget aktiverat. De uppdaterade funktionerna omfattar förbättrad hantering av prenumerationer, förbättrad åtkomst till faktureringsinformation och förbättrad flexibilitet för att hantera fakturor. Prenumerationshanteringen baseras på Microsofts uppdaterade handelsplattform. Det här gäller programvaror som en tjänst som kunder köper direkt eller från tredje part.
+Du kan hantera licenser och fakturering för appar från tredje Microsoft 365 administrationscentret med förhandsgranskningsläget aktiverat. De uppdaterade funktionerna omfattar förbättrad hantering av prenumerationer, förbättrad åtkomst till faktureringsinformation och förbättrad flexibilitet för att hantera fakturor. Prenumerationshanteringen baseras på Microsofts uppdaterade handelsplattform. Det här gäller programvaror som en tjänst som kunder köper direkt eller från tredje part.
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>Så här hämtar du program för programvara som en tjänst
 
@@ -35,7 +41,7 @@ Det finns några olika sätt att köpa appar från tredje part.
 - **Partnerköp** – arbeta med en partner via Partner Center för att köpa prenumerationer.
 - **Microsoft-förslag** – svara på ett förslag från Microsoft Sales som innehåller appar från tredje part.
 
-När kunder köper apparna och godkänner Microsofts kundavtal kan de hantera dem i administrationscentret för Microsoft 365 eller Microsoft Store för företag.
+När kunder köper apparna och godkänner Microsofts kundavtal kan de hantera dem Microsoft 365 administrationscenter eller Microsoft Store för företag.
 
 Appleverantörer säljer sina appar antingen till ett fast pris eller genom att köpa licenser till användare.
 
@@ -65,17 +71,17 @@ Administratörer måste aktivera appar från tredje part innan de tilldelas till
 
 1. I administrationscentret går du till sidan  >  **Fakturering dina**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">produktappar.</a>
 2. Leta upp och välj den app du vill hantera.
-3. Under **Inställningar & åtgärder** väljer du Hantera i **Publisher-portalen**.
+3. Under **Inställningar & åtgärder** väljer **du Hantera i Publishers portal**.
 
 Du dirigeras till apputgivarens webbplats där du kan aktivera appen.
 
 ## <a name="manage-third-party-apps"></a>Hantera appar från tredje part
 
-Administratörer hanterar appar från tredje part på två platser: administrationscentret för Microsoft 365 och tredjepartsleverantörens portal.
+Administratörer hanterar appar från tredje part på två platser: Microsoft 365 administrationscenter och den tredje leverantörens appleverantörs portal.
 
 Det här kan du göra i varje portal.
 
-| Administrationscenter för Microsoft 365 | Apputgivarportalen |
+| Administrationscentret för Microsoft 365 | Apputgivarportalen |
 | --- | --- |
 | Ändra antal licenser <br> Hantera hur du betalar din faktura <br> Hantera hur du betalar din faktura <br> Ändra betalningsmetod (kreditkort) <br> Visa faktura <br> Avbryt appprenumeration | Konfigurera appen (en gång för varje app) <br> Tilldela licenser till användare <br> Teknisk support |
 
@@ -83,7 +89,7 @@ När appen har aktiverats förblir den aktiv om den inte har avbrutits, upphört
 
 ## <a name="assign-licenses"></a>Tilldela licenser
 
-Administratörer måste aktivera appar från tredje part innan de tilldelas till användare. De aktiveras på tredjepartsutgivarens portal. På appsidan, under **Inställningar & åtgärder,** väljer du länken för att tilldela licenser.
+Administratörer måste aktivera appar från tredje part innan de tilldelas till användare. De aktiveras på tredjepartsutgivarens portal. Välj länken för att **tilldela Inställningar & åtgärder** på appsidan.
 
 1. I administrationscentret går du till sidan  >  **Fakturering dina**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">produktappar.</a>
 2. Leta upp och välj den app du vill hantera.
@@ -121,4 +127,4 @@ Du kan avbryta en programapp som en tjänst från appsidan.
 
 1. I administrationscentret går du till sidan  >  **Fakturering dina**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">produktappar.</a>
 2. Leta upp och välj den app du vill hantera.
-3. Under **Inställningar & åtgärder** väljer du Avbryt **prenumeration**.
+3. Under **Inställningar & väljer** du **Avbryt prenumeration.**

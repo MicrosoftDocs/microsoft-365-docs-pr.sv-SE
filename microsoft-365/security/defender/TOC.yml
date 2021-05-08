@@ -130,11 +130,11 @@
               href: m365d-remediation-actions.md
             - name: Besök åtgärden centret
               href: m365d-action-center.md
-            - name: Godkänn eller avvisa väntande saneringsåtgärder
+            - name: Visa och hantera åtgärdsåtgärder
               href: m365d-autoir-actions.md
             - name: Visa detaljer och resultat av automatiserade utredningar
               href: m365d-autoir-results.md
-            - name: Rapportera falska positiva/negativa identifieringar
+            - name: Adressera falska positiva/negativa tal
               href: m365d-autoir-report-false-positives-negatives.md
         - name: Avancerad jakt
           items:

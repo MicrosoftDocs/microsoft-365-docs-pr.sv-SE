@@ -3,6 +3,7 @@ title: Microsoft Home Use Program vanliga frågor och svar
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -10,21 +11,24 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
+- commerce_subscriptions
+- PPM_jmueller
+search.appverid: MET150
 description: Vanliga frågor och svar om programmet Microsoft Home Use Program.
-ms.openlocfilehash: e4940460501da94960cb82eb311a1d1d6470cc63
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/01/2021
+ms.openlocfilehash: 5f10e5fb313ec7b48605975a7e03f262fd742801
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244702"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280817"
 ---
 # <a name="microsoft-home-use-program-frequently-asked-questions-faq"></a>Microsoft Home Use Program vanliga frågor och svar
 
-Volymlicenskunder använder Microsoft Home Use Program (HUP) på [Microsoft Store för företag webbplats.](https://go.microsoft.com/fwlink/?linkid=2139192) 
+Volymlicenskunder använder Microsoft Home Use Program (HUP) på [Microsoft Store för företag webbplats.](https://go.microsoft.com/fwlink/?linkid=2139192)
 
 Alla andra kunder får åtkomst till HUP genom att använda det här steget:
 
@@ -46,12 +50,9 @@ Rabatter på Microsoft 365 Family Personal-prenumerationer erbjuds till berätti
 
 För att anställda ska kunna utnyttja Microsoft Home Use Program rabatten behöver de en giltig företags-e-postadress och ett aktivt Microsoft-konto, och din organisation måste uppfylla något av följande kriterier:
 
-- Kunder som har en aktiv Software Assurance för kvalificerande Office program 
-
+- Kunder som har en aktiv Software Assurance för kvalificerande Office program
 - Kunder som har Microsoft 365/Microsoft 365 E3/E5 från Software Assurance
-
 - Kommersiella kunder och myndighetskunder som har ≥ 2 000 licenser av något av eller en blandning av Microsoft 365 E3/E5
-
 - Utbildningskunder och ideella kunder
 
 ## <a name="why-do-i-have-to-create-an-azure-active-directory-aad-account-to-use-the-home-use-program-microsoft-store-for-business"></a>Varför måste jag skapa ett Azure Active Directory (AAD) för att använda Home Use Program/ Microsoft Store för företag?
@@ -73,11 +74,8 @@ Du kan komma åt registreringsmaterial på flera språk på [HUP-material för k
 ## <a name="what-are-the-steps-for-an-eligible-employee-to-make-a-microsoft-home-use-program-purchase"></a>Hur kan en berättigad anställd göra ett köp Microsoft Home Use Program?
 
 1. **Registrera dig** Gå till [Microsoft Home Use Program och](https://www.microsoft.com/home-use-program)välj Kom igång knappen. Anställda anger sin företags-e-postadress.
-
 2. **Bekräfta**  Ett e-postmeddelande skickas till deras företags-e-postadressinkorg med en länk som autentiserar att de är berättigande till programmet.
-
 3. **Logga in** När de har autentiserats påbörjar de köpet genom att ange det Microsoft-konto som är kopplat till deras personliga e-postadress, så att de kan se rabatterna för produkter som är tillgängliga baserat på organisationens Home Use Program-förmån. Mer information finns i Logga [in på ditt Microsoft-konto.](https://support.microsoft.com/help/4028195/microsoft-account-sign-in)
-
 4. **Handla** Köpet behandlas och slutförs i Microsoft Store.
 
 ## <a name="if-an-employee-subscribes-to-microsoft-365-through-the-microsoft-home-use-program-how-does-this-impact-our-organizations-microsoft-365-business-subscription-and-device-limit"></a>Om en anställd prenumererar Microsoft 365 via Microsoft Home Use Program, hur påverkar detta det organisationens Microsoft 365 för företag-prenumeration och enhetsgräns?
@@ -105,23 +103,15 @@ Om de anställda har frågor hänvisar du dem till följande resurser:
  Om du behöver hjälp med tekniska problem går du till [Microsoft Support.](https://support.microsoft.com/) Du hittar hjälp för:
 
 - Orderstatus
-
 - Fakturering
-
 - Installerar Office
-
 - Logga in på Office
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Microsoft 365 prenumerationer](https://www.microsoft.com/home-use-program/). (länksida)
-
-[Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (länksida)
-
-[Microsoft Store för företag administratörssupport](/microsoft-store/) (länksida)
-
-[Microsoft Store för företag](https://go.microsoft.com/fwlink/?linkid=2139192) (länksida)
-
-[Home Use Program-butiken för anställda](https://www.microsoft.com/home-use-program) (länksida)
-
+[Microsoft 365 prenumerationer](https://www.microsoft.com/home-use-program/). (länksida)\
+[Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (länksida)\
+[Microsoft Store för företag administratörsstöd](/microsoft-store/) (länksida)\
+[Microsoft Store för företag](https://go.microsoft.com/fwlink/?linkid=2139192) (länksida)\
+[Home Use Program-butiken för anställda](https://www.microsoft.com/home-use-program) (länksida)\
 [Microsoft Licensiering: Översikt över Home Use Program](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (länksida)

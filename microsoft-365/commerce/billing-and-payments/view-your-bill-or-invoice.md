@@ -5,35 +5,31 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: MET150
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - TopSMBIssues
 - okr_smb
-- BCS160
-- MET150
-- MOE150
-- BEA160
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- commerce_billing
+- PPM_jmueller
 description: Hitta din faktura eller ditt faktureringsutdrag i administrationscentret för Microsoft 365. Du kan också spara och skriva ut en kopia av fakturan.
 ms.date: 07/31/2020
-ms.openlocfilehash: d391d99f5d5870d964fc4c420a105f25032e3640
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: f9dc6fb9be765e6e221ddf43f703d64737870f01
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52060973"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280829"
 ---
 # <a name="view-your-bill-or-invoice"></a>Visa din faktura
 
@@ -49,25 +45,39 @@ Du måste vara global administratör eller faktureringsadministratörer för att
   
 ## <a name="view-a-bill-or-invoice"></a>Visa en faktura
 
+::: moniker range="o365-worldwide"
+
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fakturor och betalningar</a>.
-    - Om du använder Office 365 Germany går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Fakturor och betalningar</a>.
-    - Om du använder Office 365 med 21Vianet går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Fakturering och betalning</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Fakturor och betalningar</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Fakturor och betalningar</a>.
+
+::: moniker-end
+
 2. Välj ett datumintervall i listrutan på fliken **Fakturor** och välj sedan den beställning du vill visa.
 3. På sidan Sammanfattning visas artiklarna, kvantiteten, priset, rabatten och summan för alla artiklar i fakturan.
 4. Om du vill skriva ut eller spara en pdf-kopia av fakturan väljer du **Ladda ned PDF**.
 
-::: moniker region="o365-21vianet"
+::: moniker range="o365-21vianet"
 
 ## <a name="request-a-fapiao"></a>Begära en Fapiao
 
 Du kan skicka din Fapiao-begäran till vårt [Fapiao-hanteringssystem](https://go.microsoft.com/fwlink/p/?linkid=837465) cirka tre (3) dagar efter att du har betalat.
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> administrationscentret</a>, går du till sidan **Fakturering** > **Fakturor och betalningar**.
-
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a> går du till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">**Fakturor och betalningar**</a>.
 2. Leta upp den faktura du vill använda och välj sedan **Få Fapiaos**.
 
 > [!NOTE]
-
+>
 > Du behöver ett registrerat konto för att komma åt [Fapiao-hanteringssystemet](https://go.microsoft.com/fwlink/p/?linkid=837465). Om du inte redan har konfigurerat ett konto kan du gå till [Ansök om Fapiao för Office 365 som drivs av 21Vianet](../../admin/services-in-china/apply-for-a-fapiao.md).
 
 ::: moniker-end

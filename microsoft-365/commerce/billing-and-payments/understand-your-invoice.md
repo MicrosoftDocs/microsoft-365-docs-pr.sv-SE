@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -12,19 +13,22 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
+- M365-subscription-management
+- Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-search.appverid:
-- MET150
+- commerce_billing
+- PPM_jmueller
+search.appverid: MET150
 description: Lär dig att läsa och förstå fakturan för Microsoft företagsprodukter.
 keywords: faktureringskonton, organisationsinformation, fakturor
-ms.openlocfilehash: 344877a4b97f5c77dc3381aa49d7bf0f60bd628e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/04/2021
+ms.openlocfilehash: 819db7eb999344d2736015dd766453c07f2ed86f
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244714"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280841"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Förstå din faktura
 
@@ -103,17 +107,13 @@ Om du har tjänster från tredje part i din faktura visas namnet och adressen ti
 Fakturor är tillgängliga online. En länk till din online-faktura är tillgänglig via din PDF-faktura och från ett e-postmeddelande. Online-fakturan är utbyggbar så att du kan visa avgifterna på fakturan och visa mer information om varje objekt. Online-fakturan innehåller:
 
 - **Prisinformation**&mdash;Ytterligare information inklusive information om rabatter och produktpriser.
-
 - **Online-betalning**&mdash;Du kan välja att göra en betalning online i fakturan.
-
 - **Azure Cost Management**&mdash;För Azure-kunder innehåller online-fakturan en länk till Azure Cost Management.
 
 ### <a name="to-view-your-online-invoice"></a>Visa din online-faktura
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fakturor och betalningar</a>.
-
 2. Om du vill ladda ned PDF-versionen av fakturan väljer du **laddar ned PDF-faktura** på raden för den faktura som du vill visa.
-
 3. Om du vill visa din online-faktura väljer du en faktura i listan. Du kan också ladda ned PDF-filen från sidan fakturadetaljer.
 
 ## <a name="invoice-faq"></a>Vanliga frågor och svar
@@ -145,8 +145,8 @@ Betalningsanvisningarna beror på din betalningsmetod och finns längst ned i fa
 
 Azure-förbetalning är tillgänglig som betalningsmetod endast för kvalificerade Azure-produkter och -tjänster.
 
-## <a name="need-help-contact-support"></a>Behöver du hjälp? Kontakta supporten.
+## <a name="need-help-contact-support"></a>Behöver du hjälp? Kontakta support
 
 Om du har frågor eller behöver hjälp med dina Azure-krediter <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">skapar du en supportförfrågan med Azure support</a>.
 
-Om du har frågor eller behöver hjälp med fakturan i Administrationscenter för Microsoft 365 [kontaktar du supporten för företagsprodukter](../../admin/contact-support-for-business-products.md).
+Om du har frågor eller behöver hjälp med fakturan i Administrationscenter för Microsoft 365 [kontaktar du supporten för företagsprodukter](../../business-video/get-help-support.md).

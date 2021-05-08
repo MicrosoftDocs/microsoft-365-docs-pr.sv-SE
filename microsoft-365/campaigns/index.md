@@ -24,18 +24,18 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Säkerhets- och samarbetsrekommendationer för Microsoft 365 för mindre företag, inklusive mindre firmor, praktik och politiska kampanjer.
-ms.openlocfilehash: 621ebe483683f68ccb9332f9c8b2802bd9b98867
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+description: Säkerhets- och samarbetsrekommendationer för Microsoft 365 Business Premium för småföretag, inklusive mindre firmor, praktiker och politiska kampanjer.
+ms.openlocfilehash: 6c836f5abb118bb3902ecdfaa37acd759faca1fe
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100789"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245034"
 ---
-<a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>Microsoft 365 för mindre företag och campaigns
+<a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>Microsoft 365 för småföretag och kampanjer
 ===========================
 
-Att säkra data och kommunikation i dagens värld är en prioritering, särskilt för medicinska och juridiska metoder praxis, politiska kampanjer och många andra mindre branscher. Den här lösningen ger en uppsättning rekommendationer som hjälper till att skydda dig och din data. Det här biblioteket innehåller hjälp med konfiguration och användning av den här rekommenderade miljön, oavsett ditt företagstyp.
+Om du har Microsoft 365 Business Premium är anvisningarna i det här biblioteket det snabbaste sättet för dig att konfigurera säkerheten och börja samarbeta på ett säkert sätt. Att säkra data och kommunikation i dagens värld är en prioritering, särskilt för medicinska och juridiska metoder praxis, politiska kampanjer och många andra mindre branscher. Den här lösningen ger en uppsättning rekommendationer som hjälper till att skydda dig och din data. Det här biblioteket innehåller hjälp med konfiguration och användning av den här rekommenderade miljön, oavsett ditt företagstyp.
 
 
 ![Microsoft 365 Business Premium skyddar dina produktivitetsverktyg, samarbetsverktyg, fillagring, e-post, enheter och identiteter](../media/M365-WhatIsIt-SecurityFocus.png)

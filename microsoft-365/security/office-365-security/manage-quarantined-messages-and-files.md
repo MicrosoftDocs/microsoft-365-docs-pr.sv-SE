@@ -19,12 +19,12 @@ ms.custom:
 description: Administratörer kan lära sig hur de visar och hanterar meddelanden i karantän för alla användare i Exchange Online Protection (EOP). Administratörer i organisationer med Microsoft Defender för Office 365 kan också hantera filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7dc7fd26d7a81bc76850af4799363c8d17fc1c83
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: c5e2d6a3729a24766652d4c7c0973c63b1dcb207
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599541"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52272210"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Hantera meddelanden och filer i karantän som administratör i EOP
 
@@ -196,7 +196,7 @@ När du har valt ett meddelande kan du välja mellan flera alternativ för vad d
 
 - **Ladda ned meddelande**: Välj **Jag är medveten om riskerna om jag laddar ned meddelandet** i den utfällbara rutan som visas om du vill spara en lokal kopia av meddelandet i .eml-format.
 
-- **Spärra avsändare:** Förhindrar avsändaren från att skicka meddelanden till mottagare i organisationen.
+- **Spärra avsändare:** Lägg till avsändaren i listan Spärrade avsändare i postlådan. Mer information finns i Spärra [en e-postavsändare.](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)
 
 - **Skicka meddelande:** I det utfällfönster som visas väljer du följande alternativ:
 

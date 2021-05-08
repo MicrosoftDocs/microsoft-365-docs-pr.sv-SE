@@ -1,12 +1,12 @@
 ---
 title: Konfigurera Microsoft Defender Antivirus med Grupprincip
-description: Lär dig hur du använder en grupprincip för att konfigurera och hantera Microsoft Defender Antivirus på dina slutpunkter i Microsoft Defender för slutpunkt.
+description: Lär dig hur du använder en grupprincip för att konfigurera och hantera Microsoft Defender Antivirus på slutpunkterna i Microsoft Defender för slutpunkt.
 keywords: grupprincip, GPO, konfiguration, inställningar
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: e8d3cbd58b80d6c393b8d7173c61509b26a29b4a
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 8db14b016491ac10872f29f04b8166e548d6c63b
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765665"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275342"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Använda grupprincipinställningar för att konfigurera och hantera Microsoft Defender Antivirus
 
@@ -32,9 +32,9 @@ ms.locfileid: "51765665"
 
 - [Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Du kan använda [grupprinciper](/windows/win32/srvnodes/group-policy) för att konfigurera och hantera Microsoft Defender Antivirus på dina slutpunkter.
+Du kan använda [grupprinciper](/windows/win32/srvnodes/group-policy) för att konfigurera Microsoft Defender Antivirus och hantera e-Microsoft Defender Antivirus slutpunkter.
 
-I allmänhet kan du använda följande procedur för att konfigurera eller ändra grupprincipinställningar för Microsoft Defender Antivirus:
+I allmänhet kan du använda följande procedur för att konfigurera eller ändra Microsoft Defender Antivirus grupprincipinställningar:
 
 1. Öppna grupprinciphanteringskonsolen på hanteringsdatorn för [grupprinciper,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))högerklicka på det grupprincipobjekt (GPO) du vill konfigurera och klicka på **Redigera.**
 
@@ -42,7 +42,7 @@ I allmänhet kan du använda följande procedur för att konfigurera eller ändr
 
 3. Klicka **på Administrativa mallar**.
 
-4. Expandera trädet till **Windows-komponenterna**  >  **Microsoft Defender Antivirus.**
+4. Expandera trädet och visa **Windows komponenter**  >  **Microsoft Defender Antivirus**.
 
 5. Expandera det avsnitt (kallas för Plats i tabellen i det här avsnittet) som innehåller den inställning du vill konfigurera, dubbelklicka på inställningen för att öppna den och gör konfigurationsändringar. 
 
@@ -52,53 +52,53 @@ Följande tabell i det här avsnittet innehåller de grupprincipinställningar s
 
 | Plats | Inställning | Artikel |
 |:---|:---|:---|
-| Klientgränssnitt | Aktivera huvudlöst gränssnittsläge | [Hindra användare från att se eller interagera med användargränssnittet i Microsoft Defender Antivirus](prevent-end-user-interaction-microsoft-defender-antivirus.md) |
+| Klientgränssnitt | Aktivera huvudlöst gränssnittsläge | [Hindra användare från att se eller interagera Microsoft Defender Antivirus användargränssnittet](prevent-end-user-interaction-microsoft-defender-antivirus.md) |
 | Klientgränssnitt | Visa ytterligare text för klienter när de behöver utföra en åtgärd | [Konfigurera meddelanden som visas på slutpunkter](configure-notifications-microsoft-defender-antivirus.md) |
 | Klientgränssnitt | Ignorera alla meddelanden | [Konfigurera meddelanden som visas på slutpunkter](configure-notifications-microsoft-defender-antivirus.md) |
 | Klientgränssnitt | Ignorerar meddelanden om omstart | [Konfigurera meddelanden som visas på slutpunkter](configure-notifications-microsoft-defender-antivirus.md) |
-| Undantag | Undantag för filnamnstillägg | [Konfigurera och validera undantag i genomsökningar för Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md) |
-| Undantag | Undantag för sökväg | [Konfigurera och validera undantag i genomsökningar för Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md) |
-| Undantag | Undantag från processer | [Konfigurera och validera undantag i genomsökningar för Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md) | 
-| Undantag | Inaktivera automatiska undantag | [Konfigurera och validera undantag i genomsökningar för Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md) |
+| Undantag | Undantag för filnamnstillägg | [Konfigurera och validera undantag i Microsoft Defender Antivirus genomsökningar](configure-exclusions-microsoft-defender-antivirus.md) |
+| Undantag | Undantag för sökväg | [Konfigurera och validera undantag i Microsoft Defender Antivirus genomsökningar](configure-exclusions-microsoft-defender-antivirus.md) |
+| Undantag | Undantag från processer | [Konfigurera och validera undantag i Microsoft Defender Antivirus genomsökningar](configure-exclusions-microsoft-defender-antivirus.md) | 
+| Undantag | Inaktivera automatiska undantag | [Konfigurera och validera undantag i Microsoft Defender Antivirus genomsökningar](configure-exclusions-microsoft-defender-antivirus.md) |
 | KARTOR | Konfigurera funktionen "Block vid första synen" | [Aktivera block vid första synen](configure-block-at-first-sight-microsoft-defender-antivirus.md) |
 | KARTOR | Ansluta till Microsoft MAPS | [Aktivera moln levererat skydd](enable-cloud-protection-microsoft-defender-antivirus.md) |
 | KARTOR | Skicka filexempel när ytterligare analys krävs | [Aktivera moln levererat skydd](enable-cloud-protection-microsoft-defender-antivirus.md) |
 | KARTOR | Konfigurera åsidosättning av lokal inställning för rapportering till Microsoft MAPS | [Förhindra eller tillåta användare att lokalt ändra principinställningar](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
-| MpEngine | Konfigurera utökad molnkontroll | [Konfigurera tidsgränsen för molnblockering](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) |
-| MpEngine | Välj molnskyddsnivå | [Ange skyddsnivån som levereras i molnet](specify-cloud-protection-level-microsoft-defender-antivirus.md) |
+| MpEngine | Konfigurera utökad molnkontroll | [Konfigurera tidsgräns för blockering i molnet](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) |
+| MpEngine | Välj molnskyddsnivå | [Ange nivå för molnbaserat skydd](specify-cloud-protection-level-microsoft-defender-antivirus.md) |
 | System för nätverksinspektion | Ange ytterligare definitionsuppsättningar för kontroll av nätverkstrafik | Inte längre relevant |
 | System för nätverksinspektion | Aktivera att definitionen inaktiveras | Inte längre relevant |
 | System för nätverksinspektion | Aktivera protokolligenkänning | Inte längre relevant |
 | Karantän | Konfigurera åsidosättning av lokal inställning för borttagning av objekt från mappen Karantän | [Förhindra eller tillåta användare att lokalt ändra principinställningar](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
-| Karantän | Konfigurera borttagning av objekt från mappen Karantän | [Konfigurera åtgärder för genomsökningar för Microsoft Defender Antivirus](configure-remediation-microsoft-defender-antivirus.md) |
+| Karantän | Konfigurera borttagning av objekt från mappen Karantän | [Konfigurera åtgärder för Microsoft Defender Antivirus genomsökningar](configure-remediation-microsoft-defender-antivirus.md) |
 | Realtidsskydd | Konfigurera en lokal åsidosättning för övervakning av fil- och programaktivitet på datorn | [Förhindra eller tillåta användare att lokalt ändra principinställningar](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Realtidsskydd | Konfigurera åsidosättning av lokal inställning för övervakning av inkommande och utgående filaktivitet | [Förhindra eller tillåta användare att lokalt ändra principinställningar](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Realtidsskydd | Konfigurera åsidosättning av lokal inställning för genomsökning av alla nedladdade filer och bifogade filer | [Förhindra eller tillåta användare att lokalt ändra principinställningar](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Realtidsskydd | Konfigurera åsidosättning av lokal inställning för att aktivera beteendeuppföljning | [Förhindra eller tillåta användare att lokalt ändra principinställningar](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Realtidsskydd | Konfigurera åsidosättning av lokal inställning för att aktivera realtidsskydd | [Förhindra eller tillåta användare att lokalt ändra principinställningar](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
-| Realtidsskydd | Definiera den maximala storleken på nedladdade filer och bifogade filer som ska genomsökas | [Aktivera och konfigurera ständigt skydd och övervakning för Microsoft Defender Antivirus](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| Realtidsskydd | Övervaka fil- och programaktivitet på datorn | [Aktivera och konfigurera ständigt skydd och övervakning för Microsoft Defender Antivirus](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| Realtidsskydd | Genomsöka alla nedladdade filer och bifogade filer | [Aktivera och konfigurera ständigt skydd och övervakning för Microsoft Defender Antivirus](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| Realtidsskydd | Inaktivera realtidsskydd | [Aktivera och konfigurera ständigt skydd och övervakning för Microsoft Defender Antivirus](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| Realtidsskydd | Aktivera beteendeövervakning | [Aktivera och konfigurera ständigt skydd och övervakning för Microsoft Defender Antivirus](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| Realtidsskydd | Aktivera processsökning när realtidsskydd är aktiverat | [Aktivera och konfigurera ständigt skydd och övervakning för Microsoft Defender Antivirus](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| Realtidsskydd | Aktivera aviseringar om rådata för volymskrivning | [Aktivera och konfigurera ständigt skydd och övervakning för Microsoft Defender Antivirus](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| Realtidsskydd | Konfigurera övervakning för inkommande och utgående fil och programaktivitet | [Aktivera och konfigurera ständigt skydd och övervakning för Microsoft Defender Antivirus](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Realtidsskydd | Definiera den maximala storleken på nedladdade filer och bifogade filer som ska genomsökas | [Aktivera och Microsoft Defender Antivirus av skydd och övervakning alltid](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Realtidsskydd | Övervaka fil- och programaktivitet på datorn | [Aktivera och Microsoft Defender Antivirus av skydd och övervakning alltid](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Realtidsskydd | Genomsöka alla nedladdade filer och bifogade filer | [Aktivera och Microsoft Defender Antivirus av skydd och övervakning alltid](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Realtidsskydd | Inaktivera realtidsskydd | [Aktivera och Microsoft Defender Antivirus av skydd och övervakning alltid](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Realtidsskydd | Aktivera beteendeövervakning | [Aktivera och Microsoft Defender Antivirus av skydd och övervakning alltid](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Realtidsskydd | Aktivera processsökning när realtidsskydd är aktiverat | [Aktivera och Microsoft Defender Antivirus av skydd och övervakning alltid](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Realtidsskydd | Aktivera aviseringar om rådata för volymskrivning | [Aktivera och Microsoft Defender Antivirus av skydd och övervakning alltid](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Realtidsskydd | Konfigurera övervakning för inkommande och utgående fil och programaktivitet | [Aktivera och Microsoft Defender Antivirus av skydd och övervakning alltid](configure-real-time-protection-microsoft-defender-antivirus.md) |
 | Åtgärda | Konfigurera en lokal åsidosättning för tid på dagen för att köra en schemalagd fullständig genomsökning för att slutföra åtgärd | [Förhindra eller tillåta användare att lokalt ändra principinställningar](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
-| Åtgärda | Ange veckodagen då en schemalagd fullständig genomsökning ska köras | [Konfigurera schemalagda genomsökningar för Microsoft Defender Antivirus](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
-| Åtgärda | Ange tid på dagen då en schemalagd fullständig genomsökning ska köras för att slutföra åtgärd | [Konfigurera schemalagda genomsökningar för Microsoft Defender Antivirus](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
+| Åtgärda | Ange veckodagen då en schemalagd fullständig genomsökning ska köras | [Konfigurera schemalagda Microsoft Defender Antivirus genomsökningar](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
+| Åtgärda | Ange tid på dagen då en schemalagd fullständig genomsökning ska köras för att slutföra åtgärd | [Konfigurera schemalagda Microsoft Defender Antivirus genomsökningar](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Rapportering | Inaktivera utökade meddelanden | [Konfigurera meddelanden som visas på slutpunkter](configure-notifications-microsoft-defender-antivirus.md)
 | Rot | Inaktivera Microsoft Defender Antivirus | Används inte (Inställningen måste vara Ej **konfigurerad för att säkerställa** att alla installerade antivirusappar från tredje part fungerar som de ska)
 | Rot | Definiera adresser för att kringgå proxyserver | Används inte |
 | Rot | Definiera autoconfig proxy (.pac) för anslutning till nätverket | Används inte |
 | Rot | Definiera proxyserver för anslutning till nätverket | Används inte |
 | Rot | Konfigurera lokala administratörskopplingsbeteenden för listor | [Förhindra eller tillåta användare att lokalt ändra principinställningar](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
-| Rot | Tillåt att program mot skadlig programvara startar med vanlig prioritet | [Konfigurera åtgärder för genomsökningar för Microsoft Defender Antivirus](configure-remediation-microsoft-defender-antivirus.md) |
-| Rot | Tillåt att program mot skadlig programvara alltid körs | [Konfigurera åtgärder för genomsökningar för Microsoft Defender Antivirus](configure-remediation-microsoft-defender-antivirus.md) |
-| Rot | Inaktivera rutinreparation | [Konfigurera åtgärder för genomsökningar för Microsoft Defender Antivirus](configure-remediation-microsoft-defender-antivirus.md) |
+| Rot | Tillåt att program mot skadlig programvara startar med vanlig prioritet | [Konfigurera åtgärder för Microsoft Defender Antivirus genomsökningar](configure-remediation-microsoft-defender-antivirus.md) |
+| Rot | Tillåt att program mot skadlig programvara alltid körs | [Konfigurera åtgärder för Microsoft Defender Antivirus genomsökningar](configure-remediation-microsoft-defender-antivirus.md) |
+| Rot | Inaktivera rutinreparation | [Konfigurera åtgärder för Microsoft Defender Antivirus genomsökningar](configure-remediation-microsoft-defender-antivirus.md) |
 | Rot | Slumpmässigt schemalagda aktivitetstider | [Konfigurera schemalagda genomsökningar för Microsoft Defender Antivirus](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
-| Skanna | Tillåt användare att pausa genomsökning | [Hindra användare från att se eller interagera med användargränssnittet i Microsoft Defender Antivirus](prevent-end-user-interaction-microsoft-defender-antivirus.md) (stöds inte i Windows 10) |
-| Skanna | Kontrollera om du har de senaste definitionerna av virus och spionprogram innan du kör en schemalagd sökning | [Hantera händelsebaserade tvingade uppdateringar](manage-event-based-updates-microsoft-defender-antivirus.md) |
+| Skanna | Tillåt användare att pausa genomsökning | [Hindra användare från att se eller interagera Microsoft Defender Antivirus användargränssnittet](prevent-end-user-interaction-microsoft-defender-antivirus.md) (stöds inte Windows 10) |
+| Skanna | Kontrollera om du har de senaste definitionerna av virus och spionprogram innan du kör en schemalagd sökning | [Hantera händelsebaserade uppdateringar](manage-event-based-updates-microsoft-defender-antivirus.md) |
 | Skanna | Definiera efter hur många dagar en sökning måste göra en uppläsning | [Hantera uppdateringar för slutpunkter som är in uppdaterade](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
 | Skanna | Aktivera snabbsökning | [Hantera uppdateringar för slutpunkter som är in uppdaterade](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
 | Skanna | Aktivera snabbsökning | [Hantera uppdateringar för slutpunkter som är in uppdaterade](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
@@ -107,9 +107,9 @@ Följande tabell i det här avsnittet innehåller de grupprincipinställningar s
 | Skanna | Konfigurera åsidosättning av lokal inställning för schemalagd snabbsökningstid | [Förhindra eller tillåta användare att lokalt ändra principinställningar](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Skanna | Konfigurera åsidosättning av lokal inställning för schemalagd genomsökningstid | [Förhindra eller tillåta användare att lokalt ändra principinställningar](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Skanna | Konfigurera en lokal åsidosättning av lokal inställning för den genomsökningstyp som ska användas för en schemalagd sökning | [Förhindra eller tillåta användare att lokalt ändra principinställningar](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
-| Skanna | Skapa en systemåterställningspunkt | [Konfigurera åtgärder för genomsökningar för Microsoft Defender Antivirus](configure-remediation-microsoft-defender-antivirus.md) |
-| Skanna | Aktivera borttagning av objekt från mappen genomsökningshistorik | [Konfigurera åtgärder för genomsökningar för Microsoft Defender Antivirus](configure-remediation-microsoft-defender-antivirus.md) |
-| Skanna | Aktivera heuristisk | [Aktivera och konfigurera ständigt skydd och övervakning för Microsoft Defender Antivirus](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Skanna | Skapa en systemåterställningspunkt | [Konfigurera åtgärder för Microsoft Defender Antivirus genomsökningar](configure-remediation-microsoft-defender-antivirus.md) |
+| Skanna | Aktivera borttagning av objekt från mappen genomsökningshistorik | [Konfigurera åtgärder för Microsoft Defender Antivirus genomsökningar](configure-remediation-microsoft-defender-antivirus.md) |
+| Skanna | Aktivera heuristisk | [Aktivera och Microsoft Defender Antivirus av skydd och övervakning alltid](configure-real-time-protection-microsoft-defender-antivirus.md) |
 | Skanna | Aktivera genomsökning av e-post | [Konfigurera skanningsalternativ i Microsoft Defender Antivirus](configure-advanced-scan-types-microsoft-defender-antivirus.md) |
 | Skanna | Aktivera genomsökning avparsningspunkt | [Konfigurera skanningsalternativ i Microsoft Defender Antivirus](configure-advanced-scan-types-microsoft-defender-antivirus.md) |
 | Skanna | Kör fullständig sökning på mappade nätverksenheter | [Konfigurera skanningsalternativ i Microsoft Defender Antivirus](configure-advanced-scan-types-microsoft-defender-antivirus.md) |
@@ -126,23 +126,23 @@ Följande tabell i det här avsnittet innehåller de grupprincipinställningar s
 | Skanna | Ange tiden för en daglig snabbsökning | [Konfigurera schemalagda genomsökningar för Microsoft Defender Antivirus](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Skanna | Ange tid på dagen då en schemalagd sökning ska köras | [Konfigurera schemalagda genomsökningar för Microsoft Defender Antivirus](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Skanna | Starta den schemalagda genomsökningen bara när datorn är på, men inte använder | [Konfigurera schemalagda genomsökningar för Microsoft Defender Antivirus](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
-| Säkerhetsintelligensuppdateringar | Tillåt säkerhetsintelligensuppdateringar från Microsoft Update | [Hantera uppdateringar för mobila enheter och virtuella maskiner (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md) |
-| Säkerhetsintelligensuppdateringar | Tillåt säkerhetsintelligensuppdateringar när de körs på batteri | [Hantera uppdateringar för mobila enheter och virtuella maskiner (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md) |
-| Säkerhetsintelligensuppdateringar | Tillåt att meddelanden inaktiverar definitionsbaserade rapporter för Microsoft MAPS | [Hantera händelsebaserade tvingade uppdateringar](manage-event-based-updates-microsoft-defender-antivirus.md) |
-| Säkerhetsintelligensuppdateringar | Tillåt säkerhetsintelligensuppdateringar i realtid som baseras på rapporter till Microsoft MAPS | [Hantera händelsebaserade tvingade uppdateringar](manage-event-based-updates-microsoft-defender-antivirus.md) |
-| Säkerhetsintelligensuppdateringar | Kontrollera om de senaste definitionerna av virus och spionprogram visas vid start | [Hantera händelsebaserade tvingade uppdateringar](manage-event-based-updates-microsoft-defender-antivirus.md) |
-| Säkerhetsintelligensuppdateringar | Definiera filresurser för hämtning av säkerhetsintelligensuppdateringar | [Hantera skydd och säkerhetsintelligensuppdateringar för Microsoft Defender Antivirus](manage-protection-updates-microsoft-defender-antivirus.md) |
+| Säkerhetsintelligensuppdateringar | Tillåt säkerhetsintelligensuppdateringar från Microsoft Update | [Hantera uppdateringar för mobila enheter och virtuella datorer(VM)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md) |
+| Säkerhetsintelligensuppdateringar | Tillåt säkerhetsintelligensuppdateringar när de körs på batteri | [Hantera uppdateringar för mobila enheter och virtuella datorer(VM)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md) |
+| Säkerhetsintelligensuppdateringar | Tillåt att meddelanden inaktiverar definitionsbaserade rapporter för Microsoft MAPS | [Hantera händelsebaserade uppdateringar](manage-event-based-updates-microsoft-defender-antivirus.md) |
+| Säkerhetsintelligensuppdateringar | Tillåt säkerhetsintelligensuppdateringar i realtid som baseras på rapporter till Microsoft MAPS | [Hantera händelsebaserade uppdateringar](manage-event-based-updates-microsoft-defender-antivirus.md) |
+| Säkerhetsintelligensuppdateringar | Kontrollera om de senaste definitionerna av virus och spionprogram visas vid start | [Hantera händelsebaserade uppdateringar](manage-event-based-updates-microsoft-defender-antivirus.md) |
+| Säkerhetsintelligensuppdateringar | Definiera filresurser för hämtning av säkerhetsintelligensuppdateringar | [Hantera Microsoft Defender Antivirus säkerhets- och säkerhetsintelligensuppdateringar](manage-protection-updates-microsoft-defender-antivirus.md) |
 | Säkerhetsintelligensuppdateringar | Definiera efter hur många dagar en uppdatering av säkerhetsintelligens krävs | [Hantera uppdateringar för slutpunkter som är in uppdaterade](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
 | Säkerhetsintelligensuppdateringar | Ange antalet dagar innan definitioner av spionprogram anses vara inuella | [Hantera uppdateringar för slutpunkter som är in uppdaterade](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
 | Säkerhetsintelligensuppdateringar | Definiera antalet dagar innan virusdefinitioner anses vara in datera | [Hantera uppdateringar för slutpunkter som är in uppdaterade](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
-| Säkerhetsintelligensuppdateringar | Definiera källordningen för hämtning av säkerhetsintelligensuppdateringar | [Hantera skydd och säkerhetsintelligensuppdateringar för Microsoft Defender Antivirus](manage-protection-updates-microsoft-defender-antivirus.md) |
-| Säkerhetsintelligensuppdateringar | Starta en säkerhetsintelligensuppdatering vid start | [Hantera händelsebaserade tvingade uppdateringar](manage-event-based-updates-microsoft-defender-antivirus.md) |
+| Säkerhetsintelligensuppdateringar | Definiera källordningen för hämtning av säkerhetsintelligensuppdateringar | [Hantera Microsoft Defender Antivirus säkerhets- och säkerhetsintelligensuppdateringar](manage-protection-updates-microsoft-defender-antivirus.md) |
+| Säkerhetsintelligensuppdateringar | Starta en säkerhetsintelligensuppdatering vid start | [Hantera händelsebaserade uppdateringar](manage-event-based-updates-microsoft-defender-antivirus.md) |
 | Säkerhetsintelligensuppdateringar | Ange veckodagen för att söka efter säkerhetsintelligensuppdateringar | [Hantera när skyddsuppdateringar ska hämtas och tillämpas](manage-protection-update-schedule-microsoft-defender-antivirus.md) |
 | Säkerhetsintelligensuppdateringar | Ange intervallet för att söka efter säkerhetsintelligensuppdateringar | [Hantera när skyddsuppdateringar ska hämtas och tillämpas](manage-protection-update-schedule-microsoft-defender-antivirus.md) |
 | Säkerhetsintelligensuppdateringar | Ange tiden för att söka efter säkerhetsintelligensuppdateringar | [Hantera när skyddsuppdateringar ska hämtas och tillämpas](manage-protection-update-schedule-microsoft-defender-antivirus.md) |
 | Säkerhetsintelligensuppdateringar | Aktivera genomsökning efter säkerhetsintelligensuppdatering | [Konfigurera schemalagda genomsökningar för Microsoft Defender Antivirus](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
-| Hot | Ange varningsnivåer för hot där standardåtgärden inte ska vidtas när den upptäcks | [Konfigurera åtgärder för genomsökningar för Microsoft Defender Antivirus](configure-remediation-microsoft-defender-antivirus.md) |
-| Hot | Ange hot där standardåtgärden inte ska vidtas när den identifieras | [Konfigurera åtgärder för genomsökningar för Microsoft Defender Antivirus](configure-remediation-microsoft-defender-antivirus.md) |
+| Hot | Ange varningsnivåer för hot där standardåtgärden inte ska vidtas när den upptäcks | [Konfigurera åtgärder för Microsoft Defender Antivirus genomsökningar](configure-remediation-microsoft-defender-antivirus.md) |
+| Hot | Ange hot där standardåtgärden inte ska vidtas när den identifieras | [Konfigurera åtgärder för Microsoft Defender Antivirus genomsökningar](configure-remediation-microsoft-defender-antivirus.md) |
 
 
 ## <a name="related-articles"></a>Relaterade artiklar

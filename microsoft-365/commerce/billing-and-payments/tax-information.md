@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,29 +13,30 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
-search.appverid:
-- MET150
+search.appverid: MET150
 description: 'Ta reda på hur mycket moms du kommer att debiteras för din Microsoft 365 för företag-prenumeration i olika regioner. '
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 11a7aa1e1825e41f463de17eebd676d8168a56d8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+- commerce_billing
+- PPM_jmueller
+ms.date: 03/17/2021
+ms.openlocfilehash: fc1e2924a6b28c30841f890396d5d82ed2944bea
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911716"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280601"
 ---
 # <a name="tax-information"></a>Momsinformation
 
-När du köper Microsoft 365-produkter och -tjänster avgörs momsen du betalar av en av två saker: din företagsadress eller din leveransadress, om den är annorlunda. Om din organisation finns i USA måste du ange ett Federal Employer Identification Number (FEIN).
+När du köper Microsoft 365 produkter och tjänster bestäms momsen du betalar av en av två saker: din företagsadress eller din leveransadress, om den är annorlunda. Om din organisation finns i USA måste du ange ett Federal Employer Identification Number (FEIN).
 
 Företag i följande länder kan tillhandahålla momsregistreringsnummer eller lokal motsvarighet:
 
 :::row:::
     :::column:::
+
 - Armenien
 - Australien
 - Österrike
@@ -99,13 +101,13 @@ Företag i följande länder kan tillhandahålla momsregistreringsnummer eller l
 
 ## <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Mellanöstern och Afrika (EMEA)
 
-När du köper Microsoft 365-tjänster i EMEA-regionen kan köpet vara föremål för Value-Added moms.
+När du köper Microsoft 365 tjänster i EMEA-regionen kan köpet vara föremål för Value-Added moms.
   
 - Om du befinner dig i en av EU:s medlemsstater, Vitryssland, Vitryssland, Norge, Turkiet eller Förenade Arabemiraten, och du inte anger ditt giltiga lokala momsregistreringsnummer tillämpar Microsoft Ireland Operations Ltd. den aktuella lokala momssatsen, baserat på det faktureringsland som är inställt på ditt konto.
 
 - Om du befinner dig i Liechtenstein, Ryssland, Serbien, Sydafrika eller Schweiz tillämpas momsen, oavsett om du anger ditt momsregistreringsnummer eller inte.
 
-- För EU-kunder måste det finnas tillgängligt för verifiering i VIES (Vat Information Exchange System) innan vi kan verifiera ditt momsregistreringsnummer. Om ditt momsregistreringsnummer inte kan verifieras kontaktar du din lokala skattemyndighet.
+- Innan vi kan verifiera ditt momsregistreringsnummer för EU-kunder måste det finnas tillgängligt för verifiering i Exchange System (VIES). Om ditt momsregistreringsnummer inte kan verifieras kontaktar du din lokala skattemyndighet.
 
 Du kan vara berättigad till momsregistrering om:
   
@@ -131,7 +133,7 @@ Om du faktureras från någon av följande platser tillämpas den aktuella lokal
 
 I USA, Kanada, Mexiko, Chile och Colombia gäller olika momssatser beroende på produkt natur och var du befinner dig.
   
-Om faktureringen utförs av Microsoft Corporation[(se](view-your-bill-or-invoice.md)fakturan) och du registrerat dig för Microsoft 365 utanför USA, Kanada, Puerto Rico, Chile och Colombia, debiteras vanligtvis ingen moms.
+Om faktureringen utförs av Microsoft Corporation[(se](view-your-bill-or-invoice.md)fakturan) och du registrerat dig för Microsoft 365 utanför USA, Kanada, Puerto Rico, Chile och Colombia debiteras vanligtvis ingen moms.
 
 ## <a name="add-your-vat-id"></a>Lägg till ditt momsregistreringsnummer
 
@@ -145,7 +147,7 @@ Om faktureringen utförs av Microsoft Corporation[(se](view-your-bill-or-invoice
 
 Försäljningsskatter beräknas mot enhetspriset och aggregeras sedan.
 
-Ett exempel:
+Till exempel:
 
 >*(enhetspris X momssats) X antal = total moms*
 
@@ -155,7 +157,7 @@ eller
 
 ## <a name="apply-for-tax-exempt-status"></a>Ansöka om undantag från beskattning
 
-Om du är berättigad till skattebefriad status på din marknad gör du en [serviceförfrågan](/office365/admin/contact-support-for-business-products) för att få skattebefriad status för din organisation.
+Om du är berättigad till skattebefriad status på din marknad gör du en [serviceförfrågan](../../business-video/get-help-support.md) för att få skattebefriad status för din organisation.
 
 |Land eller språk | Dokumentation |
 |------------------|----------------|

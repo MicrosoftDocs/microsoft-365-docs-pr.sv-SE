@@ -1,12 +1,12 @@
 ---
-title: Distributionsguide för den virtuella skrivbordsinfrastrukturen för Microsoft Defender Antivirus
-description: Lär dig hur du distribuerar Microsoft Defender Antivirus i en virtuell skrivbordsmiljö för bästa balans mellan skydd och prestanda.
+title: Microsoft Defender Antivirus Distributionsguide för infrastruktur för virtuellt skrivbord
+description: Lär dig hur du Microsoft Defender Antivirus i en virtuell skrivbordsmiljö för bästa balans mellan skydd och prestanda.
 keywords: vdi, hyper-v, VM, virtuell dator, windows defender, antivirus, av, virtuellt skrivbord, rds, fjärrskrivbord
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,12 +14,13 @@ ms.date: 12/28/2020
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: fed66586dc0607989e407ecd790d2af8c40e2939
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 4ecd14e055646804d81e22da7c192988cf1e6f6f
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765737"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275258"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Distributionsguide för Microsoft Defender Antivirus i en VDI-miljö (Virtual Desktop Infrastructure)
 
@@ -30,11 +31,11 @@ ms.locfileid: "51765737"
 
 - [Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Förutom standardkonfigurationer för lokal dator eller maskinvara kan du också använda Microsoft Defender Antivirus i en fjärrskrivbordsmiljö (RDS) eller i en VDI-miljö (Virtual Desktop Infrastructure).
+Förutom standardkonfigurationer för lokal dator eller maskinvara kan du även använda Microsoft Defender Antivirus i en fjärrskrivbordsmiljö (RDS) eller i en VDI-miljö (Virtual Desktop Infrastructure).
 
-Mer [information om Microsoft Fjärrskrivbordstjänster](/azure/virtual-desktop) och VDI-support finns i Dokumentationen för Virtuellt skrivbord för Windows.
+Mer [Windows om tjänster och](/azure/virtual-desktop) VDI-Microsoft Fjärrskrivbord finns i Dokumentationen för virtuellt skrivbord.
 
-För Azure-baserade virtuella datorer, se [Installera Endpoint Protection i Azure Defender](/azure/security-center/security-center-install-endpoint-protection).
+För Azure-baserade virtuella maskiner, se [Installera Endpoint Protection i Azure Defender](/azure/security-center/security-center-install-endpoint-protection).
 
 Med möjlighet att enkelt distribuera uppdateringar till virtuella maskiner som körs i VDE:er har vi förkortat den här guiden för att fokusera på hur du kan få uppdateringar på dina maskiner snabbt och enkelt. Du behöver inte längre regelbundet skapa och försegla gyllene bilder eftersom uppdateringarna utökas till sina beståndsdelar på värdservern och sedan hämtas direkt till den virtuella maskinerna när den är påslagen.
 
@@ -48,14 +49,14 @@ I den här guiden beskrivs hur du konfigurerar virtuella maskiner för optimala 
 - [Skanna in-datera datorer eller datorer som har varit offline ett tag](#scan-vms-that-have-been-offline)
 - [Använda undantag](#exclusions)
 
-Du kan också ladda ned informationsbladet [Microsoft Defender Antivirus](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf)på Virtual Desktop Infrastructure som tittar på den nya delade säkerhetsintelligensuppdateringsfunktionen, tillsammans med prestandatestning och vägledning om hur du kan testa antivirusprestanda på din egen VDI.
+Du kan också ladda ned informationsbladet Microsoft Defender Antivirus virtual [desktop infrastructure](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf)som tittar på den nya delade säkerhetsintelligensuppdateringsfunktionen, tillsammans med prestandatestning och vägledning om hur du kan testa antivirusprestanda på din egen VDI.
 
 > [!IMPORTANT]
-> Även om VDI kan lagras på Windows Server 2012 eller Windows Server 2016 bör virtuella maskinerna (VMs) åtminstone köra Windows 10, 1607, på grund av ökade skyddsteknik och funktioner som inte är tillgängliga i tidigare versioner av Windows.<br/>Det finns prestanda- och funktionsförbättringar för hur Microsoft Defender AV fungerar på virtuella datorer i Windows 10 Insider Preview, version 18323 (och senare). Vi identifierar dig i den här guiden om du behöver använda en Insider Preview-version. Om den inte anges är Windows 10 1607 den lägsta versionen som krävs för bästa skydd och prestanda.
+> Även om VDI kan lagras på Windows Server 2012 eller Windows Server 2016 bör virtuella maskiner (Virtual Machines) åtminstone köra Windows 10 1607 på grund av förbättrad skyddsteknik och funktioner som inte är tillgängliga i tidigare versioner av Windows.<br/>Det finns prestanda- och funktionsförbättringar för hur Microsoft Defender AV fungerar på virtuella datorer i Windows 10 Insider Preview, version 18323 (och senare). Vi identifierar dig i den här guiden om du behöver använda en Insider Preview-version. om den inte anges är den lägsta versionen som krävs för bästa skydd och prestanda Windows 10 1607.
 
 ## <a name="set-up-a-dedicated-vdi-file-share"></a>Konfigurera en dedikerad VDI-filresurs
 
-I Windows 10, version 1903, introducerade vi den delade säkerhetsintelligensfunktionen, som förser packa upp paketering av hämtade säkerhetsintelligensuppdateringar på en värddator – vilket sparar tidigare processor-, disk- och minnesresurser på enskilda datorer. Den här funktionen har bakåtporterats och fungerar nu i Windows 10 version 1703 och senare. Du kan ställa in den här funktionen med en grupprincip eller PowerShell.
+I Windows 10, version 1903, introducerade vi den delade säkerhetsintelligensfunktionen, som avpackar upp paketering av hämtade säkerhetsintelligensuppdateringar på en värddator – och tidigare processor-, disk- och minnesresurser sparas därför på enskilda datorer. Den här funktionen har bakåtporterats och fungerar nu i Windows 10 version 1703 och senare. Du kan ställa in den här funktionen med en grupprincip eller PowerShell.
 
 ### <a name="use-group-policy-to-enable-the-shared-security-intelligence-feature"></a>Använd Grupprincip för att aktivera den delade säkerhetsintelligensfunktionen:
 
@@ -65,7 +66,7 @@ I Windows 10, version 1903, introducerade vi den delade säkerhetsintelligensfun
 
 3. Klicka **på Administrativa mallar**.
 
-4. Expandera trädet till **Windows-komponenterna**  >  **Microsoft Defender Antivirus** Security  >  **Intelligence-uppdateringar.**
+4. Expandera trädet för att **Windows komponenter**  >  **Microsoft Defender Antivirus**  >  **Säkerhetsintelligensuppdateringar.**
 
 5. Dubbelklicka på Definiera **säkerhetsintelligens för VDI-klienter** och ange sedan alternativet **Aktiverad.** Ett fält visas automatiskt.
 
@@ -144,7 +145,7 @@ Här är ett exempel: `c:\wdav_update\{00000000-0000-0000-0000-000000000000}`
 
 Schemalagda skanningar körs utöver [realtidsskydd och skanning.](configure-real-time-protection-microsoft-defender-antivirus.md)
 
-Starttiden för själva genomsökningen baseras fortfarande på principen för schemalagd sökning **(ScheduleDay,** **ScheduleTime** och **ScheduleQuickScanTime).** Slumpvisisering gör att Microsoft Defender Antivirus startar en genomsökning på varje dator inom 4 timmar från den tid som angetts för den schemalagda genomsökningen.
+Starttiden för själva genomsökningen baseras fortfarande på principen för schemalagd sökning **(ScheduleDay,** **ScheduleTime** och **ScheduleQuickScanTime).** Slumpvisisering gör Microsoft Defender Antivirus att starta en genomsökning på varje dator inom 4-timmarsfönster från den tid som angetts för den schemalagda sökningen.
 
 Se [Schemalägga genomsökningar för](scheduled-catch-up-scans-microsoft-defender-antivirus.md) andra konfigurationsalternativ som är tillgängliga för schemalagda genomsökningar.
 
@@ -152,7 +153,7 @@ Se [Schemalägga genomsökningar för](scheduled-catch-up-scans-microsoft-defend
 
 Du kan ange vilken typ av genomsökning som ska utföras vid en schemalagd genomsökning. Snabbsökningar är den rekommenderade metoden eftersom de är utformade för att leta på alla platser där skadlig programvara måste vara aktiv. Här beskrivs hur du ställer in snabba genomsökningar med grupprinciper.
 
-1. I grupprincipredigeraren går du till Administrativa **mallar**  >  **Windows-komponenter**  >  **Microsoft Defender Antivirus**  >  **Scan.**
+1. I grupprincipredigeraren går du till Administrativa **mallar och Windows**  >  **komponenter**  >  **Microsoft Defender Antivirus**  >  **Skanna.**
 
 2. Välj **Ange vilken genomsökningstyp som ska användas för en schemalagd** sökning och redigera sedan principinställningen.
 
@@ -164,9 +165,9 @@ Du kan ange vilken typ av genomsökning som ska utföras vid en schemalagd genom
 
 ## <a name="prevent-notifications"></a>Förhindra meddelanden
 
-Ibland kan antivirusmeddelanden från Microsoft Defender skickas till eller finns kvar i flera sessioner. Om du vill minimera det här problemet kan du låsa användargränssnittet i Microsoft Defender Antivirus. Här beskrivs hur du förhindrar aviseringar med grupprinciper.
+Ibland kan Microsoft Defender Antivirus meddelanden skickas till eller finns kvar i flera sessioner. Om du vill minimera det här problemet kan du låsa Microsoft Defender Antivirus användargränssnittet. Här beskrivs hur du förhindrar aviseringar med grupprinciper.
 
-1. Gå till Windows-komponenter Microsoft Defender Antivirus Client Interface i  >    >  **grupprincipredigeraren.**
+1. I grupprincipredigeraren går du till skapa **Windows-Microsoft Defender Antivirus**  >    >  **Klientgränssnittet.**
 
 2. Markera **Ignorera alla meddelanden** och redigera sedan principinställningarna. 
 
@@ -174,12 +175,12 @@ Ibland kan antivirusmeddelanden från Microsoft Defender skickas till eller finn
 
 4. Distribuera grupprincipobjektet som vanligt.
 
-Om du ignorerar meddelanden förhindrar du att meddelanden från Microsoft Defender Antivirus visas i Åtgärdscenter på Windows 10 när genomsökningar görs eller åtgärder vidtas. Men teamet för säkerhetsåtgärder ser resultatet av genomsökningen i Microsoft Defender Säkerhetscenter ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
+Att hindra meddelanden från att Microsoft Defender Antivirus visas i Åtgärdscenter på Windows 10 när genomsökningar görs eller åtgärder vidtas. Men teamet för säkerhetsåtgärder ser resultatet av genomsökningen i Microsoft Defender Säkerhetscenter ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
 
 > [!TIP]
-> Öppna Åtgärdscenter i Windows 10 genom att göra något av följande:
+> Öppna Åtgärdscenter på Windows 10 genom att göra något av följande:
 > - Välj ikonen för Åtgärdscenter till höger i aktivitetsfältet.
-> - Tryck på Windows-tangenten + A.
+> - Tryck på Windows -tangenten + A.
 > - På en enhet med pekskärm sveper du från skärmens högra kant.
 
 ## <a name="disable-scans-after-an-update"></a>Inaktivera genomsökningar efter en uppdatering
@@ -189,7 +190,7 @@ Om du inaktiverar en genomsökning efter en uppdatering förhindras en genomsök
 > [!IMPORTANT]
 > Genom att köra genomsökningar efter en uppdatering kan du säkerställa att dina virtuella maskiner skyddas med de senaste säkerhetsintelligensuppdateringarna. Om du inaktiverar det här alternativet minskas skyddsnivån för virtuella maskiner och bör endast användas när du skapar eller distribuerar basbilden.
 
-1. Gå till Windows-komponenterna Microsoft  >  **Defender Antivirus**  >  **Security Intelligence-uppdateringar i grupprincipredigeraren.**
+1. I redigeraren för grupprinciper går du **till Windows komponenter**  >  **Microsoft Defender Antivirus**  >  **Säkerhetsintelligensuppdateringar.**
 
 2. Välj **Aktivera genomsökning efter säkerhetsintelligensuppdatering** och redigera sedan principinställningen.
 
@@ -203,7 +204,7 @@ Den här principen förhindrar att en genomsökning körs direkt efter en uppdat
 
 ## <a name="scan-vms-that-have-been-offline"></a>Skanna virtuella maskiner som har varit offline
 
-1. Gå till Windows-komponenterna Microsoft Defender Antivirus Scan i  >  **grupprincipredigeraren.**  >  
+1. I grupprincipredigeraren går du till Gå till Windows **komponenter**  >  **Microsoft Defender Antivirus**  >  **Skanna**.
 
 2. Välj **Aktivera snabbsökning och redigera** sedan principinställningen.
 
@@ -217,7 +218,7 @@ Den här principen tvingar fram en genomsökning om den virtuella maskinerna har
 
 ## <a name="enable-headless-ui-mode"></a>Aktivera huvudlöst gränssnittsläge
 
-1. Gå till Windows-komponenter Microsoft Defender Antivirus Client Interface i  >    >  **grupprincipredigeraren.**
+1. I grupprincipredigeraren går du till skapa **Windows-Microsoft Defender Antivirus**  >    >  **Klientgränssnittet.**
 
 2. Välj **Aktivera huvudlöst gränssnittsläge** och redigera principen.
 
@@ -227,13 +228,13 @@ Den här principen tvingar fram en genomsökning om den virtuella maskinerna har
 
 5. Distribuera grupprincipobjektet som vanligt.
  
-Den här principen döljer hela Microsoft Defender Antivirus-användargränssnittet från slutanvändarna i organisationen.
+Den här principen döljer Microsoft Defender Antivirus användargränssnittet från slutanvändarna i organisationen.
 
 ## <a name="exclusions"></a>Undantag
 
 Undantag kan läggas till, tas bort eller anpassas så att de passar dina behov.
 
-Mer information finns i Konfigurera [undantag för Microsoft Defender Antivirus på Windows Server.](configure-exclusions-microsoft-defender-antivirus.md)
+Mer information finns i [Konfigurera Microsoft Defender Antivirus undantag på Windows Server.](configure-exclusions-microsoft-defender-antivirus.md)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

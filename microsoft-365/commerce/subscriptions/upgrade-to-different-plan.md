@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,20 +13,20 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_NonTOC
-- commerce
 ms.custom:
 - SaRA
 - AdminSurgePortfolio
-search.appverid:
-- MET150
+- commerce_subscriptions
+- PPM_jmueller
+search.appverid: MET150
 description: Lär dig hur du uppgraderar till ett annat abonnemang.
-ms.openlocfilehash: c8d71e6ab79bfea35334f2c034dbc13f60397227
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.date: 04/21/2021
+ms.openlocfilehash: d9adf8bb18279d5057278a7c55cd751838325bc2
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939178"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280445"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Uppgradera till ett annat abonnemang
 
@@ -36,20 +37,13 @@ När ditt företag förändras eller du behöver fler funktioner kan du uppgrade
 När du använder **fliken** Uppgradera vägleds du genom processen med att köpa ett nytt abonnemang. Alla användare tilldelas automatiskt licenser i det nya abonnemanget och det gamla abonnemanget avbryts åt dig.
 
 1. I administrationscentret går du  till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Fakturering dina</a> produkter.
-
 2. Välj den prenumeration som du vill uppgradera.
-
 3. På sidan prenumerationsinformation väljer du **Uppgradera**.
-
 4. Leta reda på det abonnemang som du vill uppgradera till och välj **sedan knappen** Uppgradera.
-
 5. Ange antalet licenser du behöver, välj om du vill betala varje månad eller för hela året och välj sedan **Gå till kassan.**
-
     > [!NOTE]
     > Se till att köpa tillräckligt många licenser för alla användare.
-
 6. På nästa sida verifierar du **adressen Såld till,** **Faktureras till-informationen** och **Artiklar i denna order.** Du kan ändra standardbetalningsmetoden i det här steget. Om du behöver göra några ändringar väljer **du Ändra** bredvid tillämpliga avsnitt.
-
 7. När du är klar väljer du **Lägg order**.
 
 När du är klar med köpet kan det ta några minuter innan uppgraderingen är klar. Du kan börja använda den nya prenumerationen direkt. Välj **Kontrollera uppgraderingsstatus** för att kontrollera uppgraderingsförloppet. Du får ett meddelande när uppgraderingen är klar. Meddelandet visas på sidan **Dina produkter** bredvid din nya prenumeration.
@@ -62,7 +56,7 @@ Om **fliken** Uppgradera är tom ser du en förklaring till varför du inte kan 
 
 När du använder **fliken** Uppgradera visas de abonnemang som du kan uppgradera till baserat på tjänsterna i ditt nuvarande abonnemang. Du kan bara använda **fliken** Uppgradera för att flytta till ett abonnemang som har samma datarelaterade tjänster, eller till en högre version. Det säkerställer att användarna inte förlorar data i samband med dessa tjänster under ändringen.
 
-Om du vill flytta till ett abonnemang med färre tjänster kan du ändra [abonnemang manuellt](change-plans-manually.md)eller [ringa supporten och](../../admin/contact-support-for-business-products.md) be om hjälp.
+Om du vill flytta till ett abonnemang med färre tjänster kan du ändra [abonnemang manuellt](change-plans-manually.md)eller [ringa supporten och](../../business-video/get-help-support.md) be om hjälp.
 
 ## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>Jag vill bara uppgradera vissa av mina användare. Hur gör jag det?
 
@@ -80,27 +74,27 @@ Om du inte ser några abonnemang på **fliken Uppgradera** innebär det att abon
 
 ### <a name="why-are-there-no-plans-listed-to-upgrade"></a>Varför finns det inga planer på att uppgradera?
 
-#### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>Du kan inte uppgradera prenumerationer nu eftersom du har fler användare än licenser.
+#### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>Du kan inte uppgradera prenumerationer nu eftersom du har fler användare än licenser
 
-För att uppgradera abonnemang automatiskt måste alla dina användare tilldelas giltiga licenser. Om du har tilldelat fler licenser än du har köpt, visas en varning på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> om att du har en licenskonflikt som måste lösas. [Läs mer om hur du löser licenskonflikter](../../commerce/licenses/buy-licenses.md). När du har löst eventuella licenskonflikter bör du se abonnemangen listade på **fliken** Uppgradera. Om du inte gör det kan [du ändra abonnemang manuellt](change-plans-manually.md)eller ringa [supporten.](../../admin/contact-support-for-business-products.md)
+För att uppgradera abonnemang automatiskt måste alla dina användare tilldelas giltiga licenser. Om du har tilldelat fler licenser än du har köpt, visas en varning på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> om att du har en licenskonflikt som måste lösas. [Läs mer om hur du löser licenskonflikter](../../commerce/licenses/buy-licenses.md). När du har löst eventuella licenskonflikter bör du se abonnemangen listade på **fliken** Uppgradera. Om du inte gör det kan [du ändra abonnemang manuellt](change-plans-manually.md)eller ringa [supporten.](../../business-video/get-help-support.md)
 
-#### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>Du kan inte uppgradera prenumerationer just nu eftersom den här prenumerationen inte är helt konfigurerad eller tjänsten inte är tillgänglig.
+#### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>Du kan inte uppgradera prenumerationer just nu eftersom den här prenumerationen inte är helt konfigurerad eller tjänsten inte är tillgänglig
 
 Om till exempel en av tjänsterna har en incident kan du inte uppgradera förrän alla tjänster är felfria. Om du vill se om det är problem med tjänstens  etablering eller hälsa går du till sidan Hälsa \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">för tjänsten i administrationscentret.</a>
 
-Om du upptäcker att en tjänst inte är helt etablerad eller om det finns problem med tjänsten kan du vänta några timmar innan tjänsten blir tillgänglig och försöka igen. Om du fortfarande har problem kan du [ringa supporten.](../../admin/contact-support-for-business-products.md)
+Om du upptäcker att en tjänst inte är helt etablerad eller om det finns problem med tjänsten kan du vänta några timmar innan tjänsten blir tillgänglig och försöka igen. Om du fortfarande har problem kan du [ringa supporten.](../../business-video/get-help-support.md)
 
-#### <a name="you-cant-upgrade-plans-because-another-plan-is-in-the-process-of-being-upgraded-or-is-pending-a-credit-check"></a>Du kan inte uppgradera abonnemang eftersom ett annat abonnemang håller på att uppgraderas eller väntar på kreditkontroll.
+#### <a name="you-cant-upgrade-plans-because-another-plan-is-in-the-process-of-being-upgraded-or-is-pending-a-credit-check"></a>Du kan inte uppgradera abonnemang eftersom ett annat abonnemang håller på att uppgraderas eller väntar på kreditkontroll
 
 Vänta tills kreditkontrollen har slutförts innan du uppgraderar abonnemang. Kreditkontroller kan ta upp till två arbetsdagar.
 
-#### <a name="currently-this-subscription-is-not-eligible-to-upgrade"></a>För närvarande går det inte att uppgradera den här prenumerationen.
+#### <a name="currently-this-subscription-is-not-eligible-to-upgrade"></a>För närvarande går det inte att uppgradera den här prenumerationen
 
-Du kan [ändra abonnemang manuellt eller](change-plans-manually.md) ringa [supporten.](../../admin/contact-support-for-business-products.md)
+Du kan [ändra abonnemang manuellt eller](change-plans-manually.md) ringa [supporten.](../../business-video/get-help-support.md)
 
-#### <a name="i-see-a-different-message-than-whats-listed-here"></a>Jag ser ett annat meddelande än de som anges här.
+#### <a name="i-see-a-different-message-than-whats-listed-here"></a>Jag ser ett annat meddelande än det som anges här
 
-Du kan [ändra abonnemang manuellt eller](change-plans-manually.md) ringa [supporten.](../../admin/contact-support-for-business-products.md)
+Du kan [ändra abonnemang manuellt eller](change-plans-manually.md) ringa [supporten.](../../business-video/get-help-support.md)
 
 ### <a name="additional-reasons-you-cant-upgrade"></a>Fler anledningar till att det inte går att uppgradera
 
@@ -112,11 +106,11 @@ Du kan bara använda **fliken Uppgradera** om alla användare prenumererar på s
 
 Om du har betalat för prenumerationen i förväg kan du eventuellt ändra [abonnemang manuellt.](change-plans-manually.md) Men du får ingen kredit för outnyttjad tid som finns kvar av din nuvarande prenumeration om du uppgraderar abonnemang innan det aktuella abonnemanget går ut.
 
-Du kan också [ringa supporten](../../admin/contact-support-for-business-products.md) om du behöver hjälp.
+Du kan också [ringa supporten](../../business-video/get-help-support.md) om du behöver hjälp.
 
 #### <a name="you-have-a-government-or-non-profit-plan"></a>Du har ett abonnemang för myndigheter eller ideell verksamhet
 
-Om du har ett abonnemang för myndigheter eller ideell verksamhet kan du ändra [abonnemang manuellt eller](change-plans-manually.md) ringa [supporten om](../../admin/contact-support-for-business-products.md) du behöver hjälp.
+Om du har ett abonnemang för myndigheter eller ideell verksamhet kan du ändra [abonnemang manuellt eller](change-plans-manually.md) ringa [supporten om](../../business-video/get-help-support.md) du behöver hjälp.
 
 #### <a name="the-subscription-that-you-want-to-upgrade-from-has-a-temporary-issue"></a>Det har blivit ett tillfälligt problem med prenumerationen som du vill uppgradera från
 
@@ -124,9 +118,9 @@ Det kan hända att du inte **ser** några abonnemang på fliken Uppgradera efter
 
 #### <a name="the-plan-that-you-want-to-upgrade-to-isnt-a-supported-option"></a>Abonnemanget som du vill uppgradera till stöds inte
 
-När du uppgraderar abonnemang visas de abonnemang som du kan uppgradera till baserat på tjänsterna i ditt nuvarande abonnemang. Du kan bara uppgradera till ett abonnemang med samma datarelaterade tjänster, till exempel Exchange Online eller SharePoint Online, eller till en högre version av dem. Detta garanterar att användarna \' inte förlorar data i samband med dessa tjänster under uppgraderingen.
+När du uppgraderar abonnemang visas de abonnemang som du kan uppgradera till baserat på tjänsterna i ditt nuvarande abonnemang. Du kan bara uppgradera till ett abonnemang som har samma datarelaterade tjänster, till exempel Exchange Online eller SharePoint Online, eller till en högre version av dem. Detta garanterar att användarna \' inte förlorar data i samband med dessa tjänster under uppgraderingen.
 
-Om abonnemanget inte är berättigat till automatiskt uppgradering av abonnemang kanske du kan [ändra abonnemang manuellt](change-plans-manually.md)i stället. Du kan också [ringa supporten](../../admin/contact-support-for-business-products.md) om du behöver hjälp.
+Om abonnemanget inte är berättigat till automatiskt uppgradering av abonnemang kanske du kan [ändra abonnemang manuellt](change-plans-manually.md)i stället. Du kan också [ringa supporten](../../business-video/get-help-support.md) om du behöver hjälp.
 
 #### <a name="your-subscription-has-an-add-on"></a>Din prenumeration har ett tillägg
 
@@ -142,19 +136,19 @@ När du uppgraderar abonnemang automatiskt med hjälp  av knappen **Byt** abonne
 
 ### <a name="access-to-services"></a>Åtkomst till tjänster
 
- **Administratörerna** kan inte använda administrationscentret medan abonnemanget uppgraderas. Det kan ta upp till en timme.
+**Administratörerna** kan inte använda administrationscentret medan abonnemanget uppgraderas. Det kan ta upp till en timme.
   
- **Användare** märker inga avbrott i tjänsten. De fortsätter att ha den befintliga tjänsten tills uppgraderingen är slutförd.
+**Användare** märker inga avbrott i tjänsten. De fortsätter att ha den befintliga tjänsten tills uppgraderingen är slutförd.
   
 ### <a name="users-and-licenses"></a>Användare och licenser
 
 Användare i den gamla prenumerationen flyttas automatiskt till den nya prenumerationen.
   
-Om din gamla prenumeration omfattar flera tjänster, och du har ändrat vilka av dessa tjänster användarna har tilldelats, bör du anteckna detta innan du uppgraderar abonnemangen så att du kan återskapa ändringarna efteråt. Alla användare får åtkomst till alla tjänster i den nya prenumerationen. Om du till exempel tidigare har köpt Microsoft 365 Business Premium för alla dina 100 användare, men inte tilldelat SharePoint Online-tjänsten från 50 av dem, behålls inte den här ändringen när du uppgraderar abonnemang.
+Om din gamla prenumeration omfattar flera tjänster, och du har ändrat vilka av dessa tjänster användarna har tilldelats, bör du anteckna detta innan du uppgraderar abonnemangen så att du kan återskapa ändringarna efteråt. Alla användare får åtkomst till alla tjänster i den nya prenumerationen. Om du till exempel har köpt Microsoft 365 Business Premium för alla dina 100 användare, men inte tilldelat SharePoint Online-tjänsten från 50 av dem, behålls inte den här ändringen efter att du har uppgraderat abonnemang.
   
 Om du har fler än en prenumeration innan du uppgraderar abonnemang och har användar tilldelade licenser för fler än en prenumeration, kommer det här tilldelningsmönstret att behållas så mycket som möjligt i den nya prenumerationen.
   
-Alla användardata behålls under uppgraderingen, inklusive Exchange-postlådor och SharePoint Online-dokument, listor och annan information.
+Alla användardata behålls under uppgraderingen, inklusive e Exchange postlådor och SharePoint onlinedokument, listor och annan information.
   
 ### <a name="billing"></a>Fakturering
 
@@ -167,10 +161,9 @@ Dagen då abonnemangsuppgraderingen är klar inaktiveras faktureringen för din 
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>Ring supporten som hjälper dig att uppgradera abonnemang
 
-[Kontakta Microsoft Support](../../admin/contact-support-for-business-products.md)
+[Kontakta Microsoft Support](../../business-video/get-help-support.md)
 
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-content"></a>Relaterat innehåll
 
-[Ändra abonnemang manuellt](change-plans-manually.md)
-
-[Backa data innan du byter abonnemang för Microsoft 365 för företag](back-up-data-before-switching-plans.md)
+[Ändra abonnemang manuellt](change-plans-manually.md) (artikel)\
+[Back up data before switching Microsoft 365 for business plans](back-up-data-before-switching-plans.md) (article)

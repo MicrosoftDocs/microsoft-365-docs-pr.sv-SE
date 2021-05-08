@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,19 +13,20 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
+search.appverid: MET150
 description: Läs om vilka betalningsalternativ som finns tillgängliga för att betala för din prenumeration med en faktureringsprofil.
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
-ms.openlocfilehash: be89c2d355202dd8ca8698ac735cbb384bb8ef06
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+- commerce_billing
+- PPM_jmueller
+ms.date: 04/02/2021
+ms.openlocfilehash: 00c1fdca0f1ba227dcd10dffb7c46b03618593e7
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579776"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280865"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>Så här betalar du för prenumerationen med en faktureringsprofil
 
@@ -62,6 +64,7 @@ Om faktureringsprofilen säkerhetskopieras med en faktura får du ett e-postmedd
  **Välj land eller region för fakturering i listmenyn nedan.**
 
 > [!div class="op_single_selector"]
+>
 > - **Välj land eller region**
 > - [Afghanistan](../pay/afghanistan.md)
 > - [Albanien](../pay/albania.md)
@@ -217,7 +220,7 @@ Om faktureringsprofilen säkerhetskopieras med en faktura får du ett e-postmedd
 
 ## <a name="can-i-pay-my-invoice-online"></a>Kan jag betala fakturan online?
 
-Om du har inaktiverat återkommande fakturering för din faktureringsprofil kan du använda ett kreditkort för att betala fakturan online. Om du vill göra en betalning använder **du knappen** Betala nu på fakturan i administrationscentret för Microsoft 365. Mer information om hur du hittar din [faktura finns i Visa din faktura.](view-your-bill-or-invoice.md)
+Om du har inaktiverat återkommande fakturering för din faktureringsprofil kan du använda ett kreditkort för att betala fakturan online. Om du vill göra en betalning använder **du knappen** Betala nu på fakturan Microsoft 365 administrationscentret. Mer information om hur du hittar din [faktura finns i Visa din faktura.](view-your-bill-or-invoice.md)
 
 ## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>Kan jag byta från min aktuella betalningsmetod till att betala via faktura?
 

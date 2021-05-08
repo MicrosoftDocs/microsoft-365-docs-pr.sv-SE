@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 0ab8dde9ba725ec256762ebedce65fdcb22a5cdf
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: b62344945efc0bdfc495a4fc4196cea6ddcb1874
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765653"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275330"
 ---
 # <a name="use-microsoft-endpoint-manager-and-microsoft-intune-to-configure-and-manage-microsoft-defender-antivirus"></a>Använd Microsoft Endpoint Manager och Microsoft Intune för att konfigurera och hantera Microsoft Defender Antivirus
 
@@ -33,13 +33,13 @@ ms.locfileid: "51765653"
 
 - [Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Om du använde Microsoft Endpoint Manager eller Microsoft Intune för att hantera slutpunkterna i ditt nätverk kan du nu använda Microsoft Endpoint Manager för att hantera genomsökningar för Microsoft Defender Antivirus.
+Om du använder Microsoft Endpoint Manager eller Microsoft Intune för att hantera slutpunkterna i nätverket kan du nu använda Microsoft Endpoint Manager för att hantera Microsoft Defender Antivirus genomsökningar.
 
-1. Gå till Slutpunktssäkerhet i administrationscentret för Microsoft Endpoint [https://endpoint.microsoft.com](https://endpoint.microsoft.com) **Manager**( ).
+1. I administrationscentret Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) går du till **Slutpunktssäkerhet.**
 
 2. Välj **Antivirus** under **Hantera.**
 
-3. Välj din Microsoft Defender Antivirus-policy. 
+3. Välj Microsoft Defender Antivirus princip. 
 
 4. Välj **Egenskaper** under **Hantera**.
 

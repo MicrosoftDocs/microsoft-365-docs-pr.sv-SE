@@ -1,12 +1,12 @@
 ---
 title: Microsoft Defender AV-händelse-ID och felkoder
-description: Leta upp orsaker och lösningar för händelser och fel i Microsoft Defender Antivirus
+description: Leta upp orsaker och lösningar för Microsoft Defender Antivirus och fel
 keywords: händelse, felkod, siem, loggning, felsökning, wef, windows-händelse vidarebefordran
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,14 +14,15 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: f7e8d6428360e5fe45a377f3ed6611a76f0a7911
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: cd222760f3a5cc005c679bf28365237cc70e8950
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765821"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275354"
 ---
-# <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Granska händelseloggar och felkoder för att felsöka problem med Microsoft Defender Antivirus
+# <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Felsök problem med Microsoft Defender Antivirus genom att granska händelseloggar och felkoder
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,34 +31,34 @@ ms.locfileid: "51765821"
 
 - [Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Om du stöter på ett problem med Microsoft Defender Antivirus kan du söka i tabellerna i den här artikeln för att hitta ett matchande problem och en möjlig lösning.
+Om du stöter på problem Microsoft Defender Antivirus tabellerna i det här avsnittet för att hitta ett matchande problem och en möjlig lösning.
 
 Tabelllistan:
 
-- [Microsoft Defender Antivirus händelse-Ds](#windows-defender-av-ids) (dessa gäller både Windows 10 och Windows Server 2016)
-- [Felkoder för Microsoft Defender Antivirus-klienten](#error-codes)
-- [Interna felkoder för Microsoft Defender Antivirus-klienten (används av Microsoft under utveckling och testning)](#internal-error-codes)
+- [Microsoft Defender Antivirus händelse-Ds](#windows-defender-av-ids) (detta gäller både för Windows 10 och Windows Server 2016)
+- [Microsoft Defender Antivirus felkoder för klienten](#error-codes)
+- [Intern Microsoft Defender Antivirus för klientfelkoder (används av Microsoft under utveckling och testning)](#internal-error-codes)
 
 > [!TIP]
 > Du kan också besöka demowebbplatsen Microsoft Defender för slutpunkt [på demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) för att bekräfta att följande funktioner fungerar:
 > 
-> - Moln levererat skydd
+> - Molnbaserat skydd
 > - Fast learning (inklusive Block at first sight)
 > - Potentiellt oönskad programblockering
 
 <a id="windows-defender-av-ids"></a>
-## <a name="microsoft-defender-antivirus-event-ids"></a>Händelse-ID:er för Microsoft Defender Antivirus
+## <a name="microsoft-defender-antivirus-event-ids"></a>Microsoft Defender Antivirus-händelse-ID
 
-Microsoft Defender Antivirus registrerar händelse-IDn i händelseloggen i Windows.
+Microsoft Defender Antivirus registrerar händelse-IDt i Windows händelseloggen.
 
-Du kan visa händelseloggen direkt, eller om du har ett säkerhetsinformations- och händelsehanteringsverktyg från tredje part (SIEM), kan du också använda [Microsoft Defender Antivirus-klienthändelse-IDn](troubleshoot-microsoft-defender-antivirus.md#windows-defender-av-ids) för att granska specifika händelser och fel från slutpunkterna.
+Du kan direkt visa händelseloggen, eller om du har ett säkerhetsinformations- och händelsehanteringsverktyg från tredje part (SIEM), kan du också använda [Microsoft Defender Antivirus-klienthändelse-ID](troubleshoot-microsoft-defender-antivirus.md#windows-defender-av-ids) för att granska specifika händelser och fel från slutpunkterna.
 
-Tabellen i det här avsnittet innehåller huvud-ID för Microsoft Defender Antivirus-händelser och, om möjligt, förslag på lösningar för att åtgärda eller lösa felet. 
+Tabellen i det här avsnittet innehåller huvud-MICROSOFT DEFENDER ANTIVIRUS och, om möjligt, förslag på lösningar för att åtgärda eller lösa felet. 
 
-## <a name="to-view-a-microsoft-defender-antivirus-event"></a>Så här visar du en Microsoft Defender Antivirus-händelse
+## <a name="to-view-a-microsoft-defender-antivirus-event"></a>Visa en Microsoft Defender Antivirus händelse
 
 1.  Öppna **Loggboken.**
-2.  I konsolträdet expanderar du **Program- och tjänstloggar** och **sedan Microsoft** och sedan **Windows** och sedan **Windows Defender.**
+2.  I konsolträdet expanderar **du Program- och tjänstloggar** och **sedan Microsoft** och **Windows** och **sedan Windows Defender**.
 3.  Dubbelklicka på **Drift.**
 4.  I informationsfönstret kan du visa listan med enskilda händelser för att hitta händelsen.
 5.  Klicka på händelsen om du vill se specifik information om en händelse i det nedre fönstret, under **flikarna** **Allmänt och** Information.
@@ -320,7 +321,7 @@ Beskrivning:
 Användaråtgärd:
 </td>
 <td >
-Ett fel uppstod på antivirusklienten och den aktuella genomsökningen har stoppats. Genomsökningen kan misslyckas på grund av problem på klientsidan. Den här händelseposten omfattar genomsöknings-ID, typ av genomsökning (Microsoft Defender Antivirus, antispionprogram, program mot skadlig kod), genomsökningsparametrar, användaren som startade genomsökningen, felkoden och en beskrivning av felet.
+Ett fel uppstod på antivirusklienten och den aktuella genomsökningen har stoppats. Genomsökningen kan misslyckas på grund av problem på klientsidan. Den här händelseposten omfattar genomsöknings-ID,typ av genomsökning (Microsoft Defender Antivirus, antispionprogram, program mot skadlig kod), genomsökningsparametrar, användaren som startade genomsökningen, felkoden och en beskrivning av felet.
 Så här felsöker du händelsen:
 <ol>
 <li>Kör skanningen igen.</li>
@@ -360,7 +361,7 @@ Mer information finns i följande avsnitt:
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Högsta</li>
+<li>Hög</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
@@ -386,7 +387,7 @@ Mer information finns i följande avsnitt:
 <li>Användare: användarinitierad</li>
 <li>System: initierat system</li>
 <li>Realtidskomponent initierad i realtid</li>
-<li>IOAV: IE-nedladdningar och initierade Bifogade Outlook Express-filer</li>
+<li>IOAV: IE-nedladdningar och e Outlook för expressbilagor initierade</li>
 <li>NIS: System för nätverksinspektion</li>
 <li>IEPROTECT: IE - IExtensionValidation; Detta skyddar mot skadliga webbsidekontroller</li>
 <li>ELAM (Early Launch Antimalware). Detta inkluderar skadlig programvara som upptäckts av startsekvensen</li>
@@ -397,7 +398,7 @@ Mer information finns i följande avsnitt:
 <dt>Användare: &lt; Domain &gt; \& lt; &gt;Användarnamn:</dt>
 <dt>Process i &lt; &gt; PID-signaturversion:</dt>Definition
 <dt> &lt; version &gt; </dt>Engine
-<dt>Version: &lt; Antimalware Engine-version &gt; </dt>
+<dt>Version: skyddsmotor mot skadlig kod &lt; version &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -432,7 +433,7 @@ Microsoft Defender Antivirus har vidtagit åtgärder för att skydda datorn mot 
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Högsta</li>
+<li>Hög</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
@@ -448,8 +449,8 @@ Microsoft Defender Antivirus har vidtagit åtgärder för att skydda datorn mot 
 </ul>
 </dt>
 <dt>Status: &lt; &gt;</dt>
-<dt>Statussignaturversion: &lt; Version av &gt; definitionsversion:</dt>
-<dt> &lt; Antimalware Engine-version &gt; </dt>
+<dt>Statussignaturversion: &lt; Version &gt; av definitionsversion:</dt>
+<dt>skyddsmotor mot skadlig kod &lt; version &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -476,7 +477,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Det har uppstått ett fel i Microsoft Defender Antivirus när skadlig programvara eller annan potentiellt oönskad programvara vidtas. Mer information finns i följande avsnitt:
+Microsoft Defender Antivirus har stött på ett fel när du vidtar åtgärder mot skadlig programvara eller annan potentiellt oönskad programvara. Mer information finns i följande avsnitt:
 <dl>
 <dt>Användare: &lt; Domain &gt; \& lt; &gt;Användarnamn:</dt>
 <dt> &lt; Namn-ID för &gt; </dt>
@@ -484,7 +485,7 @@ Det har uppstått ett fel i Microsoft Defender Antivirus när skadlig programvar
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Högsta</li>
+<li>Hög</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
@@ -503,8 +504,8 @@ Det har uppstått ett fel i Microsoft Defender Antivirus när skadlig programvar
 <dt>Felkod: &lt; Felkod &gt; Resultatkod kopplad till hotstatus. Vanliga HRESULT-värden. </dt> 
 <dt>Felbeskrivning: &lt; &gt; Felbeskrivning Beskrivning av felet.</dt> 
 <dt>Status: &lt; &gt;</dt>
-<dt>Statussignaturversion: &lt; Version av &gt; definitionsversion:</dt>
-<dt> &lt; Antimalware Engine-version &gt; </dt>
+<dt>Statussignaturversion: &lt; Version &gt; av definitionsversion:</dt>
+<dt>skyddsmotor mot skadlig kod &lt; version &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -538,15 +539,15 @@ Microsoft Defender Antivirus har återställt ett objekt från karantän. Mer in
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Högsta</li>
+<li>Hög</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
 <dt>Kategori: &lt; &gt;Kategoribeskrivning, till exempel olika hot eller skadlig programvara.</dt> 
 <dt>Sökväg: &lt; Sökväg &gt; Användare:</dt>
 <dt>Domän &lt; &gt; \& lt; &gt;</dt>
-<dt>Användarsignaturversion: &lt; &gt; Definition version</dt>Engine
-<dt>Version: &lt; Antimalware Engine-version &gt; </dt>
+<dt>Användarsignaturversion: &lt; Version &gt; av definitionsversion:</dt>
+<dt>skyddsmotor mot skadlig kod &lt; version &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -573,14 +574,14 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Det har uppstått ett fel i Microsoft Defender Antivirus om att försöka återställa ett objekt från karantän. Mer information finns i följande avsnitt:
+Microsoft Defender Antivirus har stött på ett fel när du försöker återställa ett objekt från karantän. Mer information finns i följande avsnitt:
 <dl>
 <dt>Namn: &lt; Namn-ID &gt; </dt>
 <dt>för hot: Allvarlighetsgrad för hot-ID: &lt; &gt; </dt> 
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Högsta</li>
+<li>Hög</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
@@ -590,7 +591,7 @@ Det har uppstått ett fel i Microsoft Defender Antivirus om att försöka åters
 <dt>Användarfelkod: &lt; Felkod &gt; resultatkod som är associerad med hotstatus. Vanliga HRESULT-värden. </dt> 
 <dt>Felbeskrivning: &lt; &gt; Felbeskrivning Beskrivning av felet.</dt> 
 <dt>Signaturversion: &lt; Definition &gt; version</dt>
-<dt>Engine Version: &lt; Antimalware Engine version &gt; </dt>
+<dt>Engine Version: &lt; skyddsmotor mot skadlig kod &gt; version</dt>
 </dl>
 </td>
 </tr>
@@ -617,22 +618,22 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Ett objekt har tagits bort från karantän i Microsoft Defender Antivirus.<br/>Mer information finns i följande avsnitt:
+Microsoft Defender Antivirus har tagit bort ett objekt från karantän.<br/>Mer information finns i följande avsnitt:
 <dl>
 <dt>Namn: &lt; Namn-ID &gt; </dt>
 <dt>för hot: Allvarlighetsgrad för hot-ID: &lt; &gt; </dt> 
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Högsta</li>
+<li>Hög</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
 <dt>Kategori: &lt; &gt;Kategoribeskrivning, till exempel olika hot eller skadlig programvara.</dt> 
 <dt>Sökväg: &lt; Sökväg &gt; Användare:</dt>
 <dt>Domän &lt; &gt; \& lt; &gt;</dt>
-<dt>Användarsignaturversion: &lt; &gt; Definition version</dt>Engine
-<dt>Version: &lt; Antimalware Engine-version &gt; </dt>
+<dt>Användarsignaturversion: &lt; Version &gt; av definitionsversion:</dt>
+<dt>skyddsmotor mot skadlig kod &lt; version &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -659,7 +660,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Det har uppstått ett fel i Microsoft Defender Antivirus när ett objekt ska tas bort från karantän.
+Microsoft Defender Antivirus har stött på ett fel när ett objekt ska tas bort från karantän.
 Mer information finns i följande avsnitt:
 <dl>
 <dt>Namn: &lt; Namn-ID &gt; </dt>
@@ -667,7 +668,7 @@ Mer information finns i följande avsnitt:
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Högsta</li>
+<li>Hög</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
@@ -677,7 +678,7 @@ Mer information finns i följande avsnitt:
 <dt>Användarfelkod: &lt; Felkod &gt; resultatkod som är associerad med hotstatus. Vanliga HRESULT-värden. </dt> 
 <dt>Felbeskrivning: &lt; &gt; Felbeskrivning Beskrivning av felet.</dt> 
 <dt>Signaturversion: &lt; Definition &gt; version</dt>
-<dt>Engine Version: &lt; Antimalware Engine version &gt; </dt>
+<dt>Engine Version: &lt; skyddsmotor mot skadlig kod &gt; version</dt>
 </dl>
 </td>
 </tr>
@@ -734,7 +735,7 @@ Det gick inte att radera historik över skadlig programvara och annan potentiell
 Beskrivning:
 </td>
 <td >
-Ett fel har uppstått i Microsoft Defender Antivirus vid försök att ta bort historik över skadlig programvara och annan potentiellt oönskad programvara.
+Microsoft Defender Antivirus har stött på ett fel i försök att ta bort historik över skadlig programvara och annan potentiellt oönskad programvara.
 <dl>
 <dt>Tid: Tiden då händelsen inträffade, till exempel när historiken rensas. Den här parametern används inte i hothändelser, så det finns ingen förvirring kring om det är åtgärdstid eller smitta tid. För dem kallar vi dem specifikt för Åtgärdstid eller Identifieringstid.</dt> 
 <dt>Användare: &lt; Domain &gt; \& lt; &gt;</dt>
@@ -773,7 +774,7 @@ Microsoft Defender Antivirus har upptäckt ett misstänkt beteende.<br/>Mer info
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Högsta</li>
+<li>Hög</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
@@ -800,7 +801,7 @@ Microsoft Defender Antivirus har upptäckt ett misstänkt beteende.<br/>Mer info
 <li>Användare: användarinitierad</li>
 <li>System: initierat system</li>
 <li>Realtidskomponent initierad i realtid</li>
-<li>IOAV: IE-nedladdningar och initierade Bifogade Outlook Express-filer</li>
+<li>IOAV: IE-nedladdningar och e Outlook för expressbilagor initierade</li>
 <li>NIS: System för nätverksinspektion</li>
 <li>IEPROTECT: IE - IExtensionValidation; Detta skyddar mot skadliga webbsidekontroller</li>
 <li>ELAM (Early Launch Antimalware). Detta inkluderar skadlig programvara som upptäckts av startsekvensen</li>
@@ -812,8 +813,8 @@ Microsoft Defender Antivirus har upptäckt ett misstänkt beteende.<br/>Mer info
 <dt>Process i &lt; &gt; PID-signatur-ID:</dt>
 <dt>Uppräkningsmatchning för allvarlighetsgrad.</dt> 
 <dt>Signaturversion: &lt; Definition &gt; version</dt>
-<dt>Engine Version: &lt; Antimalware Engine version &gt; </dt>
-<dt>Återgivningsetikett:</dt>
+<dt>Engine Version: &lt; skyddsmotor mot skadlig kod version &gt; </dt>
+<dt>återgivning etikett:</dt>
 <dt>Target File Name: Filnamn för &lt; &gt; filen.</dt>
 </dl>
 </td>
@@ -848,7 +849,7 @@ Microsoft Defender Antivirus har upptäckt skadlig programvara eller annan poten
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Högsta</li>
+<li>Hög</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
@@ -875,7 +876,7 @@ Microsoft Defender Antivirus har upptäckt skadlig programvara eller annan poten
 <li>Användare: användarinitierad</li>
 <li>System: initierat system</li>
 <li>Realtidskomponent initierad i realtid</li>
-<li>IOAV: IE-nedladdningar och initierade Bifogade Outlook Express-filer</li>
+<li>IOAV: IE-nedladdningar och e Outlook för expressbilagor initierade</li>
 <li>NIS: System för nätverksinspektion</li>
 <li>IEPROTECT: IE - IExtensionValidation; Detta skyddar mot skadliga webbsidekontroller</li>
 <li>ELAM (Early Launch Antimalware). Detta inkluderar skadlig programvara som upptäckts av startsekvensen</li>
@@ -885,7 +886,7 @@ Microsoft Defender Antivirus har upptäckt skadlig programvara eller annan poten
 <dt>UAC-användare: &lt; Domän &gt; \& lt; &gt;Användarnamn:</dt>
 <dt>Process i &lt; &gt; PID-signaturversion:</dt>Definition
 <dt> &lt; version &gt; </dt>Engine
-<dt>Version: &lt; Antimalware Engine-version &gt; </dt>
+<dt>Version: skyddsmotor mot skadlig kod &lt; version &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -894,7 +895,7 @@ Microsoft Defender Antivirus har upptäckt skadlig programvara eller annan poten
 Användaråtgärd:
 </td>
 <td >
-Ingen åtgärd krävs. Microsoft Defender Antivirus kan avbryta och vidta rutinmässiga åtgärder mot det här hotet. Om du vill ta bort risken manuellt går du till gränssnittet för Microsoft Defender Antivirus och klickar på <b>Rensa dator.</b>
+Ingen åtgärd krävs. Microsoft Defender Antivirus kan avbryta och vidta rutinmässiga åtgärder mot det här hotet. Om du vill ta bort risken manuellt går du till Microsoft Defender Antivirus klickar på <b>Rensa dator.</b>
 </td>
 </tr>
 <tr>
@@ -927,7 +928,7 @@ Microsoft Defender Antivirus har vidtagit åtgärder för att skydda datorn mot 
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Högsta</li>
+<li>Hög</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
@@ -954,7 +955,7 @@ Microsoft Defender Antivirus har vidtagit åtgärder för att skydda datorn mot 
 <li>Användare: användarinitierad</li>
 <li>System: initierat system</li>
 <li>Realtidskomponent initierad i realtid</li>
-<li>IOAV: IE-nedladdningar och initierade Bifogade Outlook Express-filer</li>
+<li>IOAV: IE-nedladdningar och e Outlook för expressbilagor initierade</li>
 <li>NIS: System för nätverksinspektion</li>
 <li>IEPROTECT: IE - IExtensionValidation; Detta skyddar mot skadliga webbsidekontroller</li>
 <li>ELAM (Early Launch Antimalware). Detta inkluderar skadlig programvara som upptäckts av startsekvensen</li>
@@ -977,14 +978,14 @@ Microsoft Defender Antivirus har vidtagit åtgärder för att skydda datorn mot 
 <dt>Felkod: &lt; Felkod &gt; resultatkod som är associerad med hotstatus. Vanliga HRESULT-värden.</dt> 
 <dt>Felbeskrivning: &lt; Felbeskrivning &gt; Beskrivning av felet.</dt> 
 <dt>Signaturversion: &lt; Version &gt; av definitionsversion:</dt>
-<dt>Version av &lt; &gt; antimalwaremotorn:</dt> När Microsoft Defender Antivirus, Microsoft Security Essentials, borttagningsverktyget för skadlig programvara eller System Center Endpoint Protection upptäcker en skadlig programvara återställs följande systeminställningar och tjänster som den skadliga programvaran kan ha ändrat:<ul>
-<li>Standardinställning för Internet Explorer eller Microsoft Edge</li>
+<dt>skyddsmotor mot skadlig kod &lt; version &gt; </dt> OBS! När Microsoft Defender Antivirus, Microsoft Security Essentials, Borttagning av skadlig programvara eller System Center Endpoint Protection upptäcker en skadlig programvara återställs följande systeminställningar och tjänster som den skadliga programvaran kan ha ändrat:<ul>
+<li>Standardinställning för Internet Explorer Microsoft Edge Internet Explorer</li>
 <li>Inställningar för användaråtkomstkontroll</li>
 <li>Chrome-inställningar</li>
 <li>Startkontrolldata</li>
 <li>Registerinställningar för Regedit och Aktivitetshanteraren</li>
-<li>Windows Update, Intelligent Transfer-tjänst för bakgrund och tjänsten för fjärrprocedursamtal</li>
-<li>Windows-operativsystemfiler</li></ul>
+<li>Windows Uppdaterings-, Background Intelligent Transfer-tjänsten och tjänsten för fjärrprocedursamtal</li>
+<li>Windows Operativsystemsfiler</li></ul>
 Ovanstående sammanhang gäller för följande klient- och serverversioner:
 <table>
 <tr>
@@ -1016,7 +1017,7 @@ Windows Server 2008, Windows Server 2008 R2, Windows Server 2012 och Windows Ser
 Användaråtgärd:
 </td>
 <td >
-Ingen åtgärd krävs. Microsoft Defender Antivirus har tagits bort eller sätts i karantän för ett hot. 
+Ingen åtgärd krävs. Microsoft Defender Antivirus bort eller sätta ett hot i karantän. 
 </td>
 </tr>
 <tr>
@@ -1042,14 +1043,14 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Ett icke-kritiskt fel har uppstått i Microsoft Defender Antivirus när skadlig programvara eller annan potentiellt oönskad programvara vidtas.<br/>Mer information finns i följande avsnitt:
+Microsoft Defender Antivirus på ett icke-kritiskt fel när du vidtar åtgärder mot skadlig programvara eller annan potentiellt oönskad programvara.<br/>Mer information finns i följande avsnitt:
 <dl>
 <dt>Namn: &lt; Namn-ID &gt; </dt>
 <dt>för hot: Allvarlighetsgrad för hot-ID: &lt; &gt; </dt> 
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Högsta</li>
+<li>Hög</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
@@ -1076,7 +1077,7 @@ Ett icke-kritiskt fel har uppstått i Microsoft Defender Antivirus när skadlig 
 <li>Användare: användarinitierad</li>
 <li>System: initierat system</li>
 <li>Realtidskomponent initierad i realtid</li>
-<li>IOAV: IE-nedladdningar och initierade Bifogade Outlook Express-filer</li>
+<li>IOAV: IE-nedladdningar och e Outlook för expressbilagor initierade</li>
 <li>NIS: System för nätverksinspektion</li>
 <li>IEPROTECT: IE - IExtensionValidation; Detta skyddar mot skadliga webbsidekontroller</li>
 <li>ELAM (Early Launch Antimalware). Detta inkluderar skadlig programvara som upptäckts av startsekvensen</li>
@@ -1099,7 +1100,7 @@ Ett icke-kritiskt fel har uppstått i Microsoft Defender Antivirus när skadlig 
 <dt>Felkod: &lt; Felkod &gt; resultatkod som är associerad med hotstatus. Vanliga HRESULT-värden.</dt> 
 <dt>Felbeskrivning: &lt; Felbeskrivning &gt; Beskrivning av felet.</dt> 
 <dt>Signaturversion: &lt; Definition &gt; version</dt>
-<dt>Engine Version: &lt; Antimalware Engine version &gt; </dt>
+<dt>Engine Version: &lt; skyddsmotor mot skadlig kod &gt; version</dt>
 </dl>
 </td>
 </tr>
@@ -1134,14 +1135,14 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Ett kritiskt fel har uppstått i Microsoft Defender Antivirus när du vidtar åtgärder mot skadlig programvara eller annan potentiellt oönskad programvara.<br/>Mer information finns i följande avsnitt:
+Microsoft Defender Antivirus har stött på ett kritiskt fel när du vidtar åtgärder mot skadlig programvara eller annan potentiellt oönskad programvara.<br/>Mer information finns i följande avsnitt:
 <dl>
 <dt>Namn: &lt; Namn-ID &gt; </dt>
 <dt>för hot: Allvarlighetsgrad för hot-ID: &lt; &gt; </dt> 
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Högsta</li>
+<li>Hög</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
@@ -1168,7 +1169,7 @@ Ett kritiskt fel har uppstått i Microsoft Defender Antivirus när du vidtar åt
 <li>Användare: användarinitierad</li>
 <li>System: initierat system</li>
 <li>Realtidskomponent initierad i realtid</li>
-<li>IOAV: IE-nedladdningar och initierade Bifogade Outlook Express-filer</li>
+<li>IOAV: IE-nedladdningar och e Outlook för expressbilagor initierade</li>
 <li>NIS: System för nätverksinspektion</li>
 <li>IEPROTECT: IE - IExtensionValidation; Detta skyddar mot skadliga webbsidekontroller</li>
 <li>ELAM (Early Launch Antimalware). Detta inkluderar skadlig programvara som upptäckts av startsekvensen</li>
@@ -1191,7 +1192,7 @@ Ett kritiskt fel har uppstått i Microsoft Defender Antivirus när du vidtar åt
 <dt>Felkod: &lt; Felkod &gt; resultatkod som är associerad med hotstatus. Vanliga HRESULT-värden.</dt> 
 <dt>Felbeskrivning: &lt; Felbeskrivning &gt; Beskrivning av felet.</dt> 
 <dt>Signaturversion: &lt; Definition &gt; version</dt>
-<dt>Engine Version: &lt; Antimalware Engine version &gt; </dt>
+<dt>Engine Version: &lt; skyddsmotor mot skadlig kod &gt; version</dt>
 </dl>
 </td>
 </tr>
@@ -1200,7 +1201,7 @@ Ett kritiskt fel har uppstått i Microsoft Defender Antivirus när du vidtar åt
 Användaråtgärd:
 </td>
 <td >
-Det här felet påträffades på grund av kritiska problem i Microsoft Defender Antivirus-klienten. Slutpunkten kanske inte är skyddad. Granska felbeskrivningen och följ sedan de relevanta <b>användaråtgärdsstegen</b> nedan.
+På Microsoft Defender Antivirus på grund av kritiska problem påträffades det här felet. Slutpunkten kanske inte är skyddad. Granska felbeskrivningen och följ sedan de relevanta <b>användaråtgärdsstegen</b> nedan.
 <table>
 <tr>
 <th>Åtgärd</th>
@@ -1263,7 +1264,7 @@ Symboliskt namn:
 Meddelande:
 </td>
 <td >
-<b>Microsoft Defender Antivirus har bortser från hashtaggarna för en hotresurs.</b>
+<b>Microsoft Defender Antivirus har tagit fram hashtaggarna för en hotresurs.</b>
 </td>
 </tr>
 <tr>
@@ -1271,7 +1272,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Microsoft Defender Antivirus-klienten är igång i ett felfritt läge.
+Microsoft Defender Antivirus-klienten är igång i ett felfritt tillstånd.
 <dl>
 <dt>Aktuell plattformsversion: &lt; Current platform &gt; version</dt>
 <dt>Threat Resource Path: &lt; Path &gt; </dt>
@@ -1309,11 +1310,11 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Microsoft Defender Antivirus-klienten är igång i ett felfritt läge.
+Microsoft Defender Antivirus-klienten är igång i ett felfritt tillstånd.
 <dl>
-<dt>Plattformsversion: &lt; Aktuell plattform &gt; version</dt>
-<dt>Signatur version: Definition &lt; &gt; version</dt>Engine
-<dt>Version: &lt; Antimalware Engine version &gt; </dt>
+<dt>Plattformsversion: &lt; Version av &gt; signatur för</dt>
+<dt>aktuell plattform: Definition &lt; version &gt; </dt>
+<dt>engine version: skyddsmotor mot skadlig kod &lt; version &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -1322,7 +1323,7 @@ Microsoft Defender Antivirus-klienten är igång i ett felfritt läge.
 Användaråtgärd:
 </td>
 <td >
-Ingen åtgärd krävs. Microsoft Defender Antivirus-klienten är i ett felfritt tillstånd. Händelsen rapporteras varje timme.
+Ingen åtgärd krävs. Klient Microsoft Defender Antivirus statusen är felfri. Händelsen rapporteras varje timme.
 </td>
 </tr>
 
@@ -1341,7 +1342,7 @@ Symboliskt namn:
 Meddelande:
 </td>
 <td >
-<b>Hälsorapport för endpoint Protection-klient (tid i UTC) </b>
+<b>Endpoint Protection för klienthälsa (tid i UTC)</b>
 </td>
 </tr>
 <tr>
@@ -1351,20 +1352,20 @@ Beskrivning:
 <td >
 Hälsorapport för antivirusprogram.
 <dl>
-<dt>Plattformsversion: &lt; Current platform &gt; version</dt>
-<dt>Engine Version: &lt; Antimalware Engine version &gt; </dt>Network
+<dt>Plattformsversion: &lt; &gt;</dt>Aktuell plattform version
+<dt>Engine Version: &lt; skyddsmotor mot skadlig kod version &gt; </dt>Network
 <dt>Realtime Inspection engine version: &lt; Network Realtime Inspection &gt; </dt>engine version Antivirus signature
-<dt>version: Antivirus signature &lt; version &gt; </dt>
+<dt>version: Antivirus signature &lt; &gt; version</dt>
 <dt>Antispyware signature version: &lt; Antispyware signature version &gt; </dt>Network
-<dt>Realtime Inspection signature version: Network &lt; Realtime Inspection version &gt; RTP</dt>
-<dt>state: &lt; Realtime protection state &gt; (Enabled or Disabled)</dt>
+<dt>Realtime Inspection signature version: Network &lt; Realtime Inspection version &gt; </dt>
+<dt>RTP state: &lt; Realtime protection state &gt; (Enabled or Disabled)</dt>
 <dt>OA state: On Access state &lt; &gt; (Enabled or Disabled)</dt>
-<dt>IOAV state: IE-nedladdningar och Status för Outlook Express-bifogade filer (aktiverad eller &lt; inaktiverad) &gt; </dt>BM-läge: Status för funktionsövervakning (aktiverad eller
-<dt> &lt; &gt; inaktiverad)</dt>ålder för antivirussignaturen: Ålder på antivirussignaturen (i dagar) Antispionprogramsignatur, ålder: Ålder för antivirussignatur
-<dt> &lt; &gt; (i</dt>
-<dt> &lt; &gt; dagar)</dt>
-<dt> &lt; &gt; Antispionprogramsåldern:</dt>Senaste fullständiga genomsökningsåldern: Senaste fullständiga genomsökningsåldern
-<dt> &lt; &gt; (i dagar)</dt>Tid då antivirussignaturen
+<dt>IOAV state: I Tid för att ladda ned nedladdningar och Outlook Express-bifogade filer (aktiverad eller inaktiverad) BM-läge: Funktionskontroll (aktiverad eller inaktiverad) Ålder för antivirussignatur: Ålder på antivirussignaturen &lt; &gt; </dt>
+<dt> &lt; &gt; (i dagar)</dt>Antispionware-signatur
+<dt>ålder: &lt; &gt; Antispionprogramssignatur,</dt>ålder för senaste snabbsökning: Senaste snabbsökningsåldern
+<dt> &lt; &gt; (i dagar)</dt>Senaste fullständiga genomsökningsåldern: Senaste fullständiga genomsökningsåldern
+<dt> &lt; &gt; (i dagar)</dt>Tid då en antivirussignatur
+<dt> &lt; &gt; </dt>
 <dt>skapades: ? &lt; Tid för &gt; att skapa antivirussignaturer</dt>
 <dt>Tid då man skapade antispionwaresignaturer: ? &lt; Tid för att skapa &gt; antispionprogramssignaturer</dt>
 <dt>Senaste snabbstarttiden: ? &lt; Sista snabba skanningens &gt; starttid</dt>Sista snabba
@@ -1424,7 +1425,7 @@ Antivirussignaturversionen har uppdaterats.
 Användaråtgärd:
 </td>
 <td >
-Ingen åtgärd krävs. Microsoft Defender Antivirus-klienten är i ett felfritt tillstånd. Händelsen rapporteras när signaturer har uppdaterats.
+Ingen åtgärd krävs. Klient Microsoft Defender Antivirus statusen är felfri. Händelsen rapporteras när signaturer har uppdaterats.
 </td>
 </tr>
 <tr>
@@ -1450,7 +1451,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Det har uppstått ett fel i Microsoft Defender Antivirus när signaturer ska uppdateras.
+Microsoft Defender Antivirus har stött på ett fel vid försök att uppdatera signaturer.
 <dl>
 <dt>Ny säkerhetsintelligensversion: &lt; Nytt versionsnummer &gt; </dt>
 <dt>Tidigare säkerhetsinformationsversion: Tidigare &lt; &gt; versionsuppdateringskälla:</dt> 
@@ -1525,7 +1526,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Microsoft Defender Antivirusmotorns version har uppdaterats.
+Microsoft Defender Antivirus har uppdaterats.
 <dl>
 <dt>Current Engine-version: &lt; Current engine &gt; version</dt>
 <dt>Previous Engine Version: Previous engine &lt; version &gt; </dt>Engine
@@ -1539,7 +1540,7 @@ Microsoft Defender Antivirusmotorns version har uppdaterats.
 Användaråtgärd:
 </td>
 <td >
-Ingen åtgärd krävs. Microsoft Defender Antivirus-klienten är i ett felfritt tillstånd. Händelsen rapporteras när program mot skadlig programvara har uppdaterats.
+Ingen åtgärd krävs. Klient Microsoft Defender Antivirus statusen är felfri. Händelsen rapporteras när program mot skadlig programvara har uppdaterats.
 </td>
 </tr>
 <tr>
@@ -1565,7 +1566,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Det har uppstått ett fel i Microsoft Defender Antivirus när motorn ska uppdateras.
+Microsoft Defender Antivirus har stött på ett fel när motorn ska uppdateras.
 <dl>
 <dt>Ny motorversion: Tidigare</dt>
 <dt>motorversion: Tidigare &lt; &gt; </dt>motorversionstyp: Motortyp , antingen
@@ -1581,7 +1582,7 @@ Det har uppstått ett fel i Microsoft Defender Antivirus när motorn ska uppdate
 Användaråtgärd:
 </td>
 <td >
-Uppdateringen av Microsoft Defender Antivirus-klienten misslyckades. Den här händelsen inträffar när klienten inte kan uppdatera sig själv. Händelsen beror vanligtvis på ett avbrott i nätverksanslutningen under en uppdatering.
+Det Microsoft Defender Antivirus klientuppdateringen misslyckades. Den här händelsen inträffar när klienten inte kan uppdatera sig själv. Händelsen beror vanligtvis på ett avbrott i nätverksanslutningen under en uppdatering.
 Så här felsöker du händelsen:
 <ol>
 <li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">Uppdatera definitioner</a> och tvinga fram en omsökning direkt i slutpunkten.</li>
@@ -1613,7 +1614,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Det har uppstått ett fel i Microsoft Defender Antivirus när man försöker läsa in signaturer och försöker återgå till en känd uppsättning signaturer.
+Microsoft Defender Antivirus har stött på ett fel i försök att läsa in signaturer och försöker återgå till en känd uppsättning signaturer.
 <dl>
 <dt>Signaturer: Försöks:</dt>
 <dt>Felkod: &lt; Felkod &gt; resultatkod som är kopplad till hotstatus. Vanliga HRESULT-värden.</dt> 
@@ -1628,11 +1629,11 @@ Det har uppstått ett fel i Microsoft Defender Antivirus när man försöker lä
 Användaråtgärd:
 </td>
 <td >
-Microsoft Defender Antivirus-klienten försökte hämta och installera den senaste definitionsfilen och misslyckades. Det här felet kan uppstå när klienten stöter på ett fel när du försöker läsa in definitionerna eller om filen är skadad. Microsoft Defender Antivirus försöker återgå till en känd uppsättning definitioner.
+Användaren Microsoft Defender Antivirus försökte hämta och installera den senaste definitionsfilen och misslyckades. Det här felet kan uppstå när klienten stöter på ett fel när du försöker läsa in definitionerna eller om filen är skadad. Microsoft Defender Antivirus försöker återgå till en känd uppsättning definitioner.
 Så här felsöker du händelsen:
 <ol>
 <li>Starta om datorn och försök igen.</li>
-<li>Hämta de senaste definitionerna från <a href="https://aka.ms/wdsi">Microsoft Security Intelligence-webbplatsen</a>.
+<li>Hämta de senaste definitionerna från <a href="https://aka.ms/wdsi">Microsoft Säkerhetsinsikter webbplatsen</a>.
 Obs! Storleken på definitionsfilen som laddas ned från webbplatsen kan överskrida 60 MB och bör inte användas som en långsiktig lösning för att uppdatera definitioner.
 </li>
 <li>Kontakta <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsofts tekniska support</a>.
@@ -1663,7 +1664,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Det gick inte att läsa in skadlig programvara i Microsoft Defender Antivirus eftersom den aktuella plattformsversionen inte stöds. Microsoft Defender Antivirus återgår till den senaste kända motorn och en plattformsuppdatering kommer att försökas.
+Microsoft Defender Antivirus gick inte att läsa in program mot skadlig programvara eftersom den aktuella plattformsversionen inte stöds. Microsoft Defender Antivirus går tillbaka till den senaste välkända motorn och en plattformsuppdatering kommer att försökas.
 <dl>
 <dt>Aktuell plattformsversion: &lt; Aktuell plattformsversion&gt;</dt>
 </dl>
@@ -1692,7 +1693,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Det har uppstått ett fel i Microsoft Defender Antivirus när plattformen ska uppdateras.
+Microsoft Defender Antivirus har stött på ett fel när plattformen ska uppdateras.
 <dl>
 <dt>Aktuell plattformsversion: &lt; Aktuell plattformsversion &gt; </dt>
 <dt>Felkod: &lt; Resultatkod för &gt; felkod som är kopplad till hotstatus. Vanliga HRESULT-värden.</dt> 
@@ -1723,7 +1724,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Microsoft Defender Antivirus kommer snart att kräva en nyare plattformsversion för att stödja framtida versioner av program mot skadlig programvara. Ladda ned den senaste Microsoft Defender Antivirus-plattformen för att upprätthålla den bästa skyddsnivån som finns tillgänglig.
+Microsoft Defender Antivirus snart att behöva en nyare plattformsversion för att stödja framtida versioner av program mot skadlig programvara. Ladda ned den Microsoft Defender Antivirus-plattformen för att upprätthålla den bästa skyddsnivån som finns tillgänglig.
 <dl>
 <dt>Aktuell plattformsversion: &lt; Aktuell plattformsversion&gt;</dt>
 </dl>
@@ -1752,7 +1753,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Microsoft Defender Antivirus använde <i>dynamisk signaturtjänst för</i> att hämta ytterligare signaturer som skyddar din dator.
+Microsoft Defender Antivirus dynamisk <i>signaturtjänst för att</i> hämta ytterligare signaturer som hjälper till att skydda datorn.
 <dl>
 <dt>Aktuell signaturversion: &lt; Aktuell signaturversion &gt; </dt> 
 <dt> Signaturtyp: &lt; &gt; Signaturtyp, till exempel: <ul>
@@ -1808,7 +1809,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Microsoft Defender Antivirus använde <i>dynamisk signaturtjänst för att</i> ignorera inaktuella signaturer.
+Microsoft Defender Antivirus dynamisk <i>signaturtjänst för att</i> ignorera inaktuella signaturer.
 <dl>
 <dt>Aktuell signaturversion: &lt; Aktuell signaturversion &gt; </dt> 
 <dt> Signaturtyp: &lt; &gt; Signaturtyp, till exempel: <ul>
@@ -1847,7 +1848,7 @@ Microsoft Defender Antivirus använde <i>dynamisk signaturtjänst för att</i> i
 Användaråtgärd:
 </td>
 <td >
-Ingen åtgärd krävs. Microsoft Defender Antivirus-klienten är i ett felfritt tillstånd. Den här händelsen rapporteras när tjänsten Dynamisk signatur tar bort dynamiska definitioner som inte är aktuella.
+Ingen åtgärd krävs. Klient Microsoft Defender Antivirus statusen är felfri. Den här händelsen rapporteras när tjänsten Dynamisk signatur tar bort dynamiska definitioner som inte är aktuella.
 </td>
 </tr>
 <tr>
@@ -1873,7 +1874,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Det har uppstått ett fel i Microsoft Defender Antivirus när <i>tjänsten Dynamisk signatur ska användas.</i>
+Microsoft Defender Antivirus har stött på ett fel när tjänsten <i>dynamisk signatur ska användas.</i>
 <dl>
 <dt>Aktuell signaturversion: &lt; Aktuell signaturversion &gt; </dt> 
 <dt> Signaturtyp: &lt; &gt; Signaturtyp, till exempel: <ul>
@@ -1939,7 +1940,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Alla signaturer för <i></i> dynamisk signaturtjänst ignorerades i Microsoft Defender Antivirus.
+Microsoft Defender Antivirus ignorerade alla <i>signaturer för tjänsten</i> Dynamisk signatur.
 <dl>
 <dt>Aktuell signaturversion: &lt; aktuell signaturversion&gt;</dt>
 </dl>
@@ -1968,7 +1969,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Microsoft Defender Antivirus har laddat ned en ren fil.
+Microsoft Defender Antivirus en ren fil.
 <dl>
 <dt>Filnamn: &lt; Filens &gt; filnamn.</dt> 
 <dt>Aktuell signaturversion: &lt; Current signature &gt; version</dt>
@@ -1999,7 +2000,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Det har uppstått ett fel i Microsoft Defender Antivirus när en ren fil ska laddas ned.
+Microsoft Defender Antivirus har stött på ett fel när en ren fil ska hämtas.
 <dl>
 <dt>Filnamn: &lt; Filens &gt; filnamn.</dt> 
 <dt>Aktuell signaturversion: &lt; Current signature &gt; version</dt>
@@ -2015,7 +2016,7 @@ Användaråtgärd:
 </td>
 <td >
 Kontrollera inställningarna för Internetanslutningen.
-Det uppstod ett fel i Microsoft Defender Antivirus-klienten när tjänsten Dynamisk signatur skulle användas för att ladda ned de senaste definitionerna för ett visst hot. Det här felet orsakas troligen av ett nätverksanslutningsproblem. 
+Det Microsoft Defender Antivirus på grund av ett fel när tjänsten Dynamisk signatur används för att ladda ned de senaste definitionerna för ett visst hot. Det här felet orsakas troligen av ett nätverksanslutningsproblem. 
 </td>
 </tr>
 <tr>
@@ -2041,7 +2042,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Microsoft Defender Antivirus har laddats ned och konfigurerats att köras offline för att köras vid nästa omstart.
+Microsoft Defender Antivirus ned och konfigurerat offline antivirus att köras vid nästa omstart.
 </td>
 </tr>
 <tr>
@@ -2067,7 +2068,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Det har uppstått ett fel i Microsoft Defender Antivirus när antivirusprogrammet ska laddas ned och konfigureras.
+Microsoft Defender Antivirus har stött på ett fel vid försök att ladda ned och konfigurera offlineantivirusprogram.
 <dl>
 <dt>Felkod: &lt; Felkod &gt; Resultatkod kopplad till hotstatus. Vanliga HRESULT-värden.</dt> 
 <dt>Felbeskrivning: &lt; Felbeskrivning &gt; Beskrivning av felet.</dt>
@@ -2097,7 +2098,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Stödet för ditt operativsystem upphör snart. Att köra Microsoft Defender Antivirus på ett operativsystem utan support är inte en lämplig lösning för att skydda mot hot.
+Stödet för ditt operativsystem upphör snart. Att Microsoft Defender Antivirus på ett operativsystem utan support är inte en lämplig lösning för att skydda mot hot.
 </td>
 </tr>
 <tr>
@@ -2123,7 +2124,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Stödet för ditt operativsystem har upphört att gälla. Att köra Microsoft Defender Antivirus på ett operativsystem utan support är inte en lämplig lösning för att skydda mot hot.
+Stödet för ditt operativsystem har upphört att gälla. Att Microsoft Defender Antivirus på ett operativsystem utan support är inte en lämplig lösning för att skydda mot hot.
 </td>
 </tr>
 <tr>
@@ -2149,7 +2150,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Stödet för ditt operativsystem har upphört att gälla. Microsoft Defender Antivirus stöds inte längre i ditt operativsystem, har slutat fungera och skyddar inte mot skadlig programvara.
+Stödet för ditt operativsystem har upphört att gälla. Microsoft Defender Antivirus inte längre stöds i operativsystemet, har slutat fungera och skyddar inte mot skadlig programvara.
 </td>
 </tr>
 <tr>
@@ -2175,19 +2176,19 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Ett fel har uppstått Real-Time har uppstått i funktionen Microsoft Defender Antivirus Real-Time Antivirus Antivirus.
+Microsoft Defender Antivirus Real-Time Skydd har stött på ett fel och misslyckats.
 <dl>
 <dt>Funktion: &lt; &gt; Funktion, till exempel:
 <ul>
 <li>I Access</li>
-<li>Internet Explorer-nedladdningar och bifogade filer i Microsoft Outlook Express</li>
+<li>Nedladdningar från Internet Explorer och Microsoft Outlook Express-bilagor</li>
 <li>Övervakning av beteende</li>
 <li>System för nätverksinspektion</li>
 </ul>
 </dt>
 <dt>Felkod: &lt; Felkod &gt; Resultatkod kopplad till hotstatus. Vanliga HRESULT-värden.</dt> 
 <dt>Felbeskrivning: &lt; Felbeskrivning &gt; Beskrivning av felet.</dt> 
-<dt>Orsak: Orsaken till att realtidsskyddet för Microsoft Defender Antivirus har startat om en funktion.</dt>
+<dt>Orsak: Orsaken Microsoft Defender Antivirus realtidsskyddet har startat om en funktion.</dt>
 </dl>
 </td>
 </tr>
@@ -2197,7 +2198,7 @@ Användaråtgärd:
 </td>
 <td >
 Du bör starta om systemet och sedan köra en fullständig genomsökning eftersom&#39;det är möjligt att systemet inte var skyddat på ett tag.
-Ett fel uppstod när&#39;antivirusklienten för Microsoft Defender i realtid påträffade ett fel eftersom en av tjänsterna inte kunde startas. Om det följs av ett 3007 händelse-ID var felet tillfälligt och klienten för program mot skadlig kod återställdes efter felet. 
+Ett Microsoft Defender Antivirus av&#39;realtidsskydd påträffade ett fel på grund av att en av tjänsterna inte kunde starta. Om det följs av ett 3007 händelse-ID var felet tillfälligt och klienten för program mot skadlig kod återställdes efter felet. 
 </td>
 </tr>
 <tr>
@@ -2223,17 +2224,17 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Microsoft Defender Antivirus Realtidsskydd har startat om en funktion. Vi rekommenderar att du kör en fullständig systemsökning för att hitta eventuella objekt som kan ha missats under tiden den här agenten var nere.
+Microsoft Defender Antivirus Realtidsskyddet har startat om en funktion. Vi rekommenderar att du kör en fullständig systemsökning för att hitta eventuella objekt som kan ha missats under tiden den här agenten var nere.
 <dl>
 <dt>Funktion: &lt; &gt; Funktion, till exempel:
 <ul>
 <li>I Access</li>
-<li>IE-nedladdningar och Outlook Express-bilagor</li>
+<li>IE laddar ned och Outlook Express-bilagor</li>
 <li>Övervakning av beteende</li>
 <li>System för nätverksinspektion</li>
 </ul>
 </dt>
-<dt>Orsak: Orsaken till att realtidsskyddet för Microsoft Defender Antivirus har startat om en funktion.</dt>
+<dt>Orsak: Orsaken Microsoft Defender Antivirus realtidsskyddet har startat om en funktion.</dt>
 </dl>
 </td>
 </tr>
@@ -2268,7 +2269,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Sökning efter skadlig programvara och andra potentiellt oönskade program har aktiverats i realtid med Microsoft Defender Antivirus.
+Microsoft Defender Antivirus skydd i realtid för skadlig programvara och annan potentiellt oönskad programvara har aktiverats.
 </td>
 </tr>
 <tr>
@@ -2294,7 +2295,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Genomsökning av realtidsskydd för skadlig programvara och andra potentiellt oönskade program har inaktiverats i Microsoft Defender Antivirus. 
+Microsoft Defender Antivirus skydd i realtid för skadlig programvara och annan potentiellt oönskad programvara har inaktiverats. 
 </td>
 </tr>
 <tr>
@@ -2320,12 +2321,12 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Funktionskonfigurationen för realtidsskyddet i Microsoft Defender Antivirus har ändrats.
+Microsoft Defender Antivirus är att realtidsskyddets funktionskonfiguration har ändrats.
 <dl>
 <dt>Funktion: &lt; &gt; Funktion, till exempel:
 <ul>
 <li>I Access</li>
-<li>IE-nedladdningar och Outlook Express-bilagor</li>
+<li>IE laddar ned och Outlook Express-bilagor</li>
 <li>Övervakning av beteende</li>
 <li>System för nätverksinspektion</li>
 </ul>
@@ -2357,7 +2358,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Microsoft Defender Antivirus-konfigurationen har ändrats. Om det här är en oväntad händelse bör du granska inställningarna eftersom det kan vara resultatet av skadlig programvara.
+Microsoft Defender Antivirus har ändrats. Om det här är en oväntad händelse bör du granska inställningarna eftersom det kan vara resultatet av skadlig programvara.
 <dl>
 <dt>Gammalt värde: &lt; Gammalt värde nummer &gt; Gammalt antivirusprogram-konfigurationsvärde.</dt> 
 <dt>Nytt värde: &lt; Nytt värdenummer &gt; Nytt antivirusprograms konfigurationsvärde.</dt>
@@ -2387,7 +2388,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Microsoft Defender Antivirus-motorn har avslutats på grund av ett oväntat fel.
+Microsoft Defender Antivirus har avslutats på grund av ett oväntat fel.
 <dl>
 <dt>Feltyp: &lt; &gt;Feltyp, till exempel: Krasch- eller undantagskod:</dt>
 <dt> &lt; Felkod &gt; Resurs:</dt>
@@ -2696,7 +2697,7 @@ Det här felet anger att risken inte längre finns i media, eller att skadlig pr
 </tr><tr><td>Lösning
 </td>
 <td>
-Kör <a href="https://www.microsoft.com/security/scanner/default.aspx">Microsoft Safety Scanner och</a> uppdatera sedan säkerhetsprogramvaran och försök igen. 
+Kör <a href="https://www.microsoft.com/security/scanner/default.aspx">Microsoft Safety Scanner</a> uppdatera sedan säkerhetsprogramvaran och försök igen. 
 </td>
 </tr>
 <tr>
@@ -2769,7 +2770,7 @@ Kör en fullständig systemsökning.
 <td>
 Det här felet anger att en offlinesökning krävs. 
 </td></tr><tr><td>Lösning</td><td>
-Kör Microsoft Defender Antivirus offline. Du kan läsa om hur du gör detta i artikeln <a href="https://windows.microsoft.com/windows/what-is-windows-defender-offline">Microsoft Defender Antivirus offline.</a>
+Kör offline-Microsoft Defender Antivirus. Du kan läsa om hur du gör detta i <a href="https://windows.microsoft.com/windows/what-is-windows-defender-offline">artikeln om offline-Microsoft Defender Antivirus</a>.
 </td>
 </tr>
 <tr>
@@ -2779,13 +2780,13 @@ Kör Microsoft Defender Antivirus offline. Du kan läsa om hur du gör detta i a
 <td><b>ERROR_MP_PLATFORM_OUTDATED<br/></b>
 </td></tr><tr><td>Möjlig orsak</td>
 <td>
-Det här felet anger att Microsoft Defender Antivirus inte stöder den aktuella versionen av plattformen och kräver en ny version av plattformen. 
+Det här felet anger Microsoft Defender Antivirus versionen inte stöder den aktuella versionen av plattformen och kräver en ny version av plattformen. 
 </td></tr><tr><td>Lösning</td><td>
-Du kan bara använda Microsoft Defender Antivirus i Windows 10. För Windows 8, Windows 7 och Windows Vista kan du använda <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection.</a><br/></td>
+Du kan bara använda Microsoft Defender Antivirus i Windows 10. Med Windows 8, Windows 7 och Windows Vista kan du använda <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.<br/></td>
 </tr>
 </table>
 
-<a id="internal-error-codes"></a> Följande felkoder används vid intern testning av Microsoft Defender Antivirus.
+<a id="internal-error-codes"></a>Följande felkoder används vid intern testning av Microsoft Defender Antivirus.
 
 Om du ser de här felen kan du försöka uppdatera [definitioner och](manage-updates-baselines-microsoft-defender-antivirus.md) tvinga fram en ny sökning direkt på slutpunkten.
 
@@ -3114,5 +3115,5 @@ Det här är ett internt fel. Det kan ha utlösts när en genomsökning inte kun
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [Rapport om antivirusskyddet i Microsoft Defender](report-monitor-microsoft-defender-antivirus.md)
+- [Rapport om Microsoft Defender Antivirus skydd](report-monitor-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus i Windows 10](microsoft-defender-antivirus-in-windows-10.md)

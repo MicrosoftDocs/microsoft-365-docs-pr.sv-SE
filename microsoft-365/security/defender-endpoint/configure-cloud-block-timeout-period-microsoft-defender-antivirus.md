@@ -7,21 +7,22 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 372d679f45d6f87392b612f757e6bdf1c6c6b9ad
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 02b8ee1c73116718d771847a43d6334e0723bd5c
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765809"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275318"
 ---
-# <a name="configure-the-cloud-block-timeout-period"></a>Konfigurera tidsgränsen för molnblockering
+# <a name="configure-the-cloud-block-timeout-period"></a>Konfigurera tidsgräns för blockering i molnet
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

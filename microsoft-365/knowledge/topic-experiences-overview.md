@@ -1,7 +1,7 @@
 ---
 title: Översikt över Microsoft Viva Topics
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Översikt över Viva Topics.
-ms.openlocfilehash: 4598c47b07287789a7a194914232799de5ca7b85
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: b37572087794055724cb9533246f83794d88fb93
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488163"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275218"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Översikt över Microsoft Viva Topics 
 
@@ -40,8 +40,12 @@ Viva Topics använder AI för att automatiskt söka efter och identifiera **ämn
 
 När ett ämne omnämns i innehåll på nyheter och sidor i SharePoint markeras det. Du kan öppna ämnessammanfattningen från markeringen. Öppna ämnesinformationen från sammanfattningens rubrik. Det omnämnda ämnet kan identifieras automatiskt eller ha lagts till på sidan med en direkt referens till ämnet av sidans författare. 
 
-   ![Höjdpunkter Topic](../media/knowledge-management/saturn.png) </br> 
+   ![Höjdpunkter Topic](../media/knowledge-management/saturn.png) 
 
+
+   ![Skärmbild som visar sökning i Word via sökrutan.](../media/knowledge-management/word-search-2.png)
+
+   ![Skärmbild som visar sökning i Word via snabbmenyn Sök.](../media/knowledge-management/word-search-1.png)
 
 ## <a name="knowledge-indexing"></a>Kunskapsindexering
 
@@ -99,7 +103,7 @@ Se [Hantera ämnen i temacenter](manage-topics.md) för mer information.
 
 ## <a name="admin-controls"></a>Administratörskontroller
 
-Med administratörskontroller i administrationscentret för Microsoft 365 kan du hantera Viva-ämnen. De gör det möjligt för en global Microsoft 365- eller SharePoint-administratör att:
+Med administratörskontroller i Microsoft 365 kan du hantera Viva Topics. De gör det möjligt för en global Microsoft 365- eller SharePoint-administratör att:
 
 - Kontrollera vilka användare i organisationen som får se ämnen på moderna sidor i SharePoint eller i SharePoint-sökresultat.
 - Kontrollera vilka SharePoint-webbplatser som ska crawlas för att identifiera ämnen.

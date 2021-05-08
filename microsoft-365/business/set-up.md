@@ -30,22 +30,22 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Upptäck konfigurationsstegen för Microsoft 365 Business Premium, inklusive att lägga till en domän och användare, konfigurera säkerhetsprinciper med mera.
-ms.openlocfilehash: c8e2ca94f4947d4f9c69915d2fef410a6075bfed
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 37607b483686fc12ac6253ae9f693ec86c073c4e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579923"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245053"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Konfigurera Microsoft 365 Business Premium i installationsguiden
 
-Titta på den här videon för en översikt över installation av Microsoft 365 Business Premium.<br><br>
+Titta på den här videon för en översikt över Microsoft 365 Business Premium konfiguration.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>Lägga till domän, användare och konfigurera principer
 
-När du köper Microsoft 365 Business Premium kan du välja att använda en domän som du äger eller köpa en i [samband med köpet.](sign-up.md)
+När du köper Microsoft 365 Business Premium domän kan du välja att använda en domän som du äger eller köpa en i [samband med köpet.](sign-up.md)
 
 - Om du har köpt en ny domän när du registrerade dig kommer din domän att konfigureras, och du kan gå vidare till [Lägga till användare och tilldela licenser](#add-users-and-assign-licenses).
 
@@ -67,7 +67,7 @@ När du köper Microsoft 365 Business Premium kan du välja att använda en dom�
     ![Skärmbild av sidan Anpassa din inloggning.](../media/adddomain.png)
 
     
-4. Följ stegen i guiden för att Skapa DNS-poster på vilken DNS-värd som helst för [Microsoft 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) som verifierar att du äger domänen. Om du vet vilken din domänvärd är kan du även se [Värdspecifika anvisningar](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
+4. Följ stegen i guiden för att [Skapa DNS-poster hos en DNS-värd](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) för Microsoft 365 som verifierar att du äger domänen. Om du vet vilken din domänvärd är kan du även se [Värdspecifika anvisningar](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
 
     Om din värd är GoDaddy eller en annan värd som är aktiverad med [Domain Connect](/office365/admin/get-help-with-domains/domain-connect)är processen enkel och du blir automatiskt ombedd att logga in och låta Microsoft autentisera.
 
@@ -79,11 +79,11 @@ Du kan lägga till användare i guiden eller så kan du [lägga till användare 
 
 #### <a name="add-users-in-the-wizard"></a>Lägg till användare i guiden
 
-Alla användare som du lägger till i guiden tilldelas automatiskt en Microsoft 365 Business Premium-licens.
+Alla användare som du lägger till i guiden tilldelas automatiskt en Microsoft 365 Business Premium licens.
 
 ![Skärmbild av sidan Lägg till nya användare i guiden](../media/addnewuserspage.png)
 
-1. Om din Microsoft 365 Business Premium-prenumeration har befintliga användare (till exempel om du använde Azure AD Connect) får du möjlighet att tilldela licenser till dem nu. Lägg till licenser till dem också.
+1. Om din Microsoft 365 Business Premium-prenumeration har befintliga användare (till exempel om du använde Azure AD Anslut) får du möjlighet att tilldela licenser till dem nu. Lägg till licenser till dem också.
 
 2. Efter att ha lagt till användarna får du också möjlighet att dela autentiseringsuppgifter med de nya användarna som du har lagt till. Du kan välja att skriva ut, e-posta eller ladda ned.
 
@@ -94,7 +94,7 @@ Alla användare som du lägger till i guiden tilldelas automatiskt en Microsoft 
   
 För att få igång tjänsten måste du uppdatera några poster hos din DNS-värd eller domänregistrator.
   
-1. Installationsguiden identifierar normalt din domänregistrator och ger dig en länk till stegvisa instruktioner för att uppdatera dina NS-poster på registratorns webbplats. Om den inte gör det kan [du ändra namnservrar för att konfigurera Microsoft 365 med valfri domänregistrator](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md). 
+1. Installationsguiden identifierar normalt din domänregistrator och ger dig en länk till stegvisa instruktioner för att uppdatera dina NS-poster på registratorns webbplats. Om det inte fungerar kan [du ändra namnservrar för att konfigurera Microsoft 365 med valfri domänregistrator](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md). 
 
     - Om du har befintliga DNS-poster, t. ex. en befintlig webbplats, men din DNS-värd är aktiverad för [Domain Connect](/office365/admin/get-help-with-domains/domain-connect)väljer du **Lägga till poster för mig**. På sidan **Välj onlinetjänster** accepterar du alla standardinställningar och väljer **Nästa** och väljer **Auktorisera** på DNS-värdens sida.
     - Om du har befintliga DNS-poster med andra DNS-värdar (inte aktiverad för domänanslutning), ska du hantera dina egna DNS-poster för att se till att de befintliga tjänsterna fortsätter att vara anslutna. Mer information finns i [domängrunder](/office365/admin/get-help-with-domains/dns-basics).
@@ -107,30 +107,30 @@ För att få igång tjänsten måste du uppdatera några poster hos din DNS-vär
 
 Principerna som du skapar i guiden tillämpas automatiskt på säkerhetsgruppen [Alla](/office365/admin/create-groups/compare-groups#security-groups) *användare.* Du kan också skapa ytterligare grupper att tilldela principer till i administrationscentret.
 
-1. Om du vill öka skyddet mot avancerade **cyberhot** rekommenderar vi att du accepterar standardinställningarna för att låta [Office 365 Advance Threat Protection](../security/office-365-security/defender-for-office-365.md) söka igenom filer och länkar i Office-appar.
+1. Om du vill öka skyddet mot avancerade **cyberhot** rekommenderar vi att du accepterar standardinställningarna för att [låta Office 365 Advance Threat Protection](../security/office-365-security/defender-for-office-365.md) söka igenom filer och länkar i Office appar.
 
     ![Skärmbild av sidan Öka skydd.](../media/increasetreatprotection.png)
 
 
-2. På sidan Förhindra läckage av känsliga **data** godkänner du standardinställningarna för att aktivera skydd mot dataförlust i Office 365 (DLP) för att spåra känsliga data i Office-program och förhindra oavsiktlig delning av dessa utanför organisationen.
+2. På sidan Förhindra läckage av känsliga **data** godkänner du standardinställningarna för att aktivera Office 365 Skydd mot dataförlust (DLP) för att spåra känsliga data i Office-appar och förhindra oavsiktlig delning av dessa utanför organisationen.
 
-3. På sidan **Skydda data i Office** för mobil kan du låta hantering av mobilappar vara på, expandera inställningarna och granska dem och sedan välja Skapa policy för hantering av **mobilappar.**
+3. På sidan **Skydda data i Office** för mobila enheter lämnar du hantering av mobilappar på, expanderar inställningarna och granskar dem och väljer sedan Skapa policy för hantering av **mobilappar.**
 
-    ![Skärmbild av sidan Skydda data i Office för mobilen.](../media/protectdatainmobile.png)
+    ![Skärmbild av Skydda data i Office för mobil.](../media/protectdatainmobile.png)
 
 
 ## <a name="secure-windows-10-pcs"></a>Skydda Windows 10-datorer
 
-Välj Konfigurera i det vänstra **navigeringsfältet** och välj sedan Skydda dina **Windows 10-datorer** under Inloggning och säkerhet.  Kom **igång genom** att välja Visa. Se [Skydda dina Windows 10-datorer för](secure-win-10-pcs.md) fullständiga instruktioner.
+Välj Konfigurera i det vänstra **navigeringsfältet** och välj sedan Skydda dina **e-Windows 10** under **Inloggning och säkerhet.** Kom **igång genom** att välja Visa. Se [Skydda Windows 10 för](secure-win-10-pcs.md) fullständiga instruktioner.
 
 ## <a name="deploy-office-365-client-apps"></a>Distribuera Office 365-klientprogram
 
 Om du väljer att installera Office-appar automatiskt under installationen installeras apparna på Windows 10-enheterna när användarna har loggat in i Azure AD från sina Windows-enheter med sina arbetsautentiseringsuppgifter.
 
-Om du vill installera Office på mobila iOS- eller Android-enheter går du till [Konfigurera mobila enheter för Microsoft 365 Business Premium-användare.](set-up-mobile-devices.md)
+Information om Office för mobila iOS- och Android-enheter finns i [Konfigurera mobila enheter för Microsoft 365 Business Premium användare.](set-up-mobile-devices.md)
 
-Du kan också installera Office individuellt. Anvisningar finns i Installera Office på en PC eller [Mac.](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
+Du kan också installera Office individuellt. Anvisningar finns Office installera på en PC eller [Mac.](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
 
 ## <a name="see-also"></a>Se även
 
-[Utbildningsvideor för Microsoft 365 Business](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Utbildningsvideor för Microsoft 365 Business](../business-video/index.yml)

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,30 +13,26 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - TopSMBIssues
 - okr_smb
 - AdminSurgePortfolio
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-- BEA160
-ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
+- commerce_billing
+- PPM_jmueller
+search.appverid: MET150
 description: Lär dig hur du tolkar avgifter, fakturering och betalningsinformation på fakturan för Microsoft 365 för företag samt hur du ändrar inköpsordernumret.
-ms.openlocfilehash: b89ca38bf5d7b1d82982668dcd98e9979f1657be
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/04/2021
+ms.openlocfilehash: 9eb9d063b3634269600d5f6566e9e5f373ab08c2
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245022"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280493"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Förstå fakturan för Microsoft 365 för företag
 
 > [!IMPORTANT]
-> Från och med den 26 januari 2021 stöds inte längre nya bankkonton för kunder i Belgien, Frankrike, Italien, Luxemburg, Portugal, Spanien och USA. Om du är en befintlig kund i något av dessa länder kan du fortsätta betala för prenumerationen med ett befintligt bankkonto och lägga till nya prenumerationer till den, men bara så länge bankkontot är fortsättningsvis.
+> Från och med 26 januari 2021 stöds inte längre nya bankkonton för kunder i Belgien, Frankrike, Italien, Luxemburg, Portugal, Spanien och USA. Om du är befintlig kund i något av dessa länder kan du fortsätta betala för prenumerationen med ett befintligt bankkonto och du kan lägga till nya prenumerationer till det, men bara så länge bankkontot uppfyller kraven.
 
 Antingen varje månad eller varje år (beroende på vilket alternativ du valde när du köpte prenumerationen) får du ett e-postmeddelande där det står att ditt nya faktureringsutdrag finns i administrationscentret. [Läs mer om hur du hittar och visar fakturan](view-your-bill-or-invoice.md).
   
@@ -96,7 +93,7 @@ I följande tabell beskrivs de fält som eventuellt visas på fakturan. Vissa f�
 |Tjänstanvändningsadress|Adressen där tjänsten används, vanligtvis samma som Såld till-adressen. Information om hur du uppdaterar din tjänstanvändningsadress finns i [ändra dina faktureringsadresser](change-your-billing-addresses.md).|
 |Såld till|Företagets namn och adress. Information om hur du uppdaterar den här informationen finns i [Ändra organisationens adress, e-postadress för teknisk kontakt och annan information](../../admin/manage/change-address-contact-and-more.md).|
 |Delsumma|Varje prenumeration som visas på fakturan har en separat rad med delsumma för kolumnerna Debitering, Rabatter, Krediter, Delsumma, Moms och Summa för den prenumerationen.|
-|Moms|På sida 1 på fakturan visas total moms. På sida 2 visas momssatsen som används och det totala momsbeloppet för varje post. Om fakturan innehåller moms och företaget är skattebefriat ska du [kontakta supporten](../../admin/contact-support-for-business-products.md).|
+|Moms|På sida 1 på fakturan visas total moms. På sida 2 visas momssatsen som används och det totala momsbeloppet för varje post. Om fakturan innehåller moms och företaget är skattebefriat ska du [kontakta supporten](../../business-video/get-help-support.md).|
 |Summa|Beloppet som ska betalas för fakturans faktureringsperiod.|
 
 ## <a name="change-your-purchase-order-number"></a>Ändra ditt inköpsordernummer
@@ -109,6 +106,7 @@ Om du betalar med faktura kan du lägga till eller ändra inköpsordernumret fö
 ::: moniker range="o365-worldwide"
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -120,16 +118,16 @@ Om du betalar med faktura kan du lägga till eller ändra inköpsordernumret fö
 ::: moniker range="o365-21vianet"
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Dina produkter</a>.
+
 ::: moniker-end
 
 1. På **fliken** Produkter väljer du den prenumeration som du vill ändra.
 
-1. Välj Redigera faktura i avsnittet **Prenumerations- och betalningsinställningar** på **sidan prenumerationsinformation.** 
+1. Välj Redigera faktura i avsnittet **Prenumerations- och betalningsinställningar** på **sidan prenumerationsinformation.**
 
 1. Ange ditt inköpsordernummer **längst ned i fönstret Redigera information om betalning** via röst och välj sedan **Spara**.
 
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-content"></a>Relaterat innehåll
 
-[Betala för Microsoft 365 för företag-prenumeration](pay-for-your-subscription.md)
-
-[Betalningsalternativ för Minecraft: Education Edition](/education/windows/school-get-minecraft)
+[Betala för din Microsoft 365 för företag-prenumeration](pay-for-your-subscription.md) (artikel)\
+[Betalningsalternativ för Minecraft: Education Edition](/education/windows/school-get-minecraft) (artikel)
