@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,22 +13,21 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - TopSMBIssues
 - fwlink 874703
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
+- commerce_subscriptions
+- PPM_jmueller
+search.appverid: MET150
 description: Läs om hur du återaktiverar din prenumeration när den går ut, inaktiveras eller avbryts.
-ms.openlocfilehash: b2c85f2d4f302052f2085f395c16c7620848573f
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.date: 04/07/2021
+ms.openlocfilehash: 80d1594890ec15fc4c2391d439ccbc16be6ae707
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615357"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280901"
 ---
 # <a name="reactivate-your-subscription"></a>Återaktivera prenumerationen
 
@@ -44,6 +44,7 @@ Du måste vara global administratör eller faktureringsadministratör för att k
 ::: moniker range="o365-worldwide"
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -55,10 +56,11 @@ Du måste vara global administratör eller faktureringsadministratör för att k
 ::: moniker range="o365-21vianet"
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Dina produkter</a>.
+
 ::: moniker-end
 
 2. Gå till **fliken** Produkter och leta reda på den prenumeration som du vill återaktivera. Välj **Fler åtgärder** (tre punkter) och välj sedan **Återaktivera den här prenumerationen**.\
-    Om du inte ser **Återaktivera den här prenumerationen kontaktar** [du support.](../../admin/contact-support-for-business-products.md)
+    Om du inte ser **Återaktivera den här prenumerationen kontaktar** [du support.](../../business-video/get-help-support.md)
 3. I fönstret **Återaktivera den här** prenumerationen väljer du en betalningsmetod i listrutan eller välj Lägg **till betalningsmetod.**
 4. Välj **Spara**.
 

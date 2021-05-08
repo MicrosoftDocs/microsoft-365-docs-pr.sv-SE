@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Översikt över Viva Topics.
-ms.openlocfilehash: b37572087794055724cb9533246f83794d88fb93
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 1d66751d55c0144149fa8325e89be404e3df19ed
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275218"
+ms.locfileid: "52281035"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Översikt över Microsoft Viva Topics 
 
-Viva Topics använder Microsoft AI-teknik, Microsoft 365, Microsoft Graph, Search och andra komponenter och tjänster för att föra kunskap till användarna i Microsoft 365-appar som de använder varje dag. De börjar med moderna SharePoint-sidor och Microsoft Search.
+Viva Topics använder Microsoft AI-teknik, Microsoft 365, Microsoft Graph, Search och andra komponenter och tjänster för att ge användarna kunskaper i Microsoft 365-appar de använder varje dag, med början på moderna SharePoint-sidor, Microsoft Search och Sökning i Word och PowerPoint.
 
 </br>
 
@@ -42,6 +42,7 @@ När ett ämne omnämns i innehåll på nyheter och sidor i SharePoint markeras 
 
    ![Höjdpunkter Topic](../media/knowledge-management/saturn.png) 
 
+När du använder Sök i Word eller PowerPoint, antingen i  sökrutan eller genom att välja Sök på snabbmenyn, kan resultatet som visas också visa ämnessammanfattningen.
 
    ![Skärmbild som visar sökning i Word via sökrutan.](../media/knowledge-management/word-search-2.png)
 

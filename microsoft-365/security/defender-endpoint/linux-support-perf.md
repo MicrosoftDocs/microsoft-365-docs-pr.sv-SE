@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9964b27f29654a7cc474dc4fb8f84334ddaf381c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 998d8c500613ffa9fc6d790535e555ff9503f590
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933223"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52281023"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Felsöka prestandaproblem för Microsoft Defender för Endpoint i Linux
 
@@ -57,7 +57,7 @@ Följande steg kan användas för att felsöka och minimera dessa problem:
 
     Om din enhet hanteras av din organisation kan realtidsskydd inaktiveras av administratören genom att följa anvisningarna i Ange inställningar för Defender för [slutpunkt i Linux.](linux-preferences.md)
 
-    Om prestandaproblemet kvarstår när realtidsskyddet är inaktiverat kan problemets ursprung vara slutpunktsidentifierings- och svarskomponenten. I så fall kan du kontakta kundsupport för ytterligare instruktioner och åtgärder.
+    Om prestandaproblemet kvarstår när realtidsskyddet är inaktiverat kan problemets ursprung vara den identifiering och åtgärd på slutpunkt komponenten. I så fall kan du kontakta kundsupport för ytterligare instruktioner och åtgärder.
 
 2. Du kan använda statistik i realtid som har samlats av Defender för Endpoint på Linux för att hitta de program som utlöser flest genomsökningar.
 
@@ -148,3 +148,6 @@ Följande steg kan användas för att felsöka och minimera dessa problem:
 5. Konfigurera Microsoft Defender för slutpunkt på Linux med undantag för de processer eller diskutrymmen som bidrar till prestandaproblemen och återaktivera realtidsskydd.
 
     Mer information finns i [Konfigurera och validera undantag för Microsoft Defender för Endpoint på Linux.](linux-exclusions.md)
+
+## <a name="see-also"></a>Se även
+- [Undersöka problem med agenthälsa](health-status.md)
