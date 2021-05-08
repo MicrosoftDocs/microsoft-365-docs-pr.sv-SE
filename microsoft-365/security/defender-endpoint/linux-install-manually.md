@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0374c1a44a4d942ea631d97f51fa48df15d3ec13
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c13138f3d80a95dbda3a899507f662c081831d94
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929091"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259685"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Distribuera Microsoft Defender för Slutpunkt i Linux manuellt
 
@@ -166,10 +166,10 @@ Om du vill förhandsgranska nya funktioner och ge tidig feedback rekommenderar v
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
     Om du till exempel har *valt prod-kanal:*
-    
+
     ```bash
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-prod.list
-    ```   
+    ```
 
 - Installera paketet `gpg` om det inte redan är installerat:
 
@@ -268,11 +268,11 @@ Om du vill förhandsgranska nya funktioner och ge tidig feedback rekommenderar v
 
 Ladda ned introduktionspaketet från Microsoft Defender Säkerhetscenter:
 
-1. I Microsoft Defender Säkerhetscenter går du till **Inställningar > Enhetshantering > Onboarding**.
+1. I Microsoft Defender Säkerhetscenter går du till Inställningar > **på Enhetshantering > Onboarding.**
 2. I den första listrutan väljer du **Linux Server** som operativsystem. I den andra listrutan väljer du Lokalt skript (för upp till **10 enheter)** som distributionsmetod.
 3. Välj **Hämta introduktionspaket**. Spara filen som WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Skärmbild av Microsoft Defender Säkerhetscenter](images/atp-portal-onboarding-linux.png)
+    ![Microsoft Defender Säkerhetscenter skärmbild](images/atp-portal-onboarding-linux.png)
 
 4. Kontrollera att filen finns i kommandotolken.
     Extrahera innehållet i arkivet:
@@ -341,7 +341,7 @@ Ladda ned introduktionspaketet från Microsoft Defender Säkerhetscenter:
     - Öppna ett terminalfönster. Kopiera och kör följande kommando:
 
         ``` bash
-        curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+        curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
     - Filen skulle ha satts i karantän av Defender för Endpoint på Linux. Använd följande kommando för att lista alla identifierade hot:
@@ -352,7 +352,7 @@ Ladda ned introduktionspaketet från Microsoft Defender Säkerhetscenter:
 
 ## <a name="installer-script"></a>Installationsskript
 
-Du kan också använda ett automatiserat installationsprogram [bash-skript](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) som tillhandahålls i vår [offentliga GitHub-lagringsplats.](https://github.com/microsoft/mdatp-xplat/)
+Alternativt kan du använda ett automatiserat installationsprogram [bash-skript](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) som tillhandahålls i vår [offentliga GitHub databas.](https://github.com/microsoft/mdatp-xplat/)
 Skriptet identifierar distributionen och versionen och uppsättningar av enheten för att hämta det senaste paketet och installera det.
 Du kan också registrera dig för ett skript.
 

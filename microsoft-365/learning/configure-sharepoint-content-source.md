@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: Lär dig hur du SharePoint som innehållskälla för utbildning för Microsoft Viva Learning (förhandsversion).
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: da75ec0573519ed73507994afeac995c0461de0c
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: fc702f57b75b78ab523226ba7d8a8eb6505f2975
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52101088"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244143"
 ---
 # <a name="coming-soon-configure-sharepoint-as-a-learning-content-source-for-microsoft-viva-learning-preview"></a>Kommer snart: Konfigurera SharePoint som en källa för utbildningsinnehåll för Microsoft Viva Learning (förhandsversion)
 
@@ -40,11 +40,11 @@ Viva Learning (förhandsversion) har stöd för följande dokumenttyper:
 - Ljud (.m4a)
 - Video (.mov, .mp4, .avi)
 
-Mer information finns i dokumentationen [SharePoint Online.](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498) 
+Mer information finns i [SharePoint begränsningar](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498). 
 
 ## <a name="permissions"></a>Behörigheter
 
-URL-adresser för dokumentbiblioteksmappar kan samlas in från SharePoint webbplats i organisationen. Viva Learning (förhandsversion) följer alla befintliga innehållsbehörigheter. Därför är endast innehåll där en användare har behörighet att komma åt sökbart och användbart i Viva Learning (förhandsversion). Allt innehåll i de här mapparna är sökbart, men endast innehåll som de enskilda anställda har behörighet till kan användas.
+URL-adresser för dokumentbiblioteksmappar kan samlas in från SharePoint webbplats i organisationen. Viva Learning (förhandsversion) följer alla befintliga innehållsbehörigheter. Därför är endast innehåll där en användare har behörighet att komma åt sökbart och synligt i Viva Learning (förhandsversion). Allt innehåll i de här mapparna är sökbart, men endast innehåll som de enskilda anställda har behörighet till kan användas.
 
 Borttagning av innehåll från organisationens lagringsplats stöds inte för närvarande.
 
@@ -70,11 +70,11 @@ Följ de SharePoint om du vill konfigurera SharePoint informationskällor för u
 
 1.  I det vänstra navigeringsfältet i Microsoft 365 administrationscenter går du **till Inställningar**  >  **Organisationsinställningar.**
  
-2.  Välj **Utbildningsapp** (förhandsversion) **på** fliken Tjänster **på sidan Organisationsinställningar.**
+2.  Välj  **Viva Learning (förhandsversion)** **på** fliken Tjänster på sidan Organisationsinställningar.
 
      ![Inställningar på sidan Microsoft 365 administrationscenter som visar Viva Learning.](../media/learning/learning-sharepoint-configure1.png)
 
-3.  På panelen **Utbildning (förhandsversion),** under SharePoint, hittar du webbplats-URL:en till den SharePoint-webbplats där du vill att Viva Learning ska skapa en central lagringsplats.
+3.  På panelen **Viva Learning (förhandsversion)** under SharePoint hittar du webbplats-URL:en till den SharePoint-webbplats där du vill att Viva Learning (förhandsversion) ska skapa en central lagringsplats.
 
      ![Utbildningspanelen i administrationscentret Microsoft 365 som visar SharePoint markerat.](../media/learning/learning-sharepoint-configure2.png)
 

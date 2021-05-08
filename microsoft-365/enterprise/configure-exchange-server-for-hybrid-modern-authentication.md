@@ -1,5 +1,5 @@
 ---
-title: Konfigurera lokal Exchange Server för användning av modern hybridautentisering
+title: Så här konfigurerar Exchange Server lokal användning av modern hybridautentisering
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -15,20 +15,20 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Lär dig hur du konfigurerar en lokal Exchange-server för användning av modern hybridautentisering (HMA), som ger dig säkrare användarautentisering och auktorisering.
+description: Lär dig hur du konfigurerar Exchange Server en lokal konfiguration för att använda modern hybridautentisering (HMA), som ger dig säkrare användarautentisering och auktorisering.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e0a0e521f4ac81a8aa113b2e945045d31f2c1952
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 9cb6d25a346ac48c9875a26f385cb733f1ff051f
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599505"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259457"
 ---
-# <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Konfigurera lokal Exchange Server för användning av modern hybridautentisering
+# <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Så här konfigurerar Exchange Server lokal användning av modern hybridautentisering
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-HMA (Hybrid Modern Authentication) är en metod för identitetshantering som ger säkrare användarautentisering och auktorisering, och är tillgänglig för lokala Exchange-hybriddistributioner.
+HMA (Hybrid Modern Authentication) är en metod för identitetshantering som ger säkrare användarautentisering och auktorisering, och är tillgänglig för Exchange-serverdistributioner med lokala hybriddistributioner.
 
 ## <a name="fyi"></a>OBS
 
@@ -38,7 +38,7 @@ Innan vi börjar ringer jag:
 
 - Exchange lokalt \> EXCH
 
-- Exchange Online \> EXO
+- \>Exchange Online EXO
 
 Om en bild i den här artikeln har ett objekt som är nedtonat eller nedtonat innebär det att elementet som visas med grått inte ingår i *HMA-specifik konfiguration.*
 
@@ -48,7 +48,7 @@ Om du slår på HMA innebär det att:
 
 1. Att vara säker på att du uppfyller kraven innan du börjar.
 
-1. Eftersom det **finns många** krav som är gemensamma för både Skype för företag och Exchange, översikt över hybrid modern autentisering och förutsättningar för att använda det med Skype för företag och [Exchange-servrar lokalt.](hybrid-modern-auth-overview.md) Gör detta innan du påbörjar något av stegen i den här artikeln.
+1. Eftersom många **förutsättningar** är vanliga för både Skype för företag och Exchange, översikt över hybrid modern autentisering och krav för att använda den med lokala Skype för företag och [Exchange servrar.](hybrid-modern-auth-overview.md) Gör detta innan du påbörjar något av stegen i den här artikeln.
 
 1. Lägga till lokala webbtjänst-URL:er som **servicehuvudnamn (SPN)** i Azure AD. Om EXCH är i hybrid med flera innehavare måste dessa lokala webbtjänstwebbadresser läggas till som SPN i Azure AD för alla klientorganisationen som finns i hybrid med EXCH.
 
@@ -59,19 +59,19 @@ Om du slår på HMA innebär det att:
 1. Aktivera HMA i EXCH.
 
 > [!NOTE]
-> Stöder din version av Office MA? Se [Hur modern autentisering fungerar för Office 2013- och Office 2016-klientprogram.](modern-auth-for-office-2013-and-2016.md)
+> Stöder din version av Office MA? Se [Hur modern autentisering fungerar för Office 2013 och Office 2016-klientappar.](modern-auth-for-office-2013-and-2016.md)
 
 
 ## <a name="make-sure-you-meet-all-the-prerequisites"></a>Se till att du uppfyller alla krav
 
-Eftersom det finns många krav som är gemensamma för både Skype för företag och Exchange bör du läsa Översikt över modern hybridautentisering och förutsättningar för att använda det med Skype för företag och [Exchange-servrar lokalt.](hybrid-modern-auth-overview.md) Gör detta  *innan*  du påbörjar något av stegen i den här artikeln.
+Eftersom det finns många krav som är gemensamma för både Skype för företag och Exchange bör du läsa Översikt över modern hybridautentisering och förutsättningar för att använda den med Skype för företag och [Exchange servrar.](hybrid-modern-auth-overview.md) Gör detta  *innan*  du påbörjar något av stegen i den här artikeln.
 
 > [!NOTE]
-> Outlook Web App och Kontrollpanelen i Exchange fungerar inte med modern hybridautentisering.
+> Outlook Web App och Exchange fungerar inte med modern hybridautentisering.
 
 ## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>Lägga till lokala webbtjänst-URL:er som SPN i Azure AD
 
-Kör kommandona som tilldelar lokala webbtjänstwebbadresser som Azure AD SPN. SPN används av klientdatorer och enheter under autentisering och auktorisering. Alla URL:er som kan användas för att ansluta från den lokala platsen till Azure Active Directory (Azure AD) måste vara registrerade i Azure AD (detta omfattar både interna och externa namnområden).
+Kör kommandona som tilldelar lokala webbtjänstwebbadresser som Azure AD SPN. SPN används av klientdatorer och enheter under autentisering och auktorisering. Alla URL:er som kan användas för att ansluta från lokala resurser till Azure Active Directory (Azure AD) måste vara registrerade i Azure AD (detta omfattar både interna och externa namnområden).
 
 Först måste du samla in alla URL-adresser som du behöver lägga till i AAD. Kör följande kommandon lokalt:
 
@@ -81,7 +81,6 @@ Get-WebServicesVirtualDirectory | FL server,*url*
 Get-ClientAccessServer | fl Name, AutodiscoverServiceInternalUri
 Get-OABVirtualDirectory | FL server,*url*
 Get-AutodiscoverVirtualDirectory | FL server,*url*
-Get-OutlookAnywhere | FL server,*url*
 ```
 
 Kontrollera att URL-klienterna kanske ansluter till visas som HTTPS-tjänstens huvudnamn i AAD. Om EXCH är i hybrid med flera innehavare **,** ska dessa HTTPS-SPN läggas till i AAD för alla klientorganisationen i hybrid med EXCH.
@@ -89,7 +88,7 @@ Kontrollera att URL-klienterna kanske ansluter till visas som HTTPS-tjänstens h
 1. Börja med att ansluta till AAD med [de här instruktionerna.](connect-to-microsoft-365-powershell.md)
 
     > [!NOTE]
-    > Du måste använda alternativet _Connect-MsolService_ från den här sidan för att kunna använda kommandot nedan.
+    > Du måste använda alternativet _Anslut-MsolService_ från den här sidan för att kunna använda kommandot nedan.
 
 2. För dina Exchange-relaterade URL:er skriver du följande kommando:
 
@@ -112,7 +111,7 @@ Kontrollera att URL-klienterna kanske ansluter till visas som HTTPS-tjänstens h
 
 ## <a name="verify-virtual-directories-are-properly-configured"></a>Kontrollera att virtuella kataloger är korrekt konfigurerade
 
-Kontrollera nu att OAuth är korrekt aktiverat i Exchange i alla virtuella kataloger Outlook kan använda genom att köra följande kommandon:
+Kontrollera nu att OAuth är korrekt aktiverat Exchange i alla virtuella kataloger som Outlook kan använda genom att köra följande kommandon:
 
 ```powershell
 Get-MapiVirtualDirectory | FL server,*url*,*auth*
@@ -138,10 +137,10 @@ Om OAuth saknas på en server och någon av de fyra virtuella katalogerna måste
 
 ## <a name="confirm-the-evosts-auth-server-object-is-present"></a>Bekräfta att The Ents Auth Server-objektet finns
 
-Återgå till det lokala Exchange Management Shell för det senaste kommandot. Nu kan du verifiera att din lokala tjänst har en post för autentiseringsprovidern för windows-säkerhet:
+Återgå till den lokala Exchange för det senaste kommandot. Nu kan du verifiera att din lokala tjänst har en post för autentiseringsprovidern för windows-säkerhet:
 
 ```powershell
-Get-AuthServer | where {$_.Name -eq "EvoSts"}
+Get-AuthServer | where {$_.Name -like "EvoSts"}
 ```
 
 Dina utdata bör visa autentiseringsservern för Name EllerSts och statusen "Enabled" ska vara True. Om du inte ser det bör du ladda ned och köra den senaste versionen av hybridkonfigurationsguiden.
@@ -153,7 +152,7 @@ Dina utdata bör visa autentiseringsservern för Name EllerSts och statusen "Ena
 
 ## <a name="enable-hma"></a>Aktivera HMA
 
-Kör följande kommando lokalt i Exchange Management Shell:
+Kör följande kommando i Exchange Management Shell lokalt:
 
 ```powershell
 Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true
@@ -174,7 +173,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 När du har aktiverat HMA används det nya autentiseringsflödet för klientens nästa inloggning. Observera att endast aktivera HMA utlöser inte en nyauthentication för någon klient. Klienterna återauthenticate baserat på livslängden för autentiseringstoken och/eller certifikat de har.
 
-Du bör också hålla ned CTRL-tangenten samtidigt som du högerklickar på ikonen för Outlook-klienten (även i systemfältet Windows-meddelanden) och klickar på "Anslutningsstatus". Leta efter klientens SMTP-adress mot typen "Authn" av typen "Bearer", som representerar den bearer-token som används \* i OAuth.
+Du bör också hålla ned CTRL-tangenten samtidigt som du högerklickar på ikonen för Outlook-klienten (även i meddelandefältet i Windows) och klickar på "Anslutningsstatus". Leta efter klientens SMTP-adress mot typen "Authn" av typen "Bearer", som representerar den bearer-token som används \* i OAuth.
 
 > [!NOTE]
 > Behöver du konfigurera Skype för företag med HMA? Du behöver två artiklar: en som innehåller [topologier](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)som stöds och en som visar [hur du gör konfigurationen.](configure-skype-for-business-for-hybrid-modern-authentication.md)
@@ -182,15 +181,15 @@ Du bör också hålla ned CTRL-tangenten samtidigt som du högerklickar på ikon
 
 ## <a name="using-hybrid-modern-authentication-with-outlook-for-ios-and-android"></a>Använda modern hybridautentisering med Outlook för iOS och Android
 
-Om du är en lokal kund som använder Exchange-server på TCP 443 kringgår du trafikbearbetning för följande IP-adressintervall:
+Om du är en lokal kund som använder Exchange på TCP 443 kringgår du trafikbearbetning för följande IP-adressintervall:
 
 ```
 52.125.128.0/20
 52.127.96.0/23
 ```
 
-Outlook-appen för iOS och Android är utformad som det bästa sättet att uppleva Microsoft 365 eller Office 365 på din mobila enhet med hjälp av Microsoft-tjänster för att hitta, planera och prioritera ditt dagliga liv och arbete. Mer information finns i Använda modern [hybridautentisering med Outlook för iOS och Android.](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth?view=exchserver-2019)
+Appen Outlook för iOS och Android är utformad som det bästa sättet att uppleva Microsoft 365 eller Office 365 på din mobila enhet med hjälp av Microsoft-tjänster för att hitta, planera och prioritera ditt dagliga liv och arbete. Mer information finns i Använda [modern hybridautentisering med Outlook för iOS och Android.](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth?view=exchserver-2019)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Konfigurationskrav för modern autentisering för övergång från dedikerad/ITAR för Office 365 till vNext](/exchange/troubleshoot/modern-authentication/modern-authentication-configuration)
+[Konfigurationskrav för modern autentisering för övergång Office 365 dedikerad/ITAR till vNext](/exchange/troubleshoot/modern-authentication/modern-authentication-configuration)

@@ -1,6 +1,6 @@
 ---
 title: Åtgärdsåtgärder i Microsoft 365 Defender
-description: Få en översikt över åtgärdsåtgärder som följer automatiska undersökningar i Microsoft 365 Defender
+description: Få en översikt över åtgärder som följer automatiska undersökningar i Microsoft 365 Defender
 keywords: automatiserad, undersökning, avisering, utlösare, åtgärd, åtgärd
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 31162944f4728f2c84efbe2cd5eafbd0c70e00f6
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 80546d44bc1ba222c736b397a272f9f1f1a01d4a
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245858"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52269474"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Åtgärdsåtgärder i Microsoft 365 Defender
 
@@ -36,8 +36,6 @@ ms.locfileid: "52245858"
 **Gäller för:**
 - Microsoft 365 Defender
 
-## <a name="remediation-actions"></a>Reparationsåtgärder
-
 Under och efter en automatiserad undersökning i Microsoft 365 Defender identifieras åtgärder för skadliga eller misstänkta objekt. Vissa typer av åtgärdsåtgärder vidtas på enheter, även kallade slutpunkter. Andra åtgärder vidtas på e-postinnehållet. Automatiserade undersökningar slutförs efter att åtgärder har vidtagits, godkänts eller avvisats.
 
 > [!IMPORTANT]
@@ -46,7 +44,7 @@ Under och efter en automatiserad undersökning i Microsoft 365 Defender identifi
 > - [Hur hot åtgärdas på enheter](../defender-endpoint/automated-investigations.md)
 > - [Hot och åtgärdsåtgärder för e-& och samarbetsinnehåll](../office-365-security/air-remediation-actions.md#threats-and-remediation-actions)
 
-I följande tabell sammanfattas de åtgärdsåtgärder som stöds i Microsoft 365 Defender: 
+I följande tabell sammanfattas de åtgärder som stöds för närvarande i Microsoft 365 Defender. 
 
 |Åtgärdsåtgärder för enhet (slutpunkt)  |Åtgärder för e-postreparation  |
 |:---------|:---------|
@@ -60,7 +58,7 @@ När en automatiserad undersökning har slutförts nås en bedömning för alla 
 
 I följande tabell visas möjliga bedömningar och resultat:
 
-| Bedömning    | Område    | Resultat|
+| Bedömning    | Enheter som påverkas    | Resultat|
 |------|------|------|
 | Skadlig    | Enheter (slutpunkter)    | Åtgärdsåtgärder vidtas automatiskt (under förutsättning att din organisations [enhetsgrupper](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) är inställda på **Fullständiga – åtgärda hot automatiskt)**|
 | Skadlig    | E-postinnehåll (URL:er eller bifogade filer) | Rekommenderade åtgärdsåtgärder väntar på godkännande|
@@ -70,17 +68,17 @@ I följande tabell visas möjliga bedömningar och resultat:
 
 ## <a name="remediation-actions-that-are-taken-manually"></a>Åtgärder som vidtas manuellt
 
-Förutom åtgärder som följer på automatiska undersökningar kan säkerhetsoperationsteamet vidta vissa åtgärder manuellt. Detta omfattar följande åtgärder:
+Förutom åtgärder som följer på automatiska undersökningar kan säkerhetsoperationsteamet vidta vissa åtgärder manuellt. Det kan till exempel vara:
 
-- Manuell enhetsåtgärd, till exempel enhetsisolering eller karantänen för filer.
-- Manuell e-poståtgärd, till exempel mjuk borttagning av e-postmeddelanden. 
-- [Avancerad sökåtgärd](../defender-endpoint/advanced-hunting-overview.md) på enheter eller e-post.
-- [Åtgärden](../office-365-security/threat-explorer.md) i Utforskaren för e-postinnehåll, t.ex. flytta e-post till skräppost, mjuk borttagning av e-post eller borttagning av e-post.
-- Manuell [svarsåtgärd,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) till exempel ta bort en fil, stoppa en process och ta bort en schemalagd aktivitet.
-- Åtgärd för livesvar med Microsoft Defender för [slutpunkts-API:er,](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)till exempel att isolera en enhet, köra en antivirussökning och hämta information om en fil. 
+- Manuell enhetsåtgärd, till exempel enhetsisolering eller karantänen för filer
+- Manuell e-poståtgärd, till exempel mjuk borttagning av e-postmeddelanden 
+- [Avancerad sökåtgärd](../defender-endpoint/advanced-hunting-overview.md) på enheter eller e-post
+- [Åtgärden](../office-365-security/threat-explorer.md) i Utforskaren för e-postinnehåll, t.ex. flytta e-post till skräppost, mjuk borttagning av e-post eller borttagning av e-post
+- Manuell [svarsåtgärd,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) till exempel ta bort en fil, stoppa en process och ta bort en schemalagd aktivitet
+- Åtgärd för livesvar med Microsoft Defender för [slutpunkts-API:er,](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)t.ex. isolera en enhet, köra en antivirussökning och hämta information om en fil
 
 ## <a name="next-steps"></a>Nästa steg
 
 - [Besök åtgärden centret](m365d-action-center.md)
-- [Visa och hantera åtgärdsåtgärder]( m365d-autoir-actions.md)
-- [Hantera falska positiva/negativa i automatiska undersöknings- och svarsfunktioner](m365d-autoir-report-false-positives-negatives.md)
+- [Visa och hantera åtgärdsåtgärder](m365d-autoir-actions.md)
+- [Adressera falska positiva tal eller falska negativa tal](m365d-autoir-report-false-positives-negatives.md)

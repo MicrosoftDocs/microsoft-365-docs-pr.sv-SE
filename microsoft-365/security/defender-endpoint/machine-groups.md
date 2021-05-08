@@ -1,6 +1,6 @@
 ---
 title: Skapa och hantera enhetsgrupper i Microsoft Defender för Slutpunkt
-description: Skapa enhetsgrupper och ange automatiserade åtgärdsnivåer för dem genom att ange de regler som gäller för gruppen
+description: Skapa enhetsgrupper och ange automatiserade åtgärdsnivåer för dem genom att bekräfta reglerna som gäller för gruppen
 keywords: enhetsgrupper, grupper, åtgärd, nivå, regler, aad-grupp, roll, tilldela, rangordna
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: acd24e5c87a74bbb32835ec170a121c5c0b6bb33
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 4fc2768392e818f74600e3c2d749b6e95bf957e4
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860309"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259433"
 ---
 # <a name="create-and-manage-device-groups"></a>Skapa och hantera enhetsgrupper
 
@@ -41,7 +41,7 @@ I Microsoft Defender för Slutpunkt kan du skapa enhetsgrupper och använda dem 
 - Begränsa åtkomsten till relaterade aviseringar och data till specifika Azure AD-användargrupper med [tilldelade RBAC-roller](rbac.md) 
 - Konfigurera olika inställningar för automatisk åtgärd för olika uppsättningar av enheter
 - Tilldela specifika åtgärdsnivåer att tillämpa under automatiserade undersökningar
-- I en undersökning kan du filtrera **listan Enheter till** endast vissa enhetsgrupper med hjälp av **filtret** Grupp.
+- I en undersökning kan du filtrera **listan Enheter till** specifika enhetsgrupper med hjälp av **gruppfiltret.**
 
 Du kan skapa enhetsgrupper i samband med rollbaserad åtkomst (RBAC) för att styra vem som kan vidta särskilda åtgärder eller se information genom att tilldela enhetsgruppen/grupperna till en användargrupp. Mer information finns i Hantera [portalåtkomst med hjälp av rollbaserad åtkomstkontroll.](rbac.md)
 
@@ -81,18 +81,34 @@ Som en del av processen med att skapa en enhetsgrupp gör du följande:
 
 Du kan höja eller sänka rangordningen för en enhetsgrupp så att den får högre eller lägre prioritet vid matchningen. När en enhet matchas med fler än en grupp läggs den bara till i den högst rankade gruppen. Du kan också redigera och ta bort grupper.
 
+
+
 >[!WARNING]
 >Om du tar bort en enhetsgrupp kan det påverka e-postaviseringsregler. Om en enhetsgrupp konfigureras under en regel för e-postavisering tas den bort från regeln. Om enhetsgruppen är den enda grupp som konfigurerats för en e-postavisering tas e-postaviseringsregeln bort tillsammans med enhetsgruppen.
 
 Som standard är enhetsgrupper tillgängliga för alla användare med portalåtkomst. Du kan ändra standardbeteendet genom att tilldela Azure AD-användargrupper till enhetsgruppen.
 
-Enheter som inte matchas med någon grupp läggs till i gruppen Dela upp enheter (standard). Du kan inte ändra rangordningen för gruppen eller ta bort den. Du kan dock ändra åtgärdsnivån för den här gruppen och definiera de Azure AD-användargrupper som har åtkomst till den här gruppen.
+Enheter som inte matchas med några grupper läggs till i gruppen Dela upp enheter (standard). Du kan inte ändra rangordningen för gruppen eller ta bort den. Du kan dock ändra åtgärdsnivån för den här gruppen och definiera de Azure AD-användargrupper som har åtkomst till den här gruppen.
 
 >[!NOTE]
 > Det kan ta upp till flera minuter att tillämpa ändringar på enhetsgruppskonfigurationen.
+
+
+### <a name="add-device-group-definitions"></a>Lägga till enhetsgruppsdefinitioner
+Enhetsgruppsdefinitioner kan också innehålla flera värden för varje villkor. Du kan ange definitionen för en enda enhetsgrupp för flera taggar, enhetsnamn och domäner.
+
+1. Skapa en ny enhetsgrupp och välj sedan **fliken** Enheter.
+2. Lägg till det första värdet för något av villkoren.
+3. Välj `+` den här om du vill lägga till fler rader av samma egenskapstyp.
+
+>[!TIP]
+> Använd operatorn ELLER mellan rader av samma villkorstyp, som tillåter flera värden per egenskap.
+> Du kan lägga till upp till 10 rader (värden) för varje egenskapstyp – tagg, enhetsnamn, domän.
+
+Mer information om hur du länkar till definitioner av enhetsgrupper finns [i Enhetsgrupper – Microsoft 365 säkerhet.](https://sip.security.microsoft.com/homepage)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
 - [Hantera portalåtkomst med hjälp av rollbaserad åtkomstkontroll](rbac.md)
 - [Skapa och hantera enhetstaggar](machine-tags.md)
-- [Hämta en lista över grupper på klientorganisationsenheten med Hjälp av Graph API](https://docs.microsoft.com/graph/api/device-list-memberof)
+- [Hämta en lista över grupper på klientorganisationsenheten med hjälp Graph API](https://docs.microsoft.com/graph/api/device-list-memberof)

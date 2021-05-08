@@ -1,5 +1,5 @@
 ---
-title: Förbereda katalogsynkronisering till Microsoft 365
+title: Förbereda för katalogsynkronisering till Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -25,15 +25,15 @@ search.appverid:
 - MOE150
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
-description: Här beskrivs hur du förbereder för att tillhandahålla användare Microsoft 365 med hjälp av katalogsynkronisering och de långsiktiga fördelarna med den här metoden.
-ms.openlocfilehash: 1fe99247a5c50c7bb8fc7eb1347ce6a4cd6aad94
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Här beskrivs hur du förbereder för att tillhandahålla Microsoft 365 med hjälp av katalogsynkronisering och de långsiktiga fördelarna med den här metoden.
+ms.openlocfilehash: 7f701bf0a8b165323f7fd61b50b41fb5e18268a6
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927330"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259565"
 ---
-# <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Förbereda katalogsynkronisering till Microsoft 365
+# <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Förbereda för katalogsynkronisering till Microsoft 365
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
@@ -45,7 +45,7 @@ Fördelarna med hybrididentitet och katalogsynkronisering din organisation är:
 
 Mer information om fördelarna med att använda katalogsynkronisering finns i hybrididentitet med [Azure Active Directory (Azure AD)](/azure/active-directory/hybrid/whatis-hybrid-identity) och [hybrididentitet för Microsoft 365.](plan-for-directory-synchronization.md)
 
-Men katalogsynkronisering kräver planering och förberedelse för att säkerställa att din AD DS (Active Directory Domain Services) synkroniserar till Azure AD-klientorganisationen för Microsoft 365-prenumerationen med så få fel som möjligt.
+Men katalogsynkronisering kräver planering och förberedelse för att säkerställa att DIN AD DS (Active Directory Domain Services) synkroniserar till Azure AD-klientorganisationen för Microsoft 365-prenumerationen med så få fel som möjligt.
 
 Följ de här anvisningarna för att uppnå bästa resultat.
 
@@ -56,7 +56,7 @@ Innan du synkroniserar DIN AD DS till Azure AD-klientorganisationen måste du re
 > [!IMPORTANT]
 > Om du inte rensar AD DS innan du synkroniserar kan det leda till en betydande negativ inverkan på distributionsprocessen. Det kan ta dagar eller veckor att gå igenom hela katalogsynkroniseringen, att identifiera fel och omsynkronisering.
 
-Utför följande rensningsuppgifter i AD DS för varje användarkonto som ska tilldelas en Microsoft 365-licens:
+Utför följande rensningsuppgifter i AD DS för varje användarkonto som ska tilldelas en Microsoft 365 licens:
 
 1. Kontrollera en giltig och unik e-postadress i **attributet proxyAddresses.**
 
@@ -83,7 +83,7 @@ Utför följande rensningsuppgifter i AD DS för varje användarkonto som ska ti
 
 ## <a name="2-directory-object-and-attribute-preparation"></a>2. Förberedelse av katalogobjekt och katalogattribut
 
-För att synkroniseringen mellan AD DS och Microsoft 365 ska fungera måste AD DS-attributen vara ordentligt förberedda. Du måste till exempel se till att inga specifika tecken används i vissa attribut som synkroniseras med Microsoft 365-miljön. Katalogsynkroniseringen misslyckas inte om oväntade tecken visas, men kan returnera en varning. Ogiltiga tecken leder till att katalogsynkroniseringen misslyckas.
+För att synkroniseringen mellan AD DS och Microsoft 365 ska fungera måste AD DS-attributen förberedas ordentligt. Du måste till exempel se till att inga specifika tecken används i vissa attribut som synkroniseras med den Microsoft 365 miljön. Katalogsynkroniseringen misslyckas inte om oväntade tecken visas, men kan returnera en varning. Ogiltiga tecken leder till att katalogsynkroniseringen misslyckas.
 
 Katalogsynkroniseringen misslyckas också om en del av DINA AD DS-användare har ett eller flera dubblettattribut. Varje användare måste ha unika attribut.
 
@@ -97,7 +97,7 @@ Attributen du behöver förbereda visas här:
 
 - **givenName**
 
-  - Om attributet finns i användarobjektet synkroniseras det med Microsoft 365, men det krävs eller används inte av Microsoft 365.
+  - Om attributet finns i användarobjektet synkroniseras det med Microsoft 365 men det Microsoft 365 inte eller använder det.
   - Maximalt antal tecken: 64
 
 - **mail**
@@ -105,15 +105,15 @@ Attributen du behöver förbereda visas här:
   - Attributvärdet måste vara unikt i katalogen.
 
     > [!NOTE]
-    > Om det finns dubblettvärden synkroniseras den första användaren med värdet. Efterföljande användare visas inte i Microsoft 365. Du måste antingen ändra värdet i Microsoft 365 eller båda värdena i AD DS för att båda användarna ska visas i Microsoft 365.
+    > Om det finns dubblettvärden synkroniseras den första användaren med värdet. Efterföljande användare visas inte i Microsoft 365. Du måste antingen ändra värdet i Microsoft 365 eller ändra båda värdena i AD DS för att båda användarna ska visas i Microsoft 365.
 
-- **mailNickname** (Exchange-alias)
+- **mailNickname** (Exchange alias)
 
   - Attributvärdet kan inte börja med en punkt (.).
   - Attributvärdet måste vara unikt i katalogen.
 
     > [!NOTE]
-    > Understreck ("_") i det synkroniserade namnet anger att det ursprungliga värdet för det här attributet innehåller ogiltiga tecken. Mer information om det här attributet finns i [Exchange-aliasattributet](/powershell/module/exchange/set-mailbox).
+    > Understreck ("_") i det synkroniserade namnet anger att det ursprungliga värdet för det här attributet innehåller ogiltiga tecken. Mer information om det här attributet finns i [Exchange aliasattribut](/powershell/module/exchange/set-mailbox).
     >
 
 - **proxyAddresses**
@@ -122,7 +122,7 @@ Attributen du behöver förbereda visas här:
   - Maximalt antal tecken per värde: 256
   - Attributvärdet får inte innehålla blanksteg.
   - Attributvärdet måste vara unikt i katalogen.
-  - Ogiltiga tecken: \< \> ( ) ; , [ ] " '
+  - Ogiltiga tecken: \< \> ( ) ; , [ ] "
 
     Observera att ogiltiga tecken gäller tecknen som kommer efter avgränsaren och ":", så att SMTP:User@contso.com är tillåtet, men SMTP:user:M@contoso.com är det inte.
 
@@ -139,11 +139,11 @@ Attributen du behöver förbereda visas här:
 
 - **sn** (efternamn)
 
-  - Om attributet finns i användarobjektet synkroniseras det med Microsoft 365, men det krävs eller används inte av Microsoft 365.
+  - Om attributet finns i användarobjektet synkroniseras det med Microsoft 365 men det Microsoft 365 inte eller använder det.
 
 - **targetAddress**
 
-    Attributet **targetAddress** (till exempel SMTP:tom@contoso.com) som fylls i för användaren måste visas i GAL i Microsoft 365. Vid migrering av tredjepartsmeddelanden kräver detta Microsoft 365-schematillägget för AD DS. Microsoft 365-schematillägget skulle också lägga till andra användbara attribut för att hantera Microsoft 365-objekt som fylls i med hjälp av ett katalogsynkroniseringsverktyg från AD DS. Till exempel läggs **attributet msExchHideFromAddressLists** till för att hantera dolda postlådor eller distributionsgrupper.
+    Attributet **targetAddress** (till exempel SMTP:tom@contoso.com) som fylls i för användaren måste visas i den Microsoft 365 GAL. Vid migrering av meddelanden från tredje part skulle det kräva Microsoft 365 för AD DS. Tillägget Microsoft 365 skulle också lägga till andra användbara attribut för att hantera Microsoft 365 objekt som fylls i med hjälp av ett katalogsynkroniseringsverktyg från AD DS. Till exempel läggs **attributet msExchHideFromAddressLists** till för att hantera dolda postlådor eller distributionsgrupper.
 
   - Maximalt antal tecken: 256
   - Attributvärdet får inte innehålla blanksteg.
@@ -170,21 +170,21 @@ Attributen du behöver förbereda visas här:
 
 ## <a name="3-prepare-the-userprincipalname-attribute"></a>3. Förbereda attributet userPrincipalName
 
-Active Directory har utformats så att slutanvändarna i organisationen ska kunna logga in i katalogen med hjälp av **antingen sAMAccountName** eller **userPrincipalName.** På samma sätt kan slutanvändarna logga in på Microsoft 365 med hjälp av huvudnamnet (UPN) för sitt arbets- eller skolkonto. Katalogsynkroniseringen försöker skapa nya användare i Azure Active Directory med samma UPN som finns i DIN AD DS. UPN är formaterat som en e-postadress.
+Active Directory har utformats så att slutanvändarna i organisationen ska kunna logga in i katalogen med hjälp av **antingen sAMAccountName** eller **userPrincipalName.** På samma sätt kan slutanvändarna logga in Microsoft 365 med hjälp av huvudnamnet (UPN) för sitt arbets- eller skolkonto. Katalogsynkronisering försöker skapa nya användare i Azure Active Directory med samma UPN som finns i din AD DS. UPN är formaterat som en e-postadress.
 
 I Microsoft 365 är UPN standardattributet som används för att generera e-postadressen. Det är enkelt att ange olika värden för **userPrincipalName** (i AD DS och i Azure AD) och den primära e-postadressen i **proxyAddresses.** De olika värdena kan vara förvirrande för administratörer och slutanvändare.
 
-Därför är det bäst att attributen stämmer överens. Om du vill uppfylla kraven för enkel inloggning med Active Directory Federation Services (AD FS) 2.0 måste du kontrollera att UPN-namn i Azure Active Directory och AD DS matchar och använder ett giltigt domännamnsområde.
+Därför är det bäst att attributen stämmer överens. För att uppfylla kraven för enkel inloggning med Active Directory Federation Services (AD FS) 2.0 måste du kontrollera att UPN-namn i Azure Active Directory och AD DS stämmer överens och använder ett giltigt domännamnsområde.
 
 ## <a name="4-add-an-alternative-upn-suffix-to-ad-ds"></a>4. Lägg till ett alternativt UPN-suffix i AD DS
 
-Du kan behöva lägga till ett alternativt UPN-suffix för att associera användarens företagsautentiseringsuppgifter med Microsoft 365-miljön. Ett UPN-suffix är den del av ett UPN som står till höger om @-tecknet. UPN-nummer som används för enkel inloggning får innehålla bokstäver, siffror, punkter, bindestreck och understreck, men inga andra typer av tecken.
+Du kan behöva lägga till ett alternativt UPN-suffix för att associera användarens företagsautentiseringsuppgifter med Microsoft 365 miljö. Ett UPN-suffix är den del av ett UPN som står till höger om @-tecknet. UPN-nummer som används för enkel inloggning får innehålla bokstäver, siffror, punkter, bindestreck och understreck, men inga andra typer av tecken.
 
 Mer information om hur du lägger till ett alternativt UPN-suffix i Active Directory finns i [Förbereda katalogsynkronisering.]( https://go.microsoft.com/fwlink/p/?LinkId=525430)
 
-## <a name="5-match-the-ad-ds-upn-with-the-microsoft-365-upn"></a>5. Matcha AD DS UPN med Microsoft 365 UPN
+## <a name="5-match-the-ad-ds-upn-with-the-microsoft-365-upn"></a>5. Matcha AD DS UPN med MICROSOFT 365 UPN
 
-Om du redan har konfigurerat katalogsynkronisering kanske användarens UPN för Microsoft 365 inte överensstämmer med användarens AD DS UPN som definierats i AD DS. Detta kan inträffa när en användare har tilldelats en licens innan domänen verifierades. Lös det genom att använda [PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396730) för att åtgärda UPN-dubbletter och uppdatera användarens UPN så att MICROSOFT 365 UPN matchar företagets användarnamn och domän. Om du uppdaterar UPN i AD DS och vill att det synkroniseras med Azure Active Directory-identiteten måste du ta bort användarens licens i Microsoft 365 innan du gör ändringarna i AD DS.
+Om du redan har konfigurerat katalogsynkronisering kanske användarens UPN för Microsoft 365 inte stämmer överens med användarens AD DS UPN som definierats i AD DS. Detta kan inträffa när en användare har tilldelats en licens innan domänen verifierades. Lös det genom att använda PowerShell för att åtgärda UPN-dubbletter och uppdatera användarens [UPN](https://go.microsoft.com/fwlink/p/?LinkId=396730) så att UPN för Microsoft 365 matchar företagets användarnamn och domän. Om du uppdaterar UPN i AD DS och vill att det synkroniseras med Azure Active Directory-identiteten måste du ta bort användarens licens i Microsoft 365 innan du gör ändringarna i AD DS.
 
 Se även [Så här förbereder du en icke-dirigerbar domän (till exempel .local) för katalogsynkronisering.](prepare-a-non-routable-domain-for-directory-synchronization.md)
 

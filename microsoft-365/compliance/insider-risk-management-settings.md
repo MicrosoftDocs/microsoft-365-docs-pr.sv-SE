@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: f48b6e8b43f65a6ee919095ea299bd80c81e01c9
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: aad0f00292a1a1182fc4b731e562b2e4c78d97f8
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "52162646"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259517"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Komma igång med inställningar för Insider-riskhantering
 
@@ -83,7 +83,7 @@ Om du vill aktivera övervakning av riskaktiviteter på enheter och inkludera po
 Se till att Windows 10 enheter som du planerar att rapportera inom insider-riskhantering uppfyller dessa krav.
 
 1. Måste köras med Windows 10 x64 version 1809 eller senare och måste ha installerat [Windows 10-uppdateringen (OS-version 17763.1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) från den 20 februari 2020.
-2. Alla enheter måste vara [anslutna Azure Active Directory (AAD) eller](/azure/active-directory/devices/concept-azure-ad-join)vara anslutna till Hybrid Azure AD.
+2. Användarkontot som används för att logga in Windows 10-enheten måste vara ett aktivt Azure Active Directory-konto (AAD). Enheten Windows 10 [AAD,](/azure/active-directory/devices/concept-azure-ad-join)hybrid-AAD eller Active Directory-ansluten eller AAD registrerad.
 3. Installera Microsoft Chromium Edge-webbläsaren på slutpunktsenheten för att övervaka åtgärder för molnuppladdningsaktiviteten. Se [Ladda ned den nya Microsoft Edge baserat på Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 #### <a name="step-2-onboarding-devices"></a>Steg 2: Onboarding-enheter
@@ -425,7 +425,7 @@ Om du vill Power Automate ett arbetsflöde i inställningsområdet måste du var
 
 Gör följande för att dela ett Power Automate flöde:
 
-1. Gå till [Microsoft 365 För Insider-riskhantering](htttps://compliance.microsoft.com) **i säkerhets- och** efterlevnadscentret och välj Inställningar för **Insider-Power Automate**  >  **flöden.** Du kan också komma åt sidorna **för Ärenden** **eller Användare genom** att välja **Automatisera** Hantera  >  **Power Automate flöden.**
+1. Gå till [Microsoft 365 För Insider-riskhantering](https://compliance.microsoft.com) **i säkerhets- och** efterlevnadscentret och välj Inställningar för **Insider-Power Automate**  >  **flöden.** Du kan också komma åt sidorna **för Ärenden** **eller Användare genom** att välja **Automatisera** Hantera  >  **Power Automate flöden.**
 2. På sidan **Power Automate flöden** väljer du **fliken Mina flöden** **eller Teamflöden.**
 3. Välj flödet du vill dela och välj sedan **Dela** på menyn flödesalternativ.
 4. På sidan flödesdelning anger du namnet på den användare eller grupp du vill lägga till som ägare av flödet.
@@ -439,7 +439,7 @@ Om du Power Automate ett arbetsflöde i inställningsområdet måste du vara med
 
 Gör följande för att redigera ett Power Automate flöde:
 
-1. Gå till [Microsoft 365 För Insider-riskhantering](htttps://compliance.microsoft.com) **i säkerhets- och** efterlevnadscentret och välj Inställningar för **Insider-Power Automate**  >  **flöden.** Du kan också komma åt sidorna **för Ärenden** **eller Användare genom** att välja **Automatisera** Hantera  >  **Power Automate flöden.**
+1. Gå till [Microsoft 365 För Insider-riskhantering](https://compliance.microsoft.com) **i säkerhets- och** efterlevnadscentret och välj Inställningar för **Insider-Power Automate**  >  **flöden.** Du kan också komma åt sidorna **för Ärenden** **eller Användare genom** att välja **Automatisera** Hantera  >  **Power Automate flöden.**
 2. På sidan **Power Automate flöde väljer** du ett flöde för att redigera och väljer **Redigera** på flödeskontrollmenyn.
 3. Markera **ellipsen för**  >  **Inställningar** ändra en flödeskomponentinställning eller **ellips Ta** bort för att ta bort en  >   flödeskomponent.
 4. Välj **Spara** och sedan **Stäng för** att slutföra redigeringen av flödet.
@@ -452,7 +452,7 @@ Om du vill Power Automate ett arbetsflöde i inställningsområdet måste du var
 
 Gör följande för att ta bort ett Power Automate flöde:
 
-1. Gå till [Microsoft 365 För Insider-riskhantering](htttps://compliance.microsoft.com) **i säkerhets- och** efterlevnadscentret och välj Inställningar för **Insider-Power Automate**  >  **flöden.** Du kan också komma åt sidorna **för Ärenden** **eller Användare genom** att välja **Automatisera** Hantera  >  **Power Automate flöden.**
+1. Gå till [Microsoft 365 För Insider-riskhantering](https://compliance.microsoft.com) **i säkerhets- och** efterlevnadscentret och välj Inställningar för **Insider-Power Automate**  >  **flöden.** Du kan också komma åt sidorna **för Ärenden** **eller Användare genom** att välja **Automatisera** Hantera  >  **Power Automate flöden.**
 2. På sidan **Power Automate flöde väljer** du ett flöde för att ta bort och väljer Ta **bort** på flödeskontrollmenyn.
 3. I bekräftelsedialogrutan för borttagning väljer du **Ta bort för** att ta bort flödet eller så väljer du **Avbryt** för att avsluta borttagningsåtgärden.
 
@@ -470,7 +470,7 @@ Mer information om hur du använder team och kanaler i Microsoft Teams finns i [
 
 Det går snabbt Microsoft Teams att aktivera support för ärenden. Så här Microsoft Teams du aktivera Microsoft Teams för insider-riskhantering:
 
-1. I Microsoft 365 [kompatibilitetscenter](htttps://compliance.microsoft.com)går du till **Insider-riskhanteringsinställningar**  >  **för Insider- risk.**
+1. I Microsoft 365 [kompatibilitetscenter](https://compliance.microsoft.com)går du till **Insider-riskhanteringsinställningar**  >  **för Insider- risk.**
 2. Markera **Microsoft Teams** fliken.
 3. Aktivera Microsoft Teams för insider-riskhantering.
 4. Välj **Spara för** att konfigurera och avsluta.
@@ -485,7 +485,7 @@ Användarna behöver behörighet för att skapa Microsoft 365 grupper i organisa
 
 Om du vill skapa en grupp för ett ärende använder du kontrollen Skapa Microsoft Team när du arbetar direkt i ett befintligt ärende. Så här skapar du ett nytt team:
 
-1. I Microsoft 365 [kompatibilitetscenter](htttps://compliance.microsoft.com)går du till **Insider-riskhanteringsärenden**  >   och väljer ett befintligt ärende.
+1. I Microsoft 365 [kompatibilitetscenter](https://compliance.microsoft.com)går du till **Insider-riskhanteringsärenden**  >   och väljer ett befintligt ärende.
 2. På ärendeåtgärdsmenyn väljer du **Skapa Microsoft Team**.
 3. Ange ett **namn på** det nya teamet Microsoft Teams team i fältet Teamnamn.
 4. Välj **Skapa Microsoft-team** och välj sedan **Stäng**.
@@ -516,7 +516,7 @@ Analysinsikter från genomsökningar baseras på samma riskaktivitetssignaler so
 För att kunna aktivera Insider-riskanalyser måste du vara medlem i rollgruppen för Insider-riskhantering, Insider-riskhantering eller Microsoft 365 global administratör.
 Utför följande steg för att aktivera Insider Risk Analytics:
 
-1. I Microsoft 365 [kompatibilitetscenter](htttps://compliance.microsoft.com)går du **till Insider-riskhantering.**
+1. I Microsoft 365 [kompatibilitetscenter](https://compliance.microsoft.com)går du **till Insider-riskhantering.**
 2. Välj **Kör genomsökning** på **fliken Översikt över Insider-risker** i din **organisation.** Då aktiverar analysskanning för organisationen. Du kan också aktivera genomsökning i organisationen genom att gå till **Insider-riskinställningarAnalyser** och aktivera Genomsökning av klientorganisationens användaraktivitet för att  >   identifiera **potentiella insiderrisker.**
 3. I **informationsfönstret Analys** väljer du Kör **genomsökning** för att starta sökningen för organisationen. Analyssökningsresultaten kan ta upp till 24 timmar innan insikterna är tillgängliga som rapporter för granskning.
 
@@ -546,6 +546,6 @@ Om du vill inaktivera Insider-riskanalyser måste du vara medlem i rollgruppen f
 
 Utför följande steg för att inaktivera Insider-riskanalyser:
 
-1. I Microsoft 365 [kompatibilitetscenter](htttps://compliance.microsoft.com)går du **till Insider-riskhantering.**
+1. I Microsoft 365 [kompatibilitetscenter](https://compliance.microsoft.com)går du **till Insider-riskhantering.**
 2. Välj **Analyssida för**  >  **Insider-riskinställningar.**
 3. Inaktivera Sök igenom klientorganisationens användaraktivitet på sidan **Analys** **för att identifiera potentiella insiderrisker.**

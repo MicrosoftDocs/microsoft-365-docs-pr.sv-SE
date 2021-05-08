@@ -29,6 +29,6 @@
 |TEAMS|✔|✔|Planerat|✔|Uppgift saknas|
 |TO-DO|✔|✔|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|✔|
 |VISIO|Uppgift saknas|✔|Uppgift saknas|✔|Uppgift saknas|
-|WHITEBOARD|Uppgift saknas|✔|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|✔|
+|WHITEBOARD|✔|✔|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|✔|
 |WORD|✔|✔|✔|✔|✔|
 |YAMMER|✔|✔|Uppgift saknas|Planerat|Uppgift saknas|

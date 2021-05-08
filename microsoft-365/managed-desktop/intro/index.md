@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 36745a0aafb70e7921c19db7c28984dcca1e2a63
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: d058cfefbc31be6d355ed61e745c36af684829b4
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245534"
+ms.locfileid: "52259673"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Vad är Microsoft Hanterat skrivbord?
 
@@ -57,7 +57,7 @@ Din IT-administratör drar nytta av de här funktionerna:
 ## <a name="device-management"></a>Enhetshantering
 Microsoft Hanterat skrivbord tar på sig bördan att hantera registrerade enheter och Microsoft-programvaran de använder.
 
-- **Maskinvara:** I stället för att IT-avdelningen ska behöva göra efterforskningar och ta reda på om en enhet är kompatibel med tjänsten har vi tillhandahållit specifika krav för maskinvara och programvara, verktyg och processer för att effektivisera urvalet så att du kan välja enheter på ett enkelt sätt. Du hittar rekommenderade enheter genom att filtrera Microsoft Hanterat skrivbord på webbplatsen för [Köp företagsenheter för Windows 10 Pro](https://www.microsoft.com/windowsforbusiness/view-all-devices). Du kan välja att skaffa enheter själv (eller arbeta med en partner) eller att återanvända enheter du redan har, förutsatt att de finns med på listan över godkända enheter. Att registrera enheter är enkelt och tydligt, och innan de distribueras kan du också [anpassa](../working-with-managed-desktop/config-setting-overview.md) vissa aspekter av enhetsupplevelsen för användarna.
+- **Maskinvara:** I stället för att IT-avdelningen ska behöva göra efterforskningar och ta reda på om en enhet är kompatibel med tjänsten har vi tillhandahållit specifika krav för maskinvara och programvara, verktyg och processer för att effektivisera urvalet så att du kan välja enheter på ett enkelt sätt. Du hittar rekommenderade enheter genom att filtrera Microsoft Hanterat skrivbord på webbplatsen för [Köp företagsenheter för Windows 10 Pro](https://www.microsoft.com/windowsforbusiness/view-all-devices). Du kan skaffa enheter själv (eller arbeta med en partner) eller återanvända enheter som du redan har. Att registrera enheter är enkelt och tydligt, och innan de distribueras kan du också [anpassa](../working-with-managed-desktop/config-setting-overview.md) vissa aspekter av enhetsupplevelsen för användarna.
 
 - **Uppdateringar:** Microsoft Hanterat skrivbord konfigurerar och hanterar alla aspekter av [distributionsgrupper](../service-description/updates.md) för kvalitets- och funktionsuppdateringar för Windows 10, drivrutiner, inbyggd programvara, antivirusdefinitioner och uppdateringar för Microsoft 365-applikationer för företag. Detta inkluderar omfattande tester och verifiering av alla uppdateringar för att säkerställa att registrerade enheter alltid är uppdaterade och för att minimera störningar, vilket frigör din IT-avdelning från den pågående uppgiften.
 

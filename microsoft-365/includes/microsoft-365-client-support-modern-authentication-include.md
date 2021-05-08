@@ -36,7 +36,7 @@
 |TEAMS|✔|✔|✔|✔|Uppgift saknas|
 |TO-DO|✔|✔|✔|Uppgift saknas|✔|
 |VISIO|Uppgift saknas|✔|Uppgift saknas|✔|Uppgift saknas|
-|WHITEBOARD|Uppgift saknas|✔|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|✔|
+|WHITEBOARD|✔|✔|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|✔|
 |WORD|✔|✔|✔|✔|✔|
 |WORKPLACE ANALYTICS|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|
 |YAMMER|✔|✔|✔|✔|Uppgift saknas|

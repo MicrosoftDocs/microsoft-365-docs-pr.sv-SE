@@ -1,6 +1,6 @@
 ---
-title: Prioritera incidenter i Microsoft 365 Defender
-description: Läs om hur du filtrerar incidentköer i Microsoft 365 Defender
+title: Prioritera ärenden i Microsoft 365 Defender
+description: Lär dig hur du filtrerar incidenter från incidentkön i Microsoft 365 Defender
 keywords: incident, kö, översikt, enheter, identiteter, användare, postlåda, e-post, incidenter, analysera, svara
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,29 +22,31 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c3efff1e7ebb3a5e868ede018512d12cf38e38fc
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 47d066fa20abe963f7afaa3b88cecc96fa6e87fc
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939712"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259609"
 ---
-# <a name="prioritize-incidents-in-microsoft-365-defender"></a>Prioritera incidenter i Microsoft 365 Defender
+# <a name="prioritize-incidents-in-microsoft-365-defender"></a>Prioritera ärenden i Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Gäller för:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender tillämpar korrelationsanalyser och aggregerar relaterade aviseringar och automatiska undersökningar från olika produkter för ett incident. Microsoft 365 Defender utlöser även unika aviseringar om aktiviteter som bara kan identifieras som skadliga givet den end-to-end-synlighet som Microsoft 365 Defender har i hela produktsviten. Den här vyn ger dina säkerhetsanalytiker den bredare attack storyn, som hjälper dem att bättre förstå och hantera komplexa hot i organisationen.
+Microsoft 365 Defender tillämpar korrelationsanalyser och sammanställer relaterade aviseringar och automatiska undersökningar från olika produkter till ett incident. Microsoft 365 Defender utlöser även unika aviseringar för aktiviteter som bara kan identifieras som skadliga givet den synlighet från end-to-end som Microsoft 365 Defender har i hela produktsviten. Den här vyn ger dina säkerhetsanalytiker den bredare attack storyn, som hjälper dem att bättre förstå och hantera komplexa hot i organisationen.
 
 I **kön Incident** visas en samling incidenter som har skapats på olika enheter, användare och postlådor. Det hjälper dig att sortera olika incidenter för att prioritera och skapa ett välgrundat beslut om cybersäkerhet. 
 
-Du kommer till incidentkön från **Incidenter & aviseringar > Incidenter** i snabbstarten av Säkerhetscenter för Microsoft 365 [(security.microsoft.com).](https://security.microsoft.com)
+Du kommer till incidentkön från **Incidenter & aviseringar > Incidenter** i snabbstarten av Microsoft 365 säkerhetscenter [(security.microsoft.com).](https://security.microsoft.com) Här är ett exempel.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Exempel på incidentkön":::
 
-Som standard visar incidentkön i Microsoft 365-säkerhetscentret incidenter som har setts under de senaste sex månaderna. Det senaste incidenten visas högst upp i listan så att du kan se den först.
+I **avsnittet Senaste incidenter och aviseringar** visas ett diagram över antalet aviseringar som tagits emot och incidenter som skapats de senaste 24 timmarna.
+
+Som standard visar incidentkön i säkerhetscentret Microsoft 365 incidenter som har inträffat under de senaste sex månaderna. Det senaste incidenten visas högst upp i listan så att du kan se den först.
 
 Incidentkön har anpassningsbara kolumner (välj **Välj** kolumner) som ger dig insyn i olika egenskaper för incidenten eller berörda enheter. På så sätt kan du fatta ett välgrundat beslut om prioritering av incidenter för analys.
 
@@ -74,7 +76,7 @@ I den här tabellen visas de tillgängliga filternamnen.
 | Enhetsgrupp | Filtrera efter definierade enhetsgrupper. |
 | Undersökningstillstånd | Filtrera ärenden efter status för automatiserad undersökning.  |
 | Flera kategorier | Du kan välja att endast visa incidenter som har mappats till flera kategorier och därmed potentiellt kan orsaka mer skada. |
-| Flera tjänstkällor  | Filtrera för att bara se incidenter som innehåller aviseringar från olika källor (Microsoft Defender för slutpunkt, Microsoft Cloud App Security, Microsoft Defender för identitet, Microsoft Defender för Office 365). |
+| Flera tjänstkällor  | Filtrera för att bara se händelser som innehåller aviseringar från olika källor (Microsoft Defender för slutpunkt, Microsoft Cloud App Security, Microsoft Defender för identitet, Microsoft Defender för Office 365). |
 | OS-plattform | Begränsa vyn för incidentköer efter operativsystem. |
 | Tjänstkällor | Genom att välja en viss källa kan du fokusera på incidenter som innehåller minst en avisering från den valda källan. |
 | Allvarlighetsgrad | Händelsens allvarlighetsgrad är samma som den inverkan den kan ha på dina tillgångar. Ju högre allvarlighetsgrad, desto större påverkan är det och kräver vanligtvis den mest omedelbarta uppmärksamhet. |

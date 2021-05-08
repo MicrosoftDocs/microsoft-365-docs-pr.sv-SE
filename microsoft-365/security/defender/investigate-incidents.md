@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 22d3bba03745cee330f89b67061e6c6b13e78aed
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 72e1efb8a06fb7fa64b83ab6522fe4cdcfd1a73e
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939748"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259642"
 ---
 # <a name="analyze-incidents-in-microsoft-365-defender"></a>Analysera incidenter i Microsoft 365 Defender
 
@@ -37,7 +37,7 @@ ms.locfileid: "51939748"
 
 - Microsoft 365 Defender
 
-I Microsoft 365 Defender sammanställs alla relaterade aviseringar, tillgångar, undersökningar och bevis från olika enheter, användare och postlådor för att ge dig en fullständig översikt över hela attacken.
+Microsoft 365 Defender sammanställer alla relaterade aviseringar, tillgångar, undersökningar och bevis från alla dina enheter, användare och postlådor för att ge dig en fullständig översikt över hela attacken.
 
 Inom en incident analyserar du aviseringarna som påverkar nätverket, förstår vad de betyder och sorterar bevisen så att du kan skapa en gällande åtgärdsplan.
 
@@ -61,9 +61,9 @@ Du kan också öppna huvudsidan för en händelse genom att välja incidentnamne
 
 **Sammanfattningssidan** ger en ögonblicksbild av de viktigaste sakerna att lägga märke till om händelsen.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exempel på sidan Sammanfattning för en incident i säkerhetscentret i Microsoft 365":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exempel på sidan Sammanfattning för en incident i Microsoft 365 säkerhetscenter":::
 
-Attackkategorierna ger dig en visuell och numerisk vy av hur avancerat attacken har fortskridt mot kill chain. Precis som andra Microsoft-säkerhetsprodukter är Microsoft 365 Defender i linje med [MITRE ATT&&trade; CK-ramverket.](https://attack.mitre.org/)
+Attackkategorierna ger dig en visuell och numerisk vy av hur avancerat attacken har fortskridt mot kill chain. Precis som andra Microsoft-säkerhetsprodukter Microsoft 365 Defender i linje med [MITRE ATT &trade;&CK-ramverket.](https://attack.mitre.org/)
 
 I omfattningsavsnittet visas en lista över de viktigaste tillgångar som är en del av den här händelsen. Om det finns specifik information om den här tillgången, till exempel risknivå, undersökningsprioritering och taggning av tillgångarna, visas detta även i det här avsnittet.
 
@@ -79,7 +79,7 @@ På fliken **Avisering** kan du visa aviseringskön för aviseringar om händels
 
 - Allvarlighetsgrad.
 - Enheterna som var inblandade i aviseringen.
-- Källan till aviseringarna (Microsoft Defender för identitet, Microsoft Defender för slutpunkt, Microsoft Defender för Office 365).
+- Varningens källa (Microsoft Defender för identitet, Microsoft Defender för slutpunkt, Microsoft Defender för Office 365).
 - Orsaken till att de var länkade till varandra.
 
 Här är ett exempel.
@@ -103,7 +103,7 @@ Du kan markera bockmarkeringen för en enhet om du vill visa information om enhe
 På sidan enhet kan du samla in ytterligare information om enheten, till exempel alla aviseringar, en tidslinje och säkerhetsrekommendationer. På fliken Tidslinje  kan du till exempel bläddra igenom datorns tidslinje och visa alla händelser och beteenden som observerats på datorn i kronologisk ordning, uppkopplade med aviseringarna upphöjda.
 
 > [!TIP]
-> Du kan göra genomsökningar på begäran på en enhet. I Säkerhetscenter för Microsoft 365 väljer du **Slutpunkter > Enhetsinventering**. Välj en enhet med aviseringar och kör sedan en antivirussökning. Åtgärder, till exempel antivirusskanningar, spåras och visas på sidan **Enhetsinventering.** Mer information finns i Kör [sökning efter Microsoft Defender Antivirus på enheter.](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)
+> Du kan göra genomsökningar på begäran på en enhet. I säkerhetscentret Microsoft 365 du Slutpunkter **för > Enhetsinventering**. Välj en enhet med aviseringar och kör sedan en antivirussökning. Åtgärder, till exempel antivirusskanningar, spåras och visas på sidan **Enhetsinventering.** Mer information finns i [Kör Microsoft Defender Antivirus sökning på enheter](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
 
 ## <a name="users"></a>Användare
 
@@ -119,11 +119,11 @@ På **fliken Postlådor** visas alla postlådor som har identifierats vara en de
 
 :::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="Exempel på en postlådesida för ett incident":::
 
-Du kan välja bockmarkeringen för en postlåda om du vill visa en lista med aktiva aviseringar. Välj postlådans namn om du vill se ytterligare information om postlådan på sidan i Utforskaren för Microsoft Defender för Office 365.
+Du kan välja bockmarkeringen för en postlåda om du vill visa en lista med aktiva aviseringar. Välj postlådans namn om du vill se ytterligare information om postlådan på sidan i Utforskaren för Microsoft Defender Office 365.
 
 ## <a name="investigations"></a>Undersökningar
 
-På **fliken Undersökningar** finns alla automatiserade undersökningar som utlösts av aviseringar om den här händelsen. Undersökningarna utför åtgärder eller väntar på analytikernas godkännande av åtgärder, beroende på hur du konfigurerat dina automatiska undersökningar att köras i Microsoft Defender för Endpoint och Defender för Office 365.
+På **fliken Undersökningar** finns alla automatiserade undersökningar som utlösts av aviseringar om den här händelsen. Undersökningarna utför åtgärder eller väntar på att analytiker har godkänt åtgärder, beroende på hur du konfigurerat dina automatiska undersökningar att köras i Microsoft Defender för Endpoint och Defender för Office 365.
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Exempel på en sida för undersökningar för en incident":::
 
@@ -138,6 +138,23 @@ På **fliken Bevis och** svar visas alla händelser som stöds och misstänkta e
 Microsoft 365 Defender undersöker automatiskt alla händelser som stöds och misstänkta enheter i aviseringarna, vilket ger dig information om viktiga e-postmeddelanden, filer, processer, tjänster, IP-adresser med mera. På så sätt kan du snabbt identifiera och blockera potentiella hot i händelsen.
 
 Var och en av de analyserade enheterna är markerade med en bedömning (skadlig, misstänkt, ren) och en åtgärdsstatus. På så sätt får du en bättre förståelse för statusen för hela händelsen och vad som kan göras härnäst.
+
+## <a name="graph-in-preview"></a>Graph (i förhandsversion)
+
+Med den **nya Graph** (i förhandsgranskningen) kan du se:
+
+- Kopplingen av aviseringar till de påverkade tillgångarna i organisationen.
+- Vilka enheter är relaterade till vilka aviseringar och hur de är en del av attackens historia.
+- Aviseringarna om händelsen.
+
+Här är ett exempel.
+
+:::image type="content" source="../../media/investigate-incidents/incident-graph.png" alt-text="Exempel på en Graph för ett incident":::
+
+Med hjälp av incidentdiagrammet får du snabbt en fullständig förståelse för attacken genom att ansluta olika misstänkta enheter som är en del av attacken till sina relaterade tillgångar, till exempel användare, enheter och postlådor. 
+
+Nu kan du förstå hur attacken spridas genom nätverket över tid, var den startade och hur långt attacken gick.
+
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
