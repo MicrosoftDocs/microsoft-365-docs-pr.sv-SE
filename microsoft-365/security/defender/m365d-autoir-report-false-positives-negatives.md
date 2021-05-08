@@ -1,5 +1,5 @@
 ---
-title: Hantera falska positiva resultat eller falska negativa resultat i AIR i Microsoft 365 Defender
+title: Hantera falska positiva resultat eller falska negativa tal i AIR i Microsoft 365 Defender
 description: Har något missats eller identifierats felaktigt av AIR i Microsoft 365 Defender? Lär dig hur du skickar falska positiva eller falska negativa tal till Microsoft för analys.
 keywords: automatiserad, undersökning, avisering, åtgärd, falskt positivt, falskt negativt
 search.appverid: met150
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: f57e68ba88879ed78170e6348ecdbce4db82b668
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 727ca529dc1a16af778e01a08c9adcfe42b9b974
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592066"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245474"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Hantera falska positiva/negativa i automatiska undersöknings- och svarsfunktioner
 
@@ -35,7 +35,7 @@ ms.locfileid: "51592066"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Falska positiva/negativa kan ibland uppstå med någon lösning för skydd mot hot. Om [automatisk undersökning och svarsfunktioner](m365d-autoir.md) i Microsoft 365 Defender missade eller felaktigt identifierade något finns det åtgärder som ditt säkerhetsteam kan vidta:
+Falska positiva/negativa kan ibland uppstå med någon lösning för skydd mot hot. Om [automatisk undersökning och svarsfunktioner i](m365d-autoir.md) Microsoft 365 Defender har missat eller identifierat något fel finns det åtgärder som ditt säkerhetsteam kan vidta:
 
 - [Rapportera falskt positivt/negativt till Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 - [Justera dina aviseringar](#adjust-an-alert-to-prevent-false-positives-from-recurring) (om det behövs). och 
@@ -47,14 +47,14 @@ I följande avsnitt beskrivs hur du utför de här uppgifterna.
 
 |Objekt som har missats eller identifierats felaktigt |Tjänst  |Vad kan jag göra?  |
 |---------|---------|---------|
-|- E-postmeddelande <br/>- E-postbilaga <br/>- URL i ett e-postmeddelande<br/>- URL i en Office-fil      |[Microsoft Defender för Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[Skicka misstänkt skräppost, nättr ut, URL:er och filer till Microsoft för genomsökning](../office-365-security/admin-submission.md)         |
+|- E-postmeddelande <br/>- E-postbilaga <br/>- URL i ett e-postmeddelande<br/>- URL i Office fil      |[Microsoft Defender för Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[Skicka misstänkt skräppost, nättr ut, URL:er och filer till Microsoft för genomsökning](../office-365-security/admin-submission.md)         |
 |Fil eller app på en enhet    |[Microsoft Defender för Endpoint](/windows/security/threat-protection)         |[Skicka en fil till Microsoft för analys av skadlig programvara](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Justera en avisering för att förhindra att falska positiva resultat upprepas
 
 |Scenario |Tjänst |Vad kan jag göra? |
 |--------|--------|--------|
-|- En avisering som utlöses av legitimt bruk <br/>- En avisering är felaktig    |[Microsoft Cloud App Security](/cloud-app-security)<br/> eller <br/>[Avancerad identifiering av hot i Azure](/azure/security/fundamentals/threat-detection)         |[Hantera aviseringar i Cloud App Security-portalen](/cloud-app-security/managing-alerts)         |
+|- En avisering som utlöses av legitimt bruk <br/>- En avisering är felaktig    |[Microsoft Cloud App Security](/cloud-app-security)<br/> eller <br/>[Avancerad identifiering av hot i Azure](/azure/security/fundamentals/threat-detection)         |[Hantera aviseringar i Cloud App Security portalen](/cloud-app-security/managing-alerts)         |
 |En fil, IP-adress, URL eller domän behandlas som skadlig kod på en enhet, trots att den är säker|[Microsoft Defender för Endpoint](/windows/security/threat-protection) |[Skapa en anpassad indikator med åtgärden "Tillåt"](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>Ångra en åtgärdsåtgärd som har vidtagits på en enhet

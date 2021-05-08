@@ -1,6 +1,6 @@
 ---
 title: Enhetskrav
-description: Sammanfattning av de lägsta maskin- och programvarukraven för att enheter ska fungera med Microsoft Managed Desktop
+description: Sammanfattning av minimikraven för maskinvara och programvara för enheter som ska fungera Microsoft Hanterat skrivbord
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: baaebd185389e7ac1f2173aed092141067a5629f
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: fcd7f192ba0846e3bf3051cde927095088f32d26
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768896"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245798"
 ---
 # <a name="device-requirements"></a>Enhetskrav
 
-Microsoft Managed Desktop utvärderar regelbundet enhetskrav för att ingå i tjänsten. I den här artikeln beskrivs de maskin- och programvarukrav en enhet måste uppfylla för att kunna arbeta med Microsoft Managed Desktop. Du kan granska en lista över specifika [enheter som redan är godkända](device-list.md) för användning med tjänsten baserat på dessa krav.
+Microsoft Hanterat skrivbord regelbundet utvärderas enhetskrav som ska ingå i tjänsten. I den här artikeln beskrivs de maskin- och programvarukrav en enhet måste uppfylla för att kunna arbeta med Microsoft Hanterat skrivbord. Du kan granska en lista över specifika enheter som redan är godkända för användning med tjänsten baserat på dessa krav. Filter för Microsoft Hanterat skrivbord på webbplatsen [handla Windows 10 Pro företagsenheter](https://www.microsoft.com/windowsforbusiness/view-all-devices)
 
 > [!NOTE]
 > Dessa krav kan ändras när som helst, men vi kommer att tillhandahålla 30 dagars förvarning om alla maskinvarukrav ändras. De senast ändrade kraven markeras med **\*** . 
@@ -29,7 +29,7 @@ Förutom att granska enhetsspecifikter kan du också använda den nedladdningsba
 
 ## <a name="minimum-requirements"></a>Minimikrav
 
-För att registreras i Microsoft Managed Desktop måste en enhet uppfylla eller överskrida alla dessa krav.
+För att registreras i Microsoft Hanterat skrivbord måste en enhet uppfylla eller överskrida alla dessa krav.
 
 ### <a name="manufacturer"></a>Tillverkare
 
@@ -59,7 +59,7 @@ Enheter måste ha följande funktioner:
 - Klarar virtualiseringsbaserad säkerhet 
 - [Hypervisorskyddad kodintegritet](/windows-hardware/drivers/bringup/device-guard-and-credential-guard) som stöds av TIDE
 
-Mer information om dessa funktioner och tekniker som är relaterade till dem som används i tjänsten finns i [Microsoft Managed Desktop-tekniker.](../intro/technologies.md)
+Mer information om dessa funktioner och de tekniker som är relaterade till dem som tjänsten använder finns [i Microsoft Hanterat skrivbord teknik.](../intro/technologies.md)
 
 > [!NOTE]
 > ARM-processorer stöds inte.
@@ -70,13 +70,13 @@ Enheter bör uppfylla eller överskrida följande begränsningar för lagring oc
 - Startenheten måste ha en kapacitet på minst 128 GB.
 - Internt enhetsminne (RAM) måste vara lika med eller överstiger 8 GB.
 
-Om enheten gjordes efter 1 juli 2020 bör den också ha en IR-kamera, fingeravtrycksläsare eller båda, för att stödja [Windows Hello.](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
+Om enheten gjordes efter den 1 juli 2020 bör den också ha en IR-kamera, fingeravtrycksläsare eller båda, för att stödja [Windows Hello.](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
 
 ## <a name="recommended-features"></a>Rekommenderade funktioner
 
 Användarna får en mycket bättre upplevelse om du väljer enheter som har följande funktioner:
 
-- Antingen en Intel vPro-processor eller en AMD Ryzen Pro-processor
+- En Intel vPro-processor eller en AMD Ryzen-processor Pro Intel
 - Startenhet av SSD-typ med en kapacitet på minst 256 GB
 - Internt enhetsminne (RAM) på minst 16 GB
 - Stöd för modern vänteläge

@@ -1,6 +1,6 @@
 ---
 title: Översikt över enhetsidentifiering
-description: Lär dig hur du använder slutpunktsidentifiering i Microsoft 365 Defender för att hitta ohanterade enheter i nätverket
+description: Lär dig hur du utnyttjar slutpunktsidentifieringen i Microsoft 365 Defender för att hitta ohanterade enheter i nätverket
 keywords: identifiering av enheter, upptäck, passiv, proaktiv, nätverk, synlighet, server, arbetsstation, onboard, ohanterade enheter
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c549d5d2a7c30892a9272b4ac3e03cb8979bc1a5
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 2dee1193e9f852e66df324927bf38d37d736d251
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764993"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245954"
 ---
 # <a name="device-discovery-overview"></a>Översikt över enhetsidentifiering
 
@@ -96,10 +96,11 @@ Enheter som har identifierats men ännu inte har introducerats och skyddats av M
 
 ![Bild på instrumentpanel för enhetsinventering](images/2b62255cd3a9dd42f3219e437b956fb9.png)
 
-
+> [!TIP]
+> Du kan alltid använda filter för att utesluta ohanterade enheter från enhetsinventeringslistan. Du kan också använda kolumnen onboardingstatus i API-frågor för att filtrera bort ohanterade enheter. 
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>Sårbarhetsbedömning på identifierade enheter
-Säkerhetsproblem och risker på dina enheter samt andra identifierade ohanterade enheter i nätverket är en del av de aktuella TVM-flödena under "Säkerhetsrekommendationer" och representeras på entitetssidor i portalen. Sök efter SSH-relaterade säkerhetsrekommendationer för att hitta svagheter i SSH som är relaterade till ohanterade och hanterade enheter. 
+Säkerhetsproblem och risker på dina enheter samt andra identifierade ohanterade enheter i nätverket är en del av de aktuella TVM-flödena under "Security Rekommendationer" och representeras på entitetssidor i portalen. Sök efter SSH-relaterade säkerhetsrekommendationer för att hitta svagheter i SSH som är relaterade till ohanterade och hanterade enheter. 
 
 ![Bild av instrumentpanelen med säkerhetsrekommendationer](images/1156c82ffadd356ce329d1cf551e806c.png)  
 
@@ -131,8 +132,8 @@ DeviceNetworkEvents
 ```
 
 
-## <a name="changed-behaviour"></a>Ändrad 10:a
-I följande avsnitt visas de ändringar som du ser i Microsoft Defender för Endpoint och/eller Microsoft 365 Säkerhetscenter när den här funktionen är aktiverad. 
+## <a name="changed-behavior"></a>Ändrat beteende
+I följande avsnitt visas de ändringar du ser i Microsoft Defender för Endpoint och/eller Microsoft 365 Säkerhetscenter när den här funktionen är aktiverad. 
  
 1.  Enheter som inte är onboarded till Microsoft Defender till Endpoint förväntas visas i enhetsinventeringen, avancerad sökning och API-frågor. Det kan öka storleken på frågeresultatet avsevärt. 
     1. Tabellerna "DeviceInfo" och "DeviceNetworkInfo" i Avancerad sökning kommer nu att innehålla identifierade enheter. Du kan filtrera bort dessa enheter med hjälp av attributet "OnboardingStatus".

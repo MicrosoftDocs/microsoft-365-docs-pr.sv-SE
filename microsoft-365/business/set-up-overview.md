@@ -27,20 +27,20 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Läs om konfigurationsstegen för Microsoft 365 Business Premium, från att prenumerera, till att lägga till en domän och användare, till att konfigurera säkerhetsprinciper och mycket mer.
-ms.openlocfilehash: 749acbfdbde92ad97b09dc720c85dd850b76c9cf
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 008a5c51698589667acc0d01649f67dab33b4c58
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579943"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245073"
 ---
 # <a name="overview-of-setup"></a>Översikt över konfiguration
 
-Titta på en kort video om konfigurationen av Microsoft 365 Business Premium.<br><br>
+Titta på en kort video om Microsoft 365 Business Premium konfiguration.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](../business-video/index.yml).
 
 De flesta konfigurationsstegen kan utföras i den guidade installationen, men de andra alternativen visas också.
 
@@ -50,7 +50,7 @@ De flesta konfigurationsstegen kan utföras i den guidade installationen, men de
 
    - **Lägg till användare.** Du kan lägga till användare på något av följande tre sätt:
         - I den [guidade installationen](set-up.md#add-users-in-the-wizard).
-        - Använd katalogsynkronisering [för att lägga till användare med hjälp](../enterprise/set-up-directory-synchronization.md) av Azure AD Connect om du har en lokal Active Directory.
+        - Använd katalogsynkronisering [för att lägga till användare med hjälp av Azure AD Anslut](../enterprise/set-up-directory-synchronization.md) om du har en lokal Active Directory.
         - Du kan också [lägga till användare](../admin/add-users/add-users.md) senare i administrationscentret.
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Steg 2: Konfigurera säkerhetsprinciper och konfigurera enheter 
 
@@ -67,32 +67,32 @@ De flesta konfigurationsstegen kan utföras i den guidade installationen, men de
 
 Läs mer om att öka [skyddet mot hot och](increase-threat-protection.md) konfigurera efterlevnadsfunktioner för att komma [igång.](set-up-compliance.md)
 
-Se även [de 10 bästa sätten att skydda din Microsoft 365 Business Premium](/office365/admin/security-and-compliance/secure-your-business-data) för en karta över metodtips.
+I de [10 bästa sätten att skydda Microsoft 365 Business Premium](/office365/admin/security-and-compliance/secure-your-business-data) finns en karta över metodtips.
 
-## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Steg 3: Konfigurera och hantera Windows 10-enheter
+## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Steg 3: Konfigurera och hantera Windows 10 enheter
 
-När du har slutfört den guidade installationen bör du skydda alla Windows 10-datorer i organisationen.
+När du har slutfört den guidade installationen bör du skydda alla Windows 10 i organisationen.
   
-- Windows 10 Pro [](pre-requisites-for-data-protection.md) är en förutsättning för Microsoft 365 Business Premium, men om du har Windows 7 Pro, Windows 8 Pro eller Windows 8.1 Pro ger prenumerationen dig rätt att uppgradera till [Windows 10 Pro.](./upgrade-to-windows-pro-creators-update.md)
-- Följ stegen i Skydda [Windows 10-datorer för att](secure-win-10-pcs.md) konfigurera principer för Windows 10-enheter.
+- Windows 10 Pro krävs för [](pre-requisites-for-data-protection.md) Microsoft 365 Business Premium, men om du har Windows 7 Pro, Windows 8 Pro eller Windows 8.1 Pro har din prenumeration rätt att uppgradera till [Windows 10 Pro.](./upgrade-to-windows-pro-creators-update.md)
+- Följ stegen i skydda [Windows 10-datorer för](secure-win-10-pcs.md) att konfigurera principer för Windows 10 enheter.
 
-När du ansluter en Windows 10-enhet till Azure AD tillämpas de principer du anger för Windows 10-datorer på den. Mer information finns i Konfigurera [Windows-enheter för Microsoft 365-användare.](set-up-windows-devices.md)
+När du ansluter Windows 10 enhet till Azure AD tillämpas de principer Windows 10 för datorer på den. Mer information finns i [Konfigurera Windows enheter för Microsoft 365 användare.](set-up-windows-devices.md)
 
-## <a name="step-4-install-microsoft-365-apps-for-business"></a>Steg 4: Installera Microsoft 365-program för företag
-- Du kan installera Office automatiskt på Windows-enheter med hjälp av [installationsguiden.](set-up.md#deploy-office-365-client-apps)
-- Låt användarna [installera Office-appar](/office365/admin/setup/install-applications) för Windows och enheter.
+## <a name="step-4-install-microsoft-365-apps-for-business"></a>Steg 4: Installera Microsoft 365-applikationer för affärsverksamhet
+- Du kan automatiskt Office i Windows-enheter med hjälp av [installationsguiden.](set-up.md#deploy-office-365-client-apps)
+- Låt användarna [installera Office appar](/office365/admin/setup/install-applications) för Windows och enheter.
      
 ## <a name="advanced"></a>Avancerat
 - **Använda Autopilot för att konfigurera nya enheter**
             
-     Du kan använda [Windows Autopilot](add-autopilot-devices-and-profile.md) till att automatiskt förkonfigurera nya **Windows** 10-enheter för en användare, men det kan vara enklare att skaffa en [partner](https://www.microsoft.com/solution-providers/search) som kan göra detta åt dig. Du kan också gå till [Microsoft Store och](https://go.microsoft.com/fwlink/?linkid=874598)be en expert på molnteknik att konfigurera nya enheter som du köper.
+     Du kan använda [Windows Autopilot](add-autopilot-devices-and-profile.md) till att automatiskt förkonfigurera nya **Windows 10-enheter** för en användare, men det kan vara enklare att få en [partner](https://www.microsoft.com/solution-providers/search) som kan göra detta åt dig. Du kan också gå [till Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598)och be en expert på molnteknik att konfigurera nya enheter som du köper.
 
 - **Åtkomst till lokala resurser**
 
-     - Om din organisation använder Windows Server Active Directory lokalt kan du konfigurera Microsoft 365 Business Premium för att skydda dina Windows 10-enheter, samtidigt som du behåller åtkomsten till lokala resurser som kräver lokal autentisering. Följ stegen i Aktivera [domän anslutna Windows 10-enheter](manage-windows-devices.md) så att de hanteras av Microsoft 365 Business Premium för att konfigurera detta. Det här är den rekommenderade metoden, och enheter i det här läget kallas för Hybrid Azure AD-anslutna enheter.
+     - Om din organisation använder Windows Server Active Directory lokalt kan du konfigurera Microsoft 365 Business Premium för att skydda dina Windows 10-enheter, samtidigt som du behåller åtkomsten till lokala resurser som kräver lokal autentisering. Följ anvisningarna i [Aktivera domän-Windows 10 enheter som ska hanteras av Microsoft 365 Business Premium](manage-windows-devices.md) konfigurera detta. Det här är den rekommenderade metoden, och enheter i det här läget kallas för Hybrid Azure AD-anslutna enheter.
 
-    - Om ditt företag har en lokal Active Directory-miljö som innehåller vissa lokala resurser (till exempel filresurser och skrivare) kan du ge dina Azure AD-anslutna enheter åtkomst till dessa resurser genom att följa stegen här: Få åtkomst till lokala resurser från en Azure AD-ansluten enhet i [Microsoft 365 Business Premium.](access-resources.md)
+    - Om ditt företag har en lokal Active Directory-enhet som innehåller vissa lokala resurser (till exempel filresurser och skrivare) kan du ge dina Azure AD-anslutna enheter åtkomst till dessa resurser genom att följa stegen här: Få åtkomst till lokala resurser från en [Azure AD-ansluten](access-resources.md)enhet i Microsoft 365 Business Premium.
 
-## <a name="see-also"></a>Se även
+## <a name="related-content"></a>Relaterat innehåll
 
-[Utbildningsvideor för Microsoft 365 Business](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 om utbildningsvideor för företag](../business-video/index.yml) (länksida)

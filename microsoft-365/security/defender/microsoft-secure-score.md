@@ -1,6 +1,6 @@
 ---
 title: Microsoft Secure Score
-description: Här beskrivs Microsoft Secure Score i Microsoft 365 Säkerhetscenter, hur du kan förbättra säkerheten och vilka säkerhetsadministratörer kan förvänta sig.
+description: Här beskrivs Microsoft Secure Score Microsoft 365 säkerhetscenter, hur du kan förbättra säkerheten och vilka säkerhetsadministratörer kan förvänta sig.
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center, improvement actions
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,20 +21,20 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 19b83fe7dd733bb8a0668039d4df2b692a398ad4
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 4a2c220cab15751671b9b38c3bb2fda3db12c9e1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570469"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245383"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure Score är ett mått på en organisations säkerhetssäkerhet, med ett högre tal som anger fler förbättringsåtgärder som vidtas. Den finns på https://security.microsoft.com/securescore Säkerhetscenter för [Microsoft 365.](overview-security-center.md)
+Microsoft Secure Score är ett mått på en organisations säkerhetssäkerhet, med ett högre tal som anger fler förbättringsåtgärder som vidtas. Den finns på Microsoft 365 https://security.microsoft.com/securescore [Säkerhetscenter.](overview-security-center.md)
 
-Om du följer rekommendationerna för Secure Score kan du skydda organisationen från hot. Från en centraliserad instrumentpanel i Microsoft 365 säkerhetscenter kan organisationer övervaka och arbeta med säkerheten för sina Microsoft 365-identiteter, appar och enheter.
+Om du följer rekommendationerna för Secure Score kan du skydda organisationen från hot. Från en centraliserad instrumentpanel i Microsoft 365 säkerhetscenter kan organisationer övervaka och arbeta med säkerheten för sina Microsoft 365 identiteter, appar och enheter.
 
 Secure Score hjälper organisationer att:  
 
@@ -44,7 +44,7 @@ Secure Score hjälper organisationer att:
 
 Organisationer får tillgång till robusta visualiseringar av mätvärden och trender, integrering med andra Microsoft-produkter, resultatjämförelse med liknande organisationer och mycket mer. Poängen kan också återspegla när lösningar från tredje part har åtgärdat rekommenderade åtgärder.
 
-![Startsida för Secure Score](../../media/secure-score/secure-score-homepage-new.png)
+![Startsida för Secure Score](../../media/secure-score/secure-score-home-page.png)
 
 ## <a name="how-it-works"></a>Så här fungerar det
 
@@ -88,7 +88,7 @@ Rekommendationer för andra säkerhetsprodukter kommer snart. Rekommendationerna
 
 ### <a name="security-defaults"></a>Standardinställningar för säkerhet
 
-Microsoft Secure Score har uppdaterat förbättringsåtgärder för att stödja säkerhetsstandarder i [Azure Active Directory,](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)som gör det enklare att skydda organisationen med förkonfigurerade säkerhetsinställningar för vanliga attacker.
+Microsoft Secure Score har uppdaterat förbättringsåtgärder för att stödja säkerhetsstandarder i [Azure Active Directory,](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)vilket gör det enklare att skydda organisationen med förkonfigurerade säkerhetsinställningar för vanliga attacker.
 
 Om du aktiverar säkerhetsstandardvärden tilldelas du fullständiga poäng för följande förbättringsåtgärder:
 
@@ -101,7 +101,7 @@ Om du aktiverar säkerhetsstandardvärden tilldelas du fullständiga poäng för
 
 ## <a name="required-permissions"></a>Behörighet som krävs
 
-För att ha behörighet att få åtkomst till Microsoft Secure Score måste du vara tilldelad en av följande roller i Azure Active Directory.
+För att ha behörighet att komma åt Microsoft Secure Score måste du tilldelas en av följande roller i Azure Active Directory.
 
 ### <a name="read-and-write-roles"></a>Läs- och skrivroller
 

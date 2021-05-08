@@ -19,36 +19,43 @@ ms.custom:
 description: Lär dig hur du uppdaterar en DNS-post (Domain Name Service) för att använda en SPF-post (Sender Policy Framework) med din anpassade domän i Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0a2c400e77c83fa61e276dee1d870835d466b5af
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 1d200c4cf17a3d42ddafca301fecbf18c249ac37
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599553"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245690"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Konfigurera SPF för att förhindra förfalskning
 
+- [Förutsättningar](#prerequisites)
+- [Skapa eller uppdatera din SPF TXT-post](#create-or-update-your-spf-txt-record)
+- [Hur hanterar man underdomäner?](#how-to-handle-subdomains)
+- [Felsökning av SPF](#troubleshooting-spf)
+
+<!--
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**Gäller för**
+**Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+-->
 
 Den här artikeln beskriver hur du uppdaterar en DNS-post (Domain Name Service) så att du kan använda e-postautentisering av Sender Policy Framework (SPF) med din anpassade domän i Office 365.
 
-Med SPF kan du validera utgående e-post som skickas från din anpassade domän. Det är ett första steg i att ställa in andra rekommenderade e-postautentiseringsmetoder DMARC och DKIM (ytterligare två e-postautentiseringsmetoder som stöds i Office 365).
+SPF *verifierar* utgående e-post som skickats från din anpassade domän (kommer från den som den säger att det är). Det är första steget till att konfigurera de fullständiga rekommenderade metoderna för e-postautentisering för SPF, [DKIM](use-dkim-to-validate-outbound-email.md) och [DMARC](use-dmarc-to-validate-email.md).
 
 ## <a name="prerequisites"></a>Förutsättningar
 
 > [!IMPORTANT]
-> Om du är **en småföretag** eller inte känner till IP-adresser eller DNS-konfiguration, ring din internetdomänregistrator (t.ex. GoDaddy, Bluehost, web.com) för att be om hjälp med DNS-konfiguration av SPF (och alla andra e-postautentiseringsmetoder). *Även*, om du inte har köpt eller inte använder en anpassad URL (med andra ord webbadressen som du och dina kunder bläddrar för att nå Office 365 slutar på **onmicrosoft.com**) har SPF ställts in för dig i Office 365 service. Inga ytterligare steg krävs i så fall. Tack för att du läser.
+> Om du är **en småföretag** eller inte känner till IP-adresser eller DNS-konfiguration, ring din internetdomänregistrator (t.ex. GoDaddy, Bluehost, web.com) och be om hjälp med *DNS-konfiguration av SPF* (och andra metoder för e-postautentisering). <p> **Om du inte använder en anpassad URL** (och URL:en som används för Office 365 slutar med **onmicrosoft.com**) har SPF redan ställts in åt dig i Office 365-tjänsten.
 
-Innan du skapar eller uppdaterar SPF TXT-posten för Office 365 i extern DNS måste du samla in information som behövs för att göra posten. Avancerade exempel och en mer detaljerad diskussion om SPF-syntax som stöds finns i [Så här fungerar SPF för att förhindra förfalskning och nätfiske i Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
+Nu börjar vi.
 
-Samla in följande information:
+SPF TXT-posten för Office 365 görs i extern DNS för anpassade domäner och underdomäner. Du behöver information för att skapa posten. Samla in följande information:
 
-- Aktuell SPF TXT-post för din anpassade domän, om en finns. Instruktioner finns i [Samla den information du behöver för att skapa DNS-poster i Office 365](../../admin/get-help-with-domains/information-for-dns-records.md).
+- SPF TXT-post för din anpassade domän, om sådan finns. Instruktioner finns i [Samla den information du behöver för att skapa DNS-poster i Office 365](../../admin/get-help-with-domains/information-for-dns-records.md).
 
 - Gå till din eller dina meddelandeserver och ta reda på de externa IP-adresserna (behövs från alla lokala meddelandeservrar). Till exempel: **131.107.2.200**.
 
@@ -67,13 +74,13 @@ Samla in följande information:
 
    |Element|Om du använder...|Vanligt för kunder?|Lägg till detta...|
    |---|---|---|---|
-   |1|Ett e-postsystem (obligatoriskt)|Vanligt. SPF-poster som startar med det här värdet.|`v=spf1`|
+   |1|Ett e-postsystem (obligatoriskt)|Vanlig. Alla SPF TXT-poster som börjar med det här värdet|`v=spf1`|
    |2|Exchange Online|Vanligt|`include:spf.protection.outlook.com`|
    |3|Endast dedikerad Exchange Online|Inte vanligt|`ip4:23.103.224.0/19` <br> `ip4:206.191.224.0/19` <br> `ip4:40.103.0.0/16` <br> `include:spf.protection.outlook.com`|
    |4|Office 365 Germany, endast Microsoft Cloud Germany|Inte vanligt|`include:spf.protection.outlook.de`|
-   |5|E-postsystem från tredje part|Inte vanligt|`include:<domain_name>` <p> Där \<domain_name\> domännamnet är av tredje parts e-postsystem.|
-   |6|Lokala e-postsystem. Till exempel Exchange Online Protection plus ett annat e-postsystem.|Inte vanligt|Använd något av följande för varje extra e-postsystem: <p> `ip4:<IP_address>` <br> `ip6:<IP_address>` <br> `include:<domain_name>` <p> \<IP_address\> och \<domain_name\> motsvarar IP-adressen och domänen för det andra e-postsystemet som skickar e-post på din domän.|
-   |7|Ett e-postsystem (obligatoriskt)|Vanligt. Alla SPF TXT-poster som slutar med det här värdet.|`<enforcement rule>` <p> Det här kan vara ett av flera värden. Vi rekommenderar värdet `-all`.|
+   |5|E-postsystem från tredje part|Inte vanligt|`include:<domain_name>` <p> \<domain_name\> är domänen för e-postsystemet från tredje part.|
+   |6|Lokalt e-postsystem. Till exempel Exchange Online Protection och ett annat e-postsystem.|Inte vanligt|Använd något av följande för varje extra e-postsystem: <p> `ip4:<IP_address>` <br> `ip6:<IP_address>` <br> `include:<domain_name>` <p> \<IP_address\> och \<domain_name\> motsvarar IP-adressen och domänen för det andra e-postsystemet som skickar e-post på din domän.|
+   |7|Ett e-postsystem (obligatoriskt)|Vanlig. Alla SPF TXT-poster som slutar med det här värdet.|`<enforcement rule>` <p> Det här kan vara ett av flera värden. Vi rekommenderar värdet `-all`.|
    |
 
 2. Om du inte redan har gjort det, skapa din SPF TXT-post genom att använda syntaxen från tabellen.
@@ -84,9 +91,9 @@ Samla in följande information:
    v=spf1 include:spf.protection.outlook.com -all
    ```
 
-   Det här är den vanligaste SPF TXT-posten. Den här posten fungerar för i stort sett alla, oavsett om ditt Microsoft-datacenter är i USA eller i Europa (inklusive Tyskland) eller på någon annan plats.
+   **Exemplet ovan är den vanligaste SPF TXT-posten**. Den här posten fungerar för i stort sett alla, oavsett om ditt Microsoft-datacenter är i USA eller i Europa (inklusive Tyskland) eller på någon annan plats.
 
-   Men om du har köpt Office 365 Germany, som ingår i Microsoft Cloud Germany, bör du använda instruktionen include från rad 4 i stället för rad 2. Om du till exempel bara använder Office 365 Germany som värd, det vill säga att du inte har några lokala e-postservrar, skulle din SPF TXT-post innehålla raderna 1, 4 och 7 och se ut så här:
+   Men om du har köpt Office 365 Germany, som ingår i Microsoft Cloud Germany, bör du använda åtgärdssatsen för omfatta från rad 4 i stället för rad 2. Om du till exempel bara använder Office 365 Germany som värd, det vill säga att du inte har några lokala e-postservrar, skulle din SPF TXT-post innehålla raderna 1, 4 och 7 och se ut så här:
 
    ```text
    v=spf1 include:spf.protection.outlook.de -all
@@ -94,15 +101,15 @@ Samla in följande information:
 
    Om du redan har distribuerats i Office 365 och har konfigurerat dina SPF TXT-poster för din anpassade domän och migrerar till Office 365 Germany måste du uppdatera din SPF TXT-post. Det gör du genom att ändra `include:spf.protection.outlook.com` till `include:spf.protection.outlook.de`.
 
-3. När du har skapat din SPF TXT-post måste du uppdatera posten i DNS. Du kan bara ha en SPF TXT-post för en domän. Om det redan finns en SPF TXT-post ska du inte lägga till en ny post utan i stället uppdatera den befintliga posten. Gå till [Skapa DNS-poster för Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) och klicka på länken för din DNS-värd.
+3. När du har skapat din SPF TXT-post måste du uppdatera posten i DNS. **Du kan bara ha en SPF TXT-post för en domän.** Om det redan finns en SPF TXT-post ska du inte lägga till en ny post utan i stället uppdatera den befintliga posten. Gå till [Skapa DNS-poster för Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) och välj länken för din DNS-värd.
 
 4. Testa din SPF TXT-post.
 
 ## <a name="how-to-handle-subdomains"></a>Hur hanterar man underdomäner?
 
-Det är viktigt att notera att *du måste skapa en separat post för varje underdomän eftersom underdomäner inte ärver SPF-posten för deras toppnivå domän*.
+Det är viktigt att notera att *du måste skapa en separat post för varje underdomän eftersom underdomäner inte ärver SPF-posten från toppnivådomänen*.
 
-En ytterligare wildcard SPF-post (`*.`) krävs för varje domän och underdomän för att hindra angripare från att skicka e-post som påstår sig vara från icke-existerande domäner. Till exempel:
+En SPF-post med jokertecken (`*.`) krävs för varje domän och underdomän för att förhindra angripare från att skicka e-post som påstår sig vara från icke-existerande underdomäner. Till exempel:
 
 ```text
 *.subdomain.contoso.com. IN TXT "v=spf1 -all"
@@ -133,10 +140,14 @@ Om du har konfigurerat e-post för Office 365 så har du redan lagt till Microso
 
 Avancerade exempel och en mer detaljerad diskussion om SPF-syntax som stöds, förfalskning, felsökning och hur Office 365 stöder SPF finns i [Så här fungerar SPF för att förhindra förfalskning och nätfiske i Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
 
-## <a name="links-to-configure-dkim-and-dmarc"></a>Länkar för att konfigurera DKIM och DMARC
+## <a name="next-steps-dkim-and-dmarc"></a>Nästa steg: DKIM och DMARC
 
  SPF har utformats för att hjälpa till att förhindra förfalskning men det finns förfalskningsmetoder som SPF inte skyddar mot. För att skydda mot dessa ska du, efter att ha konfigurerat SPF, även konfigurera DKIM och DMARC för Office 365.
 
 [DKIM](use-dkim-to-validate-outbound-email.md) e-postautentiseringens mål är att bevisa att innehållet i e-postmeddelandet inte har manipulerats.
 
 [DMARC](use-dmarc-to-validate-email.md) E-postautentiseringens mål är att se till att SPF- och DKIM-information matchar Från-adressen.
+
+ Avancerade exempel och en mer detaljerad diskussion om SPF-syntax som stöds finns i [Så här fungerar SPF för att förhindra förfalskning och nätfiske i Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
+
+*Välj Den här sidan under Feedback om du har feedback om den här dokumentationen.*

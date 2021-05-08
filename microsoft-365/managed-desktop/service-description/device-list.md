@@ -1,6 +1,6 @@
 ---
-title: Microsoft Managed Desktop-enheter
-description: I den här artikeln finns en lista över specifikationer för enheter som godkänts för Microsoft Managed Desktop.
+title: Microsoft Hanterat skrivbord enheter
+description: I den här artikeln finns en lista över specifikationer för enheter som Microsoft Hanterat skrivbord.
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -8,30 +8,35 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 59609da65701112ced43b73b67650881bc81be8a
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: 636d32f47c4fd9fdd5c0409a4ebbc2d9e79a166d
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218670"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245942"
 ---
-# <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop-enheter 
+# <a name="microsoft-managed-desktop-devices"></a>Microsoft Hanterat skrivbord enheter
 
-Microsoft Managed Desktop utvärderar regelbundet enheter som ska ingå i tjänsten. I den här artikeln listas de specifika enheter som stöds för närvarande. En mer allmän redogörelse för enhetskrav finns i [Enhetskrav.](device-requirements.md)
+> [!NOTE]
+> Microsoft Hanterat skrivbord kräver inte längre att enhetsmodeller finns från den här listan. Den 3 maj 2021 bör alla enheter från en godkänd tillverkare uppfylla våra publicerade maskin- och programvarukrav. Du kan fortsätta att använda enheter i den här listan på ett enkelt sätt. Du hittar fler enheter som rekommenderas för Microsoft Hanterat skrivbord på [webbplatsen för Windows 10 Pro för företag.](https://www.microsoft.com/windowsforbusiness/view-all-devices) På webbplatsen kan du visa de rekommenderade enheterna genom att **expandera Funktioner** i **området Filtrera efter** och sedan välja **Microsoft Hanterat skrivbord**. När du planerar att registrera en viss enhetsmodell i tjänsten för första gången bör du testa ett exempel för att säkerställa att den ger den användarupplevelse du förväntar dig. Mer information finns i [Validera nya enheter](../get-started/validate-device.md).
 
-Mer information om Microsoft Managed Desktop finns i [Dokumentation och resurser för Microsoft Managed Desktop.](../index.yml) 
+Microsoft Hanterat skrivbord regelbundet utvärdera enheter som ska ingå i tjänsten. I den här artikeln listas de specifika enheter som stöds för närvarande. En mer allmän redogörelse för enhetskrav finns i [Enhetskrav.](device-requirements.md)
+
+Mer information om Microsoft Hanterat skrivbord finns i [Microsoft Hanterat skrivbord och resurser.](../index.yml) 
+
+[Välja och validera nya enheter](../get-started/validate-device.md)
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-För att registreras i Microsoft Managed Desktop måste en enhet vara någon av följande modeller och uppfylla eller överskrida de angivna specifikationerna för RAM, processorfamilj och diskutrymme. 
+För att registreras i Microsoft Hanterat skrivbord måste en enhet vara någon av följande modeller och uppfylla eller överskrida de angivna specifikationerna för RAM, processorfamilj och diskutrymme. 
 
-Länkarna till enheterna här är endast till för referens. Om du vill beställa enheter kan du samarbeta med dina kommersiella kanalkontakter och se till att du väljer rätt konfigurationer. I den här tabellen *är arkiveringsdatumet* det datum då dessa modeller kommer att omfattas av en kortare livscykel för Microsoft Managed Desktop-tjänsten. Alla sådana enheter som hanteras efter detta datum får inte fullständig support under tre år från Microsoft Managed Desktop. Arkiverade enheter visas också på arkiverade [enheter i Microsoft Managed Desktop.](archived-device-list.md) *Retirement date* is the date on which this model will no longer be supported by Microsoft Managed Desktop at alls. På det datumet kommer alla registrerade enheter i den här modellen att tas bort från Microsoft Managed Desktop, oavsett när de registrerades.
+Länkarna till enheterna här är endast till för referens. Om du vill beställa enheter kan du samarbeta med dina kommersiella kanalkontakter och se till att du väljer rätt konfigurationer. I den här tabellen *är arkiveringsdatumet* det datum då dessa modeller blir kortare Microsoft Hanterat skrivbord tjänstens livscykel. Alla sådana enheter som förs in efter detta datum får inte fullständig supportperiod på tre år från Microsoft Hanterat skrivbord. Arkiverade enheter visas också på Microsoft Hanterat skrivbord [arkiverade enheter.](archived-device-list.md) *Retirement date* is the date on which this model will no longer be supported by Microsoft Hanterat skrivbord alls. På det datumet tas alla registrerade enheter i den här modellen bort från Microsoft Hanterat skrivbord, oavsett när de registrerades.
 
 >[!NOTE]
 >Enheter kan läggas till i den här tabellen när som helst, men vi kommer att tillhandahålla 90 dagars förvarning för alla ändringar som påverkar arkivet eller retirement date. De senast tillagda enheterna är markerade med **\*** .
 
 
-## <a name="microsoft-managed-desktop-devices"></a>Microsoft-hanterade enheter
+## <a name="microsoft-managed-desktop-devices"></a>Microsoft Hanterat skrivbord Enheter
 
 ### <a name="dell"></a>Dell
 
@@ -69,20 +74,20 @@ Länkarna till enheterna här är endast till för referens. Om du vill beställ
 |----------|----------------|---------------------------|----------------|--------------------|
 | [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 / 8 GB RAM | Ingen | 21 maj 2022 | 21 maj 2027 |
 | [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB / Intel Core M3 / 8 GB RAM | Ingen | 21 maj 2022 | 21 maj 2027 |
-| [Surface Laptop Go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB / Intel i5 / 8 GB RAM | Ingen | 12 oktober 2022 | 12 oktober 2025 |
+| [Surface Laptop Gå till](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB / Intel i5 / 8 GB RAM | Ingen | 12 oktober 2022 | 12 oktober 2025 |
 | [Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB / Intel i5 / 8 GB RAM | Ingen | 22 oktober 2021 | 22 oktober 2024 |
 | [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB / Intel i5 / 8 GB RAM | Ingen | 22 oktober 2021 | 22 oktober 2024 |
 | **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 GB / Intel i5 / 8 GB RAM | Ingen | 15 januari 2022 | 15 januari 2025 |
 
 Enheten måste dessutom uppfylla följande villkor:     
 
-- Om en viss SKU finns med i enhetskraven kontrollerar du att du använder den när du beställer. Det säkerställer att enheter uppfyller programvarukraven för Microsoft Managed Desktop. 
-- Windows-körningen har inte slutförts.
-- Registreras med Microsoft Managed Desktop med funktionen [Enhetsregistrering](../get-started/register-devices-self.md)
+- Om en viss SKU finns med i enhetskraven kontrollerar du att du använder den när du beställer. Det säkerställer att enheter uppfyller Microsoft Hanterat skrivbord programvarukraven. 
+- Inte har slutfört Windows första körningen.
+- Registreras med Microsoft Hanterat skrivbord med hjälp [av funktionen Enhetsregistrering](../get-started/register-devices-self.md)
 
 >[!NOTE]
 >Enheter med en 2,0 GHz-processor eller snabbare processor ger en mycket bättre upplevelse för användare som är inblandade i dessa aktiviteter:
->- Använda videokonferenser med Teams. Mer [information finns i Maskinvarukrav för Microsoft Teams.](/microsoftteams/hardware-requirements-for-the-teams-app)
+>- Använda videokonferenser med Teams. Se [Maskinvarukrav för Microsoft Teams](/microsoftteams/hardware-requirements-for-the-teams-app) mer information.
 >-  Använda en enhet för flera olika arbetsbelastningar.
 >- Använda flera bildskärmar.
 

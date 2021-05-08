@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: edf809c5fbc257e1dacafeed931da1a2d1471f4a
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 7853c6c535a9b4daf9f29a1125c805c29ca6f93f
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592090"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245918"
 ---
 # <a name="the-action-center"></a>Åtgärdscentret
 
@@ -42,7 +42,7 @@ ms.locfileid: "51592090"
 - Visa en granskningslogg över redan godkända åtgärdsåtgärder. och
 - Granska slutförda åtgärder.
 
-Ditt team för säkerhetsåtgärder kan fungera effektivare, eftersom Åtgärdscenter ger en omfattande vy av Microsoft 365 Defender på jobbet.
+Ditt team för säkerhetsåtgärder kan fungera effektivare, eftersom Åtgärdscenter ger en omfattande vy av Microsoft 365 Defender på arbetet.
 
 ## <a name="a-new-unified-action-center"></a>Ett nytt, enhetligt åtgärdscenter
 
@@ -51,7 +51,7 @@ Vi är glada att kunna presentera ett nytt, enhetligt åtgärdscenter [https://s
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Enhetligt åtgärdscenter i Microsoft 365 Defender":::
 
 I det förbättrade åtgärdscentret visas åtgärder för väntande och slutförda åtgärder för dina enheter, e-& och samarbetsinnehåll och identiteter på en plats.
-- Om du tidigare använde Säkerhets- och efterlevnadscenter & för Office 365 () ( ) kan du prova det nya, enhetliga åtgärdscentret i Säkerhetscenter för [https://protection.office.com](https://protection.office.com) Microsoft 365 ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
+- Om du tidigare har använt säkerhets- Office 365 Säkerhets- & ( ) kan du prova det nya, enhetliga åtgärdscentret i [https://protection.office.com](https://protection.office.com) Microsoft 365 säkerhetscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
 - Om du använder Åtgärdscenter i Microsoft Defender Säkerhetscenter () kan du prova det nya, enhetliga åtgärdscentret i [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) Microsoft 365 säkerhetscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
 - Om du redan använder Microsoft 365 Säkerhetscenter ( ) ser du [https://security.microsoft.com](https://security.microsoft.com) flera förbättringar i Åtgärdscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
 
@@ -87,7 +87,7 @@ Du kan anpassa, sortera, filtrera och exportera data i Åtgärdscenter.
 - Välj de kolumner som du vill visa.
 - Ange hur många objekt som ska ingå på varje sida med data.
 - Använd filter för att visa endast de objekt som du vill se.
-- Välj **Exportera** om du vill exportera resultaten till en CSV-fil.
+- Välj **Exportera** om du vill exportera resultaten till en .csv fil.
 
 ## <a name="actions-tracked-in-the-action-center"></a>Åtgärder spårade i Åtgärdscenter
 
@@ -103,7 +103,7 @@ Alla åtgärder, oavsett om de väntar på godkännande eller redan har vidtagit
 - Kör antivirusgenomsökning 
 - Stoppa och sätta i karantän 
 
-Förutom åtgärder som vidtas automatiskt som ett resultat [](m365d-autoir.md)av automatiska undersökningar följer åtgärdscentret även åtgärder som säkerhetsgruppen har vidtagit för att hantera identifierade hot och åtgärder som har vidtagits som ett resultat av skyddsfunktioner för hot i Microsoft 365 Defender. Mer information om automatiska och manuella åtgärdsåtgärder finns [i Åtgärder.](m365d-remediation-actions.md)
+Förutom åtgärder som vidtas automatiskt genom automatiska undersökningar [](m365d-autoir.md)följer åtgärdscentret även åtgärder som säkerhetsgruppen har vidtagit för att hantera identifierade hot och åtgärder som har vidtagits som ett resultat av skyddsfunktioner i Microsoft 365 Defender. Mer information om automatiska och manuella åtgärdsåtgärder finns [i Åtgärder.](m365d-remediation-actions.md)
 
 ## <a name="viewing-action-source-details"></a>Visa information om åtgärdskälla
 
@@ -126,11 +126,11 @@ Om du vill utföra uppgifter, till exempel godkänna eller avvisa väntande åtg
 
 |Åtgärdsåtgärd |Roller och behörigheter som krävs |
 |--|----|
-|Microsoft Defender för åtgärd av slutpunkt (enheter) |**Säkerhetsadministratörsroll** som har tilldelats i antingen Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) eller administrationscentret för Microsoft 365 [https://admin.microsoft.com](https://admin.microsoft.com) ()<br/>--- eller ---<br/>**Rollen Aktiva åtgärdsåtgärder som** tilldelats i Microsoft Defender för Slutpunkt <br/> <br/> Mer information finns i följande resurser: <br/>- [Administratörsrollbehörigheter i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Skapa och hantera roller för rollbaserad åtkomstkontroll (Microsoft Defender för slutpunkt)](../defender-endpoint/user-roles.md)  |
-|Åtgärder i Microsoft Defender för Office 365 (Office-innehåll och e-post)  |**Säkerhetsadministratörsroll** som har tilldelats i antingen Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) eller administrationscentret för Microsoft 365 [https://admin.microsoft.com](https://admin.microsoft.com) ()<br/>--- och --- <br/>**Rollen Sök och rensning** tilldelad rollen Säkerhets- & Efterlevnadscenter ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**VIKTIGT:** Om du  bara har tilldelats rollen Säkerhetsadministratör i Efterlevnadscenter för Office 365 & ( ) kan du inte komma åt åtgärdscenter eller [https://protection.office.com](https://protection.office.com) Microsoft 365 Defender-funktioner. Du måste ha rollen **Säkerhetsadministratör** tilldelad i Azure Active Directory eller administrationscentret för Microsoft 365. <br/><br/>Mer information finns i följande resurser: <br/>- [Administratörsrollbehörigheter i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Behörigheter i Säkerhets- & Säkerhets- och efterlevnadscenter](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender för åtgärd av slutpunkt (enheter) |**Säkerhetsadministratörsroll** som tilldelats i Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) eller administrationscentret Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- eller ---<br/>**Rollen Aktiva åtgärdsåtgärder som** tilldelats i Microsoft Defender för Slutpunkt <br/> <br/> Mer information finns i följande resurser: <br/>- [Behörigheter för administratörsroll i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Skapa och hantera roller för rollbaserad åtkomstkontroll (Microsoft Defender för slutpunkt)](../defender-endpoint/user-roles.md)  |
+|Microsoft Defender för Office 365 (för Office och e-post)  |**Säkerhetsadministratörsroll** som tilldelats i Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) eller administrationscentret Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- och --- <br/>**Rollen Sök och rensning** tilldelad rollen Säkerhets- & Efterlevnadscenter ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**VIKTIGT:** Om du  bara har tilldelats rollen säkerhetsadministratör i kompatibilitetscentret för Office 365 & ( ) kan du inte komma åt Åtgärdscenter eller [https://protection.office.com](https://protection.office.com) Microsoft 365 Defender. Du måste ha rollen **Säkerhetsadministratör** tilldelad i Azure Active Directory eller Microsoft 365 administrationscentret. <br/><br/>Mer information finns i följande resurser: <br/>- [Behörigheter för administratörsroll i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Behörigheter i Säkerhets- & Säkerhets- och efterlevnadscenter](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
-> Användare som har rollen **Global administratör** tilldelad i Azure Active Directory kan godkänna eller avvisa eventuella väntande åtgärder i åtgärdscentret. Men det bästa är att organisationen bör begränsa antalet personer som har tilldelats **rollen global** administratör. Vi rekommenderar att du **använder rollerna**  **Säkerhetsadministratör,** Aktiva åtgärder och Sök och rensning som visas i föregående tabell för behörigheter i Åtgärdscenter.
+> Användare som har **rollen Global administratör** tilldelad i Azure Active Directory godkänna eller avvisa eventuella väntande åtgärder i Åtgärdscenter. Men det bästa är att organisationen bör begränsa antalet personer som har tilldelats **rollen global** administratör. Vi rekommenderar att du **använder rollerna**  **Säkerhetsadministratör,** Aktiva åtgärder och Sök och rensning som visas i föregående tabell för behörigheter i Åtgärdscenter.
 
 ## <a name="next-step"></a>Nästa steg 
 

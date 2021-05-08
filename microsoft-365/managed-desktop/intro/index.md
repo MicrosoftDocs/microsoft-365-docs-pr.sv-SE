@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 73ce64bd83b475cc7cc0f78b6ac4a06683264144
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 36745a0aafb70e7921c19db7c28984dcca1e2a63
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445560"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245534"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Vad är Microsoft Hanterat skrivbord?
 
@@ -57,7 +57,7 @@ Din IT-administratör drar nytta av de här funktionerna:
 ## <a name="device-management"></a>Enhetshantering
 Microsoft Hanterat skrivbord tar på sig bördan att hantera registrerade enheter och Microsoft-programvaran de använder.
 
-- **Maskin vara:** i stället för IT-avdelningen som använder sig av Research och test produkter (och deras driv rutiner), testas noga av Microsoft Hanterat skrivbord, vilket resulterar i en granskad [listan över enheter som](../service-description/device-list.md) uppfylla prestanda kraven på företags nivå och garanterat fungerar med tjänsten. Du kan välja att skaffa enheter själv (eller arbeta med en partner) eller att återanvända enheter du redan har, förutsatt att de finns med på listan över godkända enheter. Att registrera enheter är enkelt och tydligt, och innan de distribueras kan du också [anpassa](../working-with-managed-desktop/config-setting-overview.md) vissa aspekter av enhetsupplevelsen för användarna.
+- **Maskinvara:** I stället för att IT-avdelningen ska behöva göra efterforskningar och ta reda på om en enhet är kompatibel med tjänsten har vi tillhandahållit specifika krav för maskinvara och programvara, verktyg och processer för att effektivisera urvalet så att du kan välja enheter på ett enkelt sätt. Du hittar rekommenderade enheter genom att filtrera Microsoft Hanterat skrivbord på webbplatsen för [Köp företagsenheter för Windows 10 Pro](https://www.microsoft.com/windowsforbusiness/view-all-devices). Du kan välja att skaffa enheter själv (eller arbeta med en partner) eller att återanvända enheter du redan har, förutsatt att de finns med på listan över godkända enheter. Att registrera enheter är enkelt och tydligt, och innan de distribueras kan du också [anpassa](../working-with-managed-desktop/config-setting-overview.md) vissa aspekter av enhetsupplevelsen för användarna.
 
 - **Uppdateringar:** Microsoft Hanterat skrivbord konfigurerar och hanterar alla aspekter av [distributionsgrupper](../service-description/updates.md) för kvalitets- och funktionsuppdateringar för Windows 10, drivrutiner, inbyggd programvara, antivirusdefinitioner och uppdateringar för Microsoft 365-applikationer för företag. Detta inkluderar omfattande tester och verifiering av alla uppdateringar för att säkerställa att registrerade enheter alltid är uppdaterade och för att minimera störningar, vilket frigör din IT-avdelning från den pågående uppgiften.
 
@@ -66,7 +66,7 @@ Microsoft Hanterat skrivbord tar på sig bördan att hantera registrerade enhete
 
 ## <a name="device-monitoring"></a>Enhets övervakning
 
-Vi hjälper dig att bibehålla säkerheten för dina enheter med ett dedikerat säkerhets åtgärds Center som övervakar dina enheter och använder data från unika hot som Microsoft analyserar varje månad. Dessa säkerhetsfunktioner är inbyggda i stället för att läggas till senare.
+Vi hjälper dig att bibehålla säkerheten för dina enheter med ett dedikerat center för säkerhetsåtgärder som övervakar dina enheter och använder data från unika hot som Microsoft analyserar varje månad. Säkerhetsfunktionerna ingår i stället för att läggas till senare.
 
 Vi övervakar också enhetens hälsa och ger dig insikter om enhetens prestanda. Läs mer i [Microsoft Hanterat skrivbord operationer och övervakning](../service-description/operations-and-monitoring.md).
 
@@ -92,7 +92,7 @@ Om Microsoft Hanterat skrivbord verkar rätt för din organisation kan du fördj
 - [Förbereda lokala resurser till gång för Microsoft Hanterat skrivbord](../get-ready/authentication.md)
 - [Förbereda mappade enheter för Microsoft Hanterat skrivbord](../get-ready/mapped-drives.md)
 - [Förbereda certifikat och nätverks profiler för Microsoft Hanterat skrivbord](../get-ready/certs-wifi-lan.md)
-- [Appar på Microsoft Hanterat skrivbord](../get-ready/apps.md)
+- [Appar i Microsoft Hanterat skrivbord](../get-ready/apps.md)
 
 **Kom igång** När du är klar med registreringen hittar du anvisningar i det här avsnittet för att ansluta till tjänsten, skaffa och konfigurera enheter, förbereda användarna och distribuera apparna.
 

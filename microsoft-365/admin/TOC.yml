@@ -107,16 +107,30 @@
               href: create-groups/manage-guest-access-in-groups.md
             - name: Ändra ett användarnamn och en e-postadress
               href: add-users/change-a-user-name-and-email-address.md
-            - name: Ta bort en tidigare anställd
-              href: add-users/remove-former-employee.md
-            - name: Få åtkomst till och säkerhetskopiera en tidigare anställds användardata.
-              href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
             - name: Återställa en användare
               href: add-users/restore-user.md
             - name: Skapa en mall för att lägga till användare
               href: add-users/create-and-use-a-template-to-add-users.md
             - name: Uppgradera användare till de senaste apparna
               href: setup/upgrade-users-to-latest-office-client.md
+        - name: Ta bort en tidigare anställd
+          items:
+            - name: Översikt
+              href: add-users/remove-former-employee.md
+            - name: Steg 1. Hindra en anställd från att logga in och blockera åtkomst till Microsoft 365-tjänster
+              href: add-users/remove-former-employee-step-1.md
+            - name: Steg 2. Spara innehållet i en tidigare anställds postlåda
+              href: add-users/remove-former-employee-step-2.md
+            - name: Steg 3. Vidarebefordra en före detta anställds e-post till en annan anställd eller konvertera till en delad postlåda
+              href: add-users/remove-former-employee-step-3.md
+            - name: Steg 4. Ge en annan anställd tillgång till OneDrive- och Outlook-data
+              href: add-users/remove-former-employee-step-4.md
+            - name: Steg 5. Rensa och blockera en tidigare anställds mobilenhet
+              href: add-users/remove-former-employee-step-5.md
+            - name: Steg 6. Ta bort och radera Microsoft 365-licensen från en tidigare anställd
+              href: add-users/remove-former-employee-step-6.md
+            - name: Steg 7. Ta bort en tidigare anställds användarkonto
+              href: add-users/remove-former-employee-step-7.md
         - name: Grupper
           items:
             - name: Översikt av grupper

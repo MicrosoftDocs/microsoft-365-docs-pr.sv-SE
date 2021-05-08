@@ -20,12 +20,12 @@ ms.custom:
 description: Lär dig hur du använder DomainKeys identifierad e-post (DKIM) med Microsoft 365 för att säkerställa att meddelanden som skickas från din anpassade domän är betrodda av mål-e-postsystemet.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5b5122984969113ec0c0533952ea3bf18bff5e5c
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 1fc811fb513935645fa596c5a9d2e3e552b50324
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592114"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245366"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Använda DKIM för att validera utgående e-post som skickas från din anpassade domän
 
@@ -36,25 +36,7 @@ ms.locfileid: "51592114"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
- **Sammanfattning:** I den här artikeln beskrivs hur du använder DomainKeys Identified Mail (DKIM) med Microsoft 365 för att säkerställa att mål-e-postsystemen litar på utgående meddelanden som skickas från din anpassade domän.
-
-Du bör använda DKIM tillsammans med SPF och DMARC för att förhindra att förfalskare skickar meddelanden som ser ut som att de kommer från din domän. Med DKIM kan du lägga till en digital signatur i utgående e-postmeddelanden i meddelandehuvudet. Det kan vara komplicerat, men det är det faktiskt inte. När du konfigurerar DKIM verifierar du att din domän ska kopplas till ett e-postmeddelande med hjälp av krypterad autentisering. E-postsystem som får e-post från din domän använder denna digitala signatur för att fastställa om inkommande e-post som tas emot är legitim.
-
-I stort sett använder du en privat nyckel för att kryptera huvudet i domänens utgående e-post. Du publicerar en offentlig nyckel i din domäns DNS-poster som tar emot servrar som sedan kan användas för att avkoda signaturen. De använder en offentlig nyckel för att kontrollera att de verkligen kommer från dig och att de inte kommer från någon som *förfalskar* din domän.
-
-Microsoft 365 konfigurerar automatiskt DKIM för dess ursprungliga ”onmicrosoft.com”-domäner. Det innebär att du inte behöver göra något för att konfigurera DKIM för alla inledande domännamn (t. ex. litware.onmicrosoft.com). Mer information om domäner finns i [Vanliga frågor och svar om domäner](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain).
-
-Du kan också välja att inte göra något med DKIM för din anpassade domän. Om du inte konfigurerar DKIM för din anpassade domän skapar Microsoft 365 ett privat och offentligt nyckelpar, aktiverar DKIM-signering och konfigurerar sedan standardprincipen för Microsoft 365 för din anpassade domän. Även om det är tillräcklig täckning för de flesta kunder ska du manuellt konfigurera DKIM för din anpassade domän i följande fall:
-
-- Du har fler än en anpassad domän i Microsoft 365
-
-- Du ska även konfigurera DMARC (rekommenderas)
-
-- Du vill ha kontroll över din privata nyckel
-
-- Du vill anpassa dina CNAME-poster
-
-- Du vill konfigurera DKIM-nycklar för e-post som kommer från en domän från tredje part, t. ex. om du använder ett massutskick från tredje part.
+ Den här artikeln innehåller steg för att använda DomainKeys Identified Mail (DKIM) med Microsoft 365 för att säkerställa att mål-e-postsystemen litar på utgående meddelanden som skickas från din anpassade domän.
 
 I den här artikeln:
 
@@ -62,7 +44,7 @@ I den här artikeln:
 
 - [Steg för att manuellt uppgradera dina 1024-bitars nycklar till 2048-bitars DKIM-krypteringsnycklar](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
 
-- [Steg du behöver göra för att konfigurera DKIM manuellt](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
+- [Steg för att konfigurera DKIM manuellt](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
 
 - [Steg för att konfigurera DKIM för fler än en anpassad domän](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
 
@@ -74,19 +56,49 @@ I den här artikeln:
 
 - [Nästa steg: När du har konfigurerat DKIM för Microsoft 365](use-dkim-to-validate-outbound-email.md#DKIMNextSteps)
 
+> [!NOTE]
+> Microsoft 365 konfigurerar automatiskt DKIM för dess ursprungliga ”onmicrosoft.com”-domäner. Det innebär att du inte behöver göra något för att konfigurera DKIM för alla inledande domännamn (t. ex. litware.onmicrosoft.com). Mer information om domäner finns i [Vanliga frågor och svar om domäner](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain).
+
+DKIM är en av tre autentiseringsmetoder (SPF, DKIM och DMARC) som hjälper till att förhindra förfalskning av meddelanden som ska se ut som att de kommer från din domän.
+
+Med DKIM kan du lägga till en digital signatur i utgående e-postmeddelanden i meddelanderubriken. När du konfigurerar DKIM auktoriserar du domänen att associera, eller signera, dess namn till ett e-postmeddelande med hjälp av krypterad autentisering. E-postsystem som får e-post från din domän kan använda denna digitala signatur för att fastställe om inkommande e-post är legitim.
+
+Enkelt sagt krypterar en privat nyckel rubriken i utgående e-postmeddelanden från en domän. Den offentliga nyckeln publiceras i domänens DNS-poster och mottagande servrar kan använda den nyckeln för att avkoda signaturen. DKIM-verifiering hjälper de mottagande servrarna att bekräfta att e-posten verkligen kommer från din domän och inte från någon som *förfalskar* din domän.
+
+> [!TIP]
+>Du kan även välja att inte göra någonting med DKIM för din anpassade domän. Om du inte konfigurerar DKIM för din anpassade domän skapar Microsoft 365 ett privat och offentligt nyckelpar, aktiverar DKIM-signering och konfigurerar sedan standardprincipen för Microsoft 365 för din anpassade domän.
+
+ Den inbyggda DKIM-konfigurationen för Microsoft 365 är tillräcklig täckning för de flesta kunder. Men du bör manuellt konfigurera DKIM för din anpassade domän i följande fall:
+
+- Du har fler än en anpassad domän i Microsoft 365
+
+- Du ska även konfigurera DMARC (**rekommenderas**)
+
+- Du vill ha kontroll över din privata nyckel
+
+- Du vill anpassa dina CNAME-poster
+
+- Du vill konfigurera DKIM-nycklar för e-post som kommer från en domän från tredje part, t. ex. om du använder ett massutskick från tredje part.
+
+
 ## <a name="how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing"></a>Hur DKIM fungerar bättre än enbart SPF för att förhindra skadlig förfalskning
 <a name="HowDKIMWorks"> </a>
 
-SPF lägger till information i ett meddelandekuvert, men DKIM krypterar faktiskt en signatur i meddelandehuvudet. När du vidarebefordrar ett meddelande kan delar av meddelandets kuvert vara rensade av vidarebefordringsservern. Eftersom den digitala signaturen ligger kvar i e-postmeddelandet eftersom den är en del av e-postmeddelandets huvud fungerar DKIM även när ett meddelande har vidarebefordrats enligt följande exempel.
+SPF lägger till information till ett meddelandekuvert, men DKIM *krypterar* en signatur i meddelanderubriken. När du vidarebefordrar ett meddelande kan delar av meddelandets kuvert vara rensade av vidarebefordringsservern. Eftersom den digitala signaturen ligger kvar i e-postmeddelandet eftersom den är en del av e-postmeddelandets huvud fungerar DKIM även när ett meddelande har vidarebefordrats enligt följande exempel.
 
 ![Diagram som visar ett vidarebefordrat meddelande som skickar DKIM-autentiseringen där SPF-kontrollen misslyckades](../../media/28f93b4c-97e7-4309-acc4-fd0d2e0e3377.jpg)
 
-Om du bara hade publicerat en SPF TXT-post för domänen i det här exemplet skulle mottagarens e-postserver ha markerat e-postmeddelandet som skräppost och genererat ett falskt positivt resultat. Om du lägger till DKIM i det här scenariot minskas falska positiva skräppostrapporter. Eftersom DKIM använder offentlig nyckelkryptering för att autentisera och inte bara IP-adresser anses DKIM vara en mycket starkare autentiseringsmetod än SPF. Vi rekommenderar att du använder både SPF och DKIM, och även DMARC i din distribution.
+Om du bara hade publicerat en SPF TXT-post för domänen i det här exemplet skulle mottagarens e-postserver ha markerat e-postmeddelandet som skräppost och genererat ett falskt positivt resultat. **Tillägget av DKIM i det här scenariot minskar *falska positiva* rapporteringar av skräppost.** Eftersom DKIM använder offentlig nyckelkryptering för att autentisera och inte bara IP-adresser anses DKIM vara en mycket starkare autentiseringsmetod än SPF. Vi rekommenderar att du använder både SPF och DKIM, och även DMARC i din distribution.
 
-Nitty Gritty: DKIM använder en privat nyckel för att infoga en krypterad signatur i meddelandehuvudena. Signeringsdomänen, eller den utgående domänen, infogas som värdet för fältet **d =** i huvudet. Den verifierade domänen, eller mottagarens domän använder sedan fältet **d=** för att leta upp den offentliga nyckeln från DNS och autentisera meddelandet. Om meddelandet har bekräftats godkänns DKIM-kontrollen.
+> [!TIP]
+> DKIM använder en privat nyckel för att infoga en krypterad signatur i meddelanderubrikerna. Signeringsdomänen, eller den utgående domänen, infogas som värdet för fältet **d =** i rubriken. Den verifierande domänen, eller mottagarens domän, använder sedan fältet **d=** för att leta upp den offentliga nyckeln från DNS och autentisera meddelandet. Om meddelandet har bekräftats godkänns DKIM-kontrollen.
+
 
 ## <a name="steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys"></a>Uppgradera manuellt dina 1024-bitars nycklar till 2048-bitars DKIM-krypteringsnycklar
 <a name="1024to2048DKIM"> </a>
+
+> [!NOTE]
+> Microsoft 365 konfigurerar automatiskt DKIM för domäner med *onmicrosoft.com*. Inga steg krävs för att använda DKIM för inledande domännamn (t.ex. litware.*onmicrosoft.com*). Mer information om domäner finns i [Vanliga frågor och svar om domäner](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain).
 
 Eftersom både 1024 och 2048 bitar stöds för DKIM-nycklar visar dessa instruktioner hur du uppgraderar din 1024-bitarsnyckel till 2048 i [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Stegen nedan gäller för två användningsfall: Välj det som passar bäst för konfigurationen.
 
@@ -117,7 +129,7 @@ Om du vill rotera till den andra väljaren är dina alternativ a) att låta Micr
 
 För detaljerad information om syntax och parametrar, se följande artiklar: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig), [New-DkimSigningConfig](/powershell/module/exchange/new-dkimsigningconfig)och [Get-DkimSigningConfig](/powershell/module/exchange/get-dkimsigningconfig).
 
-## <a name="steps-you-need-to-do-to-manually-set-up-dkim"></a>Steg du behöver göra för att konfigurera DKIM manuellt
+## <a name="steps-to-manually-set-up-dkim"></a>Steg för att konfigurera DKIM manuellt
 <a name="SetUpDKIMO365"> </a>
 
 Om du vill konfigurera DKIM gör du så här:
@@ -241,7 +253,7 @@ Vänta några minuter innan du följer de här anvisningarna för att kontroller
 
 - Öppna meddelandet och titta på rubriken. Information om hur du visar rubriken för meddelandet beror på vilken meddelandeklient du har. Information om hur du visar meddelanderubriker i Outlook finns i [Visa internetmeddelandehuvud i Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
-  Det DKIM-signerade meddelandet innehåller värdnamnet och domänen som du angav när du publicerade CNAME-posterna. Meddelandet liknar nu följande exempel:
+  Det DKIM-signerade meddelandet innehåller värdnamnet och domänen som du angav när du publicerade CNAME-posterna. Meddelandet ser ut ungefär så här:
 
   ```console
     From: Example User <example@contoso.com>

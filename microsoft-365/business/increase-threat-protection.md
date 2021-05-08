@@ -1,5 +1,5 @@
 ---
-title: Öka skyddet mot hot för Microsoft 365 för företag
+title: Öka skydd mot hot för Microsoft 365 för företag
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -21,25 +21,25 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Konfigurera Microsoft Defender för Office 365 och skydda känsliga data mot nätfiske, skadlig programvara och andra hot.
-ms.openlocfilehash: 8fb2c3881876cabea6d8907a85bc9397212126dc
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Konfigurera Microsoft Defender för Office 365 skydda känsliga data mot nätfiske, skadlig programvara och andra hot.
+ms.openlocfilehash: 4b5142efbf4392f017cd9b96f6a9c36ef2000bb7
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580203"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245153"
 ---
 # <a name="increase-threat-protection"></a>Öka hotskyddet
 
 Den här artikeln hjälper dig att öka skyddet för Microsoft 365-prenumerationen för att skydda mot nätfiske, skadlig programvara och andra hot. Dessa rekommendationer är lämpliga för organisationer med ett ökat behov av säkerhet, t.ex. juristkontor och sjukvårdskontoret.
 
-Innan du börjar kontrollerar du ditt Office 365 Secure Score. Office 365 Secure Score analyserar organisationens säkerhet utifrån vanliga aktiviteter och säkerhetsinställningar och tilldelar en poäng. Börja med att anteckna det aktuella resultatet. Om du vill öka poäng slutför du åtgärderna som rekommenderas i den här artikeln. Målet är inte att uppnå det högsta resultatet, utan att vara medveten om möjligheter att skydda din miljö som inte negativt påverkar produktiviteten för användarna.
+Innan du börjar kontrollerar du ditt Office 365 Secure Score. Office 365 Secure Score analyserar organisationens säkerhet baserat på aktiviteter och säkerhetsinställningar samt tilldelar ett poängresultat. Börja med att anteckna det aktuella resultatet. Om du vill öka poäng slutför du åtgärderna som rekommenderas i den här artikeln. Målet är inte att uppnå det högsta resultatet, utan att vara medveten om möjligheter att skydda din miljö som inte negativt påverkar produktiviteten för användarna.
 
 Mer information finns i [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Höja skyddsnivån för skadlig programvara i e-post
 
-Din Office 365- eller Microsoft 365-miljö innehåller skydd mot skadlig programvara. Du kan öka skyddet genom att blockera bifogade filer med filtyper som ofta används för skadlig programvara. Öka skyddet mot skadlig programvara i e-post:
+Din Office 365 eller Microsoft 365 innehåller skydd mot skadlig programvara. Du kan öka skyddet genom att blockera bifogade filer med filtyper som ofta används för skadlig programvara. Öka skyddet mot skadlig programvara i e-post:
 
 1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med autentiseringsuppgifterna för ditt administratörskonto.
 
@@ -47,7 +47,7 @@ Din Office 365- eller Microsoft 365-miljö innehåller skydd mot skadlig program
 
 3. Dubbelklicka på standardprincipen om du vill redigera den här företagsövergripande principen.
 
-4. Välj **Inställningar.**
+4. Välj **Inställningar**.
 
 5. Under **Vanliga typer av bifogade filer väljer** du **På**. De filtyper som är blockerade visas i fönstret direkt nedanför den här kontrollen. Se till att du lägger till följande filtyper:
 
@@ -65,11 +65,11 @@ Utpressningstrojaner begränsar åtkomsten till data genom att kryptera filer el
 
 För att skydda mot utpressningstrojaner skapar du en eller flera e-postflödesregler för att blockera filnamnstillägg som ofta används för utpressningstrojaner. (Du har lagt till dessa regler för att [höja skyddsnivån mot skadlig programvara i e-poststeg.)](#raise-the-level-of-protection-against-malware-in-mail) Du kan också varna användare som får dessa bifogade filer i e-postmeddelanden.
 
-Utöver de filer som du blockerade i föregående steg är det bra att skapa en regel som varnar användare innan de öppnar bifogade Office-filer som innehåller makron. Utpressningstrojaner kan vara dolda i makron, så varna användarna att inte öppna dessa filer från personer de inte känner.
+Utöver de filer som du blockerade i föregående steg är det bra att skapa en regel som varnar användare innan de Office bifogade filer som innehåller makron. Utpressningstrojaner kan vara dolda i makron, så varna användarna att inte öppna dessa filer från personer de inte känner.
 
 Så här skapar du en regel för e-posttransport:
 
-1. Gå till administrationscentret på <https://admin.microsoft.com> och välj **Administrationscenter** \> **Exchange**.
+1. Gå till administrationscentret på <https://admin.microsoft.com> och välj **Administrationscenter för** \> **Exchange**.
 
 2. Välj regler i kategorin E-postflöde.  
 
@@ -81,7 +81,7 @@ Så här skapar du en regel för e-posttransport:
 
 6. Välj **Spara**.
 
-|Inställning|Varna användare innan de öppnar bifogade filer i Office-filer||
+|Inställning|Varna användare innan de öppnar bifogade filer Office filer||
 |---|---|---|
 |Namn|Regel för utpressningstrojaner: varna användare|
 |Tillämpa den här regeln om . . .|En bifogad fil . . . filtillägg matchar . . .|
@@ -99,9 +99,9 @@ Mer information finns i:
 
 Hackare som får åtkomst till en användares postlåda kan stjäla e-post genom att ställa in så att postlådan vidarebefordrar e-post automatiskt. Det här kan inträffa även utan användarens uppmärksamhet. Konfigurera en e-postflödesregel för att förhindra detta.
 
-Om du vill skapa en e-posttransportregel kan du antingen [titta på den här](https://support.microsoft.com/office/f9d693ba-5c78-47c0-b156-8e461e062aa7) korta videon eller följa de här stegen:
+Om du vill skapa en e-posttransportregel kan du antingen [titta på den här](../business-video/stop-email-auto-forward.md) korta videon eller följa de här stegen:
 
-1. I administrationscentret för Microsoft 365 väljer du **Administratörscentra** \> **Exchange**.
+1. I Microsoft 365 väljer du **Administrationscenter för** \> **Exchange**.
 
 2. Välj regler i kategorin E-postflöde.  
 
@@ -113,7 +113,7 @@ Om du vill skapa en e-posttransportregel kan du antingen [titta på den här](ht
 
 6. Välj **Spara**.
 
-|Inställning|Varna användare innan de öppnar bifogade filer i Office-filer|
+|Inställning|Varna användare innan de öppnar bifogade filer Office filer|
 |---|---|
 |Namn|Förhindra automatisk vidarebefordran av e-post till externa domäner|
 |Tillämpa den här regeln om ...|Avsändaren . . . är extern/intern . . . Inom organisationen|
@@ -124,11 +124,11 @@ Om du vill skapa en e-posttransportregel kan du antingen [titta på den här](ht
 
 ## <a name="protect-your-email-from-phishing-attacks"></a>Skydda din e-post från nätfiskeattacker
 
-Om du har konfigurerat en eller flera egna domäner för din Office 365- eller Microsoft 365-miljö kan du konfigurera riktad skydd mot nätfiske. Skydd mot nätfiske, en del av Microsoft Defender för Office 365, kan skydda organisationen från skadliga personifieringsbaserade nätfiskeattacker och andra nätfiskeattacker. Om du inte har konfigurerat en egen domän behöver du inte göra det.
+Om du har konfigurerat en eller flera egna domäner i din Office 365- Microsoft 365-miljö kan du konfigurera riktade skydd mot nätfiske. Skydd mot nätfiske, en del av Microsoft Defender för Office 365, kan skydda organisationen från skadliga personifieringsbaserade nätfiskeattacker och andra nätfiskeattacker. Om du inte har konfigurerat en egen domän behöver du inte göra det.
 
 Vi rekommenderar att du kommer igång med det här skyddet genom att skapa en princip för att skydda dina viktigaste användare och din anpassade domän.
 
-Om du vill skapa en policy mot nätfiske i [](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)Microsoft Defender för Office 365 kan du titta på den här korta utbildningsvideon eller följa stegen nedan:
+Om du vill skapa en policy mot nätfiske i Microsoft Defender för Office 365 kan du titta på [den](../business-video/setup-anti-phishing.md)här korta utbildningsvideon eller följa stegen nedan:
 
 1. Gå till [https://protection.office.com](https://protection.office.com).
 
@@ -138,7 +138,7 @@ Om du vill skapa en policy mot nätfiske i [](https://support.microsoft.com/offi
 
 4. På sidan **mot nätfiske** väljer du **+ Skapa.** En guide startar stegen för att definiera din policy mot nätfiske.
 
-5. Ange namn, beskrivning och inställningar för principen enligt rekommendationen i följande tabell. Mer information finns i Läs [mer om nätfiskeprincip i Microsoft Defender för Office 365-alternativ.](../security/office-365-security/set-up-anti-phishing-policies.md)
+5. Ange namn, beskrivning och inställningar för principen enligt rekommendationen i följande tabell. Mer information finns i Läs [mer om nätfiskeprincip i Microsoft Defender för Office 365 alternativ.](../security/office-365-security/set-up-anti-phishing-policies.md)
 
 6. När du har granskat inställningarna väljer du Skapa **den här principen** eller **Spara** efter behov.
 
@@ -147,25 +147,25 @@ Om du vill skapa en policy mot nätfiske i [](https://support.microsoft.com/offi
 |Namn|Domän och mest värdefull kampanjpersonal|
 |Beskrivning|Se till att den viktigaste personalen och vår domän inte utger sig för att vara.|
 |Lägga till användare att skydda|Välj **+ Lägg till ett villkor, mottagaren är**. Skriv användarnamn eller ange e-postadressen till kandidaten, kampanjhanteraren och andra viktiga personalmedlemmar. Du kan lägga till upp till 20 interna och externa adresser som du vill skydda från personifiering.|
-|Lägga till domäner att skydda|Välj **+ Lägg till ett villkor, mottagarens domän är**. Ange den anpassade domän som är kopplad till din Microsoft 365-prenumeration, om du har definierat en sådan. Du kan ange mer än en domän.|
+|Lägga till domäner att skydda|Välj **+ Lägg till ett villkor, mottagarens domän är**. Ange den anpassade domän som är kopplad till Microsoft 365-prenumerationen, om du har definierat en sådan. Du kan ange mer än en domän.|
 |Välja åtgärder|Om e-post skickas av en imiterad användare: Välj Omdirigera meddelande till en annan e-postadress och skriv sedan säkerhetsadministratörens e-postadress. Till exempel Så här ser det ut, Det kan vara *<span> <span> @ contoso.com.* Om e-post skickas av en imiterad domän: Välj **Sätt meddelande i karantän**.|
 |Postlådeintelligens|Postlådeintelligens är valt som standard när du skapar en ny princip mot nätfiske. Lämna den här inställningen **På** för bästa resultat.|
 |Lägga till betrodda avsändare och domäner|Här kan du lägga till din egen domän eller andra betrodda domäner.|
 |Tillämpas på|Välj **Mottagarens domän är**. Under **Valfri av dessa** väljer du **Välj**. Välj **+ Lägg till.** Markera kryssrutan bredvid namnet på domänen, till exempel *contoso. <span> <span> com*, i listan och välj sedan Lägg **till**. Välj **Klar**.|
 
-## <a name="protect-against-malicious-attachments-and-files-with-safe-attachments"></a>Skydda mot skadliga bilagor och filer med säkra bifogade filer
+## <a name="protect-against-malicious-attachments-and-files-with-safe-attachments"></a>Skydda mot skadliga bilagor och filer med Valv bilagor
 
-Personer skickar, tar emot och delar regelbundet bifogade filer, till exempel dokument, presentationer, kalkylblad med mera. Det är inte alltid lätt att avgöra om en bifogad fil är säker eller skadlig bara genom att titta på ett e-postmeddelande. Microsoft Defender för Office 365 har skydd mot bifogade filer, men det här skyddet är inte aktiverat som standard. Vi rekommenderar att du skapar en ny regel för att börja använda det här skyddet. Skyddet omfattar filer i SharePoint, OneDrive och Microsoft Teams.
+Personer skickar, tar emot och delar regelbundet bifogade filer, till exempel dokument, presentationer, kalkylblad med mera. Det är inte alltid lätt att avgöra om en bifogad fil är säker eller skadlig bara genom att titta på ett e-postmeddelande. Microsoft Defender för Office 365 innehåller Valv skydd för bifogade filer, men det här skyddet är inte aktiverat som standard. Vi rekommenderar att du skapar en ny regel för att börja använda det här skyddet. Skyddet omfattar filer i SharePoint, OneDrive och Microsoft Teams.
 
-Om du vill skapa en princip för säkra bifogade filer [kan](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)du antingen titta på den här korta videon eller utföra följande steg:
+Om du vill Valv en princip för bifogade filer kan du [antingen titta på](../business-video/safe-attachments.md)den här korta videon eller utföra följande steg:
 
 1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt administratörskonto.
 
 2. I det vänstra &amp; navigeringsfönstret i säkerhetsefterlevnadscentret, under **Hothantering,** väljer du **Princip**.
 
-3. På sidan Princip väljer du Säkra **bifogade filer.**
+3. På sidan Princip väljer du Välj **Valv Bifogade filer**.
 
-4. På sidan Säkra bifogade filer tillämpar du det här skyddet allmänt genom att markera kryssrutan Aktivera ATP för **SharePoint, OneDrive och Microsoft Teams.**
+4. På sidan Valv bifogade filer tillämpar du det här skyddet brett genom att markera kryssrutan Aktivera ATP för **SharePoint, OneDrive** och Microsoft Teams.
 
 5. Välj **+** för att skapa en ny princip.
 
@@ -181,11 +181,11 @@ Om du vill skapa en princip för säkra bifogade filer [kan](https://support.mic
 |Omdirigera bifogad fil vid identifiering|Aktivera omdirigering (markera den här rutan) Ange administratörskontot eller en postlådekonfiguration för karantän.          Använd alternativet ovan om genomsökning efter bifogade filer på tider eller fel inträffar (markera den här rutan).|
 |Tillämpas på|Mottagarens domän är . . . väljer du din domän.|
 
-Mer information finns i Konfigurera [principer för skydd mot nätfiske i Microsoft Defender för Office 365.](../security/office-365-security/set-up-anti-phishing-policies.md)
+Mer information finns i [Konfigurera principer för skydd mot nätfiske i Microsoft Defender för Office 365.](../security/office-365-security/set-up-anti-phishing-policies.md)
 
-## <a name="protect-against-phishing-attacks-with-safe-links"></a>Skydda mot nätfiskeattacker med Säkra länkar
+## <a name="protect-against-phishing-attacks-with-safe-links"></a>Skydda mot nätfiskeattacker med Valv länkar
 
-Hackare döljer ibland skadliga webbplatser i länkar i e-postmeddelanden och andra filer. Säkra länkar, en del av Microsoft Defender för Office 365, kan skydda organisationen genom att tillhandahålla snabb verifiering av webbadresser (URL:er) i e-postmeddelanden och Office-dokument. Skydd definieras genom principer för säkra länkar.
+Hackare döljer ibland skadliga webbplatser i länkar i e-postmeddelanden och andra filer. Valv Länkar, som är en del av Microsoft Defender för Office 365, kan skydda organisationen genom att tillhandahålla snabb verifiering av webbadresser (URL:er) i e-postmeddelanden och Office dokument. Skydd definieras via Valv principer för länkar.
 
 Vi rekommenderar att du gör följande:
 
@@ -193,25 +193,25 @@ Vi rekommenderar att du gör följande:
 
 - Lägg till en ny princip som är riktad för alla mottagare i din domän.
 
-Konfigurera säkra länkar genom att titta [på den här korta utbildningsvideon](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)eller utföra följande steg:
+Om du vill Valv konfigurera länkar kan du [titta på den här](../business-video/safe-links.md)korta utbildningsvideon eller följa stegen nedan:
 
 1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt administratörskonto.
 
 2. I det vänstra &amp; navigeringsfönstret i säkerhetsefterlevnadscentret, under **Hothantering,** väljer du **Princip**.
 
-3. På sidan Princip väljer du **Säkra länkar.**
+3. På sidan Princip väljer du **Valv Länkar**.
 
 Så här ändrar du standardprincipen:
 
-1. Välj Standardprincip under Principer **som gäller för** hela organisationen på sidan **Säkra** länkar.
+1. På Valv under Principer som **gäller för hela** organisationen väljer du **Standardprincip.**
 
-2. Under **Inställningar som gäller för innehåll utom e-post** väljer du Microsoft **365-appar för företag, Office för iOS och Android.**
+2. Under Inställningar som gäller för innehåll utom **e-post** väljer **du Microsoft 365-appar för företag, Office för iOS och Android.**
 
 3. Välj **Spara**.
 
 Så här skapar du en ny princip som är riktad till alla mottagare i din domän:
 
-1. På sidan Säkra länkar, under **Principer som gäller för hela organisationen, väljer** du för att skapa en ny **+** princip.
+1. På sidan Valv, under **Principer som gäller** för hela organisationen, väljer du för att skapa en ny **+** princip.
 
 2. Använd inställningarna i följande tabell.
 
@@ -219,12 +219,12 @@ Så här skapar du en ny princip som är riktad till alla mottagare i din domän
 
 |Inställning eller alternativ|Rekommenderad inställning|
 |---|---|
-|Namn|Princip för säkra länkar för alla mottagare i domänen|
+|Namn|Valv länkar för alla mottagare i domänen|
 |Välj åtgärden för okända potentiellt skadliga URL-adresser i meddelanden|Välj **På – URL:er skrivs om och kontrolleras mot en lista med kända skadliga länkar när användaren klickar på länken.**|
-|Använda säkra bifogade filer för att söka igenom nedladdningsbart innehåll|Markera den här rutan.|
+|Använda bifogade Valv för att söka igenom nedladdningsbart innehåll|Markera den här rutan.|
 |Tillämpas på|Mottagarens domän är . . . väljer du din domän.|
 
-Mer information finns i [Säkra länkar.](../security/office-365-security/safe-links.md)
+Mer information finns i [Valv Länkar.](../security/office-365-security/safe-links.md)
 
 ## <a name="go-to-intune-admin-center"></a>Gå till administrationscentret för Intune
 
@@ -232,6 +232,6 @@ Mer information finns i [Säkra länkar.](../security/office-365-security/safe-l
 
 2. Välj **Alla tjänster** och skriv *Intune* i **sökrutan**.
 
-3. När resultatet visas väljer du start bredvid **Microsoft Intune för att göra** den till en favorit och lätt att hitta senare.
+3. När resultatet visas väljer du början bredvid nästa **Microsoft Intune** att göra den till en favorit och lätt att hitta senare.
 
-Förutom administrationscentret kan du använda Intune för att registrera och hantera organisationens enheter. Mer information finns i Funktioner [efter registreringsmetod för Windows-enheter och](/intune/enrollment/enrollment-method-capab) [Registreringsalternativ för enheter som hanteras av Intune.](/intune/enrollment-options)
+Förutom administrationscentret kan du använda Intune för att registrera och hantera organisationens enheter. Mer information finns i [Funktioner efter registreringsmetod för alla Windows enheter](/intune/enrollment/enrollment-method-capab) och Registreringsalternativ för enheter som hanteras av [Intune.](/intune/enrollment-options)

@@ -1,5 +1,5 @@
 ---
-title: Hantera uppdateringar för Microsoft Defender Antivirus och tillämpa baslinjer
+title: Hantera Microsoft Defender Antivirus uppdateringar och använda baslinjer
 description: Hantera hur Microsoft Defender Antivirus får skydd och produktuppdateringar.
 keywords: uppdateringar, säkerhetsbaslinjer, skydd, schemauppdateringar, tvinga uppdateringar, mobiluppdateringar, wsus
 search.product: eADQiWindows 10XVcnh
@@ -16,42 +16,42 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: ae17aa6e2cb0cefd460ef0db0730570af8c84bb8
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 92f903f750ea5e7f2cb971b535c50bfecced65a2
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995039"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52242318"
 ---
-# <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Hantera uppdateringar för Microsoft Defender Antivirus och tillämpa baslinjer
+# <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Hantera Microsoft Defender Antivirus uppdateringar och använda baslinjer
 
 **Gäller för:**
 
 - [Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/)
 - Microsoft Defender Antivirus
 
-Det finns två typer av uppdateringar som är relaterade till att hålla Microsoft Defender Antivirus uppdaterat:
+Det finns två typer av uppdateringar som är relaterade till Microsoft Defender Antivirus uppdateringar:
 
 - Säkerhetsintelligensuppdateringar
 - Produktuppdateringar
 
 > [!IMPORTANT]
-> Att hålla Microsoft Defender Antivirus uppdaterat är viktigt för att säkerställa att dina enheter har den senaste tekniken och funktionerna som behövs för att skydda mot nya tekniker för skadlig programvara och attack.
+> Att Microsoft Defender Antivirus uppdaterade är viktigt för att säkerställa att dina enheter har den senaste tekniken och funktionerna som behövs för att skydda mot nya tekniker för skadlig programvara och attack.
 > 
-> Uppdatera antivirusskyddet även om Microsoft Defender Antivirus körs i passiv [form.](./microsoft-defender-antivirus-compatibility.md)
+> Se till att uppdatera antivirusskyddet även om Microsoft Defender Antivirus körs i passiv [form.](./microsoft-defender-antivirus-compatibility.md)
 > 
-> Om du vill se de senaste motor-, plattforms- och signaturdatumen går du till Säkerhetsintelligensuppdateringar för [Microsoft Defender Antivirus och andra Microsoft-program mot skadlig programvara.](https://www.microsoft.com/en-us/wdsi/defenderupdates)
+> Du kan se de mest aktuella motor-, plattforms- och signaturdatumen i Säkerhetsintelligensuppdateringar för [Microsoft Defender Antivirus andra Microsoft-program mot skadlig programvara.](https://www.microsoft.com/en-us/wdsi/defenderupdates)
 
 ## <a name="security-intelligence-updates"></a>Säkerhetsintelligensuppdateringar
 
-Microsoft Defender Antivirus använder [moln levererat skydd](cloud-protection-microsoft-defender-antivirus.md) (kallas även Microsofts tjänst för avancerat skydd eller KARTOR) och laddar regelbundet ned säkerhetsintelligensuppdateringar för att skydda dig.
+Microsoft Defender Antivirus använder [moln levererat skydd](cloud-protection-microsoft-defender-antivirus.md) (kallas även Microsoft Advanced Protection Service eller MAPS) och laddar regelbundet ned säkerhetsintelligensuppdateringar för att skydda dig.
 
 > [!NOTE]
 > Uppdateringar släpps under kb-nummer nedan:  
 > Microsoft Defender Antivirus: KB2267602  
 > System Center Endpoint Protection: KB2461484
 
-Moln levererat skydd är alltid på och kräver en aktiv anslutning till Internet för att fungera. Säkerhetsintelligensuppdateringar sker enligt ett schemalagt tidsfrekvens (kan konfigureras via princip). Mer information finns i [Använda Molnskydd i Microsoft Defender Antivirus.](cloud-protection-microsoft-defender-antivirus.md) 
+Moln levererat skydd är alltid på och kräver en aktiv anslutning till Internet för att fungera. Säkerhetsintelligensuppdateringar sker enligt ett schemalagt tidsfrekvens (kan konfigureras via princip). Mer information finns i [Använda Microsofts molnskydd i Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md). 
 
 En lista över de senaste säkerhetsintelligensuppdateringarna finns i [Säkerhetsintelligensuppdateringar för Microsoft Defender Antivirus och andra Microsoft-program mot skadlig programvara.](https://www.microsoft.com/en-us/wdsi/defenderupdates)
 
@@ -59,31 +59,48 @@ Motoruppdateringar ingår i säkerhetsintelligensuppdateringar och släpps varje
 
 ## <a name="product-updates"></a>Produktuppdateringar
 
-Microsoft Defender Antivirus kräver [månatliga uppdateringar (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (kallas plattformsuppdateringar) och kommer att få större funktionsuppdateringar tillsammans med Windows 10-versioner. 
+Microsoft Defender Antivirus kräver månatliga uppdateringar [(KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (kallas plattformsuppdateringar) och kommer att få större funktionsuppdateringar tillsammans med Windows 10 versioner. 
 
 Du kan hantera distributionen av uppdateringar på något av följande sätt: 
 
-- [Windows Server Update Service (WSUS)](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
+- [Windows Tjänst för serveruppdatering (WSUS)](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
 - [Microsoft Endpoint Configuration Manager](/configmgr/sum/understand/software-updates-introduction)
-- Den vanliga metoden du använder för att distribuera Microsoft och Windows-uppdateringar till slutpunkter i nätverket.
+- Den vanliga metoden du använder för att distribuera Microsoft Windows uppdateringar till slutpunkter i nätverket.
 
-Mer information finns i [Hantera källorna för uppdateringar av Microsoft Defender Antivirus Protection](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
+Mer information finns i [Hantera källor för Microsoft Defender Antivirus säkerhetsuppdateringar.](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
 
 > [!NOTE]
 > Månatliga uppdateringar släpps i faser, vilket resulterar i att flera paket visas i [Window Server Update Services.](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
 
 ## <a name="monthly-platform-and-engine-versions"></a>Månadsplattform och motorversioner
 
-Information om hur du uppdaterar eller installerar plattformsuppdateringen finns [i Uppdatering för Windows Defender-program mot skadlig programvara.](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform)
+Information om hur du uppdaterar eller installerar plattformsuppdateringen finns [i Uppdatering för Windows Defender mot skadlig programvara.](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform)
 
 Alla våra uppdateringar innehåller 
 - prestandaförbättringar
 - förbättringar av användbarheten. och 
-- förbättringar av integreringen (Cloud, Microsoft 365 Defender).
-<br/><br/>
+- förbättringar av integreringen (Cloud Microsoft 365 Defender).
+<br/>
+<details>
+<summary> April 2021 (plattform: 4.19.2104.9| Motor: 1.1.18100.5)</summary>
+
+&ensp;Uppdateringsversion av säkerhetsinformation: **1.337.2.0**  
+&ensp;Utgiven: **1 april 2021**  
+&ensp;Plattform: **4.19.2104.9**  
+&ensp;Motor: **1.1.18100.5**  
+&ensp;Supportfas: **Säkerhets- och kritiska uppdateringar**
+    
+### <a name="whats-new"></a>Nyheter
+- Ytterligare logik för funktionsövervakning
+- Förbättrad identifiering av kernelläge
+
+### <a name="known-issues"></a>Kända problem
+Inga kända problem  
+<br/>
+</details>
 
 <details>
-<summary> Mars–2021 (plattform: 4.18.2103.7 | Motor: 1.1.18000.5)</summary>
+<summary> Mars-2021 (plattform: 4.19.2103.7 | Motor: 1.1.18000.5)</summary>
 
 &ensp;Uppdateringsversion av säkerhetsinformation: **1.335.36.0**  
 &ensp;Utgiven: **1 april 2021**  
@@ -101,7 +118,7 @@ Alla våra uppdateringar innehåller
 Inga kända problem  
 <br/>
 </details><details>
-<summary> Februari-2021 (Plattform: 4.18.2102.3 | Motor: 1.1.17900.7)</summary>
+<summary> Februari-2021 (Plattform: 4.19.2102.3 | Motor: 1.1.17900.7)</summary>
 
 &ensp;Uppdateringsversion av säkerhetsinformation: **1.333.7.0**  
 &ensp;**Utgiven: 9 mars 2021**  
@@ -117,26 +134,6 @@ Inga kända problem
 ### <a name="known-issues"></a>Kända problem
 Inga kända problem  
 <br/>
-</details><details>
-<summary> Januari–2021 (plattform: 4.18.2101.9 och | Motor: 1.1.17800.5)</summary>
-
-&ensp;Uppdateringsversion av säkerhetsinformation: **1.327.1854.0**  
-&ensp;**Utgiven: 2 februari 2021**  
-&ensp;Plattform: **4.18.2101.9**  
-&ensp;Motor: **1.1.17800.5**  
-&ensp;Supportfas: **Säkerhets- och kritiska uppdateringar**
-    
-### <a name="whats-new"></a>Nyheter
-
-- Sårbarhetsidentifieringsförbättringar i Shellcode
-- Bättre synlighet för försök att stjäl autentiseringsuppgifter
-- Förbättringar av antivirusfunktionerna i Microsoft Defender Antivirus services
-- Förbättrat stöd för ARM x64-egulering
-- Åtgärd: EDR-blockeringsavisering finns kvar i hothistoriken efter att initial identifiering utförts i realtid
-
-### <a name="known-issues"></a>Kända problem
-Inga kända problem  
-<br/>
 </details>
 
 ### <a name="previous-version-updates-technical-upgrade-support-only"></a>Tidigare versionsuppdateringar: Endast teknisk uppgraderingssupport
@@ -144,6 +141,26 @@ Inga kända problem
 När en ny paketversion har släppts begränsas stödet för de tidigare två versionerna till endast teknisk support. Versioner som är äldre än de som anges i det här avsnittet och tillhandahålls endast för teknisk uppgraderingssupport. 
 <br/><br/>
 <details>
+<summary> Januari–2021 (plattform: 4.18.2101.9 och | Motor: 1.1.17800.5)</summary>
+
+&ensp;Uppdateringsversion av säkerhetsinformation: **1.327.1854.0**  
+&ensp;**Utgiven: 2 februari 2021**  
+&ensp;Plattform: **4.18.2101.9**  
+&ensp;Motor: **1.1.17800.5**  
+&ensp;Supportfas: **Teknisk uppgraderingssupport (endast)**
+    
+### <a name="whats-new"></a>Nyheter
+
+- Sårbarhetsidentifieringsförbättringar i Shellcode
+- Bättre synlighet för försök att stjäl autentiseringsuppgifter
+- Förbättringar av funktionerna för att ta fram nya funktioner Microsoft Defender Antivirus tjänster
+- Förbättrat stöd för ARM x64-egulering
+- Åtgärd: Identifiering och åtgärd på slutpunkt blockera meddelande finns kvar i hothistoriken efter att initial identifiering utförts i realtid
+
+### <a name="known-issues"></a>Kända problem
+Inga kända problem  
+<br/>
+</details><details>
 <summary> November-2020 (plattform: 4.18.2011.6 | Motor: 1.1.17700.4)</summary>
 
 &ensp;Uppdateringsversion av säkerhetsinformation: **1.327.1854.0**  
@@ -198,7 +215,7 @@ Inga kända problem
    - Nätverksskydd på Server 2019
    - Undantag för IP-adress i nätverksskydd
 - Förbättrad insyn i TPM-mått
-- Förbättrad vba-modulskanning för Office
+- Förbättrad Office VBA-modulskanning
 
 ### <a name="known-issues"></a>Kända problem
 
@@ -221,7 +238,7 @@ Inga kända problem
 - Förbättrad övervakning av beteende för minnessökningar
 - Förbättrad genomsökning av makroströmmar
 - `AMRunningMode`Tillagd Get-MpComputerStatus PowerShell-cmdlet
-- [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) ignoreras. Microsoft Defender Antivirus stängs automatiskt av när programmet upptäcker ett annat antivirusprogram.
+- [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) ignoreras. Microsoft Defender Antivirus inaktiveras automatiskt när ett annat antivirusprogram upptäcks.
 
 
 ### <a name="known-issues"></a>Kända problem
@@ -379,7 +396,7 @@ Motor: **1.1.16700.2**
    
 ### <a name="known-issues"></a>Kända problem
 
-[**Åtgärdat**] enheter som använder [modernt vänteläge](/windows-hardware/design/device-experiences/modern-standby) kan uppleva att windows Defender-filterdrivrutinen hänger sig, vilket resulterar i en lucka i skyddet.  Påverkade datorer verkar för kunden inte ha uppdaterat till den senaste plattform för program mot skadlig programvara.  
+[**Åtgärdat**] enheter som använder [modernt vänteläge](/windows-hardware/design/device-experiences/modern-standby) kan uppleva att Windows Defender-filterdrivrutinen hänger sig, vilket resulterar i en lucka i skyddet.  Påverkade datorer verkar för kunden inte ha uppdaterat till den senaste plattform för program mot skadlig programvara.  
 <br/>
 > [!IMPORTANT]
 > Den här uppdateringen är:
@@ -413,21 +430,21 @@ När den här uppdateringen installeras behöver enheten hopppaketet 4.10.2001.1
 </details>
 
 
-## <a name="microsoft-defender-antivirus-platform-support"></a>Support för Microsoft Defender Antivirus-plattformen
+## <a name="microsoft-defender-antivirus-platform-support"></a>Microsoft Defender Antivirus stöd för Microsoft Defender Antivirus-plattformen
 Plattforms- och motoruppdateringar tillhandahålls varje månad. Håll dig aktuell med de senaste plattformsuppdateringarna för att få fullständigt stöd. Vår supportstruktur är dynamisk och utvecklas till två faser beroende på tillgängligheten för den senaste versionen av plattformen:
 
 - **Servicefas för säkerhets-** och kritiska uppdateringar – När du kör den senaste versionen av plattformen får du både säkerhets- och kritiska uppdateringar till plattformen för skydd mot skadlig programvara.
  
 - **Fas för teknisk support (endast)** – När en ny plattformsversion har släppts kommer stödet för äldre versioner (N-2) att minska till teknisk support. Plattformsversioner äldre än N-2 stöds inte längre.*
 
-\* Teknisk support kommer att fortsätta tillhandahållas för uppgraderingar från Windows 10-versionen (se Plattformsversion som ingår i [Windows 10-versioner)](#platform-version-included-with-windows-10-releases)till den senaste versionen av plattformen.
+\*Teknisk support kommer att fortsätta tillhandahållas för uppgraderingar från Windows 10 release-versionen (se [Plattformsversion](#platform-version-included-with-windows-10-releases)som ingår i Windows 10-versioner) till den senaste versionen av plattformen.
 
 Under den tekniska supportfasen (endast) tillhandahålls kommersiellt rimliga supportärenden via Microsofts kundtjänst & Support och Microsofts hanterade supporterbjudanden (till exempel Premier-support). Om ett supportärende kräver eskalering till utveckling för vidare vägledning, kräver en uppdatering som inte är säkerhetsfri eller kräver en säkerhetsuppdatering, uppmanas kunderna att uppgradera till den senaste versionen av plattformen eller en mellanliggande uppdatering (*).
 
-### <a name="platform-version-included-with-windows-10-releases"></a>Plattformsversion som ingår i Windows 10-versioner
-Tabellen nedan innehåller microsoft Defender Antivirus-plattformen och motorversioner som levereras med de senaste Windows 10-versionerna:    
+### <a name="platform-version-included-with-windows-10-releases"></a>Plattformsversion som ingår Windows 10 versioner
+Tabellen nedan innehåller de Microsoft Defender Antivirus-plattform och motorversioner som levereras med de senaste Windows 10 versionerna:    
 
-|Windows 10-version  |Plattformsversion  |Motorversion |Supportfas |
+|Windows 10 version  |Plattformsversion  |Motorversion |Supportfas |
 |:---|:---|:---|:---|
 |2004 (20H1/20H2) |4.18.1909.6 |1.1.17000.2 | Teknisk uppgraderingssupport (endast) |
 |1909 (19H2) |4.18.1902.5 |1.1.16700.3 | Teknisk uppgraderingssupport (endast) |
@@ -438,13 +455,13 @@ Tabellen nedan innehåller microsoft Defender Antivirus-plattformen och motorver
 |1703 (RS2) |4.11.15603.2 |1.1.13504.0 | Teknisk uppgraderingssupport (endast) |
 |1607 (RS1) |4.10.14393.3683 |1.1.12805.0 | Teknisk uppgraderingssupport (endast) |  
 
-Information om versionen av Windows 10 finns i informationsbladet [om Windows livscykel.](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)
+Mer Windows 10 information finns i Windows [informationsblad om livscykeln.](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)
 
 ## <a name="updates-for-deployment-image-servicing-and-management-dism"></a>Uppdateringar för DISM (Deployment Image Servicing and Management)
 
-Vi rekommenderar att du uppdaterar dina Windows 10-versioner (Enterprise-, Pro- och Home-utgåvor), Windows Server 2019 och Windows Server 2016 OS-installationsbilder med de senaste uppdateringarna för antivirus och program mot skadlig programvara. Genom att hålla os-installationsbilderna uppdaterade undviker du lucka i skyddet. 
+Vi rekommenderar att du uppdaterar dina Windows 10-versioner (Enterprise-, Pro- och Home-utgåvor), Windows Server 2019 och Windows Server 2016 OS-installationsbilder med de senaste uppdateringarna för antivirusprogram och program mot skadlig programvara. Genom att hålla os-installationsbilderna uppdaterade undviker du lucka i skyddet. 
 
-Mer information finns i [Installationsbilder för Microsoft Defender-operativsystemet för Windows.](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)
+Mer information finns i [Microsoft Defender Update för Windows av installationsbilder för operativsystemet.](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)
 
 <details>
 <summary>1.1.2104.01</summary>
@@ -528,7 +545,7 @@ Mer information finns i [Installationsbilder för Microsoft Defender-operativsys
 - Ingen
 
 ### <a name="additional-information"></a>Ytterligare information
-- Uppdaterade Microsoft Defender Antivirus-signaturer  
+- Uppdaterade Microsoft Defender Antivirus signaturer  
 <br/>
 </details><details>
 <summary>1.1.2011.01</summary>
@@ -556,7 +573,7 @@ Mer information finns i [Installationsbilder för Microsoft Defender-operativsys
 - Ingen
 
 ### <a name="additional-information"></a>Ytterligare information
-- Lade till stöd för installationsbilder för Windows 10 RS1 eller senare.  
+- Lade till stöd för Windows 10 RS1 eller senare OS-installationsbilder.  
 <br/>
 </details>
 
@@ -564,7 +581,7 @@ Mer information finns i [Installationsbilder för Microsoft Defender-operativsys
 
 | Artikel | Beskrivning  |
 |:---|:---|
-|[Installationsbilder för Microsoft Defender-uppdatering för Windows-operativsystemet](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Granska uppdateringspaket för program mot skadlig programvara för bilder av OS-installationen (WIM- och VHD-filer). Hämta installationsbilder för Microsoft Defender Antivirus för Windows 10 (Enterprise, Pro och Home), Windows Server 2019 och Windows Server 2016.  |
+|[Installationsbilder för Microsoft Defender Windows för operativsystemet](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Granska uppdateringspaket för program mot skadlig programvara för bilder av OS-installationen (WIM- och VHD-filer). Hämta Microsoft Defender Antivirus uppdateringar för Windows 10 (versionerna Enterprise, Pro, Home), Windows Server 2019 och Windows Server 2016 installationsbilder.  |
 |[Hantera hur skyddsuppdateringar hämtas och tillämpas](manage-protection-updates-microsoft-defender-antivirus.md) | Skyddsuppdateringar kan skickas via många källor. |
 |[Hantera när skyddsuppdateringar ska hämtas och tillämpas](manage-protection-update-schedule-microsoft-defender-antivirus.md) | Du kan schemalägga när skyddsuppdateringar ska hämtas. |
 |[Hantera uppdateringar för slutpunkter som är in uppdaterade](manage-outdated-endpoints-microsoft-defender-antivirus.md) | Om en slutpunkt missar en uppdatering eller schemalagd genomsökning kan du tvinga fram en uppdatering eller genomsökning nästa gång en användare loggar in. |

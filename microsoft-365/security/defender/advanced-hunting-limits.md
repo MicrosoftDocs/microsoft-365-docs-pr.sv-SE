@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c9526363b0430514455db1fbdf12cfb7a18229f1
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d7563a8299bbe7d543b065bb25eeb3bc90a854b9
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932995"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245606"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>Avancerade kvoter för sökning och användningsparametrar
 
@@ -35,7 +35,7 @@ ms.locfileid: "51932995"
 **Gäller för:**
 - Microsoft 365 Defender
 
-För att hålla tjänstens prestanda och responsiva, anger avancerad sökning olika kvoter och användningsparametrar (kallas även "tjänstbegränsningar"). De här kvoter och parametrar som gäller för frågor körs manuellt och av [anpassade identifieringsregler.](custom-detection-rules.md) Kunder som kör flera frågor regelbundet bör spåra förbrukning och [använda optimeringstips för](advanced-hunting-best-practices.md) att minimera störningar.
+För att hålla tjänstens prestanda och responsiva, anger avancerad sökning olika kvoter och användningsparametrar (kallas även "tjänstbegränsningar"). Dessa kvoter och parametrar gäller separat för frågor som körs manuellt och för frågor som körs med anpassade [identifieringsregler.](custom-detection-rules.md) Kunder som kör flera frågor regelbundet bör tänka på de här begränsningarna och [tillämpa optimeringstips för](advanced-hunting-best-practices.md) att minimera störningar.
 
 Se följande tabell för att förstå befintliga kvoter och användningsparametrar.
 
@@ -44,7 +44,7 @@ Se följande tabell för att förstå befintliga kvoter och användningsparametr
 | Dataområde | 30 dagar | Varje fråga | Varje fråga kan slå upp data från de senaste 30 dagarna. |
 | Resultatuppsättning | 10 000 rader | Varje fråga | Varje fråga kan returnera upp till 10 000 poster. |
 | Timeout | 10 minuter | Varje fråga | Varje fråga kan köras i upp till 10 minuter. Om det inte är klart inom 10 minuter visar tjänsten ett fel.
-| CPU-resurser | Baserat på klientorganisationens storlek | - I timmen och sedan var 15:e minut<br>- Dagligen vid 12 midnatt | Tjänsten tillämpar den dagliga kvoten och 15-minuterskvoten separat. För varje kvot visas ett [fel i portalen](advanced-hunting-errors.md) när en fråga körs och klientorganisationen har förbrukat över 10 % av de tilldelade resurserna. Frågor blockeras om klientorganisationen har nått 100 % till efter nästa dagliga eller 15-minuterscykel. |
+| CPU-resurser | Baserat på klientorganisationens storlek | Var 15:e minut | Portalen [visar ett fel när](advanced-hunting-errors.md) en fråga körs och klientorganisationen har förbrukat över 10 % av de allokerade resurserna. Frågor blockeras om klientorganisationen har nått 100 % till efter den kommande 15-minuterscykeln. |
 
 >[!NOTE] 
 >En separat uppsättning kvoter och parametrar gäller för avancerade sökningsfrågor som utförs via API:t. [Läs mer om avancerade API:er för sökning](./api-advanced-hunting.md)

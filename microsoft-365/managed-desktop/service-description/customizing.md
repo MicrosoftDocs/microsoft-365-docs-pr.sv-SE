@@ -1,6 +1,6 @@
 ---
 title: Undantag från tjänstplanen
-description: Så här anvisar du undantag för standard abonnemanget
+description: Så här begär du undantag från standardtjänstplanen
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,72 +9,72 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 97fe3fe1734908c46dcfff4acd76ce9ae5b8b1a5
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 59a2b8227eb7e410ecf8506ce288978213537edc
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841273"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245522"
 ---
 # <a name="exceptions-to-the-service-plan"></a>Undantag från tjänstplanen
 
-Microsoft Managed Desktop tillhandahåller en granskad enhets lista, standardinställningar för [enheter](device-policies.md), program krav och vissa [konfigurerbara inställningar](../working-with-managed-desktop/config-setting-overview.md), som är utformade för att tillhandahålla en säker, produktiv och Pleasant upplevelse för användare. Det är bäst att alltid vara med tjänsten enligt anvisningarna. Vi känner inte igen att viss information om tjänsten kanske inte passar exakt med organisationens behov. Om du tror att du behöver ändra tjänsten på något sätt är det viktigt att du följer följande processer för att begära dessa ändringar.
+Microsoft Hanterat skrivbord finns en anpassad enhetslista, [standardinställningar](device-policies.md)för enheter, [](../working-with-managed-desktop/config-setting-overview.md)programkrav och vissa konfigurerbara inställningar , allt utformat för att ge användarna en säker, produktiv och trevlig upplevelse. Det är bäst att alltid ha kvar tjänsten som den tillhandahålls. Men vi känner igen att viss information om tjänsten kanske inte exakt passar organisationens behov. Om du anser att du behöver ändra tjänsten på något sätt är det viktigt att du följer följande processer för att begära dessa ändringar.
  
 ## <a name="types-of-exceptions"></a>Typer av undantag
 
-Ett undantag är ett tillägg eller ändring till Microsoft Managed desktop base-konfigurationen. exempel intervall från USB-portars konfiguration för distribution av en ny driv rutin. Det följer med följande undantag:
+Ett undantag är alla tillägg eller ändringar i Microsoft Hanterat skrivbord baskonfiguration. Exempel kan vara allt från KONFIGURATION av USB-portar till distribution av en ny drivrutin. Vi grupperar olika undantag enligt följande:
 
-|Type (Typ)  |Beskrivning  |
+|Typ  |Beskrivning  |
 |---------|---------|
-|Produktivitets program     |  Förgrunds program som behövs av användarna, begränsade enligt [program kraven](mmd-app-requirements.md)       |
-|Säkerhets agenter & VPN     |  Program vara som används för att skydda, övervaka eller ändra enhetens eller nätverkets beteende       |
-|Övervakning med digital upplevelse     |  Program vara som används för att spåra data på en användares enhet för att rapportera till den       |
-|Maskinvaru-eller program varu driv rutiner     |   Driv rutiner, begränsade enligt [program kraven](mmd-app-requirements.md)      |
-|Principerna     | Windows 10-eller Microsoft 365-appar för företags inställningar på en hanterad enhet        |
-|Enheter     | Enheter som inte är med i [listan](device-list.md) med hanterade Station ära datorer        |
-|Annat     |  Något som inte täcks av de andra områdena       |
+|Produktivitetsprogram     |  Förgrundsprogramvara som användare behöver, begränsad enligt [programkraven](mmd-app-requirements.md)       |
+|Säkerhetsagenter & VPN     |  Programvara som används för att skydda, övervaka eller ändra enhetens eller nätverkets beteende       |
+|Övervakning av digital upplevelse     |  Programvara som används för att spåra data på en användares enhet för att rapportera till IT       |
+|Maskinvaru- eller programvarudrivrutiner     |   Drivrutiner, som begränsas av [programkraven](mmd-app-requirements.md)      |
+|Principer     | Windows 10 eller Microsoft 365-appar för företag på en hanterad enhet        |
+|Enheter     | Enheter som inte finns på [Microsoft Hanterat skrivbord-enhet](device-list.md)        |
+|Annat     |  Allt som inte omfattas av andra områden       |
  
 ## <a name="request-an-exception"></a>Begära ett undantag
 
-Skicka förfrågningar via administrations portalen för Microsoft Managed Desktop genom att skapa en ändringsbegäran. Se till att du inkluderar dessa uppgifter:
+Skicka förfrågningar via Microsoft Hanterat skrivbord-administrationsportalen genom att skapa en ändringsförfrågan. Se till att ange följande information:
 
--   Undantags typ: vilken kategorin är den? (se föregående tabell)
--   Krav: Vad är det specifika företags behovet för undantaget?
--   Förslag: vilken lösning har du för företag?
--   Tids linje: hur länge vill du att detta undantag ska göras? 
+- Undantagstyp: Vilken undantagskategori är den? (se föregående tabell)
+- Krav: Vad är det specifika affärskravet för undantaget?
+- Förslag: Vilken lösning begär ditt företag?
+- Tidslinje: Hur länge vill du att undantaget ska pågå? 
 
-## <a name="how-we-assess-an-exception-request"></a>Hur vi utvärderar en undantags förfrågan
+## <a name="how-we-assess-an-exception-request"></a>Så här gör vi för att bedöma en begäran om undantag
 
-När vi granskar undantags förfrågningar, bedömer vi dessa faktorer i följande ordning:
+När vi granskar begäran om undantag bedömer vi dessa faktorer i följande ordning:
  
-1.  Vissa program och principer som Microsoft Managed Desktop distribueras till för alla enheter inte är överlåtbara, så din begäran får inte påverka dem. Se [enhetens konfiguration](device-policies.md) för mer information.
-2.  Begränsad produktivitet program vara som krävs av en användare ska kunna göra sitt jobb godkänt. 
-3.  Om vi kan uppfylla ditt krav med hjälp av Microsoft-teknik kommer vi troligen att godkänna din begäran om en tids period på tre till 12 månader (beroende på projektets omfattning).
-4.  Om vi inte kan uppfylla ditt krav med hjälp av Microsoft-teknik kommer vi antagligen att godkänna din begäran såvida den inte bryter mot något av villkoren nedan.  
+1. Vissa program och principer Microsoft Hanterat skrivbord distribuerar till alla enheter är inte negobara, så din begäran får inte påverka dem. Mer information [finns](device-policies.md) i Enhetskonfiguration.
+2. Begränsad produktivitetsprogram som en användare behöver för att göra sitt jobb kommer sannolikt att godkännas. 
+3. Om vi kan uppfylla dina krav med hjälp av Microsoft-teknik godkänner vi antagligen din begäran om en undantagsmigreringsperiod på tre till 12 månader (beroende på projektets omfattning).
+4. Om vi inte uppfyller dina krav med hjälp av Microsoft-teknik godkänner vi din begäran såvida den inte strider mot något av villkoren nedan.  
 
-Dessa principer garanterar att Microsoft Managed Desktop alltid uppfyller dina behov när du spårar avvikelser från vår standardmall. 
+De här principerna säkerställer Microsoft Hanterat skrivbord alltid kan uppfylla dina behov samtidigt som du spårar avvikelser från vår standardmall. 
 
-## <a name="key-conditions"></a>Huvud villkor
+## <a name="key-conditions"></a>Nyckelvillkor
 
 Vi granskar undantag för att säkerställa att de inte bryter mot något av dessa villkor:
 
--   Ett undantag får inte påverka systemsäkerheten. 
--   Underhåll av undantaget får inte medföra en betydande kostnad för antingen hanterad Microsoft-dator eller support.
--   Ett undantag får inte påverka systemets stabilitet, till exempel genom att kernel-läge kraschar eller hänger sig.
--   Ändringen får inte begränsa oss från att hantera tjänsten eller konflikten med grundläggande Microsoft hanterad Skriv bords teknik.
+- Ett undantag får inte påverka systemsäkerhet negativt. 
+- Att underhålla undantaget får inte medför en betydande kostnad för Microsoft Hanterat skrivbord åtgärder eller support.
+- Ett undantag får inte påverka systemstabiliteten, till exempel genom att kernelläget kraschar eller hänger sig.
+- Ändringen får inte hindra oss från att använda tjänsten eller vara i konflikt med Microsoft Hanterat skrivbord teknik.
 
-Dessa villkor kan ändras i framtiden. Om vi gör sådana ändringar får vi 30 dagars varsel innan dessa villkor träder i kraft.  Om Microsoft Managed Desktop levererar ett alternativt sätt att möta ett godkänt undantags fel kommer Microsoft Managed Desktop att meddela kunden att Microsoft Managed Desktop förändras på det sätt som stöds. 
+Dessa villkor kan komma att ändras i framtiden. Om vi gör sådana ändringar kommer vi att tillhandahålla 30 dagars förvarning innan dessa villkor börjar gälla.  Om Microsoft Hanterat skrivbord levererar ett alternativt sätt att uppfylla ett godkänt undantag meddelar Microsoft Hanterat skrivbord kunden bör Microsoft Hanterat skrivbord på vilket sätt som stöd för undantaget ska användas. 
 
-## <a name="revoking-approval-for-an-exception"></a>Återkalla godkännandet för ett undantag
+## <a name="revoking-approval-for-an-exception"></a>Återkalla godkännande av undantag
 
-När ett begärt undantag är godkänt och distribuerat kan vi upptäcka problem som bryter mot de viktiga förhållanden som inte var uppenbart när vi godkände ändringen. I den här situationen kanske vi måste återkalla godkännandet för undantaget.
+När ett begärt undantag har godkänts och distribuerats är det möjligt att vi kan upptäcka problem som bryter mot de nyckelvillkor som inte blev tydligt när vi godkänt ändringen från början. I det här fallet kan vi behöva återkalla godkännandet av undantaget.
  
-Om det sker meddelar vi dig med hjälp av Microsoft Managed Desktop admin-portalen. Från första gången vi meddelar dig har du 90 dagar på dig att ta bort undantaget innan de enheter som har undantaget inte längre är bundna av Microsoft Managed Desktop Service Level-avtal. Vi skickar flera meddelanden till dig enligt en strikt tids linje – en allvarlig händelse kan kräva att vi ändrar tids linjen eller våra beslut om ett undantag. Vi *tar inte bort* ett undantag utan ditt medgivande, men alla enheter med ett återkallat undantag kommer inte längre att vara bundna av vårt service nivå avtal. Här är tids linjen för meddelanden som vi skickar till dig:
+Om det händer meddelar vi dig via administrationsportalen Microsoft Hanterat skrivbord. Första gången du meddelas har du 90 dagar på dig att ta bort undantaget innan enheterna med undantaget inte längre är bundna Microsoft Hanterat skrivbord av serviceavtal. Vi skickar flera meddelanden enligt en strikt tidslinje – men ett allvarligt incident eller hot kan innebära att vi måste ändra tidslinjen eller våra beslut om ett undantag. Vi tar inte bort *ett* undantag utan ditt medgivande, men alla enheter med ett återkallat undantag är inte längre bundna av vårt servicenivåavtal. Här är tidslinjen för meddelanden som vi skickar till dig:
 
-- **Första omlägget:** Vi ger det första meddelandet i vårt beslut att återkalla godkännande, inklusive information om varför vi återkallar det, de åtgärder vi rekommenderar att du vidtar, deadline för dessa åtgärder och hur du följer om du vill överklaga beslutet. Detta meddelande gäller 90 dagar innan undantaget måste tas bort från alla enheter. 
-- **Andra Förvarningen (30 dagar senare):** Vi tillhandahåller ett andra meddelande, inklusive informationen i det första meddelandet. 
-- **Tredje meddelande (60 dagar efter första Förvarningen):** Vi tillhandahåller ett tredje meddelande, inklusive informationen i det första meddelandet. 
-- **Slutligt meddelande (en vecka före den 90 dagen):** Vi tillhandahåller ett fjärde meddelande, inklusive informationen i det första meddelandet.
-- **90 dagar efter första Förvarningen:** Det går inte längre att använda Microsoft Managed Desktop service agreement för enheter som har återkallat undantag. Du kan när som helst utmana beslutet och ge ytterligare information för övervägande, inklusive uppgradering, konfigurations ändringar eller ändring av program vara. 
+- **Första meddelandet:** Vi lämnar ett första meddelande om vårt beslut att återkalla godkännandet, inklusive information om varför vi återkallar det, de åtgärder vi rekommenderar att du ska vidta, tidsgränsen för dessa åtgärder och åtgärder att följa om du vill tilltala beslutet. Det här meddelandet inträffar 90 dagar i förväg innan undantaget måste tas bort från alla enheter. 
+- **Andra meddelandet (30 dagar senare):** Vi tillhandahåller ett andra meddelande, inklusive samma information som angavs i det första meddelandet. 
+- **Tredje meddelandet (60 dagar efter det första meddelandet):** Vi tillhandahåller ett tredje meddelande, inklusive samma information som angavs i det första meddelandet. 
+- **Sista meddelandet (en vecka före deadlinen på 90 dagar):** Vi tillhandahåller ett fjärde meddelande, inklusive samma information som angavs i det första meddelandet.
+- **90 dagar efter det första meddelandet:** Microsoft Hanterat skrivbord servicenivåavtal gäller inte längre för enheter som har det återkallade undantaget. Du kan när som helst utmaninga beslutet och lämna ytterligare information för överväganden, inklusive uppgradering, konfigurationsändringar eller ändring av programvara. 
 
 

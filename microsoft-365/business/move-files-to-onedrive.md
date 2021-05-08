@@ -23,13 +23,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
-description: Läs om hur du kan flytta personliga arbetsfiler och känsliga företagsfiler till OneDrive för företag med några få enkla steg.
-ms.openlocfilehash: d6bcf2b41f1052c521fda50557aac4bf6a3800fa
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Lär dig hur du kan flytta personliga arbetsfiler och känsliga företagsfiler till OneDrive för företag med några få enkla steg.
+ms.openlocfilehash: 4dadc87c0168a9fcdcc795a94df8ee5b7fc7fd91
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580083"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245113"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Flytta filer till OneDrive för företag
 
@@ -37,14 +37,14 @@ Titta på en kort video om att flytta filer till OneDrive för företag.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341] 
 
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](../business-video/index.yml).
 
 
 ## <a name="move-files-to-onedrive-for-business"></a>Flytta filer till OneDrive för företag
 
 Om en användare har en dator som innehåller många personliga filer, bör du först flytta filerna till OneDrive för företag:
   
-1. Gå till portal.office.com och logga in med användarens autentiseringsuppgifter för Microsoft 365 för företag.
+1. Gå till portal.office.com och logga in med användarens inloggningsuppgifter Microsoft 365 för företag.
 
 2. Klicka på appfönstret ![The app launcher icon in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) och gå till OneDrive. 
     
@@ -54,4 +54,4 @@ Du kan även använda ett tredjepartsverktyg, till exempel ForensiT, för att f�
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Mer information om att konfigurera och använda Microsoft 365 för företag
 
-[Utbildningsvideor för Microsoft 365 Business](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Utbildningsvideor för Microsoft 365 Business](../business-video/index.yml)

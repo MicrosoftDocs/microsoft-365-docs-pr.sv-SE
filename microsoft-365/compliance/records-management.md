@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Med hantering av arkivhandlingar i Microsoft 365 kan du använda kvarhållningsscheman i en filplan som hanterar kvarhållning, arkivhandlingsdeklaration och borttagning.
-ms.openlocfilehash: ac8e9bf2ac9ac47518788cd19a197818c13078a1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 853303dcaffcbacfcf805b8617b836254cf31ad8
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "52162336"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245438"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Mer information om hantering av arkivhandlingar i Microsoft 365
 
 >*[Licensieringsvägledning för Microsoft 365 för säkerhet och efterlevnad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Organisationer av alla typer kräver en lösning för hantering av arkivhandlingar för att hantera föreskrivna, juridiska och affärskritiska arkivhandlingar i företagets data. Hantering av arkivhandlingar i Microsoft 365 hjälper en organisation att hantera sina juridiska åtaganden, ger möjlighet att visa regelefterlevnad och ökar effektiviteten med regelbunden borttagning av objekt som inte längre måste behållas, inte längre har något värde eller inte längre krävs för affärsändamål.
+Organisationer av alla typer kräver en lösning för hantering av arkivhandlingar för att hantera regelverk, juridiska och affärskritiska arkivhandlingar i företagets data. Hantering av arkivhandlingar i Microsoft 365 hjälper en organisation att hantera sina juridiska åtaganden, ger möjlighet att visa regelefterlevnad och ökar effektiviteten med regelbunden disposition av objekt som inte längre måste behållas, inte längre har något värde eller inte längre krävs för affärsändamål.
 
 Använd följande funktioner för att få stöd för din lösning för hantering av arkivhandlingar i Microsoft 365:
 
@@ -48,7 +48,7 @@ Använd följande funktioner för att få stöd för din lösning för hantering
 
 - **Exportera information om alla borttagna objekt** med [exportalternativet](disposition.md#filter-and-export-the-views).
 
-- **Ange specifika behörigheter** för funktioner för arkivhandlingshanterare i organisationen för att [ha rätt åtkomst](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md).
+- **Ange specifika behörigheter** för funktioner för arkivhandlingshanterare i organisationen för att [ha rätt åtkomst](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
 Med de här funktionerna kan du införliva organisationens kvarhållningsscheman och -krav i en lösning för hantering av arkivhandlingar som hanterar kvarhållning, arkivhandlingsdeklaration och borttagning, för att stödja hela livscykeln för ditt innehåll.
 
@@ -111,6 +111,4 @@ När du använder en kvarhållningsetikett på ett listobjekt som har en dokumen
 
 ## <a name="configuration-guidance"></a>Konfigurationsvägledning
 
-Se [Komma igång med hantering av arkivhandlingar](get-started-with-records-management.md).
-
-Information om hur du markerar innehåll som en arkivhandling finns i [Deklarera arkivhandlingar med hjälp av kvarhållningsetiketter](declare-records.md).
+Se [Komma igång med hantering av arkivhandlingar](get-started-with-records-management.md). Den här artikeln innehåller information om prenumerationer, behörigheter och länkar till hela konfigurationsvägledningen för scenarier med hantering av arkivhandlingar.

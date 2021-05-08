@@ -3,7 +3,7 @@ title: URL-adresser och IP-adressintervall för Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/01/2021
+ms.date: 04/29/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,22 +24,22 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Sammanfattning: Office 365 kräver internetanslutning. Slutpunkterna nedan bör vara tillgängliga för kunder med Office 365-abonnemang, inklusive Government Community Cloud (GCC).'
 hideEdit: true
-ms.openlocfilehash: b4b256e9138f89cd9d44182a08dd22050b17f7c2
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 14f4b4097e905c7d63bde472a6a39d4ba59ae184
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581112"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245762"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>URL-adresser och IP-adressintervall för Office 365
 
-Office 365 kräver internetanslutning. Slutpunkterna nedan bör vara tillgängliga för kunder med Office 365-abonnemang, inklusive Government Community Cloud (GCC).
+Office 365 kräver internetanslutning. Slutpunkterna nedan bör vara åtkomliga för kunder som använder Office 365-abonnemang, inklusive Government Community Cloud (GCC).
   
 *Office 365 Globalt (plus GCC)* | [Office 21 genom 365 Vianet](urls-and-ip-address-ranges-21vianet.md) | [Office 365 Tyskland](microsoft-365-germany-endpoints.md) | [Office 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md)  | [Office 365 U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md) |
 
 ||||
 |:-----|:-----|:-----|
-|**Uppdaterades senast:** 2021-01-03 – ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Ändringsloggsprenumeration](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Ladda ned:** alla obligatoriska och valfria destinationer i en [JSON formaterad](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) lista.  <br/> | **Använd:** våra proxy-[PAC-filer](managing-office-365-endpoints.md#pacfiles) <br/> |
+|**Uppdaterades senast:** 2021-04-29 – ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Ändringsloggsprenumeration](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Ladda ned:** alla obligatoriska och valfria destinationer i en [JSON formaterad](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) lista.  <br/> | **Använd:** våra proxy-[PAC-filer](managing-office-365-endpoints.md#pacfiles) <br/> |
 
  Börja med [Hantera Office 365-slutpunkter](managing-office-365-endpoints.md) för att förstå våra rekommendationer för hantering av nätverksanslutningar med dessa data. Slutpunktsdata uppdateras i början av varje månad med nya IP-adresser och URL:er som publicerats 30 dagar i förväg. Det gör det möjligt för kunder som ännu inte har automatiserade uppdateringar att slutföra processerna innan nya anslutningar krävs. Slutpunkter kan också uppdateras under månaden om det behövs för att lösa stöd för eskalering, säkerhetstillbud och andra omedelbara driftskrav. De data som visas på den här sidan nedan skapas från de REST-baserade webbtjänsterna. Om du använder ett skript eller en nätverksenhet för att komma åt dessa data ska du gå direkt till [Webbtjänst](microsoft-365-ip-web-service.md).
 
@@ -66,7 +66,7 @@ Data kolumnerna som visas är:
 >
 
 ## <a name="related-topics"></a>Relaterade ämnen
-[Ytterligare slutpunkter ingår inte i IP-adressen och URL-webbtjänsten för Office 365](https://docs.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide)
+[Ytterligare slutpunkter ingår inte i IP-adressen och URL-webbtjänsten för Office 365](additional-office365-ip-addresses-and-urls.md)
 
 [Hantera Office 365-slutpunkter](managing-office-365-endpoints.md)
 

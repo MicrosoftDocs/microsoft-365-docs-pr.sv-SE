@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b3fef3479fa2d36806e6657b31f5152c54b9251f
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 1c61e69b5c8d414ab229fa8bf64eb657a6e40304
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765005"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245966"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Vanliga frågor och svar om enhetsidentifiering
 
@@ -49,16 +49,20 @@ Du kan stänga av enhetsidentifiering via sidan [Avancerade](advanced-features.m
  I det här läget kan slutpunkter som förs över till Microsoft Defender för Endpoint aktivt registrera observerade enheter i nätverket för att samla in data (och se hur mycket nätverkstrafik det finns). Det här läget rekommenderas starkt för att skapa en tillförlitlig och sammanhängande enhetsinventering. Om du väljer att inaktivera det här läget och väljer Grundläggande identifieringsläge får du sannolikt bara begränsad synlighet för ohanterade slutpunkter i nätverket.
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>Kan jag styra vilka enheter som utför standardidentifiering?
- Du kan anpassa listan med enheter som används för identifiering av standard. Du kan aktivera standardidentifiering för alla enheter som har stöd för den här funktionen (för närvarande endast Windows 10-enheter) eller välja en delmängd eller delmängder av dina enheter genom att ange deras enhetstaggar. I så fall konfigureras alla andra enheter för endast enkel identifiering. Konfigurationen är tillgänglig på sidan inställningar för enhetsidentifiering.
+ Du kan anpassa listan med enheter som används för identifiering av standard. Du kan antingen aktivera standardidentifiering för alla enheter som har stöd för den här funktionen (för närvarande endast Windows 10-enheter) eller välja en delmängd eller delmängder av dina enheter genom att ange deras enhetstaggar. I så fall konfigureras alla andra enheter för endast enkel identifiering. Konfigurationen är tillgänglig på sidan inställningar för enhetsidentifiering.
+
+## <a name="can-i-exclude-unmanaged-devices-from-the-device-inventory-list"></a>Kan jag utesluta ohanterade enheter från listan över enhetsinventering?
+Ja, du kan använda filter som utesluter ohanterade enheter från listan över enhetsinventering. Du kan också använda kolumnen onboardingstatus i API-frågor för att filtrera bort ohanterade enheter. 
+
 
 ## <a name="which-onboarded-devices-can-perform-discovery"></a>Vilka onboarded-enheter kan identifieras?
  Onboarded devices running on Windows 10 version 1809 or later can perform discovery.
 
 ## <a name="what-happens-if-my-onboarded-devices-is-connected-to-my-home-network-or-to-public-access-point"></a>Vad händer om mina onboarded-enheter är anslutna till mitt hemnätverk eller till en offentlig åtkomstpunkt?
- Identifieringsmotorn skiljer mellan nätverkshändelser som tas emot i företagsnätverket jämfört med utanför företagsnätverket. Genom att korrelera nätverksidentifierare i alla klientorganisationens klienter differentieras mellan dem som tagits emot från privata nätverk och företagsnätverk. Privata nätverksenheter visas inte i inventeringen och kommer inte att sökas aktivt.
+ Identifieringsmotorn skiljer mellan nätverkshändelser som tas emot i företagsnätverket jämfört med utanför företagsnätverket. Genom att korrelera nätverksidentifierare i alla klientorganisationens klienter differentieras mellan dem som tagits emot från privata nätverk och företagsnätverk. Om till exempel de flesta enheter i nätverket rapporterar att de är anslutna till samma nätverksnamn, med samma standardgateway och ANSLUT-serveradress, kan det antas att det här nätverket är ett företagsnätverk. Privata nätverksenheter visas inte i inventeringen och kommer inte att sökas aktivt.
 
 ## <a name="what-protocols-are-you-capturing-and-analyzing"></a>Vilka protokoll samlar du in och analyserar?
- Som standard samlar alla onboarded-enheter som kör på Windows 10 version 1809 eller senare in och analyserar följande protokoll: ARP, CDP, WM, DHCPv6, IP (rubriker), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (rubriker), UDP (rubriker), WSD
+ Som standard samlar alla onboarded-enheter som körs på Windows 10 version 1809 eller senare in och analyserar följande protokoll: ARP, CDP,HCPv6, IP (rubriker), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (rubriker), UDP (rubriker), WSD
 
 ## <a name="which-protocols-do-you-use-for-active-probing-in-standard-discovery"></a>Vilka protokoll använder du för aktiv sannolikhet vid standardidentifiering?
  När en enhet är konfigurerad för att köra standardidentifiering, används sannolikhet för exponerade tjänster med hjälp av följande protokoll: ARP, FTP, HTTP, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL

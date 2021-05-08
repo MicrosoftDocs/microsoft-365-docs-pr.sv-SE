@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 01dd5feab17c68eed1da9d66c4310c50e90032c6
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 7d23230ebe4321f355128d1f3268e967a35a0a89
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52163016"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245654"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Läs mer om typer av känslig information
 
@@ -38,7 +38,7 @@ Känsliga informationstyper är mönsterbaserade klassificerare. De kan identifi
 - [Principer för dataförlustskydd](dlp-learn-about-dlp.md) 
 - [Känslighetsetiketter](sensitivity-labels.md)
 - [Kvarhållningsetiketter](retention.md)
-- [Hantering av insiderrisk](insider-risk-management.md)
+- [Insider-riskhantering](insider-risk-management.md)
 - [Efterlevnad av kommunikation](communication-compliance.md)
 - [Principer för automatiska policyer](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
@@ -158,5 +158,7 @@ Om du vill skapa anpassade typer av känslig information & Säkerhets- och efter
 - [Entitetsdefinitioner för typer av känslig information](sensitive-information-type-entity-definitions.md)
 - [Skapa en anpassad typ av känslig information](create-a-custom-sensitive-information-type.md)
 - [Skapa en anpassad typ av känslig information i PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+
+Mer information om hur du använder känsliga informationstyper för att följa sekretessregler för data finns i Distribuera [informationsskydd](../solutions/information-protection-deploy.md) för bestämmelser om datasekretess med Microsoft 365 (aka.ms/m365dataprivacy).
 
 <!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->

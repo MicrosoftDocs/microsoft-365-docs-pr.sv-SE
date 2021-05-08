@@ -1,6 +1,6 @@
 ---
 title: Modeller för Microsoft Cloud-arkitekturen – planering av företagsresurser
-description: De här Affischerna i Microsoft-molnarkitekturen ger information om Microsoft-molntjänster som Azure och Office 365.
+description: De här affischerna i Microsofts molnarkitektur ger information om Microsoft-molntjänster som Azure och Office 365.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,16 +13,16 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 61d7f3d805bf43fca21dd125e37b179e6284efc9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: dc9881bf869ce013a2ff913baa97f9b7d3de9bcc
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904702"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245822"
 ---
 # <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>Illustrationer för Microsoft moln för företagsarkitektur
 
-De här molnarkitekturaffischerna ger information om Microsoft-molntjänster, inklusive Microsoft 365, Azure Active Directory (Azure AD), Microsoft Intune, Microsoft Dynamics 365 och lokala och molnbaserade hybridlösningar. 
+De här molnarkitekturaffischerna ger information om Microsoft-molntjänster, bland annat Microsoft 365, Azure Active Directory (Azure AD), Microsoft Intune, Microsoft Dynamics 365 och lokala och molnbaserade hybridlösningar. 
 
 IT-beslutsfattare och IT-arkitekter kan använda de här resurserna till att hitta de perfekta lösningarna för sina arbetsbelastningar och till att fatta beslut om grundläggande infrastrukturkomponenter som nätverk, identitet och säkerhet.
 
@@ -48,7 +48,7 @@ Vilka IT-arkitekter behöver veta om nätverk för Microsoft-molntjänster och M
 <a name="hybrid"></a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Microsoft-hybridmoln för företagsarkitekter
 
-Vilka IT-arkitekter behöver veta om hybridmoln för Microsoft-tjänster och Microsoft-plattformar.
+Vilka IT-arkitekter behöver veta om hybridmoln för Microsoft-tjänster och plattformar.
   
 |**Objekt**|**Beskrivning**|
 |:-----|:-----|
@@ -75,10 +75,9 @@ What IT architects need to know about security in Microsoft cloud services and p
   
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Poster for Microsoft cloud security model](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=48121) <br/>Updated December 2018 | This model contains: <ul><li>Microsoft's role in providing secure services and platforms</li><li>Customer responsibilities to mitigate security risks</li><li>Top security certifications </li><li>Security offerings provided by Microsoft consulting services </ul><br/>|
+|[![Poster for Microsoft cloud security model](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| <br/>Updated April 2021 | This model contains: <ul><li>Microsoft and customer security responsibilities</li><li>Identity and device access</li><li>Threat protection</li><li>Information protection </ul><br/>|
 
 --> 
-
 
 <a name="attacks"></a>
 ### Vanliga attacker och Microsoft-funktioner som skyddar din organisation Läs om de vanligaste cyberattackerna och hur Microsoft kan hjälpa din organisation i alla steg av en attack. 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 817ed5e33505f691b11970e3da4c956afa7dc76c
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ea37ad4302eedf7d43e3ad03e94357a146c2216c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861065"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245582"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Förhandsversionsfunktioner i Microsoft Defender för slutpunkt
 
@@ -44,7 +44,7 @@ Defender för Endpoint-tjänsten uppdateras hela tiden med nya funktionsförbät
 Lär dig mer om nya funktioner i förhandsversionen av Defender för slutpunkt och bli bland de första som kan prova kommande funktioner genom att aktivera förhandsversionen.
 
 >[!TIP]
->Få ett meddelande när sidan uppdateras genom att kopiera och klistra in följande URL i din feedläsare: `https://docs.microsoft.com/api/search/rss?search=%22Microsoft+Defender+ATP+preview+features%22&locale=en-us`
+>Få ett meddelande när sidan uppdateras genom att kopiera och klistra in följande URL i din feedläsare: `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
 Mer information om nya funktioner som är allmänt tillgängliga finns i [Vad är nytt i Defender för slutpunkt.](whats-new-in-microsoft-defender-atp.md)
 
@@ -54,7 +54,7 @@ Du har tillgång till kommande funktioner som du kan lämna feedback på för at
 
 Aktivera inställningen för förhandsversionen och var bland de första att prova kommande funktioner.
 
-1. I navigeringsfönstret väljer du Inställningar **Avancerade**  >  **funktioner**  >  **Förhandsgranskningsfunktioner**.
+1. I navigeringsfönstret väljer du Knappen **Inställningar**  >  **avancerade funktioner för**  >  **förhandsgranskning.**
 
 2. Ändra inställningen mellan På **och** **Av och** välj **Spara inställningar**.
 

@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: Lär dig hur du konfigurerar utbildningsinnehållskällor för Microsoft Viva Learning (förhandsversion) Microsoft 365 administrationscentret för utbildning.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a1bbe65db9dee028f57849de8a5538c996c3e2a4
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: b2e6ab6306db9a5ac9d91226431e5876cc244499
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52101103"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245426"
 ---
 # <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>Konfigurera utbildningsinnehållskällor för Microsoft Viva Learning (förhandsversion) Microsoft 365 administrationscentret för utbildning
 
@@ -35,7 +35,7 @@ Administratören väljer vilka andra källor för utbildningsinnehåll (till exe
 > [!NOTE]
 >  Användarna loggar in på andra program än Microsoft och LinkedIn Learning Pro i en webbläsare eller ett inbäddat visningsprogram. Den konfigurerade inlärningen omfattas av separata licens-, sekretess- och tjänstvillkor mellan din organisation och tredje part, och inte villkoren för Viva Learning (förhandsversion). Innan du väljer den här typen av utbildning bör du kontrollera att organisationen och användarna har ett avtal.
 
-## <a name="assign-the-knowledge-admin-role-optional"></a>Tilldela knowledge admin-rollen [Valfritt]
+## <a name="assign-the-knowledge-admin-role-optional"></a>Tilldela knowledge admin-rollen (valfritt)
 
 Du måste vara global Microsoft 365 för att utföra de här uppgifterna.
 
@@ -78,11 +78,11 @@ Så här konfigurerar du inställningar för källor för utbildningsinnehåll i
 
 1.  I det vänstra navigeringsfältet i Microsoft 365 administrationscenter går du **till Inställningar**  >  **Organisationsinställningar.**
 
-2.  Välj **Utbildningsapp** (förhandsversion) **på** fliken Tjänster **på sidan Organisationsinställningar.**
+2.  Välj  **Viva Learning (förhandsversion)** **på** fliken Tjänster på sidan Organisationsinställningar.
 
      ![Inställningar sidan i Microsoft 365 administrationscenter som visar appen Utbildning visas.](../media/learning/learning-sharepoint-configure1.png)
 
-3.  På panelen **Utbildning (förhandsversion)** väljer du de utbildningsinnehållskällor du vill konfigurera för organisationen och väljer sedan **Spara**.
+3.  På panelen **Viva Learning (förhandsversion)** väljer du de utbildningsinnehållskällor du vill konfigurera för organisationen och väljer sedan **Spara**.
 
      ![Utbildningspanelen i administrationscentret Microsoft 365 med alternativ för innehållskällor.](../media/learning/learning-sharepoint-configure2.png)
 

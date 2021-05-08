@@ -1,5 +1,5 @@
 ---
-title: Hitta svar och hjälp
+title: Hitta dokument och utbildning
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,33 +20,28 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Läs om hur du hittar administratörshjälp för Microsoft 365 Business Premium.
-ms.openlocfilehash: 6d16f3ece9782a33c3377e4a6bc2a93b29d54c1a
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Läs mer om hur du hittar administratörshjälp för Microsoft 365 Business Premium.
+ms.openlocfilehash: 18a50c34f87fa47fe5777e87f8dafa62fb0ac04b
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578909"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245234"
 ---
-# <a name="find-answers-and-help-for-admins"></a>Hitta svar och hjälp för administratörer
+# <a name="find-docs-and-training"></a>Hitta dokument och utbildning
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGn5?autoplay=false]
+Om du har en fråga eller behöver hjälp med Microsoft 365 Business Premium finns det flera sätt att få hjälp.
 
-Om du har en fråga eller behöver hjälp med Microsoft 365 Business Premium har du flera alternativ för att få hjälp.
+## <a name="browse-all-small-business-training"></a>Bläddra igenom all utbildning för småföretag
 
-## <a name="try-it"></a>Prova!
+Länkar till all utbildning som du behöver för att använda Microsoft 365 småföretag finns i Microsoft 365 [för småföretag.](index.yml) 
 
-1. Logga in på [office.com](https://office.com) dina autentiseringsuppgifter för arbetet och välj **Administratör**.
-1. På startsidan för administrationscentret väljer du **Utbildning för administratörer för att** se tillgängliga utbildningsalternativ.
-1. Välj **Företagsägare och administratörer för** utbildning för små till medelstora företag.
-1. Välj **IT-specialister inom** företag för större eller mer komplexa företag.
-1. Återgå till administrationscentret och välj den här gången **Anpassad konfigurationsvägledning** om du vill se ett antal guider som vägleder dig genom specifika konfigurationsuppgifter.
-1. Gå tillbaka till startsidan för  administrationscentret och välj Utbildning för användare för att få hjälp med specifika appar och lär dig hur du får ut mesta av de funktioner du använder varje dag.
-1. Gå tillbaka till administrationscentret och välj **Behöver hjälp för** att öppna supportassistenten. Skriv din fråga eller det ämne du vill ha hjälp med och välj sedan **Skicka**. Välj länken i administrationscentret eller till artikeln som besvarar din fråga.
-1. Om du inte hittar ett svar på din fråga kan du alltid kontakta supporten, och en supporttekniker svarar dig inom kort.
+## <a name="search-for-microsoft-365-admin-center-docs-and-resources"></a>Sök efter Microsoft 365 dokument och resurser i administrationscentret
 
-Du kan också använda följande resurser för att få hjälp med problemet:
+Om du vill söka efter administrativa uppgifter och hjälp, till exempel återställa lösenord och tilldela Microsoft-prenumerationer, går du till sidan Microsoft 365 [hjälp för administrationscentret.](../admin/index.yml)
 
-- [aka.ms/learn365admin](../admin/index.yml)kan du söka efter alla administrativa uppgifter och hjälp, till exempel återställa lösenord och tilldela Microsoft-prenumerationer.
-- [answers.microsoft.com](https://answers.microsoft.com)på kan du söka efter svar, starta en diskussion och ställa frågor från andra användare.
-- [techcommunity.microsoft.com](https://techcommunity.microsoft.com), och gå med i en community med experter och få metodtips med Microsoft 365 för ditt företag.
+## <a name="join-the-community"></a>Gå med i communityn
+
+Starta en konversation, följ diskussioner och dela din kunskap med andra som använder Microsoft 365 småföretag genom att ansluta till [Microsoft Small Business-communityn.](https://smallbusiness.microsoft.com/)
+
+Om du har specifika frågor om andra produkter och tjänster kan du ställa frågor och följa relevanta diskussioner [i Fråga Microsoft-communityn.](https://answers.microsoft.com)

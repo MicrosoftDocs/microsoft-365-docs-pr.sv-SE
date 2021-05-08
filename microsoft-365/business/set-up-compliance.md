@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Konfigurera efterlevnadsfunktioner för att förhindra dataförlust och skydda din och dina kunders känsliga information.
-ms.openlocfilehash: c0accc37d3dcda9ba75813f01a98a3233c5a8369
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 945f8a283b90b89da2fbe67a073e0807b80d198f
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579963"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245093"
 ---
 # <a name="set-up-compliance-features"></a>Konfigurera funktioner för efterlevnad
 
@@ -39,9 +39,9 @@ Se [Skapa en DLP-princip från](../compliance/create-a-dlp-policy-from-a-templat
   
 DLP innehåller många färdiga principmallar för många olika språk. Till exempel Australia Financial Data, Canada Personal Information Act, U.S. Financial Data och så vidare. Se [Vad DLP-principmallarna innehåller](../compliance/what-the-dlp-policy-templates-include.md) för en fullständig lista. Alla mallar kan aktiveras ungefär som i exemplet med pii-mallar. 
   
-## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Konfigurera e-postbevarande med Exchange Online-arkivering
+## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Konfigurera e-postbevarande med Exchange Online - arkivering
 
- **Exchange Online-licensfunktioner hjälper till** att bevara efterlevnads- och regelstandarder genom att bevara e-postinnehållet för e-dataidentifiering. Det hjälper också till att minska risken om det finns en sekretess, och det är ett sätt att återställa data efter en säkerhetsöverträdelse eller när du behöver återställa borttagna objekt. Du kan använda bevarande av juridiska skäl för att bevara allt innehåll för en användare, eller använda bevarandeprinciper för att anpassa vad du vill bevara.
+ **Exchange Online - arkivering** att bevara efterlevnads- och regelstandarder genom att bevara e-postinnehållet för e-dataidentifiering. Det hjälper också till att minska risken om det finns en sekretess, och det är ett sätt att återställa data efter en säkerhetsöverträdelse eller när du behöver återställa borttagna objekt. Du kan använda bevarande av juridiska skäl för att bevara allt innehåll för en användare, eller använda bevarandeprinciper för att anpassa vad du vill bevara.
   
 **Bevarande av juridiska skäl:** Du kan bevara allt innehåll i postlådan, inklusive borttagna objekt, genom att sätta en användares hela postlåda i bevarande av juridiska skäl. 
     
@@ -49,7 +49,7 @@ Så här placerar du en postlåda i bevarande av juridiska skäl i administratio
     
 1. I det vänstra navigeringsfältet går du till **Användare** \> **aktiva användare.**
     
-2. Välj en användare vars postlåda du vill skapa bevarande av juridiska skäl för. I användarfönstret expanderar du **E-postinställningar** och bredvid **Fler inställningar** väljer du **Redigera Exchange-egenskaper**.
+2. Välj en användare vars postlåda du vill skapa bevarande av juridiska skäl för. I användarfönstret expanderar du **E-postinställningar** och bredvid **Fler inställningar** väljer du **Redigera Exchange egenskaper**.
     
 3. På användarens postlådesida väljer du ** postlådefunktioner **  i det vänstra navigeringsfältet och väljer sedan länken Aktivera under Bevarande av juridiska **skäl.**
     
@@ -61,7 +61,7 @@ Så här placerar du en postlåda i bevarande av juridiska skäl i administratio
 
 Känslighetsetiketter följer med Azure Information Protection (AIP) abonnemang 1 och hjälper dig att klassificera, och om du vill, skydda dina dokument och e-postmeddelanden genom att använda etiketter. Etiketter kan tillämpas automatiskt av administratörer som definierar regler och villkor, manuellt av användare eller genom en kombination där användarna får rekommendationer.
 
-Om du vill konfigurera känslighetsetiketter, visa [och hantera känslighetsetiketter](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) video.
+Om du vill konfigurera känslighetsetiketter, visa [och hantera känslighetsetiketter](../business-video/create-sensitivity-labels.md) video.
 
 
 

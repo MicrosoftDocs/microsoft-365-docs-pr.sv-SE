@@ -1,7 +1,7 @@
 ---
 title: Metoder och egenskaper för åtgärdsaktivitet
-description: API-svaret innehåller aktiviteter & för säkerhetshantering som skapats i klientorganisationen. Du kan begära alla åtgärdsaktiviteter, bara en åtgärdsaktivitet eller information om exponerade enheter för en vald åtgärdsaktivitet.
-keywords: apis, remediation, remediation api, get, remediation tasks,
+description: API-svaret innehåller & hantering av säkerhetsrisker åtgärder som skapats i klientorganisationen. Du kan begära alla åtgärdsaktiviteter, bara en åtgärdsaktivitet eller information om exponerade enheter för en vald åtgärdsaktivitet.
+keywords: apis, remediation, remediation api, get, remediation tasks, remediation methods, remediation properties,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f720d638ec469523a1d567dee9c01fa0974b0090
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 4c0ecd89c45ec2c91dc37f0c9cd0bfb868c0474e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061158"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245546"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>Metoder och egenskaper för åtgärdsaktivitet
 
@@ -39,14 +39,14 @@ ms.locfileid: "52061158"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-API-svaret innehåller [& åtgärder för](next-gen-threat-and-vuln-mgt.md)   säkerhetshantering som har skapats i klientorganisationen.  
+API-svaret [innehåller & hantering av säkerhetsrisker](next-gen-threat-and-vuln-mgt.md)   åtgärder som har skapats i klientorganisationen.  
 
 ## <a name="methods"></a>Metoder
 
 Metod | Datatyp | Beskrivning
 :---|:---|:---
-[Lista alla åtgärder](get-remediation-all-activities.md) | Samling för undersökning | Returnerar information om alla åtgärder.
-[Lista över exponerade enheter med en åtgärdsaktivitet](get-remediation-exposed-devices-activities.md) | Undersökningsentitet | Returnerar information om exponerade enheter för den angivna åtgärdsaktiviteten.
+[Lista alla åtgärdsaktiviteter](get-remediation-all-activities.md) | Samling för undersökning | Returnerar information om alla åtgärder.
+[Lista exponerade enheter av en åtgärdsaktivitet](get-remediation-exposed-devices-activities.md) | Undersökningsentitet | Returnerar information om exponerade enheter för den angivna åtgärdsaktiviteten.
 [Få en åtgärdsaktivitet efter ID](get-remediation-one-activity.md) | Undersökningsentitet | Returnerar information för den angivna åtgärdsaktiviteten.
 
 Läs mer [om åtgärder](tvm-remediation.md).
@@ -88,10 +88,10 @@ vendorId | Sträng | Relaterade leverantörsnamn
 
 - [Få en åtgärdsaktivitet efter ID](get-remediation-one-activity.md)
 
-- [Lista alla åtgärder](get-remediation-all-activities.md)
+- [Lista alla åtgärdsaktiviteter](get-remediation-all-activities.md)
 
-- [Lista över exponerade enheter med en åtgärdsaktivitet](get-remediation-exposed-devices-activities.md)
+- [Lista exponerade enheter av en åtgärdsaktivitet](get-remediation-exposed-devices-activities.md)
 
-- [Riskbaserade hot & sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)
+- [Riskbaserade hot & hantering av säkerhetsrisker](next-gen-threat-and-vuln-mgt.md)
 
 - [Svagheter i organisationen](tvm-weaknesses.md)

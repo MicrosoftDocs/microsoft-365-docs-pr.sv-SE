@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Använd filtrering av behörigheter för innehållssökning för att låta en eDiscovery-hanterare endast söka i en delmängd av postlådor och webbplatser i organisationen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 78d36ccd602ea546099e768d7e91594a668df586
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c36263466e103c0401e51b42b5d7ec3f6e2b4f9c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "52162338"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245354"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>Konfigurera behörighetsfiltrering för innehållssökning
 
@@ -45,7 +45,7 @@ Filtrering av sökbehörigheter stöds av funktionen Innehållssökning i Säker
 
 ## <a name="requirements-to-configure-permissions-filtering"></a>Krav för att konfigurera behörighetsfiltrering
 
-- Om du vill köra cmdlet:arna för säkerhetsfilter för efterlevnad måste du vara medlem i rollgruppen Organisationshantering i säkerhets- & Efterlevnadscenter. Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md).
+- Om du vill köra cmdlet:arna för säkerhetsfilter för efterlevnad måste du vara medlem i rollgruppen Organisationshantering i säkerhets- & Efterlevnadscenter. Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
 - Du måste ansluta till både PowerShell Exchange Online säkerhets- & säkerhets- och säkerhetscenter för att kunna använda cmdlets för efterlevnadssäkerhetsfilter. Detta är nödvändigt eftersom dessa cmdlets kräver åtkomst till postlådeegenskaper, och det är därför du måste ansluta till Exchange Online PowerShell. Se anvisningarna i nästa avsnitt.
 
@@ -89,7 +89,7 @@ Information om felsökning av PowerShell-anslutningsfel finns i:
 
 **New-ComplianceSecurityFilter används** för att skapa ett sökbehörighetsfilter. I följande tabell beskrivs parametrarna för den här cmdleten. Alla parametrar krävs för att skapa ett säkerhetsfilter för efterlevnad.
   
-|**Parameter**|**Beskrivning**|
+| Parameter | Beskrivning |
 |:-----|:-----|
 | _Åtgärd_ <br/> | Parametern  _Action_ anger den typ av sökåtgärd som filtret tillämpas på. De möjliga åtgärderna för innehållssökning är:  <br/><br/> **Exportera:** Filtret används när du exporterar sökresultat.  <br/> **Förhandsgranska:** Filtret används när du förhandsgranskar sökresultat.  <br/> **Rensa:** Filtret används när du rensar sökresultat.  <br/> **Sök:** Filtret används när du kör en sökning.  <br/> **Alla:** Filtret används i alla sökåtgärder.  <br/> |
 | _FilterName_ <br/> |Parametern  _FilterName_ anger namnet på behörighetsfiltret. Namnet används för att identitetsidentiteta ett filter när du använder cmdlet:arna **Get-ComplianceSecurityFilter,** **Set-ComplianceSecurityFilter** och **Remove-ComplianceSecurityFilter.**  <br/> |
@@ -213,7 +213,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 **Set-ComplianceSecurityFilter används för** att ändra ett befintligt sökbehörighetsfilter. Den enda obligatoriska parametern är  _FilterName_. 
   
-|**Parameter**|**Beskrivning**|
+| Parameter | Beskrivning |
 |:-----|:-----|
 | _Åtgärd_| Parametern  _Action_ anger den typ av sökåtgärd som filtret tillämpas på. De möjliga åtgärderna för innehållssökning är: <br/><br/> **Exportera:** Filtret används när du exporterar sökresultat.  <br/> **Förhandsgranska:** Filtret används när du förhandsgranskar sökresultat.  <br/> **Rensa:** Filtret används när du rensar sökresultat.  <br/> **Sök:** Filtret används när du kör en sökning.  <br/> **Alla:** Filtret används i alla sökåtgärder.  <br/> |
 | _FilterName_|Parametern  _FilterName_ anger namnet på behörighetsfiltret. |
@@ -265,5 +265,8 @@ Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.u
 - **Fungerar filtrering av sökbehörigheter för inaktiva postlådor?** Ja, du kan använda innehållsfilter för postlådor och postlådor för att begränsa vem som kan söka i inaktiva postlådor i organisationen. Precis som en vanlig postlåda måste en inaktiv postlåda konfigureras med den mottagaregenskap som används för att skapa ett behörighetsfilter. Om det behövs kan du använda **kommandot Get-Mailbox -InactiveMailboxOnly** för att visa egenskaperna för inaktiva postlådor. Mer information finns i Skapa [och hantera inaktiva postlådor i Office 365](create-and-manage-inactive-mailboxes.md).
     
 - **Fungerar filtrering av sökbehörigheter för gemensamma mappar?** Nej. Som tidigare förklarats kan filtrering av sökbehörigheter inte användas för att begränsa vem som kan söka i gemensamma mappar i Exchange. Objekt i gemensamma mappplatser kan till exempel inte uteslutas från sökresultatet av ett behörighetsfilter. 
-    
+
 - **Förhindrar det att användare söker på alla innehållsplatser i en viss tjänst från att söka på innehållsplatser i en annan tjänst?** Nej. Som tidigare förklarats måste du skapa ett sökbehörighetsfilter för att uttryckligen hindra användare från att söka på innehållsplatser i en viss tjänst (till exempel förhindra en användare från att söka i en Exchange-postlåda eller någon annan SharePoint-webbplats). Med andra ord hindrar inte användare att söka i postlådor om de skapar ett filter med sökbehörigheter som gör att en användare kan söka på alla SharePoint-webbplatser i organisationen. Om du till exempel vill tillåta SharePoint att bara söka på SharePoint webbplatser måste du skapa ett filter som hindrar dem från att söka i postlådor. Om du vill tillåta Exchange att bara söka i postlådor måste du skapa ett filter som hindrar dem från att söka på webbplatser.
+
+- **Räknas sökbehörighetsfilter mot teckenbegränsningar i sökfrågan?** Ja. Sökbehörighetsfilter räknas mot teckenbegränsningen för sökfrågor. Mer information finns i [Begränsningar i Advanced eDiscovery](limits-ediscovery20.md).
+

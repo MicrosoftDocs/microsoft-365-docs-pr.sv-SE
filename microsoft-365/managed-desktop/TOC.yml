@@ -104,6 +104,8 @@
           href: get-started/enterprise-state-roaming.md
         - name: Lokalisera användarupplevelsen
           href: get-started/localization.md
+        - name: Verifiera nya enheter
+          href: get-started/validate-device.md
         - name: Konfigurera enheter
           href: get-started/set-up-devices.md
           items:

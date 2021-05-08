@@ -9,37 +9,40 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0ae2952337c2b7dd6f056f637fdcf295776ab404
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 3ebbb4359e460c0e8ddd6d353ce70057ed352212
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46613100"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245342"
 ---
 # <a name="device-inventory-report"></a>Enhets inventerings rapport
 
-I vyn **enheter** kan du välja fliken **Exportera alla** för att ladda ned en kommaavgränsad fil inklusive den här informationen:
+I vyn **Enheter** kan du välja fliken **Exportera alla för** att ladda ned en kommaavgränsad fil, inklusive den här informationen:
 
-- Serie nummer
-- Enhetens namn
-- Enhet: senaste incheckning
+- Serienummer
+- Enhetsnamn
+- Senaste incheckning av enhet
 - Hanteras av
-- Tillverkarnamn
+- Tillverkare
 - Modell
-- TIDIGARE
+- OS
 - OS-licens
 - OS-version
-- Egendom
-- Registrerings datum
-- Ring namn
-- Gratis lagrings utrymme i GB
-- Lagring-totalt i GB
-- Registrerade av användar-UPN
+- Ägarskap
+- Registreringsdatum
+- Ringnamn
+- Storage – kostnadsfritt i GB
+- Storage – Totalt i GB
+- Registrerad av UPN-användare
 - Tilldelad användare
 - Status
 - Ålder (månader)
-- Filen
+- Profil
 - Inloggade användare
+- TPM-version
+- Säker start aktiverad
+- Primär disktyp
+- Totalt fysiskt minne 
 
-
-![Vyn enheter som visar en lista med enheter och relaterad information. Kryss rutorna intill de viktigaste filtren för aktivitet, registrerings status. Ovanför det är en sökruta. Flikar högst upp för att registrera nya enheter, uppdatera vyn, exportera fel och exportera data. ](../../media/mmd-devices-view.png)
+![I vyn Enheter visas en lista med enheter och relaterad information. Markera kryssrutorna längst upp och välj filter för aktivitet, registreringsstatus. Ovanför den finns en sökruta. Flikar högst upp för att registrera nya enheter, uppdatera vyn, exportera fel och exportera data. ](../../media/mmd-devices-view.png)

@@ -20,12 +20,12 @@ search.appverid:
 description: Läs mer om funktionerna i Microsoft 365 Business Premium.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: f4c41e86f3a98c2af076a58e311aa14be79704e9
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 336d206b3853baa2bdde5d925113dc0887919da7
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580336"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245186"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 
@@ -45,5 +45,7 @@ När du registrerar dig för Microsoft 365 Business Premium får du alla produkt
 | Säkra affärsinformation | Dina personliga data skyddas på personliga enheter med PIN-åtkomst och med begränsat kopiera och spara. Du kan också lägga till informationsskydd för att se till att bara behöriga personer har åtkomst till känslig information. |
 | Skydda dina enheter | Du kan skydda dina arbetsfiler på enheter genom att begränsa mobil åtkomst, t. ex. kopiera och klistra in. Du kan också välja att radera affärsdata från registrerade mobila enheter om de försvinner eller blir stulna. |
 | Ytterligare säkerhetsfunktioner | Avancerade funktioner i Microsoft 365 Business Premium är tillgängliga för att skydda ditt företag mot cyberhot och skydda känslig information. Funktionerna omfattar Office 365 Avancerat skydd, principer för skydd mot dataförlust (DLP), Exchange Online-arkivering, Azure Information Protection och Intune. |
+
+Det snabbaste sättet att konfigurera säkerhet och börja samarbeta säkert för dig med Microsoft Business Premium är att följa vägledningen i det här biblioteket: [Microsoft 365 för mindre företag och kampanjer](../campaigns/index.md). Den här vägledningen har utvecklats i samarbete med teamet för Microsoft Defending Democracy för att skydda alla kunder med småföretag mot cyberhot från avancerade hackare. 
 
 Fullständiga detaljer finns i [Microsoft 365 Business-innehåll](../business/index.yml).

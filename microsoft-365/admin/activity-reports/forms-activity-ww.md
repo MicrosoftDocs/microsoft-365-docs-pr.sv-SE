@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365-rapporter i administrationscentret – Formuläraktivitet
+title: Microsoft 365 Rapporter i administrationscentret – Formuläraktivitet
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,23 +14,22 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
-ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - BCS160
 - MST160
 - MET150
 - MOE150
-description: Lär dig hur du hämtar en Microsoft Forms-aktivitetsrapport med hjälp av instrumentpanelen Rapporter i Microsoft 365 i administrationscentret för Microsoft 365.
-ms.openlocfilehash: f4cd021003ad9d9bca4f986a33f49e62e2df1889
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Lär dig hur du hämtar en Microsoft Forms-aktivitetsrapport med hjälp Microsoft 365 instrumentpanelen Rapporter Microsoft 365 administrationscentret.
+ms.openlocfilehash: 977ee360d91df0b15e25e86d052d852f9acafe6c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579692"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52242330"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365-rapporter i administrationscentret – Formuläraktivitet
+# <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365 Rapporter i administrationscentret – Formuläraktivitet
 
-På instrumentpanelen Rapporter **i** Microsoft 365 ser du en översikt över aktiviteter i organisationens produkter. Här kan du gå in på detaljnivå i rapporter för enskilda produkter för att få mer ingående förståelse för aktiviteterna inom varje produkt. Ta en titt på [översiktsavsnittet för rapporter](activity-reports.md).
+På Microsoft 365 **Rapporter** ser du en översikt över aktiviteter i organisationens produkter. Här kan du gå in på detaljnivå i rapporter för enskilda produkter för att få mer ingående förståelse för aktiviteterna inom varje produkt. Ta en titt på [översiktsavsnittet för rapporter](activity-reports.md).
   
 Du kan till exempel få information om aktiviteten för varje användare som har en licens för att använda Microsoft Forms genom att titta på deras interaktion med formulär. Det hjälper dig också att förstå samarbetsnivån genom att titta på antalet formulär som skapats och formulär som användaren har svarat på.
   
@@ -44,11 +43,11 @@ Du kan till exempel få information om aktiviteten för varje användare som har
   
 ## <a name="interpret-the-forms-activity-report"></a>Tolka formuläraktivitetsrapporten
 
-Du kan visa aktiviteterna i formulärrapporten genom att välja **fliken** Aktivitet.<br/>![Microsoft 365-rapporter – Microsoft Forms-aktivitetsrapport.](../../media/275fb0a1-b9d9-4233-8aaf-e7df73cc705f.png)
+Du kan visa aktiviteterna i formulärrapporten genom att välja **fliken** Aktivitet.<br/>![Microsoft 365 – Microsoft Forms-aktivitetsrapport.](../../media/275fb0a1-b9d9-4233-8aaf-e7df73cc705f.png)
 
 Välj **Välj kolumner för** att lägga till eller ta bort kolumner i rapporten.  <br/> ![Formuläraktivitetsrapport – välj kolumner](../../media/0c9b0b69-5dc7-43ea-8e2c-54407b6ce2ab.png)
 
-Du kan också exportera rapportdata till en Excel-CSV-fil genom att välja **länken** Exportera. Då exporteras data för alla användare och du kan göra enkel sortering och filtrering för vidare analys. Om du har mindre än 2 000 användare kan du sortera och filtrera i tabellen i själva rapporten. Om du har fler än 2 000 användare måste du exportera data för att kunna filtrera och sortera. 
+Du kan också exportera rapportdata till en Excel .csv fil genom att välja **länken** Exportera. Då exporteras data för alla användare och du kan göra enkel sortering och filtrering för vidare analys. Om du har mindre än 2 000 användare kan du sortera och filtrera i tabellen i själva rapporten. Om du har fler än 2 000 användare måste du exportera data för att kunna filtrera och sortera. 
   
 |Objekt|Beskrivning|
 |:-----|:-----|

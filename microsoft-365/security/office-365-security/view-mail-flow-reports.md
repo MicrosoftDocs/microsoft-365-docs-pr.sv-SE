@@ -19,12 +19,12 @@ description: Administratörer kan läsa mer om de e-postflödesrapporter som är
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 13871908c3b09660906b9233d23495830cf31ba9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 38beac44af191a027db722ade25ca7fd0e505d9b
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207257"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245678"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Visa e-postflödesrapporter på instrumentpanelen Rapporter i Säkerhets- & Efterlevnadscenter
 
@@ -35,7 +35,7 @@ ms.locfileid: "51207257"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Utöver de e-postflödesrapporter som [](mail-flow-insights-v2.md) finns tillgängliga på instrumentpanelen för e-postflöde i säkerhets- och efterlevnadscentret för & finns det en mängd andra e-postflödesrapporter på instrumentpanelen Rapporter som hjälper dig att övervaka din Microsoft 365-organisation.
+Utöver de e-postflödesrapporter som [](mail-flow-insights-v2.md) finns tillgängliga på instrumentpanelen för e-postflöde i säkerhets- och efterlevnadscentret för & finns det en mängd andra e-postflödesrapporter på instrumentpanelen Rapporter som hjälper dig att övervaka Microsoft 365 organisation.
 
 Om du har nödvändiga [behörigheter kan](#what-permissions-are-needed-to-view-these-reports)du visa de här rapporterna i Säkerhets- [& efterlevnadscenter genom](https://protection.office.com) att gå till **Instrumentpanelen** \> **rapporter.** Gå direkt till instrumentpanelen Rapporter genom att öppna <https://protection.office.com/insightdashboard> .
 
@@ -95,29 +95,29 @@ Om du klickar **på** Filter i en detaljtabellvy kan du ange ett datumintervall 
 
 Om du vill gå tillbaka till rapportvyn klickar du **på Visa rapport.**
 
-## <a name="exchange-transport-rule-report"></a>Rapport över Exchange-transportregel
+## <a name="exchange-transport-rule-report"></a>Exchange över transportregel
 
-I **rapporten Exchange-transportregel** visas effekten av e-postflödesregler (kallas även transportregler) på inkommande och utgående meddelanden i organisationen.
+I **Exchange transportregel visas** effekten av e-postflödesregler (kallas även transportregler) på inkommande och utgående meddelanden i organisationen.
 
-Om du vill visa rapporten öppnar du [säkerhets- &,](https://protection.office.com)går till **instrumentpanelen** \> **Rapporter** och väljer **Exchange-transportregel**. Gå direkt till rapporten genom att öppna <https://protection.office.com/reportv2?id=ETRRuleReport> .
+Om du vill visa rapporten öppnar du [Säkerhets- &,](https://protection.office.com)går till **instrumentpanelen** Rapporter \>  och väljer **Exchange Transportregel.** Gå direkt till rapporten genom att öppna <https://protection.office.com/reportv2?id=ETRRuleReport> .
 
-![Widget för Exchange-transportregel på instrumentpanelen Rapporter](../../media/transport-rule-report-widget.png)
+![Exchange för transportregel på instrumentpanelen Rapporter](../../media/transport-rule-report-widget.png)
 
-### <a name="report-view-for-the-exchange-transport-rule-report"></a>Rapportvy för Exchange-transportregelrapporten
+### <a name="report-view-for-the-exchange-transport-rule-report"></a>Rapportvy för Exchange för transportregel
 
 Följande diagram är tillgängliga i rapportvyn:
 
-- **Visa data efter: Exchange-transportregler** \> **Dela upp efter: Riktning**: I det här diagrammet visas antalet **inkommande** och **utgående** meddelanden som påverkades av transportreglerna.
+- **Visa data efter: Exchange för transportregler** \> **Dela upp efter: Riktning**: I det här diagrammet visas antalet **inkommande** och **utgående** meddelanden som påverkades av transportreglerna.
 
-- **Visa data efter: Exchange-transportregler** \> **Dela upp efter: Allvarlighetsgrad**:  I det här diagrammet visas antalet meddelanden med hög allvarlighetsgrad och medel allvarlighetsgrad samt låg **allvarlighetsgrad.** Du anger allvarlighetsnivån som en åtgärd i regeln **(Granska** denna regel med allvarlighetsnivå eller _AngeGranskningSalla_). Mer information finns i Åtgärder för [e-postflödesregel i Exchange Online.](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
+- **Visa data efter: Exchange för transportregler** \> **Dela upp efter: Allvarlighetsgrad**:  I det här diagrammet visas antalet meddelanden med hög allvarlighetsgrad och medel allvarlighetsgrad samt låg **allvarlighetsgrad.** Du anger allvarlighetsnivån som en åtgärd i regeln **(Granska** denna regel med allvarlighetsnivå eller _AngeGranskningSalla_). Mer information finns i Åtgärder [för e-postflödesregel i Exchange Online](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
-- **Visa data efter: DLP Exchange-transportregler** \> **Dela upp efter: Riktning**: I det  här diagrammet visas antalet **inkommande** och utgående meddelanden som påverkades av DLP-transportregler (Data Loss Prevention). Du kan förfina diagrammet ytterligare genom att välja bland följande alternativ:
+- **Visa data efter: DLP Exchange transportregler** \> **Dela upp efter: Riktning**: I det  här diagrammet visas antalet **inkommande** och utgående meddelanden som påverkades av DLP-transportregler (Data Loss Prevention). Du kan förfina diagrammet ytterligare genom att välja bland följande alternativ:
 
   - **Visa data för: Alla DLP-transportregler**
   - **Visa data för: Komprometterade användare**
   - **Visa data för: Låg mängd innehåll som identifierats av U.S. Act**
 
-- **Visa data efter: DLP Exchange-transportregler** \> **Dela upp efter: Riktning**: I  den här vyn visas  antalet meddelanden med hög allvarlighetsgrad och medel allvarlighetsgrad och meddelanden med låg allvarlighetsgrad som påverkades av DLP-transportregler.  Du kan förfina diagrammet ytterligare genom att välja bland följande alternativ:
+- **Visa data efter: DLP Exchange transportregler** \> **Dela upp efter: Riktning**: I  den här vyn visas  antalet meddelanden med hög allvarlighetsgrad och medel allvarlighetsgrad och meddelanden med låg allvarlighetsgrad som påverkades av DLP-transportregler.  Du kan förfina diagrammet ytterligare genom att välja bland följande alternativ:
 
   - **Visa data för: Alla DLP-transportregler**
   - **Visa data för: Komprometterade användare**
@@ -129,13 +129,13 @@ Om du klickar **på** Filter i en rapportvy kan du ändra resultatet med följan
 - Riktningsvärden
 - Värden för allvarlighetsgrad
 
-![Rapportvyn i rapporten Exchange-transportregel](../../media/transport-rule-report-report-view.png)
+![Rapportvyn i Exchange med transportregel](../../media/transport-rule-report-report-view.png)
 
-### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Detaljtabellvyn för Exchange-transportregelrapporten
+### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Detaljtabellvyn för Exchange transportregelrapport
 
 Om du **klickar på Visa** informationstabell beror den information som visas på det diagram som du tittar på:
 
-- **Visa data efter: Exchange-transportregler:**
+- **Visa data efter: Exchange Transportregler:**
 
   - **Datum**
   - **Transportregel**
@@ -145,7 +145,7 @@ Om du **klickar på Visa** informationstabell beror den information som visas p�
   - **Allvarlighetsgrad**
   - **Riktning**
 
-- **Visa data efter: DLP-transportregler i Exchange:**
+- **Visa data efter: DLP Exchange transportregler:**
 
   - **Datum**
   - **DLP-princip**
@@ -166,7 +166,7 @@ Om du vill gå tillbaka till rapportvyn klickar du **på Visa rapport.**
 
 ## <a name="forwarding-report"></a>Vidarebefordransrapport
 
-I **vidarebefordransrapporten** visas organisationens automatiskt vidarebefordrade meddelanden till externa domäner från Exchange Online-postlådor. Vidarebefordrade meddelanden kan vara en säkerhets- eller efterlevnadsrisk och kan ange ett komprometterat konto.
+I **vidarebefordransrapporten** visas organisationens automatiskt vidarebefordrade meddelanden till externa domäner från Exchange Online postlådor. Vidarebefordrade meddelanden kan vara en säkerhets- eller efterlevnadsrisk och kan ange ett komprometterat konto.
 
 Om du vill visa rapporten öppnar du [säkerhets- & Kompatibilitetscenter](https://protection.office.com), går till  \> **instrumentpanelen rapporter** och väljer **Vidarebefordransrapport.** Gå direkt till rapporten genom att öppna <https://protection.office.com/reportv2?id=MailFlowForwarding> .
 
@@ -214,7 +214,7 @@ Om du vill gå tillbaka till rapportvyn klickar du **på Visa rapport**.
 
 ## <a name="mailflow-status-report"></a>Statusrapport för e-postflöde
 
-Statusrapporten **E-postflöde** liknar rapporten [Skickad](#sent-and-received-email-report)och mottagen e-post, med ytterligare information om tillåtna eller blockerade e-postmeddelanden i kanten. Det här är den enda rapporten som innehåller information om gränsskydd och som visar hur mycket e-post som blockeras innan de tillåts till tjänsten för utvärdering av Exchange Online Protection (EOP). Det är viktigt att vara säker på att om ett meddelande skickas till fem mottagare räknas det som fem olika meddelanden och inte ett meddelande.
+Statusrapporten **E-postflöde** liknar rapporten [Skickad](#sent-and-received-email-report)och mottagen e-post, med ytterligare information om tillåtna eller blockerade e-postmeddelanden i kanten. Det här är den enda rapporten som innehåller information om gränsskydd och som visar hur mycket e-post som blockeras innan den tillåts till tjänsten för utvärdering av Exchange Online Protection (EOP). Det är viktigt att vara säker på att om ett meddelande skickas till fem mottagare räknas det som fem olika meddelanden och inte ett meddelande.
 Om du vill visa rapporten öppnar du [Säkerhets- & Efterlevnadscenter](https://protection.office.com), går till  \> **instrumentpanelen Rapporter** och väljer **Statusrapport för e-postflöde.** Gå direkt till statusrapporten **E-postflöde genom att** öppna <https://protection.office.com/mailflowStatusReport> .
 
 ![Widget för statusrapport för e-postflöde på instrumentpanelen Rapporter](../../media/mail-flow-status-report-widget.png)
@@ -264,9 +264,9 @@ Om du klickar **på Välj en kategori för mer** information kan du välja bland
 
 I detaljvyn kan du bara exportera data under en dag. Om du vill exportera data i 7 dagar måste du utföra 7 olika exportåtgärder.
 
-Varje exporterad CSV-fil är begränsad till 150 000 rader. Om dagens data innehåller fler än 150 000 rader skapas flera CSV-filer.
+Varje exporterad .csv är begränsad till 150 000 rader. Om dagens data innehåller mer än 150 000 rader skapas .csv filer.
 
-![Typvy i statusrapporten För e-postflöde ](../../media/mail-flow-status-report-type-view.png)
+![Typvy i statusrapporten För e-postflöde](../../media/mail-flow-status-report-type-view.png)
 
 ### <a name="direction-view-for-the-mailflow-status-report"></a>Riktningsvyn för statusrapporten E-postflöde
 
@@ -284,9 +284,9 @@ Vyn **Välj en kategori för mer information** om tillgängliga val och beteende
 
 I detaljvyn kan du bara exportera data under en dag. Om du vill exportera data i 7 dagar måste du utföra 7 olika exportåtgärder.
 
-Varje exporterad CSV-fil är begränsad till 150 000 rader. Om dagens data innehåller fler än 150 000 rader skapas flera CSV-filer.
+Varje exporterad .csv är begränsad till 150 000 rader. Om dagens data innehåller mer än 150 000 rader skapas .csv filer.
 
-![Riktningsvyn i statusrapporten E-postflöde ](../../media/mail-flow-status-report-direction-view.png)
+![Riktningsvyn i statusrapporten E-postflöde](../../media/mail-flow-status-report-direction-view.png)
 
 ### <a name="funnel-view-for-the-mailflow-status-report"></a>Trattvyn för statusrapporten E-postflöde
 
@@ -317,9 +317,9 @@ I det här diagrammet visas antalet e-postmeddelanden ordnade efter:
 - **E-post efter fil och URL detonation**<sup>1</sup>
 - **E-post identifierades som därefter skydd efter leverans (URL klicka på tidsskydd)**
 
-<sup>1</sup> endast Defender för Office 365
+<sup>1</sup> Defender för Office 365 endast
 
-Om du vill visa e-post filtrerad efter EOP eller Defender för Office 365 separat klickar du på värdet i diagramförklaringen.
+Om du vill visa e-post som filtrerats efter EOP eller Defender Office 365 separat klickar du på värdet i diagramförklaringen.
 
 Datatabellen innehåller följande information, visad i fallande datumordning:
 
@@ -339,8 +339,8 @@ Datatabellen innehåller följande information, visad i fallande datumordning:
   - **Personifiering för användare:** Filtrerade meddelanden på grund av ett försök att utge sig för att vara en användare (meddelandeavsändare) som definierats i inställningarna för personifieringsskydd i en princip mot nätfiske.
   - **Domänpersonifiering:** Meddelanden filtrerade på grund av ett försök att utge sig för att vara en domän som definierats i inställningarna för personifieringsskydd i en princip mot nätfiske.
 - **Detonation av fil och URL (Defender för Office 365)**:
-  - **Fildeonation:** Meddelanden filtrerade enligt principen för säkra bifogade filer.
-  - **URL-detonation:** Meddelande filtrerat genom en princip för säkra länkar.
+  - **Detonation för filer:** Meddelanden filtrerade efter Valv princip för bifogade filer.
+  - **URL-detonation**: Meddelande filtrerat av Valv princip för länkar.
 - **Post-delivery protection and ZAP (ATP) or ZAP (EOP)**: ZAP indicates zero hour auto-purge.
 
 Om du markerar en rad i datatabellen visas ytterligare en uppdelning av antalet e-postmeddelanden i den utfällklienten.
@@ -352,11 +352,11 @@ När du har **klickat** **på Exportera** under Alternativ kan du välja något 
 - **Sammanfattning (med data för de senaste 90 dagarna som mest)**
 - **Information (med data för de senaste 30 dagarna som mest)**
 
-Välj **ett** område under Datum och klicka sedan på **Använd**. Data för de aktuella filtren exporteras till en CSV-fil.
+Välj **ett** område under Datum och klicka sedan på **Använd**. Data för de aktuella filtren exporteras till en .csv fil.
 
-Varje exporterad CSV-fil är begränsad till 150 000 rader. Om informationen innehåller mer än 150 000 rader skapas flera CSV-filer.
+Varje exporterad .csv är begränsad till 150 000 rader. Om informationen innehåller mer än 150 000 rader skapas .csv filer.
 
- ![Trattvyn i statusrapporten För e-postflöde ](../../media/mail-flow-status-report-funnel-view.png)
+ ![Trattvyn i statusrapporten För e-postflöde](../../media/mail-flow-status-report-funnel-view.png)
 
 ### <a name="tech-view-for-the-mailflow-status-report"></a>Tech view for the Mailflow status report
 
@@ -380,13 +380,13 @@ Det här diagrammet visar meddelanden ordnade i följande kategorier:
 
 - **Totalt antal e-postmeddelanden**
 - **Tillåt i Edge** **och Filtrerad Edge**
-- **Inte skadlig programvara,** **identifiering av säkra bifogade** <sup>\*</sup> filer, identifiering av skadlig **programvara** och **regelmeddelanden**
+- **Inte skadlig programvara**, **Valv identifiering av bifogade filer,** identifiering av skadlig <sup>\*</sup> **programvara** och **regelmeddelanden**
 - **Inte phish**, **DMARC-fel,** **personidentifiering,** **förfalskning och** **phish-identifiering**
 - **Ingen identifiering med URL-detonation och** **URL-detonation**<sup>\*</sup>
 - **Inte** skräppost 
-- **Icke-skadlig e-post,** **identifiering av säkra** länkar och <sup>\*</sup> **ZAP**
+- **Icke-skadlig e-post** **, Valv identifiering av länkar** och <sup>\*</sup> **ZAP**
 
-<sup>\*</sup> Defender för Office 365
+<sup>\*</sup>Defender för Office 365
 
 När du hovrar över en kategori i diagrammet visas antalet meddelanden i den kategorin.
 
@@ -395,14 +395,14 @@ Datatabellen innehåller följande information, visad i fallande datumordning:
 - **Datum**
 - **Totalt antal e-postmeddelanden**
 - **Edge filtrerad**
-- **Motor mot skadlig programvara, säkra bifogade filer, regel filtrerad:**
+- **Motor mot skadlig programvara, Valv bifogade filer, regel filtrerad:**
   - **Regel filtrerad:** Meddelanden filtrerade på grund av e-postflödesregler (kallas även transportregler).
 - **DMARC, personifiering, förfalskning, nätfiske filtrerat:**
   - **DMARC:** Meddelanden filtreras på grund av att meddelandet inte klarar sin DMARC-autentiseringskontroll.
 - **Identifiering av URL-adresser**
 - **Skräppostskydd filtreras**
 - **ZAP har tagits bort**
-- **Identifiering av säkra länkar**
+- **Identifiering av Valv länkar**
 
 Om du markerar en rad i datatabellen visas ytterligare en uppdelning av antalet e-postmeddelanden i den utfällklienten.
 
@@ -413,11 +413,11 @@ När du **klickar** på Exportera **kan** du välja något av följande värden 
 - **Sammanfattning (med data för de senaste 90 dagarna som mest)**
 - **Information (med data för de senaste 30 dagarna som mest)**
 
-Välj **ett** område under Datum och klicka sedan på **Använd**. Data för de aktuella filtren exporteras till en CSV-fil.
+Välj **ett** område under Datum och klicka sedan på **Använd**. Data för de aktuella filtren exporteras till en .csv fil.
 
-Varje exporterad CSV-fil är begränsad till 150 000 rader. Om informationen innehåller mer än 150 000 rader skapas flera CSV-filer.
+Varje exporterad .csv är begränsad till 150 000 rader. Om informationen innehåller mer än 150 000 rader skapas .csv filer.
 
- ![Tech view in the Mailflow status report ](../../media/mail-flow-status-report-Tech-view.png)
+ ![Tech view in the Mailflow status report](../../media/mail-flow-status-report-Tech-view.png)
 
 ## <a name="sent-and-received-email-report"></a>Rapport om skickad och mottagen e-post
 
