@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 35a43aa7bfcd9ed8c83d10c2ec44a974b03bca72
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3f8a8c04f608096e5c226d6899fbbd983bd8d8c1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935575"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246434"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender för Endpoint för Android
 
@@ -50,26 +50,30 @@ I det här avsnittet beskrivs hur du installerar, konfigurerar, uppdaterar och a
 
     -   Microsoft Defender för slutpunktslicens tilldelad till slutanvändare av programmet. Se [Licenskrav för Microsoft Defender för Slutpunkt](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
 
-    -   Appen Intune Company Portal kan laddas ned från [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) och är tillgänglig på Android-enheten.
+    -   Intune-företagsportal-appen kan laddas ned från [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) och finns på Android-enheten.
 
-        -   Dessutom kan enheter registreras via [](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-company-portal) appen Intune-företagsportal för att framtvinga Intune-enhetsefterlevnadsprinciper. Det kräver att användaren tilldelas en Microsoft Intune-licens.
+        -   Dessutom kan enheter registreras via appen [Intune-företagsportal](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-company-portal) för att tillämpa Intune-enhetsefterlevnadsprinciper. Det kräver att användaren tilldelas en Microsoft Intune licens.
 
     -   Mer information om hur du tilldelar licenser finns i [Tilldela användare licenser.](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)
         
 
 -   **För administratörer**
 
-    -   Åtkomst till Microsoft Defender Säkerhetscenter-portalen.
+    -   Åtkomst till Microsoft Defender Säkerhetscenter portalen.
 
         > [!NOTE]
         > Microsoft Intune är den enda MDM-lösning (Mobile Device Management) som stöds för distribution av Microsoft Defender för slutpunkt på Android. För närvarande stöds endast registrerade enheter för tvingande Defender för Slutpunkt på Android-relaterade efterlevnadsprinciper för enheter i Intune. 
 
-    -   Access [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431)för att distribuera appen till registrerade användargrupper i organisationen.
+    -   Access [Microsoft Endpoint Manager administrationscenter](https://go.microsoft.com/fwlink/?linkid=2109431)för att distribuera programmet till registrerade användargrupper i organisationen.
+        
+### <a name="network-requirements"></a>Nätverkskrav
+
+- För att Microsoft Defender för slutpunkt på Android ska fungera när du är ansluten till ett nätverk måste brandväggen/proxyn konfigureras för att aktivera åtkomst till URL:er för [Microsoft Defender för slutpunktstjänsten.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
 
 ### <a name="system-requirements"></a>Systemkrav
 
 -   Android-enheter med Android 6.0 och högre.
--   Appen Intune Company Portal laddas ned från [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) och installeras. Enhetsregistrering krävs för att Intune-efterlevnadsprinciper för enheter ska tillämpas.
+-   Intune-företagsportal laddas ned från [Google Play och](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) installeras. Enhetsregistrering krävs för att Intune-efterlevnadsprinciper för enheter ska tillämpas.
 
 ### <a name="installation-instructions"></a>Installationsanvisningar
 
@@ -77,7 +81,7 @@ Microsoft Defender för slutpunkt på Android har stöd för installation i båd
 **För närvarande stöds personligt ägda enheter med arbetsprofil och företagsägd registrering av fullständigt hanterade användarenheter i Android Enterprise. Stöd för andra företagsläge i Android meddelas när du är klar.**
 
 Distribution av Microsoft Defender för slutpunkt på Android sker via Microsoft Intune (MDM).
-Mer information finns i Distribuera [Microsoft Defender för slutpunkt på Android med Microsoft Intune.](android-intune.md)
+Mer information finns i Distribuera [Microsoft Defender för slutpunkt på Android med Microsoft Intune](android-intune.md).
 
 
 > [!NOTE]

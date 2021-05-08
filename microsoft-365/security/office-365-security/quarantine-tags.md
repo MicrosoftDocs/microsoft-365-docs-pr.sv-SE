@@ -17,19 +17,19 @@ ROBOTS: NOINDEX
 description: Administratörer kan ta reda på hur de kan använda karantäntaggar för att styra vad användare kan göra med meddelanden i karantän.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 580cf2bad690d0fc6508d11178527ad218df763b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 512c589572502deacb5529ca9d6f2876861bf050
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207159"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274466"
 ---
 # <a name="quarantine-tags"></a>Karantäntaggar
 
 > [!NOTE]
 > Funktionerna som beskrivs i den här artikeln är för närvarande i förhandsversion, är inte tillgängliga för alla och kan komma att ändras.
 
-Med karantäntaggar i Exchange Online Protection (EOP) kan administratörer kontrollera vad användare kan göra med meddelanden i karantän baserat på hur meddelandet kom i karantän.
+Med karantäntaggar i Exchange Online Protection (EOP) kan administratörer styra vad användare kan göra med meddelanden i karantän baserat på hur meddelandet kom i karantän.
 
 EOP har traditionellt tillåtit eller förhindrat [](find-and-release-quarantined-messages-as-a-user.md) vissa nivåer av interaktivitet för meddelanden i karantän och [i skräppost-aviseringar för slutanvändare.](use-spam-notifications-to-release-and-report-quarantined-messages.md) Till exempel kan slutanvändarna visa och släppa meddelanden som satts i karantän genom skräppostfiltrering som skräppost eller massutskick, men som inte kan visa eller släppa meddelanden som har satts i karantän som nätfiske med hög säkerhet.
 
@@ -43,6 +43,10 @@ De enskilda behörigheterna kombineras i följande förinställda behörighetsgr
 
 De tillgängliga enskilda behörigheterna och vad som ingår eller inte ingår i de förinställda behörighetsgrupperna beskrivs i följande tabell:
 
+<br>
+
+****
+
 |Behörighet|Ingen åtkomst|Begränsad åtkomst|Fullständig åtkomst|
 |---|:---:|:---:|:---:|
 |**Tillåt avsändare** (_PermissionToAllowSender_)|||![Bockmarkering](../../media/checkmark.png)|
@@ -55,7 +59,7 @@ De tillgängliga enskilda behörigheterna och vad som ingår eller inte ingår i
 
 Om du inte gillar standardbehörigheterna i de förinställda behörighetsgrupperna kan du använda anpassade behörigheter när du skapar eller ändrar anpassade karantäntaggar. Mer information om vad varje behörighet gör finns i avsnittet om [taggbehörigheter för](#quarantine-tag-permission-details) karantän längre fram i den här artikeln.
 
-Du skapar och tilldelar karantäntaggar i Säkerhets- och efterlevnadscenter eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med Exchange Online-postlådor; fristående EOP PowerShell i EOP-organisationer utan Exchange Online-postlådor). &
+Du skapar och tilldelar karantäntaggar i Säkerhets- och efterlevnadscenter eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med Exchange Online-postlådor– fristående EOP PowerShell i EOP-organisationer utan Exchange Online-postlådor). &
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
@@ -126,6 +130,8 @@ Parametern _EndUserQuarantinePermissionsValue_ använder ett decimalvärde som k
 
 Den ordning och de värden som krävs för varje enskild behörighet i förinställda behörighetsgrupper beskrivs i följande tabell:
 
+<br>
+
 ****
 
 |Behörighet|Ingen åtkomst|Begränsad åtkomst|Fullständig åtkomst|
@@ -140,6 +146,7 @@ Den ordning och de värden som krävs för varje enskild behörighet i förinst�
 |PermissionToViewHeader<sup>\*</sup>|0|0|0|
 |Binärt värde|00000000|01101010|11101100|
 |Decimalvärde som ska användas|0|106|236|
+|
 
 <sup>\*</sup> Det här värdet är för närvarande alltid 0. För PermissionToViewHeader döljer inte värdet 0  knappen Visa meddelanderubrik i informationen om det karantänfördelade meddelandet (knappen är alltid tillgänglig).
 
@@ -224,6 +231,8 @@ Detaljerad information om syntax och parametrar finns i [Ny karantäntagg.](/pow
 ## <a name="step-2-assign-a-quarantine-tag-to-supported-features"></a>Steg 2: Tilldela en karantäntagg till funktioner som stöds
 
 I _skyddsfunktioner_ som stöds och som sätt meddelanden eller filer i karantän (automatiskt eller som en konfigurerbar åtgärd) kan du tilldela en karantäntagg till de tillgängliga karantänåtgärderna. Funktioner som sätt meddelanden i karantän och tillgängligheten för karantäntaggar beskrivs i följande tabell:
+
+<br>
 
 ****
 

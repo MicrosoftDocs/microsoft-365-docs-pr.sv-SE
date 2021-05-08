@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4898081103faa27c19d3a09ffba1b59670833dd8
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: fc1c1e0d3f68016651c04521e04ce348e5ab9a65
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860803"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246471"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Undersök enheter på enheter med live-svar
 
@@ -44,14 +44,14 @@ Med live-svar kan analytiker göra följande:
 - Kör grundläggande och avancerade kommandon för att göra saker på en enhet.
 - Ladda ned filer som exempel på skadlig programvara och resultat av PowerShell-skript.
 - Ladda ned filer i bakgrunden (nytt!).
-- Ladda upp ett PowerShell-skript eller körbart till biblioteket och kör det på en enhet från klientorganisationsnivå.
+- Upload ett PowerShell-skript eller körbart till biblioteket och kör det på en enhet på innehavarnivå.
 - Vidta eller ångra åtgärder.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
 Innan du kan starta en session på en enhet kontrollerar du att du uppfyller följande krav:
 
-- **Kontrollera att du kör en version av Windows som stöds.** <br/>
+- **Kontrollera att du kör en version av Windows**. <br/>
 Enheter måste köra någon av följande versioner av Windows
 
   - **Windows 10**
@@ -107,7 +107,7 @@ När du startar en svarssession på en enhet öppnas en instrumentpanel. På ins
 
 Instrumentpanelen ger dig också tillgång till:
 - Koppla från session
-- Ladda upp filer till biblioteket 
+- Upload filer till biblioteket 
 - Kommandokonsol
 - Kommandologg
 
@@ -143,7 +143,6 @@ Följande kommandon är tillgängliga för användarroller som ges möjlighet at
 |`connect` | Startar en svarssession i direktsändning på enheten. |
 |`connections` | Visar alla aktiva anslutningar. |
 |`dir` | Visar en lista med filer och undermappar i en katalog. |
-|`download <file_path> &` | En fil laddas ned i bakgrunden. |
 |`drivers` |  Visar alla drivrutiner som är installerade på enheten. |
 |`fg <command ID>` | Placera det angivna jobbet i förgrunden, vilket gör det till aktuellt jobb. <br> Obs! FG tar ett kommando-ID som är tillgängligt från jobb, inte från PID |
 |`fileinfo` | Hämta information om en fil. |
@@ -173,7 +172,7 @@ Följande kommandon är tillgängliga för användarroller som ges möjlighet at
 
 ## <a name="use-live-response-commands"></a>Använda kommandon för livesvar
 
-De kommandon som du kan använda i konsolen följer liknande principer som [Windows-kommandon.](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands#BKMK_c)
+De kommandon som du kan använda i konsolen följer liknande principer som Windows [Kommandon](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands#BKMK_c).
 
 Med avancerade kommandon får du en robustare uppsättning åtgärder som gör att du kan vidta mer kraftfulla åtgärder, till exempel ladda ned och ladda upp en fil, köra skript på enheten och vidta åtgärder för en enhet.
 
@@ -200,7 +199,7 @@ Här är några exempel:
 
 |Kommando  |Vad den gör  |
 |---------|---------|
-|`Download "C:\windows\some_file.exe" &`     |Börjar ladda ned en fil med *namnetsome_file.exe* fil i bakgrunden.         |
+|`getfile "C:\windows\some_file.exe" &`     |Börjar ladda ned en fil med *namnetsome_file.exe* fil i bakgrunden.         |
 |`fg 1234`     |Returnerar en nedladdning med kommando-ID *1234 till* förgrunden.         |
 
 
@@ -214,7 +213,7 @@ Du kan ha en samling PowerShell-skript som kan köras på enheter som du startar
 
 #### <a name="to-upload-a-file-in-the-library"></a>Ladda upp en fil i biblioteket
 
-1. Klicka **på Ladda upp fil till bibliotek**. 
+1. Klicka **Upload filen till biblioteket**. 
 
 2. Klicka **på** Bläddra och markera filen.
 
@@ -234,16 +233,6 @@ När som helst under en session kan du avbryta ett kommando genom att trycka på
 
 >[!WARNING]
 >Om du använder den här genvägen stoppas inte kommandot på agentsidan. Det avbryter bara kommandot i portalen. Så om du ändrar åtgärder som "åtgärd" kan det fortsätta medan kommandot avbryts. 
-
-### <a name="automatically-run-prerequisite-commands"></a>Köra nödvändiga kommandon automatiskt
-
-Vissa kommandon har nödvändiga kommandon för att köras. Om du inte kör det nödvändiga kommandot får du ett felmeddelande. Om du till exempel kör `download` kommandot utan `fileinfo` returneras ett fel.
-
-Du kan använda flagga automatiskt för att automatiskt köra nödvändiga kommandon, till exempel:
-
-```console
-getfile c:\Users\user\Desktop\work.txt -auto
-```
 
 ## <a name="run-a-powershell-script"></a>Köra ett PowerShell-skript 
 
@@ -286,7 +275,7 @@ Live Response har stöd för utdatatyper i tabell och JSON-format. För varje ko
 
 ## <a name="supported-output-pipes"></a>Utdatarör som stöds
 
-Live Response har stöd för utdata piping till CLI och fil. CLI är standardbeteendet för utdata. Du kan pipa utdata till en fil med följande kommando: [kommando] > [filnamn].txt.  
+Live Response har stöd för utdata piping till CLI och fil. CLI är standardbeteendet för utdata. Du kan skicka utdata till en fil i en kontroll med följande kommando: [kommando] > [filnamn].txt.  
 
 Exempel:
 

@@ -7,19 +7,20 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 94375bc843c6512616d49345bcc9e7f63899a708
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 2fdc646cf616ff6a6fa36a83be3d2b1dd0432fbe
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765089"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274622"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>Konfigurera undantag för filer som öppnas av processer
 
@@ -30,7 +31,7 @@ ms.locfileid: "51765089"
 
 - [Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Du kan utesluta filer som har öppnats av specifika processer från genomsökningar för Microsoft Defender Antivirus. Se [Rekommendationer för att definiera undantag](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) innan du definierar dina undantagslistor.
+Du kan utesluta filer som har öppnats av specifika processer från Microsoft Defender Antivirus genomsökningar. Läs Rekommendationer för att definiera undantag innan du definierar dina [undantagslistor.](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)
 
 I den här artikeln beskrivs hur du konfigurerar undantagslistor. 
 
@@ -43,13 +44,13 @@ I den här artikeln beskrivs hur du konfigurerar undantagslistor.
 |Alla filer på datorn som öppnas av en viss process i en särskild mapp | Om `c:\test\process.exe` du anger utesluts filer som endast öppnas av `c:\test\process.exe` |
 
 
-När du lägger till en process i undantagslistan för processen söker Microsoft Defender Antivirus inte igenom filer som öppnas i den processen, oavsett var filerna finns. Själva processen genomsöks dock om den inte också har lagts till i [filens undantagslista.](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+När du lägger till en process i undantagslistan för processen Microsoft Defender Antivirus inte genomsöka filer som öppnas i den processen, oavsett var filerna finns. Själva processen genomsöks dock om den inte också har lagts till i [filens undantagslista.](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
 Undantagen gäller endast [för realtidsskydd](configure-real-time-protection-microsoft-defender-antivirus.md)och övervakning. De gäller inte för schemalagda genomsökningar eller sökningar på begäran.
 
-Ändringar som görs med Grupprincip för **undantagslistorna visas** i listorna i [Windows-säkerhetsappen.](microsoft-defender-security-center-antivirus.md) Ändringar som görs i **Windows-säkerhetsappen visas emellertid inte** i listorna grupprinciper.
+Ändringar som görs med Grupprincip för **undantagslistorna visas** i listorna i [Windows-säkerhet program](microsoft-defender-security-center-antivirus.md). Men ändringar som görs i **Windows-säkerhet-programmet visas inte** i listorna grupprinciper.
 
-Du kan lägga till, ta bort och granska listorna för undantag i Grupprincip, Microsoft Endpoint Configuration Manager, Microsoft Intune och med Windows-säkerhetsappen, och du kan använda jokertecken för att ytterligare anpassa listorna.
+Du kan lägga till, ta bort och granska listorna för undantag i Grupprincip, Microsoft Endpoint Configuration Manager, Microsoft Intune och med Windows-säkerhet-appen, och du kan använda jokertecken för att ytterligare anpassa listorna.
 
 Du kan också använda PowerShell-cmdlets och WMI för att konfigurera undantagslistorna, inklusive att granska listorna.
 
@@ -59,13 +60,13 @@ Du kan [konfigurera hur lokalt och globalt definierade undantagslistor slås sam
 
 ## <a name="configure-the-list-of-exclusions-for-files-opened-by-specified-processes"></a>Konfigurera listan över undantag för filer som öppnas av angivna processer
 
-### <a name="use-microsoft-intune-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Använd Microsoft Intune för att utesluta filer som har öppnats av angivna processer från genomsökningar
+### <a name="use-microsoft-intune-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Använda Microsoft Intune för att utesluta filer som har öppnats av angivna processer från genomsökningar
 
-Mer information finns i Konfigurera inställningar för enhetsbegränsningar i [Microsoft Intune](/intune/device-restrictions-configure) och Microsoft Defender Antivirus för [Windows 10 i Intune.](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+Mer [information finns i Konfigurera inställningar Microsoft Intune](/intune/device-restrictions-configure) enhet Microsoft Defender Antivirus enhetbegränsningar för Windows 10 i [Intune.](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
-### <a name="use-microsoft-endpoint-manager-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Använd Microsoft Endpoint Manager för att utesluta filer som har öppnats av angivna processer från genomsökningar
+### <a name="use-microsoft-endpoint-manager-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Använda Microsoft Endpoint Manager för att utesluta filer som har öppnats av angivna processer från genomsökningar
 
-Se [Hur du skapar och distribuerar principer för program mot skadlig programvara: Undantagsinställningar](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) för information om hur du konfigurerar Microsoft Endpoint Manager (current branch).
+Se [Skapa och distribuera principer för program mot skadlig programvara: Undantagsinställningar](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) för information om konfigurering av Microsoft Endpoint Manager (current branch).
 
 ### <a name="use-group-policy-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Använd grupprinciper för att utesluta filer som har öppnats av angivna processer från genomsökningar
 
@@ -73,7 +74,7 @@ Se [Hur du skapar och distribuerar principer för program mot skadlig programvar
 
 2. I **redigeraren för grupprinciphantering går** du till **Datorkonfiguration och** klickar på **Administrativa mallar**.
 
-3. Expandera trädet till **Windows-komponenter > Microsoft Defender Antivirus > Undantag**.
+3. Expandera trädet och visa **Windows komponenter > Microsoft Defender Antivirus > Undantag**.
 
 4. Dubbelklicka på **Undantag för process** och lägg till undantagen:
 
@@ -110,9 +111,9 @@ Följande kodavsnitt skulle till exempel göra att Microsoft Defender AV-genoms�
 Add-MpPreference -ExclusionProcess "c:\internal\test.exe"
 ```
 
-Mer information om hur du använder PowerShell med Microsoft Defender Antivirus finns i Hantera antivirus med PowerShell-cmdlets och [Microsoft Defender Antivirus-cmdlets.](/powershell/module/defender)
+Mer information om hur du använder PowerShell med Microsoft Defender Antivirus finns i Hantera antivirus med PowerShell-cmdlets [och Microsoft Defender Antivirus-cmdlets.](/powershell/module/defender)
 
-### <a name="use-windows-management-instruction-wmi-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Använd WMI (Windows Management Instruction) för att utesluta filer som har öppnats av angivna processer från genomsökningar
+### <a name="use-windows-management-instruction-wmi-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Använd Windows för hanteringsinstruktioner (WMI) för att utesluta filer som har öppnats av angivna processer från genomsökningar
 
 Använd metoderna [ **Ange,** **Lägg** till **och Ta** bort **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) klassen för följande egenskaper:
 
@@ -122,11 +123,11 @@ ExclusionProcess
 
 Användandet av **Set**, **Add** och **Remove kan** jämföras med deras motsvarigheter i PowerShell: , `Set-MpPreference` och `Add-MpPreference` `Remove-MpPreference` .
 
-Mer information och tillåtna parametrar finns i [Windows Defender WMIv2 API:er.](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+Mer information och tillåtna parametrar finns i Windows Defender [WMIv2-API:er.](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-### <a name="use-the-windows-security-app-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Använd Windows-säkerhetsappen för att utesluta filer som har öppnats av angivna processer från genomsökningar
+### <a name="use-the-windows-security-app-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Använd Windows-säkerhet för att utesluta filer som har öppnats av angivna processer från genomsökningar
 
-Anvisningar [finns i Lägga till undantag i Windows-säkerhetsappen.](microsoft-defender-security-center-antivirus.md)
+Anvisningar [finns i Lägga till undantag Windows-säkerhet appen.](microsoft-defender-security-center-antivirus.md)
 
 ## <a name="use-wildcards-in-the-process-exclusion-list"></a>Använda jokertecken i undantagslistan för processer
 
@@ -143,11 +144,11 @@ I följande tabell beskrivs hur jokertecken kan användas i processens undantags
 
 ## <a name="review-the-list-of-exclusions"></a>Granska listan över undantag
 
-Du kan hämta objekten i undantagslistan med MpCmdRun, PowerShell, [Microsoft Endpoint Configuration Manager,](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) [Intune](/intune/device-restrictions-configure)eller [Windows-säkerhetsappen.](microsoft-defender-security-center-antivirus.md)
+Du kan hämta objekten i undantagslistan med MpCmdRun, PowerShell, [Microsoft Endpoint Configuration Manager,](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) [Intune](/intune/device-restrictions-configure) [eller Windows-säkerhet-appen.](microsoft-defender-security-center-antivirus.md)
 
 Om du använder PowerShell kan du hämta listan på två sätt:
 
-- Hämta status för alla inställningar för Microsoft Defender Antivirus. Var och en av listorna visas på separata rader, men objekten i varje lista kombineras på samma rad.
+- Hämta status för alla Microsoft Defender Antivirus inställningar. Var och en av listorna visas på separata rader, men objekten i varje lista kombineras på samma rad.
 - Skriv statusen för alla inställningar till en variabel och använd den variabeln för att bara anropa den specifika listan som du är intresserad av. Varje användning av `Add-MpPreference` skrivs till en ny rad.
 
 ### <a name="validate-the-exclusion-list-by-using-mpcmdrun"></a>Validera undantagslistan med hjälp av MpCmdRun
@@ -159,10 +160,10 @@ MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> Om du vill kontrollera undantag med MpCmdRun krävs Microsoft Defender Antivirus ANTIVIRUS version 4.18.1812.3 (utgiven i december 2018) eller senare.
+> Kontroll av undantag med MpCmdRun kräver Microsoft Defender Antivirus CAMP version 4.18.1812.3 (utgiven i december 2018) eller senare.
 
 
-### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>Granska listan över undantag bredvid alla andra inställningar för Microsoft Defender Antivirus med hjälp av PowerShell
+### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>Granska listan över undantag tillsammans med alla andra alternativ Microsoft Defender Antivirus med hjälp av PowerShell
 
 Använd följande cmdlet:
 
@@ -170,7 +171,7 @@ Använd följande cmdlet:
 Get-MpPreference
 ```
 
-Mer information om hur du använder PowerShell med Microsoft Defender Antivirus finns i Använda [PowerShell-cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) för att konfigurera och köra Microsoft Defender Antivirus- och [Defender-cmdlets.](/powershell/module/defender)
+Se [Använda PowerShell-cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) för att konfigurera och köra Microsoft Defender Antivirus- och [Defender-cmdlets för](/powershell/module/defender) mer information om hur du använder PowerShell med Microsoft Defender Antivirus.
 
 ### <a name="retrieve-a-specific-exclusions-list-by-using-powershell"></a>Hämta en specifik undantagslista med hjälp av PowerShell
 
@@ -181,13 +182,13 @@ $WDAVprefs = Get-MpPreference
 $WDAVprefs.ExclusionProcess
 ```
 
-Mer information om hur du använder PowerShell med Microsoft Defender Antivirus finns i Använda [PowerShell-cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) för att konfigurera och köra Microsoft Defender Antivirus- och [Defender-cmdlets.](/powershell/module/defender)
+Se [Använda PowerShell-cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) för att konfigurera och köra Microsoft Defender Antivirus- och [Defender-cmdlets för](/powershell/module/defender) mer information om hur du använder PowerShell med Microsoft Defender Antivirus.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Konfigurera och validera undantag i genomsökningar för Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
+- [Konfigurera och validera undantag i Microsoft Defender Antivirus genomsökningar](configure-exclusions-microsoft-defender-antivirus.md)
 - [Konfigurera och validera undantag baserat på filnamn, filnamnstillägg och mappplats](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [Konfigurera undantag för Microsoft Defender Antivirus på Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
-- [Vanliga misstag att undvika när du definierar undantag](common-exclusion-mistakes-microsoft-defender-antivirus.md)
-- [Anpassa, initiera och granska resultatet av genomsökningar och åtgärder i Microsoft Defender Antivirus](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Konfigurera Microsoft Defender Antivirus undantag på Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Vanliga misstag att undvika när man definierar undantag](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+- [Anpassa, initiera och granska resultaten av Microsoft Defender Antivirus genomsökningar och åtgärder](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus i Windows 10](microsoft-defender-antivirus-in-windows-10.md)

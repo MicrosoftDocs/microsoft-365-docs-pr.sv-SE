@@ -1,6 +1,6 @@
 ---
 title: Utvärdera säkerheten genom Microsoft Secure Score
-description: Här beskrivs hur du kan vidta åtgärder för att förbättra Microsoft Secure Score i Säkerhetscenter för Microsoft 365.
+description: Här beskrivs hur du kan vidta åtgärder för att förbättra Microsoft Secure Score Microsoft 365 säkerhetscenter.
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center, improvement actions
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,31 +21,31 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 0b2b9f1f01a583a96e0ae663e3f78cb0a7d846fc
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 8b321fc8883cf490cb5b2814d5c2b617a52dbb29
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570606"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246403"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Utvärdera din säkerhet med Microsoft Secure Score
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure Score är ett mått på en organisations säkerhetssäkerhet, med ett högre tal som anger fler förbättringsåtgärder som vidtas. Den finns på https://security.microsoft.com/securescore Säkerhetscenter för [Microsoft 365.](overview-security-center.md)
+Microsoft Secure Score är ett mått på en organisations säkerhetssäkerhet, med ett högre tal som anger fler förbättringsåtgärder som vidtas. Den finns på Microsoft 365 https://security.microsoft.com/securescore [Säkerhetscenter.](overview-security-center.md)
 
 Åtgärder för Microsoft-förbättringar är ordnade i grupper så att du snabbare kan hitta den information du behöver:
 
-* Identitet (Azure Active Directory-konton & roller)
+* Identitet (Azure Active Directory konton & roller)
 * Enhet (Microsoft Defender för slutpunkt, som kallas [Microsoft Secure Score för enheter](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
-* App (e-post- och molnappar, inklusive Office 365 och Microsoft Cloud App Security)
+* Appar (e-post- och molnprogram, Office 365 och Microsoft Cloud App Security)
 
 >[!NOTE]
 >I den senaste versionen av Microsoft Secure Score har en förbättrad poängmodell släppts som gjort att Microsoft Secure Score tillfälligt inte är kompatibelt med Identity Secure Score och Graph API. [Visa information](microsoft-secure-score-whats-new.md)
 
 På översiktssidan för Microsoft Secure Score kan du se hur punkterna delas upp mellan grupperna och vilka punkter som är tillgängliga. Du kan också få en fullständig uppfattning om totalresultatet, en historisk trend för ditt säkra resultat med jämförelser av riktmärken och prioriterade förbättringsåtgärder som kan vidtas för att förbättra ditt resultat.
 
-![Startsida för Secure Score](../../media/secure-score/secure-score-homepage-new.png)
+![Startsida för Secure Score](../../media/secure-score/secure-score-home-page.png)
 
 ## <a name="check-your-current-score"></a>Kontrollera ditt aktuella poängresultat
 
@@ -61,7 +61,7 @@ Följande är resultat som du kan lägga till i vyn över ditt övergripande res
 
 Den här vyn ser ut så här om du har tagit med alla möjliga poängvyer:
 
-![Ditt säkra resultat inklusive planerat poäng, aktuellt licensresultat och uppnåbart poäng](../../media/secure-score/your-secure-score.png)
+![Ditt säkra resultat inklusive planerat poäng, aktuellt licensresultat och uppnåbart poäng](../../media/secure-score/secure-score-achievable.png)
 
 ## <a name="take-action-to-improve-your-score"></a>Vidta åtgärder för att förbättra ditt resultat
 
@@ -81,7 +81,7 @@ Det finns några alternativ för att slutföra åtgärden:
 
 - Välj **Hantera** för att gå till konfigurationsskärmen och göra ändringen. Sedan får du de poäng som åtgärden är värd, synlig i det flyg ut. Det brukar ta ungefär 24 timmar innan poäng har uppdaterats.
 
-- Välj **Dela** för att kopiera den direkta länken till förbättringsåtgärden. Du kan också välja plattformen för att dela länken, till exempel e-post, Microsoft Teams, Microsoft Planner eller ServiceNow. Om du väljer ServiceNow kan du skapa en ändrings biljett som visas i ServiceNow och säkerhetscentret för Microsoft 365. Mer information finns i [Microsoft 365 säkerhetscenter och ServiceNow-integrering.](./tickets.md)
+- Välj **Dela** för att kopiera den direkta länken till förbättringsåtgärden. Du kan också välja plattformen för att dela länken, till exempel e-post, Microsoft Teams eller Microsoft Planner.
 
 Lägg **till anteckningar** för att hålla reda på förloppet eller något annat du vill kommentera. Om du lägger till egna **taggar i** förbättringsåtgärden kan du filtrera efter de taggarna.
 
@@ -94,9 +94,9 @@ Välj eventuella statusar och spela in anteckningar som är specifika för förb
 - **Accepterad** risk – Säkerheten bör alltid balanseras med användbarheten, och alla rekommendationer fungerar inte för din miljö. När så är fallet kan du välja att acceptera risken, eller den återstående risken, och inte vidta någon förbättringsåtgärd. Du får inga poäng men åtgärden visas inte längre i listan över förbättringsåtgärder. Du kan visa den här åtgärden i historiken eller ångra den när som helst.
 - **Löst genom tredje part** och **löst** genom alternativ minskning – Förbättringsåtgärden har redan åtgärdats av ett program eller en programvara från tredje part eller ett internt verktyg. Då får du poäng som är värda åtgärden, så att poängen bättre speglar den övergripande säkerhetsåtgärden. Om en tredje part eller ett internt verktyg inte längre täcker kontrollen kan du välja en annan status. Kom ihåg att Microsoft inte kommer att ha någon insyn i implementeringens fullständighet om förbättringsåtgärden markeras som någon av dessa statusar.
 
-#### <a name="threat--vulnerability-management-improvement-actions"></a>Hot & åtgärder för att förbättra sårbarhetshantering
+#### <a name="threat--vulnerability-management-improvement-actions"></a>Hot & hantering av säkerhetsrisker förbättringsåtgärder
 
-För förbättringsåtgärder i kategorin "Enhet" kan du inte välja status. I stället hänvisas du till rekommendationen om [associerad](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) säkerhetsrisk och säkerhetshantering i Microsoft [Defender Säkerhetscenter för](/windows/security/threat-protection/microsoft-defender-atp/use) att vidta åtgärder. Det undantag du väljer och justering du skriver är specifikt för den portalen. Den finns inte i Microsoft Secure Score-portalen.
+För förbättringsåtgärder i kategorin "Enhet" kan du inte välja status. I stället hänvisas du till den associerade Hantering av hot och säkerhetsrisker [rekommendationen om](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) säkerhet [i Microsoft Defender Säkerhetscenter](/windows/security/threat-protection/microsoft-defender-atp/use) att vidta åtgärder. Det undantag du väljer och justering du skriver är specifikt för den portalen. Den finns inte i Microsoft Secure Score-portalen.
 
 #### <a name="completed-improvement-actions"></a>Slutförda förbättringsåtgärder
 

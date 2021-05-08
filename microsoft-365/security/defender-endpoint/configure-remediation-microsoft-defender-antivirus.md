@@ -1,13 +1,13 @@
 ---
-title: Konfigurera åtgärder för identifiering av Microsoft Defender Antivirus
-description: Konfigurera vad Microsoft Defender Antivirus ska göra när programmet upptäcker ett hot och hur länge filer i karantän ska behållas i karantänmappen
+title: Konfigurera åtgärd för identifiering för Microsoft Defender Antivirus
+description: Konfigurera vad Microsoft Defender Antivirus ska göra när den upptäcker ett hot och hur länge filer i karantän ska behållas i karantänmappen
 keywords: åtgärd, åtgärda, ta bort, hot, karantän, genomsökning, återställning
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,14 +15,15 @@ ms.date: 03/16/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 98bc079bcfd772ada52d699d5f873a187d4ab4c1
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 45886b94ec5ea11f01bfe23092eef4bd72691554
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765065"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274514"
 ---
-# <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>Konfigurera åtgärder för identifiering av Microsoft Defender Antivirus
+# <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>Konfigurera åtgärd för identifiering för Microsoft Defender Antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,9 +32,9 @@ ms.locfileid: "51765065"
 
 - [Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/)
 
-När en genomsökning körs med Microsoft Defender Antivirus görs ett försök att åtgärda eller ta bort identifierade hot. Du kan konfigurera hur Microsoft Defender Antivirus ska hantera vissa hot, om en återställningspunkt ska skapas innan en återställningspunkt åtgärdas och när hot ska tas bort.
+När Microsoft Defender Antivirus kör en genomsökning försöker den åtgärda eller ta bort hot som upptäcks. Du kan konfigurera hur Microsoft Defender Antivirus ska hantera vissa hot, om en återställningspunkt ska skapas innan en återställningspunkt åtgärdas och när hot ska tas bort.
 
-I den här artikeln beskrivs hur du konfigurerar de här inställningarna med grupprinciper, men du kan också använda [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies#threat-overrides-settings) och Microsoft [Intune.](/intune/device-restrictions-configure) 
+I den här artikeln beskrivs hur du konfigurerar de här inställningarna med grupprinciper, men du kan [också använda Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies#threat-overrides-settings) och [Microsoft Intune.](/intune/device-restrictions-configure) 
 
 Du kan också använda [ `Set-MpPreference` PowerShell-cmdleten eller](/powershell/module/defender/set-mppreference) [ `MSFT_MpPreference` WMI-klassen för](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) att konfigurera de här inställningarna.
 
@@ -43,7 +44,7 @@ Du kan också använda [ `Set-MpPreference` PowerShell-cmdleten eller](/powershe
 
 2. I **redigeraren för hantering av grupprinciper** går **du till Datorkonfiguration** och **väljer Administrativa mallar**.
 
-3. Expandera trädet till **Windows-komponenterna**  >  **Microsoft Defender Antivirus.** 
+3. Expandera trädet och visa **Windows komponenter**  >  **Microsoft Defender Antivirus**. 
 
 4. Välj en plats i tabellen nedan och redigera sedan principen efter behov. 
 
@@ -53,7 +54,7 @@ Du kan också använda [ `Set-MpPreference` PowerShell-cmdleten eller](/powershe
 |:---|:---|:---|:---|
 |Skanna | Skapa en systemåterställningspunkt | En systemåterställningspunkt skapas varje dag innan du försöker rensa eller skanna | Inaktiverad|
 |Skanna | Aktivera borttagning av objekt från mappen genomsökningshistorik | Ange hur många dagar objekt ska sparas i genomsökningshistoriken | 30 dagar |
-|Rot | Inaktivera rutinreparation | Du kan ange om Microsoft Defender Antivirus automatiskt åtgärdar hot eller om den ska fråga slutpunktsanvändaren vad som ska göras. | Inaktiverad (hot åtgärdas automatiskt) |
+|Rot | Inaktivera rutinreparation | Du kan ange Microsoft Defender Antivirus automatiskt åtgärdar hot eller om slutpunktsanvändaren ska fråga vad han eller hon ska göra. | Inaktiverad (hot åtgärdas automatiskt) |
 |Karantän | Konfigurera borttagning av objekt från mappen Karantän | Ange hur många dagar objekt ska behållas i karantän innan de tas bort | 90 dagar |
 |Hot | Ange varningsnivåer för hot där standardåtgärden inte ska vidtas när den upptäcks | Alla hot som upptäcks av Microsoft Defender Antivirus tilldelas en hotnivå (låg, medium, hög eller allvarligt). Du kan använda den här inställningen för att definiera hur alla hot för de olika hotnivåerna ska åtgärdas (karantän, tas bort eller ignoreras) | Ej tillämpligt |
 |Hot | Ange hot där standardåtgärden inte ska vidtas när den identifieras | Ange hur specifika hot (med hjälp av deras hot-ID) ska åtgärdas. Du kan ange om det specifika hotet ska sätts i karantän, tas bort eller ignoreras | Ej tillämpligt |
@@ -61,18 +62,18 @@ Du kan också använda [ `Set-MpPreference` PowerShell-cmdleten eller](/powershe
 > [!IMPORTANT]
 > Microsoft Defender Antivirus identifierar och åtgärdar filer baserat på många faktorer. Ibland krävs en omstart för att slutföra en åtgärd. Även om identifieringen senare bestäms som en falsk positiv identifiering måste omstarten slutföras för att säkerställa att alla ytterligare åtgärder har slutförts.
 >
-> Om du har vissa Microsoft Defender Antivirus i karantän en fil baserat på en felaktighet, kan du återställa filen från karantän när enheten startas om. Se [Återställa filer i karantän i Microsoft Defender Antivirus.](restore-quarantined-files-microsoft-defender-antivirus.md)
+> Om du är säker Microsoft Defender Antivirus i karantän för en fil baserat på en felaktighet, kan du återställa filen från karantän efter att enheten startats om. Se [Återställa filer i karantän i Microsoft Defender Antivirus](restore-quarantined-files-microsoft-defender-antivirus.md).
 > 
-> Du kan undvika det här problemet i framtiden genom att utesluta filer från genomsökningarna. Se [Konfigurera och validera undantag för Microsoft Defender Antivirus-genomsökningar.](configure-exclusions-microsoft-defender-antivirus.md)
+> Du kan undvika det här problemet i framtiden genom att utesluta filer från genomsökningarna. Se [Konfigurera och validera undantag för Microsoft Defender Antivirus genomsökningar](configure-exclusions-microsoft-defender-antivirus.md).
 
-Se även [Konfigurera åtgärd krävs för fullständiga genomsökningar](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) för Microsoft Defender Antivirus för fler åtgärdsrelaterade inställningar.
+Mer [åtgärdsrelaterade inställningar finns även i Microsoft Defender Antivirus](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) schemalagda helskärmssökningar.
 
 ## <a name="see-also"></a>Se även
 
-- [Konfigurera sökalternativ för Microsoft Defender Antivirus](configure-advanced-scan-types-microsoft-defender-antivirus.md)
-- [Konfigurera schemalagda genomsökningar för Microsoft Defender Antivirus](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-- [Konfigurera och köra genomsökningar för Microsoft Defender Antivirus på begäran](run-scan-microsoft-defender-antivirus.md)
+- [Konfigurera alternativ för genomsökning i Microsoft Defender Antivirus](configure-advanced-scan-types-microsoft-defender-antivirus.md)
+- [Konfigurera schemalagda Microsoft Defender Antivirus genomsökningar](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+- [Konfigurera och kör genomsökningar på begäran för Microsoft Defender Antivirus](run-scan-microsoft-defender-antivirus.md)
 - [Konfigurera meddelanden som visas på slutpunkter](configure-notifications-microsoft-defender-antivirus.md)
-- [Konfigurera interaktion med slutanvändaren Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md)
-- [Anpassa, initiera och granska resultatet av genomsökningar och åtgärder i Microsoft Defender Antivirus](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Konfigurera interaktion mellan slutanvändare Microsoft Defender Antivirus slutanvändare](configure-end-user-interaction-microsoft-defender-antivirus.md)
+- [Anpassa, initiera och granska resultaten av Microsoft Defender Antivirus genomsökningar och åtgärder](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus i Windows 10](microsoft-defender-antivirus-in-windows-10.md)

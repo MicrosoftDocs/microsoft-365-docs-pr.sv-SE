@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 15909684d07bac46fd42163cee545bc4752b61d4
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 87305f28975b8997afce211ffa4de3711d26be6b
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995015"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246374"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurera avancerade funktioner i Defender för Slutpunkt
 
@@ -75,13 +75,13 @@ Den här konfigurationen kan användas för scenarier där lokala SOC-åtgärder
 >[!NOTE]
 >Om du ändrar den här inställningen påverkas bara framtida korrelationer.
 
-## <a name="enable-edr-in-block-mode"></a>Aktivera EDR i blockläge
-Identifiering av slutpunkt och svar (EDR) i blockeringsläge ger skydd mot skadliga artefakter, även när Microsoft Defender Antivirus körs i passiv form. När EDR är aktiverat blockerar EDR i blockläge skadliga artefakter eller beteenden som identifieras på en enhet. EDR i blockläge arbetar bakom kulisserna för att åtgärda skadliga artefakter som upptäcks efter intrånget.
+## <a name="enable-edr-in-block-mode"></a>Aktivera Identifiering och åtgärd på slutpunkt i blockeringsläge
+Identifiering och svar av slutpunkt (Identifiering och åtgärd på slutpunkt) i blockeringsläge ger skydd mot skadliga artefakter, även när Microsoft Defender Antivirus körs i passivt läge. När den är Identifiering och åtgärd på slutpunkt blockeras skadliga artefakter eller beteenden som upptäcks på en enhet. Identifiering och åtgärd på slutpunkt i blockeringsläge fungerar bakom kulisserna för att åtgärda skadliga artefakter som upptäcks efter intrånget.
 
 
 ## <a name="autoresolve-remediated-alerts"></a>Åtgärdat autoresole-aviseringar
 
-För klientprogram som skapats i eller efter Windows 10, version 1809, konfigureras automatisk undersökning och åtgärd som standard för att lösa varningar där status för automatisk analys är "Inga hot hittades" eller "Åtgärdat".  Om du inte vill att aviseringarna ska matchas automatiskt måste du inaktivera funktionen manuellt.
+För klientprogram som skapats på eller efter Windows 10, version 1809, konfigureras automatisk undersökning och åtgärd som standard för att lösa varningar där status för automatisk analys är "Inga hot hittades" eller "Åtgärdat".  Om du inte vill att aviseringarna ska matchas automatiskt måste du inaktivera funktionen manuellt.
 
 > [!TIP]
 > För klientorganisationen som skapats tidigare än den versionen måste du manuellt aktivera den här funktionen på sidan [Avancerade](https://securitycenter.windows.com/preferences2/integration) funktioner.
@@ -102,7 +102,7 @@ Med den här funktionen kan du blockera potentiellt skadliga filer i nätverket.
 
 Aktivera Tillåt **eller blockera** filer:
 
-1. Välj Inställningar Avancerade funktioner Tillåt eller **blockera**  >    >  **fil i navigeringsfönstret.**
+1. Välj Tillåt eller blockera **fil Inställningar** avancerade funktioner i  >    >  **navigeringsfönstret.**
 
 1. Ändra inställningen mellan **På och** **Av.**
 
@@ -126,9 +126,9 @@ Mer information finns i [Hantera indikatorer](manage-indicators.md).
 ## <a name="tamper-protection"></a>Skydd mot manipulering
 Under vissa typer av cyberattacker försöker dåliga aktör att inaktivera säkerhetsfunktioner, till exempel antivirusskydd, på dina datorer. Dåliga aktör vill inaktivera dina säkerhetsfunktioner för att få enklare åtkomst till dina data, installera skadlig programvara eller på annat sätt utnyttja dina data, din identitet och dina enheter.
 
-Skydd mot manipulering låser i princip Microsoft Defender Antivirus och förhindrar att säkerhetsinställningarna ändras genom appar och metoder.
+Skydd mot manipulering låser Microsoft Defender Antivirus och förhindrar att säkerhetsinställningarna ändras genom appar och metoder.
 
-Den här funktionen är tillgänglig om ditt företag använder Microsoft Defender Antivirus och molnbaserat skydd är aktiverat. Mer information finns i [Använda nästa generations teknik i Microsoft Defender Antivirus via moln levererat skydd.](cloud-protection-microsoft-defender-antivirus.md)
+Den här funktionen är tillgänglig om din organisation Microsoft Defender Antivirus skydd och Molnbaserat skydd är aktiverat. Mer information finns i [Använda nästa generations teknik i Microsoft Defender Antivirus skydd mot molnlösningar.](cloud-protection-microsoft-defender-antivirus.md)
 
 Behåll skydd mot manipulering aktiverat för att förhindra oönskade ändringar i din säkerhetslösning och dess viktiga funktioner.
 
@@ -144,12 +144,12 @@ Aktivera den här funktionen så att du kan se användarinformation som lagras i
 Mer information finns i [Undersöka ett användarkonto.](investigate-user.md)
 
 
-## <a name="skype-for-business-integration"></a>Skype för företag-integrering
+## <a name="skype-for-business-integration"></a>Skype för företag integration
 
-Om du aktiverar Skype för företag-integreringen kan du kommunicera med användare via Skype för företag, e-post eller telefon. Det kan vara praktiskt när du behöver kommunicera med användaren och minimera risker.
+Genom att Skype för företag kan du kommunicera med användare via e-Skype för företag, e-post eller telefon. Det kan vara praktiskt när du behöver kommunicera med användaren och minimera risker.
 
 > [!NOTE]
-> När en enhet isoleras från nätverket visas ett popup-fönster där du kan välja att aktivera Outlook- och Skype-kommunikationer som tillåter kommunikation till användaren när han eller hon kopplas bort från nätverket. Den här inställningen gäller för Skype- och Outlook-kommunikation när enheter är i separat läge.
+> När en enhet isoleras från nätverket visas ett popup-fönster där du kan välja att aktivera Outlook- och Skype-kommunikationer som tillåter kommunikation till användaren medan de kopplas bort från nätverket. Den här inställningen gäller Skype och Outlook kommunikation när enheter är i avgränsningsläge.
 
 ## <a name="microsoft-defender-for-identity-integration"></a>Microsoft Defender för identitetsintegrering
 
@@ -158,33 +158,33 @@ Integreringen med Microsoft Defender för identitet gör att du kan pivotera dir
 > [!NOTE]
 > Du måste ha rätt licens för att aktivera den här funktionen.
 
-## <a name="office-365-threat-intelligence-connection"></a>Office 365 Threat Intelligence-anslutning
+## <a name="office-365-threat-intelligence-connection"></a>Office 365 Anslutning till Threat Intelligence
 
-Den här funktionen är endast tillgänglig om du har ett aktivt Office 365 E5- eller Threat Intelligence-tillägg. Mer information finns på produktsidan för Office 365 Enterprise, E5.
+Den här funktionen är endast tillgänglig om du har en Office 365 E5 eller tillägget Threat Intelligence. Mer information finns på sidan Office 365 Enterprise E5.
 
-När du aktiverar den här funktionen kan du införliva data från Microsoft Defender för Office 365 i Microsoft Defender Säkerhetscenter för att genomföra en omfattande säkerhetsundersökning i alla Office 365-postlådor och Windows-enheter.
+När du aktiverar den här funktionen kan du införliva data från Microsoft Defender för Office 365 i Microsoft Defender Säkerhetscenter för att genomföra en omfattande säkerhetsundersökning över alla Office 365 postlådor och Windows enheter.
 
 > [!NOTE]
 > Du måste ha rätt licens för att aktivera den här funktionen.
 
 Om du vill få sammanhangsbaserad enhetsintegration i Office 365 Threat Intelligence måste du aktivera Defender för Slutpunktsinställningar i instrumentpanelen för & säkerhet och efterlevnad. Mer information finns i Undersökning [av hot och svar.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti)
 
-## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Microsoft Threat Experts – riktade attackmeddelanden
+## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Microsoft Hotexperter – riktade attackmeddelanden
 
-Av de två Microsoft Threat Expert-komponenterna är riktade attackmeddelanden i allmän tillgänglighet. Experter på begäran är fortfarande i förhandsversion. Du kan bara använda funktionen för experter på begäran om du har tillämpat en förhandsgranskning och programmet har godkänts. Du kan få riktade attackmeddelanden från Microsoft Threat Experts via din Defender för Endpoint-portalens aviseringar-instrumentpanel och via e-post om du konfigurerar den.
+Av de två Microsoft Threat Expert-komponenterna är riktade attackmeddelanden i allmän tillgänglighet. Experter på begäran är fortfarande i förhandsversion. Du kan bara använda funktionen för experter på begäran om du har tillämpat en förhandsgranskning och programmet har godkänts. Du kan få riktade attackmeddelanden från Microsoft Hotexperter Via Defender för Endpoint-portalens aviseringar-instrumentpanel och via e-post om du konfigurerar den.
 
 > [!NOTE]
-> Microsoft Threat Experts-funktionen i Defender för Endpoint är tillgänglig med en E5-licens för [Enterprise Mobility + Security.](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+> Funktionen Microsoft Hotexperter Defender för Slutpunkt är tillgänglig med en E5-licens för [Enterprise Mobility + Security.](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
-Aktivering av den här inställningen vidarebefordrar Defender för Endpoint-signaler till Microsoft Cloud App Security för att bättre kunna se användningen av molnprogram. Vidarebefordrade data lagras och bearbetas på samma plats som dina Cloud App Security-data.
+Om du aktiverar den här inställningen vidarebefordras Defender för Slutpunktssignaler Microsoft Cloud App Security bättre insyn i användningen av molnprogram. Vidarebefordrade data lagras och bearbetas på samma plats som dina Cloud App Security data.
 
 > [!NOTE]
-> Den här funktionen är tillgänglig med en E5-licens för [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) på enheter som kör Windows 10, version 1709 (OS-version 16299.1085 med [KB4493441),](https://support.microsoft.com/help/4493441)Windows 10, version 1803 (OS Version 17134.704 med [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809 (OS Build 17763.379 med [KB4489899](https://support.microsoft.com/help/4489899)) eller senare Windows 10-versioner.
+> Den här funktionen är tillgänglig med en E5-licens för [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) på enheter med Windows 10, version 1709 (OS-version 16299.1085 med [KB4493441),](https://support.microsoft.com/help/4493441)Windows 10, version 1803 (OS Version 17134.704 med [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809 (OS Build 17763.379 med [KB4489899](https://support.microsoft.com/help/4489899)) eller senare Windows 10 versioner.
 
 ## <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
-Vidarebefordrar Microsoft Defender för Endpoint-signaler till Microsoft Secure Score i Microsoft 365 säkerhetscenter. Om du slår på den här funktionen kan Microsoft Secure Score hålla ordning på enhetens säkerhetssystem. Vidarebefordrade data lagras och bearbetas på samma plats som dina Microsoft Secure Score-data.
+Vidarebefordrar Microsoft Defender för Endpoint-signaler till Microsoft Secure Score Microsoft 365 säkerhetscenter. Om du slår på den här funktionen kan Microsoft Secure Score hålla ordning på enhetens säkerhetssystem. Vidarebefordrade data lagras och bearbetas på samma plats som dina Microsoft Secure Score-data.
 
 
 ### <a name="enable-the-microsoft-defender-for-endpoint-integration-from-the-microsoft-defender-for-identity-portal"></a>Aktivera Microsoft Defender för slutpunktsintegrering från Microsoft Defender för identitetsportalen
@@ -204,15 +204,15 @@ Blockera åtkomst till webbplatser som innehåller oönskat innehåll och spåra
 
 
 ## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>Dela slutpunktsaviseringar med Microsofts efterlevnadscenter
-Vidarebefordrar säkerhetsvarningar för slutpunkter och deras status till Microsofts efterlevnadscenter, så att du kan förbättra principer för insiderriskhantering med varningar och åtgärda interna risker innan de kan orsaka skada. Vidarebefordrade data bearbetas och lagras på samma plats som dina Office 365-data.
+Vidarebefordrar säkerhetsvarningar för slutpunkter och deras status till Microsofts efterlevnadscenter, så att du kan förbättra principer för insiderriskhantering med varningar och åtgärda interna risker innan de kan orsaka skada. Vidarebefordrade data bearbetas och lagras på samma plats som dina Office 365 data.
 
 När du har [konfigurerat indikatorerna för brott](/microsoft-365/compliance/insider-risk-management-settings#indicators) mot säkerhetsprinciper i inställningarna för Insider-riskhantering delas Defender för Slutpunktsaviseringar med Insider-riskhantering för tillämpliga användare.
 
 
 
-## <a name="microsoft-intune-connection"></a>Microsoft Intune-anslutning
+## <a name="microsoft-intune-connection"></a>Microsoft Intune anslutning
 
-Defender för Endpoint kan integreras med [Microsoft Intune för att aktivera](https://docs.microsoft.com/intune/what-is-intune) [enhetsriskbaserad villkorlig åtkomst.](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune) När du [aktiverar den här funktionen](configure-conditional-access.md)kan du dela Information om Endpoint-enheter med Intune och förbättra tvingande policy.
+Defender för Endpoint kan integreras med Microsoft Intune för [att](https://docs.microsoft.com/intune/what-is-intune) [aktivera enhetsriskbaserad villkorlig åtkomst.](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune) När du [aktiverar den här funktionen](configure-conditional-access.md)kan du dela Information om Endpoint-enheter med Intune och förbättra tvingande policy.
 
 > [!IMPORTANT]
 > Du måste aktivera integreringen på både Intune och Defender för Endpoint om du vill använda den här funktionen. Mer information om specifika steg finns i Konfigurera [villkorsstyrd åtkomst i Defender för slutpunkt.](configure-conditional-access.md)
@@ -220,7 +220,7 @@ Defender för Endpoint kan integreras med [Microsoft Intune för att aktivera](h
 Den här funktionen är endast tillgänglig om du har följande:
 
 - En licensierad klientorganisation för Enterprise Mobility + Security E3 och Windows E5 (eller Microsoft 365 Enterprise E5)
-- En aktiv Microsoft Intune-miljö med Intune-hanterade Windows 10-enheter [med Azure AD-anslutna](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join/).
+- En aktiv Microsoft Intune med Intune-hanterade enheter Windows 10 [Azure AD-anslutna](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join/).
 
 
 ### <a name="conditional-access-policy"></a>Princip för villkorsstyrd åtkomst
@@ -234,9 +234,12 @@ När du aktiverar Intune-integrering skapar Intune automatiskt en klassisk CA-pr
 ## <a name="device-discovery"></a>Enhetsidentifiering
 Hjälper dig att hitta ohanterade enheter anslutna till företagsnätverket utan att behöva extra utrustning eller krångliga processändringar. Med onboarded-enheter kan du hitta ohanterade enheter i nätverket och bedöma svagheter och risker. Mer information finns i [Enhetsidentifiering](device-discovery.md).
 
+> [!NOTE]
+> Du kan alltid använda filter för att utesluta ohanterade enheter från enhetsinventeringslistan. Du kan också använda kolumnen onboardingstatus i API-frågor för att filtrera bort ohanterade enheter. 
+
 ## <a name="preview-features"></a>Förhandsgranskningsfunktioner
 
-Lär dig mer om nya funktioner i förhandsversionen av Defender för slutpunkt och bli bland de första som kan prova kommande funktioner genom att aktivera förhandsversionen.
+Läs mer om nya funktioner i förhandsversionen av Defender för slutpunkt. Prova kommande funktioner genom att aktivera förhandsgranskningen.
 
 Du har tillgång till kommande funktioner som du kan ge feedback på för att förbättra den övergripande upplevelsen innan funktionerna blir tillgängliga i allmänhet.
 

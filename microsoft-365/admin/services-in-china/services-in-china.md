@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Läs mer om Office 365 som drivs av 21Vianet och som har utformats för att tillgodose behoven för säkra, tillförlitliga och skalbara molntjänster i Kina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 92b69cc77f5c48af63651f2fd37761981ca45ad5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1ee7ba7be2e350195350a5c00e92ed10924657ac
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914348"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274370"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 med 21Vianet
 
@@ -129,11 +129,11 @@ För organisationer som kör äldre eller blandade versioner av Exchange Server 
 | 2013 SP1  <br/> | 2013 SP1  <br/> | Ja  <br/> | Alla  <br/> |
 | Mixed 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | Ja  <br/> | Alla, förutom På plats-eDiscovery/Archiving, OWA-åtkomst (se tabell nedan)  <br/> |
 | Mixed 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | Ja  <br/> | Endast manuellt konfigurerad ledig/upptagen  <br/> |
-| 2010 SP3  <br/> | 2010 SP3  <br/> | Nej  <br/> | Inga  <br/> |
+| 2010 SP3  <br/> | 2010 SP3  <br/> | Nej  <br/> | Ingen  <br/> |
 | 2007  <br/> | 2013 CU5  <br/> | Ja  <br/> | Endast tillgänglig/upptagen  <br/> |
 | 2007  <br/> | 2013 SP1 eller 2010 SP3No  <br/> | Uppgift saknas  <br/> | Stöds inte  <br/> |
 | 2003  <br/> | 2013 SP1/CU5  <br/> | Uppgift saknas  <br/> | Stöds inte  <br/> |
-| 2003  <br/> | 2010 SP3  <br/> | Nej  <br/> | Inga  <br/> |
+| 2003  <br/> | 2010 SP3  <br/> | Nej  <br/> | Ingen  <br/> |
 
    
 > [!IMPORTANT]
@@ -197,7 +197,7 @@ Dela Exchange-kontaktdata på Apple-mobila enheter till Apple iCloud. |Den här 
 |Integrering av referensfönster i Bing-tjänster  <br/> |Inte tillgängligt.  <br/> |
 |Tillgänglighetskontroll  <br/> |Inte tillgängligt.  <br/> |
 |Anteckningsbok för klassen  <br/> |Inte tillgängligt.  <br/> |
-|Formulär  <br/> |Inte tillgängligt.  <br/> |
+|Forms  <br/> |Inte tillgängligt.  <br/> |
 |Avancerad läsare  <br/> |Inte tillgängligt.  <br/> |
 |Infoga onlinebild  <br/> |Inte tillgängligt.  <br/> |
 |Mötesinformation  <br/> |Inte tillgängligt.  <br/> |
@@ -233,3 +233,11 @@ GDPR beviljar individer (eller dataämnen) vissa rättigheter i samband med bear
 - Systemgenererade loggar för Microsoft-tjänster som drivs av 21Vianet kan exporteras av innehavaradministratörer med hjälp av dataloggexporten.
     
 Mer information och instruktioner finns i [Data Subject Requests (DSR) för GDPR.](https://www.trustcenter.cn/privacy/gdpr-office365.mdl)
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Prova eller köp en Microsoft 365 för företag-prenumeration](../../commerce/try-or-buy-microsoft-365.md) (artikel)
+
+[Stöd för Azure Information Protection för Office 365 som drivs av 21Vianet](parity-between-azure-information-protection.md) (artikel)
+
+[Visa din faktura eller skaffa en Fapiao](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (artikel)

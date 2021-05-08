@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5f57d14427ef68280a065489e068955db9e5045a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 18afd4aa160ec345839d23719d1b3fcce21654ec
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934807"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246362"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Felsöka problem med Microsoft Defender för slutpunkt på Android
 
@@ -55,7 +55,7 @@ Du har en äldre version av appen "Microsoft Authenticator" installerad på enhe
 
 **Lösning:**
 
-Installera den senaste versionen och [av Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator) från Google Play Store och försök igen
+Installera den senaste versionen och [Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator) från Google Play Store och försök igen
 
 ## <a name="sign-in-failed---invalid-license"></a>Inloggningen misslyckades – ogiltig licens
 
@@ -67,11 +67,15 @@ Installera den senaste versionen och [av Microsoft Authenticator](https://play.g
 
 **Orsak:**
 
-Du har inte tilldelats någon Microsoft 365-licens eller organisationen har ingen licens för Microsoft 365 Enterprise-prenumeration.
+Du har inte Microsoft 365 licens kopplad, eller så har organisationen ingen licens för Microsoft 365 Enterprise prenumeration.
 
 **Lösning:**
 
 Kontakta administratören om du behöver hjälp.
+
+## <a name="report-unsafe-site"></a>Rapportera osäker webbplats
+
+Nätfiskewebbplatser utger sig för att vara betrodda webbplatser i syfte att skaffa personlig eller ekonomisk information. Gå till [sidan Ge feedback om nätverksskydd](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) om du vill rapportera en webbplats som kan vara en nätfiskewebbplats.
 
 ## <a name="phishing-pages-arent-blocked-on-some-oem-devices"></a>Nätfiskesidor blockeras inte på vissa OEM-enheter
 

@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: I den här artikeln kan administratörer läsa mer om skydd mot säkra länkar i Defender för Office 365 för att skydda organisationen från nätfiske och andra angrepp som använder skadliga URL-adresser.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1f27e1bbd051bd43d1f160707589db2bb7189b76
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 86ecea1e250821f6a7f08d204586db0e60052e5c
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644782"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274442"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Säkra länkar i Microsoft Defender för Office 365
 
@@ -57,9 +57,9 @@ Skydd mot säkra länkar är tillgängligt på följande platser:
 
   Mer information om skydd mot säkra länkar i Teams finns i avsnittet [Inställningar för säkra länkar för Microsoft Teams](#safe-links-settings-for-microsoft-teams) längre fram i den här artikeln.
 
-- **Office 365-program:** Skydd mot säkra länkar för Office 365-program är tillgängligt i skrivbords-, mobil- och webb-APS som stöds. Du **konfigurerar** skydd mot säkra länkar för Office 365-program i den globala **inställningen** som inte finns med i principer för säkra länkar. Anvisningar finns i Konfigurera [globala inställningar för inställningar för säkra länkar i Microsoft Defender för Office 365.](configure-global-settings-for-safe-links.md)
+- **Office 365-program:** Skydd mot säkra länkar för Office 365-program är tillgängligt i skrivbords-, mobil- och webbprogram som stöds. Du **konfigurerar** skydd mot säkra länkar för Office 365-program i den globala **inställningen** som inte finns med i principer för säkra länkar. Anvisningar finns i Konfigurera [globala inställningar för inställningar för säkra länkar i Microsoft Defender för Office 365.](configure-global-settings-for-safe-links.md)
 
-  Skydd för säkra länkar för Office 365-program tillämpas däremot bara på användare som ingår i aktiva principer för säkra länkar.  Om en användare inte ingår i en aktiv princip för säkra länkar får användaren inte skydd mot säkra länkar i Office 365-program som stöds.
+  Skydd mot säkra länkar för Office 365-appar tillämpas på alla användare i organisationen som är licensierade för Defender för Office 365, oavsett om användarna ingår i aktiva principer för säkra länkar eller inte.
 
   Mer information om skydd mot säkra länkar i Office 365-program finns i avsnittet Inställningar för säkra länkar för [Office 365-appar](#safe-links-settings-for-office-365-apps) längre fram i den här artikeln.
 
@@ -78,6 +78,8 @@ Den här artikeln innehåller detaljerade beskrivningar av följande typer av in
 
 I följande tabell beskrivs scenarier för säkra länkar i Microsoft 365- och Office 365-organisationer som inkluderar Defender för Office 365 (med andra ord är brist på licensiering aldrig ett problem i exemplen).
 
+<br>
+
 ****
 
 |Scenario|Resultat|
@@ -87,6 +89,7 @@ I följande tabell beskrivs scenarier för säkra länkar i Microsoft 365- och O
 |I Pats organisation har inga administratörer skapat några principer för säkra länkar, men skydd mot säkra länkar för Office 365-appar är aktiverat. Pat öppnar ett Word-dokument och klickar på en URL i filen.|Pat skyddas inte av Säkra länkar. <p> Även om skydd mot säkra länkar för Office 365-appar är aktiverat globalt ingår Pat inte i några aktiva principer för säkra länkar, så skyddet kan inte tillämpas.|
 |I Lees organisation är `https://tailspintoys.com` den konfigurerad i listan **Blockera följande URL:er i** de globala inställningarna för Säkra länkar. En princip för säkra länkar som innehåller Lee redan finns. Lee får ett e-postmeddelande som innehåller URL:en `https://tailspintoys.com/aboutus/trythispage` . Lee klickar på URL:en.|URL-adressen kan blockeras automatiskt för Lee. Det beror på URL-posten i listan och e-postklienten Lee använde. Mer information finns i listan "Blockera följande [URL:er" för Säkra länkar längre fram i](#block-the-following-urls-list-for-safe-links) den här artikeln.|
 |Både Johan och Julia arbetar för contoso.com. För länge sedan konfigurerade administratörer principer för säkra länkar som gäller för både Johan och Julia. Janne skickar ett e-postmeddelande till Julia, utan att veta att e-postmeddelandet innehåller en skadlig URL.|Julia skyddas av Säkra **länkar om principen** för säkra länkar som gäller för henne är konfigurerad att gälla för meddelanden mellan interna mottagare. Mer information finns i avsnittet Inställningar [för säkra länkar för e-postmeddelanden](#safe-links-settings-for-email-messages) längre fram i den här artikeln.|
+|
 
 ## <a name="safe-links-settings-for-email-messages"></a>Inställningar för säkra länkar för e-postmeddelanden
 
@@ -104,9 +107,7 @@ Inställningarna i principer för säkra länkar som gäller för e-postmeddelan
   - URL:er som inte har ett giltigt rykte löses asynkront i bakgrunden.
 
 - **Använd URL-skanning** i realtid för misstänkta länkar och länkar som pekar på filer : Möjliggör genomsökning i realtid av länkar, inklusive länkar i e-postmeddelanden som pekar på hämtningsbart innehåll. Det rekommenderade värdet aktiveras.
-
   - **Vänta tills URL-skanningen är klar innan du levererar meddelandet:**
-
     - Aktiverad: Meddelanden som innehåller URL:er hålls kvar tills genomsökning är klar. Meddelanden levereras endast efter att URL:erna har bekräftats vara säkra. Det här är det rekommenderade värdet.
     - Inaktiverad: Om URL-genomsökning inte kan slutföras ska du leverera meddelandet ändå.
 
@@ -125,7 +126,6 @@ Inställningarna i principer för säkra länkar som gäller för e-postmeddelan
   Mer information om rekommenderade värden för principinställningarna Standard och Strikt för principer för säkra länkar finns i [Principinställningar för säkra länkar.](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
 
 - **Mottagarfilter:** Du måste ange mottagarens villkor och undantag som avgör vem principen gäller för. Du kan använda de här egenskaperna för villkor och undantag:
-
   - **Mottagaren**
   - **Mottagarens domän är**
   - **Mottagaren är medlem i**
@@ -207,7 +207,7 @@ Skydd mot säkra länkar för Office 365-program har följande klientkrav:
 
 - Användarna loggas in med sina arbets- eller skolkonton. Mer information finns i [Logga in på Office.](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)
 
-Du konfigurerar skydd mot säkra länkar för Office 365-appar i de globala inställningarna för säkra länkar, inte i principer för säkra länkar. Men för att skydd mot säkra länkar för Office 365-program ska tillämpas måste användaren som öppnar Office-dokumentet och klickar på länken ingå i en aktiv princip för säkra länkar.
+Du konfigurerar skydd mot säkra länkar för Office 365-appar i de globala inställningarna för säkra länkar, inte i principer för säkra länkar. Skyddet tillämpas på alla användare i organisationen som är licensierade för Defender för Office 365, oavsett om användarna ingår i aktiva principer för säkra länkar eller inte.
 
 Följande inställningar för Säkra länkar är tillgängliga för Office 365-program:
 
@@ -256,26 +256,23 @@ När en användare i en aktiv princip för säkra länkar klickar på en blocker
 
 Du konfigurerar listan med URL-adresser i de globala inställningarna för Säkra länkar. Anvisningar finns i [Konfigurera listan "Blockera följande URL:er".](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center)
 
-> [!NOTE]
-> 
-> - En verkligt universell lista över URL:er som är blockerade överallt finns i Hantera listan över [tillåtna/blockerade klientorganisationen.](tenant-allow-block-list.md)
-> 
-> - Begränsningar:
->   - Det maximala antalet poster är 500.
->   - Den maximala längden på en post är 128 tecken.
->   - Alla poster får högst vara 10 000 tecken.
-> 
-> - Inkludera inte ett snedstreck `/` () i slutet av URL:en. Använd till exempel `https://www.contoso.com` , inte `https://www.contoso.com/` .
-> 
-> - En url som endast är en domän `contoso.com` (till `tailspintoys.com` exempel) blockerar alla URL-adresser som innehåller domänen.
-> 
-> - Du kan blockera en underdomän utan att blockera hela domänen. Spärra till `toys.contoso.com*` exempel alla URL-adresser som innehåller underdomänen, men blockerar inte URL-adresser som innehåller den fullständiga `contoso.com` domänen.
-> 
-> - Du kan ta med upp till tre jokertecken ( `*` ) per URL-post.
+**Anmärkningar**:
+
+- En verkligt universell lista över URL:er som är blockerade överallt finns i Hantera listan över [tillåtna/blockerade klientorganisationen.](tenant-allow-block-list.md)
+- Begränsningar för listan **Blockera följande URL:er:**
+  - Det maximala antalet poster är 500.
+  - Den maximala längden på en post är 128 tecken.
+  - Alla poster får högst vara 10 000 tecken.
+- Inkludera inte ett snedstreck `/` () i slutet av URL:en. Använd till exempel `https://www.contoso.com` , inte `https://www.contoso.com/` .
+- En url som endast är en domän `contoso.com` (till `tailspintoys.com` exempel) blockerar alla URL-adresser som innehåller domänen.
+- Du kan blockera en underdomän utan att blockera hela domänen. Spärra till `toys.contoso.com*` exempel alla URL-adresser som innehåller underdomänen, men blockerar inte URL-adresser som innehåller den fullständiga `contoso.com` domänen.
+- Du kan ta med upp till tre jokertecken ( `*` ) per URL-post.
 
 ### <a name="entry-syntax-for-the-block-the-following-urls-list"></a>Postsyntax för listan "Blockera följande URL:er"
 
 Exempel på värden som du kan ange och deras resultat beskrivs i följande tabell:
+
+<br>
 
 ****
 
@@ -296,24 +293,24 @@ Varje princip för säkra länkar innehåller inte omskrivningar av följande **
 
 Om du vill lägga till poster i listan i nya eller befintliga principer för säkra länkar kan du gå till Skapa principer [för säkra länkar](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) eller Ändra principer för säkra [länkar.](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies)
 
-> [!NOTE]
-> 
-> - Följande klienter känner inte igen följande **URL-listor** i principer för säkra länkar. Användare som ingår i säkerhetsprocessen kan blockeras från att komma åt URL-adresser baserat på resultatet av genomsökning av säkra länkar i dessa klienter:
-> 
->   - Microsoft Teams
->   - Office-webbappar
-> 
->   En verkligt universell lista över URL:er som är tillåtna överallt finns i Hantera listan över [tillåtna/blockerade klientorganisationen.](tenant-allow-block-list.md)
-> 
-> - Överväg att lägga till ofta använda interna URL:er i listan för att förbättra användarupplevelsen. Om du till exempel har lokala tjänster, till exempel Skype för företag eller SharePoint, kan du lägga till url-adresser för att utesluta dem från genomsökning.
-> 
-> - Om du redan har Skriver inte om följande **URL-adresser** i principerna för säkra länkar bör du granska listorna och lägga till jokertecken efter behov. Din lista har till exempel en post som och `https://contoso.com/a` du senare bestämmer dig för att ta med undervägar som `https://contoso.com/a/b` . I stället för att lägga till en ny post kan du lägga till ett jokertecken till den befintliga posten så att den blir `https://contoso.com/a/*` .
-> 
-> - Du kan ta med upp till tre jokertecken ( `*` ) per URL-post. Jokertecken innehåller explicit prefix eller underdomäner. Posten är till exempel inte samma som , eftersom det gör att personer kan besöka `contoso.com` `*.contoso.com/*` `*.contoso.com/*` underdomäner och sökvägar i den angivna domänen.
+**Anmärkningar**:
+
+- Följande klienter känner inte igen följande **URL-listor** i principer för säkra länkar. Användare som ingår i säkerhetsprocessen kan blockeras från att komma åt URL-adresser baserat på resultatet av genomsökning av säkra länkar i dessa klienter:
+  - Microsoft Teams
+  - Office-webbappar
+
+  En verkligt universell lista över URL:er som är tillåtna överallt finns i Hantera listan över [tillåtna/blockerade klientorganisationen.](tenant-allow-block-list.md)
+
+- Överväg att lägga till ofta använda interna URL:er i listan för att förbättra användarupplevelsen. Om du till exempel har lokala tjänster, till exempel Skype för företag eller SharePoint, kan du lägga till url-adresser för att utesluta dem från genomsökning.
+- Om du redan har Skriver inte om följande **URL-adresser** i principerna för säkra länkar bör du granska listorna och lägga till jokertecken efter behov. Din lista har till exempel en post som och `https://contoso.com/a` du senare bestämmer dig för att ta med undervägar som `https://contoso.com/a/b` . I stället för att lägga till en ny post kan du lägga till ett jokertecken till den befintliga posten så att den blir `https://contoso.com/a/*` .
+- Du kan ta med upp till tre jokertecken ( `*` ) per URL-post. Jokertecken innehåller explicit prefix eller underdomäner. Posten är till exempel inte samma som , eftersom det gör att personer kan besöka `contoso.com` `*.contoso.com/*` `*.contoso.com/*` underdomäner och sökvägar i den angivna domänen.
+- Om en URL använder automatisk omdirigering för HTTP till HTTPS (till exempel 302-omdirigering till ) och du försöker ange både HTTP- och HTTPS-poster för samma URL i listan, kanske du märker att den andra URL-posten ersätter den första `http://www.contoso.com` `https://www.contoso.com` URL-posten. Det här beteendet inträffar inte om HTTP- och HTTPS-versionerna av URL-adressen är helt separata.
 
 ### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>Postsyntax för listan "Ange inte följande URL:er"
 
 Exempel på värden som du kan ange och deras resultat beskrivs i följande tabell:
+
+<br>
 
 ****
 

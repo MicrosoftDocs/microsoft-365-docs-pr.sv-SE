@@ -3,7 +3,7 @@ title: Smarta rapporter, insikter – Säkerhets- och & Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: denisebmsft
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -19,12 +19,12 @@ description: Läs mer om de smarta rapporter och insikter som finns i Säkerhets
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c1759b93e6393031455ebfa372785395c5b88ba9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8e945cd3e3ba3dd0a80214e032c420bf7ecad18e
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207404"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274430"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Smarta rapporter och insikter i Säkerhets- och efterlevnadscenter
 

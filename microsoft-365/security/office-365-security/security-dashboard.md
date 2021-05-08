@@ -3,7 +3,7 @@ title: Översikt över säkerhetsinstrumentpanel
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: denisebmsft
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Använd den nya säkerhetspanelen för att granska Status för Office 365 Threat Protection, och visa och agera på säkerhetsvarningar.
+description: Använd den nya säkerhetspanelen för att Office 365 status för skydd mot hot, och visa och agera på säkerhetsvarningar.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7114776f686d25808c141a07b8cb2868cc67615d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8c9a49b9b8fc1edd9b2928250e8cae135acb75f4
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207135"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274418"
 ---
 # <a name="security-dashboard"></a>Säkerhetsinstrumentpanel
 
@@ -52,13 +52,13 @@ Widgeten Sammanfattning av hothantering visar direkt hur organisationen har skyd
 
 ![Instrumentpanel för säkerhet – widget för sammanfattning av hothantering](../../media/SecDash-ThreatMgmtSummary.png)
 
-Vilken information du ser i sammanfattningen av hothanteringen beror på vad din prenumeration innehåller. I följande tabell beskrivs vilken information som ingår för Office 365 E3 och Office 365 E5.
+Vilken information du ser i sammanfattningen av hothanteringen beror på vad din prenumeration innehåller. I följande tabell beskrivs vilken information som ingår i Office 365 E3 och Office 365 E5.
 
 |Office 365 E3|Office 365 E5|
 |---|---|
 |Skadliga meddelanden blockerade<br>Nätfiskemeddelanden är blockerade<br>Meddelanden som rapporterats av användare<br><br><br><br>|Skadliga meddelanden blockerade<br>Nätfiskemeddelanden är blockerade<br>Meddelanden som rapporterats av användare<br>Nolldagars skadlig programvara blockerad<br>Avancerade nätfiskemeddelanden har upptäckts<br>Skadliga URL:er blockeras|
 
-För att visa eller komma åt widgeten Sammanfattning av hothantering måste du ha behörighet att visa Defender för Office 365-rapporter. Mer information finns i Vilka [behörigheter krävs för att visa Defender för Office 365-rapporter?](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
+Om du vill visa eller komma åt widgeten Sammanfattning av hothantering måste du ha behörighet att visa Defender Office 365. Mer information finns i [Vilka behörigheter krävs för att visa Defender för Office 365 rapporter?](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
 
 ## <a name="threat-protection-status"></a>Status för skydd mot hot
 
@@ -66,14 +66,14 @@ Widgeten Hotskyddsstatus visar hur effektivt skyddet för hot är med en trendan
 
 ![Widget för hotskyddsstatus](../../media/tpswidget.png)
 
-Informationen beror på om Exchange [Online Protection](exchange-online-protection-overview.md) (EOP) ingår i din Microsoft 365-prenumeration med eller utan Microsoft Defender för [Office 365.](defender-for-office-365.md)
+Informationen beror på om EOP (Microsoft 365 Subscription includes [Exchange Online Protection)](exchange-online-protection-overview.md) med eller utan [Microsoft Defender för Office 365.](defender-for-office-365.md)
 
 |Om din prenumeration inkluderar...|Den här informationen visas|
 |---|---|
 |EOP men inte Microsoft Defender för Office 365|Skadlig e-post som har upptäckts och blockerats av EOP.<p> Se [Statusrapport för skydd mot hot (EOP).](view-email-security-reports.md#threat-protection-status-report)|
-|Microsoft Defender för Office 365|Skadligt innehåll och skadlig e-post som identifieras och blockeras av EOP och Defender för Office 365 <p> Aggregerat antal unika e-postmeddelanden med skadligt innehåll som blockerats av skadlig [programvara,](zero-hour-auto-purge.md)automatisk rensning utan timme och Defender [](safe-attachments.md)för Office 365-funktioner (inklusive säkra [länkar,](safe-links.md)säkra bifogade filer och nätfiske i Defender för [Office 365).](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) <p> Se [statusrapport om skydd mot hot.](view-reports-for-mdo.md#threat-protection-status-report)|
+|Microsoft Defender för Office 365|Skadligt innehåll och skadlig e-post som identifieras och blockeras av EOP och Defender för Office 365 <p> Aggregerat antal unika e-postmeddelanden med skadligt innehåll som [](zero-hour-auto-purge.md)blockerats av antivirusmotorn, automatisk rensning utan timme och Defender för Office 365-funktioner (inklusive [Valv-länkar,](safe-links.md) [Valv-bilagor](safe-attachments.md)och skydd mot nätfiske i Defender för [Office 365).](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) <p> Se [statusrapport om skydd mot hot.](view-reports-for-mdo.md#threat-protection-status-report)|
 
-Om du vill visa eller komma åt widgeten Hotskyddsstatus måste du ha behörighet att visa Defender för Office 365-rapporter. Mer information finns i [Vilka behörigheter krävs för att visa Rapporter i Defender för Office 365?](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
+Om du vill visa eller komma åt widgeten Hotskyddsstatus måste du ha behörighet att visa Defender Office 365 rapporter. Mer information finns i [Vilka behörigheter krävs för att visa Defender för Office 365 rapporter?](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 
 ## <a name="global-weekly-threat-detections"></a>Global veckovis identifiering av hot
 
@@ -87,7 +87,7 @@ Måtten beräknas enligt beskrivningen i följande tabell:
 |---|---|
 |Meddelanden skannade|Antalet e-postmeddelanden som genomsöks multiplicerat med antalet mottagare|
 |Hot har stoppats|Antalet e-postmeddelanden som identifierats som innehåller skadlig programvara multiplicerat med antalet mottagare|
-|Blockeras av [Defender för Office 365 ](defender-for-office-365.md)|Antalet e-postmeddelanden som blockeras av Defender för Office 365 multiplicerat med antalet mottagare|
+|Blockeras av [Defender för Office 365](defender-for-office-365.md)|Antalet e-postmeddelanden som blockeras av Defender för Office 365 multiplicerat med antalet mottagare|
 |Tas bort efter leverans|Antalet meddelanden som tagits [bort med en automatisk rensning på nolltimmar](zero-hour-auto-purge.md) multiplicerat med antalet mottagare|
 
 ## <a name="malware"></a>Skadlig programvara
@@ -106,7 +106,7 @@ Du kan till exempel se att nätfiskemeddelanden levereras eftersom vissa använd
 
 ## <a name="threat-investigation-and-response"></a>Undersökning och svar på hot
 
-Om din organisations prenumeration omfattar Microsoft Defender för  [Office 365 abonnemang 2](office-365-ti.md)har din säkerhetsinstrumentpanel ett avsnitt som innehåller avancerade undersöknings- och svarsverktyg för hot. Dessa verktyg innehåller [automatiserad undersökning och svarsfunktioner.](automated-investigation-response-office.md) Automatisk undersökning och svar kan vara användbart i scenarier som att [hantera komprometterade användarkonton snabbt.](address-compromised-users-quickly.md)
+Om din organisations prenumeration omfattar Microsoft Defender för [Office 365 abonnemang 2](office-365-ti.md)har din säkerhetsinstrumentpanel ett avsnitt som innehåller avancerade undersöknings- och svarsverktyg för hot. Dessa verktyg innehåller [automatiserad undersökning och svarsfunktioner.](automated-investigation-response-office.md) Automatisk undersökning och svar kan vara användbart i scenarier som att [hantera komprometterade användarkonton snabbt.](address-compromised-users-quickly.md)
 
 Mer information finns i [Komma igång med automatiserad undersökning och svar (AIR) i Office 365.](office-365-air.md)
 
@@ -116,9 +116,9 @@ Längst ned på instrumentpanelen för säkerhet finns avsnittet **Trender,** so
 
 ![I avsnittet Trender sammanfattas e-postflödestrender för organisationen](../../media/trends.png)
 
-Om din organisations prenumeration omfattar Defender för [Office 365 abonnemang 2](office-365-ti.md)har du även en rapport om senaste varningar för hothantering i det här avsnittet som gör att säkerhetsteamet kan visa och vidta åtgärder för högprioriterade säkerhetsvarningar. 
+Om din organisations prenumeration omfattar Defender för [Office 365 abonnemang 2](office-365-ti.md)har du  även en rapport om händelser för hantering av hot i det här avsnittet som gör att säkerhetsteamet kan se och vidta åtgärder för högprioriterade säkerhetsvarningar.
 
-Om du vill visa eller komma åt widgeten Skickad och mottagen e-post måste du ha behörighet att visa Defender för Office 365-rapporter. Mer information finns i Vilka [behörigheter krävs för att visa Defender för Office 365-rapporter?](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
+Om du vill visa eller komma åt widgeten Skickad och mottagen e-post måste du ha behörighet att visa Defender Office 365 rapporter. Mer information finns i [Vilka behörigheter krävs för att visa Defender för Office 365 rapporter?](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
 
 Om du vill visa eller komma åt widgeten Senaste hothanteringsvarningar måste du ha behörighet att visa aviseringar. Mer information finns i [RBAC-behörigheter som krävs för att visa aviseringar.](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts)
 
@@ -128,6 +128,6 @@ Om du vill visa eller komma åt widgeten Senaste hothanteringsvarningar måste d
 
 [Visa rapporter för Microsoft Defender för Office 365](view-reports-for-mdo.md)
 
-[Defender förr Office 365](defender-for-office-365.md)
+[Microsoft Defender för Office 365](defender-for-office-365.md)
 
-[Undersökning och svar på hot i Office 365](office-365-ti.md)
+[Office 365 Undersökning och svar på hot](office-365-ti.md)

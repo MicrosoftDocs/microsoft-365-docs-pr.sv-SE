@@ -1,5 +1,5 @@
 ---
-title: Underlätta för distansarbetare med Microsoft 365
+title: Konfigurera infrastrukturen för distansarbete med Microsoft 365
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -17,17 +17,20 @@ ms.collection:
 - m365solution-overview
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
-description: Kontrollera att du har aktiverat alla funktioner i Microsoft 365 för att maximera produktiviteten på distansmedarbetaren och bibehålla säker åtkomst till servrar, data och moln.
-ms.openlocfilehash: e811b0ea40c38d3c8de0dfdc17a24ce0d7aabe2f
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+keywords: arbeta hemifrån, arbeta-hemifrån, distansarbetare, hybridarbete, distansmedarbetare, hybridanslutning, fjärråtkomst, distansarbete, distansarbeta, distansarbete, mobilt arbete, distansarbete, arbeta var som helst, flexibel arbetsplats
+description: Gå igenom infrastrukturens delar så att distansmedarbetarna har säker åtkomst till lokala resurser samt resurser från Microsoft 365.
+ms.openlocfilehash: 1a8cf471cf92e1301c231f395ed0238bb35359cb
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029128"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246326"
 ---
-# <a name="empower-remote-workers-with-microsoft-365"></a>Underlätta för distansarbetare med Microsoft 365
+# <a name="set-up-your-infrastructure-for-remote-work-with-microsoft-365"></a>Konfigurera infrastrukturen för distansarbete med Microsoft 365
 
-Ditt företag kan behöva upprätta säker åtkomst till organisationens lokala och molnbaserade information, verktyg och resurser för anställda som arbetar hemifrån. Att låta arbetarna arbeta utanför kontoret är viktigt för många organisationer för att:
+För att säkra och optimera distansarbetares produktivitet och samarbete måste du konfigurera IT- och molninfrastrukturen för att aktivera fjärrarbete och ge åtkomst till organisationens lokala och molnbaserade information, verktyg och resurser. Den här lösningen går igenom distributionen av viktiga delar av infrastruktur som ger dina medarbetare möjlighet att arbeta på så bra som möjligt, oavsett var de befinner sig.
+
+Att låta arbetarna arbeta utanför kontoret är viktigt för många organisationer för att:
 
 - Spara på kontorsutrymme.
 - Anställa och behålla arbetare som inte vill omlokalisera.
@@ -125,8 +128,6 @@ Följ dessa steg för att skydda och optimera åtkomsten till organisationens se
 5. [Distribuera produktivitetsappar och tjänster för distansarbetare](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [Träna distansarbetare och få feedback om användningen](empower-people-to-work-remotely-train-monitor-usage.md)
 
-[![Stegen för att underlätta för distansarbetare med Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
+[![Steg för att konfigurera infrastrukturen för distansarbete med Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-Om du vill ha den senaste informationen från Microsoft om support för distansarbetare går du till [Aktivera hybridarbete med Microsoft Teams-webbplatsen](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).
-
-Om du vill se hur en fiktiv men representativ multinationell organisation driver distansarbete finns mer information i [Contosos Svar mot COVID-19 och infrastruktur för distans- och på plats-arbete](contoso-remote-onsite-work.md).
+För att se hur en fiktiv men representativ multinationell organisation har konfigurerat infrastrukturen för distansarbete, gå till [Contosos gensvar på COVID-19 och infrastruktur för distansarbete och arbete på plats](contoso-remote-onsite-work.md).
