@@ -1,13 +1,13 @@
 ---
-title: Samla in diagnostikdata för Microsoft Defender Antivirus
-description: Samla in data för felsökning av Microsoft Defender Antivirus med hjälp av ett verktyg
+title: Samla in diagnostikdata om Microsoft Defender Antivirus
+description: Använd ett verktyg för att samla in data för felsökning av Microsoft Defender Antivirus
 keywords: felsökning, fel, korrigering, uppdateringsefterlevnad, oms, bildskärm, rapport, Microsoft Defender av, grupprincipobjekt, inställning, diagnostikdata
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,13 @@ ms.date: 06/29/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: d74a8921af677f6ed66580bd00830440d59cf1aa
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: ccf6da0e1bc91a29865868305b5333f7ef9c47cc
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764729"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274790"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>Samla in Microsoft Defender AV-diagnostikdata
 
@@ -36,7 +37,7 @@ I den här artikeln beskrivs hur du samlar in diagnostikdata som kan användas a
 > [!NOTE]
 > Som en del av undersökningen eller svarsprocessen kan du samla in ett undersökningspaket från en enhet. Gör så här: Samla [in undersökningspaket från enheter](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices).
 
-Skaffa .cab-diagnostikfilen på minst två enheter som har samma problem genom att göra följande:
+På minst två enheter med samma problem hämtar du .cab-diagnostikfilen genom att göra följande:
 
 1. Öppna en version på administratörsnivå av kommandotolken på följande sätt:
 
@@ -57,12 +58,12 @@ Skaffa .cab-diagnostikfilen på minst två enheter som har samma problem genom a
     mpcmdrun.exe -GetFiles
     ```
   
-4. En .cab-fil skapas som innehåller olika diagnostikloggar. Platsen för filen anges i utdata i kommandotolken. Platsen är som standard `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab` .
+4. En .cab genereras som innehåller olika diagnostikloggar. Platsen för filen anges i utdata i kommandotolken. Platsen är som standard `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab` .
 
 > [!NOTE]
 > Använd följande kommando för att omdirigera CAB-filen till en annan sökväg eller UNC-delning: `mpcmdrun.exe -GetFiles -SupportLogLocation <path>`  <br/>Mer information finns i Omdirigera [diagnostikdata till en UNC-delning.](#redirect-diagnostic-data-to-a-unc-share)
 
-5. Kopiera de här .cab-filerna till en plats som kan nås av Microsoft Support. Ett exempel kan vara en lösenordsskyddad OneDrive-mapp som du kan dela med oss.
+5. Kopiera dessa .cab till en plats som Kan nås av Microsoft Support. Ett exempel kan vara en lösenordsskyddad OneDrive som du kan dela med oss.
 
 > [!NOTE]
 >Om du har problem med Uppdateringsefterlevnad <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a"></a>kan du skicka ett e-postmeddelande med hjälp av e-postmallen För uppdateringsefterlevnad och fylla i mallen med följande information:
@@ -119,4 +120,4 @@ Du kan också ange var diagnostikfilen .cab ska skapas med ett Grupprincipobjekt
 
 ## <a name="see-also"></a>Se även
 
-- [Felsöka rapportering av Microsoft Defender Antivirus](troubleshoot-reporting.md)
+- [Felsöka Microsoft Defender Antivirus rapportering](troubleshoot-reporting.md)

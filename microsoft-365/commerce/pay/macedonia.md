@@ -1,5 +1,5 @@
 ---
-title: Betalningsinformation för f.d. republiken Makedonien
+title: Betalningsinformation för f.d. f.d. republiken Makedonien
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -8,20 +8,20 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
-description: Lär dig var du skickar betalningen för din prenumeration.
+description: Lär dig vart du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 595ade468c8445123cc08808bbf8c33f215e27a7
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 121cb3ea0420177f6cc9684e6458de38467da41f
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543310"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52273350"
 ---
-# <a name="payment-information-for-macedonia-former-yugoslav-republic-of"></a>Betalningsinformation för f.d. republiken Makedonien
+# <a name="payment-information-for-macedonia-former-yugoslav-republic-of"></a>Betalningsinformation för f.d. f.d. republiken Makedonien
 
-[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md) 
+[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md). 
 
 Betala endast i USD och ange fakturanumret som referens vid betalning.
 

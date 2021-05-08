@@ -1,5 +1,5 @@
 ---
-title: Hantera hur och var Microsoft Defender Antivirus tar emot uppdateringar
+title: Hantera hur och var Microsoft Defender Antivirus får uppdateringar
 description: Hantera reservordningen för hur Microsoft Defender Antivirus får skyddsuppdateringar.
 keywords: uppdateringar, säkerhetsbaslinjer, skydd, reservordning, ADL, MMPC, UNC, sökväg, dela, wsus
 search.product: eADQiWindows 10XVcnh
@@ -7,21 +7,22 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 9b1c9bc8c86c5b348e3c4d2a51e0bfafaf3e7174
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: c6961c4eac375ea36d801e278f5208f16d2558d9
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765473"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275030"
 ---
-# <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Hantera källor för uppdateringar av Microsoft Defender AntivirusSkydd
+# <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Hantera källor för skyddsuppdateringar av Microsoft Defender Antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,10 +38,10 @@ Det är viktigt att hålla antivirusskyddet uppdaterat. Det finns två komponent
 - *Var* uppdateringarna hämtas från och 
 - *När* uppdateringar laddas ned och tillämpas. 
 
-I den här artikeln beskrivs hur du anger varifrån uppdateringar ska laddas ned (detta kallas även reservordningen). I Avsnittet Hantera uppdateringar för Microsoft Defender Antivirus och använda baslinjer finns en översikt över hur uppdateringarna fungerar och hur du konfigurerar andra aspekter av uppdateringar (till exempel [schemaläggningsuppdateringar).](manage-updates-baselines-microsoft-defender-antivirus.md)
+I den här artikeln beskrivs hur du anger varifrån uppdateringar ska laddas ned (detta kallas även reservordningen). I avsnittet Hantera Microsoft Defender Antivirus uppdateringar och använda baslinjer finns en översikt över hur uppdateringar fungerar och hur du konfigurerar andra aspekter av uppdateringar (till exempel [schemaläggningsuppdateringar).](manage-updates-baselines-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Uppdateringar för Microsoft Defender Antivirus Security Intelligence levereras via Windows Update och från och med måndagen den 21 oktober 2019 är alla säkerhetsintelligensuppdateringar SHA-2-signerade exklusivt. Enheterna måste uppdateras med stöd för SHA-2 för att du ska kunna uppdatera säkerhetsintelligens. Mer information finns i Krav [för stöd för SHA-2-kodsignering för Windows och WSUS 2019.](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)  
+> Microsoft Defender Antivirus Säkerhetsintelligensuppdateringar levereras via Windows Uppdatering och från och med måndagen den 21 oktober 2019 är alla säkerhetsintelligensuppdateringar SHA-2-signerade exklusivt. Enheterna måste uppdateras med stöd för SHA-2 för att du ska kunna uppdatera säkerhetsintelligens. Mer information finns i krav [för stöd för SHA-2-kodsignering för 2019 Windows och WSUS.](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)  
 
 
 <a id="fallback-order"></a>
@@ -58,32 +59,32 @@ Ju äldre uppdateringar på en slutpunkt, desto större blir nedladdningen. Men 
 Det finns fem platser där du kan ange var en slutpunkt ska hämta uppdateringar: 
 
 - [Microsoft Update](https://support.microsoft.com/help/12373/windows-update-faq)
-- [Windows Server Update-tjänsten](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
+- [Windows Uppdateringstjänst för server](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [Nätverksresurs](#unc-share)
-- [Säkerhetsintelligensuppdateringar](https://www.microsoft.com/en-us/wdsi/defenderupdates) för Microsoft Defender Antivirus och andra Microsoft-program mot skadlig kod (din policy och ditt register kan ha den i listan Microsoft Malware Protection Center (MMPC) säkerhetsinformation, dess tidigare namn.)
+- [Säkerhetsintelligensuppdateringar för Microsoft Defender Antivirus](https://www.microsoft.com/en-us/wdsi/defenderupdates) och andra Microsoft-program mot skadlig programvara (din princip och ditt register kan ha den i listan Microsoft Malware Protection Center (MMPC) säkerhetsinformation, dess tidigare namn.)
 
-För att säkerställa den bästa skyddsnivån ger Microsoft Update snabba versioner, vilket innebär mindre nedladdningar ofta. Tjänsten Windows Server Update, Microsoft Endpoint Configuration Manager och Microsofts säkerhetsinformationsuppdateringar tillhandahåller mindre vanliga uppdateringar. Delta kan alltså vara större, vilket resulterar i större nedladdningar. 
+För att säkerställa den bästa skyddsnivån ger Microsoft Update snabba versioner, vilket innebär mindre nedladdningar ofta. Källor Windows Server Update Service, Microsoft Endpoint Configuration Manager och Microsofts säkerhetsintelligensuppdateringar ger färre uppdateringar. Delta kan alltså vara större, vilket resulterar i större nedladdningar. 
 
 > [!IMPORTANT]
-> Om du har angett uppdateringar för [Microsofts](https://www.microsoft.com/security/portal/definitions/adl.aspx) säkerhetsinformationssida som reservkälla efter Windows Server Update Service eller Microsoft Update hämtas uppdateringar endast från säkerhetsintelligensuppdateringar när den aktuella uppdateringen anses vara in datera. (Som standard är det sju dagar i följd då uppdateringar från Windows Server Update-tjänsten eller Microsoft Update-tjänsterna inte kan installeras.
+> Om du har angett uppdateringar för [Microsofts](https://www.microsoft.com/security/portal/definitions/adl.aspx) säkerhetsinformationssida som reservkälla efter Windows Serveruppdateringstjänst eller Microsoft Update laddas uppdateringar bara ned från säkerhetsintelligensuppdateringar när den aktuella uppdateringen anses vara in datera. (Som standard är det sju dagar i följd då uppdateringar inte kan installeras från Windows Server Update Service eller Microsoft Update-tjänsterna).
 > Du kan dock [ange antalet dagar innan skyddet rapporteras som inställt.](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)<p>
-> Från och med måndagen den 21 oktober 2019 kommer säkerhetsintelligensuppdateringar att vara SHA-2-signerade exklusivt. Enheter måste uppdateras med stöd för SHA-2 för att få de senaste säkerhetsintelligensuppdateringarna. Mer information finns i Krav [för stöd för SHA-2-kodsignering för Windows och WSUS 2019.](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)
+> Från och med måndagen den 21 oktober 2019 kommer säkerhetsintelligensuppdateringar att vara SHA-2-signerade exklusivt. Enheter måste uppdateras med stöd för SHA-2 för att få de senaste säkerhetsintelligensuppdateringarna. Mer information finns i krav [för stöd för SHA-2-kodsignering för 2019 Windows och WSUS.](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)
 
 Varje källa har vanliga scenarier som beror på hur nätverket är konfigurerat, utöver hur ofta de publicerar uppdateringar, enligt beskrivningen i följande tabell:
 
 |Plats | Exempelscenario |
 |---|---|
-|Windows Server Update-tjänsten | Du använder Windows Server Update Service för att hantera uppdateringar för nätverket.|
-|Microsoft Update | Du vill att dina slutpunkter ska ansluta direkt till Microsoft Update. Detta kan vara användbart för slutpunkter som oregelbundet ansluter till företagsnätverket eller om du inte använder Windows Server Update-tjänsten för att hantera dina uppdateringar.|
+|Windows Uppdateringstjänst för server | Du använder Windows Server Update Service för att hantera uppdateringar för nätverket.|
+|Microsoft Update | Du vill att dina slutpunkter ska ansluta direkt till Microsoft Update. Detta kan vara användbart för slutpunkter som oregelbundet ansluter till företagsnätverket eller om du inte använder serveruppdateringstjänsten för Windows för att hantera dina uppdateringar.|
 |Filresurs | Du har icke-Internetanslutna enheter (till exempel virtuella maskiner). Du kan använda den Internetanslutna VM-värden för att hämta uppdateringar till en nätverksresurs från vilken de virtuella maskinerna kan hämta uppdateringarna. Se [VDI-distributionsguiden](deployment-vdi-microsoft-defender-antivirus.md) för hur filresurser kan användas i VDI-miljöer (Virtual Desktop Infrastructure).|
 |Microsoft Endpoint Manager | Du använder Microsoft Endpoint Manager för att uppdatera slutpunkterna.|
-|Säkerhetsintelligensuppdateringar för Microsoft Defender Antivirus och andra Microsoft-program mot skadlig programvara (tidigare kallad MMPC) |[Kontrollera att dina enheter har uppdaterats med stöd för SHA-2.](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus) Microsoft Defender Antivirus Security intelligence-uppdateringar levereras via Windows Update och från och med måndagen den 21 oktober 2019 är säkerhetsintelligensuppdateringar SHA-2 signerad exklusivt. <br/>Ladda ned de senaste skyddsuppdateringarna på grund av en nyligen genomförd distribution eller för att tillhandahålla en stark, grundläggande bild för [VDI-distribution.](deployment-vdi-microsoft-defender-antivirus.md) Det här alternativet bör i allmänhet bara användas som en slutgiltig reservkälla, inte den primära källan. Den används endast om det inte går att hämta uppdateringar från Windows Server Update Service eller Microsoft Update [under ett angivet antal dagar.](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)|
+|Säkerhetsintelligensuppdateringar för Microsoft Defender Antivirus och andra Microsoft-program mot skadlig programvara (tidigare kallad MMPC) |[Kontrollera att dina enheter har uppdaterats med stöd för SHA-2.](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus) Microsoft Defender Antivirus Säkerhetsintelligensuppdateringar levereras via Windows Update och från och med måndagen den 21 oktober 2019 är säkerhetsintelligensuppdateringar SHA-2-signerade exklusivt. <br/>Ladda ned de senaste skyddsuppdateringarna på grund av en nyligen genomförd distribution eller för att tillhandahålla en stark, grundläggande bild för [VDI-distribution.](deployment-vdi-microsoft-defender-antivirus.md) Det här alternativet bör i allmänhet bara användas som en slutgiltig reservkälla, inte den primära källan. Den används endast om uppdateringar inte kan laddas ned från Windows Server Update Service eller Microsoft Update [under ett angivet antal dagar.](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)|
 
 Du kan hantera i vilken ordning uppdateringskällor används med Grupprincip, Microsoft Endpoint Configuration Manager, PowerShell-cmdlets och WMI.
 
 > [!IMPORTANT]
-> Om du anger Windows Server Update-tjänsten som en nedladdningsplats måste du godkänna uppdateringarna, oavsett vilket hanteringsverktyg du använder för att ange platsen. Du kan konfigurera en regel för automatiskt godkännande med Windows Server Update-tjänsten, vilket kan vara användbart när uppdateringar kommer minst en gång om dagen. Mer information finns i Synkronisera [uppdateringar av slutpunktsskydd i fristående Windows Server Update Service.](/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
+> Om du Windows serveruppdateringstjänsten som en nedladdningsplats måste du godkänna uppdateringarna, oavsett vilket hanteringsverktyg du använder för att ange platsen. Du kan konfigurera en regel för automatiskt godkännande Windows tjänsten Serveruppdatering, vilket kan vara användbart när uppdateringar kommer in minst en gång om dagen. Mer information finns i Synkronisera [uppdateringar av slutpunktsskydd i fristående program Windows Serveruppdateringstjänst.](/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
 
 Procedurerna i den här artikeln beskriver först hur du  anger ordningen och sedan hur du ställer in alternativet Filresurs om du har aktiverat den.
 
@@ -95,7 +96,7 @@ Procedurerna i den här artikeln beskriver först hur du  anger ordningen och se
 
 3. Klicka **på Principer** och sedan på Administrativa **mallar.**
 
-4. Expandera trädet till **Windows-komponenter > Windows Defender > och** konfigurera följande inställningar:
+4. Expandera trädet så att **Windows delar > Windows Defender > uppdateringar och** konfigurera följande inställningar:
 
    1.  Dubbelklicka på inställningen Definiera **ordningen på källor för nedladdning av säkerhetsintelligensuppdateringar** och ange alternativet **Aktiverad**.
 
@@ -112,11 +113,11 @@ Procedurerna i den här artikeln beskriver först hur du  anger ordningen och se
    6. Klicka på **OK**. Då anges ordningen på filresurser när källan refereras i grupprincipinställningen **Definiera ordningen** på källor....
 
 > [!NOTE]
-> För Windows 10, version 1703 upp till och med 1809 är principsökvägen **Windows Components > Microsoft Defender Antivirus > Signature Updates** For Windows 10, version 1903. Principsökvägen är Windows Components > Microsoft Defender Antivirus > Security Intelligence **Updates**
+> För Windows 10, version 1703 upp till och med 1809 är principsökvägen **Windows Components > Microsoft Defender Antivirus > Signature Updates** för Windows 10, version 1903, och den principsökväg som används är Windows Components > Microsoft Defender Antivirus > Security Intelligence **Updates**
 
 ## <a name="use-configuration-manager-to-manage-the-update-location"></a>Hantera uppdateringsplatsen med Konfigurationshanteraren
 
-Mer [information om konfiguration av](/configmgr/protect/deploy-use/endpoint-definition-updates) Microsoft Endpoint Manager (current branch) finns i Konfigurera säkerhetsintelligensuppdateringar för Endpoint Protection.
+Mer [information om hur du konfigurerar Microsoft Endpoint Manager](/configmgr/protect/deploy-use/endpoint-definition-updates) (current branch) finns i Konfigurera Endpoint Protection säkerhetsintelligensuppdateringar.
 
 
 ## <a name="use-powershell-cmdlets-to-manage-the-update-location"></a>Använda PowerShell-cmdlets för att hantera uppdateringsplatsen
@@ -133,7 +134,7 @@ Mer information finns i följande artiklar:
 - [Använda PowerShell-cmdlets för att konfigurera och köra Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 - [Defender-cmdlets](/powershell/module/defender/index)
 
-## <a name="use-windows-management-instruction-wmi-to-manage-the-update-location"></a>Använd WMI (Windows Management Instruction) för att hantera uppdateringsplatsen
+## <a name="use-windows-management-instruction-wmi-to-manage-the-update-location"></a>Hantera Windows uppdateringsplatsen med hjälp av WMI (Management Instruction)
 
 Använd [ **metoden** Set för **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) för följande egenskaper:
 
@@ -143,7 +144,7 @@ SignatureDefinitionUpdateFileSharesSource
 ```
 
 Mer information finns i följande artiklar:
-- [API:er för Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows Defender WMIv2-API:er](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## <a name="use-mobile-device-management-mdm-to-manage-the-update-location"></a>Använda MDM (Mobile Device Management) för att hantera uppdateringsplatsen
 
@@ -153,7 +154,7 @@ Mer information om konfiguration av MDM finns i [Policy CSP – Defender/Signatu
 
 I den här artikeln beskrivs hur du konfigurerar och hanterar uppdateringar för Microsoft Defender Antivirus. Tredjepartsleverantörer kan emellertid användas för att utföra de här uppgifterna. 
 
-Anta till exempel att Contoso har anställt Fabrikam för att hantera deras säkerhetslösning, där Microsoft Defender Antivirus ingår. Fabrikam använder [normalt Windows Management Instrumentation-,](./use-wmi-microsoft-defender-antivirus.md) [PowerShell-cmdlets](./use-powershell-cmdlets-microsoft-defender-antivirus.md)eller [Windows-kommandorad](./command-line-arguments-microsoft-defender-antivirus.md) för att distribuera korrigeringar och uppdateringar. 
+Anta till exempel att Contoso har anställt Fabrikam för att hantera sin säkerhetslösning, vilket omfattar Microsoft Defender Antivirus. Fabrikam använder [Windows Management Instrumentation,](./use-wmi-microsoft-defender-antivirus.md) [PowerShell-cmdlets](./use-powershell-cmdlets-microsoft-defender-antivirus.md) [eller Windows-kommandoraden för](./command-line-arguments-microsoft-defender-antivirus.md) att distribuera korrigeringar och uppdateringar. 
 
 > [!NOTE]
 > Microsoft testar inte tredjepartslösningar för att hantera Microsoft Defender Antivirus.
@@ -260,8 +261,8 @@ Konfigurera en nätverksresurs (UNC/mappad enhet) för att hämta säkerhetsinte
 ## <a name="related-articles"></a>Relaterade artiklar
 
 - [Distribuera Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
-- [Hantera uppdateringar för Microsoft Defender Antivirus och tillämpa baslinjer](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Hantera Microsoft Defender Antivirus uppdateringar och använda baslinjer](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [Hantera uppdateringar för slutpunkter som är in uppdaterade](manage-outdated-endpoints-microsoft-defender-antivirus.md)
-- [Hantera händelsebaserade tvingade uppdateringar](manage-event-based-updates-microsoft-defender-antivirus.md)
+- [Hantera händelsebaserade uppdateringar](manage-event-based-updates-microsoft-defender-antivirus.md)
 - [Hantera uppdateringar för mobila enheter och virtuella maskiner](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus i Windows 10](microsoft-defender-antivirus-in-windows-10.md)

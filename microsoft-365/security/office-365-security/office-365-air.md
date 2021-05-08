@@ -1,10 +1,10 @@
 ---
-title: Automatiserad undersökning och svar i Microsoft Defender för Office 365
+title: Automatisk undersökning och svar i Microsoft Defender för Office 365
 keywords: AIR, autoIR, Microsoft Defender för Slutpunkt, automatiserad, undersökning, svar, åtgärd, hot, avancerat, hot, skydd
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -16,18 +16,18 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Kom igång med automatiserad undersökning och svarsfunktioner i Microsoft Defender för Office 365.
+description: Kom igång med automatisk undersökning och svarsfunktioner i Microsoft Defender för Office 365.
 ms.custom:
 - air
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 89421348d858a869e033380802e402465949c554
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c9cd9ef649ec60fc8d880ae525469980a00f69b2
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935179"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275006"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Automatisk undersökning och svar (AIR) i Microsoft Defender för Office 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "51935179"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[Microsoft Defender för Office 365](defender-for-office-365.md) innehåller kraftfulla air-funktioner (automatisk undersökning och svar) som sparar tid och arbete från dina säkerhetsåtgärder. När aviseringar utlöses är det upp till ditt säkerhetsteam att granska, prioritera och svara på dessa aviseringar. Det kan vara överväldigande att hålla koll på mängden inkommande aviseringar. Att automatisera vissa av dessa uppgifter kan vara till hjälp.
+[Microsoft Defender för Office 365](defender-for-office-365.md) innehåller kraftfulla funktioner för automatisk undersökning och svar (AIR) som kan spara tid och arbete för dina säkerhetsåtgärder. När aviseringar utlöses är det upp till ditt säkerhetsteam att granska, prioritera och svara på dessa aviseringar. Det kan vara överväldigande att hålla koll på mängden inkommande aviseringar. Att automatisera vissa av dessa uppgifter kan vara till hjälp.
 
 AIR gör att ditt säkerhetsteam kan samarbeta mer effektivt. AIR-funktioner omfattar automatiserade undersökningsprocesser som svar på välkända hot som finns idag. Lämpliga åtgärdsåtgärder väntar på godkännande, vilket gör det möjligt för teamet med säkerhetsåtgärder att agera effektivt mot identifierade hot. Med AIR kan ditt säkerhetsteam fokusera på uppgifter med högre prioritet utan att viktiga aviseringar som utlöses går förlorade.
 
@@ -62,7 +62,7 @@ En avisering utlöses och en säkerhetsspelbok startar en automatiserad undersö
 4. Din säkerhetsgrupp granskar [undersökningsresultatet och rekommendationerna](air-view-investigation-results.md) [och godkänner eller avvisar åtgärder.](air-review-approve-pending-completed-actions.md)
 5. När väntande åtgärder godkänns (eller avvisas) slutförs den automatiska undersökningen.
 
-Inga åtgärder vidtas automatiskt i Microsoft Defender för Office 365. Åtgärdsåtgärder vidtas endast efter godkännande av organisationens säkerhetsteam. AIR-funktioner sparar din grupptid för säkerhetsåtgärder genom att identifiera åtgärdsåtgärder och tillhandahålla den information som behövs för att fatta ett välgrundat beslut.
+I Microsoft Defender Office 365 åtgärder vidtas inga åtgärder automatiskt. Åtgärdsåtgärder vidtas endast efter godkännande av organisationens säkerhetsteam. AIR-funktioner sparar din grupptid för säkerhetsåtgärder genom att identifiera åtgärdsåtgärder och tillhandahålla den information som behövs för att fatta ett välgrundat beslut.
 
 Under och efter varje automatisk undersökning kan ditt säkerhetsteam:
 
@@ -81,7 +81,7 @@ AIR-funktionerna ingår i [Microsoft Defender för Office 365,](defender-for-off
 - [Principer för program mot skadlig programvara](protect-against-threats.md#part-1---anti-malware-protection)
 - [Skydd mot virus](protect-against-threats.md#part-2---anti-phishing-protection)
 - [Skydd motspam](protect-against-threats.md#part-3---anti-spam-protection)
-- [Säkra länkar och säkra bifogade filer](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
+- [Valv Länkar och Valv bilagor](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 - [Säkra bilagor för SharePoint, OneDrive och Microsoft Teams](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
 - [Automatisk rensning utan timme för e-post](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)
 
@@ -89,20 +89,20 @@ Dessutom bör du granska [organisationens aviseringsprinciper,](../../compliance
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>Vilka aviseringsprinciper utlöser automatiska undersökningar?
 
-Microsoft 365 innehåller många inbyggda aviseringsprinciper som hjälper till att identifiera missbruk av behörigheter för Exchange-administratörer, skadlig aktivitet, potentiella externa och interna hot samt informationsstyrningsrisker. Flera av [standardaviseringsprinciperna](../../compliance/alert-policies.md#default-alert-policies) kan utlösa automatiska undersökningar. I följande tabell beskrivs aviseringarna som utlöser automatiska undersökningar, deras allvarlighetsgrad i Säkerhetscenter i Microsoft 365 och hur de genereras:
+Microsoft 365 innehåller många inbyggda aviseringsprinciper som hjälper till att identifiera missbruk av Exchange administratörsbehörighet, skadlig programvara, potentiella externa och interna hot samt informationsstyrningsrisker. Flera av [standardaviseringsprinciperna](../../compliance/alert-policies.md#default-alert-policies) kan utlösa automatiska undersökningar. I följande tabell beskrivs aviseringarna som utlöser automatiska undersökningar, deras allvarlighetsgrad i Microsoft 365 säkerhetscenter och hur de genereras:
 
 |Varning|Allvarlighetsgrad|Så här genereras aviseringen|
 |---|---|---|
-|Ett potentiellt skadligt URL-klick upptäcktes|**Hög**|Den här aviseringen genereras när något av följande inträffar: <ul><li>En användare som skyddas [av säkra](safe-links.md) länkar i organisationen klickar på en skadlig länk</li><li>Omdömesändringar för URL-adresser identifieras av Microsoft Defender för Office 365</li><li>Användarna åsidosätter varningssidor för säkra länkar (baserat på organisationens [princip för säkra länkar).](set-up-safe-links-policies.md)</li></ul> <p> Mer information om händelser som utlöser den här aviseringen finns [i Konfigurera principer för säkra länkar.](set-up-safe-links-policies.md)|
+|Ett potentiellt skadligt URL-klick upptäcktes|**Hög**|Den här aviseringen genereras när något av följande inträffar: <ul><li>En användare som skyddas [Valv organisationens](safe-links.md) länkar klickar på en skadlig länk</li><li>Ändringar av bedömning av webbadresser identifieras av Microsoft Defender för Office 365</li><li>Användarna åsidosätter Valv länkar till varningssidor (baserat på organisationens [Valv Länkar).](set-up-safe-links-policies.md)</li></ul> <p> Mer information om händelser som utlöser den här aviseringen finns [i Konfigurera Valv principer för länkar.](set-up-safe-links-policies.md)|
 |Ett e-postmeddelande rapporteras av en användare som skadlig kod eller nätt|**Informativ**|Den här varningen genereras när användare i organisationen [](enable-the-report-message-add-in.md) rapporterar meddelanden som nätfiskemeddelanden med hjälp av tilläggen Rapportmeddelande eller [Rapportera nätfiske.](enable-the-report-phish-add-in.md)|
-|E-postmeddelanden som innehåller skadlig programvara tas bort efter leverans|**Informativ**|Den här aviseringen genereras när e-postmeddelanden som innehåller skadlig programvara levereras till postlådor i organisationen. Om detta inträffar tar Microsoft bort de smittade meddelandena från Exchange Online-postlådor med automatisk [rensning utan timme.](zero-hour-auto-purge.md)|
-|E-postmeddelanden som innehåller webbadresser tas bort efter leverans|**Informativ**|Den här aviseringen genereras när några meddelanden som innehåller phish levereras till postlådor i din organisation. Om detta inträffar tar Microsoft bort de smittade meddelandena från Exchange Online-postlådor med automatisk [rensning utan timme.](zero-hour-auto-purge.md)|
+|E-postmeddelanden som innehåller skadlig programvara tas bort efter leverans|**Informativ**|Den här aviseringen genereras när e-postmeddelanden som innehåller skadlig programvara levereras till postlådor i organisationen. Om den här händelsen inträffar tar Microsoft bort de smittade meddelandena Exchange Online postlådor med automatisk [rensning på nolltimmar.](zero-hour-auto-purge.md)|
+|E-postmeddelanden som innehåller webbadresser tas bort efter leverans|**Informativ**|Den här aviseringen genereras när några meddelanden som innehåller phish levereras till postlådor i din organisation. Om den här händelsen inträffar tar Microsoft bort de smittade meddelandena Exchange Online postlådor med automatisk [rensning på nolltimmar.](zero-hour-auto-purge.md)|
 |Mönster för att skicka misstänkta e-postmeddelanden identifieras|**Medel**|Den här aviseringen genereras när någon i organisationen har skickat misstänkta e-postmeddelanden och riskerar att bli begränsad från att skicka e-post. Aviseringen är en tidig varning om beteende som kan indikera att kontot har komprometterats, men inte tillräckligt allvarligt för att begränsa användaren. <p> Även om det är ovanligt kan en varning som genereras av den här principen vara en avvikande avvikelse. Du bör dock kontrollera om [användarkontot har komprometterats.](responding-to-a-compromised-email-account.md)|
 |En användare är begränsad från att skicka e-post|**Hög**|Den här aviseringen genereras när någon i din organisation är begränsad från att skicka utgående e-post. Den här aviseringen resulterar vanligtvis när ett [e-postkonto har komprometterats](responding-to-a-compromised-email-account.md). <p> Mer information om begränsade användare finns i [Ta bort blockerade användare från portalen Begränsade användare i Microsoft 365.](removing-user-from-restricted-users-portal-after-spam.md)|
 |
 
 > [!TIP]
-> Mer information om aviseringsprinciper och hur du redigerar standardinställningarna finns [i Aviseringsprinciper i efterlevnadscentret för Microsoft 365.](../../compliance/alert-policies.md)
+> Mer information om aviseringsprinciper och hur du redigerar standardinställningarna finns [i Aviseringsprinciper i Microsoft 365 kompatibilitetscenter.](../../compliance/alert-policies.md)
 
 ## <a name="required-permissions-to-use-air-capabilities"></a>Behörighet som krävs för att använda AIR-funktioner
 
@@ -110,12 +110,12 @@ Behörigheter beviljas genom vissa roller, till exempel de som beskrivs i följa
 
 |Uppgift|Roll(er) krävs|
 |---|---|
-|Konfigurera AIR-funktioner|En av följande roller: <ul><li>Global administratör</li><li>Säkerhetsadministratör</li></ul> <p> De här rollerna kan tilldelas [i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) eller i [Säkerhets- & efterlevnadscenter.](permissions-in-the-security-and-compliance-center.md)|
-|Starta en automatiserad undersökning <p> --- eller --- <p> Godkänna eller avvisa rekommenderade åtgärder|En av följande roller, tilldelad i [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) eller i [säkerhets- & efterlevnadscenter:](permissions-in-the-security-and-compliance-center.md) <ul><li>Global administratör</li><li>Säkerhetsadministratör</li><li>Säkerhetsoperatör</li><li>Säkerhetsläsare <br> --- och --- </li><li>Sökning och rensning (den här rollen tilldelas endast i [säkerhets- och & Säkerhets- och efterlevnadscenter.](permissions-in-the-security-and-compliance-center.md) Du kanske måste skapa en ny rollgrupp där och lägga till rollen Sök och rensa i den nya rollgruppen.</li></ul>|
+|Konfigurera AIR-funktioner|En av följande roller: <ul><li>Global administratör</li><li>Säkerhetsadministratör</li></ul> <p> De här rollerna kan [tilldelas i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) eller i [Säkerhets- & Efterlevnadscenter.](permissions-in-the-security-and-compliance-center.md)|
+|Starta en automatiserad undersökning <p> --- eller --- <p> Godkänna eller avvisa rekommenderade åtgärder|En av följande roller, tilldelad i [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) eller i [Säkerhets- & Efterlevnadscenter:](permissions-in-the-security-and-compliance-center.md) <ul><li>Global administratör</li><li>Säkerhetsadministratör</li><li>Säkerhetsoperatör</li><li>Säkerhetsläsare <br> --- och --- </li><li>Sökning och rensning (den här rollen tilldelas endast i [säkerhets- och & Säkerhets- och efterlevnadscenter.](permissions-in-the-security-and-compliance-center.md) Du kanske måste skapa en ny rollgrupp där och lägga till rollen Sök och rensa i den nya rollgruppen.</li></ul>|
 
 ## <a name="required-licenses"></a>Licenser som krävs
 
-[Licenser för Microsoft Defender för Office 365 abonnemang 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) bör tilldelas till:
+[Licenser för Microsoft Defender Office 365 abonnemang 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) bör tilldelas till:
 
 - Säkerhetsadministratörer (inklusive globala administratörer)
 - Organisationens team för säkerhetsåtgärder (inklusive säkerhetsläsare och de med rollen **Sök och Rensning)**
@@ -123,16 +123,16 @@ Behörigheter beviljas genom vissa roller, till exempel de som beskrivs i följa
 
 ## <a name="changes-are-coming-soon-in-your-security-center"></a>Ändringar kommer snart i ditt säkerhetscenter
 
-Om du redan använder AIR-funktionerna i Microsoft Defender för Office 365 kommer du att se några ändringar i det förbättrade säkerhetscentret för [Microsoft 365.](../defender/overview-security-center.md)
+Om du redan använder AIR-funktionerna i Microsoft Defender för Office 365 kommer du att se några ändringar i det [Microsoft 365 säkerhetscentret.](../defender/overview-security-center.md)
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Enhetligt åtgärdscenter":::
 
-Det nya och förbättrade säkerhetscentret sammanför AIR-funktionerna i Microsoft Defender för [Office 365](defender-for-office-365.md) och [i Microsoft Defender för slutpunkt.](../defender-endpoint/automated-investigations.md) Med de här uppdateringarna och förbättringarna kommer säkerhetsgruppen att kunna visa information om automatiska undersökningar och åtgärder som gäller för e-post, samarbetsinnehåll, användarkonton och enheter, allt på ett och samma ställe.
+Det nya och förbättrade säkerhetscentret sammanför AIR-funktionerna i [Microsoft Defender för Office 365](defender-for-office-365.md) och i Microsoft Defender för [slutpunkt.](../defender-endpoint/automated-investigations.md) Med de här uppdateringarna och förbättringarna kommer säkerhetsgruppen att kunna visa information om automatiska undersökningar och åtgärder som gäller för e-post, samarbetsinnehåll, användarkonton och enheter, allt på ett och samma ställe.
 
 > [!TIP]
-> Det nya säkerhetscentret för Microsoft 365 ( <https://security.microsoft.com> ) ersätter följande center:
+> Det nya Microsoft 365 säkerhetscentret <https://security.microsoft.com> () ersätter följande center:
 >
-> - Säkerhets- och & Office 365 ( <https://protection.office.com> )
+> - Office 365 Säkerhets- & Efterlevnadscenter <https://protection.office.com> ()
 > - Microsoft Defender Säkerhetscenter ( <https://securitycenter.windows.com> )
 >
 > Förutom att URL-adressen ändras finns ett nytt utseende som är utformat för att ge din säkerhetsgrupp en mer smidig upplevelse, med synlighet för fler identifieringar av hot på ett och samma ställe.

@@ -21,14 +21,17 @@ ms.custom:
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 582ecb0f9b46d877c30aa29334b30b9209c93993
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 65454dcc71645b370d2ebfc875474151c0954a3c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576943"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245010"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Hur du betalar för din prenumeration
+
+> [!IMPORTANT]
+> Från och med 26 januari 2021 stöds inte längre nya bankkonton för kunder i Belgien, Frankrike, Italien, Luxemburg, Portugal, Spanien och USA. Om du är befintlig kund i något av dessa länder kan du fortsätta betala för prenumerationen med ett befintligt bankkonto och du kan lägga till nya prenumerationer till det, men bara så länge bankkontot uppfyller kraven.
 
 Du kan använda ett kredit- eller betalkort eller ett bankkonto för att betala för din prenumeration. I vissa fall kan du betala med faktura, via check eller elektronisk betalningsöverföring (EFT). Om du har en faktureringsprofil är alternativen lite annorlunda. Mer information finns i [Så här betalar du för din prenumeration med en faktureringsprofil](pay-for-subscription-billing-profile.md). Om du är osäker på om kontot har en faktureringsprofil kan du gå till [Förstå faktureringsprofiler](manage-billing-profiles.md).
 
@@ -37,7 +40,7 @@ Du kan använda ett kredit- eller betalkort eller ett bankkonto för att betala 
 ## <a name="before-you-begin"></a>Innan du börjar
 
 - Du måste vara global administratör eller faktureringsadministratörer för att kunna utföra åtgärder som beskrivs i den här artikeln. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
-- Den betalningsmetod du valde i kassan är den betalningsmetod som vi använder för alla kommande faktureringsperioder. Du kan ändra den när som helst.
+- Den betalningsmetod du väljer i kassan är den betalningsmetod som vi använder för alla kommande faktureringsperioder. Du kan ändra den när som helst.
 
 ## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>Betala med kredit- eller betalkort eller med bankkonto
 

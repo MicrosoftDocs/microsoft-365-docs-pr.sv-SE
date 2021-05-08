@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Lär dig hur du markerar och exporterar innehåll från en Advanced eDiscovery granskningsuppsättning för presentationer eller externa granskningar.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0752c5272d078e75e3bdbfb9cf7af7e49c78e65c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 76865ae92d3b3090ae2bba01c9b3e9e0f1f86366
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "52162640"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244367"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>Exportera dokument från en granskningsuppsättning i Advanced eDiscovery
 
@@ -45,78 +45,55 @@ Så här exporterar du dokument från en granskningsuppsättning:
 
 ## <a name="export-options"></a>Exportalternativ
 
-Använd följande alternativ för att konfigurera exporten.
+Använd följande alternativ för att konfigurera exporten. Vissa utdataalternativ är inte tillåtna, de viktigaste är att exportera textfiler och PDF-filer som har omformaterats, inte tillåts vid export till PST-format.
 
-- **Exportera namn:** Namnet på exportjobbet.
+- **Exportera namn:** Namnet på exportjobbet. Används för att namnge ZIP-filerna som ska laddas ned.
 
 - **Beskrivning**: Fritt textfält där du kan lägga till en beskrivning.
 
 - **Exportera de här dokumenten**
 
-  - **Endast markerade dokument:** Med det här alternativet exporteras bara de dokument som är markerade för närvarande.
-  
-  - **Alla dokument i granskningsuppsättningen**: Med det här alternativet exporteras alla dokument i granskningsuppsättningen.
-
-- **Metadata**
-  
-  - **Läs in fil:** Den här filen innehåller metadata för varje fil. Den här filen kan vanligtvis matas in med eDiscovery-verktyg från tredje part. Mer information om vilka fält som ingår finns i [Dokumentera metadatafält i Advanced eDiscovery.](document-metadata-fields-in-Advanced-eDiscovery.md)
-  
-  - **Taggar:** När det här alternativet valts inkluderas taggningsinformation i inläsningsfilen.
-
-- **Content**
-  
-  - **Ursprungliga filer:** Markera den här kryssrutan om du vill ta med de ursprungliga filerna i dokumenten i granskningsuppsättningen. Om du väljer att exportera ursprungliga filer har du följande alternativ för hur du exporterar chattkonversationer.
-  
-  - **Konversationsalternativ**
-
-    - **Konversationsfiler:** Det här alternativet exporterar rekonstruerade chattkonversationer. I det här formatet visas konversationer i ett formulär som liknar det som visas i det ursprungliga programmet.
-
-    - **Enskilda chattmeddelanden:** Med det här alternativet exporteras de ursprungliga konversationsfilerna när de lagras i Microsoft 365.
-
-- **Alternativ**
-
-  - **Textfiler**: – Det här alternativet innehåller extraherade textversioner av ursprungliga filer i exporten.
-  
-  - **Ersätt ursprungliga original med konverterade** PDF-filer: Om pdf-filer som har omaktiverats genereras under granskning är dessa filer tillgängliga för export. Du kan välja att exportera endast de ursprungliga filer som redigerades (genom att inte välja det här alternativet) eller så kan du välja det här alternativet om du vill exportera PDF-filer som innehåller de faktiska redigeringarna.
+  - Endast markerade dokument: Med det här alternativet exporteras endast de dokument som är markerade för närvarande. Det här alternativet är bara tillgängligt när objekt markeras i en granskningsuppsättning.
+  - Alla filtrerade dokument: Med det här alternativet exporteras dokumenten i ett aktivt filter. Det här alternativet är bara tillgängligt när ett filter tillämpas på granskningsuppsättningen.
+  - Alla dokument i granskningsuppsättningen: Med det här alternativet exporteras alla dokument i granskningsuppsättningen.
 
 - **Utdataalternativ:** Exporterat innehåll är antingen tillgängligt för nedladdning direkt via en webbläsare eller kan skickas till ett Azure Storage konto. De två första alternativen ger möjlighet till direkt nedladdning.
   
-  - Lösa filer och **PSTs (e-post** läggs till i PSTs om möjligt) : Filer exporteras i ett format som liknar den ursprungliga katalogstrukturen som användare i sina ursprungliga program ser.  Mer information finns i avsnittet [Lösa filer och PST-exportstruktur.](#loose-files-and-pst-export-structure)
-  
-  - **Komprimerad katalogstruktur:** Filerna exporteras och inkluderas i nedladdningen.
-  
-  - **Komprimerad katalogstruktur som exporterats till** Azure Storage-konto: Filer exporteras till organisationens Azure Storage konto. För det här alternativet måste du ange URL-adressen för behållaren i ditt Azure Storage att exportera filerna till. Du måste också ange SAS-token (delad åtkomstsignatur) för ditt Azure Storage konto. Mer information finns i Exportera [dokument i en granskning som är inställd på ett Azure Storage konto](download-export-jobs.md).
+  - Endast rapporter: Endast sammanfattnings- och inläsningsfilen skapas.
+  - Lösa filer och PSTs (e-post läggs till i PSTs om möjligt): Filer exporteras i ett format som liknar den ursprungliga katalogstrukturen som användare ser i sina ursprungliga program.  Mer information finns i avsnittet [Lösa filer och PST-exportstruktur.](#loose-files-and-pst-export-structure)
+  - Komprimerad katalogstruktur: Filerna exporteras och inkluderas i nedladdningen.
+  - Komprimerad katalogstruktur som exporterats till Azure Storage-konto: Filer exporteras till organisationens Azure Storage konto. För det här alternativet måste du ange URL-adressen för behållaren i ditt Azure Storage att exportera filerna till. Du måste också ange SAS-token (delad åtkomstsignatur) för ditt Azure Storage konto. Mer information finns i Exportera [dokument i en granskning som är inställd på ett Azure Storage konto](download-export-jobs.md).
 
-I följande avsnitt beskrivs mappstrukturen för lösa filer och komprimerade strukturalternativ.
+- **Inkludera**
+  - Taggar: När det här alternativet valts inkluderas taggningsinformationen i inläsningsfilen.
+  - Textfiler: Det här alternativet innehåller extraherade textversioner av ursprungliga filer i exporten.
+  - Ersätt inbyggda filer med konverterade PDF-filer: Om pdf-filer som har omaktiverats genereras under granskning är dessa filer tillgängliga för export. Du kan välja att exportera endast de ursprungliga filer som redigerades (genom att inte välja det här alternativet) eller så kan du välja det här alternativet om du vill exportera PDF-filer som innehåller de faktiska redigeringarna.
+
+## <a name="the-following-sections-describe-the-folder-structure-for-loose-files-and-condensed-directory-structure-options"></a>I följande avsnitt beskrivs mappstrukturen för lösa filer och alternativ för komprimerad katalogstruktur
+
+Exporter partitioneras till ZIP-filer med en maximal storlek på okomprimerat innehåll på 75 GB. Om exporten är mindre än 75 GB består exporten av en sammanfattningsfil och en enda ZIP-fil. För exporter som överskrider 75 GB okomprimerade data skapas flera ZIP-filer. När ZIP-filerna har laddats ned kan de komprimeras till en enda plats för att återskapa den fullständiga exporten.
 
 ### <a name="loose-files-and-pst-export-structure"></a>Lösa filer och PST-exportstruktur
 
 Om du väljer det här exportalternativet ordnas det exporterade innehållet i följande struktur:
 
-- Rotmapp: Den här mappen i namnet ExportName.zip
-  
-  - Export_load_file.csv: metadatafilen.
-  
-  - Summary.csv: En sammanfattningsfil som även innehåller exportstatistik.
-  
-  - Exchange: Den här mappen innehåller allt innehåll Exchange i ursprungligt filformat. Ursprungliga filer ersätts med omaktiverade PDF-filer om du väljer alternativet Ersätt **omaktiverade inbyggda filer med konverterade PDF-filer.**
-  
-  - SharePoint: Den här mappen innehåller allt inbyggt innehåll SharePoint i ett ursprungligt filformat. Ursprungliga filer ersätts med omaktiverade PDF-filer om du väljer alternativet Ersätt **omaktiverade inbyggda filer med konverterade PDF-filer.**
+- Summary.csv: Innehåller en sammanfattning av innehållet som exporterats från granskningsuppsättningen
+- Rotmapp: Den här mappen med namnet [Exportnamn] x z.zip och upprepas för varje ZIP-filpartition.
+  - Export_load_file_x av z.csv: metadatafilen.
+  - Varningar och fel x z.csv: Den här filen innehåller information om fel som påträffades när du försökte exportera från granskningsuppsättningen.
+  - Exchange: Den här mappen innehåller allt innehåll från Exchange som lagras i PST-filer. Omaktiverade PDF-filer kan inte inkluderas med det här alternativet. Om en bifogad fil markeras i granskningsuppsättningen exporteras det överordnade e-postmeddelandet med den bifogade filen.
+  - SharePoint: Den här mappen innehåller allt inbyggt innehåll SharePoint i ett ursprungligt filformat. Omaktiverade PDF-filer kan inte inkluderas med det här alternativet.
 
 ### <a name="condensed-directory-structure"></a>Komprimerad katalogstruktur
 
-- Rotmapp: Den här mappen heter ExportName.zip
-  
-  - Export_load_file.csv: metadatafilen.
-  
-  - Summary.txt: En sammanfattningsfil som även innehåller exportstatistik.
-  
-  - NativeFiles: Den här mappen innehåller alla ursprungliga filer som exporterades. Om du exporterar omaktiverade PDF-filer lagras de inte i PST-filer. I stället läggs de till i en avgränsad mapp.
-  
-  - Error_files: Den här mappen innehåller följande felfiler, om de tas med i exporten:
-
-    - ExtraheringFel: En CSV-fil som innehåller alla tillgängliga metadata för filer som inte extraherats korrekt från överordnade filer.
-
-    - ProcessingError: Den här filen innehåller en lista över dokument med bearbetningsfel. Innehållet är objektnivå, vilket innebär att om en bifogad fil resulterade i ett bearbetningsfel inkluderas e-postmeddelandet som innehåller den bifogade filen i den här mappen.
-  
+- Summary.csv: Innehåller en sammanfattning av innehållet som exporterats från granskningsuppsättningen
+- Rotmapp: Den här mappen med namnet [Exportnamn] x z.zip och upprepas för varje ZIP-filpartition.
+  - Export_load_file_x av z.csv: Metadatafilen och innehåller även platsen för varje fil som lagras i ZIP-filen.
+  - Varningar och fel x z.csv: Den här filen innehåller information om fel som påträffades när du försökte exportera från granskningsuppsättningen.
+  - NativeFiles: Den här mappen innehåller alla ursprungliga filer som exporterades. Ursprungliga filer ersätts med omaktiverade PDF-filer om du väljer alternativet Ersätt *omaktiverade inbyggda filer med konverterade PDF-filer.*
+  - Error_files: Den här mappen innehåller filer som hade antingen extrahering eller annat bearbetningsfel. Filerna placeras i olika mappar, antingen ExtraheringFel eller ProcessingError. Dessa filer visas i inläsningsfilen.
   - Extracted_text_files: Den här mappen innehåller alla extraherade textfiler som skapades vid bearbetningen.
+
+### <a name="condensed-directory-structure-exported-to-your-azure-storage-account"></a>Komprimerad katalogstruktur exporterad till ditt Azure Storage konto
+
+Det här alternativet har samma allmänna struktur som *komprimerad* katalogstruktur, men innehållet zippas inte och data sparas i ditt Azure Storage konto. Det här alternativet används i allmänhet när du arbetar med en eDiscovery-leverantör från tredje part. Mer information om hur du använder det här alternativet finns i [Exportera dokument i en granskning inställd på ett Azure Storage konto](download-export-jobs.md).

@@ -1,35 +1,36 @@
 ---
-title: Vanliga misstag att undvika när du definierar undantag
-description: Undvik vanliga misstag när du definierar undantag för genomsökningar för Microsoft Defender Antivirus.
+title: Vanliga misstag att undvika när man definierar undantag
+description: Undvik vanliga misstag när du definierar undantag för Microsoft Defender Antivirus genomsökningar.
 keywords: undantag, filer, tillägg, filtyp, mappnamn, filnamn, genomsökningar
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: eb3ac89eb05b39ff3337aa8e9c5ead1c308fbefb
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: de739ca3c6a4ab305b575fa7e2f419d044d997a8
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764921"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274977"
 ---
-# <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Vanliga misstag att undvika när du definierar undantag
+# <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Vanliga misstag att undvika när man definierar undantag
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-Du kan definiera en undantagslista för objekt som du inte vill att Microsoft Defender Antivirus ska söka igenom. Sådana undantagna objekt kan innehålla hot som gör din enhet sårbar. 
+Du kan definiera en undantagslista för objekt som du inte vill Microsoft Defender Antivirus söka i. Sådana undantagna objekt kan innehålla hot som gör din enhet sårbar. 
 
 I den här artikeln beskrivs några vanliga misstag som du bör undvika när du definierar undantag. 
 
-Innan du definierar dina undantagslistor kan [du gå till Rekommendationer för att definiera undantag](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions).
+Innan du definierar dina undantagslistor kan [du Rekommendationer för att definiera undantag](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions).
 
 ## <a name="excluding-certain-trusted-items"></a>Utesluta vissa betrodda objekt
 
@@ -50,17 +51,17 @@ En skadlig programvara kan ha samma namn som filen du litar på och vill uteslut
 
 ## <a name="using-a-single-exclusion-list-for-multiple-server-workloads"></a>Använda en enda undantagslista för flera serverarbetsbelastningar
 
-Använd inte en enda undantagslista för att definiera undantag för flera serverarbetsbelastningar. Dela upp undantagen för olika program- eller tjänstarbetsbelastningar i flera undantagslistor. Exempel: Undantagslistan för din IIS Server-arbetsbelastning måste vara en annan än undantagslistan för DIN SQL Server-arbetsbelastning.
+Använd inte en enda undantagslista för att definiera undantag för flera serverarbetsbelastningar. Dela upp undantagen för olika program- eller tjänstarbetsbelastningar i flera undantagslistor. Exempel: Undantagslistan för din IIS Server-arbetsbelastning måste vara en annan än undantagslistan för SQL Server arbetsbelastningen.
 
 ## <a name="using-incorrect-environment-variables-as-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>Använda felaktiga miljövariabler som jokertecken i filnamn och mappsökväg eller undantagslistor för filnamnstillägg
 
-Microsoft Defender Antivirus Service körs i systemkontext med localSystem-kontot, vilket innebär att den hämtar information från systemmiljövariabeln och inte från användarmiljövariabeln. Användning av miljövariabler som jokertecken i undantagslistor begränsas till systemvariabler och de som gäller för processer som körs som ett NT AUTHORITY\SYSTEM-konto. Använd därför inte användarmiljövariabler som jokertecken när du lägger till undantag för Microsoft Defender Antivirus-mappar och -processer. I tabellen under [Systemmiljövariabler finns](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) en fullständig lista över systemmiljövariabler.
+Microsoft Defender Antivirus Tjänsten körs i systemsammanhang med hjälp av localSystem-kontot, vilket innebär att den hämtar information från systemmiljövariabeln och inte från användarmiljövariabeln. Användning av miljövariabler som jokertecken i undantagslistor begränsas till systemvariabler och de som gäller för processer som körs som ett NT AUTHORITY\SYSTEM-konto. Använd därför inte användarmiljövariabler som jokertecken när du lägger Microsoft Defender Antivirus undantag för mappar och processer. I tabellen under [Systemmiljövariabler finns](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) en fullständig lista över systemmiljövariabler.
 
 Mer information om hur du använder jokertecken i [undantagslistor](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) finns i Använda jokertecken i filnamn och mappsökväg eller undantagslistor för tillägg.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Konfigurera och validera undantag i genomsökningar för Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
+- [Konfigurera och validera undantag i Microsoft Defender Antivirus genomsökningar](configure-exclusions-microsoft-defender-antivirus.md)
 - [Konfigurera och validera undantag baserat på filtillägg och mappplats](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Konfigurera och validera undantag för filer som öppnas i processer](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Konfigurera undantag för Microsoft Defender Antivirus på Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Konfigurera Microsoft Defender Antivirus undantag på Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)

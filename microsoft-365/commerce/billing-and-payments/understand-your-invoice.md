@@ -19,16 +19,23 @@ search.appverid:
 - MET150
 description: Lär dig att läsa och förstå fakturan för Microsoft företagsprodukter.
 keywords: faktureringskonton, organisationsinformation, fakturor
-ms.openlocfilehash: 3752254fc6068381cd6effed0be4d5b8295f8a27
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 344877a4b97f5c77dc3381aa49d7bf0f60bd628e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579764"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244714"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Förstå din faktura
 
 Fakturan innehåller en sammanfattning av dina avgifter och instruktioner för betalning. Du kan [Visa din faktura online](#view-your-online-invoice) i Administrationscenter för Microsoft 365. Du kan också ladda ned den i Portable Document Format (.pdf) för att skicka via e-post.
+
+Så här visar och skriver du ut fakturan:
+
+1. På sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">fakturor och betalningar</a> väljer du ett datumintervall för fakturan.
+2. Om du vill skriva ut eller spara en PDF-kopia av fakturan väljer du **Ladda ned PDF-faktura** och skriver sedan ut PDF-filen.
+
+Om du vill veta mer kan du läsa [Visa din faktura](view-your-bill-or-invoice.md).
 
 Om du bara har en Microsoft 365-prenumeration läser du [Förstår fakturan för Microsoft 365 för företag](understand-your-invoice2.md).
 
@@ -133,13 +140,6 @@ Betalningsanvisningarna beror på din betalningsmetod och finns längst ned i fa
 
 - **Tjänstperiod:** Tidsperioden då du debiteras för att använda tjänsten.
 - **Faktureringsperiod:** Tidsperioden sedan datumet för den senaste fakturan.
-
-### <a name="how-do-i-view-and-print-my-bill"></a>Hur visar jag och skriver ut fakturan?
-
-1. På sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">fakturor och betalningar</a> väljer du ett datumintervall för fakturan.
-2. Om du vill skriva ut eller spara en PDF-kopia av fakturan väljer du **Ladda ned PDF-faktura** och skriver sedan ut PDF-filen.
-
-Om du vill veta mer kan du läsa [Visa din faktura](view-your-bill-or-invoice.md).
 
 ### <a name="why-dont-i-see-azure-prepayment-as-a-payment-method"></a>Varför ser jag inte Azure-förbetalning som betalningsmetod?
 

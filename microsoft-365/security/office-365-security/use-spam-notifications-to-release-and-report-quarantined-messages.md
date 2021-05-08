@@ -21,12 +21,12 @@ ms.custom:
 description: Administratörer kan läsa mer om skräppost-aviseringar för slutanvändare för meddelanden i karantän i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9cff91be399bd98eb7e6e5a2a6d91a4a8bb602ec
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3f5eafbb51cd0ff32c69fa0cff85729ef95d3d1f
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207208"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274994"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Använda skräppost-aviseringar för användare för att släppa och rapportera meddelanden i karantän
 
@@ -56,7 +56,7 @@ En skräppost-avisering för slutanvändaren innehåller följande information f
 
 - **Datum:** Datum och tid (i UTC) då meddelandet satt i karantän.
 
-- **Spärra avsändare:** Klicka på den här länken om du vill lägga till avsändaren i listan Spärrade avsändare. Mer information finns i Spärra [en e-postavsändare.](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)
+- **Spärra avsändare:** Klicka på den här länken om du vill lägga till avsändaren i listan Spärrade avsändare i din postlåda. Mer information finns i Spärra [en e-postavsändare.](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)
 
 - **Version:** För skräppost (inte nätfiske) kan du släppa meddelandet här utan att gå till karantänen för & säkerhets- och efterlevnadscenter.
 

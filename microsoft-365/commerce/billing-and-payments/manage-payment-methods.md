@@ -23,14 +23,17 @@ search.appverid:
 - MET150
 description: Lär dig hur du hanterar dina betalningsmetoder i administrationscentret för Microsoft 365.
 ms.date: 04/02/2021
-ms.openlocfilehash: 4b35b7b8e874915e5f9c792686ff0e368292c802
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: b69096bb05ada6ce7a1ee619aa78bc04639e7004
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107045"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244726"
 ---
 # <a name="manage-payment-methods"></a>Hantera betalningsmetoder
+
+> [!IMPORTANT]
+> Från och med 26 januari 2021 stöds inte längre nya bankkonton för kunder i Belgien, Frankrike, Italien, Luxemburg, Portugal, Spanien och USA. Om du är en befintlig kund i något av dessa länder kan du fortsätta betala för prenumerationen med ett befintligt bankkonto och du kan lägga till nya prenumerationer till det, men bara så länge bankkontot redan är befintligt.
 
 När du köper företagsprodukter eller -tjänster från Microsoft kan du använda en befintlig betalningsmetod eller lägga till en ny. Du kan använda ett kredit- eller betalkort för att betala för det du köper.
 

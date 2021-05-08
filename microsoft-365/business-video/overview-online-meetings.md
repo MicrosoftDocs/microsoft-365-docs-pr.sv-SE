@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du är värd för onlinemöten för ditt företag.
-ms.openlocfilehash: 893a03b064b6f73711b69a61c90cd40023241c48
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 9874e22724dd04255fb6109b5fb268ac2dcd3f95
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939524"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244902"
 ---
 # <a name="host-online-meetings-for-your-business"></a>Hålla onlinemöten för ditt företag
 
@@ -33,7 +33,7 @@ Behöver du ha ett möte med en kund, kund eller partner, men kan inte få alla 
 
 De måste ladda ned den kostnadsfria [versionen eller ansluta sig](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) online i en webbläsare för [att](https://support.microsoft.com/office/1613bb53-f3fa-431e-85a9-d6a91e3468c9) få video- och skärmdelning.
 
-Om du ofta samarbetar kring projekt med en kund, kund eller partner bör du överväga att skapa ett [team](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7) för dina klienter så att du enkelt kan bjuda in dem till möten och även föra konversationer, dela filer och spåra projekt i Microsoft Teams.
+Om du ofta samarbetar kring projekt med en kund, kund eller partner bör du överväga att skapa ett [team](team-with-guests.md) för dina klienter så att du enkelt kan bjuda in dem till möten och även föra konversationer, dela filer och spåra projekt Microsoft Teams.
 
 Ladda ned en infografik för att få en snabb överblick över hur du ansluter till eller är värd för ett onlinemöte med Microsoft Teams:
 
@@ -43,9 +43,9 @@ Ladda ned en infografik för att få en snabb överblick över hur du ansluter t
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOhP?autoplay=false]
 
-Använd Microsoft Teams om du vill schemalägga möten med dina anställda, klienter och andra gäster. Prova det:
+Om du vill schemalägga möten med anställda, klienter och andra gäster använder du Microsoft Teams. Prova det:
 
-1. I det vänstra navigeringsfältet i Microsoft Teams väljer du **Möten.**
+1. I Microsoft Teams navigeringsfältet till vänster väljer du **Möten.**
 1. Välj **Schemalägg ett möte**.
 1. I rutan **Nytt möte anger** du en **Rubrik** och **en Plats** för mötet.
 1. Ange tid **och** datum **för** Start och Slut.
@@ -60,8 +60,8 @@ Använd Microsoft Teams om du vill schemalägga möten med dina anställda, klie
 
 Använd Microsoft Teams för att ansluta till möten med både anställda i företaget och klienter utanför företaget. Prova det:
 
-1. I det vänstra navigeringsfältet i Microsoft Teams väljer du **Möten.**
-1. Öppna mötet som du vill ansluta till och välj Anslut till **Microsoft Teams-möte.**
+1. I Microsoft Teams navigeringsfältet till vänster väljer du **Möten.**
+1. Öppna mötet som du vill ansluta till och välj **anslut till Microsoft Teams möte.**
 1. När mötet öppnas väljer du **Anslut nu.**
 1. En klient som bjudits in till mötet öppnar mötet i sin kalender, väljer möteslänken, laddar ned Teams-appen eller öppnar den på webben, anger sitt namn och väljer **Anslut.**
 1. När klienten visas i lobbyn väljer du Släpp in **för** att släppa in dem.
@@ -71,7 +71,7 @@ Använd Microsoft Teams för att ansluta till möten med både anställda i för
 
 Du kan enkelt konvertera en chatt i Microsoft Teams till ett möte. Du startar **samtalet genom att** välja knappen :::image type="icon" source="../media/video-call-icon.png" border="false"::: **Videosamtal** eller knappen :::image type="icon" source="../media/audio-call-icon.png" border="false"::: Ljudsamtal. Du kan också lägga till personer i samtalet om det behövs en gruppdiskussion.
 
-Behöver du lite hjälp? Se [Starta ett samtal från en chatt i Teams](https://support.microsoft.com/office/f5138c9d-df4c-43d8-9cf6-53400c1a7798).
+Behöver du lite hjälp? Läs [Starta ett samtal från en chatt i Teams](https://support.microsoft.com/office/f5138c9d-df4c-43d8-9cf6-53400c1a7798).
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: 48674292e5a72ccc371ff4bf43dc499f19b3886d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b0c983f4ba939cee6485570af774c8a728c73944
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51072090"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274934"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Granska åtgärdsåtgärder efter en automatiserad undersökning
 
@@ -61,7 +61,7 @@ Oavsett om en automatisk undersökning vidtas automatiskt eller efter godkännan
 
 ## <a name="review-pending-actions"></a>Granska väntande åtgärder
 
-1. Gå till Säkerhetscenter för Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ) och logga in.
+1. Gå till Microsoft 365 ( ) [https://security.microsoft.com](https://security.microsoft.com) och logga in.
 2. Välj Åtgärdscenter i **navigeringsfönstret.** 
 3. Granska objekten på **fliken Väntande.** 
 4. Välj en åtgärd för att öppna det utfällade fönstret.
@@ -73,7 +73,7 @@ Oavsett om en automatisk undersökning vidtas automatiskt eller efter godkännan
 
 ## <a name="review-completed-actions"></a>Granska slutförda åtgärder
 
-1. Gå till Säkerhetscenter för Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ) och logga in.
+1. Gå till Microsoft 365 ( ) [https://security.microsoft.com](https://security.microsoft.com) och logga in.
 2. Välj Åtgärdscenter i **navigeringsfönstret.** 
 3. Granska objekten på **fliken** Historik. 
 4. Markera ett objekt om du vill visa mer information om den åtgärden.
@@ -107,11 +107,11 @@ Automatiseringsnivåer påverkar om vissa åtgärder vidtas automatiskt eller ba
 |**Full – åtgärda hot automatiskt** (den rekommenderade inställningen) |En bedömning av *skadlig* är uppnådd för ett bevis. <br/><br/>Lämpliga åtgärder vidtas automatiskt. |[Granska slutförda åtgärder](#review-completed-actions) |
 |**Full – åtgärda hot automatiskt** |En bedömning av *misstänkt* resultat har uppnåtts om det finns bevis för det. <br/><br/>Åtgärdsåtgärder väntar på godkännande för att fortsätta. | [Godkänna (eller avvisa) väntande åtgärder](#review-pending-actions) |
 |**Semi – kräv godkännande för åtgärd**  |En bedömning av *antingen* Skadlig *eller Misstänkt* har nåtts som bevis. <br/><br/>Åtgärdsåtgärder väntar på godkännande för att fortsätta.  |[Godkänna (eller avvisa) väntande åtgärder](#review-pending-actions) |
-|**Semi – kräver godkännande för åtgärd av basmappar** |En bedömning av *skadlig* är uppnådd för ett bevis. <br/><br/>Om artefakten är en fil eller körbar och finns i en operativsystemkatalog, till exempel Windows-mappen eller mappen Programfiler, väntar åtgärder på att godkännas. <br/><br/>Om artefakten *inte* finns i en katalog i operativsystemet vidtas åtgärder automatiskt. |1. [Godkänna (eller avvisa) väntande åtgärder](#review-pending-actions)<br/><br/>2. [Granska slutförda åtgärder](#review-completed-actions) |
+|**Semi – kräver godkännande för åtgärd av basmappar** |En bedömning av *skadlig* är uppnådd för ett bevis. <br/><br/>Om artefakten är en fil eller körbar och finns i en operativsystemkatalog, till exempel mappen Windows eller mappen Programfiler, väntar åtgärder på att godkännas. <br/><br/>Om artefakten *inte* finns i en katalog i operativsystemet vidtas åtgärder automatiskt. |1. [Godkänna (eller avvisa) väntande åtgärder](#review-pending-actions)<br/><br/>2. [Granska slutförda åtgärder](#review-completed-actions) |
 |**Semi – kräver godkännande för åtgärd av basmappar** |En bedömning av *misstänkt* resultat har uppnåtts om det finns bevis för det. <br/><br/>Åtgärdsåtgärder väntar på godkännande.  |[Godkänna (eller avvisa) väntande åtgärder](#review-pending-actions).|
 |**Semi – kräver godkännande för åtgärder som inte är tillfälliga mappar** |En bedömning av *skadlig* är uppnådd för ett bevis. <br/><br/>Om artefakten är en fil eller körbar som inte finns i en tillfällig mapp, till exempel användarens mapp för nedladdningar eller tillfällig mapp, väntar åtgärder på att godkännas. <br/><br/>Om artefakten är en fil eller körbar *som* finns i en tillfällig mapp vidtas åtgärder automatiskt.  |1. [Godkänna (eller avvisa) väntande åtgärder](#review-pending-actions)<br/><br/>2. [Granska slutförda åtgärder](#review-completed-actions)  |
 |**Semi – kräver godkännande för åtgärder som inte är tillfälliga mappar** |En bedömning av *misstänkt* resultat har uppnåtts om det finns bevis för det. <br/><br/>Åtgärdsåtgärder väntar på godkännande. |[Godkänna (eller avvisa) väntande åtgärder](#review-pending-actions)  | 
-|Alla automationsnivåer **med helt** **eller semi** |En bedömning av *Inga hot hittades* som bevis. <br/><br/>Inga åtgärdsåtgärder vidtas och inga åtgärder väntar på att godkännas. |[Visa detaljer och resultat av automatiserade utredningar](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center) |
+|Alla automationsnivåer **med helt** **eller semi** |En bedömning av *Inga hot hittades* som bevis. <br/><br/>Inga åtgärdsåtgärder vidtas och inga åtgärder väntar på att godkännas. |[Visa detaljer och resultat av automatiserade undersökningar](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center) |
 |**Inget automatiskt svar** (rekommenderas inte)|Ingen automatiserad undersökning körs, så inga bedömningar har uppnåtts och inga åtgärder vidtas eller väntar på godkännande. |[Överväg att konfigurera eller ändra enhetsgrupper så att fullständig **eller** **semi-automation** används](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups) |
 
 I Microsoft Defender för Endpoint spåras alla beslut i [Åtgärdscenter](auto-investigation-action-center.md#new-a-unified-action-center).
@@ -120,7 +120,7 @@ I Microsoft Defender för Endpoint spåras alla beslut i [Åtgärdscenter](auto-
 
 - [Läs mer om funktioner för livesvar](live-response.md)
 - [Proaktiv sökning efter hot med avancerad sökning](advanced-hunting-overview.md)
-- [Adressera falska positiva/negativa tal i Microsoft Defender för Endpoint](defender-endpoint-false-positives-negatives.md)
+- [Åtgärda falska positiva/negativa i Microsoft Defender för Endpoint](defender-endpoint-false-positives-negatives.md)
 
 ## <a name="see-also"></a>Se även
 

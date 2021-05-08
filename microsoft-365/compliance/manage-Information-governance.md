@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Implementera Microsofts Informationsstyrningsfunktioner för att styra dina data för efterlevnad eller regleringskrav.
-ms.openlocfilehash: 6a0db63f218db72dbda9afc510cb5ef5f5e13eaa
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 304b4e57702c55242e49fae7fdf4a36e9b2f7cdb
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52162934"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244570"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft Informationsstyrning i Microsoft 365
 
@@ -31,6 +31,8 @@ Använd Microsoft Informationsstyrning (ibland förkortad till MIG) för att sty
 ![Styra dina data – informationsstyrning och hantering av arkivhandlingar](../media/information-governance-records-management.png)
 
 Vill du skydda dina data? Se [Microsoft Informationsskydd i Microsoft 365](information-protection.md).
+
+För att hjälpa dig att följa föreskrifterna för datasekretess har vi utformat ett arbetsflöde som vägleder dig genom en hela processen för att planera och implementera funktioner i Microsoft 365, inklusive säker åtkomst, skydd mot hot, informationsskydd och datastyrning. Mer information finns i [Distribuera informationsskydd för föreskrifter för datasekretess med Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
 
 ## <a name="information-governance"></a>Informationsstyrning
 

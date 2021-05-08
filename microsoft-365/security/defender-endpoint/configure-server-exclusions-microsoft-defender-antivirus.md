@@ -1,28 +1,29 @@
 ---
-title: Konfigurera undantag för Microsoft Defender Antivirus på Windows Server
+title: Konfigurera Microsoft Defender Antivirus undantag på Windows Server
 ms.reviewer: ''
 manager: dansimp
-description: Windows Server innehåller automatiska undantag, baserat på serverroll. Du kan också lägga till anpassade undantag.
-keywords: undantag, server, automatisk exkludering, automatisk, anpassad, genomsökning, Microsoft Defender Antivirus
+description: Windows Servern innehåller automatiska undantag, baserat på serverroll. Du kan också lägga till anpassade undantag.
+keywords: undantag, server, automatisk exkludering, automatisk, anpassad, genomsökning och Microsoft Defender Antivirus
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
 ms.date: 02/10/2021
-ms.openlocfilehash: 507edb980f671b2f39403cc41e540150f5e82891
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: f82da8eb0dcba39404c2b7f191e166aa78357cee
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764347"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274766"
 ---
-# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Konfigurera undantag för Microsoft Defender Antivirus på Windows Server
+# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Konfigurera Microsoft Defender Antivirus undantag på Windows Server
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,7 +31,7 @@ ms.locfileid: "51764347"
 
 - [Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender Antivirus på Windows Server 2016 och Windows Server 2019 registrerar dig automatiskt i vissa undantag, enligt din angivna serverroll. Dessa undantag visas inte i standard undantagslistor som visas i [Windows-säkerhetsappen.](microsoft-defender-security-center-antivirus.md)
+Microsoft Defender Antivirus på Windows Server 2016 och Windows Server 2019 automatiskt registrerar dig i vissa undantag, som definieras av din angivna serverroll. Undantagen visas inte i de standard undantagslistor som visas i [Windows-säkerhet programmet](microsoft-defender-security-center-antivirus.md).
 
 > [!NOTE]
 > Automatiska undantag gäller endast för RTP-skanning (Real-time protection). Automatiska undantag respekteras inte vid en genomsökning av fullständiga/snabba eller på begäran.
@@ -50,23 +51,23 @@ Tänk på följande:
 
 ## <a name="opt-out-of-automatic-exclusions"></a>Välja bort automatiska undantag
 
-I Windows Server 2016 och Windows Server 2019 exkluderar de fördefinierade undantagen som levereras av säkerhetsintelligensuppdateringar endast standardsökvägarna för en roll eller funktion. Om du har installerat en roll eller funktion i en anpassad sökväg, eller om du manuellt vill styra uppsättningen undantag, måste du välja bort automatiska undantag som levereras i säkerhetsintelligensuppdateringar. Men kom ihåg att undantagen som levereras automatiskt är optimerade för Windows Server 2016- och 2019-roller. Se [Rekommendationer för att definiera undantag](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) innan du definierar dina undantagslistor.
+I Windows Server 2016 och Windows Server 2019 exkluderar de fördefinierade undantagen som levereras av säkerhetsintelligensuppdateringar endast standardsökvägarna för en roll eller funktion. Om du har installerat en roll eller funktion i en anpassad sökväg, eller om du manuellt vill styra uppsättningen undantag, måste du välja bort automatiska undantag som levereras i säkerhetsintelligensuppdateringar. Men kom ihåg att undantagen som levereras automatiskt är optimerade för Windows Server 2016- och 2019-roller. Läs Rekommendationer för att definiera undantag innan du definierar dina [undantagslistor.](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)
 
 > [!WARNING]
-> Om du väljer bort automatiska undantag kan det påverka prestandan negativt eller resultera i skadade data. Undantag som levereras automatiskt optimeras för Windows Server 2016- och Windows Server 2019-roller.
+> Om du väljer bort automatiska undantag kan det påverka prestandan negativt eller resultera i skadade data. Undantagen som levereras automatiskt optimeras för Windows Server 2016 och Windows Server 2019-roller.
 
 Eftersom fördefinierade undantag bara exkluderar standardsökvägar måste du lägga till undantag manuellt med hjälp av informationen här om du flyttar NTDS och SYSVOL till en annan enhet eller sökväg som skiljer sig från den ursprungliga [sökvägen.](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension)
 
 Du kan inaktivera automatiska undantagslistor med Grupprincip, PowerShell-cmdlets och WMI.
 
-### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Använda grupprinciper för att inaktivera listan med automatiska undantag i Windows Server 2016 och Windows Server 2019
+### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Använd grupprinciper för att inaktivera listan med automatiska undantag i Windows Server 2016 och Windows Server 2019
 
 1. Öppna konsolen Grupprinciphantering på datorn [för grupprinciphantering.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)) Högerklicka på det grupprincipobjekt du vill konfigurera och klicka sedan på **Redigera.**
 2. I **redigeraren för grupprinciphantering** går du **till Datorkonfiguration** och klickar sedan på **Administrativa mallar**.
-3. Expandera trädet till **Windows-komponenter**  >  **Microsoft Defender Antivirus**  >  **Exclusions**.
+3. Expandera trädet och visa **Windows komponenter**  >  **Microsoft Defender Antivirus**  >  **Undantag**.
 4. Dubbelklicka på **Inaktivera automatiska undantag och** ställ in alternativet på **Aktiverad.** Klicka sedan på **OK**. 
 
-### <a name="use-powershell-cmdlets-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-2019"></a>Använda PowerShell-cmdlets för att inaktivera listan över automatiska undantag i Windows Server 2016 och 2019
+### <a name="use-powershell-cmdlets-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-2019"></a>Använd PowerShell-cmdlets för att inaktivera listan över undantag automatiskt Windows Server 2016 och 2019
 
 Använd följande cmdlets:
 
@@ -76,10 +77,10 @@ Set-MpPreference -DisableAutoExclusions $true
 
 Mer information finns i följande resurser:
 
-- [Använd PowerShell-cmdlets för att konfigurera och köra Microsoft Defender Antivirus.](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Använd PowerShell med Microsoft Defender Antivirus.](/powershell/module/defender/)
+- [Använd PowerShell-cmdlets för att konfigurera och köra Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md).
+- [Använd PowerShell med Microsoft Defender Antivirus](/powershell/module/defender/).
 
-### <a name="use-windows-management-instruction-wmi-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Använd Instruktionerna för Windows Management (WMI) för att inaktivera listan över automatiska undantag i Windows Server 2016 och Windows Server 2019
+### <a name="use-windows-management-instruction-wmi-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Använd Windows för hanteringsinstruktioner (WMI) för att inaktivera listan över automatiska undantag i Windows Server 2016 och Windows Server 2019
 
 Använd **metoden** Set för [MSFT_MpPreference](/previous-versions/windows/desktop/defender/msft-mppreference) för följande egenskaper:
 
@@ -88,7 +89,7 @@ DisableAutoExclusions
 ```
 
 Mer information och tillåtna parametrar finns i följande avsnitt:
-- [API:er för Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows Defender WMIv2-API:er](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## <a name="list-of-automatic-exclusions"></a>Lista över automatiska undantag
 
@@ -96,17 +97,17 @@ Följande avsnitt innehåller undantag som levereras med automatiska undantag f�
 
 ### <a name="default-exclusions-for-all-roles"></a>Standard undantag för alla roller
 
-Det här avsnittet innehåller standard undantag för alla Windows Server 2016- och 2019-roller.
+Det här avsnittet innehåller standard undantag för alla Windows Server 2016 och 2019-roller.
 
 > [!NOTE]
 > Standardplatserna kan vara annorlunda än de som anges i den här artikeln.
 
-#### <a name="windows-tempedb-files"></a>Windows-filer "temp.edb"
+#### <a name="windows-tempedb-files"></a>Windows "temp.edb"-filer
 
 - `%windir%\SoftwareDistribution\Datastore\*\tmp.edb`
 - `%ProgramData%\Microsoft\Search\Data\Applications\Windows\*\*.log`
 
-#### <a name="windows-update-files-or-automatic-update-files"></a>Windows Update-filer eller automatiska uppdateringsfiler
+#### <a name="windows-update-files-or-automatic-update-files"></a>Windows Uppdatera filer eller automatiska uppdateringsfiler
 
 - `%windir%\SoftwareDistribution\Datastore\*\Datastore.edb`
 - `%windir%\SoftwareDistribution\Datastore\*\edb.chk`
@@ -114,7 +115,7 @@ Det här avsnittet innehåller standard undantag för alla Windows Server 2016- 
 - `%windir%\SoftwareDistribution\Datastore\*\Edb\*.jrs`
 - `%windir%\SoftwareDistribution\Datastore\*\Res\*.log`
 
-#### <a name="windows-security-files"></a>Windows-säkerhetsfiler
+#### <a name="windows-security-files"></a>Windows-säkerhet filer
 
 - `%windir%\Security\database\*.chk`
 - `%windir%\Security\database\*.edb`
@@ -258,9 +259,9 @@ I det här avsnittet visas undantag för filer och mappar och undantag från pro
 
 - `%systemroot%\System32\dns.exe`
 
-### <a name="file-and-storage-services-exclusions"></a>Undantag för fil- och lagringstjänster
+### <a name="file-and-storage-services-exclusions"></a>Undantag för Storage Fil- och Storage tjänster
 
-I det här avsnittet visas en lista över undantag för filer och mappar som levereras automatiskt när du installerar rollen Fil- och lagringstjänster. Undantag som visas nedan inkluderar inte undantag för rollen Gruppering.
+Det här avsnittet innehåller undantag för filer och mappar som levereras automatiskt när du installerar rollen Arkiv Storage Tjänster. Undantag som visas nedan inkluderar inte undantag för rollen Gruppering.
 
 - `%SystemDrive%\ClusterStorage`
 - `%clusterserviceaccount%\Local Settings\Temp`
@@ -325,9 +326,9 @@ Undanta följande filer från den här mappen och alla dess undermappar:
 - `*.ins`
 - `Oscfilter.ini`
 
-### <a name="windows-server-update-services-exclusions"></a>Undantag för Windows Server Update Services
+### <a name="windows-server-update-services-exclusions"></a>Windows Server Update Services undantag
 
-Det här avsnittet innehåller en lista över undantag för mappar som levereras automatiskt när du installerar rollen Windows Server Update Services (WSUS). WSUS-mappen anges i registernyckeln `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`
+Det här avsnittet innehåller en lista över undantag för mappar som levereras automatiskt när du installerar Windows Server Update Services rollen (WSUS). WSUS-mappen anges i registernyckeln `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`
 
 - `%systemroot%\WSUS\WSUSContent`
 - `%systemroot%\WSUS\UpdateServicesDBFiles`
@@ -336,9 +337,9 @@ Det här avsnittet innehåller en lista över undantag för mappar som levereras
 
 ## <a name="see-also"></a>Se även
 
-- [Konfigurera och validera undantag för genomsökningar för Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
+- [Konfigurera och validera undantag för Microsoft Defender Antivirus genomsökningar](configure-exclusions-microsoft-defender-antivirus.md)
 - [Konfigurera och validera undantag baserat på filnamn, filnamnstillägg och mappplats](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Konfigurera och validera undantag för filer som öppnas i processer](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Vanliga misstag att undvika när du definierar undantag](common-exclusion-mistakes-microsoft-defender-antivirus.md)
-- [Anpassa, initiera och granska resultatet av genomsökningar och åtgärder i Microsoft Defender Antivirus](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Vanliga misstag att undvika när man definierar undantag](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+- [Anpassa, initiera och granska resultaten av Microsoft Defender Antivirus genomsökningar och åtgärder](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus i Windows 10](microsoft-defender-antivirus-in-windows-10.md)

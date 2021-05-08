@@ -161,10 +161,10 @@
           href: create-sensitivity-labels.md
     - name: Support
       items:
-        - name: Hitta svar och hjälp
-          href: find-help-answers.md
         - name: Få hjälp eller support
           href: get-help-support.md
+        - name: Sök efter dokument och utbildning
+          href: find-help-answers.md
         - name: Snabbinstallationsguide för anställda
           href: employee-quick-setup.md
     - name: Växla från Google-arbetsyta

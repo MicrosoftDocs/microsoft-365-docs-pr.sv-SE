@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Läs mer om de aktuella begränsningarna för funktionen Innehållssökning i Microsoft 365, till exempel det maximala antalet samtidiga sökningar. De här sökbegränsningarna gäller även för sökningar som är associerade med Core eDiscovery-fall.
-ms.openlocfilehash: 3ed7c97f633bc7e110ac5d4a84142abf612ec5b3
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: e4cfc79d35b4dc6a22e8e7a872699d906b39a901
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "52162736"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244326"
 ---
 # <a name="limits-for-content-search"></a>Begränsningar för innehållssökning 
 Olika begränsningar tillämpas på verktyget Innehållssökning i Microsoft 365 kompatibilitetscenter. Det omfattar sökningar som körs på **sidan Innehållssökning** och sökningar som är associerade med eDiscovery-fall på **sidan Bas-eDiscovery.** De här begränsningarna bidrar till att bevara hälso- och kvaliteten på tjänster som ges till organisationer. Det finns också begränsningar för indexering av e-postmeddelanden i Exchange Online för sökning. Du kan inte ändra begränsningarna för innehållssökning eller e-postindexering, men du bör känna till dem så att du kan ta hänsyn till de här begränsningarna när du planerar, kör och felsöker innehållssökningar.
@@ -45,7 +45,7 @@ I följande tabell visas sökbegränsningar när du använder verktyget för inn
 |Maximalt antal objekt per postlåda i den gemensamma mappen som visas på förhandsgranskningssidan när innehållssökningsresultat förhandsgranskas.  <br/> |100  <br/> |
 |Maximalt antal objekt som hittas i alla postlådor i gemensamma mappar som visas på förhandsgranskningssidan när du förhandsgranskar innehållssökningsresultat.  <br/> |200  <br/> |
 |Maximalt antal offentliga postlådor som kan förhandsgranskas för sökresultat. Om det finns fler än 500 postlådor för gemensamma mappar som innehåller innehåll som matchar sökfrågan är endast de 500 postlådorna med flest sökresultat tillgängliga för förhandsgranskning.  <br/> |500  <br/> |
-|Det maximala antalet tecken för sökfrågan (inklusive operatorer och villkor) för en sökning.  <br/><br/> **Obs!** Den här gränsen gäller när frågan har expanderats, vilket innebär att frågan utökas mot var och en av nyckelorden. Om en sökfråga till exempel har 15 nyckelord och ytterligare parametrar och villkor utökas frågan 15 gånger, var och en med de andra parametrarna och villkoren i frågan. Så även om antalet tecken i sökfrågan kan vara under gränsen, är det den utökade frågan som kan bidra till att överskrida den här gränsen.  <br/> |**Postlådor:** 10 000  <br/> **Webbplatser:** 4 000 vid sökning på alla webbplatser eller 2 000 vid sökning på upp till 20 webbplatser <sup>2</sup> <br/> |
+|Det maximala antalet tecken för sökfrågan (inklusive operatorer och villkor) för en sökning.  <br/><br/> **Obs!** Den här gränsen gäller efter att frågan har expanderats och innehåller tecken från nyckelordsfrågan, eventuella sökbehörighetsfilter som används för användaren och WEBBADRESSerna för alla webbplatsplatser. Det innebär att frågan utökas mot var och en av nyckelorden. Om en sökfråga till exempel har 15 nyckelord och ytterligare parametrar och villkor utökas frågan 15 gånger, var och en med de andra parametrarna och villkoren i frågan. Så även om antalet tecken i sökfrågan kan vara under gränsen, är det den utökade frågan som kan bidra till att överskrida gränsen.  <br/> |**Postlådor:** 10 000  <br/> **Webbplatser:** 4 000 vid sökning på alla webbplatser eller 2 000 vid sökning på upp till 20 webbplatser <sup>2</sup> <br/> |
 |Maximalt antal varianter som returneras när ett prefix-jokertecken används för att söka efter  en exakt fras i en sökfråga eller när du använder ett prefix-jokertecken och NEAR-boolesk operator.  <br/> |10 000 <sup>3</sup> <br/> |
 |Lägsta antal alfatecken för jokertecken i prefix. till exempel  `time*` ,  `one*` eller  `set*` .  <br/> |3  <br/> |
 |Det maximala antalet postlådor i en sökning som du kan ta bort objekt i genom att göra en sök- och rensningsåtgärd (med kommandot **New-ComplianceSearchAction -Purge).** Om sökningen som du utför en rensning för har fler källpostlådor än den här gränsen misslyckas rensningsåtgärden. Mer information om hur du söker efter och rensar finns [i Söka efter och ta bort e-postmeddelanden i organisationen.](search-for-and-delete-messages-in-your-organization.md)  <br/> |50,000  <br/> |

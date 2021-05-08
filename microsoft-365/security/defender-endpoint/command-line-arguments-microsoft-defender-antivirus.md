@@ -1,12 +1,12 @@
 ---
 title: Använda kommandoraden för att hantera Microsoft Defender Antivirus
-description: Kör genomsökningar för Microsoft Defender Antivirus och konfigurera nästa generations skydd med ett dedikerat kommandoradsverktyg.
+description: Kör Microsoft Defender Antivirus genomsökningar och konfigurera nästa generations skydd med ett dedikerat kommandoradsverktyg.
 keywords: kör windows defender scan, kör antivirussökning från kommandoraden, kör windows defender scan från kommandoraden, mpcmdrun, defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,14 +14,15 @@ ms.reviewer: ksarens
 manager: dansimp
 ms.date: 03/19/2021
 ms.technology: mde
-ms.openlocfilehash: 1b357f7c1e02211f3949383a380666cb7444f814
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: how-to
+ms.openlocfilehash: 85fb60d8d4504ba3a4aa8744c1183d094da01a9b
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764633"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274754"
 ---
-# <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Konfigurera och hantera Microsoft Defender Antivirus mpcmdrun.exe ett kommandoradsverktyget
+# <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Konfigurera och Microsoft Defender Antivirus med mpcmdrun.exe-kommandoradsverktyget
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,7 +31,7 @@ ms.locfileid: "51764633"
 
 - [Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Du kan utföra olika Microsoft Defender Antivirus-funktioner med det dedikerade kommandoradsverktyget **mpcmdrun.exe**. Det här verktyget är användbart när du vill automatisera användningen av Microsoft Defender Antivirus. Du hittar verktyget i `%ProgramFiles%\Windows Defender\MpCmdRun.exe` . Du måste köra den från en kommandotolk.
+Du kan utföra Microsoft Defender Antivirus olika funktioner med det dedikerade kommandoradsverktyget **mpcmdrun.exe**. Det här verktyget är användbart när du vill automatisera Microsoft Defender Antivirus använda. Du hittar verktyget i `%ProgramFiles%\Windows Defender\MpCmdRun.exe` . Du måste köra den från en kommandotolk.
 
 > [!NOTE]
 > Du kan behöva öppna en version på administratörsnivå av kommandotolken. När du söker efter **Kommandotolken** på Start-menyn väljer du **Kör som administratör**.
@@ -63,15 +64,15 @@ MpCmdRun.exe -Scan -ScanType 2
 | `-ListAllDynamicSignatures` | Visar den inlästa dynamiska säkerhetsintelligensen |
 | `-RemoveDynamicSignature [-SignatureSetID]` | Tar bort dynamisk säkerhetsinformation |
 | `-CheckExclusion -path <path>` | Kontrollerar om en sökväg är utesluten |
-| `-ValidateMapsConnection` | Verifierar att nätverket kan kommunicera med molntjänsten Microsoft Defender Antivirus. Det här kommandot fungerar bara i Windows 10, version 1703 eller senare.|
+| `-ValidateMapsConnection` | Verifierar att nätverket kan kommunicera Microsoft Defender Antivirus molntjänsten. Det här kommandot fungerar bara i Windows 10, version 1703 eller senare.|
 
 
 ## <a name="common-errors-in-running-commands-via-mpcmdrunexe"></a>Vanliga fel när du kör kommandon via mpcmdrun.exe 
 
 |Felmeddelande | Möjlig orsak
 |:----|:----|
-| `ValidateMapsConnection failed (800106BA) or 0x800106BA` | Antivirustjänsten Microsoft Defender är inaktiverad. Aktivera tjänsten och försök igen. <br>   **Obs!**  I Windows 10 1909 eller tidigare, och Windows Server 2019 eller äldre, kallades tjänsten Windows Defender Antivirus-tjänsten.|
-| `0x80070667` | Du kör kommandot från en dator med `-ValidateMapsConnection` Windows 10 version 1607 eller äldre, eller Windows Server 2016 eller äldre. Kör kommandot från en dator med Windows 10 version 1703 eller senare, eller Windows Server 2019 eller senare.|
+| `ValidateMapsConnection failed (800106BA) or 0x800106BA` | Tjänsten Microsoft Defender Antivirus inaktiveras. Aktivera tjänsten och försök igen. <br>   **Obs!**  I Windows 10 1909 eller äldre, och Windows Server 2019 eller äldre, kallades tjänsten för "Windows Defender Antivirus"-tjänst.|
+| `0x80070667` | Du kör kommandot från `-ValidateMapsConnection` en dator som är Windows 10 version 1607 eller äldre, eller från Windows Server 2016 eller äldre. Kör kommandot från en dator Windows 10 version 1703 eller senare, eller från Windows 2019 eller senare.|
 | `'MpCmdRun' is not recognized as an internal or external command, operable program or batch file.` | Verktyget måste köras från antingen: eller `%ProgramFiles%\Windows Defender` (om plattformsuppdateringarna är olika varje `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` `2012.4-0` månad, förutom i mars)|
 | `ValidateMapsConnection failed to establish a connection to MAPS (hr=80070005 httpcode=450)` | Inte tillräckligt med behörigheter. Använd kommandotolken (cmd.exe) som administratör.|
 | `ValidateMapsConnection failed to establish a connection to MAPS (hr=80070006 httpcode=451)` | Brandväggen blockerar anslutningen eller utför SSL-kontrollen. |
@@ -82,7 +83,7 @@ MpCmdRun.exe -Scan -ScanType 2
 
 ## <a name="see-also"></a>Se även
 
-- [Konfigurera funktioner för Microsoft Defender Antivirus](configure-microsoft-defender-antivirus-features.md)
-- [Hantera Microsoft Defender Antivirus i ditt företag](configuration-management-reference-microsoft-defender-antivirus.md)
+- [Konfigurera funktionerna i Microsoft Defender Antivirus](configure-microsoft-defender-antivirus-features.md)
+- [Hantera Microsoft Defender Antivirus i företaget](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Referensavsnitt om hanterings- och konfigurationsverktyg](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus i Windows 10](microsoft-defender-antivirus-in-windows-10.md)

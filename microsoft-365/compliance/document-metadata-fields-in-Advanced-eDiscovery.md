@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: I den här artikeln definieras metadatafälten för dokument i en granskning, i ett fall Advanced eDiscovery i Microsoft 365.
-ms.openlocfilehash: e801f60b69c796dfcd2cb6d83cc4fbc721dc7658
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 77df40f4922718a7ed30431b0c1bd91f5c075425
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259469"
+ms.locfileid: "52244606"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Dokumentmetadatafält i Advanced eDiscovery
 
@@ -119,7 +119,7 @@ I följande tabell visas metadatafälten för dokument i en granskning, som i et
 |Slutdatum för möte|MeetingEndDate|Meeting_end_date|Mötets slutdatum för möten.|
 |Startdatum för möte|MeetingStartDate|Meeting_start_date|Mötets startdatum för möten.|
 |Meddelande sort|MessageKind|Message_kind|Den typ av meddelande du vill söka efter. Möjliga värden: kontakter dokument skicka e-post **<br /> <br /> <br /> <br /> externadata fax im journaler möten <br /> <br /> <br /> <br /> <br /> <br /> microsoftteams** (returnerar objekt från chattar, möten och samtal i Microsoft Teams) anteckningar inlägg **<br /> <br /> <br /> rssfeeds uppgifter <br /> <br /> röstbrevlåda**| 
-|Modern överordnad bifogad fil-ID||ModernAttachment_ParentId|Det oföränderliga ID:t för dokumentets överordnade.|
+|ModernAttachment_ParentId||ModernAttachment_ParentId||
 |Ursprungligt filnamnstillägg|NativeExtension|Native_extension|Ursprungligt tillägg för objektet.|
 |Eget filnamn|NativeFileName|Native_file_name|Det ursprungliga filnamnet för objektet.|
 |NativeMD5||Native_MD5|MD5-hash (128-bitars hashvärde) för filströmmen.|
@@ -164,7 +164,6 @@ I följande tabell visas metadatafälten för dokument i en granskning, som i et
 |Title|Title|Doc_title|Rubrik från dokumentets metadata.|
 |Till|Till|Email_to|Fältet Till för meddelandetyper. Format är **DisplayName \<SmtpAddress>**|
 |Unik i e-postuppsättning|UniqueInEmailSet||**False** om det finns en dubblett av den bifogade filen i dess e-postuppsättning.|
-|Id för versionsgrupp||Version_Group_Id|Grupperar ihop olika versioner av samma dokument.|
 |Åtgärdades|WasRemediated|Was_Remediated|**Sant** om objektet har åtgärdats, annars **falskt.**|
 |Räkna ord|WordCount|Word_count|Antalet ord i objektet.|
 |||||

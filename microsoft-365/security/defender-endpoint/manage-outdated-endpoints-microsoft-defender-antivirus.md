@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,14 +15,15 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 81c7fb2bb7cd20fea3f343097811078ed744c3eb
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 4199f55488ef0dc5989af88e8be83a3d51190d1f
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765377"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275066"
 ---
-# <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>Hantera uppdateringar och sökningar i Microsoft Defender Antivirus efter in alla slutpunkter
+# <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>Hantera uppdateringar och genomsökningar för slutpunkter som utgått för Microsoft Defender Antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,19 +32,19 @@ ms.locfileid: "51765377"
 
 - [Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Med Microsoft Defender Antivirus kan du definiera hur länge en slutpunkt kan undvika en uppdatering eller hur många genomsökningar den kan missa innan den krävs för att uppdatera och söka igenom sig själv. Det är särskilt användbart i miljöer där enheter inte ofta är anslutna till ett företags- eller externt nätverk eller enheter som inte används dagligen.
+Microsoft Defender Antivirus kan du definiera hur länge en slutpunkt kan undvika en uppdatering eller hur många genomsökningar den kan missa innan den krävs för att uppdatera och söka igenom sig själv. Det är särskilt användbart i miljöer där enheter inte ofta är anslutna till ett företags- eller externt nätverk eller enheter som inte används dagligen.
 
 En anställd som använder en viss dator har till exempel en paus i tre dagar och loggar inte in på datorn under den tiden.
 
-När användaren återgår till att arbeta och loggar in på sin dator kommer Microsoft Defender Antivirus omedelbart att söka efter och ladda ned de senaste skyddsuppdateringarna och köra en genomsökning.
+När användaren återgår till arbetet och loggar in på sin dator Microsoft Defender Antivirus direkt de senaste skyddsuppdateringarna och kör en genomsökning.
 
 ## <a name="set-up-catch-up-protection-updates-for-endpoints-that-havent-updated-for-a-while"></a>Konfigurera uppdateringar av uppdateringsskydd för slutpunkter som inte har uppdaterats på ett tag
 
-Om Microsoft Defender Antivirus inte har laddat ned skyddsuppdateringar under en viss period kan du konfigurera det så att den automatiskt kontrollerar och hämtar den senaste uppdateringen vid nästa inloggning. Det här är användbart om [du har inaktiverat automatiska uppdateringsnedladdningar vid start](manage-event-based-updates-microsoft-defender-antivirus.md)globalt.
+Om Microsoft Defender Antivirus inte laddat ned skyddsuppdateringar under en viss period kan du konfigurera det så att den automatiskt kontrollerar och hämtar den senaste uppdateringen vid nästa inloggning. Det här är användbart om [du har inaktiverat automatiska uppdateringsnedladdningar vid start](manage-event-based-updates-microsoft-defender-antivirus.md)globalt.
 
 ### <a name="use-configuration-manager-to-configure-catch-up-protection-updates"></a>Använda Konfigurationshanteraren för att konfigurera uppdateringar av upp- och uppslagsskyddet
 
-1.  Öppna den programprincip du vill ändra på Microsoft Endpoint  Manager-konsolen (klicka på Tillgångar och efterlevnad i navigeringsfönstret till vänster och expandera trädet till **Översikt**  >  **Endpoint Protection**  >  **Antimalware Policies**)
+1.  Öppna den Microsoft Endpoint Manager programkonsol på datorn som du vill ändra  (klicka på Tillgångar och efterlevnad i navigeringsfönstret till vänster och expandera trädet till Översikt Endpoint Protection Program mot skadlig  >    >  **programvara**)
 
 2.  Gå till avsnittet **Säkerhetsintelligensuppdateringar** och konfigurera följande inställningar:
 
@@ -62,7 +63,7 @@ Om Microsoft Defender Antivirus inte har laddat ned skyddsuppdateringar under en
 
 3. Klicka **på Principer** och sedan på Administrativa **mallar.**
 
-4. Expandera trädet till **Windows-komponenter > Microsoft Defender Antivirus > Signaturuppdateringar.**
+4. Expandera trädet så att **det Windows komponenter > Microsoft Defender Antivirus > Signaturuppdateringar**.
 
 5. Dubbelklicka på inställningen **Definiera det antal** dagar efter vilken en uppdatering av säkerhetsintelligens krävs och ange alternativet **Aktiverad.** Ange efter hur många dagar du vill att Microsoft Defender AV ska söka efter och hämta den senaste skyddsuppdateringen.
 
@@ -76,9 +77,9 @@ Använd följande cmdlets:
 Set-MpPreference -SignatureUpdateCatchupInterval
 ```
 
-Mer information om hur du använder PowerShell med Microsoft Defender Antivirus finns i Använda [PowerShell-cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) för att konfigurera och köra Microsoft Defender Antivirus- och [Defender-cmdlets.](/powershell/module/defender/)
+Se [Använda PowerShell-cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) för att konfigurera och köra Microsoft Defender Antivirus- och [Defender-cmdlets för](/powershell/module/defender/) mer information om hur du använder PowerShell med Microsoft Defender Antivirus.
 
-### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-protection-updates"></a>Använda Instruktionerna för Windows Management (WMI) för att konfigurera uppdateringar av skydd mot uppslag
+### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-protection-updates"></a>Använd Windows instruktion (WMI) för att konfigurera uppdateringar av uppslagsskyddet
 
 Använd [ **metoden** Set för **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) för följande egenskaper:
 
@@ -87,12 +88,12 @@ SignatureUpdateCatchupInterval
 ```
 
 Mer information och tillåtna parametrar finns i följande avsnitt:
-- [API:er för Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows Defender WMIv2-API:er](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 
 ## <a name="set-the-number-of-days-before-protection-is-reported-as-out-of-date"></a>Ange antalet dagar innan skydd rapporteras som inställt
 
-Du kan också ange hur många dagar efter vilket Microsoft Defender Antivirusskydd betraktas som gammalt eller in uppdaterat. Efter det angivna antalet dagar rapporterar klienten sig själv som in datera och visar ett fel för användaren av datorn. Det kan också orsaka att Microsoft Defender Antivirus försöker hämta en [](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order)uppdatering från andra källor (baserat på den definierade källordningen för reservkällor), till exempel när du använder MMPC som sekundär källa när du har angett WSUS eller Microsoft Update som den första källan.
+Du kan också ange hur många dagar Microsoft Defender Antivirus skydd betraktas som gammalt eller in uppdaterat. Efter det angivna antalet dagar rapporterar klienten sig själv som in datera och visar ett fel för användaren av datorn. Det kan också orsaka att Microsoft Defender Antivirus försöker ladda ned en uppdatering [](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order)från andra källor (baserat på den definierade reservkällordningen), till exempel när du använder MMPC som sekundär källa när du har angett WSUS eller Microsoft Update som den första källan.
 
 ### <a name="use-group-policy-to-specify-the-number-of-days-before-protection-is-considered-out-of-date"></a>Använda grupprincip för att ange antalet dagar innan skydd anses vara in uppdaterat
 
@@ -102,7 +103,7 @@ Du kan också ange hur många dagar efter vilket Microsoft Defender Antivirussky
 
 4.  Klicka **på Principer** och sedan på Administrativa **mallar.**
 
-5.  Expandera trädet till **Windows-komponenter > Microsoft Defender Antivirus > och** konfigurera följande inställningar:
+5.  Expandera trädet för att **Windows komponenter > Microsoft Defender Antivirus > signaturuppdateringar** och konfigurera följande inställningar:
 
     1.  Dubbelklicka på **Definiera antalet dagar innan definitioner av spionprogram anses vara inaktiva och** ställ in alternativet Aktiverad .  Ange efter hur många dagar som Microsoft Defender AV ska överväga att använda spionprogramssäkerhetsinformation.
 
@@ -115,7 +116,7 @@ Du kan också ange hur många dagar efter vilket Microsoft Defender Antivirussky
 
 ## <a name="set-up-catch-up-scans-for-endpoints-that-have-not-been-scanned-for-a-while"></a>Konfigurera snabbsökningar för slutpunkter som inte har sökts igenom på ett tag
 
-Du kan ange antalet schemalagda genomsökningar i följd som kan missas innan Microsoft Defender Antivirus tvingar fram en genomsökning.
+Du kan ange antalet schemalagda genomsökningar i följd som kan missas innan Microsoft Defender Antivirus tvinga fram en genomsökning.
 
 Processen för att aktivera den här funktionen är:
 
@@ -135,7 +136,7 @@ Den här funktionen kan aktiveras för både fullständiga och snabba genomsökn
 
 4.  Klicka **på Principer** och sedan på Administrativa **mallar.**
 
-5.  Expandera trädet till **Windows-komponenter > Microsoft Defender Antivirus > Scan** och konfigurera följande inställningar:
+5.  Expandera trädet för att **Windows komponenter > Microsoft Defender Antivirus > genomsökning** och konfigurera följande inställningar:
 
     1.  Om du har ställt in schemalagda snabbsökningar dubbelklickar du på inställningen Aktivera snabbsökning för snabbsökning och ställer in alternativet **Aktiverad.**  
     2. Om du har ställt in schemalagda fullständiga  genomsökningar dubbelklickar du på inställningen Aktivera snabbsökning och ställer in alternativet **Aktiverad.** Klicka på **OK**.
@@ -155,9 +156,9 @@ Set-MpPreference -DisableCatchupQuickScan
 
 ```
 
-Mer information om hur du använder PowerShell med Microsoft Defender Antivirus finns i Använda [PowerShell-cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) för att hantera Microsoft Defender Antivirus- och [Defender-cmdlets.](/powershell/module/defender/)
+Se [Använda PowerShell-cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) för att hantera Microsoft Defender Antivirus- och [Defender-cmdlets](/powershell/module/defender/) för mer information om hur du använder PowerShell med Microsoft Defender Antivirus.
 
-### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-scans"></a>Använd Instruktionerna för Windows Management (WMI) för att konfigurera genomsökningar för uppläsning
+### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-scans"></a>Konfigurera Windows (WMI) (Management Instruction) för att konfigurera genomsökningar av uppläsningar
 
 Använd [ **metoden** Set för **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) för följande egenskaper:
 
@@ -167,12 +168,12 @@ DisableCatchupQuickScan
 ```
 
 Mer information och tillåtna parametrar finns i följande avsnitt:
-- [API:er för Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows Defender WMIv2-API:er](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 
 ### <a name="use-configuration-manager-to-configure-catch-up-scans"></a>Använda Konfigurationshanteraren för att konfigurera genomsökningar för uppläsning
 
-1.  Öppna den programprincip du vill ändra på Microsoft Endpoint  Manager-konsolen (klicka på Tillgångar och efterlevnad i navigeringsfönstret till vänster och expandera trädet till **Översikt**  >  **Endpoint Protection**  >  **Antimalware Policies**)
+1.  Öppna den Microsoft Endpoint Manager programkonsol på datorn som du vill ändra  (klicka på Tillgångar och efterlevnad i navigeringsfönstret till vänster och expandera trädet till Översikt Endpoint Protection Program mot skadlig  >    >  **programvara**)
 
 2.  Gå till avsnittet **Schemalagda genomsökningar** och Tvinga en genomsökning av den **valda genomsökningstypen om klientdatorn är offline...** till **Ja.** 
 
@@ -183,8 +184,8 @@ Mer information och tillåtna parametrar finns i följande avsnitt:
 ## <a name="related-articles"></a>Relaterade artiklar
 
 - [Distribuera Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
-- [Hantera uppdateringar för Microsoft Defender Antivirus och tillämpa baslinjer](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Hantera Microsoft Defender Antivirus uppdateringar och använda baslinjer](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [Hantera när skyddsuppdateringar ska hämtas och tillämpas](manage-protection-update-schedule-microsoft-defender-antivirus.md)
-- [Hantera händelsebaserade tvingade uppdateringar](manage-event-based-updates-microsoft-defender-antivirus.md)
-- [Hantera uppdateringar för mobila enheter och virtuella maskiner (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
+- [Hantera händelsebaserade uppdateringar](manage-event-based-updates-microsoft-defender-antivirus.md)
+- [Hantera uppdateringar för mobila enheter och virtuella datorer(VM)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus i Windows 10](microsoft-defender-antivirus-in-windows-10.md)

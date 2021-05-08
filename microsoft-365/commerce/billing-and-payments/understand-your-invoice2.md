@@ -25,14 +25,17 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Lär dig hur du tolkar avgifter, fakturering och betalningsinformation på fakturan för Microsoft 365 för företag samt hur du ändrar inköpsordernumret.
-ms.openlocfilehash: 56f1ba3e7cc328593873aaf06ddfe6dc82fc1a17
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: b89ca38bf5d7b1d82982668dcd98e9979f1657be
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615381"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245022"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Förstå fakturan för Microsoft 365 för företag
+
+> [!IMPORTANT]
+> Från och med den 26 januari 2021 stöds inte längre nya bankkonton för kunder i Belgien, Frankrike, Italien, Luxemburg, Portugal, Spanien och USA. Om du är en befintlig kund i något av dessa länder kan du fortsätta betala för prenumerationen med ett befintligt bankkonto och lägga till nya prenumerationer till den, men bara så länge bankkontot är fortsättningsvis.
 
 Antingen varje månad eller varje år (beroende på vilket alternativ du valde när du köpte prenumerationen) får du ett e-postmeddelande där det står att ditt nya faktureringsutdrag finns i administrationscentret. [Läs mer om hur du hittar och visar fakturan](view-your-bill-or-invoice.md).
   

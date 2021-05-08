@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Lär dig hur du konfigurerar Exchange Server en lokal konfiguration för att använda modern hybridautentisering (HMA), som ger dig säkrare användarautentisering och auktorisering.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9cb6d25a346ac48c9875a26f385cb733f1ff051f
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 2ae7a09387b62abc9e8c74f4a38c2fe8750bab19
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259457"
+ms.locfileid: "52244557"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Så här konfigurerar Exchange Server lokal användning av modern hybridautentisering
 
@@ -140,7 +140,7 @@ Om OAuth saknas på en server och någon av de fyra virtuella katalogerna måste
 Återgå till den lokala Exchange för det senaste kommandot. Nu kan du verifiera att din lokala tjänst har en post för autentiseringsprovidern för windows-säkerhet:
 
 ```powershell
-Get-AuthServer | where {$_.Name -like "EvoSts"}
+Get-AuthServer | where {$_.Name -eq "EvoSts"}
 ```
 
 Dina utdata bör visa autentiseringsservern för Name EllerSts och statusen "Enabled" ska vara True. Om du inte ser det bör du ladda ned och köra den senaste versionen av hybridkonfigurationsguiden.

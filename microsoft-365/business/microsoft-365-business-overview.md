@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Läs mer om Microsoft 365 Business Premium, en prenumerationstjänst som innehåller Office-appar för produktivitet och avancerat skydd för ditt företag mot cyberhot.
-ms.openlocfilehash: d6b0ded25e0478f85e73b807789463e4d55b1bb0
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: a355c9856ead4a66f6876cc7cb5aa8eb469d7f12
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578356"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244865"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Översikt av Microsoft 365 Business Premium
 
@@ -46,7 +46,7 @@ I den här videon hittar du en snabb överblick över Microsoft 365 Business Pre
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816). 
+Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](../business-video/index.yml). 
 
 Microsoft 365 Business Premium är avsett för upp till 300 licenser. Om du behöver fler licenser finns mer information i dokumentationen för [Microsoft 365 Enterprise](../enterprise/index.yml).
 
@@ -71,11 +71,11 @@ Microsoft 365 Business Premium hjälper till att skydda dina data i var och en a
 
 Microsoft 365 Business Premium hjälper **att försvara mot hot** genom att:
 
-- Genomsök länkar i e-postmeddelanden och dokument i realtid för att blockera osäkra webbplatser (säkra länkar).
+- Genomsök länkar i e-postmeddelanden och dokument i realtid för att blockera osäkra webbplatser (Valv Länkar).
 
-- Utföra avancerade analyser av e-postbilagor i en sandbox-miljö för att identifiera nyligen utvecklade skadlig programvara (säkra bifogade filer). 
+- Utföra avancerade analyser av e-postbilagor i en sandbox-miljö för att identifiera nyligen utvecklade skadlig programvara (Valv bifogade filer). 
 
-- Aktivera skydd mot nätfiskeprinciper som använder maskininlärningsmodeller och identifiering av personifiering för att skydda mot avancerade angrepp (skydd mot nätfiske i Defender för Office 365-information). 
+- Aktivera skydd mot nätfiskeprinciper som använder maskininlärningsmodeller och identifiering av personifiering för att skydda mot avancerade attacker (skydd mot nätfiske i Defender för Office 365 information). 
 
 - Konfigurera avancerade principer som inaktiverar åtkomst från otillförlitliga platser eller kringgå multifaktorautentisering från betrodda platser, t. ex. ditt kontorsnätverk (Azure MFA inklusive betrodda IP-adresser och villkorsstyrd åtkomst). 
 
@@ -111,6 +111,6 @@ Om du vill se en fullständig lista över säkerhetsfunktioner läser du [Micros
 
 - Om du inte har en partner och vill få Microsoft 365 Business Premium kan du [köpa den här](https://www.microsoft.com/microsoft-365/business) och följa [registrera dig](sign-up.md) anvisningarna.
 
-## <a name="see-also"></a>Se även
+## <a name="related-content"></a>Relaterat innehåll
 
-[Utbildningsvideor för Microsoft 365 Business Premium](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 Business Premium utbildningsvideor](../business-video/index.yml) (länksida)

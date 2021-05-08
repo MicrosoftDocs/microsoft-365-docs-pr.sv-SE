@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Ett krav för alla Microsoft Information Protection-lösningar: skapa, konfigurera och publicera känslighetsetiketter för att klassificera och skydda organisationens data.'
-ms.openlocfilehash: c34025d2b68eb0ee179c98ce9c97a59193f782e3
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: fc7debbe2fe1d59d4d172fd23587d0b2a1e6705e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "52162820"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244630"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Skapa och konfigurera känslighetsetiketter och deras principer
 
@@ -180,7 +180,7 @@ Om du vill redigera en befintlig etikettprincip markerar du den och väljer seda
 
 Med den här knappen startar du guiden **Skapa princip**, där du kan redigera vilka etiketter som ingår och etikettinställningarna. När du slutför guiden replikeras alla ändringar automatiskt till de valda användarna och tjänsterna.
 
-När du använder inbyggd etikettering för Office-appar på Windows, macOS, iOS och Android ser användarna nya etiketter inom fyra timmar, och inom en timme för Word, Excel och PowerPoint på webben när du uppdaterar webbläsaren. Det kan ändå ta upp till 24 timmar innan ändringar replikeras till alla appar och tjänster.
+När du använder inbyggd etikettering för Office-appar i Windows, macOS, iOS och Android ser användarna nya etiketter inom fyra timmar, och inom en timme för Word, Excel och PowerPoint på webben när du uppdaterar webbläsaren. Det tar dock upp till 24 timmar innan ändringarna kopieras till alla appar och tjänster.
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Ytterligare inställningar för etikettprinciper med Säkerhets- och efterlevnadscenter via PowerShell
 

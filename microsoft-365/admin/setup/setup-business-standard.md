@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Lär dig hur du konfigurerar din Microsoft 365 Business Standard-abonnemang.
-ms.openlocfilehash: 9efd14af2955e85b9b13c437ad869710f69a90f6
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: ce45b4869000892b5640730e765dbfc9c21386ed
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579092"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244461"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Konfigurera Microsoft Business Standard
 
@@ -67,9 +67,9 @@ Du kan lägga till användare i guiden eller så kan du [lägga till användare 
 
 Alla användare som du lägger till i guiden får automatiskt en Microsoft 365 Business Standard-licens.
 
-1. Om ditt Microsoft 365 Business Standard-abonnemang har befintliga användare (till exempel om du använde Azure AD Connect), får du möjlighet att tilldela licenser till dem nu. Lägg till licenser till dem också.
+1. Om din prenumeration på Microsoft 365 Business Standard har befintliga användare (till exempel om du använde Azure AD Connect), får du möjlighet att tilldela licenser till dem nu. Lägg till licenser till dem också.
 
-2. Efter att ha lagt till användarna får du också möjlighet att dela autentiseringsuppgifter med de nya användarna som du har lagt till. Du kan välja att skriva ut, e-posta eller ladda ned.
+2. När du har lagt till användarna får du även ett alternativ för att dela autentiseringsuppgifter med dem. Du kan välja att skriva ut, skicka via e-post eller ladda ned dem.
 
 ## <a name="connect-your-domain"></a>Koppla din domän
 
@@ -139,4 +139,4 @@ Microsoft 365 inkluderar inte en offentlig webbplats för ditt företag. Om du v
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 
-Se mer på [Använda en offentlig webbplats](https://support.microsoft.com/office/3325d50e-d131-403c-a278-7f3296fe33a9).
+Se mer på [Använda en offentlig webbplats](../../business-video/create-web-site.md).

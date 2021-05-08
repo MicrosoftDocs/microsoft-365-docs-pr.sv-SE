@@ -1,7 +1,7 @@
 ---
 title: Få en åtgärdsaktivitet efter ID
 description: Returnerar information för den angivna åtgärdsaktiviteten.
-keywords: apis, remediation, remediation api, get, remediation tasks, list
+keywords: apis, remediation, remediation api, get, remediation tasks, remediation by ID,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 40a7102a8c7dbf63641daaf47bbd9aa9f2e54649
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: e0f68e8a28b302f0ae1ca06a2f892fea38a219b2
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061169"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244449"
 ---
 # <a name="get-one-remediation-activity-by-id"></a>Få en åtgärdsaktivitet efter ID
 
@@ -49,7 +49,16 @@ Returnerar information för den angivna åtgärdsaktiviteten. Visar samma kolumn
 
 **URL:** GET: /api/remediationTasks/ \{ id\}
 
-**Egenskapsinformation**
+## <a name="permissions"></a>Behörigheter
+
+En av följande behörigheter krävs för att anropa detta API. Mer information, inklusive hur du väljer behörigheter, finns i Använda [Microsoft Defender för slutpunkts-API:er för mer information.](apis-intro.md)
+
+Behörighetstyp | Behörighet | Visningsnamn för behörighet
+:---|:---|:---
+Program | RemediationTask.Read.All | \'Läsa sårbarhetsinformation om hot och sårbarhetshantering\'
+Delegerat (arbets- eller skolkonto) | RemediationTask.Read.Read | \'Läsa sårbarhetsinformation om hot och sårbarhetshantering\'
+
+## <a name="properties"></a>Egenskaper
 
 Egenskap (id) | Datatyp | Beskrivning | Exempel på ett returnerat värde
 :---|:---|:---|:---
@@ -58,19 +67,19 @@ completerEmail | Sträng | Om åtgärdsaktiviteten har slutförts manuellt av n�
 completerId | Sträng | Om åtgärdsaktiviteten har slutförts manuellt av någon innehåller den här kolumnen deras objekt-ID | null
 completionMethod | Sträng | En åtgärdsaktivitet kan slutföras "automatiskt" (om alla enheter är korrigerade) eller "manuellt" av en person som väljer "markera som slutförd" | Automatisk
 createdOn | DateTime | Tidpunkten då den här åtgärdsaktiviteten skapades | 2021-01-12T18:54:11.5499478Z
-beskrivning | Sträng | Beskrivning av den här åtgärdsaktiviteten | Uppdatera Chrome till en senare version för att minimera kända 1248 säkerhetsproblem som påverkar dina enheter.
+beskrivning | Sträng | Beskrivning av den här åtgärdsaktiviteten | Uppdatera Microsoft Silverlight till en senare version för att minimera kända säkerhetsproblem som påverkar dina enheter.
 dueOn | DateTime | Förfallodatum som skapare uppsättningen för den här åtgärdsaktiviteten | 2021-01-13T00:00:00Z
 fixedDevices |  | Antalet enheter som har åtgärdats | 2
 id | Sträng | ID för den här åtgärdsaktiviteten | 097d9735-5479-4899-b1b7-77398899df92
-nameId | Sträng | Relaterade produktnamn | chrome
+nameId | Sträng | Relaterade produktnamn | Microsoft Silverlight
 prioritet | Sträng | Prioritet för skaparuppsättningen för den här åtgärdsaktiviteten (Hög\Medel\Låg) | Hög
-productId | Sträng | Relaterade produkt-ID | google-_-chrome
+productId | Sträng | Relaterade produkt-ID | microsoft-_-silverlight
 productivityImpactRemediationType | Sträng | Några konfigurationsändringar kunde endast begäras för enheter utan påverkan från användare. Det här värdet anger valet mellan "alla exponerade enheter" eller "endast enheter utan påverkan från användare". | AllExposedAssets
-rbacGroupNames | Sträng | Gruppnamn för relaterade enheter | [ "Windows-servrar", "Windows 10" ]
+rbacGroupNames | Sträng | Gruppnamn för relaterade enheter | [ "Windows Servers", "Windows 10" ]
 recommendedProgram | Sträng | Rekommenderat program att uppgradera till | null
 recommendedVendor | Sträng | Rekommenderad leverantör att uppgradera till | null
 recommendedVersion | Sträng | Rekommenderad version att uppdatera/uppgradera till | null
-relatedComponent | Sträng | Relaterad komponent i den här åtgärdsaktiviteten (som liknar den relaterade komponenten för en säkerhetsrekommendationer) | Google Chrome
+relatedComponent | Sträng | Relaterad komponent i den här åtgärdsaktiviteten (som liknar den relaterade komponenten för en säkerhetsrekommendationer) | Microsoft Microsoft Silverlight
 requesterEmail | Sträng | E-postadress skapad | globaladmin@UserName.contoso.com
 requesterId | Sträng | Creator-objekt-ID | r647211f-2e16-43f2-a480-16ar3a2a796r
 requesterNotes | Sträng | Anteckningarna (fri text) som skaparen har lagt till för den här åtgärdsaktiviteten | null
@@ -78,19 +87,19 @@ scid | Sträng | SCID för relaterad säkerhetsrekommendationer | null
 status | Sträng | Status för åtgärdsaktivitet (Aktiv/slutförd) | Aktiv
 statusLastModifiedOn | DateTime | Datum när statusfältet uppdaterades | 2021-01-12T18:54:11.5499487Z
 targetDevices | Long | Antal exponerade enheter som denna åtgärd gäller för | 43
-rubrik | Sträng | Rubrik för den här åtgärdsaktiviteten | Uppdatera Google Chrome
+rubrik | Sträng | Rubrik för den här åtgärdsaktiviteten | Microsoft Silverlight
 skriv | Sträng | Åtgärdstyp | Uppdatera
-vendorId | Sträng | Relaterade leverantörsnamn | google
+vendorId | Sträng | Relaterade leverantörsnamn | Microsoft
 
 ## <a name="example"></a>Exempel
 
-**Exempel på** förfrågan
+### <a name="request-example"></a>Exempel på förfrågan
 
 ```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c
 ```
 
-**Svarsexempel**
+### <a name="response-example"></a>Svarsexempel
 
 ```json
 { 
@@ -133,10 +142,10 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 
 - [Åtgärdsmetoder och egenskaper](get-remediation-methods-properties.md)
 
-- [Lista alla åtgärder](get-remediation-all-activities.md)
+- [Lista alla åtgärdsaktiviteter](get-remediation-all-activities.md)
 
-- [Lista över exponerade enheter med en åtgärdsaktivitet](get-remediation-exposed-devices-activities.md)
+- [Lista exponerade enheter av en åtgärdsaktivitet](get-remediation-exposed-devices-activities.md)
 
-- [Riskbaserade hot & sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)
+- [Riskbaserade hot & hantering av säkerhetsrisker](next-gen-threat-and-vuln-mgt.md)
 
 - [Svagheter i organisationen](tvm-weaknesses.md)

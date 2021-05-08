@@ -1,5 +1,5 @@
 ---
-title: Konfigurera och validera nätverksanslutningar för Microsoft Defender Antivirus
+title: Konfigurera och verifiera nätverksanslutningar för Microsoft Defender Antivirus
 description: Konfigurera och testa anslutningen till molnskyddstjänsten Microsoft Defender Antivirus.
 keywords: antivirus, Microsoft Defender Antivirus, program mot skadlig programvara, säkerhet, defender, moln, aggressivhet, skyddsnivå
 search.product: eADQiWindows 10XVcnh
@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,14 +15,15 @@ ms.date: 12/28/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6218bc32690ca42c06b5606d8a3922f6fc5c7307
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 8c049a7301cc651dbf2621d0baa398117856b925
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765161"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274646"
 ---
-# <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Konfigurera och validera nätverksanslutningar för Microsoft Defender Antivirus
+# <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Konfigurera och verifiera nätverksanslutningar för Microsoft Defender Antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,7 +41,7 @@ Mer information om [nätverksanslutningen finns i blogginlägget Viktiga](https:
 >[!TIP]
 >Du kan också besöka demowebbplatsen Microsoft Defender för slutpunkt [på demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) för att bekräfta att följande funktioner fungerar:
 >
->- Moln levererat skydd
+>- Molnbaserat skydd
 >- Fast learning (inklusive block vid första synen)
 >- Potentiellt oönskad programblockering
 

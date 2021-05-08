@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34274e260da2e8acc8088fcff6d324b6b31fc2ef
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 0e09a313b512135785050abd5aa61bb9576ce1d8
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935947"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274946"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender för Endpoint för Linux
 
@@ -39,16 +39,23 @@ ms.locfileid: "51935947"
 I det här avsnittet beskrivs hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för Endpoint på Linux.
 
 > [!CAUTION]
-> Att köra andra produkter med slutpunktsskydd från tredje part tillsammans med Microsoft Defender för Endpoint på Linux kan sannolikt leda till prestandaproblem och oförutsägbara sidoeffekter. Om skydd mot slutpunkter som inte är Microsoft är ett absolut krav i din miljö kan du ändå tryggt dra nytta av Defender för Endpoint i Linux EDR-funktionen när du har konfigurerat antivirusfunktionerna så att de körs i [passivt läge.](linux-preferences.md#enable--disable-passive-mode)
+> Att köra andra produkter med slutpunktsskydd från tredje part tillsammans med Microsoft Defender för Endpoint på Linux kan sannolikt leda till prestandaproblem och oförutsägbara sidoeffekter. Om skydd mot slutpunkter som inte är Microsoft är ett absolut krav i din miljö kan du fortfarande tryggt dra nytta av Defender för Endpoint på Linux Identifiering och åtgärd på slutpunkt-funktioner när du har konfigurerat antivirusfunktionerna så att de körs i [passivt läge.](linux-preferences.md#enable--disable-passive-mode)
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Så här installerar du Microsoft Defender för Slutpunkt i Linux
 
 ### <a name="prerequisites"></a>Förutsättningar
 
-- Åtkomst till Microsoft Defender Säkerhetscenter-portalen
+- Åtkomst till Microsoft Defender Säkerhetscenter portalen
 - Linux-distribution med [systemd](https://systemd.io/) system manager
 - Nybörjarupplevelse i Linux och BASH-skript
 - Administratörsbehörigheter på enheten (vid manuell distribution)
+
+> [!NOTE]
+>  Microsoft Defender för Slutpunkt på Linux-agenten är fristående [från OMS-agenten.](/azure/azure-monitor/agents/agents-overview#log-analytics-agent) Microsoft Defender för Endpoint använder sig av en egen oberoende telemetripipeline.
+> 
+> Microsoft Defender för Endpoint på Linux är ännu inte integrerat i Azure Säkerhetscenter.
+
+
 
 ### <a name="installation-instructions"></a>Installationsanvisningar
 
@@ -66,6 +73,8 @@ I allmänhet måste du göra följande:
 
 Om du får problem med installationen kan du gå till [Felsöka installationsproblem i Microsoft Defender för Slutpunkt i Linux.](linux-support-install.md)
 
+
+
 ### <a name="system-requirements"></a>Systemkrav
 
 - Linux-serverdistributioner och -versioner som stöds:
@@ -77,14 +86,23 @@ Om du får problem med installationen kan du gå till [Felsöka installationspro
   - SUSE Linux Enterprise Server 12 eller senare
   - Oracle Linux 7.2 eller senare
 
+    > [!NOTE]
+    > Distributions- och versionsnummer som inte uttryckligen anges stöds inte (även om de härleds från de officiellt angivna fördelningarna).
+
+
 - Minsta kernel-version 3.10.0-327
+
 - `fanotify`Kernel-alternativet måste vara aktiverat
+
   > [!CAUTION]
   > Det går inte att köra Defender för slutpunkt på Linux sida vid sida med `fanotify` andra -baserade säkerhetslösningar. Det kan leda till oväntade resultat, till exempel att operativsystemet hänger sig.
 
 - Diskutrymme: 1 GB
+
 - /opt/microsoft/mdatp/sbin/wdavdaemon kräver körbar behörighet. Mer information finns i "Se till att daemon har körbar behörighet" i Felsöka installationsproblem för [Microsoft Defender för slutpunkt i Linux.](/microsoft-365/security/defender-endpoint/linux-support-install)
+
 - Minne: 1 GB
+
     > [!NOTE]
     > Kontrollera att du har ledigt diskutrymme i /varians.
 
@@ -117,7 +135,7 @@ När du har aktiverat tjänsten kan du behöva konfigurera nätverket eller bran
 
 I följande nedladdningsbara kalkylblad finns de tjänster och deras tillhörande URL:er som nätverket måste kunna ansluta till. Du bör kontrollera att det inte finns några brandväggs- eller nätverksfiltreringsregler som nekar åtkomst till dessa URL:er. Om så är möjligt kan du behöva skapa en *tillåta-regel* specifikt för dem.
 
-|**Kalkylblad med domänlista**|**Beskrivning**|
+| Kalkylblad med domänlista | Beskrivning |
 |:-----|:-----|
 |![Miniatyrbild för Microsoft Defender för slutpunkts-URL:er-kalkylblad](images/mdatp-urls.png)<br/>  | Kalkylblad med specifika DNS-poster för tjänstplatser, geografiska platser och operativsystem. <br><br>[Ladda ned kalkylbladet här.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 

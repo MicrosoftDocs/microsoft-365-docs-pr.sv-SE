@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Lär dig att hantera e-postsignaturer, inklusive juridiska ansvarsfriskrivningar eller avslöjanden för alla e-postmeddelanden som skickas till eller från organisationen.
-ms.openlocfilehash: b599ef8b6d0bb236b6111bae86c92409601e00d0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e1c3df235442fdc6f569825a7137c92bfc5bb044
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914240"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244533"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Skapa signaturer och ansvarsfriskrivningar för hela organisationen
 
@@ -40,7 +40,7 @@ ms.locfileid: "50914240"
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](../../business-video/index.yml).
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>Skapa en signatur som gäller för alla meddelanden
 
@@ -80,14 +80,14 @@ Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?
 6. Under **Använd den här regeln** väljer du **[Använd för alla meddelanden]**.
     
     > [!TIP]
-    > [Läs mer](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) om att använda villkor om du inte vill ha med ansvarsfriskrivningen i alla meddelanden. (Den här artikeln gäller Exchange Server, men gäller även Microsoft 365.) 
+    > [Läs mer](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) om att använda villkor om du inte vill ha med ansvarsfriskrivningen i alla meddelanden. (Den här artikeln används för Exchange Server, men den gäller även Microsoft 365.) 
   
 7. Under Gör följande lämnar du **Lägg till ansvarsfriskrivningen** markerat. 
     
 8.  Välj **Ange text och** skriv ansvarsfriskrivningen. 
     
     > [!TIP]
-    > [Läs mer](/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) om att formatera ansvarsfriskrivningar. (Den här formateringsartikeln gäller För Exchange Server, men gäller även Microsoft 365.) 
+    > [Läs mer](/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) om att formatera ansvarsfriskrivningar. (Den här formateringsartikeln är Exchange Server, men den gäller även Microsoft 365.) 
 
 9. Välj **Välj en** och välj **Radbyte** som reservalternativ. Välj sedan **OK**. Det innebär att om ansvarsfriskrivningen inte kan läggas till på grund av kryptering eller en annan e-postinställning kommer den att inneslutas i ett meddelandekuvert.
     

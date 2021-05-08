@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Lär dig hur du konfigurerar din Microsoft 365-applikationer för affärsverksamhet-abonnemang.
-ms.openlocfilehash: 56eb3eb0f28ee99aab1c50a970626c61514335cd
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 6978a5402792906ef773934e5201b3ea6671c010
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579104"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244485"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Microsoft 365-applikationer för affärsverksamhet
 
@@ -99,7 +99,7 @@ Få anvisningar för din enhet: [Android](https://support.microsoft.com/office/6
   
 ## <a name="store-files-online"></a>Lagra filer online
 
-I Microsoft är det enkelt att lagra filer online. Mer information om vilka lagringsplatser som passar bäst för ditt företag finns i [Här kan du lagra filer i Office 365](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
+I Microsoft är det enkelt att lagra filer online. Mer information om vilka lagringsplatser som passar bäst för ditt företag finns i [Här kan du lagra filer i Office 365](../../business-video/store-files.md).
   
 Alla får automatiskt en **OneDrive**-lagringsplats i molnet när du skapar Microsoft-konton åt dem. Med OneDrive får du tillgång till filerna från alla dina datorer, telefoner och surfplattor.  
   

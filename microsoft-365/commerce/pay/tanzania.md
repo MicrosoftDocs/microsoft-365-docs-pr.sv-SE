@@ -8,20 +8,20 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
-description: Lär dig var du skickar betalningen för din prenumeration.
+description: Lär dig vart du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 734df0a8af82e1629c0b1808959ba1fe5b0c2bed
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 7a35bb94418d1285191f252f3bac1dc5762cdc5f
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50542520"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52272750"
 ---
 # <a name="payment-information-for-tanzania"></a>Betalningsinformation för Tanzania
 
-[Hitta ett annat land eller en annan region.](../billing-and-payments/pay-for-your-subscription.md)
+[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).
 
 Betala endast i USD och ange fakturanumret som referens vid betalning.
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Förstå hur du använder Microsoft Compliance Configuration Analyzer för att snabbt komma igång med Microsoft Compliance Manager.
-ms.openlocfilehash: 2b91ac274d7270f5be9530742cf711a3918b287d
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 5d74d9980daf7f6ff7f013578cb11be83d18948e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "52162624"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244642"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Microsoft Compliance Configuration Analyzer för Efterlevnadshanteraren (förhandsversion)
 
@@ -29,7 +29,7 @@ ms.locfileid: "52162624"
 
 Microsoft Compliance Configuration Analyzer (MCCA) är ett förhandsversionsverktyg som kan hjälpa dig att komma igång med [Microsoft Compliance Manager.](compliance-manager.md) MCCA är ett PowerShell-baserat verktyg som hämtar organisationens aktuella konfigurationer och verifierar dem Microsoft 365 rekommenderade metodtips. Dessa metodtips baseras på en uppsättning kontroller som omfattar viktiga bestämmelser och standarder för dataskydd och datastyrning.
 
-Med MCCA kan du snabbt se vilka förbättringsåtgärder i efterlevnadsmanger som gäller för din Microsoft 365 miljö. Varje åtgärd som identifieras av MCCA ger dig rekommendationer om implementering, med direktlänkar till Efterlevnadshanteraren och den tillämpliga lösningen för att börja vidta korrigerande åtgärder.
+Med MCCA kan du snabbt se vilka förbättringsåtgärder i Efterlevnadshanteraren som gäller för din Microsoft 365 miljö. Varje åtgärd som identifieras av MCCA ger dig rekommendationer om implementering, med direktlänkar till Efterlevnadshanteraren och den tillämpliga lösningen för att börja vidta korrigerande åtgärder.
 
 Ytterligare en resurs för att förstå MCCA är genom att gå till [README-anvisningarna på GitHub](https://github.com/OfficeDev/MCCA#overview). På den här sidan finns detaljerad information om krav och fullständiga installationsanvisningar. Du behöver inte ett konto GitHub komma åt den här sidan.
 

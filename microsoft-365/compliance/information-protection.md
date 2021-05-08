@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Implementera Microsoft Information Protection (MIP) som hjälper dig att skydda känslig information var du än befinner dig eller på språng.
-ms.openlocfilehash: 36e8e917349edd5523677112818cd39514710583
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: f39890db2338d5811e15c81dfafef47c60b028c5
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52163024"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244338"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection i Microsoft 365.
 
@@ -89,7 +89,7 @@ Använd följande funktioner för att förhindra att känslig information förs 
 
 Många organisationer använder de här funktionerna för informationsskydd för att uppfylla datasekretessföreskrifter. För att hjälpa har vi utformat ett arbetsflöde som vägleder dig genom en hela processen för att planera och implementera funktioner i Microsoft 365, inklusive säker åtkomst, skydd mot hot, informationsskydd och datastyrning. Mer information finns i [Distribuera informationsskydd för föreskrifter för datasekretess med Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
 
-Om du dessutom vill planera en integrerad strategi för att implementera informationsskyddsfunktioner kan du ladda ned *uppsättningen av bilder i Microsoft 365 informationsskydd och efterlevnadsfunktioner*.  Du kan anpassa illustrationerna för eget bruk.
+Om du dessutom vill planera en integrerad strategi för att implementera informationsskyddsfunktioner kan du ladda ned uppsättningen av bilder i *Microsoft 365 informationsskydd och efterlevnadsfunktioner*.  Du kan anpassa illustrationerna för eget bruk.
 
 | Objekt | Beskrivning |
 |:-----|:------------|

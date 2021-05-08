@@ -9,8 +9,8 @@ ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 ms.date: 02/02/2021
 localization_priority: Normal
 manager: dansimp
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 5ea869d4016cc794b3046a664c1519f6b3250c67
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d4b0751938b66cc22dd59e2e7035077c5ef59ff9
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933979"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274826"
 ---
 # <a name="overview-of-automated-investigations"></a>Översikt över automatiserade undersökningar
 
@@ -77,7 +77,7 @@ Beroende på [hur automatiseringsnivån](automation-levels.md) är inställd fö
 Alla åtgärdsåtgärder, oavsett om de är väntande eller slutförda, spåras i [Åtgärdscenter.](auto-investigation-action-center.md) Om det behövs kan säkerhetsåtgärdsteamet ångra en åtgärd. Mer information finns i [Granska och godkänna åtgärdsåtgärder efter en automatiserad undersökning.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-auto-investigation)
 
 > [!TIP]
-> Titta på den nya sidan för enhetlig undersökning i Säkerhetscenter för Microsoft 365. Mer information finns i [(NYTT!) Sida för enhetlig undersökning](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
+> Titta på den nya sidan för enhetlig undersökning i Microsoft 365 säkerhetscenter. Mer information finns i [(NYTT!) Sida för enhetlig undersökning](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
 
 
 ## <a name="requirements-for-air"></a>Krav för AIR
@@ -87,7 +87,7 @@ Din organisation måste ha Defender för Slutpunkt (se [Minimikraven för Micros
 För närvarande stöder AIR endast följande OS-versioner:
 - Windows Server 2019
 - Windows 10, version 1709 (OS Build 16299.1085 med [KB4493441)](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)eller senare
-- Windows 10, version 1803 (OS Build 17134.704 med [KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)eller senare
+- Windows 10, version 1803 (OS-version 17134.704 med [KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)eller senare
 - Windows 10, version [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019) eller senare
 
 ## <a name="next-steps"></a>Nästa steg
@@ -99,5 +99,5 @@ För närvarande stöder AIR endast följande OS-versioner:
 ## <a name="see-also"></a>Se även
 
 - [PUA-skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [Automatiserad undersökning och svar i Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
+- [Automatisk undersökning och svar i Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
 - [Automatiserad undersökning och svar i Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir)

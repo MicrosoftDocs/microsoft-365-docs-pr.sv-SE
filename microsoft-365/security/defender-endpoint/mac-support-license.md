@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e8084fab434246a5c9f12af40872ade66e6fa163
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1f8428c2995eec2dece290049eda67a3683b4c1e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934267"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244986"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Felsöka licensproblem för Microsoft Defender för slutpunkt i macOS
 
@@ -46,15 +46,14 @@ När du går igenom Microsoft Defender för Slutpunkt på [macOS](microsoft-defe
 
 Ingen licens hittades
 
-Det verkar som att din organisation inte har någon licens för Microsoft 365 Enterprise-prenumeration.
+Det verkar som att din organisation inte har någon licens för Microsoft 365 Enterprise prenumeration.
 
 Kontakta administratören om du behöver hjälp.
 
 **Orsak:** 
 
-Du har distribuerat och/eller installerat Microsoft Defender för slutpunkt på macOS-paket ("Ladda ned installationspaket") men du kanske har kört konfigurationsskriptet ("Hämta onboarding package").
+Du har distribuerat och/eller installerat Microsoft Defender för Slutpunkt för macOS-paketet ("Ladda ned installationspaket"), men du kanske har kört konfigurationsskriptet ("Hämta onboarding-paket") eller så har du inte tilldelat någon licens till användaren.
 
 **Lösning:**
 
 Följ de MicrosoftDefenderATPOnboardingMacOs.py som beskrivs här: [Klientkonfiguration](mac-install-manually.md#client-configuration)
-

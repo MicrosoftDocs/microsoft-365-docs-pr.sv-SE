@@ -21,14 +21,17 @@ search.appverid:
 - MET150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: Lär dig hur du förnyar din Microsoft 365 genom att aktivera eller inaktivera återkommande fakturering.
-ms.openlocfilehash: 76be85fe3cbeafb275478e6236e051b6a252c099
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: afa899bd60b761d196df01c6f0bf18d51e546d8e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615177"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244654"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Förnya Microsoft 365 för företag
+
+> [!IMPORTANT]
+> Från och med 26 januari 2021 stöds inte längre nya bankkonton för kunder i Belgien, Frankrike, Italien, Luxemburg, Portugal, Spanien och USA. Om du är befintlig kund i något av dessa länder kan du fortsätta betala för prenumerationen med ett befintligt bankkonto och du kan lägga till nya prenumerationer till det, men bara så länge bankkontot uppfyller kraven.
 
 Den här artikeln gäller för de flesta betalda Microsoft 365 för företag-prenumerationer.
   

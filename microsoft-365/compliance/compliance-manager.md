@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager hjälper organisationer att förenkla och automatisera riskutvärderingar och föreslår rekommenderade åtgärder för att hantera risker.
-ms.openlocfilehash: f938bb6b82ee7e24dd58b66597f0af7a3a00a9a2
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 7eb8e0fdea26ca24453ca7071ab1282c686d5848
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "52162626"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244401"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft Compliance Manager
 
@@ -165,3 +165,5 @@ Efterlevnadshanteraren är tillgänglig på följande språk:
 Läs om hur du loggar in, tilldelar behörigheter och roller, konfigurerar inställningar och anpassar instrumentpanelsvyn i [Kom igång med Efterlevnadshanteraren.](compliance-manager-setup.md)
 
 Börja sedan anpassa Efterlevnadshanteraren så att du kan följa de branschstandarder som är viktigast för din organisation genom [att konfigurera utvärderingar.](compliance-manager-assessments.md)
+
+För att hjälpa dig att följa regler om datasekretess har vi utformat ett arbetsflöde som vägleder dig genom en end-to-end-process för att planera och implementera funktioner i Microsoft 365, inklusive användning av Efterlevnadshanteraren. Mer information finns i Distribuera [informationsskydd för bestämmelser om datasekretess med hjälp Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 

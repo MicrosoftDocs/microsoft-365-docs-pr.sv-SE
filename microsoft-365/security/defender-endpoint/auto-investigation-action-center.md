@@ -7,8 +7,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -19,12 +19,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: f8dd48364f60da789ac95638018245cf46434822
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e51cc1d613e6f9e7ab96653692362ed7fe239e3e
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197643"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274850"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Besök Åtgärdscenter för att se åtgärder
 
@@ -54,7 +54,7 @@ I det enhetliga åtgärdscentret samlas åtgärdsåtgärder i Defender för Endp
 
 Du kan använda det enhetliga åtgärdscentret om du har rätt behörigheter och en eller flera av följande prenumerationer:
 - [Defender för Endpoint](microsoft-defender-endpoint.md)
-- [Defender förr Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
+- [Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
 - [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 
 
 > [!TIP]
@@ -82,13 +82,13 @@ Du kan anpassa, sortera, filtrera och exportera data i Åtgärdscenter.
 - Välj de kolumner som du vill visa.
 - Ange hur många objekt som ska ingå på varje sida med data.
 - Använd filter för att visa endast de objekt som du vill se.
-- Välj **Exportera** om du vill exportera resultaten till en CSV-fil. 
+- Välj **Exportera** om du vill exportera resultaten till en .csv fil. 
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Visa och godkänna åtgärder](manage-auto-investigation.md)
+- [Visa och godkänna reparationsåtgärder](manage-auto-investigation.md)
 - [Se den interaktiva guiden: Undersöka och åtgärda hot med Microsoft Defender för Slutpunkt](https://aka.ms/MDATP-IR-Interactive-Guide)
  
 ## <a name="see-also"></a>Se även
 
-- [Adressera falska positiva/negativa tal i Microsoft Defender för Endpoint](defender-endpoint-false-positives-negatives.md)
+- [Åtgärda falska positiva/negativa i Microsoft Defender för Endpoint](defender-endpoint-false-positives-negatives.md)

@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: e3e842f812c5675334cc25fa35544165129db2b4
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f3dba2116e0f13f265937ef65fd3b69bcb1e725b
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245894"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274658"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Visa och hantera åtgärder i Åtgärdscenter
 
@@ -37,24 +37,25 @@ ms.locfileid: "52245894"
 - Microsoft 365 Defender
 
 Skyddsfunktioner i Microsoft 365 Defender kan resultera i vissa åtgärder. Här är några exempel:
-- [Automatiserade undersökningar](m365d-autoir.md) kan resultera i åtgärder som vidtas automatiskt eller väntar på godkännande.
+
+- [Automatiserade undersökningar](m365d-autoir.md) kan resultera i åtgärder som vidtas automatiskt eller väntar på ditt godkännande.
 - Antivirusprogram, program mot skadlig programvara och andra skyddsfunktioner mot hot kan resultera i åtgärder som att blockera en fil, url eller process, eller skicka en artefakt till karantän.
 - Ditt team för säkerhetsåtgärder kan vidta åtgärder manuellt, till exempel [under](advanced-hunting-overview.md) avancerad sökning eller under undersökning [av aviseringar](investigate-alerts.md) eller [incidenter.](investigate-incidents.md)
 
 > [!NOTE]
-> Du måste ha [tillräcklig behörighet](m365d-action-center.md#required-permissions-for-action-center-tasks) för att godkänna eller avvisa åtgärder. Mer information finns i Förutsättningar [för automatiserad undersökning och svar i Microsoft 365 Defender.](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
+> Du måste ha [tillräcklig behörighet](m365d-action-center.md#required-permissions-for-action-center-tasks) för att godkänna eller avvisa åtgärder. Mer information finns i [förutsättningarna](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
 
 ## <a name="review-pending-actions-in-the-action-center"></a>Granska väntande åtgärder i Åtgärdscenter
 
 Det är viktigt att godkänna (eller avvisa) väntande åtgärder så snart som möjligt så att de automatiska undersökningarna kan fortsätta och slutföras i tid. 
 
-![Godkänna eller avvisa en åtgärd](../../media/air-actioncenter-itemselected.png)
-
 1. Gå till [https://security.microsoft.com](https://security.microsoft.com) och logga in. 
 
 2. Välj Åtgärdscenter i **navigeringsfönstret.** 
 
-3. Välj ett objekt i **listan på fliken** Väntande i Åtgärdscenter. Den utfällna rutan öppnas.
+3. Välj ett objekt i **listan på fliken** Väntande i Åtgärdscenter. Den utfällna rutan öppnas. Här är ett exempel.
+
+   ![Godkänna eller avvisa en åtgärd](../../media/air-actioncenter-itemselected.png)
 
 4. Granska informationen i det utfällfönster som visas och gör sedan något av följande:
    - Välj **Sidan Öppna undersökning** om du vill visa mer information om undersökningen.
@@ -90,11 +91,11 @@ Om du har fastställt att en enhet eller en fil inte är ett hot kan du ångra �
 
 1. Gå till Åtgärdscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) och logga in.
 
-2. På fliken **Historik** väljer du en fil som har karantänfilen **Åtgärdstyp.**
+2. På fliken **Historik** väljer du en fil som har en **typ av åtgärd för karantänfil.**
 
 3. I fönstret till höger på skärmen väljer du Använd för **fler X-instanser** av den här filen och sedan **Ångra**.
 
 ## <a name="next-steps"></a>Nästa steg
 
 - [Visa information och resultat från en automatiserad undersökning](m365d-autoir-results.md)
-- [Lär dig hur du hanterar falska positiva/negativa tal (om du får ett)](m365d-autoir-report-false-positives-negatives.md)
+- [Åtgärda falska positiva tal eller falska negativa tal)](m365d-autoir-report-false-positives-negatives.md)

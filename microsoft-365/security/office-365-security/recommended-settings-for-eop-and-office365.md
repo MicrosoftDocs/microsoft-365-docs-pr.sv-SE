@@ -19,12 +19,12 @@ ms.collection:
 description: Vad är metodtips för Exchange Online Protection (EOP) och Defender för Office 365-säkerhetsinställningar? Vilka är de aktuella rekommendationerna för standardskydd? Vad ska användas om du vill vara striktare? Och vad extra får du om du också använder Defender för Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8ba88f9b9ebcc34e0ea146a74c01dea8f200ee0b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3a4447d6eaeeb907eb750d2ad668fdbb9031c28b
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207424"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274874"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Rekommenderade inställningar för EOP och Microsoft Defender för Office 365-säkerhet
 
@@ -57,6 +57,8 @@ Skydd mot skräppost, skadlig programvara och nätfiske är EOP-funktioner som k
 
 Information om hur du skapar och konfigurerar principer för skydd mot skräppost [finns i Konfigurera principer för skydd mot skräppost i Office 365.](configure-your-spam-filter-policies.md)
 
+<br>
+
 ****
 
 |Namn på säkerhetsfunktion|Standard|Standard|Strikt|Kommentar|
@@ -83,6 +85,8 @@ Information om hur du skapar och konfigurerar principer för skydd mot skräppos
 Det finns flera andra avancerade asf-inställningar (Advanced Spam Filter) i principer mot skräppost som håller på att föraktas. Mer information om tidslinjerna för avskrivningen av dessa funktioner anges utanför den här artikeln.
 
 Vi rekommenderar att du inaktiverar de här **ASF-inställningarna** för både **standard-** och **strikt-nivåer.** Mer information om ASF-inställningar finns i [Avancerade inställningar för skräppostfilter (ASF) i Office 365.](advanced-spam-filtering-asf-options.md)
+
+<br>
 
 ****
 
@@ -111,6 +115,8 @@ Information om hur du skapar och konfigurerar principer för utgående skräppos
 
 Mer information om standardbegränsningar för sändning i tjänsten finns i [Sändningsgränser.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)
 
+<br>
+
 ****
 
 |Namn på säkerhetsfunktion|Standard|Standard|Strikt|Kommentar|
@@ -124,6 +130,8 @@ Mer information om standardbegränsningar för sändning i tjänsten finns i [S�
 ### <a name="eop-anti-malware-policy-settings"></a>Principinställningar för skydd mot skadlig programvara i EOP
 
 Information om hur du skapar och konfigurerar principer för skadlig programvara finns [i Konfigurera principer för skadlig programvara i Office 365.](configure-anti-malware-policies.md)
+
+<br>
 
 ****
 
@@ -139,6 +147,8 @@ Information om hur du skapar och konfigurerar principer för skadlig programvara
 ### <a name="eop-default-anti-phishing-policy-settings"></a>Standardinställningar för nätfiskeprincip i EOP
 
 Mer information om de här inställningarna finns [i Förfalskningsinställningar.](set-up-anti-phishing-policies.md#spoof-settings) Information om hur du konfigurerar de här [inställningarna finns i Konfigurera principer för skydd mot nätfiske i EOP.](configure-anti-phishing-policies-eop.md)
+
+<br>
 
 ****
 
@@ -171,6 +181,8 @@ EOP-kunder får grundläggande skydd mot nätfiske enligt beskrivningen tidigare
 
 Mer information om de här inställningarna finns i Inställningar för personifiering i principer för skydd mot nätfiske i [Microsoft Defender för Office 365.](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Information om hur du konfigurerar de [här inställningarna finns i Konfigurera principer för skydd mot nätfiske i Defender för Office 365.](configure-atp-anti-phishing-policies.md)
 
+<br>
+
 ****
 
 |Namn på säkerhetsfunktion|Standard|Standard|Strikt|Kommentar|
@@ -194,6 +206,8 @@ Mer information om de här inställningarna finns i Inställningar för personif
 
 Observera att det är samma inställningar som är tillgängliga i inställningarna [för skydd mot skräppost-policy i EOP.](#eop-anti-spam-policy-settings)
 
+<br>
+
 ****
 
 |Namn på säkerhetsfunktion|Standard|Standard|Strikt|Kommentar|
@@ -206,6 +220,8 @@ Observera att det är samma inställningar som är tillgängliga i inställninga
 #### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Avancerade inställningar i principer för skydd mot nätfiske i Microsoft Defender för Office 365
 
 Mer information om den här inställningen finns i Avancerade tröskelvärden för nätfiske i principer mot nätfiske i [Microsoft Defender för Office 365.](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Information om hur du konfigurerar den [här inställningen finns i Konfigurera principer för skydd mot nätfiske i Defender för Office 365.](configure-atp-anti-phishing-policies.md)
+
+<br>
 
 ****
 
@@ -224,6 +240,8 @@ Information om hur du konfigurerar de här inställningarna finns i Konfigurera 
 
 I PowerShell använder du cmdleten [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) för de här inställningarna.
 
+<br>
+
 ****
 
 |Namn på säkerhetsfunktion|Standard|Standard|Strikt|Kommentar|
@@ -241,6 +259,8 @@ I PowerShell använder du [New-SafeLinksPolicy-](/powershell/module/exchange/new
 
 > [!NOTE]
 > Som vi beskrivit tidigare finns det ingen standardprincip för säkra länkar. Värdena i kolumnen Standard är standardvärdena i nya principer för säkra länkar som du skapar.
+
+<br>
 
 ****
 
@@ -265,6 +285,8 @@ Information om hur du konfigurerar de här inställningarna finns i Aktivera sä
 
 I PowerShell använder du cmdleten [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) för de här inställningarna.
 
+<br>
+
 ****
 
 |Namn på säkerhetsfunktion|Standard|Standard|Strikt|Kommentar|
@@ -282,6 +304,8 @@ I PowerShell använder du [New-SafeAttachmentPolicy-](/powershell/module/exchang
 
 > [!NOTE]
 > Som vi beskrivit tidigare finns det ingen standardprincip för säkra bifogade filer. Värdena i kolumnen Standard är standardvärdena i nya principer för säkra bifogade filer som du skapar.
+
+<br>
 
 ****
 

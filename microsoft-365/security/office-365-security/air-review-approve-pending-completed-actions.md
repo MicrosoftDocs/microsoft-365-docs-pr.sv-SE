@@ -1,10 +1,10 @@
 ---
-title: Granska och hantera åtgärder i Microsoft Defender för Office 365
+title: Granska och hantera åtgärdsåtgärder i Microsoft Defender för Office 365
 keywords: AIR, autoIR, Microsoft Defender för Slutpunkt, automatiserad, undersökning, svar, åtgärd, hot, avancerat, hot, skydd
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
@@ -19,16 +19,16 @@ description: Läs mer om åtgärder i funktioner för automatisk undersökning o
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: ce6cfd920845f5a85dbc7d7d48cfefdd6209ec3a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f0c42bef1b090412a7a6422fe029323b645e90df
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933655"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275078"
 ---
-# <a name="review-and-manage-remediation-actions-in-office-365"></a>Granska och hantera åtgärder i Office 365
+# <a name="review-and-manage-remediation-actions-in-office-365"></a>Granska och hantera åtgärdsåtgärder i Office 365
 
-Eftersom automatiska undersökningar av e& och samarbetsinnehåll resulterar  i bedömningar, till exempel skadlig eller *misstänkt,* skapas vissa åtgärder. I Microsoft Defender för Office 365 kan åtgärder omfatta:
+Eftersom automatiska undersökningar av e& och samarbetsinnehåll resulterar  i bedömningar, till exempel skadlig eller *misstänkt,* skapas vissa åtgärder. I Microsoft Defender Office 365 kan åtgärder som vidtas omfattar:
 - Blockera en URL (tid för klickning)
 - Mjuk borttagning av e-postmeddelanden och kluster
 - Kvarantitiska e-postmeddelanden och e-postbilagor
@@ -42,7 +42,7 @@ Dessa åtgärder vidtas inte om inte och tills ditt säkerhetsoperationsteam god
 
 ## <a name="approve-or-reject-pending-actions"></a>Godkänna (eller avvisa) väntande åtgärder
 
-1. Gå till Säkerhetscenter för Microsoft 365 ( <https://security.microsoft.com> ) och logga in.
+1. Gå till Microsoft 365 ( ) <https://security.microsoft.com> och logga in.
 2. Välj Åtgärdscenter i **navigeringsfönstret.**
 3. Granska listan **över åtgärder** som väntar på godkännande på fliken Väntande.
 4. Markera ett objekt i listan. Den utfällna rutan öppnas. 
@@ -76,4 +76,4 @@ Dessa åtgärder vidtas inte om inte och tills ditt säkerhetsoperationsteam god
 
 ## <a name="see-also"></a>Se även
 
-- [Visa information och resultat från en automatiserad undersökning i Office 365](air-view-investigation-results.md)
+- [Visa information och resultat av en automatiserad undersökning i Office 365](air-view-investigation-results.md)

@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Lär dig hur du skyddar känslig information med hjälp Microsoft 365 principer och verktyg för skydd mot dataförlust och ta en rundtur genom DLP-livscykeln.
-ms.openlocfilehash: 451622d15b1f422304dd498264ff2fe4a343bb6c
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 88cf913f62d28c89bce7054473eb577217de9489
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52127806"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244618"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Mer information om skydd mot dataförlust
 
@@ -90,7 +90,7 @@ Du kan tillämpa DLP-principer på data i vila, data som används och data i rö
 - OneDrive konton
 - Teams chatt- och kanalmeddelanden
 - Microsoft Cloud App Security
-- Windows 10 enheter
+- Windows 10-enheter
 - Lokala lagringsningar
 
 Förutsättningarna för var och en har olika förutsättningar. Känsliga objekt på vissa platser, till exempel Exchange online, kan omfattas av DLP-paraplyet genom att bara konfigurera en princip som gäller för dem. För andra, till exempel lagringsplatsen för lokala filer, krävs en distribution av AIP-skannern (Azure Information Protection). Du måste förbereda miljön, koda utkastprinciper och testa dem noggrant innan du aktiverar blockeringsåtgärder.
@@ -138,7 +138,7 @@ plats | inkludera/exkludera efter|
 |SharePoint webbplatser |webbplatser |
 |OneDrive konton |konton eller distributionsgrupper |
 |Teams chatt- och kanalmeddelanden |konton |
-|Windows 10 enheter |användare eller grupp |
+|Windows 10-enheter |användare eller grupp |
 |Microsoft Cloud App Security |instans |
 |Lokala lagringsningar| sökväg till lagringsplatsen|
 
@@ -207,8 +207,10 @@ Mer information finns i Komma [igång med aktivitetsutforskaren](data-classifica
 
 Mer information om DLP Microsoft 365 finns i:
 
-- [Läs mer Microsoft 365 skydd mot dataförlust i Slutpunkt](endpoint-dlp-learn-about.md)
+- [Läs mer om dataförlustskydd för slutpunkt i Microsoft 365](endpoint-dlp-learn-about.md)
 - [Läs mer om standardprincipen för dataförlustskydd i Microsoft Teams (förhandsversion)](dlp-teams-default-policy.md)
-- [Lär dig mer Microsoft 365 skydd mot dataförlust i lokal skanner (förhandsvisning)](dlp-on-premises-scanner-learn.md)
+- [Mer information om Microsoft 365 lokal skanner för dataförlustskydd (förhandsversion)](dlp-on-premises-scanner-learn.md)
 - [Läs mer om Microsofts Efterlevnadstillägg (förhandsversion)](dlp-chrome-learn-about.md)
 - [Lär dig om instrumentpanelen för dataförlustskyddsvarningar](dlp-alerts-dashboard-learn.md)
+
+Mer information om hur du använder skydd mot dataförlust i enlighet med sekretessregler för data finns i [Distribuera informationsskydd](../solutions/information-protection-deploy.md) för bestämmelser om datasekretess med Microsoft 365 (aka.ms/m365dataprivacy).

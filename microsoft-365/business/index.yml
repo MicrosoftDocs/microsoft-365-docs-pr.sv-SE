@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Resurser för Microsoft 365 Business Premium
-summary: Microsoft 365 Business Premium (tidigare Microsoft 365 Business) är en omfattande prenumerationstjänst för företag som har färre än 300 anställda. Det integrerar dina favoritprogram och -tjänster för Office och samarbetsverktyg som Microsoft Teams, med avancerade funktioner för säkerhet och enhetshantering.
+summary: 'Microsoft 365 Business Premium (tidigare Microsoft 365 Business) är en omfattande prenumerationstjänst för företag som har färre än 300 anställda. Det integrerar dina favoritprogram och -tjänster för Office och samarbetsverktyg som Microsoft Teams, med avancerade funktioner för säkerhet och enhetshantering.'
 brand: m365
 metadata:
   title: Resurser för Microsoft 365 Business Premium
@@ -12,203 +12,197 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: d53a1a75439fc1922f4b3facebb483298cfe9919
-  ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
-  ms.translationtype: HT
-  ms.contentlocale: sv-SE
-  ms.lasthandoff: 03/25/2021
-  ms.locfileid: "51198119"
 productDirectory:
   title: Säkert distansarbete med Microsoft 365 Business Premium
   items:
-  - title: Läsa
-    imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-    summary: Bästa sätt att aktivera säkert distansarbete med Microsoft 365 Business Premium.
-    url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
-  - title: Skaffa det kostnadsfria partnerpaketet
-    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-    summary: Praktisk vägledning och gå till marknadsresurser för partners för att säkra distansarbete.
-    url: https://aka.ms/SMBSecurityKit
-  - title: Vad är nytt?
-    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-    summary: Antivirushantering och universell utskrift finns nu i Microsoft 365 Business Premium.
-    url: https://aka.ms/M365BPQ1Update
-  - title: Gå med i partnerwebinarieserien
-    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-    summary: Öka företagstillväxten genom hanterade tjänster med Microsoft 365 Business Premium.
-    url: https://aka.ms/acceleratewithm365bp
+    - title: Läsa
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/sign-up-blue.svg'
+      summary: Bästa sätt att aktivera säkert distansarbete med Microsoft 365 Business Premium.
+      url: 'https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623'
+    - title: Skaffa det kostnadsfria partnerpaketet
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
+      summary: Praktisk vägledning och gå till marknadsresurser för partners för att säkra distansarbete.
+      url: 'https://aka.ms/SMBSecurityKit'
+    - title: Vad är nytt?
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
+      summary: Antivirushantering och universell utskrift finns nu i Microsoft 365 Business Premium.
+      url: 'https://aka.ms/M365BPQ1Update'
+    - title: Gå med i partnerwebinarieserien
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
+      summary: Öka företagstillväxten genom hanterade tjänster med Microsoft 365 Business Premium.
+      url: 'https://aka.ms/acceleratewithm365bp'
 conceptualContent:
   items:
-  - title: Vad är Microsoft 365 Business Premium?
-    links:
-    - url: microsoft-365-business-overview.md
-      itemType: overview
-      text: Översikt
-    - url: https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
-      itemType: video
-      text: Utbildning för Microsoft 365 Business Premium
-    - url: /office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
-      itemType: overview
-      text: Jämför abonnemang
-    - url: /office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
-      itemType: reference
-      text: Tjänstbeskrivning
-    - url: support/microsoft-365-business-faqs.yml
-      itemType: reference
-      text: Vanliga frågor och svar
-  - title: Konfigurera Microsoft 365 Business Premium
-    links:
-    - url: set-up.md
-      itemType: how-to-guide
-      text: 1. Starta installationsguiden
-    - url: secure-win-10-pcs.md
-      itemType: how-to-guide
-      text: 2. Skydda datorerna
-    - url: /MicrosoftTeams/get-started-with-teams-quick-start
-      itemType: video
-      text: 3. Konfigurera Teams
-    - url: https://support.microsoft.com/office/4d2a1b69-6d8c-45d1-88e0-6676a8efa5f1
-      itemType: get-started
-      text: 4. Installera Office
-  - title: Resurser för partner (endast på engelska)
-    links:
-    - url: https://www.microsoft.com/microsoft-365/partners/business
-      itemType: overview
-      text: Partnersidan
-    - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-customer-pitch-deck.pptx
-      itemType: download
-      text: Presentationssammanfattning (kundfokus)
-    - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-opportunity-deck.pptx
-      itemType: download
-      text: Presentationssammanfattning (partnerfokus)
-    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-smb-technical-fundamentals-content-content-used-for-delivery
-      itemType: download
-      text: Tekniska grunder
-    - url: https://aka.ms/SMBSecurityKit
-      itemType: download
-      text: Säkert fjärrarbetssats
-    - url: https://cct.transform.microsoft.com/
-      itemType: deploy
-      text: Konsultverktyg för kund
-    - url: https://vc.transform.microsoft.com/
-      itemType: learn
-      text: Värdekalkylator
-  - title: Hantera användare
-    links:
-    - url: ../admin/add-users/add-users.md
-      itemType: how-to-guide
-      text: Lägga till en användare
-    - url: /office365/admin/add-users/remove-former-employee
-      itemType: how-to-guide
-      text: Ta bort en användare
-    - url: /office365/admin/add-users/reset-passwords
-      itemType: how-to-guide
-      text: Återställa någons lösenord
-    footerLink:
-      url: /office365/admin/admin-home
-      text: Visa mer
-  - title: Hantera hot
-    links:
-    - url: ../security/office-365-security/defender-for-office-365.md
-      itemType: overview
-      text: Avancerat skydd
-    - url: ../admin/security-and-compliance/set-up-multi-factor-authentication.md
-      itemType: how-to-guide
-      text: Konfigurera MFA
-    - url: ./increase-threat-protection.md#protect-against-ransomware
-      itemType: how-to-guide
-      text: Skydda mot utpressningstrojaner
-    - url: /azure/active-directory/conditional-access/overview
-      itemType: overview
-      text: Med villkorsstyrd åtkomst
-    footerLink:
-      url: /office365/admin/admin-home
-      text: Visa mer
-  - title: Hantera data
-    links:
-    - url: ../compliance/data-loss-prevention-policies.md
-      itemType: overview
-      text: Dataförlustskydd
-    - url: https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980
-      itemType: how-to-guide
-      text: Skicka krypterad e-post
-    - url: ./set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
-      itemType: how-to-guide
-      text: Konfigurera e-postbevarande
-    - url: https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9
-      itemType: video
-      text: Skapa och hantera känslighetsetiketter
-    footerLink:
-      url: ../compliance/index.yml
-      text: Visa mer
-  - title: Hantera enheter
-    links:
-    - url: view-policies-and-devices.md
-      itemType: how-to-guide
-      text: Dator- och mobila enheter
-    - url: remove-company-data.md
-      itemType: how-to-guide
-      text: Ta bort företagsdata
-    - url: reset-devices-to-factory-settings.md
-      itemType: how-to-guide
-      text: Rensa och återställa
-    - url: /intune/index
-      itemType: overview
-      text: Intune
-    - url: manage-windows-devices.md
-      itemType: how-to-guide
-      text: Konfigurera hybrid Azure Active Directory-anslutning
-    - url: access-resources.md
-      itemType: how-to-guide
-      text: Konfigurera Azure Active Directory-anslutning
-    - url: /windows/deployment/windows-autopilot/windows-autopilot
-      text: Windows Autopilot
-      itemType: overview
-    footerLink:
-      url: manage-windows-devices.md
-      text: Visa mer
-  - title: Övervaka säkerhet
-    links:
-    - url: ../security/defender/microsoft-secure-score.md
-      itemType: how-to-guide
-      text: Säkerhetspoäng
-    - url: /intune/apps/app-protection-policies-monitor
-      itemType: overview
-      text: Skyddsprinciper för Intune-appar
-    - url: ../enterprise/view-service-health.md
-      itemType: how-to-guide
-      text: Hälsoövervakningsvarningar
-    footerLink:
-      url: ../security/index.yml
-      text: Visa mer
-  - title: Support och community
-    links:
-    - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog
-      itemType: whats-new
-      text: Meddelanden
-    - url: https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988
-      itemType: video
-      text: Få hjälp
-    - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business/bd-p/Microsoft365business
-      itemType: overview
-      text: Skicka feedback
-    - url: https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB
-      itemType: overview
-      text: Techcommunity för Små och medelstora företag
-  - title: Hur ska jag...
-    links:
-    - url: sign-up.md
-      itemType: get-started
-      text: Registrera dig för Microsoft 365 Business Premium
-    - url: migrate-to-microsoft-365-business.md
-      itemType: how-to-guide
-      text: Migrera från Microsoft 365 Business Standard
-    - url: migrate-from-e3.md
-      itemType: how-to-guide
-      text: Migrera från Office 365 E3
-    - url: migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md
-      itemType: how-to-guide
-      text: Migrera till Microsoft 365 Enterprise E3
-    footerLink:
-      url: microsoft-365-business-overview.md
-      text: Visa mer
+    - title: Vad är Microsoft 365 Business Premium?
+      links:
+        - url: microsoft-365-business-overview.md
+          itemType: overview
+          text: Översikt
+        - url: ../business-video/index.yml
+          itemType: video
+          text: Utbildning för Microsoft 365 Business Premium
+        - url: /office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
+          itemType: overview
+          text: Jämför abonnemang
+        - url: /office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
+          itemType: reference
+          text: Tjänstbeskrivning
+        - url: support/microsoft-365-business-faqs.yml
+          itemType: reference
+          text: Vanliga frågor och svar
+    - title: Konfigurera Microsoft 365 Business Premium
+      links:
+        - url: set-up.md
+          itemType: how-to-guide
+          text: 1. Starta installationsguiden
+        - url: secure-win-10-pcs.md
+          itemType: how-to-guide
+          text: 2. Skydda datorerna
+        - url: /MicrosoftTeams/get-started-with-teams-quick-start
+          itemType: video
+          text: 3. Konfigurera Teams
+        - url: ../business-video/install-office.md
+          itemType: get-started
+          text: 4. Installera Office
+    - title: Resurser för partner (endast på engelska)
+      links:
+        - url: 'https://www.microsoft.com/microsoft-365/partners/business'
+          itemType: overview
+          text: Partnersidan
+        - url: 'https://assetsprod.microsoft.com/mpn/smb-advanced-security-customer-pitch-deck.pptx'
+          itemType: download
+          text: Presentationssammanfattning (kundfokus)
+        - url: 'https://assetsprod.microsoft.com/mpn/smb-advanced-security-opportunity-deck.pptx'
+          itemType: download
+          text: Presentationssammanfattning (partnerfokus)
+        - url: 'https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-smb-technical-fundamentals-content-content-used-for-delivery'
+          itemType: download
+          text: Tekniska grunder
+        - url: 'https://aka.ms/SMBSecurityKit'
+          itemType: download
+          text: Säkert fjärrarbetssats
+        - url: 'https://cct.transform.microsoft.com/'
+          itemType: deploy
+          text: Konsultverktyg för kund
+        - url: 'https://vc.transform.microsoft.com/'
+          itemType: learn
+          text: Värdekalkylator
+    - title: Hantera användare
+      links:
+        - url: ../admin/add-users/add-users.md
+          itemType: how-to-guide
+          text: Lägga till en användare
+        - url: /office365/admin/add-users/remove-former-employee
+          itemType: how-to-guide
+          text: Ta bort en användare
+        - url: /office365/admin/add-users/reset-passwords
+          itemType: how-to-guide
+          text: Återställa någons lösenord
+      footerLink:
+        url: /office365/admin/admin-home
+        text: Visa mer
+    - title: Hantera hot
+      links:
+        - url: ../security/office-365-security/defender-for-office-365.md
+          itemType: overview
+          text: Avancerat skydd
+        - url: ../admin/security-and-compliance/set-up-multi-factor-authentication.md
+          itemType: how-to-guide
+          text: Konfigurera MFA
+        - url: ./increase-threat-protection.md#protect-against-ransomware
+          itemType: how-to-guide
+          text: Skydda mot utpressningstrojaner
+        - url: /azure/active-directory/conditional-access/overview
+          itemType: overview
+          text: Med villkorsstyrd åtkomst
+      footerLink:
+        url: /office365/admin/admin-home
+        text: Visa mer
+    - title: Hantera data
+      links:
+        - url: ../compliance/data-loss-prevention-policies.md
+          itemType: overview
+          text: Dataförlustskydd
+        - url: 'https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980'
+          itemType: how-to-guide
+          text: Skicka krypterad e-post
+        - url: ./set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
+          itemType: how-to-guide
+          text: Konfigurera e-postbevarande
+        - url: ../business-video/create-sensitivity-labels.md
+          itemType: video
+          text: Skapa och hantera känslighetsetiketter
+      footerLink:
+        url: ../compliance/index.yml
+        text: Visa mer
+    - title: Hantera enheter
+      links:
+        - url: view-policies-and-devices.md
+          itemType: how-to-guide
+          text: Dator- och mobila enheter
+        - url: remove-company-data.md
+          itemType: how-to-guide
+          text: Ta bort företagsdata
+        - url: reset-devices-to-factory-settings.md
+          itemType: how-to-guide
+          text: Rensa och återställa
+        - url: /intune/index
+          itemType: overview
+          text: Intune
+        - url: manage-windows-devices.md
+          itemType: how-to-guide
+          text: Konfigurera hybrid Azure Active Directory-anslutning
+        - url: access-resources.md
+          itemType: how-to-guide
+          text: Konfigurera Azure Active Directory-anslutning
+        - url: /windows/deployment/windows-autopilot/windows-autopilot
+          text: Windows Autopilot
+          itemType: overview
+      footerLink:
+        url: manage-windows-devices.md
+        text: Visa mer
+    - title: Övervaka säkerhet
+      links:
+        - url: ../security/defender/microsoft-secure-score.md
+          itemType: how-to-guide
+          text: Säkerhetspoäng
+        - url: /intune/apps/app-protection-policies-monitor
+          itemType: overview
+          text: Skyddsprinciper för Intune-appar
+        - url: ../enterprise/view-service-health.md
+          itemType: how-to-guide
+          text: Hälsoövervakningsvarningar
+      footerLink:
+        url: ../security/index.yml
+        text: Visa mer
+    - title: Support och community
+      links:
+        - url: 'https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog'
+          itemType: whats-new
+          text: Meddelanden
+        - url: 'https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988'
+          itemType: video
+          text: Få hjälp
+        - url: 'https://techcommunity.microsoft.com/t5/Microsoft-365-Business/bd-p/Microsoft365business'
+          itemType: overview
+          text: Skicka feedback
+        - url: 'https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB'
+          itemType: overview
+          text: Techcommunity för Små och medelstora företag
+    - title: Hur ska jag...
+      links:
+        - url: sign-up.md
+          itemType: get-started
+          text: Registrera dig för Microsoft 365 Business Premium
+        - url: migrate-to-microsoft-365-business.md
+          itemType: how-to-guide
+          text: Migrera från Microsoft 365 Business Standard
+        - url: migrate-from-e3.md
+          itemType: how-to-guide
+          text: Migrera från Office 365 E3
+        - url: migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md
+          itemType: how-to-guide
+          text: Migrera till Microsoft 365 Enterprise E3
+      footerLink:
+        url: microsoft-365-business-overview.md
+        text: Visa mer

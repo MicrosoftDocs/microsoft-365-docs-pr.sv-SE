@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Läs mer om begränsningar för fall, indexeringsbegränsningar och sökbegränsningar som gäller för Advanced eDiscovery lösning i Microsoft 365.
-ms.openlocfilehash: 145d5de5027a9d6171215c0602a733ced5265657
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 335e40c6918fc33acc12082546b98f28c319c814
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "52162555"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244582"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Begränsningar i Advanced eDiscovery
 
@@ -76,6 +76,7 @@ Begränsningarna som beskrivs i det här avsnittet är relaterade till att anvä
 |Maximalt antal sökningar som kan köras samtidigt. |Ingen gräns |
 |Maximalt antal sökningar som en enskild användare kan starta samtidigt. |10 | 
 |Maximalt antal tecken för en sökfråga (inklusive operatorer och villkor). |10 000 &nbsp; <sup>2</sup>|
+|Maximalt antal tecken för en sökfråga för SharePoint och OneDrive för företag (inklusive operatorer och villkor). |10,000<br>4 000 med jokertecken &nbsp; <sup>2</sup>|
 |Lägsta antal alfatecken för prefix-jokertecken. till exempel **ett _ eller \* *_* set \***.|3 |  
 |Maximalt antal varianter som returneras när prefix med jokertecken används för att söka efter en exakt fras eller när du använder ett prefixtecken (jokertecken) och **operatorn NEAR** boolesk (NEAR). |10 000 &nbsp; <sup>3</sup>|
 |Maximalt antal objekt per användarpostlåda som visas på förhandsgranskningssidan för sökningar. De senaste objekten visas. |100|
@@ -92,7 +93,7 @@ Begränsningarna som beskrivs i det här avsnittet är relaterade till att anvä
 
 Microsoft samlar in prestandainformation för sökningar som körs av alla organisationer. Sökfrågans komplexitet kan påverka söktiderna, men den största faktorn som påverkar hur lång tid sökningar tar är antalet postlådor som genomsöks. Även om Microsoft inte tillhandahåller ett servicenivåavtal för söktider visar följande tabell genomsnittliga söktider för sökningar i samlingar baserat på antalet postlådor som ingår i sökningen.
   
-  |**Antal postlådor**|**Genomsnittlig söktid**|
+  | Antal postlådor | Genomsnittlig söktid |
   |:-----|:-----|
   |100  <br/> |30 sekunder  <br/> |
   |1,000  <br/> |45 sekunder  <br/> |
@@ -115,7 +116,7 @@ Begränsningarna som beskrivs i det här avsnittet är relaterade till att expor
 
 | Beskrivning av gräns | Gräns |
 |:-----|:-----|
-|Den maximala storleken på en enskild export.|3 miljoner dokument eller 100 GB, beroende på vilket som är mindre|
+|Den maximala storleken på en enskild export.|5 miljoner dokument eller 500 GB, beroende på vilket som är mindre|
 |Maximalt antal samtidiga exporter per granskningsuppsättning. | 1 |
 |||
 
@@ -132,7 +133,11 @@ Begränsningarna som beskrivs i det här avsnittet är relaterade till att expor
 > [!NOTE]
 > <sup>1</sup> Alla objekt som överskrider en enskild filgräns visas som ett bearbetningsfel.
 >
-> <sup>2</sup> Vid sökning SharePoint och OneDrive för företag platser räknas tecknen i webbadresserna för webbplatserna som genomsöks mot den här gränsen.
+> <sup>2</sup> Vid sökning SharePoint och OneDrive för företag platser räknas tecknen i webbadresserna för webbplatserna som genomsöks mot den här gränsen. Det totala antalet tecken består av:<br>
+> - Alla tecken i fälten Användare och Filter.
+> - Alla sökbehörighetsfilter som gäller för användaren.
+> - Tecknen från valfri platsegenskaper i sökningen; det här inkluderar ExchangeLocation,PublicFolderLocation,SharPointLocation,ExchangeLocationExclusion,PublicFolderLocationExclusion,SharePointLocationExclusion, OneDriveLocationExclusion.
+>   Till exempel räknas alla SharePoint-webbplatser och OneDrive-konton i sökningen som sex tecken, eftersom ordet "ALL" visas för både fältet SharePointLocation och OneDriveLocation.
 >
 > <sup>3</sup> För frågor som inte är fraserade (ett nyckelordsvärde som inte använder dubbla citattecken) används ett särskilt prefixindex. Det innebär att ett ord förekommer i ett dokument, men inte där det förekommer i dokumentet. Om du vill göra en frasfråga (ett nyckelordsvärde med dubbla citattecken) måste vi jämföra positionen i dokumentet för orden i frasen. Det innebär att vi inte kan använda prefixindexet för frasfrågor. I det här fallet expanderar vi frågan internt med alla möjliga ord som prefixet expanderar till. till exempel kan **tid \* *_ utökas till _*"tid ELLER tidtagare ELLER tidx OR tidsruta ELLER ..."**. Gränsen på 10 000 är det maximala antalet varianter som ordet kan utökas till, inte antalet dokument som matchar frågan. Det finns ingen övre gräns för termer som inte är fraser.
 >

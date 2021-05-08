@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Få reda på hur du avbryter din utvärderingsversion eller betalda prenumeration för Microsoft 365 för företag.
 ms.date: 04/08/2021
-ms.openlocfilehash: f052a08cfe0e7582690864556cfc3039d6caf99c
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 15ab7ed31af24fa4cb1c83c6babc945871584375
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107008"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244666"
 ---
 # <a name="cancel-your-subscription"></a>Avbryt din prenumeration
 
@@ -126,7 +126,7 @@ När uppsägningen blivit aktiv förlorar användarna sin tillgång till sina da
 
 - Om du vill flytta e-post, kontakter, uppgifter och kalenderinformation till ett annat konto hittar du information i artikeln om att [exportera eller säkerhetskopiera e-post, kontakter och kalender till en Outlook-datafil (.pst)](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
 
-- Om du vill spara ett dokumentbibliotek eller listinnehåll (till exempel kontakter) från en SharePoint Online-miljö (OneDrive för företag eller gruppwebbplatser) på filresurser eller på en lokal dator kan du läsa mer i artikeln om [manuell migrering av SharePoint Online-innehåll](https://support.microsoft.com/kb/2783484).
+- Om du vill spara ett dokumentbibliotek eller listinnehåll (till exempel kontakter) från en SharePoint Online-miljö (OneDrive för företag eller gruppwebbplatser) på filresurser eller på en lokal dator kan du läsa mer i artikeln om [manuell migrering av SharePoint Online-innehåll](https://docs.microsoft.com/sharepoint/troubleshoot/migration-tool/content-manual-migration).
 
 ### <a name="uninstall-office-optional"></a>Avinstallera Office (valfritt)
 

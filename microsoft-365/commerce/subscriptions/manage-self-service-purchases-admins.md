@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Administratörer kan lära sig att hantera självbetjäning som görs av användare i organisationen.
-ms.openlocfilehash: febf0ee470e735a454dc7a9e747de5025c7a4a51
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 59d64c047ddf4f33c2ef3277f3139f1b7692b891
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398187"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244998"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Hantera självbetjäningsköp (administratörer)
 
@@ -43,14 +43,13 @@ Du kan också ange om användarna i organisationen ska kunna göra självbetjän
 
 ::: moniker range="o365-germany"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a>går du  till sidan > **Fakturering dina** produkter.
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Dina produkter</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a>går du  till sidan > **Fakturering dina** produkter.
-
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Dina produkter</a>.
 ::: moniker-end
 
 2. På fliken **Produkter** väljer du filterikonen och sedan **Självbetjäning**.
@@ -59,7 +58,7 @@ Du kan också ange om användarna i organisationen ska kunna göra självbetjän
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>Visa vem som har licenser för en prenumeration med självbetjäning för köp av självbetjäning
 
 > [!NOTE]
-> Som administratör kan du inte tilldela eller ta bort licenser för en prenumeration på självbetjäning som köpts av en användare i organisationen. Du kan [ta över en prenumeration på självbetjäning och](#take-over-a-self-service-purchase-subscription)sedan tilldela eller ta bort licenser.
+> Som administratör kan du inte tilldela eller ta bort licenser för en självbetjäningsprenumeration som köpts av en användare i din organisation. Du kan [ta över en självbetjäningsprenumeration](#take-over-a-self-service-purchase-subscription)och sedan tilldela eller ta bort licenser.
 
 ::: moniker range="o365-worldwide"
 
@@ -69,12 +68,13 @@ Du kan också ange om användarna i organisationen ska kunna göra självbetjän
 
 ::: moniker range="o365-germany"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret går</a>du till sidan  > **Faktureringslicenser.**
+ 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenser</a> i administrationscentret.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret går</a>du till sidan  > **Faktureringslicenser.**
+ 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenser</a> i administrationscentret.
 
 ::: moniker-end
 
