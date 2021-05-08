@@ -539,6 +539,12 @@
 ####### [Lista maskiner efter rekommendation](get-recommendation-machines.md)
 ####### [Lista sårbarheter efter rekommendation](get-recommendation-vulnerabilities.md)
 
+###### [Åtgärdsaktivitet]()
+####### [Metoder och egenskaper för åtgärdsaktivitet](get-remediation-methods-properties.md)
+####### [Få en åtgärdsaktivitet med ID](get-remediation-one-activity.md)
+####### [Lista alla åtgärdsaktiviteter](get-remediation-all-activities.md)
+####### [Lista exponerade enheter av en åtgärdsaktivitet](get-remediation-exposed-devices-activities.md)
+
 ###### [Poäng]()
 ####### [Poängmetoder och egenskaper](score.md)
 ####### [Lista exponeringsvärde efter maskingrupp](get-machine-group-exposure-score.md)
