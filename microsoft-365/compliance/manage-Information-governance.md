@@ -32,7 +32,7 @@ Använd Microsoft Informationsstyrning (ibland förkortad till MIG) för att sty
 
 Vill du skydda dina data? Se [Microsoft Informationsskydd i Microsoft 365](information-protection.md).
 
-För att hjälpa dig att följa föreskrifterna för datasekretess har vi utformat ett arbetsflöde som vägleder dig genom en hela processen för att planera och implementera funktioner i Microsoft 365, inklusive säker åtkomst, skydd mot hot, informationsskydd och datastyrning. Mer information finns i [Distribuera informationsskydd för föreskrifter för datasekretess med Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
+För att hjälpa dig att följa föreskrifterna för datasekretess har vi utformat ett arbetsflöde som vägleder dig genom hela processen för att planera och implementera funktioner i Microsoft 365, inklusive säker åtkomst, skydd mot hot, informationsskydd och datastyrning. Mer information finns i [Distribuera informationsskydd för föreskrifter för datasekretess med Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
 
 ## <a name="information-governance"></a>Informationsstyrning
 
