@@ -144,6 +144,7 @@
  
 ##### [Felsökning]()
 ###### [Felsöka installationsproblem](linux-support-install.md)
+###### [Undersöka hälsoproblem i agenten](health-status.md)
 ###### [Felsöka anslutningsproblem med molnet](linux-support-connectivity.md)
 ###### [Felsöka prestandaproblem](linux-support-perf.md)
 ###### [Felsöka problem med saknade händelser](linux-support-events.md)
