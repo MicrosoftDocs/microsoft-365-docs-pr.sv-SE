@@ -1,12 +1,12 @@
 ---
-title: Aktivera spärr vid första synen för att upptäcka skadlig programvara efter bara några sekunder
-description: Aktivera funktionen för blockering vid första synen för att identifiera och blockera skadlig programvara inom några sekunder.
-keywords: skanning, blockera vid första synen, skadlig kod, första synen, molnet, defender, antivirus
+title: Aktivera Blockera när det först påträffas när du vill identifiera skadlig programvara på några sekunder
+description: Aktivera funktionen Blockera när det först påträffas när du vill identifiera och blockera skadlig programvara inom några sekunder.
+keywords: skanna, blockera när det först påträffas, skadlig programvara, påträffas, moln, defender, antivirus
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: priority
+localization_priority: Priority
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: marcmcc
@@ -14,14 +14,15 @@ manager: dansimp
 ms.custom: nextgen
 ms.date: 04/28/2021
 ms.technology: mde
-ms.openlocfilehash: d4db3549d04e5883f02ba263c06371371d385022
-ms.sourcegitcommit: 8c89bc1d106b4716b07a1977d57e4d9ef98aecb3
-ms.translationtype: MT
+ms.topic: article
+ms.openlocfilehash: ba0f2184ced21aea60b172d44936e3e2d36e5270
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52079209"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274958"
 ---
-# <a name="turn-on-block-at-first-sight"></a>Aktivera blockera direkt
+# <a name="turn-on-block-at-first-sight"></a>Aktivera Blockera när det först påträffas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,190 +31,190 @@ ms.locfileid: "52079209"
 
 - [Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/)
 
-I den här artikeln beskrivs en antivirus-/antimalware-funktion som kallas "block vid första synen" och beskriver hur du aktiverar blockering vid första synen för organisationen. 
+I den här artikeln beskrivs antivirus-/antimalware-funktionen som kallas Blockera när det först påträffas och hur du aktiverar Blockera när det först påträffas för din organisation. 
 
 > [!TIP]
-> Den här artikeln är avsedd för företagsadministratörer och IT-proffs som hanterar säkerhetsinställningar för organisationer. Om du inte är en enteprise-administratör eller IT-proffs men har frågor om block vid första anblicken, se Inte företagsadministratör eller [IT-proffs?](#not-an-enterprise-admin-or-it-pro).
+> Den här artikeln är avsedd för företagsadministratörer och IT-tekniker som hanterar säkerhetsinställningar för organisationer. Om du inte är företagsadministratör eller IT-tekniker, men har frågor om Blockera när det först påträffas kan du läsa [Är du inte företagsadministratör eller IT-tekniker?](#not-an-enterprise-admin-or-it-pro).
 
-## <a name="what-is-block-at-first-sight"></a>Vad är "block vid första synen"?
+## <a name="what-is-block-at-first-sight"></a>Vad är Blockera när det först påträffas?
 
-Blockera vid första synen är en skyddfunktion i nästa generations skydd som identifierar ny skadlig programvara och blockerar den inom några sekunder. Blockera vid första synen är aktiverat när vissa säkerhetsinställningar är aktiverade. Dessa inställningar omfattar:
+Blockera när det först påträffas är en nästa generations funktion som skyddar mot hot genom att identifiera ny skadlig programvara och blockera den på några sekunder. Blockera när det först påträffas aktiveras när vissa säkerhetsinställningar är aktiverade. Inställningarna omfattar:
 
-- Moln levererat skydd; 
-- Ett angivet exempel på en tidsgräns för sändning (t.ex. 50 sekunder). och 
-- En hög filblockeringsnivå. 
+- molnbaserat skydd 
+- en angiven tidsgräns för sändning av exempel (t.ex. 50 sekunder) och 
+- en hög filblockeringsnivå. 
 
-I de flesta företag är de inställningar som krävs för att aktivera spärr vid första anblicken konfigurerade med Microsoft Defender Antivirus-distributioner. 
+I de flesta företag konfigureras inställningarna som krävs för att aktivera Blockera när det först påträffas i samband med Microsoft Defender Antivirus-distributioner. 
 
 ## <a name="how-it-works"></a>Så här fungerar det
 
-När Microsoft Defender Antivirus stöter på en misstänkt men oupptäckta fil, uppstår ett problem i vårt molnskyddsbackend. I molnbackend används heuristics, maskininlärning och automatiserad analys av filen för att avgöra om filerna är skadliga eller inte som ett hot.
+När Microsoft Defender Antivirus stöter på en misstänkt men oidentifierad fil, skickas en fråga till serverdelen för molnskydd. I serverdelen för molnskydd tillämpas heuristik, maskininlärning och automatiska analyser på filen för att avgöra om den är skadlig eller inte.
 
-Microsoft Defender Antivirus använder flera identifierings- och skyddstekniker för att ge korrekt, intelligent och realtidsskydd. 
+Microsoft Defender Antivirus använder flera tekniker för identifiering och skydd för att ge exakt och intelligent skydd i realtid. 
 
-![Lista över Microsoft Defender AV-motorer](images/microsoft-defender-atp-next-generation-protection-engines.png)  
+![Lista över motorer för Microsoft Defender Antivirus](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 > [!TIP]
-> Mer information finns i den här bloggen: Lär känna den avancerade tekniken som ligger till grund för nästa generations skydd [i Microsoft Defender för Slutpunkt.](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
+> Mer information finns i den här bloggen: [Lär känna de avancerade teknikerna i Microsoft Defender för Endpoint – nästa generations skydd](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
 
-## <a name="a-few-things-to-know-about-block-at-first-sight"></a>Några saker du bör veta om block vid första synen
+## <a name="a-few-things-to-know-about-block-at-first-sight"></a>Några saker du bör veta om Blockera när det först påträffas
 
-- I Windows 10, version 1803 eller senare, kan block vid första anblicken blockera icke-bärbara körbara filer (t.ex. JS, VBS eller makron) och körbara filer.
+- I Windows 10, version 1803 och senare, kan Blockera när det först påträffas blockera icke-portabla körbara filer (t.ex. JS, VBS eller makron) och körbara filer.
 
-- Spärr vid första anblicken använder bara molnskyddsbackend för körbara filer och icke-bärbara körbara filer som laddas ned från Internet eller som kommer från Internetzonen. Ett hashvärde för EXE-filen kontrolleras via molnbackend för att fastställa om filen är en tidigare oupptäckta fil.
+- Blockera när det först påträffas använder bara serverdelen för molnskydd för körbara filer och icke-portabla körbara filer som laddas ned från internet eller som kommer från internetzonen. Ett hashvärde för .exe-filen kontrolleras via den molnbaserade serverdelen för att avgöra om filen inte har identifierats tidigare.
 
-- Om molnbackend inte kan avgöra något låses filen och en kopia laddas upp till molnet av Microsoft Defender Antivirus. Molnet utför mer analys för att nå ett avgörande innan det antingen gör det möjligt att köra filen eller blockerar den i alla framtida möten, beroende på om filen är skadlig eller inte som ett hot.
+- Om molnserverdelen inte kan fastställa det kommer Microsoft Defender Antivirus att låsa filen och ladda upp en kopia till molnet. I molnet utförs fler analyser för att fatta ett beslut om filen ska köras eller blockeras när den identifieras i framtiden, beroende på om den är skadlig eller inte.
 
 - I många fall kan den här processen minska svarstiden för ny skadlig programvara från timmar till sekunder.
 
-- Du kan [ange hur länge en fil ska förhindras från att köras](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) medan den molnbaserade skyddstjänsten analyserar filen. Du kan också [anpassa meddelandet som visas på användarnas skrivbord](/windows/security/threat-protection//windows-defender-security-center/wdsc-customize-contact-information.md) när en fil blockeras. Du kan ändra företagets namn, kontaktinformation och meddelande-URL.
+- Du kan [ange hur länge en fil ska förhindras från att köras](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) medan den molnbaserade skyddstjänsten analyserar filen. Du kan även [anpassa det meddelande som visas på användarnas skrivbord](/windows/security/threat-protection//windows-defender-security-center/wdsc-customize-contact-information.md) när en fil blockeras. Du kan ändra företagets namn, kontaktinformation och meddelande-URL.
 
-## <a name="turn-on-block-at-first-sight-with-microsoft-intune"></a>Aktivera blockera vid första synen med Microsoft Intune
+## <a name="turn-on-block-at-first-sight-with-microsoft-intune"></a>Aktivera Blockera när det först påträffas med Microsoft Intune
 
 > [!TIP]
-> Microsoft Intune ingår nu i Microsoft Endpoint Manager.
+> Microsoft Intune är nu en del av Microsoft Endpoint Manager.
 
-1. Gå till Konfigurationsprofiler för enheter i administrationscentret för Microsoft Endpoint [https://endpoint.microsoft.com](https://endpoint.microsoft.com)   >  **Manager**( ).
+1. I administrationscentret för Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) går du till **Enheter** > **Konfigurationsprofiler**.
 
-2. Välj eller skapa en profil med **profiltypen** Enhetsbegränsningar.
+2. Markera eller skapa en profil med profiltypen **Enhetsbegränsningar**.
 
-3. I **konfigurationsinställningarna** för profilen För enhetsbegränsningar anger eller bekräftar du följande inställningar under **Microsoft Defender Antivirus:**
+3. I **Konfigurationsinställningar** för profilen Enhetsbegränsningar, anger eller bekräftar du följande inställningar under **Microsoft Defender Antivirus**:
 
-   - **Moln levererat skydd**: Aktiverat
-   - **Blockeringsnivå för filer:** hög
-   - **Tidstillägg för filsökning i molnet:** 50
-   - **Fråga användarna innan exempel skickas:** Skicka alla data utan att fråga
+   - **Molnbaserat skydd**: aktiverat 
+   - **Filblockeringsnivå**: hög
+   - **Tidstillägg för genomsökning av filer via molnet**: 50
+   - **Fråga användare innan exempel skickas**: skicka alla data utan att fråga
 
    ![Intune-konfiguration](images/defender/intune-block-at-first-sight.png)
 
-4. Spara inställningarna.
+4. Spara dina inställningar.
 
 > [!TIP]
-> - Om du ställer in blockeringsnivån **Hög** tillämpas en stark identifieringsnivå. Om en filblockering orsakar en falsk positiv identifiering av legitima filer kan ditt säkerhetsteam återställa filer i karantän som då [blockeras.](./restore-quarantined-files-microsoft-defender-antivirus.md)
-> - Mer information om hur du konfigurerar begränsningar för Microsoft Defender Antivirus-enheter i Intune finns i Konfigurera inställningar [för enhetsbegränsning i Microsoft Intune.](/intune/device-restrictions-configure)
-> - En lista över begränsningar för Microsoft Defender Antivirus-enheter i Intune finns i Enhetsbegränsning för [Windows 10-inställningar (och nyare) i Intune.](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+> - Om du ställer in filblockeringsnivån på **Hög** används en hög identifieringsnivå. Om filblockering mot förmodan leder till falsk positiv identifiering av legitima filer kan säkerhetsteamet [återställa filer i karantän](./restore-quarantined-files-microsoft-defender-antivirus.md).
+> - Mer information om hur du konfigurerar enhetsbegränsningar för Microsoft Defender Antivirus i Intune finns i [Konfigurera inställningar för enhetsbegränsning i Microsoft Intune](/intune/device-restrictions-configure).
+> - En lista över enhetsbegränsningar för Microsoft Defender Antivirus i Intune finns i [Inställningar för enhetsbegränsning i Windows 10 (och senare) i Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
-## <a name="turn-on-block-at-first-sight-with-microsoft-endpoint-manager"></a>Aktivera block vid första synen med Microsoft Endpoint Manager
+## <a name="turn-on-block-at-first-sight-with-microsoft-endpoint-manager"></a>Aktivera Blockera när det först påträffas med Microsoft Endpoint Manager
 
 > [!TIP]
-> Om du letar efter Microsoft Endpoint Configuration Manager är det nu en del av Microsoft Endpoint Manager.
+> Om du letar efter Microsoft Endpoint Configuration Manager så ingår det nu som en del av Microsoft Endpoint Manager.
 
-1. Gå till Slutpunktssäkerhetsantivirusprogram i Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com)   >  ).
+1. I Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) går du till **Slutpunktssäkerhet** > **Antivirus**.
 
-2. Välj en befintlig princip eller skapa en ny princip med profiltypen **Microsoft Defender** Antivirus.
+2. Markera en princip eller skapa en ny princip med profiltypen **Microsoft Defender Antivirus**.
 
 3. Ange eller bekräfta följande konfigurationsinställningar:
 
-   - **Aktivera moln levererat skydd**: Ja
-   - **Moln levererat skyddsnivå**: Hög
-   - **Utökad tidsgräns för Defender Cloud på några sekunder**: 50
+   - **Aktivera molnbaserat skydd**: ja
+   - **Skyddsnivå som levereras i molnet**: hög
+   - **Utökad tidsgräns i Defender-moln i sekunder**: 50
 
-   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Inställningar för spärr vid första synen i Slutpunktshanteraren":::
+   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Inställningar för Blockera när det först påträffas Endpoint Manager":::
 
-4. Använd Microsoft Defender Antivirus-profilen för en grupp, till exempel **Alla användare,** **Alla enheter** eller Alla användare **och enheter.**
+4. Tillämpa Microsoft Defender Antivirus-profilen på en grupp, till exempel **Alla användare**, **Alla enheter** eller **Alla användare och enheter**.
 
-## <a name="turn-on-block-at-first-sight-with-group-policy"></a>Aktivera blockera vid första synen med Grupprincip
+## <a name="turn-on-block-at-first-sight-with-group-policy"></a>Aktivera Blockera när det först påträffas med en grupprincip
 
 > [!NOTE]
-> Vi rekommenderar att du använder Intune eller Microsoft Endpoint Manager för att aktivera block vid första synen. 
+> Vi rekommenderar att du använder Intune eller Microsoft Endpoint Manager för att aktivera Blockera när det först påträffas. 
 
-1. Öppna grupprinciphanteringskonsolen på datorn för [grupprinciphantering,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))högerklicka på det grupprincipobjekt du vill konfigurera och välj **Redigera.** 
+1. På datorn för hantering av grupprinciper öppnar du [konsolen Grupprinciphantering](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), högerklickar på det grupprincipobjekt som du vill konfigurera och väljer **Redigera**. 
 
-2. Med **redigeraren för hantering av grupprinciper** går du **till Administrativa mallar** för  >    >  **datorkonfiguration Windows-komponenter**  >  **Microsoft Defender Antivirus**  >  **MAPS**. 
+2. I **redigeraren för grupprinciphantering** går du till **Datorkonfiguration** > **Administrativa mallar** > **Windows-komponenter** > **Microsoft Defender Antivirus** > **MAPS**. 
 
-3. I avsnittet KARTOR dubbelklickar du på Konfigurera funktionen "Blockera vid första **synen"** och ställer in den på **Aktiverad**. Välj sedan **OK.**
+3. I MAPS-avsnittet dubbelklickar du på **Konfigurera funktionen Blockera när det först påträffas**, anger **Aktiverad** och väljer **OK**.
 
     > [!IMPORTANT]
-    > Om du **ställer in på Fråga alltid (0)** sänks enhetens skyddstillstånd. Inställning till **Skicka aldrig (2) innebär** att blocket vid första synen inte fungerar.
+    > Om du väljer **Fråga alltid (0)** minskas skyddet på enheten. Om du väljer **Skicka aldrig (2)** kommer Blockera när det först påträffas inte att fungera.
 
-4. I avsnittet KARTOR dubbelklickar du på **Skicka filexempel när vidare analys krävs** och ställer in det på **Aktiverad**. Under **Skicka filexempel när ytterligare analys krävs** väljer du Skicka alla **exempel** och väljer sedan **OK.**
+4. I MAPS-avsnittet dubbelklickar du på **Skicka filexempel när ytterligare analys krävs** och anger **Aktiverat**. Under **Skicka filexempel när ytterligare analys krävs** väljer du **Skicka alla exempel** och sedan **OK**.
 
-5. Distribuera om grupprincipobjektet i nätverket på det sätt du brukar.
+5. Distribuera grupprincipobjektet i nätverket som vanligt.
 
-## <a name="confirm-block-at-first-sight-is-enabled-on-individual-client-devices"></a>Bekräfta att blocket vid första synen är aktiverat på enskilda klientenheter
+## <a name="confirm-block-at-first-sight-is-enabled-on-individual-client-devices"></a>Bekräfta att Blockera när det först påträffas är aktiverat på enskilda klientenheter
 
-Du kan bekräfta att blocket vid första synen är aktiverat på enskilda klientenheter med hjälp av Windows-säkerhetsappen. Spärr vid första synen aktiveras automatiskt så länge som **moln levererat skydd och** automatisk **sändning** av stickprov är aktiverade.
+Du kan kontrollera att Blockera när det först påträffas är aktiverat på enskilda klientenheter med Windows-säkerhetsappen. Blockera när det först påträffas aktiveras automatiskt så länge **Molnbaserat skydd** och **Skicka exempel automatiskt** är aktiverade.
 
 1. Öppna Windows-säkerhetsappen.
 
-2. Välj **Virus & skydd mot hot** och välj sedan Hantera & inställningar för skydd mot **&** **virushot**.
+2. Välj **Skydd mot virus och hot** och under **Inställningar för skydd mot virus och hot** väljer du **Hantera inställningar**.
 
-   ![Skärmbild av etiketten för & för skydd mot virus i Windows-säkerhetsappen](images/defender/wdav-protection-settings-wdsc.png)
+   ![Skärmbild på inställningsetiketten för Skydd mot virus och hot i Windows-säkerhetsappen](images/defender/wdav-protection-settings-wdsc.png)
 
-3. Bekräfta att **skydd mot moln levererat och** automatisk **exempelinskickning** båda är aktiverat.
+3. Kontrollera att **Molnbaserat skydd** och **Skicka exempel automatiskt** är aktiverade.
 
 > [!NOTE]
-> - Om de nödvändiga inställningarna konfigureras och distribueras med grupprincip kommer inställningarna som beskrivs i det här avsnittet att vara nedtonade och inte tillgängliga för användning i enskilda slutpunkter. 
-> - Ändringar som görs via ett grupprincipobjekt måste först distribueras till enskilda slutpunkter innan inställningen uppdateras i Windows-inställningar.
+> - Om de nödvändiga inställningarna konfigureras och distribueras med grupprinciper är inställningarna som beskrivs i det här avsnittet nedtonade och inte tillgängliga för användning på enskilda slutpunkter. 
+> - Ändringar som görs via ett grupprincipobjekt måste först distribueras till enskilda slutpunkter innan inställningen uppdateras i Windows-inställningarna.
 
-## <a name="validate-block-at-first-sight-is-working"></a>Verifiera att blocket vid första synen fungerar
+## <a name="validate-block-at-first-sight-is-working"></a>Kontrollera att Blockera när det först påträffas fungerar
 
-Verifiera att funktionen fungerar genom att följa instruktionerna i [Verifiera anslutningar mellan nätverket och molnet.](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)
+Kontrollera att funktionen fungerar genom att följa instruktionerna i [Verifiera anslutningar mellan ditt nätverk och molnet](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
 
-## <a name="turn-off-block-at-first-sight"></a>Inaktivera block vid första synen
+## <a name="turn-off-block-at-first-sight"></a>Inaktivera Blockera när det först påträffas
 
 > [!CAUTION]
-> Om du stänger av block vid första synen sänks skyddstillståndet för dina enheter och ditt nätverk.
+> Om du inaktiverar Blockera när det först påträffas sänks skyddet för dina enheter och nätverket.
 
-Du kan välja att inaktivera blocket vid första synen om du vill behålla de nödvändiga inställningarna utan att använda skydd vid första synen. Du kan tillfälligt stänga av spärren vid första synen för att se hur den här funktionen påverkar nätverket. Vi rekommenderar dock inte att spärrskyddet för första synen inaktiveras permanent.
+Du kan välja att inaktivera Blockera när det först påträffas om du vill behålla de nödvändiga inställningarna utan att använda Blockera när det först påträffas. Du kan tillfälligt inaktivera Blockera när det först påträffas för att se hur funktionen påverkar nätverket. Vi rekommenderar dock inte att du inaktiverar Blockera när det först påträffas permanent.
 
-### <a name="turn-off-block-at-first-sight-with-microsoft-endpoint-manager"></a>Inaktivera blocket vid första synen med Microsoft Endpoint Manager
+### <a name="turn-off-block-at-first-sight-with-microsoft-endpoint-manager"></a>Inaktivera Blockera när det först påträffas med Microsoft Endpoint Manager
 
-1. Gå till administrationscentret för Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) och logga in.
+1. Gå till administrationscentret för Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) och logga in.
 
-2. Gå till **Endpoint Security**  >  **Antivirus** och välj sedan din Microsoft Defender Antivirus-policy.
+2. Gå till **Slutpunktssäkerhet** > **Antivirusprogram** och välj din princip för Microsoft Defender Antivirus.
 
-3. Välj **Egenskaper** under **Hantera**.
+3. Under **Hantera** väljer du **Egenskaper**.
 
-4. Välj **Redigera bredvid** **Konfigurationsinställningar.**
+4. Välj **Redigera** bredvid **Konfigurationsinställningar**.
 
 5. Ändra en eller flera av följande inställningar:
 
-   - Ställ **in Aktivera moln levererat skydd till** **Nej** eller **Inte konfigurerat.**
-   - Ställ **in skyddsnivån Moln levererat till** Ej **konfigurerad**.
-   - Avmarkera kryssrutan för den utökade **tidsgränsen för Defender Cloud efter några sekunder.**
+   - Ställ in **Aktivera molnbaserat skydd** på **Nej** eller **Inte konfigurerat**.
+   - Ställ in **Skyddsnivå som levereras i molnet** på **Inte konfigurerat**.
+   - Avmarkera kryssrutan för **Utökad tidsgräns i Defender-moln i sekunder**.
 
 6. Granska och spara inställningarna.
 
-### <a name="turn-off-block-at-first-sight-with-group-policy"></a>Inaktivera blocket vid första synen med Grupprincip
+### <a name="turn-off-block-at-first-sight-with-group-policy"></a>Inaktivera Blockera när det först påträffas med en grupprincip
 
-1. På datorn för grupprinciphantering öppnar du [Konsolen](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))för grupprinciphantering, högerklickar på det grupprincipobjekt du vill konfigurera och väljer **sedan Redigera.**
+1. På datorn för hantering av grupprinciper öppnar du [konsolen Grupprinciphantering](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), högerklickar på det grupprincipobjekt som du vill konfigurera och väljer **Redigera**.
 
-2. Med **grupprinciphanteringsredigeraren går** du till **Datorkonfiguration** och väljer **Administrativa mallar**.
+2. I **redigeraren för grupprinciphantering** går du till **Datorkonfiguration** och väljer **Administrativa mallar**.
 
-3. Expandera trädet med **Windows-komponenterna**  >  **Microsoft Defender Antivirus**  >  **MAPS**.
+3. Öppna trädstrukturen via **Windows-komponenter** > **Microsoft Defender Antivirus** > **MAPS**.
 
-4. Dubbelklicka på Konfigurera **funktionen "Spärr vid första synen"** och ställ in alternativet på **Inaktiverad**.
+4. Dubbelklicka på **Konfigurera funktionen Blockera när det först påträffas** och ställ in alternativet på **Inaktiverat**.
 
     > [!NOTE]
-    > Om du inaktiverar blocket vid första synen inaktiveras inte nödvändiga gruppprinciper.
+    > Nödvändiga grupprinciper inaktiveras eller ändras inte när du inaktiverar Blockera när det först påträffas.
 
-## <a name="not-an-enterprise-admin-or-it-pro"></a>Är du inte företagsadministratör eller IT-proffs?
+## <a name="not-an-enterprise-admin-or-it-pro"></a>Är du inte företagsadministratör eller IT-tekniker?
 
-Om du inte är företagsadministratör eller IT-proffs, men har frågor om block vid första anblicken, är det här avsnittet för dig. Blockera vid första synen är en skyddfunktion för hot som identifierar och blockerar skadlig programvara inom några sekunder. Även om det inte finns en viss inställning som kallas "Blockera vid första anblicken" är funktionen aktiverad när vissa inställningar är konfigurerade på enheten.
+Om du inte är företagsadministratör eller IT-tekniker, men har frågor om Blockera när det först påträffas är det här avsnittet för dig. Blockera när det först påträffas skyddar mot hot genom att identifiera och blockera skadlig programvara på några sekunder. Även om det inte finns en inställning som kallas Blockera när det först påträffas, aktiveras funktionen när vissa inställningar konfigureras på enheten.
 
-### <a name="how-to-manage-block-at-first-sight-on-or-off-on-your-own-device"></a>Hur du hanterar blockering vid första synen på eller av på din egen enhet
+### <a name="how-to-manage-block-at-first-sight-on-or-off-on-your-own-device"></a>Så här aktiverar och inaktiverar du Blockera när det först påträffas på din enhet
 
-Om du har en personlig enhet som inte hanteras av en organisation kanske du undrar hur du aktiverar eller inaktiverar blockering vid första anblicken. Du kan använda Windows-säkerhetsappen för att hantera blocket vid första synen.
+Om du har en privat enhet som inte hanteras av en organisation kanske du undrar hur du aktiverar eller inaktiverar Blockera när det först påträffas. Du kan hantera Blockera när det först påträffas med Windows-säkerhetsappen.
 
-1. Öppna appen Windows-säkerhet på din Windows 10-dator.
+1. Öppna Windows-säkerhetsappen på Windows 10-datorn.
 
-2. Välj **Skydd mot & och hot**.
+2. Välj **Skydd mot virus och hot**.
 
-3. Under **Inställningar & skydd mot virus och** hot väljer du Hantera **inställningar**.
+3. Välj **Hantera inställningar** under **Inställningar för skydd mot virus och hot**.
 
 4. Gör något av följande:
 
-   - För att aktivera spärr vid första synen ska du se till att både **molnskydd och** **automatisk sändning** av stickprov är aktiverat.
+   - Om du vill aktivera Blockera när det först påträffas ska du se till att både **Molnbaserat skydd** och **Skicka exempel automatiskt** är aktiverade.
 
-   - Inaktivera blocket vid första synen genom att inaktivera **moln levererat skydd eller** automatisk **exempelindata**. <br/>
+   - Om du vill inaktivera Blockera när det först påträffas inaktiverar du **Molnbaserat skydd** eller **Skicka exempel automatiskt**. <br/>
     
      > [!CAUTION]
-     > Om du stänger av block vid första synen sänks skyddsnivån för din enhet. Vi rekommenderar inte att blocket inaktiveras permanent vid första synen. 
+     > Om du inaktiverar Blockera när det först påträffas sänks skyddsnivån för enheten. Vi rekommenderar inte att du permanent inaktiverar Blockera när det först påträffas. 
 
 
 ## <a name="see-also"></a>Se även
 
 - [Microsoft Defender Antivirus i Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Aktivera moln levererat skydd](enable-cloud-protection-microsoft-defender-antivirus.md)
+- [Aktivera molnbaserat skydd](enable-cloud-protection-microsoft-defender-antivirus.md)
 - [Skydda dig med Windows-säkerhet](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963)
