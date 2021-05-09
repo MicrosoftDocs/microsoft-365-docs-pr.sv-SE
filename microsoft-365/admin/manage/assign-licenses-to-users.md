@@ -22,12 +22,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Lär dig hur man tilldelar licenser till användare.
-ms.openlocfilehash: 9fa8981949215c4cf7779a21ff7089d7534e1ef0
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: ae088ab5c26df9b782bd4433bbd0c9f2d0ed9348
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023755"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274382"
 ---
 # <a name="assign-licenses-to-users"></a>Tilldela licenser till användare
 
@@ -41,9 +41,10 @@ Du kan tilldela licenser till användare antingen på sidan **Aktiva användare*
 ## <a name="before-you-begin"></a>Innan du börjar
 
 - Du måste vara global-, licens- eller användaradministratör för att tilldela licenser. Mer information finns i [Om Microsoft 365-administratörsroller](../add-users/about-admin-roles.md).
-- Du kan [tilldela licenser till användarkonton med Office 365 PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
+- Du kan [tilldela Microsoft 365-licenser till användarkonton med PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
 - Information om hur du använder gruppbaserad licensiering finns i [Tilldela licenser till användare efter gruppmedlemskap i Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 - Vissa tjänster, till exempel Sway, tilldelas automatiskt till användarna och behöver inte tilldelas individuellt.
+
 
 ## <a name="use-the-licenses-page-to-assign-licenses-to-users"></a>Använd sidan licenser för att tilldela licenser till användare
 
@@ -128,6 +129,10 @@ När du använder sidan **Aktiva användare** för att tilldela licenser tilldel
 5. I fönstret **Lägg till i befintliga produkter** ställer du reglaget i läget **På** för den licens som du vill att de valda användarna ska ha.\
     Som standard tilldelas alla tjänster, som är associerade till de licenserna, automatiskt till användarna. Du kan begränsa vilka tjänster som är tillgängliga för användarna. Ställ reglagen i läget **Av** för de tjänster som du inte vill att användarna ska ha.
 6. Längst ned i fönstret väljer du **Lägg till** \> **Stäng**.  
+
+
+> [!NOTE]
+> Om du vill tilldela licenser för ett stort antal användare använder du [Tilldela användarlicenser efter gruppmedlemskap i Azure Active Directory](/azure/active-directory/enterprise-users/licensing-groups-assign)
 
 ### <a name="assign-licenses-to-one-user"></a>Tilldela licenser till en användare
 
