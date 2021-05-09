@@ -48,6 +48,8 @@
           href: service-description/support.md
         - name: Drift och övervakning
           href: service-description/operations-and-monitoring.md
+        - name: Diagnostikloggar
+          href: service-description/diagnostic-logs.md
         - name: Programkrav
           href: service-description/mmd-app-requirements.md
         - name: Applikationskontroll
