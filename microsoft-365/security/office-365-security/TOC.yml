@@ -38,8 +38,14 @@
           href: turn-on-mdo-for-spo-odb-and-teams.md
         - name: Microsoft 365 Säkerhetscenter översikt
           href: ../defender/overview-security-center.md
-        - name: Hotutforskaren (och realtidsidentifieringar)
-          href: threat-explorer.md
+        - name: Hotutforskaren för Defender för Office 365
+          items:
+            - name: Hotjakt i Hotutforskaren
+              href: threat-hunting-in-threat-explorer.md
+            - name: E-postsäkerhet med Hotutforskaren
+              href: email-security-in-microsoft-defender.md
+            - name: Grundläggande information för Hotutforskaren och Realtidsidentifieringar
+              href: real-time-detections.md
         - name: Sidan E-postenhet
           href: mdo-email-entity-page.md
         - name: Översikt över Automatiska undersökningar och svar
@@ -188,6 +194,8 @@
           href: message-trace-scc.md
         - name: Rapportera meddelanden och filer till Microsoft
           href: report-junk-email-messages-to-microsoft.md
+        - name: Aktivera tilläggen för Rapportera meddelande och Rapportera nätfiske
+          href: enable-the-report-message-add-in.md
         - name: Använda e-postflödesregler för att blockera meddelanden med körbara bifogade filer i EOP
           href: reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
         - name: Använda e-postflödesregler för att filtrera massutskick i EOP

@@ -117,19 +117,19 @@
           items:
             - name: Översikt
               href: add-users/remove-former-employee.md
-            - name: Steg 1. Hindra en anställd från att logga in och blockera åtkomst till Microsoft 365-tjänster
+            - name: Steg 1. Hindra en anställd från att logga in samt blockera åtkomst till Microsoft 365-tjänster
               href: add-users/remove-former-employee-step-1.md
-            - name: Steg 2. Spara innehållet i en tidigare anställds postlåda
+            - name: Steg 2. Spara innehållet i postlådan för en tidigare anställd
               href: add-users/remove-former-employee-step-2.md
-            - name: Steg 3. Vidarebefordra en före detta anställds e-post till en annan anställd eller konvertera till en delad postlåda
+            - name: Steg 3. Vidarebefordra e-post från en tidigare anställd till en annan anställd eller konvertera till en delad postlåda
               href: add-users/remove-former-employee-step-3.md
-            - name: Steg 4. Ge en annan anställd tillgång till OneDrive- och Outlook-data
+            - name: Steg 4. Ge en annan anställd åtkomst till data för OneDrive och Outlook
               href: add-users/remove-former-employee-step-4.md
-            - name: Steg 5. Rensa och blockera en tidigare anställds mobilenhet
+            - name: Steg 5. Rensa och blockera den mobila enheten för en tidigare anställd
               href: add-users/remove-former-employee-step-5.md
-            - name: Steg 6. Ta bort och radera Microsoft 365-licensen från en tidigare anställd
+            - name: Steg 6. Ta bort licensen för Microsoft 365 från en tidigare anställd
               href: add-users/remove-former-employee-step-6.md
-            - name: Steg 7. Ta bort en tidigare anställds användarkonto
+            - name: Steg 7. Ta bort användarkontot för en tidigare anställd
               href: add-users/remove-former-employee-step-7.md
         - name: Grupper
           items:
@@ -273,8 +273,6 @@
           href: manage/manage-office-scripts-settings.md
         - name: Hitta en partner eller en återförsäljare
           href: manage/find-your-partner-or-reseller.md
-        - name: Hantera Microsoft Rewards
-          href: manage/manage-microsoft-rewards.md
         - name: Hantera Microsoft-feedback för din organisation
           href: /admin/manage/manage-feedback-ms-org.md
         - name: Konfigurera versionsalternativ
@@ -422,4 +420,4 @@
     - name: Felsökning
       href: /office/troubleshoot/
     - name: Kontakta support
-      href: contact-support-for-business-products.md
+      href: ../business-video/get-help-support.md
