@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4bc0e7998a37bdf35085819749498edbd0ffebae
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: a3c728d05137db26877bb8910d6a4b477e791f7e
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545949"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295861"
 ---
-# <a name="contact-support-for-malta"></a>Kontakta support för Malta
+# <a name="contact-support-for-malta"></a>Kontakta supporten för Malta
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 8006 2231

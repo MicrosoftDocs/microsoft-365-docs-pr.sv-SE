@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 674c5c2c0f5cfbf8b4c0ca9d6a6806a00bb7fa68
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 7f17526765bbd3940ed88d85f7432805546ab13c
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548542"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296461"
 ---
 # <a name="contact-support-for-bosnia-and-herzegovnia"></a>Kontakta supporten för Bosnien och Herzegovnia
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 0800 20 230
@@ -39,6 +39,6 @@ Engelska: Mon-Fri 9.00–17.00
 
 Engelska: mån–sön, dygnet runt
 
-Alternativt telefonnummer: +387 33 606 100
+Alternativ Telefon tal: +387 33 606 100
 
 Internationell samtalsavgift

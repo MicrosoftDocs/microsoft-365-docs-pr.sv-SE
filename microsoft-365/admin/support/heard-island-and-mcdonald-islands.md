@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cc497cd7452a0502af40d1466ae1480c8b6f8cc0
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 6df569c2919e9941bc5c7c6ee92970fa694af225
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546910"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296101"
 ---
-# <a name="contact-support-for-heard-island-and-mcdonald-islands"></a>Kontakta support för Heard Island and McDonald Islands
+# <a name="contact-support-for-heard-island-and-mcdonald-islands"></a>Kontakta supporten för Heard Island and McDonald Islands
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 +1 312 843 5148

@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5247948cd365c7946eb89ed7aa67924ced00a7e4
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: dabfd8a901d4b4c375cf666e3fd1b2fe281db347
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545926"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295849"
 ---
 # <a name="contact-support-for-martinique"></a>Kontakta support för Martinique
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 +1 312 843 5147
@@ -29,13 +29,13 @@ ms.locfileid: "50545926"
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Franska Mon-Fri 18:00
+Franska Mon-Fri 06:00 på dagen
 
-Engelska: Mon-Fri 18:00–18:00
+Engelska: Mon-Fri 18:00–17
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Franska: Mon-Fri 18.00–18.00
+Franska: Mon-Fri 06:00–13:00
 
 Engelska: mån–sön, dygnet runt
 

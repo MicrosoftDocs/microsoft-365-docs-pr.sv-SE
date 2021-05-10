@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Lär dig hur du tar bort en gammal domän från Microsoft 365 och flyttar användare och grupper till en annan domän.
-ms.openlocfilehash: 916730975e9e17c42b01d9fa0ff55b3cb7078f66
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: ca12a886c508024bf39ae9e619744a355376a80d
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470971"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296713"
 ---
 # <a name="remove-a-domain"></a>Ta bort en domän
   
@@ -203,7 +203,7 @@ Du kan också använda PowerShell för att flytta användare till en annan domä
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>Hur länge dröjer det innan en domän tas bort?
 
-Det kan ta så lite som 5 minuter för Microsoft 365 att ta bort en domän om den inte finns med på många platser, till exempel säkerhetsgrupper, distributionslistor, användare och Microsoft 365-grupper. Om det finns många referenser till domänen kan det ta flera timmar (ett dygn) innan domänen tas bort.
+Det kan ta så lite som 5 minuter för Microsoft 365 att ta bort en domän om den inte finns med på många platser, till exempel säkerhetsgrupper, distributionslistor, användare Microsoft 365 säkerhetsgrupper. Om det finns många referenser till domänen kan det ta flera timmar (ett dygn) innan domänen tas bort.
   
 Om du har hundratals eller tusentals användare använder du PowerShell och letar upp alla användare och flyttar dem till en annan domän. Annars kan det hända att några användare missas i gränssnittet och när du sedan försöker ta bort domänen så går det inte och du kommer inte att veta varför. Mer information finns i [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Om du vill ange standarddomänen använder du [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
   
@@ -214,7 +214,7 @@ Om du har hundratals eller tusentals användare använder du PowerShell och leta
 > [!NOTE]
 > Du kan inte ta bort domänen [".onmicrosoft.com"](../setup/domains-faq.yml) från ditt konto. När du tar bort en domän återgår användarkontona till ".onmicrosoft.com"-adressen som primärt SMTP/UserprincipalName.
   
-Fungerar det fortfarande inte? Domänen kan behöva tas bort manuellt. [Ring oss](../contact-support-for-business-products.md) så kan vi hjälpa dig med det!
+Fungerar det fortfarande inte? Domänen kan behöva tas bort manuellt. [Ring oss](../../business-video/get-help-support.md) så kan vi hjälpa dig med det!
   
 ::: moniker-end
 

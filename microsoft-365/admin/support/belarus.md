@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b590a1fee8b3ac556d472afe71ce1dc45b8158b4
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: c536987035743f9a640d427375efaedfce21fbb8
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548710"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296557"
 ---
 # <a name="contact-support-for-belarus"></a>Kontakta supporten för Vitryssland
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 8 820 0071 0003
@@ -35,10 +35,10 @@ Ange kod 7707
 
 Ryska: Mon-Fri 10:00–17:00 Moskva
 
-Engelska: Mon-Fri 9–17 London
+Engelska: Mon-Fri 9:00–17:00 London
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Ryska: Mon-Fri 19.00–18 Moskva
+Ryska: Mon-Fri 07:00–18:00 Moskva
 
 Engelska: mån–sön, dygnet runt

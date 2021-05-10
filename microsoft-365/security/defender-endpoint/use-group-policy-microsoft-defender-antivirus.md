@@ -10,18 +10,18 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 04/13/2021
+ms.date: 05/07/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 8db14b016491ac10872f29f04b8166e548d6c63b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 81cba445482b1fceb8bd520f2be88d55db2a47fb
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275342"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296737"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Använda grupprincipinställningar för att konfigurera och hantera Microsoft Defender Antivirus
 
@@ -33,6 +33,8 @@ ms.locfileid: "52275342"
 - [Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/)
 
 Du kan använda [grupprinciper](/windows/win32/srvnodes/group-policy) för att konfigurera Microsoft Defender Antivirus och hantera e-Microsoft Defender Antivirus slutpunkter.
+
+## <a name="configure-microsoft-defender-antivirus-using-group-policy"></a>Konfigurera Microsoft Defender Antivirus med grupprincip
 
 I allmänhet kan du använda följande procedur för att konfigurera eller ändra Microsoft Defender Antivirus grupprincipinställningar:
 
@@ -48,7 +50,12 @@ I allmänhet kan du använda följande procedur för att konfigurera eller ändr
 
 6. [Distribuera det uppdaterade GPO:t på normalt sätt.](/windows/win32/srvnodes/group-policy) 
 
-Följande tabell i det här avsnittet innehåller de grupprincipinställningar som är tillgängliga i Windows 10, version 1703, och innehåller länkar till lämpligt avsnitt i det här dokumentationsbiblioteket (om tillämpligt).
+## <a name="group-policy-settings-and-resources"></a>Grupprincipinställningar och -resurser
+
+Följande tabell i det här avsnittet innehåller de grupprincipinställningar som är tillgängliga i Windows 10, version 1703, och innehåller länkar till lämpligt avsnitt i det här dokumentationsbiblioteket (om tillämpligt). 
+
+> [!TIP]
+> [Hämta grupprincipkalkylbladet för Inställningar för Windows 10 maj 2020-uppdatering (2004).](https://www.microsoft.com/download/101451) Det här kalkylbladet innehåller principinställningar för dator- och användarkonfigurationer som ingår i administrationsmallfilerna som levereras med för den Windows 10 maj 2020-uppdateringen (2004). Du kan konfigurera de här principinställningarna när du redigerar grupprincipobjekt.
 
 | Plats | Inställning | Artikel |
 |:---|:---|:---|
@@ -61,14 +68,14 @@ Följande tabell i det här avsnittet innehåller de grupprincipinställningar s
 | Undantag | Undantag från processer | [Konfigurera och validera undantag i Microsoft Defender Antivirus genomsökningar](configure-exclusions-microsoft-defender-antivirus.md) | 
 | Undantag | Inaktivera automatiska undantag | [Konfigurera och validera undantag i Microsoft Defender Antivirus genomsökningar](configure-exclusions-microsoft-defender-antivirus.md) |
 | KARTOR | Konfigurera funktionen "Block vid första synen" | [Aktivera block vid första synen](configure-block-at-first-sight-microsoft-defender-antivirus.md) |
-| KARTOR | Ansluta till Microsoft MAPS | [Aktivera moln levererat skydd](enable-cloud-protection-microsoft-defender-antivirus.md) |
-| KARTOR | Skicka filexempel när ytterligare analys krävs | [Aktivera moln levererat skydd](enable-cloud-protection-microsoft-defender-antivirus.md) |
+| KARTOR | Ansluta till Microsoft MAPS | [Aktivera molnbaserat skydd](enable-cloud-protection-microsoft-defender-antivirus.md) |
+| KARTOR | Skicka filexempel när ytterligare analys krävs | [Aktivera molnbaserat skydd](enable-cloud-protection-microsoft-defender-antivirus.md) |
 | KARTOR | Konfigurera åsidosättning av lokal inställning för rapportering till Microsoft MAPS | [Förhindra eller tillåta användare att lokalt ändra principinställningar](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | MpEngine | Konfigurera utökad molnkontroll | [Konfigurera tidsgräns för blockering i molnet](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) |
 | MpEngine | Välj molnskyddsnivå | [Ange nivå för molnbaserat skydd](specify-cloud-protection-level-microsoft-defender-antivirus.md) |
-| System för nätverksinspektion | Ange ytterligare definitionsuppsättningar för kontroll av nätverkstrafik | Inte längre relevant |
-| System för nätverksinspektion | Aktivera att definitionen inaktiveras | Inte längre relevant |
-| System för nätverksinspektion | Aktivera protokolligenkänning | Inte längre relevant |
+| System för nätverksinspektion | Ange ytterligare definitionsuppsättningar för kontroll av nätverkstrafik | [Ange ytterligare definitionsuppsättningar för kontroll av nätverkstrafik](specify-additional-definitions-network-traffic-inspection-mdav.md) |
+| System för nätverksinspektion | Aktivera att definitionen inaktiveras | [Konfigurera att definitionen ska avse](turn-on-definition-retirement.md)  |
+| System för nätverksinspektion | Aktivera protokolligenkänning | [Aktivera protokolligenkänning](turn-on-protocol-recognition.md)  |
 | Karantän | Konfigurera åsidosättning av lokal inställning för borttagning av objekt från mappen Karantän | [Förhindra eller tillåta användare att lokalt ändra principinställningar](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Karantän | Konfigurera borttagning av objekt från mappen Karantän | [Konfigurera åtgärder för Microsoft Defender Antivirus genomsökningar](configure-remediation-microsoft-defender-antivirus.md) |
 | Realtidsskydd | Konfigurera en lokal åsidosättning för övervakning av fil- och programaktivitet på datorn | [Förhindra eller tillåta användare att lokalt ändra principinställningar](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
@@ -144,8 +151,7 @@ Följande tabell i det här avsnittet innehåller de grupprincipinställningar s
 | Hot | Ange varningsnivåer för hot där standardåtgärden inte ska vidtas när den upptäcks | [Konfigurera åtgärder för Microsoft Defender Antivirus genomsökningar](configure-remediation-microsoft-defender-antivirus.md) |
 | Hot | Ange hot där standardåtgärden inte ska vidtas när den identifieras | [Konfigurera åtgärder för Microsoft Defender Antivirus genomsökningar](configure-remediation-microsoft-defender-antivirus.md) |
 
-
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="see-also"></a>Se även
 
 - [Referensavsnitt om hanterings- och konfigurationsverktyg](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus i Windows 10](microsoft-defender-antivirus-in-windows-10.md)

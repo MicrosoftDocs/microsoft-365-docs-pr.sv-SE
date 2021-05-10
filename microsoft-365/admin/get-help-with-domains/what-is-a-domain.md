@@ -23,12 +23,12 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2527389634cda9912f45ecdcd3213f7d987b7bb8
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 0d4c59f24f5d5979d0f63d035edd1ca668ff4314
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51221877"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296701"
 ---
 # <a name="what-is-a-domain"></a>Vad är en domän?
 
@@ -36,17 +36,17 @@ ms.locfileid: "51221877"
   
 En domän är ett unikt namn som visas efter **@** -tecknet i e-postadresser och efter **www.** i webbadresser. Det består vanligen av organisationens namn och ett vanligt Internetsuffix, till exempel företagets *namn. <span> com* eller *stateuniversity. <span> edu*. 
   
-Använda en egen domän som *rob@contoso. <span> com* med Microsoft 365 kan hjälpa dig att bygga upp trovärdigheten och igenkänningen för ditt varumärke. 
+Använda en egen domän som *rob@contoso. <span> com* med Microsoft 365 kan hjälpa till att bygga upp trovärdigheten och igenkänningen för ditt varumärke. 
   
 ## <a name="choose-the-experience-thats-best-for-you"></a>Välj det alternativ som passar bäst för dig:
 
  **Köp en ny domän:**
   
-Använd Microsoft 365 för att köpa en ny domän – vi konfigurera allt. [Lära sig mer.](buy-a-domain-name.md)
+Använd Microsoft 365 när du köper en ny domän – vi konfigurera allt. [Lära sig mer.](buy-a-domain-name.md)
   
  **Använd en domän som du redan äger:**
   
-Om du redan äger en domän som  *you@yourcompany. <span> com*  kan du lägga till den och börja använda OneDrive och Microsoft-appar direkt. Det tar några minuter att konfigurera e-post och Skype för företag. 
+Om du redan äger en domän som *you@yourcompany. <span> com* kan du lägga till den och börja OneDrive och Microsoft-apparna direkt. Det tar några minuter att konfigurera e-post och Skype för företag. 
   
 > [!TIP]
 > Vet du inte var din domän är registrerad? - [Få hjälp att hitta din domänregistrator](find-your-domain-registrar.md)
@@ -57,6 +57,6 @@ Du kan använda en standarddomän som  *dittföretag.onmicrosoft. <span> com*  a
   
 ## <a name="feeling-stuck"></a>Har du kört fast?
 
-Ring Microsoft Support – [Få hjälp med att konfigurera en domän](../contact-support-for-business-products.md)
+Ring Microsoft Support – [Få hjälp med att konfigurera en domän](../../business-video/get-help-support.md)
   
 

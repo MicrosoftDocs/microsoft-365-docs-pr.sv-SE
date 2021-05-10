@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: af17314f94d7e6085f3d579870ded5f85058856e
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: a881ff4f5ed844282b36a573639a253c07bea2f4
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548122"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296377"
 ---
-# <a name="contact-support-for-china-prc"></a>Kontakta supporten för Kina (Folkrepubliken Kina)
+# <a name="contact-support-for-china-prc"></a>Kontakta supporten för Kina
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 800 988 0365
@@ -39,7 +39,7 @@ Kinesiska (mandarin): Mon-Fri 9:00–18:00
 
 Engelska: mån–sön, dygnet runt
 
-Alternativt telefonnummer: 400 920 0365 (mobil)
+Alternativ Telefon: 400 920 0365 (mobil)
 
 ## <a name="follow-us-on-wechat"></a>Följ oss på WeChat
 ![WeChat QR-kod](../../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
@@ -51,10 +51,10 @@ Alternativt telefonnummer: 400 920 0365 (mobil)
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Kinesiska och engelska: Mon-Fri 9.00–18.00
+Kinesiska och engelska: Mon-Fri 9:00–18:00
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Stöd för kinesiska och engelska: Mon-Fri 9:00–19:00
+Stöd för kinesiska och engelska: Mon-Fri 9:00 till 21:00
 
-Stöd för kinesiska och engelska online (via administrationscentret): 24 timmar om dygnet, 7 dagar i veckan
+Onlinesupport på kinesiska och engelska (via administrationscentret): 24 timmar om dygnet, 7 dagar i veckan

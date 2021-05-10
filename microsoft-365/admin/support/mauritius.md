@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8f8ff0536e991c7481ba19b62235e0f400734284
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 77932e4efa59e84a29f14e8ff0a7c184ba812da5
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545890"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295837"
 ---
 # <a name="contact-support-for-mauritius"></a>Kontakta supporten för Mauritius
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 802 044 0086
@@ -31,7 +31,7 @@ ms.locfileid: "50545890"
 
 Franska: Mon-Fri 23:00–17:00
 
-Engelska: Mon-Fri 23:00–17:00
+Engelska: Mon-Fri 11:00–17:00
 
 ### <a name="technical-support"></a>Teknisk support:
 

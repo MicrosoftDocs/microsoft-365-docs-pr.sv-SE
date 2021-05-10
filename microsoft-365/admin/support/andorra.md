@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9e3d00c2aa5c75af16d627e3c6ee201bd9848362
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 02308bda163702560152f8641812bc15f1fde864
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549070"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296665"
 ---
 # <a name="contact-support-for-andorra"></a>Kontakta supporten för Andorra
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 +1 312 843 5144
@@ -31,7 +31,7 @@ ms.locfileid: "50549070"
 
 Spanska: Mon-Fri 10:00–18:00
 
-Engelska: Mon-Fri 10–18:00
+Engelska: Mon-Fri 10:00–18:00
 
 ### <a name="technical-support"></a>Teknisk support:
 

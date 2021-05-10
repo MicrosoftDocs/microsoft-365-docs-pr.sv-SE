@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 06856070c083d55c9cd787eac693d21cee69f1eb
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 58cd84899c2fcf0d16c54f939da40be0ac5703cb
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546466"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295993"
 ---
 # <a name="contact-support-for-kenya"></a>Kontakta supporten för Kenya
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 020 286 8800
@@ -33,7 +33,7 @@ Ange kod 7704
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Engelska: Mon-Fri 10–18:00
+Engelska: Mon-Fri 10:00–18:00
 
 ### <a name="technical-support"></a>Teknisk support:
 

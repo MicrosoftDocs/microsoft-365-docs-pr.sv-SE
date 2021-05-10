@@ -94,12 +94,14 @@
               href: manage-incidents.md
             - name: Incidentsvar
               items:
-                - name: Analysera incidenter
+                - name: Undersöka incidenter
                   href: investigate-incidents.md
-                - name: Analysera aviseringar
+                - name: Undersöka aviseringar
                   href: investigate-alerts.md
-                - name: Analysera användare
+                - name: Undersöka användare
                   href: investigate-users.md
+                - name: Spelböcker för incidentsvar
+                  href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
                 - name: Svara på din första incident
                   items:
                     - name: Introduktion

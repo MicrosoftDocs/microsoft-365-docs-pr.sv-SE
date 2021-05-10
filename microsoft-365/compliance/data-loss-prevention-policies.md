@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: referensmaterial för dataförlustskydd
-ms.openlocfilehash: a94dde0bba3fdfc869746f51687ed7709a96639a
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: a039b8d99bd92be0040f6207803981e8a2937c6f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52163023"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296774"
 ---
 # <a name="data-loss-prevention-reference"></a>Referens för dataförlustskydd
  
@@ -385,7 +385,7 @@ När du använder en tidigare skapad och publicerad [bevarandeetikett](retention
 
 ### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>Använda en känslighetsetikett som ett villkor i en DLP-princip
 
-Känslighetsetikett som ett villkor i DLP-principer är för närvarande i förhandsgranskning. [Mer information](./dlp-sensitivity-label-as-condition.md).
+[Läs mer](./dlp-sensitivity-label-as-condition.md) om att använda känslighetsetikett som ett villkor i DLP-principer.
   
 ### <a name="how-this-feature-relates-to-other-features"></a>Hur den här funktionen relaterar till andra funktioner
 

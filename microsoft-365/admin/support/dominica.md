@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b205a4f7388670d929dd529a5a715fb2f338f2ba
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 8ddc3f5d9184b7800610b28f03c813cdc7c5faf6
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547742"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296305"
 ---
 # <a name="contact-support-for-dominica"></a>Kontakta supporten för Dominica
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 +1 312 843 5150
@@ -29,7 +29,7 @@ ms.locfileid: "50547742"
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Spanska: Mon-Fri 23:00–17:00
+Spanska: Mon-Fri 11:00–17:00
 
 ### <a name="technical-support"></a>Teknisk support:
 
