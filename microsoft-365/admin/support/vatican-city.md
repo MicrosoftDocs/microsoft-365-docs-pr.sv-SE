@@ -1,5 +1,5 @@
 ---
-title: Supportinformation för Vatikanstaden
+title: Supportinformation för vatikatstaden
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5fcdc7d9890df18fa24c80a2169c75b1300b986c
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 2fbfe46a3f0f99adca974765e370f2bbd766b882
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543514"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52294989"
 ---
-# <a name="contact-support-for-vatican-city"></a>Kontakta supporten för Vatikan city
+# <a name="contact-support-for-vatican-city"></a>Kontakta supporten för vatikatstaden
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 800 917 919
@@ -35,10 +35,10 @@ Engelska: Mon-Fri 9.00–17.00
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Italienska: Mon-Fri 9.00–18.00
+Italienska: Mon-Fri 9:00–18:00
 
 Engelska: mån–sön, dygnet runt
 
-Alternativt telefonnummer: 02 6943 0746
+Alternativ Telefon tal: 02 6943 0746
 
 Lokal samtalsavgift

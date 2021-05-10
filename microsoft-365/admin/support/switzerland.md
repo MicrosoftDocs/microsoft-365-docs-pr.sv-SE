@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 93e61b4da34ebf6e843bef16d1b928a3467243d2
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 98bfea4fb7665a2cee22f704b2f73a9c49ef4a2f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544042"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295133"
 ---
-# <a name="contact-support-for-switzerland"></a>Kontakta support för Schweiz
+# <a name="contact-support-for-switzerland"></a>Kontakta supporten för Schweiz
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 0800 000 300
@@ -29,9 +29,9 @@ ms.locfileid: "50544042"
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Franska: Mon-Fri 9–17
+Franska: Mon-Fri 9:00–17:00
 
-Tyska: Mon-Fri 9.00–17.00
+Tyska: Mon-Fri 9–17
 
 Italienska: Mon-Fri 9–17
 
@@ -43,10 +43,10 @@ Franska: Mon-Fri 08:00–19:00
 
 Tyska: Mon-Fri 08:00–19:00
 
-Italienska: Mon-Fri 08:00–19:00
+Italienska: Mon-Fri 08:00 till 19:00
 
 Engelska: mån–sön, dygnet runt
 
-Alternativt telefonnummer: 022 76 141 14
+Alternativ Telefon tal: 022 76 141 14
 
 Lokal samtalsavgift

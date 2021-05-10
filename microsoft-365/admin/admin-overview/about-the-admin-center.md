@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Du kan använda Administrationscenter för att konfigurera din organisation i molnet, hantera användare och prenumerationer. Kom igång genom att logga in på kontot som har administratörsbehörighet.
-ms.openlocfilehash: f2b8a22019e3292c93d07161f3825dfe90629ccc
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: db88904e16cf9410d3eb4e4aac161f714993150b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241754"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52290989"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Om Administrationscenter för Microsoft 365
 
@@ -64,7 +64,7 @@ Här är funktionerna och inställningarna du hittar i navigeringen till vänste
 |**Grupper** <br/> |Skapa och hantera grupper i organisationen, till exempel en Microsoft 365, distributionsgrupp, säkerhetsgrupp eller delad postlåda. Lär dig [skapa](../create-groups/create-groups.md) och [hantera](../create-groups/manage-groups.md) grupper.  <br/> |
 |**Resurser** <br/> |Skapa och hantera resurser, som en SharePoint-webbplatssamling. Lär dig [skapa webbplatssamlingar](/sharepoint/create-site-collection).  <br/> |
 |**Fakturering** <br/> |Visa köp eller avbryt prenumerationer för en organisation. Visa kontoutdrag eller visa antalet aktiverade licenser för enskilda användare. Läs mer om hur du [hanterar faktureringen](../../commerce/index.yml).  <br/> |
-|**Support** <br/> | Visa befintliga tjänstförfrågningar eller skapa nya. Läs mer under [Kontakta supporten för företagsprodukter – hjälp för administratörer](../contact-support-for-business-products.md). |
+|**Support** <br/> | Visa befintliga tjänstförfrågningar eller skapa nya. Läs mer under [Kontakta supporten för företagsprodukter – hjälp för administratörer](../../business-video/get-help-support.md). |
 |**Inställningar** <br/> |Hantera globala inställningar för program som e-post, webbplatser och Office-paketet. Ändra lösenordsprincip och utgångsdatum. Lägg till och uppdatera domännamn som contoso.com. Ändra organisationens profil och inställningar. Bestäm om partners kan komma åt administrationscenter.  <br/> |
 |**Installation** <br/> |Hantera befintliga domäner, aktivera och hantera multifaktorautentisering, hantera administratörsåtkomst, migrera användarpostlådor till Office 365, hantera funktionsuppdateringar och hjälpa användare att installera Office-programmen. |
 |**Rapporter** <br/> |Få en överblick av hur organisationen använder sig av Microsoft 365 detaljerade rapporter om e-postanvändning, Office aktiveringar och mycket mer. Lär dig använda de nya [aktivitetsrapporterna](../activity-reports/activity-reports.md).  <br/> |

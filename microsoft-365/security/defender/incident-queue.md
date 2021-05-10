@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 47d066fa20abe963f7afaa3b88cecc96fa6e87fc
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: a3b6edda36d2872177d9a88f3259220dcf2e76f3
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259609"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291321"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Prioritera ärenden i Microsoft 365 Defender
 
@@ -83,11 +83,14 @@ I den här tabellen visas de tillgängliga filternamnen.
 | Status | Du kan välja att begränsa listan över incidenter som visas baserat på deras status för att se vilka som är aktiva eller lösta. |
 |||
 
-## <a name="next-step"></a>Nästa steg
+## <a name="next-steps"></a>Nästa steg
 
-När du har fastställt vilken händelse som kräver högsta prioritet markerar du den och påbörjar [analysen.](investigate-incidents.md)
+När du har fastställt vilken händelse som kräver högst prioritet, markerar du den och gör följande:
+
+- [Hantera](manage-incidents.md) egenskaperna för incidenten för taggar, tilldelning till en säkerhetsanalytiker och kommentarer.
+- Påbörja [undersökningen](investigate-incidents.md).
 
 ## <a name="see-also"></a>Se även
 - [Översikt över incidenter](incidents-overview.md)
-- [Analysera incidenter](investigate-incidents.md)
+- [Undersöka incidenter](investigate-incidents.md)
 - [Hantera incidenter](manage-incidents.md)

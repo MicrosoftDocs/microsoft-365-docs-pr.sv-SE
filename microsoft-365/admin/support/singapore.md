@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 452461f2147484b6bf5f034b612afccdd08e1449
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 0f167e1634071eefe6a5563bc1ed0fe92cfcc2d6
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544498"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295409"
 ---
-# <a name="contact-support-for-singapore"></a>Kontakta support för Singapore
+# <a name="contact-support-for-singapore"></a>Kontakta supporten för Singapore
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 1 800 622 1856
@@ -35,6 +35,6 @@ Engelska: Mon-Fri 9.00–18.00
 
 Engelska: mån–sön, dygnet runt
 
-Alternativt telefonnummer: 6622 1855
+Alternativ Telefon tal: 6622 1855
 
 Lokal samtalsavgift

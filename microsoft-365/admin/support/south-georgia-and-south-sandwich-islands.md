@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7da79d5cdd4766b1c0a6b3f0fc4010ec70cd955e
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 70b640939e888095d0df647466595a95a40a902d
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544282"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295361"
 ---
 # <a name="contact-support-for-south-georgia-and-south-sandwich-islands"></a>Kontakta supporten för Sydgeorgien och Sydsandwichöarna
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 +1 312 843 5145
@@ -29,7 +29,7 @@ ms.locfileid: "50544282"
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Engelska: Mon-Fri 23:00–17:00
+Engelska: Mon-Fri 11:00–17:00
 
 ### <a name="technical-support"></a>Teknisk support:
 

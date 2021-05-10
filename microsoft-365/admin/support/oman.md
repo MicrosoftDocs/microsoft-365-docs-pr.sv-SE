@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7029df1c1ab6011fe4a1aaa72a02efa69d57db5d
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 8a0a5119fd0ff3ea12774513e3fad3bd8c91a514
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545254"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295621"
 ---
-# <a name="contact-support-for-oman"></a>Kontakta support för Oman
+# <a name="contact-support-for-oman"></a>Kontakta supporten för Oman
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 800 73332
@@ -35,12 +35,12 @@ Ange kod 7702
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Arabiska: Sun-Thu 10.00–18.00
+Arabiska: Sun-Thu 10–18
 
-Engelska: Mon-Fri 10–18:00
+Engelska: Mon-Fri 10:00–18:00
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Arabiska: Sun-Thu 23:00–18:00
+Arabiska: Sun-Thu 20.00–18.00
 
 Engelska: mån–sön, dygnet runt

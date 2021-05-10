@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9d8b650e9e1d0579907b4bd32b87ce0a1e98ff23
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 949cd97a06d936021678380ccf5ec6fc4da08d50
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544102"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295157"
 ---
 # <a name="contact-support-for-suriname"></a>Kontakta supporten för Suriname
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 +1 312 843 5146
@@ -29,9 +29,9 @@ ms.locfileid: "50544102"
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Nederländska: Mon-Fri 17:00–17:00
+Nederländska: Mon-Fri 5–1 EM
 
-Engelska: Mon-Fri 17.00–18.00
+Engelska: Mon-Fri 17.00–17.00
 
 ### <a name="technical-support"></a>Teknisk support:
 

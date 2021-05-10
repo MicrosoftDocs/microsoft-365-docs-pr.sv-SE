@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7485a4650eef146cff0492513d5c1824ad774292
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 41701c1a8f4aa14019025c373ce92b91487c2a25
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545086"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295565"
 ---
-# <a name="contact-support-for-paraguay"></a>Kontakta support för Paraguay
+# <a name="contact-support-for-paraguay"></a>Kontakta supporten för Paraguay
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 009 800 441 0088
@@ -29,7 +29,7 @@ ms.locfileid: "50545086"
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Spanska: Mon-Fri 9.00–17.00
+Spanska: Mon-Fri 9–17
 
 ### <a name="technical-support"></a>Teknisk support:
 

@@ -1,5 +1,5 @@
 ---
-title: Supportinformation för Namibia
+title: Supportinformation för Zambia
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 680d0bdcd558eca0691a9c0329ef8e91f08680ed
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 8eb8d01b9bdee78720daf18fb60d680e0a10ec01
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549262"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52294953"
 ---
-# <a name="contact-support-for-zambia"></a>Kontakta supporten för Namibia
+# <a name="contact-support-for-zambia"></a>Kontakta supporten för Zambia
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 +27 21 427 3315

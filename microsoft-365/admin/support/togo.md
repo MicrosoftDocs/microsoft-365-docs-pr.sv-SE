@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8e126f8cdff6233522e94b4013703e5cda59b785
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 251242c4e2ce64263c8ad920d1de7f0b751c2fb8
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543898"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295097"
 ---
 # <a name="contact-support-for-togo"></a>Kontakta support för Togo
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 +1 312 843 5147
@@ -31,7 +31,7 @@ ms.locfileid: "50543898"
 
 Franska: Mon-Fri 08:00–04:00
 
-Engelska: Mon-Fri 08:00-04:00
+Engelska: Mon-Fri 08:00–04:00
 
 ### <a name="technical-support"></a>Teknisk support:
 
