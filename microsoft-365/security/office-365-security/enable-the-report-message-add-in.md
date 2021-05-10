@@ -1,9 +1,9 @@
 ---
-title: Aktivera tillägget för att rapportera meddelande
+title: Aktivera rapportmeddelandet eller tilläggen för nätfiske
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: siosulli
+author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: how-to
@@ -14,163 +14,217 @@ search.appverid:
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
-description: Lär dig hur du aktiverar tillägget Rapportmeddelande för Outlook och Outlook på webben för enskilda användare eller hela organisationen.
+description: Läs om hur du aktiverar tilläggen Rapportmeddelande eller Rapport nätfiske för Outlook och Outlook på webben, för enskilda användare eller för hela organisationen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4e85af902eaaa41eb82acf8d4b4baedc538e7888
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: dc54c5b74697ac41a1d4ff0818467dba662b31f5
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207040"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295825"
 ---
-# <a name="enable-the-report-message-add-in"></a><span data-ttu-id="5106d-103">Aktivera tillägget för att rapportera meddelande</span><span class="sxs-lookup"><span data-stu-id="5106d-103">Enable the Report Message add-in</span></span>
+# <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a><span data-ttu-id="fdf04-103">Aktivera rapportmeddelandet eller tilläggen för nätfiske</span><span class="sxs-lookup"><span data-stu-id="fdf04-103">Enable the Report Message or the Report Phishing add-ins</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-<span data-ttu-id="5106d-104">**Gäller för**</span><span class="sxs-lookup"><span data-stu-id="5106d-104">**Applies to**</span></span>
-- [<span data-ttu-id="5106d-105">Exchange Online Protection</span><span class="sxs-lookup"><span data-stu-id="5106d-105">Exchange Online Protection</span></span>](exchange-online-protection-overview.md)
-- [<span data-ttu-id="5106d-106">Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2</span><span class="sxs-lookup"><span data-stu-id="5106d-106">Microsoft Defender for Office 365 plan 1 and plan 2</span></span>](defender-for-office-365.md)
-- [<span data-ttu-id="5106d-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="5106d-107">Microsoft 365 Defender</span></span>](../defender/microsoft-365-defender.md)
+<span data-ttu-id="fdf04-104">**Gäller för**</span><span class="sxs-lookup"><span data-stu-id="fdf04-104">**Applies to**</span></span>
+- [<span data-ttu-id="fdf04-105">Exchange Online Protection</span><span class="sxs-lookup"><span data-stu-id="fdf04-105">Exchange Online Protection</span></span>](exchange-online-protection-overview.md)
+- [<span data-ttu-id="fdf04-106">Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2</span><span class="sxs-lookup"><span data-stu-id="fdf04-106">Microsoft Defender for Office 365 plan 1 and plan 2</span></span>](defender-for-office-365.md)
+- [<span data-ttu-id="fdf04-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="fdf04-107">Microsoft 365 Defender</span></span>](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> <span data-ttu-id="5106d-108">Om du är administratör i en Microsoft 365-organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen för inskickade inskickade material i Säkerhets- & efterlevnadscenter.</span><span class="sxs-lookup"><span data-stu-id="5106d-108">If you're an admin in a Microsoft 365 organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Security & Compliance Center.</span></span> <span data-ttu-id="5106d-109">Mer information finns i Använda [administratörsinskick för att skicka misstänkt skräppost, nättr ut, URL:er och filer till Microsoft.](admin-submission.md)</span><span class="sxs-lookup"><span data-stu-id="5106d-109">For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).</span></span>
+> <span data-ttu-id="fdf04-108">Om du är administratör i en Microsoft 365 organisation med Exchange Online postlådor rekommenderar vi att du använder portalen för inskickade inskickade material i Säkerhets- & efterlevnadscenter.</span><span class="sxs-lookup"><span data-stu-id="fdf04-108">If you're an admin in a Microsoft 365 organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Security & Compliance Center.</span></span> <span data-ttu-id="fdf04-109">Mer information finns i Använda [administratörsinskick för att skicka misstänkt skräppost, nättr ut, URL:er och filer till Microsoft.](admin-submission.md)</span><span class="sxs-lookup"><span data-stu-id="fdf04-109">For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).</span></span>
 
-<span data-ttu-id="5106d-110">Med tilläggen Rapportmeddelande och Rapport nätfiske för Outlook och Outlook på webben (tidigare kallat Outlook Web App) kan användare enkelt rapportera falska positiva resultat (bra e-post markerad som dålig) eller falska negativa (felaktig e-post tillåten) till Microsoft och dess dotterbolag för analys.</span><span class="sxs-lookup"><span data-stu-id="5106d-110">The Report Message and Report Phishing add-ins for Outlook and Outlook on the web (formerly known as Outlook Web App) enables people to easily report false positives (good email marked as bad) or false negatives (bad email allowed) to Microsoft and its affiliates for analysis.</span></span>
+<span data-ttu-id="fdf04-110">Med tilläggen Rapportmeddelande och Rapport om nätfiske för Outlook och Outlook på webben (tidigare kallat Outlook Web App) kan användare enkelt rapportera falska positiva meddelanden (bra e-postmeddelanden som markerats som dåliga) eller falska negativa (felaktig e-post tillåts) till Microsoft och dess dotterbolag för analys.</span><span class="sxs-lookup"><span data-stu-id="fdf04-110">The Report Message and Report Phishing add-ins for Outlook and Outlook on the web (formerly known as Outlook Web App) enable people to easily report false positives (good email marked as bad) or false negatives (bad email allowed) to Microsoft and its affiliates for analysis.</span></span> 
 
-<span data-ttu-id="5106d-111">Microsoft använder dessa inskickade material för att göra e-postskyddstekniken mer effektiv.</span><span class="sxs-lookup"><span data-stu-id="5106d-111">Microsoft uses these submissions to improve the effectiveness of email protection technologies.</span></span> <span data-ttu-id="5106d-112">Om personer till exempel rapporterar många meddelanden som flaggats som skräppost med hjälp av tillägget Rapportmeddelande kan din organisations säkerhetsgrupp behöva justera principerna för skydd mot [skräppost.](configure-your-spam-filter-policies.md)</span><span class="sxs-lookup"><span data-stu-id="5106d-112">For example, if people are reporting a lot of messages that were flagged as junk mail as Not Junk by using the Report Message add-in, your organization's security team might need to adjust [anti-spam policies](configure-your-spam-filter-policies.md).</span></span>
+<span data-ttu-id="fdf04-111">Microsoft använder dessa inskickade material för att göra e-postskyddstekniken mer effektiv.</span><span class="sxs-lookup"><span data-stu-id="fdf04-111">Microsoft uses these submissions to improve the effectiveness of email protection technologies.</span></span> <span data-ttu-id="fdf04-112">Anta till exempel att personer rapporterar många meddelanden med hjälp av tillägget Rapport om nätfiske.</span><span class="sxs-lookup"><span data-stu-id="fdf04-112">For example, suppose that people are reporting many messages using the Report Phishing add-in.</span></span> <span data-ttu-id="fdf04-113">Den här informationen visas i säkerhetspanelen och andra rapporter.</span><span class="sxs-lookup"><span data-stu-id="fdf04-113">This information surfaces in the Security Dashboard and other reports.</span></span> <span data-ttu-id="fdf04-114">Din organisations säkerhetsgrupp kan använda den här informationen som en indikation på att principer mot nätfiske kan behöva uppdateras.</span><span class="sxs-lookup"><span data-stu-id="fdf04-114">Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.</span></span> 
 
-<span data-ttu-id="5106d-113">Du kan installera antingen tillägget Rapportmeddelande eller Rapportera nätfiske.</span><span class="sxs-lookup"><span data-stu-id="5106d-113">You can install either the Report Message or Report Phishing add-in.</span></span> <span data-ttu-id="5106d-114">Om du vill att användarna endast ska rapportera nätfiskemeddelanden distribuerar du tillägget Rapport nätfiske i organisationen.</span><span class="sxs-lookup"><span data-stu-id="5106d-114">If you want your users to report only phishing messages, deploy the Report Phishing add-in in your organization.</span></span> <span data-ttu-id="5106d-115">Mer information finns i [Aktivera tillägget Rapport nätfiske.](enable-the-report-phish-add-in.md)</span><span class="sxs-lookup"><span data-stu-id="5106d-115">For more information, see [Enable the Report Phishing add-in](enable-the-report-phish-add-in.md).</span></span>
+<span data-ttu-id="fdf04-115">Du kan installera antingen tillägget Rapportmeddelande eller Rapportera nätfiske.</span><span class="sxs-lookup"><span data-stu-id="fdf04-115">You can install either the Report Message or Report Phishing add-in.</span></span> <span data-ttu-id="fdf04-116">Om du vill att användarna ska rapportera både skräppost och nätfiske distribuerar du tillägget Rapportmeddelande i organisationen.</span><span class="sxs-lookup"><span data-stu-id="fdf04-116">If you want your users to report both spam and phishing messages, deploy the Report Message add-in in your organization.</span></span> <span data-ttu-id="fdf04-117">Mer information finns i Aktivera tillägget Rapportmeddelande.</span><span class="sxs-lookup"><span data-stu-id="fdf04-117">For more information, see Enable the Report Message add-in.</span></span> 
 
-<span data-ttu-id="5106d-116">Via tillägget Rapportmeddelande kan du rapportera både skräppost och nätfiske.</span><span class="sxs-lookup"><span data-stu-id="5106d-116">The Report Message add-in provides the option to report both spam and phishing messages.</span></span> <span data-ttu-id="5106d-117">Administratörer kan aktivera tillägget Rapportmeddelande för organisationen och enskilda användare kan installera det själva.</span><span class="sxs-lookup"><span data-stu-id="5106d-117">Admins can enable the Report Message add-in for the organization, and individual users can install it for themselves.</span></span>
+<span data-ttu-id="fdf04-118">Via tillägget Rapportmeddelande kan du rapportera både skräppost och nätfiske.</span><span class="sxs-lookup"><span data-stu-id="fdf04-118">The Report Message add-in provides the option to report both spam and phishing messages.</span></span> <span data-ttu-id="fdf04-119">Administratörer kan aktivera tillägget Rapportmeddelande för organisationen och enskilda användare kan installera det själva.</span><span class="sxs-lookup"><span data-stu-id="fdf04-119">Admins can enable the Report Message add-in for the organization, and individual users can install it for themselves.</span></span> 
 
-<span data-ttu-id="5106d-118">Om du är enskild användare kan du [aktivera tillägget Rapportmeddelande åt dig själv.](#get-the-report-message-add-in-for-yourself)</span><span class="sxs-lookup"><span data-stu-id="5106d-118">If you're an individual user, you can [enable the Report Message add-in for yourself](#get-the-report-message-add-in-for-yourself).</span></span>
+<span data-ttu-id="fdf04-120">Tillägget Rapport nätfiske ger möjlighet att endast rapportera nätfiskemeddelanden.</span><span class="sxs-lookup"><span data-stu-id="fdf04-120">The Report Phishing add-in provides the option to report only phishing messages.</span></span> <span data-ttu-id="fdf04-121">Administratörer kan aktivera tillägget Rapport nätfiske för organisationen, och enskilda användare kan installera det själva.</span><span class="sxs-lookup"><span data-stu-id="fdf04-121">Admins can enable the Report Phishing add-in for the organization, and individual users can install it for themselves.</span></span> 
 
-<span data-ttu-id="5106d-119">Om du är global administratör eller Exchange [Online-administratör](#get-and-enable-the-report-message-add-in-for-your-organization)och Exchange är konfigurerat att använda OAuth-autentisering kan du aktivera tillägget Rapportmeddelande för organisationen.</span><span class="sxs-lookup"><span data-stu-id="5106d-119">If you're a global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can [enable the Report Message add-in for your organization](#get-and-enable-the-report-message-add-in-for-your-organization).</span></span> <span data-ttu-id="5106d-120">Meddelande om Add-In är nu tillgänglig via [centraliserad distribution.](../../admin/manage/centralized-deployment-of-add-ins.md)</span><span class="sxs-lookup"><span data-stu-id="5106d-120">The Report Message Add-In is now available through [Centralized Deployment](../../admin/manage/centralized-deployment-of-add-ins.md).</span></span>
+<span data-ttu-id="fdf04-122">Om du är enskild användare kan du aktivera båda tilläggen själv.</span><span class="sxs-lookup"><span data-stu-id="fdf04-122">If you're an individual user, you can enable both the add-ins for yourself.</span></span>
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="5106d-121">Vad behöver jag veta innan jag börjar?</span><span class="sxs-lookup"><span data-stu-id="5106d-121">What do you need to know before you begin?</span></span>
+<span data-ttu-id="fdf04-123">om du är global administratör eller Exchange Online-administratör och Exchange är konfigurerat till att använda OAuth-autentisering kan du aktivera tillägget Rapportmeddelande och tillägget Rapportfiske för organisationen.</span><span class="sxs-lookup"><span data-stu-id="fdf04-123">f you're a global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can enable the Report Message add-in and the Report Phishing add-in for your organization.</span></span> <span data-ttu-id="fdf04-124">Båda tilläggen är nu tillgängliga via [centraliserad distribution.](../../admin/manage/centralized-deployment-of-add-ins.md)</span><span class="sxs-lookup"><span data-stu-id="fdf04-124">Both add-ins are now available through [Centralized Deployment](../../admin/manage/centralized-deployment-of-add-ins.md).</span></span>
 
-- <span data-ttu-id="5106d-122">Tillägget Rapportmeddelande fungerar med de flesta Microsoft 365-prenumerationer och följande produkter:</span><span class="sxs-lookup"><span data-stu-id="5106d-122">The Report Message add-in works with most Microsoft 365 subscriptions and the following products:</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="fdf04-125">Vad behöver jag veta innan jag börjar?</span><span class="sxs-lookup"><span data-stu-id="fdf04-125">What do you need to know before you begin?</span></span>
 
-  - <span data-ttu-id="5106d-123">Outlook på webben</span><span class="sxs-lookup"><span data-stu-id="5106d-123">Outlook on the web</span></span>
-  - <span data-ttu-id="5106d-124">Outlook 2013 SP1 eller senare</span><span class="sxs-lookup"><span data-stu-id="5106d-124">Outlook 2013 SP1 or later</span></span>
-  - <span data-ttu-id="5106d-125">Outlook 2016 för Mac</span><span class="sxs-lookup"><span data-stu-id="5106d-125">Outlook 2016 for Mac</span></span>
-  - <span data-ttu-id="5106d-126">Outlook ingår i Microsoft 365-appar för företag</span><span class="sxs-lookup"><span data-stu-id="5106d-126">Outlook included with Microsoft 365 apps for Enterprise</span></span>
-  - <span data-ttu-id="5106d-127">Outlook-appen för iOS och Android</span><span class="sxs-lookup"><span data-stu-id="5106d-127">Outlook app for iOS and Android</span></span>
+- <span data-ttu-id="fdf04-126">Både tillägget Rapportmeddelande och tillägget Rapportfiske fungerar med de flesta Microsoft 365 prenumerationer och följande produkter:</span><span class="sxs-lookup"><span data-stu-id="fdf04-126">Both the Report Message add-in and the Report Phishing add-in works with most Microsoft 365 subscriptions and the following products:</span></span>
 
-- <span data-ttu-id="5106d-128">Tillägget Rapportmeddelande är inte tillgängligt för delade postlådor eller postlådor i lokala Exchange-organisationer.</span><span class="sxs-lookup"><span data-stu-id="5106d-128">The Report Message add-in is not available for shared mailboxes or mailboxes in on-premises Exchange organizations.</span></span>
+  - <span data-ttu-id="fdf04-127">Outlook på webben</span><span class="sxs-lookup"><span data-stu-id="fdf04-127">Outlook on the web</span></span>
+  - <span data-ttu-id="fdf04-128">Outlook 2013 SP1 eller senare</span><span class="sxs-lookup"><span data-stu-id="fdf04-128">Outlook 2013 SP1 or later</span></span>
+  - <span data-ttu-id="fdf04-129">Outlook 2016 för Mac</span><span class="sxs-lookup"><span data-stu-id="fdf04-129">Outlook 2016 for Mac</span></span>
+  - <span data-ttu-id="fdf04-130">Outlook ingår i Microsoft 365 för företag</span><span class="sxs-lookup"><span data-stu-id="fdf04-130">Outlook included with Microsoft 365 apps for Enterprise</span></span>
+  - <span data-ttu-id="fdf04-131">Outlook för iOS och Android</span><span class="sxs-lookup"><span data-stu-id="fdf04-131">Outlook app for iOS and Android</span></span>
 
-- <span data-ttu-id="5106d-129">Du kan konfigurera rapporterade meddelanden så att de kopieras eller omdirigeras till en postlåda som du anger.</span><span class="sxs-lookup"><span data-stu-id="5106d-129">You can configure reported messages to be copied or redirected to a mailbox that you specify.</span></span> <span data-ttu-id="5106d-130">Mer information finns i Principer [för användarinskick.](user-submission.md)</span><span class="sxs-lookup"><span data-stu-id="5106d-130">For more information, see [User submissions policies](user-submission.md).</span></span>
+- <span data-ttu-id="fdf04-132">Båda tilläggen är inte tillgängliga för delade postlådor eller postlådor i lokala Exchange organisationer.</span><span class="sxs-lookup"><span data-stu-id="fdf04-132">Both add-ins are not available for shared mailboxes or mailboxes in on-premises Exchange organizations.</span></span>
 
-- <span data-ttu-id="5106d-131">Din befintliga webbläsare bör fungera med tillägget Rapportmeddelande.</span><span class="sxs-lookup"><span data-stu-id="5106d-131">Your existing web browser should work with the Report Message add-in.</span></span> <span data-ttu-id="5106d-132">Om du märker att tillägget inte är tillgängligt eller inte fungerar som förväntat kan du prova en annan webbläsare.</span><span class="sxs-lookup"><span data-stu-id="5106d-132">But, if you notice the add-in is not available or not working as expected, try a different browser.</span></span>
+- <span data-ttu-id="fdf04-133">Din befintliga webbläsare bör fungera med tilläggen Rapportmeddelande och Rapportera nätfiske. Om du märker att tillägget inte är tillgängligt eller inte fungerar som förväntat kan du prova en annan webbläsare.</span><span class="sxs-lookup"><span data-stu-id="fdf04-133">Your existing web browser should work with both the Report Message and Report Phishing add-ins. But, if you notice the add-in is not available or not working as expected, try a different browser.</span></span>
 
-- <span data-ttu-id="5106d-133">För organisationsinstallationer måste organisationen konfigureras för att använda OAuth-autentisering.</span><span class="sxs-lookup"><span data-stu-id="5106d-133">For organizational installs, the organization needs to be configured to use OAuth authentication.</span></span> <span data-ttu-id="5106d-134">Mer information finns i [Avgöra om centraliserad distribution av tillägg fungerar för din organisation.](../../admin/manage/centralized-deployment-of-add-ins.md)</span><span class="sxs-lookup"><span data-stu-id="5106d-134">For more information, see [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).</span></span>
+- <span data-ttu-id="fdf04-134">För organisationsinstallationer måste organisationen konfigureras för att använda OAuth-autentisering.</span><span class="sxs-lookup"><span data-stu-id="fdf04-134">For organizational installs, the organization needs to be configured to use OAuth authentication.</span></span> <span data-ttu-id="fdf04-135">Mer information finns i [Avgöra om centraliserad distribution av tillägg fungerar för din organisation.](../../admin/manage/centralized-deployment-of-add-ins.md)</span><span class="sxs-lookup"><span data-stu-id="fdf04-135">For more information, see [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).</span></span>
 
-- <span data-ttu-id="5106d-135">Administratörer måste vara medlemmar i rollgruppen Globala administratörer.</span><span class="sxs-lookup"><span data-stu-id="5106d-135">Admins need to be a member of the Global admins role group.</span></span> <span data-ttu-id="5106d-136">Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).</span><span class="sxs-lookup"><span data-stu-id="5106d-136">For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+- <span data-ttu-id="fdf04-136">Administratörer måste vara medlemmar i rollgruppen Globala administratörer.</span><span class="sxs-lookup"><span data-stu-id="fdf04-136">Admins need to be a member of the Global admins role group.</span></span> <span data-ttu-id="fdf04-137">Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).</span><span class="sxs-lookup"><span data-stu-id="fdf04-137">For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
 
-## <a name="get-the-report-message-add-in-for-yourself"></a><span data-ttu-id="5106d-137">Skaffa tillägget Rapportmeddelande åt dig själv</span><span class="sxs-lookup"><span data-stu-id="5106d-137">Get the Report Message add-in for yourself</span></span>
+- <span data-ttu-id="fdf04-138">Mer information om hur du rapporterar ett meddelande med hjälp av funktionen Rapportmeddelande finns i Rapportera falska positiva och falska [negativa resultat i Outlook](report-false-positives-and-false-negatives.md).</span><span class="sxs-lookup"><span data-stu-id="fdf04-138">For more information on how to report a message using the Report Message feature, see [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).</span></span>
 
-1. <span data-ttu-id="5106d-138">Gå till Microsoft AppSource på <https://appsource.microsoft.com/marketplace/apps> och sök efter tillägget Rapportmeddelande.</span><span class="sxs-lookup"><span data-stu-id="5106d-138">Go to the Microsoft AppSource at <https://appsource.microsoft.com/marketplace/apps> and search for the Report Message add-in.</span></span> <span data-ttu-id="5106d-139">Gå direkt till tillägget Rapportmeddelande genom att gå till <https://appsource.microsoft.com/product/office/wa104381180> .</span><span class="sxs-lookup"><span data-stu-id="5106d-139">To go directly to the Report Message add-in, go to <https://appsource.microsoft.com/product/office/wa104381180>.</span></span>
+## <a name="get-the-report-message-add-in"></a><span data-ttu-id="fdf04-139">Hämta tillägget Rapportmeddelande</span><span class="sxs-lookup"><span data-stu-id="fdf04-139">Get the Report Message add-in</span></span>
 
-2. <span data-ttu-id="5106d-140">Klicka **på HÄMTA NU.**</span><span class="sxs-lookup"><span data-stu-id="5106d-140">Click **GET IT NOW**.</span></span>
+### <a name="get-the-add-in-for-yourself"></a><span data-ttu-id="fdf04-140">Skaffa tillägget åt dig själv</span><span class="sxs-lookup"><span data-stu-id="fdf04-140">Get the add-in for yourself</span></span>
+
+1. <span data-ttu-id="fdf04-141">Gå till Microsoft AppSource på <https://appsource.microsoft.com/marketplace/apps> och sök efter tillägget Rapportmeddelande.</span><span class="sxs-lookup"><span data-stu-id="fdf04-141">Go to the Microsoft AppSource at <https://appsource.microsoft.com/marketplace/apps> and search for the Report Message add-in.</span></span> <span data-ttu-id="fdf04-142">Gå direkt till tillägget Rapportmeddelande genom att gå till <https://appsource.microsoft.com/product/office/wa104381180> .</span><span class="sxs-lookup"><span data-stu-id="fdf04-142">To go directly to the Report Message add-in, go to <https://appsource.microsoft.com/product/office/wa104381180>.</span></span>
+
+2. <span data-ttu-id="fdf04-143">Klicka **på HÄMTA NU.**</span><span class="sxs-lookup"><span data-stu-id="fdf04-143">Click **GET IT NOW**.</span></span>
 
    ![Rapportmeddelande – skaffa det nu](../../media/ReportMessageGETITNOW.png)
 
-3. <span data-ttu-id="5106d-142">I dialogrutan som visas granskar du användningsvillkoren och sekretesspolicyn och klickar sedan på **Fortsätt.**</span><span class="sxs-lookup"><span data-stu-id="5106d-142">In the dialog that appears, review the terms of use and privacy policy, and then click **Continue**.</span></span>
+3. <span data-ttu-id="fdf04-145">I dialogrutan som visas granskar du användningsvillkoren och sekretesspolicyn och klickar sedan på **Fortsätt.**</span><span class="sxs-lookup"><span data-stu-id="fdf04-145">In the dialog that appears, review the terms of use and privacy policy, and then click **Continue**.</span></span>
 
-4. <span data-ttu-id="5106d-143">Logga in med ditt arbets- eller skolkonto (för företagsanvändning) eller ditt Microsoft-konto (för personlig användning).</span><span class="sxs-lookup"><span data-stu-id="5106d-143">Sign in using your work or school account (for business use) or your Microsoft account (for personal use).</span></span>
+4. <span data-ttu-id="fdf04-146">Logga in med ditt arbets- eller skolkonto (för företagsanvändning) eller ditt Microsoft-konto (för personlig användning).</span><span class="sxs-lookup"><span data-stu-id="fdf04-146">Sign in using your work or school account (for business use) or your Microsoft account (for personal use).</span></span>
 
-<span data-ttu-id="5106d-144">När tillägget har installerats och aktiverats visas följande ikoner:</span><span class="sxs-lookup"><span data-stu-id="5106d-144">After the add-in is installed and enabled, you'll see the following icons:</span></span>
+<span data-ttu-id="fdf04-147">När tillägget har installerats och aktiverats visas följande ikoner:</span><span class="sxs-lookup"><span data-stu-id="fdf04-147">After the add-in is installed and enabled, you'll see the following icons:</span></span>
 
-- <span data-ttu-id="5106d-145">Ikonen ser ut så här i Outlook:</span><span class="sxs-lookup"><span data-stu-id="5106d-145">In Outlook, the icon looks like this:</span></span>
+- <span data-ttu-id="fdf04-148">I Outlook ser ikonen ut så här:</span><span class="sxs-lookup"><span data-stu-id="fdf04-148">In Outlook, the icon looks like this:</span></span>
 
-  ![Ikonen för tillägget Rapportmeddelande för Outlook](../../media/OutlookReportMessageIcon.png)
+  > [!div class="mx-imgBorder"]
+  > <span data-ttu-id="fdf04-149">![Ikonen för tillägget Rapportmeddelande för Outlook](../../media/OutlookReportMessageIcon.png)</span><span class="sxs-lookup"><span data-stu-id="fdf04-149">![Report Message add-in icon for Outlook](../../media/OutlookReportMessageIcon.png)</span></span>
 
-- <span data-ttu-id="5106d-147">Ikonen ser ut så här i Outlook på webben:</span><span class="sxs-lookup"><span data-stu-id="5106d-147">In Outlook on the web, the icon looks like this:</span></span>
+- <span data-ttu-id="fdf04-150">I Outlook på webben ser ikonen ut så här:</span><span class="sxs-lookup"><span data-stu-id="fdf04-150">In Outlook on the web, the icon looks like this:</span></span>
 
-  ![Tilläggsikon för meddelande i Outlook på webben](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+  > [!div class="mx-imgBorder"]
+  > <span data-ttu-id="fdf04-151">![Outlook på webbikonen Rapportmeddelande](../../media/owa-report-message-icon.png)</span><span class="sxs-lookup"><span data-stu-id="fdf04-151">![Outlook on the web Report Message add-in icon](../../media/owa-report-message-icon.png)</span></span>
 
-<span data-ttu-id="5106d-149">Mer information om hur du använder tillägget finns i [Använda tillägget Rapportmeddelande.](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)</span><span class="sxs-lookup"><span data-stu-id="5106d-149">To learn how to use the add-in, see [Use the Report Message add-in](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
-
-## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a><span data-ttu-id="5106d-150">Hämta och aktivera tillägget Rapportmeddelande för din organisation</span><span class="sxs-lookup"><span data-stu-id="5106d-150">Get and enable the Report Message add-in for your organization</span></span>
+### <a name="get-the-add-in-for-your-organization"></a><span data-ttu-id="fdf04-152">Hämta tillägget för din organisation</span><span class="sxs-lookup"><span data-stu-id="fdf04-152">Get the add-in for your organization</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="5106d-151">Det kan ta upp till 12 timmar innan tillägget visas i organisationen.</span><span class="sxs-lookup"><span data-stu-id="5106d-151">It could take up to 12 hours for the add-in to appear in your organization.</span></span>
+> <span data-ttu-id="fdf04-153">Det kan ta upp till 12 timmar innan tillägget visas i organisationen.</span><span class="sxs-lookup"><span data-stu-id="fdf04-153">It could take up to 12 hours for the add-in to appear in your organization.</span></span>
 
-1. <span data-ttu-id="5106d-152">I administrationscentret för Microsoft 365 går  du till sidan Inställningar tillägg på . Om tilläggssidan inte visas går du till länken Tillägg för inställningar integrerade appar högst upp på sidan Integrerade \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>   \>  \>  appar. </span><span class="sxs-lookup"><span data-stu-id="5106d-152">In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>, If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the **Integrated apps** page.</span></span>
+1. <span data-ttu-id="fdf04-154">I Microsoft 365 administrationscentret går du till sidan **Inställningar** tillägg \>  på <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> .</span><span class="sxs-lookup"><span data-stu-id="fdf04-154">In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>.</span></span> <span data-ttu-id="fdf04-155">Om du inte ser  tilläggssidan går du till **länken Inställningar** Tillägg för integrerade appar högst upp på sidan \>  \>  **Integrerade** appar.</span><span class="sxs-lookup"><span data-stu-id="fdf04-155">If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the **Integrated apps** page.</span></span>
 
-2. <span data-ttu-id="5106d-153">Välj **Distribuera tillägg** högst upp på sidan och välj sedan **Nästa.**</span><span class="sxs-lookup"><span data-stu-id="5106d-153">Select **Deploy Add-in** at the top of the page, and then select **Next**.</span></span>
+2. <span data-ttu-id="fdf04-156">Välj **Distribuera tillägg** högst upp på sidan och välj sedan **Nästa.**</span><span class="sxs-lookup"><span data-stu-id="fdf04-156">Select **Deploy Add-in** at the top of the page, and then select **Next**.</span></span>
 
-   ![Sidan Tjänster och tillägg i administrationscentret för Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Sidan Tjänster och tillägg i Microsoft 365 administrationscenter](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-3. <span data-ttu-id="5106d-155">I den **utfällbaserade menyn** Distribuera ett nytt tillägg som visas granskar du informationen och klickar sedan på **Nästa.**</span><span class="sxs-lookup"><span data-stu-id="5106d-155">In the **Deploy a new add-in** flyout that appears, review the information, and then click **Next**.</span></span>
+3. <span data-ttu-id="fdf04-158">I den **utfällbaserade menyn** Distribuera ett nytt tillägg som visas granskar du informationen och klickar sedan på **Nästa.**</span><span class="sxs-lookup"><span data-stu-id="fdf04-158">In the **Deploy a new add-in** flyout that appears, review the information, and then click **Next**.</span></span>
 
-4. <span data-ttu-id="5106d-156">Klicka på Välj från **Store på nästa sida.**</span><span class="sxs-lookup"><span data-stu-id="5106d-156">On the next page, click **Choose from the Store**.</span></span>
+4. <span data-ttu-id="fdf04-159">Klicka på Välj från **Store på nästa sida.**</span><span class="sxs-lookup"><span data-stu-id="fdf04-159">On the next page, click **Choose from the Store**.</span></span>
 
    ![Distribuera en ny tilläggssida](../../media/NewAddInScreen2.png)
 
-5. <span data-ttu-id="5106d-158">På sidan **Välj tillägg som visas** klickar du i rutan **Sök,** skriver **Rapportmeddelande** och klickar sedan på **sökikonen** ![ ](../../media/search-icon.png) .</span><span class="sxs-lookup"><span data-stu-id="5106d-158">In the **Select add-in** page that appears, click in the **Search** box, enter **Report Message**, and then click **Search** ![Search icon](../../media/search-icon.png).</span></span> <span data-ttu-id="5106d-159">Leta rätt på Rapportmeddelande i **resultatlistan och klicka** sedan på Lägg **till**.</span><span class="sxs-lookup"><span data-stu-id="5106d-159">In the list of results, find **Report Message** and then click **Add**.</span></span>
+5. <span data-ttu-id="fdf04-161">På sidan **Välj tillägg som visas** klickar du i rutan **Sök,** skriver **Rapportmeddelande** och klickar sedan på **sökikonen** ![ ](../../media/search-icon.png) .</span><span class="sxs-lookup"><span data-stu-id="fdf04-161">In the **Select add-in** page that appears, click in the **Search** box, enter **Report Message**, and then click **Search** ![Search icon](../../media/search-icon.png).</span></span> <span data-ttu-id="fdf04-162">Leta rätt på Rapportmeddelande i **resultatlistan och klicka** sedan på Lägg **till**.</span><span class="sxs-lookup"><span data-stu-id="fdf04-162">In the list of results, find **Report Message** and then click **Add**.</span></span>
 
    ![Välj sökresultat för tillägg](../../media/NewAddInScreen3.png)
 
-6. <span data-ttu-id="5106d-161">I dialogrutan som visas granskar du licens- och sekretessinformationen och klickar sedan på **Fortsätt.**</span><span class="sxs-lookup"><span data-stu-id="5106d-161">In the dialog that appears, review the licensing and privacy information, and then click **Continue**.</span></span>
+6. <span data-ttu-id="fdf04-164">I dialogrutan som visas granskar du licens- och sekretessinformationen och klickar sedan på **Fortsätt.**</span><span class="sxs-lookup"><span data-stu-id="fdf04-164">In the dialog that appears, review the licensing and privacy information, and then click **Continue**.</span></span>
 
-7. <span data-ttu-id="5106d-162">Konfigurera **följande inställningar på sidan** Konfigurera tillägget som visas:</span><span class="sxs-lookup"><span data-stu-id="5106d-162">In the **Configure add-in** page that appears, configure the following settings:</span></span>
+7. <span data-ttu-id="fdf04-165">Konfigurera **följande inställningar på sidan** Konfigurera tillägget som visas:</span><span class="sxs-lookup"><span data-stu-id="fdf04-165">In the **Configure add-in** page that appears, configure the following settings:</span></span>
 
-   - <span data-ttu-id="5106d-163">**Tilldelade användare:** Välj ett av följande värden:</span><span class="sxs-lookup"><span data-stu-id="5106d-163">**Assigned users**: Select one of the following values:</span></span>
+   - <span data-ttu-id="fdf04-166">**Tilldelade användare:** Välj ett av följande värden:</span><span class="sxs-lookup"><span data-stu-id="fdf04-166">**Assigned users**: Select one of the following values:</span></span>
 
-     - <span data-ttu-id="5106d-164">**Alla** (standard)</span><span class="sxs-lookup"><span data-stu-id="5106d-164">**Everyone** (default)</span></span>
-     - <span data-ttu-id="5106d-165">**Specifika användare/grupper**</span><span class="sxs-lookup"><span data-stu-id="5106d-165">**Specific users / groups**</span></span>
-     - <span data-ttu-id="5106d-166">**Bara jag**</span><span class="sxs-lookup"><span data-stu-id="5106d-166">**Just me**</span></span>
+     - <span data-ttu-id="fdf04-167">**Alla** (standard)</span><span class="sxs-lookup"><span data-stu-id="fdf04-167">**Everyone** (default)</span></span>
+     - <span data-ttu-id="fdf04-168">**Specifika användare/grupper**</span><span class="sxs-lookup"><span data-stu-id="fdf04-168">**Specific users / groups**</span></span>
+     - <span data-ttu-id="fdf04-169">**Bara jag**</span><span class="sxs-lookup"><span data-stu-id="fdf04-169">**Just me**</span></span>
 
-   - <span data-ttu-id="5106d-167">**Distributionsmetod:** Välj något av följande värden:</span><span class="sxs-lookup"><span data-stu-id="5106d-167">**Deployment method**: Select one of the following values:</span></span>
+   - <span data-ttu-id="fdf04-170">**Distributionsmetod:** Välj något av följande värden:</span><span class="sxs-lookup"><span data-stu-id="fdf04-170">**Deployment method**: Select one of the following values:</span></span>
 
-     - <span data-ttu-id="5106d-168">**Åtgärdat (standard)**: Tillägget distribueras automatiskt till angivna användare och de kan inte ta bort det.</span><span class="sxs-lookup"><span data-stu-id="5106d-168">**Fixed (Default)**: The add-in is automatically deployed to the specified users and they can't remove it.</span></span>
-     - <span data-ttu-id="5106d-169">**Tillgängligt:** Användarna kan installera tillägget på **Fliken** Hämta \> **tillägg som hanteras** av \> **administratören.**</span><span class="sxs-lookup"><span data-stu-id="5106d-169">**Available**: Users can install the add-in at **Home** \> **Get add-ins** \> **Admin-managed**.</span></span>
-     - <span data-ttu-id="5106d-170">**Valfritt:** Tillägget distribueras automatiskt till de angivna användarna, men de kan välja att ta bort det.</span><span class="sxs-lookup"><span data-stu-id="5106d-170">**Optional**: The add-in is automatically deployed to the specified users, but they can choose to remove it.</span></span>
+     - <span data-ttu-id="fdf04-171">**Åtgärdat (standard)**: Tillägget distribueras automatiskt till angivna användare och de kan inte ta bort det.</span><span class="sxs-lookup"><span data-stu-id="fdf04-171">**Fixed (Default)**: The add-in is automatically deployed to the specified users and they can't remove it.</span></span>
+     - <span data-ttu-id="fdf04-172">**Tillgängligt:** Användarna kan installera tillägget på **Fliken** Hämta \> **tillägg som hanteras** av \> **administratören.**</span><span class="sxs-lookup"><span data-stu-id="fdf04-172">**Available**: Users can install the add-in at **Home** \> **Get add-ins** \> **Admin-managed**.</span></span>
+     - <span data-ttu-id="fdf04-173">**Valfritt:** Tillägget distribueras automatiskt till de angivna användarna, men de kan välja att ta bort det.</span><span class="sxs-lookup"><span data-stu-id="fdf04-173">**Optional**: The add-in is automatically deployed to the specified users, but they can choose to remove it.</span></span>
 
    ![Konfigurera tilläggssida](../../media/configure-add-in.png)
 
-   <span data-ttu-id="5106d-172">När du är klar klickar du på **Distribuera.**</span><span class="sxs-lookup"><span data-stu-id="5106d-172">When you're finished, click **Deploy**.</span></span>
+   <span data-ttu-id="fdf04-175">När du är klar klickar du på **Distribuera.**</span><span class="sxs-lookup"><span data-stu-id="fdf04-175">When you're finished, click **Deploy**.</span></span>
 
-8. <span data-ttu-id="5106d-173">På **sidan Distribuera rapportmeddelande** som visas visas en förloppsrapport följt av en bekräftelse på att tillägget har distribuerats.</span><span class="sxs-lookup"><span data-stu-id="5106d-173">In the **Deploy Report Message** page that appears, you'll see a progress report followed by a confirmation that the add-in was deployed.</span></span> <span data-ttu-id="5106d-174">När du har läst informationen klickar du på **Nästa.**</span><span class="sxs-lookup"><span data-stu-id="5106d-174">After you read the information, click **Next**.</span></span>
+8. <span data-ttu-id="fdf04-176">På **sidan Distribuera rapportmeddelande** som visas visas en förloppsrapport följt av en bekräftelse på att tillägget har distribuerats.</span><span class="sxs-lookup"><span data-stu-id="fdf04-176">In the **Deploy Report Message** page that appears, you'll see a progress report followed by a confirmation that the add-in was deployed.</span></span> <span data-ttu-id="fdf04-177">När du har läst informationen klickar du på **Nästa.**</span><span class="sxs-lookup"><span data-stu-id="fdf04-177">After you read the information, click **Next**.</span></span>
 
    ![Sidan Distribuera rapportmeddelande](../../media/deploy-report-message-page.png)
 
-9. <span data-ttu-id="5106d-176">På **sidan Presentera tillägg som** visas granskar du informationen och klickar sedan på **Stäng.**</span><span class="sxs-lookup"><span data-stu-id="5106d-176">On the **Announce add-in** page that appears, review the information, and then click **Close**.</span></span>
+9. <span data-ttu-id="fdf04-179">På **sidan Presentera tillägg som** visas granskar du informationen och klickar sedan på **Stäng.**</span><span class="sxs-lookup"><span data-stu-id="fdf04-179">On the **Announce add-in** page that appears, review the information, and then click **Close**.</span></span>
 
    ![Sidan Presentera tillägg](../../media/announce-add-in-page.png)
 
-## <a name="learn-how-to-use-the-report-message-add-in"></a><span data-ttu-id="5106d-178">Lär dig hur du använder tillägget Rapportmeddelande</span><span class="sxs-lookup"><span data-stu-id="5106d-178">Learn how to use the Report Message add-in</span></span>
+## <a name="review-or-edit-settings-for-the-report-message-add-in"></a><span data-ttu-id="fdf04-181">Granska eller redigera inställningar för tillägget Rapportmeddelande</span><span class="sxs-lookup"><span data-stu-id="fdf04-181">Review or edit settings for the Report Message add-in</span></span>
 
-<span data-ttu-id="5106d-179">Personer som har tilldelats tillägget ser följande ikoner:</span><span class="sxs-lookup"><span data-stu-id="5106d-179">People who have the add-in assigned to them will see the following icons:</span></span>
+1. <span data-ttu-id="fdf04-182">I Microsoft 365 administrationscentret går du till sidan **Inställningar** tillägg \>  på <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> .</span><span class="sxs-lookup"><span data-stu-id="fdf04-182">In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>.</span></span> <span data-ttu-id="fdf04-183">Om du inte ser  tilläggssidan går du till **länken Inställningar** Tillägg för integrerade appar högst upp på sidan \>  \>  **Integrerade** appar.</span><span class="sxs-lookup"><span data-stu-id="fdf04-183">If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the **Integrated apps** page.</span></span>
 
-- <span data-ttu-id="5106d-180">Ikonen ser ut så här i Outlook:</span><span class="sxs-lookup"><span data-stu-id="5106d-180">In Outlook, the icon looks like this:</span></span>
+   ![Tjänster och Add-Ins i det nya Microsoft 365 Administrationscenter](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-  ![Ikonen för tillägget Rapportmeddelande för Outlook](../../media/OutlookReportMessageIcon.png)
+2. <span data-ttu-id="fdf04-185">Leta upp och **välj tillägget** Rapportmeddelande.</span><span class="sxs-lookup"><span data-stu-id="fdf04-185">Find and select the **Report Message** add-in.</span></span>
 
-- <span data-ttu-id="5106d-182">Ikonen ser ut så här i Outlook på webben:</span><span class="sxs-lookup"><span data-stu-id="5106d-182">In Outlook on the web, the icon looks like this:</span></span>
-
-  ![Tilläggsikon för meddelande i Outlook på webben](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
-
-<span data-ttu-id="5106d-184">När du meddelar användarna om tillägget Rapportmeddelande tar du med en länk till [Använda tillägget Rapportmeddelande.](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)</span><span class="sxs-lookup"><span data-stu-id="5106d-184">When you notify users about the Report Message add-in, include a link to [Use the Report Message add-in](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
-
-## <a name="review-or-edit-settings-for-the-report-message-add-in"></a><span data-ttu-id="5106d-185">Granska eller redigera inställningar för tillägget Rapportmeddelande</span><span class="sxs-lookup"><span data-stu-id="5106d-185">Review or edit settings for the Report Message add-in</span></span>
-
-1. <span data-ttu-id="5106d-186">I administrationscentret för Microsoft 365 går  du till sidan Inställningar tillägg på . Om tilläggssidan inte visas går du till länken Tillägg för inställningar integrerade appar högst upp på sidan Integrerade \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>   \>  \>  appar. </span><span class="sxs-lookup"><span data-stu-id="5106d-186">In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>, If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the **Integrated apps** page.</span></span>
-
-   ![Tjänster och Add-Ins i det nya administrationscentret för Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
-
-2. <span data-ttu-id="5106d-188">Leta upp och **välj tillägget** Rapportmeddelande.</span><span class="sxs-lookup"><span data-stu-id="5106d-188">Find and select the **Report Message** add-in.</span></span>
-
-3. <span data-ttu-id="5106d-189">I den **utfällna** menyn Redigera rapportmeddelande som visas granskar och redigerar du lämpliga inställningar för din organisation.</span><span class="sxs-lookup"><span data-stu-id="5106d-189">In the **Edit Report Message** flyout that appears, review and edit settings as appropriate for your organization.</span></span> <span data-ttu-id="5106d-190">Klicka på **Spara** när du är klar.</span><span class="sxs-lookup"><span data-stu-id="5106d-190">When you're finished, click **Save**.</span></span>
+3. <span data-ttu-id="fdf04-186">I den **utfällna** menyn Redigera rapportmeddelande som visas granskar och redigerar du lämpliga inställningar för din organisation.</span><span class="sxs-lookup"><span data-stu-id="fdf04-186">In the **Edit Report Message** flyout that appears, review and edit settings as appropriate for your organization.</span></span> <span data-ttu-id="fdf04-187">Klicka på **Spara** när du är klar.</span><span class="sxs-lookup"><span data-stu-id="fdf04-187">When you're finished, click **Save**.</span></span>
 
    ![Inställningar för tillägget Rapportmeddelande](../../media/EditReportMessageAddIn.png)
 
-## <a name="view-and-review-reported-messages"></a><span data-ttu-id="5106d-192">Visa och granska rapporterade meddelanden</span><span class="sxs-lookup"><span data-stu-id="5106d-192">View and review reported messages</span></span>
+## <a name="get-the-report-phishing-add-in"></a><span data-ttu-id="fdf04-189">Hämta tillägget Rapport om nätfiske</span><span class="sxs-lookup"><span data-stu-id="fdf04-189">Get the Report Phishing add-in</span></span>
 
-<span data-ttu-id="5106d-193">Om du vill granska meddelanden som användare rapporterar till Microsoft har du följande alternativ:</span><span class="sxs-lookup"><span data-stu-id="5106d-193">To review messages that users report to Microsoft, you have these options:</span></span>
+### <a name="get-the-add-in-for-yourself"></a><span data-ttu-id="fdf04-190">Skaffa tillägget åt dig själv</span><span class="sxs-lookup"><span data-stu-id="fdf04-190">Get the add-in for yourself</span></span>
 
-- <span data-ttu-id="5106d-194">Använd portalen för administrationsinskick.</span><span class="sxs-lookup"><span data-stu-id="5106d-194">Use the Admin Submissions portal.</span></span> <span data-ttu-id="5106d-195">Mer information finns i [Visa användarinskick till Microsoft.](admin-submission.md#view-user-submissions-to-microsoft)</span><span class="sxs-lookup"><span data-stu-id="5106d-195">For more information, see [View user submissions to Microsoft](admin-submission.md#view-user-submissions-to-microsoft).</span></span>
+1. <span data-ttu-id="fdf04-191">Gå till Microsoft AppSource på <https://appsource.microsoft.com/marketplace/apps> och sök efter tillägget Rapport nätfiske.</span><span class="sxs-lookup"><span data-stu-id="fdf04-191">Go to the Microsoft AppSource at <https://appsource.microsoft.com/marketplace/apps> and search for the Report Phishing add-in.</span></span>
 
-- <span data-ttu-id="5106d-196">Skapa en e-postflödesregel (kallas även transportregel) för att skicka kopior av rapporterade meddelanden.</span><span class="sxs-lookup"><span data-stu-id="5106d-196">Create a mail flow rule (also known as a transport rule) to send copies of reported messages.</span></span> <span data-ttu-id="5106d-197">Anvisningar finns i Använda [e-postflödesregler för att se vad användarna rapporterar till Microsoft.](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)</span><span class="sxs-lookup"><span data-stu-id="5106d-197">For instructions, see [Use mail flow rules to see what your users are reporting to Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md).</span></span>
+2. <span data-ttu-id="fdf04-192">Klicka **på HÄMTA NU.**</span><span class="sxs-lookup"><span data-stu-id="fdf04-192">Click **GET IT NOW**.</span></span>
+
+3. <span data-ttu-id="fdf04-193">I dialogrutan som visas granskar du användningsvillkoren och sekretesspolicyn och klickar sedan på **Fortsätt.**</span><span class="sxs-lookup"><span data-stu-id="fdf04-193">In the dialog that appears, review the terms of use and privacy policy, and then click **Continue**.</span></span>
+
+4. <span data-ttu-id="fdf04-194">Logga in med ditt arbets- eller skolkonto (för företagsanvändning) eller ditt Microsoft-konto (för personlig användning).</span><span class="sxs-lookup"><span data-stu-id="fdf04-194">Sign in using your work or school account (for business use) or your Microsoft account (for personal use).</span></span>
+
+<span data-ttu-id="fdf04-195">När tillägget har installerats och aktiverats visas följande ikoner:</span><span class="sxs-lookup"><span data-stu-id="fdf04-195">After the add-in is installed and enabled, you'll see the following icons:</span></span>
+
+- <span data-ttu-id="fdf04-196">I Outlook ser ikonen ut så här:</span><span class="sxs-lookup"><span data-stu-id="fdf04-196">In Outlook, the icon looks like this:</span></span>
+
+  ![Ikonen för tillägget Nätfiske för Outlook](../../media/Outlook-ReportPhishing.png)
+
+- <span data-ttu-id="fdf04-198">I Outlook på webben ser ikonen ut så här:</span><span class="sxs-lookup"><span data-stu-id="fdf04-198">In Outlook on the web, the icon looks like this:</span></span>
+
+  > [!div class="mx-imgBorder"]
+  > <span data-ttu-id="fdf04-199">![Outlook på webbrapportens ikon för nätfiske](../../media/OWA-ReportPhishing.png)</span><span class="sxs-lookup"><span data-stu-id="fdf04-199">![Outlook on the web Report Phishing add-in icon](../../media/OWA-ReportPhishing.png)</span></span>
+
+### <a name="get-the-add-in-for-your-organization"></a><span data-ttu-id="fdf04-200">Hämta tillägget för din organisation</span><span class="sxs-lookup"><span data-stu-id="fdf04-200">Get the add-in for your organization</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="fdf04-201">Det kan ta upp till 12 timmar innan tillägget visas i organisationen.</span><span class="sxs-lookup"><span data-stu-id="fdf04-201">It could take up to 12 hours for the add-in to appear in your organization.</span></span>
+
+1. <span data-ttu-id="fdf04-202">I Microsoft 365 administrationscentret går du till sidan **Inställningar** tillägg \>  på <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> .</span><span class="sxs-lookup"><span data-stu-id="fdf04-202">In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>.</span></span> <span data-ttu-id="fdf04-203">Om du inte ser  tilläggssidan går du till **länken Inställningar** Tillägg för integrerade appar högst upp på sidan \>  \>  **Integrerade** appar.</span><span class="sxs-lookup"><span data-stu-id="fdf04-203">If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the **Integrated apps** page.</span></span>
+
+2. <span data-ttu-id="fdf04-204">Välj **Distribuera tillägg** högst upp på sidan och välj sedan **Nästa.**</span><span class="sxs-lookup"><span data-stu-id="fdf04-204">Select **Deploy Add-in** at the top of the page, and then select **Next**.</span></span>
+
+   ![Sidan Tjänster och tillägg i Microsoft 365 administrationscenter](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+
+3. <span data-ttu-id="fdf04-206">I den **utfällbaserade menyn** Distribuera ett nytt tillägg som visas granskar du informationen och klickar sedan på **Nästa.**</span><span class="sxs-lookup"><span data-stu-id="fdf04-206">In the **Deploy a new add-in** flyout that appears, review the information, and then click **Next**.</span></span>
+
+4. <span data-ttu-id="fdf04-207">Klicka på Välj från **Store på nästa sida.**</span><span class="sxs-lookup"><span data-stu-id="fdf04-207">On the next page, click **Choose from the Store**.</span></span>
+
+   ![Distribuera en ny tilläggssida](../../media/NewAddInScreen2.png)
+
+5. <span data-ttu-id="fdf04-209">På sidan **Välj tillägg som visas** klickar  du i rutan Sök, anger **Rapportfiske** och klickar sedan på **sökikonen** ![ ](../../media/search-icon.png) .</span><span class="sxs-lookup"><span data-stu-id="fdf04-209">In the **Select add-in** page that appears, click in the **Search** box, enter **Report Phishing**, and then click **Search** ![Search icon](../../media/search-icon.png).</span></span> <span data-ttu-id="fdf04-210">Leta rätt på Rapport nätfiske i **listan med resultat och** klicka sedan på Lägg **till**.</span><span class="sxs-lookup"><span data-stu-id="fdf04-210">In the list of results, find **Report Phishing** and then click **Add**.</span></span>
+
+6. <span data-ttu-id="fdf04-211">I dialogrutan som visas granskar du licens- och sekretessinformationen och klickar sedan på **Fortsätt.**</span><span class="sxs-lookup"><span data-stu-id="fdf04-211">In the dialog that appears, review the licensing and privacy information, and then click **Continue**.</span></span>
+
+7. <span data-ttu-id="fdf04-212">Konfigurera **följande inställningar på sidan** Konfigurera tillägget som visas:</span><span class="sxs-lookup"><span data-stu-id="fdf04-212">In the **Configure add-in** page that appears, configure the following settings:</span></span>
+
+   - <span data-ttu-id="fdf04-213">**Tilldelade användare:** Välj ett av följande värden:</span><span class="sxs-lookup"><span data-stu-id="fdf04-213">**Assigned users**: Select one of the following values:</span></span>
+
+     - <span data-ttu-id="fdf04-214">**Alla** (standard)</span><span class="sxs-lookup"><span data-stu-id="fdf04-214">**Everyone** (default)</span></span>
+     - <span data-ttu-id="fdf04-215">**Specifika användare/grupper**</span><span class="sxs-lookup"><span data-stu-id="fdf04-215">**Specific users / groups**</span></span>
+     - <span data-ttu-id="fdf04-216">**Bara jag**</span><span class="sxs-lookup"><span data-stu-id="fdf04-216">**Just me**</span></span>
+
+   - <span data-ttu-id="fdf04-217">**Distributionsmetod:** Välj något av följande värden:</span><span class="sxs-lookup"><span data-stu-id="fdf04-217">**Deployment method**: Select one of the following values:</span></span>
+
+     - <span data-ttu-id="fdf04-218">**Åtgärdat (standard)**: Tillägget distribueras automatiskt till angivna användare och de kan inte ta bort det.</span><span class="sxs-lookup"><span data-stu-id="fdf04-218">**Fixed (Default)**: The add-in is automatically deployed to the specified users and they can't remove it.</span></span>
+     - <span data-ttu-id="fdf04-219">**Tillgängligt:** Användarna kan installera tillägget på **Fliken** Hämta \> **tillägg som hanteras** av \> **administratören.**</span><span class="sxs-lookup"><span data-stu-id="fdf04-219">**Available**: Users can install the add-in at **Home** \> **Get add-ins** \> **Admin-managed**.</span></span>
+     - <span data-ttu-id="fdf04-220">**Valfritt:** Tillägget distribueras automatiskt till de angivna användarna, men de kan välja att ta bort det.</span><span class="sxs-lookup"><span data-stu-id="fdf04-220">**Optional**: The add-in is automatically deployed to the specified users, but they can choose to remove it.</span></span>
+
+   <span data-ttu-id="fdf04-221">När du är klar klickar du på **Distribuera.**</span><span class="sxs-lookup"><span data-stu-id="fdf04-221">When you're finished, click **Deploy**.</span></span>
+
+8. <span data-ttu-id="fdf04-222">På sidan **Distribuera nätfiske** som visas visas en förloppsrapport följt av en bekräftelse på att tillägget har distribuerats.</span><span class="sxs-lookup"><span data-stu-id="fdf04-222">In the **Deploy Report Phishing** page that appears, you'll see a progress report followed by a confirmation that the add-in was deployed.</span></span> <span data-ttu-id="fdf04-223">När du har läst informationen klickar du på **Nästa.**</span><span class="sxs-lookup"><span data-stu-id="fdf04-223">After you read the information, click **Next**.</span></span>
+
+9. <span data-ttu-id="fdf04-224">På **sidan Presentera tillägg som** visas granskar du informationen och klickar sedan på **Stäng.**</span><span class="sxs-lookup"><span data-stu-id="fdf04-224">On the **Announce add-in** page that appears, review the information, and then click **Close**.</span></span>
+
+## <a name="review-or-edit-settings-for-the-report-phishing-add-in"></a><span data-ttu-id="fdf04-225">Granska eller redigera inställningar för tillägget Rapport nätfiske</span><span class="sxs-lookup"><span data-stu-id="fdf04-225">Review or edit settings for the Report Phishing add-in</span></span>
+
+1. <span data-ttu-id="fdf04-226">I Microsoft 365 administrationscentret går du till sidan **Inställningar** tillägg \>  på <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> .</span><span class="sxs-lookup"><span data-stu-id="fdf04-226">In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>.</span></span> <span data-ttu-id="fdf04-227">Om du inte ser  tilläggssidan går du till **länken Inställningar** Tillägg för integrerade appar högst upp på sidan \>  \>  **Integrerade** appar.</span><span class="sxs-lookup"><span data-stu-id="fdf04-227">If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the **Integrated apps** page.</span></span>
+
+2. <span data-ttu-id="fdf04-228">Leta upp och **välj tillägget** Rapport nätfiske.</span><span class="sxs-lookup"><span data-stu-id="fdf04-228">Find and select the **Report Phishing** add-in.</span></span>
+
+3. <span data-ttu-id="fdf04-229">I den **utfällna** menyn Redigera rapport nätfiske som visas, granskar och redigerar du inställningarna efter behov för din organisation.</span><span class="sxs-lookup"><span data-stu-id="fdf04-229">In the **Edit Report Phishing** flyout that appears, review, and edit settings as appropriate for your organization.</span></span> <span data-ttu-id="fdf04-230">Klicka på **Spara** när du är klar.</span><span class="sxs-lookup"><span data-stu-id="fdf04-230">When you're finished, click **Save**.</span></span>

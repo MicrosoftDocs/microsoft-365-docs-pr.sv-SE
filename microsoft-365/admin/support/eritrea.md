@@ -1,5 +1,5 @@
 ---
-title: Supportinformation för Etiopien
+title: Supportinformation för Eritrea
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,37 +12,37 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 950ef5ac5bf4585a2519b54f2ff6737707286f09
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 705ac3cde6def481fcf8c2a517c3de37231496d9
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547606"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296269"
 ---
-# <a name="contact-support-for-eritrea"></a><span data-ttu-id="9b82c-103">Kontakta supporten för Etiopien</span><span class="sxs-lookup"><span data-stu-id="9b82c-103">Contact support for Eritrea</span></span>
+# <a name="contact-support-for-eritrea"></a><span data-ttu-id="dec25-103">Kontakta support för Eritrea</span><span class="sxs-lookup"><span data-stu-id="dec25-103">Contact support for Eritrea</span></span>
 
-<span data-ttu-id="9b82c-104">[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="9b82c-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="dec25-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="dec25-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="9b82c-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="9b82c-105">Phone number</span></span>
-<span data-ttu-id="9b82c-106">+974 44 119418</span><span class="sxs-lookup"><span data-stu-id="9b82c-106">+974 44 119418</span></span>
+## <a name="phone-number"></a><span data-ttu-id="dec25-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="dec25-105">Phone number</span></span>
+<span data-ttu-id="dec25-106">+974 44 119418</span><span class="sxs-lookup"><span data-stu-id="dec25-106">+974 44 119418</span></span>
 
-<span data-ttu-id="9b82c-107">Välj alternativ 2</span><span class="sxs-lookup"><span data-stu-id="9b82c-107">Select option 2</span></span>
+<span data-ttu-id="dec25-107">Välj alternativ 2</span><span class="sxs-lookup"><span data-stu-id="dec25-107">Select option 2</span></span>
 
-<span data-ttu-id="9b82c-108">Välj alternativ 9</span><span class="sxs-lookup"><span data-stu-id="9b82c-108">Select option 9</span></span>
+<span data-ttu-id="dec25-108">Välj alternativ 9</span><span class="sxs-lookup"><span data-stu-id="dec25-108">Select option 9</span></span>
 
-<span data-ttu-id="9b82c-109">Ange kod 7700</span><span class="sxs-lookup"><span data-stu-id="9b82c-109">Enter code 7700</span></span>
+<span data-ttu-id="dec25-109">Ange kod 7700</span><span class="sxs-lookup"><span data-stu-id="dec25-109">Enter code 7700</span></span>
 
-## <a name="hours"></a><span data-ttu-id="9b82c-110">Tider</span><span class="sxs-lookup"><span data-stu-id="9b82c-110">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="9b82c-111">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="9b82c-111">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="dec25-110">Tider</span><span class="sxs-lookup"><span data-stu-id="dec25-110">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="dec25-111">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="dec25-111">Billing Support:</span></span>
 
-<span data-ttu-id="9b82c-112">Arabiska: Sun-Thu 10.00–18.00</span><span class="sxs-lookup"><span data-stu-id="9b82c-112">Arabic: Sun-Thu 10 AM-6 PM</span></span>
+<span data-ttu-id="dec25-112">Arabiska: Sun-Thu 10–18</span><span class="sxs-lookup"><span data-stu-id="dec25-112">Arabic: Sun-Thu 10 AM-6 PM</span></span>
 
-<span data-ttu-id="9b82c-113">Engelska: Mon-Fri 10–18:00</span><span class="sxs-lookup"><span data-stu-id="9b82c-113">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="dec25-113">Engelska: Mon-Fri 10:00–18:00</span><span class="sxs-lookup"><span data-stu-id="dec25-113">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="9b82c-114">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="9b82c-114">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="dec25-114">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="dec25-114">Technical Support:</span></span>
 
-<span data-ttu-id="9b82c-115">Arabiska: Sun-Thu 10.00–18.00</span><span class="sxs-lookup"><span data-stu-id="9b82c-115">Arabic: Sun-Thu 10 AM-6 PM</span></span>
+<span data-ttu-id="dec25-115">Arabiska: Sun-Thu 10–18</span><span class="sxs-lookup"><span data-stu-id="dec25-115">Arabic: Sun-Thu 10 AM-6 PM</span></span>
 
-<span data-ttu-id="9b82c-116">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="9b82c-116">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="dec25-116">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="dec25-116">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="9b82c-117">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="9b82c-117">International call charges apply</span></span>
+<span data-ttu-id="dec25-117">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="dec25-117">International call charges apply</span></span>

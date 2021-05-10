@@ -12,31 +12,31 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7d30b10fc6b329c1856eb561472195e2a93b2bcf
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: fa5b0ac6a6fbeea3e88aac7973c866edbddb6c53
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545494"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295681"
 ---
-# <a name="contact-support-for-netherlands"></a><span data-ttu-id="04019-103">Kontakta supporten för Nederländerna</span><span class="sxs-lookup"><span data-stu-id="04019-103">Contact support for Netherlands</span></span>
+# <a name="contact-support-for-netherlands"></a><span data-ttu-id="e682a-103">Kontakta supporten för Nederländerna</span><span class="sxs-lookup"><span data-stu-id="e682a-103">Contact support for Netherlands</span></span>
 
-<span data-ttu-id="04019-104">[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="04019-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="e682a-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="e682a-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="04019-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="04019-105">Phone number</span></span>
-<span data-ttu-id="04019-106">0800 020 2546</span><span class="sxs-lookup"><span data-stu-id="04019-106">0800 020 2546</span></span>
+## <a name="phone-number"></a><span data-ttu-id="e682a-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="e682a-105">Phone number</span></span>
+<span data-ttu-id="e682a-106">0800 020 2546</span><span class="sxs-lookup"><span data-stu-id="e682a-106">0800 020 2546</span></span>
 
-## <a name="hours"></a><span data-ttu-id="04019-107">Tider</span><span class="sxs-lookup"><span data-stu-id="04019-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="04019-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="04019-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="e682a-107">Tider</span><span class="sxs-lookup"><span data-stu-id="e682a-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="e682a-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="e682a-108">Billing Support:</span></span>
 
-<span data-ttu-id="04019-109">Nederländska: Mon-Fri 9–17</span><span class="sxs-lookup"><span data-stu-id="04019-109">Dutch: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="e682a-109">Nederländska: Mon-Fri 9:00–17:00</span><span class="sxs-lookup"><span data-stu-id="e682a-109">Dutch: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="04019-110">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="04019-110">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="e682a-110">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="e682a-110">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="04019-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="04019-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="e682a-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="e682a-111">Technical Support:</span></span>
 
-<span data-ttu-id="04019-112">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="04019-112">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="e682a-112">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="e682a-112">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="04019-113">Alternativt telefonnummer: 020 203 5362</span><span class="sxs-lookup"><span data-stu-id="04019-113">Alternative Phone Number: 020 203 5362</span></span>
+<span data-ttu-id="e682a-113">Alternativ Telefon: 020 203 5362</span><span class="sxs-lookup"><span data-stu-id="e682a-113">Alternative Phone Number: 020 203 5362</span></span>
 
-<span data-ttu-id="04019-114">Lokal samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="04019-114">Local call charges apply</span></span>
+<span data-ttu-id="e682a-114">Lokal samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="e682a-114">Local call charges apply</span></span>

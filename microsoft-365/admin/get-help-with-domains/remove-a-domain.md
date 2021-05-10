@@ -22,206 +22,206 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Lär dig hur du tar bort en gammal domän från Microsoft 365 och flyttar användare och grupper till en annan domän.
-ms.openlocfilehash: 916730975e9e17c42b01d9fa0ff55b3cb7078f66
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: ca12a886c508024bf39ae9e619744a355376a80d
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470971"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296713"
 ---
-# <a name="remove-a-domain"></a><span data-ttu-id="1bbc1-103">Ta bort en domän</span><span class="sxs-lookup"><span data-stu-id="1bbc1-103">Remove a domain</span></span>
+# <a name="remove-a-domain"></a><span data-ttu-id="cf1f4-103">Ta bort en domän</span><span class="sxs-lookup"><span data-stu-id="cf1f4-103">Remove a domain</span></span>
   
- <span data-ttu-id="1bbc1-104">**[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-104">**[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.</span></span> 
+ <span data-ttu-id="cf1f4-104">**[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-104">**[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.</span></span> 
   
-<span data-ttu-id="1bbc1-105">Tar du bort en domän på grund av att du vill lägga till den i ett annat Microsoft 365-abonnemang?</span><span class="sxs-lookup"><span data-stu-id="1bbc1-105">Are you removing your domain because you want to add it to a different Microsoft 365 subscription plan?</span></span> <span data-ttu-id="1bbc1-106">Eller vill du avbryta din prenumeration?</span><span class="sxs-lookup"><span data-stu-id="1bbc1-106">Or do you just want to cancel your subscription?</span></span> <span data-ttu-id="1bbc1-107">Du kan [ändra ditt abonnemang eller din prenumeration](../../commerce/subscriptions/switch-to-a-different-plan.md) eller [avbryta prenumerationen](../../commerce/subscriptions/cancel-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="1bbc1-107">You can [change your plan or subscription](../../commerce/subscriptions/switch-to-a-different-plan.md) or [cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md).</span></span>
+<span data-ttu-id="cf1f4-105">Tar du bort en domän på grund av att du vill lägga till den i ett annat Microsoft 365-abonnemang?</span><span class="sxs-lookup"><span data-stu-id="cf1f4-105">Are you removing your domain because you want to add it to a different Microsoft 365 subscription plan?</span></span> <span data-ttu-id="cf1f4-106">Eller vill du avbryta din prenumeration?</span><span class="sxs-lookup"><span data-stu-id="cf1f4-106">Or do you just want to cancel your subscription?</span></span> <span data-ttu-id="cf1f4-107">Du kan [ändra ditt abonnemang eller din prenumeration](../../commerce/subscriptions/switch-to-a-different-plan.md) eller [avbryta prenumerationen](../../commerce/subscriptions/cancel-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="cf1f4-107">You can [change your plan or subscription](../../commerce/subscriptions/switch-to-a-different-plan.md) or [cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md).</span></span>
   
-### <a name="step-1-move-users-to-another-domain"></a><span data-ttu-id="1bbc1-108">Steg 1: Flytta användare till en annan domän</span><span class="sxs-lookup"><span data-stu-id="1bbc1-108">Step 1: Move users to another domain</span></span>
+### <a name="step-1-move-users-to-another-domain"></a><span data-ttu-id="cf1f4-108">Steg 1: Flytta användare till en annan domän</span><span class="sxs-lookup"><span data-stu-id="cf1f4-108">Step 1: Move users to another domain</span></span>
 
-#### <a name="move-users"></a><span data-ttu-id="1bbc1-109">Flytta användare</span><span class="sxs-lookup"><span data-stu-id="1bbc1-109">Move users</span></span>
+#### <a name="move-users"></a><span data-ttu-id="cf1f4-109">Flytta användare</span><span class="sxs-lookup"><span data-stu-id="cf1f4-109">Move users</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="1bbc1-110">Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrationscentret</a>.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-110">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.</span></span>
+1. <span data-ttu-id="cf1f4-110">Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrationscentret</a>.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-110">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.</span></span>
 
-2. <span data-ttu-id="1bbc1-111">Välj **Användare** > **Aktiva användare.**</span><span class="sxs-lookup"><span data-stu-id="1bbc1-111">Select **Users** > **Active users**.</span></span>
+2. <span data-ttu-id="cf1f4-111">Välj **Användare** > **Aktiva användare.**</span><span class="sxs-lookup"><span data-stu-id="cf1f4-111">Select **Users** > **Active users**.</span></span>
 
-3. <span data-ttu-id="1bbc1-112">Markera kryssrutorna för alla användare som du vill flytta.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-112">Select the boxes next to the names of all the users you want to move.</span></span>
+3. <span data-ttu-id="cf1f4-112">Markera kryssrutorna för alla användare som du vill flytta.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-112">Select the boxes next to the names of all the users you want to move.</span></span>
 
-4. <span data-ttu-id="1bbc1-113">Välj **Fler alternativ** (**...**), högst upp på sidan och välj sedan Ändra **domäner**.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-113">Select **More options** (**…**), at the top of the page, and then choose **Change domains**.</span></span>
+4. <span data-ttu-id="cf1f4-113">Välj **Fler alternativ** (**...**), högst upp på sidan och välj sedan Ändra **domäner**.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-113">Select **More options** (**…**), at the top of the page, and then choose **Change domains**.</span></span>
 
-5. <span data-ttu-id="1bbc1-114">Välj **en annan domän** i fönstret Ändra domäner.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-114">In the **Change domains** pane, select a different domain.</span></span>
+5. <span data-ttu-id="cf1f4-114">Välj **en annan domän** i fönstret Ändra domäner.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-114">In the **Change domains** pane, select a different domain.</span></span>
 
-<span data-ttu-id="1bbc1-p102">Du måste även göra detta för dig själv om du använder den domän som du vill ta bort. När du redigerar domänen för ditt konto måste du logga ut och logga in igen med den nya domänen du har valt.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-p102">You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.</span></span>
+<span data-ttu-id="cf1f4-p102">Du måste även göra detta för dig själv om du använder den domän som du vill ta bort. När du redigerar domänen för ditt konto måste du logga ut och logga in igen med den nya domänen du har valt.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-p102">You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="1bbc1-117">Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a>.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-117">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>.</span></span>  
+1. <span data-ttu-id="cf1f4-117">Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a>.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-117">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>.</span></span>  
 
-2. <span data-ttu-id="1bbc1-118">Välj **Användare** > **Aktiva användare.**</span><span class="sxs-lookup"><span data-stu-id="1bbc1-118">Select **Users** > **Active users**.</span></span>
+2. <span data-ttu-id="cf1f4-118">Välj **Användare** > **Aktiva användare.**</span><span class="sxs-lookup"><span data-stu-id="cf1f4-118">Select **Users** > **Active users**.</span></span>
 
-3. <span data-ttu-id="1bbc1-119">Markera kryssrutorna för alla användare som du vill flytta.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-119">Select the boxes next to the names of all the users you want to move.</span></span>
+3. <span data-ttu-id="cf1f4-119">Markera kryssrutorna för alla användare som du vill flytta.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-119">Select the boxes next to the names of all the users you want to move.</span></span>
 
-4. <span data-ttu-id="1bbc1-120">Högst upp på sidan väljer du **Fler** > **redigera domäner.**</span><span class="sxs-lookup"><span data-stu-id="1bbc1-120">At the top of the page, choose **More** > **Edit domains**.</span></span>
+4. <span data-ttu-id="cf1f4-120">Högst upp på sidan väljer du **Fler** > **redigera domäner.**</span><span class="sxs-lookup"><span data-stu-id="cf1f4-120">At the top of the page, choose **More** > **Edit domains**.</span></span>
 
-5. <span data-ttu-id="1bbc1-121">Välj en **annan domän** i fönstret Redigera domäner.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-121">In the **Edit domains** pane, select a different domain.</span></span>
+5. <span data-ttu-id="cf1f4-121">Välj en **annan domän** i fönstret Redigera domäner.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-121">In the **Edit domains** pane, select a different domain.</span></span>
   
-<span data-ttu-id="1bbc1-p103">Du måste även göra detta för dig själv om du använder den domän som du vill ta bort. När du redigerar domänen för ditt konto måste du logga ut och logga in igen med den nya domänen du har valt.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-p103">You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.</span></span>
+<span data-ttu-id="cf1f4-p103">Du måste även göra detta för dig själv om du använder den domän som du vill ta bort. När du redigerar domänen för ditt konto måste du logga ut och logga in igen med den nya domänen du har valt.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-p103">You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="1bbc1-124">Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a>.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-124">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>.</span></span>  
+1. <span data-ttu-id="cf1f4-124">Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a>.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-124">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>.</span></span>  
 
-2. <span data-ttu-id="1bbc1-125">Välj **Användare** > **Aktiva användare.**</span><span class="sxs-lookup"><span data-stu-id="1bbc1-125">Select **Users** > **Active users**.</span></span>
+2. <span data-ttu-id="cf1f4-125">Välj **Användare** > **Aktiva användare.**</span><span class="sxs-lookup"><span data-stu-id="cf1f4-125">Select **Users** > **Active users**.</span></span>
 
-3. <span data-ttu-id="1bbc1-126">Markera kryssrutorna för alla användare som du vill flytta.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-126">Select the boxes next to the names of all the users you want to move.</span></span>
+3. <span data-ttu-id="cf1f4-126">Markera kryssrutorna för alla användare som du vill flytta.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-126">Select the boxes next to the names of all the users you want to move.</span></span>
 
-4. <span data-ttu-id="1bbc1-127">Högst upp på sidan väljer du **Fler** > **redigera domäner.**</span><span class="sxs-lookup"><span data-stu-id="1bbc1-127">At the top of the page, choose **More** > **Edit domains**.</span></span>
+4. <span data-ttu-id="cf1f4-127">Högst upp på sidan väljer du **Fler** > **redigera domäner.**</span><span class="sxs-lookup"><span data-stu-id="cf1f4-127">At the top of the page, choose **More** > **Edit domains**.</span></span>
 
-5. <span data-ttu-id="1bbc1-128">Välj en **annan domän** i fönstret Redigera domäner.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-128">In the **Edit domains** pane, select a different domain.</span></span>
+5. <span data-ttu-id="cf1f4-128">Välj en **annan domän** i fönstret Redigera domäner.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-128">In the **Edit domains** pane, select a different domain.</span></span>
   
-<span data-ttu-id="1bbc1-p104">Du måste även göra detta för dig själv om du använder den domän som du vill ta bort. När du redigerar domänen för ditt konto måste du logga ut och logga in igen med den nya domänen du har valt.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-p104">You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.</span></span>
+<span data-ttu-id="cf1f4-p104">Du måste även göra detta för dig själv om du använder den domän som du vill ta bort. När du redigerar domänen för ditt konto måste du logga ut och logga in igen med den nya domänen du har valt.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-p104">You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.</span></span>
 
 ::: moniker-end
 
-#### <a name="move-yourself"></a><span data-ttu-id="1bbc1-131">Flytta dig själv</span><span class="sxs-lookup"><span data-stu-id="1bbc1-131">Move yourself</span></span>
+#### <a name="move-yourself"></a><span data-ttu-id="cf1f4-131">Flytta dig själv</span><span class="sxs-lookup"><span data-stu-id="cf1f4-131">Move yourself</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="1bbc1-132">Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a>.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-132">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>.</span></span>
+1. <span data-ttu-id="cf1f4-132">Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a>.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-132">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>.</span></span>
 
-2. <span data-ttu-id="1bbc1-133">Gå  till \> **Användare aktiva** användare och välj ditt konto i listan.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-133">Go to **Users** \> **Active Users**, and select your account from the list.</span></span>
+2. <span data-ttu-id="cf1f4-133">Gå  till \> **Användare aktiva** användare och välj ditt konto i listan.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-133">Go to **Users** \> **Active Users**, and select your account from the list.</span></span>
 
-3. <span data-ttu-id="1bbc1-134">På fliken **Konto** väljer du **Hantera användarnamn** och väljer sedan en annan domän.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-134">On the **Account** tab, select **Manage username**, and then choose a different domain.</span></span>
+3. <span data-ttu-id="cf1f4-134">På fliken **Konto** väljer du **Hantera användarnamn** och väljer sedan en annan domän.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-134">On the **Account** tab, select **Manage username**, and then choose a different domain.</span></span>
   
-4. <span data-ttu-id="1bbc1-135">Högst upp väljer du ditt kontonamn och sedan Logga **ut**.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-135">At the top, select your account name, then select **Sign Out**.</span></span>
+4. <span data-ttu-id="cf1f4-135">Högst upp väljer du ditt kontonamn och sedan Logga **ut**.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-135">At the top, select your account name, then select **Sign Out**.</span></span>
 
-5. <span data-ttu-id="1bbc1-136">Logga in med den nya domänen och ditt lösenord.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-136">Sign in with the new domain and your same password.</span></span>
+5. <span data-ttu-id="cf1f4-136">Logga in med den nya domänen och ditt lösenord.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-136">Sign in with the new domain and your same password.</span></span>
 
-<span data-ttu-id="1bbc1-137">Du kan också använda PowerShell för att flytta användare till en annan domän.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-137">You can also use PowerShell to move users to another domain.</span></span> <span data-ttu-id="1bbc1-138">Se [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) för mer information.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-138">See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information.</span></span> <span data-ttu-id="1bbc1-139">Om du vill ange standarddomänen använder du [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span><span class="sxs-lookup"><span data-stu-id="1bbc1-139">To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
+<span data-ttu-id="cf1f4-p105">Du kan också använda PowerShell för att flytta användare till en annan domän. Se [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) för mer information. Om du vill ange standarddomänen använder du [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span><span class="sxs-lookup"><span data-stu-id="cf1f4-p105">You can also use PowerShell to move users to another domain. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="1bbc1-140">Gå  till \> **Användare aktiva** användare och välj ditt namn i listan.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-140">Go to **Users** \> **Active Users**, and select your name in the list.</span></span>
+1. <span data-ttu-id="cf1f4-140">Gå  till \> **Användare aktiva** användare och välj ditt namn i listan.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-140">Go to **Users** \> **Active Users**, and select your name in the list.</span></span>
 
-2. <span data-ttu-id="1bbc1-141">I avsnittet **Användarnamn/e-post** **väljer du** Redigera och väljer sedan en annan domän.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-141">In the **Username / Email** section, select **Edit**, and then choose a different domain.</span></span>
+2. <span data-ttu-id="cf1f4-141">I avsnittet **Användarnamn/e-post** **väljer du** Redigera och väljer sedan en annan domän.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-141">In the **Username / Email** section, select **Edit**, and then choose a different domain.</span></span>
 
-3. <span data-ttu-id="1bbc1-142">Välj **Ange som primär** > **Spara** > **stäng.**</span><span class="sxs-lookup"><span data-stu-id="1bbc1-142">Select **Set as primary** > **Save** > **Close**.</span></span>
+3. <span data-ttu-id="cf1f4-142">Välj **Ange som primär** > **Spara** > **stäng.**</span><span class="sxs-lookup"><span data-stu-id="cf1f4-142">Select **Set as primary** > **Save** > **Close**.</span></span>
   
-4. <span data-ttu-id="1bbc1-143">Högst upp väljer du ditt kontonamn och sedan Logga **ut**.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-143">At the top, select your account name, then select **Sign Out**.</span></span>
+4. <span data-ttu-id="cf1f4-143">Högst upp väljer du ditt kontonamn och sedan Logga **ut**.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-143">At the top, select your account name, then select **Sign Out**.</span></span>
 
-5. <span data-ttu-id="1bbc1-144">Logga in med den nya domänen och ditt lösenord.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-144">Sign in with the new domain and your same password.</span></span>
+5. <span data-ttu-id="cf1f4-144">Logga in med den nya domänen och ditt lösenord.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-144">Sign in with the new domain and your same password.</span></span>
 
-<span data-ttu-id="1bbc1-145">Du kan också använda PowerShell för att flytta användare till en annan domän.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-145">You can also use PowerShell to move users to another domain.</span></span> <span data-ttu-id="1bbc1-146">Se [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) för mer information.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-146">See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information.</span></span> <span data-ttu-id="1bbc1-147">Om du vill ange standarddomänen använder du [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span><span class="sxs-lookup"><span data-stu-id="1bbc1-147">To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
+<span data-ttu-id="cf1f4-p106">Du kan också använda PowerShell för att flytta användare till en annan domän. Se [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) för mer information. Om du vill ange standarddomänen använder du [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span><span class="sxs-lookup"><span data-stu-id="cf1f4-p106">You can also use PowerShell to move users to another domain. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="1bbc1-148">Gå  till \> **Användare aktiva** användare och välj ditt namn i listan.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-148">Go to **Users** \> **Active Users**, and select your name in the list.</span></span>
+1. <span data-ttu-id="cf1f4-148">Gå  till \> **Användare aktiva** användare och välj ditt namn i listan.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-148">Go to **Users** \> **Active Users**, and select your name in the list.</span></span>
 
-2. <span data-ttu-id="1bbc1-149">I avsnittet **Användarnamn/e-post** **väljer du** Redigera och väljer sedan en annan domän.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-149">In the **Username / Email** section, select **Edit**, and then choose a different domain.</span></span>
+2. <span data-ttu-id="cf1f4-149">I avsnittet **Användarnamn/e-post** **väljer du** Redigera och väljer sedan en annan domän.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-149">In the **Username / Email** section, select **Edit**, and then choose a different domain.</span></span>
 
-3. <span data-ttu-id="1bbc1-150">Välj **Ange som primär** > **Spara** > **stäng.**</span><span class="sxs-lookup"><span data-stu-id="1bbc1-150">Select **Set as primary** > **Save** > **Close**.</span></span>
+3. <span data-ttu-id="cf1f4-150">Välj **Ange som primär** > **Spara** > **stäng.**</span><span class="sxs-lookup"><span data-stu-id="cf1f4-150">Select **Set as primary** > **Save** > **Close**.</span></span>
   
-4. <span data-ttu-id="1bbc1-151">Högst upp väljer du ditt kontonamn och sedan Logga **ut**.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-151">At the top, select your account name, then select **Sign Out**.</span></span>
+4. <span data-ttu-id="cf1f4-151">Högst upp väljer du ditt kontonamn och sedan Logga **ut**.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-151">At the top, select your account name, then select **Sign Out**.</span></span>
 
-5. <span data-ttu-id="1bbc1-152">Logga in med den nya domänen och ditt lösenord.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-152">Sign in with the new domain and your same password.</span></span>
+5. <span data-ttu-id="cf1f4-152">Logga in med den nya domänen och ditt lösenord.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-152">Sign in with the new domain and your same password.</span></span>
 
-<span data-ttu-id="1bbc1-153">Du kan också använda PowerShell för att flytta användare till en annan domän.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-153">You can also use PowerShell to move users to another domain.</span></span> <span data-ttu-id="1bbc1-154">Se [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) för mer information.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-154">See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information.</span></span> <span data-ttu-id="1bbc1-155">Om du vill ange standarddomänen använder du [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span><span class="sxs-lookup"><span data-stu-id="1bbc1-155">To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
+<span data-ttu-id="cf1f4-p107">Du kan också använda PowerShell för att flytta användare till en annan domän. Se [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) för mer information. Om du vill ange standarddomänen använder du [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span><span class="sxs-lookup"><span data-stu-id="cf1f4-p107">You can also use PowerShell to move users to another domain. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
 
 ::: moniker-end
 
-### <a name="step-2-move-groups-to-another-domain"></a><span data-ttu-id="1bbc1-156">Steg 2: Flytta användare till en annan domän</span><span class="sxs-lookup"><span data-stu-id="1bbc1-156">Step 2: Move groups to another domain</span></span>
+### <a name="step-2-move-groups-to-another-domain"></a><span data-ttu-id="cf1f4-156">Steg 2: Flytta användare till en annan domän</span><span class="sxs-lookup"><span data-stu-id="cf1f4-156">Step 2: Move groups to another domain</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="1bbc1-157">Gå till sidan Grupper i **administrationscentret.** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a></span><span class="sxs-lookup"><span data-stu-id="1bbc1-157">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
+1. <span data-ttu-id="cf1f4-157">Gå till sidan Grupper i **administrationscentret.** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a></span><span class="sxs-lookup"><span data-stu-id="cf1f4-157">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
   
-2. <span data-ttu-id="1bbc1-158">Markera gruppens namn och välj sedan Redigera **på fliken** Allmänt under **E-postadress,** **Primär**.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-158">Select the group name, and then on the **General** tab under **Email address, Primary**, select **Edit**.</span></span>
+2. <span data-ttu-id="cf1f4-158">Markera gruppens namn och välj sedan Redigera **på fliken** Allmänt under **E-postadress,** **Primär**.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-158">Select the group name, and then on the **General** tab under **Email address, Primary**, select **Edit**.</span></span>
 
-3. <span data-ttu-id="1bbc1-159">Välj en annan domän i listrutan.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-159">Use the drop-down list to choose another domain.</span></span>
+3. <span data-ttu-id="cf1f4-159">Välj en annan domän i listrutan.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-159">Use the drop-down list to choose another domain.</span></span>
 
-4. <span data-ttu-id="1bbc1-160">Välj **Spara** och sedan **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-160">Select **Save**, then **Close**.</span></span> <span data-ttu-id="1bbc1-161">Upprepa proceduren för alla grupper eller distributionslistor som är kopplade till den domän som du försöker ta bort.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-161">Repeat this process for any groups or distribution lists associated with the domain that you want to remove.</span></span>
+4. <span data-ttu-id="cf1f4-160">Välj **Spara** och sedan **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-160">Select **Save**, then **Close**.</span></span> <span data-ttu-id="cf1f4-161">Upprepa proceduren för alla grupper eller distributionslistor som är kopplade till den domän som du försöker ta bort.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-161">Repeat this process for any groups or distribution lists associated with the domain that you want to remove.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="1bbc1-162">Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">sidan Grupper</a>i  >  administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-162">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>,  go to the **Groups** > **Groups** page.</span></span>
+1. <span data-ttu-id="cf1f4-162">Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">sidan Grupper</a>i  >  administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-162">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>,  go to the **Groups** > **Groups** page.</span></span>
 
-2. <span data-ttu-id="1bbc1-163">Markera gruppens namn och välj sedan **Redigera** bredvid **Namn.**</span><span class="sxs-lookup"><span data-stu-id="1bbc1-163">Select the group name, and then select **Edit** next to **Name**.</span></span>
+2. <span data-ttu-id="cf1f4-163">Markera gruppens namn och välj sedan **Redigera** bredvid **Namn.**</span><span class="sxs-lookup"><span data-stu-id="cf1f4-163">Select the group name, and then select **Edit** next to **Name**.</span></span>
 
-3. <span data-ttu-id="1bbc1-164">Välj en annan domän i listrutan.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-164">Use the drop-down list to choose another domain.</span></span>
+3. <span data-ttu-id="cf1f4-164">Välj en annan domän i listrutan.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-164">Use the drop-down list to choose another domain.</span></span>
 
-4. <span data-ttu-id="1bbc1-165">Välj **Spara** och sedan **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-165">Select **Save**, then **Close**.</span></span> <span data-ttu-id="1bbc1-166">Upprepa proceduren för alla grupper eller distributionslistor som är kopplade till den domän som du försöker ta bort.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-166">Repeat this process for any groups or distribution lists associated with the domain that you want to remove.</span></span>
+4. <span data-ttu-id="cf1f4-165">Välj **Spara** och sedan **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-165">Select **Save**, then **Close**.</span></span> <span data-ttu-id="cf1f4-166">Upprepa proceduren för alla grupper eller distributionslistor som är kopplade till den domän som du försöker ta bort.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-166">Repeat this process for any groups or distribution lists associated with the domain that you want to remove.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="1bbc1-167">Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">sidan Grupper</a>i  >  administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-167">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>,  go to the **Groups** > **Groups** page.</span></span>
+1. <span data-ttu-id="cf1f4-167">Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">sidan Grupper</a>i  >  administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-167">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>,  go to the **Groups** > **Groups** page.</span></span>
 
-2. <span data-ttu-id="1bbc1-168">Markera gruppens namn och välj sedan **Redigera** bredvid **Namn.**</span><span class="sxs-lookup"><span data-stu-id="1bbc1-168">Select the group name, and then select **Edit** next to **Name**.</span></span>
+2. <span data-ttu-id="cf1f4-168">Markera gruppens namn och välj sedan **Redigera** bredvid **Namn.**</span><span class="sxs-lookup"><span data-stu-id="cf1f4-168">Select the group name, and then select **Edit** next to **Name**.</span></span>
 
-3. <span data-ttu-id="1bbc1-169">Välj en annan domän i listrutan.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-169">Use the drop-down list to choose another domain.</span></span>
+3. <span data-ttu-id="cf1f4-169">Välj en annan domän i listrutan.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-169">Use the drop-down list to choose another domain.</span></span>
 
-4. <span data-ttu-id="1bbc1-170">Välj **Spara** och sedan **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-170">Select **Save**, then **Close**.</span></span> <span data-ttu-id="1bbc1-171">Upprepa proceduren för alla grupper eller distributionslistor som är kopplade till den domän som du försöker ta bort.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-171">Repeat this process for any groups or distribution lists associated with the domain that you want to remove.</span></span>
+4. <span data-ttu-id="cf1f4-170">Välj **Spara** och sedan **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-170">Select **Save**, then **Close**.</span></span> <span data-ttu-id="cf1f4-171">Upprepa proceduren för alla grupper eller distributionslistor som är kopplade till den domän som du försöker ta bort.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-171">Repeat this process for any groups or distribution lists associated with the domain that you want to remove.</span></span>
 
 ::: moniker-end
 
-### <a name="step-3-remove-the-old-domain"></a><span data-ttu-id="1bbc1-172">Steg 3: Ta bort den gamla domänen</span><span class="sxs-lookup"><span data-stu-id="1bbc1-172">Step 3: Remove the old domain</span></span>
+### <a name="step-3-remove-the-old-domain"></a><span data-ttu-id="cf1f4-172">Steg 3: Ta bort den gamla domänen</span><span class="sxs-lookup"><span data-stu-id="cf1f4-172">Step 3: Remove the old domain</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="1bbc1-173">I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-173">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="cf1f4-173">I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-173">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="1bbc1-174">I administrationscentret går du till **sidan** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Konfigurera</a> domäner.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-174">In the admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="cf1f4-174">I administrationscentret går du till **sidan** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Konfigurera</a> domäner.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-174">In the admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="1bbc1-175">I administrationscentret går du till **sidan** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Konfigurera</a> domäner.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-175">In the admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="cf1f4-175">I administrationscentret går du till **sidan** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Konfigurera</a> domäner.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-175">In the admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
   
-2. <span data-ttu-id="1bbc1-176">På sidan **Domäner** väljer du den domän som du vill ta bort.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-176">On the **Domains** page, select the domain that you want to remove.</span></span>
+2. <span data-ttu-id="cf1f4-176">På sidan **Domäner** väljer du den domän som du vill ta bort.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-176">On the **Domains** page, select the domain that you want to remove.</span></span>
 
-3. <span data-ttu-id="1bbc1-177">Välj Ta bort i det högra **fönstret.**</span><span class="sxs-lookup"><span data-stu-id="1bbc1-177">In the right pane, select **Remove**.</span></span>
+3. <span data-ttu-id="cf1f4-177">Välj Ta bort i det högra **fönstret.**</span><span class="sxs-lookup"><span data-stu-id="cf1f4-177">In the right pane, select **Remove**.</span></span>
 
-4. <span data-ttu-id="1bbc1-178">Följ eventuella ytterligare uppmaningar och välj sedan **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-178">Follow any additional prompts, and then select **Close**.</span></span>
+4. <span data-ttu-id="cf1f4-178">Följ eventuella ytterligare uppmaningar och välj sedan **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-178">Follow any additional prompts, and then select **Close**.</span></span>
 
-## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a><span data-ttu-id="1bbc1-179">Hur länge dröjer det innan en domän tas bort?</span><span class="sxs-lookup"><span data-stu-id="1bbc1-179">How long does it take for a domain to be removed?</span></span>
+## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a><span data-ttu-id="cf1f4-179">Hur länge dröjer det innan en domän tas bort?</span><span class="sxs-lookup"><span data-stu-id="cf1f4-179">How long does it take for a domain to be removed?</span></span>
 
-<span data-ttu-id="1bbc1-180">Det kan ta så lite som 5 minuter för Microsoft 365 att ta bort en domän om den inte finns med på många platser, till exempel säkerhetsgrupper, distributionslistor, användare och Microsoft 365-grupper.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-180">It can take as little as 5 minutes for Microsoft 365 to remove a domain if it's not referenced in a lot of places such as security groups, distribution lists, users, and Microsoft 365 groups.</span></span> <span data-ttu-id="1bbc1-181">Om det finns många referenser till domänen kan det ta flera timmar (ett dygn) innan domänen tas bort.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-181">If there are many references that use the domain it can take several hours (a day) for the domain to be removed.</span></span>
+<span data-ttu-id="cf1f4-180">Det kan ta så lite som 5 minuter för Microsoft 365 att ta bort en domän om den inte finns med på många platser, till exempel säkerhetsgrupper, distributionslistor, användare Microsoft 365 säkerhetsgrupper.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-180">It can take as little as 5 minutes for Microsoft 365 to remove a domain if it's not referenced in a lot of places such as security groups, distribution lists, users, and Microsoft 365 groups.</span></span> <span data-ttu-id="cf1f4-181">Om det finns många referenser till domänen kan det ta flera timmar (ett dygn) innan domänen tas bort.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-181">If there are many references that use the domain it can take several hours (a day) for the domain to be removed.</span></span>
   
-<span data-ttu-id="1bbc1-p112">Om du har hundratals eller tusentals användare använder du PowerShell och letar upp alla användare och flyttar dem till en annan domän. Annars kan det hända att några användare missas i gränssnittet och när du sedan försöker ta bort domänen så går det inte och du kommer inte att veta varför. Mer information finns i [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Om du vill ange standarddomänen använder du [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span><span class="sxs-lookup"><span data-stu-id="1bbc1-p112">If you have hundreds or thousands of users, use PowerShell to query for all users and then move them to another domain. Otherwise, it's possible for a handful of users to be missed in the UI, and then when you go to remove the domain, you won't be able to and you won't know why. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
+<span data-ttu-id="cf1f4-p112">Om du har hundratals eller tusentals användare använder du PowerShell och letar upp alla användare och flyttar dem till en annan domän. Annars kan det hända att några användare missas i gränssnittet och när du sedan försöker ta bort domänen så går det inte och du kommer inte att veta varför. Mer information finns i [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Om du vill ange standarddomänen använder du [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span><span class="sxs-lookup"><span data-stu-id="cf1f4-p112">If you have hundreds or thousands of users, use PowerShell to query for all users and then move them to another domain. Otherwise, it's possible for a handful of users to be missed in the UI, and then when you go to remove the domain, you won't be able to and you won't know why. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
   
-## <a name="still-need-help"></a><span data-ttu-id="1bbc1-186">Behöver du fortfarande hjälp?</span><span class="sxs-lookup"><span data-stu-id="1bbc1-186">Still need help?</span></span>
+## <a name="still-need-help"></a><span data-ttu-id="cf1f4-186">Behöver du fortfarande hjälp?</span><span class="sxs-lookup"><span data-stu-id="cf1f4-186">Still need help?</span></span>
 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> <span data-ttu-id="1bbc1-187">Du kan inte ta bort domänen [".onmicrosoft.com"](../setup/domains-faq.yml) från ditt konto.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-187">You can't remove the [".onmicrosoft.com"](../setup/domains-faq.yml) domain from your account.</span></span> <span data-ttu-id="1bbc1-188">När du tar bort en domän återgår användarkontona till ".onmicrosoft.com"-adressen som primärt SMTP/UserprincipalName.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-188">When you remove a domain, user accounts will revert back to the ".onmicrosoft.com" address as the Primary SMTP/UserprincipalName.</span></span>
+> <span data-ttu-id="cf1f4-187">Du kan inte ta bort domänen [".onmicrosoft.com"](../setup/domains-faq.yml) från ditt konto.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-187">You can't remove the [".onmicrosoft.com"](../setup/domains-faq.yml) domain from your account.</span></span> <span data-ttu-id="cf1f4-188">När du tar bort en domän återgår användarkontona till ".onmicrosoft.com"-adressen som primärt SMTP/UserprincipalName.</span><span class="sxs-lookup"><span data-stu-id="cf1f4-188">When you remove a domain, user accounts will revert back to the ".onmicrosoft.com" address as the Primary SMTP/UserprincipalName.</span></span>
   
-<span data-ttu-id="1bbc1-189">Fungerar det fortfarande inte?</span><span class="sxs-lookup"><span data-stu-id="1bbc1-189">Still not working?</span></span> <span data-ttu-id="1bbc1-190">Domänen kan behöva tas bort manuellt.</span><span class="sxs-lookup"><span data-stu-id="1bbc1-190">Your domain might need to be manually removed.</span></span> <span data-ttu-id="1bbc1-191">[Ring oss](../contact-support-for-business-products.md) så kan vi hjälpa dig med det!</span><span class="sxs-lookup"><span data-stu-id="1bbc1-191">[Give us a call](../contact-support-for-business-products.md) and we'll help you take care of it!</span></span>
+<span data-ttu-id="cf1f4-p114">Fungerar det fortfarande inte? Domänen kan behöva tas bort manuellt. [Ring oss](../../business-video/get-help-support.md) så kan vi hjälpa dig med det!</span><span class="sxs-lookup"><span data-stu-id="cf1f4-p114">Still not working? Your domain might need to be manually removed. [Give us a call](../../business-video/get-help-support.md) and we'll help you take care of it!</span></span>
   
 ::: moniker-end
 
-## <a name="related-articles"></a><span data-ttu-id="1bbc1-192">Relaterade artiklar</span><span class="sxs-lookup"><span data-stu-id="1bbc1-192">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="cf1f4-192">Relaterade artiklar</span><span class="sxs-lookup"><span data-stu-id="cf1f4-192">Related articles</span></span>
 
-[<span data-ttu-id="1bbc1-193">Vanliga frågor och svar om domäner</span><span class="sxs-lookup"><span data-stu-id="1bbc1-193">Domains FAQ</span></span>](../setup/domains-faq.yml)
+[<span data-ttu-id="cf1f4-193">Vanliga frågor och svar om domäner</span><span class="sxs-lookup"><span data-stu-id="cf1f4-193">Domains FAQ</span></span>](../setup/domains-faq.yml)
 
-[<span data-ttu-id="1bbc1-194">Byta till ett annat Microsoft 365 för företag-abonnemang</span><span class="sxs-lookup"><span data-stu-id="1bbc1-194">Switch to a different Microsoft 365 for business plan</span></span>](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[<span data-ttu-id="cf1f4-194">Byta till ett annat Microsoft 365 för företag-abonnemang</span><span class="sxs-lookup"><span data-stu-id="cf1f4-194">Switch to a different Microsoft 365 for business plan</span></span>](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
-[<span data-ttu-id="1bbc1-195">Avbryt prenumerationen</span><span class="sxs-lookup"><span data-stu-id="1bbc1-195">Cancel your subscription</span></span>](../../commerce/subscriptions/cancel-your-subscription.md)
+[<span data-ttu-id="cf1f4-195">Avbryt prenumerationen</span><span class="sxs-lookup"><span data-stu-id="cf1f4-195">Cancel your subscription</span></span>](../../commerce/subscriptions/cancel-your-subscription.md)

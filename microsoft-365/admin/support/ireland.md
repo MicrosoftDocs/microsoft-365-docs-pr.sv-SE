@@ -12,29 +12,29 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d0d449a35aad057dd84e52a1e454672750878b88
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: a87177597235fbc1f0c147a16b18a6557084473b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546706"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296053"
 ---
-# <a name="contact-support-for-ireland"></a><span data-ttu-id="5f233-103">Kontakta support för Irland</span><span class="sxs-lookup"><span data-stu-id="5f233-103">Contact support for Ireland</span></span>
+# <a name="contact-support-for-ireland"></a><span data-ttu-id="08a1b-103">Kontakta supporten för Irland</span><span class="sxs-lookup"><span data-stu-id="08a1b-103">Contact support for Ireland</span></span>
 
-<span data-ttu-id="5f233-104">[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="5f233-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="08a1b-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="08a1b-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="5f233-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="5f233-105">Phone number</span></span>
-<span data-ttu-id="5f233-106">1 800 995309</span><span class="sxs-lookup"><span data-stu-id="5f233-106">1 800 995309</span></span>
+## <a name="phone-number"></a><span data-ttu-id="08a1b-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="08a1b-105">Phone number</span></span>
+<span data-ttu-id="08a1b-106">1 800 995309</span><span class="sxs-lookup"><span data-stu-id="08a1b-106">1 800 995309</span></span>
 
-## <a name="hours"></a><span data-ttu-id="5f233-107">Tider</span><span class="sxs-lookup"><span data-stu-id="5f233-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="5f233-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="5f233-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="08a1b-107">Tider</span><span class="sxs-lookup"><span data-stu-id="08a1b-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="08a1b-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="08a1b-108">Billing Support:</span></span>
 
-<span data-ttu-id="5f233-109">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="5f233-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="08a1b-109">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="08a1b-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="5f233-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="5f233-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="08a1b-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="08a1b-110">Technical Support:</span></span>
 
-<span data-ttu-id="5f233-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="5f233-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="08a1b-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="08a1b-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="5f233-112">Alternativt telefonnummer: 01 656 9837</span><span class="sxs-lookup"><span data-stu-id="5f233-112">Alternative Phone Number: 01 656 9837</span></span>
+<span data-ttu-id="08a1b-112">Alternativ Telefon tal: 01 656 9837</span><span class="sxs-lookup"><span data-stu-id="08a1b-112">Alternative Phone Number: 01 656 9837</span></span>
 
-<span data-ttu-id="5f233-113">Lokal samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="5f233-113">Local call charges apply</span></span>
+<span data-ttu-id="08a1b-113">Lokal samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="08a1b-113">Local call charges apply</span></span>

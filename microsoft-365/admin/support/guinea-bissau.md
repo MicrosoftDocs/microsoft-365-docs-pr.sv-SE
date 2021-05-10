@@ -12,29 +12,29 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bcf357cc47b2ab0fb06553b117c0dd3fa117e76b
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 989f4bb1d71b12f8893291106f49db1f02bc28ae
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546970"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296125"
 ---
-# <a name="contact-support-for-guinea-bissau"></a><span data-ttu-id="1d89b-103">Kontakta support för Guinea-Bissau</span><span class="sxs-lookup"><span data-stu-id="1d89b-103">Contact support for Guinea-Bissau</span></span>
+# <a name="contact-support-for-guinea-bissau"></a><span data-ttu-id="c99a6-103">Kontakta support för Guinea-Bissau</span><span class="sxs-lookup"><span data-stu-id="c99a6-103">Contact support for Guinea-Bissau</span></span>
 
-<span data-ttu-id="1d89b-104">[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="1d89b-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="c99a6-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="c99a6-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="1d89b-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="1d89b-105">Phone number</span></span>
-<span data-ttu-id="1d89b-106">+1 312 843 5153</span><span class="sxs-lookup"><span data-stu-id="1d89b-106">+1 312 843 5153</span></span>
+## <a name="phone-number"></a><span data-ttu-id="c99a6-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="c99a6-105">Phone number</span></span>
+<span data-ttu-id="c99a6-106">+1 312 843 5153</span><span class="sxs-lookup"><span data-stu-id="c99a6-106">+1 312 843 5153</span></span>
 
-## <a name="hours"></a><span data-ttu-id="1d89b-107">Tider</span><span class="sxs-lookup"><span data-stu-id="1d89b-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="1d89b-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="1d89b-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="c99a6-107">Tider</span><span class="sxs-lookup"><span data-stu-id="c99a6-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="c99a6-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="c99a6-108">Billing Support:</span></span>
 
-<span data-ttu-id="1d89b-109">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="1d89b-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="c99a6-109">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="c99a6-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="1d89b-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="1d89b-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="c99a6-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="c99a6-110">Technical Support:</span></span>
 
-<span data-ttu-id="1d89b-111">Portugisiska: 08:00–21:00</span><span class="sxs-lookup"><span data-stu-id="1d89b-111">Portuguese: 8 AM-9 PM</span></span>
+<span data-ttu-id="c99a6-111">Portugisiska: 08:00–21:00</span><span class="sxs-lookup"><span data-stu-id="c99a6-111">Portuguese: 8 AM-9 PM</span></span>
 
-<span data-ttu-id="1d89b-112">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="1d89b-112">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="c99a6-112">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="c99a6-112">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="1d89b-113">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="1d89b-113">International call charges apply</span></span>
+<span data-ttu-id="c99a6-113">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="c99a6-113">International call charges apply</span></span>

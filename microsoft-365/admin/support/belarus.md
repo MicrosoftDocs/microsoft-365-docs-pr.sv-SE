@@ -12,33 +12,33 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b590a1fee8b3ac556d472afe71ce1dc45b8158b4
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: c536987035743f9a640d427375efaedfce21fbb8
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548710"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296557"
 ---
-# <a name="contact-support-for-belarus"></a><span data-ttu-id="c63d8-103">Kontakta supporten för Vitryssland</span><span class="sxs-lookup"><span data-stu-id="c63d8-103">Contact support for Belarus</span></span>
+# <a name="contact-support-for-belarus"></a><span data-ttu-id="72037-103">Kontakta supporten för Vitryssland</span><span class="sxs-lookup"><span data-stu-id="72037-103">Contact support for Belarus</span></span>
 
-<span data-ttu-id="c63d8-104">[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="c63d8-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="72037-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="72037-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="c63d8-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="c63d8-105">Phone number</span></span>
-<span data-ttu-id="c63d8-106">8 820 0071 0003</span><span class="sxs-lookup"><span data-stu-id="c63d8-106">8 820 0071 0003</span></span>
+## <a name="phone-number"></a><span data-ttu-id="72037-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="72037-105">Phone number</span></span>
+<span data-ttu-id="72037-106">8 820 0071 0003</span><span class="sxs-lookup"><span data-stu-id="72037-106">8 820 0071 0003</span></span>
 
-<span data-ttu-id="c63d8-107">Välj alternativ 9</span><span class="sxs-lookup"><span data-stu-id="c63d8-107">Select option 9</span></span>
+<span data-ttu-id="72037-107">Välj alternativ 9</span><span class="sxs-lookup"><span data-stu-id="72037-107">Select option 9</span></span>
 
-<span data-ttu-id="c63d8-108">Ange kod 7707</span><span class="sxs-lookup"><span data-stu-id="c63d8-108">Enter code 7707</span></span>
+<span data-ttu-id="72037-108">Ange kod 7707</span><span class="sxs-lookup"><span data-stu-id="72037-108">Enter code 7707</span></span>
 
-## <a name="hours"></a><span data-ttu-id="c63d8-109">Tider</span><span class="sxs-lookup"><span data-stu-id="c63d8-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="c63d8-110">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="c63d8-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="72037-109">Tider</span><span class="sxs-lookup"><span data-stu-id="72037-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="72037-110">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="72037-110">Billing Support:</span></span>
 
-<span data-ttu-id="c63d8-111">Ryska: Mon-Fri 10:00–17:00 Moskva</span><span class="sxs-lookup"><span data-stu-id="c63d8-111">Russian: Mon-Fri 10 AM-7 PM Moscow</span></span>
+<span data-ttu-id="72037-111">Ryska: Mon-Fri 10:00–17:00 Moskva</span><span class="sxs-lookup"><span data-stu-id="72037-111">Russian: Mon-Fri 10 AM-7 PM Moscow</span></span>
 
-<span data-ttu-id="c63d8-112">Engelska: Mon-Fri 9–17 London</span><span class="sxs-lookup"><span data-stu-id="c63d8-112">English: Mon-Fri 9 AM-5 PM London</span></span>
+<span data-ttu-id="72037-112">Engelska: Mon-Fri 9:00–17:00 London</span><span class="sxs-lookup"><span data-stu-id="72037-112">English: Mon-Fri 9 AM-5 PM London</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="c63d8-113">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="c63d8-113">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="72037-113">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="72037-113">Technical Support:</span></span>
 
-<span data-ttu-id="c63d8-114">Ryska: Mon-Fri 19.00–18 Moskva</span><span class="sxs-lookup"><span data-stu-id="c63d8-114">Russian: Mon-Fri 7 AM-8 PM Moscow</span></span>
+<span data-ttu-id="72037-114">Ryska: Mon-Fri 07:00–18:00 Moskva</span><span class="sxs-lookup"><span data-stu-id="72037-114">Russian: Mon-Fri 7 AM-8 PM Moscow</span></span>
 
-<span data-ttu-id="c63d8-115">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="c63d8-115">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="72037-115">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="72037-115">English: 24 hours a day, 7 days a week</span></span>
