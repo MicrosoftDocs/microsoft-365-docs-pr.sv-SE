@@ -12,29 +12,29 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 34ab5266355b7973dc3c5689c37a1d00d1045a07
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: a884dc8ae8d6455768444dfacaea89e691824fa6
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543610"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297494"
 ---
-# <a name="contact-support-for-ukraine"></a><span data-ttu-id="d51af-103">Kontakta supporten för Ukraina</span><span class="sxs-lookup"><span data-stu-id="d51af-103">Contact support for Ukraine</span></span>
+# <a name="contact-support-for-ukraine"></a><span data-ttu-id="77d3a-103">Kontakta support för Ukraina</span><span class="sxs-lookup"><span data-stu-id="77d3a-103">Contact support for Ukraine</span></span>
 
-<span data-ttu-id="d51af-104">[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="d51af-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="77d3a-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="77d3a-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="d51af-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="d51af-105">Phone number</span></span>
-<span data-ttu-id="d51af-106">0800 502 285</span><span class="sxs-lookup"><span data-stu-id="d51af-106">0800 502 285</span></span>
+## <a name="phone-number"></a><span data-ttu-id="77d3a-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="77d3a-105">Phone number</span></span>
+<span data-ttu-id="77d3a-106">0800 502 285</span><span class="sxs-lookup"><span data-stu-id="77d3a-106">0800 502 285</span></span>
 
-## <a name="hours"></a><span data-ttu-id="d51af-107">Tider</span><span class="sxs-lookup"><span data-stu-id="d51af-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="d51af-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="d51af-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="77d3a-107">Tider</span><span class="sxs-lookup"><span data-stu-id="77d3a-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="77d3a-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="77d3a-108">Billing Support:</span></span>
 
-<span data-ttu-id="d51af-109">Ryska: Mon-Fri 10:00–17:00 Moskva</span><span class="sxs-lookup"><span data-stu-id="d51af-109">Russian: Mon-Fri 10 AM-7 PM Moscow</span></span>
+<span data-ttu-id="77d3a-109">Ryska: Mon-Fri 10:00–17:00 Moskva</span><span class="sxs-lookup"><span data-stu-id="77d3a-109">Russian: Mon-Fri 10 AM-7 PM Moscow</span></span>
 
-<span data-ttu-id="d51af-110">Engelska: Mon-Fri 9–17 London</span><span class="sxs-lookup"><span data-stu-id="d51af-110">English: Mon-Fri 9 AM-5 PM London</span></span>
+<span data-ttu-id="77d3a-110">Engelska: Mon-Fri 9:00–17:00 London</span><span class="sxs-lookup"><span data-stu-id="77d3a-110">English: Mon-Fri 9 AM-5 PM London</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="d51af-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="d51af-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="77d3a-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="77d3a-111">Technical Support:</span></span>
 
-<span data-ttu-id="d51af-112">Ryska: Mon-Fri 19.00–18 Moskva</span><span class="sxs-lookup"><span data-stu-id="d51af-112">Russian: Mon-Fri 7 AM-8 PM Moscow</span></span>
+<span data-ttu-id="77d3a-112">Ryska: Mon-Fri 07:00–18:00 Moskva</span><span class="sxs-lookup"><span data-stu-id="77d3a-112">Russian: Mon-Fri 7 AM-8 PM Moscow</span></span>
 
-<span data-ttu-id="d51af-113">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="d51af-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="77d3a-113">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="77d3a-113">English: 24 hours a day, 7 days a week</span></span>

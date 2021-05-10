@@ -1,5 +1,5 @@
 ---
-title: Supportinformation för Islandsöarna
+title: Supportinformation för Salomonöarna
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,27 +12,27 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ce709131b7a2e25a352a2cdafdf0bb79c98b4f3b
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 00e1bdfce00cc3a0a83bc89d5b1639764a4b2aaa
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544330"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297698"
 ---
-# <a name="contact-support-for-solomon-islands"></a><span data-ttu-id="b0c0e-103">Kontakta support för Islandsöarna</span><span class="sxs-lookup"><span data-stu-id="b0c0e-103">Contact support for Solomon Islands</span></span>
+# <a name="contact-support-for-solomon-islands"></a><span data-ttu-id="d73df-103">Kontakta supporten för Salomonöarna</span><span class="sxs-lookup"><span data-stu-id="d73df-103">Contact support for Solomon Islands</span></span>
 
-<span data-ttu-id="b0c0e-104">[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="b0c0e-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="d73df-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="d73df-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="b0c0e-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="b0c0e-105">Phone number</span></span>
-<span data-ttu-id="b0c0e-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="b0c0e-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="d73df-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="d73df-105">Phone number</span></span>
+<span data-ttu-id="d73df-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="d73df-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="b0c0e-107">Tider</span><span class="sxs-lookup"><span data-stu-id="b0c0e-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="b0c0e-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="b0c0e-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="d73df-107">Tider</span><span class="sxs-lookup"><span data-stu-id="d73df-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="d73df-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="d73df-108">Billing Support:</span></span>
 
-<span data-ttu-id="b0c0e-109">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="b0c0e-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="d73df-109">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="d73df-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="b0c0e-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="b0c0e-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="d73df-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="d73df-110">Technical Support:</span></span>
 
-<span data-ttu-id="b0c0e-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="b0c0e-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="d73df-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="d73df-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="b0c0e-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="b0c0e-112">International call charges apply</span></span>
+<span data-ttu-id="d73df-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="d73df-112">International call charges apply</span></span>
