@@ -1,5 +1,5 @@
 ---
-title: Supportinformation för Norfolk Island
+title: Supportinformation för Norfolkön
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ff5170c9285b166ba11de169fdd7a6045b65a580
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: aa1b354c7f9f55b436b234d4b7ba39e4d83ee0e4
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545290"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297961"
 ---
-# <a name="contact-support-for-norfolk-island"></a>Kontakta support för Norfolk Island
+# <a name="contact-support-for-norfolk-island"></a>Kontakta supporten för Norfolk Island
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 +1 312 843 5148
@@ -29,7 +29,7 @@ ms.locfileid: "50545290"
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Engelska: Mon-Fri 22.00–18.00
+Engelska: Mon-Fri 22:00–18:00
 
 ### <a name="technical-support"></a>Teknisk support:
 

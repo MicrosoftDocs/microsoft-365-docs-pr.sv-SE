@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9475a197b189c98cd920a5eb6b52be82c0e7144d
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 925d924c4e4bdd1de36516942a0c585ee10984e4
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546874"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298653"
 ---
-# <a name="contact-support-for-hungary"></a>Kontakta support för Ungern
+# <a name="contact-support-for-hungary"></a>Kontakta supporten för Ungern
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 +36 80 983 899
@@ -33,10 +33,10 @@ Engelska: Mon-Fri 9.00–17.00
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Ungerska: Mon-Fri 20:00–18:00
+Ungerska: Mon-Fri 08:00–18:00
 
 Engelska: mån–sön, dygnet runt
 
-Alternativt telefonnummer: +36 1 778 9292
+Alternativ Telefon tal: +36 1 778 9292
 
 Lokal samtalsavgift

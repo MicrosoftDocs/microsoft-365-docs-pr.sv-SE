@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d3eb7b9d6c08dbe7b671f8d185b4e9a0e852b1e1
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 31a5f5f7748882f885570c38e8413dbcacab5b73
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545266"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297926"
 ---
-# <a name="contact-support-for-norway"></a>Kontakta support för Norge
+# <a name="contact-support-for-norway"></a>Kontakta supporten för Norge
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 800 31068
@@ -35,6 +35,6 @@ Engelska: Mon-Fri 9.00–17.00
 
 Engelska: mån–sön, dygnet runt
 
-Alternativt telefonnummer: 22 31 07 48
+Alternativ Telefon tal: 22 31 07 48
 
 Lokal samtalsavgift

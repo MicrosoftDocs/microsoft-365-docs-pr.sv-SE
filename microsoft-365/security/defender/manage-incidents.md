@@ -1,5 +1,5 @@
 ---
-title: Hantera incidenter i Microsoft 365 Defender
+title: Hantera ärenden i Microsoft 365 Defender
 description: Lär dig hur du tilldelar, uppdaterar status,
 keywords: incident, incidenter, analysera, svar, aviseringar, korrelerade aviseringar, tilldela, uppdatera, status, hantera, klassificering, microsoft, 365, m365
 search.product: eADQiWindows 10XVcnh
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5f66189979f401430353f4c15978a85276b48840
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 09c391d6b02e1273f55070283a6e11454f677114
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939760"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300007"
 ---
-# <a name="manage-incidents-in-microsoft-365-defender"></a>Hantera incidenter i Microsoft 365 Defender
+# <a name="manage-incidents-in-microsoft-365-defender"></a>Hantera ärenden i Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "51939760"
 
 Incidenthantering är viktigt för att säkerställa att hoten finns och hanteras.
 
-Du hanterar incidenter **från & och > incidenter** i snabbstarten av Säkerhetscenter för Microsoft 365 [(security.microsoft.com).](https://security.microsoft.com) Här är ett exempel.
+Du hanterar incidenter **från & och > incidenter** i snabbstarten av säkerhetscentret i Microsoft 365 [(security.microsoft.com).](https://security.microsoft.com) Här är ett exempel.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Exempel på incidentkön":::
 
@@ -98,8 +98,16 @@ Om det var en verklig varning bör du också ange vilken typ av hot det var med 
 
 Du kan lägga till flera kommentarer till en händelse med **fältet** Kommentar. Varje kommentar läggs till i de historiska händelserna för händelsen. Du kan se kommentarer och historik för en händelse via **länken Kommentarer och historik** på **sidan** Sammanfattning.
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="next-steps"></a>Nästa steg
+
+Påbörja din undersökning för nya [incidenter.](investigate-incidents.md)
+
+Fortsätt din undersökning för pågående [ärenden.](investigate-incidents.md)
+
+För lösta incidenter utför du [en granskning efter incidenten.](first-incident-post.md)
+
+## <a name="see-also"></a>Se även
 
 - [Översikt över incidenter](incidents-overview.md)
 - [Prioritera incidenter](incident-queue.md)
-- [Analysera incidenter](investigate-incidents.md)
+- [Undersöka incidenter](investigate-incidents.md)

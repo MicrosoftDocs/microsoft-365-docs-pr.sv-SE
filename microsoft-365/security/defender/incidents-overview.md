@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e2e29015d4cb5e04510577118eb847b9b596a6c5
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 93751a8297e61a969e0049e27a847324a3d16872
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114288"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300019"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Incidenter i Microsoft 365 Defender
 
@@ -62,7 +62,7 @@ Om du grupperar relaterade aviseringar i en incident får du en omfattande bild 
 - Attackens omfattning, till exempel hur många enheter, användare och postlådor som påverkades. 
 - Alla data som är associerade med attacken.
 
-Om [den](m365d-enable.md)är aktiverad Microsoft 365 Defender undersöka och åtgärda varningar automatiskt och artificiell intelligens. Du kan också utföra ytterligare åtgärdssteg för att lösa attacken. 
+Om [den](m365d-enable.md)är aktiverad Microsoft 365 Defender [undersöka och åtgärda](m365d-autoir.md) varningar automatiskt och artificiell intelligens. Du kan också utföra ytterligare åtgärdssteg för att lösa attacken. 
 
 ## <a name="incidents-and-alerts-in-the-microsoft-365-security-center"></a>Incidenter och aviseringar på Microsoft 365 säkerhetscenter
 
@@ -94,11 +94,15 @@ Ytterligare flikar för en händelse är:
 
 - Undersökningar
 
-  Alla automatiserade undersökningar som utlösts av aviseringar i händelsen.
+  Alla automatiserade [undersökningar som](m365d-autoir.md) utlösts av aviseringar i händelsen.
 
 - Bevis och svar
 
   Alla händelser som stöds och misstänkta enheter i aviseringarna om händelsen.
+
+- Graph (i förhandsgranskning)
+
+  En bild som visar kopplingen av aviseringar till de påverkade tillgångarna i organisationen.
 
 Här är förhållandet mellan en händelse och dess data och flikarna för en incident i Microsoft 365 säkerhetscenter.
 
@@ -115,7 +119,7 @@ Identifiera ärenden med högsta prioritet för analys och lösning i incidentk�
 - [Prioritera till](incident-queue.md) att fastställa incidenter med högsta prioritet genom att filtrera och sortera incidentkön.
 - [Hantera](manage-incidents.md) incidenter genom att ändra deras titel, tilldela dem till en analytiker och lägga till taggar och kommentarer.
 
-1. Påbörja en analys av en attack [och avisering för varje incident:](investigate-incidents.md)
+1. Påbörja en attack och aviseringsundersökning och analys [för varje händelse:](investigate-incidents.md)
  
    a. Visa sammanfattningen av incidenten för att förstå dess omfattning och allvarlighetsgrad och vilka enheter som påverkas **(fliken** Sammanfattning).
 
@@ -123,7 +127,7 @@ Identifiera ärenden med högsta prioritet för analys och lösning i incidentk�
 
    c. Vid behov samlar du in information om påverkade enheter, användare och postlådor **(flikarna** **Enheter,** Användare **och Postlådor).**
 
-   d. Se hur Microsoft 365 Defender automatiskt har löst vissa aviseringar **(fliken Undersökningar).**
+   d. Se hur Microsoft 365 Defender har [löst vissa aviseringar automatiskt](m365d-autoir.md) **(fliken Undersökningar).**
    
    e. Vid behov kan du använda informationen i datauppsättningen för incidenten för mer information **(fliken Bevis och** svar).
 
@@ -149,7 +153,7 @@ Här är ett exempel på säkerhetsåtgärder för Microsoft 365 Defender.
 Dagliga uppgifter kan omfatta:
 
 - [Hantera](manage-incidents.md) incidenter
-- Granska [åtgärder för automatisk undersökning och svar (AIR)](m365d-action-center.md)
+- Granska [åtgärder för automatisk undersökning och svar (AIR)](m365d-action-center.md) i Åtgärdscenter
 - Gå igenom de senaste [hotanalyserna](threat-analytics.md)
 - [Svara på](investigate-incidents.md) ärenden
 
@@ -167,8 +171,19 @@ Dagliga, månatliga, kvartals- och årliga uppgifter kan användas för att uppd
 
 ## <a name="next-steps"></a>Nästa steg
 
-I incidentkön på **sidan Incidenter** visas de senaste incidenterna. Härifrån kan du:
+**Om du inte har angående** säkerhetsanalys och incidentsvar:
 
-- Se vilka incidenter som [ska prioriteras](incident-queue.md) utifrån allvarlighetsgrad och andra faktorer. 
-- [Hantera incidenter,](manage-incidents.md)som omfattar att byta namn på, tilldelning, klassificera och lägga till taggar och kommentarer för arbetsflödet för incidenthantering.
-- Utföra en [analys](investigate-incidents.md) av en händelse.
+- I [](first-incident-overview.md) genomgången Svara på din första incident finns en guidad genomgång av en typisk process av analys, åtgärder och efter incidentgranskning i säkerhetscentret i Microsoft 365 med ett exempel på en attack.
+
+**Om du har erfarenhet av** säkerhetsanalys och incidentsvar:
+
+- Kom igång med incidentkön på sidan **Incidenter** Microsoft 365 säkerhetscenter. Härifrån kan du:
+
+  - Se vilka incidenter som [ska prioriteras](incident-queue.md) utifrån allvarlighetsgrad och andra faktorer. 
+
+  - [Hantera incidenter,](manage-incidents.md)som omfattar att byta namn på, tilldelning, klassificera och lägga till taggar och kommentarer baserat på arbetsflödet för incidenthantering.
+
+  - Utföra [undersökningar](investigate-incidents.md) av incidenter.
+
+- I de här [spelböckerna för incidenter](https://docs.microsoft.com/security/compass/incident-response-playbooks) finns detaljerad vägledning för attacker för nätfiske, lösenordsförsök och att bevilja åtkomst till appar.
+

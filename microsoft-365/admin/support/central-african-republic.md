@@ -1,5 +1,5 @@
 ---
-title: Supportinformation för Centralafrikanen
+title: Supportinformation för Centrala republiken
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9484dc530d60beecdede1693d6cadf028ececd2d
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 545e684db95203dc7e464c42f35a217f8ef1cc1b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548170"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52299946"
 ---
-# <a name="contact-support-for-central-african-republic"></a>Kontakta supporten för Centralafrikanen
+# <a name="contact-support-for-central-african-republic"></a>Kontakta supporten för Centrala republiken
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 +1 312 843 5147
@@ -29,7 +29,7 @@ ms.locfileid: "50548170"
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Franska: Mon-Fri 9–17
+Franska: Mon-Fri 9:00–17:00
 
 Engelska: Mon-Fri 9.00–17.00
 

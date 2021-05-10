@@ -1,5 +1,5 @@
 ---
-title: Supportinformation för Dokanska republiken
+title: Supportinformation för Dominican Republic
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c58b22bedc3bc9292152dd86e28a56bbb33461fe
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 66be529b6a300dfd57a59e755311e28c167beffb
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547726"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298968"
 ---
-# <a name="contact-support-for-dominican-republic"></a>Kontakta supporten för Dokanska republiken
+# <a name="contact-support-for-dominican-republic"></a>Kontakta supporten för Dominican Republic
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 1 800 751 3455
@@ -33,12 +33,12 @@ Ange kod 7007
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Spanska: Mon-Fri 9.00–17.00
+Spanska: Mon-Fri 9–17
 
 ### <a name="technical-support"></a>Teknisk support:
 
 Spanska: 24 timmar om dygnet, 7 dagar i veckan
 
-Alternativt telefonnummer: 1 809 200 8794
+Alternativ Telefon tal: 1 809 200 8794
 
 (Mobilnät avgiftsfritt)

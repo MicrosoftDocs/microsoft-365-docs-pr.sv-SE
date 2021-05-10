@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 00abaf1cecfcc89acf761df556a5aacb2e8efba3
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: eef1b091b2b705a5ae83cba8dc7d5c22bd021856
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545410"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297938"
 ---
-# <a name="contact-support-for-nigeria"></a>Kontakta support för Nigeria
+# <a name="contact-support-for-nigeria"></a>Kontakta supporten för Nigeria
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 01 912 5070

@@ -13,12 +13,12 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft tillhandahåller hjälp för EOP på en mängd olika platser och metoder, inklusive självsupport och assisterad support.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5859adec666fc8cd957ab0b199a1bd600279288f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 85d6c23dcec77fac6a91ae353bce951c005a4b29
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207092"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298044"
 ---
 # <a name="help-and-support-for-eop"></a>Hjälp och support för EOP
 
@@ -29,25 +29,25 @@ ms.locfileid: "51207092"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor hjälper de tekniska supportresurserna som listas i den här artikeln dig att hitta svar om du har problem med EOP. Microsoft tillhandahåller hjälp för EOP på en mängd olika platser och metoder, inklusive självsupport och assisterad support.
+I Microsoft 365 organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor, kommer de tekniska supportresurserna som listas i den här artikeln att hjälpa dig att hitta svar om du har problem med EOP. Microsoft tillhandahåller hjälp för EOP på en mängd olika platser och metoder, inklusive självsupport och assisterad support.
 
 ## <a name="self-support-options"></a>Självsupportalternativ
 
-När du loggar in innehåller administrationscentret för Microsoft 365 information om status för din organisations tjänster. Dessutom visar avsnittet tjänstens hälsa den aktuella statusen för dina tjänster, information om störningar och avbrott och visar planerade underhållstider. I administrationscentret för Microsoft 365 finns också information om kända problem och förväntade lösningar. Om du påverkas av en tjänstomfattande händelse bör du se en kommunikationsavisering (vanligtvis åtföljd av en klockikon). Vi rekommenderar att du läser och agerar på eventuella objekt efter behov. Mer information om hälsoområdet för tjänsten finns i [Tjänstens hälsa och kontinuitet.](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) Du kanske kan hitta mer hjälp på egen hand med hjälp av de verktyg, forum och communitywebbplatser som listas här.
+När du loggar in Microsoft 365 administrationscentret information om status för din organisations tjänster. Dessutom visar avsnittet tjänstens hälsa den aktuella statusen för dina tjänster, information om störningar och avbrott och visar planerade underhållstider. I Microsoft 365 administrationscenter finns också information om kända problem och förväntade lösningar. Om du påverkas av en tjänstomfattande händelse bör du se en kommunikationsavisering (vanligtvis åtföljd av en klockikon). Vi rekommenderar att du läser och agerar på eventuella objekt efter behov. Mer information om hälsoområdet för tjänsten finns i [Tjänstens hälsa och kontinuitet.](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) Du kanske kan hitta mer hjälp på egen hand med hjälp av de verktyg, forum och communitywebbplatser som listas här.
 
 [Produktöversikt för Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[Kontakta supporten för företagsprodukter – hjälp för administratörer](../../admin/contact-support-for-business-products.md)
+[Kontakta supporten för företagsprodukter – hjälp för administratörer](../../business-video/get-help-support.md)
 
-[Microsoft 365-communityn](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+[Microsoft 365 community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Support- och återställningsassistenten från Microsoft (SaRA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
+[Microsoft Support- och återställningsassistenten (SaRA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
 
 [Felsökare för e-postflöde](https://aka.ms/FixEmail)
 
 ## <a name="assisted-support-from-microsoft"></a>Assisterad support från Microsoft
 
-Du kan få hjälp från Microsoft genom att påbörja en ny servicebegäran i administrationscentret för Microsoft 365 eller genom att ringa på telefonen. Premier Support-prenumeranter har extra supportalternativ.
+Du kan få hjälp från Microsoft genom att påbörja en ny tjänstförfrågan i Microsoft 365 eller genom att ringa på telefon. Premier Support-prenumeranter har extra supportalternativ.
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Support för Microsoft Premier Support-prenumeranter
 
@@ -57,7 +57,7 @@ Mer information om hur Premier Support kan hjälpa din organisation att maximera
 
 ### <a name="ask-for-help-on-the-web"></a>Be om hjälp på webben
 
-1. Logga in på administrationscentret för Microsoft 365.
+1. Logga in på Microsoft 365 administrationscenter.
 
 2. Gå till **support** \> **Be om ny** \> **supportbegäran**
 
@@ -65,7 +65,7 @@ Mer information om hur Premier Support kan hjälpa din organisation att maximera
 
 ### <a name="ask-for-help-on-the-telephone"></a>Be om hjälp via telefon
 
-1. Logga in på administrationscentret för Microsoft 365.
+1. Logga in på Microsoft 365 administrationscenter.
 
 2. För allmänna produktproblem går du till **Support** \> **Be om kundsupport Ring** teknisk \> **support.**
 

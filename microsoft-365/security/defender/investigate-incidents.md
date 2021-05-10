@@ -1,6 +1,6 @@
 ---
-title: Analysera incidenter i Microsoft 365 Defender
-description: Analysera incidenter relaterade till enheter, användare och postlådor.
+title: Undersöka incidenter i Microsoft 365 Defender
+description: Undersök incidenter relaterade till enheter, användare och postlådor.
 keywords: incidenter, incidenter, analysera, svar, datorer, enheter, användare, identiteter, e-post, e-post, postlåda, undersökning, diagram, bevis
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 72e1efb8a06fb7fa64b83ab6522fe4cdcfd1a73e
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 7abc99a14ec538afea8cdbd4d8f3b4940bcccd9f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259642"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300091"
 ---
-# <a name="analyze-incidents-in-microsoft-365-defender"></a>Analysera incidenter i Microsoft 365 Defender
+# <a name="investigate-incidents-in-microsoft-365-defender"></a>Undersöka incidenter i Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -41,7 +41,7 @@ Microsoft 365 Defender sammanställer alla relaterade aviseringar, tillgångar, 
 
 Inom en incident analyserar du aviseringarna som påverkar nätverket, förstår vad de betyder och sorterar bevisen så att du kan skapa en gällande åtgärdsplan.
 
-## <a name="initial-analysis"></a>Första analysen
+## <a name="initial-investigation"></a>Inledande undersökning
 
 Innan du börjar med detaljerna tar du en titt på egenskaperna och sammanfattningen av händelsen.
 
@@ -88,7 +88,7 @@ Här är ett exempel.
 
 Som standard sorteras aviseringarna kronologiskt så att du kan se hur händelsen spelats ut med tiden. Om du markerar varje avisering kommer du till huvudsidan för den aviseringen, där du kan göra en detaljerad analys av den aviseringen. 
 
-Lär dig hur du använder aviseringskön och aviseringssidorna i [analysera aviseringar](investigate-alerts.md)
+Lär dig hur du använder aviseringskön och aviseringssidorna [i undersöker aviseringar](investigate-alerts.md).
 
 ## <a name="devices"></a>Enheter
 
@@ -123,11 +123,13 @@ Du kan välja bockmarkeringen för en postlåda om du vill visa en lista med akt
 
 ## <a name="investigations"></a>Undersökningar
 
-På **fliken Undersökningar** finns alla automatiserade undersökningar som utlösts av aviseringar om den här händelsen. Undersökningarna utför åtgärder eller väntar på att analytiker har godkänt åtgärder, beroende på hur du konfigurerat dina automatiska undersökningar att köras i Microsoft Defender för Endpoint och Defender för Office 365.
+På **fliken Undersökningar** finns alla automatiserade undersökningar [som](m365d-autoir.md) utlösts av aviseringar om den här händelsen. Undersökningarna utför åtgärder eller väntar på att analytiker har godkänt åtgärder, beroende på hur du konfigurerat dina automatiska undersökningar att köras i Microsoft Defender för Endpoint och Defender för Office 365.
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Exempel på en sida för undersökningar för en incident":::
 
 Välj en undersökning för att gå till sidan Undersökningsinformation för att få fullständig information om undersöknings- och åtgärdsstatus. Om det finns åtgärder som väntar på godkännande som en del av undersökningen visas de på fliken Väntande åtgärder. Vidta åtgärder som en del av åtgärder för incidenter.
+
+Mer information finns i [Automatiserad undersökning och svar i Microsoft 365 Defender](m365d-autoir.md).
 
 ## <a name="evidence-and-response"></a>Bevis och svar
 
@@ -139,7 +141,7 @@ Microsoft 365 Defender undersöker automatiskt alla händelser som stöds och mi
 
 Var och en av de analyserade enheterna är markerade med en bedömning (skadlig, misstänkt, ren) och en åtgärdsstatus. På så sätt får du en bättre förståelse för statusen för hela händelsen och vad som kan göras härnäst.
 
-## <a name="graph-in-preview"></a>Graph (i förhandsversion)
+## <a name="graph-in-preview"></a>Graph (i förhandsgranskning)
 
 Med den **nya Graph** (i förhandsgranskningen) kan du se:
 
@@ -155,8 +157,14 @@ Med hjälp av incidentdiagrammet får du snabbt en fullständig förståelse fö
 
 Nu kan du förstå hur attacken spridas genom nätverket över tid, var den startade och hur långt attacken gick.
 
+## <a name="next-steps"></a>Nästa steg
 
-## <a name="related-topics"></a>Relaterade ämnen
+Vid behov:
+
+- [Undersök aviseringarna om en händelse](investigate-alerts.md)
+- [Undersöka användarna av ett problem](investigate-users.md)
+
+## <a name="see-also"></a>Se även
 
 - [Översikt över incidenter](incidents-overview.md)
 - [Prioritera incidenter](incident-queue.md)

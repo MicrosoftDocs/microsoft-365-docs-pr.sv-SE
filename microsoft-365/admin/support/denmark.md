@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 65d9e2d99a7533c78135f6b8f5be4ff918510de6
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 379580c2c404a1a0669cad4fb657c28857072c1c
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547786"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298944"
 ---
-# <a name="contact-support-for-denmark"></a>Kontakta support för Danmark
+# <a name="contact-support-for-denmark"></a>Kontakta supporten för Danmark
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 80 34 76 23
@@ -35,6 +35,6 @@ Engelska: Mon-Fri 9.00–17.00
 
 Engelska: mån–sön, dygnet runt
 
-Alternativt telefonnummer: 38 48 70 67
+Alternativ Telefon tal: 38 48 70 67
 
 Lokal samtalsavgift

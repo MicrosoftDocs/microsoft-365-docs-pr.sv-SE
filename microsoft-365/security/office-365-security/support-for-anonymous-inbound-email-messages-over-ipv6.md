@@ -18,12 +18,12 @@ ms.custom:
 description: Administratören kan lära sig hur de konfigurerar stöd för anonym inkommande e-post från IPv6-källor i Exchange Online och Exchange Online Protection.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: df06891401802d212cbfdb55085662901f5546e9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 80fdcc9dcfe3006ef8b21aa19856fe8c0ea3ff70
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207353"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300055"
 ---
 # <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Lägga till stöd för anonym inkommande e-post via IPv6 i Microsoft 365
 
@@ -34,13 +34,13 @@ ms.locfileid: "51207353"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365-organisationer med Exchange Online-postlådor och fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor stöder anonym inkommande e-post via IPv6. Käll-IPv6-e-postservern måste uppfylla båda följande krav:
+Microsoft 365 organisationer med Exchange Online och fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online stöder anonym inkommande e-post via IPv6. Käll-IPv6-e-postservern måste uppfylla båda följande krav:
 
 - Käll-IPv6-adressen måste ha en giltig omvänd DNS-uppslagspost (PTR) som gör att destinationen kan hitta domännamnet från IPv6-adressen.
 
 - Avsändaren måste överföra antingen SPF-verifiering (definierad i [RFC 7208)](https://tools.ietf.org/html/rfc7208)eller [DKIM-verifiering](http://dkim.org/) (definierad i [RFC 6376).](https://www.rfc-editor.org/rfc/rfc6376.txt)
 
-Innan din organisation kan ta emot anonym inkommande e-post via IPv6 måste en administratör kontakta Microsofts support och be om det. Anvisningar om hur du öppnar en supportbegäran finns i [Kontakta supporten för företagsprodukter – hjälp för administratörer.](../../admin/contact-support-for-business-products.md)
+Innan din organisation kan ta emot anonym inkommande e-post via IPv6 måste en administratör kontakta Microsofts support och be om det. Anvisningar om hur du öppnar en supportbegäran finns i [Kontakta supporten för företagsprodukter – hjälp för administratörer.](../../business-video/get-help-support.md)
 
 När stöd för anonyma inkommande IPv6-meddelanden har aktiverats i organisationen går meddelandet igenom den vanliga meddelandefiltrering som tillhandahålls av tjänsten.
 
