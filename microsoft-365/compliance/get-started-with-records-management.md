@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Behöver du en lösning för hantering av arkivhandlingar för Microsoft 365 för att hantera värdefullt innehåll för rättsliga, affärsmässiga eller regelmässiga skyldigheter, men är osäker på var du ska börja? Läs några praktiska råd för att komma igång.
-ms.openlocfilehash: 2ab5eaa494094dcbf0723f426fcbd644901c22bb
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 0382c1419654e4c1d2c809b3a9c32252fd50f554
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "52162394"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244350"
 ---
 # <a name="get-started-with-records-management"></a>Komma igång med hantering av arkivhandlingar
 
 >*[Licensieringsvägledning för Microsoft 365 för säkerhet och efterlevnad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Är du redo att börja hantera organisationens högt värderade innehåll för rättsliga, affärsmässiga eller regelmässiga skyldigheter genom att använda en lösning för hantering av arkivhandlingar i Microsoft 365? Använd följande vägledning på hög nivå för att komma igång:
+Är du redo att börja hantera organisationens högt värderade innehåll för rättsliga, affärsmässiga eller regelmässiga skyldigheter genom att använda en lösning för hantering av arkivhandlingar i Microsoft 365? Använd följande anvisningar för att komma igång:
 
 1. **Förstå lösningen för hantering av arkivhandlingar** och vilka åtgärder som tillåts eller blockeras när dokument och e-postmeddelanden är deklarerade arkivhandlingar: [Mer information om hantering av arkivhandlingar](records-management.md). 
 
@@ -53,9 +53,9 @@ Medlemmar i efterlevnadsteamet som ansvarar för hantering av arkivhandlingar be
 
 För skrivskyddade roller kan du skapa en ny rollgrupp och lägga till rollen för **skrivskyddad hantering av arkivhandlingar** i den här gruppen. 
 
-Mer information om rollgrupper och roller finns i [Behörigheter i Säkerhets- och efterlevnadscenter](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
+Mer information om rollgrupper och roller finns i [Behörigheter i Säkerhets- och efterlevnadscenter](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
 
-Anvisningar om hur du lägger till användare i rollgrupper och tilldelar roller finns i [Ge användare åtkomst till Säkerhets- och efterlevnadscenter](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
+Anvisningar om hur du lägger till användare i rollgrupper och tilldelar roller finns i [Ge användare åtkomst till Säkerhets- och efterlevnadscenter](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 Dessa behörigheter krävs endast för att skapa, konfigurera och använda kvarhållningsetiketter som deklarerar arkivhandlingar och för att hantera borttagning. Den som konfigurerar etiketterna behöver inte åtkomst till innehållet.
 
@@ -86,6 +86,6 @@ Använd följande tabell för att koppla dina verksamhetskrav till scenarier som
 
 Kvarhållningsetiketter som används för hantering av arkivhandlingar har en användargränssnittsnärvaro i Microsoft 365-appar. Se till att du ger vägledning för slutanvändarna och supportavdelningen innan du distribuerar kvarhållningsetiketter i produktionsnätverket.
 
-Den mest effektiva dokumentationen för slutanvändare är den anpassade vägledningen och anvisningarna som du ger för kvarhållningsetiketternas namn och konfigurationer du väljer. Läs följande inlägg som har ett nedladdningspaket som du kan använda för att utbilda användarna och påskynda införandet: [Slutanvändarutbildning för kvarhållningsetiketter i M365 – så här påskyndar du införandet](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
+Om du vill hjälpa användare att använda kvarhållningsetiketter i SharePoint och OneDrive, som innehåller information om hu du kan låsa upp poster för redigering, kan du läsa [Använda kvarhållningsetiketter på filer i SharePoint eller OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df).
 
-Du hittar även grundläggande användarinstruktioner i följande avsnitt: [Använda kvarhållningsetiketter manuellt](create-apply-retention-labels.md#manually-apply-retention-labels).
+Den mest effektiva dokumentationen för slutanvändare är dock den anpassade vägledningen och anvisningarna som du ger för kvarhållningsetiketternas namn och konfigurationer du väljer. Läs följande blogginlägg som har ett nedladdningspaket som du kan använda för att utbilda användarna och påskynda införandet: [Slutanvändarutbildning för kvarhållningsetiketter i M365 – så här påskyndar du införandet](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
