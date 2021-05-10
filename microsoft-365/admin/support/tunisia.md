@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4d1a5e1d5d2d1ab76930aa21affbb86e7a18cb87
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: a4bc0a5ee11c1edd195aebd01c8c62981f10f3b4
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543790"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297530"
 ---
 # <a name="contact-support-for-tunisia"></a>Kontakta supporten för Tunisien
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 71 168 700
@@ -35,15 +35,15 @@ Ange kod 7703
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Arabiska: Sun-Thu 9.00–17.00
+Arabiska: Sun-Thu 9:00–17:00
 
-Franska: Mon-Fri 9–17
+Franska: Mon-Fri 9:00–17:00
 
 Engelska: Mon-Fri 9.00–17.00
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Arabiska: Sun-Thu 9.00–17.00
+Arabiska: Sun-Thu 9:00–17:00
 
 Franska: Mon-Fri 08:00–19:00
 

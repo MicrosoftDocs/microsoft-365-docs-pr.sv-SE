@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c970f535f7282ff79d9b69f8d711e990d21587d6
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: c1177fe198422433afb83b62e12a75f64581b3f8
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544942"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297830"
 ---
 # <a name="contact-support-for-romania"></a>Kontakta supporten för Rumänien
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 0800 896 956
@@ -35,6 +35,6 @@ Engelska: Mon-Fri 9.00–17.00
 
 Engelska: mån–sön, dygnet runt
 
-Alternativt telefonnummer: 372 741 961
+Alternativ Telefon tal: 372 741 961
 
 Lokal samtalsavgift

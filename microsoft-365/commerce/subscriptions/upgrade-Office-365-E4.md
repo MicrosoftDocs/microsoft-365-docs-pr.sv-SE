@@ -21,12 +21,12 @@ search.appverid: MET150
 description: Lär dig hur du uppgraderar från en Office 365 E4-prenumeration.
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f9143497ac2ee15009a3a2b3af9e76426d408d38
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 0e30ece58cfc10ea258a684f9ac6ca4dba1b8692
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280517"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297290"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>Uppgradera från en Office 365 E4-prenumeration
 
@@ -63,7 +63,7 @@ Om du uppgraderar abonnemang manuellt slutförs följande separata procedurer is
 3. Välj **fliken** Uppgradera. Om du ser andra abonnemang innebär det att du kan uppgradera abonnemang automatiskt.
 4. Om du inte kan uppgradera automatiskt visas ett meddelande som beskriver orsaken till varför du inte kan uppgradera.
 
-Det finns flera anledningar till att du inte kan uppgradera abonnemang automatiskt. De flesta problemen är tillfälliga, till exempel problem med tjänstens status som du kan åtgärda. Mer information finns i [Varför kan jag inte uppgradera abonnemang?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) Om du behöver hjälp med uppgraderingen kontaktar [du supporten.](../../admin/contact-support-for-business-products.md)
+Det finns flera anledningar till att du inte kan uppgradera abonnemang automatiskt. De flesta problemen är tillfälliga, till exempel problem med tjänstens status som du kan åtgärda. Mer information finns i [Varför kan jag inte uppgradera abonnemang?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) Om du behöver hjälp med uppgraderingen kontaktar [du supporten.](../../business-video/get-help-support.md)
 
 ## <a name="will-a-credit-check-be-required"></a>Krävs en kreditkontroll?
 

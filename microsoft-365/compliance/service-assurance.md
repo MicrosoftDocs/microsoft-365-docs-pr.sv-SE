@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Ladda ned granskningar från tredje part, ta reda på hur Microsoft bevarar kunddata på ett säkert sätt och få information om hur du följer ISO, HIPAA, FINRA och FedRAMP när du använder Office 365.
-ms.openlocfilehash: 6d7dafb3493aabe525c266184235a63840ce8785
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2e473ad4a17ac5c229563ee3286942e90bfc674f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162048"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297242"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Tjänstgranskning i Säkerhets- och efterlevnadscenter
 
@@ -95,7 +95,7 @@ Beroende på din specifika konfigurerad kan de alternativ som ingår i vyn ha vi
 ## <a name="get-help-with-service-assurance"></a>Få hjälp med Tjänstgranskning
 <a name="addother"> </a>
 
-[Kontakta supporten för företagsprodukter – hjälp för administratörer](../admin/contact-support-for-business-products.md).
+[Kontakta supporten för företagsprodukter – hjälp för administratörer](../business-video/get-help-support.md).
   
 ## <a name="frequently-asked-questions"></a>Vanliga frågor
 <a name="addother"> </a>

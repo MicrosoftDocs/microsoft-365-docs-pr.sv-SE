@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Läs mer om kraven och övervägandena när det gäller att gå över till Microsoft 365 för företag.
-ms.openlocfilehash: ba97253beed1544d8f993a462559037a0a1a4281
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b4d2b5d500b73b62c67d3f8126b6313484e2bc78
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244509"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297038"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planera konfigurationen av Microsoft 365 för företag
 
@@ -56,7 +56,7 @@ I installationsguiden får du hjälp med att installera Microsoft 365-appar på 
   
 Om du inte har slutfört installationsguiden kan du slutföra installationsuppgifterna när som helst från [installationsprogrammet för](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >  **administrationscentret.** Härifrån kan du migrera e-post och kontakter från en annan e-posttjänst, ändra domänen för ditt administratörskonto, hantera din faktureringsinformation, lägga till eller ta bort användare, återställa lösenord och göra andra affärsfunktioner. Mer information om skillnaderna mellan installationsguiden  och sidan Inställningar finns i Skillnader mellan Microsoft 365 [och installationsprogrammet.](o365-setup-wizard-and-setup-page.md)
 
-Kontakta oss om du kör fast. [Vi hjälper gärna till!](../contact-support-for-business-products.md)
+Kontakta oss om du kör fast. [Vi hjälper gärna till!](../../business-video/get-help-support.md)
   
 ## <a name="when-not-to-use-the-setup-wizard-active-directory-synchronization-and-hybrid-environments"></a>När du inte ska använda installationsguiden: Active Directory-synkronisering och hybridmiljöer
 
@@ -138,7 +138,7 @@ För större organisationer eller om du börjar Skype för företag, lokalt elle
 - **Om du har färre än 50 anställda:**
 
   - **Be om hjälp så ringer vi dig**. När du Microsoft 365 administratörscentret (du behöver inte köra konfigurationen för att komma åt det). Välj Behöver du hjälp längst ned i **administrationscentret?** Beskriv problemet så ringer vi upp dig. 
-  - **Ring [Microsoft 365 för företag-supporten](../contact-support-for-business-products.md) med dina frågor.** Vi hjälper gärna till! 
+  - **Ring [Microsoft 365 för företag-supporten](../../business-video/get-help-support.md) med dina frågor.** Vi hjälper gärna till! 
   - **Du kan även anlita en [Microsoft-partner](https://go.microsoft.com/fwlink/?linkid=391089)**. Om du har ont om tid eller har avancerade krav (som att flytta tusentals filer till Microsoft 365 molnlagring eller att integrera med annan programvara) kan en erfaren partner vara till stor hjälp. 
 
 - **Om du har fler än 50 anställda** kan [FastTrack-introduktionscentret](https://go.microsoft.com/fwlink/?LinkId=517115) hjälpa dig med distributionen.

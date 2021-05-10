@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Läs mer Microsoft 365 för företag, hur du bereder det och hur du förbereder användarnas enheter och datorer för att säkerställa att de skyddas av Microsoft 365 för företag.
-ms.openlocfilehash: cc54147e75a27fbb93255d6f706b4f9044c75858
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ddf6f8d12587c6fb562a599a41c190ffef32c147
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245133"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293716"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Komma igång med Microsoft 365 för företag
 
@@ -105,7 +105,7 @@ Om du behåller en lokal Active Directory-fil som innehåller vissa lokala resur
   
 - Kontakta din partner.
     
-- Som administratör Microsoft 365 för företag har du tillgång till vårt kundsupportteam: Kontakta supporten för **[företagsprodukter – hjälp för administratörer](../admin/contact-support-for-business-products.md)**
+- Som administratör Microsoft 365 för företag har du tillgång till vårt kundsupportteam: Kontakta supporten för **[företagsprodukter – hjälp för administratörer](../business-video/get-help-support.md)**
     
 ## <a name="related-content"></a>Relaterat innehåll
 

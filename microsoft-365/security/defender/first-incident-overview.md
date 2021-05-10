@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f66c9821e5db00cc3da5718f52b8aaaeff5a431e
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 5ea847e822e094049dd8f0b941f22f3bb4f7eff4
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114760"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297182"
 ---
 # <a name="introduction-to-responding-to-your-first-incident"></a>Introduktion till att svara på din första incident
 
@@ -58,6 +58,17 @@ Se till att din organisation Microsoft 365 klientorganisationen är [förberedda
 
 ## <a name="see-also"></a>Se även
 
+Vägledning om incidentsvar för Microsoft 365 Defender:
+
 - [Översikt över incidenter](incidents-overview.md)
-- [Analysera incidenter](investigate-incidents.md)
+- [Undersöka incidenter](investigate-incidents.md)
 - [Hantera incidenter](manage-incidents.md)
+
+Ytterligare exempel på svar på första incidenter:
+
+- [Nätfiske-e-post](first-incident-path-phishing.md)
+- [Identitetsbasattack](first-incident-path-identity.md)
+
+[Detaljerade spelböcker för incidentsvar](https://docs.microsoft.com/security/compass/incident-response-playbooks)
+
+

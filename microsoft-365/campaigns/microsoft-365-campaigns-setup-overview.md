@@ -25,16 +25,16 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Konfigurationsöversikt för Microsoft 365 Business Premium för kampanjer och andra företag
-ms.openlocfilehash: e612771ca4e967462f190c41396f16c6faf9d195
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 08fe74e519c2efab14e4362e35b89128a8442cfb
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398271"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297386"
 ---
 # <a name="set-up-microsoft-365"></a>Konfigurera Microsoft 365
 
-I den här artikeln beskrivs processen med att konfigurera Microsoft 365. Alla som har Microsoft 365 Business Premium kan använda den här vägledningen för att öka säkerheten.
+I den här artikeln beskrivs processen med att konfigurera Microsoft 365. Alla med Microsoft 365 Business Premium kan använda den här vägledningen för att öka säkerheten.
 
 ## <a name="admins-set-up-microsoft-365"></a>Administratörer: Konfigurera Microsoft 365
 
@@ -42,15 +42,15 @@ I följande diagram beskrivs hur administratörer konfigurerar Microsoft 365.
 
 ![Steg för att konfigurera Microsoft 365](../media/M365-democracy-SetUpProcess.png)
 
-För kampanjer som är kvalificerade för specialpriser kan du komma igång genom att begära en inbjudan från [Microsoft](https://m365forcampaigns.microsoft.com/)och sedan registrera dig för [Microsoft 365 för kampanjer.](m365-campaigns-sign-up.md) Kör installationsguiden för [att konfigurera basinställningarna](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) för att slutföra installationen.
+För kampanjer som är kvalificerade för specialpriser kan du komma igång genom att begära en inbjudan från [Microsoft](https://m365forcampaigns.microsoft.com/)och sedan registrera dig [för Microsoft 365 för kampanjer.](m365-campaigns-sign-up.md) Kör installationsguiden för [att konfigurera basinställningarna](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) för att slutföra installationen.
 
-När du har registrerat dig för [Microsoft 365 Business Premium](../business/sign-up.md) [](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) kan alla andra organisationer slutföra konfigurationen genom att köra installationsguiden för att konfigurera huvudinställningarna.
+När du har registrerat dig för ett konto i [Microsoft 365 Business Premium](../business/sign-up.md) [](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) för alla andra organisationer slutför du konfigurationen genom att köra installationsguiden och konfigurera huvudinställningarna.
 
 För alla organisationer ökar säkerhetsskyddet genom att skydda [administratörskonton](m365-campaigns-protect-admin-accounts.md), skydda [åtkomst till e-post](m365-campaigns-conditional-access.md)och data och [öka skyddet mot hot.](m365-campaigns-increase-protection.md)
 
 ## <a name="everyone-set-up-your-devices"></a>Alla: Konfigurera dina enheter
 
-Det tar några minuter för användarna att konfigurera enheter så att de fungerar med den här miljön. Du kan konfigurera och förkonfigurera nya enheter för viktiga användare (de som är de högsta värdemålen för hackare). Det hjälper dem att komma igång när de loggar in med sina Microsoft 365-inloggningsuppgifter.
+Det tar några minuter för användarna att konfigurera enheter så att de fungerar med den här miljön. Du kan konfigurera och förkonfigurera nya enheter för viktiga användare (de som är de högsta värdemålen för hackare). Det gör det lättare för dem att komma igång när de loggar in Microsoft 365 inloggningsuppgifterna.
 
 ![Konfigurationsprocess för användarenhet](../media/m365-democracy-user-device-setup.png)
   
@@ -65,4 +65,4 @@ För viktig personal rekommenderar vi att du använder [hanterade enheter](../bu
 
  **Om du behöver kontakta supporten:**
   
-Som Microsoft 365-administratör har du tillgång till vår kundtjänst. Kontakta supporten för **[företagsprodukter – hjälp för administratörer](../admin/contact-support-for-business-products.md)**
+Som Microsoft 365 administratör har du åtkomst till vårt kundsupportteam, **[Kontakta supporten för företagsprodukter – hjälp för administratörer](../business-video/get-help-support.md)**

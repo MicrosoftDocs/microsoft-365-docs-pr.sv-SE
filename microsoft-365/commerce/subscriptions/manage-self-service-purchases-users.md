@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Användarna kan lära sig att hantera köp via självbetjäning.
-ms.openlocfilehash: 73b044ab9954744e89a13ccff0145f35bc1b821b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9935259f05432b964fbe138b39397f192e203eb2
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920198"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297302"
 ---
 # <a name="manage-self-service-purchases-users"></a>Hantera självbetjäningsköp (användare)
 
@@ -31,7 +31,7 @@ ms.locfileid: "50920198"
 
 ::: moniker-end
 
-Som användare kan du köpa prenumerationer på vissa produkter och tilldela licenser för prenumerationerna till personer i din grupp. Du är ansvarig för att betala för alla köp du gör med självbetjäning. Du kan hantera dina prenumerationer i administrationscentret för Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">på admin.microsoft.com</a>.
+Som användare kan du köpa prenumerationer på vissa produkter och tilldela licenser för prenumerationerna till personer i din grupp. Du är ansvarig för att betala för alla köp du gör med självbetjäning. Du kan hantera dina prenumerationer i Microsoft 365 administrationscenter på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>.
 
 Administratören har en skrivskyddad vy för alla prenumerationer som du köper. De kan se produkt, inköpare namn, prenumerationer köpta, utgångsdatum, inköpspris och tilldelade användare för varje prenumeration som du köper.
 
@@ -107,4 +107,4 @@ Du kan visa en lista över alla prenumerationer som köpts med självbetjäning 
 
 Vanliga frågor om självbetjäning för köp finns i Vanliga frågor [och svar om självbetjäning.](self-service-purchase-faq.md)
 
-Om du har frågor eller behöver hjälp med köp via självbetjäning kontaktar [du supporten.](../../admin/contact-support-for-business-products.md)
+Om du har frågor eller behöver hjälp med köp via självbetjäning kontaktar [du supporten.](../../business-video/get-help-support.md)

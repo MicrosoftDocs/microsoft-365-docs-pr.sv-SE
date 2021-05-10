@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Läs mer om faktureringskonton och hur du hanterar dem.
 ms.date: 03/17/2021
-ms.openlocfilehash: 504811e8cdfb84569a4bc3cea021c3c37030fca7
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: ecac005b8b49739cb74efc4ca2fae44667f37bad
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107586"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293649"
 ---
 # <a name="manage-billing-accounts"></a>Hantera faktureringskonton
 
@@ -56,7 +56,7 @@ I följande tabell visas de viktiga termer som visas på **informationssidan fö
 | Faktureringsprofiler | En faktureringsprofil definierar egenskaper för fakturan, till exempel vem som får fakturan, hur fakturan levereras, betalningsvillkor och ett inköpsordernummer. För att distribuera fakturering i hela organisationen kan du skapa flera faktureringsprofiler och identifiera lämplig faktureringsprofil vid köpet. Mer information om faktureringsprofiler och hur du kan använda dem för att skapa mer flexibla faktureringsalternativ för din organisation finns [i Förstå faktureringsprofiler.](billing-and-payments/manage-billing-profiles.md) |
 
 > [!NOTE]
-> Om du behöver ändra **Såld till-namnet** eller adressen,  men inte ser länken Redigera, måste du [kontakta support för](../admin/contact-support-for-business-products.md) att ändra den. Begäranden för ändring **av Såld till-namn** kräver en kreditkontroll. Fyll [i det](https://www.microsoft.com/download/details.aspx?id=102732)här formuläret och gör dig redo att dela något av följande dokument med Microsoft när du kontaktar supporten:
+> Om du behöver ändra **Såld till-namnet** eller adressen,  men inte ser länken Redigera, måste du [kontakta support för](../business-video/get-help-support.md) att ändra den. Begäranden för ändring **av Såld till-namn** kräver en kreditkontroll. Fyll [i det](https://www.microsoft.com/download/details.aspx?id=102732)här formuläret och gör dig redo att dela något av följande dokument med Microsoft när du kontaktar supporten:
 >
 > - Dokument eller registreringsbrev utfärdat av myndighet
 > - Skriva ut från det lokala företagets register

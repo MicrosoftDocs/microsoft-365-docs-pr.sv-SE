@@ -22,12 +22,12 @@ ms.custom:
 ms.reviewer: jkinma
 description: Läs om hur du köper och hanterar tillägg för din Microsoft 365 för företag-prenumeration.
 ms.date: 04/02/2021
-ms.openlocfilehash: c0b5a76f8690c64723782640738ac3817bc64714
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: d60503cd7ab7be219c3ed813dd1d9aef480cd4dc
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107442"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297338"
 ---
 # <a name="buy-or-manage-add-ons"></a>Köp eller hantera tilläggsprogram
 
@@ -71,7 +71,7 @@ Du hanterar ett traditionellt tillägg genom att gå till prenumerationen som in
 
 Om du vill ta bort en fristående tilläggsprenumeration [säger du upp prenumerationen](subscriptions/cancel-your-subscription.md), precis som med vilken annan prenumeration som helst. Eller så kan [du inaktivera Återkommande fakturering.](subscriptions/renew-your-subscription.md)
 
-Du kan inte ta bort ett traditionellt tillägg. Om du vill ta bort ett traditionellt tillägg kontaktar [du supporten för att få hjälp.](../admin/contact-support-for-business-products.md)
+Du kan inte ta bort ett traditionellt tillägg. Om du vill ta bort ett traditionellt tillägg kontaktar [du supporten för att få hjälp.](../business-video/get-help-support.md)
   
 ## <a name="related-content"></a>Relaterat innehåll
 

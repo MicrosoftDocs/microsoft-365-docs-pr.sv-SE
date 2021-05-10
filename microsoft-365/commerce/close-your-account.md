@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 description: Lär dig hur du stänger ditt konto hos Microsoft.
 ms.date: 04/02/2021
-ms.openlocfilehash: 4fa1366186f0a37d3319208224628332d958a0ea
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 86232e3f433526cc60ef369eda03ef8d20ab08c9
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107478"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293673"
 ---
 # <a name="close-your-account"></a>Avsluta ditt konto
 
@@ -69,7 +69,7 @@ Om din organisation använder Active Directory som synkroniserar med Microsoft A
 6. Upprepa steg 3 till 5 för varje inaktiverad prenumeration tills alla prenumerationer har tagits bort.
 
 > [!NOTE]
-> Om du inte kan ta bort en inaktiverad prenumeration direkt kontaktar [du support.](../admin/contact-support-for-business-products.md)
+> Om du inte kan ta bort en inaktiverad prenumeration direkt kontaktar [du support.](../business-video/get-help-support.md)
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>Steg 4: Inaktivera multifaktorautentisering
 

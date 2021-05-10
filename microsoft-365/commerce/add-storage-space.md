@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 description: Lär dig att lägga till och minska fillagringen i Microsoft 365 prenumeration. Med extra fillagring kan du lagra mer innehåll i SharePoint Online och OneDrive.
 ms.date: 04/02/2021
-ms.openlocfilehash: 576efee4ba0e1ad8fb43b3d8475d6c3a949ee1e8
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 14f72f59493be04165f0e7b28f26b14f8ae01a08
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107394"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293685"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Lägga till lagringsutrymme för din prenumeration
 
@@ -71,7 +71,7 @@ Om du ännu inte har köpt extra lagringsutrymme för din prenumeration kan du g
 
 ## <a name="increase-or-decrease-storage"></a>Öka eller minska lagringsutrymme
 
-Om du redan har köpt extra lagringsutrymme via **Office 365 extra fillagring-tillägget** kan du följa de här stegen för att öka eller minska det extra lagringsutrymmet för din prenumeration. Du kan minska lagringen till så lite som 1 gigabyte. Kontakta support om du vill ta bort allt [extra lagringsutrymme.](../admin/contact-support-for-business-products.md)
+Om du redan har köpt extra lagringsutrymme via **Office 365 extra fillagring-tillägget** kan du följa de här stegen för att öka eller minska det extra lagringsutrymmet för din prenumeration. Du kan minska lagringen till så lite som 1 gigabyte. Kontakta support om du vill ta bort allt [extra lagringsutrymme.](../business-video/get-help-support.md)
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
 2. På **fliken** Produkter väljer du den prenumeration som **innehåller Office 365 extra fillagring-tillägget.**

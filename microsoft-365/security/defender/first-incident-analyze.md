@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1890b4f9b4c71efebe833ebaee62debedbf0fb72
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 83889123067897483478aec3d881a5a7b6ec14cc
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52115026"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297230"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Steg 1. Triangel och analysera den första incidenten
 
@@ -97,7 +97,7 @@ Det här är bara en metod för triage:
 
 Det är lika viktigt att förstå sammanhangs omgivande aviseringar. Ofta är ett meddelande inte en enskild oberoende händelse. Det finns en kedja av processer som skapats, kommandon och åtgärder som kanske inte har inträffat samtidigt. Därför måste en analytiker leta efter den första och sista aktiviteterna i den misstänkta enhetens tidslinjer för att förstå sammanhanget för aviseringarna.
 
-Det finns flera sätt att läsa och analysera data med hjälp av Microsoft 365 Defender, men målet för analytiker är att svara på incidenter så snabbt som möjligt. Även om Microsoft 365 Defender avsevärt kan minska medelvärdet för att åtgärda [(MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) genom den branschledande funktionen Autoreparation finns det alltid fall som kräver manuell analys. 
+Det finns flera sätt att läsa och analysera data med hjälp av Microsoft 365 Defender, men målet för analytiker är att svara på incidenter så snabbt som möjligt. Även om Microsoft 365 Defender avsevärt kan minska medelvärdet för att åtgärda [(MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) genom den branschledande automatiska undersöknings- och svarsfunktionen, finns det alltid fall som kräver manuell analys. [](m365d-autoir.md) 
 
 Här är ett exempel:
 
@@ -136,5 +136,5 @@ Lär dig [hur du åtgärdar incidenter](first-incident-remediate.md).
 ## <a name="see-also"></a>Se även
 
 - [Översikt över incidenter](incidents-overview.md)
-- [Analysera incidenter](investigate-incidents.md)
+- [Undersöka incidenter](investigate-incidents.md)
 - [Hantera incidenter](manage-incidents.md)

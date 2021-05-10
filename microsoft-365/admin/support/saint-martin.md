@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 74eb1cb065410033a9f9ec538cc4ef5d8fe35a5e
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: c5e47b95390cf2235be1af8e75db6d0841dde780
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544750"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297794"
 ---
 # <a name="contact-support-for-saint-martin"></a>Kontakta supporten för Saint Martin
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 +1 312 843 5147
@@ -29,13 +29,13 @@ ms.locfileid: "50544750"
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Franska: Mon-Fri 16:00
+Franska: Mon-Fri 4 am-på dagen
 
-Engelska: Mon-Fri 16:00
+Engelska: Mon-Fri 16:00 på dagen
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Franska: Mon-Fri 15.00–16.00
+Franska: Mon-Fri 03:00–16:00
 
 Engelska: mån–sön, dygnet runt
 

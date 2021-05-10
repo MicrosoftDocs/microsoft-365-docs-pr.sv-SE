@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8123bdf610b30407e5d262296f9c3639bc21b12f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 5aeaa51e5ab8974c8ca26453534396dac14b5853
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893491"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297212"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Distribuera Microsoft Defender för slutpunkt i ringar
 
@@ -82,7 +82,7 @@ I följande tabell visas de slutpunkter som stöds och motsvarande verktyg som d
 | Slutpunkt     | Distributionsverktyget                       |
 |--------------|------------------------------------------|
 | **Windows**  |  [Lokalt skript (upp till 10 enheter)](configure-endpoints-script.md) <br> Obs! Om du vill distribuera fler än 10 enheter i en produktionsmiljö använder du grupprincipmetoden i stället eller andra verktyg som stöds nedan.<br>  [Grupprincip](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI-skript](configure-endpoints-vdi.md)   |
-| **macOS**    | [Lokalt skript](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md) |
+| **macOS**    | [Lokalt skript](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF-Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md) |
 | **Linux Server** | [Lokalt skript](linux-install-manually.md) <br> [En- och en-](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Appbaserade](ios-install.md)                                |
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
@@ -105,25 +105,25 @@ Använd följande material för att välja lämplig Microsoft Defender för Slut
 
 ## <a name="existing-deployments"></a>Befintliga distributioner
 
-### <a name="windows-endpoints"></a>Windows-slutpunkter
-För Windows och/eller Windows-servrar väljer du flera datorer som du vill testa i förväg (före korrigeringen tisdag) med hjälp av programmet VALIDERING av säkerhetsuppdateringar **(HURP).**
+### <a name="windows-endpoints"></a>Windows slutpunkter
+För Windows-servrar och/eller Windows-servrar väljer du flera datorer för att testa i förväg (före korrigeringen tisdag) med hjälp av programmet FÖR **säkerhetsuppdateringsverifiering (SÅD).**
 
 Mer information finns i:
 - [Vad är verifieringsprogrammet för säkerhetsuppdateringar?](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
-- [Program för validering av program för programuppdatering och det program som används av Microsoft Malware Protection Center – TwC interaktiv tidslinje del 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
+- [Valideringsprogram för program för programuppdatering och Microsoft Malware Protection Center upp - TwC Interaktiv tidslinje del 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
 
 
-### <a name="non-windows-endpoints"></a>Slutpunkter som inte är Windows
-Med macOS och Linux kunde du köra ett par system i "InsidersFast"-kanalen.
+### <a name="non-windows-endpoints"></a>Slutpunkter som Windows inte är slutpunkter
+Med macOS och Linux kan du köra ett par system i Beta-kanalen.
 
 >[!NOTE]
->Under idealiska som helst minst en säkerhetsadministratör och en utvecklare så att du kan hitta kompatibilitets-, prestanda- och tillförlitlighetsproblem innan versionen tar den till kanalen "Produktion".
+>Under idealiska som helst minst en säkerhetsadministratör och en utvecklare så att du kan hitta kompatibilitets-, prestanda- och tillförlitlighetsproblem innan versionen tar den till aktuell kanal.
 
-Valet av kanal avgör typ och frekvens för uppdateringar som erbjuds till din enhet. Enheter inom insiders – snabbt är de första som får uppdateringar och nya funktioner, följt senare av insiders-slow och slutligen av prod.
+Valet av kanal avgör typ och frekvens för uppdateringar som erbjuds till din enhet. Enheter i betaversion är de första som får uppdateringar och nya funktioner, följt senare av Förhandsversion och slutligen av Aktuell.
 
 ![Bild på insiderringar](images/insider-rings.png)
 
-Om du vill förhandsgranska nya funktioner och ge tidig feedback rekommenderar vi att du konfigurerar vissa enheter i företaget så att de använder Insiders -snabbt eller Insiders-slow.
+Om du vill förhandsgranska nya funktioner och ge tidig feedback rekommenderar vi att du konfigurerar vissa enheter i företaget för användning med antingen betaversion eller förhandsversion.
 
 >[!WARNING]
 >Om du byter kanal efter den första installationen måste produkten installeras om. Om du vill byta produktkanal: avinstallera det befintliga paketet, konfigurera om enheten så att den nya kanalen används och följ stegen i det här dokumentet för att installera paketet från den nya platsen.

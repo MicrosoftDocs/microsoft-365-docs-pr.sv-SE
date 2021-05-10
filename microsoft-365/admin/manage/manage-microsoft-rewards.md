@@ -15,17 +15,18 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
+ROBOTS: NOINDEX, NOFOLLOW
 description: Användare som har personliga Microsoft-konton kan tjäna Microsoft Rewards-poäng i samband med sina arbetssökningar om Länka AAD med Rewards-funktionen är aktiverad.
-ms.openlocfilehash: 7ae88c9fd355251c47747ef8460bab1f0b30bbaa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 92a319d5917c49f0457a560fe52212608bd26dc2
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929521"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297074"
 ---
 # <a name="manage-microsoft-rewards"></a>Hantera Microsoft Rewards
 
-Användare som har personliga Microsoft-konton kan tjäna [Microsoft Rewards-poäng](https://www.microsoft.com/rewards) i samband med sina arbetssökningar om funktionen Länka *Microsoft Azure Active Directory (Azure AD)* med Rewards är aktiverad.
+Användare som har personliga Microsoft-konton kan tjäna [Microsoft Rewards-poäng](https://www.microsoft.com/rewards) i samband med sina arbetssökningar om *länkfunktionen Microsoft Azure Active Directory (Azure AD) med Rewards-funktionen* är aktiverad.
 
 Om inte användaren väljer bort den här funktionen kommer deras personliga Microsoft-konto att kopplas till deras Azure AD-konto på arbetsplatsen. Microsoft Rewards tar emot och loggar information som en sökning har gjort, men får ingen information om innehållet i sökningen. Innehållet i frågor från din organisation kommer inte att delas med Microsoft Rewards som en del av den här funktionen.
 

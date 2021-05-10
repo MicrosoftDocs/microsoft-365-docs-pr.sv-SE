@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Administratörer kan lära sig att hantera självbetjäning som görs av användare i organisationen.
-ms.openlocfilehash: 59d64c047ddf4f33c2ef3277f3139f1b7692b891
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 5378d14affd074bfad356fea4bb2adbd6ca104dd
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244998"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293577"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Hantera självbetjäningsköp (administratörer)
 
@@ -201,4 +201,4 @@ När du väljer att avbryta en prenumeration på självköp förlorar användare
 
 Vanliga frågor om självbetjäning för köp finns i Vanliga frågor [och svar om självbetjäning.](self-service-purchase-faq.md)
 
-Om du har frågor eller behöver hjälp med köp via självbetjäning kontaktar [du supporten.](../../admin/contact-support-for-business-products.md)
+Om du har frågor eller behöver hjälp med köp via självbetjäning kontaktar [du supporten.](../../business-video/get-help-support.md)

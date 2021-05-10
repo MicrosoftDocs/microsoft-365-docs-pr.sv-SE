@@ -24,12 +24,12 @@ ms.custom:
 - PPM_jmueller
 description: Hitta din faktura eller ditt faktureringsutdrag i administrationscentret för Microsoft 365. Du kan också spara och skriva ut en kopia av fakturan.
 ms.date: 07/31/2020
-ms.openlocfilehash: f9dc6fb9be765e6e221ddf43f703d64737870f01
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: eff193689817c1c89fff7c8ffbc5335fff64ee0f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280829"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297362"
 ---
 # <a name="view-your-bill-or-invoice"></a>Visa din faktura
 
@@ -37,7 +37,7 @@ Den här artikeln är avsedd för personer som har en Microsoft 365 företagspre
   
 Om du behöver hjälp med att tolka de debiteringar som visas på din faktura hittar du en detaljerad genomgång i [Förstå din faktura](understand-your-invoice2.md).
   
-**Har du problem med fakturan?** [Kontakta supporten för företagsprodukter](../../admin/contact-support-for-business-products.md).
+**Har du problem med fakturan?** [Kontakta supporten för företagsprodukter](../../business-video/get-help-support.md).
 
 ## <a name="before-you-begin"></a>Innan du börjar
 

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 description: Lär dig hur du hanterar dina betalningsmetoder i administrationscentret för Microsoft 365.
 ms.date: 04/02/2021
-ms.openlocfilehash: b69096bb05ada6ce7a1ee619aa78bc04639e7004
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 82b2880eed830bd3b65cce14635c4fa10f618740
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244726"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297374"
 ---
 # <a name="manage-payment-methods"></a>Hantera betalningsmetoder
 
@@ -129,7 +129,7 @@ Om en betalningsmetod är kopplad till prenumerationer eller faktureringsprofile
 |**Mitt kredit- eller betalkort nekades.** |Om du betalar med kredit- eller betalkort och kortet nekas får du ett e-postmeddelande med information om att Microsoft inte har kunnat bearbeta betalningen. Kontrollera att kortuppgifterna&mdash;kortnummer, utgångsdatum, namn på kortet och adress, inklusive stad, region och postnummer&mdash;visas exakt som de gör på kortet och ditt kontoutdrag. Du kan uppdatera kortuppgifterna och skicka betalningen direkt med hjälp av länken **Reglera saldo** i sektionen **Fakturering** på sidan med prenumerationsinformation. Läs mer i [Vad händer om jag har ett utestående saldo?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  Om meddelandet om nekat kort fortfarande visas kontaktar du banken. Det är möjligt att kortet inte är aktivt. Om du har nyligen fått kortet via post med ett uppdaterat utgångsdatum kontrollerar du att det är aktiverat. Din bank kan också lämna information om kortet inte är godkänt för onlinetransaktioner, internationella eller återkommande transaktioner. |
 |**Jag behöver uppdatera ett kreditkorts- eller bankkontonummer.** |Du kan inte ändra kreditkorts- eller bankkontonumret för en befintlig betalningsmetod. Om ditt kort- eller kontonummer har ändrats [ersätter du det med en annan betalningsmetod](#replace-a-payment-method), vilket flyttar alla aktiva prenumerationer från betalningsmetoden till den nya och sedan [tar du bort den gamla betalningsmetoden](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached). |
 |**Jag har bara ett kreditkort eller bankkonto på kontot och vill ta bort det.** |Om du bara har en betalningsmetod måste du [ersätta den med en ny betalningsmetod](#replace-a-payment-method) innan du kan ta bort den. |
-|**Jag kan inte lägga till mitt kreditkort eller bankkonto.**  |Du måste använda en betalningsmetod som utfärdats från samma land/region som din klientorganisation. Om du har problem med att ange kreditkorts- eller bankkontoinformation kan du [kontakta supporten](../../admin/contact-support-for-business-products.md). |
+|**Jag kan inte lägga till mitt kreditkort eller bankkonto.**  |Du måste använda en betalningsmetod som utfärdats från samma land/region som din klientorganisation. Om du har problem med att ange kreditkorts- eller bankkontoinformation kan du [kontakta supporten](../../business-video/get-help-support.md). |
 
 ## <a name="related-content"></a>Relaterat innehåll
 

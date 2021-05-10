@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9737e8db50d71149f49ac1c06b6897c8375eb830
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: c570e6d6dba2f823ac007fe2e6b5bbadcc5eb89b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544054"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297602"
 ---
-# <a name="contact-support-for-sweden"></a>Kontakta support för Sverige
+# <a name="contact-support-for-sweden"></a>Kontakta supporten för Sverige
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 020 160 5899
@@ -35,6 +35,6 @@ Engelska: Mon-Fri 9.00–17.00
 
 Engelska: mån–sön, dygnet runt
 
-Alternativt telefonnummer: 08 5176 1966
+Alternativ Telefon tal: 08 5176 1966
 
 Lokal samtalsavgift

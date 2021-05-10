@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 description: Få reda på hur du avbryter din utvärderingsversion eller betalda prenumeration för Microsoft 365 för företag.
 ms.date: 04/08/2021
-ms.openlocfilehash: 15ab7ed31af24fa4cb1c83c6babc945871584375
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 329bc10adbe6c2ad0efe3609e7cb72141ae346bd
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244666"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297314"
 ---
 # <a name="cancel-your-subscription"></a>Avbryt din prenumeration
 
-*Berättigande:* Om du har färre än 25 licenser tilldelade till användare kan du när som helst avbryta din utvärderingsversion eller betalda prenumeration av Microsoft 365 för företag online i administrationscentret för Microsoft 365. Om du har fler än 25 licenser tilldelade till användare, minska det till färre än 25 eller [ring supporten för att avbryta din prenumeration](../../admin/contact-support-for-business-products.md).
+*Berättigande:* Om du har färre än 25 licenser tilldelade till användare kan du när som helst avbryta din utvärderingsversion eller betalda prenumeration av Microsoft 365 för företag online i administrationscentret för Microsoft 365. Om du har fler än 25 licenser tilldelade till användare, minska det till färre än 25 eller [ring supporten för att avbryta din prenumeration](../../business-video/get-help-support.md).
 
 *Återbetalning:* All proportionerlig kredit kommer returneras till dig inom nästa faktureringscykel.
 

@@ -22,12 +22,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Ändra prenumerationer manuellt genom att köpa en ny prenumeration och se till att båda prenumerationerna visas och är aktiva.
 ms.date: 03/17/2021
-ms.openlocfilehash: 1dc7ff8cd6b8a43db7d70ab6c17aec16a020baac
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 7361b459e61961efbb729d80dcbb55dfdad65933
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107686"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293625"
 ---
 # <a name="change-plans-manually"></a>Ändra abonnemang manuellt
 
@@ -74,7 +74,7 @@ Ta med en licens för varje användare som du vill flytta.
 
 - **Om du har köpt två prenumerationer och båda inte visas här** kan de ha köpts för olika organisationer (för olika domäner). Prenumerationer kan inte användas över organisationsgränser.
 
-- **Om du vet att du har ytterligare en** prenumeration och den inte finns med här, eller om den inte är aktiv, ringer du Microsoft [support.](../../admin/contact-support-for-business-products.md)
+- **Om du vet att du har ytterligare en** prenumeration och den inte finns med här, eller om den inte är aktiv, ringer du Microsoft [support.](../../business-video/get-help-support.md)
 
 ### <a name="what-about-the-old-licenses"></a>Vad gäller för de gamla licenserna?
 
@@ -115,4 +115,4 @@ Om du har flyttat alla användare från ett abonnemang till ett annat och du int
 Om du bara har flyttat vissa användare till en annan prenumeration kan du [ta bort licenser](../licenses/buy-licenses.md) som du inte längre behöver.
 
 ## <a name="call-support-to-help-you-change-plans"></a>Ring supporten som hjälper dig att byta abonnemang
-[Kontakta Microsoft Support](../../admin/contact-support-for-business-products.md)
+[Kontakta Microsoft Support](../../business-video/get-help-support.md)

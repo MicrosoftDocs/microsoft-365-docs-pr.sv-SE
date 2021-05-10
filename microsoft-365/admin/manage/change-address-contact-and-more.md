@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Lär dig hur du gör ändringar i din organisationsprofil, till exempel organisationens namn, adress, telefonnummer, teknisk kontakt och e-post.
 ms.date: 03/30/2021
-ms.openlocfilehash: d27ad65b9f58d4da6c01b32c9441c0296a17e3bd
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 05908de7c4fc899669da2ba2a3d3024855f4b394
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107020"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297098"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Ändra organisationens adress, tekniska kontakt med mera
   
@@ -55,7 +55,7 @@ En beskrivning av varje fält finns nedan.
 |---------|---------|
 |Namn  <br/>   | Namnet som anges här är det som visas för användarna på följande sidor:  <br/>  Inloggningssidan: Om dina användare har konfigurerat andra TE102824469-konton med sina e-postadresser för företag eller skola ser de kanske organisationsnamnet på inloggningssidan. Det gör det lättare för dem att skilja sitt arbets- eller skolkonto från andra konton, vilket i sin tur gör att de enkelt kan se vilket konto de ska använda när de loggar in.  <br/>  Organisationens profillänk och profilsida: Länken till din organisations profil visar organisationsnamnet.  <br/>  Yammer navigering: Yammer det vänstra navigeringsfältet använder organisationsnamnet som namn på Yammer nätverket.  <br/> OneDrive-synkroniseringsklient: Organisationsnamnet visas i Utforskaren på Windows och Finder på Mac, filsökvägarna, OneDrive-aktivitetscentret, knappbeskrivningen för OneDrive-molnikonen och inställningsfönstret i OneDrive. Om du uppdaterar organisationsnamnet för närvarande uppdateras det inte för konfigurerade klienter. <br/> MS Teams: Organisationsbyte i Teams visas organisationens namn <br/>  |
 |Adress, ort, region, postnummer  <br/>     | Adressen som anges här är det som visas på fakturan, under Såldes till: Såld till-adressen på fakturan är densamma som organisationens adress på din profilsida (se Förstå din faktura för [Microsoft 365 för företag).](../../commerce/billing-and-payments/understand-your-invoice2.md)  <br/>        |
-|Land eller region.  <br/>    | Landet eller regionen där företaget har sitt säte. Det valda landet eller regionen avgör vilka tjänster som är tillgängliga, vilka skatter och vilken faktureringsvaluta som används i ditt land eller region och platsen för närmaste datacenter (se [Licensbegränsningar för Microsoft Office](https://office.microsoft.com/redir/FX103037529)).  <br/>Obs! När du valt kan landet eller regionen inte ändras. Om du vill ändra valet måste du avbryta din prenumeration och anmäla dig på nytt. Kontakta support om du behöver [hjälp med den här processen.](../contact-support-for-business-products.md)        |
+|Land eller region.  <br/>    | Landet eller regionen där företaget har sitt säte. Det valda landet eller regionen avgör vilka tjänster som är tillgängliga, vilka skatter och vilken faktureringsvaluta som används i ditt land eller region och platsen för närmaste datacenter (se [Licensbegränsningar för Microsoft Office](https://office.microsoft.com/redir/FX103037529)).  <br/>Obs! När du valt kan landet eller regionen inte ändras. Om du vill ändra valet måste du avbryta din prenumeration och anmäla dig på nytt. Kontakta support om du behöver [hjälp med den här processen.](../../business-video/get-help-support.md)        |
 |Telefonnummer  <br/>     | Det här är det primära numret för ditt företag. Det är oftast numret till ert huvudkontor.  <br/>        |
 |Teknisk kontakt  <br/> |Det här är e-postadressen för den primära tekniska personen som administrerar Microsoft 365 prenumerationen. Det här är den person som ska ta emot meddelanden Microsoft 365 status för tjänsten.  <br/> |
 |Föredraget språk  <br/> |Med föredraget språk väljs språket för all kommunikation som skickas från Microsoft till din organisation. När du registrerar dig påverkar inställningen vilket språk som används i SharePoint Online, som är det som användarna ser på gruppwebbplatsen. Om du ändrar språkinställningen efter registreringen sker framtida kommunikation på det nya språket.    <br/> Obs! Det språk som används SharePoint Online kan inte ändras.           |

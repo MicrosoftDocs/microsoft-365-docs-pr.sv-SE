@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2ea3d199fe645897df92da569ed7c013ad5ce209
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: f9917c9abe131ceb745dc173ce8ce4219c73dcaa
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549094"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297002"
 ---
 # <a name="contact-support-for-american-samoa"></a>Kontakta supporten för amerikanska Samoa
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 800-865-9408
@@ -29,7 +29,7 @@ ms.locfileid: "50549094"
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Engelska: Mon-Fri 18:00–17:00
+Engelska: Mon-Fri 06:00–17:00
 
 ### <a name="technical-support"></a>Teknisk support:
 

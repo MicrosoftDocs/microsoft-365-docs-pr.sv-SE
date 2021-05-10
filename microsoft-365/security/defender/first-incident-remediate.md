@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2fe6c5b1b0feea2163c0a2bcc871921a885abb85
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: ed597c55a646eb00d6e6d256c287b22c119f8148
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52115037"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297350"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Steg 2. Åtgärda den första incidenten
 
@@ -36,7 +36,7 @@ ms.locfileid: "52115037"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender tillhandahåller inte bara funktioner för identifiering och analys, utan erbjuder även inneslutning och intrång i skadlig programvara. Inneslutning innehåller åtgärder för att minska attackens påverkan, medan säkerställer att alla spårningar av attackersaktivitet tas bort från nätverket.  Microsoft 365 I Defender finns flera åtgärder som du kan konfigurera för att åtgärda automatiskt beroende på operativsystem och attacktyp.
+Microsoft 365 Defender tillhandahåller inte bara funktioner för identifiering och analys, utan erbjuder även inneslutning och intrång i skadlig programvara. Inneslutning innehåller åtgärder för att minska attackens påverkan, medan säkerställer att alla spårningar av attackersaktivitet tas bort från nätverket.  Microsoft 365 I Defender finns flera åtgärder som du [](m365d-autoir.md) kan konfigurera för att åtgärda automatiskt beroende på operativsystem och attacktyp.
 
 Microsoft 365 Defender erbjuder flera åtgärder som analytiker kan initiera manuellt. Åtgärder är indelade i två kategorier: Åtgärder på enheter och Åtgärder på filer. Vissa åtgärder kan användas för att omedelbart stoppa hoten medan andra åtgärder bidrar till ytterligare analys av konsekvensanalyser.
 
@@ -98,5 +98,5 @@ Lär dig hur [du granskar ett incidenter efter ett incident.](first-incident-pos
 ## <a name="see-also"></a>Se även
 
 - [Översikt över incidenter](incidents-overview.md)
-- [Analysera incidenter](investigate-incidents.md)
+- [Undersöka incidenter](investigate-incidents.md)
 - [Hantera incidenter](manage-incidents.md)

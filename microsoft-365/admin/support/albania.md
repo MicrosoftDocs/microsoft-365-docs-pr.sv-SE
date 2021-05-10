@@ -1,5 +1,5 @@
 ---
-title: Supportinformation för Fornarna
+title: Supportinformation för att bli insnn sn s
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d8943e3a2374786ea91b322e5b1e896965e4cc75
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 4826aea7355a3d37f93d1803c5b7696a7756092f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549130"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297014"
 ---
-# <a name="contact-support-for-albania"></a>Kontakta support för A6
+# <a name="contact-support-for-albania"></a>Kontakta support för att få support
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 04 451 5151

@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 94507a05dcddc147f5d6e022f84721e67bd6316b
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 26e9f4d4078f64490dfdd13a9fc716fcc9e99aec
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544462"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297710"
 ---
-# <a name="contact-support-for-slovakia"></a>Kontakta support för Slovakien
+# <a name="contact-support-for-slovakia"></a>Kontakta supporten för Slovakien
 
-[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)
+[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 0800 102 365
@@ -35,6 +35,6 @@ Engelska: Mon-Fri 9.00–17.00
 
 Engelska: mån–sön, dygnet runt
 
-Alternativt telefonnummer: 026 862 2111
+Alternativ Telefon tal: 026 862 2111
 
 Lokal samtalsavgift

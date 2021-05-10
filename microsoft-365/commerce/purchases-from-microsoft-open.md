@@ -22,18 +22,18 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Lär dig hur du aktiverar, förnyar eller lägger till licenser för Microsoft 365 för företag-prenumeration.
 ms.date: 10/21/2020
-ms.openlocfilehash: e0e317dc0917876c6299fe1eea5812b7bfe0cd8b
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 04df3b24693ac92875cc667aea61e0e9b35cb270
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107598"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293637"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Ange produktnyckeln som köpts från Microsoft Open
 
 Om du har Microsoft 365 för företag från ett [Microsoft Open-licensprogram](https://go.microsoft.com/fwlink/p/?LinkID=613298)är den här artikeln för dig. Volymlicenskunder som har köpt en produktnyckel kan använda det här avsnittet till att aktivera, förnya eller lägga till licenser för en prenumeration.
   
- **Behöver du hjälp omedelbart?** [Kontakta Microsoft Support.](../admin/contact-support-for-business-products.md) 
+ **Behöver du hjälp omedelbart?** [Kontakta Microsoft Support.](..//business-video/get-help-support.md) 
   
  **Behöver du något annat?**
  
@@ -67,4 +67,4 @@ Våra partner kan läsa [Partner: använda en produktnyckel för att skapa prenu
   
 Som volymlicenskund kan du lära dig mer genom att besöka webbplatsen om [utbildning och resurser för Microsoft Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkId=618103).
   
-Eller, om du vill prata med en person, [ring Microsoft Support](../admin/contact-support-for-business-products.md).
+Eller, om du vill prata med en person, [ring Microsoft Support](../business-video/get-help-support.md).

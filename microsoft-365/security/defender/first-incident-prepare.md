@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 88001dc7126a55539213d4c560127d573a09f4bd
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 76bead8fd855e4119db6297d2ab1a3d08d64a48c
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114808"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297170"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Förbered säkerheten för den första händelsen
 
@@ -53,7 +53,7 @@ Komponenter i Microsoft 365 Defender kan visa överträdelser av regler som har 
 
 Enhetsrisker påverkar direkt vilka resurser som är tillgängliga för användaren av enheten. Denial of access to resources based on certain criteria is the main theme of Zero Trust and Microsoft 365 Defender provides information needed to determine the trust level criteria. Till exempel kan Microsoft 365 Defender tillhandahålla programvaruversionsnivån för en enhet via sidan Threat and Vulnerability Management medan villkorsstyrd åtkomst begränsar enheter som har inaktuella eller sårbara versioner.
 
-Automation är en viktig del i implementeringen och underhållet av en nollförtroendemiljö samtidigt som antalet aviseringar som potentiellt skulle leda till incidentåtgärdshändelser (IR-händelser) minskar. Komponenter i Microsoft 365 Defender kan automatiseras, till exempel åtgärder (kallas undersökningar för en incident i säkerhetscentret i Microsoft 365), aviseringsåtgärder och till och med skapandet av supportärenden i [ServiceNow.](https://microsoft.service-now.com/sp/)
+Automation är en viktig del i implementeringen och underhållet av en nollförtroendemiljö samtidigt som antalet aviseringar som potentiellt skulle leda till incidentåtgärdshändelser (IR-händelser) minskar. Komponenter i Microsoft 365 Defender kan automatiseras, till exempel åtgärder [(kallas](m365d-autoir.md) undersökningar för en incident i säkerhetscentret i Microsoft 365), aviseringsåtgärder och till och med skapandet av supportärenden i [ServiceNow.](https://microsoft.service-now.com/sp/)
 
 ## <a name="step-2-determine-your-organizations-security-posture"></a>Steg 2. Fastställa säkerheten i din organisation
 
@@ -92,5 +92,5 @@ Lär dig att [undersöka och analysera incidenter.](first-incident-analyze.md)
 ## <a name="see-also"></a>Se även
 
 - [Översikt över incidenter](incidents-overview.md)
-- [Analysera incidenter](investigate-incidents.md)
+- [Undersöka incidenter](investigate-incidents.md)
 - [Hantera incidenter](manage-incidents.md)
