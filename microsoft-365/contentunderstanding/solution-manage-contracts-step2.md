@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Lär dig hur du Microsoft Teams skapa din kanal för kontraktshantering med hjälp av en Microsoft 365 lösning.
-ms.openlocfilehash: a97f6a77818fc53aa28a5924b97e3c7309d01e3a
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: d703f6f7286a6d9584e8b18d4e283174f42a95bd
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281322"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301806"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Steg 2. Använd Microsoft Teams för att skapa din kanal för kontraktshantering
 
@@ -42,6 +42,9 @@ När du bifogat SharePoint-dokumentbiblioteket kan du visa alla klassificerade k
    ![Listvy.](../media/content-understanding/list-view.png) 
 
 ## <a name="customize-your-contracts-tab-tile-view"></a>Anpassa panelvyn på fliken Kontrakt
+
+> [!NOTE]
+> Det här avsnittet refererar till kodexempel som **finns iContractCard.js** filen som ingår i **zip-filen solutionfiles.**
 
 Även Teams visa kontrakten i en panelvy kan du anpassa dem för att visa de kontraktsdata du vill göra synliga på kontraktskortet. För fliken Kontrakt är **det till** exempel viktigt att medlemmarna ser klienten, leverantören och avgiftsbeloppet på kontraktskortet. Alla dessa fält har extraherats från varje kontrakt via din SharePoint Syntex-modell som tillämpats på ditt dokumentbibliotek. Du vill också kunna ändra panelrubrikfältet till olika färger för varje status så att medlemmarna enkelt kan se var avtalet ligger i godkännandeprocessen. Alla godkända kontrakt kommer till exempel att ha en blå rubrikfält.
 

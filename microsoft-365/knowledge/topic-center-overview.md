@@ -12,19 +12,18 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: ''
 localization_priority: None
-ms.openlocfilehash: 290c06d95c6569b5a446a7a7410d34ff3b57055d
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: bdb49af4ac43976a1ad734e507902781d63c5670
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904076"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301794"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Ämnescenteröversikt i Microsoft Viva-ämnen
 
-
-I Microsoft Viva Topics är ämnescentret en modern SharePoint-webbplats som fungerar som ett kunskapscenter för din organisation. Den skapas under installationen [av Viva Topics](set-up-topic-experiences.md) i administrationscentret för Microsoft 365.
+I Microsoft Viva Topics är ämnescentret en modern SharePoint som fungerar som kunskapscentrum för organisationen. Den skapas under installationen [av Viva Topics](set-up-topic-experiences.md) i Microsoft 365 administrationscenter.
 
 I ämnescentret finns en  standardhemsida med webbdelen Ämnen där alla licensierade användare kan se ämnen som de har en anslutning till. 
 
@@ -35,10 +34,10 @@ Alla licensierade användare som kan visa ämnen har tillgång till ämnescentre
 Ämnescentret skapas under installationen av Viva Topics. När installationen är klar kan administratören hitta URL-adressen på sidan [För hantering av ämnescenter.](./topic-experiences-administration.md#to-access-topics-management-settings)
 
 
-1. I administrationscentret för Microsoft 365 väljer **du Inställningar** och sedan **Organisationsinställningar**.
+1. I Microsoft 365 väljer du Först **Inställningar** och sedan **Organisationsinställningar.**
 2. Välj **Ämnesupplevelser** på **fliken Tjänster.**
 
-    ![Koppla personer till kunskap](../media/admin-org-knowledge-options-completed.png) </br>
+    ![Anslut att få kunskap](../media/admin-org-knowledge-options-completed.png) </br>
 
 3. Välj fliken **Ämnescenter.** Under **Webbplatsadress** finns en länk till ämnescentret.
 
@@ -57,7 +56,7 @@ Alla licensierade användare som kan visa ämnen har tillgång till ämnescentre
 
 På startsidan för ämnescentret kan du se de ämnen i organisationen som du har en anslutning till.
 
-- Föreslagna anslutningar – Du ser ämnen listade under **Vi har listat dig om dessa ämnen. Blev det rätt?**. Det här är ämnen där din koppling till ämnet har föreslagits via AI. Du kan till exempel vara författare till en relaterad fil eller webbplats. Du uppmanas att bekräfta att du bör vara listad som en relaterad person för ämnet.
+- Föreslagna anslutningar – Du ser ämnen listade under **Vi har listat dig om dessa ämnen. Blev det rätt?** Det här är ämnen där din koppling till ämnet har föreslagits via AI. Du kan till exempel vara författare till en relaterad fil eller webbplats. Du uppmanas att bekräfta att du bör vara listad som en relaterad person för ämnet.
 
    ![Föreslagna anslutningar](../media/knowledge-management/my-topics.png) </br>
  
@@ -70,12 +69,12 @@ När en användare bekräftar sin anslutning till ett ämne kan användaren gör
 
 ## <a name="manage-topics-page"></a>Sidan Hantera ämnen
 
-För att kunna arbeta **i avsnittet** Hantera ämnen i ämnescentret måste du ha den behörighet för Hantera ämne som krävs för knowledge manager-rollen. Administratören kan tilldela de här [](set-up-topic-experiences.md)behörigheterna till användare under [kunskapshanteringskonfigurationen,](topic-experiences-knowledge-rules.md) eller så kan nya användare läggas till efteråt av en administratör via administrationscentret för Microsoft 365.
+För att kunna arbeta **i avsnittet** Hantera ämnen i ämnescentret måste du ha den behörighet för Hantera ämne som krävs för knowledge manager-rollen. Administratören kan tilldela de här [](set-up-topic-experiences.md)behörigheterna till användare under [kunskapshanteringskonfigurationen,](topic-experiences-knowledge-rules.md) eller så kan nya användare läggas till efteråt av en administratör via Microsoft 365 administrationscentret.
 
 På sidan Hantera ämnen visar instrumentpanelen ämne alla ämnen som du har åtkomst till och som identifierats från dina angivna källplatser. Varje ämne kommer att visa det datum då ämnet upptäcktes. En användare som har tilldelats behörigheten Hantera ämnen kan granska de ofirmerade ämnena och välja att:
 - Bekräfta ämnet: Anger för användare att ett AI-föreslaget ämne har validerats av en mänsklig man. 
 - Publicera ämnet: Redigera ämnesinformationen för att förbättra kvaliteten på det ämne som ursprungligen identifierades och markerar avsnittet för alla användare som har åtkomst till ämnen. 
-- Avvisa ämnet: Gör att ämnet inte kan upptäckts för slutanvändare. Avsnittet flyttas till fliken **Avvisat och** kan bekräftas senare om det behövs. 
+- Ta bort ämnet: Gör att ämnet inte kan upptäckts för slutanvändare. Avsnittet flyttas till fliken **Borttaget** och kan bekräftas senare om det behövs. 
 
 > [!Note] 
 > Mer [information om ämnenhantering](manage-topics.md) finns i Hantera ämnen på sidan Hantera ämnen.

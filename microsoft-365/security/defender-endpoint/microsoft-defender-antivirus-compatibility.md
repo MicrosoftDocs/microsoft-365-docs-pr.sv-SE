@@ -15,13 +15,13 @@ ms.reviewer: tewchen, pahuijbr
 ms.topic: article
 manager: dansimp
 ms.technology: mde
-ms.date: 05/06/2021
-ms.openlocfilehash: 885844b46d603dc318dbaf877cd445b5caaa4e46
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.date: 05/08/2021
+ms.openlocfilehash: 072ad4e536f753550462fa80650bef392a147e64
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280987"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301758"
 ---
 # <a name="microsoft-defender-antivirus-compatibility"></a>Microsoft Defender Antivirus kompatibilitet
 
@@ -35,24 +35,23 @@ ms.locfileid: "52280987"
 
 Microsoft Defender Antivirus aktiveras och installeras automatiskt på slutpunkter och enheter som kör Windows 10. Men vad händer när en annan (icke-Microsoft)antivirus-/antimalware-lösning används? Det beror på om du använder [Microsoft Defender för Endpoint tillsammans](microsoft-defender-endpoint.md) med ditt antivirusprogram. I den här artikeln beskrivs vad som händer med antivirus-/antimalware-lösningar när slutpunkter introduceras till Microsoft Defender för Slutpunkt.
 
-## <a name="why-defender-for-endpoint-matters"></a>Varför Defender för Endpoint är viktigt
+## <a name="keep-the-following-points-in-mind"></a>Tänk på följande
 
-Överväg att introducera dina slutpunkter i Defender för Endpoint, även om du använder en lösning som inte är en antivirus-/antimalwarelösning från Microsoft. När du skyddar dina enheter i Defender för Slutpunkt kan du i de flesta fall använda Microsoft Defender Antivirus tillsammans med din antiviruslösning som inte är en Microsoft-lösning. Du kan till exempel använda Identifiering och åtgärd på slutpunkt i [blockläge,](edr-in-block-mode.md)som blockerar och åtgärdar skadliga artefakter som din primära antiviruslösning kan ha missat. 
+- I aktivt läge Microsoft Defender Antivirus antivirusappen på datorn. Alla konfigurationer som gjorts med Konfigurationshanteraren, Grupprincip, Intune eller andra hanteringsprodukter tillämpas. Filer söks igenom och hot har åtgärdats, och information om identifiering rapporteras i konfigurationsverktyget (till exempel Configuration Manager eller Microsoft Defender Antivirus-appen på själva datorn).
 
-Så här fungerar det:
+- I passiv form Microsoft Defender Antivirus inte som antivirusprogram, och hoten åtgärdas inte av Microsoft Defender Antivirus. Filer skannas och rapporter tillhandahålls för identifiering av hot som delas med Microsoft Defender för slutpunkt-tjänsten. Du kan se aviseringar i [säkerhetscentret som](microsoft-defender-security-center.md) visar Microsoft Defender Antivirus som källa, även när Microsoft Defender Antivirus är i passivt läge.
 
-- Om din organisations klientenheter skyddas av en lösning som inte är en Microsoft-antivirus-/antimwalware-lösning och dessa enheter introduceras till Defender för Endpoint Microsoft Defender Antivirus in i passiv form automatiskt. I det här fallet sker identifiering av hot, men realtidsskyddet och hoten åtgärdas inte av Microsoft Defender Antivirus. **Obs!** Det här scenariot gäller inte för slutpunkter som kör Windows Server.
+- När [Identifiering och åtgärd på slutpunkt i blockläge](edr-in-block-mode.md) är aktiverat och Microsoft Defender Antivirus inte är den primära antiviruslösningen identifierar och åtgärdar skadliga objekt. Identifiering och åtgärd på slutpunkt i blockeringsläge måste Microsoft Defender Antivirus vara aktiverat i antingen aktivt läge eller passivt läge.
 
-- Om din organisations klientenheter skyddas av en lösning som inte är ett Microsoft-antivirusprogram eller en antimalware-lösning och dessa enheter inte är onboarded to Microsoft Defender för Endpoint inaktiveras Microsoft Defender Antivirus automatiskt i inaktivt läge. I det här fallet identifieras eller åtgärdas inte hoten av Microsoft Defender Antivirus. **Obs!** Det här scenariot gäller inte för slutpunkter som kör Windows Server.
+- När det är Microsoft Defender Antivirus att den inte används som antivirusapp. Filer genomsöks inte och hot åtgärdas inte. Att inaktivera/avinstallera Microsoft Defender Antivirus rekommenderar inte i allmänhet. Om möjligt bör du Microsoft Defender Antivirus i passiv form om du använder en lösning som inte är ett Microsoft-program mot skadlig programvara/antivirusprogram.
 
-- Om din organisations slutpunkter kör Windows Server och dessa slutpunkter skyddas av en lösning som inte är en Microsoft-antivirus-/antimalware-lösning så kommer Microsoft Defender Antivirus inte automatiskt att gå in i antingen passivt läge eller inaktiverat läge för Defender för slutpunkt. I det här scenariot måste du konfigurera Windows serverslutpunkter på rätt sätt. 
+- Om du är registrerad i Microsoft Defender för Endpoint och du använder en program mot skadlig kod från tredje part aktiveras passivt läge. Tjänsten kräver vanlig informationsdelning från Microsoft Defender Antivirus för att kunna övervaka enheterna och nätverket för intrångsförsök och attacker. Mer information finns i [Microsoft Defender Antivirus kompatibilitet med Microsoft Defender för Slutpunkt.](defender-compatibility.md) 
 
-   - I Windows Server, version 1803 eller senare och Windows Server 2019 kan du ställa in Microsoft Defender Antivirus att köras i passivt läge. 
-   - På Windows Server 2016 måste Microsoft Defender Antivirus inaktiveras (passivt läge stöds inte Windows Server 2016).
+- När Microsoft Defender Antivirus i passiv form kan du fortfarande [hantera uppdateringar för Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md). Du kan dock inte flytta Microsoft Defender Antivirus till aktivt läge om dina enheter har ett uppdaterat antivirusprogram som inte är ett Microsoft-antivirusprogram som ger realtidsskydd mot skadlig programvara. För optimal skydd och identifiering av säkerhetslager, se till att uppdatera [Microsoft Defender Antivirus-skyddet](manage-updates-baselines-microsoft-defender-antivirus.md) (säkerhetsintelligensuppdatering, motor och plattform) även om Microsoft Defender Antivirus körs i passivt läge.
 
-- Om din organisations slutpunkter skyddas av en lösning som inte är en Microsoft-antivirus-/antimalware-lösning och dessa enheter introduceras till Defender för Slutpunkt med Identifiering och åtgärd på slutpunkt i [blockeringsläge](/microsoft-365/security/defender-endpoint/edr-in-block-mode) aktiverat, blockerar Defender för slutpunktsblock och åtgärdar skadliga artefakter. **OBS!** Det här scenariot gäller inte för Windows Server 2016. Identifiering och åtgärd på slutpunkt i blockeringsläge måste Microsoft Defender Antivirus vara aktiverat i antingen aktivt läge eller passivt läge.
+- När Microsoft Defender Antivirus inaktiveras automatiskt kan det aktiveras på nytt om skyddet som erbjuds av en produkt som inte är en Microsoft-antivirusprodukt upphör att gälla eller på annat sätt slutar ge realtidsskydd mot virus, skadlig programvara eller andra hot. Automatisk återaktivering säkerställer att antivirusskyddet bibehålls på dina enheter. Du kan också aktivera begränsad regelbunden genomsökning [,](limited-periodic-scanning-microsoft-defender-antivirus.md)som använder Microsoft Defender Antivirus för att regelbundet söka efter hot utöver din huvudantivirusprogram.
 
-## <a name="antivirus-and-microsoft-defender-for-endpoint"></a>Antivirus och Microsoft Defender för Slutpunkt
+## <a name="microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions"></a>Microsoft Defender Antivirus antivirus- och antimalwarelösningar från Microsoft
 
 Följande tabell sammanfattar vad som händer med Microsoft Defender Antivirus när icke-Microsoft antivirus-/antimalware-lösningar används tillsammans eller utan Microsoft Defender för Endpoint. 
 
@@ -93,7 +92,7 @@ I [Microsoft Defender Antivirus på Windows Server finns](microsoft-defender-ant
 >
 > Windows Defender erbjuds även för konsumentenheter på [Windows 8.1](/previous-versions/windows/it-pro/windows-8.1-and-8/dn344918(v=ws.11)#BKMK_WindowsDefender)och Windows Server 2012 , även om det inte ger bättre hantering på företagsnivå (eller ett gränssnitt på grund av Windows Server 2012 Server Core-installationer).
 
-## <a name="functionality-and-features-available-in-each-state"></a>Funktioner som är tillgängliga i varje tillstånd
+## <a name="how-microsoft-defender-antivirus-affects-defender-for-endpoint-functionality"></a>Hur Microsoft Defender Antivirus Defender för Slutpunkt-funktioner påverkas
 
 Tabellen i det här avsnittet sammanfattar de funktioner som är tillgängliga i varje tillstånd. Tabellen är utformad för att bara vara informationssam. Den är avsedd för att beskriva de & funktioner som aktivt arbetar eller inte, beroende på om Microsoft Defender Antivirus är i aktivt läge, i passiv form eller inaktiveras/avinstalleras. 
 
@@ -115,21 +114,23 @@ Tabellen i det här avsnittet sammanfattar de funktioner som är tillgängliga i
 > [!NOTE]
 > [Microsoft 365 Skydd mot dataförlust fortsätter](/microsoft-365/compliance/endpoint-dlp-learn-about) att fungera normalt när Microsoft Defender Antivirus i aktivt eller passivt läge.
 
-## <a name="keep-the-following-points-in-mind"></a>Tänk på följande
+## <a name="why-defender-for-endpoint-matters"></a>Varför Defender för Endpoint är viktigt
 
-- I aktivt läge Microsoft Defender Antivirus antivirusappen på datorn. Alla konfigurationer som gjorts med Konfigurationshanteraren, Grupprincip, Intune eller andra hanteringsprodukter tillämpas. Filer söks igenom och hot har åtgärdats, och information om identifiering rapporteras i konfigurationsverktyget (till exempel Configuration Manager eller Microsoft Defender Antivirus-appen på själva datorn).
+Överväg att introducera dina slutpunkter i Defender för Endpoint, även om du använder en lösning som inte är en antivirus-/antimalwarelösning från Microsoft. När du skyddar dina enheter i Defender för Slutpunkt kan du i de flesta fall använda Microsoft Defender Antivirus tillsammans med din antiviruslösning som inte är en Microsoft-lösning. Du kan till exempel använda Identifiering och åtgärd på slutpunkt i [blockläge,](edr-in-block-mode.md)som blockerar och åtgärdar skadliga artefakter som din primära antiviruslösning kan ha missat. 
 
-- I passiv form Microsoft Defender Antivirus inte som antivirusprogram, och hoten åtgärdas inte av Microsoft Defender Antivirus. Filer skannas och rapporter tillhandahålls för identifiering av hot som delas med Microsoft Defender för slutpunkt-tjänsten. Du kan se aviseringar i [säkerhetscentret som](microsoft-defender-security-center.md) visar Microsoft Defender Antivirus som källa, även när Microsoft Defender Antivirus är i passivt läge.
+Så här fungerar det:
 
-- När [Identifiering och åtgärd på slutpunkt i blockläge](edr-in-block-mode.md) är aktiverat och Microsoft Defender Antivirus inte är den primära antiviruslösningen identifierar och åtgärdar skadliga objekt. Identifiering och åtgärd på slutpunkt i blockeringsläge måste Microsoft Defender Antivirus vara aktiverat i antingen aktivt läge eller passivt läge.
+- Om din organisations klientenheter skyddas av en lösning som inte är en Microsoft-antivirus-/antimwalware-lösning och dessa enheter introduceras till Defender för Endpoint Microsoft Defender Antivirus in i passiv form automatiskt. I det här fallet sker identifiering av hot, men realtidsskyddet och hoten åtgärdas inte av Microsoft Defender Antivirus. **Obs!** Det här scenariot gäller inte för slutpunkter som kör Windows Server.
 
-- När det är Microsoft Defender Antivirus att den inte används som antivirusapp. Filer genomsöks inte och hot åtgärdas inte. Att inaktivera/avinstallera Microsoft Defender Antivirus rekommenderar inte i allmänhet. Om möjligt bör du Microsoft Defender Antivirus i passiv form om du använder en lösning som inte är ett Microsoft-program mot skadlig programvara/antivirusprogram.
+- Om din organisations klientenheter skyddas av en lösning som inte är ett Microsoft-antivirusprogram eller en antimalware-lösning och dessa enheter inte är onboarded to Microsoft Defender för Endpoint inaktiveras Microsoft Defender Antivirus automatiskt i inaktivt läge. I det här fallet identifieras eller åtgärdas inte hoten av Microsoft Defender Antivirus. **Obs!** Det här scenariot gäller inte för slutpunkter som kör Windows Server.
 
-- Om du är registrerad i Microsoft Defender för Endpoint och du använder en program mot skadlig kod från tredje part aktiveras passivt läge. Tjänsten kräver vanlig informationsdelning från Microsoft Defender Antivirus för att kunna övervaka enheterna och nätverket för intrångsförsök och attacker. Mer information finns i [Microsoft Defender Antivirus kompatibilitet med Microsoft Defender för Slutpunkt.](defender-compatibility.md) 
+- Om din organisations slutpunkter kör Windows Server och dessa slutpunkter skyddas av en lösning som inte är en Microsoft-antivirus-/antimalware-lösning så kommer Microsoft Defender Antivirus inte automatiskt att gå in i antingen passivt läge eller inaktiverat läge för Defender för slutpunkt. I det här scenariot måste du konfigurera Windows serverslutpunkter på rätt sätt. 
 
-- När Microsoft Defender Antivirus i passiv form kan du fortfarande [hantera uppdateringar för Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md). Du kan dock inte flytta Microsoft Defender Antivirus till aktivt läge om dina enheter har ett uppdaterat antivirusprogram som inte är ett Microsoft-antivirusprogram som ger realtidsskydd mot skadlig programvara. För optimal skydd och identifiering av säkerhetslager, se till att uppdatera [Microsoft Defender Antivirus-skyddet](manage-updates-baselines-microsoft-defender-antivirus.md) (säkerhetsintelligensuppdatering, motor och plattform) även om Microsoft Defender Antivirus körs i passivt läge.
+   - I Windows Server, version 1803 eller senare och Windows Server 2019 kan du ställa in Microsoft Defender Antivirus att köras i passivt läge. 
+   - På Windows Server 2016 måste Microsoft Defender Antivirus inaktiveras (passivt läge stöds inte Windows Server 2016).
 
-- När Microsoft Defender Antivirus inaktiveras automatiskt kan det aktiveras på nytt om skyddet som erbjuds av en produkt som inte är en Microsoft-antivirusprodukt upphör att gälla eller på annat sätt slutar ge realtidsskydd mot virus, skadlig programvara eller andra hot. Automatisk återaktivering säkerställer att antivirusskyddet bibehålls på dina enheter. Du kan också aktivera begränsad regelbunden genomsökning [,](limited-periodic-scanning-microsoft-defender-antivirus.md)som använder Microsoft Defender Antivirus för att regelbundet söka efter hot utöver din huvudantivirusprogram.
+- Om din organisations slutpunkter skyddas av en lösning som inte är en Microsoft-antivirus-/antimalware-lösning och dessa enheter introduceras till Defender för Slutpunkt med Identifiering och åtgärd på slutpunkt i [blockeringsläge](/microsoft-365/security/defender-endpoint/edr-in-block-mode) aktiverat, blockerar Defender för slutpunktsblock och åtgärdar skadliga artefakter. **OBS!** Det här scenariot gäller inte för Windows Server 2016. Identifiering och åtgärd på slutpunkt i blockeringsläge måste Microsoft Defender Antivirus vara aktiverat i antingen aktivt läge eller passivt läge.
+
 
 > [!WARNING]
 > Inaktivera inte, stoppa eller ändra inga av de associerade tjänster som används av Microsoft Defender Antivirus, Microsoft Defender för Endpoint eller Windows-säkerhet appen. Denna rekommendation omfattar tjänster och processer för *wscsvc*, *SecurityHealthService,* *MsSense,* *Sense,* *WinDefend* och *MsMpEng.* Om du ändrar de här tjänsterna manuellt kan det orsaka allvarlig instabilitet på dina enheter, vilket kan göra nätverket sårbart. Om du inaktiverar, stoppar eller ändrar de tjänsterna kan det också orsaka problem när du använder antiviruslösningar som inte är från Microsoft och hur informationen visas i [Windows-säkerhet-appen.](microsoft-defender-security-center-antivirus.md)

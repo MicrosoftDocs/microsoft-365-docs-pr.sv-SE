@@ -15,17 +15,17 @@ localization_priority: Normal
 ms.custom:
 - next-gen
 - edr
-ms.date: 05/05/2021
+ms.date: 05/08/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: b0fe1da56c34cd0a79e1a41dba2fcb7a79c5a9f6
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 86bb27005365b625ee07feaa067c0ac488c3bb4b
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259587"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302046"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Identifiering och svar av slutpunkt (Identifiering och åtgärd på slutpunkt) i blockeringsläge
 
@@ -39,18 +39,18 @@ ms.locfileid: "52259587"
 
 ## <a name="what-is-edr-in-block-mode"></a>Vad är Identifiering och åtgärd på slutpunkt i blockeringsläge?
 
-[Identifiering och svar av slutpunkt](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) (Identifiering och åtgärd på slutpunkt) i blockeringsläge ger skydd mot skadliga artefakter, även när Microsoft Defender Antivirus körs i passiv form. När den är Identifiering och åtgärd på slutpunkt blockeras skadliga artefakter eller beteenden som upptäcks på en enhet. Identifiering och åtgärd på slutpunkt i blockeringsläge fungerar bakom kulisserna för att åtgärda skadliga artefakter som upptäcks efter intrånget. 
+[Identifiering och svar av slutpunkt](overview-endpoint-detection-response.md) (Identifiering och åtgärd på slutpunkt) i blockeringsläge ger skydd mot skadliga artefakter, även när Microsoft Defender Antivirus körs i passiv form. När den är Identifiering och åtgärd på slutpunkt blockeras skadliga artefakter eller beteenden som upptäcks på en enhet. Identifiering och åtgärd på slutpunkt i blockeringsläge fungerar bakom kulisserna för att åtgärda skadliga artefakter som upptäcks efter intrånget. 
 
-Identifiering och åtgärd på slutpunkt i blockeringsläge är också integrerat med [& hantering av säkerhetsrisker](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt). Din organisations säkerhetsteam kommer att få en säkerhetsrekommendationer [om](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation) att aktivera Identifiering och åtgärd på slutpunkt i blockeringsläge om det inte redan är aktiverat. 
+Identifiering och åtgärd på slutpunkt i blockeringsläge är också integrerat med [& hantering av säkerhetsrisker](next-gen-threat-and-vuln-mgt.md). Din organisations säkerhetsteam kommer att få en säkerhetsrekommendationer [om](tvm-security-recommendation.md) att aktivera Identifiering och åtgärd på slutpunkt i blockeringsläge om det inte redan är aktiverat. 
 
 :::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="rekommendation att aktivera Identifiering och åtgärd på slutpunkt i blockläge":::
 
 > [!NOTE]
-> För att få det bästa skyddet bör du distribuera **[Microsoft Defender för slutpunktsbaslinjer](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-machines-security-baseline)**.
+> För att få det bästa skyddet bör du distribuera **[Microsoft Defender för slutpunktsbaslinjer](configure-machines-security-baseline.md)**.
 
 ## <a name="what-happens-when-something-is-detected"></a>Vad händer när något identifieras?
 
-När Identifiering och åtgärd på slutpunkt i blockeringsläge är aktiverat och en skadlig artefakt upptäcks, blockerar och åtgärdar Microsoft Defender för Slutpunktsblock och åtgärdar artefakten. Du ser identifieringsstatus som **Blockerad eller** **Förhindrad som** slutförda åtgärder i [Åtgärdscenter.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/respond-machine-alerts#check-activity-details-in-action-center)
+När Identifiering och åtgärd på slutpunkt i blockeringsläge är aktiverat och en skadlig artefakt upptäcks, blockerar och åtgärdar Microsoft Defender för Slutpunktsblock och åtgärdar artefakten. Ditt team för säkerhetsåtgärder ser identifieringsstatus **som Blockerad** eller **Förhindrad** i Åtgärdscenter , som visas som slutförda åtgärder. [](respond-machine-alerts.md#check-activity-details-in-action-center)
 
 Följande bild visar en instans av oönskad programvara som har upptäckts och blockerats i Identifiering och åtgärd på slutpunkt i blockeringsläge:
 
@@ -75,16 +75,16 @@ Följande bild visar en instans av oönskad programvara som har upptäckts och b
 
 |Krav  |Information  |
 |---------|---------|
-|Behörigheter |Rollen global administratör eller säkerhetsadministratör tilldelad i [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). Se [Grundläggande behörigheter.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/basic-permissions) |
-|Operativsystem     |Någon av följande versioner: <br/>- Windows 10 (alla versioner) <br/>- Windows Server, version 1803 eller senare <br/>- Windows Server 2019  <p>**Obs!** Identifiering och åtgärd på slutpunkt i blockläge stöds inte på Windows Server 2016.       |
-|Windows E5-registrering     |Windows E5 ingår i följande prenumerationer: <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 tillsammans med erbjudandet om & och skydd mot hot <br/><br/>Se [Komponenter](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview?view=o365-worldwide&preserve-view=true#components) [och funktioner för varje abonnemang.](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)       |
+|Behörigheter |Rollen global administratör eller säkerhetsadministratör tilldelad i [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). Se [Grundläggande behörigheter.](basic-permissions.md) |
+|Operativsystem     |Någon av följande versioner: <br/>- Windows 10 (alla versioner) <br/>- Windows Server, version 1803 eller senare <br/>- Windows Server 2019 <br/>- Windows Server 2016 (endast när Microsoft Defender Antivirus är i aktivt läge)     |
+|Windows E5-registrering     |Windows E5 ingår i följande prenumerationer: <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 tillsammans med erbjudandet om & och skydd mot hot <br/><br/>Se [Komponenter](/microsoft-365/enterprise/microsoft-365-overview#components) [och funktioner för varje abonnemang.](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)       |
 |Microsoft Defender Antivirus  |Microsoft Defender Antivirus måste installeras och köras i antingen aktivt läge eller passivt läge. (Du kan använda Microsoft Defender Antivirus tillsammans med en antiviruslösning som inte är en Microsoft-lösning.) [Kontrollera Microsoft Defender Antivirus är i aktivt eller passivt läge](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode). |
-|Molnbaserat skydd |Se till Microsoft Defender Antivirus är konfigurerat så att [moln levererat skydd är aktiverat.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) |
-|Microsoft Defender Antivirus mot skadlig programvara |Kontrollera att din klient är uppdaterad. Med PowerShell kör du [cmdleten Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) som administratör. I **raden AMProductVersion** bör du se **4.18.2001.10** eller högre. |
-|Microsoft Defender Antivirus motor |Kontrollera att motorn är uppdaterad. Med PowerShell kör du [cmdleten Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) som administratör. På **raden AMEngineVersion** bör du se **1.1.16700.2** eller högre. |
+|Molnbaserat skydd |Se till Microsoft Defender Antivirus är konfigurerat så att [moln levererat skydd är aktiverat.](enable-cloud-protection-microsoft-defender-antivirus.md) |
+|Microsoft Defender Antivirus mot skadlig programvara |Kontrollera att din klient är uppdaterad. Med PowerShell kör du [cmdleten Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) som administratör. I **raden AMProductVersion** bör du se **4.18.2001.10** eller högre. |
+|Microsoft Defender Antivirus motor |Kontrollera att motorn är uppdaterad. Med PowerShell kör du [cmdleten Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) som administratör. På **raden AMEngineVersion** bör du se **1.1.16700.2** eller högre. |
 
 > [!IMPORTANT]
-> För att få bästa möjliga skydd ser du till att antiviruslösningen är konfigurerad för att ta emot regelbundna uppdateringar och viktiga funktioner och att [undantagen är konfigurerade.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus) Identifiering och åtgärd på slutpunkt i blockeringsläge följer undantag som har definierats för Microsoft Defender Antivirus.
+> För att få bästa möjliga skydd ser du till att antiviruslösningen är konfigurerad för att ta emot regelbundna uppdateringar och viktiga funktioner och att [undantagen är konfigurerade.](configure-exclusions-microsoft-defender-antivirus.md) Identifiering och åtgärd på slutpunkt i blockeringsläge följer undantag som har definierats för Microsoft Defender Antivirus.
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor och svar 
 
@@ -94,60 +94,46 @@ Vi rekommenderar att Identifiering och åtgärd på slutpunkt i blockeringsläge
 
 ### <a name="will-edr-in-block-mode-have-any-impact-on-a-users-antivirus-protection"></a>Kommer Identifiering och åtgärd på slutpunkt i blockeringsläge att ha någon inverkan på en användares antivirusskydd? 
 
-Identifiering och åtgärd på slutpunkt i blockeringsläget påverkar inte antivirusskyddet från tredje part som körs på användarnas enheter. Identifiering och åtgärd på slutpunkt i blockeringsläge fungerar om den primära antiviruslösningen missar något, eller om det finns en identifiering efter intrång. Identifiering och åtgärd på slutpunkt i blockläge fungerar precis som [Microsoft Defender Antivirus i passivt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)läge , förutom att det även blockerar och åtgärdar skadliga artefakter eller beteenden som upptäcks. 
+Identifiering och åtgärd på slutpunkt i blockeringsläget påverkar inte antivirusskyddet från tredje part som körs på användarnas enheter. Identifiering och åtgärd på slutpunkt i blockeringsläge fungerar om den primära antiviruslösningen missar något, eller om det finns en identifiering efter intrång. Identifiering och åtgärd på slutpunkt i blockläge fungerar precis som Microsoft Defender Antivirus i passivt läge, förutom att det även blockerar och åtgärdar skadliga artefakter eller beteenden som upptäcks.
 
 ### <a name="why-do-i-need-to-keep-microsoft-defender-antivirus-up-to-date"></a>Varför måste jag hålla Microsoft Defender Antivirus mig uppdaterad? 
 
-Eftersom Microsoft Defender Antivirus identifierar och åtgärdar skadliga objekt är det viktigt att hålla den uppdaterad. För Identifiering och åtgärd på slutpunkt i blockläge är effektivt används de senaste utbildningsmodellerna för enheter, beteendeidentifiering och heuristik. Defender [för Slutpunkt-stacken](https://docs.microsoft.com/windows/security/threat-protection) med funktioner fungerar på ett integrerat sätt. För att få bästa möjliga skydd bör du Microsoft Defender Antivirus hålla dig uppdaterad.  
+Eftersom Microsoft Defender Antivirus identifierar och åtgärdar skadliga objekt är det viktigt att hålla den uppdaterad. För Identifiering och åtgärd på slutpunkt i blockläge är effektivt används de senaste utbildningsmodellerna för enheter, beteendeidentifiering och heuristik. Defender [för Slutpunkt-stacken](microsoft-defender-endpoint.md) med funktioner fungerar på ett integrerat sätt. För att få bästa möjliga skydd bör du Microsoft Defender Antivirus hålla dig uppdaterad. Se [Hantera Microsoft Defender Antivirus uppdateringar och använda baslinjer.](manage-updates-baselines-microsoft-defender-antivirus.md) 
 
 ### <a name="why-do-we-need-cloud-protection-on"></a>Varför behöver vi molnskydd på? 
 
-Molnskydd krävs för att aktivera funktionen på enheten. Molnskydd gör [att Defender](https://docs.microsoft.com/windows/security/threat-protection) för Endpoint kan tillhandahålla det senaste och bästa skyddet baserat på vår bredd och djup av säkerhetsinformation, tillsammans med modeller för beteende och enhetsinlärning.
+Molnskydd krävs för att aktivera funktionen på enheten. Molnskydd gör [att Defender](microsoft-defender-endpoint.md) för Endpoint kan tillhandahålla det senaste och bästa skyddet baserat på vår bredd och djup av säkerhetsinformation, tillsammans med modeller för beteende och enhetsinlärning.
 
 ### <a name="how-do-i-set-microsoft-defender-antivirus-to-passive-mode"></a>Hur ställer jag in Microsoft Defender Antivirus passivt läge?
 
-Se [Aktivera Microsoft Defender Antivirus och bekräfta att det är i passivt läge.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-setup#enable-microsoft-defender-antivirus-and-confirm-its-in-passive-mode)
+När enheter som kör en lösning som inte är en Microsoft-antivirus-/antimalware-lösning förs in i Defender för Endpoint kan Microsoft Defender Antivirus automatiskt gå in i passivt läge. Mer information finns i Hur [Microsoft Defender Antivirus påverkar Defender för Slutpunkt-funktioner.](microsoft-defender-antivirus-compatibility.md#how-microsoft-defender-antivirus-affects-defender-for-endpoint-functionality) 
 
 ### <a name="how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode"></a>Hur bekräftar jag att Microsoft Defender Antivirus i aktivt eller passivt läge?
 
 Om du vill Microsoft Defender Antivirus i aktivt eller passivt läge kan du använda Kommandotolken eller PowerShell på en enhet som kör Windows.
 
-#### <a name="use-powershell"></a>Använda PowerShell
 
-1. Välj Start-menyn, börja `PowerShell` skriva och öppna Windows PowerShell i resultatet.
-
-2. Typ `Get-MpComputerStatus`.
-
-3. Leta efter något av följande värden i resultatlistan på raden **AMRunningMode:**
-   - `Normal` - Defender-tjänsten körs normalt. Inga speciella lägen är aktiverade.
-   - `Passive Mode`– om din organisation använder Microsoft Defender för Endpoint tillsammans med en lösning som inte är en Antivirus-/antimalware-lösning från Microsoft Microsoft Defender Antivirus automatiskt i passiv form. (Realtidsskydd och hot åtgärdas inte av Microsoft Defender Antivirus.)
-   - `SxS Passive Mode`– Liknar det passiva läget, men med alternativet att aktivera begränsad regelbunden genomsökning.
-   
-Mer information finns i [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus).
-
-#### <a name="use-command-prompt"></a>Använda Kommandotolken
-
-1. Välj Start-menyn, börja `Command Prompt` skriva och öppna Windows Kommandotolken i resultatet.
-
-2. Typ `sc query windefend`.
-
-3. I resultatlistan, på raden **DELSTAT,** bekräftar du att tjänsten körs.
+|Metod  |Förfarande  |
+|---------|---------|
+| PowerShell     | 1. Välj Start-menyn, börja `PowerShell` skriva och öppna Windows PowerShell i resultatet. <p>2. Skriv `Get-MpComputerStatus` . <p>3. Leta efter något av följande värden i resultatlistan på raden **AMRunningMode:** <br/>- `Normal` <br/>- `Passive Mode` <br/>- `SxS Passive Mode` <p>Mer information finns i [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).        |
+|Kommandotolken     | 1. Välj Start-menyn, börja skriva och öppna `Command Prompt` Windows Kommandotolken i resultatet. <p>2. Skriv `sc query windefend` . <p>3. I resultatlistan, på **raden DELSTAT,** bekräftar du att tjänsten körs.         |
 
 ### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>Hur lång tid tar det för Identifiering och åtgärd på slutpunkt i blockeringsläget att inaktiveras?
 
-Om du väljer att Identifiering och åtgärd på slutpunkt i blockeringsläge kan det ta upp till 30 minuter för systemet att inaktivera den här funktionen.
+Om du väljer att Identifiering och åtgärd på slutpunkt i blockläge kan det ta upp till 30 minuter för systemet att inaktivera den här funktionen.
 
 ### <a name="is-edr-in-block-mode-supported-on-windows-server-2016"></a>Stöds Identifiering och åtgärd på slutpunkt i blockeringsläge på Windows Server 2016?
 
-Nej. Identifiering och åtgärd på slutpunkt i blockläge stöds av följande versioner av Windows:
+Om Microsoft Defender Antivirus i aktivt läge eller passivt läge stöds Identifiering och åtgärd på slutpunkt i blockeringsläge av följande versioner av Windows:
 
 - Windows 10 (alla versioner)
 - Windows Server, version 1803 eller senare 
 - Windows Server 2019 
 
+Om Windows Server 2016 har Microsoft Defender Antivirus i aktivt läge och slutpunkten är onboarded till Defender för Endpoint stöds Identifiering och åtgärd på slutpunkt i blockeringsläge tekniskt. Men funktionen Identifiering och åtgärd på slutpunkt i blockläge är avsedd att vara extra skydd när Microsoft Defender Antivirus inte är den primära antiviruslösningen på en slutpunkt. I sådana fall Microsoft Defender Antivirus i passiv form. För närvarande stöds Microsoft Defender Antivirus i passivt läge inte på Windows Server 2016. Mer information finns i artikeln om Microsoft Defender Antivirus antivirus- och [antimalwarelösningar från Microsoft.](microsoft-defender-antivirus-compatibility.md#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)
+
 ## <a name="see-also"></a>Se även
 
 - [Tech Community-blogg: Identifiering och åtgärd på slutpunkt i blockläge: stoppa attacker i deras spår](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
 - [Beteendeblockering och inneslutning](behavioral-blocking-containment.md)
-- [Bättre tillsammans: Microsoft Defender Antivirus och Microsoft Defender för Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus)
 

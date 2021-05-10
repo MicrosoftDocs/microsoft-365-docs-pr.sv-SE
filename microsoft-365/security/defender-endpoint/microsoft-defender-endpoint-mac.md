@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b5af93e82f72bac900682b2e231453e448b267d9
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 365fed8b5f7c7fc617ea068e324da541f7f1b187
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934195"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301782"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender för slutpunkt på Mac
 
@@ -39,7 +39,7 @@ ms.locfileid: "51934195"
 I det här avsnittet beskrivs hur du installerar, konfigurerar, uppdaterar och använder Defender för slutpunkt på Mac.
 
 > [!CAUTION]
-> Att köra andra slutpunktsskyddsprodukter från tredje part tillsammans med Microsoft Defender för Endpoint på Mac kan sannolikt leda till prestandaproblem och oförutsägbara sidoeffekter. Om skydd mot slutpunkter som inte är Microsoft är ett absolut krav i din miljö kan du fortfarande tryggt dra nytta av Defender för Endpoint på Mac EDR-funktioner när antivirusfunktionerna har konfigurerats så att de körs i [passivt läge.](mac-preferences.md#enable--disable-passive-mode)
+> Att köra andra slutpunktsskyddsprodukter från tredje part tillsammans med Microsoft Defender för Endpoint på Mac kan sannolikt leda till prestandaproblem och oförutsägbara sidoeffekter. Om skydd mot slutpunkter som inte är Microsoft är ett absolut krav i din miljö kan du fortfarande tryggt dra nytta av Defender för Endpoint på Mac Identifiering och åtgärd på slutpunkt när du har konfigurerat antivirusfunktionen så att den körs i [passivt läge.](mac-preferences.md#enable--disable-passive-mode)
 
 ## <a name="whats-new-in-the-latest-release"></a>Nyheter i den senaste versionen
 
@@ -50,13 +50,13 @@ I det här avsnittet beskrivs hur du installerar, konfigurerar, uppdaterar och a
 > [!TIP]
 > Om du har någon feedback som du vill dela kan du skicka in den genom att öppna Microsoft Defender för Slutpunkt på Mac på din enhet och navigera till **Hjälp med** att  >  **skicka feedback.**
 
-För att få de senaste funktionerna, inklusive förhandsgranskningsfunktioner (till exempel identifiering av slutpunkt och svar för dina Mac-enheter), konfigurerar du din macOS-enhet som kör Microsoft Defender för Slutpunkt att vara en "Insider"-enhet.
+Om du vill ha de senaste funktionerna, till exempel förhandsgranskningsfunktioner (till exempel identifiering och åtgärd på slutpunkt för dina Mac-enheter), konfigurerar du din macOS-enhet som kör Microsoft Defender för Endpoint till en "Insider"-enhet.
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>Så här installerar du Microsoft Defender för slutpunkt på Mac
 
 ### <a name="prerequisites"></a>Förutsättningar
 
-- En Defender för Endpoint-prenumeration och åtkomst till Microsoft Defender Säkerhetscenter-portalen
+- En Defender för Endpoint-prenumeration och åtkomst till Microsoft Defender Säkerhetscenter portalen
 - Nybörjarupplevelse med macOS- och BASH-skript
 - Administratörsbehörigheter på enheten (vid manuell distribution)
 
@@ -96,12 +96,14 @@ När du har aktiverat tjänsten kan du behöva konfigurera nätverket eller bran
 Microsoft Defender för Slutpunkt på Mac kräver något av följande Microsoft volymlicensieringserbjudanden:
 
 - Microsoft 365 E5 (M365 E5)
-- Microsoft 365 E5 – säkerhet
+- Microsoft 365 E5 Security
 - Microsoft 365 A5 (M365 A5)
+- Windows 10 Enterprise E5
+- Microsoft Defender för Endpoint
 
 > [!NOTE]
 > Kvalificerade licensierade användare kan använda Microsoft Defender för Endpoint på upp till fem samtidiga enheter.
-> Microsoft Defender för Endpoint kan också köpas från en leverantör av molnlösningar (CSP). När microsoft volymlicensieringserbjudandena listas för dem när de köps via en microsoft-moln moln
+> Microsoft Defender för Endpoint kan också köpas från en microsoft Molnlösningsleverantör (CSP). När microsoft volymlicensieringserbjudandena listas för dem när de köps via en microsoft-moln moln
 
 ### <a name="network-connections"></a>Nätverksanslutningar
 

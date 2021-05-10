@@ -14,22 +14,22 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Översikt över Viva Topics.
-ms.openlocfilehash: 1d66751d55c0144149fa8325e89be404e3df19ed
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: ecd090036f35a3cfdaffe532c800244c8174183b
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281035"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302130"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Översikt över Microsoft Viva Topics 
 
-Viva Topics använder Microsoft AI-teknik, Microsoft 365, Microsoft Graph, Search och andra komponenter och tjänster för att ge användarna kunskaper i Microsoft 365-appar de använder varje dag, med början på moderna SharePoint-sidor, Microsoft Search och Sökning i Word och PowerPoint.
+Viva Topics använder Microsoft AI-teknik, Microsoft 365, Microsoft Graph, Search och andra komponenter och tjänster för att ge användarna kunskaper i Microsoft 365-appar de använder varje dag, med början på moderna SharePoint-sidor, Microsoft Search och sökning i Word, PowerPoint, Outlook och Excel.
 
-</br>
+<br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
 
-</br>
+<br/>
 
 Med Viva Topics kan du hantera ett viktigt affärsproblem i många företag – där användarna får tillgång till informationen när de behöver den. Till exempel behöver nya medarbetare snabbt lära sig mycket ny information, och stöter på termer som de inte vet något om när de läser igenom företagsinformation. För att lära sig mer kan användaren behöva ge sig av från vad de gör och ägna värdefull tid åt att söka efter information, till exempel information om vad termen är, vem i organisationen som är ämnesexpert och kanske webbplatser och dokument som är relaterade till termen.
 
@@ -42,7 +42,7 @@ När ett ämne omnämns i innehåll på nyheter och sidor i SharePoint markeras 
 
    ![Höjdpunkter Topic](../media/knowledge-management/saturn.png) 
 
-När du använder Sök i Word eller PowerPoint, antingen i  sökrutan eller genom att välja Sök på snabbmenyn, kan resultatet som visas också visa ämnessammanfattningen.
+När du använder Sökning i Word, PowerPoint, Outlook eller Excel, antingen via sökrutan  eller genom att välja Sök i snabbmenyn, kan resultatet som visas också visa en ämnessammanfattning.
 
    ![Skärmbild som visar sökning i Word via sökrutan.](../media/knowledge-management/word-search-2.png)
 
@@ -71,7 +71,7 @@ När ett ämne identifieras och AI bestämmer att det innehåller tillräckligt 
 
 Dina kunskapsadministratörer kan välja att crawla alla SharePoint-webbplatser i klientorganisationen för ämnen eller att bara välja vissa.
 
-Se [Identifiering och säkring av ämnen](./topic-experiences-discovery-curation.md) för mer information
+Se [Ämnesidentifiering och curation](./topic-experiences-discovery-curation.md).
 
 ## <a name="roles"></a>Roller
 
@@ -97,7 +97,7 @@ Kunskapshanterare kan:
 
 - Bekräfta eller ta bort ämnen som har upptäckts i klientorganisationen.
 - Skapa nya ämnen manuellt efter behov (om till exempel inte tillräckligt med information tillhandahölls för att den ska upptäckas via AI).
-- Redigera befintliga ämnessidor.</br>
+- Redigera befintliga ämnessidor.<br/>
 
 Se [Hantera ämnen i temacenter](manage-topics.md) för mer information.  
 
@@ -125,7 +125,8 @@ Användare som du tillåter åtkomst till för att se ämnen i sitt dagliga arbe
 
 Dessutom kan användare med rätt behörighet tagga objekt, till exempel Yammer-konversationer som är relevanta för ett ämne, och lägga till dem i ett visst ämne. 
 
-Se [Identifiering och säkring av ämnen](./topic-experiences-discovery-curation.md) för mer information
+Se [Ämnesidentifiering och curation](./topic-experiences-discovery-curation.md).
 
-
-## <a name="see-also"></a>Se även
+<!--
+## See also
+-->

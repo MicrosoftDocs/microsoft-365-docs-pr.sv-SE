@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 5c7a2d943ec1813623065e70330b914a3911d1eb
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: a2bc36f9d3a3e9179f07662da8d97f4c55e72a24
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51769004"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302058"
 ---
 # <a name="turn-on-network-protection"></a>Aktivera nätverksskydd
 
@@ -43,7 +43,7 @@ Kontrollera om nätverksskyddet har aktiverats på en lokal enhet med registered
 
 2. Välj **HKEY_LOCAL_MACHINE** i sidomenyn
 
-3. Navigera genom de kapslade menyerna **till**  >  **PROGRAMVARUprinciper**  >  **Microsoft**  >  **Windows Defender** Windows Defender Exploit  >  **Guard**  >  **Network Protection**
+3. Navigera genom de kapslade menyerna **till**  >  **PROGRAMVARUprinciper**  >  **i Microsoft**  >  **Windows Defender**  >  **Policy Manager** 
 
 4. Välj **EnableNetworkProtection** för att se aktuell status för nätverksskydd på enheten
 
@@ -64,7 +64,7 @@ Aktivera nätverksskydd med någon av följande metoder:
 
 ### <a name="powershell"></a>PowerShell
 
-1. Skriv **powershell** på Start-menyn, högerklicka på **Windows PowerShell och** välj Kör som **administratör**
+1. Skriv **powershell** på Start-menyn, högerklicka på **Windows PowerShell** välj Kör **som administratör**
 2. Ange följande cmdlet:
 
     ```PowerShell
@@ -85,11 +85,11 @@ Använd [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection-konfigurat
 
 ### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft Endpoint Manager (tidigare Intune)
 
-1. Logga in i administrationscentret för Microsoft Endpoint Manager (https://endpoint.microsoft.com)
+1. Logga in Microsoft Endpoint Manager administrationscenter (https://endpoint.microsoft.com)
 
 2. Skapa eller redigera en [konfigurationsprofil för slutpunktsskydd](/mem/intune/protect/endpoint-protection-configure)
 
-3. Under **Konfigurationsinställningar** i profilflödet går du till **Microsoft Defender Sårbarhetsskydd**  >  **nätverksfiltrering**  >  **Aktivera**  >  **eller** **Granska endast**
+3. Under **Konfiguration Inställningar** i profilflödet går du till Microsoft Defender Exploit Guard **nätverksfiltrering**  >    >  **Endast**  >  **aktivera eller** **granska**
 
 ### <a name="group-policy"></a>Grupprincip
 
@@ -101,17 +101,17 @@ Använd följande procedur för att aktivera nätverksskydd på domänbaserade d
 
     På en domän ansluten grupprinciphanteringsdator öppnar du konsolen [Grupprinciphantering,](https://technet.microsoft.com/library/cc731212.aspx)högerklickar på det grupprincipobjekt du vill konfigurera och väljer **Redigera.**
 
-2. I **redigeraren för grupprinciphantering** går du till **Datorkonfiguration** och väljer **Administrativa mallar**.
+2. I **Redigeraren för grupprinciphantering** går du till **Datorkonfiguration** och väljer **Administrativa mallar**.
 
-3. Expandera trädet till **Windows-komponenter**  >  **Microsoft Defender Antivirus** Windows Defender Exploit  >  **Guard-nätverksskydd**  >  .
+3. Expandera trädet för att **Windows komponenter**  >  **Microsoft Defender Antivirus**  >  **Windows Defender Exploit**  >  **Guard-nätverksskydd**.
 
 > [!NOTE]
-> I äldre versioner av Windows kan det hända att grupprincipsökvägen säger "Windows Defender Antivirus" i stället för "Microsoft Defender Antivirus".
+> I äldre versioner av Windows kan det hända att det visas "Windows Defender Antivirus" i stället för "Microsoft Defender Antivirus".
 
 4. Dubbelklicka på inställningen Förhindra **användare och appar från att komma åt skadliga webbplatser** och ange alternativet **Aktiverad.** I avsnittet alternativ måste du ange något av följande alternativ:
     * **Blockera** – användare kan inte komma åt skadliga IP-adresser och domäner
     * **Inaktivera (standard)** – Nätverksskyddsfunktionen fungerar inte. Användarna blockeras inte från att komma åt skadliga domäner
-    * **Granskningsläge** – Om en användare besöker en skadlig IP-adress eller domän registreras en händelse i Windows-händelseloggen. Men användaren blockeras inte från att gå till adressen.
+    * **Granskningsläge** – Om en användare besöker en skadlig IP-adress eller domän registreras en händelse i Windows händelseloggen. Men användaren blockeras inte från att gå till adressen.
 
 > [!IMPORTANT]
 > Om du vill aktivera nätverksskydd fullt ut  måste du ställa **in** grupprincipalternativet på Aktiverad och även välja Blockera i den nedrullningrullningsalternativsmeny som visas.

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Få en översikt över hur din organisation inför nya Microsoft 365 för att kommunicera och samarbeta.
-ms.openlocfilehash: 7d267dcbbb35a03794567991fddb2e3a573d47dc
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: ac54e8bbc24393b7140fbc32efd48047beca2a1c
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297398"
+ms.locfileid: "52301746"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 användningsanalyser
 
@@ -89,6 +89,9 @@ Användaraktivitetsrapporter finns tillgängliga för vissa enskilda tjänster. 
 Det är inte kostnadsfritt, du behöver en Power BI Pro licens. Mer information finns [i Förutsättningar](/power-bi/service-template-apps-install-distribute#prerequisites) för att installera, anpassa och distribuera en mallapp.
 
 Om du vill dela instrumentpanelerna med andra kan du läsa mer på [Dela instrumentpaneler och rapporter](/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports).
+### <a name="is-the-usage-summary-reports-reader-role-enough-to-view-the-usage-analytics"></a>Räcker rollen Sammanfattningsrapporter för användning för att visa användningsanalys?
+
+Med rollen Läsare av användningssammanfattningsrapporter får du bara åtkomst till mängdfunktioner på innehavarnivå Microsoft 365 användningsanalys.  Vi rekommenderar rollen Rapportläsare eller Sammanfattningsrapporter för användning till alla som ansvarar för ändringshantering och införande, men som inte nödvändigtvis är IT-administratör.
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>Vem kan ansluta till Microsoft 365 användningsanalyser?
 

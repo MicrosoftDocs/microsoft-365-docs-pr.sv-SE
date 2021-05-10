@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 76abde885aa16c174bb81d22e5939d47894a59bf
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 64a96256ff4bb4b77ec634195f6d89b92252142a
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934975"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301770"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Vad är nytt i Microsoft Defender för Slutpunkt i iOS
 
@@ -37,11 +37,13 @@ Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostn
 
 ## <a name="1115140101"></a>1.1.15140101
 
-- Microsoft Defender ATP-produktnamnet har nu uppdaterats till Microsoft Defender för Slutpunkt i appbutiken.
+- **Identifiering av objekt** är en förhandsgranskning. Mer information finns i Konfigurera [villkorsstyrd åtkomstprincip baserat på enhetsrisksignaler.](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
+- **Automatisk konfiguration av VPN-profilen** är i förhandsversion för registrerade enheter via Microsoft Endpoint Manager (Intune). Mer information finns i [Konfigurera VPN-profilen automatiskt för registrerade iOS-enheter.](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)
+- Produktnamnet Microsoft Defender ATP nu uppdaterats till Microsoft Defender för Slutpunkt i appbutiken.
 - Förbättrad inloggning.
 - Felkorrigeringar.
 
 ## <a name="1115010101"></a>1.1.15010101
 
-- Med den här versionen presenterar vi stöd för iPadOS/iPad-enheter.
+- Med den här versionen presenterar vi stöd för iPadOS/iPad enheter.
 - Felkorrigeringar.

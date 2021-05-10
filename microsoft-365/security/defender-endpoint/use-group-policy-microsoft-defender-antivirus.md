@@ -10,18 +10,18 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/07/2021
+ms.date: 05/08/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 81cba445482b1fceb8bd520f2be88d55db2a47fb
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 74f58959c22313806ebc95aef14e8ccb2d75326b
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296737"
+ms.locfileid: "52302106"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Använda grupprincipinställningar för att konfigurera och hantera Microsoft Defender Antivirus
 
@@ -55,7 +55,7 @@ I allmänhet kan du använda följande procedur för att konfigurera eller ändr
 Följande tabell i det här avsnittet innehåller de grupprincipinställningar som är tillgängliga i Windows 10, version 1703, och innehåller länkar till lämpligt avsnitt i det här dokumentationsbiblioteket (om tillämpligt). 
 
 > [!TIP]
-> [Hämta grupprincipkalkylbladet för Inställningar för Windows 10 maj 2020-uppdatering (2004).](https://www.microsoft.com/download/101451) Det här kalkylbladet innehåller principinställningar för dator- och användarkonfigurationer som ingår i administrationsmallfilerna som levereras med för den Windows 10 maj 2020-uppdateringen (2004). Du kan konfigurera de här principinställningarna när du redigerar grupprincipobjekt.
+> [Hämta grupprincipkalkylbladet för Inställningar för Windows 10 maj 2020-uppdatering (2004).](https://www.microsoft.com/download/101451) Det här kalkylbladet innehåller principinställningar för dator- och användarkonfigurationer som ingår i administrationsmallfilerna som levereras med för den Windows 10 maj 2020-uppdateringen (2004). Du kan konfigurera referera till kalkylbladet när du redigerar grupprincipobjekt.
 
 | Plats | Inställning | Artikel |
 |:---|:---|:---|

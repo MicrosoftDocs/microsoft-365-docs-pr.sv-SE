@@ -12,12 +12,12 @@ ms.reviewer: dansimp
 manager: dansimp
 audience: ITPro
 ms.technology: mde
-ms.openlocfilehash: 4d5479336588a78599f8e8a868503257964adb3a
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: eb7043451c4d80e3eca8b0703703ac6d7a459161
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893941"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302094"
 ---
 # <a name="how-to-control-usb-devices-and-other-removable-media-using-microsoft-defender-for-endpoint"></a>Styra USB-enheter och andra flyttbara medium med Hjälp av Microsoft Defender för Endpoint
 
@@ -28,10 +28,10 @@ Microsoft rekommenderar en lager metoden för att skydda flyttbara media [,](htt
 1. [Upptäck ansluta och spela upp anslutna händelser för kringutrustning i Microsoft Defender för avancerad sökning i Endpoint.](#discover-plug-and-play-connected-events) Identifiera eller undersöka misstänkt användningsaktivitet.
 
 2. Konfigurera för att tillåta eller blockera endast vissa flyttbara enheter och förhindra hot.
-    1. [Tillåt eller blockera flyttbara enheter](#allow-or-block-removable-devices) baserat på detaljerad konfiguration för att neka skrivåtkomst till flyttbara diskar och godkänna eller neka enheter med hjälp av USB-enhets-ID. Flexibel principtilldelning av enhetsinstallationsinställningar baserat på en enskild person eller grupp av Azure Active Directory-användare (Azure AD) och -enheter.
+    1. [Tillåt eller blockera flyttbara enheter](#allow-or-block-removable-devices) baserat på detaljerad konfiguration för att neka skrivåtkomst till flyttbara diskar och godkänna eller neka enheter med hjälp av USB-enhets-ID. Flexibel principtilldelning av enhetsinstallationsinställningar baserat på en enskild användare eller grupp av Azure Active Directory (Azure AD) användare och enheter.
 
     2. [Förhindra hot från flyttbara lagringsmedia som](#prevent-threats-from-removable-storage) introduceras genom flyttbara lagringsenheter genom att aktivera:  
-        - Microsoft Defender Antivirus RTP (Real-Time Protection) för att söka efter skadlig kod på det flyttbara lagringsutrymmet.  
+        - Microsoft Defender Antivirus realtidsskydd (RTP) för att söka igenom det flyttbara lagringsutrymmet efter skadlig kod.  
         - USB-regeln (Attack Surface Reduction) för att blockera icke betrodda och osignerade processer som körs från USB.  
         - DMA-skyddsinställningar (Direct Memory Access) för att minimera DMA-attacker, t.ex. Kernel DMA Protection för Kernel DMA Protection för Kernel och blockera DMA tills en användare loggar in.  
 
@@ -40,14 +40,14 @@ Microsoft rekommenderar en lager metoden för att skydda flyttbara media [,](htt
 4. [Reagera på hot från](#respond-to-threats) kringutrustning i realtid baserat på egenskaper som rapporterats av varje kringutrustning.
 
 >[!Note]
->De här åtgärderna för att minska hot hjälper till att förhindra att skadlig programvara kommer till din miljö. Om du vill skydda företagsdata från att lämna miljön kan du också konfigurera åtgärder för skydd mot dataförlust. På Windows 10-enheter kan du till exempel konfigurera [BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview.md) och [Windows Information Protection](/windows/security/information-protection/create-wip-policy-using-intune-azure.md)som krypterar företagsdata även om de lagras på en personlig enhet, eller använda [CSP:en Storage/RemovableDiskDenyWriteAccess för](/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess) att neka skrivåtkomst till flyttbara diskar. Du kan dessutom klassificera och skydda filer på [Windows-enheter](/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview) (inklusive derasmonterade USB-enheter) med hjälp av Microsoft Defender för Endpoint och Azure Information Protection.
+>De här åtgärderna för att minska hot hjälper till att förhindra att skadlig programvara kommer till din miljö. Om du vill skydda företagsdata från att lämna miljön kan du också konfigurera åtgärder för skydd mot dataförlust. På Windows 10-enheter kan du till exempel konfigurera [BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview.md) och [Windows Information Protection](/windows/security/information-protection/create-wip-policy-using-intune-azure.md), som krypterar företagsdata även om de lagras på en personlig enhet, eller använda [Storage/RemovableDiskDenyWriteAccess CSP](/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess) för att neka skrivåtkomst till flyttbara diskar. Du kan dessutom klassificera och skydda filer på [Windows](/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview) enheter (inklusive derasmonterade USB-enheter) med hjälp av Microsoft Defender för Endpoint och Azure Information Protection.
 
 ## <a name="discover-plug-and-play-connected-events"></a>Upptäck ansluta och spela upp anslutna händelser
 
 Du kan visa plug and play anslutna händelser i Microsoft Defender för Endpoint avancerad sökning för att identifiera misstänkt användningsaktivitet eller utföra interna undersökningar.
-Exempel på avancerade sökfrågor för Defender för Endpoint finns i [GitHub-lagringsplatsen](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries)för Sökning efter slutpunkt-frågor i Microsoft Defender.
+Exempel på avancerade sökfrågor för Defender för Endpoint finns i Sökfrågor i Microsoft Defender för slutpunkt GitHub [lagringsplatsen.](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries)
 
-Exempel på Power BI-rapportmallar finns tillgängliga för Microsoft Defender för Endpoint som du kan använda för Avancerade sökfrågor. Med de här exempelmallarna, inklusive en för enhetskontroll, kan du integrera avancerad sökning i Power BI. Mer information [finns på GitHub-lagringsplatsen för PowerBI-mallar.](https://github.com/microsoft/MDATP-PowerBI-Templates) Mer information om Power [BI-integrering finns i](/microsoft-365/security/defender-endpoint/api-power-bi) Skapa anpassade rapporter med Power BI.
+Exempel på Power BI-rapportmallar finns tillgängliga för Microsoft Defender för Endpoint som du kan använda för Avancerade sökfrågor. Med de här exempelmallarna, bland annat en för enhetskontroll, kan du integrera avancerad sökning i Power BI. Mer [information GitHub lagringsplatsen för PowerBI-mallar.](https://github.com/microsoft/MDATP-PowerBI-Templates) Mer [information om hur du Power BI](/microsoft-365/security/defender-endpoint/api-power-bi) finns i Skapa anpassade Power BI med hjälp av Power BI rapport.
 
 ## <a name="allow-or-block-removable-devices"></a>Tillåt eller blockera flyttbara enheter
 I följande tabell beskrivs hur Microsoft Defender för Endpoint kan tillåta eller blockera flyttbara enheter baserat på en detaljerad konfiguration.
@@ -60,7 +60,7 @@ I följande tabell beskrivs hur Microsoft Defender för Endpoint kan tillåta el
 | [Förhindra installation av specifikt förbjudna kringutrustning](#prevent-installation-of-specifically-prohibited-peripherals) | Du kan inte installera eller använda förbjuden kringutrustning som rapporterar specifika egenskaper på den inbyggda programvaran. |
 | [Tillåt installation och användning av specifikt godkänd kringutrustning med matchande enhetsinstans-ID](#allow-installation-and-usage-of-specifically-approved-peripherals-with-matching-device-instance-ids) | Du kan bara installera och använda godkänd kringutrustning som matchar någon av dessa enhetsinstans-ID. |
 | [Förhindra installation och användning av specifikt förbjudna kringutrustning med matchande enhetsinstans-ID](#prevent-installation-and-usage-of-specifically-prohibited-peripherals-with-matching-device-instance-ids) | Du kan inte installera eller använda förbjuden kringutrustning som matchar någon av dessa enhetsinstans-ID. |
-| [Begränsa tjänster som använder Bluetooth](#limit-services-that-use-bluetooth) | Du kan begränsa tjänsterna som kan använda Bluetooth. |
+| [Begränsa antalet tjänster som använder Bluetooth](#limit-services-that-use-bluetooth) | Du kan begränsa tjänsterna som kan använda Bluetooth. |
 | [Använda baslinjeinställningar för Microsoft Defender för Slutpunkt](#use-microsoft-defender-for-endpoint-baseline-settings) | Du kan ange den rekommenderade konfigurationen för ATP med hjälp av säkerhetsbaslinjen Defender för Slutpunkt. |
 
 ### <a name="restrict-usb-drives-and-other-peripherals"></a>Begränsa USB-enheter och annan kringutrustning
@@ -124,11 +124,11 @@ Om du vill förhindra installation av en enhetsklass eller vissa enheter kan du 
 > [!Note]
 > Principerna för att förhindra enhetsinstallation har företräde framför principer för installation av tillåtna enheter.
 
-Med principen Förhindra installation av enheter som matchar någon av dessa **enhets-IDs** kan du ange en lista över enheter som Windows inte kan installera. 
+Med principen Förhindra installation av enheter som matchar någon av dessa **enhets-IDS** kan du ange en lista över enheter som Windows förhindras från att installera. 
 
 Så här förhindrar du installation av enheter som matchar något av dessa enhets-ID: 
 
-1. [Leta upp enhets-ID](#look-up-device-id) för enheter som du inte vill att Windows ska installera.
+1. [Leta upp enhets-ID](#look-up-device-id) för enheter som du Windows förhindra från att installera.
 
    ![Sök efter leverantör eller produkt-ID](images/lookup-vendor-product-id.png)
 
@@ -158,7 +158,7 @@ Get-WMIObject -Class Win32_DiskDrive |
 Select-Object -Property * 
 ```
 
-Med **principen Förhindra installation av enheter som** använder drivrutiner som matchar den här principen för enhetskonfigurationsklasser kan du ange enhetskonfigurationsklasser som Windows inte kan installera. 
+Med **principen Prevent installation of devices using drivers that match these device setup classes** (Förhindra installation av enheter med drivrutiner som matchar den här principen för enhetskonfigurationsklasser) kan du ange enhetskonfigurationsklasser som Windows förhindras från att installeras. 
 
 För att förhindra installation av vissa klasser av enheter: 
 
@@ -171,9 +171,9 @@ För att förhindra installation av vissa klasser av enheter:
 
 ### <a name="block-installation-and-usage-of-removable-storage"></a>Blockera installation och användning av flyttbart lagringsutrymme
 
-1. Logga in på [Microsoft Azure-portalen](https://portal.azure.com/).
+1. Logga in Microsoft Endpoint Manager [administrationscentret](https://endpoint.microsoft.com/).
 
-2. Klicka **på Intune-enhetskonfigurationsprofiler**  >    >    >  **för att skapa profil**.
+2. Klicka **på**  >  **Konfigurationsprofiler för enheter** för att skapa  >  **profil**.
 
     > [!div class="mx-imgBorder"]
     > ![Profil för att skapa enhetskonfiguration](images/create-device-configuration-profile.png)
@@ -224,12 +224,12 @@ Kringutrustning som är förbjudna att installeras kan anges av deras [enhetsins
 
 Du kan förhindra installation av förbjuden kringutrustning med matchande enhetsinstans-IP genom att konfigurera principinställningen [Enhetsinstallation/PreventInstallationOfMatchingDeviceInstanceIDs.](/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceinstanceids)
 
-### <a name="limit-services-that-use-bluetooth"></a>Begränsa tjänster som använder Bluetooth
+### <a name="limit-services-that-use-bluetooth"></a>Begränsa antalet tjänster som använder Bluetooth
 
-Med Intune kan du begränsa tjänsterna som kan använda Bluetooth via ["Bluetooth-tillåtna tjänster".](/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide) Standardtillståndet för inställningarna för "Bluetooth-tillåtna tjänster" innebär att allt är tillåtet.  Så snart en tjänst har lagts till blir den listan över tillåtna. Om kunden lägger till värdena för tangentbord och möss, och inte lägger till GUID:er för filöverföring, ska filöverföring blockeras.
+Med Intune kan du begränsa de tjänster som kan Bluetooth via ["Bluetooth".](/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide) Standardtillståndet för inställningarna Bluetooth tjänster innebär att allt är tillåtet.  Så snart en tjänst har lagts till blir den listan över tillåtna. Om kunden lägger till värdena för tangentbord och möss, och inte lägger till GUID:er för filöverföring, ska filöverföring blockeras.
 
 > [!div class="mx-imgBorder"]
-> ![skärmbild av sidan med Bluetooth-inställningar](images/bluetooth.png)
+> ![skärmbild av Bluetooth inställningar](images/bluetooth.png)
 
 ### <a name="use-microsoft-defender-for-endpoint-baseline-settings"></a>Använda baslinjeinställningar för Microsoft Defender för Slutpunkt
 
@@ -255,23 +255,23 @@ Mer information om hur du styr USB-enheter finns i [bloggen Microsoft Defender f
 
 | Kontroll  | Beskrivning |
 |----------|-------------|
-| [Aktivera antivirusskanning för Microsoft Defender](#enable-microsoft-defender-antivirus-scanning) | Aktivera Microsoft Defender Antivirus-skanning för realtidsskydd eller schemalagda genomsökningar.|
+| [Aktivera Microsoft Defender Antivirus skanning](#enable-microsoft-defender-antivirus-scanning) | Aktivera Microsoft Defender Antivirus skanning för realtidsskydd eller schemalagda genomsökningar.|
 | [Blockera ej betrodda och osignerade processer på USB-kringutrustning](#block-untrusted-and-unsigned-processes-on-usb-peripherals) | Blockera USB-filer som inte är betrodda eller inte är betrodda. |
 | [Skydda mot DMA-attacker (Direct Memory Access)](#protect-against-direct-memory-access-dma-attacks) | Konfigurera inställningar för att skydda mot DMA-attacker. |
 
 >[!NOTE]
 >Eftersom obehörig USB-kringutrustning kan ha inbyggd programvara som kapar dess USB-egenskaper rekommenderar vi att du bara tillåter specifikt godkänd USB-kringutrustning och begränsar vilka användare som kan komma åt dem.
 
-### <a name="enable-microsoft-defender-antivirus-scanning"></a>Aktivera antivirusskanning för Microsoft Defender
+### <a name="enable-microsoft-defender-antivirus-scanning"></a>Aktivera Microsoft Defender Antivirus skanning
 
-För att skydda behörigt flyttbart [](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus) lagringsutrymme med Microsoft Defender Antivirus måste du aktivera realtidsskydd eller schemalägga genomsökningar samt konfigurera flyttbara enheter för genomsökningar.
+För att skydda behörigt flyttbart [](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus) lagringsutrymme Microsoft Defender Antivirus kräver du skydd i realtid eller genomsökningar för schemaläggning och konfigurering av flyttbara enheter för genomsökningar.
 
-- Om realtidsskyddet är aktiverat genomsöks filerna innan de används och körs. Skanningsomfånget inkluderar alla filer, inklusive de påmonterade flyttbara enheter som USB-enheter. Du kan även köra ett [PowerShell-skript](/samples/browse/?redirectedfrom=TechNet-Gallery) för att utföra en anpassad genomsökning av en USB-enhet efter att den har kopplats, så att Microsoft Defender Antivirus börjar söka igenom alla filer på en flyttbar enhet när den flyttbara enheten har kopplats. Vi rekommenderar dock att du aktiverar realtidsskydd för bättre skanningsprestanda, särskilt för stora lagringsenheter.
+- Om realtidsskyddet är aktiverat genomsöks filerna innan de används och körs. Skanningsomfånget inkluderar alla filer, inklusive de påmonterade flyttbara enheter som USB-enheter. Du kan även köra ett [PowerShell-skript](/samples/browse/?redirectedfrom=TechNet-Gallery) för att utföra en anpassad genomsökning av en USB-enhet efter att den har kopplats, så att Microsoft Defender Antivirus börjar skanna alla filer på en flyttbar enhet när den flyttbara enheten har kopplats. Vi rekommenderar dock att du aktiverar realtidsskydd för bättre skanningsprestanda, särskilt för stora lagringsenheter.
 
 - Om schemalagda skanningar används måste du inaktivera inställningen DisableRemovableDriveScanning (aktiverad som standard) för att söka igenom den flyttbara enheten vid en fullständig genomsökning. Flyttbara enheter genomsöks vid en snabb eller anpassad genomsökning oavsett inställningen DisableRemovableDriveStartning.
 
 >[!NOTE]
->Vi rekommenderar att du aktiverar övervakning i realtid för skanning. I Intune kan du aktivera övervakning i realtid för Windows 10 **i** enhetsbegränsningar Konfigurera realtidsövervakning för  >    >  **Microsoft Defender Antivirus.**  >  
+>Vi rekommenderar att du aktiverar övervakning i realtid för skanning. I Intune kan du aktivera övervakning i realtid för Windows 10 i **Enhetsbegränsningar**  >  **Konfigurera**  >  **Microsoft Defender Antivirus**  >  **övervakning i realtid.**
 
 <!-- Need to build out point in the preceding note. 
 -->
@@ -283,13 +283,13 @@ För att förhindra att bli betrodda kan ett företag blockera USB-filer som int
 Företag kan också använda granskningsfunktionen i minskningsregler för [attackytor](/microsoft-365/security/defender-endpoint/attack-surface-reduction) för att övervaka aktiviteten i icke betrodda och osignerade processer som körs på kringutrustning av USB.
 Det kan du göra genom att **ange icke betrodda och osignerade** processer som körs från USB till antingen **Blockera** eller Granska **endast**, respektive.
 Med den här regeln kan administratörer förhindra att osignerade eller icke betrodda körbara filer körs från flyttbara USB-enheter, inklusive SD-kort.
-De filtyper som påverkas är körbara filer (till exempel .exe, .dll eller .scr) och skriptfiler som PowerShell-filer (.ps), VisualBasic-filer (.vbs) och JavaScript-filer (.js).
+Berörda filtyper omfattar körbara filer (till exempel .exe-, .dll- eller .scr) och skriptfiler som PowerShell-filer (.ps), VisualBasic-filer (.vbs) eller JavaScript-filer (.js).
 
 De här [inställningarna kräver att du aktiverar realtidsskydd.](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)
 
 1. Logga in på [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).
 
-2. Klicka **på Enheter**  >    >  **Windows-konfigurationsprinciper**  >  **skapa profil**. 
+2. Klicka **på Enheter**  >  **Windows**  >  **Konfigurationsprinciper** skapa  >  **profil**. 
 
     ![Profil för att skapa enhetskonfiguration](images/create-device-configuration-profile.png)
 
@@ -312,13 +312,13 @@ De här [inställningarna kräver att du aktiverar realtidsskydd.](/microsoft-36
 
 DMA-attacker kan leda till att känslig information lämnas ut på en dator eller till och med att skadlig programvara används för att kringgå låsskärmen eller kontrollera datorer på distans. Följande inställningar förhindrar DMA-attacker:
 
-1. Från och med Windows 10 version 1803 introducerade Microsoft [Kernel DMA Protection för Kernel DMA Protection](/windows/security/information-protection/kernel-dma-protection-for-thunderbolt.md) för Att tillhandahålla inbyggt skydd mot DMA-attacker via Portss. Kernel DMA Protection för Bluetooth aktiveras av systemtillverkare och kan inte aktiveras eller inaktiveras av användarna.
+1. Från och Windows 10 version 1803 introducerade Microsoft [Kernel DMA Protection för Kernel DMA Protection](/windows/security/information-protection/kernel-dma-protection-for-thunderbolt.md) för Att ge inbyggt skydd mot DMA-attacker via Ports för Microsoft. Kernel DMA Protection för Bluetooth aktiveras av systemtillverkare och kan inte aktiveras eller inaktiveras av användarna.
 
-   Från och med Windows 10 version 1809 kan du justera nivån på Kernel DMA Protection genom att konfigurera [DMA Guard CSP.](/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy) Det här är en ytterligare kontroll för kringutrustning som inte stöder enhetsminnesisolering (kallas även DMA-ommappning). Med minnesisolering kan operativsystemet utnyttja I/O-minneshanteringsenheten (IOMMU) på en enhet för att blockera ej tillkommet I/O eller minnesåtkomst genom kringutrustning (begränsat minne). Med andra ord tilldelar operativsystemet ett visst minnesintervall för kringutrustningen. Om kringutrustning försöker läsa/skriva till minnet utanför det tilldelade området blockerar operativsystemet det.
+   Från och Windows 10 version 1809 kan du justera nivån på Kernel DMA Protection genom att konfigurera [DMA Guard CSP.](/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy) Det här är en ytterligare kontroll för kringutrustning som inte stöder enhetsminnesisolering (kallas även DMA-ommappning). Med minnesisolering kan operativsystemet utnyttja I/O-minneshanteringsenheten (IOMMU) på en enhet för att blockera ej tillkommet I/O eller minnesåtkomst genom kringutrustning (begränsat minne). Med andra ord tilldelar operativsystemet ett visst minnesintervall för kringutrustningen. Om kringutrustning försöker läsa/skriva till minnet utanför det tilldelade området blockerar operativsystemet det.
 
    Kringutrustning som stöder enhetsminnesisolering kan alltid ansluta. Kringutrustning som inte kan blockeras, tillåtas eller tillåtas endast efter att användaren loggar in (standard).
 
-2. I Windows 10-system som inte stöder Kernel DMA Protection kan du:
+2. På Windows 10 system som inte stöder Kernel DMA-skydd kan du:
 
    - [Blockera DMA tills en användare loggar in](/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
    - [Blockera alla anslutningar via kopplingsportarna (inklusive USB-enheter)](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d)
@@ -333,7 +333,7 @@ Du kan skapa anpassade aviseringar och svarsåtgärder med WDATP-kopplingen och 
 
 **Hotsökning** på USB-enheter.
 
-**Begränsa körningen** av alla program på datorn utom en fördefinierad MDATP-koppling är en av över 200 fördefinierade kopplingar, inklusive Outlook, Teams, Slack osv. Du kan skapa anpassade kopplingar.
+**Begränsa körningen** av alla program på datorn utom en fördefinierad MDATP-koppling är en av över 200 fördefinierade kopplingar, Outlook, Teams, slack osv. Du kan skapa anpassade kopplingar.
 - [Mer information om WDATP-svarsåtgärder för koppling](/connectors/wdatp/)
 
 **Åtgärd för anpassade identifieringsregler:** Både maskin- och filnivååtgärder kan användas.
@@ -343,9 +343,9 @@ Information om enhetskontroller relaterade förhandshändelser och exempel på h
 
 ## <a name="respond-to-threats"></a>Svara på hot
 
-Du kan skapa anpassade aviseringar och automatiska svarsåtgärder med Microsoft Defender för regler för anpassad identifiering [av slutpunkt.](/microsoft-365/security/defender-endpoint/custom-detection-rules) Svarsåtgärder i den anpassade identifieringen omfattar både maskin- och filnivååtgärder. Du kan också skapa aviseringar och automatiska svarsåtgärder med [PowerApps](https://powerapps.microsoft.com/) och [Flow](https://flow.microsoft.com/) med Microsoft Defender för [slutpunktskoppling .](/connectors/wdatp/) Kopplingen stöder åtgärder för undersökning, sökning av hot och begränsning av program som körs. Det är en av över 200 fördefinierade kopplingar, bland annat Outlook, Teams, Slack och annat. Anpassade kopplingar kan också läggas till. Mer [information om kopplingar](/connectors/) finns i Kopplingar.
+Du kan skapa anpassade aviseringar och automatiska svarsåtgärder med Microsoft Defender för regler för anpassad identifiering [av slutpunkt.](/microsoft-365/security/defender-endpoint/custom-detection-rules) Svarsåtgärder i den anpassade identifieringen omfattar både maskin- och filnivååtgärder. Du kan också skapa aviseringar och automatiska svarsåtgärder med [PowerApps](https://powerapps.microsoft.com/) och [Flow](https://flow.microsoft.com/) med [Microsoft Defender för slutpunktskopplingen](/connectors/wdatp/). Kopplingen stöder åtgärder för undersökning, sökning av hot och begränsning av program som körs. Det är en av över 200 fördefinierade kopplingar, Outlook, Teams, slack med mera. Anpassade kopplingar kan också läggas till. Mer [information om kopplingar](/connectors/) finns i Kopplingar.
  
-Med vilken metod som helst kan du till exempel automatiskt köra Microsoft Defender Antivirus när en USB-enhet installeras på en dator.
+Med vilken metod som helst kan du till exempel automatiskt få Microsoft Defender Antivirus när en USB-enhet installeras på en dator.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
