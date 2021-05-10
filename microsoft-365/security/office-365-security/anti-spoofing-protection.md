@@ -22,12 +22,12 @@ localization_priority: Priority
 description: Administratörer kan läsa mer om de skydd mot förfalskning som finns tillgängliga i Exchange Online Protection (EOP) och som kan hjälpa dig att minska riskerna för nätfiske från falska avsändare och domäner.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 20294bf00c62e59da33b54ea0c8ee85f7b1372af
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 76ad8ac14de7b176ae12dc02272e31e790b6b410
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51769028"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291037"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Skydd mot förfalskning i EOP
 
@@ -80,7 +80,7 @@ Förfalskade meddelanden har följande två negativa konsekvenser för användar
 
   ![Legitim lösenordsåterställning från Microsoft](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
 
-  Meddelandet kom faktiskt från Microsoft, men användarna har lärt sig att vara misstänksamma. Det är nämligen svårt att se skillnad på en riktig och en falsk lösenordsåterställning, många användare ignorerar dessa meddelanden, rapporterar dem som skräppost eller rapporterar dem i onödan till Microsoft som nätfiskebedrägerier.
+  Meddelandet kom faktiskt från Microsoft, men användarna har lärt sig att vara misstänksamma. Det är nämligen svårt att se skillnad på ett riktigt och ett falskt meddelande om lösenordsåterställning. Därför ignorerar många användare dessa meddelanden, rapporterar dem som skräppost eller rapporterar dem i onödan till Microsoft som nätfiskebedrägerier.
 
 ## <a name="different-types-of-spoofing"></a>Olika typer av förfalskning
 
@@ -139,11 +139,11 @@ E-postlistor (även kallade diskussionslistor) är kända för att ha problem me
 
 Anta till exempel att Gabriela Laureano (glaureano@contoso.com) är intresserad av fågelskådning och går med i diskussionslistan fagelskadare@fabrikam.com. och skickar följande meddelande till listan:
 
-> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **Till:** Birdwatcherens diskussions lista \<birdwatchers@fabrikam.com\> <br> **Ämne:** Fantastiska bilder av blåskrika på Mt. Rainier denna vecka <p> Vem vill kolla in denna veckas bilder från Mt. Rainier?
+> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **Till:** Birdwatcherens diskussions lista \<birdwatchers@fabrikam.com\> <br> **Ämne:** Fantastiska bilder av blåskrika på Mt. Rainier denna vecka <p> Vem vill kolla in bilderna från Mt. Rainier den här veckan?
 
 E-postlistans server tar emot meddelandet, ändrar innehållet och skickar tillbaka det till medlemmarna i listan. Det återgivna meddelandet har samma Från:-adress (glaureano@contoso.com) men en tagg har lagts till i ämnesraden och en sidfot har lagts till längst ned i meddelandet. Den här typen av ändringar är vanliga i distributionslistor och kan leda till falska positiva identifieringar av förfalskning.
 
-> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **Till:** Birdwatcherens diskussions lista \<birdwatchers@fabrikam.com\> <br> **Ämne:** [FÅGELSKÅDARE] Fantastiska bilder av blåskrika på Mt. Rainier denna vecka <p> Vem vill kolla in denna veckas bilder från Mt. Rainier? <p> Meddelandet skickades till diskussionslistan Fågelskådare. Du kan avbryta prenumerationen när du vill.
+> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **Till:** Birdwatcherens diskussions lista \<birdwatchers@fabrikam.com\> <br> **Ämne:** [FÅGELSKÅDARE] Fantastiska bilder av blåskrika på Mt. Rainier denna vecka <p> Vem vill kolla in bilderna från Mt. Rainier den här veckan? <p> Meddelandet skickades till diskussionslistan Fågelskådare. Du kan avbryta prenumerationen när du vill.
 
 Om du vill se till att e-post från distributionslistor klarar förfalskningskontroller, följer du dessa anvisningar beroende på om du har kontroll över distributionslistan:
 
@@ -163,7 +163,7 @@ Om du vill se till att e-post från distributionslistor klarar förfalskningskon
 
   - Du kan skapa regler för Inkorgen i e-postklienten för att flytta meddelanden till Inkorgen. Du kan också be administratörerna att konfigurera åsidosättningar som beskrivs i [Använda förfalskningsinformation för att konfigurera tillåtna avsändare av icke autentiserad e-post](email-validation-and-authentication.md#use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email).
 
-  - Du kan skapa ett supportärende med Microsoft 365 för att skapa en åsidosättning för distributionslistan för att behandla den som legitim. Mer information finns i [Kontakta supporten för företagsprodukter – hjälp för administratörer](../../admin/contact-support-for-business-products.md).
+  - Du kan skapa ett supportärende med Microsoft 365 för att skapa en åsidosättning för distributionslistan för att behandla den som legitim. Mer information finns i [Kontakta supporten för företagsprodukter – hjälp för administratörer](../../business-video/get-help-support.md).
 
 Om ingenting annat fungerar kan du rapportera meddelandet som en falsk positiv identifiering till Microsoft. Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 

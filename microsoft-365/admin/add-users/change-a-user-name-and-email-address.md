@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Läs om hur en global administratör kan ändra en användares e-postadress och visningsnamn. '
-ms.openlocfilehash: 94ed05d87fa290f2ae1059ae04c62c5d0d5e6860
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: a785ef17f0823429ad5eb216a330dc6f04dc7761
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023779"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291025"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Ändra ett användarnamn och en e-postadress
 
@@ -50,7 +50,7 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
     
 2. Välj användarens namn och gå sedan till fliken **Konto** och välj **Hantera användarnamn**.
     
-3. I den första rutan skriver du den första delen av den nya e-postadressen. Om du har lagt till din egen domän i Microsoft 365 väljer du domänen för det nya e-postaliaset med hjälp av listrutan. 
+3. I den första rutan skriver du den första delen av den nya e-postadressen. Om du har lagt till din egen domän i Microsoft 365 väljer du domänen för det nya e-postaliaset med listrutan. 
 
 4. Välj **Spara ändringar**.
 
@@ -63,7 +63,7 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
 
 2. Välj användaren. I det utfällbara fönstret väljer du **Redigera** bredvid **Användarnamn/e-post**.
 
-3. I den första rutan skriver du den första delen av den nya e-postadressen. Om du har lagt till din egen domän i Microsoft 365 kan du välja domänen för det nya e-postaliaset med hjälp av listrutan.
+3. I den första rutan skriver du den första delen av den nya e-postadressen. Om du har lagt till din egen domän i Microsoft 365 kan du välja domänen för det nya e-postaliaset med listrutan.
 
 4. Välj **Spara**.
 
@@ -75,7 +75,7 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
 
 2. Välj användaren. I det utfällbara fönstret väljer du **Redigera** bredvid **Användarnamn/e-post**.
 
-3. I den första rutan skriver du den första delen av den nya e-postadressen. Om du har lagt till din egen domän i Microsoft 365 kan du välja domänen för det nya e-postaliaset med hjälp av listrutan.
+3. I den första rutan skriver du den första delen av den nya e-postadressen. Om du har lagt till din egen domän i Microsoft 365 kan du välja domänen för det nya e-postaliaset med listrutan.
 
 4. Välj **Spara**.
 
@@ -221,9 +221,9 @@ Det kan ta upp till 24 timmar innan ändringen börjar gälla i alla tjänster. 
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>"Det hittades ingen parameter som matchar parameternamnet 'E-postadresser'"
 
-Om du får felmeddelandet ”**Det hittades ingen parameter som matchar parameternamnet 'E-postadresser'**” innebär det att det tar lite längre tid för att slutföra konfigurationen av klientorganisationen eller den anpassade domänen, om du nyligen har lagt till en sådan. Konfigurationen kan ta upp till 4 timmar. Vänta en stund så att konfigurationen hinner slutföras och försök sedan igen. Om problemet kvarstår kan du ringa [supporten](../contact-support-for-business-products.md) och be dem göra en fullständig synkronisering åt dig.
+Om du får felmeddelandet ”**Det hittades ingen parameter som matchar parameternamnet 'E-postadresser'**” innebär det att det tar lite längre tid för att slutföra konfigurationen av klientorganisationen eller den anpassade domänen, om du nyligen har lagt till en sådan. Konfigurationen kan ta upp till 4 timmar. Vänta en stund så att konfigurationen hinner slutföras och försök sedan igen. Om problemet kvarstår kan du ringa [supporten](../../business-video/get-help-support.md) och be dem göra en fullständig synkronisering åt dig.
   
-### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>"Tyvärr kunde användaren inte redigeras. Kontrollera användarinformationen och försök igen"
+### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>Tyvärr kunde användaren inte redigeras. Kontrollera användarinformationen och försök igen
 
 Om du får felmeddelandet ”**Tyvärr kunde användaren inte redigeras. Kontrollera användarinformationen och försök igen**.” innebär det att du inte är en global administratör och att du inte har behörighet att ändra användarnamnet. Leta upp den globala administratören i din organisation och be om att ändringen genomförs.
 

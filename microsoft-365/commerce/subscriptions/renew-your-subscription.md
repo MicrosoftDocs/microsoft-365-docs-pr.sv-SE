@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,21 +13,20 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - SaRA
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
+- commerce_subscriptions
+- PPM_jmueller
+search.appverid: MET150
 description: Lär dig hur du förnyar din Microsoft 365 genom att aktivera eller inaktivera återkommande fakturering.
-ms.openlocfilehash: afa899bd60b761d196df01c6f0bf18d51e546d8e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/04/2021
+ms.openlocfilehash: 25b0e4f8e94780bd301b41591cd1c06978cbd68e
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244654"
+ms.lasthandoff: 05/08/2021
+ms.locfileid: "52285700"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Förnya Microsoft 365 för företag
 
@@ -49,6 +49,7 @@ Om du har förbetalt för prenumerationen med en produktnyckel går prenumeratio
 ::: moniker range="o365-worldwide"
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -60,6 +61,7 @@ Om du har förbetalt för prenumerationen med en produktnyckel går prenumeratio
 ::: moniker range="o365-21vianet"
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Dina produkter</a>.
+
 ::: moniker-end
 
 2. Välj den prenumeration du vill hantera återkommande fakturering för.
@@ -68,17 +70,15 @@ Om du har förbetalt för prenumerationen med en produktnyckel går prenumeratio
 5. Välj **Spara**.
 
     > [!NOTE]
+    >
     > - Du kan bara ändra inställningen för **återkommande fakturering** för aktiva prenumerationer. Om prenumerationen har gått ut eller inaktiverats måste du [återaktivera den](reactivate-your-subscription.md) innan du kan aktivera eller inaktivera **återkommande fakturering**.
     > - När **återkommande fakturering** är inaktiverat avbryts inte prenumerationen. Om du vill att prenumerationen ska vara aktiv måste du betala fakturan manuellt.
     > - Om du inaktiverar **Återkommande fakturerings** förblir prenumerationen aktiv tills den upphör att gälla. Du kan visa utgångs datumet på sidan prenumerations information i avsnittet **prenumerations-och betalnings inställningar**.
     > - Information om hur du avbryter prenumerationen omedelbart finns i [Avbryt min prenumeration](cancel-your-subscription.md).
 
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-content"></a>Relaterat innehåll
 
 [Återaktivera prenumerationen](reactivate-your-subscription.md)
-  
-[Vad händer med mina data och min åtkomst när prenumerationen går ut?](what-if-my-subscription-expires.md)
-
-[Ange produktnyckeln](../enter-your-product-key.md)
-  
-[Köpa en utvärderingsversion av Microsoft 365 för företag](../try-or-buy-microsoft-365.md)
+[Vad händer med mina data och min åtkomst när prenumerationen går ut?](what-if-my-subscription-expires.md) (artikel)\
+[Ange produktnyckeln](../enter-your-product-key.md) (artikel)\
+[Köpa en utvärderingsversion av Microsoft 365 för företag](../try-or-buy-microsoft-365.md) (artikel)
