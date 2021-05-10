@@ -12,27 +12,27 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 841f71b5bf35e784db879dd264fec086ace9d837
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: b704e20c146d881dc49964a561914274343aaf0f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548878"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52299958"
 ---
-# <a name="contact-support-for-ascension"></a><span data-ttu-id="a00be-103">Kontakta support för Ascension</span><span class="sxs-lookup"><span data-stu-id="a00be-103">Contact support for Ascension</span></span>
+# <a name="contact-support-for-ascension"></a><span data-ttu-id="dc916-103">Kontakta support för Ascension</span><span class="sxs-lookup"><span data-stu-id="dc916-103">Contact support for Ascension</span></span>
 
-<span data-ttu-id="a00be-104">[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="a00be-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="dc916-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="dc916-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="a00be-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="a00be-105">Phone number</span></span>
-<span data-ttu-id="a00be-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="a00be-106">+1 312 843 5151</span></span>
+## <a name="phone-number"></a><span data-ttu-id="dc916-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="dc916-105">Phone number</span></span>
+<span data-ttu-id="dc916-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="dc916-106">+1 312 843 5151</span></span>
 
-## <a name="hours"></a><span data-ttu-id="a00be-107">Tider</span><span class="sxs-lookup"><span data-stu-id="a00be-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="a00be-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="a00be-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="dc916-107">Tider</span><span class="sxs-lookup"><span data-stu-id="dc916-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="dc916-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="dc916-108">Billing Support:</span></span>
 
-<span data-ttu-id="a00be-109">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="a00be-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="dc916-109">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="dc916-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="a00be-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="a00be-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="dc916-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="dc916-110">Technical Support:</span></span>
 
-<span data-ttu-id="a00be-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="a00be-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="dc916-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="dc916-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="a00be-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="a00be-112">International call charges apply</span></span>
+<span data-ttu-id="dc916-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="dc916-112">International call charges apply</span></span>

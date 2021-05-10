@@ -1,5 +1,5 @@
 ---
-title: Supportinformation för Centralafrikanen
+title: Supportinformation för Centrala republiken
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,31 +12,31 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9484dc530d60beecdede1693d6cadf028ececd2d
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 545e684db95203dc7e464c42f35a217f8ef1cc1b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548170"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52299946"
 ---
-# <a name="contact-support-for-central-african-republic"></a><span data-ttu-id="81594-103">Kontakta supporten för Centralafrikanen</span><span class="sxs-lookup"><span data-stu-id="81594-103">Contact support for Central African Republic</span></span>
+# <a name="contact-support-for-central-african-republic"></a><span data-ttu-id="3d952-103">Kontakta supporten för Centrala republiken</span><span class="sxs-lookup"><span data-stu-id="3d952-103">Contact support for Central African Republic</span></span>
 
-<span data-ttu-id="81594-104">[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="81594-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="3d952-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="3d952-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="81594-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="81594-105">Phone number</span></span>
-<span data-ttu-id="81594-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="81594-106">+1 312 843 5147</span></span>
+## <a name="phone-number"></a><span data-ttu-id="3d952-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="3d952-105">Phone number</span></span>
+<span data-ttu-id="3d952-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="3d952-106">+1 312 843 5147</span></span>
 
-## <a name="hours"></a><span data-ttu-id="81594-107">Tider</span><span class="sxs-lookup"><span data-stu-id="81594-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="81594-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="81594-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="3d952-107">Tider</span><span class="sxs-lookup"><span data-stu-id="3d952-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="3d952-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="3d952-108">Billing Support:</span></span>
 
-<span data-ttu-id="81594-109">Franska: Mon-Fri 9–17</span><span class="sxs-lookup"><span data-stu-id="81594-109">French: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="3d952-109">Franska: Mon-Fri 9:00–17:00</span><span class="sxs-lookup"><span data-stu-id="3d952-109">French: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="81594-110">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="81594-110">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="3d952-110">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="3d952-110">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="81594-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="81594-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="3d952-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="3d952-111">Technical Support:</span></span>
 
-<span data-ttu-id="81594-112">Franska: Mon-Fri 08:00–19:00</span><span class="sxs-lookup"><span data-stu-id="81594-112">French: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="3d952-112">Franska: Mon-Fri 08:00–19:00</span><span class="sxs-lookup"><span data-stu-id="3d952-112">French: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="81594-113">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="81594-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="3d952-113">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="3d952-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="81594-114">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="81594-114">International call charges apply</span></span>
+<span data-ttu-id="3d952-114">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="3d952-114">International call charges apply</span></span>

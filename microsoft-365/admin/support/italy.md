@@ -12,33 +12,33 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 570e79b6ff27e514782687d03c645c0cdea331f6
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: a39eb15de97b8c3bc5c2862d5ad233ce90491d61
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546682"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298605"
 ---
-# <a name="contact-support-for-italy"></a><span data-ttu-id="3c63f-103">Kontakta supporten för Italien</span><span class="sxs-lookup"><span data-stu-id="3c63f-103">Contact support for Italy</span></span>
+# <a name="contact-support-for-italy"></a><span data-ttu-id="69f02-103">Kontakta supporten för Italien</span><span class="sxs-lookup"><span data-stu-id="69f02-103">Contact support for Italy</span></span>
 
-<span data-ttu-id="3c63f-104">[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="3c63f-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="69f02-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="69f02-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="3c63f-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="3c63f-105">Phone number</span></span>
-<span data-ttu-id="3c63f-106">800 917 919</span><span class="sxs-lookup"><span data-stu-id="3c63f-106">800 917 919</span></span>
+## <a name="phone-number"></a><span data-ttu-id="69f02-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="69f02-105">Phone number</span></span>
+<span data-ttu-id="69f02-106">800 917 919</span><span class="sxs-lookup"><span data-stu-id="69f02-106">800 917 919</span></span>
 
-## <a name="hours"></a><span data-ttu-id="3c63f-107">Tider</span><span class="sxs-lookup"><span data-stu-id="3c63f-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="3c63f-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="3c63f-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="69f02-107">Tider</span><span class="sxs-lookup"><span data-stu-id="69f02-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="69f02-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="69f02-108">Billing Support:</span></span>
 
-<span data-ttu-id="3c63f-109">Italienska: Mon-Fri 9–17</span><span class="sxs-lookup"><span data-stu-id="3c63f-109">Italian: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="69f02-109">Italienska: Mon-Fri 9–17</span><span class="sxs-lookup"><span data-stu-id="69f02-109">Italian: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="3c63f-110">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="3c63f-110">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="69f02-110">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="69f02-110">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="3c63f-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="3c63f-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="69f02-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="69f02-111">Technical Support:</span></span>
 
-<span data-ttu-id="3c63f-112">Italienska: Mon-Fri 08:00–19:00</span><span class="sxs-lookup"><span data-stu-id="3c63f-112">Italian: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="69f02-112">Italienska: Mon-Fri 08:00 till 19:00</span><span class="sxs-lookup"><span data-stu-id="69f02-112">Italian: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="3c63f-113">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="3c63f-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="69f02-113">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="69f02-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="3c63f-114">Alternativt telefonnummer: 02 6943 0746</span><span class="sxs-lookup"><span data-stu-id="3c63f-114">Alternative Phone Number: 02 6943 0746</span></span>
+<span data-ttu-id="69f02-114">Alternativ Telefon tal: 02 6943 0746</span><span class="sxs-lookup"><span data-stu-id="69f02-114">Alternative Phone Number: 02 6943 0746</span></span>
 
-<span data-ttu-id="3c63f-115">Lokal samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="3c63f-115">Local call charges apply</span></span>
+<span data-ttu-id="69f02-115">Lokal samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="69f02-115">Local call charges apply</span></span>

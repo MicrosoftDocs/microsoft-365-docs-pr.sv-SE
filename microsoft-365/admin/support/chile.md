@@ -12,29 +12,29 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d19a08b85f4f102fd4f56e41ab9c070961eb9846
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 47b48e492eb0ed0b299060097c8d9ce00c64a132
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548134"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52299934"
 ---
-# <a name="contact-support-for-chile"></a><span data-ttu-id="d0e1e-103">Kontakta supporten för Chile</span><span class="sxs-lookup"><span data-stu-id="d0e1e-103">Contact support for Chile</span></span>
+# <a name="contact-support-for-chile"></a><span data-ttu-id="4f347-103">Kontakta supporten för Chile</span><span class="sxs-lookup"><span data-stu-id="4f347-103">Contact support for Chile</span></span>
 
-<span data-ttu-id="d0e1e-104">[Hitta ett annat land eller en annan region.](../contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="d0e1e-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="4f347-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="4f347-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="d0e1e-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="d0e1e-105">Phone number</span></span>
-<span data-ttu-id="d0e1e-106">800 226 826</span><span class="sxs-lookup"><span data-stu-id="d0e1e-106">800 226 826</span></span>
+## <a name="phone-number"></a><span data-ttu-id="4f347-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="4f347-105">Phone number</span></span>
+<span data-ttu-id="4f347-106">800 226 826</span><span class="sxs-lookup"><span data-stu-id="4f347-106">800 226 826</span></span>
 
-## <a name="hours"></a><span data-ttu-id="d0e1e-107">Tider</span><span class="sxs-lookup"><span data-stu-id="d0e1e-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="d0e1e-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="d0e1e-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="4f347-107">Tider</span><span class="sxs-lookup"><span data-stu-id="4f347-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="4f347-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="4f347-108">Billing Support:</span></span>
 
-<span data-ttu-id="d0e1e-109">Spanska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="d0e1e-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="4f347-109">Spanska: Mon-Fri 9–17</span><span class="sxs-lookup"><span data-stu-id="4f347-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="d0e1e-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="d0e1e-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="4f347-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="4f347-110">Technical Support:</span></span>
 
-<span data-ttu-id="d0e1e-111">Spanska: 24 timmar om dygnet, 7 dagar i veckan</span><span class="sxs-lookup"><span data-stu-id="d0e1e-111">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="4f347-111">Spanska: 24 timmar om dygnet, 7 dagar i veckan</span><span class="sxs-lookup"><span data-stu-id="4f347-111">Spanish: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="d0e1e-112">Alternativt telefonnummer: 123 002 000 05</span><span class="sxs-lookup"><span data-stu-id="d0e1e-112">Alternative Phone Number: 123 002 000 05</span></span>
+<span data-ttu-id="4f347-112">Alternativ Telefon tal: 123 002 000 05</span><span class="sxs-lookup"><span data-stu-id="4f347-112">Alternative Phone Number: 123 002 000 05</span></span>
 
-<span data-ttu-id="d0e1e-113">Lokal samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="d0e1e-113">Local call charges apply</span></span>
+<span data-ttu-id="4f347-113">Lokal samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="4f347-113">Local call charges apply</span></span>
