@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Läs mer om de kvarhållningsprinciper som gäller för Microsoft Teams.
-ms.openlocfilehash: b7bc84307f0db580995e039618cb01d25d6ecd66
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: db167894f32bcc1e30054b9cc4738af300b6d704
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "52162768"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280805"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Mer information om kvarhållning för Microsoft Teams
 
@@ -38,7 +38,7 @@ Den här artikeln kompletterar avsnittet [Mer information om kvarhållning](rete
 För övriga arbetsbelastningar finns information i:
 
 - [Mer information om kvarhållning för SharePoint och OneDrive](retention-policies-sharepoint.md)
-- [Mer information om kvarhållning för Yammer](retention-policies-yammer.md)
+- [Lär dig mer om kvarhållning för Yammer](retention-policies-yammer.md)
 - [Lär dig mer om kvarhållning för Exchange](retention-policies-exchange.md)
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Vad omfattas för kvarhållning och borttagning
@@ -163,13 +163,13 @@ Dag ett skapar en användare ett chatt- eller kanalmeddelande.
 
 Exempel på kvarhållningsresultat om användaren inte redigerar eller tar bort meddelandet:
 
-- Dag 5 (normalt en till sju dagar efter att kvarhållningsperioden börjat dag 3):
-    - Meddelandet flyttas till mappen SubstrateHolds där det bevaras i minst en dag och fortfarande är sökbart med eDiscovery-verktyg.
+- Dag 5 (normalt 1-7 dagar efter att kvarhållningsperioden börjat dag 2):
+    - Meddelandet flyttas till mappen SubstrateHolds och finns kvar där i minst 1 dag där det fortfarande kan genomsökas med eDiscovery-verktyg.
 
 - Dag 9 (normalt en till sju dagar efter minst en dag i mappen SubstrateHolds):
     - Meddelandet tas bort permanent och returneras därmed inte i eDiscovery-sökningar.
 
-Som du kan se i det här exemplet genomgår tjänsten flera processer för att säkerställa att borttagningen följer efterlevnadsstandard även när du konfigurerar en kvarhållningsprincip för att ta bort meddelanden efter bara en dag. När en borttagningsåtgärd utförs efter en dag kan det därför ta 18 dagar innan meddelandet tas bort permanent och inte längre returneras i eDiscovery-sökningar.
+Som detta exempel visar, även om du kan konfigurera en kvarhållningsprincip för att ta bort meddelanden efter bara en dag, genomgår tjänsten flera processer för att säkerställa en kompatibel borttagning. När en borttagningsåtgärd utförs efter 1 dag kan det därför ta 16 dagar innan meddelandet tas bort permanent och inte längre returneras i eDiscovery-sökningar.
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Interop-chattar för Skype för företag och Teams
 

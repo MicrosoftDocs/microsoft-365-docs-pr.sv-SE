@@ -18,19 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Avancerad granskning i Microsoft 365 innehåller nya granskningsfunktioner som hjälper din organisation med tekniska undersökningar och efterlevnadsundersökningar.
-ms.openlocfilehash: 4df9cda05d4b5febbc5b7beb505365e449accf04
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 3c91a388bc01a5531309b556a5a8532cb2efbaa6
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "52162756"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311766"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Avancerad granskning i Microsoft 365
 
 Med [den enhetliga granskningsfunktionen](search-the-audit-log-in-security-and-compliance.md) i Microsoft 365 får organisationer insyn i många typer av granskade aktiviteter i många olika tjänster i Microsoft 365. Med Avancerad granskning får organisationer möjlighet att utföra tekniska undersökningar och efterlevnadsundersökningar med längre kvarhållning för de granskningsloggar som behövs för att utföra en undersökning, åtkomst till viktiga händelser som hjälper till att fastställa intrångets omfattning och snabbare åtkomst till Office 365 Management Activity-API:et.
 
 > [!NOTE]
-> Avancerad granskning är tillgängligt för organisationer med en prenumeration på Office 365 E5/G5 eller Microsoft 365 Enterprise E5/G5. Dessutom kan en tilläggslicens för Microsoft 365 E5 Compliance eller E5 eDiscovery och granskning tilldelas till användare när licenser per användare krävs för funktioner i Avancerad granskning. Det gäller till exempel för långsiktig kvarhållning av granskningsloggar och för åtkomst till viktiga händelser för undersökningar. Mer information om licensiering finns i [Vägledning för säkerhet och efterlevnad med licensiering i Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
+> Avancerad granskning är tillgängligt för organisationer med en prenumeration på Office 365 E5/A5/G5 eller Microsoft 365 Enterprise E5/A5/G5. Dessutom kan en tilläggslicens för Microsoft 365 E5/A5/G5 Compliance eller E5/A5/G5 eDiscovery och granskning tilldelas till användare när licenser per användare krävs för funktioner i Avancerad granskning. Det gäller till exempel för långsiktig kvarhållning av granskningsloggar och för åtkomst till viktiga händelser för undersökningar. Mer information om licensering finns i:<br/>- [Licenskrav för avancerad granskning](auditing-solutions-overview.md#licensing-requirements)<br/>- [Vägledning för säkerhet och efterlevnad med licensiering i Microsoft 365.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)
 
 Den här artikeln innehåller en översikt över funktioner i Avancerad granskning och visar hur du konfigurerar användare för Avancerad granskning.
 
@@ -131,9 +131,7 @@ Om du vill söka efter SearchQueryInitiatedExchange-granskningsposter kan du sö
 Du kan också köra [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog) i Exchange Online PowerShell.
 
 > [!NOTE]
-> Du måste köra följande kommando i Exchange Online PowerShell så att SearchQueryInitiatedExchange-händelser (som utförs av en viss E5-användare) tas med i resultatet av granskningsloggsökningen: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`. <br/><br/>
-I en Multi-Geo-miljö måste du köra kommandot **Set-Mailbox** i skogen där användarens postlåda finns. Du identifierar platsen för användarens postlåda genom att köra följande kommando: `Get-Mailbox <user identity> | FL MailboxLocations`.
-Om kommandot `Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}` tidigare har körts i en annan skog än den som användarens postlåda finns i måste du först ta bort SearchQueryInitiated-värdet från användarens postlåda (genom att köra `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}`) och sedan lägga till det i användarens postlåda i den skog där användarens postlåda finns.
+> Du måste aktivera loggen för SearchQueryInitiatedExchange så att du kan söka efter den här händelsen i granskningsloggen. Anvisningar finns i [Konfigurera avancerad granskning](set-up-advanced-audit.md#step-2-enable-crucial-events).
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
@@ -156,47 +154,25 @@ Om du vill söka efter SearchQueryInitiatedSharePoint-granskningsposter kan du s
 Du kan också köra [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) i Exchange Online PowerShell.
 
 > [!NOTE]
-> Du måste köra följande kommando i Exchange Online PowerShell så att SearchQueryInitiatedSharePoint-händelser (som utförs av en viss E5-användare) tas med i resultatet av granskningsloggsökningen: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`. <br/><br/>
-I en Multi-Geo-miljö måste du köra kommandot **Set-Mailbox** i skogen där användarens postlåda finns. Du identifierar platsen för användarens postlåda genom att köra följande kommando: `Get-Mailbox <user identity> | FL MailboxLocations`.
-Om kommandot `Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}` tidigare har körts i en annan skog än den som användarens postlåda finns i måste du först ta bort SearchQueryInitiated-värdet från användarens postlåda (genom att köra `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}`) och sedan lägga till det i användarens postlåda i den skog där användarens postlåda finns.
+> Du måste aktivera loggen för SearchQueryInitiatedSharePoint så att du kan söka efter den här händelsen i granskningsloggen. Anvisningar finns i [Konfigurera avancerad granskning](set-up-advanced-audit.md#step-2-enable-crucial-events).
 
 ## <a name="high-bandwidth-access-to-the-office-365-management-activity-api"></a>Åtkomst med hög bandbredd till Office 365 Management Activity-API
 
 Organisationer som kommer åt granskningsloggar via Office 365 Management Activity-API:t har begränsats genom gränser på utgivarnivån. Det innebär att för utgivare som hämtar data åt flera kunders delades gränsen av alla dessa kunder.
 
-I och med lanseringen av Avancerad granskning börjar vi använda en gräns på innehavarnivå i stället för på utgivarnivå. Det innebär att varje organisation får en egen tilldelad bandbreddskvot för åtkomst till sina granskningsdata. Bandbredden är inte en statisk, fördefinierad gräns utan beror på en kombination av faktorer, bland annat antalet platser i organisationen och att E5-organisationer får mer bandbredd än icke-E5-organisationer.
+I och med lanseringen av Avancerad granskning börjar vi använda en gräns på innehavarnivå i stället för på utgivarnivå. Det innebär att varje organisation får en egen tilldelad bandbreddskvot för åtkomst till sina granskningsdata. Bandbredden är inte en statisk, fördefinierad gräns men modelleras på en kombination av faktorer, bland annat antalet platser i organisationen och att E5/A5/G5-organisationer får mer bandbredd än icke-E5/A5/G5-organisationer.
 
-Alla organisationer tilldelas inledningsvis en baslinje med 2 000 begäranden per minut. Den här gränsen ökar dynamiskt beroende på hur många licenser organisationen har och på licensprenumerationen. E5-organisationer får ungefär två gånger så mycket bandbredd som icke-E5-organisationer. Det kommer också att finnas en övre bandbreddsgräns för att skydda tjänsten.
+Alla organisationer tilldelas inledningsvis en baslinje med 2 000 begäranden per minut. Den här gränsen ökar dynamiskt beroende på hur många licenser organisationen har och på licensprenumerationen. E5/A5/G5-organisationer får ungefär två gånger så mycket bandbredd som icke-E5/A5/G5-organisationer. Det kommer också att finnas en övre bandbreddsgräns för att skydda tjänsten.
 
 Mer information finns i avsnittet om API-begränsning i [referensen för Office 365 Management Activity-API](/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
 
-## <a name="set-up-advanced-audit-for-users"></a>Konfigurera Avancerad granskning för användare
-
-För Avancerad granskning-funktioner som möjligheten att logga viktiga händelser, till exempel MailItemsAccessed och Send, måste användarna ha tilldelats rätt E5-licens. Dessutom måste appen/tjänstplanen Advanced Auditing vara aktiverad för dessa användare. Du kan kontrollera att appen Advanced Auditing har tilldelats användarna genom att utföra följande steg för varje användare:
-
-1. I [Administrationscenter för Microsoft 365](https://admin.microsoft.com/Adminportal) går du till **Användare** > **Aktiva användare** och väljer en användare.
-
-2. Klicka på **Licenser och appar** på den utfällbara sidan med användaregenskaper.
-
-3. I avsnittet **Licenser** kontrollerar du att användaren har tilldelats en E5-licens.
-
-4. Visa avsnittet **Appar** och kontrollera att kryssrutan **Microsoft 365 Advanced Auditing** är markerad.
-
-5. Om kryssrutan inte är markerad markerar du den och klickar sedan på **Spara ändringarna**.
-
-   Loggning av granskningsposter för MailItemsAccessed, Send och andra viktiga händelser för användaren påbörjas inom 24 timmar.
-
-Om organisationen tilldelar licenser till grupper av användare med hjälp av gruppbaserad licensiering måste du inaktivera licenstilldelningen för Microsoft 365 Advanced Auditing för gruppen. När du har sparat ändringarna kontrollerar du att Microsoft 365 Advanced Auditing är inaktiverat för gruppen. Aktivera sedan licenstilldelningen för gruppen igen. Instruktioner för hur du använder gruppbaserad licensiering finns i [Tilldela licenser till användare efter gruppmedlemskap i Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign).
-
-Om du har anpassat postlådeåtgärderna som loggas för användarpostlådor eller delade postlådor granskas inte de nya standardåtgärderna som MailItemsAccessed automatiskt för dessa postlådor. Information om hur du ändrar postlådeåtgärderna som granskas för varje inloggningstyp finns i avsnittet ”Ändra eller återställa postlådeåtgärder som loggas som standard” i [Hantera postlådegranskning](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
-
 ## <a name="faqs-for-advanced-audit"></a>Vanliga frågor och svar om Avancerad granskning
 
-**Behöver varje användare en E5-licens för att kunna dra nytta av Avancerad granskning?**
+**Behöver varje användare en E5/A5/G5-licens för att kunna dra nytta av Avancerad granskning?**
 
-För att kunna dra nytta av funktionerna i Avancerad granskning på användarnivå måste användaren ha tilldelats en E5-licens. En del funktioner kontrollerar om användaren har rätt licens innan funktionen visas för användaren. Om du till exempel försöker hämta granskningsposter för en användare som inte har tilldelats en E5-licens i mer än 90 dagar returnerar systemet ett felmeddelande.
+För att kunna dra nytta av funktionerna i Avancerad granskning på användarnivå måste användaren ha tilldelats en E5/A5/G5-licens. En del funktioner kontrollerar om användaren har rätt licens innan funktionen visas för användaren. Om du till exempel försöker hämta granskningsposter för en användare som inte har tilldelats rätt licens i mer än 90 dagar returnerar systemet ett felmeddelande.
 
-**Min organisation har en E5-prenumeration. Behöver jag göra något för att få åtkomst till granskningsposter för viktiga händelser?**
+**Min organisation har en E5/A5/G5-prenumeration. Behöver jag göra något för att få åtkomst till granskningsposter för viktiga händelser?**
 
 För kvalificerade kunder och användare som har tilldelats rätt licens krävs ingen åtgärd för att få åtkomst till viktiga granskningshändelser.
 
