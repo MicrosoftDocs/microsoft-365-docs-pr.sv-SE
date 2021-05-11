@@ -506,54 +506,54 @@
           items:
             - name: Nyckelordsfrågor och sökvillkor
               href: keyword-queries-and-search-conditions.md
-            - name: Visa nyckelordsstatistik för sökresultat
+            - name: Förhandsgranska sökresultaten i eDiscovery
+              href: preview-ediscovery-search-results.md
+            - name: Visa statistik för sökresultat
               href: view-keyword-statistics-for-content-search.md
             - name: Exportera sökresultat
               href: export-search-results.md
             - name: Exportera en sökningsrapport
               href: export-a-content-search-report.md
-            - name: Använda Microsoft Edge för att ladda ned sökresultat
-              href: configure-edge-to-export-search-results.md
             - name: Söka efter och ta bort e-postmeddelanden
               href: search-for-and-delete-messages-in-your-organization.md
             - name: Sök efter Teams chattdata för lokala användare
               href: search-cloud-based-mailboxes-for-on-premises-users.md
-            - name: Massredigering av flera innehållssökningar
-              href: bulk-edit-content-searches.md
             - name: Förbereda en CSV-fil för en ID-listsökning
               href: csv-file-for-an-id-list-content-search.md
-            - name: Kontrollera fel i sökfrågan
-              href: check-your-content-search-query-for-errors.md
+            - name: Konfigurera behörighetsfiltrering för innehållssökning
+              href: permissions-filtering-for-content-search.md
             - name: Felsöka vanliga eDiscovery-problem
               href: ediscovery-troubleshooting-common-issues.md
             - name: Försöka med en misslyckad sökning igen
               href: retry-failed-content-search.md
             - name: Bevara hemlig kopia-mottagare för sökning
               href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
-        - name: Konfigurera innehållssökning
-          items:
-            - name: Konfigurera behörighetsfiltrering för innehållssökning
-              href: permissions-filtering-for-content-search.md
-            - name: Ändra storleken på PST-filer när du exporterar sökresultat
-              href: change-the-size-of-pst-files-when-exporting-results.md
-            - name: Inaktivera rapporter när du exporterar sökresultat
-              href: disable-reports-when-you-export-content-search-results.md
         - name: Referens för innehållssökning
           items:
-            - name: Begränsningar för innehållssökning
+            - name: Sökbegränsningar i eDiscovery
               href: limits-for-content-search.md
+            - name: Innehåll som lagrats i postlådor för eDiscovery
+              href: what-is-stored-in-exo-mailbox.md
+            - name: Skillnader mellan uppskattade och faktiska sökresultat
+              href: differences-between-estimated-and-actual-ediscovery-search-results.md
             - name: Delvis indexerade objekt
               href: partially-indexed-items-in-content-search.md
             - name: Undersöka delvis indexerade objekt
               href: investigating-partially-indexed-items-in-ediscovery.md
             - name: Avduplicering i sökresultat
               href: de-duplication-in-ediscovery-search-results.md
-            - name: Skillnader mellan uppskattade och faktiska sökresultat
-              href: differences-between-estimated-and-actual-ediscovery-search-results.md
-            - name: Innehåll som lagrats i postlådor för eDiscovery
-              href: what-is-stored-in-exo-mailbox.md
             - name: Dekryptering i eDiscovery-verktyg
               href: ediscovery-decryption.md
+            - name: Ändra storleken på PST-filer när du exporterar sökresultat
+              href: change-the-size-of-pst-files-when-exporting-results.md
+            - name: Inaktivera rapporter när du exporterar sökresultat
+              href: disable-reports-when-you-export-content-search-results.md
+            - name: Kontrollera fel i sökfrågan
+              href: check-your-content-search-query-for-errors.md
+            - name: Använda Microsoft Edge för att ladda ned sökresultat
+              href: configure-edge-to-export-search-results.md
+            - name: Massredigering av flera innehållssökningar
+              href: bulk-edit-content-searches.md
         - name: PowerShell-skript för innehållssökning
           items:
             - name: Använda innehållssökning för riktade samlingar
@@ -578,23 +578,29 @@
           href: close-reopen-delete-core-ediscovery-cases.md
         - name: Core eDiscovery-referens
           items:
+            - name: Sökbegränsningar i eDiscovery
+              href: limits-for-content-search.md
             - name: Tilldela eDiscovery-behörigheter
               href: assign-ediscovery-permissions.md
             - name: Nyckelordsfrågor och sökvillkor
               href: keyword-queries-and-search-conditions.md
             - name: Innehåll som lagrats i postlådor för eDiscovery
               href: what-is-stored-in-exo-mailbox.md
-            - name: Konfigurera filtrering av sökbehörigheter
-              href: permissions-filtering-for-content-search.md
+            - name: Förhandsgranska sökresultaten i eDiscovery
+              href: preview-ediscovery-search-results.md
             - name: Konfigurera efterlevnadsgränser
               href: set-up-compliance-boundaries.md
+            - name: Konfigurera filtrering av sökbehörigheter
+              href: permissions-filtering-for-content-search.md
+            - name: Skillnader mellan uppskattade och faktiska sökresultat
+              href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            - name: Exportera en sökningsrapport
+              href: export-a-content-search-report.md
             - name: Använda ett skript för att lägga till användare i ett eDiscovery-undantag
               href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
             - name: Skapa en rapport om eDiscovery-undantag
               href: create-a-report-on-holds-in-ediscovery-cases.md
-            - name: Exportera en sökningsrapport
-              href: export-a-content-search-report.md
-            - name: Visa nyckelordsstatistik för sökresultat
+            - name: Visa statistik för sökresultat
               href: view-keyword-statistics-for-content-search.md
             - name: Söka efter och rensa spillda data
               href: data-spillage-scenariosearch-and-purge.md
@@ -786,18 +792,22 @@
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Hantera gransknings- och aviseringsprinciper
   items:
+    - name: Microsoft 365-granskningslösningar
+      href: auditing-solutions-overview.md
     - name: Grundläggande granskning
       items:
+        - name: Konfigurera grundläggande granskning
+          href: set-up-basic-auditing.md
         - name: Söka i granskningsloggen
           href: search-the-audit-log-in-security-and-compliance.md
         - name: Använd ett PowerShell-skript för att söka i granskningsloggen
           href: audit-log-search-script.md
-        - name: Aktivera och inaktivera granskningsloggsökning
-          href: turn-audit-log-search-on-or-off.md
         - name: Detaljerade egenskaper i granskningsloggen
           href: detailed-properties-in-the-office-365-audit-log.md
         - name: 'Exportera, konfigurera och visa granskningsloggposter'
           href: export-view-audit-log-records.md
+        - name: Aktivera och inaktivera granskningsloggsökning
+          href: turn-audit-log-search-on-or-off.md
         - name: Undersöka vanliga problem med hjälp av granskningsloggen
           href: auditing-troubleshooting-scenarios.md
         - name: Använda delningsgranskning i granskningsloggen
@@ -810,16 +820,18 @@
               href: /office/office-365-management-api/office-365-management-activity-api-schema
             - name: 'API för hanteringsaktivitet i Office 365, frågor och felsökning'
               href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
-    - name: Postlådegranskning
-      href: enable-mailbox-auditing.md
     - name: Advanced Audit
       items:
         - name: Översikt över Advanced Audit
           href: advanced-audit.md
+        - name: Konfigurera avancerad granskning
+          href: set-up-advanced-audit.md
         - name: Hantera kvarhållningsprinciper för granskningsloggar
           href: audit-log-retention-policies.md
         - name: Undersöka komprometterade konton med hjälp av Advanced Audit
           href: mailitemsaccessed-forensics-investigations.md
+    - name: Postlådegranskning
+      href: enable-mailbox-auditing.md
     - name: Aviseringsprinciper
       href: alert-policies.md
 - name: Hantera efterlevnadsrisker
