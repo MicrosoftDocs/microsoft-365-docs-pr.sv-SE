@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Läs om vad som händer med dina data när prenumerationen för Microsoft 365 för företag förfaller, inaktiveras eller om du avbryter den.
-ms.openlocfilehash: 8f853000ebd20ab8f6625df9f773bbb182bdb7fd
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 45f331fd14abb2f851c8ff84e729b8443a60b59b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644662"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297278"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Vad händer med mina data och åtkomst när prenumerationen för Microsoft 365 för företag går ut?
 
 Om prenumerationen går ut – antingen eftersom den förfaller eller för att du vill avbryta – kommer din åtkomst till Microsoft 365-tjänster, program och kunddata gå igenom flera tillstånd innan prenumerationen är helt inaktiverad eller *borttagen*. Om du har förståelse för förloppet kommer du vara beredd på att återaktivera din prenumeration i tid, eller – om du lämnar Microsoft 365 – säkerhetskopiera dina data innan de tas bort permanent.
 
-Läs igenom den viktiga informationen innan du kontaktar [Supporten för Microsoft 365](../../admin/contact-support-for-business-products.md).
+Läs igenom den viktiga informationen innan du kontaktar [Supporten för Microsoft 365](../../business-video/get-help-support.md).
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>Vad händer med data när en prenumeration förfaller?
 
@@ -125,7 +125,7 @@ Som global administratör eller faktureringsadministratör kan du [återaktivera
   
 Administratörer och användare har inte längre åtkomst till de tjänster och Office-program som ingår i prenumerationen. Alla kunddata, allt från användardata till dokument och e-post, tas bort permanent och kan inte återskapas.
   
-Du kan inte återaktivera prenumerationen i det här läget. Som global administratör eller faktureringsadministratör kan du dock fortfarande komma åt administrationscentret för att hantera andra prenumerationer eller köpa nya prenumerationer för att möta företagets behov.
+Just nu kan du inte återaktivera prenumerationen. Som global administratör eller faktureringsadministratör har du dock fortfarande åtkomst till administrationscenter för att hantera andra prenumerationer eller för att köpa nya prenumerationer och möta verksamhetsbehoven.
   
 > [!NOTE]
 > - Det går inte återställa de data som var kopplade till en borttagen prenumeration genom att lägga till en ny prenumeration av samma typ som den borttagna prenumerationen.
@@ -133,7 +133,7 @@ Du kan inte återaktivera prenumerationen i det här läget. Som global administ
 
 ### <a name="what-happens-when-my-trial-ends"></a>Vad händer när utvärderingsperioden går ut?
 
-När utvärderingsversionen går ut kan du inte fortsätta använda Microsoft 365 kostnadsfritt. Det finns några olika alternativ:
+När utvärderingsversionen löper ut kan du inte fortsätta använda Microsoft 365 kostnadsfritt. Du har några olika möjligheter:
 
 - **Köp Microsoft 365.** När din utvärderingsversion går ut flyttas den till tillståndet Förfallen som ger dig ytterligare 30 dagar (för de flesta utvärderingsversioner, i de flesta länder och regioner) för att köpa Microsoft 365. Information om hur du konverterar utvärderingsversionen till en betald prenumeration finns i [Köpa en prenumeration från din kostnadsfria utvärderingsversion](../try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial).
 
