@@ -1,5 +1,5 @@
 ---
-title: Söka efter fel i innehållssökningsfrågan
+title: Kontrollera fel i sökfrågan
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,17 +15,17 @@ search.appverid:
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 ms.custom: seo-marvel-apr2020
-description: Lär dig hur du hittar fel och skrivfel i nyckelordsfrågan för innehållssökning innan du kör sökningen.
-ms.openlocfilehash: 939ac3d227f176a0b74138107ced5dd5b7142bcd
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+description: Lär dig hur du hittar fel och skrivfel i nyckelordsfrågan för eDiscovery-sökningar innan du kör sökningen.
+ms.openlocfilehash: 9c041ca690df3306347cbca77df3ba9639801245
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "52162612"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311694"
 ---
-# <a name="check-your-content-search-query-for-errors"></a>Söka efter fel i innehållssökningsfrågan
+# <a name="check-your-search-query-for-errors"></a>Kontrollera fel i sökfrågan
   
-Här är en lista över de tecken som inte stöds och som vi kontrollerar. Tecken som inte stöds är ofta dolda och leder vanligtvis till ett sökfel eller oväntade resultat.
+Här är en lista över de tecken som inte stöds och som vi söker efter i sökfrågor för innehållssökning och bas-eDiscovery. Tecken som inte stöds är ofta dolda och leder vanligtvis till ett sökfel eller oväntade resultat.
   
 - **Smarta citattecken** – Smarta enkla och dubbla citattecken (kallas även typografiska citattecken) stöds inte. Endast raka citattecken kan användas i en sökfråga. 
 
@@ -45,4 +45,4 @@ Här är ett exempel på varningsmeddelandet som visas när du klickar på Sök 
   
 ## <a name="how-to-prevent-unsupported-characters-in-your-search-queries"></a>Förhindra tecken som inte stöds i dina sökfrågor
 
-Tecken som inte stöds läggs vanligtvis till i en fråga när du kopierar frågan eller delar av frågan från andra program (till exempel Microsoft Word eller Microsoft Excel) och klistrar in dem i nyckelordsrutan på frågesidan i en innehållssökning. Det bästa sättet att förhindra tecken som inte stöds är att skriva frågan i rutan nyckelord. Du kan också kopiera en fråga från Word eller Excel och sedan klistra in den i en textredigerare, till exempel Microsoft Anteckningar. Spara textfilen och välj **ANSI** i **listrutan** Kodning. Det här tar bort all formatering och tecken som inte stöds. Sedan kan du kopiera och klistra in frågan från textfilen till nyckelordsfrågerutan. 
+Tecken som inte stöds läggs vanligtvis till i en fråga när du kopierar frågan eller delar av frågan från andra program (till exempel Microsoft Word eller Microsoft Excel) och klistrar in dem i nyckelordsrutan på frågesidan i en innehållssökning. Det bästa sättet att förhindra tecken som inte stöds är att skriva frågan i rutan nyckelord. Du kan också kopiera en fråga från Word eller Excel och sedan klistra in den i en textredigerare, till exempel Microsoft Anteckningar. Spara textfilen och välj **ANSI** i **listrutan** Kodning. Det här tar bort all formatering och tecken som inte stöds. Sedan kan du kopiera och klistra in frågan från textfilen till nyckelordsfrågerutan.

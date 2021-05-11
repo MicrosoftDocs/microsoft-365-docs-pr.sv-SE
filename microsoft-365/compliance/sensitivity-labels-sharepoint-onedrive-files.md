@@ -17,16 +17,28 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratörer kan aktivera stöd för känslighetsetiketter för Word, Excel och PowerPoint filer i SharePoint och OneDrive.
-ms.openlocfilehash: c3d4320937b441510424454197c4eb4ffa46d9fe
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f610e04a9115b7654332bcc1f479144b4d100618
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245642"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311934"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Aktivera känslighetsetiketter för Office-filer i SharePoint och OneDrive
 
 >*[Vägledning för säkerhet och efterlevnad med licensiering i Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+> [!NOTE]
+> Det finns ett aktuellt problem som leder till att etiketterade och krypterade filer inte kan öppnas i Office på webben:
+>
+> Medan vi undersöker ett problem som rör specifika dokumentegenskaper kan du inte öppna många filer i Office på webben. För de här filerna kan du fortsätta att öppna och redigera dem i datorn och Office program. Du kan också göra följande:
+>
+> 1. Öppna filen i Office skrivbordsprogrammet.
+> 2. Ta bort etiketten som tillämpar kryptering.
+> 3. Spara filen på den ursprungliga platsen (SharePoint eller OneDrive) och stäng skrivbordsprogrammet.
+> 4. Öppna filen i Office på webben och tillämpa den ursprungliga etiketten som tillämpar kryptering på nytt.
+> 
+> Filer som skapas och redigeras endast i Office på webben påverkas inte.
 
 Aktivera känslighetsetiketter för Office filer i SharePoint och OneDrive så att användare kan använda dina [känslighetsetiketter](sensitivity-labels.md) i Office för webben. När den här funktionen är aktiverad ser användare knappen Känslighet i **menyfliksområdet** så att de kan använda etiketter och se alla etikettnamn i statusfältet.
 
@@ -71,14 +83,6 @@ Dessa nya funktioner fungerar endast [med känslighetsetiketter.](sensitivity-la
 Använd OneDrive synkroniseringsapp version 19.002.0121.0008 eller senare på Windows och version 19.002.0107.0008 eller senare på Mac. Båda de här versionerna släpptes 28 januari 2019 och är för närvarande tillgängliga för alla ringar. Mer information finns i OneDrive [viktig information.](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0) När du har aktivera känslighetsetiketter för Office-filer i SharePoint och OneDrive uppmanas användare som kör en äldre version av synkroniseringsappen att uppdatera den.
 
 ## <a name="limitations"></a>Begränsningar
-
-- Power Query och anpassade tillägg med Excel på webben: Om dessa filer är krypterade med en känslighetsetikett kan SharePoint och OneDrive inte bearbeta filerna så att användarna inte kan öppna dem i Office på webben. För de här filerna använder du antingen en etikett utan kryptering så att de kan öppnas i Office på webben eller instruera användarna att öppna filerna i sina skrivbordsprogram.
-
-- Om du får problem med att öppna etiketterade och krypterade filer Office på webben kan du prova följande:
-    1. Öppna filen i Office skrivbordsprogrammet.
-    2. Ta bort etiketten som tillämpar kryptering.
-    3. Spara filen på den ursprungliga platsen (SharePoint eller OneDrive) och stäng skrivbordsprogrammet.
-    4. Öppna filen i Office på webben och tillämpa den ursprungliga etiketten som tillämpar kryptering på nytt.
 
 - SharePoint och OneDrive av känslighetsetiketter för befintliga filer som du redan har krypterat med hjälp av Azure Information Protection-etiketter. För att funktionerna ska fungera när du har Office känslighetsetiketter i SharePoint och OneDrive utför du följande uppgifter:
     
@@ -139,7 +143,7 @@ Det här alternativet är det enklaste sättet att aktivera känslighetsetikette
     Kommandot körs direkt och när sidan uppdateras nästa gång visas inte längre meddelandet eller knappen.
 
 > [!NOTE]
-> Om du har Microsoft 365 Multi-Geo måste du använda PowerShell för att aktivera de här funktionerna för alla dina geoplatser. Mer information finns i nästa avsnitt.
+> Om du har Microsoft 365 Multi-Geo måste du använda PowerShell för att aktivera de här funktionerna för alla dina geoplatser. Se nästa avsnitt för mer information.
 
 ### <a name="use-powershell-to-enable-support-for-sensitivity-labels"></a>Använda PowerShell för att aktivera stöd för känslighetsetiketter
 
@@ -173,7 +177,8 @@ För att aktivera de nya funktionerna använder du [cmdleten Set-SPOTenant](/pow
 
 1. Använd ett arbets- eller skolkonto med global administratör SharePoint administratörsbehörighet i Microsoft 365 ansluta till SharePoint. Mer information finns i Komma [igång med SharePoint Online Management Shell.](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
     
-    Obs! Om du har Microsoft 365 för Multi-Geo ska du använda parametern -URL med [Anslut-SPOService](/powershell/module/sharepoint-online/connect-sposervice)och ange URL-adressen för SharePoint Online Administrationscenter för någon av dina geoplatser.
+   > [!NOTE]
+   > Om du har Microsoft 365 Multi-Geo använder du parametern -URL med [Anslut-SPOService](/powershell/module/sharepoint-online/connect-sposervice)och anger webbadressen till webbplatsen SharePoint Online Administration Center för någon av dina geoplatser.
 
 2. Kör följande kommando och tryck på **Y för** att bekräfta:
 

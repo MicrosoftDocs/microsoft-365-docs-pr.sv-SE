@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 description: Lär dig hur du tar bort licenser från användarkonton.
 ms.date: 07/01/2020
-ms.openlocfilehash: 550136c2cfa8d81a31e52a4313dc9c967a55d56e
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 87bb8f6fe0e85fc4ac832f2bc4ad746e8d6386eb
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398199"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52310998"
 ---
 # <a name="unassign-licenses-from-users"></a>Ta bort tilldelningen av licenser från användare
 
 Du kan ta bort licenser från användare på **sidan Aktiva** användare eller på **sidan** Licenser. Vilken metod du använder beror på om du vill ta bort licenser från specifika användare eller ta bort licenser för användare från en viss produkt.
 
 > [!NOTE]
-> Som administratör kan du inte tilldela eller ta bort licenser för en prenumeration på självbetjäning som köpts av en användare i organisationen. Du kan [ta över en prenumeration på självbetjäning och](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)sedan tilldela eller ta bort licenser.
+> Som administratör kan du inte tilldela eller ta bort licenser för en självbetjäningsprenumeration som köpts av en användare i din organisation. Du kan [ta över en självbetjäningsprenumeration](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)och sedan tilldela eller ta bort licenser.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
@@ -53,12 +53,12 @@ När du använder sidan **Licenser** för att ta bort licenser tar du bort licen
 
 ::: moniker range="o365-germany"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret går</a>du till sidan  > **Faktureringslicenser.**
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscenter</a> gå till sidan för **Fakturering**>**Licenser**.
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret går</a>du till sidan  > **Faktureringslicenser.**
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscenter</a> gå till sidan för **Fakturering**>**Licenser**.
 
 ::: moniker-end
 
@@ -81,13 +81,13 @@ När du använder sidan **Aktiva användare** för att ta bort licenser tar du b
 
 ::: moniker range="o365-germany"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret går</a>du till sidan **Fakturering** > **för aktiva** användare.
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a> går du till sidan **Fakturering** > **Aktiva användare**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret går</a>du till sidan **Fakturering** > **för aktiva** användare.
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a> går du till sidan **Fakturering** > **Aktiva användare**.
 
 ::: moniker-end
 
@@ -105,13 +105,13 @@ När du använder sidan **Aktiva användare** för att ta bort licenser tar du b
 
 ::: moniker range="o365-germany"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret går</a>du till sidan **Fakturering** > **för aktiva** användare.
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a> går du till sidan **Fakturering** > **Aktiva användare**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret går</a>du till sidan **Fakturering** > **för aktiva** användare.
+1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a> går du till sidan **Fakturering** > **Aktiva användare**.
 
 ::: moniker-end
 
@@ -123,11 +123,11 @@ När du använder sidan **Aktiva användare** för att ta bort licenser tar du b
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>Vad händer med en användares data när du tar bort deras licens?
 
 - När en licens tas bort från en användare lagras data som är kopplade till kontot i 30 dagar. Efter respitperioden på 30 dagar tas data bort och kan inte återställas.
-- Filer som har sparats i OneDrive för företag tas inte bort såvida inte användaren tas bort från administrationscentret för Microsoft 365 eller tas bort via Active Directory-synkronisering. Mer information finns i [OneDrive-bevarande och -borttagning.](/onedrive/retention-and-deletion)
-- När licensen tas bort är användarens postlåda inte längre sökbar med hjälp av ett eDiscovery-verktyg som Innehållssökning eller Avancerad eDiscovery. Mer information finns i "Söka i frånkopplade eller avlicensierade postlådor" i [Innehållssökning i Microsoft 365.](../../compliance/content-search.md#searching-disconnected-or-de-licensed-mailboxes)
-- Om du har en Enterprise-prenumeration, till exempel Office 365 Enterprise E3, kan du behålla e-postdata för ett borttagna användarkonton med hjälp av [inaktiva postlådor](../../compliance/inactive-mailboxes-in-office-365.md)i Exchange Online. Mer information finns i Skapa [och hantera inaktiva postlådor i Exchange Online.](../../compliance/create-and-manage-inactive-mailboxes.md)
-- Information om hur du blockerar en användares åtkomst till data i Microsoft 365 efter att licensen har tagits bort, och hur du får åtkomst till data efteråt, finns i Ta bort [en tidigare anställd](../add-users/remove-former-employee.md).
-- Om du tar bort en [användares](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) licens och de fortfarande har Office-program installerade visas felmeddelanden om ej licensierad produkt och aktivering i Office när de använder Office-program.
+- Filer som sparas OneDrive för företag tas inte bort såvida inte användaren tas bort från Microsoft 365 eller tas bort via Active Directory-synkronisering. Mer information finns i OneDrive [och ta bort](/onedrive/retention-and-deletion).
+- När licensen tas bort är användarens postlåda inte längre sökbar med hjälp av ett eDiscovery-verktyg som innehållssökning eller Advanced eDiscovery. Mer information finns i "Söka i frånkopplade eller avlicensierade postlådor" i [Referens för innehållssökning.](../../compliance/content-search-reference.md#searching-disconnected-or-de-licensed-mailboxes)
+- Om du har ett Enterprise-abonnemang, till exempel Office 365 Enterprise E3, kan Exchange Online bevara e-postdata för ett borttagna användarkonto genom att använda [inaktiva postlådor.](../../compliance/inactive-mailboxes-in-office-365.md) Mer information finns i Skapa [och hantera inaktiva postlådor i Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
+- Information om hur du blockerar en användares åtkomst till data i Microsoft 365 efter att licensen har tagits bort, och hur du får åtkomst till data efteråt, finns i Ta bort en [tidigare anställd](../add-users/remove-former-employee.md).
+- Om du tar bort en [användares](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) licens och användaren fortfarande har Office-appar installerade visas felmeddelanden om ej licensierad produkt och aktivering i Office när de använder Office program.
 
 ## <a name="next-steps"></a>Nästa steg
 

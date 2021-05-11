@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Lär dig hur du använder efterlevnadsgränser för att skapa logiska gränser som styr användarinnehållsplatser som en eDiscovery-hanterare kan söka i Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 80f1c6705550d21ac54a0fb4dda2b605b497adbc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8b19347ad8e1c87d5b66cb49ed2af152b4765c37
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162044"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311922"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Konfigurera efterlevnadsgränser för eDiscovery-undersökningar
 
@@ -110,7 +110,7 @@ När den tekniska ändringen har gjorts och attributet synkroniserats med OneDri
   
 ## <a name="step-3-create-a-role-group-for-each-agency"></a>Steg 3: Skapa en rollgrupp för varje agentur
 
-Nästa steg är att skapa rollgrupper i Säkerhets- & efterlevnadscenter som kommer att justeras mot dina byråer. Vi rekommenderar att du skapar en rollgrupp genom att kopiera den inbyggda gruppen för eDiscovery-hanterare, lägga till rätt medlemmar och ta bort roller som kanske inte är tillämpliga för dina behov. Mer information om eDiscovery-relaterade roller finns i Tilldela eDiscovery-behörigheter i säkerhets- och efterlevnadscentret för [Office 36 & 5.](assign-ediscovery-permissions.md)
+Nästa steg är att skapa rollgrupper i Säkerhets- & efterlevnadscenter som kommer att justeras mot dina byråer. Vi rekommenderar att du skapar en rollgrupp genom att kopiera den inbyggda gruppen för eDiscovery-hanterare, lägga till rätt medlemmar och ta bort roller som kanske inte är tillämpliga för dina behov. Mer information om eDiscovery-relaterade roller finns i [Tilldela eDiscovery-behörigheter.](assign-ediscovery-permissions.md)
   
 Skapa rollgrupper genom att  gå till sidan Behörigheter i Efterlevnadscenter för säkerhet & och skapa en rollgrupp för varje team i varje agentur som ska använda efterlevnadsgränser och eDiscovery-ärenden för att hantera undersökningar.
   
@@ -140,7 +140,7 @@ Här är en beskrivning av varje parameter i kommandot:
   
 - `FilterName`: Anger namnet på filtret. Använd ett namn som beskriver eller identifierar agenturen som filtret används i.
 
-- `Users`: Anger vilka användare eller grupper som filtret används för i de innehållssökningsåtgärder de utför. För efterlevnadsgränser anger den här parametern rollgrupperna (som du skapade i steg 3) i den agentur som du skapar filtret för. Observera att det här är en parameter med flera värden så att du kan ta med en eller flera rollgrupper, avgränsade med kommatecken.
+- `Users`: Anger vilka användare eller grupper som får filtret tillämpat på de sökåtgärder de utför. För efterlevnadsgränser anger den här parametern rollgrupperna (som du skapade i steg 3) i den agentur som du skapar filtret för. Observera att det här är en parameter med flera värden så att du kan ta med en eller flera rollgrupper, avgränsade med kommatecken.
 
 - `Filters`: Anger sökvillkoren för filtret. Definiera följande filter för efterlevnadsgränser. Var och en gäller för en innehållsplats. 
 
@@ -153,9 +153,9 @@ Här är en beskrivning av varje parameter i kommandot:
      > [!NOTE]
      > Syntaxen för `Filters` parametern innehåller en *filterlista*. En filterlista är ett filter som innehåller ett postlådefilter och ett webbplatsfilter avgränsade med kommatecken. I exemplet ovan ser du att ett kommatecken skiljer Mailbox_ComplianceAttribute **och** **Site_ComplianceAttribute** `-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"` : När det här filtret bearbetas vid en innehållssökning skapas två sökbehörighetsfilter från filterlistan: ett postlådefilter och ett webbplatsfilter. Ett alternativ till att använda en filterlista är att skapa två separata sökbehörighetsfilter för varje agentur: ett filter med sökbehörigheter för postlådans attribut och ett filter för webbplatsattributen. I båda fallen blir resultatet detsamma. Det spelar ingen roll om du använder en filterlista eller skapar separata sökbehörighetsfilter.
 
-- `Action`: Anger vilken typ av efterlevnadssökningsåtgärd som filtret tillämpas på. Filtret används  `-Action Search` till exempel bara när medlemmar i rollgruppen som definierats i `Users` parametern kör en innehållssökning. I det här fallet används inte filtret när du exporterar sökresultat. För efterlevnadsgränser använder  `-Action All` du så att filtret gäller för alla sökåtgärder. 
+- `Action`: Anger vilken typ av sökåtgärd filtret ska tillämpas på. Till exempel  `-Action Search` används endast filtret när medlemmar i rollgruppen som definierats i `Users` parametern kör en sökning. I det här fallet används inte filtret när du exporterar sökresultat. För efterlevnadsgränser använder  `-Action All` du så att filtret gäller för alla sökåtgärder. 
 
-    En lista över åtgärderna för innehållssökning finns i avsnittet "New-ComplianceSecurityFilter" i [Konfigurera behörighetsfiltrering för innehållssökning.](permissions-filtering-for-content-search.md#new-compliancesecurityfilter)
+    En lista med sökåtgärder finns i avsnittet "New-ComplianceSecurityFilter" i [Konfigurera behörighetsfiltrering för innehållssökning.](permissions-filtering-for-content-search.md#new-compliancesecurityfilter)
 
 Här är exempel på de två sökbehörighetsfilter som skulle skapas för att stödja Contosos efterlevnadsgränser. I båda dessa exempel finns en lista med kommaavgränsade filter där postlådan och webbplatsfilter ingår i samma sökbehörighetsfilter och avgränsas med kommatecken.
   
@@ -185,13 +185,11 @@ Så här skapar du ett ärende och tilldelar medlemmar:
 
 2. Klicka på namnet på det ärende du skapade i listan med ärenden.
 
-3. Klicka på **Lägg till ikon Lägg** till på sidan Hantera det här **fallet** under ![ Hantera ](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **rollgrupper.**
+3. Lägg till rollgrupper som medlemmar i ärendet. Instruktioner finns i följande artiklar:
 
-    ![Lägga till en rollgrupp som medlem i ett eDiscovery-ärende](../media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
-  
-4. I listan över rollgrupper väljer du någon av rollgrupperna som du skapade i steg 3 och klickar på Lägg **till.**
+   - [Lägga till medlemmar i ett grundläggande eDiscovery-ärende](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-core-ediscovery-case)
 
-5. Spara **ändringen** genom att **klicka på Spara** i den utfäll plats du vill hantera det här ärendet.
+   - [Lägga till medlemmar i ett Advanced eDiscovery ärende](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 
 > [!NOTE]
 > När du lägger till en rollgrupp i ett ärende kan du bara lägga till de rollgrupper där du är medlem.
@@ -208,7 +206,7 @@ Med sökbehörighetsfilter kan du också styra vart innehåll dirigeras för exp
     |:-----|:-----|
     |NAM  <br/> |North American (datacenter finns i USA)  <br/> |
     |EUR  <br/> |Europa  <br/> |
-    |APC  <br/> |Asien och Stilla havet  <br/> |
+    |APC  <br/> |Asien/Stillahavsområdet  <br/> |
     |CAN <br/> |Kanada|
     |||
 
@@ -220,13 +218,13 @@ Med sökbehörighetsfilter kan du också styra vart innehåll dirigeras för exp
     |:-----|:-----|
     |NAM  <br/> |US  <br/> |
     |EUR  <br/> |Europa  <br/> |
-    |APC  <br/> |Asien och Stilla havet  <br/> |
+    |APC  <br/> |Asien/Stillahavsområdet  <br/> |
     |CAN  <br/> |US  <br/> |
-    |AUS  <br/> |Asien och Stilla havet  <br/> |
+    |AUS  <br/> |Asien/Stillahavsområdet  <br/> |
     |KOR  <br/> |Organisationens standarddatacenter  <br/> |
     |GBR  <br/> |Europa  <br/> |
-    |JPN  <br/> |Asien och Stilla havet  <br/> |
-    |IND  <br/> |Asien och Stilla havet  <br/> |
+    |JPN  <br/> |Asien/Stillahavsområdet  <br/> |
+    |IND  <br/> |Asien/Stillahavsområdet  <br/> |
     |Y.Y  <br/> |US  <br/> |
     |NOR  <br/> |Europa |
     |BRA  <br/> |Nordamerikas datacenter |
@@ -251,9 +249,9 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 Tänk på följande när du söker efter och exporterar innehåll i multigeobaserade miljöer.
   
-- **Parametern** Region styr inte sökningar av Exchange postlådor. Alla datacenter genomsöks när du söker i postlådor. Om du vill begränsa omfattningen för Exchange postlådor genomsöks använder du parametern **Filter** när du skapar eller ändrar ett filter för sökbehörigheter. 
+- Parametern **Region** kontrollerar inte sökningar i Exchange-postlådor. Alla datacenter genomsöks när du söker i postlådor. Om du vill begränsa omfattningen för Exchange postlådor genomsöks använder du parametern **Filter** när du skapar eller ändrar ett filter för sökbehörigheter. 
 
-- Om det är nödvändigt för en eDiscovery-hanterare att söka i flera SharePoint-regioner måste du skapa ett annat användarkonto för den eDiscovery-hanteraren att använda i filtret för sökbehörigheter för att ange den region där SharePoint-webbplatserna eller OneDrive-kontona finns. Mer information om hur du inställningar finns i avsnittet "Söka efter innehåll i SharePoint Multi-Geo miljö" i [Innehållssökning.](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment)
+- Om det är nödvändigt för en eDiscovery-hanterare att söka i flera SharePoint-regioner måste du skapa ett annat användarkonto för den eDiscovery-hanteraren att använda i filtret för sökbehörigheter för att ange den region där SharePoint-webbplatserna eller OneDrive-kontona finns. Mer information om hur du inställningar finns i avsnittet "Söka efter innehåll i SharePoint Multi-Geo miljö" i [Innehållssökning.](content-search-reference.md#searching-for-content-in-a-sharepoint-multi-geo-environment)
 
 - När du söker efter innehåll i SharePoint och  OneDrive dirigerar regionparametern sökningar till antingen den primära platsen eller satellitplatsen där eDiscovery-chefen kommer att utföra eDiscovery-undersökningar. Om en eDiscovery-hanterare söker SharePoint och OneDrive webbplatser utanför den region som anges i filtret för sökbehörigheter returneras inga sökresultat.
 

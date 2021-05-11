@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Innehåll som skapas av molnbaserade appar i Microsoft 365 lagras eller associeras med en användares Exchange Online postlåda. Det här innehållet kan sökas med Microsofts verktyg för eDiscovery.
-ms.openlocfilehash: 872e618486c273e07e8dcf98d61bbbb7d8f95051
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 3490571a31ea69c5a8ee641a4ccc46077aced014
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "52161844"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311010"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>Innehåll som lagrats Exchange Online eDiscovery-postlådor
 
@@ -31,13 +31,13 @@ I följande tabell visas de appar som antingen lagrar eller associerar data med 
 
 |Microsoft 365 appen|Beskrivning|
 |:---------|:---------|
-|Formulär|Formulär och svar i ett formulär lagras i filer som är bifogade i e-postmeddelanden och lagras i en dold mapp i postlådan för den användare som skapade formuläret. Formulär som har skapats före april 2020 lagras som en PDF-fil. Formulär som skapas efter 2020 lagras som en JSON-fil.  Svar på ett formulär lagras i en CSV-fil. När du exporterar innehåll från Formulär i en PST-fil finns dessa data i mappen **ApplicationDataRoot** i en undermapp med följande globalt unika identifierade (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87.** |
+|Formulär<sup>*</sup>|Formulär och svar i ett formulär lagras i filer som är bifogade i e-postmeddelanden och lagras i en dold mapp i postlådan för den användare som skapade formuläret. Formulär som har skapats före april 2020 lagras som en PDF-fil. Formulär som skapas efter 2020 lagras som en JSON-fil.  Svar på ett formulär lagras i en CSV-fil. När du exporterar innehåll från Formulär i en PST-fil finns dessa data i mappen **ApplicationDataRoot** i en undermapp med följande globalt unika identifierade (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87.** |
 |Microsoft 365-grupper|E-postmeddelanden, kalenderobjekt, kontakter (personer), anteckningar och uppgifter lagras i postlådan som är kopplad till en Microsoft 365 grupp.|
 |Outlook/Exchange Online|E-postmeddelanden, kalenderobjekt, kontakter (personer), anteckningar och uppgifter lagras i en användares postlåda.|
 |Kontakter|Kontakter i appen Kontakter (som är samma kontakter som de som är tillgängliga i Outlook) lagras i en användares postlåda.|
 |Klassschema|Planer som skapas i Klassschema lagras i postlådan för Microsoft 365 grupp som etableras när en ny plan skapas. Alias för grupppostlådan är namnet på planen.|
 |Skype för företag|Konversationer i Skype för företag lagras i mappen Konversationshistorik i en användares postlåda. Om postlådan för en deltagare i ett Skype-möte placeras i Bevarande av juridiska skäl eller tilldelas till en bevarandeprincip, behålls filer som är bifogade till ett möte i deltagarnas postlåda.|
-|Sway|Sway-yta lagras som en HTML-fil som bifogas i ett e-postmeddelande och lagras i en dold mapp i postlådan för den användare som skapade Sway-yta. När du exporterar innehåll från Sway i en PST-fil finns dessa data i mappen **ApplicationDataRoot** i en undermapp med namnet med följande GUID: **905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba.**|
+|Sway<sup>*</sup>|Sway-yta lagras som en HTML-fil som bifogas i ett e-postmeddelande och lagras i en dold mapp i postlådan för den användare som skapade Sway-yta. När du exporterar innehåll från Sway i en PST-fil finns dessa data i mappen **ApplicationDataRoot** i en undermapp med namnet med följande GUID: **905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba.**|
 |Uppgifter|Uppgifter i appen Uppgifter (som är samma uppgifter som de som är tillgängliga i Outlook) lagras i en användares postlåda.|
 |Teams|Konversationer som ingår i en Teams är kopplade till den Teams postlådan. Konversationer som ingår i chattlistan i Teams (kallas *även 1 x* N-chattar) kopplas till postlådan för de användare som deltar i chatten. Dessutom är sammanfattningsinformation för möten och samtal i en Teams kopplad till postlådor för användare som ringt in till mötet eller samtalet. När du söker efter Teams innehåll söker du efter innehåll i Teams-postlådan efter innehåll i kanalkonversationer och söker efter innehåll i användarpostlådor i 1 x N chattar.|
 |To-Do|Uppgifter (uppgifter som sparas i att göra-listor) i *To-Do-appen lagras* i en användares postlåda.|
@@ -45,4 +45,4 @@ I följande tabell visas de appar som antingen lagrar eller associerar data med 
 ||||
 
 > [!NOTE]
-> Om ett spärrat värde sätts på en postlåda (genom att använda innehåll i Core eDiscovery- och Advanced eDiscovery-fall), bevaras inte innehåll från Forms och Sway av spärrade eDiscovery- och Advanced eDiscovery-ärenden.
+> <sup>*</sup>För närvarande bevaras inte innehåll från det här programmet om ett spärrat värde sätts på en postlåda (genom att använda innehåll som sätts i core-eDiscovery- eller Advanced eDiscovery-fall).

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 60220d00ca1b612564b72103b9206e3d6d89dc60
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9c4f3da57796903fc22314574f389bcdd92ca4b3
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689455"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311994"
 ---
 # <a name="troubleshoot-siem-tool-integration-issues"></a>Felsöka problem med SIEM-verktygsintegrering
 
@@ -45,13 +45,13 @@ Om klienthemligheten går ut eller om du har tappat bort kopian som angavs när 
 
 1. Logga in på [Azure-hanteringsportalen](https://portal.azure.com).
 
-2. Välj **Azure Active Directory.**
+2. Välj **Azure Active Directory**.
 
 3. Välj klientorganisation.
 
 4. Klicka **på Appregistreringar.** Välj sedan programmet i programlistan.
 
-5. Välj  nyckelavsnittet, ange sedan en nyckelbeskrivning och ange hur lång nyckellängden ska vara.
+5. Välj **Certifikat & Secrets,** Klicka på Ny klienthemlighet, ange sedan en beskrivning och ange varaktigheten.
 
 6. Klicka på **Spara**. Nyckelvärdet visas.
 
@@ -63,7 +63,7 @@ Om du får ett felmeddelande när du försöker få en uppdateringstoken när du
 
 1. Logga in på [Azure-hanteringsportalen](https://ms.portal.azure.com).
 
-2. Välj **Azure Active Directory.**
+2. Välj **Azure Active Directory**.
 
 3. Välj klientorganisation.
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: I den här artikeln beskrivs hur du skapar och hanterar Advanced eDiscovery ärenden. Det första steget är att skapa ett ärende och börja använda Advanced eDiscovery funktioner.
-ms.openlocfilehash: d0f63bca90945c3dfe13b08fa0f1d139da8a9189
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 95e88bb071476de1ed66b3ffaa8942f0a9df89c2
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52161946"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311646"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>Skapa och hantera ett Advanced eDiscovery ärende
 
@@ -48,19 +48,17 @@ Så här skapar du ett ärende och lägger till medlemmar. Den användare som sk
 
    Det nya ärendet skapas och **Inställningar** i det nya ärendet visas.
 
-6. På panelen **& på** fliken **Inställningar** klickar du på **Markera** och sedan på **Uppdatera**.
+6. Klicka på & på fliken **Inställningar** behörighet **i** **Access.**
 
-7. Klicka **på Uppdatera**.
+7. På sidan **Hantera detta ärende,** under Hantera **medlemmar, klickar du på** Lägg till **för** att lägga till medlemmar i ärendet.
 
-8. På sidan **Hantera detta ärende,** under Hantera **medlemmar, klickar du på** Lägg till **för** att lägga till medlemmar i ärendet.
+8. I listan över personer markerar du kryssrutan bredvid namnen på de personer som du vill lägga till i ärendet. Som tidigare förklarats bör du se till att de personer som du lägger till i ärendet har tilldelats rätt eDiscovery-behörigheter.
 
-9. I listan över personer markerar du kryssrutan bredvid namnen på de personer som du vill lägga till i ärendet. Som tidigare förklarats bör du se till att de personer som du lägger till i ärendet har tilldelats rätt eDiscovery-behörigheter.
+9. När du har valt de personer som ska läggas till som medlemmar i ärendet klickar du på Lägg **till**.
 
-10. När du har valt de personer som ska läggas till som medlemmar i ärendet klickar du på Lägg **till**.
+10. Klicka på **Spara på sidan Hantera** det här ärendet för **att** spara den nya listan med ärendemedlemmar.
 
-11. Klicka på **Spara på sidan Hantera** det här ärendet för **att** spara den nya listan med ärendemedlemmar.
-
-12. Klicka på **fliken** Start för att gå till startsidan för ärendet.
+11. Klicka på **fliken** Start för att gå till startsidan för ärendet.
 
 ## <a name="manage-the-workflow"></a>Hantera arbetsflödet
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 89b8ac7d99cfcd4c5e5e647e5ba54e14184ef0bd
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 2bb1fde1bfd8ddfa358d1141c3821843e532a8bf
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688123"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52312006"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Köra ett identifieringstest på en nyligen onboarded Microsoft Defender för Endpoint-enhet 
 
@@ -31,7 +31,7 @@ ms.locfileid: "51688123"
 
 
 **Gäller för:**
-- Windows 10-versioner som stöds
+- Stöds Windows 10 versioner
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server, version 1803
@@ -55,7 +55,7 @@ Kör följande PowerShell-skript på en nyligen onboarded-enhet för att verifie
 3. När du uppmanas till det kopierar du och kör följande kommando:
 
    ```powershell
-   powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference= 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
+   powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
 Fönstret Kommandotolken stängs automatiskt. Om det lyckas markeras det som slutfört och en ny avisering visas i portalen för den onboarded enheten om ungefär 10 minuter.

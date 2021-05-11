@@ -18,26 +18,26 @@ search.appverid:
 - MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
-description: Använd Innehållssökning i kompatibilitetscentret för Microsoft 365 för att utföra riktade samlingar som ser till att objekten finns i en viss postlåda eller webbplatsmapp.
-ms.openlocfilehash: ea01386b7e52c05f8116caacddd6dec7baf12272
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+description: Använd Innehållssökning i kompatibilitetscentret för Microsoft 365 för att utföra en riktad samling som söker efter objekt i en viss postlåda eller webbplatsmapp.
+ms.openlocfilehash: cf0364d39a78e1bbbc062d85ce750d190fbbda5a
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "52162812"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311904"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Använda innehållssökning för riktade samlingar
 
-Funktionen Innehållssökning i kompatibilitetscentret för Microsoft 365 tillhandahåller inte något direkt sätt i användargränssnittet för att söka i specifika mappar i Exchange-postlådor eller på SharePoint och OneDrive för företag-webbplatser. Du kan emellertid söka i specifika mappar (kallas för riktad *samling)* genom att ange egenskapen mapp-ID för e-post eller sökväg (DocumentLink) för webbplatser i den faktiska sökfrågesyntaxen. Det kan vara användbart att använda innehållssökning för att utföra en riktad samling när du är säker på att objekt som svarar på ett ärende eller objekt med privilegierad åtkomst finns i en viss postlåda eller webbplatsmapp. Du kan använda skriptet i den här artikeln för att hämta mapp-ID för postlådemappar eller sökvägen (DocumentLink) för mappar på en SharePoint och OneDrive för företag webbplats. Sedan kan du använda mapp-ID:t eller sökvägen i en sökfråga för att returnera objekt som finns i mappen.
+Verktyget för innehållssökning i efterlevnadscentret för Microsoft 365 tillhandahåller inte något direkt sätt i användargränssnittet för att söka i specifika mappar i Exchange-postlådor eller på SharePoint- och OneDrive för företag-webbplatser. Du kan emellertid söka i specifika mappar (kallas för riktad *samling)* genom att ange egenskapen mapp-ID för e-post eller sökväg (DocumentLink) för webbplatser i den faktiska sökfrågesyntaxen. Det kan vara användbart att använda innehållssökning för att utföra en riktad samling när du är säker på att objekt som svarar på ett ärende eller objekt med privilegierad åtkomst finns i en viss postlåda eller webbplatsmapp. Du kan använda skriptet i den här artikeln för att hämta mapp-ID för postlådemappar eller sökvägen (DocumentLink) för mappar på en SharePoint och OneDrive för företag webbplats. Sedan kan du använda mapp-ID:t eller sökvägen i en sökfråga för att returnera objekt som finns i mappen.
 
 > [!NOTE]
 > För att returnera innehåll som finns i en mapp på en SharePoint- eller OneDrive för företag-webbplats använder skriptet i det här avsnittet den hanterade DocumentLink-egenskapen i stället för egenskapen Path. Egenskapen DocumentLink är mer robust än egenskapen Path eftersom den returnerar allt innehåll i en mapp, medan egenskapen Path inte returnerar vissa mediefiler.
 
 ## <a name="before-you-run-a-targeted-collection"></a>Innan du kör en riktad samling
 
-- Du måste vara medlem i rollgruppen för eDiscovery Manager i Säkerhets- & kompatibilitetscenter för att köra skriptet i steg 1. Mer information finns i Tilldela [eDiscovery-behörigheter.](assign-ediscovery-permissions.md)
+- Du måste vara medlem i rollgruppen för eDiscovery Manager i Säkerhets- & kompatibilitetscenter för att kunna köra skriptet i steg 1. Mer information finns i [Tilldela eDiscovery-behörigheter](assign-ediscovery-permissions.md).
 
-    Dessutom måste du vara tilldelad rollen E-postmottagare i Exchange Online organisation. Detta krävs för att köra cmdleten **Get-MailboxFolderStatistics,** som ingår i skriptet. Som standard tilldelas rollen E-postmottagare rollgrupperna Organisationshantering och Mottagarhantering i Exchange Online. Mer information om hur du tilldelar behörigheter Exchange Online i Hantera [rollgruppsmedlemmar.](/exchange/manage-role-group-members-exchange-2013-help) Du kan också skapa en anpassad rollgrupp, tilldela rollen E-postmottagare till den och sedan lägga till de medlemmar som behöver köra skriptet i steg 1. Mer information finns i [Hantera rollgrupper.](/Exchange/permissions-exo/role-groups)
+- Du måste också ha tilldelats rollen E-postmottagare i Exchange Online organisation. Detta krävs för att köra cmdleten **Get-MailboxFolderStatistics,** som ingår i skriptet. Som standard tilldelas rollen E-postmottagare rollgrupperna Organisationshantering och Mottagarhantering i Exchange Online. Mer information om hur du tilldelar behörigheter Exchange Online i Hantera [rollgruppsmedlemmar.](/exchange/manage-role-group-members-exchange-2013-help) Du kan också skapa en anpassad rollgrupp, tilldela rollen E-postmottagare till den och sedan lägga till de medlemmar som behöver köra skriptet i steg 1. Mer information finns i [Hantera rollgrupper.](/Exchange/permissions-exo/role-groups)
 
 - Skriptet i den här artikeln har stöd för modern autentisering. Du kan använda skriptet som det är om du är en Microsoft 365 eller en Microsoft 365 GCC organisation. Om du är en Office 365 Germany-organisation, Microsoft 365 GCC High-organisation eller en Microsoft 365 DoD-organisation måste du redigera skriptet för att kunna köra det. Du måste specifikt redigera linjen och använda `Connect-ExchangeOnline` *ExchangeEnvironmentName-parametern* (och rätt värde för organisationstypen) för att ansluta till Exchange Online PowerShell.  Du måste också redigera linjen och använda parametrarna `Connect-IPPSSession` *ConnectionUri* och *AzureADAuthorizationEndpointUri* (och lämpliga värden för organisationstypen) för att ansluta till Security & Compliance Center PowerShell. Mer information finns i exemplen i [PowerShell Anslut](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) Exchange Online och Anslut till PowerShell för [& Compliance Center.](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)
 

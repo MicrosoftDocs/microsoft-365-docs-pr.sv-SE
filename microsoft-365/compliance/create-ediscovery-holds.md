@@ -16,25 +16,25 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Du kan skapa ett bevarande som är associerat med en bas-eDiscovery-fall för att bevara innehåll som kan vara relevant för en undersökning.
-ms.openlocfilehash: 1026de3b5357c3417a00a69b4ae6890e8036c091
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+description: Du kan skapa ett bevarande som är kopplat till ett grundläggande e-dataidentifieringsfall i Microsoft 365 för att bevara innehåll som är relevant för en undersökning eller ett juridiskt ärende.
+ms.openlocfilehash: 61bbe2e8d2713c2960105e2ec4eb4beffcd4306e
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "52162611"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311628"
 ---
 # <a name="create-an-ediscovery-hold"></a>Skapa en eDiscovery-hold
 
-Du kan använda ett grundläggande eDiscovery-ärende för att skapa innehåll som kan vara relevant för ärendet. Du kan skapa ett väntande Exchange postlådor OneDrive för företag konton för personer som du undersöker i ärendet. Du kan också skapa ett hold för postlådor och webbplatser som är kopplade till Microsoft Teams, Office 365 Grupper och Yammer Grupper. När du placerar innehållsplatser i en lista behålls innehållet tills du tar bort det från innehållsplatsen eller tills du tar bort det.
+Du kan använda ett grundläggande eDiscovery-ärende för att skapa innehåll som kan vara relevant för ärendet. Du kan skapa ett väntande Exchange postlådor OneDrive för företag konton för personer som du undersöker i ärendet. Du kan också skapa ett hold för postlådor och webbplatser som är kopplade till Microsoft Teams, Office 365 Grupper och Yammer Grupper. När du placerar innehållsplatser som platser i lager behålls innehållet tills du tar bort innehållsplats från rymmer eller tills du tar bort fråntagna platser.
 
-När du har skapat ett eDiscovery-håll kan det ta upp till 24 timmar innan holden verkställs. 
+När du har skapat ett eDiscovery-håll kan det ta upp till 24 timmar innan holden verkställs.
 
 När du skapar ett område kan du välja mellan följande alternativ för att begränsa innehållet som bevaras på de angivna innehållsplatserna:
   
-- Du skapar ett oändligt område där allt innehåll på de angivna platserna har satts på en plats. Alternativt kan du skapa ett frågebaserat område där endast innehållet på de angivna platserna som matchar en sökfråga har satts i hold-läge.
+- Skapa ett oändligt håll där allt innehåll på de angivna platserna har satts på en hold-plats. Alternativt kan du skapa ett frågebaserat område där endast innehållet på de angivna platserna som matchar en sökfråga har satts i hold-läge.
 
-- Du kan ange ett datumintervall för att endast bevara innehållet som har skickats, tagits emot eller skapats inom det datumintervallet. Alternativt kan du hålla allt innehåll på angivna platser oavsett när det skickades, togs emot eller skapades.
+- Ange ett datumintervall för att endast bevara innehållet som har skickats, tagits emot eller skapats inom det datumintervallet. Alternativt kan du hålla allt innehåll på angivna platser oavsett när det skickades, togs emot eller skapades.
   
 ## <a name="how-to-create-an-ediscovery-hold"></a>Så här skapar du ett eDiscovery-håll
 
@@ -44,44 +44,44 @@ Så här skapar du ett eDiscovery-värde som är kopplat till ett Core eDiscover
 
 2. I det vänstra navigeringsfönstret i Microsoft 365 kompatibilitetscenter klickar du på Visa alla **och** sedan på **eDiscovery > Core**.
 
-3. På sidan **Bas-e-dataidentifiering** markerar du det ärende du vill skapa plats för och klickar sedan på **Öppna ärende.**
+3. På sidan **Bas-eDiscovery** klickar du på namnet på det ärende som du vill skapa ett sådant ärende i.
 
-4. På startsidan **för** ärendet klickar du på fliken **Spärrar.**
+4. På startsidan **för** ärendet klickar du på **fliken** Håll.
   
-5. På sidan **Som innehåller** klickar du på **Skapa**.
+5. På sidan **Håll** klickar du på **Skapa**.
 
 6. På sidan **Namnge din hold-guide** ger du plats åt sidan ett namn, lägger till en valfri beskrivning och klickar sedan på **Nästa.** Namnet på det hållna måste vara unikt inom organisationen.
 
-7. På **sidan Innehållsplatser** väljer du de innehållsplatser som du vill skapa en plats för. Du kan placera postlådor, webbplatser och gemensamma mappar i arkivet.
+7. På **sidan Välj platser** i guiden Välj platser väljer du de innehållsplatser som du vill skapa en plats för. Du kan placera postlådor, webbplatser och gemensamma mappar i arkivet.
 
-    ![Välj platser för innehåll som ska vara på plats](../media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
+    ![Välj platser för innehåll som ska vara på plats](../media/eDiscoveryHoldLocations.png)
   
-   1. **Postlådeplatser** – Klicka på Välj **användare,** grupper eller team och klicka sedan på Välj **användare,** grupper eller team igen för att ange vilka postlådor som ska vara på plats. Använd sökrutan för att hitta användarnas postlådor och distributionsgrupper (för att skapa ett väntande på postlådorna för gruppmedlemmar). Du kan också placera ett is i den associerade postlådan för en Microsoft-grupp, Office 365 grupp eller Yammer grupp. Markera kryssrutan användare, grupp och grupp, klicka **på Välj** och klicka sedan på **Klar**.
+   1. **Exchange postlådor**: Ställ in växlingsknappen på På och klicka sedan på Välj  **användare,** grupper eller team för att ange vilka postlådor som ska vara i paus. Använd sökrutan för att hitta användarnas postlådor och distributionsgrupper (för att skapa ett väntande på postlådorna för gruppmedlemmar). Du kan också placera ett is i den associerade postlådan för ett Microsoft-team, en Office 365 grupp och en Yammer grupp. Mer information om programdata som bevaras när en postlåda ställs i förvaring finns i Innehåll som lagrats i postlådor [för eDiscovery.](what-is-stored-in-exo-mailbox.md)
 
-   1. **Webbplatser – Klicka** på Välj **webbplatser** och klicka sedan på Välj **webbplatser** igen för att ange vilka SharePoint OneDrive-konton som ska vara i lager. Skriv URL-adressen för varje webbplats som du vill skapa en plats för. Du kan också lägga till URL-adressen för SharePoint för ett Microsoft-team, en Office 365 grupp eller en Yammer grupp. Klicka **på** Välj och sedan på **Klar**.
+   1. **SharePoint webbplatser**: Ställ in växlingsknappen på  På och klicka sedan på Välj webbplatser för att SharePoint ange vilka OneDrive-konton som ska vara i paus.  Skriv URL-adressen för varje webbplats som du vill skapa en plats för. Du kan också lägga till URL-adressen för SharePoint för ett Microsoft-team, en Office 365 grupp eller en Yammer grupp.
   
-   1. **Exchange gemensamma mappar.** Flytta växlingsknappen Växlingsknapp till positionen Alla för att sätta alla gemensamma mappar i ![ ](../media/scc-toggle-on.png) Exchange Online organisationen på plats.  Du kan inte välja att vissa gemensamma mappar ska vara på plats. Låt växlingsknappen vara inställd **på** Ingen om du inte vill använda gemensamma mappar.
+   1. **Exchange mappar :** Ställ in växlingsknappen på **På** om du vill att alla gemensamma mappar Exchange Online organisationen ska vara i holden. Du kan inte välja att vissa gemensamma mappar ska vara på plats. Låt växlingsknappen vara inaktiverad om du inte vill använda gemensamma mappar.
 
    > [!NOTE]
-   > Du måste lägga till minst en innehållsplats i rymmert. Annars kommer hållna eDiscovery-innehåll att visa att inga objekt är på plats.
+   > Du måste lägga till minst en innehållsplats i rymmert. Annars visar statistiken för eDiscovery-information om att inga objekt är på plats.
 
-8. När du är klar med att lägga till innehållsplatser i rymmer klickar du på **Nästa**.
+8. När du är klar med att lägga till platser i isen klickar du på **Nästa**.
 
-9. Så här skapar du ett frågebaserat tillstånd med villkor: Annars klickar du på Nästa om du vill behålla allt innehåll på de angivna **innehållsplatserna.**
+9. Så här skapar du en frågebaserad holda med nyckelord eller villkor. Klicka på Nästa om du vill behålla allt innehåll på de angivna **innehållsplatserna.**
 
-    ![Skapa ett frågebaserat tillstånd med villkor](../media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
+    ![Skapa ett frågebaserat tillstånd med nyckelord och villkor](../media/eDiscoveryHoldQuery.png)
   
-    1. Skriv en sökfråga **i** rutan under Nyckelord så att endast det innehåll som uppfyller sökvillkoren bevaras. Du kan ange nyckelord, egenskaper för e-postmeddelanden och dokumentegenskaper, till exempel filnamn. Du kan också använda mer komplexa frågor som använder en boolesk operator som **AND**, **OR** eller **NOT.**
+    1. I rutan under **Nyckelord skriver du** en fråga för att bevara endast det innehåll som matchar frågevillkoret. Du kan ange nyckelord, egenskaper för e-postmeddelanden och webbplatsegenskaper, till exempel filnamn. Du kan också använda mer komplexa frågor som använder en boolesk operator som **AND**, **OR** eller **NOT.**
 
-    1. Klicka **på Lägg till** villkor om du vill lägga till ett eller flera villkor för att begränsa sökningen efter holden. Varje villkor lägger till en sats i KQL-sökfrågan som skapas och körs när du skapar villkoret. Du kan till exempel ange ett datumintervall så att e-post- eller webbplatsdokument som skapats inom det datumintervallet sätts på plats. Ett villkor är logiskt kopplat till nyckelordsfrågan (anges i **rutan Nyckelord)** av **OPERATORN.** Det innebär att objekt måste uppfylla både nyckelordsfrågan och villkoret som ska bevaras.
+    2. Klicka **på Lägg till** villkor om du vill lägga till ett eller flera villkor för att begränsa frågan för villkoret. Varje villkor lägger till en sats i KQL-sökfrågan som skapas och körs när du skapar villkoret. Du kan till exempel ange ett datumintervall så att e-postmeddelanden eller webbplatsdokument som skapades inom datumintervallet bevaras. Ett villkor är logiskt kopplat till nyckelordsfrågan (anges i **rutan Nyckelord)** och andra villkor av **OCH-operatorn.** Det innebär att objekt måste uppfylla både nyckelordsfrågan och villkoret som ska bevaras.
 
-    Mer information om hur du skapar en sökfråga och använder villkor finns [i Nyckelordsfrågor och sökvillkor för Innehållssökning.](keyword-queries-and-search-conditions.md)
+    Mer information om hur du skapar en sökfråga och använder villkor finns [i Nyckelordsfrågor och sökvillkor för eDiscovery.](keyword-queries-and-search-conditions.md)
 
 10. När du har konfigurerat ett frågebaserat håll klickar du på **Nästa.**
 
-11. Granska inställningarna (och redigera dem om det behövs) och klicka sedan på **Skapa det här standardinställningarna**.
+11. Granska dina inställningar (och redigera dem om det behövs) och klicka sedan på **Skicka**.
 
-## <a name="query-based-holds-placed-on-site-documents"></a>Frågebaserade spärrade dokument i webbplatsdokument
+## <a name="query-based-holds-placed-on-sites"></a>Frågebaserade spärrade platser på webbplatser
 
 Tänk på följande när du placerar ett frågebaserat eDiscovery-kvar på dokument som finns på SharePoint webbplatser:
 
@@ -93,7 +93,7 @@ Tänk på följande när du placerar ett frågebaserat eDiscovery-kvar på dokum
 
 När du har skapat ett eDiscovery-hold visas information om det nya holden på den utfällande sidan för det markerade antalet. Den här informationen omfattar antalet postlådor och webbplatser som är på plats och statistik om innehållet som har satts i is hold, t.ex. det totala antalet och storleken på objekt som har placerats som väntande och den senaste gången statistik för hållen beräknades. Med hjälp av denna statistik över hållen kan du se hur mycket innehåll som är relaterat till ärendet bevaras.
   
-![Hold statistics](../media/575cfe0a-9210-4ae4-8df8-65665d66712e.png)
+![Hold statistics](../media/eDiscoveryHoldStatistics.png)
   
 Tänk på följande när det gäller statistik för eDiscovery-plats:
   
@@ -111,8 +111,6 @@ Tänk på följande när det gäller statistik för eDiscovery-plats:
 
 När du [söker efter innehåll](search-for-content-in-core-ediscovery.md) i ett grundläggande eDiscovery-ärende kan du snabbt konfigurera sökningen för att bara söka på de innehållsplatser som är kopplade till ärendet.
 
-![Platser som är väntande](../media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
-
 Välj alternativet **Platser som är väntande** för att söka efter allt innehåll som har satts i lager. Om ärendet innehåller flera eDiscovery-innehåll kommer innehållsplatserna från allt innehåll att genomsökas när du väljer det här alternativet. Om en innehållsplats dessutom placerades på ett frågebaserat håll kommer endast de objekt som överensstämmer med frågan om att innehålla att sökas igenom när du kör sökningen. Med andra ord returneras endast det innehåll som matchar både villkoret för kvarande och sökvillkoren sökresultatet. Om en användare till exempel placerades i ett frågebaserat ärende som bevarar objekt som skickades eller skapades före ett visst datum skulle bara de objekten genomsökas. Detta sker genom att koppla ärende hold query och sökfrågan av en **OCH-operator.**
 
 Här är några andra saker att tänka på när du söker efter platser vid eDiscovery-hold:
@@ -123,22 +121,22 @@ Här är några andra saker att tänka på när du söker efter platser vid eDis
 
 - Om flera eDiscovery-platser som sätts på samma plats i ett e-dataidentifieringsfall och du väljer att söka platser som är spärrade är det maximala antalet nyckelord för sökfrågan 500. Det beror på att sökningen kombinerar alla frågebaserade rymmer genom att använda **operatorn** ELLER. Om det finns fler än 500 nyckelord i de kombinerade frågorna om spärrade frågor och sökfrågan genomsöks allt innehåll i postlådan, inte bara det innehåll som matchar det frågebaserade ärende som finns.
 
-- Om ett håll för e-dataidentifiering har statusen Aktivera kan du fortfarande söka efter platser som är i väntläge medan väntningen är aktiverad. 
+- Om ett lager för eDiscovery har statusen På **(väntande)** kan du fortfarande söka efter platser som är i vänteläge medan vänteläget är aktiverat.
 
 ## <a name="preserve-content-in-microsoft-teams"></a>Bevara innehåll i Microsoft Teams
 
-Konversationer som ingår i en Microsoft Teams-kanal lagras i postlådan som är kopplad till Microsoft Team. På samma sätt lagras filer som gruppmedlemmar delar i en kanal på teamets SharePoint webbplats. Därför måste du placera grupppostlådan och SharePoint på eDiscovery-plats för att bevara konversationer och filer i en kanal.
+Konversationer som ingår i en Microsoft Teams-kanal lagras i postlådan som är kopplad till Microsoft Team. På samma sätt lagras filer som teammedlemmar delar i en kanal på teamets SharePoint-webbplats. Därför måste du placera grupppostlådan och SharePoint på eDiscovery-plats för att bevara konversationer och filer i en kanal.
 
 Alternativt kan lagras konversationer som ingår i chattlistan i Teams (kallas *1:1-chattar* eller *1:N* gruppchattar) i postlådorna för de användare som deltar i chatten. Och filer som användare delar i chattkonversationer lagras OneDrive användarens konto som delar filen. Du måste därför lägga till de enskilda användarpostlådorna och OneDrive-konton i ett eDiscovery-bevarande för att bevara konversationer och filer i chattlistan. Det är en bra idé att sätta ett område på postlådorna för medlemmar i ett Microsoft-team, förutom att placera grupppostlådan och webbplatsen på plats.
 
 > [!NOTE]
-> Om organisationen har en Exchange-hybriddistribution (eller din organisation synkroniserar en lokal Exchange-organisation med Office 365) och har aktiverat Microsoft Teams kan lokala användare använda Teams-chattprogrammet och delta i privat chattar och 1:N-gruppchattar. De här konversationerna lagras i molnbaserad lagring som är kopplat till en lokal användare. Om en lokal användare sätts på ett eDiscovery-område bevaras Teams-chattinnehållet i det molnbaserade lagringsutrymmet. Mer information finns i [Söka Teams dina chattdata för lokala användare.](search-cloud-based-mailboxes-for-on-premises-users.md)
+> Om organisationen har en Exchange-hybriddistribution (eller din organisation synkroniserar en lokal Exchange-organisation med Office 365) och har aktiverat Microsoft Teams kan lokala användare använda Teams-chattprogrammet och delta i privat chattar och 1:N-gruppchattar. De här konversationerna lagras i molnbaserad lagring som är kopplat till en lokal användare. Om en lokal användare sätts på ett eDiscovery-område bevaras Teams-chattinnehållet i det molnbaserade lagringsutrymmet. Mer information finns i [Söka efter Teams chattdata för lokala användare](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 Mer information om att bevara Teams innehåll finns i Skapa en Microsoft Teams användare eller ett juridiskt [team.](/MicrosoftTeams/legal-hold)
 
 ### <a name="preserve-card-content"></a>Bevara kortinnehåll
 
-På samma sätt lagras kortinnehåll som genereras av appar i Teams-kanaler, 1:1-chattar och 1:N-gruppchattar i postlådor och bevaras när en postlåda sätts på ett eDiscovery-förvaring. Ett *kort* är en behållare för användargränssnittet för korta innehållsdelar. Kort kan ha flera egenskaper och bifogade filer och kan innehålla knappar som utlöser kortåtgärder. Mer information finns i [Kort](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Precis som Teams innehåll, där kortinnehållet lagras, baseras på var kortet har använts. Innehåll för kort som används i Teams kanal lagras i Teams grupppostlådan. Kortinnehållet för 1:1- och 1xN-chattar lagras i chattdeltagarnas postlådor.
+På samma sätt lagras kortinnehåll som genereras av appar i Teams-kanaler, 1:1-chattar och 1:N-gruppchattar i postlådor och bevaras när en postlåda sätts på ett eDiscovery-förvaring. Ett *kort* är en användargränssnittsbehållare för ett litet innehåll. Kort kan ha flera egenskaper och bifogade filer och kan innehålla knappar som utlöser kortåtgärder. Mer information finns i [Kort](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Precis som annat Teams-innehåll beror lagringen av kortinnehållet på var kortet användes. Innehållet för kort som används i en Teams-kanal lagras i Teams-gruppostlådan. Kortinnehållet för enskilda chattar och gruppchattar lagras i chattdeltagarnas postlådor.
 
 ### <a name="preserve-meeting-and-call-information"></a>Bevara mötesinformation och samtalsinformation
 
@@ -150,7 +148,7 @@ Från och med februari 2020 har vi också aktiverat möjligheten att bevara inne
 
 ### <a name="preserve-wiki-content"></a>Bevara wiki-innehåll
 
-Alla team- och teamkanaler innehåller även en Wiki för anteckningar och samarbete. Wiki-innehållet sparas automatiskt i en fil med .mht-format. Den här filen lagras Teams Wiki Data-dokumentbiblioteket på teamets SharePoint webbplats. Du kan bevara wiki-innehållet genom att lägga till teamets webbplats SharePoint ett eDiscovery-område.
+Alla team- och teamkanaler innehåller även en Wiki för anteckningar och samarbete. Wiki-innehållet sparas automatiskt i en MHT-fil. Den här filen lagras i dokumentbiblioteket för Teams-wikidata på teamets SharePoint-webbplats. Du kan bevara wiki-innehållet genom att lägga till teamets webbplats SharePoint ett eDiscovery-område.
 
 > [!NOTE]
 > Den 22 juni 2017 släpptes funktionen för att bevara Wiki-innehåll för en team- eller teamkanal (när du placerar teamets SharePoint-webbplats på plats). Om en gruppwebbplats är på plats behålls Wiki-innehållet från och med det datumet. Men om en gruppwebbplats är på plats och wiki-innehållet togs bort före den 22 juni 2017, behålls inte Wiki-innehållet.
@@ -175,25 +173,25 @@ Tänk på följande när du placerar både Teams och Office 365 grupper i ett eD
     ```
 
     > [!NOTE]
-    > Om du vill köra **cmdlet:en Get-UnifiedGroup** måste du ha tilldelats rollen View-Only-mottagare i Exchange Online eller vara medlem i en rollgrupp som har tilldelats rollen View-Only Mottagare. 
+    > För att kunna köra cmdleten **Get-UnifiedGroup** måste du ha tilldelats rollen View-Only Recipients i Exchange Online eller vara medlem i en rollgrupp som har tilldelats rollen View-Only Recipients. 
   
 - När en användares postlåda genomsöks genomsöks inte Office 365 grupp som användaren är medlem i. Och när du placerar en grupp- eller Office 365-grupp i eDiscovery-område är det endast grupppostlådan och gruppwebbplatsen som är väntad. Postlådorna och OneDrive för företag gruppmedlemmarna är inte undantagna om du inte uttryckligen lägger till dem i eDiscovery-undantagen. Om du av juridiska skäl måste använda en grupp- eller Office 365-grupp som grupp kan du lägga till postlådorna och OneDrive-kontona för grupp- eller gruppmedlemmar i samma grupp.
 
-- Om du vill visa en lista över medlemmar i Office 365 grupp kan  du visa egenskaperna på sidan Grupper i Microsoft 365 administrationscenter. Alternativt kan du köra följande kommando i Exchange Online PowerShell:
+- Om du vill visa en lista över medlemmar i Office 365 grupp kan  du visa egenskaperna på sidan Grupper i Microsoft 365 administrationscenter. Eller så kan du köra följande kommando i Exchange Online PowerShell:
 
     ```powershell
     Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
     ```
 
     > [!NOTE]
-    > Om du vill köra cmdleten **Get-UnifiedGroupLinks** måste du ha tilldelats rollen View-Only-mottagare i Exchange Online eller vara medlem i en rollgrupp som har tilldelats rollen View-Only Mottagare.
+    > För att kunna köra cmdleten **Get-UnifiedGroupLinks** måste du ha tilldelats rollen View-Only Recipients i Exchange Online eller vara medlem i en rollgrupp som har tilldelats rollen View-Only Recipients.
 
 ## <a name="preserve-content-in-onedrive-accounts"></a>Bevara innehåll i OneDrive konton
 
-Om du vill samla in en lista med URL:er för OneDrive för företag-webbplatserna i organisationen så att du kan lägga till dem i ett väntande eller söka kopplat till ett e-dataidentifieringsfall, se Skapa en lista över alla [OneDrive platser i organisationen.](/onedrive/list-onedrive-urls) Skriptet i den här artikeln skapar en textfil som innehåller en lista över alla OneDrive webbplatser i organisationen. För att kunna köra det här skriptet måste du installera och använda SharePoint Online Management Shell. Lägg till URL-adressen för organisationens Min webbplats-domän till varje OneDrive webbplats som du vill söka i. Det här är den domän som innehåller alla OneDrive; till exempel `https://contoso-my.sharepoint.com` . Här är ett exempel på en URL-adress för en användares OneDrive webbplats: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com` .
+Om du vill samla in en lista med URL:er för OneDrive för företag-webbplatserna i organisationen så att du kan lägga till dem i ett väntande eller söka kopplat till ett e-dataidentifieringsfall, se Skapa en lista över alla [OneDrive platser i organisationen.](/onedrive/list-onedrive-urls) Skriptet i den här artikeln skapar en textfil som innehåller en lista över alla OneDrive webbplatser i organisationen. Om du vill köra det här skriptet måste du installera och använda SharePoint Online Management Shell. Se till att du lägger till URL-adressen för organisationens Min Webbplats-domän för alla OneDrive-webbplatser som du vill söka på. Det här är domänen som innehåller alla dina OneDrive-webbplatser, till exempel `https://contoso-my.sharepoint.com`. Exempel på en URL-adress för en användares OneDrive-webbplats: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
 
 > [!IMPORTANT]
-> URL-adressen för en användares OneDrive konto innehåller användarens huvudnamn (UPN) (till `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` exempel). I de sällsynta fall då en persons UPN ändras ändras även OneDrive URL:en så att det nya UPN ingår. Om en användares OneDrive-konto är en del av ett eDiscovery-konto, gammalt och användarens UPN ändras, måste du uppdatera tillägget och du måste uppdatera tillägget och lägga till användarens nya URL för OneDrive och ta bort den gamla. Mer information finns i Hur [UPN-ändringar påverkar OneDrive URL.](/onedrive/upn-changes)
+> URL-adressen för en användares OneDrive konto innehåller användarens huvudnamn (UPN) (till `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` exempel). I de sällsynta fall då en persons UPN ändras ändras även OneDrive URL:en så att det nya UPN ingår. Om en användares OneDrive-konto är en del av ett eDiscovery-konto, gammalt och användarens UPN ändras, måste du uppdatera tillägget och du måste uppdatera tillägget och lägga till användarens nya URL för OneDrive och ta bort den gamla. Mer information finns i [Hur UPN-ändringar påverkar OneDrive-URL:en](/onedrive/upn-changes).
 
 ## <a name="removing-content-locations-from-an-ediscovery-hold"></a>Ta bort innehållsplatser från en eDiscovery-plats
 
@@ -222,10 +220,10 @@ I följande tabell finns begränsningar för eDiscovery-ärenden och e-dataident
   | Beskrivning av gräns | Gräns |
   |:-----|:-----|
   |Maximalt antal ärenden för en organisation.  <br/> |Ingen gräns  <br/> |
-  |Maximalt antal eDiscovery-rymmer för en organisation.  <br/> |10,000  <br/> |
-  |Maximalt antal postlådor i ett enstaka eDiscovery-hold. Den här gränsen omfattar totalt antal användarpostlådor och postlådorna som är kopplade Microsoft 365 grupper, Microsoft Teams och Yammer grupper.  <br/> |1,000  <br/> |
+  |Maximalt antal eDiscovery-rymmer för en organisation.  <br/> |10 000  <br/> |
+  |Maximalt antal postlådor i ett enstaka eDiscovery-hold. Den här gränsen omfattar totalt antal användarpostlådor och postlådorna som är kopplade Microsoft 365 grupper, Microsoft Teams och Yammer grupper.  <br/> |1 000  <br/> |
   |Maximalt antal webbplatser i ett enstaka eDiscovery-hold. Den här gränsen omfattar det totala antalet OneDrive för företag, SharePoint webbplatser och webbplatser som är kopplade till grupper Microsoft 365, Microsoft Teams och Yammer grupper.  <br/> |100  <br/> |
-  |Maximalt antal ärenden som visas på eDiscovery-startsidan och det maximala antalet objekt som visas på flikarna Spärrar, Sökningar och Exportera i ett ärende. <sup>1</sup> |1,000|
+  |Maximalt antal ärenden som visas på eDiscovery-startsidan och det maximala antalet objekt som visas på flikarna Spärrar, Sökningar och Exportera i ett ärende. <sup>1</sup> |1 000|
   |||
 
    > [!NOTE]

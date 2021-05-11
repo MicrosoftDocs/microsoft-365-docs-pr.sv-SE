@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: ''
 description: Under en undersökning kan du använda knappen Försök igen för att lösa innehållssökningar som har fel på innehållsplatsen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b3aed9c1d2d1fe3c40adb64b4854ef359f931bcb
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: fb85a882ef111aa38a73dbe155a9ad0ef57dd3de
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "52161595"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311826"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Försök att försöka med en innehållssökning igen för att lösa ett innehållsplatsfel
 
@@ -60,7 +60,7 @@ Här är ytterligare orsaker till fel på innehållsplatsen och några tips som 
 
 - Sökfrågan kan hämta för mycket innehåll från postlådan. Om möjligt kan du försöka begränsa sökningens omfattning med hjälp av nyckelord, datumintervall och sökvillkor.
 
-- För många nyckelord eller nyckelordsfraser när du skapar en sökfråga med hjälp av [nyckelordslistan](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-content-searches). När du kör en sökfråga som använder listan nyckelord kör tjänsten i princip en separat sökning för varje rad i nyckelordslistan så att statistik kan skapas. Om du använder nyckelordslistan i sökfrågor minimerar du antalet rader i nyckelordslistan eller delar upp antalet nyckelord i mindre listor och skapar olika sökningar för varje nyckelordslista.
+- För många nyckelord eller nyckelordsfraser när du skapar en sökfråga med hjälp av [nyckelordslistan](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-searches). När du kör en sökfråga som använder listan nyckelord kör tjänsten i princip en separat sökning för varje rad i nyckelordslistan så att statistik kan skapas. Om du använder nyckelordslistan i sökfrågor minimerar du antalet rader i nyckelordslistan eller delar upp antalet nyckelord i mindre listor och skapar olika sökningar för varje nyckelordslista.
 
   > [!NOTE]
   > För att minska problemen som orsakas av stora nyckelordslistor är du nu begränsad till högst 20 rader i nyckelordslistan för en sökfråga.

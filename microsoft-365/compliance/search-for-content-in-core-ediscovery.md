@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Du kan söka efter innehåll som kan vara relevant för ett grundläggande eDiscovery-ärende.
-ms.openlocfilehash: d17a9d16643ec9077e02b5438597237b80f09af5
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+description: Sök efter innehåll som kan vara relevant för ett grundläggande eDiscovery-ärende.
+ms.openlocfilehash: 8d2e2a20135312a8f111a071abbe77b03b8e8363
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "52161567"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311783"
 ---
 # <a name="search-for-content-in-a-core-ediscovery-case"></a>Söka efter innehåll i ett grundläggande eDiscovery-ärende
 
@@ -30,62 +30,56 @@ När ett grundläggande e-dataidentifieringsfall skapas och intressanta personer
 
 Så här skapar du en grundläggande eDiscovery-sökning:
   
-1. Gå till [https://compliance.microsoft.com](https://compliance.microsoft.com) och logga in med inloggningsuppgifterna för användarkontot som har tilldelats lämpliga eDiscovery-behörigheter.
+1. Gå till och logga in med autentiseringsuppgifterna för användarkontot som har tilldelats lämpliga <https://compliance.microsoft.com> eDiscovery-behörigheter och är medlem i ärendet.
 
 2. I det vänstra navigeringsfönstret i Microsoft 365 kompatibilitetscenter klickar du på Visa alla **och** sedan på **eDiscovery > Core**.
 
 3. På sidan **Bas-e-dataidentifiering** markerar du det ärende som du vill skapa en associerad sökning i och klickar sedan på **Öppna ärende.**
 
-4. På **startsidan för** ärendet klickar du på **fliken** Sökningar.
+4. På startsidan **för** ärendet klickar du på fliken **Sökningar** och sedan på **Ny sökning**.
+
+   ![Klicka på Ny sökning för att skapa en grundläggande eDiscovery-sökning](../media/CoreeDiscoverySearch1.png)
+
+   > [!NOTE]
+   > Med **alternativet Sök efter ID kan** du söka efter specifika e-postmeddelanden och andra postlådeobjekt med hjälp av en lista Exchange ID:n. Om du vill skapa en sökning med en ID-lista skickar du en fil med kommaavgränsade värden (CSV) som identifierar de specifika postlådeobjekt som du vill söka efter. Anvisningar finns i [Förbereda en CSV-fil för en ID-listsökning](csv-file-for-an-id-list-content-search.md).
+
+5. Skriv **ett namn för** sökningen i guiden Ny sökning och en valfri beskrivning som hjälper dig att identifiera sökningen. Namnet på sökningen måste vara unikt i din organisation.
+
+6. På **sidan Platser** väljer du de innehållsplatser som du vill söka efter. Du kan söka i postlådor, webbplatser och gemensamma mappar.
+
+    ![Välj platser för innehåll som ska vara på plats](../media/ContentSearchLocations.png)
   
-5. Klicka på **Ny** sökning på **sidan Sök.**
+   1. **Exchange postlådor**: Ställ in växlingsknappen på På och klicka sedan på Välj  **användare,** grupper eller team för att ange vilka postlådor som ska vara i paus. Använd sökrutan för att hitta användarnas postlådor och distributionsgrupper (för att skapa ett väntande på postlådorna för gruppmedlemmar). Du kan också söka i postlådan som är kopplad till ett Microsoft Team (efter kanalmeddelanden), Office 365 Grupp och Yammer Grupp. Mer information om programdata som lagras i postlådor finns i [Innehåll lagrat i postlådor för eDiscovery.](what-is-stored-in-exo-mailbox.md)
 
-6. På sidan **Ny sökning** kan du lägga till nyckelord och villkor för att skapa sökfrågan. 
-
-    ![Ny sökning](../media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
+   2. **SharePoint webbplatser**: Ställ in växlingsknappen på  På och klicka sedan på Välj webbplatser för att SharePoint ange vilka OneDrive-konton som ska vara i paus.  Skriv URL-adressen för varje webbplats som du vill skapa en plats för. Du kan också lägga till URL-adressen för SharePoint-webbplats för ett Microsoft-team, en Office 365 grupp eller en Yammer grupp.
   
-   a. Du kan ange nyckelord, meddelandeegenskaper, till exempel datum för skickade och mottagna meddelanden eller dokumentegenskaper, t.ex. filnamn eller det datum då ett dokument senast ändrades. Du kan använda mer komplexa frågor som använder en boolesk operator, som **AND**, **OR,** **NOT** eller **NEAR.** Du kan också söka efter känslig information (till exempel personnummer) i dokument eller söka efter dokument som har delats externt. Om du lämnar nyckelordsrutan tom inkluderas allt innehåll på de angivna innehållsplatserna i sökresultatet.
-
-   b. Du kan klicka på **kryssrutan Visa nyckelordslista** och skriva ett nyckelord på varje rad. Om du gör det kopplas nyckelorden på varje rad av **operatorn** ELLER i sökfrågan som skapas. Du kan ange högst 20 nyckelord i listan.
-
-    ![Nyckelordslista](../media/29cceb5d-2817-4fc4-b91a-ced1c5824a17.png)
+   3. **Exchange mappar :** Ställ in växlingsknappen på **På** om du vill att alla gemensamma mappar Exchange Online organisationen ska vara i holden. Du kan inte välja att vissa gemensamma mappar ska vara på plats. Låt växlingsknappen vara inaktiverad om du inte vill använda gemensamma mappar.
   
-    Varför ska jag använda nyckelordslistan? Du kan få statistik som visar hur många objekt som matchar varje nyckelord. Det kan hjälpa dig att snabbt identifiera vilka nyckelord som är mest (och minst) effektiva. Du kan också använda en nyckelordsfras (omgivet av parenteser) i en rad. Mer information om sökstatistik finns i Visa [nyckelordsstatistik för innehållssökningsresultat](view-keyword-statistics-for-content-search.md).
+   4. Låt den här kryssrutan vara markerad för Teams innehåll för lokala användare. Om du till exempel söker i alla Exchange-postlådor i organisationen och den här kryssrutan är markerad inkluderas det molnbaserade lagringsutrymme som används för att lagra Teams-chattdata för lokala användare i sökningen. Mer information finns i [Söka efter Teams chattdata för lokala användare](search-cloud-based-mailboxes-for-on-premises-users.md).
 
-    Mer information om hur du använder listan nyckelord finns i [Skapa en sökfråga.](content-search.md#building-a-search-query)
+7. På sidan **Definiera dina sökvillkor** skriver du en nyckelordsfråga och lägger till villkor i sökfrågan om det behövs.
 
-   c. Du kan klicka **på Villkor** och lägga till villkor i en sökfråga för att begränsa en sökning och returnera en mer förfinad uppsättning resultat. Varje villkor lägger till en sats i KQL-sökfrågan som skapas och körs när du startar sökningen. Ett villkor är logiskt kopplat till nyckelordsfrågan (anges i nyckelordsrutan) av **operatorn OCH.** Det innebär att objekt måste uppfylla både nyckelordsfrågan och varje villkor som ska tas med i resultatet. Så här kan du begränsa resultatet.
+   ![Konfigurera sökfrågan](../media/ContentSearchQuery.png)
 
-    Mer information om hur du skapar en sökfråga och använder villkor finns [i Nyckelordsfrågor för innehållssökning.](keyword-queries-and-search-conditions.md)
+   1. Ange nyckelord, meddelandeegenskaper som datum för skickade och mottagna meddelanden, eller dokumentegenskaper som filnamn eller datum då ett dokument senast ändrades. Du kan använda mer komplexa frågor som innehåller booleska operatorer som **AND**, **OR**, **NOT**, och **NEAR**. Om du lämnar nyckelordsrutan tom inkluderas allt innehåll på den angivna innehållsplatsen i sökresultatet. Mer information finns i [Nyckelordsfrågor och sökvillkor för eDiscovery.](keyword-queries-and-search-conditions.md)
 
-7. Under **Platser: platser som är platser i** lager väljer du de innehållsplatser som du vill söka efter. Du kan söka i postlådor, webbplatser och gemensamma mappar i samma sökning.
+   2. Alternativt kan du klicka på kryssrutan **Visa nyckelordlista** och skriva ett nyckelord på varje rad. Om du gör det kopplas nyckelorden på varje rad samman med en logisk operator (**c:s**) som fungerar ungefär som operatorn **OR** i sökfrågan som skapas.
 
-    ![Platser, platser som är väntande](../media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
-  
-    - **Alla platser**. Välj det här alternativet om du vill söka på alla innehållsplatser i organisationen. När du väljer det här alternativet kan du välja att söka i alla Exchange-postlådor (som innehåller postlådor för alla Microsoft Teams-, Yammer-grupper och Office 365-grupper), alla SharePoint- och OneDrive för företag-webbplatser (som innehåller webbplatser för alla Microsoft Teams-, Yammer-grupper och Office 365-grupper) och alla gemensamma mappar.
-    
-    - **Alla platser som är väntande**. Välj det här alternativet om du vill söka igenom alla innehållsplatser som har satts på plats för e-dataidentifiering i det här fallet. Om ärendet innehåller flera spärrade objekt genomsöks innehållsplatserna från alla platser. Om en innehållsplats dessutom har placerats på ett frågebaserat håll kommer endast objekt som är på plats att genomsökas när du kör den innehållssökning som du skapar i det här steget. Om en användare till exempel placerades i ett frågebaserat ärende som bevarar objekt som skickades eller skapades före ett visst datum skulle bara de objekten genomsökas. Detta sker genom att koppla frågan om ärendesök och innehållssökningsfrågan via en **OCH-operator.** Mer information finns i [Söka efter platser vid eDiscovery-hold.](create-ediscovery-holds.md#search-locations-on-ediscovery-hold)
-    
-    - **Specifika platser**. Välj det här alternativet för att välja de postlådor och webbplatser som du vill söka i. När du väljer det här alternativet **och klickar på** Ändra visas en lista över platser. Du kan välja att söka efter användare, grupper, team eller webbplatser. Du kan också söka i organisationens gemensamma mappar.
-    
-      ![Välja specifika platser](../media/97469b15-7be1-4aee-be27-f8343636152c.png)
-  
-     Om du väljer det här alternativet och söker efter en plats med innehåll som är på plats, tillämpas inte frågor från ett frågebaserat ärendeknöjt på sökfrågan. Med andra ord genomsöks allt innehåll, inte bara det innehåll som bevaras av ett frågebaserat ärendefrågek.
+      Varför ska jag använda nyckelordslistan? Du kan få statistik som visar hur många objekt som matchar varje nyckelord. Det kan hjälpa dig att snabbt ta reda på vilka nyckelord som är mest (och minst) effektiva. Du kan också använda en nyckelordsfras (omgiven av parenteser) på en rad. Mer information om nyckelordslistan och sökstatistik finns i Hämta [nyckelordsstatistik för sökningar](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-searches).
 
-8. När du har valt innehållsplatser att söka på klickar du på **Klar** och sedan på **Spara**.
+      > [!NOTE]
+      > För att minska problemen som orsakas av stora nyckelordslistor är du begränsad till högst 20 rader i nyckelordslistan.
 
-9. På sidan **Ny sökning** klickar du på Spara **& kör** och anger sedan ett namn för sökningen. Sökningar som är kopplade till ett grundläggande eDiscovery-ärende måste ha namn som är unika i Office 365 organisation.
+   3. Du kan lägga till sökvillkor för att begränsa sökningen och returnera en mer förfinad uppsättning resultat. Varje villkor lägger till en sats i sökfrågan som skapas och körs när du startar sökningen. Ett villkor kopplas till nyckelordsfrågan (anges i nyckelordsrutan) med en logisk operator (**c:c**) som fungerar ungefär som operatorn **AND**. Det innebär att objekten måste uppfylla både nyckelordsfrågan och ett eller flera villkor för att tas med i resultatet. Det är så du begränsar resultatet med hjälp av villkor. En lista och en beskrivning av villkoren som du kan använda i en sökfråga finns i [Sökvillkor](keyword-queries-and-search-conditions.md#search-conditions).
 
-10. Klicka **på** Spara för att spara sökinställningarna och starta sökningen.
+8. Granska sökinställningarna (och redigera om det behövs) och skicka sedan sökningen för att starta den.
 
-  När sökningen är klar kan du förhandsgranska sökresultaten. Om det behövs klickar **du** på Uppdatera **på sidan** Sökningar för att visa sökningen som du skapade i listan.
-
-11. Klicka på sökningen för att visa den utfällande sidan, som innehåller statistik om sökningen och för att utföra andra uppgifter som att visa sökstatistik och exportera sökresultaten.
+När sökningen är klar kan du förhandsgranska sökresultaten. Om det behövs klickar **du på** Uppdatera på **sidan Sökningar** för att visa sökningen som du skapade.
 
 ## <a name="more-information-about-searching-content-locations"></a>Mer information om hur du söker efter innehållsplatser
 
-- När du klickar **på Välj användare, grupper** eller team för att ange postlådor att söka i är postlådeväljaren som visas tom. Det här är för att förbättra prestandan. Om du vill lägga till mottagare i listan klickar du på Välj **användare,** grupper eller team , skriver ett namn (minst 3 tecken) i sökrutan, markerar kryssrutan bredvid namnet och klickar sedan på **Välj**.
+- När du klickar **på Välj användare, grupper** eller team för att ange postlådor att söka i är postlådeväljaren som visas tom. Det här är för att förbättra prestandan. Om du vill lägga till mottagare i listan klickar du på Välj **användare,** grupper eller team , skriver ett namn (minst tre tecken) i sökrutan, markerar kryssrutan bredvid namnet och klickar sedan på **Välj**.
 
 - Du kan lägga till inaktiva postlådor, Microsoft Teams, Yammer-grupper, Office 365-grupper och distributionsgrupper i listan med postlådor att söka i. Dynamiska distributionsgrupper stöds inte. Om du lägger Microsoft Teams, Yammer Grupper eller Office 365 Grupper genomsöks grupp- eller grupppostlådan. Postlådorna för gruppmedlemmarna genomsöks inte.
 
-- Om du vill lägga till **webbplatser klickar du** på Välj **webbplatser** , klickar på Välj webbplatser igen och skriver sedan webbadressen för varje webbplats som du vill söka efter. Du kan också lägga till URL-adressen för en SharePoint för ett Microsoft-team, en Yammer grupp eller en Office 365 grupp.
+- Om du vill lägga till webbplatser i sökningen aktiverar du växlingsknappen och klickar sedan på **Välj webbplatser**. Skriv URL:en för varje webbplats som du vill söka i. Du kan också lägga till URL-adressen för en SharePoint för ett Microsoft-team, en Yammer grupp eller en Office 365 grupp.

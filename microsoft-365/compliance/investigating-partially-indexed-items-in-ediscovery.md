@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du hanterar delvis indexerade objekt (kallas även icke indexerade objekt) från Exchange, SharePoint och OneDrive för företag inom organisationen.
-ms.openlocfilehash: c24fb2d9b633181538d76cf35e27dae1824b311d
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 539fd2687735a5ee14be543750becca8c6c3154c
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "52162811"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311474"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Undersöker delvis indexerade objekt i eDiscovery
 
@@ -49,9 +49,9 @@ När du har kört en eDiscovery-sökning visas det totala antalet och storleken 
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>Beräkna förhållandet mellan delvis indexerade element i organisationen
 
-För att förstå hur exponering av delvis indexerade objekt visas i organisationen kan du köra en sökning efter allt innehåll i alla postlådor (med hjälp av en tom nyckelordsfråga). I följande exempel finns det 56 208 (4 830 MB) helt indexerade objekt och 470 (316 MB) delvis indexerade objekt.
+För att förstå hur exponering av delvis indexerade objekt visas i organisationen kan du köra en sökning efter allt innehåll i alla postlådor (med hjälp av en tom nyckelordsfråga). I följande exempel finns det 1 629 904 (146,46 GB) helt indexerade objekt och 10 025 (10,27 GB) delvis indexerade objekt.
   
-![Exempel på sökstatistik som visar delvis indexerade objekt](../media/0f6a5cf7-4c98-44a0-a0dd-5aed67124641.png)
+![Exempel på sökstatistik som visar delvis indexerade objekt](../media/PartiallyIndexedItemsTest.png)
   
 Du kan bestämma hur många procent av delvis indexerade element är med hjälp av följande beräkningar.
   
@@ -59,23 +59,23 @@ Du kan bestämma hur många procent av delvis indexerade element är med hjälp 
 
 `(Total number of partially indexed items/Total number of items) x 100`
 
-`(470/56,208) x 100 = 0.84%`
+`(10025/1629904) x 100 = 0.62%`
 
-Med hjälp av sökresultaten från föregående exempel är 0,84 % av alla postlådeobjekt delvis indexerade.
+Med hjälp av sökresultaten från föregående exempel indexeras 0,62 % av alla postlådor delvis.
   
  **Så här beräknar du procentandelen av storleken på delvis indexerade objekt i organisationen:**
 
 `(Size of all partially indexed items/Size of all items) x 100`
 
-`(316 MB/4830 MB) x 100 = 6.54%`
+`(10.27 GB/146.46 MB) x 100 = 7.0%`
 
-I exemplet ovan kommer alltså 6,54 % av den totala storleken på postlådeobjekt från delvis indexerade objekt. Som tidigare nämnts har de flesta organisationers kunder mindre än 1 % innehåll per volym och mindre än 12 % innehåll i storlek som är delvis indexerat.
+I exemplet ovan kommer alltså 7 % av den totala storleken på postlådeobjekt från delvis indexerade objekt. Som tidigare nämnts har de flesta organisationers kunder mindre än 1 % innehåll per volym och mindre än 12 % innehåll i storlek som är delvis indexerat.
 
 ## <a name="working-with-partially-indexed-items"></a>Arbeta med delvis indexerade objekt
 
 Om du behöver undersöka delvisa objekt för att verifiera att de [](export-a-content-search-report.md) inte innehåller relevant information kan du exportera en innehållsökningsrapport som innehåller information om delvis indexerade objekt. När du exporterar en rapport för innehållssökning måste du välja ett exportalternativ som innehåller delvis indexerade objekt.
   
-![Välj det andra eller tredje alternativet för att exportera delvis indexerade objekt](../media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
+![Välj det andra eller tredje alternativet för att exportera delvis indexerade objekt](../media/PartiallyIndexedItemsExportOptions.png)
   
 När du exporterar eDiscovery-sökresultat eller en sökrapport med något av följande alternativ innehåller exporten en rapport med namnet Icke indexerade Items.csv. Den här rapporten innehåller de flesta av samma information ResultsLog.csv filen. Men icke indexerade objekt Items.csv också två fält som är relaterade till delvis indexerade element: **Feltaggar** och **Felegenskaper.** De här fälten innehåller information om indexeringsfelet för varje delvis indexerat objekt. Genom att använda informationen i de här två fälten kan du avgöra om indexeringsfelet för en viss undersökning ska påverkas. Om så är möjligt kan du utföra en riktad sökning och hämta och exportera specifika e-postmeddelanden och SharePoint- eller OneDrive-dokument så att du kan undersöka dem för att avgöra om de är relevanta för din undersökning. Stegvisa anvisningar finns i Förbereda en [CSV-fil för en riktad sökning i Office 365](csv-file-for-an-id-list-content-search.md).
 
@@ -164,7 +164,7 @@ Följande steg visar hur du kör ett PowerShell-skript som söker efter alla obj
      }
    ```
 
-2. [Anslut till Säkerhets- & Efterlevnadscenter PowerShell.](/powershell/exchange/exchange-online-powershell)
+2. [Anslut till Säkerhets- och efterlevnadscenter PowerShell](/powershell/exchange/exchange-online-powershell).
 
 3. Gå till & i Security & Compliance Center, gå till mappen där du sparade skriptet i steg 1 och kör sedan skriptet. till exempel:
 

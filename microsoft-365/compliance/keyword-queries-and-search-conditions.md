@@ -1,12 +1,12 @@
 ---
-title: Nyckelordsfrågor och sökvillkor för innehållssökning
+title: Nyckelordsfrågor och sökvillkor för eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 f1_keywords:
 - ms.o365.cc.SearchQueryLearnMore
 ms.service: O365-seccomp
@@ -21,17 +21,17 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: Läs mer om e-post- och filegenskaper som du kan söka efter med hjälp av verktygen för sökning och e-dataidentifiering i Microsoft 365.
-ms.openlocfilehash: 10b2af333d5eeef6dd70541a86b9114929c0c94c
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+description: Läs mer om e-post- och filegenskaper som du kan söka efter med hjälp av eDiscovery-sökverktygen i Microsoft 365.
+ms.openlocfilehash: a9a178eb9b139cacd803c8ab168b3143b75b5f92
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52162978"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311874"
 ---
-# <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>Nyckelordsfrågor och sökvillkor för innehållssökning och eDiscovery
+# <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Nyckelordsfrågor och sökvillkor för eDiscovery
 
-I det här avsnittet beskrivs de e-post- och dokumentegenskaper som du kan söka efter i e-postobjekt i Exchange Online och dokument som lagras på webbplatserna SharePoint och OneDrive för företag med hjälp av funktionen Innehållssökning i efterlevnadscentret för Microsoft 365. Du kan också använda **\* cmdletarna -ComplianceSearch** i Security & Compliance Center PowerShell för att söka efter de här egenskaperna. I det här avsnittet beskrivs också:
+I det här avsnittet beskrivs de e-post- och dokumentegenskaper som du kan söka efter i e-postobjekt och Microsoft Teams-chattkonversationer i Exchange Online samt dokument som lagras på SharePoint- och OneDrive för företag-webbplatser med eDiscovery-sökverktygen i efterlevnadscentret för Microsoft 365. Det omfattar innehållssökning, bas-eDiscovery och Advanced eDiscovery (eDiscovery-sökningar i Advanced eDiscovery kallas *samlingar).* Du kan också använda **\* cmdletarna -ComplianceSearch** i Security & Compliance Center PowerShell för att söka efter de här egenskaperna. I det här avsnittet beskrivs också:
   
 - Använd booleska sökoperatorer, sökvillkor och andra sökfrågetekniker för att förfina sökresultaten.
 
@@ -39,14 +39,20 @@ I det här avsnittet beskrivs de e-post- och dokumentegenskaper som du kan söka
 
 - Söka efter webbplatsinnehåll som delas med användare utanför organisationen
 
-Stegvisa instruktioner för hur du skapar en innehållssökning finns i [Innehållssökning.](content-search.md)
+Stegvisa instruktioner för hur du skapar olika eDiscovery-sökningar finns i:
+
+- [Innehållssökning](content-search.md)
+
+- [Söka efter innehåll i Bas-eDiscovery](search-for-content-in-core-ediscovery.md)
+
+- [Skapa ett utkast i Advanced eDiscovery](create-draft-collection.md)
 
 > [!NOTE]
-> Innehållssökning i kompatibilitetscentret för Microsoft 365 och motsvarande **\* -ComplianceSearch-cmdlets** i Säkerhets- och efterlevnadscenter för & använder Keyword Query Language (KQL). Mer detaljerad information finns i [Syntaxreferens för nyckelordsfrågaspråk.](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) 
+> eDiscovery-sökningar i efterlevnadscentret för Microsoft 365 och motsvarande **\* -ComplianceSearch-cmdlets** i Security & Compliance Center PowerShell använder Keyword Query Language (KQL). Mer detaljerad information finns i [Syntaxreferens för nyckelordsfrågaspråk.](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
   
 ## <a name="searchable-email-properties"></a>Sökbara e-postegenskaper
 
-I följande tabell visas egenskaper för e-postmeddelanden som kan sökas igenom med hjälp av funktionen Innehållssökning i efterlevnadscentret för Microsoft 365 eller med hjälp av cmdleten **New-ComplianceSearch** eller **Set-ComplianceSearch.** Tabellen innehåller ett exempel på  _syntaxen property:value_ för varje egenskap och en beskrivning av sökresultaten som returneras av exemplen. Du kan skriva dessa  `property:value` par i rutan nyckelord för en innehållssökning. 
+I följande tabell visas e-postegenskaper som kan sökas igenom med hjälp av eDiscovery-sökverktygen i efterlevnadscentret för Microsoft 365 eller med hjälp av **New-ComplianceSearch** eller **cmdleten Set-ComplianceSearch.** Tabellen innehåller ett exempel på  _syntaxen property:value_ för varje egenskap och en beskrivning av sökresultaten som returneras av exemplen. Du kan skriva dessa  `property:value` par i rutan nyckelord för en eDiscovery-sökning. 
 
 > [!NOTE]
 > När du söker efter e-postegenskaper går det inte att söka efter objekt där den angivna egenskapen är tom eller tom. Om du till exempel använder ämnesparet **property:value:""** när du söker efter e-postmeddelanden med en tom ämnesrad returneras noll resultat.  Det här gäller även när du söker i egenskaper för webbplats och kontakt.
@@ -62,7 +68,7 @@ I följande tabell visas egenskaper för e-postmeddelanden som kan sökas igenom
 |HasAttachment|Anger om ett meddelande har en bifogad fil. Använd värdena **sant** eller **falskt.**|`from:pilar@contoso.com AND hasattachment:true`|Meddelanden som skickats av en angiven användare som har bifogade filer.|
 |Prioritet|Prioriteten för ett e-postmeddelande, som en avsändare kan ange när de skickar ett meddelande. Som standard skickas meddelanden med normal prioritet, såvida inte avsändaren anger prioriteten som **hög** eller **låg.**|`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|Meddelanden som har markerats som hög prioritet, medelstor eller låg prioritet.|
 |IsRead|Anger om meddelanden har lästs. Använd värdena **sant** eller **falskt.**|`isread:true`  <br/> `isread:false`|I det första exemplet returneras meddelanden med egenskapen IsRead inställd på **Sant.** I det andra exemplet returneras meddelanden där egenskapen IsRead är inställd på **False.**|
-|ItemClass|Använd den här egenskapen till att söka efter specifika datatyper från tredje part som organisationen importerat till Office 365. Använd följande syntax för den här egenskapen:  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|I det första exemplet returneras Facebook-objekt som innehåller ordet "contoso" i egenskapen Ämne. Det andra exemplet returnerar Twitter-objekt som postades av Ann Beebe och som innehåller nyckelordet "Northwind Traders".  <br/> En fullständig lista med värden som ska användas för datatyper från tredje part för egenskapen ItemClass finns i Använda innehållssökning för att söka efter data från tredje part som har importerats [till Office 365.](use-content-search-to-search-third-party-data-that-was-imported.md)|
+|ItemClass|Använd den här egenskapen till att söka efter specifika datatyper från tredje part som organisationen importerat till Office 365. Använd följande syntax för den här egenskapen:  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|I det första exemplet returneras Facebook-objekt som innehåller ordet "contoso" i egenskapen Ämne. Det andra exemplet returnerar Twitter-objekt som postades av Ann Beebe och som innehåller nyckelordet "Northwind Traders".  <br/> En fullständig lista med värden som ska användas för datatyper från tredje part för egenskapen ItemClass finns i Använda innehållssökning för att söka efter data från tredje part som har importerats [till Office 365](use-content-search-to-search-third-party-data-that-was-imported.md).|
 |Sort| Den typ av e-postmeddelande du vill söka efter. Möjliga värden:  <br/>  kontakter  <br/>  dokument  <br/>  e-post  <br/>  externaldata  <br/>  fax  <br/>  snabbmeddelanden  <br/>  journaler  <br/>  möten  <br/>  microsoftteams (returnerar objekt från chattar, möten och samtal i Microsoft Teams)  <br/>  anteckningar  <br/>  inlägg  <br/>  rssfeeds  <br/>  uppgifter  <br/>  röstbrevlåda|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|I det första exemplet returneras e-postmeddelanden som uppfyller sökvillkoren. Det andra exemplet returnerar e-postmeddelanden, snabbmeddelandekonversationer (Skype för företag konversationer och chattar i Microsoft Teams) och röstmeddelanden som uppfyller sökvillkoren. I det tredje exemplet returneras objekt som har importerats till postlådor i Microsoft 365 från datakällor från tredje part, till exempel Twitter, Facebook och Cisco Jabber, som uppfyller sökvillkoren. Mer information finns i [Arkivera data från tredje part i Office 365](https://www.microsoft.com/?ref=go).|
 |Deltagare|Alla personer (fält) i ett e-postmeddelande. De här fälten är Från, Till, Kopia och Hemlig<sup>kopia. 1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|Meddelanden som skickas av eller skickas till garthf@contoso.com. Det andra exemplet returnerar alla meddelanden som skickats av eller skickats till en användare i contoso.com domän.|
 |Mottaget|Datumet då ett e-postmeddelande togs emot av en mottagare.|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|Meddelanden som togs emot den 15 april 2016. Det andra exemplet returnerar alla meddelanden som tagits emot mellan den 1 januari 2016 och den 31 mars 2016.|
@@ -89,9 +95,9 @@ Tänk dock på att förhindra att mottagaren utökas i sökfrågan kan resultera
 
 ## <a name="searchable-site-properties"></a>Sökbara webbplatsegenskaper
 
-I följande tabell visas några av de SharePoint- och OneDrive för företag-egenskaper som kan sökas genom att använda funktionen Innehållssökning i Säkerhets- och efterlevnadscenter för & eller med hjälp av **New-ComplianceSearch** eller cmdleten **Set-ComplianceSearch.** Tabellen innehåller ett exempel på  _syntaxen property:value_ för varje egenskap och en beskrivning av sökresultaten som returneras av exemplen. 
+I följande tabell visas några av de SharePoint- och OneDrive för företag-egenskaper som kan sökas med hjälp av eDiscovery-sökverktygen i efterlevnadscentret för Microsoft 365 eller med hjälp av **New-ComplianceSearch** eller cmdleten **Set-ComplianceSearch.** Tabellen innehåller ett exempel på  _syntaxen property:value_ för varje egenskap och en beskrivning av sökresultaten som returneras av exemplen. 
   
-En fullständig lista över SharePoint egenskaper som kan sökas i finns i Översikt över crawlade och [hanterade egenskaper i SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Egenskaper som är markerade **med ett** Ja i **kolumnen Queryable** kan sökas igenom. 
+En fullständig lista över SharePoint egenskaper som kan sökas i finns i Översikt över crawlade och [hanterade egenskaper i SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Egenskaper som är markerade **med ett** Ja i **kolumnen Queryable** kan sökas igenom.
   
 | Egenskap | Egenskapsbeskrivning | Exempel | Sökresultat som returneras av exemplen |
 |:-----|:-----|:-----|:-----|
@@ -114,7 +120,7 @@ En fullständig lista över SharePoint egenskaper som kan sökas i finns i Över
 
 ## <a name="searchable-contact-properties"></a>Sökbara kontaktegenskaper
 
-I följande tabell visas de kontaktegenskaper som är indexerade och som du kan söka efter med hjälp av Innehållssökning. Det här är de egenskaper som är tillgängliga för att konfigurera för kontakter (kallas även personliga kontakter) som finns i den personliga adressboken i en användares postlåda. Om du vill söka efter kontakter kan du välja vilka postlådor du vill söka i och sedan använda en eller flera kontaktegenskaper i nyckelordsfrågan.
+I följande tabell visas de kontaktegenskaper som är indexerade och som du kan söka efter med hjälp av eDiscovery-sökverktyg. Det här är de egenskaper som är tillgängliga för att konfigurera för kontakter (kallas även personliga kontakter) som finns i den personliga adressboken i en användares postlåda. Om du vill söka efter kontakter kan du välja vilka postlådor du vill söka i och sedan använda en eller flera kontaktegenskaper i nyckelordsfrågan.
   
 > [!TIP]
 > Om du vill söka efter värden som innehåller blanksteg eller specialtecken använder du dubbla citattecken (" ") som innehåller frasen; till exempel `businessaddress:"123 Main Street"` .
@@ -216,7 +222,7 @@ Skapa ett villkor med vanliga egenskaper när du söker i postlådor och webbpla
 |Avsändare/författare|För e-post: den person som skickade ett meddelande. För dokument: den person som du citerar i fältet Författare Office dokument. Du kan skriva mer än ett namn, avgränsade med kommatecken. Två eller flera värden är logiskt sammankopplade av **operatorn** ELLER.|
 |Storlek (i byte)|Storleken på objektet (i byte) för både e-post och dokument.|
 |Ämne/rubrik|För e-post: texten på ämnesraden i ett meddelande. För dokument, dokumentets rubrik. Som tidigare förklarats är titelegenskapen metadata angivna Microsoft Office dokument. Du kan skriva namnet på fler än ett ämne/en rubrik, avgränsade med kommatecken. Två eller flera värden är logiskt sammankopplade av **operatorn** ELLER.|
-|Efterlevnadsetikett|För både e-post och dokument gäller det de bevarandeetiketter som automatiskt har tilldelats meddelanden och dokument genom autolabelprinciper eller bevarandeetiketter som manuellt har tilldelats av användare. Bevarandeetiketter används för att klassificera e-post och dokument för informationsstyrning och tillämpa bevaranderegler utifrån de inställningar som definieras av etiketten. Du kan skriva en del av namnet på bevarandeetiketten och använda ett jokertecken eller skriva hela etikettnamnet. Mer information om bevarandeetiketter finns i Läs [mer om bevarandeprinciper och bevarandeetiketter.](retention.md)|
+|Kvarhållningsetikett|För både e-post och dokument gäller det de bevarandeetiketter som automatiskt har tilldelats meddelanden och dokument genom principer för automatisk etikett eller bevarandeetiketter som manuellt har tilldelats av användare. Bevarandeetiketter används för att klassificera e-post och dokument för informationsstyrning och tillämpa bevaranderegler utifrån de inställningar som definieras av etiketten. Du kan skriva en del av namnet på bevarandeetiketten och använda ett jokertecken eller skriva hela etikettnamnet. Mer information om bevarandeetiketter finns i Läs [mer om bevarandeprinciper och bevarandeetiketter.](retention.md)|
 |||
   
 ### <a name="conditions-for-mail-properties"></a>Villkor för e-postegenskaper
@@ -227,7 +233,7 @@ Skapa ett villkor med hjälp av e-postegenskaper när du söker i postlådor ell
 |:-----|:-----|
 |Meddelande sort| Meddelandetypen för sökning. Det här är samma egenskap som e-poste-egenskapen Kind. Möjliga värden:  <br/><br/>  kontakter  <br/>  dokument  <br/>  e-post  <br/>  externaldata  <br/>  fax  <br/>  snabbmeddelanden  <br/>  journaler  <br/>  möten  <br/>  microsoftteams  <br/>  anteckningar  <br/>  inlägg  <br/>  rssfeeds  <br/>  uppgifter  <br/>  röstbrevlåda|
 |Deltagare|Alla personer (fält) i ett e-postmeddelande. De här fälten är Från, Till, Kopia och Hemlig kopia.|
-|Skriv|Egenskapen meddelandeklass för ett e-postobjekt. Det här är samma egenskap som e-postegenskapen ItemClass. Det är också ett villkor med flera värden. Om du vill markera flera meddelandeklasser håller du **ned CTRL-tangenten** och klickar sedan på två eller fler meddelandeklasser i listrutan som du vill lägga till i villkoret. Varje meddelandeklass som du väljer i listan kopplas logiskt av operatorn **ELLER** i motsvarande sökfråga.  <br/> En lista med meddelandeklasser (och deras motsvarande meddelandeklass-ID) som används av Exchange och som du kan välja i **listan Meddelandeklass** finns i Objekttyper och [Meddelandeklasser.](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes)|
+|Typ|Egenskapen meddelandeklass för ett e-postobjekt. Det här är samma egenskap som e-postegenskapen ItemClass. Det är också ett villkor med flera värden. Om du vill markera flera meddelandeklasser håller du **ned CTRL-tangenten** och klickar sedan på två eller fler meddelandeklasser i listrutan som du vill lägga till i villkoret. Varje meddelandeklass som du väljer i listan kopplas logiskt av operatorn **ELLER** i motsvarande sökfråga.  <br/> En lista med meddelandeklasser (och deras motsvarande meddelandeklass-ID) som används av Exchange och som du kan välja i **listan Meddelandeklass** finns i Objekttyper och [Meddelandeklasser.](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes)|
 |Mottaget|Datumet då ett e-postmeddelande togs emot av en mottagare. Det här är samma egenskap som egenskapen Mottagen e-post.|
 |Mottagare|Alla mottagarfält i ett e-postmeddelande. De här fälten är Till, Kopia och Hemlig kopia.|
 |Avsändare|Avsändaren av ett e-postmeddelande.|
@@ -277,7 +283,7 @@ När du lägger till ett villkor kan du välja en operator som är relevant för
 
 Tänk på följande när du använder sökvillkor.
   
-- Ett villkor är logiskt kopplat till nyckelordsfrågan (anges i nyckelordsrutan) av **operatorn OCH.** Det innebär att objekt måste uppfylla både nyckelordsfrågan och villkoret som ska tas med i resultatet. Så här kan du begränsa resultatet. 
+- Ett villkor är logiskt kopplat till nyckelordsfrågan (anges i nyckelordsrutan) av **operatorn OCH.** Det innebär att objekt måste uppfylla både nyckelordsfrågan och villkoret som ska tas med i resultatet. Det är så du begränsar resultatet med hjälp av villkor. 
     
 - Om du lägger till två eller flera unika villkor i en sökfråga (villkor som anger olika egenskaper) är dessa villkor logiskt kopplade av **operatorn OCH.** Det innebär att endast objekt som uppfyller alla villkor (förutom en nyckelordsfråga) returneras. 
     
@@ -291,66 +297,66 @@ Tänk på följande när du använder sökvillkor.
     
 - Du kan använda dra- och släppkontrollen för att skapa ordningsföljd. Klicka på kontrollen för ett villkor och flytta den uppåt eller nedåt.
     
-- Som tidigare förklarats kan du med vissa villkorsegenskaper skriva flera värden. Varje värde är logiskt sammankopplade av **operatorn** ELLER. Det här resulterar i samma logik som att flera instanser har samma villkor, där var och en har ett enda värde. Följande illustrationer visar ett exempel på ett enda villkor med flera värden och ett exempel på flera villkor (för samma egenskap) med ett enda värde. Båda exemplen resulterar i samma fråga:  `(filetype:docx) OR (filetype:pptx) OR (filetype:xlsx)`
-    
-    ![Ett villkor med flera värden](../media/9880aa29-d117-4531-be20-6d53f1d21341.gif)
+- Som tidigare förklarats kan du med vissa villkorsegenskaper skriva flera värden (avgränsade med semikolon). Varje värde kopplas logiskt av **operatorn ELLER** och resulterar i `(filetype:docx) OR (filetype:pptx) OR (filetype:xlsx)` frågan. I följande bild visas ett exempel på ett villkor med flera värden.
+
+    ![Ett villkor med flera värden](../media/SearchConditions1.png)
   
-    ![Flera sökvillkor för samma egenskap](../media/1e63d37d-6d8d-4c9b-a509-a7e1c3a05193.gif)
-  
-> [!TIP]
-> Om ett villkor accepterar flera värden rekommenderar vi att du använder ett enda villkor och anger flera värden (avgränsade med semikolon eller semikolon). Det här säkerställer att den frågelogik som används är vad du har för avsikt. 
+  > [!NOTE]
+  > Du kan inte lägga till flera villkor (genom att klicka **på Lägg till** villkor för samma egenskap. I stället måste du ange flera värden för villkoret (avgränsade med semikolon), som du ser i föregående exempel.
   
 ### <a name="examples-of-using-conditions-in-search-queries"></a>Exempel på användning av villkor i sökfrågor
 
-Följande exempel visar den GUI-baserade versionen av en sökfråga med villkor, frågesyntaxen som visas i informationsfönstret för den valda sökningen (som också returneras av cmdleten **Get-ComplianceSearch)** och logiken för motsvarande KQL-fråga. 
+Följande exempel visar den GUI-baserade versionen av en sökfråga med villkor, frågesyntaxen som visas i informationsfönstret för den valda sökningen (som också returneras av cmdleten **Get-ComplianceSearch)** och logiken för motsvarande KQL-fråga.
   
 #### <a name="example-1"></a>Exempel 1
 
-Det här exemplet returnerar dokument SharePoint och OneDrive för företag som innehåller ett kreditkortsnummer och senast ändrades före den 1 januari 2016.
+Det här exemplet returnerar dokument SharePoint och OneDrive för företag webbplatser som innehåller ett kreditkortsnummer och senast ändrades före den 1 januari 2021.
   
  **GUI**
   
-![Första exemplet på sökvillkor](../media/099515ba-d4ee-474e-af25-3aa48816b87b.gif)
+![Första exemplet på sökvillkor](../media/SearchConditions2.png)
   
  **Frågesyntax**
   
- `SensitiveType:"Credit Card Number"(c:c)(lastmodifiedtime<2016-01-01)`
+ `SensitiveType:"Credit Card Number"(c:c)(lastmodifiedtime<2021-01-01)`
   
  **Sökfrågelogik**
   
- `SensitiveType:"Credit Card Number" AND (lastmodifiedtime<2016-01-01)`
+ `SensitiveType:"Credit Card Number" AND (lastmodifiedtime<2021-01-01)`
   
+Lägg märke till i föregående skärmbild att sökgränssnittet förstärker att nyckelordsfrågan och -villkoret är sammankopplade med **operatorn OCH.**
+
 #### <a name="example-2"></a>Exempel 2
 
-Det här exemplet returnerar e-postobjekt eller dokument som innehåller nyckelordet "rapport" som har skickats eller skapats före den 1 april 2105, och som innehåller ordet "northwind" i ämnesfältet i e-postmeddelanden eller i titelegenskapen för dokument. Frågan exkluderar webbsidor som uppfyller de andra sökvillkoren.
+Det här exemplet returnerar e-postobjekt eller dokument som innehåller nyckelordet "rapport" som har skickats eller skapats före den 1 april 2021, och som innehåller ordet "northwind" i ämnesfältet i e-postmeddelanden eller i titelegenskapen för dokument. Frågan exkluderar webbsidor som uppfyller de andra sökvillkoren.
   
  **GUI**
   
-![Andra exempel på sökvillkor](../media/fe07d495-df81-42da-8106-3cdb409c6e7f.gif)
+![Andra exempel på sökvillkor](../media/SearchConditions3.png)
   
  **Frågesyntax**
   
- `report(c:c)(date<2016-04-01)(subjecttitle:"northwind")(-filetype:aspx)`
+ `report(c:c)(date<2021-04-01)(subjecttitle:"northwind")(-filetype:aspx)`
   
  **Sökfrågelogik**
   
- `report AND (date<2016-04-01) AND (subjecttitle:"northwind") NOT (filetype:aspx)`
+ `report AND (date<2021-04-01) AND (subjecttitle:"northwind") NOT (filetype:aspx)`
   
 #### <a name="example-3"></a>Exempel 3
 
-Det här exemplet returnerar e-postmeddelanden eller kalendermöten som skickades mellan 2016-12-01 och 2016-11-30 och som innehåller ord som börjar med "telefon" eller "smartphone".
+Det här exemplet returnerar e-postmeddelanden och kalendermöten som skickats mellan 2019-12-01 och 2020-11-30 och som innehåller ord som börjar med "telefon" eller "smartphone".
   
  **GUI**
   
-![Tredje exempel på sökvillkor](../media/973d45fc-0923-43d6-9d0a-25e4a625f057.gif)
+![Tredje exempel på sökvillkor](../media/SearchConditions4.png)
   
  **Frågesyntax**
   
- `phone* OR smartphone*(c:c)(sent=2016-12-01..2016-11-30)(kind="email")(kind="meetings")`
+ `phone* OR smartphone*(c:c)(sent=2019-12-01..2020-11-30)(kind="email")(kind="meetings")`
   
  **Sökfrågelogik**
   
- `phone* OR smartphone* AND (sent=2016-12-01..2016-11-30) AND ((kind="email") OR (kind="meetings"))`
+ `phone* OR smartphone* AND (sent=2029-12-01..2020-11-30) AND ((kind="email") OR (kind="meetings"))`
   
 ## <a name="special-characters"></a>Specialtecken
 
@@ -360,32 +366,32 @@ Vissa specialtecken ingår inte i sökindexet och är därför inte sökbara. De
 
 ## <a name="searching-for-site-content-shared-with-external-users"></a>Söka efter webbplatsinnehåll som delats med externa användare
 
-Du kan också använda funktionen Innehållssökning i Säkerhets- och efterlevnadscenter för & för att söka efter dokument som lagrats på SharePoint- och OneDrive för företag-webbplatser som har delats med personer utanför organisationen. Detta kan hjälpa dig att identifiera känslig eller företagsinformation som delas utanför organisationen. Det kan du göra med hjälp av  `ViewableByExternalUsers` egenskapen i en nyckelordsfråga. Den här egenskapen returnerar dokument eller webbplatser som har delats med externa användare med någon av följande delningsmetoder: 
+Du kan också använda eDiscovery-sökverktyg i efterlevnadscentret för att söka efter dokument som lagrats på SharePoint- och OneDrive för företag-webbplatser som har delats med personer utanför organisationen. Detta kan hjälpa dig att identifiera känslig eller företagsinformation som delas utanför organisationen. Det kan du göra med hjälp av  `ViewableByExternalUsers` egenskapen i en nyckelordsfråga. Den här egenskapen returnerar dokument eller webbplatser som har delats med externa användare med någon av följande delningsmetoder: 
   
 - En delningsinbjudan som kräver att användarna loggar in i organisationen som autentiserade användare.
-    
+
 - En anonym gästlänk som gör att alla med den här länken kan komma åt resursen utan att behöva autentiseras.
-    
+
 Här är några exempel:
   
-- Frågan  `ViewableByExternalUsers:true AND SensitiveType:"Credit Card Number"` returnerar alla objekt som har delats med personer utanför organisationen och som innehåller ett kreditkortsnummer. 
-    
-- Frågan  `ViewableByExternalUsers:true AND ContentType:document AND site:"https://contoso.sharepoint.com/Sites/Teams"` returnerar en lista med dokument på alla gruppwebbplatser i organisationen som har delats med externa användare. 
-    
+- Frågan  `ViewableByExternalUsers:true AND SensitiveType:"Credit Card Number"` returnerar alla objekt som har delats med personer utanför organisationen och som innehåller ett kreditkortsnummer.
+  
+- Frågan  `ViewableByExternalUsers:true AND ContentType:document AND site:"https://contoso.sharepoint.com/Sites/Teams"` returnerar en lista med dokument på alla gruppwebbplatser i organisationen som har delats med externa användare.
+
 > [!TIP]
-> En sökfråga som  `ViewableByExternalUsers:true AND ContentType:document` kan returnera många .aspx-filer i sökresultatet. Om du vill ta bort dessa (eller andra typer av filer) kan du använda egenskapen  `FileExtension` till att utesluta vissa filtyper, till exempel  `ViewableByExternalUsers:true AND ContentType:document NOT FileExtension:aspx` . 
+> En sökfråga som  `ViewableByExternalUsers:true AND ContentType:document` kan returnera många .aspx-filer i sökresultatet. Om du vill ta bort dessa (eller andra typer av filer) kan du använda egenskapen  `FileExtension` till att utesluta vissa filtyper, till exempel  `ViewableByExternalUsers:true AND ContentType:document NOT FileExtension:aspx` .
   
 Vad betraktas som innehåll som delas med personer utanför organisationen? Dokument i organisationens webbplatser SharePoint och OneDrive för företag som delas genom att skicka en delningsinbjudan eller som delas på offentliga platser. Följande användaraktiviteter resulterar till exempel i innehåll som kan visas av externa användare:
   
 - En användare delar en fil eller mapp med en person utanför organisationen.
-    
+  
 - En användare skapar och skickar en länk till en delad fil till en person utanför organisationen. Med den här länken kan den externa användaren visa (eller redigera) filen.
-    
+  
 - En användare skickar en delningsinbjudan eller en gästlänk till en person utanför organisationen för att visa (eller redigera) en delad fil.
-    
+  
 ### <a name="issues-using-the-viewablebyexternalusers-property"></a>Problem med egenskapen ViewableByExternalUsers
 
-Egenskapen representerar statusen för om ett dokument eller en webbplats delas med externa användare, men det finns vissa varningar för vad den här egenskapen gör och  `ViewableByExternalUsers` inte återspeglar. I följande scenarier uppdateras inte värdet för egenskapen, och resultatet av en innehållssökningsfråga som använder den här egenskapen  `ViewableByExternalUsers` kan vara felaktig. 
+Egenskapen representerar statusen för om ett dokument eller en webbplats delas med externa användare, men det finns vissa varningar för vad den här egenskapen gör och  `ViewableByExternalUsers` inte återspeglar. I följande scenarier uppdateras inte värdet för egenskapen, och resultatet av en sökfråga som använder den här egenskapen  `ViewableByExternalUsers` kan vara felaktigt. 
   
 - Ändringar av delningsprincip, t.ex. inaktivera extern delning för en webbplats eller för organisationen. Egenskapen visar fortfarande tidigare delade dokument som externt tillgängliga även om extern åtkomst kan ha återkallats.
     
@@ -429,7 +435,7 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 
 ## <a name="search-tips-and-tricks"></a>Söktips
 
-- Nyckelordssökningar är inte fallkänsliga. Exempelvis ger **katt och** **KATT** samma resultat. 
+- Nyckelordssökningar är inte fallkänsliga. Exempelvis ger **katt och** **KATT** samma resultat.
 
 - De booleska **operatorerna AND**, **OR**, **NOT** och **NEAR** måste vara versaler. 
 

@@ -1,5 +1,5 @@
 ---
-title: Exportera resultat för innehållssökning
+title: Exportera resultat av innehållssökning
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,24 +20,24 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: Exportera sökresultatet från en innehållssökning i säkerhets- Microsoft 365 till en lokal dator. E-postresultat exporteras som PST-filer. Innehåll från SharePoint och OneDrive för företag exporteras som ursprungliga dokument Office dokument.
+description: Exportera sökresultatet från en innehållssökning i kompatibilitetscentret Microsoft 365 en lokal dator. E-postresultat exporteras som PST-filer. Innehåll från SharePoint och OneDrive för företag exporteras som ursprungliga dokument Office dokument.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3bb46966ddd8d4b2ae61091b126daea1413039ac
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: b5e900d44e59c2c37263c1162a7e631b1635cb06
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "52162813"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311979"
 ---
-# <a name="export-content-search-results"></a>Exportera resultat för innehållssökning
+# <a name="export-content-search-results"></a>Exportera resultat av innehållssökning
 
-När du har kört en innehållssökning kan du exportera sökresultatet till en lokal dator. När du exporterar e-postresultat laddas de ned till datorn som PST-filer. När du exporterar innehåll SharePoint och OneDrive för företag webbplatser exporteras kopior av Office dokument. Det finns andra dokument och rapporter som ingår i de exporterade sökresultaten.
+När en innehållssökning har körts kan du exportera sökresultatet till en lokal dator. När du exporterar e-postresultat laddas de ned till datorn som PST-filer. När du exporterar innehåll SharePoint och OneDrive för företag webbplatser exporteras kopior av Office dokument. Det finns andra dokument och rapporter som ingår i de exporterade sökresultaten.
   
 Om du exporterar resultaten av en innehållssökning förbereds resultaten och hämtas sedan till en lokal dator.
   
-## <a name="before-you-export-content-search-results"></a>Innan du exporterar sökresultat för innehåll
+## <a name="before-you-export-search-results"></a>Innan du exporterar sökresultat
 
-- Om du vill exportera sökresultat måste du ha rollen Exporthantering i Säkerhets- & Efterlevnadscenter. Den här rollen tilldelas till den inbyggda rollgruppen för eDiscovery-hanteraren. Den är som standard inte tilldelad rollgruppen Organisationshantering. Mer information finns i Tilldela [eDiscovery-behörigheter.](assign-ediscovery-permissions.md)
+- Om du vill exportera sökresultat måste du ha rollen Exporthantering i Säkerhets- & Efterlevnadscenter. Den här rollen tilldelas till den inbyggda rollgruppen för eDiscovery-hanteraren. Den är som standard inte tilldelad rollgruppen Organisationshantering. Mer information finns i [Tilldela eDiscovery-behörigheter](assign-ediscovery-permissions.md).
 
 - Datorn du använder för att exportera sökresultaten måste uppfylla följande systemkrav:
   
@@ -57,7 +57,7 @@ Om du exporterar resultaten av en innehållssökning förbereds resultaten och h
   > <sup>1</sup> Microsoft tillverkar inte tillägg eller tillägg från tredje part för ClickOnce tilläggsprogram. Export av sökresultat med en webbläsare som inte stöds med tillägg eller tillägg från tredje part stöds inte.<br/>
   > <sup>2</sup> På grund av de senaste ändringarna Microsoft Edge är ClickOnce inte längre aktiverat som standard. Anvisningar om hur du aktiverar ClickOnce i Edge finns i [Använda verktyget för eDiscovery-export i Microsoft Edge.](configure-edge-to-export-search-results.md)
   
-- Vi rekommenderar att du laddar ned sökresultat till en lokal dator. Men om du vill eliminera företagets brandvägg eller proxyinfrastruktur från att orsaka problem när du laddar ned sökresultat kan du överväga att ladda ned sökresultat till ett virtuellt skrivbord utanför nätverket. Det kan minska tidsgränserna för export av Azure-dataanslutningar vid export av ett stort antal filer. Mer information om virtuella skrivbord finns i Windows [Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop). 
+- Vi rekommenderar att du laddar ned sökresultat till en lokal dator. Om du vill eliminera företagets brandvägg eller proxyinfrastruktur från att orsaka problem när du laddar ned sökresultat kan du överväga att ladda ned sökresultat till ett virtuellt skrivbord utanför nätverket. Det kan minska tidsgränserna för export av Azure-dataanslutningar vid export av ett stort antal filer. Mer information om virtuella skrivbord finns i Windows [Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop).
 
 - För att förbättra prestandan när du laddar ned sökresultat kan du dela upp sökningar som returnerar en stor uppsättning resultat i mindre sökningar. Du kan till exempel använda datumintervall i sökfrågor för att returnera ett mindre antal resultat som kan laddas ned snabbare.
   
@@ -82,55 +82,57 @@ Om du exporterar resultaten av en innehållssökning förbereds resultaten och h
     </system.net>
     ```
 
+- Om resultatet av en innehållssökning är äldre än 7 dagar och du skickar ett exportjobb visas ett felmeddelande som uppmanar dig att köra sökningen igen för att uppdatera sökresultatet. I så fall avbryter du exporten, kör sökningen igen och startar exporten igen.
+
 ## <a name="step-1-prepare-search-results-for-export"></a>Steg 1: Förbereda sökresultat för export
 
 Det första steget är att förbereda sökresultatet för export. När du förbereder resultat överförs de till en plats i Microsoft som Azure Storage i Microsoft-molnet. Innehåll från postlådor och webbplatser laddas upp med en maxhastighet på 2 GB per timme.
   
-1. Gå till [https://protection.office.com](https://protection.office.com).
+1. I Microsoft 365 kompatibilitetscenter väljer du den innehållssökning som du vill exportera resultat från.
   
-2. Logga in med ditt arbets- eller skolkonto.
+2. På menyn **Åtgärder** längst ned på den utfällade sidan klickar du på **Exportera resultat.**
+
+   ![Alternativet Exportera resultat på menyn Åtgärder](../media/ActionMenuExportResults.png)
+
+   Den **utfällsida** som visar Exportera resultat visas. Vilka exportalternativ som finns att exportera innehåll beror på om sökresultaten finns i postlådor eller på webbplatserna, eller en kombination av båda.
+
+3. Välj **något av** följande alternativ under Utdataalternativ:
   
-3. I den vänstra rutan i säkerhets- & Säkerhets- och efterlevnadscenter klickar du **på Sök** \> **efter innehållsökning**.
+   ![Exportera utdataalternativ](../media/ExportOutputOptions.png)
+
+    - Alla objekt, förutom sådana som har **okänt format,** krypteras eller inte indexeras av andra orsaker. Med det här alternativet exporteras endast indexerade element.
   
-4. Välj **en sökning på** sidan Innehållssökning. 
+    - **Alla objekt, även sådana som har okänt format,** krypteras eller indexeras inte av andra orsaker. Med det här alternativet exporteras indexerade och icke indexerade element.
   
-5. Klicka på Starta export under **Exportera resultat till en dator** i **informationsfönstret.**
+    - **Endast objekt som har ett okänt format, är krypterade eller inte indexeras av andra orsaker.** Med det här alternativet exporteras endast icke indexerade element.
+
+      I avsnittet [Mer information](#more-information) finns en beskrivning av hur delvis indexerade objekt exporteras. Mer information om delvis indexerade objekt finns i [Delvis indexerade objekt i Innehållssökning.](partially-indexed-items-in-content-search.md)
+
+4. Under **Exportera Exchange innehåll som** väljer du något av följande alternativ:
   
-    > [!NOTE]
-    > Om resultatet för en sökning är äldre än 7 dagar uppmanas du att uppdatera sökresultatet. Om det händer avbryter du  exporten, klickar på Uppdatera sökresultat i informationsfönstret för den valda sökningen och startar exporten igen när resultatet har uppdaterats. 
+   ![Exchange alternativ](../media/ExchangeExportOptions.png)
+
+    - **En PST-fil för varje postlåda**: Exporterar en PST-fil för varje användarpostlåda som innehåller sökresultat. Resultat från användarens arkivpostlåda inkluderas i samma PST-fil. Det här alternativet återskapar postlådemappstrukturen från källpostlådan.
   
-6. Välj **något av följande alternativ** under **Utdataalternativ** på sidan Exportera sökresultat:
+    - **En PST-fil som** innehåller alla meddelanden : Exporterar en enskild PST-fil (som heter *Exchange.pst)* som innehåller sökresultatet från alla källpostlådor som ingår i sökningen. Det här alternativet återskapar postlådemappstrukturen för varje meddelande.
   
-    - Alla objekt, förutom sådana som har okänt format, krypteras eller inte indexeras av andra orsaker
+    - **En PST-fil som innehåller** alla meddelanden i en enda mapp : Exporterar sökresultat till en enda PST-fil där alla meddelanden finns i en enskild mapp på översta nivån. Med det här alternativet kan granskare granska objekt i kronologisk ordning (objekt sorteras efter skickat datum) utan att behöva navigera i den ursprungliga postlådemappstrukturen för varje objekt.
   
-    - Alla objekt, även sådana som har okänt format, krypteras eller inte indexeras av andra orsaker
+    - **Enskilda meddelanden:** Exporterar sökresultat som enskilda e-postmeddelanden, i MSG-format. Om du väljer det här alternativet exporteras sökresultat för e-post till en mapp i filsystemet. Mappsökvägen för enskilda meddelanden är densamma som den som användes när du exporterade resultatet till en PST-fil.
   
-    - Endast objekt som har ett okänt format, är krypterade eller inte indexeras av andra orsaker
+5. Konfigurera följande ytterligare alternativ:
+
+   ![Exchange alternativ](../media/OtherExportOptions.png)
+
+   1. Markera kryssrutan **Aktivera avduplicering för Exchange om** du vill utelämna dubbletter av meddelanden.
   
-    I avsnittet [Mer information](#more-information) finns en beskrivning av hur delvis indexerade objekt exporteras. Mer information om delvis indexerade objekt finns i [Delvis indexerade objekt i Innehållssökning.](partially-indexed-items-in-content-search.md)
+      Om du väljer det här alternativet exporteras bara en kopia av ett meddelande även om flera kopior av samma meddelande hittas i postlådorna som genomsöktes. Exportresultatrapporten (som är en fil med namnet Results.csv) innehåller en rad för varje kopia av ett dubblettmeddelande så att du kan identifiera postlådorna (eller de gemensamma mapparna) som innehåller en kopia av dubblettmeddelandet. Mer information om avduplicering och hur dubbletter identifieras finns i [Avduplicering i eDiscovery-sökresultat.](de-duplication-in-ediscovery-search-results.md)
   
-7. Under **Exportera Exchange innehåll som** väljer du något av följande alternativ:
+   2. Markera kryssrutan **Inkludera versioner SharePoint filer om** du vill exportera alla versioner SharePoint dokument. Det här alternativet visas bara om innehållskällorna för sökningen omfattar SharePoint eller OneDrive för företag webbplatser.
   
-    - **En PST-fil för varje postlåda:** Exporterar en PST-fil för varje användarpostlåda som innehåller sökresultat. Resultat från användarens arkivpostlåda inkluderas i samma PST-fil. Det här alternativet återskapar postlådemappstrukturen från källpostlådan.
+   3. Välj **Exportera filer i en komprimerad mapp. Innehåller bara enskilda meddelanden och SharePoint dokument,** kryssruta för att exportera sökresultatet till komprimerade mappar. Det här alternativet visas bara när du väljer att exportera Exchange objekt som enskilda meddelanden och när sökresultatet innehåller SharePoint eller OneDrive dokument. Det här alternativet används främst för att komma runt gränsen på 260 Windows i sökvägsnamnen när objekt exporteras. Se "Filnamn på exporterade objekt" i avsnittet [Mer information.](#more-information)
   
-    - **En PST-fil som innehåller alla meddelanden:** Exporterar en enskild PST-fil *(Exchange.pst)* som innehåller sökresultaten från alla källpostlådor som ingår i sökningen. Det här alternativet återskapar postlådemappstrukturen för varje meddelande.
-  
-    - **En PST-fil som innehåller alla meddelanden i en enda mapp:** Exporterar sökresultat till en enda PST-fil där alla meddelanden finns i en mapp på översta nivån. Med det här alternativet kan granskare granska objekt i kronologisk ordning (objekt sorteras efter skickat datum) utan att behöva navigera i den ursprungliga postlådemappstrukturen för varje objekt.
-  
-    - **Enskilda meddelanden:** Exporterar sökresultat som enskilda e-postmeddelanden med formatet .msg. Om du väljer det här alternativet exporteras sökresultat för e-post till en mapp i filsystemet. Mappsökvägen för enskilda meddelanden är densamma som den som användes när du exporterade resultatet till PST-filer.
-  
-      > [!IMPORTANT]
-      > Om du vill dekryptera RMS-skyddade meddelanden när de exporteras måste du exportera e-postsökresultat som enskilda meddelanden. Krypterade meddelanden förblir krypterade om du exporterar sökresultatet som en PST-fil. Mer information finns i [Dekryptera RMS-skyddade e-postmeddelanden och krypterade bifogade filer i](#decrypting-rms-protected-email-messages-and-encrypted-file-attachments) den här artikeln.
-  
-8. Klicka på **kryssrutan Aktivera avduplicering** om du vill utesluta dubblettmeddelanden. Det här alternativet visas bara om innehållskällorna för sökningen omfattar Exchange postlådor eller gemensamma mappar. 
-  
-    Om du väljer det här alternativet exporteras bara en kopia av ett meddelande även om flera kopior av samma meddelande hittas i postlådorna som genomsöktes. Exportresultatrapporten (Results.csv) innehåller en rad för varje kopia av ett duplicerat meddelande så att du kan identifiera postlådorna (eller de gemensamma mapparna) som innehåller en kopia av dubblettmeddelandet. Mer information om avduplicering och hur dubbletter identifieras finns i [Avduplicering i eDiscovery-sökresultat.](de-duplication-in-ediscovery-search-results.md)
-  
-9. Klicka på **kryssrutan Inkludera versioner SharePoint dokument om** du vill exportera alla versioner SharePoint dokument. Det här alternativet visas bara om innehållskällorna för sökningen omfattar SharePoint eller OneDrive för företag webbplatser. 
-  
-10. Klicka på **kryssrutan Exportera filer i en komprimerad mapp om** du vill exportera sökresultatet till komprimerade mappar. Det här alternativet är bara tillgängligt när du väljer att exportera Exchange objekt som enskilda meddelanden och när sökresultatet innehåller SharePoint eller OneDrive dokument. Det här alternativet används främst för att komma runt gränsen på 260 Windows i sökvägsnamnen när objekt exporteras. Se "Filnamn på exporterade objekt" i avsnittet [Mer information.](#more-information) 
-  
-11. Klicka **på Starta export.** Sökresultaten förbereds för nedladdning, vilket innebär att de laddas upp till en Azure Storage plats i Microsoft-molnet. Det kan ta flera minuter.
+6. Klicka **på Exportera** för att starta exporten. Sökresultaten förbereds för nedladdning, vilket innebär att de samlas in från de ursprungliga innehållsplatserna och sedan laddas upp till en Azure Storage plats i Microsoft-molnet. Det kan ta flera minuter.
 
 Instruktioner för hur du laddar ned exporterade sökresultat finns i nästa avsnitt.
   
@@ -138,7 +140,7 @@ Instruktioner för hur du laddar ned exporterade sökresultat finns i nästa avs
 
 Nästa steg är att ladda ned sökresultatet från den Azure Storage platsen till din lokala dator.
   
-1. Klicka på **fliken Exporter** på **sidan Innehållssökning.** 
+1. På sidan **Innehållssökning** i kompatibilitetscentret för Microsoft 365 väljer du **fliken Exporter**
   
    Du kanske måste klicka på **Uppdatera** för att uppdatera listan med exportjobb så att den visar det exportjobb du har skapat. Exportjobb har samma namn som motsvarande sökning **_Export** lagts till i söknamnet.
   
@@ -146,7 +148,10 @@ Nästa steg är att ladda ned sökresultatet från den Azure Storage platsen til
 
 3. På den utfällna sidan under **Exportera-tangenten** klickar **du på Kopiera till Urklipp.** Du använder den här nyckeln i steg 6 för att ladda ned sökresultaten.
   
-4. Klicka **på Ladda ned resultat.**
+   > [!IMPORTANT]
+   > Eftersom vem som helst kan installera och starta verktyget för eDiscovery-export och sedan använda den här nyckeln för att ladda ned sökresultaten, bör du vidta vissa försiktighetsåtgärder för att skydda den här nyckeln på samma sätt som du skyddar lösenord eller annan säkerhetsrelaterad information.
+
+4. Klicka på Ladda ned resultat längst upp på den **utfällsbara sidan.**
 
 5. Om du uppmanas att installera **eDiscovery-exportverktyget klickar** du på **Installera**.
 
@@ -226,10 +231,10 @@ Information om begränsningar när du exporterar innehållssökningsresultat fin
 
   - **Objekt som hoppats över** När du exporterar sökresultat från SharePoint och OneDrive för företag-webbplatser innehåller exporten vanligtvis en rapport över överhoppade objekt (SkippedItems.csv). Citerade objekt i den här rapporten är vanligtvis objekt som inte laddas ned, till exempel en mapp eller en dokumentuppsättning. Att inte exportera den här typen av objekt är enligt design. För andra objekt som hoppades över visar fältet "Feltyp" och "Felinformation" i rapporten överhoppade objekt orsaken till att objektet hoppades över och inte laddades ned med de andra sökresultaten.
 
-  - **Spåra logg** Innehåller detaljerad loggningsinformation om exporten och kan hjälpa dig att upptäcka problem under exporten.
+  - **Trace.log** Innehåller detaljerad loggningsinformation om exporten och kan hjälpa dig att upptäcka problem under exporten. Om du öppnar ett ärende hos Microsoft Support om ett problem som är relaterat till export av sökresultat kan du bli ombedd att ange den här spårningsloggen.
   
     > [!NOTE]
-    > Du kan bara exportera dessa dokument utan att behöva exportera de faktiska sökresultaten. Se [Exportera en rapport för innehållssökning](export-a-content-search-report.md). 
+    > Du kan bara exportera dessa dokument utan att behöva exportera de faktiska sökresultaten. Se [Exportera en rapport för innehållssökning](export-a-content-search-report.md).
   
 ### <a name="exporting-partially-indexed-items"></a>Exportera delvis indexerade objekt
   
@@ -297,7 +302,7 @@ Rättighetsskyddade (RMS-skyddade) e-postmeddelanden som ingår i resultatet av 
 
     Överväg att ladda ned sökresultaten till en plats med ett kort sökvägsnamn för att minimera problemet. Att ladda ned sökresultat till en mapp med namnet skulle till exempel lägga till färre tecken i sökvägen för exporterade objekt än att ladda ned dem till  `C:\Results` en mapp med namnet  `C:\Users\Admin\Desktop\Results` .
 
-- När du exporterar webbplatsdokument är det också möjligt att det ursprungliga filnamnet på ett dokument ändras. Detta inträffar specifikt för dokument som har tagits bort från en SharePoint eller OneDrive för företag-webbplats som har satts på en plats. När ett dokument som finns på en webbplats som är på en bevarande webbplats tas bort flyttas det borttagna dokumentet automatiskt till biblioteket för bevarande av dokument för webbplatsen (som skapades när webbplatsen skapades som bevarande). När det borttagna dokumentet flyttas till biblioteket för bevarande av dokument läggs ett slumpmässigt genererat och unikt ID till i det ursprungliga filnamnet för dokumentet. Om filnamnet för ett dokument till exempel tas bort och det senare tas bort och flyttas till biblioteket För bevarande av dokument ändras filnamnet på dokumentet som flyttas till biblioteket för bevarande av dokument till något i liknande  `FY2017Budget.xlsx`  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` skick. Om ett dokument i biblioteket för bevarande av dokument matchar frågan för en innehållssökning och du exporterar resultatet av sökningen får den exporterade filen det ändrade filnamnet. I det här exemplet skulle filnamnet på det exporterade dokumentet vara  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` .
+- När du exporterar webbplatsdokument är det också möjligt att det ursprungliga filnamnet på ett dokument ändras. Detta inträffar specifikt för dokument som har tagits bort från en SharePoint eller OneDrive för företag-webbplats som har satts på en plats. När ett dokument som finns på en webbplats som är på en bevarande webbplats tas bort flyttas det borttagna dokumentet automatiskt till biblioteket för bevarande av dokument för webbplatsen (som skapades när webbplatsen skapades som bevarande). När det borttagna dokumentet flyttas till biblioteket för bevarande av dokument läggs ett slumpmässigt genererat och unikt ID till i det ursprungliga filnamnet för dokumentet. Om filnamnet för ett dokument till exempel tas bort och det senare tas bort och flyttas till biblioteket För bevarande av dokument ändras filnamnet på dokumentet som flyttas till biblioteket för bevarande av dokument till något i liknande  `FY2017Budget.xlsx`  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` skick. Om ett dokument i biblioteket för bevarande av dokument matchar frågan för en innehållssökning och du exporterar resultatet av sökningen har den exporterade filen det ändrade filnamnet. I det här exemplet skulle filnamnet på det exporterade dokumentet vara  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` .
 
     När ett dokument på en webbplats som är på plats ändras (och versionshantering för dokumentbiblioteket på webbplatsen har aktiverats) skapas en kopia av filen automatiskt i biblioteket för bevarande av dokument. I det här fallet läggs även ett slumpmässigt genererat och unikt ID till i filnamnet för det dokument som kopieras till biblioteket Bevarande av dokument.
 
@@ -307,7 +312,7 @@ Rättighetsskyddade (RMS-skyddade) e-postmeddelanden som ingår i resultatet av 
   
 - När du laddar ned sökresultat med eDiscovery-exportverktyget kan följande felmeddelande visas: Det här är tillfälligt fel, som vanligtvis förekommer `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` i Azure Storage plats. Du kan lösa problemet genom att försöka [ladda ned sökresultaten igen,](#step-2-download-the-search-results)som startar om eDiscovery-exportverktyget.
 
-- Alla sökresultat och exportrapporterna ingår i en mapp som har samma namn som Innehållssökning. De e-postmeddelanden som exporterades finns i en mapp med namnet **Exchange**. Dokument finns i en mapp med namnet **SharePoint**.
+- Alla sökresultat och exportrapporterna ingår i en mapp som har samma namn som innehållssökningen. De e-postmeddelanden som exporterades finns i en mapp med namnet **Exchange**. Dokument finns i en mapp med namnet **SharePoint**.
 
 - Filsystemmetadata för dokument på SharePoint och OneDrive för företag underhålls när dokument exporteras till den lokala datorn. Det innebär att dokumentegenskaper som datum som skapats och senast ändrades inte ändras när dokument exporteras.
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: Granskningsloggning för postlådor är aktiverat som standard i Microsoft 365 (kallas även standardgranskning av postlådor eller postlådegranskning på som standard). Det innebär att vissa åtgärder som utförs av postlådeägare, ombud och administratörer loggas automatiskt i en granskningslogg för postlådor, där du kan söka efter aktiviteter som utförs för postlådan.
-ms.openlocfilehash: 4b2016b4eee68d336cc2f77f2eb6fef6f3ee2fd9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 859bd0dc633ece887fe11d57068fab4eb1395cdd
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162250"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311178"
 ---
 # <a name="manage-mailbox-auditing"></a>Hantera postlådegranskning
 
@@ -113,7 +113,7 @@ I följande tabell beskrivs de postlådeåtgärder som är tillgängliga i grans
 |**Standard**||![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|
 |**FolderBind**|En postlådemapp kunde nås. Den här åtgärden loggas också när administratören eller ombudet öppnar postlådan. <br/><br/> **Obs!** Granskningsposter för åtgärder som utförts av ombud konsolideras. En granskningspost genereras för åtkomst till enskilda mappar inom en 24-timmarsperiod.|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |**HardDelete**|Ett meddelande togs bort från mappen återställningsbara objekt.|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|
-|**MailItemsAccessed**|E-postdata används av e-postprotokoll och -klienter. Det här värdet är bara tillgängligt för prenumerationsanvändare av E5- eller E5-efterlevnadsprenumeration. Mer information finns i [Konfigurera avancerad granskning för användare.](advanced-audit.md#set-up-advanced-audit-for-users)|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|
+|**MailItemsAccessed**|E-postdata används av e-postprotokoll och -klienter. Det här värdet är bara tillgängligt för prenumerationsanvändare av E5- eller E5-efterlevnadsprenumeration. Mer information finns i [Konfigurera avancerad granskning. ](set-up-advanced-audit.md)|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|
 |**MailboxLogin**|Användaren loggade in i postlådan. |||![Bockmarkering](../media/checkmark.png)|
 |**MessageBind**|Ett meddelande visades i förhandsgranskningsfönstret eller öppnades av en administratör. **Obs!** Även om det här värdet accepteras som en postlådeåtgärd loggas inte dessa åtgärder längre.|![Bockmarkering](../media/checkmark.png)|||
 |**ModifyFolderPermissions**|**Obs!** Även om det här värdet accepteras som en postlådeåtgärd ingår det redan i åtgärden **UpdateFolderPermissions** och granskas inte separat. Använd med andra ord inte det här värdet.||||
@@ -121,7 +121,7 @@ I följande tabell beskrivs de postlådeåtgärder som är tillgängliga i grans
 |**MoveToDeletedItems**|Ett meddelande togs bort och flyttades till mappen Borttaget.|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|
 |**RecordDelete**|Ett objekt som märks som en post togs bort mjukt (flyttades till mappen Återställningsbara objekt). Objekt som har etiketter som poster kan inte tas bort permanent (rensas från mappen för permanent borttagna objekt).|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|
 |**RemoveFolderPermissions**|**Obs!** Även om det här värdet accepteras som en postlådeåtgärd ingår det redan i åtgärden **UpdateFolderPermissions** och granskas inte separat. Använd med andra ord inte det här värdet.||||
-|**Skicka**|Användaren skickar ett e-postmeddelande, svarar på ett e-postmeddelande eller vidarebefordrar ett e-postmeddelande. Det här värdet är bara tillgängligt för prenumerationsanvändare av E5- eller E5-efterlevnadsprenumeration. Mer information finns i [Konfigurera avancerad granskning för användare.](advanced-audit.md#set-up-advanced-audit-for-users)|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|
+|**Skicka**|Användaren skickar ett e-postmeddelande, svarar på ett e-postmeddelande eller vidarebefordrar ett e-postmeddelande. Det här värdet är bara tillgängligt för prenumerationsanvändare av E5- eller E5-efterlevnadsprenumeration. Mer information finns i [Konfigurera avancerad granskning för användare.](set-up-advanced-audit.md)|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|
 |**SendAs**|Ett meddelande skickades med behörigheten Skicka som. Det innebär att en annan användare skickade meddelandet som om det kom från postlådans ägare.|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|Ett meddelande skickades med behörigheten SendOnBehalf. Det innebär att en annan användare skickade meddelandet åt postlådans ägare. Vem meddelandet skickades för och vem som faktiskt skickade meddelandet visas för mottagaren i meddelandet.|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|Ett meddelande togs bort permanent eller togs bort från mappen Borttaget. Mjuka borttagna objekt flyttas till mappen för permanent borttagna objekt.|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|

@@ -1,5 +1,5 @@
 ---
-title: Kom igång med viktiga eDiscovery-ärenden i Microsoft 365
+title: Komma igång med core eDiscovery-ärenden i Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,15 +16,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: I den här artikeln beskrivs hur du kommer igång med grundläggande eDiscovery i Microsoft 365. När du har tilldelar eDiscovery-behörigheter och skapat ett ärende kan du lägga till medlemmar, skapa eDiscovery-rymmer och sedan söka efter och exportera data som är relevanta för din undersökning.
-ms.openlocfilehash: 4a814b2e0019f86e4a4fc0e26d19df4411402749
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Här beskrivs hur du kommer igång med Core eDiscovery i Microsoft 365. När du tilldelar eDiscovery-behörigheter och skapar ett ärende kan du lägga till medlemmar, skapa eDiscovery-innehåll som sätts i innehåll och sedan söka efter och exportera innehåll som är relevant för din undersökning.
+ms.openlocfilehash: 00506c2f072fff6aa30c7d96bffdc18eb5eda20b
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162123"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311022"
 ---
-# <a name="get-started-with-core-ediscovery"></a>Kom igång med Core eDiscovery
+# <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>Komma igång med Core eDiscovery i Microsoft 365
 
 Core eDiscovery i Microsoft 365 innehåller ett grundläggande eDiscovery-verktyg som organisationer kan använda för att söka efter och exportera innehåll i Microsoft 365 och Office 365. Du kan också använda Grundläggande eDiscovery för att placera ett eDiscovery-värde på innehållsplatser, till exempel Exchange-postlådor, SharePoint-webbplatser, OneDrive-konton och Microsoft Teams. Inget krävs för att distribuera Bas-eDiscovery, men det finns vissa nödvändiga uppgifter som en IT-administratör och eDiscovery-hanterare måste slutföra innan organisationen kan börja använda Core eDiscovery för att söka, exportera och bevara innehåll.
 
@@ -80,9 +80,9 @@ Utför följande steg för att lägga till användare i rollgruppen för eDiscov
 
 Det finns två undergrupper i rollgruppen för eDiscovery-hanteraren. Skillnaden mellan dessa undergrupper beror på omfattningen.
 
-- **eDiscovery Manager:** Kan visa och hantera core eDiscovery-ärenden som de skapar eller är medlemmar i. Om en annan eDiscovery Manager skapar ett ärende men inte lägger till en andra eDiscovery Manager som medlem i det fallet kan inte den andra eDiscovery-hanteraren visa eller öppna ärendet på Core eDiscovery-sidan i efterlevnadscentret. I allmänhet kan de flesta i organisationen läggas till i undergruppen för eDiscovery Manager.
+- **eDiscovery Manager:** Kan visa och hantera core eDiscovery-fall som de skapar eller är medlemmar i. Om en annan eDiscovery Manager skapar ett ärende men inte lägger till en andra eDiscovery Manager som medlem i det fallet kan inte den andra eDiscovery-hanteraren visa eller öppna ärendet på Core eDiscovery-sidan i efterlevnadscentret. I allmänhet kan de flesta i organisationen läggas till i undergruppen för eDiscovery Manager.
 
-- **eDiscovery-administratör:** Kan utföra alla uppgifter för ärendehantering som en eDiscovery-hanterare kan utföra. En eDiscovery-administratör kan dessutom:
+- **eDiscovery-administratör:** Kan utföra alla uppgifter som en eDiscovery-hanterare kan utföra. En eDiscovery-administratör kan dessutom:
 
   - Visa alla ärenden som listas på sidan Bas-eDiscovery.
   
@@ -104,27 +104,27 @@ Nästa steg är att skapa ett ärende och börja använda Core eDiscovery. Så h
 
 3. På sidan **Bas-eDiscovery** klickar du på **Skapa ett ärende.**
 
-4. På den **utfällbara** sidan Nytt ärende ger du ärendet ett namn (obligatoriskt) och anger ett valfritt ärendenummer och en beskrivning. Namnet på ärendet måste vara unikt inom organisationen.
+4. På den **utfällbara** sidan Nytt ärende ger du ärendet ett namn (obligatoriskt) och skriver en valfri beskrivning. Namnet på ärendet måste vara unikt inom organisationen.
 
 5. Klicka **på Spara** för att skapa ärendet.
 
-   Det nya ärendet skapas och visas på sidan Bas-eDiscovery. Du kan behöva klicka på **Uppdatera för** att visa det nya ärendet. 
+   Det nya ärendet skapas och visas på sidan Bas-eDiscovery. Du kan behöva klicka på **Uppdatera för** att visa det nya ärendet.
 
 ## <a name="step-4-optional-add-members-to-a-core-ediscovery-case"></a>Steg 4 (valfritt): Lägga till medlemmar i ett grundläggande eDiscovery-ärende
 
-Om du skapar ett ärende i steg 3 och är den enda personen som kommer att använda ärendet behöver du inte utföra det här steget. Du kan börja använda ärendet för att skapa eDiscovery-innehåll, söka efter innehåll eller exportera sökresultat. Utför det här steget om du vill ge andra användare (eller rollgrupper) åtkomst till ärendet.
+Om du skapar ett ärende i steg 3 och är den enda personen som kommer att använda ärendet behöver du inte utföra det här steget. Du kan börja använda ärendet för att skapa eDiscovery-innehåll, söka efter innehåll och exportera sökresultat. Utför det här steget om du vill ge andra användare (eller rollgrupper) åtkomst till ärendet.
 
 1. På sidan **Bas-eDiscovery** i Microsoft 365 efterlevnadscenter klickar du på namnet på det ärende som du vill lägga till medlemmar i.
 
-2. På sidan **Hantera detta ärende,** under Hantera **medlemmar, klickar du på** Lägg till **för** att lägga till medlemmar i ärendet. 
+2. På startsidan för ärendet väljer du fliken **Inställningar** och väljer sedan Access & **behörigheter.**
 
-    Du kan också välja att lägga till rollgrupp som medlemmar i ett ärende. Klicka **på Lägg till under** Hantera **rollgrupper.** Du kan bara tilldela rollgrupper där du är medlem i ett ärende. Det beror på att rollgrupper styr vem som kan tilldela medlemmar till ett e-dataidentifieringsfall.
+3. På den **utfäll & i Access** klickar du på Lägg **till** under Medlemmar **för** att lägga till medlemmar i ärendet.
 
-3. I listan över personer eller rollgrupper som kan läggas till som medlemmar i ärendet klickar du på kryssrutan bredvid namnen på de personer (eller rollgrupper) som du vill lägga till. Om du har en stor lista med personer  som kan läggas till som medlemmar kan du använda sökrutan för att söka efter en viss person i listan.
+    Du kan också välja att lägga till rollgrupper som medlemmar i ett ärende. Klicka **på Lägg till** under **Rollgrupper.** Du kan bara tilldela rollgrupper där du är medlem i ett ärende. Det beror på att rollgrupper styr vem som kan tilldela medlemmar till ett e-dataidentifieringsfall.
+
+4. I listan över personer eller rollgrupper som kan läggas till som medlemmar i ärendet klickar du till vänster om namnet på de personer (eller rollgrupper) som du vill lägga till. Om du har en stor lista över personer eller rollgrupper som kan läggas till som medlemmar kan du använda sökrutan för att söka efter en specifik person eller rollgrupp i listan. 
   
-4. När du har valt de personer eller rollgrupper du vill lägga till som medlemmar i ärendet klickar du på Lägg **till**.
-
-5. Spara **den** nya listan med ärendemedlemmar genom att klicka på Spara.
+5. När du har valt de personer eller rollgrupper  du vill lägga till som medlemmar i ärendet klickar du på Spara för att spara de nya medlemmarna eller rollgrupperna.
 
 ## <a name="explore-the-core-ediscovery-workflow"></a>Utforska eDiscovery-kärnarbetsflödet
 
@@ -132,7 +132,7 @@ Här är ett enkelt arbetsflöde för att skapa eDiscovery som kan hjälpa dig a
 
 ![Basarbetsflöde för eDiscovery](../media/CoreEdiscoveryWorkflow.png)
 
-1. **[Skapa ett eDiscovery-hold](create-ediscovery-holds.md)**. Det första steget när ett ärende har skapats är att sätta ett värde på (kallas även *för ett e-dataidentifieringsland)* för innehållsplatserna för de personer som är intressanta för din undersökning. Innehållsplatserna omfattar Exchange postlådor, SharePoint webbplatser, OneDrive-konton samt postlådor och webbplatser som är kopplade till Microsoft Teams och Office 365 Grupper. Även om det här steget är valfritt behålls innehåll som kan vara relevant för ärendet under undersökningen om du skapar ett bevarande av e-dataidentifiering. När du skapar ett bevarande för e-dataidentifiering kan du bevara allt innehåll på specifika innehållsplatser eller skapa ett frågebaserat bevarande för att bara bevara det innehåll som matchar en bevarandefråga. Förutom att bevara innehållet är ett annat bra skäl att skapa eDiscovery-innehåll snabbt söka efter platser för innehåll som är spärrade (i stället för att behöva välja varje plats att söka på) när du skapar och kör sökningar i nästa steg. När du har slutfört undersökningen kan du släppa alla väntande ändringar som du har skapat.
+1. **[Skapa ett eDiscovery-hold](create-ediscovery-holds.md)**. Det första steget när ett ärende har skapats är att sätta ett värde på (kallas även *för ett e-dataidentifieringsland)* för innehållsplatserna för de personer som är intressanta för din undersökning. Innehållsplatserna omfattar Exchange postlådor, SharePoint webbplatser, OneDrive-konton och postlådor och webbplatser som är kopplade till Microsoft Teams och Office 365 Grupper. Även om det här steget är valfritt behålls innehåll som kan vara relevant för ärendet under undersökningen om du skapar ett bevarande av e-dataidentifiering. När du skapar ett bevarande för e-dataidentifiering kan du bevara allt innehåll på specifika innehållsplatser eller skapa ett frågebaserat bevarande för att bara bevara det innehåll som matchar en bevarandefråga. Förutom att bevara innehållet är ett annat bra skäl att skapa eDiscovery-innehåll snabbt söka efter platser för innehåll som är spärrade (i stället för att behöva välja varje plats att söka på) när du skapar och kör sökningar i nästa steg. När du har slutfört undersökningen kan du släppa alla väntande ändringar som du har skapat.
 
 2. **[Söka efter innehåll](search-for-content-in-core-ediscovery.md)**. När du har skapat eDiscovery-innehåll kan du använda det inbyggda sökverktyget för att söka på platser för innehåll som är spärrade. Du kan också söka efter data som kan vara relevanta för ärendet på andra innehållsplatser. Du kan skapa och köra olika sökningar som är kopplade till ärendet. Du använder nyckelord, egenskaper [](keyword-queries-and-search-conditions.md) och villkor för att skapa sökfrågor som returnerar sökresultat med de data som troligen är relevanta för ärendet. Du kan också:
 

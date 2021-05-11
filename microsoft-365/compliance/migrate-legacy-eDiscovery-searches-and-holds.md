@@ -14,16 +14,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: ef5562aa6f5c7519d19452100b55dd4bc30d4126
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: aaae5e6bddc48f29cc0766fe26a1976672c7dd49
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162221"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52310816"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Migrera äldre eDiscovery-sökningar och eDiscovery-Microsoft 365 efterlevnadscenter
 
-I efterlevnadscentret för Microsoft 365 får du en bättre upplevelse för eDiscovery-användning, inklusive högre tillförlitlighet, bättre prestanda och många funktioner som är skräddarsydda för eDiscovery-arbetsflöden, inklusive fall där innehåll kan struktureras efter område, granskningsuppsättningar för granskning av innehåll och analyser för att underlätta granskning av data, till exempel närdubbletter av gruppering, e-posttrådning, temananalyser och prognostiska kodning.
+Efterlevnadscentret för Microsoft 365 ger en förbättrad upplevelse för eDiscovery-användning, inklusive högre tillförlitlighet, bättre prestanda och många funktioner som är skräddarsydda för eDiscovery-arbetsflöden, inklusive fall där innehåll kan struktureras efter område, granskningsuppsättningar för att granska innehåll och analys för att underlätta granskning av data, till exempel närplicerad gruppering, e-posttrådning, temananalys och prognostiska kodning.
 
 För att hjälpa kunder att dra nytta av de nya och förbättrade funktionerna innehåller den här artikeln grundläggande vägledning om hur du migrerar eDiscovery-sökningar och In-Place-sökningar från administrationscentret för Exchange till efterlevnadscentret för Microsoft 365.
 
@@ -136,11 +136,11 @@ Kontrollera att allt är korrekt inställt genom att gå till Microsoft 365 efte
 
 ![Microsoft 365 Efterlevnadscenter för eDiscovery](../media/MigrateLegacyeDiscovery7.png)
 
-Det ärende som du skapade i steg 3 visas på **sidan Bas-eDiscovery.** Öppna ärendet och lägg sedan märke till det spärrade ärende som du skapade i steg 4 i listan på **fliken Spärrar.** Du kan klicka på det här läget om du vill visa information, inklusive antalet postlådor som behålls och distributionsstatus.
+Det ärende som du skapade i steg 3 visas på **sidan Bas-eDiscovery.** Öppna ärendet och lägg sedan märke till det ärende du skapade i steg 4 på **fliken** Håll. Du kan välja att hålla på plats om du vill se information på den utfällliga sidan, inklusive antalet postlådor som är inhållna och distributionsstatus.
 
 ![eDiscovery som sätts i Microsoft 365 efterlevnadscenter](../media/MigrateLegacyeDiscovery8.png)
 
-Sökningen som du skapade i steg 7 visas på fliken Sökningar **för** eDiscovery-ärendet.
+Sökningen som du skapade i steg 7 visas på **fliken Sökningar** för ärendet.
 
 ![Sökning efter eDiscovery-fall i Microsoft 365 efterlevnadscenter](../media/MigrateLegacyeDiscovery9.png)
 

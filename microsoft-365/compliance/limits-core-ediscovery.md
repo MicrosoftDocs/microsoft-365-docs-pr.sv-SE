@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: I den här artikeln beskrivs gränserna för grundläggande e-dataidentifieringsfall i Microsoft 365.
-ms.openlocfilehash: e18e1e6c1d9d7ecd78deaf267be72ccdc9d1ba5d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e7b1013abd9fd94748baf3b83dd04efbc3831a1d
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52161856"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311430"
 ---
 # <a name="limits-in-core-ediscovery"></a>Begränsningar i bas-e-dataidentifiering
 
@@ -31,10 +31,10 @@ I följande tabell finns begränsningar för grundläggande eDiscovery-ärenden 
   | Beskrivning av gräns | Gräns |
   |:-----|:-----|
   |Maximalt antal ärenden för en organisation.  <br/> |Ingen gräns  <br/> |
-  |Maximalt antal spärrade ärende för en organisation.  <br/> |10,000  <br/> |
-  |Maximalt antal postlådor för ett enskilt ärende håll. Den här gränsen omfattar totalt antal användarpostlådor och postlådorna som är kopplade Microsoft 365 grupper, Microsoft Teams och Yammer grupper.  <br/> |1,000  <br/> |
+  |Maximalt antal spärrade ärende för en organisation.  <br/> |10 000  <br/> |
+  |Maximalt antal postlådor för ett enskilt ärende håll. Den här gränsen omfattar totalt antal användarpostlådor och postlådorna som är kopplade Microsoft 365 grupper, Microsoft Teams och Yammer grupper.  <br/> |1 000  <br/> |
   |Maximalt antal webbplatser i ett enskilt ärende. Den här gränsen omfattar det totala antalet OneDrive för företag, SharePoint webbplatser och webbplatser som är kopplade till grupper Microsoft 365, Microsoft Teams och Yammer grupper.  <br/> |100  <br/> |
-  |Maximalt antal ärenden som visas på eDiscovery-huvudsidan och det maximala antalet objekt som visas på flikarna Spärrar, Sökningar och Exportera i ett ärende. <sup>1</sup> |1,000|
+  |Maximalt antal ärenden som visas på eDiscovery-huvudsidan och det maximala antalet objekt som visas på flikarna Spärrar, Sökningar och Exportera i ett ärende. <sup>1</sup> |1 000|
   |||
 
    > [!NOTE]
@@ -45,4 +45,4 @@ I följande tabell finns begränsningar för grundläggande eDiscovery-ärenden 
    > - [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)
    > - [Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)
 
-Mer information om begränsningar relaterade till innehållssökningar och exporter som är kopplade till en bas-e-dataidentifieringsfall finns i Begränsningar för innehållssökning och [bas-eDiscovery.](limits-for-content-search.md)
+Mer information om begränsningar relaterade till sökningar och exporter som är kopplade till en bas-e-dataidentifieringsfall finns i Begränsningar för innehållssökning och [bas-eDiscovery.](limits-for-content-search.md)
