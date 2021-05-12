@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: Lär dig hur du skickar e-post som en distributionslista i Microsoft 365.
-ms.openlocfilehash: 379f2471fd38da5098bf8f2ca82f4f76ee82bd8e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bb1d5a62d2b1a3bbfae87849e8aa96cef14c173e
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915164"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332441"
 ---
 # <a name="send-email-as-a-distribution-list"></a>Skicka e-post som en distributionslista
 
@@ -38,6 +38,8 @@ Innan du utför de här stegen kontrollerar du att du har lagts till i en Micros
   
  **Administratörer:** Kontrollera att du följt stegen i Lägga till en [Microsoft 365-användare](../email/add-user-or-contact-to-distribution-list.md) eller kontakt i en lista och Tillåt medlemmar att skicka e-post som en [Microsoft 365-grupp](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group) och har lagt till rätt personer i distributionslistan.
   
+## <a name="outlook-on-the-web"></a>Outlook på webben
+
 1. Öppna Outlook på webben och gå till inkorgen. 
     
 2. Öppna ett meddelande som har skickats till distributionslistan. 
@@ -49,3 +51,13 @@ Innan du utför de här stegen kontrollerar du att du har lagts till i en Micros
 5. Högerklicka på från-adressen, t.ex. `Ina@weewalter.me` , och välj Ta **bort**.<br/> ![Ta bort FROM-alias](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
 6. Skriv sedan adressen till distributionslistan, till support@contoso.com, och skicka meddelandet. Nästa gång du svarar från distributionslistan visas dess adress som ett alternativ i **från-listan.**<br/>![Alias för den delade postlådan visas](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
+
+## <a name="outlook"></a>Outlook
+
+1. Öppna Outlook-skrivbordsklienten.
+
+2. Skapa ett nytt e-postmeddelande. Klicka i **fältet Från** och välj **Annan e-postadress.** Om du inte ser fältet Från går du till **Alternativ** och väljer **Från** i avsnittet Visa fält.
+
+3. Välj adressen **för distributionslistan** i den globala adresslistan.
+
+4. Skicka e-postmeddelandet.

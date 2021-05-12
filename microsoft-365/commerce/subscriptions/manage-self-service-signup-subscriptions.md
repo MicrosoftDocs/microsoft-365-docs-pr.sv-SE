@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +16,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
-ms.reviewer: jkinma
-search.appverid:
-- MET150
+search.appverid: MET150
 description: Lär dig hur du hanterar kostnadsfria registreringsprenumerationer för självbetjäning för din organisation.
 ms.date: 03/17/2021
-ms.openlocfilehash: 64648151d7761bd8bb0d2301d59fb093de98b127
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: b469515a649399c71ef64ba2567dfa376f21e9a7
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107622"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333224"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Hantera prenumerationer på självbetjäning
 
@@ -60,4 +58,4 @@ Du använder cmdleten [**Set-MsolCompanySettings**](/powershell/module/msonline/
 
 ## <a name="i-have-a-self-service-sign-up-subscription-that-blocks-directory-deletion"></a>Jag har en prenumeration med självbetjäning som blockerar katalogborttagning
 
-Självbetjäning för registrering av produkter som enskilda användare kan registrera sig för skapar även en gästanvändare för autentisering i din Azure AD-katalog. För att undvika dataförlust blockerar dessa självbetjäningsprodukter katalogborttagningar tills de helt tas bort från katalogen. De kan bara tas bort av Azure AD-administratören. Mer information finns i Ta [bort en katalog i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-delete-howto).
+Självbetjäning för registrering av produkter som enskilda användare kan registrera sig för skapar även en gästanvändare för autentisering i din Azure AD-katalog. För att undvika dataförlust blockerar dessa självbetjäningsprodukter katalogborttagningar tills de helt tas bort från katalogen. De kan bara tas bort av Azure AD-administratören. Mer information finns i Ta [bort en katalog i Azure Active Directory.](/azure/active-directory/users-groups-roles/directory-delete-howto)

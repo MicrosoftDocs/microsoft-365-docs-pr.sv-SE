@@ -21,18 +21,18 @@ ms.custom:
 search.appverid: MET150
 description: Ta reda på vilka prenumerationer din organisation har genom att gå till sidan Dina produkter.
 ms.date: 01/21/2021
-ms.openlocfilehash: c54b9795487f1cfc5902c2c761fdd65b78109bcf
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: e1f7ebecafa5edff1ccc3d6eb4e4dc143054996a
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327240"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332672"
 ---
 # <a name="what-subscription-do-i-have"></a>Vilken prenumeration har jag?
 
 Om du är administratör kan du kontrollera vilka prenumerationer din organisation har genom att gå till administrationscentret.
   
- **Är du inte administratör?** Se [Vilken Microsoft 365 för företag-produkt eller -licens har jag?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
+**Är du inte administratör?** Se [Vilken produkt eller licens för Microsoft 365 för företag har jag?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
 2. På **fliken** Produkter visas alla dina prenumerationer. Varje prenumerationsrad innehåller information om licenser, prenumerationsstatus och fakturering.

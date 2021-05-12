@@ -4,6 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: SKjerland
+ms.reviewer: nicholak
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -12,22 +13,20 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
-- MSStore_Link
 - AdminSurgePortfolio
+- commerce_licensing
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Ta bort licens från en delad postlåda för att tilldela den till en annan användare. '
-ms.openlocfilehash: 873b50b34b9887ada92cc56f7083e3b748a52035
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 2d0e6e6b1d6222bea80265bf6cc008e21ac3239c
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327228"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332660"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Ta bort en licens från en delad postlåda
 
@@ -42,7 +41,6 @@ Delade postlådor kräver vanligtvis inte en licens. Följ de här anvisningarna
 > 3. Den delade postlådan ligger i ett bevarande av juridiska skäl.
 > 4. Den delade postlådan har en tilldelad Microsoft Defender-licens.
 
-  
 ## <a name="remove-the-license"></a>Ta bort licensen
 
 ::: moniker range="o365-worldwide"
@@ -50,7 +48,7 @@ Delade postlådor kräver vanligtvis inte en licens. Följ de här anvisningarna
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
 
    > [!NOTE]
-   > Du måste ta bort licensen från sidan Aktiva användare. Du kan inte ta bort licensen från sidan Delad postlåda eftersom licenser är användarinställningar. 
+   > Du måste ta bort licensen från sidan Aktiva användare. Du kan inte ta bort licensen från sidan Delad postlåda eftersom licenser är användarinställningar.
   
 2. Välj den delade postlådan.
 
@@ -100,9 +98,7 @@ Delade postlådor kräver vanligtvis inte en licens. Följ de här anvisningarna
 
 6. Du betalar fortfarande för licensen. Ta bort licensen från prenumerationen [om du vill sluta betala för den.](../../commerce/licenses/buy-licenses.md)
 
-::: moniker-end 
-
- 
+::: moniker-end
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

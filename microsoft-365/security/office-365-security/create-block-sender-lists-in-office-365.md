@@ -14,12 +14,12 @@ search.appverid:
 description: Administratörer kan läsa mer om tillgängliga och rekommenderade alternativ för att blockera inkommande meddelanden i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a9ee0a026e33bf07bb929607b8eed9078d0b6e4c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: fa2a5e0c71f14838dc8446431f5ea02a535fb787
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207195"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331460"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>Skapa spärrade avsändarlistor i EOP
 
@@ -70,7 +70,7 @@ När meddelanden blockeras på grund av en användares lista med spärrade avsä
 
 ## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>Använda listor över spärrade avsändare eller spärrade domäner
 
-När flera användare påverkas är omfattningen bredare, så nästa bästa alternativ är listor över spärrade avsändare eller blockerade domäner i principer som är skräppostskyddade. Meddelanden från avsändare i listorna markeras som Skräppost och åtgärden som  du har konfigurerat för skräppostfiltrets bedömning vidtas på meddelandet. Mer information finns i [Konfigurera principer för skräppostskydd](configure-your-spam-filter-policies.md).
+När flera användare påverkas är omfattningen bredare, så nästa bästa alternativ är listor över spärrade avsändare eller blockerade domäner i principer som är skräppostskyddade. Meddelanden från avsändare på listorna markeras som Skräppost med hög konfidens  och åtgärden som du har konfigurerat för skräppostfiltret Hög förtroende för skräppostfiltret vidtas på meddelandet. Mer information finns i [Konfigurera principer för skräppostskydd](configure-your-spam-filter-policies.md).
 
 Maxgränsen för dessa listor är cirka 1 000 poster.
 

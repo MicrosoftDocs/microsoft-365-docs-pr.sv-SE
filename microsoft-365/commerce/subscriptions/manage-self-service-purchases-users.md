@@ -5,22 +5,25 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+ms.collection: M365-subscription-management
+ms.custom:
+- AdminSurgePortfolio
+- commerce_ssp
 search.appverid:
 - MET150
 description: Användarna kan lära sig att hantera köp via självbetjäning.
-ms.openlocfilehash: 9935259f05432b964fbe138b39397f192e203eb2
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.date: 03/17/2021
+ms.openlocfilehash: 0f9832f69d7e89346e82e3acef0e626fc7f6c4de
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297302"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333260"
 ---
 # <a name="manage-self-service-purchases-users"></a>Hantera självbetjäningsköp (användare)
 
@@ -31,7 +34,7 @@ ms.locfileid: "52297302"
 
 ::: moniker-end
 
-Som användare kan du köpa prenumerationer på vissa produkter och tilldela licenser för prenumerationerna till personer i din grupp. Du är ansvarig för att betala för alla köp du gör med självbetjäning. Du kan hantera dina prenumerationer i Microsoft 365 administrationscenter på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>.
+Som användare kan du köpa prenumerationer på vissa produkter och tilldela licenser för prenumerationerna till personer i din grupp. Du är ansvarig för att betala för alla köp du gör med självbetjäning. Du kan hantera dina prenumerationer i administrationscentret för Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">på admin.microsoft.com</a>.
 
 Administratören har en skrivskyddad vy för alla prenumerationer som du köper. De kan se produkt, inköpare namn, prenumerationer köpta, utgångsdatum, inköpspris och tilldelade användare för varje prenumeration som du köper.
 

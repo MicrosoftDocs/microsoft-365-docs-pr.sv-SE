@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: seemg, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,19 +20,17 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_signup
-- PPM_pablom
-ms.reviewer: seemg
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
 description: Förstå vad du behöver veta innan du går igenom registreringsprocessen för Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 77fe0252a267b13fda19a6842ce0e07b1b8307b1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 12262a2165392b9dca699605f0b86fd7f3129ef0
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244014"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332696"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Så här registrerar du dig – hjälp för administratörer
 

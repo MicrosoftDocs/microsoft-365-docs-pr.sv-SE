@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: shegu, nicholak
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,27 +13,26 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 description: Läs om hur du tilldelar licenser till grupper för användning med enheter.
 ms.custom:
-- okr_SMB
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.openlocfilehash: a316810e3e6ddb1373697dc56b2fccb5a32cf0b1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+- okr_SMB
+- commerce_licensing
+search.appverid: MET150
+ms.date: 03/17/2021
+ms.openlocfilehash: 67bd0734953c64f51390aac949a7da477914c7b4
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911488"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331664"
 ---
 # <a name="manage-licenses-for-devices"></a>Hantera licenser för enheter
 
 Om du har Microsoft 365-appar för företag (enhet) eller Microsoft 365-appar för utbildning (enhet) kan du tilldela licenser till enheter med hjälp av Azure AD-grupper. När en enhet har en licens kan alla som använder enheten använda Microsoft 365-appar för företag (kallades tidigare Office 365 ProPlus). Anta till exempel att du har 20 bärbara datorer och surfplattor som används av personer i organisationen. När du tilldelar en licens till varje enhet använder varje person som loggar in på någon av enheterna Microsoft 365-appar för företag utan att behöva ha en egen licens.
 
 > [!IMPORTANT]
-> Enhetsbaserad licensiering för Microsoft 365-appar för företag är endast tillgängligt som en tilläggslicens för vissa kommersiella kunder och vissa utbildningskunder. För kommersiella kunder är licensen *Microsoft 365-appar* för företag (enhet) och är endast tillgänglig via Enterprise Agreement/Enterprise Agreement-prenumeration. För utbildningskunder är licensen *Microsoft 365 Apps for Education (enhet)* och är endast tillgänglig via Enrollment for Education Solutions (EES). Mer information finns i blogginlägget om tillgänglighet [för utbildning.](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-device-based-subscription-for-education/) Kontakta din Microsoft-kontorepresentant om du behöver kommersiell tillgänglighet.
+> Enhetsbaserad licensiering för Microsoft 365-appar för företag är endast tillgängligt som en tilläggslicens för vissa kommersiella kunder och vissa utbildningskunder. För kommersiella kunder är licensen *Microsoft 365-appar* för företag (enhet) och är endast tillgänglig via Enterprise Agreement/Enterprise Agreement-prenumeration. För utbildningskunder är licensen *Microsoft 365 Apps for Education (enhet)* och är endast tillgänglig via Enrollment for Education Solutions (EES). Mer information finns i blogginlägget om tillgänglighet [för utbildning.](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-office-365-proplus-device-based-subscription-for-education) Kontakta din Microsoft-kontorepresentant om du behöver kommersiell tillgänglighet.
 
 Börja genom att skapa en grupp i administrationscentret för Azure Active Directory och sedan tilldela enheter till gruppen. Mer information om enhetslicensiering, bland annat enhetskrav, vilka typer av grupper du kan använda och hur du konfigurerar Microsoft 365-appar för företag för användning av enhetslicensiering finns i Enhetsbaserade licenser för [Microsoft 365-appar](/deployoffice/device-based-licensing)för företag.
 

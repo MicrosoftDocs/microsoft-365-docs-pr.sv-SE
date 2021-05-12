@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: Läs om vad som händer med dina data när prenumerationen för Microsoft 365 för företag förfaller, inaktiveras eller om du avbryter den.
 ms.date: 04/08/2021
-ms.openlocfilehash: f226514078a9f6d6bc1f4761269e2740300ef88d
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: d0821214f9a8c242306685db2ee7faf3779cecff
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326804"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333032"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Vad händer med mina data och åtkomst när prenumerationen för Microsoft 365 för företag går ut?
 
@@ -50,6 +50,7 @@ Följande tabell visar vad du kan förvänta dig när en betald prenumeration f�
 *För de flesta erbjudanden, i de flesta länder och regioner.
   
 > [!NOTE]
+>
 > **Vad är kunddata?** Kunddata, som definierat i [Villkor för Microsofts onlinetjänst](https://go.microsoft.com/fwlink/p/?LinkId=613649), hänvisar till alla data, inklusive alla text-, ljud- och bildfiler som tillhandahålls till Microsoft av eller för kundens räkning genom kundens användning av Microsoft 365-tjänster. Mer information om hur du skyddar kunddata finns i [Kom igång med Microsoft Service Trust Portal](../../compliance/get-started-with-service-trust-portal.md).
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>Vad händer om jag avbryter en prenumeration?
@@ -68,6 +69,7 @@ Information om hur du avbryter prenumerationen finns i [Avbryt prenumeration](ca
 > Om du vill att dina prenumerationsdata ska raderas innan det typiska tillståndet Inaktiverad är slut kan du [stänga ditt konto](../close-your-account.md).
   
 > [!NOTE]
+>
 > Om du tar bort en prenumeration försvinner utgångna och inaktiverade faser så tas data och innehåll i SharePoint Online, inklusive OneDrive, bort omedelbart.
 
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>Vilka alternativ har jag när min prenumeration är på väg att förfalla?

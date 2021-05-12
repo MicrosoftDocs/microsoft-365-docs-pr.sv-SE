@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,22 +13,19 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
+search.appverid: MET150
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
-- PPM_jmueller
-ms.reviewer: jkinma
 description: Läs om hur du köper och hanterar tillägg för din Microsoft 365 för företag-prenumeration.
 ms.date: 04/02/2021
-ms.openlocfilehash: d60503cd7ab7be219c3ed813dd1d9aef480cd4dc
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8cf586114c9b6ab30a9f4e5acdd669e185edd71b
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297338"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331784"
 ---
 # <a name="buy-or-manage-add-ons"></a>Köp eller hantera tilläggsprogram
 
@@ -46,7 +44,7 @@ Du måste vara global administratör eller faktureringsadministratörer för att
 
 Använd följande steg för att hitta och köpa tillägg. Listan innehåller bara tillägg som är tillgängliga för dig. Den här listan baseras på dina aktiva prenumerationer och andra befintliga tillägg som du redan har. Om ett tillägg inte finns med i listan kan du inte köpa det.
 
-Mer information Skype för företag tillägg finns i Skype för företag [och Microsoft Teams tilläggslicensiering.](/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing)
+Mer information om Skype för företag-tillägg finns i Licensiering för [Skype för företag- och Microsoft Teams-tillägg.](/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing)
 
 1. I administrationscentret går du  till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Faktureringsköpstjänster.</a>
 2. Längst ned på **sidan Köp** tjänster, i avsnittet Tillägg, hittar du tillägget som du vill köpa och väljer **Information.** 

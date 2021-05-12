@@ -19,12 +19,12 @@ ms.custom:
 description: Administratörer kan läsa om hur de visar, skapar, ändrar och tar bort principer för utgående skräppost i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ceaf0d276aff4504dd34aa3229c28c9cb042742d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2448bb7942f7694d2a6d6e9b98537a2b7ccb14d1
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207313"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331676"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurera utgående skräppostfiltrering i EOP
 
@@ -515,6 +515,6 @@ Detaljerad information om syntax och parametrar finns i [Remove-HostedOutboundSp
 
 [Pool med hög riskleverans för utgående meddelanden](high-risk-delivery-pool-for-outbound-messages.md)
 
-[Vanliga frågor och svar om skydd mot skräppost](anti-spam-protection-faq.md)
+[Vanliga frågor och svar om skydd mot skräppost](anti-spam-protection-faq.yml)
 
 [Rapporten Automatiskt vidarebefordrade meddelanden](mfi-auto-forwarded-messages-report.md)

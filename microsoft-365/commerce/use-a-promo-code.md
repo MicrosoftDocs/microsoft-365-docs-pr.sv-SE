@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: drjones
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,16 +17,15 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 - commerce_purchase
-- PPM_jmueller
 search.appverid: MET150
 description: Läs om hur du använder en kampanjkod för din Microsoft 365-prenumeration för att sänka priset och hur du felsöker kampanjkoden vid fel.
 ms.date: 03/17/2021
-ms.openlocfilehash: 01cc7cd182f3e25867191c83b58016ef090c8934
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 30484915246e1d8b1389f09d71d9d67865962a7e
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280409"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332924"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>Använd kampanjkoden för att sänka priset
 
@@ -43,7 +42,7 @@ När som helst efter att du slutfört ditt köp kan du se rabatten från kampanj
   
 ## <a name="promo-code-terms"></a>Kampanjkodsvillkor
 
-Följande riktlinjer gäller för kampanjkoder för Microsoft 365 för företag-abonnemang.
+Följande riktlinjer gäller för kampanjkoder för prenumerationer på Microsoft 365 för företag.
   
 - **Antal kampanjkoder per abonnemang** Du kan använda en kampanjkod för flera abonnemang i samma beställning, men du kan inte använda flera kampanjkoder för samma abonnemang.
 - **Rabattens varaktighet** När du har använt en kampanjkod i din beställning varar den tillhörande rabatten under den aktuella abonnemangsperioden. Om ditt abonnemang löper på månadsbasis varar kampanjkodsrabatten till slutet av den faktureringsmånad då du angav koden. Om ditt abonnemang löper på årsbasis (även om du betalar månadsvis) varar kampanjkodsrabatten till slutet av det faktureringsår då du angav den.

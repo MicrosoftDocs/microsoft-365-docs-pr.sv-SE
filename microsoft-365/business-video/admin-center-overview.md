@@ -21,14 +21,41 @@ search.appverid:
 - MET150
 - MOE150
 description: Läs mer om administrationscentret för Microsoft 365.
-ms.openlocfilehash: 5ae72b51657cea1ce635c622e875cdf736ee1598
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 47eafbf49ac70d86b4065d3a67672c79abc16e63
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51221767"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332252"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Översikt över administrationscenter för Microsoft 365
+
+- [Administrationscentret i förenklad vy](#the-admin-center-in-simplified-view)
+- [Administrationscentret i instrumentpanelsvyn](#the-admin-center-in-dashboard-view)
+
+## <a name="the-admin-center-in-simplified-view"></a>Administrationscentret i förenklad vy
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
+
+I administrationscentret för Microsoft 365 kan du återställa lösenord, visa fakturan, lägga till eller ta bort användare och mycket mer på ett och samma ställe.
+
+Logga in Office.com med ditt arbetskonto och välj startprogrammet. 
+
+Om du har behörighet att komma åt administrationscentret visas **Admin** i listan. Markera det. 
+
+Granska de översta åtgärderna åt dig överst i administrationscentret. Olika åtgärder kan visas beroende på vad du redan har installerat, till exempel skapa nya konton, använda Teams, konfigurera e-post och installera Office-appar. 
+ 
+Under **Din organisation** på fliken **Användare** finns en lista över personer som kan komma åt appar och tjänster, lägga till nya användare, återställa lösenord eller använda menyn **Fler** åtgärder. Välj en person för att visa eller redigera personens information och inställningar.  
+
+På fliken **Team** skapar du ett nytt team eller hanterar befintliga team. Du kan hantera medlemmar i ett team eller välja Fler **åtgärder för att** ändra andra Teams-inställningar. 
+
+På fliken **Prenumerationer** lägger du till fler produkter, lägger till licenser eller använder menyn **Fler åtgärder** för att ändra licenser eller betalningsmetod.
+
+På fliken **Lär** dig bläddrar du bland videoklipp och artiklar om administrationscentret och andra Microsoft 365-funktioner. Om du vill utforska mer avancerade funktioner i administrationscentret öppnar du navigeringsmenyn och expanderar rubrikerna för att se mer. Välj **Visa alla** om du vill se allt i navigeringsmenyn eller använd sökfältet för att snabbt hitta det du letar efter.
+
+Om du behöver hjälp väljer du **Hjälp & support.** Sök efter ämne som du vill ha hjälp med och visa den rekommenderade lösningen eller välj ett headset för att kontakta supporten och ange sedan din fråga och kontaktinformation. 
+
+## <a name="the-admin-center-in-dashboard-view"></a>Administrationscentret i instrumentpanelsvyn
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
@@ -59,8 +86,6 @@ Mer information om hur du hanterar fakturering, lösenord, användare och admini
 Som standard får den person som registrerar sig för och köper en prenumeration på Microsoft 365 för företag administratörsbehörighet. Den personen kan tilldela andra personer administratörsbehörighet så att de kan hantera Microsoft 365 åt organisationen.
 
 Om du får meddelandet **"Du har inte** behörighet att komma åt den här sidan eller utföra den här åtgärden" är du inte administratör.
-<br><br>    
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/3a4e19ee-1a2a-473f-8995-06de0052c169?autoplay=false]
   
 ### <a name="who-has-admin-permissions-in-my-business"></a>Vem har administratörsbehörigheter i min verksamhet?
 <a name="bkmk_admin"> </a>

@@ -5,28 +5,28 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: micurn, nicholak
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- Adm_TOC
-- commerce
+- Adm_O365
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - manage_licenses
-search.appverid:
-- MET150
+- commerce_licensing
+search.appverid: MET150
 description: Läs mer om prenumerationer och licenser i Microsoft 365 för företag.
 ms.date: 07/01/2020
-ms.openlocfilehash: 6310b3e48c59da3243746cceca2d0516f511b827
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a8ec5b0716a5ceaa02526520e76dc390a6fba0f7
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911440"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331496"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Förstå prenumerationer och licenser i Microsoft 365 för företag
 
@@ -58,7 +58,7 @@ I följande tabell anges vad som sker automatiskt när du tilldelar en licens ti
 |Exchange Online  <br/> |En postlåda skapas för den personen. <br/> Mer information om SLA för att den här uppgiften ska slutföras finns [i "Konfigurera..." meddelanden i administrationscentret för Microsoft 365.](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center) |
 |SharePoint Online  <br/> |Personen tilldelas redigeringsbehörigheter på SharePoint Online-standardgruppwebbplatsen.  <br/> |
 |Skype för företag - Online  <br/> |Personen har åtkomst till de funktioner som är kopplade till licensen.  <br/> |
-|Microsoft 365-appar för företag  <br/> |Personen kan ladda ned Office-appar på upp till fem Mac- eller PC-datorer, fem surfplattor och fem smartphones.  <br/> |
+| Microsoft 365 Apps för företag  <br/> |Personen kan ladda ned Office-appar på upp till fem Mac- eller PC-datorer, fem surfplattor och fem smartphones.  <br/> |
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Allmänt om licenser för postlådor som inte är kopplade till någon användare
 

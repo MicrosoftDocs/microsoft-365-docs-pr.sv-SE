@@ -1,10 +1,11 @@
 ---
-title: Hämta beständig program-och produkt licens nycklar som har köpts via det CSP-programmet (Cloud Solution Provider)
+title: Ladda ned eviga programvaru- och produktlicensnycklar som köpts via CSP-programmet (Cloud Solution Provider)
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,32 +13,32 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-search.appverid:
-- MET150
+search.appverid: MET150
 ms.custom:
 - AdminSurgePortfolio
-description: Lär dig hur du hämtar program varu-och produkt licens nycklar för beständig program vara som köpts via ett KRYPTOGRAFIPROVIDER-program.
-ms.openlocfilehash: 9e55161111ae1796e8254a60ecdc693592988386
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+- commerce_licensing
+description: Lär dig hur du laddar ned programvaran och produktlicensnycklarna för evig programvara som köpts via CSP-programmet (Cloud Solution Provider).
+ms.date: 01/27/2021
+ms.openlocfilehash: 85dfdb8952278b8c1c3dd23a2ceca7481a683989
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029404"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332408"
 ---
-# <a name="download-perpetual-software-and-product-license-keys"></a>Hämta beständig program-och produkt licens nycklar
+# <a name="download-perpetual-software-and-product-license-keys"></a>Ladda ned eviga programvaru- och produktlicensnycklar
 
-I den här artikeln förklaras hur du hämtar program varu-och produkt licens nycklar för beständig program vara som köpts via "CSP-programmet".
+Den här artikeln förklarar hur du laddar ned program- och produktlicensnycklar för evig programvara som köpts via CSP-programmet (Cloud Solution Provider).
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-Du måste vara global administratör för att utföra stegen i den här artikeln. Mer information finns i [Om administratörsroller](../add-users/about-admin-roles.md).
+Du måste vara global administratör för att kunna följa stegen i den här artikeln. Mer information finns i [Om administratörsroller](../add-users/about-admin-roles.md).
 
-## <a name="download-software-and-product-license-keys"></a>Hämta program-och produkt licens nycklar
+## <a name="download-software-and-product-license-keys"></a>Ladda ned programvaru- och produktlicensnycklar
 
-1. Gå till sidan för **fakturering** av produkter i Microsoft 365 Admin Center  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> .
-2. På fliken **produkter** , under **program vara** , väljer du den program vara du vill ladda ned.
-3. På sidan prenumerations information, i avsnittet för **& nycklar för nedladdningar** väljer du **produkt version**, **språk** och **processor & filtyp** och väljer sedan **Ladda ned**.
-4. Om du vill hämta knappen väljer **du kopiera till Urklipp**.
-5. I det högra fönstret väljer du **Kopiera** och sedan Stäng fönstret.
-6. Klistra in knappen i en fil på en säker plats och ange den enligt anvisningarna under program varu installationen. Det behövs för att aktivera den nedladdade program varan.
+1. I administrationscentret för Microsoft 365 går du till **sidan**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Fakturering dina</a> produkter.
+2. Välj **den** programvara du **vill ladda** ned i avsnittet Programvara på fliken Produkter.
+3. I avsnittet Nedladdningar eller nycklar på **prenumerationsinformation &** du filtypen  **Produktversion,** Språk och **CPU**& och sedan **Ladda ned**.
+4. Om du vill ladda ned nyckeln väljer **du Kopiera nyckeln till Urklipp**.
+5. I det högra fönstret väljer **du Kopiera** och stänger sedan fönstret.
+6. Klistra in nyckeln i en fil på en säker plats och ange sedan den enligt anvisningarna under programvaruinstallationen. Nyckeln krävs för att aktivera den nedladdade programvaran.
