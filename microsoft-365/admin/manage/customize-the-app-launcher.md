@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: 'Skapa snabblänkar till e-post, dokument, program, SharePoint-webbplatser, externa webbplatser och andra resurser genom att lägga till anpassade paneler i startprogrammet. '
-ms.openlocfilehash: b6ae4deed1566492574e30cf8cb66a750c9858c8
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 598cfeb75fc811c87519c4479fa8fcab450466c3
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470637"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327216"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Lägga till anpassade paneler i startprogrammet
 
@@ -48,19 +48,28 @@ Du kan lägga till egna paneler i startprogrammet som pekar på SharePoint-webbp
   
 4. Ange ett **Panelnamn** för den nya panelen. Namnet visas sedan i panelen. 
     
-5. Ange en **URL till webbplatsen** för panelen. Det är här du vill att användarna ska gå när de väljer panelen i startprogrammet. Använd HTTPS i URL-adressen.<br/>TIPS: Om du skapar en panel för en SharePoint-webbplats går du till webbplatsen, kopierar webbadressen och klistrar in den här. URL-adressen till standardgruppwebbplatsen ser ut så här: `https://<company_name>.sharepoint.com` 
+5. Ange en **URL till webbplatsen** för panelen. Det är här du vill att användarna ska gå när de väljer panelen i startprogrammet. Använd HTTPS i URL-adressen.
+
+    > [!TIP]
+    > Om du vill skapa en panel för en SharePoint-webbplats: gå till webbplatsen, kopiera webbadressen och klistra in den här. URL-adressen till standardgruppwebbplatsen ser ut så här: `https://<company_name>.sharepoint.com` 
   
-6. Ange en **URL för bilden** för panelen. Bilden visas på sidan Mina program och i startprogrammet.<br/>TIPS: Bilden ska vara 60 x 60 bildpunkter och vara tillgänglig för alla i organisationen utan autentisering.
+6. Ange en **URL för bilden** för panelen. Bilden visas på sidan Mina program och i startprogrammet.
+
+    > [!TIP]
+    > Bilden ska vara 60 x 60 bildpunkter och vara tillgänglig för alla i organisationen utan autentisering.
 
 7. Ange en **beskrivning** för panelen. Detta visas när du väljer panelen på sidan Mina program och väljer **Programinformation**. 
   
 8. Välj **Spara ändringar för** att skapa den anpassade panelen. 
     
-Den anpassade panelen visas nu i startprogrammet på fliken **Alla** för dig och dina användare. 
+    Den anpassade panelen visas nu i startprogrammet på fliken **Alla** för dig och dina användare. 
+
+    > [!NOTE]
+    > Om du inte ser länken till den anpassade panelen du skapade i föregående steg bör du kontrollera att du har tilldelats en Exchange Online-postlåda och att du loggat in till postlådan minst en gång. De här stegen krävs för anpassade paneler i Microsoft 365. 
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. I administrationscentret går du till fliken  >  **Organisationsprofil i Inställningar**  >  **för** </a> organisationsinställningar.
+1. I administrationscentret går du till fliken  >  **Organisationsprofil i Inställningar**  >  **för** organisationsinställningar.
     
 2. På sidan **Organisationsprofil** bredvid Lägg till   **anpassade paneler för din organisation väljer** du **Redigera**.
 

@@ -16,21 +16,22 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 461bc7c8d4d8d5c9bb8c905f3b160d0af226b077
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 56ab6c6c11bd2c0786c0d797e5302a1f06f9bd53
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023231"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327264"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Använd minskningsregler för attackytan för att förhindra skadlig smitta
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
-- [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+- [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="why-attack-surface-reduction-rules-are-important"></a>Varför det är viktigt att minska attackytans regler
 
@@ -48,7 +49,7 @@ Mer information om hur du konfigurerar regler för att minska attackytan finns i
 
 ## <a name="assess-rule-impact-before-deployment"></a>Utvärdera påverkan på regeln före distribution
 
-Du kan utvärdera hur en minskningsregel för attackytan kan påverka nätverket genom att öppna säkerhetsrekommendationerna för den regeln i [hantering av hot och sårbarhet.](https://docs.microsoft.com/windows/security/threat-protection/#tvm)
+Du kan utvärdera hur en minskningsregel för attackytan kan påverka nätverket genom att öppna säkerhetsrekommendationerna för den [regeln i Hantering av hot och säkerhetsrisker](https://docs.microsoft.com/windows/security/threat-protection/#tvm).
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="Säkerhetsreco för minskningsregel för attackytan":::
 
@@ -73,7 +74,7 @@ Varningsläge stöds på enheter som kör följande versioner av Windows:
 
 Microsoft Defender Antivirus måste köras med realtidsskydd i [aktivt läge.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)
 
-Kontrollera också att uppdateringar [för Microsoft Defender Antivirus och program mot skadlig programvara](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) är installerade.
+Kontrollera också att Microsoft Defender Antivirus [programuppdateringar och program mot skadlig programvara](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) har installerats.
 
 - Lägsta krav för plattformsutgågår: `4.18.2008.9`
 - Lägsta krav för släppt motor: `1.1.17400.5`
@@ -82,13 +83,13 @@ Mer information och information om hur du får dina uppdateringar finns [i Uppda
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>Fall där varningsläge inte stöds
 
-Varningsläge stöds inte för tre minskningsregler för attackytor när du konfigurerar dem i Microsoft Endpoint Manager. (Om du använder grupprinciper för att konfigurera reglerna för att minska attackytan stöds varningsläge.) De tre regler som inte stöder varningsläge när du konfigurerar dem i Microsoft Endpoint Manager är följande:
+Varningsläge stöds inte för tre minskningsregler för attackytor när du konfigurerar dem i Microsoft Endpoint Manager. (Om du använder grupprinciper för att konfigurera reglerna för att minska attackytan stöds varningsläge.) De tre reglerna som inte stöder varningsläge när du konfigurerar dem i Microsoft Endpoint Manager är följande:
 
 - [Blockera JavaScript eller VBScript från att starta hämtat körbart innehåll](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) (GUID `d3e037e1-3eb8-44c8-a917-57927947596d` )
 - [Blockera beständighet via WMI-händelseprenumeration](#block-persistence-through-wmi-event-subscription) (GUID `e6db77e5-3df2-4cf1-b95a-636979351e5b` )
 - [Använd avancerat skydd mot utpressningstrojaner](#use-advanced-protection-against-ransomware) (GUID `c1db55ab-c21a-4637-bb3f-a12568109d35` )
 
-Dessutom stöds inte varningsläge på enheter med äldre versioner av Windows. I sådana fall kommer minskningsregler för attackytan som är konfigurerade att köras i varningsläge att köras i blockläge.
+Dessutom stöds inte varningsläge på enheter som kör äldre versioner av Windows. I sådana fall kommer minskningsregler för attackytan som är konfigurerade att köras i varningsläge att köras i blockläge.
 
 ## <a name="notifications-and-alerts"></a>Meddelanden och aviseringar
 
@@ -96,7 +97,7 @@ När en minskningsregel för attackytan utlöses visas ett meddelande på enhete
 
 När vissa minskningsregler för attackytan utlöses genereras dessutom varningar.
 
-Meddelanden och alla aviseringar som genereras kan visas i Microsoft Defender Säkerhetscenter ( ) och i Säkerhetscenter för [https://securitycenter.windows.com](https://securitycenter.windows.com) Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ).
+Meddelanden och alla aviseringar som genereras kan visas i Microsoft Defender Säkerhetscenter ( ) och i [https://securitycenter.windows.com](https://securitycenter.windows.com) säkerhetscentret Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ).
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>Avancerad sökning och minskning av attackytor
 
@@ -106,18 +107,18 @@ Anta till exempel att en minskning av attackytan inträffat på 10 enheter under
 
 Mer information om avancerad sökning finns i [Proaktivt sök efter hot med avancerad sökning.](advanced-hunting-overview.md)
 
-## <a name="attack-surface-reduction-features-across-windows-versions"></a>Funktioner för att minska attackytan i alla Windows-versioner
+## <a name="attack-surface-reduction-features-across-windows-versions"></a>Funktioner för att minska attackytan i Windows versioner
 
-Du kan ange minskningsregler för attackytan för enheter som kör någon av följande versioner av Windows:
+Du kan ange minskningsregler för attackytan för enheter som kör någon av följande utgåvor och versioner av Windows:
 
-- Windows 10 Pro, [version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) eller senare
-- Windows 10 Enterprise, [version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) eller senare
+- Windows 10 Pro, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) eller senare
+- Windows 10 Enterprise, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) eller senare
 - Windows Server, [version 1803 (Halvårskanal)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) eller senare
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
-Även om minskningsregler för attackytor inte kräver en [Windows E5-licens](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)får du avancerade hanteringsfunktioner om du har Windows E5. Dessa funktioner är endast tillgängliga i Windows E5: övervakning, analys och arbetsflöden som är tillgängliga i Defender för [slutpunkt,](microsoft-defender-endpoint.md)samt rapporterings- och konfigurationsfunktioner i [Säkerhetscenter för Microsoft 365.](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center) Dessa avancerade funktioner är inte tillgängliga med en Windows Professional- eller Windows E3-licens. Men om du har de licenserna kan du använda Loggboken och Microsoft Defender Antivirus-loggarna för att granska dina minskningsregelhändelser för attackytan.
+Även om minskningsregler för attackytan inte kräver en [E5 Windows-licens,](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)får du avancerade hanteringsfunktioner om du har Windows E5. De här funktionerna är endast tillgängliga i Windows E5: övervakning, analys och arbetsflöden som är tillgängliga i Defender för [slutpunkt,](microsoft-defender-endpoint.md)samt rapporterings- och konfigurationsfunktioner [i Microsoft 365 säkerhetscenter.](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center) Dessa avancerade funktioner är inte tillgängliga med en licens från Windows Professional eller Windows E3. Men om du har dessa licenser kan du använda Loggboken och Microsoft Defender Antivirus för att granska dina attack surface-minskningsregelhändelser.
 
-## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>Granska händelser för att minska attackytan i Microsoft Defender Säkerhetscenter
+## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>Granska minskningar av attackytor i Microsoft Defender Säkerhetscenter
 
 Defender för Endpoint tillhandahåller detaljerad rapportering för händelser och block som en del av scenarier för aviseringsundersökning.
 
@@ -130,12 +131,12 @@ DeviceEvents
 | where ActionType startswith 'Asr'
 ```
 
-## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Granska händelser för att minska attackytan i Windows Loggboken
+## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Granska minskningar av attackytor i Windows Event Viewer
 
-Du kan granska Windows-händelseloggen om du vill visa händelser som genererats av minskningsregler för attackytan:
+Du kan granska Windows för att visa händelser som genereras av minskningsregler för attackytan:
 
 1. Ladda ned [utvärderingspaketet](https://aka.ms/mp7z2w) och extrahera filen *cfa-events.xml* till en lättillgänglig plats på enheten.
-2. Ange orden, *Loggboken,* på Start-menyn för att öppna Windows Loggboken.
+2. Ange orden, *Loggboken*, på Start-menyn för att öppna Windows Loggboken.
 3. Under **Åtgärder** väljer du **Importera anpassad vy...**.
 4. Välj filen *cfa-events.xml* där den extraherades. Du kan också [kopiera XML direkt.](event-views.md)
 5. Välj **OK**.
@@ -149,7 +150,7 @@ Du kan skapa en anpassad vy som filtrerar händelser för att endast visa följa
 |1122|Händelse när en regel aktiveras i granskningsläge|
 |
 
-"engine version" listed for attack surface reduction events in the event log, is generated by Defender for Endpoint, not by the operating system. Defender för slutpunkt är integrerad med Windows 10, så den här funktionen fungerar på alla enheter med Windows 10 installerat.
+"engine version" listed for attack surface reduction events in the event log, is generated by Defender for Endpoint, not by the operating system. Defender för Endpoint är integrerat med Windows 10, så den här funktionen fungerar på alla enheter Windows 10 installerat.
 
 ## <a name="attack-surface-reduction-rules"></a>Regler för minskning av attackytan
 
@@ -159,6 +160,7 @@ Om du konfigurerar regler för att minska attackytan med grupprinciper eller Pow
 
 |Regelnamn|GUID|Undantag & mappar|Lägsta operativsystem som stöds|
 |---|:---:|---|---|
+|[Blockera missbruk av utnyttjas sårbara signerade drivrutiner](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Stöds|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)|
 |[Blockera Adobe Reader från att skapa underordnade processer](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Stöds|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
 |[Blockera alla Office-program från att skapa underordnade processer](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Stöds|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
 |[Blockera att autentiseringsuppgifter stjäls från Windows lokala säkerhetsutfärdares undersystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Stöds|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
@@ -175,6 +177,33 @@ Om du konfigurerar regler för att minska attackytan med grupprinciper eller Pow
 |[Blockera Win32 API-anrop från Office-makron](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|Stöds|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
 |[Använd avancerat skydd mot utpressningstrojaner](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|Stöds|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
 |
+
+### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>Blockera missbruk av utnyttjas sårbara signerade drivrutiner
+
+Den här regeln förhindrar att ett program skriver en sårbar signerad drivrutin till disken. In-the-wild, vulnerable signed drivers can be exploited by local applications \- _that have sufficient privileges_ \- to gain access to the kernel. Sårbar signerade drivrutiner gör att attacker kan inaktivera eller kringgå säkerhetslösningar, vilket till slut leder till systemkompromettering.
+
+Den här regeln blockerar inte en drivrutin som redan finns på systemet från att läsas in.
+
+Den här regeln stöds i alla versioner där ASR stöds. vilket är:
+
+- [Windows 10 Pro, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) eller senare
+- [Windows 10 Enterprise, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) eller senare
+- [Windows Server, version 1803 (Halvårskanal)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) eller senare
+- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+
+Intune-namn: `Block abuse of exploited vulnerable signed drivers`
+
+GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
+
+Se [Den anpassade proceduren för Microsoft Endpoint Manager för](enable-attack-surface-reduction.md#microsoft-endpoint-manager-custom-procedure) anpassad procedurinformation för MEM-regler.
+
+Du kan köra det här kommandot på kommandoraden för att aktivera ASR-regeln:
+
+```powershell
+"& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
+```
+
+Du kan använda den här webbplatsen för att [Skicka in en drivrutin för analys.](https://www.microsoft.com/en-us/wdsi/driversubmission)
 
 ### <a name="block-adobe-reader-from-creating-child-processes"></a>Blockera Adobe Reader från att skapa underordnade processer
 
@@ -240,7 +269,7 @@ GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 Den här regeln blockerar följande filtyper från att startas från e-post som öppnas i Microsoft Outlook-programmet eller Outlook.com och andra populära webbaserade e-postleverantörer:
 
 - Körbara filer (till exempel .exe, .dll eller .scr)
-- Skriptfiler (till exempel en PowerShell.ps-, Visual Basic .vbs- eller JavaScript .js-fil)
+- Skriptfiler (till exempel en PowerShell.ps-, Visual Basic .vbs- eller JavaScript-.js fil)
 
 Den här regeln infördes i:
 
@@ -416,7 +445,7 @@ GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 Den här regeln blockerar processer som skapats [via PsExec](https://docs.microsoft.com/sysinternals/downloads/psexec) [och WMI](https://docs.microsoft.com/windows/win32/wmisdk/about-wmi) från att köras. Både PsExec och WMI kan köra kod via fjärrstyrd körning, så det finns en risk för att skadlig programvara ska kunna använda den här funktionen för kommando- och kontrolländamål eller för att sprida en smitta i organisationens nätverk.
 
 > [!WARNING]
-> Använd bara den här regeln om du hanterar dina enheter med [Intune eller en](https://docs.microsoft.com/intune) annan MDM-lösning. Den här regeln är inkompatibel med hantering genom [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr) eftersom den här regeln blockerar WMI-kommandon som Configuration Manager-klienten använder för att fungera korrekt.
+> Använd bara den här regeln om du hanterar dina enheter med [Intune eller en](https://docs.microsoft.com/intune) annan MDM-lösning. Den här regeln är inkompatibel med [hantering via Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr) eftersom den här regeln blockerar WMI-kommandon som Configuration Manager-klienten använder för att fungera korrekt.
 
 Den här regeln infördes i:
 
@@ -447,7 +476,7 @@ Konfigurationshanterarens namn: `Block untrusted and unsigned processes that run
 
 GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
-### <a name="block-win32-api-calls-from-office-macros"></a>Blockera Win32 API-anrop från Office-makron
+### <a name="block-win32-api-calls-from-office-macros"></a>Blockera Win32 API-anrop från Office makron
 
 Den här regeln förhindrar VBA-makron från att anropa Win32-API:er.
 
@@ -497,4 +526,4 @@ GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 - [Vanliga frågor och svar för minskning av attackytan](attack-surface-reduction-faq.md)
 - [Aktivera regler för minskning av attackytan](enable-attack-surface-reduction.md)
 - [Utvärdera regler för minskning av attackytan](evaluate-attack-surface-reduction.md)
-- [Kompatibilitet med Microsoft Defender Antivirus med andra antivirus- och antimalwarelösningar](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+- [Kompatibilitet med Microsoft Defender Antivirus antivirus- och antimalwarelösningar](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

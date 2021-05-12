@@ -16,20 +16,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: Lär dig hur administratörer kan ta bort objekt i en användares Återställningsbara objekt-mapp för en Exchange Online postlåda, även om postlådan har satts i juridiskt betalningskrävs.
+description: Lär dig hur administratörer kan ta bort objekt i en användares Återställningsbara objekt-mapp för en Exchange Online-postlåda, även om postlådan har satts i juridiskt grepp.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b6a5967784e3d82275acc4800aaabfa0bdf4c2f9
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 776113bcd6141c4f01c2da61f0bd71f99cffd3e2
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "52162804"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326648"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Ta bort objekt i mappen Återställningsbara objekt i molnbaserade postlådor som är på plats
 
-Mappen Återställningsbara objekt för en e Exchange Online postlåda finns för att skydda från oavsiktlig eller skadlig borttagning. Den används också för att lagra objekt som behålls och används av efterlevnadsfunktioner, till exempel kvarhållna objekt och eDiscovery-sökningar. I vissa situationer kan dock organisationer ha data som oavsiktligt behålls i mappen för permanent borttagna objekt som de måste ta bort. En användare kanske till exempel oavsiktligt skickar eller vidarebefordrar ett e-postmeddelande som innehåller känslig information eller information som kan få allvarliga konsekvenser. Även om meddelandet tas bort permanent kan det behållas ett obestämt tidsdefinierat sätt eftersom ett juridiskt hastigt meddelande har placerats i postlådan. Det här scenariot *kallas för data* spill eftersom data oavsiktligt har *spillts* till Office 365. I de här situationerna kan du ta bort objekt i en användares Återställningsbara objekt-mapp för en Exchange Online-postlåda, även om postlådan är i enlighet med någon av de olika funktionerna för Office 365. Dessa typer av kvarhållning omfattar kvarhållning av juridiska skäl, In-Place kvarhållning av juridiska skäl, eDiscovery-kvarhållning och kvarhållningsprinciper som skapats i säkerhets- och efterlevnadscentret i Office 365 eller Microsoft 365.
-  
- I den här artikeln förklaras hur administratörer kan ta bort objekt från mappen återställningsbara objekt för molnbaserade postlådor som är på plats. Den här proceduren omfattar att inaktivera åtkomst till postlådan och inaktivera återställning av enstaka objekt, inaktivera assistenten för hanterade mappar från att bearbeta postlådan, tillfälligt ta bort rymmert, ta bort objekt från mappen återställningsbara objekt och sedan återställa postlådan till föregående konfiguration. Så här gör du:
+Mappen Återställningsbara objekt för en Exchange Online-postlåda finns för att skydda från oavsiktlig eller skadlig borttagning. Den används också för att lagra objekt som behålls och används av efterlevnadsfunktioner, till exempel kvarhållna objekt och eDiscovery-sökningar. I vissa situationer kan dock organisationer ha data som oavsiktligt behålls i mappen för permanent borttagna objekt som de måste ta bort. En användare kanske till exempel oavsiktligt skickar eller vidarebefordrar ett e-postmeddelande som innehåller känslig information eller information som kan få allvarliga konsekvenser. Även om meddelandet tas bort permanent kan det behållas ett obestämt tidsdefinierat sätt eftersom ett juridiskt hastigt meddelande har placerats i postlådan. Det här scenariot *kallas för data* spill eftersom data oavsiktligt har *spillts* till Office 365. I de här situationerna kan du ta bort objekt i en användares Återställningsbara objekt-mapp för en Exchange Online-postlåda, även om postlådan är satt på plats med en av de olika funktionerna för återställning i Office 365. Dessa typer av kvarhållning omfattar kvarhållning av juridiska skäl, kvarhållning av In-Place, eDiscovery-kvarhållning och kvarhållningsprinciper som skapats i säkerhets- och efterlevnadscentret i Office 365 eller Microsoft 365.
+
+I den här artikeln förklaras hur administratörer kan ta bort objekt från mappen återställningsbara objekt för molnbaserade postlådor som är på plats. Den här proceduren omfattar att inaktivera åtkomst till postlådan och inaktivera återställning av enstaka objekt, inaktivera assistenten för hanterade mappar från att bearbeta postlådan, tillfälligt ta bort rymmert, ta bort objekt från mappen återställningsbara objekt och sedan återställa postlådan till föregående konfiguration. Så här gör du:
   
 [Steg 1: Samla in information om postlådan](#step-1-collect-information-about-the-mailbox)
 
@@ -44,7 +44,7 @@ Mappen Återställningsbara objekt för en e Exchange Online postlåda finns fö
 [Steg 6: Återställ postlådan till det tidigare tillståndet](#step-6-revert-the-mailbox-to-its-previous-state)
   
 > [!CAUTION]
-> Procedurerna som beskrivs i den här artikeln leder till att data tas bort permanent (rensas) från en Exchange Online postlåda. Det innebär att meddelanden som du tar bort från mappen för permanent borttagna objekt inte kan återställas och är inte tillgängliga för juridisk upptäckt eller andra efterlevnadssyften. Om du vill ta bort meddelanden från en postlåda som har satts på bevarande som en del av bevarande av juridiska skäl, In-Place-bevarande, eDiscovery-bevarande eller kvarhållningsprincip som skapats i säkerhets- och efterlevnadscentret, kontrollerar du med din arkiveringshantering eller juridiska avdelningar innan du tar bort bevarandet. Organisationen kan ha en princip som definierar om en postlåda som är väntad eller ett data spill har prioritet.
+> Procedurerna som beskrivs i den här artikeln leder till att data tas bort permanent (rensas) från en Exchange Online-postlåda. Det innebär att meddelanden som du tar bort från mappen för permanent borttagna objekt inte kan återställas och är inte tillgängliga för juridisk upptäckt eller andra efterlevnadssyften. Om du vill ta bort meddelanden från en postlåda som har satts på bevarande som en del av bevarande av juridiska skäl, In-Place-bevarande, eDiscovery-bevarande eller kvarhållningsprincip som skapats i säkerhets- och efterlevnadscentret, kontrollerar du med din arkiveringshantering eller juridiska avdelningar innan du tar bort bevarandet. Organisationen kan ha en princip som definierar om en postlåda som är väntad eller ett data spill har prioritet.
   
 ## <a name="before-you-delete-items"></a>Innan du tar bort objekt
 
@@ -90,7 +90,7 @@ Dessutom måste du hämta klientåtkomstinställningarna för postlådan så att
     Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
     ```
 
-   > [!TIP]
+    > [!TIP]
     > Om det finns för många värden i egenskapen  *InPlaceHolds*  och inte alla visas kan du köra kommandot för att visa  `Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds` varje värde på en separat rad.
   
 5. Kör följande kommando för att få information om bevarandeprinciper som gäller hela organisationen. 
@@ -99,9 +99,9 @@ Dessutom måste du hämta klientåtkomstinställningarna för postlådan så att
     Get-OrganizationConfig | FL InPlaceHolds
     ```
 
-   Om organisationen har bevarandeprinciper för hela organisationen måste du utesluta postlådan från de här principerna i steg 3.
+   Om organisationen har bevarandeprinciper för hela organisationen måste du utesluta postlådan från de här principerna i steg 3. Det kan ta upp till 24 timmar innan ändringen replikeras.
 
-   > [!TIP]
+    > [!TIP]
     > Om det finns för många värden i egenskapen  *InPlaceHolds*  och inte alla visas kan du köra kommandot för att visa  `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` varje värde på en separat rad. 
   
 6. Kör följande kommando för att avgöra om ett fördröjnings efterföljande kommando tillämpas på postlådan.
@@ -148,7 +148,7 @@ Utför följande steg i Exchange Online PowerShell.
     Set-CASMailbox <username> -EwsEnabled $false -ActiveSyncEnabled $false -MAPIEnabled $false -OWAEnabled $false -ImapEnabled $false -PopEnabled $false
     ```
 
-   > [!NOTE]
+    > [!NOTE]
     > Det kan ta upp till 60 minuter att inaktivera alla klientåtkomstmetoder till postlådan. Observera att om du inaktiverar de här åtkomstmetoderna kopplas inte postlådans ägare bort om de är inloggade. Om ägaren inte är inloggad kan han eller hon inte komma åt postlådan när de här åtkomstmetoderna har inaktiverats.
   
 2. Kör följande kommando för att öka lagringstiden för borttagna objekt som högst 30 dagar. Detta förutsätter att den aktuella inställningen är mindre än 30 dagar.
@@ -163,7 +163,7 @@ Utför följande steg i Exchange Online PowerShell.
     Set-Mailbox <username> -SingleItemRecoveryEnabled $false
     ```
 
-   > [!NOTE]
+    > [!NOTE]
     > Det kan ta upp till 60 minuter att inaktivera återställning av enstaka objekt. Ta inte bort objekt i mappen återställningsbara objekt förrän den här perioden har gått ut. 
   
 4. Kör följande kommando för att förhindra assistenten för hanterade mappar från att bearbeta postlådan. Som tidigare förklarats kan du inaktivera assistenten för hanterade mappar endast om en bevarandeprincip med ett bevarandelås inte tillämpas på postlådan. 
@@ -174,7 +174,7 @@ Utför följande steg i Exchange Online PowerShell.
 
 ## <a name="step-3-remove-all-holds-from-the-mailbox"></a>Steg 3: Ta bort alla spärrade e-postlådor från postlådan
 
-Det sista steget innan du kan ta bort objekt från mappen för permanent borttagna objekt är att ta bort alla spärrade objekt (som du identifierade i steg 1) som placerats i postlådan. Alla spärrade objekt måste tas bort för att objekten inte ska behållas efter att du har tagit bort dem från mappen för permanent borttagna objekt. Följande avsnitt innehåller information om hur du tar bort olika typer av innehåll i en postlåda. I avsnittet [Mer information](#more-information) finns tips om hur du identifierar det typkparent som kan placeras i en postlåda. Mer information finns i Identifiera [typen av väntande objekt som placerats i en Exchange Online postlåda.](identify-a-hold-on-an-exchange-online-mailbox.md)
+Det sista steget innan du kan ta bort objekt från mappen för permanent borttagna objekt är att ta bort alla spärrade objekt (som du identifierade i steg 1) som placerats i postlådan. Alla spärrade objekt måste tas bort för att objekten inte ska behållas efter att du har tagit bort dem från mappen för permanent borttagna objekt. Följande avsnitt innehåller information om hur du tar bort olika typer av innehåll i en postlåda. I avsnittet [Mer information](#more-information) finns tips om hur du identifierar det typkparent som kan placeras i en postlåda. Mer information finns i Identifiera [typen av väntande objekt som en Exchange Online-postlåda har.](identify-a-hold-on-an-exchange-online-mailbox.md)
   
 > [!CAUTION]
 > Som tidigare beskrivits bör du kontrollera med din hantering av arkivhandlingar eller juridiska avdelningar innan du tar bort ett arkivhandlingar från en postlåda. 
@@ -198,11 +198,11 @@ Kör följande kommando i Exchange Online PowerShell för att identifiera det In
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name
 ```
 
-När du har identifierat In-Place kan du använda administrationscentret för Exchange (EAC) eller Exchange Online PowerShell för att ta bort postlådan från servern. Mer information finns i Skapa [eller ta bort en In-Place .](/exchange/security-and-compliance/create-or-remove-in-place-holds)
+När du har identifierat In-Place kan du använda Exchange admin center (EAC) eller Exchange Online PowerShell för att ta bort postlådan från servern. Mer information finns i Skapa [eller ta bort en In-Place .](/exchange/security-and-compliance/create-or-remove-in-place-holds)
   
 ### <a name="retention-policies-applied-to-specific-mailboxes"></a>Bevarandeprinciper som tillämpas på specifika postlådor
   
-Kör följande kommando i [Säkerhets- & Säkerhets- och efterlevnadscenter PowerShell](/powershell/exchange/exchange-online-powershell) för att identifiera den bevarandeprincip som tillämpas på postlådan. Det här kommandot returnerar även eventuella Teams konversationsbevarandeprinciper som tillämpats på en postlåda. Använd GUID (utan prefixet) för `mbx` `skp` den bevarandeprincip du identifierade i steg 1.
+Kör följande kommando i [Säkerhets- & Säkerhets- och efterlevnadscenter PowerShell](/powershell/exchange/exchange-online-powershell) för att identifiera den bevarandeprincip som tillämpas på postlådan. Det här kommandot returnerar även bevarandeprinciper för Teams-konversationer som tillämpats på en postlåda. Använd GUID (utan prefixet) för `mbx` `skp` den bevarandeprincip du identifierade i steg 1.
 
 ```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
@@ -212,13 +212,13 @@ När du har identifierat bevarandeprincipen går du till sidan Bevarande av **in
   
 ### <a name="organization-wide-retention-policies"></a>Bevarandeprinciper för hela organisationen
   
-Bevarandeprinciper som Exchange hela organisationen Teams hela organisationen tillämpas på alla postlådor i organisationen. De tillämpas på organisationsnivå (inte postlådenivå) och returneras när du kör cmdlet **get-OrganizationConfig** i steg 1. Kör följande kommando i [Säkerhets- & Compliance Center PowerShell](/powershell/exchange/exchange-online-powershell) för att identifiera bevarandeprinciper som gäller hela organisationen. Använd GUID (inte inklusive  `mbx` prefixet) för de organisationsomfattande kvarhållningsprinciper som du identifierade i steg 1.
+Bevarandeprinciper som gäller hela organisationen, Exchange och Teams tillämpas på alla postlådor i organisationen. De tillämpas på organisationsnivå (inte postlådenivå) och returneras när du kör cmdlet **get-OrganizationConfig** i steg 1. Kör följande kommando i [Säkerhets- & Compliance Center PowerShell](/powershell/exchange/exchange-online-powershell) för att identifiera bevarandeprinciper som gäller hela organisationen. Använd GUID (inte inklusive  `mbx` prefixet) för de organisationsomfattande kvarhållningsprinciper som du identifierade i steg 1.
 
 ```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-När du har identifierat bevarandeprinciperna för hela organisationen går du till sidan Bevarande av informationsstyrning i Säkerhets- och efterlevnadscenter för &, redigerar varje organisationsomfattande bevarandeprincip som du identifierade i föregående steg och lägger till postlådan i listan med uteslutna  >   mottagare. Om du gör det här tas användarens postlåda bort från bevarandeprincipen.
+När du har identifierat bevarandeprinciperna för hela organisationen går du till sidan Bevarande av informationsstyrning i Säkerhets- och efterlevnadscenter för &, redigerar varje organisationsomfattande bevarandeprincip som du identifierade i föregående steg och lägger till postlådan i listan med uteslutna  >   mottagare. Om du gör det här tas användarens postlåda bort från bevarandeprincipen. Det kan ta upp till 24 timmar innan ändringen replikeras.
 
 ### <a name="retention-labels"></a>Kvarhållningsetiketter
 
@@ -250,11 +250,11 @@ Get-ComplianceCase $CaseHold.CaseId | FL Name
 $CaseHold.Name
 ```
 
-När du har identifierat namnet på eDiscovery-ärendet och ärendet går du till sidan **eDiscovery** \> **eDiscovery** i efterlevnadscentret, öppnar ärendet och tar bort postlådan från servern. Mer information om hur du identifierar eDiscovery-innehåll finns i avsnittet "eDiscovery-innehåll" i Identifiera typen av spärrade eDiscovery-innehåll som [Exchange Online postlåda.](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds)
+När du har identifierat namnet på eDiscovery-ärendet och ärendet går du till sidan **eDiscovery** \> **eDiscovery** i efterlevnadscentret, öppnar ärendet och tar bort postlådan från servern. Mer information om hur du identifierar eDiscovery-innehåll finns i avsnittet om eDiscovery-innehåll i Identifiera typen av spärrade eDiscovery-innehåll som placerats i en [Exchange Online-postlåda.](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds)
   
 ## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>Steg 4: Ta bort fördröjningen från postlådan
 
-När någon typ av kvarhållning tas bort från en postlåda sätts värdet för postlådeegenskapen *DelayHoldApplied* eller *DelayReleaseHoldApplied* till **True.** Detta inträffar nästa gång assistenten för hanterade mappar bearbetar postlådan och upptäcker att ett väntande objekt har tagits bort. Det här kallas för *väntande* arbete och innebär att den faktiska borttagningen av väntande åtgärder fördröjs i 30 dagar för att förhindra att data tas bort permanent från postlådan. (Syftet med ett väntande tillfälle är att ge administratörer möjlighet att söka efter eller återställa postlådeobjekt som kommer att tas bort när ett väntande objekt tas bort.)  När ett bevarande av en fördröjning sätts på postlådan anses postlådan fortfarande vara satt på bevarande under en obegränsad tid, som om postlådan var bevarande av juridiska skäl. Efter 30 dagar går undantaget ut och Microsoft 365 försöker automatiskt ta bort undantaget (genom att sätta egenskapen *DelayHoldApplied* eller *DelayReleaseHoldApplied* till **False**) så att undantaget tas bort. Mer information om ett väntande väntande finns i avsnittet "Hantera postlådor som är väntande" i Hur du identifierar typen av väntande på [en Exchange Online postlåda.](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold)
+När någon typ av kvarhållning tas bort från en postlåda sätts värdet för postlådeegenskapen *DelayHoldApplied* eller *DelayReleaseHoldApplied* till **True.** Detta inträffar nästa gång assistenten för hanterade mappar bearbetar postlådan och upptäcker att ett väntande objekt har tagits bort. Det här kallas för *väntande* arbete och innebär att den faktiska borttagningen av väntande åtgärder fördröjs i 30 dagar för att förhindra att data tas bort permanent från postlådan. (Syftet med ett väntande tillfälle är att ge administratörer möjlighet att söka efter eller återställa postlådeobjekt som kommer att tas bort när ett väntande objekt tas bort.)  När ett bevarande av en fördröjning sätts på postlådan anses postlådan fortfarande vara satt på bevarande under en obegränsad tid, som om postlådan var bevarande av juridiska skäl. Efter 30 dagar går undantaget ut och Microsoft 365 försöker automatiskt ta bort undantaget (genom att sätta egenskapen *DelayHoldApplied* eller *DelayReleaseHoldApplied* till **False**) så att undantaget tas bort. Mer information om ett väntande väntande finns i avsnittet "Hantera postlådor som är väntande" i Hur du identifierar typen av väntande objekt som placerats i en [Exchange Online-postlåda.](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold)
 
 Om värdet för egenskapen *DelayHoldApplied* eller *DelayReleaseHoldApplied* är inställd på **Sant** kör du något av följande kommandon för att ta bort fördröjningen:
 
@@ -268,7 +268,7 @@ Eller
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
 ```
 
-Du måste ha tilldelats rollen Juridiskt betalningskällvärde i Exchange Online använda parametern *RemoveDelayHoldApplied* eller *RemoveDelayReleaseHoldApplied.*
+Du måste ha tilldelats rollen Juridiskt betalningskällvärde i Exchange Online för att kunna använda parametern *RemoveDelayHoldApplied* eller *RemoveDelayReleaseHoldApplied.*
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>Steg 5: Ta bort objekt i mappen för permanent borttagna objekt
 
@@ -278,7 +278,7 @@ Om du vill söka efter objekt som finns i mappen för återställningsbara objek
 
 Här är en översikt över processen för att söka efter och ta bort objekt i en användares Återställningsbara objekt-mapp:
 
-1. Kör skriptet för den riktade samlingen som returnerar mapp-ID:erna för alla mappar i målanvändarens postlåda. Skriptet ansluter till Exchange Online PowerShell och säkerhets- & Compliance PowerShell i samma PowerShell-session. Mer information finns i [Köra skriptet för att få en lista över mappar för en postlåda.](use-content-search-for-targeted-collections.md#step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site)
+1. Kör skriptet för den riktade samlingen som returnerar mapp-ID:erna för alla mappar i målanvändarens postlåda. Skriptet ansluter till Exchange Online PowerShell och säkerhets- & powershell-kompatibilitet i samma PowerShell-session. Mer information finns i [Köra skriptet för att få en lista över mappar för en postlåda.](use-content-search-for-targeted-collections.md#step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site)
 
 2. Kopiera mapp-ID:erna för alla undermappar i mappen Återställningsbara objekt. Alternativt kan du omdirigera utdata från skriptet till en textfil.
 
@@ -321,7 +321,7 @@ Här är en översikt över processen för att söka efter och ta bort objekt i 
 
 ### <a name="verify-that-items-were-deleted"></a>Kontrollera att objekten har tagits bort
 
-Om du vill kontrollera att du har tagit bort objekt från mappen Återställningsbara objekt i en postlåda använder du cmdleten **Get-MailboxFolderStatistics** i Exchange Online PowerShell för att kontrollera storlek och antal objekt i mappen för permanent borttagna objekt. Du kan jämföra den här statistiken med den statistik du hämtade i steg 1.
+Kontrollera att du har tagit bort objekt från mappen Återställningsbara objekt i en postlåda med cmdleten **Get-MailboxFolderStatistics** i Exchange Online PowerShell för att kontrollera storleken och antalet objekt i mappen för permanent borttagna objekt. Du kan jämföra den här statistiken med den statistik du hämtade i steg 1.
   
 Kör följande kommando för att få aktuell storlek och totalt antal objekt i mappar och undermappar i mappen Återställningsbara objekt i användarens primära postlåda.
   
@@ -339,7 +339,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
 
 Det sista steget är att återställa postlådan till föregående konfiguration. Det innebär att du återställer egenskaperna som du ändrade i steg 2 och återapplicering av de håll som du tog bort i steg 3. Det omfattar:
   
-- Ändra tillbaka det borttagna objektets bevarandeperiod till det tidigare värdet. Du kan också bara låta den här uppsättningen vara 30 dagar, det högsta värdet i Exchange Online.
+- Ändra tillbaka det borttagna objektets bevarandeperiod till det tidigare värdet. Du kan också låta denna vara inställd på 30 dagar, det högsta värdet i Exchange Online.
 
 - Återaktivera återställning av enstaka objekt.
 

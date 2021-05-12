@@ -15,18 +15,19 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: df77a3d6c1f66882600a200b83b3b2585473f42b
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: fc04db0c9fe8ee6d09efc9802ab4a747af0b3e9c
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995075"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326703"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Aktivera regler för minskning av attackytan
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
+
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -35,14 +36,14 @@ ms.locfileid: "51995075"
 
 [Minskningsregler för attackytor](attack-surface-reduction.md) (ASR-regler) hjälper till att förhindra åtgärder som ofta används för missbruk av skadlig programvara för att avslöja enheter och nätverk.
 
-**Krav** Du kan ange minskningsregler för attackytan för enheter som kör någon av följande versioner av Windows:
+**Krav** Du kan ange minskningsregler för attackytan för enheter som kör någon av följande utgåvor och versioner av Windows:
 
-- Windows 10 Pro, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
-- Windows 10 Enterprise, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
+- Windows 10 Pro, version [1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
+- Windows 10 Enterprise, version [1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
 - Windows Server, [version 1803 (Halvårskanal)](/windows-server/get-started/whats-new-in-windows-server-1803) eller senare
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Även om minskningsregler för attackytor inte kräver en [Windows E5-licens](/windows/deployment/deploy-enterprise-licenses)får du avancerade hanteringsfunktioner om du har Windows E5. Dessa funktioner är endast tillgängliga i Windows E5: övervakning, analys och arbetsflöden som är tillgängliga i Defender för [slutpunkt,](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)samt rapporterings- och konfigurationsfunktioner i [Säkerhetscenter för Microsoft 365.](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true) Dessa avancerade funktioner är inte tillgängliga med en Windows Professional- eller Windows E3-licens. Men om du har de licenserna kan du använda Loggboken och Microsoft Defender Antivirus-loggarna för att granska dina minskningsregelhändelser för attackytan.
+Även om minskningsregler för attackytan inte kräver en [E5 Windows-licens,](/windows/deployment/deploy-enterprise-licenses)får du avancerade hanteringsfunktioner om du har Windows E5. De här funktionerna är endast tillgängliga i Windows E5: övervakning, analys och arbetsflöden som är tillgängliga i Defender för [slutpunkt,](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)samt rapporterings- och konfigurationsfunktioner [i Microsoft 365 säkerhetscenter.](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true) Dessa avancerade funktioner är inte tillgängliga med en licens från Windows Professional eller Windows E3. Men om du har dessa licenser kan du använda Loggboken och Microsoft Defender Antivirus för att granska dina attack surface-minskningsregelhändelser.
 
 Varje ASR-regel innehåller en av fyra inställningar:
 
@@ -54,10 +55,10 @@ Varje ASR-regel innehåller en av fyra inställningar:
 > [!IMPORTANT]
 > För närvarande stöds inte varningsläge för tre ASR-regler när du konfigurerar ASR-regler i Microsoft Endpoint Manager (MEM). Mer information finns i [Fall där varningsläge inte stöds.](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)
 
-Vi rekommenderar starkt att du använder ASR-regler med en Windows E5-licens (eller liknande licens-SKU) för att dra nytta av de avancerade funktionerna för övervakning och rapportering i [Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection) för slutpunkt (Defender för slutpunkt). Men för andra licenser som Windows Professional eller E3 som inte har tillgång till avancerade funktioner för övervakning och rapportering kan du utveckla dina egna övervaknings- och rapporteringsverktyg ovanpå händelser som genereras vid varje slutpunkt när ASR-regler utlöses (t.ex. vidarebefordran av händelse).
+Vi rekommenderar starkt att du använder ASR-regler med en Windows E5-licens (eller liknande licens-SKU) för att dra nytta av de avancerade funktioner för övervakning och rapportering som finns tillgängliga i [Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection) för slutpunkt (Defender för slutpunkt). Men för andra licenser som Windows Professional eller E3 som inte har tillgång till avancerade funktioner för övervakning och rapportering kan du utveckla dina egna övervakning- och rapporteringsverktyg ovanpå händelser som genereras vid varje slutpunkt när ASR-regler utlöses (t.ex. vidarebefordran av händelse).
 
 > [!TIP]
-> Mer information om Windows-licensiering finns i [Windows 10-licensiering](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) och volymlicensieringsguiden [för Windows 10.](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)
+> Mer information om Windows finns i [Windows 10 licensiering](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) och få [volymlicensieringsguiden för Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
 
 Du kan aktivera minskningsregler för attackytan med någon av följande metoder:
 
@@ -79,7 +80,6 @@ Du kan även utesluta ASR-regler från utlösare baserat på certifikat och fils
 > Att utesluta filer eller mappar kan allvarligt minska skyddet som ges av ASR-regler. Undantagna filer tillåts köras och ingen rapport eller händelse registreras.
 > Om ASR-reglerna identifierar filer som du inte anser ska identifieras bör du först använda granskningsläge [för att testa regeln.](evaluate-attack-surface-reduction.md)
 
-
 Du kan ange enskilda filer eller mappar (med hjälp av mappsökvägar eller fullständigt kvalificerade resursnamn), men du kan inte ange vilka regler undantagen ska gälla för. Ett undantag tillämpas endast när det undantagna programmet eller tjänsten startas. Om du till exempel lägger till ett undantag för en uppdateringstjänst som redan körs fortsätter uppdateringstjänsten att utlösa händelser tills tjänsten stoppas och startas om.
 
 ASR-regler stöder miljövariabler och jokertecken. Information om hur du använder jokertecken finns i Använda jokertecken i listorna filnamn och [mappsökväg eller undantag för filnamnstillägg.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)
@@ -90,7 +90,7 @@ Följande procedurer för att aktivera ASR-regler innehåller instruktioner för
 
 1. Välj **Profiler för**  >  **enhetskonfiguration**. Välj en befintlig profil för slutpunktsskydd eller skapa en ny. Om du vill skapa en ny väljer du **Skapa profil och** anger information om den här profilen. För **Profiltyp** väljer du **Slutpunktsskydd**. Om du har valt en befintlig profil väljer du **Egenskaper** och sedan **Inställningar**.
 
-2. I fönstret **Slutpunktsskydd** väljer du **Windows Defender Exploit Guard och** sedan Attack Surface **Reduction**. Välj önskad inställning för varje ASR-regel.
+2. I fönstret **Slutpunktsskydd** väljer du **Windows Defender Exploit Guard** och sedan Attack Surface **Reduction.** Välj önskad inställning för varje ASR-regel.
 
 3. Ange **enskilda filer och mappar** under Undantag för minskning av attackytan. Du kan också välja **Importera om du** vill importera en CSV-fil som innehåller filer och mappar som ska undantas från ASR-regler. Varje rad i CSV-filen ska vara formaterad på följande sätt:
 
@@ -128,7 +128,7 @@ Exempel:
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. I Microsoft Endpoint Configuration Manager går du till **Tillgångar och Slutpunktsskydd för**  >  **efterlevnad** Windows Defender  >  **Exploit Guard**.
+1. I Microsoft Endpoint Configuration Manager går du till **Tillgångar och Endpoint Protection** Windows Defender Exploit  >    >  **Guard.**
 
 2. Välj **Home**  >  **Create Exploit Guard-policy**.
 
@@ -145,11 +145,11 @@ Exempel:
 > [!WARNING]
 > Om du hanterar dina datorer och enheter med Intune, Konfigurationshanteraren eller någon annan hanteringsplattform på företagsnivå skriver hanteringsprogramvaran över eventuella grupprincipinställningar som står i konflikt vid start.
 
-1. Öppna grupprinciphanteringskonsolen på datorn för [grupprinciphantering,](https://technet.microsoft.com/library/cc731212.aspx)högerklicka på det grupprincipobjekt du vill konfigurera och välj **Redigera.**
+1. På datorn för hantering av grupprinciper öppnar du [konsolen Grupprinciphantering](https://technet.microsoft.com/library/cc731212.aspx), högerklickar på det grupprincipobjekt som du vill konfigurera och väljer **Redigera**.
 
-2. I **redigeraren för grupprinciphantering** går du till **Datorkonfiguration** och väljer **Administrativa mallar**.
+2. I **Redigeraren för grupprinciphantering** går du till **Datorkonfiguration** och väljer **Administrativa mallar**.
 
-3. Expandera trädet till **Windows-komponenter**  >  **Microsoft Defender Antivirus** Microsoft Defender  >  **Sårbarhetsskydd-** minskning av  >  **attackytan**.
+3. Expandera trädet för att **Windows komponenter Microsoft Defender Antivirus**  >    >  **Microsoft Defender Exploit Guard**  >  **minska attackytan.**
 
 4. Välj **Konfigurera minskningsregler för attackytan** och välj **Aktiverad**. Sedan kan du ange enskilda tillstånd för varje regel i alternativavsnittet.
 
@@ -167,12 +167,81 @@ Exempel:
    > [!WARNING]
    > Använd inte citattecken eftersom de inte stöds för antingen **värdenamnskolumnen** eller **värdekolumnen.**
 
+## <a name="microsoft-endpoint-manager-custom-procedure"></a>Microsoft Endpoint Manager anpassad procedur
+
+Du kan använda ett Microsoft Endpoint Manager (MEM) för att konfigurera anpassade ASR-regler.
+
+1. Öppna administrationscentret Microsoft Endpoint Manager (MEM). På **Start-menyn** klickar du  **på Enheter**, väljer **Konfigurationsprofil** och klickar sedan **på Skapa profil**.
+
+   ![MEM– Skapa profil](images/mem01-create-profile.png)
+
+2. Välj **följande i** följande två listlistor i Skapa en profil:
+
+   - I **Plattform** väljer du **Windows 10 och senare**
+   - I **Profiltyp** väljer du **Mallar**
+
+   Välj **Anpassad** och klicka sedan på **Skapa**.
+
+   ![MeM-regelprofilattribut](images/mem02-profile-attributes.png)
+
+3. Verktyget Anpassad mall öppnas och visar grunderna **i steg 1.** I **1 Basics**, i **Name** skriver du ett namn på mallen och i **Beskrivning kan** du skriva en valfri beskrivning.
+
+   ![Grundläggande MEM-attribut](images/mem03-1-basics.png)
+
+4. Klicka på **Nästa**. Steg **2 Konfigurationsinställningar** öppnas. Om du vill använda OMA-URI Inställningar du på **Lägg till.** Nu visas två alternativ: **Lägg till** och **Exportera.**
+
+   ![Inställningar för MEM-konfiguration](images/mem04-2-configuration-settings.png)
+
+5. Klicka **på Lägg till** igen. Lägg **till rad OMA-URI Inställningar** rad. Gör **följande i** Lägg till rad:
+
+   - Ange **ett** namn för regeln i Namn.
+   - Skriv **en** kort beskrivning i Beskrivning.
+   - I **OMA-URI** skriver eller klistrar du in den specifika OMA-URI-länken för regeln som du lägger till.
+   - I **Datatyp** väljer du **Sträng**.
+   - I **Värde** skriver eller klistrar du in GUID-värdet, tecknet och värdet Tillstånd utan \= blanksteg _(GUID=StateValue)._ Var: {0: Inaktivera (inaktivera ASR-regeln)}, {1 : Blockera (aktivera ASR-regeln)}, {2: Granska (Utvärdera hur ASR-regeln skulle påverka din organisation om den skulle aktiveras)}, {6: Varna (Aktivera ASR-regeln men tillåta slutanvändare att kringgå blockeringen)}
+
+   ![MEM OMA-URI-konfiguration](images/mem05-add-row-oma-uri.png)
+
+6. Klicka på **Spara**. **Lägg till rad** stängs. Klicka **på** Nästa i **Anpassad.** I steg **3 Omfattningstaggar** är omfattningstaggar valfria. Gör något av följande:
+
+   - Klicka **på Välj omfattningstaggar**, välj omfattningstaggen (valfritt) och klicka sedan på **Nästa.**
+   - Eller klicka på **Nästa**
+
+7. I steg **4 Tilldelningar**, i Inkluderade **grupper** - för de grupper som du vill att regeln ska gälla - välj bland följande alternativ:
+
+   - **Lägga till grupper**
+   - **Lägga till alla användare**
+   - **Lägg till alla enheter**
+
+   ![MEM-uppgifter](images/mem06-4-assignments.png)
+
+8. Markera **de grupper** som du vill utesluta från regeln i Undantagna grupper och klicka sedan på **Nästa.**
+
+9. I steg **5 Tillämplighetsregler** för följande inställningar gör du följande:
+
+   - I **Regel** väljer du **antingen Tilldela profil** om , eller Tilldela inte profil **om**
+   - I **Egenskap** väljer du den egenskap som du vill att regeln ska gälla för
+   - I **Värde** anger du tillämplig värde eller värdeintervall
+
+   ![Tillämplighetsregler för MEM](images/mem07-5-applicability -rules.png)
+
+10. Klicka på **Nästa**. I steg **6 Granska + skapa** granskar du de inställningar och den information du har valt och angett och klickar sedan på **Skapa**.
+
+   ![MEM – granska och skapa](images/mem08-6-review-create.png)
+
+>[!NOTE]
+> Reglerna är aktiva och finns inom några minuter.
+
+>[!NOTE]
+> Konflikthantering: Om du tilldelar en enhet två olika ASR-principer hanteras regler som har tilldelats olika tillstånd, det finns ingen hantering av konflikter och resultatet blir ett fel.
+> Regler som inte är i konflikt resulterar inte i fel och regeln tillämpas korrekt. Resultatet är att den första regeln tillämpas och efterföljande regler som inte är i konflikt slås ihop med principen.
+
 ## <a name="powershell"></a>PowerShell
 
 > [!WARNING]
 > Om du hanterar dina datorer och enheter med Intune, Konfigurationshanteraren eller en annan hanteringsplattform på företagsnivå skriver hanteringsprogramvaran över eventuella motstridande PowerShell-inställningar vid start. Om du vill låta användare definiera värdet med hjälp av PowerShell använder du alternativet "Användardefinierad" för regeln på hanteringsplattformen.
 
-1. Skriv **powershell** på Start-menyn, högerklicka på **Windows PowerShell och** välj Kör som **administratör.**
+1. Skriv **powershell** på Start-menyn, högerklicka på **Windows PowerShell** välj Kör **som administratör**.
 
 2. Skriv in följande cmdlet:
 

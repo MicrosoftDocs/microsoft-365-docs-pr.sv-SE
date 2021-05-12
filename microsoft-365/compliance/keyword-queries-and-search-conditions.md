@@ -22,20 +22,20 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Läs mer om e-post- och filegenskaper som du kan söka efter med hjälp av eDiscovery-sökverktygen i Microsoft 365.
-ms.openlocfilehash: a9a178eb9b139cacd803c8ab168b3143b75b5f92
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: cbd3969e9936df3dc82c364d804dbcd366b0e07a
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311874"
+ms.locfileid: "52326600"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Nyckelordsfrågor och sökvillkor för eDiscovery
 
-I det här avsnittet beskrivs de e-post- och dokumentegenskaper som du kan söka efter i e-postobjekt och Microsoft Teams-chattkonversationer i Exchange Online samt dokument som lagras på SharePoint- och OneDrive för företag-webbplatser med eDiscovery-sökverktygen i efterlevnadscentret för Microsoft 365. Det omfattar innehållssökning, bas-eDiscovery och Advanced eDiscovery (eDiscovery-sökningar i Advanced eDiscovery kallas *samlingar).* Du kan också använda **\* cmdletarna -ComplianceSearch** i Security & Compliance Center PowerShell för att söka efter de här egenskaperna. I det här avsnittet beskrivs också:
+I det här avsnittet beskrivs de e-post- och dokumentegenskaper som du kan söka efter i e-postobjekt och Chattkonversationer i Microsoft Teams i Exchange Online samt dokument som lagras på SharePoint- och OneDrive för företag-webbplatser med hjälp av eDiscovery-sökverktygen i efterlevnadscentret för Microsoft 365. Det omfattar innehållssökning, bas-eDiscovery och avancerad eDiscovery (eDiscovery-sökningar i Avancerad eDiscovery kallas *för samlingar).* Du kan också använda **\* cmdletarna -ComplianceSearch** i Security & Compliance Center PowerShell för att söka efter de här egenskaperna. I det här avsnittet beskrivs också:
   
 - Använd booleska sökoperatorer, sökvillkor och andra sökfrågetekniker för att förfina sökresultaten.
 
-- Söker efter känsliga datatyper och anpassade typer av känsliga data i SharePoint och OneDrive för företag.
+- Söka efter känsliga datatyper och anpassade typer av känsliga data i SharePoint och OneDrive för företag.
 
 - Söka efter webbplatsinnehåll som delas med användare utanför organisationen
 
@@ -45,14 +45,14 @@ Stegvisa instruktioner för hur du skapar olika eDiscovery-sökningar finns i:
 
 - [Söka efter innehåll i Bas-eDiscovery](search-for-content-in-core-ediscovery.md)
 
-- [Skapa ett utkast i Advanced eDiscovery](create-draft-collection.md)
+- [Skapa en utkastsamling i Avancerad eDiscovery](create-draft-collection.md)
 
 > [!NOTE]
-> eDiscovery-sökningar i efterlevnadscentret för Microsoft 365 och motsvarande **\* -ComplianceSearch-cmdlets** i Security & Compliance Center PowerShell använder Keyword Query Language (KQL). Mer detaljerad information finns i [Syntaxreferens för nyckelordsfrågaspråk.](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+> eDiscovery-sökningar i Microsoft 365 efterlevnadscenter och motsvarande **\* -ComplianceSearch-cmdlets** i Security & Compliance Center PowerShell använder Keyword Query Language (KQL). Mer detaljerad information finns i [Syntaxreferens för nyckelordsfrågaspråk.](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
   
 ## <a name="searchable-email-properties"></a>Sökbara e-postegenskaper
 
-I följande tabell visas e-postegenskaper som kan sökas igenom med hjälp av eDiscovery-sökverktygen i efterlevnadscentret för Microsoft 365 eller med hjälp av **New-ComplianceSearch** eller **cmdleten Set-ComplianceSearch.** Tabellen innehåller ett exempel på  _syntaxen property:value_ för varje egenskap och en beskrivning av sökresultaten som returneras av exemplen. Du kan skriva dessa  `property:value` par i rutan nyckelord för en eDiscovery-sökning. 
+I följande tabell visas egenskaper för e-postmeddelanden som kan sökas med hjälp av eDiscovery-sökverktygen i Efterlevnadscenter för Microsoft 365 eller med **new-compliancesearch** eller cmdleten **Set-ComplianceSearch.** Tabellen innehåller ett exempel på  _syntaxen property:value_ för varje egenskap och en beskrivning av sökresultaten som returneras av exemplen. Du kan skriva dessa  `property:value` par i rutan nyckelord för en eDiscovery-sökning. 
 
 > [!NOTE]
 > När du söker efter e-postegenskaper går det inte att söka efter objekt där den angivna egenskapen är tom eller tom. Om du till exempel använder ämnesparet **property:value:""** när du söker efter e-postmeddelanden med en tom ämnesrad returneras noll resultat.  Det här gäller även när du söker i egenskaper för webbplats och kontakt.
@@ -61,20 +61,20 @@ I följande tabell visas e-postegenskaper som kan sökas igenom med hjälp av eD
 |:-----|:-----|:-----|:-----|
 |AttachmentNames|Namnen på filerna som bifogats i ett e-postmeddelande.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> `attachmentnames:.pptx` |Meddelanden som har en bifogad fil med namnet annualreport.ppt. I det andra exemplet returnerar jokertecknet meddelanden med ordet "årlig" i filnamnet på en bifogad fil. Det tredje exemplet returnerar alla bifogade filer med pptx-filnamnstillägget.|
 |Hemlig kopia|Fältet Hemlig kopia i ett e-postmeddelande. <sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|Alla exempel returnerar meddelanden med Pilar Pinilla som finns i fältet Hemlig kopia.|
-|Kategori| De kategorier som ska sökas. Kategorier kan definieras av användare med hjälp av Outlook eller Outlook på webben (hette tidigare Outlook Web App). Möjliga värden är:  <br/><br/>  blå  <br/>  grön  <br/>  orange  <br/>  lila  <br/>  röd  <br/>  gul|`category:"Red Category"`|Meddelanden som har tilldelats den röda kategorin i källpostlådorna.|
+|Kategori| De kategorier som ska sökas. Kategorier kan definieras av användare med hjälp av Outlook eller Outlook på webben (kallades tidigare Outlook Web App). Möjliga värden är:  <br/><br/>  blå  <br/>  grön  <br/>  orange  <br/>  lila  <br/>  röd  <br/>  gul|`category:"Red Category"`|Meddelanden som har tilldelats den röda kategorin i källpostlådorna.|
 |Kopia|Fältet Kopia i ett e-postmeddelande. <sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|I båda exemplen har meddelanden där Pilar Pinilla angetts i fältet Kopia.|
 |Folderid|Mapp-ID (GUID) för en viss postlådemapp. Om du använder den här egenskapen ska du se till att söka i postlådan som den angivna mappen finns i. Endast den angivna mappen genomsöks. Undermappar i mappen genomsöks inte. Om du vill söka i undermappar måste du använda egenskapen Folderid för den undermapp du vill söka i.  <br/> Mer information om hur du söker efter egenskapen Folderid och använder ett skript för att hämta mapp-ID:na för en viss postlåda finns i Använda innehållssökning [för riktade samlingar.](use-content-search-for-targeted-collections.md)|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|I det första exemplet returneras alla objekt i den angivna postlådemappen. Det andra exemplet returnerar alla objekt i den angivna postlådemappen som har skickats eller tagits emot av garthf@contoso.com.|
 |Från|Avsändaren av ett e-postmeddelande. <sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|Meddelanden som skickas av den angivna användaren eller som skickas från en angiven domän.|
 |HasAttachment|Anger om ett meddelande har en bifogad fil. Använd värdena **sant** eller **falskt.**|`from:pilar@contoso.com AND hasattachment:true`|Meddelanden som skickats av en angiven användare som har bifogade filer.|
 |Prioritet|Prioriteten för ett e-postmeddelande, som en avsändare kan ange när de skickar ett meddelande. Som standard skickas meddelanden med normal prioritet, såvida inte avsändaren anger prioriteten som **hög** eller **låg.**|`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|Meddelanden som har markerats som hög prioritet, medelstor eller låg prioritet.|
 |IsRead|Anger om meddelanden har lästs. Använd värdena **sant** eller **falskt.**|`isread:true`  <br/> `isread:false`|I det första exemplet returneras meddelanden med egenskapen IsRead inställd på **Sant.** I det andra exemplet returneras meddelanden där egenskapen IsRead är inställd på **False.**|
-|ItemClass|Använd den här egenskapen till att söka efter specifika datatyper från tredje part som organisationen importerat till Office 365. Använd följande syntax för den här egenskapen:  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|I det första exemplet returneras Facebook-objekt som innehåller ordet "contoso" i egenskapen Ämne. Det andra exemplet returnerar Twitter-objekt som postades av Ann Beebe och som innehåller nyckelordet "Northwind Traders".  <br/> En fullständig lista med värden som ska användas för datatyper från tredje part för egenskapen ItemClass finns i Använda innehållssökning för att söka efter data från tredje part som har importerats [till Office 365](use-content-search-to-search-third-party-data-that-was-imported.md).|
-|Sort| Den typ av e-postmeddelande du vill söka efter. Möjliga värden:  <br/>  kontakter  <br/>  dokument  <br/>  e-post  <br/>  externaldata  <br/>  fax  <br/>  snabbmeddelanden  <br/>  journaler  <br/>  möten  <br/>  microsoftteams (returnerar objekt från chattar, möten och samtal i Microsoft Teams)  <br/>  anteckningar  <br/>  inlägg  <br/>  rssfeeds  <br/>  uppgifter  <br/>  röstbrevlåda|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|I det första exemplet returneras e-postmeddelanden som uppfyller sökvillkoren. Det andra exemplet returnerar e-postmeddelanden, snabbmeddelandekonversationer (Skype för företag konversationer och chattar i Microsoft Teams) och röstmeddelanden som uppfyller sökvillkoren. I det tredje exemplet returneras objekt som har importerats till postlådor i Microsoft 365 från datakällor från tredje part, till exempel Twitter, Facebook och Cisco Jabber, som uppfyller sökvillkoren. Mer information finns i [Arkivera data från tredje part i Office 365](https://www.microsoft.com/?ref=go).|
+|ItemClass|Använd den här egenskapen till att söka efter specifika datatyper från tredje part som organisationen har importerat till Office 365. Använd följande syntax för den här egenskapen:  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|I det första exemplet returneras Facebook-objekt som innehåller ordet "contoso" i egenskapen Ämne. Det andra exemplet returnerar Twitter-objekt som postades av Ann Beebe och som innehåller nyckelordet "Northwind Traders".  <br/> En fullständig lista med värden som ska användas för datatyper från tredje part för egenskapen ItemClass finns i Använda innehållssökning för att söka efter data från tredje part som har importerats till [Office 365.](use-content-search-to-search-third-party-data-that-was-imported.md)|
+|Sort| Den typ av e-postmeddelande du vill söka efter. Möjliga värden:  <br/>  kontakter  <br/>  dokument  <br/>  e-post  <br/>  externaldata  <br/>  fax  <br/>  snabbmeddelanden  <br/>  journaler  <br/>  möten  <br/>  microsoftteams (returnerar objekt från chattar, möten och samtal i Microsoft Teams)  <br/>  anteckningar  <br/>  inlägg  <br/>  rssfeeds  <br/>  uppgifter  <br/>  röstbrevlåda|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|I det första exemplet returneras e-postmeddelanden som uppfyller sökvillkoren. Det andra exemplet returnerar e-postmeddelanden, snabbmeddelandekonversationer (inklusive Skype för företag-konversationer och chattar i Microsoft Teams) och röstmeddelanden som uppfyller sökvillkoren. I det tredje exemplet returneras objekt som har importerats till postlådor i Microsoft 365 från datakällor från tredje part, till exempel Twitter, Facebook och Cisco Jabber, som uppfyller sökvillkoren. Mer information finns i [Arkivera data från tredje part i Office 365](https://www.microsoft.com/?ref=go).|
 |Deltagare|Alla personer (fält) i ett e-postmeddelande. De här fälten är Från, Till, Kopia och Hemlig<sup>kopia. 1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|Meddelanden som skickas av eller skickas till garthf@contoso.com. Det andra exemplet returnerar alla meddelanden som skickats av eller skickats till en användare i contoso.com domän.|
 |Mottaget|Datumet då ett e-postmeddelande togs emot av en mottagare.|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|Meddelanden som togs emot den 15 april 2016. Det andra exemplet returnerar alla meddelanden som tagits emot mellan den 1 januari 2016 och den 31 mars 2016.|
 |Mottagare|Alla mottagarfält i ett e-postmeddelande. De här fälten är Till, Kopia och Hemlig<sup>kopia. 1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|Meddelanden som skickas till garthf@contoso.com. I det andra exemplet returneras meddelanden som skickats till alla mottagare i contoso.com domän.|
 |Skickat|Datumet då ett e-postmeddelande skickades av avsändaren.|`sent:07/01/2016`  <br/> `sent>=06/01/2016 AND sent<=07/01/2016`|Meddelanden som skickades det angivna datumet eller som skickats inom det angivna datumintervallet.|
-|Storlek|Storleken på ett objekt i byte.|`size>26214400`  <br/> `size:1..1048567`|Meddelanden som är större än 25?? MB. I det andra exemplet returneras meddelanden från 1 till 1 048 567 byte (1 MB) i storlek.|
+|Storlek|Storleken på ett objekt i byte.|`size>26214400`  <br/> `size:1..1048567`|Meddelanden som är större än 25 MB. I det andra exemplet returneras meddelanden från 1 till 1 048 567 byte (1 MB) i storlek.|
 |Ämne|Texten i ämnesraden i ett e-postmeddelande.  <br/> **Obs!** När du använder egenskapen Ämne i en fråga returnerar sökningen alla meddelanden där ämnesraden innehåller den text som du söker efter. Med andra ord returnerar frågan inte bara de meddelanden som matchar exakt. Om du till exempel söker efter innehåller resultaten meddelanden med  `subject:"Quarterly Financials"` ämnet Kvartalsvisa budget 2018.|`subject:"Quarterly Financials"`  <br/> `subject:northwind`|Meddelanden som innehåller frasen "Kvartalsvis ekonomi" någonstans i texten på ämnesraden. I det andra exemplet returneras alla meddelanden som innehåller ordet northwind i ämnesraden.|
 |Till|Fältet Till i ett e-postmeddelande. <sup>1</sup>|`to:annb@contoso.com`  <br/> `to:annb ` <br/> `to:"Ann Beebe"`|Alla exempel returnerar meddelanden där Ann Beebe anges på raden Till:.|
 |||||
@@ -125,7 +125,7 @@ I följande tabell visas de kontaktegenskaper som är indexerade och som du kan 
 > [!TIP]
 > Om du vill söka efter värden som innehåller blanksteg eller specialtecken använder du dubbla citattecken (" ") som innehåller frasen; till exempel `businessaddress:"123 Main Street"` .
   
-| Egenskap | Egenskapsbeskrivning |
+|Egenskap |Egenskapsbeskrivning |
 |:-----|:-----|
 |BusinessAddress|Adressen i egenskapen **Företagsadress.** Egenskapen kallas även **Arbetsadress** på sidan kontaktegenskaper.|
 |BusinessPhone|Telefonnumret i någon av egenskaperna **för Telefon** telefonnummer.|
@@ -173,7 +173,7 @@ Mer information om hur du skapar frågor med egenskapen finns i Skapa en fråga 
 
 Booleska sökoperatorer som **AND,** **OR** och **NOT** hjälper dig att definiera mer exakta sökningar genom att inkludera eller exkludera specifika ord i sökfrågan. Andra tekniker, som att använda egenskapsoperatorer (t.ex. eller ), citattecken, parenteser och jokertecken, hjälper dig att förfina `>=` `..` en sökfråga. I följande tabell visas operatorer som du kan använda för att begränsa eller bredda sökresultaten. 
   
-| Operator | Användning | Beskrivning |
+|Operator |Användning |Beskrivning |
 |:-----|:-----|:-----|
 |OCH|nyckelord1 OCH nyckelord2|Returnerar objekt som innehåller alla angivna nyckelord eller  `property:value` uttryck. Skulle till exempel  `from:"Ann Beebe" AND subject:northwind` returnera alla meddelanden som skickats av Ann Beebe som innehöll ordet northwind i ämnesraden. <sup>2</sup>|
 |+|nyckelord1 + nyckelord2 + nyckelord3|Returnerar poster som *innehåller* `keyword2` `keyword3` *antingen eller och* som också innehåller `keyword1` .   Det här exemplet motsvarar därför frågan  `(keyword2 OR keyword3) AND keyword1` .  <br/> Frågan `keyword1 + keyword2` (med ett blanksteg efter **+** symbolen) är inte samma sak som att använda **operatorn OCH.** Den här frågan motsvarar och  `"keyword1 + keyword2"` returnerar objekt med den exakta fasen  `"keyword1 + keyword2"` .|
@@ -233,7 +233,7 @@ Skapa ett villkor med hjälp av e-postegenskaper när du söker i postlådor ell
 |:-----|:-----|
 |Meddelande sort| Meddelandetypen för sökning. Det här är samma egenskap som e-poste-egenskapen Kind. Möjliga värden:  <br/><br/>  kontakter  <br/>  dokument  <br/>  e-post  <br/>  externaldata  <br/>  fax  <br/>  snabbmeddelanden  <br/>  journaler  <br/>  möten  <br/>  microsoftteams  <br/>  anteckningar  <br/>  inlägg  <br/>  rssfeeds  <br/>  uppgifter  <br/>  röstbrevlåda|
 |Deltagare|Alla personer (fält) i ett e-postmeddelande. De här fälten är Från, Till, Kopia och Hemlig kopia.|
-|Typ|Egenskapen meddelandeklass för ett e-postobjekt. Det här är samma egenskap som e-postegenskapen ItemClass. Det är också ett villkor med flera värden. Om du vill markera flera meddelandeklasser håller du **ned CTRL-tangenten** och klickar sedan på två eller fler meddelandeklasser i listrutan som du vill lägga till i villkoret. Varje meddelandeklass som du väljer i listan kopplas logiskt av operatorn **ELLER** i motsvarande sökfråga.  <br/> En lista med meddelandeklasser (och deras motsvarande meddelandeklass-ID) som används av Exchange och som du kan välja i **listan Meddelandeklass** finns i Objekttyper och [Meddelandeklasser.](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes)|
+|Typ|Egenskapen meddelandeklass för ett e-postobjekt. Det här är samma egenskap som e-postegenskapen ItemClass. Det är också ett villkor med flera värden. Om du vill markera flera meddelandeklasser håller du **ned CTRL-tangenten** och klickar sedan på två eller fler meddelandeklasser i listrutan som du vill lägga till i villkoret. Varje meddelandeklass som du väljer i listan kopplas logiskt av operatorn **ELLER** i motsvarande sökfråga.  <br/> En lista över de meddelandeklasser (och deras motsvarande meddelandeklass-ID) som används av Exchange och som du kan välja i listan **Meddelandeklass** finns i Objekttyper och [Meddelandeklasser.](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes)|
 |Mottaget|Datumet då ett e-postmeddelande togs emot av en mottagare. Det här är samma egenskap som egenskapen Mottagen e-post.|
 |Mottagare|Alla mottagarfält i ett e-postmeddelande. De här fälten är Till, Kopia och Hemlig kopia.|
 |Avsändare|Avsändaren av ett e-postmeddelande.|
@@ -244,12 +244,12 @@ Skapa ett villkor med hjälp av e-postegenskaper när du söker i postlådor ell
   
 ### <a name="conditions-for-document-properties"></a>Villkor för dokumentegenskaper
 
-Skapa ett villkor med dokumentegenskaper när du söker efter dokument på SharePoint och OneDrive för företag webbplatser. I följande tabell visas de dokumentegenskaper som du kan använda för ett villkor. Dessa egenskaper är en del av de webbplatsegenskaper som beskrivits tidigare. De här beskrivningarna upprepas för din bekvämlighet.
+Skapa ett villkor med dokumentegenskaper när du söker efter dokument på SharePoint- och OneDrive för företag-webbplatser. I följande tabell visas de dokumentegenskaper som du kan använda för ett villkor. Dessa egenskaper är en del av de webbplatsegenskaper som beskrivits tidigare. De här beskrivningarna upprepas för din bekvämlighet.
   
 | Villkor | Beskrivning |
 |:-----|:-----|
-|Författare|Redigeringsfältet från Office, som finns kvar om ett dokument kopieras. Om en användare till exempel skapar ett dokument och e-postmeddelanden till någon annan som sedan laddar upp det till SharePoint, behåller dokumentet den ursprungliga författaren.|
-|Title|Dokumentets rubrik. Titelegenskapen är metadata som anges i Office dokument. Den är inte samma som filnamnet i dokumentet.|
+|Författare|Redigeringsfältet från Office-dokument, som finns kvar om ett dokument kopieras. Om en användare till exempel skapar ett dokument och e-postmeddelanden till någon annan som sedan laddar upp det till SharePoint behåller dokumentet den ursprungliga författaren.|
+|Title|Dokumentets rubrik. Titelegenskapen är metadata som anges i Office-dokument. Den är inte samma som filnamnet i dokumentet.|
 |Skapad|Datumet då ett dokument skapades.|
 |Senast ändrad|Datumet då ett dokument senast ändrades.|
 |Filtyp|Filnamnstillägget för en fil. Till exempel docx, ett, pptx eller xlsx. Det här är samma egenskap som egenskapen FileExtension-webbplats.|
@@ -432,6 +432,22 @@ Använd följande nyckelordsfråga Skype för företag du vill söka efter konve
 ```powershell
 kind:im AND subject:conversation AND (received=startdate..enddate)
 ```
+
+## <a name="character-limits-for-searches"></a>Teckenbegränsningar för sökningar
+
+Det finns en teckenbegränsning på 4 000 tecken för sökfrågor när du söker efter innehåll SharePoint webbplatser och OneDrive-konton.  
+Så här beräknas det totala antalet tecken i sökfrågan:
+
+- Tecknen i nyckelordssökningsfrågan (inklusive både användar- och filterfält) räknas mot den här gränsen.
+
+- Tecknen i en platsegenskap (till exempel URL:erna för alla SharePoint webbplatser OneDrive platser som genomsöks) räknas mot den här gränsen.
+
+- Tecknen i alla sökbehörighetsfilter som används för användaren som kör antalet sökningar mot gränsen.
+
+Mer information om teckenbegränsningar finns i [eDiscovery-sökbegränsningar.](limits-for-content-search.md#search-limits)
+
+> [!NOTE]
+> Begränsningen på 4 000 tecken gäller för innehållssökning, bas-eDiscovery och Advanced eDiscovery.
 
 ## <a name="search-tips-and-tricks"></a>Söktips
 

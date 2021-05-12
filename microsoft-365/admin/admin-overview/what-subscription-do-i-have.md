@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,20 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_O365_Setup
-- Adm_TOC
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
+- commerce_subscriptions
+search.appverid: MET150
 description: Ta reda på vilka prenumerationer din organisation har genom att gå till sidan Dina produkter.
-ms.openlocfilehash: 38098eb01a9a1e7fa2ee46acf20cc03ed8f31f93
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 01/21/2021
+ms.openlocfilehash: c54b9795487f1cfc5902c2c761fdd65b78109bcf
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244002"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327240"
 ---
 # <a name="what-subscription-do-i-have"></a>Vilken prenumeration har jag?
 

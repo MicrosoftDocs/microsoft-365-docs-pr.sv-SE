@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Läs mer om hur du använder centraliserade tillägg för att distribuera tillägg till användare och grupper i organisationen.
-ms.openlocfilehash: 8503ed7ea2e088a8e17b52e619ee999aa05f497a
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 76bfa6272ec784518f045a50299fc7cda719eec8
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579296"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327204"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Hantera tillägg i administrationscentret
 
@@ -39,7 +39,7 @@ Mer information om hur du installerar tillägg från administrationscentret finn
 
 Ett tillägg kan vara antingen i läget **På** **eller Av.**
   
-|**Delstat**|**Hur tillståndet uppstår**|**Påverkan**|
+| Delstat | Hur tillståndet uppstår | Påverkan |
 |:-----|:-----|:-----|
 |**Aktiv**  <br/> |Administratören har laddat upp tillägget och tilldelat det till användare eller grupper.  <br/> |Användare och grupper som tilldelats tillägget kan se det i relevanta klienter.  <br/> |
 |**Inaktiverad**  <br/> |Administratören har inaktiverat tillägget.  <br/> |Användare och grupper som tilldelats tillägget har inte längre åtkomst till det.  <br/> Om tilläggstillståndet ändras till Aktivt får användare och grupper åtkomst till det igen.  <br/> |
@@ -53,7 +53,7 @@ Du kan också ta bort ett tillägg som har distribuerats.
 
 1. I administrationscentret går du till **sidan**  >  **& tillägg.**
 
-     > [!NOTE]
+    > [!NOTE]
     > Administrationscentret uppdateras för användning av integrerade appar. Om du inte ser stegen ovan går du till avsnittet Centraliserad distribution genom att gå till  >  **Inställningar-integrerade appar.** Högst upp på **sidan Integrerade** appar väljer du **Tillägg.**
 
 2. Välj det distribuerade tillägget.
@@ -68,7 +68,7 @@ Efter distributionen kan administratörer också hantera användaråtkomst till 
 
 1. I administrationscentret går du till **sidan**  >  **& tillägg.**
 
-     > [!NOTE]
+    > [!NOTE]
     > Administrationscentret uppdateras för användning av integrerade appar. Om du inte ser stegen ovan går du till avsnittet Centraliserad distribution genom att gå till  >  **Inställningar-integrerade appar.** Högst upp på **sidan Integrerade** appar väljer du **Tillägg.**
 
 2. Välj det distribuerade tillägget.
@@ -88,29 +88,27 @@ Som organisation kanske du vill förhindra nedladdning av nya Office-tillägg fr
   
 1. I administrationscentret går du till sidan **Inställningar** \> [Tjänster och tillägg](https://go.microsoft.com/fwlink/p/?linkid=2053743).
 
-     > [!NOTE]
+    > [!NOTE]
     > Administrationscentret uppdateras för användning av integrerade appar. Om du inte ser stegen ovan går du till avsnittet Centraliserad distribution genom att gå till  >  **Inställningar-integrerade appar.** Högst upp på **sidan Integrerade** appar väljer du **Tillägg.**
     
 3. Välj **Användarägda appar och tjänster.**
     
 4. Avmarkera alternativet att ge användare åtkomst till Office Store.
 
-Det hindrar alla användare från att hämta följande tillägg från Store.
-  
-- Tillägg för Word, Excel och PowerPoint 2016 från:
-    
-  - Windows
-    
-  - Mac
-    
-  - Office
-    
-    
-- Datainsamling som startar i **AppSource**
-    
-- Tillägg i Microsoft 365
-    
-En användare som försöker komma åt Office Store får ett meddelande om att Microsoft 365 har konfigurerats för att förhindra enskilda datainsamlingar av **Office Store-tillägg.**
+    Det hindrar alla användare från att hämta följande tillägg från Store.
+      
+    - Tillägg för Word, Excel och PowerPoint 2016 från:
+        
+      - Windows
+      - Mac
+      - Office
+        
+        
+    - Datainsamling som startar i **AppSource**
+        
+    - Tillägg i Microsoft 365
+        
+    En användare som försöker komma åt Office Store får ett meddelande om att Microsoft 365 har konfigurerats för att förhindra enskilda datainsamlingar av **Office Store-tillägg.**
   
 Stöd för att inaktivera Office Store är tillgängligt i följande versioner:
   
@@ -126,8 +124,8 @@ Det hindrar inte att en administratör använder centraliserad distribution till
   
 Du kan förhindra att en användare loggar in med ett Microsoft-konto genom att begränsa inloggning till organisationskontot. Mer information finns i [Identitet, autentisering och auktorisering i Office 2016.](/DeployOffice/security/identity-authentication-and-authorization-in-office)  
 
-> [!NOTE]
-> Om du hindrar användare från att komma åt Office Store hindrar du dem också från att [separatinstallera Office-tillägg för testning.](/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)
+> [!NOTE] 
+> Om du hindrar användare från att komma åt Office Store kommer de också att förhindra att Office-tillägg separat används för [testning från en nätverksresurs.](/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)
 
 ## <a name="more-about-the-end-user-experience-with-add-ins"></a>Mer om slutanvändarupplevelsen med tillägg
 
@@ -145,11 +143,15 @@ Om det distribuerade tillägget inte har stöd för tilläggskommandon eller om 
     
 2. Välj **fliken Administratör** hanterad i fönstret Office-tillägg. 
     
-3. Dubbelklicka på tillägget som du distribuerade tidigare (i det här exemplet **Källhänvisningar).** <br/>![Fliken Administratör hanterad på sidan Office-tillägg](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
+3. Dubbelklicka på tillägget som du distribuerade tidigare (i det här exemplet **Källhänvisningar).**
+
+    ![Fliken Administratör hanterad på sidan Office-tillägg](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
   
 ### <a name="in-outlook"></a>I Outlook
 
-1. I **menyfliksområdet** Start **väljer du Hämta tillägg.**<br/>![Knappen Lagra i Outlook](../../media/getaddinsicon.png)
+1. I **menyfliksområdet** Start **väljer du Hämta tillägg.**
+
+    ![Knappen Lagra i Outlook](../../media/getaddinsicon.png)
   
 2. Välj **Administratör hanterad i** det vänstra navigeringsfältet. 
 

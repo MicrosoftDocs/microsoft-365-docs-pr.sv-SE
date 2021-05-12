@@ -10,7 +10,6 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
@@ -20,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Läs om hur du får administratörshjälp eller support i Microsoft 365 Business Premium.
-ms.openlocfilehash: 5494b51ba59304de8dde71c9c7fa0434ec5dd0c8
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
-ms.translationtype: HT
+ms.openlocfilehash: 8db4f7675f96bac2157c9c0f93ab506c8a39e1bb
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244938"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327192"
 ---
 # <a name="get-support"></a>Få support
 
@@ -44,7 +43,7 @@ Börja med att [kontrollera aktuell hälsostatus för dina tjänster](../enterpr
 
 Spara tid genom att påbörja din tjänstbegäran online. Vi hjälper dig att hitta en lösning eller så kan du ansluta dig för att få teknisk support.
 
-1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Om du får meddelandet ”Du har inte behörighet att komma åt den här sidan eller utföra den här åtgärden”, är du inte administratör. [Vem har administratörsbehörigheter i min verksamhet?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview?#who-has-admin-permissions-in-my-business)
+1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Om du får ett meddelande om att du inte har behörighet att komma åt den här sidan eller utföra den här åtgärden är du inte administratör. (Mer information finns i Vem har administratörsbehörigheter i mitt [företag?](admin-center-overview.md#who-has-admin-permissions-in-my-business).)
 
 2. Välj knappen **Behöver du hjälp?**.
 
@@ -217,7 +216,7 @@ Administratören förväntas ge inledande hjälp till kundens användare. Men om
 
 ## <a name="feature-availability"></a>Funktionstillgänglighet
 
-Information om funktioners tillgänglighet i olika Office 365-abonnemang finns i [beskrivningen av Office 365-tjänster](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
+Information om vilka funktioner som är tillgängliga i alla Office 365-abonnemang finns i [Tjänstbeskrivning för Office 365.](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
 
 ## <a name="follow-us-on-wechat"></a>Följ oss på WeChat
 

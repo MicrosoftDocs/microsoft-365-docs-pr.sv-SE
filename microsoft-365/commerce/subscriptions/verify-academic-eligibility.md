@@ -1,11 +1,12 @@
 ---
-title: Verifiera akademisk berättigande för Microsoft 365 Education prenumerationer
+title: Verifiera akademisk behörighet för Microsoft 365 Education-prenumerationer
 f1.keywords:
 - CSH
 - FWLink 2135711
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,35 +14,35 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- commerce
-ms.custom: ''
-search.appverid:
-- MET150
-description: Läs om hur du kontrollerar om din skola är berättigad till Microsoft 365 Education akademiska priser.
+ms.custom:
+- AdminSurgePortfolio
+- commerce_subscriptions
+search.appverid: MET150
+description: Läs om hur du kontrollerar om din skola är berättigad till den akademiska prissättningen av Microsoft 365 Education.
 ms.date: 07/21/2020
-ms.openlocfilehash: ad014cd72d82413073e1e645484f2a7fd0090b3c
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: e0e85e53ed00c1c7c23e86f380a6440038d775c9
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293493"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326884"
 ---
-# <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Verifiera akademisk berättigande för Microsoft 365 Education prenumerationer
+# <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Verifiera akademisk behörighet för Microsoft 365 Education-prenumerationer
 
-Om du är en del av en akademisk institution kan du registrera dig för en kostnadsfri utvärderingsversion av Microsoft 365 Education. När Microsoft verifierar skolans akademiska behörighet kan du köpa produkter Microsoft 365 akademiska priser. Detta inkluderar produkter som är tillgängliga kostnadsfritt, till exempel Office 365 A1 för lärare och Office 365 A1 för studenter. Du har fram till slutet av den kostnadsfria utvärderingsversionen för att omvandla den till en betald prenumeration till akademiska priser.
+Om du är en del av en akademisk institution kan du registrera dig för en kostnadsfri utvärderingsversion av Microsoft 365 Education. När Microsoft verifierar skolans akademiska behörighet kan du köpa Microsoft 365-produkter till akademiska priser. Detta omfattar produkter som är tillgängliga kostnadsfritt, till exempel Office 365 A1 för lärare och Office 365 A1 för studenter. Du har fram till slutet av den kostnadsfria utvärderingsversionen för att omvandla den till en betald prenumeration till akademiska priser.
 
 I den här artikeln beskrivs hur du kontrollerar skolans akademiska behörighet, kontrollerar behörighetsstatus och köper prenumerationer till akademiska priser när skolan har godkänts.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-Du måste redan ha en Microsoft 365 Education utvärderingsprenumeration. Om du inte har en utvärderingsprenumeration kan [du gå till den här webbsidan](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) och välja Komma igång **kostnadsfritt.**
+Du måste redan ha en utvärderingsprenumeration på Microsoft 365 Education. Om du inte har en utvärderingsprenumeration kan [du gå till den här webbsidan](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) och välja Komma igång **kostnadsfritt.**
 
 ## <a name="verify-that-you-have-a-trial-subscription"></a>Kontrollera att du har en utvärderingsprenumeration
 
-Om du är osäker på om du har en utvärderingsprenumeration Microsoft 365 Education kan du verifiera att du har det genom att följa de här stegen.
+Om du är osäker på om du har en provprenumeration på Microsoft 365 Education kan du använda de här stegen för att verifiera att du har det.
 
-1. I Microsoft 365 administrationscentret går du till **sidan** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Fakturering dina</a> produkter.
-2. Leta efter **Office 365 A1 för att få en utvärderingsversion av** Office 365 A1 för **studenter**. Om du inte hittar de här prenumerationerna går [du till den här webbsidan](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) och väljer Kom igång utan **kostnad.**
+1. I administrationscentret för Microsoft 365 går du till **sidan** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Fakturering dina</a> produkter.
+2. Leta efter **Office 365 A1 för lärare och utvärderingsversion** **av Office 365 A1 för studenter**. Om du inte hittar de här prenumerationerna går [du till den här webbsidan](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) och väljer Kom igång utan **kostnad.**
 
 ## <a name="verify-your-schools-academic-eligibility"></a>Kontrollera din skolas akademiska behörighet
 
@@ -56,20 +57,20 @@ Om din akademiska behörighet nekas kan du [gå till Min skola är inte berätti
 
 ## <a name="check-the-status-of-your-schools-academic-eligibility"></a>Kontrollera statusen för skolans akademiska behörighet
 
-När du har Microsoft 365 Education utvärderingsversionen kan du när som helst kontrollera statusen för skolans akademiska behörighet.
+När du har en utvärderingsversion av Microsoft 365 Education kan du när som helst kontrollera statusen för skolans akademiska behörighet.
 
-1. Gå till [Microsoft 365 administrationscentret.](https://go.microsoft.com/fwlink/p/?linkid=2024339)
+1. Gå till [administrationscentret för Microsoft 365.](https://go.microsoft.com/fwlink/p/?linkid=2024339)
 2. På startsidan hittar du **faktureringskortet.\**
     **Faktureringskortet** visar status för verifieringsprocessen. Kortet visar en av följande statusar: godkänd, väntande, nekad eller lägg till din domän.
 
     > [!NOTE]
-    > Om du inte ser någon av dessa statusar innebär det att du inte har en Microsoft 365 Education provprenumeration. Om du vill starta en kostnadsfri [utvärderingsversion går du till den](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) här webbsidan och väljer Kom igång utan **kostnad.**
+    > Om du inte ser någon av dessa statusar innebär det att du inte har en utvärderingsprenumeration på Microsoft 365 Education. Om du vill starta en kostnadsfri [utvärderingsversion går du till den](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) här webbsidan och väljer Kom igång utan **kostnad.**
 
 ## <a name="buy-subscriptions-at-academic-prices"></a>Köpa prenumerationer till akademiska priser
 
 När du har verifierat att din skola är kvalificerad kan du köpa prenumerationer till akademiska priser. Du kan också [omvandla den kostnadsfria utvärderingsversionen till en betald prenumeration.](../try-or-buy-microsoft-365.md) Om du vill konvertera utvärderingsprenumerationen måste du göra det innan utvärderingsperioden är slut.
 
-1. I Microsoft 365 administrationscenter går du till **sidan Tjänster för** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">faktureringsköp.</a>
+1. I administrationscentret för Microsoft 365 går du till **sidan** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Faktureringsköpstjänster.</a>
 2. Om du vill visa akademiska erbjudanden väljer **du fliken** Utbildning.
 
     > [!NOTE]
@@ -82,7 +83,7 @@ När du har verifierat att din skola är kvalificerad kan du köpa prenumeration
 
 Du hittar utgångsdatumet för din kostnadsfria utvärderingsprenumeration **på sidan Dina** produkter. Du kan också förlänga utvärderingsversionen.
 
-1. I Microsoft 365 administrationscentret går du till **sidan** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Fakturering dina</a> produkter.
+1. I administrationscentret för Microsoft 365 går du till **sidan** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Fakturering dina</a> produkter.
 2. Hitta utvärderingsprenumerationen.
 3. I avsnittet **Fakturering,** under **Kostnadsfri provprenumeration,** visas utgångsdatumet.
 4. Om du vill förlänga utvärderingsversionen väljer du **Förläng utvärderingsversionen.** Du kan bara göra detta en gång per kostnadsfri provprenumeration.
@@ -95,11 +96,11 @@ Om du har frågor om skolans akademiska behörighetsbeslut kontaktar [du support
 
 ## <a name="next-steps"></a>Nästa steg
 
-Mer information om hur du distribuerar Microsoft 365 för skolan finns [i Microsoft 365 Education dokumentation och resurser.](/microsoft-365/education/deploy/) Sedan kan du [lägga till användare och tilldela licenser samtidigt.](../../admin/add-users/add-users.md) Om du behöver kan du också [köpa fler licenser för prenumerationen.](../licenses/buy-licenses.md)
+Mer information om hur du distribuerar Microsoft 365 till skolan finns i Dokumentation och resurser för [Microsoft 365 Education.](/microsoft-365/education/deploy/) Sedan kan du [lägga till användare och tilldela licenser samtidigt.](../../admin/add-users/add-users.md) Om du behöver kan du också [köpa fler licenser för prenumerationen.](../licenses/buy-licenses.md)
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Microsoft 365 Education dokumentation för IT-administratörer](/education/itadmins) (artikellänkar)\
+[Microsoft 365 Education-dokumentation för IT-administratörer](/education/itadmins) (artikellänkar)\
 [Microsoft Teams för utbildning](https://microsoft.com/education/products/teams/default.aspx) (produktsida)\
 [Förstå prenumerationer och licenser i Microsoft 365 för företag](../licenses/subscriptions-and-licenses.md) (artikel)\
 [Tilldela licenser till användare](../../admin/manage/assign-licenses-to-users.md) (artikel)\

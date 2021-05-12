@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,20 +13,18 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- commerce
-search.appverid:
-- MET150
-ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
+- commerce_subscriptions
+search.appverid: MET150
 description: Läs om vad som händer med dina data när prenumerationen för Microsoft 365 för företag förfaller, inaktiveras eller om du avbryter den.
-ms.openlocfilehash: 45f331fd14abb2f851c8ff84e729b8443a60b59b
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.date: 04/08/2021
+ms.openlocfilehash: f226514078a9f6d6bc1f4761269e2740300ef88d
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297278"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326804"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Vad händer med mina data och åtkomst när prenumerationen för Microsoft 365 för företag går ut?
 
@@ -78,23 +77,14 @@ När en prenumeration är aktiv har du och slutanvändarna normal åtkomst till 
 Innan prenumerationen förfaller kan du göra följande:
   
 - **Aktivera återkommande fakturering för prenumerationen.**
-
   - Om **Återkommande fakturering** redan har aktiverats behöver du inte vidta någon åtgärd. Din prenumeration faktureras automatiskt och du debiteras ytterligare för ett år eller en månad, beroende på din nuvarande betalningssfrekvens. Om du av någon anledning har inaktiverat **Återkommande fakturering** kan du alltid [Återaktivera återkommande fakturering](renew-your-subscription.md).
-
   - Om du har köpt Microsoft 365-appar för företag med ett förbetalt kort kan du [aktivera återkommande fakturering](renew-your-subscription.md) för prenumerationen.
-
   - Kontakta din partner för att köpa en ny produktnyckel om du är kund hos Open Volume Licensing med en förbetald prenumeration på ett år. Du får instruktioner via e-post för att aktivera nyckeln i [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). Information om hur du hittar en ny partner, eller en tidigare partner finns i [Hitta din partner eller återförsäljare](../../admin/manage/find-your-partner-or-reseller.md).
-
   - Om du har Microsoft 365-program för företag hittar du mer information i [Hantera återkommande fakturering för din prenumeration](renew-your-subscription.md).
-
 - **Låt prenumerationen förfalla.**
-
   - Om du betalar med kreditkort eller faktura och inte vill fortsätta prenumerationen kan du [Inaktivera återkommande fakturering](renew-your-subscription.md). Prenumerationen går ut på förfallodatumet och du kan ignorera alla relaterade e-postaviseringar.
-
   - Om du är kund hos Open Volume Licensing och arbetar med en partner kan du låta prenumerationen förfalla genom att inte vidta någon åtgärd.
-
   - Om du är Microsoft 365 Business Standard-kund och du har förbetalt din prenumeration, och aktiverat den med en produktnyckel, kan du låta prenumerationen gå ut genom att inte vidta någon åtgärd.
-
 - **Avbryta innan prenumerationen förfaller.** Mer information finns i [Avbryta prenumerationen](cancel-your-subscription.md).
 
 ## <a name="what-happens-after-my-subscription-expires"></a>Vad händer efter att min prenumeration förfallit?
@@ -105,7 +95,7 @@ Det här kan du förvänta dig när prenumerationen är i de olika tillstånden.
   
 ### <a name="state-expired"></a>Tillstånd: Förfallen
 
- **Vad du kan förvänta dig:** Tillståndet Förfallen varar i 30 dagar för de flesta prenumerationer, inklusive prenumerationer som köpts via [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), i de flesta länder och regioner. För Volymlicensprodukter, med undantag för Microsoft Open, varar tillståndet Förfallen i 90 dagar.
+**Vad du kan förvänta dig:** Tillståndet Förfallen varar i 30 dagar för de flesta prenumerationer, inklusive prenumerationer som köpts via [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), i de flesta länder och regioner. För Volymlicensprodukter, med undantag för Microsoft Open, varar tillståndet Förfallen i 90 dagar.
 
 I det här läget har användare normal åtkomst till Microsoft 365-portalen, Office-program och tjänster som e-post och SharePoint Online.
   
@@ -113,7 +103,7 @@ Som administratör har du fortfarande åtkomst till administrationscentret. Oroa
   
 ### <a name="state-disabled"></a>Tillstånd: Inaktiverad
 
- **Vad du kan förvänta dig:** Om du inte återaktiverar prenumerationen under tillståndet Förfallen flyttas den till tillståndet Inaktiverad som varar i 90 dagar för de flesta prenumerationer, i de flesta länder och regioner. För Volymlicensprodukter varar tillståndet Inaktiverad i 30 dagar.
+**Vad du kan förvänta dig:** Om du inte återaktiverar prenumerationen under tillståndet Förfallen flyttas den till tillståndet Inaktiverad som varar i 90 dagar för de flesta prenumerationer, i de flesta länder och regioner. För Volymlicensprodukter varar tillståndet Inaktiverad i 30 dagar.
 
 I det här tillståndet minskar åtkomsten avsevärt. Användarna kan inte logga in eller få åtkomst till tjänster som e-post eller SharePoint Online. Office-program flyttas så småningom till ett skrivskyddat läge med nedsatt funktionalitet och [meddelanden om ej licensierad produkt](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) visas. Du kan fortfarande logga in och komma åt till administrationscentret men kan inte tilldela licenser till användare. Dina kunddata, inklusive alla användardata, e-postmeddelanden och filer på gruppwebbplatser är endast tillgängliga för dig och andra administratörer.
 
@@ -121,13 +111,14 @@ Som global administratör eller faktureringsadministratör kan du [återaktivera
 
 ### <a name="state-deleted"></a>Tillstånd: Borttagen
   
- **Vad du kan förvänta dig:** Prenumerationen tas bort om du inte återaktiverar prenumerationen när den är förfallen eller inaktiverad.
+**Vad du kan förvänta dig:** Prenumerationen tas bort om du inte återaktiverar prenumerationen när den är förfallen eller inaktiverad.
   
 Administratörer och användare har inte längre åtkomst till de tjänster och Office-program som ingår i prenumerationen. Alla kunddata, allt från användardata till dokument och e-post, tas bort permanent och kan inte återskapas.
   
 Just nu kan du inte återaktivera prenumerationen. Som global administratör eller faktureringsadministratör har du dock fortfarande åtkomst till administrationscenter för att hantera andra prenumerationer eller för att köpa nya prenumerationer och möta verksamhetsbehoven.
   
 > [!NOTE]
+>
 > - Det går inte återställa de data som var kopplade till en borttagen prenumeration genom att lägga till en ny prenumeration av samma typ som den borttagna prenumerationen.
 > - Om en CSP-licens inaktiveras gäller inte tillståndet Förfallen på 30 dagar och tjänsterna inaktiveras omedelbart. Data tas bort efter 90 dagar om klientorganisationen inte återaktiveras genom att en ny licens läggs till.
 
@@ -136,12 +127,11 @@ Just nu kan du inte återaktivera prenumerationen. Som global administratör ell
 När utvärderingsversionen löper ut kan du inte fortsätta använda Microsoft 365 kostnadsfritt. Du har några olika möjligheter:
 
 - **Köp Microsoft 365.** När din utvärderingsversion går ut flyttas den till tillståndet Förfallen som ger dig ytterligare 30 dagar (för de flesta utvärderingsversioner, i de flesta länder och regioner) för att köpa Microsoft 365. Information om hur du konverterar utvärderingsversionen till en betald prenumeration finns i [Köpa en prenumeration från din kostnadsfria utvärderingsversion](../try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial).
-
 - **Förläng utvärderingsversionen.** Behöver du mer tid för att utvärdera Microsoft 365? I vissa fall kan du [förlänga utvärderingsversionen](../extend-your-trial.md).
-
 - **Avbryt utvärderingsversionen eller låt den förfalla.** Om du bestämmer dig för att inte köpa Microsoft 365 kan du låta utvärderingsversionen förfalla eller [avbryta den](cancel-your-subscription.md). Säkerhetskopiera alla data som du vill behålla. Strax efter tillståndet Förfallen på 30 dagar raderas kontoinformationen och data för utvärderingsversionen raderas permanent.
 
 > [!NOTE]
+>
 > Informationen på den här sidan omfattas av [Ändringsnotiser och ansvarsfriskrivning för principer för Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613651). Gå tillbaka till den här webbplatsen med jämna mellanrum för att granska eventuella ändringar.
 
 ## <a name="related-content"></a>Relaterat innehåll

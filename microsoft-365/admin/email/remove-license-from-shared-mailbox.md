@@ -22,19 +22,21 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Ta bort licens från en delad postlåda för att tilldela den till en annan användare. '
-ms.openlocfilehash: 82ec863d5c2ae550fb401e71744715a27c89d382
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 873b50b34b9887ada92cc56f7083e3b748a52035
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470625"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327228"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Ta bort en licens från en delad postlåda
 
 Delade postlådor kräver vanligtvis inte en licens. Följ de här anvisningarna om du vill ta bort en licens från en delad postlåda så att du kan tilldela den till en användare eller returnera licensen så att du inte betalar för en licens som du inte behöver.
 
 > [!NOTE]
+>
 > En licens krävs i följande scenarier:
+>
 > 1. Den delade postlådan har mer än 50 GB lagringsutrymme som används.
 > 2. Den delade postlådan använder arkivering på plats.
 > 3. Den delade postlådan ligger i ett bevarande av juridiska skäl.

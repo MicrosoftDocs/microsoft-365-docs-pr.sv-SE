@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71db42f4bd651f4e9d4236e1f4d794aeb99dfa9f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 48e45385fb138c19b76dc2d672566cf2ad0fb3cc
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862157"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327314"
 ---
 # <a name="supported-managed-security-service-providers"></a>Hanterade säkerhetstjänstleverantörer som stöds
 
@@ -36,6 +36,7 @@ Följande leverantörer av hanterade säkerhetstjänster kan nås via portalen.
 
 Logotyp |Partnernamn   | Beskrivning 
 :---|:---|:---
+![Bild på Aujas-logotyp](images/aujas-logo.png) | [Aujas hanterad MDE-tjänst](https://go.microsoft.com/fwlink/?linkid=2162429) | Aujas cybersecurity tillhandahåller 24*7 hanterade säkerhetstjänster över hela företagsspektrumet, med hjälp av Microsoft Defender för slutpunkter via Cyber Defense Center.
 ![Bild på BDO Digital-logotyp](images/bdo-logo.png)| [BDO Digital](https://go.microsoft.com/fwlink/?linkid=2090394) | BDO Digitals hanterade skydd utnyttjar best practice-verktyg, AI och in-house säkerhetsexperter för identitetsskydd 24/7/365
 ![Bild på BlueVoyant-logotyp](images/bluevoyant-logo.png)| [BlueVoyant](https://go.microsoft.com/fwlink/?linkid=2121401) | MDR för Microsoft Defender för Endpoint ger support vid övervakning, undersöker och minimerar avancerade attacker mot slutpunkter
 ![Bild på logotypen för Cloud Security Center](images/cloudsecuritycenter-logo.png)| [Säkerhetscenter för molnet](https://go.microsoft.com/fwlink/?linkid=2099315) | InSparks Cloud Security Center är en hanterad 24x7-tjänst som levererar skydd, identifierar & svara-funktioner
@@ -44,6 +45,7 @@ Logotyp |Partnernamn   | Beskrivning
 ![Bild på logon för Dell Technologies Advanced Threat Protection](images/dell-logo.png)| [Dell Technologies Advanced Threat Protection](https://go.microsoft.com/fwlink/?linkid=2091004) | Professionell övervakningstjänst för skadligt beteende och prestanda med 24/7-funktion
 ![Bild av DXC-Managed och svarslogotyp för slutpunktshot](images/dxc-logo.png)| [DXC-hanterad slutpunkt , hotidentifiering och svar](https://go.microsoft.com/fwlink/?linkid=2090395) | Identifiera slutpunktshot som kringgår traditionella säkerhetsskydd och innehåller dem i timmar eller minuter, inte dagar
 ![Bild på eSentire log](images/esentire-logo.png) | [eSentire Managed Detection and Response](https://go.microsoft.com/fwlink/?linkid=2154970) | 24x7 hot undersökningar och svar via Microsoft Defender för Endpoint.
+![Bild på expellogotyp](images/expel-logo.png)| [Expel hanterad identifiering och svar för Microsoft Defender Endpoint](https://go.microsoft.com/fwlink/?linkid=2162430) | Expel hjälper din säkerhet att hänga med genom att identifiera säkerhetsrisker i Microsoft Defender Endpoint.
 ![Bild på NTT-säkerhetslogotypen](images/ntt-logo.png)| [NTT-säkerhet](https://go.microsoft.com/fwlink/?linkid=2095320) | NTT:s EDR-tjänst tillhandahåller 24/7 säkerhetsövervakningssvar & din slutpunkt och ditt nätverk
 ![Bild på OneVinn-logotyp](images/onevinn-logo.png) | [Onevinn MDR](https://go.microsoft.com/fwlink/?linkid=2155203)| 24/7 Hanterad identifiering och svar byggt på Microsoft Defender och Azure Sentinel, skapat med Onevinns hotinformation.
 ![Bild på en cyberhototyp](images/quorum-logo.png) | [Enerde Cyber](https://go.microsoft.com/fwlink/?linkid=2155202)| En avancerad tjänst för & Security Engineering.
