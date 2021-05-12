@@ -14,38 +14,38 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: ''
 localization_priority: None
-ms.openlocfilehash: bdb49af4ac43976a1ad734e507902781d63c5670
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 2e7152530dc3221eb3ab01047416993178193732
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301794"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333824"
 ---
-# <a name="topic-center-overview-in-microsoft-viva-topics"></a><span data-ttu-id="3d571-103">Ämnescenteröversikt i Microsoft Viva-ämnen</span><span class="sxs-lookup"><span data-stu-id="3d571-103">Topic center overview in Microsoft Viva Topics</span></span>
+# <a name="topic-center-overview-in-microsoft-viva-topics"></a><span data-ttu-id="98754-103">Ämnescenteröversikt i Microsoft Viva-ämnen</span><span class="sxs-lookup"><span data-stu-id="98754-103">Topic center overview in Microsoft Viva Topics</span></span>
 
-<span data-ttu-id="3d571-104">I Microsoft Viva Topics är ämnescentret en modern SharePoint som fungerar som kunskapscentrum för organisationen.</span><span class="sxs-lookup"><span data-stu-id="3d571-104">In Microsoft Viva Topics, the topic center is a modern SharePoint site that serves as a center of knowledge for your organization.</span></span> <span data-ttu-id="3d571-105">Den skapas under installationen [av Viva Topics](set-up-topic-experiences.md) i Microsoft 365 administrationscenter.</span><span class="sxs-lookup"><span data-stu-id="3d571-105">It's created during [Viva Topics setup](set-up-topic-experiences.md) in the Microsoft 365 admin center.</span></span>
+<span data-ttu-id="98754-104">I Microsoft Viva Topics är ämnescentret en modern SharePoint-webbplats som fungerar som ett kunskapscenter för din organisation.</span><span class="sxs-lookup"><span data-stu-id="98754-104">In Microsoft Viva Topics, the topic center is a modern SharePoint site that serves as a center of knowledge for your organization.</span></span> <span data-ttu-id="98754-105">Den skapas under installationen [av Viva Topics](set-up-topic-experiences.md) i administrationscentret för Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="98754-105">It's created during [Viva Topics setup](set-up-topic-experiences.md) in the Microsoft 365 admin center.</span></span>
 
-<span data-ttu-id="3d571-106">I ämnescentret finns en  standardhemsida med webbdelen Ämnen där alla licensierade användare kan se ämnen som de har en anslutning till.</span><span class="sxs-lookup"><span data-stu-id="3d571-106">The topic center has a default home page with the **Topics** web part where all licensed users can see the topics to which they have a connection.</span></span> 
+<span data-ttu-id="98754-106">I ämnescentret finns en  standardhemsida med webbdelen Ämnen där alla licensierade användare kan se ämnen som de har en anslutning till.</span><span class="sxs-lookup"><span data-stu-id="98754-106">The topic center has a default home page with the **Topics** web part where all licensed users can see the topics to which they have a connection.</span></span> 
 
-<span data-ttu-id="3d571-107">Alla licensierade användare som kan visa ämnen har tillgång till ämnescentret, men knowledge managers kan också hantera ämnen via **sidan Hantera** ämnen.</span><span class="sxs-lookup"><span data-stu-id="3d571-107">While all licensed users who can view topics will have access to the topic center, knowledge managers can also manage topics through the **Manage topics** page.</span></span> <span data-ttu-id="3d571-108">Fliken **Hantera ämnen** visas bara för användare som har behörigheten Hantera ämnen.</span><span class="sxs-lookup"><span data-stu-id="3d571-108">The **Manage topics** tab will only display to users who have the Manage topics permissions.</span></span> 
+<span data-ttu-id="98754-107">Alla licensierade användare som kan visa ämnen har tillgång till ämnescentret, men knowledge managers kan också hantera ämnen via **sidan Hantera** ämnen.</span><span class="sxs-lookup"><span data-stu-id="98754-107">While all licensed users who can view topics will have access to the topic center, knowledge managers can also manage topics through the **Manage topics** page.</span></span> <span data-ttu-id="98754-108">Fliken **Hantera ämnen** visas bara för användare som har behörigheten Hantera ämnen.</span><span class="sxs-lookup"><span data-stu-id="98754-108">The **Manage topics** tab will only display to users who have the Manage topics permissions.</span></span> 
 
-## <a name="where-is-my-topic-center"></a><span data-ttu-id="3d571-109">Var finns mitt ämnescenter?</span><span class="sxs-lookup"><span data-stu-id="3d571-109">Where is my topic center</span></span>
+## <a name="where-is-my-topic-center"></a><span data-ttu-id="98754-109">Var finns mitt ämnescenter?</span><span class="sxs-lookup"><span data-stu-id="98754-109">Where is my topic center</span></span>
 
-<span data-ttu-id="3d571-110">Ämnescentret skapas under installationen av Viva Topics.</span><span class="sxs-lookup"><span data-stu-id="3d571-110">The topic center is created during Viva Topics setup.</span></span> <span data-ttu-id="3d571-111">När installationen är klar kan administratören hitta URL-adressen på sidan [För hantering av ämnescenter.](./topic-experiences-administration.md#to-access-topics-management-settings)</span><span class="sxs-lookup"><span data-stu-id="3d571-111">After setup completes, an admin can find the URL on the [Topic center management page](./topic-experiences-administration.md#to-access-topics-management-settings).</span></span>
-
-
-1. <span data-ttu-id="3d571-112">I Microsoft 365 väljer du Först **Inställningar** och sedan **Organisationsinställningar.**</span><span class="sxs-lookup"><span data-stu-id="3d571-112">In the Microsoft 365 admin center, select **Settings**, and then select **Org settings**.</span></span>
-2. <span data-ttu-id="3d571-113">Välj **Ämnesupplevelser** på **fliken Tjänster.**</span><span class="sxs-lookup"><span data-stu-id="3d571-113">On the **Services** tab, select **Topic Experiences**.</span></span>
-
-    ![Anslut att få kunskap](../media/admin-org-knowledge-options-completed.png) </br>
-
-3. <span data-ttu-id="3d571-115">Välj fliken **Ämnescenter.** Under **Webbplatsadress** finns en länk till ämnescentret.</span><span class="sxs-lookup"><span data-stu-id="3d571-115">Select the **Topic center** tab. Under **Site address** is a link to your Topic center.</span></span>
-
-    ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) </br>
+<span data-ttu-id="98754-110">Ämnescentret skapas under installationen av Viva Topics.</span><span class="sxs-lookup"><span data-stu-id="98754-110">The topic center is created during Viva Topics setup.</span></span> <span data-ttu-id="98754-111">När installationen är klar kan administratören hitta URL-adressen på sidan [För hantering av ämnescenter.](./topic-experiences-administration.md#to-access-topics-management-settings)</span><span class="sxs-lookup"><span data-stu-id="98754-111">After setup completes, an admin can find the URL on the [Topic center management page](./topic-experiences-administration.md#to-access-topics-management-settings).</span></span>
 
 
+1. <span data-ttu-id="98754-112">I administrationscentret för Microsoft 365 väljer **du Inställningar** och sedan **Organisationsinställningar**.</span><span class="sxs-lookup"><span data-stu-id="98754-112">In the Microsoft 365 admin center, select **Settings**, and then select **Org settings**.</span></span>
+2. <span data-ttu-id="98754-113">Välj **Ämnesupplevelser** på **fliken Tjänster.**</span><span class="sxs-lookup"><span data-stu-id="98754-113">On the **Services** tab, select **Topic Experiences**.</span></span>
 
-## <a name="home-page"></a><span data-ttu-id="3d571-117">Startsida</span><span class="sxs-lookup"><span data-stu-id="3d571-117">Home page</span></span>
+    ![Koppla personer till kunskap](../media/admin-org-knowledge-options-completed.png) 
+
+3. <span data-ttu-id="98754-115">Välj fliken **Ämnescenter.** Under **Webbplatsadress** finns en länk till ämnescentret.</span><span class="sxs-lookup"><span data-stu-id="98754-115">Select the **Topic center** tab. Under **Site address** is a link to your Topic center.</span></span>
+
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) 
+
+
+
+## <a name="home-page"></a><span data-ttu-id="98754-117">Startsida</span><span class="sxs-lookup"><span data-stu-id="98754-117">Home page</span></span>
 
 </br>
 
@@ -54,40 +54,43 @@ ms.locfileid: "52301794"
 </br>
 
 
-<span data-ttu-id="3d571-118">På startsidan för ämnescentret kan du se de ämnen i organisationen som du har en anslutning till.</span><span class="sxs-lookup"><span data-stu-id="3d571-118">On the topic center home page, you can see the topics in your organization to which you have a connection.</span></span>
+<span data-ttu-id="98754-118">På startsidan för ämnescentret kan du se de ämnen i organisationen som du har en anslutning till.</span><span class="sxs-lookup"><span data-stu-id="98754-118">On the topic center home page, you can see the topics in your organization to which you have a connection.</span></span>
 
-- <span data-ttu-id="3d571-119">Föreslagna anslutningar – Du ser ämnen listade under **Vi har listat dig om dessa ämnen. Blev det rätt?**</span><span class="sxs-lookup"><span data-stu-id="3d571-119">Suggested connections - You will see topics listed under **We've listed you on these topics. Did we get it right?**</span></span> <span data-ttu-id="3d571-120">Det här är ämnen där din koppling till ämnet har föreslagits via AI.</span><span class="sxs-lookup"><span data-stu-id="3d571-120">These are topics in which your connection to the topic has been suggested through AI.</span></span> <span data-ttu-id="3d571-121">Du kan till exempel vara författare till en relaterad fil eller webbplats.</span><span class="sxs-lookup"><span data-stu-id="3d571-121">For example, you might be an author of a related file or site.</span></span> <span data-ttu-id="3d571-122">Du uppmanas att bekräfta att du bör vara listad som en relaterad person för ämnet.</span><span class="sxs-lookup"><span data-stu-id="3d571-122">You are asked to confirm that you should stay listed as a related person for the topic.</span></span>
+- <span data-ttu-id="98754-119">Föreslagna anslutningar – Du ser ämnen listade under **Vi har listat dig om dessa ämnen. Blev det rätt?**</span><span class="sxs-lookup"><span data-stu-id="98754-119">Suggested connections - You will see topics listed under **We've listed you on these topics. Did we get it right?**</span></span> <span data-ttu-id="98754-120">Det här är ämnen där din koppling till ämnet har föreslagits via AI.</span><span class="sxs-lookup"><span data-stu-id="98754-120">These are topics in which your connection to the topic has been suggested through AI.</span></span> <span data-ttu-id="98754-121">Du kan till exempel vara författare till en relaterad fil eller webbplats.</span><span class="sxs-lookup"><span data-stu-id="98754-121">For example, you might be an author of a related file or site.</span></span> <span data-ttu-id="98754-122">Du uppmanas att bekräfta att du bör vara listad som en relaterad person för ämnet.</span><span class="sxs-lookup"><span data-stu-id="98754-122">You are asked to confirm that you should stay listed as a related person for the topic.</span></span>
 
-   ![Föreslagna anslutningar](../media/knowledge-management/my-topics.png) </br>
+   ![Föreslagna anslutningar](../media/knowledge-management/my-topics.png) 
  
-- <span data-ttu-id="3d571-124">Bekräftade anslutningar – Det här är ämnen där du är fäst på ämnessidan eller om du har bekräftat en föreslagen anslutning till avsnittet.</span><span class="sxs-lookup"><span data-stu-id="3d571-124">Confirmed connections - These are topics in which you are pinned on the topic page or you've confirmed a suggested connection to the topic.</span></span> <span data-ttu-id="3d571-125">Ämnen flyttas från det föreslagna avsnittet till bekräftad när du bekräftar en föreslagen anslutning.</span><span class="sxs-lookup"><span data-stu-id="3d571-125">Topics will move from the suggested to confirmed section when you confirm a suggested connection.</span></span>
+- <span data-ttu-id="98754-124">Bekräftade anslutningar – Det här är ämnen där du är fäst på ämnessidan eller om du har bekräftat en föreslagen anslutning till avsnittet.</span><span class="sxs-lookup"><span data-stu-id="98754-124">Confirmed connections - These are topics in which you are pinned on the topic page or you've confirmed a suggested connection to the topic.</span></span> <span data-ttu-id="98754-125">Ämnen flyttas från det föreslagna avsnittet till bekräftad när du bekräftar en föreslagen anslutning.</span><span class="sxs-lookup"><span data-stu-id="98754-125">Topics will move from the suggested to confirmed section when you confirm a suggested connection.</span></span>
  
-   ![Bekräftade ämnen](../media/knowledge-management/my-topics-confirmed.png) </br>
+   ![Bekräftade ämnen](../media/knowledge-management/my-topics-confirmed.png) 
 
-<span data-ttu-id="3d571-127">När en användare bekräftar sin anslutning till ett ämne kan användaren göra ändringar på ämnessidan för att curate anslutningen.</span><span class="sxs-lookup"><span data-stu-id="3d571-127">Once a user confirms their connection to a topic, the user can make edits to the topic page to curate their connection.</span></span> <span data-ttu-id="3d571-128">De kan till exempel ge mer information om anslutningen till ämnet.</span><span class="sxs-lookup"><span data-stu-id="3d571-128">For example, they can provide more information about their connection to the topic.</span></span>
-
-
-## <a name="manage-topics-page"></a><span data-ttu-id="3d571-129">Sidan Hantera ämnen</span><span class="sxs-lookup"><span data-stu-id="3d571-129">Manage topics page</span></span>
-
-<span data-ttu-id="3d571-130">För att kunna arbeta **i avsnittet** Hantera ämnen i ämnescentret måste du ha den behörighet för Hantera ämne som krävs för knowledge manager-rollen.</span><span class="sxs-lookup"><span data-stu-id="3d571-130">To work in the **Manage Topics** section of topic center, you need to have the required Manage Topic permissions needed for the knowledge manager role.</span></span> <span data-ttu-id="3d571-131">Administratören kan tilldela de här [](set-up-topic-experiences.md)behörigheterna till användare under [kunskapshanteringskonfigurationen,](topic-experiences-knowledge-rules.md) eller så kan nya användare läggas till efteråt av en administratör via Microsoft 365 administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="3d571-131">Your admin can assign these permissions to users during [knowledge management setup](set-up-topic-experiences.md), or new users can be [added afterwards](topic-experiences-knowledge-rules.md) by an admin through the Microsoft 365 admin center.</span></span>
-
-<span data-ttu-id="3d571-132">På sidan Hantera ämnen visar instrumentpanelen ämne alla ämnen som du har åtkomst till och som identifierats från dina angivna källplatser.</span><span class="sxs-lookup"><span data-stu-id="3d571-132">On the Manage Topics page, the topic dashboard shows all the topics, you have access to, that were identified from your specified source locations.</span></span> <span data-ttu-id="3d571-133">Varje ämne kommer att visa det datum då ämnet upptäcktes.</span><span class="sxs-lookup"><span data-stu-id="3d571-133">Each topic will show the date the topic was discovered.</span></span> <span data-ttu-id="3d571-134">En användare som har tilldelats behörigheten Hantera ämnen kan granska de ofirmerade ämnena och välja att:</span><span class="sxs-lookup"><span data-stu-id="3d571-134">A user who was assigned Manage topics permissions can review the unconfirmed topics and choose to:</span></span>
-- <span data-ttu-id="3d571-135">Bekräfta ämnet: Anger för användare att ett AI-föreslaget ämne har validerats av en mänsklig man.</span><span class="sxs-lookup"><span data-stu-id="3d571-135">Confirm the topic: Indicates to users that an AI-suggested topic has been validated by a human curator.</span></span> 
-- <span data-ttu-id="3d571-136">Publicera ämnet: Redigera ämnesinformationen för att förbättra kvaliteten på det ämne som ursprungligen identifierades och markerar avsnittet för alla användare som har åtkomst till ämnen.</span><span class="sxs-lookup"><span data-stu-id="3d571-136">Publish the topic: Edit the topic information to improve the quality of the topic that was initially identified, and highlights the topic to all users who have view access to topics.</span></span> 
-- <span data-ttu-id="3d571-137">Ta bort ämnet: Gör att ämnet inte kan upptäckts för slutanvändare.</span><span class="sxs-lookup"><span data-stu-id="3d571-137">Remove the topic: Makes the topic undiscoverable to end users.</span></span> <span data-ttu-id="3d571-138">Avsnittet flyttas till fliken **Borttaget** och kan bekräftas senare om det behövs.</span><span class="sxs-lookup"><span data-stu-id="3d571-138">The topic is moved to the **Removed** tab and can be confirmed later if needed.</span></span> 
-
-> [!Note] 
-> <span data-ttu-id="3d571-139">Mer [information om ämnenhantering](manage-topics.md) finns i Hantera ämnen på sidan Hantera ämnen.</span><span class="sxs-lookup"><span data-stu-id="3d571-139">See [Manage topics](manage-topics.md) for more details about topic managing topics in the Manage topics page.</span></span>
-
-## <a name="create-or-edit-a-topic"></a><span data-ttu-id="3d571-140">Skapa eller redigera ett ämne</span><span class="sxs-lookup"><span data-stu-id="3d571-140">Create or edit a topic</span></span>
-
-<span data-ttu-id="3d571-141">Om du har behörigheten Skapa och redigera ämnen kan du:</span><span class="sxs-lookup"><span data-stu-id="3d571-141">If you have Create and edit topics permissions, you can:</span></span>
-
-- <span data-ttu-id="3d571-142">[Redigera befintliga ämnen:](edit-a-topic.md)Du kan göra ändringar i befintliga ämnessidor som skapats genom identifiering.</span><span class="sxs-lookup"><span data-stu-id="3d571-142">[Edit existing topics](edit-a-topic.md): You can make changes to existing topic pages that were created through discovery.</span></span>
-- <span data-ttu-id="3d571-143">[Skapa nya ämnen:](create-a-topic.md)Du kan skapa nya ämnen för ämnen som inte hittades genom upptäckten eller om AI-verktygen inte hittade tillräckligt många bevis för att skapa ett ämne.</span><span class="sxs-lookup"><span data-stu-id="3d571-143">[Create new topics](create-a-topic.md): You can create new topics for ones that were not found through discovery, or if AI tools did not find enough evidence to create a topic.</span></span>
+<span data-ttu-id="98754-127">När en användare bekräftar sin anslutning till ett ämne kan användaren göra ändringar på ämnessidan för att curate anslutningen.</span><span class="sxs-lookup"><span data-stu-id="98754-127">Once a user confirms their connection to a topic, the user can make edits to the topic page to curate their connection.</span></span> <span data-ttu-id="98754-128">De kan till exempel ge mer information om anslutningen till ämnet.</span><span class="sxs-lookup"><span data-stu-id="98754-128">For example, they can provide more information about their connection to the topic.</span></span>
 
 
-## <a name="see-also"></a><span data-ttu-id="3d571-144">Se även</span><span class="sxs-lookup"><span data-stu-id="3d571-144">See also</span></span>
+## <a name="manage-topics-page"></a><span data-ttu-id="98754-129">Sidan Hantera ämnen</span><span class="sxs-lookup"><span data-stu-id="98754-129">Manage topics page</span></span>
 
-[<span data-ttu-id="3d571-145">Hantera ämnen i ämnes centret</span><span class="sxs-lookup"><span data-stu-id="3d571-145">Manage topics in the topic center</span></span>](manage-topics.md)
+<span data-ttu-id="98754-130">För att kunna arbeta **med sidan** Hantera ämnen i ämnescentret måste du ha den behörighet för Hantera ämnen som krävs för knowledge manager-rollen.</span><span class="sxs-lookup"><span data-stu-id="98754-130">To work on the **Manage topics** page of topic center, you need to have the required Manage topics permissions needed for the knowledge manager role.</span></span> <span data-ttu-id="98754-131">Administratören kan tilldela de här [](set-up-topic-experiences.md)behörigheterna till användare under [kunskapshanteringskonfigurationen,](topic-experiences-knowledge-rules.md) eller så kan nya användare läggas till efteråt av en administratör via administrationscentret för Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="98754-131">Your admin can assign these permissions to users during [knowledge management setup](set-up-topic-experiences.md), or new users can be [added afterwards](topic-experiences-knowledge-rules.md) by an admin through the Microsoft 365 admin center.</span></span>
+
+<span data-ttu-id="98754-132">På sidan **Hantera ämnen** visar instrumentpanelen ämne alla ämnen, du har åtkomst till, som har identifierats från dina angivna källplatser.</span><span class="sxs-lookup"><span data-stu-id="98754-132">On the **Manage topics** page, the topic dashboard shows all the topics, you have access to, that were identified from your specified source locations.</span></span> <span data-ttu-id="98754-133">Varje ämne kommer att visa det datum då ämnet upptäcktes.</span><span class="sxs-lookup"><span data-stu-id="98754-133">Each topic will show the date the topic was discovered.</span></span> <span data-ttu-id="98754-134">En användare som har tilldelats behörigheten Hantera ämnen kan granska de ofirmerade ämnena och välja att:</span><span class="sxs-lookup"><span data-stu-id="98754-134">A user who was assigned Manage topics permissions can review the unconfirmed topics and choose to:</span></span>
+
+- <span data-ttu-id="98754-135">Bekräfta ämnet: Anger för användare att ett AI-föreslaget ämne har validerats av en mänsklig man.</span><span class="sxs-lookup"><span data-stu-id="98754-135">Confirm the topic: Indicates to users that an AI-suggested topic has been validated by a human curator.</span></span>
+
+- <span data-ttu-id="98754-136">Publicera ämnet: Redigera ämnesinformationen för att förbättra kvaliteten på det ämne som ursprungligen identifierades och markerar avsnittet för alla användare som har åtkomst till ämnen.</span><span class="sxs-lookup"><span data-stu-id="98754-136">Publish the topic: Edit the topic information to improve the quality of the topic that was initially identified, and highlights the topic to all users who have view access to topics.</span></span>
+ 
+- <span data-ttu-id="98754-137">Ta bort ämnet: Gör att ämnet inte kan upptäckts för slutanvändare.</span><span class="sxs-lookup"><span data-stu-id="98754-137">Remove the topic: Makes the topic undiscoverable to end users.</span></span> <span data-ttu-id="98754-138">Avsnittet flyttas till fliken **Borttaget** och kan bekräftas senare om det behövs.</span><span class="sxs-lookup"><span data-stu-id="98754-138">The topic is moved to the **Removed** tab and can be confirmed later if needed.</span></span> 
+
+<span data-ttu-id="98754-139">Mer information om hur du hanterar ämnen på sidan \*\*Hantera ämnen finns i [Hantera ämnen.](manage-topics.md)</span><span class="sxs-lookup"><span data-stu-id="98754-139">For more information about how to manage topics on the \*\*Manage topics page, see [Manage topics](manage-topics.md).</span></span>
+
+## <a name="create-or-edit-a-topic"></a><span data-ttu-id="98754-140">Skapa eller redigera ett ämne</span><span class="sxs-lookup"><span data-stu-id="98754-140">Create or edit a topic</span></span>
+
+<span data-ttu-id="98754-141">Om du har behörigheten Skapa och redigera ämnen kan du:</span><span class="sxs-lookup"><span data-stu-id="98754-141">If you have Create and edit topics permissions, you can:</span></span>
+
+- <span data-ttu-id="98754-142">[Redigera befintliga ämnen:](edit-a-topic.md)Du kan göra ändringar i befintliga ämnessidor som skapats genom identifiering.</span><span class="sxs-lookup"><span data-stu-id="98754-142">[Edit existing topics](edit-a-topic.md): You can make changes to existing topic pages that were created through discovery.</span></span>
+
+- <span data-ttu-id="98754-143">[Skapa nya ämnen:](create-a-topic.md)Du kan skapa nya ämnen för ämnen som inte hittades genom upptäckten eller om AI-verktygen inte hittade tillräckligt många bevis för att skapa ett ämne.</span><span class="sxs-lookup"><span data-stu-id="98754-143">[Create new topics](create-a-topic.md): You can create new topics for ones that were not found through discovery, or if AI tools did not find enough evidence to create a topic.</span></span>
+
+
+## <a name="see-also"></a><span data-ttu-id="98754-144">Se även</span><span class="sxs-lookup"><span data-stu-id="98754-144">See also</span></span>
+
+[<span data-ttu-id="98754-145">Hantera ämnen i ämnes centret</span><span class="sxs-lookup"><span data-stu-id="98754-145">Manage topics in the topic center</span></span>](manage-topics.md)
 

@@ -42,4 +42,4 @@
     - name: Rapportera information för Microsoft Bookings
       href: reporting-info.md
     - name: Vanliga frågor och svar om Microsoft Forms (FAQ)
-      href: bookings-faq.md
+      href: bookings-faq.yml

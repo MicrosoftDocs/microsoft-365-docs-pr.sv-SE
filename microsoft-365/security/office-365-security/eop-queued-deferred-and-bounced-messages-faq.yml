@@ -1,0 +1,57 @@
+### YamlMime:FAQ
+metadata:
+  title: Vanliga frågor och svar om köade, uppskjutna och studsade meddelanden i EOP
+  f1.keywords:
+  - NOCSH
+  ms.author: chrisda
+  author: chrisda
+  manager: dansimp
+  ms.date: 
+  audience: ITPro
+  ms.topic: troubleshooting
+  localization_priority: Normal
+  ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
+  ms.custom:
+  - seo-marvel-apr2020
+  description: Hitta svar på de vanligaste frågorna om meddelanden som har lagts i kö, skjutits upp eller studsats under filtreringsprocessen För Exchange Online Protection (EOP).
+  ms.technology: mdo
+  ms.prod: m365-security
+  ms.openlocfilehash: c9c3343de6e61d660cf07e920661af8d996c3039
+  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.translationtype: MT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 05/12/2021
+  ms.locfileid: "52334131"
+title: Vanliga frågor och svar om köade, uppskjutna och studsade meddelanden i EOP
+summary: >
+  [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+  **Gäller för**
+
+  - [Exchange Online Protection](exchange-online-protection-overview.md)
+
+  - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
+
+  - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+
+  Det här avsnittet innehåller svar på vanliga frågor om meddelanden som har lagts i kö, skjutits upp eller studsats under filtreringsprocessen För Exchange Online Protection (EOP).
+sections:
+- name: Ignoreras
+  questions:
+  - question: >
+      Varför köar e-post?
+    answer: >
+      Meddelanden köas eller skjutits upp om tjänsten inte kan upprätta en anslutning till mottagarservern för leverans. Meddelandet skjuter inte upp meddelanden om ett 500-seriefel returneras från mottagarnätverket.
+  - question: >
+      Hur uppskjuts ett meddelande?
+    answer: >
+      Meddelanden hålls kvar om det inte går att upprätta en anslutning till mottagarservern och mottagarens server returnerar ett "tillfälligt fel" som att anslutningens time out, anslutningen är misslyckad eller ett 400-seriefel. Om det finns ett permanent fel, till exempel ett 500-seriefel, returneras meddelandet till avsändaren.
+  - question: >
+      Hur länge kan meddelandet skjutas upp och vad är försöksintervallet?
+    answer: >
+      Meddelanden med uppsegen post finns kvar i våra köer i 1 dag. Försök att göra om meddelanden beror på felet vi får tillbaka från mottagarens e-postsystem. De första upp skjutas upp är 15 minuter eller mindre, med efterföljande försök (över det närmaste halvtimmen) och ökar intervallet över flera försök till högst 60 minuter. Intervallvaraktighetsexpansionen är dynamisk och du tas hänsyn till flera variabler som köstorlekar och intern meddelandeprioritet. In basic, it's 15 minutes (or less) to start, then expand from there over the next few hours to 60 mins max.
+  - question: >
+      Hur distribueras meddelanden i kö när e-postservern har återställts?
+    answer: När e-postservern har återställts bearbetas alla i köade meddelanden automatiskt i den ordning som de togs emot och i kö när servern blev otillgänglig.
