@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,18 +17,15 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
-ms.reviewer: tugu
-search.appverid:
-- MET150
+search.appverid: MET150
 description: Lär dig hur du uppdaterar dina faktureringsadresser för Microsoft 365 för företag. Du kan också uppdatera e-postadressen som du får faktureringsaviseringar från.
 ms.date: 04/07/2021
-ms.openlocfilehash: ea212d79ef28d5d387bdb5503c267d7cd5113786
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 8bff090353c409f4364aed63e3b48a831608be2b
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107200"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332179"
 ---
 # <a name="change-your-billing-addresses"></a>Ändra dina faktureringsadresser
 

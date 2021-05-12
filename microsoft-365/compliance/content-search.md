@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Använd eDiscovery-verktyget Innehållssökning i efterlevnadscentret för att söka efter innehåll i olika Microsoft 365-tjänster.
-ms.openlocfilehash: a058c07d080962723e9f6bc7a150cbfb5074e7db
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 5f48418882d5d4c7589b3ef394a0a306c0675f34
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311679"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332852"
 ---
 # <a name="create-a-content-search"></a>Skapa en innehållssökning
 
@@ -88,7 +88,7 @@ För att komma åt sidan **Innehållssökning** i Microsoft 365 Efterlevnadscent
 7. Granska sökinställningarna (och redigera om det behövs) och skicka sedan sökningen för att starta den.
   
 Du kommer åt den här innehållssökningen igen, eller andra innehållssökningar som visas på sidan **Innehållssökning**, genom att markera sökningen och klicka på **Öppna**.
-  
+
 ## <a name="next-steps"></a>Nästa steg
 
 Här är en lista över efterföljande steg som du kan utföra när du har skapat och kört en innehållssökning.
@@ -100,3 +100,7 @@ Här är en lista över efterföljande steg som du kan utföra när du har skapa
 - [Exportera sökresultaten](export-search-results.md)
 
 - [Exportera en sökrapport](export-a-content-search-report.md)
+
+## <a name="more-information"></a>Mer information
+
+Mer information om innehållssökning, till exempel att söka efter innehåll i olika Microsoft 365-tjänster, finns i [Funktionsreferens för innehållssökning](content-search-reference.md).

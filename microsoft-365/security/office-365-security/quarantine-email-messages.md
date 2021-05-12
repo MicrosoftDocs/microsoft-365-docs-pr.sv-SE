@@ -22,12 +22,12 @@ ms.custom:
 description: Administratörer kan läsa mer om karantän i Exchange Online Protection (EOP) som kan vara skadlig eller oönskade meddelanden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bd748871cc09905f9878d5917351b1c185cc1106
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b2a11f5f9e1e730a3b0cc09625ec8e8cb592d869
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207158"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333812"
 ---
 # <a name="quarantined-email-messages-in-eop"></a>E-postmeddelanden i karantän i EOP
 
@@ -54,4 +54,4 @@ Både användare och administratörer kan arbeta med meddelanden i karantän:
 
 - Administratörer och användare kan rapportera falska positiva resultat till Microsoft i karantän.
 
-Mer information om karantän finns i Vanliga frågor [och svar om karantän.](quarantine-faq.md)
+Mer information om karantän finns i Vanliga frågor [och svar om karantän.](quarantine-faq.yml)

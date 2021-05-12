@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Alternativ för slutet av livscykeln för grupper, team och Yammer.
-ms.openlocfilehash: 405d87c645118cf0ef318d4d68802d17da8c5673
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f1f91e64af7e16016398a7c326feec5a9b073ca9
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916136"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333788"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>Alternativ för slutet av livscykeln för grupper, team och Yammer
 
@@ -33,7 +33,7 @@ I följande tabell beskrivs de tjänster som är kopplade till grupper och team 
 |Tjänst|Typer av innehåll|
 |:------|:---------------|
 |Teams|Kanalkonversationer, filer i kanaler|
-|Formulär|Undersökningsstruktur och undersökningsresultat|
+|Forms|Undersökningsstruktur och undersökningsresultat|
 |OneNote|Anteckningsbok|
 |Outlook|E-post och kalender|
 |Planner|Projektstatus och aktivitetsinformation|
@@ -42,7 +42,7 @@ I följande tabell beskrivs de tjänster som är kopplade till grupper och team 
 |Project på webben|Projektplaner|
 |Översikt|Översikter|
 |SharePoint|Filer, listor, Wiki-data för Teams-kanal|
-|Strömma|Videor|
+|Stream|Videor|
 |Yammer|Konversationer|
 
 När du tar bort en grupp eller ett team tas även de flesta av de associerade resurserna bort. Några av undantagen är videor i Stream– de finns kvar och ägs fortfarande av den person som har laddat upp/spelat in dem, på samma sätt som flöden i Power Automate. Project- och översiktsdata i Project på webben finns kvar i CDS och kan återställas separat.
@@ -79,7 +79,8 @@ Teams-specifikt innehåll består främst av konversationer.
 
 Konversationer i kanaler kan inte kopieras eller flyttas med hjälp av ursprungliga Microsoft Teams-funktioner. De kan däremot exporteras med hjälp av Graph API.
 
-Om en bevarandeprincip tillämpas på Teams behålls konversationerna och är tillgängliga via eDiscovery-sökningar. (Objekt som hittades i eDiscovery-sökningar kan exporteras, men det finns inget sammanhang eller någon struktur från den ursprungliga källan – de är bara enskilda meddelanden.)
+Om en bevarandeprincip tillämpas på Teams behålls konversationerna och är tillgängliga via eDiscovery-sökningar. Med hjälp av avancerad eDiscovery kan du återskapa [en chattkonversation i Teams.](/microsoft-365/compliance/conversation-review-sets)
+
 
 ### <a name="archiving-a-team"></a>Arkivera ett team
 
@@ -101,7 +102,7 @@ När ett team arkiveras omfattas den underliggande Microsoft 365-gruppen fortfar
 - Videor kan fortfarande laddas upp, ändras och tas bort i Stream
 - Flöden i Power Automate kan fortfarande skapas, ändras, tas bort och fortsätta köras (de kommer att misslyckas om de behövs för att publicera ett meddelande på en kanal för det arkiverade teamet)
 
-## <a name="forms"></a>Formulär
+## <a name="forms"></a>Forms
 
 Även om ett formulär kan flyttas från ett enskilt konto till en grupp kan det inte flyttas eller kopieras från en grupp till en annan. Det finns tre alternativ för formulär när ett team tas bort.
 

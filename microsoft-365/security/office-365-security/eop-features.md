@@ -10,15 +10,15 @@ audience: ITPro
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
-description: Följande tabell innehåller en lista över funktioner som är tillgängliga i den värdbaserade e-postfiltreringstjänsten i Exchange Online Protection (EOP).
+description: Följande tabell innehåller en lista över funktioner som är tillgängliga i den e-postfiltreringstjänst Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ff3c889f3e4d6779b08584ba6537da36d6f2660e
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b30608b858f06951a8f4c250f288a8d44bd84b08
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207113"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333836"
 ---
 # <a name="eop-features"></a>Funktioner i EOP
 
@@ -27,17 +27,17 @@ ms.locfileid: "51207113"
 **Gäller för**
 -  [Exchange Online Protection fristående](exchange-online-protection-overview.md)
 
-Följande tabell innehåller en lista över funktioner som är tillgängliga i den värdbaserade e-postfiltreringstjänsten i Exchange Online Protection (EOP).
+Följande tabell innehåller en lista över funktioner som är tillgängliga i den e-postfiltreringstjänst Exchange Online Protection (EOP).
 
 > [!TIP]
-> Översikt [över Microsoft 365 för företag är](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) en bra resurs för att ta reda på information om kommande nya funktioner. Mer information om vilka funktioner som är tillgängliga med de olika EOP-abonnemangen finns i Tjänstbeskrivning [för Exchange Online Protection.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
+> Översikt [Microsoft 365 för företag är en](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) bra resurs för att ta reda på information om kommande nya funktioner. En bredare vy över vilka funktioner som är tillgängliga med de olika EOP-abonnemangen finns [Exchange Online Protection Tjänstbeskrivning](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
 ****
 
 |Funktion|Beskrivning|
 |---|---|
 |**Skydd mot skräppost**||
-|Identifiering av inkommande skräppost|Mer information finns i [Skydd mot skräppost i Microsoft 365.](anti-spam-protection.md) <p> I fristående EOP-miljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera e-postflödesregler (kallas även för transportregler) i lokalt Exchange för att översätta utfallet av skräppostfiltreringen i EOP så att regeln för skräppost kan flytta meddelandet till mappen Skräppost. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)|
+|Identifiering av inkommande skräppost|Mer information finns i [Skydd mot skräppost i Microsoft 365](anti-spam-protection.md). <p> I fristående EOP-miljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera e-postflödesregler (kallas även för transportregler) i lokalt Exchange för att översätta utfallet av skräppostfiltreringen i EOP så att regeln för skräppost kan flytta meddelandet till mappen Skräppost. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)|
 |Identifiering av utgående skräppost|Skydd mot utgående skräppost är alltid aktiverat om du använder tjänsten för att skicka utgående e-post. Mer information finns i Skydd [mot utgående skräppost.](outbound-spam-controls.md)|
 |Skydd mot bakåtcatter|Mer information finns i [Bakåtcatter och EOP.](backscatter-messages-and-eop.md)|
 |Massfiltrering|EOP använder tröskelvärdet för mass klagomål (BCL) för att markera massutskick av e-postmeddelanden som skräppost. Mer information finns i följande avsnitt: <p> [Vad är skillnaden mellan skräppost och massutskick?](what-s-the-difference-between-junk-email-and-bulk-email.md) <p> [Nivå för mass klagomål (BCL) i EOP](bulk-complaint-level-values.md) <p> [Konfigurera principer för skräppostskydd](configure-your-spam-filter-policies.md)|
@@ -49,7 +49,7 @@ Följande tabell innehåller en lista över funktioner som är tillgängliga i d
 |Skapa anpassade principer för skydd mot skräppost|Du kan skapa anpassade principer för skydd mot skräppost och tillämpa dem på specifika användare, grupper eller domäner i organisationen. Anpassade principer har alltid företräde framför standardprinciper, men du kan ändra prioriteten (det vill säga ordningen) för dina anpassade principer. Mer information finns i [Konfigurera principer för skräppostskydd](configure-your-spam-filter-policies.md).|
 |Konfigurera åtgärder för skräppostfiltreade meddelanden|Du kan till exempel ta bort innehållsfiltreerade meddelanden eller skicka dem till mappen Skräppost eller karantän. Mer information finns i [Konfigurera principer för skräppostskydd](configure-your-spam-filter-policies.md).|
 |Internationell skräppostfiltrering|Du kan konfigurera skräppostskyddsfiltrering för att filtrera meddelanden som skrivits på vissa språk eller som skickas från vissa länder eller regioner. Mer information finns i [Konfigurera principer för skräppostskydd](configure-your-spam-filter-policies.md).|
-|Hantera skräppost via Outlook eller Outlook på webben (tidigare kallat Outlook Web App)|Administratörer och slutanvändare kan skapa listor över betrodda avsändare och spärrade avsändare. Mer information finns i [Om skräppostinställningar i Outlook.](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook) <p> Om du använder EOP för att skydda lokala postlådor ska du se till att använda katalogsynkronisering för att säkerställa att de här inställningarna synkroniseras till tjänsten. Mer information om hur du inställningar för katalogsynkronisering finns i "Använda katalogsynkronisering för att hantera e-postanvändare" i [Hantera e-postanvändare i EOP.](manage-mail-users-in-eop.md)|
+|Hantera skräppost via Outlook eller Outlook på webben (kallades tidigare för Outlook Web App)|Administratörer och slutanvändare kan skapa listor över betrodda avsändare och spärrade avsändare. Mer information finns i [Om skräppostinställningar i Outlook](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook). <p> Om du använder EOP för att skydda lokala postlådor ska du se till att använda katalogsynkronisering för att säkerställa att de här inställningarna synkroniseras till tjänsten. Mer information om hur du inställningar för katalogsynkronisering finns i "Använda katalogsynkronisering för att hantera e-postanvändare" i [Hantera e-postanvändare i EOP.](manage-mail-users-in-eop.md)|
 |Rapportera falska positiva resultat och falska negativa tal till Microsoft.|Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).|
 |Karantänmeddelanden för skräppost för slutanvändare|Mer information finns i [Skräppost-aviseringar för slutanvändare](use-spam-notifications-to-release-and-report-quarantined-messages.md) [och Konfigurera skräppost-aviseringar för slutanvändare.](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)|
 |Visa, hitta och hantera meddelanden i karantänportalen.|Mer information finns i Hantera meddelanden i karantän och filer som administratör i [EOP](manage-quarantined-messages-and-files.md) eller Hitta och släppa meddelanden i [karantän som en användare.](find-and-release-quarantined-messages-as-a-user.md)|
@@ -66,11 +66,11 @@ Följande tabell innehåller en lista över funktioner som är tillgängliga i d
 |**E-postdirigering och kopplingar**||
 |Villkorsstyrd e-postdirigering|Mer information finns i [Scenario: Villkorsstyrd e-postdirigering i Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing).|
 |Opportunistisk eller tvingad TLS|Opportunistisk eller tvingad TLS är tillgänglig med kopplingar. Opportunistisk TLS försöker en TLS-anslutning men använder en SMTP-anslutning om TLS-anslutningen inte lyckas. Tvinga TLS att använda TLS-anslutningar, vilket innebär att meddelandet avvisas om TLS-anslutningen inte lyckas. Mer information om TLS, säkerhet och kopplingar finns i Konfigurera kopplingar för säker [e-postflöde med en partnerorganisation.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)|
-|Regional routning (begränsningen för e-postflödet till ett visst område)|Mer information finns i avsnittet "EOP-datacenter" i översikten över [Exchange Online Protection.](exchange-online-protection-overview.md)|
-|Verktyget SMTP-anslutningskontroll|Mer information om hur du använder det här verktyget för att testa e-postflödet finns i Testa e-postflödet genom att validera [dina Microsoft 365-kopplingar.](/exchange/mail-flow-best-practices/test-mail-flow)|
+|Regional routning (begränsningen för e-postflödet till ett visst område)|Mer information finns i avsnittet "EOP-datacenter" i Exchange Online Protection [översikt.](exchange-online-protection-overview.md)|
+|Verktyget SMTP-anslutningskontroll|Mer information om hur du använder verktyget för att testa e-postflödet finns i Testa e-postflödet genom [att verifiera Microsoft 365-kopplingarna.](/exchange/mail-flow-best-practices/test-mail-flow)|
 |Matcha underdomäner|Mer information om hur du aktiverar e-postflödet till och från underdomäner till godkända domäner finns i [E-postflöde i EOP.](mail-flow-in-eop.md)|
 |**E-postflödesregler**||
-|Principbaserad filtrering och åtgärder|Anpassade principer är baserade på e-postflödesregler i Exchange (kallas även transportregler). Du kan filtrera efter domän, nyckelord, filnamn, filtyp, ämnesrad, meddelandetext, avsändare, mottagare, rubrik och IP-adress. Mer information finns i [E-postflödesregler (transportregler) i Exchange Online Protection.](mail-flow-rules-transport-rules-0.md)|
+|Principbaserad filtrering och åtgärder|Anpassade principer baseras på Exchange e-postflödesregler (kallas även transportregler). Du kan filtrera efter domän, nyckelord, filnamn, filtyp, ämnesrad, meddelandetext, avsändare, mottagare, rubrik och IP-adress. Mer information finns i [E-postflödesregler (transportregler) i Exchange Online Protection.](mail-flow-rules-transport-rules-0.md)|
 |Filtrera efter textmönster|E-postflödesregler kan använda en matris eller reguljära uttryck för att matcha text. Du kan också använda en sträng eller en matris med strängar för att matcha många meddelandeegenskaper, till exempel adress, ämne, brödtext eller namn på bifogade filer. Mer information finns i [E-postflödesregler (transportregler) i Exchange Online Protection](mail-flow-rules-transport-rules-0.md)|
 |Egna ordlistor|E-postflödesregler kan innehålla långa listor med text och nyckelord som ger samma funktioner som en egen ordlista.|
 |Policyregler per domän|Omfattningen av en e-postflödesregel kan anpassas så att den matchar avsändarens eller mottagarens domännamn, IP-adressintervall, adressnyckelord eller mönster, gruppmedlemskap och andra villkor.|
@@ -98,6 +98,6 @@ Följande tabell innehåller en lista över funktioner som är tillgängliga i d
 |Teknisk support via telefon och webb dygnet runt, sju dagar i veckan|Mer information om hjälp- och supportalternativ för EOP finns i [Hjälp och support för EOP.](help-and-support-for-eop.md)|
 |**Andra funktioner**||
 |Ett geo-redundant globalt nätverk av servrar|EOP körs i ett globalt nätverk av datacenter som är utformade för att ge bästa tillgänglighet. Mer information finns i avsnittet "EOP datacenter" i Exchange [Online Protection översikt](exchange-online-protection-overview.md).|
-|Köer när den lokala servern inte kan ta emot e-post|Meddelanden med uppsegen post finns kvar i våra köer en dag. Försök att göra om meddelanden beror på felet vi får tillbaka från mottagarens e-postsystem. I genomsnitt tas meddelanden om var femte minut. Mer information finns i Vanliga frågor och [svar om EOP i kö, uppskjuten eller oaktiverad e-post.](eop-queued-deferred-and-bounced-messages-faq.md)|
+|Köer när den lokala servern inte kan ta emot e-post|Meddelanden med uppsegen post finns kvar i våra köer en dag. Försök att göra om meddelanden beror på felet vi får tillbaka från mottagarens e-postsystem. I genomsnitt tas meddelanden om var femte minut. Mer information finns i Vanliga frågor och [svar om EOP i kö, uppskjuten eller oaktiverad e-post.](eop-queued-deferred-and-bounced-messages-faq.yml)|
 |Meddelandekryptering i Office 365 finns som en tilläggstjänst|Mer information finns i [Kryptering i Office 365.](../../compliance/encryption.md)|
 |

@@ -2,9 +2,10 @@
 title: Köp nya licenser
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twernermsft
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- commerce_purchase
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Läs om hur du köper nya Microsoft 365 för företag-licenser.
-ms.openlocfilehash: 3ca503abdf35e1bef95f784b7fc19c70a8de84bd
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: c9077dbb4c653d162df97e7f7bda47d929eb67ce
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422981"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332216"
 ---
 # <a name="buy-microsoft-365-licenses"></a>Köpa Microsoft 365-licenser
 
@@ -34,16 +36,16 @@ ms.locfileid: "50422981"
 
 När du lägger till nya användare måste du köpa fler Microsoft 365-licenser för dessa användare.
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
-1. I administrationscentret för Microsoft 365 väljer du **Fakturering,** **Dina** produkter och sedan din prenumeration.
-1. Välj **Köp licenser.**
+1. I administrationscentret för Microsoft 365 väljer **du Fakturering**, **Dina produkter** och sedan din prenumeration.
+1. Välj **Köp licenser**.
 1. Ange antalet licenser du vill köpa.
 1. Välj **Spara**.
 1. Stäng sedan fönstret.
-1. De nya licenserna läggs till i prenumerationen.
-1. Välj Tilldela licenser för att tilldela **de nya licenserna.**
-1. Tilldela sedan **licenser** igen.
+1. De nya licenserna läggs till i din prenumeration.
+1. Om du vill tilldela de nya licenserna väljer **du Tilldela licenser**.
+1. Tilldela sedan **licenser igen.**
 1. Skriv namnet på den användare som du vill tilldela licensen till och välj sedan namnet.
-1. Bestäm vilka appar eller tjänster du vill att användaren ska ha och välj sedan **Tilldela.**
-1. Licensen har nu tilldelats till användaren.
+1. Bestäm vilka appar eller tjänster du vill att användaren ska ha och välj sedan **Tilldela**.
+1. Licensen är nu tilldelad till användaren.

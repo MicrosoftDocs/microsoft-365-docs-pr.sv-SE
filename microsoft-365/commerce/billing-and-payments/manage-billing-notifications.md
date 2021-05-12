@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: prkalid, guyb
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,16 +16,17 @@ ms.collection:
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
 search.appverid:
 - MET150
 description: Lär dig hur du hanterar vilka som får e-postmeddelanden om faktureringsaviseringar och fakturabilagor.
-ms.openlocfilehash: 8997a4d3ca575c60214adbedccc018e6768850cd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/17/2021
+ms.openlocfilehash: d4083dc5a9d70eb8c20b4107389ec5fec65749ad
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911860"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332144"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Hantera faktureringsaviseringar och fakturabilagor
 
@@ -41,7 +43,7 @@ Du måste vara global administratör för att kunna göra det som beskrivs i den
 
 E-postmeddelanden om faktureringsaviseringar skickas på organisationens föredragna språk. Använd följande steg om du vill ändra önskat språk.
 
-1. Gå till sidan Faktureringsaviseringar i **administrationscentret** för Microsoft 365.  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank"></a>
+1. I Microsoft 365 administrationscenter går du till sidan   >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faktureringsfaktureringsaviseringar.</a>
 2. Välj Redigera **aviseringsinställningar** i **avsnittet Inställningar för faktureringsaviseringar.**
 3. I fönstret Inställningar för faktureringsaviseringar under **Önskat** språk väljer du det språk du vill använda och väljer sedan **Spara**. 
 
@@ -101,7 +103,7 @@ Om du inte vill ta emot fakturans bifogade fil när som helst följer du stegen 
 
 Om du har en faktureringsprofil kan vissa av stegen som beskrivs i den här artikeln vara lite annorlunda för vissa av dina prenumerationer. I det här avsnittet beskrivs skillnaderna. [Hur vet jag om jag har en faktureringsprofil?](manage-billing-profiles.md)
 
-### <a name="who-receives-billing-notifications"></a>Vem får faktureringsaviseringar?
+### <a name="who-receives-billing-notifications"></a>Vem faktureringsaviseringar?
 
 E-postmeddelanden om faktureringsaviseringar skickas till de primära och alternativa e-postadresserna för användare som har tilldelats någon av följande roller:
 

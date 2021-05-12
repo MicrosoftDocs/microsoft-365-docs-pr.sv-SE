@@ -501,9 +501,11 @@
       items:
         - name: Översikt över innehållssökning
           href: search-for-content.md
-        - name: Använda innehållssökning
+        - name: Söka efter innehåll
           href: content-search.md
           items:
+            - name: Funktionsreferens för Innehållssökning
+              href: content-search-reference.md
             - name: Nyckelordsfrågor och sökvillkor
               href: keyword-queries-and-search-conditions.md
             - name: Förhandsgranska sökresultaten i eDiscovery
@@ -663,32 +665,20 @@
               href: error-remediation-when-processing-data-in-advanced-ediscovery.md
             - name: Felåtgärder för enskilt objekt
               href: single-item-error-remediation.md
-        - name: Samla innehåll för ett ärende (förhandsversion)
+        - name: Samla innehåll för ett ärende
           items:
-            - name: Lär dig om samlingar (förhandsversion)
+            - name: Lär dig mer om samlingar
               href: collections-overview.md
-            - name: Skapa en utkastsamling (förhandsversion)
+            - name: Skapa en utkastsamling
               href: create-draft-collection.md
-            - name: Bekräfta en utkastsamling i en granskningsuppsättning (förhandsversion)
+            - name: 'Spara en utkastsamling till en granskningsuppsättning '
               href: commit-draft-collection.md
-            - name: Samlingsstatistik och rapporter (förhandsversion)
+            - name: Samlingsstatistik och rapporter
               href: collection-statistics-reports.md
             - name: Skapa sökfrågor för samlingar
               href: building-search-queries.md
             - name: Nyckelordsfrågor och sökvillkor
               href: keyword-queries-and-search-conditions.md
-        - name: Samla in data för ett ärende
-          items:
-            - name: Skapa en sökning
-              href: create-search-to-collect-data.md
-            - name: Skapa sökfrågor
-              href: building-search-queries.md
-            - name: Nyckelordsfrågor och sökvillkor
-              href: keyword-queries-and-search-conditions.md
-            - name: Sökstatistik
-              href: search-statistics-in-advanced-ediscovery.md
-            - name: Lägga till sökresultat i en granskningsuppsättning
-              href: add-data-to-review-set.md
         - name: Hantera granskningsuppsättningar
           href: managing-review-sets.md
           items:
@@ -840,6 +830,8 @@
       items:
         - name: Lär dig om Compliance Manager
           href: compliance-manager.md
+        - name: Nyheter i Compliance Manager
+          href: compliance-manager-whats-new.md
         - name: Snabbstart för Compliance Manager
           href: compliance-manager-quickstart.md
         - name: Kom igång med Compliance Manager

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -18,16 +18,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
 search.appverid: MET150
 description: Läs om hur faktureringsprofiler har stöd för fakturor.
 ms.date: 04/02/2021
-ms.openlocfilehash: 57786df370246c2b4fda556a9c48eb828db1cb4f
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 36d762e50627763b7856ed1fe6c109e8da2b4789
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280793"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332036"
 ---
 # <a name="understand-billing-profiles"></a>Förstå faktureringsprofiler
 
@@ -73,4 +72,4 @@ Roller i faktureringsprofiler har behörighet att styra inköp och visa och hant
 
 Om du har frågor eller behöver hjälp med dina Azure-avgifter kan <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">du skapa en supportbegäran med Azure-supporten.</a>
 
-Om du har frågor eller behöver hjälp med din faktureringsprofil i Microsoft 365 kan [du kontakta supporten för företagsprodukter.](../../business-video/get-help-support.md)
+Om du har frågor eller behöver hjälp med din faktureringsprofil i administrationscentret för Microsoft 365 [kontaktar du supporten för företagsprodukter.](../../business-video/get-help-support.md)

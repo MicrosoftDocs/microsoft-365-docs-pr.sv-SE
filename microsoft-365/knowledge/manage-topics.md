@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: 59581dce3701e622a1e2d7ed264370c9d92b3211
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 2c29cdb6823e695cb9c96a4f51ef7b1c41642ac9
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327286"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333632"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Hantera ämnen i ämnescentret i Microsoft Viva-ämnen
 
@@ -46,10 +46,6 @@ Knowledge managers help to guide discovered topics through the various topic lif
 
 - **Tas** bort : Ett ämne avvisas av en kunskapshanterare och visas inte längre för tittare. Ett ämne kan tas bort i valfri stat (förslag, bekräftade eller publicerade). För att ett ämne ska kunna tas bort måste två negativa röster tas emot från användare som har röstat med hjälp av feedbackmekanismen på ämneskortet. Om en användare till exempel har röstat nej och en användare har röstat positivt på ett visst ämne, skulle du ändå behöva två fler negativa röster för att ämnet ska tas bort. När ett publicerat ämne tas bort måste sidan med den curated informationen tas bort manuellt via ämnescentrets sidbibliotek.
 
-På sidan **Hantera ämnen** kan en kunskapshanterare se om ett ämne har bekräftats eller tagits bort av användarens röster eller av en viss person. För ämnen som tagits bort på grund av  användarens röster  visas orsaken i kolumnen Borttaget av som Användarröster i stället för en persons namn. 
-
-   ![Skärmbild av sidan Hantera ämnen med listan borttagna ämnen med Användarens röster markerade.](../media/knowledge-management/removed-topics-user-votes.png) 
-
 > [!Note] 
 > På **sidan Hantera ämnen** kan varje kunskapshanterare bara se ämnen där de har åtkomst till underliggande filer och sidor som är kopplade till avsnittet. Den här behörighets trimningen visas i listan med ämnen på flikarna **Föreslagna,** **Bekräftade,** **Publicerade** **och Borttagna.** I avsnittet antal visas dock det totala antalet i organisationen, oavsett behörighet.
 
@@ -58,15 +54,15 @@ På sidan **Hantera ämnen** kan en kunskapshanterare se om ett ämne har bekrä
 Om du vill hantera ämnen i ämnescentret måste du:
 - Ha en Viva Topics-licens.
 
-- Ha [**behörigheten Vem kan hantera**](./topic-experiences-user-permissions.md) ämnen. Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
+- Be den [**Vem hantera behörighet för**](./topic-experiences-user-permissions.md) ämnen. Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
 
-Du kan inte visa sidan Hantera **ämnen i ämnescentret** om du inte har behörigheten Vem **kan hantera** ämnen.
+Du kan inte visa sidan Hantera ämnen **i ämnescentret** om du inte har **behörigheten Vem kan hantera ämnen.**
 
 I ämnescentret kan en knowledge manager granska ämnen som har identifierats på de källplatser du angett och bekräfta eller ta bort dem. En knowledge manager kan också skapa och publicera nya ämnessidor om en inte hittades i identifieringen av ämnen, eller redigera befintliga sidor om de behöver uppdateras.
 
 ## <a name="review-suggested-topics"></a>Granska föreslagna ämnen
 
-På sidan **Hantera ämnen** visas ämnen som identifierats på dina angivna platser för SharePoint-källor på **fliken** Förslag. Vid behov kan en kunskapshanterare granska ämnen som inte har bekräftats och välja att bekräfta eller ta bort dem.
+På sidan **Hantera ämnen** visas ämnen som identifierats på SharePoint angivna platser för datakällan på **fliken** Förslag. Vid behov kan en kunskapshanterare granska ämnen som inte har bekräftats och välja att bekräfta eller ta bort dem.
 
    ![Föreslagna ämnen](../media/knowledge-management/quality-score.png) 
 
@@ -98,7 +94,7 @@ I kolumnen Intryck visas hur många gånger ett ämne har **visats** för slutan
 
 ## <a name="confirmed-topics"></a>Bekräftade ämnen
 
-På sidan **Hantera** ämnen visas ämnen som identifierats på dina angivna platser för SharePoint-källor och har bekräftats av en knowledge manager eller "crowdsourced" som bekräftas av ett nettot två eller fler personer (balansera negativa användarröster mot positiva användarröster) via systemet för kortfeedback på fliken **Bekräftad.** Om det behövs kan en användare med behörighet att hantera ämnen granska bekräftade ämnen och välja att avvisa dem.
+På sidan **Hantera** ämnen visas ämnen som identifierats på dina angivna platser i SharePoint-källan och har bekräftats av en knowledge manager eller "crowdsourced" som bekräftas av ett nettot två eller fler personer (balansera negativa användarröster mot positiva användarröster) via feedbackmekanismen för kort visas på fliken **Bekräftad.** Om det behövs kan en användare med behörighet att hantera ämnen granska bekräftade ämnen och välja att avvisa dem.
 
 Granska ett bekräftat ämne:
 

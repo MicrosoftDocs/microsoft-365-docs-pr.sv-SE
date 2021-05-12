@@ -13,12 +13,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Använd verktyget eDiscovery för innehållssökning i Säkerhets- och efterlevnadscenter för & för att snabbt hitta e-post i Exchange-postlådor, dokument på SharePoint-webbplatser och OneDrive-platser och snabbmeddelandekonversationer i Skype för företag.
-ms.openlocfilehash: a6aa416768e7910e546b39d5866f884d2d532732
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 80234a512d13deda29a61073bec62990d135f30e
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162240"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333692"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Söka efter innehåll med hjälp av verktyget Innehållssökning
 
@@ -28,7 +28,9 @@ Använd verktyget Innehållssökning i Säkerhets- och efterlevnadscenter för &
 
 Det första steget är att börja använda verktyget Innehållssökning för att välja innehållsplatser för att söka och konfigurera en nyckelordsfråga för att söka efter specifika objekt. Du kan också lämna frågan tom och returnera alla objekt på målplatserna.
   
-- [Skapa och köra](content-search.md) en innehållssökning 
+- [Skapa och köra](content-search.md) en innehållssökning
+
+- [Funktionsreferens] för innehållssökning (content-search-reference.md)
 
 - [Skapa sökfrågor och använda villkor för](keyword-queries-and-search-conditions.md) att begränsa sökningen 
 

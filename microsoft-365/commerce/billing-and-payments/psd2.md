@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jamitche
+ms.reviewer: jamitche, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,17 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
 search.appverid: MET150
 description: Från och med den 14 september 2019 måste banker i de 31 länderna i europeiska ekonomiska samarbetsområdet verifiera identiteten på personen som gör ett onlineköp innan betalningen kan bearbetas."
 keywords: payment services directive 2, strong customer authentication, multi-factor authentication
 ms.date: 11/03/2020
-ms.openlocfilehash: e687cac5bb1b7f1c88e9166993e29d437134e138
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: bbbbe9f53c11fcae9c35cda1fd4e7d4b51a9c767
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280853"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331952"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>Payment Services Directive 2 och Strong Customer Authentication för kommersiella kunder
 

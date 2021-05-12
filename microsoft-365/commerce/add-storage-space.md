@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,37 +19,34 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
-- PPM_jmueller
-ms.reviewer: drjones
-search.appverid:
-- MET150
-description: Lär dig att lägga till och minska fillagringen i Microsoft 365 prenumeration. Med extra fillagring kan du lagra mer innehåll i SharePoint Online och OneDrive.
+search.appverid: MET150
+description: Lär dig att lägga till och minska fillagringen i Microsoft 365-prenumerationen. Med extra fillagring kan du lagra mer innehåll i SharePoint Online och OneDrive.
 ms.date: 04/02/2021
-ms.openlocfilehash: 14f72f59493be04165f0e7b28f26b14f8ae01a08
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 98fdb4412f263bd9e0a22b6890ff66509cb3e799
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293685"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332192"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Lägga till lagringsutrymme för din prenumeration
 
-Om du börjar få slut på lagringsutrymme för webbplatssamlingar i SharePoint Online kan du lägga till lagringsutrymme för din prenumeration om prenumerationen är berättigad till det. Om du inte ser **Office 365 extra fillagring** tilläggen i listan över tillgängliga tillägg innebär det att ditt abonnemang inte är berättigande. Mer information finns i [Är mitt abonnemang berättigande?](#is-my-plan-eligible-for-office-365-extra-file-storage)
+Om du börjar få slut på lagringsutrymme för webbplatssamlingar i SharePoint Online kan du lägga till lagringsutrymme för din prenumeration om prenumerationen är berättigad till det. Om Du inte ser **Office 365 Extra** fillagring i listan med tillgängliga tillägg innebär det att ditt abonnemang inte är berättigande. Mer information finns i [Är mitt abonnemang berättigande?](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
 > [!NOTE]
-> Om du har köpt prenumerationen via volymlicensiering eller en molnskyddslicens kan **du inte köpa Office 365 extra fillagring** direkt från Microsoft för din organisation. Kontakta din representant eller partner om du behöver hjälp.
+> Om du har köpt prenumerationen via volymlicensiering eller en molntjänsttjänst kan du inte köpa **Office 365 extra fillagring** för din organisation direkt från Microsoft. Kontakta din representant eller partner om du behöver hjälp.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-Du måste vara global administratör eller SharePoint administratör för att kunna utföra uppgifterna i den här artikeln. Mer information finns i [Om administratörsroller](../admin/add-users/about-admin-roles.md).
+Du måste vara global administratör eller SharePoint-administratör för att kunna utföra uppgifterna i den här artikeln. Mer information finns i [Om administratörsroller](../admin/add-users/about-admin-roles.md).
 
 ## <a name="view-available-storage"></a>Visa tillgängligt lagringsutrymme
 
-1. I administrationscentret SharePoint du till <a href="https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true" target="_blank"></a> sidan Aktiva webbplatser och loggar in med ett konto som har [administratörsbehörigheter](/sharepoint/sharepoint-admin-role) för din organisation.
+1. I administrationscentret för SharePoint <a href="https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true" target="_blank"></a> går du till sidan Aktiva webbplatser och loggar in med ett konto som har [administratörsbehörigheter](/sharepoint/sharepoint-admin-role) för din organisation.
 
 2. Längst upp till höger på sidan ser du hur mycket lagringsutrymme som används på alla webbplatser och det totala lagringsutrymmet för din prenumeration. Om organisationen har konfigurerat Multi-Geo i Office 365 visar stapeln också hur mycket lagringsutrymme som används för alla geoplatser.
 
-   ![Storage fältet på sidan Aktiva webbplatser](/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
+   ![Lagringsfältet på sidan Aktiva webbplatser](/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
 
    > [!NOTE]
    > Använt lagringsutrymme inkluderar inte ändringar som gjorts under de senaste 24–48 timmarna.
@@ -62,7 +60,7 @@ Information om hur du anger lagringsgränser för webbplatssamlingar finns i [Ha
 Om du ännu inte har köpt extra lagringsutrymme för din prenumeration kan du göra det.
 
 1. I administrationscentret går du  till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Faktureringsköpstjänster.</a>
-2. Längst ned på **sidan Köptjänster,** i **avsnittet** Tillägg, tittar du efter **Office 365 extra fillagring** och väljer **Information**.
+2. Längst ned på sidan **Köp** tjänster, i avsnittet Tillägg, hittar **du Office 365 extra fillagring** och väljer **Information**. 
 3. På sidan med produktinformation väljer du **Nästa.**
 4. Om det behövs väljer du basprenumerationen och anger sedan antalet gigabyte lagringsutrymme som du vill lägga till.
 5. Välj **Gå till utcheckningen nu.**
@@ -71,12 +69,12 @@ Om du ännu inte har köpt extra lagringsutrymme för din prenumeration kan du g
 
 ## <a name="increase-or-decrease-storage"></a>Öka eller minska lagringsutrymme
 
-Om du redan har köpt extra lagringsutrymme via **Office 365 extra fillagring-tillägget** kan du följa de här stegen för att öka eller minska det extra lagringsutrymmet för din prenumeration. Du kan minska lagringen till så lite som 1 gigabyte. Kontakta support om du vill ta bort allt [extra lagringsutrymme.](../business-video/get-help-support.md)
+Om du redan har köpt extra fillagring via tillägget **Office 365 extra** fillagring kan du följa de här stegen om du vill öka eller minska det extra lagringsutrymmet för din prenumeration. Du kan minska lagringen till så lite som 1 gigabyte. Kontakta support om du vill ta bort allt [extra lagringsutrymme.](../business-video/get-help-support.md)
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
-2. På **fliken** Produkter väljer du den prenumeration som **innehåller Office 365 extra fillagring-tillägget.**
+2. På **fliken** Produkter väljer du den prenumeration som innehåller **tillägget Office 365 extra fillagring.**
 3. Välj Hantera tillägg i **avsnittet Tillägg på sidan** med **produktinformation.**
-4. I **fönstret Hantera tillägg,** från listan **Tillägg,** väljer du Office 365 extra fillagring **.**
+4. Välj **Office** **365** Extra **Fillagring** i listan Tillägg i fönstret Hantera tillägg.
 5. I **textrutan** Antal anger du antalet GBS lagringsutrymme som du vill använda för prenumerationen.
 6. Välj **Spara**.
 
@@ -101,9 +99,9 @@ Office 365 extra fillagring är tillgängligt för följande prenumerationer:
 - Microsoft 365 F1
 
 > [!NOTE]
-> Office 365 extra fillagring finns även för GCC, GCC High och DOD-abonnemang.
+> Office 365 Extra File Storage is also available for GCC, GCC High, and DOD plans.
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Hantera lagringsgränser för webbplatser](https://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) (artikel)\
-[Ange standardlagringsutrymme för OneDrive](/onedrive/set-default-storage-space)(artikel)
+[Hantera lagringsgränser för webbplatser](/sharepoint/manage-site-collection-storage-limits) (artikel)\
+[Ange standardlagringsutrymme för OneDrive-användare](/onedrive/set-default-storage-space)(artikel)

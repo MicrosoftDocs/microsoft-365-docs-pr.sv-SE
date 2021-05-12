@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 04/30/2021
+ms.date: 05/12/2021
 audience: enabler
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -14,20 +14,19 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: Lär dig hur du hittar resurser för Microsoft Viva Learning (förhandsversion).
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 31e39680fc18ec52b65c29899ec16e72ccbccf58
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: 48162a619d37ac764db5a98153efec79ee1a4632
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52101096"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333512"
 ---
 # <a name="introduction-to-microsoft-viva-learning-preview"></a>Introduktion till Microsoft Viva Learning (förhandsversion)
 
 > [!NOTE]
 > Informationen i den här artikeln gäller en förhandsversion av en produkt som kan komma att ändras väsentligt innan den släpps till kommersiellt bruk. 
 
-Microsoft Viva Learning (förhandsversion) ger grupper och personer i organisationen möjlighet att göra inlärningen till en naturlig del av dagen. Appen skapar ett centralt nav i Microsoft Teams där anställda kan dela, tilldela och lära sig från innehållsbibliotek i organisationen.
+Microsoft Viva Learning (förhandsversion) ger grupper och personer i organisationen möjlighet att göra inlärningen till en naturlig del av dagen. Appen skapar ett centralt nav i Microsoft Teams där anställda kan dela, tilldela och lära sig av innehållsbibliotek i organisationen.
 
 Resurserna på den här sidan är utformade för att du ska komma igång med att lära dig om och använda Viva Learning (förhandsversion) i organisationen.
 
@@ -43,7 +42,7 @@ Resurserna i det här avsnittet hjälper dig att lära dig mer om vad Viva Learn
 
 ## <a name="set-up-and-administration"></a>Konfiguration och administration
 
-Resurserna i det här avsnittet hjälper administratören i organisationen att konfigurera Viva Learning (förhandsversion) i din Microsoft 365 miljö.
+Resurserna i det här avsnittet hjälper administratören i organisationen att konfigurera Viva Learning (förhandsversion) i Microsoft 365-miljön.
 
 | Om du letar efter den här informationen: | Gå till den här resursen: |
 |:-----|:-----|

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,22 +13,19 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
+search.appverid: MET150
 description: Läs mer om information specifikt för Microsoft 365 för företag i Mexiko.
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
-ms.reviewer: jkinma
 monikerRange: o365-worldwide
 ms.date: 11/20/2020
-ms.openlocfilehash: ace8712718dc960f846bd366c8e8dbb7b074f428
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 15b29887fcfd301e303d0918e5f3efc2acd7e908
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107188"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332000"
 ---
 # <a name="billing-information-for-microsoft-365-for-business-in-mexico"></a>Faktureringsinformation för Microsoft 365 företag i Mexiko
 

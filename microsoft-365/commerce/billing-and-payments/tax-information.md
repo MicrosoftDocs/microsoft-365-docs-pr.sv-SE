@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: tugu
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,18 +19,17 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
 ms.date: 03/17/2021
-ms.openlocfilehash: fc1e2924a6b28c30841f890396d5d82ed2944bea
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 5c472615846ba6460bc829bc0157c6c6da940292
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280601"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332024"
 ---
 # <a name="tax-information"></a>Momsinformation
 
-När du köper Microsoft 365 produkter och tjänster bestäms momsen du betalar av en av två saker: din företagsadress eller din leveransadress, om den är annorlunda. Om din organisation finns i USA måste du ange ett Federal Employer Identification Number (FEIN).
+När du köper Microsoft 365-produkter och -tjänster avgörs momsen du betalar av en av två saker: din företagsadress eller din leveransadress, om den är annorlunda. Om din organisation finns i USA måste du ange ett Federal Employer Identification Number (FEIN).
 
 Företag i följande länder kan tillhandahålla momsregistreringsnummer eller lokal motsvarighet:
 
@@ -101,13 +100,13 @@ Företag i följande länder kan tillhandahålla momsregistreringsnummer eller l
 
 ## <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Mellanöstern och Afrika (EMEA)
 
-När du köper Microsoft 365 tjänster i EMEA-regionen kan köpet vara föremål för Value-Added moms.
+När du köper Microsoft 365-tjänster i EMEA-regionen kan köpet vara föremål för Value-Added moms.
   
 - Om du befinner dig i en av EU:s medlemsstater, Vitryssland, Vitryssland, Norge, Turkiet eller Förenade Arabemiraten, och du inte anger ditt giltiga lokala momsregistreringsnummer tillämpar Microsoft Ireland Operations Ltd. den aktuella lokala momssatsen, baserat på det faktureringsland som är inställt på ditt konto.
 
 - Om du befinner dig i Liechtenstein, Ryssland, Serbien, Sydafrika eller Schweiz tillämpas momsen, oavsett om du anger ditt momsregistreringsnummer eller inte.
 
-- Innan vi kan verifiera ditt momsregistreringsnummer för EU-kunder måste det finnas tillgängligt för verifiering i Exchange System (VIES). Om ditt momsregistreringsnummer inte kan verifieras kontaktar du din lokala skattemyndighet.
+- För EU-kunder måste det finnas tillgängligt för verifiering i VIES (Vat Information Exchange System) innan vi kan verifiera ditt momsregistreringsnummer. Om ditt momsregistreringsnummer inte kan verifieras kontaktar du din lokala skattemyndighet.
 
 Du kan vara berättigad till momsregistrering om:
   
@@ -133,7 +132,7 @@ Om du faktureras från någon av följande platser tillämpas den aktuella lokal
 
 I USA, Kanada, Mexiko, Chile och Colombia gäller olika momssatser beroende på produkt natur och var du befinner dig.
   
-Om faktureringen utförs av Microsoft Corporation[(se](view-your-bill-or-invoice.md)fakturan) och du registrerat dig för Microsoft 365 utanför USA, Kanada, Puerto Rico, Chile och Colombia debiteras vanligtvis ingen moms.
+Om faktureringen utförs av Microsoft Corporation[(se](view-your-bill-or-invoice.md)fakturan) och du registrerat dig för Microsoft 365 utanför USA, Kanada, Puerto Rico, Chile och Colombia, debiteras vanligtvis ingen moms.
 
 ## <a name="add-your-vat-id"></a>Lägg till ditt momsregistreringsnummer
 

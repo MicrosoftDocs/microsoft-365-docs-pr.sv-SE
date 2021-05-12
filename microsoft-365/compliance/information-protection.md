@@ -53,9 +53,9 @@ För att förstå datalandskapet och identifiera viktiga data i hybridmiljön an
 
 |**Funktion**|**Vilka problem löser den?**|**Komma igång**|**Licensiering**|
 |--|--|--|--|
-|[Typer av känslig information](sensitive-information-type-entity-definitions.md)| Identifierar känsliga data med inbyggda eller anpassade reguljära uttryck eller en funktion, tillsammans med samarbetsbevis som innehåller nyckelord, konfidensnivåer och närhet. Använd känsliga informationstyper för att identifiera specifika typer av data i organisationen. Använd de förinställda känsliga informationstyperna för att hitta vanliga datatyper, till exempel passnummer. Skapa en anpassad informationstyp för att identifiera information som är unik för din miljö, t.ex. artikelnummer. | [Anpassa en förinställd typ av känslig information](customize-a-built-in-sensitive-information-type.md)| |
-|[Utbildningsbara klassificerare (förhandsversion)](classifier-learn-about.md)| Klassificerar data åt dig med en av de inbyggda klassificerarna eller genom att du tränar en klassificerare med ditt eget innehåll. | [Kom igång med utbildningsbara klassificerare (förhandsversion)](classifier-get-started-with.md)| |
-|[Dataklassificering](data-classification-overview.md) | Identifierar objekt som har en känslighetsetikett, en bevarandeetikett eller har klassificerats som en känslig informationstyp i organisationen och de åtgärder som användarna utför med dem.  | [Kom igång med innehållsutforskaren](data-classification-content-explorer.md)<br /><br /> [Kom igång med aktivitetsutforskaren](data-classification-activity-explorer.md)| |
+|[Typer av känslig information](sensitive-information-type-entity-definitions.md)| Identifierar känsliga data med inbyggda eller anpassade reguljära uttryck eller en funktion, tillsammans med samarbetsbevis som omfattar nyckelord, konfidensnivåer och närhet. Använd typer av känslig information för att identifiera specifika typer av data i organisationen. Använd de förinställda typerna av känslig information för att hitta vanliga datatyper, till exempel passnummer. Skapa en anpassad informationstyp för att identifiera information som är unik för din miljö, t.ex. artikelnummer. | [Anpassa en förinställd typ av känslig information](customize-a-built-in-sensitive-information-type.md)| |
+|[Träningsbara klassificerare (förhandsversion)](classifier-learn-about.md)| Klassificerar data åt dig med en av de inbyggda klassificerarna eller genom att du tränar en klassificerare med ditt eget innehåll. | [Kom igång med träningsbara klassificerare (förhandsversion)](classifier-get-started-with.md)| |
+|[Dataklassificering](data-classification-overview.md) | Identifierar objekt som har en känslighetsetikett, en bevarandeetikett eller har klassificerats som en typ av känslig information i organisationen och de åtgärder som användarna utför med dem.  | [Kom igång med innehållsutforskaren](data-classification-content-explorer.md)<br /><br /> [Kom igång med aktivitetsutforskaren](data-classification-activity-explorer.md)| |
 
 
 
@@ -100,7 +100,7 @@ Använd följande funktioner för att förhindra att känslig information förs 
 
 |**Steg**|**Beskrivning**|**Mer information**|
 |--|--|--|
-|[Utforma DLP-principer](data-loss-prevention-policies.md)| Planera hur information ska identifieras (känslig informationstyp, etikett, annat) <br /><br /> Planera var principerna ska användas (tjänster, klientprogram, appar från tredje part) <br /><br /> Planera principtips och annat||
+|[Utforma DLP-principer](data-loss-prevention-policies.md)| Planera hur information ska identifieras (typ av känslig information, etikett, annat) <br /><br /> Planera var principerna ska användas (tjänster, klientprogram, appar från tredje part) <br /><br /> Planera principtips och annat||
 ||||
 
 
