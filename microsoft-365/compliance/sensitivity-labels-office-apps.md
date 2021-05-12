@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Information för IT-administratörer om hur du hanterar känslighetsetiketter i Office-appar för dator, mobila enheter och webben.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 55c22c9901f163fdf64e6148d5b2c19e51136bc1
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: 2cc1cb494569e054825875a4d0dc67e5c56f8146
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52162918"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326624"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Använda känslighetsetiketter i Office-appar
 
@@ -89,7 +89,7 @@ Siffrorna som visas är den lägsta Office-programversion som krävs för varje 
 |[Tilldela behörigheter nu](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Låt användare tilldela behörigheter: <br /> – Vidarebefordra inte](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Låt användare tilldela behörigheter: <br /> – endast kryptering](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | 16.48+ | 4.2112.0+  | 4.2112.0+ | Ja |
-|[Kräva att användare använder en etikett för sin e-post och dokument](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | Lansering: 4.2111+            | Lansering: 4.2111+                | Ja                |
+|[Kräva att användare använder en etikett för sin e-post och dokument](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Ja                |
 |[Granska etikettrelaterad användaraktivitet](data-classification-activity-explorer.md) | 2011+ | Under granskning | Under granskning           | Under granskning               | Under granskning |
 |[Använda en känslighetsetikett för innehåll automatiskt](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | Under granskning           | Under granskning               | Ja |
 |[Olika inställningar för standardetikett och obligatorisk etikettering](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Lanseras i förhandsversionen: [Beta-kanal](https://office.com/insider)                      | 16.43.1108+                   | 4.2111+           | 4.2111+               | Ja |
@@ -134,7 +134,7 @@ I Microsoft Word 2016, Excel 2016, PowerPoint 2016 och Outlook 2016 anger du fö
 | | | 
 
 
-Använd denna inställning med hjälp av Grupprincip eller genom att använda [principtjänst för Office-moln](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service).
+Använd denna inställning med hjälp av Grupprincip eller genom att använda [principtjänst för Office-moln](/DeployOffice/overview-office-cloud-policy-service).
 
 > [!NOTE]
 > Om du använder grupprincipinställningen **Använd funktionen Känslighet i Office för att använda och visa känslighetsetiketter** och ange denna till **1**, kan det finnas vissa situationer där Azure Information Protection-klienten fortfarande kan läsas in i Office-appar. Genom att blockera tillägget från inläsning i varje app förhindras detta.
@@ -166,7 +166,7 @@ Känslighetsetiketter som du konfigurerar för att tillämpa kryptering tar bort
 - För ett dokument: **Arkiv** > **Info** > **Skydda dokument** > **Begränsa åtkomst**
 - för ett e-postmeddelande: Gå till fliken **Alternativ** > **Kryptera** 
   
-När användare först etiketterar ett dokument eller ett e-postmeddelande kan de åsidosätta inställningarna för etikettkonfiguration med sina egna krypteringsinställningar. Till exempel:
+När användare först etiketterar ett dokument eller ett e-postmeddelande kan de åsidosätta dina inställningar för etikettkonfiguration med sina egna krypteringsinställningar. Till exempel:
 
 - En användare använder etiketten **Konfidentiell \ Alla anställda** för ett dokument och den här etiketten har konfigurerats för att tillämpa krypteringsinställningar för alla användare i organisationen. Den här användaren konfigurerar sedan IRM-inställningarna manuellt för att begränsa åtkomsten för användare utanför organisationen. Slutresultatet är ett dokument med etiketten **Konfidentiellt \ Alla anställda** och krypterad, men användarna i organisationen kan inte öppna det som förväntat.
 
@@ -182,7 +182,7 @@ Om du vill ha en mer konsekvent etiketteringsupplevelse med meningsfull rapporte
 
 - För undantagsfall där användare måste tilldela sina egna behörigheter tillhandahåller du etiketter som [låter användarna tilldela sin egna behörigheter](encryption-sensitivity-labels.md#let-users-assign-permissions). 
 
-- I stället för att användare manuellt tar bort kryptering efter att ha valt en etikett som använder kryptering, kan du erbjuda ett underetikettsalternativ när användarna behöver en etikett med samma klassificering, men ingen kryptering. Som:
+- I stället för att användare manuellt tar bort kryptering efter att ha valt en etikett som använder kryptering, kan du erbjuda ett underetikettsalternativ när användarna behöver en etikett med samma klassificering, men ingen kryptering. Till exempel:
     - **Konfidentiellt \ Alla anställda**
     - **Konfidentiellt \ Alla (ingen kryptering)**
 
@@ -194,7 +194,7 @@ Om du vill ha en mer konsekvent etiketteringsupplevelse med meningsfull rapporte
 
 Användare kan bara använda en etikett i taget för varje dokument eller e-postmeddelande.
 
-När du etiketterar ett e-postmeddelande som innehåller bifogade filer ärver de bifogade filerna bara etiketten om den etikett som du använder för e-postmeddelandet tillämpar kryptering och den bifogade filen är ett Office-dokument och inte redan är krypterat. Eftersom den ärvda etiketten tillämpar kryptering, kommer den bifogade filen att bli nyligen krypterad.
+När du etiketterar ett e-postmeddelande som innehåller bifogade filer, ärver de bifogade filerna bara etiketten om den etikett som du använder för e-postmeddelandet tillämpar kryptering och den bifogade filen är ett Office-dokument som inte redan är krypterat. Eftersom den ärvda etiketten tillämpar kryptering, krypteras den bifogade filen.
 
 En bifogad fil ärver inte etiketterna från e-postmeddelandet när etiketten som används i e-postmeddelandet inte använder kryptering eller den bifogade filen redan är krypterad.
 
@@ -419,7 +419,7 @@ Om du vill ange en annan standardetikett för Outlook måste du ange etikettens 
 Get-Label | Format-Table -Property DisplayName, Name, Guid
 ````
 
-Om du vill ta bort någon av de här avancerade inställningarna från en etikettprincip använder du samma AdvancedSettings-parametersyntax men anger ett null-strängvärde. Till exempel:
+Om du vill ta bort någon av de här avancerade inställningarna från en etikettprincip använder du samma AdvancedSettings-parametersyntax men anger ett tom strängvärde. Till exempel:
 
 ````powershell
 Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel=""}

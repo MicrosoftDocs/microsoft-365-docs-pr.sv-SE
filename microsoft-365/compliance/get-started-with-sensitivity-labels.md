@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Är du redo att distribuera känslighetsetiketter för att skydda organisationens data, men är osäker på var du ska börja? Läs några praktiska riktlinjer som hjälper dig med etiketteringsresan.
-ms.openlocfilehash: 08ecf97e3cb45896390c3dac9074c54a2b0bbe96
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 2e757f7f07dbb911a8d89890b1f1cce80d7247b5
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "52162810"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302118"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Kom igång med känslighetsetiketter
 
@@ -97,7 +97,10 @@ Alla scenarier kräver att du [skapar och konfigurerar känslighetsetiketter och
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>Slutanvändardokumentation för känslighetsetiketter
 
-Den mest effektiva dokumentationen för slutanvändare är den anpassade vägledningen och anvisningarna som du ger för de etikettnamn och konfigurationer du väljer. För inbyggd etikettering kan du använda inställningen för etikettprinciper **Förse användare med en länk till en anpassad hjälpsida** för att ange en intern länk för den här dokumentationen. Användare kan sedan enkelt komma åt den genom att välja **Lär dig mer** från knappen **Känslighet** i menyfliksområdet i Office för Word, PowerPoint, Excel och Outlook.
+Den mest effektiva dokumentationen för slutanvändare är den anpassade vägledningen och anvisningarna som du ger för de etikettnamn och konfigurationer du väljer. Du kan använda inställningen för etikettprinciper **Förse användare med en länk till en anpassad hjälpsida** för att ange en intern länk för den här dokumentationen. Användare kan sedan enkelt komma åt den genom att välja från **Känslighet**-knappen:
+
+- För inbyggd etikett: **Läs mer**-menyalternativet.
+- För Azure Information Protection enhetliga etiketteringsklient: **Hjälp och feedback**-menyalternativ > **Länken Läs mer** i dialogrutan Microsoft Azure Information Protection.
 
 För att hjälpa dig att skriva din anpassade dokumentation, se följande blogginlägg för ett nedladdningspaket som du kan använda för att utbilda användare och driva adoption: [End User Training for Sensitivity Labels in M365 – How to Accelerate Your Adoption](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880). 
 
