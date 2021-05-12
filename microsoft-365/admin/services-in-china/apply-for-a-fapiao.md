@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,137 +16,135 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
-ms.reviewer: jkinma
 search.appverid:
 - MET150
 - GEA150
 description: Lär dig hur du skickar din Fapiao-begäran till 21Vianets Fapiao-hanteringssystem när du har gjort en betalning i Office 365 som drivs av 21Vianet i Kina.
 monikerRange: o365-21vianet
 ms.date: 03/30/2021
-ms.openlocfilehash: 1f2dec1ca224b7f8c6c22d5d9d0d2a0cac8630ea
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 605e1bf001f6c6acb3a8b5044adeb66e110641b0
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107466"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332468"
 ---
-# <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a><span data-ttu-id="92791-103">Ansök om en Fapiao för Office 365 som drivs av 21Vianet</span><span class="sxs-lookup"><span data-stu-id="92791-103">Apply for a Fapiao for Office 365 operated by 21Vianet</span></span>
+# <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a><span data-ttu-id="bb463-103">Ansök om en Fapiao för Office 365 som drivs av 21Vianet</span><span class="sxs-lookup"><span data-stu-id="bb463-103">Apply for a Fapiao for Office 365 operated by 21Vianet</span></span>
 
-<span data-ttu-id="92791-104">Du kan skicka din Fapiao-begäran till 21Vianets Fapiao-hanteringssystem ungefär tre dagar efter att du har betalat.</span><span class="sxs-lookup"><span data-stu-id="92791-104">You can submit your Fapiao request to the 21Vianet Fapiao management system about three days after you have paid.</span></span> <span data-ttu-id="92791-105">När du har skickat din Fapiao-begäran behandlas den om två dagar.</span><span class="sxs-lookup"><span data-stu-id="92791-105">After you submit your Fapiao request, it will be processed in two days.</span></span>
+<span data-ttu-id="bb463-104">Du kan skicka din Fapiao-begäran till 21Vianets Fapiao-hanteringssystem ungefär tre dagar efter att du har betalat.</span><span class="sxs-lookup"><span data-stu-id="bb463-104">You can submit your Fapiao request to the 21Vianet Fapiao management system about three days after you have paid.</span></span> <span data-ttu-id="bb463-105">När du har skickat din Fapiao-begäran behandlas den om två dagar.</span><span class="sxs-lookup"><span data-stu-id="bb463-105">After you submit your Fapiao request, it will be processed in two days.</span></span>
   
 ![Flödesschema som visar Fapiao-programprocessen.](../../media/bf14884a-53f9-4c53-971c-b9b8ad6ec8d3.png)
   
-## <a name="step-1-apply-for-a-fapiao"></a><span data-ttu-id="92791-107">Steg 1: Ansöka om Fapiao</span><span class="sxs-lookup"><span data-stu-id="92791-107">Step 1: Apply for a Fapiao</span></span>
+## <a name="step-1-apply-for-a-fapiao"></a><span data-ttu-id="bb463-107">Steg 1: Ansöka om Fapiao</span><span class="sxs-lookup"><span data-stu-id="bb463-107">Step 1: Apply for a Fapiao</span></span>
 
-<span data-ttu-id="92791-108">Det finns två sätt att ansöka om en Fapiao:</span><span class="sxs-lookup"><span data-stu-id="92791-108">There are two ways to apply for a Fapiao:</span></span>
+<span data-ttu-id="bb463-108">Det finns två sätt att ansöka om en Fapiao:</span><span class="sxs-lookup"><span data-stu-id="bb463-108">There are two ways to apply for a Fapiao:</span></span>
   
-1. <span data-ttu-id="92791-109">När du har gjort en betalning på webbplatsen Office 365 som drivs av 21Vianet får du en orderbekräftelse via e-post som innehåller ditt ordernummer och en länk till Fapiao-hanteringssystemet.</span><span class="sxs-lookup"><span data-stu-id="92791-109">After making a payment in the Office 365 operated by 21Vianet website, you'll receive an order confirmation email that contains your order number and a link to the Fapiao management system.</span></span> <span data-ttu-id="92791-110">Du kan använda länken i e-postmeddelandet för att skapa ett konto i <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianets informationshanteringssystem Fapiao.</a></span><span class="sxs-lookup"><span data-stu-id="92791-110">You can use the link in the email to create an account in the <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao information management system</a>.</span></span>
+1. <span data-ttu-id="bb463-109">När du har gjort en betalning på webbplatsen Office 365 som drivs av 21Vianet får du en orderbekräftelse via e-post som innehåller ditt ordernummer och en länk till Fapiao-hanteringssystemet.</span><span class="sxs-lookup"><span data-stu-id="bb463-109">After making a payment in the Office 365 operated by 21Vianet website, you'll receive an order confirmation email that contains your order number and a link to the Fapiao management system.</span></span> <span data-ttu-id="bb463-110">Du kan använda länken i e-postmeddelandet för att skapa ett konto i <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianets informationshanteringssystem Fapiao.</a></span><span class="sxs-lookup"><span data-stu-id="bb463-110">You can use the link in the email to create an account in the <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao information management system</a>.</span></span>
 
-    <span data-ttu-id="92791-111">Eller</span><span class="sxs-lookup"><span data-stu-id="92791-111">Or</span></span>
+    <span data-ttu-id="bb463-111">Eller</span><span class="sxs-lookup"><span data-stu-id="bb463-111">Or</span></span>
 
-2. <span data-ttu-id="92791-112">Du kan ansöka om en Fapiao från <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret.</a></span><span class="sxs-lookup"><span data-stu-id="92791-112">You can apply for a Fapiao from the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>.</span></span>
+2. <span data-ttu-id="bb463-112">Du kan ansöka om en Fapiao från <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret.</a></span><span class="sxs-lookup"><span data-stu-id="bb463-112">You can apply for a Fapiao from the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>.</span></span>
 
     ![Sidan Fakturor i Microsoft 365 administrationscentret.](../../media/a6e3b953-abd4-46aa-a910-08c517915a21.png)
   
-## <a name="step-2-register-with-the-21vianet-fapiao-management-system"></a><span data-ttu-id="92791-114">Steg 2: Registrera dig med 21Vianet Fapiao-hanteringssystemet</span><span class="sxs-lookup"><span data-stu-id="92791-114">Step 2: Register with the 21Vianet Fapiao management system</span></span>
+## <a name="step-2-register-with-the-21vianet-fapiao-management-system"></a><span data-ttu-id="bb463-114">Steg 2: Registrera dig med 21Vianet Fapiao-hanteringssystemet</span><span class="sxs-lookup"><span data-stu-id="bb463-114">Step 2: Register with the 21Vianet Fapiao management system</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="92791-115">Du kan använda samma e-postnamn och lösenord Office 365 konto, eller så kan du använda något annat.</span><span class="sxs-lookup"><span data-stu-id="92791-115">You can use the same email name and password as your Office 365 account, or you can use something different.</span></span>
+> <span data-ttu-id="bb463-115">Du kan använda samma e-postnamn och lösenord Office 365 konto, eller så kan du använda något annat.</span><span class="sxs-lookup"><span data-stu-id="bb463-115">You can use the same email name and password as your Office 365 account, or you can use something different.</span></span>
   
-1. <span data-ttu-id="92791-116">Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianets fapiaoinformationssystem</a>.</span><span class="sxs-lookup"><span data-stu-id="92791-116">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao information management system</a>.</span></span>
+1. <span data-ttu-id="bb463-116">Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianets fapiaoinformationssystem</a>.</span><span class="sxs-lookup"><span data-stu-id="bb463-116">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao information management system</a>.</span></span>
 
-2. <span data-ttu-id="92791-117">I registreringsformuläret anger du ditt ordernummer, din e-postadress och ditt lösenord och väljer **sedan Registrering.**</span><span class="sxs-lookup"><span data-stu-id="92791-117">In the registration form, enter your order number, email address, and password, then select **Registration**.</span></span>
+2. <span data-ttu-id="bb463-117">I registreringsformuläret anger du ditt ordernummer, din e-postadress och ditt lösenord och väljer **sedan Registrering.**</span><span class="sxs-lookup"><span data-stu-id="bb463-117">In the registration form, enter your order number, email address, and password, then select **Registration**.</span></span>
 
     ![Registreringssidan för 21Vianet Fapioa-hanteringssystem.](../../media/60d39184-95b2-4ea4-a8a2-3e11763bec87.png)
   
-3. <span data-ttu-id="92791-119">När registreringen är klar skickar systemet ett e-postmeddelande om aktivering till din e-postadress.</span><span class="sxs-lookup"><span data-stu-id="92791-119">After your registration is complete, the system will send an activation email message to your email address.</span></span> <span data-ttu-id="92791-120">Öppna e-postmeddelandet och klicka på länken för att aktivera ditt konto.</span><span class="sxs-lookup"><span data-stu-id="92791-120">Open the email message and select the link to activate your account.</span></span>
+3. <span data-ttu-id="bb463-119">När registreringen är klar skickar systemet ett e-postmeddelande om aktivering till din e-postadress.</span><span class="sxs-lookup"><span data-stu-id="bb463-119">After your registration is complete, the system will send an activation email message to your email address.</span></span> <span data-ttu-id="bb463-120">Öppna e-postmeddelandet och klicka på länken för att aktivera ditt konto.</span><span class="sxs-lookup"><span data-stu-id="bb463-120">Open the email message and select the link to activate your account.</span></span>
 
-## <a name="step-3-submit-your-bill-for-a-fapiao"></a><span data-ttu-id="92791-121">Steg 3: Skicka din faktura för en Fapiao</span><span class="sxs-lookup"><span data-stu-id="92791-121">Step 3: Submit your bill for a Fapiao</span></span>
+## <a name="step-3-submit-your-bill-for-a-fapiao"></a><span data-ttu-id="bb463-121">Steg 3: Skicka din faktura för en Fapiao</span><span class="sxs-lookup"><span data-stu-id="bb463-121">Step 3: Submit your bill for a Fapiao</span></span>
 
-1. <span data-ttu-id="92791-122">Logga in på <a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">Fapiao-hanteringssystemet</a>.</span><span class="sxs-lookup"><span data-stu-id="92791-122">Log in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">Fapiao management system</a>.</span></span>
+1. <span data-ttu-id="bb463-122">Logga in på <a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">Fapiao-hanteringssystemet</a>.</span><span class="sxs-lookup"><span data-stu-id="bb463-122">Log in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">Fapiao management system</a>.</span></span>
 
-2. <span data-ttu-id="92791-123">Välj faktureringsposten och välj sedan **Använd faktura**.</span><span class="sxs-lookup"><span data-stu-id="92791-123">Select the billing record, then select **Apply bill**.</span></span>
+2. <span data-ttu-id="bb463-123">Välj faktureringsposten och välj sedan **Använd faktura**.</span><span class="sxs-lookup"><span data-stu-id="bb463-123">Select the billing record, then select **Apply bill**.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="92791-124">Betalningssystemet finns på en tredjepartsplattform och det tar tre dagar att synkronisera order- och betalningsposten.</span><span class="sxs-lookup"><span data-stu-id="92791-124">The payment system is on a third-party platform and takes three days to synchronize the order and payment record.</span></span>
+    > <span data-ttu-id="bb463-124">Betalningssystemet finns på en tredjepartsplattform och det tar tre dagar att synkronisera order- och betalningsposten.</span><span class="sxs-lookup"><span data-stu-id="bb463-124">The payment system is on a third-party platform and takes three days to synchronize the order and payment record.</span></span>
   
     ![Sidan för hanteringssystemet Fapiao som visar de senaste beställningarna.](../../media/b319767d-1d10-4cb4-b270-c5fbcee1368e.png)
   
-3. <span data-ttu-id="92791-126">Välj Fapiao-typ, ange den information som krävs och välj sedan **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="92791-126">Select the Fapiao type, enter the required information, then select **Next**.</span></span>
+3. <span data-ttu-id="bb463-126">Välj Fapiao-typ, ange den information som krävs och välj sedan **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="bb463-126">Select the Fapiao type, enter the required information, then select **Next**.</span></span>
 
     ![Formuläret Fapiao-begäran där du väljer typen Fapiao.](../../media/56fe3db1-c20f-4082-a39d-02d7ac41fec8.png)
   
     > [!NOTE]
-    > - <span data-ttu-id="92791-128">För en vanlig moms fapiao behöver du bara ange köparens namn.</span><span class="sxs-lookup"><span data-stu-id="92791-128">For a normal VAT Fapiao, you only need to enter the buyer's name.</span></span>
-    > - <span data-ttu-id="92791-129">Om det behövs kan du ansöka om en Fapiao med en annan rubrik.</span><span class="sxs-lookup"><span data-stu-id="92791-129">If necessary, you can apply for a Fapiao with different a title.</span></span> <span data-ttu-id="92791-130">Du kan dock bara använda en Fapiao-rubrik för en faktura i systemet.</span><span class="sxs-lookup"><span data-stu-id="92791-130">However, you can only apply one Fapiao title for one bill in the system.</span></span> <span data-ttu-id="92791-131">Om du vill dela upp Fapiao i olika belopp eller titlar skickar du <a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">din begäran i administrationscentret.</a></span><span class="sxs-lookup"><span data-stu-id="92791-131">If you want to split the Fapiao into different amounts or titles, please <a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">submit your request in the admin center</a>.</span></span>
-    > - <span data-ttu-id="92791-132">Nästa gång du söker efter en Fapiao visas automatiskt den tidigare Fapiao-informationen.</span><span class="sxs-lookup"><span data-stu-id="92791-132">The next time you apply for a Fapiao, the system automatically presents the previous Fapiao information.</span></span>
-    > - <span data-ttu-id="92791-133">Om du behöver ett inköpscertifikat eller en återbetalning måste betalningsnamnet och Fapiao-titeln matcha.</span><span class="sxs-lookup"><span data-stu-id="92791-133">If you need a purchase certificate or a refund, the payer name and the Fapiao title must match.</span></span>
+    > - <span data-ttu-id="bb463-128">För en vanlig moms fapiao behöver du bara ange köparens namn.</span><span class="sxs-lookup"><span data-stu-id="bb463-128">For a normal VAT Fapiao, you only need to enter the buyer's name.</span></span>
+    > - <span data-ttu-id="bb463-129">Om det behövs kan du ansöka om en Fapiao med en annan rubrik.</span><span class="sxs-lookup"><span data-stu-id="bb463-129">If necessary, you can apply for a Fapiao with different a title.</span></span> <span data-ttu-id="bb463-130">Du kan dock bara använda en Fapiao-rubrik för en faktura i systemet.</span><span class="sxs-lookup"><span data-stu-id="bb463-130">However, you can only apply one Fapiao title for one bill in the system.</span></span> <span data-ttu-id="bb463-131">Om du vill dela upp Fapiao i olika belopp eller titlar skickar du <a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">din begäran i administrationscentret.</a></span><span class="sxs-lookup"><span data-stu-id="bb463-131">If you want to split the Fapiao into different amounts or titles, please <a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">submit your request in the admin center</a>.</span></span>
+    > - <span data-ttu-id="bb463-132">Nästa gång du söker efter en Fapiao visas automatiskt den tidigare Fapiao-informationen.</span><span class="sxs-lookup"><span data-stu-id="bb463-132">The next time you apply for a Fapiao, the system automatically presents the previous Fapiao information.</span></span>
+    > - <span data-ttu-id="bb463-133">Om du behöver ett inköpscertifikat eller en återbetalning måste betalningsnamnet och Fapiao-titeln matcha.</span><span class="sxs-lookup"><span data-stu-id="bb463-133">If you need a purchase certificate or a refund, the payer name and the Fapiao title must match.</span></span>
 
-4. <span data-ttu-id="92791-134">Välj en leveransmetod och ange e-postinformationen.</span><span class="sxs-lookup"><span data-stu-id="92791-134">Select a shipping method and enter the mailing information.</span></span> <span data-ttu-id="92791-135">Du kan välja Yunda eller SF (fraktinsamlat).</span><span class="sxs-lookup"><span data-stu-id="92791-135">You can choose Yunda or SF (freight collect).</span></span> <span data-ttu-id="92791-136">Du kan också gå till 21Vianets Branch För att hämta Fapiao.</span><span class="sxs-lookup"><span data-stu-id="92791-136">You can also go to the 21Vianet Shanghai branch to get the Fapiao.</span></span> <span data-ttu-id="92791-137">väljer **du Nästa**.</span><span class="sxs-lookup"><span data-stu-id="92791-137">select **Next**.</span></span>
+4. <span data-ttu-id="bb463-134">Välj en leveransmetod och ange e-postinformationen.</span><span class="sxs-lookup"><span data-stu-id="bb463-134">Select a shipping method and enter the mailing information.</span></span> <span data-ttu-id="bb463-135">Du kan välja Yunda eller SF (fraktinsamlat).</span><span class="sxs-lookup"><span data-stu-id="bb463-135">You can choose Yunda or SF (freight collect).</span></span> <span data-ttu-id="bb463-136">Du kan också gå till 21Vianets Branch För att hämta Fapiao.</span><span class="sxs-lookup"><span data-stu-id="bb463-136">You can also go to the 21Vianet Shanghai branch to get the Fapiao.</span></span> <span data-ttu-id="bb463-137">väljer **du Nästa**.</span><span class="sxs-lookup"><span data-stu-id="bb463-137">select **Next**.</span></span>
 
     ![Formuläret för Fapiao-begäran med information om utskick.](../../media/bba500b4-a51d-477b-81a7-9113b08d39f1.png)
   
-    <span data-ttu-id="92791-139">**21Vianet Branch Branch-företagsadress:**</span><span class="sxs-lookup"><span data-stu-id="92791-139">**21Vianet Shanghai branch company address:**</span></span>
+    <span data-ttu-id="bb463-139">**21Vianet Branch Branch-företagsadress:**</span><span class="sxs-lookup"><span data-stu-id="bb463-139">**21Vianet Shanghai branch company address:**</span></span>
 
-    <span data-ttu-id="92791-140">Pudong New Area Keyong Road No.</span><span class="sxs-lookup"><span data-stu-id="92791-140">Shanghai, Pudong New Area Keyuan Road No.</span></span> <span data-ttu-id="92791-141">88, German Center, byggnad 3, 657</span><span class="sxs-lookup"><span data-stu-id="92791-141">88, German Center, building 3, 657</span></span>
+    <span data-ttu-id="bb463-140">Pudong New Area Keyong Road No.</span><span class="sxs-lookup"><span data-stu-id="bb463-140">Shanghai, Pudong New Area Keyuan Road No.</span></span> <span data-ttu-id="bb463-141">88, German Center, byggnad 3, 657</span><span class="sxs-lookup"><span data-stu-id="bb463-141">88, German Center, building 3, 657</span></span>
 
-    <span data-ttu-id="92791-142">**Kontaktinformation:**</span><span class="sxs-lookup"><span data-stu-id="92791-142">**Contact information:**</span></span>
+    <span data-ttu-id="bb463-142">**Kontaktinformation:**</span><span class="sxs-lookup"><span data-stu-id="bb463-142">**Contact information:**</span></span>
 
-    <span data-ttu-id="92791-143">Zhu qin 021-28986102</span><span class="sxs-lookup"><span data-stu-id="92791-143">Zhu qin qin 021-28986102</span></span>
+    <span data-ttu-id="bb463-143">Zhu qin 021-28986102</span><span class="sxs-lookup"><span data-stu-id="bb463-143">Zhu qin qin 021-28986102</span></span>
 
-5. <span data-ttu-id="92791-144">Kontrollera att informationen är korrekt och välj sedan **Bekräfta**.</span><span class="sxs-lookup"><span data-stu-id="92791-144">Verify that the information is correct, then select **Confirm**.</span></span>
+5. <span data-ttu-id="bb463-144">Kontrollera att informationen är korrekt och välj sedan **Bekräfta**.</span><span class="sxs-lookup"><span data-stu-id="bb463-144">Verify that the information is correct, then select **Confirm**.</span></span>
 
     ![Bekräftelsesidan i formuläret för Fapiao-begäran.](../../media/18706d9d-defc-4285-8fd3-990448b44a18.png)
   
-## <a name="step-4-check-application-progress"></a><span data-ttu-id="92791-146">Steg 4: Kontrollera programförloppet</span><span class="sxs-lookup"><span data-stu-id="92791-146">Step 4: Check application progress</span></span>
+## <a name="step-4-check-application-progress"></a><span data-ttu-id="bb463-146">Steg 4: Kontrollera programförloppet</span><span class="sxs-lookup"><span data-stu-id="bb463-146">Step 4: Check application progress</span></span>
 
-<span data-ttu-id="92791-147">Programmet överförs automatiskt till 21Vianet Service Center och slutförs om två arbetsdagar.</span><span class="sxs-lookup"><span data-stu-id="92791-147">Your application is automatically transmitted to the 21Vianet Service Center, and will be completed in two working days.</span></span>
+<span data-ttu-id="bb463-147">Programmet överförs automatiskt till 21Vianet Service Center och slutförs om två arbetsdagar.</span><span class="sxs-lookup"><span data-stu-id="bb463-147">Your application is automatically transmitted to the 21Vianet Service Center, and will be completed in two working days.</span></span>
   
-<span data-ttu-id="92791-148">När du har skickat in programmet kan du när som helst kontrollera förloppet.</span><span class="sxs-lookup"><span data-stu-id="92791-148">After you submit the application, you can check the progress at any time.</span></span> <span data-ttu-id="92791-149">Vi kommer att uppdatera statusen för din ansökan med kommentarer som **Utfärdat eller** **E-postat.**</span><span class="sxs-lookup"><span data-stu-id="92791-149">We will update the status of your application with remarks like **Issued** or **Mailed out**.</span></span>
+<span data-ttu-id="bb463-148">När du har skickat in programmet kan du när som helst kontrollera förloppet.</span><span class="sxs-lookup"><span data-stu-id="bb463-148">After you submit the application, you can check the progress at any time.</span></span> <span data-ttu-id="bb463-149">Vi kommer att uppdatera statusen för din ansökan med kommentarer som **Utfärdat eller** **E-postat.**</span><span class="sxs-lookup"><span data-stu-id="bb463-149">We will update the status of your application with remarks like **Issued** or **Mailed out**.</span></span>
   
 ![Sidan 21Vianet Fapiao-hanteringssystem som visar begärans status.](../../media/6cd696ec-d630-4fce-9f27-935a0d5f0ebe.png)
   
-<span data-ttu-id="92791-151">När Fapiao inte längre används visar systemet ett meddelande och anger den förväntade tiden för att utfärda Fapiao.</span><span class="sxs-lookup"><span data-stu-id="92791-151">When Fapiao is out of use, the system will display a notice, and will indicate the expected time to issue the Fapiao.</span></span>
+<span data-ttu-id="bb463-151">När Fapiao inte längre används visar systemet ett meddelande och anger den förväntade tiden för att utfärda Fapiao.</span><span class="sxs-lookup"><span data-stu-id="bb463-151">When Fapiao is out of use, the system will display a notice, and will indicate the expected time to issue the Fapiao.</span></span>
   
 ![Felmeddelandet som visas när 21Vianets Fapiao-hanteringssystem inte används.](../../media/effe0796-83aa-4a91-a488-15d6f58c01dc.png)
   
-## <a name="faqs"></a><span data-ttu-id="92791-153">Vanliga frågor och svar</span><span class="sxs-lookup"><span data-stu-id="92791-153">FAQs</span></span>
+## <a name="faqs"></a><span data-ttu-id="bb463-153">Vanliga frågor och svar</span><span class="sxs-lookup"><span data-stu-id="bb463-153">FAQs</span></span>
 
-### <a name="what-services-can-i-get-from-online-support"></a><span data-ttu-id="92791-154">Vilka tjänster kan jag få från onlinesupporten?</span><span class="sxs-lookup"><span data-stu-id="92791-154">What services can I get from online support?</span></span>
+### <a name="what-services-can-i-get-from-online-support"></a><span data-ttu-id="bb463-154">Vilka tjänster kan jag få från onlinesupporten?</span><span class="sxs-lookup"><span data-stu-id="bb463-154">What services can I get from online support?</span></span>
 
-<span data-ttu-id="92791-155">Du kan kontrollera förloppet för Din Fapiao-begäran och ta reda på varför du inte har fått Fapiao.</span><span class="sxs-lookup"><span data-stu-id="92791-155">You can check the progress of your Fapiao request, and find out why you haven't received the Fapiao.</span></span>
+<span data-ttu-id="bb463-155">Du kan kontrollera förloppet för Din Fapiao-begäran och ta reda på varför du inte har fått Fapiao.</span><span class="sxs-lookup"><span data-stu-id="bb463-155">You can check the progress of your Fapiao request, and find out why you haven't received the Fapiao.</span></span>
   
-<span data-ttu-id="92791-156">Om du vill ändra Fapiao-titeln skickar du Fapiao tillbaka till oss så visas Fapiao igen.</span><span class="sxs-lookup"><span data-stu-id="92791-156">If you want to change the Fapiao title, please send the Fapiao back to us and we will reissue the Fapiao.</span></span> <span data-ttu-id="92791-157">Du kan skicka begäran via <a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">administrationscentret.</a></span><span class="sxs-lookup"><span data-stu-id="92791-157">You can submit the request through the <a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">admin center</a>.</span></span>
+<span data-ttu-id="bb463-156">Om du vill ändra Fapiao-titeln skickar du Fapiao tillbaka till oss så visas Fapiao igen.</span><span class="sxs-lookup"><span data-stu-id="bb463-156">If you want to change the Fapiao title, please send the Fapiao back to us and we will reissue the Fapiao.</span></span> <span data-ttu-id="bb463-157">Du kan skicka begäran via <a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">administrationscentret.</a></span><span class="sxs-lookup"><span data-stu-id="bb463-157">You can submit the request through the <a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">admin center</a>.</span></span>
   
 ![Supportformuläret i administrationscentret som används för att skicka tillbaka en Fapiao för att begära en rubrikändring.](../../media/2a413e9e-f30b-4f26-adbf-6287cc217a0f.png)
   
-### <a name="how-do-i-change-my-login-email-address-and-password"></a><span data-ttu-id="92791-159">Hur ändrar jag min e-postadress och mitt lösenord för inloggning?</span><span class="sxs-lookup"><span data-stu-id="92791-159">How do I change my login email address and password?</span></span>
+### <a name="how-do-i-change-my-login-email-address-and-password"></a><span data-ttu-id="bb463-159">Hur ändrar jag min e-postadress och mitt lösenord för inloggning?</span><span class="sxs-lookup"><span data-stu-id="bb463-159">How do I change my login email address and password?</span></span>
 
-1. <span data-ttu-id="92791-160">Logga in på <a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">Fapiao-hanteringssystemet</a>och välj sedan **Ändra e-postadress**.</span><span class="sxs-lookup"><span data-stu-id="92791-160">Log in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">Fapiao management system</a>, then select **Change email address**.</span></span>
+1. <span data-ttu-id="bb463-160">Logga in på <a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">Fapiao-hanteringssystemet</a>och välj sedan **Ändra e-postadress**.</span><span class="sxs-lookup"><span data-stu-id="bb463-160">Log in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">Fapiao management system</a>, then select **Change email address**.</span></span>
 
     ![Menyn när en användare har loggat in på 21Vianet Fapiao-hanteringssystemet.](../../media/ee6de24b-6be2-41e6-8aec-e0c3cb0ea35e.png)
   
-2. <span data-ttu-id="92791-162">Om du har glömt lösenordet kan du återställa lösenordet med e-postadressen som du loggade in på.</span><span class="sxs-lookup"><span data-stu-id="92791-162">If you forgot your login password, you can use your login email address to reset the password.</span></span> <span data-ttu-id="92791-163">Hanteringssystemet Fapiao skickar ett nytt lösenord till din e-postadress.</span><span class="sxs-lookup"><span data-stu-id="92791-163">The Fapiao management system will send a new password to your email address.</span></span> <span data-ttu-id="92791-164">Du kan använda det nya lösenordet för att logga in.</span><span class="sxs-lookup"><span data-stu-id="92791-164">You can use the new password to login.</span></span>
+2. <span data-ttu-id="bb463-162">Om du har glömt lösenordet kan du återställa lösenordet med e-postadressen som du loggade in på.</span><span class="sxs-lookup"><span data-stu-id="bb463-162">If you forgot your login password, you can use your login email address to reset the password.</span></span> <span data-ttu-id="bb463-163">Hanteringssystemet Fapiao skickar ett nytt lösenord till din e-postadress.</span><span class="sxs-lookup"><span data-stu-id="bb463-163">The Fapiao management system will send a new password to your email address.</span></span> <span data-ttu-id="bb463-164">Du kan använda det nya lösenordet för att logga in.</span><span class="sxs-lookup"><span data-stu-id="bb463-164">You can use the new password to login.</span></span>
 
     ![Sekventiella bilder som visar hur du återställer ditt lösenord i 21Vianet Fapiao-hanteringssystemet.](../../media/2edb0a47-1286-4792-804d-7e84534c8370.png)
   
-3. <span data-ttu-id="92791-166">Om du har glömt din inloggningsadress kontaktar du 21Vianets kundtjänst på (86) 400-089-0365.</span><span class="sxs-lookup"><span data-stu-id="92791-166">If you forgot your login email address, please contact 21Vianet customer service at (86) 400-089-0365.</span></span>
+3. <span data-ttu-id="bb463-166">Om du har glömt din inloggningsadress kontaktar du 21Vianets kundtjänst på (86) 400-089-0365.</span><span class="sxs-lookup"><span data-stu-id="bb463-166">If you forgot your login email address, please contact 21Vianet customer service at (86) 400-089-0365.</span></span>
 
-### <a name="how-do-i-find-my-order-id"></a><span data-ttu-id="92791-167">Hur hittar jag mitt order-ID?</span><span class="sxs-lookup"><span data-stu-id="92791-167">How do I find my order ID?</span></span>
+### <a name="how-do-i-find-my-order-id"></a><span data-ttu-id="bb463-167">Hur hittar jag mitt order-ID?</span><span class="sxs-lookup"><span data-stu-id="bb463-167">How do I find my order ID?</span></span>
 
-1. <span data-ttu-id="92791-168">I [administrationscentret går](https://go.microsoft.com/fwlink/p/?linkid=850627)du till sidan  \> **Faktureringsfakturor & betalningar.**</span><span class="sxs-lookup"><span data-stu-id="92791-168">In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), go to the **Billing** \> **Bills & payments** page.</span></span>
+1. <span data-ttu-id="bb463-168">I [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=850627) går du till sidan **Fakturering** \> **Fakturor och betalningar**.</span><span class="sxs-lookup"><span data-stu-id="bb463-168">In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), go to the **Billing** \> **Bills & payments** page.</span></span>
 
-2. <span data-ttu-id="92791-169">Leta reda på fakturan, välj att visa eller välj att ladda ned PDF-filen.</span><span class="sxs-lookup"><span data-stu-id="92791-169">Find the invoice you want, select to view, or choose to download the PDF.</span></span>
+2. <span data-ttu-id="bb463-169">Leta reda på fakturan, välj att visa eller välj att ladda ned PDF-filen.</span><span class="sxs-lookup"><span data-stu-id="bb463-169">Find the invoice you want, select to view, or choose to download the PDF.</span></span>
 
-### <a name="what-if-i-enter-the-wrong-email-address-when-i-register"></a><span data-ttu-id="92791-170">Vad händer om jag anger fel e-postadress när jag registrerar mig?</span><span class="sxs-lookup"><span data-stu-id="92791-170">What if I enter the wrong email address when I register?</span></span>
+### <a name="what-if-i-enter-the-wrong-email-address-when-i-register"></a><span data-ttu-id="bb463-170">Vad händer om jag anger fel e-postadress när jag registrerar mig?</span><span class="sxs-lookup"><span data-stu-id="bb463-170">What if I enter the wrong email address when I register?</span></span>
 
-<span data-ttu-id="92791-171">Om du anger fel e-postadress när du registrerar dig får du inte aktiveringsmeddelandet.</span><span class="sxs-lookup"><span data-stu-id="92791-171">If you enter the wrong email address when you register, you won't receive the activation email.</span></span> <span data-ttu-id="92791-172">Registreringslänken i e-postmeddelandet upphör automatiskt att gälla efter 24 timmar.</span><span class="sxs-lookup"><span data-stu-id="92791-172">The registration link in the email will automatically expire after 24 hours.</span></span> <span data-ttu-id="92791-173">Du kan gå tillbaka till <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">registreringssidan och</a> registrera dig igen med rätt e-postadress.</span><span class="sxs-lookup"><span data-stu-id="92791-173">You can return to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">registration page</a> and register again with the correct email address.</span></span>
+<span data-ttu-id="bb463-171">Om du anger fel e-postadress när du registrerar dig får du inte aktiveringsmeddelandet.</span><span class="sxs-lookup"><span data-stu-id="bb463-171">If you enter the wrong email address when you register, you won't receive the activation email.</span></span> <span data-ttu-id="bb463-172">Registreringslänken i e-postmeddelandet upphör automatiskt att gälla efter 24 timmar.</span><span class="sxs-lookup"><span data-stu-id="bb463-172">The registration link in the email will automatically expire after 24 hours.</span></span> <span data-ttu-id="bb463-173">Du kan gå tillbaka till <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">registreringssidan och</a> registrera dig igen med rätt e-postadress.</span><span class="sxs-lookup"><span data-stu-id="bb463-173">You can return to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">registration page</a> and register again with the correct email address.</span></span>
   
-### <a name="what-if-i-dont-receive-an-activation-email"></a><span data-ttu-id="92791-174">Vad händer om jag inte får något aktiveringsmeddelande via e-post?</span><span class="sxs-lookup"><span data-stu-id="92791-174">What if I don't receive an activation email?</span></span>
+### <a name="what-if-i-dont-receive-an-activation-email"></a><span data-ttu-id="bb463-174">Vad händer om jag inte får något aktiveringsmeddelande via e-post?</span><span class="sxs-lookup"><span data-stu-id="bb463-174">What if I don't receive an activation email?</span></span>
 
-<span data-ttu-id="92791-175">Om du inte fått ett e-postmeddelande om kontoaktivering inom 24 timmar efter att du har registrerat dig går du till <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao-informationshanteringssystemet</a>, anger din e-postadress och väljer Skicka aktiveringsmeddelandet **igen.**</span><span class="sxs-lookup"><span data-stu-id="92791-175">If you don't receive an account activation email within 24 hours after you register, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao information management system</a>, enter your email address, then select **Resend the activation email**.</span></span> <span data-ttu-id="92791-176">Systemet skickar om e-postmeddelandet för kontoaktivering till din registrerade e-postadress.</span><span class="sxs-lookup"><span data-stu-id="92791-176">The system will resend the account activation email to your registered email address.</span></span>
+<span data-ttu-id="bb463-175">Om du inte fått ett e-postmeddelande om kontoaktivering inom 24 timmar efter att du har registrerat dig går du till <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao-informationshanteringssystemet</a>, anger din e-postadress och väljer Skicka aktiveringsmeddelandet **igen.**</span><span class="sxs-lookup"><span data-stu-id="bb463-175">If you don't receive an account activation email within 24 hours after you register, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao information management system</a>, enter your email address, then select **Resend the activation email**.</span></span> <span data-ttu-id="bb463-176">Systemet skickar om e-postmeddelandet för kontoaktivering till din registrerade e-postadress.</span><span class="sxs-lookup"><span data-stu-id="bb463-176">The system will resend the account activation email to your registered email address.</span></span>
   
 ![Registreringssidan för 21Vianet Fapioa-hanteringssystem.](../../media/60d39184-95b2-4ea4-a8a2-3e11763bec87.png)
   
-<span data-ttu-id="92791-178">Om du fortfarande inte får något aktiveringsmeddelande kan du kontakta 21Vianets kundtjänst på (86) 400-089-0365.</span><span class="sxs-lookup"><span data-stu-id="92791-178">If you still don't receive an activation email, please contact 21Vianet customer service at (86) 400-089-0365.</span></span>
+<span data-ttu-id="bb463-178">Om du fortfarande inte får något aktiveringsmeddelande kan du kontakta 21Vianets kundtjänst på (86) 400-089-0365.</span><span class="sxs-lookup"><span data-stu-id="bb463-178">If you still don't receive an activation email, please contact 21Vianet customer service at (86) 400-089-0365.</span></span>
