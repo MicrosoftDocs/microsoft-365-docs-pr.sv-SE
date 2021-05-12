@@ -303,19 +303,19 @@
     - name: Vanliga frågor och svar
       items:
         - name: Vanliga frågor och svar om delegerad administration
-          href: delegated-administration-faq.md
+          href: delegated-administration-faq.yml
         - name: Allmänna vanliga frågor och svar om EOP
-          href: eop-general-faq.md
+          href: eop-general-faq.yml
         - name: 'Vanliga frågor och svar om köade, uppskjutna och studsade meddelanden i EOP'
-          href: eop-queued-deferred-and-bounced-messages-faq.md
+          href: eop-queued-deferred-and-bounced-messages-faq.yml
         - name: Vanliga frågor och svar om skydd mot skadlig kod
-          href: anti-malware-protection-faq-eop.md
+          href: anti-malware-protection-faq-eop.yml
         - name: Vanliga frågor och svar om skydd mot skräppost
-          href: anti-spam-protection-faq.md
+          href: anti-spam-protection-faq.yml
         - name: Vanliga frågor och svar om skydd mot förfalskning
-          href: anti-spoofing-protection-faq.md
+          href: anti-spoofing-protection-faq.yml
         - name: Vanliga frågor och svar om karantän
-          href: quarantine-faq.md
+          href: quarantine-faq.yml
     - name: Referens
       items:
         - name: 'Färdplan för säkerhet '

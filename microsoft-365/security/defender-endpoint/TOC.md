@@ -211,7 +211,7 @@
 #### [Översikt](next-gen-threat-and-vuln-mgt.md)
 #### [Komma igång]()
 ##### [Behörigheter och förutsättningar](tvm-prerequisites.md)
-##### [Operativsystem och plattformar som stöds](tvm-supported-os.md)
+##### [Operativsystemsplattformar och -funktioner som stöds](tvm-supported-os.md)
 ##### [Tilldela enhetsvärde](tvm-assign-device-value.md)
 #### [Utvärdera din säkerhetsstatus]()
 ##### [Instrumentpanelsinsikter](tvm-dashboard-insights.md)

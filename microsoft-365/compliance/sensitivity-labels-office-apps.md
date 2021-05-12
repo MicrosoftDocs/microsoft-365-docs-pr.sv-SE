@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Information för IT-administratörer om hur du hanterar känslighetsetiketter i Office-appar för dator, mobila enheter och webben.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2cc1cb494569e054825875a4d0dc67e5c56f8146
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: a9755542b608c8ed7d3cd93bebbd764fd56b9768
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326624"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332720"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Använda känslighetsetiketter i Office-appar
 
@@ -67,7 +67,7 @@ Siffrorna som visas är den lägsta Office-programversion som krävs för varje 
 |[Granska etikettrelaterad användaraktivitet](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | Lansering: 16.0.13628+ | Ja <sup>\*</sup>                                                        |
 |[Kräva att användare använder en etikett för sin e-post och dokument](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | Lansering: 16.45+         | Lansering: 2.47+ | Lansering: 16.0.13628+ | Lansering                                            
 |[Använda en känslighetsetikett för innehåll automatiskt](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Lansering: 16.44+ | Under granskning | Under granskning | [Ja – Välj till](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Stöd för samtidig redigering och spara automatiskt](sensitivity-labels-coauthoring.md) för etiketterade och krypterade dokument | Förhandsversion: [Aktuell kanal (förhandsversion)](https://office.com/insider) | Förhandsversion: [Beta-kanal](https://office.com/insider) | Under granskning | Under granskning | [Ja – Välj till](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Stöd för samtidig redigering och spara automatiskt](sensitivity-labels-coauthoring.md) för etiketterade och krypterade dokument | Förhandsversion: [Aktuell kanal (förhandsversion)](https://office.com/insider) | Förhandsversion: [Aktuell kanal (förhandsversion)](https://office.com/insider) | Under granskning | Under granskning | [Ja – Välj till](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
 **Fotnot:**
