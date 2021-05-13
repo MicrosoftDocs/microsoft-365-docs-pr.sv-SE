@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: Lär dig hur du hanterar kostnadsfria registreringsprenumerationer för självbetjäning för din organisation.
 ms.date: 03/17/2021
-ms.openlocfilehash: b469515a649399c71ef64ba2567dfa376f21e9a7
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 9c29d36ff28e312fa3782b60f89fa755d4df9bf3
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333224"
+ms.locfileid: "52345136"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Hantera prenumerationer på självbetjäning
 
@@ -58,4 +58,4 @@ Du använder cmdleten [**Set-MsolCompanySettings**](/powershell/module/msonline/
 
 ## <a name="i-have-a-self-service-sign-up-subscription-that-blocks-directory-deletion"></a>Jag har en prenumeration med självbetjäning som blockerar katalogborttagning
 
-Självbetjäning för registrering av produkter som enskilda användare kan registrera sig för skapar även en gästanvändare för autentisering i din Azure AD-katalog. För att undvika dataförlust blockerar dessa självbetjäningsprodukter katalogborttagningar tills de helt tas bort från katalogen. De kan bara tas bort av Azure AD-administratören. Mer information finns i Ta [bort en katalog i Azure Active Directory.](/azure/active-directory/users-groups-roles/directory-delete-howto)
+Självbetjäning för registrering av produkter som enskilda användare kan registrera sig för skapar även en gästanvändare för autentisering i din Azure AD-katalog. För att undvika dataförlust blockerar dessa självbetjäningsprodukter katalogborttagningar tills de helt tas bort från katalogen. De kan bara tas bort av Azure AD-administratören. Mer information finns i Ta [bort en katalog i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-delete-howto).

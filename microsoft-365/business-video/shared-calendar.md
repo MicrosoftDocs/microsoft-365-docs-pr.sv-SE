@@ -20,22 +20,22 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du skapar en delad kalender.
-ms.openlocfilehash: 684122bcbccd7e8a419cc98eb0d0028c6218141a
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 21b594d1d5f28cc38c907cb8e85085a296ef20b8
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903700"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464363"
 ---
 # <a name="create-a-shared-calendar"></a>Skapa en delad kalender
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWm?autoplay=false]
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
 Med en delad kalender kan du snabbt se när personer är tillgängliga för möten eller andra händelser.
 
-1. Välj kalenderikonen i Outlook.
+1. I Outlook väljer du kalenderikonen.
 1. På fliken **Start** väljer du Lägg **till kalender** och sedan **Från adressbok.**
 1. Lägg till användare i den delade kalendern genom att ange deras namn eller välja deras namn i listan och välj sedan **OK.**
 1. Nu kan du visa din kalender och kalendrar för de personer som du lagt till.
@@ -43,4 +43,8 @@ Med en delad kalender kan du snabbt se när personer är tillgängliga för möt
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Hantera kalender och kontakter i Outlook](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d) (artikel) E-postsamarbete (artikel) Översikt över administrationscentret för Microsoft [365](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) (artikel) [](https://docs.microsoft.com/microsoft-365/admin/email/email-collaboration)
+[Hantera kalender och kontakter i Outlook](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d) (artikel)
+
+[E-postsamarbete](../admin/email/email-collaboration.md) (artikel)
+
+[Översikt över Microsoft 365 administrationscenter](admin-center-overview.md) (artikel)

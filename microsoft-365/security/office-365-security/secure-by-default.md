@@ -1,5 +1,5 @@
 ---
-title: Skydda som standard i Office 365
+title: Säker som standard i Office 365
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-description: Läs mer om inställningen för säkerhet som standard i Exchange Online Protection (EOP)
+description: Läs mer om inställningen säker som standard i Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f1b495a9c985077dfc88d1da7a221bb60ca10df9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 957ca3b563d4f1466dd537c3ae974a4fd61aa6f2
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207136"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346322"
 ---
-# <a name="secure-by-default-in-office-365"></a>Skydda som standard i Office 365
+# <a name="secure-by-default-in-office-365"></a>Säker som standard i Office 365
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -42,17 +42,17 @@ Säkerheten måste dock balanseras med produktiviteten. Det kan till exempel var
 - **Risk:** Säkerheten kan blockera viktiga aktiviteter.
 - **Äldre inställningar:** Vissa konfigurationer för äldre produkter och funktioner kan behöva underhållas av företagsskäl, även om nya, moderna inställningar har förbättrats.
 
-Microsoft 365-organisationer med postlådor i Exchange Online skyddas av Exchange Online Protection (EOP). Det här skyddet omfattar:
+Microsoft 365 organisationer med postlådor i Exchange Online skyddas av Exchange Online Protection (EOP). Det här skyddet omfattar:
 
 - E-post med misstänkt skadlig programvara sätts automatiskt i karantän och mottagare meddelas. Se [Konfigurera principer för skydd mot skadlig programvara i EOP.](configure-anti-malware-policies.md)
 - E-post som identifieras som nätfiske hanteras i enlighet med policyåtgärden mot skräppost. Se [Konfigurera principer för skydd mot skräppost i EOP.](configure-your-spam-filter-policies.md)
 
-Mer information om EOP finns i Översikt [över Exchange Online Protection.](exchange-online-protection-overview.md)
+Mer information om EOP finns i Exchange Online Protection [översikt.](exchange-online-protection-overview.md)
 
 Eftersom Microsoft vill att våra kunder ska vara säkra som standard används inte vissa klientorganisations åsidosättningar för skadlig programvara eller nätfiske med hög säkerhet. Dessa åsidosättningar omfattar:
 
 - Listor över tillåtna avsändare eller tillåtna domäner (principer som skydda mot skräppost)
-- Betrodda avsändare i Outlook
+- Outlook Valv avsändare
 - Lista över tillåtna IP-adresser (anslutningsfiltrering)
 
 Mer information om dessa åsidosättningar finns i Skapa [listor över betrodda avsändare.](create-safe-sender-lists-in-office-365.md)
@@ -68,17 +68,20 @@ Andan med att vara säker som standard är: vi vidtar samma åtgärd för meddel
 
 Våra data anger att en användare är 30 gånger mer trolig att klicka på en skadlig länk i meddelanden i mappen Skräppost kontra Karantän. Våra data anger också att den falska positiva hastigheten (bra meddelanden som markerats som dåliga) för nätfiskemeddelanden är mycket låg och administratörer kan lösa alla falska positiva resultat med administratörsinskick.
 
-Vi bestämde också att listorna med tillåtna avsändare och tillåtna domäner i principerna för skräppostskydd och Betrodda avsändare i Outlook var för breda och orsakar mer skada än nytta.
+Vi har också fastställt att listorna med tillåtna avsändare och tillåtna domäner i principer för skräppostskydd och Valv-avsändare i Outlook var för breda och orsakar mer skada än nytta.
 
-Till att uttrycka det på ett annat sätt: som en säkerhetstjänst arbetar vi åt dig för att förhindra att dina användare komprometteras. 
+Till att uttrycka det på ett annat sätt: som en säkerhetstjänst arbetar vi åt dig för att förhindra att dina användare komprometteras.
 
 ## <a name="exceptions"></a>Undantag
 
-Den enda åsidosättningen som tillåter nätfiskemeddelande med hög säkerhet att kringgå filtrering är Exchange-e-postflödesregler (kallas även transportregler). Information om hur du använder e-postflödesregler för att kringgå filtrering finns i [Använda e-postflödesregler för att ange SCL i meddelanden.](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
+> [!NOTE]
+> I juli 2021 utökas säkerhet som standard till att Exchange till e-postflödesregler (kallas även transportregler). Om du använder e-postflödesregler för att tillåta nätfiskebedrägerier eller ofiltrerad leverans till postlådor för [](configure-advanced-delivery.md) säkerhetsåtgärd måste du så småningom eliminera dessa regler och byta till att använda den avancerade leveransprincipen när funktionen är tillgänglig för _dig._
+
+Den enda åsidosättningen som tillåter nätfiskemeddelande med hög säkerhet att kringgå filtrering är e-postflödesregler. Information om hur du använder e-postflödesregler för att kringgå filtrering finns i [Använda e-postflödesregler för att ange SCL i meddelanden.](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 
 Du bör endast använda åsidosättningar i följande fall:
 
 - Nätfiskebedrägerier: Simulerade attacker kan hjälpa dig att identifiera sårbara användare innan en verklig attack påverkar din organisation.
-- Säkerhet/SecOps-postlådor: Dedikerade postlådor som används av säkerhetsteam för att få ofiltrerade meddelanden (både bra och dåliga). Teams kan sedan granska dem för att se om de innehåller skadligt innehåll.
+- Säkerhet/SecOps-postlådor: Dedikerade postlådor som används av säkerhetsteam för att få ofiltrerade meddelanden (både bra och dåliga). Teams kan sedan granska för att se om de innehåller skadligt innehåll.
 - Filter från tredje part: Säker som standard gäller inte när domänens MX-post inte pekar på Office 365.
 - Falska positiva resultat: Du kanske tillfälligt vill tillåta vissa meddelanden som fortfarande analyseras av Microsoft [via administratörsinskick.](admin-submission.md) Som med alla åsidosättningar rekommenderar vi att de är tillfälliga.

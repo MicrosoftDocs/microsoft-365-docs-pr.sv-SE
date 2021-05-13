@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Avgör om klientorganisationen och användarna uppfyller kraven, så att du kan använda centraliserad distribution för Office tillägg.
-ms.openlocfilehash: 8f73deb1059097640946fcf7dad1ca97cb2831b1
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 482f2231c0c2c9fa30e863f25f474d90a22f52fa
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296725"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464411"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Avgöra om centraliserad distribution av tillägg fungerar för din organisation
 
@@ -155,5 +155,16 @@ Om du eller dina användare stöter på problem med att läsa in tillägget när
   
 |**Plattform**|**Felsökningsinformation**|
 |:-----|:-----|
-|Office  <br/> | Charles-/Fiddler-loggar  <br/>  Klientorganisationens id ( [så här gör du](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Visa källan för en av Office-sidorna, leta efter värdet för Korrelations-ID och skicka det till supporten:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Office  <br/> | Charles-/Fiddler-loggar  <br/>  Klientorganisationens id ( [så här gör du](/onedrive/find-your-office-365-tenant-id.md))  <br/>  CorrelationID. Visa källan för en av Office-sidorna, leta efter värdet för Korrelations-ID och skicka det till supporten:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |RTF-klienter (Windows, Mac)  <br/> | Charles-/Fiddler-loggar  <br/>  Versionsnummer för klientappen (helst som en skärmbild från **Arkiv/Konto**)  <br/> |
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Distribuera tillägg i administrationscentret](../manage/manage-deployment-of-add-ins.md) (artikel)
+
+[Hantera tillägg i administrationscentret](manage-addins-in-the-admin-center.md) (artikel)
+
+[Vanliga frågor och svar om centraliserad distribution](../manage/centralized-deployment-faq.md) (artikel)
+
+[Uppgradera dina Microsoft 365 för företag-användare till den senaste Office klient](../setup/upgrade-users-to-latest-office-client.md) (artikel)
+ 

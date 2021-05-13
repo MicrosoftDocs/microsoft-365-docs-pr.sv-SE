@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 56ab6c6c11bd2c0786c0d797e5302a1f06f9bd53
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 3ca8f5234f90624c8570cbfb10e75bd0ee9380ae
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327264"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345842"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Använd minskningsregler för attackytan för att förhindra skadlig smitta
 
@@ -156,31 +156,31 @@ Du kan skapa en anpassad vy som filtrerar händelser för att endast visa följa
 
 I följande tabell och underavsnitt beskrivs var och en av de 15 minskningsregler för attackytor. Minskningsregler för attackytor listas i alfabetisk ordning, efter regelnamn.
 
-Om du konfigurerar regler för att minska attackytan med grupprinciper eller PowerShell måste du ha GUID:er. Å andra sidan behöver du inte GUID:er om du använder Microsoft Endpoint Manager eller Microsoft Intune.
+Om du konfigurerar regler för att minska attackytan med grupprinciper eller PowerShell måste du ha GUID:er. Å andra sidan, om du använder Microsoft Endpoint Manager eller Microsoft Intune behöver du inte GUID:er.
 
 |Regelnamn|GUID|Undantag & mappar|Lägsta operativsystem som stöds|
 |---|:---:|---|---|
 |[Blockera missbruk av utnyttjas sårbara signerade drivrutiner](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Stöds|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)|
-|[Blockera Adobe Reader från att skapa underordnade processer](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Stöds|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera alla Office-program från att skapa underordnade processer](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Stöds|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera att autentiseringsuppgifter stjäls från Windows lokala säkerhetsutfärdares undersystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Stöds|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera körbart innehåll från e-postklient och webbaserad e-post](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|Stöds|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera körbara filer från att köras såvida de inte uppfyller ett villkor för en vän, ålder eller en betrodd lista](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|Stöds|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera körning av potentiellt oönskade skript](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|Stöds|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera JavaScript eller VBScript från att starta hämtat körbart innehåll](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|Stöds|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera Office-program från att skapa körbart innehåll](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|Stöds|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera Office-program från att mata in kod i andra processer](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|Stöds|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera Office-kommunikationsprogram från att skapa underordnade processer](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|Stöds|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera beständighet via WMI-händelseprenumeration](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|Stöds inte|[Windows 10, version 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) (version 18362) eller senare|
-|[Blockera processskapanden som kommer från PSExec- och WMI-kommandon](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|Stöds|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera icke betrodda och osignerade processer som körs från USB](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|Stöds|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera Win32 API-anrop från Office-makron](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|Stöds|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Använd avancerat skydd mot utpressningstrojaner](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|Stöds|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera Adobe Reader från att skapa underordnade processer](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera alla Office från att skapa underordnade processer](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera att autentiseringsuppgifter stjäls från Windows lokala säkerhetsutfärdares undersystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera körbart innehåll från e-postklient och webbaserad e-post](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera körbara filer från att köras såvida de inte uppfyller ett villkor för en vän, ålder eller en betrodd lista](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera körning av potentiellt oönskade skript](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera JavaScript eller VBScript från att starta hämtat körbart innehåll](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera Office program från att skapa körbart innehåll](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera Office-program från att mata in kod i andra processer](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera Office kommunikationsprogram från att skapa underordnade processer](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera beständighet via WMI-händelseprenumeration](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|Stöds inte|[Windows 10 version 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) (version 18362) eller senare|
+|[Blockera processskapanden som kommer från PSExec- och WMI-kommandon](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera icke betrodda och osignerade processer som körs från USB](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera Win32 API-anrop från Office makron](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Använd avancerat skydd mot utpressningstrojaner](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
 |
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>Blockera missbruk av utnyttjas sårbara signerade drivrutiner
 
-Den här regeln förhindrar att ett program skriver en sårbar signerad drivrutin till disken. In-the-wild, vulnerable signed drivers can be exploited by local applications \- _that have sufficient privileges_ \- to gain access to the kernel. Sårbar signerade drivrutiner gör att attacker kan inaktivera eller kringgå säkerhetslösningar, vilket till slut leder till systemkompromettering.
+Den här regeln förhindrar ett program från att skriva en sårbar, signerad drivrutin till hårddisken. In-the-wild, vulnerable signed drivers can be exploited by local applications \- _that have sufficient privileges_ \- to gain access to the kernel. Sårbar signerade drivrutiner gör att attacker kan inaktivera eller kringgå säkerhetslösningar, vilket till slut leder till systemkompromettering.
 
 Den här regeln blockerar inte en drivrutin som redan finns på systemet från att läsas in.
 
@@ -195,7 +195,7 @@ Intune-namn: `Block abuse of exploited vulnerable signed drivers`
 
 GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
-Se [Den anpassade proceduren för Microsoft Endpoint Manager för](enable-attack-surface-reduction.md#microsoft-endpoint-manager-custom-procedure) anpassad procedurinformation för MEM-regler.
+Se [Microsoft Endpoint Manager procedur för information om](enable-attack-surface-reduction.md#microsoft-endpoint-manager-custom-procedure) anpassade regler i MEM.
 
 Du kan köra det här kommandot på kommandoraden för att aktivera ASR-regeln:
 
@@ -223,11 +223,11 @@ Konfigurationshanterarens namn: Ännu inte tillgängligt
 
 GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
-### <a name="block-all-office-applications-from-creating-child-processes"></a>Blockera alla Office-program från att skapa underordnade processer
+### <a name="block-all-office-applications-from-creating-child-processes"></a>Blockera alla Office från att skapa underordnade processer
 
-Den här regeln blockerar Office-appar från att skapa underordnade processer. Office-apparna innehåller Word, Excel, PowerPoint, OneNote och Access.
+Den här regeln blockerar Office appar från att skapa underordnade processer. Office till exempel Word, Excel, PowerPoint, OneNote och Access.
 
-Att skapa skadliga underordnade processer är en vanlig strategi för skadlig programvara. Skadlig programvara som utnyttjar Office som en vektor ofta kör VBA-makron och utnyttjar kod för att ladda ned och försöka köra fler nyttolaster. Men vissa legitima affärsprogram kan också generera underordnade processer i syfte att använda kommersiellt syfte, till exempel att ta bort en kommandotolk eller använda PowerShell för att konfigurera registerinställningar.
+Att skapa skadliga underordnade processer är en vanlig strategi för skadlig programvara. Skadlig programvara som Office som en vektor ofta kör VBA-makron och utnyttjar kod för att ladda ned och försöka köra fler nyttolaster. Men vissa legitima affärsprogram kan också generera underordnade processer i syfte att använda kommersiellt syfte, till exempel att ta bort en kommandotolk eller använda PowerShell för att konfigurera registerinställningar.
 
 Den här regeln infördes i:
 
@@ -246,7 +246,7 @@ GUID: `D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
 
 Den här regeln förhindrar att autentiseringsuppgifter stjäls genom att låsning av undersystemet i Lokal säkerhetsutfärdare (LSASS).
 
-LSASS autentiserar användare som loggar in på en Windows-dator. Microsoft Defender Credential Guard i Windows 10 förhindrar normalt försök att extrahera autentiseringsuppgifter från LSASS. Men vissa organisationer kan inte aktivera Credential Guard på alla sina datorer på grund av kompatibilitetsproblem med anpassade smartkortsdrivrutiner eller andra program som läses in på den lokala säkerhetsutfärdaren (LSA). I sådana fall kan attackerare använda hacka-verktyg som Mimikatz för att få fram lösenord med klartext och NTLM-hash från LSASS.
+LSASS autentiserar användare som loggar in på en Windows dator. Microsoft Defender Credential Guard i Windows 10 normalt förhindrar försök att extrahera autentiseringsuppgifter från LSASS. Men vissa organisationer kan inte aktivera Credential Guard på alla sina datorer på grund av kompatibilitetsproblem med anpassade smartkortsdrivrutiner eller andra program som läses in på den lokala säkerhetsutfärdaren (LSA). I sådana fall kan attackerare använda hacka-verktyg som Mimikatz för att få fram lösenord med klartext och NTLM-hash från LSASS.
 
 > [!NOTE]
 > I vissa appar uppräkningar koden alla körprocesser och försöker öppna dem med uttömmande behörighet. Den här regeln nekar programåtgärden öppna och loggar information i säkerhetshändelseloggen. Den här regeln kan generera mycket brus. Om du har en app som bara räknar upp LSASS, men som inte har någon verklig påverkan på funktioner, behöver du INTE lägga till den i undantagslistan. Det är inte säkert att den här händelseloggposten indikerar något skadligt hot.
@@ -266,21 +266,21 @@ GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
 ### <a name="block-executable-content-from-email-client-and-webmail"></a>Blockera körbart innehåll från e-postklient och webbaserad e-post
 
-Den här regeln blockerar följande filtyper från att startas från e-post som öppnas i Microsoft Outlook-programmet eller Outlook.com och andra populära webbaserade e-postleverantörer:
+Den här regeln blockerar följande filtyper från att startas från e-post som öppnas i Microsoft Outlook-programmet eller Outlook.com och andra populära e-postleverantörer:
 
 - Körbara filer (till exempel .exe, .dll eller .scr)
-- Skriptfiler (till exempel en PowerShell.ps-, Visual Basic .vbs- eller JavaScript-.js fil)
+- Skriptfiler (till exempel en PowerShell.ps-, Visual Basic VBS- eller JavaScript-.js fil)
 
 Den här regeln infördes i:
 
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [CB 1710 för Microsoft Endpoint Manager](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Microsoft Endpoint Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
 Intune-namn: `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
-Microsoft Endpoint Manager-namn: `Block executable content from email client and webmail`
+Microsoft Endpoint Manager namn:`Block executable content from email client and webmail`
 
 GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
@@ -288,7 +288,7 @@ GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 > Regeln Blockera **körbart innehåll från e-postklient och webbaserad** e-post har följande alternativa beskrivningar, beroende på vilket program du använder:
 >
 > - Intune (konfigurationsprofiler): Körning av körbart innehåll (exe, dll, ps, js, vbs osv.) har släppts från e-post (webmail/mail client) (inga undantag).
-> - Slutpunktshanteraren: Blockera hämtning av körbart innehåll från e-post- och webbaserade e-postklienter.
+> - Endpoint Manager: Blockera hämtning av körbart innehåll från e-post- och webbaserade e-postklienter.
 > - Grupprincip: Blockera körbart innehåll från e-postklient och webbaserad e-post.
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>Blockera körbara filer från att köras såvida de inte uppfyller ett villkor för en vän, ålder eller en betrodd lista
@@ -357,18 +357,18 @@ Konfigurationshanterarens namn: `Block JavaScript or VBScript from launching dow
 
 GUID: `D3E037E1-3EB8-44C8-A917-57927947596D`
 
-### <a name="block-office-applications-from-creating-executable-content"></a>Blockera Office-program från att skapa körbart innehåll
+### <a name="block-office-applications-from-creating-executable-content"></a>Blockera Office program från att skapa körbart innehåll
 
-Den här regeln förhindrar att Office-program, till exempel Word, Excel och PowerPoint, skapar potentiellt skadligt körbart innehåll genom att blockera skadlig kod från att skrivas till hårddisken.
+Den här regeln förhindrar Office-program, till exempel Word, Excel och PowerPoint, från att skapa potentiellt skadligt körbart innehåll genom att blockera skadlig kod från att skrivas till hårddisken.
 
-Skadlig programvara som missbrukar Office som en vektor kan försöka bryta ut ur Office och spara skadliga komponenter på disken. De här skadliga komponenterna skulle överleva en dator omstart och skulle finnas kvar på systemet. Därför försvaras den här regeln mot en vanlig beständig teknik.
+Skadlig programvara som Office som en vektor kan försöka bryta ut från Office och spara skadliga komponenter på disken. De här skadliga komponenterna skulle överleva en dator omstart och skulle finnas kvar på systemet. Därför försvaras den här regeln mot en vanlig beständig teknik.
 
 Den här regeln infördes i:
 
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [CB](https://docs.microsoft.com/configmgr/core/servers/manage/updates) 1710 (SCCM är nu Microsoft Endpoint Configuration Manager)
+- [System Center Configuration Manager](https://docs.microsoft.com/configmgr/core/servers/manage/updates) (SCCM) CB 1710 (SCCM) är nu Microsoft Endpoint Configuration Manager)
 
 Intune-namn: `Office apps/macros creating executable content`
 
@@ -378,7 +378,7 @@ GUID: `3B576869-A4EC-4529-8536-B80A7769E899`
 
 ### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>Blockera Office-program från att mata in kod i andra processer
 
-Den här regeln blockerar kodinjiceringsförsök från Office-appar i andra processer.
+Den här regeln blockerar kodinjiceringsförsök Office i andra processer.
 
 Attacker kan försöka använda Office-appar för att migrera skadlig kod till andra processer genom kodinjicering, så att koden kan masquerade som en ren process.
 
@@ -399,14 +399,14 @@ Konfigurationshanterarens namn: `Block Office applications from injecting code i
 
 GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
-### <a name="block-office-communication-application-from-creating-child-processes"></a>Blockera Office-kommunikationsprogram från att skapa underordnade processer
+### <a name="block-office-communication-application-from-creating-child-processes"></a>Blockera Office kommunikationsprogram från att skapa underordnade processer
 
-Den här regeln förhindrar att Outlook skapar underordnade processer, samtidigt som legitima Outlook-funktioner tillåts.
+Den här regeln förhindrar Outlook att skapa underordnade processer, samtidigt som legitima Outlook tillåts.
 
-Den här regeln skyddar mot social engineering-angrepp och förhindrar att sårbarheter i kod från säkerhetsproblem i Outlook utnyttjas. Det skyddar även mot [Outlook-regler och formulär sårbarheter](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) som attacker kan använda när en användares autentiseringsuppgifter har komprometterats.
+Den här regeln skyddar mot social engineering-angrepp och förhindrar att kod utnyttjas på fel i Outlook. Det skyddar även mot Outlook regler och formulär sårbarheter som attacker kan använda när en [användares](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) autentiseringsuppgifter har komprometterats.
 
 > [!NOTE]
-> Den här regeln gäller endast Outlook.com Outlook.
+> Denna regel gäller endast Outlook och Outlook.com.
 
 Den här regeln infördes i:
 

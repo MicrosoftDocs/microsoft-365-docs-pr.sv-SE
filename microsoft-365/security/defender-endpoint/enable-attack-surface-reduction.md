@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: fc04db0c9fe8ee6d09efc9802ab4a747af0b3e9c
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: fc952ceec7d26d853e39cab0a803daace62a4767
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326703"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345900"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Aktivera regler för minskning av attackytan
 
@@ -184,7 +184,7 @@ Du kan använda ett Microsoft Endpoint Manager (MEM) för att konfigurera anpass
 
    ![MeM-regelprofilattribut](images/mem02-profile-attributes.png)
 
-3. Verktyget Anpassad mall öppnas och visar grunderna **i steg 1.** I **1 Basics**, i **Name** skriver du ett namn på mallen och i **Beskrivning kan** du skriva en valfri beskrivning.
+3. Verktyget Anpassad mall öppnas och visar grunderna **i steg 1.** I **1 Basics**, i **Name** skriver du ett namn på mallen och i **Beskrivning** kan du skriva en beskrivning (valfritt ).
 
    ![Grundläggande MEM-attribut](images/mem03-1-basics.png)
 
@@ -223,7 +223,7 @@ Du kan använda ett Microsoft Endpoint Manager (MEM) för att konfigurera anpass
    - I **Egenskap** väljer du den egenskap som du vill att regeln ska gälla för
    - I **Värde** anger du tillämplig värde eller värdeintervall
 
-   ![Tillämplighetsregler för MEM](images/mem07-5-applicability -rules.png)
+   ![Tillämplighetsregler för MEM](images/mem07-5-applicability-rules.png)
 
 10. Klicka på **Nästa**. I steg **6 Granska + skapa** granskar du de inställningar och den information du har valt och angett och klickar sedan på **Skapa**.
 
@@ -260,6 +260,12 @@ Du kan använda ett Microsoft Endpoint Manager (MEM) för att konfigurera anpass
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Warn
     ```
+
+    Använd följande cmdlet för att aktivera ASR Blockera missbruk av utnyttjas sårbara signerade drivrutiner:
+
+   ```PowerShell
+   "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
+   ```
 
     Om du vill inaktivera ASR-regler använder du följande cmdlet:
 

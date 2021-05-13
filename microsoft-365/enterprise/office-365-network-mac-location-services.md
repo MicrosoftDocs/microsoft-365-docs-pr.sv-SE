@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 nätverks anslutningar (för hands version)
+title: Microsoft 365 Nätverksplatstjänster
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,38 +13,38 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Microsoft 365 nätverks anslutningar (för hands version)
-ms.openlocfilehash: f2ab872f67eca70ab2791d3ad6fe1396b009cc18
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Microsoft 365 Nätverksplatstjänster
+ms.openlocfilehash: ed78d7ba48cd9666ce1aae1af5478e3b7536e1e1
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200787"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470454"
 ---
-# <a name="microsoft-365-network-connectivity-location-services-preview"></a>Microsoft 365 nätverks anslutningar (för hands version)
+# <a name="microsoft-365-network-connectivity-location-services"></a>Microsoft 365 Nätverksplatstjänster
 
-Administrations centret för Microsoft 365 visar nu **nätverks insikter och prestanda rekommendationer**, som är real tids värden som samlas in från din Microsoft 365-klient organisation och som endast kan visas av administrativa användare i din klient organisation. Organisatoriska nätverks anslutningar är utformat per Office-plats via ett nätverks utgångs läge till Internet. Microsoft 365-klienten använder den vägen och sedan via Internet till Microsofts tjänst front dörr Server. Att identifiera Office-platsen är viktig för att kunna visa dessa nätverks insikter.
+I Microsoft 365 Administrationscenter visas nu Nätverksinsikter och prestandarekommendationer, som är prestandamätvärden i realtid som samlas in från Microsoft 365 klientorganisation. De här måtten kan endast visas av administrativa användare i klientorganisationen. Organisationsnätverksanslutningen är utformad per kontorsplats genom en utgående nätverksplats till Internet. Microsoft 365 en klientanslutning använder den vägen och sedan via Internet till Microsofts serviceservrar. Att identifiera kontor är avgörande för att kunna visa dessa nätverksinsikter.
 
-## <a name="location-in-network-measurements"></a>Plats i nätverks mått
+## <a name="location-in-network-measurements"></a>Plats i nätverksmått
 
-En organisations administratör kan välja plats att ingå i nätverks måtten som används av den här funktionen. Detta aktiverar automatisk identifiering av staden där varje kontor finns. Plats informationen är inte exakt och är Obfuscated till 300 m och kategoriseras efter ort. När platsen sparas på en Windows-enhet kommer den att visa en ikon för **användning i** verktyget och administratören kanske vill meddela användarna om det. Med den här behandlingen behandlas platsen som organisationens Office-plats och inte till platsen för en person eller enhet. Nätverks insikter kan visas på dessa upptäckta Office-städer. Om du vill ha större rekommendationer kan administratören ange specifika Office-adresser och nätverks insikter aggregeras till dem i stället. Office-platserna kan inte aggregeras mer nära 300 meter.
+Organisationens administratör kan registrera sig för att inkludera plats i nätverksmåtten som används av den här funktionen. På så sätt kan du automatiskt identifiera den stad där varje kontor ligger. Platsinformationen är inte exakt och är obfuscated till 300m och kategoriseras efter ort. Vid den tidpunkt då platsen fångas på en Windows enhet  visas ikonen Plats i användning i verktygsfältet. Administratörer kan vilja meddela användarna om ikonens utseende. Med denna bearbetning behandlas platsen som organisationens kontorsplats och inte som plats för en person eller en enhet. Nätverksinsikter kan visas i dessa identifierade städer på kontor. Om du vill ha högre precision i rekommendationerna kan du ange specifika kontorsadresser. I stället aggregeras nätverksinsikter till de platserna. Office kan inte aggregeras närmare än 300 meter.
 
-## <a name="location-in-the-microsoft-365-admin-center"></a>Plats i administrations centret för Microsoft 365
+## <a name="location-in-the-microsoft-365-admin-center"></a>Plats i Microsoft 365 Administrationscenter
 
-I Microsoft 365 Admin Center används kart kart kontroller för att visa var organisationens Office-platser finns och för att Visa nätverkstopologi för en vald Office-plats. När en administratör lägger till specifik adress information för Office-platser används Bing Maps också för att föreslå adresser för att under lätta data inmatningen.
+I Microsoft 365 administrationscentret används Bing för att visa var organisationens kontor finns. Kontrollerna visar även nätverks perimetertopologi för en vald kontorsplats. När en administratör lägger till specifik adressinformation för kontorsplatser används Bing-kartor för att föreslå adresser för att göra det lättare att lägga till data.
 
-## <a name="terms-of-use"></a>Användnings villkor
+## <a name="terms-of-use"></a>Användningsvillkor
 
-Allt innehåll som tillhandahålls via Bing Maps, inklusive koder, kan endast användas inom den produkt som innehåller innehållet. Användning av plats tjänster för administrations Center för Microsoft 365, som drivs av Bing Maps, regleras av _slut användar användnings villkoren för Bing Maps_ <https://go.microsoft.com/?linkid=9710837> och _Microsofts sekretess policy_ finns på <https://go.microsoft.com/fwlink/?LinkID=248686.>
+Allt innehåll som Bing-kartor via e-post, inklusive geokoder, kan endast användas i den produkt som innehållet tillhandahålls från. Kundens användning av platstjänster i Microsoft 365 Admin Center, som drivs av Bing-kartor, styrs av de användningsvillkor _för Bing-kartor End-User_ som finns tillgängliga på och <https://go.microsoft.com/?linkid=9710837> [Microsofts sekretesspolicy.](https://go.microsoft.com/fwlink/?LinkID=248686)
 
-Den här funktionen, som tillhandahålls genom Bing Maps, stöds också av denna **teknik**. Så här fungerar Bing Maps-tjänster som tillhandahålls av denna teknik regleras av den _här teknik tjänst villkoren_ på <https://legal.here.com/en-gb/terms> .
+Den här funktionen, som Bing-kartor, stöds också av **TomTom.** Mer information om TomToms produkter och tjänster finns på [https://www.tomtom.com/legal](https://www.tomtom.com/legal) .
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Nätverks anslutning i Microsoft 365 Admin Center (för hands version)](office-365-network-mac-perf-overview.md)
+[Nätverksanslutningen i Microsoft 365 (förhandsversion)](office-365-network-mac-perf-overview.md)
 
-[Microsoft 365 nätverks prestanda (för hands version)](office-365-network-mac-perf-insights.md)
+[Microsoft 365 nätverksprestandainsikter (förhandsversion)](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365 Network Assessment (för hands version)](office-365-network-mac-perf-score.md)
+[Microsoft 365 nätverksutvärdering (förhandsversion)](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 anslutnings test i M365 administrations Center (för hands version)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 anslutningstest i Microsoft 365 (förhandsversion)](office-365-network-mac-perf-onboarding-tool.md)

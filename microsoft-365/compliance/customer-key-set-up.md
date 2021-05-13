@@ -1,9 +1,8 @@
 ---
-title: Konfigurera kundnyckel på programnivå
+title: Konfigurera kundnyckel
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 02/05/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,30 +11,30 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Lär dig konfigurera kundnyckel för Microsoft 365 för Exchange Online, Skype för företag, SharePoint Online, OneDrive för företag och Teams filer.
-ms.openlocfilehash: a7a0c807b8778960d423d6b7d8afc20430ba89ad
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Läs mer om hur du ställer in Microsoft 365.
+ms.openlocfilehash: e187c01a355cc9b926e892cb3326b5a527c714a4
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162190"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52344680"
 ---
-# <a name="set-up-customer-key-at-the-application-level"></a>Konfigurera kundnyckel på programnivå
+# <a name="set-up-customer-key"></a>Konfigurera kundnyckel
 
-Med kundnyckeln styr du organisationens krypteringsnycklar och konfigurerar sedan Microsoft 365 att använda dem för att kryptera dina data i vila i Microsofts datacenter. Med andra ord tillåter kundnyckel att kunderna lägger till ett krypteringslager som hör till dem, med sina nycklar. Data i vila omfattar data från Exchange Online och Skype för företag som lagras i postlådor och filer som lagras i SharePoint Online och OneDrive för företag.
+Med kundnyckeln styr du organisationens krypteringsnycklar och konfigurerar sedan Microsoft 365 att använda dem för att kryptera dina data i vila i Microsofts datacenter. Med andra ord tillåter kundnyckel att kunderna lägger till ett krypteringslager som hör till dem, med sina nycklar.
 
-Du måste konfigurera Azure innan du kan använda kundnyckel för Office 365. I den här artikeln beskrivs de steg du behöver följa för att skapa och konfigurera nödvändiga Azure-resurser och sedan anvisningar för hur du konfigurerar kundnyckeln i Office 365. När du har slutfört Azure-konfigurationen kan du avgöra vilken princip och därmed vilka nycklar som ska tilldelas till postlådor och filer i organisationen. Postlådor och filer som du inte tilldelar någon princip för kommer att använda krypteringsprinciper som kontrolleras och hanteras av Microsoft. Mer information om kundnyckel eller en allmän översikt finns i [Tjänstkryptering med kundnyckel i Office 365.](customer-key-overview.md)
+Konfigurera Azure innan du kan använda kundnyckel för Office 365. I den här artikeln beskrivs de steg du behöver följa för att skapa och konfigurera nödvändiga Azure-resurser och sedan anvisningar för hur du konfigurerar kundnyckeln i Office 365. När du har konfigurerat Azure kan du bestämma vilken princip och därmed vilka nycklar som ska tilldelas för att kryptera data i Microsoft 365 arbetsbelastningar i organisationen. Mer information om kundnyckel eller en allmän översikt finns i [Tjänstkryptering med kundnyckel i Office 365.](customer-key-overview.md)
   
 > [!IMPORTANT]
 > Vi rekommenderar starkt att du följer metodtipsen i den här artikeln. De kallas för **TIPS och** **VIKTIGT.** Med Kundnyckel får du kontroll över rotkrypteringsnycklar vars omfattning kan vara lika stor som hela organisationen. Det innebär att misstag som görs med dessa nycklar kan ha stor påverkan och kan leda till avbrott i tjänsten eller oåterkallelig förlust av dina data.
   
 ## <a name="before-you-set-up-customer-key"></a>Innan du anger kundnyckel
 
-Innan du börjar bör du kontrollera att du har rätt licensiering för din organisation. Använd en betald, fakturerad Azure-prenumeration med hjälp företagsavtal tjänstleverantör eller molntjänstleverantör. Azure-prenumerationer som köpts med abonnemang med betala efter användning eller med kreditkort stöds inte för kundnyckel. Från den 1 april 2020 erbjuds kundnyckel i Office 365 i Office 365 E5, M365 E5, M365 E5 efterlevnad och M365 E5 Information Protection & Governance SKU:er. Office 365 Advanced Compliance SKU är inte längre tillgängligt för inköp av nya licenser. Befintliga Office 365 Advanced Compliance-licenser kommer att fortsätta stödjas.
+Innan du börjar bör du kontrollera att du har rätt Azure-prenumerationer och -licensiering för din organisation. Använd betalda Azure-prenumerationer med en företagsavtal eller en molntjänstleverantör. Kreditkortsbaserade betalningar accepteras inte. Godkänna och konfigurera kontobehoven för fakturering. Prenumerationer som du fick via kostnadsfri, utvärderingsversion, sponsring, MSDN-prenumerationer och de som finns under äldre support är inte berättigade.
+
+Office 365 E5, Microsoft 365 E5, Microsoft 365 E5 Compliance och Microsoft 365 E5 Information Protection & Governance SKU:er erbjuder kundnyckel. Office 365 Advanced Compliance SKU är inte längre tillgängligt för inköp av nya licenser. Befintliga Office 365 Advanced Compliance-licenser kommer att fortsätta stödjas.
 
 Läs Dokumentationen för Azure Key Vault för att förstå begreppen och procedurerna [i den här](/azure/key-vault/) artikeln. Bekanta dig även med termerna som används i Azure, till exempel [Azure AD-klientorganisation.](/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant)
-
-FastTrack används endast för att samla in information om klientorganisationen och tjänsten som krävs för att registrera en kundnyckel. Kundnyckelerbjudandena publiceras via FastTrack så att det är praktiskt för dig och våra partner att skicka in den information som krävs på samma sätt. FastTrack gör det också enkelt att arkivera de data som du tillhandahåller i erbjudandet.
   
 Om du behöver mer support utöver dokumentationen kontaktar du Microsoft Consulting Services (MCS), Premier Field Engineering (PFE) eller en Microsoft-partner för att få hjälp. Skicka feedback om kundnyckel, inklusive dokumentation, genom att skicka dina idéer, förslag och perspektiv för att customerkeyfeedback@microsoft.com.
   
@@ -49,19 +48,17 @@ Du utför de flesta av dessa uppgifter genom att fjärransluta till Azure PowerS
   
 - [Skapa två nya Azure-prenumerationer](#create-two-new-azure-subscriptions)
 
+- [Skicka en begäran om att aktivera kundnyckel för Office 365](#submit-a-request-to-activate-customer-key-for-office-365)
+ 
 - [Registrera Azure-prenumerationer för att använda en obligatorisk bevarandeperiod](#register-azure-subscriptions-to-use-a-mandatory-retention-period)
 
   Registreringen kan ta från en till fem arbetsdagar.
-
-- [Skicka en begäran om att aktivera kundnyckel för Office 365](#submit-a-request-to-activate-customer-key-for-office-365)
-
-När du har skapat de två nya Azure-prenumerationerna måste du skicka in en begäran om kundnyckelerbjudandet genom att fylla i ett webbformulär som finns på Microsoft FastTrack-portalen. **FastTrack-teamet kan inte hjälpa dig med kundnyckeln. Office bara använder FastTrack-portalen** så att du kan skicka formuläret och för att hjälpa oss att spåra relevanta erbjudanden för kundnyckel.
 
 - [Skapa ett Azure Key Vault premium i varje prenumeration](#create-a-premium-azure-key-vault-in-each-subscription)
 
 - [Tilldela behörigheter till varje nyckelvalv](#assign-permissions-to-each-key-vault)
 
-- [Aktivera och bekräfta en mjuk borttagning på nyckelvalven](#enable-and-then-confirm-soft-delete-on-your-key-vaults)
+- [Kontrollera att mjuk borttagning är aktiverat på nyckelvalven](#make-sure-soft-delete-is-enabled-on-your-key-vaults)
 
 - [Lägg till en nyckel i varje nyckelvalv genom att skapa eller importera en nyckel](#add-a-key-to-each-key-vault-either-by-creating-or-importing-a-key)
 
@@ -72,26 +69,10 @@ När du har skapat de två nya Azure-prenumerationerna måste du skicka in en be
 - [Verifiera konfigurationsinställningar för Azure-nyckelvalv](#validate-azure-key-vault-configuration-settings)
 
 - [Hämta URI för varje Azure Key Vault-nyckel](#obtain-the-uri-for-each-azure-key-vault-key)
-
-**I Office 365:**
   
-Exchange Online och Skype för företag:
-  
-- [Skapa en datakrypteringsprincip (DEP) för användning Exchange Online och Skype för företag](#create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business)
-
-- [Tilldela en dep till en postlåda](#assign-a-dep-to-a-mailbox)
-
-- [Validera postlådekryptering](#validate-mailbox-encryption)
-
-SharePoint Online och OneDrive för företag:
-  
-- [Skapa en datakrypteringsprincip (DEP) för SharePoint Online OneDrive för företag geo](#create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo)
-
-- [Verifiera filkryptering för SharePoint Online, OneDrive för företag och Teams filer](#validate-file-encryption)
-
 ## <a name="complete-tasks-in-azure-key-vault-and-microsoft-fasttrack-for-customer-key"></a>Utföra uppgifter i Azure Key Vault och Microsoft FastTrack för kundnyckel
 
-Utför de här uppgifterna i Azure Key Vault. Du måste slutföra de här stegen oavsett om du har för avsikt att konfigurera kundnyckel för Exchange Online och Skype för företag eller för SharePoint Online-, OneDrive för företag- och Teams-filer eller för alla tjänster som stöds i Office 365.
+Utför de här uppgifterna i Azure Key Vault. Du måste slutföra de här stegen för alla DEP:er du använder med kundnyckel.
   
 ### <a name="create-two-new-azure-subscriptions"></a>Skapa två nya Azure-prenumerationer
 
@@ -99,27 +80,30 @@ Kundnyckel kräver två Azure-prenumerationer. Vi rekommenderar att du skapar ny
   
 > [!IMPORTANT]
 > Kundnyckel kräver två nycklar för varje datakrypteringsprincip (DEP). För att uppnå detta måste du skapa två Azure-prenumerationer. Vi rekommenderar att du har separata medlemmar i organisationen som konfigurerar en nyckel i varje prenumeration. Du bör endast använda dessa Azure-prenumerationer för att administrera krypteringsnycklar för Office 365. Det här skyddar organisationen om en av dina operatörer oavsiktligt, avsiktligt eller skadligt tar bort eller på annat sätt felmanar de nycklar som de ansvarar för.
->
 
 Det finns ingen praktisk gräns för antalet Azure-prenumerationer som du kan skapa för din organisation. Om du följer de här metodtipsen minimeras påverkan på människor, samtidigt som du kan hantera resurser som används av kundnyckeln.
   
 ### <a name="submit-a-request-to-activate-customer-key-for-office-365"></a>Skicka en begäran om att aktivera kundnyckel för Office 365
 
-När du har slutfört Azure-stegen måste du skicka en erbjudandebegäran i [Microsoft FastTrack-portalen.](https://fasttrack.microsoft.com/) När du har skickat en begäran via FastTrack-webbportalen verifierar Microsoft Azure Key Vault-konfigurationsdata och kontaktinformation som du angett. De val du gör i erbjudandeformuläret om behörig sansvariga i din organisation är avgörande och nödvändiga för slutförande av registreringen av kundnyckel. Organisationens sansvariga säkerställer äktheten i alla begäran om att återkalla och förstöra alla nycklar som används med en policy för datakryptering av kundnycklar. Du måste göra det här steget en gång för att aktivera kundnyckel för Exchange Online och Skype för företag och en andra gång för att aktivera kundnyckel för SharePoint Online och OneDrive för företag.
+När du har skapat de två nya Azure-prenumerationerna måste du skicka in rätt erbjudandeförfrågan för kundnyckel i [Microsoft FastTrack-portalen.](https://fasttrack.microsoft.com/) De val du gör i erbjudandeformuläret om auktoriserade beteckningar inom organisationen är avgörande och nödvändiga för att kunna slutföra registreringen av kundnyckel. De sansvariga i de valda rollerna i din organisation garanterar äktheten för alla förfrågningar om att återkalla och förstöra alla nycklar som används med en policy för datakryptering av kundnycklar. Du måste göra det här steget en gång för varje typ av kundnyckel DEP som du tänker använda för organisationen.
+
+**FastTrack-teamet kan inte hjälpa dig med kundnyckeln. Office 365 bara fastTrack-portalen så att du kan skicka formuläret och hjälpa oss att spåra relevanta erbjudanden för kundnyckel. När du har skickat FastTrack-begäran kontaktar du motsvarande team för registrering av kundnyckel för att starta introduktionsprocessen.**
   
 Gör så här om du vill skicka ett erbjudande om att aktivera kundnyckel:
   
 1. Använd ett arbets- eller skolkonto som har global administratörsbehörighet i din organisation och logga in på [Microsoft FastTrack-portalen.](https://fasttrack.microsoft.com/)
 
-2. När du är inloggad bläddrar du till **instrumentpanelen**.
+2. När du är inloggad väljer du rätt domän.
 
-3. Välj **Distribuera** i navigeringsfältet **ELLER** välj Visa **alla distributionsresurser** på kortet Distribuera information och granska listan med aktuella erbjudanden. 
+3. För den valda domänen väljer **du Begär tjänster** i det övre navigeringsfältet och granskar listan med tillgängliga erbjudanden.
 
 4. Välj informationskortet för erbjudandet som gäller dig:
 
-   - **Exchange Online och Skype för företag:** Välj nyckeln **Begär krypteringsnyckel för Exchange onlineerbjudandet.**
+   - **Flera Microsoft 365 arbetsbelastningar:** Välj nyckeln **Begär krypteringsnyckel för Microsoft 365** erbjudandet.
 
-   - **SharePoint Online, OneDrive och Teams filer:** Välj nyckeln **Begär krypteringsnyckel för Sharepoint och OneDrive** erbjudandet.
+   - **Exchange Online och Skype för företag:** Välj nyckeln **Begär krypteringsnyckel för Exchange** erbjudandet.
+
+   - **SharePoint Online, OneDrive och Teams filer:** Välj nyckeln **Begär krypteringsnyckel för ditt SharePoint och OneDrive för företag** erbjudande.
 
 5. När du har granskat erbjudandeinformationen väljer du **Fortsätt till steg 2.**
 
@@ -140,7 +124,15 @@ Innan du kontaktar Microsoft 365 behöver du göra följande för varje Azure-pr
    Register-AzProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.Resources
    ```
 
-3. Kontakta Microsoft för att slutföra processen. Kontakta SharePoint- OneDrive för företag om ditt [spock@microsoft.com](mailto:spock@microsoft.com). Om Exchange Online och Skype för företag kontaktar du [exock@microsoft.com](mailto:exock@microsoft.com). Inkludera följande information i e-postmeddelandet:
+3. Kontakta Microsoft för att slutföra processen.
+
+   - Om du vill göra det möjligt för kundnyckel att tilldela DEP till Exchange Online postlådor kontaktar [du exock@microsoft.com](mailto:exock@microsoft.com).
+
+   - Om du vill att kundnyckeln ska kunna tilldela dep:er för att kryptera innehåll från SharePoint Online och OneDrive för företag (inklusive Teams-filer) för alla klientorganisationsanvändare kontaktar du [spock@microsoft.com](mailto:spock@microsoft.com).
+
+   - Om du vill göra det möjligt för kundnyckel att tilldela dep:er för att kryptera innehåll i flera Microsoft 365-arbetsbelastningar (Exchange Online, Teams, MIP EDM) för alla användare i klientorganisationen kontaktar du [m365-ck@service.microsoft.com.](mailto:m365-ck@service.microsoft.com)
+
+- Inkludera följande information i e-postmeddelandet:
 
    **Ämne**: Kundnyckel för \<*Your tenant's fully qualified domain name*\>
 
@@ -171,19 +163,19 @@ När du skapar ett nyckelvalv måste du välja en SKU: antingen Standard eller P
 > [!IMPORTANT]
 > Använd SKU Premium tangentvalven och HSM-skyddade nycklar för produktionsdata och använd endast SKU-nyckelvalv och -nycklar för test- och valideringssyften.
   
-För varje Microsoft 365 tjänst där du kommer att använda Kundnyckel skapar du ett nyckelvalv i var och en av de två Azure-prenumerationer som du skapade. Till exempel Exchange Online och Skype för företag eller SharePoint Online och OneDrive för företag, skapar du bara ett par valv. För att aktivera kundnyckel för Exchange Online och SharePoint Online skapar du två par nyckelvalv.
+För varje Microsoft 365 tjänst där du kommer att använda Kundnyckel skapar du ett nyckelvalv i var och en av de två Azure-prenumerationer som du skapade. Om du till exempel vill aktivera Kundnyckel för att använda DEPs för Exchange Online, SharePoint Online och scenarier med flera arbetsbelastningar, skapar du tre par nyckelvalv.
   
 Använd en namngivningskonvention för nyckelvalv som återspeglar den avsedda användningen av deP som du associerar valven med. Se avsnittet Metodtips nedan för rekommendationer om namngivningskonventioner.
   
-Skapa en separat, parad uppsättning valv för varje datakrypteringsprincip. När Exchange Online datakrypteringsprincipens omfattning väljs av dig när du tilldelar principen till postlådan. En postlåda kan bara ha en tilldelad princip och du kan skapa upp till 50 principer. Omfattningen av en princip SharePoint Online omfattar alla data inom en organisation på en geografisk plats eller _geo._
+Skapa en separat, parad uppsättning valv för varje datakrypteringsprincip. När Exchange Online datakrypteringsprincipens omfattning väljs av dig när du tilldelar principen till postlådan. En postlåda kan bara ha en tilldelad princip och du kan skapa upp till 50 principer. Omfattningen av en princip SharePoint Online omfattar alla data inom en organisation på en geografisk plats eller _geo._ Omfattningen för en princip för flera arbetsbelastningar omfattar alla data i de arbetsbelastningar som stöds för alla användare.
 
 Skapandet av nyckelvalv kräver också att du skapar Azure-resursgrupper, eftersom nyckelvalv behöver lagringskapacitet (men små) och loggning av nyckelvalv, om det är aktiverat, genererar även lagrade data. Vi rekommenderar att du använder separata administratörer för att hantera varje resursgrupp, med den administration som överensstämmer med den uppsättning administratörer som hanterar alla relaterade kundnyckelresurser.
   
 > [!IMPORTANT]
-> För att maximera tillgängligheten ska nyckelvalven vara i regioner nära Microsoft 365 tjänst. Om din organisation Exchange Online Nordamerika kan du till exempel placera nyckelvalven i Nordamerika. Om din Exchange Online finns i Europa kan du placera nyckelvalven i Europa.
-> 
-> Använd ett vanligt prefix för nyckelvalv och inkludera en förkortning av användningen och omfattningen av nyckelvalv och nycklar (t.ex. för Contoso SharePoint-tjänsten där valven ska finnas i Nordamerika, ett möjligt par namn är Contoso-O365SP-NA-VaultA1 och Contoso-O365SP-NA-VaultA2. Valvnamn är globalt unika strängar i Azure, så du kan behöva prova varianter av dina önskade namn ifall de önskade namnen redan anspråks av andra Azure-kunder. Från och med juli 2017 går det inte att ändra namn på valv, så det är bäst att ha en skriftlig plan för installation och använda en andra person för att verifiera att planen körs korrekt.
-> 
+> Om du vill maximera tillgängligheten placerar du nyckelvalven i regioner nära din Microsoft 365-tjänst Om din Exchange Online-organisation till exempel finns i Nordamerika kan du placera nyckelvalven i Nordamerika. Om din Exchange Online finns i Europa kan du placera nyckelvalven i Europa.
+>
+> Använd ett vanligt prefix för nyckelvalv och inkludera en förkortning av användningen och omfattningen av nyckelvalv och nycklar (t.ex. för Contoso SharePoint-tjänsten där valven ska finnas i Nordamerika, ett möjligt par namn är Contoso-CK-SP-NA-VaultA1 och Contoso-CK-SP-NA-VaultA2. Valvnamn är globalt unika strängar i Azure, så du kan behöva prova varianter av dina önskade namn ifall de önskade namnen redan anspråks av andra Azure-kunder. Från och med juli 2017 går det inte att ändra namn på valv, så det är bäst att ha en skriftlig plan för installation och använda en andra person för att verifiera att planen körs korrekt.
+>
 > Om möjligt skapar du dina valv i icke-parade regioner. Parade Azure-regioner erbjuder hög tillgänglighet över feldomäner för tjänster. Därför kan regionala par ses som varandras säkerhetskopieringsregion. Det innebär att en Azure-resurs som placeras i en region automatiskt blir felaktig genom det parade området. Därför innebär valet av regioner för två valv som används i en datakrypteringsprincip där regionerna är parade att bara ett totalt av två regioner med tillgänglighet används. De flesta geografiska områden har bara två regioner, så det går ännu inte att välja icke-parade regioner. Om möjligt väljer du två icke-parade regioner för de två valven som används med en datakrypteringsprincip. Det här drar nytta av totalt fyra regioner med tillgänglighet. Mer information finns i [Affärskontinui- och katastrofåterställning (BCDR): Azure-parade](/azure/best-practices-availability-paired-regions) regioner för en aktuell lista med regionala par.
   
 ### <a name="assign-permissions-to-each-key-vault"></a>Tilldela behörigheter till varje nyckelvalv
@@ -206,12 +198,14 @@ Du måste definiera tre separata uppsättningar behörigheter för varje nyckelv
    Till exempel:
 
    ```powershell
-   Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
+   Set-AzKeyVaultAccessPolicy -VaultName Contoso-CK-EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
 - **Viktiga valv-deltagare** som kan ändra behörigheter för själva Azure-nyckelvalvet. Du måste ändra de här behörigheterna när anställda lämnar eller går med i teamet. I den sällsynta fall där nyckelvalvsadministratörer verkligen behöver behörighet att ta bort eller återställa en nyckel måste du också ändra behörigheterna. Den här uppsättningen viktiga valv-deltagare måste tilldelas rollen **Deltagare på** nyckelvalvet. Du kan tilldela den här rollen med hjälp av Azure Resource Manager. Detaljerade instruktioner finns i Använda [Access-Role-Based för att hantera åtkomst till dina Azure-prenumerationsresurser](/azure/active-directory/role-based-access-control-configure)med hjälp av Access Control. Administratören som skapar en prenumeration har den här åtkomsten implicit, och möjligheten att tilldela andra administratörer till deltagarrollen.
 
-- Om du tänker använda kundnyckel med Exchange Online och Skype för företag måste du ge behörighet till Microsoft 365 att använda nyckelvalvet åt Exchange Online och Skype för företag. På samma sätt, om du tänker använda kundnyckel med SharePoint Online och OneDrive för företag, måste du lägga till behörighet för Microsoft 365 att använda nyckelvalvet för SharePoint Online och OneDrive för företag. Om du vill ge Microsoft 365 behörighet kör du **cmdleten Set-AzKeyVaultAccessPolicy** med följande syntax:
+- **Behörigheter för Microsoft 365-program** för varje nyckelvalv du använder för kundnyckel, måste du ge wrapKey, unwrapKey och få behörigheter till motsvarande huvudnamn Microsoft 365 tjänst. 
+
+Om du vill ge behörighet Microsoft 365 Service Principal kör du **cmdleten Set-AzKeyVaultAccessPolicy** med följande syntax:
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
@@ -219,27 +213,26 @@ Du måste definiera tre separata uppsättningar behörigheter för varje nyckelv
 
    Var:
 
-    - *Valvnamn* är namnet på nyckelvalvet som du skapade.
-
-    - Ersätt Exchange Online och Skype för företag det *Office 365 id:t* med`00000002-0000-0ff1-ce00-000000000000`
-
-    - Ersätt SharePoint *APPID* OneDrive för företag, Teams online och Office 365 med`00000003-0000-0ff1-ce00-000000000000`
+   - *Valvnamn* är namnet på nyckelvalvet som du skapade.
+   - Ersätt Exchange Online och Skype för företag det *Office 365 id:t* med`00000002-0000-0ff1-ce00-000000000000`
+   - Ersätt SharePoint *APPID* OneDrive för företag, Teams online och Office 365 med`00000003-0000-0ff1-ce00-000000000000`
+   - För policyn för flera arbetsbelastningar (Exchange, Teams MIP EDM) som gäller för alla klientorganisationsanvändare ersätter du *Office 365 appID* med`c066d759-24ae-40e7-a56f-027002b5d3e4`
 
   Exempel: Ange behörigheter för Exchange Online och Skype för företag:
 
    ```powershell
-   Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName 00000002-0000-0ff1-ce00-000000000000
+   Set-AzKeyVaultAccessPolicy -VaultName Contoso-CK-EX-NA-VaultA1 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName 00000002-0000-0ff1-ce00-000000000000
    ```
 
   Exempel: Ange behörigheter för SharePoint Online, OneDrive för företag och Teams filer:
 
    ```powershell
-   Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365SP-NA-VaultA1 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName 00000003-0000-0ff1-ce00-000000000000
+   Set-AzKeyVaultAccessPolicy -VaultName Contoso-CK-SP-NA-VaultA1 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName 00000003-0000-0ff1-ce00-000000000000
    ```
 
-### <a name="enable-and-then-confirm-soft-delete-on-your-key-vaults"></a>Aktivera och bekräfta en mjuk borttagning på nyckelvalven
+### <a name="make-sure-soft-delete-is-enabled-on-your-key-vaults"></a>Kontrollera att mjuk borttagning är aktiverat på nyckelvalven
 
-När du snabbt kan återställa dina nycklar är det mindre sannolikt att det blir ett utökat avbrott i tjänsten på grund av oavsiktligt eller skadligt borttagna nycklar. Du måste aktivera den här konfigurationen, så kallad mjuk borttagning, innan du kan använda dina nycklar med kundnyckeln. Om du aktiverar Mjuk borttagning kan du återställa nycklar eller valv inom 90 dagar från borttagningen utan att behöva återställa dem från säkerhetskopian.
+När du snabbt kan återställa dina nycklar är det mindre sannolikt att det blir ett utökat avbrott i tjänsten på grund av oavsiktligt eller skadligt borttagna nycklar. Aktivera den här konfigurationen, så kallad Mjuk borttagning, innan du kan använda dina nycklar med kundnyckeln. Om du aktiverar Mjuk borttagning kan du återställa nycklar eller valv inom 90 dagar från borttagningen utan att behöva återställa dem från säkerhetskopian.
   
 Aktivera Mjuk borttagning på nyckelvalven genom att utföra följande steg:
   
@@ -262,7 +255,7 @@ Aktivera Mjuk borttagning på nyckelvalven genom att utföra följande steg:
 
 ### <a name="add-a-key-to-each-key-vault-either-by-creating-or-importing-a-key"></a>Lägg till en nyckel i varje nyckelvalv genom att skapa eller importera en nyckel
 
-Det finns två sätt att lägga till nycklar i ett Azure-nyckelvalv: du kan skapa en nyckel direkt i nyckelvalv eller så kan du importera en nyckel. Att skapa en nyckel direkt i nyckelvalv är den mindre komplicerade metoden, medan importen av en nyckel ger total kontroll över hur nyckeln genereras. Använd RSA-tangenterna. Azure Key Vault har inte stöd för radbrytning och avklippning med ellipsiska kurvtangenter.
+Det finns två sätt att lägga till nycklar i ett Azure-nyckelvalv: du kan skapa en nyckel direkt i nyckelvalv eller så kan du importera en nyckel. Det är mindre komplicerat att skapa en nyckel direkt i nyckelvalv, men genom att importera en nyckel får du total kontroll över hur nyckeln genereras. Använd RSA-tangenterna. Azure Key Vault har inte stöd för radbrytning och avklippning med ellipsiska kurvtangenter.
   
 Om du vill skapa en nyckel direkt i nyckelvalvet kör du [cmdleten Add-AzKeyVaultKey](/powershell/module/az.keyvault/add-azkeyvaultkey) enligt följande:
   
@@ -284,7 +277,7 @@ Om du har för avsikt att skydda nyckeln med en HSM ska du se till att du anger 
 Ett exempel:
   
 ```powershell
-Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination HSM -KeyOps wrapKey,unwrapKey
+Add-AzKeyVaultKey -VaultName Contoso-CK-EX-NA-VaultA1 -Name Contoso-CK-EX-NA-VaultA1-Key001 -Destination HSM -KeyOps wrapKey,unwrapKey
 ```
 
 Om du vill importera en nyckel direkt till nyckelvalvet måste du ha en nCipher nShield-säkerhetsmodul för maskinvara.
@@ -293,7 +286,7 @@ Vissa organisationer föredrar den här metoden för att testa sina nycklar och 
   
 - I verktygsuppsättningen som används för import ingår att intyget från nCipher att den nyckel Exchange-nyckel (KEK) som används för att kryptera den nyckel som du skapar inte kan exporteras och genereras i en äkta HSM som tillverkats av nCipher.
 
-- Verktygsuppsättningen inkluderar intyg från nCipher att Azure Key Vault Security World också skapades på en äkta HSM som tillverkats av nCipher. Det här bevisar för dig att Microsoft även använder äkta nCipher-maskinvara.
+- Verktygsuppsättningen inkluderar intyg från nCipher att Azure Key Vault Security World också skapades på en äkta HSM som tillverkats av nCipher. Det här bevisar att Microsoft även använder äkta nCipher-maskinvara.
 
 Kontrollera med din säkerhetsgrupp för att avgöra om ovanstående deltagare krävs. Detaljerade steg för att skapa en lokal nyckel och importera den till ditt nyckelvalv finns i Skapa och överföra [HSM-skyddade](/azure/key-vault/keys/hsm-protected-keys)nycklar för Azure Key Vault. Använd Azure-anvisningarna för att skapa en nyckel i varje nyckelvalv.
   
@@ -311,7 +304,7 @@ Om egenskapen _Återställningsnivå_ returnerar något annat än värdet **Åte
   
 ### <a name="back-up-azure-key-vault"></a>Back up Azure Key Vault
 
-Omedelbart efter att du skapat en nyckel eller ändrat den, ska du säkerhetskopiera och lagra kopior av säkerhetskopian, både online och offline. Offlinekopior ska inte anslutas till något nätverk, till exempel i en fysisk säker eller kommersiell lagringsfunktion. Minst en kopia av säkerhetskopian ska lagras på en plats som blir tillgänglig vid en katastrof. Säkerhetskopierings blobbar är det enda sättet att återställa nyckelmaterial om en nyckel nyckel för nyckelvalv permanent raderas eller på annat sätt återges obrukbar. Nycklar som är externa till Azure-nyckelvalv och som importerats till Azure Key Vault är inte berättigade som en säkerhetskopia eftersom metadata som krävs för att kundnyckeln ska använda nyckeln inte finns med den externa nyckeln. Endast en säkerhetskopia från Azure-nyckelvalv kan användas för återställningsåtgärder med kundnyckel. Därför måste du skapa en säkerhetskopia av Azure-nyckelvalv efter att du har laddat upp eller skapat en nyckel.
+Omedelbart efter att du skapat en nyckel eller ändrat den, ska du säkerhetskopiera och lagra kopior av säkerhetskopian, både online och offline. Anslut inte offlinekopior till något nätverk. Spara dem i stället på en offlineplats, t.ex. i en fysisk säker eller kommersiell lagringsplats. Minst en kopia av säkerhetskopian bör lagras på en plats som är tillgänglig om en katastrof inträffar. Säkerhetskopierings blobbar är det enda sättet att återställa nyckelmaterial om en nyckel nyckel för nyckelvalv permanent raderas eller på annat sätt återges obrukbar. Nycklar som är externa till Azure-nyckelvalv och som importerats till Azure Key Vault är inte kvalificerade som en säkerhetskopia eftersom metadata som krävs för att kundnyckel ska kunna använda nyckeln inte finns med den externa nyckeln. Endast en säkerhetskopia från Azure-nyckelvalv kan användas för återställningsåtgärder med kundnyckel. Därför måste du skapa en säkerhetskopia av Azure-nyckelvalv efter att du har laddat upp eller skapat en nyckel.
   
 Om du vill skapa en säkerhetskopia av en Azure Key Vault-nyckel kör du [cmdleten Backup-AzKeyVaultKey](/powershell/module/az.keyvault/backup-azkeyvaultkey) enligt följande:
 
@@ -330,7 +323,7 @@ Utdatafilen från den här cmdleten är krypterad och kan inte användas utanfö
 Till exempel:
   
 ```powershell
-Backup-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -OutputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
+Backup-AzKeyVaultKey -VaultName Contoso-CK-EX-NA-VaultA1 -Name Contoso-CK-EX-NA-VaultA1-Key001 -OutputFile Contoso-CK-EX-NA-VaultA1-Key001-Backup-20170802.backup
 ```
 
 ### <a name="validate-azure-key-vault-configuration-settings"></a>Verifiera konfigurationsinställningar för Azure-nyckelvalv
@@ -356,14 +349,14 @@ Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,un
 Till exempel för Exchange Online och Skype för företag:
   
 ```powershell
-Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 
+Set-AzKeyVaultAccessPolicy -VaultName Contoso-CK-EX-NA-VaultA1 
 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName 00000002-0000-0ff1-ce00-000000000000
 ```
 
 Till exempel kan du SharePoint Online och OneDrive för företag:
   
 ```powershell
-Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365SP-NA-VaultA1
+Set-AzKeyVaultAccessPolicy -VaultName Contoso-CK-SP-NA-VaultA1
 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName 00000003-0000-0ff1-ce00-000000000000
 ```
 
@@ -386,7 +379,7 @@ Update-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Expires (Get-Date
   
 ### <a name="obtain-the-uri-for-each-azure-key-vault-key"></a>Hämta URI för varje Azure Key Vault-nyckel
 
-När du har ställt in nyckelvalven och lagt till dina nycklar kör du följande kommando för att hämta URI:en för nyckeln i varje nyckelvalv. Du måste använda dessa URI:er när du skapar och tilldelar varje deP senare, så spara informationen på ett säkert ställe. Kör det här kommandot en gång för varje nyckelvalv.
+När du har ställt in nyckelvalven och lagt till dina nycklar kör du följande kommando för att hämta URI:en för nyckeln i varje nyckelvalv. Du kommer att använda dessa URI:er när du skapar och tilldelar varje deP senare, så spara informationen på ett säkert ställe. Kör det här kommandot en gång för varje nyckelvalv.
   
 I Azure PowerShell:
   
@@ -394,113 +387,13 @@ I Azure PowerShell:
 (Get-AzKeyVaultKey -VaultName <vault name>).Id
 ```
 
-## <a name="office-365-setting-up-customer-key-for-exchange-online-and-skype-for-business"></a>Office 365: Konfigurera kundnyckel för Exchange Online och Skype för företag
+## <a name="next-steps"></a>Nästa steg
 
-Innan du börjar bör du kontrollera att du har slutfört de uppgifter som krävs för att konfigurera Azure Key Vault. Mer [information finns i Utföra uppgifter i Azure-tangentvalvet och Microsoft FastTrack](#complete-tasks-in-azure-key-vault-and-microsoft-fasttrack-for-customer-key) för kundnyckel.
-  
-Om du vill konfigurera kundnyckel för Exchange Online och Skype för företag måste du utföra de här stegen genom att fjärransluta till Exchange Online med Windows PowerShell.
-  
-### <a name="create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business"></a>Skapa en datakrypteringsprincip (DEP) för användning Exchange Online och Skype för företag
-
-En DEP är kopplad till en uppsättning nycklar som lagras i Azure Key Vault. Du tilldelar en dep till en postlåda i Microsoft 365. Microsoft 365 kryptera postlådan med hjälp av de nycklar som identifieras i principen. För att skapa DEP behöver du URI:erna för nyckelvalv du fick tidigare. Instruktioner [finns i Hämta URI för varje Azure Key Vault-nyckel.](#obtain-the-uri-for-each-azure-key-vault-key)
-  
-Kom ihåg! När du skapar en DEP anger du två nycklar i två olika Azure-nyckelvalv. Skapa de här nycklarna i två separata Azure-regioner för att säkerställa georedundans.
-  
-Följ de här stegen om du vill skapa DEP:
-  
-1. Använd ett arbets- eller skolkonto som har global administratörsbehörighet i din organisation på din lokala dator och anslut [till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) i ett Windows PowerShell fönster.
-
-2. Om du vill skapa en DEP använder du New-DataEncryptionPolicy-cmdleten genom att skriva följande kommando.
-
-   ```powershell
-   New-DataEncryptionPolicy -Name <PolicyName> -Description "Policy Description" -AzureKeyIDs <KeyVaultURI1>, <KeyVaultURI2>
-   ```
-
-   Var:
-
-   - *PolicyName* är det namn du vill använda för principen. Namn får inte innehålla blanksteg. Till exempel USA_mailboxes.
-
-   - *Principbeskrivning* är en användarvänlig beskrivning av principen som hjälper dig att komma ihåg vad principen gäller. Du kan ta med blanksteg i beskrivningen. Till exempel "Rotnyckel för postlådor i USA och dess territorier".
-
-   - *KeyVaultURI1* är URI:t för den första nyckeln i principen. Till exempel <https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01>.
-
-   - *KeyVaultURI2* är URI:t för den andra nyckeln i principen. Till exempel <https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02>. Avgränsa de två URI:erna med ett kommatecken och ett blanksteg.
-
-   Exempel:
-  
-   ```powershell
-   New-DataEncryptionPolicy -Name USA_mailboxes -Description "Root key for mailboxes in USA and its territories" -AzureKeyIDs https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01, https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02
-   ```
-
-Detaljerad information om syntax och parametrar finns i [New-DataEncryptionPolicy](/powershell/module/exchange/new-data-encryptionpolicy).
-
-### <a name="assign-a-dep-to-a-mailbox"></a>Tilldela en dep till en postlåda
-
-Tilldela dep till en postlåda med hjälp av Set-Mailbox-cmdleten. När du tilldelar principen Microsoft 365 kryptera postlådan med nyckeln som identifieras i dep.
-  
-```powershell
-Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
-```
-
-Där *MailboxIdParameter* anger en användarpostlåda. Mer information om Set-Mailbox-cmdleten finns [i Set-Mailbox](/powershell/module/exchange/set-mailbox).
-
-I hybridmiljöer kan du tilldela en dep till de lokala e-postlådedata som synkroniseras till Exchange Online klientorganisation. Om du vill tilldela en DEP till denna synkroniserade postlådedata använder du cmdleten Set-MailUser postlådan. Mer information om e-postdata i hybridmiljön finns i lokala postlådor med Outlook för iOS och [Android med modern hybridautentisering.](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)
-
-```powershell
-Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
-```
-
-Där *MailUserIdParameter* anger en e-postanvändare (kallas även e-postaktiverad användare). Mer information om Set-MailUser-cmdleten finns [i Set-MailUser.](/powershell/module/exchange/set-mailuser)
-  
-### <a name="validate-mailbox-encryption"></a>Validera postlådekryptering
-
-Det kan ta lite tid att kryptera en postlåda. Vid tilldelning av första gången måste postlådan även helt flytta från en databas till en annan innan tjänsten kan kryptera postlådan. Vi rekommenderar att du väntar 72 timmar innan du försöker verifiera krypteringen efter att du har ändrat en DEP eller första gången du tilldelar en dep till en postlåda.
-  
-Använd Get-MailboxStatistics för att avgöra om en postlåda är krypterad.
-  
-```powershell
-Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEncrypted
-```
-
-Egenskapen IsEncrypted returnerar värdet **True** om postlådan är krypterad och värdet **false** om postlådan inte krypteras. Tiden för att slutföra postlådeflyttningar beror på antalet postlådor som du tilldelar en deP för första gången och storleken på postlådorna. Om postlådorna inte har krypterats efter en vecka från den tidpunkt då du tilldelade dep:et ska du kontakta Microsoft.
-
-## <a name="office-365-setting-up-customer-key-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Office 365: Konfigurera kundnyckel för SharePoint Online, OneDrive för företag och Teams filer
-
-Innan du börjar bör du kontrollera att du har slutfört de uppgifter som krävs för att konfigurera Azure Key Vault. Mer [information finns i Utföra uppgifter i Azure-tangentvalvet och Microsoft FastTrack](#complete-tasks-in-azure-key-vault-and-microsoft-fasttrack-for-customer-key) för kundnyckel.
-  
-Om du vill konfigurera kundnyckeln för SharePoint Online-, OneDrive för företag- och Teams-filer utför du de här stegen genom att fjärransluta till SharePoint Online med Windows PowerShell.
-  
-### <a name="create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo"></a>Skapa en datakrypteringsprincip (DEP) för SharePoint Online OneDrive för företag geo
-
-Du kopplar en DEP till en uppsättning nycklar som lagras i Azure Key Vault. Du använder en DEP för alla dina data på en geografisk plats, även kallad geo. Om du använder multi-geofunktionen i Office 365 kan du skapa en DEP per geo med möjlighet att använda olika nycklar per geo. Om du inte använder multi-geo kan du skapa en deP i organisationen för användning med SharePoint Online, OneDrive för företag och Teams filer. Microsoft 365 använder nycklar som identifieras i DATAkod för att kryptera data i geoinformationen. För att skapa DEP behöver du URI:erna för nyckelvalv du fick tidigare. Instruktioner [finns i Hämta URI för varje Azure Key Vault-nyckel.](#obtain-the-uri-for-each-azure-key-vault-key)
-  
-Kom ihåg! När du skapar en DEP anger du två nycklar i två olika Azure-nyckelvalv. Skapa de här nycklarna i två separata Azure-regioner för att säkerställa georedundans.
-  
-Om du vill skapa en DEP måste du fjärransluta till SharePoint Online med hjälp av Windows PowerShell.
-  
-1. Använd ett arbets- eller skolkonto som har global administratörsbehörighet i din organisation på din lokala [dator Anslut att SharePoint Online PowerShell.](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?preserve-view=true&view=sharepoint-ps)
-
-2. I Microsoft Office SharePoint Online Management Shell kör du cmdleten Register-SPODataEncryptionPolicy följande:
-
-   ```powershell
-   Register-SPODataEncryptionPolicy -Identity <adminSiteCollectionURL> -PrimaryKeyVaultName <PrimaryKeyVaultName> -PrimaryKeyName <PrimaryKeyName> -PrimaryKeyVersion <PrimaryKeyVersion> -SecondaryKeyVaultName <SecondaryKeyVaultName> -SecondaryKeyName <SecondaryKeyName> -SecondaryKeyVersion <SecondaryKeyVersion>
-   ```
-
-   Exempel:
-  
-   ```powershell
-   Register-SPODataEncryptionPolicy -Identity https://contoso.sharepoint.com -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKeyName 'SPKey3' -PrimaryKeyVersion 'f635a23bd4a44b9996ff6aadd88d42ba' -SecondaryKeyVaultName 'stageRG5vault' -SecondaryKeyName 'SPKey5' -SecondaryKeyVersion '2b3e8f1d754f438dacdec1f0945f251a’
-   ```
-
-   När du registrerar DEP börjar krypteringen på data i geo. Kryptering kan ta lite tid. Mer information om hur du använder den här parametern [finns i Register-SPODataEncryptionPolicy.](/powershell/module/sharepoint-online/register-spodataencryptionpolicy?preserve-view=true&view=sharepoint-ps)
-
-### <a name="validate-file-encryption"></a>Verifiera filkryptering
-
- Om du vill verifiera kryptering av SharePoint Online-, OneDrive för företag- och Teams-filer ansluter du till [SharePoint Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)och använder sedan cmdleten Get-SPODataEncryptionPolicy för att kontrollera status för din klientorganisation. Egenskapen _Delstat_ returnerar värdet registrerat **om** Customer Key-kryptering har aktiverats och alla filer på alla webbplatser har krypterats. Om kryptering fortfarande pågår returnerar den här cmdleten värdet av **att registrera**.
+När du har slutfört stegen i den här artikeln är du redo att skapa och tilldela DEP:er. Instruktioner finns i [Hantera kundnyckel.](customer-key-manage.md)
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Tjänstkryptering med kundnyckel](customer-key-overview.md)
+- [Tjänst kryptering med kundnyckel](customer-key-overview.md)
 
 - [Hantera kundnyckel](customer-key-manage.md)
 

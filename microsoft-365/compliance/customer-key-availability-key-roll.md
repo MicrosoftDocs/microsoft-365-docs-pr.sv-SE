@@ -3,7 +3,6 @@ title: Rulla eller rotera Customer Key eller en tillgänglighetsnyckel
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 02/05/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Lär dig hur du får kundens rotnycklar som lagras i Azure-nyckelvalvet som används med kundnyckeln. Tjänsterna omfattar Exchange Online, Skype för företag, SharePoint Online, OneDrive för företag och Teams filer.
-ms.openlocfilehash: 980d6b198b326cb75bb2b4ef4d2c980f605f23e5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 892d77959bec1fb33b0ea6bcfaa8c530dd9b8911
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162194"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345124"
 ---
 # <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>Rulla eller rotera Customer Key eller en tillgänglighetsnyckel
 
@@ -43,12 +42,34 @@ Till exempel:
 2. Kör Add-AzKeyVaultKey cmdleten enligt följande exempel:
 
    ```powershell
-   Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination HSM -KeyOps @('wrapKey','unwrapKey') -NotBefore (Get-Date -Date "12/27/2016 12:01 AM")
+   Add-AzKeyVaultKey -VaultName Contoso-CK-EX-NA-VaultA1 -Name Contoso-CK-EX-NA-VaultA1-Key001 -Destination HSM -KeyOps @('wrapKey','unwrapKey') -NotBefore (Get-Date -Date "12/27/2016 12:01 AM")
    ```
 
-   I det här exemplet finns, eftersom en nyckel som heter **Contoso-O365EX-NA-VaultA1-Key001** finns i **valvet Contoso-O365EX-NA-VaultA1,** skapar cmdleten en ny version av nyckeln. Den här åtgärden bevarar de tidigare nyckelversionerna i versionshistoriken för nyckeln. Du behöver den föregående nyckelversionen för att dekryptera data som fortfarande krypteras. När du har rullat alla nycklar som är associerade med en DEP kör du en extra cmdlet för att säkerställa att kundnyckeln börjar använda den nya nyckeln. I följande avsnitt beskrivs cmdlet:arna i detalj.
+   I det här exemplet finns, eftersom en nyckel som heter **Contoso-CK-EX-NA-VaultA1-Key001** finns i **valvet Contoso-CK-EX-NA-VaultA1,** skapar cmdleten en ny version av nyckeln. Den här åtgärden bevarar de tidigare nyckelversionerna i versionshistoriken för nyckeln. Du behöver den föregående nyckelversionen för att dekryptera data som fortfarande krypteras. När du har rullat alla nycklar som är associerade med en DEP kör du en extra cmdlet för att säkerställa att kundnyckeln börjar använda den nya nyckeln. I följande avsnitt beskrivs cmdlet:arna i detalj.
   
-## <a name="update-the-customer-key-for-exchange-online-and-skype-for-business"></a>Uppdatera kundnyckeln för Exchange Online och Skype för företag
+## <a name="update-the-keys-for-multi-workload-deps"></a>Uppdatera nycklar för dep:er med flera arbetsbelastningar
+
+När du rullar en av Azure Key Vault-tangenterna som är kopplade till en DEP som används med flera arbetsbelastningar, måste du uppdatera DEP så att de pekar på den nya nyckeln. Den här processen roterar inte tillgänglighetsnyckeln.
+
+För att instruera kundnyckeln att använda den nya nyckeln för att kryptera flera arbetsbelastningar slutför du följande steg:
+
+1. Använd ett arbets- eller skolkonto som har globala administratörs- eller efterlevnadsadministratörsbehörigheter i din organisation på din lokala dator och anslut till [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) i ett Windows PowerShell fönster.
+
+2. Kör Set-M365DataAtRestEncryptionPolicy cmdlet.
+  
+   ```powershell
+   Set-M365DataAtRestEncryptionPolicy -[Identity] "PolicyName" -Refresh
+   ```
+
+Där *PolicyName* är namnet på eller ett unikt ID för principen. Till exempel Contoso_Global.
+
+Exempel:
+
+```powershell
+Set-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global" -Refresh
+```
+
+## <a name="update-the-keys-for-exchange-online-deps"></a>Uppdatera nycklar för Exchange Online DEP
 
 När du rullar en av Azure Key Vault-tangenterna som är kopplade till en DEP som används med Exchange Online och Skype för företag måste du uppdatera DEP:en så att den pekar på den nya nyckeln. Detta roterar inte tillgänglighetsnyckeln.
 
@@ -60,11 +81,9 @@ Om du vill instruera kundnyckeln att använda den nya nyckeln för att kryptera 
    Set-DataEncryptionPolicy -Identity <DataEncryptionPolicyID> -Refresh
    ```
 
-   Inom 72 timmar krypteras de aktiva postlådorna som är kopplade till den här data deP:en med den nya nyckeln.
-
 2. Om du vill kontrollera värdet för egenskapen DataEncryptionPolicyID för postlådan använder du stegen i Avgöra vilken DEP som [tilldelats en postlåda.](customer-key-manage.md#determine-the-dep-assigned-to-a-mailbox) Värdet för den här egenskapen ändras när tjänsten tillämpar den uppdaterade nyckeln.
   
-## <a name="update-the-customer-key-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Uppdatera kundnyckeln för SharePoint Online, OneDrive för företag och Teams filer
+## <a name="update-the-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Uppdatera nycklar för SharePoint Online, OneDrive för företag och Teams filer
 
 SharePoint Med Online kan du bara rulla en tangent i taget. Om du vill återställa båda tangenterna i ett nyckelvalv väntar du tills den första åtgärden har slutförts. Microsoft rekommenderar att du sprider dina åtgärder för att undvika det här problemet. När du rullar en av Azure Key Vault-tangenterna som är kopplade till en DEP som används med SharePoint Online och OneDrive för företag måste du uppdatera DEP:en så att den pekar på den nya nyckeln. Detta roterar inte tillgänglighetsnyckeln.
 

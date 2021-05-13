@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-migratetomdatp
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 05/11/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 6b3b9fda0060108bd6a3c48188ff6e89261be096
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 66d24f5a479a903c8d42d509f1bbe956293c9ac3
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327252"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346346"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Växla till Microsoft Defender för Slutpunkt – fas 3: Onboard
 
@@ -42,15 +42,21 @@ ms.locfileid: "52327252"
 **Välkommen till Fas 3 för [att byta till Microsoft Defender för Slutpunkt.](switch-to-microsoft-defender-migration.md#the-migration-process)** Den här migreringsfasen omfattar följande steg:
 
 1. [Onboard-enheter till Microsoft Defender för Endpoint](#onboard-devices-to-microsoft-defender-for-endpoint).
+
 2. [Kör ett identifieringstest](#run-a-detection-test).
+
 3. [Avinstallera din lösning som inte är en Microsoft-lösning.](#uninstall-your-non-microsoft-solution)
+
 4. [Kontrollera att Microsoft Defender för Slutpunkt är i aktivt läge](#make-sure-microsoft-defender-for-endpoint-is-in-active-mode).
 
 ## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Registrera enheter till Microsoft Defender för Endpoint
 
 1. Gå till Microsoft Defender Säkerhetscenter ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ) och logga in.
-2. Välj **Inställningar Registrering** av  >    >  **enhetshantering**. 
+
+2. Välj **Inställningar**  >  **Registrering av**  >  **enhetshantering**. 
+
 3. Välj **ett operativsystem i listan Välj** operativsystem för att starta registreringsprocessen. 
+
 4. Välj **ett alternativ** under Distributionsmetod. Följ länkarna och instruktionerna för att registrera organisationens enheter. Behöver du hjälp? Se [Onboarding-metoder](#onboarding-methods) (i den här artikeln).
 
 ### <a name="onboarding-methods"></a>Onboarding-metoder
@@ -61,7 +67,7 @@ Distributionsmetoderna varierar beroende på vilket operativsystem som väljs. S
 |---------|---------|
 |Windows 10     |- [Grupprincip](configure-endpoints-gp.md)<br/>- [Konfigurationshanteraren](configure-endpoints-sccm.md)<br/>- [Hantering av mobila enheter (Intune)](configure-endpoints-mdm.md)<br/>- [Lokalt skript](configure-endpoints-script.md) <p>**Obs!** Ett lokalt skript är lämpligt för ett konceptbevis men bör inte användas för produktionsdistribution. För produktionsdistribution rekommenderar vi att du använder Grupprincip, Microsoft Endpoint Configuration Manager eller Intune.         |
 |- Windows 8.1 Enterprise <br/>- Windows 8.1 Pro <br/>- Windows 7 SP1 Enterprise <br/>- Windows 7 SP1 Pro     | [Microsoft Monitoring Agent](onboard-downlevel.md)<p>**OBS!** Microsoft Monitoring Agent är nu Azure Log Analytics-agent. Mer information finns i Översikt [över logganalysagenter.](/azure/azure-monitor/platform/log-analytics-agent)        |
-|- Windows Server 2019 och senare <br/>- Kärnversionen av Windows Server 2019 <br/>- Windows Server version 1803 och senare |- [Lokalt skript](configure-endpoints-script.md) <br/>- [Grupprincip](configure-endpoints-gp.md) <br/>- [Konfigurationshanteraren](configure-endpoints-sccm.md) <br/>- [System Center Configuration Manager](configure-endpoints-sccm.md) <br/>- [VDI-onboardingskript för icke-beständiga enheter](configure-endpoints-vdi.md) <p>**Obs!** Ett lokalt skript är lämpligt för ett konceptbevis men bör inte användas för produktionsdistribution. För produktionsdistribution rekommenderar vi att du använder Grupprincip, Microsoft Endpoint Configuration Manager eller Intune.    |
+|- Windows Server 2019 och senare <br/>- Windows Server 2019 Core Edition <br/>- Windows Server version 1803 och senare |- [Lokalt skript](configure-endpoints-script.md) <br/>- [Grupprincip](configure-endpoints-gp.md) <br/>- [Konfigurationshanteraren](configure-endpoints-sccm.md) <br/>- [System Center Configuration Manager](configure-endpoints-sccm.md) <br/>- [VDI-onboardingskript för icke-beständiga enheter](configure-endpoints-vdi.md) <p>**Obs!** Ett lokalt skript är lämpligt för ett konceptbevis men bör inte användas för produktionsdistribution. För produktionsdistribution rekommenderar vi att du använder Grupprincip, Microsoft Endpoint Configuration Manager eller Intune.    |
 |- Windows Server 2016 <br/>- Windows Server 2012 R2 <br/>- Windows Server 2008 R2 SP1  |- [Microsoft Defender Säkerhetscenter](configure-server-endpoints.md)<br/>- [Azure Defender](/azure/security-center/security-center-wdatp) |
 |macOS<br/>- 11.3.1 (Big Sur) <br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<p>iOS<p>Linux:<br/>- RHEL 7,2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS, eller senare LTS<br/>- SLES 12+<br/>- Till och med 9+<br/>- Oracle Linux 7.2 |[Introducera icke-Windows-enheter](configure-endpoints-non-windows.md)  |
 
@@ -91,11 +97,12 @@ Om du vill göra detta går du till webbplatsen för microsoft Defender för end
 - Network Protection (NP)
 
 > [!IMPORTANT]
-> Om du använder Windows Server 2016 kan du behöva starta Microsoft Defender Antivirus manuellt. Det kan du göra med hjälp av PowerShell-cmdleten `mpcmdrun.exe -wdenable` på enheten.
+> Om du använder Windows Server 2016 kan du behöva börja Microsoft Defender Antivirus manuellt. Det kan du göra med hjälp av PowerShell-cmdleten `mpcmdrun.exe -wdenable` på enheten.
 
 ## <a name="next-steps"></a>Nästa steg
 
 **Grattis!** Du har slutfört [migreringen till Microsoft Defender för Slutpunkt](switch-to-microsoft-defender-migration.md#the-migration-process)! 
 
 - [Besök instrumentpanelen för säkerhetsåtgärder](security-operations-dashboard.md) i Microsoft Defender Säkerhetscenter ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ). 
+
 - [Hantera Microsoft Defender för Slutpunkt efter migreringen.](manage-atp-post-migration.md)

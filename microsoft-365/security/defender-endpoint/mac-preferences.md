@@ -18,17 +18,16 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f13734392e4975738a0d60d38e618595b5175667
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b706cb8dbd43d545768c1c573021b5ef401e3c09
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934567"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346408"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Ange inställningar för Microsoft Defender för Slutpunkt i macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Gäller för:**
 
@@ -106,6 +105,7 @@ Ange kopplingsprincipen för undantag. Det här kan vara en kombination av admin
 #### <a name="scan-exclusions"></a>Undantag för skanning
 
 Ange enheter som inte ska genomsökas. Undantag kan anges med fullständiga sökvägar, filnamnstillägg eller filnamn.
+(Undantag anges som en matris med objekt, administratören kan ange så många element som behövs, i valfri ordning.)
 
 |Avsnitt|Värde|
 |:---|:---|
@@ -136,6 +136,27 @@ Ange innehåll som inte ska genomsökas efter fullständig sökväg.
 | **Datatyp** | Sträng |
 | **Möjliga värden** | giltiga sökvägar |
 | **Kommentarer** | Gäller endast om *$type* *är undantagenPath* |
+
+## <a name="supported-exclusion-types"></a>Undantagstyper som stöds
+
+I följande tabell visas de undantagstyper som stöds av Defender för slutpunkt på Mac.
+
+Exkludering | Definition | Exempel
+---|---|---
+Filnamnstillägg | Alla filer med tillägget, var som helst på enheten | `.test`
+Fil | En specifik fil som identifieras med den fullständiga sökvägen | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+Mapp | Alla filer under den angivna mappen (rekursivt) | `/var/log/`<br/>`/var/*/`
+Process | En specifik process (anges antingen med den fullständiga sökvägen eller filnamnet) och alla filer som öppnas av den | `/bin/cat`<br/>`cat`<br/>`c?t`
+
+> [!IMPORTANT]
+> Sökvägarna ovan måste vara hårda länkar, inte symboliska länkar, för att uteslutas. Du kan kontrollera om en sökväg är en symbolisk länk genom att köra `file <path-name>` .
+
+Undantag för filer, mappar och processer stöder följande jokertecken:
+
+Jokertecken | Beskrivning | Exempel | Matchningar | Matchar inte
+---|---|---|---|---
+\* |    Matchar valbara antal tecken inklusive inga (observera att när det här jokertecknet används inuti en sökväg kommer det bara att ersätta en mapp) | `/var/\*/\*.log` | `/var/log/system.log` | `/var/log/nested/system.log`
+? | Matchar ett enstaka tecken | `file?.log` | `file1.log`<br/>`file2.log` | `file123.log`
 
 ##### <a name="path-type-file--directory"></a>Sökvägstyp (fil/katalog)
 
@@ -358,7 +379,7 @@ Ange om användare kan skicka feedback till Microsoft genom att gå till `Help` 
 
 ### <a name="endpoint-detection-and-response-preferences"></a>Inställningar för identifiering av slutpunkter och svar
 
-Hantera inställningarna för slutpunktsidentifierings- och svarskomponenten (EDR) i Microsoft Defender för slutpunkten i macOS.
+Hantera inställningarna för den identifiering och åtgärd på slutpunkt (Identifiering och åtgärd på slutpunkt) av Microsoft Defender för Slutpunkt i macOS.
 
 |Avsnitt|Värde|
 |:---|:---|
@@ -416,7 +437,7 @@ Följande konfigurationsprofil (eller, vid JAMF, en egenskapslista som kan ladda
   - **Potentiellt oönskade program (PUA)** blockeras
   - **Arkiveringsskyddet** (en fil med hög komprimeringshastighet) granskas i Microsoft Defender för Slutpunktsloggar
 - Aktivera automatiska säkerhetsintelligensuppdateringar
-- Aktivera moln levererat skydd
+- Aktivera molnbaserat skydd
 - Aktivera automatisk exempelinskickning
 
 ### <a name="property-list-for-jamf-configuration-profile"></a>Egenskapslista för JAMF-konfigurationsprofil
@@ -577,6 +598,14 @@ Följande mallar innehåller poster för alla inställningar som beskrivs i det 
             </dict>
             <dict>
                 <key>$type</key>
+                <string>excludedPath</string>
+                <key>isDirectory</key>
+                <true/>
+                <key>path</key>
+                <string>/Users/*/git</string>
+            </dict>
+            <dict>
+                <key>$type</key>
                 <string>excludedFileExtension</string>
                 <key>extension</key>
                 <string>pdf</string>
@@ -719,6 +748,14 @@ Följande mallar innehåller poster för alla inställningar som beskrivs i det 
                         </dict>
                         <dict>
                             <key>$type</key>
+                            <string>excludedPath</string>
+                            <key>isDirectory</key>
+                            <true/>
+                            <key>path</key>
+                            <string>/Users/*/git</string>
+                        </dict>
+                        <dict>
+                            <key>$type</key>
                             <string>excludedFileExtension</string>
                             <key>extension</key>
                             <string>pdf</string>
@@ -812,7 +849,7 @@ När du har skapat konfigurationsprofilen för ditt företag kan du distribuera 
 
 ### <a name="jamf-deployment"></a>JAMF-distribution
 
-Från JAMF-konsolen öppnar du Datorkonfigurationsprofiler , navigerar till den konfigurationsprofil du vill  >  använda och väljer sedan **Anpassade inställningar.** Skapa en post med `com.microsoft.wdav` som inställningsdomän och ladda upp den *.plist som produceras* tidigare.
+Från JAMF-konsolen öppnar du Datorkonfigurationsprofiler , navigerar till den konfigurationsprofil du vill använda och väljer  >  sedan Custom **Inställningar**. Skapa en post med `com.microsoft.wdav` som inställningsdomän och ladda upp den *.plist som produceras* tidigare.
 
 >[!CAUTION]
 >Du måste ange rätt inställningsdomän ( ). Annars kan inte inställningarna identifieras av `com.microsoft.wdav` Microsoft Defender för Slutpunkt.

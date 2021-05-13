@@ -1,5 +1,5 @@
 ---
-title: Namnge ändringar i det avancerade sökschemat i Microsoft 365 Defender
+title: Namnge ändringar i Microsoft 365 Defender avancerade sökschema
 description: Spåra och granska namnändringar – tabeller och kolumner i det avancerade sökschemat
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, data, naming changes, rename
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: eb6dfa628488239e3953d19d5e78b338e76f50a2
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: a387892dde0fbe96e4a523b2247448a3c7e374b8
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023791"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470502"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Avancerat schema för sökning – Namnändringar
 
@@ -56,7 +56,7 @@ Namnändringar tillämpas automatiskt på frågor som sparas i säkerhetscentret
 | Kolumnnamn | Namn på det ursprungliga värdet | Namn på nytt värde | Orsak till ändring
 |--|--|--|--|
 | `DetectionSource` | MCAS |    Microsoft Cloud App Security | Rebranding |
-| `DetectionSource` | WindowsDefenderAtp|   EDR| Rebranding |
+| `DetectionSource` | WindowsDefenderAtp|   Identifiering och åtgärd på slutpunkt| Rebranding |
 | `DetectionSource` | WindowsDefenderAv | Antivirus | Rebranding |
 | `DetectionSource` | WindowsDefender SmartScreen |  SmartScreen | Rebranding |
 | `DetectionSource` | CustomerTI |  Anpassat TI | Rebranding |
@@ -78,12 +78,12 @@ Namnändringar tillämpas automatiskt på frågor som sparas i säkerhetscentret
 
 1. I [tabellerna EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) [och EmailEvents](advanced-hunting-emailevents-table.md) har kolumnerna och `MalwareFilterVerdict` `PhishFilterVerdict` ersatts med `ThreatTypes` kolumnen. Kolumnerna `MalwareDetectionMethod` `PhishDetectionMethod` och har också ersatts med `DetectionMethods` kolumnen. Denna effektivisering gör att vi kan ge mer information under de nya kolumnerna. Mappningen anges nedan.
 
-| Tabellnamn | Det ursprungliga kolumnnamnet | Nytt kolumnnamn | Orsak till ändring
-|--|--|--|--|
-| `EmailAttachmentInfo` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Inkludera fler identifieringsmetoder |
-| `EmailAttachmentInfo`  | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Inkludera fler hottyper |
-| `EmailEvents` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Inkludera fler identifieringsmetoder |
-| `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Inkludera fler hottyper |
+    | Tabellnamn | Det ursprungliga kolumnnamnet | Nytt kolumnnamn | Orsak till ändring
+    |--|--|--|--|
+    | `EmailAttachmentInfo` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Inkludera fler identifieringsmetoder |
+    | `EmailAttachmentInfo`  | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Inkludera fler hottyper |
+    | `EmailEvents` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Inkludera fler identifieringsmetoder |
+    | `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Inkludera fler hottyper |
 
 
 2. I `EmailAttachmentInfo` tabellerna `EmailEvents` och i tabellerna `ThreatNames` har kolumnen lagts till för att ge mer information om e-posthotet. Den här kolumnen innehåller värden som Skräppost eller Phish.
@@ -92,18 +92,20 @@ Namnändringar tillämpas automatiskt på frågor som sparas i säkerhetscentret
 
 4. I tabellen [DeviceEvents](advanced-hunting-deviceevents-table.md) har flera ActionType-namn ändrats för att bättre återspegla beskrivningen av åtgärden. Information om ändringarna finns nedan.
 
-| Tabellnamn | Ursprungligt ActionType-namn | Nytt ActionType-namn | Orsak till ändring
-|--|--|--|--|
-| `DeviceEvents` | `DlpPocPrintJob` | `FilePrinted` | Feedback från kunder |
-| `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | Feedback från kunder |
-| `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Feedback från kunder |
-| `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Feedback från kunder |
+    | Tabellnamn | Ursprungligt ActionType-namn | Nytt ActionType-namn | Orsak till ändring
+    |--|--|--|--|
+    | `DeviceEvents` | `DlpPocPrintJob` | `FilePrinted` | Feedback från kunder |
+    | `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | Feedback från kunder |
+    | `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Feedback från kunder |
+    | `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Feedback från kunder |
 
 ## <a name="march-2021"></a>Mars 2021
 
 Tabellen `DeviceTvmSoftwareInventoryVulnerabilities` har tagits bort. Om du ersätter detta `DeviceTvmSoftwareInventory` ersätts `DeviceTvmSoftwareVulnerabilities` tabellerna och.
 
+## <a name="may-2021"></a>Maj 2021
 
+Tabellen `AppFileEvents` har tagits bort. Tabellen `CloudAppEvents` innehåller information som brukade finnas i `AppFileEvents` tabellen, samt andra aktiviteter i molntjänster.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

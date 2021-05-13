@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 42b15edd933d80dd397f4681c4f0fdb035f030f2
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+ms.openlocfilehash: 29505a6e975fdfa2283efe3391c615e40e678164
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943023"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346384"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Ange inställningar för Microsoft Defender för Slutpunkt i Linux
 
@@ -105,6 +105,7 @@ Anger kopplingsprincipen för undantag. Det kan vara en kombination av administr
 #### <a name="scan-exclusions"></a>Undantag för skanning
 
 Enheter som har uteslutits från genomsökningen. Undantag kan anges med fullständiga sökvägar, filnamnstillägg eller filnamn.
+(Undantag anges som en matris med objekt, administratören kan ange så många element som behövs, i valfri ordning.)
 
 |||
 |:---|:---|
@@ -305,7 +306,7 @@ Diagnostikdata används för att hålla Defender för Slutpunkt säker och uppda
 Avgör om misstänkta exempel (som troligen innehåller hot) skickas till Microsoft. Det finns tre nivåer för kontroll av exempelinskick:
 
 - **Ingen**: inga misstänkta exempel skickas till Microsoft.
-- **Kassaskåp**: endast misstänkta exempel som inte innehåller personligt identifierbar information skickas automatiskt. Det här är standardvärdet för den här inställningen.
+- **Valv**: endast misstänkta exempel som inte innehåller personligt identifierbar information skickas automatiskt. Det här är standardvärdet för den här inställningen.
 - **Alla**: alla misstänkta exempel skickas till Microsoft.
 
 |||
@@ -337,7 +338,7 @@ Följande konfigurationsprofil:
   - **Potentiellt oönskade program (PUA)** blockeras
   - **Arkivposterna** (fil med hög komprimeringshastighet) granskas i produktloggarna
 - Aktivera automatiska säkerhetsintelligensuppdateringar
-- Aktivera moln levererat skydd
+- Aktivera molnbaserat skydd
 - Aktivera automatisk exempelinskick på `safe` nivå
 
 ### <a name="sample-profile"></a>Exempelprofil
@@ -387,7 +388,12 @@ Följande konfigurationsprofil innehåller poster för alla inställningar som b
          {
             "$type":"excludedPath",
             "isDirectory":true,
-            "path":"/home"
+            "path":"/run"
+         },
+         {
+            "$type":"excludedPath",
+            "isDirectory":true,
+            "path":"/home/*/git"
          },
          {
             "$type":"excludedFileExtension",

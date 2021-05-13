@@ -21,12 +21,12 @@ search.appverid: MET150
 description: Lär dig hur du uppgraderar från Microsoft Teams gratis till en ny Microsoft 365 för företag-prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/08/2020
-ms.openlocfilehash: 3f8c188055a9ec7c048921f7d5ee030407854616
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 8aab61819f7f335d4865e162ca752aa307f8f7ac
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333113"
+ms.locfileid: "52345112"
 ---
 # <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>Uppgradera från Microsoft Teams gratis att Microsoft 365 för företag
 

@@ -1,5 +1,5 @@
 ---
-title: Datatabeller i det avancerade sökschemat i Microsoft 365 Defender
+title: Datatabeller i Microsoft 365 Defender avancerade sökschema
 description: Läs mer om tabellerna i det avancerade sökschemat för att förstå vilka data du kan köra sökning efter hot på
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, data
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0313d1e95682d52e44cf90360c8ef322f0cad5db
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3c8c65d012467317bf8335f47c3f686a5d7255d1
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932923"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470586"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Förstå det avancerade sökschemat
 
@@ -59,9 +59,8 @@ I följande referens visas alla tabeller i schemat. Varje tabellnamn länkar til
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Filer, IP-adresser, URL:er, användare eller enheter som associeras med aviseringar |
 | **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Varningar från Microsoft Defender för Slutpunkt, Microsoft Defender för Office 365, Microsoft Cloud App Security och Microsoft Defender för identitet, inklusive information om allvarlighetsgrad och hotkategorisering  |
-| **[AppFileEvents](advanced-hunting-appfileevents-table.md)** | Filrelaterade aktiviteter i molnappar och -tjänster |
 | **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | Händelser som innefattar konton och objekt i Office 365 och andra molnappar och -tjänster |
-| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Flera händelsetyper, inklusive händelser som utlöses av säkerhetskontroller, till exempel Windows Defender Antivirus och sårbarhetsskydd |
+| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Flera händelsetyper, bland annat händelser som utlöses av säkerhetskontroller, Windows Defender Antivirus och sårbarhetsskydd |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | Certifikatinformation för signerade filer som erhållits från certifikatverifieringshändelser i slutpunkter |
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | Skapa, ändra filer och andra filsystemhändelser |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | DLL-inläsningshändelser |
@@ -77,11 +76,11 @@ I följande referens visas alla tabeller i schemat. Varje tabellnamn länkar til
 | **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | Sårbarheter i programvaran som finns på enheter och listan över tillgängliga säkerhetsuppdateringar som är tillgängliga för varje sårbarhet |
 | **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | Kunskapsbas för offentligt avslöjat säkerhetsproblem, inklusive om sårbarhetskod är offentligt tillgänglig |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | Information om bifogade filer i e-postmeddelanden |
-| **[EmailEvents](advanced-hunting-emailevents-table.md)** | E-posthändelser i Microsoft 365, inklusive e-postleverans och blockeringshändelser |
-| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Säkerhetshändelser som inträffar efter leverans, när Microsoft 365 har levererat e-postmeddelanden till mottagarens postlåda |
+| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 e-posthändelser, inklusive e-postleverans och blockeringshändelser |
+| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Säkerhetshändelser som inträffar efter leveransen, Microsoft 365 e-postmeddelanden har levererats till mottagarens postlåda |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Information om URL:er för e-postmeddelanden |
 | **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | Händelser som innefattar en lokal domänkontrollant som kör Active Directory (AD). Den här tabellen omfattar ett antal identitetsrelaterade händelser och systemhändelser på domänkontrollanten. |
-| **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Kontoinformation från olika källor, inklusive Azure Active Directory |
+| **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Kontoinformation från olika källor, bland annat Azure Active Directory |
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Autentiseringshändelser i Active Directory och Microsoft-onlinetjänster |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Frågor för Active Directory-objekt, till exempel användare, grupper, enheter och domäner |
 

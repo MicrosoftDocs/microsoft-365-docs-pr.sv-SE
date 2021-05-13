@@ -1,5 +1,5 @@
 ---
-title: Administrationscenter för Microsoft 365 – Översikt
+title: Microsoft 365 administrationscenter – Översikt
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,38 +20,40 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Läs mer om administrationscentret för Microsoft 365.
-ms.openlocfilehash: 47eafbf49ac70d86b4065d3a67672c79abc16e63
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+description: Läs mer om Microsoft 365 administrationscenter.
+ms.openlocfilehash: 7d355b5064c2a0344ac62653afcae8712dbfc73f
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332252"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470430"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Översikt över administrationscenter för Microsoft 365
 
 - [Administrationscentret i förenklad vy](#the-admin-center-in-simplified-view)
 - [Administrationscentret i instrumentpanelsvyn](#the-admin-center-in-dashboard-view)
 
+I Microsoft 365 administrationscentret finns två vyer: förenklad vy hjälper mindre organisationer att hantera sina vanligaste uppgifter. Instrumentpanelsvyn innehåller mer komplexa inställningar och uppgifter. Du kan växla mellan dem från en knapp högst upp i administrationscentret.
+
 ## <a name="the-admin-center-in-simplified-view"></a>Administrationscentret i förenklad vy
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 
-I administrationscentret för Microsoft 365 kan du återställa lösenord, visa fakturan, lägga till eller ta bort användare och mycket mer på ett och samma ställe.
+Med hjälp Microsoft 365 administratörscenter kan du återställa lösenord, visa fakturan, lägga till eller ta bort användare och mycket mer på ett och samma ställe.
 
 Logga in Office.com med ditt arbetskonto och välj startprogrammet. 
 
 Om du har behörighet att komma åt administrationscentret visas **Admin** i listan. Markera det. 
 
-Granska de översta åtgärderna åt dig överst i administrationscentret. Olika åtgärder kan visas beroende på vad du redan har installerat, till exempel skapa nya konton, använda Teams, konfigurera e-post och installera Office-appar. 
+Granska de översta åtgärderna åt dig överst i administrationscentret. Olika åtgärder kan visas beroende på vad du redan har konfigurerat, till exempel skapa nya konton, använda Teams, konfigurera e-post och installera Office program. 
  
 Under **Din organisation** på fliken **Användare** finns en lista över personer som kan komma åt appar och tjänster, lägga till nya användare, återställa lösenord eller använda menyn **Fler** åtgärder. Välj en person för att visa eller redigera personens information och inställningar.  
 
-På fliken **Team** skapar du ett nytt team eller hanterar befintliga team. Du kan hantera medlemmar i ett team eller välja Fler **åtgärder för att** ändra andra Teams-inställningar. 
+På fliken **Teams** skapa ett nytt team eller hantera befintliga team. Du kan hantera medlemmarna i ett team eller välja **Fler åtgärder om** du vill ändra andra Teams inställningar. 
 
 På fliken **Prenumerationer** lägger du till fler produkter, lägger till licenser eller använder menyn **Fler åtgärder** för att ändra licenser eller betalningsmetod.
 
-På fliken **Lär** dig bläddrar du bland videoklipp och artiklar om administrationscentret och andra Microsoft 365-funktioner. Om du vill utforska mer avancerade funktioner i administrationscentret öppnar du navigeringsmenyn och expanderar rubrikerna för att se mer. Välj **Visa alla** om du vill se allt i navigeringsmenyn eller använd sökfältet för att snabbt hitta det du letar efter.
+På fliken **Lär** dig bläddrar du bland videoklipp och artiklar om administrationscentret och andra Microsoft 365 funktioner. Om du vill utforska mer avancerade funktioner i administrationscentret öppnar du navigeringsmenyn och expanderar rubrikerna för att se mer. Välj **Visa alla** om du vill se allt i navigeringsmenyn eller använd sökfältet för att snabbt hitta det du letar efter.
 
 Om du behöver hjälp väljer du **Hjälp & support.** Sök efter ämne som du vill ha hjälp med och visa den rekommenderade lösningen eller välj ett headset för att kontakta supporten och ange sedan din fråga och kontaktinformation. 
 
@@ -59,11 +61,11 @@ Om du behöver hjälp väljer du **Hjälp & support.** Sök efter ämne som du v
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
-I administrationscentret för Microsoft 365 hanterar du ditt företag i molnet. Du kan utföra sådana uppgifter som att lägga till och ta bort användare, ändra licenser och återställa lösenord. 
+I Microsoft 365 administratörscenter hanterar du företaget i molnet. Du kan utföra sådana uppgifter som att lägga till och ta bort användare, ändra licenser och återställa lösenord. 
 
-Specialistarbetsytor, som Säkerhet eller Enhetshantering, ger mer detaljerad kontroll. Mer information om hur administratörscentra fungerar tillsammans finns i Vad är de specifika typerna av IT-roller och andra arbetsytor [som Säkerhet, Enhetshantering](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) eller Exchange? i den här artikeln.
+Specialistarbetsytor, som Säkerhet eller Enhetshantering, ger mer detaljerad kontroll. Mer information om hur [administratörscentra](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) fungerar tillsammans finns i Vad är de specifika typerna av IT-roller och andra arbetsytor, till exempel säkerhet, enhetshantering eller Exchange? i den här artikeln.
 
-Du kommer till administrationscentret för Microsoft 365 genom att [gå till admin.microsoft.com](https://admin.microsoft.com) eller, om du redan är inloggad, välja startprogrammet och sedan välja **Admin**.
+Du kommer till Microsoft 365 genom att gå [till admin.microsoft.com](https://admin.microsoft.com) eller, om du redan är inloggad, välja startprogrammet och välja **Admin**.
 
 På startsidan kan du skapa kort för aktiviteter som du utför ofta. Om du vill lägga till ett nytt **kort väljer du Lägg** till kort och sedan plustecknet bredvid kortet du vill lägga till. Stäng fönstret när du är klar. Du kan ändra ordning på korten genom att markera och dra dem till den plats där du vill ha dem. Om du vill ta bort ett kort **väljer du Fler** åtgärder och sedan Ta **bort**.
 
@@ -83,7 +85,7 @@ Mer information om hur du hanterar fakturering, lösenord, användare och admini
 
 ## <a name="who-is-an-admin"></a>Vem är administratör? 
 
-Som standard får den person som registrerar sig för och köper en prenumeration på Microsoft 365 för företag administratörsbehörighet. Den personen kan tilldela andra personer administratörsbehörighet så att de kan hantera Microsoft 365 åt organisationen.
+Som standard får den person som registrerar sig för och köper en prenumeration Microsoft 365 för företag administratörsbehörighet. Den personen kan tilldela andra personer administratörsbehörighet så att de kan hantera Microsoft 365 för organisationen.
 
 Om du får meddelandet **"Du har inte** behörighet att komma åt den här sidan eller utföra den här åtgärden" är du inte administratör.
   
@@ -105,7 +107,7 @@ Om du inte vet vem du ska kontakta på arbetet eller i skolan för att få hjäl
 
 ## <a name="turn-on-targeted-release"></a>Aktivera Riktad version
 
-1. Logga in på [admin.microsoft.com](https://admin.microsoft.com), gå till navigeringsfönstret och välj **Inställningar** \> **Organisationsprofil**.
+1. Logga in på [admin.microsoft.com](https://admin.microsoft.com), gå till navigeringsfönstret och **välj** Inställningar \> **organisationsprofil**.
 
 2. Gå till **kortet Inställningar** för släppta inställningar och välj sedan **Redigera**. 
     
@@ -119,29 +121,29 @@ I administrationscentret kan du ge Microsoft feedback om din upplevelse genom at
 
 Besvarades inte dina frågor här? Gå till **avsnittet Feedback** längst ned på den här sidan och ställ din fråga. 
   
-### <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>Vilka Microsoft 365-abonnemang finns att prova eller köpa?
+### <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>Vilka Microsoft 365 finns tillgängliga för utvärdering eller köp?
 
-Microsoft 365 är en komplett, intelligent lösning som inkluderar Office 365, Windows 10 och Enterprise Mobility + Security som ger alla möjlighet att vara kreativa och arbeta tillsammans på ett säkert sätt. Följande Microsoft 365-prenumerationer är tillgängliga i administrationscentret så att du kan prova eller köpa nu:
+Microsoft 365 är en komplett och smart lösning som innehåller Office 365, Windows 10 och Enterprise Mobility + Security som ger alla möjlighet att vara kreativa och arbeta tillsammans på ett säkert sätt. Följande prenumerationer Microsoft 365 tillgängliga i administrationscentret som du kan prova eller köpa nu:
   
 - Microsoft 365 för företag
 - Microsoft 365 Enterprise E3
 - Microsoft 365 Enterprise E5
     
-Mer information finns i Prova [eller köpa en Microsoft 365-prenumeration.](../commerce/try-or-buy-microsoft-365.md)
+Mer information finns i Prova [eller köpa en prenumeration Microsoft 365 prenumeration.](../commerce/try-or-buy-microsoft-365.md)
 
 ### <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>Jag har hittat ett fel eller jag vill begära en funktionsförbättringar. Hur låter jag Microsoft få veta det?
 
-Vi vill gärna höra från dig! Genom att rapportera buggar och dela feedback hjälper vi oss att förbättra administrationscentret för Microsoft 365. Om du vill ge feedback väljer du knappen **Feedback** längst ned på sidan och använder formuläret för att skicka oss dina synpunkter. Markera kryssrutan och bekräfta din e-postadress om du vill att någon från Microsoft 365 Admin Center-teamet ska följa upp dina kommentarer. Vi kan inte utlova att följa upp all feedback, men vi ska försöka! 
+Vi vill gärna höra från dig! Genom att rapportera buggar och dela feedback hjälper vi oss Microsoft 365 administrationscentret bättre. Om du vill ge feedback väljer du knappen **Feedback** längst ned på sidan och använder formuläret för att skicka oss dina synpunkter. Markera kryssrutan och bekräfta din e-postadress om du vill att någon från Microsoft 365-administrationscentret ska följa upp dina kommentarer. Vi kan inte utlova att följa upp all feedback, men vi ska försöka! 
   
 Du kan också lämna feedback utanför administrationscentret på vårt UserVoice-forum. Du kan använda den här sidan för att ge förslag på funktioner som kan röstas på av andra forumanvändare: [UserVoice-forumet för det nya administrationscentret](https://go.microsoft.com/fwlink/?linkid=2024994).
 
-### <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>Vad gäller för specifika typer av IT-roller och andra arbetsytor som Säkerhet, Enhetshantering eller Exchange?
+### <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>Vad gäller för specifika typer av IT-roller och andra arbetsytor som säkerhet, enhetshantering eller Exchange?
 
-Administrationscentret för Microsoft 365 är den vanligaste startpunkten för alla team och roller som hanterar Microsoft 365. Upplevelsen, informationen och kontrollerna är skräddarsydda och anpassningsbara för varje administratör och roll. Dessutom möjliggör specialistarbetsytor djup, detaljerad kontroll. Dessa specialistarbetsytor omfattar SharePoint, Teams &amp; Skype, Exchange, Säkerhet, Efterlevnad, Enhetshantering och Azure Active Directory. Du hittar specialistarbetsytorna från navigeringsfönstret i administrationscentret för Microsoft 365 på [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) .
+Den Microsoft 365 administrationscentret är den vanligaste startpunkten för alla team och roller som hanterar Microsoft 365. Upplevelsen, informationen och kontrollerna är skräddarsydda och anpassningsbara för varje administratör och roll. Dessutom möjliggör specialistarbetsytor djup, detaljerad kontroll. Dessa specialistarbetsytor omfattar SharePoint, Teams &amp; Skype, Exchange, säkerhet, efterlevnad, enhetshantering och Azure Active Directory. Du hittar specialistarbetsytorna från navigeringsfönstret i Microsoft 365 administrationscentret på [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) .
 
 ### <a name="what-language-options-are-available-the-admin-center"></a>Vilka språkalternativ är tillgängliga i administrationscentret?
 
-Administrationscentret för Microsoft 365 är helt lokaliserat på 40 språk.
+Administrationscentret Microsoft 365 är helt lokaliserat på 40 språk.
 
 |Språk |Språk |
 |---------|---------|
@@ -164,8 +166,8 @@ Administrationscentret för Microsoft 365 är helt lokaliserat på 40 språk.
 |Hungarian | hu |
 |Indonesian  | id |
 |Italian | det |
-|Japanese | ja |
-|Korean | ko |
+|Japanska | ja |
+|Koreanska | ko |
 |Lithuanian | lt |
 |Latvian | lv |
 |Dutch | nl |

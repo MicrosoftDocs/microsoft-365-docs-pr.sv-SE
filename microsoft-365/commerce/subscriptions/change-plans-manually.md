@@ -1,5 +1,5 @@
 ---
-title: Ändra abonnemang för Microsoft 365 för företag manuellt
+title: Ändra Microsoft 365 för företag-abonnemang manuellt
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,15 +17,15 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-ROBOTS: NOINDEX
 description: Ändra prenumerationer manuellt genom att köpa en ny prenumeration och se till att båda prenumerationerna visas och är aktiva.
+ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 99bb732405d6420e430adad3ece7ea7f0c93579b
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 4935301c6d2a530f34d628f946032b7007e5c907
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333308"
+ms.locfileid: "52345184"
 ---
 # <a name="change-plans-manually"></a>Ändra abonnemang manuellt
 
@@ -50,7 +50,7 @@ Om du vill fortsätta med en manuell ändring läser du [Steg 2: Köpa en ny pre
 
 ELLER
 
-**Köp en ny prenumeration och nya licenser:** Följ anvisningarna i [Köpa en annan Microsoft 365 för företag-prenumeration om](../try-or-buy-microsoft-365.md) du vill köpa en ny prenumeration.
+**Köp en ny prenumeration och nya licenser:** Följ anvisningarna i [Köpa en Microsoft 365 för företag-prenumeration om du](../try-or-buy-microsoft-365.md) vill köpa en ny prenumeration.
 
 Se till att du köper en prenumeration för samma organisation som användarna finns i nu. Kontrollera till exempel e-postadresserna för de användare som du vill flytta. Om e-postadresserna \@ innehåller contoso.com måste du köpa en ny prenumeration för contoso.com.
 Ta med en licens för varje användare som du vill flytta.
@@ -61,7 +61,7 @@ Ta med en licens för varje användare som du vill flytta.
 
 2. **Kontrollera att båda prenumerationerna visas och är aktiva** Den prenumeration du flyttar användare från och den prenumeration som du flyttar användare till måste listas tillsammans. Om den nya prenumerationen inte finns när du kontrollerar först försöker du igen senare. Kontrollera att båda prenumerationerna är aktiva. [Den nya prenumerationen visas inte eller är inte aktiv.](#the-new-subscription-isnt-listed-or-isnt-active).
 
-3. **Kontrollera att du har tillräckligt med licenser för varje användare** Varje användare måste ha en licens som överensstämmer med prenumerationen. Om du vill flytta tio användare till Microsoft 365 Business Premium måste du se till att tio licenser är tillgängliga.
+3. **Kontrollera att du har tillräckligt med licenser för varje användare** Varje användare måste ha en licens som överensstämmer med prenumerationen. Om du vill flytta tio användare Microsoft 365 Business Premium måste du se till att tio licenser är tillgängliga.
 
 4. **Behöver du köpa fler licenser för den nya prenumerationen?**
    Gå till sidan **Dina produkter** och köp [fler licenser.](../licenses/buy-licenses.md)

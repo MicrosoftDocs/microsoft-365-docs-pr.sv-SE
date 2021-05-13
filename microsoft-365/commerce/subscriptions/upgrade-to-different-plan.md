@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Lär dig hur du uppgraderar till ett annat abonnemang.
 ms.date: 04/21/2021
-ms.openlocfilehash: 2cfb5c3c6c5052a813e7dd078f15b6c0c943b004
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 4882ad4296eb05faf0bb549ebf850562a7ebf780
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333116"
+ms.locfileid: "52344623"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Uppgradera till ett annat abonnemang
 

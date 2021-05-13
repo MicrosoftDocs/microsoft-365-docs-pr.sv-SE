@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Läs om hur du skapar anpassade typer av känslig information med Exact Data Match-baserad klassificering.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6e4429718de05362bd6bd3336c9d19ceeec64b9
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
-ms.translationtype: HT
+ms.openlocfilehash: 0bb75db5b6bb1f3a3b18033b5327f014748f6512
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52162946"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464399"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Skapa anpassade typer av känslig information med Exact Data Match-baserad klassificering
 
@@ -54,8 +54,8 @@ Med en EDM-baserad klassificering kan du skapa anpassade typer av känslig infor
 > Microsoft 365 Information Protection har stöd för teckenuppsättningsspråk med dubbla byte i förhandsgranskning för:
 > - Kinesiska (förenklad)
 > - Kinesiska (traditionell)
-> - Korean
-> - Japanese
+> - Koreanska
+> - Japanska
 > 
 > Det här stödet är tillgängligt för typer av känslig information. Se [Viktig information gällande stöd i Information Protection för teckenuppsättningar med dubbla byte (förhandsversion)](mip-dbcs-relnotes.md) för mer information.
  
@@ -610,6 +610,7 @@ De här platserna har stöd för EDM-baserade typer av känslig information:
 - Microsoft Teams (konversationer)
 - DLP för SharePoint (filer)
 - DLP-principer för Microsoft Cloud App Security
+- Principer för automatisk etikettering på serversidan
 
 EDM-baserade typer av känslig information för följande scenarier håller fortfarande på att utvecklas och är inte tillgängliga ännu:
 

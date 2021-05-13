@@ -18,18 +18,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34feeec0f8c34748678862b9aa7b20f84087eb5e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 29e9eefdf85c80b6d3c44eba01d0df57be0193a4
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934531"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346396"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Resurser för Microsoft Defender för slutpunkt i macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
+
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -51,7 +52,7 @@ Om du kan återskapa ett problem ökar du loggningsnivån, kör systemet ett tag
 
 2. Återskapa problemet
 
-3. Kör `sudo mdatp diagnostic create` för att backa Microsoft Defender för slutpunktsloggar. Filerna lagras i ett ZIP-arkiv. Det här kommandot skriver också ut filsökvägen till säkerhetskopian när åtgärden har lyckats.
+3. Kör `sudo mdatp diagnostic create` för att backa Microsoft Defender för slutpunktsloggar. Filerna lagras i ett .zip arkiv. Det här kommandot skriver också ut filsökvägen till säkerhetskopian när åtgärden har lyckats.
 
    > [!TIP]
    > Som standard sparas diagnostikloggar i `/Library/Application Support/Microsoft/Defender/wdavdiag/` . Om du vill ändra katalogen där diagnostikloggar sparas skickar du `--path [directory]` till kommandot nedan och `[directory]` ersätter med önskad katalog.
@@ -59,6 +60,7 @@ Om du kan återskapa ett problem ökar du loggningsnivån, kör systemet ett tag
    ```bash
    sudo mdatp diagnostic create
    ```
+
    ```console
    Diagnostic file created: "/Library/Application Support/Microsoft/Defender/wdavdiag/932e68a8-8f2e-4ad0-a7f2-65eb97c0de01.zip"
    ```
@@ -68,6 +70,7 @@ Om du kan återskapa ett problem ökar du loggningsnivån, kör systemet ett tag
    ```bash
    mdatp log level set --level info
    ```
+
    ```console
    Log level configured successfully
    ```
@@ -88,8 +91,7 @@ Det finns flera sätt att avinstallera Microsoft Defender för slutpunkt i macOS
 
 ### <a name="from-the-command-line"></a>Från kommandoraden
 
-- ```sudo rm -rf '/Applications/Microsoft Defender ATP.app'```
-- ```sudo rm -rf '/Library/Application Support/Microsoft/Defender/'```
+- ```sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'```
 
 ## <a name="configuring-from-the-command-line"></a>Konfigurera från kommandoraden
 
@@ -117,9 +119,9 @@ Viktiga uppgifter, som att kontrollera produktinställningar och utlösa skannin
 |Skydd   |Gör en fullständig genomsökning                             |`mdatp scan full`                                                                 |
 |Skydd   |Avbryta en pågående sökning på begäran           |`mdatp scan cancel`                                                               |
 |Skydd   |Begära en säkerhetsintelligensuppdatering     |`mdatp definitions update`                                                        |
-|EDR          |Lägg till grupptagg till enhet. EDR-taggar används för att hantera enhetsgrupper. Mer information finns på https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
-|EDR          |Ta bort grupptagg från enhet               |`mdatp edr tag remove --tag-name [name]`                                          |
-|EDR          |Lägg till grupp-ID                               |`mdatp edr group-ids --group-id [group]`                                          |
+|Identifiering och åtgärd på slutpunkt          |Lägg till grupptagg till enhet. Identifiering och åtgärd på slutpunkt-taggar används för att hantera enhetsgrupper. Mer information finns på https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
+|Identifiering och åtgärd på slutpunkt          |Ta bort grupptagg från enhet               |`mdatp edr tag remove --tag-name [name]`                                          |
+|Identifiering och åtgärd på slutpunkt          |Lägg till grupp-ID                               |`mdatp edr group-ids --group-id [group]`                                          |
 
 ### <a name="how-to-enable-autocompletion"></a>Så här aktiverar du Komplettera automatiskt
 
@@ -158,4 +160,4 @@ Så här aktiverar du Komplettera automatiskt i zsh:
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>Information om Microsoft Defender för slutpunktsportalen
 
-[Nu har EDR-funktioner](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)för macOS anlänt – på Microsoft Defender för Endpoint-bloggen – detaljerade anvisningar om vad du kan förvänta dig i Microsoft Defender för Endpoint Security Center.
+[Identifiering och åtgärd på slutpunkt för macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)har nu kommit – på Microsoft Defender för Endpoint-bloggen får du detaljerad vägledning om vad du kan förvänta dig i Microsoft Defender för Endpoint Security Center.

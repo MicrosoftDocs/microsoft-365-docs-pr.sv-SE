@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Lär dig hur du skapar och kör en fråga i en granskningsuppsättning för att ordna data för en effektivare granskning i Advanced eDiscovery ärende.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1ead897d412af2356d8b57ab8494539a5ed9a019
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 5a03b0c863f9cc2050b18ce83ed11b8a71d1db4d
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "52161633"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345806"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Fråga data i en granskningsuppsättning
 

@@ -17,19 +17,19 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8e861055067a55630da458e87b7376a607dc69c4
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: bd506caa041af2585778fb3ecd7a40562463b17e
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934303"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346420"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>Konfigurera och validera undantag för Microsoft Defender för Slutpunkt i Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Gäller för:**
+
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,7 +38,7 @@ ms.locfileid: "51934303"
 Den här artikeln innehåller information om hur du definierar undantag som gäller för sökning på begäran, skydd och övervakning i realtid.
 
 > [!IMPORTANT]
-> Undantag som beskrivs i den här artikeln gäller inte för andra Defender för Endpoint på Linux-funktioner, inklusive slutpunktsidentifiering och svar (EDR). Filer som du undantar med hjälp av metoderna som beskrivs i den här artikeln kan fortfarande utlösa EDR-aviseringar och andra identifieringar.
+> Undantag som beskrivs i den här artikeln gäller inte för andra Defender för Endpoint på Linux-funktioner, inklusive identifiering och åtgärd på slutpunkt (Identifiering och åtgärd på slutpunkt). Filer som du undantar med de metoder som beskrivs i den här artikeln kan fortfarande utlösa Identifiering och åtgärd på slutpunkt aviseringar och andra identifieringar.
 
 Du kan utesluta vissa filer, mappar, processer och process öppna filer från Defender för Slutpunkt på Linux-genomsökningar.
 

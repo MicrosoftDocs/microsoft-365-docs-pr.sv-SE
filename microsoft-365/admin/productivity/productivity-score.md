@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Översikt över Microsoft produktivitetspoäng.
-ms.openlocfilehash: 0eac22eadd099ebe4c7efbdf1198f6dc576dc080
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 1d5e163e6ec8a394065c09e51879582d101a75bf
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876137"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345244"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft produktivitetspoäng 
 
@@ -63,7 +63,7 @@ Produktivitetspoängen baseras på de kombinerade poängen i kategorierna person
 - Hälsa för Microsoft 365-applikationer (100 poäng)
 - **Totalt antal möjliga = 800 poäng**
  
- I varje poängkategori kvantifierar vi de nyckelindikatorerna för hur din organisation använder Microsoft 365 i resan mot digital transformation. Vi tillhandahåller 28-dagars och 180-dagars vyer av nyckelaktiviteter. Vi tillhandahåller även stödjande mått som inte ingår i poängberäkningen men som är viktigt för att hjälpa dig att identifiera underliggande användningsstatistik och konfigurationer som du kan adressera.
+I varje poängkategori kvantifierar vi de nyckelindikatorerna för hur din organisation använder Microsoft 365 i resan mot digital transformation. Vi tillhandahåller 28-dagars och 180-dagars vyer av nyckelaktiviteter. Vi tillhandahåller även stödjande mått som inte ingår i poängberäkningen men som är viktigt för att hjälpa dig att identifiera underliggande användningsstatistik och konfigurationer som du kan adressera.
 
 ### <a name="products-included-in-productivity-score"></a>Produkter som ingår i produktivitetspoängen 
 
@@ -74,7 +74,7 @@ Din organisations poäng uppdateras dagligen och återspeglar användaråtgärde
 
 ## <a name="prerequisites"></a>Förutsättningar 
 
-För data över personupplevelser måste du ha en Microsoft 365 for Business- eller Office 365 för Enterprise-prenumeration. Om du vill lägga till en slutpunktsanalys för din klientorganisation måste du lägga till Microsoft Intune i prenumerationen. Intune hjälper dig att skydda organisationens data genom att hantera enheter och appar. När du har Intune kan du aktivera slutpunktsanalys i Intune-upplevelsen. Läs mer om [Microsoft Intune](/mem/intune/). 
+För data över personupplevelser måste du ha en Microsoft 365 for Business- eller Office 365 för Enterprise-prenumeration. Om du vill lägga till en slutpunktsanalys för din klientorganisation måste du lägga till Microsoft Intune i prenumerationen. Intune hjälper dig att skydda din organisations data genom att hantera enheter och appar. När du har Intune kan du aktivera slutpunktsanalys i Intune-upplevelsen. Mer information om Microsoft Intune finns i [dokumentation om Microsoft Intune](/mem/intune/). 
 
 > [!NOTE]
 > En licens för Microsoft Workplace Analytics krävs inte för att få funktionen produktivitetspoäng.
@@ -107,7 +107,10 @@ På Startsidan för Produktivitetspoäng visas din organisations totala poäng o
 
 **Din organisations poäng** visas som ett procentvärde och i poäng. Du kan se dina poäng i täljaren och största möjliga poäng i nämnaren.
 
-**Riktmärke för motpart** tillåter dig att jämföra din organisations poäng med organisationer som din. Riktmärke för motpart för personupplevelsekategorier beräknas som medelvärdet av mått i en uppsättning liknande organisationer. Organisationsuppsättningen består av organisationer i din region med ett liknande antal licensierade användare, licenser, branscher och innehar Microsoft 365. 
+**Riktmärke för motpart** tillåter dig att jämföra din organisations poäng med organisationer som din. Riktmärke för motpart för personupplevelsekategorier beräknas som medelvärdet av mått i en uppsättning liknande organisationer. Organisationsuppsättningen består av organisationer i din region med ett liknande antal licensierade användare, licenser, branscher och innehar Microsoft 365.
+
+> [!NOTE]
+> Microsoft använder interna data för att fastställa vilken bransch en organisation mappar till. Klientorganisationer i en överordnad organisation mappas till samma bransch som den överordnade organisationen. Organisationer kan inte visa eller ändra branschmappningar.
 
 Slutpunktsanalys för riktmärke för motpart inkluderar mål för uppstartprestanda för enhet och rekommenderad programvarukonfiguration utifrån aggregerade medianvärden för alla klientorganisationer.
 
@@ -158,8 +161,6 @@ Dela med dig av dina tankar om Produktivitetspoäng och idéer om hur den kan f�
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Övervaka Microsoft 365-aktivitet med hjälp av rapporter](https://docs.microsoft.com/microsoft-365/admin/activity-reports/activity-reports)(artikel)
-
-[Aktivera Microsoft 365 användningsanalyser](https://docs.microsoft.com/microsoft-365/admin/usage-analytics/enable-usage-analytics) (artikel)
-
-[Översikt över administrationscenter för Microsoft 365](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) (video)
+[Övervaka Microsoft 365-aktivitet med hjälp av rapporter](/microsoft-365/admin/activity-reports/activity-reports)(artikel)\
+[Aktivera Microsoft 365 användningsanalyser](/microsoft-365/admin/usage-analytics/enable-usage-analytics) (artikel)\
+[Översikt över administrationscenter för Microsoft 365](/microsoft-365/business-video/admin-center-overview) (video)

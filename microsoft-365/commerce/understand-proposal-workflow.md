@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Läs mer om förslag som hjälper dig att köpa Produkter och tjänster från Microsoft.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: c61fa53267f2fdb60e78a05cd89aa6f364cb2395
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 5dece5ccc0cc26b157ae0cc33ec9bb1fe44c44b3
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332960"
+ms.locfileid: "52345088"
 ---
 # <a name="understand-the-proposal-workflow"></a>Förstå arbetsflödet för förslag
 
@@ -63,7 +63,7 @@ Om det här är ett nytt faktureringskonto, och ingen har accepterat ett avtal, 
 
 - Är den person som namnges i förslaget\
     ELLER
-- Är redan global [administratör för Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) för din organisation
+- Är redan [Azure Active Directory global administratör](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) för organisationen
 
 ## <a name="what-is-the-overall-workflow"></a>Vad är det övergripande arbetsflödet?
 
@@ -85,7 +85,7 @@ Följande tabell innehåller termer och definitioner som visas i ditt förslag o
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Faktureringskonto | Ett konto som används för att hantera dina kontoinställningar, fakturor, betalningsmetoder och produkter. |
 | Faktureringsprofil | Information om din organisation som låter dig anpassa vilka artiklar som ingår på fakturan och hur du betalar för fakturor. Faktureringsprofilen innehåller namnet på faktureringskontot, betalningsmetoderna som används för den specifika faktureringsprofilen, kontaktinformation, fakturainställningar och behörigheter som gör att du kan ändra faktureringsprofilen, betala räkningar samt köpa produkter och tjänster. |
-| Befintliga avtal | Alla avtal som din organisation redan har på plats med Microsoft. Detta kan inkludera, men är inte begränsat till, ett Enterprise-avtal, Microsofts & för produkter och tjänster eller Microsofts kundavtal. |
+| Befintliga avtal | Alla avtal som din organisation redan har på plats med Microsoft. Detta kan innefatta, men är inte begränsat till, företagsavtal, Microsofts & för produkter och tjänster eller Microsofts kundavtal. |
 | Microsofts kundavtal (MCA) | Ett avtal som beskriver de allmänna villkoren för kontot som din organisation kan ha med Microsoft. |
 | Microsoft-representant | En auktoriserad Microsoft-representant som förbereder ett förslag åt dig och din organisation. |
 | Organisation | En juridisk person som använder Microsofts produkter, tekniker eller tjänster. |
@@ -100,7 +100,7 @@ När du har loggat in bör du först granska informationen om din organisation.
 
 I **avsnittet Din** organisation visas det faktureringskonto som är kopplat till det. Faktureringskontoinformationen hämtas antingen från ett befintligt faktureringskonto eller skapas åt dig av Microsoft-representanten. Om din organisation är anknutna till en annan organisation kan du även se avsnittet **Lead organization** med namn och adress till den organisationen.
 
-Om det är första gången din organisation upprättar en kommersiell relation med Microsoft, och du ännu  inte har signerat en MCA, kontaktar du representanten för att göra ändringar åt dig om informationen **under** din organisation eller leadorganisation är felaktig. När du har accepterat en MCA kan du granska och ändra organisationens adress och kontaktinformation på sidan Faktureringskonton i administrationscentret för Microsoft 365. [](https://go.microsoft.com/fwlink/p/?linkid=2084771) Om organisationens namn ändras öppnar du en tjänstförfrågan för att få den uppdaterad. [Lär dig hur du öppnar en tjänstbegäran](../business-video/get-help-support.md)
+Om det är första gången din organisation upprättar en kommersiell relation med Microsoft, och du ännu  inte har signerat en MCA, kontaktar du representanten för att göra ändringar åt dig om informationen **under** din organisation eller leadorganisation är felaktig. När du har accepterat en MCA kan du granska och ändra organisationens adress och kontaktinformation på sidan Faktureringskonton i Microsoft 365 administrationscenter. [](https://go.microsoft.com/fwlink/p/?linkid=2084771) Om organisationens namn ändras öppnar du en tjänstförfrågan för att få den uppdaterad. [Lär dig hur du öppnar en tjänstbegäran](../business-video/get-help-support.md)
 
 ### <a name="your-information"></a>Din information
 
@@ -170,7 +170,7 @@ När du har beställt får du en bekräftelse på att du ska göra nästa steg. 
 
 Om du är ny kund och har köpt Azure-produkter som en del av förslaget är nästa steg att skapa ett nytt faktureringskonto. Mer information finns i Konfigurera [ditt faktureringskonto för ett Microsoft-kundavtal.](/azure/cost-management-billing/manage/mca-setup-account)
 
-Om du är en befintlig Azure-kund med ett Enterprise-avtal och du signerar en MCA för första gången är nästa steg att lära dig mer om ändringarna mellan avtal och hur du utför uppgifter med ditt nya faktureringskonto. Mer information finns i Slutför [Enterprise Agreement-uppgifter i ditt faktureringskonto för ett Microsoft-kundavtal.](/azure/cost-management-billing/manage/mca-enterprise-operations)
+Om du är en befintlig Azure-kund med en företagsavtal och du loggar in på en MCA för första gången är nästa steg att lära dig mer om ändringarna mellan avtal och hur du utför uppgifter med ditt nya faktureringskonto. Mer information finns i Slutföra [företagsavtal uppgifter i ditt faktureringskonto för ett Microsoft-kundavtal.](/azure/cost-management-billing/manage/mca-enterprise-operations)
 
 ## <a name="understand-invoicing"></a>Förstå invoicing
 

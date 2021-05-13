@@ -23,12 +23,12 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0d4c59f24f5d5979d0f63d035edd1ca668ff4314
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: eac7de88e6d4c09e6807edbbd35d6ccc4718c671
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296701"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464348"
 ---
 # <a name="what-is-a-domain"></a>Vad är en domän?
 
@@ -58,5 +58,13 @@ Du kan använda en standarddomän som  *dittföretag.onmicrosoft. <span> com*  a
 ## <a name="feeling-stuck"></a>Har du kört fast?
 
 Ring Microsoft Support – [Få hjälp med att konfigurera en domän](../../business-video/get-help-support.md)
-  
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Köpa en domän](buy-a-domain-name.md) (artikel)
+
+[Lägga till en domän i Microsoft 365](../setup/add-domain.md) (artikel)
+
+[Pilot Microsoft 365 från min egen domän](../misc/pilot-microsoft-365-from-my-custom-domain.md) (artikel)
+
 
