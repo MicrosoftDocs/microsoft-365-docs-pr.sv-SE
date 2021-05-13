@@ -23,40 +23,48 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0d4c59f24f5d5979d0f63d035edd1ca668ff4314
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: eac7de88e6d4c09e6807edbbd35d6ccc4718c671
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296701"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464348"
 ---
-# <a name="what-is-a-domain"></a><span data-ttu-id="44677-103">Vad är en domän?</span><span class="sxs-lookup"><span data-stu-id="44677-103">What is a domain?</span></span>
+# <a name="what-is-a-domain"></a><span data-ttu-id="40c8f-103">Vad är en domän?</span><span class="sxs-lookup"><span data-stu-id="40c8f-103">What is a domain?</span></span>
 
- <span data-ttu-id="44677-104">**[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter.</span><span class="sxs-lookup"><span data-stu-id="44677-104">**[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.</span></span> 
+ <span data-ttu-id="40c8f-104">**[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter.</span><span class="sxs-lookup"><span data-stu-id="40c8f-104">**[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.</span></span> 
   
-<span data-ttu-id="44677-105">En domän är ett unikt namn som visas efter **@** -tecknet i e-postadresser och efter **www.**</span><span class="sxs-lookup"><span data-stu-id="44677-105">A domain is a unique name that appears after the **@** sign in email addresses, and after **www.**</span></span> <span data-ttu-id="44677-106">i webbadresser.</span><span class="sxs-lookup"><span data-stu-id="44677-106">in web addresses.</span></span> <span data-ttu-id="44677-107">Det består vanligen av organisationens namn och ett vanligt Internetsuffix, till exempel företagets *namn. <span> com* eller *stateuniversity. <span> edu*.</span><span class="sxs-lookup"><span data-stu-id="44677-107">It typically takes the form of your organization's name and a standard Internet suffix, such as *yourbusiness.<span>com* or *stateuniversity.<span>edu*.</span></span> 
+<span data-ttu-id="40c8f-105">En domän är ett unikt namn som visas efter **@** -tecknet i e-postadresser och efter **www.**</span><span class="sxs-lookup"><span data-stu-id="40c8f-105">A domain is a unique name that appears after the **@** sign in email addresses, and after **www.**</span></span> <span data-ttu-id="40c8f-106">i webbadresser.</span><span class="sxs-lookup"><span data-stu-id="40c8f-106">in web addresses.</span></span> <span data-ttu-id="40c8f-107">Det består vanligen av organisationens namn och ett vanligt Internetsuffix, till exempel företagets *namn. <span> com* eller *stateuniversity. <span> edu*.</span><span class="sxs-lookup"><span data-stu-id="40c8f-107">It typically takes the form of your organization's name and a standard Internet suffix, such as *yourbusiness.<span>com* or *stateuniversity.<span>edu*.</span></span> 
   
-<span data-ttu-id="44677-108">Använda en egen domän som *rob@contoso. <span> com* med Microsoft 365 kan hjälpa till att bygga upp trovärdigheten och igenkänningen för ditt varumärke.</span><span class="sxs-lookup"><span data-stu-id="44677-108">Using a custom domain like *rob@contoso.<span>com* with Microsoft 365 can help build credibility and recognition for your brand.</span></span> 
+<span data-ttu-id="40c8f-108">Använda en egen domän som *rob@contoso. <span> com* med Microsoft 365 kan hjälpa till att bygga upp trovärdigheten och igenkänningen för ditt varumärke.</span><span class="sxs-lookup"><span data-stu-id="40c8f-108">Using a custom domain like *rob@contoso.<span>com* with Microsoft 365 can help build credibility and recognition for your brand.</span></span> 
   
-## <a name="choose-the-experience-thats-best-for-you"></a><span data-ttu-id="44677-109">Välj det alternativ som passar bäst för dig:</span><span class="sxs-lookup"><span data-stu-id="44677-109">Choose the experience that's best for you:</span></span>
+## <a name="choose-the-experience-thats-best-for-you"></a><span data-ttu-id="40c8f-109">Välj det alternativ som passar bäst för dig:</span><span class="sxs-lookup"><span data-stu-id="40c8f-109">Choose the experience that's best for you:</span></span>
 
- <span data-ttu-id="44677-110">**Köp en ny domän:**</span><span class="sxs-lookup"><span data-stu-id="44677-110">**Buy a new Domain:**</span></span>
+ <span data-ttu-id="40c8f-110">**Köp en ny domän:**</span><span class="sxs-lookup"><span data-stu-id="40c8f-110">**Buy a new Domain:**</span></span>
   
-<span data-ttu-id="44677-111">Använd Microsoft 365 när du köper en ny domän – vi konfigurera allt.</span><span class="sxs-lookup"><span data-stu-id="44677-111">Use Microsoft 365 to buy a new domain - we'll set everything up.</span></span> [<span data-ttu-id="44677-112">Lära sig mer.</span><span class="sxs-lookup"><span data-stu-id="44677-112">Learn more.</span></span>](buy-a-domain-name.md)
+<span data-ttu-id="40c8f-111">Använd Microsoft 365 när du köper en ny domän – vi konfigurera allt.</span><span class="sxs-lookup"><span data-stu-id="40c8f-111">Use Microsoft 365 to buy a new domain - we'll set everything up.</span></span> [<span data-ttu-id="40c8f-112">Lära sig mer.</span><span class="sxs-lookup"><span data-stu-id="40c8f-112">Learn more.</span></span>](buy-a-domain-name.md)
   
- <span data-ttu-id="44677-113">**Använd en domän som du redan äger:**</span><span class="sxs-lookup"><span data-stu-id="44677-113">**Use a domain you already own:**</span></span>
+ <span data-ttu-id="40c8f-113">**Använd en domän som du redan äger:**</span><span class="sxs-lookup"><span data-stu-id="40c8f-113">**Use a domain you already own:**</span></span>
   
-<span data-ttu-id="44677-114">Om du redan äger en domän som *you@yourcompany. <span> com* kan du lägga till den och börja OneDrive och Microsoft-apparna direkt.</span><span class="sxs-lookup"><span data-stu-id="44677-114">If you already own a domain like  *you@yourcompany.<span>com*  you can add it and start using OneDrive and Microsoft apps right away.</span></span> <span data-ttu-id="44677-115">Det tar några minuter att konfigurera e-post och Skype för företag.</span><span class="sxs-lookup"><span data-stu-id="44677-115">You'll need to take a few minutes to setup mail and Skype for Business.</span></span> 
+<span data-ttu-id="40c8f-114">Om du redan äger en domän som *you@yourcompany. <span> com* kan du lägga till den och börja OneDrive och Microsoft-apparna direkt.</span><span class="sxs-lookup"><span data-stu-id="40c8f-114">If you already own a domain like  *you@yourcompany.<span>com*  you can add it and start using OneDrive and Microsoft apps right away.</span></span> <span data-ttu-id="40c8f-115">Det tar några minuter att konfigurera e-post och Skype för företag.</span><span class="sxs-lookup"><span data-stu-id="40c8f-115">You'll need to take a few minutes to setup mail and Skype for Business.</span></span> 
   
 > [!TIP]
-> <span data-ttu-id="44677-p104">Vet du inte var din domän är registrerad? - [Få hjälp att hitta din domänregistrator](find-your-domain-registrar.md)</span><span class="sxs-lookup"><span data-stu-id="44677-p104">Not sure where your domain is registered? - [Get help finding your domain registrar](find-your-domain-registrar.md)</span></span>
+> <span data-ttu-id="40c8f-p104">Vet du inte var din domän är registrerad? - [Få hjälp att hitta din domänregistrator](find-your-domain-registrar.md)</span><span class="sxs-lookup"><span data-stu-id="40c8f-p104">Not sure where your domain is registered? - [Get help finding your domain registrar](find-your-domain-registrar.md)</span></span>
   
- <span data-ttu-id="44677-118">**Använd en standarddomän för tillfället:**</span><span class="sxs-lookup"><span data-stu-id="44677-118">**Use a default domain for now:**</span></span>
+ <span data-ttu-id="40c8f-118">**Använd en standarddomän för tillfället:**</span><span class="sxs-lookup"><span data-stu-id="40c8f-118">**Use a default domain for now:**</span></span>
   
-<span data-ttu-id="44677-119">Du kan använda en standarddomän som  *dittföretag.onmicrosoft. <span> com*  att logga in tills dess och lägga till en egen domän senare.</span><span class="sxs-lookup"><span data-stu-id="44677-119">You can use a default domain like  *yourcompany.onmicrosoft.<span>com*  to log in for now and add a custom domain later.</span></span> <span data-ttu-id="44677-120">Du kan inte ändra eller byta namn på standarddomänen - så kontrollera att du har valt rätt innan du går vidare.</span><span class="sxs-lookup"><span data-stu-id="44677-120">You can't change or rename your default domain - so make sure it's what you want before moving on.</span></span> 
+<span data-ttu-id="40c8f-119">Du kan använda en standarddomän som  *dittföretag.onmicrosoft. <span> com*  att logga in tills dess och lägga till en egen domän senare.</span><span class="sxs-lookup"><span data-stu-id="40c8f-119">You can use a default domain like  *yourcompany.onmicrosoft.<span>com*  to log in for now and add a custom domain later.</span></span> <span data-ttu-id="40c8f-120">Du kan inte ändra eller byta namn på standarddomänen - så kontrollera att du har valt rätt innan du går vidare.</span><span class="sxs-lookup"><span data-stu-id="40c8f-120">You can't change or rename your default domain - so make sure it's what you want before moving on.</span></span> 
   
-## <a name="feeling-stuck"></a><span data-ttu-id="44677-121">Har du kört fast?</span><span class="sxs-lookup"><span data-stu-id="44677-121">Feeling stuck?</span></span>
+## <a name="feeling-stuck"></a><span data-ttu-id="40c8f-121">Har du kört fast?</span><span class="sxs-lookup"><span data-stu-id="40c8f-121">Feeling stuck?</span></span>
 
-<span data-ttu-id="44677-122">Ring Microsoft Support – [Få hjälp med att konfigurera en domän](../../business-video/get-help-support.md)</span><span class="sxs-lookup"><span data-stu-id="44677-122">Call Microsoft Support - [Get help setting up a domain](../../business-video/get-help-support.md)</span></span>
-  
+<span data-ttu-id="40c8f-122">Ring Microsoft Support – [Få hjälp med att konfigurera en domän](../../business-video/get-help-support.md)</span><span class="sxs-lookup"><span data-stu-id="40c8f-122">Call Microsoft Support - [Get help setting up a domain](../../business-video/get-help-support.md)</span></span>
+
+## <a name="related-content"></a><span data-ttu-id="40c8f-123">Relaterat innehåll</span><span class="sxs-lookup"><span data-stu-id="40c8f-123">Related content</span></span>
+
+<span data-ttu-id="40c8f-124">[Köpa en domän](buy-a-domain-name.md) (artikel)</span><span class="sxs-lookup"><span data-stu-id="40c8f-124">[Buy a domain](buy-a-domain-name.md) (article)</span></span>
+
+<span data-ttu-id="40c8f-125">[Lägga till en domän i Microsoft 365](../setup/add-domain.md) (artikel)</span><span class="sxs-lookup"><span data-stu-id="40c8f-125">[Add a domain to Microsoft 365](../setup/add-domain.md) (article)</span></span>
+
+<span data-ttu-id="40c8f-126">[Pilot Microsoft 365 från min egen domän](../misc/pilot-microsoft-365-from-my-custom-domain.md) (artikel)</span><span class="sxs-lookup"><span data-stu-id="40c8f-126">[Pilot Microsoft 365 from my custom domain](../misc/pilot-microsoft-365-from-my-custom-domain.md) (article)</span></span>
+
 

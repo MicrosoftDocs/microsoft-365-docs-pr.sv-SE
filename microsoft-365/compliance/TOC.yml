@@ -172,13 +172,11 @@
           href: office-365-service-encryption.md
         - name: Customer Key
           items:
-            - name: Kundnyckel för Microsoft 365 på klientorganisation (allmänt tillgänglig förhandsversion)
-              href: customer-key-tenant-level.md
-            - name: Tjänstkryptering med Kundnyckel i Office 365
+            - name: Kundnyckel i Microsoft 365
               href: customer-key-overview.md
-            - name: Konfigurera Customer Key för Office 365
+            - name: Konfigurera Kundnyckel för Microsoft 365
               href: customer-key-set-up.md
-            - name: Hantera Customer Key för Office 365
+            - name: Hantera Kundnyckel för Microsoft 365
               href: customer-key-manage.md
             - name: Rulla eller rotera Customer Key eller en tillgänglighetsnyckel
               href: customer-key-availability-key-roll.md
