@@ -1,5 +1,5 @@
 ---
-title: Referens för innehållssökning
+title: Funktionsreferens för Innehållssökning
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,14 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Den här artikeln innehåller referensinformation om verktyget eDiscovery för innehållssökning i Microsoft 365 Efterlevnadscenter som hjälper dig få mer information om innehållssökning.
-ms.openlocfilehash: c345cf00bddba30cb543ad9682a2a332607d31fe
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: f3545cc4644ca8b0a96ee37713d8fe62be7466e5
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314378"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332900"
 ---
-# <a name="content-search-reference"></a>Referens för innehållssökning
+# <a name="feature-reference-for-content-search"></a>Funktionsreferens för Innehållssökning
+
+I den här artikeln beskrivs funktioner och funktionalitet för innehållssökning.
 
 ## <a name="content-search-limits"></a>Begränsningar för innehållssökning
 
@@ -71,6 +73,10 @@ Tänk på följande när du använder nyckelordslistan för att skapa en sökfr�
     
 - Om din sökfråga innehåller nyckelord med icke-engelska tecken (till exempel kinesiska tecken) kan du klicka på **Frågespråk-land/region**![Ikonen Frågespråk – land/region i Innehållssökning](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) och välja en kod (i formatet språk-land/region) för sökningen. Standardalternativet för språk/region är neutralt. Hur vet du om du behöver ändra språkinställningen för en innehållssökning? Om du vet att vissa innehållsplatser som du söker på innehåller icke-engelska tecken och sökningen inte returnerar några resultat kan det bero på språkinställningen. 
   
+## <a name="partially-indexed-items"></a>Delvis indexerade objekt
+
+- Delvis indexerade objekt i postlådor tas med i de uppskattade sökresultaten. Delvis indexerade objekt från SharePoint och OneDrive tas inte med i de uppskattade sökresultaten. Mer information finns i [Delvis indexerade objekt i eDiscovery](partially-indexed-items-in-content-search.md).
+
 ## <a name="searching-onedrive-accounts"></a>Söka i OneDrive-konton
 
 - Information om hur du samlar in en lista med URL-adresser för OneDrive-webbplatserna i organisationen finns i [Skapa en lista över alla OneDrive-platser i organisationen](/onedrive/list-onedrive-urls). Med skriptet i den här artikeln skapas en textfil som innehåller en lista över alla OneDrive-webbplatser. Om du vill köra det här skriptet måste du installera och använda SharePoint Online Management Shell. Se till att du lägger till URL-adressen för organisationens Min Webbplats-domän för alla OneDrive-webbplatser som du vill söka på. Det här är domänen som innehåller alla dina OneDrive-webbplatser, till exempel `https://contoso-my.sharepoint.com`. Exempel på en URL-adress för en användares OneDrive-webbplats: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
@@ -228,12 +234,6 @@ Om Exchange Online-licensen (eller hela Microsoft 365-licensen) tas bort från e
 - Om du skapar en innehållssökning med cmdleten **New-ComplianceSearch** och anger en frånkopplad postlåda som den Exchange-innehållsplats som du ska söka på, returneras inga sökresultat från den frånkopplade postlådan.
 
 Om du behöver bevara data i en frånkopplad postlåda så att de är sökbara måste du skapa ett bevarande för postlådan innan du tar bort licensen. På så sätt bevaras data och den frånkopplade postlådan är sökbar tills bevarandet tas bort. Mer information finns i [Identifiera typen av undantag som tillämpas på en Exchange Online-postlåda](identify-a-hold-on-an-exchange-online-mailbox.md).
-
-## <a name="partially-indexed-items"></a>Delvis indexerade objekt
-
-- Som vi nämnde tidigare tas delvis indexerade objekt i postlådor med i de uppskattade sökresultaten. Delvis indexerade objekt från SharePoint och OneDrive tas inte med i de uppskattade sökresultaten.
-
-- Om ett delvis indexerat objekt matchar sökfrågan (eftersom andra meddelande- eller dokumentegenskaper uppfyller sökvillkoren) tas det inte med i det uppskattade antalet icke indexerade objekt. Om ett delvis indexerat objekt undantas av sökvillkoren tas det inte med i det uppskattade antalet icke indexerade objekt. Mer information finns i artikeln [Delvis indexerade objekt i Innehållssökning i Office 365](partially-indexed-items-in-content-search.md).
 
 ## <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>Söka efter innehåll i en SharePoint Multi-Geo-miljö
 
