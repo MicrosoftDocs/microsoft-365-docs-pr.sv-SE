@@ -13,27 +13,27 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: Övervaka misslyckades och fördröjda e-postmeddelanden som skickas till eller från konton som har stor inverkan på verksamheten.
-ms.openlocfilehash: f67b9c6f0eaa229b650026670cf1b2adf88ab3c0
-ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
+ms.openlocfilehash: 2a58f4090244fc6d68be69cf6b3c8ab6e00874fa
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51632186"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535812"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>Hantera och övervaka prioritetskonton
 
-I varje Microsoft 365-organisation finns det personer som är viktiga, t.ex. chefer, chefer eller andra användare som har tillgång till känslig, egenutvecklad eller högprioriterad information.
+I alla Microsoft 365 organisationer finns det personer som är viktiga, t.ex. chefer, chefer eller andra användare som har tillgång till känslig, äganderätt eller information med hög prioritet.
 
 För att hjälpa din organisation att skydda dessa konton kan du nu ange specifika användare som prioriterade konton och utnyttja appspecifika funktioner som ger dem extra skydd. I framtiden kommer fler appar och funktioner att stödja prioritetskonton, och till en början har vi meddelat två **funktioner:** prioriterat kontoskydd och övervakning av **premium-e-postflöden.**
 
-- **Skydd av prioriterade** konton – Microsoft Defender för Office 365 (tidigare Office 365 Advanced Threat Protection) har stöd för prioritetskonton som taggar som kan användas i filter i aviseringar, rapporter och undersökningar. Mer information finns i [Användartaggar i Microsoft Defender för Office 365.](../../security/office-365-security/user-tags.md)
+- **Skydd av prioriterade** konton – Microsoft Defender för Office 365 (tidigare Office 365 Advanced Threat Protection) har stöd för prioritetskonton som taggar som kan användas i filter i aviseringar, rapporter och undersökningar. Mer information finns i [Användartaggar i Microsoft Defender för Office 365](../../security/office-365-security/user-tags.md).
 
   En naturlig fråga är "Har inte alla användare prioritet? Varför inte ange alla användare som prioritetskonton?" Ja, alla användare har prioritet, men skydd av prioriterat konto ger följande ytterligare fördelar:
 
   - **Ytterligare heuristics**: Vår analys av e-postflödet i Microsoft-datacenter visar att e-postflödesmönster för företagsledare skiljer sig från den genomsnittliga anställda. Skydd av prioritetskonto ger ytterligare heuristik som är specifikt skräddarsydd för företagsledare som inte skulle vara till förmån för en vanlig anställd.
   - **Ytterligare insyn i rapporteringen:** I praktiken finns information för alla användare (eller alla berörda användare) redan tillgänglig i aviseringar, rapporter och undersökningar. Med taggen prioritetskonton som ett filter kan du specifikt rikta dina undersökningar.
 
-- **Premium övervakning av e-postflöde** – Felfritt e-postflöde kan vara viktigt för att verksamheten ska lyckas, och leveransfördröjningar och fel kan påverka verksamheten negativt. Du kan välja ett tröskelvärde för misslyckade eller fördröjda e-postmeddelanden, få aviseringar när tröskelvärdet överskrids och visa en rapport om e-postproblem för prioritetskonton. Mer information finns i rapporten [E-postproblem för prioritetskonton i den moderna EAC](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)
+- **Premium hur Flow e-post** kan övervakas – Felfritt e-postflöde kan vara avgörande för framgång i verksamheten, och leveransfördröjningar och fel kan påverka verksamheten negativt. Du kan välja ett tröskelvärde för misslyckade eller fördröjda e-postmeddelanden, få aviseringar när tröskelvärdet överskrids och visa en rapport om e-postproblem för prioritetskonton. Mer information finns i rapporten [E-postproblem för prioritetskonton i den moderna EAC](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)
 
 Information om metodtips för säkerhet på prioriterade konton finns i [Säkerhetsrekommendationer för prioritetskonton.](../../security/office-365-security/security-recommendations-for-priority-accounts.md)
 
@@ -43,9 +43,9 @@ Funktionen **för att skydda** ett Priority-konto som beskrivs i det här avsnit
 
 - Microsoft Defender för Office 365 abonnemang 2, inklusive de med Office 365 E3, Office 365 E5, Microsoft 365 E5 eller Microsoft 365 E5 Security.
 
-Den **premiumfunktion för e-postflödesövervakning** som beskrivs i det här avsnittet är endast tillgänglig för organisationer som uppfyller följande krav:
+Funktionen **Premium e Flow postmeddelanden** som beskrivs i det här avsnittet är endast tillgänglig för organisationer som uppfyller följande krav:
 
-- Organisationen måste ha ett antal licenser på minst 10 000, från en av eller en kombination av följande produkter: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. Din organisation kan till exempel ha 3 000 Office 365 E3-licenser och 8500 Microsoft 365 E5, sammanlagt 11 500 licenser från de kvalificerande produkterna.
+- Din organisation behöver ha ett antal licenser på minst 10 000, från en av eller en kombination av följande produkter: Office 365 E3, Microsoft 365 E3, Office 365 E5 och Microsoft 365 E5. Din organisation kan till exempel ha 3 000 E3 Office 365 licenser och 8500 Microsoft 365 E5, vilket ger totalt 11 500 licenser från de kvalificerande produkterna.
 - Din organisation måste ha minst 50 månatliga aktiva Exchange Online-användare.
 
 > [!NOTE]
@@ -57,11 +57,11 @@ När du tillämpar prioritetskontoskydd på en postlåda bör du även tillämpa
 
 Lägg till prioritetskonton från **sidan Inställningar.**
 
-1. Gå till administrationscentret för Microsoft 365 på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
+1. Gå till Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> administrationscenter.
 
 2. Gå till **Kunskap**  >  **om konfigurationen** av organisationen och välj **Visa** under Övervaka dina **viktigaste konton.**
 
-3. Välj **Komma igång** eller **Hantera**.
+3. Välj **Kom igång** eller **Hantera**.
 
 4. På sidan **Lägg till prioritetskonton** skriver du namnet eller e-postadressen för den person du vill lägga till i listan med prioritetskonton i sökfältet. Du kan också ange tröskelvärdet för e-post för misslyckade eller fördröjda e-postmeddelanden och få en veckorapport med problem för prioritetskonton.
 
@@ -75,7 +75,7 @@ Lägg till prioritetskonton från sidan Aktiva användare.
 
 1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
-2. Gå **till Användare**  >  **aktiva** användare och **välj ...** högst upp på sidan. Välj **Hantera prioritetskonton.**
+2. Gå **till**  >  **Användare aktiva** användare och välj de tre punkterna (fler åtgärder) högst upp på sidan. Välj **Hantera prioritetskonton.**
 
 3. Välj **Lägg till** konton  och skriv namnet på den person du vill lägga till i listan prioritetskonton i sökfältet på sidan Lägg till prioritetskonton.
 
@@ -83,7 +83,7 @@ Lägg till prioritetskonton från sidan Aktiva användare.
 
 ## <a name="remove-a-user-from-the-priority-accounts-list"></a>Ta bort en användare från listan med prioriterade konton
 
-1. Gå till administrationscentret för Microsoft 365 på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
+1. Gå till Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> administrationscenter.
 
 2. Gå till **Kunskap**  >  **om konfigurationen** av organisationen och välj **Visa** under Övervaka dina **viktigaste konton.**
 

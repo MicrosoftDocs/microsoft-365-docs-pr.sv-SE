@@ -1,5 +1,5 @@
 ---
-title: Vad är nytt i administrationscentret för Microsoft 365?
+title: Vad är nytt i Microsoft 365 administrationscentret?
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -17,38 +17,38 @@ search.appverid:
 - MET150
 - MOE150
 - FRP150
-description: Administrationscentret för Microsoft 365 – läs mer om de funktioner som har lagts till den här månaden.
+description: I Microsoft 365 – läs mer om de funktioner som har lagts till den här månaden.
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: b226f48edd5f65100c81e95d2026c7c172959c8d
-ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
+ms.openlocfilehash: b75c6be901dfe2bcfe9a0d8fad8fbb56eecd34d6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52077317"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535752"
 ---
-# <a name="whats-new-in-the-microsoft-365-admin-center"></a>Vad är nytt i administrationscentret för Microsoft 365
+# <a name="whats-new-in-the-microsoft-365-admin-center"></a>Vad är nytt i Microsoft 365 administrationscenter
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> En del av informationen i den här artikeln kanske inte gäller Office 365 som drivs av 21Vianet.
+> En del av informationen i den här artikeln kanske inte gäller för Office 365 som drivs av 21Vianet.
 
 ::: moniker-end
 
-Vi lägger kontinuerligt till nya funktioner i administrationscentret för [Microsoft 365,](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)åtgärdar problem som vi lär oss om och gör ändringar baserat på din feedback. Ta en titt nedan för att se vad som är tillgängligt för dig idag. Vissa funktioner distribueras i olika hastigheter för våra kunder. Om du inte ser en funktion ännu kan du prova att [lägga till dig själv i den riktade versionen](manage/release-options-in-office-365.md).
+Vi lägger kontinuerligt till nya funktioner i [administrationscentret Microsoft 365,](../business-video/admin-center-overview.md)åtgärdar problem som vi lär oss om och gör ändringar baserat på din feedback. Ta en titt nedan för att se vad som är tillgängligt för dig idag. Vissa funktioner distribueras i olika hastigheter för våra kunder. Om du inte ser en funktion ännu kan du prova att [lägga till dig själv i den riktade versionen](manage/release-options-in-office-365.md).
 
 Och om du vill veta vad som är nytt i andra Microsoft-molntjänster:
 
 - [Vad är nytt i Azure Active Directory](/azure/active-directory/fundamentals/whats-new)
-- [Vad är nytt i administrationscentret för Exchange](/Exchange/whats-new)
+- [Vad är nytt i Exchange administrationscenter](/Exchange/whats-new)
 - [Vad är nytt i Microsoft Intune](/mem/intune/fundamentals/whats-new)
-- [Vad är nytt i Efterlevnadscenter för Microsoft 365](/Office365/SecurityCompliance/whats-new)
+- [Vad är nytt i Microsoft 365 efterlevnadscenter](/Office365/SecurityCompliance/whats-new)
 - [Nyheter i Microsoft 365 Defender](../security/mtp/whats-new.md)
-- [Vad är nytt i administrationscentret för SharePoint](/sharepoint/what-s-new-in-admin-center)
-- [Office-uppdateringar](/OfficeUpdates/)
-- [Kontrollera släpp-hälsohälsan för Windows](https://docs.microsoft.com/windows/deployment/update/check-release-health)
+- [Vad är nytt i SharePoint administrationscenter](/sharepoint/what-s-new-in-admin-center)
+- [Office uppdateringar](/OfficeUpdates/)
+- [Så här kontrollerar du Windows släpper hälsa](/windows/deployment/update/check-release-health)
 
 ## <a name="april-2021"></a>April 2021
 
@@ -87,9 +87,9 @@ Mer information om de nya funktionerna finns i [Meddelandecenter.](manage/messag
 
 ### <a name="whats-new-features"></a>Nya funktioner
 
-Vi har gjort förbättringar av hur du ser funktionerna "Nya" för användare i Office-apparna. Nu kan du se det omfattande innehållet i det nya fönstret Vad är det som användarna kan se. Du kan också läsa mer om funktionen innan du bestämmer dig för att låta användarna veta om funktionen. Mer information finns i Hantera [vilka Office-funktioner som visas i Nyheter.](manage/show-hide-new-features.md)
+Vi har gjort förbättringar i hur du visar funktionerna "Vad är nytt" för användare i Office apparna. Nu kan du se det omfattande innehållet i det nya fönstret Vad är det som användarna kan se. Du kan också läsa mer om funktionen innan du bestämmer dig för att låta användarna veta om funktionen. Mer information finns i Hantera [vilka Office visas i Nyheter.](manage/show-hide-new-features.md)
 
-:::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Skärmbild: Office-program – en ny sida med förbättringar i Power BI":::
+:::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Skärmbild: Office appens nya sida med förbättringar av Power BI":::
 
 ## <a name="ignite-2020-august--september"></a>Ignite 2020 (augusti & september)
 
@@ -112,18 +112,18 @@ Vi har utvecklat en uppsättning funktioner för administratörer med flera klie
 
 ### <a name="monitor-your-most-important-accounts"></a>Övervaka de viktigaste kontona
 
-Du kan övervaka och spåra misslyckade eller fördröjda e-postmeddelanden som skickas till användare som har stor inverkan på verksamheten, t.ex. din VD. Du kan spåra prioritetskonton genom att lägga till användare i listan med prioriterade konton i administrationscentret för Microsoft 365. Lägg till chefer, ledare, chefer eller andra användare som har tillgång till känslig information med hög prioritet.
+Du kan övervaka och spåra misslyckade eller fördröjda e-postmeddelanden som skickas till användare som har stor inverkan på verksamheten, t.ex. din VD. Du kan spåra prioritetskonton genom att lägga till användare i listan med prioriterade konton Microsoft 365 administrationscentret. Lägg till chefer, ledare, chefer eller andra användare som har tillgång till känslig information med hög prioritet.
 
 Prioritetskonton är endast tillgängliga för organisationer som uppfyller båda följande krav:
 
 - Office 365 E3 eller Microsoft 365 E3 eller Office 365 E5 eller Microsoft 365 E5.
-- Minst 10 000 licenser och minst 50 aktiva Exchange Online-användare varje månad.
+- Minst 10 000 licenser och minst 50 månadsvisa aktiva Exchange Online användare.
 
 ![Inställningssida för funktionen: Övervaka dina viktigaste konton](../media/MAC-WN-PriorityAccounts.png)
 
 Du kan komma igång på två sätt:
 
-- Gå till **Användare** och välj sedan Hantera prioriterade konton i menyn "fler åtgärder" **för att** lägga till användare i listan.
+- Gå till **Användare** och välj sedan Hantera prioritet-konton i menyn med tre punkter (fler åtgärder) för **att** lägga till användare i listan.
 - Gå till **Inställningar**, leta reda på installationsaktiviteten **Övervaka dina viktigaste konton** och välj sedan Komma **igång.**
 
 Mer information om prioritetskonton finns i Övervaka [konton med prioritet.](./setup/priority-accounts.md)
@@ -135,26 +135,26 @@ Vi har börjat lansera en ny sökupplevelse för administrationscentret och vi k
 - Sökrutan flyttas till rubrikområdet där det står "Administrationscenter för Microsoft 365" så att du nu kan söka på valfri sida, inte bara från startsidan. Vi har till och med en genväg: **Alt+S.**
 - Sökningen är smartare och ger dig bättre resultat, ännu snabbare. Prova att skriva "2fa" för att komma igång.
 - Sökresultaten ordnas efter vilken typ av objekt eller åtgärd du kan vidta.
-  - **Användare:** Välj användarens namn och du kan redigera den användaren direkt. Om du väljer menyn "fler åtgärder" bredvid namnet kan du återställa deras lösenord. Du kan söka efter visningsnamn, efternamn, förnamn, användarnamn eller primär e-postadress och e-postalias. Men för att få en exakt matchning söker du efter primär e-postadress eller användarnamn.
+  - **Användare:** Välj användarens namn och du kan redigera den användaren direkt. Om du väljer menyn med tre punkter (fler åtgärder) bredvid namnet kan du återställa deras lösenord. Du kan söka efter visningsnamn, efternamn, förnamn, användarnamn eller primär e-postadress och e-postalias. Men för att få en exakt matchning söker du efter primär e-postadress eller användarnamn.
   - **Grupper:** Redigera gruppen från valfri sida, lägg till medlemmar och tilldela ägare.
   - **Åtgärder:** På ungefär samma sätt som du kan söka efter en användare och sedan återställa deras lösenord kan du också söka efter "återställa lösenord" från valfri sida och sedan återställa ett eller flera lösenord för användare.
   - **Navigering:** Resultat under Navigering kan snabbt hjälpa dig att komma till en sida i administrationscentret. Om du till exempel söker efter "roller" kommer du till sidan Roller för Azure AD-roller.
-  - **Inställningar:** Sök efter inställningar som är relaterade till organisationen, tjänsterna du prenumererar på samt säkerhets- och sekretessinställningar. 
+  - **Inställningar:** Sök efter inställningar för organisationen, tjänsterna du prenumererar på och inställningar för säkerhet och sekretess. 
   - **Domäner:** Du hittar snabblänkar till domänerna, så tar länken dig till den domänens översikts- och hälsosida.
   - **Dokumentation:** Om vi inte kan hitta ett resultat åt dig försöker vi hitta dokumentation som kan vara till hjälp. Det tar lite längre tid för den curated-listan med artiklar att hitta en matchning, så vänta en sekund så att sökningen hittar resultaten. 
   - **Feedback:** Hittade du inte det du letade efter? Skicka feedback från Sök. Vi kommer att lägga till sökfunktioner för fler sidor och fler funktioner i administrationscentret.
 
-### <a name="microsoft-365-admin-mobile-app"></a>Microsoft 365 Admin-mobilapp
+### <a name="microsoft-365-admin-mobile-app"></a>Microsoft 365 admin-mobilappen
 
-Med [Microsoft 365](https://www.microsoft.com/microsoft-365/business/manage-office-365-admin-app)Admin-mobilappen , som ingår i din prenumeration, kan du hantera Microsoft 365 från din mobila enhet så att du kan hålla dig borta från skrivbordet och utföra dagliga uppgifter. Faktum är att det finns över 90 funktioner i appen – och vi har just lagt till några till:
+Med Microsoft 365 administratörsmobilappen , som ingår i din prenumeration, kan du hantera Microsoft 365 från din mobila enhet så att du kan hålla dig borta från skrivbordet och utföra dagliga uppgifter. [](https://www.microsoft.com/microsoft-365/business/manage-office-365-admin-app) Faktum är att det finns över 90 funktioner i appen – och vi har just lagt till några till:
 
-- **Stöd för Microsoft Inunes** principer för hantering av mobilprogram och villkorsstyrd åtkomst: Du kan nu använda din personliga enhet för att hantera Microsoft 365 även om din organisation har aktiverat Intunes hantering av mobilprogram och villkorsstyrda åtkomstprinciper.
-- **Meddelanden i Meddelandecenter:** Aktivera aviseringar i **meddelandecentret** i  >  **Inställningar Meddelanden** om du vill bli avisering om inlägg i nya meddelandecenter. Via meddelanden vill vi se till att du håller dig informerad om viktig information och händelser i hela klientorganisationen.
-- **Faktureringsaviseringar:** Du kan också aktivera faktureringsaviseringar på Inställningar-aviseringar om du vill få faktureringsaviseringar på din enhet om en prenumeration snart upphör  >   att gälla.
-- **Mörkt läge:** Välkommen till den mörka sidan av mobilappen. Det här var en av våra mest efterfrågade funktioner. Gå till  >  **Inställningar-teman** för att aktivera det.
+- **Stöd för Microsoft Intune:s** principer för hantering av mobilprogram och villkorsstyrd åtkomst: Du kan nu använda din personliga enhet för att hantera Microsoft 365 även om din organisation har aktiverat Intunes hantering av mobilprogram och villkorsstyrd åtkomst.
+- **Meddelanden i Meddelandecenter:** Aktivera aviseringar i meddelandecentret **Inställningar** meddelanden om du vill  >   bli avisering om nya inlägg i meddelandecentret. Via meddelanden vill vi se till att du håller dig informerad om viktig information och händelser i hela klientorganisationen.
+- **Faktureringsaviseringar:** Du kan också aktivera faktureringsaviseringar **på Inställningar-aviseringar** om du vill få faktureringsaviseringar på din enhet om en prenumeration snart  >   upphör att gälla.
+- **Mörkt läge:** Välkommen till den mörka sidan av mobilappen. Det här var en av våra mest efterfrågade funktioner. Gå till **Inställningar**  >  **teman** för att aktivera det.
 - **Rapportera ett problem:** Du kan nu rapportera ett problem i appen eller visa problem som rapporterats av andra administratörer. Besök **Tjänstens hälsa** om du vill kolla in det.
 
-![Sidan Hälsa i Microsoft 365-administratörsappen med aviseringar för meddelandecenter, tjänstens hälsa och faktureringsaviseringar.](../media/MAC-WN-AdminMobileApp.png)
+![Sidan Hälsa i Microsoft 365 administratörsapp med aviseringar för meddelandecenter, tjänstens hälsa och faktureringsaviseringar.](../media/MAC-WN-AdminMobileApp.png)
 
 ### <a name="usage-recommendations-for-small-and-medium-businesses"></a>Användningsrekommendationer för små och medelstora företag
 
@@ -172,12 +172,12 @@ Mer information om hur du på ett säkert sätt tillåter distansarbete och en p
 
 Vi tittar kontinuerligt på och uppdaterar innehåll och verktyg för att hålla koll på ändringar i produkten. Vi har nu många fler självbetjäningsverktyg som hjälper dig att lösa problem snabbt och effektivt. Här är några som nyligen har lagts till:
 
-- Ändra begränsningsprincipen för Exchange-webbtjänsten
-- Kontrollera status för teams etablering och validering för specifika användare
+- Ändra Exchange för webbtjänstbegränsning
+- Kontrollera status för Teams och validera för specifika användare
 - Åtgärda DKIM-konfigurationsproblem
 - Diagnostisera användarregistreringsfel i Intune
 
-Och vi distribuerar den nya och förbättrade supportupplevelsen som du redan ser i administrationscentret för Microsoft 365 till några av de andra administrationscenteren. Administrationscenter för Teams administrationscenter för säkerhet och efterlevnad har redan den här nya upplevelsen. Och snart kommer **administrationscentret för Exchange,** Administrationscenter för **SharePoint** **och Office.com** att uppdateras tillsammans med den nya hjälpupplevelsen för administratörer.
+Och vi lanserar den nya och förbättrade supportupplevelsen som du redan ser i Microsoft 365 administrationscenter för några av de andra administrationscenteren. Teams Administrationscenter för administrationscenter för säkerhet och efterlevnad har redan den här nya upplevelsen. Och snart **Exchange administrationscenter**, **SharePoint,** och **Office.com** uppdateras tillsammans med den nya hjälpupplevelsen för administratörer.
 
 ### <a name="manage-changes-with-microsoft-planner"></a>Hantera ändringar med Microsoft Planner
 
@@ -190,10 +190,10 @@ Mer information finns i den här artikeln och videon om du vill se hur det funge
 ### <a name="documentation-training-and-videos"></a>Dokumentation, utbildning och videoklipp
 
 - Helt nytt och precis i tid för Microsoft Ignite –[Den virtuella hubben.](https://adoption.microsoft.com/virtual-hub/) Djupdykning i teknisk utbildning för IT-proffs och utvecklare. Hitta snabbt runt 20 nya videor som en del #SIDETRACKED, namnet på Ignite-administratörsspåret i år.
-- Vad är nytt i [Microsoft 365-videoserien:](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s) Den här månaden täcker vi in nya funktioner som är tillgängliga i Whiteboard för Teams och på webben, hur du automatiserar användaretablering till Azure AD, nya Power Automate-utlösare och åtgärder i Teams med mera. Och håll utkik efter nästa månad, där vi hittar en sammanfattning av allt det som händer på Ignite!
-- Vi har gjort en ny design för [dokumentationssidan för Microsoft 365](/microsoft-365) som fokuserar på lösningar först. Vi kommer att framhäva nya lösningar när de blir tillgängliga på den här sidan, så håll ett öga på det.
+- [](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s) Vad är nytt i Microsoft 365-videoserien: Den här månaden tar vi upp nya funktioner i Whiteboard för Teams och på webben, hur du automatiserar användaretablering till Azure AD, nya Power Automate-utlösare och åtgärder i Teams med mera. Och håll utkik efter nästa månad, där vi hittar en sammanfattning av allt det som händer på Ignite!
+- Vi har gjort en ny design [Microsoft 365 dokumentsidan](/microsoft-365) som fokuserar på lösningar först. Vi kommer att framhäva nya lösningar när de blir tillgängliga på den här sidan, så håll ett öga på det.
 
-![Ny landningssida för Microsoft 365-lösningsdokumentation med lösningar som "Ge fjärranslutna medarbetare möjlighet".](../media/MAC-WN-M365Docspage.png)
+![Ny landningssida för Microsoft 365 lösningar med lösningar som "Ge fjärranslutna medarbetare möjlighet".](../media/MAC-WN-M365Docspage.png)
 
 ## <a name="july-2020"></a>Juli 2020
 
@@ -221,13 +221,13 @@ Domänhantering kan vara komplicerat och vi har släppt en ny funktion för att 
 
 ### <a name="docs-training-and-videos-july-2020"></a>Dokument, utbildning och videor (juli 2020)
 
-Vad är nytt i [Microsoft 365-videoserien:](https://youtu.be/m1Nu8WJgCDY) Den här månaden visar vi den nya Yammer-upplevelsen för webben och mobil, hur du integrerar appen Yammer Communities för Microsoft Teams, nya princippaket för att stödja medarbetare i frontlinjen och chefer med mera.
+[](https://youtu.be/m1Nu8WJgCDY) Vad är nytt i Microsoft 365-videoserien: Den här månaden visar vi den nya Yammer-upplevelsen för webben och mobilen, hur du integrerar appen Yammer Communities för Microsoft Teams, nya princippaket för att stödja medarbetare och chefer i frontlinjen med mera.
 
 ## <a name="june-2020"></a>Juni 2020
 
-### <a name="keeping-up-with-office-whats-new-management"></a>Hålla dig ajour med den nya hanteringen i Office
+### <a name="keeping-up-with-office-whats-new-management"></a>Hålla dig Office med ny hantering
 
-För några månader sedan lade vi till en inställning som låter dig hantera meddelandena Vad är nytt som visas i en användares Office-program. Den här månaden släppte vi ett nytt startsidaskort som  hjälper dig att agera snabbt och hålla reda på meddelanden om Vad är nytt som du vill visa för användarna i organisationen.
+För några månader sedan lade vi till en inställning som låter dig hantera meddelandena Vad är nytt som visas i en användares e Office appar. Den här månaden släppte vi ett nytt startsidaskort som  hjälper dig att agera snabbt och hålla reda på meddelanden om Vad är nytt som du vill visa för användarna i organisationen.
 
 ### <a name="docs-training-and-videos-june"></a>Dokument, utbildning och videor (juni)
 
@@ -237,20 +237,20 @@ För några månader sedan lade vi till en inställning som låter dig hantera m
 
 ### <a name="new-update-channel-for-office"></a>Ny uppdateringskanal för Office
 
-Den 12 maj meddelade vi att en ny uppdateringskanal för Office: Monthly Enterprise Channel är tillgänglig. Den här uppdateringskanalen ger användarna nya Office-funktioner en gång i månaden, på den andra tisdagen i månaden.
+Den 12 maj meddelade vi att en ny uppdateringskanal är tillgänglig för Office: Monthly Enterprise Channel. Den här uppdateringskanalen ger användarna tillgång Office funktioner en gång i månaden, på den andra tisdagen i månaden.
 
-Om du tillåter att användarna själva installerar Office från portalen kan du välja Månatlig företagskanal för dem. Det gör du genom att logga in på administrationscentret för Microsoft 365 och gå till **Visa alla** inställningar  >   >  **OrganisationsinställningarTjänster**  >  **för** nedladdning  >  **av Office-programvara.** Om du väljer En gång i månaden **(Månatlig Enterprise-kanal)** kommer alla nya självinstallationer av Office att konfigureras för att använda månatlig Enterprise-kanal.
+Om du tillåter att användarna själv installerar Office från portalen kan du välja Månatlig företagskanal för dem. Det gör du genom att logga in Microsoft 365 administrationscenter och gå till Visa **Inställningar**  >   >  **Organisations**  >  **inställningstjänster för** Office för nedladdning av  >  **programvara.** Om du väljer En gång i månaden **(Månatlig Enterprise-kanal)** kommer alla nya självinstallationer av Office att konfigureras för att använda Månatlig Enterprise-kanal.
 
 I och med utgivningen av Månadskanal för företag kan vi även ändra namnen på de befintliga uppdateringskanalerna. Till exempel byter månadskanal namn till aktuell kanal. De nya namnen verkställs den 9 juni 2020.
 
-Mer information finns i Ändringar [för att uppdatera kanaler för Microsoft 365-appar.](/DeployOffice/update-channels-changes)
+Mer information finns i [Ändringar för uppdateringskanaler för Microsoft 365-applikationer](/DeployOffice/update-channels-changes).
 
 ### <a name="new-admin-roles"></a>Nya administratörsroller
 
-Vi har lagt till några nya Azure Active Directory-administratörsroller i administrationscentret för Microsoft 365.
+Vi har lagt till några Azure Active Directory administratörsroller i Microsoft 365 administrationscenter.
 
 - Rollen Hybrididentitetsadministratör ger användarna behörighet att hantera molnetablerings- och autentiseringstjänster.
-- Med rollen Nätverksadministratör kan användare hantera nätverksplatser och granska nätverksinsikter för Microsoft 365-programvaror som en tjänst.
+- Med rollen Nätverksadministratör kan användare hantera nätverksplatser och granska nätverksinsikter för Microsoft 365 programvara som en tjänst.
 - Rollen Skrivaradministratör ger behörighet att hantera alla aspekter av skrivare och skrivaranslutningar.
 - Skrivarteknikern är en del av rollen Administratör för skrivare där dessa användare kan registrera och avregistrera skrivare samt uppdatera skrivarstatus.
 Mer information om de här rollerna finns i [Om administratörsroller.](./add-users/about-admin-roles.md)
@@ -261,7 +261,7 @@ Många administratörer har hört att de behöver dela information om grupper oc
 
 ### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365-center för lösningar och arkitektur
 
-Den här månaden släppte vi en ny webbplats som kallas [https://docs.microsoft.com]() [Microsoft 365-lösning](../solutions/index.yml)och arkitekturcenter, som innehåller den tekniska vägledning du behöver för att förstå, planera och implementera integrerade Microsoft 365-lösningar för säkert och kompatibelt samarbete. I det här mitten hittar du:
+Den här månaden släppte vi en ny webbplats som kallas Microsoft 365-lösningen och arkitekturcentret, som sammanför den tekniska vägledning du behöver för att förstå, planera och implementera integrerade Microsoft 365-lösningar för säkert och [https://docs.microsoft.com]() kompatibelt samarbete. [](../solutions/index.yml) I det här mitten hittar du:
 
 - Vägledning för grundlösning
 - Arbetsbelastningslösningar och scenariovägledning
@@ -271,8 +271,8 @@ Den här månaden släppte vi en ny webbplats som kallas [https://docs.microsoft
 
 ### <a name="docs-training-and-videos-may"></a>Dokument, utbildning och videor (maj)
 
-- Vad är nytt i **Microsoft 365-videoserien:** Den här månaden täcker vi in den nya supportupplevelsen i Administrations- och efterlevnadscenter för Teams, Planner-integrering med Meddelandecenter och den nya 3x3-videolayouten i Microsoft Teams. 
-- [Hjälphubben för Administrationscenter för Microsoft 365](./index.yml) uppdaterades så att du snabbare hittar det du behöver. Om du tittar på den sidan just nu har vi lagt till ett kort för att informera dig om viktiga uppdateringar och ändringar.
+- Vad är nytt i **Microsoft 365-videoserien:** Den här månaden tar vi upp den nya supportupplevelsen i administrationscentret för Teams och Säkerhets- och efterlevnadscenter, Planner-integreringen med Meddelandecenter och den nya 3x3-videolayouten i Microsoft Teams. 
+- Sidan [Microsoft 365 hjälphubben för](./index.yml) administrationscentret uppdaterades så att du snabbare hittar det du behöver. Om du tittar på den sidan just nu har vi lagt till ett kort för att informera dig om viktiga uppdateringar och ändringar.
 
 ## <a name="april-2020"></a>April 2020
 
@@ -280,7 +280,7 @@ Den här månaden släppte vi en ny webbplats som kallas [https://docs.microsoft
 
 [April 2020](#april-2020)
 
-Vi klarade det! Vi har tagit det andra steget mot en enhetlig rollupplevelse och du kan nu hantera Intune-roller i administrationscentret för Microsoft 365. Du kan också dra nytta av funktioner som möjligheten att söka efter roller och visa rollbehörigheter. Det innebär att du inte behöver två separata verktyg för att hantera roller för Microsoft 365 och Intune. När du loggar in i administrationscentret för Microsoft 365 ser du att det finns två pivoter på sidan Roller, en för Azure AD och en för Intune.
+Vi klarade det! Vi har tagit det andra steget mot en enhetlig rollupplevelse och du kan nu hantera Intune-roller i Microsoft 365 administrationscenter. Du kan också dra nytta av funktioner som möjligheten att söka efter roller och visa rollbehörigheter. Det innebär att du inte behöver två separata verktyg för att hantera roller för Microsoft 365 och Intune. När du loggar in Microsoft 365 administrationscentret ser du att det finns två pivoter på sidan Roller, en för Azure AD och en för Intune.
 
 ![Sidan Roller med Intune pivot markerat](../media/MAC-WN-IntuneRoles.png)
 
@@ -290,24 +290,24 @@ Från och med maj kommer administratörer i riktad version att se knappen "Plann
 
 [Gå med i Riktad version](manage/release-options-in-office-365.md) för att komma igång!
 
-### <a name="need-help-launched-in-teams-admin-center--security-and-compliance-centers"></a>"Behöver du hjälp?" lanseras i Administrationscenter för Teams & för säkerhet och efterlevnad
+### <a name="need-help-launched-in-teams-admin-center--security-and-compliance-centers"></a>"Behöver du hjälp?" lanseras Teams administrationscenter för & säkerhet och efterlevnad
 
-Administrationscentret för Teams, Säkerhetscenter och Efterlevnadscenter använder nu samma "Behöver du hjälp?" funktion som administrationscentret för Microsoft 365 använder för att hitta hjälp och kontakta support. Vi har fått många feedback från administratörer som du vill ha samma nivå av hjälp och support och vi är glada att kunna ge dig det. Prova själv och ge oss feedback!
+På Teams, Säkerhetscenter och Efterlevnadscenter används nu samma "Behöver du hjälp?" som administrationscentret Microsoft 365 kan använda för att hitta hjälp och kontakta support. Vi har fått många feedback från administratörer som du vill ha samma nivå av hjälp och support och vi är glada att kunna ge dig det. Prova själv och ge oss feedback!
 
 #### <a name="need-chat"></a>Behöver du chatta?
 
-Vår supportagenter har arbetat hemifrån medan de fortfarande tar kundfall och begränsningar på bandbredden till Internet medan de arbetar hemifrån kan påverka samtalskvaliteten. För att kunna fortsätta ge support har vi lanserat supportalternativ för livechatt för kommersiella kunder i administrationscentret för Microsoft 365.
+Vår supportagenter har arbetat hemifrån medan de fortfarande tar kundfall och begränsningar på bandbredden till Internet medan de arbetar hemifrån kan påverka samtalskvaliteten. För att kunna fortsätta ge support har vi lanserat supportalternativ för livechatt för kommersiella kunder Microsoft 365 administrationscenter.
 
 När du skapar en serviceförfrågan ser du nu chatt som ett alternativ, utöver telefon och e-post. Välj chatt som önskad kommunikationskanal och skapa begäran. När du har skapat din begäran kan du starta chatten när du är redo att chatta med Microsoft-representanter.
 
-### <a name="teams-updates"></a>Teams-uppdateringar
+### <a name="teams-updates"></a>Teams uppdateringar
 
-Med den ökade användningen av Teams har vi lagt till några funktioner som hjälper dig att hantera dem.
+I och med den ökade Teams vi några funktioner som hjälper dig att hantera dem.
 
-- Ett nytt rekommendationskort på administrationscentrets startsida visar vilka användare som inte aktivt har använt Teams på 30 dagar. Du kan skicka ett e-postmeddelande för utbildning till de användarna så att de kan komma igång med Teams.
-- **Samla människor med team:** Gå till Inställningar för att se en ny sida som hjälper dig att aktivera Teams för licensierade användare och tillåta gäståtkomst, så att du kan arbeta med externa kunder i Teams. 
-- Ett Microsoft Teams-kort är nu fäst som standard på din startsida. Det visar om Teams är aktiverat och om gäståtkomst tillåts. Du kan också kontrollera installationsstatus för nyligen licensierade Teams-användare och kontrollera om nätverksproblem kan påverka Teams-användare.
-- Slutligen är Teams nu ett steg i det första set up-flödet om du har köpt en licens som innehåller Teams.
+- Ett nytt rekommendationskort på administrationscentrets startsida visar vilka användare inte aktivt har Teams 30 dagar. Du kan skicka ett e-postmeddelande med ett utbildningsmeddelande så att de kan komma igång Teams.
+- **Samla människor med grupper:** Gå till Konfigurera om du vill se en ny sida där du kan aktivera Teams för licensierade användare och tillåta gäståtkomst, så att du kan arbeta med externa kunder i Teams. 
+- En Microsoft Teams är nu fäst som standard på din startsida. Det visar Teams är aktiverat och om gäståtkomst tillåts. Du kan också kontrollera installationsstatus för nyligen licensierade Teams och kontrollera om nätverksproblem kan påverka Teams användare.
+- Slutligen är Teams ett steg i det första set up-flödet om du har köpt en licens som innehåller Teams.
 
 ### <a name="productivity-score"></a>Produktivitetspoäng
 
@@ -318,23 +318,23 @@ Produktivitetsresultatet ger insikter om hur användare använder Microsofts mol
 - Ny kommunikationskategori som en del av personalupplevelse
 - Användarinformation med organisationens metadata i kategorier för anställds upplevelse
 
-Om du vill veta mer kan du läsa bloggen: Mät och förbättra [Microsoft 365-upplevelsen med Microsoft Productivity Score.](https://techcommunity.microsoft.com/t5/microsoft-365-blog/measure-and-improve-the-microsoft-365-experience-with-microsoft/ba-p/1348618) Produktivitetsresultatet är för närvarande i privat förhandsversion. [Kom igång genom att gå med i den](https://aka.ms/productivityscorepreview) privata förhandsversionen av Produktivitetsresultatet.
+Om du vill veta mer kan du läsa bloggen: Mät och förbättra Microsoft 365 [med Microsoft Productivity Score.](https://techcommunity.microsoft.com/t5/microsoft-365-blog/measure-and-improve-the-microsoft-365-experience-with-microsoft/ba-p/1348618) Produktivitetsresultatet är för närvarande i privat förhandsversion. [Kom igång genom att gå med i den](https://aka.ms/productivityscorepreview) privata förhandsversionen av Produktivitetsresultatet.
 
 ### <a name="groups-updates"></a>Uppdateringar för grupper
 
 Vi har två uppdateringar för grupper den här månaden:
 
-- Nu kan du redigera e-postadresser för Office 365-grupper (kallas även grupper i Outlook och snart kallas de Microsoft 365-grupper).
+- Nu kan du redigera e-postadresser för Office 365 grupper (kallas även grupper i Outlook och snart kallas det Microsoft 365 grupper).
 - Vi har lyssnat på din feedback och lagt till tydligare felmeddelanden om varför du inte kan konvertera en grupp till ett Microsoft-team.
 
 ### <a name="docs-videos-and-training-april"></a>Dokument, videor och utbildning (april)
 
-Vad är nytt i **Microsoft 365-videoserien:** Den här månaden tar vi upp tips och resurser som hjälper småföretag att övergå till distansarbete, bland annat hur man distribuerar Microsoft Teams, resurser för distansutbildning för att hålla kontakten med kunder och partner samt det nya Microsoft 365 Business Voice-abonnemanget. [Vad är nytt i Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+Vad är nytt i **Microsoft 365-videoserien:** Den här månaden tar vi upp tips och resurser som hjälper småföretag att övergå till distansarbete, bland annat hur man distribuerar Microsoft Teams, resurser för distansutbildning för att hålla kontakten med kunder och partner samt den nya Microsoft 365 Business Voice-planen. [Vad är nytt i Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
 #### <a name="for-your-users"></a>För dina användare
 
 - [Schemalägga ett möte](../business-video/schedule-guest-meeting.md)
-- [Ansluta till ett Teams-möte](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
+- [Ansluta till ett Teams möte](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
 - [Skapa ett organisationsteam](../business-video/org-wide-team.md)
 - [Skapa ett team med gäster](../business-video/team-with-guests.md)
 - [Gå med i ett team som gäst](../business-video/join-team-guest.md)
@@ -355,27 +355,27 @@ Vi har fått mycket feedback från administratörer om hur svårt det är att ti
 
 ![Sidan Lägg till användarbekräftelse med felet.](../media/MAC-WN-ImprovedLicensing.png)
 
-### <a name="microsoft-teams-home-page-card"></a>Startsida för Microsoft Teams
+### <a name="microsoft-teams-home-page-card"></a>Microsoft Teams hemsideskort
 
-Med denna uppåtklickning i Teams-användning får vissa organisationer ett fäst instrumentpanelskort som gör Teams mer lätt att hitta. Kortet innehåller också länkar till utbildning och dokument som hjälper din organisation övergå till distansarbete. Gå bara till startsidan **för** att se det nya kortet.
+Om du ökar Teams användningen får vissa organisationer ett fäst instrumentpanelskort som gör att Teams kan upptäckas. Kortet innehåller också länkar till utbildning och dokument som hjälper din organisation övergå till distansarbete. Gå bara till startsidan **för** att se det nya kortet.
 
-![Startsida för Microsoft Teams](../media/MAC-WN-TeamsCard.PNG)
+![Microsoft Teams hemsideskort](../media/MAC-WN-TeamsCard.PNG)
 
 ### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>Anpassa organisationens tema för SharePoint-mobilappen
 
-Med hjälp av administrationscentret för Microsoft 365 kan du nu anpassa organisationens tema i SharePoint-mobilappen för iOS- och SharePoint-mobilappen för Android. Den här funktionen ger praktiskt taget en appupplevelse på intranätet för mobila enheter som kan matcha din SharePoint Online för anställda när de är på språng. Temaanpassning inkluderar logotypbilden, navigeringsfältsfärg, text- och ikonfärger och accentfärger som gör det enkelt att känna igen.
+Med hjälp Microsoft 365 administrationscentret kan du nu anpassa organisationens tema i SharePoint-mobilappen för iOS och SharePoint för Android. Den här funktionen ger enkelt en appupplevelse på intranätet för mobila enheter som kan matcha din SharePoint Online för anställda när de är på språng. Temaanpassning inkluderar logotypbilden, navigeringsfältsfärg, text- och ikonfärger och accentfärger som gör det enkelt att känna igen.
 
 ![Diagram som mappar inställningarna i administrationscentret till mobilappen.](../media/MAC-WN-CustThemeSP.png)
 
 ### <a name="improvements-to-the-add-a-group-wizard"></a>Förbättringar i guiden Lägga till en grupp
 
-När administratörer skapade en ny grupp – och gjorde den till ett team på samma gång, kunde de tilldela ägare som inte har en licens som innehåller Teams. Och det skapade problem. Vi har uppdaterat guideflödet för att verifiera att ägare har en Licens för Teams och om de inte har inaktiverat alternativet att omvandla gruppen till ett team.
+När administratörer har skapat en ny grupp – och gjort den till ett team på samma gång, kan de tilldela ägare som inte har en licens som innehåller Teams. Och det skapade problem. Vi har uppdaterat guideflödet för att verifiera att ägare har en Teams licens och om de inte har inaktiverat alternativet att omvandla gruppen till ett team.
 
-### <a name="microsoft-365-offerings-for-small-and-medium-businesses"></a>Microsoft 365-erbjudanden för små och medelstora företag
+### <a name="microsoft-365-offerings-for-small-and-medium-businesses"></a>Microsoft 365 produkter för små och medelstora företag
 
 Vi vet att detta är ett meddelande för nästa månad, men vi vill se till att du är förberedd.
 
-Från och med den 21 april gör vi ändringar som rör våra Office 365-prenumerationer för små och medelstora företag – och till Office 365 ProPlus. Dessa produkter kommer nu att använda Microsoft 365-varumärket.
+Från och med den 21 april gör vi ändringar som rör våra abonnemang Office 365 för små och medelstora företag – och för att Office 365 ProPlus. Dessa produkter kommer nu att använda Microsoft 365 varumärke.
 
 De nya produktnamnen verkställs den 21 april 2020. Det här är bara en ändring av produktnamnet och det finns inga pris- eller funktionsändringar för stunden.
 
@@ -389,7 +389,7 @@ De nya produktnamnen verkställs den 21 april 2020. Det här är bara en ändrin
 
 ### <a name="videos-training-and-docs"></a>Videor, utbildningar och dokument
 
-Vad är nytt i [Microsoft 365-webbserien:](https://go.microsoft.com/fwlink/p/?linkid=2118096)I den här månadens avsnitt uppmärksammar vi 3-årsminnet av Microsoft Teams och täcker in nya funktioner, bland annat förbättrad ljudkvalitet i onlinemöten, riktad kommunikation för firstline managers med Shifts-appen, Teams och Skype-konsumentkompatibilitet med mera.
+[](https://go.microsoft.com/fwlink/p/?linkid=2118096)Vad är nytt i Microsoft 365-webbserien: I den här månadens avsnitt visar vi 3-års årsdagen av Microsoft Teams och täcker in nya funktioner, bland annat förbättrad ljudkvalitet i onlinemöten, riktad kommunikation för firstline managers med appen Shifts, Teams och Skype för konsumenters interoperabilitet.
 
 ## <a name="february-2020"></a>Februari 2020
 
@@ -399,7 +399,7 @@ Vi har fått mycket feedback från partner och administratörer om utmaningarna 
 > [!TIP]
 > Du behöver inte göra något för att organisationsbytet ska visas så länge du är en partner för minst en organisation.
 
-1. Välj organisationsnamnet i administrationscentret för Microsoft 365.
+1. Välj Microsoft 365 i administrationscentret.
 ![Skärmdump: högst upp på startsidan som visar organisationens profilnamn med ikonen för omkopplaren.](../media/MAC-Organization-switcher.png)
 
 2. I organisationsbytet väljer du den organisation du vill hantera.
@@ -412,10 +412,10 @@ Det är helt olika!!!
 Några ändringar i gruppområdet den här månaden:
 
 - **Sortera efter gruppnamn**: Du kan sortera grupplistan i alfabetisk ordning genom att välja **kolumnen Gruppnamn.**
-- **Återställa borttagna Microsoft 365-grupper:** Du behöver inte längre gå till administrationscentret för Exchange för att återställa borttagna Microsoft 365-grupper. Gå till **Microsoft 365 administrationscenter** \> **Grupper** \> **Borttagna grupper** \> (välj en grupp i listan) \> **Återställ grupp**. Gruppen återställs till listan Grupper och **gruppens** e-post, konversationer, anteckningsbok, filer och kalender återställs.
+- **Återställa borttagna Microsoft 365 grupper:** Du behöver inte längre gå till Exchange administrationscenter för att återställa borttagna Microsoft 365 grupper. Gå till **Microsoft 365 administrationscenter** \>  \> **Grupper Borttagna grupper** \> (välj en grupp i listan) \> **Återställ grupp**. Gruppen återställs till listan Grupper och **gruppens** e-post, konversationer, anteckningsbok, filer och kalender återställs.
 
 ### <a name="videos-training-and-docs-february"></a>Videor, utbildningar och dokument (februari)
 
-- Nyheter i **Microsoft 365-videoserien:** Den här månaden fokuserar vi på anpassade sökfunktioner för SharePoint Online, hanteringsfunktionen Nyheter i Office som gör att du kan visa och dölja specifika funktioner för slutanvändare via hjälpfönstret i programmet, de senaste säkerhets- och efterlevnadsuppdateringarna i Yammer med mera. Här är det senaste avsnittet: [Nyheter i Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+- Nyheter i **Microsoft 365-videoserien:** Den här månaden fokuserar vi på anpassade sökfunktioner för SharePoint Online, hanteringsfunktionen "Nyheter" i Office som gör att du kan visa och dölja specifika funktioner för slutanvändare via hjälpfönstret i appen, de senaste säkerhets- och efterlevnadsuppdateringarna i Yammer med mera. Här är det senaste avsnittet: [Nyheter i Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
 - **Docs move**: We combined the Office 365 admin web articles with the Microsoft 365 content and you might've noticed the new URL. Den här artikeln brukade exempelvis finnas **på:** docs.microsoft.com/Office365/Admin/whats-new-in-preview , men URL:en är nu: **docs.microsoft.com/microsoft-365/admin/whats-new-in-preview**. Om du har bokmärkt sidor bör du uppdatera länkarna. Men innehållslänkar omdirigeras till den nya lagringsplatsen för innehåll.

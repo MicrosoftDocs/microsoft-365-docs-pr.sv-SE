@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Läs om hur du får administratörshjälp eller support i Microsoft 365 Business Premium.
-ms.openlocfilehash: 8db4f7675f96bac2157c9c0f93ab506c8a39e1bb
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
-ms.translationtype: HT
+description: Du måste vara administratör för en företagsprenumeration för att få administratörshjälp eller online- eller telefonsupport i Microsoft 365 Business Premium.
+ms.openlocfilehash: e6308a9728731052d540cf3e872b6e153b64aae2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327192"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535716"
 ---
 # <a name="get-support"></a>Få support
 
@@ -253,3 +253,12 @@ Assisterade supportalternativ är endast till för administratörer av organisat
 Du kan också [söka i Microsoft 365 for business-forumen](https://go.microsoft.com/fwlink/p/?LinkId=518605) efter kända problem och populära ämnen eller ställa en ny fråga. Forumen övervakas av Microsofts kunniga supportpersonal som kan hjälpa dig att lösa problemet.
 
 ::: moniker-end
+
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Söka efter dokument och utbildning](find-help-answers.md) (artikel)
+
+[Snabbinstallation för anställda](employee-quick-setup.md) (artikel)
+
+[Översikt över Microsoft 365 Business Premium konfiguration](setup-overview.md) (video)

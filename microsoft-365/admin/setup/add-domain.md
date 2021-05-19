@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: Lägg till din domän i Microsoft 365 i administrationscentret för Microsoft 365 genom att lägga till en DNS-post hos din DNS-värd. I installationsguiden får du hjälp med processen.
-ms.openlocfilehash: 747de5f61dc9fce53f82f52b65f701572a56f8d4
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+description: Använd installationsguiden för att lägga till din domän Microsoft 365 i Microsoft 365 genom att lägga till en DNS-post hos din DNS-värd.
+ms.openlocfilehash: 96849e90a420dc31dbde8c55d5a1108f73f85978
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470887"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535836"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Lägga till en domän i Microsoft 365
 
@@ -39,17 +39,9 @@ ms.locfileid: "51470887"
   
  *Om du vill lägga till, ändra eller ta bort **domäner måste** du vara **global administratör** för ett [företags- eller företagsplan.](https://products.office.com/business/office) Dessa ändringar påverkar hela *klientorganisationen, anpassade* administratörer *eller vanliga* användare kommer inte att kunna göra dessa ändringar.*  
 
- Följ de här anvisningarna om du vill lägga till, konfigurera eller fortsätta att konfigurera en domän. 
+ ## <a name="add-a-domain"></a>Lägga till en domän
 
-::: moniker range="o365-worldwide"
-  
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/dda6df6d-37b0-41ff-905b-089448355a31?autoplay=false]
-  
-::: moniker-end
+Följ de här anvisningarna om du vill lägga till, konfigurera eller fortsätta att konfigurera en domän. 
 
 ::: moniker range="o365-worldwide"
 
@@ -68,7 +60,7 @@ ms.locfileid: "51470887"
 
 ::: moniker-end
     
-2. Gå till **sidan Settings**  >  **Domains.** 
+2. Gå till sidan **Inställningar**  >  **Domains.** 
 
 3. Välj **Lägg till domän**.
     
@@ -76,13 +68,13 @@ ms.locfileid: "51470887"
     
 5. Välj hur du vill verifiera att du äger domänen.
     
-    1. Om din domänregistrator använder [Domain Connect](#domain-connect-registrars-integrating-with-microsoft-365)kommer [Microsoft](../get-help-with-domains/domain-connect.md) att konfigurera posterna automatiskt genom att du loggar in på din registrator och bekräftar anslutningen till Microsoft 365. Du kommer tillbaka till administrationscentret och Microsoft verifierar sedan automatiskt din domän.
+    1. Om din domänregistrator använder [Domain Anslut](#domain-connect-registrars-integrating-with-microsoft-365)konfigureras dina poster automatiskt av [Microsoft](../get-help-with-domains/domain-connect.md) genom att du loggar in på registratorn och bekräftar anslutningen till Microsoft 365. Du kommer tillbaka till administrationscentret och Microsoft verifierar sedan automatiskt din domän.
     2. Du kan använda en TXT-post för att verifiera din domän. Välj det här alternativet **och välj** Nästa för att se anvisningar för hur du lägger till DNS-posten på registratorns webbplats. Det kan ta upp till 30 minuter att verifiera detta när du har lagt till posten. 
-    3. Du kan lägga till en textfil på webbplatsen för din domän. Välj och ladda ned TXT-filen från installationsguiden och ladda sedan upp filen till webbplatsens toppnivåmapp. Sökvägen till filen bör se ut ungefär så här: `http://mydomain.com/ms39978200.txt` . Vi bekräftar att du äger domänen genom att leta reda på filen på webbplatsen.
+    3. Du kan lägga till en textfil på webbplatsen för din domän. Välj och ladda .txt filen från installationsguiden och ladda sedan upp filen till webbplatsens toppnivåmapp. Sökvägen till filen bör se ut ungefär så här: `http://mydomain.com/ms39978200.txt` . Vi bekräftar att du äger domänen genom att leta reda på filen på webbplatsen.
     
 6. Välj hur du vill göra de DNS-ändringar som krävs för att Microsoft ska kunna använda din domän.
     
-    1. Välj **Add the DNS records for me** (lägg till DNS-posterna åt mig) om registratorn stöder [Domain Connect](#domain-connect-registrars-integrating-with-microsoft-365)(domänanslutning). Microsoft kommer att konfigurera posterna automatiskt genom att du loggar in på din registrator och bekräftar anslutningen till Microsoft 365. [](../get-help-with-domains/domain-connect.md)
+    1. Välj **Add the DNS records for me** om din registrator har stöd för Domain [Anslut](#domain-connect-registrars-integrating-with-microsoft-365), så kommer [Microsoft](../get-help-with-domains/domain-connect.md) att konfigurera dina poster automatiskt genom att du loggar in på din registrator och bekräftar anslutningen till Microsoft 365.
     2. Välj **I'll add the DNS records myself** if you want to attach only specific Microsoft 365 services to your domain or if you want to skip this for now and do this later. **Välj det här alternativet om du vet exakt vad du gör.**
 
 7. Om du väljer att lägga  till *DNS-poster* själv väljer du Nästa. Då visas en sida med alla poster som du behöver lägga till på domänregistratorns webbplats för att konfigurera domänen. 
@@ -103,7 +95,7 @@ Följ stegen nedan för att lägga till en anpassad post för en webbplats eller
 
 1. Logga in på Microsofts administrationscenter på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 
-2. Gå till **sidan Settings**   >  **Domains.**
+2. Gå till sidan **Inställningar**   >  **Domains.**
 
 3. Välj en domän på sidan **Domäner**. 
     
@@ -113,16 +105,16 @@ Följ stegen nedan för att lägga till en anpassad post för en webbplats eller
     
 6. Välj **Spara**.
 
-## <a name="registrars-with-domain-connect"></a>Registratorer med Domain Connect
+## <a name="registrars-with-domain-connect"></a>Registratorer med Anslut
 
-[Med domän](https://www.domainconnect.org/) connect-aktiverade registratorer kan du lägga till din domän i Microsoft 365 i en trestegsprocess som bara tar några minuter. 
+[Domän Anslut](https://www.domainconnect.org/) domänregistratorer låter dig lägga till din domän Microsoft 365 i en trestegsprocess som bara tar några minuter. 
   
-I guiden bekräftar vi bara att du äger domänen och sedan konfigureras domänens poster automatiskt, så att e-post kommer till Microsoft 365 och andra Microsoft 365-tjänster, som Teams, fungerar med din domän.
+I guiden bekräftar vi bara att du äger domänen och sedan konfigureras domänens poster automatiskt, så att e-post kommer till Microsoft 365 och andra Microsoft 365-tjänster, till exempel Teams, fungerar med din domän.
   
 > [!NOTE]
 > Se till att inaktivera popup-blockerare i webbläsaren innan du startar installationsguiden.
   
-### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Domän connect-domänregistratorer som integrerar med Microsoft 365
+### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Domän Anslut domänregistratorer som integrerar med Microsoft 365
 
 - [1 &amp; 1 I ENTISKT](https://www.1and1.com/)
 - [EuroDNS](https://www.eurodns.com/)
@@ -138,16 +130,16 @@ I guiden bekräftar vi bara att du äger domänen och sedan konfigureras domäne
 
 ### <a name="what-happens-to-my-email-and-website"></a>Vad händer med min e-post och webbplats?
 
-När du är klar med konfigurationen uppdateras MX-posten för din domän så att den pekar på Microsoft 365 och all e-post för domänen börjar komma till Microsoft 365. Kontrollera att du har lagt till användare och konfigurerat postlådor i Microsoft 365 för alla som får e-post i din domän!
+När du är klar med konfigurationen uppdateras MX-posten för din domän så att den pekar på Microsoft 365 och all e-post för domänen börjar komma Microsoft 365. Kontrollera att du har lagt till användare och ställt in postlådor i Microsoft 365 för alla som får e-post på din domän!
   
-Om du har en webbplats som du använder med ditt företag kommer den att fortsätta fungera där den är. Konfigurationsstegen för Domain Connect påverkar inte din webbplats.
+Om du har en webbplats som du använder med ditt företag kommer den att fortsätta fungera där den är. Domänkonfigurationsstegen Anslut påverkar inte din webbplats.
 
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-content"></a>Relaterat innehåll
 
-[Vanliga frågor och svar om domäner](domains-faq.yml)
+[Vanliga frågor och svar](domains-faq.yml) om domäner (artikel)
 
-[Vad är en domän?](../get-help-with-domains/what-is-a-domain.md)
+[Vad är en domän?](../get-help-with-domains/what-is-a-domain.md) (artikel)
 
-[Köpa ett domännamn i Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
+[Köpa ett domännamn i Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (artikel)
 
-[Konfigurera din domän (tjänstspecifika instruktioner)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
+[Konfigurera din domän](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) (artikel)

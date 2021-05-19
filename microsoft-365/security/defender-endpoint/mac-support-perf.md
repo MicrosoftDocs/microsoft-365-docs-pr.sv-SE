@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 623717e7b1a3149dbccf07d32200820a7f9083cb
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d69c7dc30a4cf6a3078f510a02e5572fe8b36cbb
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934255"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530916"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Felsöka prestandaproblem för Microsoft Defender för slutpunkt i macOS
 
@@ -62,7 +62,7 @@ Följande steg kan användas för att felsöka och minimera dessa problem:
 
       Om enheten hanteras av din organisation kan realtidsskydd inaktiveras av administratören genom att följa anvisningarna i Ange inställningar för Microsoft Defender för [slutpunkt i macOS.](mac-preferences.md)
       
-      Om prestandaproblemet kvarstår när realtidsskyddet är inaktiverat kan problemets ursprung vara slutpunktsidentifierings- och svarskomponenten. I så fall kan du kontakta kundsupport för ytterligare instruktioner och åtgärder.
+      Om prestandaproblemet kvarstår när realtidsskyddet är inaktiverat kan problemets ursprung vara den identifiering och åtgärd på slutpunkt komponenten. I så fall kan du kontakta kundsupport för ytterligare instruktioner och åtgärder.
 
 2. Öppna Finder och gå **till**  >  **Programverktyg.** Öppna **Aktivitetsrapporter** och analysera vilka program som använder resurserna på ditt system. Vanliga exempel är programuppdateringsprogram och kompilatorer.
 
@@ -94,7 +94,7 @@ Följande steg kan användas för att felsöka och minimera dessa problem:
       Om du vill samla in aktuell statistik kör du:
 
       ```bash
-      mdatp config real-time-protection --value enabled
+      mdatp config real-time-protection-statistics --output json > real_time_protection.json
       ```
 
       > [!NOTE]
@@ -104,7 +104,7 @@ Följande steg kan användas för att felsöka och minimera dessa problem:
 1. Ladda ned exemplet Python-parser på Mac-systemet high_cpu_parser.py med kommandot:
 
     ```bash
-    wget -c https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
+    curl -O https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
     ```
 
     Utdata för det här kommandot bör se ut ungefär så här:

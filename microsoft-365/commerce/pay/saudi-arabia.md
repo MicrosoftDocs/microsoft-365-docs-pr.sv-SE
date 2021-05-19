@@ -1,23 +1,24 @@
 ---
 title: Betalningsinformation för Saudiarabien
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Lär dig vart du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 61a6b3a82b63e44520337f51cd06141f05b013af
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 60799ef1d7fdc89b9f2dba90a98b137799f5f7fa
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272942"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535200"
 ---
 # <a name="payment-information-for-saudi-arabia"></a>Betalningsinformation för Saudiarabien
 
@@ -29,6 +30,7 @@ Betala endast i euro och ange fakturanumret som referens vid betalning.
 
 **Bank:** Citibank, London  
 **SWIFT-kod/BIC-kod:** CITIGB2L  
-**IBAN:** GB31CITI18500812510049 **SORTERINGskod:** 185008  
-**Kontonummer:** 12510049   
+**IBAN:** GB31CITI18500812510049  
+**SORTERINGskod:** 185008  
+**Kontonummer:** 12510049  
 **Kontonamn:** MICROSOFT

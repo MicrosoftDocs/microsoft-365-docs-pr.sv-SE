@@ -21,12 +21,12 @@ search.appverid:
 description: Lär dig hur du använder powerShell-cmdleten AllowSelfServicePurchase för att aktivera eller inaktivera självbetjäning för köp.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 03/18/2021
-ms.openlocfilehash: 09161f69e72babe8270b339243d73444b93d9959
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 012874a8794e006d97c4f74014e92e1f7f3c2709
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333380"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536136"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Använd AllowSelfServicePurchase för modulen MSCommerce PowerShell
 
@@ -42,13 +42,14 @@ Du kan använda **modulen MSCommerce** PowerShell för att:
 
 Om du vill använda **modulen MSCommerce** PowerShell behöver du:
 
-- En Windows 10-enhet
+- En Windows 10 enhet
+- PowerShell 5 eller lägre. För närvarande stöds inte PowerShell 6.x/7.x med den här modulen.
 - Administratörsbehörighet för enheten
 - Rollen global administratör eller faktureringsadministratör för klientorganisationen
 
 ## <a name="install-the-mscommerce-powershell-module"></a>Installera modulen MSCommerce PowerShell
 
-Du installerar **MSCommerce** PowerShell-modulen på din Windows 10-enhet en gång och importerar den sedan till varje PowerShell-session du startar. Ladda ned **MODULEN MSCommerce** PowerShell från [PowerShell-galleriet](https://aka.ms/allowselfservicepurchase-powershell-gallery).
+Du installerar **MSCommerce** PowerShell-modulen på din Windows 10 en gång och importerar den sedan till varje PowerShell-session du startar. Ladda ned **MODULEN MSCommerce** PowerShell från [PowerShell-galleriet](https://aka.ms/allowselfservicepurchase-powershell-gallery).
 
 Installera **MSCommerce** PowerShell-modulen med **PowerShellGet** genom att köra följande kommando:
 
@@ -58,13 +59,13 @@ Install-Module -Name MSCommerce
 
 ## <a name="import-mscommerce-into-the-powershell-session"></a>Importera MSCommerce till PowerShell-sessionen
 
-När du har installerat modulen på din Windows 10-enhet importerar du den till varje PowerShell-session som du startar. Om du vill importera den till en PowerShell-session kör du följande kommando:
+När du har installerat modulen på din Windows 10 importerar du den sedan till varje PowerShell-session som du startar. Om du vill importera den till en PowerShell-session kör du följande kommando:
 
 ```powershell
 Import-Module -Name MSCommerce
 ```
 
-## <a name="connect-to-mscommerce-with-your-credentials"></a>Ansluta till MSCommerce med dina autentiseringsuppgifter
+## <a name="connect-to-mscommerce-with-your-credentials"></a>Anslut till MSCommerce med dina autentiseringsuppgifter
 
 Om du vill ansluta till PowerShell-modulen med dina autentiseringsuppgifter kör du följande kommando.
 
@@ -72,7 +73,7 @@ Om du vill ansluta till PowerShell-modulen med dina autentiseringsuppgifter kör
 Connect-MSCommerce
 ```
 
-Det här kommandot ansluter den aktuella PowerShell-sessionen till en Azure Active Directory-klientorganisation. Kommandot uppmanar dig att ange ett användarnamn och lösenord för den klientorganisation som du vill ansluta till. Om multifaktorautentisering är aktiverat för dina autentiseringsuppgifter använder du det interaktiva alternativet för att logga in.
+Det här kommandot ansluter den aktuella PowerShell-sessionen till en Azure Active Directory klientorganisation. Kommandot uppmanar dig att ange ett användarnamn och lösenord för den klientorganisation som du vill ansluta till. Om multifaktorautentisering är aktiverat för dina autentiseringsuppgifter använder du det interaktiva alternativet för att logga in.
 
 ## <a name="view-details-for-allowselfservicepurchase"></a>Visa information om AllowSelfServicePurchase
 
@@ -99,10 +100,10 @@ I följande tabell visas de tillgängliga produkterna och deras **Produkt-ID.**
 | Power Automate RPA | CFQ7TTC0KXG6  |
 | Power BI Premium (fristående) | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
-| Projektplan 1 | CFQ7TTC0KXND |
-| Projektplan 3 | CFQ7TTC0KXNC |
-| Visio abonnemang 1 | CFQ7TTC0KXN9 |
-| Visio abonnemang 2 | CFQ7TTC0KXN8 |
+| Project Abonnemang 1 | CFQ7TTC0KXND |
+| Project Abonnemang 3 | CFQ7TTC0KXNC |
+| Visio Abonnemang 1 | CFQ7TTC0KXN9 |
+| Visio Abonnemang 2 | CFQ7TTC0KXN8 |
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>Visa eller ange status för AllowSelfServicePurchase
 
@@ -128,7 +129,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>Exempelskript för att inaktivera AllowSelfServicePurchase
 
-I följande exempel får du veta hur du importerar **MSCommerce-modulen,** loggar in med ditt konto, hämtar **ProductId** för Power Automate och inaktiverar **sedan AllowSelfServicePurchase** för produkten.
+I följande exempel får du veta hur du importerar **MSCommerce-modulen,** loggar in med ditt konto, hämtar **ProductId** för Power Automate och inaktiverar **sedan AllowSelfServicePurchase** för den produkten.
 
 ```powershell
 Import-Module -Name MSCommerce
@@ -161,3 +162,9 @@ To remove the **MSCommerce** PowerShell module from your computer, run the follo
 ```powershell
 Uninstall-Module -Name MSCommerce
 ```-->
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Hantera köp via självbetjäning (administratör)](manage-self-service-purchases-admins.md) (artikel)
+
+[Vanliga frågor och svar om självbetjäning](self-service-purchase-faq.yml) för köp (artikel)

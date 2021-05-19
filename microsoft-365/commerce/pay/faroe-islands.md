@@ -1,23 +1,24 @@
 ---
 title: Betalningsinformation för Färöarna
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Lär dig vart du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0972d9912d7eb56c0fcb2e83a040a679a7b16eb4
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: a4d2db1ce27d6da9ba32baa2f646ea0872c2636f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273830"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535548"
 ---
 # <a name="payment-information-for-faroe-islands"></a>Betalningsinformation för Färöarna
 
@@ -32,4 +33,4 @@ Betala endast i euro och ange fakturanumret som referens vid betalning.
 **IBAN:** GB31CITI18500812207591  
 **SORTERINGskod:** 185008  
 **Kontonummer:** 12207591  
-**Kontonamn:** MICROSOFT  
+**Kontonamn:** MICROSOFT

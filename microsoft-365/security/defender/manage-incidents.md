@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 09c391d6b02e1273f55070283a6e11454f677114
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 725e6226a56b3aae3670cde18969afdda1ec1940
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300007"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530844"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Hantera ärenden i Microsoft 365 Defender
 
@@ -45,12 +45,12 @@ Du hanterar incidenter **från & och > incidenter** i snabbstarten av säkerhets
 
 Du kan hantera dina incidenter på följande sätt:
 
-- Ändra incidentens namn
-- Lägg till incidenttaggar.
-- Tilldela incidenten till ett användarkonto
-- Lösa dem 
-- Ange dess klassificering och avgörande
-- Lägg till kommentarer.
+- [Redigera incidentens namn](#edit-the-incident-name)
+- [Lägg till incidenttaggar](#add-incident-tags)
+- [Tilldela incidenten till ett användarkonto](#assign-incidents)
+- [Lösa dem](#resolve-an-incident)
+- [Ange dess klassificering och avgörande](#set-the-classification-and-determination)
+- [Lägga till kommentarer](#add-comments)
 
 Du kan hantera incidenter i **fönstret Hantera** incidenter för ett incident. Här är ett exempel.
 
@@ -61,7 +61,7 @@ Du kan visa det här fönstret från **länken Hantera** incident på:
 - Egenskapsfönster för en incident i incidentkön.
 - **Sammanfattningssida** för en incident.
 
-I fall där du genom att analysera vill flytta aviseringar från en händelse  till en annan kan du även göra det från fliken Aviseringar, och på så sätt skapa en större eller mindre incident som inkluderar alla relevanta aviseringar.
+I de fall du vill flytta aviseringar från en händelse till  en annan kan du även göra det från fliken Aviseringar, vilket innebär att en större eller mindre incident som inkluderar alla relevanta aviseringar skapas.
 
 ## <a name="edit-the-incident-name"></a>Redigera incidentens namn
 
@@ -82,7 +82,7 @@ När du börjar skriva kan du välja i en lista med valda taggar.
 
 Om en incident ännu inte har tilldelats kan du välja **Tilldela till** och ange användarkontot. Då tilldelas ägarskap för incidenten och alla aviseringar som är kopplade till den.
 
-## <a name="resolve-incident"></a>Lös incident
+## <a name="resolve-an-incident"></a>Lösa ett problem
 
 Om incidenten har åtgärdats väljer du **Lös incidenten** för att flytta reglaget till höger. Tänk på att när du löser en incident åtgärdas även alla länkade och aktiva aviseringar som är relaterade till händelsen.
 

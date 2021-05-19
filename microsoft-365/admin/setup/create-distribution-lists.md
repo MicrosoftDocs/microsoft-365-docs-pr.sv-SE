@@ -23,14 +23,14 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Lär dig hur du skapar distributionsgrupper eller listor i administrationscentret för Microsoft 365 så att du kan skicka e-postmeddelanden till en grupp utan att behöva skriva varje mottagares namn.
-ms.openlocfilehash: 5c4781653a5f18b7a41dc20212771368132801cd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bd5e246caa8d1b56a33db21d70eb5cbdb7b5ed92
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914252"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535824"
 ---
-# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Skapa distributionsgrupper i administrationscentret för Microsoft 365
+# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Skapa distributionsgrupper i Microsoft 365 administrationscenter
   
 Används när du vill skicka e-post till en grupp personer utan att behöva skriva varje enskild mottagares namn, distributionsgrupper (distributionslistor) ordnas efter diskussionsämne (t.ex. "Marknadsföring") eller efter användare som delar vanligt arbete som kräver att de kommunicerar ofta. De är också ett sätt att automatiskt vidarebefordra e-post till flera e-postadresser.
 
@@ -70,6 +70,6 @@ Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?
     
 6. Om du vill lägga till användare i distributionslistan kan [du gå till Lägga till en användare eller kontakt i en distributionsgrupp.](../email/add-user-or-contact-to-distribution-list.md)
     
-Läs om hur du använder grupper i Outlook 2016 och Outlook på webben i avsnittet Använda kontaktgrupper [(tidigare distributionslistor) i Outlook.](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
+Läs om hur du använder grupper i Outlook 2016 och Outlook på webben i Använda kontaktgrupper [(tidigare distributionslistor) i Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39). 
   
 Läs Problem [med distributionsgrupp om](/office365/troubleshoot/groups/distribution-list-issues) du behöver hjälp med problem med distributionslistor. 

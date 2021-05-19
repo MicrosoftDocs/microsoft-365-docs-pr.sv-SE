@@ -20,17 +20,17 @@ ms.custom:
 search.appverid: MET150
 description: Läs om hur du granskar och godkänner eller nekar licensbegäranden från användare för Microsoft 365 för företag-prenumerationen.
 ms.date: 08/07/2020
-ms.openlocfilehash: 06ee210b39c19c1f2c8a2041c463568e55001b6e
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 6cbfd81f4f6deba642729f1fef0b826b07a99f56
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331556"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535680"
 ---
 # <a name="manage-license-requests"></a>Hantera licensbegäranden
 
 > [!NOTE]
-> Informationen i den här artikeln gäller endast självbetjäningsprodukter som köpts. Mer information finns i Vanliga frågor [och svar om självbetjäning för köp.](../subscriptions/self-service-purchase-faq.md)
+> Informationen i den här artikeln gäller endast självbetjäningsprodukter som köpts. Mer information finns i Vanliga frågor [och svar om självbetjäning för köp.](../subscriptions/self-service-purchase-faq.yml)
 
 Om du inaktiverar självbetjäning för köp i organisationen kan du använda licensförfrågningar för att hantera licensbegäran för användarna. När en användare försöker göra ett självbetjäningsköp för en produkt som du har blockerat kan han/hon skicka en begäran om en licens till dig som administratör. När de gör en begäran kan de lägga till namnen på andra användare som också behöver licenser för produkten.
 
