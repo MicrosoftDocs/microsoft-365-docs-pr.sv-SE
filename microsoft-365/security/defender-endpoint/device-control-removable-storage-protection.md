@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ec5cfa78852d65db808c4e853f90f5639df25d6f
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: c9b97c2157ba8090628af23b2ab54cf38f04d8c6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300270"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538393"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Flyttbara enheter i Microsoft Defender för Endpoint Device Control Storage Protection
 
@@ -29,15 +29,73 @@ ms.locfileid: "52300270"
 
 Microsoft Defender för Endpoint Device Control flyttbart Storage skydd förhindrar användare eller dator eller båda från att använda obehöriga flyttbara lagringsmedia.
 
-**Microsoft Defender för slutpunktens flyttbara Storage skydd**
+## <a name="protection-policies"></a>Skyddsprinciper
 
+### <a name="device-installation"></a>Enhetsinstallation
 
-|Princip  |Funktion |Beskrivning  |
-|---------|---------|---------|
-|Enhetsinstallation    |  Förhindra installation med eller utan undantag – Tillåt specifika enheter baserat på olika egenskaper. Mer information finns i avsnittet [Enhetsegenskaper](#device-properties) nedan.        |    Fungerar på datorn: Olika användare som loggar in på samma dator begränsas av samma princip. Mer information finns i Styra [USB-enheter och andra flyttbara media med hjälp av Microsoft Defender för Slutpunkt.](control-usb-devices-using-intune.md)     |
-|Åtkomstkontroll för flyttbara lagringsmedia      | (1) Granska läs- eller skriv- eller kör åtkomst till flyttbart lagringsutrymme baserat på olika enhetsegenskaper, med eller utan undantag. Mer information finns i avsnittet [Enhetsegenskaper](#device-properties) nedan. (2) Förhindra läsning eller skrivning eller kör åtkomst med eller utan undantag – Tillåt specifika enheter baserat på olika enhetsegenskaper; Mer information om enhetsegenskaper finns i avsnittet [Enhetsegenskaper](#device-properties) nedan.     |     Fungerar på antingen datorn eller användaren eller både och: Tillåt endast vissa personer som utför läs-/skriv-/kör åtkomst till specifik flyttbar lagring på en viss dator. för funktion i Windows finns i [Åtkomstkontroll för flyttbara lagringsmedia](device-control-removable-storage-access-control.md); för funktion i Mac, se [Enhetskontroll för macOS.](mac-device-control-overview.md)     |
-|Slutpunkt DLP, flyttbar lagring      |    Granska eller varna eller förhindra en användare från att kopiera ett objekt eller information till ett flyttbart medium eller en USB-enhet.     |  Mer information finns i [Microsoft Endpoint DLP](/compliance/endpoint-dlp-learn-about.md).       |
-|BitLocker    |     Blockera data som ska skrivas till flyttbara enheter som inte är BitLocker skyddade: Blockera åtkomst till flyttbara enheter såvida de inte krypterats på en dator som ägs av din organisation.    |   Mer information finns i BitLocker – [Flyttbar enhet Inställningar](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings#bitlocker---removable-drive-settings.md).      |
+**Funktioner –** Förhindra installation med eller utan undantag baserat på olika enhetsegenskaper.
+
+**Beskrivning**
+- Används på maskinnivå: samma princip gäller för alla inloggade användare.
+- Stöd för MEM och GPO.
+- ' Device[Properties '](#device-properties)as listed.
+- Mer information om hur Windows finns i Styra USB-enheter och andra [flyttbara medium med hjälp av Microsoft Defender för slutpunkt.](control-usb-devices-using-intune.md)
+
+**Plattform som stöds** – Windows 10
+
+**Beskrivning**
+- Används på maskinnivå: samma princip gäller för alla inloggade användare
+- Specifik information för macOS finns i [Enhetskontroll för macOS.](mac-device-control-overview.md)
+ 
+**Plattform som** stöds – macOS Catalina 10.15.4+ (med systemtillägg aktiverade)
+
+### <a name="removable-storage-access-control"></a>Åtkomstkontroll för flyttbara lagringsmedia
+
+**Kapaciteter**
+- *Granskning* Läsa eller skriva eller köra åtkomst till flyttbart lagringsutrymme baserat på olika enhetsegenskaper, med eller utan undantag.
+- *Förhindra* Läsa eller skriva eller köra åtkomst med eller utan undantag – Tillåt specifik enhet baserat på olika enhetsegenskaper.
+
+**Beskrivning**
+- Används på antingen datorn eller användaren eller både och – tillåt endast vissa personer som utför läs-/skriv-/kör åtkomst till specifik flyttbar lagring på en viss dator.
+- Stöd för MEM OMA-URI och GPO.
+- ' Device[Properties '](#device-properties)as listed.
+- Information om funktionen Windows finns i [Ta bort åtkomstkontroll för flyttbara lagringsmedia.](device-control-removable-storage-access-control.md)
+
+**Plattform som stöds** – Windows 10
+
+**Beskrivning**
+- Används på maskinnivå: samma princip gäller för alla inloggade användare.
+- Specifik information för macOS finns i [Enhetskontroll för macOS.](mac-device-control-overview.md)
+ 
+**Plattform som** stöds – macOS Catalina 10.15.4+ (med systemtillägg aktiverade)
+
+### <a name="windows-portable-device-access-control"></a>Windows Åtkomstkontroll för bärbar enhet
+
+**Funktioner –** Neka läs- eller skrivåtkomst till valfri [bärbar Windows,](/windows-hardware/drivers/portable/)till exempel: surfplatta, iPhone.
+
+**Beskrivning**
+- Används på antingen datorn eller användaren eller båda.
+- Stöd för MEM OMA-URI och GPO.
+
+**Plattform som stöds** – Windows 10
+
+### <a name="endpoint-dlp-removable-storage"></a>Slutpunkt DLP, flyttbar lagring
+
+**Funktioner –** Granska eller Varna eller Förhindra en användare från att kopiera ett objekt eller information till ett flyttbart medium eller EN USB-enhet.
+
+**Beskrivning** – Mer information om Windows finns i Läs [mer Microsoft 365 skydd mot dataförlust i Slutpunkt](../../compliance/endpoint-dlp-learn-about.md).
+
+**Plattform som stöds** – Windows 10
+
+### <a name="bitlocker"></a>BitLocker 
+
+**Kapaciteter**
+- Blockera data som ska skrivas till flyttbara enheter som inte BitLocker skyddade.
+- Blockera åtkomst till flyttbara enheter såvida de inte krypterats på en dator som ägs av din organisation
+ 
+**Beskrivning** – Mer information om hur du Windows finns i [BitLocker – Flyttbar enhet Inställningar](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).
+
+**Plattform som stöds** – Windows 10
 
 ## <a name="device-properties"></a>Enhetsegenskaper
 
@@ -58,3 +116,4 @@ Med Microsoft Defender för Endpoint Device Control flyttbart Storage Protection
 ## <a name="related-topic"></a>Relaterat ämne
 
 - [Microsoft Defender för endpoint-enhetskontroll, flyttbar Storage access-kontroll](device-control-removable-storage-access-control.md)
+

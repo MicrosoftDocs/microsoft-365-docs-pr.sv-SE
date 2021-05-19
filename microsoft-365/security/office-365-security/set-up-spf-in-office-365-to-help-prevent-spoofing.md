@@ -19,12 +19,12 @@ ms.custom:
 description: Lär dig hur du uppdaterar en DNS-post (Domain Name Service) för att använda en SPF-post (Sender Policy Framework) med din anpassade domän i Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d200c4cf17a3d42ddafca301fecbf18c249ac37
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 828d76b95a1e3f8d1a1851121d28603a1922f486
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245690"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538993"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Konfigurera SPF för att förhindra förfalskning
 
@@ -45,6 +45,13 @@ ms.locfileid: "52245690"
 Den här artikeln beskriver hur du uppdaterar en DNS-post (Domain Name Service) så att du kan använda e-postautentisering av Sender Policy Framework (SPF) med din anpassade domän i Office 365.
 
 SPF *verifierar* utgående e-post som skickats från din anpassade domän (kommer från den som den säger att det är). Det är första steget till att konfigurera de fullständiga rekommenderade metoderna för e-postautentisering för SPF, [DKIM](use-dkim-to-validate-outbound-email.md) och [DMARC](use-dmarc-to-validate-email.md).
+
+- [Förutsättningar](#prerequisites)
+- [Skapa eller uppdatera din SPF TXT-post](#create-or-update-your-spf-txt-record)
+  - [Hur hanterar man underdomäner?](#how-to-handle-subdomains)
+- [Vad gör SPF-e-postautentisering egentligen?](#what-does-spf-email-authentication-actually-do)
+  - [Felsökning av SPF](#troubleshooting-spf)
+- [Mer information om SPF](#more-information-about-spf)
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -118,7 +125,6 @@ En SPF-post med jokertecken (`*.`) krävs för varje domän och underdomän för
 ## <a name="troubleshooting-spf"></a>Felsökning av SPF
 
 Har du problem med din SPF TXT-post? Läs [Felsökning: Metodtips för SPF i Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
-
 
 ## <a name="what-does-spf-email-authentication-actually-do"></a>Vad gör SPF-e-postautentisering egentligen?
 

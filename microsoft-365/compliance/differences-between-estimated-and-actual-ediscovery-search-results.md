@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Förstå varför uppskattade och faktiska sökresultat kan variera i sökningar som körs med eDiscovery-verktyg i Office 365.
-ms.openlocfilehash: 79f76f573303246e8a5ec733c84a4f684c65513a
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: d530b083b2353b66ee5d4fd4bb72b175aef28be8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "52161811"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532123"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Skillnader mellan uppskattade och faktiska eDiscovery-sökresultat
 
@@ -33,9 +33,9 @@ Det här avsnittet gäller sökningar som du kan köra med något av följande M
 - Innehållssökning
 - Core eDiscovery
 
-När du kör en eDiscovery-sökning returnerar verktyget du använder en uppskattning av antalet objekt (och deras totala storlek) som uppfyller sökvillkoren. När du till exempel kör en sökning i kompatibilitetscentret för Microsoft 365, visas det uppskattade sökresultatet på den utfällade sidan för den markerade sökningen.
+När du kör en eDiscovery-sökning returnerar verktyget du använder en uppskattning av antalet objekt (och deras totala storlek) som matchar sökvillkoren. När du till exempel kör en sökning i kompatibilitetscentret för Microsoft 365, visas det uppskattade sökresultatet på den utfällade sidan för den markerade sökningen.
   
-![Uppskattning av resultatet som visas i informationsfönstret för den valda sökningen](../media/74e4ce83-40be-41a9-b60f-5ad447e79fe4.png)
+![Uppskattning av resultat som visas på den utfällade söksidan](../media/EstimatedSearchResults1.png)
   
 Det här är samma uppskattning av den totala storleken och antalet objekt som visas i verktyget för eDiscovery-export när du exporterar resultaten till en lokal dator och i rapporten Om sammanfattning av export som hämtas med sökresultaten.
   
@@ -61,7 +61,7 @@ Här är några anledningar till dessa skillnader:
 
 - **Icke indexerade objekt.** Objekt som inte är indexerade för sökning kan orsaka skillnader mellan uppskattade och faktiska sökresultat. Du kan ta med icke indexerade objekt när du exporterar sökresultatet. Om du tar med icke indexerade objekt när du exporterar sökresultat kan det finnas fler objekt som exporteras. Det här orsakar en skillnad mellan det uppskattade och exporterade sökresultatet.
 
-    När du använder verktyget Innehållssökning kan du inkludera icke indexerade objekt i sökberäkningen. Antalet icke indexerade objekt som returneras av sökningen visas på den utfällda sidan tillsammans med andra uppskattade sökresultat. Icke indexerade objekt inkluderas också i den totala storleken på det uppskattade sökresultatet. När du exporterar sökresultat kan du välja att ta med eller inte inkludera icke indexerade objekt. Hur du konfigurerar alternativen kan resultera i skillnader mellan uppskattat och de faktiska sökresultat som hämtas.
+    När du använder verktyget Innehållssökning kan du välja att inkludera icke indexerade objekt när du exporterar sökresultat. Antalet icke indexerade objekt som returneras av sökningen visas på den utfällda sidan tillsammans med andra uppskattade sökresultat. Icke indexerade objekt inkluderas också i den totala storleken på det uppskattade sökresultatet. När du exporterar sökresultat kan du välja att ta med eller inte inkludera icke indexerade objekt. Hur du konfigurerar alternativen kan resultera i skillnader mellan uppskattat och de faktiska sökresultat som hämtas.
 
 - **Exportera resultatet av en innehållssökning som omfattar alla innehållsplatser**. Om sökningen du exporterar resultat från var en sökning på alla innehållsplatser i organisationen exporteras bara icke indexerade objekt från innehållsplatser som innehåller objekt som matchar sökvillkoren. Med andra ord exporteras inte icke indexerade objekt i postlådan eller webbplatsen om inga sökresultat hittas i en postlåda eller på en webbplats. Icke indexerade objekt från alla innehållsplatser (även de som inte innehåller objekt som matchar sökfrågan) inkluderas emellertid i det uppskattade sökresultatet.
 
@@ -69,19 +69,19 @@ Här är några anledningar till dessa skillnader:
 
     Anledningen till att du inte exporterar icke indexerade objekt från varje plats i organisationen beror på att det kan öka sannolikheten för exportfel och öka tiden det tar att exportera och ladda ned sökresultaten.
 
-- **Icke indexerade objekt i SharePoint och OneDrive inte ingår i sökberäkningar.** Icke indexerade objekt SharePoint webbplatser och OneDrive för företag-konton tas inte med i det uppskattade sökresultatet. Det beror på SharePoint-indexet inte innehåller data för icke indexerade objekt. Endast icke indexerade objekt från postlådor ingår i sökberäkningarna. Men om du tar med icke indexerade objekt när du exporterar sökresultat ingår icke indexerade SharePoint och OneDrive indexerade objekt. Det kan resultera i skillnader mellan det uppskattade resultatet (som inte inkluderar icke indexerade objekt på SharePoint- OneDrive-webbplatserna) och de faktiska objekt som laddas ned. Regeln om att exportera icke indexerade objekt endast från innehållsplatser som innehåller objekt som matchar sökvillkoren gäller fortfarande i det här fallet.
+- **Icke indexerade objekt i SharePoint och OneDrive inte ingår i sökberäkningarna.** Icke indexerade objekt SharePoint webbplatser och OneDrive för företag-konton tas inte med i det uppskattade sökresultatet. Det beror på SharePoint-indexet inte innehåller data för icke indexerade objekt. Endast icke indexerade objekt från postlådor ingår i sökberäkningarna. Men om du tar med icke indexerade objekt när du exporterar sökresultat ingår icke indexerade objekt i SharePoint och OneDrive, vilket ökar antalet objekt som faktiskt exporteras. Det leder till skillnader mellan det uppskattade resultatet (som inte inkluderar icke indexerade objekt på SharePoint- OneDrive-webbplatserna) och de faktiska objekt som laddas ned. Regeln om att exportera icke indexerade objekt endast från innehållsplatser som innehåller objekt som matchar sökvillkoren gäller fortfarande i det här fallet.
+
+- **Dokumentversioner i SharePoint och OneDrive**. När du SharePoint från OneDrive-konton tas inte flera versioner av ett dokument med i det uppskattade sökresultatet. Men du kan välja att inkludera alla dokumentversioner när du exporterar sökresultatet. Om du inkluderar dokumentversioner när du exporterar sökresultat, ökas det faktiska antalet (och den totala storleken) för de exporterade objekten.
+
+- **SharePoint mappar**. Om mappnamnet i SharePoint matchar en sökfråga inkluderas ett antal sådana mappar i sökberäkningen (men inte objekten i de mapparna). När du exporterar sökresultatet exporteras objekten i mappen, men den faktiska mappen exporteras inte. Resultatet är att antalet exporterade objekt är mer än det uppskattade sökresultatet. Om en mapp är tom minskas antalet faktiska sökresultat med ett objekt, eftersom den faktiska mappen inte exporteras.
+
+- **SharePoint listor**. Om namnet på en söklista SharePoint en sökfråga inkluderas ett antal av alla objekt i listan i sökberäkningen. När du exporterar sökresultaten exporteras listan (och listobjekten) som en enda CSV-fil. Det här minskar det faktiska antalet objekt som faktiskt exporteras. Om listan innehåller bifogade filer exporteras de bifogade filerna som separata dokument, vilket också ökar antalet exporterade objekt.
 
 - **Rådatafilformat och exporterade filformat.** För Exchange objekt beräknas den uppskattade storleken på sökresultatet med hjälp av storlekarna för Exchange meddelanden. Men e-postmeddelanden exporteras i en PST-fil eller som enskilda meddelanden (som är formaterade som EML-filer). Båda dessa exportalternativ använder ett annat filformat än obearbetade meddelanden Exchange, vilket resulterar i att den totala exporterade filstorleken skiljer sig från den uppskattade filstorleken.
 
-- **Dokumentversioner**. För SharePoint dokument ingår flera versioner av ett dokument inte i det uppskattade sökresultatet. Men du kan välja att inkludera alla dokumentversioner när du exporterar sökresultatet, vilket ökar det faktiska antalet (och den totala storleken) för de exporterade dokumenten. 
+- **Avduplicering av Exchange objekt under exporten.** För Exchange objekt minskar avdupliceringen antalet objekt som exporteras. Du kan välja att duplicera sökresultaten när du exporterar dem. För Exchange innebär det att bara en instans av ett meddelande exporteras, även om meddelandet kan hittas i flera postlådor. Det uppskattade sökresultatet inkluderar alla förekomster av ett meddelande. Om du väljer alternativet för avduplicering när du exporterar sökresultat kan det faktiska antalet exporterade objekt bli betydligt mindre än det uppskattade antalet objekt.
 
-- **Avduplicering**. För Exchange objekt minskar avdupliceringen antalet objekt som exporteras. Du kan välja att duplicera sökresultaten när du exporterar dem. För Exchange innebär det att bara en instans av ett meddelande exporteras, även om meddelandet kan hittas i flera postlådor. Det uppskattade sökresultatet inkluderar alla förekomster av ett meddelande. Om du väljer alternativet för avduplicering när du exporterar sökresultat kan det faktiska antalet exporterade objekt bli betydligt mindre än det uppskattade antalet objekt.
-
-    Ett annat sak att tänka på om du väljer alternativet för avduplicering är att alla Exchange-objekt exporteras i en enda PST-fil och mappstrukturen från källpostlådorna inte bevaras. Den exporterade PST-filen innehåller bara e-postobjekten. Men en sökresultatrapport innehåller en post för varje exporterat meddelande som identifierar källpostlådan där meddelandet finns. På så sätt kan du identifiera alla postlådor som innehåller ett duplicerat meddelande. Om du inte aktiverar avduplicering exporteras en separat PST-fil för varje postlåda som ingår i sökningen. 
-
-
-
-
+    Ett annat sak att tänka på om du väljer alternativet för avduplicering är att alla Exchange-objekt exporteras i en enda PST-fil och mappstrukturen från källpostlådorna inte bevaras. Den exporterade PST-filen innehåller bara e-postobjekten. Men en sökresultatrapport innehåller en post för varje exporterat meddelande som identifierar källpostlådan där meddelandet finns. På så sätt kan du identifiera alla postlådor som innehåller ett duplicerat meddelande. Om du inte aktiverar avduplicering exporteras en separat PST-fil för varje postlåda som ingår i sökningen.
 
 > [!NOTE]
-> Om du inte markerar alternativet Inkludera objekt som är krypterade eller har ett okänt **format** när du exporterar sökresultaten eller laddar ned rapporter, laddas rapporterna om indexfel ned men de innehåller inga poster. Det betyder inte att det inte finns indexfel. Det innebär bara att icke indexerade objekt inte inkluderades i exporten. 
+> Om du inte markerar alternativet Inkludera objekt som är krypterade eller har ett okänt **format** när du exporterar sökresultaten eller laddar ned rapporter, laddas rapporterna om indexfel ned men de innehåller inga poster. Det betyder inte att det inte finns indexfel. Det innebär bara att icke indexerade objekt inte inkluderades i exporten.

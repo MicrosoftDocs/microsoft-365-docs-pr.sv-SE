@@ -15,13 +15,14 @@ ms.custom:
 - M365solutions
 - seo-marvel-jun2020
 f1.keywords: NOCSH
-description: Lär dig konfigurera säkert innehållssamarbete i Teams för att skydda dina data utifrån dess känslighet.
-ms.openlocfilehash: 804307b3035f0d2246dc0ac541cce2d63506c351
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+recommendations: false
+description: Lär dig konfigurera säkert innehållssamarbete i Teams att skydda dina data utifrån dess känslighet.
+ms.openlocfilehash: 12c8bfd2c7c59e1cc4dcf149e394d2c7dc456530
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591916"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539065"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365-and-microsoft-teams"></a>Konfigurera säkert samarbete med Microsoft 365 och Microsoft Teams
 
@@ -52,7 +53,7 @@ De flesta organisationer har en mängd information, med varierande känslighet o
 
 Information som marknadsföringsbroschyrer är avsedda att delas brett utanför organisationen. Information som snabbmenyer är inte avsedda för extern delning, men skulle inte ha någon inverkan på verksamheten om de delades externt. Den här typen av information behöver ett litet eller inget skydd.
 
-Samma marknadsföringsbroschyrer, under utveckling, kanske endast delas inom organisationen. I så fall kanske standardinställningarna för delning i Teams är tillräckliga.
+Samma marknadsföringsbroschyrer, under utveckling, kanske endast delas inom organisationen. I så fall kan standardinställningarna för delning i Teams vara tillräckliga.
 
 Information om en ny produkt som är under utveckling kan ses som känslig, även inom organisationen. I det här fallet kan det vara lämpligt med ett bättre skydd. Du kan till exempel begränsa åtkomsten till den här informationen till medlemmar i ett visst team. Beroende på projektet kan du behöva samarbeta med personer utanför organisationen, till exempel en leverantörs- eller partnerorganisation.
 
@@ -60,24 +61,24 @@ Information som är avgörande för organisationens framgång eller som har stri
 
 ![Riskskala från låg (utgiven broschyr) till hög (känsliga affärsdata)](../media/solutions-architecture-center/SecureCollaboration-SensitivityAndBusinessImpactofSharing-fromVisio.png)
 
-För alla scenarier som anges ovan kan du använda team i Microsoft Teams för att lagra, dela och samarbeta med informationen. 
+För alla scenarier som anges ovan kan du använda grupper i Microsoft Teams för att lagra, dela och samarbeta med informationen. 
 
-Om du vill konfigurera säkert samarbete använder du dessa Funktioner och funktioner i Microsoft 365.
+Om du vill konfigurera säkert samarbete använder Microsoft 365 funktioner.
 
 | Produkt eller komponent | Resurs eller funktion | Licensiering |
 |:-------|:-----|:-------|
-| Microsoft Defender för Office 365 | Säkra bifogade filer för SPO, OneDrive och Teams; Säkra dokument Säkra länkar för Teams    | Microsoft 365 E1, E3 och E5 |
+| Microsoft Defender för Office 365 | Valv Bifogade filer för SPO, OneDrive och Teams; Valv Dokument; Valv Länkar för Teams    | Microsoft 365 E1, E3 och E5 |
 | SharePoint    | Principer för webbplats- och fildelning, webbplatsdelningsbehörigheter, delningslänkar, åtkomstförfrågningar, webbplats gästdelningsinställningar | Microsoft 365 E1, E3 och E5 |
 | Microsoft Teams   | Gäståtkomst, privata team, privata kanaler | Microsoft 365 E1, E3 och E5 |
 | Microsoft 365 Efterlevnad  | Känslighetsetiketter    | Microsoft 365 E3 och E5 |
 
 ### <a name="collaboration-governance"></a>Samarbetsstyrning
 
-Microsoft 365 innehåller många alternativ för att styra din samarbetslösning. Vi rekommenderar att du använder det här distributionsinnehållet tillsammans med [innehållet med samarbetsstyrning](collaboration-governance-overview.md) för att skapa den bästa samarbetslösningen för din organisation.
+Microsoft 365 finns många alternativ för att styra din samarbetslösning. Vi rekommenderar att du använder det här distributionsinnehållet tillsammans med [innehållet med samarbetsstyrning](collaboration-governance-overview.md) för att skapa den bästa samarbetslösningen för din organisation.
 
 ### <a name="using-teams-for-all-kinds-of-data"></a>Använda Teams för alla typer av data
 
-För att hantera åtkomst till information med olika känsligheter har vi utvecklat tre olika nivåer [av skydd för Teams.](configure-teams-three-tiers-protection.md) Du kan anpassa någon av dessa nivåer för att bättre tillgodose behoven eller verksamheten. 
+För att hantera åtkomst till information med olika känsligheter har vi utvecklat tre olika nivåer av [skydd för Teams.](configure-teams-three-tiers-protection.md) Du kan anpassa någon av dessa nivåer för att bättre tillgodose behoven eller verksamheten. 
 
 ![Bild av tre skyddsnivåer för Teams](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
@@ -87,17 +88,17 @@ Dessa nivåer –  *baslinje,* känslig och mycket känslig *–* ökar gradvis 
 |-|**Baslinjenivå**|**Känslig nivå**|**Högkänslig nivå**|
 |:--|:-----------|:------------|:-------------------|
 |Offentligt eller privat team|Antingen|Privat|Privat|
-|Oautentiserad delning|Blockerad|Blockerad|Blockerad|
-|Fildelning|Tillåten|Tillåten|Endast teamägare kan dela.|
+|Oautentiserad delning|Blockeras|Blockeras|Blockeras|
+|Fildelning|Tillåts|Tillåts|Endast teamägare kan dela.|
 |Teammedlemskap|Vem som helst kan gå med i offentliga team.<br>Godkännande av teamägare krävs för att gå med i privata team.|Godkännande av gruppägare krävs för att gå med.|Godkännande av gruppägare krävs för att gå med.|
 |Dokumentkryptering|||Tillgänglig med känslighetsetikett|
-|Gästdelning|Tillåten|Kan tillåtas eller blockeras|Kan tillåtas eller blockeras|
-|Ohanterade enheter|Ingen begränsning|Endast webbåtkomst|Blockerad|
+|Gästdelning|Tillåts|Kan tillåtas eller blockeras|Kan tillåtas eller blockeras|
+|Ohanterade enheter|Ingen begränsning|Endast webbåtkomst|Blockeras|
 
 Konfigurering av dessa nivåer omfattar:
 
 - Konfigurera inställningar i Teams för gäståtkomst och privata kanaler
-- Konfigurera inställningar på en grupps associerade SharePoint-webbplats för intern delning och gästdelning, åtkomstförfrågningar och delningslänkar
+- Konfigurera inställningar i ett grupps associerade SharePoint för intern delning och gästdelning, åtkomstförfrågningar och delningslänkar
 - För känsliga *och* *mycket känsliga nivåer,* konfigurera känslighetsetiketter för att klassificera teamen och kontrollera gästdelning och åtkomst från ohanterade enheter
 - För den *mycket känsliga* nivån konfigurerar du en känslighetsetikett för att kryptera de dokument den tillämpas på
 
@@ -116,7 +117,7 @@ Du kan behöva [dela information om känsligheten med personer utanför din orga
 De här resurserna hjälper dig att komma igång med att konfigurera din miljö för samarbete med personer utanför organisationen:
 
 - [Samarbeta i dokument](collaborate-on-documents.md) för att dela enskilda filer med mappar.
-- [Samarbeta på en webbplats](collaborate-in-site.md) för att samarbeta med gäster på en SharePoint-webbplats.
+- [Samarbeta på en webbplats](collaborate-in-site.md) för att samarbeta med gäster på en SharePoint webbplats.
 - [Samarbeta som ett team](collaborate-as-team.md) för att samarbeta med gäster i ett team.
 
 Beroende på hur känslig informationen är kan du lägga till säkerhetsåtgärder för att förhindra att en för stor del delas. Med de här resurserna kan du konfigurera de skydd du behöver för organisationen:
@@ -131,13 +132,13 @@ Om du har ett större projekt med en partnerorganisation kan du använda hanteri
 
 ## <a name="training-for-administrators"></a>Utbildning för administratörer
 
-Dessa utbildningsmoduler från Microsoft Learn kan hjälpa dig att lära dig mer om funktionerna för samarbete, styrning och identitet i Teams och SharePoint.
+Dessa utbildningsmoduler från Microsoft Learn kan hjälpa dig att lära dig funktionerna för samarbete, styrning och identitet i Teams och SharePoint.
 
 #### <a name="teams"></a>Teams
 
 |Utbildning:|Hantera teamsamarbete med Microsoft Teams|
 |:---|:---|
-|![Utbildningsikon för Teams-samarbete](../media/manage-team-collaboration-with-microsoft-teams.svg)|I Hantera teamsamarbete med Microsoft Teams introduceras funktioner i Microsoft Teams, det centrala navet för teamsamarbete i Microsoft 365. Du får lära dig hur du kan använda Teams för att underlätta samarbete och kommunikation inom organisationen, både lokalt och på en rad olika enheter, från datorer till surfplattor och telefoner, samtidigt som du utnyttjar alla funktionerna i Office 365-programmen. Du får en förståelse för hur Teams tillhandahåller en omfattande och flexibel miljö för samarbete mellan program och enheter. Den här utbildningsvägen kan hjälpa dig att förbereda för Microsoft 365 Certified: Teams Administrator Associate-certifiering.<br><br>2 t 17 min - Utbildningsväg - 5 moduler|
+|![Teams för utbildning för samarbete](../media/manage-team-collaboration-with-microsoft-teams.svg)|I Hantera teamsamarbete Microsoft Teams får du en ny funktion i Microsoft Teams, som är det centrala navet för samarbete i Microsoft 365. Du får lära dig hur du kan använda Teams för att underlätta samarbete och kommunikation inom organisationen, både lokalt och lokalt, på ett brett utbud av enheter – från datorer till surfplattor till telefoner – och samtidigt dra nytta av alla funktionerna i Office 365-programmen. Du får en förståelse för hur Teams en omfattande och flexibel miljö för samarbete mellan program och enheter. Den här utbildningsvägen kan hjälpa dig att förbereda för Microsoft 365 Certified: Teams Administrator Associate-certifiering.<br><br>2 t 17 min - Utbildningsväg - 5 moduler|
 
 > [!div class="nextstepaction"]
 > [Starta >](/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
@@ -146,7 +147,7 @@ Dessa utbildningsmoduler från Microsoft Learn kan hjälpa dig att lära dig mer
 
 |Utbildning:|Samarbeta med SharePoint i Microsoft 365|
 |:---|:---|
-|![SharePoint-utbildningsikon](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|I Hantera delat innehåll med Microsoft SharePoint introduceras funktioner och funktioner i SharePoint, och hur det fungerar med Microsoft 365. Du får lära dig mer om de olika typerna av SharePoint-webbplatser, inklusive navplatser, samt informationsskydd, rapportering och övervakning. Du får också lära dig hur du använder fil- och mappdelning i SharePoint för att optimera samarbete, dela filer externt och hur du hanterar SharePoint-webbplatser i administrationscentret för SharePoint. Den här utbildningsvägen kan hjälpa dig att förbereda för certifieringen Microsoft 365 Certified: Teamwork Administrator Associate.<br><br>1 t 14 min - Utbildningsväg - 4 moduler|
+|![SharePoint på utbildning](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|I Hantera delat innehåll med Microsoft SharePoint en artikel om funktioner i SharePoint och hur det fungerar med Microsoft 365. Du får lära dig mer om de olika typerna SharePoint webbplatser, inklusive navplatser, samt informationsskydd, rapportering och övervakning. Du får också lära dig hur du använder SharePoint-fil- och mappdelning för att optimera samarbete, hur du delar filer externt och hur du hanterar SharePoint-webbplatser i SharePoint administrationscenter. Den här utbildningsvägen kan hjälpa dig att förbereda för certifieringen Microsoft 365 Certified: Teamwork Administrator Associate.<br><br>1 t 14 min - Utbildningsväg - 4 moduler|
 
 > [!div class="nextstepaction"]
 > [Starta >](/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
@@ -155,7 +156,7 @@ Dessa utbildningsmoduler från Microsoft Learn kan hjälpa dig att lära dig mer
 
 |Utbildning:|Skydda företagsinformation med Microsoft 365|
 |:---|:---|
-|![Utbildningsikon för Teams infoskydd](../media/protect-enterprise-information-microsoft-365.svg)|Det är svårare än någonsin att skydda och skydda organisationens information. I utbildningsvägen Skydda företagsinformation med Microsoft 365 diskuteras hur du skyddar känslig information från att oavsiktligt skriva över eller felaktigt använda data, hur du identifierar och klassificerar data, hur du skyddar dem med känslighetsetiketter och hur du både övervakar och analyserar din känsliga information för att skydda mot förlust. Den här utbildningsvägen kan hjälpa dig att förbereda för Microsoft 365 Certified: Security Administrator Associate och Microsoft 365 Certified: Enterprise Administration Expert-certifieringar.<br><br>1 t - Utbildningsväg - 5 moduler|
+|![Teams för utbildning om informationsskydd](../media/protect-enterprise-information-microsoft-365.svg)|Det är svårare än någonsin att skydda och skydda organisationens information. I utbildningsvägen Skydda företagsinformation med Microsoft 365 diskuteras hur du skyddar känslig information från att oavsiktligt skriva över eller felaktigt använda data, hur du identifierar och klassificerar data, hur du skyddar dem med känslighetsetiketter och hur du både övervakar och analyserar din känsliga information för att skydda mot förlust. Den här utbildningsvägen kan hjälpa dig att förbereda för Microsoft 365 Certified: Security Administrator Associate och Microsoft 365 Certified: Enterprise Administration Expert-certifieringar.<br><br>1 t - Utbildningsväg - 5 moduler|
 
 > [!div class="nextstepaction"]
 > [Starta >](/learn/modules/m365-security-info-overview/introduction/)
@@ -175,8 +176,8 @@ Dessa utbildningsmoduler kan hjälpa användarna att använda Teams, grupper och
 
 |Teams|SharePoint|
 |:---|:---|
-|![Ikon för att konfigurera och anpassa teamets utbildning](../media/set-up-customize-team-training.png)<br>**[Konfigurera och anpassa ditt team](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![SharePoint-ikon för utbildning om delning och synkronisering](../media/sharepoint-share-sync-training.png)<br>**[Dela och synkronisera](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
-|![Utbildningsikon för att ladda upp och hitta filer i Teams](../media/smc-teams-upload-find-files-training.png)<br>**[Ladda upp och söka efter filer](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
+|![Ikon för att konfigurera och anpassa teamets utbildning](../media/set-up-customize-team-training.png)<br>**[Konfigurera och anpassa ditt team](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![SharePoint för att dela och synkronisera utbildning](../media/sharepoint-share-sync-training.png)<br>**[Dela och synkronisera](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
+|![Teams ladda upp och hitta utbildningsikonen för filer](../media/smc-teams-upload-find-files-training.png)<br>**[Upload och söka efter filer](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
 |![Ikonen Samarbeta i team och kanaler](../media/teams-collaborate-channels-training.png)<br>**[Samarbeta i team och kanaler](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**|||
 
 ## <a name="illustrations"></a>Illustrationer

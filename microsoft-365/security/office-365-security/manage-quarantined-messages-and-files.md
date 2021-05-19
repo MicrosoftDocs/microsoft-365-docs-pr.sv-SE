@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan lära sig hur de visar och hanterar meddelanden i karantän för alla användare i Exchange Online Protection (EOP). Administratörer i organisationer med Microsoft Defender för Office 365 kan också hantera filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams.
+description: Administratörer kan lära sig att visa och hantera meddelanden i karantän för alla användare i Exchange Online Protection (EOP). Administratörer i organisationer med Microsoft Defender för Office 365 kan också hantera filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c5e2d6a3729a24766652d4c7c0973c63b1dcb207
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 508866fd66e4cbd00f559446d4ce52a4be063c94
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272210"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539113"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Hantera meddelanden och filer i karantän som administratör i EOP
 
@@ -59,12 +59,12 @@ Du visar och hanterar meddelanden i karantän i Säkerhets- och efterlevnadscent
 
   - Genom att lägga till användare i motsvarande Azure Active Directory-roll i administrationscentret för Microsoft 365 får användarna den nödvändiga behörigheten _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
   - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
-  - <sup>\*</sup>Medlemmar i **rollgruppen Karantänadministratör** måste också  vara medlemmar i rollgruppen hanteringsroll i [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) för att kunna göra karantänprocedurer i Exchange Online PowerShell.
+  - <sup>\*</sup>Medlemmar i rollgruppen **Karantänadministratör** måste också  vara medlemmar i rollgruppen Hantering av servergrupp [i Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) för att kunna göra karantänprocedurer i Exchange Online PowerShell.
 
 - Meddelanden i karantän behålls under en standardtid innan de tas bort automatiskt:
   - 30 dagar för meddelanden som i karantän omfattas av principer mot skräppost (skräppost, nätfiske och massutskick). Det här är standardvärdet och maxvärdet. Information om hur du konfigurerar (lägre) det här värdet [finns i Konfigurera principer för skydd mot skräppost.](configure-your-spam-filter-policies.md)
   - 15 dagar för meddelanden som innehåller skadlig programvara.
-  - 15 dagar för filer som sätts i karantän av Säkra bifogade filer för SharePoint, OneDrive och Microsoft Teams i Defender för Office 365.
+  - 15 dagar för filer som satts i karantän av Valv bifogade filer för SharePoint, OneDrive och Microsoft Teams i Defender för Office 365.
 
   När ett meddelande förfaller från karantän kan du inte återställa det.
 
@@ -72,7 +72,7 @@ Du visar och hanterar meddelanden i karantän i Säkerhets- och efterlevnadscent
 
 ### <a name="view-quarantined-email"></a>Visa e-post i karantän
 
-1. I Säkerhets- och efterlevnadscentret går du till **Hothantering** \> **Granska** \> **Karantän**.
+1. Gå till karantänen för & för  hantering av hothantering i säkerhets- \> **och efterlevnadscentret.** \> 
 
 2. Kontrollera att **Visa i karantän är** inställt på standardvärdet för e-post. 
 
@@ -113,7 +113,7 @@ Du visar och hanterar meddelanden i karantän i Säkerhets- och efterlevnadscent
 
    - **Principtyp**: filtrera meddelanden efter principtyp:
      - **Policy mot skadlig programvara**
-     - **Princip för säkra bifogade filer**
+     - **Valv Princip för bifogade filer**
      - **Princip för skydd mot nätfiske**
      - **Filterprincip för värdbaserat innehåll** (Skräppostprincip)
      - **Transportregel**
@@ -196,7 +196,7 @@ När du har valt ett meddelande kan du välja mellan flera alternativ för vad d
 
 - **Ladda ned meddelande**: Välj **Jag är medveten om riskerna om jag laddar ned meddelandet** i den utfällbara rutan som visas om du vill spara en lokal kopia av meddelandet i .eml-format.
 
-- **Spärra avsändare:** Lägg till avsändaren i listan Spärrade avsändare i postlådan. Mer information finns i Spärra [en e-postavsändare.](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)
+- **Spärra avsändare**: Lägg till avsändaren i listan Spärrade avsändare i din postlåda. Mer information finns i [Spärra e-postavsändare](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 - **Skicka meddelande:** I det utfällfönster som visas väljer du följande alternativ:
 
@@ -225,16 +225,16 @@ När du markerar flera meddelanden i karantän i listan (upp till 100) visas den
 
 Klicka på **Stäng** när du är klar.
 
-## <a name="microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files"></a>Endast Microsoft Defender för Office 365: Använd säkerhets- & och efterlevnadscenter för att hantera filer i karantän
+## <a name="microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files"></a>Endast Microsoft Defender Office 365: Använda Säkerhets- och & för att hantera filer i karantän
 
 > [!NOTE]
 > Procedurerna för filer i karantän i det här avsnittet är endast tillgängliga för Microsoft Defender för Office 365 abonnemang 1- och abonnemang 2-prenumeranter.
 
-I organisationer med Defender för Office 365 kan administratörer hantera filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams. Information om hur du aktiverar skydd för dessa [filer finns i Aktivera säkra bifogade filer för SharePoint, OneDrive och Microsoft Teams.](turn-on-mdo-for-spo-odb-and-teams.md)
+I organisationer med Defender för Office 365 kan administratörer hantera filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams. Om du vill aktivera skydd för dessa filer kan du [gå till Aktivera Valv bifogade filer för SharePoint, OneDrive och Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
 ### <a name="view-quarantined-files"></a>Visa filer i karantän
 
-1. I Säkerhets- och efterlevnadscentret går du till **Hothantering** \> **Granska** \> **Karantän**.
+1. Gå till karantänen för & för  hantering av hothantering i säkerhets- \> **och efterlevnadscentret.** \> 
 
 2. Ändra **Visa i karantän** till **värdefilerna**. Du kan sortera på ett fält genom att klicka på en tillgänglig kolumnrubrik.
 
@@ -308,6 +308,6 @@ De cmdlets du använder för att visa och hantera meddelanden och filer i karant
 
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
 
-- [Preview-QuarantineMessage:](/powershell/module/exchange/preview-quarantinemessage)Observera att den här cmdleten endast används för meddelanden, inte för bifogade filer i karantän för SharePoint, OneDrive och Microsoft Teams.
+- [Preview-QuarantineMessage:](/powershell/module/exchange/preview-quarantinemessage)Observera att den här cmdleten endast används för meddelanden, inte filer i karantän från Valv Bifogade filer för SharePoint, OneDrive och Microsoft Teams.
 
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)

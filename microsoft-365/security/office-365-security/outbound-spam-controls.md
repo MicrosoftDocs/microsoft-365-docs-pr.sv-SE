@@ -20,12 +20,12 @@ ms.custom:
 description: Administratörer kan läsa mer om kontrollerna för utgående skräppost i Exchange Online Protection (EOP) och vad de kan göra om du behöver skicka massutskick.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e84cd636abee42a03ff8590091542c96714f2d8
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0fb6bfe5d83c551c0a93cc7b453b27a2d7b476bc
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207102"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538741"
 ---
 # <a name="outbound-spam-protection-in-eop"></a>Skydd mot utgående skräppost i EOP
 
@@ -36,21 +36,21 @@ ms.locfileid: "51207102"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor ser vi allvarligt på hanteringen av utgående skräppost. En kund som avsiktligt eller oavsiktligt skickar skräppost från sin organisation kan försämra ryktet för hela tjänsten, och kan påverka e-postleveransen för andra kunder.
+I Microsoft 365 organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online postlådor tar vi det allvarliga i hanteringen av utgående skräppost. Även om en kund avsiktligt eller oavsiktligt skickar skräppost från organisationen kan den åtgärden försämra hela tjänstens rykte och påverka e-postleveransen för andra kunder.
 
-I det här avsnittet beskrivs de kontroller och meddelanden som är utformade för att förhindra utgående skräppost, och vad du kan göra om du behöver skicka massutskick.
+I den här artikeln beskrivs de kontroller och meddelanden som är utformade för att förhindra utgående skräppost, och vad du kan göra om du behöver skicka massutskick.
 
 ## <a name="what-admins-can-do-to-control-outbound-spam"></a>Vad administratörer kan göra för att styra utgående skräppost
 
-- Använda inbyggda meddelanden: När en användare överskrider [](configure-the-outbound-spam-policy.md) gränserna för sändning av tjänsten eller principer för  utgående skräppost och är begränsad från att skicka e-post, skickar standardaviseringsprincipen med namnet Användare begränsad från att skicka **e-post** till medlemmar i **gruppen TenantAdmins** (globala administratörer). [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)  Information om hur du konfigurerar vilka andra som får dessa meddelanden [finns i Kontrollera aviseringsinställningarna för begränsade användare.](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users) Standardprinciperna för avisering med namnet Begränsning för sändning av e-post överskreds och mönster för misstänkta e-postavsändarmeddelanden upptäckte också att skicka e-postmeddelanden till medlemmar i **gruppen TenantAdmins** **(globala** administratörer).   Gå till [Varningsregler i Säkerhets- och efterlevnadscentret](../../compliance/alert-policies.md) om du vill ha mer information om varningsprinciper.
+- Använda inbyggda meddelanden: När en användare överskrider [](configure-the-outbound-spam-policy.md) gränserna för sändning av tjänsten eller principer för  utgående skräppost och är begränsad från att skicka e-post, skickar standardaviseringsprincipen med namnet Användare begränsad från att skicka **e-post** till medlemmar i **gruppen TenantAdmins** (globala administratörer). [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)  Information om hur du konfigurerar vilka andra som får dessa meddelanden [finns i Kontrollera aviseringsinställningarna för begränsade användare.](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users) Standardprinciperna för avisering med namnet Begränsning för sändning av e-post överskreds och mönster för misstänkta e-postavsändarmeddelanden upptäckte också att skicka e-postmeddelanden till medlemmar i **gruppen TenantAdmins** **(globala** administratörer).   Mer information om aviseringsprinciper finns i [Aviseringsprinciper i Microsoft 365](../../compliance/alert-policies.md).
 
-- Granska **skräppostklagomål** från tredje parts e-postleverantörer : Många e-posttjänster som Outlook.com, Yahoo och AOL ger en feedbackloop där en användare i sin tjänst markerar ett e-postmeddelande från Microsoft 365 som skräppost, så att meddelandet paketeras och skickas tillbaka till oss för granskning. Mer information om avsändarsupport för Outlook.com finns i <https://sendersupport.olc.protection.outlook.com/pm/services.aspx> .
+- Granska skräppostklagomål från tredje parts e-postleverantörer: Många **e-posttjänster** som Outlook.com, Yahoo och AOL ger en feedbackslinga där en användare i sin tjänst markerar ett e-postmeddelande från Microsoft 365 som skräppost och skickas tillbaka till oss för granskning. Mer information om avsändarstöd för Outlook.com finns i <https://sendersupport.olc.protection.outlook.com/pm/services.aspx> .
 
 ## <a name="how-eop-controls-outbound-spam"></a>Hur EOP kontrollerar utgående skräppost
 
 - **Separering av utgående** e-posttrafik: Alla utgående meddelanden som skickas via tjänsten genomsöks efter skräppost. Om meddelandet fastställt vara skräppost, kommer det från en sekundär, mindre känd IP-adresspool som heter _högriskleveranspoolen._ Mer information finns i [Högriskleveranspool för utgående meddelanden.](high-risk-delivery-pool-for-outbound-messages.md)
 
-- **Övervaka vårt rykte för käll-IP-adresser:** Microsoft 365 frågar om olika ip-blockeringslistor från tredje part. En avisering skapas om någon av de IP-adresser som vi använder för utgående e-post visas i dessa listor. Det här gör att vi kan reagera snabbt när skräppost har fått vårt rykte att försämras. När en avisering skapas har vi intern dokumentation som beskriver hur du kan ta bort (avlistade) IP-adresser från blockeringslistor.
+- **Övervaka vårt rykte för käll-IP-adresser:** Microsoft 365 vi har frågor om olika IP-blockeringslistor från tredje part. En avisering skapas om någon av de IP-adresser som vi använder för utgående e-post visas i dessa listor. Den här kontrollen gör att vi kan reagera snabbt när skräppost har fått vårt rykte att försämras. När en avisering skapas har vi intern dokumentation som beskriver hur du kan ta bort (avlistade) IP-adresser från blockeringslistor.
 
 - **Inaktivera konton** som skickar för mycket skräppost : Även om vi delar upp utgående skräppost i högriskleveranspoolen kan vi inte tillåta att ett konto (ofta ett komprometterat konto) skickar skräppost på obestämd <sup>\*</sup> tid. Vi övervakar konton som skickar skräppost, och när de överskrider en gräns för oupptäckta meddelanden blockeras kontot från att skicka e-post. Det finns olika tröskelvärden för enskilda användare och hela klientorganisationen.
 
@@ -60,12 +60,12 @@ I det här avsnittet beskrivs de kontroller och meddelanden som är utformade f�
 
 ## <a name="recommendations-for-customers-who-want-to-send-mass-mailings-through-eop"></a>Rekommendationer för kunder som vill göra massutskick via EOP
 
-Det är svårt att skapa balans mellan kunder som vill skicka en stor mängd e-post i förhållande till att skydda tjänsten från komprometterade konton och massutskick av avsändare med dåliga metoder för mottagarköp. Kostnaden för en Microsoft 365-e-postkälla som ligger på en tredje parts IP-blockeringslista är större än att blockera en användare som skickar för mycket e-post.
+Det är svårt att skapa balans mellan kunder som vill skicka en stor mängd e-post i förhållande till att skydda tjänsten från komprometterade konton och massutskick av avsändare med dåliga metoder för mottagarköp. Kostnaden för en e Microsoft 365 postkälla som ligger på en IP-blockeringslista från tredje part är större än att blockera en användare som skickar för mycket e-post.
 
-Enligt beskrivningen i [Tjänstbeskrivning](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)för Exchange Online stöds inte användningen av tjänsten med EOP för att skicka massutskick, och tillåts endast med "bästa möjliga"-användning. För kunder som vill skicka massutskick rekommenderar vi följande lösningar:
+Enligt beskrivningen i [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)Tjänstbeskrivning stöds inte användning av tjänsten med EOP för att skicka massutskick och tillåts endast med "bästa möjliga"- användning. För kunder som vill skicka massutskick rekommenderar vi följande lösningar:
 
-- **Skicka massutskick via lokala e-postservrar**: Det innebär att kunderna måste ha en egen e-postinfrastruktur för massutskick.
+- **Skicka massutskick via lokala e-postservrar:** Kunderna har en egen e-postinfrastruktur för massutskick.
 
-- **Använda en tredjepartsleverantör för massutskick:** Det finns flera tredjepartsleverantörer av massutskick som du kan använda för att skicka massutskick. De här företagen har ett intresse av att arbeta med kunder för att säkerställa bra e-postskick.
+- **Använda en tredjepartsleverantör för** massutskick: Det finns flera tredjepartsleverantörer av massutskick som du kan använda för att skicka massutskick. De här företagen har ett intresse av att arbeta med kunder för att säkerställa bra e-postskick.
 
 Messaging, Mobile, Malware Anti-Abuse Working Group (MAAWG) publicerar sin medlemsförteckning på <https://www.maawg.org/about/roster> . Flera stora mängder e-postleverantörer finns med i listan och kan vara ansvariga för internetmeddelare.

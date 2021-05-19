@@ -1,5 +1,5 @@
 ---
-title: Välj den domän som ska användas när du skapar Microsoft 365-grupper
+title: Välj den domän som ska användas när du skapar Microsoft 365 grupper
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -16,17 +16,18 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
-description: Lär dig att välja den domän som ska användas när du skapar Microsoft 365-grupper genom att konfigurera principer för e-postadresser med PowerShell.
-ms.openlocfilehash: 4908d5bd58ca6d0fbb50151983ddb459f0732284
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+recommendations: false
+description: Lär dig att välja den domän som ska användas när du Microsoft 365 grupper genom att konfigurera principer för e-postadresser med PowerShell.
+ms.openlocfilehash: a0142ea5f5aa088c4be79fc8699a616d9cdd9390
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904690"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538225"
 ---
-# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Välj den domän som ska användas när du skapar Microsoft 365-grupper
+# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Välj den domän som ska användas när du skapar Microsoft 365 grupper
 
-Vissa organisationer använder separata e-postdomäner för att dela upp olika delar av verksamheten. Du kan ange vilken domän som ska användas när användarna skapar Microsoft 365-grupper.
+Vissa organisationer använder separata e-postdomäner för att dela upp olika delar av verksamheten. Du kan ange vilken domän som ska användas när användarna skapar Microsoft 365 grupper.
   
 Om din organisation kräver att användare skapar sina grupper i andra domäner än den godkända standarddomänen för ditt företag kan du tillåta det genom att konfigurera principer för e-postadresser med PowerShell.
 
@@ -49,7 +50,7 @@ I följande två scenarier förklaras hur du ska göra detta.
   
 ### <a name="scenario-1"></a>Scenario 1
 
-I följande exempel visas hur du etablerar alla Microsoft 365-grupper i organisationen i groups.contoso.com domän.
+Följande exempel visar hur du etablerar alla Microsoft 365 grupper i organisationen i groups.contoso.com domän.
   
 ```
 New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@groups.contoso.com" -Priority 1
@@ -57,7 +58,7 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 ### <a name="scenario-2"></a>Scenario 2
 
-Anta att du vill styra vilka underdomäner som Microsoft 365-grupper skapas i. Du vill ha:
+Anta att du vill styra vilka underdomäner Microsoft 365 grupper skapas i. Du vill ha:
   
 - Grupper som skapas av elever (användare där **Avdelning har** **angetts till Studenter**) i students.groups.contoso.com domän. Använd det här kommandot:
     
@@ -100,7 +101,7 @@ Om en princip för e-postadresser ändras påverkar det inte de grupper som reda
   
 ## <a name="hybrid-requirements"></a>Hybridkrav
 
-Om organisationen har konfigurerats i ett hybridscenario kan du läsa Konfigurera [Microsoft 365-grupper](/exchange/hybrid-deployment/set-up-microsoft-365-groups) med en lokal Exchange-hybrid för att kontrollera att organisationen uppfyller kraven för att skapa Microsoft 365-grupper. 
+Om organisationen är konfigurerad i ett hybridscenario kan du läsa Konfigurera Microsoft 365-grupper med en lokal [Exchange-hybrid](/exchange/hybrid-deployment/set-up-microsoft-365-groups) för att kontrollera att organisationen uppfyller kraven för att Microsoft 365 grupper. 
   
 ## <a name="additional-info-about-using-email-address-policies-groups"></a>Mer information om hur du använder principer för e-postadresser:
 
@@ -124,4 +125,4 @@ Det finns några fler saker att veta:
 
 [Skapa din plan för samarbetesstyrning](collaboration-governance-first.md)
 
-[Skapa en Microsoft 365-grupp i administrationscentret](../admin/create-groups/create-groups.md)
+[Skapa Microsoft 365 grupp i administrationscentret](../admin/create-groups/create-groups.md)

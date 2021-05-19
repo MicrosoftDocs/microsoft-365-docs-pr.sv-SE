@@ -1,7 +1,7 @@
 ---
 title: Planera för programvara och programvaruversioner som slutar på grund av support
 description: Upptäck och planera för program- och programvaruversioner som inte längre stöds och inte får säkerhetsuppdateringar.
-keywords: Hantering av hot och sårbarhet, Microsoft Defender för Endpoint tvm-säkerhetsrekommendationer, rekommendation om cybersäkerhet, rekommendation om säkerhet på åtgärd
+keywords: Hantering av hot och säkerhetsrisker, Microsoft Defender för Endpoint tvm-säkerhetsrekommendationer, rekommendation om cybersäkerhet och rekommendation om säkerhet på åtgärd
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,21 +18,21 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8e8fc228b8856df03b580e748bf00efc8d4333c3
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: bb436cbd2d0fa453872760c1d2656585e02d1767
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934135"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538873"
 ---
-# <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>Planera för slutet av supportprogramvara och programvaruversioner med hot och sårbarhetshantering
+# <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>Planera för slut på support av programvara och programvaruversioner med Hantering av hot och säkerhetsrisker
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
 
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Hantering av hot och sårbarhet](next-gen-threat-and-vuln-mgt.md)
+- [Hot och hantering av säkerhetsrisker](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -41,9 +41,12 @@ Supporten för programvara eller programversioner (EOS, kallas även slutet på 
 
 Det är centralt för säkerhet- och IT-administratörer att samarbeta och se till att organisationens programvaruinventering har konfigurerats för optimala resultat, efterlevnad och ett hälsosamt nätverks-ekosystem. De bör granska alternativen för att ta bort eller ersätta program som stöds i slutet av supporten och uppdateringsversionerna som inte längre stöds. Det är bäst att skapa och implementera en plan **innan supportdatumen** är slut.
 
+>[!NOTE]
+> EOS-funktionen är för närvarande inte tillgänglig för Windows -produkter (Mac, Linux). den läggs dock till i framtiden.
+
 ## <a name="find-software-or-software-versions-that-are-no-longer-supported"></a>Hitta program- och programvaruversioner som inte längre stöds
 
-1. Från menyn för hantering av hot och sårbarhet går du till [**rekommendationer om säkerhet.**](tvm-security-recommendation.md)
+1. Från menyn Hantering av hot och säkerhetsrisker navigerar du till [**Säkerhetsrekommendationer**](tvm-security-recommendation.md).
 2. Gå till **panelen Filter** och leta efter avsnittet med taggar. Markera ett eller flera av EOS-taggalternativen. Använd **sedan**.
 
     ![Skärmbildstaggar som säger EOS-programvara, EOS-versioner och kommande EOS-versioner.](images/tvm-eos-tag.png)
@@ -72,6 +75,6 @@ När du har identifierat vilka program- och programvaruversioner som är sårbar
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [Översikt över hot- och sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)
+- [Översikt över hantering av säkerhetsrisker hot och hot](next-gen-threat-and-vuln-mgt.md)
 - [Säkerhetsrekommendationer](tvm-security-recommendation.md)
 - [Programvaruinventering](tvm-software-inventory.md)

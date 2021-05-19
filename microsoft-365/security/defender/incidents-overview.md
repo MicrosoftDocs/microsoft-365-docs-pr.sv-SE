@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 93751a8297e61a969e0049e27a847324a3d16872
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: cc2fcd7410c2f3122fb3ce49a40e93bfa0767331
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300019"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539029"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Incidenter i Microsoft 365 Defender
 
@@ -135,7 +135,7 @@ Identifiera ärenden med högsta prioritet för analys och lösning i incidentk�
 
 3. Återställ så mycket som möjligt från attacken genom att återställa klientorganisationens resurser till den status de var i innan händelsen.
 
-4. [Lös](manage-incidents.md#resolve-incident) incidenten och ta dig tid för efter incidentinlärning att:
+4. [Lös](manage-incidents.md#resolve-an-incident) incidenten och ta dig tid för efter incidentinlärning att:
 
    - Förstå typen av attack och dess påverkan.
    - Undersöka attacken i [Hotanalys och](threat-analytics.md) säkerhets-communityn för en trend för säkerhetsattacker.

@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Läs om hur du återaktiverar din prenumeration när den går ut, inaktiveras eller avbryts.
 ms.date: 04/07/2021
-ms.openlocfilehash: 902be48b32acdff5173a0dd5cc84dbd5972e1ba9
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 63c65e90d01bfd2c67d1d2ecfed32a4d4ff8d27a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345148"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538465"
 ---
 # <a name="reactivate-your-subscription"></a>Återaktivera prenumerationen
 
@@ -58,7 +58,7 @@ Du måste vara global administratör eller faktureringsadministratör för att k
 
 ::: moniker-end
 
-2. Gå till **fliken** Produkter och leta reda på den prenumeration som du vill återaktivera. Välj **Fler åtgärder** (tre punkter) och välj sedan **Återaktivera den här prenumerationen**.\
+2. Gå till **fliken** Produkter och leta reda på den prenumeration som du vill återaktivera. Välj de tre punkterna (fler åtgärder) och välj sedan **Återaktivera den här prenumerationen**.\
     Om du inte ser **Återaktivera den här prenumerationen kontaktar** [du support.](../../business-video/get-help-support.md)
 3. I fönstret **Återaktivera den här** prenumerationen väljer du en betalningsmetod i listrutan eller välj Lägg **till betalningsmetod.**
 4. Välj **Spara**.

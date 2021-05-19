@@ -1,5 +1,5 @@
 ---
-title: Sidan för e-post entitet i Microsoft Defender för Office 365 (MDO)
+title: Sidan för e-post entitet i Microsoft Defender Office 365 (MDO)
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -14,13 +14,13 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Microsoft Defender för Office 365 E5- och P1- och P2-kunder kan nu få en 360-gradersvy av varje e-postmeddelande med entitetssidan för e-post.
-ms.openlocfilehash: 8b531980852336679aad5f2013d63269c238e49c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+description: Kunder med Microsoft Defender Office 365 E5 samt P1 och P2 kan nu få en 360-gradersvy av varje e-postmeddelande med entitetssidan för e-post.
+ms.openlocfilehash: aa5d7effb66c4805f6983fa1afac19255bc996e4
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933367"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539101"
 ---
 # <a name="the-email-entity-page"></a>Sidan E-postenhet
 
@@ -30,11 +30,11 @@ ms.locfileid: "51933367"
 - [Använda sidflikar för e-post entitet](#use-email-entity-page-tabs)
 - [Nytt för sidan e-post entitet](#new-to-the-email-entity-page)
 
-Administratörer för Microsoft Defender för Office 365 (eller MDO) E5 och MDO P1 och P2 har en 360-gradersvy av e-post med hjälp av sidan E-post **entitet.** Den här sidan för att gå till e-post har skapats för att förbättra informationen som levereras i e-postutforskaren i [Hotutforskaren.](threat-explorer-views.md)
+Administratörerna för Microsoft Defender för Office 365 (eller MDO) E5 och MDO P1 och P2 har en 360-gradersvy av e-post på sidan **E-post entitet.** Den här sidan för att gå till e-post har skapats för att förbättra informationen som levereras i e-postutforskaren i [Hotutforskaren.](threat-explorer-views.md)
 
 ## <a name="reach-the-email-entity-page"></a>Nå entitetssidan för e-post
 
-Oavsett om det befintliga säkerhets- och efterlevnadscentret för Office (protection.office.com) eller det nya säkerhetscentret för Microsoft 365 (security.microsoft.com) kan du se och använda sidan med e-post entitet.
+Oavsett om det befintliga säkerhets- & efterlevnadscentret (protection.office.com) eller det nya Microsoft 365 säkerhetscentret (security.microsoft.com) kan du se och använda sidan med e-post entitet.
 
 |Centrera|URL|Navigering|
 |---|---|---|
@@ -111,12 +111,12 @@ Användarna ser bättre information om kända skadliga bilagor eller hyperlänka
 
 *E-postinformation:* Information krävs för en djupare förståelse av e-post på *fliken* Analys.
 
-- *Exchange-transportregler (ETR-regler* eller E-postflödesregler) : Dessa regler tillämpas på ett meddelande på transportnivån och har företräde framför phish- och spam-bedömningar. Dessa kan bara skapas och ändras i administrationscentret för Exchange, men om något ETR-problem gäller för ett meddelande visas ETR-namnet och GUID här. Värdefull information för spårningssyfte.
+- *Exchange Transportregler (ETR-regler* eller E-postflödesregler) : Dessa regler tillämpas på ett meddelande i transportlagret och har företräde framför nätt och skräppostutseningar. Dessa kan bara skapas och ändras i administrationscentret för Exchange, men om något ETR gäller för ett meddelande visas ETR-namnet och GUID här. Värdefull information för spårningssyfte.
 
 - *Åsidosättningar* i systemet: Det här är ett sätt att göra undantag till den leveransplats som är avsedd för ett meddelande genom att åsidosätta leveransplatsen som anges av systemet (enligt teknik för hot och identifiering).
 
 - *Skräppostpostlåderegel:* Skräppost är en dold inkorgsregel som aktiveras som standard i alla postlådor.
-  - När skräppostregeln har aktiverats för postlådan kan Exchange Online Protection (EOP) flytta meddelanden till skräppost enligt vissa villkor. Flytten kan baseras på åtgärden skräppostfiltrering av bedömning Flytta meddelandet till mappen Skräppost eller i listan Spärrade avsändare i postlådan. Om du inaktiverar skräppostregeln förhindras leverans av meddelanden till mappen Skräppost baserat på *listan Betrodda* avsändare i postlådan.
+  - När skräppostregeln har aktiverats i postlådan kan Exchange Online Protection (EOP) flytta meddelanden till Skräppost enligt vissa villkor. Flytten kan baseras på åtgärden skräppostfiltrering av bedömning Flytta meddelandet till mappen Skräppost eller i listan Spärrade avsändare i postlådan. Om du inaktiverar skräppostregeln *förhindras* leverans av meddelanden till mappen Skräppost baserat på Valv avsändare i postlådan.
   - När skräppostregeln är  inaktiverad för postlådan kan EOP inte flytta meddelanden till mappen Skräppost baserat på åtgärden skräppostfiltreringsåtgärden Flytta meddelandet till mappen Skräppost eller samlingen lista över säkra e-postmeddelanden i postlådan.
 
 - *BCL (Bulk Complaint Level):* BCL (Bulk Complaint Level) för meddelandet. En högre BCL anger att det är mer sannolikt att ett massutskick av e-postmeddelande skapar klagomål (det naturliga resultatet om e-postmeddelandet kan vara skräppost).
@@ -131,7 +131,7 @@ Användarna ser bättre information om kända skadliga bilagor eller hyperlänka
 
 - *Datum då domänen skapades:* Anger datumet då avsändardomänen skapades. En nyligen skapad domän är något som du kan vara försiktig med om andra signaler anger något misstänkt beteende.
 
-*E-postautentisering:* E-postautentiseringsmetoder som används av Microsoft 365 är SPF, DKIM och DMARC.
+*E-postautentisering:* E-postautentiseringsmetoder som används av Microsoft 365 omfattar SPF, DKIM och DMARC.
 
 - Sender Policy Framework (**SPF**): Beskriver resultaten för SPF-kontrollen för meddelandet. Möjliga värden kan vara:
   - Pass (IP address): SPF-kontrollen för meddelandet som skickas och innehåller avsändarens IP-adress. Klienten har tillåtelse att skicka eller vidarebefordra e-post på avsändarens domän.

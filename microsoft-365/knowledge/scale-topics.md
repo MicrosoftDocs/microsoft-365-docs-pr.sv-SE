@@ -13,18 +13,18 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Lär dig mer om metodtips för att hantera de många ämnen som finns i din organisation med Viva Topics.
-ms.openlocfilehash: 3246c7e91c315dadb6c2b14008c9a4da378409d5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: dd9fe658d4f698ac50563b5c9ea141a090f6141d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52334155"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538417"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>Hantera ämnen i skala i Microsoft Viva-ämnen
 
-När du indexerar dina SharePoint-webbplatser eller hela organisationen för Viva Topics kan många ämnen skapas. När det händer och du ser tusentals förslag på sidan Hantera **ämnen** kan det vara svårt att veta var du ska börja. I den här artikeln beskrivs hur Viva Topics hjälper dig att optimera vilka ämnen och vilken information som visas för användare som söker efter information, även i stora organisationer med många ämnen.
+När du indexerar SharePoint eller hela organisationen för Viva Topics kan många ämnen skapas. När det händer och du ser tusentals förslag på sidan Hantera **ämnen** kan det vara svårt att veta var du ska börja. I den här artikeln beskrivs hur Viva Topics hjälper dig att optimera vilka ämnen och vilken information som visas för användare som söker efter information, även i stora organisationer med många ämnen.
 
-Först en påminnelse om de fyra delstaterna för ämnen:
+Först en påminnelse om de [fyra stegen för ämnen:](manage-topics.md#topic-stages)
 
 - **Förslag:** Ett ämne har identifierats med AI och har tillräckligt med stödresurser, anslutningar och egenskaper. (De är markerade som ett **föreslaget ämne** i användargränssnittet.)
 
@@ -98,7 +98,7 @@ Startsidan för ett ämnescenter är en annan plats där feedback om föreslagna
 
 När du tillåter omfattande crowdsourcing av ämnen, bör du tänka på följande faktorer:
 
--   Användarna ser alternativet **Redigera** på ämnessidor och kan redigera sidorna på samma sätt som andra moderna SharePoint-sidor.
+-   Användarna ser alternativet **Redigera** på ämnessidor och kan redigera sidorna på samma sätt som andra moderna SharePoint sidor.
 
 -   Vissa föreslagna ämneswebbdelar kan inte tas bort.  Du kan inte ta bort ämnesnamn, alternativa namn, definition, föreslagna personer och föreslagna resurser.
 
@@ -126,13 +126,13 @@ Användning av befintliga taxonomier kan ge användarna en lista med ämnen som 
 
 -   Produkter och tjänster som din organisation tillhandahåller
 
--   Teams i din organisation
+-   Teams i organisationen
 
 -   Projekt med hög profil
 
 Den här metoden kan även användas på avdelningsnivå eller funktionsnivå, med ämnesexperter som förstår det området i din organisation. Målet är inte att de ska granska ett urval eller alla ämnen. I stället hämtar de sina egna kunskaper om domänen för att styra selektiv läroplan.
 
-### <a name="search"></a>Sök
+### <a name="search"></a>Söka
 
 Vanliga sökord upptäcks ofta som ämnen. Med hjälp av [de vanligaste frågerapporterna i Microsoft Search](/sharepoint/view-search-usage-reports)kan du identifiera de vanligaste sökorden i organisationen. Om ämnen har identifierats för dessa termer, är de bra kandidater för läroplan. Dessa avsnitt kan presenteras som svarskort i Microsoft Search.
 

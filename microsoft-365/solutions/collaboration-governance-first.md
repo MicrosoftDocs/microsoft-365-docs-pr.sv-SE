@@ -14,17 +14,18 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: Lär dig hur du skapar en plan för samarbetesstyrning
-ms.openlocfilehash: 89b8ffc1359d79661e2b7cc30f195ea792e7a161
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c371d97c211275ffb1019e6f6dfc165295ed729f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916376"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539245"
 ---
 # <a name="create-your-collaboration-governance-plan"></a>Skapa din plan för samarbetesstyrning
 
-Det är alltid bäst att börja gå över till Microsoft 365 med en tydlig syn:
+Det är alltid bäst att börja gå Microsoft 365 med en tydlig syn:
 
 - Vilka är dina viktigaste affärsmål?
 
@@ -34,9 +35,9 @@ Det är alltid bäst att börja gå över till Microsoft 365 med en tydlig syn:
 
 En tydlig vision innehåller viktig vägledning för de beslut som kan bli viktiga för dig när du ska tänka på din plan för styrning. Graden av formalitet och djup som du behöver för att dokumentera styrningsplanen bör vara i linje med de resultat du vill uppnå. Visionen utgör därmed ett ramverk för både kontext och investeringar i styrning.
 
-Microsoft 365 skapar nya teknikområden för att stödja verksamheten. De här nya teknikerna ändrar hur dessa tekniker används, hanteras och styrs. 
+Microsoft 365 skapar nya objekt för tekniker som stöder verksamheten. De här nya teknikerna ändrar hur dessa tekniker används, hanteras och styrs. 
 
-Styrning av Microsoft 365 bör komplettera befintliga principer som styr lokala miljöer. Eftersom molnet ger nya möjligheter att stödja verksamheten är det viktigt att förstå dessa affärsmöjligheter och fundera på en styrningsmetod som skapar en lämplig balans mellan användarmål, affärsrisker samt bransch- och regelkrav.
+Microsoft 365 bör komplettera befintliga principer som styr lokala miljöer. Eftersom molnet ger nya möjligheter att stödja verksamheten är det viktigt att förstå dessa affärsmöjligheter och fundera på en styrningsmetod som skapar en lämplig balans mellan användarmål, affärsrisker samt bransch- och regelkrav.
 
 Om du funderar på styrning först innebär det att du påbörjar arbetet mot molnet med några viktiga beslut för att hitta den bästa positionen för en övergripande framgång. Några av dessa beslut är:
 
@@ -44,13 +45,13 @@ Om du funderar på styrning först innebär det att du påbörjar arbetet mot mo
 
 - Vem kan och hur ska grupper, webbplatser och team etableras? [Läs mer om hur du styr vem som har möjlighet att skapa grupper.](./manage-creation-of-groups.md)
 
-- Vilken typ av innehåll kan publiceras i varje typ av miljö – och vilka funktioner behöver aktiveras för att hindra användare från att av misstag publicera information på olämpliga platser? [Läs mer om informationsskydd i Microsoft 365.](../compliance/information-protection.md)
+- Vilken typ av innehåll kan publiceras i varje typ av miljö – och vilka funktioner behöver aktiveras för att hindra användare från att av misstag publicera information på olämpliga platser? [Läs mer om informationsskydd i Microsoft 365](../compliance/information-protection.md).
 
 Det finns inget perfekt svar på de här frågorna – rätt svar är de som balanserar risker och fördelar för din organisation.
 
 ## <a name="what-does-governance-mean-for-microsoft-365"></a>Vad innebär styrning för Microsoft 365?
 
-Med governance planning for Microsoft 365 (Styrningsplanering för Microsoft 365) handlar det om att se till att du skyddar dina kritiska informationstillgångar samtidigt som du minimerar risken. Governance includes several key areas, each of which needs to be planned, coordinated, and adapted to align with changing organizational needs and the evolution of the technology. 
+Med governance planning for Microsoft 365 is about making sure that you are protecting your critical information assets while minimizing risk. Governance includes several key areas, each of which needs to be planned, coordinated, and adapted to align with changing organizational needs and the evolution of the technology. 
 
 - **Operational Assurance** – hålla plattformen drift, säkerställa prestanda. Det här är till stor del en IT-uppgift som huvudsakligen har tillhandahållits av Microsoft.
 
@@ -60,11 +61,11 @@ Med governance planning for Microsoft 365 (Styrningsplanering för Microsoft 365
 
 Styrningsplanering bör vara först, men styrning måste vara något som du kontinuerligt går tillbaka till i en iterativ process. När dataområdet förändras med tiden kommer du att vilja gå tillbaka till dina styrningsbeslut för att anpassa dig till föränderliga affärsbehov och funktionstillgänglighet. Du kanske upptäcker att du behöver mer kontroll för att säkerställa överensstämmelse. Du kanske upptäcker att du behöver mindre kontroll för att uppmuntra mer kreativ användning av kärnfunktioner. Det kan hända att roller och ansvarsområden måste uppdateras för att återspegla ändringar i lösningen eller ändringar i hur användare använder olika program.
 
-En av de viktigaste funktionerna i Microsoft 365 är till exempel möjligheten att enkelt arbeta tillsammans med personer utanför organisationen. Vissa organisationer i vissa branscher väljer att blockera all extern delning. Andra aktiverar extern delning i specifika scenarier eller med specifika organisationer. Det finns inget rätt eller fel styrningsbeslut när det gäller extern delning, och det finns många olika scenarier där du kan aktivera olika inställningar i Microsoft 365 för att tillåta delning i vissa fall och blockera det i andra. Men om du bara börjar din resa från en lokal miljö till molnet är det viktigt att tänka på beslut om extern delning och förstå fördelarna och riskerna med de olika tillgängliga alternativen.
+En av de viktigaste funktionerna i Microsoft 365 är möjligheten att enkelt arbeta tillsammans med personer utanför organisationen. Vissa organisationer i vissa branscher väljer att blockera all extern delning. Andra aktiverar extern delning i specifika scenarier eller med specifika organisationer. Det finns inget höger eller fel styrningsbeslut när det gäller extern delning och det finns många olika scenarier där du kan aktivera olika inställningar i Microsoft 365 för att tillåta delning i vissa fall och blockera det i andra. Men om du bara börjar din resa från en lokal miljö till molnet är det viktigt att tänka på beslut om extern delning och förstå fördelarna och riskerna med de olika tillgängliga alternativen.
 
 ## <a name="think-about-governance-first"></a>Tänk på styrning först
 
-Din investering i Microsoft 365 är bara lika bra som värdet på det innehåll och de upplevelser du aktiverar – så om du funderar på styrning i början av resan ser du till att du varken låser sig eller aktiverar för mycket innan du har haft möjlighet att förstå och utvärdera konsekvenserna av varje beslut. Det finns flera "uppringningar" som du kan lämna in i administrationscentret för Microsoft 365 och för enskilda webbplatser och team. En effektiv styrningsplan är avgörande för att uppnå affärsmål – men styrning handlar om att balansera risker med fördelar. Om vi låser allt kommer andra att hitta ett sätt att komma runt reglerna om de behöver göra det för att få jobbet gjort.
+Din investering i Microsoft 365 är bara lika bra som värdet på det innehåll och de upplevelser du aktiverar – så om du tänker på styrning i början av resan ser du till att du varken låser sig eller aktiverar för mycket innan du har haft möjlighet att förstå och utvärdera konsekvenserna av varje beslut. Det finns flera "uppringningar" som du kan lämna in i Microsoft 365 administrationscenter och för enskilda webbplatser och team. En effektiv styrningsplan är avgörande för att uppnå affärsmål – men styrning handlar om att balansera risker med fördelar. Om vi låser allt kommer andra att hitta ett sätt att komma runt reglerna om de behöver göra det för att få jobbet gjort.
 
 Genom att först tänka på styrning kan du:
 
@@ -80,15 +81,15 @@ Många styrningsbeslut kan implementeras genom att aktivera eller inaktivera fun
 
 Traditionellt har styrningsteam skapat långa dokument som beskriver alla styrningsbeslut. Tyvärr har dessa långa dokument sällan lästs – vilket betydde att styrningskrav som förlitar sig på personer för att framtvinga sällan har fungerat. Försök att undvika att skapa långa dokument som är riktade till flera målgrupper när du tänker på hur du kommunicerar viktiga styrningsbeslut. Fundera i stället på de här alternativen:
 
-- **Bädda in styrningsbeslut direkt i de lösningar som du skapar.** Om du vill säkerställa att känslig information skyddas i hela Microsoft 365 implementerar du känslighetsetiketter för att säkerställa att dina användare inte av misstag visar information som de inte borde göra. Blockera program där du inte kan skydda dem. [Läs mer om känslighetsetiketter](../compliance/sensitivity-labels.md).
+- **Bädda in styrningsbeslut direkt i de lösningar som du skapar.** Om du vill se till att känslig information skyddas i hela Microsoft 365 implementerar du känslighetsetiketter för att säkerställa att dina användare inte av misstag visar information som de inte borde göra. Blockera program där du inte kan skydda dem. [Läs mer om känslighetsetiketter](../compliance/sensitivity-labels.md).
 
-- **Förstärka med utbildning**. Anpassa lösningar som [Microsoft 365 utbildningsvägar](/office365/customlearning) för att säkerställa att dina organisationsspecifika förväntningar förstärkers med utbildning från Microsoft.
+- **Förstärka med utbildning**. Anpassa lösningar som [Microsoft 365 utbildningsvägar](/office365/customlearning) för att säkerställa att dina organisationsspecifika förväntningar förstärks med microsoft-tillhandahållen utbildning.
 
-- **Leverera som en webbplats, inte ett dokument**. Skapa ditt eget Microsoft 365 Adoption Center på en SharePoint-kommunikationswebbplats för att säkerställa att innehållsförfattare och webbplats- och gruppägare inte bara förstår "hur" utan även "hur ska". Skapa ämnesspecifika sidor som handlar om olika affärsscenarier för att ge både vägledning och bästa praxis att utnyttja eller möjliggöra olika funktioner i SharePoint och Teams och andra program för att uppnå affärsresultat.
+- **Leverera som en webbplats, inte ett dokument**. Skapa ett eget Microsoft 365 Adoption Center på en kommunikationswebbplats i SharePoint för att säkerställa att innehållsförfattare och webbplats- och gruppägare inte bara förstår "hur" utan även "hur ska". Skapa ämnesspecifika sidor som behandlar olika affärsscenarier för att ge både vägledning och bästa praxis att utnyttja eller möjliggöra olika funktioner i SharePoint och Teams och andra program för att uppnå affärsresultat.
 
 ## <a name="what-are-the-key-success-factors"></a>Vilka är de viktigaste framgångsfaktorerna?
 
-Införliva dessa nyckelfaktorer för att säkerställa en lyckad planering av styrning för Microsoft 365.
+Införliva dessa nyckelfaktorer för att säkerställa en lyckad planering av Microsoft 365.
 
 ### <a name="identify-your-governance-core-team"></a>Identifiera ditt kärnteam inom styrning
 
@@ -98,9 +99,9 @@ Arbeta igenom viktiga styrningsbeslut – men försök inte att fatta alla beslu
 
 Förutom extern delning, som diskuterats tidigare, är ett annat viktigt beslut för varje organisation hur man etablerar webbplatser och grupper. Tänk på följande till exempel:
 
-- Eftersom det är så enkelt för användare att skapa Microsoft 365-grupper kan det vara bra att öppna gruppskapande så att DET inte finns många förfrågningar om att skapa dem åt andra. För att undvika "gruppsnålning" kan du skapa ett anpassat arbetsflöde som skickar ett e-postmeddelande med styrning, utbildning och annan information till gruppskapare strax efter att gruppen har skapats. (Till exempel "Du har just skapat en webbplats/grupp, community osv.- här är dina ansvar och länkar till utbildning...") Å andra sidan, beroende på vilket företag du har, kanske du vill styra vem som har möjlighet att skapa grupper.
+- Eftersom det är så enkelt för användare att skapa Microsoft 365-grupper kanske du vill öppna gruppskapande så att DET inte finns många förfrågningar om att skapa dem åt andra. För att undvika "gruppsnålning" kan du skapa ett anpassat arbetsflöde som skickar ett e-postmeddelande med styrning, utbildning och annan information till gruppskapare strax efter att gruppen har skapats. (Till exempel "Du har just skapat en webbplats/grupp, community osv.- här är dina ansvar och länkar till utbildning...") Å andra sidan, beroende på vilket företag du har, kanske du vill styra vem som har möjlighet att skapa grupper.
 
-- Om du vill styra hur SharePoint-webbplatser skapas kan du dölja **länken Skapa** webbplats på startsidan för SharePoint. Skapa ett anpassat formulär eller skapa en anpassad webbplatsdesign och webbplatsskript för att automatisera etableringen av nya moderna SharePoint-webbplatser med en fördefinierad webbplatsstruktur som kan innehålla länkar till din styrning och bästa praxis.
+- Om du vill styra hur SharePoint webbplatser skapas kan  du dölja länken Skapa webbplats på SharePoint startsida. Skapa ett anpassat formulär eller skapa en anpassad webbplatsdesign och webbplatsskript för att automatisera etableringen av nya moderna SharePoint-webbplatser med en fördefinierad webbplatsstruktur som kan innehålla länkar till din styrnings- och utbildningsmetoder.
 
 ### <a name="align-decisions-to-business-goals"></a>Justera beslut efter affärsmål
 
@@ -116,21 +117,21 @@ Affärsresultatsmål bör vara den primära drivrutinen för dina styrningsbeslu
 
 ### <a name="define-roles-and-responsibilities"></a>Definiera roller och ansvarsområden
 
-Utöver ditt styrningsteam finns det flera andra nyckelroller eller team som du vill ha för att lyckas med Microsoft 365. Vissa roller kan kombineras eller fyllas av samma person och andra kanske inte är lämpliga för alla organisationer. De flesta organisationer har en huvudsponsor för Microsoft 365 som helhet och vissa har också en kommitté eller ett team för hela Microsoft 365 eller bara för intranätet. [Läs mer om omfattande administratörsroller och behörigheter i Microsoft 365.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+Utöver ditt styrningsteam finns det flera andra nyckelroller eller team som du vill ha för att lyckas med Microsoft 365. Vissa roller kan kombineras eller fyllas av samma person och andra kanske inte är lämpliga för alla organisationer. De flesta organisationer har en huvudsponsor för Microsoft 365 som helhet och vissa har också en kommitté eller ett team för hela Microsoft 365 eller bara för intranätet. [Läs mer om omfattande administratörsroller och behörigheter i Microsoft 365](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 ### <a name="revisit-as-business-and-technology-changes"></a>Gå tillbaka när företaget och tekniken förändras
 
-Styrning för Microsoft 365 är inte "en gång och klar". Ha en plan för att hålla dig om vad som ändras i Microsoft 365 och anpassa dina riktlinjer för styrning vid behov. (Det här är en viktig orsak till att det inte är en bra idé att skapa ett långt styrningsdokument. Företag och tekniker förändras. Det är enkelt att uppdatera en webbsida. Det är mycket svårare att uppdatera och distribuera om ett dokument.)
+Styrning för Microsoft 365 är inte "en gång och klart". Ha en plan för att hålla dig om vad som förändras i Microsoft 365 och anpassa dina riktlinjer för styrning vid behov. (Det här är en viktig orsak till att det inte är en bra idé att skapa ett långt styrningsdokument. Företag och tekniker förändras. Det är enkelt att uppdatera en webbsida. Det är mycket svårare att uppdatera och distribuera om ett dokument.)
 
 ### <a name="have-a-strategy-for-communicating-governance-policies-and-guidelines"></a>Ha en strategi för att förmedla principer och riktlinjer för styrning
 
 I slutänden beror framgången av ditt arbete med planering av styrning på hur väl du har kommunicerat förväntningar till medlemmarna i organisationen. Tänk på följande, utöver de förslag som beskrivits tidigare:
 
-- Kan du införliva "hur ska" med din "how to"-utbildning? Med andra ord, kan du skapa ett "användarresurscenter" för Microsoft 365 där du kan tillhandahålla resurser och utbildning för att ge vägledning och utbildning som hjälper användarna att effektivt införa Microsoft 365? Det bästa styrningsinnehållet ger vägledning som hjälper alla användare att använda och få ut mesta möjliga av Microsoft 365.
+- Kan du införliva "hur ska" med din "how to"-utbildning? Med andra ord, kan du skapa ett "användarresurscenter" för Microsoft 365 där du kan tillhandahålla resurser och utbildning för att ge vägledning och utbildning som hjälper användarna att använda Microsoft 365 effektivt? Det bästa styrningsinnehållet ger vägledning som hjälper alla användare att använda och få ut mesta möjliga av Microsoft 365.
 
 - Bör du skapa en certifiering och omcertifiering för webbplats- och teamägare?
 
-- Kan du skapa ett Microsoft 365 Champions-program för din organisation? Du kan också gå med i det globala [Microsoft 365-mästare-programmet](https://aka.ms/O365Champions) och få idéer och metoder för ditt eget mästare-program och få kontakt med likasinnade personer och tankeledare inifrån och runt Microsoft.
+- Kan du skapa ett Microsoft 365 för din organisation? Du kan också gå med i det globala [Microsoft 365-programmet](https://aka.ms/O365Champions) för att få idéer och metoder för ditt eget mästareprogram och få kontakt med likasinnade personer och tankeledare inifrån och runt Microsoft.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
@@ -138,7 +139,7 @@ I slutänden beror framgången av ditt arbete med planering av styrning på hur 
 
 [Styrning i Microsoft Cloud Adoption Framework för Azure](/azure/cloud-adoption-framework/govern)
 
-[Översikt över styrning i SharePoint](/sharepoint/governance-overview)
+[SharePoint översikt över styrning](/sharepoint/governance-overview)
 
 [Planera styrning av organisation och livscykel för grupptjänster](plan-organization-lifecycle-governance.md)
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1921c0985128b49e3f8e11a29df8bc75cdbda829
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: dcae50150eb3b21e65e68a5cea376a0cdef31a65
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52163026"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538453"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referens för funktioner för kommunikationsefterlevnad
 
@@ -165,7 +165,7 @@ Inbyggda utbildare och globala klassificerare söker igenom skickade eller motta
 - French
 - German
 - Italian
-- Japanese
+- Japanska
 - Portugisiska
 - Spanish
 
@@ -482,7 +482,7 @@ Instrumentpanelen **Rapporter** innehåller följande rapportwidgetar och detalj
 I vissa fall måste du informera regel- eller efterlevnadsgranskningar för att bevisa att du är över över användaraktiviteter och kommunikation. Den här informationen kan vara en sammanfattning av alla aktiviteter som är associerade med en definierad organisationspolicy eller när en princip för kommunikationsefterlevnad ändras. Principer för kommunikationsefterlevnad har inbyggda granskningshistorik för fullständig beredskap för interna eller externa granskningar. Detaljerade granskningshistoriker för varje åtgärd för att skapa, redigera och ta bort fångas upp av dina kommunikationsprinciper för att tillhandahålla bevis på övervakande procedurer.
 
 >[!Important]
->Granskning måste vara aktiverad för organisationen innan händelser för kommunikationsefterlevnad registreras. Information om hur du aktiverar granskning [finns i Aktivera granskningsloggen](communication-compliance-configure.md#step-2-required-enable-the-audit-log).
+>Granskning måste vara aktiverad för organisationen innan händelser för kommunikationsefterlevnad registreras. Information om hur du aktiverar granskning [finns i Aktivera granskningsloggen](communication-compliance-configure.md#step-2-required-enable-the-audit-log). När aktiviteter utlöser händelser som fångas i Microsoft 365-granskningsloggen kan det ta upp till 48 timmar innan dessa händelser kan visas i principer för kommunikationsefterlevnad.
 
 Om du vill visa uppdateringsaktiviteter för kommunikationsefterlevnadsprincipen väljer du kontrollen Exportera principuppdateringar på huvudsidan för en princip.  Du måste vara global administratör *eller administratör för* *kommunikationsefterlevnad för att* kunna exportera uppdateringsaktiviteter. Den här åtgärden genererar en granskningsfil i .csv format som innehåller följande information:
 

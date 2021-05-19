@@ -16,13 +16,14 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
+recommendations: false
 description: Läs om konfigurationsstegen i Microsoft 365 som behövs för att konfigurera en grupp för samarbete mellan uppgifter, konversationer och dokumentation med gäster i Teams.
-ms.openlocfilehash: 4e734af198563d0bc4599b4476b3823384989212
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c17732705c1d88ff70e56f5d26d9e268e3ff7c19
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904666"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539269"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Samarbeta med gäster i en grupp
 
@@ -61,7 +62,7 @@ Om du arbetar med gäster från flera organisationer kanske du vill begränsa de
 
 Teams har en huvudknapp för gäståtkomst och en mängd olika inställningar som är tillgängliga för att styra vad gäster kan göra i en grupp. Huvudknappen, **Tillåt gäståtkomst i Teams** måste vara **På** för att gäståtkomst ska fungera i Teams.
 
-Kontrollera att gäståtkomst är aktiverat i Teams och justera gästinställningarna utifrån företagets behov. Tänk på att de här inställningarna påverkar alla grupper.
+Kontrollera att gäståtkomst är aktiverat i Teams och justera gästinställningarna utifrån dina affärsbehov. Tänk på att de här inställningarna påverkar alla grupper.
 
 ![Skärmbild av växling för gäståtkomst i Teams](../media/teams-guest-access-toggle-on.png)
 
@@ -81,7 +82,7 @@ När Teams gäståtkomst har aktiverats kan du styra gäståtkomst till enskilda
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Gästinställningar för Microsoft 365-grupper
 
-Teams använder Microsoft 365-grupper för gruppmedlemskap. Gästinställningarna för Microsoft 365-grupper måste vara aktiverat för att gäståtkomst i Teams ska fungera.
+Teams använder Microsoft 365-grupper för gruppmedlemskap. Gästinställningarna för Microsoft 365-grupper måste vara aktiverade för att gäståtkomsten i Teams ska fungera.
 
 ![Skärmbild av gästinställningarna för Microsoft 365-grupper i administrationscenter för Microsoft 365](../media/office-365-groups-guest-settings.png)
 
@@ -146,7 +147,7 @@ För att skapa ett team
 5. Skriv ett namn och en beskrivning för gruppen och klicka på **Skapa**.
 6. Klicka **Hoppa över**.
 
-Vi bjuder in användare senare. Sedan är det viktigt att kontrollera inställningarna för delning på webbplatsnivå för SharePoint-webbplatsen som är kopplad till gruppen.
+Vi bjuder in användare senare. Härnäst är det viktigt att kontrollera inställningarna för delning på webbplatsnivå för SharePoint-webbplatsen som är kopplad till gruppen.
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>Delningsinställningar på webbplatsnivå i SharePoint
 

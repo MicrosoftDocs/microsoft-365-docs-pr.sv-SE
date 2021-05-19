@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Läs mer om de gällande begränsningarna för funktionerna Innehållssökning och Grundläggande eDiscovery i Microsoft 365 efterlevnadscenter.
-ms.openlocfilehash: 47004473efe3407e9123fd15a7b1bf5f23e9fb23
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 5ca6fd30b40fbfaa3b93095eee403979f541d154
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311418"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538429"
 ---
 # <a name="limits-for-ediscovery-search"></a>Begränsningar för eDiscovery-sökning 
 
@@ -47,7 +47,7 @@ I följande tabell visas sökbegränsningar när du använder verktyget för inn
 |Maximalt antal webbplatser (i SharePoint och OneDrive för företag) som kan förhandsgranskas för sökresultat. Om det finns mer än 200 webbplatser totalt som innehåller innehåll som matchar sökfrågan är endast de 200 webbplatser som har flest sökresultat tillgängliga för förhandsgranskning.  <br/> |200  <br/> |
 |Maximalt antal objekt per postlåda i den gemensamma mappen som visas på förhandsgranskningssidan när innehållssökningsresultat förhandsgranskas.  <br/> |100  <br/> |
 |Maximalt antal objekt som hittas i alla postlådor i gemensamma mappar som visas på förhandsgranskningssidan när du förhandsgranskar innehållssökningsresultat.  <br/> |200  <br/> |
-|Maximalt antal offentliga postlådor som kan förhandsgranskas för sökresultat. Om det finns fler än 500 postlådor för gemensamma mappar som innehåller innehåll som matchar sökfrågan är endast de 500 postlådorna med flest sökresultat tillgängliga för förhandsgranskning.  <br/> |500  <br/> |
+|Maximalt antal postlådor i gemensamma mappar som kan förhandsgranskas för sökresultat. Om det finns fler än 500 postlådor för gemensamma mappar som innehåller innehåll som matchar sökfrågan är endast de 500 postlådorna med flest sökresultat tillgängliga för förhandsgranskning.  <br/> |500  <br/> |
 |Det maximala antalet tecken för sökfrågan (inklusive operatorer och villkor) för en sökning.  <br/><br/> **Obs!** Den här gränsen gäller efter att frågan har expanderats och innehåller tecken från nyckelordsfrågan, eventuella sökbehörighetsfilter som används för användaren och WEBBADRESSerna för alla webbplatsplatser. Det innebär att frågan utökas mot var och en av nyckelorden. Om en sökfråga till exempel har 15 nyckelord och ytterligare parametrar och villkor utökas frågan 15 gånger, var och en med de andra parametrarna och villkoren i frågan. Så även om antalet tecken i sökfrågan kan vara under gränsen, är det den utökade frågan som kan bidra till att överskrida gränsen.  <br/> |**Postlådor:** 10 000  <br/> **Webbplatser:** 4 000 vid sökning på alla webbplatser eller 2 000 vid sökning på upp till 20 webbplatser <sup>2</sup> <br/> |
 |Maximalt antal varianter som returneras när ett prefix-jokertecken används för att söka efter  en exakt fras i en sökfråga eller när du använder ett prefix-jokertecken och NEAR-boolesk operator.  <br/> |10 000 <sup>3</sup> <br/> |
 |Lägsta antal alfatecken för jokertecken i prefix. till exempel  `time*` ,  `one*` eller  `set*` .  <br/> |3  <br/> |

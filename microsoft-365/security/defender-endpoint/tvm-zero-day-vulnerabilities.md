@@ -1,7 +1,7 @@
 ---
-title: Minimera nolldagars säkerhetsproblem – hot och sårbarhetshantering
-description: Lär dig hur du kan hitta och minimera nolldagars säkerhetsproblem i din miljö med hjälp av hot och sårbarhetshantering.
-keywords: Microsoft Defender för endpoint tvm zero day vulnerabilities, tvm, threat & vulnerability management, zero day, 0-day, mitigate 0 day vulnerabilities, vulnerable CVE
+title: Minimera svagheter utan dag – Hantering av hot och säkerhetsrisker
+description: Lär dig hur du kan hitta och minimera svagheter under nolldagar i din miljö Hantering av hot och säkerhetsrisker.
+keywords: Microsoft Defender för slutpunkt tvm noll dagars säkerhetsproblem, tvm, hot & hantering av säkerhetsrisker, noll dag, 0-dagars, minimera 0 dagars säkerhetsproblem, sårbar CVE
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,34 +18,37 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: be508e646a67f01887814a0e72170e438ee86212
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 2c746a74899a34827e089f4c9c2f6ecc396bb69c
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933067"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538777"
 ---
-# <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>Minimera nolldagars säkerhetsproblem – hot och sårbarhetshantering
+# <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>Minimera svagheter utan dag – Hantering av hot och säkerhetsrisker
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
 
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Hantering av hot och sårbarhet](next-gen-threat-and-vuln-mgt.md)
+- [Hot och hantering av säkerhetsrisker](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Ett nolldagarshål är ett offentligt avslöjat säkerhetshål där inga officiella korrigeringar eller säkerhetsuppdateringar har släppts. Nolldagarsbrister har ofta hög allvarlighetsnivå och utnyttjas aktivt.
 
-Hantering av hot och risker kommer bara att visa nolldagars säkerhetsproblem som den har information om.
+Hot och hantering av säkerhetsrisker bara visar svagheter som inte har någon dag.
 
 ## <a name="find-information-about-zero-day-vulnerabilities"></a>Hitta information om svagheter utan dag
 
 När en nolldagarsrisk har hittats kommer information om den att förmedlas genom följande upplevelser i Microsoft Defender Säkerhetscenter.
 
-### <a name="threat-and-vulnerability-management-dashboard"></a>Instrumentpanel för hantering av hot och hot
+>[!NOTE]
+> Funktionen 0 dagar är för närvarande inte tillgänglig för produkter som Windows (Mac, Linux). den läggs dock till i framtiden.
+
+### <a name="threat-and-vulnerability-management-dashboard"></a>Hot och hantering av säkerhetsrisker instrumentpanel
 
 Leta efter rekommendationer med en nolldagarstagg i kortet "Bästa säkerhetsrekommendationer".
 
@@ -69,13 +72,13 @@ Leta efter det namngivna nolldagarsproblemet tillsammans med en beskrivning och 
 
 Leta efter programvara med nolldagarstaggen. Filtrera efter "nolldagars"-taggen för att endast se säkerhetsproblem med programvara utan dag.
 
-![Exempel på nolldagarsexempel för Windows Server 2016 på sidan för programvaruinventering.](images/tvm-zero-day-software-inventory.png)
+![Noll dagars exempel på Windows Server 2016 visas på sidan för programvaruinventering.](images/tvm-zero-day-software-inventory.png)
 
 ### <a name="software-page"></a>Sidan Programvara
 
 Leta efter en nolldagarstagg för varje programvara som har påverkats av den nolldagars sårbarheten.
 
-![Exempel på nolldag för programvarusidan för Windows Server 2016.](images/tvm-zero-day-software-page.png)
+![Exempel på nolldag för Windows Server 2016 programvara.](images/tvm-zero-day-software-page.png)
 
 ### <a name="security-recommendations-page"></a>Sidan Säkerhetsrekommendationer
 
@@ -83,7 +86,7 @@ Visa tydliga förslag om åtgärder och åtgärder, inklusive lösningar om de f
 
 Om det finns programvara med ett nolldagars sårbarhet och ytterligare säkerhetsproblem att ta itu med får du en rekommendation om alla säkerhetsproblem.
 
-![Exempel på nolldagarsexempel för Windows Server 2016 på sidan med säkerhetsrekommendationer.](images/tvm-zero-day-security-recommendation.png)
+![Nolldagarsexempel för Windows Server 2016 på sidan med säkerhetsrekommendationer.](images/tvm-zero-day-security-recommendation.png)
 
 ## <a name="addressing-zero-day-vulnerabilities"></a>Åtgärda svagheter utan dag
 
@@ -93,11 +96,11 @@ Om det finns en länk till åtgärder och lösningar finns det en länk. Lösnin
 
 Öppna alternativ för åtgärder och välj åtgärdstyp. Åtgärdsalternativet "åtgärd krävs" rekommenderas för säkerhetsproblem med nolldagar, eftersom ingen uppdatering har släppts än. Du kan inte välja ett förfallodatum eftersom det inte finns någon specifik åtgärd att utföra. Om det finns äldre säkerhetsproblem för den här programvaran som du vill åtgärda kan du åsidosätta alternativet "åtgärd som krävs" och välja "uppdatera".
 
-![Utfällfingrigt nolldag i Windows Server 2016 på sidan med säkerhetsrekommendationer.](images/tvm-zero-day-recommendation-flyout400.png)
+![Utfällfingrigt nolldag Windows Server 2016 på sidan med säkerhetsrekommendationer.](images/tvm-zero-day-recommendation-flyout400.png)
 
 ## <a name="track-zero-day-remediation-activities"></a>Spåra aktiviteter för nolldagarsreparation
 
-Gå till sidan [Remediation](tvm-remediation.md) för hot- och sårbarhetshantering för att visa objektet för åtgärdsaktivitet. Om du väljer åtgärdsalternativet "åtgärd krävs" finns det ingen förloppsstapel, status för biljett eller förfallodatum eftersom det inte finns någon verklig åtgärd vi kan övervaka. Du kan filtrera efter åtgärdstyp, till exempel "programuppdatering" eller "åtgärd krävs", för att se alla aktivitetsobjekt i samma kategori.
+Gå till Hantering av hot och säkerhetsrisker [åtgärdssidan](tvm-remediation.md) för att visa objektet för åtgärdsaktiviteten. Om du väljer åtgärdsalternativet "åtgärd krävs" finns det ingen förloppsstapel, status för biljett eller förfallodatum eftersom det inte finns någon verklig åtgärd vi kan övervaka. Du kan filtrera efter åtgärdstyp, till exempel "programuppdatering" eller "åtgärd krävs", för att se alla aktivitetsobjekt i samma kategori.
 
 ## <a name="patching-zero-day-vulnerabilities"></a>Korrigera säkerhetsproblem med nolldagar
 
@@ -107,7 +110,7 @@ När en korrigering släpps för nolldagen ändras rekommendationen till "Uppdat
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Översikt över hot- och sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)
+- [Översikt över hantering av säkerhetsrisker hot och hot](next-gen-threat-and-vuln-mgt.md)
 - [Instrumentpanelen](tvm-dashboard-insights.md)
 - [Säkerhetsrekommendationer](tvm-security-recommendation.md)
 - [Programvaruinventering](tvm-software-inventory.md)

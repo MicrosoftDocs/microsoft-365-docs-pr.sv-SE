@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan läsa mer om ordningen för programskydd i Exchange Online Protection (EOP) och hur prioritetsvärdet i skyddsprinciperna avgör vilken princip som används.
+description: Administratörer kan läsa mer om programordningen för skydd i Exchange Online Protection (EOP), och hur prioritetsvärdet i skyddsprinciperna avgör vilken princip som används.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8cd2809fa69064c2058516f459eeba60683c91b9
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 24d43aeb70e2cdef4bdf65fd3943cdfda9ec3862
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930383"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539017"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordning och prioritet för e-postskydd
 
@@ -33,7 +33,7 @@ ms.locfileid: "51930383"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor kan inkommande e-post flaggas med flera olika skyddsformer. Till exempel de inbyggda principer för skydd mot nätfiske i EOP som är tillgängliga för alla Microsoft 365-kunder, och de robustare principerna för nätfiske som är tillgängliga för Microsoft Defender för Office 365-kunder. Meddelanden passerar även genom flera identifieringssökningar för skadlig kod, skräppost, nätfiske osv. Med hänsyn till all den här aktiviteten kan det finnas viss förvirring kring vilken princip som tillämpas.
+I Microsoft 365 organisationer som har postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor kan inkommande e-post flaggas med flera olika skyddsformer. Till exempel finns de inbyggda principer för skydd mot nätfiske i EOP som är tillgängliga för alla Microsoft 365-kunder, och de robustare principerna för skydd mot nätfiske som är tillgängliga för Microsoft Defender för Office 365 kunder. Meddelanden passerar även genom flera identifieringssökningar för skadlig kod, skräppost, nätfiske osv. Med hänsyn till all den här aktiviteten kan det finnas viss förvirring kring vilken princip som tillämpas.
 
 I allmänhet identifieras en princip som tillämpas på ett meddelande i rubriken **X-Forefront-Antispam-Report** i **egenskapen CAT (Kategori).** Mer information finns i [Rubriker för skräppostmeddelanden.](anti-spam-message-headers.md)
 
@@ -50,14 +50,14 @@ Det finns två viktiga faktorer som avgör vilken princip som ska tillämpas på
   |1|Skadlig programvara|CAT:MALW|[Konfigurera principer för skydd mot skadlig programvara i EOP](configure-anti-malware-policies.md)|
   |2|Fiske|CAT:PHSH|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
   |3|Skräppost med hög konfidens|CAT:HSPM|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
-  |4|Förfalskning|CAT:SPOOF|[Konfigurera förfalskningsinformation i EOP](learn-about-spoof-intelligence.md)|
-  |5<sup>\*</sup>|Användarpersonifiering (skyddade användare)|UIMP|[Konfigurera principer för skydd mot nätfiske i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md)|
-  |6<sup>\*</sup>|Domänpersonifiering (skyddade domäner)|DIMP|[Konfigurera principer för skydd mot nätfiske i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md)|
+  |4|Förfalskning|CAT:SPOOF|[Falska intelligensinsikter i EOP](learn-about-spoof-intelligence.md)|
+  |5<sup>\*</sup>|Användarpersonifiering (skyddade användare)|UIMP|[Konfigurera principer mot nätfiske i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md)|
+  |6<sup>\*</sup>|Domänpersonifiering (skyddade domäner)|DIMP|[Konfigurera principer mot nätfiske i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md)|
   |7|Skräppost|CAT:SPM|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
   |8|Massutskick|CAT:BULK|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
   |
 
-  <sup>\*</sup> De här funktionerna är endast tillgängliga i principer för skydd mot nätfiske i Microsoft Defender för Office 365.
+  <sup>\*</sup>De här funktionerna är endast tillgängliga i principer för skydd mot nätfiske i Microsoft Defender för Office 365.
 
 - **Prioriteten** för principen: För varje typ av policy (skydd mot skräppost, skadlig programvara, skydd mot nätfiske osv.) finns det en standardprincip som gäller för alla, men du kan skapa anpassade principer som gäller för specifika användare. Varje anpassad princip har ett prioritetsvärde som bestämmer i vilken ordning principerna ska tillämpas. Standardprincipen används alltid sist.
 

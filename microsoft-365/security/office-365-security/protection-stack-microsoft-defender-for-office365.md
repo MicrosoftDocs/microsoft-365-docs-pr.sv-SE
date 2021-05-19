@@ -1,5 +1,5 @@
 ---
-title: Steg för steg-skydd i Microsoft Defender för Office 365
+title: Stack med stegvisa skydd mot hot i Microsoft Defender för Office 365
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -13,19 +13,19 @@ localization_priority: Normal
 description: Följ sökvägen till ett inkommande meddelande via filtreringsstacken för hot i Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0760bd7a67f175e4af114324ccc729355ad5f593
-ms.sourcegitcommit: 4e05f19c00e172b65f637f19ca461db5b21dff4e
+ms.openlocfilehash: 01ad901f7f746d9b5d2c50632c1344701120c20f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51601423"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538693"
 ---
-# <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Steg för steg-skydd mot hot i Microsoft Defender för Office 365
+# <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Steg-för-steg skydd mot hot i Microsoft Defender för Office 365
 
-Skydds- eller filtreringsstacken i Microsoft Defender för Office 365 kan delas upp i fyra faser, som i den här artikeln. Vanligtvis passerar inkommande e-post genom alla dessa faser före leverans, men den faktiska vägen e-post tar omfattas av organisationens Defender för Office 365-konfiguration.
+Microsoft Defender för Office 365 skydd eller filtreringsstack kan delas upp i fyra faser, som i den här artikeln. Vanligtvis passerar inkommande e-post genom alla dessa faser före leverans, men den faktiska sökvägen som e-post tar omfattas av organisationens Defender för Office 365 konfiguration.
 
 > [!TIP]
-> Håll utkik efter en enhetlig bild  av alla de fyra faserna av Defender för Office 365-skydd i slutet av den här artikeln!
+> Håll utkik efter en enhetlig bild  av alla fyra defenderfaserna i slutet av den här artikeln för att få Office 365 skydd!
 
 ## <a name="phase-1---edge-protection"></a>Fas 1 – Edge Protection
 
@@ -33,9 +33,9 @@ Tyvärr är Edge-block som en gång *var kritiska* nu relativt enkla för dålig
 
 Edge-block är utformade för att vara automatiska. Om det är falskt positivt meddelas avs avsändarna och får veta hur de ska lösa problemet. Kopplingar från betrodda partner med begränsat rykte kan säkerställa att levererbarheten kan tillhandahållas, eller att tillfälliga åsidosättningar kan göras, vid registrering av nya slutpunkter.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="Fas 1 av filtreringen i Defender för Office 365 är Edge Protection.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="Fas 1 av filtrering i Defender för Office 365 är Edge Protection.":::
 
-1. **Nätverksbegränsning skyddar** Office 365-infrastrukturen och -kunder från DOS-attacker (Denial of Service) genom att begränsa antalet meddelanden som kan skickas av en viss uppsättning infrastruktur.
+1. **Nätverksbegränsning skyddar** Office 365 infrastruktur och kunder från DOS-attacker (Denial of Service) genom att begränsa antalet meddelanden som kan skickas av en viss uppsättning infrastruktur.
 
 2. **IP-rykte och -begränsning blockerar** meddelanden som skickas från kända dåliga ip-adresser. Om en specifik IP skickar många meddelanden under en kort tidsperiod kommer de att begränsas.
 
@@ -61,7 +61,7 @@ Funktioner i avsändarinformation är avgörande för att upptäcka skräppost, 
     - **Med DMARC** kan administratörer markera SPF och DKIM som krävs i deras domän och tillämpa justering mellan resultaten för dessa två tekniker.
     - **ARC** är inte kundkonfigurerat, men bygger på DMARC för att fungera med vidarebefordran i distributionslistor, samtidigt som du spelar in en autentiseringskedja.
 
-3. **Förfalskningsinformation** klarar av att filtrera de som är tillåtna för förfalskning (d.v.s. de som skickar e-post åt ett annat konto eller vidarebefordran för en distributionslista) från skadliga förfalskningsmeddelanden som skickar e-post för ett organisationskonto eller en känd extern domän. Den skiljer legitima "åt" e-post från avsändare som kapar för att leverera skräppost och nätfiskemeddelanden. 
+3. **Förfalskningsinformation** klarar av att filtrera de som är tillåtna för förfalskning (d.v.s. de som skickar e-post åt ett annat konto eller vidarebefordrar för en distributionslista) från skadliga avsändare som imiterar organisationsdomäner eller kända externa domäner. Den separerar legitima "åt" e-post från avsändare som förfalskning ger skräppost och nätfiskemeddelanden.
 
     **Förfalskningsinformation inom årsorganisationen** identifierar och blockerar förfalskningsförsök från en domän inom organisationen.
 
@@ -83,13 +83,13 @@ I den här fasen börjar filtreringsstacken att hantera det specifika innehålle
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="Fas 3 av filtrering i MDO är innehållsfiltrering.":::
 
-1. **Transportregler** (kallas även e-postflödesregler eller Exchange-transportregler) gör att administratörer kan vidta en mängd olika åtgärder när ett meddelande har en jämnt bred omfångsintervall för ett meddelande. Alla meddelanden som flödar genom organisationen utvärderas mot aktiverade e-postflödesregler/transportregler.
+1. **Transportregler** (kallas även e-postflödesregler eller Exchange-transportregler) gör att en administratör kan vidta en mängd olika åtgärder när ett meddelande har en lika stor mängd villkor uppfylls. Alla meddelanden som flödar genom organisationen utvärderas mot aktiverade e-postflödesregler/transportregler.
 
-2. **Microsoft Defender Antivirus och** två *antivirusmotorer från tredje part används* för att identifiera all känd skadlig programvara i bifogade filer.
+2. **Microsoft Defender Antivirus** och två *antivirusmotorer från tredje part används för* att identifiera all känd skadlig programvara i bifogade filer.
 
 3. Antivirusmotorerna (AV) används också för att skriva in  alla bifogade filer, så att blockering av Type kan blockera alla typer av bifogade filer som administratören anger.
 
-4. När en skadlig bifogad fil upptäcks av Microsoft Defender för Office 365 läggs filens hashtagg och en hash-hash av aktivt innehåll till i ryktet Exchange Online Protection (EOP). **Blockering av ryktet** för bifogade filer blockerar filen i alla Office 365, och på slutpunkter, genom MSAV-molnsamtal.
+4. När Microsoft Defender för Office 365 identifierar en skadlig bifogad fil läggs filens hashtagg och en hash-hash av aktivt innehåll till i Exchange Online Protection (EOP) rykte. **Blockering av ryktet** för bifogade filer blockerar filen i Office 365, och på slutpunkter, genom MSAV-molnsamtal.
 
 5. **Med heuristisk gruppering** kan det fastställas att en fil är misstänkt baserat på leverans heuristisk. När en misstänkt bifogad fil hittas pausas hela kampanjen och filen begränsats. Om filen skulle vara skadlig blockeras hela kampanjen.
 
@@ -99,7 +99,7 @@ I den här fasen börjar filtreringsstacken att hantera det specifika innehålle
 
 8. **Innehålls heuristics** kan identifiera misstänkta meddelanden utifrån struktur och ordfrekvens i meddelandets brödtext, med hjälp av maskininlärningsmodeller.
 
-9. **I begränsat** läge för säkra bifogade filer används varje bifogad fil för Defender för Office 365-kunder, och dynamisk analys för att identifiera hot som aldrig tidigare har upptäckts.
+9. **Valv i** begränsat läge för bifogade filer för varje bifogad fil för Defender Office 365 kunder. Med dynamisk analys kan du identifiera hot som aldrig tidigare har upptäckts.
 
 10. **Detonation för länkat** innehåll behandlar alla URL-länkar till en fil i ett e-postmeddelande som en bifogad fil, asynkront begränsat filen vid leverans.
 
@@ -109,23 +109,23 @@ I den här fasen börjar filtreringsstacken att hantera det specifika innehålle
 
 Det sista steget äger rum efter e-post- eller filleverans, och då gäller e-post som finns i olika postlådor och filer och länkar som visas i klienter som Microsoft Teams.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Fas 4 av filtreringen i Defender för Office 365 är skydd efter leverans.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Fas 4 av filtreringen i Defender Office 365 skydd efter leverans.":::
 
-1. **Säkra länkar** är MDO:s tidsskydd vid klickning. Alla URL:er i varje meddelande radbruts för att peka på Microsofts servrar för säkra länkar. När man klickar på en URL kontrolleras den mot det senaste ryktet, innan användaren omdirigeras till målwebbplatsen. URL-adressen är asynkront begränsat för att uppdatera dess rykte.
+1. **Valv är** MDO:s tidsskydd vid klickning. Alla URL:er i varje meddelande radbruts för att peka på Microsoft Valv Links-servrar. När man klickar på en URL kontrolleras den mot det senaste ryktet, innan användaren omdirigeras till målwebbplatsen. URL-adressen är asynkront begränsat för att uppdatera dess rykte.
 
-2. **Phish Zero-Hour – ZAP (Auto-purge)** identifierar och neutralerar retroaktivt skadliga nätfiskemeddelanden som redan har levererats till Exchange Online-postlådor.
+2. **Phish Zero-Hour – ZAP (Auto-purge)** identifierar och neutralerar retroaktivt skadliga nätfiskemeddelanden som redan har Exchange Online postlådor.
 
-3. **Malware ZAP** upptäcker och neutralerar retroaktivt skadliga meddelanden som redan har levererats till Exchange Online-postlådor.
+3. **Malware ZAP** upptäcker och neutralerar retroaktivt skadliga meddelanden som redan har levererats till Exchange Online postlådor.
 
-4. **Spam ZAP** upptäcker och neutralerar retroaktivt skadliga skräppostmeddelanden som redan har levererats till Exchange Online-postlådor.
+4. **ZAP för** skräppost identifierar och neutralerar retroaktivt skadliga skräppostmeddelanden som redan har Exchange Online postlådor.
 
 5. **Kampanjvyer** gör det möjligt för administratörer att se en helhetsbild av en attack, snabbare och mer fullständigt, än vad ett team skulle kunna utan automation. Microsoft utnyttjar de stora mängder information om skydd mot nätfiske, skydd mot skräppost och skadlig programvara i hela tjänsten för att identifiera kampanjer och gör sedan det möjligt för administratörer att undersöka dem från början till slut, inklusive mål, effekter och flöden, som också finns tillgängliga i en nedladdningsbar kampanj.
 
 6. **Med tilläggen Rapportmeddelande** kan användare enkelt rapportera falska positiva resultat (bra e-postmeddelande, felaktigt markerat som dåligt *)* eller falskt negativa (felaktigt e-postmeddelande markerat som *bra)* till Microsoft för vidare analys.
 
-7. **Säkra länkar för Office-klienter** har samma tid för klickningsskydd med säkra länkar inbyggt i Office-klienter som Word, PowerPoint och Excel.
+7. **Valv för Office-klienter** har samma Valv-skydd med klickning som inbyggt i Office-klienter som Word, PowerPoint och Excel.
 
-8. **Skydd för OneDrive, SharePoint** och Teams har samma skydd mot skadliga filer, inbyggt i OneDrive, SharePoint och Microsoft Teams.
+8. **Skydd för OneDrive, SharePoint** och Teams har samma skydd för bifogade filer i Valv mot skadliga filer, inbyggt i OneDrive, SharePoint och Microsoft Teams.
 
 9. När en URL-adress som pekar på en fil markeras efter leverans visar **detonationen** för länkat innehåll en varningssida tills begränsat läge för filen är klar och URL:en identifieras som säker.
 

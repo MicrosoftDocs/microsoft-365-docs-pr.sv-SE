@@ -14,13 +14,14 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 1efa72d5b8d204b6aec1cef05fe3c8afe1ca82f7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.date: 05/06/2021
+ms.topic: how-to
+ms.openlocfilehash: 1942531b77df1c2bd9408815d3ad54b4b7211e8b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275316"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538405"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Konfigurera alternativ för genomsökning i Microsoft Defender Antivirus
 
@@ -33,7 +34,7 @@ ms.locfileid: "52275316"
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>Använda Microsoft Intune för att konfigurera skanningsalternativ
 
-Mer [information finns i Konfigurera inställningar Microsoft Intune](/intune/device-restrictions-configure) enhet Microsoft Defender Antivirus enhetbegränsningar för Windows 10 i [Intune.](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+För mer information läs [Konfigurera inställningar för enhetsbegränsning i Microsoft Intune](/intune/device-restrictions-configure) och [Inställningar för enhetsbegränsning för Microsoft Defender i Windows 10 i Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
 ## <a name="use-microsoft-endpoint-manager-to-configure-scanning-options"></a>Använda Microsoft Endpoint Manager för att konfigurera skanningsalternativ
 
@@ -51,19 +52,19 @@ Så här konfigurerar du grupprincipinställningarna som beskrivs i följande ta
 
 4. Dubbelklicka på den **principinställning** som anges i tabellen nedan och ange önskat alternativ. Klicka **på OK** och upprepa för alla andra inställningar.
 
-Beskrivning | Plats och inställning | Standardinställning (om den inte konfigurerats) | `Set-MpPreference`PowerShell-parameter eller WMI-egenskap för `MSFT_MpPreference` klass
----|---|---|---
-E-postskanning Se [begränsningar av e-postskanning](#ref1)| Skanna > Aktivera genomsökning av e-post | Inaktiverad | `-DisableEmailScanning`
-Skanna [genom att göra genomläsningspunkter](/windows/win32/fileio/reparse-points) | Skanna > Aktivera skanning avparsningspunkt | Inaktiverad | Kan inte användas
-Skanna mappade nätverksenheter | Skanna > kör fullständig sökning på mappade nätverksenheter | Inaktiverad | `-DisableScanningMappedNetworkDrivesForFullScan`
- Skanna arkivfiler (till exempel .zip filer .rar filer). [Undantagslistan för tillägg](configure-extension-file-exclusions-microsoft-defender-antivirus.md) har företräde framför den här inställningen. | Skanna > arkivfiler | Aktiverad | `-DisableArchiveScanning`
-Genomsöka filer i nätverket | Skanna > genomsöka nätverksfiler | Inaktiverad | `-DisableScanningNetworkFiles`
-Skanna packade körbara filer | Skanna > fullpackade körbara filer | Aktiverad | Kan inte användas
-Sök efter flyttbara enheter endast vid fullständiga skanningar | Skanna > flyttbara enheter med Skanna | Inaktiverad | `-DisableRemovableDriveScanning`
-Ange nivån för undermappar i en arkivmapp som ska genomsökas | Skanna > Ange maximalt djup för att söka igenom arkivfiler | 0 | Kan inte användas
- Ange maximal processorbelastning (i procent) under en genomsökning. Obs! Det här är inte en fast gräns, utan snarare en vägledning för att sökmotorn inte ska överskrida det här maxvärdet i genomsnitt. | Sökning > Ange den högsta procentandelen processorutnyttjande vid en genomsökning | 50 |  `-ScanAvgCPULoadFactor`
- Ange den maximala storleken (i kilobyte) för arkivfiler som ska skannas. Standardvärdet **(0)** gäller ingen gräns | Skanna > Ange den maximala storleken på arkivfilerna som ska genomsökas | Ingen gräns | Kan inte användas
- Konfigurera låg CPU-prioritet för schemalagda genomsökningar | Skanna > Konfigurera låg CPU-prioritet för schemalagda genomsökningar | Inaktiverad | Kan inte användas
+| Beskrivning | Plats och inställning | Standardinställning (om den inte konfigurerats) | `Set-MpPreference`PowerShell-parameter eller WMI-egenskap för `MSFT_MpPreference` klass |
+|---|---|---|---|
+| E-postskanning Se [begränsningar av e-postskanning](#ref1)| Skanna > Aktivera genomsökning av e-post | Inaktiverad | `-DisableEmailScanning` |
+|Skanna [genom att göra genomläsningspunkter](/windows/win32/fileio/reparse-points) | Skanna > Aktivera skanning avparsningspunkt | Inaktiverad | Kan inte användas |
+| Skanna mappade nätverksenheter | Skanna > kör fullständig sökning på mappade nätverksenheter | Inaktiverad | `-DisableScanningMappedNetworkDrivesForFullScan`|
+ Skanna arkivfiler (till exempel .zip filer .rar filer). [Undantagslistan för tillägg](configure-extension-file-exclusions-microsoft-defender-antivirus.md) har företräde framför den här inställningen. | Skanna > arkivfiler | Aktiverad | `-DisableArchiveScanning` |
+| Genomsöka filer i nätverket | Skanna > genomsöka nätverksfiler | Inaktiverad | `-DisableScanningNetworkFiles` |
+| Skanna packade körbara filer | Skanna > fullpackade körbara filer | Aktiverad | Kan inte användas |
+| Sök efter flyttbara enheter endast vid fullständiga skanningar | Skanna > flyttbara enheter med Skanna | Inaktiverad | `-DisableRemovableDriveScanning` |
+| Ange nivån för undermappar i en arkivmapp som ska genomsökas | Skanna > Ange maximalt djup för att söka igenom arkivfiler | 0 | Kan inte användas |
+| Ange maximal processorbelastning (i procent) under en genomsökning. Obs! Det här är inte en fast gräns, utan snarare en vägledning för att sökmotorn inte ska överskrida det här maxvärdet i genomsnitt. Genomsökningar som körs manuellt ignorerar den här inställningen och körs utan några CPU-gränser. | Sökning > Ange den högsta procentandelen processorutnyttjande vid en genomsökning | 50 |  `-ScanAvgCPULoadFactor` |
+| Ange den maximala storleken (i kilobyte) för arkivfiler som ska skannas. Standardvärdet **(0)** gäller ingen gräns | Skanna > Ange den maximala storleken på arkivfilerna som ska genomsökas | Ingen gräns | Kan inte användas |
+| Konfigurera låg CPU-prioritet för schemalagda genomsökningar | Skanna > Konfigurera låg CPU-prioritet för schemalagda genomsökningar | Inaktiverad | Kan inte användas |
  
 > [!NOTE]
 > Om realtidsskydd är aktiverat genomsöks filer innan de används och körs. Skanningsomfånget inkluderar alla filer, inklusive filer påmonterade flyttbara media, t.ex. USB-enheter. Om enheten som utför genomsökningen har realtidsskydd eller skydd vid åtkomst aktiverat inkluderar genomsökningen även nätverksresurser.

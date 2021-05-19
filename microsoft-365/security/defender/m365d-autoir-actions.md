@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: f3dba2116e0f13f265937ef65fd3b69bcb1e725b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 9e82f1c5de9fe1f4a03385458338edf18c4f35bd
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274658"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538849"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Visa och hantera åtgärder i Åtgärdscenter
 
@@ -98,4 +98,4 @@ Om du har fastställt att en enhet eller en fil inte är ett hot kan du ångra �
 ## <a name="next-steps"></a>Nästa steg
 
 - [Visa information och resultat från en automatiserad undersökning](m365d-autoir-results.md)
-- [Åtgärda falska positiva tal eller falska negativa tal)](m365d-autoir-report-false-positives-negatives.md)
+- [Adressera falska positiva tal eller falska negativa tal](m365d-autoir-report-false-positives-negatives.md)

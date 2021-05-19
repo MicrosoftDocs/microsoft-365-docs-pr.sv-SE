@@ -1,0 +1,134 @@
+### YamlMime:FAQ
+metadata:
+  title: Vanliga frågor och svar om självbetjäning för köp
+  f1.keywords:
+  - NOCSH
+  ms.author: cmcatee
+  author: cmcatee-MSFT
+  manager: scotv
+  ms.reviewer: mijeffer, pablom
+  audience: Admin
+  ms.topic: article
+  ms.service: o365-administration
+  localization_priority: Normal
+  ms.collection: M365-subscription-management
+  ms.custom:
+  - AdminSurgePortfolio
+  - aka.ms/self-service-purchase-faq
+  - commerce_ssp
+  search.appverid:
+  - MET150
+  description: Hitta svar på vanliga frågor om självbetjäning.
+  ms.date: 09/15/2020
+  ms.openlocfilehash: 7dcf16ff51854b595f61c2797a62632a3003b7c9
+  ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+  ms.translationtype: MT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 05/19/2021
+  ms.locfileid: "52539317"
+title: Vanliga frågor och svar om självbetjäning för köp
+summary: >
+  Köp av självbetjäning ger användarna möjlighet att prova på ny teknik och utveckla lösningar som i slutänden kan vara till förmån för större organisationer. Central anskaffning och IT-team kan se alla användare som köper och distribuerar självbetjäningslösningar via <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 administrationscenter.</a> Administratörer kan inaktivera självbetjäning för köp per produkt via PowerShell. Mer information finns i [Use AllowSelfServicePurchase for the MSCommerce PowerShell-modulen](allowselfservicepurchase-powershell.md).
+
+
+  Köp via självbetjäning är tillgängligt för Power Platform (Power BI, Power Apps och Power Automate), Project och Visio.
+
+
+  > [!NOTE]
+
+  > Självbetjäning är inte tillgängligt i Indien eller för myndighets- eller utbildningskunder. Project och Visio är inte tillgängliga för köp via självbetjäning i Brasilien och Kongo.
+sections:
+- name: Köpa självbetjäning
+  questions:
+  - question: >
+      Hur gör en kund ett självbetjäningsköp?
+    answer: >
+      Kunder kan göra ett självbetjäningsköp online från produktwebbplatserna eller från uppmaningar om köp via app. Kunderna ombeds först att ange en e-postadress för att säkerställa att de är en användare i en befintlig Azure Active Directory (AD) klientorganisation. Därefter dirigeras de till att logga in med sina Azure AD-autentiseringsuppgifter. När du har loggat in uppmanas kunden att välja hur många prenumerationer de vill köpa och att tillhandahålla kreditkortsbetalning. När köpet är klart kan de börja använda sin prenumeration. Den som gör inköparen har åtkomst till en begränsad vy av <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 administrationscenter</a> där de kan tilldela licenser till produkten till andra personer i organisationen.
+  - question: >
+      Vilka betalningsalternativ finns för köp via självbetjäning?
+    answer: >
+      Kreditkort är för närvarande det enda tillgängliga betalningssättet. Betalning via invoicing stöds inte.
+  - question: >
+      Vem kan köpa via självbetjäning?
+    answer: >
+      Alla användare med ett användarkonto som inte är gäst i en hanterad Azure AD-klientorganisation kan göra ett självbetjäningsköp. Självbetjäning för köp är inte tillgängligt för klientorganisationer som är myndigheter eller utbildningsorganisationer. Om det här gäller för din organisation krävs ingen ytterligare åtgärd för att styra självbetjäning för köp av självbetjäning.
+
+
+      Användare i organisationer eller marknader som inte är berättigade till självbetjäning för köp via självbetjäning ser ett meddelande där de uppmanas att kontakta sin IT-administratör.
+  - question: >
+      Kan gästanvändare köpa via självbetjäning?
+    answer: >
+      Nej, gästanvändare kan inte genomföra ett självbetjäningköp i en klientorganisation där de är gäst.
+  - question: >
+      Kan användare synkroniseras från en lokal Active Directory-köp via självbetjäning köp?
+    answer: >
+      Om en användare har ett aktivt användarkonto i en berättigad Azure AD-klient kan de genomföra ett självbetjäningsköp.
+  - question: >
+      Vem kan självbetjäning som inköpare tilldela licenser till?
+    answer: >
+      Självbetjäning som gör inköpare kan bara tilldela licenser till användare i samma Azure AD-klientorganisation. Den som gör inköparen har tillgång till en begränsad vy <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 administrationscentret för</a> att tilldela licenser. Inköpare kan tilldela licenser till de produkter som de har köpt genom självbetjäning köp, och kan bara tilldela dessa licenser till användare i samma Azure AD-klientorganisation.
+  - question: >
+      Var kan den som gör självbetjäning se och hantera sina köp?
+    answer: >
+      Självbetjäning som gör inköpare kan hantera sina köp i den begränsade vyn <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 administrationscentret.</a> Inköpare kan alltid komma till  administrationscentret från administratörspanelen i startprogrammet som är inbyggt i Microsoft 365 och Dynamics-onlineapparna. Inköpare kan visa de köp de har gjort, köpa ytterligare prenumerationer på samma tjänst och tilldela licenser för dessa prenumerationer till andra användare i organisationen. Dessutom kan inköpare visa och betala sin faktura, uppdatera sin betalningsmetod och avbryta sin prenumeration.
+- name: Priser
+  questions:
+  - question: >
+      Vad är prissättningen för självbetjäning?
+    answer: >
+      Priser för var och en av produkterna för självbetjäning finns på Microsofts webbplats. Priserna visas också som en del av utcheckningen när användarna gör ett köp via självbetjäning. Dessa priser kan skilja sig från de priser som en organisation betalar när centrala köp eller priser erbjuds via en partner.
+  - question: >
+      Vem är ansvarig för betalningen?
+    answer: >
+      Den person som köper prenumerationen via självbetjäning är den person som faktureras och som ansvarar för betalningen baserat på villkoren och prissättningen för köpet.
+- name: Administratörsfunktioner
+  questions:
+  - question: >
+      Vilka funktioner har en administratör för köp via självbetjäning?
+    answer: >
+      Administratörer kan visa alla köp som gjorts via självbetjäning i organisationen <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 administrationscentret.</a> De kan se produkten, inköparens namn, prenumerationer som köpts, utgångsdatum, orderhistorik, inköpspris och tilldelade användare för varje självbetjäning köp. I administrationscentret för Power Platform kan administratörer även se inköpskapaciteten för självbetjäning. Om det krävs för organisationen kan administratörer inaktivera självbetjäning för köp per produkt via PowerShell. Administratörer har samma datahanterings- och åtkomstprinciper över produkter som köpts via självbetjäning eller centralt.
+
+
+      Administratörer kan också styra om användarna i organisationen ska kunna göra självbetjäning. Mer information finns i [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
+  - question: >
+      Hur respekterar Microsoft datastyrning och efterlevnad genom att aktivera självbetjäning för köp?
+    answer: >
+      Administratörer har kontroll över vilka tjänster och produkter som är tillgängliga i deras klientorganisation baserat på deras krav på datastyrning och efterlevnad. Alla datahanterings- och åtkomstprinciper som organisationen har aktiverat gäller för köpta självbetjäningstjänster.
+  - question: >
+      Vem är det produktdata som skapas från köp via självbetjäning?
+    answer: >
+      Data som skapas från produkter som köpts via självbetjäning ägs och kontrolleras av organisationen.
+  - question: >
+      Hur kan jag centralisera köp som gjorts genom självbetjäning?
+    answer: >
+      Administratörer kan tilldela befintliga licenser eller köpa ytterligare prenumerationer på självbetjäningsprodukter genom befintliga avtal och priser för användare som tilldelats självbetjäning. När de här centralt köpta licenserna har tilldelats kan administratörer sedan begära att inköparna avbryter sina befintliga prenumerationer.
+  - question: >
+      Var ser administratören köp av självbetjäning?
+    answer: >
+      Globala administratörer och faktureringsadministratörer kan se prenumerationer som har köpts via **självbetjäning** i Fakturering  >  **Dina** <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">produkter Microsoft 365 administrationscenter.</a> De kan filtrera produktlistan för att bara visa de prenumerationer som köpts genom central inköp, eller för att inkludera prenumerationer som köpts via självbetjäning.
+
+
+      Administratörer kan se produkten, inköpares namn, prenumeration köpt, utgångsdatum, orderhistorik, inköpspris och tilldelade användare.
+- name: Support och utbildning
+  questions:
+  - question: >
+      Förväntas kundernas IT-avdelningar eller partners kunna erbjuda support för produkter som köpts via självbetjäning?
+    answer: >
+      IT-avdelningar och partner förväntas inte erbjuda support för produkter som köpts via självbetjäning. Microsoft tillhandahåller standardsupport för självbetjäning som inköpare.
+  - question: >
+      Använder det kundens Premier-supportärenden om en självbetjäningsinköpare ringer supporten?
+    answer: >
+      Självbetjäningsinköpare använder inte Premier-supportärenden för att få support för sin självbetjäning.
+  - question: >
+      Hur förväntas användarna få utbildning om produkter som de köper via självbetjäning?
+    answer: >
+      Omfattande utbildning för användare finns på produktwebbplatserna. Produkterna har guidad utbildning, dokumentation, exempel och starka grupper för att få svar och tips direkt från andra användare.
+  - question: >
+      Vad händer med självbetjäning om en användare lämnar organisationen?
+    answer: >
+      Om personen som ursprungligen köpte självköpsprodukten lämnar organisationen fortsätter giltiga användare att ha full användning av produkten under hela prenumerationen. Prenumerationen förblir aktiv tills den som gör inköparen säger upp den direkt eller en administratör begär att prenumerationen avbryts via kundsupport. Administratörer kan också välja att tilldela en centralt köpt licens för användare av den av inställda prenumerationen.
+- name: Partner
+  questions:
+  - question: >
+      Vilken är Microsofts partners roll vid självbetjäning?
+    answer: Partner som har delegerade administratörsbehörigheter kan se köp via självbetjäning <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">i Microsoft 365 administrationscenter,</a>precis som en administratör. Partner kan hjälpa en organisation som vill centralisera produkter som köpts via självbetjäning. Partner kan dessutom erbjuda lösningar för att utöka funktionerna för köp av självbetjäning.

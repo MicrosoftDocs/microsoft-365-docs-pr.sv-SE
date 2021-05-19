@@ -16,19 +16,20 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
-description: Lär dig hur du styr vilka användare som kan skapa Microsoft 365-grupper.
-ms.openlocfilehash: 092ff821911ef0af2b7867e1b870b68b1b6355b3
-ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
+recommendations: false
+description: Lär dig hur du styr vilka användare som kan Microsoft 365 grupper.
+ms.openlocfilehash: 19a106d255708f4b1df8f798219ea7ea778bbef3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51656991"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539185"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Hantera vilka som kan skapa Microsoft 365 Grupper
 
-Som standard kan alla användare skapa Microsoft 365-grupper. Det här är den rekommenderade metoden eftersom den gör att användarna kan börja samarbeta utan att behöva hjälp från IT-
+Som standard kan alla användare skapa Microsoft 365 grupper. Det här är den rekommenderade metoden eftersom den gör att användarna kan börja samarbeta utan att behöva hjälp från IT-
 
-Om ditt företag kräver att du begränsar vem som kan skapa grupper kan du begränsa skapandet av Microsoft 365-grupper till medlemmar i en viss Microsoft 365-grupp eller säkerhetsgrupp.
+Om ditt företag kräver att du begränsar vem som kan skapa grupper kan du begränsa möjligheten Microsoft 365 till att skapa grupper till medlemmar i en Microsoft 365 grupp eller säkerhetsgrupp.
 
 Om du är orolig för användare som skapar team eller grupper som inte uppfyller dina affärsstandarder kan du överväga att kräva att användare slutför en kurs och sedan lägger till dem i gruppen med tillåtna användare.
 
@@ -43,33 +44,33 @@ När du begränsar vem som kan skapa en grupp påverkar det alla tjänster som �
 - Power BI (klassisk)
 - Project för webben/Översikt
 
-Stegen i den här artikeln hindrar inte medlemmar i vissa roller från att skapa grupper. Globala Office 365-administratörer kan skapa grupper via administrationscentret för Microsoft 365, Planner, Exchange och SharePoint Online. Andra roller kan skapa grupper på ett begränsat sätt, som anges nedan.
+Stegen i den här artikeln hindrar inte medlemmar i vissa roller från att skapa grupper. Office 365 Globala administratörer kan skapa grupper via Microsoft 365, Planner, Exchange och SharePoint Online. Andra roller kan skapa grupper på ett begränsat sätt, som anges nedan.
 
-- Exchange-administratör: Administrationscenter för Exchange, Azure AD
-- Partner Tier1-support: Administrationscenter för Microsoft 365, administrationscentret för Exchange, Azure AD
-- Partner Tier2-support: Administrationscenter för Microsoft 365, administrationscentret för Exchange, Azure AD
+- Exchange Administratör: Exchange administrationscenter, Azure AD
+- Partner Tier1-support: Microsoft 365, administrationscentret Exchange, Azure AD
+- Partner Tier2-support: Microsoft 365 administrationscenter, Exchange administrationscenter, Azure AD
 - Katalogskrivare: Azure AD
-- SharePoint-administratör: Administrationscenter för SharePoint, Azure AD
-- Tjänstadministratör för Teams: Administrationscenter för Teams, Azure AD
-- Användaradministratör: Administrationscenter för Microsoft 365, Azure AD
+- SharePoint Administratör: SharePoint administrationscenter, Azure AD
+- Teams Tjänstadministratör: Teams administrationscenter, Azure AD
+- Användaradministratör: Microsoft 365 administrationscenter, Azure AD
 
-Om du har en av dessa roller kan du skapa Microsoft 365-grupper för begränsade användare och sedan tilldela användaren som gruppens ägare.
+Om du har en av dessa roller kan du skapa Microsoft 365 grupper för begränsade användare och sedan tilldela användaren som gruppens ägare.
 
-## <a name="licensing-requirements"></a>Licenskrav
+## <a name="licensing-requirements"></a>Licensieringskrav
 
-För att hantera vem som skapar grupper behöver följande personer Azure AD Premium-licenser eller Azure AD Basic EDU-licenser tilldelade till sig:
+För att hantera vem som skapar grupper behöver följande personer Azure AD Premium-licenser eller Azure AD Basic EDU-licenser tilldelade till dem:
 
 - Administratören som konfigurerar inställningarna för att skapa grupper
 - Medlemmar i gruppen som har tillåtelse att skapa grupper
 
 > [!NOTE]
-> Mer [information om hur du tilldelar Azure-licenser finns](/azure/active-directory/fundamentals/license-users-groups) i Tilldela eller ta bort licenser i Azure Active Directory-portalen.
+> Se [Tilldela eller ta bort licenser Azure Active Directory portal](/azure/active-directory/fundamentals/license-users-groups) för mer information om hur du tilldelar Azure-licenser.
 
-Följande personer behöver inte tilldelas Azure AD Premium- eller Azure AD Basic EDU-licenser:
+Följande personer behöver inte ha Azure AD Premium- eller Azure AD Basic EDU-licenser tilldelade till sig:
 
-- Personer som är medlemmar i Microsoft 365-grupper och som inte har möjlighet att skapa andra grupper.
+- Personer som är medlemmar Microsoft 365 grupper och som inte har möjlighet att skapa andra grupper.
 
-## <a name="step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups"></a>Steg 1: Skapa en grupp för användare som behöver skapa Microsoft 365-grupper
+## <a name="step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups"></a>Steg 1: Skapa en grupp för användare som behöver skapa Microsoft 365 grupper
 
 Endast en grupp i organisationen kan användas för att styra vem som kan skapa grupper. Du kan däremot kapsla in andra grupper som medlemmar i den här gruppen.
 
@@ -83,11 +84,11 @@ Administratörer i de roller som anges ovan behöver inte vara medlemmar i den h
 
 4. Konfigurera gruppen och lägg till personer eller andra grupper som du vill ska kunna skapa grupper i organisationen.
 
-Detaljerade instruktioner finns i [Skapa, redigera eller ta bort en säkerhetsgrupp i administrationscentret för Microsoft 365.](../admin/email/create-edit-or-delete-a-security-group.md)
+Detaljerade instruktioner finns i [Skapa, redigera eller ta bort en säkerhetsgrupp i Microsoft 365 administrationscenter.](../admin/email/create-edit-or-delete-a-security-group.md)
 
 ## <a name="step-2-run-powershell-commands"></a>Steg 2: Kör PowerShell-kommandon
 
-Du måste använda förhandsversionen av [Azure Active Directory PowerShell för Graph (AzureAD) (modulnamn](/powershell/azure/active-directory/install-adv2) **AzureADPreview**) om du vill ändra inställningen för gäståtkomst på gruppnivå:
+Du måste använda förhandsversionen av Azure Active Directory PowerShell för [Graph (AzureAD) (modulnamnet](/powershell/azure/active-directory/install-adv2) **AzureADPreview)** om du vill ändra inställningen för gäståtkomst på gruppnivå:
 
 - Om du inte har installerat någon version av Azure AD PowerShell-modulen tidigare, se Installera [Azure AD-modulen](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) och följ anvisningarna för att installera den offentliga förhandsversionen.
 
@@ -95,7 +96,7 @@ Du måste använda förhandsversionen av [Azure Active Directory PowerShell för
 
 - Om du redan har installerat förhandsgranskningsversionen kör `Install-Module AzureADPreview` du för att kontrollera att det är den senaste versionen av den här modulen.
 
-Kopiera skriptet nedan till en textredigerare som Anteckningar eller [Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
+Kopiera skriptet nedan till en textredigerare, till exempel Anteckningar, eller till [Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
 Ersätt *\<GroupName\>* med namnet på gruppen du skapade. Till exempel:
 
@@ -153,7 +154,7 @@ Om du vill inaktivera begränsningen för att skapa grupper och återigen tillå
 
 Det kan ta trettio minuter eller mer innan ändringarna har verkställs. Du kan kontrollera de nya inställningarna genom att göra följande:
 
-1. Logga in på Microsoft 365 med ett användarkonto för någon som INTE ska ha möjlighet att skapa grupper. De är då inte medlemmar i gruppen du skapade eller en administratör.
+1. Logga in Microsoft 365 konto med ett användarkonto för någon som INTE ska ha möjlighet att skapa grupper. De är då inte medlemmar i gruppen du skapade eller en administratör.
 
 2. Välj **panelen Planner.**
 
@@ -178,4 +179,4 @@ Prova samma procedur igen när du är medlem i gruppen.
 
 [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
-[Azure Active Directory-cmdlets för konfiguration av gruppinställningar](/azure/active-directory/users-groups-roles/groups-settings-cmdlets)
+[Azure Active Directory cmdlets för att konfigurera gruppinställningar](/azure/active-directory/users-groups-roles/groups-settings-cmdlets)

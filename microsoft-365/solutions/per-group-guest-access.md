@@ -14,25 +14,26 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: Lär dig hur du förhindrar att gäster läggs till i en viss grupp
-ms.openlocfilehash: 572746a666586920ad85dafddbd78997940490d7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1db2055f3e546c05905dbf4c854333387112f06e
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907946"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538933"
 ---
-# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Förhindra att gäster läggs till i en viss Microsoft 365-grupp eller Microsoft Teams-team
+# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Förhindra att gäster läggs till i en viss Microsoft 365 grupp eller Microsoft Teams grupp
 
 Om du vill tillåta gäståtkomst till de flesta grupper och team, men har några där du vill förhindra gäståtkomst, kan du blockera gäståtkomst för enskilda grupper och team. (Att blockera gäståtkomst till ett team görs genom att blockera gäståtkomst till den associerade gruppen.) Det förhindrar att nya gäster läggs till men tar inte bort gäster som redan finns i gruppen eller teamet.
 
-Om du använder känslighetsetiketter i din organisation rekommenderar vi att du använder dem för att styra gäståtkomst per grupp. Mer information om hur du gör detta finns i Använda känslighetsetiketter för att skydda innehåll i [Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser.](../compliance/sensitivity-labels-teams-groups-sites.md) Det här är den rekommenderade metoden.
+Om du använder känslighetsetiketter i din organisation rekommenderar vi att du använder dem för att styra gäståtkomst per grupp. Mer information om hur du gör detta finns i Använda känslighetsetiketter för att skydda innehåll i [Microsoft Teams, Microsoft 365 grupper och SharePoint webbplatser.](../compliance/sensitivity-labels-teams-groups-sites.md) Det här är den rekommenderade metoden.
 
 ## <a name="change-group-settings-using-microsoft-powershell"></a>Ändra gruppinställningar med Microsoft PowerShell
 
-Du kan också förhindra tillägg av nya gäster i enskilda grupper med hjälp av PowerShell. (Kom ihåg att teamets associerade SharePoint-webbplats har [separata gästdelningskontroller](/sharepoint/change-external-sharing-site).)
+Du kan också förhindra tillägg av nya gäster i enskilda grupper med hjälp av PowerShell. (Kom ihåg att teamets associerade SharePoint har [separata gästdelningskontroller](/sharepoint/change-external-sharing-site).)
 
-Du måste använda förhandsversionen av [Azure Active Directory PowerShell för Graph](/powershell/azure/active-directory/install-adv2) (modulnamnet **AzureADPreview**) om du vill ändra inställningen för gäståtkomst på gruppnivå:
+Du måste använda förhandsversionen av Azure Active Directory PowerShell för [Graph (modulnamn](/powershell/azure/active-directory/install-adv2) **AzureADPreview**) om du vill ändra inställningen för gäståtkomst på gruppnivå:
 
 - Om du inte har installerat någon version av Azure AD PowerShell-modulen tidigare, se Installera [Azure AD-modulen](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) och följ anvisningarna för att installera den offentliga förhandsversionen.
 
@@ -75,7 +76,7 @@ Mer information finns i Tillåta [eller blockera inbjudningar till B2B-användar
 
 ## <a name="add-guests-to-the-global-address-list"></a>Lägga till gäster i den globala adresslistan
 
-Som standard visas inte gäster i den globala adresslistan i Exchange. Använd stegen nedan för att göra en gäst synlig i den globala adresslistan.
+Som standard visas inte gäster i den globala Exchange adresslistan. Använd stegen nedan för att göra en gäst synlig i den globala adresslistan.
 
 Hitta gästens ObjectID genom att köra:
 
@@ -95,8 +96,8 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 [Skapa din plan för samarbetesstyrning](collaboration-governance-first.md)
 
-[Hantera gruppmedlemskap i administrationscentret för Microsoft 365](../admin/create-groups/add-or-remove-members-from-groups.md)
+[Hantera gruppmedlemskap i Microsoft 365 administrationscentret](../admin/create-groups/add-or-remove-members-from-groups.md)
   
-[Åtkomstgranskningar i Azure Active Directory](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
+[Azure Active Directory granskningar av åtkomst](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser)

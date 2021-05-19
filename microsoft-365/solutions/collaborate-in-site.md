@@ -16,19 +16,20 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Läs mer om konfigurationsstegen för Microsoft 365 som krävs för att konfigurera en SharePoint-webbplats för samarbete med gäster.
-ms.openlocfilehash: fd3cf55b3d95a5c79b9bd4d7c55855f7d73fc0d2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+recommendations: false
+description: Läs mer Microsoft 365 konfigurationsstegen för att konfigurera en SharePoint för samarbete med gäster.
+ms.openlocfilehash: f91b9c64dbdca8ed7e3ada3315cb57f1c728f838
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904654"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539257"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Samarbeta med gäster på en webbplats
 
-Om du behöver samarbeta med gäster i dokument, data och listor kan du använda en SharePoint-webbplats. Moderna SharePoint-webbplatser är anslutna till Microsoft 365-grupper och kan hantera webbplatsmedlemskapet och tillhandahålla ytterligare samarbetsverktyg, till exempel en delad postlåda och en kalender.
+Om du behöver samarbeta med gäster i dokument, data och listor kan du använda en SharePoint webbplats. Moderna SharePoint webbplatser är anslutna Microsoft 365 grupper och kan hantera webbplatsmedlemskapet och tillhandahålla ytterligare samarbetsverktyg, till exempel en delad postlåda och en kalender.
 
-I den här artikeln går vi igenom konfigurationsstegen för Microsoft 365 som behövs för att konfigurera en SharePoint-webbplats för samarbete med gäster.
+I den här artikeln går vi igenom de konfigurationssteg Microsoft 365 behöver för att konfigurera en SharePoint för samarbete med gäster.
 
 ## <a name="video-demonstration"></a>Videodemonstration
 
@@ -42,7 +43,7 @@ Delning i Microsoft 365 styrs på sin högsta nivå av inställningarna för [B2
 
 Kontrollera inställningarna för B2B externt samarbete för att säkerställa att delning med gäster inte blockeras.
 
-![Skärmbild av sidan Inställningar för externt samarbete i Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
+![Skärmbild av Azure Active Directory sidan för externt Inställningar samarbete](../media/azure-ad-organizational-relationships-settings.png)
 
 Inställningar för externt samarbete
 
@@ -59,7 +60,7 @@ Om du arbetar med gäster från flera organisationer kanske du vill begränsa de
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Gästinställningar för Microsoft 365-grupper
 
-Moderna SharePoint-webbplatser använder Microsoft 365-grupper för att styra webbplatsåtkomsten. Gästinställningarna för Microsoft 365-grupper måste vara aktiverat för att gäståtkomst i SharePoint-webbplatser ska fungera.
+Moderna SharePoint använder grupper Microsoft 365 för att styra webbplatsåtkomsten. Gästinställningarna Microsoft 365 Grupper måste vara aktiverat för att gäståtkomsten på SharePoint ska fungera.
 
 ![Skärmbild av gästinställningarna för Microsoft 365-grupper i administrationscenter för Microsoft 365](../media/office-365-groups-guest-settings.png)
 
@@ -71,9 +72,9 @@ Ange gästinställningar för Microsoft 365-grupper
 4. Kontrollera att kryssrutorna **Låt gruppägare lägga till personer utanför organisationen i Microsoft 365-grupper som gäster** och **Låt gästgruppsmedlemmar få åtkomst till gruppinnehåll** är markerade.
 5. Om du har gjort ändringar klickar du på **Spara ändringar**.
 
-## <a name="sharepoint-organization-level-sharing-settings"></a>Delningsinställningar på organisationsnivå i SharePoint
+## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint delningsinställningar på organisationsnivå
 
-För att gäster ska ha åtkomst till SharePoint-webbplatser måste delningsinställningarna på SharePoint-organisationsnivå tillåta delning med gäster.
+För att gäster ska ha åtkomst till SharePoint måste delningsinställningarna på SharePoint på organisationsnivå tillåta delning med gäster.
 
 Inställningarna på organisationsnivå avgör vilka inställningar som ska vara tillgängliga för enskilda webbplatser. Webbplatsinställningar får inte vara mer tillåtande än inställningarna på organisationsnivå.
 
@@ -85,7 +86,7 @@ Om du vill tillåta icke-autisk fil- och mappdelning väljer du **Alla**. Om du 
 För att ange delningsinställningar för SharePoint på organisationsnivå
 
 1. I det vänstra navigeringsfönstret i administrationscentret för Microsoft 365 går du till **Administrationscenter** och klickar på **SharePoint**.
-2. I det vänstra navigeringsfönstret i administrationscentret för SharePoint, under **Principer,** klickar du på **Delning.**
+2. I det SharePoint navigeringsfönstret i vänstra navigeringsfönstret, under Principer, **klickar du** på **Delning.**
 3. Se till att extern delning för SharePoint är inställd på **Alla** eller **Nya och befintliga gäster**.
 4. Om du har gjort ändringar klickar du på **Spara**.
 
@@ -110,7 +111,7 @@ Kontrollera inställningarna för delning på webbplatsnivå för att säkerstä
 
 Observera att webbplatsen inte kan delas med oauthenticerade personer **(inställningen** Alla), men enskilda filer och mappar kan.
 
-Du kan också använda [känslighetsetiketter för att styra inställningar för extern delning för SharePoint-webbplatser.](../compliance/sensitivity-labels-teams-groups-sites.md)
+Du kan också använda [känslighetsetiketter för att styra inställningar för extern delning SharePoint webbplatser.](../compliance/sensitivity-labels-teams-groups-sites.md)
 
 ![Skärmbild av inställningar för extern delning för SharePoint](../media/sharepoint-site-external-sharing-settings.png)
 
@@ -123,7 +124,7 @@ Så här anger du delningsinställningar på webbplatsnivå
 
 ## <a name="invite-users"></a>Bjuda in användare
 
-Inställningarna för gästdelning är nu konfigurerade så att du kan börja lägga till interna användare och gäster på webbplatsen. Webbplatsåtkomsten styrs via den associerade Microsoft 365-gruppen, så vi lägger till användare där.
+Inställningarna för gästdelning är nu konfigurerade så att du kan börja lägga till interna användare och gäster på webbplatsen. Webbplatsåtkomsten styrs genom den associerade Microsoft 365 gruppen, så vi kommer att lägga till användare där.
 
 Bjuda in interna användare till en grupp
 1. Navigera till den webbplats där du vill lägga till användare.
@@ -131,7 +132,7 @@ Bjuda in interna användare till en grupp
 3. Klicka på **Lägg till medlemmar.**
 4. Skriv namnen eller e-postadresserna till de användare som du vill bjuda in till webbplatsen och klicka sedan på **Spara**.
 
-Gäster kan inte läggas till från webbplatsen. Du måste lägga till dem med hjälp av Outlook på webben. Som en förutsättning för att lägga till och bjuda in gäster till en grupp klickar du därför på webbplatsens URL i **URL-kolumnen**  för att navigera till den webbplatsspecifika sidan. Klicka på ikonen för **appstartaren på den här** sidan och välj **Outlook**. Det här är skärmen där du kan bjuda in gäster till en grupp, som beskrivs nedan.
+Gäster kan inte läggas till från webbplatsen. Du måste lägga till dem Outlook på webben. Som en förutsättning för att lägga till och bjuda in gäster till en grupp klickar du därför på webbplatsens URL i **URL-kolumnen**  för att navigera till den webbplatsspecifika sidan. Klicka på ikonen för **appstartikonen på den** här sidan och välj **Outlook**. Det här är skärmen där du kan bjuda in gäster till en grupp, som beskrivs nedan.
 
 Bjuda in gäster till en grupp
 1. Under **Grupper** klickar du på den grupp som du vill bjuda in gäster till.

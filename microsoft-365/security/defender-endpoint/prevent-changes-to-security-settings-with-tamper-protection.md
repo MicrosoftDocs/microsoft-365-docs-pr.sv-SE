@@ -16,17 +16,15 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 9a2f37aa0a2a17646862a7a7e1bd8b34685e76b8
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.date: 05/17/2021
+ms.openlocfilehash: ed9eb425d718a2dbdaa2cdb3ab1e6899c9870124
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274718"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538893"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Skydda säkerhetsinställningarna med manipuleringsskydd
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Gäller för:**
 
@@ -62,14 +60,12 @@ Skydd mot manipulering låser Microsoft Defender Antivirus och förhindrar att s
 
 Skydd mot manipulering hindrar dig inte från att visa dina säkerhetsinställningar. Skydd mot manipulering påverkar inte heller hur antivirusappar från tredje part registreras i Windows-säkerhet program. Om din organisation använder e Windows 10 Enterprise E5 kan enskilda användare inte ändra inställningen för skydd mot manipulering. I så fall hanteras skydd mot manipulering av säkerhetsteamet.
 
-
-
 ### <a name="what-do-you-want-to-do"></a>Vad vill du göra?
 
 | När du ska utföra den här uppgiften ... | Se det här avsnittet... |
 |:---|:---|
-| Aktivera (eller inaktivera skydd mot manipulering) i Microsoft Defender Säkerhetscenter <p>Hantera skydd mot manipulering i hela klientorganisationen | [Hantera skydd mot manipulering för organisationen med hjälp av Microsoft Defender Säkerhetscenter](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) |
-| Aktivera (eller inaktivera skydd mot manipulering) för hela eller en del av organisationen med Intune <p>Finjustera inställningar för manipuleringsskydd i organisationen | [Hantera skydd mot manipulering för din organisation med Intune](#manage-tamper-protection-for-your-organization-using-intune) |
+| Hantera skydd mot manipulering i hela klientorganisationen <p>Använd Microsoft Defender Säkerhetscenter för att aktivera eller inaktivera skydd mot manipulering | [Hantera skydd mot manipulering för organisationen med hjälp av Microsoft Defender Säkerhetscenter](#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) |
+| Finjustera inställningar för manipuleringsskydd i organisationen <p>Använd Intune (Microsoft Endpoint Manager) för att aktivera eller inaktivera skydd mot manipulering. Du kan konfigurera skydd mot manipulering för vissa eller alla användare med den här metoden. | [Hantera skydd mot manipulering för din organisation med Intune](#manage-tamper-protection-for-your-organization-using-intune) |
 | Aktivera (eller inaktivera) skydd mot manipulering för organisationen med Konfigurationshanteraren | [Hantera skydd mot manipulering för organisationen med innehavar bifoga med Konfigurationshanteraren, version 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006) |
 | Aktivera (eller inaktivera) skydd mot manipulering för en enskild enhet | [Hantera skydd mot manipulering på en enskild enhet](#manage-tamper-protection-on-an-individual-device) |
 | Visa information om manipuleringsförsök på enheter | [Visa information om försök till manipulering](#view-information-about-tampering-attempts) |
@@ -80,29 +76,24 @@ Beroende på vilken metod eller vilket hanteringsverktyg du använder för att a
 
 Följande tabell innehåller information om metoder, verktyg och beroenden.
 
-
-
-|     Så här aktiveras skydd mot manipulering                                         |     Beroende på KARTOR (moln levererat skydd)    |
-|------------------------------------------------------------------------------|--------------------------------------------------------|
-|     Microsoft Intune                                                         |     Nej                                                 |
-| Microsoft Endpoint Configuration Manager + Klientorganisationens bifoga                     |     Nej                                                 |
-|     Microsoft Defender för Endpoint-portalen (securitycenter.microsoft.com)    |     Ja                                                |
-|     Microsoft 365 Defender-portalen (security.microsoft.com)                   |     Ja                                                |
+| Så här aktiveras skydd mot manipulering  | Beroende på KARTOR (moln levererat skydd)    |
+|:----|:----|
+| Microsoft Intune  | Nej |
+| Microsoft Endpoint Configuration Manager + Klientorganisationens bifoga  |     Nej  |
+| Microsoft Defender Säkerhetscenter ( [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com) )    |     Ja |
+| Microsoft 365 säkerhetscenter ( [https://security.microsoft.com](https://security.microsoft.com) )  |     Ja  |
 
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center"></a>Hantera skydd mot manipulering för organisationen med hjälp av Microsoft Defender Säkerhetscenter
 
 Skydd mot manipulering kan aktiveras eller inaktiveras för klientorganisationen med hjälp av Microsoft Defender Säkerhetscenter ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ). Här är några saker att tänka på:
 
-- För närvarande är alternativet för att hantera skydd mot manipulering Microsoft Defender Säkerhetscenter skydd på som standard för nya distributioner. För befintliga distributioner är skydd av manipulering tillgängligt med möjlighet att välja att göra det här till standardmetod inom kort. (Om du vill registrera dig väljer Microsoft Defender Säkerhetscenter i **Inställningar**  >  **Avancerade funktioner**  >  **Skydd mot manipulering**.) 
+- För närvarande är alternativet för att hantera skydd mot manipulering Microsoft Defender Säkerhetscenter skydd på som standard för nya distributioner. För befintliga distributioner är skydd av manipulering tillgängligt med möjlighet att välja alternativ, med planer på att registrera sig i standardmetoden inom kort. (Om du vill registrera dig väljer Microsoft Defender Säkerhetscenter i **Inställningar**  >  **Avancerade funktioner**  >  **Skydd mot manipulering**.) 
 
 - När du använder Microsoft Defender Säkerhetscenter för att hantera skydd mot manipulering behöver du inte använda Intune eller metoden för att bifoga klientorganisation.
 
 - När du hanterar skydd mot manipulering i Microsoft Defender Säkerhetscenter tillämpas inställningen på hela klientorganisationen och påverkar alla enheter som kör Windows 10, Windows Server 2016 eller Windows Server 2019. Om du vill finjustera skydd mot manipulering (t.ex. om du har skydd mot manipulering på vissa enheter men inaktiverat för andra) använder du [antingen Intune](#manage-tamper-protection-for-your-organization-using-intune) eller [Konfigurationshanteraren med klientorganisationens bifoga](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006).
 
 - Om du har en hybridmiljö har inställningar för skydd mot manipulering i Intune företräde framför inställningar som konfigurerats i Microsoft Defender Säkerhetscenter. 
-
-
-
 
 ### <a name="requirements-for-managing-tamper-protection-in-the-microsoft-defender-security-center"></a>Krav för hantering av skydd mot manipulering i Microsoft Defender Säkerhetscenter
 
@@ -133,7 +124,7 @@ Skydd mot manipulering kan aktiveras eller inaktiveras för klientorganisationen
 
 ## <a name="manage-tamper-protection-for-your-organization-using-intune"></a>Hantera skydd mot manipulering för din organisation med Intune
 
-Om du är en del av organisationens säkerhetsteam och prenumerationen omfattar [Intune](/intune/fundamentals/what-is-intune)kan du aktivera (eller inaktivera) skydd mot manipulering för organisationen i [Microsoft Endpoint Manager administrationscenter-portalen.](https://endpoint.microsoft.com) Använd Intune när du vill finjustera inställningarna för skydd mot manipulering. Om du till exempel vill aktivera skydd mot manipulering på vissa enheter, men inte alla, använder du Intune.
+Om du ingår i organisationens säkerhetsteam och prenumerationen omfattar [Intune](/intune/fundamentals/what-is-intune)kan du aktivera (eller inaktivera) skydd mot manipulering för organisationen i administrationscentret för Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ). Använd Intune när du vill finjustera inställningarna för skydd mot manipulering. Om du till exempel vill aktivera skydd mot manipulering på vissa enheter, men inte alla, använder du Intune.
 
 ### <a name="requirements-for-managing-tamper-protection-in-intune"></a>Krav för hantering av skydd mot manipulering i Intune
 
@@ -179,12 +170,12 @@ Om du använder Windows 10 OS [1709,](/windows/release-health/status-windows-10-
 
 Om du använder [version 2006](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006)av Konfigurationshanteraren kan du hantera inställningar för skydd mot manipulering i Windows 10, Windows Server 2016 och Windows Server 2019 med en metod som kallas *klientorganisations* bifoga. Med Klientorganisationens fästa kan du synkronisera dina enheter med Konfigurationshanteraren för lokala enheter till administrationscentret i Microsoft Endpoint Manager och sedan leverera principer för slutpunktssäkerhetskonfiguration till lokala samlingar & enheter.
 
-![Windows säkerhetsupplevelsen i Endpoint Manager](images/win-security- exp-policy-endpt-security.png)
+:::image type="content" source="images/win-security- exp-policy-endpt-security.png" alt-text="Windows-säkerhet upplevelsen i Endpoint Manager":::
 
 > [!NOTE]
 > Proceduren kan användas för att utöka skydd mot manipulering till enheter med Windows 10 och Windows Server 2019. Kontrollera att du behöver granska förutsättningarna och annan information i resurserna som nämns i den här proceduren.
 
-1. Konfigurera klientorganisations bifoga. Om du behöver hjälp med detta kan [Microsoft Endpoint Manager klientorganisationen bifoga: Enhetsynkronisering och enhetsåtgärder](/mem/configmgr/tenant-attach/device-sync-actions).
+1. Konfigurera klientorganisations bifoga. Mer information finns i koppla [Microsoft Endpoint Manager klientorganisation: Enhetsynkronisering och enhetsåtgärder](/mem/configmgr/tenant-attach/device-sync-actions).
 
 2. Gå till [Microsoft Endpoint Manager Säkerhetsantivirusprogram](https://go.microsoft.com/fwlink/?linkid=2109431)för **slutpunkt i administrationscentret** och välj sedan + Skapa  >   **princip.**<br/> 
    - I listan **Plattform** väljer du **Windows 10 och Windows Server (ConfigMgr)**.  
@@ -219,8 +210,6 @@ Det här är vad som visas i Windows-säkerhet appen:
 2. Välj **Virus & skydd mot hot**& för skydd mot  >  **hot**.
 
 3. Ställ **in Skydd mot manipulering** på **På** eller **Av.**
-
-
 
 ## <a name="view-information-about-tampering-attempts"></a>Visa information om försök till manipulering
 

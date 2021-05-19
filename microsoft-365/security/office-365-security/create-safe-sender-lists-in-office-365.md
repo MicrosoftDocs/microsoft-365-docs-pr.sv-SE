@@ -17,12 +17,12 @@ ms.custom:
 description: Administratörer kan läsa mer om de tillgängliga och rekommenderade alternativen för att tillåta inkommande meddelanden i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e5473f8c37b4edcf6c2451cf995b430edbe09533
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: f76b34a439d2eaf2c8315d174483b0b30d3b3b0b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207192"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538765"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Skapa listor över betrodda avsändare i EOP
 
@@ -33,12 +33,12 @@ ms.locfileid: "51207192"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Om du är Microsoft 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection-kund (EOP) utan Exchange Online-postlådor, erbjuder EOP flera sätt att säkerställa att användare får e-post från betrodda avsändare. De här alternativen omfattar Exchange-e-postflödesregler (kallas även transportregler), Betrodda avsändare i Outlook, listan över tillåtna IP-adresser (anslutningsfiltrering) och listor över tillåtna avsändare eller listor över tillåtna domäner i principer som skydda mot skräppost. Sammantaget kan du tänka på de här alternativen som _listor över betrodda avsändare._
+Om du är Microsoft 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection-kund (EOP) utan Exchange Online-postlådor, erbjuder EOP flera sätt att säkerställa att användare får e-post från betrodda avsändare. De här alternativen omfattar Exchange e-postflödesregler (kallas även transportregler), Outlook Valv-avsändare, listan över tillåtna IP-adresser (anslutningsfiltrering) och listor över tillåtna avsändare eller tillåtna domäner i skräppostskyddsprinciperna. Sammantaget kan du tänka på de här alternativen som _listor över betrodda avsändare._
 
 De tillgängliga listorna med betrodda avsändare beskrivs i följande lista, i den ordning som vi rekommenderar mest och minst rekommenderas:
 
 1. E-postflödesregler
-2. Betrodda avsändare i Outlook
+2. Outlook Valv avsändare
 3. Lista över tillåtna IP-adresser (anslutningsfiltrering)
 4. Listor över tillåtna avsändare eller tillåtna domäner (principer som skydda mot skräppost)
 
@@ -50,15 +50,15 @@ Med e-postflödesregler är det mest flexibelt att säkerställa att endast rät
 >
 > - Även om du kan använda listor över betrodda avsändare för att hjälpa till med falska positiva resultat (bra e-postmeddelande markerat som dåligt) bör du överväga att använda listor över betrodda avsändare som en tillfällig lösning som om möjligt bör undvikas. Vi rekommenderar inte att du hanterar falska positiva meddelanden med hjälp av listor över betrodda avsändare, eftersom undantag från skräppostfiltrering kan öppna organisationen för förfalskning och andra attacker. Om du har med att använda listor över betrodda avsändare för att hantera falska positiva resultat måste du vara försiktig och ha ämnet Rapportera meddelanden och filer till [Microsoft](report-junk-email-messages-to-microsoft.md) när det är klart.
 >
-> - Om du vill tillåta att en domän skickar oautisk e-post (kringgår skydd mot förfalskning) men inte kringgår kontroller mot skräppost och skadlig programvara kan du lägga till dem i listan [AllowedToSpoof Safe Sender](walkthrough-spoof-intelligence-insight.md)
+> - Om du vill tillåta att en domän skickar oautisk e-post (kringgår skydd mot förfalskning) men inte [](learn-about-spoof-intelligence.md) kringgår kontroller mot skräppost och skadlig programvara kan du använda förfalskningsinformation och klientorganisationens lista över [tillåtna/blockerade program.](tenant-allow-block-list.md)
 >
-> - EOP och Outlook kontrollerar olika meddelandeegenskaper för att fastställa meddelandets avsändare. Mer information finns i avsnittet Att tänka [på för massutskick](#considerations-for-bulk-email) längre fram i den här artikeln.
+> - EOP Outlook kontrollerar olika meddelandeegenskaper för att fastställa meddelandets avsändare. Mer information finns i avsnittet Att tänka [på för massutskick](#considerations-for-bulk-email) längre fram i den här artikeln.
 
 Du har däremot flera alternativ för att blockera e-post från vissa källor med _hjälp av listor över spärrade avsändare._ Mer information finns i artikeln om att [skapa listor över blockerade avsändare i EOP](create-block-sender-lists-in-office-365.md).
 
 ## <a name="recommended-use-mail-flow-rules"></a>(Rekommenderas) Använda e-postflödesregler
 
-E-postflödesregler i Exchange Online och fristående EOP använder villkor och undantag för att identifiera meddelanden och åtgärder för att ange vad som ska göras med dessa meddelanden. Mer information finns i [E-postflödesregler (transportregler) i Exchange Online.](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
+E-postflödesregler i Exchange Online och fristående EOP använder villkor och undantag för att identifiera meddelanden och åtgärder för att ange vad som ska göras med dessa meddelanden. Mer information finns i [E-postflödesregler (transportregler) i Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
 
 Följande exempel förutsätter att du behöver e-post contoso.com kunna hoppa över skräppostfiltrering. Det gör du genom att konfigurera följande inställningar:
 
@@ -100,14 +100,14 @@ Följande exempel förutsätter att du behöver e-post contoso.com kunna hoppa �
 
 ![Inställningar för e-postflödesregel i EAC för att kringgå skräppostfiltrering.](../../media/1-AllowList-SkipFilteringFromContoso.png)
 
-## <a name="use-outlook-safe-senders"></a>Använda Betrodda avsändare i Outlook
+## <a name="use-outlook-safe-senders"></a>Använda Outlook Valv avsändare
 
 > [!CAUTION]
-> Den här metoden innebär en hög risk för att attacker ska leverera e-post till Inkorgen som annars skulle filtreras. Men användarens listor Över betrodda avsändare eller Betrodda domäner förhindrar inte skadlig programvara eller nätfiskemeddelanden med hög säkerhet från att filtreras.
+> Den här metoden innebär en hög risk för att attacker ska leverera e-post till Inkorgen som annars skulle filtreras. Men användarnas listor över Valv och domäner Valv inte förhindrar att skadlig programvara eller betrodda nätfiskemeddelanden filtreras.
 
-I stället för en organisationsinställning kan användare eller administratörer lägga till avsändaradresserna i listan Betrodda avsändare i postlådan. Anvisningar finns i Konfigurera [skräppostinställningar för Exchange Online-postlådor i Office 365.](configure-junk-email-settings-on-exo-mailboxes.md) Det är i de flesta fall inte det bästa eftersom avsändare kringgår delar av filtreringsstacken. Även om du litar på avsändaren kan avsändaren fortfarande komprometteras och skicka skadligt innehåll. Det är bäst att du låter våra filter göra det som behövs för att kontrollera varje meddelande och sedan rapportera falskt [positivt/negativt](report-junk-email-messages-to-microsoft.md) till Microsoft om våra filter fick det fel. Om du kringgår filtreringsstacken stör det även [ZAP](zero-hour-auto-purge.md).
+I stället för en organisationsinställning kan användare eller administratörer lägga till avsändaradresserna Valv i postlådorna. Instruktioner finns i Konfigurera [inställningar för skräppost i Exchange Online postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Det är i de flesta fall inte det bästa eftersom avsändare kringgår delar av filtreringsstacken. Även om du litar på avsändaren kan avsändaren fortfarande komprometteras och skicka skadligt innehåll. Det är bäst att du låter våra filter göra det som behövs för att kontrollera varje meddelande och sedan rapportera falskt [positivt/negativt](report-junk-email-messages-to-microsoft.md) till Microsoft om våra filter fick det fel. Om du kringgår filtreringsstacken stör det även [ZAP](zero-hour-auto-purge.md).
 
-När meddelanden hoppar över skräppostfiltrering på grund av en användares lista över betrodda avsändare innehåller rubrikfältet **X-Forefront-Antispam-Report** värdet , som anger att filtrering av skräppost, förfalskning och nätfiske har `SFV:SFE` kringgåts.
+När meddelanden hoppar över skräppostfiltrering på grund av en användares lista över avsändare i Valv innehåller huvudfältet **X-Forefront-Antispam-Report** värdet , som anger att filtrering av skräppost, förfalskning och nätfiske har `SFV:SFE` kringgåts.
 
 ## <a name="use-the-ip-allow-list"></a>Använd listan över tillåtna IP-adresser
 
@@ -152,11 +152,11 @@ Anta till exempel att Blue Yonder Airlines har anställt Margies Travel för att
 
 - Adressen `5322.From` är blueyonder@news.blueyonderairlines.com, vilket är vad du ser i Outlook.
 
-Listor över betrodda avsändare och listor över betrodda domäner i principer mot skräppost i EOP kontrollerar bara adresserna. Det påminner om Betrodda avsändare `5322.From` i Outlook som använder `5322.From` adressen.
+Valv lista över avsändare och listor över betrodda domäner i principer som är skydd mot skräppost i EOP bara kontrollerar adresserna, på liknande sätt som Outlook Valv avsändare `5322.From` som använder `5322.From` adressen.
 
 Du kan förhindra att det här meddelandet filtreras genom att göra följande:
 
-- Lägg blueyonder@news.blueyonderairlines.com `5322.From` (adressen) som betrodd avsändare i Outlook.
+- Lägg blueyonder@news.blueyonderairlines.com `5322.From` (adressen) som en Outlook Valv avsändare.
 
 - [Använd en e-postflödesregel](#recommended-use-mail-flow-rules) med ett villkor som söker efter meddelanden från `5322.From` blueyonder@news.blueyonderairlines.com (adress, blueyonder.airlines@margiestravel.com `5321.MailFrom` (), eller båda.
 

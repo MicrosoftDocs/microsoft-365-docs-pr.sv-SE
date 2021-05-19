@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/21/2020
+ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Mer information om att konfigurera enhetsproxy- och Internetanslutningsinställningar för slutpunkts-DLP.
-ms.openlocfilehash: 5da9161f2f59ef8a40ca8a7d302dc7de578dba39
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: f2a62b5c7913b6f41c414310a97ab5f072f59642
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52162997"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538621"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>Konfigurera enhetsproxy- och Internetanslutningsinställningar för slutpunkts-DLP
 
@@ -140,13 +140,13 @@ Närliggande information •   Registrera Windows 10-enheter •   Felsöka prob
 
 ## <a name="see-also"></a>Se även
 
-- [Mer information om dataförlustskydd för slutpunkter ](endpoint-dlp-learn-about.md)
-- [Använda dataförlustskydd för slutpunkter ](endpoint-dlp-using.md)
+- [Mer information om dataförlustskydd för slutpunkter](endpoint-dlp-learn-about.md)
+- [Använda dataförlustskydd för slutpunkter](endpoint-dlp-using.md)
 - [Mer information om dataförlustskydd](dlp-learn-about-dlp.md)
 - [Skapa, testa och justera en DLP-princip](create-test-tune-dlp-policy.md)
-- [Kom igång med aktivitetsutforskaren](data-classification-activity-explorer.md)
+- [Kom igång med Aktivitetsutforskaren](data-classification-activity-explorer.md)
 - [Microsoft Defender för Endpoint](/windows/security/threat-protection/)
 - [Registreringsverktyg och metoder för Windows 10-enheter](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Microsoft 365-prenumeration](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure AD-anslutna enheter](/azure/active-directory/devices/concept-azure-ad-join)
-- [Ladda ned nya Microsoft Edge som är baserat på Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
+- [Ladda ned nya Microsoft Edge som baseras på Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

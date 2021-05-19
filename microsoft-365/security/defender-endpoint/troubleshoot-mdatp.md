@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 81f1b4154de25f6186679adc5b1f24f78f302415
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 8aaea65c617300a16f99a9a3e3a62d94b7983198
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933763"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538357"
 ---
 # <a name="troubleshoot-service-issues"></a>Felsöka tjänstproblem
 
@@ -34,14 +34,14 @@ ms.locfileid: "51933763"
 > Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
-I det här avsnittet behandlas problem som kan uppstå när du använder tjänsten Microsoft Defender Advanced Threat.
+I det här avsnittet behandlas problem som kan uppstå när du använder Tjänsten Microsoft Defender för slutpunkt.
 
 ## <a name="server-error---access-is-denied-due-to-invalid-credentials"></a>Serverfel – Åtkomst nekas på grund av ogiltiga autentiseringsuppgifter
 Om det uppstår ett serverfel när du försöker komma åt tjänsten måste du ändra inställningarna för webbläsarens cookie.
 Konfigurera webbläsaren så att den tillåter cookies.
 
 ## <a name="elements-or-data-missing-on-the-portal"></a>Element eller data saknas på portalen
-Om vissa element eller data saknas i Microsoft Defender Säkerhetscenter kan det vara så att proxyinställningarna blockerar den.
+Om vissa element eller data saknas på Microsoft Defender Säkerhetscenter det möjligt att proxyinställningarna blockerar den.
 
 Se till att `*.securitycenter.windows.com` finns med i listan över tillåtna proxyservrar.
 
@@ -55,9 +55,9 @@ Se [Granska händelser och fel med hjälp av Loggboken](event-error-codes.md) f�
 
 ## <a name="microsoft-defender-for-endpoint-service-fails-to-start-after-a-reboot-and-shows-error-577"></a>Microsoft Defender för slutpunktstjänsten startar inte efter en omstart och visar felet 577
 
-Om onboarding-enheter slutförs men Microsoft Defender för Slutpunkt inte startar efter en omstart och felmeddelande 577 visas kontrollerar du att Windows Defender inte har inaktiverats av en princip.
+Om onboarding-enheter slutförs men Microsoft Defender för Endpoint inte startar efter en omstart och felmeddelande 577 visas kontrollerar du att Windows Defender inaktiveras av en princip.
 
-Mer information finns i Se [till att Microsoft Defender Antivirus inte är inaktiverat enligt policy.](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
+Mer information finns i Se [till att Microsoft Defender Antivirus inaktiveras av principen.](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
 
 ## <a name="known-issues-with-regional-formats"></a>Kända problem med nationella format
 

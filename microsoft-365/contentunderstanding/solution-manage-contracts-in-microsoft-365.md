@@ -13,12 +13,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Lär dig hur du hanterar kontrakt med en Microsoft 365 lösning av SharePoint Syntex, Microsoft Teams och Power Automate.
-ms.openlocfilehash: 806ea9fd048dec198a19fa79f3b60f3f3cb81018
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 057c581559aa2e5cfd6e98b379783a7d73e0bccc
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281314"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538573"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Hantera kontrakt med en Microsoft 365 lösning
 
@@ -67,6 +67,10 @@ Den här lösningen för kontraktshantering innehåller fyra komponenter Microso
 4. Med hjälp Power Automate flyttas kontrakt genom godkännandeprocessen i Teams kanalen. När en medlem godkänner ett avtal ändras kontraktsstatusen för att godkännas, alla medlemmar meddelas via ett Teams-inlägg och ett radobjekt skapas för att visa att avtalet är klart för utbetalning. Den här processen kan utökas till att skriva direkt till en betalningsansökan från tredje part.
 
 5.  När en medlem avvisar ett kontrakt ändras statusen till avvisad och alla medlemmar meddelas via ett Teams inlägg.
+
+6. Resultatet av den här lösningen är en automatiserad affärsprocess för din organisation. Anställda kan enkelt använda den anpassade panelvyn i Teams initiera och övervaka arbetsflödet för godkännande av dina dokument. 
+
+     ![Fliken Kontrakt.](../media/content-understanding/tile-view.png)
 
 ## <a name="create-the-solution"></a>Skapa lösningen
 

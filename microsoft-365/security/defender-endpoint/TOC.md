@@ -120,6 +120,10 @@
  
 ##### [Konfigurera]()
 ###### [Konfigurera iOS-funktioner](ios-configure-features.md)
+
+##### [Felsökning]()
+###### [Felsöka problem](ios-troubleshoot.md)
+
 ##### [Sekretess](ios-privacy.md)
  
  

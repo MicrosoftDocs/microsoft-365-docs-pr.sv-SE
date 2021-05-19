@@ -18,15 +18,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-symantecmigrate
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 05/14/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: aff6439c08a4f8540a10589a436893c62e48d756
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: ee4324c77653d9d82ef613ff88d31cfb94ee3218
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327408"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539161"
 ---
 # <a name="migrate-from-symantec---phase-2-set-up-microsoft-defender-for-endpoint"></a>Migrera från Symantec – fas 2: Konfigurera Microsoft Defender för Endpoint
 
@@ -39,23 +39,53 @@ ms.locfileid: "52327408"
 ||*Du är här!* | |
 
 
-**Välkommen till konfigurationsfasen av [migreringen från Symantec till Microsoft Defender för Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)**. Den här fasen omfattar följande steg:
-1. [Aktivera eller installera Microsoft Defender Antivirus (för vissa versioner av Windows).](#enable-or-reinstall-microsoft-defender-antivirus-for-certain-versions-of-windows)
-2. [Aktivera Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
-3. [Hämta uppdateringar för Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
-4. [Lägg till Microsoft Defender för Endpoint i undantagslistan för Symantec.](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-symantec)
-5. [Lägg till Symantec i undantagslistan för Microsoft Defender Antivirus](#add-symantec-to-the-exclusion-list-for-microsoft-defender-antivirus).
-6. [Konfigurera enhetsgrupper, enhetssamlingar och organisationsenheter.](#set-up-your-device-groups-device-collections-and-organizational-units)
-7. [Konfigurera program mot skadlig programvara och realtidsskydd](#configure-antimalware-policies-and-real-time-protection).
+**Välkommen till konfigurationsfasen av [migreringen från Symantec till Defender för Slutpunkt](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)**. Den här fasen omfattar följande steg:
 
-## <a name="enable-or-reinstall-microsoft-defender-antivirus-for-certain-versions-of-windows"></a>Aktivera eller installera Microsoft Defender Antivirus (för vissa versioner av Windows)
+1. [Installera om/Microsoft Defender Antivirus dina slutpunkter](#reinstallenable-microsoft-defender-antivirus-on-your-endpoints).
+
+2. [Konfigurera Defender för Slutpunkt](#configure-defender-for-endpoint).
+
+3. [Lägg till Microsoft Defender för Endpoint i undantagslistan för Symantec.](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-symantec)
+
+4. [Lägg till Symantec i undantagslistan för Microsoft Defender Antivirus](#add-symantec-to-the-exclusion-list-for-microsoft-defender-antivirus).
+
+5. [Konfigurera enhetsgrupper, enhetssamlingar och organisationsenheter.](#set-up-your-device-groups-device-collections-and-organizational-units)
+
+6. [Konfigurera program mot skadlig programvara och realtidsskydd](#configure-antimalware-policies-and-real-time-protection). 
+
+## <a name="reinstallenable-microsoft-defender-antivirus-on-your-endpoints"></a>Installera om/Microsoft Defender Antivirus på slutpunkterna
+
+På vissa versioner av Windows har Microsoft Defender Antivirus troligen avinstallerats eller inaktiverats när lösningen som inte är en Microsoft antivirus/antimalware-lösning har installerats. Mer information finns i [Microsoft Defender Antivirus kompatibilitet](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility). 
+
+På Windows-klienter inaktiveras Microsoft Defender Antivirus automatiskt när en antivirus-/antimalware-lösning som inte är en Microsoft-lösning har installerats till Defender för slutpunkt. När klientslutpunkterna introduceras till Defender för Slutpunkt hamnar Microsoft Defender Antivirus i passiv form tills antiviruslösningen som inte är microsoft avinstalleras. Microsoft Defender Antivirus vara installerat, men är sannolikt inaktiverat vid det här läget av migreringen. Om Microsoft Defender Antivirus inte har avinstallerats behöver du inte vidta någon åtgärd för dina Windows klienter.
+
+När Windows ett icke-Microsoft-antivirusprogram/-Microsoft Defender Antivirus program mot skadlig programvara på Windows av manuellt (om det inte avinstalleras). Följande uppgifter säkerställer att Microsoft Defender Antivirus installeras och ställs in som passivt läge på Windows Server.
+
+- Ställ in DisableAntiSpyware på False på Windows Server (endast om det behövs)
+
+- Installera Microsoft Defender Antivirus på Windows Server
+
+- Ställ Microsoft Defender Antivirus till passivt läge på Windows Server
+
+### <a name="set-disableantispyware-to-false-on-windows-server"></a>Ställ in DisableAntiSpyware på False på Windows Server
+
+Registernyckeln DisableAntiSpyware användes tidigare för att inaktivera Microsoft Defender Antivirus och distribuera en annan antivirusprodukt, Symantec. I allmänhet bör du inte ha den här registernyckeln på dina Windows och slutpunkter. Men om du har `DisableAntiSpyware` konfigurerat så här anger du värdet falskt:
+
+1. Öppna Registereditorn på Windows Server-enhet.
+
+2. Gå till `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` .
+
+3. Leta där efter en DWORD-post med namnet **DisableAntiSpyware.**
+
+   - Om du inte ser den posten är allt klart.
+   - Om du ser DisableAntiSpyware går du vidare till steg 4.
+
+4. Högerklicka på DisableAntiSpyware DWORD och välj sedan **Ändra**.
+
+5. Ställ in värdet på `0` . (Den här åtgärden anger värdet för registernyckeln till *falskt*.)
 
 > [!TIP]
-> Om du kör ett Windows 10 behöver du inte utföra den här uppgiften. Fortsätt till **[Aktivera Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus)**.
-
-I vissa versioner av Windows kan Microsoft Defender Antivirus har avinstallerats eller inaktiverats. Det beror Microsoft Defender Antivirus inaktivt eller passivt läge när du installerar ett antivirusprogram från tredje part, till exempel Symantec. Mer information finns [i Microsoft Defender Antivirus kompatibilitet](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility). 
-
-Nu när du flyttar från Symantec till Microsoft Defender för Endpoint måste du aktivera eller installera om Microsoft Defender Antivirus och ställa in det på passivt läge. 
+> Mer information om den här registernyckeln finns **[i DisableAntiSpyware.](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)**
 
 ### <a name="reinstall-microsoft-defender-antivirus-on-windows-server"></a>Installera Microsoft Defender Antivirus på Windows Server
 
@@ -64,36 +94,27 @@ Nu när du flyttar från Symantec till Microsoft Defender för Endpoint måste d
 > - Windows Server 2019
 > - Windows Server, version 1803 (endast kärnläge)
 > - Windows Server 2016
-> 
-> Microsoft Defender Antivirus är inbyggd i Windows 10 men kan vara inaktiverat. I så fall fortsätter du till [Aktivera Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
 
 1. Som lokal administratör på slutpunkten eller enheten öppnar du Windows PowerShell.
 
-1. Kör följande PowerShell-cmdlets:<br/>
-   `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <br/>
+1. Kör följande PowerShell-cmdlets:
+
+   `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` 
+   
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`
 
     > [!NOTE]
     > När du använder DISM-kommandot i en aktivitetssekvens som kör PS krävs cmd.exe sökväg.
-    > Exempel:<br/>
+    > Exempel:
+    >
     > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<br/>
+    >
     > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
 
 3. Kontrollera att Microsoft Defender Antivirus är igång med följande PowerShell-cmdlet: <br/>
    `Get-Service -Name windefend`
 
-#### <a name="are-you-using-windows-server-2016"></a>Använder du Windows Server 2016?
-
-Om du använder en Windows Server 2016 och har problem med att Microsoft Defender Antivirus kan du använda följande PowerShell-cmdlet:
-
-`mpcmdrun -wdenable`
-
-> [!TIP]
-> Behöver du fortfarande hjälp? Se [Microsoft Defender Antivirus på Windows Server 2016 och 2019.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)
-
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>Ställ Microsoft Defender Antivirus till passivt läge på Windows Server
-
-Eftersom Symantec fortfarande används i organisationen måste du ställa Microsoft Defender Antivirus in passivt läge. På så sätt kan Symantec och Microsoft Defender Antivirus köras sida vid sida tills du har slutfört introduktionen till Microsoft Defender för Endpoint.
 
 1. Öppna Registereditorn och gå till <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
@@ -107,56 +128,52 @@ Eftersom Symantec fortfarande används i organisationen måste du ställa Micros
 >- [Grupprincipinställning](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn581922(v=ws.11))
 >- [Verktyget Lokalt grupprincipobjekt](/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool)
 >- [Ett paket i Konfigurationshanteraren](/mem/configmgr/apps/deploy-use/packages-and-programs)
+>
+> Efter introduktionen till Defender för Slutpunkt kan du behöva Microsoft Defender Antivirus passivt läge på Windows Server.
 
-## <a name="enable-microsoft-defender-antivirus"></a>Aktivera Microsoft Defender Antivirus
+### <a name="are-you-using-windows-server-2016"></a>Använder du Windows Server 2016?
 
-Eftersom din organisation har använt Symantec som primär antiviruslösning är Microsoft Defender Antivirus troligen inaktiverad på organisationens Windows enheter. Det här steget i migreringsprocessen omfattar att aktivera Microsoft Defender Antivirus. 
+Om du har slutpunkter som kör Windows Server 2016 kan du inte köra Microsoft Defender Antivirus tillsammans med en lösning som inte är en Antivirus-/antimalware-lösning från Microsoft. Microsoft Defender Antivirus kan inte köras i passiv form på Windows Server 2016. I så fall måste du avinstallera lösningen som inte är en Microsoft-antivirus-/antimalware-lösning och installera/aktivera Microsoft Defender Antivirus stället. Mer information finns i [Kompatibilitet för antiviruslösningar med Defender för slutpunkt.](microsoft-defender-antivirus-compatibility.md)
 
-Om du Microsoft Defender Antivirus en app rekommenderar vi att du använder Intune. Du kan däremot välja någon av de metoder som listas i följande tabell:
+Om du använder en Windows Server 2016 och har problem med att Microsoft Defender Antivirus kan du använda följande PowerShell-cmdlet:
 
-|Metod  |Vad kan jag göra?  |
+`mpcmdrun -wdenable`
+
+Mer information finns i [Microsoft Defender Antivirus på Windows Server](microsoft-defender-antivirus-on-windows-server.md).
+
+## <a name="configure-defender-for-endpoint"></a>Konfigurera Defender för slutpunkt
+
+Det här steget i migreringsprocessen omfattar att konfigurera Microsoft Defender Antivirus för slutpunkterna. Vi rekommenderar att du använder Intune. du kan däremot välja någon av de metoder som listas i följande tabell:
+
+|Metod  |Lämplig åtgärd  |
 |---------|---------|
-|[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/>**OBS!** Intune är nu Microsoft Endpoint Manager. |1. Gå till [Microsoft Endpoint Manager och](https://go.microsoft.com/fwlink/?linkid=2109431) logga in.<p>2. Välj  >  **Konfigurationsprofiler för** enheter och välj sedan den profiltyp du vill konfigurera. Om du ännu inte  har skapat en profiltyp för enhetsbegränsningar, eller om du vill skapa en ny, går du till Konfigurera inställningar för enhetsbegränsning [i Microsoft Intune](/intune/device-restrictions-configure).<p>3. Välj **Egenskaper** och välj sedan **Konfigurationsinställningar: Redigera**.<p>4. Utöka **Microsoft Defender Antivirus**. <p>5. Aktivera **moln levererat skydd.**<p>6. I **listrutan Fråga användarna innan exempel skickas** väljer du Skicka alla exempel **automatiskt.**<p>7. I **listrutan Identifiera potentiellt oönskade program** väljer du **Aktivera** eller **Granska**.<p>8. Välj **Granska + spara** och välj sedan **Spara.**<br/>Mer information om Intune-enhetsprofiler, bland annat hur du skapar och konfigurerar deras inställningar, finns i Vad [är Microsoft Intune enhetsprofiler?](/intune/device-profiles).|
+|[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/>**OBS!** Intune är nu en del av Microsoft Endpoint Manager. |1. Gå till [Microsoft Endpoint Manager och](https://go.microsoft.com/fwlink/?linkid=2109431) logga in.<p>2. Välj  >  **Konfigurationsprofiler för** enheter och välj sedan den profiltyp du vill konfigurera. Om du ännu inte  har skapat en profiltyp för enhetsbegränsningar, eller om du vill skapa en ny, går du till Konfigurera inställningar för enhetsbegränsning [i Microsoft Intune](/intune/device-restrictions-configure).<p>3. Välj **Egenskaper** och välj sedan **Konfigurationsinställningar: Redigera**.<p>4. Utöka **Microsoft Defender Antivirus**. <p>5. Aktivera **moln levererat skydd.**<p>6. I **listrutan Fråga användarna innan exempel skickas** väljer du Skicka alla exempel **automatiskt.**<p>7. I **listrutan Identifiera potentiellt oönskade program** väljer du **Aktivera** eller **Granska**.<p>8. Välj **Granska + spara** och välj sedan **Spara.**<br/>Mer information om Intune-enhetsprofiler, bland annat hur du skapar och konfigurerar deras inställningar, finns i Vad [är Microsoft Intune enhetsprofiler?](/intune/device-profiles).|
 |Kontrollpanelen i Windows     |Följ instruktionerna här: [Aktivera Microsoft Defender Antivirus](/mem/intune/user-help/turn-on-defender-windows). <br/>**OBS!** I vissa versioner *Windows Defender Antivirus* inte *Microsoft Defender Antivirus* visas i Windows.        |
 |[Avancerad grupprinciphantering](/microsoft-desktop-optimization-pack/agpm/) <br/>eller<br/>[Konsolen grupprinciphantering](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  |1. Gå till `Computer configuration > Administrative templates > Windows components > Microsoft Defender Antivirus` . <p>2. Leta efter en princip med **namnet Inaktivera Microsoft Defender Antivirus**.<p>3. Välj **Redigera principinställning** och kontrollera att principen är inaktiverad. Det här gör att Microsoft Defender Antivirus. <p>**OBS!** I vissa versioner *Windows Defender Antivirus* inte *Microsoft Defender Antivirus* visas i Windows. |
 
-### <a name="verify-that-microsoft-defender-antivirus-is-in-passive-mode"></a>Kontrollera att Microsoft Defender Antivirus är i passivt läge
-
-Microsoft Defender Antivirus kan köras tillsammans med Symantec om du ställer Microsoft Defender Antivirus till passivt läge. Du kan använda kommandotolken eller PowerShell för att utföra den här uppgiften enligt följande tabell:
-
-|Metod  |Vad kan jag göra?  |
-|---------|---------|
-|Kommandotolken     |1. På en Windows enhet öppnar du Kommandotolken som administratör. <p>2. Skriv `sc query windefend` och tryck sedan på Retur.<p>3. Granska resultaten för att bekräfta att Microsoft Defender Antivirus i passiv form.         |
-|PowerShell     |1. På en Windows enhet öppnar du Windows PowerShell som administratör.<p>2. Kör [cmdleten Get-MpComputerStatus.](/powershell/module/defender/Get-MpComputerStatus)<p>3. I resultatlistan letar du efter antingen **AMRunningMode: Passivt läge** eller **AMRunningMode: SxS-passivt läge.**|
-
-> [!NOTE]
-> I vissa *versioner Windows Defender Antivirus* inte *Microsoft Defender Antivirus* visas i Windows.
-
-## <a name="get-updates-for-microsoft-defender-antivirus"></a>Hämta uppdateringar för Microsoft Defender Antivirus
-
-Att hålla Microsoft Defender Antivirus uppdaterad är viktigt för att säkerställa att dina enheter har den senaste tekniken och funktionerna som behövs för att skydda mot nya tekniker för skadlig programvara och attack, även om Microsoft Defender Antivirus körs i [passiv form.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
-
-Det finns två typer av uppdateringar som är relaterade till Microsoft Defender Antivirus uppdateringar:
-- Säkerhetsintelligensuppdateringar
-- Produktuppdateringar
-
-Följ linjerna i Hantera uppdateringar i Microsoft Defender Antivirus [och tillämpa baslinjer](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)för att få uppdateringarna.
-
 ## <a name="add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-symantec"></a>Lägga till Microsoft Defender för Slutpunkt i undantagslistan för Symantec
 
-Det här steget i installationen omfattar att lägga till Microsoft Defender för Endpoint i undantagslistan för Symantec och andra säkerhetsprodukter som din organisation använder. Specifika undantag att konfigurera beror på vilken version av Windows dina slutpunkter eller enheter körs och visas i följande tabell:
+Det här steget i installationen omfattar att lägga till Defender för Endpoint i undantagslistan för Symantec och andra säkerhetsprodukter som din organisation använder. Specifika undantag att konfigurera beror på vilken version av Windows dina slutpunkter eller enheter körs och visas i följande tabell:
 
 |OS |Undantag |
 |--|--|
-|- Windows 10 version [1803 eller senare](/windows/release-health/status-windows-10-1803) (se Windows 10 [versionsinformation](/windows/release-health/release-information))<br/>- Windows 10, version 1703 eller 1709 med [KB4493441](https://support.microsoft.com/help/4493441) installerat <br/>- [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows Server, version 1803](/windows-server/get-started/whats-new-in-windows-server-1803) |`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<p>  |
-|- [Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p>- [Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>- [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<p>- [Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>- [Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<p>**Obs!** Där övervakningsvärden för tillfälliga filer 6\45 kan vara olika numrerade undermappar.<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
+| Windows 10 version [1803 eller](/windows/release-health/status-windows-10-1803) senare (se Windows 10 [versionsinformation)](/windows/release-health/release-information)<p> Windows 10, version 1703 eller 1709 med [KB4493441](https://support.microsoft.com/help/4493441) installerat <p> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p> [Windows Server, version 1803](/windows-server/get-started/whats-new-in-windows-server-1803) |`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<p>  |
+| [Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p> [Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p> [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<p> [Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p> [Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<p>**Obs!** Där övervakningsvärden för tillfälliga filer 6\45 kan vara olika numrerade undermappar.<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
 
 ## <a name="add-symantec-to-the-exclusion-list-for-microsoft-defender-antivirus"></a>Lägg till Symantec i undantagslistan för Microsoft Defender Antivirus
 
-I det här steget i installationsprocessen lägger du till Symantec och dina andra säkerhetslösningar i Microsoft Defender Antivirus för företag. 
+I det här steget i installationsprocessen lägger du till din befintliga lösning i Microsoft Defender Antivirus för uteslutning. Du kan välja mellan flera metoder för att lägga till Microsoft Defender Antivirus undantag, som anges i följande tabell:
 
 > [!NOTE]
 > Information om vilka processer och tjänster som ska uteslutas finns i Broadcoms processer och tjänster som används [av Endpoint Protection 14.](https://knowledge.broadcom.com/external/article/170706/processes-and-services-used-by-endpoint.html)
+
+|Metod | Lämplig åtgärd|
+|--|--|
+|[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/>**OBS!** Intune är nu en del av Microsoft Endpoint Manager. |1. Gå till [Microsoft Endpoint Manager och](https://go.microsoft.com/fwlink/?linkid=2109431) logga in.<p>2. Välj  >  **Konfigurationsprofiler för** enheter och välj sedan den profil som du vill konfigurera.<p>3. Under **Hantera** väljer du **Egenskaper**. <p>4. Välj **Konfigurationsinställningar: Redigera**.<p>5. Visa **Microsoft Defender Antivirus** och expandera **Microsoft Defender Antivirus Undantag**.<p>6. Ange de filer och mappar, tillägg och processer som ska undantas från Microsoft Defender Antivirus genomsökningar. Information finns i [Microsoft Defender Antivirus undantag](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions).<p>7. Välj **Granska + Spara** och välj sedan **Spara**.  |
+|[Microsoft Endpoint Configuration Manager](/mem/configmgr/) |1. Med hjälp av [konfigurationshanterarens](/mem/configmgr/core/servers/manage/admin-console)konsol går du till Tillgångar och efterlevnad Endpoint Protection Principer för program mot skadlig programvara och väljer sedan den princip som du vill  >    >  ändra. <p>2. Ange undantagsinställningar för filer och mappar, tillägg och processer som ska undantas från Microsoft Defender Antivirus genomsökningar. |
+|[Grupprincipobjekt](/previous-versions/windows/desktop/Policy/group-policy-objects) | 1. Öppna konsolen Grupprinciphantering på [](https://technet.microsoft.com/library/cc731212.aspx)datorn för grupprinciphantering, högerklicka på det grupprincipobjekt som du vill konfigurera och välj sedan **Redigera.**<p>2. I **redigeraren för grupprinciphantering** går du till **Datorkonfiguration** och väljer **Administrativa mallar**.<p>3. Expandera trädet för **att Windows komponenter > Microsoft Defender Antivirus > Undantag**.<br/>**OBS!** I vissa versioner *Windows Defender Antivirus* inte *Microsoft Defender Antivirus* visas i Windows.<p>4. Dubbelklicka på inställningen **Undantag för sökväg** och lägg till undantagen.<br/>- Ställ in alternativet som **Aktiverat.**<br/>- Under **avsnittet Alternativ** väljer du **Visa...**.<br/>- Ange varje mapp på en egen rad under **kolumnen Värdenamn.**<br/>– Om du anger en fil anger du en fullständigt kvalificerad sökväg till filen, inklusive enhetsbeteckningen, mappsökvägen, filnamn och filnamnstillägg. Ange **0** i **kolumnen** Värde.<p>5. Välj **OK.**<p>6. Dubbelklicka på inställningen **undantag för filnamnstillägg** och lägg till undantagen.<br/>- Ställ in alternativet som **Aktiverat.**<br/>- Under **avsnittet Alternativ** väljer du **Visa...**.<br/>– Ange varje filnamnstillägg på en egen rad under **kolumnen Värdenamn.**<br/>- Ange **0** i **kolumnen** Värde.<p>7. Välj **OK.** |
+|Lokalt grupprincipobjekt |1. Öppna redigeraren för lokala grupprinciper på slutpunkten eller enheten. <p>2. Gå till **Administrativa mallar**  >  **för**  >  **datorkonfiguration Windows komponenter**  >  **Microsoft Defender Antivirus**  >  **Undantag**. <br/>**OBS!** I vissa versioner *Windows Defender Antivirus* inte *Microsoft Defender Antivirus* visas i Windows.<p>3. Ange undantag för sökväg och process. |
+|Registernyckel |1. Exportera följande registernyckel: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions` .<p>2. Importera registernyckeln. Här är två exempel:<br/>- Lokal sökväg: `regedit.exe /s c:\temp\ MDAV_Exclusion.reg` <br/>- Nätverksresurs: `regedit.exe /s \\FileServer\ShareName\MDAV_Exclusion.reg` |
 
 När du lägger [till undantag Microsoft Defender Antivirus genomsökningar](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)bör du lägga till undantag för sökvägar och processer. Tänk på följande:
 - Undantag från sökvägar exkluderar specifika filer och all åtkomst till dessa filer.
@@ -164,21 +181,13 @@ När du lägger [till undantag Microsoft Defender Antivirus genomsökningar](/wi
 - Om du visar varje körbar (.exe) som både ett sökvägs- och ett processkludering utesluts processen och det som berörs.
 - Lista undantag från processen med hjälp av deras fullständiga sökväg och inte efter namn. (Metoden med endast namn är mindre säker.)
 
-Du kan välja mellan flera metoder för att lägga till Microsoft Defender Antivirus undantag, som anges i följande tabell:
-
-|Metod | Vad kan jag göra?|
-|--|--|
-|[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/>**OBS!** Intune är nu Microsoft Endpoint Manager. |1. Gå till [Microsoft Endpoint Manager och](https://go.microsoft.com/fwlink/?linkid=2109431) logga in.<p>2. Välj  >  **Konfigurationsprofiler för** enheter och välj sedan den profil som du vill konfigurera.<p>3. Under **Hantera** väljer du **Egenskaper**. <p>4. Välj **Konfigurationsinställningar: Redigera**.<p>5. Visa **Microsoft Defender Antivirus** och expandera **Microsoft Defender Antivirus Undantag**.<p>6. Ange de filer och mappar, tillägg och processer som ska undantas från Microsoft Defender Antivirus genomsökningar. Information finns i [Microsoft Defender Antivirus undantag](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions).<p>7. Välj **Granska + Spara** och välj sedan **Spara**.  |
-|[Microsoft Endpoint Configuration Manager](/mem/configmgr/) |1. Med hjälp av [konfigurationshanterarens](/mem/configmgr/core/servers/manage/admin-console)konsol går du till Tillgångar och efterlevnad Endpoint Protection Principer för program mot skadlig programvara och väljer sedan den princip som du vill  >    >  ändra. <p>2. Ange undantagsinställningar för filer och mappar, tillägg och processer som ska undantas från Microsoft Defender Antivirus genomsökningar. |
-|[Grupprincipobjekt](/previous-versions/windows/desktop/Policy/group-policy-objects) | 1. Öppna konsolen Grupprinciphantering på [](https://technet.microsoft.com/library/cc731212.aspx)datorn för grupprinciphantering, högerklicka på det grupprincipobjekt du vill konfigurera och klicka på **Redigera.**<p>2. I **redigeraren för grupprinciphantering går** du till **Datorkonfiguration och** klickar på Administrativa **mallar**.<p>3. Expandera trädet för **att Windows komponenter > Microsoft Defender Antivirus > Undantag**.<br/>**OBS!** I vissa versioner *Windows Defender Antivirus* inte *Microsoft Defender Antivirus* visas i Windows.<p>4. Dubbelklicka på inställningen **Undantag för sökväg** och lägg till undantagen.<p>- Ställ in alternativet som **Aktiverat.**<p>- Under avsnittet **Alternativ** klickar du på **Visa...**.<p>- Ange varje mapp på en egen rad under **kolumnen Värdenamn.**<p>– Om du anger en fil anger du en fullständigt kvalificerad sökväg till filen, inklusive enhetsbeteckningen, mappsökvägen, filnamn och filnamnstillägg. Ange **0** i **kolumnen** Värde.<p>5. Klicka på **OK.**<p>6. Dubbelklicka på inställningen **undantag för filnamnstillägg** och lägg till undantagen.<p>- Ställ in alternativet som **Aktiverat.**<p>- Under avsnittet **Alternativ** klickar du på **Visa...**.<p>– Ange varje filnamnstillägg på en egen rad under **kolumnen Värdenamn.**  Ange **0** i **kolumnen** Värde.<br/>7. Klicka på **OK.** |
-|Lokalt grupprincipobjekt |1. Öppna redigeraren för lokala grupprinciper på slutpunkten eller enheten. <p>2. Gå till **Administrativa mallar**  >  **för**  >  **datorkonfiguration Windows komponenter**  >  **Microsoft Defender Antivirus**  >  **Undantag**. <br/>**OBS!** I vissa versioner *Windows Defender Antivirus* inte *Microsoft Defender Antivirus* visas i Windows.<p>3. Ange undantag för sökväg och process. |
-|Registernyckel |1. Exportera följande registernyckel: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions` .<p>2. Importera registernyckeln. Här är två exempel:<br/>- Lokal sökväg: `regedit.exe /s c:\temp\ MDAV_Exclusion.reg` <br/>- Nätverksresurs: `regedit.exe /s \\FileServer\ShareName\MDAV_Exclusion.reg` |
-
 ## <a name="set-up-your-device-groups-device-collections-and-organizational-units"></a>Konfigurera enhetsgrupper, enhetssamlingar och organisationsenheter
 
-| Samlingstyp | Vad kan jag göra? |
+Enhetsgrupper, enhetssamlingar och organisationsenheter gör det möjligt för säkerhetsteamet att hantera och tilldela säkerhetsprinciper effektivt och effektivt. I följande tabell beskrivs var och en av dessa grupper och hur du konfigurerar dem. Din organisation kanske inte använder alla tre samlingstyperna.
+
+| Samlingstyp | Lämplig åtgärd |
 |--|--|
-|[Enhetsgrupper](/microsoft-365/security/defender-endpoint/machine-groups) (kallades tidigare datorgrupper) gör det möjligt för säkerhetsgruppen att konfigurera säkerhetsfunktioner, till exempel automatisk undersökning och åtgärd.<br/> Enhetsgrupper är också användbara för att tilldela åtkomst till dessa enheter så att ditt säkerhetsteam kan vidta åtgärder om det behövs. <br/>Enhetsgrupper skapas i Microsoft Defender Säkerhetscenter. |1. Gå till Microsoft Defender Säkerhetscenter ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ).<p>2. I navigeringsfönstret till vänster väljer du **välj** Inställningar  >  **i Grupper för**  >  **enheter med behörigheter.**  <p>3. Välj **+ Lägg till enhetsgrupp**.<p>4. Ange ett namn och en beskrivning för enhetsgruppen.<p>5. Välj **ett alternativ i** listan Automatiseringsnivå. (Vi rekommenderar **Fullständigt – åtgärda hot automatiskt**.) Mer information om de olika automationsnivåerna finns [i Hur hot åtgärdas.](/microsoft-365/security/defender-endpoint/automated-investigations#how-threats-are-remediated)<p>6. Ange villkor för en matchande regel för att avgöra vilka enheter som tillhör enhetsgruppen. Du kan till exempel välja en domän, OS-versioner eller till och med använda [enhetstaggar.](/microsoft-365/security/defender-endpoint/machine-tags)<br/> <br/>7. På **fliken Användaråtkomst** anger du roller som ska ha åtkomst till de enheter som ingår i enhetsgruppen. <p>8. Välj **Klar**. |
+|[Enhetsgrupper](/microsoft-365/security/defender-endpoint/machine-groups) (kallades tidigare datorgrupper) gör det möjligt för säkerhetsgruppen att konfigurera säkerhetsfunktioner, till exempel automatisk undersökning och åtgärd.<br/> Enhetsgrupper är också användbara för att tilldela åtkomst till dessa enheter så att ditt säkerhetsteam kan vidta åtgärder om det behövs. <br/>Enhetsgrupper skapas i Microsoft Defender Säkerhetscenter. |1. Gå till Microsoft Defender Säkerhetscenter ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ).<p>2. I navigeringsfönstret till vänster väljer du **välj** Inställningar  >  **i Grupper för**  >  **enheter med behörigheter.**  <p>3. Välj **+ Lägg till enhetsgrupp**.<p>4. Ange ett namn och en beskrivning för enhetsgruppen.<p>5. Välj **ett alternativ i** listan Automatiseringsnivå. (Vi rekommenderar **Fullständigt – åtgärda hot automatiskt**.) Mer information om de olika automationsnivåerna finns [i Hur hot åtgärdas.](/microsoft-365/security/defender-endpoint/automated-investigations#how-threats-are-remediated)<p>6. Ange villkor för en matchande regel för att avgöra vilka enheter som tillhör enhetsgruppen. Du kan till exempel välja en domän, OS-versioner eller till och med använda [enhetstaggar.](/microsoft-365/security/defender-endpoint/machine-tags)<p>7. På **fliken Användaråtkomst** anger du roller som ska ha åtkomst till de enheter som ingår i enhetsgruppen. <p>8. Välj **Klar**. |
 |[Med hjälp av](/mem/configmgr/core/clients/manage/collections/introduction-to-collections) enhetssamlingar kan ditt säkerhetsteam hantera program, distribuera efterlevnadsinställningar eller installera programvaruuppdateringar på enheterna i organisationen. <br/>Enhetssamlingar skapas med [konfigurationshanteraren.](/mem/configmgr/) |Följ stegen i [Skapa en samling.](/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_create) |
 |[Med organisationsenheter](/azure/active-directory-domain-services/create-ou) kan du logiskt gruppera objekt som användarkonton, tjänstkonton eller datorkonton. Du kan sedan tilldela administratörer till specifika organisationsenheter och tillämpa grupprinciper för att tillämpa riktade konfigurationsinställningar.<br/> Organisationsenheter definieras i [Azure Active Directory Domain Services.](/azure/active-directory-domain-services) | Följ stegen i Skapa [en organisationsenhet i en domän som hanteras Azure Active Directory Domain Services.](/azure/active-directory-domain-services/create-ou) |
 
@@ -186,7 +195,7 @@ Du kan välja mellan flera metoder för att lägga till Microsoft Defender Antiv
 
 Med Hjälp av Konfigurationshanteraren och din enhetssamling konfigurerar du principer för program mot skadlig programvara.
 
-- Se [Skapa och distribuera program mot skadlig programvara för Endpoint Protection i Konfigurationshanteraren.](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies)
+- Se [Skapa och distribuera program mot skadlig programvara för Endpoint Protection i Configuration Manager.](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies)
 
 - När du skapar och konfigurerar principer för program [](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) mot skadlig programvara bör du granska skyddsinställningarna i realtid och aktivera [blockering vid första synen.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
 
@@ -195,5 +204,5 @@ Med Hjälp av Konfigurationshanteraren och din enhetssamling konfigurerar du pri
 
 ## <a name="next-step"></a>Nästa steg
 
-**Grattis!** Du har slutfört konfigurationsfasen av [migreringen från Symantec till Microsoft Defender för Slutpunkt](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)!
-- [Gå till fas 3: Gå in i Microsoft Defender för Slutpunkt](symantec-to-microsoft-defender-atp-onboard.md)
+**Grattis!** Du har slutfört konfigurationsfasen av [migreringen från Symantec till Defender för Slutpunkt](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)!
+- [Gå vidare till fas 3: Onboard to Defender för Endpoint](symantec-to-microsoft-defender-atp-onboard.md)

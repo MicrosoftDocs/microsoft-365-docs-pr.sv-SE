@@ -1,5 +1,5 @@
 ---
-title: Styra åtkomst i Microsoft 365-grupper, Teams och SharePoint
+title: Reglerar åtkomst i Microsoft 365 grupper, Teams och SharePoint
 ms.reviewer: ''
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,19 +14,20 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Läs mer om hur du styr åtkomst i Microsoft 365-grupper, Teams och SharePoint.
-ms.openlocfilehash: 44b90e461c81875fa5ccf728c890d5eaebf7d613
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+recommendations: false
+description: Läs mer om hur du styr åtkomst Microsoft 365 grupper, Teams och SharePoint.
+ms.openlocfilehash: 3e0485813a264fe9042e0de9596ba07e50ef72a3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922286"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538153"
 ---
-# <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Styra åtkomst i Microsoft 365-grupper, Teams och SharePoint
+# <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Reglerar åtkomst i Microsoft 365 grupper, Teams och SharePoint
 
 Det finns många kontroller som gör att du kan styra hur personer får åtkomst till resurser i grupper, team och SharePoint. Gå igenom de här alternativen och fundera på hur de kan mappa till dina affärsbehov, dina datas känslighet och vilka personer som användarna behöver samarbeta med.
 
-I följande tabell finns en snabbreferens för de åtkomstkontroller som är tillgängliga i Microsoft 365. Ytterligare information ges i följande avsnitt.
+Följande tabell innehåller en snabbreferens för de åtkomstkontroller som är tillgängliga i Microsoft 365. Ytterligare information ges i följande avsnitt.
 
 |Kategori|Beskrivning|Referens|
 |:-------|:----------|:--------|
@@ -36,23 +37,23 @@ I följande tabell finns en snabbreferens för de åtkomstkontroller som är til
 ||Styr vem som kan dela filer, mappar och webbplatser.|[Konfigurera och hantera åtkomstförfrågningar](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)|
 |Villkorlig åtkomst|||
 ||Multifaktorautentisering|[Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-howitworks)|
-||Styr enhetsåtkomsten baserat på gruppens, gruppens eller webbplatsens känslighet.|[Använda känslighetsetiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](../compliance/sensitivity-labels-teams-groups-sites.md)|
-||Begränsa webbplatsåtkomsten för ohanterade enheter.|[Kontrollera SharePoint-åtkomst från ohanterade enheter](/sharepoint/control-access-from-unmanaged-devices)|
+||Styr enhetsåtkomsten baserat på gruppens, gruppens eller webbplatsens känslighet.|[Använd känslighetsetiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](../compliance/sensitivity-labels-teams-groups-sites.md)|
+||Begränsa webbplatsåtkomsten för ohanterade enheter.|[Styra SharePoint åtkomst från ohanterade enheter](/sharepoint/control-access-from-unmanaged-devices)|
 ||Kontrollera webbplatsåtkomst baserat på plats|[Hantera åtkomst till SharePoint och OneDrive data baserat på nätverksplats](/sharepoint/control-access-based-on-network-location)|
 |Gäståtkomst|||
-||Tillåt eller blockera SharePoint-delning från angivna domäner.|[Begränsa delning av SharePoint- och OneDrive-innehåll efter domän](/sharepoint/restricted-domains-sharing)|
+||Tillåt eller blockera SharePoint delning från angivna domäner.|[Begränsa delning av SharePoint och OneDrive innehåll per domän](/sharepoint/restricted-domains-sharing)|
 ||Tillåta eller blockera team- eller gruppmedlemskap från angivna domäner.|[Tillåta eller blockera inbjudningar till B2B-användare från specifika organisationer](/azure/active-directory/b2b/allow-deny-list)|
 ||Förhindra anonym delning.|[Inaktivera Alla-länkar](./share-limit-accidental-exposure.md#turn-off-anyone-links)|
 ||Kontrollera behörigheterna för anonyma åtkomstlänkar.|[Ange länkbehörigheter för länkar för alla](./best-practices-anonymous-sharing.md#set-link-permissions)|
 ||Kontrollera förfallotiden för anonyma delningslänkar.|[Ange ett utgångsdatum för Alla-länkar](./best-practices-anonymous-sharing.md#set-an-expiration-date-for-anyone-links)|
 ||Styr delningslänken som visas för användarna som standard.|[Ändra standardlänktyp för en webbplats](/sharepoint/change-default-sharing-link)|
 ||Begränsa extern delning till specifika personer.|[Begränsa extern delning till angivna säkerhetsgrupper](./share-limit-accidental-exposure.md#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)|
-||Kontrollera gäståtkomst till en grupp, grupp eller webbplats baserat på informationskänslighet.|[Använda känslighetsetiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](../compliance/sensitivity-labels-teams-groups-sites.md)|
+||Kontrollera gäståtkomst till en grupp, grupp eller webbplats baserat på informationskänslighet.|[Använd känslighetsetiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](../compliance/sensitivity-labels-teams-groups-sites.md)|
 ||Inaktivera delningsalternativ.|[Begränsa delning i Microsoft 365](./microsoft-365-limit-sharing.md)|
 |Användarhantering|||
 ||Granska grupp- och gruppmedlemskap regelbundet.|[Vad är azure AD-åtkomstgranskningar?](/azure/active-directory/governance/access-reviews-overview)|
 ||Automatisera åtkomsthanteringen för grupper och team.|[Vad är hantering av Azure AD-berättigande?](/azure/active-directory/governance/entitlement-management-overview)|
-||Tillåta eller blockera personer från att skapa privata kanaler i Teams.|[Hantera livscykeln för privata kanaler i Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)|
+||Tillåt eller blockera personer från att skapa privata kanaler i Teams.|[Hantera livscykeln för privata kanaler i Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)|
 
 ## <a name="membership"></a>Medlemskap
 
@@ -64,7 +65,7 @@ Du kan hantera medlemskap i en grupp eller ett team dynamiskt baserat på vissa 
 
 - [Skapa eller uppdatera en dynamisk grupp i Azure Active Directory](/azure/active-directory/users-groups-roles/groups-create-rule)
 
-SharePoint-webbplatser ger möjlighet att lägga till ägare, medlemmar och besökare utanför grupp- eller teammedlemskap. Beroende på dina behov kan du begränsa vem som kan bjuda in personer till webbplatsen. Beroende på hur känslig informationen på en viss webbplats är kan du dessutom begränsa vem som kan dela filer och mappar. Dessa begränsningar konfigureras av gruppen, gruppen eller webbplatsägaren:
+SharePoint-webbplatser möjligheten att lägga till ägare, medlemmar och besökare utanför grupp- eller teammedlemskap. Beroende på dina behov kan du begränsa vem som kan bjuda in personer till webbplatsen. Beroende på hur känslig informationen på en viss webbplats är kan du dessutom begränsa vem som kan dela filer och mappar. Dessa begränsningar konfigureras av gruppen, gruppen eller webbplatsägaren:
 
 - [Konfigurera och hantera åtkomstförfrågningar](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)
 
@@ -77,7 +78,7 @@ Med Microsoft 365 kan du kräva multifaktorautentisering för både personer ino
 
 Om du har känslig information i vissa grupper och team kan du tillämpa principer för enhetshantering baserat på en grupps eller gruppens känslighetsetikett. Du kan blockera åtkomst helt från ohanterade enheter eller tillåta begränsad, endast webbåtkomst:
 
-- [Använda känslighetsetiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](../compliance/sensitivity-labels-teams-groups-sites.md)
+- [Använd känslighetsetiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](../compliance/sensitivity-labels-teams-groups-sites.md)
 
 I SharePoint kan du begränsa åtkomsten till webbplatser från angivna nätverksplatser.
 
@@ -88,20 +89,20 @@ Fler resurser:
 
 - [Planera en distribution av villkorsstyrd åtkomst](/azure/active-directory/conditional-access/plan-conditional-access)
 
-- [Översikt över Microsoft Intune](/mem/intune/fundamentals/what-is-intune)
+- [Microsoft Intune översikt](/mem/intune/fundamentals/what-is-intune)
 
-- [Kontrollera SharePoint-åtkomst från ohanterade enheter](/sharepoint/control-access-from-unmanaged-devices)
+- [Styra SharePoint åtkomst från ohanterade enheter](/sharepoint/control-access-from-unmanaged-devices)
 
 
 ## <a name="guest-access"></a>Gäståtkomst
 
-Du kan begränsa gäster baserat på domänen för deras e-postadress. SharePoint erbjuder inställningar för organisationsomfattande och webbplatsspecifika domänbegränsningar. Grupper och Teams använder listorna tillåt och nekade domäner i Azure AD. Se till att konfigurera båda inställningarna för att undvika oönskad delning och säkerställa en enhetlig användarupplevelse:
+Du kan begränsa gäster baserat på domänen för deras e-postadress. SharePoint erbjuder organisationsomfattande och webbplatsspecifika domänbegränsningsinställningar. Grupper och Teams använder listorna tillåt och nekade domäner i Azure AD. Se till att konfigurera båda inställningarna för att undvika oönskad delning och säkerställa en enhetlig användarupplevelse:
 
-- [Begränsa delning av SharePoint- och OneDrive-innehåll efter domän](/sharepoint/restricted-domains-sharing)
+- [Begränsa delning av SharePoint och OneDrive innehåll per domän](/sharepoint/restricted-domains-sharing)
 
 - [Tillåta eller blockera inbjudningar till B2B-användare från specifika organisationer](/azure/active-directory/b2b/allow-deny-list)
 
-Microsoft 365 tillåter anonym delning av filer och mappar med hjälp av *Alla* som delar länkar. *Alla* länkar kan vidarebefordras och alla som har länken kan komma åt det delade objektet. Beroende på dina datas känslighet kan  du överväga att styra hur Alla-länkar används – inklusive att inaktivera dem helt, begränsa länkbehörigheter till skrivskyddat eller ange en förfallotid för dem:
+Microsoft 365 tillåter anonym delning av filer och mappar med hjälp av *Alla som* delar länkar. *Alla* länkar kan vidarebefordras och alla som har länken kan komma åt det delade objektet. Beroende på dina datas känslighet kan  du överväga att styra hur Alla-länkar används – inklusive att inaktivera dem helt, begränsa länkbehörigheter till skrivskyddat eller ange en förfallotid för dem:
 
 - [Inaktivera Alla-länkar](./share-limit-accidental-exposure.md#turn-off-anyone-links)
 
@@ -117,15 +118,15 @@ Om din organisation har känsliga data som du behöver dela med gäster, men du 
 
 - [Begränsa extern delning till angivna säkerhetsgrupper](./share-limit-accidental-exposure.md#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)
 
-Grupper och Team har inställningar på organisationsnivå som tillåter eller nekar gäståtkomst. Du kan begränsa gäståtkomst till vissa team eller grupper genom att använda [Microsoft PowerShell,](per-group-guest-access.md)men vi rekommenderar att du gör det med hjälp av en känslighetsetikett. Med känslighetsetiketter kan du automatiskt tillåta eller neka gäståtkomst baserat på den etikett som används:
+Grupper och Teams har inställningar på organisationsnivå som tillåter eller nekar gäståtkomst. Du kan begränsa gäståtkomst till vissa team eller grupper genom att använda [Microsoft PowerShell,](per-group-guest-access.md)men vi rekommenderar att du gör det med hjälp av en känslighetsetikett. Med känslighetsetiketter kan du automatiskt tillåta eller neka gäståtkomst baserat på den etikett som används:
 
-- [Använda känslighetsetiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](../compliance/sensitivity-labels-teams-groups-sites.md)
+- [Använd känslighetsetiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](../compliance/sensitivity-labels-teams-groups-sites.md)
 
 I en miljö där du ofta bjuder in gäster till grupper och team kan du överväga att konfigurera regelbundna granskningar av gäståtkomst. Ägare kan uppmanas att granska gäster i sina grupper och team och godkänna eller neka åtkomst.
 
 - [Konfigurera granskning av gäståtkomst](/microsoft-365/solutions/create-secure-guest-sharing-environment#set-up-guest-access-reviews)
 
-I Microsoft 365 finns många olika sätt att dela information. Om du har känslig information och vill begränsa hur den delas kan du läsa alternativen för att begränsa delning:
+Microsoft 365 finns många olika sätt att dela information. Om du har känslig information och vill begränsa hur den delas kan du läsa alternativen för att begränsa delning:
 
 - [Begränsa delning i Microsoft 365](./microsoft-365-limit-sharing.md)
 
@@ -151,7 +152,7 @@ Många organisationer har företagssamarbeten med andra organisationer eller vik
 
 - [Vad är hantering av Azure AD-berättigande?](/azure/active-directory/governance/entitlement-management-overview)
 
-Med privata kanaler i Teams kan du tillåta begränsade konversationer och fildelning mellan en delmängd av teammedlemmarna. Beroende på dina specifika affärsbehov kanske du vill tillåta eller blockera den här funktionen.
+Privata kanaler i Teams tillåter begränsad konversation och fildelning mellan en delmängd teammedlemmar. Beroende på dina specifika affärsbehov kanske du vill tillåta eller blockera den här funktionen.
 
 - [Privata kanaler i Microsoft Teams](/MicrosoftTeams/private-channels)
 
@@ -159,7 +160,7 @@ Med privata kanaler i Teams kan du tillåta begränsade konversationer och filde
 
 Fler resurser:
 
-- [Identitetsstyrning för Azure Active Directory](/azure/active-directory/governance)
+- [Azure Active Directory Identitetsstyrning](/azure/active-directory/governance)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 

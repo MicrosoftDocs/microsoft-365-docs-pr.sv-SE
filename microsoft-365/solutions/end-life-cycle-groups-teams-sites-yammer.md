@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: Livscykelalternativ för grupper, team och Yammer.
-ms.openlocfilehash: 468f41df747b6cf12d3f6619d79cb97248eba1d1
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: fccdf838b7ebec6a1ab1fae2f709824bfbd3b6d1
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346432"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538837"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>Livscykelalternativ för grupper, team och Yammer
 
@@ -265,3 +266,7 @@ Konversationer kan flyttas till en Yammer grupp av alla användare, inte bara ä
 **Exportera nätverksdata**
 
 Yammer nätverksadministratörer [exporterar nätverksdata](/yammer/manage-security-and-compliance/export-yammer-enterprise-data). Om du gör det exporteras emellertid alla konversationer för hela nätverket. Den resulterande exporten innehåller grupp-ID. Det går att filtrera konversationer baserat på detta ID.
+
+## <a name="related-topics"></a>Relaterade ämnen
+
+[Ta bort en tidigare anställd och säkra data](/microsoft-365/admin/add-users/remove-former-employee)

@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: Läs mer om kompatibilitetsalternativ för Microsoft 365 grupper, Teams och SharePoint samarbete.
-ms.openlocfilehash: a9a94f0c1886ac5b60292f5f4d4b9b9d6d84380c
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 236b977b22066830e1b36bc87676fd5fa2c9d3f5
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241682"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538129"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Efterlevnadsalternativ för Microsoft 365 grupper, Teams och SharePoint samarbete
 
@@ -38,9 +39,9 @@ Följande tabell innehåller en snabbreferens för de efterlevnadskontroller som
 ||Klassificera känsligt innehåll automatiskt|[Använda en känslighetsetikett för innehåll automatiskt](../compliance/apply-sensitivity-label-automatically.md)|
 ||Kryptera känsligt innehåll|[Begränsa åtkomst till innehåll med hjälp av känslighetsetiketter för att tillämpa kryptering](../compliance/encryption-sensitivity-labels.md)|
 |Informationsskydd|||
-||Förhindra förlust av känslig information|[Mer information om skydd mot dataförlust](../compliance/dlp-learn-about-dlp.md)|
+||Förhindra förlust av känslig information|[Mer information om dataförlustskydd](../compliance/dlp-learn-about-dlp.md)|
 ||Skydda känslig information i chatten.|[Skydd mot dataförlust och Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
-||Definiera känslig information för din organisation|[Vanliga typer av känslig information](../compliance/sensitive-information-type-learn-about.md)|
+||Definiera känslig information för din organisation|[Anpassade typer av känslig information](../compliance/sensitive-information-type-learn-about.md)|
 |Användarsegmentering|||
 ||Begränsa kommunikationen mellan användarsegment|[Informationsbarriärer](../compliance/information-barriers.md)|
 |Datahem|||
@@ -88,14 +89,14 @@ Du kan använda känslighetsetiketter för att kryptera filer, så att bara de m
 
 Fler resurser:
 
-- [Lär dig mer om känslighetsetiketter](../compliance/sensitivity-labels.md)
+- [Mer information om känslighetsetiketter](../compliance/sensitivity-labels.md)
 
 
 ## <a name="information-protection"></a>Informationsskydd
 
 DLP-principer kan förhindra att känslig information oavsiktligt delas mellan olika SharePoint, Exchange och Teams. Du kan skapa principer som anger åtgärder som ska vidtas (t.ex. blockera åtkomst) baserat på en uppsättning regler.
 
-- [Mer information om skydd mot dataförlust](../compliance/dlp-learn-about-dlp.md)
+- [Mer information om dataförlustskydd](../compliance/dlp-learn-about-dlp.md)
 
 Med DLP i Teams kan du skydda känslig information i Teams och kanalmeddelanden genom att ta bort meddelanden som innehåller känslig information.
 
@@ -103,7 +104,7 @@ Med DLP i Teams kan du skydda känslig information i Teams och kanalmeddelanden 
 
 Om du har känslig information som är unik för din organisation, t.ex. projektkodsnamn, kan du skapa egna typer av känslig information och tillämpa dem på DLP-principer för att skydda innehåll i grupper, grupper och SharePoint.
 
-- [Vanliga typer av känslig information](../compliance/sensitive-information-type-learn-about.md)
+- [Anpassade typer av känslig information](../compliance/sensitive-information-type-learn-about.md)
 
 ## <a name="user-segmentation"></a>Användarsegmentering
 

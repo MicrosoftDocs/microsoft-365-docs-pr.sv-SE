@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1928e381e861f993d171462833b8807b69dea515
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: 0b816956442408c9a61f662827f1fd45d9b6511f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470682"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538861"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Få expertutbildning om avancerad sökning
 
@@ -50,7 +50,8 @@ Få mer expertutbildning med *L33TSP3AK:* Avancerad sökning i Microsoft 365 Def
 
 | Title | Beskrivning | Titta | Frågor | 
 |--|--|--|--|
-| Avsnitt 1  | I det här avsnittet får du lära dig olika metodtips för att köra avancerade sökfrågor. Bland ämnena som behandlas finns: hur du optimerar dina frågor, använder avancerad sökning för utpressningstrojaner, hanterar JSON som en dynamisk typ och arbetar med externa dataoperatorer. | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [Textfil](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.txt)
+| Avsnitt 1  | I det här avsnittet får du lära dig olika metodtips för att köra avancerade sökfrågor. Bland ämnena som behandlas finns: hur du optimerar dina frågor, använder avancerad sökning för utpressningstrojaner, hanterar JSON som en dynamisk typ och arbetar med externa dataoperatorer. | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [Textfil](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.txt) |
+| Avsnitt 2 | I det här avsnittet får du lära dig att undersöka och svara på misstänkta eller ovanliga inloggningsplatser och datainloggning via regler för vidarebefordran av inkorgen. Sebastien Molendijk, Senior Program Manager for Cloud Security CxE, delar med sig av hur du använder avancerad sökning för att undersöka flerstegsincidenter med Microsoft Cloud App Security data. | [YouTube](https://www.youtube.com/watch?v=QaUxdtNfbd8) (57:07) | [Textfil](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/MCAS%20-%20The%20Hunt.txt)
 
 
 ## <a name="how-to-use-the-csl-file"></a>Så här använder du CSL-filen

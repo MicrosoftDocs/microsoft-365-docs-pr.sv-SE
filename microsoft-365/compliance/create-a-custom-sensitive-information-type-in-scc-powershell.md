@@ -8,19 +8,19 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Lär dig hur du skapar och importerar en anpassad typ av känslig information för principer i efterlevnadscentret.
-ms.openlocfilehash: 18679e171fa704341094dee582124f36a950f8a5
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
-ms.translationtype: HT
+ms.openlocfilehash: 75e767b0ea5ebe4940af5ee0fbfa85f858f65e9c
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52162947"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538712"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Skapa en anpassad typ av känslig information med PowerShell
 
@@ -176,7 +176,7 @@ Gemensamt för alla mönster nedan är att de refererar till samma reguljära ut
   
 Om mönstret uppfylls returneras ett antal och konfidensnivån, som du kan använda i villkoren i din princip. När du lägger till ett villkor för att identifiera en typ av känslig information i en princip kan du redigera antalet och konfidensnivån på det sätt som visas här. Konfidensnivån (kallas även matchningsnoggrannhet) förklaras senare i det här avsnittet.
   
-![Alternativ för antal instanser och matchningsnoggrannhet](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+![Alternativ för antal instanser och matchningsnoggrannhet](../media/sit-confidence-level.png)
   
 När du skapar ett reguljärt uttryck finns det möjliga problem som du bör känna till. Om du till exempel skriver och laddar upp en regex som identifierar för mycket innehåll kan det påverka prestanda. Mer information om möjliga problem finns i avsnittet [Möjliga verifieringsproblem som du bör känna till](#potential-validation-issues-to-be-aware-of).
   
@@ -296,7 +296,7 @@ Ju mer bevis ett mönster kräver, desto större blir konfidensen att en faktisk
   
 Pattern-elementet har ett obligatoriskt confidenceLevel-attribut. Du kan tänka på värdet för confidenceLevel (ett heltal mellan 1 och 100) som ett unikt ID för varje mönster i en entitet – mönster i en entitet måste ha olika konfidensnivåer, som du tilldelar. Det exakta värdet för heltalet spelar ingen roll. Välj bara ett värde som är logiskt för ditt efterlevnadsteam. När du har laddat upp din anpassade typ av känslig information och sedan skapar en princip kan du referera till dessa konfidensnivåer i villkoren i den regel som du skapar.
   
-![XML-kod som visar Pattern-element med olika värden för attributet confidenceLevel](../media/301e0ba1-2deb-4add-977b-f6e9e18fba8b.png)
+![XML-kod som visar Pattern-element med olika värden för attributet confidenceLevel](../media/sit-xml-markedup-2.png)
   
 Utöver confidenceLevel för varje mönster har entiteten också ett recommendedConfidence-attribut. Det rekommenderade konfidensattributet kan ses som standardkonfidensnivå för regeln. Om du inte anger en konfidensnivå för en regel när du skapar regeln i en princip utförs matchningen av regeln baserat på den rekommenderade konfidensnivån för entiteten. Observera att attributet recommendedConfidence är obligatoriskt för varje entitets-ID i regelpaketet. Om det saknas kan du inte spara principer som använder typen av känslig information. 
   
