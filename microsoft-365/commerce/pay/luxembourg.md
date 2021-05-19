@@ -1,35 +1,36 @@
 ---
 title: Betalningsinformation för Luxemburg
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Lär dig vart du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 06c8b274b1058564d142b9cb08cee89cec00e9c2
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 6eb3f9db21299b5a763480e5c50a0999cb2925b7
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273374"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535488"
 ---
-# <a name="payment-information-for-luxembourg"></a><span data-ttu-id="a1bc0-103">Betalningsinformation för Luxemburg</span><span class="sxs-lookup"><span data-stu-id="a1bc0-103">Payment information for Luxembourg</span></span>
+# <a name="payment-information-for-luxembourg"></a><span data-ttu-id="b6824-103">Betalningsinformation för Luxemburg</span><span class="sxs-lookup"><span data-stu-id="b6824-103">Payment information for Luxembourg</span></span>
 
-<span data-ttu-id="a1bc0-104">[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="a1bc0-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="b6824-104">[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="b6824-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="a1bc0-105">Betala endast i euro och ange fakturanumret som referens vid betalning.</span><span class="sxs-lookup"><span data-stu-id="a1bc0-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="b6824-105">Betala endast i euro och ange fakturanumret som referens vid betalning.</span><span class="sxs-lookup"><span data-stu-id="b6824-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="a1bc0-106">Elektronisk betalningsöverföring</span><span class="sxs-lookup"><span data-stu-id="a1bc0-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="b6824-106">Elektronisk betalningsöverföring</span><span class="sxs-lookup"><span data-stu-id="b6824-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="a1bc0-107">**Bank:** Citibank, London</span><span class="sxs-lookup"><span data-stu-id="a1bc0-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="a1bc0-108">**SWIFT-kod:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="a1bc0-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="a1bc0-109">**IBAN:** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="a1bc0-109">**IBAN:** GB31CITI18500812207591</span></span>  
-<span data-ttu-id="a1bc0-110">**SORTERINGskod:** 185008</span><span class="sxs-lookup"><span data-stu-id="a1bc0-110">**SORT Code:** 185008</span></span>  
-<span data-ttu-id="a1bc0-111">**Kontonummer:** 12207591</span><span class="sxs-lookup"><span data-stu-id="a1bc0-111">**Account Number:** 12207591</span></span>  
-<span data-ttu-id="a1bc0-112">**Kontonamn:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="a1bc0-112">**Account Name:** MICROSOFT</span></span>
+<span data-ttu-id="b6824-107">**Bank:** Citibank, London</span><span class="sxs-lookup"><span data-stu-id="b6824-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="b6824-108">**SWIFT-kod:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="b6824-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="b6824-109">**IBAN:** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="b6824-109">**IBAN:** GB31CITI18500812207591</span></span>  
+<span data-ttu-id="b6824-110">**SORTERINGskod:** 185008</span><span class="sxs-lookup"><span data-stu-id="b6824-110">**SORT Code:** 185008</span></span>  
+<span data-ttu-id="b6824-111">**Kontonummer:** 12207591</span><span class="sxs-lookup"><span data-stu-id="b6824-111">**Account Number:** 12207591</span></span>  
+<span data-ttu-id="b6824-112">**Kontonamn:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="b6824-112">**Account Name:** MICROSOFT</span></span>
