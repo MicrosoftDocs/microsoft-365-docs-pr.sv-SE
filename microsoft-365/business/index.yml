@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Resurser för Microsoft 365 Business Premium
-summary: 'Microsoft 365 Business Premium (tidigare Microsoft 365 Business) är en omfattande prenumerationstjänst för företag som har färre än 300 anställda. Det integrerar dina favoritprogram och -tjänster för Office och samarbetsverktyg som Microsoft Teams, med avancerade funktioner för säkerhet och enhetshantering.'
+summary: 'Microsoft 365 Business Premium (tidigare Microsoft 365 Business) är en omfattande prenumerationstjänst för företag som har färre än 300 anställda. Det integrerar dina favoritappar och tjänster för Office samt samarbetsverktyg som Microsoft Teams, med avancerade funktioner för säkerhet och enhetshantering.'
 brand: m365
 metadata:
   title: Resurser för Microsoft 365 Business Premium
@@ -15,10 +15,10 @@ metadata:
 productDirectory:
   title: Säkert distansarbete med Microsoft 365 Business Premium
   items:
-    - title: Läsa
+    - title: Titta
       imageSrc: 'https://docs.microsoft.com/office/media/icons/sign-up-blue.svg'
-      summary: Bästa sätt att aktivera säkert distansarbete med Microsoft 365 Business Premium.
-      url: 'https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623'
+      summary: De fem viktigaste fördelarna med Microsoft 365 Business Premium.
+      url: 'https://aka.ms/M365BPvideo'
     - title: Skaffa det kostnadsfria partnerpaketet
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
       summary: Praktisk vägledning och gå till marknadsresurser för partners för att säkra distansarbete.
