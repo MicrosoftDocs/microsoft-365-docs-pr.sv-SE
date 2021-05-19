@@ -88,55 +88,55 @@
           items:
             - name: Översikt
               href: incidents-overview.md
-            - name: Prioritera incidenter
+            - name: Prioritera
               href: incident-queue.md
-            - name: Hantera incidenter
+            - name: Hantera
               href: manage-incidents.md
-            - name: Incidentsvar
+            - name: Undersöka
               items:
-                - name: Undersöka incidenter
+                - name: Översikt
                   href: investigate-incidents.md
-                - name: Undersöka aviseringar
+                - name: Varningar
                   href: investigate-alerts.md
-                - name: Undersöka användare
+                - name: Användare
                   href: investigate-users.md
-                - name: Spelböcker för incidentsvar
-                  href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
-                - name: Svara på din första incident
+            - name: Svara på din första incident
+              items:
+                - name: Introduktion
+                  href: first-incident-overview.md
+                - name: Förbereda
+                  href: first-incident-prepare.md
+                - name: Steg 1. Triage och analysera
+                  href: first-incident-analyze.md
+                - name: Steg 2. Åtgärda
+                  href: first-incident-remediate.md
+                - name: Steg 3. Granska
+                  href: first-incident-post.md
+                - name: Ytterligare incidentexempel
                   items:
-                    - name: Introduktion
-                      href: first-incident-overview.md
-                    - name: Förbereda
-                      href: first-incident-prepare.md
-                    - name: Steg 1. Triage och analysera
-                      href: first-incident-analyze.md
-                    - name: Steg 2. Åtgärda
-                      href: first-incident-remediate.md
-                    - name: Steg 3. Granska
-                      href: first-incident-post.md
-                    - name: Ytterligare incidentexempel
-                      items:
-                        - name: Nätfiske-e-post
-                          href: first-incident-path-phishing.md
-                        - name: Identitet
-                          href: first-incident-path-identity.md
-            - name: Få e-postaviseringar
+                    - name: Nätfiske-e-post
+                      href: first-incident-path-phishing.md
+                    - name: Identitet
+                      href: first-incident-path-identity.md
+            - name: Spelböcker för incidentsvar
+              href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
+            - name: E-postaviseringar
               href: get-incident-notifications.md
         - name: Automatiska undersökningar och svar
           items:
-            - name: Översikt över automatiserad utredning och svar
+            - name: Översikt
               href: m365d-autoir.md
-            - name: Konfigurera automatiserade utrednings- och svarsfunktioner
+            - name: Konfigurera funktioner
               href: m365d-configure-auto-investigation-response.md
             - name: Reparationsåtgärder
               href: m365d-remediation-actions.md
-            - name: Besök åtgärden centret
+            - name: Använda Åtgärdscenter
               href: m365d-action-center.md
             - name: Visa och hantera åtgärdsåtgärder
               href: m365d-autoir-actions.md
-            - name: Visa detaljer och resultat av automatiserade utredningar
+            - name: Visa information och resultat
               href: m365d-autoir-results.md
-            - name: Adressera falska positiva/negativa tal
+            - name: Åtgärda falska positiva och negativa tal
               href: m365d-autoir-report-false-positives-negatives.md
         - name: Avancerad jakt
           items:
