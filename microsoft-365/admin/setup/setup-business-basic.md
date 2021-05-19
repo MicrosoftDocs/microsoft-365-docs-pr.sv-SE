@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Lär dig hur du konfigurerar din Microsoft 365 Business Basic-abonnemang.
-ms.openlocfilehash: a4636006a6819769752ef6ae61a5cb7155d5289e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 51a83d4cc230fa4bdb78bba71c9c7193a36fd391
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244473"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535728"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>Konfigurera Microsoft 365 Business Basic
 
@@ -53,13 +53,13 @@ När du köper Microsoft 365 Business Basic får du möjlighet att använda en d
 
 ::: moniker range="o365-germany"
 
-1. Om du använder Office 365 Germany går du till [det här administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=848041).
+1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Om du använder Office 365 som drivs av 21Vianet går du till [det här administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=850627).
+1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
 ::: moniker-end 
 
@@ -68,7 +68,7 @@ När du köper Microsoft 365 Business Basic får du möjlighet att använda en d
 3. Under steget **Lägg till domän** anger du domännamnet du vill använda (t.ex. contoso.com).
 
     > [!IMPORTANT]
-    > Om du har köpt en domän under registreringen ser du inte steget **Lägg till en domän** här. Gå istället till [Lägg till användare](#add-users-and-assign-licenses).
+    > Om du har köpt en domän under registreringen ser du inte steget **Lägg till en domän** här. Gå i stället till [Lägg till användare](#add-users-and-assign-licenses).
 
     
 4. Följ anvisningarna i guiden för att [Skapa DNS-poster på vilken DNS-värd som helst för Office 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) som verifierar att du äger domänen. Om du vet vilken din domänvärd är kan du även se [Värdspecifika anvisningar](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
@@ -87,7 +87,7 @@ Alla användare som du lägger till i guiden får automatiskt en Microsoft 365 B
 
 1. Om din prenumeration på Microsoft 365 Business Basic har befintliga användare (till exempel om du använde Azure AD Connect), får du möjlighet att tilldela licenser till dem nu. Lägg till licenser till dem också.
 
-2. Efter att ha lagt till användarna får du också möjlighet att dela autentiseringsuppgifter med de nya användarna som du har lagt till. Du kan välja att skriva ut, e-posta eller ladda ned.
+2. När du har lagt till användarna får du även ett alternativ för att dela autentiseringsuppgifter med dem. Du kan välja att skriva ut, skicka via e-post eller ladda ned dem.
 
 ## <a name="connect-your-domain"></a>Koppla din domän
 
@@ -99,7 +99,7 @@ För att få igång tjänsten måste du uppdatera några poster hos din DNS-vär
 1. Installationsguiden identifierar normalt din domänregistrator och ger dig en länk till stegvisa instruktioner för att uppdatera dina NS-poster på registratorns webbplats. Om det inte gör det, [ ändra namnservrar för att konfigurera Office 365 med valfri domänregistrator](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md). 
 
     - Om du har befintliga DNS-poster, t. ex. en befintlig webbplats, men din DNS-värd är aktiverad för [Domain Connect](/office365/admin/get-help-with-domains/domain-connect)väljer du **Lägga till poster för mig**. På sidan **Välj onlinetjänster** accepterar du alla standardinställningar och väljer **Nästa** och väljer **Auktorisera** på DNS-värdens sida.
-    - Om du har befintliga DNS-poster med andra DNS-värdar (inte aktiverad för domänanslutning), ska du hantera dina egna DNS-poster för att se till att de befintliga tjänsterna fortsätter att vara anslutna. Mer information finns i [domängrunder](/office365/admin/get-help-with-domains/dns-basics).
+    - Om du har befintliga DNS-poster med andra DNS-värdar (inte aktiverad för domänanslutning), ska du hantera dina egna DNS-poster för att se till att de befintliga tjänsterna fortsätter att vara anslutna. Mer information finns i [grundläggande information för domän](/office365/admin/get-help-with-domains/dns-basics).
 
 2. Följ stegen i guiden så kommer e-postmeddelanden och andra tjänster att konfigureras åt dig.
 

@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Ändra prenumerationer manuellt genom att köpa en ny prenumeration och se till att båda prenumerationerna visas och är aktiva.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 4935301c6d2a530f34d628f946032b7007e5c907
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: f5a44b7a3c01883ed42ca4ed203b63ccf77f9b72
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345184"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536112"
 ---
 # <a name="change-plans-manually"></a>Ändra abonnemang manuellt
 
@@ -94,7 +94,7 @@ Licenser för den aktuella prenumerationen tas bort senare. Du betalar då bara 
 
 2. Markera cirklarna bredvid namnen på de användare som du vill ersätta befintliga licenser för.
 
-3. Högst upp väljer du **Fler alternativ** (**...**) och sedan **Hantera produktlicenser.**
+3. Högst upp väljer du de tre punkterna (fler åtgärder) och sedan Hantera **produktlicenser.**
 
 4. Välj **Ersätt befintliga produktlicenstilldelningar** \> **Nästa**.
 

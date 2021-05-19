@@ -17,14 +17,14 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Lär dig hur du lägger till användare och tilldelar licenser till Microsoft 365 samtidigt.
+description: Varje teammedlem behöver ett användarkonto innan de kan logga in och komma åt Microsoft 365 för företag. Så här lägger du till användare och tilldelar licenser.
 ms.date: 07/01/2020
-ms.openlocfilehash: 3efa32d21a21ed12041f5731296c1b033374712f
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 390576f46bed57929471b16848f9e1fd7e95304d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274394"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536004"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Lägga till användare och tilldela licenser samtidigt
 

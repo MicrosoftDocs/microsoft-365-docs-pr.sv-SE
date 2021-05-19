@@ -1,5 +1,5 @@
 ---
-title: Aviseringsprinciper i säkerhets- och efterlevnadscenter för Microsoft 365
+title: Behörigheter i Microsoft 365 Efterlevnadscenter och Microsoft 365 Säkerhetscenter
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,12 +19,12 @@ description: Med hjälp av Microsoft 365 Säkerhetscenter och Microsoft 365 Ef
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7cc0c69008d942e213f3a86e2852265969dd1971
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: cc2808ffe5d0acd3a5c3c3a6252503ee5e2cf94e
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207166"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530832"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Behörigheter i efterlevnadscentret i Microsoft 365 och säkerhetscentret i Microsoft 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "51207166"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Din organisation behöver hantera säkerhets- och efterlevnadsscenarier som omfattar alla Microsoft 365-tjänster. Du behöver också flexibiliteten att ge rätt administratörsbehörigheter till rätt personer i din organisations IT-grupp. Med hjälp av Microsoft 365 Säkerhetscenter och Microsoft 365 Efterlevnadscenter kan du hantera behörigheter centralt för alla uppgifter som är relaterade till säkerhet och efterlevnad.
+Din organisation behöver hantera scenarier för efterlevnad och säkerhet som sträcker sig över alla Microsoft 365-tjänster. Du behöver också flexibiliteten att ge rätt administratörsbehörigheter till rätt personer i din organisations IT-grupp. Med hjälp av Microsoft 365 Säkerhetscenter och Microsoft 365 Efterlevnadscenter kan du hantera behörigheter centralt för alla uppgifter som är relaterade till säkerhet och efterlevnad.
 
 När en global administratör lägger till användare i dessa administratörsroller kommer dessa administratörer att ha tillgång till funktioner och data som spänner över alla tjänster i Microsoft 365, till exempel Microsoft 365 säkerhetscenter, Microsoft 365 efterlevnadscenter, Azure, Office 365 och Enterprise Mobility + Säkerhet.
 

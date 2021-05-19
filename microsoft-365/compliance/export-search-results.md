@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exportera sökresultatet från en innehållssökning i kompatibilitetscentret Microsoft 365 en lokal dator. E-postresultat exporteras som PST-filer. Innehåll från SharePoint och OneDrive för företag exporteras som ursprungliga dokument Office dokument.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b5e900d44e59c2c37263c1162a7e631b1635cb06
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 8ec09706fecbe703fa2ab38cad5f8f8304484f44
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311979"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536064"
 ---
 # <a name="export-content-search-results"></a>Exportera resultat av innehållssökning
 
@@ -122,7 +122,7 @@ Det första steget är att förbereda sökresultatet för export. När du förbe
   
 5. Konfigurera följande ytterligare alternativ:
 
-   ![Exchange alternativ](../media/OtherExportOptions.png)
+   ![Konfigurera andra exportalternativ](../media/OtherExportOptions.png)
 
    1. Markera kryssrutan **Aktivera avduplicering för Exchange om** du vill utelämna dubbletter av meddelanden.
   

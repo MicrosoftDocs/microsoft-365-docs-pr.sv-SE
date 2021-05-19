@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Information för IT-administratörer om hur du hanterar känslighetsetiketter i Office-appar för dator, mobila enheter och webben.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cb385ec5589af115ce1a0d323e3660def42179b9
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: f280cae2364a3ad76a3a3ff91ce382fdf69eab2b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345770"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532056"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Använda känslighetsetiketter i Office-appar
 
@@ -170,7 +170,7 @@ När användare först etiketterar ett dokument eller ett e-postmeddelande kan d
 
 - En användare använder etiketten **Konfidentiell \ Alla anställda** för ett dokument och den här etiketten har konfigurerats för att tillämpa krypteringsinställningar för alla användare i organisationen. Den här användaren konfigurerar sedan IRM-inställningarna manuellt för att begränsa åtkomsten för användare utanför organisationen. Slutresultatet är ett dokument med etiketten **Konfidentiellt \ Alla anställda** och krypterad, men användarna i organisationen kan inte öppna det som förväntat.
 
-- En användare tillämpar etiketten **Konfidentiellt \ Endast mottagare** på ett e-postmeddelande och det här e-postmeddelandet har konfigurerats för att tillämpa krypteringsinställningen **Vidarebefordra inte**. I Outlook-appen konfigurerar användaren sedan IRM-inställningarna manuellt så att e-posten inte blir obegränsad. Resultatet är att e-postmeddelandet kan vidarebefordras av mottagarna, trots att det har etiketten **Konfidentiellt \ Endast mottagare**.
+- En användare tillämpar etiketten **Konfidentiellt \ Endast mottagare** på ett e-postmeddelande och det här e-postmeddelandet har konfigurerats för att tillämpa krypteringsinställningen **Vidarebefordra inte**. I Outlook-appen väljer den här användaren manuellt IRM-inställningen för endast kryptering. Resultatet blir att e-postmeddelandet förblir krypterat men att det kan vidarebefordras av mottagarna, trots att det har etiketten **Konfidentiellt/Endast mottagare**.
     
     Som ett undantag för Outlook på webben är alternativen från menyn **Kryptera** inte tillgängliga för en användare att välja när den valda etiketten tillämpar kryptering.
 
@@ -178,13 +178,23 @@ När användare först etiketterar ett dokument eller ett e-postmeddelande kan d
 
 Om dokumentet eller e-postmeddelandet redan är etiketterat kan en användare utföra någon av dessa åtgärder om innehållet inte redan är krypterat eller om de har [användningsrättighet](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Exportera eller Fullständig kontroll. 
 
-Om du vill ha en mer konsekvent etiketteringsupplevelse med meningsfull rapportering kan du ge användarna lämpliga etiketter och vägledningar för att endast använda etiketter för att skydda dokument. Till exempel:
+För en mer konsekvent etikett med meningsfull rapportering kan du ge användarna lämpliga etiketter och vägledningar så att de bara kan använda etiketter för att skydda dokument och e-postmeddelanden. Till exempel:
 
 - För undantagsfall där användare måste tilldela sina egna behörigheter tillhandahåller du etiketter som [låter användarna tilldela sin egna behörigheter](encryption-sensitivity-labels.md#let-users-assign-permissions). 
 
 - I stället för att användare manuellt tar bort kryptering efter att ha valt en etikett som använder kryptering, kan du erbjuda ett underetikettsalternativ när användarna behöver en etikett med samma klassificering, men ingen kryptering. Till exempel:
     - **Konfidentiellt \ Alla anställda**
     - **Konfidentiellt \ Alla (ingen kryptering)**
+
+- Du kan inaktivera IRM-inställningar för att hindra användare från att markera dem:
+    - Outlook för Windows: 
+        - Registernycklar (DWORD:00000001) *DisableDNF* och *DisableEO* från HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM
+        - Kontrollera att grupprincipinställningen för **Konfigurera alternativet för standardkryptering för knappen Kryptera** inte är konfigurerad
+    - Outlook för Mac: 
+        - Nycklar *DisableEncryptOnly* och *DisableDoNotForward* säkerhetsinställningar som dokumenteras i [Ange inställningar för Outlook för Mac](/DeployOffice/mac/preferences-outlook)
+    - Outlook på webben: 
+        - Parametrar *SimplifiedClientAccessDoNotForwardDisabled* och *SimplifiedClientAccessEncryptOnlyDisabled* dokumenteras för [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration)
+        - Outlook för iOS och Android: De här apparna stöder inte användare som använder kryptering utan etiketter, så det finns inget att inaktivera.
 
 > [!NOTE]
 > Om användare tar bort kryptering manuellt från ett etiketterat dokument som lagras i SharePoint eller OneDrive och du har [aktiverat känslighetsetiketter för Office-filer i SharePoint och OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), återställs etikettkrypteringen automatiskt nästa gång dokumentet används eller laddas ned. 
@@ -413,7 +423,7 @@ Andra avancerade PowerShell-inställningar stöds fortfarande endast av Azure In
 
 #### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>PowerShell-tips för att ange avancerade inställningar
 
-Om du vill ange en annan standardetikett för Outlook måste du ange etikettens GUID. Du kan använda följande kommando för att hitta det här värdet:
+För att ange en annan standardetikett för Outlook måste du identifiera etiketten efter dess GUID. Du kan använda följande kommando för att hitta det här värdet:
 
 ````powershell
 Get-Label | Format-Table -Property DisplayName, Name, Guid

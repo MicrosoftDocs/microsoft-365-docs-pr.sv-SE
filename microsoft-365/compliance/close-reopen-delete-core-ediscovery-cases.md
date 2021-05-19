@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: I den här artikeln beskrivs hur du hanterar grundläggande eDiscovery-ärenden. Det handlar bland annat om att stänga ett ärende, öppna ett stängt ärende och ta bort ett ärende.
-ms.openlocfilehash: 251ca932954071cf949c45343130f122464dcf01
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 8a54d5c8f93d36351538bc235a6dbeaaa602c3e9
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52310902"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532452"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Stäng, öppna och ta bort en eDiscovery-basfall
 
@@ -82,7 +82,7 @@ När du öppnar ett ärende på nytt återställs inte eventuella eDiscovery-kva
 
     När processen är klar ändras statusen för ärendet till **Aktiv** på sidan **Bas-eDiscovery.**
 
-7. (Valfritt) Om du vill aktivera eventuella spärrade objekt  kopplade till det öppnade ärendet går du till fliken Spärrar, markerar ett ärende och markerar kryssrutan under **Status** på den utfällbordssidan för håll.
+6. (Valfritt) Om du vill aktivera eventuella spärrade objekt  kopplade till det öppnade ärendet går du till fliken Spärrar, markerar ett ärende och markerar kryssrutan under **Status** på den utfällbordssidan för håll.
   
 ## <a name="delete-a-case"></a>Ta bort ett ärende
 
@@ -108,6 +108,6 @@ Så här tar du bort ett ärende:
 
 3. Klicka på Ta bort ärende under **Status** på **startsidan för ärendet.**
 
-      ![Öppna ett stängt ärende igen](../media/eDiscoveryCaseHomePageDelete.png)
+      ![Ta bort ett ärende](../media/eDiscoveryCaseHomePageDelete.png)
 
 Om det ärende som du försöker ta bort fortfarande innehåller eDiscovery-innehåll får du ett felmeddelande. Du måste ta bort alla fodral som är kopplade till ärendet och sedan försöka ta bort ärendet igen.

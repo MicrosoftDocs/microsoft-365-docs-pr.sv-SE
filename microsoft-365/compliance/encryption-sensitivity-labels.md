@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Konfigurera känslighetsetiketter för kryptering som skyddar dina data genom att begränsa åtkomst och användning.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6163e48e3e80b76506d970b77d6cd66f7a050d51
-ms.sourcegitcommit: 8c89bc1d106b4716b07a1977d57e4d9ef98aecb3
+ms.openlocfilehash: 804cfa9da39b5dc9b9dffdcd68fb196e8676f9af
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52162846"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532092"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Begränsa åtkomst till innehåll med hjälp av känslighetsetiketter för att tillämpa kryptering
 
@@ -65,7 +65,9 @@ När du använder den här krypteringslösningen är det funktionen **superanvä
 
 4.  Välj något av följande alternativ på sidan **Kryptering**.:
     
-    - **Ta bort kryptering om filen är krypterad**: Mer information om det här scenariot finns i avsnittet [Vad händer med befintlig kryptering när en etikett används](#what-happens-to-existing-encryption-when-a-labels-applied). Det är viktigt att förstå att den här inställningen kan resultera i en känslighetsetikett som användarna kanske inte kan använda om de inte har tillräckliga behörigheter.
+    - **Ta bort kryptering om filen är krypterad**: Det här alternativet stöds endast av klienten för enhetlig etikettering i Azure Information Protection. När du väljer det här alternativet och använder inbyggd etikettering kan det hända att etiketten inte visas i appar, eller visas och inte gör några krypteringsändringar.
+        
+        Mer information om det här scenariot finns i [Vad händer med befintlig kryptering när en etikett används](#what-happens-to-existing-encryption-when-a-labels-applied) avsnittet. Det är viktigt att förstå att den här inställningen kan resultera i en känslighetsetikett som användarna kanske inte kan använda om de inte har tillräckliga behörigheter.
     
     - **Konfigurera krypteringsinställningar**: Aktiverar kryptering och gör krypteringsinställningarna synliga:
         
@@ -85,13 +87,17 @@ Innehållet kan dock redan vara krypterat. En annan användare kan till exempel 
 
 I följande tabell ser du vad som händer med befintlig kryptering när en känslighetsetikett tillämpas på det innehållet:
 
-| | Kryptering: Inte vald | Kryptering: Konfigurerad | Kryptering: Ta bort |
+| | Kryptering: Inte vald | Kryptering: Konfigurerad | Kryptering: Ta bort <sup>\*</sup> |
 |:-----|:-----|:-----|:-----|
 |**Behörigheter som anges av en användare**|Ursprunglig kryptering bevaras|Ny etikettkryptering används|Ursprunglig kryptering tas bort|
 |**Skyddsmall**|Ursprunglig kryptering bevaras|Ny etikettkryptering används|Ursprunglig kryptering tas bort|
 |**Etikett med administratörsdefinierade behörigheter**|Ursprunglig kryptering tas bort|Ny etikettkryptering används|Ursprunglig kryptering tas bort|
 
-Observera att i de fall då den nya etikettkrypteringen tillämpas eller den ursprungliga krypteringen tas bort, händer detta bara om användaren som tillämpar etiketten har en användningsrättighet eller roll som stöder den här åtgärden:
+**Fotnot:**
+
+<sup>\*</sup> Stöds endast av klienten för enhetlig etikettering i Azure Information Protection.
+
+I de fall då den nya etikettkrypteringen tillämpas eller den ursprungliga krypteringen tas bort, händer detta bara om användaren som tillämpar etiketten har en användningsrättighet eller roll som stöder den här åtgärden:
 
 - [Användningsrättigheten](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Exportera eller Fullständig behörighet.
 - Rollen [Rights Management-utfärdare eller Rights Management-ägare](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner), eller [superanvändare](/azure/information-protection/configure-super-users).
@@ -123,7 +129,7 @@ Välja om du vill tilldela behörigheter nu eller låta användare tilldela beh�
 
 ## <a name="assign-permissions-now"></a>Tilldela behörigheter nu
 
-Använd följande alternativ för att styra vem som kan komma åt e-post eller dokument för vilka den här etiketten används. Du kan:
+Använd följande alternativ för att styra vem som kan komma åt e-post eller dokument för vilka den här etiketten används:
 
 - **Tillåt att åtkomst till etiketterat innehåll upphör**, antingen på ett visst datum eller efter ett visst antal dagar efter det att etiketten tillämpats. Efter den här tiden kan användare inte öppna det etiketterade objektet. Om du anger ett datum gäller det från och med midnatt i din aktuella tidszon. (Observera att vissa e-postklienter kanske inte tillämpar förfallodatum och visar e-postmeddelanden efter det datumet på grund av en cachelagringsmetod.)
 
@@ -139,7 +145,7 @@ När en användare öppnar ett dokument eller e-postmeddelande som skyddas av kr
 
 Om inget utgångsdatum har angetts är standardgiltighetsperioden för användningslicensen för en klientorganisation 30 dagar. Under hela användningslicensens varaktighet behöver inte användaren autentiseras eller auktoriseras på nytt för innehållet. Med den här processen kan användaren fortsätta öppna det skyddade dokumentet eller e-postmeddelandet utan Internetanslutning. När licensens giltighetsperiod upphör måste användaren autentiseras eller auktoriseras på nytt nästa gång denne vill få åtkomst till det skyddade dokumentet eller e-postmeddelandet.
 
-Utöver omautentiseringen utvärderas krypteringsinställningarna och medlemskap i användargruppen på nytt. Det innebär att användare kan få olika åtkomstresultat för samma dokument eller e-postmeddelande om det gjorts ändringar i krypteringsinställningarna eller gruppmedlemskapet under tiden från när personen senast kom åt innehållet.
+Förutom att det ska vara en omautentisering, omvärderas krypteringsinställningarna och användargruppsmedlemskap. Det innebär att användare kan få olika åtkomstresultat för samma dokument eller e-post om det finns ändringar i krypteringsinställningarna eller gruppmedlemskap från när de senast kom åt innehållet.
 
 Information om hur du ändrar standardinställningen på 30 dagar finns i avsnittet om [Rights Management-användningslicens](/azure/information-protection/configure-usage-rights#rights-management-use-license).
 
@@ -269,11 +275,11 @@ När något av de här alternativen används för ett e-postmeddelande krypteras
 
 - **Vidarebefordra inte**: Mottagarna kan inte vidarebefordra e-postmeddelandet, skriva ut det eller kopiera från det. I Outlook-klienten är till exempel knappen Vidarebefordra inte otillgänglig, menyalternativen Spara som och Skriv ut är inte tillgängliga och du kan inte lägga till eller ändra mottagare i rutorna Till, Kopia eller Hemlig kopia.
     
-    Mer information om hur det här alternativet fungerar finns i [Alternativet Vidarebefordra inte för e-postmeddelanden](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails).
+    Mer information om hur det här alternativet fungerar finns i [Alternativet Vidarebefordra inte för e-postmeddelanden](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails).
 
 - **Endast kryptering**: Mottagarna har alla användningsrättigheter utom Spara som, Exportera och Fullständig behörighet. Den här kombinationen av användningsrättigheter innebär att mottagarna inte har några begränsningar förutom att de inte kan ta bort skyddet. En mottagare kan till exempel kopiera från e-postmeddelandet, skriva ut det och vidarebefordra det.
     
-    Mer information om hur det här alternativet fungerar finns i [Alternativet Endast kryptering för e-postmeddelanden](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails).
+    Mer information om hur det här alternativet fungerar finns i [Alternativet Endast kryptering för e-postmeddelanden](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails).
 
 Okrypterade Office-dokument som bifogas i e-postmeddelandet ärver automatiskt samma begränsningar. För Vidarebefordra inte är de användningsrättigheter som används för dessa dokument Redigera innehåll, Redigera, Spara, Visa, Öppna, Läsa och Tillåt makron. Om användaren önskar andra användningsrättigheter för en bifogad fil, eller om den bifogade filen inte är ett Office-dokument som har stöd för det ärvda skyddet, måste användaren kryptera filen innan den bifogas i e-postmeddelandet.
 
@@ -406,7 +412,7 @@ Genom att kryptera dina känsliga dokument och e-postmeddelanden kan endast beh�
 
 - Om en etikett som tillämpar kryptering läggs till med hjälp av en Office-app när dokumentet är [utcheckat i SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de), och användaren sedan ignorerar utcheckningen, förblir dokumentet etiketterat och krypterat.
 
-- Följande åtgärder för krypterade filer stöds inte från Office-appar (Windows, Mac, Android och iOS) och användarna får ett felmeddelande om att något gick fel. SharePoint-funktioner kan dock användas som alternativ:
+- Följande åtgärder för krypterade filer stöds inte från Office-appar (Windows, Mac, Android och iOS) och användarna ser ett felmeddelande om att något gick fel. SharePoint-funktioner kan dock användas som ett alternativ:
 
   - Visa, återställa och spara kopior av tidigare versioner. Alternativt kan användare utföra de här åtgärderna med Office på webben om du [aktiverar och konfigurerar versionshantering för en lista eller ett bibliotek](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37).
   - Ändra namn eller plats för filer. Alternativt kan användare [byta namn på en fil, mapp eller länk i ett dokumentbibliotek](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) i SharePoint.

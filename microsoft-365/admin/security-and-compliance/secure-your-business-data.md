@@ -22,21 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Skydda din affärs-e-post och data från cyberhot, inklusive utpressningstrojaner, nätfiske och skadliga bifogade filer. '
-ms.openlocfilehash: c20b0d070c4c4ca28ee681e560c4a91c412241fc
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: dcaeb9588f50d1e12bdff5164f5f41a0beee2e47
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244545"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535884"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>De 10 bästa sätten att skydda Microsoft 365 för företag-abonnemang
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Om du är en liten eller medelstor organisation som använder en av Microsofts affärsplaner och din typ av organisation är riktad mot cyberbrottsligheter och hackare kan du använda vägledning i den här artikeln för att öka säkerheten för din organisation. Den här vägledningen hjälper din organisation att uppnå de mål som beskrivs i Harvard Harvard School [Cybersecurity Campaign Handbook.](https://go.microsoft.com/fwlink/p/?linkid=2015598)
 
@@ -55,9 +48,9 @@ Microsoft rekommenderar att du utför de uppgifter som listas i följande tabell
 |9|[Skydda mot skadliga bilagor och filer med Valv bilagor](secure-your-business-data.md#atp)||![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10|[Skydda mot nätfiskeattacker med Valv länkar](secure-your-business-data.md#phishingatp)||![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-Om du har Microsoft Business Premium är det snabbaste sättet att konfigurera säkerhet och börja samarbeta tryggt att följa vägledning i det här biblioteket: Microsoft 365 för mindre företag och [kampanjer.](../../campaigns/index.md) Den här vägledningen utvecklades i samarbete med teamet Microsofts team för att försvara det, för att skydda småföretags alla småföretags kunder mot cyberhot som startas av avancerade hackare.
+Det snabbaste sättetföretag att konfigurera säkerhet och börja samarbeta säkert för dig med Microsoft Business Premium är att följa vägledningen i det här biblioteket: [Microsoft 365 för mindre företag och kampanjer](../../campaigns/index.md). Den här vägledningen har utvecklats i samarbete med teamet för Microsoft Defending Democracy för att skydda alla kunder med småföretag mot cyberhot från avancerade hackare.
 
-Innan du börjar kontrollerar du [Microsoft 365 Secure Score](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score) i Microsoft 365 säkerhetscenter. Från en centraliserad instrumentpanel kan du övervaka och förbättra säkerheten för Microsoft 365 identiteter, data, appar, enheter och infrastruktur. Du får poäng för att konfigurera rekommenderade säkerhetsfunktioner, utföra säkerhetsrelaterade uppgifter (till exempel visa rapporter) eller åtgärda rekommendationer med ett program eller en programvara från tredje part. Med ytterligare insikter och mer insyn i en bredare uppsättning av Microsofts produkter och tjänster kan du känna dig säker på att du rapporterar om organisationens säkerhetshälsa.
+Innan du börjar kontrollerar du [Microsoft 365 Secure Score](../../security/defender/microsoft-secure-score.md) i Microsoft 365 säkerhetscenter. Från en centraliserad instrumentpanel kan du övervaka och förbättra säkerheten för Microsoft 365 identiteter, data, appar, enheter och infrastruktur. Du får poäng för att konfigurera rekommenderade säkerhetsfunktioner, utföra säkerhetsrelaterade uppgifter (till exempel visa rapporter) eller åtgärda rekommendationer med ett program eller en programvara från tredje part. Med ytterligare insikter och mer insyn i en bredare uppsättning av Microsofts produkter och tjänster kan du känna dig säker på att du rapporterar om organisationens säkerhetshälsa.
 
 ![Skärmbild av Microsoft Secure Score](../../media/secure-score.png)
 

@@ -17,14 +17,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: Få reda på hur du avbryter din utvärderingsversion eller betalda prenumeration för Microsoft 365 för företag.
+description: Om du har färre än 25 användarlicenser kan du avbryta utvärderingsversionen eller den betalda prenumerationen för Microsoft 365 för företag i Administrationscenter.
 ms.date: 04/08/2021
-ms.openlocfilehash: 022981e91abc985a0540acccccd6f211b39620a4
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 583433e2c2cc939724f772c1cd699cc5763cb21c
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333320"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536124"
 ---
 # <a name="cancel-your-subscription"></a>Avbryt din prenumeration
 
@@ -46,7 +46,7 @@ Om du har lagt till ett eget domännamn för användning med din prenumeration m
 ::: moniker range="o365-worldwide"
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
-2. Hitta den prenumeration du vill avbryta. Välj **Fler åtgärder** (tre punkter) och välj sedan **Avbryt prenumeration**.
+2. Hitta den prenumeration du vill avbryta. Välj de tre punkterna (fler åtgärder) och välj sedan **Avbryt prenumeration**.
 3. I fönstret **Avbryt prenumeration** väljer du en anledning till varför du avbryter prenumerationen. Alternativt kan du ge valfri feedback.
 4. Välj **Spara**.
 
@@ -69,7 +69,7 @@ Din prenumeration får status **Inaktiverad** och har begränsad funktionalitet 
 ::: moniker-end
 
 2. Välj fliken **Produkter**.
-3. Hitta den prenumeration du vill avbryta. Välj **Fler åtgärder** (tre punkter) och välj sedan **Avbryt prenumeration**.
+3. Hitta den prenumeration du vill avbryta. Välj de tre punkterna (fler åtgärder) och välj sedan **Avbryt prenumeration**.
 4. I fönstret **Avbryt prenumeration** väljer du en anledning till varför du avbryter prenumerationen. Alternativt kan du ge valfri feedback.
 5. Välj **Spara**.
 

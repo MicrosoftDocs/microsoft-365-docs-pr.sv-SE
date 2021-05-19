@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Använd känslighetsetiketter för att skydda innehåll i Sharepoint- och Microsoft Teams-webbplatser samt Microsoft 365-grupper.
-ms.openlocfilehash: 4914a5911ffb493eded46631d7682c1e48cf1426
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ef4559a278ce83f429790efcd20517b5c8545cb3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "52162734"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52531048"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Använd känslighetsetiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser
 
@@ -34,9 +34,10 @@ Förutom att använda [känslighetsetiketter](sensitivity-labels.md) för att kl
 - Åtkomst för externa användare
 - Extern delning från SharePoint-webbplatser
 - Åtkomst från ohanterade enheter
+- Autentiseringskontexter (i förhandsgranskning)
 
 > [!IMPORTANT]
-> Inställningen **Åtkomst från ohanterade enheter** fungerar tillsammans med SharePoint-funktionen för att [styra åtkomsten från ohanterade enheter](/sharepoint/control-access-from-unmanaged-devices). Du måste konfigurera den här beroende SharePoint-funktionen om du vill använda en känslighetsetikett som har den här konfigurerade inställningen. Ytterligare information finns i anvisningarna nedan.
+> Inställningarna för ohanterade enheter och autentiseringskontexter fungerar tillsammans med Villkorsstyrd åtkomst i Azure Active Directory. Du måste konfigurera den här beroende funktionen om du vill använda en känslighetsetikett för dessa inställningar. Ytterligare information finns i anvisningarna nedan.
 
 När du använder den här känslighetsetiketten i en behållare som stöds, tillämpar etiketten automatiskt klassificeringen och de konfigurerade skyddsinställningarna på webbplatsen eller gruppen.
 
@@ -47,15 +48,17 @@ Innehållet i dessa behållare ärver dock inte etiketterna för klassificeringe
 
 ## <a name="using-sensitivity-labels-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Använda känslighetsetiketter i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser
 
-Innan du aktiverar känslighetsetiketter för behållare och konfigurerar känslighetsetiketter för de nya inställningarna kan användarna se och använda känslighetsetiketter i sina appar. Till exempel i Word:
+Innan du aktiverar känslighetsetiketter för behållare och konfigurerar känslighetsetiketter för de nya inställningarna kan användarna se och använda känslighetsetiketter i sina appar. Till exempel från Word:
 
 ![En känslighetsetikett som visas i datorprogrammet Word](../media/sensitivity-label-word.png)
 
-När du har aktiverar och konfigurerat känslighetsetiketter för behållare kan användare även se och använda känslighetsetiketter för Microsoft Teams-webbplatser, Microsoft 365-grupper och SharePoint-webbplatser. Till exempel när man skapar en ny teamwebbplats från SharePoint:
+När du har aktiverar och konfigurerat känslighetsetiketter för behållare kan användare även se och använda känslighetsetiketter för Microsoft Teams-webbplatser, Microsoft 365-grupper och SharePoint-webbplatser. Till exempel när du skapar en ny gruppwebbplats från SharePoint:
 
 ![En känslighetsetikett när man skapar en teamwebbplats från SharePoint](../media/sensitivity-labels-new-team-site.png)
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>Så här aktiverar du känslighetsetiketter för behållare och synkroniserar etiketter
+
+Om du ännu inte har aktiverat känslighetsetiketter för behållare, ta följande steg som en engångsprocedur:
 
 1. Eftersom den här funktionen använder funktioner från Microsoft Azure AD ska du följa anvisningarna i Microsoft Azure AD-dokumentationen för att aktivera stöd för känslighetsetiketter: [Tilldela känslighetsetiketter till Microsoft 365-grupper i Azure Active Directory](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
@@ -71,7 +74,7 @@ När du har aktiverar och konfigurerat känslighetsetiketter för behållare kan
 
 ## <a name="how-to-configure-groups-and-site-settings"></a>Hur man konfigurerar grupp- och webbplatsinställningar
 
-Om du aktiverar känslighetsetiketter för behållare kan du nu konfigurera skyddsinställningar för grupper och webbplatser i guiden för känslighetsetiketter. Tills du aktiverar det här stödet visas inställningarna i guiden men du kan inte konfigurera dem.
+Efter att känslighetsetiketter är aktiverade för behållare enligt beskrivningen i föregående avsnitt kan du sedan konfigurera skyddsinställningar för grupper och webbplatser i guiden för känslighetsetiketter. Innan känslighetsetiketter är aktiverade för behållare är inställningarna synliga i guiden men du kan inte konfigurera dem.
 
 1. Följ de allmänna anvisningarna för att [skapa eller redigera en känslighetsetikett](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) och se till att du väljer **Grupper och webbplatser** som etikettens omfång: 
     
@@ -84,7 +87,7 @@ Om du aktiverar känslighetsetiketter för behållare kan du nu konfigurera skyd
 2. Väljs sedan något eller båda alternativen på sidan **Definiera skyddsinställningar för grupper och webbplatser**:
     
     - **Inställningar för sekretess och åtkomst för externa användare** för att konfigurera **Sekretessen** och inställningarna för **Åtkomst för externa användare**. 
-    - **Inställningar för enhetsåtkomst och extern delning** för att konfigurera **Styra extern delning från etiketterade SharePoint-webbplatser** och inställningen **Åtkomst från ohanterade enheter**.
+    - **Inställningar för extern delning och villkorsstyrd åtkomst** för att konfigurera **Kontrollera extern delning från namngivna SharePoint-webbplatser** och **Använda Azure AD villkorlig åtkomst för att skydda märkta SharePoint-webbplatser**.
 
 3. Om du har valt **Inställningar för sekretess och åtkomst för externa användare** ska du nu konfigurera följande inställningar:
     
@@ -98,13 +101,25 @@ Om du aktiverar känslighetsetiketter för behållare kan du nu konfigurera skyd
     
     - **Åtkomst för externa användare**: kontrollera om gruppägaren kan [lägga till gäster i gruppen](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-4. Om du har valt **Inställningar för enhetsåtkomst och extern delning** ska du nu konfigurera följande inställningar:
+4. Om du har valt **Inställningar för extern delning och enhetsåtkomst** ska du nu konfigurera följande inställningar:
     
     - **Styr extern delning från etiketterade SharePoint-webbplatser**: välj det här alternativet om du vill välja antingen extern delning för alla, nya och befintliga gäster, befintliga gäster eller bara personer i din organisation. Mer information om den här konfigurationen och inställningarna finns i SharePoint-dokumentationen [Aktivera eller inaktivera extern delning för en webbplats](/sharepoint/change-external-sharing-site).
     
-    - **Åtkomst från ohanterade enheter**: det här alternativet använder SharePoint-funktionen som använder villkorlig åtkomst i Microsoft Azure AD för att blockera eller begränsa åtkomst till SharePoint- och OneDrive-innehåll från ohanterade enheter. Mer information finns i [Styr åtkomsten från ohanterade enheter](/sharepoint/control-access-from-unmanaged-devices) i Sharepoint-dokumentationen. Alternativet du anger för den här etikettinställningen är en motsvarighet till att köra ett PowerShell-kommando för en webbplats, enligt beskrivningen i steg 3–5 från avsnittet [Blockera eller begränsa åtkomst till en viss SharePoint-webbplats eller OneDrive](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) i SharePoint-anvisningarna.
-        
-        Mer information finns i [Mer information om beroenden för alternativet ohanterade enheter](#more-information-about-the-dependencies-for-the-unmanaged-devices-option) i slutet av det här avsnittet.
+    - **Använda Azure AD villkorlig åtkomst för att skydda märkta SharePoint-webbplatser**: Välj bara detta alternativ om din organisation har konfigurerat det och använder [Villkorsstyrd åtkomst i Azure Active Directory](/azure/active-directory/conditional-access/overview). Ändra sedan någon av följande inställningar:
+    
+        - **Avgör om användare kan komma åt SharePoint-webbplatser från ohanterade enheter**: det här alternativet använder SharePoint-funktionen som använder villkorlig åtkomst i Microsoft Azure AD för att blockera eller begränsa åtkomst till SharePoint- och OneDrive-innehåll från ohanterade enheter. Mer information finns i [Styr åtkomsten från ohanterade enheter](/sharepoint/control-access-from-unmanaged-devices) i Sharepoint-dokumentationen. Alternativet du anger för den här etikettinställningen är en motsvarighet till att köra ett PowerShell-kommando för en webbplats, enligt beskrivningen i steg 3–5 från avsnittet [Blockera eller begränsa åtkomst till en viss SharePoint-webbplats eller OneDrive](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) i SharePoint-anvisningarna.
+            
+            Mer information om konfiguration finns i [Mer information om beroenden för alternativet ohanterade enheter](#more-information-about-the-dependencies-for-the-unmanaged-devices-option) i slutet av det här avsnittet.
+            
+        - **Välj en befintlig autentiseringskontext**: Detta alternativ som för närvarande är i förhandsversion låter dig tillämpa strängare åtkomstvillkor när användare öppnar SharePoint-webbplatser som har den här etiketten. Dessa villkor tillämpas när du väljer ett befintligt autentiseringskontext som har skapats och publicerats för din organisations distribution av villkorlig åtkomst. Om användare inte uppfyller de konfigurerade villkoren eller om de använder appar som inte stöder autentiseringskontexter nekas de åtkomst.
+            
+            Mer information om konfiguration finns i [Mer information om beroenden för alternativet autentiseringskontext](#more-information-about-the-dependencies-for-the-authentication-context-option) i slutet av det här avsnittet.
+            
+            Exempel på den här etikettkonfigurationen:
+            
+             - Du väljer ett autentiseringskontext som är konfigurerad att kräva [flerfaktorautentisering](/azure/active-directory/conditional-access/untrusted-networks). Den här etiketten appliceras sedan på en SharePoint-webbplats som innehåller mycket konfidentiella objekt. Som ett resultat, när användare från ett opålitligt nätverk försöker komma åt ett dokument på den här webbplatsen, ser de MFA-prompten som de måste slutföra innan de kan komma åt dokumentet.
+             
+             - Du kan välja en autentiseringskontext som är konfigurerad för [användningsvillkor](/azure/active-directory/conditional-access/terms-of-use). Den här etiketten appliceras sedan på en SharePoint-webbplats som innehåller objekt som kräver godkännande av användarvillkor på grund av juridiska eller efterlevnadsskäl. Som ett resultat, när användare försöker komma åt ett dokument på den här webbplatsen, ser de ett användardokument som de måste acceptera innan de kan få tillgång till originaldokumentet.
 
 > [!IMPORTANT]
 > Endast de här webbplats- och gruppinställningarna tillämpas när du använder etiketten för ett team, en grupp eller en webbplats. Andra etikettinställningar som kryptering och innehållsmarkering på innehållet i gruppen eller webbplatsen tillämpas inte om [etikettens omfång](sensitivity-labels.md#label-scopes) inkluderar filer och e-postmeddelanden.
@@ -118,6 +133,43 @@ Om du inte konfigurerar den beroende, villkorsstyrda åtkomstprincipen för Shar
 Om din klientorganisation till exempel har konfigurerats för **Tillåt begränsad åtkomst endast på webben** kommer inställningen för etiketter som ger fullständig åtkomst inte att ha någon effekt eftersom den är mindre restriktiv. För den här inställningen på klientorganisationsnivå ska du välja etikettinställningen för att blockera åtkomst (mer restriktiv) eller etikettinställningen för begränsad åtkomst (samma som inställningen för klientorganisationen).
 
 Eftersom du kan konfigurera SharePoint-inställningarna separat från etikettkonfigurationen kontrollerar inte guiden för känslighetsetiketter om beroendena är korrekt inställda. Dessa beroenden kan konfigureras efter att etiketten skapats och publicerats, även efter att etiketten har använts. Om etiketten redan används kommer inställningen för etiketter inte användas förrän nästa gång användaren autentiserar.
+
+##### <a name="more-information-about-the-dependencies-for-the-authentication-context-option"></a>Mer information om beroenden för alternativet autentiseringskontext
+
+För att kunna visas i rullgardinsmenyn för val måste autentiseringskontexter skapas, konfigureras och publiceras som en del av din konfiguration av villkorsstyrd åtkomst i Azure Active Directory. Mer information och instruktioner finns i avsnittet [Konfigurera autentiseringskontexter](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts) från dokumentationen för villkorsstyrd åtkomst i Azure Active Directory.
+
+Alla appar har inte stöd för autentiseringskontexter. Om en användare med en app som inte stöds ansluter till webbplatsen som är konfigurerad för en autentiseringskontext, ser de antingen ett meddelande om åtkomst nekad eller så uppmanas de att autentisera men avvisas. Apparna som för närvarande stöder autentiseringskontexter:
+
+- Office för webben, som inkluderar Outlook för webben
+
+- Microsoft Planner
+
+- Microsoft 365-applikationer för Word, Excel och PowerPoint, lägsta versioner:
+    - Windows: 2103
+    - macOS: 16.45.1202
+    - iOS: 2.48.303
+    - Android: 16.0.13924.10000
+
+- Microsoft 365-applikationer för Outlook, lägsta versioner:
+    - Windows: 2103
+    - macOS: 16.45.1202
+    - iOS: 4.2109.0
+    - Android: 4.2025.1
+
+- OneDrive-synkroniseringsappen, lägsta versioner:
+    - Windows: 21.002
+    - macOS: 21.002
+    - iOS: lanseras i 12.30
+    - Android: Stöds inte än
+
+Kända begränsningar för den här förhandsversionen:
+
+- För OneDrive-synkroniseringsappen, stöds endast för OneDrive, och inte andra webbplatser.
+
+- Följande funktioner och appar kan vara oförenliga med autentiseringskontexter, så vi uppmuntrar dig att kontrollera att dessa fortsätter att fungera efter att en användare lyckats komma åt en webbplats genom att använda ett autentiseringskontext:
+    
+    - Arbetsflöden som använder PowerApps eller Power Automate
+    - Appar från tredje part
 
 ## <a name="sensitivity-label-management"></a>Hantering av känslighetsetiketter
 
@@ -144,13 +196,13 @@ Det är bäst att inte ändra webbplats- och gruppinställningarna för en käns
 
 Om dina ändringar dessutom inkluderar inställningen **Åtkomst för externa användare**:
 
-- Den nya inställningen gäller för nya användare men inte för de befintliga. Om inställningen till exempel tidigare var vald och gästanvändarna hade åtkomst till webbplatsen kan de här gästanvändarna fortfarande komma åt webbplatsen efter att inställningen avmarkerats i etikettkonfigurationen.
+- Den nya inställningen gäller för nya användare men inte för befintliga användare. Om inställningen till exempel tidigare var vald och gästanvändarna hade åtkomst till webbplatsen kan de här gästanvändarna fortfarande komma åt webbplatsen efter att inställningen avmarkerats i etikettkonfigurationen.
 
 - Sekretessinställningarna för gruppegenskaperna hiddenMembership och roleEnabled uppdateras inte.
 
 ### <a name="deleting-published-labels-that-are-configured-for-sites-and-groups"></a>Ta bort publicerade etiketter som är konfigurerade för webbplatser och grupper
 
-Om du tar bort en känslighetsetikett där webbplats- och gruppinställningarna är aktiverade, och den etiketten ingår i en eller flera etikettprinciper, kan den här åtgärden resultera i fel för nya team, grupper och webbplatser. Undvik den situationen genom att använda följande vägledning:
+Om du tar bort en känslighetsetikett där webbplats- och gruppinställningarna är aktiverade, och den etiketten ingår i en eller flera etikettprinciper, kan den här åtgärden resultera i fel för nya team, grupper och webbplatser. Använd följande riktlinjer för att undvika denna situation:
 
 1. Ta bort känslighetsetiketten från alla etikettprinciper som innehåller etiketten.
 
@@ -239,7 +291,7 @@ Kontrollera att du har version 16.0.19418.12000 eller senare av SharePoint Onlin
    $sites = Get-SPOSite -IncludePersonalSite $true -Limit all -Filter "Url -like 'documents"
    ```
 
-5. Kör följande kommando för att använda etiketten på dessa webbplatser. Med våra exempel:
+5. Kör följande kommando för att använda etiketten på dessa webbplatser. Med hjälp av våra exempel:
 
    ```powershell
    $sites | ForEach-Object {Set-SPOTenant $_.url -SensitivityLabel $Id}

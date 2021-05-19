@@ -24,16 +24,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Blockera en tidigare anställd från att logga in och blockera åtkomst till Microsoft 365 tjänster.
-ms.openlocfilehash: 60f4cf6b5c9a0b5dc2023b3ef7b6460685142d07
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 8eb41c3b449e63284371aaf168262307a4c21941
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244300"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535956"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Steg 1 – Förhindra en tidigare anställd från att logga in och blockera åtkomst Microsoft 365 tjänster
 
 Om du omedelbart behöver förhindra en användares inloggningsåtkomst ska du återställa användarens lösenord. I det här steget tvingar du användaren att logga ut från Microsoft 365.
+
+> [!NOTE]
+> Du måste vara global administratör för att kunna starta ut logga ut.
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
 2. Markera rutan bredvid användarens namn och välj sedan **Återställ lösenord**.

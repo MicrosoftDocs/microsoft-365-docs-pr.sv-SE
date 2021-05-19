@@ -22,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
-description: 'Lär dig hur du ger en användare rätt att komma åt en annan användares postlåda. Då kan användaren läsa e-postmeddelanden och skicka e-postmeddelanden från den andra användarens postlåda. '
-ms.openlocfilehash: e6b94d4e24b0ff1d5dc397ccbcfba98929a303f2
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: Ge en användare rätt att få åtkomst till en annan användares postlåda, så att användaren kan läsa och skicka e-postmeddelanden från den andra användarens postlåda.
+ms.openlocfilehash: 3514be02f2ef82b727edfcf86c0bd3f6b8515510
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925548"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535968"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Ge behörigheter för postlådor åt en annan användare – administratörshjälp
 
@@ -205,11 +205,11 @@ Det finns några olika sätt att komma åt en postlåda när du har fått åtkom
 ::: moniker-end
 
 
-## <a name="send-and-read-from-outlook-and-outlook-on-the-web-for-business"></a>Skicka och läsa från Outlook och Outlook på webben för företag
-
-
-Vill du veta hur du skickar e-post från en annan användares postlåda? Läs följande avsnitt:
+## <a name="related-content"></a>Relaterat innehåll
   
-- [Hantera andra personers e-post- och kalenderobjekt](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5)
+[Hantera andra personers e-post- och kalenderobjekt](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5) (artikel)
     
-- [Skicka e-post från en annan person eller grupp](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)
+[Skicka e-post från en annan person eller grupp](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) (artikel)
+
+[Ändra användarnamn och e-postadress](../add-users/change-a-user-name-and-email-address.md) (video)
+

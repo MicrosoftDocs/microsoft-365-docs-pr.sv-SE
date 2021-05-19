@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Användarna kan lära sig att hantera köp via självbetjäning.
 ms.date: 03/17/2021
-ms.openlocfilehash: 0f9832f69d7e89346e82e3acef0e626fc7f6c4de
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: ed6f2fc3b55756fb88dccd748fd4a4a9a34a5c81
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333260"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536088"
 ---
 # <a name="manage-self-service-purchases-users"></a>Hantera självbetjäningsköp (användare)
 
@@ -34,7 +34,7 @@ ms.locfileid: "52333260"
 
 ::: moniker-end
 
-Som användare kan du köpa prenumerationer på vissa produkter och tilldela licenser för prenumerationerna till personer i din grupp. Du är ansvarig för att betala för alla köp du gör med självbetjäning. Du kan hantera dina prenumerationer i administrationscentret för Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">på admin.microsoft.com</a>.
+Som användare kan du köpa prenumerationer på vissa produkter och tilldela licenser för prenumerationerna till personer i din grupp. Du är ansvarig för att betala för alla köp du gör med självbetjäning. Du kan hantera dina prenumerationer i Microsoft 365 administrationscenter på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>.
 
 Administratören har en skrivskyddad vy för alla prenumerationer som du köper. De kan se produkt, inköpare namn, prenumerationer köpta, utgångsdatum, inköpspris och tilldelade användare för varje prenumeration som du köper.
 
@@ -75,7 +75,7 @@ Du kan visa en lista över alla prenumerationer som köpts med självbetjäning 
 ## <a name="cancel-a-subscription"></a>Avsluta en prenumeration
 
 1. I administrationscentret går du till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
-2. Leta rätt **på** den prenumeration du vill avbryta på fliken Produkter. Välj **Fler åtgärder** (tre punkter) och välj sedan **Avbryt prenumeration**.
+2. Leta rätt **på** den prenumeration du vill avbryta på fliken Produkter. Välj de tre punkterna (fler åtgärder) och välj sedan **Avbryt prenumeration.**
 3. I fönstret **Avbryt prenumeration** väljer du en anledning till varför du avbryter prenumerationen. Du kan också lämna feedback om du vill.
 4. Välj **Spara**.
 
@@ -108,6 +108,6 @@ Du kan visa en lista över alla prenumerationer som köpts med självbetjäning 
 
 ## <a name="need-help-contact-us"></a>Behöver du hjälp? Kontakta oss.
 
-Vanliga frågor om självbetjäning för köp finns i Vanliga frågor [och svar om självbetjäning.](self-service-purchase-faq.md)
+Vanliga frågor om självbetjäning för köp finns i Vanliga frågor [och svar om självbetjäning.](self-service-purchase-faq.yml)
 
 Om du har frågor eller behöver hjälp med köp via självbetjäning kontaktar [du supporten.](../../business-video/get-help-support.md)

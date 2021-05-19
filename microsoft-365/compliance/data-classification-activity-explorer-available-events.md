@@ -1,5 +1,5 @@
 ---
-title: Märkningsåtgärder som rapporterats i Aktivitetsutforskaren
+title: Etikettering av åtgärder som rapporterats i Utforskaren
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,118 +17,118 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: lista med etiketter på åtgärder som är tillgängliga i aktivitetsutforskaren.
-ms.openlocfilehash: ed51c908d6968e3aeae0adbe06d9ba55887bcf83
-ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
+description: en lista med etiketter för aktiviteter som är tillgängliga i aktivitetsutforskaren.
+ms.openlocfilehash: d4f6884ad39b16aeb0345f0c976d6ad87f03c05a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51902956"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532260"
 ---
 # <a name="labeling-activities-that-are-available-in-activity-explorer"></a>Märka aktiviteter som är tillgängliga i Aktivitetsutforskaren
 
 ## <a name="sensitivity-label-applied"></a>Känslighetsetikett används
 
-Den här händelsen genereras varje gång ett dokument utan etikett sätts på etiketten eller om ett e-postmeddelande skickas med en etikett. 
+Den här händelsen genereras varje gång ett dokument utan etikett sätts i etiketter eller ett e-postmeddelande skickas med en känslighetsetikett. 
 
-- Den fångas när du sparar i Office-program och webbprogram. 
+- Den fångas när du sparar i Office program och webbprogram. 
 - Den fångas när den förekommer i Azure Information Protection-tillägg. 
 - Åtgärder för uppgradering och nedgradering av etiketter kan också övervakas via *fältet och filtret för händelsetypen* Etikett.   
 
 
 |Source  |Rapporterad i Aktivitetsutforskaren | Obs!  |
 |---------|---------|---------|
-| Word, Excel, PowerPoint|Ja |
-|Outlook| Ja |från Win 32 |
-|SharePoint online, OneDrive|Ja | |
-|Exchange        |Ja         | |
-|Enhetlig klient och enhetlig AIP-skanner i Azure Information Protection (AIP) |Ja |Åtgärden för ny *etikett i* AIP mappas till etiketten som *används i* aktivitetsutforskaren   |
-|Microsoft information protection (MIP) SDK         |Ja|Åtgärden för ny *etikett i* AIP mappas till etiketten som *används i* aktivitetsutforskaren|
-|RMS (Rights Management Service)         |inte tillämpligt         | |
-|Power BI för skrivbordet och på webben        | Nej| tillgängliga i Microsoft 365 granskningsloggar         |
+| Word, Excel, PowerPoint|ja |
+|Outlook| ja |från Win 32 |
+|SharePoint online, OneDrive|ja | |
+|Exchange        |ja         | |
+|Enhetlig klient och enhetlig AIP-skanner i Azure Information Protection (AIP) |ja |Åtgärden för ny *etikett i* AIP mappas till etiketten som *används i* aktivitetsutforskaren   |
+|Microsoft information protection (MIP) SDK         |ja|Åtgärden för ny *etikett i* AIP mappas till etiketten som *används i* aktivitetsutforskaren|
+|RMS (Rights Management Service)         |ej tillämpligt         | |
+|Power BI dator och webb        | Nej| tillgängliga i Microsoft 365 granskningsloggar         |
 |Microsoft Cloud App Security (MCAS)         |Nej|         |
 
 ## <a name="sensitivity-label-changed"></a>Känslighetsetikett har ändrats
 
-Händelsen genereras varje gång en etikett uppdateras i dokumentet eller e-postmeddelandet.
+Den här händelsen genereras varje gång en känslighetsetikett uppdateras i dokumentet eller e-postmeddelandet.
 
 - För källorna AIP Unified Client, Unified Scanner och  MIP SDK har AIP-uppgraderingsetiketten och nedgraderingsetikettsmapparna till aktivitetsutforskaren *ändrats* 
 
-- Den fångas när du sparar i Office-program och webbprogram. 
+- Den fångas när du sparar i Office program och webbprogram. 
 - Händelsen fångas när det inträffar i Azure Information Protection Unified Client-tillägg och tvingande skannrar
-- Åtgärder för uppgradering och nedgradering av etiketter kan också övervakas via *fältet och filtret för händelsetypen* Etikett. *Justeringstexten* förs också in utom för SharePoint Online och OneDrive.
-- Känslighetsetiketter som utförs i Inbyggda Office-appar i Outlook samlar in den senaste åtgärd som skapades innan åtgärder för att spara och skicka filer via e-post. Om användaren till exempel ändrar etikett i ett e-postmeddelande flera gånger innan det skickas fångas den sista etiketten på e-postmeddelandet när det skickas i granskningsloggen och rapporteras sedan i aktivitetsutforskaren. 
+- Åtgärder för uppgradering och nedgradering av etiketter kan också övervakas via *fältet och filtret för händelsetypen* Etikett. *Justeringstexten* förs också in utom för justering SharePoint Online och OneDrive.
+- Känslighetsetiketter som utförs i Office inbyggda appar på Outlook samlar in den senaste åtgärden som skapades innan åtgärder för att spara/skicka filer/e-post. Om användaren till exempel ändrar etikett i ett e-postmeddelande flera gånger innan det skickas fångas den sista etiketten på e-postmeddelandet när det skickas i granskningsloggen och rapporteras sedan i aktivitetsutforskaren. 
 
 
 |Source  |Rapporterad i Aktivitetsutforskaren|Obs!  |
 |---------|---------|---------| 
-|Word, Excel, PowerPoint         |Ja         |
-|Outlook         |Ja         |Win 32|
-|SharePoint Online, OneDrive         |Ja         |
-|Exchange         |Ja         |
-|Enhetlig AIP-klient         |Ja         |
-|AIP unified scanner         |Ja         |
-|MIP SDK         |Ja         |
-|RMS-tjänst         |inte tillämpligt         |
-|Power BI för skrivbordet och på webben         |Nej         |tillgängliga i Microsoft 365 granskningsloggar |
+|Word, Excel, PowerPoint         |ja         |
+|Outlook         |ja         |Win 32|
+|SharePoint Online, OneDrive         |ja         |
+|Exchange         |ja         |
+|Enhetlig AIP-klient         |ja         |
+|AIP unified scanner         |ja         |
+|MIP SDK         |ja         |
+|RMS-tjänst         |ej tillämpligt         |
+|Power BI dator och webb         |Nej         |tillgängliga i Microsoft 365 granskningsloggar |
 |MCAS     |Nej         |         |
 
 ## <a name="sensitivity-label-removed"></a>Känslighetsetikett borttagen
 
-Händelsen genereras varje gång en etikett tas bort från en fil eller ett dokument.
+Den här händelsen genereras varje gång en känslighetsetikett tas bort från en fil eller ett dokument.
 
-- Händelsen fångas när du sparar i Office-program och webbprogram.
+- Händelsen fångas när du sparar i Office program och webbprogram.
 - Den fångas när den förekommer i Azure Information Protection-tillägg. 
-- Känslighetsetiketter, med Den inbyggda Office-MIP-etiketten, i Outlook samlar in den senaste etiketthändelsen som skapades innan åtgärder för att spara och skicka filer/e-post.
+- Känslighetsetiketter, med Office inbyggd MIP-etikett, på Outlook samlar in den senaste händelsen med etiketter som skapades innan åtgärderna spara/skicka e-post.
 
 |Source  |Rapporterad i Aktivitetsutforskaren | Obs!  |
 |---------|---------|---------| 
-|Word, Excel, PowerPoint         |Ja         |
-|Outlook         |Ja         |Win 32|
-|SharePoint Online, OneDrive         |Ja         |
-|Exchange         |Ja         |
-|Enhetlig AIP-klient         |Ja         |Åtgärden Ta bort *etikett i* AIP är mappad till åtgärden ta *bort etikett* i aktivitetsutforskaren|
-|AIP unified scanner         |Ja         |Åtgärden Ta bort *etikett i* AIP är mappad till åtgärden ta *bort etikett* i aktivitetsutforskaren |
-|MIP SDK         |Ja         |Åtgärden Ta bort *etikett i* AIP är mappad till åtgärden ta *bort etikett* i aktivitetsutforskaren |
-|RMS-tjänst         |inte tillämpligt         |
-|Power BI för skrivbordet och på webben         |Nej         |tillgängliga i Microsoft 365 granskningsloggar |
+|Word, Excel, PowerPoint         |ja         |
+|Outlook         |ja         |Win 32|
+|SharePoint Online, OneDrive         |ja         |
+|Exchange         |ja         |
+|Enhetlig AIP-klient         |ja         |Åtgärden Ta bort *etikett i* AIP är mappad till åtgärden ta *bort etikett* i aktivitetsutforskaren|
+|AIP unified scanner         |ja         |Åtgärden Ta bort *etikett i* AIP är mappad till åtgärden ta *bort etikett* i aktivitetsutforskaren |
+|MIP SDK         |ja         |Åtgärden Ta bort *etikett i* AIP är mappad till åtgärden ta *bort etikett* i aktivitetsutforskaren |
+|RMS-tjänst         |ej tillämpligt         |
+|Power BI dator och webb         |Nej         |tillgängliga i Microsoft 365 granskningsloggar |
 |MCAS     |Nej         |         |
  
 
 ## <a name="sensitivity-label-file-read"></a>Känslighetsetikettsfil läst
 
-Händelsen genereras varje gång ett etiketterat eller skyddat dokument öppnas.
+Den här händelsen genereras varje gång ett känslighetsetiketterat eller skyddat dokument öppnas.
 
 |Source  |Rapporterad i Aktivitetsutforskaren | Obs!  |
 |---------|---------|---------| 
-|Word, Excel, PowerPoint         |Ja         |
+|Word, Excel, PowerPoint         |ja         |
 |Outlook         |Nej         |
 |SharePoint Online, OneDrive         |Nej         |
 |Exchange         |Nej         |
-|Enhetlig AIP-klient         |Ja         |*AIP-åtkomståtgärden* mappas till *läsåtgärden för* filen i aktivitetsutforskaren|
-|AIP unified scanner         |Ja         |*AIP-åtkomståtgärden* mappas till *läsåtgärden för* filen i aktivitetsutforskaren|
-|MIP SDK         |Ja         |*AIP-åtkomståtgärden* mappas till *läsåtgärden för* filen i aktivitetsutforskaren|
-|RMS-tjänst         |Ja         |*Åtkomståtgärden* är mappad till *filläsningsåtgärden* i aktivitetsutforskaren |
-|Power BI för skrivbordet och på webben         |Nej         |tillgängliga i Microsoft 365 granskningsloggar |
+|Enhetlig AIP-klient         |ja         |*AIP-åtkomståtgärden* mappas till *läsåtgärden för* filen i aktivitetsutforskaren|
+|AIP unified scanner         |ja         |*AIP-åtkomståtgärden* mappas till *läsåtgärden för* filen i aktivitetsutforskaren|
+|MIP SDK         |ja         |*AIP-åtkomståtgärden* mappas till *läsåtgärden för* filen i aktivitetsutforskaren|
+|RMS-tjänst         |ja         |*Åtkomståtgärden* är mappad till *filläsningsåtgärden* i aktivitetsutforskaren |
+|Power BI dator och webb         |Nej         |tillgängliga i Microsoft 365 granskningsloggar |
 |MCAS     |Nej         |         |
 
 
-## <a name="sensitivity-label-files-discovered"></a>Känslighetsetikettsfiler upptäcktes
+## <a name="files-discovered"></a>Upptäckta filer
 
 Händelsen genereras varje gång filer upptäcks när AIP-skanner används för att skanna känsliga data på olika platser och hittar filer.
 
 |Source  |Rapporterad i Aktivitetsutforskaren | Obs!  |
 |---------|---------|---------| 
-|Word, Excel, PowerPoint         |inte tillämpligt         |
-|Outlook         |inte tillämpligt         |
-|SharePoint Online, OneDrive         |inte tillämpligt         |
-|Exchange         |inte tillämpligt         |
-|Enhetlig AIP-klient         |inte tillämpligt       |
-|AIP unified scanner         |Ja         |Åtgärden för *AIP-identifiering* mappas till de filer som *identifierats i* aktivitetsutforskaren|
-|MIP SDK         |Ja         |Åtgärden för att *identifiera AIP* mappas till den fil *som identifierats* i aktivitetsutforskaren|
-|RMS-tjänst         |inte tillämpligt         |
-|Power BI för skrivbordet och på webben         |inte tillämpligt         |
-|MCAS     |inte tillämpligt         |         |
+|Word, Excel, PowerPoint         |ej tillämpligt         |
+|Outlook         |ej tillämpligt         |
+|SharePoint Online, OneDrive         |ej tillämpligt         |
+|Exchange         |ej tillämpligt         |
+|Enhetlig AIP-klient         |ej tillämpligt       |
+|AIP unified scanner         |ja         |Åtgärden för *AIP-identifiering* mappas till de filer som *identifierats i* aktivitetsutforskaren|
+|MIP SDK         |ja         |Åtgärden för att *identifiera AIP* mappas till den fil *som identifierats* i aktivitetsutforskaren|
+|RMS-tjänst         |ej tillämpligt         |
+|Power BI dator och webb         |ej tillämpligt         |
+|MCAS     |ej tillämpligt         |         |
 
 
 ## <a name="sensitivity-label-file-renamed"></a>Känslighetsetikettsfil har bytt namn
@@ -137,36 +137,36 @@ Den här händelsen genereras varje gång ett dokument med en känslighetsetiket
 
 |Source  | Rapporterad i Aktivitetsutforskaren | Obs!  |
 |---------|---------|---------| 
-|Word, Excel, PowerPoint         |Ja         |
-|Outlook         |inte tillämpligt         |
+|Word, Excel, PowerPoint         |ja         |
+|Outlook         |ej tillämpligt         |
 |SharePoint Online, OneDrive         |Nej        |
-|Exchange         |inte tillämpligt         |
+|Exchange         |ej tillämpligt         |
 |Enhetlig AIP-klient         |Nej         |
 |AIP unified scanner         |Nej         |
 |MIP SDK         |Nej         |
 |RMS-tjänst         |Nej      |
-|Power BI för skrivbordet och på webben         |Nej         |
+|Power BI dator och webb         |Nej         |
 |MCAS     |Nej         |         |
 
 
-## <a name="sensitivity-label-file-removed"></a>Känslighetsetikettsfil har tagits bort
+## <a name="file-removed"></a>Filen har tagits bort
 
 Händelsen genereras varje gång AIP-skannern upptäcker att en tidigare skannad fil har tagits bort.
 
 |Source  |Rapporterad i Aktivitetsutforskaren | Obs!  |
 |---------|---------|---------| 
-|Word, Excel, PowerPoint         |inte tillämpligt         |
-|Outlook         |inte tillämpligt         |
-|SharePoint Online, OneDrive         |inte tillämpligt           |
-|Exchange         |inte tillämpligt         |
-|Enhetlig AIP-klient         |inte tillämpligt            |
-|AIP unified scanner         |Ja         |
-|MIP SDK         |inte tillämpligt            |
-|RMS-tjänst         |inte tillämpligt         |
-|Power BI för skrivbordet och på webben         |inte tillämpligt  |
-|MCAS     |inte tillämpligt        |         |
+|Word, Excel, PowerPoint         |ej tillämpligt         |
+|Outlook         |ej tillämpligt         |
+|SharePoint Online, OneDrive         |ej tillämpligt           |
+|Exchange         |ej tillämpligt         |
+|Enhetlig AIP-klient         |ej tillämpligt            |
+|AIP unified scanner         |ja         |
+|MIP SDK         |ej tillämpligt            |
+|RMS-tjänst         |ej tillämpligt         |
+|Power BI dator och webb         |ej tillämpligt  |
+|MCAS     |ej tillämpligt        |         |
 
-### <a name="sensitivity-label-protection-applied"></a>Skydd mot känslighetsetikett används
+### <a name="protection-applied"></a>Skydd tillämpat
 
 Den här händelsen genereras första gången skydd läggs till manuellt för ett objekt som inte har en etikett.
 
@@ -174,16 +174,16 @@ Den här händelsen genereras första gången skydd läggs till manuellt för et
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |Nej         |
 |Outlook         |Nej         |
-|SharePoint Online, OneDrive         |inte tillämpligt           |
+|SharePoint Online, OneDrive         |ej tillämpligt           |
 |Exchange         |Nej       |
-|Enhetlig AIP-klient         |Ja            |
-|AIP unified scanner         |inte tillämpligt         |
-|MIP SDK         |Ja            |
-|RMS-tjänst         |inte tillämpligt         |
-|Power BI för skrivbordet och på webben         |inte tillämpligt            |
-|MCAS     |inte tillämpligt        |         |
+|Enhetlig AIP-klient         |ja            |
+|AIP unified scanner         |ej tillämpligt         |
+|MIP SDK         |ja            |
+|RMS-tjänst         |ej tillämpligt         |
+|Power BI dator och webb         |ej tillämpligt            |
+|MCAS     |ej tillämpligt        |         |
 
-## <a name="sensitivity-label-protection-changed"></a>Känslighetsetikettsskydd har ändrats
+## <a name="protection-changed"></a>Skydd har ändrats
 
 Den här händelsen genereras varje gång skyddet för ett dokument utan etikett ändras manuellt.
 
@@ -191,16 +191,16 @@ Den här händelsen genereras varje gång skyddet för ett dokument utan etikett
 |---------|---------| 
 |Word, Excel, PowerPoint         |Nej         |
 |Outlook         |Nej         |
-|SharePoint Online, OneDrive         |inte tillämpligt           |
+|SharePoint Online, OneDrive         |ej tillämpligt           |
 |Exchange         |Nej       |
-|Enhetlig AIP-klient         |Ja            |
-|AIP unified scanner         |inte tillämpligt         |
-|MIP SDK         |Ja            |
-|RMS-tjänst         |inte tillämpligt         |
-|Power BI för skrivbordet och på webben         |inte tillämpligt            |
-|MCAS     |inte tillämpligt        |
+|Enhetlig AIP-klient         |ja            |
+|AIP unified scanner         |ej tillämpligt         |
+|MIP SDK         |ja            |
+|RMS-tjänst         |ej tillämpligt         |
+|Power BI dator och webb         |ej tillämpligt            |
+|MCAS     |ej tillämpligt        |
 
-## <a name="sensitivity-label-protection-removed"></a>Skydd mot känslighetsetikett har tagits bort
+## <a name="protection-removed"></a>Skydd har tagits bort
 
 Den här händelsen genereras varje gång skyddet för ett dokument utan etikett ändras manuellt.
 
@@ -208,78 +208,78 @@ Den här händelsen genereras varje gång skyddet för ett dokument utan etikett
 |---------|---------| 
 |Word, Excel, PowerPoint         |Nej         |
 |Outlook         |Nej         |
-|SharePoint Online, OneDrive         |inte tillämpligt           |
+|SharePoint Online, OneDrive         |ej tillämpligt           |
 |Exchange         |Nej       |
-|Enhetlig AIP-klient         |Ja            |
-|AIP unified scanner         |inte tillämpligt         |
-|MIP SDK         |Ja            |
-|RMS-tjänst         |inte tillämpligt         |
-|Power BI för skrivbordet och på webben         |inte tillämpligt            |
-|MCAS     |inte tillämpligt        |
+|Enhetlig AIP-klient         |ja            |
+|AIP unified scanner         |ej tillämpligt         |
+|MIP SDK         |ja            |
+|RMS-tjänst         |ej tillämpligt         |
+|Power BI dator och webb         |ej tillämpligt            |
+|MCAS     |ej tillämpligt        |
 
-## <a name="sensitivity-label-dlp-policy-matched"></a>DLP-princip matchad med känslighetsetikett
+## <a name="dlp-policy-matched"></a>Matchad DLP-princip
 
-Den här händelsen genereras varje gång en DLP-princip matchas.
+Den här händelsen genereras varje gång en DLP-princip matchas i ett dokument eller e-postmeddelande.
 
 |Source  |Rapporterad i Aktivitetsutforskaren |
 |---------|---------| 
-|Exchange         |Ja       |
-|SharePoint Online|Ja          |
-|OneDrive |Ja|
-|Teams |Ja   |
-|Windows 10-enheter         |Ja |
+|Exchange         |ja       |
+|SharePoint Online|ja          |
+|OneDrive |ja|
+|Teams |ja   |
+|Windows 10-enheter         |ja |
 |MAC         |Nej     |
 |lokalt         |Nej|
 |MCAS     |Nej        | 
 
-Händelserna för Windows 10-enheter (slutpunkt DLP) är:
+Händelserna för Windows 10 enheter (Endpoint DLP) är:
 
 - fil borttagna
 - fil skapad
-- fil som kopierats till Urklipp
+- fil kopierad till Urklipp
 - fil ändrad
 - fil som lästs
 - fil utskriven
 - filen har bytt namn
-- fil som kopierats till nätverksresurs
+- fil kopierad till nätverksresurs
 - fil som används av ej tillkomlig app
 
 
 ## <a name="retention-label-applied"></a>Bevarandeetikett tillämpad 
 
-Den här händelsen genereras varje gång ett dokument utan etikett sätts på etiketten eller om ett e-postmeddelande skickas med en etikett.
+Den här händelsen genereras varje gång ett dokument utan etiketter etiketteras eller ett e-postmeddelande skickas med en bevarandeetikett.
 
-- Den fångas när du sparar i Office-program och webbprogram.
+- Den sparas när du sparar ett dokument och när den skickas till ett e-postmeddelande.
 
 |Source  |Rapporterad i Aktivitetsutforskaren |
 |---------|---------| 
 |Exchange         |Nej       |
-|SharePoint Online|Ja          |
-|OneDrive |Ja|
+|SharePoint Online|ja          |
+|OneDrive |ja|
 
 ## <a name="retention-label-changed"></a>Bevarandeetikett har ändrats
 
 Händelsen genereras varje gång en etikett uppdateras i ett dokument eller e-postmeddelande.
 
-- Filen sparas när den sparas.
+- Den sparas när du sparar ett dokument och när den skickas till ett e-postmeddelande.
 
 |Source  |Rapporterad i Aktivitetsutforskaren |
 |---------|---------| 
 |Exchange         |Nej       |
-|SharePoint Online|Ja          |
-|OneDrive |Ja|
+|SharePoint Online|ja          |
+|OneDrive |ja|
  
 ## <a name="retention-label-removed"></a>Bevarandeetikett borttagen
 
 Händelsen genereras varje gång en etikett tas bort från en fil eller ett dokument.
 
-- Filen sparas när den sparas.
+- Den sparas när du sparar ett dokument och när den skickas till ett e-postmeddelande.
 
 |Source  |Rapporterad i Aktivitetsutforskaren |
 |---------|---------| 
 |Exchange         |Nej       |
-|SharePoint Online|Ja          |
-|OneDrive |Ja|
+|SharePoint Online|ja          |
+|OneDrive |ja|
 
 
 ## <a name="known-issues"></a>Kända problem
@@ -288,4 +288,4 @@ Händelsen genereras varje gång en etikett tas bort från en fil eller ett doku
 
 - Justeringstexten är för närvarande inte tillgänglig vid känslighetsetiketts nedgradering från Sharepoint och OneDrive.  
 
-- Typer av känslig information är för närvarande inte tillgängliga för aktiviteter med automatisk etikett från Word, Excel, PowerPoint och Outlook, samt SharePoint Online och OneDrive.
+- Typer av känslig information är för närvarande inte tillgängliga för aktiviteter med automatisk etikett från Word, Excel, PowerPoint och Outlook samt SharePoint Online och OneDrive.

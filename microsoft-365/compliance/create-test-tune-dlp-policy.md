@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: I den här artikeln får du lära dig att skapa, testa och finjustera en DLP-princip enligt organisationens behov.
-ms.openlocfilehash: bd4857a2baefb22d789fc713a537d7e4a656718d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e252c7328c59c246f739caf4b70acd44de010e42
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "52162398"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532524"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Skapa, testa och justera en DLP-princip
 
@@ -50,7 +50,7 @@ Medlemmar i efterlevnadsteamet som ska skapa DLP-principer behöver behörighet 
 
 Använd rollen **Endast visad DLP-efterlevnadshantering** för att skapa rollgrupper med visningsbehörigheter till DLP-principer och DLP-rapporter.
 
-Mer information finns i [Ge användarna tillgång till Office 365 kompatibilitetscenter.](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)
+Mer information finns i [Ge användarna tillgång till Office 365 kompatibilitetscenter.](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
   
 De här behörigheterna krävs för att skapa och tillämpa en DLP-princip för att inte tillämpa principer.
 
@@ -152,7 +152,7 @@ När du redigerar en regel i en DLP-princip kan du ändra:
 - Villkoren, inklusive typ och antal förekomster av känsliga data som utlöser regeln.
 - De åtgärder som vidtas, till exempel att begränsa åtkomsten till innehållet.
 - Användarmeddelanden, som är principtips som visas för användaren i deras e-postklient eller webbläsare.
-- Användaren åsidosätter, vilket avgör om användarna kan välja att fortsätta med sin e-post- eller fildelning ändå.
+- Användarens åsidosättning avgör om användarna ändå kan välja att fortsätta med e-post- eller fildelningen.
 - Incidentrapporter, för att meddela administratörerna.
 
 ![Alternativ för att redigera delar av en regel](../media/DLP-create-test-tune-editing-options.png)
@@ -199,14 +199,12 @@ Det här fallet med körkort är ett bra exempel på hur du tar dig till den hä
 
 
 Ett alternativ är att ta bort den australiensiska drivrutinens licensinformationstyp från policyn. Den finns där eftersom den ingår i DLP-principmallen, men vi tvingas inte använda den. Om du bara är intresserad av skattefilnummer och inte av körkort kan du ta bort det. Du kan till exempel ta bort den från regeln om låg volym i principen, men låta den vara i högvolymregeln så att listor med licenser för flera drivrutiner fortfarande identifieras.
-
-![Alternativ för att ta bort känslig informationstyp från regel](../media/DLP-create-test-tune-delete-low-volume-rule.png)
  
-Ett annat alternativ är att helt enkelt öka antalet förekomster, så att en låg volym på drivrutinens licenser bara identifieras när det finns flera instanser.
+Ett annat alternativ är att öka antalet förekomster, så att en låg volym på drivrutinens licenser bara identifieras när det finns flera instanser.
 
 ![Alternativ för att redigera antalet förekomster](../media/DLP-create-test-tune-edit-instance-count.png)
 
-Förutom att ändra antalet förekomster kan du också justera matchningsprecisionen (eller konfidensnivån). Om typen av känslig information har flera mönster kan du justera matchningsprecisionen i regeln så att regeln bara matchar vissa mönster. Om du till exempel vill minska falska positiva resultat kan du ställa in matchningsprecisionen för regeln så att den bara matchar mönstret med högst konfidensnivå. Att förstå hur konfidensnivån beräknas är lite knepigt (och utanför det här inläggets område), men här är en bra beskrivning av hur du kan använda konfidensnivån för [att justera dina regler.](data-loss-prevention-policies.md#match-accuracy)
+Förutom att ändra antalet förekomster kan du också justera matchningsprecisionen (eller konfidensnivån). Om typen av känslig information har flera mönster kan du justera matchningsprecisionen i regeln så att regeln bara matchar vissa mönster. Om du till exempel vill minska falska positiva resultat kan du ställa in matchningsprecisionen för regeln så att den bara matchar mönstret med högst konfidensnivå. Mer information om konfidensnivåer finns i [Så här använder du konfidensnivån för att justera dina regler.](data-loss-prevention-policies.md#match-accuracy)
 
 Om du vill ha ännu lite mer avancerat kan du anpassa alla typer av känslig information – du kan till exempel ta bort "Sydney NSW" från listan med nyckelord för Australiens drivrutinslicensnummer [,](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)för att eliminera den falska positiva utlösta ovanstående. Mer information om hur du gör det med hjälp av XML och PowerShell finns i Anpassa en inbyggd typ av [känslig information.](customize-a-built-in-sensitive-information-type.md)
 

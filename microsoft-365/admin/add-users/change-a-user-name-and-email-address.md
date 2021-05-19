@@ -22,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: 'Läs om hur en global administratör kan ändra en användares e-postadress och visningsnamn. '
-ms.openlocfilehash: a785ef17f0823429ad5eb216a330dc6f04dc7761
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+description: 'Mer information om hur en global administratör i Microsoft 365 kan ändra en användares e-postadress och visningsnamn när användarens namn ändras. '
+ms.openlocfilehash: 2614e0ae53e5ff1cf08ded384e7470cc5967e682
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291025"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535992"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Ändra ett användarnamn och en e-postadress
 
@@ -251,8 +251,10 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
   
 Om du vill veta hur du ändrar ett användarnamn i Active Directory i Windows Server 2003 och tidigare kan du läsa [Ändra namn på ett användarkonto](/previous-versions/windows/it-pro/windows-server-2003/cc772952(v=ws.10)).
   
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-content"></a>Relaterat innehåll
 
-[Administratörer: Återställa ett lösenord för en eller flera användare](reset-passwords.md)
+[Administratörer: Återställa ett lösenord för en eller flera användare](reset-passwords.md) (artikel)
   
-[Lägga till ytterligare en e-postadress för en användare](../email/add-another-email-alias-for-a-user.md)
+[Lägga till ytterligare en e-postadress för en användare](../email/add-another-email-alias-for-a-user.md) (artikel)
+
+[Skapa en delad postlåda](../email/create-a-shared-mailbox.md) (artikel)

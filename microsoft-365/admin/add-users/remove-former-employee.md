@@ -24,41 +24,29 @@ search.appverid:
 - MET150
 - MOE150
 description: Följ stegen i den här lösningen för att ta bort en tidigare anställd Microsoft 365 och skydda organisationens data.
-ms.openlocfilehash: 4b4cf59fdce81b3098ee333095daa8e1af1cd5c5
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 79baf5cbd94d555c1dff1859f5045cde3dbcfdc0
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241742"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535917"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Översikt: Ta bort en tidigare anställd och säkra data
 
 En fråga vi ofta får är "Vad ska jag göra för att skydda data och skydda åtkomsten när en anställd lämnar organisationen?" I den här artikeln förklarar vi hur du blockerar åtkomst till Microsoft 365, åtgärder du bör vidta för att skydda dina data och hur du ger andra anställda åtkomst till data.
 
-Titta på en kort video om att ta bort en anställd. <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
-
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](../../business-video/index.yml).
-
-Så här hindrar du en anställd från att logga in:
-
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
-2. Markera rutan bredvid användarens namn och välj sedan **Återställ lösenord**.
-3. Ange ett nytt lösenord och välj sedan **Återställ**. (Skicka det inte till dem.)
-4. Välj användarens namn för att gå till egenskapsfönstret och välj Initiera ut logga **ut på fliken Konto.** 
-
-> [!NOTE]
-> Du måste vara global administratör för att kunna starta ut logga ut.
-
-Inom en timme – eller efter att han eller hon lämnar den Microsoft 365 aktuella sidan de befinner sig på – uppmanas de att logga in igen. En åtkomsttoken är bra i en timme, så tidslinjen beror på hur mycket tid som återstår för den tokenen och om de navigerar från den aktuella webbsidan.
-
-> [!IMPORTANT]
-> Vi har numrerat stegen i den här lösningen och du inte behöver slutföra lösningen i exakt ordning, men vi rekommenderar att du utför stegen så här.
+:::image type="content" source="../../media/delete-user-overview.png" alt-text="Skärmbild: Översiktssteg för att ta bort en tidigare anställd":::
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
 Du måste vara global administratör för att slutföra stegen i den här lösningen.
+
+## <a name="solution-remove-a-former-employee"></a>Lösning: Ta bort en tidigare anställd
+
+> [!IMPORTANT]
+> Vi har numrerat stegen i den här lösningen och du inte behöver slutföra lösningen i exakt ordning, men vi rekommenderar att du utför stegen så här.
+
+:::image type="content" source="../../media/delete-user-account.png" alt-text="Skärmbild: Steg för att ta bort en tidigare anställd från organisationen":::
 
 |||
 |:-----|:-----|

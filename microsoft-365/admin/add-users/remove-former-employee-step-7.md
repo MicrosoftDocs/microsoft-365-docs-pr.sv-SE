@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Följ de här stegen om du vill ta bort en tidigare anställds användarkonto.
-ms.openlocfilehash: 0afa9b112919d2668d7553ac5bcf08e664bc1749
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 5ca428079091c4af44ef1efa9be3d7340e254995
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244293"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535944"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Steg 7 – Ta bort en tidigare anställds användarkonto
 
@@ -43,7 +43,13 @@ När du har sparat och kommit åt den tidigare anställdes alla användardata ka
 3. Under användarens namn väljer du Ta **bort användare.** Välj de alternativ du vill använda för användaren och välj sedan Ta **bort användare.** Om du redan har gett en annan användare åtkomst till den här användarens e-OneDrive behöver du inte göra det igen här.
 
 När du tar bort en användare blir dennes konto inaktivt i ca 30 dagar. Du har tills dess på dig att återställa kontot innan det tas bort permanent.
-  
+
+## <a name="watch-delete-a-former-employees-user-account"></a>Titta: Ta bort en tidigare anställds användarkonto
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR]
+
+Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](../../business-video/index.yml).
+
 ## <a name="does-your-organization-use-active-directory"></a>Använder ni Active Directory i organisationen?
 
 Om din organisation synkroniserar användarkonton till Microsoft 365 från en lokal Active Directory-miljö måste du ta bort och återställa dessa användarkonton i den lokala Active Directory-tjänsten. Du kan inte ta bort eller återställa dem i Office 365.
@@ -81,3 +87,5 @@ Här finns information om hur du avslutar en anställds e-post (Exchange).
 ## <a name="related-articles"></a>Relaterade artiklar
 
 [Återställa en användare](restore-user.md)
+
+[Återställa lösenord](reset-passwords.md)

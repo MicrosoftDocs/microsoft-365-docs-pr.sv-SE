@@ -19,13 +19,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: Få regelbundna rapporter om hur personer i organisationen använder Microsoft 365-tjänster. Med instrumentpanelen för översikt över användning kan du granska varje diagram för fler insikter.
-ms.openlocfilehash: 3133e468ef99114b1c89e16fbd0f4b5170af30d0
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+description: Få regelbundna rapporter om hur personer i organisationen använder Microsoft 365-tjänster och utforska varje diagram för mer information.
+ms.openlocfilehash: 917a44f4b6f7458c50ac193b95c7751c66c9e7cd
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759816"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530976"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365-rapporter i administrationscentret
 
@@ -199,6 +199,10 @@ När du stänger en användares konto tar Microsoft bort användarens användnin
   
 När du däremot markerar en viss dag (se nummer 3), upp till 28 dagar från dagens datum, visar rapporten användarens användning för den dagen i tabellen med användarinformation (se nummer 2).
   
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-content"></a>Relaterat innehåll
 
-[Rapporter i Säkerhets- och efterlevnadscenter](../../compliance/reports-in-security-and-compliance.md)
+[Rapporter i Säkerhets- &amp; och efterlevnadscenter](../../compliance/reports-in-security-and-compliance.md) (artikel)
+
+[Användningsanalyser för Microsoft 365](../usage-analytics/usage-analytics.md) (artikel)
+
+[Anpassa rapporterna i användningsanalysen för Microsoft 365](../usage-analytics/customize-reports.md) (artikel)
