@@ -21,14 +21,14 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: Lär dig hur man tilldelar licenser till användare.
+description: Tilldela licenser beroende på om du vill tilldela produktlicenser till specifika användare eller tilldela användarlicenser till en viss produkt.
 ms.date: 04/26/2021
-ms.openlocfilehash: ef8169658c6aef03cf8ff0cf9714c980ce63b060
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 707c1c952aa737f0aa91d886e9fa304eabe26321
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332492"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537541"
 ---
 # <a name="assign-licenses-to-users"></a>Tilldela licenser till användare
 
@@ -53,20 +53,22 @@ När du tilldelar licenser på sidan **Licenser** tilldelar du licenser för en 
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> i administrationscentret.
+1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> i administrationscentret.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscenter</a> gå till sidan för **Fakturering**>**Licenser**.
+ 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenser</a> i Administrationscenter.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscenter</a> gå till sidan för **Fakturering**>**Licenser**.
+ 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenser</a> i administrationscentret.
 
 ::: moniker-end
+
 
 2. Välj en produkt.
 3. Välj **Tilldela licenser** på sidan produktinformation.
@@ -80,21 +82,22 @@ Vid konflikt visas ett meddelande som talar om vad problemet är och hur du åtg
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> i administrationscentret.
+1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> i administrationscentret.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscenter</a> gå till sidan för **Fakturering**>**Licenser**.
+ 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenser</a> i Administrationscenter.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscenter</a> gå till sidan för **Fakturering**>**Licenser**.
+ 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenser</a> i administrationscentret.
 
 ::: moniker-end
+
 
 2. På sidan **Licenser** väljer du raden för en enskild användare.
 3. I det högra fönstret markerar eller avmarkerar du de appar och tjänster som du vill ge åtkomst till eller ta bort åtkomst för.
@@ -114,18 +117,19 @@ När du använder sidan **Aktiva användare** för att tilldela licenser tilldel
 
 ::: moniker range="o365-germany"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a> går du till sidan **Fakturering** > **Aktiva användare**.
+ 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a> går du till sidan **Fakturering** > **Aktiva användare**.
+ 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
 
 ::: moniker-end
 
+
 2. Markera cirklarna bredvid namnen på de användare som du vill tilldela licenser till.
-3. Välj **Fler alternativ (...)** högst upp och välj sedan **Hantera produktlicenser**.
+3. Högst upp väljer du de tre punkterna (fler åtgärder) och väljer sedan **Hantera produktlicenser**.
 4. I fönstret **Hantera produktlicenser** väljer du **Lägg till i befintliga produktlicenstilldelningar** \> **Nästa**.
 5. I fönstret **Lägg till i befintliga produkter** ställer du reglaget i läget **På** för den licens som du vill att de valda användarna ska ha.\
     Som standard tilldelas alla tjänster, som är associerade till de licenserna, automatiskt till användarna. Du kan begränsa vilka tjänster som är tillgängliga för användarna. Ställ reglagen i läget **Av** för de tjänster som du inte vill att användarna ska ha.
@@ -145,15 +149,16 @@ När du använder sidan **Aktiva användare** för att tilldela licenser tilldel
 
 ::: moniker range="o365-germany"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a> går du till sidan **Fakturering** > **Aktiva användare**.
+ 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a> går du till sidan **Fakturering** > **Aktiva användare**.
+ 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
 
 ::: moniker-end
+
 
 2. Markerar raden för den användare som du vill tilldela en licens till.
 3. I det högra fönstret väljer du **Licenser och appar**.

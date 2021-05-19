@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Lär dig hur du tar bort licenser från användarkonton.
 ms.date: 07/01/2020
-ms.openlocfilehash: 6f2cbf65e1d6a38a4b1ed00976d4dd473d7331e9
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 5ef28b3065703ec224e6426c4fdbfffdb5269b22
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332420"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537505"
 ---
 # <a name="unassign-licenses-from-users"></a>Ta bort tilldelningen av licenser från användare
 
@@ -47,18 +47,19 @@ När du använder sidan **Licenser** för att ta bort licenser tar du bort licen
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> i administrationscentret.
+1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> i administrationscentret.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscenter</a> gå till sidan för **Fakturering**>**Licenser**.
+ 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenser</a> i administrationscentret.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscenter</a> gå till sidan för **Fakturering**>**Licenser**.
+ 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenser</a> i administrationscentret.
 
 ::: moniker-end
 
@@ -72,22 +73,22 @@ När du använder sidan **Licenser** för att ta bort licenser tar du bort licen
 När du använder sidan **Aktiva användare** för att ta bort licenser tar du bort produktlicenser från användare.
 
 ### <a name="unassign-licenses-from-one-user"></a>Ta bort licenser från en användare
-  
+
 ::: moniker range="o365-worldwide"
 
-1. I administrationscentret går du till sidan **Användare** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
+1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a> går du till sidan **Fakturering** > **Aktiva användare**.
+ 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a> går du till sidan **Fakturering** > **Aktiva användare**.
+ 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
 
 ::: moniker-end
 
@@ -99,24 +100,24 @@ När du använder sidan **Aktiva användare** för att ta bort licenser tar du b
 
 ::: moniker range="o365-worldwide"
 
-1. I administrationscentret går du till sidan **Användare** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
+1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a> går du till sidan **Fakturering** > **Aktiva användare**.
+ 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. I <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a> går du till sidan **Fakturering** > **Aktiva användare**.
+ 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
 
 ::: moniker-end
 
 2. Markera cirklarna bredvid namnen på de användare som du vill ta bort licenser för.
-3. Välj **Fler alternativ (...)** högst upp och välj sedan **Hantera produktlicenser**.
+3. Högst upp väljer du de tre punkterna (fler åtgärder) och sedan **Hantera produktlicenser.**
 4. I fönstret **Hantera produktlicenser** väljer du **Ersätt befintliga produktlicenstilldelningar** \> **Nästa**.
 5. Längst ned i fönstret **Ersätt befintliga produkter** markerar du kryssrutan Ta bort alla **produktlicenser** från de markerade användarna och väljer sedan **Ersätt** \> **Stäng.**
 

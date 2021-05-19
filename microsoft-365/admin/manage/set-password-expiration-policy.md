@@ -22,26 +22,19 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
-description: Lär dig hur du anger en förfalloprincip för lösenord i organisationen i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 14ff08126533d5c530fb56761a2ef1676d5864b8
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: Lär dig hur en administratör kan ange en förfalloprincip för lösenord för ditt företag, din skola eller en ideell förening i administrationscentret för Microsoft 365.
+ms.openlocfilehash: 5469d4dcd75bee2e6f8a188aa6f50d18ce6e06c4
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903160"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537493"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Ange förfalloprincip för lösenord i organisationen
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../microsoft-365-admin-center-preview.md?view=o365-worldwide).
-
-::: moniker-end
-
 ## <a name="before-you-begin"></a>Innan du börjar
 
-Den här artikeln är avsedd för personer som anger en förfalloprincip för lösenord för ett företag, en skola eller en ideell förening. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörskonto?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview).
+Den här artikeln är avsedd för personer som anger en förfalloprincip för lösenord för ett företag, en skola eller en ideell förening. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörskonto?](../../business-video/admin-center-overview.md).
 
 Som administratör kan du göra så att användarlösenord upphör efter ett visst antal dagar, eller ställa in så att lösenord aldrig upphör. Som standard är lösenord inställda på att aldrig upphöra att gälla för din organisation.
 
@@ -49,7 +42,7 @@ Aktuella undersökningar tyder starkt på att tvingande lösenordsändringar gö
 
 Du måste vara [global administratör](../add-users/about-admin-roles.md) för att utföra de här stegen.
 
-Om du är en användare har du inte behörighet att ange att ditt lösenord aldrig ska upphöra. Be den tekniska supporten på ditt företag eller din skola att göra stegen i denna artikel åt dig.
+Om du är en användare har du inte behörighet att ange att ditt lösenord aldrig ska upphöra. Be den tekniska supporten på ditt företag eller din skola att göra det åt dig.
 
 ## <a name="set-password-expiration-policy"></a>Ange förfalloprincip för lösenordet
 
@@ -90,12 +83,12 @@ Du kan konfigurera fler lösenordsprinciper och begränsningar i Azure Active Di
 
 ## <a name="update-password-policy"></a>Uppdatera lösenordspolicy
 
-Set-MsolPasswordPolicy cmdlet uppdaterar lösenordspolicyn för en specificerad domän eller hyresgäst. Två inställningar krävs; den första är att ange hur lång tid ett lösenord förblir giltigt innan det måste ändras och det andra är att ange antalet dagar innan lösenordets utgångsdatum som kommer att trigga när användare kommer att få sitt första meddelande om att deras lösenord snart kommer att löpa ut.
+Den ange-MsolPasswordPolicy cmdlet uppdaterar lösenordsprincipen för en specifik domän eller klientorganisation. Två inställningar krävs; den första är att ange hur lång tid ett lösenord förblir giltigt innan det måste ändras och det andra är att ange antalet dagar innan lösenordets utgångsdatum som kommer att trigga när användare kommer att få sitt första meddelande om att deras lösenord snart kommer att löpa ut.
 
 Information om hur du uppdaterar lösenordspolicyn för en specifik domän eller hyresgäst finns i [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0).
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Låt användare återställa sina egna lösenord](../add-users/let-users-reset-passwords.md)
+[Låt användare återställa sina egna lösenord](../add-users/let-users-reset-passwords.md) (artikel)
 
-[Återställa lösenord](../add-users/reset-passwords.md)
+[Återställ lösenord](../add-users/reset-passwords.md) (artikel)

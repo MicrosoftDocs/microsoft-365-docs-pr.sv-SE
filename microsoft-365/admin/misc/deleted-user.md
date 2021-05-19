@@ -20,49 +20,41 @@ search.appverid:
 - MOE150
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
-description: Lär dig hur du tar bort eller återställer en användares Microsoft 365-konto.
-ms.openlocfilehash: 3b078b782246229d1ddfb1f1fa51282140e71eb0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Lär dig hur du tar bort eller återställer en användares Microsoft 365 konto.
+ms.openlocfilehash: 56d53a718465d369d4e4e0202c4c97939b70e258
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914792"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537457"
 ---
 # <a name="quick-help-deleted-user"></a>Snabbhjälp: Borttagen användare
 
 Du kan behöva ta bort en [användare](../add-users/add-users.md) från organisationen. Vanligtvis tar du bort en användare när den personen lämnar organisationen. 
   
 ## <a name="delete-a-user"></a>Ta bort en användare
-
-::: moniker range="o365-worldwide"
   
+::: moniker range="o365-worldwide"
+
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
 
-2. Markera en användare och välj sedan Fler alternativ (**...**) **ovanför listan med** användare och välj sedan Ta bort **användare.**
-  
-3. Välj Ta bort användare i **bekräftelsefönstret för borttagning.** <br/>[Läs hela artikeln.](../add-users/delete-a-user.md)
-  
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.  
-
-2. Markera en användare och välj sedan  Mer Ta bort en användare ovanför > **listan med användare.**
-  
-3. Välj Ta bort användare i **bekräftelsefönstret för borttagning.** <br/>[Läs hela artikeln.](../add-users/delete-a-user.md)
+ 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>. 
-
-2. Markera en användare och välj sedan  Mer Ta bort en användare ovanför > **listan med användare.**
-  
-3. Välj Ta bort användare i **bekräftelsefönstret för borttagning.** <br/>[Läs hela artikeln.](../add-users/delete-a-user.md)
+ 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
 
 ::: moniker-end
+
+2. Välj en användare och välj sedan de tre punkterna (fler åtgärder) ovanför listan med användare och välj sedan Ta **bort användare.**
+  
+3. Välj Ta bort användare i **bekräftelsefönstret för borttagning.** <br/>[Läs hela artikeln.](../add-users/delete-a-user.md)
 
   
 ## <a name="restore-a-user"></a>Återställa en användare
@@ -73,9 +65,9 @@ Du kan återställa användare genom att söka efter  borttagna på startsidan o
 
 En borttagen [användare](../add-users/add-users.md) är ett arbets- eller skolkonto som du tar bort från organisationen. 
   
-## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>Frigör borttagningen av en användare Microsoft 365-licensen för användaren?
+## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>Frigör borttagningen av en användare användarens Microsoft 365 licens?
 
-Ja, när du tar bort användaren frigör du den Microsoft 365-licens som tilldelats den användaren. Du kan sedan tilldela licensen till en annan användare. [Läs hela artikeln](../../commerce/licenses/buy-licenses.md).
+Ja, när du tar bort användaren frigör Microsoft 365 licens som tilldelats den användaren. Du kan sedan tilldela licensen till en annan användare. [Läs hela artikeln](../../commerce/licenses/buy-licenses.md).
   
 ## <a name="i-had-a-deleted-user-listed-in-deleted-users-and-then-it-disappeared-what-happened"></a>En borttagen användare visades i Borttagna användare men försvann sedan därifrån. Vad hände?
 

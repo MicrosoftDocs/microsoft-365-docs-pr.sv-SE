@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Övervaka och hantera borttagning av innehåll, oavsett om du använder en borttagningsgranskning eller om innehåll tas bort automatiskt enligt de inställningar du har konfigurerat.
-ms.openlocfilehash: 13310eca369949e2b66163907be4268120aa0ed0
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: dd03c429bf1b12a4c733c2e6800d0b71ca7a691f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344969"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532174"
 ---
 # <a name="disposition-of-content"></a>Borttagning av innehåll
 
@@ -53,16 +53,24 @@ Dessutom:
 
 - För att visa innehållet i objekt under borttagningsprocessen lägger du till användare i rollgruppen **Innehållsläsare för innehållsutforskaren**. Om användarna inte har behörighet från den här rollgruppen kan de ändå välja en åtgärd för borttagningsgranskning för att slutföra borttagningsgranskningen, men måste göra det utan att kunna visa objektets innehåll i det lilla förhandsgranskningsfönstret i Efterlevnadscentret.
 
-- I förhandsgranskning: Som standard ser varje person som öppnar sidan **Borttagning** objekt som de har tilldelats att granska. För att en administratör för hantering av arkivhandlingar ska kunna se alla objekt som är tilldelade till alla användare samt alla kvarhållningsetiketter som är konfigurerade för dispositionsgranskning: Gå till **Inställningar för hantering av arkivhandlingar** > **Allmänt** > **Säkerhetsgrupp för arkivhandlingshanterare** för att markera och sedan aktivera en e-postaktiverad säkerhetsgrupp som innehåller administratörskonton.
+- I förhandsgranskning: Som standard ser varje person som öppnar sidan **Borttagning** objekt som de har tilldelats att granska. För att en administratör för hantering av arkivhandlingar ska kunna se alla objekt som är tilldelade till alla användare samt alla kvarhållningsetiketter som är konfigurerade för borttagningsgranskning: Gå till **Inställningar för hantering av arkivhandlingar** > **Allmänt** > **Säkerhetsgrupp för arkivhandlingshanterare** för att markera och sedan aktivera en e-postaktiverad säkerhetsgrupp som innehåller administratörskonton.
     
     Microsoft 365-grupper och säkerhetsgrupper som inte är e-postaktiverade stöder inte den här funktionen och kan varken visas eller markeras i listan. Om du behöver skapa en ny e-postaktiverad säkerhetsgrupp använder du länken till Administrationscentret för Microsoft 365 för att skapa den nya gruppen. 
     
     > [!IMPORTANT]
-    > Det går inte att inaktivera den här behörigheten eller ersätta den grupp som du har aktiverat från Efterlevnadscenter. Du kan aktivera en annan e-postaktiverad säkerhetsgrupp med hjälp av cmdleten [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage).
-    > 
-    > Till exempel: `Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionreviewers@contosoi.com`
+    > När du har aktiverat gruppen kan du inte ändra den i efterlevnadscenter. Se nästa avsnitt för hur du aktiverar en annan grupp med PowerShell.
 
 - I förhandsversion: Alternativet **Inställningar för hantering av arkivhandlingar** visas endast för administratörer för hantering av arkivhandlingar. 
+
+#### <a name="enabling-another-security-group-for-disposition"></a>Aktivera en annan säkerhetsgrupp för borttagning
+
+När en säkerhetsgrupp för disposition har aktiverats från **Inställningar för posthantering** i Microsoft 365 Efterlevnadscenter, går det inte att inaktivera denna behörighet för gruppen eller ersätta den valda gruppen i efterlevnadscentret. Du kan aktivera en annan e-postaktiverad säkerhetsgrupp med hjälp av cmdleten [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage).
+
+Till exempel: 
+
+```PowerShell
+Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionreviewers@contosoi.com
+````
 
 ### <a name="enable-auditing"></a>Aktivera granskning
 
@@ -127,7 +135,7 @@ Som granskare anger du en användare eller e-postaktiverad säkerhetsgrupp. Micr
 
 Om du behöver fler än en person för att granska ett objekt i slutet av kvarhållningsperioden väljer du **Lägg till en fas** igen och upprepar konfigurationsprocessen för det antal faser du behöver, med maximalt fem faser. 
 
-I varje enskild fas av borttagningen har alla användare, som du anger för den fasen, behörighet att vidta nästa åtgärd för objektet i slutet av kvarhållningsperioden. De här användarna kan även lägga till andra användare i sin fas för borttagningsgranskningen.
+I varje enskild fas av borttagningen har alla användare, som du anger för den fasen, behörighet att vidta nästa åtgärd för objektet i slutet av kvarhållningsperioden. Dessa användare kan också lägga till andra användare i deras steg för borttagningsgranskning.
 
 > [!NOTE]
 > Befintliga kvarhållningsetiketter som har konfigurerats för borttagningsgranskning kan uppgraderas för att använda borttagningsgranskning i flera steg genom att konfigurera etiketten. I etikettguiden väljer du **Lägg till en fas**, redigerar befintliga granskare eller lägger till nya granskare.
@@ -142,13 +150,17 @@ När du angett granskare bör du komma ihåg att ge dem behörighet för rollen 
 
 ### <a name="how-to-customize-email-messages-for-disposition-review"></a>Så här anpassar du e-postmeddelanden för borttagningsgranskning
 
+Exempel på standard e-postmeddelande skickat till en granskare:
+
+![Exempel på e-postmeddelanden med standardtext när ett objekt är klart för borttagningsgranskning](../media/disposition-review-email.png)
+
 I en förhandsgranskning kan du även anpassa vilka e-postmeddelanden som skickas till borttagningsgranskare som det första meddelandet, samt påminnelser.
 
 På någon av borttagningssidorna i Efterlevnadscentret väljer du **Inställningar för hantering av arkivhandlingar**:  
 
-![Inställningar för hantering av arkivhandlingar](../media/record-management-settings.png)
+![Inställningar för posthantering](../media/record-management-settings.png)
 
-Välj sedan fliken **E-postmallar** och ange om du endast vill använda standardmallar för e-post eller lägga till egen text i standardmallen. Den anpassade texten läggs till i e-postanvisningarna efter informationen om kvarhållningsetiketten, innan nästa steg.
+Välj sedan fliken **Dispositionsmeddelanden** och ange om du endast vill använda standardmallar för e-post eller lägga till egen text i standardmallen. Den anpassade texten läggs till i e-postanvisningarna efter informationen om kvarhållningsetiketten, innan nästa steg.
 
 Text för alla språk kan läggas till, men formatering och bilder stöds inte för närvarande. URL:er och e-postadresser kan anges som text. Beroende på e-postklienten kan de visas som hyperlänkar eller oformaterad text i det anpassade e-postmeddelandet.
 
@@ -162,7 +174,7 @@ Välj **Spara** för att spara ändringarna.
 
 ### <a name="viewing-and-disposing-of-content"></a>Visa och ta bort innehåll
 
-När en granskare meddelas via e-post om att innehållet är klart att granskas går de till fliken **Borttagning** från **Hantering av arkivhandlingar** i Microsoft 365 Efterlevnadscenter. Granskarna kan se hur många objekt för varje kvarhållningsetikett som väntar på borttagning med **Typ** som visar **Väntande borttagning**. De väljer sedan en kvarhållningsetikett och väljer **Öppna i ett nytt fönster** för att visa allt innehåll med den etiketten:
+När en granskare meddelas via e-post om att innehållet är klart att granskas kan de klicka på en länk i e-postmeddelandet som tar dem direkt till sidan **Borttagning** från **Hantering av arkivhandlingar** i Microsoft 365 Efterlevnadscenter. Där kan granskarna se hur många objekt för varje kvarhållningsetikett som väntar på borttagning med **Typ** som visar **Väntande borttagning**. De väljer sedan en kvarhållningsetikett och väljer **Öppna i ett nytt fönster** för att visa allt innehåll med den etiketten:
 
 ![Öppna i nytt fönster för borttagningsgranskning](../media/open-in-new-window.png)
 

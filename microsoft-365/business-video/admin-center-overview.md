@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Läs mer om Microsoft 365 administrationscenter.
-ms.openlocfilehash: 7d355b5064c2a0344ac62653afcae8712dbfc73f
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: 6d7fe36345ebd9234027e943d11266b7bcc2b30f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470430"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537397"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Översikt över administrationscenter för Microsoft 365
 
@@ -47,11 +47,11 @@ Om du har behörighet att komma åt administrationscentret visas **Admin** i lis
 
 Granska de översta åtgärderna åt dig överst i administrationscentret. Olika åtgärder kan visas beroende på vad du redan har konfigurerat, till exempel skapa nya konton, använda Teams, konfigurera e-post och installera Office program. 
  
-Under **Din organisation** på fliken **Användare** finns en lista över personer som kan komma åt appar och tjänster, lägga till nya användare, återställa lösenord eller använda menyn **Fler** åtgärder. Välj en person för att visa eller redigera personens information och inställningar.  
+Under **Din organisation** på **fliken** Användare finns en lista över personer som kan komma åt appar och tjänster, lägga till nya användare, återställa lösenord eller använda menyn med tre punkter (fler åtgärder). Välj en person för att visa eller redigera personens information och inställningar.  
 
-På fliken **Teams** skapa ett nytt team eller hantera befintliga team. Du kan hantera medlemmarna i ett team eller välja **Fler åtgärder om** du vill ändra andra Teams inställningar. 
+På fliken **Teams** skapa ett nytt team eller hantera befintliga team. Du kan hantera medlemmarna i ett team eller välja de tre punkterna (fler åtgärder) om du vill ändra andra Teams inställningar. 
 
-På fliken **Prenumerationer** lägger du till fler produkter, lägger till licenser eller använder menyn **Fler åtgärder** för att ändra licenser eller betalningsmetod.
+På fliken **Prenumerationer** kan du lägga till fler produkter, lägga till licenser eller använda menyn med tre punkter (fler åtgärder) för att ändra licenser eller betalningsmetod.
 
 På fliken **Lär** dig bläddrar du bland videoklipp och artiklar om administrationscentret och andra Microsoft 365 funktioner. Om du vill utforska mer avancerade funktioner i administrationscentret öppnar du navigeringsmenyn och expanderar rubrikerna för att se mer. Välj **Visa alla** om du vill se allt i navigeringsmenyn eller använd sökfältet för att snabbt hitta det du letar efter.
 
@@ -67,7 +67,7 @@ Specialistarbetsytor, som Säkerhet eller Enhetshantering, ger mer detaljerad ko
 
 Du kommer till Microsoft 365 genom att gå [till admin.microsoft.com](https://admin.microsoft.com) eller, om du redan är inloggad, välja startprogrammet och välja **Admin**.
 
-På startsidan kan du skapa kort för aktiviteter som du utför ofta. Om du vill lägga till ett nytt **kort väljer du Lägg** till kort och sedan plustecknet bredvid kortet du vill lägga till. Stäng fönstret när du är klar. Du kan ändra ordning på korten genom att markera och dra dem till den plats där du vill ha dem. Om du vill ta bort ett kort **väljer du Fler** åtgärder och sedan Ta **bort**.
+På startsidan kan du skapa kort för aktiviteter som du utför ofta. Om du vill lägga till ett nytt **kort väljer du Lägg** till kort och sedan plustecknet bredvid kortet du vill lägga till. Stäng fönstret när du är klar. Du kan ändra ordning på korten genom att markera och dra dem till den plats där du vill ha dem. Om du vill ta bort ett kort markerar du de tre punkterna (fler åtgärder) och väljer sedan Ta **bort**.
 
 Om du vill visa fler administrativa uppgifter expanderar du navigeringsmenyn. Du hittar avancerade konfigurationsinställningar i ytterligare administrationscenter längst ned.
 

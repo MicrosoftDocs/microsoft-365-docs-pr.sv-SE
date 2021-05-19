@@ -19,14 +19,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: Lär dig hur du hanterar dina betalningsmetoder i administrationscentret för Microsoft 365.
+description: Köp företagsprodukter eller tjänster från Microsoft med hjälp av ett befintligt betalningssätt, eller genom att lägga till en ny i Administrationscenter för Microsoft 365.
 ms.date: 04/02/2021
-ms.openlocfilehash: b6fe62a70d478a98eb13a17fafb4320afc6b5952
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: bda7eca29b92cdf131c6d3f5a6069ea2be77f6fa
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332012"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537325"
 ---
 # <a name="manage-payment-methods"></a>Hantera betalningsmetoder
 
@@ -87,7 +87,7 @@ Du kan ändra betalningsmetoden som används för att betala för en enstaka pre
 
 1. I administrationscentret går du till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
 2. På fliken **Produkter** hittar du den prenumeration som du vill betala för med den alternativa betalningsmetoden.
-3. Välj **Fler åtgärder** (tre punkter) och välj sedan **Ersätt betalningsmetod**.
+3. Välj de tre punkterna (fler åtgärder) och välj sedan **Ersätt betalningsmetod**.
 4. I fönstret **Ersätt betalningsmetod** väljer du i listrutan en annan betalningsmetod eller väljer att lägga till en betalningsmetod.
 5. Om du lägger till en betalningsmetod anger du kort- eller kontouppgifterna och väljer sedan **Spara**.
 6. Kontrollera att den valda betalningsmetoden är korrekt och välj sedan **Ersätt**.

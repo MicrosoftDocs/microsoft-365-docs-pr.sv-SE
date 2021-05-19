@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Få en översikt över Microsoft 365 Meddelandecenter och dess roll i ändringshanteringen.
-ms.openlocfilehash: af65db32edd56b11adede0e4e690b3f69b07180e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 01e43eb6fa9502c138bfc9ab3595c47ec33ad098
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244425"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537529"
 ---
 # <a name="message-center"></a>Meddelandecenter
 
@@ -249,66 +249,21 @@ Ser du ett meddelande som någon annan måste göra något åt? Du kan dela inne
 
 Behöver du följa upp med en annan administratör för att se till att han/hon är medveten om ändringen och vidtar en åtgärd. Du kan skapa en länk att dela i till exempel e-post eller snabbmeddelanden som kopplar användaren direkt till det meddelandet. Personen du delar länken med måste ha åtkomst till Meddelandecenter. För mer information se [administratörsroller som inte har åtkomst till Meddelandecenter](message-center.md#admin-roles-that-dont-have-access-to-the-message-center). 
 
-::: moniker range="o365-worldwide"
-
 1. Välj meddelandet för att öppna det.
 
 2. Välj **Kopiera länk**.
 
 3. Använd Ctrl + V eller högerklicka och välj **Klistra in** för att infoga länken till vilket dokument du vill.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Välj meddelandet för att öppna det.
-
-2. Välj **Mer** \> **Hämta en länk** från åtgärdsfältet.
-
-3. Tillåt webbsidan att få åtkomst till Urklipp. En direktlänk kopieras till Urklipp.
-
-4. Använd Ctrl + V eller högerklicka och välj **Klistra in** för att infoga länken.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Välj meddelandet för att öppna det.
-
-2. Välj **Kopiera länk**.
-
-3. Använd Ctrl + V eller högerklicka och välj **Klistra in** för att infoga länken till vilket dokument du vill.
-
-::: moniker-end
 
 ## <a name="read-and-unread-states"></a>Läst och oläst
 
 Alla meddelanden i Meddelandecenter som är olästa visas i fetstil. Om du öppnar ett meddelande markeras det som läst. Du kan markera ett meddelande som oläst.
 
-::: moniker range="o365-worldwide"
 
 - På huvudsidan i Meddelandecentret markerar du ellipsen **Fler alternativ** bredvid ett meddelande och väljer sedan **Markera som oläst**.
 
 Det går även att öppna och markera ett meddelande som oläst via detaljfönstret.
   
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Välj meddelandet för att öppna det.
-
-2. Välj **Mer** \> **Markera som oläst**.
-
-3. Stäng meddelandet.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-- På huvudsidan i Meddelandecentret markerar du ellipsen **Fler alternativ** bredvid ett meddelande och väljer sedan **Markera som oläst**.
-
-::: moniker-end
-
 ## <a name="archive-and-restore"></a>Arkivera och återställ
 
 Om du ser ett meddelande som inte gäller dig, eller om du redan har hanterat det, kan du arkivera meddelandet för att ta bort det från inkorgen. Vyn du ser i Meddelandecenter är specifikt för ditt användarkonto, så andra administratörer påverkas inte om du arkiverar meddelandet så att det försvinner från vyn. Det finns två sätt att arkivera ett meddelande.

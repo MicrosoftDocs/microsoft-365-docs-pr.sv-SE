@@ -1,23 +1,24 @@
 ---
 title: Betalningsinformation för Grekland
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Lär dig vart du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 114db97bfeaf7a9bd61936c752cf8c1fe62c4e2e
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: c873131098320253dbf3558c6213168cfca3b6e9
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273734"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536796"
 ---
 # <a name="payment-information-for-greece"></a>Betalningsinformation för Grekland
 
@@ -32,4 +33,4 @@ Betala endast i euro och ange fakturanumret som referens vid betalning.
 **IBAN:** GB31CITI18500812207591  
 **SORTERINGskod:** 185008  
 **Kontonummer:** 12207591  
-**Kontonamn:** MICROSOFT  
+**Kontonamn:** MICROSOFT

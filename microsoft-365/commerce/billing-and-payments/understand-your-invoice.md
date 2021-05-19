@@ -22,12 +22,12 @@ search.appverid: MET150
 description: Lär dig att läsa och förstå fakturan för Microsoft företagsprodukter.
 keywords: faktureringskonton, organisationsinformation, fakturor
 ms.date: 05/04/2021
-ms.openlocfilehash: dc83db458d1d91942352795c9b67578e9f1a2fc2
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: d173df1eac827eb835b8544f64858c28ccf0fb75
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331949"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537313"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Förstå din faktura
 
@@ -143,6 +143,17 @@ Betalningsanvisningarna beror på din betalningsmetod och finns längst ned i fa
 ### <a name="why-dont-i-see-azure-prepayment-as-a-payment-method"></a>Varför ser jag inte Azure-förbetalning som betalningsmetod?
 
 Azure-förbetalning är tillgänglig som betalningsmetod endast för kvalificerade Azure-produkter och -tjänster.
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Förstå din faktura för Microsoft 365 för företag](understand-your-invoice2.md) (artikel)
+
+[Spåra Microsofts kundavtal Azure-kreditsaldo](/azure/billing/billing-mca-check-azure-credits-balance) (artikel)
+
+[Granska microsofts kundavtalsfaktura](/azure/cost-management-billing/understand/review-customer-agreement-bill) (artikel)
+
+[Kom igång med faktureringskontot för Microsoft Kundavtal](/azure/billing/billing-mca-overview) (artikel)
+
 
 ## <a name="need-help-contact-support"></a>Behöver du hjälp? Kontakta support
 

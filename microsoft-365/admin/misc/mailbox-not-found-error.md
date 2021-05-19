@@ -1,5 +1,5 @@
 ---
-title: Felmeddelande om att det inte hittades en postlåda i Outlook på webben
+title: Få ett felmeddelande om att postlådan inte hittades i Outlook på webben
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -8,24 +8,37 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
-description: Lär dig hur du lägger till en licens till olicensierade användare för att åtgärda felet om att postlådan inte hittades.
-ms.openlocfilehash: e5cdb7b48f3634d51dfe1862d07d58a23e125135
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
-ms.translationtype: MT
+description: Felmeddelandet **Det gick inte att hitta postlådan för** innebär att kontot du använde för att ansluta till Outlook på webben inte har en licens för Exchange Online.
+ms.openlocfilehash: 5ae850da3b9a4022c01f8bf4469f5e86f44b10bd
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454331"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537445"
 ---
-# <a name="getting-a-mailbox-not-found-error-in-outlook-on-the-web"></a>Hittade du inget felmeddelande om att postlådan visades i Outlook på webben?
+# <a name="getting-a-mailbox-not-found-error-in-outlook-on-the-web"></a>Får du ett felmeddelande om att postlådan inte hittades i Outlook på webben?
 
-Om du använder Outlook på webben och  det inte gick att hitta en postlåda har kontot som du använde för att ansluta till Outlook på webben inte någon Exchange Online-licens och därför är ingen postlåda kopplad till kontot. Administratören kan tilldela kontot en licens genom att göra följande:
+Om du använder Outlook på webben och du får felmeddelandet **Det inte gick att hitta postlådan för**, så har kontot som du använde för att ansluta till Outlook på webben inte en licens för Exchange Online och därför är ingen postlåda kopplad till kontot. 
 
-1. Öppna [administrationscentret för Microsoft 365,](https://portal.office.com/adminportal/home#/homepage) gå  till Aktiva användare **under** avsnittet Användare och välj den användare som ser felet.
-2. På den användarsida som öppnas  går du till avsnittet  Licenser och appar, väljer rätt platsvärde och tilldelar en licens som innehåller Exchange Online (expandera licensen så att mer information om den visas). Klicka på Spara ändringar när du **är klar.**
+## <a name="assign-a-license-to-your-account"></a>Tilldela en licens till kontot
+
+Administratören kan tilldela en licens till kontot genom att göra följande:
+
+1. Öppna [Administrationscenter för Microsoft 365](https://portal.office.com/adminportal/home#/homepage)  och gå till  **Aktiva användare**  i avsnittet  **Users**  och välj den användare som får felmeddelandet.
+1. På sidan för användare som öppnas går du till avsnittet **Licenser och program**, väljer lämpligt värde för **Plats** och tilldelar en licens som innehåller Exchange Online (expandera licensen för att visa dess information). 
+1. När du är klar klickar du på **Spara ändringar**.
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Lägga till ytterligare ett e-postalias för en användare](../email/add-another-email-alias-for-a-user.md) (artikel)
+
+[Konfigurera vidarebefordran av e-post i Microsoft 365](../email/configure-email-forwarding.md) (artikel)
+
+[Skapa en delad postlåda](../email/create-a-shared-mailbox.md) (artikel)

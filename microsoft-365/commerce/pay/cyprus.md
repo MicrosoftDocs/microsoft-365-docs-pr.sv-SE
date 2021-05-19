@@ -1,23 +1,24 @@
 ---
 title: Betalningsinformation för Cypern
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Lär dig vart du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cf870e30b392329989cfcf412f63dd10fc9ab57d
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 66dba0402a83e6375c64f965464973139bd4ea9a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273950"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536892"
 ---
 # <a name="payment-information-for-cyprus"></a>Betalningsinformation för Cypern
 
@@ -32,4 +33,4 @@ Betala endast i euro och ange fakturanumret som referens vid betalning.
 **IBAN:** GB31CITI18500812207591  
 **SORTERINGskod:** 185008  
 **Kontonummer:** 12207591  
-**Kontonamn:** MICROSOFT  
+**Kontonamn:** MICROSOFT

@@ -1,23 +1,24 @@
 ---
 title: Betalningsinformation för Botswana
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Lär dig vart du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cea5e7abb1c2ae041b32e1b9edea1ba7192e4493
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: c728456fc4052f4ec8dfca29ddc28f6e26decd19
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274130"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537072"
 ---
 # <a name="payment-information-for-botswana"></a>Betalningsinformation för Botswana
 
@@ -31,4 +32,4 @@ Betala endast i USD och ange fakturanumret som referens vid betalning.
 **SWIFT-kod:** CITIGB2L  
 **IBAN:** GB95CITI18500812510049  
 **Kontonummer:** 12510049  
-**Kontonamn:** MICROSOFT  
+**Kontonamn:** MICROSOFT

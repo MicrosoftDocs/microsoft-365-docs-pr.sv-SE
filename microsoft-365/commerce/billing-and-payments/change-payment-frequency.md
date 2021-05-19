@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Lär dig hur du ändrar hur ofta du faktureras för företagsprenumerationen.
 ms.date: 04/02/2021
-ms.openlocfilehash: b8a0341f8cd5f4788bf2eea93394b33e8079abc5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 010857d9092ef62d11e1b7c6019f2fe0eaafb58f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332180"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537349"
 ---
 # <a name="change-your-billing-frequency"></a>Ändra faktureringsfrekvens
 
@@ -36,3 +36,13 @@ När du köper en prenumeration väljer du fakturering per månad eller år. Gö
 2. På **fliken** Produkter väljer du den prenumeration som du vill ändra.
 3. Välj Redigera faktureringsfrekvens i **avsnittet Prenumerations- och betalningsinställningar** på **sidan prenumerationsinformation.**
 4. I fönstret **Redigera faktureringsfrekvens** väljer du alternativet för hur ofta du vill faktureras och väljer sedan **Ändra**.
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Visa din faktura](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (artikel)
+
+[Betala för prenumerationen](../../commerce/billing-and-payments/pay-for-your-subscription.md) (artikel)
+
+[Läs om hur du hittar och visar din faktura](view-your-bill-or-invoice.md) (artikel)
+
+[Ändra dina faktureringsadresser](change-your-billing-addresses.md) (artikel)

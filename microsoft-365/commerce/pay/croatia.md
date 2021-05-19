@@ -1,23 +1,24 @@
 ---
 title: Betalningsinformation för Kroatien
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Lär dig vart du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7cd485e8263f96fd5c01cce50803d6fa9ded5e57
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 3b9e7c8eefe303ef350f5db6b3023b6eec904d97
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273974"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536916"
 ---
 # <a name="payment-information-for-croatia"></a>Betalningsinformation för Kroatien
 
@@ -32,4 +33,4 @@ Betala endast i euro och ange fakturanumret som referens vid betalning.
 **IBAN:** 12207591  
 **SORTERINGskod:** 185008  
 **Kontonummer:** 12207591  
-**Kontonamn:** MICROSOFT  
+**Kontonamn:** MICROSOFT

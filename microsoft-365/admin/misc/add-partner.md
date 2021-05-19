@@ -20,32 +20,32 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: Lär dig hur du lägger till en partner som abonnemangsrådgivare som en partner vid tidpunkten för Microsoft 365-köp, ändrar partnern eller tar bort en partner från en prenumeration.
-ms.openlocfilehash: 913b0e14e1bc08cfd4037775aa4b72b7280c704c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Lär dig hur du lägger till en partner som abonnemangsrådgivare som en partner av post vid tidpunkten för Microsoft 365, ändrar partnern eller tar bort en partner från en prenumeration.
+ms.openlocfilehash: d45f9e3278b0a25cc5603d322c96f40eee45e6f8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579236"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537481"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Lägga till, ändra eller ta bort en partner för abonnemangsrådgivning
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Den här artikeln gäller Office 365 som drivs av 21Vianet i Kina. Det är till för organisationer som vill tillåta att en 21Vianet-partner administrerar sin Office 365-prenumeration åt dem.
+> Den här artikeln gäller Office 365 som drivs av 21Vianet i Kina. Det är till för organisationer som vill tillåta att en 21Vianet-partner administrerar Office 365-prenumerationen åt dem.
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-En auktoriserad Microsoft-partner fungerar som din abonnemangsrådgivare och hjälper dig med expertkunskaper inom försäljning, support och teknik, som behövs för att konfigurera och underhålla ditt abonnemang. Du kan lägga till en partner som abonnemangsrådgivare som en partner av post när du köper Microsoft 365 eller vid en annan tidpunkt. Om du inte har någon partner kan du hitta en på webbplatsen [Microsoft Pinpoint](https://pinpoint.microsoft.com).
+En auktoriserad Microsoft-partner fungerar som din abonnemangsrådgivare och hjälper dig med expertkunskaper inom försäljning, support och teknik, som behövs för att konfigurera och underhålla ditt abonnemang. Du kan lägga till en abonnemangsrådgivare som en partner av post när du köper Microsoft 365 eller vid en annan tidpunkt. Om du inte har någon partner kan du hitta en på webbplatsen [Microsoft Pinpoint](https://pinpoint.microsoft.com).
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-Vilken partner du väljer beror på vilka Microsoft-tjänster du använder och landet eller regionen där du kommer att använda tjänsterna. Om du lägger till eller ändrar en partner för ditt abonnemang behöver du först be om partnerns Microsoft partner-ID.
+Vilken partner du väljer beror på Microsoft-tjänster du använder och landet eller regionen där du kommer att använda tjänsterna. Om du lägger till eller ändrar en partner för ditt abonnemang behöver du först be om partnerns Microsoft partner-ID.
 
 ::: moniker-end
 
@@ -110,7 +110,7 @@ Följ stegen på leverantörssidan för att antingen söka efter eller matchas m
 
 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a> i administrationscentret.
 2. Om du har fler än en prenumeration väljer du den prenumeration som du vill redigera.
-3. Under prenumerationskostnaden till höger väljer du Fler åtgärder **Lägg** > **till partner av post.**
+3. Under prenumerationskostnaden till höger väljer du de tre punkterna (fler åtgärder) > **Lägg till partner av post**.
 4. Skriv Microsoft partner-ID för partnern du vill lägga till och klicka på **Kontrollera ID** och sedan på **Skicka**. Rätt Microsoft partner-ID får du reda på genom att fråga partnern.
 5. Partner-ID:t som visas på sidan **Prenumerationer**.
 
@@ -160,7 +160,7 @@ Om du vill acceptera det här erbjudandet
 
 ## <a name="view-your-partner-relationships"></a>Visa dina partnerrelationer
 
-- Gå till sidan Inställningar **Partnerrelationer**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">i administrationscentret.</a> Dina partner visas på den här sidan.
+- I administrationscentret går du till sidan **Inställningar**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partnerrelationer.</a> Dina partner visas på den här sidan.
 
   Om du inte har en partner visas ett meddelande om att det inte finns något här.
   
@@ -220,4 +220,4 @@ Du måste be din återförsäljare att följa de här instruktionerna: Ta [bort 
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Hitta din Microsoft 365-partner eller återförsäljare](../manage/find-your-partner-or-reseller.md)
+[Hitta din Microsoft 365 partner eller återförsäljare](../manage/find-your-partner-or-reseller.md)

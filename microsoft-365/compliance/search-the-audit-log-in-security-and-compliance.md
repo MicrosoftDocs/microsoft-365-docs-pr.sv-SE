@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Du kan använda Microsoft 365 Efterlevnadscenter för att söka i den enhetliga granskningsloggen för att visa användar- och administratörsaktivitet i organisationen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f61a67b29dec114d222dfc7b25e44c163859ba41
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: dfda69e5695d2097de5bfae48b580e23799edf87
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "52162334"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536052"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Söka i granskningsloggen i Efterlevnadscenter
 
@@ -452,9 +452,9 @@ I följande tabell beskrivs fil- och sidaktiviteterna i SharePoint Online och On
 |Borttagen fil från papperskorgen|FileDeletedFirstStageRecycleBin|Användaren tar bort en fil från papperskorgen på en webbplats.|
 |Borttagen fil från papperskorgen på andra nivån|FileDeletedSecondStageRecycleBin|Användaren tar bort en fil från papperskorgen på andra nivån på en webbplats.|
 |Borttagen fil som markerats som en arkivhandling|RecordDelete|Ett dokument eller e-postmeddelande som markerats som en arkivhandling har tagits bort. Ett objekt anses vara en arkivhandling när en kvarhållningsetikett som markerar objekt som en arkivhandling har använts på innehåll.|
-|Identifierad felmatchning av dokumentkänslighet|DocumentSensitivityMismatchDetected|En användare laddar upp ett dokument till en webbplats som skyddas med en känslighetsetikett och dokumentet har en känslighetsetikett med högre prioritet än känslighetsetiketten som används på webbplatsen. Till exempel ett dokument med etiketten Konfidentiellt som laddas upp på en webbplats som har etiketten Allmänt. <br/><br/> Den här händelsen utlöses inte om dokumentet har en känslighetsetikett med lägre prioritet än känslighetsetiketten som används på webbplatsen. Till exempel ett dokument med etiketten Allmänt som laddas upp på en webbplats som har etiketten Konfidentiellt. Mer information om prioritet för känslighetsetiketter finns i [Etikettprioritet (ordningen har betydelse)](sensitivity-labels.md#label-priority-order-matters).|
+|Identifierad felmatchning av dokumentkänslighet|DocumentSensitivityMismatchDetected|En användare laddar upp ett dokument till en webbplats som skyddas med en känslighetsetikett och dokumentet har en känslighetsetikett med högre prioritet än känslighetsetiketten som används på webbplatsen. Till exempel ett dokument med etiketten Konfidentiellt som laddas upp på en webbplats som har etiketten Allmänt.<br/><br/> Den här händelsen utlöses inte om dokumentet har en känslighetsetikett med lägre prioritet än känslighetsetiketten som används på webbplatsen. Till exempel ett dokument med etiketten Allmänt som laddas upp på en webbplats som har etiketten Konfidentiellt. Mer information om prioritet för känslighetsetiketter finns i [Etikettprioritet (ordningen har betydelse)](sensitivity-labels.md#label-priority-order-matters).|
 |Identifierade skadlig kod i filen|FileMalwareDetected|SharePoint-antivirusmotorn upptäcker skadlig kod i en fil.|
-|Filutcheckningen ignorerades|FileCheckOutDiscarded|Användaren ignorerar (eller ångrar) en utcheckad fil. Det innebär att alla ändringar de gjort i filen när den var utcheckad ignoreras och sparas inte i versionen av dokumentet i dokumentbiblioteket.|
+|Filutcheckningen ignorerades|FileCheckOutDiscarded|Det innebär att alla ändringar de gjort i filen när den var utcheckad ignoreras och sparas inte i versionen av dokumentet i dokumentbiblioteket.|
 |Hämtad fil|FileDownloaded|Användaren laddar ned ett dokument från en webbplats.|
 |Ändrad fil|FileModified|Användar- eller systemkontot ändrar innehållet eller egenskaperna för ett dokument på en webbplats.|
 |(inget)|FileModifiedExtended|Detta är relaterat till aktiviteten "Ändrad fil" (FileModified). En FileModifiedExtended-händelse loggas när samma person kontinuerligt ändrar en fil under en längre tid (upp till 3 timmar). <br/><br/> Syftet med att logga FileModifiedExtended-händelser är att minska antalet FileModified-händelser som loggas när en fil ändras kontinuerligt. Det här hjälper till att minska bruset med flera FileModified-poster för vad som i princip är samma användaraktivitet, och gör att du kan fokusera på den initiala (och viktigare) FileModified-händelsen.|
@@ -481,11 +481,11 @@ Vi känner inte till scenarier där åtgärder som inte är användarbaserade ge
 
 **Utlöses anrop till OneDriveMpc-Transform_Thumbnail alltid avsiktligt av användaren?**
 
-Nej. Men liknande händelser kan loggas som ett resultat av att webbläsaren hämtar dem i förväg.
+Nej, men liknande händelser kan loggas som ett resultat av att webbläsaren hämtar dem i förväg.
 
 **Om vi ser en FilePreviewed-händelse från en Microsoft-registrerad IP-adress, innebär det att förhandsgranskningen visades på användarens enhet?**
 
-Nej. Händelsen kan ha loggats som ett resultat av att webbläsaren hämtar den i förväg.
+Nej, händelsen kan ha loggats som ett resultat av att webbläsaren hämtar den i förväg.
 
 **Finns det scenarier där en användare som förhandsgranskar ett dokument genererar FileAccessed-händelser?**
 
@@ -503,7 +503,7 @@ Här är några andra scenarier där app@sharepoint kan identifieras i en gransk
 
 - Microsoft Teams. Som i Microsoft 365-grupper genereras granskningsposter för att skapa en webbplatssamling, uppdatera listor och lägga till medlemmar i en SharePoint-grupp.
 
-- Funktioner för efterlevnad. När en administratör implementerar efterlevnadsfunktioner, till exempel kvarhållningsprinciper, eDiscovery-bevarande och automatisk tillämpning av känslighetsetiketter.
+- Känslighetsetiketter. När en administratör implementerar efterlevnadsfunktioner, till exempel kvarhållningsprinciper, eDiscovery-bevarande och automatisk tillämpning av känslighetsetiketter.
 
 I de här och andra scenarier ser du även att flera granskningsposter med app@sharepoint som angiven användare har skapats inom en kort tidsperiod, ofta inom några sekunder från varandra. Det här anger också att de antagligen utlöstes av samma användarinitierade aktivitet. Dessutom kan fälten ApplicationDisplayName och EventData i granskningsposten hjälpa dig att identifiera scenariot eller programmet som utlöste händelsen.
 
@@ -575,7 +575,7 @@ I följande tabell beskrivs användaraktiviteter för delning och åtkomstbegär
 |Åtkomstbegäran nekad |AccessRequestDenied|En åtkomstbegäran till en webbplats, mapp eller dokument har nekats.|
 |Delbar företagslänk borttagen|CompanyLinkRemoved|Användaren har tagit bort en företagsomfattande länk till en resurs. Länken kan inte längre användas för att få åtkomst till resursen.|
 |Anonym länk borttagen|AnonymousLinkRemoved|Användaren har tagit bort en anonym länk till en resurs. Länken kan inte längre användas för att få åtkomst till resursen.|
-|Fil, mapp eller webbplats delas|SharingSet|Användaren (medlem eller gäst) har delat en fil, mapp eller webbplats i SharePoint eller OneDrive för företag med en användare i organisationens katalog. Värdet i kolumnen **Information** för den här aktiviteten visar namnet på den användare som resursen delats med och om den här användaren är medlem eller gäst. <br/><br/> Den här aktiviteten åtföljs ofta av en andra händelse som beskriver hur användaren beviljats åtkomst till resursen. Till exempel att användaren har lagts till i en grupp som har åtkomst till resursen.|
+|Fil, mapp eller webbplats delas|SharingSet|Användaren (medlem eller gäst) har delat en fil, mapp eller webbplats i SharePoint eller OneDrive för företag med en användare i organisationens katalog. Värdet i kolumnen **Information** för den här aktiviteten visar namnet på den användare som resursen delats med och om den här användaren är medlem eller gäst. <br/><br/> Den här aktiviteten åtföljs ofta av en andra händelse som beskriver hur användaren beviljades åtkomst till resursen, till exempel att användaren har lagts till i en grupp som har åtkomst till resursen.|
 |Åtkomstbegäran uppdaterad|AccessRequestUpdated|En åtkomstbegäran till ett objekt har uppdaterats.|
 |Anonym länk uppdaterad  |AnonymousLinkUpdated|Användaren har uppdaterat en anonym länk till en resurs. Det uppdaterade fältet ingår i egenskapen EventData när du exporterar sökresultatet.|
 |Delningsinbjudan uppdaterad|SharingInvitationUpdated|En extern delningsinbjudan har uppdaterats.|
@@ -673,7 +673,7 @@ I följande tabell visas de aktiviteter som kan loggas av granskningsloggning f�
 |Visningsnamn|Åtgärd|Beskrivning|
 |:-----|:-----|:-----|
 |Postlådeobjekt öppnade|MailItemsAccessed|Meddelanden har lästs eller öppnats i postlådan. Granskningsposter för den här aktiviteten utlöses på ett av två sätt: när en e-postklient (till exempel Outlook) utför en bindningsåtgärd på meddelanden eller när e-postprotokoll (till exempel Exchange ActiveSync eller IMAP) synkroniserar objekt i en e-postmapp. Den här aktiviteten loggas bara för användare med en licens för Office 365 eller Microsoft 365 E5. Att analysera granskningsposter för den här aktiviteten är användbart när du undersöker ett komprometterat e-postkonto. Mer information finns i avsnittet "Åtkomst till viktiga händelser för undersökningar" i [Avancerad granskning](advanced-audit.md#access-to-crucial-events-for-investigations). |
-|Behörigheter för delegerade postlådor har lagts till|AddMailboxPermissions|En administratör tilldelade en användare postlådebehörigheten FullAccess (kallas även ombud) till en annan persons postlåda. Med behörigheten FullAccess tillåts ombudet öppna den andra personens postlåda och läsa och hantera innehållet i postlådan.|
+|Behörigheter för delegerade postlådor har lagts till|Add-MailboxPermission|En administratör tilldelade en användare postlådebehörigheten FullAccess (kallas även ombud) till en annan persons postlåda. Med behörigheten FullAccess tillåts ombudet öppna den andra personens postlåda och läsa och hantera innehållet i postlådan.|
 |Användare med ombudsåtkomst till kalendermapp har lagts till eller tagits bort|UpdateCalendarDelegation|En användare har lagts till eller tagits bort som ett ombud för kalendern för en annan användares postlåda. Kalenderdelegering ger någon annan i samma organisation behörighet att hantera postlådeägarens kalender.|
 |Behörighet tillagd i mapp|AddFolderPermissions|En mappbehörighet har lagts till. Mappbehörigheten avgör vilka användare i organisationen som kan komma åt mappar i en postlåda och meddelanden som finns i dessa mappar.|
 |Meddelanden kopierades till en annan mapp|Copy|Ett meddelande kopierades till en annan mapp.|
@@ -777,7 +777,7 @@ I följande tabell visas katalog- och domänrelaterade aktiviteter i Azure AD so
 |Partner tillagd i katalogen|Lägg till partner i företag.|Lade till en partner (delegerad administratör) i organisationen.|
 |Domän borttagen från företag|Ta bort domän från företag.|Tog bort en domän från organisationen.|
 |Partner borttagen från katalogen|Ta bort partner från företag.|Tog bort en partner (delegerad administratör) från organisationen.|
-|Företagsinformation angiven|Ange företagsinformation.|Uppdaterade företagsinformationen för organisationen. Det omfattar e-postadresser för prenumerationsrelaterad e-post som skickas via Microsoft 365 och tekniska aviseringar om Microsoft 365-tjänster.|
+|Företagsinformation angiven|Ange företagsinformation.|Det omfattar e-postadresser för prenumerationsrelaterad e-post som skickas via Microsoft 365 och tekniska aviseringar om Microsoft 365-tjänster.|
 |Domänautentisering angiven|Ange domänautentisering.|Ändrade inställningen för domänautentisering för organisationen.|
 |Federationsinställningarna för en domän uppdaterade|Ange federationsinställningar för domän.|Ändrade federationsinställningarna (extern delning) för organisationen.|
 |Lösenordsprincip angiven|Ange lösenordsprincip.|Ändrade längd- och teckenbegränsningar för användarlösenord i organisationen.|
@@ -789,7 +789,7 @@ I följande tabell visas katalog- och domänrelaterade aktiviteter i Azure AD so
 
 ### <a name="ediscovery-activities"></a>eDiscovery-aktiviteter
 
-Aktiviteter för innehållssökning och eDiscovery-relaterade aktiviteter som utförs i Säkerhets- och efterlevnadscenter eller genom att köra motsvarande PowerShell-cmdlets som loggas i granskningsloggen. Det inkluderar följande aktiviteter:
+Aktiviteter för innehållssökning och eDiscovery-relaterade aktiviteter som utförs i Säkerhets- och efterlevnadscenter eller genom att köra motsvarande PowerShell-cmdlets som loggas i granskningsloggen. Detta inkluderar följande aktiviteter:
 
 - Skapa och hantera eDiscovery-ärenden
 
@@ -858,7 +858,7 @@ I följande tabell visas användar- och administratörsaktiviteter i Yammer som 
 
 |Visningsnamn|Åtgärd|Beskrivning|
 |:-----|:-----|:-----|
-|Policy för datalagring ändrad|SoftDeleteSettingsUpdated|En verifierad administratör uppdaterar inställningen för nätverkets datakvarhållningsprincip till antingen Permanent borttagning eller Mjuk borttagning. Endast verifierade administratörer kan utföra den här åtgärden.|
+|Policy för datalagring ändrad|SoftDeleteSettingsUpdated|En verifierad administratör uppdaterar nätverkets policyinställning för datalagring till antingen Permanent borttagning eller Mjuk borttagning. Endast verifierade administratörer kan utföra den här åtgärden.|
 |Nätverkskonfiguration ändrad|NetworkConfigurationUpdated|En nätverksadministratör eller verifierad administratör ändrar på nätverkskonfiguration för Yammer. Det omfattar bland annat inställningar för dataexportsintervall och chattaktivering.|
 |Nätverksprofilsinställningar ändrade|ProcessProfileFields|Nätverksadministratörer eller verifierade administratörer ändrar informationen som visas i medlemsprofiler för nätverksanvändare.|
 |Läge för privat innehåll ändrat|SupervisorAdminToggled|En verifierad administratör aktiverar eller inaktiverar *läget för privat innehåll*. I detta läge kan administratörer läsa inlägg i privata grupper och se privata meddelanden mellan enskilda användare (eller grupper av användare). Endast verifierade administratörer kan utföra den här åtgärden.|
@@ -900,7 +900,7 @@ I följande tabell visas de aktiviteter i innehållsutforskaren som loggas i gra
 
 ### <a name="quarantine-activities"></a>Karantänaktiviteter
 
-I följande tabell visas de karantänaktiviteter som du kan söka efter i granskningsloggen. Mer information om karantän finns i [Placera e-postmeddelanden i karantän i Office 365](../security/defender-365-security/quarantine-email-messages.md).
+I följande tabell visas de karantänaktiviteter som du kan söka efter i granskningsloggen. Mer information om karantän finns i [Placera e-postmeddelanden i karantän i Office 365](../security/office-365-security/quarantine-email-messages.md).
 
 |Visningsnamn|Åtgärd|Beskrivning|
 |:-----|:-----|:-----|
@@ -997,9 +997,9 @@ I följande tabell visas händelser som kommer från etiketteringsaktiviteter f�
 | Kvarhållningsprincip uppdaterad |SetRetentionCompliancePolicy |Administratören har uppdaterat en befintlig kvarhållningsprincip. Uppdateringar som utlöser den här händelsen omfattar att lägga till eller exkludera innehållsplatser som kvarhållningsprincipen används på.|
 ||||
 
-### <a name="briefing-email-activities"></a>Aktiviteter för Briefing-e-post
+### <a name="briefing-email-activities"></a>Sammanfattning av e-postaktiviteter
 
-I följande tabell visas de aktiviteter i Briefing-e-post som loggas i Office 365-granskningsloggen. Mer information om Briefing-e-post finns i:
+I följande tabell visas de aktiviteter i sammanfattning av e-post som loggas i Office 365-granskningsloggen. Mer information om sammanfattning av e-post finns i:
 
 - [Översikt över Briefing-e-post](/Briefing/be-overview)
 
@@ -1083,7 +1083,7 @@ Ja. Office 365 Management Activity-API används för att programmässigt hämta 
 
 **Finns det andra sätt att hämta granskningsloggar än att använda Säkerhets- och efterlevnadscenter eller Office 365 Management Activity-API?**
 
-Nej. Det här är de enda två sätten att hämta data från granskningstjänsten.
+Nej, det här är de enda två sätten att hämta data från granskningstjänsten.
 
 **Behöver jag aktivera granskning individuellt i varje tjänst som jag vill samla in granskningsloggar för?**
 
@@ -1091,7 +1091,7 @@ I de flesta tjänster är granskning aktiverad som standard när du först aktiv
 
 **Har granskningstjänsten stöd för omkopiering av poster?**
 
-Nej. Pipelinen för granskningstjänsten är nästan i realtid och kan därför inte stödja omkopiering.
+Nej, pipelinen för granskningstjänsten är nästan i realtid och kan därför inte stödja omkopiering.
 
 **Flödar granskningsdata över olika geografier?**
 
