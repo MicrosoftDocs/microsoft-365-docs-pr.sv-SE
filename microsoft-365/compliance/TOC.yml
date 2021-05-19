@@ -785,7 +785,7 @@
     - name: Grundläggande granskning
       items:
         - name: Konfigurera grundläggande granskning
-          href: set-up-basic-auditing.md
+          href: set-up-basic-audit.md
         - name: Söka i granskningsloggen
           href: search-the-audit-log-in-security-and-compliance.md
         - name: Använd ett PowerShell-skript för att söka i granskningsloggen

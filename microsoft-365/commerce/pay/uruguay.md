@@ -1,34 +1,35 @@
 ---
 title: Betalningsinformation för Uruguay
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Lär dig vart du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a4f6d339296454ff3591c988732fb8ffd8aa0d31
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: edd87f0a584197306dd57472f8bb49ce67b6d471
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272618"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536232"
 ---
-# <a name="payment-information-for-uruguay"></a><span data-ttu-id="960cf-103">Betalningsinformation för Uruguay</span><span class="sxs-lookup"><span data-stu-id="960cf-103">Payment information for Uruguay</span></span>
+# <a name="payment-information-for-uruguay"></a><span data-ttu-id="d3d92-103">Betalningsinformation för Uruguay</span><span class="sxs-lookup"><span data-stu-id="d3d92-103">Payment information for Uruguay</span></span>
 
-<span data-ttu-id="960cf-104">[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="960cf-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="d3d92-104">[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="d3d92-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="960cf-105">Betala endast i USD och ange fakturanumret som referens vid betalning.</span><span class="sxs-lookup"><span data-stu-id="960cf-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="d3d92-105">Betala endast i USD och ange fakturanumret som referens vid betalning.</span><span class="sxs-lookup"><span data-stu-id="d3d92-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="960cf-106">Elektronisk betalningsöverföring</span><span class="sxs-lookup"><span data-stu-id="960cf-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="d3d92-106">Elektronisk betalningsöverföring</span><span class="sxs-lookup"><span data-stu-id="d3d92-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="960cf-107">**Bank:** Citibank, London</span><span class="sxs-lookup"><span data-stu-id="960cf-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="960cf-108">**SWIFT-kod:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="960cf-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="960cf-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="960cf-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="960cf-110">**Kontonummer:** 12510049</span><span class="sxs-lookup"><span data-stu-id="960cf-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="960cf-111">**Kontonamn:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="960cf-111">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="d3d92-107">**Bank:** Citibank, London</span><span class="sxs-lookup"><span data-stu-id="d3d92-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="d3d92-108">**SWIFT-kod:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="d3d92-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="d3d92-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="d3d92-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="d3d92-110">**Kontonummer:** 12510049</span><span class="sxs-lookup"><span data-stu-id="d3d92-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="d3d92-111">**Kontonamn:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="d3d92-111">**Account Name:** MICROSOFT</span></span>
