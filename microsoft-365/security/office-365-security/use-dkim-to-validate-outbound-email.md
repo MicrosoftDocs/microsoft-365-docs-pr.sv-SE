@@ -20,12 +20,12 @@ ms.custom:
 description: Lär dig hur du använder DomainKeys identifierad e-post (DKIM) med Microsoft 365 för att säkerställa att meddelanden som skickas från din anpassade domän är betrodda av mål-e-postsystemet.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1fc811fb513935645fa596c5a9d2e3e552b50324
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 2cd04911e3663bb6b9fa00d4946b26086dc8094d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245366"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538273"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Använda DKIM för att validera utgående e-post som skickas från din anpassade domän
 
@@ -59,7 +59,7 @@ I den här artikeln:
 > [!NOTE]
 > Microsoft 365 konfigurerar automatiskt DKIM för dess ursprungliga ”onmicrosoft.com”-domäner. Det innebär att du inte behöver göra något för att konfigurera DKIM för alla inledande domännamn (t. ex. litware.onmicrosoft.com). Mer information om domäner finns i [Vanliga frågor och svar om domäner](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain).
 
-DKIM är en av tre autentiseringsmetoder (SPF, DKIM och DMARC) som hjälper till att förhindra förfalskning av meddelanden som ska se ut som att de kommer från din domän.
+DKIM är en av tre autentiseringsmetoder (SPF, DKIM och DMARC) som hjälper till att förhindra angripare att skicka meddelanden som ser ut som att de kommer från din domän.
 
 Med DKIM kan du lägga till en digital signatur i utgående e-postmeddelanden i meddelanderubriken. När du konfigurerar DKIM auktoriserar du domänen att associera, eller signera, dess namn till ett e-postmeddelande med hjälp av krypterad autentisering. E-postsystem som får e-post från din domän kan använda denna digitala signatur för att fastställe om inkommande e-post är legitim.
 

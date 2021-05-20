@@ -19,12 +19,12 @@ localization_priority: Priority
 description: Administratörer kan lära sig hur EOP använder e-autentisering (SPF, DKIM och DMARC) för att förhindra förfalskning, phishing och skräppost.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 633494717ad7cf68319a2332f435fd8b56fc8aeb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4815924714845b641819021ea793baa465cfc812
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207179"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538297"
 ---
 # <a name="email-authentication-in-eop"></a>E-postautentisering i EOP
 
@@ -39,9 +39,7 @@ ms.locfileid: "51207179"
 E-postautentisering (kallas även för e-postverifiering) är en grupp standarder som försöker sluta förfalskning (e-postmeddelanden från falska avsändare). I alla Microsoft 365-organisationer använder EOP dessa standarder för att verifiera inkommande e-post:
 
 - [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
-
 - [DKIM](use-dkim-to-validate-outbound-email.md)
-
 - [DMARC](use-dmarc-to-validate-email.md)
 
 E-postautentisering verifierar att e-postmeddelanden från en avsändare (till exempel laura@contoso.com) är giltiga och kommer från förväntade källor för den e-postdomänen (till exempel contoso.com.)
@@ -58,7 +56,7 @@ Till och med mars 2018 har endast 9 % av företag på Fortune 500-listan publice
 
 ![DMARC-principer för Fortune 500-företag](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
-Andelen små till medelstora företag som publicerar starka e-autentiseringsprinciper är mindre. Och antalet är ännu mindre för e-postdomäner utanför Nordamerika och Västeuropa.
+Antalet små till medelstora företag som publicerar starka principer för e-postautentisering är mindre. Och antalet är ännu mindre för e-postdomäner utanför Nordamerika och västra Europa.
 
 Brist på starka e-autentiseringsprinciper är ett stort problem. Medan organisationer kanske inte förstår hur e-autentisering fungerar, förstår angriparna fullt ut och de drar fördel. På grund av phishing-problem och det begränsade införandet av principer för stark e-postautentisering använder Microsoft *implicit e-postautentisering* för att kontrollera inkommande e-post.
 
@@ -89,7 +87,7 @@ Att bara förlita sig på e-postautentisering för att avgöra om ett inkommande
 
 Sammansatt autentisering kan lösa de här begränsningarna genom att godkänna meddelanden som annars skulle ha misslyckat e-postverifiering.
 
-För enkelhetens skull ska följande exempel koncentrera sig på resultat av e-postverifiering. Andra intelligensfaktorer i backend kan identifiera meddelanden som klarar e-postautentisering som falska eller meddelanden som misslyckas e-postautentisering som legitima.
+För enkelhetens skull fokuserar följande exempel på resultat för e-postautentisering. Andra back end-intelligensfaktorer kan identifiera meddelanden som har klarat e-postautentiseringen som förfalskade eller meddelanden som inte klarade e-postautentiseringen som legitima.
 
 Exempel: fabrikam.com-domänen har inga SPF-, DKIM- eller DMARC-poster. Meddelanden från avsändare i fabrikam.com-domänen kan misslyckas sammansatt autentisering (Observera `compauth` värde och anledning):
 
@@ -102,7 +100,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-Om fabrikam.com konfigurerar en SPF utan en DKIM-post, kan meddelandet passera sammansatt autentisering. Domänen som passerade SPF-kontroller är i linje med domänen i Från-adressen:
+Om fabrikam.com konfigurerar en SPF utan en DKIM-post kan meddelandet klara sammansatt autentisering. Domänen som har passerat SPF-kontroller är justerad mot domänen i Från-adressen:
 
 ```text
 Authentication-Results: spf=pass (sender IP is 10.2.3.4)
@@ -113,7 +111,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-Om fabrikam.com konfigurerar en DKIM-post utan SPF-post, kan meddelandet passera sammansatt autentisering. Domänen i DKIM-signaturen är i linje med domänen i från-adressen:
+Om fabrikam.com konfigurerar en DKIM-post utan en SPF-post kan meddelandet klara sammansatt autentisering. Domänen i DKIM-signaturen är justerad mot domänen i Från-adressen:
 
 ```text
 Authentication-Results: spf=none (sender IP is 10.2.3.4)
@@ -146,9 +144,7 @@ Microsoft 365 håller reda på vilka som skickar icke-autentiserad e-post till o
 Du kan själv använda den här metoden till att lösa förfalskning inom organisationen och förfalskning mellan domäner i fall där du äger eller interagerar med flera klientorganisationer. Det hjälper också till att lösa förfalskning mellan domäner där du skickar till andra kunder inom Microsoft 365 och också tredje parter med andra värdar.
 
 - [Konfigurerar SPF-poster](set-up-spf-in-office-365-to-help-prevent-spoofing.md) för dina domäner.
-
 - [Konfigurera DKIM poster](use-dkim-to-validate-outbound-email.md) för dina primära domäner.
-
 - [Överväg att konfigurera DMARC-poster](use-dmarc-to-validate-email.md) för att fastställa dina legitima avsändare.
 
 Microsoft tillhandahåller inte detaljerade implementeringsriktlinjer för SPF, DKIM eller DMARC. Det finns dock många information online. Det finns också tredjepartsföretag som är dedikerade till att hjälpa din organisation att ställa in autentiseringsposter via e-post.
@@ -167,17 +163,11 @@ Microsoft 365 behandlar inkommande e-post från din företagsinfrastruktur som a
 
 När du har börjat med en SPF fallback-princip för `?all` kan du gradvis upptäcka och ta med fler e-postkällor för dina meddelanden och sedan uppdatera SPF-posten med en striktare policy.
 
-### <a name="use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email"></a>Använd förfalskningsinformation för att konfigurera tillåtna avsändare av icke-autentiserad e-post
+### <a name="configure-permitted-senders-of-unauthenticated-email"></a>Konfigurera tillåtna avsändare av icke-autentiserad e-post
 
-Du kan också använda [förfalskningsinformation](learn-about-spoof-intelligence.md) för att tillåta avsändare att skicka icke-autentiserade meddelanden till din organisation.
+Du kan även använda [insikt om förfalskningsinformation](learn-about-spoof-intelligence.md) och [Lista över Tillåt/Blockera för klientorganisation](tenant-allow-block-list.md) för att tillåta avsändare att skicka icke-autentiserade meddelanden till organisationen.
 
 För externa domäner är den falska användaren domänen i från-adressen, medan den sändande infrastrukturen är antingen käll-IP-adressen (indelad i/24 CIDR-intervall), eller organisationsdomänen för PTR-posten.
-
-I skärmbilden nedan kan käll-IP: 131.107.18.4 med PTR-posten outbound.mail.protection.outlook.com. Detta skulle visas som outlook.com för den sändande infrastrukturen.
-
-För att tillåta den här avsändaren att skicka icke-autentiserad e-post ändrar du **Nej** till **Ja**.
-
-![Konfigurera tillåtna avsändare för förfalskning](../../media/d4334921-d820-4334-8217-788279701e94.jpg)
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>Skapa en tillåta-post för avsändare/mottagare-paret
 
@@ -189,7 +179,7 @@ På grund av problem med skräppost och nätfiske rekommenderar Microsoft att al
 
 - Även om de inte har behövt publicera poster för e-postautentisering tidigare ska de göra det om de skickar e-post till Microsoft.
 
-- Du bör konfigurera SPF för att publicera din domäns avsändande IP-adresser och även konfigurera DKIM (om tillgängligt) för att signera meddelanden digitalt. Du kan också konfigurera DMARC-poster.
+- Konfigurera SPF för att publicera domänens avsändande IP-adresser och konfigurera DKIM (om tillgängligt) för att signera meddelanden digitalt. De bör även överväga att konfigurera DMARC-poster.
 
 - Om användarna massutskick för att skicka e-post åt dem, ska du kontrollera att domänen i från-adressen (om den tillhör dem) stämmer överens med den domän som beviljar SPF- eller DMARC.
 

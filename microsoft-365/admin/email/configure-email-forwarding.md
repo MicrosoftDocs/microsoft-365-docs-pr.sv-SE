@@ -22,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
-description: Konfigurera vidarebefordran av e-post till ett eller flera e-postkonton med hjälp av Office365.
-ms.openlocfilehash: 4b205c0a21f076b9c7858c8a8fc46e240920cd32
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+description: Med vidarebefordran av e-post kan du vidarebefordra e-postmeddelanden som Microsoft 365 en användarpostlåda till en annan postlåda i eller utanför organisationen.
+ms.openlocfilehash: 7389651cbbec5316c307cd10b331fda6812c1cd4
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332636"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537637"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Konfigurera vidarebefordran av e-post i Microsoft 365
 
@@ -95,7 +95,15 @@ Du måste vara Exchange administratör eller global administratör i Microsoft 3
 
    I administrationscentret kan du skapa en [distributionsgrupp](../setup/create-distribution-lists.md) [,](add-user-or-contact-to-distribution-list.md)lägga till adresser till den och sedan konfigurera vidarebefordran så att den pekar på distributionslistan med hjälp av instruktionerna i den här artikeln.
 
-5. Ta inte bort kontot för användaren som vidarebefordrar e-post eller ta bort deras licens!  Om du gör det stoppas vidarebefordran av e-post.
+5. Ta inte bort kontot för användaren som vidarebefordrar e-post eller ta bort deras licens! Om du gör det stoppas vidarebefordran av e-post.
 
 ::: moniker-end
+
+## <a name="related-content"></a>Relaterat innehåll 
+
+[Skapa en delad postlåda](../email/create-a-shared-mailbox.md) (artikel)
+
+[Skicka e-post från en annan adress](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (artikel)
+
+[Ändra ett användarnamn och en e-postadress](../add-users/change-a-user-name-and-email-address.md) (artikel)
 

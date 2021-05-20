@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Information för IT-administratörer om hur du hanterar känslighetsetiketter i Office-appar för dator, mobila enheter och webben.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f280cae2364a3ad76a3a3ff91ce382fdf69eab2b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: bca8efa15bdfe2f4b7c8c90e7a4706f40b19f85d
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532056"
+ms.locfileid: "52572615"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Använda känslighetsetiketter i Office-appar
 
@@ -46,7 +46,7 @@ Nya versioner av Office-program blir tillgängliga vid olika tidpunkter för oli
 > [!NOTE]
 > Namnen på uppdateringskanalerna för Office-apparna har nyligen ändrats. Till exempel är Månatlig kanal nu Aktuell kanal och Office Insider är nu Beta-kanal. Mer information finns i [Ändringar för uppdateringskanaler för Microsoft 365-applikationer](/deployoffice/update-channels-changes).
 
-Office för iOS och Office för Android: Känslighetsetiketter är inbyggda i [Office-appen](https://www.microsoft.com/sv-SE/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
+Office för iOS och Office för Android: Känslighetsetiketter är inbyggda i [Office-appen](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
 
 Ytterligare funktioner är tillgängliga när du installerar Azure Information Protection enhetlig etiketteringsklient som endast kan köras på Windows-datorer. Mer information finns i [Jämför etiketteringsklienter för Windows-datorer](/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
@@ -56,7 +56,7 @@ Siffrorna som visas är den lägsta Office-programversion som krävs för varje 
 
 |Funktion                                                                                                        |Windows |Mac |iOS    |Android      |Webb                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
-|[Använda, ändra eller ta bort etiketter manuellt](https://support.microsoft.com/sv-SE/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Ja – Välj till](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Använda, ändra eller ta bort etiketter manuellt](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Ja – Välj till](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Använda har standardetikett](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Ja – Välj till](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
 |[Kräva en justering för att ändra en etikett](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Ja – Välj till](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Ange hjälplänk till en anpassad hjälpsida](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Ja – Välj till](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -80,7 +80,7 @@ Siffrorna som visas är den lägsta Office-programversion som krävs för varje 
 
 |Funktion                                                                                                        |Outlook för Windows |Outlook för Mac |Outlook för iOS |Outlook för Android |Outlook på webben |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
-|[Använda, ändra eller ta bort etiketter manuellt](https://support.microsoft.com/sv-SE/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
+|[Använda, ändra eller ta bort etiketter manuellt](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Använda har standardetikett](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Kräva en justering för att ändra en etikett](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Ange hjälplänk till en anpassad hjälpsida](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
@@ -194,7 +194,7 @@ För en mer konsekvent etikett med meningsfull rapportering kan du ge användarn
         - Nycklar *DisableEncryptOnly* och *DisableDoNotForward* säkerhetsinställningar som dokumenteras i [Ange inställningar för Outlook för Mac](/DeployOffice/mac/preferences-outlook)
     - Outlook på webben: 
         - Parametrar *SimplifiedClientAccessDoNotForwardDisabled* och *SimplifiedClientAccessEncryptOnlyDisabled* dokumenteras för [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration)
-        - Outlook för iOS och Android: De här apparna stöder inte användare som använder kryptering utan etiketter, så det finns inget att inaktivera.
+    - Outlook för iOS och Android: De här apparna stöder inte användare som använder kryptering utan etiketter, så det finns inget att inaktivera.
 
 > [!NOTE]
 > Om användare tar bort kryptering manuellt från ett etiketterat dokument som lagras i SharePoint eller OneDrive och du har [aktiverat känslighetsetiketter för Office-filer i SharePoint och OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), återställs etikettkrypteringen automatiskt nästa gång dokumentet används eller laddas ned. 
@@ -438,8 +438,8 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel=""}
 
 ## <a name="end-user-documentation"></a>Dokumentation för slutanvändare
 
-- [Använda känslighetsetiketter för filer och e-postmeddelanden i Office](https://support.microsoft.com/sv-SE/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-    - [Kända problem med känslighetsetiketter i Office](https://support.microsoft.com/sv-SE/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
+- [Använda känslighetsetiketter för filer och e-postmeddelanden i Office](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+    - [Kända problem med känslighetsetiketter i Office](https://support.microsoft.com/en-us/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
 - [Tillämpa känslighetsetiketter automatiskt eller rekommendera känslighetsetiketter för filer och e-postmeddelanden i Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
     - [Kända problem med att automatiskt använda eller rekommendera känslighetsetiketter](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)

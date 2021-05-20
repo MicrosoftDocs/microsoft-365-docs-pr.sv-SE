@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/21/2020
+ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Lär dig hur du använder Microsoft 365 lokal skanner för dataförlustskydd för att skanna igenom vilande data och implementera skyddsåtgärder för lokala filresurser och lokala SharePoint-mappar och dokumentbibliotek.
-ms.openlocfilehash: 0abe36af5588c1828da106779a144b6e7f37d6a8
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: e81b48560a8011e955e6508daf27e96f9fdb70fa
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52163001"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538093"
 ---
 # <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Använd Microsoft 365 lokal skanner för dataförlustskydd (förhandsversion)
 

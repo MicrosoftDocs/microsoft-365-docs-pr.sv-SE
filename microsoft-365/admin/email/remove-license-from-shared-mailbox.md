@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Ta bort licens från en delad postlåda för att tilldela den till en annan användare. '
-ms.openlocfilehash: 2d0e6e6b1d6222bea80265bf6cc008e21ac3239c
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: d552cfb77ff0ab2853939c6cb25fd4737f8c17d3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332660"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537589"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Ta bort en licens från en delad postlåda
 
@@ -47,6 +47,20 @@ Delade postlådor kräver vanligtvis inte en licens. Följ de här anvisningarna
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
 
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
+
+::: moniker-end
+
    > [!NOTE]
    > Du måste ta bort licensen från sidan Aktiva användare. Du kan inte ta bort licensen från sidan Delad postlåda eftersom licenser är användarinställningar.
   
@@ -59,46 +73,6 @@ Delade postlådor kräver vanligtvis inte en licens. Följ de här anvisningarna
 5. När du återgår till **sidan Aktiva** användare blir statusen för den delade postlådan **Ej licensierad.**
 
 6. Du betalar fortfarande för licensen. Ta bort licensen från prenumerationen [om du vill sluta betala för den.](../../commerce/licenses/buy-licenses.md)
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
-
-    > [!NOTE]
-    > Du måste ta bort licensen från sidan Aktiva användare. Du kan inte ta bort licensen från sidan Delad postlåda eftersom licenser är användarinställningar.
-
-2. Markera den delade postlådan och välj sedan **Redigera** bredvid **Produktlicenser.**
-
-3. På sidan **Produktlicenser** ställer du in växlingsknappen på **Av** för den licens du vill ta bort.
-
-4. Välj **Spara**.
-
-5. När du återgår till **sidan Aktiva** användare blir statusen för den delade postlådan **Ej licensierad.**
-
-6. Du betalar fortfarande för licensen. Ta bort licensen från prenumerationen [om du vill sluta betala för den.](../../commerce/licenses/buy-licenses.md)
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
- 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
-
-    > [!NOTE]
-    > Du måste ta bort licensen från sidan Aktiva användare. Du kan inte ta bort licensen från sidan Delad postlåda eftersom licenser är användarinställningar.
-
-2. Markera den delade postlådan och välj sedan **Redigera** bredvid **Produktlicenser.**
-
-3. På sidan **Produktlicenser** ställer du in växlingsknappen på **Av** för den licens du vill ta bort.
-
-4. Välj **Spara**.
-
-5. När du återgår till **sidan Aktiva** användare blir statusen för den delade postlådan **Ej licensierad.**
-
-6. Du betalar fortfarande för licensen. Ta bort licensen från prenumerationen [om du vill sluta betala för den.](../../commerce/licenses/buy-licenses.md)
-
-::: moniker-end
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

@@ -9,15 +9,15 @@ audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
-description: Följ de här rekommendationerna för fristående Exchange Online Protection (EOP) så att du kan konfigurera dig själv och undvika vanliga konfigurationsfel.
+description: Följ de här rekommendationerna för fristående e Exchange Online Protection (EOP) så att du kan konfigurera dig själv och undvika vanliga konfigurationsfel.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94586d409d6d8b53ba68c22b6b4f62d2b72266db
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 266da2d8fe6b8ede79e703e49e48d17fccdd2928
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599481"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537961"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Rekommendationer för konfiguration av fristående EOP
 
@@ -26,7 +26,7 @@ ms.locfileid: "51599481"
 **Gäller för**
 -  [Exchange Online Protection fristående](exchange-online-protection-overview.md)
 
-Följ de här rekommendationerna för fristående Exchange Online Protection (EOP) så att du kan konfigurera dig själv och undvika vanliga konfigurationsfel. Den här artikeln förutsätter att du redan har slutfört installationen. Om du inte har slutfört EOP-konfigurationen kan du [gå till Konfigurera EOP-tjänsten.](set-up-your-eop-service.md)
+Följ de här rekommendationerna för fristående e Exchange Online Protection (EOP) så att du kan konfigurera dig själv och undvika vanliga konfigurationsfel. Den här artikeln förutsätter att du redan har slutfört installationen. Om du inte har slutfört EOP-konfigurationen kan du [gå till Konfigurera EOP-tjänsten.](set-up-your-eop-service.md)
 
 ## <a name="use-a-test-domain"></a>Använda en testdomän
 
@@ -34,11 +34,11 @@ Vi rekommenderar att du använder en testdomän, underdomän eller låg volymdom
 
 ## <a name="synchronize-recipients"></a>Synkronisera mottagare
 
-Om din organisation har befintliga användarkonton i en lokal Active Directory-miljö kan du synkronisera dessa konton till Azure Active Directory i molnet. Vi rekommenderar att du använder katalogsynkronisering. Mer information om fördelarna med att använda katalogsynkronisering och stegen för att konfigurera den finns i Hantera [e-postanvändare i EOP.](manage-mail-users-in-eop.md)
+Om din organisation har befintliga användarkonton i en lokal Active Directory-miljö kan du synkronisera dessa konton Azure Active Directory i molnet. Vi rekommenderar att du använder katalogsynkronisering. Mer information om fördelarna med att använda katalogsynkronisering och stegen för att konfigurera den finns i Hantera [e-postanvändare i EOP.](manage-mail-users-in-eop.md)
 
 ## <a name="recommended-settings"></a>Rekommenderade inställningar
 
-Vi ger säkerhetsadministratörer möjlighet att anpassa säkerhetsinställningarna så att de uppfyller organisationens behov. Även om det som regel finns det två säkerhetsnivåer i EOP och Microsoft Defender för Office 365 som vi rekommenderar: Standard och Strikt. De här inställningarna visas i Rekommenderade [inställningar för EOP och Microsoft Defender för Office 365-säkerhet.](recommended-settings-for-eop-and-office365.md)
+Vi ger säkerhetsadministratörer möjlighet att anpassa säkerhetsinställningarna så att de uppfyller organisationens behov. Även om det som regel finns det två säkerhetsnivåer i EOP och Microsoft Defender för Office 365 vi rekommenderar: Standard och Strikt. De här inställningarna visas i Rekommenderade [inställningar för EOP och Microsoft Defender för Office 365 säkerhet.](recommended-settings-for-eop-and-office365.md)
 
 ### <a name="miscellaneousnon-policy-settings"></a>Diverse-/icke-principinställningar
 
@@ -59,17 +59,17 @@ De här inställningarna omfattar ett antal funktioner som ligger utanför säke
 |Enhetlig granskning ska vara aktiverad|Ja|Ja||
 |[IMAP-anslutning till postlåda](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Inaktiverad|Inaktiverad||
 |[POP-anslutning till postlåda](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Inaktiverad|Inaktiverad||
-|Autentiserad SÄNDNING VIA SMTP|Inaktiverad|Inaktiverad|Autentiserad SMTP-klientinskickning (kallas även SMTP-klientinskickning eller SMTP AUTH) krävs för POP3- och IMAP4-klienter och -program och -enheter som genererar och skickar e-post. <p> Anvisningar om hur du aktiverar och inaktiverar SMTP AUTH globalt eller selektivt finns i Aktivera eller inaktivera [autentiserad SMTP-klientinskickning i Exchange Online.](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)|
-|EWS-anslutning till postlåda|Inaktiverad|Inaktiverad|Outlook använder Exchange Web Services för ledig/upptagen, användning av inställningar för utanför kontoret och kalenderdelning. Om du inte kan inaktivera EWS globalt har du följande alternativ: <ul><li>Använd [autentiseringsprinciper för](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) att förhindra att EWS använder grundläggande autentisering om dina klienter har stöd för modern autentisering (modern autentisering).</li><li>Använd [klientåtkomstregler för](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) att begränsa EWS till specifika användare eller käll-IP-adresser.</li><li>Kontrollera EWS-åtkomsten till specifika program globalt eller per användare. Anvisningar finns i [Kontrollera åtkomst till EWS i Exchange.](/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange)</li></ul> <p> Tillägget [Rapportmeddelande](enable-the-report-message-add-in.md) och tillägget [](enable-the-report-phish-add-in.md) Rapport nätfiske använder REST som standard i miljöer som stöds, men kommer tillbaka till EWS om REST inte är tillgängligt. De miljöer som stöds och använder REST är:<ul><li>Exchange Online</li><li>Exchange 2019 eller Exchange 2016</li><li>Nuvarande Outlook för Windows från en Microsoft 365-prenumeration eller ett enda köp av Outlook 2019.</li><li>Nuvarande Outlook för Mac från en Microsoft 365-prenumeration eller ett köp av Outlook för Mac 2016 eller senare.</li><li>Outlook för iOS och Android</li><li>Outlook på webben</li></ul>|
+|Autentiserad SÄNDNING VIA SMTP|Inaktiverad|Inaktiverad|Autentiserad SMTP-klientinskickning (kallas även SMTP-klientinskickning eller SMTP AUTH) krävs för POP3- och IMAP4-klienter och -program och -enheter som genererar och skickar e-post. <p> Anvisningar om hur du aktiverar och inaktiverar SMTP AUTH globalt eller selektivt finns i Aktivera eller inaktivera [autentiserad SÄNDNING VIA SMTP-klient i Exchange Online.](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)|
+|EWS-anslutning till postlåda|Inaktiverad|Inaktiverad|Outlook använder Exchange webbtjänster för ledig/upptagen tid, inställningar för utanför kontoret och kalenderdelning. Om du inte kan inaktivera EWS globalt har du följande alternativ: <ul><li>Använd [autentiseringsprinciper för](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) att förhindra att EWS använder grundläggande autentisering om dina klienter har stöd för modern autentisering (modern autentisering).</li><li>Använd [klientåtkomstregler för](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) att begränsa EWS till specifika användare eller käll-IP-adresser.</li><li>Kontrollera EWS-åtkomsten till specifika program globalt eller per användare. Anvisningar finns i [Kontrollera åtkomsten till EWS i Exchange](/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange).</li></ul> <p> Tillägget [Rapportmeddelande](enable-the-report-message-add-in.md) och tillägget [](enable-the-report-phish-add-in.md) Rapport nätfiske använder REST som standard i miljöer som stöds, men kommer tillbaka till EWS om REST inte är tillgängligt. De miljöer som stöds och använder REST är:<ul><li>Exchange Online</li><li>Exchange 2019 eller Exchange 2016</li><li>Aktuell Outlook för Windows från en Microsoft 365-prenumeration eller ett köp som du gör Outlook 2019.</li><li>Aktuella Outlook för Mac från en Microsoft 365-prenumeration eller ett 1-Outlook för Mac 2016 eller senare.</li><li>Outlook för iOS och Android</li><li>Outlook på webben</li></ul>|
 |[PowerShell-anslutning](/powershell/exchange/disable-access-to-exchange-online-powershell)|Inaktiverad|Inaktiverad|Tillgängligt för postlådeanvändare och e-postanvändare (användarobjekt som returneras [av cmdlet:en Get-User).](/powershell/module/exchange/get-user)|
-|Använda [förfalskningsinformation för](learn-about-spoof-intelligence.md) att lägga till avsändare i listan över tillåtna avsändare|Ja|Ja||
+|Använd [förfalskningsinformation och klientorganisationens](learn-about-spoof-intelligence.md) lista [över tillåtna/blockerade avsändare för](tenant-allow-block-list.md)att lägga till avsändare i listan över tillåtna avsändare|Ja|Ja||
 |[Katalogbaserat gränsblockering (DBEB)](/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Aktiverad|Aktiverad|Domäntyp = Auktoritativ|
 |[Konfigurera multifaktorautentisering för alla administratörskonton](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)|Aktiverad|Aktiverad||
 |
 
 ## <a name="troubleshooting"></a>Felsökning
 
-Felsöka allmänna problem och trender med hjälp av rapporterna i administrationscentret. Hitta data som gäller en enskild punkt om ett meddelande med hjälp av verktyget för meddelandespårning. Mer information om rapportering finns [i Rapportering och meddelandespårning i Exchange Online Protection.](reporting-and-message-trace-in-exchange-online-protection.md) Läs mer om verktyget för meddelandespårning i [Meddelandespårning i Säkerhets- & Säkerhets- och efterlevnadscenter.](message-trace-scc.md)
+Felsöka allmänna problem och trender med hjälp av rapporterna i administrationscentret. Hitta data som gäller en enskild punkt om ett meddelande med hjälp av verktyget för meddelandespårning. Mer information om rapportering finns [i Rapportering och meddelandespårning i Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md). Läs mer om verktyget för meddelandespårning i [Meddelandespårning i Säkerhets- & Säkerhets- och efterlevnadscenter.](message-trace-scc.md)
 
 ## <a name="report-false-positives-and-false-negatives-to-microsoft"></a>Rapportera falska positiva resultat och falska negativa resultat till Microsoft
 
@@ -83,4 +83,4 @@ När du distribuerar en ny regel till produktion väljer du ett av testlägena f
 
 När du distribuerar nya regler kan du lägga till den ytterligare åtgärden i **Generera incidentrapport** för att övervaka regeln i praktiken.
 
-I hybridmiljöer där organisationen innehåller både lokal Exchange och Exchange Online bör du tänka på de villkor som du använder i e-postflödesregler. Om du vill att reglerna ska gälla för hela organisationen ska du se till att använda villkor som är tillgängliga i både lokal Exchange och i Exchange Online. De flesta villkor är tillgängliga i båda miljöerna, men det finns några som bara är tillgängliga i den ena miljön eller den andra. Mer information finns i [E-postflödesregler (transportregler) i Exchange Online.](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
+I hybridmiljöer där organisationen innehåller både lokala och Exchange Exchange Online bör du tänka på de villkor som du använder i e-postflödesregler. Om du vill att reglerna ska gälla för hela organisationen ska du se till att använda villkor som är tillgängliga både lokalt i Exchange och i Exchange Online. De flesta villkor är tillgängliga i båda miljöerna, men det finns några som bara är tillgängliga i den ena miljön eller den andra. Mer information finns i [E-postflödesregler (transportregler) i Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).

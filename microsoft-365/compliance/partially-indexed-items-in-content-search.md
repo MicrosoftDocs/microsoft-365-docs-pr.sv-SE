@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Läs mer om icke indexerade objekt i Exchange och SharePoint som du kan ta med i en eDiscovery-sökning som du kör Microsoft 365 efterlevnadscenter.
-ms.openlocfilehash: 40995aa403686caadd5e35b6fa9c6ca20ee017ee
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: e1730959cd3177fe1f7bce1f0315c871b5a57598
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "52162808"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537661"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Delvis indexerade objekt i eDiscovery
 
@@ -67,7 +67,7 @@ En lista över filformat som stöds och inaktiveras finns i följande avsnitt:
 
 Inte alla e-postmeddelanden med en delvis indexerad bifogad fil eller alla delvis SharePoint dokument returneras automatiskt som ett delvis indexerat objekt. Det beror på att andra egenskaper för meddelanden eller dokument,  till  exempel egenskapen Ämne i e-postmeddelanden och egenskaperna Rubrik eller Författare för dokument indexeras och går att söka i.  En nyckelordssökning efter "ekonomi" returnerar exempelvis objekt med en delvis indexerad bifogad fil om nyckelordet förekommer i ämnet för ett e-postmeddelande eller i filnamnet eller titeln på ett dokument. Men om nyckelordet bara visas i brödtexten i filen returneras meddelandet eller dokumentet som ett delvis indexerat objekt.
   
-På samma sätt inkluderas meddelanden med delvis indexerade bifogade filer och dokument av en delvis indexerad filtyp i sökresultat när andra meddelande- eller dokumentegenskaper, som är indexerade och sökbara, uppfyller sökvillkoren. Meddelandeegenskaper som indexeras för sökning är bland annat datum för skickade och mottagna meddelanden, avsändare och mottagare, filnamnet på en bifogad fil och text i meddelandets brödtext. Dokumentegenskaper som indexeras för sökning omfattar datum som skapats och ändrats. Så även om en bifogad fil i ett meddelande kan vara ett delvis indexerat objekt inkluderas meddelandet i de vanliga sökresultaten om värdet för andra meddelande- eller dokumentegenskaper matchar sökvillkoren.
+På samma sätt inkluderas meddelanden med delvis indexerade bifogade filer och dokument av en delvis indexerad filtyp i sökresultat när andra meddelanden eller dokumentegenskaper, som är indexerade och sökbara, matchar sökvillkoren. Meddelandeegenskaper som indexeras för sökning är bland annat datum för skickade och mottagna meddelanden, avsändare och mottagare, filnamnet på en bifogad fil och text i meddelandets brödtext. Dokumentegenskaper som indexeras för sökning omfattar datum som skapats och ändrats. Så även om en bifogad fil i ett meddelande kan vara ett delvis indexerat objekt inkluderas meddelandet i de vanliga sökresultaten om värdet för andra meddelande- eller dokumentegenskaper matchar sökvillkoren.
   
 En lista med e-post- och dokumentegenskaper som du kan söka efter med hjälp av sökfunktionen i säkerhets- och efterlevnadscentret för & finns i Nyckelordsfrågor och sökvillkor för [eDiscovery.](keyword-queries-and-search-conditions.md)
   
@@ -77,7 +77,7 @@ Organisationen kan behöva identifiera och utföra ytterligare analyser på delv
   
 Tänk på följande om delvis indexerade objekt:
   
-- När du kör en eDiscovery-sökning visas det totala antalet och storleken på delvis indexerade Exchange-objekt (som returneras av sökfrågan) i sökstatistiken på den utfällda sidan och etiketterade som icke **indexerade objekt.** Statistik om delvis indexerade objekt som visas på den utfällda sidan omfattar inte delvis indexerade objekt i SharePoint eller OneDrive.
+- När du kör en eDiscovery-sökning visas det totala antalet och storleken på delvis indexerade Exchange-objekt (som returneras av sökfrågan) i sökstatistiken på den utfällda sidan och etiketterade som icke **indexerade objekt.** Statistik om delvis indexerade objekt som visas på den utfällda sidan omfattar inte delvis indexerade objekt på SharePoint eller OneDrive konton.
 
 - Om sökningen du exporterar resultat från var en sökning på specifika innehållsplatser eller alla innehållsplatser i organisationen exporteras bara icke indexerade objekt från innehållsplatser som innehåller objekt som matchar sökvillkoren. Med andra ord exporteras inte icke indexerade objekt i postlådan eller webbplatsen om inga sökresultat hittas i en postlåda eller på en webbplats. Anledningen är att export av delvis indexerade objekt från många platser i organisationen kan öka sannolikheten för exportfel och öka tiden det tar att exportera och ladda ned sökresultaten.
 
@@ -87,22 +87,16 @@ Tänk på följande om delvis indexerade objekt:
 
 - Delvis indexerade objekt kan inte förhandsgranskas. Du måste exportera sökresultatet för att visa delvis indexerade objekt som returneras av sökningen.
 
-När du exporterar sökresultat och tar med delvis indexerade objekt i exporten exporteras dessutom delvis indexerade objekt från SharePoint-objekt till en mapp som heter **Ocrawlable**. När du exporterar delvis Exchange och objekt exporteras de på olika sätt beroende på om delvis indexerade objekt matchade sökfrågan och konfigurationen av exportinställningarna. 
+   När du exporterar sökresultat och tar med delvis indexerade objekt i exporten exporteras dessutom delvis indexerade objekt från SharePoint-objekt till en mapp som heter **Ocrawlable**. När du exporterar delvis Exchange och objekt exporteras de på olika sätt beroende på om delvis indexerade objekt matchade sökfrågan och konfigurationen av exportinställningarna. 
 
-I följande tabell visas exportbeteendet för indexerade och delvis indexerade objekt samt om respektive objekt ingår i de olika konfigurationsinställningarna för export.
+- I följande tabell visas exportbeteendet för indexerade och delvis indexerade objekt samt om respektive objekt ingår i de olika konfigurationsinställningarna för export.
 
-|**Exportera konfiguration**|**Indexerade objekt som matchar sökfrågan**|**Delvis indexerade objekt som matchar sökfrågan**|**Delvis indexerade objekt som inte matchar sökfrågan**|
-|:-----|:-----|:-----|:-----|
-|Exportera endast indexerade objekt  <br/> |Exporterad<br/> |Exporteras (ingår i de indexerade objekten som exporteras)<br/>  |Inte exporterad <br/>|
-|Exportera endast delvis indexerade objekt  <br/> |Inte exporterad  <br/> |Exporterade (som delvis indexerade objekt)<br/> |Exporterade (som delvis indexerade objekt)|
-|Exportera indexerade och delvis indexerade objekt  <br/> |Exporterad<br/> |Exporteras (ingår i de indexerade objekten som exporteras)<br/>  |Exporterade (som delvis indexerade objekt)<br/>|
-||||
-
-## <a name="partially-indexed-items-excluded-from-the-search-results"></a>Delvis indexerade objekt som inte finns med i sökresultatet
-
-Om ett objekt är delvis indexerat men det inte uppfyller sökfrågevillkoren inkluderas det inte som ett delvis indexerat objekt i sökresultatet. Med andra ord är objektet exkluderat från sökresultatet. Om du väljer att inkludera delvis indexerade objekt när du exporterar resultatet av en sökning exporteras inte delvis indexerade objekt som uteslöts från sökresultaten.
-  
-Ett undantag till den här regeln är när du skapar ett frågebaserat undantag som är kopplat till ett eDiscovery-ärende. Om du skapar ett frågebaserat eDiscovery-rymmer sätts alla delvis indexerade objekt i register. Det omfattar delvis indexerade objekt som inte matchar sökfrågans villkor. Mer information om hur du skapar frågebaserade eDiscovery-rymmer finns i [Skapa ett eDiscovery-värde](create-ediscovery-holds.md).
+  |**Exportera konfiguration**|**Indexerade objekt som matchar sökfrågan**|**Delvis indexerade objekt som matchar sökfrågan**|**Delvis indexerade objekt som inte matchar sökfrågan**|
+  |:-----|:-----|:-----|:-----|
+  |Exportera endast indexerade objekt  <br/> |Exporterad<br/> |Exporteras (ingår i de indexerade objekten som exporteras)<br/>  |Inte exporterad <br/>|
+  |Exportera endast delvis indexerade objekt  <br/> |Inte exporterad  <br/> |Exporterade (som delvis indexerade objekt)<br/> |Exporterade (som delvis indexerade objekt)|
+  |Exportera indexerade och delvis indexerade objekt  <br/> |Exporterad<br/> |Exporteras (ingår i de indexerade objekten som exporteras)<br/>  |Exporterade (som delvis indexerade objekt)<br/>|
+  ||||
   
 ## <a name="indexing-limits-for-messages"></a>Indexeringsbegränsningar för meddelanden
 
@@ -122,12 +116,13 @@ En lista över indexeringsbegränsningar för SharePoint dokument finns i [Sökb
 |Maximalt antal anteckningstoken  <br/> |2 miljoner  <br/> |När ett e-postmeddelande indexeras får varje ord olika bearbetningsinstruktioner som anger hur ordet ska indexeras. Varje uppsättning bearbetningsinstruktioner kallas en anteckningstoken. För att bevara kvaliteten på tjänsten i Office 365 finns det en gräns på 2 miljoner anteckningstoken för ett e-postmeddelande.  <br/> |
 |Maximal storlek på brödtext i index  <br/> |67 miljoner tecken  <br/> |Det totala antalet tecken i brödtexten i ett e-postmeddelande och dess bifogade filer. När ett e-postmeddelande indexeras sammanfogas all text i brödtexten i meddelandet och i alla bifogade filer till en enda sträng. Den maximala storleken på strängen som indexeras är 67 miljoner tecken.  <br/> |
 |Maximalt antal unika token i brödtexten  <br/> |1 miljon  <br/> |Som tidigare förklarats är token ett resultat av att extrahera text från innehåll, ta bort skiljetecken och blanksteg och sedan dela in det i ord (kallas token) som lagras i indexet. Frasen innehåller  `"cat, mouse, bird, dog, dog"` till exempel 5 token. Men endast 4 av dessa är unika token. Det finns en gräns på 1 miljon unika token per e-postmeddelande, vilket förhindrar att indexet blir för stort med slumpmässiga token.  <br/> |
+||||
 
 ## <a name="more-information-about-partially-indexed-items"></a>Mer information om delvis indexerade objekt
 
 - Eftersom meddelande- och dokumentegenskaper och deras metadata indexeras tidigare kan en nyckelordssökning ge resultat om nyckelordet visas i indexerade metadata. Men det kan hända att samma nyckelordssökning inte returnerar samma objekt om nyckelordet bara visas i innehållet för ett objekt med filtypen Stöds inte. I det här fallet returneras objektet som ett delvis indexerat objekt.
 
-- Om ett delvis indexerat objekt ingår i sökresultatet eftersom det uppfyller sökfrågevillkoren (och inte uteslöts) tas det inte med som ett delvis indexerat objekt i den uppskattade sökstatistiken. Dessutom inkluderas det inte i delvis indexerade objekt när du exporterar sökresultat.
+- Om ett delvis indexerat objekt tas med i sökresultatet eftersom det matchade sökfrågevillkoren inkluderas det inte som ett delvis indexerat objekt i den uppskattade sökstatistiken. Dessutom inkluderas det inte i delvis indexerade objekt när du exporterar sökresultat.
 
 - Även om en filtyp stöds för indexering och indexeras kan det finnas indexerings- eller sökfel som gör att en fil returneras som ett delvis indexerat objekt. Till exempel kan sökningen efter en mycket stor Excel fil lyckas delvis (eftersom de första 4 MB indexeras), men sedan misslyckas eftersom begränsningen för filstorlek överskrids. I det här fallet är det möjligt att samma fil returneras med sökresultatet och som ett delvis indexerat objekt.
 
@@ -136,6 +131,8 @@ En lista över indexeringsbegränsningar för SharePoint dokument finns i [Sökb
 - E-postmeddelanden som krypteras med S/MIME indexeras delvis. Det omfattar krypterade meddelanden med eller utan bifogade filer.
 
 - E-postmeddelanden som skyddas med Azure Rights Management indexeras och inkluderas i sökresultaten om de matchar sökfrågan. Rättighetsskyddade e-postmeddelanden dekrypteras och kan förhandsgranskas och exporteras. Den här funktionen kräver att du har tilldelats rollen RMS-dekrypterad, som tilldelas rollgruppen för eDiscover-hanteraren som standard.
+
+- Om du skapar ett frågebaserat håll som associeras med ett eDiscovery-ärende, sätts alla delvis indexerade objekt i register. Det omfattar delvis indexerade objekt som inte matchar sökfrågevillkoret för villkoret för villkoret. Mer information om hur du skapar frågebaserade eDiscovery-rymmer finns i [Skapa ett eDiscovery-värde](create-ediscovery-holds.md).
 
 ## <a name="see-also"></a>Se även
 

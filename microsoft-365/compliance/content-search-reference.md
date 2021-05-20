@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Den här artikeln innehåller referensinformation om verktyget eDiscovery för innehållssökning i Microsoft 365 Efterlevnadscenter som hjälper dig få mer information om innehållssökning.
-ms.openlocfilehash: f3545cc4644ca8b0a96ee37713d8fe62be7466e5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 14660b4cfcd09f5346fa8d0d901880d0a6c774c2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332900"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538489"
 ---
 # <a name="feature-reference-for-content-search"></a>Funktionsreferens för Innehållssökning
 
@@ -33,19 +33,7 @@ I den här artikeln beskrivs funktioner och funktionalitet för innehållssökni
 
 ## <a name="content-search-limits"></a>Begränsningar för innehållssökning
 
-- En beskrivning av begränsningarna för innehållssökning finns i [Begränsningar för innehållssökning](limits-for-content-search.md).
-  
-- Microsoft samlar in prestandainformation om innehållssökningar som körs av alla organisationer inom tjänsten. Sökfrågans komplexitet påverkar visserligen söktiden, men det är antalet postlådor som genomsöks som har störst påverkan på söktiden. Microsoft tillhandahåller inte något servicenivåavtal för söktider, men i följande tabell kan du se de genomsnittliga söktiderna för en innehållssökning utifrån antalet postlådor som ingår i sökningen.
-  
-  |**Antal postlådor**|**Genomsnittlig söktid**|
-  |:-----|:-----|
-  |100  <br/> |30 sekunder  <br/> |
-  |1 000  <br/> |45 sekunder  <br/> |
-  |10 000  <br/> |4 minuter  <br/> |
-  |25 000  <br/> |10 minuter  <br/> |
-  |50 000  <br/> |20 minuter  <br/> |
-  |100 000  <br/> |25 minuter  <br/> |
-  |||
+En beskrivning av begränsningarna för innehållssökning finns i [Begränsningar för innehållssökning](limits-for-content-search.md).
   
 ## <a name="building-a-search-query"></a>Skapa en sökfråga
 
@@ -71,7 +59,7 @@ Tänk på följande när du använder nyckelordslistan för att skapa en sökfr�
   
 - När du kör en innehållssökning söker Microsoft 365 automatiskt igenom din sökfråga efter tecken som inte stöds och efter booleska operatorer som inte är versaler. Tecken som inte stöds är ofta dolda och leder vanligtvis till sökfel eller returnerar oväntade resultat. Mer information om vilka tecken som kontrolleras finns i [Kontrollera om det finns fel i din innehållssökningsfråga](check-your-content-search-query-for-errors.md).
     
-- Om din sökfråga innehåller nyckelord med icke-engelska tecken (till exempel kinesiska tecken) kan du klicka på **Frågespråk-land/region**![Ikonen Frågespråk – land/region i Innehållssökning](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) och välja en kod (i formatet språk-land/region) för sökningen. Standardalternativet för språk/region är neutralt. Hur vet du om du behöver ändra språkinställningen för en innehållssökning? Om du vet att vissa innehållsplatser som du söker på innehåller icke-engelska tecken och sökningen inte returnerar några resultat kan det bero på språkinställningen. 
+- Om din sökfråga innehåller nyckelord med icke-engelska tecken (till exempel kinesiska tecken) kan du klicka på **Frågespråk-land/region**![Ikonen Frågespråk – land/region i Innehållssökning](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) och välja en kod (i formatet språk-land/region) för sökningen. Standardalternativet för språk/region är neutralt. Hur vet du om du behöver ändra språkinställningen för en innehållssökning? Om du vet att vissa innehållsplatser som du söker på innehåller icke-engelska tecken och sökningen inte returnerar några resultat kan det bero på språkinställningen.
   
 ## <a name="partially-indexed-items"></a>Delvis indexerade objekt
 

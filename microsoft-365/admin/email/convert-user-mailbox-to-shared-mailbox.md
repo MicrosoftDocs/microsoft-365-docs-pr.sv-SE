@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
-description: 'Lär dig hur du konverterar en privat postlåda till en delad postlåda som kan nås av flera användare. '
-ms.openlocfilehash: d5b33731908d2d555a8dd12d5d7fbbd462bd83ad
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 'Lär dig hur du konverterar en privat postlåda till en delad postlåda som flera personer kan komma åt istället för bara en person. '
+ms.openlocfilehash: 73e2bad40037e1343f4e08c07ca6b26df16b1a30
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915872"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537625"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Konvertera en användarpostlåda till en delad postlåda
 
@@ -41,7 +41,7 @@ När du konverterar en användares postlåda till en delad postlåda sparas alla
 
 - Reglerna är intakta när postlådan har konverterats till en delad postlåda.
 
-## <a name="use-the-exchange-admin-center-to-convert-a-mailbox"></a>Använda Exchange admin center för att konvertera en postlåda
+## <a name="use-the-exchange-admin-center-to-convert-a-mailbox"></a>Använda administrationscentret Exchange för att konvertera en postlåda
  
 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administrationscentret för Exchange</a>.
 
@@ -49,7 +49,7 @@ När du konverterar en användares postlåda till en delad postlåda sparas alla
 
 3. Markera användarens postlåda. Under **Konvertera till delad postlåda** väljer du **Konvertera**.
 
-4. Om postlådan är mindre än 50 GB kan du ta bort licensen från [användaren](../manage/remove-licenses-from-users.md)och sluta betala för den. Ta inte bort användarens konto. Den delade postlådan behöver ha den som en fästpunkt. Om du konverterar postlådan för en anställd som lämnar organisationen bör du vidta ytterligare åtgärder för att se till att de inte kan logga in längre. Se Ta [bort en tidigare anställd från Microsoft 365.](../add-users/remove-former-employee.md)
+4. Om postlådan är mindre än 50 GB kan du ta bort licensen från [användaren](../manage/remove-licenses-from-users.md)och sluta betala för den. Ta inte bort användarens konto. Den delade postlådan behöver ha den som en fästpunkt. Om du konverterar postlådan för en anställd som lämnar organisationen bör du vidta ytterligare åtgärder för att se till att de inte kan logga in längre. Se Ta [bort en tidigare anställd från Microsoft 365](../add-users/remove-former-employee.md).
     
 > [!NOTE]
 > Det är inte obligatoriskt att återställa användarens lösenord vid postlådekonvertering. Om lösenordet inte återställs fortsätter det ursprungliga **användarnamnet och lösenordet att fungera** när postlådekonverteringen är klar.
@@ -57,7 +57,7 @@ När du konverterar en användares postlåda till en delad postlåda sparas alla
 Allt annat du behöver veta om delade postlådor finns i [Om delade postlådor](about-shared-mailboxes.md) och [Skapa en delad postlåda.](create-a-shared-mailbox.md)
 
 > [!NOTE]
-> Delade postlådor kräver inte en separat licens. Men om du vill aktivera In-Place-arkiv eller placera en licens för In-Place-bevarande eller bevarande av juridiska skäl för en delad postlåda måste du tilldela en licens för Exchange Online abonnemang 1 med Exchange Online arkivering eller Exchange Online abonnemang 2 till postlådan.
+> Delade postlådor kräver inte en separat licens. Om du däremot vill aktivera In-Place-arkiv eller placera en licens för In-Place-bevarande eller bevarande av juridiska skäl för en delad postlåda måste du tilldela en licens för Exchange Online-abonnemang 1 med Exchange Online - arkivering eller Exchange Online abonnemang 2 till postlådan.
 
 
 ## <a name="convert-the-mailbox-of-a-deleted-user"></a>Konvertera en borttagen användares postlåda
@@ -66,7 +66,7 @@ Anta att du har tagit bort ett användarkonto och du nu vill konvertera använda
 
 1. [Återställa användarens konto.](../add-users/restore-user.md)
 
-2. Kontrollera att en Microsoft 365-licens har tilldelats till den.
+2. Kontrollera att Microsoft 365 licens är tilldelad till den.
 
 3. Återställ användarens lösenord.
     
@@ -93,23 +93,23 @@ Anta att du har tagit bort ett användarkonto och du nu vill konvertera använda
 
 ## <a name="convert-a-users-mailbox-in-a-hybrid-environment"></a>Konvertera en användares postlåda i en hybridmiljö
 
-Mer information om hur du konverterar en användarpostlåda till en delad postlåda i en Exchange-hybridmiljö finns i:
+Mer information om hur du konverterar en användarpostlåda till en delad postlåda i Exchange hybridmiljö finns i:
 
- - [Cmdlets för att skapa eller ändra en fjärransluten delad postlåda i en lokal Exchange-miljö](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
- - [Delade postlådor konverteras oväntat till användarpostlådor när katalogsynkroniseringen körs i en Exchange-hybriddistribution](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
+ - [Cmdlets för att skapa eller ändra en fjärransluten delad postlåda i en Exchange miljö](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
+ - [Delade postlådor konverteras oväntat till användarpostlådor när katalogsynkroniseringen har Exchange i en hybriddistribution](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
  
 
 > [!NOTE]
 > Om du är medlem i rollgruppen Organisationshantering eller Mottagarhantering kan du använda Exchange Management Shell för att ändra en användarpostlåda till en delad postlåda lokalt. Till exempel `Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`.
 
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-content"></a>Relaterat innehåll
 
-[Om delade postlådor](about-shared-mailboxes.md)
+[Om delade postlådor](about-shared-mailboxes.md) (artikel)
 
-[Skapa en delad postlåda](create-a-shared-mailbox.md)
+[Skapa en delad postlåda](create-a-shared-mailbox.md) (artikel)
 
-[Konfigurera en delad postlåda](configure-a-shared-mailbox.md)
+[Konfigurera en delad postlåda](configure-a-shared-mailbox.md) (artikel)
 
-[Ta bort en licens från en delad postlåda](remove-license-from-shared-mailbox.md)
+[Ta bort en licens från en delad postlåda](remove-license-from-shared-mailbox.md) (artikel)
 
-[Lösa problem med delade postlådor](resolve-issues-with-shared-mailboxes.md)
+[Lösa problem med delade postlådor](resolve-issues-with-shared-mailboxes.md) (artikel)

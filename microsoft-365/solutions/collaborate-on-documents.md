@@ -16,17 +16,18 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
+recommendations: false
 description: I den här artikeln får du lära dig hur du samarbetar med gäster i ett dokument i SharePoint och OneDrive.
-ms.openlocfilehash: 9158ec7692ef90eb2e270242472fceb10d0e60b7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 338c7f32944bccb766ed923c12a9fceee4d81db8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920234"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537841"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Samarbeta med gäster i ett dokument
 
-Om du behöver samarbeta med personer utanför organisationen med dokument i SharePoint eller OneDrive kan du skicka dem en delningslänk till dokumentet. I den här artikeln går vi igenom konfigurationsstegen för Microsoft 365 som krävs för att konfigurera delningslänkar för SharePoint och OneDrive för organisationens behov.
+Om du behöver samarbeta med personer utanför organisationen i dokument i SharePoint eller OneDrive kan du skicka dem en delningslänk till dokumentet. I den här artikeln går vi igenom de konfigurationssteg Microsoft 365 behöver för att konfigurera delningslänkar för SharePoint och OneDrive för organisationens behov.
 
 ## <a name="video-demonstration"></a>Videodemonstration
 
@@ -55,15 +56,15 @@ Observera inställningarna i avsnittet **Begränsningar för samarbete**. Kontro
 
 Om du arbetar med gäster från flera organisationer kanske du vill begränsa deras åtkomst till katalogdata. Det gör att de inte kan se vem mer som är gäst i katalogen. **Under begränsningar för gästanvändaråtkomst** kan du göra det genom att välja **Gästanvändare har begränsad åtkomst till egenskaper och medlemskap i inställningar för katalogobjekt** eller **Gästanvändaråtkomst begränsas till egenskaper och medlemskap i sina egna katalogobjekt**.
 
-## <a name="sharepoint-organization-level-sharing-settings"></a>Delningsinställningar på organisationsnivå i SharePoint
+## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint delningsinställningar på organisationsnivå
 
 För att personer utanför organisationen ska ha tillgång till ett dokument i SharePoint eller OneDrive måste delningsinställningarna på SharePoint- och OneDrive-organisationsnivå tillåta delning med personer utanför organisationen.
 
-Inställningarna på organisationsnivå för SharePoint avgör vilka inställningar som ska vara tillgängliga för enskilda SharePoint-webbplatser. Webbplatsinställningar får inte vara mer tillåtande än inställningarna på organisationsnivå. Inställningen på organisationsnivå för OneDrive avgör vilken delningsnivå som är tillgänglig i användarnas OneDrive-bibliotek.
+Inställningarna på organisationsnivå för SharePoint inställningar som ska vara tillgängliga för enskilda SharePoint webbplatser. Webbplatsinställningar får inte vara mer tillåtande än inställningarna på organisationsnivå. Inställningen på organisationsnivå för OneDrive avgör vilken delningsnivå som ska vara tillgänglig i användarnas OneDrive bibliotek.
 
-För SharePoint och OneDrive väljer du Alla om du vill tillåta icke-synkroniserad fil- och **mappdelning.** Om du vill säkerställa att personer utanför organisationen måste autentisera väljer du **Nya och befintliga gäster.** *Länkar* för alla är det enklaste sättet att dela: personer utanför organisationen kan öppna länken utan autentisering och kan överföra den till andra.
+Om SharePoint och OneDrive väljer du Alla om du vill tillåta icke-autisk fil- och **mappdelning.** Om du vill säkerställa att personer utanför organisationen måste autentisera väljer du **Nya och befintliga gäster.** *Länkar* för alla är det enklaste sättet att dela: personer utanför organisationen kan öppna länken utan autentisering och kan överföra den till andra.
 
-För SharePoint väljer du den mest tillåtande inställningen som behövs av alla webbplatser i organisationen.
+Välj SharePoint mest tillåtande inställning som behövs av alla webbplatser i organisationen.
 
 ![Skärmbild av delningsinställningar för SharePoint på organisationsnivå](../media/sharepoint-organization-external-sharing-controls.png)
 
@@ -71,15 +72,15 @@ För SharePoint väljer du den mest tillåtande inställningen som behövs av al
 För att ange delningsinställningar för SharePoint på organisationsnivå
 
 1. I det vänstra navigeringsfönstret i administrationscentret för Microsoft 365 går du till **Administrationscenter** och klickar på **SharePoint**.
-2. I det vänstra navigeringsfönstret i administrationscentret för SharePoint, under **Principer,** klickar du på **Delning.**
-3. Kontrollera att extern delning för SharePoint eller OneDrive är inställt på **Alla** eller **Nya och befintliga gäster.** (Observera att OneDrive-inställningen inte kan vara mer tillåtande än SharePoint-inställningen.)
+2. I det SharePoint navigeringsfönstret i vänstra navigeringsfönstret, under Principer, **klickar du** på **Delning.**
+3. Kontrollera att extern delning för SharePoint eller OneDrive är inställt på **Alla** eller **Nya och befintliga gäster.** (Observera att OneDrive kan vara mer tillåtande än SharePoint inställning.)
 4. Om du har gjort ändringar klickar du på **Spara**.
 
 ## <a name="sharepoint-organization-level-default-link-settings"></a>Standardinställningar för länkar på organisationsnivå i SharePoint
 
 Standardinställningarna för filer och mappar avgör vilket länkalternativ som visas för användarna när de delar en fil eller mapp. Användare kan ändra länktypen till något av de andra alternativen innan de delar om de vill.
 
-Tänk på att den här inställningen påverkar SharePoint-webbplatser i organisationen och OneDrive.
+Tänk på att den här SharePoint påverkar webbplatser i organisationen samt OneDrive.
 
 Välj en länk från någon av följande typer som sedan väljs som standard när användare delar filer och mappar:
 
@@ -90,7 +91,7 @@ Välj en länk från någon av följande typer som sedan väljs som standard nä
 ![Skärmbild av delningsinställningar för filer och mappar för SharePoint på organisationsnivå](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
-Så här anger du standardlänkinställningar för SharePoint och OneDrive på organisationsnivå
+Så här anger SharePoint och OneDrive inställningar för länkar på organisationsnivå
 
 1. Gå till sidan Delning i administrationscentret för SharePoint.
 2. Välj den standard delningslänk du vill använda under **Fil- och mapplänkar**.
@@ -115,7 +116,7 @@ Ange behörigheter för länkar som tillåter delning med alla
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>Delningsinställningar på webbplatsnivå i SharePoint
 
-Om du delar filer och mappar som finns på en SharePoint-webbplats måste du kontrollera inställningarna för delning på webbplatsnivå för webbplatsen.
+Om du delar filer och mappar som finns på en SharePoint-webbplats måste du kontrollera inställningarna för delning på webbplatsnivå för den webbplatsen.
 
 ![Skärmbild av inställningar för extern delning för SharePoint](../media/sharepoint-site-external-sharing-settings.png)
 
@@ -131,7 +132,7 @@ Så här anger du delningsinställningar på webbplatsnivå
 
 ## <a name="invite-users"></a>Bjuda in användare
 
-Inställningarna för gästdelning är nu konfigurerade. så att användare nu kan dela filer och mappar med personer utanför organisationen. Mer information [finns i Dela Filer och mappar i OneDrive](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07) och Dela [SharePoint-filer](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) och -mappar.
+Inställningarna för gästdelning är nu konfigurerade. så att användare nu kan dela filer och mappar med personer utanför organisationen. Mer [information OneDrive dela filer och](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07) SharePoint mappar finns i Dela filer [och](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) mappar.
 
 ## <a name="see-also"></a>Se även
 

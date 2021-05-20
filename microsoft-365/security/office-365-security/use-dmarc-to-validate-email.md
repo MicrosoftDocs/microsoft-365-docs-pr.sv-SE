@@ -1,5 +1,5 @@
 ---
-title: Använda DMARC för att validera e-post
+title: Använd DMARC för att validera e-post
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -7,6 +7,7 @@ author: MSFTTracyP
 manager: dansimp
 audience: ITPro
 ms.topic: article
+ms.date: 05/10/2021
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -17,12 +18,12 @@ ms.collection:
 description: Lär dig hur du konfigurerar DMARC (Domain-based Message Authentication, Reporting, and Conformance) för att validera meddelanden som skickats från din organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec17ebadb40f2032e36cc6d4d74db445897c40b4
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9beada6e0fb61e503392b0bd379f02bd1c025464
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207213"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538681"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Använda DMARC för att validera e-post
 
@@ -91,15 +92,15 @@ _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=
 
 Microsoft skickar sina DMARC-rapporter till [Agari](https://agari.com), en tredje part. Agari samlar in och analyserar DMARC-rapporter. Gå till [MISA-katalogen](https://www.microsoft.com/misapartnercatalog) för att se fler externa leverantörer som erbjuder DMARC-rapportering för Microsoft 365.
 
-## <a name="implement-dmarc-for-inbound-mail"></a>Implementerar DMARC-för inkommande e-post
+## <a name="set-up-dmarc-for-inbound-mail"></a>Konfigurera DMARC för inkommande e-post
 
 Du behöver inte göra något för att konfigurera DMARC för e-post som du har tagit emot i Microsoft 365. Vi har tagit hand om allt åt dig. Om du vill veta vad som händer med e-post som inte godkänns i våra DMARC-kontroller kan du läsa [Så hanterar Microsoft 365 inkommande e-post som misslyckas i DMARC](#how-microsoft-365-handles-inbound-email-that-fails-dmarc).
 
-## <a name="implement-dmarc-for-outbound-mail-from-microsoft-365"></a>Implementera DMARC för utgående e-post från Microsoft 365
+## <a name="set-up-dmarc-for-outbound-mail-from-microsoft-365"></a>Konfigurera DMARC för utgående e-post från Microsoft 365
 
 Om du använder Microsoft 365 men du inte använder en egen domän, det vill säga du använder onmicrosoft.com, behöver du inte göra något annat för att konfigurera eller implementera DMARC för din organisation. SPF är redan konfigurerat för dig och Microsoft 365 genererar automatiskt en DKIM-signatur för utgående e-post. Mer information om den här signaturen finns i [Standardbeteende för DKIM och Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
 
- Om du har en egen domän eller om du använder lokala Exchange-servrar förutom Microsoft 365 måste du manuellt implementera DMARC för utgående e-post. Implementering av DMARC för din egen domän omfattar följande steg:
+ Om du har en anpassad domän eller om du använder lokala Exchange-servrar förutom Microsoft 365 måste du manuellt implementera DMARC för utgående e-post. Att implementera DMARC för en anpassad domän gör man genom följande steg:
 
 - [Steg 1: Identifiera giltiga e-postkällor för din domän](#step-1-identify-valid-sources-of-mail-for-your-domain)
 
@@ -179,6 +180,15 @@ Exempel:
 
 När du har skapat posten måste du uppdatera posten hos domänregistratorn. Instruktioner för hur du lägger till DMARC TXT-posten till dina DNS-poster för Microsoft 365 finns i [Skapa DNS-poster för Microsoft 365 när du hanterar dina DNS-poster](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
+## <a name="dmarc-mail-public-preview-feature"></a>DMARC-e-post (Allmänt tillgänglig förhandsversionsfunktion)
+> [!CAUTION]
+> E-postmeddelanden kanske inte skickas varje dag och själva rapporten kan komma att ändras under den allmänt tillgänglig förhandsversionen.  Aggregerade DMARC-rapportmeddelanden kan förväntas från konsumentkonton (som hotmail.com, outlook.com eller live.com konton).
+
+I det här exemplet har DMARC TXT-posten **_dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"** kan du se *rua*-adressen, som i det här fallet behandlas av tredjepartsföretaget Agari. Den här adressen används för att skicka Aggregatfeedback för analys och för att generera en rapport.
+
+> [!TIP]
+> Gå till [MISA-katalogen](https://www.microsoft.com/misapartnercatalog) för att se fler externa leverantörer som erbjuder DMARC-rapportering för Microsoft 365. Mer information om DMARC rua-adresser finns i [IETF.orgs Domänbaserad meddelandeautentisering, rapportering och överensstämmelser (DMARC)](https://datatracker.ietf.org/doc/html/rfc7489).
+
 ## <a name="best-practices-for-implementing-dmarc-in-microsoft-365"></a>Metodtips för implementering av DMARC i Microsoft 365
 
 Du kan implementera DMARC gradvis utan att det påverkar resten av ditt e-postflöde. Skapa och implementera en lanseringsplan som följer de här stegen. Utför vart och ett av de här stegen först med en underdomän, sedan med andra underdomäner och till sist med domänen på den översta nivån i organisationen innan du går vidare till nästa steg.
@@ -221,9 +231,9 @@ Microsoft 365 är konfigurerat så här eftersom viss legitim e-post kanske inte
 
 - Användare lägger till betrodda avsändare individuellt med hjälp av sina e-postklienter.
 
-- Administratörer kan uppdatera rapporteringen av [förfalskningsinformation](learn-about-spoof-intelligence.md) för att tillåta förfalskningen.
+- Administratörer kan använda [Insikter om förfalskningsinformation](learn-about-spoof-intelligence.md) eller [Klientorganisationers tillåt/blockera-lista](tenant-allow-block-list.md) för att tillåta meddelanden från förfalskningsavsändaren.
 
-- Administratörer skapar en Exchange-e-postflödesregel (även kallad transportregel) för alla användare som tillåter meddelanden för dessa särskilda avsändare.
+- Administratörer skapar en flödesregel (även kallad transportregel) för Exchange-e-post för alla användare som tillåter meddelanden från dessa särskilda avsändare.
 
 Mer information finns i [Skapa listor över betrodda avsändare](create-safe-sender-lists-in-office-365.md).
 

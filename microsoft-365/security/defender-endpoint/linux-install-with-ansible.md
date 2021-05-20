@@ -1,8 +1,8 @@
 ---
-title: Distribuera Microsoft Defender för Slutpunkt på Linux med Ansible
+title: Distribuera Microsoft Defender för slutpunkt på Linux med Ansible
 ms.reviewer: ''
-description: Här beskrivs hur du distribuerar Microsoft Defender för Slutpunkt på Linux med Ansible.
-keywords: microsoft, defender, Microsoft Defender för Endpoint, linux, installation, distribuera, avinstallation, installationse, ansible, linux, redhat, ubuntu, ubuntu, sles, suse, centos
+description: I artikeln beskrivs hur du distribuerar Microsoft Defender för slutpunkt på Linux med Ansible.
+keywords: microsoft, defender, Microsoft Defender för Endpoint, linux, installation, distribution, avinstallation, docka, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9cd544ca3d714ea46c74e10f8aba5e46dc0e1b35
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 36095f14ad3ed71c6a8d4707522c08c07ea738c4
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280999"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572735"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Distribuera Microsoft Defender för Slutpunkt på Linux med Ansible
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Distribuera Microsoft Defender för slutpunkt på Linux med Ansible
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,25 +34,25 @@ ms.locfileid: "52280999"
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vill du uppleva Defender for Endpoint? [Registrera dig för en gratis provperiod.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-I den här artikeln beskrivs hur du distribuerar Defender för Slutpunkt på Linux med Ansible. För en lyckad distribution måste alla följande uppgifter slutföras:
+I den här artikeln beskrivs hur du distribuerar Defender för punkt på Linux med ansible. En lyckad distribution kräver att alla följande uppgifter slutförs:
 
-- [Ladda ned onboarding-paketet](#download-the-onboarding-package)
+- [Ladda ner onboarding-paketet](#download-the-onboarding-package)
 - [Skapa ansible YAML-filer](#create-ansible-yaml-files)
 - [Distribution](#deployment)
 - [Referenser](#references)
 
-## <a name="prerequisites-and-system-requirements"></a>Krav och systemkrav
+## <a name="prerequisites-and-system-requirements"></a>Förutsättningar och systemkrav
 
-Innan du börjar kan du gå [till huvudsidan för Defender](microsoft-defender-endpoint-linux.md) för Slutpunkt på Linux för att få en beskrivning av förutsättningarna och systemkraven för den aktuella programvaruversionen.
+Innan du börjar, se [huvud defender för endpoint på Linux-sidan](microsoft-defender-endpoint-linux.md) för en beskrivning av förutsättningar och systemkrav för den aktuella programvaruversionen.
 
-För ansible-distribution måste du dessutom känna till Ansible-administrationsuppgifter, ha Ansible konfigurerat och veta hur du distribuerar spelböcker och uppgifter. Det finns många sätt att slutföra samma aktivitet på ansible. De här instruktionerna förutsätter tillgänglighet för ansible-moduler som stöds, till exempel *apt* och *inte arkiverade för* distribution av paketet. Din organisation kan använda ett annat arbetsflöde. Mer information finns [i dokumentationen till Ansible.](https://docs.ansible.com/)
+För ansibel distribution måste du dessutom vara bekant med Ansible-administrationsuppgifter, ha Ansible konfigurerad och veta hur du distribuerar spelböcker och uppgifter. Ansible har många sätt att slutföra samma uppgift. De här anvisningarna förutsätter tillgänglighet för ansible-moduler som stöds, *till exempel lämpliga och osökbara* *för* att hjälpa till att distribuera paketet. Din organisation kan använda ett annat arbetsflöde. Mer information finns i dokumentationen om [ansible.](https://docs.ansible.com/)
 
-- Ansible måste installeras på minst en dator (Ansible anropar den här kontrollnoden).
-- SSH måste konfigureras för ett administratörskonto mellan kontrollnoden och alla hanterade noder (enheter som har Defender för Slutpunkt installerat på dem) och vi rekommenderar att du konfigurerar med offentlig nyckelautentisering.
+- Ansible måste installeras på minst en dator (Ansible kallar detta kontrollnoden).
+- SSH måste konfigureras för ett administratörskonto mellan kontrollnoden och alla hanterade noder (enheter som har Defender för slutpunkt installerad på dem), och vi rekommenderar att du konfigureras med autentisering av offentliga autentiseringar.
 - Följande programvara måste installeras på alla hanterade noder:
-  - böjning
+  - hårlock
   - python-apt
 
 - Alla hanterade noder måste visas i följande format i `/etc/ansible/hosts` den eller relevanta filen:
@@ -69,17 +69,17 @@ För ansible-distribution måste du dessutom känna till Ansible-administrations
     ansible -m ping all
     ```
 
-## <a name="download-the-onboarding-package"></a>Ladda ned onboarding-paketet
+## <a name="download-the-onboarding-package"></a>Ladda ner onboarding-paketet
 
-Ladda ned introduktionspaketet från Microsoft Defender Säkerhetscenter:
+Ladda ner onboarding-paketet från Microsoft Defender Säkerhetscenter:
 
-1. I Microsoft Defender Säkerhetscenter går du till Inställningar > **på Enhetshantering > Onboarding.**
-2. I den första listrutan väljer du **Linux Server** som operativsystem. I den andra nedrullningsmenyn väljer du **Det konfigurationshanteringsverktyg du** föredrar i Linux som distributionsmetod.
-3. Välj **Hämta introduktionspaket**. Spara filen som WindowsDefenderATPOnboardingPackage.zip.
+1. I Microsoft Defender Säkerhetscenter går du **till Inställningar > Device Management > Onboarding**.
+2. Välj Linux Server som operativsystem i den **första nedrullningsbara** menyn. I den andra listrutan väljer du Ditt önskade **Linux-konfigurationshanteringsverktyg** som distributionsmetod.
+3. Välj **Ladda ner onboarding-paket**. Spara filen som WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft Defender Säkerhetscenter skärmbild](images/atp-portal-onboarding-linux-2.png)
+    ![Microsoft Defender Säkerhetscenter skärmdump](images/atp-portal-onboarding-linux-2.png)
 
-4. Kontrollera att filen finns i kommandotolken. Extrahera innehållet i arkivet:
+4. Kontrollera att du har filen i kommandotolken. Extrahera innehållet i arkivet:
 
     ```bash
     ls -l
@@ -98,7 +98,7 @@ Ladda ned introduktionspaketet från Microsoft Defender Säkerhetscenter:
 
 ## <a name="create-ansible-yaml-files"></a>Skapa ansible YAML-filer
 
-Skapa en underaktivitet eller rollfiler som bidrar till en spelbok eller uppgift.
+Skapa en undertask eller rollfiler som bidrar till en spelbok eller uppgift.
 
 - Skapa onboarding-uppgiften: `onboarding_setup.yml`
 
@@ -127,23 +127,23 @@ Skapa en underaktivitet eller rollfiler som bidrar till en spelbok eller uppgift
       when: not mdatp_onboard.stat.exists
     ```
 
-- Lägg till Defender för slutpunktens lagringsplats och nyckel.
+- Lägg till databasen och nyckeln Defender för `add_apt_repo.yml` slutpunkt:
 
-    Defender för Slutpunkt i Linux kan distribueras från någon av följande kanaler (anges nedan som *[kanal]*): *insiders-fast,* *insiders-slow* eller *prod*. Var och en av dessa kanaler motsvarar en linux-programvarudatabas.
+    Defender for Endpoint på Linux kan distribueras från någon av följande kanaler (betecknas nedan som *[kanal]*): *insiders-fast*, *insiders-slow* eller *prod*. Var och en av dessa kanaler motsvarar en Linux-programvarudatabas.
 
-    Valet av kanal avgör typ och frekvens för uppdateringar som erbjuds till din enhet. Enheter inom *insiders – snabbt* är de första som får uppdateringar och nya funktioner, följt senare av *insiders-slow* och slutligen *av prod*.
+    Valet av kanal avgör vilken typ och frekvens av uppdateringar som erbjuds din enhet. Enheter i *insiders-fast* är de första som får uppdateringar och nya funktioner, följt senare *av insiders-långsamma* och slutligen *av prod*.
 
-    Om du vill förhandsgranska nya funktioner och ge tidig feedback rekommenderar vi att du konfigurerar vissa enheter i företaget så att de använder *insiders snabbt* eller *insiders -långsamt.*
+    För att förhandsgranska nya funktioner och ge tidig feedback rekommenderar vi att du konfigurerar vissa enheter i ditt företag för att använda *antingen insiders-fast* eller *insiders-slow*.
 
     > [!WARNING]
-    > Om du byter kanal efter den första installationen måste produkten installeras om. Om du vill byta produktkanal: avinstallera det befintliga paketet, konfigurera om enheten så att den nya kanalen används och följ stegen i det här dokumentet för att installera paketet från den nya platsen.
+    > Om du byter kanal efter den första installationen måste produkten installeras om. Så här byter du produktkanal: avinstallerar det befintliga paketet, konfigurerar om enheten så att den använder den nya kanalen och följer anvisningarna i det här dokumentet för att installera paketet från den nya platsen.
 
-    Notera distribution och version och ange den mest närmaste posten för den under `https://packages.microsoft.com/config/` .
+    Notera distributionen och versionen och identifiera den närmaste posten för den under `https://packages.microsoft.com/config/` .
 
-    I följande kommandon ersätter *du [distro]* *och [version]* med den information som du har identifierat.
+    I följande kommandon ersätter du *[distro]* och *[version]* med den information du har identifierat.
 
     > [!NOTE]
-    > Om du använder Oracle Linux *ersätter du [distro]* med "rhel".
+    > När det gäller Oracle Linux, ersätt *[distro]* med "rhel".
 
   ```bash
   - name: Add Microsoft APT key
@@ -177,7 +177,7 @@ Skapa en underaktivitet eller rollfiler som bidrar till en spelbok eller uppgift
     when: ansible_os_family == "RedHat"
   ```
 
-- Skapa ansible-installationen och avinstallera YAML-filer.
+- Skapa Ansible-installera och avinstallera YAML-filer.
 
     - För apt-baserade distributioner använder du följande YAML-fil:
 
@@ -241,16 +241,16 @@ Skapa en underaktivitet eller rollfiler som bidrar till en spelbok eller uppgift
 
 Kör nu uppgiftsfilerna under `/etc/ansible/playbooks/` eller relevant katalog.
 
-- Installation:
+- installation:
 
     ```bash
     ansible-playbook /etc/ansible/playbooks/install_mdatp.yml -i /etc/ansible/hosts
     ```
 
 > [!IMPORTANT]
-> När produkten startas för första gången laddas de senaste definitionerna för program mot skadlig programvara ned. Beroende på din Internetanslutning kan det ta upp till några minuter.
+> När produkten startar för första gången laddar den ner de senaste antimalware-definitionerna. Beroende på din Internetanslutning kan det ta upp till några minuter.
 
-- Verifiering/konfiguration:
+- Validering/konfiguration:
 
     ```bash
     ansible -m shell -a 'mdatp connectivity test' all
@@ -265,23 +265,23 @@ Kör nu uppgiftsfilerna under `/etc/ansible/playbooks/` eller relevant katalog.
     ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts
     ```
 
-## <a name="log-installation-issues"></a>Logga installationsproblem
+## <a name="log-installation-issues"></a>Problem med logginstallation
 
-Mer [information om hur](linux-resources.md#log-installation-issues) du hittar den automatiskt genererade loggen som skapas av installationsprogrammet när ett fel uppstår finns i Problem med logginstallationen.
+Mer information [om hur](linux-resources.md#log-installation-issues) du hittar den automatiskt genererade loggen som skapas av installationsprogrammet när ett fel uppstår finns i Logga installationsproblem.
 
 ## <a name="operating-system-upgrades"></a>Uppgraderingar av operativsystem
 
-När du uppgraderar ditt operativsystem till en ny huvudversion måste du först avinstallera Defender för Slutpunkt i Linux, installera uppgraderingen och slutligen konfigurera om Defender för Slutpunkt på Linux på din enhet.
+När du uppgraderar operativsystemet till en ny huvudversion måste du först avinstallera Defender för Endpoint på Linux, installera uppgraderingen och slutligen konfigurera om Defender för slutpunkt på Linux på din enhet.
 
 ## <a name="references"></a>Referenser
 
-- [Lägga till eller ta bort YUM-lagringsplatsen](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/yum_repository_module.html)
+- [Lägga till eller ta bort YUM-databaser](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/yum_repository_module.html)
 
-- [Hantera paket med pakethanteraren för dnf](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/dnf_module.html)
+- [Hantera paket med dnf-pakethanteraren](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/dnf_module.html)
 
-- [Lägga till och ta bort APT-lagringsplatsen](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_repository_module.html)
+- [Lägga till och ta bort APT-databaser](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_repository_module.html)
 
-- [Hantera avd-paket](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
+- [Hantera apt-paket](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
 
 ## <a name="see-also"></a>Se även
-- [Undersöka problem med agenthälsa](health-status.md)
+- [Undersöka hälsoproblem i agenten](health-status.md)

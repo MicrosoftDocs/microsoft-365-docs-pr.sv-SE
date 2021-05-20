@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: När du skapar en känslighetsetikett kan du automatiskt tilldela filer och e-postmeddelanden en etikett, eller så kan du uppmana användarna att välja den etikett som du rekommenderar.
-ms.openlocfilehash: f5281255db48b61e7cf21a1ac8d6b5bdd18ebc20
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: d7559e5fa75db1fb23592dec1a3a5f35bad603df
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332984"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538544"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Använda en känslighetsetikett för innehåll automatiskt
 
@@ -52,14 +52,14 @@ Det finns två olika metoder för att automatiskt använda en känslighetsetiket
 
 - **Etikettering på tjänstsidan när innehåll redan har sparats (i SharePoint eller OneDrive) eller mejlats (bearbetats av Exchange Online)**: Använd en princip för automatisk etikettering. 
     
-    Du kanske också hör att metoden kallas för automatisk etikettering av data i rest (dokument i SharePoint och OneDrive) och data i transit (e-post som skickas eller tas emot av Exchange). För Exchange gäller det inte e-postmeddelanden i vila (postlådor).
+    Du kanske också har hört att metoden kallas för automatisk etikettering av data i vila (dokument i SharePoint och OneDrive) och data som överförs (e-post som skickas eller tas emot av Exchange). För Exchange innehåller det inte e-postmeddelanden i vila (postlådor).
     
     Eftersom den här etiketteringen tillämpas av tjänster i stället för program behöver du inte oroa dig för vilket appanvändare har eller vilken version. Därför är den här funktionen omedelbart tillgänglig i hela organisationen och lämpar sig för etikettering vid skalan. Automatiskt märkta principer har inte stöd för Rekommenderad etikett eftersom användaren inte interagerar med namngivnings processen. I stället körs principerna i simuleringsläge för att säkerställa rätt etikettering av innehållet innan etiketten tillämpas.
     
     Instruktioner för konfiguration finns i [hur du konfigurerar principer för automatisk etikettering för SharePoint, OneDrive och Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) på den här sidan.
     
     Specifikt för autoetikettering för SharePoint och OneDrive:
-    - Office-filer för Word, PowerPoint och Excel stöds. Open XML-format stöds (till exempel .docx och .xlsx) men inte Microsoft Office 97-2003-format (t.ex. .doc och .xls).
+    - Office-filer för Word, PowerPoint och Excel stöds. Öppna XML-format stöds (t.ex. .docx och .xlsx) men inte Microsoft Office 97-2003-format (t.ex. .doc och .xls).
         - Filerna kan märkas automatiskt före eller efter att principerna för automatisk etikettering har skapats. Observera att filer inte kan etiketteras automatiskt om de är en del av en öppen session (filen är öppen).
     - Högst 25 000 automatiskt etiketterade filer i klientorganisationen per dag.
     - Högst tio principer för automatisk etikettering per klientorganisation, varav varje riktar sig till upp till tio webbplatser (SharePoint eller OneDrive).
@@ -67,7 +67,7 @@ Det finns två olika metoder för att automatiskt använda en känslighetsetiket
     - När etiketten tillämpar kryptering är det [utfärdaren av rättighetshantering och ägaren av rättighetshantering](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) det konto som senast ändrade filen.
 
     Specifikt för automatisk etikettering för Exchange:
-    - Till skillnad från manuell etikettering eller automatisk etikettering med Office-program skannas även PDF-bilagor och Office-bilagor (Word-, Excel- och PowerPoint-filer) efter de villkor som du anger i principen för automatisk etikett. När det finns en matchning märks e-postmeddelandet med en etikett, men inte den bifogade filen.
+    - Till skillnad från manuell etikettering eller automatisk etikettering med Office-program skannas även PDF-bilagor och Office-bilagor (Word-, Excel- och PowerPoint-filer) efter de villkor som du anger i principen för automatisk etikett. När det finns en matchning etiketteras e-postmeddelandet, men inte den bifogade filen.
         - Om etiketten tillämpar kryptering för PDF-filer krypteras filerna när klientorganisationen har [aktiverats för bifogade PDF-filer](ome-faq.yml#are-pdf-file-attachments-supported-).
         - För dessa Office-filer stöds Open XML-format (till exempel .docx och .xlsx) men inte Microsoft Office 97-2003-format (t.ex. .doc och .xls). Om etiketten tillämpar kryptering krypteras filerna.
     - Om du har regler för e-postflödet i Exchange eller DLP-principer (dataförlustskydd) som tillämpar IRM-kryptering: En etikett tillämpas när innehåll identifieras av dessa regler eller principer samt en princip för automatisk etikettering. Om den etiketten tillämpar kryptering ignoreras IRM-inställningarna från Exchange-e-postflödesregler eller DLP-principer. Om etiketten inte tillämpar kryptering tillämpas IRM-inställningarna från e-postflödesregler eller DLP-principer utöver etiketten.
@@ -133,7 +133,7 @@ När du väljer alternativet **Typer av känslig information** visas samma lista
 
 På samma sätt som när du konfigurerar DLP-principer kan du sedan förfina villkoret genom att ändra antalet instanser och matcha noggrannheten. Till exempel:
 
-![Alternativ för att matcha noggrannhet och antal instanser](../media/sensitivity-labels-instance-count-match-accuracy.png)
+![Alternativ för att matcha noggrannhet och antal instanser](../media/sit-confidence-level.png)
 
 Mer information om de här konfigurationsalternativen från DLP-dokumentationen finns här: [Justera regler för att göra dem enklare eller svårare att matcha](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
@@ -171,7 +171,7 @@ Om du föredrar det kan du rekommendera att användarna använder etiketten. Med
 
 ![Alternativ för att rekommendera en känslighetsetikett för användarna](../media/Sensitivity-labels-Recommended-label-option.png)
 
-Här är ett exempel på en uppmaning från Azure Information Protection-klienten för enhetliga etiketter när du konfigurerar ett villkor för att använda en etikett som en rekommenderad åtgärd, med ett anpassat principtips. Du kan välja vilken text som ska visas i principtipset.
+Här är ett exempel på en uppmaning från Azure Information Protection-klienten för enhetliga etiketter när du konfigurerar ett villkor för att använda en etikett som en rekommenderad åtgärd, med ett anpassat principtips. Du kan välja den text som ska visas i principtipset.
 
 ![Fråga om du vill använda en rekommenderad etikett](../media/Sensitivity-label-Prompt-for-required-label.png)
 

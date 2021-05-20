@@ -20,12 +20,12 @@ description: Administratörer kan få information om hur de tar bort användare 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 32748d717762d7af727a1583226b6d47ee7697c6
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2171e2465aa40e187f8104c7c0d2675562f115ce
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207151"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537877"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Ta bort blockerade användare från portalen med åtkomstbegränsade användare i Office 365
 
@@ -81,7 +81,7 @@ Administratörer kan ta bort användare från portalen med åtkomstbegränsade a
 
 ## <a name="verify-the-alert-settings-for-restricted-users"></a>Verifiera aviseringsinställningarna för begränsade användare
 
-Standardaviseringsprincipen med namnet **Användare med restriktioner för att skicka e-post** meddelar automatiskt administratörer när användare hindras från att skicka utgående e-post. Du kan kontrollera inställningarna och lägga till fler användare som ska meddelas. Gå till [Varningsregler i Säkerhets- och efterlevnadscentret](../../compliance/alert-policies.md) om du vill ha mer information om varningsprinciper.
+Standardaviseringsprincipen med namnet **Användare med restriktioner för att skicka e-post** meddelar automatiskt administratörer när användare hindras från att skicka utgående e-post. Du kan kontrollera inställningarna och lägga till fler användare som ska meddelas. Mer information om aviseringsprinciper finns i [Principer för aviseringar i Microsoft 365](../../compliance/alert-policies.md).
 
 > [!IMPORTANT]
 > För att varningar ska fungera måste Granskningsloggsökning aktiveras. Du kan läsa mer i [Aktivera och inaktivera granskningsloggsökning](../../compliance/turn-audit-log-search-on-or-off.md).

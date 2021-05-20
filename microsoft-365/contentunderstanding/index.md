@@ -1,7 +1,7 @@
 ---
 title: Introduktion till Microsoft SharePoint-Syntex
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires, toresing
 audience: admin
@@ -13,16 +13,16 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Lär dig hur du hittar resurser för Microsoft SharePoint Syntex.
-ms.openlocfilehash: 4282da5ca1027eaf041241e90011ead8f2942985
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 350dd1a526b56525f0aca7a167841e3a77833533
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905734"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538081"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Introduktion till Microsoft SharePoint-Syntex
 
-Microsoft SharePoint-Syntex är en Office 365-tjänst som hjälper organisationer att:
+Microsoft SharePoint Syntex är en Microsoft 365-tjänst som hjälper organisationer att:
 
 - Använda avancerad AI och maskininlärning för att förstärka människans upplevelser
 - Automatisera innehållsbearbetning

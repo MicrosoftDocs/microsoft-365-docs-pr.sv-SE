@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: När en delad postlåda har skapats kan flera personer i verksamheten dela på ansvaret att läsa och svara på e-postmeddelanden som skickas till en adress.
-ms.openlocfilehash: 004473b329b14be9287f249b1d640c3b0803412a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 808b98b45c3d6f5ba3cd9847ba2aa843ff53d106
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915884"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537613"
 ---
 # <a name="create-a-shared-mailbox"></a>Skapa en delad postlåda 
 
@@ -38,7 +38,7 @@ ms.locfileid: "50915884"
 
 Det är enkelt att skapa en delad postlåda så att en grupp användare kan övervaka och skicka e-post från en gemensam e-postadress, exempelvis info@contoso.com. När en person i gruppen svarar på ett meddelande till den delade postlådan ser svarsmeddelandet ut att komma från den delade postlådan, inte från den enskilda användaren.
 
-I delade postlådor finns det en delad kalender. Många små företag tycker att det är praktiskt att ha en delad kalender där alla lägger in sina avtalade tider. Om det till exempel finns tre personer som utför kundbesök kan de alla skriva in sina avtalade tider i kalendern. Det är ett bra sätt att hålla alla informerade om var alla befinner sig.
+I delade postlådor finns en delad kalender. Många små företag tycker att det är praktiskt att ha en delad kalender där alla lägger in sina avtalade tider. Om det till exempel finns 3 personer som utför kundbesök kan de alla skriva in sina avtalade tider i den delade kalendern. Det är ett bra sätt att hålla alla informerade om var alla befinner sig.
 
 Innan du skapar en delad postlåda bör du läsa [Om delade postlådor](about-shared-mailboxes.md) för att få mer information.
 
@@ -190,7 +190,7 @@ Du kan komma åt en delad postlåda på en mobil enhet på två sätt:
 
 ## <a name="use-the-shared-calendar"></a>Använda den delade kalendern
 
-När du skapade den delade postlådan, skapade du automatiskt en delad kalender. Vi föredrar den delade postlådekalendern framför en SharePoint-kalender när det handlar om att hålla koll på avtalade tider och var personer befinner sig. En delad kalender är integrerad med Outlook och är mycket enklare att använda än en SharePoint-kalender.
+När du skapade den delade postlådan skapade du automatiskt en delad kalender. Vi föredrar den delade postlådekalendern framför en SharePoint-kalender när det handlar om att hålla koll på avtalade tider och var personer befinner sig. En delad kalender är integrerad med Outlook och den är mycket enklare att använda än en SharePoint-kalender.
 
 1. Öppna kalendervyn i Outlook-appen och välj den delade postlådan.
 
@@ -198,14 +198,14 @@ När du skapade den delade postlådan, skapade du automatiskt en delad kalender.
 
 3. Alla medlemmar i den delade postlådan kan skapa, visa och hantera avtalade tider i kalendern på samma sätt som med privata avtalade tider. Alla som är medlemmar i en delad postlåda kan se sina ändringar i den delade kalendern.
 
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-content"></a>Relaterat innehåll
 
-[Om delade postlådor](about-shared-mailboxes.md)
+[Om delade postlådor](about-shared-mailboxes.md) (artikel)
 
-[Konfigurera en delad postlåda](configure-a-shared-mailbox.md)
+[Konfigurera en delad postlåda](configure-a-shared-mailbox.md) (artikel)
 
-[Konvertera en användarpostlåda till en delad postlåda](convert-user-mailbox-to-shared-mailbox.md)
+[Konvertera en användarpostlåda till en delad postlåda](convert-user-mailbox-to-shared-mailbox.md) (artikel)
 
-[Ta bort en licens från en delad postlåda](remove-license-from-shared-mailbox.md)
+[Ta bort en licens från en delad postlåda](remove-license-from-shared-mailbox.md) (artikel)
 
-[Lösa problem med delade postlådor](resolve-issues-with-shared-mailboxes.md)
+[Lösa problem med delade postlådor](resolve-issues-with-shared-mailboxes.md) (artikel)

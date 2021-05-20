@@ -22,12 +22,12 @@ localization_priority: Priority
 description: Administratörer kan läsa mer om de skydd mot förfalskning som finns tillgängliga i Exchange Online Protection (EOP) och som kan hjälpa dig att minska riskerna för nätfiske från falska avsändare och domäner.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 76ad8ac14de7b176ae12dc02272e31e790b6b410
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 7680c2f4eae54aa53eba72b328baf1bf92fbcf98
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291037"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537973"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Skydd mot förfalskning i EOP
 
@@ -44,17 +44,28 @@ När det gäller att skydda sina användare tar Microsoft hot om nätfiske på a
 
 Här följer de förfalskningsskyddsmetoder som finns tillgängliga i EOP:
 
-- **Förfalskningsinformation**: granska falska meddelanden från avsändare i interna och externa domäner samt tillåt eller blockera avsändarna. Mer information finns i [Konfigurera förfalskningsinformation i Microsoft 365](learn-about-spoof-intelligence.md).
-
-- **Principer för skydd mot nätfiske**: Med principen för skydd mot nätfiske i EOP kan du aktivera eller inaktivera förfalskningsinformation, aktivera eller inaktivera icke autentiserad avsändarinformation i Outlook samt ange åtgärder för blockerade falska avsändare (placera i skräppostmappen eller i karantän). Avancerade principer för skydd mot nätfiske som är tillgängliga i Microsoft Defender för Office 365 innehåller även inställningar för skydd mot obehörig personifiering (skyddade avsändare och domäner), inställningar för postlådeinformation och avancerade justerbara nätfisketrösklar. Mer information finns i [Principer för skydd mot nätfiske i Microsoft 365](set-up-anti-phishing-policies.md).
-
 - **E-postautentisering**: en integrerad del av allt förfalskningsskydd är användningen av e-postautentisering (även kallat e-postverifiering) genom SPF-, DKIM- och DMARC-poster i DNS. Du kan konfigurera dessa poster för dina domäner så att mål-e-postsystemen kan kontrollera giltigheten i meddelanden som gör anspråk på att komma från avsändare i dina domäner. För inkommande meddelanden kräver Microsoft 365 autentisering av e-post för avsändardomäner. Mer information finns i [E-postautentisering i Microsoft 365](email-validation-and-authentication.md).
 
-Från och med oktober 2018 är skydd mot förfalskning tillgängligt i EOP.
+  EOP analyserar och blockerar meddelanden som inte kan autentiseras med kombinationen av standardmetoder för e-postautentisering och metoder för avsändaromdöme.
 
-EOP analyserar och blockerar meddelanden som inte kan autentiseras med kombinationen av standardmetoder för e-postautentisering och metoder för avsändaromdöme.
+  ![EOP-kontroller för förfalskningsskydd](../../media/eop-anti-spoofing-protection.png)
 
-![EOP-kontroller för förfalskningsskydd](../../media/eop-anti-spoofing-protection.png)
+- **Insikt om förfalskningsinformation**: granska falska meddelanden från avsändare i interna och externa domäner under de senaste 7 dagarna samt tillåt eller blockera avsändarna. Mer information finns i [Insikt om förfalskningsinformation i EOP](learn-about-spoof-intelligence.md).
+
+- **Tillåt eller blockera falska avsändare i Tillåten av klient/blockeringslista**: När du åsidosätter domen i Insikt om förfalskningsinformation blir den falska avsändaren en manuell tillåtelse eller blockera posten som bara visas på fliken **Falska** i Tillåten av klient/blockeringslistan. Du kan också skapa tillåtna eller blockera poster manuellt för falska avsändare innan de upptäcks av förfalskningsinformation. För mer information se [Hantera Tillåten av klient/blockeringslista i EOP](tenant-allow-block-list.md).
+
+- **Skydd mot nätfiske**: I EOP innehåller principer för skydd mot nätfiske följande inställningar för funktioner mot förfalskning:
+  - Aktivera eller inaktivera förfalskningsinformation.
+  - Aktivera eller inaktivera identifiering av oautentiserad avsändare i Outlook.
+  - Ange åtgärd för blockerade falska avsändare.
+
+  Mer information finns i [Principer för skydd mot nätfiske](set-up-anti-phishing-policies.md#spoof-settings).
+
+  **Obs!** Principer för skydd mot nätfiske i Microsoft Defender för Office 365 innehåller ytterligare skydd, inklusive **imitationsskydd**. Mer information finns på [Exklusiva inställningar i principer för skydd mot nätfiske i Microsoft Defender för Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+
+- **Rapport över identifierad förfalskning**: Mer information finns i [Rapport över identifierad förfalskning](view-email-security-reports.md#spoof-detections-report).
+
+  **Obs!** Defender för Office 365-organisationer kan även använda Identifieringar i realtid (abonnemang 1) eller Hotutforskaren (abonnemang 2) för att visa information om försök till nätfiske. Mer information finns i [Undersökning av hot och svar i Microsoft 365](office-365-ti.md).
 
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>Hur förfalskning används i nätfiskeattacker
 
@@ -127,12 +138,6 @@ Microsoft skiljer mellan två olika typer av falska meddelanden:
 
 Mer information om DMARC finns i [Använda DMARC för att validera e-post i Microsoft 365](use-dmarc-to-validate-email.md).
 
-## <a name="reports-of-how-many-messages-were-marked-as-spoofed"></a>Rapporter på hur många meddelanden som har markerats som falska
-
-EOP-organisationer kan använda **falska identifieringar** rapporter i instrument panelen rapporter i säkerhets och efterlevnadscenter. Mer information finns i [Rapport om falska identifieringar](view-email-security-reports.md#spoof-detections-report).
-
-Microsoft Defender för Office 365-organisationen kan använda Hotutforskaren i Säkerhets- och efterlevnadscenter för att visa information om nätfiskeförsök. Mer information finns i [Undersökning av hot och svar i Microsoft 365](office-365-ti.md).
-
 ## <a name="problems-with-anti-spoofing-protection"></a>Problem med förfalskningsskydd
 
 E-postlistor (även kallade diskussionslistor) är kända för att ha problem med förfalskning på grund av det sätt de vidarebefordrar meddelanden och ändrar innehållet i dem.
@@ -161,7 +166,7 @@ Om du vill se till att e-post från distributionslistor klarar förfalskningskon
 
     När tillräckligt många avsändare svarar tillbaka till domänägare om att de bör konfigurera poster för e-postautentisering motiveras de att vidta åtgärder. Microsoft samarbetar också med domänägare i att publicera de nödvändiga posterna men det hjälper ännu mer när enskilda användare begär det.
 
-  - Du kan skapa regler för Inkorgen i e-postklienten för att flytta meddelanden till Inkorgen. Du kan också be administratörerna att konfigurera åsidosättningar som beskrivs i [Använda förfalskningsinformation för att konfigurera tillåtna avsändare av icke autentiserad e-post](email-validation-and-authentication.md#use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email).
+  - Du kan skapa regler för Inkorgen i e-postklienten för att flytta meddelanden till Inkorgen. Du kan också be dina administratörer att konfigurera åsidosättningar enligt beskrivningen i [Insikt om förfalskningsinformation i EOP](learn-about-spoof-intelligence.md) och [Hantera Tillåten av klient/blockeringslista](tenant-allow-block-list.md).
 
   - Du kan skapa ett supportärende med Microsoft 365 för att skapa en åsidosättning för distributionslistan för att behandla den som legitim. Mer information finns i [Kontakta supporten för företagsprodukter – hjälp för administratörer](../../business-video/get-help-support.md).
 

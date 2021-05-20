@@ -68,7 +68,7 @@
       href: billing-and-payments/psd2.md
 - name: Faktureringskonton
   items:
-    - name: Hantera faktureringskonton
+    - name: Förstå faktureringskonton
       href: manage-billing-accounts.md
     - name: Koppla en klientorganisation till ditt faktureringskonto
       href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business

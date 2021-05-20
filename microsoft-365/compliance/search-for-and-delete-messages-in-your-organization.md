@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Använd sök- och rensningsfunktionen i Säkerhets- och efterlevnadscentret för att söka efter och ta bort ett e-postmeddelande från alla postlådor i organisationen.
-ms.openlocfilehash: b7bb1008120df8efefc983d526d90e8397b3a89e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 629b236be3f857da47674cda9350d8b89e6f3445
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162200"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537649"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Söka efter och ta bort e-postmeddelanden
 
@@ -41,7 +41,10 @@ Du kan använda funktionen Innehållssökning för att söka efter och ta bort e
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-- Om du vill skapa och köra en innehållssökning måste du vara medlem i rollgruppen **eDiscovery Manager** eller ha tilldelats hanteringsrollen för **efterlevnadssökning**. Om du vill ta bort meddelanden måste du vara medlem i rollgruppen **Organisationshantering** eller ha tilldelats hanteringsrollen för **sökning och rensning**. Mer information om hur du lägger till användare i en rollgrupp finns i [Tilldela eDiscovery-behörigheter i Säkerhets- och efterlevnadscentret](assign-ediscovery-permissions.md).
+- För att skapa och köra en innehållssökning måste du vara medlem i rollgruppen **eDiscovery-hanterare** eller ha tilldelats rollen **Efterlevnadssökning** i Säkerhets- och efterlevnadscenter. För att ta bort meddelanden måste du vara medlem i rollgruppen **Organisationshantering** eller ha tilldelats rollen **Sökning och rensning** i Säkerhets- och efterlevnadscenter. Mer information om hur du lägger till användare i en rollgrupp finns i [Tilldela eDiscovery-behörigheter i Säkerhets- och efterlevnadscenter](assign-ediscovery-permissions.md).
+
+  > [!NOTE]
+  > Rollgruppen **Organisationshantering** finns både i Exchange Online och i Säkerhets- och Efterlevnadscenter. Det här är separata rollgrupper som ger olika behörigheter. Att vara medlem i **Organisationshantering** i Exchange Online ger inte nödvändiga behörigheter för att ta bort e-postmeddelanden. Om du inte har tilldelat rollen **Sökning och rensning** i Säkerhets- och efterlevnadscenter (antingen direkt eller via en rollgrupp så som **Organisationshantering**) får du ett felmeddelande i steg tre när du kör cmdleten **New-ComplianceSearchAction** med meddelandet: "Det går inte att hitta en parameter som matchar parameternamnet Rensa".
 
 - Du måste använda PowerShell för Säkerhets- och efterlevnadscentret för att ta bort meddelanden. Se [steg 2](#step-2-connect-to-security--compliance-center-powershell) för anvisningar om hur du ansluter.
 

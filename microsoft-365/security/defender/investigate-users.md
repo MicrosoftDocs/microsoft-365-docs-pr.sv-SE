@@ -1,7 +1,7 @@
 ---
 title: Undersök användare i Microsoft 365 Defender
-description: Undersök om det är ett problem i Microsoft 365 säkerhetscenter.
-keywords: säkerhet, skadlig programvara, Microsoft 365, M365, säkerhetscenter, bildskärm, rapport, identiteter, data, enheter, appar, incident, analysera, svar
+description: Undersök användare för en incident i Microsoft 365 säkerhetscenter.
+keywords: säkerhet, skadlig kod, Microsoft 365, M365, säkerhetscenter, övervaka, rapportera, identiteter, data, enheter, appar, incident, analysera, svar
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 7084b9370a0dd83265b37ff1d152e2164fe32813
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 72eb111da2f342b78aa6161c7334a7252314b4a5
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539137"
+ms.locfileid: "52572807"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>Undersök användare i Microsoft 365 Defender
 
@@ -34,43 +34,43 @@ ms.locfileid: "52539137"
 
 - Microsoft 365 Defender
 
-En del av incidentundersökningen kan omfatta användarkonton. Börja med fliken **Användare** för ett incident från Incidenter **& aviseringar >** *incident* **> Användare.** 
+En del av din incidentutredning kan innehålla användarkonton. Börja med fliken **Användare** för en incident från **incidenter & aviseringar >** *incident* **> användare**. 
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Exempel på en sida för användare för ett incident":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Exempel på en användarsida för en incident":::
 
-Om du vill få en snabb sammanfattning av ett användarkonto för incidenten väljer du bockmarkeringen bredvid användarnamnet. Här är ett exempel.
+Om du vill få en snabb sammanfattning av ett användarkonto för incidenten markerar du kryssrutan bredvid användarkontots namn. Här är ett exempel.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Exempel på sammanfattningsfönstret för användarkontot för en händelse i Microsoft 365 säkerhetscenter":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Exempel på sammanfattningsfönstret för användarkonto för en incident i Microsoft 365 säkerhetscenter":::
 
 > [!NOTE]
-> Användarsidan visar organisationen Azure Active Directory (AD) samt grupper, vilket hjälper dig att förstå vilka grupper och behörigheter som är kopplade till en användare.
+> På sidan Användare visas Azure Active Directory (Azure AD) samt grupper, vilket hjälper dig att förstå de grupper och behörigheter som är associerade med en användare.
 
-På den här utfällande sidan kan du granska information om användarhot, inklusive aktuella incidenter, aktiva varningar och risknivå samt exponering av användare, konton, enheter med mera.
+På den här utfällningssidan kan du granska information om användarhot, inklusive aktuella incidenter, aktiva aviseringar och risknivå samt användarexponering, konton, enheter med mera.
 
-Dessutom kan du vidta åtgärder direkt i säkerhetscentret i Microsoft 365 för att adressera en komprometterad användare, bekräfta att användaren har komprometterats eller att han eller hon måste logga in igen.
+Dessutom kan du vidta åtgärder direkt i Microsoft 365 säkerhetscenter för att adressera en komprometterad användare, bekräfta att användaren komprometteras eller kräva att de loggar in igen.
 
-Härifrån kan du välja Gå **till användarsida om** du vill visa information om ett användarkonto. Här är ett exempel.
+Härifrån kan du välja Gå **till användarsidan för** att se information om ett användarkonto. Här är ett exempel.
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Exempel på användarkontosidan för en incident i Microsoft 365 säkerhetscenter":::
 
-Du kan även visa den här sidan genom att välja namnet på användarkontot i listan på **sidan** Användare.
+Du kan också se den här sidan genom att välja namnet på användarkontot i listan på **sidan** Användare.
 
-Användarsidan Microsoft 365 Säkerhetscenter kombinerar information från Microsoft Defender för Endpoint, Microsoft Defender för identitet och Microsoft Cloud App Security (beroende på vilka licenser du har). 
+Användarsidan Microsoft 365 Säkerhetscenter kombinerar information från Microsoft Defender för slutpunkt, Microsoft Defender för identitet och Microsoft Cloud App Security (beroende på vilka licenser du har). 
 
-På den här sidan visas information som är specifik för säkerhetsrisken för ett användarkonto. Detta omfattar en poäng som hjälper till att utvärdera risker och nya händelser och varningar som bidragit till den totala risken för användaren.
+Den här sidan visar information som är specifik för säkerhetsrisken för ett användarkonto. Detta inkluderar en poäng som hjälper till att bedöma risker och senaste händelser och aviseringar som bidrog till användarens totala risk.
 
-Från den här sidan kan du utföra följande ytterligare åtgärder: 
+På den här sidan kan du göra följande ytterligare åtgärder: 
 
 - Markera användarkontot som komprometterat
 - Kräv att användaren loggar in igen
-- Stäng av användarkontot
-- Se inställningar Azure Active Directory för användarkonton i Azure AD
+- Stänga av användarkontot
+- Se Azure Active Directory (Azure AD) användarkontoinställningar
 - Visa de filer som ägs av användarkontot
-- Visa filer som delats med den här användaren. 
+- Visa filer som delas med den här användaren. 
 
 Här är ett exempel.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Exempel på åtgärder för ett användarkonto för en händelse i Microsoft 365 säkerhetscenter":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Exempel på åtgärder på ett användarkonto för en incident i Microsoft 365 säkerhetscenter":::
 
 
 <!--
@@ -82,7 +82,7 @@ Learn more about how to investigate users and potential risk [in this Cloud App 
 
 ## <a name="next-steps"></a>Nästa steg
 
-Fortsätt din undersökning om det behövs för händelser i [processen.](investigate-incidents.md)
+Om det behövs för incidenter i processen fortsätter du [din undersökning](investigate-incidents.md).
 
 ## <a name="see-also"></a>Se även
 

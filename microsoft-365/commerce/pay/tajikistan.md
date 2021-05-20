@@ -1,23 +1,24 @@
 ---
 title: Betalningsinformation för Tadzjikistan
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Lär dig vart du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ea316ec074ac55ed79bd1a78ae4ae2c56c05d6c4
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: c02093729f48e8c71919937cd1a7f84b6dbe0f20
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272762"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537757"
 ---
 # <a name="payment-information-for-tajikistan"></a>Betalningsinformation för Tadzjikistan
 
@@ -31,4 +32,4 @@ Betala endast i USD och ange fakturanumret som referens vid betalning.
 **SWIFT-kod:** CITIGB2L  
 **IBAN:** GB95CITI18500812510049  
 **Kontonummer:** 12510049  
-**Kontonamn:** MICROSOFT  
+**Kontonamn:** MICROSOFT

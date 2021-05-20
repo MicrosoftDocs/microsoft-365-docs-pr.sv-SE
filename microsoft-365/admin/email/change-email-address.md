@@ -24,13 +24,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
-description: 'Ändra den ursprungliga e-postadressen till en egen e-postadress som tom@fourthcoffee.com. Om du vill göra det måste du köpa ett domännamn och lägga till det i Microsoft 365. '
-ms.openlocfilehash: c7ded3712fa0f8894ae0b8b9d864a1a5a58e4558
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+description: Ändra din e-postadress till en vänlig e-postadress tom@fourthcoffee.com genom att köpa ett domännamn och lägga till det i Microsoft 365.
+ms.openlocfilehash: d5e70856c9200cd7e5df0eded25b6ff460e5d1fe
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470995"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572099"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Ändra din e-postadress så att en anpassad domän används
 
@@ -38,27 +38,27 @@ ms.locfileid: "51470995"
   
 ::: moniker range="o365-worldwide"
 
-Den ursprungliga e-postadressen i Microsoft 365 innehåller .onmicrosoft.com, t.ex. tom@fourthcoffee.onmicrosoft.com. Du kan ändra den till en bättre adress, till exempel tom@fourthcoffee.com. Du behöver ditt eget domännamn, till exempel fourthcoffee.com först. Om du redan har ett är det toppen! Annars kan du ta reda på hur du [köper en från en domänregistrator.](../get-help-with-domains/buy-a-domain-name.md)
+Din första e-postadress i Microsoft 365 innehåller .onmicrosoft.com, till exempel tom@fourthcoffee.onmicrosoft.com. Du kan ändra det till en vänligare adress som tom@fourthcoffee.com. Du behöver ditt eget domännamn, som fourthcoffee.com först. Om du redan har en, bra! Om inte, kan du lära dig hur [man köper en från en domänregistrator](../get-help-with-domains/buy-a-domain-name.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Den ursprungliga e-postadressen i Office 365 Germany innehåller .onmicrosoft.de, till exempel tom@fourthcoffee.onmicrosoft.de. Du kan ändra den till en bättre adress, till exempel tom@fourthcoffee.de. Du behöver ditt eget domännamn, till exempel fourthcoffee.de först. Om du redan har ett är det toppen! Annars kan du ta reda på hur du [köper en från en domänregistrator.](../get-help-with-domains/buy-a-domain-name.md)
+Din första e-postadress i Office 365 Tyskland innehåller .onmicrosoft.de, till exempel tom@fourthcoffee.onmicrosoft.de. Du kan ändra det till en vänligare adress som tom@fourthcoffee.de. Du behöver ditt eget domännamn, som fourthcoffee.de först. Om du redan har en, bra! Om inte, kan du lära dig hur [man köper en från en domänregistrator](../get-help-with-domains/buy-a-domain-name.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Den ursprungliga e-postadressen i Office 365 som drivs av 21Vianet innehåller partner.onmschina.cn postmeddelande, till exempel tom@fourthcoffee.partner.onmschina.cn. Du kan ändra den till en bättre adress, till exempel tom@fourthcoffee.cn. Du behöver ditt eget domännamn, till exempel fourthcoffee.cn först. Om du redan har ett är det toppen! Annars kan du ta reda på hur du [köper en från en domänregistrator.](../get-help-with-domains/buy-a-domain-name.md)
+Din första e-postadress i Office 365 som drivs av 21Vianet partner.onmschina.cn, till exempel tom@fourthcoffee.partner.onmschina.cn. Du kan ändra det till en vänligare adress som tom@fourthcoffee.cn. Du behöver ditt eget domännamn, som fourthcoffee.cn först. Om du redan har en, bra! Om inte, kan du lära dig hur [man köper en från en domänregistrator](../get-help-with-domains/buy-a-domain-name.md).
 
 ::: moniker-end
 
-När du ändrar e-posten för din domän så att den ska gå till Microsoft 365 genom att uppdatera domänens MX-post vid konfigurationen börjar ALL e-post som skickas till den domänen gå till Microsoft 365. Kontrollera att du har lagt till användare och skapat postlådor i Microsoft 365 för alla som har e-post i din domän INNAN du ändrar MX-posten. Vill du inte flytta e-posten för alla i din domän till Microsoft 365? Då kan du i stället vidta åtgärder [för att pilottesta Microsoft 365 med bara några få e-postadresser.](../misc/pilot-microsoft-365-from-my-custom-domain.md?view=o365-worldwide)
+När du ändrar domänens e-post så att den kommer till Microsoft 365 börjar all e-post som skickas till domänen att komma till Microsoft 365 genom att uppdatera domänens MX-post under installationen. Se till att du har lagt till användare och skapat postlådor i Microsoft 365 för alla som har e-post på din domän INNAN du ändrar MX-posten. Vill du inte flytta e-post så att alla på din domän kan Microsoft 365? Du kan vidta åtgärder för [att Microsoft 365 med bara några e-postadresser istället](../misc/pilot-microsoft-365-from-my-custom-domain.md).
   
-## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Ändra din e-postadress så att den använder din egen domän med hjälp av administrationscentret för Microsoft 365
+## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Ändra din e-postadress så att din anpassade domän används med hjälp Microsoft 365 administrationscentret
 
-Du måste ha ett globalt administratörskonto för att utföra de här stegen. 
+Du måste ha ett globalt administratörskonto för att kunna utföra dessa steg. 
 
 ::: moniker range="o365-worldwide"
 
@@ -74,21 +74,21 @@ Du måste ha ett globalt administratörskonto för att utföra de här stegen.
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till administrationscentret <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a>på . 
+1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a>. 
 
 ::: moniker-end 
 
-2. Gå till sidan **Konfigurera**  >   domäner. 
+2. Gå till sidan  >  **Installationsdomäner.** 
 
 3. På sidan **Domains** väljer du **Lägg till domän**.
     
 4. Följ instruktionerna för att bekräfta att du äger domänen och för att ändra din e-postadress.
     
-Du vägleds till rätt ordning i din domän i Microsoft 365.
+Du kommer att vägledas för att få allt konfigurerat korrekt med din domän Microsoft 365.
 
 > [!NOTE]
-> Om du inte använder en Exchange-licens kan du inte använda domänen för att skicka eller ta emot e-postmeddelanden från Microsoft 365-klienten.
+> Om du inte använder en Exchange licens kan du inte använda domänen för att skicka eller ta emot e-postmeddelanden från Microsoft 365 klientorganisation.
   
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-content"></a>Relaterat innehåll
 
-[Köpa en egen domän med Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
+[Köp en anpassad domän med Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (artikel)

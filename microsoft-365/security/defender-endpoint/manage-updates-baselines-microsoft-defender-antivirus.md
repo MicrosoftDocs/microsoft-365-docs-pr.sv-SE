@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 05/10/2021
-ms.openlocfilehash: 5b599e9d5a5c3d098033af1f1df96ee9f26025ee
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.date: 05/13/2021
+ms.openlocfilehash: 17a76b39b51293de82cf9b3e5f0e323ec3d28844
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52312018"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538045"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Hantera Microsoft Defender Antivirus uppdateringar och använda baslinjer
 
@@ -83,11 +83,11 @@ Alla våra uppdateringar innehåller
 - förbättringar av integreringen (Cloud Microsoft 365 Defender).
 <br/>
 <details>
-<summary> April 2021 (plattform: 4.18.2104.9 och | Motor: 1.1.18100.5)</summary>
+<summary> April 2021 (plattform: 4.18.2104.14 | Motor: 1.1.18100.5)</summary>
 
 &ensp;Uppdateringsversion av säkerhetsinformation: **1.337.2.0**  
 &ensp;Utgiven: **1 april 2021**  
-&ensp;Plattform: **4.18.2104.9**  
+&ensp;Plattform: **4.18.2104.14**  
 &ensp;Motor: **1.1.18100.5**  
 &ensp;Supportfas: **Säkerhets- och kritiska uppdateringar**
     

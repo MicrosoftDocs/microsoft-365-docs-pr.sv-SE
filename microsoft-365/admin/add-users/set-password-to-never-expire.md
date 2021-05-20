@@ -21,38 +21,38 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
-description: Lär dig hur du ställer in att vissa användares lösenord aldrig ska upphöra att gälla med Windows PowerShell.
-ms.openlocfilehash: c70fce1c3ea9cb1dea66982a27ddb24e2b2de255
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+description: Logga in på ditt Microsoft 365-administratörskonto för att ställa in vissa enskilda användarlösenord så att de aldrig upphör att gälla med hjälp Windows PowerShell.
+ms.openlocfilehash: 0747e0bfe8a7389db554d5d6a7f685605e013306
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222079"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52571931"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Ange att en enskild användares lösenord aldrig ska förfalla
 
-I den här artikeln förklaras hur du anger ett lösenord så att en enskild användare inte upphör att gälla. Du måste utföra de här stegen med PowerShell.
+I den här artikeln beskrivs hur du anger att ett lösenord för en enskild användare inte ska upphöra att gälla. Du måste slutföra dessa steg med PowerShell.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-Den här artikeln är avsedd för personer som anger en förfalloprincip för lösenord för ett företag, en skola eller en ideell förening. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörskonto?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview). 
+Den här artikeln är avsedd för personer som anger en förfalloprincip för lösenord för ett företag, en skola eller en ideell förening. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörskonto?](../../business-video/admin-center-overview.md). 
 
-Du måste vara global [administratör eller lösenordsadministratör för att](about-admin-roles.md) utföra de här stegen.
+Du måste vara global [administratör eller lösenordsadministratör för](about-admin-roles.md) att kunna utföra dessa steg.
 
-En global administratör för en Microsoft-molntjänst kan använda [Azure Active Directory PowerShell](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) för Graph för att ange att lösenord inte ska upphöra att gälla för specifika användare. Du kan [](/powershell/module/Azuread) också använda AzureAD-cmdlets för att ta bort konfigurationen med aldrig upphör att gälla eller för att se vilka användarlösenord som är inställda på att aldrig upphöra.
+En global administratör för en Microsoft-molntjänst kan [använda Azure Active Directory PowerShell för Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) ställa in lösenord som inte ska upphöra att gälla för specifika användare. Du kan [](/powershell/module/Azuread) också använda AzureAD-cmdletar för att ta bort konfigurationen för att aldrig upphöra att gälla eller för att se vilka användarlösenord som är inställda på att aldrig upphöra att gälla.
 
-Den här guiden gäller andra leverantörer, till exempel Intune och Microsoft 365, som också förlitar sig på Azure AD för identitets- och katalogtjänster. Lösenordsförfallotid är den enda del av principen som kan ändras.
+Den här guiden gäller andra leverantörer, till exempel Intune och Microsoft 365, som också förlitar sig på Azure AD för identitets-och katalog tjänster. Förfallodatum för lösenord är den enda delen av principen som kan ändras.
 
 > [!NOTE]
-> Endast lösenord för användarkonton som inte synkroniseras via katalogsynkronisering kan konfigureras så att de inte upphör att gälla. Mer information om katalogsynkronisering finns i [Ansluta AD till Azure AD.](/azure/active-directory/connect/active-directory-aadconnect)
+> Endast lösenord för användarkonton som inte synkroniseras via katalogsynkronisering kan konfigureras så att de inte upphör att gälla. Mer information om katalogsynkronisering finns i Anslut [AD med Azure AD](/azure/active-directory/connect/active-directory-aadconnect).
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>Så här kontrollerar du förfalloprincipen för ett lösenord
 
-Mer information om kommandot Get-AzureADUser AzureAD-modulen finns i referensartikeln [Get-AzureADUser.](/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0)
+Mer information om kommandot Get-AzureADUser i AzureAD-modulen finns i referensartikeln [Get-AzureADUser](/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0).
 
 Kör något av följande kommandon:
 
-- Kör följande cmdlet med UPN (till exempel *user@contoso.onmicrosoft.com)* eller användar-ID:t för den användare du vill kontrollera för att se om en enskild användares lösenord är inställt på att aldrig upphöra att gälla:
+- Om du vill se om en enskild användares lösenord aldrig har upphört att gälla kör du följande cmdlet med hjälp av UPN *(till exempel user@contoso.onmicrosoft.com)* eller användar-ID:t för den användare som du vill kontrollera:
 
     ```powershell
     Get-AzureADUser -ObjectId <user id or UPN> | Select-Object UserprincipalName,@{
@@ -68,7 +68,7 @@ Kör något av följande kommandon:
     }
     ```  
 
-- Om du vill **se inställningen för Lösenord upphör** aldrig att gälla för alla användare kör du följande cmdlet:
+- Om du vill **se inställningen Lösenord upphör aldrig** att gälla för alla användare kör du följande cmdlet:
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -76,7 +76,7 @@ Kör något av följande kommandon:
      }
     ```
 
-- För att få en rapport över alla användare med PasswordNeverExpires i Html på skrivbordet för den aktuella användaren med  **namnReportPasswordNeverExpires.html**
+- Så här hämtar du en rapport över alla användare med PasswordNeverExpires i Html på den aktuella användarens skrivbord med  **namnReportPasswordNeverExpires.html**
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -84,7 +84,7 @@ Kör något av följande kommandon:
     } | ConvertTo-Html | Out-File $env:userprofile\Desktop\ReportPasswordNeverExpires.html
     ```  
 
-- För att få en rapport över alla användare med PasswordNeverExpires i CSV på skrivbordet för den aktuella användaren med **ReportPasswordNeverExpires.csv**
+- Så här hämtar du en rapport över alla användare med PasswordNeverExpires i CSV på den aktuella användarens skrivbord med **namnReportPasswordNeverExpires.csv**
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -101,14 +101,14 @@ Run one of the following commands:
     Set-AzureADUser -ObjectId <user ID> -PasswordPolicies DisablePasswordExpiration
     ```
 
-- Om du vill ange att lösenorden för alla användare i en organisation aldrig ska upphöra att gälla kör du följande cmdlet:
+- Om du vill att lösenorden för alla användare i en organisation aldrig ska upphöra att gälla kör du följande cmdlet:
 
     ```powershell
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies DisablePasswordExpiration
     ```
 
 > [!WARNING]
-> Användarkonton som konfigurerats med `-PasswordPolicies DisablePasswordExpiration` parameterns ålder baserat på `pwdLastSet` attributet. Baserat på attributet måste användaren ändra alla lösenord som har en pwdLastSet som är äldre än `pwdLastSet` 90 dagar om du ändrar förfallodatumet till . `-PasswordPolicies None` Den här ändringen kan påverka ett stort antal användare.
+> Användarkonton som konfigurerats med `-PasswordPolicies DisablePasswordExpiration` parametern åldras fortfarande baserat på `pwdLastSet` attributet. Baserat på attributet kräver alla lösenord som har en pwdLastSet som är äldre än 90 dagar att användaren ändrar dem nästa gång de loggar in om du `pwdLastSet` `-PasswordPolicies None` ändrar förfallodatumet till. Den här ändringen kan påverka ett stort antal användare.
 
 ### <a name="set-a-password-to-expire"></a>Ange att ett lösenord ska upphöra att gälla
 
@@ -128,6 +128,6 @@ Kör något av följande kommandon:
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Låt användare återställa sina egna lösenord](../add-users/let-users-reset-passwords.md)
+[Låt användare återställa sina egna lösenord](../add-users/let-users-reset-passwords.md) (artikel)
 
-[Återställa lösenord](../add-users/reset-passwords.md)
+[Återställ lösenord](../add-users/reset-passwords.md) (artikel)

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/21/2020
+ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Använd Microsoft 365 lokal skanner för dataförlustskydd
-ms.openlocfilehash: 242956a3c6469756481fb823340e715a210562af
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: deae5dfa803b002174583ae67412af9fc028fcb9
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52163003"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538105"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>Kom igång med lokal skanner för dataförlustskydd (förhandsversion)
 
@@ -55,7 +55,7 @@ Data från den lokala DLP-skannern kan visas i [aktivitetsutforskaren](data-clas
 
 ### <a name="dlp-on-premises-scanner-prerequisites"></a>Förutsättningar för lokal DLP-skanner
 
-- AIP-skannern (Azure Information Protection) implementerar matchning och tillämpning av DLP-principen. Skannern installeras som en del av AIP-klienten. Installationen måste därför uppfylla alla krav för AIP, AIP-klienten och AIP-skannern för enhetliga etiketter.
+- Azure Information Protection-skannern implementerar DLP-principsmatchning och -principåtgärder. Skannern installeras som en del av AIP-klienten. Installationen måste därför uppfylla alla krav för AIP, AIP-klienten och AIP-skannern för enhetliga etiketter.
 - Distribuera AIP-klienten och skannern. Mer information finns i [Installera AIP-klienten för enhetliga etiketter](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) och []. Se [Konfigurera och installera Azure Information Protection-skannern för enhetliga etiketter](/azure/information-protection/deploy-aip-scanner-configure-install).
 - Minst en etikett och princip måste ha publicerats i klientorganisationen, även om alla identifieringsregler endast baseras på typerna av känslig information.
 
@@ -66,7 +66,7 @@ Data från den lokala DLP-skannern kan visas i [aktivitetsutforskaren](data-clas
     1. Konfigurationen av nätverksidentifieringsjobb är ett valfritt steg. Du kan hoppa över det och definiera specifika lagringsplatser som ska genomsökas i innehållssökningsjobbet.
     2. Du måste skapa ett innehållssökningsjobb och ange de lagringsplatser som är värd för filerna som ska utvärderas av DLP-motorn.
     3. Aktivera DLP-regler i det skapade innehållssökningsjobbet och ange alternativet **Tillämpa** som **Av**, såvida du inte vill gå direkt till DLP-tillämpningsfasen.
-3. Kontrollera att innehållssökningsjobbet har tilldelats till rätt kluster. Om du ännu inte har skapat något innehållssökningsjobb, skapar du ett nytt och tilldelar det till det kluster som innehåller skannernoderna som kör den allmänt tillgängliga förhandsversionen.
+3. Bekräfta att innehållssökningsjobbet har tilldelats till rätt kluster. Om du ännu inte har skapat något innehållssökningsjobb, skapar du ett nytt och tilldelar det till det kluster som innehåller skannernoderna som kör den allmänt tillgängliga förhandsversionen.
 
 4. Anslut till [Azure Information Protection-tillägget i Azure-portalen](https://portal.azure.com/#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/scannerProfilesBlade) och lägg till dina lagringsplatser i det innehållssökningsjobb som ska utföra genomsökningen.
 

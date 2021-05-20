@@ -19,12 +19,12 @@ search.appverid:
 description: Läs om tre verktyg som du kan använda för att övervaka personliga data.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b51bc5d5d3cbfa8951392f88edc6e178778206df
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0976c0d1c0c8d3ebb25ebf423f1d9df2f71fc852
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207067"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538285"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Övervaka läckage av personliga data
 
@@ -79,7 +79,7 @@ Säkerhetscenter och efterlevnadscenter tillhandahåller två olika sätt att ö
 
 - Sök direkt i granskningsloggen – sök efter alla händelser i ett specifikt datumintervall. Du kan också filtrera resultatet utifrån vissa villkor, t. ex. användaren som utförde åtgärden, åtgärden eller målobjektet.
 
-Informationssäkerhets- och regelefterlevnadsteam kan använda de här verktygen för att proaktivt granska aktiviteter som utförs av både slutanvändare och administratörer i olika tjänster. Automatiska aviseringar kan konfigureras för att skicka e-postmeddelanden när vissa aktiviteter förekommer på särskilda webbplatssamlingar, till exempel när innehåll delas från webbplatser som är kända för att innehålla GDPR-relaterad information. På så sätt kan teamen följa upp användare för att säkerställa att företagets säkerhetsprinciper följs eller för att erbjuda ytterligare utbildning.
+Team för informationsefterlevnad samt säkerhet kan använda de här verktygen för att proaktivt granska aktiviteter som utförs av både slutanvändare och administratörer i olika tjänster. Automatiska aviseringar kan konfigureras för att skicka e-postmeddelanden när vissa aktiviteter förekommer på särskilda webbplatssamlingar, till exempel när innehåll delas från webbplatser som är kända för att innehålla GDPR-relaterad information. På så sätt kan teamen följa upp användare för att säkerställa att företagets säkerhetsprinciper följs eller för att erbjuda ytterligare utbildning.
 
 Team med ansvar för informationssäkerhet kan även söka i granskningsloggen för att undersöka misstänkta dataöverträdelser och fastställa både överträdelsens grundorsak och omfattning. Denna inbyggda funktion underlättar efterlevnaden av artikel 33 och 34 i GDPR, som kräver att anmälningar lämnas in till GDPR-tillsynsmyndigheterna och till de registrerade själva vid en dataöverträdelse under en viss tidsperiod. Poster i granskningsloggen sparas bara i 90 dagar i tjänsten, men det rekommenderas ofta (och många organisationer har krävt) att loggarna sparas under längre tidsperioder.
 
@@ -87,7 +87,7 @@ Det finns lösningar som du kan använda för att prenumerera på enhetliga gran
 
 Mer information om aviseringsprinciper och sökning i granskningsloggen:
 
-- [Aviseringsprinciper i säkerhets- och efterlevnadscenter för Microsoft 365](../../compliance/alert-policies.md)
+- [Aviseringsprinciper i Microsoft 365](../../compliance/alert-policies.md)
 
 - [Söka i granskningsloggen efter användar- och administratörsaktivitet i Office 365](../../compliance/search-the-audit-log-in-security-and-compliance.md) (introduktion)
 

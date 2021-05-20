@@ -18,13 +18,14 @@ search.appverid:
 f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
+recommendations: false
 description: Lär dig mer om olika alternativ för att begränsa eller inaktivera delning i Microsoft 365.
-ms.openlocfilehash: 46cef1aac6d3387366a5e8ce9f9c1129f6c83e61
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f237df883bb401342a3a5c93432beeb5028cfce6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920210"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539197"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Begränsa delning i Microsoft 365
 
@@ -211,7 +212,7 @@ Användare som har åtkomst till filer och mappar i Microsoft 365 kan ladda ned 
 
 Villkorlig åtkomst i Azure Active Directory tillhandahåller alternativ för att begränsa eller förhindra delning med personer baserat på nätverksplats, enhets status, inloggnings risker och andra faktorer. Se [Vad är Villkorlig Åtkomst?](/azure/active-directory/conditional-access/overview)
 
-SharePoint tillhandahåller direkt integration med villkorlig åtkomst för Microsoft Azure Active Directory för både ohanterade enheter och nätverksplats. Se följande exempel för detaljer:
+SharePoint tillhandahåller direkt integration med villkorsstyrd åtkomst för Azure Active Directory för både ohanterade enheter och nätverksplats. Se följande referenser för mer information:
 
 - [Hantera åtkomst från ohanterade enheter](/sharepoint/control-access-from-unmanaged-devices)
 - [Hantera åtkomst till SharePoint och OneDrive data baserat på nätverksplats](/sharepoint/control-access-based-on-network-location)

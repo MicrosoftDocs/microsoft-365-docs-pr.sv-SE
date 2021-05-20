@@ -16,16 +16,16 @@ ms.collection:
 - Adm_O365_Setup
 search.appverid:
 - MET150
-description: Lär dig verifiera din domän och skapa DNS-poster på vilken DNS-värd som helst för Microsoft 365.
+description: Anslut en domän hos en DNS-leverantör till Microsoft 365 genom att verifiera din domän och uppdatera DNS-posterna på din registrators konto.
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 06a5e7d081a16cd8d5aae28268b3aaf737981a43
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: facdd460bd3197e39dd6d4d9f4a5450dc972bf03
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051048"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537565"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Lägga till DNS-poster för att ansluta till din domän
 
@@ -129,7 +129,7 @@ Använd något av följande [SPF-verifieringsverktyg](/office365/admin/setup/dom
 
 SPF har utformats för att hjälpa till att förhindra förfalskning men det finns förfalskningsmetoder som SPF inte skyddar mot. För att skydda mot dessa ska du, efter att ha konfigurerat SPF, även konfigurera DKIM och DMARC för Microsoft 365. 
 
-Information om hur du kommer igång finns i [Använda DKIM för att validera utgående e-post som skickas från din domän i Microsoft 365](../../security/defender-365-security/use-dkim-to-validate-outbound-email.md) och [Använda DMARC för att validera e-post i Microsoft 365](../../security/defender-365-security/use-dmarc-to-validate-email.md).
+Information om hur du kommer igång finns i [Använda DKIM för att validera utgående e-post som skickas från din domän i Microsoft 365](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) och [Använda DMARC för att validera e-post i Microsoft 365](../../security/office-365-security/use-dmarc-to-validate-email.md).
 
 ### <a name="add-srv-records-for-communications-services-teams-skype-for-business"></a>Lägga till SRV-poster för kommunikationstjänster (Teams, Skype för företag)
 
@@ -166,3 +166,11 @@ Om du vill lägga till de här värdena skapar du en sträng som avgränsar vär
 
 - Exempel 1: `100 1 443 sipdir.online.lync.com.`
 - Exempe 2l: `100 1 443 sipdir.online.lync.com`
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Ändra namnservrar för att konfigurera Microsoft 365 med valfri domänregistrator](change-nameservers-at-any-domain-registrar.md) (artikel)
+
+[Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster](find-and-fix-issues.md) (artikel)
+
+[Hantera domäner](index.yml) (länksida)

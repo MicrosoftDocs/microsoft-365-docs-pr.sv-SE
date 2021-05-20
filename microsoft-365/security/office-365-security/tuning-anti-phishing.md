@@ -16,12 +16,12 @@ ms.collection:
 description: Administratörer kan läsa mer om varför och hur nätfiskemeddelanden kom fram i Microsoft 365 och vad de kan göra för att förhindra fler nätfiskemeddelanden i framtiden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1772a0329825b8808352892c8d99f0d7680112f5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8d8f3f93b3fe1643467a12f90123b839addad2ed
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207224"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537853"
 ---
 # <a name="tune-anti-phishing-protection"></a>Finjustera skydd mot nätfiske
 
@@ -32,21 +32,21 @@ ms.locfileid: "51207224"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Även om Microsoft 365 levereras med en mängd olika funktioner mot nätfiske som är aktiverade som standard är det möjligt att vissa nätfiskemeddelanden fortfarande kan komma fram till dina postlådor. I det här avsnittet beskrivs vad du kan göra för att upptäcka varför ett nätfiskemeddelande har kommit igenom och vad du kan göra för att justera inställningarna för skydd mot nätfiske i din Microsoft 365-organisation utan att råka skada _saker._
+Även Microsoft 365 nätfiskefunktioner som är aktiverade som standard är det möjligt att vissa nätfiskemeddelanden fortfarande kan komma fram till dina postlådor. I det här avsnittet beskrivs vad du kan göra för att upptäcka varför ett nätfiskemeddelande har kommit igenom och vad du kan göra för att justera inställningarna för skydd mot nätfiske i Microsoft 365-organisationen utan att råka skada _saker._
 
 ## <a name="first-things-first-deal-with-any-compromised-accounts-and-make-sure-you-block-any-more-phishing-messages-from-getting-through"></a>En sak i första hand: ta itu med alla komprometterade konton och se till att du blockerar nätfiskemeddelanden så att de inte kommer igenom
 
-Om en mottagares konto har kapats som ett resultat av nätfiskemeddelandet följer du anvisningarna i Svara på ett komprometterat e-postkonto [i Microsoft 365.](responding-to-a-compromised-email-account.md)
+Om en mottagares konto har komprometterats som ett resultat av nätfiskemeddelandet följer du anvisningarna i Svara på ett komprometterat [e-postkonto i Microsoft 365](responding-to-a-compromised-email-account.md).
 
-Om Microsoft Defender för Office 365 ingår i prenumerationen kan du använda Hotinformation för [Office 365](office-365-ti.md) för att identifiera andra användare som också har fått nätfiskemeddelandet. Du har fler alternativ för att blockera nätfiskemeddelanden:
+Om Microsoft Defender för Office 365 ingår i prenumerationen kan du använda [Office 365 Threat Intelligence](office-365-ti.md) för att identifiera andra användare som också har fått nätfiskemeddelandet. Du har fler alternativ för att blockera nätfiskemeddelanden:
 
-- [Säkra länkar i Microsoft Defender för Office 365](set-up-safe-links-policies.md)
+- [Valv Länkar i Microsoft Defender för Office 365](set-up-safe-links-policies.md)
 
-- [Säkra bifogade filer i Microsoft Defender för Office 365](set-up-safe-attachments-policies.md)
+- [Valv Bifogade filer i Microsoft Defender för Office 365](set-up-safe-attachments-policies.md)
 
-- [Principer för skydd mot nätfiske i Microsoft Defender för Office 365.](configure-atp-anti-phishing-policies.md) Observera att du tillfälligt kan öka avancerade tröskelvärden **för nätfiske** i principen från **Standard** till **Aggressiv**, Mer **aggressiva** eller **Mest aggressiva.**
+- [Principer för skydd mot nätfiske i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md). Observera att du tillfälligt kan öka avancerade tröskelvärden **för nätfiske** i principen från **Standard** till **Aggressiv**, Mer **aggressiva** eller **Mest aggressiva.**
 
-Kontrollera att dessa Defender för Office 365-funktioner är påslagna.
+Kontrollera att Office 365 Defender Office 365 är aktiverat.
 
 ## <a name="report-the-phishing-message-to-microsoft"></a>Rapportera nätfiskemeddelandet till Microsoft
 
@@ -64,19 +64,19 @@ Mer specifikt bör du titta i huvudfältet **för X-Forefront-Antispam-Report** 
 
 - För meddelanden som hamnar i karantän av misstag, eller för meddelanden som tillåts via, rekommenderar vi att du söker efter dessa meddelanden i Hotutforskaren och [identifieringar i realtid.](threat-explorer.md) Du kan söka efter avsändare, mottagare eller meddelande-ID. När du har hittat meddelandet går du till information genom att klicka på ämnet. Om du har ett meddelande i karantän kan du se vilken "identifieringsteknik" som fanns, så att du kan använda rätt metod för att åsidosätta den. I ett tillåtet meddelande kan du se vilken princip som tillåtit meddelandet.
 
-- Förfalskning är märkt som nätfiske i Defender för Office 365. Ibland är förfalskning den, och ibland vill inte användare ha den i karantän. Om du vill minimera påverkan på användare bör du regelbundet [granska förfalskningsrapporten](learn-about-spoof-intelligence.md). När du har granskat och gjort nödvändiga åsidosättningar kan du vara  säker på att konfigurera [förfalskningsinformation](set-up-anti-phishing-policies.md#spoof-settings) till karantän för misstänkta meddelanden i stället för att leverera dem till användarens skräppostmapp.
+- E-post från falska avsändare (meddelandets Från-adress stämmer inte överens med meddelandets källa) klassificeras som nätfiske i Defender för Office 365. Ibland är förfalskning och ibland vill inte användare att meddelanden från en viss förfalskningsavsändare ska läggas i karantän. För att minimera påverkan på [](learn-about-spoof-intelligence.md)användare bör du regelbundet granska förfalskningsinformation, fliken **Förfalskning** i listan [Tillåt/blockera](tenant-allow-block-list.md)klientorganisation och rapporten Identifieringar av [förfalskning.](view-email-security-reports.md#spoof-detections-report) När du har granskat tillåtna och blockerade förfalskningsavsändare och gjort nödvändiga åsidosättningar kan du vara säker  på att konfigurera [förfalskningsinformation](set-up-anti-phishing-policies.md#spoof-settings) i principer för nätfiske för att sätta misstänkta meddelanden i karantän i stället för att leverera dem till användarens skräppostmapp.
 
-- Du kan upprepa steget ovan för Personifiering (domän eller användare). Personifieringsrapporten finns under **Instrumentpanelinsikter för** \>  \> **hothantering.**
+- Du kan upprepa steget ovan för Personifiering (domän eller användare) i Microsoft Defender för Office 365. Personifieringsrapporten finns under **Instrumentpanelinsikter för** \>  \> **hothantering.**
 
 - Gå regelbundet igenom [rapporten om hotskyddsstatus](view-reports-for-mdo.md#threat-protection-status-report).
 
 - Vissa kunder tillåter oavsiktligt nätfiskemeddelanden genom att placera sina egna domäner i listan Tillåt avsändare eller Tillåt domän i principer för skräppostskydd. Även om den här konfigurationen tillåter vissa legitima meddelanden via, tillåter den även skadliga meddelanden som normalt skulle blockeras av skräppost- och/eller nätfiskefilter. I stället för att tillåta domänen bör du korrigera det underliggande problemet.
 
-  Det bästa sättet att hantera legitima meddelanden som blockeras av Microsoft 365 (falska positiva meddelanden) som involverar avsändare på din domän är  att helt och hållet konfigurera SPF-, DKIM- och DMARC-posterna i DNS för alla dina e-postdomäner:
+  Det bästa sättet att hantera legitima meddelanden som blockeras av Microsoft 365 (falska positiva meddelanden) som involverar avsändare på din domän är att helt  och hållet konfigurera SPF-, DKIM- och DMARC-posterna i DNS för alla dina e-postdomäner:
 
   - Kontrollera att SPF-posten  identifierar alla e-postkällor för avsändare i din domän (glöm inte tredjepartstjänster!).
 
-  - Använd hard fail (all) för att säkerställa att obehöriga avsändare \- avvisas av e-postsystem som är konfigurerade för att göra det. Du kan använda [förfalskningsinformation](learn-about-spoof-intelligence.md) för att identifiera avsändare som använder din domän, så att du kan inkludera behöriga avsändare från tredje part i SPF-posten.
+  - Använd hard fail (all) för att säkerställa att obehöriga avsändare \- avvisas av e-postsystem som är konfigurerade för att göra det. Du kan använda [förfalskningsinformation](learn-about-spoof-intelligence.md) för att identifiera avsändare som använder din domän, så att du kan ta med behöriga avsändare från tredje part i SPF-posten.
 
   Konfigurationsinstruktioner finns i:
 
@@ -86,7 +86,7 @@ Mer specifikt bör du titta i huvudfältet **för X-Forefront-Antispam-Report** 
 
   - [Använda DMARC för att validera e-post](use-dmarc-to-validate-email.md)
 
-- Vi rekommenderar att du levererar e-post för domänen direkt till Microsoft 365, när det är möjligt. Med andra ord, peka Microsoft 365-domänens MX-post till Microsoft 365. Exchange Online Protection (EOP) ger bästa möjliga skydd för dina molnanvändare när deras e-post levereras direkt till Microsoft 365. Om du måste använda ett e-posthanteringssystem från tredje part framför EOP använder du Utökad filtrering för kopplingar. Instruktioner finns i [Utökad filtrering för kopplingar i Exchange Online.](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
+- Vi rekommenderar att du levererar e-post för domänen direkt till din Microsoft 365. Med andra ord, peka Microsoft 365 domänens MX-post till Microsoft 365. Exchange Online Protection (EOP) ger bästa möjliga skydd för dina molnanvändare när deras e-post levereras direkt till Microsoft 365. Om du måste använda ett e-posthanteringssystem från tredje part framför EOP använder du Utökad filtrering för kopplingar. Instruktioner finns i [Utökad filtrering för kopplingar i Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
 - Användarna bör använda [tilläggen Rapportmeddelande](enable-the-report-message-add-in.md) eller Rapportera nätfiske för att rapportera meddelanden till Microsoft, som kan träna vårt system. [](enable-the-report-phish-add-in.md) Administratörer bör också kunna dra nytta av funktionerna [för](admin-submission.md) administrationsinskickande.
 

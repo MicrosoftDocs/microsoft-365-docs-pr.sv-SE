@@ -18,197 +18,203 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
-description: Få en översikt över hur din organisation inför nya Microsoft 365 för att kommunicera och samarbeta.
-ms.openlocfilehash: ac54e8bbc24393b7140fbc32efd48047beca2a1c
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+description: Få en översikt över hur din organisation använder Microsoft 365 för att kommunicera och samarbeta.
+ms.openlocfilehash: f641e2b99e2d61881eb86506a1770f4401cb98bc
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301746"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572339"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 användningsanalyser
 
-## <a name="overview-of-microsoft-365-usage-analytics"></a>Översikt över Microsoft 365 användningsanalyser
-
-Använd Microsoft 365 användningsanalys i Power BI för att få en inblick i hur din organisation inför de olika tjänsterna inom Microsoft 365. Du kan visualisera och analysera Microsoft 365 av användningsdata, skapa egna rapporter och dela insikter inom organisationen. Du kan också få insikter i hur vissa regioner eller avdelningar använder Microsoft 365.
+Använd Microsoft 365 användningsanalys inom Power BI för att få insikter om hur din organisation använder de olika tjänsterna inom Microsoft 365. Du kan visualisera och analysera Microsoft 365 använda data, skapa anpassade rapporter och dela insikterna inom din organisation. Du kan också få insikter om hur specifika regioner eller avdelningar använder Microsoft 365.
   
-Microsoft 365 användningsanalyser ger dig tillgång till en inbyggd instrumentpanel som visar en produktöversikt över de senaste 12 månaderna och som innehåller ett antal förbyggda rapporter. Varje rapport ger specifika insikter om användningen. Användarspecifik information är tillgänglig för den senaste fullständiga kalendermånaden.
+Microsoft 365 användningsanalys ger dig tillgång till en fördefinierad instrumentpanel som ger en vy över flera produkter under de senaste 12 månaderna och innehåller ett antal förbyggda rapporter. Varje rapport ger specifika insikter om användningen. Användarspecifik information är tillgänglig för den senaste hela kalendermånaden.
   
-Den [datamodell](usage-analytics-data-model.md) som ligger till grund för mallappen inkluderar användarattribut från Active Directory, vilket gör det möjligt att pivotera i vissa rapporter. Följande Active Directory-attribut ingår: plats, avdelning och organisation. 
+Den [datamodell](usage-analytics-data-model.md) som driver mallappen innehåller användarattribut från Active Directory, vilket gör det möjligt att pivotera i vissa rapporter. Följande Active Directory-attribut ingår: plats, avdelning och organisation. 
   
 Se [Aktivera Microsoft 365 användningsanalyser](enable-usage-analytics.md) för att börja samla in data. 
   
 Microsoft 365 användningsanalys innehåller ett antal rapporter som beskrivs i följande avsnitt. 
 
-Du kan få detaljerade rapporter för varje område genom att välja datatabeller. Du kan visa alla förbyggda rapporter genom att välja flikarna längst ned på webbplatsen. Mer detaljerade anvisningar finns i [Navigering och användning av rapporter](navigate-and-utilize-reports.md) och Anpassa [rapporter.](customize-reports.md)
+Du kan komma åt detaljerade rapporter för varje område genom att välja datatabeller. Du kan visa alla förbyggda rapporter genom att välja flikarna längst ned på webbplatsen. Mer detaljerade instruktioner finns [i Navigera och använda rapporterna och](navigate-and-utilize-reports.md) Anpassa [rapporterna](customize-reports.md).
 
 ## <a name="executive-summary"></a>Sammanfattning
 
-Sammanfattningen är en översikt över införande av Microsoft 365 för företag, användning, rörlighet, kommunikation, samarbete och lagringsrapporter och är avsedd för beslutsfattare i företaget. Den ger en uppfattning om hur vissa enskilda tjänster används, baserat på alla användare som har aktiverats och de som är aktiva. Alla värden för den månad som visas i rapporten refererar till den senaste fullständiga månaden. 
+Sammanfattningen är en högupplöst vy av Microsoft 365 för företag, användning, mobilitet, kommunikation, samarbete och lagringsrapporter och är avsedd för affärsbeslutsfattarna. Den ger en vy över hur vissa enskilda tjänster används, baserat på alla användare som har aktiverats och de som är aktiva. Alla värden för månaden som visas i rapporten avser den senaste hela månaden. 
 
-Den här sammanfattningen låter dig snabbt förstå användningsmönster i Office och hur och var de anställda samarbetar.
+Med den här sammanfattningen kan du snabbt förstå användningsmönster Office och hur och var dina anställda samarbetar.
 
-![Bild av sammanfattningen Microsoft 365 användningsöversikt.](../../media/office365usage-exec-summary.png)
+![Bild av Microsoft 365 användning sammanfattning.](../../media/office365usage-exec-summary.png)
 
 ## <a name="overview"></a>Översikt
 
-Den Microsoft 365 översiktsrapporten innehåller följande rapporter. Du kan visa dem genom att välja fliken högst upp på rapportsidan. Alla månadens värden som visas i rapportens övre del refererar till den senaste fullständiga månaden.
+Översiktsrapporten Microsoft 365 innehåller följande rapporter. Du kan visa dem genom att välja fliken högst upp på rapportsidan. Alla värden för månaden som visas i det övre avsnittet i rapporten avser den senaste hela månaden.
 
-- **Införande** &ndash; Ger en sammanfattning av införandetrenderna. Använd rapporterna i det här avsnittet för att ta reda på hur användarna har infört Microsoft 365, samt för att se hur den övergripande användningen av de enskilda tjänsterna har ändrats månad för månad. Du kan se hur användare är aktiverade, hur många personer i organisationen som aktivt använder Microsoft 365, hur många som är återkommande användare och hur många som använder produkten för första gången.
+- **Antagande** &ndash; Erbjuder en all-up sammanfattning av adoptionstrender. Använd rapporterna i det här avsnittet om du vill veta hur användarna har Microsoft 365, samt hur den totala användningen av de enskilda tjänsterna har förändrats månad för månad. Du kan se hur kan användare vara aktiverade, hur många personer i organisationen som aktivt använder Microsoft 365, hur många som returnerar användare och hur många som använder produkten för första gången.
 
-- **Användning** &ndash; Ger en detaljvy över antalet aktiva användare och nyckelaktiviteterna för varje produkt för de senaste 12 månaderna. Använd rapporterna i det här avsnittet för att lära dig hur personer i organisationen använder Microsoft 365.
+- **Användning** &ndash; Erbjuder en detaljgranskning av volymen av aktiva användare och de viktigaste aktiviteterna för varje produkt under de senaste 12 månaderna. Använd rapporterna i det här avsnittet om du vill veta hur personer i organisationen använder Microsoft 365.
 
-- **Kommunikation** &ndash; Du kan snabbt se om personer i organisationen föredrar att hålla kontakten med hjälp av Teams, Yammer, e-post Skype samtal. Du kan se om användning av kommunikationsverktygen bland de anställda har skiftat. 
+- **Kommunikation** &ndash; Du kan snabbt se om personer i din organisation föredrar att hålla kontakten genom att använda Teams, Yammer, e-post eller Skype samtal. Du kan observera om det finns förändringar i mönster i användningen av kommunikationsverktyg bland dina anställda. 
 
-- **Samarbete** &ndash; Se hur personer i organisationen använder OneDrive och SharePoint för att lagra dokument och samarbeta med varandra, och hur dessa trender utvecklas månad för månad. Du kan också se hur många dokument som delas internt eller externt och hur många SharePoint-webbplatser eller OneDrive-konton som aktivt används, och delas upp av ägare och andra medarbetare.
+- **Samarbete** &ndash; Se hur personer i din organisation använder OneDrive och SharePoint för att lagra dokument och samarbeta med varandra och hur dessa trender utvecklas månad för månad. Du kan också se hur många dokument som delas internt eller externt och hur många SharePoint-webbplatser eller OneDrive-konton som aktivt används, uppdelade av ägare och andra samarbetspartners.
 
-- **Storage** &ndash; Använd den här rapporten för att spåra molnlagring för postlådor, OneDrive och SharePoint postlådor.
+- **Storage** &ndash; Använd den här rapporten om du vill spåra molnlagring för OneDrive, SharePoint webbplatser.
 
-- **Mobilitet** &ndash; Spåra vilka klienter och enheter som används för att ansluta till e-Teams, Skype och Yammer.
+- **Rörlighet** &ndash; Spåra vilka klienter och enheter som personer använder för att ansluta till e-post, Teams, Skype eller Yammer.
 
 ## <a name="activation-and-licensing"></a>Aktivering och licensiering
 
-På aktiverings- och licenssidan finns rapporter om Microsoft 365 aktivering. det vill säga hur många användare som har laddat ned och aktiverat Office-appar och hur många licenser som har tilldelats av din organisation. Månadsvärdet mot toppen refererar till den aktuella månaden, och måtten speglar värden aggregerade från början av månaden till dagens datum.
+Aktiverings- och licenssidan erbjuder rapporter om Microsoft 365 aktivering; det vill säga hur många användare som har laddat Office och hur många licenser som har tilldelats av din organisation. Månadsvärdet mot toppen refererar till den aktuella månaden och måtten återspeglar värden som aggregerats från början av månaden till det aktuella datumet.
 
-- **Aktivering** &ndash; Spåra tjänstplansaktiveringar (till Microsoft 365-appar för företag, Project och Visio) i organisationen. Varje användare med en Office-licens kan installera produkter på upp till fem enheter. Du kan också använda rapporter i det här avsnittet för att se vilka enheter som användare har installerat Office program. Observera att för att aktivera ett abonnemang måste en användare installera appen och logga in med sitt konto.
+- **Aktivering** &ndash; Spåra serviceplan (till exempel Microsoft 365-appar för företag, Project och Visio) aktiveringar i organisationen. Varje användare med en Office-licens kan installera produkter på upp till fem enheter. Du kan också använda rapporter i det här avsnittet för att se de enheter där personer har installerat Office appar. Observera att för att aktivera en plan måste en användare installera appen och logga in med sitt konto.
 
-- **Licensiering** &ndash; Den här rapporten innehåller en översikt över licenstyper, antalet användare som har tilldelats varje licenstyp och licenstilldelningsdistributionen för varje månad. Månadsvärdet mot toppen refererar till den aktuella månaden, och måtten speglar värden aggregerade från början av månaden till dagens datum.
+- **Licensiering** &ndash; Den här rapporten innehåller en översikt över licenstyper, antalet användare som har tilldelats varje licenstyp och distributionen av licenstilldelning för varje månad. Månadsvärdet mot toppen refererar till den aktuella månaden och måtten återspeglar värden som aggregerats från början av månaden till det aktuella datumet.
 
 ## <a name="product-usage"></a>Produktanvändning
 
-Den här rapporten innehåller en separat rapport för varje Microsoft 365-tjänst, inklusive Exchange, Microsoft 365-grupper, OneDrive, SharePoint, Skype, Teams och Yammer. Varje rapport innehåller totalt antal aktiverade och totalt antal aktiva användarrapporter, antal enheter som postlådor, webbplatser, grupper och konton samt aktivitetstyprapporter där det är lämpligt. Alla månadens värden som visas i rapportens övre del refererar till den senaste fullständiga månaden.
+Den här rapporten innehåller en separat rapport för varje Microsoft 365-tjänst, inklusive Exchange-, Microsoft 365-grupper, OneDrive,SharePoint, Skype, Teams och Yammer. Varje rapport innehåller totalt aktiverade kontra totala aktiva användarrapporter, antal entiteter som postlådor, webbplatser, grupper och konton samt aktivitetstyprapporter där så är lämpligt. Alla värden för månaden som visas i det övre avsnittet i rapporten avser den senaste hela månaden.
 
 ## <a name="user-activity"></a>Användaraktivitet
 
-Användaraktivitetsrapporter finns tillgängliga för vissa enskilda tjänster. De här rapporterna ger detaljerad information om användningen på användarnivå tillsammans med Active Directory-attribut. Med rapporten Införande av avdelning kan du dessutom dela upp efter Active Directory-attribut så att du kan se aktiva användare i alla enskilda tjänster. Alla mått aggregeras för den senaste fullständiga månaden.
+Användaraktivitetsrapporter är tillgängliga för vissa enskilda tjänster. Dessa rapporter innehåller detaljanvändningsdata på användarnivå som är kopplade till Active Directory-attribut. I rapporten Avdelningsadoption kan du dessutom segmenta med Active Directory-attribut så att du kan se aktiva användare i alla enskilda tjänster. Alla mått aggregeras för den senaste hela månaden.
 
 ## <a name="faq"></a>Vanliga frågor och svar
 
-### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>Kommer den här mallappen att vara tillgänglig vid köp eller kommer den att vara gratis?
+### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>Kommer den här mallappen att vara tillgänglig via köp eller kommer den att vara gratis?
 
-Det är inte kostnadsfritt, du behöver en Power BI Pro licens. Mer information finns [i Förutsättningar](/power-bi/service-template-apps-install-distribute#prerequisites) för att installera, anpassa och distribuera en mallapp.
+Det är inte gratis, du behöver en Power BI Pro licens. Mer information finns [i förutsättningar](/power-bi/service-template-apps-install-distribute#prerequisites) för att installera, anpassa och distribuera en mallapp.
 
-Om du vill dela instrumentpanelerna med andra kan du läsa mer på [Dela instrumentpaneler och rapporter](/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports).
-### <a name="is-the-usage-summary-reports-reader-role-enough-to-view-the-usage-analytics"></a>Räcker rollen Sammanfattningsrapporter för användning för att visa användningsanalys?
+Om du vill dela instrumentpanelerna med andra kan du se mer [på Dela instrumentpaneler och rapporter](/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports).
+### <a name="is-the-usage-summary-reports-reader-role-enough-to-view-the-usage-analytics"></a>Är rollen Användningssammanfattningsrapporter läsare tillräckligt för att visa användningsanalysen?
 
-Med rollen Läsare av användningssammanfattningsrapporter får du bara åtkomst till mängdfunktioner på innehavarnivå Microsoft 365 användningsanalys.  Vi rekommenderar rollen Rapportläsare eller Sammanfattningsrapporter för användning till alla som ansvarar för ändringshantering och införande, men som inte nödvändigtvis är IT-administratör.
+Rollen Användningssammanfattningsrapportläsare ger endast åtkomst till aggregat på klient nivå Microsoft 365 användnings analys.  Vi rekommenderar rollen Rapportläsare eller Användningssammanfattningsrapporter Läsare till alla som ansvarar för ändringshantering och antagande, men inte nödvändigtvis är IT-administratör.
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>Vem kan ansluta till Microsoft 365 användningsanalyser?
 
-Du måste vara antingen **global** administratör, **Exchange-administratör,** **Skype för företag-administratör,** **SharePoint-administratör,**  **global** läsare eller rapportläsare för att kunna upprätta anslutningen till mallappen. Mer information [finns i Om](../add-users/about-admin-roles.md) administratörsroller.
+Du måste antingen vara **global administratör**, **Exchange admin**, Skype för företag **admin**, **SharePoint admin**, **Global läsare** **eller Rapportläsare** för att upprätta anslutningen till mallappen. Mer information [finns i Om](../add-users/about-admin-roles.md) administratörsroller.
 
-### <a name="who-can-customize-the-usage-analytics-reports"></a>Vem kan du anpassa användningsanalysrapporterna?
+### <a name="who-can-customize-the-usage-analytics-reports"></a>Vem du anpassa användningsanalysrapporterna?
 
-Endast den användare som har skapat den första anslutningen till mallappen kan anpassa rapporterna eller skapa nya rapporter Power BI webbgränssnittet. Anvisningar [finns i Anpassa rapporter Microsoft 365 användningsanalys.](customize-reports.md)
+Endast användaren som gjorde den första anslutningen till mallappen kan anpassa rapporterna eller skapa nya rapporter i Power BI webbgränssnittet. Se [Anpassa rapporterna i Microsoft 365 användningsanalys för](customize-reports.md) instruktioner.
 
-### <a name="can-i-only-customize-the-reports-from-the-power-bi-web-interface"></a>Kan jag bara anpassa rapporter från Power BI webbgränssnittet?
+### <a name="can-i-only-customize-the-reports-from-the-power-bi-web-interface"></a>Kan jag bara anpassa rapporterna från Power BI webbgränssnittet?
 
-Förutom att anpassa rapporter från Power BI-webbgränssnittet kan användare också använda Power BI Desktop för att ansluta direkt till Microsoft 365-rapporttjänsten och skapa egna rapporter.
+Förutom att anpassa rapporterna från Power BI-webbgränssnittet kan användare också använda Power BI Desktop för att ansluta direkt till Microsoft 365-rapporteringstjänsten för att bygga sina egna rapporter.
 
 ### <a name="how-can-i-get-the-pbit-file-that-this-dashboard-is-associated-with"></a>Hur får jag pbit-filen som är associerad med den här instrumentpanelen?
 
-Du kan komma åt pbit-filen från [Microsoft Download Center.](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)
+Du kan komma åt pbit-filen från [Microsoft Download Center](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit).
 
-### <a name="who-can-view-the-dashboards-and-reports"></a>Vem kan visa instrumentpaneler och rapporter?
+### <a name="who-can-view-the-dashboards-and-reports"></a>Vem du visa instrumentpaneler och rapporter?
 
-Om du är ansluten till mallappen kan du dela den med vem som helst med hjälp av [delningsfunktionen.](/power-bi/collaborate-share/service-share-dashboards) Power BI kräver att både den användare som delar och användaren som en instrumentpanel delas med har tillgång Power BI Pro eller Power BI Premium.
+Om du har anslutit till mallappen kan du dela den med vem som helst med hjälp av [delningsfunktionen](/power-bi/collaborate-share/service-share-dashboards). Power BI kräver att både användardelningen och den användare som en instrumentpanel delas med har Power BI Pro eller Power BI Premium.
 
 ### <a name="can-anyone-share-the-dashboard-or-does-it-have-to-be-the-person-who-connected-to-the-dashboard"></a>Kan vem som helst dela instrumentpanelen eller måste det vara den person som anslöt till instrumentpanelen?
 
-När du delar instrumentpanelen kan du antingen tillåta användare att dela instrumentpanelen på ny sida med andra eller inte. Du kan ange det här alternativet när du delar.
+När du delar instrumentpanelen kan du antingen tillåta användare att dela instrumentpanelen igen med andra eller inte. Du kan ställa in det här alternativet vid tidpunkten för delningen.
 
-### <a name="is-it-possible-to-work-on-and-customize-the-same-template-app-with-a-group-of-people"></a>Går det att arbeta med och anpassa samma mallapp för en grupp användare?
+### <a name="is-it-possible-to-work-on-and-customize-the-same-template-app-with-a-group-of-people"></a>Är det möjligt att arbeta med och anpassa samma mallapp med en grupp personer?
 
-Ja. Om du vill göra det möjligt för en grupp administratörer att arbeta tillsammans med samma mallapp kan du använda funktionen för apparbetsytor i Power BI. Mer information finns i Hur kan jag samarbeta och dela instrumentpaneler och [rapporter?](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) 
+Ja. Om du vill att en grupp administratörer ska kunna arbeta tillsammans i samma mallapp kan du utnyttja apparbetsytans funktionalitet i Power BI, för mer information, se [Hur ska jag samarbeta och dela instrumentpaneler och rapporter?](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) 
 
 ### <a name="for-which-timeframe-is-data-available"></a>Inom vilken tidsram är data tillgängliga?
 
-Majoriteten av rapporterna visar data för de föregående 12 månaderna. Men några av diagrammen kanske visar mindre historik eftersom datainsamlingen för olika produkter och rapporter startades vid olika tidpunkter och därmed kanske data inte är tillgängliga för alla 12 månaderna. Alla rapporter byggs så småningom upp till 12 månaders historik. Rapporter som visar information på användarnivå visar data för den föregående fullständiga månaden.
+Majoriteten av rapporterna visar data för de senaste 12 månaderna. Vissa av diagrammen kan dock visa mindre historik eftersom datainsamlingen för olika produkter och rapporter startades vid olika tidpunkter och därför kanske data för hela 12 månader inte är tillgängliga. Alla rapporter kommer så småningom att bygga upp till 12 månaders historia. Rapporter som visar information på användarnivå visar data för föregående hela månad.
 
 ### <a name="what-data-is-included-in-the-template-app"></a>Vilka data ingår i mallappen?
 
-Data i mallappen täcker för närvarande samma uppsättning aktivitetsmått som är tillgängliga i [aktivitetsrapporterna.](../activity-reports/activity-reports.md) När rapporter läggs till i aktivitetsrapporterna läggs de till i mallappen i en framtida version.
+Data i mallappen täcker för närvarande samma uppsättning aktivitetsmått som är tillgängliga i [aktivitetsrapporterna](../activity-reports/activity-reports.md). När rapporter läggs till i aktivitetsrapporterna läggs de till i mallappen i en framtida version.
 
 ### <a name="how-does-the-data-in-the-template-app-differ-from-the-data-in-the-usage-reports"></a>Hur skiljer sig data i mallappen från data i användningsrapporterna?
 
-Underliggande data som visas i mallappen matchar de data du ser i aktivitetsrapporterna Microsoft 365 administrationscentret. De viktigaste skillnaderna är att data i administrationscentret är tillgänglig för de senaste 7/30/90/180 dagarna medan mallappen presenterar data månadsvis för upp till 12 månader.
+De underliggande data som visas i mallappen matchar de data du ser i aktivitetsrapporterna i Microsoft 365 administrationscentret. De viktigaste skillnaderna är att i administrationscentret är data tillgängliga för de senaste 7/30/90/180 dagarna medan mallappen presenterar data på månadsbasis i upp till 12 månader.
 
-Dessutom är informationen på användarnivå i mallappen endast tillgänglig för den senaste fullständiga månaden för användare som har tilldelats en produktlicens och utfört en aktivitet.
+Dessutom är information på användarnivå i mallappen endast tillgänglig för den senaste hela månaden för användare som tilldelades en produktlicens och utförde en aktivitet.
 
-### <a name="when-should-i-use-the-template-app-and-when-the-usage-reports"></a>När ska jag använda mallappen och när ska jag använda användningsrapporterna?
+### <a name="when-should-i-use-the-template-app-and-when-the-usage-reports"></a>När ska jag använda mallappen och när användningsrapporterna?
 
-[Aktivitetsrapporterna](../activity-reports/activity-reports.md) är en bra utgångspunkt för att förstå användning och införande av Microsoft 365. Mallappen kombinerar Microsoft 365 användningsdata och organisationens Active Directory-information och gör det möjligt för administratörer att analysera datauppsättningen med hjälp av funktionerna för visuell analys i Power BI. På så sätt kan administratörer inte bara visualisera och analysera Microsoft 365 användningsdata utan även dela upp dem med hjälp av Active Directory-egenskaper som avdelningar, plats osv. De kan också skapa anpassade rapporter och dela insikter inom organisationen. 
+[Aktivitetsrapporterna](../activity-reports/activity-reports.md) är en bra utgångspunkt för att förstå användning och antagande av Microsoft 365. Mallappen kombinerar Microsoft 365 och organisationens Active Directory-information och gör det möjligt för administratörer att analysera datauppsättningen med hjälp av de visuella analysfunktionerna i Power BI. Detta gör det möjligt för administratörer att inte bara visualisera och analysera Microsoft 365 användningsdata, utan också segmentera dem med Active Directory-egenskaper som avdelningar, plats etc. De kan också skapa anpassade rapporter och dela insikterna inom sin organisation. 
 
 ### <a name="how-often-is-the-data-refreshed"></a>Hur ofta uppdateras data? 
 
-När du ansluter till mallappen för första gången fylls data för de föregående 12 månaderna i automatiskt. Därefter uppdateras mallappens data varje vecka. Kunderna kan välja att ändra schemat för uppdatering om användningen av den här informationen kräver en annan uppdateringsrytm.
+När du ansluter till mallappen för första gången fylls de automatiskt i med dina data under de föregående 12 månaderna. Därefter uppdateras mallappdata varje vecka. Kunder kan välja att ändra uppdateringsschemat om deras användning av dessa data kräver en annan uppdateringsrytm.
 
-Tjänstens Microsoft 365 uppdaterar data dagligen och innehåller data med 5–8 dagars försent från dagens datum.
+Backend-tjänsten Microsoft 365 dagligen och tillhandahåller data som är mellan 5-8 dagar latent från det aktuella datumet.
 
-Kolumnen **för innehållsdatum** i varje datauppsättning visar datum för data i mallappen.
+Kolumnen **Innehållsdatum** i varje datauppsättning representerar färskhetsdatumet för data i mallappen.
 
 ### <a name="how-is-an-active-user-defined"></a>Hur definieras en aktiv användare?
 
-Definitionen av aktiv användare är densamma som definitionen av [aktiv användare](../activity-reports/active-users.md) i aktivitetsrapporterna.
+Definitionen av aktiv användare är densamma som definitionen av [aktiv användare i](../activity-reports/active-users.md) aktivitetsrapporterna.
 
 ### <a name="what-sharepoint-site-collections-are-included-in-the-sharepoint-reports"></a>Vilka SharePoint-webbplatssamlingar ingår i SharePoint-rapporterna?
 
-Den aktuella versionen av mallappen innehåller filaktivitet från olika SharePoint och gruppwebbplatser SharePoint gruppwebbplatser.
+Den aktuella versionen av mallappen innehåller filaktivitet från SharePoint gruppwebbplatser och SharePoint gruppwebbplatser.
 
-### <a name="which-groups-are-included-in-the-microsoft-365-groups-usage-report"></a>Vilka grupper ingår i användningsrapporten Microsoft 365 Grupper?
+### <a name="which-groups-are-included-in-the-microsoft-365-groups-usage-report"></a>Vilka grupper ingår i användningsrapporten Microsoft 365 grupper?
 
-I den aktuella versionen av mallappen ingår användning Outlook grupper, Yammer och SharePoint grupper. Den innehåller inte grupper som är relaterade till Microsoft Teams eller Planner.
+Den aktuella versionen av mallappen innehåller användning Outlook, Yammer grupper och SharePoint grupper. Den innehåller inte grupper som är relaterade till Microsoft Teams eller Planner.
 
 ### <a name="when-will-an-updated-version-of-the-template-app-become-available"></a>När blir en uppdaterad version av mallappen tillgänglig?
 
-Viktiga ändringar i mallappen kommer att släppas två gånger om året och kan innehålla nya rapporter eller nya data. Mindre ändringar i rapporterna kan släppas oftare.
+Större ändringar i mallappen kommer att släppas två gånger om året, vilket kan innehålla nya rapporter eller nya data. Mindre ändringar av rapporterna kan komma att släppas oftare.
 
-### <a name="is-it-possible-to-integrate-the-data-from-the-template-app-into-existing-solutions"></a>Går det att integrera data från mallappen i befintliga lösningar? 
+### <a name="is-it-possible-to-integrate-the-data-from-the-template-app-into-existing-solutions"></a>Är det möjligt att integrera data från mallappen i befintliga lösningar? 
 
-Data i mallappen kan hämtas via API:Microsoft 365 (i förhandsversionen). När de levereras till produktion sammanfogas de i [de MICROSOFT-Graph-rapport-API:er.](https://go.microsoft.com/fwlink/p/?linkid=848843) 
+Data i mallappen kan hämtas via de Microsoft 365 API:erna (i förhandsversion). När de levereras till produktion slås de samman i [Microsoft Graph rapporterar API: er](https://go.microsoft.com/fwlink/p/?linkid=848843). 
 
 ### <a name="are-there-plans-to-expand-the-template-app-to-show-usage-data-from-other-microsoft-products"></a>Finns det planer på att utöka mallappen för att visa användningsdata från andra Microsoft-produkter?
 
-Detta övervägs för framtida förbättringar. Läs mer [Microsoft 365 översikt](https://www.microsoft.com/microsoft-365/roadmap) över uppdateringar.
+Detta övervägs för framtida förbättringar. Kontrollera [Microsoft 365 översikten](https://www.microsoft.com/microsoft-365/roadmap) för uppdateringar.
 
 ### <a name="how-can-i-pivot-by-company-information-in-active-directory"></a>Hur kan jag pivotera efter företagsinformation i Active Directory?
 
-Företagsinformation ingår i ett av Active Directory-fälten i mallappen och du kan se den som ett förbyggt filter i rapporterna över **produktanvändaraktivitet.** Det är tillgängligt som en kolumn i **tabellen Användartillstånd.**
+Företagsinformation ingår i ett av Active Directory-fälten i mallappen och du kan se den som ett förbyggt filter i **aktivitetsrapporterna för produktanvändare.** Den är tillgänglig som kolumn i **tabellen UserState.**
 
 ### <a name="is-it-possible-to-bring-in-additional-fields-from-active-directory"></a>Går det att få in ytterligare fält från Active Directory?
 
-Ytterligare anpassning av dessa data är möjlig genom att ansluta till [Rapport-API:er](https://go.microsoft.com/fwlink/p/?linkid=848843) för Microsoft Graph för att hämta ytterligare fält från Azure Active Directory och ansluta till datauppsättningen. 
+Ytterligare anpassning av dessa data är möjlig genom att ansluta till [Microsoft Graph rapporterar API: er](https://go.microsoft.com/fwlink/p/?linkid=848843) för att hämta ytterligare fält från Azure Active Directory och ansluta till datauppsättningen. 
 
-### <a name="is-it-possible-to-aggregate-the-information-in-the-template-app-across-multiple-subscriptions"></a>Går det att sammanställa informationen i mallappen för flera prenumerationer?
+### <a name="is-it-possible-to-aggregate-the-information-in-the-template-app-across-multiple-subscriptions"></a>Är det möjligt att aggregera informationen i mallappen i flera prenumerationer?
 
-För stunden är mallappen för en enda prenumeration, eftersom den är kopplad till autentiseringsuppgifterna som användes vid den första anslutningen.
+För närvarande är mallappen för en enda prenumeration, eftersom den är associerad med de autentiseringsuppgifter som användes för att först ansluta till den.
 
-### <a name="is-it-possible-to-see-usage-by-plan-ie-e1-e3"></a>Går det att se användningen per abonnemang (dvs. E1, E3)?
+### <a name="is-it-possible-to-see-usage-by-plan-ie-e1-e3"></a>Är det möjligt att se användning enligt plan (dvs. E1, E3)?
 
-I mallappen representeras användningen på produktnivå. Data om de olika prenumerationer som har tilldelats användarna tillhandahålls, men det går inte att korrelera användaraktivitet till den prenumeration som tilldelats användaren.
+I mallappen representeras användningen på nivån per produkt. Data om de olika prenumerationer som tilldelas användare tillhandahålls, men det är inte möjligt att korrelera användaraktivitet till den prenumeration som tilldelats användaren.
 
-### <a name="is-it-possible-to-integrate-other-data-sets-into-the-template-app"></a>Går det att integrera andra datauppsättningar i mallappen?
+### <a name="is-it-possible-to-integrate-other-data-sets-into-the-template-app"></a>Är det möjligt att integrera andra datauppsättningar i mallappen?
 
-Du kan använda Power BI Desktop ansluta till API:er för Microsoft 365 (i förhandsversionen) för att få ytterligare datakällor att kombinera med mallappdata.
+Du kan använda Power BI Desktop för att ansluta till Microsoft 365 API:er (i förhandsversion) för att få ytterligare datakällor att kombinera med mallappdata.
 
-Mer information finns i [anpassa dokumentet](customize-reports.md).
+Mer information finns i [Anpassa dokument](customize-reports.md).
 
-### <a name="is-it-possible-to-see-the-top-users-reports-for-a-specific-timeframe"></a>Går det att visa rapporterna för de största användarna för en viss tidsperiod?
+### <a name="is-it-possible-to-see-the-top-users-reports-for-a-specific-timeframe"></a>Är det möjligt att se rapporterna "Toppanvändare" för en viss tidsram?
 
-Alla rapporter på användarnivå visar aggregerade data för den föregående månaden.
+Alla rapporter på användarnivå innehåller aggregerade data för föregående månad.
 
 ### <a name="will-the-template-app-be-localized"></a>Kommer mallappen att lokaliseras? 
 
-Detta finns för närvarande inte med i översikten.
+Detta finns för närvarande inte med på färdplanen.
 
 ### <a name="i-have-a-specific-question-about-the-data-im-seeing-for-my-organization-who-can-i-reach-out-to"></a>Jag har en specifik fråga om de data som visas för organisationen. Vem kan jag vända mig till?
 
-Du kan använda feedbackknappen på sidan aktivitetsöversikt för administrationscentret eller öppna ett [supportfall](../../business-video/get-help-support.md) om du behöver hjälp med mallappen. 
+Du kan använda feedbackknappen på sidan över översikt över aktivitetsöversikt för administrationscentret eller öppna ett [supportärende](../../business-video/get-help-support.md) för att få hjälp med mallappen. 
 
 ### <a name="how-can-partners-access-the-data"></a>Hur kan en partner komma åt data?
 
-Om en partner har delegerade administratörsrättigheter kan han eller hon ansluta till mallappen åt kunden.
+Om en partner har delegerade administratörsrättigheter kan han eller hon ansluta till mallappen för kundens räkning.
 
 ### <a name="can-i-hide-identifiable-information-such-as-user-group-and-site-names-in-reports"></a>Kan jag dölja identifierbar information som exempelvis användare, grupp och webbplatsnamn i rapporter?
 
-Ja, läs [mer i Göra insamlade data anonyma](enable-usage-analytics.md#make-the-collected-data-anonymous).
+Ja, se [Anonyma insamlade data](enable-usage-analytics.md#make-the-collected-data-anonymous).
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Aktivera Microsoft 365 användningsanalyser](enable-usage-analytics.md) (artikel)
+
+[Navigera och använd rapporterna i Microsoft 365 användningsanalys](navigate-and-utilize-reports.md) (artikel)
+
+[Granska användningsrapporter i Microsoft 365](../../business-video/act-on-report.md) (video)

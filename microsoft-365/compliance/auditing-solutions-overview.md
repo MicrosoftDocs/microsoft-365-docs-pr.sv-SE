@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Lär dig att granska användar- och administratörsaktiviteterna i din Microsoft 365-organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 214ea43348a4a33e6ce1b754cbaf9be6a43b2c70
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: d8686a2cd7b1fc6e9082e85b18ba352c1fd7f830
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314385"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538524"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Granskningslösningar i Microsoft 365
 
@@ -34,9 +34,11 @@ Granskningslösningar i Microsoft 365 tillhandahåller en integrerad lösning so
 
 I Microsoft 365 finns två granskningslösningar: Grundläggande granskning och Avancerad granskning.
 
-### <a name="basic-auditing"></a>Grundläggande granskning
+![Viktiga funktioner för Grundläggande granskning och Avancerad granskning](..\media\AuditingSolutionsComparison.png)
 
-Med grundläggande granskning kan du logga och söka efter granskade aktiviteter och utföra dina granskningar, IT-, efterlevnads- och juridiska undersökningar.
+### <a name="basic-audit"></a>Grundläggande granskning
+
+Med Grundläggande granskning kan du logga och söka efter granskade aktiviteter och utföra dina granskningar, IT-, efterlevnads- och juridiska undersökningar.
 
 - **Aktiverad som standard**. Grundläggande granskning är aktiverat som standard för alla organisationer med rätt abonnemang. Det innebär att poster för granskade aktiviteter förs in och är sökbara. Den enda konfiguration som krävs är att tilldela nödvändiga behörigheter för att få åtkomst till granskningsloggens sökverktyg (och motsvarande cmdlet) och kontrollera att användaren har tilldelats rätt licens för avancerade granskningsfunktioner.
 - **Tusentals sökbara granskningshändelser**. Du kan söka efter en rad granskade aktiviteter som inträffar i de flesta Microsoft 365-tjänsterna i din organisation. En del av en lista över de aktiviteter du kan söka efter finns i [Granskade aktiviteter](search-the-audit-log-in-security-and-compliance.md#audited-activities). En lista över tjänster och funktioner som stöder granskade aktiviteter finns i [Granskningslogg record type](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).
@@ -46,26 +48,26 @@ Med grundläggande granskning kan du logga och söka efter granskade aktiviteter
 
 - **Search-UnifiedAuditLog cmdlet**. Du kan också använda cmdleten **Search-UnifiedAuditLog** i Exchange Online PowerShell (den underliggande cmdleten för sökverktyget) för att söka efter granskningshändelser eller använda i ett skript. Mer information finns i:
 
-  - [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)
+  - [Search-UnifiedAuditLog cmdlet referens](/powershell/module/exchange/search-unifiedauditlog)
   - [Använd ett PowerShell-skript för att söka i granskningsloggen](audit-log-search-script.md)
 
 - **Exportera granskningsposter till en CSV-**. När du har kört verktyget Sökning i granskningslogg* i efterlevnadscentret kan du exportera granskningsposterna som returneras av sökningen till en CSV-fil. Då kan du använda Microsoft Excel för att sortera och filtrera på olika egenskaper för granskningsposterna. Du kan också använda transformeringsfunktionen i Excel Power Query för att dela upp varje egenskap i AuditData JSON-objektet i en egen kolumn. På så sätt kan du visa och jämföra liknande data för olika händelser. Mer information finns i [Exportera, konfigurera och visa granskningsloggposter](export-view-audit-log-records.md).
 
-- **Åtkomst till granskningsloggar via Office 365 Management Activity-API**. En tredje metod för att komma åt och hämta granskningsposter är att använda Office 365 Management Activity API. Det innebär att organisationen kan behålla granskningsdata under längre perioder än standardvärdena på 90 dagar och importera sina granskningsdata till en SIEM-lösning. Mer information finns i [Office 365 Management Activity-API, referens](/office/office-365-management-api/office-365-management-activity-api-reference).
+- **Åtkomst till granskningsloggar via Office 365 Management Activity-API**. En tredje metod för att komma åt och hämta granskningsposter är att använda Office 365 Management Activity API. Det innebär att organisationen kan behålla granskningsdata under längre perioder än standardvärdena på 90 dagar och importera sina granskningsdata till en SIEM-lösning. Mer information finns i [referensen för Office 365 Management Activity-API](/office/office-365-management-api/office-365-management-activity-api-reference).
 
-- **90 dagar-kvarhållning för granskningsloggar**. När en granskad aktivitet utförs av en användare eller administratör skapas en granskningspost som lagras i granskningsloggen för organisationen. I grundläggande granskning behålls poster i 90 dagar, vilket innebär att du kan söka efter aktiviteter som inträffat under de senaste tre månaderna.
+- **90 dagar-kvarhållning för granskningsloggar**. När en granskad aktivitet utförs av en användare eller administratör skapas en granskningspost som lagras i granskningsloggen för organisationen. I Grundläggande granskning behålls poster i 90 dagar, vilket innebär att du kan söka efter aktiviteter som inträffat under de senaste tre månaderna.
 
 ### <a name="advanced-audit"></a>Avancerad granskning
 
-Avancerad granskning bygger på funktionerna i Grundläggande granskning genom att tillhandahålla kvarhållningsprinciper för granskningsloggar, längre kvarhållning av granskningsposter, viktiga händelser med hög värde och högre bandbreddsåtkomst till Office 365 Management Activity API.
+Avancerad granskning bygger på funktionerna i Grundläggande granskning genom att tillhandahålla kvarhållningsprinciper för granskningsloggar, längre kvarhållning av granskningsposter, viktiga händelser med hög värde och högre bandbreddsåtkomst till Office 365 Management Activity-API.
 
 - **Kvarhållningsprinciper för granskningsloggar**. Du kan skapa anpassade kvarhållningsprinciper för granskningsloggar om du vill bevara andra granskningsposter under en längre period upp till ett år (och upp till tio år för användare med obligatorisk tilläggslicens). Du kan skapa en princip om du vill behålla granskningsposter baserat på tjänsten där de granskade aktiviteterna inträffar, specifika granskade aktiviteter eller användaren som utför en granskad aktivitet.
 
 - **Längre kvarhållning av granskningsposter**. Granskningsposter för Exchange, SharePoint och Azure Active Directory bevaras som standard i ett år. Granskningsposter för alla andra aktiviteter behålls som standard i 90 dagar. Du kan också använda kvarhållningsprinciper för granskningsloggar för att konfigurera längre kvarhållningsperioder.
 
-- **Avgörande händelser med högt värde.**. Granskningsposter för avgörande händelser ka hjälpa organisationer att utföra tekniska undersökningar och efterlevnadsundersökningar genom att ge synlighet till viktiga händelser som när e-postobjekt har använts, besvarats och vidarebefordrats samt när och vad en användare har sökt efter i Exchange Online och SharePoint Online. De här viktiga händelserna kan hjälpa dig att undersöka möjliga intrång och avgöra intrångets omfattning.
+- **Avgörande händelser med högt värde.**. Granskningsposter för avgörande händelser ka hjälpa organisationer att utföra tekniska undersökningar och efterlevnadsundersökningar genom att ge synlighet till viktiga händelser som när e-postobjekt har använts, besvarats och vidarebefordrats eller när och vad en användare har sökt efter i Exchange Online och SharePoint Online. De här viktiga händelserna kan hjälpa dig att undersöka möjliga intrång och avgöra intrångets omfattning.
 
-- **Högre bandbredd till Office 365 Management Activity-API**. Avancerad granskning ger organisationer mer bandbredd för åtkomst till granskningsloggar via Office 365 Management Activity API. Även om alla organisationer (som har grundläggande granskning eller avancerad granskning) till en början har tilldelats en baslinje med 2 000 förfrågningar per minut, ökar den här gränsen dynamiskt beroende på antalet användare i organisationen och deras licensprenumeration. Det leder till att organisationer med Avancerad granskning får två gånger så mycket bandbredd som organisationer med grundläggande granskning.
+- **Högre bandbredd till Office 365 Management Activity-API**. Avancerad granskning ger organisationer mer bandbredd för åtkomst till granskningsloggar via Office 365 Management Activity API. Även om alla organisationer (som har Grundläggande granskning eller Avancerad granskning) till en början har tilldelats en baslinje med 2 000 förfrågningar per minut, ökar den här gränsen dynamiskt beroende på antalet användare i organisationen och deras licensprenumeration. Det leder till att organisationer med Avancerad granskning får två gånger så mycket bandbredd som organisationer med Grundläggande granskning.
 
 Mer information om avancerade granskningsfunktioner finns i [Avancerad granskning i Microsoft 365](advanced-audit.md).
 
@@ -78,7 +80,7 @@ I följande tabell jämförs de viktigaste funktionerna i Grundläggande granskn
 |Aktiverad som standard|![Stöds](../media/check-mark.png)|![Stöds](../media/check-mark.png)|
 |Tusentals sökbara granskningshändelser|![Stöds](../media/check-mark.png)|![Stöds](../media/check-mark.png)|
 |Verktyg för granskningssökning i Microsoft 365 Efterlevnadscenter |![Stöds](../media/check-mark.png)|![Stöds](../media/check-mark.png)|
-|**Search-UnifiedAuditLog** cmdlet|![Stöds](../media/check-mark.png)|![Stöds](../media/check-mark.png)|
+|Search-UnifiedAuditLog cmdlet|![Stöds](../media/check-mark.png)|![Stöds](../media/check-mark.png)|
 |Exportera granskningsposter till en CSV-fil|![Stöds](../media/check-mark.png)|![Stöds](../media/check-mark.png)|
 |Åtkomst till granskningsloggar via Office 365 Management Activity-API <sup>1</sup>|![Stöds](../media/check-mark.png)|![Stöds](../media/check-mark.png)</sup>|
 |90 dagar-kvarhållning för granskningsloggar|![Stöds](../media/check-mark.png)|![Stöds](../media/check-mark.png)|
@@ -92,9 +94,9 @@ I följande tabell jämförs de viktigaste funktionerna i Grundläggande granskn
 
 ## <a name="licensing-requirements"></a>Licensieringskrav
 
-I följande avsnitt identifieras licenseringskraven för grundläggande granskning och avancerad granskning. Grundläggande granskningsfunktioner ingår i Avancerad granskning.
+I följande avsnitt identifieras licenseringskraven för Grundläggande granskning och Avancerad granskning. Grundläggande granskningsfunktioner ingår i Avancerad granskning.
 
-### <a name="basic-auditing"></a>Grundläggande granskning
+### <a name="basic-audit"></a>Grundläggande granskning
 
 - Microsoft 365 Enterprise E3-abonnemang
 - Microsoft 365 Business Premium
@@ -125,19 +127,21 @@ I följande avsnitt identifieras licenseringskraven för grundläggande granskni
 
 Läs följande riktlinjer för konfiguration för att komma igång med granskningslösningarna i Microsoft 365.
 
-### <a name="set-up-basic-auditing"></a>Konfigurera grundläggande granskning
+### <a name="set-up-basic-audit"></a>Konfigurera Grundläggande granskning
 
-Det första steget är att konfigurera grundläggande granskning och sedan börja köra granskningsloggsökningar.
+Det första steget är att konfigurera Grundläggande granskning och sedan börja köra granskningsloggsökningar.
 
-![Arbetsflöde för att konfigurera grundläggande granskning](../media/BasicAuditingWorkflow.png)
+![Arbetsflöde för att konfigurera Avancerad granskning för användare](../media/BasicAuditingWorkflow.png)
 
-1. Kontrollera att organisationen har ett abonnemang som har stöd för grundläggande granskning och, om tillämpligt, ett abonnemang som har stöd för avancerad granskning.
+1. Kontrollera att organisationen har ett abonnemang som har stöd för Grundläggande granskning och, om tillämpligt, ett abonnemang som har stöd för Avancerad granskning.
 
-2. Tilldela behörigheter i Exchange Online till personer i organisationen som använder verktyget för granskningsloggsökning i Microsoft 365 Efterlevnadscenter eller cmdleten **Search-UnifiedAuditLog** . Mer specifikt måste användaren ha tilldelats rollen Skrivskyddade granskningsloggar eller Granskningsloggar i Exchange Online.
+2. Tilldela behörigheter i Exchange Online till personer i organisationen som använder verktyget för granskningsloggsökning i Microsoft 365 Efterlevnadscenter eller använd cmdleten **Search-UnifiedAuditLog**. Mer specifikt måste användare ha tilldelats rollen Skrivskyddade granskningsloggar eller Granskningsloggar i Exchange Online.
 
 3. Söka i granskningsloggen. När du har slutfört steg 1 och steg 2 kan användare i organisationen använda verktyget för granskningsloggsökning (eller motsvarande cmdlet) för att söka efter granskade aktiviteter.
 
-### <a name="set-up-advanced-audit"></a>Konfigurera avancerad granskning
+Se [Konfigurera Grundläggande granskning](set-up-basic-audit.md) för mer detaljerade instruktioner.
+
+### <a name="set-up-advanced-audit"></a>Konfigurera Avancerad granskning
 
 Om organisationen har ett abonnemang som har stöd för avancerad granskning utför du stegen nedan för att konfigurera och använda de ytterligare funktionerna i Avancerad granskning.
 
@@ -156,6 +160,8 @@ Om organisationen har ett abonnemang som har stöd för avancerad granskning utf
 3. Konfigurera kvarhållningsprinciper för granskningsloggar. Utöver standardprincipen som behåller granskningsposter för Exchange, SharePoint och Azure AD i ett år kan du skapa ytterligare kvarhållningsprinciper för granskningsloggar så att de uppfyller kraven för organisationens säkerhetsåtgärder, IT- och efterlevnadsgrupper.
 
 4. Sök efter viktiga händelser och andra aktiviteter när du genomför undersökningar. När du har slutfört steg 1 och steg 2 kan du söka i granskningsloggen efter viktiga händelser och andra aktiviteter under undersökningar av nedsatt säkerhet och andra typer av säkerhets- eller efterlevnadsundersökningar.
+
+Se [Konfigurera Avancerad granskning](set-up-advanced-audit.md) för mer detaljerade instruktioner.
 
 ## <a name="training"></a>Utbildning
 

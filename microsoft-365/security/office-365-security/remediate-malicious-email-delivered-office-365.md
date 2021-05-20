@@ -1,5 +1,5 @@
 ---
-title: Åtgärda skadlig e-post som levererats i Office 365
+title: Åtgärda skadlig e-post som har levererats i Office 365
 author: msfttracyp
 ms.author: tracyp
 manager: dansimp
@@ -15,12 +15,12 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 202ebc8b79368c8d41fd3727b67359ddcb8a08fa
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: a59b24cd29ab8bf3b9b08c7818813a7ab89f7ce2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207409"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537889"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Åtgärda skadlig e-post som levereras i Office 365
 
@@ -29,10 +29,10 @@ ms.locfileid: "51207409"
 **Gäller för**
 - [Microsoft Defender för Office 365 abonnemang 2](defender-for-office-365.md)
 
-Åtgärd innebär att vidta en bestämt åtgärd mot ett hot. Skadlig e-post som skickas till din organisation kan tas bort antingen av systemet, via nolltimmars automatisk rensning (ZAP) eller av säkerhetsgrupper genom åtgärder som att flytta till Inkorgen *,* gå till *skräppost,* gå till borttagna *objekt,* mjuk borttagning eller ta bort permanent *.*  Med Microsoft Defender för Office 365 P2/E5 kan säkerhetsteam åtgärda hot i e-post- och samarbetsfunktionerna genom manuell och automatiserad undersökning.
+Åtgärd innebär att vidta en bestämt åtgärd mot ett hot. Skadlig e-post som skickas till din organisation kan tas bort antingen av systemet, via nolltimmars automatisk rensning (ZAP) eller av säkerhetsgrupper genom åtgärder som att flytta till Inkorgen *,* gå till *skräppost,* gå till borttagna *objekt,* mjuk borttagning eller ta bort permanent *.*  Med Microsoft Defender för Office 365 P2/E5 kan säkerhetsteam åtgärda hot via e-post och samarbete via manuell och automatiserad undersökning.
 
 > [!NOTE]
-> För att åtgärda skadlig e-post behöver säkerhetsteamen *tilldelad sök-* och rensningsrollen. Rolltilldelning utförs via behörigheter i säkerhets- och efterlevnadscentret.
+> För att åtgärda skadlig e-post behöver säkerhetsteamen *tilldelad sök-* och rensningsrollen. Rolltilldelningen utförs genom [behörigheter i Säkerhets- & Efterlevnadscenter.](permissions-in-the-security-and-compliance-center.md)
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>Vad du behöver veta innan du börjar
 
@@ -43,7 +43,7 @@ Administratörer kan vidta nödvändiga åtgärder i e-postmeddelanden, men för
 *Manuell sökning* sker när säkerhetsgrupper identifierar hot manuellt med hjälp av sök- och filtreringsfunktionerna i Threat Explorer. Åtgärder för manuell e-post kan utlösas via valfri e-postvy *(skadlig* kod, *phish* eller *all* e-post) när du har identifierat en uppsättning e-postmeddelanden som behöver åtgärdas.
 
 > [!div class="mx-imgBorder"]
-> [![Manuell jäning i Office 365 Threat Explorer på datum.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
+> [![Manuell 60 Office 365 i Threat Explorer på datum.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
 
 Säkerhetsteam kan använda Hotutforskaren för att välja e-postmeddelanden på flera olika sätt:
 
@@ -81,7 +81,7 @@ Alla åtgärder (antingen direkt godkännande eller tvåstegsgodkännande) som s
   - **Åtgärd kan** åtgärdas: E-postmeddelanden på följande molnbaserade postlådeplatser kan åtgärdas och flyttas:
     - Inkorgen
     - Skräppost
-    - Borttaget mapp
+    - Borttagen mapp
     - Mjuk borttaget mapp
 
       > [!NOTE]
@@ -104,7 +104,7 @@ Alla åtgärder (antingen direkt godkännande eller tvåstegsgodkännande) som s
   > [!NOTE]
   > För bästa resultat bör åtgärder utföras i grupper om 50 000 eller färre.
 
-  Endast åtgärdsbara e-postmeddelanden åtgärdas under åtgärder. Icke-remedierbara e-postmeddelanden kan inte åtgärdas av Office 365-e-postsystemet, eftersom de inte lagras i molnbaserade postlådor.
+  Endast åtgärdsbara e-postmeddelanden åtgärdas under åtgärder. Icke-remedierbara e-postmeddelanden kan inte åtgärdas av Office 365 e-postsystem, eftersom de inte lagras i molnbaserade postlådor.
 
   Administratörer kan vidta åtgärder för e-postmeddelanden i karantän om det behövs, men de e-postmeddelandena löper ut från karantänen om de inte rensas manuellt. E-postmeddelanden som sätts i karantän på grund av skadligt innehåll är inte tillgängliga för användarna, så säkerhetspersonalen behöver inte vidta någon åtgärd för att ta bort hot i karantän. Om e-postmeddelandena finns lokalt eller externt kan användaren kontaktas för att åtgärda det misstänkta e-postmeddelandet. Eller också kan administratörerna använda separata e-postservrar/säkerhetsverktyg för borttagning. Dessa e-postmeddelanden kan identifieras genom att använda *leveransplatsen = on-prem* externt filter i Threat Explorer. För misslyckade eller nedslyckade e-postmeddelanden, eller e-post som inte kan nås av användarna, finns det inte någon e-post att minimera, eftersom dessa e-postmeddelanden inte når postlådan.
 

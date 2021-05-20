@@ -17,19 +17,20 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+recommendations: false
 description: Lär dig hur du distribuerar team med skydd för känslig data.
-ms.openlocfilehash: 03f10c91461d440413ace418a3b6fdd84da1660a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 16b60230c18f4a4f5e10b4bd421fd1bf02b39779
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916232"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538189"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Konfigurera team med skydd för känslig data
 
 I den här artikeln ska vi titta närmare på hur du konfigurerar ett team för en känslig skyddsnivå. Kontrollera att du har slutfört stegen i [distribuera teams med grundskydd](configure-teams-baseline-protection.md) innan du följer anvisningarna i den här artikeln. Den känsliga nivån erbjuder följande ytterligare skydd över grundnivån:
 
-- En känslighetsetikett för teamet som gör att du kan aktivera eller inaktivera gästdelning och begränsar åtkomst till SharePoint-innehåll till webben endast för ostyrda enheter. Du kan också använda den här etiketten för att klassificera filer.
+- En känslighetsetikett för teamet som gör att du kan aktivera eller inaktivera gästdelning samt begränsa åtkomst till SharePoint-innehåll till endast webben för ohanterade enheter. Etiketten kan även användas till att klassificera filer.
 - En mer restriktiv länktyp för standarddelning
 - Endast teamägare kan skapa privata kanaler.
 
