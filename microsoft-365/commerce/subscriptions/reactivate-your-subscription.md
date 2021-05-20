@@ -19,7 +19,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: Administratörer kan återaktivera en prenumeration när den upphör att gälla, inaktiveras eller avbryts eller om du avbröt mitt i en prenumerationsperiod.
+description: Administratörer kan återaktivera en prenumeration när den går ut, inaktiveras eller avbrytas, eller om du har avbrutit den mitt under en prenumerationsperiod.
 ms.date: 04/07/2021
 ms.openlocfilehash: ad408648253b3805d66b0e7b51ad90107f4eab95
 ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
@@ -30,13 +30,13 @@ ms.locfileid: "52572519"
 ---
 # <a name="reactivate-your-subscription"></a>Återaktivera prenumerationen
 
-Du kan återaktivera prenumerationen i administrationscentret om: prenumerationen har upphört att gälla, inaktiverats av Microsoft eller om du avbröt prenumerationen i mitten av en prenumerationsperiod.
+Du kan återaktivera prenumerationen i administrationscentret om: prenumerationen har gått ut, inaktiverats av Microsoft eller om du har avbrutit den under en prenumerationsperiod.
   
 ## <a name="before-you-begin"></a>Innan du börjar
 
 Du måste vara global administratör eller faktureringsadministratör för att kunna återaktivera en prenumeration. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
 
-**Är du inte administratör?** Kontakta din administration för att återaktivera din prenumeration.
+**Är du inte administratör?** Kontakta din administration för att återaktivera prenumerationen.
 
 ## <a name="reactivate-a-subscription"></a>Återaktivera en prenumeration
 
@@ -58,13 +58,13 @@ Du måste vara global administratör eller faktureringsadministratör för att k
 
 ::: moniker-end
 
-2. På fliken **Produkter** hittar du den prenumeration som du vill återaktivera. Markera de tre punkterna (fler åtgärder) och välj sedan **Återaktivera den här prenumerationen**.\
-    Om du inte ser **Återaktivera den här prenumerationen** kontaktar [du supporten](../../business-video/get-help-support.md).
-3. I fönstret **Återaktivera den** här prenumerationen väljer du en betalningsmetod i listrutan eller väljer **Lägg till betalningsmetod**.
+2. Gå till **fliken** Produkter och leta reda på den prenumeration som du vill återaktivera. Välj de tre punkterna (fler åtgärder) och välj sedan **Återaktivera den här prenumerationen**.\
+    Om du inte ser **Återaktivera den här prenumerationen kontaktar** [du support.](../../business-video/get-help-support.md)
+3. I fönstret **Återaktivera den här** prenumerationen väljer du en betalningsmetod i listrutan eller välj Lägg **till betalningsmetod.**
 4. Välj **Spara**.
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Prova eller köp en Microsoft 365 för företagsprenumeration](../try-or-buy-microsoft-365.md) (artikel)\
+[Prova eller köp en Microsoft 365 för företag-prenumeration](../try-or-buy-microsoft-365.md) (artikel)\
 [Förnya Microsoft 365 för företag](renew-your-subscription.md) (artikel)\
-[Avsluta prenumerationen](cancel-your-subscription.md) (artikel)
+[Avsluta din prenumeration](cancel-your-subscription.md) (artikel)

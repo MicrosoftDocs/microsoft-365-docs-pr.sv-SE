@@ -1,7 +1,7 @@
 ---
 title: Konfigurera hur användare kan interagera med Microsoft Defender Antivirus
-description: Konfigurera hur slutanvändare interagerar med Microsoft Defender Antivirus, vilka aviseringar de ser och om de kan åsidosätta inställningarna.
-keywords: slutpunkt, användare, interaktion, meddelanden, gränssnittslåsningsläge, huvudlöst läge, dölj gränssnitt
+description: Konfigurera hur slutanvändare interagerar med Microsoft Defender Antivirus, vilka meddelanden de ser och om de kan åsidosätta inställningar.
+keywords: slutpunkt, användare, interaktion, meddelanden, nedlåst läge för användargränssnittet, huvudlöst läge, dölj gränssnitt
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -22,7 +22,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52571823"
 ---
-# <a name="configure-end-user-interaction-with-microsoft-defender-antivirus"></a>Konfigurera slutanvändarinteraktion med Microsoft Defender Antivirus
+# <a name="configure-end-user-interaction-with-microsoft-defender-antivirus"></a>Konfigurera slutanvändares interaktion med Microsoft Defender Antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,12 +31,12 @@ ms.locfileid: "52571823"
 
 - [Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Du kan konfigurera hur användare av slutpunkterna i nätverket kan interagera med Microsoft Defender Antivirus. Du kan konfigurera om användarna ser Microsoft Defender Antivirus gränssnittet, vilka meddelanden de ser och om de lokalt kan åsidosätta globalt distribuerade grupprincipinställningar.
+Du kan konfigurera hur användare av slutpunkter i nätverket kan interagera med Microsoft Defender Antivirus. Du kan konfigurera om användarna ska se Microsoft Defender Antivirus, vilka meddelanden de ser och om de kan åsidosätta globala grupprincipinställningar.
 
-Använd följande artiklar för att konfigurera slutanvändarinteraktion med Microsoft Defender Antivirus
+Använd följande artiklar för att konfigurera slutanvändares interaktion med Microsoft Defender Antivirus
 
-- **[Konfigurera meddelanden som visas på slutpunkter](configure-notifications-microsoft-defender-antivirus.md)** Konfigurera och anpassa meddelanden, inklusive text för meddelanden, och meddelanden om omstarter som behövs för reparation.
+- **[Konfigurera meddelanden som visas på slutpunkter](configure-notifications-microsoft-defender-antivirus.md)** Konfigurera och anpassa meddelanden, till exempel text för meddelanden och meddelanden om omstarter som behövs för åtgärd.
 
-- **[Förhindra att användare ser eller interagerar Microsoft Defender Antivirus användargränssnittet](prevent-end-user-interaction-microsoft-defender-antivirus.md)** Dölj **användargränssnittet & virusskydd** från slutanvändare.
+- **[Hindra användare från att se eller interagera Microsoft Defender Antivirus användargränssnittet](prevent-end-user-interaction-microsoft-defender-antivirus.md)** Dölj **användargränssnittet för & skydd mot** virus från slutanvändare.
 
-- **[Förhindra att användare ändrar principinställningar lokalt](configure-local-policy-overrides-microsoft-defender-antivirus.md)** Förhindra (eller tillåt) användare från att åsidosätta principinställningar på sina enskilda slutpunkter.
+- **[Hindra användare från att lokalt ändra principinställningar](configure-local-policy-overrides-microsoft-defender-antivirus.md)** Hindra (eller tillåt) användare från att åsidosätta principinställningar för sina enskilda slutpunkter.

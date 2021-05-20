@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
-description: Lär dig att ange registernycklar för att aktivera modern autentisering för enheter som Microsoft Office 2013 installerat.
+description: Lär dig ange registernycklar för att aktivera modern autentisering för enheter som har Microsoft Office 2013 installerat.
 ms.openlocfilehash: d358cb2ffb4284a51779e5a7c1dc894052b9ebc0
 ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
@@ -45,7 +45,7 @@ Om du vill aktivera modern autentisering för enheter med Windows (till exempel 
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
    
-När du har ställt in registernycklarna kan du ställa Office 2013-enhetsappar för [att använda MFA (Multifactor Authentication)](set-up-multi-factor-authentication.md) med Microsoft 365. 
+När du har angett registernycklarna kan du Office 2013-enhetsprogram till att använda multifaktorautentisering [(MFA)](set-up-multi-factor-authentication.md) med Microsoft 365. 
   
 Om du för närvarande är inloggad med något av klientprogrammen måste du logga ut och logga in igen för att ändringen ska börja gälla. I annat fall är MRU- och roaminginställningarna otillgängliga tills ADAL-identiteten har upprättats.
   
@@ -59,7 +59,7 @@ Du inaktiverar modern autentisering på en enhet genom att ange följande regist
    
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Logga in på Office 2013 med en andra verifieringsmetod](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb) (artikel)
+[Logga in på Office 2013 med en metod med en andra verifiering](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb) (artikel)
 
-[Outlook för lösenord och använder inte modern autentisering för att ansluta till Office 365](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled) (artikel)
+[Outlook uppmanas att ange lösenord och använder inte modern autentisering för att ansluta till Office 365](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled) (artikel)
 

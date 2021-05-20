@@ -21,7 +21,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: Lär dig hur du tar bort en gammal domän Microsoft 365 och flyttar användare och grupper till en annan domän.
+description: Lär dig hur du tar bort en gammal domän från Microsoft 365 och flyttar användare och grupper till en annan domän.
 ms.openlocfilehash: 3586cc8b288b77725c0dd3484629688e98e0a218
 ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
@@ -33,7 +33,7 @@ ms.locfileid: "52572123"
   
  **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
   
-Tar du bort din domän för att du vill lägga till den i en annan Microsoft 365 prenumerationsplan? Eller vill du avbryta din prenumeration? Du kan [ändra ditt abonnemang eller din prenumeration](../../commerce/subscriptions/switch-to-a-different-plan.md) eller [avbryta prenumerationen](../../commerce/subscriptions/cancel-your-subscription.md).
+Tar du bort en domän på grund av att du vill lägga till den i ett annat Microsoft 365-abonnemang? Eller vill du avbryta din prenumeration? Du kan [ändra ditt abonnemang eller din prenumeration](../../commerce/subscriptions/switch-to-a-different-plan.md) eller [avbryta prenumerationen](../../commerce/subscriptions/cancel-your-subscription.md).
   
 ### <a name="step-1-move-users-to-another-domain"></a>Steg 1: Flytta användare till en annan domän
 
@@ -43,13 +43,13 @@ Tar du bort din domän för att du vill lägga till den i en annan Microsoft 365
 
 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrationscentret</a>.
 
-2. Välj **Användare** > **Aktiva användare**.
+2. Välj **Användare** > **Aktiva användare.**
 
-3. Markera rutorna bredvid namnen på alla användare som du vill flytta.
+3. Markera kryssrutorna för alla användare som du vill flytta.
 
-4. Högst upp på sidan och välj sedan Ändra **domäner**.
+4. Högst upp på sidan och välj sedan **Ändra domäner**.
 
-5. Välj **en annan domän i** fönstret Ändra domäner.
+5. Välj **en annan domän** i fönstret Ändra domäner.
 
 Du måste även göra detta för dig själv om du använder den domän som du vill ta bort. När du redigerar domänen för ditt konto måste du logga ut och logga in igen med den nya domänen du har valt.
 
@@ -59,13 +59,13 @@ Du måste även göra detta för dig själv om du använder den domän som du vi
 
 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a>.  
 
-2. Välj **Användare** > **Aktiva användare**.
+2. Välj **Användare** > **Aktiva användare.**
 
-3. Markera rutorna bredvid namnen på alla användare som du vill flytta.
+3. Markera kryssrutorna för alla användare som du vill flytta.
 
-4. Högst upp på sidan väljer du Fler **redigera** > **domäner**.
+4. Högst upp på sidan väljer du **Fler** > **redigera domäner.**
 
-5. Välj **en annan domän i** fönstret Redigera domäner.
+5. Välj en **annan domän** i fönstret Redigera domäner.
   
 Du måste även göra detta för dig själv om du använder den domän som du vill ta bort. När du redigerar domänen för ditt konto måste du logga ut och logga in igen med den nya domänen du har valt.
 
@@ -75,13 +75,13 @@ Du måste även göra detta för dig själv om du använder den domän som du vi
 
 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a>.  
 
-2. Välj **Användare** > **Aktiva användare**.
+2. Välj **Användare** > **Aktiva användare.**
 
-3. Markera rutorna bredvid namnen på alla användare som du vill flytta.
+3. Markera kryssrutorna för alla användare som du vill flytta.
 
-4. Högst upp på sidan väljer du Fler **redigera** > **domäner**.
+4. Högst upp på sidan väljer du **Fler** > **redigera domäner.**
 
-5. Välj **en annan domän i** fönstret Redigera domäner.
+5. Välj en **annan domän** i fönstret Redigera domäner.
   
 Du måste även göra detta för dig själv om du använder den domän som du vill ta bort. När du redigerar domänen för ditt konto måste du logga ut och logga in igen med den nya domänen du har valt.
 
@@ -95,11 +95,11 @@ Du måste även göra detta för dig själv om du använder den domän som du vi
 
 2. Gå  till \> **Användare aktiva** användare och välj ditt konto i listan.
 
-3. Välj **Hantera** användarnamn på **fliken Konto och** välj sedan en annan domän.
+3. På fliken **Konto** väljer du **Hantera användarnamn** och väljer sedan en annan domän.
   
-4. Högst upp väljer du ditt kontonamn och väljer sedan **Logga ut**.
+4. Högst upp väljer du ditt kontonamn och sedan Logga **ut**.
 
-5. Logga in med den nya domänen och samma lösenord.
+5. Logga in med den nya domänen och ditt lösenord.
 
 Du kan också använda PowerShell för att flytta användare till en annan domän. Se [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) för mer information. Om du vill ange standarddomänen använder du [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
 
@@ -109,13 +109,13 @@ Du kan också använda PowerShell för att flytta användare till en annan domä
 
 1. Gå  till \> **Användare aktiva** användare och välj ditt namn i listan.
 
-2. I avsnittet **Användarnamn/E-post** väljer du **Redigera** och väljer sedan en annan domän.
+2. I avsnittet **Användarnamn/e-post** **väljer du** Redigera och väljer sedan en annan domän.
 
-3. Välj **Ange som primär** > **Spara** > **stängning**.
+3. Välj **Ange som primär** > **Spara** > **stäng.**
   
-4. Högst upp väljer du ditt kontonamn och väljer sedan **Logga ut**.
+4. Högst upp väljer du ditt kontonamn och sedan Logga **ut**.
 
-5. Logga in med den nya domänen och samma lösenord.
+5. Logga in med den nya domänen och ditt lösenord.
 
 Du kan också använda PowerShell för att flytta användare till en annan domän. Se [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) för mer information. Om du vill ange standarddomänen använder du [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
 
@@ -125,13 +125,13 @@ Du kan också använda PowerShell för att flytta användare till en annan domä
 
 1. Gå  till \> **Användare aktiva** användare och välj ditt namn i listan.
 
-2. I avsnittet **Användarnamn/E-post** väljer du **Redigera** och väljer sedan en annan domän.
+2. I avsnittet **Användarnamn/e-post** **väljer du** Redigera och väljer sedan en annan domän.
 
-3. Välj **Ange som primär** > **Spara** > **stängning**.
+3. Välj **Ange som primär** > **Spara** > **stäng.**
   
-4. Högst upp väljer du ditt kontonamn och väljer sedan **Logga ut**.
+4. Högst upp väljer du ditt kontonamn och sedan Logga **ut**.
 
-5. Logga in med den nya domänen och samma lösenord.
+5. Logga in med den nya domänen och ditt lösenord.
 
 Du kan också använda PowerShell för att flytta användare till en annan domän. Se [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) för mer information. Om du vill ange standarddomänen använder du [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
 
@@ -141,11 +141,11 @@ Du kan också använda PowerShell för att flytta användare till en annan domä
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan Gruppera  grupper i \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">administrationscentret.</a>
+1. Gå till sidan Grupper i **administrationscentret.** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a>
   
-2. Markera gruppnamnet och välj Redigera på **fliken Allmänt** under **E-postadress,** **Primär**.
+2. Markera gruppens namn och välj sedan Redigera **på fliken** Allmänt under **E-postadress,** **Primär**.
 
-3. Använd listrutan för att välja en annan domän.
+3. Välj en annan domän i listrutan.
 
 4. Välj **Spara** och sedan **Stäng**. Upprepa proceduren för alla grupper eller distributionslistor som är kopplade till den domän som du försöker ta bort.
 
@@ -153,11 +153,11 @@ Du kan också använda PowerShell för att flytta användare till en annan domä
 
 ::: moniker range="o365-germany"
 
-1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">sidan Gruppera</a>grupper i **administrationscentret.** > 
+1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">sidan Grupper</a>i  >  administrationscentret.
 
-2. Markera gruppnamnet och välj sedan **Redigera** bredvid **Namn**.
+2. Markera gruppens namn och välj sedan **Redigera** bredvid **Namn.**
 
-3. Använd listrutan för att välja en annan domän.
+3. Välj en annan domän i listrutan.
 
 4. Välj **Spara** och sedan **Stäng**. Upprepa proceduren för alla grupper eller distributionslistor som är kopplade till den domän som du försöker ta bort.
 
@@ -165,11 +165,11 @@ Du kan också använda PowerShell för att flytta användare till en annan domä
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">sidan Gruppera</a>grupper i **administrationscentret.** > 
+1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">sidan Grupper</a>i  >  administrationscentret.
 
-2. Markera gruppnamnet och välj sedan **Redigera** bredvid **Namn**.
+2. Markera gruppens namn och välj sedan **Redigera** bredvid **Namn.**
 
-3. Använd listrutan för att välja en annan domän.
+3. Välj en annan domän i listrutan.
 
 4. Välj **Spara** och sedan **Stäng**. Upprepa proceduren för alla grupper eller distributionslistor som är kopplade till den domän som du försöker ta bort.
 
@@ -185,25 +185,25 @@ Du kan också använda PowerShell för att flytta användare till en annan domä
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan Installationsdomäner **i** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **sidan** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Konfigurera</a> domäner.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan Installationsdomäner **i** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **sidan** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Konfigurera</a> domäner.
 
 ::: moniker-end
   
 2. På sidan **Domäner** väljer du den domän som du vill ta bort.
 
-3. Välj Ta bort i den högra **rutan.**
+3. Välj Ta bort i det högra **fönstret.**
 
-4. Följ ytterligare uppmaningar och välj sedan **Stäng**.
+4. Följ eventuella ytterligare uppmaningar och välj sedan **Stäng**.
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>Hur länge dröjer det innan en domän tas bort?
 
-Det kan ta så lite som 5 minuter för Microsoft 365 att ta bort en domän om den inte refereras på många platser som säkerhetsgrupper, distributionslistor, användare och Microsoft 365 grupper. Om det finns många referenser till domänen kan det ta flera timmar (ett dygn) innan domänen tas bort.
+Det kan ta så lite som 5 minuter för Microsoft 365 att ta bort en domän om den inte finns med på många platser, till exempel säkerhetsgrupper, distributionslistor, användare Microsoft 365 säkerhetsgrupper. Om det finns många referenser till domänen kan det ta flera timmar (ett dygn) innan domänen tas bort.
   
 Om du har hundratals eller tusentals användare använder du PowerShell och letar upp alla användare och flyttar dem till en annan domän. Annars kan det hända att några användare missas i gränssnittet och när du sedan försöker ta bort domänen så går det inte och du kommer inte att veta varför. Mer information finns i [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Om du vill ange standarddomänen använder du [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
   
@@ -212,7 +212,7 @@ Om du har hundratals eller tusentals användare använder du PowerShell och leta
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> Du kan inte ta bort domänen [".onmicrosoft.com"](../setup/domains-faq.yml) från ditt konto. När du tar bort en domän återgår användarkonton till adressen ".onmicrosoft.com" som primär SMTP/UserprincipalName.
+> Du kan inte ta bort domänen [".onmicrosoft.com"](../setup/domains-faq.yml) från ditt konto. När du tar bort en domän återgår användarkontona till ".onmicrosoft.com"-adressen som primärt SMTP/UserprincipalName.
   
 Fungerar det fortfarande inte? Domänen kan behöva tas bort manuellt. [Ring oss](../../business-video/get-help-support.md) så kan vi hjälpa dig med det!
   

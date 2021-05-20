@@ -1,6 +1,6 @@
 ---
-title: Platshållarämne för att skapa mappen i huvud som ska tas bort
-description: Platshållarämne för att skapa mappen i huvud som ska tas bort
+title: Platshållarämne för att skapa mappen i master-to-deletes
+description: Platshållarämne för att skapa mappen i master-to-deletes
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -29,5 +29,5 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52572826"
 ---
-# <a name="placeholder-topic-to-create-the-folder-in-master-to-be-deleted"></a>Platshållarämne för att skapa mappen i huvud som ska tas bort
+# <a name="placeholder-topic-to-create-the-folder-in-master-to-be-deleted"></a>Platshållarämne för att skapa mappen i master-to-deletes
 

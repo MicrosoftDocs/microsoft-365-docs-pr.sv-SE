@@ -1,6 +1,6 @@
 ---
-title: Uppdatera incident-API
-description: Läs om hur du uppdaterar incidenter med Microsoft 365 Defender API
+title: Api för uppdatering av incident
+description: Lär dig hur du uppdaterar incidenter med Microsoft 365 Defender API
 keywords: uppdatering, api, incident
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52571787"
 ---
-# <a name="update-incident-api"></a>Uppdatera incident-API
+# <a name="update-incident-api"></a>Api för uppdatering av incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,26 +40,26 @@ ms.locfileid: "52571787"
 
 ## <a name="api-description"></a>API-beskrivning
 
-Uppdaterar egenskaper för befintlig incident. Uppdatable egenskaper är: ```status``` , , , , och ```determination``` ```classification``` ```assignedTo``` ```tags``` ```comments``` .
+Uppdaterar egenskaper för befintliga incidenter. Egenskaper som kan uppdateras är: ```status``` , , , , och ```determination``` ```classification``` ```assignedTo``` ```tags``` ```comments``` .
 
-### <a name="quotas-resource-allocation-and-other-constraints"></a>Kvoter, resursallokering och andra begränsningar
+### <a name="quotas-resource-allocation-and-other-constraints"></a>Kvoter, resurstilldelning och andra villkor
 
-1. Du kan ringa upp till 50 samtal per minut eller 1500 samtal per timme innan du når begränsningströskeln.
-2. Du kan bara ange `determination` egenskapen om `classification` den är inställd på TruePositive.
+1. Du kan ringa upp till 50 samtal per minut eller 1 500 samtal per timme innan du kommer till begränsningströskeln.
+2. Du kan bara ange `determination` egenskapen om är Inställd på `classification` TruePositive.
 
-Om din begäran är strypt returneras en `429` svarskod. Svarstexten anger när du kan börja ringa nya samtal.
+Om din begäran begränsas returneras en `429` svarskod. Svarstexten anger när du kan börja ringa nya samtal.
 
 ## <a name="permissions"></a>Behörigheter
 
-En av följande behörigheter krävs för att anropa det här API:et. Mer information om hur du väljer behörigheter finns i Komma [åt Microsoft 365 Defender API:er](api-access.md).
+En av följande behörigheter krävs för att anropa detta API. Mer information, inklusive hur du väljer behörigheter, finns i [Komma åt Microsoft 365 Defender-API:er.](api-access.md)
 
-Typ av behörighet | Behörighet | Namn på behörighetsvisning
+Behörighetstyp | Behörighet | Visningsnamn för behörighet
 -|-|-
 Program | Incident.ReadWrite.All | Läsa och skriva alla incidenter
-Delegerat (arbets- eller skolkonto) | Incident.ReadWrite (på plats) | Läsa och skriva incidenter
+Delegerat (arbets- eller skolkonto) | Incident.ReadWrite | Läs- och skrivincidenter
 
 > [!NOTE]
-> När du skaffar en token med användarautentiseringsuppgifter måste användaren ha behörighet att uppdatera incidenten i portalen.
+> När användaren skaffar en token med användarautentiseringsuppgifter måste han eller hon ha behörighet att uppdatera incidenten i portalen.
 
 ## <a name="http-request"></a>HTTP-begäran
 
@@ -67,33 +67,33 @@ Delegerat (arbets- eller skolkonto) | Incident.ReadWrite (på plats) | Läsa och
 PATCH /api/incidents/{id}
 ```
 
-## <a name="request-headers"></a>Begär rubriker
+## <a name="request-headers"></a>Begäran om rubriker
 
 Namn | Typ | Beskrivning
 -|-|-
-tillstånd | Sträng | Bärare {token}. **Obligatoriskt**.
-Innehållstyp | Sträng | ansökan/json. **Obligatoriskt**.
+Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
+Innehållstyp | Sträng | application/json. **Obligatoriskt.**
 
-## <a name="request-body"></a>Begär brödtext
+## <a name="request-body"></a>Begärans brödtext
 
-Ange värdena för de fält som ska uppdateras i förfrågningstexten. Befintliga egenskaper som inte ingår i begärandetexten behåller sina värden, såvida de inte måste beräknas om på grund av ändringar i relaterade värden. För bästa prestanda bör du utelämna befintliga värden som inte har ändrats.
+Ange värden för fälten som ska uppdateras i brödtexten för begäran. Befintliga egenskaper som inte finns i begärans brödtext bibehåller sina värden, såvida de inte behöver beräknas om på grund av ändringar av relaterade värden. För bästa prestanda bör du utelämna befintliga värden som inte har ändrats.
 
 Egenskap | Typ | Beskrivning
 -|-|-
 status | Uppräkning | Anger incidentens aktuella status. Möjliga värden är: ```Active``` ```Resolved``` , och ```Redirected``` .
-tilldeladTill | sträng | Ägaren till incidenten.
-klassificering | Uppräkning | Specifikation av incidenten. Möjliga värden är: ```Unknown``` , ```FalsePositive``` ```TruePositive``` .
-beslutsamhet | Uppräkning | Anger bestämningen av incidenten. Möjliga värden är: ```NotAvailable``` , , , , , ```Apt``` ```Malware``` ```SecurityPersonnel``` ```SecurityTesting``` ```UnwantedSoftware``` . ```Other```
-Taggar | stränglista | Lista över incidenttaggar.
+assignedTo | sträng | Ägaren till händelsen.
+klassificering | Uppräkning | Specifikation för incidenten. Möjliga värden är: ```Unknown``` , ```FalsePositive``` , ```TruePositive``` .
+determination | Uppräkning | Anger incidentens avgörande. Möjliga värden är: ```NotAvailable``` , , , , , , ```Apt``` ```Malware``` ```SecurityPersonnel``` ```SecurityTesting``` ```UnwantedSoftware``` ```Other``` .
+taggar | stränglista | Lista över incidenttaggar.
 kommentar | sträng | Kommentar som ska läggas till i incidenten.
 
-## <a name="response"></a>svar
+## <a name="response"></a>Svar
 
-Om den här metoden lyckas returneras `200 OK` . Svarstexten innehåller incidententiteten med uppdaterade egenskaper. Om en incident med det angivna ID:t inte hittades returneras metoden `404 Not Found` .
+Om det lyckas returnerar den här metoden `200 OK` . Svarstexten innehåller incidententitet med uppdaterade egenskaper. Om en incident med det angivna ID:t inte hittas returnerar metoden `404 Not Found` .
 
 ## <a name="example"></a>Exempel
 
-**begäran**
+**Begäran**
 
 Här är ett exempel på begäran.
 
@@ -101,7 +101,7 @@ Här är ett exempel på begäran.
  PATCH https://api.security.microsoft.com/api/incidents/{id}
 ```
 
-**svar**
+**Svar**
 
 ```json
 {
@@ -127,8 +127,8 @@ Här är ett exempel på begäran.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Komma åt Microsoft 365 Defender API:erna](api-access.md)
-- [Lär dig mer om API-gränser och licensiering](api-terms.md)
+- [Komma åt Microsoft 365 Defender-API:er](api-access.md)
+- [Läs mer om API-begränsningar och licensiering](api-terms.md)
 - [Förstå felkoder](api-error-codes.md)
 - [API:er för tillbud](api-incident.md)
 - [Lista incidenter](api-list-incidents.md)

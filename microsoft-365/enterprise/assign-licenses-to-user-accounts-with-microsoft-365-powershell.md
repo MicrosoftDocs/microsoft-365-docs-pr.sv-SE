@@ -20,7 +20,7 @@ ms.custom:
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
-description: I den här artikeln får du lära dig hur du använder PowerShell för att tilldela Microsoft 365 licens till olicensierade användare.
+description: I den här artikeln lär du dig hur du använder PowerShell för att tilldela en Microsoft 365 licens till ej licensierade användare.
 ms.openlocfilehash: 6d7e005aff018394810082de57c68ea289057f8e
 ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
@@ -32,40 +32,40 @@ ms.locfileid: "52572627"
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Användare kan inte använda några Microsoft 365 förrän deras konto har tilldelats en licens från en licensplan. Du kan använda PowerShell för att snabbt tilldela licenser till olicensierade konton. 
+Användarna kan inte använda några Microsoft 365 förrän deras konto har tilldelats en licens från en licensplan. Du kan använda PowerShell för att snabbt tilldela licenser till olicensierade konton. 
 
-Användarkonton måste först tilldelas en plats. Att ange en plats är en obligatorisk del av att skapa ett nytt användarkonto [i Microsoft 365 administrationscenter](../admin/add-users/add-users.md). 
+Användarkonton måste först tilldelas en plats. Att ange en plats är en nödvändig del av att skapa ett nytt användarkonto [Microsoft 365 administrationscentret.](../admin/add-users/add-users.md) 
 
-Konton som synkroniserats från dina lokala Active Directory Domain Services har som standard ingen plats angiven. Du kan konfigurera en plats för dessa konton från:
+Konton som synkroniseras från din lokala Active Directory Domain Services har inte en angiven plats som standard. Du kan konfigurera en plats för dessa konton från:
 
 - Administrationscentret för Microsoft 365
  - [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
- - Azure [Portal](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) **(Active**  >  **Directory-användare** > användarkonto > **profilkontaktinformation**  >    >  **land eller region**).
+ - [Azure-portalen](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) **(Active**  >  **Directory-användare >** användarkonto > **land** eller region med  >    >  **profilkontaktinformation).**
 
 >[!Note]
->[Lär dig hur du tilldelar licenser till användarkonton](../admin/manage/assign-licenses-to-users.md) Microsoft 365 administrationscentret. En lista över ytterligare resurser finns i [Hantera användare och grupper](../admin/add-users/index.yml).
+>[Läs om hur du tilldelar licenser till](../admin/manage/assign-licenses-to-users.md) användarkonton Microsoft 365 administrationscentret. En lista över ytterligare resurser finns i [Hantera användare och grupper.](../admin/add-users/index.yml)
 >
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använd Azure Active Directory PowerShell för Graph-modulen
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för Graph modul
 
-Anslut först [till din Microsoft 365 klient .](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Börja med [att ansluta till Microsoft 365 klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   
 
-Lista sedan licensplanerna för din klient med det här kommandot.
+Lista sedan licensplaner för din klientorganisation med det här kommandot.
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-Hämta sedan inloggningsnamnet för det konto som du vill lägga till en licens till, även kallat UPN (User Principal Name).
+Hämta sedan inloggningsnamnet för det konto som du vill lägga till en licens för, även kallat användarens huvudnamn (UPN).
 
-Se sedan till att användarkontot har en användningsplats tilldelad.
+Kontrollera sedan att användarkontot har en tilldelad användningsplats.
 
 ```powershell
 Get-AzureADUser -ObjectID <user sign-in name (UPN)> | Select DisplayName, UsageLocation
 ```
 
-Om ingen användningsplats har tilldelats kan du tilldela en med följande kommandon:
+Om det inte finns någon tilldelad användningsplats kan du tilldela ett med följande kommandon:
 
 ```powershell
 $userUPN="<user sign-in name (UPN)>"
@@ -73,7 +73,7 @@ $userLoc="<ISO 3166-1 alpha-2 country code>"
 Set-AzureADUser -ObjectID $userUPN -UsageLocation $userLoc
 ```
 
-Slutligen anger du användarens inloggningsnamn och licensplansnamn och kör dessa kommandon.
+Slutligen anger du användarens inloggningsnamn och licensplansnamn och kör kommandona.
 
 ```powershell
 $userUPN="<user sign-in name (UPN)>"
@@ -85,33 +85,33 @@ $LicensesToAssign.AddLicenses = $License
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Använd Microsoft Azure Active Directory modulen för Windows PowerShell
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Använda Microsoft Azure Active Directory för Windows PowerShell
 
-Observera att vi kommer att börja deprecate denna modul när funktionaliteten i denna modul är tillgänglig [i den nyare Azure Active Directory PowerShell för Graph modul.](/powershell/azuread/v2/azureactivedirectory) Vi rekommenderar kunder som skapar nya PowerShell-skript att använda den nyare modulen i stället för den här modulen.
+Observera att vi börjar använda den här modulen när funktionen i den här modulen är tillgänglig i den nyare [Azure Active Directory PowerShell för Graph.](/powershell/azuread/v2/azureactivedirectory) Vi rekommenderar kunder som skapar nya PowerShell-skript att använda den nya modulen i stället för den här modulen.
 
-Anslut först [till din Microsoft 365 klient .](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Börja med [att ansluta till Microsoft 365 klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
-Kör kommandot `Get-MsolAccountSku` för att visa tillgängliga licensplaner och antalet tillgängliga licenser i varje plan i organisationen. Antalet tillgängliga licenser i varje plan är **ActiveUnits**  -  **WarningUnits**  -  **ConsumedUnits**. Mer information om licensplaner, licenser och tjänster finns i [Visa licenser och tjänster med PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
+Kör kommandot `Get-MsolAccountSku` för att visa tillgängliga licensabonnemang och antalet tillgängliga licenser i varje abonnemang i organisationen. Antalet tillgängliga licenser i varje abonnemang är **ActiveUnits**  -  **WarningUnits**  -  **ConsumedUnits.** Mer information om licensplaner, licenser och tjänster finns i [Visa licenser och tjänster med PowerShell.](view-licenses-and-services-with-microsoft-365-powershell.md)
 
 >[!Note]
 >PowerShell Core stöder inte Microsoft Azure Active Directory-modul för Windows PowerShell-modulen och-cmdlets med **MSOL** i namnet. Om du vill fortsätta använda dessa cmdlets måste du köra dem från Windows PowerShell.
 >
 
-Om du vill hitta de olicensierade kontona i organisationen kör du det här kommandot.
+Kör det här kommandot för att hitta olicensierade konton i organisationen.
 
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
 
-Du kan bara tilldela licenser till användarkonton som har **egenskapen UsageLocation** inställd på en giltig ISO 3166-1 alpha-2-landskod. Till exempel USA för Förenta staterna och FR för Frankrike. Vissa Microsoft 365 tjänster är inte tillgängliga i vissa länder. Mer information finns i [Om licensbegränsningar](https://go.microsoft.com/fwlink/p/?LinkId=691730).
+Du kan bara tilldela licenser till användarkonton som har egenskapen **UsageLocation** inställd på en giltig landskod i ISO 3166-1 alfa-2. Till exempel USA för USA och FR för Frankrike. Vissa Microsoft 365 tjänster är inte tillgängliga i vissa länder. Mer information finns i [Om licensbegränsningar](https://go.microsoft.com/fwlink/p/?LinkId=691730).
     
-Om du vill söka efter konton som inte har ett **UsageLocation-värde** kör du det här kommandot.
+Om du vill hitta konton som inte har ett **UsageLocation-värde** kör du det här kommandot.
 
 ```powershell
 Get-MsolUser -All | where {$_.UsageLocation -eq $null}
 ```
 
-Om du vill **ange värdet UsageLocation** på ett konto kör du det här kommandot.
+Kör det här **kommandot om** du vill ange värdet Användningsbeläggning för ett konto.
 
 ```powershell
 Set-MsolUser -UserPrincipalName "<Account>" -UsageLocation <CountryCode>
@@ -123,7 +123,7 @@ Till exempel:
 Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US
 ```
     
-Om du använder **cmdleten Get-MsolUser** utan att använda **parametern -All** returneras bara de första 500 kontona.
+Om du använder **cmdlet:en Get-MsolUser** utan att använda parametern **-All** returneras bara de första 500 kontona.
 
 ### <a name="assigning-licenses-to-user-accounts"></a>Tilldela licenser till användarkonton
     
@@ -133,20 +133,20 @@ Om du vill tilldela en licens till en användare använder du följande kommando
 Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 ```
 
-I det här exemplet tilldelas en licens från **licensplanen litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) till den olicensierade användaren **litwareinc.com: \@**
+I det här exemplet tilldelas en licens från licensplanen **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) till den **olicensierade användaren belindan \@ litwareinc.com:**
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
-Om du vill tilldela en licens till alla olicensierade användare kör du det här kommandot.
+Kör det här kommandot om du vill tilldela en licens till alla olicensierade användare.
   
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>] | Set-MsolUserLicense -AddLicenses "<AccountSkuId>"
 ```
   
 >[!Note]
->Du kan inte tilldela flera licenser till en användare från samma licensplan. Om du inte har tillräckligt med tillgängliga licenser tilldelas licenserna till användare i den ordning de returneras av **Cmdleten Get-MsolUser** tills de tillgängliga licenserna tar.
+>Du kan inte tilldela flera licenser till en användare från samma licensplan. Om du inte har tillräckligt många tillgängliga licenser tilldelas licenserna till användare i den ordning som de returneras av **cmdlet:en Get-MsolUser** tills de tillgängliga licenserna tar slut.
 >
 
 I det här exemplet tilldelas licenser från **licensplanen litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) till alla olicensierade användare:
@@ -155,19 +155,19 @@ I det här exemplet tilldelas licenser från **licensplanen litwareinc:ENTERPRIS
 Get-MsolUser -All -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
-I det här exemplet tilldelas samma licenser till olicensierade användare på försäljningsavdelningen i USA:
+I det här exemplet tilldelas samma licenser till olicensierade användare i försäljningsavdelningen i USA:
   
 ```powershell
 Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
   
-## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a>Flytta en användare till en annan prenumeration (licensplan) med Azure Active Directory PowerShell för Graph-modulen
+## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a>Flytta en användare till en annan prenumeration (licensplan) med Azure Active Directory PowerShell för Graph prenumerationsmodul
 
-Anslut först [till din Microsoft 365 klient .](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Börja med [att ansluta till Microsoft 365 klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   
-Hämta sedan inloggningsnamnet för det användarkonto som du vill byta prenumerationer för, även kallat UPN (User Principal Name).
+Hämta sedan inloggningsnamnet för användarkontot som du vill byta prenumeration för, det vill säga användarens huvudnamn (UPN).
 
-Lista sedan prenumerationerna (licensplanerna) för din klient med det här kommandot.
+Lista sedan prenumerationerna (licensabonnemangen) för din klientorganisation med det här kommandot.
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
@@ -182,9 +182,9 @@ $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty Assigned
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
 ```
 
-Identifiera den prenumeration som användaren för närvarande har (FRÅN-prenumerationen) och prenumerationen som användaren flyttar till (TILL-prenumerationen).
+Identifiera prenumerationen som användaren har för närvarande (FROM-prenumerationen) och den prenumeration som användaren flyttar till (TO-prenumerationen).
 
-Slutligen anger du till- och FRÅN-prenumerationsnamnen (SKU-artikelnummer) och kör dessa kommandon.
+Slutligen anger du TILL- och FROM-prenumerationsnamn (SKU-artikelnummer) och kör de här kommandona.
 
 ```powershell
 $subscriptionFrom="<SKU part number of the current subscription>"
@@ -205,7 +205,7 @@ $licenses.AddLicenses = $License
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
 ```
 
-Du kan verifiera ändringen av prenumerationen för användarkontot med dessa kommandon.
+Du kan verifiera ändringen i prenumerationen för användarkontot med dessa kommandon.
 
 ```powershell
 $licensePlanList = Get-AzureADSubscribedSku

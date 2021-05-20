@@ -1,8 +1,8 @@
 ---
 title: Få åtkomst till Microsoft Defender för Endpoint API
 ms.reviewer: ''
-description: Lär dig hur du kan använda API:er för att automatisera arbetsflöden och innovera baserat på Microsoft Defender för slutpunktsfunktioner
-keywords: apis, api, wdatp, open api, microsoft defender för endpoint api, microsoft defender atp, public api, stöds apis, varningar, enhet, användare, domän, ip, fil, avancerad jakt, fråga
+description: Lär dig hur du kan använda API:er för att automatisera arbetsflöden och ny information baserat på Microsoft Defender för slutpunktsfunktioner
+keywords: apis, api, wdatp, open api, microsoft defender för endpoint api, microsoft defender atp, public api, apis som stöds, aviseringar, enhet, användare, domän, ip, fil, avancerad sökning, fråga
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -35,51 +35,51 @@ ms.locfileid: "52571835"
 **Gäller för:** 
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Vill du uppleva Microsoft Defender för Endpoint? [Registrera dig för en gratis provperiod.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 
-Defender for Endpoint exponerar mycket av sina data och åtgärder via en uppsättning programmatiska API:er. Dessa API:er gör att du kan automatisera arbetsflöden och förnya baserat på Defender för Endpoint-funktioner. API-åtkomsten kräver OAuth2.0-autentisering. Mer information finns i [OAuth 2.0 Auktoriseringskod Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Defender för Slutpunkt visar mycket av dess data och åtgärder via en uppsättning programmässiga API:er. De HÄR API:erna gör det möjligt att automatisera arbetsflöden och nya funktioner baserat på Defender för slutpunktsfunktioner. API-åtkomst kräver OAuth2.0-autentisering. Mer information finns i [OAuth 2.0 auktoriseringskod för Flow.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 
-Titta på den här videon för en snabb översikt över Defender for Endpoints API:er. 
+Titta på den här videon för en snabb överblick över Defender för Endpoints API:er. 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M]
 
-I allmänhet måste du vidta följande steg för att använda API: erna:
+I allmänhet måste du vidta följande steg för att använda API:er:
 - Skapa ett [AAD-program](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)
 - Hämta en åtkomsttoken med det här programmet
-- Använda token för att komma åt Defender for Endpoint API
+- Använda token för att komma åt Defender för Endpoint API
 
 
-Du kan komma åt Defender för slutpunkts-API:et **med programkontext** eller **användarkontext**.
+Du kan komma åt Defender för Endpoint API med **programkontext** eller **användarkontext.**
 
-- **Programkontext: (rekommenderas)** <br>
-    Används av appar som körs utan att en inloggad användare är närvarande. till exempel appar som körs som bakgrundstjänster eller demoner.
+- **Programkontext: (Rekommenderas)** <br>
+    Används av appar som körs utan att en inloggad användare finns. Exempel: appar som körs som bakgrundstjänster eller som bakgrundstjänster.
 
-    Steg som måste vidtas för att komma åt Defender for Endpoint API med programkontext:
+    Steg som måste vidtas för att komma åt Defender för Endpoint API med programkontext:
 
   1. Skapa ett AAD-webbprogram.
-  2. Tilldela önskad behörighet till programmet, till exempel "Läs aviseringar", "Isolera datorer". 
+  2. Tilldela önskat tillstånd till programmet, till exempel "Läsaviseringar", "Isolera maskiner". 
   3. Skapa en nyckel för det här programmet.
-  4. Hämta token med hjälp av programmet med nyckeln.
-  5. Använda token för att komma åt MICROSOFT Defender för Endpoint API
+  4. Hämta token genom att använda programmet med dess nyckel.
+  5. Använda token för att få åtkomst till Microsoft Defender för Endpoint API
 
-     Mer information finns i [Få åtkomst med programkontext .](exposed-apis-create-app-webapp.md)
+     Mer information finns i Få [åtkomst med programmets kontext.](exposed-apis-create-app-webapp.md)
 
 
 - **Användarkontext:** <br>
-    Används för att utföra åtgärder i API:et för en användares räkning.
+    Används för att utföra åtgärder i API:t för en användares räkning.
 
-    Steg att vidta för att komma åt Defender for Endpoint API med programkontext:
+    Åtgärder att vidta för att komma åt Defender för Endpoint API med programkontext:
 
-  1. Skapa AAD Native-Application.
-  2. Tilldela önskad behörighet till programmet, t.ex. "Läs varningar", "Isolera maskiner" etc. 
-  3. Hämta token med hjälp av programmet med användarautentiseringsuppgifter.
-  4. Använda token för att komma åt MICROSOFT Defender för Endpoint API
+  1. Skapa det ursprungliga AAD-programmet.
+  2. Tilldela önskat tillstånd till programmet, t.ex. "Läsaviseringar", "Isolera maskiner" osv. 
+  3. Hämta token genom att använda programmet med användaruppgifter.
+  4. Använda token för att få åtkomst till Microsoft Defender för Endpoint API
 
-     Mer information finns i [Få åtkomst med användarkontext .](exposed-apis-create-app-nativeapp.md)
+     Mer information finns i Få [åtkomst med användarkontext.](exposed-apis-create-app-nativeapp.md)
 
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Microsoft Defender för API:er för slutpunkter](exposed-apis-list.md)
-- [Komma åt Microsoft Defender för slutpunkt med programkontext](exposed-apis-create-app-webapp.md)
-- [Komma åt Microsoft Defender för slutpunkt med användarkontext](exposed-apis-create-app-nativeapp.md)
+- [Microsoft Defender för slutpunkts-API:er](exposed-apis-list.md)
+- [Access Microsoft Defender för slutpunkt med programkontext](exposed-apis-create-app-webapp.md)
+- [Använda Microsoft Defender för slutpunkt med användarkontext](exposed-apis-create-app-nativeapp.md)
