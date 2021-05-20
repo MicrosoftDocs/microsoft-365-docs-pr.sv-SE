@@ -245,6 +245,10 @@
               href: dlp-chrome-learn-about.md
             - name: Lär dig om instrumentpanelen för dataförlustskyddsvarningar
               href: dlp-alerts-dashboard-learn.md
+        - name: Abonnemang för DLP
+          items:
+            - name: Abonnemang för dataförlustskydd
+              href: dlp-overview-plan-for-dlp.md
         - name: Kom igång med DLP
           items:
             - name: Kom igång med DLP-standardprincipen
