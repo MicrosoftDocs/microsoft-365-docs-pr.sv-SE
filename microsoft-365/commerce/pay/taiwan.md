@@ -1,34 +1,35 @@
 ---
 title: Betalningsinformation för Taiwan
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Lär dig vart du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4c5a81f31b4dbda42e70135014a61ab77690e8f3
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 0bf7e66fbd6bb56fa4185bc53e1c5dab0eb46bfb
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272774"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537769"
 ---
-# <a name="payment-information-for-taiwan"></a><span data-ttu-id="ec855-103">Betalningsinformation för Taiwan</span><span class="sxs-lookup"><span data-stu-id="ec855-103">Payment information for Taiwan</span></span>
+# <a name="payment-information-for-taiwan"></a><span data-ttu-id="47de0-103">Betalningsinformation för Taiwan</span><span class="sxs-lookup"><span data-stu-id="47de0-103">Payment information for Taiwan</span></span>
 
-<span data-ttu-id="ec855-104">[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="ec855-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span> 
+<span data-ttu-id="47de0-104">[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="47de0-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="ec855-105">Betala i N.T.</span><span class="sxs-lookup"><span data-stu-id="ec855-105">Please pay in N.T.</span></span> <span data-ttu-id="ec855-106">Endast dollar och se fakturanumret som referens vid betalning.</span><span class="sxs-lookup"><span data-stu-id="ec855-106">Dollars only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="47de0-105">Betala i N.T.</span><span class="sxs-lookup"><span data-stu-id="47de0-105">Please pay in N.T.</span></span> <span data-ttu-id="47de0-106">Endast dollar och se fakturanumret som referens vid betalning.</span><span class="sxs-lookup"><span data-stu-id="47de0-106">Dollars only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="ec855-107">Elektronisk betalningsöverföring</span><span class="sxs-lookup"><span data-stu-id="ec855-107">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="47de0-107">Elektronisk betalningsöverföring</span><span class="sxs-lookup"><span data-stu-id="47de0-107">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="ec855-108">**Mottagarbank:** CITIBANK TAIWAN LIMITED</span><span class="sxs-lookup"><span data-stu-id="ec855-108">**Beneficiary Bank:** CITIBANK TAIWAN LIMITED</span></span>  
-<span data-ttu-id="ec855-109">**Bankkod och filialkod:** 0210018</span><span class="sxs-lookup"><span data-stu-id="ec855-109">**Bank Code and Branch Code:** 0210018</span></span>  
-<span data-ttu-id="ec855-110">**SWIFT-kod:** CITITWTX</span><span class="sxs-lookup"><span data-stu-id="ec855-110">**SWIFT Code:** CITITWTX</span></span>  
-<span data-ttu-id="ec855-111">**Kontonummer:** 5038946139</span><span class="sxs-lookup"><span data-stu-id="ec855-111">**Account Number:** 5038946139</span></span>  
-<span data-ttu-id="ec855-112">**Kontonamn:** MICROSOFT TAIWAN CORPORATION</span><span class="sxs-lookup"><span data-stu-id="ec855-112">**Account Name:** MICROSOFT TAIWAN CORPORATION</span></span>    
+<span data-ttu-id="47de0-108">**Mottagarbank:** CITIBANK TAIWAN LIMITED</span><span class="sxs-lookup"><span data-stu-id="47de0-108">**Beneficiary Bank:** CITIBANK TAIWAN LIMITED</span></span>  
+<span data-ttu-id="47de0-109">**Bankkod och filialkod:** 0210018</span><span class="sxs-lookup"><span data-stu-id="47de0-109">**Bank Code and Branch Code:** 0210018</span></span>  
+<span data-ttu-id="47de0-110">**SWIFT-kod:** CITITWTX</span><span class="sxs-lookup"><span data-stu-id="47de0-110">**SWIFT Code:** CITITWTX</span></span>  
+<span data-ttu-id="47de0-111">**Kontonummer:** 5038946139</span><span class="sxs-lookup"><span data-stu-id="47de0-111">**Account Number:** 5038946139</span></span>  
+<span data-ttu-id="47de0-112">**Kontonamn:** MICROSOFT TAIWAN CORPORATION</span><span class="sxs-lookup"><span data-stu-id="47de0-112">**Account Name:** MICROSOFT TAIWAN CORPORATION</span></span>

@@ -118,8 +118,6 @@
           href: configure-junk-email-settings-on-exo-mailboxes.md
         - name: Konfigurera utgående skräppostfiltrering
           href: configure-the-outbound-spam-policy.md
-        - name: Konfigurera förfalskningsinformation
-          href: learn-about-spoof-intelligence.md
         - name: Skapa listor med spärrade avsändare
           href: Create-block-sender-lists-in-office-365.md
         - name: Skapa listor för betrodda avsändare
@@ -150,10 +148,6 @@
           href: support-for-anonymous-inbound-email-messages-over-ipv6.md
         - name: Installera Application Guard för Office
           href: install-app-guard.md
-        - name: Konfigurera grupper och användare i en utvecklings-/testmiljö för en politisk kampanj
-          href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
-        - name: Skapa gruppwebbplatser i en utvecklings-/testmiljö för en politisk kampanj
-          href: create-team-sites-in-a-political-campaign-dev-test-environment.md
     - name: Migrera
       items:
         - name: 'Byta till EOP från Google Postini, Barracuda Spam and Virus Firewall eller Cisco IronPort'
@@ -226,13 +220,13 @@
           href: campaigns.md
         - name: Undersöka skadlig e-post
           href: investigate-malicious-email-that-was-delivered.md
-        - name: Visa Defender för Office 365-rapporter i säkerhets- och efterlevnadscentret
-          href: view-reports-for-mdo.md
         - name: Visa information och resultat från en automatisk undersökning
           href: air-view-investigation-results.md
-        - name: Visa rapporter om e-postsäkerhet i Säkerhets- och efterlevnadscenter
+        - name: Visa rapporter för Defender för Office 365
+          href: view-reports-for-mdo.md
+        - name: Visa säkerhetsrapporter för e-post
           href: view-email-security-reports.md
-        - name: Visa e-postflödesrapporter i Säkerhets- och efterlevnadscenter
+        - name: Visa flödesrapporter för e-post
           href: view-mail-flow-reports.md
         - name: Visa administratörsgranskningsloggen i fristående EOP
           href: view-the-admin-audit-log-eop.md
@@ -240,6 +234,8 @@
           href: reporting-and-message-trace-in-exchange-online-protection.md
         - name: Auto-vidarebefordrade meddelanden insikt
           href: mfi-auto-forwarded-messages-report.md
+        - name: Imitationsinsikt
+          href: impersonation-insight.md
         - name: E-postflödeskarta
           href: mfi-mail-flow-map-report.md
         - name: Skicka meddelanden till Microsoft manuellt
@@ -256,6 +252,8 @@
           href: mfi-outbound-and-inbound-mail-flow.md
         - name: SMTP Auth-klienter insikt och rapport
           href: mfi-smtp-auth-clients-report.md
+        - name: Insikt för förfalskningsinformation
+          href: learn-about-spoof-intelligence.md
         - name: Skicka in skadlig kod och icke-skadlig kod till Microsoft
           href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
         - name: Insikten E-postflödesstatus för översta domäner
@@ -266,8 +264,6 @@
           href: use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
         - name: Köer insikt
           href: mfi-queue-alerts-and-queues.md
-        - name: Genomgång av insikt om förfalskningsinformation
-          href: walkthrough-spoof-intelligence-insight.md
     - name: Svara
       items:
         - name: Identifiera och åtgärda komprometterade användarkonton snabbt
