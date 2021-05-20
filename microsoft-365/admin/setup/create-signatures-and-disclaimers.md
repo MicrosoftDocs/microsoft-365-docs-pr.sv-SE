@@ -24,13 +24,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
-description: Lär dig att hantera e-postsignaturer, inklusive juridiska ansvarsfriskrivningar eller avslöjanden för alla e-postmeddelanden som skickas till eller från organisationen.
-ms.openlocfilehash: e1c3df235442fdc6f569825a7137c92bfc5bb044
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Hantera e-postsignaturer, inklusive ansvarsfriskrivningar eller avslöjanden för alla e-postmeddelanden som skickas till eller från organisationen.
+ms.openlocfilehash: 05cfeeb01231e7f99d2a96fc37581b4c9a23f5aa
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244533"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582758"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Skapa signaturer och ansvarsfriskrivningar för hela organisationen
 
@@ -115,4 +115,13 @@ Använd ett tredjepartsverktyg för att få dessa och andra funktioner för att 
   
 ## <a name="more-resources"></a>Fler resurser
 
-- Mer information om hur du använder PowerShell finns i Organisationsomfattande [ansvarsfriskrivningar, signaturer,](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) sidfötter och sidhuvuden i Exchange Online.
+Information om hur du använder PowerShell finns i Ansvarsfriskrivningar för meddelanden i hela [organisationen, signaturer, sidfötter och sidhuvuden i Exchange Online.](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Migrera e-post och kontakter Microsoft 365](migrate-email-and-contacts-admin.md) (video)
+
+[E-postinställningar för användare](../email/office-365-user-email-settings.md) (artikel)
+
+[Översikt över administrationscenter för Microsoft 365](../../business-video/admin-center-overview.md) (video)
+

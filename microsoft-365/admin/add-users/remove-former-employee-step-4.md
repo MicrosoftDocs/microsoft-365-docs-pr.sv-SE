@@ -23,13 +23,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Följ dessa steg om du vill ge en annan anställd tillgång till den tidigare anställdas OneDrive och Outlook data.
-ms.openlocfilehash: 451f8f7f50098c280e3925ef4efe5ad491ac54fa
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Följ stegen i den här artikeln för att ge en annan anställd åtkomst till den tidigare anställdes OneDrive och Outlook data.
+ms.openlocfilehash: cb5c27cbc7f1c184af8f0d1ad32b822660e93791
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244275"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582698"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>Steg 4 – Ge en annan anställd tillgång OneDrive och Outlook data
 
@@ -161,10 +161,10 @@ Om du vill ge åtkomst till e-postmeddelanden, kalender, uppgifter och kontakter
 > [!TIP]
 > Om du bara vill importera eller återställa ett fåtal objekt från en Outlook-datafil (.pst) kan du öppna den Outlook datafilen. I navigeringsfönstret drar du sedan objekten från mapparna Outlook datafil till dina befintliga Outlook mappar. 
 
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-content"></a>Relaterat innehåll
 
-[Lägga till och ta bort administratörer på ett OneDrive konto](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)
+[Lägga till och ta bort administratörer i OneDrive-konto](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) (artikel)
 
-[Återställa en borttagna OneDrive](/onedrive/restore-deleted-onedrive)
+[Återställa en borttagna OneDrive](/onedrive/restore-deleted-onedrive) (artikel)
   
-[OneDrive och ta bort](/onedrive/retention-and-deletion)
+[OneDrive och borttagning](/onedrive/retention-and-deletion) (artikel)

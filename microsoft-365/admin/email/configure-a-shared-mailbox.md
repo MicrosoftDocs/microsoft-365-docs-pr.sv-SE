@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: När du har skapat en delad postlåda behöver du konfigurera vissa inställningar för den, till exempel vidarebefordran av e-post och automatiska svar. Senare kanske du vill ändra andra inställningar, till exempel postlådenamnet eller medlemmarna.
-ms.openlocfilehash: 01d5aaa686e1d64c9ea7d89913d8208f779dcfd1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Skapa en delad postlåda och konfigurera vissa inställningar för användarna, till exempel vidarebefordran av e-post och automatiska svar.
+ms.openlocfilehash: ab23353f07a24f06d43172e8087819dd915ab720
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52243978"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582674"
 ---
 # <a name="configure-shared-mailbox-settings"></a>Redigera inställningar för delad postlåda
 

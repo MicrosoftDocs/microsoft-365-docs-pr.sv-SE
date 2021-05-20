@@ -19,14 +19,14 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: Läs om hur du köper fler licenser eller minskar antalet licenser för din Microsoft 365 för företag-prenumeration.
+description: Använd de här anvisningarna om du vill köpa fler licenser eller minska antalet licenser för Microsoft 365 för företag-prenumerationen.
 ms.date: 04/07/2021
-ms.openlocfilehash: a20e89ff28c582018c55281a85dbe115b58f9d74
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 144adbd9c21253bd0a8e47205c72e09062fe6552
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537277"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582710"
 ---
 # <a name="buy-or-remove-licenses"></a>Köpa eller ta bort licenser
 
