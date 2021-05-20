@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Lär dig hur du distribuerar team med skydd för mycket känslig data.
-ms.openlocfilehash: d83c10df50d02f47a6d70ee80b2ddbf89fff37d0
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0e2f41cfeb06ba34a4a0dcbc82008e44d136a70c
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538201"
+ms.locfileid: "52572795"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Konfigurera team med skydd för mycket känslig data
 
@@ -115,7 +115,7 @@ Du kan också använda [teamprinciper](/MicrosoftTeams/teams-policies) för att 
 
 Varje gång du skapar ett ny team med etiketten mycket känslig finns det två steg att utföra i SharePoint:
 
-- Uppdatera inställningarna för gästdelning för webbplatsen i SharePoint Online Administrationscenter för att matcha det du valde när du skapade etiketten och uppdatera sedan standard delningslänken till *Personer med befintlig åtkomst*.
+- Uppdatera inställningarna för gästdelning för webbplatsen i SharePoint Online Administrationscenter för att uppdatera standard delningslänken till *Personer med befintlig åtkomst*.
 - Uppdatera inställningarna för webbplatsdelning på själva webbplatsen och förhindra att medlemmar kan dela filer, mappar eller webbplatsen och inaktivera åtkomstförfrågningar.
 
 ### <a name="site-guest-sharing-settings"></a>Inställningar för gästdelning av webbplatsen
