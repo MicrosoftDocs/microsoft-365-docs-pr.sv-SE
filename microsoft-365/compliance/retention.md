@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Läs mer om kvarhållningsprinciper och kvarhållningsetiketter som hjälper dig att behålla det du behöver och ta bort det du inte behöver.
-ms.openlocfilehash: 89a3544c390fdeceea3741a950aad8fe29da25c4
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 2695d34e29492a88da86c2511ce32e4036031e9d
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245594"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572663"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Mer information om kvarhållningsprinciper och kvarhållningsetiketter
 
@@ -157,7 +157,7 @@ Kvarhållningsetiketter har dessutom stöd för [hantering av arkivhandlingar](r
 
 Kvarhållningsetiketter, till skillnad från [känslighetsetiketter](sensitivity-labels.md), finns inte kvar om innehållet flyttas utanför Microsoft 365.
 
-Det finns ingen gräns för antalet kvarhållningsetiketter som stöds för en klientorganisation. Det maximala antalet principer som stöds för en klientorganisation är dock 10 000, och det inkluderar de principer som använder etiketterna (principer för kvarhållningsetiketter och principer för automatiskt tillämpning av kvarhållningsprinciper) samt kvarhållningsprinciper.
+Det finns ingen gräns för antalet kvarhållningsetiketter som stöds för en klientorganisation. Det maximala antalet principer som stöds för en klientorganisation är dock 10 000, och det inkluderar de principer som använder etiketterna (principer för kvarhållningsetiketter och principer för automatiskt tillämpning av kvarhållningsprinciper) samt kvarhållningsprinciper.
 
 #### <a name="classifying-content-without-applying-any-actions"></a>Klassificera innehåll utan att vidta några åtgärder
 
@@ -310,7 +310,7 @@ Förklaring av de fyra nivåerna:
 
 3. **Explicit vinner över implicit.** Tillämpligt för att avgöra när objekt tas bort: 
     
-    1. En kvarhållningsetikett (oavsett hur den tillämpats) tillhandahåller explicit kvarhållning i jämförelse med kvarhållningsprinciper, eftersom kvarhållningsinställningarna används för ett enskilt objekt i stället för att tilldelas implicit från en behållare. Det innebär att en borttagningsåtgärd från en kvarhållningsetikett alltid har företräde framför en borttagningsåtgärd från en kvarhållningsprincip.
+    1. En kvarhållningsetikett (oavsett hur den tillämpats) tillhandahåller explicit kvarhållning i jämförelse med kvarhållningsprinciper, eftersom kvarhållningsinställningarna används för ett enskilt objekt i stället för att tilldelas implicit från en behållare. Det innebär att en borttagningsåtgärd från en kvarhållningsetikett alltid har företräde framför en borttagningsåtgärd från en kvarhållningsprincip.
         
         Exempel: Ett dokument har två kvarhållningsprinciper som omfattar en borttagningsåtgärd på fem respektive tio år, samt en kvarhållningsetikett som har en borttagningsåtgärd på sju år.
         
@@ -394,11 +394,15 @@ Om du vill använda cmdletar för kvarhållning måste du [ansluta till Office 3
 
 - [Get-ComplianceTagStorage](/powershell/module/exchange/get-compliancetagstorage)
 
+- [Get-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/get-recordreviewnotificationtemplateconfig)
+
 - [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy)
 
 - [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)
 
 - [Remove-RetentionCompliancePolicy](/powershell/module/exchange/remove-retentioncompliancepolicy)
+
+- [Set-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/set-recordreviewnotificationtemplateconfig )
 
 - [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy)
 
@@ -409,6 +413,7 @@ Om du vill använda cmdletar för kvarhållning måste du [ansluta till Office 3
 - [Remove-RetentionComplianceRule](/powershell/module/exchange/remove-retentioncompliancerule)
 
 - [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule)
+
 
 ## <a name="when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds"></a>När kvarhållningsprinciper och kvarhållningsetiketter eller eDiscovery-undantag ska användas
 

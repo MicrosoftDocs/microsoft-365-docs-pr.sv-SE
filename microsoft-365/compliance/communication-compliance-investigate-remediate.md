@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 7e564bfd090a778ae2cd14214c35af8cd2fc6692
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 2f9777631fe9d8b3506296f30906d5280805b4cb
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "52162642"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583430"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Undersöka och åtgärda aviseringar för kommunikationsefterlevnad
 
@@ -55,7 +55,7 @@ En fullständig lista över filter och fältinformation finns i [Filter](communi
 
 5. Välj kontrollen **Filter** för att öppna **informationssidan** Filter.
 
-6. Markera en eller flera kryssrutor för att aktivera filter för dessa aviseringar. Du kan välja bland flera filter, *bland annat Datum,* *Avsändare,*  *Ämne/Titel,* Klassificerare.
+6. Markera en eller flera kryssrutor för att aktivera filter för dessa aviseringar. Du kan välja bland flera filter, bland annat *Datum,* *Avsändare,* *Ämne/Titel,* *Klassificerare, Språk.* 
 
 7. Om du vill spara filtret som markerats som standardfilter väljer du **Spara som standard.** Om du vill använda filtret som ett sparat filter väljer du **Klar**.
 
@@ -105,7 +105,6 @@ När du har gått igenom grunderna i meddelandet är det dags att öppna ett med
 - **Textvy:** Textvyn visar en vy med endast radnumrerad text i meddelandet och innehåller nyckelordsmarkering i meddelanden och bifogade filer för termer eller nyckelord av typen känslig information som matchas i den associerade principen för kommunikationsefterlevnad. Med hjälp av nyckelordsmarkering kan du snabbt söka igenom långa meddelanden och bifogade filer efter det intresseområde som är av intresse. I vissa fall kan markerad text bara finnas i bifogade filer för meddelanden som matchar principvillkor. Nyckelordsmarkering stöds inte för termer som identifieras av inbyggda klassificerare som tilldelats till en princip. Inbäddade filer visas inte och radnumrering i den här vyn är användbart om du vill referera relevant information mellan flera granskare.
 - **Kommentarsvyn:** I den här vyn kan granskare lägga till anteckningar direkt i meddelandet som sparas i meddelandets vy. Om [OCR](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) är aktiverat för principen visas bilder som innehåller tryckt eller handskriven text som matchar villkorsstyrd policy som ett underobjekt för det associerade meddelandet i den här vyn och kan komma att kommenteras.
 - **Användarhistorik:** Vyn Användarhistorik visar alla andra aviseringar som genereras av en princip för kommunikationsefterlevnad för användaren som skickar meddelandet.
-- **Meddelandeinformationsvy:** Avancerad vy över metadata för meddelanden och konfigurationsinformation.
 - **Mönster som upptäckts** meddelande: Många trakasserings- och mobbningsåtgärder över tid och innebär att instanser av samma beteende upprepas av en användare. Det *mönster som upptäckts* aviseringen visas i aviseringsinformationen och uppmärksammar aviseringen. Identifiering av mönster per princip och utvärderar beteende under de senaste 30 dagarna när minst två meddelanden skickas till samma mottagare av en avsändare. Varningar och granskare kan använda det här meddelandet för att identifiera upprepat beteende för att utvärdera aviseringen efter behov.
 - **Visa översättningsvyn:** I den här vyn konverteras automatiskt  aviseringstexten till det språk som har konfigurerats i inställningen För visningsspråk i Microsoft 365-prenumerationen för varje granskare. Översättningsvyn hjälper till att bredda stödet för organisationer med flerspråkiga användare och eliminerar behovet av ytterligare översättningstjänster utanför granskningsprocessen för kommunikationsefterlevnad. Med Microsoft Translate-tjänster kan du, om det behövs, stänga av och stänga av översättningsvyn och använda en mängd olika språk. En fullständig lista över språk som stöds finns i [Microsoft Translator språk.](https://www.microsoft.com/translator/business/languages/) Språk som visas *Translator språklistan* stöds i vyn Översätt.
 

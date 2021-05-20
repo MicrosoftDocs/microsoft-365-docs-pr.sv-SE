@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Översikt över planeringsprocessen för dataförlustskydd
-ms.openlocfilehash: 6a72a8bab27db4d8b11d3e0b3d7a1dac7a1f0092
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 84f1dc0426ba88f934c1d67d71f75364adeb4340
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52581611"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583358"
 ---
 # <a name="plan-for-data-loss-prevention-dlp"></a>Planera för dataförlustskydd (DLP)
 
@@ -48,7 +48,7 @@ I [Lär dig mer om skydd mot dataförlust](dlp-learn-about-dlp.md#learn-about-da
 
 När de implementeras kan DLP-principer tillämpas i stora delar av organisationen. IT-utvecklar inte en bred plan på egen hand utan negativa konsekvenser. Du måste identifiera de intressenter som kan:
 
-- beskriver de bestämmelser, lagar och branschstandarder som din organisation omfattas av
+- beskriver de bestämmelser, lagar och branschstandarder din organisation omfattas av
 - kategorier av känsliga objekt som ska skyddas
 - de affärsprocesser som de används i
 - riskbeteendet som bör begränsas
@@ -117,11 +117,11 @@ Det är viktigt att dokumentera hur organisationen ska komma från starttillstå
 
 #### <a name="sensitive-item-discovery"></a>Identifiering av känsliga objekt
 
-Det finns flera sätt att upptäcka enskilda känsliga objekt och var de finns. Du kanske redan har känslighetsetiketter distribuerade eller så kanske du har bestämt dig för att använda en mycket bred DLP-princip för alla platser som bara identifierar och granskar objekt. Mer information finns i [Känna till dina data.](information-protection.md#know-your-data)
+Det finns flera sätt att upptäcka enskilda känsliga objekt och var de finns. Du kanske redan har känslighetsetiketter distribuerade eller så har du kanske bestämt dig för att använda en bred DLP-princip för alla platser som bara identifierar och granskar objekt. Mer information finns i [Känna till dina data.](information-protection.md#know-your-data)
 
 #### <a name="policy-planning"></a>Principplanering
 
-När du börjar ditt införande av DLP kan du använda de här frågorna för att fokusera arbetet med policydesign och -implementering.
+När du börjar använda DLP kan du använda de här frågorna för att fokusera arbetet med policydesign och -implementering.
 
 ##### <a name="what-laws-regulations-and-industry-standards-must-your-organization-comply-with"></a>Vilka lagar, bestämmelser och branschstandarder måste din organisation följa?
 
@@ -134,7 +134,7 @@ Eftersom många organisationer använder DLP för att uppfylla regelverken är d
 
 När din organisation vet var det står när det gäller regelefterlevnadsbehov kommer du att få en uppfattning om vilka känsliga objekt som behöver skyddas mot läckage och hur du vill prioritera principimplementering för att skydda dem. Det hjälper dig att välja de lämpligaste DLP-principmallarna. Microsoft 365 levereras med förkonfigurerade DLP-mallar för ekonomi, sjukvård och hälsa, sekretess och du kan skapa egna med hjälp av mallen Anpassad. När du utformar och skapar dina faktiska DLP-principer hjälper det dig även att välja rätt typ av känslig information om du vet svaret på [den här frågan.](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 
-**Exempel** För att komma igång snabbt väljer du `U.K. Financial Data` principmallen som innehåller `Credit Card Number` , och typer av känslig `EU Debit Card Number` `SWIFT Code` information. 
+**Exempel** För att komma igång snabbt väljer du `U.K. Financial Data` principmallen, som innehåller `Credit Card Number` typerna , och känslig `EU Debit Card Number` `SWIFT Code` information. 
 
 ##### <a name="where-are-the-sensitive-items-and-what-business-processes-are-they-involved-in"></a>Var finns de känsliga objekten och vilka affärsprocesser ingår de i?
 
@@ -148,13 +148,13 @@ Objekten som innehåller organisationens känsliga information används varje da
 - Microsoft Cloud App Security
 - Lokala lagringsningar
 
-**Exempel** Organisationens interna granskare spårar en uppsättning kreditkortsnummer. De har ett kalkylblad av dem på en säker SharePoint webbplats. Flera av de anställda gör kopior och sparar dem på sina arbetswebbplatser OneDrive för företag som synkroniseras till deras Windows 10 enhet. En av dem klistrar in en lista med 14 av dem i ett e-postmeddelande och försöker skicka den till externa granskare för granskning. Det är bra att tillämpa principen på webbplatsen för SharePoint säkerhet, alla interna granskare OneDrive för företag-konton, deras Windows 10-enheter och Exchange e-post.
+**Exempel** Organisationens interna granskare spårar en uppsättning kreditkortsnummer. De har ett kalkylblad av dem på en säker SharePoint webbplats. Flera av de anställda gör kopior och sparar dem på sin arbetswebbplats OneDrive för företag som synkroniseras till deras Windows 10 enhet. En av dem klistrar in en lista med 14 av dem i ett e-postmeddelande och försöker skicka den till externa granskare för granskning. Det är bra att tillämpa principen på webbplatsen för SharePoint säkerhet, alla interna granskare OneDrive för företag-konton, deras Windows 10-enheter och Exchange e-post.
 
 ##### <a name="what-is-your-organizations-tolerance-for-leakage"></a>Vad är din organisation för att det ska äcka upp sig?
 
 Olika grupper i organisationen kan ha olika vyer på vad som är acceptabel nivå för känsligt objektläckning och vad som inte gör det. Att uppnåing av nollläckning kan komma till en för hög kostnad för företaget.
 
-**Exempel** Både din organisations säkerhetsgrupp och den juridiska gruppen anser att det inte ska finnas någon delning av kreditkortsnummer med någon utanför organisationen och att det inte ska delas några läckage. Men som en del av den vanliga granskningen av kreditkortsnummer måste den interna granskaren dela vissa kreditkortsnummer med tredjepartsgranskningar. Om DLP-principen förhindrar all delning av kreditkortsnummer utanför organisationen kommer det att ske en betydande störning i affärsprocessen och ytterligare kostnader för att minimera avbrottet för att de interna granskarna ska kunna slutföra uppföljningen. Den extra kostnaden är inte godtagbar för ledningsgruppen. Det måste finnas en intern konversation för att det ska gå att avgöra en godtagbar nivå för läckage. När det är bestämt kan principen tillhandahålla undantag för att vissa personer ska kunna dela informationen eller så kan den tillämpas i granskningsläge.
+**Exempel** Både din organisations säkerhetsgrupp och den juridiska gruppen anser att det inte ska finnas någon delning av kreditkortsnummer med någon utanför organisationen och att det inte ska delas några läckage. Men som en del av den vanliga granskningen av kreditkortsnummer måste de interna granskarna dela vissa kreditkortsnummer med externa granskare. Om DLP-principen förhindrar all delning av kreditkortsnummer utanför organisationen kommer det att ske en betydande störning i affärsprocessen och ytterligare kostnader för att minimera avbrottet för att de interna granskarna ska kunna slutföra uppföljningen. Den extra kostnaden är inte godtagbar för ledningsgruppen. Det måste finnas en intern konversation för att det ska gå att avgöra en godtagbar nivå för läckage. När det är bestämt kan principen tillhandahålla undantag för att vissa personer ska kunna dela informationen eller så kan den tillämpas i granskningsläge.
 
 #### <a name="planning-for-prerequisites"></a>Planering för förutsättningar
 
@@ -173,7 +173,7 @@ Om du skapar DLP-principer med stor potential rekommenderar vi att du följer de
   
 1. **Börja i testläge utan Tips** och använd sedan DLP-rapporter och eventuella incidentrapporter för att bedöma påverkan. Du kan använda DLP-rapporter för att visa antal, plats, typ och allvarlighetsgrad för principmatchningar. Du kan finjustera principerna efter behov baserat på resultaten. I testläge påverkar inte DLP-principerna produktiviteten för personer som arbetar i organisationen. Använd även det här steget för att testa arbetsflödet för granskning av DLP-händelser och åtgärda problem.
     
-2. **Flytta till testläge** med meddelanden och princip Tips så att du kan börja lära användarna om dina efterlevnadsprinciper och förbereda dem för de principer som ska tillämpas. Det är praktiskt att ha en länk till sidan organisationspolicy som innehåller ytterligare information om principen i principtipset. I det här läget kan du också be användarna att rapportera falska positiva resultat så att du kan ytterligare förfina principerna. När du har förtroende för att policyprogrammets resultat överensstämmer med de som intressenterna hade i åtanke kan du gå vidare till det här steget. 
+2. **Flytta till testläge** med meddelanden och princip Tips så att du kan börja lära användarna om dina efterlevnadsprinciper och förbereda dem för de principer som ska tillämpas. Det är praktiskt att ha en länk till sidan organisationspolicy med mer information om principen i principtipset. I det här läget kan du också be användarna att rapportera falska positiva resultat så att du kan ytterligare förfina principerna. När du har förtroende för att policyprogrammets resultat överensstämmer med de som intressenterna hade i åtanke kan du gå vidare till det här steget. 
     
 3. **Börja tillämpa principerna fullt ut** så att åtgärderna i reglerna tillämpas och att innehållet skyddas. Fortsätt att övervaka DLP-rapporterna och eventuella incidentrapporter och -aviseringar för att se till att du får de resultat du vill ha. 
 
@@ -199,9 +199,9 @@ De bestämmelser, lagar och branschstandarder som din organisation måste följa
 
 |Beskrivning av kundbehov  | metod  |
 |---------|---------|
-|**Contoso Bank** är i en hårt reglerad bransch och har många olika typer av känsliga objekt på många olika platser. </br> – vet vilka typer av känslig information som har högsta prioritet. </br> - måste minimera driftstörningar när principer distribueras. </br> – har IT-resurser och kan anlita experter som kan hjälpa till med att planera, utforma distribution </br> – har ett Premier-supportavtal med Microsoft| – Ta dig tid att förstå vilka bestämmelser de måste följa och hur de kommer att följa. </br> -Ta dig tid att förstå det bättre tillsammans värdet i Microsoft 365 informationsskyddsstacken </br> - Utveckla känslighetsschemat för prioriterade objekt och tillämpa </br> - Engagera ägare av företagsprocess </br>- Design-/kodprinciper, driftsättning i testläge, utbilda användare </br>- upprepa|
-|**TailSpin Toys** vet inte vad de har eller var de finns och har liten eller inget resurs djup. De använder Teams, ODB och Exchange mycket.     |– Börja med enkla principer för de prioriterade platserna. </br>- Övervaka vad som identifieras </br>- Tillämpa känslighetsetiketter i enlighet med detta </br>- Förfina principer, utbilda användare       |
-|**Fabrikam** är en liten startup och vill skydda sin immateriella egendom, och måste röra sig snabbt. De är beredd att avsätta vissa resurser, men har inte råd att anlita externa experter. </br>- Känsliga objekt finns i Microsoft 365 OneDdrive för företag/SharePoint </br>- Införande av OneDrive för företag och SharePoint långsamt, anställda/skugga IT-använder DropBox och Google Drive för att dela/lagra objekt </br>– värdehastigheten för anställda över dataskyddsgren </br>- Kunden splurar och köper alla 18 anställda nya Windows 10 enheter     |– dra nytta av standardprincipen för DLP i Teams </br>- Använd en begränsad standardinställning för SharePoint objekt </br>- Distribuera principer som förhindrar extern delning </br>- Distribuera principer till prioriterade platser </br>- Distribuera principer på Windows 10 enheter </br>- Blockera överföringar till OneDrive för företag molnlagring      |
+|**Contoso Bank** är i en hårt reglerad bransch och har många olika typer av känsliga objekt på många olika platser. </br> – vet vilka typer av känslig information som har högsta prioritet. </br> - måste minimera driftstörningar när principer distribueras. </br> – har IT-resurser och kan anlita experter som kan hjälpa till med att planera, utforma distribution </br> – har ett Premier-supportavtal med Microsoft| – Ta dig tid att förstå vilka bestämmelser de måste följa och hur de kommer att följa. </br> -Ta dig tid att förstå det bättre tillsammans värdet i Microsoft 365 informationsskyddsstacken </br> - Utveckla känslighetsetikettsschemat för prioriterade objekt och tillämpa </br> - Engagera ägare av företagsprocess </br>- Design-/kodprinciper, driftsättning i testläge, utbilda användare </br>- upprepa|
+|**TailSpin Toys** vet inte vad de har eller var de finns och har liten eller inget resurs djup. De använder Teams, OneDrive för företag och Exchange omfattande.     |– Börja med enkla principer för de prioriterade platserna. </br>- Övervaka vad som identifieras </br>- Tillämpa känslighetsetiketter i enlighet med detta </br>- Förfina principer, utbilda användare       |
+|**Fabrikam** är en liten startup och vill skydda sin immateriella egendom, och måste röra sig snabbt. De är beredd att ägna vissa resurser åt det, men de har inte råd att anlita externa experter. </br>- Känsliga objekt är alla i Microsoft 365 OneDrive för företag/SharePoint </br>- Införande av OneDrive för företag och SharePoint långsamt, anställda/skugga IT-använder DropBox och Google Drive för att dela/lagra objekt </br>– värdehastigheten för anställda över dataskyddsgren </br>- Kunden splurar och köper alla 18 anställda nya Windows 10 enheter     |– dra nytta av standardprincipen för DLP i Teams </br>- Använd en begränsad standardinställning för SharePoint objekt </br>- Distribuera principer som förhindrar extern delning </br>- Distribuera principer till prioriterade platser </br>- Distribuera principer på Windows 10 enheter </br>- Blockera överföringar till OneDrive för företag molnlagring      |
 
 <!--
 

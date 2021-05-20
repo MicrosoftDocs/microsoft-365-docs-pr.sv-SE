@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
-description: 'Skydda din affärs-e-post och data från cyberhot, inklusive utpressningstrojaner, nätfiske och skadliga bifogade filer. '
-ms.openlocfilehash: dcaeb9588f50d1e12bdff5164f5f41a0beee2e47
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Skydda din affärs-e-post och data från cyberhot, inklusive utpressningstrojaner, nätfiske och skadliga bifogade filer.
+ms.openlocfilehash: 12bdb9f12c1b0d3072a4c84c006787c26050cc8b
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535884"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582806"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>De 10 bästa sätten att skydda Microsoft 365 för företag-abonnemang
 
@@ -345,3 +345,11 @@ Så här skapar du en ny princip som är riktad till alla mottagare i din domän
 |
 
 Mer information finns i artikeln [Valv i Microsoft Defender för Office 365](../../security/office-365-security/atp-safe-links.md).
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Multifaktorautentisering för Microsoft 365](multi-factor-authentication-microsoft-365.md) (artikel)
+
+[Hantera och övervaka prioritetskonton](../setup/priority-accounts.md) (artikel)
+
+[Microsoft 365 Rapporter i administrationscentret](../activity-reports/activity-reports.md) (video)

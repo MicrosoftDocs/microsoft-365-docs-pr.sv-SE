@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Lär dig hur du använder SharePoint Syntex för att identifiera kontraktsfiler och extrahera data med hjälp av en Microsoft 365 lösning.
-ms.openlocfilehash: f246dd4ed619dd9885d2c45c69d607cfa9c2483f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 67c0a072b070cd414f5079fe4fb61e7391839951
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538561"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583574"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Steg 1. Använda SharePoint Syntex för att identifiera kontraktsfiler och extrahera data
 
@@ -42,7 +42,7 @@ Din organisation behöver ett sätt att identifiera och klassificera alla kontra
 ## <a name="steps-to-create-and-train-your-model"></a>Steg för att skapa och utbilda din modell
 
 > [!NOTE]
-> För de här stegen kan du använda exempelfilerna i [Microsoft SharePoint Syntex Samples-lagringsplatsen](https://github.com/pnp/syntex-samples). Exemplen på den här lagringsplatsen innehåller både modellfiler för dokument förstå och filer som används för att utbilda modellen.
+> För de här stegen kan du använda exempelfilerna på lagringsplatsen för lösningstillgångar [i kontraktshantering.](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management) Exemplen på den här lagringsplatsen innehåller både modellfiler för dokument förstå och filer som används för att utbilda modellen.
 
 ### <a name="create-a-contract-model"></a>Skapa en kontraktsmodell
 

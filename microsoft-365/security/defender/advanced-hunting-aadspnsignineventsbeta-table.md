@@ -1,6 +1,6 @@
 ---
 title: AADSpnSignInEventsBeta-tabell i den avancerade sökschemat
-description: Läs mer om informationen som är kopplad till tabellen för azure Active Directory-tjänstens huvudnamn och inloggning av hanterade identiteter i det avancerade sökschemat
+description: Läs mer om information som är Azure Active Directory huvudnamn för tjänsten och inloggningshändelser för hanterad identitet i tabellen för avancerad sökning
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AlertInfo, alert, entities, evidence, file, IP address, device, machine, user, account, identity, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 984e945107b6e0b41459659a7f2e9f649981e4b5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f74972bcd5d0ddaab58d82b72a55991fda44e3b1
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932601"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583550"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -34,12 +34,11 @@ ms.locfileid: "51932601"
 - Microsoft 365 Defender
 
 >[!IMPORTANT]
-> Tabellen är för närvarande i betaversion och erbjuds inom kort för att du ska kunna leta igenom AAD-tjänstens huvudnamn och inloggningshändelser för hanterade identiteter i `AADSpnSignInEventsBeta` Azure Active Directory. Så småningom flyttar vi all information i inloggningsschemat till `IdentityLogonEvents` tabellen.<br><br>
-> Kunder som har åtkomst till Microsoft 365 Defender via Azure Defenders integrerade Microsoft Defender för slutpunktslösning, men inte har licenser för Microsoft Defender för Office, Microsoft Defender för identitet eller Microsoft Cloud App Security, kommer inte att kunna se det här schemat. 
+> Tabellen är för närvarande i betaversion och erbjuds inom kort för att du ska kunna jaga `AADSpnSignInEventsBeta` Azure Active Directory-tjänstens huvudnamn och hanterade identitetsin signeringshändelser. Så småningom flyttar vi all information i inloggningsschemat till `IdentityLogonEvents` tabellen.
 
 
 
-Tabellen `AADSpnSignInEventsBeta` i det avancerade schemat för sökning innehåller information om Azure Active Directory-tjänstens huvudnamn och inloggning av hanterade identiteter. Du kan läsa mer om de olika typerna av inloggningar i [Azure Active Directory-inloggningsaktivitetsrapporter – förhandsversion.](/azure/active-directory/reports-monitoring/concept-all-sign-ins)
+Tabellen `AADSpnSignInEventsBeta` i det avancerade sökschemat innehåller information om hur Azure Active Directory huvudnamn och inloggningar av hanterade identiteter. Du kan läsa mer om de olika typerna av inloggningar Azure Active Directory [i inloggningsaktivitetsrapporter – förhandsversion.](/azure/active-directory/reports-monitoring/concept-all-sign-ins)
 
 Använd den här referensen för att skapa frågor som returnerar information från tabellen.
 

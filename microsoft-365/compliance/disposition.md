@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Övervaka och hantera borttagning av innehåll, oavsett om du använder en borttagningsgranskning eller om innehåll tas bort automatiskt enligt de inställningar du har konfigurerat.
-ms.openlocfilehash: dd03c429bf1b12a4c733c2e6800d0b71ca7a691f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3c5d178b4eab267759506dcd86d66fb2bf4d93ee
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532174"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583478"
 ---
 # <a name="disposition-of-content"></a>Borttagning av innehåll
 
@@ -33,6 +33,8 @@ Använd fliken **Borttagning** från **Hantering av arkivhandlingar** i Microsof
 > Lanseras i förhandsgranskning: **borttagningsgranskning i flera steg**
 > 
 > En administratör kan nu lägga till upp till fem borttagningsgranskningar i följd till en kvarhållningsetikett, granskare kan lägga till andra användare till fasen för borttagningsgranskningen. Du kan även anpassa e-postmeddelanden och påminnelser. I följande avsnitt finns mer information om ändringarna i den här förhandsversionen.
+>
+> Läs lanseringsmeddelandet i blogginlägget om [Meddelande om disposition med flera steg i Microsofts hantering av arkivhandlingar](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-multi-stage-disposition-in-microsoft-records/ba-p/2361849).
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>Krav för att visa innehållsborttagningar
 

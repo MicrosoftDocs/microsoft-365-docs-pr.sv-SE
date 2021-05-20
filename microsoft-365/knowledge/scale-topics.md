@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Lär dig mer om metodtips för att hantera de många ämnen som finns i din organisation med Viva Topics.
-ms.openlocfilehash: dd9fe658d4f698ac50563b5c9ea141a090f6141d
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: a11d6fd1a7435ce75faa749a6d66fba6c1cda457
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538417"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583070"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>Hantera ämnen i skala i Microsoft Viva-ämnen
 
@@ -28,15 +28,17 @@ Först en påminnelse om de [fyra stegen för ämnen:](manage-topics.md#topic-st
 
 - **Förslag:** Ett ämne har identifierats med AI och har tillräckligt med stödresurser, anslutningar och egenskaper. (De är markerade som ett **föreslaget ämne** i användargränssnittet.)
 
-- **Bekräftad**: Ett ämne som har föreslagits av AI valideras. Validering av ämne måste bekräftas av en knowledge manager. För att man ska kunna bekräfta ett ämne måste två positiva röster tas emot från användare som har röstat med hjälp av feedbackmekanismen på ämneskortet. Om en användare till exempel har röstat på positivt och en användare har röstat nej till ett visst ämne, skulle du fortfarande behöva två positiva röster för att ämnet ska bekräftas.
+- **Bekräftad:** Ett ämne som har föreslagits av AI måste valideras. Validering av avsnitt inträffar när något av följande inträffar:
+   - En knowledge manager bekräftar ett ämne. En knowledge manager [bekräftar ett ämne](manage-topics.md#confirmed-topics) på sidan **Hantera** ämnen. 
+   - Flera användare bekräftar ett ämne. Det måste finnas ett netto av två positiva röster som tagits emot från användare som har röstat med hjälp av feedbackmekanismen för ämneskortet. Om en användare till exempel har röstat på positivt och en användare har röstat nej till ett visst ämne, skulle du fortfarande behöva två positiva röster för att ämnet ska bekräftas.
  
-- **Publicerades**: Ett bekräftat ämne som har redigerats: manuell redigering har gjorts för att förbättra kvaliteten.
+- **Publicerades**: Ett bekräftat ämne som har curerats. Manuella redigeringar har gjorts för att förbättra kvaliteten.
 
 - **Tas** bort : Ett ämne avvisas av en kunskapshanterare och visas inte längre för tittare. Ett ämne kan tas bort i valfri stat (förslag, bekräftade eller publicerade). För att ett ämne ska kunna tas bort måste två negativa röster tas emot från användare som har röstat med hjälp av feedbackmekanismen på ämneskortet. Om en användare till exempel har röstat nej och en användare har röstat positivt på ett visst ämne, skulle du ändå behöva två fler negativa röster för att ämnet ska tas bort. När ett publicerat ämne tas bort måste sidan med den curated informationen tas bort manuellt via ämnescentrets sidbibliotek.
 
 ## <a name="knowledge-manager-role"></a>Knowledge Manager-roll 
 
-När du konfigurerar Viva Ämnen lägger du till en grupp  användare som har behörighet för att se Hantera ämnen i ämnescentret. Den visas endast för de användare som har rollen som primär läroplan för avsnitten. De har tillgång till data om ämnena och kan se listor med alla ämnen som de har tillgång till att granska och hantera.
+När du konfigurerar Viva Ämnen lägger du till en grupp användare som har behörighet för att se **sidan Hantera** ämnen i ämnescentret. Den visas endast för de användare som har rollen som primär läroplan för avsnitten. De har tillgång till data om ämnena och kan se listor med alla ämnen som de har tillgång till att granska och hantera.
 
 Anställda med den här rollen bör ha breda behörigheter för att kunna se en rad olika ämnen. Eller om behörigheterna är segmenterade kanske du vill välja en grupp användare som representerar olika områden i verksamheten och kan välja att avaktivera för sina egna områden.
 

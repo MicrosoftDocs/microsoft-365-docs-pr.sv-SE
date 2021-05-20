@@ -1,6 +1,6 @@
 ---
 title: AADSignInEventsBeta-tabell i det avancerade sökschemat
-description: Läs mer om informationen som är kopplad till tabellen för azure Active Directory-inloggningshändelser i det avancerade sökschemat
+description: Mer information om hur du Azure Active Directory i tabellen inloggningshändelser i det avancerade sökschemat
 keywords: avancerad sökning, hotsökning, sökning efter cyberhot, Microsoft 365 Defender, microsoft 365, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, fil, IP-adress, enhet, dator, användare, konto, identitet, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 93735ee3bf8d9b95ab320c2bc158d6ebfe27186c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 704752951c453a3fe872b814e7364ef1699226bf
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932613"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582986"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -34,12 +34,11 @@ ms.locfileid: "51932613"
 - Microsoft 365 Defender
 
 >[!IMPORTANT]
-> Tabellen är för närvarande i betaversion och erbjuds inom kort för att du ska kunna leta efter inloggningshändelser i `AADSignInEventsBeta` Azure Active Directory (AAD). Så småningom flyttar vi all information i inloggningsschemat till `IdentityLogonEvents` tabellen.<br><br>
-> Kunder som har åtkomst till Microsoft 365 Defender via Azure Defenders integrerade Microsoft Defender för slutpunktslösning, men inte har licenser för Microsoft Defender för Office, Microsoft Defender för identitet eller Microsoft Cloud App Security, kommer inte att kunna se det här schemat. 
+> Tabellen är för närvarande i betaversion och erbjuds inom kort för att du ska kunna leta efter `AADSignInEventsBeta` inloggningshändelser Azure Active Directory (AAD). Så småningom flyttar vi all information i inloggningsschemat till `IdentityLogonEvents` tabellen.
 
  
 
-Tabellen `AADSignInEventsBeta` i det avancerade sökschemat innehåller information om interaktiva och icke-interaktiva inloggningar i Azure Active Directory. Läs mer om inloggningar i inloggningsaktivitetsrapporter [för Azure Active Directory – förhandsversion.](/azure/active-directory/reports-monitoring/concept-all-sign-ins)
+Tabellen `AADSignInEventsBeta` i det avancerade sökschemat innehåller information om Azure Active Directory interaktiva och icke-interaktiva inloggningar. Läs mer om inloggningar i Azure Active Directory [inloggningsaktivitetsrapporter – förhandsversion.](/azure/active-directory/reports-monitoring/concept-all-sign-ins)
 
 Använd den här referensen för att skapa frågor som returnerar information från tabellen.
 Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökning.](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference)

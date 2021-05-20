@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Lär dig planera för Abonnemang på Microsoft Viva Topics
-ms.openlocfilehash: d64e4b341fe96d7aa3636f58bffe3dd8f388838e
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: de7534ce58a7888ac822826ef4ef1b4934ed8cb1
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957545"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583118"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Planera för Microsoft Viva Topics
 
@@ -23,7 +23,7 @@ Du har kontroll över hur ämnen upplevs i organisationen. Dina planeringsbeslut
 
 I den här artikeln kommer vi att undersöka följande planeringsbeslut:
 
-- Vilka SharePoint-webbplatser du vill crawla för ämnen
+- Vilka SharePoint webbplatser du vill crawla efter ämnen
 - Vilka ämnen, om det finns några, som du vill utesluta från ämnesupplevelser
 - Vilka användare vill du göra ämnen synliga för
 - Vilka användare som du vill ge behörighet att hantera ämnen i ämnescentret
@@ -32,26 +32,28 @@ I den här artikeln kommer vi att undersöka följande planeringsbeslut:
 
 Säkerhet och sekretess för dina data respekteras och ämnesupplevelsen ger inte användarna ytterligare åtkomst till filer som de inte har rättigheter till. Vi rekommenderar att du även läser [Säkerhet och sekretess för Microsoft Viva Topics](topic-experiences-security-privacy.md) som en del av planeringsprocessen.
 
+Mer information om AI-tekniken bakom Viva Topics finns [i Alexandria i Microsoft Viva Ämnen: från stora data till stora kunskaper](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge).
+
 ## <a name="requirements"></a>Krav
 
-Du måste prenumerera [på Viva Topics](https://www.microsoft.com/microsoft-viva/topics) och vara global administratör eller SharePoint-administratör för att få åtkomst till administrationscentret för Microsoft 365 och konfigurera Ämnen.
+Du måste prenumerera [på Viva Topics](https://www.microsoft.com/microsoft-viva/topics) och vara global administratör eller SharePoint administratör för att få åtkomst Microsoft 365 administrationscenter och konfigurera Ämnen.
 
 Alla användare som ska använda Ämnen kräver en **licens för ämnesupplevelser.** Tilldelning av licenser omfattas av [Konfigurera Microsoft Viva-ämnen.](set-up-topic-experiences.md)
 
 ## <a name="topic-discovery"></a>Upptäckt av ämne
 
-Inställningarna för identifiering av ämnen specificerar vilka SharePoint-webbplatser som används som källor för ämnen. Du kan välja att inkludera alla SharePoint-webbplatser, en viss lista med webbplatser eller inga webbplatser. Vi rekommenderar att du väljer alla webbplatser så att ämnesupplevelsen kan upptäcka ett stort antal bra ämnen för användarna.
+Inställningarna för identifiering av ämne anger vilka SharePoint som används som källor för ämnen. Du kan välja att inkludera SharePoint webbplatser, en viss lista med webbplatser eller inga webbplatser. Vi rekommenderar att du väljer alla webbplatser så att ämnesupplevelsen kan upptäcka ett stort antal bra ämnen för användarna.
 
 När du konfigurerade ämnen kan du välja bland följande alternativ:
 
-- **Alla webbplatser:** Alla SharePoint-webbplatser i organisationen. Det omfattar nuvarande och framtida webbplatser.
+- **Alla webbplatser:** alla SharePoint webbplatser i organisationen. Det omfattar nuvarande och framtida webbplatser.
 - **Alla, förutom valda webbplatser:** Alla webbplatser utom de du anger. Webbplatser som skapas i framtiden kommer att ingå som källor för upptäckt av ämnen. 
 - **Endast markerade webbplatser**: Endast de webbplatser som du anger. Webbplatser som skapas i framtiden inkluderas inte som källor för ämnesidentifiering.
-- **Inga webbplatser**: Inkludera inte några SharePoint-webbplatser.
+- **Inga webbplatser**: Inkludera inte några SharePoint webbplatser.
 
-Om du väljer **Alla, förutom valda webbplatser** eller Endast valda **webbplatser,** kan du ladda upp en CSV-fil med en lista över webbplatser. De här alternativen är användbara om du kör ett pilottest och vill ta med ett begränsat antal webbplatser att börja med.
+Om du väljer **Alla, förutom valda webbplatser** eller Endast valda **webbplatser,** kan du ladda upp .csv en fil med en lista över webbplatser. De här alternativen är användbara om du kör ett pilottest och vill ta med ett begränsat antal webbplatser att börja med.
 
-Du kan kopiera CSV-mallen nedan:
+Du kan kopiera .csv nedan:
 
 ``` csv
 Site name,URL
@@ -63,7 +65,7 @@ Vi rekommenderar att du skapar en process som användare eller kunskapshanterare
 
 ### <a name="multi-geo"></a>Multi-geo
 
-Om din organisation har distribuerat [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)är ämnescentret etablerat på den centrala platsen och endast SharePoint-webbplatser på den centrala platsen är tillgängliga för användning som källor för ämnen. (Om du väljer **Alla webbplatser** används alla webbplatser i Viva Topics på den centrala platsen.)
+Om din organisation har [distribuerat Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)är ämnescentret etablerat på den centrala platsen och endast SharePoint-webbplatser på den centrala platsen är tillgängliga för användning som källor för ämnen. (Om du väljer **Alla webbplatser** används alla webbplatser i Viva Topics på den centrala platsen.)
 
 All bearbetning och lagring av innehåll utförs på den centrala platsen.
 
@@ -92,7 +94,7 @@ Du kan välja att inte tillåta någon att bidra till ämnen, men detta rekommen
 
 *Ämnes läsare*
 
-Ämneslyssarna kan se information på ämnessidor, i sökresultat och när ämnen markeras i innehåll som SharePoint-sidor. Användare kan bara se upptäckta ämnen när de har åtkomst till filer och sidor som ämnet identifierats i.
+Ämneslyssarna kan se information på ämnessidor, i sökresultat och när ämnen markeras i innehållet SharePoint sidor. Användare kan bara se upptäckta ämnen när de har åtkomst till filer och sidor som ämnet identifierats i.
 
 När du ställer in ämnes läsare kan du välja bland:
 
@@ -106,9 +108,9 @@ Vi rekommenderar **Alla i min organisation,** men om du kör ett pilottest kan d
 
 Som administratör kan du utesluta vissa ämnen från olika ämnesupplevelser. Det här är användbart om du vill se till att känsliga data inte visas i avsnitt. Knowledge Managers kan utesluta ämnen i ämnescentret, men ämnen som utesluts av administratören är inte ens synliga för kunskapschefer. (Knowledge managers can also remove topics in the topic center after discovery.)
 
-Om du vill utesluta ämnen på administratörsnivå måste du lägga till dem i en CSV-fil och ladda upp filen. Du kan göra detta under installationen eller senare.
+Om du vill utesluta ämnen på administratörsnivå måste du lägga till dem i .csv filen och ladda upp filen. Du kan göra detta under installationen eller senare.
 
-CSV-filen måste innehålla följande parametrar:
+Filen .csv måste innehålla följande parametrar:
 
 - **Namn**: Skriv namnet på det ämne som du vill utesluta. Du kan göra det på två sätt:
 - **MatchType-Exact/Partial**: Ange om namnet du angav var en *exakt eller* *delvis* matchningstyp.
@@ -126,7 +128,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 ## <a name="administration"></a>Administration
 
-När du ställer in Ämnen skapas ett ämnescenter automatiskt som en del av installationen. Fundera på vad du vill ge ämnescentret ett namn och vad du vill att URL-adressen ska vara. Du kan ange både namn och URL som en del av installationen och du kan ändra namnet (men inte URL:en) senare i administrationscentret för Microsoft 365. Du kan bara ha ett ämnescenter.
+När du ställer in Ämnen skapas ett ämnescenter automatiskt som en del av installationen. Fundera på vad du vill ge ämnescentret ett namn och vad du vill att URL-adressen ska vara. Du kan ange både namn och URL som en del av installationen och du kan ändra namn (men inte URL) senare i Microsoft 365 administrationscenter. Du kan bara ha ett ämnescenter.
 
 ## <a name="setup-checklist"></a>Checklista för konfiguration
 
@@ -146,8 +148,8 @@ När du skapar ämnesupplevelser behöver du följande när du går igenom insta
 
 [Hantera ämnesidentifiering i Microsoft 365](topic-experiences-discovery.md)
 
-[Hantera synlighet för ämnen i Microsoft 365](topic-experiences-knowledge-rules.md)
+[Hantera synligheten för ämnen i Microsoft 365](topic-experiences-knowledge-rules.md)
 
 [Hantera ämnesbehörigheter i Microsoft 365](topic-experiences-user-permissions.md)
 
-[Ändra namn på ämnescentret i Microsoft 365](topic-experiences-administration.md)
+[Ändra namnet på ämnescentret i Microsoft 365](topic-experiences-administration.md)

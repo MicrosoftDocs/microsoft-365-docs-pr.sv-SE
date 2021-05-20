@@ -14,44 +14,70 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Nu kan du använda DLP-principer Microsoft Teams chattar och kanaler. Läs den här artikeln om du vill veta mer om hur det fungerar.
-ms.openlocfilehash: 9fdce86473dcfbb7ec75b9d371b8782d4141ef57
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+description: Microsoft Teams chattar och kanaler har stöd för DLP-principer (Data Loss Prevention).
+ms.openlocfilehash: e55bfa34b2495465f573bcede3ebda2308dbbbbc
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572471"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583394"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Skydd mot dataförlust och Microsoft Teams
 
-> [!NOTE]
-> Funktioner för dataförlustskydd har nyligen lagts till i Microsoft Teams chatt- och kanalmeddelanden för användare som är licensierade för Office 365 E5/A5, Microsoft 365 E5/A5, Microsoft 365 Information Protection and Governance eller Office 365 Advanced Compliance. Office 365 och Microsoft 365 E3 DLP-skydd för SharePoint Online, OneDrive och Exchange Online. Det omfattar även filer som delas via Teams eftersom Teams använder SharePoint Online och OneDrive för att dela filer.
-Stöd för DLP-skydd i Teams chatt kräver E5.
-Mer information om licenskrav finns i [licensvägledning Microsoft 365 Tenant-Level Services Licensing Guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
-
-## <a name="overview-of-dlp-for-microsoft-teams"></a>Översikt över DLP för Microsoft Teams
-
-Nyligen [utökades funktioner för skydd](dlp-learn-about-dlp.md) mot dataförlust med funktioner för Microsoft Teams och kanalmeddelanden, **inklusive meddelanden i privata kanaler.** 
-
-> [!IMPORTANT]
-> DLP gäller för närvarande endast för de faktiska meddelandena i chatten eller kanaltråden. Aktivitetsmeddelanden – som innehåller en kort förhandsgranskning av meddelanden och visas  baserat på en användares meddelandeinställningar – ingår inte i Teams DLP för stunden. Känslig information som finns i den del av meddelandet som visas i förhandsgranskningen fortsätter att visas i meddelandet även efter att DLP-principen har tillämpats och tagit bort känslig information i själva meddelandet.
-
-Om din organisation har DLP kan du nu definiera principer som hindrar personer från att dela känslig information i en Microsoft Teams-kanal eller chattsession. Här är några exempel på hur skyddet fungerar:
+Om din organisation har skydd mot dataförlust (DLP) kan du definiera principer som hindrar personer från att dela känslig information i en Microsoft Teams kanal eller chattsession. Här är några exempel på hur skyddet fungerar:
 
 - **Exempel 1: Skydda känslig information i meddelanden**. Anta att någon försöker dela känslig information i en Teams eller kanal med gäster (externa användare). Om en DLP-princip har definierats för att förhindra detta, tas meddelanden med känslig information som skickas till externa användare bort. Det sker automatiskt, och inom några sekunder, beroende på hur DLP-principen har konfigurerats.
 
     > [!NOTE]
     > DLP för Microsoft Teams blockerar känsligt innehåll när det delas Microsoft Teams användare som har:<br/>- [gäståtkomst](/MicrosoftTeams/guest-access) i team och kanaler; eller<br/>- [extern åtkomst](/MicrosoftTeams/manage-external-access) i möten och chattsessioner. <p>DLP för externa chattsessioner fungerar bara om både avsändaren och mottagaren är i Teams och använder [Microsoft Teams intern federation.](/microsoftteams/manage-external-access) DLP för Teams inte blockera meddelanden i [interop](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business) med Skype för företag eller icke-ursprungliga federerade chattsessioner.
 
-- **Exempel 2: Skydda känslig information i dokument**. Anta att någon försöker dela ett dokument med gäster i en Microsoft Teams kanal eller chatt, och att dokumentet innehåller känslig information. Om en DLP-princip har definierats för att förhindra det öppnas inte dokumentet för dessa användare. Observera att i det här fallet måste DLP-principen innehålla SharePoint och OneDrive för att skyddet ska vara på plats. (Det här är ett exempel på DLP för SharePoint som visas i Microsoft Teams och kräver därför att användarna är licensierade för Office 365 DLP (ingår i Office 365 E3), men inte kräver att användarna är licensierade för Office 365 Advanced Compliance.)
+- **Exempel 2: Skydda känslig information i dokument**. Anta att någon försöker dela ett dokument med gäster i en Microsoft Teams kanal eller chatt, och att dokumentet innehåller känslig information. Om en DLP-princip har definierats för att förhindra det öppnas inte dokumentet för dessa användare. Din DLP-princip måste SharePoint och OneDrive för att skyddet ska vara på plats. Det här är ett exempel på DLP för SharePoint som visas i Microsoft Teams och kräver därför att användarna är licensierade för Office 365 DLP (ingår i Office 365 E3), men inte att användarna måste vara licensierade för Office 365 Advanced Compliance.)
+
+## <a name="dlp-licensing-for-microsoft-teams"></a>DLP-licensiering för Microsoft Teams
+
+[Funktionerna för skydd mot](dlp-learn-about-dlp.md) dataförlust har utökats så att de omfattar Microsoft Teams och kanalmeddelanden, **inklusive meddelanden i privata kanaler** för:
+
+- Office 365 E5/A5
+- Microsoft 365 E5/A5
+- Microsoft 365 Informationsskydd och styrning
+- Office 365 Advanced Compliance
+
+Office 365 och Microsoft 365 E3 DLP-skydd för SharePoint Online, OneDrive och Exchange Online. Det omfattar även filer som delas via Teams eftersom Teams använder SharePoint Online och OneDrive för att dela filer.
+
+Stöd för DLP-skydd i Teams chatt kräver E5.
+
+Mer information om licenskrav finns i [licensvägledning Microsoft 365 Tenant-Level Services Licensing Guidance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+
+> [!IMPORTANT]
+> DLP gäller endast för de faktiska meddelandena i chatten eller kanaltråden. Aktivitetsmeddelanden – som innehåller en kort förhandsgranskning och visas utifrån en  användares meddelandeinställningar – tas inte med i Teams DLP. Känslig information som finns i den del av meddelandet som visas i förhandsgranskningen fortsätter att visas i meddelandet även efter att DLP-principen har tillämpats och tagit bort känslig information i själva meddelandet.
+
+## <a name="scope-of-dlp-protection"></a>DLP-skyddets omfattning
+
+DLP-skydd tillämpas olika på Teams enheter.
+
+|Användarkonton/grupper/lista  |Teams Entitet |DLP-skydd tillgängligt|
+|---------|---------|---------|
+|enskilda användarkonton     |1:1/n chattar         |ja         |
+|     |allmänna chattar         |Nej         |
+|     |delade kanaler         |Nej         |
+|     |privata kanaler         |ja         |
+|säkerhetsgrupper/distributionslistor  | 1:1/n chattar         |ja         |
+|     |allmänna chattar         |Nej         |
+|     |delade kanaler         |Nej      |
+|     |privata kanaler         |ja        |
+|Microsoft 365 grupp    |1:1/n chattar          |Nej         |
+|     |allmänna chattar          |ja        |
+|     |delade kanaler|ja |
+|     |privata kanaler|Nej| 
+
 
 ## <a name="policy-tips-help-educate-users"></a>Principtips hjälper till att utbilda användare
 
-På liknande sätt som DLP fungerar i [Exchange, Outlook, Outlook](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web)på webben [, SharePoint Online, OneDrive för företag-webbplatser](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)och Office-skrivbordsklienter visas principtips när en åtgärd står i konflikt med en DLP-princip. [](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs) Här är ett exempel på ett principtips:
+På liknande sätt som DLP fungerar i [Exchange, Outlook, Outlook](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web)på webben [, SharePoint Online, OneDrive för företag-webbplatser](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)och Office-skrivbordsklienter visas principtips när en åtgärd utlöses med en DLP-princip. [](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs) Här är ett exempel på ett principtips:
 
 ![Meddelande om blockerat meddelande i Teams](../media/dlp-teams-blockedmessage-notification.png)
 
-I det här fallet försökte avsändaren dela ett personnummer i en Microsoft Teams kanal. Länken **Vad kan jag göra?** öppnar en dialogruta med alternativ för att avsändaren ska kunna lösa problemet. Observera att i det här fallet kan avsändaren välja att åsidosätta principen eller meddela en administratör att granska och lösa den.
+Här försökte avsändaren dela ett personnummer i en Microsoft Teams kanal. Länken **Vad kan jag göra?** öppnar en dialogruta med alternativ för att avsändaren ska kunna lösa problemet. Observera att avsändaren kan välja att åsidosätta principen eller meddela en administratör att granska och lösa den.
 
 ![Alternativ för att lösa blockerade meddelanden](../media/dlp-teams-blockedmessage-possibleactions.png)
 
@@ -66,7 +92,7 @@ Gå tillbaka till vårt exempel, där en avsändare delade ett personnummer i en
 
 Du måste ha tilldelats en roll som har behörighet att redigera DLP-principer för att kunna utföra den här uppgiften. Mer information finns i [Behörigheter.](data-loss-prevention-policies.md#permissions)
 
-1. Gå till Säkerhets- & [https://protection.office.com](https://protection.office.com) () och logga in.
+1. Gå till efterlevnadscentret [https://compliance.microsoft.com](https://compliance.microsoft.com) () och logga in.
 
 2. Välj **Policy för skydd mot**  >  **dataförlust**.
 
@@ -93,7 +119,7 @@ Det kan ta ungefär en timme innan ändringarna fungerar via datacentret och syn
 
 Du måste ha tilldelats en roll som har behörighet att redigera DLP-principer för att kunna utföra den här uppgiften. Mer information finns i [Behörigheter.](data-loss-prevention-policies.md#permissions)
 
-1. Gå till Säkerhets- & [https://protection.office.com](https://protection.office.com) () och logga in.
+1. Gå till efterlevnadscentret [https://compliance.microsoft.com](https://compliance.microsoft.com) () och logga in.
 
 2. Välj **Policy för skydd mot**  >  **dataförlust**.
 
@@ -124,7 +150,7 @@ Det kan ta ungefär en timme innan ändringarna fungerar via datacentret och syn
 
 Du måste ha tilldelats en roll som har behörighet att redigera DLP-principer för att kunna utföra den här uppgiften. Mer information finns i [Behörigheter.](data-loss-prevention-policies.md#permissions)
 
-1. Gå till Säkerhets- & [https://protection.office.com](https://protection.office.com) () och logga in.
+1. Gå till efterlevnadscentret [https://compliance.microsoft.com](https://compliance.microsoft.com) () och logga in.
 
 2. Välj **Policy för skydd mot**  >    >  **dataförlust + Skapa en princip.**
 
@@ -148,9 +174,9 @@ Du måste ha tilldelats en roll som har behörighet att redigera DLP-principer f
     > [!NOTE]
     > Om du vill kontrollera att dokument som innehåller känslig information inte delas olämpligt i Teams kontrollerar du att **SharePoint-webbplatser** och **OneDrive-konton** är aktiverat tillsammans med Teams-chatt- och **kanalmeddelanden.**
 
-6. På fliken **Principinställningar,** under **Anpassa** den typ av innehåll som du vill skydda, behåll de enkla standardinställningarna eller välj Använd avancerade inställningar och välj sedan **Nästa.** Om du väljer avancerade inställningar kan du skapa eller redigera regler för principen. (Om du behöver hjälp med detta kan du [gå till Enkla inställningar och avancerade inställningar](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings).)
+6. På fliken **Principinställningar,** under **Anpassa** den typ av innehåll som du vill skydda, behåll de enkla standardinställningarna eller välj Använd avancerade inställningar och välj sedan **Nästa.** Om du väljer avancerade inställningar kan du skapa eller redigera regler för principen. Om du behöver hjälp med detta kan du [gå till Enkla inställningar jämfört med avancerade inställningar.](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)
 
-7.  Granska **inställningarna under** Vad vill du göra om vi hittar känslig **information?** på fliken Principinställningar. (Här kan du välja att behålla standardprinciptips [och e-postaviseringar](use-notifications-and-policy-tips.md)eller anpassa dem.)
+7.  Granska **inställningarna under** Vad vill du göra om vi hittar känslig **information?** på fliken Principinställningar. Här kan du välja att behålla standardprinciptips [och e-postaviseringar](use-notifications-and-policy-tips.md)eller anpassa dem.
 
     > [!div class="mx-imgBorder"]
     > ![DLP-principinställningar med tips och meddelanden](../media/dlp-teams-policysettings-tipsemails.png)
@@ -205,6 +231,5 @@ DLP-princip i praktiken när gäst försöker öppna ett dokument i Teams med ex
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Skapa, testa och justera en DLP-princip](create-test-tune-dlp-policy.md)
-
-[Skicka e-postaviseringar och visa principtips för DLP-principer](use-notifications-and-policy-tips.md)
+- [Skapa, testa och justera en DLP-princip](create-test-tune-dlp-policy.md)
+- [Skicka e-postaviseringar och visa principtips för DLP-principer](use-notifications-and-policy-tips.md)

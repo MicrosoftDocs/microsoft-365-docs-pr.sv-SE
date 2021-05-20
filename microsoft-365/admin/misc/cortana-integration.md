@@ -18,13 +18,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
-description: När användare är inloggade med giltiga arbets- eller skolkonton kan de få molnbaserade hjälptjänster med Cortana i Microsoft 365-upplevelser som uppfyller Office 365:s sekretess, säkerhet och efterlevnad på företagsnivå.
-ms.openlocfilehash: dd00972f6e84f5d430ad860ea9cbf637bd7c790f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Användare med giltiga arbets- eller skolkonton kan få Cortana i Microsoft 365 funktioner som uppfyller Office 365 säkerhet på företagsnivå.
+ms.openlocfilehash: aad371fc531a03f42e1756a41405082b6b528b06
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537469"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582782"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana i Microsoft 365
 
@@ -183,3 +183,12 @@ Inaktivera Cortana-åtkomst till din organisations Microsoft-värddata
 3. Välj **Spara ändringar**.
 
 Microsoft är datakontrollant för [tjänster](https://go.microsoft.com/fwlink/p/?LinkId=2109174) som [regleras av Tjänstavtal](https://privacy.microsoft.com/privacystatement)för Microsoft och Microsofts sekretesspolicy. Som datakontrollant använder Microsoft data för att förbättra produkter och tjänster i enlighet med [Microsofts sekretesspolicy.](https://privacy.microsoft.com/privacystatement)
+
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Cortana rösthjälp i Teams](/microsoftteams/cortana-in-teams) (artikel)
+
+[Konfigurera Cortana i Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (artikel)
+
+[Vad kan du göra med Spela upp mina e-postmeddelanden från Cortana?](https://support.microsoft.com/help/4558256)

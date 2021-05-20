@@ -6,18 +6,18 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 05/19/2021
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Lär dig hur du Microsoft Teams skapa din kanal för kontraktshantering med hjälp av en Microsoft 365 lösning.
-ms.openlocfilehash: d703f6f7286a6d9584e8b18d4e283174f42a95bd
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 20ace5d17550c8dd800368957dd940c9857bce5d
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301806"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583142"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Steg 2. Använd Microsoft Teams för att skapa din kanal för kontraktshantering
 
@@ -44,13 +44,13 @@ När du bifogat SharePoint-dokumentbiblioteket kan du visa alla klassificerade k
 ## <a name="customize-your-contracts-tab-tile-view"></a>Anpassa panelvyn på fliken Kontrakt
 
 > [!NOTE]
-> Det här avsnittet refererar till kodexempel som **finns iContractCard.js** filen som ingår i **zip-filen solutionfiles.**
+> Det här avsnittet refererar till kodexempel som finns [iContractTileFormatting.js](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) filen som ingår i lagringsplatsen för lösningstillgångar [i kontraktshantering.](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management)
 
 Även Teams visa kontrakten i en panelvy kan du anpassa dem för att visa de kontraktsdata du vill göra synliga på kontraktskortet. För fliken Kontrakt är **det till** exempel viktigt att medlemmarna ser klienten, leverantören och avgiftsbeloppet på kontraktskortet. Alla dessa fält har extraherats från varje kontrakt via din SharePoint Syntex-modell som tillämpats på ditt dokumentbibliotek. Du vill också kunna ändra panelrubrikfältet till olika färger för varje status så att medlemmarna enkelt kan se var avtalet ligger i godkännandeprocessen. Alla godkända kontrakt kommer till exempel att ha en blå rubrikfält.
 
    ![Listvy.](../media/content-understanding/tile.png)
 
-Den anpassade panelvyn du använder kräver att du gör ändringar i JSON-filen som används för att formatera den aktuella panelvyn. Du kan referera till den JSON-fil som används för att skapa kortvyn genom att hämta **filenContractCard.jsfilen.** I följande avsnitt visas specifika avsnitt i koden för funktioner som finns på kontraktskorten.
+Den anpassade panelvyn du använder kräver att du gör ändringar i JSON-filen som används för att formatera den aktuella panelvyn. Du kan referera till den JSON-fil som används för att skapa kortvyn genom [att tittaContractTileFormatting.jsfilen.](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) I följande avsnitt visas specifika avsnitt i koden för funktioner som finns på kontraktskorten.
 
 Om du vill se eller göra ändringar i JSON-koden för vyn i din Teams-kanal går du till Teams-kanalen, väljer listrutan Vy och väljer sedan **Formatera aktuell vy.**
 
@@ -58,7 +58,7 @@ Om du vill se eller göra ändringar i JSON-koden för vyn i din Teams-kanal gå
 
 ## <a name="card-size-and-shape"></a>Kortstorlek och -form
 
-I **ContractCard.js** filen du laddade ned i referensen zip-filen, tittar du i följande avsnitt för att se koden för hur kortets storlek och form är formaterade.
+I [ContractTileFormatting.jsfilen](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) finns i följande avsnitt för att se koden för hur kortets storlek och form är formaterade.
 
 ```JSON
                   {
@@ -84,7 +84,7 @@ I **ContractCard.js** filen du laddade ned i referensen zip-filen, tittar du i f
 
 ## <a name="contract-status"></a>Kontraktsstatus
 
-Med följande kod kan du ange status för varje titelkort. Observera att varje statusvärde *(Ny,* *I* *granskning,* Godkänd och *Avvisad)* visar olika färgkoder för varje statusvärde. Titta **iContractCard.jsfilen** du laddade ned i avsnittet som definierar statusen.
+Med följande kod kan du ange status för varje titelkort. Observera att varje statusvärde *(Ny,* *I* *granskning,* Godkänd och *Avvisad)* visar olika färgkoder för varje statusvärde. I [ContractTileFormatting.jsfilen](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) tittar du på avsnittet som definierar statusen.
 
 ```JSON
           {
@@ -109,7 +109,7 @@ Med följande kod kan du ange status för varje titelkort. Observera att varje s
 
 Varje kontraktskort visar tre fält som har extraherats för varje kontrakt *(klient,* *leverantörer* och *avgiftsbelopp).* Dessutom vill du visa det tid/datum då filen klassificerades av den SharePoint Syntex-modellen som använts för att identifiera den. 
 
-IContractCard.js **filen** du laddade ned definierar följande avsnitt var och en av dessa.
+I [ContractTileFormatting.jsfilen](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) definierar följande avsnitt var och en av dessa.
 
 ### <a name="client"></a>Klient
 

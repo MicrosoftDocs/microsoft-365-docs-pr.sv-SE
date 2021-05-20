@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: I den här artikeln kan administratörer läsa mer om skydd mot Valv-länkar i Defender för Office 365 för att skydda organisationen från nätfiske och andra angrepp som använder skadliga URL:er.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c93ed2ec46cd0fd82ae1808ff7cfdb4a4f758117
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 573fd5b92400996fa595b5953028e20fcecec976
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246507"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583586"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Valv Länkar i Microsoft Defender för Office 365
 
@@ -52,6 +52,9 @@ Valv Länkskydd är tillgängligt på följande platser:
 - **E-postmeddelanden:** Valv skydd för länkar i e-postmeddelanden styrs av Valv principer för länkar. Det finns ingen Valv för länkar, så om du vill skydda **Valv-länkar** i e-postmeddelanden måste du skapa en eller flera Valv principer för länkar. Instruktioner finns i Konfigurera [principer Valv länkar i Microsoft Defender för Office 365.](set-up-safe-links-policies.md)
 
   Mer information om hur Valv skydd mot länkar för e-postmeddelanden finns i [avsnittet Valv Länkar](#safe-links-settings-for-email-messages) för e-postmeddelanden längre fram i den här artikeln.
+  
+  > [!NOTE]
+  > Försäljningslänkar fungerar inte på e-postaktiverade gemensamma mappar.
 
 - **Microsoft Teams** (för närvarande i förhandsversionen av TAP): Valv Länkskydd för länkar i Teams-konversationer, gruppchattar eller från kanaler styrs också Valv av principer för länkar. Det finns ingen Valv-standardprincip för länkar, så om du vill skydda **Valv-länkar i Teams** måste du skapa en eller flera Valv principer för länkar.
 
@@ -65,13 +68,13 @@ Valv Länkskydd är tillgängligt på följande platser:
 
 Den här artikeln innehåller detaljerade beskrivningar av följande typer av inställningar Valv Länkar:
 
-- **Inställningar finns Valv** principer för länkar: De här inställningarna gäller endast för användare som finns med i de specifika principerna och inställningarna kan skilja sig åt mellan principer. Dessa inställningar omfattar:
+- **Inställningar finns Valv** principer för länkar: De här inställningarna gäller endast för användare som finns med i de specifika principerna och inställningarna kan skilja sig åt mellan principer. Inställningarna omfattar:
 
   - [Valv Inställningar för länkar till e-postmeddelanden](#safe-links-settings-for-email-messages)
   - [Valv Inställningar för länkar för Microsoft Teams](#safe-links-settings-for-microsoft-teams)
   - ["Skriva inte om följande URL-listor i principer Valv Länkar](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-- **Global Valv för länkar:** De här inställningarna är konfigurerade globalt, inte i Valv principer för länkar. Men inställningarna gäller endast för användare som ingår i principer för Valv aktiva länkar. Dessa inställningar omfattar:
+- **Global Valv för länkar:** De här inställningarna är konfigurerade globalt, inte i Valv principer för länkar. Men inställningarna gäller endast för användare som ingår i principer för Valv aktiva länkar. Inställningarna omfattar:
 
   - [Valv Inställningar för länkar Office 365 appar](#safe-links-settings-for-office-365-apps)
   - [Listan "Blockera följande URL:er" för Valv Länkar](#block-the-following-urls-list-for-safe-links)
@@ -107,9 +110,7 @@ Inställningarna i Valv länkar som gäller för e-postmeddelanden beskrivs i f�
   - URL:er som inte har ett giltigt rykte löses asynkront i bakgrunden.
 
 - **Använd URL-skanning** i realtid för misstänkta länkar och länkar som pekar på filer : Möjliggör genomsökning i realtid av länkar, inklusive länkar i e-postmeddelanden som pekar på hämtningsbart innehåll. Det rekommenderade värdet aktiveras.
-
   - **Vänta tills URL-skanningen är klar innan du levererar meddelandet:**
-
     - Aktiverad: Meddelanden som innehåller URL:er hålls kvar tills genomsökning är klar. Meddelanden levereras endast efter att URL:erna har bekräftats vara säkra. Det här är det rekommenderade värdet.
     - Inaktiverad: Om URL-genomsökning inte kan slutföras ska du leverera meddelandet ändå.
 
@@ -128,7 +129,6 @@ Inställningarna i Valv länkar som gäller för e-postmeddelanden beskrivs i f�
   Mer information om rekommenderade värden för principinställningarna Standard och Strikt för Valv finns i Valv principinställningar för [länkar.](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
 
 - **Mottagarfilter:** Du måste ange mottagarens villkor och undantag som avgör vem principen gäller för. Du kan använda de här egenskaperna för villkor och undantag:
-
   - **Mottagaren**
   - **Mottagarens domän är**
   - **Mottagaren är medlem i**
@@ -138,7 +138,7 @@ Inställningarna i Valv länkar som gäller för e-postmeddelanden beskrivs i f�
 - **Prioritet:** Om du skapar flera principer kan du ange i vilken ordning de ska användas. Inga två policyer kan ha samma prioritet, och policyhantering stannar efter att den första policyn har tillämpats.
 
   För mer information om ordningsföljden och hur flera policyer utvärderas och tillämpas, se [Order och prioritet för e-postskydd](how-policies-and-protections-are-combined.md).
-
+  
 ### <a name="how-safe-links-works-in-email-messages"></a>Så här Valv länkar i e-postmeddelanden
 
 Så här fungerar länkskyddet på en hög nivå för Valv-adresser i e-postmeddelanden:
@@ -259,26 +259,23 @@ När en användare i en aktiv Valv-länkprincip klickar på en blockerad länk i
 
 Du konfigurerar listan med URL-adresser i de globala inställningarna för Valv Länkar. Anvisningar finns i [Konfigurera listan "Blockera följande URL:er".](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center)
 
-> [!NOTE]
-> 
-> - En verkligt universell lista över URL:er som är blockerade överallt finns i Hantera listan över [tillåtna/blockerade klientorganisationen.](tenant-allow-block-list.md)
-> 
-> - Begränsningar:
->   - Det maximala antalet poster är 500.
->   - Den maximala längden på en post är 128 tecken.
->   - Alla poster får högst vara 10 000 tecken.
-> 
-> - Inkludera inte ett snedstreck `/` () i slutet av URL:en. Använd till exempel `https://www.contoso.com` , inte `https://www.contoso.com/` .
-> 
-> - En url som endast är en domän `contoso.com` (till `tailspintoys.com` exempel) blockerar alla URL-adresser som innehåller domänen.
-> 
-> - Du kan blockera en underdomän utan att blockera hela domänen. Spärra till `toys.contoso.com*` exempel alla URL-adresser som innehåller underdomänen, men blockerar inte URL-adresser som innehåller den fullständiga `contoso.com` domänen.
-> 
-> - Du kan ta med upp till tre jokertecken ( `*` ) per URL-post.
+**Anmärkningar**:
+
+- En verkligt universell lista över URL:er som är blockerade överallt finns i Hantera listan över [tillåtna/blockerade klientorganisationen.](tenant-allow-block-list.md)
+- Begränsningar för listan **Blockera följande URL:er:**
+  - Det maximala antalet poster är 500.
+  - Den maximala längden på en post är 128 tecken.
+  - Alla poster får högst vara 10 000 tecken.
+- Inkludera inte ett snedstreck `/` () i slutet av URL:en. Använd till exempel `https://www.contoso.com` , inte `https://www.contoso.com/` .
+- En url som endast är en domän `contoso.com` (till `tailspintoys.com` exempel) blockerar alla URL-adresser som innehåller domänen.
+- Du kan blockera en underdomän utan att blockera hela domänen. Spärra till `toys.contoso.com*` exempel alla URL-adresser som innehåller underdomänen, men blockerar inte URL-adresser som innehåller den fullständiga `contoso.com` domänen.
+- Du kan ta med upp till tre jokertecken ( `*` ) per URL-post.
 
 ### <a name="entry-syntax-for-the-block-the-following-urls-list"></a>Postsyntax för listan "Blockera följande URL:er"
 
 Exempel på värden som du kan ange och deras resultat beskrivs i följande tabell:
+
+<br>
 
 ****
 
@@ -299,24 +296,24 @@ Varje Valv-länkprincip innehåller  följande URL-lista som du kan använda fö
 
 Om du vill lägga till poster i listan i nya eller befintliga Valv finns information i Skapa [länkar Valv](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) principer eller Ändra Valv principer för [länkar.](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies)
 
-> [!NOTE]
-> 
-> - Följande klienter känner inte igen följande **URL-listor** i principer Valv Länkar. Användare som ingår i det här kan blockeras från att komma åt URL-adresser baserat på resultatet av genomsökning av Valv länkar i dessa klienter:
-> 
->   - Microsoft Teams
->   - Office-webbappar
-> 
->   En verkligt universell lista över URL:er som är tillåtna överallt finns i Hantera listan över [tillåtna/blockerade klientorganisationen.](tenant-allow-block-list.md)
-> 
-> - Överväg att lägga till ofta använda interna URL:er i listan för att förbättra användarupplevelsen. Om du till exempel har lokala tjänster, till exempel Skype för företag eller SharePoint, kan du lägga till de url-adresser som ska undantas från skanning.
-> 
-> - Om du redan har Skriver du inte om följande **URL-adresser** i principer för Valv-länkar bör du granska listorna och lägga till jokertecken efter behov. Din lista har till exempel en post som och `https://contoso.com/a` du senare bestämmer dig för att ta med undervägar som `https://contoso.com/a/b` . I stället för att lägga till en ny post kan du lägga till ett jokertecken till den befintliga posten så att den blir `https://contoso.com/a/*` .
-> 
-> - Du kan ta med upp till tre jokertecken ( `*` ) per URL-post. Jokertecken innehåller explicit prefix eller underdomäner. Posten är till exempel inte samma som , eftersom det gör att personer kan besöka `contoso.com` `*.contoso.com/*` `*.contoso.com/*` underdomäner och sökvägar i den angivna domänen.
+**Anmärkningar**:
+
+- Följande klienter känner inte igen följande **URL-listor** i principer Valv Länkar. Användare som ingår i det här kan blockeras från att komma åt URL-adresser baserat på resultatet av genomsökning av Valv länkar i dessa klienter:
+  - Microsoft Teams
+  - Office-webbappar
+
+  En verkligt universell lista över URL:er som är tillåtna överallt finns i Hantera listan över [tillåtna/blockerade klientorganisationen.](tenant-allow-block-list.md)
+
+- Överväg att lägga till ofta använda interna URL:er i listan för att förbättra användarupplevelsen. Om du till exempel har lokala tjänster, till exempel Skype för företag eller SharePoint, kan du lägga till de url-adresser som ska undantas från skanning.
+- Om du redan har Skriver du inte om följande **URL-adresser** i principer för Valv-länkar bör du granska listorna och lägga till jokertecken efter behov. Din lista har till exempel en post som och `https://contoso.com/a` du senare bestämmer dig för att ta med undervägar som `https://contoso.com/a/b` . I stället för att lägga till en ny post kan du lägga till ett jokertecken till den befintliga posten så att den blir `https://contoso.com/a/*` .
+- Du kan ta med upp till tre jokertecken ( `*` ) per URL-post. Jokertecken innehåller explicit prefix eller underdomäner. Posten är till exempel inte samma som , eftersom det gör att personer kan besöka `contoso.com` `*.contoso.com/*` `*.contoso.com/*` underdomäner och sökvägar i den angivna domänen.
+- Om en URL använder automatisk omdirigering för HTTP till HTTPS (till exempel 302-omdirigering till ) och du försöker ange både HTTP- och HTTPS-poster för samma URL i listan, kanske du märker att den andra URL-posten ersätter den första `http://www.contoso.com` `https://www.contoso.com` URL-posten. Det här beteendet inträffar inte om HTTP- och HTTPS-versionerna av URL-adressen är helt separata.
 
 ### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>Postsyntax för listan "Ange inte följande URL:er"
 
 Exempel på värden som du kan ange och deras resultat beskrivs i följande tabell:
+
+<br>
 
 ****
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 2bd719377e36cf608a0fe75078ab8bef004ad92e
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 42ab124f3026cf0b7441edf44c0e6433be5f0ecd
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346334"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583674"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Vanliga principer för identitets- och enhetsåtkomst
 
@@ -42,7 +42,7 @@ I den här vägledningen beskrivs hur du distribuerar de rekommenderade principe
 
 I följande diagram visas den rekommenderade uppsättningen principer. Den visar vilken nivå av skydd som varje princip gäller för och om principerna gäller för datorer eller telefoner och surfplattor, eller båda kategorierna av enheter. Den anger också var du konfigurerar de här principerna.
 
-[![Vanliga principer för konfiguration av identitet och enhetsåtkomst](../../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[![Vanliga principer för konfiguration av identitet och enhetsåtkomst](../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
 
 Här är en PDF-sammanfattning på en sida med länkar till de enskilda principerna:
 
@@ -112,7 +112,7 @@ I följande tabeller beskrivs inställningarna för villkorsstyrd åtkomst-princ
 
 I **avsnittet** Uppgifter:
 
-|Inställning|Egenskaper|Värden|Anteckningar|
+|Inställning|Egenskaper|Värden|Kommentar|
 |---|---|---|---|
 |Användare och grupper|Inkludera|**Välj användare och grupper > användare och grupper**: Välj specifika grupper som innehåller riktade användarkonton.|Börja med den grupp som innehåller pilotanvändarkonton.|
 ||Undanta|**Användare och grupper:** Välj din undantagsgrupp för villkorsstyrd åtkomst; tjänstkonton (appidentiteter).|Medlemskapet bör ändras tillfälligt och efter behov.|
@@ -155,7 +155,7 @@ I [den här](../../enterprise/microsoft-365-client-support-multi-factor-authenti
 
 I **avsnittet** Uppgifter:
 
-|Inställning|Egenskaper|Värden|Anteckningar|
+|Inställning|Egenskaper|Värden|Kommentar|
 |---|---|---|---|
 |Användare och grupper|Inkludera|**Välj användare och grupper > användare och grupper**: Välj specifika grupper som innehåller riktade användarkonton.|Börja med den grupp som innehåller pilotanvändarkonton.|
 ||Undanta|**Användare och grupper:** Välj din undantagsgrupp för villkorsstyrd åtkomst; tjänstkonton (appidentiteter).|Medlemskapet bör ändras tillfälligt och efter behov.|
@@ -190,7 +190,7 @@ I **avsnittet** Uppgifter:
 |Typ|Egenskaper|Värden|Åtgärd|
 |---|---|---|---|
 |Användare|Inkludera|**Alla användare**|Välj|
-|Användarrisk|**Hög**||Välj|
+|Användarrisk|**Högsta**||Välj|
 |
 
 I det andra **avsnittet uppgifter:**

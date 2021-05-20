@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 recommendations: false
 description: Lär dig att välja den domän som ska användas när du Microsoft 365 grupper genom att konfigurera principer för e-postadresser med PowerShell.
-ms.openlocfilehash: a0142ea5f5aa088c4be79fc8699a616d9cdd9390
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4d620c3344f83f56afd05c00d78615331dd413ed
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538225"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583154"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Välj den domän som ska användas när du skapar Microsoft 365 grupper
 
@@ -119,10 +119,10 @@ Det finns några fler saker att veta:
     
 - Högst 100 principer för e-postadresser kan konfigureras för en organisation.
     
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-content"></a>Relaterat innehåll
 
-[Planering av samarbetsstyrning steg för steg](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Planering av samarbetsstyrning steg för steg](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step) (artikel)
 
-[Skapa din plan för samarbetesstyrning](collaboration-governance-first.md)
+[Skapa din plan för samarbetesstyrning](collaboration-governance-first.md) (artikel)
 
-[Skapa Microsoft 365 grupp i administrationscentret](../admin/create-groups/create-groups.md)
+[Skapa en Microsoft 365 grupp i administrationscentret](../admin/create-groups/create-groups.md) (artikel)

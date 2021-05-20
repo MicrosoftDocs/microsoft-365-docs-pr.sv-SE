@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: ''
 localization_priority: None
-ms.openlocfilehash: 2e7152530dc3221eb3ab01047416993178193732
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 073c14f84f4858a1853da062bf87ae9e78c05cbd
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333824"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583598"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Ämnescenteröversikt i Microsoft Viva-ämnen
 
-I Microsoft Viva Topics är ämnescentret en modern SharePoint-webbplats som fungerar som ett kunskapscenter för din organisation. Den skapas under installationen [av Viva Topics](set-up-topic-experiences.md) i administrationscentret för Microsoft 365.
+I Microsoft Viva Topics är ämnescentret en modern SharePoint som fungerar som kunskapscentrum för organisationen. Den skapas under installationen [av Viva Topics](set-up-topic-experiences.md) i Microsoft 365 administrationscenter.
 
 I ämnescentret finns en  standardhemsida med webbdelen Ämnen där alla licensierade användare kan se ämnen som de har en anslutning till. 
 
@@ -34,10 +34,10 @@ Alla licensierade användare som kan visa ämnen har tillgång till ämnescentre
 Ämnescentret skapas under installationen av Viva Topics. När installationen är klar kan administratören hitta URL-adressen på sidan [För hantering av ämnescenter.](./topic-experiences-administration.md#to-access-topics-management-settings)
 
 
-1. I administrationscentret för Microsoft 365 väljer **du Inställningar** och sedan **Organisationsinställningar**.
+1. I Microsoft 365 väljer du Först **Inställningar** och sedan **Organisationsinställningar.**
 2. Välj **Ämnesupplevelser** på **fliken Tjänster.**
 
-    ![Koppla personer till kunskap](../media/admin-org-knowledge-options-completed.png) 
+    ![Anslut att få kunskap](../media/admin-org-knowledge-options-completed.png) 
 
 3. Välj fliken **Ämnescenter.** Under **Webbplatsadress** finns en länk till ämnescentret.
 
@@ -69,7 +69,7 @@ När en användare bekräftar sin anslutning till ett ämne kan användaren gör
 
 ## <a name="manage-topics-page"></a>Sidan Hantera ämnen
 
-För att kunna arbeta **med sidan** Hantera ämnen i ämnescentret måste du ha den behörighet för Hantera ämnen som krävs för knowledge manager-rollen. Administratören kan tilldela de här [](set-up-topic-experiences.md)behörigheterna till användare under [kunskapshanteringskonfigurationen,](topic-experiences-knowledge-rules.md) eller så kan nya användare läggas till efteråt av en administratör via administrationscentret för Microsoft 365.
+För att kunna arbeta **med sidan** Hantera ämnen i ämnescentret måste du ha den behörighet för Hantera ämnen som krävs för knowledge manager-rollen. Administratören kan tilldela de här [](set-up-topic-experiences.md)behörigheterna till användare under [kunskapshanteringskonfigurationen,](topic-experiences-knowledge-rules.md) eller så kan nya användare läggas till efteråt av en administratör via Microsoft 365 administrationscentret.
 
 På sidan **Hantera ämnen** visar instrumentpanelen ämne alla ämnen, du har åtkomst till, som har identifierats från dina angivna källplatser. Varje ämne kommer att visa det datum då ämnet upptäcktes. En användare som har tilldelats behörigheten Hantera ämnen kan granska de ofirmerade ämnena och välja att:
 
@@ -79,7 +79,7 @@ På sidan **Hantera ämnen** visar instrumentpanelen ämne alla ämnen, du har �
  
 - Ta bort ämnet: Gör att ämnet inte kan upptäckts för slutanvändare. Avsnittet flyttas till fliken **Borttaget** och kan bekräftas senare om det behövs. 
 
-Mer information om hur du hanterar ämnen på sidan **Hantera ämnen finns i [Hantera ämnen.](manage-topics.md)
+Mer information om hur du hanterar ämnen på sidan **Hantera ämnen** finns i [Hantera ämnen.](manage-topics.md)
 
 ## <a name="create-or-edit-a-topic"></a>Skapa eller redigera ett ämne
 

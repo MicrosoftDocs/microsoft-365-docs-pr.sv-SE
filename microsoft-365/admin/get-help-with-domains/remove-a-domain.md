@@ -21,13 +21,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: Lär dig hur du tar bort en gammal domän från Microsoft 365 och flyttar användare och grupper till en annan domän.
-ms.openlocfilehash: 3586cc8b288b77725c0dd3484629688e98e0a218
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+description: Lär dig hur du tar bort en gammal domän från Microsoft 365 och flyttar användare och grupper till en annan domän eller avbryter prenumerationen.
+ms.openlocfilehash: 089f0378109dd2a5abdf922694390bfdc943693a
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572123"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582938"
 ---
 # <a name="remove-a-domain"></a>Ta bort en domän
   
@@ -218,10 +218,10 @@ Fungerar det fortfarande inte? Domänen kan behöva tas bort manuellt. [Ring oss
   
 ::: moniker-end
 
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-content"></a>Relaterat innehåll
 
-[Vanliga frågor och svar om domäner](../setup/domains-faq.yml)
+[Vanliga frågor och svar](../setup/domains-faq.yml) om domäner (artikel)
 
-[Byta till ett annat Microsoft 365 för företag-abonnemang](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[Byta till ett annat Microsoft 365 för företag-abonnemang](../../commerce/subscriptions/switch-to-a-different-plan.md) (artikel)
 
-[Avbryt prenumerationen](../../commerce/subscriptions/cancel-your-subscription.md)
+[Avsluta din prenumeration](../../commerce/subscriptions/cancel-your-subscription.md) (artikel)

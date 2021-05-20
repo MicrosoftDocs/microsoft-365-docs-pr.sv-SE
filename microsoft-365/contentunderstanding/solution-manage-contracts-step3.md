@@ -6,18 +6,18 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 05/19/2021
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Lär dig hur du Power Automate skapa ett flöde för att bearbeta kontrakt med en Microsoft 365 lösning.
-ms.openlocfilehash: d9892110d6aebd3eaae6fbc21d453b7eb14d7f7e
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 54e92f36b19cefde92111cdbc960fad7715cf8b0
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281363"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583106"
 ---
 # <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a>Steg 3. Använd Power Automate för att skapa ett flöde för att bearbeta dina kontrakt
 
@@ -36,11 +36,11 @@ Följande diagram visar Power Automate för kontraktshanteringslösningen.
 
 ## <a name="prepare-your-contract-for-review"></a>Förbered ditt kontrakt för granskning
 
-När ett kontrakt identifieras och klassificeras av din förstå-modell för SharePoint Syntex-dokument ändrar Power Automate-flödet först statusen till "Granskad".
+När ett kontrakt identifieras och klassificeras av din förstå-modell för SharePoint Syntex-dokument ändrar Power Automate-flödet först statusen till **I granskning.**
 
 ![Uppdateringsstatus.](../media/content-understanding/flow-overview.png)
 
-När du har checkat ut filen ändrar du statusvärdet till "Granska".
+När du checkat ut filen ändrar du statusvärdet till **Vid granskning**.
 
 ![I granskningsstatus.](../media/content-understanding/in-review.png)
 
@@ -141,7 +141,7 @@ När ett kontrakt har godkänts inträffar följande:
 
    ![Kortstatus godkänd.](../media/content-understanding/approved-contracts-tab.png)
 
-- I flödet ändras statusen till "Godkänd".
+- I flödet ändras statusen till **Godkänd.**
 
    ![Flow status godkänd.](../media/content-understanding/status-approved.png)
 

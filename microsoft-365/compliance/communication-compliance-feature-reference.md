@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: dcae50150eb3b21e65e68a5cea376a0cdef31a65
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3df8fbf20fd00bd584af2fd329949939433a19eb
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538453"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583490"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referens för funktioner för kommunikationsefterlevnad
 
@@ -311,6 +311,7 @@ Med filter för kommunikationsefterlevnad kan du filtrera och sortera varningsme
 | **Storlek** | Storleken på meddelandet i KB. |
 | **Ämne/rubrik** | Meddelandets ämne eller chattens rubrik. |
 | **Taggar** | Taggarna som tilldelats ett meddelande, *antingen Questionable*, *Compliant* eller *Non-compliant*. |
+| **Språk** | Textens språk har upptäckts i meddelandet. Meddelandet klassificeras enligt språket i det mesta av meddelandetexten. Om till exempel ett meddelande som innehåller både tysk och italienska text, men större delen av texten är tyska, klassificeras meddelandet som tyska (DE). Följande språk stöds: kinesiska (förenklad – ZH), engelska (EN), franska (FR), tyska (DE), italienska (IT), japanska (JP), portugisiska (PT) och spanska (ES). Om du till exempel vill filtrera meddelanden som klassificeras som tyska och italienska anger du DE,IT (de tvåsiffriga språkkoderna) i sökrutan Språkfilter. Om du vill visa en identifierad språkklassificering för ett meddelande markerar du ett meddelande, väljer Visa meddelandeinformation och bläddrar till fältet EmailDetectedLanguage. |
 | **Eskalerad till** | Användarnamnet på den person som ingår i en eskaleringsåtgärd för meddelanden. |
 | **Klassificerare** | Namnet på inbyggda och anpassade klassificerare som gäller för meddelandet. Några exempel är *anstötligt* *språk,* riktade trakasserier, *svordomar,* *hot* och mycket mer.
 

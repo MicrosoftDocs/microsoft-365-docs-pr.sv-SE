@@ -24,13 +24,13 @@ search.appverid:
 - GEU150
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
-description: Lär dig att lägga till och konfigurera din domän i Microsoft 365 så att tjänster som e-post och Skype för företag – Online använder ditt eget domännamn.
-ms.openlocfilehash: 1348beb09fcbc5c12d01dbf197b1cb1240decded
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+description: Lär dig att lägga till och konfigurera din domän i Microsoft 365 så att tjänster som e-post och Skype för företag Online använder ditt eget domännamn.
+ms.openlocfilehash: 447cc69aa2c4c3edcf1c4c6a2435cdc27fc22cd2
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332648"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582998"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Ändra namnservrar för att konfigurera Microsoft 365 med valfri domänregistrator
 
@@ -40,7 +40,7 @@ Följ de här anvisningarna för att lägga till och konfigurera din domän i Mi
   
 - Du har en egen domän och vill konfigurera den så att den fungerar med Microsoft 365.
     
-- Du vill att Microsoft 365 ska hantera dina DNS-poster åt dig. (Du kan även välja att [hantera DNS-posterna själv](../setup/add-domain.md).)
+- Du vill Microsoft 365 att hantera dina DNS-poster åt dig. (Du kan även välja att [hantera DNS-posterna själv](../setup/add-domain.md).)
     
 ## <a name="add-a-txt-or-mx-record-for-verification"></a>Lägga till en TXT- eller MX-post för verifiering
 <a name="BKMK_verify"> </a>
@@ -106,7 +106,7 @@ När Microsoft 365 hittar rätt TXT-post är din domän verifierad.
 ## <a name="change-your-domains-nameserver-ns-records"></a>Ändra domänens namnserverposter (NS)
 <a name="BKMK_nameservers"> </a>
 
-När du kommer till det sista steget i domäninstallationsguiden i Microsoft 365 har du en uppgift kvar. Om du vill konfigurera domänen med Microsoft 365-tjänster, till exempel e-post, ändrar du domänens namnserverposter (eller NS-poster) hos domänregistratorn så att de pekar på de primära och sekundära Microsoft 365-namnservrarna. Eftersom Microsoft 365 fungerar som DNS-värd konfigureras sedan de nödvändiga DNS-posterna för dina tjänster automatiskt. Du kan uppdatera namnserverposterna själv genom att följa de steg som domänregistratorn tillhandahåller i hjälpavsnitten på sin webbplats (om det finns några). Om du inte är bekant med DNS kontaktar du supporten hos domänregistratorn.
+När du kommer till det sista steget i domäninstallationsguiden i Microsoft 365 har du en uppgift kvar. Om du vill konfigurera domänen med Microsoft 365-tjänster som e-post kan du ändra domänens namnserverposter (eller NS-poster) hos domänregistratorn så att de pekar på Microsoft 365 primära och sekundära namnservrar. Eftersom DNS Microsoft 365 inte är värd för, konfigureras sedan de nödvändiga DNS-posterna för dina tjänster automatiskt. Du kan uppdatera namnserverposterna själv genom att följa de steg som domänregistratorn tillhandahåller i hjälpavsnitten på sin webbplats (om det finns några). Om du inte är bekant med DNS kontaktar du supporten hos domänregistratorn.
 
 ::: moniker range="o365-worldwide"
   
@@ -129,7 +129,7 @@ Gör så här om du själv vill ändra domänens namnservrar på din domänregis
 3. Spara ändringarna.
     
 > [!CAUTION]
-> När du ändrar domänens NS-poster så att de pekar på Microsoft 365-namnservrarna påverkas alla tjänster som är kopplade till domänen. Om du hoppade över något steg i guiden, t.ex. att lägga till e-postadresser, eller om du använder domänen för bloggar, varukorgar eller andra tjänster, måste du vidta ytterligare åtgärder så att ändringen inte innebär att tjänster som åtkomst till e-post och den aktuella webbplatsen slutar fungera. 
+> Om du ändrar domänens NS-poster så att de pekar Microsoft 365 namnservrarna påverkas alla tjänster som är kopplade till domänen. Om du hoppade över något steg i guiden, t.ex. att lägga till e-postadresser, eller om du använder domänen för bloggar, varukorgar eller andra tjänster, måste du vidta ytterligare åtgärder så att ändringen inte innebär att tjänster som åtkomst till e-post och den aktuella webbplatsen slutar fungera. 
 
 ::: moniker-end
 
@@ -156,9 +156,9 @@ Gör så här om du själv vill ändra domänens namnservrar på din domänregis
   
 Här följer exempel på några åtgärder som krävs för e-post och webbplatser:
   
-- Flytta alla e-postadresser som använder din domän till Microsoft 365 innan du ändrar NS-posterna.
+- Flytta alla e-postadresser som använder din domän Microsoft 365 du ändrar NS-posterna.
     
-- Vill du lägga till en domän som för tillfället används med en webbadress som www.fourthcoffee.com? När du lägger till domänen kan du vidta åtgärder nedan för att se till att webbplatsen ligger kvar på samma plats så att personer fortfarande kan komma till webbplatsen när du har ändrat domänens NS-poster så att de pekar mot Microsoft 365.
+- Vill du lägga till en domän som för tillfället används med en webbadress som www.fourthcoffee.com? När du lägger till domänen kan du vidta åtgärder nedan för att se till att webbplatsen ligger kvar på samma plats så att personer fortfarande kan komma till webbplatsen när du har ändrat domänens NS-poster så att de pekar Microsoft 365.
 
 1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
 
@@ -196,3 +196,10 @@ När namnserverposterna har uppdaterats så att de pekar på Microsoft är domä
 > [!NOTE]
 > Det kan ta flera timmar innan ändringarna har uppdaterats genom hela DNS-systemet på Internet. Sedan är din Microsoft-e-post och andra tjänster inställda på att fungera med din domän. 
   
+## <a name="related-content"></a>Relaterat innehåll
+
+[Lägga till DNS-poster för att ansluta din domän](create-dns-records-at-any-dns-hosting-provider.md) (artikel)
+
+[Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster](find-and-fix-issues.md) (artikel)
+
+[Hantera domäner](index.yml) (länksida)

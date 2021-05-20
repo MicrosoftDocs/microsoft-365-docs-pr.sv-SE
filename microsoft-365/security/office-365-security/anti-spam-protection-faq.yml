@@ -20,12 +20,12 @@ metadata:
   description: Administratörer kan visa vanliga frågor och svar om skydd mot skräppost i Exchange Online Protection (EOP).
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 430ed10d74dea909415ee0ca32d33ad8d006ae6b
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: e632ab1183c43cd50da7c2cf7832a5a18fa64d50
+  ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
   ms.translationtype: MT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52334138"
+  ms.lasthandoff: 05/20/2021
+  ms.locfileid: "52583622"
 title: Vanliga frågor och svar om skydd mot skräppost
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -40,7 +40,7 @@ summary: >
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-  Det här avsnittet innehåller vanliga frågor och svar om skydd mot skadlig programvara för Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor.
+  Det här avsnittet innehåller vanliga frågor och svar om skydd mot skadlig programvara för Microsoft 365-organisationer med postlådor i Exchange Online eller fristående organisationer med Exchange Online Protection (EOP) utan Exchange Online postlådor.
 
 
   Frågor och svar om karantän finns i Vanliga frågor [och svar om karantän.](quarantine-faq.yml)
@@ -61,7 +61,7 @@ sections:
 
       > [!IMPORTANT]
 
-      > I hybriddistributioner där EOP skyddar lokala postlådor måste du konfigurera två Exchange-e-postflödesregler (kallas även transportregler) i den lokala Exchange-organisationen för att identifiera rubrikerna för EOP-skräppostfiltrering som läggs till i meddelanden. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+      > I hybriddistributioner där EOP skyddar lokala postlådor måste du konfigurera två e-postflödesregler för Exchange (kallas även transportregler) i den lokala Exchange-organisationen för att identifiera de skräppostfiltreringsrubriker för EOP som läggs till i meddelanden. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
        **För utgående meddelanden:** Meddelandet dirigeras antingen [](high-risk-delivery-pool-for-outbound-messages.md) via högriskleveranspoolen eller returneras till avsändaren i en rapport om utebliven leverans (kallas även NDR eller icke-leveranskavvisningsmeddelande). Mer information om skydd mot utgående skräppost finns i [Kontrollerna för utgående skräppost.](outbound-spam-controls.md)
   - question: >
@@ -70,7 +70,9 @@ sections:
       En variant på nolldagars skräppost är en första generationens, tidigare okänd variant av skräppost som aldrig har fångats eller analyserats, så våra filter mot skräppost har ännu ingen information tillgänglig för att upptäcka den. När vi har fångat och analyserat ett skräppostexempel utan dag av skräppostanalytiker, och om det uppfyller klassificeringskriterierna för skräppost, uppdateras våra skräppostfilter för att identifiera det och betraktas inte längre som "nolldagar".
 
 
-      **Obs!** Om du får ett meddelande som kan vara en variant av noll dagars skräppost kan du skicka meddelandet till Microsoft med någon av de metoder som beskrivs i Rapportera meddelanden och filer till Microsoft för att hjälpa oss att förbättra [tjänsten.](report-junk-email-messages-to-microsoft.md)
+      > [!NOTE]
+
+      > Om du får ett meddelande som kan vara en variant av noll dagars skräppost kan du skicka meddelandet till Microsoft med någon av de metoder som beskrivs i Rapportera meddelanden och filer till Microsoft för att hjälpa oss att förbättra [tjänsten.](report-junk-email-messages-to-microsoft.md)
   - question: >
       Behöver jag konfigurera tjänsten för att skydda mot skräppost?
     answer: >
@@ -80,7 +82,7 @@ sections:
       Mer information finns i följande avsnitt:
 
 
-      [Rekommenderade inställningar för EOP och Microsoft Defender för Office 365-säkerhet](recommended-settings-for-eop-and-office365.md)
+      [Rekommenderade inställningar för EOP och Microsoft Defender för Office 365 säkerhet](recommended-settings-for-eop-and-office365.md)
 
 
       [Konfigurera anslutningsfiltrering i EOP](configure-the-connection-filter-policy.md)
@@ -109,10 +111,10 @@ sections:
   - question: >
       Kan jag få rapporter om skräppost?
     answer: >
-      Ja, du kan till exempel få en rapport om identifiering av skräppost i administrationscentret för Microsoft 365. I den här rapporten visas skräppostvolymen som antalet unika meddelanden. Mer information om rapportering finns i följande länkar:
+      Ja, du kan till exempel få en rapport om identifiering av skräppost i Microsoft 365 administrationscenter. I den här rapporten visas skräppostvolymen som antalet unika meddelanden. Mer information om rapportering finns i följande länkar:
 
 
-      Exchange Online-kunder: [Övervaka, rapportera och meddelandespårning i Exchange Online](/exchange/monitoring/monitoring)
+      Exchange Online kunder: [Övervaka, rapportera och meddelandespårning i Exchange Online](/exchange/monitoring/monitoring)
 
 
       Fristående EOP-kunder: [Rapportering och meddelandespårning i Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md)
@@ -133,10 +135,10 @@ sections:
       Ja. Vi rekommenderar att du pekar MX-posten på Microsoft, men vi inser att det finns legitima affärsorsaker till att dirigera din e-post till något annat ställe än Microsoft först.
 
 
-      - **Inkommande:** Ändra mx-posterna så att de pekar på tredjepartsleverantören och omdirigera sedan meddelandena till EOP för ytterligare bearbetning. Mer information finns i [Utökad filtrering för kopplingar i Exchange Online.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
+      - **Inkommande:** Ändra mx-posterna så att de pekar på tredjepartsleverantören och omdirigera sedan meddelandena till EOP för ytterligare bearbetning. Mer information finns i [Utökad filtrering för kopplingar i Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
 
-      - **Utgående**: Konfigurera smart värddirigering från Microsoft 365 till tredjepartsleverantören.
+      - **Utgående**: Konfigurera smart värddirigering från Microsoft 365 till målleverantören.
   - question: >
       Har Microsoft någon dokumentation om hur jag kan skydda mig mot nätfiske?
     answer: >

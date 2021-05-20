@@ -17,14 +17,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
 search.appverid: MET150
-description: Läs om hur du får en kostnadsfri utvärderingsversion eller köper en prenumeration Microsoft 365 för företag.
+description: Registrera dig för en kostnadsfri 30-dagars utvärderingsversion för Microsoft 365 Business Standard, Microsoft 365 Business Premium eller Microsoft 365-applikationer för affärsverksamhet.
 ms.date: 08/07/2020
-ms.openlocfilehash: 78716d78745616530729ff2fa5cfa31202e056c8
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 20ceb683c6224e572a1c532330d45fa8fa5c8416
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344692"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583454"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Prova eller köp en Microsoft 365 för företag-prenumeration
 
@@ -143,9 +143,9 @@ Om du redan har en prenumeration och lägger till en ny prenumeration kan du fly
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Microsoft 365 utbildningsvideor för företag](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (utbildningsvideor)\
+[Microsoft 365 för företag-utbildningsvideor](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (video)\
 [Lägga till användare och tilldela licenser samtidigt](../admin/add-users/add-users.md) (artikel)\
 [Tilldela licenser till användare](../admin/manage/assign-licenses-to-users.md) (artikel)\
 [Uppgradera till ett annat abonnemang](subscriptions/upgrade-to-different-plan.md) (artikel)\
 [Köp eller redigera ett tillägg för Microsoft 365 företag](buy-or-edit-an-add-on.md) (artikel)\
-[Lägga till lagringsutrymme för din prenumeration](add-storage-space.md)
+[Lägga till lagringsutrymme för din prenumeration](add-storage-space.md) (artikel)

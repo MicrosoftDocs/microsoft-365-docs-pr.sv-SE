@@ -18,17 +18,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
-description: Lär dig att ställa in ditt önskade språk i Meddelandecentret för att automatiskt översätta inlägg.
-ms.openlocfilehash: d0318763069e053fe2368b4906bc7d5ebb58c1fe
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Inläggen i Meddelandecenter är endast på engelska men kan visas automatiskt på det språk du anger för Microsoft 365.
+ms.openlocfilehash: 88b34fcca1d4cedfd6e1a7cb4ee19aef5c3262b7
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580936"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582926"
 ---
 # <a name="language-translation-for-message-center-posts"></a>Översättningar för inlägg i Meddelandecenter
 
-Meddelandecentrets inlägg skrivs endast på engelska på grund av den aktuella informationen vi publicerar, men kan automatiskt visas på det språk som anges av dina personliga språkinställningar för Microsoft 365. Om du anger ett annat språk än engelska ser du ett alternativ för automatisk översättning av inlägg i meddelandecentret. Meddelandena maskinöversätts till det valda språket, vilket innebär att en dator gör översättningen. Det här alternativet styr standardvyn, men du kan också använda den nedrullningsbara menyn om du vill översätta och visa inlägg på de språk som stöds för översättning. Om du väljer engelska återställs meddelandet till den ursprungliga engelska versionen.
+Meddelandecentrets inlägg skrivs endast på engelska på grund av den aktuella informationen vi publicerar, men kan automatiskt visas på det språk som anges av dina personliga språkinställningar för Microsoft 365. Om du anger ett annat språk än engelska ser du ett alternativ för automatisk översättning av inlägg i meddelandecentret. Meddelandena maskinöversätts till det valda språket, vilket innebär att en dator gjorde översättningen. Det här alternativet styr standardvyn, men du kan också använda den nedrullningsbara menyn om du vill översätta och visa inlägg på de språk som stöds för översättning. Om du väljer engelska återställs meddelandet till den ursprungliga engelska versionen.
+
+## <a name="before-you-begin"></a>Innan du börjar
   
 > [!IMPORTANT]
 > Innan du kan välja dina språkinställningar för meddelandecentret måste du ange önskat språk. Inga översättningsalternativ visas om språket är inställt på engelska. Du kan inte ange ett språk för andra personer, varje person måste ändra inställningen själv. 
@@ -44,6 +46,16 @@ Meddelandecentrets inlägg skrivs endast på engelska på grund av den aktuella 
 Översättningsalternativen är tillgängliga i meddelandecentret om det valda språket inte är inställt på engelska.
   
 Om du vill ange att inlägg i meddelandecentret automatiskt ska maskinöversättas och visas på det valda språket går du till **Hälsa** \> **Meddelandecenter**. Överst på listvyn över meddelanden finns en knapp som du använder om du vill inaktivera eller aktivera automatisk översättning. När inställningen är inaktiverad visas inlägg på engelska. När inställningen är aktiverad visas meddelanden på det valda språket. Den valda inställningen bevaras för alla besök i meddelandecentret. 
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Översikt över administrationscenter för Microsoft 365](../../business-video/admin-center-overview.md) (video)
+
+[Vilken prenumeration har jag?](../admin-overview/what-subscription-do-i-have.md) (artikel)
+
+[Håll dig borta från ändringar](../manage/stay-on-top-of-updates.md) (artikel)
+
+
 
   
 
