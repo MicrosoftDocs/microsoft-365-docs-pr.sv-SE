@@ -18,14 +18,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: Lär dig hur du uppdaterar dina faktureringsadresser för Microsoft 365 för företag. Du kan också uppdatera e-postadressen som du får faktureringsaviseringar från.
+description: Lär dig hur du uppdaterar dina faktureringsadresser eller den e-postadress som används för att ta emot faktureringsaviseringar Microsoft 365 för företag.
 ms.date: 04/07/2021
-ms.openlocfilehash: 8bff090353c409f4364aed63e3b48a831608be2b
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 77ccb7b7ff9927736c1adaadfd2dea6b64a084f0
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332179"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594115"
 ---
 # <a name="change-your-billing-addresses"></a>Ändra dina faktureringsadresser
 
@@ -161,7 +161,7 @@ Du kan även ändra den alternativa e-postadressen till andra globala administra
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Visa din faktura](view-your-bill-or-invoice.md)\
-[Förstå din faktura](understand-your-invoice2.md)\
-[Betala för prenumerationen](pay-for-your-subscription.md)\
-[Prenumerationer och fakturering – hjälp för administratörer](../index.yml)
+[Visa din räkning eller faktura](view-your-bill-or-invoice.md) (artikel)\
+[Förstå din faktura](understand-your-invoice2.md) (artikel)\
+[Betala för din prenumeration](pay-for-your-subscription.md) (artikel)\
+[Prenumerationer och fakturering – hjälp för administratörer](../index.yml) (länksida)

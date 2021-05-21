@@ -19,19 +19,19 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
-description: Lär dig hur du tar bort ett användarkonto. Bestäm vad du ska göra med användarens e-post och OneDrive innehåll. Och bestäm om du vill behålla produktlicensen eller sluta betala för den.
-ms.openlocfilehash: f4b1e0b1fb591d369cc09010db86dd995d7d4896
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Lär dig hur du tar bort ett användarkonto och vad du gör med användarens e-post och OneDrive innehåll och om du vill behålla produktlicensen.
+ms.openlocfilehash: c30edb598f659337778ec956737934da5fedad18
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535980"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593411"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Ta bort en användare från organisationen
   
 **Letar du efter information om hur *du Microsoft 365* ditt eget användarkonto på arbetet eller i skolan? Kontakta den tekniska supporten på ditt arbete eller universitet som kan göra de här stegen åt dig.**
 
-## <a name="what-you-need-to-know-about-deleting-users"></a>Allt du behöver veta om att ta bort användare
+## <a name="before-you-begin"></a>Innan du börjar
 
 - Endast personer som Microsoft 365 [global administratör eller](about-admin-roles.md) användarhanteringsbehörighet för företaget eller skolan kan ta bort användarkonton.
 - Du har 30 dagar på dig att [återställa](restore-user.md) kontot innan användarens data tas bort permanent.
@@ -169,14 +169,14 @@ Här är de vanligaste problemen som uppstår när du tar bort en användare:
 
 **Vill du ta bort Microsoft 365 datorn? Gå till [Avsluta prenumerationen.](../../commerce/subscriptions/cancel-your-subscription.md)**
 
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-content"></a>Relaterat innehåll
 
-[Återställa en användare](restore-user.md)
+[Återställa en användare](restore-user.md) (artikel)
   
-[Ta bort meddelande permanent](/exchange/permanently-delete-a-mailbox-exchange-2013-help)
+[Ta bort en postlåda permanent](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (artikel)
 
-[Ta bort en tidigare anställd från Office 365](remove-former-employee.md)
+[Ta bort en tidigare anställd från Office 365](remove-former-employee.md) (artikel)
 
-[Lägga till en ny anställd i Office 365](add-new-employee.md)
+[Lägga till en ny anställd i Office 365](add-new-employee.md) (artikel)
 
-[Ta bort ett användarkonto](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)): Gör följande om ditt företag använder **Active Directory** som synkroniseras med Azure AD. Du kan inte göra det via Office 365.
+[Ta bort ett användarkonto](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)): Gör följande om ditt företag använder **Active Directory** som synkroniseras med Azure AD. Du kan inte göra det via Office 365. (artikel)

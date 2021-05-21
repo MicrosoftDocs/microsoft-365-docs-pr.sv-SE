@@ -1,5 +1,5 @@
 ---
-title: Aktivera att domän anslutna Windows 10-enheter hanteras av Microsoft 365 för företag
+title: Aktivera domänaktiverade Windows 10 att hanteras av Microsoft 365 för företag
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -23,18 +23,18 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Läs om hur du aktiverar Microsoft 365 för att skydda lokala Active-Directory-anslutna Windows 10-enheter med några få steg.
-ms.openlocfilehash: c9f5a21d993200abcf9ecf1fa236879245e1c153
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+description: Lär dig hur du Microsoft 365 att skydda lokala Active Directory-anslutna Windows 10 med några få steg.
+ms.openlocfilehash: f16962dd3c33c3c228da507bc5c4a902d76a8a08
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939511"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593902"
 ---
-# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Aktivera att domän anslutna Windows 10-enheter hanteras av Microsoft 365 Business Premium
+# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Aktivera att domänaktiverade Windows 10 hanteras av Microsoft 365 Business Premium
 
 Om din organisation använder Windows Server Active Directory lokalt kan du konfigurera Microsoft 365 Business Premium för att skydda dina Windows 10-enheter, samtidigt som du behåller åtkomsten till lokala resurser som kräver lokal autentisering.
-Om du vill konfigurera det här skyddet kan du implementera **Hybrid Azure AD-anslutna enheter.** Dessa enheter är anslutna till både din lokala Active Directory och Azure Active Directory.
+Om du vill konfigurera det här skyddet kan du implementera **Hybrid Azure AD-anslutna enheter.** De här enheterna är anslutna till både din lokala Active Directory och din Azure Active Directory.
 
 I den här videon beskrivs stegen för hur du ställer in detta för det vanligaste scenariot, som också beskrivs i anvisningarna nedan.
 
@@ -42,23 +42,23 @@ I den här videon beskrivs stegen för hur du ställer in detta för det vanliga
   
 
 ## <a name="before-you-get-started-make-sure-you-complete-these-steps"></a>Innan du börjar bör du kontrollera att du har slutfört följande steg:
-- Synkronisera användare till Azure AD med Azure AD Connect.
-- Slutför synkroniseringen av organisationsenheten i Azure AD Connect (OU).
-- Kontrollera att alla domänanvändare som du synkroniserar har licenser för Microsoft 365 Business Premium.
+- Synkronisera användare till Azure AD med Azure AD Anslut.
+- Slutför synkroniseringen av Azure AD Anslut organisationsenhet (OU).
+- Kontrollera att alla domänanvändare som du synkroniserar har licenser för att Microsoft 365 Business Premium.
 
 Instruktioner [finns i Synkronisera domänanvändare](manage-domain-users.md) till Microsoft.
 
 ## <a name="1-verify-mdm-authority-in-intune"></a>1. Verifiera MDM Authority i Intune
 
-Gå till [Slutpunktshanteraren](https://endpoint.microsoft.com/#blade/Microsoft_Intune_Enrollment/EnrollmentMenu/overview) och på sidan Microsoft Intune  väljer du Enhetsregistrering. På sidan Översikt kontrollerar du sedan att **MDM-behörighet** **är Intune.**
+Gå till [Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_Enrollment/EnrollmentMenu/overview) sidan och Microsoft Intune enhetsregistrering . På sidan **Översikt** kontrollerar du att **MDM-behörighet** **är Intune.**
 
 - Om **MDM-behörighet** **är Ingen** klickar du på **MDM-behörigheten** för att ange den till **Intune.**
-- Om **MDM-behörighet** är **Microsoft Office 365** går du till Enheter Registrera enheter och använder dialogrutan Lägg till MDM-behörighet till höger för att lägga till   >   **Intune MDM-utfärdare** (dialogrutan Lägg till MDM-instans är bara tillgänglig om  **MDM-instansen** är inställd på Microsoft Office 365). 
+- Om **MDM-behörighet** är **Microsoft Office 365** går du till Enheter Registrera enheter och använder dialogrutan Lägg till MDM-behörighet till höger för att lägga till  >   **Intune MDM-utfärdare** (dialogrutan Lägg till **MDM-utfärdare** är endast tillgänglig om **MDM-instansen** är inställd på  Microsoft Office 365).
 
 ## <a name="2-verify-azure-ad-is-enabled-for-joining-computers"></a>2. Kontrollera att Azure AD är aktiverat för anslutning till datorer
 
-- Gå till administrationscentret och välj Azure Active Directory (välj Visa alla om Azure Active Directory inte <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> visas) i **listan Administrationscenter.**  
-- I **administrationscentret för Azure Active Directory** går du till Azure Active **Directory** och väljer **Enheter** och sedan **Enhetsinställningar.**
+- Gå till administrationscentret och välj Välj Azure Active Directory (välj Visa <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> alla om Azure Active Directory inte visas) i listan **Administrationscenter.**  
+- I Azure Active Directory **går du** till fliken **Azure Active Directory** väljer Enheter **och** sedan **Enhetsinställningar**.
 - Kontrollera **att Användare kan ansluta enheter till Azure AD** är aktiverat 
     1. Om du vill aktivera alla användare anger du **alla**.
     2. Om du vill aktivera vissa användare anger du **markerad** för att aktivera en viss grupp av användare.
@@ -67,8 +67,8 @@ Gå till [Slutpunktshanteraren](https://endpoint.microsoft.com/#blade/Microsoft_
 
 ## <a name="3-verify-azure-ad-is-enabled-for-mdm"></a>3. Kontrollera att Azure AD är aktiverat för MDM
 
-- Gå till administrationscentret och <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> välj Slutpunktshanteramen t (välj **Visa alla** om **Slutpunktshanteraren** inte visas) 
-- Gå till **Enheter Windows Windows-registrering** automatisk **registrering** i  >  **administrationscentret** för Microsoft  >    >  **Endpoint Manager.**
+- Gå till administrationscentret och <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> välj Slutpunkt **hanteramenyer**(välj **Visa alla** **om Endpoint Manager** inte visas)
+- I **administrationscentret Microsoft Endpoint Manager du** till Enheter **som Windows**  >    >  **Windows Automatisk**  >  **registrering**.
 - Kontrollera att MDM-användaromfattningen är aktiverad.
 
     1. Om du vill registrera  alla datorer anger du Alla för automatisk registrering av alla användardatorer som är medlemmar i Azure AD och nya datorer när användarna lägger till ett arbetskonto i Windows.
@@ -87,16 +87,16 @@ Install-Module SecMgmt
 ```
 
 > [!IMPORTANT]
-> Vi rekommenderar att du installerar den här modulen på Den Windows Server som kör Azure AD Connect.
+> Vi rekommenderar att du installerar den här modulen på den Windows server som kör Azure AD Anslut.
 
-Om du vill skapa den tjänstanslutningspunkt och grupprincip som krävs anropar du cmdleten [Initialize-SecMgmtHybirdDeviceEnrollment.](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) Du behöver dina autentiseringsuppgifter som global administratör för Microsoft 365 Business Premium när du utför den här uppgiften. När du är redo att skapa resurserna anropar du följande:
+Om du vill skapa den tjänstanslutningspunkt och grupprincip som krävs anropar du cmdleten [Initialize-SecMgmtHybirdDeviceEnrollment.](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) Du behöver dina autentiseringsuppgifter Microsoft 365 Business Premium global administratör när du utför den här uppgiften. När du är redo att skapa resurserna anropar du följande:
 
 ```powershell
 PS C:\> Connect-SecMgmtAccount
 PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device Management'
 ```
 
-Med det första kommandot upprättas en anslutning till Microsoft-molnet, och när du uppmanas att göra det anger du dina autentiseringsuppgifter som global administratör för Microsoft 365 Business Premium.
+Med det första kommandot upprättas en anslutning till Microsoft-molnet, och när du uppmanas att göra det anger du dina Microsoft 365 Business Premium som global administratör.
 
 ## <a name="5-link-the-group-policy"></a>5. Länka grupprincipen
 
@@ -109,7 +109,7 @@ Om du inte ser principen Aktivera automatisk **MDM-registrering** med standardau
 
 1.  Ladda ned: [Administrativa mallar (.admx) för Windows 10 oktober 2020-uppdatering (20H2).](https://www.microsoft.com/download/102157)
 2.  Installera paketet på en domänkontrollant.
-3.  Navigera, beroende på versionen av Administrativa mallar, till mappen: **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 oktober 2020 Update (20H2).**
+3.  Navigera, beroende på versionen av Administrativa mallar, till mappen: **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 oktober 2020-uppdatering (20H2).**
 4.  Byt **namn på** mappen Principdefinitioner i sökvägen ovan till **Principdefinitioner.**
 5.  Kopiera mappen **Principdefinitioner** till SYSVOL-resursen, som standard finns i **C:\Windows\SYSVOL\domän\Principer.** 
     -   Om du planerar att använda ett centralt principarkiv för hela domänen lägger du till innehållet i Principdefinitioner där.
@@ -119,4 +119,8 @@ Nu bör du kunna se principen Aktivera automatisk MDM-registrering med hjälp av
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Synkronisera domänanvändare till Microsoft 365](manage-domain-users.md) [(artikel)](../admin/create-groups/create-groups.md) Skapa en grupp i administrationscentret (artikel) Självstudiekurs: Konfigurera azure Active [Directory-hybridkoppling](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md) för hanterade domäner (artikel)
+[Synkronisera domänanvändare till Microsoft 365](manage-domain-users.md) (artikel)
+
+[Skapa en grupp i administrationscentret](../admin/create-groups/create-groups.md) (artikel)
+
+[Självstudiekurs: Konfigurera Azure Active Directory-hybridlösningar för hanterade domäner](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md) (artikel)

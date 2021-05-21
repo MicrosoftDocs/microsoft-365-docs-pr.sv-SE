@@ -22,7 +22,7 @@
 |POWER-APPAR|Planerat|Planerat|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Planerat|
 |POWER AUTOMATE|Planerat|Planerat|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|
 |POWER BI|Planerat|Planerat|Uppgift saknas|Planerat|Planerat|
-|POWERPOINT|✔|Planerat|Planerat|Planerat|Planerat|
+|POWERPOINT|✔|Planerat|Planerat|Planerat|Uppgift saknas|
 |PROJECT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Planerat|Uppgift saknas|
 |PUBLISHER|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|✔|Uppgift saknas|
 |SHAREPOINT-ADMINISTRATÖR|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Planerat|Uppgift saknas|
@@ -30,10 +30,10 @@
 |FÄSTISAR|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Planerat|
 |STREAM|Planerat|Planerat|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|
 |SWAY|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Planerat|
-|TEAMS|✔|✔|✔|Planerat|Uppgift saknas|
+|TEAMS|✔|✔|✔|✔|Uppgift saknas|
 |TO-DO|Planerat|Planerat|Planerat|Uppgift saknas|Planerat|
 |VISIO|Uppgift saknas|✔|Uppgift saknas|Planerat|Uppgift saknas|
 |WHITEBOARD|✔|Planerat|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Planerat|
-|WORD|✔|Planerat|Planerat|Planerat|✔|
+|WORD|✔|Planerat|Planerat|Planerat|Uppgift saknas|
 |WORKPLACE ANALYTICS|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|
 |YAMMER|Planerat|Planerat|Planerat|Planerat|Uppgift saknas|

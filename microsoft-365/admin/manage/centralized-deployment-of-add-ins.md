@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Avgör om klientorganisationen och användarna uppfyller kraven, så att du kan använda centraliserad distribution för Office tillägg.
-ms.openlocfilehash: 482f2231c0c2c9fa30e863f25f474d90a22f52fa
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: e5d3337cdf1bbb0dc18ee6940ab8bd289d2e5f65
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464411"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593927"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Avgöra om centraliserad distribution av tillägg fungerar för din organisation
 
@@ -43,7 +43,7 @@ Centraliserad distribution har stöd för tre plattformar Windows, Mac och Onlin
 
 Det kan ta upp till 24 timmar för ett tillägg att visas för klienten och alla användare.
   
-## <a name="requirements"></a>Krav
+## <a name="before-you-begin"></a>Innan du börjar
 
 Centraliserad distribution av tillägg kräver att användarna använder Microsoft 365 Enterprise SKU:er: E3/E5/F3 eller Företags-SKU:er: Business Basic, Business Standard, Business Premium (och är inloggade på Office med sitt organisations-ID) och har Exchange Online och aktiva Exchange Online-postlådor. Prenumerationskatalogen måste finnas i eller vara extern till Azure Active Directory.
 Du kan visa specifika krav för Office och Exchange nedan, eller använda kompatibilitetskontrollen för [centraliserad distribution.](#centralized-deployment-compatibility-checker)

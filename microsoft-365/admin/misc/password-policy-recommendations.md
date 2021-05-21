@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Gör organisationen säkrare mot lösenordsattacker och förbjud vanliga lösenord och aktivera riskbaserad multifaktorautentisering.
-ms.openlocfilehash: 1927e481625e93afa8aa064666e75ea8f891669e
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: f2b9b9188a6f05bbcdae45dcc22d401e1eb6f1a8
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572303"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593915"
 ---
 # <a name="password-policy-recommendations"></a>Policyrekommendationer för lösenord
 
@@ -38,7 +38,7 @@ För mer information om Microsoft 365-lösenord se:
 
 [Återställ lösenord](../add-users/reset-passwords.md) (artikel)
 
-[Ange att en enskild användares lösenord aldrig ska förfalla](../add-users/set-password-to-never-expire.md) (artikel)
+[Ange att en enskild användares lösenord aldrig ska förfalla](../add-users/set-password-to-never-expire.md)(artikel)
 
 [Låt användare återställa sina egna lösenord](../add-users/let-users-reset-passwords.md) (artikel)
 

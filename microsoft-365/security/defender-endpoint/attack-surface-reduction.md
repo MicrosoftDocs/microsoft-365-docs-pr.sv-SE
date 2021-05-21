@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: da4b7fce66a6c51da61edd7c44216ee268c3156a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0852cc5af2de6767e202e3a839c498e7e008eef3
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538669"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593859"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Använd minskningsregler för attackytan för att förhindra skadlig smitta
 
@@ -49,7 +49,7 @@ Mer information om hur du konfigurerar regler för att minska attackytan finns i
 
 ## <a name="assess-rule-impact-before-deployment"></a>Utvärdera påverkan på regeln före distribution
 
-Du kan utvärdera hur en minskningsregel för attackytan kan påverka nätverket genom att öppna säkerhetsrekommendationerna för den [regeln i Hantering av hot och säkerhetsrisker](https://docs.microsoft.com/windows/security/threat-protection/#tvm).
+Du kan utvärdera hur en minskningsregel för attackytan kan påverka nätverket genom att öppna säkerhetsrekommendationerna för den [regeln i Hantering av hot och säkerhetsrisker](/windows/security/threat-protection/#tvm).
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="Säkerhetsreco för minskningsregel för attackytan":::
 
@@ -69,12 +69,12 @@ Varningsläge hjälper din organisation att ha regler för att minska attackytan
 
 Varningsläge stöds på enheter som kör följande versioner av Windows:
 
-- [Windows 10, version 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809) eller senare
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809) eller senare
+- [Windows 10, version 1809](/windows/whats-new/whats-new-windows-10-version-1809) eller senare
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809) eller senare
 
-Microsoft Defender Antivirus måste köras med realtidsskydd i [aktivt läge.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)
+Microsoft Defender Antivirus måste köras med realtidsskydd i [aktivt läge.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)
 
-Kontrollera också att Microsoft Defender Antivirus [programuppdateringar och program mot skadlig programvara](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) har installerats.
+Kontrollera också att Microsoft Defender Antivirus [programuppdateringar och program mot skadlig programvara](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) har installerats.
 
 - Lägsta krav för plattformsutgågår: `4.18.2008.9`
 - Lägsta krav för släppt motor: `1.1.17400.5`
@@ -111,12 +111,12 @@ Mer information om avancerad sökning finns i [Proaktivt sök efter hot med avan
 
 Du kan ange minskningsregler för attackytan för enheter som kör någon av följande utgåvor och versioner av Windows:
 
-- Windows 10 Pro, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) eller senare
-- Windows 10 Enterprise, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) eller senare
-- Windows Server, [version 1803 (Halvårskanal)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) eller senare
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- Windows 10 Pro, version [1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
+- Windows 10 Enterprise, version [1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
+- Windows Server, [version 1803 (Halvårskanal)](/windows-server/get-started/whats-new-in-windows-server-1803) eller senare
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Även om minskningsregler för attackytan inte kräver en [E5 Windows-licens,](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)får du avancerade hanteringsfunktioner om du har Windows E5. De här funktionerna är endast tillgängliga i Windows E5: övervakning, analys och arbetsflöden som är tillgängliga i Defender för [slutpunkt,](microsoft-defender-endpoint.md)samt rapporterings- och konfigurationsfunktioner [i Microsoft 365 säkerhetscenter.](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center) Dessa avancerade funktioner är inte tillgängliga med en licens från Windows Professional eller Windows E3. Men om du har dessa licenser kan du använda Loggboken och Microsoft Defender Antivirus för att granska dina attack surface-minskningsregelhändelser.
+Även om minskningsregler för attackytan inte kräver en [E5 Windows-licens,](/windows/deployment/deploy-enterprise-licenses)får du avancerade hanteringsfunktioner om du har Windows E5. De här funktionerna är endast tillgängliga i Windows E5: övervakning, analys och arbetsflöden som är tillgängliga i Defender för [slutpunkt,](microsoft-defender-endpoint.md)samt rapporterings- och konfigurationsfunktioner [i Microsoft 365 säkerhetscenter.](/microsoft-365/security/defender/overview-security-center) Dessa avancerade funktioner är inte tillgängliga med en licens från Windows Professional eller Windows E3. Men om du har dessa licenser kan du använda Loggboken och Microsoft Defender Antivirus för att granska dina attack surface-minskningsregelhändelser.
 
 ## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>Granska minskningar av attackytor i Microsoft Defender Säkerhetscenter
 
@@ -148,7 +148,6 @@ Du kan skapa en anpassad vy som filtrerar händelser för att endast visa följa
 |5007|Händelse när inställningar ändras|
 |1121|Händelse när en regel ut sätts i blockläge|
 |1122|Händelse när en regel aktiveras i granskningsläge|
-|
 
 "engine version" listed for attack surface reduction events in the event log, is generated by Defender for Endpoint, not by the operating system. Defender för Endpoint är integrerat med Windows 10, så den här funktionen fungerar på alla enheter Windows 10 installerat.
 
@@ -160,22 +159,22 @@ Om du konfigurerar regler för att minska attackytan med grupprinciper eller Pow
 
 |Regelnamn|GUID|Undantag & mappar|Lägsta operativsystem som stöds|
 |---|:---:|---|---|
-|[Blockera missbruk av utnyttjas sårbara signerade drivrutiner](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare) |
+|[Blockera missbruk av utnyttjas sårbara signerade drivrutiner](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare) |
 |[Blockera Adobe Reader från att skapa underordnade processer](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
 |[Blockera alla Office från att skapa underordnade processer](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera att autentiseringsuppgifter stjäls från Windows lokala säkerhetsutfärdares undersystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera körbart innehåll från e-postklient och webbaserad e-post](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera körbara filer från att köras såvida de inte uppfyller ett villkor för en vän, ålder eller en betrodd lista](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera körning av potentiellt oönskade skript](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera JavaScript eller VBScript från att starta hämtat körbart innehåll](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera Office program från att skapa körbart innehåll](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera Office-program från att mata in kod i andra processer](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera Office kommunikationsprogram från att skapa underordnade processer](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera beständighet via WMI-händelseprenumeration](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|Stöds inte|[Windows 10 version 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) (version 18362) eller senare|
-|[Blockera processskapanden som kommer från PSExec- och WMI-kommandon](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera icke betrodda och osignerade processer som körs från USB](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera Win32 API-anrop från Office makron](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Använd avancerat skydd mot utpressningstrojaner](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|Stöds|[Windows 10 version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera att autentiseringsuppgifter stjäls från Windows lokala säkerhetsutfärdares undersystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera körbart innehåll från e-postklient och webbaserad e-post](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera körbara filer från att köras såvida de inte uppfyller ett villkor för en vän, ålder eller en betrodd lista](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera körning av potentiellt oönskade skript](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera JavaScript eller VBScript från att starta hämtat körbart innehåll](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera Office program från att skapa körbart innehåll](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera Office-program från att mata in kod i andra processer](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera Office kommunikationsprogram från att skapa underordnade processer](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera beständighet via WMI-händelseprenumeration](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|Stöds inte|[Windows 10 version 1903](/windows/whats-new/whats-new-windows-10-version-1903) (version 18362) eller senare|
+|[Blockera processskapanden som kommer från PSExec- och WMI-kommandon](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera icke betrodda och osignerade processer som körs från USB](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera Win32 API-anrop från Office makron](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Använd avancerat skydd mot utpressningstrojaner](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
 |
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>Blockera missbruk av utnyttjas sårbara signerade drivrutiner
@@ -194,10 +193,10 @@ Den här regeln blockerar inte en drivrutin som redan finns på systemet från a
 
 Den här regeln stöds i alla versioner där ASR stöds. vilket är:
 
-- [Windows 10 Pro, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) eller senare
-- [Windows 10 Enterprise, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) eller senare
-- [Windows Server, version 1803 (Halvårskanal)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) eller senare
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Windows 10 Pro, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
+- [Windows 10 Enterprise, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
+- [Windows Server, version 1803 (Halvårskanal)](/windows-server/get-started/whats-new-in-windows-server-1803) eller senare
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Intune-namn: `Block abuse of exploited vulnerable signed drivers`
 
@@ -211,9 +210,9 @@ Genom social teknik eller sårbarheter kan skadlig programvara ladda ned och sta
 
 Den här regeln infördes i:
 
-- [Windows 10, version 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Windows 10, version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Intune-namn: `Process creation from Adobe Reader (beta)`
 
@@ -229,10 +228,10 @@ Att skapa skadliga underordnade processer är en vanlig strategi för skadlig pr
 
 Den här regeln infördes i:
 
-- [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
 Intune-namn: `Office apps launching child processes`
 
@@ -251,10 +250,10 @@ LSASS autentiserar användare som loggar in på en Windows dator. Microsoft Defe
 
 Den här regeln infördes i:
 
-- [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
 Intune-namn: `Flag credential stealing from the Windows local security authority subsystem`
 
@@ -271,10 +270,10 @@ Den här regeln blockerar följande filtyper från att startas från e-post som 
 
 Den här regeln infördes i:
 
-- [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Microsoft Endpoint Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Microsoft Endpoint Manager CB 1710](/configmgr/core/servers/manage/updates)
 
 Intune-namn: `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
@@ -298,7 +297,7 @@ Den här regeln blockerar följande filtyper från att startas såvida de inte u
 Det kan vara riskabelt att starta opålitliga eller okända körbara filer, eftersom det kanske inte står helt tydligt om filerna är skadliga.
 
 > [!IMPORTANT]
-> Du måste [aktivera moln levererat skydd om du](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) vill använda den här regeln.
+> Du måste [aktivera moln levererat skydd om du](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) vill använda den här regeln.
 >
 > Regeln Blockera **körbara** filer från att köras såvida de inte uppfyller ett villkor av hög ålder eller betrodd lista med GUID ägs av Microsoft och anges inte `01443614-cd74-433a-b99e-2ecdc07bfc25` av administratörer. Den här regeln använder moln levererat skydd för att regelbundet uppdatera sin betrodda lista.
 >
@@ -306,10 +305,10 @@ Det kan vara riskabelt att starta opålitliga eller okända körbara filer, efte
 
 Den här regeln infördes i:
 
-- [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
 Intune-namn: `Executables that don't meet a prevalence, age, or trusted list criteria`
 
@@ -325,10 +324,10 @@ Script obfuscation är en vanlig teknik som både författare av skadlig program
 
 Den här regeln infördes i:
 
-- [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
 Intune-namn: `Obfuscated js/vbs/ps/macro code`
 
@@ -344,10 +343,10 @@ Den här regeln förhindrar skript från att starta potentiellt skadligt hämtat
 
 Den här regeln infördes i:
 
-- [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
 Intune-namn: `js/vbs executing payload downloaded from Internet (no exceptions)`
 
@@ -363,10 +362,10 @@ Skadlig programvara som Office som en vektor kan försöka bryta ut från Office
 
 Den här regeln infördes i:
 
-- [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [System Center Configuration Manager](https://docs.microsoft.com/configmgr/core/servers/manage/updates) (SCCM) CB 1710 (SCCM) är nu Microsoft Endpoint Configuration Manager)
+- [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [System Center Configuration Manager](/configmgr/core/servers/manage/updates) (SCCM) CB 1710 (SCCM) är nu Microsoft Endpoint Configuration Manager)
 
 Intune-namn: `Office apps/macros creating executable content`
 
@@ -386,10 +385,10 @@ Den här regeln gäller för Word, Excel och PowerPoint.
 
 Den här regeln infördes i:
 
-- [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
 Intune-namn: `Office apps injecting code into other processes (no exceptions)`
 
@@ -404,13 +403,13 @@ Den här regeln förhindrar Outlook att skapa underordnade processer, samtidigt 
 Den här regeln skyddar mot social engineering-angrepp och förhindrar att kod utnyttjas på fel i Outlook. Det skyddar även mot Outlook regler och formulär sårbarheter som attacker kan använda när en [användares](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) autentiseringsuppgifter har komprometterats.
 
 > [!NOTE]
-> Denna regel gäller endast Outlook och Outlook.com.
+> Den här regeln blockerar DLP-principtips och verktygstips i Outlook. Denna regel gäller endast Outlook och Outlook.com. 
 
 Den här regeln infördes i:
 
-- [Windows 10, version 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Windows 10, version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Intune-namn: `Process creation from Office communication products (beta)`
 
@@ -429,8 +428,8 @@ Fillösa hot använder olika taktiker för att hålla sig dold, för att undvika
 
 Den här regeln infördes i:
 
-- [Windows 10, version 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903)
-- [Windows Server 1903](https://docs.microsoft.com/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
+- [Windows 10, version 1903](/windows/whats-new/whats-new-windows-10-version-1903)
+- [Windows Server 1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
 
 Intune-namn: Inte tillgängligt
 
@@ -440,16 +439,16 @@ GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
 ### <a name="block-process-creations-originating-from-psexec-and-wmi-commands"></a>Blockera processskapanden som kommer från PSExec- och WMI-kommandon
 
-Den här regeln blockerar processer som skapats [via PsExec](https://docs.microsoft.com/sysinternals/downloads/psexec) [och WMI](https://docs.microsoft.com/windows/win32/wmisdk/about-wmi) från att köras. Både PsExec och WMI kan köra kod via fjärrstyrd körning, så det finns en risk för att skadlig programvara ska kunna använda den här funktionen för kommando- och kontrolländamål eller för att sprida en smitta i organisationens nätverk.
+Den här regeln blockerar processer som skapats [via PsExec](/sysinternals/downloads/psexec) [och WMI](/windows/win32/wmisdk/about-wmi) från att köras. Både PsExec och WMI kan köra kod via fjärrstyrd körning, så det finns en risk för att skadlig programvara ska kunna använda den här funktionen för kommando- och kontrolländamål eller för att sprida en smitta i organisationens nätverk.
 
 > [!WARNING]
-> Använd bara den här regeln om du hanterar dina enheter med [Intune eller en](https://docs.microsoft.com/intune) annan MDM-lösning. Den här regeln är inkompatibel med [hantering via Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr) eftersom den här regeln blockerar WMI-kommandon som Configuration Manager-klienten använder för att fungera korrekt.
+> Använd bara den här regeln om du hanterar dina enheter med [Intune eller en](/intune) annan MDM-lösning. Den här regeln är inkompatibel med [hantering via Microsoft Endpoint Configuration Manager](/configmgr) eftersom den här regeln blockerar WMI-kommandon som Configuration Manager-klienten använder för att fungera korrekt.
 
 Den här regeln infördes i:
 
-- [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Intune-namn: `Process creation from PSExec and WMI commands`
 
@@ -463,10 +462,10 @@ Med den här regeln kan administratörer förhindra att osignerade eller icke be
 
 Den här regeln infördes i:
 
-- [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
 Intune-namn: `Untrusted and unsigned processes that run from USB`
 
@@ -482,10 +481,10 @@ Office VBA aktiverar Win32 API-anrop. Skadlig programvara kan missbruka den här
 
 Den här regeln infördes i:
 
-- [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
 Intune-namn: `Win32 imports from Office macro code`
 
@@ -504,14 +503,14 @@ Den här regeln ger ett extra skydd mot utpressningstrojaner. Den använder båd
 Regeln tar brukar vara försiktig för att förhindra utpressningstrojaner.
 
 > [!NOTE]
-> Du måste [aktivera moln levererat skydd om du](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) vill använda den här regeln.
+> Du måste [aktivera moln levererat skydd om du](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) vill använda den här regeln.
 
 Den här regeln infördes i:
 
-- [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
-- [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
+- [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
+- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
 Intune-namn: `Advanced ransomware protection`
 
@@ -524,4 +523,4 @@ GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 - [Vanliga frågor och svar för minskning av attackytan](attack-surface-reduction-faq.md)
 - [Aktivera regler för minskning av attackytan](enable-attack-surface-reduction.md)
 - [Utvärdera regler för minskning av attackytan](evaluate-attack-surface-reduction.md)
-- [Kompatibilitet med Microsoft Defender Antivirus antivirus- och antimalwarelösningar](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+- [Kompatibilitet med Microsoft Defender Antivirus antivirus- och antimalwarelösningar](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

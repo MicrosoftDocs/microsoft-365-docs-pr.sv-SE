@@ -33,7 +33,7 @@
 |FÄSTISAR|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|✔|
 |STREAM|✔|✔|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|
 |SWAY|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|✔|
-|TEAMS|✔|✔|✔|Planerat|Uppgift saknas|
+|TEAMS|✔|✔|✔|✔|Uppgift saknas|
 |TO-DO|✔|✔|✔|Uppgift saknas|✔|
 |VISIO|Uppgift saknas|✔|Uppgift saknas|✔|Uppgift saknas|
 |WHITEBOARD|✔|Planerat|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|✔|

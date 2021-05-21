@@ -26,17 +26,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: Lär dig hur du Windows enheter med Windows 10 Pro för Microsoft 365 Business Premium och aktiverar centraliserad hantering och säkerhetskontroller.
-ms.openlocfilehash: 3e268d81ff6fb7113b7e0b0fe5d0545ff5c72b1e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Konfigurera Windows enheter med Windows 10 Pro för Microsoft 365 Business Premium och aktivera centraliserad hantering och säkerhetskontroller.
+ms.openlocfilehash: 3d32a033a1a1c89d7d4d557cea6a28e24543ab2c
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244785"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594030"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Konfigurera Windows enheter för Microsoft 365 Business Premium användare
 
-## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-premium-users"></a>Krav för att konfigurera Windows-enheter för Microsoft 365 Business Premium användare
+## <a name="before-you-begin"></a>Innan du börjar
 
 Innan du kan konfigurera Windows-enheter för Microsoft 365 Business Premium-användare ska du se till att alla Windows-enheter kör Windows 10 Pro, version 1703 (Creators Update). Windows 10 Pro är en förutsättning för att distribuera Windows 10 Business, vilket är en uppsättning molntjänster och funktioner för enhetshantering som kompletterar Windows 10 Pro och aktiverar centraliserad hantering och säkerhetskontroller i Microsoft 365 Business Premium.
   
@@ -128,6 +128,6 @@ Kontrollera att dina Azure AD-Windows 10 enheter uppgraderas till Windows 10 Bus
 
 Om du vill konfigurera dina mobila enheter kan du gå till Konfigurera mobila enheter för [Microsoft 365 Business Premium](set-up-mobile-devices.md)användare , Information om hur du anger principer för enhetsskydd eller programskydd finns i [Hantera Microsoft 365 för företag.](manage.md)
   
-## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Mer information om att konfigurera och använda Microsoft 365 Business Premium
+## <a name="related-content"></a>Relaterat innehåll
 
-[Utbildningsvideor för Microsoft 365 Business](../business-video/index.yml)
+[Microsoft 365 om utbildningsvideor för företag](../business-video/index.yml) (länksida)

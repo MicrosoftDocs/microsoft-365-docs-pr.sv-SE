@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 05/14/2021
+ms.date: 05/20/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: e8abf10bd036b5e6e76d08e86ab4963629d2f994
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 2ea8cc323220024406a49eda8d6a7c0b42ca71a4
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537997"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594055"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Växla till Microsoft Defender för slutpunkt – fas 2: Installation
 
@@ -41,35 +41,31 @@ ms.locfileid: "52537997"
 **Välkommen till konfigurationsfasen av [bytet till Defender för Slutpunkt.](switch-to-microsoft-defender-migration.md#the-migration-process)** Den här fasen omfattar följande steg:
 
 1. [Installera om/Microsoft Defender Antivirus dina slutpunkter](#reinstallenable-microsoft-defender-antivirus-on-your-endpoints).
-
 2. [Konfigurera Defender för Slutpunkt](#configure-defender-for-endpoint).
-
 3. [Lägg till Defender för slutpunkt i undantagslistan för din befintliga lösning](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-your-existing-solution).
-
 4. [Lägg till din befintliga lösning i undantagslistan för Microsoft Defender Antivirus](#add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus).
-
 5. [Konfigurera enhetsgrupper, enhetssamlingar och organisationsenheter.](#set-up-your-device-groups-device-collections-and-organizational-units)
-
 6. [Konfigurera program mot skadlig programvara och realtidsskydd](#configure-antimalware-policies-and-real-time-protection).
 
 
 ## <a name="reinstallenable-microsoft-defender-antivirus-on-your-endpoints"></a>Installera om/Microsoft Defender Antivirus på slutpunkterna
 
-På vissa versioner av Windows har Microsoft Defender Antivirus troligen avinstallerats eller inaktiverats när lösningen som inte är en Microsoft antivirus/antimalware-lösning har installerats. Mer information finns i [Microsoft Defender Antivirus kompatibilitet](microsoft-defender-antivirus-compatibility.md).
+På vissa versioner av Windows har Microsoft Defender Antivirus troligen avinstallerats eller inaktiverats när lösningen som inte är en Microsoft antivirus/antimalware-lösning har installerats. Om inte och tills enheter har aktiverats för Defender för Microsoft Defender Antivirus inte i aktivt läge tillsammans med en antiviruslösning som inte är från Microsoft. Mer information finns [i Microsoft Defender Antivirus kompatibilitet](microsoft-defender-antivirus-compatibility.md).
 
-På Windows-klienter inaktiveras Microsoft Defender Antivirus automatiskt när en antivirus-/antimalware-lösning som inte är en Microsoft-lösning har installerats till Defender för slutpunkt. När klientslutpunkterna introduceras till Defender för Slutpunkt hamnar Microsoft Defender Antivirus i passiv form tills antiviruslösningen som inte är microsoft avinstalleras. Microsoft Defender Antivirus vara installerat, men är sannolikt inaktiverat vid det här läget av migreringen. Om Microsoft Defender Antivirus inte har avinstallerats behöver du inte vidta någon åtgärd för dina Windows klienter.
+Nu när du planerar att byta till Defender för Endpoint kan du behöva vidta vissa åtgärder för att installera om eller aktivera Microsoft Defender Antivirus. 
 
-När Windows ett icke-Microsoft-antivirusprogram/-Microsoft Defender Antivirus program mot skadlig programvara på Windows av manuellt (om det inte avinstalleras). Följande uppgifter säkerställer att Microsoft Defender Antivirus installeras och ställs in som passivt läge på Windows Server.
 
-- [Ställ in DisableAntiSpyware på False på Windows Server](#set-disableantispyware-to-false-on-windows-server) (endast om det behövs)
+| Slutpunktstyp  | Lämplig åtgärd  |
+|---------|---------|
+| Windows klienter (till exempel slutpunkter som kör Windows 10)     | I allmänhet behöver du inte vidta någon åtgärd för Windows klienter (om Microsoft Defender Antivirus inte har avinstallerats). Så här gör du: <p>Microsoft Defender Antivirus vara installerat, men är troligen inaktiverat vid det här läget av migreringen.<p> När en lösning som inte är en Microsoft-antivirus-/antimalware-lösning har installerats och klienterna ännu inte finns i Defender för slutpunkt Microsoft Defender Antivirus av automatiskt. <p>När klientslutpunkterna senare introduceras till Defender för Endpoint och dessa slutpunkter kör en antiviruslösning som inte är en Microsoft-antiviruslösning Microsoft Defender Antivirus i passiv form. <p>Om antiviruslösningen som inte är en Microsoft-lösning avinstalleras Microsoft Defender Antivirus i aktivt läge automatiskt.  |
+|Windows servrar     | På Windows Server måste du installera om Microsoft Defender Antivirus och ställa in det på passivt läge manuellt. Så här gör du: <p>På Windows-servrar går det inte att köra Microsoft Defender Antivirus antiviruslösningen som inte är en Microsoft-antiviruslösning när du har installerat ett annat program än Microsoft-antivirusprogrammet. I så fall Microsoft Defender Antivirus eller avinstalleras manuellt. <p>Om du vill installera Microsoft Defender Antivirus på Windows server ska du utföra följande tak: <p>- [Ställ in DisableAntiSpyware på False på Windows Server](#set-disableantispyware-to-false-on-windows-server) (endast om det behövs)<br/>- [Installera Microsoft Defender Antivirus på Windows Server](#reinstall-microsoft-defender-antivirus-on-windows-server)<br/>- [Ställ Microsoft Defender Antivirus till passivt läge på Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)       |
 
-- [Installera Microsoft Defender Antivirus på Windows Server](#reinstall-microsoft-defender-antivirus-on-windows-server) 
 
-- [Ställ Microsoft Defender Antivirus till passivt läge på Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)
+Mer information om hur Microsoft Defender Antivirus med ett icke-Microsoft antivirusskydd finns [Microsoft Defender Antivirus kompatibilitet.](microsoft-defender-antivirus-compatibility.md)
 
 ### <a name="set-disableantispyware-to-false-on-windows-server"></a>Ställ in DisableAntiSpyware på False på Windows Server
 
-Registernyckeln [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) användes tidigare för att inaktivera Microsoft Defender Antivirus och distribuera ett annat antivirusprogram, till exempel McAfee, Symantec eller andra. I allmänhet bör du inte ha den här registernyckeln på dina Windows och slutpunkter. Men om du har `DisableAntiSpyware` konfigurerat så här anger du värdet falskt:
+Registernyckeln [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) användes tidigare för att inaktivera Microsoft Defender Antivirus och distribuera ett annat antivirusprogram, till exempel McAfee, Symantec eller andra. **I allmänhet bör du inte ha den här registernyckeln på dina Windows och slutpunkter**; Men om du *har* `DisableAntiSpyware` konfigurerat så här anger du värdet falskt:
 
 1. Öppna Registereditorn på Windows Server-enhet.
 
@@ -100,11 +96,11 @@ Registernyckeln [DisableAntiSpyware](/windows-hardware/customize/desktop/unatten
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <p>
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender` <br/>
  
-    > [!NOTE]
-    > När du använder DISM-kommandot i en aktivitetssekvens som kör PS krävs cmd.exe sökväg.
-    > Exempel:<br/>
-    > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
-    > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
+   > [!NOTE]
+   > När du använder DISM-kommandot i en aktivitetssekvens som kör PS krävs cmd.exe sökväg.
+   > Exempel:<br/>
+   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
+   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
 
 3. Kontrollera att Microsoft Defender Antivirus är igång med följande PowerShell-cmdlet: <br/>
    `Get-Service -Name windefend`
@@ -127,11 +123,14 @@ Registernyckeln [DisableAntiSpyware](/windows-hardware/customize/desktop/unatten
 
 Om du har slutpunkter som kör Windows Server 2016 kan du inte köra Microsoft Defender Antivirus tillsammans med en lösning som inte är en Antivirus-/antimalware-lösning från Microsoft. Microsoft Defender Antivirus kan inte köras i passiv form på Windows Server 2016. I så fall måste du avinstallera lösningen som inte är en Microsoft-antivirus-/antimalware-lösning och installera/aktivera Microsoft Defender Antivirus stället. Mer information finns i [Kompatibilitet för antiviruslösningar med Defender för slutpunkt.](microsoft-defender-antivirus-compatibility.md)
 
-Om du använder en Windows Server 2016 och har problem med att Microsoft Defender Antivirus kan du använda följande PowerShell-cmdlet:
+Om du använder en Windows Server 2016 och har problem med att Microsoft Defender Antivirus följer du de här stegen:
 
-`mpcmdrun -wdenable`
+1. Öppna PowerShell som administratör på enheten.
 
-Mer information finns i [Microsoft Defender Antivirus på Windows Server](microsoft-defender-antivirus-on-windows-server.md).
+2. Skriv in följande PowerShell-cmdlet: `mpcmdrun -wdenable`
+
+> [!TIP]
+> Mer information finns i [Microsoft Defender Antivirus på Windows Server](microsoft-defender-antivirus-on-windows-server.md).
 
 ## <a name="configure-defender-for-endpoint"></a>Konfigurera Defender för slutpunkt
 
@@ -171,14 +170,13 @@ I det här steget i installationsprocessen lägger du till din befintliga lösni
 
 ### <a name="keep-the-following-points-about-exclusions-in-mind"></a>Tänk på följande om undantag
 
-När du lägger [till undantag Microsoft Defender Antivirus genomsökningar](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)bör du lägga till undantag för sökvägar och processer. Tänk på följande:
+När du lägger [till undantag Microsoft Defender Antivirus genomsökningar](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)bör du lägga till undantag för sökvägar och processer. 
+
+Tänk på följande:
 
 - *Undantag från sökvägar* exkluderar specifika filer och all åtkomst till dessa filer.
-
 - *Processkludering* exkluderar det som händer i en process, men exkluderar inte själva processen.
-
 - Lista undantag från processen med hjälp av deras fullständiga sökväg och inte efter namn. (Metoden med endast namn är mindre säker.)
-
 - Om du visar varje körbar (.exe) som både ett sökvägs- och ett processkludering utesluts processen och det som berörs.
 
 
@@ -197,7 +195,6 @@ Enhetsgrupper, enhetssamlingar och organisationsenheter gör det möjligt för s
 Med Hjälp av Konfigurationshanteraren och din enhetssamling konfigurerar du principer för program mot skadlig programvara.
 
 - Se [Skapa och distribuera program mot skadlig programvara för Endpoint Protection i Configuration Manager.](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies)
-
 - När du skapar och konfigurerar principer för program [](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) mot skadlig programvara bör du granska skyddsinställningarna i realtid och aktivera [blockering vid första synen.](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 
 > [!TIP]

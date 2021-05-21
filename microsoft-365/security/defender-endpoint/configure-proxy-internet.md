@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c8f25b924109823951c331fe744b548d372eaf11
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: 0de55eefe2f7dd8c9f891fbe126a68a49699ecd3
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957623"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594103"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Konfigurera enhetsproxy och internetanslutningsinställningar
 
@@ -36,116 +36,128 @@ ms.locfileid: "51957623"
 
 Defender för slutpunkts sensor kräver Microsoft Windows HTTP (WinHTTP) för att rapportera sensordata och kommunicera med Defender för slutpunktstjänsten.
 
-Den inbäddade Defender för slutpunkts sensor körs i systemkontext med localSystem-kontot. Sensorn använder Microsoft Windows HTTP Services (WinHTTP) för att aktivera kommunikation med Defender för molntjänsten Endpoint.
+Den inbäddade Defender för slutpunkts sensor körs i systemkontext med localSystem-kontot. Sensorn använder Microsoft Windows HTTP-tjänster (WinHTTP) för att aktivera kommunikation med Defender för slutpunktsmolntjänsten.
 
 >[!TIP]
->För organisationer som använder proxyservrar som en gateway till Internet kan du använda nätverksskydd och undersöka bakom en proxy. Mer information finns i Undersöka [anslutningshändelser som inträffar bakom proxy proxy.](investigate-behind-proxy.md)
+>Organisationer som använder proxyservrar för vidarebefordran som en gateway till Internet, kan använda nätverksskydd till undersökningar bakom en proxy. Mer information finns i [Undersöka anslutningshändelser som inträffar bakom proxyservrar för vidarebefordran](investigate-behind-proxy.md).
 
-WinHTTP-konfigurationsinställningen är oberoende av proxyinställningarna för Internetsurfning på Windows Internet (WinINet) och kan bara identifiera en proxyserver med hjälp av följande identifieringsmetoder:
+WinHTTP-konfigurationsinställningen är oberoende av proxyinställningarna för Internetsurfning på Windows Internet (WinINet) på Internet och kan bara identifiera en proxyserver med hjälp av följande identifieringsmetoder:
 
 - Metoder för automatisk identifiering:
+
   - Transparent proxy
-  - Web Proxy Auto-discovery Protocol (WPAD)
+
+  - WPAD (Web Proxy Auto-discovery Protocol)
 
     > [!NOTE]
     > Om du använder Transparent proxy eller WPAD i nätverkstopologin behöver du inga särskilda konfigurationsinställningar. Mer information om undantag för Slutpunkts-URL för Defender i proxyn finns i Aktivera åtkomst till Defender för [slutpunktstjänst-URL:er i proxyservern.](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
 
-- Manuell statisk proxykonfiguration:
-  - Registerbaserad konfiguration
-  - WinHTTP som konfigurerats med netsh-kommandot – endast lämpligt för stationära datorer i en stabil topologi (till exempel: ett skrivbord i ett företagsnätverk bakom samma proxy)
+- Manuell konfiguration av statisk proxy:
 
-## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Konfigurera proxyservern manuellt med hjälp av en registerbaserad statisk proxyserver
+  - Registerbaserad konfiguration
+
+  - WinHTTP som är konfigurerat med ett netsh-kommando – Endast lämpligt för stationära datorer i en stabil topologi (t.ex. en stationär dator i ett företagsnätverk bakom samma proxy)
+
+## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Konfigurera proxyservern manuellt med hjälp av en registerbaserad statisk proxy
 
 Konfigurera en registerbaserad statisk proxy så att endast Defender för slutpunkts sensor kan rapportera diagnostikdata och kommunicera med Defender för Slutpunktstjänster om en dator inte har tillåtelse att ansluta till Internet.
 
 > [!NOTE]
-> - När du använder det här alternativet på Windows 10 eller Windows Server 2019 rekommenderar vi att du har följande (eller senare) samlad version och kumulativ uppdatering:</br>
-> Windows 10, version 1809 eller Windows Server 2019 – https://support.microsoft.com/kb/5001384 <br>
-> Windows 10, version 1909 – https://support.microsoft.com/kb/4601380</br>
-> Windows 10, version 2004 – https://support.microsoft.com/kb/4601382</br>
-> Windows 10, version 20H2 - https://support.microsoft.com/kb/4601382</br>
-> Dessa uppdateringar förbättrar anslutningen och tillförlitligheten för CnC-kanalen (kommando- och kontrollkanal).</br>
+> När du använder det här alternativet på Windows 10 eller Windows Server 2019 rekommenderas du att ha följande (eller senare) samlad uppdatering och kumulativ uppdatering:
+>
+> - Windows 10, version 1809 eller Windows Server 2019 -https://support.microsoft.com/kb/5001384
+> - Windows 10, version 1909 -https://support.microsoft.com/kb/4601380
+> - Windows 10, version 2004 –https://support.microsoft.com/kb/4601382
+> - Windows 10, version 20H2 -https://support.microsoft.com/kb/4601382
+>
+> Dessa uppdateringar förbättrar anslutningen och tillförlitligheten för CnC-kanalen (kommando- och kontrollkanal).
 
-Den statiska proxyn kan konfigureras via grupprincip (GP). Grupprincipen hittar du under:
+Den statiska proxyn kan konfigureras via en grupprincip. Grupprincipen finns under:
 
-- Administrativa mallar > Windows-komponenter > datainsamlings- och förhandsversioner > Konfigurera autentiserad proxyanvändning för den anslutna användarupplevelsen och telemetritjänsten
-  - Ställ in den **på Aktiverad** och välj **Inaktivera autentiserad proxyanvändning:** ![ Bild på grupprincipinställning1](images/atp-gpo-proxy1.png)
-- **Administrativa mallar > Windows-komponenter > datainsamlings- och förhandsversioner > Konfigurera anslutna användarupplevelser och telemetri:**
-  - Konfigurera proxyn:<br>
-    ![Bild av grupprincipinställning2](images/atp-gpo-proxy2.png)
+- **Administrativa mallar > Windows komponenter > datainsamlings- och förhandsversioner > Konfigurera autentiserad proxyanvändning för den anslutna användarupplevelsen och telemetritjänsten**
 
-    Principen anger två registervärden `TelemetryProxyServer` som REG_SZ och REG_DWORD `DisableEnterpriseAuthProxy` registernyckeln `HKLM\Software\Policies\Microsoft\Windows\DataCollection` .
+  Ställ in den **på Aktiverad** och välj **Inaktivera autentiserad proxyanvändning.**
 
-    Registervärdet `TelemetryProxyServer` har följande strängformat:
+  ![Bild av grupprincipinställning1](images/atp-gpo-proxy1.png)
 
-    ```text
-    <server name or ip>:<port>
-    ```
+- **Administrativa mallar > Windows komponenter > datainsamlings- och förhandsversioner > Konfigurera anslutna användarupplevelser och telemetri:**
 
-    Till exempel: 10.0.0.6:8080
+  Konfigurera proxyn
 
-    Registervärdet `DisableEnterpriseAuthProxy` ska vara 1.
+  ![Bild av grupprincipinställning2](images/atp-gpo-proxy2.png)
+
+  Principen anger två registervärden, `TelemetryProxyServer` som REG_SZ och som `DisableEnterpriseAuthProxy` REG_DWORD, under registernyckeln `HKLM\Software\Policies\Microsoft\Windows\DataCollection` .
+
+  Registervärdet `TelemetryProxyServer` har följande strängformat:
+
+  ```text
+  <server name or ip>:<port>
+  ```
+
+  Till exempel: 10.0.0.6:8080
+
+  Registervärdet `DisableEnterpriseAuthProxy` anges till 1.
 
 ## <a name="configure-the-proxy-server-manually-using-netsh-command"></a>Konfigurera proxyservern manuellt med netsh-kommandot
 
 Använd netsh för att konfigurera en systemomfattande statisk proxy.
 
 > [!NOTE]
-> - Detta påverkar alla program, inklusive Windows-tjänster som använder WinHTTP med standardproxy.</br>
+> - Detta påverkar alla program, inklusive Windows-tjänster som använder WinHTTP med standardproxyn.</br>
 > - Bärbara datorer som ändrar topologi (till exempel från kontor till hem) fungerar inte på netsh. Använd den registerbaserade statiska proxykonfigurationen.
 
 1. Öppna en upphöjd kommandorad:
 
-    a. Gå till **Start** och skriv **cmd**.
+   1. Gå till **Start** och skriv **cmd**.
 
-    b. Högerklicka på **Kommandotolk** och välj **Kör som administratör.**
+   1. Högerklicka på **Kommandotolken** och välj **Kör som administratör**.
 
-2. Ange följande kommando och tryck på **Retur:**
+2. Skriv följande kommando och tryck på **Retur**:
 
    ```PowerShell
    netsh winhttp set proxy <proxy>:<port>
    ```
 
-   Till exempel: netsh winhttp set proxy 10.0.0.6:8080
+   Till exempel: `netsh winhttp set proxy 10.0.0.6:8080`
 
-Om du vill återställa winhttp proxy, ange följande kommando och tryck på **Retur**
+Återställ winhttp-proxyn genom att ange följande kommando och trycka på **Retur**:
 
 ```PowerShell
 netsh winhttp reset proxy
 ```
 
-Mer [information finns i Netsh-kommandosyntax,](https://docs.microsoft.com/windows-server/networking/technologies/netsh/netsh-contexts) sammanhang och formatering.
+Se [Netsh-kommandosyntax, kontexter och formatering](/windows-server/networking/technologies/netsh/netsh-contexts) för mer information.
 
 ## <a name="enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server"></a>Aktivera åtkomst till URL-adresser för Microsoft Defender för slutpunktstjänsten på proxyservern
 
-Om en proxy eller brandvägg blockerar all trafik som standard och bara tillåter specifika domäner genom, lägger du till de domäner som visas i det nedladdningsbara bladet i listan med tillåtna domäner.
+Om en proxy eller brandvägg blockerar all trafik som standard och endast tillåter vissa domäner, lägger du till domänerna som visas på det nedladdningsbara bladet i listan med tillåtna domäner.
 
 I följande nedladdningsbara kalkylblad finns de tjänster och deras tillhörande URL:er som nätverket måste kunna ansluta till. Du bör kontrollera att det inte finns några brandväggs- eller nätverksfiltreringsregler som nekar åtkomst till dessa URL:er, eller att du kan behöva skapa en *tillåta-regel* specifikt för dem.
 
 
-|**Kalkylblad med domänlista**|**Beskrivning**|
+| Kalkylblad med domänlista | Beskrivning |
 |:-----|:-----|
 |![Miniatyrbild för Microsoft Defender för slutpunkts-URL:er-kalkylblad](images/mdatp-urls.png)<br/>  | Kalkylblad med specifika DNS-poster för tjänstplatser, geografiska platser och operativsystem. <br><br>[Ladda ned kalkylbladet här.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 
 
-Om https-skanning (SSL-skanning) är aktiverat för en proxy eller brandvägg ska du utesluta domäner som listas i tabellen ovan från HTTPS-skanning.
+Om en proxy eller brandvägg har HTTPS-skanning (SSL-inspektion) aktiverad, utesluter du domänerna som visas i tabellen ovan från HTTPS-skanningen.
 
 > [!NOTE]
-> settings-win.data.microsoft.com bara om du har Windows 10-enheter med version 1803 eller tidigare.<br>
-
-
-> [!NOTE]
-> URL-adresser som innehåller v20 i dem behövs bara om du har Windows 10-enheter med version 1803 eller senare. Du behöver till ```us-v20.events.data.microsoft.com``` exempel en Windows 10-enhet med version 1803 eller senare och förs in i området för datalagring i USA.
+> settings-win.data.microsoft.com bara om du har en Windows 10 som kör version 1803 eller tidigare.<br>
 
 
 > [!NOTE]
-> Om du använder Microsoft Defender Antivirus i din miljö kan du gå [till Konfigurera nätverksanslutningar till molntjänsten Microsoft Defender Antivirus.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
+> URL-adresser som innehåller v20 i dem behövs bara om du har Windows 10 enheter med version 1803 eller senare. For example, `us-v20.events.data.microsoft.com` is needed for a Windows 10 device running version 1803 or later and onboarded to US Data Storage region.
+
+
+> [!NOTE]
+> Om du använder Microsoft Defender Antivirus i din miljö kan du [gå till Konfigurera nätverksanslutningar till Microsoft Defender Antivirus molntjänsten.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
 
 Om en proxy eller brandvägg blockerar anonym trafik, som Defender för Slutpunkts sensor ansluter från systemkontext, kontrollerar du att anonym trafik tillåts i tidigare angivna URL:er.
 
-### <a name="microsoft-monitoring-agent-mma---proxy-and-firewall-requirements-for-older-versions-of-windows-client-or-windows-server"></a>Microsoft Monitoring Agent (MMA) – proxy- och brandväggskrav för äldre versioner av Windows-klienten eller Windows Server
+### <a name="microsoft-monitoring-agent-mma---proxy-and-firewall-requirements-for-older-versions-of-windows-client-or-windows-server"></a>Microsoft Monitoring Agent (MMA) – proxy- och brandväggskrav för äldre versioner Windows klient eller Windows Server
 
-I informationen nedan visas den konfigurationsinformation för proxy och brandvägg som krävs för att kommunicera med loganalysagenten (kallas ofta Microsoft monitoring agent) för tidigare versioner av Windows, till exempel Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2 och Windows Server 2016.
+Informationen nedan innehåller den konfigurationsinformation för proxy och brandvägg som krävs för att kommunicera med loganalysagenten (kallas ofta Microsoft monitoring agent) för tidigare versioner av Windows, till exempel Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2 och Windows Server 2016.
 
 |Agentresurs|Portar |Riktning |Förbikoppling av HTTPS-kontroll|
 |------|---------|--------|--------|   
@@ -162,17 +174,17 @@ I informationen nedan visas den konfigurationsinformation för proxy och brandv�
 
 Läs följande vägledning för att ta bort jokertecknet (*) för din specifika miljö när du använder Microsoft Monitoring Agent (MMA) för tidigare versioner av Windows.
 
-1.  Introducera ett tidigare operativsystem med Microsoft Monitoring Agent (MMA) i Defender för slutpunkt (mer information finns i Hantera tidigare versioner av Windows på [Defender](https://go.microsoft.com/fwlink/p/?linkid=2010326) för slutpunkt och Onboard [Windows-servrar.](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016)
+1.  Introducera ett tidigare operativsystem med Microsoft Monitoring Agent (MMA) i Defender för Slutpunkt (mer information finns i Hantera tidigare versioner av [Windows på Defender](https://go.microsoft.com/fwlink/p/?linkid=2010326) för slutpunkt och onboard [Windows-servrar](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016).
 
-2.  Kontrollera att datorn rapporterar till Microsoft Defender Säkerhetscenter-portalen.
+2.  Kontrollera att datorn rapporterar till Microsoft Defender Säkerhetscenter portalen.
 
 3.  Kör verktyget TestCloudConnection.exe C:\Program\Microsoft Monitoring Agent\Agent" för att verifiera anslutningen och visa de URL-adresser som krävs för den specifika arbetsytan.
 
 4.  Titta i listan med URL-adresser för Microsoft Defender för slutpunkten för en fullständig lista över krav för din region (mer information finns i [Tjänstwebbadresser för kalkylblad](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)).
 
-![Bild på administratör i Windows PowerShell](images/admin-powershell.png)
+    ![Bild av administratör i Windows PowerShell](images/admin-powershell.png)
 
-Jokert många (*) som används i *.ods.opinsights.azure.com-, *.oms.opinsights.azure.com- och *.agentsvc.azure-automation.net-URL-slutpunkter kan ersättas med ditt specifika arbetsyte-ID. Arbetsyte-ID:t är specifikt för din miljö och arbetsyta och finns i avsnittet Registrering för klientorganisationen i Microsoft Defender Säkerhetscenter-portalen.
+Jokert många (*) som används i *.ods.opinsights.azure.com-, *.oms.opinsights.azure.com- och *.agentsvc.azure-automation.net-URL-slutpunkter kan ersättas med ditt specifika arbetsyte-ID. Arbetsyte-ID:t är specifikt för din miljö och arbetsyta och finns i avsnittet Registrering för klientorganisationen i Microsoft Defender Säkerhetscenter portal.
 
 Slutpunkten *.blob.core.windows.net-URL kan ersättas med WEBBADRESSerna som visas i avsnittet "Brandväggsregel: *.blob.core.windows.net" i testresultaten. 
 
@@ -181,25 +193,25 @@ Slutpunkten *.blob.core.windows.net-URL kan ersättas med WEBBADRESSerna som vis
 
 ## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>Verifiera klientanslutningen till URL-adresser för Microsoft Defender för slutpunktstjänsten
 
-Verifiera att proxykonfigurationen har slutförts, att WinHTTP kan identifiera och kommunicera via proxyservern i din miljö och att proxyservern tillåter trafik till URL:er för Defender för slutpunktstjänsten.
+Verifiera att proxykonfigurationen har slutförts, att WinHTTP kan identifiera och kommunicera via proxyservern i din miljö och att proxyservern tillåter trafik till URL:erna för Defender för Endpoint-tjänsten.
 
-1. Ladda ned [verktyget MDATP-klientanalys till](https://aka.ms/mdatpanalyzer) den dator där Defender för slutpunkts sensor körs på.
+1. Ladda ned [MDATP-verktyget Klientanalys till](https://aka.ms/mdatpanalyzer) den dator där Defender för Slutpunkts sensor körs på.
 
 2. Extrahera innehållet i MDATPClientAnalyzer.zip på enheten.
 
 3. Öppna en upphöjd kommandorad:
 
-    a. Gå till **Start** och skriv **cmd**.
+   1. Gå till **Start** och skriv **cmd**.
 
-    b.  Högerklicka på **Kommandotolk** och välj **Kör som administratör.**
+   1.  Högerklicka på **Kommandotolken** och välj **Kör som administratör**.
 
-4. Ange följande kommando och tryck på **Retur:**
+4. Skriv följande kommando och tryck på **Retur**:
 
     ```PowerShell
     HardDrivePath\MDATPClientAnalyzer.cmd
     ```
 
-    Ersätt *HardDrivePath* med sökvägen dit verktyget MDATPClientAnalyzer laddades ned till, till exempel
+    Ersätt *HardDrivePath* med sökvägen dit verktyget MDATPClientAnalyzer laddades ned till, till exempel:
 
     ```PowerShell
     C:\Work\tools\MDATPClientAnalyzer\MDATPClientAnalyzer.cmd
@@ -207,8 +219,9 @@ Verifiera att proxykonfigurationen har slutförts, att WinHTTP kan identifiera o
 
 5. Extrahera den *MDATPClientAnalyzerResult.zip* som skapats av verktyget i mappen som används i *HardDrivePath.*
 
-6. Öppna *MDATPClientAnalyzerResult.txt* och kontrollera att du har utfört proxykonfigurationsstegen för att aktivera serveridentifiering och åtkomst till tjänstens URL:er. <br><br>
-   Verktyget kontrollerar anslutningen för Defender för slutpunktstjänst-URL:er som Defender för Slutpunktsklient är konfigurerad att interagera med. Sedan skrivs resultaten ut iMDATPClientAnalyzerResult.txt *för* varje URL-adress som potentiellt kan användas för att kommunicera med Defender för slutpunktstjänster. Till exempel:
+6. Öppna *MDATPClientAnalyzerResult.txt* och kontrollera att du har utfört proxykonfigurationsstegen som aktiverar serveridentifiering och åtkomst till tjänstens URL:er.
+
+   Verktyget kontrollerar anslutningen av URL:erna för Defender för Endpoint-tjänsten som Defender för Endpoint-klienten har konfigurerats att interagera med. Resultatet skrivs sedan i filen *MDATPClientAnalyzerResult.txt* för varje URL som kan användas till att kommunicera med Defender för Endpoint-tjänsterna. Till exempel:
 
    ```text
    Testing URL : https://xxx.microsoft.com/xxx
@@ -219,12 +232,12 @@ Verifiera att proxykonfigurationen har slutförts, att WinHTTP kan identifiera o
    5 - Command line proxy: Doesn't exist
    ```
 
-Om minst ett av anslutningsalternativen returnerar en (200) status kan Defender för Endpoint-klienten kommunicera med den testat URL-adressen korrekt med den här anslutningsmetoden. <br><br>
+Om minst ett av anslutningsalternativen returnerar en status (200) kan Defender för Endpoint-klienten kommunicera med den testade URL:en med anslutningsmetoden.
 
-Men om anslutningskontrollens resultat indikerar ett fel visas ett HTTP-fel (se HTTP-statuskoder). Du kan sedan använda URL:erna i tabellen som visas i Aktivera åtkomst till Defender för [slutpunktstjänst-URL:er i proxyservern.](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) Vilka URL-adresser du använder beror på vilken region du valde under registreringsprocessen.
+Men om anslutningskontrollens resultat anger att ett fel uppstod, visas ett HTTP-fel (se HTTP-statuskoder). Du kan sedan använda URL:erna i tabellen som visas i Aktivera åtkomst till Defender för [slutpunktstjänst-URL:er i proxyservern.](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) Vilka URL-adresser du använder beror på vilken region du valde under registreringsprocessen.
 
 > [!NOTE]
-> Verktyget Anslutningsanalys är inte kompatibelt med ASR-regeln Blockera processskapanden som kommer från [PSExec- och WMI-kommandon.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules) Du måste tillfälligt inaktivera den här regeln för att köra anslutningsverktyget.
+>  Verktyget Connectivity Analyzer är inte kompatibelt med ASR-regeln [Blockera processer som skapas från PSExec- och WMI-kommandon](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). Du måste inaktivera regeln tillfälligt om du vill köra anslutningsverktyget.
 
 
 > [!NOTE]

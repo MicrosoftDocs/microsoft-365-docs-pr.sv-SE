@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-migratetomdatp
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 05/14/2021
+ms.date: 05/20/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 0ba6f3da326223dcefb1c29f91c5a631ec8a866c
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 939fea5b815827f5afbe6cdf78fd9335da6337e8
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539173"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594067"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Växla till Microsoft Defender för Slutpunkt – fas 3: Onboard
 
@@ -42,20 +42,15 @@ ms.locfileid: "52539173"
 **Välkommen till Fas 3 om [att byta till Defender för Slutpunkt.](switch-to-microsoft-defender-migration.md#the-migration-process)** Den här migreringsfasen omfattar följande steg:
 
 1. [Introducera enheter till Defender för Slutpunkt](#onboard-devices-to-microsoft-defender-for-endpoint).
-
 2. [Kör ett identifieringstest](#run-a-detection-test).
-
 3. [Kontrollera att Microsoft Defender Antivirus är i passivt läge på dina slutpunkter](#confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints).
-
 4. [Hämta uppdateringar för Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
-
 5. [Avinstallera din lösning som inte är en Microsoft-lösning.](#uninstall-your-non-microsoft-solution) 
-
 6. [Kontrollera att Defender för Slutpunkt fungerar som det ska.](#make-sure-defender-for-endpoint-is-working-correctly)
 
 ## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Registrera enheter till Microsoft Defender för Endpoint
 
-1. Gå till Microsoft Defender Säkerhetscenter ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ) och logga in.
+1. Gå till Microsoft Defender Säkerhetscenter ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) och logga in.
 
 2. Välj **Inställningar**  >  **Registrering av**  >  **enhetshantering**. 
 
@@ -73,9 +68,9 @@ Distributionsmetoderna varierar beroende på operativsystem och rekommenderade m
 | Windows 8.1 Enterprise <p>Windows 8.1 Pro <p>Windows 7 SP1 Enterprise <p>Windows 7 SP1-Pro     | [Microsoft Monitoring Agent](onboard-downlevel.md)<p>**OBS!** Microsoft Monitoring Agent är nu Azure Log Analytics-agent. Mer information finns i Översikt [över logganalysagenter.](/azure/azure-monitor/platform/log-analytics-agent)        |
 | Windows Server 2019 och senare <p>Windows Basversionen av Server 2019 <p>Windows Serverversion 1803 och senare | [Lokalt skript](configure-endpoints-script.md) <p>[Grupprincip](configure-endpoints-gp.md) <p>[Configuration Manager](configure-endpoints-sccm.md) <p>[System Center Configuration Manager](configure-endpoints-sccm.md) <p>[VDI-onboardingskript för icke-beständiga enheter](configure-endpoints-vdi.md) <p>**Obs!** Ett lokalt skript är lämpligt för ett konceptbevis men bör inte användas för produktionsdistribution. För produktionsdistribution rekommenderar vi att du använder Grupprincip, Microsoft Endpoint Configuration Manager eller Intune.    |
 | Windows Server 2016 <p>Windows Server 2012 R2 <p>Windows Server 2008 R2 SP1  | [Microsoft Defender Säkerhetscenter](configure-server-endpoints.md)<p>[Azure Defender](/azure/security-center/security-center-wdatp) |
-|macOS:<p>11.3.1 (Big Sur) <p>10.15 (Catalina)<p>10.14 (Mojave)|[Introducera icke-Windows-enheter](configure-endpoints-non-windows.md)  |
-|iOS |[Introducera icke-Windows-enheter](configure-endpoints-non-windows.md)  |
-|Linux:<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS eller senare LTS<p>SLES 12+<p>9+<p>Oracle Linux 7.2 |[Introducera icke-Windows-enheter](configure-endpoints-non-windows.md)  |
+| macOS:<p>11.3.1 (Big Sur) <p>10.15 (Catalina)<p>10.14 (Mojave) | [Introducera icke-Windows-enheter](configure-endpoints-non-windows.md)  |
+| iOS | [Introducera icke-Windows-enheter](configure-endpoints-non-windows.md)  |
+| Linux:<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS eller senare LTS<p>SLES 12+<p>9+<p>Oracle Linux 7.2 | [Introducera icke-Windows-enheter](configure-endpoints-non-windows.md)  |
 
 ## <a name="run-a-detection-test"></a>Köra ett identifieringstest
 
@@ -83,18 +78,18 @@ Om du vill kontrollera att dina onboarded-enheter är korrekt anslutna till Defe
 
 |Operativsystem  |Vägledning  |
 |---------|---------|
-| Windows 10 <p>Windows Server 2019 <p>Windows Server, version 1803 <p>Windows Server 2016 <p>Windows Server 2012 R2     | Se [Köra ett identifieringstest](run-detection-test.md). <p>Besök webbplatsen för Demoscenarier i Defender för slutpunkt [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) () och prova en eller flera av scenarierna. Prova till exempel **demoscenariot Moln levererat skydd.**         |
-| macOS:<p>11.3.1 (Big Sur) <p>10.15 (Catalina)<p>10.14 (Mojave)    |Ladda ned och använd APPEN GÖR-själv-programmet på [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) . <p>Mer information finns i [Defender för Slutpunkt på macOS.](microsoft-defender-endpoint-mac.md)        |
-| Linux:<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS eller senare LTS<p>SLES 12+<p>9+<p>Oracle Linux 7.2 |1. Kör följande kommando och leta efter resultatet **1:** <br/>`mdatp health --field real_time_protection_enabled`. <p>2. Öppna ett terminalfönster och kör följande kommando: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <p>3. Kör följande kommando för att lista identifierade hot: <br/>`mdatp threat list`. <p>Mer information finns i [Defender för Slutpunkt på Linux.](microsoft-defender-endpoint-linux.md) |
+| Windows 10 <p>Windows Server 2019 <p>Windows Server, version 1803 <p>Windows Server 2016 <p>Windows Server 2012 R2     | Se [Köra ett identifieringstest](run-detection-test.md). <p>Besök webbplatsen för Demoscenarier i Defender för slutpunkt [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) () och prova en eller flera av scenarierna. Prova till exempel **demoscenariot Moln levererat skydd.**    |
+| macOS:<p>11.3.1 (Big Sur) <p>10.15 (Catalina)<p>10.14 (Mojave)    | Ladda ned och använd APPEN GÖR-själv-programmet på [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) . <p>Mer information finns i [Defender för Slutpunkt på macOS.](microsoft-defender-endpoint-mac.md)        |
+| Linux:<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS eller senare LTS<p>SLES 12+<p>9+<p>Oracle Linux 7.2 | 1. Kör följande kommando och leta efter resultatet **1:** <br/>`mdatp health --field real_time_protection_enabled`. <p>2. Öppna ett terminalfönster och kör följande kommando: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <p>3. Kör följande kommando för att lista identifierade hot: <br/>`mdatp threat list`. <p>Mer information finns i [Defender för Slutpunkt på Linux.](microsoft-defender-endpoint-linux.md) |
 
 ## <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints"></a>Kontrollera att Microsoft Defender Antivirus är i passivt läge på dina slutpunkter
 
 Nu när dina slutpunkter har introducerats till Defender för Endpoint är nästa steg att se till att Microsoft Defender Antivirus körs i passiv form. Du kan använda kommandotolken eller PowerShell för att utföra den här uppgiften enligt följande tabell:
 
-|Metod  |Lämplig åtgärd  |
-|---------|---------|
+| Metod  | Lämplig åtgärd  |
+|:-------|:-------|
 |Kommandotolken     | 1. På en Windows enhet öppnar du Kommandotolken som administratör.<p>2. Skriv `sc query windefend` och tryck sedan på Retur.<p>3. Granska resultaten för att bekräfta att Microsoft Defender Antivirus i passiv form.         |
-|PowerShell     | 1. På en Windows enhet öppnar du Windows PowerShell som administratör.<p>2. Kör [cmdleten Get-MpComputerStatus.](/powershell/module/defender/Get-MpComputerStatus) <p>3. I resultatlistan letar du efter antingen **AMRunningMode: Passivt läge** eller **AMRunningMode: SxS-passivt läge.**          |
+| PowerShell     | 1. På en Windows enhet öppnar du Windows PowerShell som administratör.<p>2. Kör [cmdleten Get-MpComputerStatus.](/powershell/module/defender/Get-MpComputerStatus) <p>3. I resultatlistan letar du efter antingen **AMRunningMode: Passivt läge** eller **AMRunningMode: SxS-passivt läge.**    |
 
 > [!NOTE]
 > I vissa *versioner Windows Defender Antivirus* inte *Microsoft Defender Antivirus* visas i Windows.
@@ -122,21 +117,30 @@ Om du använder Windows Server 2016 kan du behöva börja Microsoft Defender Ant
 
 ## <a name="get-updates-for-microsoft-defender-antivirus"></a>Hämta uppdateringar för Microsoft Defender Antivirus
 
-Att hålla Microsoft Defender Antivirus uppdaterad är viktigt för att säkerställa att dina enheter har den senaste tekniken och funktionerna som behövs för att skydda mot nya tekniker för skadlig programvara och attack, även om Microsoft Defender Antivirus körs i [passiv form.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+Att hålla Microsoft Defender Antivirus uppdaterat är viktigt för att säkerställa att dina enheter har den senaste tekniken och funktionerna som behövs för att skydda mot nya tekniker för skadlig programvara och attack, även om Microsoft Defender Antivirus körs i passiv form. (Se [Microsoft Defender Antivirus kompatibilitet](microsoft-defender-antivirus-compatibility.md).)
 
 Det finns två typer av uppdateringar som är relaterade till Microsoft Defender Antivirus uppdateringar:
+
 - Säkerhetsintelligensuppdateringar
 - Produktuppdateringar
 
-Följ linjerna i Hantera uppdateringar i Microsoft Defender Antivirus [och tillämpa baslinjer](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)för att få uppdateringarna.
+Följ linjerna i Hantera uppdateringar i Microsoft Defender Antivirus [och tillämpa baslinjer](manage-updates-baselines-microsoft-defender-antivirus.md)för att få uppdateringarna.
 
 ## <a name="uninstall-your-non-microsoft-solution"></a>Avinstallera din lösning som inte är en Microsoft-lösning
 
-Nu när du har introducerat din organisations enheter i Defender för Endpoint och Microsoft Defender Antivirus är installerat och aktiverat är nästa steg att avinstallera din lösning för slutpunktsskydd som inte är en Microsoft-slutpunkt. Om du behöver hjälp med den här uppgiften kan du kontakta lösningsleverantörens tekniska supportteam.
+Om du vid det här läget har:
+
+- Din organisations enheter onboardeds till Defender för Endpoint och 
+- Microsoft Defender Antivirus är installerat och aktiverat 
+
+Nästa steg är att avinstallera en lösning som inte är en Microsoft-slutpunktsskyddslösning. 
+
+Om du behöver hjälp med den här uppgiften kan du kontakta lösningsleverantörens tekniska supportteam.
 
 ## <a name="make-sure-defender-for-endpoint-is-working-correctly"></a>Kontrollera att Defender för Slutpunkt fungerar korrekt
 
 Nu när du har gått över till Defender för Endpoint och du har avinstallerat din tidigare lösning utanför Microsoft är nästa steg att se till att Defender för Slutpunkt fungerar korrekt. Ett bra sätt att göra detta är att besöka webbplatsen för Defender för Endpoint-demoscenarier ( [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) ). Prova en eller flera demoscenarier på den sidan, inklusive minst följande:
+
 - Molnbaserat skydd
 - Potentiellt oönskade program (PUA)
 - Network Protection (NP)
@@ -145,6 +149,5 @@ Nu när du har gått över till Defender för Endpoint och du har avinstallerat 
 
 **Grattis!** Du har slutfört [migreringen till Defender för slutpunkt](switch-to-microsoft-defender-migration.md#the-migration-process)! 
 
-- [Besök instrumentpanelen för säkerhetsåtgärder](security-operations-dashboard.md) i Microsoft Defender Säkerhetscenter ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ). 
-
+- [Besök instrumentpanelen för säkerhetsåtgärder](security-operations-dashboard.md) i Microsoft Defender Säkerhetscenter ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ). 
 - [Hantera Defender för Slutpunkt efter migreringen.](manage-atp-post-migration.md)

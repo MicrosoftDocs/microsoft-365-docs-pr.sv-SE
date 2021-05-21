@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: Lär dig hur du verifierar e-post- och domänägarskap för att ta över en ohanterad klientorganisation i Microsoft 365
-ms.openlocfilehash: 72278fd0e373848a79f9823e186b19bc1cb47770
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Lär dig hur du verifierar din e-post och domänägarskap för att ta över en ohanterad klientorganisation som skapats av en självbetjänad användarregistrering i Microsoft 365.
+ms.openlocfilehash: c37bf153edf39f53b5c10f020b0cbb8d630eb4a6
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914852"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593939"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Utföra ett internt administratörsupptagande
 
@@ -39,9 +39,9 @@ Om du är administratör och vill ta över en ohanterad klientorganisation som s
 ## <a name="step-1-verify-your-email-address"></a>Steg 1: Verifiera din e-postadress
 
 > [!NOTE]
-> Om självbetjäning är aktiverad i klientorganisationen kan användarna prenumerera på kostnadsfria tjänster, till exempel Power BI, på egen hand. De här stegen förutsätter att en användarprenumeration med självbetjäning har skapat den ohanterade klientorganisationen som du vill ta över som administratör. I det första steget skapar du en användarkontext i den ohanterade klientorganisationen, med Power BI för att illustrera administratörsupptagandets väg.
+> Om självbetjäning är aktiverad i klientorganisationen kan användare prenumerera på kostnadsfria tjänster som Power BI, på egen hand. De här stegen förutsätter att en användarprenumeration med självbetjäning har skapat den ohanterade klientorganisationen som du vill ta över som administratör. I det första steget skapar du en användarkontext i den ohanterade klientorganisationen, med hjälp Power BI för att illustrera administrationsvägen för övergången.
 
-1. Registrera dig för Power BI genom att gå till [Power BI-webbplatsen](https://powerbi.com) och välja Starta kostnadsfri start gratis provperiod (i rutan Dela med Power  >   BI Pro). 
+1. Om du vill registrera Power BI kostnadsfri utvärderingsversion går du till [webbplatsen Power BI](https://powerbi.com) och väljer Starta kostnadsfri utvärderingsversion  >   (i rutan Dela Power BI Pro start). 
 
 2. Registrera dig med ett användarkonto som använder domännamnet för din organisation (t.ex. `powerbiadmin@contoso.com` ). Om ditt konto redan används loggar du in med ditt nuvarande lösenord.
 
@@ -66,12 +66,12 @@ Om du är administratör och vill ta över en ohanterad klientorganisation som s
 > [!NOTE]
 > Att ta över skuggklientorganisationen påverkar inte befintlig information eller befintliga tjänster. Men om några användare i domänen har registrerat sig för tjänster som kräver en licens uppmanas du att köpa licenser till dem när du tar över administratörsrollen. Du kan köpa eller ta bort licenser när administratörsinstallationen är klar.
   
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-content"></a>Relaterat innehåll
 
-YouTube: [3 steg för att göra ett övertagande av IT-administratörer för Power BI och Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)
+YouTube: [3 steg för att göra ett IT-administratörstagande för Power BI och Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk) (video)
 
-[Administratörsupptagande i Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover)
+[Administratörsupptagande i Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (artikel)
 
-[Använda självbetjäning för registrering i din organisation](self-service-sign-up.md)
+[Med självbetjäning registrerar du dig i din organisation](self-service-sign-up.md) (artikel)
   
-[Förstå administratörsrollen i Power BI-tjänsten](/power-bi/service-admin-role)
+[Förstå tjänstadministratörsrollen Power BI](/power-bi/service-admin-role) (artikel)

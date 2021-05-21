@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 725e6226a56b3aae3670cde18969afdda1ec1940
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 9cb3cc67c3992773897ea8178f261d25dcd87da0
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530844"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594161"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Hantera ärenden i Microsoft 365 Defender
 
@@ -47,7 +47,7 @@ Du kan hantera dina incidenter på följande sätt:
 
 - [Redigera incidentens namn](#edit-the-incident-name)
 - [Lägg till incidenttaggar](#add-incident-tags)
-- [Tilldela incidenten till ett användarkonto](#assign-incidents)
+- [Tilldela incidenten till dig själv](#assign-incidents)
 - [Lösa dem](#resolve-an-incident)
 - [Ange dess klassificering och avgörande](#set-the-classification-and-determination)
 - [Lägga till kommentarer](#add-comments)
@@ -80,7 +80,15 @@ När du börjar skriva kan du välja i en lista med valda taggar.
 
 ## <a name="assign-incidents"></a>Tilldela ärenden
 
-Om en incident ännu inte har tilldelats kan du välja **Tilldela till** och ange användarkontot. Då tilldelas ägarskap för incidenten och alla aviseringar som är kopplade till den.
+Om du vill tilldela en incident väljer **du Tilldela till mig**. Då tilldelas ägarskap för incidenten och alla aviseringar som är kopplade till den till ditt användarkonto.
+
+Du kan få en lista över incidenter tilldelade till dig genom att filtrera incidentkön. 
+
+1. Välj Filter från **incidentkön.**
+2. i avsnittet **Incidenttilldelning** avmarkerar **du Markera alla** och väljer **Tilldelad till mig**.
+3. Välj **Använd** och stäng sedan **fönstret** Filter.
+
+Du kan sedan spara den resulterande URL-adressen i webbläsaren som ett bokmärke för att snabbt visa en lista över incidenter som har tilldelats dig.
 
 ## <a name="resolve-an-incident"></a>Lösa ett problem
 
