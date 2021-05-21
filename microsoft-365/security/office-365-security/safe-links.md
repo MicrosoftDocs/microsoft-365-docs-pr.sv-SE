@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: I den här artikeln kan administratörer läsa mer om skydd mot Valv-länkar i Defender för Office 365 för att skydda organisationen från nätfiske och andra angrepp som använder skadliga URL:er.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 573fd5b92400996fa595b5953028e20fcecec976
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 407f04685e41269c0e8436d3b68db7d755fce129
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583586"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593575"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Valv Länkar i Microsoft Defender för Office 365
 
@@ -54,7 +54,7 @@ Valv Länkskydd är tillgängligt på följande platser:
   Mer information om hur Valv skydd mot länkar för e-postmeddelanden finns i [avsnittet Valv Länkar](#safe-links-settings-for-email-messages) för e-postmeddelanden längre fram i den här artikeln.
   
   > [!NOTE]
-  > Försäljningslänkar fungerar inte på e-postaktiverade gemensamma mappar.
+  > Valv Länkar fungerar inte på e-postaktiverade gemensamma mappar.
 
 - **Microsoft Teams** (för närvarande i förhandsversionen av TAP): Valv Länkskydd för länkar i Teams-konversationer, gruppchattar eller från kanaler styrs också Valv av principer för länkar. Det finns ingen Valv-standardprincip för länkar, så om du vill skydda **Valv-länkar i Teams** måste du skapa en eller flera Valv principer för länkar.
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 42ab124f3026cf0b7441edf44c0e6433be5f0ecd
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: e7148e666b7d96d6de328089fccc4bb444b9f502
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583674"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594011"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Vanliga principer för identitets- och enhetsåtkomst
 
@@ -63,9 +63,9 @@ För att ge dig tid att utföra dessa uppgifter rekommenderar vi att du implemen
 ||[Tillämpa programskyddsprinciper (APP)-dataskydd](#apply-app-data-protection-policies)|Appskyddsprincipen för One Intune per plattform (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 eller E5|
 ||[Kräv godkända appar och programskydd](#require-approved-apps-and-app-protection)|Tillämpar mobil appskydd för telefoner och surfplattor med iOS, iPadOS eller Android.|Microsoft 365 E3 eller E5|
 ||[Definiera principer för enhetsefterlevnad](#define-device-compliance-policies)|En princip för varje plattform.|Microsoft 365 E3 eller E5|
-||[Kräv kompatibla PC-datorer](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Framtvingar Intune-hantering av datorer med Windows eller MacOS.|Microsoft 365 E3 eller E5|
+||[Kräv kompatibla PC-datorer](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Framtvingar Intune-hantering av datorer med Windows eller macOS.|Microsoft 365 E3 eller E5|
 |**Känslig**|[Kräv MFA när inloggningsrisken *är låg,* *medel* eller *hög*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 eller Microsoft 365 E3 med E5-säkerhets tillägg|
-||[Kräv kompatibla datorer *och* mobila enheter](#require-compliant-pcs-and-mobile-devices)|Framtvingar Intune-hantering för både DATORER (Windows eller MacOS) och telefoner och surfplattor (iOS, iPadOS eller Android).|Microsoft 365 E3 eller E5|
+||[Kräv kompatibla datorer *och* mobila enheter](#require-compliant-pcs-and-mobile-devices)|Framtvingar Intune-hantering för både datorer (Windows eller macOS) och telefoner och surfplattor (iOS, iPadOS eller Android).|Microsoft 365 E3 eller E5|
 |**Strikt reglerad**|[*Kräv* alltid MFA](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 eller E5|
 |
 
@@ -190,7 +190,7 @@ I **avsnittet** Uppgifter:
 |Typ|Egenskaper|Värden|Åtgärd|
 |---|---|---|---|
 |Användare|Inkludera|**Alla användare**|Välj|
-|Användarrisk|**Högsta**||Välj|
+|Användarrisk|**Hög**||Välj|
 |
 
 I det andra **avsnittet uppgifter:**

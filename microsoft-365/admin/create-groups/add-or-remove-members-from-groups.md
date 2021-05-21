@@ -1,5 +1,5 @@
 ---
-title: Lägga till eller ta bort medlemmar från Microsoft 365-grupper
+title: Lägga till eller ta bort medlemmar Microsoft 365 grupper
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,17 +17,17 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
-description: Lär dig hur du lägger till en medlem i en grupp, tar bort medlemmar från gruppen och hanterar gruppägares status i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 997145b85d2990d5bf7184f5e97a0a8d1c86dae9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Lär dig hur du lägger till en medlem i en grupp, tar bort medlemmar från gruppen och hanterar gruppägares status i Microsoft 365 administrationscenter.
+ms.openlocfilehash: 3ab3ebe21caa2d9d3dfa381dd3b68c9d2512cb79
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907922"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593388"
 ---
-# <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Lägga till eller ta bort medlemmar från Microsoft 365-grupper med hjälp av administrationscentret
+# <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Lägga till eller ta bort medlemmar Microsoft 365 grupper i administrationscentret
 
-I Microsoft 365 skapar gruppmedlemmarna vanligtvis sina egna grupper, lägger till sig själva i grupper som de vill gå med i eller bjuds in av gruppens ägare. Om gruppägandet ändras eller om du anser att en medlem ska läggas till eller tas bort kan du som administratör även göra den ändringen. Endast globala administratörer, Exchange-administratörer, gruppadministratörer och användaradministratörer kan göra de här ändringarna. [Vad är en Microsoft 365-grupp?](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+I Microsoft 365 skapar gruppmedlemmarna vanligtvis sina egna grupper, lägger till sig själva i grupper som de vill gå med i eller bjuds in av gruppägare. Om gruppägandet ändras eller om du anser att en medlem ska läggas till eller tas bort kan du som administratör även göra den ändringen. Endast en global administratör, Exchange, gruppadministratör eller användaradministratör kan göra dessa ändringar. [Vad är en Microsoft 365 grupp?](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 > [!TIP]
 > Om du inte är administratör kan du [lägga till eller ta bort medlemmar med hjälp av Outlook](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de).
@@ -109,14 +109,14 @@ Personen som skapade gruppen är som standard gruppägare. Grupper har ofta fler
 
 - [Tilldela en ny ägare till en överbliven grupp](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-## <a name="articles-about-managing-groups"></a>Artiklar om att hantera grupper
+## <a name="related-content"></a>Relaterat innehåll
 
-- [Uppgradera distributionslistor till Microsoft 365-grupper i Outlook](../manage/upgrade-distribution-lists.md)
+[Uppgradera distributionslistor till Microsoft 365 grupper i Outlook](../manage/upgrade-distribution-lists.md) (artikel)
 
-- [Varför du bör uppgradera dina distributionslistor till grupper i Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
+[Varför du bör uppgradera dina distributionslistor till grupper i Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (artikel)
 
-- [Hantera gäståtkomst i Microsoft 365-grupper](manage-guest-access-in-groups.md)
+[Hantera gäståtkomst i Microsoft 365 (artikel)](manage-guest-access-in-groups.md)
 
-- [Hantera Microsoft 365-grupper med PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md): den här artikeln introducerar dig till viktiga cmdlets och innehåller exempel
+[Hantera Microsoft 365-grupper med PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md): i den här artikeln ges en artikel om viktiga cmdlets och exempel (artikel)
 
-- [Namngivningsprincip för Microsoft 365-grupper](../../solutions/groups-naming-policy.md)
+[Microsoft 365 gruppnamnprincip](../../solutions/groups-naming-policy.md) (artikel)

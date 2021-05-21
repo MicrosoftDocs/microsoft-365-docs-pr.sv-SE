@@ -1,6 +1,6 @@
 ---
-title: Introducera Windows 10-enheter i Microsoft Defender för Slutpunkt via Grupprincip
-description: Använd Grupprincip för att distribuera konfigurationspaketet på Windows 10-enheter så att de introduceras till tjänsten.
+title: Introducera Windows 10-enheter i Microsoft Defender för slutpunkt via grupprincip
+description: Använd grupprincip för att distribuera konfigurationspaketet på Windows 10-enheter så att de förs in i tjänsten.
 keywords: konfigurera enheter med grupprincip, enhetshantering, konfigurera Microsoft Defender för slutpunktsenheter, hantera Microsoft Defender för slutpunktsenheter, grupprincip
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: b8f56c8f2ba92073ea7ae9464f199d9c900b932f
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 81a3b41fb8e38a224a030571093b2145d2efb3d4
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933967"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593435"
 ---
-# <a name="onboard-windows-10-devices-using-group-policy"></a>Introducera Windows 10-enheter med grupprincip 
+# <a name="onboard-windows-10-devices-using-group-policy"></a>Introducera Windows 10 enheter med grupprincip 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -46,27 +46,27 @@ ms.locfileid: "51933967"
 
 [![Bild av PDF-filen som visar de olika distributionssökvägarna](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
 
-Ta en titta på [PDF-](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  [eller Visio-filen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) för att se de olika sökvägarna i distribuera Defender för Endpoint. 
+Läs PDF- [eller](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) se de olika sökvägarna i distribuera Defender för Endpoint. 
 
 
 
-1. Öppna ZIP-filen för GP-konfigurationspaket *(WindowsDefenderATPOnboardingPackage.zip)* som du laddade ned från guiden för service onboarding. Du kan också hämta paketet från [Microsoft Defender Säkerhetscenter:](https://securitycenter.windows.com/)
+1. Öppna filen för GP.zip konfigurationspaket *(WindowsDefenderATPOnboardingPackage.zip)* som du laddade ned från guiden för registrering av tjänster. Du kan också hämta paketet från [Microsoft Defender Säkerhetscenter:](https://securitycenter.windows.com/)
  
-    1. Välj Inställningar Onboarding **i**  >  **navigeringsfönstret.**
+    1. I navigeringsfönstret väljer du **Inställningar**  >  **Onboarding**.
 
     1. Välj Windows 10 som operativsystem.
     
     1. Välj **Grupprincip i** fältet **Distributionsmetod.**
     
-    1. Klicka **på Ladda ned** paket och spara ZIP-filen.
+    1. Klicka **på Ladda ned** paket och spara .zip filen.
 
-2. Extrahera innehållet i ZIP-filen till en delad, skrivskyddad plats som kan nås av enheten. Du bör ha en mapp med namnet *OptionalParamsPolicy* och filen *WindowsDefenderATPOnboardingScript.cmd*.
+2. Extrahera innehållet i filen .zip till en delad, skrivskyddad plats som kan nås av enheten. Du bör ha en mapp med namnet *OptionalParamsPolicy* och filen *WindowsDefenderATPOnboardingScript.cmd*.
 
 3. Öppna GPMC [(Group Policy Management Console),](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) högerklicka på det grupprincipobjekt (GPO) du vill konfigurera och klicka på **Redigera.**
 
 4. I **redigeraren för grupprinciphantering** går du **till Datorkonfiguration** **och** sedan Inställningar och **inställningar för Kontrollpanelen.**
 
-5. Högerklicka på **Schemalagda aktiviteter**, peka på **Nytt** och klicka sedan på Direkt **aktivitet (minst Windows 7).**
+5. Högerklicka på **Schemalagda aktiviteter**, peka på **Nytt** och klicka sedan på **Direktaktivitet (minst Windows 7).**
 
 6. I **uppgiftsfönstret** som öppnas går du till **fliken** Allmänt. Under **Säkerhetsalternativ klickar** du **på Ändra användare eller grupp,** skriver SYSTEM och klickar sedan **på Kontrollera namn** och sedan på **OK.** NT AUTHORITY\SYSTEM visas som det användarkonto som aktiviteten körs som.
 
@@ -80,7 +80,7 @@ Ta en titta på [PDF-](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/p
 > När du har introducerat enheten kan du välja att köra ett identifieringstest för att verifiera att enheten är korrekt onboarded till tjänsten. Mer information finns i Köra [ett identifieringstest på en nyligen onboarded Defender för Slutpunkt-enhet](run-detection-test.md).
 
 ## <a name="additional-defender-for-endpoint-configuration-settings"></a>Ytterligare Defender för konfigurationsinställningar för slutpunkt
-För varje enhet kan du ange om exempel kan samlas in från enheten när en begäran görs via Microsoft Defender Säkerhetscenter för att skicka in en fil för djupanalys.
+För varje enhet kan du ange om exempel kan samlas in från enheten när en begäran görs via Microsoft Defender Säkerhetscenter att skicka in en fil för djupanalys.
 
 Du kan använda Grupprincip (GP) för att konfigurera inställningar, till exempel inställningar för exempeldelningen som används i funktionen djupanalys.
 
@@ -103,7 +103,7 @@ Du kan använda Grupprincip (GP) för att konfigurera inställningar, till exemp
 
 4.  Klicka **på Principer** och sedan på Administrativa **mallar.**
 
-5.  Klicka **på Windows-komponenter** och **sedan på Windows Defender ATP.**
+5.  Klicka **Windows på komponenter** och Windows Defender på **SmartScreen.**
 
 6.  Välj för att aktivera eller inaktivera exempeldelning från dina enheter.
 
@@ -115,11 +115,11 @@ Du kan använda Grupprincip (GP) för att konfigurera inställningar, till exemp
 
 ### <a name="update-endpoint-protection-configuration"></a>Uppdatera konfiguration av slutpunktsskydd
 
-När du har konfigurerat onboarding-skriptet fortsätter du att redigera samma grupprincip för att lägga till slutpunktsskyddskonfigurationer. Utför grupprincipredigeringar från ett system med Windows 10 eller Server 2019 för att säkerställa att du har alla nödvändiga Microsoft Defender Antivirus-funktioner. Du kan behöva stänga och öppna grupprincipobjektet igen för att registrera Defender ATP-konfigurationsinställningarna.
+När du har konfigurerat onboarding-skriptet fortsätter du att redigera samma grupprincip för att lägga till slutpunktsskyddskonfigurationer. Utför grupprincipredigeringar från ett system med Windows 10 eller Server 2019 för att säkerställa att du har alla nödvändiga Microsoft Defender Antivirus funktioner. Du kan behöva stänga och öppna grupprincipobjektet igen för att registrera Defender ATP-konfigurationsinställningarna.
 
 Alla principer finns under `Computer Configuration\Policies\Administrative Templates` .
 
-**Plats för principen:** \Windows Components\Windows Defender ATP
+**Plats för principen:** \Windows Components\Windows Defender SmartScreen*
 
 Princip | Inställning 
 :---|:---
@@ -127,7 +127,7 @@ Aktivera\Inaktivera exempelsamling|   Aktiverad – "Aktivera exempelsamling på
 
 <br/>
 
-**Plats för principen:**  \Windows Components\Windows Defender Antivirus
+**Principplats:** \Windows Components\Microsoft Defender Antivirus
 
 Princip | Inställning 
 :---|:---
@@ -135,7 +135,7 @@ Konfigurera identifiering för potentiellt oönskade program | Aktiverad, Blocke
 
 <br/>
 
-**Plats för principen:** \Windows Components\Windows Defender Antivirus\MAPS
+**Policyplats:** \Windows Components\Microsoft Defender Antivirus\MAPS
 
 Princip | Inställning 
 :---|:---
@@ -144,7 +144,7 @@ Skicka filexempel när ytterligare analys krävs | Aktiverad, Skicka säkra exem
 
 <br/>
 
-**Policyplats:** \Windows Components\Windows Defender Antivirus\Real-time Protection
+**Principplats:** \Windows Components\Microsoft Defender Antivirus\Real-time Protection
 
 Princip | Inställning 
 :---|:---
@@ -155,7 +155,7 @@ Genomsöka alla nedladdade filer och bifogade filer|Aktiverad
 
 <br/>
 
-**Plats för principen:**  \Windows Components\Windows Defender Antivirus\Scan
+**Policyplats:** \Windows Components\Microsoft Defender AntivirusScan
 
 De här inställningarna konfigurerar periodiska genomsökningar av slutpunkten. Vi rekommenderar att du gör en snabbsökning varje vecka, om det är möjligt med prestanda.
 
@@ -166,7 +166,7 @@ Sök efter den senaste säkerhetsinformation om virus och spionprogram innan du 
 
 <br/>
 
-**Plats för policy:** \Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction
+**Policyplats:** \Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Attack Surface Reduction
 
 Hämta den aktuella listan med GUID för att minska attackytan från Anpassa minskning [av attackytor](customize-attack-surface-reduction.md)
 
@@ -198,15 +198,15 @@ Av säkerhetsskäl upphör paketet som används till Offboard-enheter 30 dagar e
 
 1. Hämta offboarding-paketet från [Microsoft Defender Säkerhetscenter:](https://securitycenter.windows.com/)
 
-    1. I navigeringsfönstret väljer du **Inställningar**  >  **offboarding**.
+    1. I navigeringsfönstret väljer du **Inställningar**  >  **Offboarding**.
 
     1. Välj Windows 10 som operativsystem.
     
     1. Välj **Grupprincip i** fältet **Distributionsmetod.**
 
-    1. Klicka **på Ladda ned** paket och spara ZIP-filen.
+    1. Klicka **på Ladda ned** paket och spara .zip filen.
 
-2. Extrahera innehållet i ZIP-filen till en delad, skrivskyddad plats som kan nås av enheten. Du bör ha en fil med *namnet WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+2. Extrahera innehållet i filen .zip till en delad, skrivskyddad plats som kan nås av enheten. Du bör ha en fil med *namnet WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 3. Öppna GPMC [(Group Policy Management Console),](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) högerklicka på det grupprincipobjekt (GPO) du vill konfigurera och klicka på **Redigera.**
 
@@ -239,7 +239,7 @@ Med Grupprincip finns det inte något alternativ för att övervaka distribution
 
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Introducera Windows 10-enheter med Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Introducera Windows 10 enheter med Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Registrera Windows 10-enheter med hanteringsverktyg för mobila enheter](configure-endpoints-mdm.md)
 - [Registrera Windows 10-enheter med ett lokalt skript](configure-endpoints-script.md)
 - [Registrera enheter för icke beständiga VDI-enheter (Virtual Desktop Infrastructure)](configure-endpoints-vdi.md)

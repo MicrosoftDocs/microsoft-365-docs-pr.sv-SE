@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a3b6edda36d2872177d9a88f3259220dcf2e76f3
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: dba96a43f976353251b5530233667933088f6f29
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291321"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594091"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Prioritera ärenden i Microsoft 365 Defender
 
@@ -87,7 +87,7 @@ I den här tabellen visas de tillgängliga filternamnen.
 
 När du har fastställt vilken händelse som kräver högst prioritet, markerar du den och gör följande:
 
-- [Hantera](manage-incidents.md) egenskaperna för incidenten för taggar, tilldelning till en säkerhetsanalytiker och kommentarer.
+- [Hantera](manage-incidents.md) egenskaperna för incidenten för taggar, tilldelning, omedelbar lösning för falska positiva incidenter och kommentarer.
 - Påbörja [undersökningen](investigate-incidents.md).
 
 ## <a name="see-also"></a>Se även
