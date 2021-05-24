@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Lär dig hur du distribuerar team med skydd för känslig data.
-ms.openlocfilehash: a775727882dd71a168f4049d2af6a9feb20f944c
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 0590e63aa0feb5b699eca98c0056604fe09b77f5
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572723"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583658"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Konfigurera team med skydd för känslig data
 
@@ -108,28 +108,18 @@ Varje gång du skapar ett ny team med känslighetsetiketten finns det två steg 
 - Uppdatera inställningarna för gästdelning för webbplatsen i SharePoint Online Administrationscenter för att uppdatera standard delningslänken till *Vissa personer*.
 - Uppdatera inställningarna för webbplatsdelning på själva webbplatsen och förhindra att medlemmar kan webbplatsen.
 
-### <a name="site-guest-sharing-settings"></a>Inställningar för gästdelning av webbplatsen
+### <a name="site-default-sharing-link-settings"></a>Webbplats inställningar för den standard delningslänken
 
-Den inställning för gästdelning som du valde när du skapade etiketten (som bara påverkar teammedlemskap) ska matcha inställningarna för gästdelning för den associerade SharePoint-webbplatsen på följande sätt:
+Uppdatera webbplats standardinställningar för typ av delningslänk
 
-|Etikettinställning|Inställning för SharePoint-webbplats|
-|:------------|:----------------------|
-|**Låt Office 365-gruppägare lägga till personer utanför organisationen i gruppen** markerad|**Nya och befintliga gäster** (standard för nya grupper)|
-|**Låt Office 365-gruppägare lägga till personer utanför organisationen i gruppen** inte markerad|**Endast personer i organisationen**|
-
-Uppdatera webbplatsinställningar
 1. Öppna [SharePoint Online Administrationscenter](https://admin.microsoft.com/sharepoint).
 2. Under **Webbplatser** klickar du på **Aktiva webbplatser**.
 3. Klicka på den webbplats som är kopplad till teamet.
 4. Klicka på **Redigera** under **Extern delning** på fliken **Principer**.
-5. Om du tillät gästdelning när du skapade känslighetsetiketten ska du kontrollera att **Nya och befintligt gäster** har markerats. Om du inte tillåter delning när du skapade etiketten väljer du **Bara personer i organisationen**.
-6. Avmarkera kryssrutan **Samma som organisationsnivå** under standardtyp av delningslänk och välj **Vissa personer 8endast de personer som användaren anger**.
-7. Klicka på **Spara**.
+5. Avmarkera kryssrutan **Samma som organisationsnivå** under standardtyp av delningslänk och välj **Vissa personer 8endast de personer som användaren anger**.
+6. Klicka på **Spara**.
 
-Om du vill skapa ett skript som en del av processen för att skapa ett team kan du använda [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) med följande parametrar:
-
-- `-SharingCapability Disabled` Inaktivera gästdelning (det är aktiverat som standard)
-- `-DefaultSharingLinkType Internal` ändra standard delningslänk till *Vissa personer*
+Om du vill skapa skript som en del av din team skapande process kan du använda [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) med `-DefaultSharingLinkType Direct` parametern för att ändra standard delningslänken för *Vissa personer*.
 
 #### <a name="private-channels"></a>Privata kanaler
 

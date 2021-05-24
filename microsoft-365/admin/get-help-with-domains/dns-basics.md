@@ -23,13 +23,13 @@ search.appverid:
 - BSA160
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
-description: Lär dig mer om domäner och deras associerade DNS-poster för att hantera dina domäner.
-ms.openlocfilehash: f8d8171e306a0206facec1621bf2b1a9f8085757
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Domain Name System mappar värddatornamn till IP-adresser och med hjälp av grundläggande information om DNS- och domänregistratorer kan du hantera domäner.
+ms.openlocfilehash: f9982ad55652eac9faf33986bb1481e29897a48e
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915668"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582950"
 ---
 # <a name="dns-basics"></a>Grundläggande om DNS
 
@@ -78,8 +78,8 @@ DNS-poster som lagras hos en DNS-värd för din domän används för att diriger
 |**NS-post (namnserver)**|**Identifierar namnservrar som är "auktoritära namnservrar" för en domän. När du ändrar domännamnservrar ändras det också var dina DNS-poster hanteras, där DNS-systemet letar efter information om e-postservrar och så vidare. Microsoft har sina egna namnservrar, eller så kan du välja att fortsätta använda namnservrar som redan är konfigurerade med din domän.**|
 |:-----|:-----|
 |A-post (adresspost)  <br/> |Associerar ett domännamn med en IP-adress.  <br/> |
-|CNAME-post (alias eller kanoniskt namn)  <br/> |Omdirigerar om en domän till en annan i DNS-systemet. När en namnserver letar upp en domän och den domänen har en CNAME-post ersätter servern det första domännamnet med CNAME-posten och sedan söker den efter det nya namnet.  <br/> |
-|MX-post (e-postutbyte)  <br/> |Punkter dit e-postmeddelandet ska skickas. MX-posten har också ett prioritetsfält så att du kan skicka e-postmeddelanden till olika servrar i prioritetsordning.  <br/> |
+|CNAME-post (alias eller kanoniskt namn)  <br/> |Omdirigerar en domän till en annan i DNS-systemet. När en namnserver letar upp en domän och den domänen har en CNAME-post ersätter servern det första domännamnet med CNAME-posten och sedan söker den efter det nya namnet.  <br/> |
+|MX-post (e-postutbyte)  <br/> |Pekar dit e-postmeddelanden ska skickas. MX-posten har också ett prioritetsfält så att du kan skicka e-postmeddelanden till olika servrar i prioritetsordning.  <br/> |
 |SPF-post (Sender Policy Framework)  <br/> |En TXT-post som förhindrar förfalskning och nätfiske.  <br/> |
 |SRV-post (servicepost)  <br/> |Används av Skype för företag Online och Exchange Online för att samordna dataflödet mellan Microsoft-tjänster. Till exempel krävs SRV-poster för att se närvaroinformation i Outlook för webben och för att använda Skype för företag Online, Skype eller andra verktyg för snabbmeddelanden med personer på andra företag.  <br/> |
 |TTL (Time-To-Live)  <br/> |TLL står för hur länge en namnserver behåller en DNS-post innan servern blir låst för en uppdaterad version.  <br/> |
@@ -102,7 +102,7 @@ DNS-poster är som en databas med information om din domän. Posterna och deras 
   
  *När du överför din e-postadress till Microsoft 365 genom att uppdatera domänens MX-post i nästa steg, kommer alla e-postmeddelanden som skickas till den domänen till Microsoft 365.*  Om andra använder din domän för e-post måste du ställa in Microsoft 365-postlådor för varje person. 
   
-Låter komplicerat? Det kan hända att vi guidar dig genom varje steg i Microsoft-domäninställningen.
+Låter det komplicerat? Ja, det kan vara, men vi hjälper dig steg för steg i konfigurationen av Microsoft-domänen.
   
 ### <a name="dns-tells-the-internet-where-to-look-for-websites-too"></a>DNS-talar om för Internet var du ska leta för webbplatser
 
@@ -186,7 +186,7 @@ Du kan använda ditt domännamn i Microsoft 365 för din e-postadress, din offen
 
 ## <a name="the-dns-records-required-for-microsoft-365"></a>DNS-poster som krävs för Microsoft 365
 
-Det finns ett antal DNS-poster som krävs för att Microsoft 365 ska fungera tillsammans med din domän. Förutom att ställa in domänens MX-post så att e-post skickas till Microsoft 365 finns det också poster som hjälper till med åtgärder som att automatiskt ansluta Outlook till rätt Exchange-server, konfigurera snabbmeddelanden och förhindra skräppost.
+Det finns flera DNS-poster som krävs för att Microsoft 365 ska fungera med din domän. Förutom att konfigurera din domäns MX-post så att e-post skickas till Microsoft 365 finns det också poster som hjälper till med åtgärder som att automatiskt ansluta Outlook till rätt Exchange Server, konfigurera snabbmeddelanden och förhindra skräppost.
   
 Du kan [hitta en lista med värden](information-for-dns-records.md) att konfigurera din domän. De finns i Administrationscenter för Microsoft 365. 
   
@@ -198,3 +198,11 @@ Läs något av följande avsnitt:
   
 - Vet du inte var din domän är registrerad? [Få hjälp att hitta din domänregistrator](find-your-domain-registrar.md)
 - Läs om [varför du måste slutföra stegen i guiden](../setup/add-domain.md) innan du kan använda domänen med Microsoft 365.
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Domänens vanliga frågor och svar](../setup/domains-faq.yml) (artikel)
+
+[Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster](find-and-fix-issues.md) (artikel)
+
+[Hantera domäner](index.yml) (länksida)

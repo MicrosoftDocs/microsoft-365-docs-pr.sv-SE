@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Övervaka och hantera borttagning av innehåll, oavsett om du använder en borttagningsgranskning eller om innehåll tas bort automatiskt enligt de inställningar du har konfigurerat.
-ms.openlocfilehash: 3c5d178b4eab267759506dcd86d66fb2bf4d93ee
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 99ab789b99385af9ad2677995606d21ece54705c
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583478"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594079"
 ---
 # <a name="disposition-of-content"></a>Borttagning av innehåll
 
@@ -30,7 +30,7 @@ ms.locfileid: "52583478"
 Använd fliken **Borttagning** från **Hantering av arkivhandlingar** i Microsoft 365 Efterlevnadscenter för att hantera borttagningsgranskningar och visa [arkivhandlingar](records-management.md#records) som automatiskt har tagits bort i slutet av kvarhållningsperioden.
 
 > [!NOTE]
-> Lanseras i förhandsgranskning: **borttagningsgranskning i flera steg**
+> I förhandsgranskning: **flersteg borttagningsgranskning**
 > 
 > En administratör kan nu lägga till upp till fem borttagningsgranskningar i följd till en kvarhållningsetikett, granskare kan lägga till andra användare till fasen för borttagningsgranskningen. Du kan även anpassa e-postmeddelanden och påminnelser. I följande avsnitt finns mer information om ändringarna i den här förhandsversionen.
 >

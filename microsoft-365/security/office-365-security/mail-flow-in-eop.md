@@ -12,15 +12,15 @@ localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 ms.custom:
 - seo-marvel-apr2020
-description: Administratören kan läsa mer om alternativen för att konfigurera e-postflöde och e-postdirigering i Exchange Online Protection (EOP).
+description: Administratören kan läsa mer om alternativen för att konfigurera e-postflöde och e-Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7cd5bfcc95227c59f645422d4939ea6ff77bee1e
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2ad80c4176c1b8b1c47b6b9ecafd34b4ca301f3f
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207309"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623423"
 ---
 # <a name="mail-flow-in-eop"></a>E-postflöde i EOP
 
@@ -31,7 +31,7 @@ ms.locfileid: "51207309"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-I Microsoft 365-organisationer med Exchange Online-postlådor eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor passerar alla meddelanden som skickas till din organisation via EOP innan de anställda ser dem. Du har alternativ för hur du dirigerar meddelanden som passerar genom EOP för bearbetning innan de dirigeras till dina anställdas inkorgar.
+I Microsoft 365 organisationer som har Exchange Online-postlådor eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor passerar alla meddelanden som skickas till din organisation via EOP innan medarbetarna ser dem. Du har alternativ för hur du dirigerar meddelanden som passerar genom EOP för bearbetning innan de dirigeras till dina anställdas inkorgar.
 
 ## <a name="working-with-messages-and-message-access-options"></a>Arbeta med alternativ för meddelanden och meddelandeåtkomst
 
@@ -47,10 +47,10 @@ Om du lägger till underdomäner i organisationen kan EOP-tjänsten hjälpa dig 
 
 [Förbättrad filtrering för kopplingar beskriver](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) hur du konfigurerar kopplingar om din e-post dirigeras till en tjänst eller enhet före EOP.
 
-I fristående EOP-organisationer måste du utföra ett par konfigurationssteg för att se till att skräppost dirigeras korrekt till varje användares skräppostmapp. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer.](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md) Om du inte vill flytta meddelanden till varje användares skräppostmapp kan du välja en annan åtgärd genom att redigera principerna för skydd mot skräppost (kallas även principer för innehållsfilter). Mer information finns i [Konfigurera principer för skräppostskydd](configure-your-spam-filter-policies.md).
+I hybridmiljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera e-postflödesregler (kallas även transportregler) i lokala Exchange för att omvandla skräppostfiltreringen av EOP så att skräppostregeln kan flytta meddelandet till mappen Skräppost. Mer information finns i [Konfigurera EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer.](/exchange/standalone-eop/configure-eop-spam-protection-hybrid) Om du inte vill flytta meddelanden till varje användares skräppostmapp kan du välja en annan åtgärd genom att redigera principerna för skräppostskydd (kallas även principer för innehållsfilter). Mer information finns i [Konfigurera principer för skräppostskydd](configure-your-spam-filter-policies.md).
 
 ## <a name="verify-mail-flow"></a>Kontrollera e-postflödet
 
-Kontrollera att EOP-konfigurationen, inklusive anslutningskonfigurationen, fungerar som den ska genom att gå till "Hur vet du att uppgiften fungerade?" i Konfigurera [EOP-tjänsten](set-up-your-eop-service.md).
+Kontrollera att EOP-konfigurationen, inklusive anslutningskonfigurationen, fungerar som den ska genom att gå till "Hur vet du att uppgiften fungerade?" i Konfigurera [EOP-tjänsten](/exchange/standalone-eop/set-up-your-eop-service).
 
-[Testa e-postflödet genom att verifiera dina Microsoft 365-kopplingar](/exchange/mail-flow-best-practices/test-mail-flow) ger instruktioner för att testa att e-postflödet är korrekt inställt.
+[Testa e-postflödet genom att verifiera Microsoft 365-anslutningarna](/exchange/mail-flow-best-practices/test-mail-flow) ger instruktioner för att testa att e-postflödet är korrekt inställt.

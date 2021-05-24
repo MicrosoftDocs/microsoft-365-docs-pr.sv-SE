@@ -18,14 +18,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: Lär dig hur du förnyar din Microsoft 365 genom att aktivera eller inaktivera återkommande fakturering.
+description: Lär dig hur du förnyar de flesta Microsoft 365 för företag-prenumerationer genom att inaktivera eller aktivera återkommande fakturering.
 ms.date: 05/04/2021
-ms.openlocfilehash: 7421bb59a26d3c88114ebd9145dcbfe3916e7472
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 43dd467d83375f74c7650262c40021ba631e3c72
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344644"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594043"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Förnya Microsoft 365 för företag
 

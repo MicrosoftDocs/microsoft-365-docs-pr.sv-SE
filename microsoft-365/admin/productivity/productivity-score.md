@@ -18,13 +18,13 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
-description: Översikt över Microsoft produktivitetspoäng.
-ms.openlocfilehash: 1d5e163e6ec8a394065c09e51879582d101a75bf
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+description: Lär dig hur Microsoft Productivity Score återspeglar mått för personer och teknikupplevelser och jämför med organisationer av liknande storlek.
+ms.openlocfilehash: ded8b3ee6cbe6df308a4e7388107ea394debe020
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345244"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593847"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft produktivitetspoäng 
 
@@ -44,35 +44,9 @@ Vi tillhandahåller mått, insikter och rekommendationer på två områden:
 
 - **Teknikupplevelser:** din organisations produktivitet beror på pålitlig och högpresterande teknik samt effektiv användning av Microsoft 365. [Slutpunktsanalys](https://aka.ms/endpointanalytics) hjälper dig att förstå hur din organisation kan påverkas av prestanda och problem med din maskinvara och programvara. Microsoft 365-appar kan hjälpa dig att förstå om enheterna i din organisation kör Microsoft 365-appar på rekommenderade kanaler.
 
+## <a name="before-you-begin"></a>Innan du börjar
+
 Se [Vad är Slutpunktsanalys](/mem/analytics/overview) för en översikt och information om förutsättningar. Om du vill veta mer om Microsoft 365 nätverksanslutningsinsikter läser du [översikt över nätverksanslutning](../../enterprise/microsoft-365-networking-overview.md).
-  
-
-## <a name="how-the-score-is-calculated"></a>Så beräknas din poäng
-
-Produktivitetspoängen baseras på de kombinerade poängen i kategorierna person- och teknikupplevelser. Varje kategori viktas lika med totalt 100 poäng. Den högsta möjliga produktivitetspoängen är 800.
-
-### <a name="score-categories"></a>Poängkategorier 
-
-- Kommunikation (100 poäng)
-- Möten (100 poäng)
-- Samarbetsinnehåll (100 poäng)
-- Samarbete (100 poäng)
-- Mobilitet (100 poäng)
-- Slutpunktsanalys (100 punkter)
-- Nätverksanslutning (100 poäng)
-- Hälsa för Microsoft 365-applikationer (100 poäng)
-- **Totalt antal möjliga = 800 poäng**
- 
-I varje poängkategori kvantifierar vi de nyckelindikatorerna för hur din organisation använder Microsoft 365 i resan mot digital transformation. Vi tillhandahåller 28-dagars och 180-dagars vyer av nyckelaktiviteter. Vi tillhandahåller även stödjande mått som inte ingår i poängberäkningen men som är viktigt för att hjälpa dig att identifiera underliggande användningsstatistik och konfigurationer som du kan adressera.
-
-### <a name="products-included-in-productivity-score"></a>Produkter som ingår i produktivitetspoängen 
-
-Produktivitetspoäng inkluderar data från Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer och Skype.
-
-Din organisations poäng uppdateras dagligen och återspeglar användaråtgärderna som slutfördes under de senaste 28 (inklusive dagens datum).
-
-
-## <a name="prerequisites"></a>Förutsättningar 
 
 För data över personupplevelser måste du ha en Microsoft 365 for Business- eller Office 365 för Enterprise-prenumeration. Om du vill lägga till en slutpunktsanalys för din klientorganisation måste du lägga till Microsoft Intune i prenumerationen. Intune hjälper dig att skydda din organisations data genom att hantera enheter och appar. När du har Intune kan du aktivera slutpunktsanalys i Intune-upplevelsen. Mer information om Microsoft Intune finns i [dokumentation om Microsoft Intune](/mem/intune/). 
 
@@ -98,6 +72,30 @@ Den rollbaserade åtkomstkontrollmodellen för Productivity Score hjälper organ
 Microsoft strävar efter att skydda den personliga integriteten. I den här [sekretessdokumentet](privacy.md)  beskrivs de kontroller vi tillhandahåller dig, som din organisations IT-administratör, för att säkerställa att informationen är åtgärdbar utan att äventyrar ditt förtroende för Microsoft.
 
 Du kan komma åt upplevelsen från Startsida för Microsoft 365 Admin under **Rapporter** > **Produktivitetspoäng**.
+  
+## <a name="how-the-score-is-calculated"></a>Så beräknas din poäng
+
+Produktivitetspoängen baseras på de kombinerade poängen i kategorierna person- och teknikupplevelser. Varje kategori viktas lika med totalt 100 poäng. Den högsta möjliga produktivitetspoängen är 800.
+
+### <a name="score-categories"></a>Poängkategorier 
+
+- Kommunikation (100 poäng)
+- Möten (100 poäng)
+- Samarbetsinnehåll (100 poäng)
+- Samarbete (100 poäng)
+- Mobilitet (100 poäng)
+- Slutpunktsanalys (100 punkter)
+- Nätverksanslutning (100 poäng)
+- Hälsa för Microsoft 365-applikationer (100 poäng)
+- **Totalt antal möjliga = 800 poäng**
+ 
+I varje poängkategori kvantifierar vi de nyckelindikatorerna för hur din organisation använder Microsoft 365 i resan mot digital transformation. Vi tillhandahåller 28-dagars och 180-dagars vyer av nyckelaktiviteter. Vi tillhandahåller även stödjande mått som inte ingår i poängberäkningen men som är viktigt för att hjälpa dig att identifiera underliggande användningsstatistik och konfigurationer som du kan adressera.
+
+### <a name="products-included-in-productivity-score"></a>Produkter som ingår i produktivitetspoängen 
+
+Produktivitetspoäng inkluderar data från Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer och Skype.
+
+Din organisations poäng uppdateras dagligen och återspeglar användaråtgärderna som slutfördes under de senaste 28 (inklusive dagens datum).
 
 ## <a name="interpreting-your-organizations-productivity-score"></a>Tolkar din organisations produktivitetspoäng 
 
@@ -161,6 +159,6 @@ Dela med dig av dina tankar om Produktivitetspoäng och idéer om hur den kan f�
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Övervaka Microsoft 365-aktivitet med hjälp av rapporter](/microsoft-365/admin/activity-reports/activity-reports)(artikel)\
-[Aktivera Microsoft 365 användningsanalyser](/microsoft-365/admin/usage-analytics/enable-usage-analytics) (artikel)\
-[Översikt över administrationscenter för Microsoft 365](/microsoft-365/business-video/admin-center-overview) (video)
+[Övervaka Microsoft 365-aktivitet med hjälp av rapporter](../../admin/activity-reports/activity-reports.md)(artikel)\
+[Aktivera Microsoft 365 användningsanalyser](../../admin/usage-analytics/enable-usage-analytics.md) (artikel)\
+[Översikt över administrationscenter för Microsoft 365](../../business-video/admin-center-overview.md) (video)
