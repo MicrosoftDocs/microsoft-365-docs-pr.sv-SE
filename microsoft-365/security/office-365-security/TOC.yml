@@ -164,6 +164,8 @@
           href: attack-simulation-training-insights.md
         - name: Distributionsöverväganden och vanliga frågor och svar för attacksimulatorträning
           href: attack-simulation-training-faq.md
+        - name: Konfigurera leverans för nätfiskesimulation från tredje part och SecOps-postlådor
+          href: configure-advanced-delivery.md
         - name: Rekommenderade inställningar för att konfigurera EOP och Defender för Office 365-säkerhet
           href: recommended-settings-for-eop-and-office365.md
         - name: Metodtips för konfiguration av EOP

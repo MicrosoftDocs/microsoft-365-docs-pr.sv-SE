@@ -16,7 +16,7 @@ productDirectory:
   title: Säkert distansarbete med Microsoft 365 Business Premium
   items:
     - title: Titta
-      imageSrc: 'https://docs.microsoft.com/office/media/icons/sign-up-blue.svg'
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/video-play.svg'
       summary: De fem viktigaste fördelarna med Microsoft 365 Business Premium.
       url: 'https://aka.ms/M365BPvideo'
     - title: Skaffa det kostnadsfria partnerpaketet

@@ -282,42 +282,42 @@
               items:
                 - name: Översikt över ServiceNow-integrering
                   href: ./tickets.md
-            - name: 'Microsoft 365 Defender API: er (förhandsversion)'
+        - name: 'Microsoft 365 Defender API: er (förhandsversion)'
+          items:
+            - name: 'Översikt över Microsoft 365 Defender API: er (förhandsversion)'
+              href: api-overview.md
+            - name: 'Komma igång med Microsoft 365 Defender API: er (förhandsversion)'
               items:
-                - name: 'Översikt över Microsoft 365 Defender API: er (förhandsversion)'
-                  href: api-overview.md
-                - name: 'Komma igång med Microsoft 365 Defender API: er (förhandsversion)'
+                - name: API-licens för Microsoft 365 Defender API och användningsvillkor
+                  href: api-terms.md
+                - name: 'Få åtkomst till Microsoft 365 Defender API:er'
+                  href: api-access.md
+                - name: Hello World exempel
+                  href: api-hello-world.md
+                - name: Få åtkomst med program kontext
+                  href: api-create-app-web.md
+                - name: Få åtkomst med användarkontext
+                  href: api-create-app-user-context.md
+                - name: Få åtkomst till partner program
+                  href: api-partner-access.md
+                - name: Andra API-resurser
+                  href: api-articles.md
+            - name: 'Microsoft 365 Defender API: er och schema (förhandsversion)'
+              items:
+                - name: 'Microsoft 365 Defender API: er som stöds'
+                  href: api-supported.md
+                - name: Vanliga REST API-felkoder
+                  href: api-error-codes.md
+                - name: Advanced jakt-API
+                  href: api-advanced-hunting.md
+                - name: 'API:er för tillbud'
                   items:
-                    - name: API-licens för Microsoft 365 Defender API och användningsvillkor
-                      href: api-terms.md
-                    - name: 'Få åtkomst till Microsoft 365 Defender API:er'
-                      href: api-access.md
-                    - name: Hello World exempel
-                      href: api-hello-world.md
-                    - name: Få åtkomst med program kontext
-                      href: api-create-app-web.md
-                    - name: Få åtkomst med användarkontext
-                      href: api-create-app-user-context.md
-                    - name: Få åtkomst till partner program
-                      href: api-partner-access.md
-                    - name: Andra API-resurser
-                      href: api-articles.md
-                - name: 'Microsoft 365 Defender API: er och schema (förhandsversion)'
-                  items:
-                    - name: 'Microsoft 365 Defender API: er som stöds'
-                      href: api-supported.md
-                    - name: Vanliga REST API-felkoder
-                      href: api-error-codes.md
-                    - name: Advanced jakt-API
-                      href: api-advanced-hunting.md
-                    - name: 'API:er för tillbud'
-                      items:
-                        - name: Metod och egenskaper för tillbud
-                          href: api-incident.md
-                        - name: Lista incidenter
-                          href: api-list-incidents.md
-                        - name: Uppdatera incident
-                          href: api-update-incidents.md
+                    - name: Metod och egenskaper för tillbud
+                      href: api-incident.md
+                    - name: Lista incidenter
+                      href: api-list-incidents.md
+                    - name: Uppdatera incident
+                      href: api-update-incidents.md
     - name: Microsoft Defender för Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender för Endpoint
