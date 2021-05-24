@@ -19,14 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Du måste vara administratör för en företagsprenumeration för att få administratörshjälp eller online- eller telefonsupport i Microsoft 365 Business Premium.
-ms.openlocfilehash: e6308a9728731052d540cf3e872b6e153b64aae2
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e1250d5c291832e5a337f34e49ce0b7cf68fb08d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535716"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635908"
 ---
 # <a name="get-support"></a>Få support
+
+## <a name="watch-get-help-or-support"></a>Titta: Få hjälp eller support 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
@@ -257,8 +259,6 @@ Du kan också [söka i Microsoft 365 for business-forumen](https://go.microsoft.
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Söka efter dokument och utbildning](find-help-answers.md) (artikel)
-
-[Snabbinstallation för anställda](employee-quick-setup.md) (artikel)
-
+[Söka efter dokument och utbildning](find-help-answers.md) (artikel)\
+[Snabbinstallationsguide](employee-quick-setup.md) för anställda (artikel)\
 [Översikt över Microsoft 365 Business Premium konfiguration](setup-overview.md) (video)

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: Aktivera kalenderdelning i Microsoft 365 så att användare kan dela sina kalendrar med personer i eller utanför organisationen.
-ms.openlocfilehash: 6f4c215403e16ac6658619e50e6115606f106397
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: ee2b48182efec3e8bc22f47fd1657cd123ec65f8
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582722"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635816"
 ---
 # <a name="share-calendars-with-external-users"></a>Dela kalendrar med externa användare
 
@@ -50,12 +50,10 @@ Du kan aktivera kalenderdelning för alla användare i organisationen Microsoft 
 
 ## <a name="invite-people-to-access-calendars"></a>Bjuda in personer att få åtkomst till kalendrar
 
-När delning har aktiverats kan kalenderägare utöka inbjudningar till specifika användare. Se [Dela kalendern i Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5) för anvisningar.
+När delning har aktiverats kan kalenderägare utöka inbjudningar till specifika användare. Anvisningar finns i [Dela din kalender i Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5).
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Aktivera eller inaktivera extern delning för en webbplats](/sharepoint/change-external-sharing-site) (artikel)
-
-[Översikt över administrationscenter för Microsoft 365](../../business-video/admin-center-overview.md) (video)
-
+[Aktivera eller inaktivera extern delning för en webbplats](/sharepoint/change-external-sharing-site) (artikel)\
+[Översikt över Microsoft 365 administrationscenter](../../business-video/admin-center-overview.md) (video)\
 [Hantera e-post och kalendrar](../email/index.yml) (länksida)

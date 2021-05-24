@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Lär dig hur du tar bort ett användarkonto och vad du gör med användarens e-post och OneDrive innehåll och om du vill behålla produktlicensen.
-ms.openlocfilehash: c30edb598f659337778ec956737934da5fedad18
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: ff10d3289eae87f84685c22b81db03798ca9d7eb
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593411"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634214"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Ta bort en användare från organisationen
   
@@ -171,12 +171,8 @@ Här är de vanligaste problemen som uppstår när du tar bort en användare:
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Återställa en användare](restore-user.md) (artikel)
-  
-[Ta bort en postlåda permanent](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (artikel)
-
-[Ta bort en tidigare anställd från Office 365](remove-former-employee.md) (artikel)
-
-[Lägga till en ny anställd i Office 365](add-new-employee.md) (artikel)
-
+[Återställa en användare](restore-user.md) (artikel)\
+[Ta bort en postlåda permanent](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (artikel)\
+[Ta bort en tidigare anställd från Office 365](remove-former-employee.md) (artikel)\
+[Lägga till en ny anställd Office 365](add-new-employee.md) (artikel)\
 [Ta bort ett användarkonto](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)): Gör följande om ditt företag använder **Active Directory** som synkroniseras med Azure AD. Du kan inte göra det via Office 365. (artikel)

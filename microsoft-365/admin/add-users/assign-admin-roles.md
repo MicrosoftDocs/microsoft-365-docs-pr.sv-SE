@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Lär dig hur du tilldelar administratörsroller till en eller flera användare i företaget så att de kan utföra specifika uppgifter i administrationscentret.
-ms.openlocfilehash: f23a30cfd1be53982572d745d476558c3be615e6
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 8a9da12a8ebc01a02e4362f09ccaa9e92c21b7e9
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571871"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634178"
 ---
 # <a name="assign-admin-roles"></a>Tilldela administratörsroller
 
@@ -42,7 +42,7 @@ Mer information finns i [Om administratörsroller](about-admin-roles.md).
 
 Om du lägger till nya användare och inte tilldelar dem  en administratörsroll kommer de att ha användarrollen och inte ha administratörsbehörighet till något av Microsofts administrationscenter. Men om du behöver hjälp med att få saker gjorda kan du tilldela en administratörsroll till en användare. Om du till exempel behöver någon som ska hjälpa till att återställa lösenord, ska du inte tilldela dem rollen som global administratör, bör du tilldela dem rollen som lösenordsadministratör. Att ha för många globala administratörer, med obegränsad åtkomst till dina data och online-företag, är en säkerhetsrisk.
 
-## <a name="watch-add-an-adminbrbr"></a>Titta: Lägg till en administratör.<br><br>
+## <a name="watch-add-an-adminbrbr"></a>Titta: Lägg till en administratör<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
@@ -121,10 +121,7 @@ Du kan kontrollera administratörsrollbehörigheter på 2 olika sätt:
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Om Microsoft 365 administratörsroller](about-admin-roles.md) (artikel)
-
-[Administratörsrollbehörigheter i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) (artikel)
-
-[Tilldela roller till användarkonton med PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (artikel)
-
+[Om Microsoft 365 administratörsroller](about-admin-roles.md) (artikel)\
+[Administratörsrollbehörigheter i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) (artikel)\
+[Tilldela roller till användarkonton med PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (artikel)\
 [Auktorisera eller ta bort partnerrelationer](../misc/add-partner.md) (artikel)

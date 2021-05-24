@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Delade postlådor används när flera personer behöver åtkomst till samma postlåda. Lär dig vad du behöver veta innan du skapar en delad postlåda.
-ms.openlocfilehash: 156ba100cb2c51d1e54a2ee82c45db20845931f9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 601636f03bee93224025d286b7a74fa0f24782fb
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535860"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635540"
 ---
 # <a name="about-shared-mailboxes"></a>Om delade postlådor
 
@@ -67,12 +67,8 @@ Innan du [skapar en delad postlåda](create-a-shared-mailbox.md)finns det några
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Skapa en delad postlåda](create-a-shared-mailbox.md) (artikel)
-
-[Konfigurera en delad postlåda](configure-a-shared-mailbox.md) (artikel)
-
-[Konvertera en användarpostlåda till en delad postlåda](convert-user-mailbox-to-shared-mailbox.md) (artikel)
-
-[Ta bort en licens från en delad postlåda](remove-license-from-shared-mailbox.md) (artikel)
-
+[Skapa en delad postlåda](create-a-shared-mailbox.md) (artikel)\
+[Konfigurera en delad postlåda](configure-a-shared-mailbox.md) (artikel)\
+[Konvertera en användarpostlåda till en delad postlåda](convert-user-mailbox-to-shared-mailbox.md) (artikel)\
+[Ta bort en licens från en delad postlåda](remove-license-from-shared-mailbox.md) (artikel)\
 [Lösa problem med delade postlådor](resolve-issues-with-shared-mailboxes.md) (artikel)

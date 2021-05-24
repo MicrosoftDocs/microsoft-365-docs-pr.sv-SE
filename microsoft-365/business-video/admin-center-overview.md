@@ -20,22 +20,22 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Läs mer om Microsoft 365 administrationscenter.
-ms.openlocfilehash: 6d7fe36345ebd9234027e943d11266b7bcc2b30f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Använd antingen förenklad vy i Microsoft 365 för att hantera vanliga uppgifter eller instrumentpanelen för mer komplexa inställningar och uppgifter.
+ms.openlocfilehash: bca3aa7bb071d9334f7a5162a78db89690421f1a
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537397"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635896"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Översikt över administrationscenter för Microsoft 365
 
-- [Administrationscentret i förenklad vy](#the-admin-center-in-simplified-view)
-- [Administrationscentret i instrumentpanelsvyn](#the-admin-center-in-dashboard-view)
+- [Administrationscentret i förenklad vy](#watch-the-admin-center-in-simplified-view)
+- [Administrationscentret i instrumentpanelsvyn](#watch-the-admin-center-in-dashboard-view)
 
 I Microsoft 365 administrationscentret finns två vyer: förenklad vy hjälper mindre organisationer att hantera sina vanligaste uppgifter. Instrumentpanelsvyn innehåller mer komplexa inställningar och uppgifter. Du kan växla mellan dem från en knapp högst upp i administrationscentret.
 
-## <a name="the-admin-center-in-simplified-view"></a>Administrationscentret i förenklad vy
+## <a name="watch-the-admin-center-in-simplified-view"></a>Titta: Administrationscentret i förenklad vy
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 
@@ -57,7 +57,7 @@ På fliken **Lär** dig bläddrar du bland videoklipp och artiklar om administra
 
 Om du behöver hjälp väljer du **Hjälp & support.** Sök efter ämne som du vill ha hjälp med och visa den rekommenderade lösningen eller välj ett headset för att kontakta supporten och ange sedan din fråga och kontaktinformation. 
 
-## <a name="the-admin-center-in-dashboard-view"></a>Administrationscentret i instrumentpanelsvyn
+## <a name="watch-the-admin-center-in-dashboard-view"></a>Titta: Administrationscentret i instrumentpanelsvyn
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
@@ -188,4 +188,10 @@ Administrationscentret Microsoft 365 är helt lokaliserat på 40 språk.
 |Vietnamese | vi |
 |Chinese Simplified | zh-hans |
 |Chinese Traditional | zh-hant |
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Vad är en Microsoft 365 administratör?](what-is-admin.md) (video)\
+[Lägg till en administratör](add-admin.md) (video)\
+[Anpassa Microsoft 365 för din organisation](../admin/setup/customize-your-organization-theme.md) (artikel)
   

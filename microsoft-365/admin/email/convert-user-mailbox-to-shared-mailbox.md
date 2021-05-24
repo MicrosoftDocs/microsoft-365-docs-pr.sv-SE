@@ -20,16 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Lär dig hur du konverterar en privat postlåda till en delad postlåda som flera personer kan komma åt istället för bara en person. '
-ms.openlocfilehash: 73e2bad40037e1343f4e08c07ca6b26df16b1a30
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0beb85e5a69b72bcd244cd654c399e91ded06ba7
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537625"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635480"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Konvertera en användarpostlåda till en delad postlåda
 
 När du konverterar en användares postlåda till en delad postlåda sparas alla befintliga e-postmeddelanden och den befintliga kalendern. Enda skillnaden är att informationen nu finns i en delad postlåda där flera personer får tillgång till den istället för en enda person. Du kan senare konvertera en delad postlåda tillbaka till en användarpostlåda (privat).
+
+## <a name="before-you-begin"></a>Innan du börjar
 
 **Här är några mycket viktiga saker som du behöver veta:**
 
@@ -59,7 +61,6 @@ Allt annat du behöver veta om delade postlådor finns i [Om delade postlådor](
 > [!NOTE]
 > Delade postlådor kräver inte en separat licens. Om du däremot vill aktivera In-Place-arkiv eller placera en licens för In-Place-bevarande eller bevarande av juridiska skäl för en delad postlåda måste du tilldela en licens för Exchange Online-abonnemang 1 med Exchange Online - arkivering eller Exchange Online abonnemang 2 till postlådan.
 
-
 ## <a name="convert-the-mailbox-of-a-deleted-user"></a>Konvertera en borttagen användares postlåda
 
 Anta att du har tagit bort ett användarkonto och du nu vill konvertera användarens gamla postlåda till en delad postlåda. Det här behöver du göra:
@@ -77,7 +78,6 @@ Anta att du har tagit bort ett användarkonto och du nu vill konvertera använda
 6. När det är klart kan du ta bort licensen från användarens postlåda. Ta inte bort användarens gamla postlåda. Den delade postlådan behöver ha den som en fästpunkt.
     
 7. Lägg till medlemmar för den delade postlådan.
-
 
 ## <a name="convert-a-shared-mailbox-back-to-a-users-private-mailbox"></a>Konvertera en delad postlåda tillbaka till en användares (privata) postlåda
 
@@ -104,12 +104,8 @@ Mer information om hur du konverterar en användarpostlåda till en delad postl�
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Om delade postlådor](about-shared-mailboxes.md) (artikel)
-
-[Skapa en delad postlåda](create-a-shared-mailbox.md) (artikel)
-
-[Konfigurera en delad postlåda](configure-a-shared-mailbox.md) (artikel)
-
-[Ta bort en licens från en delad postlåda](remove-license-from-shared-mailbox.md) (artikel)
-
+[Om delade postlådor](about-shared-mailboxes.md) (artikel)\
+[Skapa en delad postlåda](create-a-shared-mailbox.md) (artikel)\
+[Konfigurera en delad postlåda](configure-a-shared-mailbox.md) (artikel)\
+[Ta bort en licens från en delad postlåda](remove-license-from-shared-mailbox.md) (artikel)\
 [Lösa problem med delade postlådor](resolve-issues-with-shared-mailboxes.md) (artikel)

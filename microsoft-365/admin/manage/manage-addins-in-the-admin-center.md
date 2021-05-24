@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Läs mer om hur du använder centraliserade tillägg för att distribuera tillägg till användare och grupper i organisationen.
-ms.openlocfilehash: c103cfc4e3e7b404ea4d31d81bc30d7990a922dc
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: d678755b28daea1578ce2a5d2e387492cf32d368
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593975"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636064"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Hantera tillägg i administrationscentret
 
@@ -157,12 +157,8 @@ Om det distribuerade tillägget inte har stöd för tilläggskommandon eller om 
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Distribuera tillägg i administrationscentret](./manage-deployment-of-add-ins.md) (artikel)
-
-Läs mer om att [Office tillägg (artikel)](/office/dev/add-ins/overview/office-add-ins)
-  
-[Använda PowerShell-cmdlets för](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) centraliserad distribution för att hantera tillägg (artikel)
-  
-[Felsökning: Användaren ser inte tillägg](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (artikel)
-
+[Distribuera tillägg i administrationscentret](./manage-deployment-of-add-ins.md) (artikel)\
+Läs mer om att [Office tillägg](/office/dev/add-ins/overview/office-add-ins) (artikel)\
+[Använd PowerShell-cmdlets för](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) centraliserad distribution för att hantera tillägg (artikel)\
+[Felsökning: Användaren ser inte tillägg](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (artikel)\
 [Minderåriga och köp av tillägg från Microsoft Store](./minors-and-acquiring-addins-from-the-store.md) (artikel)

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Med vidarebefordran av e-post kan du vidarebefordra e-postmeddelanden som Microsoft 365 en användarpostlåda till en annan postlåda i eller utanför organisationen.
-ms.openlocfilehash: 7389651cbbec5316c307cd10b331fda6812c1cd4
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: eb72204211a8eff929c024fbcede66dfe1f4b879
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537637"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635492"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Konfigurera vidarebefordran av e-post i Microsoft 365
 
@@ -101,9 +101,7 @@ Du måste vara Exchange administratör eller global administratör i Microsoft 3
 
 ## <a name="related-content"></a>Relaterat innehåll 
 
-[Skapa en delad postlåda](../email/create-a-shared-mailbox.md) (artikel)
-
-[Skicka e-post från en annan adress](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (artikel)
-
+[Skapa en delad postlåda](../email/create-a-shared-mailbox.md) (artikel)\
+[Skicka e-post från en annan adress](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (artikel)\
 [Ändra ett användarnamn och en e-postadress](../add-users/change-a-user-name-and-email-address.md) (artikel)
 

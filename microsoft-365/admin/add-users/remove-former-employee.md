@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Följ stegen i den här lösningen för att ta bort en tidigare anställd Microsoft 365 och skydda organisationens data.
-ms.openlocfilehash: 44741382a84cca15277308a44b3fd20470aa3a08
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: a613d4931c730dffe195954da97af86c683041bf
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572051"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634250"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Översikt: Ta bort en tidigare anställd och säkra data
 
@@ -61,4 +61,7 @@ Du måste vara global administratör för att slutföra stegen i den här lösni
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Återställa en användare](restore-user.md) (artikel)
+[Återställa en användare](restore-user.md) (artikel)\
+[Lägga till en ny anställd i Microsoft 365](add-new-employee.md) (artikel)\
+[Tilldela licenser till användare](../manage/assign-licenses-to-users.md) (artikel)\
+[Ta bort licenser från användare](../manage/remove-licenses-from-users.md) (artikel)

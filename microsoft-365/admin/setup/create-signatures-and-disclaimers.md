@@ -25,18 +25,18 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Hantera e-postsignaturer, inklusive ansvarsfriskrivningar eller avslöjanden för alla e-postmeddelanden som skickas till eller från organisationen.
-ms.openlocfilehash: 05cfeeb01231e7f99d2a96fc37581b4c9a23f5aa
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: f72d522c7dc592a7f719d716e22ecf726d00a6de
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582758"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635660"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Skapa signaturer och ansvarsfriskrivningar för hela organisationen
 
  Du kan hantera e-postsignaturer genom att lägga till en e-postsignatur, en juridisk ansvarsfriskrivning eller en policy om avslöjande i e-postmeddelanden som skickas till eller från organisationen. Du kan konfigurera den så att den gäller för alla inkommande och utgående meddelanden som visas nedan. Eller så kan du använda den på vissa meddelanden, till exempel dem som innehåller specifika ord eller textmönster.
 
- Titta på en kort video om hur du skapar en företagsomfattande e-postsignatur. <br><br>
+## <a name="watch-create-a-company-wide-email-signature"></a>Titta: Skapa en företagsomfattande e-postsignatur
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
@@ -119,9 +119,7 @@ Information om hur du använder PowerShell finns i Ansvarsfriskrivningar för me
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Migrera e-post och kontakter Microsoft 365](migrate-email-and-contacts-admin.md) (video)
-
-[E-postinställningar för användare](../email/office-365-user-email-settings.md) (artikel)
-
+[Migrera e-post och kontakter Microsoft 365](migrate-email-and-contacts-admin.md) (video)\
+[Användarens e-postinställningar](../email/office-365-user-email-settings.md) (artikel)\
 [Översikt över administrationscenter för Microsoft 365](../../business-video/admin-center-overview.md) (video)
 

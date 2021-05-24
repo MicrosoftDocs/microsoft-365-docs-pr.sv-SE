@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Lär dig hur du verifierar din e-post och domänägarskap för att ta över en ohanterad klientorganisation som skapats av en självbetjänad användarregistrering i Microsoft 365.
-ms.openlocfilehash: c37bf153edf39f53b5c10f020b0cbb8d630eb4a6
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: aa44023ffdc2b59e4db024706323c5b872566260
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593939"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635992"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Utföra ett internt administratörsupptagande
 
@@ -68,10 +68,7 @@ Om du är administratör och vill ta över en ohanterad klientorganisation som s
   
 ## <a name="related-content"></a>Relaterat innehåll
 
-YouTube: [3 steg för att göra ett IT-administratörstagande för Power BI och Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk) (video)
-
-[Administratörsupptagande i Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (artikel)
-
-[Med självbetjäning registrerar du dig i din organisation](self-service-sign-up.md) (artikel)
-  
+YouTube: [3 steg för att göra ett ÖVERtagande av IT-administratörer Power BI och Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk) (video)\
+[Administratörsupptagande i Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (artikel)\
+[Med självbetjäning registrerar du dig i din organisation](self-service-sign-up.md) (artikel)\
 [Förstå tjänstadministratörsrollen Power BI](/power-bi/service-admin-role) (artikel)

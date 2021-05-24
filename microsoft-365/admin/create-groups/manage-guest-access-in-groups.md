@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Lär dig hur du lägger till gäster Microsoft 365 grupp, visar gästanvändare och använder PowerShell för att styra gäståtkomst.
-ms.openlocfilehash: c52f0094e724040b71d5d72cded049fed57e3969
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 00a6353f02ae7f3675961c3ee2ee31e3715652f2
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571943"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635768"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Hantera gäståtkomst i Microsoft 365 grupper
 
@@ -69,10 +69,7 @@ Om du vill redigera någon gästinformation kan du lägga till eller uppdatera e
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Blockera gästanvändare från en viss grupp](../../solutions/per-group-guest-access.md) (artikel)
-
-[Hantera gruppmedlemskap i Microsoft 365 (artikel)](add-or-remove-members-from-groups.md)
-  
-[Azure Active Directory granskningar av åtkomst](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (artikel)
-
+[Blockera gästanvändare från en viss grupp](../../solutions/per-group-guest-access.md) (artikel)\
+[Hantera gruppmedlemskap i Microsoft 365 administrationscenter](add-or-remove-members-from-groups.md) (artikel)\
+[Azure Active Directory granskningar av åtkomst](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (artikel)\
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser) (artikel)

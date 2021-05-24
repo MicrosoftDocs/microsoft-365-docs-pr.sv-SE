@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 05/12/2021
+ms.date: 05/24/2021
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: Lär dig hur du konfigurerar Microsoft Viva Learning (förhandsversion) Teams administrationscentret.
-ms.openlocfilehash: e5af676752064738e26f9b934a60973cb9b0200d
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: a96a2f3ecf7d4e1ee0c136ae155868218f08aaf4
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625315"
+ms.locfileid: "52636140"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>Konfigurera Microsoft Viva Learning (förhandsversion) i Teams administrationscenter
 
@@ -29,7 +29,7 @@ ms.locfileid: "52625315"
 
 Administratören Teams viva Learning (förhandsversion) och tillämpar behörighetsprinciper via Teams administrationscenter.
 
-1. För offentlig förhandsversion måste du först ange uppdateringsprincipen. Mer information finns i den Teams webbplatsen [Microsoft Teams Offentlig förhandsversion](/MicrosoftTeams/public-preview-doc-updates).
+1. För Viva Learning (förhandsversion) måste du först ställa in uppdateringsprincipen i Teams. Mer information finns i Microsoft Teams [förhandsgranskning.](/MicrosoftTeams/public-preview-doc-updates)
 
     1. Logga in Teams administrationscentret.
 
@@ -41,15 +41,15 @@ Administratören Teams viva Learning (förhandsversion) och tillämpar behörigh
 
 2. Administratören måste meddela användarna om principuppdateringen så att de flyttar sin version till den offentliga förhandsversionen för Teams. 
 
-    1. Användaren måste välja sin profilbild – > Om --> offentlig förhandsversion.
+    1. Användarna måste välja sin profilbild > **om**  >  **offentlig förhandsversion**.
    
         ![Övre navigeringsfältet i Teams visar användarens profil](../media/learning/learning-app-select-profile-teams.png)
     
-    2. Användaren måste godkänna villkoren för offentlig förhandsversion.
+    2. Användarna måste godkänna **villkoren för** den offentliga förhandsversionen.
 
         ![Växla till offentlig förhandsversion](../media/learning/learning-app-switch-to-public-preview.png)
  
-3. För organisationer som har restriktiva policyer och behöver aktivera Viva Learning följer du processen i nästa avsnitt.
+3. För organisationer som har restriktiva principer och behöver aktivera Viva Learning (förhandsversion) följer du processen i nästa avsnitt.
 
 ## <a name="manage-settings-for-viva-learning-preview"></a>Hantera inställningar för Viva Learning (förhandsversion)
 

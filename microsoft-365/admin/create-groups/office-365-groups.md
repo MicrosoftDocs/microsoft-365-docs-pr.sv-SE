@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Med Microsoft 365 grupper kan du skapa samarbete i Microsoft 365 genom att ge en grupp personer åtkomst till en samling delade resurser.
-ms.openlocfilehash: bfcd2d27bc1d63fcc8b306267efe21c3f9564522
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: f940872a3e4ba2aeeb62247c2898d5a4c0dec85f
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582746"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635756"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Översikt över Microsoft 365 grupper för administratörer
 
@@ -119,12 +119,8 @@ Microsoft 365 grupper arbetar med Azure Active Directory. Vilka gruppfunktioner 
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Läs mer Microsoft 365 grupper](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (artikel)
-
-[Uppgradera distributionslistor till Microsoft 365 Grupper](../manage/upgrade-distribution-lists.md) (artikel)
-
-[Hantera Microsoft 365-grupper med PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (artikel)
-
-[SharePoint onlinebegränsningar](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) (artikel)
-
+[Läs mer Microsoft 365 grupper](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (artikel)\
+[Uppgradera distributionslistor till Microsoft 365 Grupper](../manage/upgrade-distribution-lists.md) (artikel)\
+[Hantera Microsoft 365-grupper med PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (artikel)\
+[SharePoint onlinebegränsningar](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) (artikel)\
 [Ordna grupper och kanaler i Microsoft Stream](/stream/groups-channels-organization) (artikel)

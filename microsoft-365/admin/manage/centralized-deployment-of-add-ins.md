@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Avgör om klientorganisationen och användarna uppfyller kraven, så att du kan använda centraliserad distribution för Office tillägg.
-ms.openlocfilehash: e5d3337cdf1bbb0dc18ee6940ab8bd289d2e5f65
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 25fe217a41274b6a239e4ee482ee105238465999
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593927"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635456"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Avgöra om centraliserad distribution av tillägg fungerar för din organisation
 
@@ -160,11 +160,8 @@ Om du eller dina användare stöter på problem med att läsa in tillägget när
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Distribuera tillägg i administrationscentret](../manage/manage-deployment-of-add-ins.md) (artikel)
-
-[Hantera tillägg i administrationscentret](manage-addins-in-the-admin-center.md) (artikel)
-
-[Vanliga frågor och svar om centraliserad distribution](../manage/centralized-deployment-faq.md) (artikel)
-
+[Distribuera tillägg i administrationscentret](../manage/manage-deployment-of-add-ins.md) (artikel)\
+[Hantera tillägg i administrationscentret](manage-addins-in-the-admin-center.md) (artikel)\
+[Vanliga frågor och svar om centraliserad](../manage/centralized-deployment-faq.md) distribution (artikel)\
 [Uppgradera dina Microsoft 365 för företag-användare till den senaste Office klient](../setup/upgrade-users-to-latest-office-client.md) (artikel)
  

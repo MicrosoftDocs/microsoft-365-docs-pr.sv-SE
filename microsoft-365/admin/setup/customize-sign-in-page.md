@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: Anpassa Microsoft 365 genom att använda Azure Active Directory. Du kan lägga till en bild, en logotyp och text på inloggningssidan.
-ms.openlocfilehash: dba75d5178f3c4a879ae2cdc9694697df45f6b8b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 6c873409a06d824c7b63f5ea02e178e22337a345
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624447"
+ms.locfileid: "52635944"
 ---
 # <a name="add-your-company-branding-to-the-sign-in-page"></a>Lägga till företagets varumärke på inloggningssidan
 
@@ -49,6 +49,8 @@ På följande bild ser du vilka delar av inloggningssidan som kan ändras i Azur
     
 Du kan inte bara anpassa inloggningssidan utan även åtkomstpanelsidan i Azure.
   
+## <a name="next-steps"></a>Nästa steg
+
 Om du är redo att lägga till anpassningar kan du utforska anpassningsalternativen i Azure-innehållsuppsättningen: [Lägga till företagsanpassning på din inloggningssida och åtkomstpanelsidorna](/azure/active-directory/fundamentals/customize-branding).
 
 ## <a name="related-content"></a>Relaterat innehåll

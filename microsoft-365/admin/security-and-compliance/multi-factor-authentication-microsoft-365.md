@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Multifaktorautentisering (MFA) använder både ett lösenord, som bör vara starkt, och en ytterligare verifieringsmetod.
-ms.openlocfilehash: 84d26d0a9908e51ce734e71961d4643a2df3471b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 6e1c43bdd66849a0043c0a1a927f48d925e0806e
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623695"
+ms.locfileid: "52635780"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Multifaktorautentisering för Microsoft 365
 
@@ -170,7 +170,7 @@ I Azure Portal kan du:
 
 I Microsoft 365 kan du konfigurera MFA-inställningar per användare och tjänst.
 
-## <a name="your-next-step"></a>Nästa steg
+## <a name="next-steps"></a>Nästa steg
 
 [Konfigurera MFA för Microsoft 365](set-up-multi-factor-authentication.md)
 

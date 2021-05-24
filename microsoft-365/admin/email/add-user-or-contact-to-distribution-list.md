@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: Lär dig hur du lägger Microsoft 365 en användare eller kontakt, till exempel en anställd, partner eller leverantör, i en e-postdistributionsgrupp.
-ms.openlocfilehash: 69dea710554b344de4bc221b17d5d8f929b964a5
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: c512e1da805fca5e46d7978620f34b825d0289a0
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593495"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635552"
 ---
 # <a name="add-a-user-or-contact-to-a-distribution-group"></a>Lägga till en användare eller kontakt i en distributionsgrupp
 
@@ -55,7 +55,6 @@ Lär dig [hur du skickar e-post som en distributionsgrupp i Microsoft 365](../ma
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Hantera övrig e-post för organisationen](configure-clutter.md) (artikel)
-
+[Hantera övrig e-post för din organisation](configure-clutter.md) (artikel)\
 [Skapa en delad postlåda](create-a-shared-mailbox.md) (artikel)
 

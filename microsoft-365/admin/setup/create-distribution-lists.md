@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Skapa distributionsgrupper eller listor i Microsoft 365-administrationscentret så att du kan skicka e-postmeddelanden till en grupp utan att skriva in varje mottagares namn.
-ms.openlocfilehash: 7c04ca3e17959afd4138a6ddf9d9cbcd6c4dbafb
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 845aa04e5e26beb14fca0fa3bc08c0599077b152
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572255"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635672"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Skapa distributionsgrupper i Microsoft 365 administrationscenter
   
@@ -76,8 +76,6 @@ Läs Problem [med distributionsgrupp om](/office365/troubleshoot/groups/distribu
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[E-postinställningar för användare](../email/office-365-user-email-settings.md) (artikel)
-
-[Skapa, redigera eller ta bort en säkerhetsgrupp i Microsoft 365 administrationscenter](../email/create-edit-or-delete-a-security-group.md) (artikel)
-
+[Användarens e-postinställningar](../email/office-365-user-email-settings.md) (artikel)\
+[Skapa, redigera eller ta bort en säkerhetsgrupp i Microsoft 365 (artikel)\](../email/create-edit-or-delete-a-security-group.md)
 [Skapa en delad postlåda](../email/create-a-shared-mailbox.md) (artikel)

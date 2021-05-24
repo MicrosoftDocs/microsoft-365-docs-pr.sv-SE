@@ -21,12 +21,12 @@ ms.custom:
 - commerce_purchase
 description: Om du har Microsoft 365 Business Standard från en butik kan du läsa om hur du löser in produktnyckeln och aktiverar din prenumeration.
 ms.date: 11/13/2020
-ms.openlocfilehash: bc2b07b5a98c13a919596bdbf85a21bdc6c8d2bf
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: e075a9d06b45f823540a3a99a1943caa9d116954
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593399"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636128"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Ange din produktnyckel för Microsoft 365 Business Standard
 
@@ -57,11 +57,9 @@ Om du har Microsoft 365 Business Standard från en butik hjälper den här artik
 
 Om du vill förlänga förfallodatumet eller lägga till en licens i din befintliga Microsoft 365 Business Standard-prenumeration använder du en ny och oanvänd nyckel för Microsoft 365 abonnemanget. Du kan Microsoft 365 produktnyckeln eftersom du inte kan använda en nyckel som redan har lösts in. Se [Lägga till licenser i eller förlänga en prenumeration som betalats med en produktnyckel.](licenses/add-licenses-using-product-key.md)
 
-## <a name="whats-next"></a>Hur går jag vidare?
+## <a name="next-steps"></a>Nästa steg
 
 Om du är nybörjare inom Microsoft 365 för företag kan du läsa mer om hur [du Microsoft 365](../admin/setup/setup.md).
-  
-## <a name="still-having-trouble-with-product-keys"></a>Har du fortfarande problem med produktnycklar?
 
 Titta i den här listan med vanliga fel och lösningar: [Problem med Microsoft 365 för företag-produktnyckeln?](product-key-errors-and-solutions.md)
   
@@ -69,8 +67,6 @@ Du kan också [kontakta Microsoft Support](../business-video/get-help-support.md
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Uppgradera till ett annat abonnemang](./subscriptions/upgrade-to-different-plan.md) (artikel)
-
-[Vad händer med mina data och åtkomst när prenumerationen för Microsoft 365 för företag går ut?](./subscriptions/what-if-my-subscription-expires.md) (artikel)
-
+[Uppgradera till ett annat abonnemang](./subscriptions/upgrade-to-different-plan.md) (artikel)\
+[Vad händer med mina data och åtkomst när prenumerationen för Microsoft 365 för företag går ut?](./subscriptions/what-if-my-subscription-expires.md) (artikel)\
 [Förstå prenumerationer och licenser i Microsoft 365 för företag](./licenses/subscriptions-and-licenses.md) (artikel)

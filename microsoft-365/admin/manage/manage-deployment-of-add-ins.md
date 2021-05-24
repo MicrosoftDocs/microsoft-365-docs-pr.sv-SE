@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Lär dig att distribuera tillägg till användare och grupper i organisationen med hjälp av centraliserad distribution i administrationscentret.
-ms.openlocfilehash: 2d3b90a75f38a2c1146c0b0e5470c80b0af2c63f
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 8cc4f29cd2593d9651edaf87791f46dabdcc30b2
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572279"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636028"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Distribuera tillägg i administrationscentret
 
@@ -131,12 +131,7 @@ Uppdateringar för tillägg sker enligt följande:
   
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Hantera tillägg i administrationscentret](manage-addins-in-the-admin-center.md) (artikel)
-
-[Skapa ditt första tillägg i åtgärdsfönstret i Word](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) (artikel)
-
-[Minderåriga och köp av tillägg från Store](minors-and-acquiring-addins-from-the-store.md) (artikel)
-  
-[Använda PowerShell-cmdlets för](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) centraliserad distribution för att hantera tillägg (artikel)
-  
+[Hantera tillägg i administrationscentret](manage-addins-in-the-admin-center.md) (artikel)\
+[Skapa ditt första tillägg i åtgärdsfönstret i Word](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) (artikel\
+[Minderåriga och att skaffa](minors-and-acquiring-addins-from-the-store.md) tillägg från store (artikeln)\ Använd [PowerShell-cmdlets](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) för centraliserad distribution för att hantera tillägg (artikel)\  
 [Felsökning: Användaren ser inte tillägg](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (artikel)

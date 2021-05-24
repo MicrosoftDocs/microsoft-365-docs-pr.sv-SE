@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Lär dig hur du ändrar standardtemat för navigeringsfältet högst upp i Microsoft 365 och anpassa det så att det matchar ditt företags logotyp eller färg.
-ms.openlocfilehash: b2177eebc31f34f7067c8464724623e4bf7d4870
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 5f6536d575ef055cda7a97a0860315c491100a1d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593835"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635932"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Anpassa Microsoft 365 för din organisation
 
@@ -152,10 +152,9 @@ Det rekommenderade kontrastförhållandet mellan text, ikon- eller knappfärg oc
 
 ### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>Om jag definierar ett tema, vilka platser Microsoft 365 används detta?
 
-Alla teman visas i det övre navigeringsfältet för alla i organisationen som en del av sidhuvudet Microsoft 365 programsviten.  
+Alla teman visas i det övre navigeringsfältet för alla i organisationen som en del Microsoft 365 sidhuvud.  
   
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Lägga till anpassade paneler på sidan Mina program och i startprogrammet](../manage/customize-the-app-launcher.md) (artikel)
-
+[Lägga till anpassade paneler på sidan Mina appar och startprogrammet](../manage/customize-the-app-launcher.md) (artikel)\
 [Översikt över Microsoft 365 för administratörer](../create-groups/office-365-groups.md) (artikel)

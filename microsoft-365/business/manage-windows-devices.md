@@ -24,24 +24,26 @@ search.appverid:
 - BCS160
 - MET150
 description: Lär dig hur du Microsoft 365 att skydda lokala Active Directory-anslutna Windows 10 med några få steg.
-ms.openlocfilehash: f16962dd3c33c3c228da507bc5c4a902d76a8a08
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: ec80159bdceffd8a13d09a297a2acc1b78c9b1b3
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593902"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636095"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Aktivera att domänaktiverade Windows 10 hanteras av Microsoft 365 Business Premium
 
 Om din organisation använder Windows Server Active Directory lokalt kan du konfigurera Microsoft 365 Business Premium för att skydda dina Windows 10-enheter, samtidigt som du behåller åtkomsten till lokala resurser som kräver lokal autentisering.
 Om du vill konfigurera det här skyddet kan du implementera **Hybrid Azure AD-anslutna enheter.** De här enheterna är anslutna till både din lokala Active Directory och din Azure Active Directory.
 
+## <a name="watch-configure-hybrid-azure-active-directory-join"></a>Titta på: Konfigurera Azure Active Directory hybridkoppling
+
 I den här videon beskrivs stegen för hur du ställer in detta för det vanligaste scenariot, som också beskrivs i anvisningarna nedan.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
+## <a name="before-you-begin"></a>Innan du börjar
 
-## <a name="before-you-get-started-make-sure-you-complete-these-steps"></a>Innan du börjar bör du kontrollera att du har slutfört följande steg:
 - Synkronisera användare till Azure AD med Azure AD Anslut.
 - Slutför synkroniseringen av Azure AD Anslut organisationsenhet (OU).
 - Kontrollera att alla domänanvändare som du synkroniserar har licenser för att Microsoft 365 Business Premium.
@@ -119,8 +121,6 @@ Nu bör du kunna se principen Aktivera automatisk MDM-registrering med hjälp av
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Synkronisera domänanvändare till Microsoft 365](manage-domain-users.md) (artikel)
-
-[Skapa en grupp i administrationscentret](../admin/create-groups/create-groups.md) (artikel)
-
+[Synkronisera domänanvändare till Microsoft 365](manage-domain-users.md) (artikel)\
+[Skapa en grupp i administrationscentret](../admin/create-groups/create-groups.md) (artikel)\
 [Självstudiekurs: Konfigurera Azure Active Directory-hybridlösningar för hanterade domäner](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md) (artikel)

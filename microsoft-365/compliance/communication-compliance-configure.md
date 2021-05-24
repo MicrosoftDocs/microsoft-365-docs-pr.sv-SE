@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 60b9577c2a42ef080fa6a734e0207225bf197cab
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: eed486120673abc513490f4892069ee8fd9bba21
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624275"
+ms.locfileid: "52636164"
 ---
 # <a name="get-started-with-communication-compliance"></a>Kom igång med kommunikationsefterlevnad
 
@@ -128,7 +128,7 @@ Använd följande diagram för att hjälpa dig att konfigurera grupper i organis
 
 | **Principmedlem** | **Grupper som stöds** | **Grupper som inte stöds** |
 |:-----|:-----|:-----|
-|Övervakade användare <br> Ej övervakade användare | Distributionsgrupper <br> Microsoft 365-grupper | Dynamiska distributionsgrupper <br> Kapslade distributionsgrupper <br> E-postaktiverad säkerhetsgrupp <br> Microsoft 365 grupper med dynamiskt medlemskap |
+|Övervakade användare <br> Undantagna användare | Distributionsgrupper <br> Microsoft 365-grupper | Dynamiska distributionsgrupper <br> Kapslade distributionsgrupper <br> E-postaktiverad säkerhetsgrupp <br> Microsoft 365 grupper med dynamiskt medlemskap |
 | Granskare | Inga | Distributionsgrupper <br> Dynamiska distributionsgrupper <br> Kapslade distributionsgrupper <br> E-postaktiverad säkerhetsgrupp |
   
 När du tilldelar en distributionsgrupp i principen övervakar principen alla e-postmeddelanden Teams och chattar från varje användare i distributionsgruppen. När du tilldelar en Microsoft 365-grupp i principen övervakar principen alla e-postmeddelanden och Teams-chattar som skickas till den gruppen, inte de enskilda e-postmeddelanden och chattar som tas emot av varje gruppmedlem.

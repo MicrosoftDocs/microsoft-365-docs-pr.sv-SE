@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Få en översikt över Microsoft 365 Meddelandecenter och dess roll vid uppföljning av nya och ändrade funktioner och andra viktiga meddelanden.
-ms.openlocfilehash: edef3bb5a9016cf6f65f307fcd7c706bf4424d2f
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 51cdf1924b3aaa507a6b41f903a6aea5d81d68f1
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593963"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636052"
 ---
 # <a name="message-center"></a>Meddelandecenter
 
@@ -303,8 +303,6 @@ En översikt över Meddelandecenter finns i [Meddelandecenter i Microsoft 365](m
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Konfigurera alternativen Standard eller Riktad version](../manage/release-options-in-office-365.md) (artikel)
-
-[Hantera vilka Office funktioner som visas i Vad är nytt](../manage/show-hide-new-features.md) (artikel)
-
-[Dokumentation om företagsprenumerationer och](../../commerce/index.yml) fakturering (länkar)
+[Konfigurera alternativen Standard eller Riktad version](../manage/release-options-in-office-365.md) (artikel)\
+[Hantera vilka Office som visas i Vad är nytt](../manage/show-hide-new-features.md) (artikel)\
+[Dokumentation om företagsprenumerationer och](../../commerce/index.yml) fakturering (länksida)

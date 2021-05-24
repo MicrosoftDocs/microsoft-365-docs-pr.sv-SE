@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Läs om hur du kan ange en princip så att användare kan återställa sina egna lösenord med självbetjäningsverktyget för återställning av lösenord.
-ms.openlocfilehash: 2c79d5611ab2db00f4de5f227b0ec2f411955558
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 81fbe1949b8d5e4a601411703d86165f95cc7b7f
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571859"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634274"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Låt användare återställa sina egna lösenord
 
@@ -74,8 +74,6 @@ Anvisningarna aktiverar Självbetjäning för återställning av lösenord för 
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Ange förfalloprincip för lösenord för din organisation](../manage/set-password-expiration-policy.md) (artikel)
-
-[Ange att en enskild användares lösenord aldrig ska förfalla](set-password-to-never-expire.md)(artikel)
-
+[Ange förfalloprincip för lösenord för din organisation](../manage/set-password-expiration-policy.md) (artikel)\
+[Ange att en enskild användares lösenord aldrig ska upphöra](set-password-to-never-expire.md) (artikel)\
 [Microsoft 365 Business utbildningsvideor](../../business-video/index.yml) (länksida)

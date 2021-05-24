@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Lär dig att skapa och Microsoft 365 grupper, lägga till och ta bort gruppmedlemmar och anpassa hur gruppen fungerar.
-ms.openlocfilehash: b3fb637867229489a3e3abe93373cc46fbce365f
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b8cbd194825ef114fa8e4ce999355248a61e7830
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241730"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635588"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Skapa en grupp i Microsoft 365 administrationscenter
   
@@ -80,14 +80,12 @@ En medlem kan ta bort en e-postkonversation från gruppinkorgen om de initierade
   
 När ett e-postmeddelande tas bort från grupppostlådan tas det inte bort från gruppmedlemmarna i deras personliga postlådor.
 
-## <a name="next-step-manage-your-group"></a>Nästa steg: hantera gruppen
+## <a name="next-steps"></a>Nästa steg
 
 När du har skapat en ny grupp och lagt till medlemmar kan du konfigurera gruppen ytterligare, till exempel redigera gruppens namn eller beskrivning, ändra ägare eller medlemmar och ange om externa avsändare kan skicka e-post till gruppen och om kopior av gruppkonversationer ska skickas till medlemmar. Mer [information finns i Microsoft 365 grupp.](manage-groups.md)
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Hantera gäståtkomst till Microsoft 365 grupper](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6) (artikel)
-
-[Välj den domän som ska användas när du Microsoft 365 grupper](../../solutions/choose-domain-to-create-groups.md) (artikel)
-
+[Hantera gäståtkomst till Microsoft 365 grupper](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6) (artikel)\
+[Välj den domän som ska användas när du Microsoft 365 grupper](../../solutions/choose-domain-to-create-groups.md) (artikel)\
 [Uppgradera distributionslistor till Microsoft 365 grupper](../manage/upgrade-distribution-lists.md) (artikel)

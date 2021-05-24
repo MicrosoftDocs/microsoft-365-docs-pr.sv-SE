@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: Ändra din e-postadress till en egen e-postadress som tom@fourthcoffee.com genom att köpa ett domännamn och lägga till det i Microsoft 365.
-ms.openlocfilehash: d5e70856c9200cd7e5df0eded25b6ff460e5d1fe
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 1a248cb67bab5d0467cad35dc5be8023b8013a12
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572099"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635528"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Ändra din e-postadress så att en anpassad domän används
 
@@ -91,4 +91,6 @@ Du vägleds så att allt konfigureras korrekt med din domän i Microsoft 365.
   
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Köpa en egen domän med hjälp Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (artikel)
+[Köpa en egen domän med hjälp Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (artikel)\
+[Hantera domäner](../get-help-with-domains/index.yml) (länksida)\
+[Domänens vanliga frågor och svar](../setup/domains-faq.yml) (artikel)

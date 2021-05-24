@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7abf1c9e4115c928ae581da3789270fd8ed036d3
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 6b49565c45c1f38d0d2ce71b097af079782ba4de
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476316"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636200"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Konfigurera Microsoft Defender för distribution av Slutpunkt
 
@@ -56,9 +56,9 @@ I det här distributionsscenariot vägleds du genom stegen om:
 
 ## <a name="check-license-state"></a>Kontrollera licenstillstånd
 
-Kontroll av licenstillståndet och om den har etablerats korrekt kan göras via administrationscentret eller via **Microsoft Azure-portalen.**
+Kontroll av licenstillståndet och om den har etablerats korrekt kan göras via administrationscentret eller via **Microsoft Azure portalen.**
 
-1. Du visar licenserna genom att gå till **Microsoft Azure-portalen och** gå till microsoft [Azure Portal-licensavsnittet.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)
+1. Du visar licenserna genom att gå **Microsoft Azure-portalen** och gå till [Microsoft Azure för portallicens.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)
 
    ![Bild av sidan Azure-licensiering](images/atp-licensing-azure-portal.png)
 
@@ -73,7 +73,7 @@ Kontroll av licenstillståndet och om den har etablerats korrekt kan göras via 
 
 Om du vill få åtkomst till vilka licenser som tillhandahålls till ditt företag och kontrollera licenserna går du till administrationscentret.
 
-1. I **partnerportalen** väljer du **Administrera tjänster > Office 365.**
+1. I **partnerportalen** väljer du **Administrera tjänster > Office 365**.
 
 2. Om du klickar på partnerportallänken **öppnas alternativet Admin för** din räkning och du får tillgång till kundadministrationscentret. 
 
@@ -82,41 +82,14 @@ Om du vill få åtkomst till vilka licenser som tillhandahålls till ditt föret
 
 
 ## <a name="tenant-configuration"></a>Klientorganisationskonfiguration
+Det är enkelt att komma igång med Microsoft Defender för Slutpunkt. I navigeringsmenyn väljer du ett objekt under Slutpunkter eller någon av Microsoft 365 Defender-funktioner som Incidenter, Ärenden, Ärenden, Åtgärdscenter eller Hotanalys för att påbörja introduktionsprocessen.
 
-När du öppnar Microsoft Defender Säkerhetscenter för första gången visas en guide som vägleder dig genom några inledande steg. I slutet av installationsguiden finns det en dedikerad molninstans av Defender för Slutpunkt skapad. Den enklaste metoden är att utföra de här stegen från en Windows 10-klientenhet.
-
-1. Från en webbläsare går du till <https://securitycenter.windows.com> .
-
-    ![Bild av Konfigurera dina behörigheter för Microsoft Defender för Endpoint](images/atp-setup-permissions-wdatp-portal.png)
-
-2. Om du går igenom en utvärderingsversionslicens går du till länken ( <https://signup.microsoft.com/Signup?OfferId=6033e4b5-c320-4008-a936-909c2825d83c&dl=WIN_DEF_ATP&pc=xxxxxxx-xxxxxx-xxx-x> )
-
-    När auktoriseringen är klar **visas** välkomstskärmen.
-3. Gå igenom auktoriseringsstegen.
-
-    ![Bild av välkomstskärmen för att konfigurera portalen](images/welcome1.png)
-
-4. Konfigurera inställningar.
-
-   **Datalagringsplats** – Det är viktigt att ställa in detta på rätt sätt. Avgör var kunden främst vill vara värd: USA, EU eller Storbritannien. Du kan inte ändra platsen efter den här uppsättningen och Microsoft kommer inte att överföra data från den angivna geolokaliseringen. 
-
-    **Datalagring** – standardvärdet är sex månader.
-
-    **Aktivera förhandsgranskningsfunktioner** – Standardinställningen är att den kan ändras senare.
-
-    ![Bild av geografisk plats i konfigurerad](images/setup-preferences.png)
-
-5. Välj **Nästa**.
-
-     ![Bild av den slutliga inställningen](images/setup-preferences2.png)
-
-6. Välj **Fortsätt.**
-
+Från en webbläsare går du till Microsoft 365 [Säkerhetscenter](https://security.microsoft.com).
 
 ## <a name="network-configuration"></a>Nätverkskonfiguration
 Om organisationen inte kräver att slutpunkterna använder en proxyserver för att få åtkomst till Internet kan du hoppa över det här avsnittet.
 
-Microsoft Defender för slutpunkts sensoren kräver Microsoft Windows HTTP (WinHTTP) för att rapportera sensordata och kommunicera med Microsoft Defender för slutpunktstjänsten. Den inbäddade Microsoft Defender för slutpunkts sensoren körs i systemkontexten med localSystem-kontot. Sensorn använder Microsoft Windows HTTP-tjänster (WinHTTP) för att aktivera kommunikation med Microsoft Defender för molntjänsten Endpoint. WinHTTP-konfigurationsinställningen är oberoende av proxyinställningarna för Internetsurfning på Windows Internet (WinINet) och kan bara identifiera en proxyserver med hjälp av följande identifieringsmetoder:
+Microsoft Defender för slutpunkts sensoren kräver Microsoft Windows HTTP (WinHTTP) för att rapportera sensordata och kommunicera med Microsoft Defender för slutpunktstjänsten. Den inbäddade Microsoft Defender för slutpunkts sensoren körs i systemkontexten med localSystem-kontot. Sensorn använder Microsoft Windows HTTP-tjänster (WinHTTP) för att aktivera kommunikation med Microsoft Defender för slutpunktens molntjänst. WinHTTP-konfigurationsinställningen är oberoende av proxyinställningarna för internetsurfning på Windows Internet (WinINet) på Internet och kan bara identifiera en proxyserver med hjälp av följande identifieringsmetoder:
 
 **Metoder för automatisk upptäckt:**
 
@@ -126,33 +99,33 @@ Microsoft Defender för slutpunkts sensoren kräver Microsoft Windows HTTP (WinH
 
 Om transparent proxy eller WPAD har implementerats i nätverkstopologin behöver du inte göra några särskilda konfigurationsinställningar. Mer information om undantag för slutpunkts-URL för slutpunkt i proxyn finns i avsnittet Url-adresser för [proxytjänsten](production-deployment.md#proxy-service-urls) i det här dokumentet för listan Tillåtna URL:er eller Konfigurera enhetsproxy och [Internetanslutningsinställningar.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
 
-**Manuell statisk proxykonfiguration:**
+**Manuell konfiguration av statisk proxy:**
 
 -   Registerbaserad konfiguration
 
 -   WinHTTP konfigurerat med netsh-kommandot <br> Endast lämpligt för stationära datorer i en stabil topologi (t.ex. ett skrivbord i ett företagsnätverk bakom samma proxy)
 
-### <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Konfigurera proxyservern manuellt med hjälp av en registerbaserad statisk proxyserver
+### <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Konfigurera proxyservern manuellt med hjälp av en registerbaserad statisk proxy
 
-Konfigurera en registerbaserad statisk proxy så att endast Microsoft Defender för slutpunkts sensor kan rapportera diagnostikdata och kommunicera med Microsoft Defender för Slutpunktstjänster om en dator inte har tillåtelse att ansluta till Internet. Den statiska proxyn kan konfigureras via grupprincip (GP). Grupprincipen hittar du under:
+Konfigurera en registerbaserad statisk proxy så att endast Microsoft Defender för slutpunkts sensor kan rapportera diagnostikdata och kommunicera med Microsoft Defender för Slutpunktstjänster om en dator inte har tillåtelse att ansluta till Internet. Den statiska proxyn kan konfigureras via en grupprincip. Grupprincipen finns under:
 
- - Administrativa mallar \> Windows Components Data Collection and Preview Builds Konfigurera autentiserad proxyanvändning för den anslutna användarupplevelsen och \> \> telemetritjänsten
+ - Administrativa mallar \> Windows datainsamlings- och förhandsversioner av komponenter Konfigurera autentiserad proxyanvändning för ansluten användarupplevelse och \> \> telemetritjänst
      - Ställ in den **på Aktiverad** och välj **Inaktivera autentiserad proxyanvändning**
 
-1. Öppna konsolen grupprinciphantering.
+1. Öppna konsolen Grupprinciphantering.
 2. Skapa en princip eller redigera en befintlig princip utifrån organisationsrutinerna.
-3. Redigera grupprincipen och gå till Administrativa mallar: Datainsamling och förhandsversioner av Windows-komponenter Konfigurera autentiserad proxyanvändning för den anslutna användarupplevelsen och **\> \> \> telemetritjänsten.** 
+3. Redigera grupprincipen och gå till Administrativa mallar Windows datasamlings- och förhandsversions buildar Förkonfigurera autentiserad proxyanvändning för den anslutna användarupplevelsen och **\> \> \> telemetritjänsten.** 
     ![Bild av grupprincipkonfiguration](images/atp-gpo-proxy1.png)
 
 4. Välj **Aktiverad**.
 5. Välj **Inaktivera autentiserad proxyanvändning.**
    
-6. Gå till **Administrativa mallar \> Windows-komponenter \> Datainsamling och förhandsversioner Konfigurera anslutna \> användarupplevelser och telemetri.**
+6. Gå till **Administrativa mallar \> Windows datainsamlings- och förhandsversioner av komponenter \> Konfigurera anslutna \> användarupplevelser och telemetri.**
     ![Bild av grupprincipkonfigurationsinställning](images/atp-gpo-proxy2.png)
 7. Välj **Aktiverad**.
 8. Ange **proxyservernamnet**.
 
-Principen anger två registervärden `TelemetryProxyServer` som REG_SZ och REG_DWORD `DisableEnterpriseAuthProxy` registernyckeln `HKLM\Software\Policies\Microsoft\Windows\DataCollection` .
+Principen anger två registervärden `TelemetryProxyServer` som REG_SZ och `DisableEnterpriseAuthProxy` som REG_DWORD under registernyckeln `HKLM\Software\Policies\Microsoft\Windows\DataCollection`.
 
 Registervärdet `TelemetryProxyServer` har följande strängformat:
 
@@ -162,23 +135,23 @@ Registervärdet `TelemetryProxyServer` har följande strängformat:
 
 Till exempel: 10.0.0.6:8080
 
-Registervärdet `DisableEnterpriseAuthProxy` ska vara 1.
+Registervärdet `DisableEnterpriseAuthProxy` anges till 1.
 
 ###  <a name="configure-the-proxy-server-manually-using-netsh-command"></a>Konfigurera proxyservern manuellt med netsh-kommandot
 
 Använd netsh för att konfigurera en systemomfattande statisk proxy.
 
 > [!NOTE]
-> - Detta påverkar alla program, inklusive Windows-tjänster som använder WinHTTP med standardproxy.</br>
+> - Detta påverkar alla program, inklusive Windows-tjänster som använder WinHTTP med standardproxyn.</br>
 > - Bärbara datorer som ändrar topologi (till exempel från kontor till hem) fungerar inte på netsh. Använd den registerbaserade statiska proxykonfigurationen.
 
 1. Öppna en upphöjd kommandorad:
 
     1. Gå till **Start** och skriv **cmd**.
 
-    1. Högerklicka på **Kommandotolk** och välj **Kör som administratör.**
+    1. Högerklicka på **Kommandotolken** och välj **Kör som administratör**.
 
-2. Ange följande kommando och tryck på **Retur:**
+2. Skriv följande kommando och tryck på **Retur**:
 
    ```PowerShell
    netsh winhttp set proxy <proxy>:<port>
@@ -189,10 +162,10 @@ Använd netsh för att konfigurera en systemomfattande statisk proxy.
 
 ###  <a name="proxy-configuration-for-down-level-devices"></a>Proxykonfiguration för enheter på lägre nivå
 
-Down-Level-enheter är bland annat Windows 7 SP1 och Windows 8.1 arbetsstationer samt Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 och versioner av Windows Server 2016 innan Windows Server CB 1803. Proxyn konfigureras som en del av Microsoft Management Agent för att hantera kommunikation från slutpunkten till Azure. Mer information om hur en proxy konfigureras på dessa enheter finns i distributionsguiden för Microsoft Management Agent – snabb distribution.
+Down-Level-enheter är bland annat Windows 7 SP1 och Windows 8.1 arbetsstationer samt Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 och versioner av Windows Server 2016 tidigare än Windows Server CB 1803. Proxyn konfigureras som en del av Microsoft Management Agent för att hantera kommunikation från slutpunkten till Azure. Mer information om hur en proxy konfigureras på dessa enheter finns i distributionsguiden för Microsoft Management Agent – snabb distribution.
 
 ### <a name="proxy-service-urls"></a>URL-adresser för proxytjänst
-URL-adresser som innehåller v20 i dem behövs bara om du har Windows 10-, version 1803- eller senare-enheter. Du behöver ```us-v20.events.data.microsoft.com``` till exempel bara om enheten använder Windows 10, version 1803 eller senare.
+URL-adresser som innehåller v20 i dem behövs bara om du har Windows 10, version 1803 eller senare enheter. Till exempel ```us-v20.events.data.microsoft.com``` krävs endast om enheten finns på Windows 10, version 1803 eller senare.
  
 
 Om en proxy eller brandvägg blockerar anonym trafik, som Microsoft Defender för Slutpunkts sensor ansluter från systemkontext, kontrollerar du att anonym trafik tillåts i de angivna webbadresserna.

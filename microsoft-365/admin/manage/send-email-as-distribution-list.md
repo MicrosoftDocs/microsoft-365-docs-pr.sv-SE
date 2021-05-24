@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: Skicka e-post som en distributionslista i Microsoft 365 så att när en medlem svarar på ett meddelande ser det ut som om det finns med i distributionslistan.
-ms.openlocfilehash: 01bff7e1d2515670c5a6faa199355e7de591f1fb
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: eb5ce4a08fae13ee0d2631499a8df1724ef3ef66
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624543"
+ms.locfileid: "52635720"
 ---
 # <a name="send-email-as-a-distribution-list"></a>Skicka e-post som en distributionslista
 
@@ -66,4 +66,4 @@ Innan du utför de här stegen bör du kontrollera att du har lagts till i Micro
 
 [Skapa, redigera eller ta bort en säkerhetsgrupp i Microsoft 365 (artikel)\](../email/create-edit-or-delete-a-security-group.md)
 [E-postsamarbete](../email/email-collaboration.md) (artikel)\
-[Lägga till en användare eller kontakt i en distributionsgrupp](../email/add-user-or-contact-to-distribution-list.md)
+[Lägga till en användare eller kontakt i en distributionsgrupp](../email/add-user-or-contact-to-distribution-list.md) (artikel)

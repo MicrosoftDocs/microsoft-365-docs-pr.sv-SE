@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Konfigurera Basic Mobility and Security för att skydda och hantera användarnas mobila enheter genom att utföra åtgärder som att fjärradera en enhet.
-ms.openlocfilehash: 830baa79838818501101c0c4f2d3163f57d47611
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 02ba28deca6286456af5f87841a741262c1a135d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593423"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634298"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Konfigurera grundläggande Mobility and Security
 
@@ -129,6 +129,5 @@ Användare med Android- eller iOS-enheter måste installera Företagsportal-appe
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Funktioner för basic mobility and security](capabilities.md) (artikel)
-
+[Funktioner för basic mobility and security](capabilities.md) (artikel)\
 [Skapa säkerhetsprinciper för enheter i Basic Mobility and Security](create-device-security-policies.md) (artikel)

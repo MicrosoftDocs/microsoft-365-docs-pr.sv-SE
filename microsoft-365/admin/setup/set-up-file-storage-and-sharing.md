@@ -29,18 +29,18 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Lär dig hur du OneDrive och en gruppwebbplats för Microsoft 365 och sparar Microsoft 365 fildelning.
-ms.openlocfilehash: 9e739b1f90296167fc47bdd5f19bacd73c43f9e2
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: f94ff8a60b1b4691b36ec2e1bd04088d96b1af8c
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572183"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635648"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Konfigurera fillagring och fildelning i Microsoft 365
 
 Ett av de bästa sätten att konfigurera fillagring och delning för ditt företag är att använda OneDrive och en gruppwebbplats tillsammans. Det här är bra om du har ett litet företag med några få anställda.
 
-Titta på en kort video om hur du lagrar filer i Microsoft 365 molnet.<br><br>
+## <a name="watch-where-to-store-files-in-office-365"></a>Titta: Här lagrar du filer i Office 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
@@ -207,8 +207,6 @@ Du kan aktivera lagring från tredje part för användarna i Microsoft 365 så a
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Lägga till lagringsutrymme för din prenumeration](../../commerce/add-storage-space.md) (artikel)
-
-[Dela filer och mappar med Microsoft 365 Business](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65) (video)
-
+[Lägga till lagringsutrymme för din prenumeration](../../commerce/add-storage-space.md) (artikel)\
+[Dela filer och mappar med Microsoft 365 Business](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65) (video)\
 [Anpassa gruppwebbplatsen för fillagring och delning](customize-team-site.md) (artikel)

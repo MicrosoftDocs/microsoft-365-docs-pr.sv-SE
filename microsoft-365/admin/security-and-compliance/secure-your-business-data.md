@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Skydda din affärs-e-post och data från cyberhot, inklusive utpressningstrojaner, nätfiske och skadliga bifogade filer.
-ms.openlocfilehash: 12bdb9f12c1b0d3072a4c84c006787c26050cc8b
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: b274bb6bcdf71641ff8b196921a501bae9cbba28
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582806"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635968"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>De 10 bästa sätten att skydda Microsoft 365 för företag-abonnemang
 
@@ -348,8 +348,6 @@ Mer information finns i artikeln [Valv i Microsoft Defender för Office 365](../
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Multifaktorautentisering för Microsoft 365](multi-factor-authentication-microsoft-365.md) (artikel)
-
-[Hantera och övervaka prioritetskonton](../setup/priority-accounts.md) (artikel)
-
+[Multifaktorautentisering för Microsoft 365](multi-factor-authentication-microsoft-365.md) (artikel)\
+[Hantera och övervaka prioritetskonton](../setup/priority-accounts.md) (artikel)\
 [Microsoft 365 Rapporter i administrationscentret](../activity-reports/activity-reports.md) (video)

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2dee1193e9f852e66df324927bf38d37d736d251
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ed4e0c477bd2a8840e920b337f05c8730965bcff
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245954"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636248"
 ---
 # <a name="device-discovery-overview"></a>Översikt över enhetsidentifiering
 
@@ -62,7 +62,7 @@ Det finns två identifieringslägen:
 
 
 > [!IMPORTANT]
-> Identifieringen är inställd på standardläge. Du kan välja att behålla den här konfigurationen via inställningssidan. Standardidentifieringen kommer att vara standardläget för alla förhandsversionskunder som startar den 10 maj 2021 , om de inte ändrats via inställningssidan före detta datum.
+> Identifieringen är inställd på standardläge. Du kan välja att behålla den här konfigurationen via inställningssidan. Standardidentifieringen kommer att vara standardläget för alla kunder från och med den 19 juli 2021 , om det inte ändrats via inställningssidan före detta datum.
 
 ### <a name="basic-discovery"></a>Grundläggande identifiering 
 

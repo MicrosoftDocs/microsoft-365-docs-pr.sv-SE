@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Användare med giltiga arbets- eller skolkonton kan få Cortana i Microsoft 365 funktioner som uppfyller Office 365 säkerhet på företagsnivå.
-ms.openlocfilehash: aad371fc531a03f42e1756a41405082b6b528b06
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: f626ba0d0295655dcdb3d4df2b332dcf05f1a6b5
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582782"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635804"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana i Microsoft 365
 
@@ -187,8 +187,6 @@ Microsoft är datakontrollant för [tjänster](https://go.microsoft.com/fwlink/p
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Cortana rösthjälp i Teams](/microsoftteams/cortana-in-teams) (artikel)
-
-[Konfigurera Cortana i Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (artikel)
-
+[Cortana rösthjälp i Teams](/microsoftteams/cortana-in-teams) (artikel)\
+[Konfigurera Cortana i Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (artikel)\
 [Vad kan du göra med Spela upp mina e-postmeddelanden från Cortana?](https://support.microsoft.com/help/4558256)

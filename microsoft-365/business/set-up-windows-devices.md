@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: Konfigurera Windows enheter med Windows 10 Pro för Microsoft 365 Business Premium och aktivera centraliserad hantering och säkerhetskontroller.
-ms.openlocfilehash: 3d32a033a1a1c89d7d4d557cea6a28e24543ab2c
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 7a9c75f6ec14605225d40c103c18e62937e773bf
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594030"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635883"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Konfigurera Windows enheter för Microsoft 365 Business Premium användare
 
@@ -46,7 +46,7 @@ Följ stegen i det här avsnittet för att få mer information om hur du uppgrad
   
 Se [Kontrollera att enheten är ansluten till Azure AD för](#verify-the-device-is-connected-to-azure-ad) att kontrollera att du har uppgraderingen eller om uppgraderingen fungerade.
 
-Titta på en kort video om hur du ansluter Windows till Microsoft 365.<br><br>
+## <a name="watch-connect-your-pc-to-microsoft-365-business"></a>Titta: Anslut datorn till Microsoft 365 Business
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
 

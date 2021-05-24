@@ -20,22 +20,22 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Lär dig hur du börjar samla in data för klientorganisationen med hjälp Microsoft 365 mallappen för användningsanalys i Power BI.
-ms.openlocfilehash: 329878365aa07da4615a849ad04cde7f75a07872
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 01923887b4af143d1490e14d59a6174700e6ae93
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593375"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635420"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Aktivera Microsoft 365 användningsanalyser
 
 Microsoft 365 användningsanalys är ännu inte tillgängligt för Microsoft 365 Government Community i USA.
   
-## <a name="steps-to-enable-microsoft-365-usage-analytics"></a>Steg för att aktivera Microsoft 365 användningsanalyser
+## <a name="before-you-begin"></a>Innan du börjar
 
 För att komma Microsoft 365 användningsanalys måste du först göra data tillgängliga i administrationscentret för Microsoft 365 och sedan starta mallappen i Power BI.
   
-### <a name="get-power-bi"></a>Hämta Power BI
+## <a name="get-power-bi"></a>Hämta Power BI
 
 Om du inte redan har ett Power BI kan du [registrera dig för Power BI Pro](https://go.microsoft.com/fwlink/p/?linkid=845347). Välj **Prova gratis** för att registrera dig för en utvärderingsversion, eller Köp **nu** för att få Power BI Pro.
   
@@ -47,7 +47,7 @@ Du kan också öppna **Produkter** och köpa en version av Power BI.
 
 Om du vill dela dina data måste både du och de personer som du delar data med, en Power BI Pro-licens eller innehållet vara på en arbetsyta i en [Power BI premium-tjänst.](/power-bi/service-premium-what-is) 
   
-### <a name="enable-the-template-app"></a>Aktivera mallappen
+## <a name="enable-the-template-app"></a>Aktivera mallappen
 
 Du måste vara global administratör för att kunna aktivera **mallappen.**
   
@@ -61,7 +61,7 @@ Mer information [finns i om](../add-users/about-admin-roles.md) administratörsr
   
 Datainsamlingsprocessen slutförs om två till 48 timmar beroende på klientorganisationens storlek. Knappen **Gå till Power BI** aktiveras (ej längre gråmarkerad) när datainsamlingen är klar. 
     
-### <a name="start-the-template-app"></a>Starta mallappen
+## <a name="start-the-template-app"></a>Starta mallappen
 
 För att kunna starta mallappen måste du vara antingen **global** administratör , **rapportläsare,** **Exchange administratör**, **Skype för företag** administratör eller **SharePoint administratör**. 
   
@@ -99,8 +99,6 @@ Du måste vara global administratör för att kunna anonymisera data som samlas 
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Om användningsanalys](usage-analytics.md) (artikel)
-
-[Hämta den senaste versionen av användningsanalys](get-the-latest-version-of-usage-analytics.md) (artikel)
-
+[Om användningsanalyser](usage-analytics.md) (artikel)\
+[Hämta den senaste versionen av användningsanalys](get-the-latest-version-of-usage-analytics.md) (artikel)\
 [Navigera och använda rapporter i Microsoft 365 användningsanalys](navigate-and-utilize-reports.md) (artikel)

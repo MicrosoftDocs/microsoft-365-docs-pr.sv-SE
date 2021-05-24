@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: Gör ändringar i din organisationsprofil, till exempel organisationens namn, adress, telefonnummer, teknisk kontakt och e-post.
 ms.date: 03/30/2021
-ms.openlocfilehash: 9fc985f640f1544bf30ea1a6ccdd5c1ca19aa81f
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 2646d2d83c72caa8a56f6658f005812f087101cb
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572139"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635408"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Ändra organisationens adress, tekniska kontakt med mera
   
@@ -81,8 +81,6 @@ Du kan ändra din e-postsignatur i Outlook Web App. Mer information finns i [E-p
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Skicka e-post från en annan adress](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (artikel)
-
-[Ändra ett användarnamn och en e-postadress](../add-users/change-a-user-name-and-email-address.md) (artikel)
-
+[Skicka e-post från en annan adress](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (artikel)\
+[Ändra ett användarnamn och en e-postadress](../add-users/change-a-user-name-and-email-address.md) (artikel)\
 [Konfigurera vidarebefordran av e-post i Microsoft 365](../email/configure-email-forwarding.md) (artikel)

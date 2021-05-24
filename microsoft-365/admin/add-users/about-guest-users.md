@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du skapar ett team med gäster Microsoft 365 administrationscentret och hur du ansluter till ett team som gäst.
-ms.openlocfilehash: c05a8d7e10b40c22bb041ce88748eb3dd919d83d
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: b458aaba464121e2e408013d4c8f32cd8a6852c5
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593871"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634190"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Gästanvändare i Microsoft 365 administrationscenter
 
@@ -65,4 +65,4 @@ Information om hur du tar bort användare i Azure AD-portalen finns [i Ta bort e
 ## <a name="related-content"></a>Relaterat innehåll
 
 [Hantera gäståtkomst i Microsoft 365 grupper](../create-groups/manage-guest-access-in-groups.md) (artikel)\
-[Förhindra att gäster läggs till i en viss Microsoft 365 grupp eller Microsoft Teams grupp](../../solutions/per-group-guest-access.md)
+[Förhindra att gäster läggs till i en viss Microsoft 365 grupp eller Microsoft Teams -team](../../solutions/per-group-guest-access.md) (artikel)

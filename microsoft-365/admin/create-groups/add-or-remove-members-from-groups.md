@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Lär dig hur du lägger till en medlem i en grupp, tar bort medlemmar från gruppen och hanterar gruppägares status i Microsoft 365 administrationscenter.
-ms.openlocfilehash: 3ab3ebe21caa2d9d3dfa381dd3b68c9d2512cb79
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: b5b0a398a5ebb47a5f27066f1daea1a822adbff2
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593388"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635612"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Lägga till eller ta bort medlemmar Microsoft 365 grupper i administrationscentret
 
@@ -101,7 +101,7 @@ Personen som skapade gruppen är som standard gruppägare. Grupper har ofta fler
 
 5. Välj **Spara**.
 
-## <a name="more-on-managing-membership"></a>Mer om att hantera medlemskap
+## <a name="next-steps"></a>Nästa steg
 
 - [Hantera grupper dynamiskt i Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal): mer information finns i avsnittet "Hur kan jag hantera medlemskapet för en grupp dynamiskt?"
 
@@ -111,12 +111,8 @@ Personen som skapade gruppen är som standard gruppägare. Grupper har ofta fler
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Uppgradera distributionslistor till Microsoft 365 grupper i Outlook](../manage/upgrade-distribution-lists.md) (artikel)
-
-[Varför du bör uppgradera dina distributionslistor till grupper i Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (artikel)
-
-[Hantera gäståtkomst i Microsoft 365 (artikel)](manage-guest-access-in-groups.md)
-
-[Hantera Microsoft 365-grupper med PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md): i den här artikeln ges en artikel om viktiga cmdlets och exempel (artikel)
-
+[Uppgradera distributionslistor till Microsoft 365 grupper i Outlook](../manage/upgrade-distribution-lists.md) (artikel)\
+[Varför du bör uppgradera dina distributionslistor till grupper i Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (artikel)\
+[Hantera gäståtkomst i Microsoft 365 grupper](manage-guest-access-in-groups.md) (artikel)\
+[Hantera Microsoft 365 grupper med PowerShell: i](../../enterprise/manage-microsoft-365-groups-with-powershell.md)den här artikeln ges en artikel om viktiga cmdlets och exempel (artikel)\
 [Microsoft 365 gruppnamnprincip](../../solutions/groups-naming-policy.md) (artikel)

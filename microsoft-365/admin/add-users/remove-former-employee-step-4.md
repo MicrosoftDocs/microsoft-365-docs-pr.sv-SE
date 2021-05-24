@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Följ stegen i den här artikeln för att ge en annan anställd åtkomst till den tidigare anställdes OneDrive och Outlook data.
-ms.openlocfilehash: cb5c27cbc7f1c184af8f0d1ad32b822660e93791
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 55bc2c3d8530e5cb7702f99a77b3918bfb7c0dee
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582698"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634262"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>Steg 4 – Ge en annan anställd tillgång OneDrive och Outlook data
 
@@ -163,8 +163,6 @@ Om du vill ge åtkomst till e-postmeddelanden, kalender, uppgifter och kontakter
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Lägga till och ta bort administratörer i OneDrive-konto](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) (artikel)
-
-[Återställa en borttagna OneDrive](/onedrive/restore-deleted-onedrive) (artikel)
-  
+[Lägga till och ta bort administratörer på ett OneDrive konto](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) (artikel)\
+[Återställa en borttagna OneDrive](/onedrive/restore-deleted-onedrive) (artikel)\
 [OneDrive och borttagning](/onedrive/retention-and-deletion) (artikel)

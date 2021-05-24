@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Logga in på ditt Microsoft 365 för att ange att vissa lösenord aldrig ska upphöra att gälla genom att använda Windows PowerShell.
-ms.openlocfilehash: 0747e0bfe8a7389db554d5d6a7f685605e013306
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 12c717d8d625b0135f185b1af131db00e9762c73
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571931"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635564"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Ange att en enskild användares lösenord aldrig ska förfalla
 
@@ -128,6 +128,6 @@ Kör något av följande kommandon:
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Låt användare återställa sina egna lösenord](../add-users/let-users-reset-passwords.md) (artikel)
-
-[Återställ lösenord](../add-users/reset-passwords.md) (artikel)
+[Låt användare återställa sina egna lösenord](../add-users/let-users-reset-passwords.md) (artikel)\
+[Återställ lösenord](../add-users/reset-passwords.md) (artikel)\
+[Ange förfalloprincip för lösenord för din organisation](../manage/set-password-expiration-policy.md) (artikel)

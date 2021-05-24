@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Logga in med ditt Microsoft 365 för att återställa lösenord för användare i Microsoft 365 för företag-prenumeration.
-ms.openlocfilehash: 8d4666eb70b1d5349f71c906f05510a8a54ded74
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 0cec6c7874b51c76fca60c6c237395c940c47bbe
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571979"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635576"
 ---
 # <a name="reset-passwords"></a>Återställ lösenord
 
@@ -122,12 +122,8 @@ Läs mer i den här artikeln: [Jag har glömt användarnamnet eller lösenordet 
   
 ## <a name="related-content"></a>Relaterat innehåll
   
-[Låt användare återställa sina egna lösenord](../add-users/let-users-reset-passwords.md) (artikel)
-
-[Återställ lösenord](../add-users/reset-passwords.md) (artikel)
-
-[Ange att en enskild användares lösenord aldrig ska förfalla](set-password-to-never-expire.md)(artikel)
-
-[Ange förfalloprincip för lösenord för din organisation](../manage/set-password-expiration-policy.md) (artikel)
-
+[Låt användare återställa sina egna lösenord](../add-users/let-users-reset-passwords.md) (artikel)\
+[Återställ lösenord](../add-users/reset-passwords.md) (artikel)\
+[Ange att en enskild användares lösenord aldrig ska upphöra](set-password-to-never-expire.md) (artikel)\
+[Ange förfalloprincip för lösenord för din organisation](../manage/set-password-expiration-policy.md) (artikel)\
 [Microsoft 365 om utbildningsvideor för företag](../../business-video/index.yml) (länksida)

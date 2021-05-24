@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Lägg till fillagring i Microsoft 365 prenumeration. Med extra fillagring kan du lagra mer innehåll i SharePoint Online och OneDrive.
 ms.date: 04/02/2021
-ms.openlocfilehash: b573205c7053aba0339d1f32deb2996ef80f8754
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 14b688e850f62a06c39e4a315d871202e57d70d6
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572327"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635864"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Lägga till lagringsutrymme för din prenumeration
 
@@ -104,4 +104,4 @@ Office 365 extra fillagring är tillgängligt för följande prenumerationer:
 ## <a name="related-content"></a>Relaterat innehåll
 
 [Hantera lagringsgränser för webbplatser](/sharepoint/manage-site-collection-storage-limits) (artikel)\
-[Ange standardlagringsutrymme för OneDrive](/onedrive/set-default-storage-space)(artikel)
+[Ange standardlagringsutrymme för OneDrive](/onedrive/set-default-storage-space) (artikel)

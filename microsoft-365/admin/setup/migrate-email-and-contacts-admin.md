@@ -28,12 +28,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: Lär dig att importera kontakter, kalendrar och e-postmeddelanden från Gmail eller en annan e-postleverantör och migrera dem till Microsoft 365.
-ms.openlocfilehash: 56075c19e15621755a1500d37513430842ac99e8
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 9f775135e739c91a0fb48a060136728f901159f5
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297050"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635920"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Migrera e-post och kontakter till Microsoft 365
 
@@ -52,6 +52,8 @@ Följ de här anvisningarna om du vill importera eller migrera e-post, kontakter
 - [Importera kontakter till Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
 - [Importera Google Kalender](https://support.microsoft.com/office/098ed60c-936b-41fb-83d6-7e3786437330)
+
+## <a name="watch-import-calendars"></a>Titta: Importera kalendrar
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
@@ -90,3 +92,9 @@ Behöver du mer detaljerade anvisningar? Se [Lägga till ett konto.](https://sup
 ## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>Flera postlådor: Administratörer kan massimporterar e-post, kontakter och kalendrar till Microsoft 365
 
 Beroende på ditt käll-e-postsystem kan du välja mellan flera massmigreringsmetoder. Läs [Olika sätt att migrera flera e-postkonton till Microsoft 365](/Exchange/mailbox-migration/mailbox-migration) för att avgöra vilken metod som fungerar för dig.
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Planera konfigurationen av Microsoft 365 för företag](plan-your-setup.md) (artikel)\
+[Installera Office -program](install-applications.md) (länksida)\
+[Översikt över administrationscenter för Microsoft 365](../../business-video/admin-center-overview.md) (video)
