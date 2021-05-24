@@ -20,12 +20,12 @@ metadata:
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: f146cd9eba6e333376bcfeb6e8c74b3378387b5b
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: 42e848309589fa8786346b5921d1cade0ed074b9
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52334139"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52625419"
 title: Vanliga frågor och svar om meddelanden i karantän
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -40,7 +40,7 @@ summary: >
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-  Det här avsnittet innehåller vanliga frågor och svar om e-postmeddelanden i karantän för Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor.
+  Det här avsnittet innehåller vanliga frågor och svar om e-postmeddelanden i karantän för Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online postlådor.
 
 
   Frågor och svar om skydd mot skräppost finns i Vanliga frågor och [svar om skydd mot skräppost.](anti-spam-protection-faq.yml)
@@ -64,7 +64,7 @@ sections:
   - question: >
       Hur ger jag användare åtkomst till karantän?
     answer: >
-      En användare måste ha ett giltigt konto för att komma åt sina egna meddelanden i karantän. Fristående EOP kräver att användarna representeras som e-postanvändare i EOP (skapas eller skapas manuellt via katalogsynkronisering). Mer information om hur du hanterar användare i fristående EOP-miljöer finns i [Hantera e-postanvändare i EOP.](manage-mail-users-in-eop.md)
+      En användare måste ha ett giltigt konto för att komma åt sina egna meddelanden i karantän. Fristående EOP kräver att användarna representeras som e-postanvändare i EOP (skapas eller skapas manuellt via katalogsynkronisering). Mer information om hur du hanterar användare i fristående EOP-miljöer finns i [Hantera e-postanvändare i fristående EOP.](/exchange/standalone-eop/manage-mail-users-in-eop)
   - question: >
       Vilka meddelanden kan slutanvändarna få åtkomst till i karantän?
     answer: >
@@ -95,7 +95,7 @@ sections:
       Kopiera till exempel följande PowerShell-kod till Anteckningar och spara filen som .ps1 på en plats som är lätt att hitta (till exempel C:\Data\QuarantineRelease.ps1).
 
 
-      När du sedan ansluter till [Exchange Online PowerShell eller](/powershell/exchange/connect-to-exchange-online-powershell) Exchange Online Protection [PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)kör du följande kommando för att köra skriptet:
+      När du sedan ansluter till [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) [eller Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)kör du följande kommando för att köra skriptet:
 
 
       ```powershell
