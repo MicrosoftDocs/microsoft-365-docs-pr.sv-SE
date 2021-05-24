@@ -20,12 +20,12 @@ ms.collection:
 description: Administratörer kan läsa mer om Valv i Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ab3fd89c02186dfbdb6c9a3d754a4902d8b945f8
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: cc5fabf7b0bb4a649aeb7c4e09155037fc09e9f9
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246386"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625011"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Valv Bifogade filer i Microsoft Defender för Office 365
 
@@ -124,7 +124,7 @@ Det finns scenarier där dynamisk leverans inte kan ersätta bifogade filer i me
 - Borttagna meddelanden.
 - Användarens sökmapp i postlådan är i ett felläge.
 - Exchange Online organisationer där Exclaimer är aktiverat. Information om hur du löser problemet finns [i KB4014438.](https://support.microsoft.com/help/4014438)
-- [S/MIME)](s-mime-for-message-signing-and-encryption.md) krypterade meddelanden.
+- [S/MIME)](/exchange/security-and-compliance/smime-exo/smime-exo) krypterade meddelanden.
 - Du har konfigurerat åtgärden Dynamisk leverans i en Valv-princip för bifogade filer, men mottagaren stöder inte dynamisk leverans (till exempel är mottagaren en postlåda i en lokal Exchange organisation). Men [med Valv-länkar](set-up-safe-links-policies.md) i Microsoft Defender för Office 365 kan du söka igenom bifogade Office-filer som innehåller URL-adresser (beroende på hur de globala inställningarna för [Valv-länkar](configure-global-settings-for-safe-links.md) konfigureras).
 
 ## <a name="submitting-files-for-malware-analysis"></a>Skicka filer för analys av skadlig programvara

@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratörer kan lära sig att använda den avancerade leveransprincipen i Exchange Online Protection (EOP) för att identifiera meddelanden som inte ska filtreras i specifika scenarier som stöds (nätfiskebedrägerier från tredje part och meddelanden som levereras till säkerhetsåtgärder (SecOps)-postlådor.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8bebc094b56a20a43f92d1acf8d374110de43d71
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 0e4e230fdca7fe29fc1c7a1bc68085454ba883b9
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594127"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624795"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Konfigurera leverans av nätfiskebedrägerier från tredje part till användare och ofiltrerade meddelanden till SecOps-postlådor
 
@@ -34,7 +34,7 @@ ms.locfileid: "52594127"
 > [!NOTE]
 > Funktionen som beskrivs i den här artikeln är i förhandsversion, är inte tillgänglig för alla och kan komma att ändras.
 
-För att [](secure-by-default.md)hålla organisationen säker som standard tillåter Exchange Online Protection (EOP) inte säkra listor eller filtrering av förbikoppling för meddelanden som resulterar i skadlig kod eller nätfiskeförsök med hög konfidens. Men det finns särskilda scenarier som kräver leverans av ofiltrerade meddelanden. Till exempel:
+För att [](secure-by-default.md)hålla organisationen säker som standard tillåter Exchange Online Protection (EOP) inte säkra listor eller filtrering av förbikoppling för meddelanden som resulterar i skadlig kod eller nätfiskeförsök med hög konfidens. Men det finns särskilda scenarier som kräver leverans av ofiltrerade meddelanden. Ett exempel:
 
 - **Nätfiskebedrägerier från tredje** part : Simulerade attacker kan hjälpa dig att identifiera sårbara användare innan en verklig attack påverkar din organisation.
 - **Säkerhetsåtgärder (SecOps)-postlådor:** Dedikerade postlådor som används av säkerhetsteam för att samla in och analysera ofiltrerade meddelanden (både bra och dåliga).
@@ -107,6 +107,6 @@ Utöver de två scenarier som den avancerade leveransprincipen kan hjälpa dig m
 
 - **Filter från tredje part:** Om domänens MX-post inte pekar på Office 365 (meddelanden dirigeras någon annanstans [först)](secure-by-default.md) är säker som standard *inte tillgänglig.* 
 
-  Om du vill kringgå Microsoft-filtrering för meddelanden som redan har utvärderats av filtrering från tredje part använder du e-postflödesregler (kallas även transportregler) i Använda e-postflödesregler för att ange SCL i [meddelanden.](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
+  Om du vill kringgå Microsoft-filtrering för meddelanden som redan har utvärderats av filtrering från tredje part använder du e-postflödesregler (kallas även transportregler) i Använda e-postflödesregler för att ange SCL i [meddelanden.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md)
 
 - **Falska** positiva resultat under granskning: Du kanske tillfälligt vill tillåta att vissa meddelanden som fortfarande analyseras av Microsoft via administratörer rapporterar kända bra meddelanden som felaktigt [markeras](admin-submission.md) som dåliga för Microsoft (falska positiva resultat). Precis som med alla åsidosättningar **_rekommenderar vi starkt_** att dessa tillägg görs tillfälligt.

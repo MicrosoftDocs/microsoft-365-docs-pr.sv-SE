@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: Lär dig hur du lägger till en partner som abonnemangsrådgivare som en partner av post vid tidpunkten för Microsoft 365, ändrar partnern eller tar bort en partner från en prenumeration.
-ms.openlocfilehash: d45f9e3278b0a25cc5603d322c96f40eee45e6f8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Lägg till en postpartner när du köper Microsoft 365, ändrar partnern eller tar bort en partner från en prenumeration.
+ms.openlocfilehash: e21c324bc84e360b80deae2abeec610e73834819
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537481"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624531"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Lägga till, ändra eller ta bort en partner för abonnemangsrådgivning
 
@@ -42,6 +42,8 @@ ms.locfileid: "52537481"
 En auktoriserad Microsoft-partner fungerar som din abonnemangsrådgivare och hjälper dig med expertkunskaper inom försäljning, support och teknik, som behövs för att konfigurera och underhålla ditt abonnemang. Du kan lägga till en abonnemangsrådgivare som en partner av post när du köper Microsoft 365 eller vid en annan tidpunkt. Om du inte har någon partner kan du hitta en på webbplatsen [Microsoft Pinpoint](https://pinpoint.microsoft.com).
 
 ::: moniker-end
+
+## <a name="before-you-begin"></a>Innan du börjar
 
 ::: moniker range="o365-worldwide"
 
@@ -218,6 +220,7 @@ Du måste be din återförsäljare att följa de här instruktionerna: Ta [bort 
   
 ::: moniker-end
 
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-content"></a>Relaterat innehåll
 
-[Hitta din Microsoft 365 partner eller återförsäljare](../manage/find-your-partner-or-reseller.md)
+[Hitta din Microsoft 365 partner eller återförsäljare](../manage/find-your-partner-or-reseller.md) (artikel)\
+[Planera konfigurationen av Microsoft 365 för företag](../setup/plan-your-setup.md) (artikel)

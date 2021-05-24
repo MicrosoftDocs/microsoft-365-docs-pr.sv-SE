@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 71c2391361c645d26cdaddff0bff86796da50391
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 1a969b6430914eb2dd667a906dc071d3cd49be8b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995087"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625335"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Felsöka prestandaproblem relaterade till realtidsskydd
 
@@ -33,7 +33,7 @@ ms.locfileid: "51995087"
 
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
  
-Om ditt system har problem med hög CPU-användning eller prestanda relaterade till realtidsskyddstjänsten i Microsoft Defender för Endpoint kan du skicka ett ärende till Microsoft Support. Följ stegen i Samla in [diagnostikdata för Microsoft Defender Antivirus.](collect-diagnostic-data.md)
+Om ditt system har problem med hög CPU-användning eller prestanda relaterade till realtidsskyddstjänsten i Microsoft Defender för Endpoint kan du skicka ett ärende till Microsoft Support. Följ stegen i Samla in [Microsoft Defender Antivirus diagnostikdata.](collect-diagnostic-data.md)
 
 Som administratör kan du också felsöka dessa problem på egen hand. 
 
@@ -43,7 +43,7 @@ Annars kan du identifiera vilken programvara som är relaterad till det identifi
 
 Du kan också skicka ytterligare loggar till din inskickade information till Microsoft genom att följa stegen i:
 - [Registrera processloggar med processövervakning](#capture-process-logs-using-process-monitor)
-- [Spara prestandaloggar med Windows Performance Recorder](#capture-performance-logs-using-windows-performance-recorder) 
+- [Spara prestandaloggar med hjälp Windows Prestandainspelaren](#capture-performance-logs-using-windows-performance-recorder) 
 
 ## <a name="check-with-vendor-for-antivirus-exclusions"></a>Kontrollera med leverantörer om undantag för antivirus
 
@@ -67,9 +67,9 @@ I **MPLog-xxxxxxxx-xxxxxx.log** kan du hitta information om beräknad prestandae
 | MaxTimeFile | Sökvägen till filen som används i den här processen för vilken den längsta genomsökningen `MaxTime` registrerades |
 | EstimatedImpact | Hur lång tid i procent som använts i genomsökningar för filer som använts i den här processen under den period då den här processen gick igenom |
 
-Om prestandan är hög kan du prova att lägga till processen i undantag för sökväg/process genom att följa stegen i Konfigurera och validera undantag för [genomsökningar för Microsoft Defender Antivirus.](collect-diagnostic-data.md)
+Om prestandan är hög kan du prova att lägga till processen i undantag för sökväg/process genom att följa stegen i Konfigurera och validera undantag för [Microsoft Defender Antivirus genomsökningar.](collect-diagnostic-data.md)
 
-Om det föregående steget inte löser problemet kan du samla in mer information via [processövervakningen](#capture-process-logs-using-process-monitor) eller [Med](#capture-performance-logs-using-windows-performance-recorder) prestandainspelaren i följande avsnitt.
+Om det föregående steget inte löser problemet kan du samla in mer information via [processövervakningen](#capture-process-logs-using-process-monitor) eller Windows [Performance Recorder](#capture-performance-logs-using-windows-performance-recorder) i följande avsnitt.
      
 ## <a name="capture-process-logs-using-process-monitor"></a>Registrera processloggar med processövervakning
 
@@ -87,7 +87,7 @@ Processövervakning (ProcMon) är ett avancerat övervakningsverktyg som kan vis
 
 3. Packa upp filen så `C:\temp` att mappsökvägen blir `C:\temp\ProcessMonitor` . 
 
-4. Kopiera **ProcMon.exe**  till Windows-klienten eller Windows-servern som du felsöker.  
+4. Kopiera **ProcMon.exe** till Windows klient eller Windows server som du felsöker.  
 
 5. Innan du kör ProcMon ska du se till att alla andra program som inte är relaterade till problemet med hög CPU-användning är stängda. Då minimeras antalet processer som ska kontrolleras.
 
@@ -150,11 +150,11 @@ Processövervakning (ProcMon) är ett avancerat övervakningsverktyg som kan vis
 13. Zippa .pml-filen och skicka den till Microsoft Support.
 
 
-## <a name="capture-performance-logs-using-windows-performance-recorder"></a>Spara prestandaloggar med Windows Performance Recorder
+## <a name="capture-performance-logs-using-windows-performance-recorder"></a>Spara prestandaloggar med hjälp Windows Prestandainspelaren
 
-Du kan använda Windows Performance Recorder (WPR) för att inkludera ytterligare information i din inskicking till Microsofts support. WPR är ett kraftfullt inspelningsverktyg som skapar händelsespårning för Windows-inspelningar. 
+Du kan använda Windows Performance Recorder (WPR) för att inkludera ytterligare information i din inskickning till Microsofts support. WPR är ett kraftfullt inspelningsverktyg som skapar händelsespårning för Windows inspelning. 
 
-WPR är en del av Windows Assessment and Deployment Kit (Windows ADK) och kan laddas ned från Ladda ned och [installera Windows ADK.](/windows-hardware/get-started/adk-install) Du kan också ladda ned den som en del av Windows 10 Software Development Kit i [Windows 10 SDK.](https://developer.microsoft.com/windows/downloads/windows-10-sdk/)
+WPR är en del av Windows Assessment and Deployment Kit (Windows ADK) och kan laddas ned från Ladda ned och installera [Windows ADK.](/windows-hardware/get-started/adk-install) Du kan också ladda ned det som en del av Windows 10 Software Development Kit [på Windows 10 SDK.](https://developer.microsoft.com/windows/downloads/windows-10-sdk/)
 
 Du kan använda WPR-användargränssnittet genom att följa stegen i Spara [prestandaloggar med hjälp av WPR-användargränssnittet.](#capture-performance-logs-using-the-wpr-ui) 
 
@@ -168,7 +168,7 @@ Du kan också använda kommandoradsverktyget *wpr.exe* som finns i Windows 8 och
 
 1. Ladda ned och installera WPR.
 
-2. Högerklicka på Windows Performance Recorder under *Windows Kits.*  
+2. Under *Windows Kits* högerklickar du på Windows **Performance Recorder**. 
 
     ![Start-menyn](images/wpr-01.png)
 
@@ -178,20 +178,20 @@ Du kan också använda kommandoradsverktyget *wpr.exe* som finns i Windows 8 och
 
     ![UAC](images/wpt-yes.png)
 
-4. Ladda sedan ned [Microsoft Defender för slutpunktsanalysprofilen](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) och spara `WD.wprp` den i en mapp som `C:\temp` . 
+4. Ladda sedan ned [Microsoft Defender för slutpunktsanalysprofilen](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) och spara `MDAV.wprp` den i en mapp som `C:\temp` . 
      
 5. I dialogrutan WPR väljer du **Fler alternativ**.
 
     ![Välj fler alternativ](images/wpr-03.png)
 
-6. Välj **Lägg till profiler...** och bläddra till sökvägen till `WD.wprp` filen.
+6. Välj **Lägg till profiler...** och bläddra till sökvägen till `MDAV.wprp` filen.
 
 7. Därefter bör du se en ny profiluppsättning under Anpassade mått med namnet *Microsoft Defender för slutpunktsanalys* under det. 
 
     ![in-file](images/wpr-infile.png)
 
     >[!WARNING]
-    >Om Windows Server har 64 GB RAM-minne eller mer kan du använda det anpassade måttet `Microsoft Defender for Endpoint analysis for large servers` i stället för `Microsoft Defender for Endpoint analysis` . I annat fall kan det ta upp ett stort antal icke-sidbaserade poolminnen eller buffertar som kan leda till systeminstabilitet. Du kan välja vilka profiler du vill lägga till genom att expandera **Resursanalys.** Den här anpassade profilen ger den kontext som krävs för djupgående prestandaanalys.
+    >Om din Windows Server har 64 GB RAM-minne eller mer kan du använda det anpassade måttet `Microsoft Defender for Endpoint analysis for large servers` i stället för `Microsoft Defender for Endpoint analysis` . I annat fall kan det ta upp ett stort antal icke-sidbaserade poolminnen eller buffertar som kan leda till systeminstabilitet. Du kan välja vilka profiler du vill lägga till genom att expandera **Resursanalys.** Den här anpassade profilen ger den kontext som krävs för djupgående prestandaanalys.
  
 8. Så här använder du den anpassade måttet Microsoft Defender för slutpunktsanalysprofilen för utförlig analys i WPR-användargränssnittet:
 
@@ -245,9 +245,9 @@ Du kan också använda kommandoradsverktyget *wpr.exe* som finns i Windows 8 och
 
 ### <a name="capture-performance-logs-using-the-wpr-cli"></a>Registrera prestandaloggar med WPR CLI
 
-Kommandoradsverktyget är *wpr.exe* en del av operativsystemet med början i Windows 8. Om du vill samla in en WPR-spårning med kommandoradsverktyget wpr.exe:
+Kommandoradsverktyget är *wpr.exe* en del av operativsystemet som börjar med Windows 8. Om du vill samla in en WPR-spårning med kommandoradsverktyget wpr.exe:
 
-1. Ladda **[ned Microsoft Defender för slutpunktsanalysprofilen](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** för prestandaspårningar till en fil som `WD.wprp` namnges i en lokal katalog, till exempel `C:\traces` .
+1. Ladda **[ned Microsoft Defender för slutpunktsanalysprofilen](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** för prestandaspårningar till en fil som `MDAV.wprp` namnges i en lokal katalog, till exempel `C:\traces` .
 
 3. Högerklicka på **Start-menyikonen** och välj **Windows PowerShell (administratör)** eller **Kommandotolken (administratör)** för att öppna kommandotolken för administratör.
 
@@ -256,11 +256,11 @@ Kommandoradsverktyget är *wpr.exe* en del av operativsystemet med början i Win
 5. Vid upphöjd uppmaning kör du följande kommando för att starta en Microsoft Defender för slutpunktsprestandaspårning:
 
     ```console
-    wpr.exe -start C:\traces\WD.wprp!WD.Verbose -filemode
+    wpr.exe -start C:\traces\MDAV.wprp!WD.Verbose -filemode
     ```
     
     >[!WARNING]
-    >Om Windows Server har 64 GB eller RAM-minne eller mer kan du använda profiler och i stället för `WDForLargeServers.Light` `WDForLargeServers.Verbose` profiler `WD.Light` `WD.Verbose` respektive. I annat fall kan det ta upp ett stort antal icke-sidbaserade poolminnen eller buffertar som kan leda till systeminstabilitet.
+    >Om ditt Windows Server har 64 GB eller RAM-minne eller mer använder du profiler och istället för `WDForLargeServers.Light` `WDForLargeServers.Verbose` profiler `WD.Light` `WD.Verbose` respektive. I annat fall kan det ta upp ett stort antal icke-sidbaserade poolminnen eller buffertar som kan leda till systeminstabilitet.
 
 6. Återskapa problemet.
 
@@ -279,5 +279,5 @@ Kommandoradsverktyget är *wpr.exe* en del av operativsystemet med början i Win
 
 ## <a name="see-also"></a>Se även
 
-- [Samla in diagnostikdata för Microsoft Defender Antivirus](collect-diagnostic-data.md)
-- [Konfigurera och validera undantag för genomsökningar för Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
+- [Samla Microsoft Defender Antivirus av diagnostikdata](collect-diagnostic-data.md)
+- [Konfigurera och validera undantag för Microsoft Defender Antivirus genomsökningar](configure-exclusions-microsoft-defender-antivirus.md)

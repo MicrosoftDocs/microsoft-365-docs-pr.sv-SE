@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: 2c29cdb6823e695cb9c96a4f51ef7b1c41642ac9
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: ba8f27c90f9c84729a10f461e85b2e1441b49549
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333632"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625407"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Hantera ämnen i ämnescentret i Microsoft Viva-ämnen
 
@@ -40,11 +40,21 @@ Knowledge managers help to guide discovered topics through the various topic lif
 
 - **Förslag:** Ett ämne har identifierats med AI och har tillräckligt med stödresurser, anslutningar och egenskaper. (De är markerade som ett **föreslaget ämne** i användargränssnittet.)
 
-- **Bekräftad**: Ett ämne som har föreslagits av AI valideras. Validering av ämne måste bekräftas av en knowledge manager. För att man ska kunna bekräfta ett ämne måste två positiva röster tas emot från användare som har röstat med hjälp av feedbackmekanismen på ämneskortet. Om en användare till exempel har röstat på positivt och en användare har röstat nej till ett visst ämne, skulle du fortfarande behöva två positiva röster för att ämnet ska bekräftas.
- 
-- **Publicerades**: Ett bekräftat ämne som har redigerats: manuell redigering har gjorts för att förbättra kvaliteten.
+- **Bekräftad:** Ett ämne som har identifierats av AI och har validerats. Validering av avsnitt inträffar när något av följande inträffar:
 
-- **Tas** bort : Ett ämne avvisas av en kunskapshanterare och visas inte längre för tittare. Ett ämne kan tas bort i valfri stat (förslag, bekräftade eller publicerade). För att ett ämne ska kunna tas bort måste två negativa röster tas emot från användare som har röstat med hjälp av feedbackmekanismen på ämneskortet. Om en användare till exempel har röstat nej och en användare har röstat positivt på ett visst ämne, skulle du ändå behöva två fler negativa röster för att ämnet ska tas bort. När ett publicerat ämne tas bort måste sidan med den curated informationen tas bort manuellt via ämnescentrets sidbibliotek.
+   - En knowledge manager bekräftar ett ämne. En knowledge manager [bekräftar ett ämne](manage-topics.md#confirmed-topics) på sidan **Hantera** ämnen.
+
+   - Flera användare bekräftar ett ämne. Det måste finnas ett netto av två positiva röster som tagits emot från användare som har röstat med hjälp av feedbackmekanismen för ämneskortet. Om en användare till exempel har röstat på positivt och en användare har röstat nej till ett visst ämne, skulle du fortfarande behöva två positiva röster för att ämnet ska bekräftas.
+ 
+- **Publicerades**: Ett ämne som har använts för utsmning. Manuella redigeringar har gjorts för att förbättra kvaliteten eller så har de skapats av en användare.
+
+- **Tas** bort : Ett ämne som har avvisats och inte längre kommer att visas för läsare. Ett ämne kan tas bort i valfri stat (förslag, bekräftade eller publicerade). Ämnesborttagning inträffar när något av följande inträffar:
+
+   - En knowledge manager tar bort ett ämne. En knowledge manager tar bort ett ämne på **sidan Hantera** ämnen.
+
+   - Flera användare rop negativa röster med hjälp av feedbackmekanismen på ämneskortet. För att ett ämne ska kunna tas bort måste nettot av två negativa röster tas emot från användare. Om en användare till exempel har röstat nej och en användare har röstat positivt på ett visst ämne, skulle du ändå behöva två fler negativa röster för att ämnet ska tas bort.
+
+  När ett publicerat ämne tas bort måste sidan med den curated informationen tas bort manuellt via ämnescentrets sidbibliotek.
 
 > [!Note] 
 > På **sidan Hantera ämnen** kan varje kunskapshanterare bara se ämnen där de har åtkomst till underliggande filer och sidor som är kopplade till avsnittet. Den här behörighets trimningen visas i listan med ämnen på flikarna **Föreslagna,** **Bekräftade,** **Publicerade** **och Borttagna.** I avsnittet antal visas dock det totala antalet i organisationen, oavsett behörighet.

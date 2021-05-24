@@ -17,12 +17,12 @@ ms.collection:
 description: Läs mer om inställningen säker som standard i Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 957ca3b563d4f1466dd537c3ae974a4fd61aa6f2
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 2d5cdc8f8faa9c2d5772fd1572134ea49cdd77da
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346322"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624055"
 ---
 # <a name="secure-by-default-in-office-365"></a>Säker som standard i Office 365
 
@@ -77,7 +77,7 @@ Till att uttrycka det på ett annat sätt: som en säkerhetstjänst arbetar vi �
 > [!NOTE]
 > I juli 2021 utökas säkerhet som standard till att Exchange till e-postflödesregler (kallas även transportregler). Om du använder e-postflödesregler för att tillåta nätfiskebedrägerier eller ofiltrerad leverans till postlådor för [](configure-advanced-delivery.md) säkerhetsåtgärd måste du så småningom eliminera dessa regler och byta till att använda den avancerade leveransprincipen när funktionen är tillgänglig för _dig._
 
-Den enda åsidosättningen som tillåter nätfiskemeddelande med hög säkerhet att kringgå filtrering är e-postflödesregler. Information om hur du använder e-postflödesregler för att kringgå filtrering finns i [Använda e-postflödesregler för att ange SCL i meddelanden.](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
+Den enda åsidosättningen som tillåter nätfiskemeddelande med hög säkerhet att kringgå filtrering är e-postflödesregler. Information om hur du använder e-postflödesregler för att kringgå filtrering finns i [Använda e-postflödesregler för att ange SCL i meddelanden.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)
 
 Du bör endast använda åsidosättningar i följande fall:
 

@@ -14,12 +14,12 @@ search.appverid:
 description: Administratörer kan läsa mer om tillgängliga och rekommenderade alternativ för att blockera inkommande meddelanden i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fa2a5e0c71f14838dc8446431f5ea02a535fb787
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: c844378a19ba7995cbd616f615e8a84994f9bf26
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331460"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624094"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>Skapa spärrade avsändarlistor i EOP
 
@@ -30,11 +30,11 @@ ms.locfileid: "52331460"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor finns det flera sätt att blockera e-post från oönskade avsändare. De här alternativen omfattar Spärrade avsändare i Outlook, listor över spärrade avsändare eller spärrade domäner i principer för skydd mot skräppost, Exchange-e-postflödesregler (kallas även transportregler) och IP-blockeringslistan (anslutningsfiltrering). Sammantaget kan du tänka på de här alternativen som _spärrade avsändarlistor._
+I Microsoft 365 organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor, har EOP flera sätt att blockera e-post från oönskade avsändare. De här alternativen omfattar Outlook spärrade avsändare, listor över spärrade avsändare eller blockeringsdomänlistor i principer för skräppostskydd, Exchange-e-postflödesregler (kallas även transportregler) och IP-blockeringslistan (anslutningsfiltrering). Sammantaget kan du tänka på de här alternativen som _spärrade avsändarlistor._
 
-Den bästa metoden för att blockera avsändare varierar beroende på hur omfattande den är. För en enskild användare kan rätt lösning vara Spärrade avsändare i Outlook. För många användare är ett av de andra alternativen mer lämpligt. Följande alternativ rangordnas både efter påverkansomfång och bredd. Listan går från smal till bred, men läs *mer för fullständiga* rekommendationer.
+Den bästa metoden för att blockera avsändare varierar beroende på hur omfattande den är. För en enskild användare kan rätt lösning vara att Outlook spärrade avsändare. För många användare är ett av de andra alternativen mer lämpligt. Följande alternativ rangordnas både efter påverkansomfång och bredd. Listan går från smal till bred, men läs *mer för fullständiga* rekommendationer.
 
-1. Spärrade avsändare i Outlook (listan Spärrade avsändare som lagras i varje postlåda)
+1. Outlook Spärrade avsändare (listan Spärrade avsändare som lagras i varje postlåda)
 
 2. Listor över spärrade avsändare eller blockerade domäner (principer mot skräppost)
 
@@ -57,11 +57,11 @@ Ett vanligt SMTP-e-postmeddelande består av ett *meddelandekuvert* och meddelan
 
 Ofta är `5321.MailFrom` `5322.From` adresserna och desamma (kommunikation mellan två personer). Men när e-post skickas åt någon annan kan adresserna vara annorlunda.
 
-Listor över spärrade avsändare och listor över blockerade domäner i principer mot skräppost i EOP kontrollerar både `5321.MailFrom` `5322.From` adresserna och. Spärrade avsändare i Outlook använder bara `5322.From` adressen.
+Listor över spärrade avsändare och listor över blockerade domäner i principer mot skräppost i EOP kontrollerar både `5321.MailFrom` `5322.From` adresserna och. Outlook Spärrade avsändare använder endast `5322.From` adressen.
 
-## <a name="use-outlook-blocked-senders"></a>Använda spärrade avsändare i Outlook
+## <a name="use-outlook-blocked-senders"></a>Använda Outlook spärrade avsändare
 
-När bara ett litet antal användare har fått oönskad e-post kan användare eller administratörer lägga till avsändaradresserna i listan Spärrade avsändare i postlådan. Instruktioner finns i Konfigurera [inställningar för skräppost i Exchange Online-postlådor.](configure-junk-email-settings-on-exo-mailboxes.md)
+När bara ett litet antal användare har fått oönskad e-post kan användare eller administratörer lägga till avsändaradresserna i listan Spärrade avsändare i postlådan. Instruktioner finns i [Konfigurera inställningar för skräppost i Exchange Online postlådor.](configure-junk-email-settings-on-exo-mailboxes.md)
 
 När meddelanden blockeras på grund av en användares lista med spärrade avsändare innehåller rubrikfältet **X-Forefront-Antispam-Report** `SFV:BLK` värdet.
 
@@ -78,7 +78,7 @@ Maxgränsen för dessa listor är cirka 1 000 poster.
 
 Om du behöver blockera meddelanden som skickas till specifika användare eller i hela organisationen kan du använda e-postflödesregler. E-postflödesregler är mer flexibla än blockeringslistor för avsändarlistor och spärrade avsändardomänlistor eftersom de även kan söka efter nyckelord eller andra egenskaper i oönskade meddelanden.
 
-Oavsett de villkor eller undantag som du använder för att identifiera meddelanden kan du konfigurera åtgärden för att ange SCL (Spam Confidence Level) för meddelandet till 9, vilket markerar meddelandet som skräppost med hög **konfidens.** Mer information finns i Använda [e-postflödesregler för att ange SCL i meddelanden.](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
+Oavsett de villkor eller undantag som du använder för att identifiera meddelanden kan du konfigurera åtgärden för att ange SCL (Spam Confidence Level) för meddelandet till 9, vilket markerar meddelandet som skräppost med hög **konfidens.** Mer information finns i Använda [e-postflödesregler för att ange SCL i meddelanden.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)
 
 > [!IMPORTANT]
 > Det är enkelt att skapa  regler som är alltför aggressiva, så det är viktigt att du bara identifierar de meddelanden som du vill blockera med mycket specifika villkor. Se även till att aktivera granskning av regeln och testa resultatet av regeln så att allt fungerar som förväntat.

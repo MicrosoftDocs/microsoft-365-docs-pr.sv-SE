@@ -25,16 +25,16 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Lär dig hur du använder Windows AutoPilot för att konfigurera nya Windows 10-enheter för företaget så att de är redo att användas av de anställda.
-ms.openlocfilehash: cd8777e6ae2e395506d2bf308c99309de1e24805
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: cc5495f42214b222a70b281a713be782b1bf5c4f
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578536"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623682"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Använda stegvisa anvisningar för att lägga till AutoPilot-enheter och -profiler
 
-Du kan använda Windows AutoPilot för att konfigurera nya **Windows** 10-enheter för företaget så att de är redo att användas när du ger dem till dina anställda.
+Du kan använda Windows AutoPilot  för att konfigurera nya Windows 10-enheter för företaget så att de är redo att användas när du ger dem till dina anställda.
   
 ## <a name="device-requirements"></a>Enhetskrav
 
@@ -42,7 +42,7 @@ Enheter måste uppfylla följande krav:
   
 - Windows 10, version 1703 eller senare
     
-- Nya enheter som inte redan är via Windows
+- Nya enheter som inte har Windows utan att ha erfarenhet
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>Använda installationsguiden för att skapa enheter och profiler
 
@@ -60,7 +60,7 @@ Om du inte har skapat enhetsgrupper eller profiler ännu är det bästa sättet 
     
     ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-3. På sidan **Ladda upp .CSV-fil med** lista över enheter bläddrar du till en plats där du har förberett . CSV-fil och **sedan Öppna** \> **nästa**. Filen måste ha tre rubriker:
+3. På sidan **Upload .csv med lista** över enheter bläddrar du till en plats där du har den förberedda .CSV och sedan **Öppna** \> **nästa.** Filen måste ha tre rubriker:
     
     - Kolumn A: Enhetsserienummer
     
@@ -73,7 +73,7 @@ Om du inte har skapat enhetsgrupper eller profiler ännu är det bästa sättet 
     Mer information finns i [CSV-filen med enhetslistan](../admin/misc/device-list.md). Du kan också ladda ned en exempelfil på sidan för **uppladdning av CSV-fil med lista över enheter**. 
     
 > [!NOTE]
-> Det här skriptet använder WMI för att hämta egenskaper som behövs för att en kund ska registrera en enhet med Windows Autopilot. Observera att det är normalt att den resulterande CSV-filen inte samlar in ett Windows Product ID-värde (PKID), eftersom detta inte krävs för att registrera en enhet och PKID som NULL i CSV-utdata är helt ok. Endast serienumret och maskinvaruhashen fylls i.
+> Det här skriptet använder WMI för att hämta egenskaper som behövs för att en kund ska registrera en enhet Windows Autopilot. Observera att det är normalt att den resulterande CSV-filen inte samlar in ett PKID-värde (Windows Product ID) eftersom detta inte krävs för att registrera en enhet och PKID är NULL i CSV-utdata är helt ok. Endast serienumret och maskinvaruhashen fylls i.
     
 4. På sidan **Tilldela en profil** kan du välja en befintlig profil eller skapa en ny. Om du inte redan har en uppmanas du att skapa en. 
     
@@ -81,11 +81,11 @@ Om du inte har skapat enhetsgrupper eller profiler ännu är det bästa sättet 
     
     Standardfunktionerna är obligatoriska och ställs in automatiskt. Standardfunktionerna är följande:
     
-    - Hoppa över Cortana, OneDrive och OEM-registrering.
+    - Hoppa över Cortana OneDrive och OEM-registrering.
     
     - Skapa inloggning med företagets varumärke.
     
-    - Anslut dina enheter till Azure Active Directory-konton och registrera dem automatiskt så att de hanteras av Microsoft 365 Business Premium.
+    - Anslut dina enheter för Azure Active Directory-konton och registrera dem automatiskt för att hanteras av Microsoft 365 Business Premium.
     
     Mer information finns i Om [AutoPilot-profilinställningar.](autopilot-profile-settings.md) 
     
@@ -94,3 +94,8 @@ Om du inte har skapat enhetsgrupper eller profiler ännu är det bästa sättet 
     Välj **Nästa**.
     
 6. **Du är klar anger** att profilen du skapade (eller valde) kommer att tillämpas på enhetsgruppen du skapade genom att ladda upp listan med enheter. Inställningarna börjar gälla nästa gång enhetsanvändarna loggar in. Välj **Stäng**.
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Om AutoPilot-profilinställningar](autopilot-profile-settings.md) (artikel)\
+[Alternativ för att skydda dina enheter och appdata](../admin/devices/choose-device-security.md) (artikel)

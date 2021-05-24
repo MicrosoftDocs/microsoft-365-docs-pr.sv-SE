@@ -21,21 +21,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
-description: Anpassa Inloggningssidan för Microsoft 365 med hjälp av Azure Active Directory. Du kan lägga till en bild, en logotyp och text på inloggningssidan.
-ms.openlocfilehash: 9947d57e4bf35ef0a3409db58f2c663959c2dd49
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Anpassa Microsoft 365 genom att använda Azure Active Directory. Du kan lägga till en bild, en logotyp och text på inloggningssidan.
+ms.openlocfilehash: dba75d5178f3c4a879ae2cdc9694697df45f6b8b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579128"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624447"
 ---
 # <a name="add-your-company-branding-to-the-sign-in-page"></a>Lägga till företagets varumärke på inloggningssidan
 
- Nu kan du använda den Azure Active Directory-prenumeration (AD) som ingår i din Microsoft 365-prenumeration för att anpassa inloggningssidan som användarna ser. 
+ Nu kan du använda den Azure Active Directory -prenumeration (AD) som ingår i din Microsoft 365-prenumeration för att anpassa inloggningssidan som dina användare ser. 
   
 ## <a name="add-company-branding-to-your-sign-in-page-and-access-panel-pages"></a>Lägga till företagsanpassning på din inloggningssida och åtkomstpanelsidorna
 
-Om du har en betald prenumeration på Microsoft 365 för företag, Microsoft Dynamics CRM Online, Enterprise Mobility Suite eller andra Microsoft-tjänster har du en kostnadsfri prenumeration på Azure Active Directory. Du kan använda Azure Active Directory för att skapa och hantera användar- och gruppkonton och lägga till företagets varumärke på dina sidor. Om du vill aktivera prenumerationen och få åtkomst till Microsoft Azure Management Portal måste du slutföra en registreringsprocess som du bara behöver utföra. Därefter kan du komma åt Azure Active Directory från din Microsoft-tjänst som använder den. Anvisningar om hur du registrerar din Microsoft 365-prenumeration finns i Registrera din kostnadsfria [Azure Active Directory-prenumeration](../../compliance/use-your-free-azure-ad-subscription-in-office-365.md)och i Hantera katalogen för [Din Microsoft 365-prenumeration](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) i Azure finns allmänna instruktioner för hantering. 
+Om du har en betald prenumeration på Microsoft 365 för företag, Microsoft Dynamics CRM Online, Enterprise Mobility Suite eller andra Microsoft-tjänster har du en kostnadsfri prenumeration på Azure Active Directory. Du kan använda Azure Active Directory för att skapa och hantera användar- och gruppkonton samt lägga till företagets varumärke på dina sidor. Du måste slutföra en registreringsprocess Microsoft Azure du vill aktivera den här prenumerationen och komma åt Microsoft Azure Management Portal. Därefter kan du komma åt Azure Active Directory Microsoft-tjänst som använder den. Anvisningar om hur du registrerar din Microsoft 365-prenumeration finns i Registrera din kostnadsfria [Azure Active Directory-prenumeration](../../compliance/use-your-free-azure-ad-subscription-in-office-365.md)och i Hantera katalogen för [din Microsoft 365-prenumeration](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) i Azure finns allmänna hanteringsanvisningar. 
   
 På följande bild ser du vilka delar av inloggningssidan som kan ändras i Azure.
   
@@ -50,3 +50,9 @@ På följande bild ser du vilka delar av inloggningssidan som kan ändras i Azur
 Du kan inte bara anpassa inloggningssidan utan även åtkomstpanelsidan i Azure.
   
 Om du är redo att lägga till anpassningar kan du utforska anpassningsalternativen i Azure-innehållsuppsättningen: [Lägga till företagsanpassning på din inloggningssida och åtkomstpanelsidorna](/azure/active-directory/fundamentals/customize-branding).
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Anpassa Microsoft 365 för din organisation](customize-your-organization-theme.md) (artikel)\
+[Skillnaden mellan installationsguiden och installationssidan](o365-setup-wizard-and-setup-page.md) (artikeln)\
+[Konfigurera mobila enheter för Microsoft 365 för företagsanvändare](../../business/set-up-mobile-devices.md) (video)

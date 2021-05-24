@@ -21,12 +21,12 @@ ms.custom:
 description: Administratörer kan läsa mer om inställningarna för skydd mot skräppost och filter som hjälper till att förhindra skräppost i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e6a4113925956c67e80a5239b8f9823acaf7f75b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 52e891a86e75309dadd445736738a3f25584823e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538321"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624867"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Skydd mot skräppost i EOP
 
@@ -60,7 +60,7 @@ Inställningarna för skydd mot skräppost i EOP görs av följande tekniker:
 - **Skräppostfiltrering (innehållsfiltrering)**: EOP använder skräppostfiltreringens bedömning  av **skräppost,** hög konfidens för **skräppost,** massutskick,  nätfiske och nätfiske med hög konfidens för att klassificera meddelanden.  Du kan konfigurera åtgärderna som ska vidtas utifrån de här bedömningarna, och du kan konfigurera aviseringsalternativen för slutanvändaren för meddelanden som har satts i karantän i stället för att levereras. Mer information finns i [Konfigurera principer för skydd mot skräppost i Microsoft 365](configure-your-spam-filter-policies.md).
 
   > [!NOTE]
-  > Som standard är skräppostfiltrering konfigurerat för att skicka meddelanden som har markerats som skräppost till mottagarens skräppostmapp. Men i hybridmiljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera två e-postflödesregler (kallas även transportregler) i den lokala Exchange-organisationen för att identifiera EOP-skräppostrubrikerna som läggs till i meddelanden. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+  > Som standard är skräppostfiltrering konfigurerat för att skicka meddelanden som har markerats som skräppost till mottagarens skräppostmapp. Men i hybridmiljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera två e-postflödesregler (kallas även transportregler) i den lokala Exchange-organisationen för att identifiera EOP-skräppostrubrikerna som läggs till i meddelanden. Mer information finns i [Konfigurera EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer.](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)
 
 - **Utgående skräppostfiltrering:** EOP kontrollerar också att användarna inte skickar skräppost, antingen i utgående meddelandeinnehåll eller genom att överskrida begränsningar för utgående meddelanden. Mer information finns i Konfigurera [utgående skräppostfiltrering i Microsoft 365](configure-the-outbound-spam-policy.md).
 
@@ -100,7 +100,7 @@ Här är några metodtips som gäller för något av de olika situationerna:
 
 - **Avbryta prenumerationen på massutskick** Om meddelandet var något som användaren registrerat sig för (nyhetsbrev, produktmeddelanden osv.) och innehåller en länk för att avsluta prenumerationen från en känd källa kan du be dem att avbryta prenumerationen.
 
-- Fristående EOP: skapa e-postflödesregler i en lokal Exchange för skräppostfiltrering med **EOP:** I fristående EOP-miljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera e-postflödesregler (kallas även transportregler) i lokala Exchange för att överföra skräppostfiltreringen av EOP så att skräppostregeln kan flytta meddelandet till mappen Skräppost. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+- Fristående EOP: skapa e-postflödesregler i lokal Exchange för skräppostfiltrering med **EOP:** I EOP-miljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera e-postflödesregler (kallas även transportregler) i lokala Exchange för att omvandla skräppostfiltreringen i EOP så att skräppostregeln kan flytta meddelandet till mappen Skräppost. Mer information finns i [Konfigurera EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer.](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)
 
 ### <a name="prevent-good-email-from-being-identified-as-spam"></a>Förhindra att bra e-post identifieras som skräppost
 
@@ -118,7 +118,7 @@ Här är några åtgärder som du kan vidta för att förhindra falska positiva 
 
 - **Kontrollera att användarna ligger inom gränserna för att skicka och ta** emot enligt beskrivningen i Ta emot och skicka gränser Exchange Online tjänstbeskrivningen. [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
 
-- **Fristående EOP:** använd katalogsynkronisering: Om du använder fristående EOP för att skydda din lokala Exchange-organisation bör du synkronisera användarinställningar med tjänsten med hjälp av katalogsynkronisering. Det gör att EOP tar Valv användarnas användares e-postavsändare. Mer information finns i Använda [katalogsynkronisering för att hantera e-postanvändare.](manage-mail-users-in-eop.md#use-directory-synchronization-to-manage-mail-users)
+- **Fristående EOP:** använd katalogsynkronisering: Om du använder fristående EOP för att skydda din lokala Exchange-organisation bör du synkronisera användarinställningar med tjänsten med hjälp av katalogsynkronisering. Det gör att EOP tar Valv användarnas användares e-postavsändare. Mer information finns i Använda [katalogsynkronisering för att hantera e-postanvändare.](/exchange/standalone-eop/manage-mail-users-in-eop#synchronize-directories-with-azure-active-directory-connect-aad-connect)
 
 ## <a name="anti-spam-legislation"></a>Anti-spam-lagstiftning
 

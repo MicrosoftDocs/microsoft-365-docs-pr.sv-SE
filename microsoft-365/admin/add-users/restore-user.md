@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: Lär dig hur du återställer borttagna användarkonton och alla associerade data.
-ms.openlocfilehash: b7d98c1f49f8252ea9fdda2d863b5b77ac5bea9d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+description: Inom 30 dagar efter att du tagit bort ett användarkonto kan du återställa kontot och alla data och användaren kan logga in med samma konto.
+ms.openlocfilehash: 83852136ee22ab3f63d8ada6a5a7290883c392e5
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291073"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623827"
 ---
 # <a name="restore-a-user"></a>Återställa en användare
    
@@ -91,6 +91,8 @@ Du måste ha [administratörsbehörighet](about-admin-roles.md) i Microsoft 365 
     
 4. Granska resultaten och välj sedan **Stäng**.
 
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-content"></a>Relaterat innehåll
 
-[Ta bort en användare](delete-a-user.md)
+[Ta bort en användare](delete-a-user.md) (artikel)\
+[Tilldela administratörsroller](assign-admin-roles.md) (video)\
+[Tilldela användare licenser](../manage/assign-licenses-to-users.md) (artikel)

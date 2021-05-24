@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Lär dig att skapa, redigera eller ta bort en säkerhetsgrupp.
-ms.openlocfilehash: 8f76b5fa803ea43e53e89cf6479eb7572a2857c2
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7887a6371287ebef3a91cc1a37f2ed696df1948d
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537601"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624007"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Skapa, redigera eller ta bort en säkerhetsgrupp i Microsoft 365 administrationscenter
 
@@ -99,3 +99,9 @@ Nej. Det här är ett annat sätt som du kan hantera säkerhet för din organisa
 ## <a name="can-i-send-email-to-a-security-group"></a>Kan jag skicka e-post till en säkerhetsgrupp?
 
 Ja. Men om du vill använda grupper för e-post och samarbete rekommenderar vi att du [skapar en Microsoft 365 grupp](../create-groups/create-groups.md) i stället. 
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Skapa en grupp i Microsoft 365 administrationscenter](../create-groups/create-groups.md) (artikel)\
+[Förklara Microsoft 365 grupper för användarna](../create-groups/explain-groups-knowledge-worker.md) (artikel)\
+[Hantera en grupp i Microsoft 365 administrationscenter](../create-groups/manage-groups.md) (artikel)

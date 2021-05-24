@@ -18,14 +18,14 @@ ms.custom:
 - fwlink 2133922 to Delete subscription heading
 - commerce_subscription
 search.appverid: MET150
-description: Lär dig hur du stänger ditt konto hos Microsoft.
+description: När du stänger ditt konto med Microsoft tas all information om ditt konto bort, inklusive licenser, användare och användardata.
 ms.date: 04/02/2021
-ms.openlocfilehash: ed73c191063a328490945c54dc2f5101c88f17e8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b212911707b5d6a967ab833a5a06bc76f5ceeb3b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537301"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624331"
 ---
 # <a name="close-your-account"></a>Avsluta ditt konto
 
@@ -52,7 +52,7 @@ Om din organisation använder Active Directory som synkroniserar med Microsoft A
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Steg 2: Avbryt alla aktiva prenumerationer
 
 1. I administrationscentret går du till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
-2. På fliken **Produkter** hittar du en aktiv prenumeration. Välj de tre punkterna (fler åtgärder) och välj sedan **Avbryt prenumeration.**
+2. På fliken **Produkter** hittar du en aktiv prenumeration. Välj de tre punkterna (fler åtgärder) och välj sedan **Avbryt prenumeration**.
 3. I fönstret **Avbryt prenumeration** väljer du en anledning till varför du avbryter prenumerationen. Alternativt kan du ge valfri feedback.
 4. Välj **Spara**.
 5. Upprepa steg 1 till 4 för att avbryta alla aktiva prenumerationer.
@@ -88,3 +88,9 @@ Du kan också [använda PowerShell för att inaktivera multifaktorautentisering 
 5. Om din organisation misslyckas med en eller flera kontroller visas en länk till mer information om hur du gör för att överföra kontrollerna. När du har slutfört alla kontroller väljer **du Ta** bort för att slutföra processen.
 
 När du är klar med det här sista steget stängs ditt konto hos Microsoft och tas bort.
+
+## <a name="related-content"></a>Relaterat innehåll 
+
+[Förstå din faktura för Microsoft 365 för företag](./billing-and-payments/understand-your-invoice2.md) (artikel)\
+[Avsluta din prenumeration](./subscriptions/cancel-your-subscription.md) (artikel)
+

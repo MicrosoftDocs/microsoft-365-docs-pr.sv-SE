@@ -20,12 +20,12 @@ description: Administratörer kan läsa mer om skydd mot hot i Microsoft 365 kon
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3381ce66433f1f4e32f0251c45601e3cb84865b6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 438200f3f8a6a846d49bc397d6a4b0a0a33cad40
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538729"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624627"
 ---
 # <a name="protect-against-threats"></a>Skydda mot hot
 
@@ -277,7 +277,7 @@ Förutom att konfigurera skydd mot skadlig programvara, skadliga URL:er och file
 
 - Åtgärderna för skräppost är inställda **på Flytta meddelandet till mappen Skräppost** i principerna för [skräppostskydd.](anti-spam-protection.md)
 
-- Användarna har kvar sina [standardinställningar för skräppost](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md), och har inte inaktiverat skräppostskyddet.
+- Användarna har kvar sina [standardinställningar för skräppost](configure-junk-email-settings-on-exo-mailboxes.md), och har inte inaktiverat skräppostskyddet.
 
 Mer information finns i [Automatisk rensning på nolltimmar – skydd mot skräppost och skadlig programvara.](zero-hour-auto-purge.md)
 

@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig att skapa e-postflödesregler (transportregler) för att kryptera och dekryptera meddelanden Meddelandekryptering i Office 365.
-ms.openlocfilehash: 63b1b0ba3b13f5beecd049a8ef81d6355855626f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4dfa019de99a65df7696c1ca58d777bf8a506c37
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "52162395"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623875"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Definiera e-postflödesregler för att kryptera e-postmeddelanden
 
@@ -131,5 +131,3 @@ Om du ännu inte har flyttat organisationen till de nya OME-funktionerna rekomme
 [Lägga till profilering i krypterade meddelanden](add-your-organization-brand-to-encrypted-messages.md)
 
 [E-postflödesregler (transportregler) i Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
-
-[E-postflödesregler (transportregler) i Exchange Online Protection](../security/defender-365-security/mail-flow-rules-transport-rules-0.md)

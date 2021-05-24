@@ -18,14 +18,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: Lär dig hur du uppgraderar till ett annat abonnemang.
+description: Det enklaste sättet att uppgradera abonnemang är att använda fliken Uppgradera i administrationscentret. Men fliken Uppgradera stöds inte alltid.
 ms.date: 04/21/2021
-ms.openlocfilehash: 4882ad4296eb05faf0bb549ebf850562a7ebf780
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: da0b0a826087ea7e963dde85f9b4612acf0eaf99
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344623"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624319"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Uppgradera till ett annat abonnemang
 
@@ -95,7 +95,7 @@ Du kan [ändra abonnemang manuellt eller](change-plans-manually.md) ringa [suppo
 
 Du kan [ändra abonnemang manuellt eller](change-plans-manually.md) ringa [supporten.](../../business-video/get-help-support.md)
 
-### <a name="additional-reasons-you-cant-upgrade"></a>Fler anledningar till att det inte går att uppgradera
+### <a name="additional-reasons-you-cant-upgrade"></a>Fler anledningar till att du inte kan uppgradera
 
 #### <a name="you-have-two-or-more-plans-for-the-same-product"></a>Du har två eller fler abonnemang för samma produkt
 

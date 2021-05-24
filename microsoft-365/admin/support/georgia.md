@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5d73b54a60b22ac74a55c301b3bd9344ee83352f
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: ec66115bc5ad0c8031be7117d2d8282e5c7d5041
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298824"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623887"
 ---
 # <a name="contact-support-for-georgia"></a>Kontakta supporten för Georgia
 
@@ -26,11 +26,9 @@ ms.locfileid: "52298824"
 ## <a name="phone-number"></a>Telefonnummer
 032 297 0124
 
-Välj alternativ 2
+Tryck 2 för företag
 
-Välj alternativ 9
-
-Ange kod 7700
+Tryck 1 för Microsoft 365
 
 ## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:

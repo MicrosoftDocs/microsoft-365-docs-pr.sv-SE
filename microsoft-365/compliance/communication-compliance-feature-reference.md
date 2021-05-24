@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3df8fbf20fd00bd584af2fd329949939433a19eb
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 87f5e414a13d966ba2fbb30d84d7d4adae7a1d13
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583490"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624355"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referens för funktioner för kommunikationsefterlevnad
 
@@ -187,9 +187,9 @@ Inbyggda utbildare och globala klassificerare tillhandahåller inte en uttömman
 
 Mer information om utbildare i Microsoft 365 finns i [Komma igång med utbildare.](classifier-get-started-with.md)
 
-### <a name="optical-character-recognition-ocr-preview"></a>Optisk teckenläsning (OCR) (förhandsversion)
+### <a name="optical-character-recognition-ocr"></a>Optisk teckenläsning (OCR)
 
-Konfigurera inbyggda eller anpassade principer för kommunikationsefterlevnad för att söka igenom och identifiera tryckt eller handskriven text från bilder som kan vara olämpliga i din organisation. Integrerade Azure-kognitivtjänster och optisk skanning för att identifiera text i bilder hjälper analytiker och fokuserar att identifiera och agera på fall där olämpliga uppförande kan missas i kommunikationer som främst inte är text.
+Konfigurera inbyggda eller anpassade principer för kommunikationsefterlevnad för att söka igenom och identifiera tryckt eller handskriven text från bilder som kan vara olämpliga i din organisation. Integrerade [Azure-kognitivtjänster](/azure/cognitive-services/computer-vision/overview-ocr) och optisk skanning för att identifiera text i bilder hjälper analytiker och fokuserar att identifiera och agera på fall där olämpliga uppförande kan missas i kommunikationer som främst inte är text.
 
 Du kan aktivera optisk teckenläsning (OCR) i nya principer från mallar, anpassade principer eller uppdatera befintliga principer för att få utökat stöd för bearbetning av inbäddade bilder och bifogade filer. När den är aktiverad i en princip som skapats från en principmall stöds automatisk genomsökning för inbäddade eller bifogade bilder i e-Microsoft Teams och chattmeddelanden. För anpassade principer måste en eller flera villkorsstyrda inställningar som associeras med nyckelord, inbyggda klassificerare eller typer av känslig information konfigureras i principen för att det ska gå att välja OCR-skanning.
 
@@ -232,7 +232,7 @@ I följande tabell beskrivs mer information om varje villkor.
 Varje ord som du anger och avgränsar med kommatecken tillämpas separat (endast ett ord måste gälla för att principvillkoret ska gälla för e-postmeddelandet eller den bifogade filen). Vi kan till exempel använda **villkoret,** Meddelandet innehåller något av dessa ord , med nyckelorden "bank", "konfidentiell" och "insider-handel" avgränsade med ett komma (bank, konfidentiellt", "insider-handel"). Principen gäller för alla meddelanden som innehåller ordet "bankman", "konfidentiellt" eller frasen "insider-handel". Endast ett av dessa ord eller fraser måste finnas för att det här principvillkoret ska tillämpas. Orden i meddelandet eller den bifogade filen måste exakt matcha det du skriver.
 
 >[!IMPORTANT]
->När du importerar en egen ordlistefil måste varje ord eller fras avgränsas med en vagnretur och på en separat rad. <br> Till exempel: <br><br>
+>När du importerar en egen ordlistefil måste varje ord eller fras avgränsas med en vagnretur och på en separat rad. <br> Ett exempel: <br><br>
 >*bank* <br>
 >*konfidentiellt* <br>
 >*insider handel*
@@ -477,6 +477,17 @@ Instrumentpanelen **Rapporter** innehåller följande rapportwidgetar och detalj
     - Skapat ärende
 
     Använd alternativet *Exportera* om du vill skapa .csv fil som innehåller rapportinformationen.
+
+- **Typ av känslig information per plats** detaljerad rapport (förhandsgranskning): Granska och exportera information om identifiering av typer av känslig information och associerade källor i principer för kommunikationsefterlevnad. Innehåller den totala summan och den specifika uppdelningen av förekomster av känslig information i de källor som konfigurerats i organisationen. Några exempel är:
+
+    - **E-post:** Typer av känslig information som upptäckts Exchange e-postmeddelanden.
+    - **Teams**: Typer av känslig information som upptäckts i Microsoft Teams kanaler och chattmeddelanden.
+    - **Skype för företag**: Typer av känslig information som upptäckts Skype affärskommunikation.
+    - **Yammer**: Typer av känslig information som upptäckts Yammer inkorgar, inlägg, chattar och svar.
+    - **Tredjepartskällor: Känslig** informationstyper som upptäckts för aktiviteter som är associerade med kopplingar från tredje part som konfigurerats i organisationen. Om du vill visa detaljerad information om källor från tredje part för en viss typ av känslig information i rapporten håller du muspekaren över värdet för typen av känslig information i kolumnen för tredjepartskälla.
+    - **Övriga**: Typer av känslig information som används för intern systembearbetning. Om du markerar eller avmarkerar den här källan för rapporten påverkas inte några värden.
+
+    Använd alternativet *Exportera* om du vill skapa .csv fil som innehåller rapportinformationen. Värdena för respektive tredjepartskälla visas i separata kolumner i .csv filen.
 
 ## <a name="audit"></a>Granskning
 

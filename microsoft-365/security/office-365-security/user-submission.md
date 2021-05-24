@@ -17,12 +17,12 @@ ms.collection:
 description: Administratörer kan lära sig hur de konfigurerar en postlåda för att samla in skräppost och nätfiske som rapporterats av användare.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a23f27478d01092705a47d49884f200478348182
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 852e87ee76d9692b789ca217720ac3efb08f31a8
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583718"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624615"
 ---
 # <a name="user-submissions-policy"></a>Princip för användarinskick
 
@@ -39,22 +39,18 @@ I Microsoft 365 organisationer med Exchange Online postlådor kan du ange en pos
 
 - [Tillägget Rapport om nätfiske](enable-the-report-phish-add-in.md)
 
-- [Inbyggd rapportering i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (tidigare kallad Outlook Web App)
+- [Rapporteringsverktyg från tredje part](#third-party-reporting-tools)
 
-- [Inbyggd rapportering i Outlook för iOS och Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)
+Genom att leverera användarrapporterade meddelanden till en egen postlåda i stället för direkt till Microsoft kan dina administratörer selektivt och manuellt rapportera meddelanden till Microsoft med hjälp av inskickad [administratör.](admin-submission.md)
 
   > [!NOTE]
   > Om rapportering har [inaktiverats i Outlook](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)på webben, åsidosätts den inställningen och användare kan rapportera meddelanden i Outlook på webben igen om de har Outlook in på webben.
-
-Du kan också konfigurera verktyg för meddelanderapportering från tredje part så att meddelanden vidarebefordras till den postlåda du anger.
-
-Genom att leverera användarrapporterade meddelanden till en egen postlåda i stället för direkt till Microsoft kan dina administratörer selektivt och manuellt rapportera meddelanden till Microsoft med hjälp av inskickad [administratör.](admin-submission.md)
 
 ## <a name="custom-mailbox-prerequisites"></a>Anpassade postlådekrav
 
 Använd följande artiklar för att konfigurera förutsättningarna som krävs så att användarrapporterade meddelanden går till din anpassade postlåda:
 
-- Hoppa över skräppostfiltrering på den anpassade postlådan genom att skapa en regel för Exchange-e-postflöde för att ange konfidensnivån för skräppost. Se [Använda EAC för att skapa en](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) e-postflödesregel som anger SCL för ett meddelande om du vill ange att SCL ska **kringgå skräppostfiltrering.**
+- Hoppa över skräppostfiltrering på den anpassade postlådan genom att skapa en regel för Exchange-e-postflöde för att ange konfidensnivån för skräppost. Se [Använda EAC för att skapa en](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) e-postflödesregel som anger SCL för ett meddelande om du vill ange att SCL ska **kringgå skräppostfiltrering.**
 
 - Inaktivera genomsökning av bifogade filer för skadlig programvara i den anpassade postlådan. Använd [Konfigurera principer för Valv-bilagor](set-up-safe-attachments-policies.md) i Defender för Office 365 för att skapa en  princip för Valv-bilagor med inställningen Av för **okända Valv**(av) för bifogade filer.
 
@@ -141,9 +137,17 @@ När du har kontrollerat att din postlåda uppfyller alla tillämpliga krav anv�
 
        När du är klar klickar du på **Bekräfta.**
 
+## <a name="third-party-reporting-tools"></a>Rapporteringsverktyg från tredje part
+
+Du kan konfigurera rapporteringsverktyg från tredje part så att rapporterade meddelanden skickas till den anpassade postlådan. Det enda kravet är att det ursprungliga meddelandet bifogas som en bifogad fil i meddelandet som skickas till den anpassade postlådan (vidarebefordra inte bara det ursprungliga meddelandet till den anpassade postlådan).
+
+Formateringskraven för meddelanden beskrivs i nästa avsnitt.
+
 ## <a name="message-submission-format"></a>Format för meddelandeinskick
 
-Meddelanden som skickas till anpassade postlådor måste följa ett särskilt e-postformat för inskickade inskickade meddelanden. Ämne (Kuvertrubrik) för inskickat material ska vara i följande format:
+För att identifiera de ursprungliga bifogade meddelandena korrekt måste meddelanden som skickas till den anpassade postlådan ha särskild formatering. Om meddelandena inte använder det här formatet identifieras alltid de ursprungliga bifogade meddelandena som nätfiskeinskick.
+
+För att de ursprungliga bifogade meddelandena ska kunna identifieras korrekt måste meddelanden som skickas till den anpassade postlådan använda följande syntax för Ämne (Kuvertrubrik):
 
 `SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
@@ -153,7 +157,7 @@ där SafetyAPIAction är ett av följande heltalsvärden:
 - 2: Inte skräppost
 - 3: Nätfiske
 
-I följande exempel:
+I det här exemplet används följande värden:
 
 - Meddelandet rapporteras som nätfiske.
 - Id för nätverksmeddelande är 49871234-6dc6-43e8-abcd-08d797f20abe.

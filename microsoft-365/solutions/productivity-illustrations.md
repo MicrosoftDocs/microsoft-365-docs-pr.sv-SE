@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: b47099dd0d26dba6a399ecff823bcc758be7e16d
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: df2c01bd0cc935ae8a541b40a96f3e067926674a
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583646"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625023"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Produktivitetsillustrationer för Microsoft 365
 
@@ -45,7 +45,7 @@ Microsoft tillhandahåller verktyg för att migrera dina lokala nätverksfilresu
 
 | Objekt | Beskrivning |
 |:-----|:-----|
-|[![Modellaffisch: Migrera till Microsoft 365](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <br/> [Ladda ned som PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf)\| [Hämta som Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.vsdx) <br/> Uppdaterades mars 2021 |Innehåller: <ul><li>  Migrering av filresurs</li><li>SharePoint Servermigrering </li> </ul><br> Mer information finns i [Migrera ditt innehåll till Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online).|
+|[![Modellaffisch: Migrera till Microsoft 365](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <br/>[PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf)\|[Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx) <br/> Uppdaterades mars 2021 |Innehåller: <ul><li>  Migrering av filresurs</li><li>SharePoint Servermigrering </li> </ul><br> Mer information finns i [Migrera ditt innehåll till Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online).|
 
 ## <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365 funktioner för informationsskydd och efterlevnad
 

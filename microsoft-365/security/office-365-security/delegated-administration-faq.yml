@@ -16,32 +16,32 @@ metadata:
   description: Administratörer kan visa vanliga frågor och svar om uppgifter med delegerad administration i Microsoft 365 för Microsoft-partner och återförsäljare.
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 836e52139ef2e6191bda26d6fdb92da521dff6bd
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: b62c1d53d4b2a482aeb91cea147ed9feaa4027c4
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52334142"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52624103"
 title: Vanliga frågor och svar om delegerad administration
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
 
-  Den här artikeln innehåller vanliga frågor och svar om delegerade administrationsuppgifter i Microsoft 365 för Microsoft-partner och återförsäljare. Delegerad administration omfattar möjligheten att hantera Exchange Online Protection-inställningar (EOP) för andra klientorganisationar (företag).
+  Den här artikeln innehåller vanliga frågor och svar om uppgifter med delegerad administration i Microsoft 365 för Microsoft-partner och återförsäljare. Delegerad administration omfattar möjligheten att hantera Exchange Online Protection (EOP) för andra klientorganisationar (företag).
 sections:
 - name: Ignoreras
   questions:
   - question: >
       Jag är återförsäljare och jag behöver hantera mina kundklienter. Hur fungerar det?
     answer: >
-      Om du är en Microsoft-partner eller återförsäljare och du har registrerat dig som Microsoft-rådgivare kan du begära delegerad _administration_ i kundens Microsoft 365-organisation.
+      Om du är en Microsoft-partner eller återförsäljare och du har registrerat dig som Microsoft-rådgivare kan du begära delegerad _administration_ i kundens Microsoft 365 organisation.
 
 
       Med delegerad administration kan du hantera Microsoft 365 (inklusive EOP-inställningar) som om du var administratör inom den organisationen. Stegen för att konfigurera delegerad administration beskrivs i följande lista:
 
 
-      1. Registrera dig och bli [En Microsoft Office 365-rådgivare.](https://partner.microsoft.com/?cloudbenefits)
+      1. Registrera dig och bli [Microsoft Office 365 rådgivare.](https://partner.microsoft.com/?cloudbenefits)
 
 
       2. Registrera dig för delegerad administration. Innan du kan börja administrera en kunds klientorganisation måste de godkänna dig som delegerad administratör. För att få deras godkännande skickar du [först ett erbjudande om delegerad administration till dem.](https://support.microsoft.com/office/26530dc0-ebba-415b-86b1-b55bc06b073e) Du kan också erbjuda kunden delegerad administration vid ett senare tillfälle.
@@ -54,11 +54,11 @@ sections:
   - question: >
       Jag är kund, inte återförsäljare. Hur kan jag konfigurera delegerade administratörer för undergrupp?
     answer: >
-      Delegerad administration är endast tillgänglig för återförsäljare och partner. Det finns dock ett PowerShell-exempelskript som hjälper dig att tillämpa principer för dina undersänkanden (företag). Mer information finns i [Exempelskript för att använda EOP-inställningar för flera klientorganisationar.](sample-script-for-applying-eop-settings-to-multiple-tenants.md)
+      Delegerad administration är endast tillgänglig för återförsäljare och partner. Det finns dock ett PowerShell-exempelskript som hjälper dig att tillämpa principer för dina undersänkanden (företag). Mer information finns i [Exempelskript för att använda EOP-inställningar för flera klientorganisationar.](/exchange/standalone-eop/sample-script-standalone-eop-settings-to-multiple-tenants)
   - question: >
       Kan jag förhindra att min underadministratör ändrar min princip?
     answer: >
-      Nej. Microsoft 365 har för närvarande inte den här funktionen.
+      Nej. Microsoft 365 har inte den här funktionen.
   - question: >
       Kan jag få konsoliderad rapportering för alla undersänkanden?
-    answer: Konsoliderad rapportering över de företag du hanterar är inte tillgänglig i rapporter i administrationscentret för Microsoft 365. Du kan dock få rapporter med hjälp av [Microsoft Graph.](/graph/overview)
+    answer: Konsoliderad rapportering över de företag du hanterar är inte tillgänglig Microsoft 365 rapporter i administrationscentret. Du kan dock få rapporter med hjälp av [Microsoft Graph](/graph/overview).

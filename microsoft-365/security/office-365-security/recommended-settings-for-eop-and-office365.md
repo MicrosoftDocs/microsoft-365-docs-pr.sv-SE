@@ -19,12 +19,12 @@ ms.collection:
 description: Vad är metodtips för Exchange Online Protection (EOP) och Defender för Office 365 säkerhetsinställningar? Vilka är de aktuella rekommendationerna för standardskydd? Vad ska användas om du vill vara striktare? Och vad får du om du även använder Defender för Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a2f65db0934c585210827299d46737040df8efb
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 04668932747462d2636b466d87c2655d97569657
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537901"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624099"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Rekommenderade inställningar för EOP och Microsoft Defender för Office 365 säkerhet
 
@@ -155,7 +155,7 @@ Mer information om de här inställningarna finns [i Förfalskningsinställninga
 |Namn på säkerhetsfunktion|Standard|Standard|Strikt|Kommentar|
 |---|:---:|:---:|:---:|---|
 |**Aktivera skydd mot förfalskning** <p> _EnableSpoofIntelligence_|På <p> `$true`|På <p> `$true`|På <p> `$true`||
-|**Aktivera oauthenticerad avsändare** <p> _EnableUnauthenticatedSender_|På <p> `$true`|På <p> `$true`|På <p> `$true`|Lägger till ett frågetecken (?) på avsändarens foto i Outlook för oidentifierade falska avsändare. Mer information finns i [Inställningar för förfalskning i principer mot nätfiske.](set-up-anti-phishing-policies.md)|
+|**Aktivera oauthenticerad avsändare** <p> _EnableUnauthenticatedSender_|På <p> `$true`|På <p> `$true`|På <p> `$true`|Lägger till ett frågetecken (?) på avsändarens foto i Outlook för oidentifierade falska avsändare. Mer information finns i [Principer för skydd mot nätfiske](set-up-anti-phishing-policies.md).|
 |**Om e-post skickas av någon som inte har tillåtelse att kapa din domän** <p> _AuthenticationFailAction_|**Flytta meddelandet till mottagarnas skräppostmappar** <p> `MoveToJmf`|**Flytta meddelandet till mottagarnas skräppostmappar** <p> `MoveToJmf`|**Sätt meddelandet i karantän** <p> `Quarantine`|Den här inställningen gäller för förfalskningsavsändare som [](learn-about-spoof-intelligence.md) automatiskt har blockerats enligt förfalskningsinformation eller som manuellt blockerats i listan över [tillåtna/blockerade klientorganisationen.](tenant-allow-block-list.md)|
 |
 
@@ -213,7 +213,7 @@ Observera att det är samma inställningar som är tillgängliga i inställninga
 |Namn på säkerhetsfunktion|Standard|Standard|Strikt|Kommentar|
 |---|---|---|---|---|
 |**Aktivera skydd mot förfalskning** <p> _EnableSpoofIntelligence_|På <p> `$true`|På <p> `$true`|På <p> `$true`||
-|**Aktivera oauthenticerad avsändare** <p> _EnableUnauthenticatedSender_|På <p> `$true`|På <p> `$true`|På <p> `$true`|Lägger till ett frågetecken (?) på avsändarens foto i Outlook för oidentifierade falska avsändare. Mer information finns i [Inställningar för förfalskning i principer mot nätfiske.](set-up-anti-phishing-policies.md)|
+|**Aktivera oauthenticerad avsändare** <p> _EnableUnauthenticatedSender_|På <p> `$true`|På <p> `$true`|På <p> `$true`|Lägger till ett frågetecken (?) på avsändarens foto i Outlook för oidentifierade falska avsändare. Mer information finns i [Principer för skydd mot nätfiske](set-up-anti-phishing-policies.md).|
 |**Om e-post skickas av någon som inte har tillåtelse att kapa din domän** <p> _AuthenticationFailAction_|**Flytta meddelandet till mottagarnas skräppostmappar** <p> `MoveToJmf`|**Flytta meddelandet till mottagarnas skräppostmappar** <p> `MoveToJmf`|**Sätt meddelandet i karantän** <p> `Quarantine`|Den här inställningen gäller för förfalskningsavsändare som [](learn-about-spoof-intelligence.md) automatiskt har blockerats enligt förfalskningsinformation eller som manuellt blockerats i listan över [tillåtna/blockerade klientorganisationen.](tenant-allow-block-list.md)|
 |
 
@@ -322,6 +322,6 @@ I PowerShell använder du [New-SafeAttachmentPolicy-](/powershell/module/exchang
 
 - Administratörer och användare kan skicka falska positiva meddelanden (bra e-postmeddelande markerat som dåligt) och falskt negativa (felaktig e-post tillåts) till Microsoft för analys. Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
-- Använd de här länkarna för information om hur **du konfigurerar** [din EOP-tjänst](set-up-your-eop-service.md) **och konfigurera** Microsoft Defender [för Office 365](defender-for-office-365.md). Glöm inte de användbara anvisningarna i "[Skydda mot hot i Office 365](protect-against-threats.md)".
+- Använd de här länkarna för information om hur **du konfigurerar** [din EOP-tjänst](/exchange/standalone-eop/set-up-your-eop-service) **och konfigurera** Microsoft Defender [för Office 365](defender-for-office-365.md). Glöm inte de användbara anvisningarna i "[Skydda mot hot i Office 365](protect-against-threats.md)".
 
 - Här hittar du säkerhetsbaslinjer **för Windows:** Var hittar jag säkerhetsbaslinjerna? för alternativ för GPO/lokalt och Använd säkerhetsbaslinjer för att konfigurera Windows 10-enheter i [](/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) [Intune](/intune/protect/security-baselines) för Intune-baserad säkerhet. Slutligen finns det en jämförelse mellan Microsoft Defender för Endpoint och Microsoft Intune-säkerhetsbaslinjer i Jämför Microsoft Defender för Slutpunkt och [Intune-säkerhetsbaslinjer i Windows.](/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)

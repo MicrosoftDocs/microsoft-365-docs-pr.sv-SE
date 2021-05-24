@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Lär dig mer om metodtips för att hantera de många ämnen som finns i din organisation med Viva Topics.
-ms.openlocfilehash: d5cdae62cdec9193d354e7585364bd842a514a26
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 613c4ed85a62efd22ba104c810420a2d0af015c5
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593883"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624843"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>Hantera ämnen i skala i Microsoft Viva-ämnen
 
@@ -28,15 +28,16 @@ Först en påminnelse om de [fyra stegen för ämnen:](manage-topics.md#topic-st
 
 - **Förslag:** Ett ämne har identifierats med AI och har tillräckligt med stödresurser, anslutningar och egenskaper. (De är markerade som ett **föreslaget ämne** i användargränssnittet.)
 
-- **Bekräftad:** Ett ämne som har föreslagits av AI måste valideras. Validering av avsnitt inträffar när något av följande inträffar:
+- **Bekräftad:** Ett ämne som har identifierats av AI och har validerats. Validering av avsnitt inträffar när något av följande inträffar:
 
    - En knowledge manager bekräftar ett ämne. En knowledge manager [bekräftar ett ämne](manage-topics.md#confirmed-topics) på sidan **Hantera** ämnen.
 
    - Flera användare bekräftar ett ämne. Det måste finnas ett netto av två positiva röster som tagits emot från användare som har röstat med hjälp av feedbackmekanismen för ämneskortet. Om en användare till exempel har röstat på positivt och en användare har röstat nej till ett visst ämne, skulle du fortfarande behöva två positiva röster för att ämnet ska bekräftas.
  
-- **Publicerades**: Ett bekräftat ämne som har curerats. Manuella redigeringar har gjorts för att förbättra kvaliteten.
+- **Publicerades**: Ett ämne som har använts för utsmning. Manuella redigeringar har gjorts för att förbättra kvaliteten eller så har de skapats av en användare.
 
 - **Tas** bort : Ett ämne som har avvisats och inte längre kommer att visas för läsare. Ett ämne kan tas bort i valfri stat (förslag, bekräftade eller publicerade). Ämnesborttagning inträffar när något av följande inträffar:
+
    - En knowledge manager tar bort ett ämne. En knowledge manager tar bort ett ämne på **sidan Hantera** ämnen.
 
    - Flera användare rop negativa röster med hjälp av feedbackmekanismen på ämneskortet. För att ett ämne ska kunna tas bort måste nettot av två negativa röster tas emot från användare. Om en användare till exempel har röstat nej och en användare har röstat positivt på ett visst ämne, skulle du ändå behöva två fler negativa röster för att ämnet ska tas bort.

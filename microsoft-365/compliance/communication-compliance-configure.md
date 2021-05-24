@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3e84c3266dd802fb6cab12db0c20773838b4e2a9
-ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
+ms.openlocfilehash: 60b9577c2a42ef080fa6a734e0207225bf197cab
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52162829"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624275"
 ---
 # <a name="get-started-with-communication-compliance"></a>Kom igång med kommunikationsefterlevnad
 
@@ -129,7 +129,7 @@ Använd följande diagram för att hjälpa dig att konfigurera grupper i organis
 | **Principmedlem** | **Grupper som stöds** | **Grupper som inte stöds** |
 |:-----|:-----|:-----|
 |Övervakade användare <br> Ej övervakade användare | Distributionsgrupper <br> Microsoft 365-grupper | Dynamiska distributionsgrupper <br> Kapslade distributionsgrupper <br> E-postaktiverad säkerhetsgrupp <br> Microsoft 365 grupper med dynamiskt medlemskap |
-| Granskare | Ingen | Distributionsgrupper <br> Dynamiska distributionsgrupper <br> Kapslade distributionsgrupper <br> E-postaktiverad säkerhetsgrupp |
+| Granskare | Inga | Distributionsgrupper <br> Dynamiska distributionsgrupper <br> Kapslade distributionsgrupper <br> E-postaktiverad säkerhetsgrupp |
   
 När du tilldelar en distributionsgrupp i principen övervakar principen alla e-postmeddelanden Teams och chattar från varje användare i distributionsgruppen. När du tilldelar en Microsoft 365-grupp i principen övervakar principen alla e-postmeddelanden och Teams-chattar som skickas till den gruppen, inte de enskilda e-postmeddelanden och chattar som tas emot av varje gruppmedlem.
 
@@ -202,7 +202,7 @@ Mer information om hur du konfigurerar Yammer i inbyggt läge finns i:
     - Välj ett begränsat villkorsfält, vanligtvis en typ av känslig information eller nyckelordsordlista som ska användas för principen.
 
     >[!NOTE]
-    >Om du vill aktivera optisk teckenläsning [(OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) för att skanna inbäddade eller bifogade bilder i meddelanden för tryckt eller handskriven text som matchar principvillkor väljer du Anpassa principvillkor och procentandel och aktiverar Extrahera tryckt eller  >   **handskriven text** från bilder för utvärdering.
+    >Om du vill aktivera optisk teckenläsning [(OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) för att skanna inbäddade eller bifogade bilder i meddelanden för tryckt eller handskriven text som matchar principvillkor väljer du Anpassa principvillkor och procentandel och aktiverar Extrahera tryckt eller  >   **handskriven text** från bilder för utvärdering.
 
     Om du väljer att använda principguiden för att skapa en anpassad princip gör du följande:
 
@@ -222,7 +222,7 @@ Mer information om hur du konfigurerar Yammer i inbyggt läge finns i:
 
     - Välj om du vill aktivera klassificerare. Klassificerare kan identifiera olämpligt språk och bilder som skickas eller tas emot i brödtexten i e-postmeddelanden eller andra typer av text. Du kan välja följande inbyggda *klassificerare:* Hot , *svordomar*, *riktade* *trakasserier,* vuxna bilder, *racybilder* och *gorybilder*.
 
-    - Gör [det möjligt för optisk teckenigenkänning (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) att skanna inbäddade eller bifogade bilder i meddelanden för tryckt eller handskriven text som matchar policyvillkor. För anpassade principer måste en eller flera villkorsstyrda inställningar som associeras med text, nyckelord, klassificerare eller typer av känslig information konfigureras i principen för att möjliggöra val av optisk teckenläsningssökning.
+    - Gör [det möjligt för optisk teckenigenkänning (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) att skanna inbäddade eller bifogade bilder i meddelanden för tryckt eller handskriven text som matchar policyvillkor. För anpassade principer måste en eller flera villkorsstyrda inställningar som associeras med text, nyckelord, klassificerare eller typer av känslig information konfigureras i principen för att möjliggöra val av optisk teckenläsningssökning.
 
     - Definiera hur många procent av kommunikationen som ska granskas.
 

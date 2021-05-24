@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Lär dig att hitta de problem du kan få när du skapar en egen domän genom att kontrollera att DNS-posterna är korrekt konfigurerade.
-ms.openlocfilehash: 5959cae02b87cf481fc06edd941a6da284b71736
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 70beb877251c333766a0963316287796eb81d595
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537553"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623971"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster
 
@@ -103,5 +103,6 @@ Om du har åtgärdat ett DNS-problem men fortfarande har problem, kan du försö
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Felsökning: Granska data om ändring av verifierad domän](/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain)
+[Felsökning: Granska data om ändring av verifierad domän](/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain) (artikel)\
+[Domänens vanliga frågor och svar](../setup/domains-faq.yml) (artikel)
 

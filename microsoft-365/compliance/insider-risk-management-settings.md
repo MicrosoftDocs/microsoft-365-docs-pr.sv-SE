@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: aad0f00292a1a1182fc4b731e562b2e4c78d97f8
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 7592b92b74173e77e7937151ba88c23163363fde
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259517"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624699"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Komma igång med inställningar för Insider-riskhantering
 
@@ -60,7 +60,7 @@ Aviseringar utlöses av principer när användare utför aktiviteter som är rel
 Principindikatorer är indelade i följande områden. Du kan välja indikatorerna för att aktivera och anpassa gränser för indikatorhändelsen för varje indikatornivå när du skapar en insiderriskprincip:
 
 - **Office indikatorer**: De omfattar principindikatorer för SharePoint, e-Microsoft Teams och e-postmeddelanden.
-- **Enhetsindikatorer:** De omfattar principindikatorer för aktivitet, t.ex. att dela filer över nätverket eller med enheter. Indikatorerna omfattar aktiviteter Microsoft Office filer, .csv (kommaavgränsade värden) och filer .pdf (portable document format) . Om du väljer **Enhetsindikatorer** bearbetas aktiviteten endast för enheter med Windows 10 version 1809 eller senare och du måste först registrera enheter i efterlevnadscentret. Mer information om hur du konfigurerar enheter för integrering med Insider-risker finns i avsnittet Aktivera enhetsindikatorer [och onboard-enheter](insider-risk-management-settings.md#OnboardDevices) i den här artikeln.
+- **Enhetsindikatorer:** De omfattar principindikatorer för aktivitet, t.ex. att dela filer över nätverket eller med enheter. Indikatorerna omfattar aktiviteter som innefattar alla filtyper, utom körbar (.exe) och filaktivitet med dynamisk .dll länkbibliotek. Om du väljer **Enhetsindikatorer** bearbetas aktiviteten endast för enheter med Windows 10 version 1809 eller senare och du måste först registrera enheter i efterlevnadscentret. Mer information om hur du konfigurerar enheter för integrering med Insider-risker finns i avsnittet Aktivera enhetsindikatorer [och onboard-enheter](insider-risk-management-settings.md#OnboardDevices) i den här artikeln.
 - **Indikatorn för brott mot säkerhetsprinciper (förhandsversion): Det** här omfattar indikatorer från Microsoft Defender för Endpoint som är relaterade till ej godkända eller skadliga programinstallationer eller förbikoppling av säkerhetskontroller. Om du vill ta emot aviseringar i Insider-riskhantering måste du ha en aktiv Defender för Slutpunktslicens och insider-riskintegrering aktiverat. Mer information om hur du konfigurerar Defender för Slutpunkt för insider-riskhanteringsintegrering finns i [Konfigurera avancerade funktioner i Microsoft Defender för slutpunkt.](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)
 - **Indikatorer för fysisk åtkomst (förhandsversion)**: Dessa omfattar principindikatorer för fysisk åtkomst till känsliga tillgångar. Till exempel kan försök till ett begränsat område i dina fysiska systemloggar delas med principer för Insider-riskhantering. Om du vill ta emot de här typerna av aviseringar i insider-riskhantering måste du ha [prioriterat](import-physical-badging-data.md) fysiska tillgångar aktiverat i insider-riskhantering och den fysiska anslutningen för data felaktigt konfigurerad. Mer information om hur du konfigurerar fysisk åtkomst finns i [avsnittet Prioriterad fysisk åtkomst](#priority-physical-assets-preview) i den här artikeln.
 - **Microsoft Cloud App Security indikatorer (förhandsversion)**: De omfattar principindikatorer från delade aviseringar från Cloud App Security. Automatiskt aktiverad avvikande identifiering i Cloud App Security börjar genast identifiera och sortera resultat, vilket riktar många beteendebeteenden mellan dina användare och de datorer och enheter som är anslutna till ditt nätverk. Om du vill inkludera dessa aktiviteter i varningar för insider-riskhanteringsprinciper markerar du en eller flera indikatorer i det här avsnittet. Mer information om Cloud App Security och avvikande identifiering finns i [Hämta funktionsanalyser och avvikande identifiering.](/cloud-app-security/anomaly-detection-policy)
@@ -84,7 +84,7 @@ Se till att Windows 10 enheter som du planerar att rapportera inom insider-riskh
 
 1. Måste köras med Windows 10 x64 version 1809 eller senare och måste ha installerat [Windows 10-uppdateringen (OS-version 17763.1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) från den 20 februari 2020.
 2. Användarkontot som används för att logga in Windows 10-enheten måste vara ett aktivt Azure Active Directory-konto (AAD). Enheten Windows 10 [AAD,](/azure/active-directory/devices/concept-azure-ad-join)hybrid-AAD eller Active Directory-ansluten eller AAD registrerad.
-3. Installera Microsoft Chromium Edge-webbläsaren på slutpunktsenheten för att övervaka åtgärder för molnuppladdningsaktiviteten. Se [Ladda ned den nya Microsoft Edge baserat på Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+3. Installera Microsoft Chromium Edge-webbläsaren på slutpunktsenheten för att övervaka åtgärder för molnuppladdningsaktiviteten. Se [Ladda ned nya Microsoft Edge som baseras på Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 #### <a name="step-2-onboarding-devices"></a>Steg 2: Onboarding-enheter
 <a name="OnboardStep2"> </a>
@@ -93,52 +93,52 @@ Du måste aktivera enhetsövervakning och registrera dina slutpunkter innan du k
 
 När du vill registrera enheter som inte har introducerats ännu, laddar du ned rätt skript och distribuerar enligt följande steg.
 
-Om du redan har enheter som är inbyggda [i Microsoft Defender för Endpoint](/windows/security/threat-protection/)visas de redan i listan över hanterade enheter. Följ [steg 3: Om du har enheter inbyggda i Microsoft Defender för Slutpunkt](insider-risk-management-settings.md#OnboardStep3) i nästa avsnitt.
+Om du redan har enheter registrerade i [Microsoft Defender för Endpoint](/windows/security/threat-protection/) visas de redan i listan över hanterade enheter. Följ [steg 3: Om du har enheter inbyggda i Microsoft Defender för Slutpunkt](insider-risk-management-settings.md#OnboardStep3) i nästa avsnitt.
 
 I det här distributionsscenariot får du registrera enheter som inte har introducerats ännu och du vill övervaka Insider-riskaktiviteter på Windows 10 enheter.
 
-1. Öppna [Microsofts efterlevnadscenter.](https://compliance.microsoft.com)
-2. Öppna inställningssidan för Efterlevnadscenter och välj **Onboard-enheter.**
+1. Öppna [Microsoft Efterlevnadscenter](https://compliance.microsoft.com).
+2. Öppna inställningssidan för Efterlevnadscenter och välj **Registrera enheter**.
 
    > [!NOTE]
-   > Det tar normalt ca 60 sekunder innan enhets onboarding aktiveras, men det kan ta upp till 30 minuter innan du kontakta Microsoft Support.
+   > Det tar normalt ca 60 sekunder innan enhetsregistreringen är aktiverad, men du kan vänta upp till 30 minuter innan du kontaktar Microsoft Support.
 
-3. Välj **Enhetshantering** för att öppna **listan** Enheter. Listan är tom tills du får registrera enheter.
-4. Välj **Onboarding** för att påbörja introduktionsprocessen.
+3. Välj **Enhetshantering** för att öppna listan **Enheter**. Listan är tom tills du har registrerat enheter.
+4. Välj **Registrering** för att starta registreringsprocessen.
 5. Välj hur du vill distribuera till de här fler enheterna i listan **Distributionsmetod** och ladda sedan **ned paket.**
-6. Följ lämpliga procedurer i [Onboarding-verktyg och -metoder för Windows 10 datorer.](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) Den här länken tar dig till en landningssida där du kan komma åt Microsoft Defender för Slutpunkt-procedurer som matchar det distributionspaket du valde i steg 5:
-    - Introducera Windows 10 datorer som använder grupprinciper
-    - Onboard Windows-datorer med Microsoft Endpoint Configuration Manager
-    - Onboard Windows 10 machines using Mobile Device Management tools
-    - Introducera Windows 10 datorer med lokalt skript
-    - Hantera icke-beständiga VDI-maskiner (Virtual Desktop Infrastructure).
+6. Följ lämpliga instruktioner i [Registrera verktyg och metoder för Windows 10-datorer](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Den här länken tar dig till en landningssida där du kan komma åt procedurer för Microsoft Defender för Endpoint som matchar distributionspaketet du valde i steg 5:
+    - Registrera Windows 10-datorer med hjälp av grupprincip
+    - Registrera Windows-datorer med Microsoft Endpoint Configuration Manager
+    - Registrera Windows 10-datorer med hanteringsverktyg för mobila enheter
+    - Registrera Windows 10-datorer med ett lokalt skript
+    - Registrera icke beständiga VDI-datorer (Virtual Desktop Infrastructure).
 
 När slutpunkten har hanterats bör den visas i listan över enheter och slutpunkten kommer att starta rapportering av granskningsaktivitetsloggar för insiderriskhantering.
 
 > [!NOTE]
-> Den här upplevelsen är under kontroll av tillämpning av licens. Utan den licens som krävs visas inte data eller är tillgängliga.
+> För den här funktionen tillämpas licensiering. Utan rätt licens kommer data inte att visas och inte vara tillgängliga.
 
 #### <a name="step-3-if-you-have-devices-onboarded-into-microsoft-defender-for-endpoint"></a>Steg 3: Om du har enheter inbyggda i Microsoft Defender för Slutpunkt
 <a name="OnboardStep3"> </a>
 
 Om Microsoft Defender för slutpunkt redan har distribuerats och det finns slutpunkter som rapporterar detta visas alla dessa slutpunkter i listan över hanterade enheter. Du kan fortsätta att introducera nya enheter i Insider-riskhantering för att öka täckningen med hjälp [av avsnittet Steg 2: Onboarding-enheter.](insider-risk-management-settings.md#OnboardStep2)
 
-1. Öppna [Microsofts efterlevnadscenter.](https://compliance.microsoft.com)
+1. Öppna [Microsoft Efterlevnadscenter](https://compliance.microsoft.com).
 2. Öppna inställningssidan för Efterlevnadscenter och välj **Aktivera enhetsövervakning**.
-3. Välj **Enhetshantering** för att öppna **listan** Enheter. Du bör se listan över enheter som redan rapporterar till Microsoft Defender för Endpoint.
+3. Välj **Enhetshantering** för att öppna listan **Enheter**. Du bör se listan över enheter som redan rapporterar till Microsoft Defender för Endpoint.
 4. Välj **Onboarding** om du behöver registrera fler enheter.
 5. Välj hur du vill distribuera till följande enheter i listan **Distributionsmetod** och sedan **Ladda ned paket.**
-6. Följ lämpliga procedurer i [Onboarding-verktyg och -metoder för Windows 10 datorer.](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) Den här länken tar dig till en landningssida där du kan komma åt Microsoft Defender för Slutpunkt-procedurer som matchar det distributionspaket du valde i steg 5:
-    - Introducera Windows 10 datorer som använder grupprinciper
-    - Onboard Windows-datorer med Microsoft Endpoint Configuration Manager
-    - Onboard Windows 10 machines using Mobile Device Management tools
-    - Introducera Windows 10 datorer med lokalt skript
-    - Hantera icke-beständiga VDI-maskiner (Virtual Desktop Infrastructure).
+6. Följ lämpliga instruktioner i [Registrera verktyg och metoder för Windows 10-datorer](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Den här länken tar dig till en landningssida där du kan komma åt procedurer för Microsoft Defender för Endpoint som matchar distributionspaketet du valde i steg 5:
+    - Registrera Windows 10-datorer med hjälp av grupprincip
+    - Registrera Windows-datorer med Microsoft Endpoint Configuration Manager
+    - Registrera Windows 10-datorer med hanteringsverktyg för mobila enheter
+    - Registrera Windows 10-datorer med ett lokalt skript
+    - Registrera icke beständiga VDI-datorer (Virtual Desktop Infrastructure).
 
 När slutpunkten är onboarded bör den  visas under tabellen Enheter och slutpunkten startar rapportering av granskningsaktivitetsloggar för Insider-riskhantering.
 
 > [!NOTE]
->Den här upplevelsen är under kontroll av tillämpning av licens. Utan den licens som krävs visas inte data eller är tillgängliga.
+>För den här funktionen tillämpas licensiering. Utan rätt licens kommer data inte att visas och inte vara tillgängliga.
 
 ### <a name="indicator-level-settings-preview"></a>Inställningar för indikatornivå (förhandsgranskning)
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2f9777631fe9d8b3506296f30906d5280805b4cb
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 02fbd70e7456f95ded920faa8004eedadb35d4f5
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583430"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624251"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Undersöka och åtgärda aviseringar för kommunikationsefterlevnad
 
@@ -101,9 +101,9 @@ Oavsett var du börjar granska aviseringar eller filtreringen du konfigurerar ä
 
 När du har gått igenom grunderna i meddelandet är det dags att öppna ett meddelande för att undersöka informationen och avgöra ytterligare åtgärder. Välj ett meddelande för att visa den fullständiga meddelanderubriken och brödtexten. Det finns flera olika vyer som hjälper dig att avgöra hur du ska göra:
 
-- **Källvy:** Den här vyn är den standardvy för meddelanden som vanligtvis visas på de flesta webbaserade meddelandeplattformar. Sidhuvudinformationen formateras i normalt format och meddelandetexten stöder bilder med imbededer och radbruten text. Om [optisk teckenläsning (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) är aktiverad för principen visas bilder som innehåller tryckt eller handskriven text som matchar villkorsstyrd princip som ett underobjekt för det associerade meddelandet i den här vyn.
+- **Källvy:** Den här vyn är den standardvy för meddelanden som vanligtvis visas på de flesta webbaserade meddelandeplattformar. Sidhuvudinformationen formateras i normalt format och meddelandetexten stöder bilder med imbededer och radbruten text. Om [optisk teckenläsning (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) är aktiverad för principen visas bilder som innehåller tryckt eller handskriven text som matchar villkorsstyrd princip som ett underobjekt för det associerade meddelandet i den här vyn.
 - **Textvy:** Textvyn visar en vy med endast radnumrerad text i meddelandet och innehåller nyckelordsmarkering i meddelanden och bifogade filer för termer eller nyckelord av typen känslig information som matchas i den associerade principen för kommunikationsefterlevnad. Med hjälp av nyckelordsmarkering kan du snabbt söka igenom långa meddelanden och bifogade filer efter det intresseområde som är av intresse. I vissa fall kan markerad text bara finnas i bifogade filer för meddelanden som matchar principvillkor. Nyckelordsmarkering stöds inte för termer som identifieras av inbyggda klassificerare som tilldelats till en princip. Inbäddade filer visas inte och radnumrering i den här vyn är användbart om du vill referera relevant information mellan flera granskare.
-- **Kommentarsvyn:** I den här vyn kan granskare lägga till anteckningar direkt i meddelandet som sparas i meddelandets vy. Om [OCR](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) är aktiverat för principen visas bilder som innehåller tryckt eller handskriven text som matchar villkorsstyrd policy som ett underobjekt för det associerade meddelandet i den här vyn och kan komma att kommenteras.
+- **Kommentarsvyn:** I den här vyn kan granskare lägga till anteckningar direkt i meddelandet som sparas i meddelandets vy. Om [OCR](communication-compliance-feature-reference.md#optical-character-recognition-ocr) är aktiverat för principen visas bilder som innehåller tryckt eller handskriven text som matchar villkorsstyrd policy som ett underobjekt för det associerade meddelandet i den här vyn och kan komma att kommenteras.
 - **Användarhistorik:** Vyn Användarhistorik visar alla andra aviseringar som genereras av en princip för kommunikationsefterlevnad för användaren som skickar meddelandet.
 - **Mönster som upptäckts** meddelande: Många trakasserings- och mobbningsåtgärder över tid och innebär att instanser av samma beteende upprepas av en användare. Det *mönster som upptäckts* aviseringen visas i aviseringsinformationen och uppmärksammar aviseringen. Identifiering av mönster per princip och utvärderar beteende under de senaste 30 dagarna när minst två meddelanden skickas till samma mottagare av en avsändare. Varningar och granskare kan använda det här meddelandet för att identifiera upprepat beteende för att utvärdera aviseringen efter behov.
 - **Visa översättningsvyn:** I den här vyn konverteras automatiskt  aviseringstexten till det språk som har konfigurerats i inställningen För visningsspråk i Microsoft 365-prenumerationen för varje granskare. Översättningsvyn hjälper till att bredda stödet för organisationer med flerspråkiga användare och eliminerar behovet av ytterligare översättningstjänster utanför granskningsprocessen för kommunikationsefterlevnad. Med Microsoft Translate-tjänster kan du, om det behövs, stänga av och stänga av översättningsvyn och använda en mängd olika språk. En fullständig lista över språk som stöds finns i [Microsoft Translator språk.](https://www.microsoft.com/translator/business/languages/) Språk som visas *Translator språklistan* stöds i vyn Översätt.

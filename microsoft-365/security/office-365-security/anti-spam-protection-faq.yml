@@ -20,12 +20,12 @@ metadata:
   description: Administratörer kan visa vanliga frågor och svar om skydd mot skräppost i Exchange Online Protection (EOP).
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: e632ab1183c43cd50da7c2cf7832a5a18fa64d50
-  ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+  ms.openlocfilehash: b15e7409c275810a9d5e70d1376a9c3accd07ab9
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 05/20/2021
-  ms.locfileid: "52583622"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52624921"
 title: Vanliga frågor och svar om skydd mot skräppost
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -61,7 +61,7 @@ sections:
 
       > [!IMPORTANT]
 
-      > I hybriddistributioner där EOP skyddar lokala postlådor måste du konfigurera två e-postflödesregler för Exchange (kallas även transportregler) i den lokala Exchange-organisationen för att identifiera de skräppostfiltreringsrubriker för EOP som läggs till i meddelanden. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+      > I hybriddistributioner där EOP skyddar lokala Exchange-postlådor måste du konfigurera två e-postflödesregler för Exchange (kallas även transportregler) i den lokala Exchange-organisationen för att identifiera rubrikerna för EOP-skräppostfiltrering som läggs till i meddelanden. Mer information finns i [Konfigurera EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer.](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)
 
        **För utgående meddelanden:** Meddelandet dirigeras antingen [](high-risk-delivery-pool-for-outbound-messages.md) via högriskleveranspoolen eller returneras till avsändaren i en rapport om utebliven leverans (kallas även NDR eller icke-leveranskavvisningsmeddelande). Mer information om skydd mot utgående skräppost finns i [Kontrollerna för utgående skräppost.](outbound-spam-controls.md)
   - question: >

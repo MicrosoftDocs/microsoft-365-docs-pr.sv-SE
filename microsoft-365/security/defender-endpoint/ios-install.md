@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a3711018034bcabdde10c21b3c968c3e813d0565
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 6f2b9a1365a27bb7397aea51dcd5bc9e2631afe2
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245263"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624711"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Distribuera Microsoft Defender för Slutpunkt i iOS
 
@@ -35,13 +35,13 @@ ms.locfileid: "52245263"
 
 > Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-I det här avsnittet beskrivs hur du distribuerar Defender för Slutpunkt på iOS Intune-företagsportal registrerade enheter. Mer information om registrering av Intune-enheter finns i [Registrera iOS-/iPadOS-enheter i Intune.](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll)
+I det här avsnittet beskrivs hur du distribuerar Defender för Slutpunkt på iOS Intune-företagsportal registrerade enheter. Mer information om registrering av Intune-enheter finns i [Registrera iOS-/iPadOS-enheter i Intune.](/mem/intune/enrollment/ios-enroll)
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
 - Kontrollera att du har åtkomst till [administrationscentret för Microsoft Endpoint Manager.](https://go.microsoft.com/fwlink/?linkid=2109431)
 
-- Se till att iOS-registreringen utförs för dina användare. Användarna måste ha en Defender för slutpunktslicens tilldelad för att kunna använda Defender för slutpunkt i iOS. Anvisningar om [hur du tilldelar licenser](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) finns i Tilldela licenser till användare.
+- Se till att iOS-registreringen utförs för dina användare. Användarna måste ha en Defender för slutpunktslicens tilldelad för att kunna använda Defender för slutpunkt i iOS. Anvisningar om [hur du tilldelar licenser](/azure/active-directory/users-groups-roles/licensing-groups-assign) finns i Tilldela licenser till användare.
 
 > [!NOTE]
 > Microsoft Defender för slutpunkt på iOS är nu tillgängligt i [Apple App Store.](https://aka.ms/mdatpiosappstore)
@@ -83,7 +83,7 @@ Distribuera Defender för Slutpunkt på iOS via Intune-företagsportal.
 
 Administratörer kan konfigurera automatisk konfiguration av VPN-profilen. Det här ställer automatiskt in Defender för Endpoint VPN-profilen utan att användaren behöver göra det under registrering. Observera att VPN används för att tillhandahålla webskyddsfunktionen. Det här är inte en vanlig VPN och är en lokal/självslingande VPN som inte tar trafik utanför enheten.
 
-1. I [administrationscentret för Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)går du till **Konfigurationsprofiler för** enheter  ->    ->  **Skapa**  ->  **iOS-butiksapp och** klickar på **Välj.**
+1. I [administrationscentret för Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)går du till   ->  **Konfigurationsprofiler för enheter** Skapa  ->  **profil**.
 1. Välj **Plattform** som **iOS/iPadOS** och **Profiltyp** som **VPN.** Klicka på **Skapa**.
 1. Skriv in ett namn på profilen och klicka på **Nästa.**
 1. Välj **Anpassad VPN** för Anslutningstyp och ange följande i avsnittet **Bas-VPN:**
@@ -148,7 +148,7 @@ Med Intune kan du konfigurera appen Defender för iOS via en princip för appkon
 
 1. Klicka **på Nästa** så att sidan **Omfattningstaggar** öppnas. Omfattningstaggar är valfria. Klicka **på Nästa** för att fortsätta.
 
-1. På sidan **Uppgifter väljer** du de grupper som ska få den här profilen. I det här scenariot är det bäst att rikta alla **enheter mot mål.** Mer information om hur du tilldelar profiler finns i [Tilldela användar- och enhetsprofiler.](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign)
+1. På sidan **Uppgifter väljer** du de grupper som ska få den här profilen. I det här scenariot är det bäst att rikta alla **enheter mot mål.** Mer information om hur du tilldelar profiler finns i [Tilldela användar- och enhetsprofiler.](/mem/intune/configuration/device-profile-assign)
 
    När du distribuerar till användargrupper måste en användare logga in på en enhet innan principen tillämpas.
 

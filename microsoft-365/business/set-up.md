@@ -30,14 +30,16 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Upptäck konfigurationsstegen för Microsoft 365 Business Premium, inklusive att lägga till en domän och användare, konfigurera säkerhetsprinciper med mera.
-ms.openlocfilehash: 37607b483686fc12ac6253ae9f693ec86c073c4e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 3e15f16db2a233d2e11d444600398102b075932d
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245053"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624398"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Konfigurera Microsoft 365 Business Premium i installationsguiden
+
+## <a name="watch-overview-of-microsoft-365-setup"></a>Titta: Översikt över Microsoft 365 konfiguration
 
 Titta på den här videon för en översikt över Microsoft 365 Business Premium konfiguration.<br><br>
 
@@ -62,7 +64,7 @@ När du köper Microsoft 365 Business Premium domän kan du välja att använda 
 4. Under steget **Lägg till domän** anger du domännamnet du vill använda (t.ex. contoso.com).
 
     > [!IMPORTANT]
-    > Om du har köpt en domän under registreringen ser du inte steget **Lägg till en domän** här. Gå istället till [Lägg till användare](#add-users-and-assign-licenses).
+    > Om du har köpt en domän under registreringen ser du inte steget **Lägg till en domän** här. Gå i stället till [Lägg till användare](#add-users-and-assign-licenses).
 
     ![Skärmbild av sidan Anpassa din inloggning.](../media/adddomain.png)
 
@@ -85,7 +87,7 @@ Alla användare som du lägger till i guiden tilldelas automatiskt en Microsoft 
 
 1. Om din Microsoft 365 Business Premium-prenumeration har befintliga användare (till exempel om du använde Azure AD Anslut) får du möjlighet att tilldela licenser till dem nu. Lägg till licenser till dem också.
 
-2. Efter att ha lagt till användarna får du också möjlighet att dela autentiseringsuppgifter med de nya användarna som du har lagt till. Du kan välja att skriva ut, e-posta eller ladda ned.
+2. När du har lagt till användarna får du även ett alternativ för att dela autentiseringsuppgifter med dem. Du kan välja att skriva ut, skicka via e-post eller ladda ned dem.
 
 ### <a name="connect-your-domain"></a>Koppla din domän
 
@@ -97,7 +99,7 @@ För att få igång tjänsten måste du uppdatera några poster hos din DNS-vär
 1. Installationsguiden identifierar normalt din domänregistrator och ger dig en länk till stegvisa instruktioner för att uppdatera dina NS-poster på registratorns webbplats. Om det inte fungerar kan [du ändra namnservrar för att konfigurera Microsoft 365 med valfri domänregistrator](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md). 
 
     - Om du har befintliga DNS-poster, t. ex. en befintlig webbplats, men din DNS-värd är aktiverad för [Domain Connect](/office365/admin/get-help-with-domains/domain-connect)väljer du **Lägga till poster för mig**. På sidan **Välj onlinetjänster** accepterar du alla standardinställningar och väljer **Nästa** och väljer **Auktorisera** på DNS-värdens sida.
-    - Om du har befintliga DNS-poster med andra DNS-värdar (inte aktiverad för domänanslutning), ska du hantera dina egna DNS-poster för att se till att de befintliga tjänsterna fortsätter att vara anslutna. Mer information finns i [domängrunder](/office365/admin/get-help-with-domains/dns-basics).
+    - Om du har befintliga DNS-poster med andra DNS-värdar (inte aktiverad för domänanslutning), ska du hantera dina egna DNS-poster för att se till att de befintliga tjänsterna fortsätter att vara anslutna. Mer information finns i [grundläggande information för domän](/office365/admin/get-help-with-domains/dns-basics).
 
         ![Sidan Aktivera poster.](../media/activaterecords.png)
 
@@ -131,6 +133,6 @@ Information om Office för mobila iOS- och Android-enheter finns i [Konfigurera 
 
 Du kan också installera Office individuellt. Anvisningar finns Office installera på en PC eller [Mac.](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
 
-## <a name="see-also"></a>Se även
+## <a name="related-content"></a>Relaterat innehåll
 
-[Utbildningsvideor för Microsoft 365 Business](../business-video/index.yml)
+[Microsoft 365 om utbildningsvideor för företag](../business-video/index.yml) (länksida)

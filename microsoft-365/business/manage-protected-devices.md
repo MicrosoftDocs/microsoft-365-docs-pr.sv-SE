@@ -26,22 +26,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
-description: Lär dig hur du tar bort företagsdata från enheter som hanteras genom skyddsprinciper och återställer Windows 10-enheter till fabriksinställningarna.
-ms.openlocfilehash: fdd92e797774a47455d6b4163dfe399bf74d41f3
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Lär dig ta bort företagsdata från enheter som hanteras genom skyddsprinciper och Windows 10 till fabriksinställningarna.
+ms.openlocfilehash: 0b757172ed337e9b2b68b4fcbdf5b102a8c76710
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580163"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624294"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>Hantera skyddade enheter med Microsoft 365 Business Premium
 
-När en användare ansluter sin enhet till din organisation genom att logga in med sitt arbetskonto på enheten eller i Office-appar på enheten kan du skydda enheten med de principer du har konfigurerat. Anslutna enheter visas på **sidan** Enheter. Om en enhet försvinner eller blir stulen kan du ta bort företagsdata från den här sidan. Du kan även återställa Windows 10-enheter till deras fabriksinställning för att ta bort alla anpassade inställningar. 
+När en användare ansluter sin enhet till din organisation genom att logga in med sitt arbetskonto på enheten eller Office-appar på enheten kan du skydda enheten med de principer du har angett. Anslutna enheter visas på **sidan** Enheter. Om en enhet försvinner eller blir stulen kan du ta bort företagsdata från den här sidan. Du kan även återställa Windows 10-enheter till deras fabriksinställning för att ta bort alla anpassade inställningar. 
 
-Mer information om vilka uppgifter du kan använda för att hantera enheter finns i följande artiklar: 
+## <a name="related-content"></a>Relaterat innehåll
   
-[Ta bort företagsdata från enheter](remove-company-data.md)
-  
-[Återställa Windows 10-enheter till fabriksinställningarna](reset-devices-to-factory-settings.md)
-
-[Lägga till en hanterad enhet](./app-protection-settings-for-android-and-ios.md)
+[Ta bort företagsdata från enheter](remove-company-data.md) (artikel)\
+[Återställa Windows 10 till fabriksinställningarna](reset-devices-to-factory-settings.md) (artikel)\
+[Lägga till en hanterad enhet](./app-protection-settings-for-android-and-ios.md) (artikel)

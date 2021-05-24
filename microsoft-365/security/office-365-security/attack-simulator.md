@@ -1,5 +1,5 @@
 ---
-title: Attack Attack i Microsoft Defender för Office 365
+title: Attack Attack I Microsoft Defender för Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,35 +17,35 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan lära sig hur de kan använda Attack Attack För att köra simulerade nätfiske- och lösenordsattacker i sina organisationer av Microsoft 365 E5 eller Microsoft Defender för Office 365 Abonnemang 2.
+description: Administratörer kan lära sig hur de använder Attack Attack För att köra simulerade nätfiske- och lösenordsattacker i sina Microsoft 365 E5- eller Microsoft Defender-Office 365 abonnemang 2-organisationer.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 637e84281b85e8c859207ae81342a3c6ab3d00be
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 73ad3501ed9818261c9fbec6ba12b4dc884da84f
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207097"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624831"
 ---
-# <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Attack Attack i Microsoft Defender för Office 365
+# <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Attack Attack I Microsoft Defender för Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för** [Microsoft Defender för Office 365 abonnemang 2](defender-for-office-365.md)
 
-Om din organisation har Microsoft Defender för Office 365 abonnemang 2, som innehåller funktioner för hotundersökning och [svar,](office-365-ti.md)kan du använda Attack Attack Attack i Säkerhets- & och efterlevnadscenter för att köra realistiska attackscenarier i din organisation. Dessa simulerade attacker kan hjälpa dig att identifiera och hitta sårbara användare innan en verklig attack påverkar din nedersta linje. Läs den här artikeln om du vill veta mer.
+Om din organisation har Microsoft Defender för Office 365 abonnemang 2, som omfattar funktioner för undersökning av hot och [svar,](office-365-ti.md)kan du använda Attack Attacker i Säkerhets- & och efterlevnadscenter för att köra realistiska attackscenarier i din organisation. Dessa simulerade attacker kan hjälpa dig att identifiera och hitta sårbara användare innan en verklig attack påverkar din nedersta linje. Läs den här artikeln om du vill veta mer.
 
 > [!NOTE]
 >
-> Attack Attack Så som beskrivs i den här artikeln  är nu skrivskyddad och har ersatts av utbildning av attack simulering **i E-& samarbetsnod** i Säkerhetscenter för [Microsoft 365.](https://security.microsoft.com) Mer information finns i Komma [igång med att använda simuleringsutbildning för attacker](attack-simulation-training-get-started.md).
+> Attack Attack Så som beskrivs i den här artikeln  är nu skrivskyddad och har ersatts av utbildning av attack simulering **i e-& för** samarbete i [Microsoft 365 säkerhetscenter](https://security.microsoft.com). Mer information finns i Komma [igång med att använda simuleringsutbildning för attacker](attack-simulation-training-get-started.md).
 >
 > Möjligheten att starta nya simuleringar från den här versionen av Attack Attack har inaktiverats. Du kan dock fortfarande komma åt rapporter i upp till 90 dagar från den 24 januari 2021.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Gå till <https://protection.office.com/> för att öppna Säkerhets- och efterlevnadscenter. Attackattack finns tillgänglig på **Threat management** \> **Attack attack**. Gå direkt till attack så öppnar du <https://protection.office.com/attacksimulator> .
+- Gå till <https://protection.office.com/> för att öppna Säkerhets- och efterlevnadscenter. Attackattack finns tillgänglig på **Threat management** \> **Attack attack**. Om du vill gå direkt till attack öppnar du <https://protection.office.com/attacksimulator> .
 
-- Mer information om tillgängligheten för Attack Defender för olika Microsoft 365-prenumerationer finns i Tjänstbeskrivning för [Microsoft Defender för Office 365.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+- Mer information om tillgängligheten för Attack Defender för olika Microsoft 365-prenumerationer finns i [Microsoft Defender Office 365 tjänstbeskrivning](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
 - Du måste vara medlem i rollgrupperna **Organisationshantering** **eller Säkerhetsadministratör.** Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
@@ -55,7 +55,7 @@ Om din organisation har Microsoft Defender för Office 365 abonnemang 2, som inn
 
 - Nätfiskekampanjer samlar in och bearbetar händelser i 30 dagar. Historiska kampanjdata blir tillgängliga i upp till 90 dagar efter att du startade kampanjen.
 
-- Attack simulering och utbildning relaterade data lagras med andra kunddata för Microsoft 365-tjänster. Mer information finns i [Microsoft 365-dataplatser.](../../enterprise/o365-data-locations.md)
+- Attack simulering och utbildning relaterade data lagras med andra kunddata för Microsoft 365 tjänster. Mer information finns [Microsoft 365 dataplatser](../../enterprise/o365-data-locations.md).
 
 - Det finns inga motsvarande PowerShell-cmdlets för Attack Attack.
 
@@ -73,7 +73,7 @@ I Attack Attack Attack finns det två olika typer av nätfiskekampanjer:
 
   - En anpassad sida (URL) som du anger.
 
-- **Nätfiske (bifogad fil)**: Attacken försöker övertyga mottagarna att öppna en bifogad DOCX- eller PDF-fil i meddelandet. Den bifogade filen innehåller samma innehåll från standardlänken för nätfiske, men den första meningen börjar med " , du ser det här meddelandet som ett nyligen öppnat \<Display Name\> e-postmeddelande ...".
+- **Nätfiske (bifogad fil)**: Attacken försöker övertyga mottagarna att öppna en .docx eller .pdf bifogad fil i meddelandet. Den bifogade filen innehåller samma innehåll från standardlänken för nätfiske, men den första meningen börjar med " , du ser det här meddelandet som ett nyligen öppnat \<Display Name\> e-postmeddelande ...".
 
 > [!NOTE]
 > För närvarande upphör inte nätfiskekampanjer i Attack Attack att gälla.
@@ -170,7 +170,7 @@ Om du kommer att använda någon av de inbyggda mallarna eller skapa e-postmedde
 
 4. Gör **något av följande** i steget Målmottagare:
 
-   - Klicka **på Adressbok** för att välja mottagare (användare eller grupper) för kampanjen. Varje mottagare måste ha en Exchange Online-postlåda. Om du klickar **på** Filtrera **och tillämpa** utan att ange några sökvillkor returneras alla mottagare och läggs till i kampanjen.
+   - Klicka **på Adressbok** för att välja mottagare (användare eller grupper) för kampanjen. Varje riktad mottagare måste ha en Exchange Online postlåda. Om du klickar **på** Filtrera **och tillämpa** utan att ange några sökvillkor returneras alla mottagare och läggs till i kampanjen.
 
    - Klicka **på Importera** och sedan på **Filimport** för att importera en fil med kommaavgränsade värden (CSV) eller en radavgränsad fil med e-postadresser. Varje rad måste innehålla mottagarens e-postadress.
 
@@ -207,9 +207,9 @@ Om du kommer att använda någon av de inbyggda mallarna eller skapa e-postmedde
      >
      > - Du måste välja en URL-adress. Vid **nätfiskekampanjer (bifogade filer)** kan du ta bort länken från brödtexten i meddelandet i nästa steg (annars innehåller meddelandet både en länk och en **bifogad** fil).
 
-   - **Typ av** bifogad fil: Den här inställningen är endast tillgänglig för nätfiskekampanjer **(attachment).** Klicka på listrutan och välj **. DOCX** eller **. PDF** från listan.
+   - **Typ av** bifogad fil: Den här inställningen är endast tillgänglig för nätfiskekampanjer **(attachment).** Klicka på listrutan och **.DOCX** **eller.PDF** i listan.
 
-   - **Namn på bifogad** fil: Den här inställningen är endast tillgänglig för nätfiskekampanjer **(attachment).** Ange ett filnamn för den bifogade filen .docx eller .pdf.
+   - **Namn på bifogad** fil: Den här inställningen är endast tillgänglig för nätfiskekampanjer **(attachment).** Ange ett filnamn för den bifogade .docx .pdf filen.
 
    - **Anpassad landsides-URL:** Ange en valfri landningssida dit användare tas om de klickar på nätfiskelänken och anger sina inloggningsuppgifter. Den här länken ersätter standardlandningssidan. Om du till exempel har intern informationsutbildning kan du ange url:en här.
 
@@ -265,7 +265,7 @@ I Attack Attack Attack finns det två olika typer av lösenordsattackkampanjer s
 
 4. Gör **något av följande** i steget Målanvändare:
 
-   - Klicka **på Adressbok** för att välja mottagare (användare eller grupper) för kampanjen. Varje mottagare måste ha en Exchange Online-postlåda. Om du klickar **på** Filtrera **och tillämpa** utan att ange några sökvillkor returneras alla mottagare och läggs till i kampanjen.
+   - Klicka **på Adressbok** för att välja mottagare (användare eller grupper) för kampanjen. Varje riktad mottagare måste ha en Exchange Online postlåda. Om du klickar **på** Filtrera **och tillämpa** utan att ange några sökvillkor returneras alla mottagare och läggs till i kampanjen.
 
    - Klicka **på Importera** och sedan på **Filimport** för att importera en fil med kommaavgränsade värden (CSV) eller en radavgränsad fil med e-postadresser. Varje rad måste innehålla mottagarens e-postadress.
 
@@ -277,7 +277,7 @@ I Attack Attack Attack finns det två olika typer av lösenordsattackkampanjer s
 
      - **Ange lösenord manuellt:** Skriv ett lösenord **i rutan Tryck på** Retur för att lägga till ett lösenord och tryck sedan på RETUR. Upprepa det här steget så många gånger det behövs.
 
-     - **Ladda upp lösenord från en ordlistefil**: Klicka på Ladda upp om du vill importera en befintlig textfil som innehåller ett lösenord för varje rad och en tom sista rad.  Textfilen måste vara 10 MB eller mindre och får inte innehålla fler än 3 0000 lösenord.
+     - **Upload lösenord från** en ordlistefil : Klicka **på Upload** om du vill importera en befintlig textfil som innehåller ett lösenord på varje rad och en tom sista rad. Textfilen måste vara 10 MB eller mindre och får inte innehålla fler än 3 0000 lösenord.
 
    - **Lösenordsattack:** **Skriv ett lösenord** i lösenordsrutan som ska användas i attackrutan.
 
