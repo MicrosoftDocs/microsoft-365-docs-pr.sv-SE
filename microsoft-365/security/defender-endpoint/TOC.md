@@ -3,7 +3,7 @@
 ## [Översikt]()
 ### [Vad är Microsoft Defender för Endpoint?](microsoft-defender-endpoint.md)
 ### [Minimikrav](minimum-requirements.md)
-### [Senaste nytt i Microsoft Defender för Endpoint](whats-new-in-microsoft-defender-atp.md)
+### [Nyheter i Microsoft Defender för Endpoint](whats-new-in-microsoft-defender-atp.md)
 ### [Förhandsgranskningsfunktioner](preview.md)
 ### [Datalagring och sekretess](data-storage-privacy.md)
 ### [Översikt över Microsoft Defender Säkerhetscenter](use.md)
@@ -134,7 +134,8 @@
 ###### [Manuell distribution](linux-install-manually.md)
 ###### [Puppet-baserad distribution](linux-install-with-puppet.md)
 ###### [Ansible-baserad distribution](linux-install-with-ansible.md)
- 
+###### [Distribuera Defender för Endpoint på Linux med Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+
 ##### [Uppdatera](linux-updates.md)
  
 ##### [Konfigurera]()
@@ -144,7 +145,7 @@
 ###### [Identifiera och blockera potentiellt oönskade program](linux-pua.md)
 ###### [Schemalägga genomsökningar med Microsoft Defender för Endpoint för Linux](linux-schedule-scan-atp.md)
 ###### [Schemalägga en uppdatering av Microsoft Defender för Endpoint (Linux)](linux-update-MDE-Linux.md)
-###### [Distribuera Defender för Endpoint på Linux med Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+
  
 ##### [Felsökning]()
 ###### [Felsöka installationsproblem](linux-support-install.md)

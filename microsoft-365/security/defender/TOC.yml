@@ -93,13 +93,11 @@
             - name: Hantera
               href: manage-incidents.md
             - name: Undersöka
-              items:
-                - name: Översikt
-                  href: investigate-incidents.md
-                - name: Varningar
-                  href: investigate-alerts.md
-                - name: Användare
-                  href: investigate-users.md
+              href: investigate-incidents.md
+            - name: Incidentaviseringar
+              href: investigate-alerts.md
+            - name: Incidentanvändare
+              href: investigate-users.md
             - name: Svara på din första incident
               items:
                 - name: Introduktion
