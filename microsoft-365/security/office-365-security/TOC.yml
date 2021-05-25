@@ -22,18 +22,10 @@
               href: exchange-online-protection-overview.md
             - name: Funktioner i EOP
               href: eop-features.md
-            - name: Behörigheter i fristående EOP
-              href: feature-permissions-in-eop.md
-            - name: Administrationscenter för Exchange i fristående EOP
-              href: exchange-admin-center-in-exchange-online-protection-eop.md
-            - name: Hantera mottagare i fristående EOP
-              href: manage-recipients-in-eop.md
             - name: E-postflöde i EOP
               href: mail-flow-in-eop.md
             - name: Karantän
               href: quarantine-email-messages.md
-            - name: Granskningsrapporter i fristående EOP
-              href: auditing-reports-in-eop.md
         - name: 'Säkra bilagor för SharePoint, OneDrive och Microsoft Teams'
           href: turn-on-mdo-for-spo-odb-and-teams.md
         - name: Microsoft 365 Säkerhetscenter översikt
@@ -72,18 +64,6 @@
           href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
     - name: Distribuera
       items:
-        - name: Exchange Online Protection
-          items:
-            - name: Konfigurera principer för skydd mot nätfiske i EOP
-              href: configure-anti-phishing-policies-eop.md
-            - name: Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost
-              href: ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
-            - name: Hantera grupper i fristående EOP
-              href: manage-groups-in-eop.md
-            - name: Hantera e-postanvändare i fristående EOP
-              href: manage-mail-users-in-eop.md
-            - name: Konfigurera din EOP-tjänst
-              href: set-up-your-eop-service.md
         - name: Skydda mot hot
           href: protect-against-threats.md
         - name: Integrera Defender för Office 365 med Defender för Endpoint
@@ -98,16 +78,20 @@
           href: secure-by-default.md
         - name: Konfigurera skydd mot nätfiske-policyer i Defender för Office 365.
           href: configure-mdo-anti-phishing-policies.md
+        - name: Konfigurera principer för skydd mot nätfiske i EOP
+          href: configure-anti-phishing-policies-eop.md
         - name: Konfigurera principer för skydd mot skadlig kod
           href: configure-anti-malware-policies.md
         - name: Konfigurera principer för skräppostskydd
           href: configure-your-spam-filter-policies.md
+        - name: Konfigurera EOP för att leverera skräppost till skräppostmappar i hybrid
+          href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
+        - name: Konfigurera inställningar för skräppost i Exchange Online-postlådor
+          href: configure-junk-email-settings-on-exo-mailboxes.md
         - name: Konfigurera anslutningsfiltrering
           href: configure-the-connection-filter-policy.md
         - name: Konfigurera globala inställningar för säkra länkar i Defender för Office 365
           href: configure-global-settings-for-safe-links.md
-        - name: Konfigurera inställningar för skräppost i Exchange Online-postlådor
-          href: configure-junk-email-settings-on-exo-mailboxes.md
         - name: Konfigurera utgående skräppostfiltrering
           href: configure-the-outbound-spam-policy.md
         - name: Skapa listor med spärrade avsändare
@@ -116,7 +100,7 @@
           href: Create-safe-sender-lists-in-office-365.md
         - name: E-postautentisering
           href: email-validation-and-authentication.md
-        - name: Ge användare åtkomst till Säkerhetscentret
+        - name: Ge användarna åtkomst till Säkerhets- och efterlevnadscenter
           href: grant-access-to-the-security-and-compliance-center.md
         - name: Säkra dokument i Defender för Office 365
           href: safe-docs.md
@@ -168,10 +152,6 @@
           href: configure-advanced-delivery.md
         - name: Rekommenderade inställningar för att konfigurera EOP och Defender för Office 365-säkerhet
           href: recommended-settings-for-eop-and-office365.md
-        - name: Metodtips för konfiguration av EOP
-          href: best-practices-for-configuring-eop.md
-        - name: Skydda lokala postlådor i Kina med fristående EOP
-          href: protect-on-premises-mailboxes-with-exchange-online-protection.md
         - name: Integrera Automatiska undersökningar och svar med en anpassad lösning eller lösning från tredje part
           href: air-custom-reporting.md
         - name: Inställningar för avancerat skräppostfilter (ASF)
@@ -184,12 +164,12 @@
           href: report-junk-email-messages-to-microsoft.md
         - name: Aktivera tilläggen för Rapportera meddelande och Rapportera nätfiske
           href: enable-the-report-message-add-in.md
-        - name: Använda e-postflödesregler för att blockera meddelanden med körbara bifogade filer i EOP
-          href: reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
-        - name: Använda e-postflödesregler för att filtrera massutskick i EOP
-          href: use-transport-rules-to-configure-bulk-email-filtering.md
+        - name: Använd e-postflödesregler för att blockera meddelanden med körbara bilagor
+          href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-block-executable-attachments
+        - name: Använd e-postflödesregler för att filtrera massutskick
+          href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail
         - name: Använda e-postflödesregler för att ange SCL i meddelanden
-          href: use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
+          href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl
         - name: Automatisk rensning – skydd mot skräppost och skadlig kod
           href: zero-hour-auto-purge.md
     - name: Upptäcka
@@ -210,10 +190,10 @@
           href: reports-and-insights-in-security-and-compliance.md
         - name: Rapportera falska positiva och falska negativa i Outlook
           href: report-false-positives-and-false-negatives.md
-        - name: Regler för e-postflöde (transportregler) i fristående EOP
-          href: mail-flow-rules-transport-rules-0.md
-        - name: Köra en administratörsrapport för rollgrupp i fristående EOP
-          href: run-an-administrator-role-group-report-in-eop-eop.md
+        - name: E-postflödesregler (transportregler)
+          href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
+        - name: Kör en rapport om administratörsrollgrupp
+          href: /exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes
     - name: Undersöka
       items:
         - name: Vyer i Hotutforskaren
@@ -230,8 +210,8 @@
           href: view-email-security-reports.md
         - name: Visa flödesrapporter för e-post
           href: view-mail-flow-reports.md
-        - name: Visa administratörsgranskningsloggen i fristående EOP
-          href: view-the-admin-audit-log-eop.md
+        - name: Visa administratörsgranskningsloggen
+          href: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
         - name: Rapportering och meddelandespårning i fristående EOP
           href: reporting-and-message-trace-in-exchange-online-protection.md
         - name: Auto-vidarebefordrade meddelanden insikt
@@ -262,8 +242,8 @@
           href: mfi-domain-mail-flow-status-insight.md
         - name: Använda administratörsinsändning
           href: admin-submission.md
-        - name: Använd regler för e-postflöde för att se vad dina användare rapporterar till Microsoft
-          href: use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
+        - name: Använd e-postflödesregler för att se vad användare rapporterar till Microsoft
+          href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
         - name: Köer insikt
           href: mfi-queue-alerts-and-queues.md
     - name: Svara
@@ -346,8 +326,6 @@
           href: reference-policies-practices-and-guidelines.md
         - name: Säkerhetstips i e-postmeddelanden
           href: safety-tips-in-office-365.md
-        - name: Exempelskript för att tillämpa EOP-inställningar i flera klientorganisationer
-          href: sample-script-for-applying-eop-settings-to-multiple-tenants.md
         - name: Skicka e-post till Office 365
           href: sending-mail-to-office-365.md
         - name: Tjänster för de som inte är kunder
@@ -360,27 +338,10 @@
           href: virus-detection-in-spo.md
         - name: Vad är skillnaden mellan skräppost och massutskick?
           href: what-s-the-difference-between-junk-email-and-bulk-email.md
-        - name: S/MIME
-          href: s-mime-for-message-signing-and-encryption.md
-          items:
-            - name: S/MIME för signering och kryptering av meddelanden
-              href: s-mime-for-message-signing-and-encryption.md
-            - name: Konfigurera S/MIME-inställningar för Outlook på webben
-              href: configure-s-mime-settings-for-outlook-web-app.md
-            - name: Skicka och ta emot e-postmeddelanden som signerats och krypterats med S/MIME
-              href: send-and-receive-s-mime-signed-and-encrypted-email.md
-            - name: Synkronisera användarcertifikat med Office 365 för S/MIME
-              href: sync-user-certificates-to-office-365-for-s-mime.md
-            - name: Konfigurera en virtuell certifikatsamling för att verifiera S/MIME
-              href: set-up-virtual-certificate-collection-to-validate-s-mime.md
-            - name: Konfigurera grupper och användare i en utvecklings-/testmiljö för en politisk kampanj
-              href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
-            - name: Skapa gruppwebbplatser i en utvecklings-/testmiljö för en politisk kampanj
-              href: create-team-sites-in-a-political-campaign-dev-test-environment.md
-            - name: Flytta domäner och inställningar från en EOP-organisation till en annan
-              href: move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
-            - name: Hantera rollgrupper i fristående EOP
-              href: manage-admin-role-group-permissions-in-eop.md
+        - name: Konfigurera grupper och användare i en utvecklings-/testmiljö för en politisk kampanj
+          href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
+        - name: Skapa gruppwebbplatser i en utvecklings-/testmiljö för en politisk kampanj
+          href: create-team-sites-in-a-political-campaign-dev-test-environment.md
     - name: Microsoft 365 Defender
       href: ../defender/index.yml
     - name: Microsoft Defender för Endpoint
