@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender för Slutpunkt i Säkerhetscenter för Microsoft 365
-description: Läs mer om ändringar från Microsoft Defender Säkerhetscenter till Säkerhetscenter för Microsoft 365
-keywords: Komma igång med Microsoft 365 Säkerhetscenter, Microsoft Defender för Office 365, Microsoft Defender för Slutpunkt, MDO, MDE, enda fönsterruta av glas, konvergerad portal, säkerhetsportal, defender-säkerhetsportalen
+title: Microsoft Defender för Slutpunkt i Microsoft 365 säkerhetscenter
+description: Läs mer om ändringar från Microsoft Defender Säkerhetscenter till Microsoft 365 säkerhetscenter
+keywords: Komma igång med Microsoft 365 säkerhetscenter, Microsoft Defender för Office 365, Microsoft Defender för slutpunkt, MDO, MDE, enda fönsterruta av glas, konvergerad portal, säkerhetsportal, defender-säkerhetsportalen
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -19,14 +19,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: bad31160bb27c79f672ddd28a5fced3bf8c2ee1b
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+ms.openlocfilehash: e7cecd645d857a5c2d5e7a98c78bd3f39b68449d
+ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943047"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52639413"
 ---
-# <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft Defender för Slutpunkt i Säkerhetscenter för Microsoft 365
+# <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft Defender för Slutpunkt i Microsoft 365 säkerhetscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,50 +36,72 @@ ms.locfileid: "51943047"
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender för Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
-Det förbättrade [säkerhetscentret i Microsoft 365](overview-security-center.md) kombinerar säkerhetsfunktioner som skyddar, identifierar, undersöker och svarar på e-post, samarbete, identitet [https://security.microsoft.com](https://security.microsoft.com) och enhetshot. I det här säkerhetscentret samlas funktioner från befintliga Microsoft-säkerhetsportaler, bland annat Microsoft Defender Säkerhetscenter och Säkerhetscenter för Office 365 & efterlevnadscenter.
+## <a name="quick-reference"></a>Snabbreferens
 
-Om du är bekant med Microsoft Defender Säkerhetscenter beskriver den här artikeln några av de ändringar och förbättringar som har gjorts i det förbättrade säkerhetscentret i Microsoft 365. Det finns dock några nya och uppdaterade element som du bör känna till.
+I bilden och i tabellen nedan visas ändringar i navigeringen mellan Microsoft Defender Säkerhetscenter och Microsoft 365 säkerhetscenter.
 
-Tidigare har [Microsoft Defender Säkerhetscenter varit](/windows/security/threat-protection/microsoft-defender-atp/portal-overview) hemmet för Microsoft Defender för Endpoint. Företagssäkerhetsteam har använt det för att övervaka och hjälpa till att svara på varningar om potentiella avancerade fortlöpande hot eller databrott. För att minska antalet portaler kommer Microsoft 365-säkerhetscentret att vara ett hem för övervakning och hantering av säkerhet i dina Microsoft-identiteter, data, enheter, appar och infrastruktur.
+> [!div class="mx-imgBorder"]
+> ![Bild av vad som flyttades dit](../../media/mde-m3d-security-center.png)
 
-Microsoft Defender för slutpunkt i Säkerhetscenter i Microsoft 365 har stöd för att bevilja åtkomst till tjänstleverantörer av hanterade säkerhetstjänster [(MSSP: er)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) på samma sätt som åtkomst beviljas i [Microsoft Defender säkerhetscenter.](mssp-access.md)
+| Microsoft Defender Säkerhetscenter | Microsoft 365 Säkerhetscenter |
+|---------|---------|
+| Instrumentpaneler <ul><li>Säkerhetsåtgärder</li><li>Analys av hot</li></ul>  |home <ul><li>Analys av hot</li></ul>   |
+| Incidenter | Incidenter & aviseringar |
+| Enhetsinventering | Enhetsinventering |
+| Varningskö | Incidenter & aviseringar |
+| Automatiserade undersökningar | Åtgärdscenter |
+| Avancerad jakt | Jakt |
+| Rapporter | Rapporter |
+| Partners & API:er | Partners & API:er |
+| Hot & sårbarhetshantering | Sårbarhetshantering |
+| Utvärdering och självstudiekurser | Utvärderingskurser & självstudiekurser |
+| Konfigurationshantering | Konfigurationshantering |
+| Inställningar | Inställningar | 
+
+Det förbättrade [Microsoft 365 på](overview-security-center.md) kombinerar säkerhetsfunktioner som skyddar, identifierar, undersöker och svarar på e-post, samarbete, identitet [https://security.microsoft.com](https://security.microsoft.com) och enhetshot. I det här säkerhetscentret samlas funktioner från befintliga Microsoft-säkerhetsportaler, Microsoft Defender Säkerhetscenter och Säkerhets- Office 365 & Säkerhetscenter.
+
+Om du är bekant med Microsoft Defender Säkerhetscenter här artikeln beskriver vi några av de ändringar och förbättringar som har gjorts i Microsoft 365 säkerhetscenter. Det finns dock några nya och uppdaterade element som du bör känna till.
+
+Historiskt sett har [Microsoft Defender Säkerhetscenter](/windows/security/threat-protection/microsoft-defender-atp/portal-overview) varit hemmet för Microsoft Defender för Endpoint. Företagssäkerhetsteam har använt det för att övervaka och hjälpa till att svara på varningar om potentiella avancerade fortlöpande hot eller databrott. För att minska antalet portaler blir säkerhetscentret i Microsoft 365 ett hem för övervakning och hantering av säkerhet i dina Microsoft-identiteter, data, enheter, appar och infrastruktur.
+
+Microsoft Defender för slutpunkt i Microsoft 365 säkerhetscenter har stöd för att bevilja åtkomst till hanterade säkerhetstjänstleverantörer [(MSSP: er)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) på samma sätt som åtkomst beviljas i [Microsoft Defender säkerhetscenter.](mssp-access.md)
 
 
 > [!IMPORTANT]
-> Vad du ser i Microsoft 365 Säkerhetscenter beror på dina aktuella prenumerationer. Om du till exempel inte har en licens för Microsoft Defender för Office 365 visas inte avsnittet E& samarbete.
+> Vad du ser i Microsoft 365 säkerhetscenter beror på dina aktuella prenumerationer. Om du till exempel inte har en licens för Microsoft Defender för Office 365 visas inte avsnittet E& samarbete.
 
 >[!Note]
 >Den nya enhetliga portalen är inte tillgänglig för:
->- US Government Community Cloud (GCC)
->- US Government Community Cloud High (GCC High)
+>- Us Government Community Cloud (GCC)
+>- Us Government Community Cloud High (GCC High)
 >- US Department of Defense
 >- Alla amerikanska statliga myndigheter med kommersiella licenser
 
-Ta en titt på det förbättrade säkerhetscentret för Microsoft 365: [https://security.microsoft.com](https://security.microsoft.com) .
+Ta en titt på det Microsoft 365 säkerhetscentret: [https://security.microsoft.com](https://security.microsoft.com) .
 
 Läs mer om fördelarna: [Översikt för Microsoft 365 Säkerhetscenter](overview-security-center.md)
 
 ## <a name="whats-changed"></a>Se vad som har ändrats
 
-Den här tabellen är en snabbreferens över ändringarna mellan Microsoft Defender Säkerhetscenter och Säkerhetscenter för Microsoft 365.
+Den här tabellen är en snabbreferens för ändringar mellan Microsoft Defender Säkerhetscenter och Microsoft 365 säkerhetscenter.
 
 ### <a name="alerts-and-actions"></a>Aviseringar och åtgärder
 
-|**Område**  |**Beskrivning av ändring** |
+| Område | Beskrivning av ändring |
 |---------|---------|
-| [Incidenter & aviseringar](incidents-overview.md)  | I Säkerhetscenter för Microsoft 365 kan du hantera incidenter och aviseringar för alla slutpunkter, e-post och identiteter. Vi har konvergerat upplevelsen för att lättare hitta relaterade händelser. Mer information finns i [Incidentöversikt.](incidents-overview.md)   |
-| [Jakt](advanced-hunting-overview.md)  |  Om du ändrar regler för anpassad identifiering som skapats i Microsoft Defender för Endpoint för att inkludera identitets- och e-posttabeller flyttas de automatiskt till Microsoft 365 Defender. Motsvarande aviseringar visas också i Microsoft 365 Defender. Mer information om dessa ändringar finns i [Migrera regler för anpassad identifiering.](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules) <br><br>Tabellen `DeviceAlertEvents` för avancerad sökning är inte tillgänglig i Microsoft 365 Defender. Om du vill söka efter enhetsspecifik aviseringsinformation i Microsoft 365 Defender kan du använda tabellerna och tabellerna för att få plats med ännu mer information från `AlertInfo` `AlertEvidence` en rad olika källor. Skapa nästa enhetsrelaterade fråga genom att följa [Skrivfrågor utan DeviceAlertEvents.](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents)|
-|[Åtgärdscenter](m365d-action-center.md)    | Listor med väntande och slutförda åtgärder som utförts efter automatiserade undersökningar och åtgärdsåtgärder. Tidigare listade Åtgärdscenter i Microsoft Defender Säkerhetscenter väntande och slutförda åtgärder för åtgärder som utförts endast på enheter, medan automatiska undersökningar listade aviseringar och status. I det förbättrade Säkerhetscenter för Microsoft 365 sammanför Åtgärdscenter åtgärder och undersökningar för e-post, enheter och användare – allt på en och samma plats.  |
+| [Incidenter & aviseringar](incidents-overview.md)  | I säkerhetscentret Microsoft 365 du hantera incidenter och aviseringar för alla slutpunkter, e-post och identiteter. Vi har konvergerat upplevelsen för att lättare hitta relaterade händelser. Mer information finns i [Incidentöversikt.](incidents-overview.md)   |
+| [Jakt](advanced-hunting-overview.md)  |  Om du ändrar regler för anpassad identifiering som skapats i Microsoft Defender för Endpoint för att inkludera identitets- och e-posttabeller flyttas de automatiskt till Microsoft 365 Defender. Motsvarande aviseringar visas också i Microsoft 365 Defender. Mer information om dessa ändringar finns i [Migrera regler för anpassad identifiering.](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules) <br><br>Tabellen `DeviceAlertEvents` för avancerad sökning är inte tillgänglig i Microsoft 365 Defender. Om du vill söka efter enhetsspecifik aviseringsinformation i Microsoft 365 Defender kan du använda tabellerna och dem för att ge utrymme för ännu mer information från `AlertInfo` `AlertEvidence` en rad olika källor. Skapa nästa enhetsrelaterade fråga genom att följa [Skrivfrågor utan DeviceAlertEvents.](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents)|
+|[Åtgärdscenter](m365d-action-center.md)    | Listor med väntande och slutförda åtgärder som utförts efter automatiserade undersökningar och åtgärdsåtgärder. Åtgärdscenter i den Microsoft Defender Säkerhetscenter listade väntande och slutförda åtgärder för åtgärder som utförts endast på enheter, medan automatiska undersökningar listade aviseringar och status. I det Microsoft 365 säkerhetscentret sammanför Åtgärdscenter åtgärder och undersökningar för e-post, enheter och användare – allt på en och samma plats.  |
 | [Analys av hot](threat-analytics.md) |  Flyttad högst upp i navigeringsfältet så att det blir lättare att hitta och använda den. Innehåller nu information om hot för både slutpunkter och e-post och samarbete.    |
 
 ### <a name="endpoints"></a>Slutpunkter
 
-|**Område**  |**Beskrivning av ändring**  |
+| Område | Beskrivning av ändring |
 |---------|---------|
-|Sök   |  I stället för att visas som rubrik flyttas sökfältet i Microsoft Defender för slutpunkt under avsnittet Slutpunkter. Du kan fortsätta att söka efter enheter, filer, användare, URL:er, IP-adresser, säkerhetsproblem, programvara och rekommendationer.  |
+|Söka   |  I stället för att visas som rubrik flyttas sökfältet i Microsoft Defender för slutpunkt under avsnittet Slutpunkter. Du kan fortsätta att söka efter enheter, filer, användare, URL:er, IP-adresser, säkerhetsproblem, programvara och rekommendationer.  |
 |[Instrumentpanelen](/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  Det här är din instrumentpanel för säkerhetsåtgärder. Se en översikt över hur många aktiva aviseringar som utlöstes, vilka enheter som är i risktagande, vilka användare som är i riskzonen och allvarlighetsnivå för aviseringar, enheter och användare. Du kan också se om några enheter har sensorproblem, din allmänna tjänsthälsa och hur omatchade aviseringar har upptäckts. |
 |Enhetsinventering | Inga ändringar. |
-|[Sårbarhetshantering](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    Namnet förkortades så att det passar i navigeringsfönstret. Det är samma som avsnittet om hot och sårbarhetshantering, med alla sidor undertill.     |
+|[Sårbarhetshantering](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    Namnet förkortades så att det passar i navigeringsfönstret. Det är samma som Hantering av hot och säkerhetsrisker, med alla sidor undertill.     |
 | Partners och API:er | Inga ändringar. |
 | Utvärderingar & självstudiekurser    |     Nya test- och inlärningsfunktioner.     |
 | Konfigurationshantering   |  Inga ändringar.  |
@@ -92,11 +114,11 @@ Den här tabellen är en snabbreferens över ändringarna mellan Microsoft Defen
 
 ### <a name="access-and-reporting"></a>Access och rapportering
 
-|**Område**  |**Beskrivning av ändring**  |
+| Område | Beskrivning av ändring |
 |---------|---------|
 | Rapporter  | Se rapporter för slutpunkter och e& för samarbete, inklusive skydd mot hot, enhetshälsa och efterlevnad och sårbara enheter. |
-| Hälsa  |  Länkar för närvarande till sidan "Tjänstens hälsa" i administrationscentret för [Microsoft 365.](https://admin.microsoft.com/) |
-| Inställningar |  Hantera dina inställningar för Microsoft 365 Säkerhetscenter, Microsoft 365 Defender, Slutpunkter, E-& samarbete, identiteter och enhetsidentifiering.   |
+| Hälsa  |  Länkar för närvarande till sidan "Tjänstens hälsa" i [Microsoft 365 administrationscentret](https://admin.microsoft.com/). |
+| Inställningar |  Hantera dina inställningar för säkerhetscentret i Microsoft 365, Microsoft 365 Defender, Slutpunkter, E& samarbete, identiteter och enhetsidentifiering.   |
 
 ## <a name="microsoft-365-security-navigation-and-capabilities"></a>Microsoft 365 säkerhetsnavigering och funktioner
 
@@ -122,7 +144,7 @@ Sök proaktivt efter hot, skadlig programvara och skadlig aktivitet i dina slutp
 
 Åtgärdscenter visar de undersökningar som skapats med automatiska undersöknings- och svarsfunktioner. Den här automatiserade självläkningen i Microsoft 365 Defender kan hjälpa säkerhetsteam genom att automatiskt svara på specifika händelser.
 
-[Läs mer om Åtgärdscenter](m365d-action-center.md)
+[Läs mer om Åtgärdscenter](m365d-action-center.md).
 
 ### <a name="threat-analytics"></a>Analys av hot
 
@@ -134,7 +156,7 @@ Få information om hot från Microsofts säkerhetsexpert. Hotanalys hjälper sä
 
 Du kan komma åt hotanalyser antingen från det övre vänstra navigeringsfältet i Microsoft 365 säkerhetscenter eller från ett dedikerat instrumentpanelskort som visar de viktigaste hoten för din organisation.
 
-Läs mer om hur du [spåra och svara på nya hot med hjälp av hotanalys](./threat-analytics.md)
+Läs mer om hur du [spårar och svarar på nya hot med hotanalyser.](./threat-analytics.md)
 
 ### <a name="endpoints-section"></a>Avsnittet Slutpunkter
 
@@ -150,14 +172,14 @@ Visa rapporter, ändra dina inställningar och ändra användarroller.
 
 ### <a name="siem-api-connections"></a>SIEM API-anslutningar
 
-Om du använder [Defender för slutpunkt SIEM API](../defender-endpoint/enable-siem-integration.md)kan du fortsätta att göra det. Vi har lagt till nya länkar i API-nyttolasten som pekar på aviseringssidan eller incidentsidan i Microsoft 365-säkerhetsportalen. Nya API-fält innehåller LinkToMTP och IncidentLinkToMTP. Mer information finns i Omdirigera [konton från Microsoft Defender för Endpoint till Säkerhetscenter för Microsoft 365.](./microsoft-365-security-mde-redirection.md)
+Om du använder [Defender för slutpunkt SIEM API](../defender-endpoint/enable-siem-integration.md)kan du fortsätta att göra det. Vi har lagt till nya länkar i API-nyttolasten som pekar på aviseringssidan eller incidentsidan i Microsoft 365 säkerhetsportalen. Nya API-fält innehåller LinkToMTP och IncidentLinkToMTP. Mer information finns i [Omdirigera konton från Microsoft Defender för Endpoint till säkerhetscentret Microsoft 365 Microsoft Defender.](./microsoft-365-security-mde-redirection.md)
 
 ### <a name="email-alerts"></a>E-postaviseringar
 
-Du kan fortsätta att använda e-postaviseringar för Defender för Endpoint. Vi har lagt till nya länkar i e-postmeddelandena som pekar på aviseringssidan eller incidentsidan i säkerhetscentret i Microsoft 365. Mer information finns i Omdirigera [konton från Microsoft Defender för Endpoint till Säkerhetscenter för Microsoft 365.](./microsoft-365-security-mde-redirection.md)
+Du kan fortsätta att använda e-postaviseringar för Defender för Endpoint. Vi har lagt till nya länkar i e-postmeddelandena som pekar på aviseringssidan eller incidentsidan i Microsoft 365 Säkerhetscenter. Mer information finns i [Omdirigera konton från Microsoft Defender för Endpoint till säkerhetscentret Microsoft 365 Microsoft Defender.](./microsoft-365-security-mde-redirection.md)
 
 ## <a name="related-information"></a>Relaterad information
 
 - [Microsoft 365 Säkerhetscenter](overview-security-center.md)
-- [Microsoft Defender för Slutpunkt i Säkerhetscenter för Microsoft 365](microsoft-365-security-center-mde.md)
-- [Omdirigera konton från Microsoft Defender för Slutpunkt till Säkerhetscenter för Microsoft 365](microsoft-365-security-mde-redirection.md)
+- [Microsoft Defender för Slutpunkt i Microsoft 365 säkerhetscenter](microsoft-365-security-center-mde.md)
+- [Omdirigera konton från Microsoft Defender för Slutpunkt till Microsoft 365 säkerhetscenter](microsoft-365-security-mde-redirection.md)

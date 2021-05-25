@@ -21,12 +21,12 @@ description: I Microsoft 365 – läs mer om de funktioner som har lagts till de
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: b75c6be901dfe2bcfe9a0d8fad8fbb56eecd34d6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 964689c431b45671a92dda62ccf8a083291213a3
+ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535752"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52639558"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Vad är nytt i Microsoft 365 administrationscenter
 
@@ -49,6 +49,24 @@ Och om du vill veta vad som är nytt i andra Microsoft-molntjänster:
 - [Vad är nytt i SharePoint administrationscenter](/sharepoint/what-s-new-in-admin-center)
 - [Office uppdateringar](/OfficeUpdates/)
 - [Så här kontrollerar du Windows släpper hälsa](/windows/deployment/update/check-release-health)
+
+## <a name="may-2021"></a>Maj 2021
+
+### <a name="admin-mobile-app"></a>Mobilapp för administratörer
+
+### <a name="keep-track-of-support-ticket-updates-using-the-admin-mobile-app"></a>Håll reda på uppdateringar av support ärende med admin-mobilappen
+
+För alla tjänstförfrågningar som skapats i din klientorganisation kan du nu hålla reda på statusen för en biljett, visa biljettinformation och ge /begär ytterligare information genom att lägga till anteckningar & bifogade filer. 
+
+:::image type="content" source="../media/whats-new-track-support-tickets.png" alt-text="Skärmbild: Spåra uppdateringar av support ärende":::
+
+### <a name="stay-on-top-of-all-the-major-updates-to-the-app-and-your-microsoft-365-subscription"></a>Håll dig borta från alla de viktigaste uppdateringarna för appen och din Microsoft 365 prenumeration 
+
+- Håll dig borta från alla de viktigaste uppdateringarna för Microsoft 365-prenumerationen via push-meddelanden i Meddelandecenter (nu aktiverat som standard). 
+
+- Håll reda på de senaste funktionerna som är tillgängliga i appen **med hjälp av avsnittet Nyheter.** Gå till **Inställningar**  >  **Vad är nytt?**
+
+:::image type="content" source="../media/whats-new-updates.png" alt-text="Skärmbild: Spåra större uppdateringar och funktioner":::
 
 ## <a name="april-2021"></a>April 2021
 
