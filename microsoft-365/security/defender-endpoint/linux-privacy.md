@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cbf68b6ce8397f0339b374a041ba2629b20db699
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 4be0960e8ba868df2acb313b171a08f667c287a7
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933343"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651338"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Sekretess för Microsoft Defender för Endpoint i Linux
 
@@ -68,7 +68,7 @@ Exempeldata används för att förbättra skyddsfunktioner i produkten genom att
 Det finns tre nivåer för kontroll av exempelinskick:
 
 - **Ingen**: inga misstänkta exempel skickas till Microsoft.
-- **Kassaskåp**: endast misstänkta exempel som inte innehåller personligt identifierbar information skickas automatiskt. Det här är standardvärdet för den här inställningen.
+- **Valv**: endast misstänkta exempel som inte innehåller personligt identifierbar information skickas automatiskt. Det här är standardvärdet för den här inställningen.
 - **Alla**: alla misstänkta exempel skickas till Microsoft.
 
 ## <a name="manage-privacy-controls-with-policy-settings"></a>Hantera sekretesskontroller med principinställningar
@@ -135,7 +135,8 @@ Följande fält samlas in:
 | cloud_service.service_uri                           | URI som används för att kommunicera med molnet. |
 | cloud_service.diagnostic_level                      | Diagnostiknivå för enheten (obligatoriskt, valfritt). |
 | cloud_service.automatic_sample_submission           | Automatisk exempelinskickningsnivå för enheten (ingen, säker, alla). |
-| edr.early_preview                                   | Om enheten ska köra EDR-funktioner för tidig förhandsgranskning. |
+| cloud_service.automatic_definition_update_enabled   | Om automatisk definitionsuppdatering är aktiverat eller inte. |
+| edr.early_preview                                   | Om enheten ska köras med Identifiering och åtgärd på slutpunkt tidiga förhandsversionsfunktioner. |
 | edr.group_id                                        | Gruppidentifierare som används av identifierings- och svarskomponenten. |
 | edr.tags                                            | Användardefinierade taggar. |
 | funktioner. \[ valfritt funktionsnamn\]                  | Lista över förhandsgranskningsfunktioner, tillsammans med huruvida de är aktiverade eller inte. |
@@ -207,6 +208,7 @@ Följande fält samlas in:
 | antivirus_engine.scan_cache_maximum                | Storleken på produktcachen. |
 | antivirus_engine.maximum_scan_threads              | Maximalt antal trådar som används för genomsökning. |
 | antivirus_engine.threat_restoration_exclusion_time | Time out before a file restored from the quarantine can beected again. |
+| antivirus_engine.threat_type_settings              | Konfiguration för hur olika hottyper hanteras av produkten. |
 | filesystem_scanner.full_scan_directory             | Fullständig genomsökningskatalog. |
 | filesystem_scanner.quick_scan_directories          | Lista med kataloger som används i snabbsökning. |
 | edr.latency_mode                                   | Svarstidsläge som används av identifierings- och svarskomponenten. |

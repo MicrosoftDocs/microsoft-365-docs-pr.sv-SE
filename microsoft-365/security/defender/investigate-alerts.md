@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b9bbe058042a49586e8515fde85371b1487e8d25
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6a34269c414f59d40c9160d5728159ed9cddf976
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297134"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651361"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Undersöka aviseringar i Microsoft 365 Defender
 
@@ -72,14 +72,12 @@ Du kan också välja **åtgärden Öppna huvudaviseringssidan** i **fönstret Ha
 
 En aviseringssida består av följande avsnitt: 
 
-- Aviseringsartikel
-- Åtgärder som vidtas (inklusive påverkade tillgångar)
-- Relaterade händelser
+- Aviseringsartikel, som är kedjan med händelser och aviseringar som är relaterade till den här aviseringen i kronologisk ordning
 - Sammanfattningsinformation
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Exempel på informationssidan för en avisering i Microsoft 365 säkerhetscenter":::
 
-På en aviseringssida kan du välja ellipsen (**...**) bredvid en enhet för att se tillgängliga åtgärder, till exempel öppna sidan för specifika tillgångar eller vidta specifika åtgärdssteg.
+På en aviseringssida kan du välja punkterna (**...**) bredvid en enhet för att se tillgängliga åtgärder, till exempel öppna aviseringssidan eller länka aviseringen till en annan händelse.
 
 ### <a name="analyze-affected-assets"></a>Analysera påverkade tillgångar
 

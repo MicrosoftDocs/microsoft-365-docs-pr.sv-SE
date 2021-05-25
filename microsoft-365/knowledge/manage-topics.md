@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: ba8f27c90f9c84729a10f461e85b2e1441b49549
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f2429b0ffdd4a238bc9322ae9199eebbbfd407b5
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625407"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651169"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Hantera ämnen i ämnescentret i Microsoft Viva-ämnen
 
@@ -119,3 +119,11 @@ Observera att du fortfarande kan välja att avvisa ett bekräftat avsnitt. Det g
 Publicerade ämnen har redigerats så att specifik information alltid visas för dem som stöter på sidan. Här listas även manuellt skapade ämnen.
 
    ![Hantera ämnen](../media/knowledge-management/manage-topics-new.png)
+
+## <a name="topic-count-dashboard"></a>Instrumentpanel för antal ämnen
+
+Med det här diagrammet i instrumentpanelsvyn kan du se antalet ämnen i Ämnescenter för Viva. I diagrammet visas antalet ämnen per livscykelfas för ämnen och även hur antal ämnen har trendat över tid. Knowledge managers can visually monitor the rate at which new topics are discovered by AI and the rate at which topics are getting confirmed or published by the knowledge manager or user actions.
+
+Knowledge Managers might see a different count of topics represented in the list of topics on the **Manage topics** page than they see in the dashboard. Det beror på att en kunskapshanterare kanske inte har åtkomst till alla ämnen. Antalet som visas i instrumentpanelsvyn tas innan du använder behörighets trimning. 
+
+   ![Skärmbild av instrumentpanel för ämnesräkning](../media/knowledge-management/topic-count-dashboard.png)

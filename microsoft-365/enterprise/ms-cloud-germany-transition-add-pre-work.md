@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: Arbeta i förväg när du flyttar från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365 i den nya tyska datacenterområdet.'
-ms.openlocfilehash: f872a75ed11bfd53c2100f1370a4e22426437bff
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 66f23d33e9e55c432c33e9d90549d33ea42536db
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344704"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651026"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Aktiviteter före migreringen från Microsoft Cloud Deutschland
 
@@ -205,7 +205,7 @@ Om du använder en tredjepartstjänst eller verksamhetsbaserade appar (LOB) som 
 Om du använder samma Azure Active Directory-identitetspartition för Office 365 och Microsoft Azure i Microsoft Cloud Deutschland-instansen ska du se till att du förbereder dig för en kunddriven migrering av Microsoft Azure-tjänster.
 
 > [!NOTE]
-> Migreringen av dina Microsoft Azure-tjänster måste inte startas innan Office 365-klientorganisationen har nått migrering fas 3 och måste slutföras innan migreringsfasen 8 har slutförts.
+> Migreringen av dina Microsoft Azure-tjänster kanske inte startar innan Office 365-klientorganisationen har nått migreringsfasen 9 och måste slutföras innan migreringsfasen 10 har slutförts.
 
 Kunder som använder Office 365 och Azure-resurser (till exempel nätverk, beräkning och lagring) migrerar resurser till instansen Office 365-tjänster. Den här migreringen är kundens ansvar. Inlägg i Meddelandecenter signalerar start. Migreringen måste slutföras innan Azure AD-organisationen slutförs i Office 365-tjänstmiljön. För Azure-migreringar, se Azure-migreringsspelboken, [Översikt över migreringsvägledning för Azure Germany.](https://docs.microsoft.com/azure/germany/germany-migration-main)
 

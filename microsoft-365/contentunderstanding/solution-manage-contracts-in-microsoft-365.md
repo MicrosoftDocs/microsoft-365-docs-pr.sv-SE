@@ -12,17 +12,19 @@ ms.collection: m365solution-managecontracts
 search.appverid: ''
 localization_priority: None
 ROBOTS: ''
-description: Lär dig hur du hanterar kontrakt med en Microsoft 365 lösning av SharePoint Syntex, Microsoft Teams och Power Automate.
-ms.openlocfilehash: 18866425cb331b01525dd488a6688608a3d1e559
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Lär dig hur du hanterar kontrakt med en Microsoft 365 lösning av SharePoint Syntex, SharePoint listor, Microsoft Teams och Power Automate.
+ms.openlocfilehash: 219ab13eb5787bef566ede0c5dc856da29d96837
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636224"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651290"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Hantera kontrakt med en Microsoft 365 lösning
 
 I den här artikeln beskrivs hur du skapar en kontraktshanteringslösning för organisationen med hjälp SharePoint Syntex och komponenter i Microsoft 365. Det ger dig ett ramverk som hjälper dig att planera och skapa en lösning som passar dina unika affärsbehov. Även om den här lösningen inte passar dina affärsbehov som helhet kan delar av den användas i din planering för att skapa en anpassad lösning för kontraktshantering.
+
+*Det här innehållet innehåller dokument Microsoft 365 en lösning som utvecklats av Thomas ThomasBach med Teamet modern arbetslösningsstrategi på Microsoft.*
 
 ## <a name="identify-the-business-problem"></a>Identifiera affärsproblemet
 

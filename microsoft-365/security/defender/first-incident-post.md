@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 44f583d32de166fe3d68a182406eb3a2ee814084
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6b5311a2923d7b299ba4f70ef3c2e8d91809e7c8
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297158"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651374"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Steg 3. Granska ditt första incident efter incidenten
 
@@ -36,7 +36,7 @@ ms.locfileid: "52297158"
 **Gäller för:**
 - Microsoft 365 Defender
 
-National Institute of Standards and Technology (NIST) rekommenderar att organisationer måste granska incidenten för att kunna lära sig av den och lära sig och förbättra säkerheten, när alla åtgärder har vidtagits för att återställa attackerna. Att utvärdera olika aspekter av incidenthantering är viktigt i förberedelsen för nästa incident.
+National Institute of Standards and Technology (NIST) rekommenderar att organisationer måste granska händelsen för att kunna lära sig av det och förbättra säkerhetsattacker eller -processer när alla åtgärder har genomförts. Att utvärdera olika aspekter av incidenthantering är viktigt i förberedelsen för nästa incident.
 
 Microsoft 365 Defender kan hjälpa till med att utföra aktiviteter efter incidenter genom att skicka ett meddelande till organisationen med aviseringar som stämmer överens med [MITRE ATT&CK Framework.](https://attack.mitre.org/) Alla etikettattacker på Microsoft Defender-lösningar i enlighet med en ATT&CK-taktik eller -teknik. 
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b2897766570c6ef8979a7944a687ba024e55b3ce
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 2884ffc695abc1c6b4b5be9bbd7c9ad37ad05439
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934555"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651302"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>Sekretess för Microsoft Defender för Slutpunkt i macOS
 
@@ -133,7 +133,8 @@ Följande fält samlas in:
 | cloud_service.service_uri                           | URI som används för att kommunicera med molnet. |
 | cloud_service.diagnostic_level                      | Diagnostiknivå för enheten (obligatoriskt, valfritt). |
 | cloud_service.automatic_sample_submission           | Om automatisk exempelinskickning är aktiverat eller inte. |
-| edr.early_preview                                   | Om enheten ska köra EDR-funktioner för tidig förhandsgranskning. |
+| cloud_service.automatic_definition_update_enabled   | Om automatisk definitionsuppdatering är aktiverat eller inte. |
+| edr.early_preview                                   | Om enheten ska köras med Identifiering och åtgärd på slutpunkt tidiga förhandsversionsfunktioner. |
 | edr.group_id                                        | Gruppidentifierare som används av identifierings- och svarskomponenten. |
 | edr.tags                                            | Användardefinierade taggar. |
 | funktioner. \[ valfritt funktionsnamn\]                  | Lista över förhandsgranskningsfunktioner, tillsammans med huruvida de är aktiverade eller inte. |
@@ -165,7 +166,7 @@ Följande fält samlas in:
 | ------------------------------ | ----------- |
 | v1_crash_count                 | Antal gånger som V1-motorprocessen kraschade varje timme på klientdatorn  |
 | v2_crash_count                 | Antal gånger som V2-motorprocessen kraschade varje timme på klientdatorn  |
-| EDR_crash_count                | Antal gånger som EDR-processen kraschade varje timme på klientdatorn        |
+| EDR_crash_count                | Antal gånger Identifiering och åtgärd på slutpunkt kraschade varje timme på klientdatorn        |
 
 **Statistik över Kernel-tillägg**
 
@@ -219,6 +220,7 @@ Följande fält samlas in:
 | antivirus_engine.scan_cache_maximum                | Storleken på produktcachen. |
 | antivirus_engine.maximum_scan_threads              | Maximalt antal trådar som används för genomsökning. |
 | antivirus_engine.threat_restoration_exclusion_time | Time out before a file restored from the quarantine can beected again. |
+| antivirus_engine.threat_type_settings              | Konfiguration för hur olika hottyper hanteras av produkten. |
 | filesystem_scanner.full_scan_directory             | Fullständig genomsökningskatalog. |
 | filesystem_scanner.quick_scan_directories          | Lista med kataloger som används i snabbsökning. |
 | edr.latency_mode                                   | Svarstidsläge som används av identifierings- och svarskomponenten. |

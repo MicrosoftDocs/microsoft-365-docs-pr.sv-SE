@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a1e07ac2e2e544605f04e9090177004db64d2f04
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: d01e1d847a8932d95e645a89eff15cf0793491e5
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995003"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651278"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Vad är nytt i Microsoft Defender för slutpunkt på Mac
 
@@ -37,6 +37,14 @@ ms.locfileid: "51995003"
 
 > [!IMPORTANT]
 > På macOS 11 (Big Sur) kräver Microsoft Defender för Endpoint ytterligare konfigurationsprofiler. Om du är en befintlig kund som uppgraderar från tidigare versioner av macOS distribuerar du de ytterligare konfigurationsprofiler som listas på [den här sidan.](mac-sysext-policies.md)
+
+## <a name="1012964-20121042129640"></a>101.29.64 (20.121042.12964.0)
+
+- Från och med den här versionen kommer hot som upptäckts under sökning på begäran av antivirus som utlöses via kommandoradsklienten att åtgärdas automatiskt. Hot som upptäckts vid genomsökningar som utlösts via användargränssnittet kräver fortfarande manuell åtgärd.
+- `mdatp diagnostic real-time-protection-statistics` stöder nu ytterligare två växlar:
+  - `--sort`: Sorterar resultatet fallande efter totalt antal genomsökta filer
+  - `--top N`: visar de översta N-resultaten (fungerar bara om `--sort` anges också)
+- Prestandaförbättringar (särskilt för när IST. används) & felkorrigeringar
 
 ## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0)
 
@@ -114,7 +122,7 @@ ms.locfileid: "51995003"
 
 ## <a name="1010723"></a>101.07.23
 
-- Nya fält har lagts till i utdata `mdatp --health` för kontroll av status för passivt läge och EDR-grupp-ID
+- Nya fält har lagts till i utdata `mdatp --health` för att kontrollera status för passivt läge och Identifiering och åtgärd på slutpunkt grupp-ID
 
   > [!NOTE]
   > `mdatp --health` ersätts med `mdatp health` i en framtida produktuppdatering.
@@ -178,9 +186,9 @@ ms.locfileid: "51995003"
 ## <a name="1008691"></a>100.86.91
 
 > [!CAUTION]
-> För att säkerställa det mest fullständiga skyddet för dina macOS-enheter och i justeringen med Apple kommer den inbyggda säkerhetsuppdateringen för macOS att stoppas för OS-versioner som är äldre än [nuvarande – 2], MDATP för Mac-distribution och uppdateringar stöds inte längre på macOS Sierra [10.12]. MDATP för Mac-uppdateringar och förbättringar levereras till enheter med versionerna Catalina [10.15], Mojave [10.14] och High Sierra [10.13]. 
+> För att säkerställa det mest fullständiga skyddet för dina macOS-enheter och i justeringen med Apple kommer den inbyggda säkerhetsuppdateringen av macOS att stoppas för OS-versioner som är äldre än [nuvarande – 2], MDATP för Mac-distribution och uppdateringar stöds inte längre på macOS Sierra [10.12]. MDATP för Mac-uppdateringar och förbättringar levereras till enheter med versionerna Catalina [10.15], Mojave [10.14] och High Sierra [10.13]. 
 >
-> Om du redan har MDATP för Mac distribuerat till dina Sierra[10.12]-enheter bör du uppgradera till den senaste macOS-versionen för att undvika risken att förlora skydd.
+> Om du redan har MDATP för Mac distribuerat till dina Sierra-enheter [10.12] bör du uppgradera till den senaste macOS-versionen för att undvika risken att förlora skydd.
 
 - Prestandaförbättringar & felkorrigeringar
 
@@ -231,6 +239,6 @@ ms.locfileid: "51995003"
   > Mekanismen för att bevilja detta medgivande beror på hur du har distribuerat Microsoft Defender för Endpoint:
   >
   > - För manuell distribution finns de uppdaterade instruktionerna i [avsnittet Om manuell](mac-install-manually.md#how-to-allow-full-disk-access) distribution.
-  > - För hanterade distributioner, se de uppdaterade instruktionerna i [DEN JAMF-baserade distributionen](mac-install-with-jamf.md) och [i avsnitten om Microsoft Intune-baserad](mac-install-with-intune.md#create-system-configuration-profiles) distribution.
+  > - För hanterade distributioner, se de uppdaterade anvisningarna i [JAMF-baserad](mac-install-with-jamf.md) [distribution Microsoft Intune distributionsbaserade ämnen.](mac-install-with-intune.md#create-system-configuration-profiles)
 
 - Prestandaförbättringar & felkorrigeringar

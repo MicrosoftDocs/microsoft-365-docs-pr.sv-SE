@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: Sammanfattning Förstå åtgärderna i migreringsfaserna och hur de påverkar flytten från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365 i den nya tyska datacenterregion.
-ms.openlocfilehash: a99103083c8fabae3934a6622acc55a59ff5c9a0
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: df2407deeaa3cd6e0b0925b48f888a25c0435042
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346298"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651122"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Åtgärder i migreringsfaser och påverkan på migreringen från Microsoft Cloud Deutschland
 
@@ -169,7 +169,7 @@ Kunder som inte utför de här DNS-uppdateringarna vid slutförande av migrering
 ### <a name="exchange-online-powershell"></a>Exchange Online PowerShell
 **Gäller för:** Exchange Online med hjälp Exchange Online PowerShell
 
-Under migreringsfasen kan användning av **PowerShell-cmdlets New-MigrationEndpoint,** **Set-MigrationEndpoint** och **Test-MigrationsServerAvailability** resultera i fel (fel på proxy). Det här inträffar när skiljebrevlådan har migrerats till hela världen men administratörspostlådan inte har det eller vice versa. Du kan lösa problemet genom att använda skiljepostlådan som tips om routning i **ConnectionUri** när du skapar PowerShell-klientsessionen. Till exempel:
+Under migreringsfasen kan användning av **PowerShell-cmdlets New-MigrationEndpoint,** **Set-MigrationEndpoint** och **Test-MigrationsServerAvailability** resultera i fel (fel på proxy). Det här inträffar när skiljebrevlådan har migrerats till hela världen men administratörspostlådan inte har det eller vice versa. Du kan lösa problemet genom att använda skiljepostlådan som tips om routning i **ConnectionUri** när du skapar PowerShell-klientsessionen. Ett exempel:
 
 ```powershell
 New-PSSession 
@@ -305,12 +305,15 @@ Om du har verksamhetsbaserade appar ska du kontrollera [](ms-cloud-germany-trans
 
 **Gäller för:** Alla kunder
 
-När klientorganisationen Office 365 det sista steget av migreringen (Azure AD-slutförande (fas 9)) är alla tjänster över hela världen. Inga program eller användare ska ha åtkomst till resurser för klientorganisationen mot någon av Microsoft Cloud Deutschland-slutpunkterna. Efter 30 dagar efter att slutförandet kommer Microsoft Cloud Deutschland Azure AD-tjänsten att stoppa slutpunktsåtkomst för den övergångde klientorganisationen. Slutpunktsbegäranden, till exempel autentisering, kommer att misslyckas från och med nu mot Microsoft Cloud Deutschland-tjänsten. 
+När klientorganisationen Office 365 det sista steget av migreringen (fas 9: Azure AD-slutförande) är alla tjänster över hela världen. Inga program eller användare ska ha åtkomst till resurser för klientorganisationen mot någon av Microsoft Cloud Deutschland-slutpunkterna. Efter 30 dagar efter att slutförandet kommer Microsoft Cloud Deutschland Azure AD-tjänsten att stoppa slutpunktsåtkomst för den övergångde klientorganisationen. Slutpunktsbegäranden, till exempel autentisering, kommer att misslyckas från och med nu mot Microsoft Cloud Deutschland-tjänsten.  
+
+Microsoft Azure måste dina kunder övergå till sina Azure-arbetsbelastningar enligt stegen som beskrivs i Azure-migreringsspelboken så snart deras klientorganisation har slutfört migreringen till den globala (fas 9). [](/azure/germany/germany-migration-main)  
 
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
 | Uppdatera användarslutpunkter | Se till att alla användare får åtkomst till tjänsten med hjälp av rätt globala Microsoft-slutpunkter |Efter migreringen 30 dagar slutar Microsoft Cloud Deutschland-slutpunkterna att respektera förfrågningar. klient- eller programtrafiken misslyckas.  |
 | Uppdatera Slutpunkter för Azure AD-program | Du måste uppdatera slutpunkter för autentisering, Azure Active Directory (Azure AD) Graph och MS Graph för dina program till slutpunkterna för Microsoft Worldwide-tjänsten. | Efter migreringen 30 dagar slutar Microsoft Cloud Deutschland-slutpunkterna att respektera förfrågningar. klient- eller programtrafiken misslyckas. |
+| Migrera Azure-arbetsbelastningar | Azure-tjänstkunder måste tillhandahålla nya globala prenumerationer för Azure-tjänster och utföra migrering enligt [Azure-migreringsspelboken.](/azure/germany/germany-migration-main) | Vid fullständig övergång till den globala tjänsten (fas 10) kommer kunderna inte längre att kunna komma åt Azure-arbetsbelastningar via Microsoft Cloud Deutschland Azure-portalen. |
 ||||
 
 ### <a name="azure-ad-connect"></a>Azure AD-Anslut

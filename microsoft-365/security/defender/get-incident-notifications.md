@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8d29291c63bdc437163feecce8164089d958d71d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 2e47b35646a1cd6e1075d80f9ed0550e8e1e819f
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299970"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651398"
 ---
 # <a name="get-incident-notifications-by-email"></a>Få incidentaviseringar via e-post
 
@@ -72,7 +72,7 @@ Följ de här anvisningarna för att skapa en ny regel och anpassa inställninga
 
 Om du vill redigera en befintlig regel väljer du den i listan med regler. I fönstret med regelnamnet väljer du **Redigera regel** och gör ändringarna på sidorna **Grunder,** **Meddelandeinställningar** **och** Mottagare.
 
-Om du vill redigera en befintlig regel väljer du den i listan med regler. I fönstret med regelnamnet väljer du Ta **bort**.
+Om du vill ta bort en regel markerar du den i listan med regler. I fönstret med regelnamnet väljer du Ta **bort**.
 
 ## <a name="see-also"></a>Se även
 - [Översikt över incidenter](incidents-overview.md)

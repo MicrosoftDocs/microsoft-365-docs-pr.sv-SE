@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7abc99a14ec538afea8cdbd4d8f3b4940bcccd9f
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 865aa9dc34a91be251d6f7772da5cc686f9641a4
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300091"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651325"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Undersöka incidenter i Microsoft 365 Defender
 
@@ -86,7 +86,19 @@ Här är ett exempel.
 
 :::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="Exempel på en aviseringssida för ett incident":::
 
-Som standard sorteras aviseringarna kronologiskt så att du kan se hur händelsen spelats ut med tiden. Om du markerar varje avisering kommer du till huvudsidan för den aviseringen, där du kan göra en detaljerad analys av den aviseringen. 
+Som standard sorteras aviseringarna kronologiskt så att du kan se hur händelsen spelats ut med tiden. När du väljer en avisering i en Microsoft 365 Defender visas aviseringsinformation som är specifik för den övergripande händelsen. 
+
+Du kan se händelser för aviseringen, vilket andra utlöste aviseringar orsakade den aktuella aviseringen och alla berörda enheter och aktiviteter som var inblandade i attacken, inklusive filer, användare och postlådor.
+
+Här är ett exempel.
+
+:::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="Exempel på en sida med aviseringsinformation i ett incident":::
+
+Den här aviseringssidan för incidenter består av följande avsnitt:
+
+- Aviseringsartikel, som innehåller en sammanfattning av vad som har hänt
+- Relaterade händelser och aviseringar
+- Sammanfattningsinformation
 
 Lär dig hur du använder aviseringskön och aviseringssidorna [i undersöker aviseringar](investigate-alerts.md).
 
@@ -112,6 +124,9 @@ På **fliken** Användare visas alla användare som har identifierats vara en de
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Exempel på en sida för användare för ett incident":::
 
 Du kan välja bockmarkeringen för en användare om du vill se information om hot om användarkontot, exponering och kontaktinformation. Välj användarnamnet om du vill se mer information om användarkontot.
+
+Lär dig hur du visar ytterligare användarinformation och hanterar användare av en händelse i [undersöker användare.](investigate-users.md)
+
 
 ## <a name="mailboxes"></a>Postlådor
 

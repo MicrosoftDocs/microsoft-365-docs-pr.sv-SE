@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: När du är klar med att konfigurera Meddelandekryptering i Office 365 (OME) kan du lära dig hur du anpassar distributionen på flera olika sätt.
-ms.openlocfilehash: 06e9d22d51c05fe9f7bc4c1a014607feafbf2dba
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a2b3dde44ea541deb41eeb9d55d5ed745fa6c719
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52161944"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52650990"
 ---
 # <a name="manage-office-365-message-encryption"></a>Hantera Meddelandekryptering i Office 365
 
@@ -62,12 +62,12 @@ Om mottagaren av ett meddelande som krypteras med OME inte använder Outlook, oa
   
 ### <a name="to-manage-whether-ome-generates-one-time-pass-codes"></a>Så här hanterar du om OME genererar koder för en gång
   
-1. Använd ett arbets- eller skolkonto som har globala administratörsbehörigheter i din organisation och starta en Windows PowerShell session och anslut till Exchange Online. Instruktioner finns i [Anslut för Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+1. Använd ett arbets- eller skolkonto som har globala administratörsbehörigheter i din organisation och starta en Windows PowerShell session och anslut till Exchange Online. För instruktioner se: [Ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Kör Set-OMEConfiguration-cmdleten med parametern OTPEnabled:
 
    ```powershell
-   Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -OTPEnabled <$true|$false>
+   Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter"> -OTPEnabled <$true|$false>
    ```
 
    Så här inaktiverar du till exempel lösenord för en gång:
@@ -88,7 +88,7 @@ Som administratör kan du hantera om den här knappen ska visas för slutanvänd
   
 ### <a name="to-manage-whether-the-encrypt-button-appears-in-outlook-on-the-web"></a>Så här hanterar du om knappen Kryptera visas Outlook på webben
   
-1. Använd ett arbets- eller skolkonto som har globala administratörsbehörigheter i din organisation och starta en Windows PowerShell session och anslut till Exchange Online. Instruktioner finns i [Anslut för Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+1. Använd ett arbets- eller skolkonto som har globala administratörsbehörigheter i din organisation och starta en Windows PowerShell session och anslut till Exchange Online. För instruktioner se: [Ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Kör cmdleten Set-IRMConfiguration -SimplifiedClientAccessEnabled:
 
@@ -118,7 +118,7 @@ Mer information och en vy över klientupplevelsen finns i Visa [krypterade](http
   
 ### <a name="to-manage-whether-ios-mail-app-users-can-view-messages-protected-by-office-365-message-encryption"></a>Hantera om användare av iOS-e-postprogram kan visa meddelanden som skyddas av Meddelandekryptering i Office 365
   
-1. Använd ett arbets- eller skolkonto som har globala administratörsbehörigheter i din organisation och starta en Windows PowerShell session och anslut till Exchange Online. Instruktioner finns i [Anslut för Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+1. Använd ett arbets- eller skolkonto som har globala administratörsbehörigheter i din organisation och starta en Windows PowerShell session och anslut till Exchange Online. För instruktioner se: [Ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Kör Set-ActiveSyncOrganizations med parametern AllowRMSSupportForUnenlightenedApps:
 
@@ -155,7 +155,7 @@ Mer information om hur Microsoft 365 implementerar kryptering för e-postmeddela
   
 ### <a name="to-manage-whether-email-attachments-are-decrypted-on-download-from-a-web-browser"></a>Hantera om e-postbilagor dekrypteras vid nedladdning från en webbläsare
   
-1. Använd ett arbets- eller skolkonto som har globala administratörsbehörigheter i din organisation och starta en Windows PowerShell session och anslut till Exchange Online. Instruktioner finns i [Anslut för Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+1. Använd ett arbets- eller skolkonto som har globala administratörsbehörigheter i din organisation och starta en Windows PowerShell session och anslut till Exchange Online. För instruktioner se: [Ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Kör cmdleten Set-IRMConfiguration med parametern DecryptAttachmentForEncryptOnly:
 
@@ -181,7 +181,7 @@ Du kan använda anpassade varumärkesmallar för att tvinga mottagare att ta emo
 
 ### <a name="use-a-custom-template-to-force-all-external-recipients-to-use-the-ome-portal-and-for-encrypted-email"></a>Använda en anpassad mall för att tvinga alla externa mottagare att använda OME-portalen och för krypterad e-post
 
-1. Använd ett arbets- eller skolkonto som har globala administratörsbehörigheter i din organisation och starta en Windows PowerShell session och anslut till Exchange Online. Instruktioner finns i [Anslut för Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+1. Använd ett arbets- eller skolkonto som har globala administratörsbehörigheter i din organisation och starta en Windows PowerShell session och anslut till Exchange Online. För instruktioner se: [Ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Kör cmdleten New-TransportRule-cmdleten:
 
@@ -219,7 +219,7 @@ Vi hoppas att det inte blir så, men om du behöver det är det mycket enkelt at
   
 ### <a name="to-disable-the-new-capabilities-for-ome"></a>Inaktivera de nya funktionerna för OME
   
-1. Om du använder ett arbets- eller skolkonto med global administratörsbehörighet i din organisation startar du Windows PowerShell en session och ansluter till Exchange Online. Instruktioner finns i [Anslut för Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+1. Om du använder ett arbets- eller skolkonto med global administratörsbehörighet i din organisation startar du Windows PowerShell en session och ansluter till Exchange Online. För instruktioner se: [Ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Om du  har aktiverat knappen Kryptera i Outlook på webben inaktiverar du den genom att köra cmdleten Set-IRMConfiguration med parametern SimplifiedClientAccessEnabled. Annars hoppar du över det här steget.
 

@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Läs mer om Microsoft 365 av efterlevnadslösningar genom att använda dataanslutningar från tredje part och Microsoft Graph API:er.
-ms.openlocfilehash: 676c0ba41e517dd0c3692fec29a1d4034641b634
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1fed5ac72c7dbfa4b1be370ec03678e1beecdcd2
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162124"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651062"
 ---
 # <a name="microsoft-365-compliance-extensibility"></a>Microsoft 365 kompatibilitet
 
@@ -94,3 +94,8 @@ Information om licenskraven för Advanced eDiscovery och API finns i avsnittet "
 EIA (Enterprise Information Archiving) för Microsoft Teams är ett viktigt scenario för våra kunder eftersom det gör att de kan lösa kraven i lagstiftningen. Utöver våra inbyggda funktioner för arkivering av innehåll i Microsoft Teams kan kunder och partner nu använda Teams Exportera API:er för att lösa scenarier med anpassade program och integrering. På Teams export-API:er finns stöd för massexport (upp till 200 förfrågningar per sekund/per app/klientorganisation) Teams och bifogade filer i meddelanden. Borttagna meddelanden kan också kommas åt via API:t i upp till 30 dagar efter att de tagits bort. Mer information om dessa Teams och hur du använder dem i programmen finns i Exportera innehåll med MICROSOFT TEAMS [Exportera API:er.](/microsoftteams/export-teams-content)
 
 Information om licenskraven för användning av API:Teams export-API:er finns i Microsoft 365 om [licensieringsvägledning för & regelefterlevnad.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+
+### <a name="microsoft-graph-connector-apis-preview"></a>Microsoft Graph-API:er (förhandsversion)
+
+Med [Microsoft Graph -anslutningar](/microsoftsearch/connectors-overview)kan organisationer indexera data från tredje part så att de visas i Microsofts sökresultat. Den här funktionen utökar de typer av innehållskällor som är sökbara i dina program Microsoft 365 produktivitetsappar och det bredare Microsoft-ekosystemet. Data från tredje part kan lagras lokalt eller i offentliga eller privata moln. Från och Advanced eDiscovery vi att aktivera utvecklarförhandsvisning av inbyggda efterlevnadsvärden för Microsoft 365 anslutna appar. Det gör det möjligt att efterlevnad för appar som integrerar i Microsoft 365-ekosystemet för att ge användarna möjlighet till smidig efterlevnad. Mer information om hur du använder Microsoft Graph Connector-API:er i programvyn finns i Skapa, uppdatera och ta bort anslutningar i [Microsoft Graph.](/graph/search-index-manage-connections)
+

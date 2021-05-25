@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 40d86f9f3a4896bbe788f0a9894a7e08efe3a690
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 2a4b122b3ef3a1ddaf61d8f9373bec3e721db177
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301734"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651386"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-office-365-to-the-microsoft-365-security-center"></a>Omdirigera konton från Microsoft Defender för Office 365 till Microsoft 365 säkerhetscenter
 
@@ -64,13 +64,13 @@ Så här börjar du dirigera konton Microsoft 365 säkerhetscentret på security
 > När omdirigering har aktiverats matas konton i aktiva sessioner medan den här inställningen används inte från sessionen och dirigeras bara till säkerhetscentret i Microsoft 365 när den aktuella sessionen avslutas och loggar in igen.
 
 ## <a name="can-i-go-back-to-using-the-former-portal"></a>Kan jag använda den tidigare portalen igen?
-Om något inte fungerar för dig eller om det finns något som du inte kan slutföra via Microsoft 365 säkerhetscenter-portalen vill vi höra om det med hjälp av feedback-alternativet för portalen. Om du har stött på problem med omdirigering rekommenderar vi att du når ut till din PM-kompis direkt via privat förhandsgranskning eller berättar det via formuläret för att skicka feedback.
+Om något inte fungerar för dig eller om det finns något som du inte kan slutföra via Microsoft 365 säkerhetscenter-portalen vill vi höra om det med hjälp av feedback-alternativet för portalen. Om du har stött på problem med omdirigering får du gärna meddela oss.
 
 Så här återgår du till den tidigare portalen:
 
 1. [Logga in](https://security.microsoft.com/) på säkerhetscentret Microsoft 365 global administratör eller använd och konto med säkerhetsadministratörsbehörigheter i Azure Active Directory.
 
-2. Gå till **Inställningar**  >  **Allmän**  >    >  **portalomdirigering**.  
+2. Gå till **Inställningar**  >  **e-& omdirigering till**  >  **samarbetsportalen.**   
 
 3. Ändra inställningen för automatisk omdirigering till **Av**.
 
