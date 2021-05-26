@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Använd eDiscovery och sökverktyg för att hantera och svara på ett data spillhändelse i organisationen.
-ms.openlocfilehash: da473fcdf553176d3c6d4dfa2a4c4b17b2bcce03
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4305dbdb2fb59e4275852c88f8b74f6c4128a5cb
+ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "52162396"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52653529"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery-lösningsserie: Scenario för data spill – sökning och rensning
 
@@ -52,11 +52,11 @@ Så här hanterar du ett data spillhändelse:
 
 - När en postlåda är undantaget finns ett borttaget meddelande kvar i mappen Återställningsbara objekt tills bevarandetiden löper ut eller när undantaget släpps. [Steg 6](#step-6-prepare-the-mailboxes) beskriver hur du tar bort isen från postlådorna. Kontrollera med din hantering av arkivhandlingar eller juridiska avdelningar innan du tar bort krysset. Organisationen kan ha en princip som definierar om en postlåda som är väntad eller ett data spill har prioritet. 
     
-- Om du vill styra vilka användarpostlådor som en data spiller kan söka efter och hantera vem som kan komma åt ärendet, kan du konfigurera efterlevnadsgränser och skapa en anpassad rollgrupp, som beskrivs i steg [1.](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries) För att göra det måste du vara medlem i rollgruppen Organisationshantering eller ha rollen rollhantering. Om du eller administratören i organisationen redan har angett efterlevnadsgränser kan du hoppa över steg 1.
+- Om du vill styra vilka användarpostlådor en data spillande kan söka och hantera vem som kan komma åt ärendet, kan du konfigurera efterlevnadsgränser och skapa en anpassad rollgrupp, som beskrivs i steg [1.](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries) För att göra det måste du vara medlem i rollgruppen Organisationshantering eller ha rollen rollhantering. Om du eller administratören i organisationen redan har angett efterlevnadsgränser kan du hoppa över steg 1.
     
 - Om du vill skapa ett ärende måste du vara medlem i rollgruppen för eDiscovery-hanteraren eller vara medlem i en anpassad rollgrupp som har tilldelats rollen Ärendehantering. Om du inte är medlem kan du be en Microsoft 365 att lägga till dig i [rollgruppen för eDiscovery-hanteraren.](assign-ediscovery-permissions.md)
     
-- Om du vill skapa och köra en innehållssökning måste du vara medlem i rollgruppen för eDiscovery Manager eller ha tilldelats rollen efterlevnadssökningshantering. Om du vill ta bort meddelanden måste du vara medlem i rollgruppen Organisationshantering eller ha rollen sök- och rensningshantering. Mer information om hur du lägger till användare i en rollgrupp finns i [Tilldela eDiscovery-behörigheter i säkerhets- & efterlevnadscenter.](./assign-ediscovery-permissions.md)
+- Om du vill skapa och köra en innehållssökning måste du vara medlem i rollgruppen eDiscovery Manager eller ha tilldelats hanteringsrollen för efterlevnadssökning. Om du vill ta bort meddelanden måste du vara medlem i rollgruppen Organisationshantering eller ha tilldelats hanteringsrollen för sökning och rensning. Mer information om hur du lägger till användare i en rollgrupp finns i [Tilldela eDiscovery-behörigheter i Säkerhets- och efterlevnadscenter](./assign-ediscovery-permissions.md).
     
 - Om du vill söka i eDiscovery-aktiviteter för granskningsloggen i steg 8 måste granskning vara aktiverad för din organisation. Du kan söka efter aktiviteter som har utförts under de senaste 90 dagarna. Mer information om hur du aktiverar och använder granskning finns i [avsnittet Granska undersökningen](#auditing-the-data-spillage-investigation-process) om data spill i steg 8. 
     
@@ -89,7 +89,7 @@ Om du har fler än 1 000 postlådor eller fler än 100 e-postmeddelanden per pos
 
 Om en vårdnadshavare eller slutanvändare tilldelas en Office 365 E5-licens kan du undersöka upp till 10 000 sökresultat samtidigt med hjälp av Advanced eDiscovery. Om det finns fler än 10 000 e-postmeddelanden att granska kan du dela sökfrågan efter datumintervall och granska varje resultat individuellt allt eftersom sökresultat sorteras efter datum. I Advanced eDiscovery kan du tagga sökresultat  med hjälp av funktionen Etikett som i förhandsgranskningspanelen och filtrera sökresultatet efter taggen du märka. Det här är användbart när du samarbetar med en sekundär granskare. Genom att använda ytterligare analysverktyg i Advanced eDiscovery, till exempel optisk teckenigenkänning, e-posttrådning och förutsägelsekodning, kan du snabbt bearbeta och granska tusentals meddelanden och tagga dem för ytterligare granskning. Se [Snabbinstallation för Advanced eDiscovery](./get-started-with-advanced-ediscovery.md).
 
-När du hittar ett e-postmeddelande som innehåller data som har spillts kontrollerar du om meddelandets mottagare har delats externt. Om du vill spåra ett meddelande ytterligare kan du samla in avsändarinformation och datumintervall så att du kan använda meddelandespårningsloggarna, som beskrivs i [steg 5.](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)
+När du hittar ett e-postmeddelande som innehåller data som har spillts kontrollerar du om meddelandets mottagare har delats externt. Om du vill spåra ett meddelande ytterligare kan du samla in avsändarinformation och datumintervall så att du kan använda meddelandespårningsloggarna. Den här processen beskrivs i [steg 5.](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)
 
 När du har verifierat sökresultaten kanske du vill dela resultaten med andra för en sekundär granskning. Personer som du har tilldelat ärendet i steg 1 kan granska ärendeinnehållet i både eDiscovery och Advanced eDiscovery och godkänna resultat från ärendet. Du kan också skapa en rapport utan att exportera själva innehållet. Du kan också använda samma rapport som ett bevis på borttagning, som beskrivs i [steg 8.](#step-8-verify-provide-a-proof-of-deletion-and-audit)
   
@@ -105,7 +105,7 @@ När du har verifierat sökresultaten kanske du vill dela resultaten med andra f
     
 3. Markera Alla objekt, även sådana som har **okänt format,** krypteras eller inte indexeras av andra orsaker och klicka sedan på **Generera rapport.**
 
-4. I eDiscovery-fallet klickar du på **Exportera** för att visa listan med exportjobb. Du kanske måste klicka på **Uppdatera** för att uppdatera listan för att visa exportjobbet du just skapade.
+4. I eDiscovery-fallet klickar du på **Exportera** för att visa listan med exportjobb. Du kan behöva klicka på **Uppdatera** för att uppdatera listan så att exportjobbet du skapade visas.
 
 5. Klicka på exportjobbet och sedan på **Ladda ned** rapport på den utfällsbara sidan.
  
@@ -117,17 +117,17 @@ Mer information om hur du exporterar rapporter finns i [Exportera en rapport fö
     
 ## <a name="step-5-use-message-trace-log-to-check-how-spilled-data-was-shared"></a>Steg 5: Använd meddelandespårningslogg för att kontrollera hur spillda data har delats
 
-För att ytterligare undersöka om e-post med spilldata delades kan du fråga meddelandespårningsloggarna med avsändarinformationen och datumintervallinformationen som du hämtade i steg 4. Observera att lagringstiden för meddelandespårning är 30 dagar för realtidsdata och 90 dagar för historiska data.
+För att ytterligare undersöka om e-post med spilldata delades kan du fråga meddelandespårningsloggarna med avsändarinformationen och datumintervallinformationen som du hämtade i steg 4. Bevarandetiden för meddelandespårning är 30 dagar för realtidsdata och 90 dagar för historiska data.
   
 Du kan använda Meddelandespårning i säkerhets- och efterlevnadscentret eller använda motsvarande cmdlets i Exchange Online PowerShell. Det är viktigt att observera att meddelandespårning inte ger fullständiga garantier för att data som returneras är fullständiga. Mer information om hur du använder meddelandespårning finns i: 
   
-- [Meddelandespårning i Säkerhets- & Säkerhets- och efterlevnadscenter](../security/defender-365-security/message-trace-scc.md)
+- [Meddelandespårning i Säkerhets- & Säkerhets- och efterlevnadscenter](../security/office-365-security/message-trace-scc.md)
     
 - [Nytt meddelandespårning i Säkerhets- & Efterlevnadscenter](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     
 ## <a name="step-6-prepare-the-mailboxes"></a>Steg 6: Förbereda postlådorna
 
-När du har granskat och kontrollerat att sökresultatet bara innehåller de meddelanden som måste tas bort måste du samla in en lista med e-postadresserna till de påverkade postlådorna som ska användas i steg 7 när du tar bort spilldata. Du kan också behöva förbereda postlådorna innan du kan ta bort e-postmeddelanden permanent beroende på om återställning av enstaka objekt är aktiverad för postlådor som innehåller data som har spillts, eller om någon av postlådorna är väntad.
+När du har granskat och kontrollerat att sökresultatet bara innehåller de meddelanden som måste tas bort måste du samla in en lista med e-postadresserna till de påverkade postlådorna som ska användas i steg 7 när du tar bort data som spillts. Du kan också behöva förbereda postlådorna innan du kan ta bort e-postmeddelanden permanent beroende på om återställning av enstaka objekt är aktiverad för postlådor som innehåller data som har spillts, eller om någon av postlådorna är väntad.
   
 ### <a name="get-a-list-of-addresses-of-mailboxes-with-spilled-data"></a>Visa en lista över adresser till postlådor med data som har spillts
 
@@ -139,7 +139,7 @@ Det finns två sätt att samla in en lista med e-postadresser för postlådor me
     
 2. Klicka på Visa resultat på den **utfällade sidan.**
     
-3. Klicka på **Sökstatistik** i listrutan **Enskilda resultat.**
+3. Klicka på **Sökstatistik** i listrutan **Individuella resultat**.
     
 4. I **listrutan** Typ klickar du **på Top locations**.
     
@@ -172,16 +172,22 @@ Se till att återställa postlådan till tidigare konfigurationer när du har ve
 
 ## <a name="step-7-permanently-delete-the-spilled-data"></a>Steg 7: Ta bort data som har spillts permanent
 
-Med hjälp av postlådeplatserna som du samlade in och förberedde i steg 6 och sökfrågan som skapades och förfinades i steg 3 för att hitta e-postmeddelanden som innehåller spilldata kan du nu permanent ta bort data som spillts.  Som tidigare förklarats måste du vara medlem i rollgruppen Organisationshantering eller ha tilldelats rollen för hantering av sökning och rensning, om du vill ta bort meddelanden. Mer information om hur du lägger till användare i en rollgrupp finns i [Tilldela eDiscovery-behörigheter i säkerhets- & efterlevnadscenter.](./assign-ediscovery-permissions.md)
+Med hjälp av postlådeplatserna som du samlade in och förberedde i steg 6 och sökfrågan som skapades och förfinades i steg 3 för att hitta e-postmeddelanden som innehåller spilldata kan du nu permanent ta bort data som spillts.  Som tidigare förklarats måste du vara medlem i rollgruppen Organisationshantering eller ha tilldelats rollen för hantering av sökning och rensning, om du vill ta bort meddelanden. Mer information om hur du lägger till användare i en rollgrupp finns i [Tilldela eDiscovery-behörigheter i Säkerhets- och efterlevnadscenter](./assign-ediscovery-permissions.md).
 
-Information om hur du tar bort meddelanden som har spillts finns i steg 2 & 3 [i Söka efter och ta bort e-postmeddelanden](./search-for-and-delete-messages-in-your-organization.md)
+Information om hur du tar bort spillda meddelanden finns [i Söka efter och ta bort e-postmeddelanden.](search-for-and-delete-messages-in-your-organization.md)
+
+Tänk på följande begränsningar när du tar bort data som har spillts:
+
+- Det maximala antalet postlådor i en sökning som du kan använda för att ta bort objekt genom att göra en sök- och rensningsåtgärd är 50 000. Om sökningen som du skapar i steg 3 söker i fler än 50 000 postlådor misslyckas åtgärden för rensning. Sökning i fler än 50 000 postlådor i en enda sökning kan inträffa när du konfigurerar sökningen så att den omfattar alla postlådor i organisationen. Denna begränsning gäller fortfarande även om mindre än 50 000 postlådor innehåller objekt som matchar sökfrågan.
+
+- Du kan ta bort högst tio objekt per postlåda samtidigt. Eftersom funktionen att söka efter och ta bort meddelanden är avsedd att vara ett verktyg för incidentrespons hjälper den här gränsen till att säkerställa att meddelanden snabbt tas bort från postlådor. Den här funktionen är inte avsedd för att rensa i användarnas postlådor.
 
 > [!IMPORTANT]
-> E-postobjekt i en granskning som angetts i Advanced eDiscovery kan inte tas bort med hjälp av procedurerna i den här artikeln. Det beror på att artiklar i en granskningsuppsättning är kopior av artiklar i livetjänsten som kopieras och lagras på en Azure Storage plats. Det innebär att de inte returneras av en innehållssökning som du skapar i steg 3. Om du vill ta bort objekt i en granskningsuppsättning måste du Advanced eDiscovery det ärende som innehåller granskningsuppsättningen. Mer information finns i Stänga [eller ta bort ett Advanced eDiscovery ärende.](close-or-delete-case.md)
+> E-postobjekt i en granskningsuppsättning i ett avancerat eDiscovery-ärende kan inte tas bort med hjälp av procedurerna i den här artikeln. Det beror på att artiklar i en granskningsuppsättning är kopior av artiklar i livetjänsten som kopieras och lagras på en Azure Storage plats. Det innebär att de inte returneras av en innehållssökning som du skapar i steg 3. Om du vill ta bort objekt i en granskningsuppsättning måste du ta bort det Advanced eDiscovery-ärende som innehåller granskningsuppsättningen. Mer information finns i [Stänga eller ta bort ett Advanced eDiscovery-ärende](close-or-delete-case.md).
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Steg 8: Verifiera, ange ett bevis för borttagning och granskning
 
-Det sista steget i arbetsflödet för att hantera ett data spillhändelse är att kontrollera att de spillda data permanent togs bort från postlådan genom att gå till eDiscovery-ärendet och köra samma sökfråga som användes för att ta bort dessa data för att bekräfta att inga resultat returneras. När du har bekräftat att de spillda data har tagits bort permanent kan du exportera en rapport och inkludera den (tillsammans med den ursprungliga rapporten) som ett bevis på borttagning. Därefter kan [du stänga ärendet,](close-reopen-delete-core-ediscovery-cases.md) vilket gör att du kan öppna det igen om du har hänvisat till det i framtiden. Du kan också återställa postlådor till det tidigare tillståndet, ta bort sökfrågan som används för att hitta spilldata och söka efter granskningsposter för aktiviteter som utförts vid hantering av incidenten för data spill.
+Det sista steget i arbetsflödet för att hantera ett data spillhändelse är att kontrollera att data som spillts permanent har tagits bort från postlådan genom att gå till eDiscovery-ärendet och köra samma sökfråga igen som användes för att ta bort dessa data för att bekräfta att inga resultat returneras. När du har bekräftat att de spillda data har tagits bort permanent kan du exportera en rapport och inkludera den (tillsammans med den ursprungliga rapporten) som ett bevis på borttagning. Därefter kan [du stänga ärendet,](close-reopen-delete-core-ediscovery-cases.md) vilket gör att du kan öppna det igen om du behöver hänvisa till det i framtiden. Du kan också återställa postlådor till det tidigare tillståndet, ta bort sökfrågan som används för att hitta spilldata och söka efter granskningsposter för aktiviteter som utförts vid hantering av incidenten för data spill.
   
 ### <a name="reverting-the-mailboxes-to-their-previous-state"></a>Återställa postlådorna till det tidigare tillståndet
 
@@ -192,11 +198,11 @@ Om du ändrade en postlådekonfiguration i steg 6 för att förbereda postlådor
 Om nyckelorden i sökfrågan som du skapade och använde i steg 3 innehåller några av de verkliga spilldata bör du ta bort sökfrågan för att förhindra att data spiller ytterligare.
   
 1. I säkerhets- och efterlevnadscentret öppnar du eDiscovery-ärendet, går till sidan **Sök** och väljer rätt innehållssökning.
-    
+
 2. Klicka på Ta bort på den utfällade **sidan.**
 
     ![Markera sökningen och klicka sedan på Ta bort på den utfällade sidan](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
-    
+
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Granska undersökning av data spill
 
 Du kan söka i granskningsloggen efter de eDiscovery-aktiviteter som utfördes under undersökningen. Du kan också söka i granskningsloggen för att returnera granskningsposterna för **kommandot New-ComplianceSearchAction -Purge** som du körde i steg 7 för att ta bort spilldata. Mer information finns i:

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Förstå varför uppskattade och faktiska sökresultat kan variera i sökningar som körs med eDiscovery-verktyg i Office 365.
-ms.openlocfilehash: d530b083b2353b66ee5d4fd4bb72b175aef28be8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 17a4c2eea9833afa2112fa8ab918dcda074eeb36
+ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532123"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52653517"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Skillnader mellan uppskattade och faktiska eDiscovery-sökresultat
 
@@ -81,7 +81,7 @@ Här är några anledningar till dessa skillnader:
 
 - **Avduplicering av Exchange objekt under exporten.** För Exchange objekt minskar avdupliceringen antalet objekt som exporteras. Du kan välja att duplicera sökresultaten när du exporterar dem. För Exchange innebär det att bara en instans av ett meddelande exporteras, även om meddelandet kan hittas i flera postlådor. Det uppskattade sökresultatet inkluderar alla förekomster av ett meddelande. Om du väljer alternativet för avduplicering när du exporterar sökresultat kan det faktiska antalet exporterade objekt bli betydligt mindre än det uppskattade antalet objekt.
 
-    Ett annat sak att tänka på om du väljer alternativet för avduplicering är att alla Exchange-objekt exporteras i en enda PST-fil och mappstrukturen från källpostlådorna inte bevaras. Den exporterade PST-filen innehåller bara e-postobjekten. Men en sökresultatrapport innehåller en post för varje exporterat meddelande som identifierar källpostlådan där meddelandet finns. På så sätt kan du identifiera alla postlådor som innehåller ett duplicerat meddelande. Om du inte aktiverar avduplicering exporteras en separat PST-fil för varje postlåda som ingår i sökningen.
+Sökresultatrapporten (Results.csv) innehåller en post för varje dubblettmeddelande och identifierar källpostlådan där det finns ett dubblettmeddelande. På så sätt kan du identifiera alla postlådor som innehåller ett duplicerat meddelande.
 
 > [!NOTE]
 > Om du inte markerar alternativet Inkludera objekt som är krypterade eller har ett okänt **format** när du exporterar sökresultaten eller laddar ned rapporter, laddas rapporterna om indexfel ned men de innehåller inga poster. Det betyder inte att det inte finns indexfel. Det innebär bara att icke indexerade objekt inte inkluderades i exporten.

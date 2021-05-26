@@ -15,73 +15,68 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: Läs om vilka händelser som loggas när användare tilldelade eDiscovery-behörigheter utför uppgifter för innehållssökning och grundläggande eDiscovery i säkerhets- & efterlevnadscenter.
+description: Lär dig vilka händelser som loggas när användare tilldelade eDiscovery-behörigheter utför innehållssökning, grundläggande eDiscovery och Advanced eDiscovery-uppgifter i Microsoft 365 efterlevnadscenter.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7324cf610373202cdc24f48c23dc0647d4a21ea8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ce0dcc50c13ad705cb36f065639a4e971d032f22
+ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162142"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52653505"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Söka efter eDiscovery-aktiviteter i granskningsloggen
 
-Aktiviteter för innehållssökning och eDiscovery-relaterade aktiviteter (för Core eDiscovery och Advanced eDiscovery) som utförs i Säkerhets- och efterlevnadscenter för & eller genom att köra motsvarande PowerShell-cmdlets loggas i granskningsloggen. Händelser loggas när administratörer eller eDiscovery-hanterare (eller alla användar tilldelade eDiscovery-behörigheter) utför följande uppgifter för innehållssökning och bas-eDiscovery i efterlevnadscentret för & säkerhet och säkerhet:
+Aktiviteter för innehållssökning och eDiscovery-relaterade aktiviteter (för Core eDiscovery och Advanced eDiscovery) som utförs i kompatibilitetscentret för Microsoft 365 eller genom att köra motsvarande PowerShell-cmdlets loggas i granskningsloggen. Händelser loggas när administratörer eller eDiscovery-hanterare (eller alla användar tilldelade eDiscovery-behörigheter) utför följande aktiviteter för innehållssökning och bas-eDiscovery i efterlevnadscentret för Microsoft 365:
   
 - Skapa och hantera core- Advanced eDiscovery ärenden
 
 - Skapa, starta och redigera innehållssökningar
 
-- Utföra innehållssökningsåtgärder, till exempel förhandsgranska, exportera och ta bort sökresultat
+- Utföra sökåtgärder, till exempel förhandsgranska, exportera och ta bort sökresultat
 
 - Hantera korenterare och granskningsuppsättningar i Advanced eDiscovery
 
 - Konfigurera behörighetsfiltrering för innehållssökning
 
 - Hantera eDiscovery-administratörsrollen
-
-> [!IMPORTANT]
-> Aktiviteterna som beskrivs i den här artikeln är bara resultatet av eDiscovery-uppgifter som utförs med hjälp av Säkerhets- & efterlevnadscenter. eDiscovery-uppgifter som har utförts med verktyget In-Place eDiscovery i Exchange Online eller eDiscovery Center i SharePoint Online ingår inte. 
   
-Mer information om hur du söker i granskningsloggen, vilka behörigheter som krävs och exporterar sökresultat finns i Söka i granskningsloggen i Säkerhets- [och & Efterlevnadscenter.](search-the-audit-log-in-security-and-compliance.md)
+Mer information om hur du söker i granskningsloggen, vilka behörigheter som krävs och exporterar sökresultat finns i Söka i granskningsloggen i [Microsoft 365 kompatibilitetscenter.](search-the-audit-log-in-security-and-compliance.md)
   
 ## <a name="how-to-search-for-and-view-ediscovery-activities"></a>Söka efter och visa eDiscovery-aktiviteter
 
 För närvarande behöver du göra några saker för att visa eDiscovery-aktiviteter i granskningsloggen. Gör så här:
   
-1. Gå till [https://protection.office.com](https://protection.office.com).
+1. Gå till <https://compliance.microsoft.com> och logga in med ditt arbets- eller skolkonto.
 
-2. Logga in med ditt arbets- eller skolkonto.
+2. I det vänstra navigeringsfönstret i Microsoft 365, klickar du på **Visa alla** och sedan på **Granska**.
 
-3. I den vänstra rutan klickar du på **Sök** och sedan på **Granskningsloggsökning**.
-
-4. I **listrutan** Aktiviteter under **eDiscovery-aktiviteter eller eDiscovery Advanced eDiscovery** **klickar** du på en eller flera aktiviteter att söka efter.
+3. I **listrutan** Aktiviteter under **eDiscovery-aktiviteter eller eDiscovery Advanced eDiscovery** **klickar** du på en eller flera aktiviteter att söka efter.
 
     > [!NOTE]
     > **Listrutan** Aktiviteter innehåller också en grupp aktiviteter med namnet **eDiscovery-cmdlet-aktiviteter** som returnerar poster från cmdlet-granskningsloggen.
   
-5. Välj ett datum- och tidsintervall för att visa eDiscovery-händelser som inträffat under perioden. 
+4. Välj ett datum- och tidsintervall för att visa eDiscovery-händelser som inträffat under perioden.
 
-6. Välj en **eller** flera användare som du vill visa sökresultat för i rutan Användare. Lämna rutan tom om du vill returnera poster för alla användare.
+5. Välj en **eller** flera användare som du vill visa sökresultat för i rutan Användare. Lämna rutan tom om du vill returnera poster för alla användare.
 
-7. Klicka **på Sök** för att köra sökningen med dina sökvillkor.
+6. Klicka på **Sök** för att köra sökningen med dina sökvillkor.
 
-8. När sökresultaten visas kan du klicka på Filtrera resultat **för att** filtrera eller sortera de resulterande aktivitetsposterna. Tyvärr kan du inte använda filtrering för att uttryckligen utesluta vissa aktiviteter. 
+7. När sökresultaten visas kan du klicka på Filtrera resultat **för att** filtrera eller sortera de resulterande aktivitetsposterna. Tyvärr kan du inte använda filtrering för att uttryckligen utesluta vissa aktiviteter. 
 
-9. Om du vill visa information om en aktivitet klickar du på aktivitetsposten i listan med sökresultat. 
+8. Om du vill visa information om en aktivitet klickar du på aktivitetsposten i listan med sökresultat. 
 
     En  utfällsida för Information visas med detaljerade egenskaper från händelseposten. Om du vill visa ytterligare information klickar du **på Mer information.** En beskrivning av dessa egenskaper finns i avsnittet [Detaljerade egenskaper för eDiscovery-aktiviteter.](#detailed-properties-for-ediscovery-activities)
 
-10. Om du vill kan du exportera granskningsloggens sökresultat till en CSV-fil och sedan använda Power Query Excel för att formatera och filtrera posterna. Mer information finns i [Exportera, konfigurera och visa granskningsloggposter.](export-view-audit-log-records.md)
+9. Om du vill kan du exportera granskningsloggens sökresultat till en CSV-fil och sedan använda Power Query Excel för att formatera och filtrera posterna. Mer information finns i [Exportera, konfigurera och visa granskningsloggposter](export-view-audit-log-records.md).
 
 ## <a name="ediscovery-activities"></a>eDiscovery-aktiviteter
 
-I följande tabell beskrivs de aktiviteter för innehållssökning och bas-eDiscovery som loggas när en administratör eller eDiscovery-hanterare utför en eDiscovery-relaterad aktivitet med säkerhets- och efterlevnadscentret för & eller med motsvarande cmdlet i Security & Compliance Center PowerShell. Observera också att vissa aktiviteter som utförs under Avancerat returneras när du söker efter aktiviteter i den här listan.
+I följande tabell beskrivs de aktiviteter för innehållssökning och bas-eDiscovery som loggas när en administratör eller eDiscovery-hanterare utför en eDiscovery-relaterad aktivitet med efterlevnadscentret eller kör motsvarande cmdlet i Säkerhets- och efterlevnadscenter för & PowerShell. Observera också att vissa aktiviteter som utförs i Advanced eDiscovery returneras när du söker efter aktiviteter i den här listan.
   
 > [!NOTE]
-> De eDiscovery-aktiviteter som beskrivs i det här avsnittet ger liknande information till eDiscovery-cmdlet-aktiviteterna som beskrivs i nästa avsnitt. Vi rekommenderar att du använder de eDiscovery-aktiviteter som beskrivs i det här avsnittet eftersom de visas i granskningsloggens sökresultat inom 30 minuter. Det tar upp till 24 timmar innan eDiscovery-cmdlet-aktiviteterna visas i granskningsloggens sökresultat. 
+> De eDiscovery-aktiviteter som beskrivs i det här avsnittet ger liknande information till eDiscovery-cmdlet-aktiviteterna som beskrivs i nästa avsnitt. Vi rekommenderar att du använder de eDiscovery-aktiviteter som beskrivs i det här avsnittet eftersom de visas i granskningsloggens sökresultat inom 30 minuter. Det tar upp till 24 timmar innan eDiscovery-cmdlet-aktiviteterna visas i granskningsloggens sökresultat.
   
-|**Eget namn**|**Åtgärd**|**Motsvarande cmdlet**|**Beskrivning**|
+|**Visningsnamn**|**Åtgärd**|**Motsvarande cmdlet**|**Beskrivning**|
 |:-----|:-----|:-----|:-----|
 |Medlem tillagd i eDiscovery-ärende  <br/> |CaseMemberAdded  <br/> |Add-ComplianceCaseMember  <br/> |En användare har lagts till som medlem i ett eDiscovery-ärende. Som medlem i ett ärende kan en användare utföra olika ärenderelaterade uppgifter beroende på om de har tilldelats nödvändiga behörigheter.  <br/> |
 |Innehållssökning ändrad  <br/> |SearchUpdated  <br/> |Set-ComplianceSearch  <br/> |En befintlig innehållssökning har ändrats. Ändringar kan innefatta att lägga till eller ta bort innehållsplatser eller redigera sökfrågan.  <br/> |
@@ -113,21 +108,21 @@ I följande tabell beskrivs de aktiviteter för innehållssökning och bas-eDisc
 |Åtgärd för borttagen rensning utförs vid innehållssökning  <br/> |RemovedSearchResultsPurged  <br/> |Remove-ComplianceSearchAction  <br/> |En åtgärd för att rensa innehåll har tagits bort.  <br/> |
 |Sökrapport borttagen  <br/> |SearchReportRemoved  <br/> |Remove-ComplianceSearchAction  <br/> |En exportrapportåtgärd för innehållssökning har tagits bort.  <br/> |
 |Startad analys av innehållssökning  <br/> |SearchResultsSentToZoom  <br/> |New-ComplianceSearchAction  <br/> |Resultatet av en innehållssökning förbereddes för analys i Advanced eDiscovery.  <br/> |
-|Startad innehållssökning  <br/> |SearchStarted  <br/> |Start-ComplianceSearch  <br/> |En innehållssökning startades. När du skapar eller ändrar en innehållssökning med hjälp av GUI för & säkerhets- och efterlevnadscenter startas sökningen automatiskt. Om du skapar eller ändrar en sökning med hjälp av cmdleten **New-ComplianceSearch** eller **Set-ComplianceSearch** måste du köra cmdleten **Start-ComplianceSearch** för att starta sökningen.  <br/> |
+|Startad innehållssökning  <br/> |SearchStarted  <br/> |Start-ComplianceSearch  <br/> |En innehållssökning startades. När du skapar eller ändrar en innehållssökning med hjälp Microsoft 365 med ett GUI för efterlevnadscenter startas sökningen automatiskt. Om du skapar eller ändrar en sökning med hjälp av cmdleten **New-ComplianceSearch** eller **Set-ComplianceSearch** måste du köra cmdleten **Start-ComplianceSearch** för att starta sökningen.  <br/> |
 |Startad export av innehållssökning  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |En användare exporterade resultatet av en innehållssökning.  <br/> |
 |Startad exportrapport  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |En användare har exporterat en rapport för innehållssökning.  <br/> |
 |Stoppad innehållssökning  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |En användare har stoppat en innehållssökning.  <br/> |
-|(inget)|CaseViewed|Get-ComplianceCase|En användare har visat en lista över ärenden på **sidan eDiscovery** i säkerhets- och efterlevnadscentret eller genom att köra cmdleten.|
-|(inget)|SearchViewed|Get-ComplianceSearch|En användare har visat listan i  innehållssökningar (visas på fliken Sökningar) i säkerhets- och efterlevnadscentret eller genom att köra cmdleten. Den här aktiviteten loggas också när en användare visar listan med innehållssökningar som  är kopplade till ett eDiscovery-ärende (genom att klicka på fliken Sökningar i ett ärende) eller genom att köra kommandot **Get-ComplianceSearch -Case.**|
-|(inget)|ViewedSearchExported|Get-ComplianceSearchAction -Exportera|En användare har visat listan över exportjobb för innehållssökning (listas på fliken **Exporter)** i säkerhets- och efterlevnadscentret eller genom att köra cmdleten. Den här aktiviteten loggas även när en användare visar listan över exportjobb i ett eDiscovery-ärende (visas på fliken **Exporter** i ett ärende) eller genom att köra kommandot **Get-ComplianceSearchAction -Case -Export.**|
-|(inget)|ViewedSearchPreviewed|Get-ComplianceSearchAction -Preview|En användare förhandsgranskar resultatet av en innehållssökning i säkerhets- och efterlevnadscentret eller genom att köra cmdleten.|
+|(inget)|CaseViewed|Get-ComplianceCase|En användare har visat en lista över ärenden på sidan **Bas-eDiscovery** i efterlevnadscentret eller genom att köra Get-ComplianceCase-cmdleten.|
+|(inget)|SearchViewed|Get-ComplianceSearch|En användare har visat listan på  innehållssökningar (visas på fliken Sökningar) i efterlevnadscentret eller genom att köra cmdleten. Den här aktiviteten loggas också när en användare visar listan med innehållssökningar som  är kopplade till ett eDiscovery-ärende (genom att klicka på fliken Sökningar i ett ärende) eller genom att köra kommandot **Get-ComplianceSearch -Case.**|
+|(inget)|ViewedSearchExported|Get-ComplianceSearchAction -Exportera|En användare har visat listan över exportjobb för innehållssökning (listas på fliken **Exporter)** i efterlevnadscentret eller genom att köra cmdleten. Den här aktiviteten loggas även när en användare visar listan över exportjobb i ett eDiscovery-ärende (visas på fliken **Exporter** i ett ärende) eller genom att köra kommandot **Get-ComplianceSearchAction -Case -Export.**|
+|(inget)|ViewedSearchPreviewed|Get-ComplianceSearchAction -Preview|En användare förhandsgranskar resultatet av en innehållssökning i efterlevnadscentret eller genom att köra cmdleten.|
 |||||
   
-## <a name="advanced-ediscovery-activities"></a>Advanced eDiscovery aktiviteter
+## <a name="advanced-ediscovery-activities"></a>Advanced eDiscovery-aktiviteter
 
-I följande tabell beskrivs de Advanced eDiscovery som loggas i granskningsloggen. De här aktiviteterna (förutom relevanta eDiscovery-aktiviteter kan användas för att hjälpa dig att följa förloppet för aktiviteten i ett Advanced eDiscovery fall.
+I följande tabell beskrivs de Advanced eDiscovery som loggas i granskningsloggen. De här aktiviteterna kan användas för att hjälpa dig att följa upp aktivitetens förlopp i Advanced eDiscovery fall.
 
-|**Eget namn**|**Åtgärd**|**Beskrivning**|
+|**Visningsnamn**|**Åtgärd**|**Beskrivning**|
 |:-----|:-----|:-----|
 |Lade till data i en annan granskningsuppsättning|AddWorkingSetQueryToWorkingSet|Användaren har lagt till dokument från en granskningsuppsättning till en annan granskningsuppsättning.|
 |Lade till data att granska uppsättning|AddQueryToWorkingSet|Användaren lade till sökresultatet från en innehållssökning som är kopplad Advanced eDiscovery ett ärende i en granskningsuppsättning.|
@@ -156,14 +151,14 @@ I följande tabell beskrivs de Advanced eDiscovery som loggas i granskningslogge
 
 ## <a name="ediscovery-cmdlet-activities"></a>eDiscovery-cmdlet-aktiviteter
 
-I följande tabell visas de granskningsloggposter för cmdlet som loggas när en administratör eller användare utför en eDiscovery-relaterad aktivitet med hjälp av Säkerhets- och efterlevnadscenter för & eller genom att köra motsvarande cmdlet i fjärr-PowerShell som är ansluten till organisationens säkerhets- och efterlevnadscenter för &. Den detaljerade informationen i granskningsloggposten skiljer sig för cmdlet-aktiviteterna som visas i den här tabellen och eDiscovery-aktiviteterna som beskrivs i föregående avsnitt.
+I följande tabell visas de cmdlet-granskningsloggposter som loggas när en administratör eller användare utför en eDiscovery-relaterad aktivitet med hjälp av efterlevnadscentret eller genom att köra motsvarande cmdlet i Security & Compliance Center PowerShell. Den detaljerade informationen i granskningsloggposten skiljer sig för cmdlet-aktiviteterna som visas i den här tabellen och eDiscovery-aktiviteterna som beskrivs i föregående avsnitt.
   
 Som tidigare nämnts tar det upp till 24 timmar innan eDiscovery-cmdlet-aktiviteter visas i granskningsloggens sökresultat.
   
 > [!TIP]
 > Cmdletarna i kolumnen **Operation** i följande tabell är länkade till motsvarande hjälpavsnitt för cmdlet på TechNet. Gå till cmdlet-hjälpavsnittet för en beskrivning av tillgängliga parametrar för varje cmdlet. Parametern och parametervärdet som användes med en cmdlet ingår i granskningsloggposten för varje eDiscovery-cmdlet-aktivitet som loggas. 
   
-|**Eget namn**|**Operation (cmdlet)**|**Beskrivning**|
+|**Visningsnamn**|**Operation (cmdlet)**|**Beskrivning**|
 |:-----|:-----|:-----|
 |Skapat ärende för håll i e-dataidentifieringsfall  <br/> |[New-CaseHoldPolicy](/powershell/module/exchange/new-caseholdpolicy) <br/> |Ett sådant ärende har skapats för ett eDiscovery-ärende. Ett värde kan skapas med eller utan att ange en innehållskälla. Om innehållskällor anges identifieras de i granskningsloggposten.  <br/> |
 |Borttagna rader från e-dataidentifieringsfall  <br/> |[Remove-CaseHoldPolicy](/powershell/module/exchange/remove-caseholdpolicy) <br/> |Ett ärende som är kopplat till ett eDiscovery-ärende har tagits bort. Om du tar bort ett väntande objekt tas alla innehållsplatser bort från platsen. Om du tar bort det här antalet innebär det också att du tar bort reglerna för att hålla ärendet kvar (se **Remove-CaseHoldRule** nedan).  <br/> |
@@ -180,7 +175,7 @@ Som tidigare nämnts tar det upp till 24 timmar innan eDiscovery-cmdlet-aktivite
 |Innehållssökning skapad  <br/> |[New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch) <br/> |En ny innehållssökning har skapats.  <br/> |
 |Borttagna innehållssökning  <br/> |[Remove-ComplianceSearch](/powershell/module/exchange/remove-compliancesearch) <br/> |En befintlig innehållssökning har tagits bort.  <br/> |
 |Innehållssökning ändrad  <br/> |[Set-ComplianceSearch](/powershell/module/exchange/set-compliancesearch) <br/> |En befintlig innehållssökning har ändrats. Ändringar kan innefatta att lägga till eller ta bort innehållsplatser som genomsöks och att redigera sökfrågan.  <br/> |
-|Startad innehållssökning  <br/> |[Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch) <br/> |En innehållssökning startades. När du skapar eller ändrar en innehållssökning med hjälp av GUI för & säkerhets- och efterlevnadscenter startas sökningen automatiskt. Om du skapar eller ändrar en sökning med hjälp av cmdleten **New-ComplianceSearch** eller **Set-ComplianceSearch** måste du köra cmdleten **Start-ComplianceSearch** för att starta sökningen.  <br/> |
+|Startad innehållssökning  <br/> |[Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch) <br/> |En innehållssökning startades. När du skapar eller ändrar en innehållssökning med hjälp av guid för efterlevnadscentret startas sökningen automatiskt. Om du skapar eller ändrar en sökning med hjälp av cmdleten **New-ComplianceSearch** eller **Set-ComplianceSearch** måste du köra cmdleten **Start-ComplianceSearch** för att starta sökningen.  <br/> |
 |Stoppad innehållssökning  <br/> |[Stop-ComplianceSearch](/powershell/module/exchange/stop-compliancesearch) <br/> |En innehållssökning som kördes stoppades.  <br/> |
 |Innehållssökningsåtgärd skapad  <br/> |[New-ComplianceSearchAction](/powershell/module/exchange/new-compliancesearchaction) <br/> |En innehållssökningsåtgärd har skapats. Innehållssökningsåtgärder omfattar att förhandsgranska sökresultat, exportera sökresultat, förbereda sökresultat för analys i Advanced eDiscovery och permanent ta bort objekt som matchar sökvillkoren för en innehållssökning.  <br/> |
 |Sökåtgärden Borttagna innehåll  <br/> |[Remove-ComplianceSearchAction](/powershell/module/exchange/remove-compliancesearchaction) <br/> |En innehållssökningsåtgärd har tagits bort.  <br/> |
@@ -190,10 +185,10 @@ Som tidigare nämnts tar det upp till 24 timmar innan eDiscovery-cmdlet-aktivite
 |EDiscovery-administratör skapad  <br/> |[Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin) <br/> |En användare har lagts till som eDiscovery-administratör i organisationen.  <br/> |
 |Borttagna eDiscovery-administratörer  <br/> |[Remove-eDiscoveryCaseAdmin](/powershell/module/exchange/remove-ediscoverycaseadmin) <br/> |En eDiscovery-administratör har tagits bort från din organisation.  <br/> |
 |EDiscovery-administratörsmedlemskap ändrades  <br/> |[Update-eDiscoveryCaseAdmin](/powershell/module/exchange/update-ediscoverycaseadmin) <br/> |Listan med eDiscovery-administratörer i organisationen har ändrats. Den här aktiviteten loggas när listan med eDiscovery-administratörer ersätts med en grupp med nya användare. Om en enskild användare läggs till eller tas bort loggas åtgärden **Add-eDiscoveryCaseAdmin** eller **Remove-eDiscoveryCaseAdmin.**  <br/> |
-   
+
 ## <a name="detailed-properties-for-ediscovery-activities"></a>Detaljerade egenskaper för eDiscovery-aktiviteter
 
-I följande tabell beskrivs de egenskaper som ingår när  du klickar på **Mer information** på sidan Information för en eDiscovery-aktivitet som visas i sökresultatet. De här egenskaperna ingår också i CSV-filen när du exporterar granskningsloggens sökresultat. En granskningsloggpost för en eDiscovery-aktivitet innehåller inte varje detaljerad egenskap som anges nedan. 
+I följande tabell beskrivs de egenskaper som ingår när  du klickar på **Mer information** på sidan Information för en eDiscovery-aktivitet som visas i sökresultatet. De här egenskaperna ingår också i CSV-filen när du exporterar granskningsloggens sökresultat. En granskningsloggpost för en eDiscovery-aktivitet innehåller inte varje detaljerad egenskap som anges nedan.
   
 > [!TIP]
 > När du exporterar sökresultaten innehåller CSV-filen en kolumn med namnet **Information,** som innehåller de detaljerade egenskaper som beskrivs i följande tabell i en egenskap med flera värden. Du kan använda Power Query-funktionen i Excel för att dela upp kolumnen i flera kolumner så att varje egenskap har en egen kolumn. Då kan du sortera och filtrera efter en eller flera av de här egenskaperna. Mer information finns i avsnittet "Exportera sökresultatet till en fil" i [Söka i granskningsloggen.](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file) 
@@ -201,10 +196,10 @@ I följande tabell beskrivs de egenskaper som ingår när  du klickar på **Mer 
 |**Egenskap**|**Beskrivning**|
 |:-----|:-----|
 |Ärende  <br/> |Identiteten (GUID) för eDiscovery-ärendet som skapades, ändrades eller togs bort.  <br/> |
-|ClientApplication  <br/> |eDiscovery-cmdlet-aktiviteter har värdet **EMC** för den här egenskapen. Det här anger aktiviteten som utfördes med hjälp av GUI & Security & Compliance Center eller med cmdleten i PowerShell.  <br/> |
+|ClientApplication  <br/> |eDiscovery-cmdlet-aktiviteter har värdet **EMC** för den här egenskapen. Det här anger aktiviteten som utfördes med hjälp av GUI för efterlevnadscenter eller genom att köra cmdleten i PowerShell.  <br/> |
 |ClientIP  <br/> |IP-adressen för den enhet som användes när aktiviteten loggades. IP-adressen visas i IPv4- eller IPv6-adressformat.  <br/> |
 |ClientRequestId  <br/> | För eDiscovery-aktiviteter är den här egenskapen vanligtvis tom.  <br/> |
-|CmdletVersion  <br/> |Versionsnumret för den version av Säkerhets- och & som körs i organisationen.  <br/> |
+|CmdletVersion  <br/> |Versionsnumret för den version av efterlevnadscentret som körs i organisationen.  <br/> |
 |CreationTime  <br/> |Datum och tid i UTC (Coordinated Universal Time) när eDiscovery-aktiviteten slutfördes.  <br/> |
 |EffectiveOrganization  <br/> |Namnet på Microsoft 365-organisationen.  <br/> |
 |ExchangeLocations  <br/> |De Exchange Online postlådor som ingår i en innehållssökning eller som har satts i ett ärende för e-dataidentifiering.  <br/> |
@@ -221,7 +216,7 @@ I följande tabell beskrivs de egenskaper som ingår när  du klickar på **Mer 
 |Fråga  <br/> |Sökfrågan som är kopplad till aktiviteten, till exempel en innehållssökning eller ett frågebaserat väntande.  <br/> |
 |RecordType  <br/> |Typen av åtgärd som anges av posten. Värdet för **18 anger** en händelse som är relaterad till en aktivitet som listas i [avsnittet för eDiscovery-cmdlet-aktiviteter.](#ediscovery-cmdlet-activities) Värdet **24 anger en händelse** relaterad till en aktivitet som listas i avsnittet Så här söker du efter och visar [eDiscovery-aktiviteter.](#how-to-search-for-and-view-ediscovery-activities)  <br/> |
 |ResultStatus  <br/> |Anger om åtgärden (som anges i egenskapen Åtgärd) lyckades eller inte.  <br/> |
-|SecurityComplianceCenterEventType  <br/> |Anger att aktiviteten var en säkerhets- & händelsen Compliance Center. Alla eDiscovery-aktiviteter har värdet **0** för den här egenskapen.  <br/> |
+|SecurityComplianceCenterEventType  <br/> |Anger att aktiviteten var ett efterlevnadscenter. Alla eDiscovery-aktiviteter har värdet **0** för den här egenskapen.  <br/> |
 |SharepointLocations  <br/> |Den SharePoint onlinewebbplatser som ingår i en innehållssökning eller som har satts i ett eDiscovery-ärende.  <br/> |
 |StartTime  <br/> |Datum och tid i UTC (Coordinated Universal Time) när eDiscovery-aktiviteten startades.  <br/> |
 |UserId  <br/> |Användaren som utförde aktiviteten (anges i operation-egenskapen) som resulterade i att posten loggades. Poster för eDiscovery-aktivitet som utförs av systemkonton (t.ex. NT AUTHORITY\SYSTEM) ingår också i granskningsloggen.  <br/> |

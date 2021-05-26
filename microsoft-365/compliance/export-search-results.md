@@ -22,18 +22,18 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exportera sökresultatet från en innehållssökning i kompatibilitetscentret Microsoft 365 en lokal dator. E-postresultat exporteras som PST-filer. Innehåll från SharePoint och OneDrive för företag exporteras som ursprungliga dokument Office dokument.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ec09706fecbe703fa2ab38cad5f8f8304484f44
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b39bb52457599090f2898da222c71a3a56889290
+ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536064"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52653541"
 ---
 # <a name="export-content-search-results"></a>Exportera resultat av innehållssökning
 
 När en innehållssökning har körts kan du exportera sökresultatet till en lokal dator. När du exporterar e-postresultat laddas de ned till datorn som PST-filer. När du exporterar innehåll SharePoint och OneDrive för företag webbplatser exporteras kopior av Office dokument. Det finns andra dokument och rapporter som ingår i de exporterade sökresultaten.
   
-Om du exporterar resultaten av en innehållssökning förbereds resultaten och hämtas sedan till en lokal dator.
+Om du exporterar resultaten av en innehållssökning förbereds resultaten och hämtas sedan till en lokal dator. De här stegen för att exportera sökresultat gäller även för export av resultat av en sökning som är kopplad till Core eDiscovery-fall.
   
 ## <a name="before-you-export-search-results"></a>Innan du exporterar sökresultat
 
@@ -57,6 +57,8 @@ Om du exporterar resultaten av en innehållssökning förbereds resultaten och h
   > <sup>1</sup> Microsoft tillverkar inte tillägg eller tillägg från tredje part för ClickOnce tilläggsprogram. Export av sökresultat med en webbläsare som inte stöds med tillägg eller tillägg från tredje part stöds inte.<br/>
   > <sup>2</sup> På grund av de senaste ändringarna Microsoft Edge är ClickOnce inte längre aktiverat som standard. Anvisningar om hur du aktiverar ClickOnce i Edge finns i [Använda verktyget för eDiscovery-export i Microsoft Edge.](configure-edge-to-export-search-results.md)
   
+- Verktyget för eDiscovery-export som du använder i steg 2 för att ladda ned sökresultat stöder inte automation (genom att använda skript eller cmdlets). Vi rekommenderar starkt att du inte automatiserar förberedelseprocessen i steg 1 eller nedladdningsprocessen i steg 2. Om du automatiserar någon av dessa processer får du ingen hjälp av Microsoft Support om du får problem.
+
 - Vi rekommenderar att du laddar ned sökresultat till en lokal dator. Om du vill eliminera företagets brandvägg eller proxyinfrastruktur från att orsaka problem när du laddar ned sökresultat kan du överväga att ladda ned sökresultat till ett virtuellt skrivbord utanför nätverket. Det kan minska tidsgränserna för export av Azure-dataanslutningar vid export av ett stort antal filer. Mer information om virtuella skrivbord finns i Windows [Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop).
 
 - För att förbättra prestandan när du laddar ned sökresultat kan du dela upp sökningar som returnerar en stor uppsättning resultat i mindre sökningar. Du kan till exempel använda datumintervall i sökfrågor för att returnera ett mindre antal resultat som kan laddas ned snabbare.
@@ -82,7 +84,7 @@ Om du exporterar resultaten av en innehållssökning förbereds resultaten och h
     </system.net>
     ```
 
-- Om resultatet av en innehållssökning är äldre än 7 dagar och du skickar ett exportjobb visas ett felmeddelande som uppmanar dig att köra sökningen igen för att uppdatera sökresultatet. I så fall avbryter du exporten, kör sökningen igen och startar exporten igen.
+- Om resultatet av en sökning är äldre än 7 dagar och du skickar ett exportjobb visas ett felmeddelande som uppmanar dig att köra sökningen igen för att uppdatera sökresultatet. I så fall avbryter du exporten, kör sökningen igen och startar exporten igen.
 
 ## <a name="step-1-prepare-search-results-for-export"></a>Steg 1: Förbereda sökresultat för export
 
@@ -169,7 +171,7 @@ Nästa steg är att ladda ned sökresultatet från den Azure Storage platsen til
       >- Inaktivera antivirusskanning för mappen som du laddar ned sökresultatet till.<br/>
       >- Ladda ned sökresultat till olika mappar för samtidiga nedladdningsjobb.
 
-6. Klicka **på Start** för att ladda ned sökresultatet till datorn.
+7. Klicka **på Start** för att ladda ned sökresultatet till datorn.
   
     I **verktyget eDiscovery Export** visas statusinformation om exporten, inklusive en uppskattning av antalet (och storleken) av de återstående objekten som ska laddas ned. När exporten är klar kan du komma åt filerna på den plats där de laddades ned.
 
