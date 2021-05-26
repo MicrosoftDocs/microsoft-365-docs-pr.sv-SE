@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Konfigurera känslighetsetiketter för kryptering som skyddar dina data genom att begränsa åtkomst och användning.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 804cfa9da39b5dc9b9dffdcd68fb196e8676f9af
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: f6fff2bc595e9317ef037929a8a6828935b15bbf
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532092"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624687"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Begränsa åtkomst till innehåll med hjälp av känslighetsetiketter för att tillämpa kryptering
 
@@ -178,7 +178,7 @@ När du tilldelar behörigheter kan du välja:
 
 När du väljer alla användare och grupper i organisationen, eller bläddrar i katalogen, måste användarna eller grupperna ha en e-postadress.
 
-Det är bäst att använda grupper i stället för användare. Den här strategin gör konfigurationen enklare.
+Det är bäst att använda grupper i stället för användare. Den här strategin gör konfigurationen enklare.
 
 ##### <a name="requirements-and-limitations-for-add-any-authenticated-users"></a>Krav och begränsningar för ”Lägg till autentiserade användare”
 
@@ -427,6 +427,10 @@ Innan du kan använda kryptering kan du behöva utföra vissa konfigurationsuppg
 - Aktivera skydd från Azure Information Protection
     
     För att känslighetsetiketter ska tillämpa kryptering måste skyddstjänsten (Azure Rights Management) från Azure Information Protection vara aktiverad för klientorganisationen. I nyare klientorganisationer är det här standardinställningen, men du kan behöva aktivera tjänsten manuellt. Mer information finns i [Aktivera skyddstjänsten från Azure Information Protection](/azure/information-protection/activate-service).
+
+- Kontrollera nätverkskrav
+    
+    Du kan behöva göra några ändringar på dina nätverksenheter, till exempel brandväggar. Mer information finns i [Brandväggar och nätverksinfrastruktur](/azure/information-protection/requirements#firewalls-and-network-infrastructure) från Azure Information Protection-dokumentationen.
 
 - Konfigurera Exchange för Azure Information Protection
     

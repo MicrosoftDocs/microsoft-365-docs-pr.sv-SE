@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: Läs mer om de inställningar för gästdelning som är tillgängliga i Microsoft 365 som kan påverka delning med personer utanför organisationen.
-ms.openlocfilehash: 60ebff4f564e7046a54cb707781acc0151aa8ad9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b209477e2fa205ebb6b298b7fa9f37c21e2b3d7e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538117"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625436"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Inställningar för gästdelning i Microsoft 365
 
@@ -38,7 +38,7 @@ Azure Active Directory är den katalogtjänst som används av Microsoft 365. Ins
 > [!NOTE]
 > De här inställningarna påverkar bara SharePoint när [SharePoint- och OneDrive-integrering med Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) har konfigurerats. I tabellen nedan förutsätts det att den har konfigurerats.
 
-### <a name="organizational-relationships-settings"></a>Inställningar för relationer i organisationen
+### <a name="external-collaboration-settings"></a>Inställningar för externt samarbete
 
 **Navigering:** [administrationscentret för Azure Active Directory](https://aad.portal.azure.com) > Azure Active Directory > externa identiteter > Inställningar för externt samarbete
 
@@ -46,11 +46,9 @@ Azure Active Directory är den katalogtjänst som används av Microsoft 365. Ins
 
 | Inställning | Standard | Beskrivning |
 |:-----|:-----|:-----|
-|Behörigheterna för gästanvändare är begränsade|Ja|Den här inställningen påverkar katalogaktiviteterna som en gäst kan utföra.|
-|Administratörer och användare i gästinbjudarrollen kan bjuda in|Ja|När du har angett **Ja** kan administratörer bjuda in gäster via Azure AD och Microsoft 365-delningar, t.ex. Teams och SharePoint. Om du har angett **Nej** kan de inte göra det.|
-|Medlemmar kan bjuda in|Ja|När du har angett **Ja** kan Azure AD-medlemmar bjuda in gäster via Azure AD. Om du har angett **Nej** kan de inte göra det. När du har angett **Ja** kan Microsoft 365-gruppmedlemmar bjuda in gäster med ägargodkännande. Om du har angett **Nej** kan Microsoft 365-gruppmedlemmar bjuda in gäster med ägargodkännande, men ägarna måste vara globala administratörer för att kunna godkänna. <br><br>Observera att **Medlemmar kan bjuda in** gäller medlemmar i Azure AD (inte gäster) och inte webbplats- eller gruppmedlemmar i Microsoft 365. <br><br>Det här är den samma inställningen som **Låt användarna lägga till nya gäster i organisationen** för säkerhet och sekretess i Microsoft 365.|
-|Gäster kan bjuda in|Ja|När du har angett **Ja** kan gäster i katalogen bjuda in andra gäster för att samarbeta om Azure AD-resurser och filer och mappar i SharePoint och OneDrive. Om du har angett **Nej** kan de inte göra det. <br><br>Observera att **Tillåt externa användare att hitta användarkonton i katalogen genom att skriva in exakta e-postadressmatchningar** måste vara aktiverat i administrationscentret för SharePoint för att gästerna ska kunna dela filer och mappar med andra gäster.|
-|Aktivera e-engångslösenord för gäster (förhandsversion)|Nej|När du har angett **Ja** kan gäster utan MSA-konto eller ett arbets- eller skolkonto [autentisera med Azure AD med ett engångslösenord](/azure/active-directory/b2b/one-time-passcode). Om du har angett **Nej** måste användarna skapa ett Microsoft-konto för att kunna autentisera. Den här inställningen måste vara inställd på **Ja** för [SharePoint- och OneDrive-integrering med Azure AD B2B (för hands version)](/sharepoint/sharepoint-azureb2b-integration-preview) för att fungera.|
+|Gästanvändarbehörighet|Gästanvändare har begränsad åtkomst till egenskaper och medlemskap i katalogobjekt|Avgör vilka [behörigheter som gäster har i Azure Active Directory](/azure/active-directory/fundamentals/users-default-permissions).|
+|Inställningar för gästinbjudning|Alla i organisationen kan bjuda in gästanvändare, inklusive gäster och icke-administratörer|Avgör om gäster, medlemmar och administratörer kan bjuda in gäster till organisationen.<br><br> Den här inställningen påverkar Microsoft 365-delningsupplevelser som Team och SharePoint.|
+|Aktivera självbetjäning för gäster att registrera via användarflöden|Nej|Fastställer om du kan skapa användarflöden som tillåter att någon registrerar sig för ett program som du har skapat och skapar ett nytt gästkonto.|
 |Samarbetsbegränsningar|Tillåt att inbjudningar skickas till alla domäner|Med den här inställningen kan du ange en lista över tillåtna eller blockerade domäner för delning. När tillåtna domäner anges kan delningsinbjudningar bara skickas till dessa domäner. När blockerade domäner anges kan delningsinbjudningar inte skickas till de domänerna.<br><br> Den här inställningen påverkar Microsoft 365-delningsupplevelser som Team och SharePoint. Du kan tillåta eller blockera domäner på en mer detaljerad nivå med hjälp av domänfiltrering i SharePoint eller Teams.|
 
 Dessa inställningar påverkar hur användare bjuds in till katalogen. De påverkar inte delning med gäster som redan finns i katalogen.

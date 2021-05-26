@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: När en delad postlåda har skapats kan flera personer i verksamheten dela på ansvaret att läsa och svara på e-postmeddelanden som skickas till en adress.
-ms.openlocfilehash: 808b98b45c3d6f5ba3cd9847ba2aa843ff53d106
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e628d72482ed7ff32a204eaf9503fdd9a271844a
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537613"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635504"
 ---
 # <a name="create-a-shared-mailbox"></a>Skapa en delad postlåda 
 
@@ -200,12 +200,8 @@ När du skapade den delade postlådan skapade du automatiskt en delad kalender. 
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Om delade postlådor](about-shared-mailboxes.md) (artikel)
-
-[Konfigurera en delad postlåda](configure-a-shared-mailbox.md) (artikel)
-
-[Konvertera en användarpostlåda till en delad postlåda](convert-user-mailbox-to-shared-mailbox.md) (artikel)
-
-[Ta bort en licens från en delad postlåda](remove-license-from-shared-mailbox.md) (artikel)
-
+[Om delade postlådor](about-shared-mailboxes.md) (artikel)\
+[Konfigurera en delad postlåda](configure-a-shared-mailbox.md) (artikel)\
+[Konvertera en användarpostlåda till en delad postlåda](convert-user-mailbox-to-shared-mailbox.md) (artikel)\
+[Ta bort en licens från en delad postlåda](remove-license-from-shared-mailbox.md) (artikel)\
 [Lösa problem med delade postlådor](resolve-issues-with-shared-mailboxes.md) (artikel)

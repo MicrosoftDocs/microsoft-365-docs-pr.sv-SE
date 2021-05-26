@@ -22,12 +22,12 @@ description: Använd känslighetsetiketter från Microsoft Information Protectio
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: bd3cc0a71fab9f2ceb6d3219a371bb4d5c030744
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 171f449a8b73ff42113358d50dbe8bde909f5d4d
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297254"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625191"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Lär dig mer om känslighetsetiketter
 
@@ -110,7 +110,7 @@ När en känslighetsetikett används för ett e-postmeddelande eller dokument ti
     
     Vissa, men inte alla appar, har stöd för dynamisk märkning med hjälp av variabler. Du kan till exempel infoga etikettens namn eller dokumentets namn i sidhuvudet, sidfoten eller vattenstämpeln. Mer information finns i [Dynamiska markeringar med variabler](sensitivity-labels-office-apps.md#dynamic-markings-with-variables).
     
-    Stränglängder: Vattenstämplar är begränsade till 255 tecken. Sidhuvuden och sidfötter är begränsade till 1 024 tecken, förutom i Excel. Excel har en totalgräns på 255 tecken för sidhuvuden och sidfötter, men den här gränsen inkluderar tecken som inte är synliga, till exempel formateringskoder. Om gränsen nås visas inte strängen du anger i Excel.
+    Stränglängder: Vattenstämplar är begränsade till 255 tecken. Sidhuvuden och sidfötter är begränsade till 1 024 tecken, förutom i Excel. Excel har en totalgräns på 255 tecken för sidhuvuden och sidfötter, men den här gränsen inkluderar tecken som inte är synliga, till exempel formateringskoder. Om gränsen nås visas inte strängen du anger i Excel.
 
 - **Skydda innehåll i behållare som webbplatser och grupper** när du aktiverar funktionen för att [använda känslighetsetiketter med Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](sensitivity-labels-teams-groups-sites.md).
     
@@ -209,7 +209,7 @@ När du konfigurerar en etikettprincip kan du göra följande:
 
 När du har skapat en etikettprincip som tilldelar nya känslighetsetiketter till användare och grupper börjar användarna se etiketterna i Office-apparna. De kan ta upp till 24 timmar för de senaste ändringarna att replikeras i hela organisationen.
 
-Det finns ingen gräns för hur många känslighetsetiketter du kan skapa och publicera, med ett undantag: om etiketten tillämpar kryptering kan du skapa högst 500 etiketter. Men för att minska administrationsarbetet och komplexiteten för användarna rekommenderar vi att du försöker hålla nere antalet etiketter. I verkliga distributioner har effektiviteten minskat betydligt när användare har fler än fem huvudetiketter eller fler än fem underetiketter per huvudetikett.
+Det finns ingen gräns för hur många känslighetsetiketter du kan skapa och publicera, med ett undantag: om etiketten tillämpar kryptering som anger användare och behörigheter kan du skapa högst 500 etiketter i den här konfigurationen. Men för att minska administrationsarbetet och komplexiteten för användarna rekommenderar vi att du försöker hålla nere antalet etiketter. I verkliga distributioner har effektiviteten minskat betydligt när användare har fler än fem huvudetiketter eller fler än fem underetiketter per huvudetikett.
 
 ### <a name="label-policy-priority-order-matters"></a>Prioritet för etikettprincip (ordningen är viktig)
 
@@ -253,7 +253,7 @@ Om du är en ny Azure Information Protection-användare, eller om du är en befi
 > [!NOTE]
 > Etiketthantering för Azure Information Protection-etiketter i Azure-portalen har blivit inaktuellt **31 mars 2021**. Läs mer i det officiella [utfasningsmeddelandet](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
 
-Om klientorganisationen inte finns på [plattformen för enhetlig etikettering](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform) än måste du först aktivera enhetlig etikettering innan du kan använda känslighetsetiketter. Instruktioner finns i artikeln om [hur du migrerar Azure Information Protection-etiketter till enhetliga känslighetsetiketter](/azure/information-protection/configure-policy-migrate-labels). 
+Om klientorganisationen inte finns på [plattformen för enhetlig etikettering](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform) än måste du först aktivera enhetlig etikettering innan du kan använda känslighetsetiketter. Instruktioner finns i artikeln om [hur du migrerar Azure Information Protection-etiketter till enhetliga känslighetsetiketter](/azure/information-protection/configure-policy-migrate-labels). 
 
 ## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>Känslighetsetiketter och SDK:t för Microsoft Information Protection
 

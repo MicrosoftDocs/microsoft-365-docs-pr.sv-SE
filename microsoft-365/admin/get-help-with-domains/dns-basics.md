@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Domain Name System mappar värddatornamn till IP-adresser och med hjälp av grundläggande information om DNS- och domänregistratorer kan du hantera domäner.
-ms.openlocfilehash: f9982ad55652eac9faf33986bb1481e29897a48e
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 19fc444c056bbf3e1ea1f601d20a9b9cbd75bec8
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582950"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635432"
 ---
 # <a name="dns-basics"></a>Grundläggande om DNS
 
@@ -38,6 +38,8 @@ ms.locfileid: "52582950"
 ::: moniker range="o365-worldwide"
 
 Domännamn, till exempel contoso.com, hanteras med ett världsomspännande system för domänregistratorer och databaser. DNS (Domain Name System) tillhandahåller en mappning mellan läsbara dator värdnamn och de IP-adresser som används av nätverksutrustning. En förståelse av grunderna i DNS och domänregistratorer kan hjälpa dig att hantera domäner.
+
+## <a name="watch-domains--dns-an-overview"></a>Titta på: Domäner & DNS: En översikt
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -46,6 +48,8 @@ Domännamn, till exempel contoso.com, hanteras med ett världsomspännande syste
 ::: moniker range="o365-germany"
 
 Domännamn, till exempel contoso.com, hanteras med ett världsomspännande system för domänregistratorer och databaser. DNS (Domain Name System) tillhandahåller en mappning mellan läsbara dator värdnamn och de IP-adresser som används av nätverksutrustning. En förståelse av grunderna i DNS och domänregistratorer kan hjälpa dig att hantera domäner.
+
+## <a name="watch-domains--dns-an-overview"></a>Titta på: Domäner & DNS: En översikt
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -192,7 +196,7 @@ Du kan [hitta en lista med värden](information-for-dns-records.md) att konfigur
   
 Om du planerar en distribution kanske du vill granska en lista över alla de DNS-poster som behövs för Microsoft 365, vad deras funktion är och exempelvärden. Ta en titt på [Externa DNS-poster för Microsoft 365](../../enterprise/external-domain-name-system-records.md).
   
-## <a name="how-can-i-learn-more"></a>Var hittar jag mer information?
+## <a name="next-steps"></a>Nästa steg
 
 Läs något av följande avsnitt: 
   
@@ -201,8 +205,6 @@ Läs något av följande avsnitt:
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Domänens vanliga frågor och svar](../setup/domains-faq.yml) (artikel)
-
-[Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster](find-and-fix-issues.md) (artikel)
-
+[Vanliga frågor och svar om domäner](../setup/domains-faq.yml) (artikel)\
+[Hitta och åtgärda problem när du har lagt till din domän eller DNS-register](find-and-fix-issues.md) (artikel)\
 [Hantera domäner](index.yml) (länksida)

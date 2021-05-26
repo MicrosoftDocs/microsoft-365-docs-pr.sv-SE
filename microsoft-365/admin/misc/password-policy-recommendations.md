@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Gör organisationen säkrare mot lösenordsattacker och förbjud vanliga lösenord och aktivera riskbaserad multifaktorautentisering.
-ms.openlocfilehash: f2b9b9188a6f05bbcdae45dcc22d401e1eb6f1a8
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: f42905c6bf7769e558581338fd122f26d530423e
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593915"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635980"
 ---
 # <a name="password-policy-recommendations"></a>Policyrekommendationer för lösenord
 
@@ -128,7 +128,9 @@ Mer information finns i [Konfigurera multifaktorautentisering](../security-and-c
 
 Med riskbaserad multifaktorautentisering går det att kontrollera att användaren är den riktiga kontoägaren när misstänkt aktivitet identifieras av systemet. 
   
-## <a name="want-to-know-more-recommended-reading"></a>Vill du veta mer? Rekommenderad läsning
+## <a name="next-steps"></a>Nästa steg
+
+Vill du veta mer om hur du hanterar lösenord? Här är några rekommenderade artiklar att läsa:
 
 - [Fyller starka webblösenord någon funktion?](https://go.microsoft.com/fwlink/p/?linkid=861008)
 
@@ -144,10 +146,7 @@ Med riskbaserad multifaktorautentisering går det att kontrollera att användare
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Återställ lösenord](../add-users/reset-passwords.md) (artikel)
-
-[Ange att en enskild användares lösenord aldrig ska förfalla](../add-users/set-password-to-never-expire.md)(artikel)
-
-[Låt användare återställa sina egna lösenord](../add-users/let-users-reset-passwords.md) (artikel)
-
+[Återställa lösenord](../add-users/reset-passwords.md) (artikel)\
+[Ställa in en enskild användares lösenord för att aldrig ska förfalla](../add-users/set-password-to-never-expire.md)(artikel)\
+[Låt användare återställa sina egna lösenord](../add-users/let-users-reset-passwords.md) (artikel)\
 [Skicka om en användares lösenord – hjälp för administratörer](../add-users/resend-user-password.md) (artikel)

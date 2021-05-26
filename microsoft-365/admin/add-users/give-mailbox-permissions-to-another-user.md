@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: Ge en användare rätt att få åtkomst till en annan användares postlåda, så att användaren kan läsa och skicka e-postmeddelanden från den andra användarens postlåda.
-ms.openlocfilehash: 3514be02f2ef82b727edfcf86c0bd3f6b8515510
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0e5f7b154fa37ae9775e7208574b2a5395e7c239
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535968"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634286"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Ge behörigheter för postlådor åt en annan användare – administratörshjälp
 
@@ -207,9 +207,7 @@ Det finns några olika sätt att komma åt en postlåda när du har fått åtkom
 
 ## <a name="related-content"></a>Relaterat innehåll
   
-[Hantera andra personers e-post- och kalenderobjekt](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5) (artikel)
-    
-[Skicka e-post från en annan person eller grupp](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) (artikel)
-
+[Hantera andra personers e-post- och kalenderobjekt](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5) (artikel)\   
+[Skicka e-post från en annan person eller grupp](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) (artikel)\
 [Ändra användarnamn och e-postadress](../add-users/change-a-user-name-and-email-address.md) (video)
 

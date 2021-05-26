@@ -23,18 +23,18 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Mer information om hur en global administratör i Microsoft 365 kan ändra en användares e-postadress och visningsnamn när användarens namn ändras. '
-ms.openlocfilehash: 2614e0ae53e5ff1cf08ded384e7470cc5967e682
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 1aa3fd3b67333937e64aab825e64533ccb09eea9
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535992"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634226"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Ändra ett användarnamn och en e-postadress
 
 Du kanske måste ändra någons e-postadress och visningsnamn i om personen till exempel gifter sig och byter efternamn.
 
-Titta på en kort video om hur du ändrar en användares e-postadress. <br><br>
+## <a name="watch-change-a-users-name-or-email-address"></a>Titta på: Ändra en användares namn eller e-postadress
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc] 
 
@@ -253,8 +253,6 @@ Om du vill veta hur du ändrar ett användarnamn i Active Directory i Windows Se
   
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Administratörer: Återställa ett lösenord för en eller flera användare](reset-passwords.md) (artikel)
-  
-[Lägga till ytterligare en e-postadress för en användare](../email/add-another-email-alias-for-a-user.md) (artikel)
-
+[Administratörer: Återställa ett lösenord för en eller flera användare](reset-passwords.md) (artikel)\
+[Lägga till ytterligare en e-postadress för en användare](../email/add-another-email-alias-for-a-user.md) (artikel)\
 [Skapa en delad postlåda](../email/create-a-shared-mailbox.md) (artikel)
