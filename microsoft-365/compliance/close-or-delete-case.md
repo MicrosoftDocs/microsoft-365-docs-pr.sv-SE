@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Ta reda på vad som händer när en undersökning eller ett juridiskt ärende som stöds Advanced eDiscovery ett ärende stängs eller tas bort.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ffdd93351325be0c4b5d6d8cdfb78e55b710c0be
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 7b11faa2ccdb44fca916b2f602d5120adadf1739
+ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "52161571"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52657657"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>Stänga eller ta bort ett Advanced eDiscovery ärende
 
@@ -46,7 +46,9 @@ Så här stänger du ett ärende:
 
 2. På fliken **Inställningar,** under **Ärendeinformation,** klickar du på **Välj**.
 
-3. Klicka **på Stäng ärende.**
+3. Längst ned på den **utfällade sidan** Ärendeinformation klickar du på (**...**) **Fler alternativ**, och klicka sedan på **Stäng ärende**.
+
+   ![Alternativ på menyn Fler alternativ för att stänga ett Advanced eDiscovery ärende](..\Media\CloseAdvancedeDiscoveryCase.png)
 
    Det kan ta upp till 60 minuter innan avslutsprocessen slutförs.
 
@@ -60,7 +62,9 @@ Så här öppnar du ett stängt ärende:
 
 2. På fliken **Inställningar,** under **Ärendeinformation,** klickar du på **Välj**.
 
-3. Klicka **på Öppna ärende igen**.
+3. Längst ned på den **utfällade sidan** Ärendeinformation klickar du på (**...**) **Fler alternativ** och klicka sedan på **Öppna ärendet igen.**
+
+   ![Alternativ i menyn Fler alternativ för att öppna ett Advanced eDiscovery ärende](..\Media\ReopenAdvancedeDiscoveryCase.png)
 
    Det kan ta upp till 60 minuter innan återöppnandeprocessen slutförs.
 
@@ -87,4 +91,6 @@ Så här tar du bort ett ärende:
 
 2. På fliken **Inställningar,** under **Ärendeinformation,** klickar du på **Välj**.
 
-3. Klicka på **Ta bort ärende.**
+3. Längst ned på den **utfällade sidan** Ärendeinformation klickar du på (**...**) **Fler alternativ och** klicka sedan på Ta **bort ärende.**
+
+   ![Alternativ på menyn Fler alternativ för att ta bort ett Advanced eDiscovery ärende](..\Media\DeleteAdvancedeDiscoveryCase.png)

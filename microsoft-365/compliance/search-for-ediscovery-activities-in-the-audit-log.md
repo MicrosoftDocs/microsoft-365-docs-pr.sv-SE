@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Lär dig vilka händelser som loggas när användare tilldelade eDiscovery-behörigheter utför innehållssökning, grundläggande eDiscovery och Advanced eDiscovery-uppgifter i Microsoft 365 efterlevnadscenter.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce0dcc50c13ad705cb36f065639a4e971d032f22
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: 8b1f3f235f3411e2f637e4e32104c6179643757d
+ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653505"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52657699"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Söka efter eDiscovery-aktiviteter i granskningsloggen
 
@@ -112,7 +112,7 @@ I följande tabell beskrivs de aktiviteter för innehållssökning och bas-eDisc
 |Startad export av innehållssökning  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |En användare exporterade resultatet av en innehållssökning.  <br/> |
 |Startad exportrapport  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |En användare har exporterat en rapport för innehållssökning.  <br/> |
 |Stoppad innehållssökning  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |En användare har stoppat en innehållssökning.  <br/> |
-|(inget)|CaseViewed|Get-ComplianceCase|En användare har visat en lista över ärenden på sidan **Bas-eDiscovery** i efterlevnadscentret eller genom att köra Get-ComplianceCase-cmdleten.|
+|(inget)|CaseViewed|Get-ComplianceCase|En användare har visat en lista över ärenden på sidan **Bas-eDiscovery** eller **sidan Advanced eDiscovery** i efterlevnadscentret eller genom att köra cmdleten Get-ComplianceCase Core.|
 |(inget)|SearchViewed|Get-ComplianceSearch|En användare har visat listan på  innehållssökningar (visas på fliken Sökningar) i efterlevnadscentret eller genom att köra cmdleten. Den här aktiviteten loggas också när en användare visar listan med innehållssökningar som  är kopplade till ett eDiscovery-ärende (genom att klicka på fliken Sökningar i ett ärende) eller genom att köra kommandot **Get-ComplianceSearch -Case.**|
 |(inget)|ViewedSearchExported|Get-ComplianceSearchAction -Exportera|En användare har visat listan över exportjobb för innehållssökning (listas på fliken **Exporter)** i efterlevnadscentret eller genom att köra cmdleten. Den här aktiviteten loggas även när en användare visar listan över exportjobb i ett eDiscovery-ärende (visas på fliken **Exporter** i ett ärende) eller genom att köra kommandot **Get-ComplianceSearchAction -Case -Export.**|
 |(inget)|ViewedSearchPreviewed|Get-ComplianceSearchAction -Preview|En användare förhandsgranskar resultatet av en innehållssökning i efterlevnadscentret eller genom att köra cmdleten.|
