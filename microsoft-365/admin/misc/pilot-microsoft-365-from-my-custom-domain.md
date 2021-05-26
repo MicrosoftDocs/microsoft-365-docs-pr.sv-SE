@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du utvärderar e-post från min egen domän till en Microsoft 365-postlåda genom att bara använda två test konton.
-ms.openlocfilehash: bdcf86474a7f2edb458075e884c20e56d231df6d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b2017da30aba3b48b51de26b7907167dc5dd3e6e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197845"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623651"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Pilot Microsoft 365 från min anpassade domän
 
@@ -60,7 +60,7 @@ Följ dessa steg för att konfigurera en Microsoft 365-pilot:
 
 3. Välj de tjänster som du vill testa med din domän, t. ex. e-post och snabb meddelanden.
 
-5. På sidan **verifiera** domän följer du de stegvisa anvisningarna, AMD väljer **verifiera**.
+4. På sidan **verifiera** domän följer du de stegvisa anvisningarna, AMD väljer **verifiera**.
 
     Det tar mellan några minuter och 72 timmar för DNS-ändringarna att börja gälla.
 
@@ -70,7 +70,7 @@ Följ dessa steg för att konfigurera en Microsoft 365-pilot:
 
 1. I administrations centret för Exchange går du till avsnittet **e-postflöde**. Välj **godkända domäner** och välj sedan den domän som du vill ändra.
 
-2. Dubbelklicka på fönstret för att öppna det och välj **internt relä**. 
+2. Dubbelklicka på fönstret för att öppna det och välj **internt relä**.
 
 3. Välj **Spara**.
 
@@ -81,11 +81,11 @@ Följ dessa steg för att konfigurera en Microsoft 365-pilot:
 I Microsoft 365 används Exchange Online Protection (EOP) för skräp post skydd. EOP kanske blockerar din befintliga e-postserver om en stor volym skräp post överförs av den aktuella e-postservern. Om du litar på skräp post skyddet för den andra e-postleverantören kan du häva blockeringen av servern i Microsoft 365.
 
 > [!NOTE]
-> Om du tar bort blockeringen av den befintliga e-postservern får all skräp post som kommer via din ursprungliga server till gång till Microsoft 365-post lådorna och du kan inte utvärdera hur bra Microsoft 365 hindrar skräp post.
+> Om du tar bort blockeringen av den befintliga e-postservern får all skräp post som kommer via din ursprungliga server tillgång till Microsoft 365-postlådorna och du kan inte utvärdera hur bra Microsoft 365 hindrar skräppost.
 
 1. I navigerings fönstret i administrations centret för Exchange väljer du **skydd** och väljer sedan **anslutnings filter**.
 
-2. Välj **+****i listan med lista över tillåtna IP-** och e-postservern. 
+2. Välj **+****i listan med lista över tillåtna IP-** och e-postservern.
 
 ### <a name="step-5-create-user-accounts-and-set-the-primary-reply-to-address"></a>Steg 5: skapa användarkonton och ange primär svars adress
 
@@ -97,9 +97,9 @@ I Microsoft 365 används Exchange Online Protection (EOP) för skräp post skydd
 
     Om du vill vara säker på att användarens e-postadress är densamma måste fältet **användarnamn** matcha användarens aktuella e-postadress.
 
-3. Välj en licens, klicka på **nästa** och klicka sedan **Slutför lägga till**. 
+3. Välj en licens, klicka på **nästa** och klicka sedan **Slutför lägga till**.
 
-4. Bredvid **Användarnamn** väljer du det anpassade domännamnet i listrutan. 
+4. Bredvid **Användarnamn** väljer du det anpassade domännamnet i listrutan.
 
 5. Välj **skapa** > **stänga**.
 
@@ -115,7 +115,7 @@ Det finns två steg för detta:
 
 Kontrollera att du är klar med följande i Microsoft 365 eller Office 365:
 
-1. För att konfigurera anslutningar behöver du ha behörigheter tilldelade innan du kan börja. Om du vill kontrollera vilka behörigheter du behöver, kolla i Microsoft 365 och Office 365 anslutningspost i [Funktionsbehörigheter i EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop) avsnittet.
+1. För att konfigurera anslutningar behöver du ha behörigheter tilldelade innan du kan börja. Om du vill kontrollera vilka behörigheter du behöver, kolla i Microsoft 365 och Office 365 anslutningspost i [Funktionsbehörigheter i Exchange Online](/exchange/permissions-exo/feature-permissions)-avsnittet.
 
 2. Om du vill att EOP eller Exchange Online skickar e-post från din e-postserver till Internet gör du något av följande:
 
@@ -156,7 +156,7 @@ Logga in på din DNS-värds webbplats och följ anvisningarna i [lägga till DNS
 
     Exempel: "v = spf1 MX include: adatum. com inkluderar: SPF. Protection. Outlook. com ~ all".
 
-    Om du inte har en SPF-post ändrar du den som rekommenderas av Microsoft 365 för att inkludera domänen för din aktuella e-postleverantör och lägga till spf.protection.outlook.com. Detta godkänner utgående meddelanden från båda e-postsystemen.
+    Om du inte har en SPF-post ännu, ändra den som rekommenderas av Microsoft 365 genom att inkludera domänen för din aktuella e-postleverantör, och lägga till spf.protection.outlook.com. Då godkänner du utgående meddelanden från båda e-postsystemen.
 
 ### <a name="step-8-set-up-email-forwarding-at-your-current-provider"></a>Steg 8: Konfigurera vidarebefordran av e-post hos din nuvarande leverantör
 

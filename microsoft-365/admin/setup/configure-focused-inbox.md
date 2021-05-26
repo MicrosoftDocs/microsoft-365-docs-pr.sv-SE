@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
-description: 'Lär dig hur du konfigurerar Prioriterad inkorg för alla eller vissa användare i organisationen. '
-ms.openlocfilehash: 62a38f911e4e1b878af6489f096f17644e070978
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+description: I den här artikeln förklaras hur du konfigurerar Prioriterad inkorg för användare om du ansvarar för att konfigurera e-postinställningar för alla i ett företag.
+ms.openlocfilehash: ddd0886988072139a199bfc3f6e8adbbf25ad58b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644518"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623707"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Konfigurera Prioriterad inkorg för alla i organisationen
 
@@ -208,3 +208,8 @@ Det finns två cmdletar för att hantera Prioriterad inkorg. När du kör Get-Fo
 
 Nej, och det här är avsiktligt. Prioriterad inkorg aktiveras i inställningar på klientsidan, så allt du kan få veta med cmdlet är om användarens postlåda är berättigad till klientversionen. Det är möjligt att den samtidigt är aktiverad i vissa klienter och inaktiverad i andra. Till exempel kan den vara aktiverad i Outlook-appen och i Outlook Mobile men inaktiverad i Outlook på webben.
 
+## <a name="related-content"></a>Relaterat innehåll
+
+[Konfigurera Övrig e-post för organisationen](../email/configure-clutter.md) (artikel)\
+[Konfigurera inställningar för delad postlåda](../email/configure-a-shared-mailbox.md) (artikel)\
+[Skapa signaturer och ansvarsfriskrivningar](create-signatures-and-disclaimers.md) (video)

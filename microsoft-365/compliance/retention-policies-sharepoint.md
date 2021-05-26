@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Läs om hur kvarhållning fungerar för SharePoint och OneDrive.
-ms.openlocfilehash: 448f3e8e2ab827527b02263fea2b07de4b345dc1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 90e94f4ff94b65860890ab65b451107d1d02963f
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162053"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625251"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Lär dig mer om kvarhållning för SharePoint och OneDrive
 
@@ -33,7 +33,7 @@ Informationen i den här artikeln kompletterar [Lär dig mer om kvarhållning](r
 För andra arbetsbelastningar, se:
 
 - [Lär dig mer om kvarhållning för Microsoft Teams](retention-policies-teams.md)
-- [Lär dig mer om kvarhållning för Yammer](retention-policies-yammer.md)
+- [Mer information om kvarhållning för Yammer](retention-policies-yammer.md)
 - [Lär dig mer om kvarhållning för Exchange](retention-policies-exchange.md)
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Vad omfattas för kvarhållning och borttagning
@@ -71,8 +71,6 @@ För objekt i SharePoint som har en standardkvarhållningsetikett (deklarerar in
 För att bevara det här innehållet när en användare försöker ändra eller ta bort det görs en kontroll om innehållet har ändrats sedan kvarhållningsinställningarna användes. Om det här är den första ändringen sedan kvarhållningsinställningarna användes kopieras innehållet till biblioteket för bevarande av dokument, där personen kan ändra eller ta bort det ursprungliga innehållet. Allt innehåll i en webbplatssamling kan kopieras till biblioteket för bevarande av dokument, oberoende av kvarhållningsinställningarna.
   
 Ett tidsinställt jobb rensar regelbundet i biblioteket för bevarande av dokument. För innehåll som har legat i biblioteket för bevarande av dokument i mer än 30 dagar jämför det här jobbet innehållet med alla frågor som kvarhållningsinställningarna använt för innehållet. Innehåll som är äldre än dess konfigurerade kvarhållningsperiod tas sedan bort från biblioteket för bevarande av dokument och den ursprungliga platsen, om det fortfarande finns kvar där. Det här tidsinställda jobbet körs var sjunde dag, vilket innebär att det tillsammans med minimitiden på 30 dagar kan ta upp till 37 dagar för innehåll att tas bort från biblioteket för bevarande av dokument.
-
-När filer bevaras i biblioteket för bevarande av dokument kan administratörer inte ta bort innehållets SharePoint-webbplats eller OneDrive-konto.
 
 Det här beteendet med att kopiera filer till biblioteket för bevarande av dokument gäller för innehåll som finns när kvarhållningsinställningarna används. För kvarhållningsprinciper gäller även att allt nytt innehåll som skapats eller lagts till på webbplatsen efter att det inkluderats i principen bevaras i biblioteket för bevarande av dokument. Men nytt innehåll kopieras inte till biblioteket för bevarande av dokument första gången det redigeras, utan bara när det tas bort. Om du vill behålla alla versioner av en fil måste du aktivera [versionshantering](#how-retention-works-with-document-versions).
   
@@ -127,7 +125,7 @@ När ett dokument med versioner omfattas av kvarhållningsinställningar för at
 
 När kvarhållningsåtgärden är att ta bort dokumentet tas alla versioner som inte finns i biblioteket för bevarande av dokument bort samtidigt enligt den aktuella versionen.
 
-För objekt som omfattas av en kvarhållningsprincip (eller ett eDiscovery-bevarande) ignoreras gränserna för versionshantering för dokumentbiblioteket tills kvarhållningsperioden för dokumentet nås (eller eDiscovery-bevarandet släpps). I det här scenariot rensas inte gamla versioner automatiskt och användare hindras från att ta bort versioner.
+För objekt som omfattas av en kvarhållningsprincip (eller ett eDiscovery-bevarande) ignoreras gränserna för versionshantering för dokumentbiblioteket tills kvarhållningsperioden för dokumentet nås (eller eDiscovery-bevarandet släpps).
 
 Så är inte fallet för kvarhållningsetiketter när innehållet inte omfattas av en kvarhållningsprincip (eller ett eDiscovery-bevarande). Istället gäller gränserna för versionshantering så att äldre versioner tas bort automatiskt så att nya versioner får plats, men användarna hindras fortfarande från att ta bort versioner.
 
@@ -148,4 +146,4 @@ Om du inte är bekant med att konfigurera kvarhållning i Microsoft 365 kan du l
 Om du är redo att konfigurera en kvarhållningsprincip eller kvarhållningsetikett för Exchange följer du anvisningarna nedan:
 - [Skapa och konfigurera kvarhållningsprinciper](create-retention-policies.md)
 - [Skapa kvarhållningsetiketter och använda dem i appar](create-apply-retention-labels.md)
-- [Använda en kvarhållningsetikett på innehåll automatiskt](apply-retention-labels-automatically.md)
+- [Använda en kvarhållningsetikett för innehåll automatiskt](apply-retention-labels-automatically.md)

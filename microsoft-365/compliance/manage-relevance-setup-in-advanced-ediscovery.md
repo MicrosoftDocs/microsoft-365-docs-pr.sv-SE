@@ -54,11 +54,11 @@ ms.locfileid: "52161722"
 
   - Batchberäkningar kan endast utföras om det inte finns några öppna exempel (när du klickar på Batchberäkning visas en lista över användare med öppna exempel). För att ”stänga” exempel åt andra användare (detta bör endast utföras om användarna inte håller på att markera dessa exempel) kan administratören använda funktionen ”Ändra relevans” med alternativet ”Alla användares exempel”.
 
-- **Metadata**: Advanced eDiscovery fokuserar på innehållet. Metadata tas inte i beaktning för relevanskriteriet.
+- **Metadata**: Advanced eDiscovery fokuserar på innehållet. Metadata tas inte i beaktande för relevanskriteriet.
 
-- **Relevansgrad**: Om relevansgraden för ett problem är lägre än 3 % efter värdering, bör du överväga att använda seeding med kända relevanta och ej relevanta filer på Relevansträningen.
+- **Relevansgrad**: Om relevansgraden för ett problem är lägre än 3 % efter värdering, bör du överväga att använda seeding med kända relevanta och ej relevanta filer på Relevansträningen.
 
-- **Filstorlek**: Stora filer (över 5 242 880 tecken i extraherad text) ignoreras i Relevans. Filerna ingår inte i Relevansträningsprocessen och får inga relevanspoäng efter Batchberäkning. Filer som är större än 5 MB kan inkluderas i värderingsuppsättningen.
+- **Filstorlek**: Stora filer (över 5 242 880 tecken i extraherad text) ignoreras i Relevans. Filerna ingår inte i Relevansträningsprocessen och får inga relevanspoäng efter Batchberäkning. Filer som är större än 5 MB kan inkluderas i värderingsuppsättningen.
 
 ## <a name="setting-up-case-issues"></a>Konfigurera aktproblem
 

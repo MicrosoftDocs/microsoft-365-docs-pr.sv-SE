@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Läs mer om kvarhållningsprinciper och kvarhållningsetiketter som hjälper dig att behålla det du behöver och ta bort det du inte behöver.
-ms.openlocfilehash: 2695d34e29492a88da86c2511ce32e4036031e9d
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: ba17a94fa4ae0d12405cc7e38d7d74e90fa7ad02
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572663"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625227"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Mer information om kvarhållningsprinciper och kvarhållningsetiketter
 
@@ -368,7 +368,7 @@ Du använder Bevarandelås när kvarhållningsprincipen eller kvarhållningsetik
 
 När du tillhandahåller kvarhållningsprinciper som inte har något bevarandelås kan du ta bort principerna när som helst, vilket effektivt inaktiverar inställningarna för kvarhållning som använts tidigare. Du kan också behålla principen, men ta bort en webbplats för SharePoint eller ett konto för OneDrive, eller ändra platsstatus till av eller inaktivera principen.
  
-När du vidtar någon av dessa åtgärder kommer allt SharePoint- eller OneDrive-innehåll som är lagrat från principen att behållas i 30 dagar för att förhindra oavsiktlig dataförlust. Under den här respitperioden på 30 dagar kan du inte ta bort webbplatsen. Borttagna filer sparas fortfarande (filer läggs fortfarande till i biblioteket för bevarande av dokument), men det tidsinställda jobbet som regelbundet rensar biblioteket för bevarande av dokument är inaktiverat för dessa filer så att du kan återställa dem om det behövs.
+När du vidtar någon av dessa åtgärder kommer allt SharePoint- eller OneDrive-innehåll som är lagrat från principen att behållas i 30 dagar för att förhindra oavsiktlig dataförlust. Under den här respitperioden på 30 dagar sparas borttagna filer fortfarande (filer läggs fortfarande till i biblioteket för bevarande av dokument), men det tidsinställda jobbet som regelbundet rensar biblioteket för bevarande av dokument är inaktiverat för dessa filer så att du kan återställa dem om det behövs.
 
 Mer information om biblioteket för bevarande av dokument finns i [Hur bevarande fungerar för SharePoint och OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
