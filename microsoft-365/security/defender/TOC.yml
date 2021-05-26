@@ -82,6 +82,10 @@
               href: microsoft-secure-score-whats-coming.md
             - name: Nyheter
               href: microsoft-secure-score-whats-new.md
+        - name: Skydda dina identiteter
+          items:
+            - name: Hantera säkerhetsvarningar
+              href: ../defender-identity/manage-security-alerts.md
     - name: Undersöka och svara på hot
       items:
         - name: Incidenter
@@ -120,6 +124,12 @@
               href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
             - name: E-postaviseringar
               href: get-incident-notifications.md
+        - name: Analys av hot
+          items:
+            - name: Spåra och svara på nya hot
+              href: threat-analytics.md
+            - name: Förstå analytiker
+              href: threat-analytics-analyst-reports.md
         - name: Automatiska undersökningar och svar
           items:
             - name: Översikt
