@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Konfigurera dataförlustskydd för slutpunkter i Microsoft 365 för att övervaka filaktiviteter och implementera skyddsåtgärder för dessa filer till slutpunkter.
-ms.openlocfilehash: 8fc8bef62827a5e6125565f5d7227a88cd923dcf
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: a6c0ec6f1248fdeecd8616b7eda000b7608d452d
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332816"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651014"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Komma igång med dataförlustskydd för slutpunkter
 
@@ -102,7 +102,11 @@ Kontrollera att de Windows 10-enheter som du planerar att distribuera slutpunkts
     - För Windows 10 2004 – KB4568831, KB4577063
     - För enheter med Office 2016 (och inte någon annan Office-version) – KB4577063 
 
-4. Alla enheter måste vara [Azure Active Directory-anslutna (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join) AD-anslutna, Hybrid Azure AD-anslutna eller AAD-registrerade.
+4. Alla enheter måste vara någon av följande:
+- [Azure Active Directory (AAD)-ansluten](/azure/active-directory/devices/concept-azure-ad-join)
+- AD-ansluten
+- [Hybrid Azure AD-ansluten](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
+- [AAD-registrerad](/azure/active-directory/user-help/user-help-register-device-on-network)
 
 5. Installera webbläsaren Microsoft Chromium Edge på slutpunktsenheten för att framtvinga principåtgärder för aktiviteten uppladdning till moln. Se [Ladda ned nya Microsoft Edge som baseras på Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
@@ -211,7 +215,7 @@ Nu när du har registrerat enheter och kan se aktivitetsdata i aktivitetsutforsk
 - [Använda dataförlustskydd för slutpunkter](endpoint-dlp-using.md)
 - [Mer information om dataförlustskydd](dlp-learn-about-dlp.md)
 - [Skapa, testa och justera en DLP-princip](create-test-tune-dlp-policy.md)
-- [Kom igång med Aktivitetsutforskaren](data-classification-activity-explorer.md)
+- [Kom igång med aktivitetsutforskaren](data-classification-activity-explorer.md)
 - [Microsoft Defender för Endpoint](/windows/security/threat-protection/)
 - [Registreringsverktyg och metoder för Windows 10-enheter](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Microsoft 365-prenumeration](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)

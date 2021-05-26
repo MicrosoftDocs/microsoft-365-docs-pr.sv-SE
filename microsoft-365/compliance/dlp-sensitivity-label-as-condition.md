@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: lära dig om tjänsterna och objekttyperna som du kan använda känslighetsetiketter som villkor i DLP-principer
-ms.openlocfilehash: 19bd80de225f703b5c280163e94826498fa097bd
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: b33e6704a3311740c1e386f77f1c751382ee6958
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "52162748"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651098"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>Använda känslighetsetiketter som villkor i DLP-principer
 
@@ -54,7 +54,7 @@ Du kan använda känslighetsetiketter som villkor för de här objekten och i de
 |Tjänst  |Objekttyp  |Tillgängligt för principtips  |Verkställbar  |
 |---------|---------|---------|---------|
 |Exchange    |e-postmeddelande         |ja         |ja         |
-|Exchange    |e-postbilaga         |nej *         |ja *         |
+|Exchange    |e-postbilaga         |nej         |ja *         |
 |SharePoint Online     |object i SharePoint Online         |ja         |ja         |
 |OneDrive för företag     |objekt         |ja         |ja         |
 |Teams     |Teams och kanalmeddelanden         |ej tillämpligt         |ej tillämpligt         |
@@ -62,7 +62,7 @@ Du kan använda känslighetsetiketter som villkor för de här objekten och i de
 |Windows 10-enheter     |objekt         |ja         |ja         |
 |MCAS (förhandsversion) |objekt         |ja         |ja         |
 
-\* DLP-identifiering och tillämpning av känslighetsetiketter för e-postmeddelanden och bilagor stöds under överföringen. Det är inte DLP-principtips för känslighetsetiketter för e-postbilagor.
+\* DLP-identifiering av e-postbilagor med känslighetsetiketter stöds endast för Office-filtyper.
 
 \** Bifogade filer som skickas i Teams över 1:1 chatt eller kanaler laddas automatiskt upp till OneDrive för företag och SharePoint. Så om SharePoint Online eller OneDrive för företag ingår som platser i DLP-principen inkluderas etiketterade bifogade filer som skickas i Teams automatiskt inom ramen för detta villkor. Teams som en plats behöver inte väljas i DLP-principen.
 
