@@ -20,18 +20,18 @@ ms.custom:
 - commerce_billing
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: 4866bcd07cb4a54088d230166f9b04f8258d7185
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: b34fd0fd2e35d71e6b35cde250be822201aa719a
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331796"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689031"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>Begära en kredit för att undanhålla moms för ditt konto (Indien-kunder)
 
 Kunder i Indien får Web Direct-fakturor (Azure och Microsoft 365) som faktureras av Microsoft Regional Sales Pte Ltd. Singapore (MRS) och gör betalningar över kantlinjer till Singapore för att godkänna fakturan. Om du undanhåller skatter när du gör en betalning förklarar den här artikeln processen för att begära en kredit för VAT (Withholding Tax) i ditt konto med MRS.
 
-## <a name="for-invoice-pay-customers-who-pay-by-check-and-wire"></a>För fakturabetalning till kunder som betalar med check och bank
+## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>För fakturabetalning till kunder som betalar med check eller bank
 
 Om du undanhåller moms när du gör en betalning till MRS och lämnar in skattetillägget till avdelningen för inkomstskatt måste du skicka en WHT-begäran för att avgöra skattebeloppet som undanhålls på ditt konto.
 
@@ -44,7 +44,7 @@ Skicka din WHT-begäran genom att öppna ett ärende hos Microsoft Support.
 
 ## <a name="for-customers-who-pay-by-credit-card"></a>För kunder som betalar med kreditkort
 
-Om betalningsmetoden är ett kreditkort och du har gjort en fullständig betalning till MRS, och betalt WHT till avdelningen för inkomstskatt, måste du skicka en WHT-begäran för att begära återbetalning av momsbeloppet.
+Om betalningsmetoden är ett kreditkort och du har gjort en fullständig betalning till MRS, och även betalat VAT till skatteavdelningen, måste du skicka en WHT-begäran om att begära återbetalning av momsbeloppet.
 
 Din VA-begäran måste innehålla följande element:
 
@@ -68,11 +68,11 @@ I följande tabell visas förfallodatum och tidslinjer för att skicka digitalt 
 >
 > - Kunder kan bara skicka in en begäran om återbetalning av VAT-beloppet efter att de har betalat fakturan.
 > - Fakturabeloppet i formuläret Undanhålla skattekrediter måste matcha fakturabeloppet som anges i TDS-certifikatet. Om fakturabeloppet skiljer sig mellan de två formulären måste du ange orsaken till skillnaden i formuläret Undanhålla moms. Den här informationen kontrolleras av granskningsteamet, som vid behov kan ställa förtydligande frågor.
-> - TDS-certifikatfiler måste ha något av följande filformat: endast .PDF Bild (. JPEG, .PNG och .GIF). Dessutom får filnamnen inte innehålla blanksteg eller specialtecken. Filstorleken får inte överskrida 1 MB.
+> - TDS-certifikatfiler måste ha något av följande filformat: endast .PDF Bild (. JPEG, .PNG eller .GIF). Dessutom får filnamnen inte innehålla blanksteg eller specialtecken. Filstorleken får inte överskrida 1 MB.
 
 När du har skickat in begäran hamnar den i godkännandeprocessen där den antingen godkänns för slutförande eller skickas tillbaka till dig för korrigering.
 
-Om det är problem med din begäran kan granskningsteamet behöva korrigera beloppet eller ersätta TDS-certifikatet. Du måste skicka in begäran igen för att den ska godkännas. Granskningsteamet godkänner antingen begäran eller begär fler ändringar.
+Om det är problem med din begäran kan granskningsteamet behöva korrigera beloppet eller ersätta TDS-certifikatet. Du måste skicka in begäran igen innan den kan godkännas. Granskningsteamet godkänner antingen begäran eller begär fler ändringar.
 
 ## <a name="approved-requests"></a>Godkända begäranden
 

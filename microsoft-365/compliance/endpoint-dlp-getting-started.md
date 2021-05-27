@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Konfigurera dataförlustskydd för slutpunkter i Microsoft 365 för att övervaka filaktiviteter och implementera skyddsåtgärder för dessa filer till slutpunkter.
-ms.openlocfilehash: a6c0ec6f1248fdeecd8616b7eda000b7608d452d
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 34355a25283207929a12a7bc504b929fbf3041a0
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651014"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683661"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Komma igång med dataförlustskydd för slutpunkter
 
@@ -104,7 +104,6 @@ Kontrollera att de Windows 10-enheter som du planerar att distribuera slutpunkts
 
 4. Alla enheter måste vara någon av följande:
 - [Azure Active Directory (AAD)-ansluten](/azure/active-directory/devices/concept-azure-ad-join)
-- AD-ansluten
 - [Hybrid Azure AD-ansluten](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
 - [AAD-registrerad](/azure/active-directory/user-help/user-help-register-device-on-network)
 

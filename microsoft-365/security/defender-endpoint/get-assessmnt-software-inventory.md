@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ecfeaa10eda6b3832b7196c0598d6584783bb5ff
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: 5663a17de2e601c506b4d1b9ac44eaab6ae6245f
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653680"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689195"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Exportera utvärdering av programvaruinventering per enhet
 
@@ -39,17 +39,19 @@ ms.locfileid: "52653680"
 >
 Det finns olika API-anrop för att få olika typer av data. Eftersom mängden data kan vara mycket stor kan den hämtas på två sätt:
 
-- **OData**  API:t hämtar alla data i organisationen som Json-svar efter OData-protokollet. Den här metoden är bäst _för små organisationer med mindre än 100 K-enheter._ Svaret är paginerat, så du kan använda \@ odata.nextLink-fältet från svaret för att hämta nästa resultat.
+- [Exportera utvärdering av programvaruinventering **av OData**](#1-export-software-inventory-assessment-odata)  API:t hämtar alla data i organisationen som Json-svar efter OData-protokollet. Den här metoden är bäst _för små organisationer med mindre än 100 K-enheter._ Svaret är paginerat, så du kan använda \@ odata.nextLink-fältet från svaret för att hämta nästa resultat.
 
-- **via filer** Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Därför rekommenderas det för stora organisationer med fler än 100 K-enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure Storage. Med det här API:t kan du ladda ned alla dina data Azure Storage enligt följande:
+- [Exportera utvärdering av programvaruinventering **via filer**](#2-export-software-inventory-assessment-via-files)  Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Därför rekommenderas det för stora organisationer med fler än 100 K-enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure Storage. Med det här API:t kan du ladda ned alla dina data Azure Storage enligt följande:
 
   - Anropa API:t för att få en lista med hämtningsadresser med alla dina organisationsdata.
 
   - Ladda ned alla filer med hjälp av URL:er för nedladdning och bearbeta dina data som du vill.
 
-Data som samlas in (för _antingen OData_ eller _via_ filer ) är den aktuella ögonblicksbilden av den aktuella statusen, och innehåller inte historiska data. För att kunna samla in historiska data måste kunderna spara data i sina egna datalagringar.
+Data som samlas in (med hjälp av _antingen OData_ eller _via_ filer) är den aktuella ögonblicksbilden av den aktuella statusen, och innehåller inte historiska data. För att kunna samla in historiska data måste kunderna spara data i sina egna datalagringar.
 
-Om inget annat anges exporteras alla utvärderingsmetoder som **_listas för fullständig export_** **_och_** efter enhet (kallas även **_per enhet)._**
+> [!Note]
+>
+> Om inget annat anges exporteras alla utvärderingsmetoder som **_listas för fullständig export_** **_och_** efter enhet (kallas även **_per enhet)._**
 
 ## <a name="1-export-software-inventory-assessment-odata"></a>1. Exportera utvärdering av programvara för lager (OData)
 
@@ -90,11 +92,11 @@ GET /api/machines/SoftwareInventoryByMachine
 >
 >-Varje post är cirka 0,5 kB data. Du bör ta med detta i beräkningen när du väljer rätt pageSize-parameter.
 
->-Egenskaperna som definieras i följande tabell visas alfanumeriskt, efter egenskaps-ID. När du kör det här API:t returneras inte resultatet nödvändigtvis i samma ordning som anges i dessa tabeller.
+>-Egenskaperna som definieras i följande tabell anges i alfabetisk ordning, efter egenskaps-ID. När du kör det här API:t returneras inte resultatet nödvändigtvis i samma ordning som anges i den här tabellen.
 >
 >-Några ytterligare kolumner kan returneras i svaret. Kolumnerna är tillfälliga och kan komma att tas bort. Använd bara de dokumenterade kolumnerna.
 
-Egenskap (id) | Datatyp | Beskrivning | Exempel på ett returnerat värde
+Egenskap (ID) | Datatyp | Beskrivning | Exempel på ett returnerat värde
 :---|:---|:---|:---
 DeviceId | sträng | Unikt ID för enheten i tjänsten. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName | sträng | Fullständigt kvalificerat domännamn (FQDN) för enheten. | johnlaptop.europe.contoso.com
@@ -252,7 +254,7 @@ GET /api/machines/SoftwareInventoryExport
 >
 >_ För maximal nedladdningshastighet för dina data kan du se till att du laddar ned från samma Azure-region som dina data finns i.
 >
-Egenskap (id) | Datatyp | Beskrivning | Exempel på ett returnerat värde
+Egenskap (ID) | Datatyp | Beskrivning | Exempel på ett returnerat värde
 :---|:---|:---|:---
 Exportera filer | \[matrissträng\] | En lista över hämtnings-URL:er för filer som innehåller den aktuella ögonblicksbilden av organisationen | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
 GeneratedTime | sträng | Tidpunkten då exporten skapades. | 2021-05-20T08:00:00Z ]

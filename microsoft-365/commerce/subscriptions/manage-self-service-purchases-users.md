@@ -18,21 +18,14 @@ search.appverid:
 - MET150
 description: Användarna kan lära sig att hantera köp via självbetjäning.
 ms.date: 03/17/2021
-ms.openlocfilehash: ed6f2fc3b55756fb88dccd748fd4a4a9a34a5c81
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: fb8431bce82893d8ca2903caf96968dd3b0ef359
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536088"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683673"
 ---
 # <a name="manage-self-service-purchases-users"></a>Hantera självbetjäningsköp (användare)
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Som användare kan du köpa prenumerationer på vissa produkter och tilldela licenser för prenumerationerna till personer i din grupp. Du är ansvarig för att betala för alla köp du gör med självbetjäning. Du kan hantera dina prenumerationer i Microsoft 365 administrationscenter på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>.
 
@@ -42,12 +35,42 @@ Administratören har en skrivskyddad vy för alla prenumerationer som du köper.
 
 Du kan visa en lista över alla prenumerationer som köpts med självbetjäning som du har köpt.
 
+::: moniker range="o365-worldwide"
+
 1. I administrationscentret går du till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Dina produkter</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Dina produkter</a>.
+::: moniker-end
 2. På fliken **Produkter** väljer du filterikonen och sedan **Självbetjäning**.
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>Köpa fler eller minska antalet licenser
 
+::: moniker range="o365-worldwide"
+
 1. I administrationscentret går du till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Dina produkter</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Dina produkter</a>.
+::: moniker-end
 2. På fliken **Produkter** väljer du den prenumeration som du vill köpa fler eller minska antalet licenser för.
 3. Välj **Köp licenser** eller Ta bort **licenser.**
 4. I den högra rutan, i **rutan Totalt** antal licenser, anger du det totala antalet licenser som du vill ha för prenumerationen och väljer sedan **Spara**. Om du till exempel har 100 licenser och vill lägga till ytterligare 5 skriver du 105.
@@ -56,7 +79,23 @@ Du kan visa en lista över alla prenumerationer som köpts med självbetjäning 
 
 ### <a name="to-assign-licenses"></a>Så här tilldelar du licenser
 
-1. I administrationscentret går du till sidan  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Faktureringslicenser.</a>
+:: moniker range="o365-worldwide"
+
+1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> i administrationscentret.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenser</a> i administrationscentret.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenser</a> i administrationscentret.
+
+::: moniker-end
 2. Välj den prenumeration som du vill tilldela licenser för.
 3. Välj **Tilldela licenser.**
 4. I fönstret **Tilldela licenser till användare** börjar du skriva ett namn och väljer sedan namnet från resultatet för att lägga till det i listan. Du kan lägga till upp till 20 användare åt gången.
@@ -66,7 +105,23 @@ Du kan visa en lista över alla prenumerationer som köpts med självbetjäning 
 
 ### <a name="to-unassign-licenses"></a>Så här tar du bort licenser
 
-1. I administrationscentret går du till sidan  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Faktureringslicenser.</a>
+:: moniker range="o365-worldwide"
+
+1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> i administrationscentret.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenser</a> i administrationscentret.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenser</a> i administrationscentret.
+
+::: moniker-end
 2. Välj den produkt som du vill ta bort licenser för.
 3. Välj de användare som du vill ta bort licenser från.
 4. Välj **Ta bort licenser**.
@@ -74,8 +129,23 @@ Du kan visa en lista över alla prenumerationer som köpts med självbetjäning 
 
 ## <a name="cancel-a-subscription"></a>Avsluta en prenumeration
 
+::: moniker range="o365-worldwide"
+
 1. I administrationscentret går du till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
-2. Leta rätt **på** den prenumeration du vill avbryta på fliken Produkter. Välj de tre punkterna (fler åtgärder) och välj sedan **Avbryt prenumeration.**
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Dina produkter</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Dina produkter</a>.
+::: moniker-end
+2. Leta rätt **på** den prenumeration du vill avbryta på fliken Produkter. Välj de tre punkterna (fler åtgärder) och välj sedan **Avbryt prenumeration**.
 3. I fönstret **Avbryt prenumeration** väljer du en anledning till varför du avbryter prenumerationen. Du kan också lämna feedback om du vill.
 4. Välj **Spara**.
 

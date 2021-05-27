@@ -122,7 +122,7 @@
 ###### [Konfigurera iOS-funktioner](ios-configure-features.md)
 
 ##### [Felsökning]()
-###### [Felsöka problem](ios-troubleshoot.md)
+###### [FAQ och felsöka problem](ios-troubleshoot.md)
 
 ##### [Sekretess](ios-privacy.md)
  
@@ -481,6 +481,12 @@
 ####### [Hämta varningsinformation om relaterade IP-adresser](get-alert-related-ip-info.md)
 ####### [Hämta varningsinformation om enhet](get-alert-related-machine-info.md)
 ####### [Hämta varningsinformation om användare](get-alert-related-user-info.md)
+
+###### [Utvärderingar av säkerhetsproblem och säkra konfigurationer]()
+####### [Metod och egenskaper för export](get-assessmnt-1methods-properties.md)
+####### [Exportera utvärdering av säker konfiguration](get-assessmnt-secure-cfg.md)
+####### [LExportera utvärdering av inventerad programvara](get-assessmnt-software-inventory.md)
+####### [Exportera utvärdering av säkerhetsrisker för programvara](get-assessmnt-software-vulnerabilities.md)
 
 ###### [Automatisk undersökning]()
 ####### [Undersökningsmetoder och -egenskaper](investigation.md)

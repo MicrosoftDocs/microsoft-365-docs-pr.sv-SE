@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Lägg till en postpartner när du köper Microsoft 365, ändrar partnern eller tar bort en partner från en prenumeration.
-ms.openlocfilehash: e21c324bc84e360b80deae2abeec610e73834819
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 4cebbce41cbd2a500cc502b808734f6056271d12
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624531"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683349"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Lägga till, ändra eller ta bort en partner för abonnemangsrådgivning
 
@@ -43,17 +43,17 @@ En auktoriserad Microsoft-partner fungerar som din abonnemangsrådgivare och hj�
 
 ::: moniker-end
 
+::: moniker range="o365-germany"
+
+En auktoriserad Microsoft-partner fungerar som din abonnemangsrådgivare och hjälper dig med expertkunskaper inom försäljning, support och teknik, som behövs för att konfigurera och underhålla ditt abonnemang. Du kan lägga till en auktoriserad partner när du köper Office 365, eller vid en senare tidpunkt. Om du inte har någon partner kan du hitta en på webbplatsen [Microsoft Pinpoint](https://pinpoint.microsoft.com).
+
+::: moniker-end
+
 ## <a name="before-you-begin"></a>Innan du börjar
 
 ::: moniker range="o365-worldwide"
 
 Vilken partner du väljer beror på Microsoft-tjänster du använder och landet eller regionen där du kommer att använda tjänsterna. Om du lägger till eller ändrar en partner för ditt abonnemang behöver du först be om partnerns Microsoft partner-ID.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-En auktoriserad Microsoft-partner fungerar som din abonnemangsrådgivare och hjälper dig med expertkunskaper inom försäljning, support och teknik, som behövs för att konfigurera och underhålla ditt abonnemang. Du kan lägga till en auktoriserad partner när du köper Office 365, eller vid en senare tidpunkt. Om du inte har någon partner kan du hitta en på webbplatsen [Microsoft Pinpoint](https://pinpoint.microsoft.com).
 
 ::: moniker-end
 
@@ -73,7 +73,7 @@ Som administratör för Office 365 kan du bland annat skapa eller redigera anvä
 
 ## <a name="add-a-partner-at-the-time-of-purchase"></a>Lägga till en partner vid köptillfället
 
-1. I administrationscentret går du  till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Faktureringsköpstjänster.</a>
+1. I administrationscentret går du  till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**Faktureringsköpstjänster.**</a>
 2. Välj den produkt som du vill köpa och välj sedan **Köp**.
 3. Om du vill lägga till en ny partner **expanderar du Behöver du hjälp** med din beställning? och väljer Få hjälp från en **Microsoft-partner.**<br>
 Följ stegen på leverantörssidan för att antingen söka efter eller matchas med en partner.
@@ -136,30 +136,22 @@ Om du vill acceptera det här erbjudandet
 ::: moniker range="o365-worldwide"
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
-2. Välj Ta bort under Partnerinformation **på sidan** med **prenumerationsinformation.**
-3. Skriv **Microsoft Partner Network-ID** för den nya partnern. Du kan få partnerns Microsoft partner-ID genom att fråga dem om det.
-4. Välj **Lägg till**.
-  
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a> i administrationscentret.
-2. Om du har flera prenumerationer väljer du namnet på den prenumeration som du vill redigera.
-3. Under **Partner-ID** väljer du **Redigera auktoriserad partner**.
-4. Skriv det nya Microsoft partner-ID:t för partnern du vill lägga till och klicka på **Kontrollera ID** och sedan på **Skicka**. Rätt Microsoft partner-ID får du reda på genom att fråga partnern.
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Dina produkter</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a> i administrationscentret.
-2. Om du har flera prenumerationer väljer du namnet på den prenumeration som du vill redigera.
-3. Under **Partner-ID** väljer du **Redigera auktoriserad partner**.
-4. Skriv det nya Microsoft partner-ID:t för partnern du vill lägga till och klicka på **Kontrollera ID** och sedan på **Skicka**. Rätt Microsoft partner-ID får du reda på genom att fråga partnern.
-
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Dina produkter</a>.
 ::: moniker-end
-
+2. Välj Ta bort under Partnerinformation **på sidan** med **prenumerationsinformation.**
+3. Skriv **Microsoft Partner Network-ID** för den nya partnern. Du kan få partnerns Microsoft partner-ID genom att fråga dem om det.
+4. Välj **Lägg till**.
+  
 ## <a name="view-your-partner-relationships"></a>Visa dina partnerrelationer
 
 - I administrationscentret går du till sidan **Inställningar**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partnerrelationer.</a> Dina partner visas på den här sidan.
@@ -171,50 +163,38 @@ Om du vill acceptera det här erbjudandet
 ::: moniker range="o365-worldwide"
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Dina produkter</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Dina produkter</a>.
+::: moniker-end
 2. På **fliken** Produkter väljer du den prenumeration som du vill redigera.
 3. Välj Ta bort under Partnerinformation **på sidan** **prenumerationsinformation.**
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a> i administrationscentret.
-2. Om du har flera prenumerationer väljer du namnet på den prenumeration som du vill redigera.
-3. Under **Partner-ID** väljer du **Redigera auktoriserad partner**.
-4. On the **Partner information** page, clear the **partner ID** box, and then select **Submit**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a> i administrationscentret.
-2. Om du har flera prenumerationer väljer du namnet på den prenumeration som du vill redigera.
-3. Under **Partner-ID** väljer du **Redigera auktoriserad partner**.
-4. On the **Partner information** page, clear the **partner ID** box, and then select **Submit**.
-
-::: moniker-end
-
 ## <a name="remove-a-reseller-relationship"></a>Ta bort en återförsäljarrelation
 
-::: moniker range="o365-worldwide"
-
 Du kan inte ta bort en återförsäljarrelation med en dig själv.
+
+::: moniker range="o365-worldwide"
   
 Om du tar bort en återförsäljarrelation är alternativet **Ta bort** nedtonat och du måste be din återförsäljare följa de här anvisningarna: [Ta bort en återförsäljarrelation med en partner](/partner-center/remove-a-relationship).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-
-Du kan inte ta bort en återförsäljarrelation med en dig själv.
   
 Om du tar bort en återförsäljarrelation är alternativet **Ta bort** nedtonat och du måste be din återförsäljare följa de här anvisningarna: [Ta bort en återförsäljarrelation med en partner](/partner-center/remove-a-relationship).
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-
-Du kan inte ta bort en återförsäljarrelation med en dig själv.
   
 Du måste be din återförsäljare att följa de här instruktionerna: Ta [bort en återförsäljarrelation med en partner](/partner-center/remove-a-relationship).
   

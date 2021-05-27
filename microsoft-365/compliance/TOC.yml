@@ -798,7 +798,7 @@
           href: detailed-properties-in-the-office-365-audit-log.md
         - name: 'Exportera, konfigurera och visa granskningsloggposter'
           href: export-view-audit-log-records.md
-        - name: Aktivera och inaktivera granskningsloggsökning
+        - name: Aktivera eller inaktivera granskningar
           href: turn-audit-log-search-on-or-off.md
         - name: Undersöka vanliga problem med hjälp av granskningsloggen
           href: auditing-troubleshooting-scenarios.md

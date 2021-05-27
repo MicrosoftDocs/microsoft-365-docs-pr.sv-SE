@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 02fbd70e7456f95ded920faa8004eedadb35d4f5
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 170955ebba633c1749423e11bb34f7bfbdba1f07
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624251"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684117"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Undersöka och åtgärda aviseringar för kommunikationsefterlevnad
 
@@ -104,6 +104,7 @@ När du har gått igenom grunderna i meddelandet är det dags att öppna ett med
 - **Källvy:** Den här vyn är den standardvy för meddelanden som vanligtvis visas på de flesta webbaserade meddelandeplattformar. Sidhuvudinformationen formateras i normalt format och meddelandetexten stöder bilder med imbededer och radbruten text. Om [optisk teckenläsning (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) är aktiverad för principen visas bilder som innehåller tryckt eller handskriven text som matchar villkorsstyrd princip som ett underobjekt för det associerade meddelandet i den här vyn.
 - **Textvy:** Textvyn visar en vy med endast radnumrerad text i meddelandet och innehåller nyckelordsmarkering i meddelanden och bifogade filer för termer eller nyckelord av typen känslig information som matchas i den associerade principen för kommunikationsefterlevnad. Med hjälp av nyckelordsmarkering kan du snabbt söka igenom långa meddelanden och bifogade filer efter det intresseområde som är av intresse. I vissa fall kan markerad text bara finnas i bifogade filer för meddelanden som matchar principvillkor. Nyckelordsmarkering stöds inte för termer som identifieras av inbyggda klassificerare som tilldelats till en princip. Inbäddade filer visas inte och radnumrering i den här vyn är användbart om du vill referera relevant information mellan flera granskare.
 - **Kommentarsvyn:** I den här vyn kan granskare lägga till anteckningar direkt i meddelandet som sparas i meddelandets vy. Om [OCR](communication-compliance-feature-reference.md#optical-character-recognition-ocr) är aktiverat för principen visas bilder som innehåller tryckt eller handskriven text som matchar villkorsstyrd policy som ett underobjekt för det associerade meddelandet i den här vyn och kan komma att kommenteras.
+- **Konversationsvyn (förhandsgranskning)**: Microsoft Teams-chattmeddelanden visas i den här vyn upp till fem meddelanden före och efter ett varningsmeddelande som hjälper granskare att se aktiviteten i konversationens sammanhang. Det här sammanhanget hjälper granskare att snabbt utvärdera meddelanden och fatta mer välgrundade beslut om meddelandeupplösning. Tilläggen till konversationer i realtid visas, inklusive alla infogade bilder, emojier och dekaler som finns i Teams. Bifogade filer, bilder eller text i meddelanden visas inte. Aviseringar visas automatiskt för meddelanden som har redigerats eller för meddelanden som har tagits bort från konversationsfönstret. När ett meddelande matchas behålls inte de tillhörande konversationsmeddelandena med det lösta meddelandet. Konversationsmeddelanden är tillgängliga i upp till 60 dagar efter att aviseringsmeddelandet har identifierats.
 - **Användarhistorik:** Vyn Användarhistorik visar alla andra aviseringar som genereras av en princip för kommunikationsefterlevnad för användaren som skickar meddelandet.
 - **Mönster som upptäckts** meddelande: Många trakasserings- och mobbningsåtgärder över tid och innebär att instanser av samma beteende upprepas av en användare. Det *mönster som upptäckts* aviseringen visas i aviseringsinformationen och uppmärksammar aviseringen. Identifiering av mönster per princip och utvärderar beteende under de senaste 30 dagarna när minst två meddelanden skickas till samma mottagare av en avsändare. Varningar och granskare kan använda det här meddelandet för att identifiera upprepat beteende för att utvärdera aviseringen efter behov.
 - **Visa översättningsvyn:** I den här vyn konverteras automatiskt  aviseringstexten till det språk som har konfigurerats i inställningen För visningsspråk i Microsoft 365-prenumerationen för varje granskare. Översättningsvyn hjälper till att bredda stödet för organisationer med flerspråkiga användare och eliminerar behovet av ytterligare översättningstjänster utanför granskningsprocessen för kommunikationsefterlevnad. Med Microsoft Translate-tjänster kan du, om det behövs, stänga av och stänga av översättningsvyn och använda en mängd olika språk. En fullständig lista över språk som stöds finns i [Microsoft Translator språk.](https://www.microsoft.com/translator/business/languages/) Språk som visas *Translator språklistan* stöds i vyn Översätt.

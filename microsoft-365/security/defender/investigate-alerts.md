@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6a34269c414f59d40c9160d5728159ed9cddf976
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 4957c92cb95464213cce4a81ded07de166468c73
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651361"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689019"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Undersöka aviseringar i Microsoft 365 Defender
 
@@ -78,6 +78,23 @@ En aviseringssida består av följande avsnitt:
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Exempel på informationssidan för en avisering i Microsoft 365 säkerhetscenter":::
 
 På en aviseringssida kan du välja punkterna (**...**) bredvid en enhet för att se tillgängliga åtgärder, till exempel öppna aviseringssidan eller länka aviseringen till en annan händelse.
+
+### <a name="alert-sources"></a>Aviseringskällor
+Microsoft 365 Defender-aviseringar kan komma från lösningar som Microsoft Defender för Endpoint, Microsoft Defender för Office 365 och Microsoft Cloud App Security. Du kanske lägger märke till aviseringar med in prepended characters i aviseringen. Följande tabell innehåller vägledning för att hjälpa dig att förstå mappningen av aviseringskällor baserat på det tecken som ska förberedas i aviseringen.
+
+> [!NOTE]
+> - De ursprungliga GUID:erna är endast specifika för enhetliga upplevelser, till exempel enhetlig aviseringskö, sida för enhetliga aviseringar, enhetlig undersökning och enhetlig incident.<br>
+> - Det in prepended-tecknet ändrar inte GUID för aviseringen. Den enda ändringen i GUID är den in prepended component.<br>
+
+
+Aviseringskälla | Insnabbtecken 
+:---|:---
+Microsoft Defender för Office 365 | `fa{GUID}` <br> Exempel: `fa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Defender för Endpoint | `da` eller `ed` för aviseringar om anpassad identifiering <br> 
+Microsoft Defender for Identity | `aa{GUID}` <br> Exempel: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Cloud App Security |`ca{GUID}` <br> Exempel: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
+
+
 
 ### <a name="analyze-affected-assets"></a>Analysera påverkade tillgångar
 

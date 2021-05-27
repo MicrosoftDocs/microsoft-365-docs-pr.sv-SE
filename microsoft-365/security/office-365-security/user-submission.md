@@ -17,12 +17,12 @@ ms.collection:
 description: Administratörer kan lära sig hur de konfigurerar en postlåda för att samla in skräppost och nätfiske som rapporterats av användare.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 852e87ee76d9692b789ca217720ac3efb08f31a8
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 906048609ce70c761bb014961e02c86f912cd638
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624615"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683505"
 ---
 # <a name="user-submissions-policy"></a>Princip för användarinskick
 
@@ -66,7 +66,7 @@ När du har kontrollerat att din postlåda uppfyller alla tillämpliga krav anv�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. För att gå direkt till **sidan användarinskickade** uppgifter använder du <https://protection.office.com/userSubmissionsReportMessage> .
+- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. För att gå direkt till **sidan användarinskickade** uppgifter använder du <https://protection.office.com/userSubmissionsReportMessage> .
 
 - Du måste vara medlem i någon av följande rollgrupper för att kunna ändra konfigurationen för användarinskick:
 
@@ -141,7 +141,7 @@ När du har kontrollerat att din postlåda uppfyller alla tillämpliga krav anv�
 
 Du kan konfigurera rapporteringsverktyg från tredje part så att rapporterade meddelanden skickas till den anpassade postlådan. Det enda kravet är att det ursprungliga meddelandet bifogas som en bifogad fil i meddelandet som skickas till den anpassade postlådan (vidarebefordra inte bara det ursprungliga meddelandet till den anpassade postlådan).
 
-Formateringskraven för meddelanden beskrivs i nästa avsnitt.
+Formateringskraven för meddelanden beskrivs i nästa avsnitt. Formateringen är valfritt, men om det inte följer det bestämt formatet kommer rapporterna alltid att skickas som phish.
 
 ## <a name="message-submission-format"></a>Format för meddelandeinskick
 

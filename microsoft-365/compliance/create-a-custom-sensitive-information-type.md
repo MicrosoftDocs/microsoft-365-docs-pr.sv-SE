@@ -9,20 +9,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Lär dig hur du skapar, ändrar, tar bort och testar anpassade typer av känslig information för DLP i det grafiska användargränssnittet i Säkerhets- och efterlevnadscenter.
+description: Lär dig hur du skapar, ändrar, tar bort och testar anpassade typer av känslig information för DLP i Säkerhets- & säkerhets- och efterlevnadscenter.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36238d14d3d6a1f84b0fdcae62635922f62b58d3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
-ms.translationtype: HT
+ms.openlocfilehash: 911d2dc3a4adeb79e2b41f3a450bbc446feee916
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52161948"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683859"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Komma igång med anpassade typer av känslig information
 
@@ -61,10 +61,10 @@ Använd den här proceduren för att skapa en ny typ av känslig information som
 2. Fyll i värden för **Namn** och **Beskrivning** och välj **Nästa**.
 3. Välj **Skapa mönster**. Du kan skapa flera mönster, var och en med olika element och konfidensnivåer, när du definierar din nya typ av känslig information.
 4. Välj standardkonfidensnivån för mönstret. Värdena är **Låg konfidens**, **Medelhög konfidens** och **Hög konfidens**.
-5. Välja och definiera **primärelement**. Primärelementet kan vara ett **reguljärt uttryck** med en valfri verifierare, en **nyckelordslista**, en **nyckelordsordlista** eller någon av de förkonfigurerade **funktionerna**. Mer information om DLP-funktioner finns i [Vad DLP-funktionerna letar efter](what-the-dlp-functions-look-for.md).
+5. Välja och definiera **primärelement**. Primärelementet kan vara ett **reguljärt uttryck** med en valfri verifierare, en **nyckelordslista**, en **nyckelordsordlista** eller någon av de förkonfigurerade **funktionerna**. Mer information om DLP-funktioner finns i [Vad DLP-funktionerna letar efter](what-the-dlp-functions-look-for.md). Mer information om datum och kontrollsummatorerna finns i Mer information om [validerare för reguljära uttryck.](#more-information-on-regular-expression-validators)
 6. Fyll i ett värde för **Teckennärhet**.
-7. (Valfritt) Lägg till stödelement om du har några sådana. Stödelement kan vara ett reguljärt uttryck med en valfri verifierare, en nyckelordslista, en nyckelordsordlista eller någon av de fördefinierade funktionerna. 
-8.  (Valfritt) Lägg till [**ytterligare kontroller**](#more-information-on-additional-checks) från listan över tillgängliga kontroller.
+7. (Valfritt) Lägg till stödelement om du har några sådana. Stödelement kan vara ett reguljärt uttryck med en valfri verifierare, en nyckelordslista, en nyckelordsordlista eller någon av de fördefinierade funktionerna. Stödelement kan ha en egen **konfiguration för tecken närhet.** 
+8. (Valfritt) Lägg till [**ytterligare kontroller**](#more-information-on-additional-checks) från listan över tillgängliga kontroller.
 9. Välj **Skapa**.
 10. Välj **Nästa**.
 11. Välj den **rekommenderade konfidensnivån** för den här typen av känslig information.
@@ -123,6 +123,47 @@ Du kan också skapa anpassade typer av känslig information med hjälp av PowerS
 - [Skapa en anpassad typ av känslig information i Säkerhets- och efterlevnadscenter PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Skapa en anpassad typ av känslig information för DLP med Exact Data Match (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
+## <a name="more-information-on-regular-expression-validators"></a>Mer information om validerare för reguljära uttryck
+
+### <a name="checksum-validator"></a>Kontrollerasummator
+
+Om du behöver köra en kontrollsumma för en siffra i ett reguljärt uttryck kan du använda *giltigt kontrollsumma.* Säg till exempel att du behöver skapa en SIT för ett åttasiffrigt licensnummer där den sista siffran är en kontrollsummassiffra som valideras med en mod 9-beräkning. Du har ställt in algoritmen för kontrollsumma så här:
+ 
+Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8 Mod value = Sum % 9 If Mod value == digit 8 Account number is valid If Mod value != digit 8 Account number is invalid
+
+1. Definiera det primära elementet med det här reguljära uttrycket:
+
+`\d{8}`
+
+2. Lägg sedan till valideraren för kontrollsumma.
+3. Lägg till viktvärdena avgränsade med kommatecken, bchecksiffrans position och värdet Mod. Mer information om Modulo-åtgärden finns i [Modulo-åtgärden](https://en.wikipedia.org/wiki/Modulo_operation).
+
+> [!NOTE]
+> Om kontrollsiffran inte ingår i beräkningen av kontrollsumman använder du 0 som vikt för checksiffran. I exemplet ovan blir till exempel vikt 8 lika med 0 om kontrollsiffran inte ska användas för att beräkna kontrollsiffran.  Modulo_operation).
+
+![skärmbild av konfigurerad kontrollsumma-validerare](../media/checksum-validator.png)
+
+### <a name="date-validator"></a>Datum validerare
+
+Om ett datumvärde som är inbäddat i ett reguljärt uttryck ingår i ett nytt mönster som du skapar kan du använda *datum-giltigt* datum för att testa att det uppfyller villkoren. Säg till exempel att du vill skapa en SIT för ett niosiffrigt anställningsnummer. De första sex siffrorna är anställningsdatumet i DDMMYY-format och de sista tre är slumpgenererade siffror. Verifiera att de första sex siffrorna har rätt format. 
+
+1. Definiera det primära elementet med det här reguljära uttrycket:
+
+`\d{9}`
+
+2. Lägg sedan till datum giltigare.
+3. Välj datumformat och startförskjutning. Eftersom datumsträngen är de första sex siffrorna är förskjutningen `0` .
+
+![skärmbild av den konfigurerade datum validator](../media/date-validator.png)
+
+### <a name="functional-processors-as-validators"></a>Funktionella processorer som verifierare
+
+Du kan använda funktionsprocessorer för några av de vanligaste validatorerna för sit-funktioner. På så sätt kan du definiera ditt eget reguljära uttryck samtidigt som du säkerställer att de klarar de ytterligare kontroller som krävs av SIT. Till exempel kan Func_India_Aadhar att det anpassade reguljära uttrycket som definieras av dig klarar den verifieringslogik som krävs för indisk Aadhar-kort. Mer information om DLP-funktioner som kan användas som validerare finns i [Vad DLP-funktionerna söker efter.](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for) 
+
+### <a name="luhn-check-validator"></a>Luhn-kontroll validerare
+
+Du kan använda Luhn-kontroll valideraren om du har en anpassad typ av känslig information som innehåller ett reguljärt uttryck som ska överföra [Luhn-algoritmen.](https://en.wikipedia.org/wiki/Luhn_algorithm)
+
 ## <a name="more-information-on-additional-checks"></a>Mer information om ytterligare kontroller
 
 Här finns definitioner och några exempel för tillgängliga ytterligare kontroller.
@@ -147,4 +188,4 @@ Här finns definitioner och några exempel för tillgängliga ytterligare kontro
 > - Koreanska
 > - Japanska
 >
->Det här stödet är tillgängligt för typer av känslig information. Mer information finns i [Viktig information gällande stöd i Information Protection för teckenuppsättningar med dubbla byte (förhandsversion)](mip-dbcs-relnotes.md).
+>Stödet är tillgängligt för typer av känslig information. Se [Viktig information gällande stöd i Information Protection för teckenuppsättningar med dubbla byte (förhandsversion)](mip-dbcs-relnotes.md) för mer information.

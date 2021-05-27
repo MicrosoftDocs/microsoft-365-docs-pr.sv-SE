@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bb436cbd2d0fa453872760c1d2656585e02d1767
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 1800cfdabd402321c49b737eff7f9d67639eb300
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538873"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689007"
 ---
 # <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>Planera för slut på support av programvara och programvaruversioner med Hantering av hot och säkerhetsrisker
 
@@ -42,7 +42,7 @@ Supporten för programvara eller programversioner (EOS, kallas även slutet på 
 Det är centralt för säkerhet- och IT-administratörer att samarbeta och se till att organisationens programvaruinventering har konfigurerats för optimala resultat, efterlevnad och ett hälsosamt nätverks-ekosystem. De bör granska alternativen för att ta bort eller ersätta program som stöds i slutet av supporten och uppdateringsversionerna som inte längre stöds. Det är bäst att skapa och implementera en plan **innan supportdatumen** är slut.
 
 >[!NOTE]
-> EOS-funktionen är för närvarande inte tillgänglig för Windows -produkter (Mac, Linux). den läggs dock till i framtiden.
+> Supporten för supporten är för närvarande endast tillgänglig för Windows produkter.
 
 ## <a name="find-software-or-software-versions-that-are-no-longer-supported"></a>Hitta program- och programvaruversioner som inte längre stöds
 

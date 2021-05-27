@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Mer information om hur en global administratör i Microsoft 365 kan ändra en användares e-postadress och visningsnamn när användarens namn ändras. '
-ms.openlocfilehash: 1aa3fd3b67333937e64aab825e64533ccb09eea9
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 4f65bade32b2998f395c3b4eab7a1d2a2e5f3f33
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634226"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683121"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Ändra ett användarnamn och en e-postadress
 
@@ -47,25 +47,12 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
 ::: moniker range="o365-worldwide"
  
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
-    
-2. Välj användarens namn och gå sedan till fliken **Konto** och välj **Hantera användarnamn**.
-    
-3. I den första rutan skriver du den första delen av den nya e-postadressen. Om du har lagt till din egen domän i Microsoft 365 väljer du domänen för det nya e-postaliaset med listrutan. 
 
-4. Välj **Spara ändringar**.
-
-   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.  
-
-2. Välj användaren. I det utfällbara fönstret väljer du **Redigera** bredvid **Användarnamn/e-post**.
-
-3. I den första rutan skriver du den första delen av den nya e-postadressen. Om du har lagt till din egen domän i Microsoft 365 kan du välja domänen för det nya e-postaliaset med listrutan.
-
-4. Välj **Spara**.
 
 ::: moniker-end
 
@@ -73,13 +60,13 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>. 
 
-2. Välj användaren. I det utfällbara fönstret väljer du **Redigera** bredvid **Användarnamn/e-post**.
-
-3. I den första rutan skriver du den första delen av den nya e-postadressen. Om du har lagt till din egen domän i Microsoft 365 kan du välja domänen för det nya e-postaliaset med listrutan.
-
-4. Välj **Spara**.
-
 ::: moniker-end
+
+1. Välj användarens namn och gå sedan till fliken **Konto** och välj **Hantera användarnamn**.
+    
+1. I den första rutan skriver du den första delen av den nya e-postadressen. Om du har lagt till din egen domän i Microsoft 365 väljer du domänen för det nya e-postaliaset med listrutan. 
+
+1. Välj **Spara ändringar**.
 
 > [!IMPORTANT]
 > Om ett felmeddelande visas läser du [Åtgärda felmeddelanden](#resolve-error-messages).
@@ -89,6 +76,20 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
 ::: moniker range="o365-worldwide"
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>. 
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.  
+
+::: moniker-end
     
 2. Välj användarens namn och gå sedan till fliken **Konto** och välj **Hantera e-postalias**.
 
@@ -113,34 +114,17 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
   
    - Om också användarens lösenord ändrats kommer han/hon att uppmanas att ange det nya lösenordet på sin mobila enhet, så att den synkroniseras.
   
+## <a name="change-a-users-display-name"></a>Ändra en användares visningsnamn
+
+::: moniker range="o365-worldwide"
+
+1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.  
-
-2. Välj användaren. I det utfällbara fönstret väljer du **Redigera** bredvid **Användarnamn/e-post**.
-
-3. Välj **Ange som primär** för den e-postadress som du vill ange som primär e-postadress för den personen. 
-    
-   > [!IMPORTANT]
-   > Du ser inte alternativet Ange som primär om du har köpt Microsoft 365 från GoDaddy eller en annan partnertjänst som tillhandahåller en hanteringskonsol. Logga istället in på hanteringskonsolen för GoDaddy eller partnern om du vill ange ett primärt alias. 
-   > 
-   > Du ser endast det här alternativet om du är en global administratör. Om du inte ser alternativet har du inte behörighet att ändra användarnamn och primär e-postadress.
-  
-4. Ett stort gult varningsmeddelande visas om att du håller på att ändra personens inloggningsinformation. Välj **Spara** och sedan **Stäng**.
-    
-5. Informera personen om följande:
- 
-   - Det kan ta en stund att göra den här ändringen.
-  
-   - Personens nya användarnamn. Han/hon behöver det för att logga in på Microsoft 365.
-    
-   - Om personen använder Skype för företag - Online ska du berätta att han/hon måste schemalägga alla eventuella Skype för företag - Online-möten som han/hon organiserat på nytt, och att han/hon måste be sina externa kontakter att uppdatera den gamla kontaktinformationen.
-
-   - Om personen använder OneDrive berättar du att URL-adressen till den här platsen har ändrats. Om personen har OneNote-anteckningsböcker i OneDrive, kan de behöva stänga och öppna dem igen i OneNote. Om de har delat filer från OneDrive kanske inte länkarna till filerna fungerar och användaren kan dela vidare.    
-  
-   - Om också användarens lösenord ändrats berättar du att han/hon kommer att uppmanas att ange det nya lösenordet på sin mobila enhet, så att den synkroniseras.
+1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>. 
 
 ::: moniker-end
 
@@ -148,36 +132,7 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>. 
 
-2. Välj användaren. I det utfällbara fönstret väljer du **Redigera** bredvid **Användarnamn/e-post**.
-
-3. Välj **Ange som primär** för den e-postadress som du vill ange som primär e-postadress för den personen. 
-    
-   > [!IMPORTANT]
-   > Du ser inte alternativet Ange som primär om du har köpt Microsoft 365 från GoDaddy eller en annan partnertjänst som tillhandahåller en hanteringskonsol. Logga istället in på hanteringskonsolen för GoDaddy eller partnern om du vill ange ett primärt alias. 
-   >  
-   > Du ser endast det här alternativet om du är en global administratör. Om du inte ser alternativet har du inte behörighet att ändra användarnamn och primär e-postadress.
-  
-4. Ett stort gult varningsmeddelande visas om att du håller på att ändra personens inloggningsinformation. Välj **Spara** och sedan **Stäng**.
-    
-5. Informera personen om följande:
- 
-   - Det kan ta en stund att göra den här ändringen.
-  
-   - Personens nya användarnamn. Han/hon behöver det för att logga in på Microsoft 365.
-    
-   - Om personen använder Skype för företag - Online ska du berätta att han/hon måste schemalägga alla eventuella Skype för företag - Online-möten som han/hon organiserat på nytt, och att han/hon måste be sina externa kontakter att uppdatera den gamla kontaktinformationen.
-
-   - Om personen använder OneDrive berättar du att URL-adressen till den här platsen har ändrats. Om personen har OneNote-anteckningsböcker i OneDrive, kan de behöva stänga och öppna dem igen i OneNote. Om de har delat filer från OneDrive kanske inte länkarna till filerna fungerar och användaren kan dela vidare.    
-  
-   - Om också användarens lösenord ändrats berättar du att han/hon kommer att uppmanas att ange det nya lösenordet på sin mobila enhet, så att den synkroniseras.
-
 ::: moniker-end
-  
-## <a name="change-a-users-display-name"></a>Ändra en användares visningsnamn
-
-::: moniker range="o365-worldwide"
-
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
 
 2. Välj användarens namn och gå sedan till fliken **Konto** och välj **Hantera kontaktinformation**.
 
@@ -186,37 +141,7 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
    Om du får felmeddelandet ”**Tyvärr kunde användaren inte redigeras. Kontrollera användarinformationen och försök igen**” läser du [Åtgärda felmeddelanden](#resolve-error-messages).
 
 Det kan ta upp till 24 timmar innan ändringen börjar gälla i alla tjänster. När ändringen har genomförts måste personen logga in på Outlook, Skype för företag och SharePoint med det uppdaterade användarnamnet.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.  
-
-2. Välj användaren. I det utfällbara fönstret väljer du **Redigera** bredvid **Kontaktinformation**.
-
-3. I rutan **Visningsnamn** skriver du ett nytt namn för personen och väljer sedan **Spara**.
-
-   Om du får felmeddelandet ”**Tyvärr kunde användaren inte redigeras. Kontrollera användarinformationen och försök igen**” läser du [Åtgärda felmeddelanden](#resolve-error-messages).
-
-Det kan ta upp till 24 timmar innan ändringen börjar gälla i alla tjänster. När ändringen har genomförts måste personen logga in på Outlook, Skype för företag och SharePoint med det uppdaterade användarnamnet, så se till att berätta för personen om ändringen.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>. 
-
-2. Välj användaren. I det utfällbara fönstret väljer du **Redigera** bredvid **Kontaktinformation**.
-
-3. I rutan **Visningsnamn** skriver du ett nytt namn för personen och väljer sedan **Spara**.
-
-   Om du får felmeddelandet ”**Tyvärr kunde användaren inte redigeras. Kontrollera användarinformationen och försök igen**” läser du [Åtgärda felmeddelanden](#resolve-error-messages).
-
-Det kan ta upp till 24 timmar innan ändringen börjar gälla i alla tjänster. När ändringen har genomförts måste personen logga in på Outlook, Skype för företag och SharePoint med det uppdaterade användarnamnet, så se till att berätta för personen om ändringen.
-
-::: moniker-end
-
+ 
 ## <a name="resolve-error-messages"></a>Åtgärda felmeddelanden
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>"Det hittades ingen parameter som matchar parameternamnet 'E-postadresser'"

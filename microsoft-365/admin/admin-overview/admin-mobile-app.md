@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Skaffa appen Microsoft 365 och lär dig att hantera din online organisation från din telefon eller surfplatta.
-ms.openlocfilehash: 2f6b27b409dd456a88a17a9825fae3ec24d787a4
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f8834aca0835a209a4df32a934eca736c5f7808f
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244026"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683241"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Om Microsoft 365-mobilappen
 
@@ -50,6 +50,10 @@ Om du är administratör och du ansvarar för mer än en Microsoft 365 organisat
   
 > [!IMPORTANT]
 > Om du har problem med att använda mobilappen Admin för iOS eller Android kan du skicka ett e-postmeddelande [till oss feedback365@microsoft.com](mailto:feedback365@microsoft.com) berätta det för oss.
+
+## <a name="before-you-begin"></a>Innan du börjar
+
+Du måste vara administratör i en Microsoft 365 organisation för att kunna använda mobilappen för administratörer.
   
 ## <a name="download-the-admin-mobile-app"></a>Ladda ned mobilappen för administratör
 
@@ -115,7 +119,11 @@ I den vänstra navigeringsmenyn går du **till Inställningar**  >  **Aviseringa
 ### <a name="what-do-i-do-if-my-question-isnt-answered"></a>Vad gör jag om min fråga inte besvaras?
 
 [E feedback365@microsoft.com postmeddelande](mailto:feedback365@microsoft.com) om du vill rapportera ett problem med programmet. Du kan också lämna feedback längst ned i den här artikeln.
-  
-## <a name="related-content"></a>Relaterat innehåll 
 
-[Microsoft 365 om utbildningsvideor för företag](../../business-video/index.yml) (länksida)
+## <a name="next-steps"></a>Nästa steg
+
+När du har laddat ned administratörsmobilen kan du lägga till användare så att du kan komma igång.
+  
+## <a name="related-content"></a>Relaterat innehåll
+
+[Utbildningsvideor för Microsoft 365 Business](../../business-video/index.yml)

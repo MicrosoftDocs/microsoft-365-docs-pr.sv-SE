@@ -20,12 +20,12 @@ description: Administratörer kan läsa mer om skydd mot hot i Microsoft 365 kon
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 438200f3f8a6a846d49bc397d6a4b0a0a33cad40
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 12b519d45df005471e3d87cfdb24f87edddbf6f3
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624627"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683337"
 ---
 # <a name="protect-against-threats"></a>Skydda mot hot
 
@@ -78,27 +78,26 @@ Om du vill konfigurera Defender Office 365-principer måste du ha tilldelats en 
 
 Mer information finns i [Behörigheter i Säkerhets- & Kompatibilitetscenter.](permissions-in-the-security-and-compliance-center.md)
 
-## <a name="before-you-begin-turn-on-audit-logging-for-reporting-and-investigation"></a>Innan du börjar aktiverar du granskningsloggning för rapportering och undersökning
+### <a name="turn-on-audit-logging-for-reporting-and-investigation"></a>Aktivera granskningsloggning för rapportering och undersökning
 
-Starta granskningsloggningen tidigt. Du måste granska vara PÅ **för** vissa av stegen som följer. Granskningsloggning är tillgänglig i prenumerationer som innehåller [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Om du vill visa data i skyddsrapporter om [](view-email-security-reports.md)hot, till exempel i säkerhetspanelen, [](security-dashboard.md)e-postsäkerhetsrapporter och [Utforskaren,](threat-explorer.md)måste granskningsloggning vara *På.* Mer information finns i [Aktivera eller inaktivera granskningsloggsökning.](../../compliance/turn-audit-log-search-on-or-off.md)
+- Starta granskningsloggningen tidigt. Du måste granska vara PÅ **för** vissa av följande steg. Granskningsloggning är tillgänglig i prenumerationer som innehåller [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Om du vill visa data i skyddsrapporter om [](view-email-security-reports.md)hot, till exempel i säkerhetspanelen, [](security-dashboard.md)e-postsäkerhetsrapporter och [Utforskaren,](threat-explorer.md)måste granskningsloggning vara *På.* Mer information finns i [Aktivera eller inaktivera granskningsloggsökning.](../../compliance/turn-audit-log-search-on-or-off.md)
 
 ## <a name="part-1---anti-malware-protection"></a>Del 1 – Skydd mot skadlig programvara
 
-[Skydd mot skadlig programvara är](anti-malware-protection.md) tillgängligt i prenumerationer som innehåller [EOP.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
+Mer information om rekommenderade inställningar för skydd mot skadlig programvara finns i Inställningar för [EOP-policy mot skadlig programvara.](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)
 
-1. I [Säkerhets- & efterlevnadscenter](https://protection.office.com)väljer du **Policy för** \> **hothantering mot** skadlig \> **programvara.**
+1. Öppna <https://security.microsoft.com/antimalwarev2> .
 
-2. Dubbelklicka på **standardprincipen** och välj sedan **inställningar**.
+2. Välj Standardprincip genom att klicka på namnet på principen.
 
-3. Ange följande inställningar:
+3. Klicka på Redigera skyddsinställningar i den utfäll plats som öppnas med **principinformation** och konfigurera sedan följande inställningar:
+   - Välj **Aktivera filtret för vanliga bifogade filer om** du vill aktivera filtret för vanliga bifogade filer. Klicka **på Anpassa filtyper om** du vill lägga till fler filtyper.
+   - Kontrollera att **Aktivera automatisk rensning utan timme för skadlig programvara** är markerat.
+   - Kontrollera att ingen av inställningarna i **meddelandeavsnittet** är markerad.
 
-    - Behåll **standardinställningen Nej** i avsnittet Svar på identifiering av **skadlig kod.**
+   När du är klar klickar du på **Spara**
 
-    - I avsnittet **Vanliga filtyper för bifogade** filer väljer du **På**.
-
-4. Klicka på **Spara**.
-
-Mer information om policyalternativ för skadlig programvara finns i [Konfigurera principer för skadlig programvara.](configure-anti-malware-policies.md)
+Detaljerade instruktioner för konfigurering av principer för skadlig programvara finns i [Konfigurera principer för skydd mot skadlig programvara i EOP.](configure-anti-malware-policies.md)
 
 ## <a name="part-2---anti-phishing-protection"></a>Del 2 – Skydd mot nätfiske
 

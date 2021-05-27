@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: När en delad postlåda har skapats kan flera personer i verksamheten dela på ansvaret att läsa och svara på e-postmeddelanden som skickas till en adress.
-ms.openlocfilehash: e628d72482ed7ff32a204eaf9503fdd9a271844a
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 35f1de41094c6bf3f806b3e8e01c0a67949c491e
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635504"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683253"
 ---
 # <a name="create-a-shared-mailbox"></a>Skapa en delad postlåda 
 
@@ -116,42 +116,26 @@ Men vad händer om en administratör återställer lösenordet för den delade p
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
 
-2. Leta reda på kontot för den delade postlådan i listan med användarkonton (ändra t.ex. filtret till **Användare utan licens**).
-
-3. Välj användaren för att öppna fönstret Egenskaper och välj sedan ikonen **Blockera den här användaren** ![Skärmbild av ikonen Blockera den här användaren](../../media/block-user-icon.png).
-
-   **Obs**! Om kontot redan är blockerat visas **Inloggning blockerad** längst upp och ikonen är **Avblockera den här användaren**.
-
-4. I fönstret **Blockera den här användaren?** väljer du **Blockera användaren från att logga in** och sedan **Spara ändringarna**.
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
 
-2. Leta reda på kontot för den delade postlådan i listan med användarkonton (ändra t.ex. vyn till **Användare utan licens**) och markera sedan kontot.
-
-3. Välj **Blockera inloggning** i den utfällbara menyn för egenskaper.
-
-    **Obs!** Om kontot redan har blockerats visar knappen **Tillåt inloggning**.
-
-4. Kontrollera att Blockera användaren från att logga in är markerad i den utfällbara menyn **Redigera inloggningsstatus**. Välj **Spara** och sedan **Stäng**.
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
-
-2. Leta reda på kontot för den delade postlådan i listan med användarkonton (ändra t.ex. vyn till **Användare utan licens**) och markera sedan kontot.
-
-3. Välj **Blockera inloggning** i den utfällbara menyn för egenskaper.
-
-    **Obs!** Om kontot redan har blockerats visar knappen **Tillåt inloggning**.
-
-4. Kontrollera att Blockera användaren från att logga in är markerad i den utfällbara menyn **Redigera inloggningsstatus**. Välj **Spara** och sedan **Stäng**.
 ::: moniker-end
+
+1. Leta reda på kontot för den delade postlådan i listan med användarkonton (ändra t.ex. filtret till **Användare utan licens**).
+
+1. Välj användaren för att öppna fönstret Egenskaper och välj sedan ikonen **Blockera den här användaren** ![Skärmbild av ikonen Blockera den här användaren](../../media/block-user-icon.png).
+
+   **Obs**! Om kontot redan är blockerat visas **Inloggning blockerad** längst upp och ikonen är **Avblockera den här användaren**.
+
+1. I fönstret **Blockera den här användaren?** väljer du **Blockera användaren från att logga in** och sedan **Spara ändringarna**.
 
 Om du vill ha anvisningar om hur du blockerar inloggning för konton som använder Azure AD PowerShell (med flera konton samtidigt), kan du läsa [Blockera användarkonton med Office 365 PowerShell](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md).
 
@@ -172,7 +156,6 @@ Mer information om delade postlådor i Outlook finns i:
 - <a href="https://support.microsoft.com/office/6ecc39c5-5577-4a1d-b18c-bbdc92972cb2" target="_blank">Öppna en delad mapp eller postlåda i Outlook för Mac</a>
 
 - <a href="https://support.microsoft.com/office/b0963400-2a51-4c64-afc7-b816d737d164" target="_blank">Lägga till regler i en delad postlåda</a>
-
 
 ## <a name="use-a-shared-mailbox-on-a-mobile-device-phone-or-tablet"></a>Använda en delad postlåda på en mobil enhet (mobiltelefon eller surfplatta)
 

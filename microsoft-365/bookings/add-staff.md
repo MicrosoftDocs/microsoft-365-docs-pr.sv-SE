@@ -1,5 +1,5 @@
 ---
-title: Lägga till personal i bokningar
+title: Lägg till personal i Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -7,61 +7,74 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 localization_priority: Normal
-ms.assetid: 298c529b-407b-4a2b-b2c5-6e77a9d1f07f
-description: Använd den här sidan för att skapa din personal lista och för att hantera personal uppgifter, till exempel namn, telefonnummer och e-postadress.
-ms.openlocfilehash: 11d62cc34522de21e63b8bdf6e7e15729ac73dc1
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+description: Använd den här sidan för att skapa en personallista och hantera personalinformation som namn, telefonnummer och e-postadress.
+ms.openlocfilehash: 7fd19e3281b3dc075b5f72ca0471f5c66f93752d
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399199"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683325"
 ---
-# <a name="add-staff-to-bookings"></a>Lägga till personal i bokningar
+# <a name="add-staff-to-bookings"></a>Lägg till personal i Bookings
 
-På sidan personal i bokningar kan du skapa en bemannings lista och hantera personalens medlems uppgifter, till exempel namn, telefonnummer och e-postadress. Du kan också ange arbets tid för varje medlem i personalen.
+På sidan Personal i Bookings skapar du en personallista och hanterar personalinformation som namn, telefonnummer och e-postadress. Här kan du också ange arbetstider för varje anställd.
 
-## <a name="add-staff"></a>Lägga till personal
+## <a name="before-you-begin"></a>Innan du börjar
 
-Även om det är en funktion i Microsoft 365, men alla dina anställda måste ha ett Microsoft 365-konto. Alla tjänste medlemmar måste ha en giltig e-postadress så att de kan ta emot bokningar och schemalägga ändringar.
+Även om Bookings är en Microsoft 365 är det inte alla anställda som måste ha ett Microsoft 365 konto. Alla anställda måste ha en giltig e-postadress för att kunna ta emot bokningar och schemalägga ändringar.
 
-Titta på den här videon eller följ stegen nedan för att lägga till din personal.
+## <a name="watch-add-your-staff-in-microsoft-bookings"></a>Titta: Lägga till personal i Microsoft Bookings
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
 
-1. Gå till [sidan hantera personal](https://outlook.office.com/bookings/staff) och välj **Lägg till personal**
+## <a name="steps"></a>Steg
 
-2. Välj knappen **Lägg till personal** .
+1. Gå till sidan [Hantera personal och](https://outlook.office.com/bookings/staff) välj Lägg till **personal**
 
-3. När du lägger till personal från din organisation kan du skriva deras namn i fältet **Lägg till personer** och välja dem när de visas i den nedrullningsbara menyn. De övriga fälten fylls i automatiskt.
+2. Välj knappen **Lägg till** personal.
 
-    När du har lagt till en personal medlem kan du redigera namnet som visas i alla bokförings kommunikationer genom att välja **x** bredvid personens namn och redigera fältet **Lägg till personer** . Det kan vara praktiskt om du vill att personalen ska ha en särskild titel eller ett namn som visas för kunder, till exempel att lista Adele Vance som "Dr. Vance, MD."
+3. När du lägger till personal från organisationen  skriver du deras namn i fältet Lägg till personer och väljer dem när de visas i den nedrullningrullningade menyn. De andra fälten fylls i automatiskt.
+
+    När en anställd läggs till kan du redigera namnet som visas i alla Bookings-meddelanden genom att välja **x** bredvid namnet och redigera **fältet Lägg till** personer. Det kan vara användbart om du vill att anställda ska få en särskild titel eller ett visst namn för kunder, till exempel att ange Adele Vance som "Dr. Vance, MD".
 
 4. Om du vill lägga till personal utanför organisationen fyller du i deras e-post och annan information manuellt.
 
     > [!NOTE]
-    > Personal utanför din klient organisation kan inte dela med dig av ledig/upptagen-information med bokningar.
+    > Personal utanför klientorganisationen kommer inte att kunna dela ledig/upptagen-information med Bookings.
 
-5. För varje anställd väljer du en roll: administratör, visnings program eller gäst.
-    - **Administratörer** kan redigera alla inställningar, lägga till och ta bort personal och skapa, redigera och ta bort bokningar.
-    - **Visnings program** kan se alla kalendrar i kalendern, men de kan inte ändra eller ta bort dem. De har skrivskyddad åtkomst till inställningar.
-    - **Gäster** kan tilldelas till bokningar, men de kan inte öppna post lådan.
+5. Välj en roll för varje anställd: Administratör, Läsare eller Gäst.
+    - **Administratörer** kan redigera alla inställningar, lägga till och ta bort personal samt skapa, redigera och ta bort bokningar.
+    - **Läsare** kan se alla bokningar i kalendern, men de kan inte ändra eller ta bort dem. De har skrivskyddade åtkomst till inställningar.
+    - **Gäster** kan tilldelas till bokningar, men de kan inte öppna bokningspostlådan.
 
-6. Välj **meddela all personal via e-post när en bokning som har tilldelats till dem skapas eller ändras** för att aktivera e-postaviseringar. Följande är ett exempel på e-post:
+6. Välj **Meddela all personal via e-post när en bokning som tilldelats dem skapas eller ändras för att** aktivera personal-e-post. Följande är ett exempel på ett e-postmeddelande:
 
-    :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="Skicka e-post från en avisering":::
+    :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="Ett e-postmeddelande från Bookings":::
 
-7. Välj **händelser i Office 365-kalendern påverkar tillgänglighet** om du vill att ledig/upptagen-informationen från personal medlemmarnas kalendrar ska påverka tillgängligheten för boknings tjänster via bokningar.
+7. Välj **Händelser Office 365** kalendern påverkar tillgängligheten om du vill att ledig/upptagen-information från personalens kalendrar ska påverka tillgängligheten för bookings-tjänster via Bookings.
 
-    Om en anställd till exempel har ett grupp möte eller en personlig avtalad tid som är schemalagd för 3pm på en onsdag visar bokningarna att personal medlemmen inte är tillgänglig under den tiden. Den tiden visas som upptagen eller preliminärt i kalendervyn, enligt exemplet nedan.
+    Om en anställd till exempel har ett gruppmöte eller en personlig avtalad tid schemalagd till 15:00 på en onsdag, visar Bookings att den anställde inte kan bokas på den platsen. Den tiden visas som upptagen eller preliminär i kalendervyn i Bookings, som i exemplet nedan.
 
-    :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="Skicka e-post från en avisering":::
+    :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="En vy av en Bookings-kalender":::
 
 > [!IMPORTANT]
-> Vi rekommenderar starkt att du lämnar den här inställningen (den är aktive rad som standard) för att undvika dubbel bokföring och för att optimera tillgänglighet för dina anställdas medlemmar.
+> Vi rekommenderar att du lämnar den här inställningen på (den är aktiverad som standard) för att undvika dubbelbokningar och för att optimera tillgängligheten för personalen.
 
-8. Välj **Använd kontors tid** för att ställa in alla bookable tiden för att personalen bara ska vara inom den kontors tid som du har angett i avsnittet **Business-tid** på sidan företags information.
+8. Välj **Använd öppettider om** du vill ange alla bokningsbara tider för de anställda  så att de bara ligger inom den arbetstid som du anger i avsnittet Öppettider på sidan Företagsinformation.
 
-    Genom att avmarkera den här rutan kan personalen få anpassade timmar som är ytterligare begränsad när de kan bokas. Det här är användbart för scenarier där en anställds medlem kanske bara finns på webbplatsen tisdagar och Wednesdays, eller de är avvecklade sina morgon för en typ av avtalade tider och deras eftermiddagar för andra typer.
+    Genom att avmarkera den här rutan kan personalen ges anpassade timmar som ytterligare begränsar när de kan bokas. Det här är användbart för scenarier där en anställd kanske bara är på plats tisdagar och onsdagar, eller de ägna sina morgonar åt en typ av avtalade tider och deras på eftermiddagen för andra typer.
 
     > [!NOTE]
-    > Endast de första 31 personalen som du lägger till på sidan anställda visas när du tilldelar personal medlemmar till en tjänst.
+    > När du tilldelar personal till en tjänst är det bara de 31 första anställda som du lägger till på personalsidan som visas.
+
+## <a name="next-steps"></a>Nästa steg
+
+När du har lagt till anställda kan du [schemalägga företagets stängningar](schedule-closures-time-off-vacation.md) och samt ange [principer för schemaläggning.](set-scheduling-policies.md)
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Microsoft Bookings](bookings-overview.md)
+
+[Schemalägga verksamhetsslut, ledighet och semesterdagar](schedule-closures-time-off-vacation.md)
+
+[Ange dina principer för schemaläggning](set-scheduling-policies.md)

@@ -20,12 +20,12 @@ ms.custom:
 description: I det här avsnittet får du hjälp med den rekommenderade konfigurationen för inställningar för hela klientorganisationen som påverkar säkerheten Microsoft 365 miljön.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 686768d05e37a4e103640c2973fd30abaa25630b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 8a449d9647ae5a8b892967116f28aa6203a5e815
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538945"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684177"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Konfigurera din Microsoft 365 för ökad säkerhet
 
@@ -46,12 +46,14 @@ Office 365 Secure Score analyserar organisationens säkerhet utifrån aktivitete
 
 I Microsoft 365 säkerhetscenter finns funktioner som skyddar din miljö. Den innehåller även rapporter och instrumentpaneler som du kan använda för att övervaka och vidta åtgärder. Vissa områden har standardprincipkonfigurationer. Vissa områden inkluderar inte standardprinciper eller regler. Besök de här principerna under hantering av hot för att anpassa inställningarna för hothantering för en säkrare miljö.
 
+<br>
+
 ****
 
 |Område|Innehåller en standardprincip|Rekommendation|
 |---|---|---|
 |**Skydd mot nätfiske**|Ja|<ul><li>Personifieringsskydd – Om du har Defender för Office 365 och en egen domän konfigurerar du inställningarna för personifieringsskydd i standardprincipen för skydd mot nätfiske för att skydda dina mest värdefulla användares e-postkonton, till exempel din VD, och för att skydda din domän. Mer information: [Personifieringsinställningar i principer för skydd mot nätfiske](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) [och personifieringsinsikter](impersonation-insight.md)</li><li>Förfalskningsinformation – Granska avsändare som förfalskning av din domän. Blockera eller tillåt dessa avsändare. Mer information: [Förfalskningsinformation i EOP och](learn-about-spoof-intelligence.md) [Hantera innehavarlistan över tillåtna/blockerade .](tenant-allow-block-list.md)</li></ul>|
-|**Anti-Malware Engine**|Ja| Redigera standardprincipen: <ul><li>Vanliga filter för bifogade filer: Välj på</li></ul> <p> Du kan också skapa egna principer för skadlig programvara och tillämpa dem på vissa användare, grupper eller domäner i organisationen. <p> Mer information: <ul><li>[Skydd mot skadlig kod](anti-malware-protection.md)</li><li>[Konfigurera principer för skydd mot skadlig kod](configure-anti-malware-policies.md)</li></ul>|
+|**Anti-Malware Engine**|Ja|Redigera standardprincipen: <ul><li>Välj **Aktivera filtret för vanliga bifogade filer**</li></ul> <p> Du kan också skapa egna principer för skadlig programvara och tillämpa dem på vissa användare, grupper eller domäner i organisationen. <p> Mer information: <ul><li>[Skydd mot skadlig kod](anti-malware-protection.md)</li><li>[Konfigurera principer för skydd mot skadlig kod](configure-anti-malware-policies.md)</li></ul>|
 |**Valv Bifogade filer i Microsoft Defender för Office 365**|Nej|På huvudsidan för att Valv bifogade filer klickar **du på Globala inställningar** och aktiverar den här inställningen: <ul><li>**Aktivera Defender för Office 365 för SharePoint, OneDrive och Microsoft Teams.**</li></ul> <p> Skapa en princip Valv för bifogade filer med följande inställningar: <ul><li> **Blockera:** Välj Blockera **som** det okända svaret på skadlig programvara.</li><li>**Aktivera omdirigering:** Markera den här rutan och ange en e-postadress, till exempel ett administratörs- eller karantänkonto.</li><li>**Använd ovanstående val om sökning efter bifogade filer med skadlig programvara inträffar:** Markera den här rutan.</li><li>**_Används för:_* **Mottagarens domän** \> är välj din domän.</li></ul> <p> Mer information: [Valv för bifogade filer SharePoint, OneDrive, Microsoft Teams](mdo-for-spo-odb-and-teams.md) och konfigurera principer för Valv för bifogade [filer](set-up-safe-attachments-policies.md)|
 |**Valv Länkar i Microsoft Defender för Office 365**|Ja|På huvudsidan för länken Valv du på **Globala inställningar:** <ul><li>**Använd Valv Länkar i: Office 365:** Kontrollera att den här inställningen är aktiverad.</li><li>**Spåra inte när användare klickar på Valv**: Inaktivera den här inställningen om du vill spåra användarklick.</li></ul> <p> Skapa en Valv Länkar med följande inställningar: <ul><li>**Välj åtgärden för okända potentiellt skadliga URL-adresser i meddelanden:** Kontrollera att den här inställningen är **På**.</li><li>**Välj åtgärden för okända eller potentiellt skadliga URL-adresser i Microsoft Teams:** Kontrollera att den här inställningen är **På**.</li><li>**Använd URL-skanning i realtid för misstänkta länkar och länkar som pekar på filer**: Markera den här rutan.</li><li>**Vänta tills URL-skanningen är klar innan du levererar meddelandet**: Markera den här rutan.</li><li>**Använd Valv länkar till e-postmeddelanden som skickas inom organisationen**: Markera den här rutan</li><li>**Tillåt inte användare att klicka sig fram till den ursprungliga URL:en:** Markera den här rutan.</li><li>**Används för:** **Mottagarens domän** \> är välj din domän.</li></ul> <p> Mer information: [Konfigurera principer Valv Länkar.](set-up-safe-links-policies.md)|
 |**Skräppostskydd (e-postfiltrering)**|Ja| Vad du bör titta efter: För mycket skräppost – Välj Anpassade inställningar och redigera standardprincipen för skräppostfilter. Mer information: [Microsoft 365 skydd mot skräppost för e-post.](anti-spam-protection.md)|
@@ -64,6 +66,8 @@ I Microsoft 365 säkerhetscenter finns funktioner som skyddar din miljö. Den in
 ## <a name="view-dashboards-and-reports-in-the-security--compliance-center"></a>Visa instrumentpaneler och rapporter i Säkerhets- & Säkerhets- och efterlevnadscenter
 
 Besök de här rapporterna och instrumentpanelerna om du vill veta mer om din miljö. Data i de här rapporterna blir rikare när organisationen använder Office 365 tjänster. För tillfället bör du känna till vad du kan övervaka och vidta åtgärder för. Mer information finns i [Rapporter i Säkerhets- & Kompatibilitetscenter.](../../compliance/reports-in-security-and-compliance.md)
+
+<br>
 
 ****
 
@@ -80,6 +84,8 @@ Besök de här rapporterna och instrumentpanelerna om du vill veta mer om din mi
 
 Många säkerhets- och skyddskontroller i administrationscentret Exchange även finns i säkerhetscentret. Du behöver inte konfigurera dessa på båda platserna. Här är några ytterligare inställningar som rekommenderas.
 
+<br>
+
 ****
 
 |Område|Innehåller en standardprincip|Rekommendation|
@@ -95,6 +101,8 @@ Microsoft-rekommendationer för SharePoint till gruppwebbplatser på ökande sky
 SharePoint gruppwebbplatser som konfigurerats på baslinjenivån tillåter delning av filer med externa användare genom att använda anonyma åtkomstlänkar. Den här metoden rekommenderas i stället för att skicka filer via e-post.
 
 För att stödja målen för baslinjeskydd konfigurerar du delningsprinciper för hela klientorganisationen enligt rekommendationen här. Delningsinställningar för enskilda webbplatser kan vara mer restriktiva än den här klientorganisationens princip, men inte mer tillåtande.
+
+<br>
 
 ****
 
@@ -138,9 +146,7 @@ Eftersom den här lösningen rekommenderar EMS E5-abonnemanget rekommenderar vi 
 Mer information:
 
 - [Distribuera Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
-
 - [Mer information om Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
-
 - [Vad är Cloud App Security?](/cloud-app-security/what-is-cloud-app-security)
 
 ![Instrumentpanelen i Cloud App Security](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)

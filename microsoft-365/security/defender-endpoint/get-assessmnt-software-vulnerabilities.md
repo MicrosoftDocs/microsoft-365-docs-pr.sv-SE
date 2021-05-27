@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: be21be07758c1123cdde38e3750cafe739bfb66a
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: 951f78ba361a12e404a5cce2071f931eab30c43f
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653687"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689219"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Exportera bedömningar av säkerhetsproblem för programvara per enhet
 
@@ -37,21 +37,23 @@ ms.locfileid: "52653687"
 [!include[Prerelease information](../../includes/prerelease.md)]
 >
 >
-Returnerar alla kända säkerhetsproblem och deras information om alla enheter, per enhet.
+Returnerar alla kända säkerhetsproblem i programvaran och deras information för alla enheter, per enhet.
 
 Det finns olika API-anrop för att få olika typer av data. Eftersom mängden data kan vara mycket stor kan den hämtas på två sätt:
 
-- **OData**  API:t hämtar alla data i organisationen som Json-svar efter OData-protokollet. Den här metoden är bäst _för små organisationer med mindre än 100 000 enheter._ Svaret är paginerat, så du kan använda \@ odata.nextLink-fältet från svaret för att hämta nästa resultat.
+- [Exportera säkerhetsproblem med programvara, utvärdering av OData](#1-export-software-vulnerabilities-assessment-odata)  API:t hämtar alla data i organisationen som Json-svar efter OData-protokollet. Den här metoden är bäst _för små organisationer med mindre än 100 K-enheter._ Svaret är paginerat, så du kan använda \@ odata.nextLink-fältet från svaret för att hämta nästa resultat.
 
-- **via filer** Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Därför rekommenderas det för stora organisationer med fler än 100 000 enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure Storage. Med det här API:t kan du ladda ned alla dina data Azure Storage enligt följande:
+- [Exportera utvärdering av säkerhetsproblem för programvara via filer](#2-export-software-vulnerabilities-assessment-via-files) Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Därför rekommenderas det för stora organisationer med fler än 100 K-enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure Storage. Med det här API:t kan du ladda ned alla dina data Azure Storage enligt följande:
 
   - Anropa API:t för att få en lista med hämtningsadresser med alla dina organisationsdata.
 
   - Ladda ned alla filer med hjälp av URL:er för nedladdning och bearbeta dina data som du vill.
 
-Data som samlas in (för _antingen OData_ eller _via_ filer ) är den aktuella ögonblicksbilden av den aktuella statusen, och innehåller inte historiska data. För att kunna samla in historiska data måste kunderna spara data i sina egna datalagringar.
+Data som samlas in (med hjälp av _antingen OData_ eller _via_ filer) är den aktuella ögonblicksbilden av den aktuella statusen, och innehåller inte historiska data. För att kunna samla in historiska data måste kunderna spara data i sina egna datalagringar.
 
-Om inget annat anges exporteras alla utvärderingsmetoder som **_listas för fullständig export_** **_och_** efter enhet (kallas även **_per enhet)._**
+> [!Note]
+>
+> Om inget annat anges exporteras alla utvärderingsmetoder som **_listas för fullständig export_** **_och_** efter enhet (kallas även **_per enhet)._**
 
 ## <a name="1-export-software-vulnerabilities-assessment-odata"></a>1. Utvärdering av säkerhetsproblem med programvara (OData)
 
@@ -93,10 +95,10 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 >
 >- Vissa ytterligare kolumner kan returneras i svaret. Kolumnerna är tillfälliga och kan komma att tas bort. Använd bara de dokumenterade kolumnerna.
 >
->- Egenskaperna som definieras i tabellen nedan anges alfanumeriskt, efter egenskaps-ID.  När du kör det här API:t returneras inte resultatet nödvändigtvis i samma ordning som anges i dessa tabeller.
+>- Egenskaperna som definieras i följande tabell anges i alfabetisk ordning, efter egenskaps-ID.  När du kör det här API:t returneras inte resultatet nödvändigtvis i samma ordning som anges i den här tabellen.
 >
 
-Egenskap (id) | Datatyp | Beskrivning | Exempel på ett returnerat värde
+Egenskap (ID) | Datatyp | Beskrivning | Exempel på ett returnerat värde
 :---|:---|:---|:---
 CveId | sträng | Unikt ID tilldelat till säkerhetshålet under systemet för vanliga säkerhetsproblem och exponeringar (CVE). | CVE-2020-15992
 CvssScore | sträng | CVSS-poäng för CVE. | 6.2
@@ -304,10 +306,8 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 >
 >- Vissa ytterligare kolumner kan returneras i svaret. Kolumnerna är tillfälliga och kan komma att tas bort. Använd bara de dokumenterade kolumnerna.
 >
->- Egenskaperna som definieras i följande tabell anges i alfabetisk ordning, efter egenskaps-ID.  När du kör det här API:t returneras inte resultatet nödvändigtvis i samma ordning som anges i dessa tabeller.
->
 
-Egenskap (id) | Datatyp | Beskrivning | Exempel på ett returnerat värde
+Egenskap (ID) | Datatyp | Beskrivning | Exempel på ett returnerat värde
 :---|:---|:---|:---
 Exportera filer | \[matrissträng\]  | En lista med hämtnings-URL:er för filer som innehåller den aktuella ögonblicksbilden av organisationen. | [  “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2”  ]
 GeneratedTime | sträng | Tidpunkten då exporten skapades. | 2021-05-20T08:00:00Z

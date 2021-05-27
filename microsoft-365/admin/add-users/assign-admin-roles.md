@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Lär dig hur du tilldelar administratörsroller till en eller flera användare i företaget så att de kan utföra specifika uppgifter i administrationscentret.
-ms.openlocfilehash: 8a9da12a8ebc01a02e4362f09ccaa9e92c21b7e9
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: e53d1a414d081ddb74a1c4784adcd982b6194691
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634178"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683217"
 ---
 # <a name="assign-admin-roles"></a>Tilldela administratörsroller
 
@@ -50,8 +50,6 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
 
 ## <a name="assign-admin-roles"></a>Tilldela administratörsroller 
 
-::: moniker range="o365-worldwide"
-
 Du kan tilldela användare till en roll på 2 olika sätt:
 
 - Du kan gå till användarens information och Hantera **roller och** tilldela en roll till användaren.
@@ -61,18 +59,16 @@ Du kan tilldela användare till en roll på 2 olika sätt:
 
 1. I administrationscentret går du till **Roller**. Välj **flikarna Azure AD** **eller Intune för** att visa de administratörsroller som är tillgängliga för din organisation.
 2. Välj den administratörsroll som du vill tilldela användaren.
-3. Välj **Tilldelade administratörer Lägg** > **till.**
+3. Välj **Tilldelade administratörer Lägg**  >  **till.**
 4. Skriv användarens **visningsnamn** **eller användarnamn** och välj sedan användaren i listan med förslag.
 5. Lägg till flera användare tills du är klar.
 6. Välj **Spara** så läggs användaren till i listan över tilldelade administratörer.
 
 ### <a name="assign-a-user-to-an-admin-role-from-active-users"></a>Tilldela en användare till en administratörsroll från aktiva användare
 
+::: moniker range="o365-worldwide"
+
 1. I administrationscentret går du till **sidan** > [Användare aktiva](https://go.microsoft.com/fwlink/p/?linkid=834822) användare.
-
-2. På sidan **Aktiva användare** väljer du den användare vars administratörsroll du vill ändra. Välj Hantera roller under Roller i **den utfäll** **du fönsterrutan.**
-
-3. Välj den administratörsroll som du vill tilldela användaren. Om du inte ser den roll du letar efter väljer du **Visa alla** längst ned i listan.
 
 ::: moniker-end
 
@@ -80,33 +76,23 @@ Du kan tilldela användare till en roll på 2 olika sätt:
 
 1. I administrationscentret går du till sidan **Användare** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
 
-2. På sidan **Aktiva användare** väljer du den användare vars administratörsroll du vill ändra. Välj Redigera bredvid Roller i det **utfällade** **fönstret.** 
-
-    Om du inte ser alternativet Redigera **har** du inte behörighet att redigera och kan inte tilldela administratörsroller till andra personer. Be en global administratör i företaget att tilldela roller åt dig. I ett litet företag är företagsägaren (den person som köpte prenumerationen) en global administratör. I ett stort företag är viktiga personer i IT-avdelningen globala administratörer.
-
-3. Välj **Anpassad administratör** för att se en lista över roller som är anpassad för dig. En beskrivning av varje roll finns i [Om administratörsroller.](about-admin-roles.md)
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
 1. I administrationscentret går du till sidan **Användare** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
 
-2. På sidan **Aktiva användare** väljer du den användare vars administratörsroll du vill ändra. Välj Redigera bredvid Roller i det **utfällade** **fönstret.**
-
-    Om du inte ser alternativet Redigera **har** du inte behörighet att redigera och kan inte tilldela administratörsroller till andra personer. Be en global administratör i företaget att tilldela roller åt dig. I ett litet företag är företagsägaren (den person som köpte prenumerationen) en global administratör. I ett stort företag är viktiga personer i IT-avdelningen globala administratörer.
-
-3. Välj **Anpassad administratör** för att se en lista över roller som är anpassad för dig. En beskrivning av varje roll finns i [Om administratörsroller.](about-admin-roles.md)
-
 ::: moniker-end
+
+2. På sidan **Aktiva användare** väljer du den användare vars administratörsroll du vill ändra. Välj Hantera roller under Roller i **den utfäll** **du fönsterrutan.**
+
+3. Välj den administratörsroll som du vill tilldela användaren. Om du inte ser den roll du letar efter väljer du **Visa alla** längst ned i listan.
 
 ## <a name="assign-admin-roles-to-multiple-users"></a>Tilldela administratörsroller till flera användare
 
 Om du känner till PowerShell kan du [gå till Tilldela roller till användarkonton med PowerShell.](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) Det är ett bra sätt att tilldela roller till hundratals användare.
   
 Använd följande instruktioner för att tilldela roller till mer än tio användare åt gången.
-
-::: moniker range="o365-worldwide"
 
 ## <a name="check-admin-roles-in-your-organization"></a>Kontrollera administratörsroller i organisationen
 
@@ -116,8 +102,6 @@ Du kan kontrollera administratörsrollbehörigheter på 2 olika sätt:
 
 - Du kan gå till användarens information och titta under **Roller** på **kontosidan.**
 - Du kan också gå **till Roller** och välja administratörsroll och välja tilldelade administratörer för att se vilka användare som har tilldelats.
-
-::: moniker-end
 
 ## <a name="related-content"></a>Relaterat innehåll
 

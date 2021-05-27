@@ -13,12 +13,12 @@ localization_priority: Normal
 description: Följ sökvägen till ett inkommande meddelande via filtreringsstacken för hot i Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01ad901f7f746d9b5d2c50632c1344701120c20f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e892ebe04887527cf57e4ea44f67c4aaa775b228
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538693"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683301"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Steg-för-steg skydd mot hot i Microsoft Defender för Office 365
 
@@ -111,13 +111,13 @@ Det sista steget äger rum efter e-post- eller filleverans, och då gäller e-po
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Fas 4 av filtreringen i Defender Office 365 skydd efter leverans.":::
 
-1. **Valv är** MDO:s tidsskydd vid klickning. Alla URL:er i varje meddelande radbruts för att peka på Microsoft Valv Links-servrar. När man klickar på en URL kontrolleras den mot det senaste ryktet, innan användaren omdirigeras till målwebbplatsen. URL-adressen är asynkront begränsat för att uppdatera dess rykte.
+1. **Valv Links** är Defender Office 365 det tidsklickande skyddet. Alla URL:er i varje meddelande radbruts för att peka på Microsoft Valv Links-servrar. När man klickar på en URL kontrolleras den mot det senaste ryktet, innan användaren omdirigeras till målwebbplatsen. URL-adressen är asynkront begränsat för att uppdatera dess rykte.
 
-2. **Phish Zero-Hour – ZAP (Auto-purge)** identifierar och neutralerar retroaktivt skadliga nätfiskemeddelanden som redan har Exchange Online postlådor.
+2. **ZAP (Zero-Hour Auto-purge)** för nätfiske retroaktivt identifierar och neutralerar skadliga nätfiskemeddelanden som redan har Exchange Online postlådor.
 
-3. **Malware ZAP** upptäcker och neutralerar retroaktivt skadliga meddelanden som redan har levererats till Exchange Online postlådor.
+3. **ZAP för skadlig programvara** identifierar och neutralerar retroaktivt skadliga meddelanden som redan har levererats till Exchange Online postlådor.
 
-4. **ZAP för** skräppost identifierar och neutralerar retroaktivt skadliga skräppostmeddelanden som redan har Exchange Online postlådor.
+4. **ZAP för nätfiske** retroaktivt identifierar och neutraliserar skadliga skräppostmeddelanden som redan har levererats till Exchange Online postlådor.
 
 5. **Kampanjvyer** gör det möjligt för administratörer att se en helhetsbild av en attack, snabbare och mer fullständigt, än vad ett team skulle kunna utan automation. Microsoft utnyttjar de stora mängder information om skydd mot nätfiske, skydd mot skräppost och skadlig programvara i hela tjänsten för att identifiera kampanjer och gör sedan det möjligt för administratörer att undersöka dem från början till slut, inklusive mål, effekter och flöden, som också finns tillgängliga i en nedladdningsbar kampanj.
 
@@ -128,7 +128,6 @@ Det sista steget äger rum efter e-post- eller filleverans, och då gäller e-po
 8. **Skydd för OneDrive, SharePoint** och Teams har samma skydd för bifogade filer i Valv mot skadliga filer, inbyggt i OneDrive, SharePoint och Microsoft Teams.
 
 9. När en URL-adress som pekar på en fil markeras efter leverans visar **detonationen** för länkat innehåll en varningssida tills begränsat läge för filen är klar och URL:en identifieras som säker.
-
 
 ## <a name="the-filtering-stack-diagram"></a>Filtreringsstackdiagrammet
 

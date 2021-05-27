@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'För administratörer: Lär dig hur du använder nätverksuppladdning för att massimportera flera PST-filer till användarpostlådor i Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6ff645589337260cd8e29d1e1d066abdf60c1f1a
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: ebbc9b080bf42ef309741dc8bfa4283df9776902
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280927"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684007"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Använda nätverksuppladdning för att importera organisationens PST-filer till Microsoft 365
 
@@ -51,7 +51,7 @@ Du behöver bara utföra steg 1 en gång för att importera PST-filer till Micro
   
 - Du måste vara tilldelad rollen Import/export av postlåda i Exchange Online för att kunna importera PST-filer till Microsoft 365-postlådor. Som standard är den här rollen inte tilldelad någon rollgrupp i Exchange Online. Du kan lägga till rollen Import/export av postlåda i rollgruppen Organisationshantering. Eller så kan du skapa en rollgrupp, tilldela rollen Import/export av postlåda och sedan lägga till dig själv som medlem. Mer information finns i avsnitten ”Lägg till en roll i rollgrupp” och ”Skapa en rollgrupp” i [Hantera rollgrupper](/Exchange/permissions-exo/role-groups).
 
-    Om du ska skapa importjobb i Säkerhets- och efterlevnadscenter måste dessutom något av följande stämma:
+    Om du ska skapa importjobb i Microsoft 365 Efterlevnadscenter måste dessutom något av följande stämma:
 
   - Du har tilldelats rollen E-postmottagare i Exchange Online. Som standard är den här rollen tilldelad rollgrupperna Organisationshantering och Hantering av mottagare.
 
@@ -70,7 +70,7 @@ Du behöver bara utföra steg 1 en gång för att importera PST-filer till Micro
 
 - I den här proceduren ingår att kopiera och spara en kopia av en URL som innehåller en åtkomstnyckel. Den här informationen används i steg 2 för att ladda upp PST-filerna och i steg 3 om du vill visa en lista över de PST-filer som laddats upp till Office 365. Se till att vidta försiktighetsåtgärder för att skydda denna URL på samma sätt som du skyddar lösenord eller annan säkerhetsrelaterad information. Du kan till exempel spara den i ett lösenordsskyddat Microsoft Word-dokument eller på en krypterad USB-enhet. I avsnittet [Mer information](#more-information) finns ett exempel på den här kombinerade URL:en och nyckeln.
 
-- Du kan importera PST-filer till en inaktiv postlåda i Office 365. Det gör du genom att ange GUID för den inaktiva postlådan i parametern  `Mailbox` i mappningsfilen för PST-import. Mer information finns i steg 4 på fliken **Instruktioner** i den här artikeln. 
+- Du kan importera PST-filer till en inaktiv postlåda i Office 365. Det gör du genom att ange GUID för den inaktiva postlådan i parametern  `Mailbox` i mappningsfilen för PST-import. Mer information finns i steg 4 på fliken **Instruktioner** i den här artikeln.
 
 - I en Exchange-hybriddistribution kan du importera PST-filer till en molnbaserad arkivpostlåda för en användare vars primära postlåda är lokal. Det gör du genom att göra följande i mappningsfilen för PST-import:
 
@@ -96,14 +96,14 @@ Det första steget är att ladda ned och installera AzCopy-verktyget, som är de
 > [!IMPORTANT]
 > För att importera PST-filer med nätverksuppladdningsmetoden och kommandosyntaxen som beskrivs i den här artikeln måste du använda den version av AzCopy som kan laddas ned i steg 6b i följande procedur. Du kan också ladda ned samma version av AzCopy [här](https://aka.ms/downloadazcopy). Det går inte att använda en annan version av AzCopy.
   
-1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med autentiseringsuppgifterna för ett administratörskonto i organisationen.
+1. Gå till <https://compliance.microsoft.com> och logga in med autentiseringsuppgifterna för ett administratörskonto i organisationen.
 
-2. I den vänstra rutan i Säkerhets- och efterlevnadscenter klickar du på alternativen för **Informationsstyrning** \> **Importera** \> **Importera PST-filer**.
+2. Klicka på **Informationsstyrning** \>**Importera** i vänster fönsterruta i Microsoft 365 Efterlevnadscenter.
 
     > [!NOTE]
-    > Du måste ha tilldelats rätt behörigheter för att komma **importsidan** i Säkerhets- och efterlevnadscenter. Mer information finns i avsnittet **Innan du börjar**. 
+    > Du måste ha tilldelats rätt behörigheter för att komma åt sidan **Importera** i Microsoft 365 Efterlevnadscenter. Mer information finns i avsnittet **Innan du börjar**. 
 
-3. På sidan för att **importera PST-filer** klickar du på ![Ikonen Lägg till](../media/ITPro-EAC-AddIcon.gif) **Nytt importjobb**.
+3. På fliken **Importera** klickar du på ikonen ![Lägg till](../media/ITPro-EAC-AddIcon.gif) **Nytt importjobb**.
 
     Guiden för importjobb visas.
 
@@ -167,7 +167,7 @@ När du har kört kommandot visas statusmeddelanden som visar förloppet för up
 
 ## <a name="optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365"></a>(Valfritt) Steg 3: Visa en lista över de PST-filer som har laddats upp till Office 365
 
-Som ett valfritt steg kan du installera och använda Microsoft Azure Storage Explorer (som är ett kostnadsfritt verktyg med öppen källkod) för att visa listan över PST-filer som du har laddat upp till Azure-blobben. Det finns två bra anledningar till att göra detta:
+Som ett valfritt steg kan du installera och använda Microsoft Azure Storage Explorer (som är ett kostnadsfritt verktyg med öppen källkod) för att visa listan över PST-filer som du har laddat upp till Azure-blobben. Det finns två goda anledningar att göra detta:
   
 - Kontrollera att PST-filer från den delade mappen eller filservern i organisationen har laddats upp till Azure-blobben.
 
@@ -198,7 +198,7 @@ Så här installerar du Azure Storage Explorer och ansluter till ditt Azure Stor
   
 ## <a name="step-4-create-the-pst-import-mapping-file"></a>Steg 4: Skapa mappningsfilen för PST-import
 
-När PST-filerna har laddats upp till Azure Storage-platsen för din organisation är nästa steg att skapa en fil med kommateckenavgränsade fält (CSV-fil) som anger vilka användarpostlådor PST-filerna ska importeras till. Du skickar in den här CSV-filen i nästa steg när du skapar ett PST-importjobb.
+När PST-filerna har laddats upp till Azure Storage-platsen för din organisation är nästa steg att skapa en fil med kommateckenavgränsade fält (CSV-fil) som anger vilka användarpostlådor PST-filerna ska importeras till.Du kommer skicka den här CSV-filen i nästa steg där du skapar ett PST-importärende.
   
 1. [Ladda ned en kopia av mappningsfilen för PST-import](https://go.microsoft.com/fwlink/p/?LinkId=544717).
 
@@ -242,20 +242,18 @@ När PST-filerna har laddats upp till Azure Storage-platsen för din organisatio
 
 Nästa steg är att skapa PST-importjobbet i importtjänsten i Microsoft 365. Som tidigare beskrivits skickar du in mappningsfilen för PST-import som du skapade i steg 4. När du har skapat jobbet analyserar Microsoft 365 data i PST-filerna. Du får sedan möjlighet att filtrera de data som faktiskt importeras till postlådorna som anges i mappningsfilen för PST-import (se [steg 6](#step-6-filter-data-and-start-the-pst-import-job)).
   
-1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med autentiseringsuppgifterna för ett administratörskonto i organisationen. 
+1. Gå till <https://compliance.microsoft.com> och logga in med autentiseringsuppgifterna för ett administratörskonto i organisationen.
 
-2. I den vänstra rutan i Säkerhets- och efterlevnadscenter klickar du på alternativen för **Informationsstyrning > Importera > Importera PST-filer**.
+2. Klicka på **Informationsstyrning > Importera** i vänster fönsterruta i Microsoft 365 Efterlevnadscenter.
 
-3. På sidan för att **importera PST-filer** klickar du på ![Ikonen Lägg till](../media/ITPro-EAC-AddIcon.gif) **Nytt importjobb**.
+3. På fliken **Importera** klickar du på ikonen ![Lägg till](../media/ITPro-EAC-AddIcon.gif) **Nytt importjobb**.
 
    > [!NOTE]
-   > Du måste ha tilldelats rätt behörigheter för att komma **importsidan** i Säkerhets- och efterlevnadscenter och skapa ett importjobb. Mer information finns i avsnittet **Innan du börjar**. 
+   > Du måste ha tilldelats rätt behörigheter för att komma **importsidan** i Microsoft 365 Efterlevnadscenter och skapa ett importjobb. Mer information finns i avsnittet **Innan du börjar**. 
 
 4. Skriv ett namn för PST-importjobbet och klicka sedan på **Nästa**. Använd gemener, siffror, bindestreck och understreck. Du kan inte använda versaler eller blanksteg i namnet.
 
 5. På sidan **Vill du ladda upp eller skicka dina data?** klickar du på **Ladda upp data** och sedan på **Nästa**.
-
-    ![Klicka på Ladda upp data, så skapas ett importjobb för nätverksuppladdning](../media/e59f9dc3-ccde-44ff-ac38-c4e39d76ae85.png)
   
 6. I steg 4 på sidan **Importera data** klickar du på kryssrutorna **Jag har laddat upp filerna** och **Jag har tillgång till mappningsfilen**. Klicka sedan på **Nästa**.
 
@@ -265,7 +263,7 @@ Nästa steg är att skapa PST-importjobbet i importtjänsten i Microsoft 365. So
 
     ![Klicka på Välj mappningsfil när du vill skicka CSV-filen som du har skapat för importjobbet](../media/d30b1d73-80bb-491e-a642-a21673d06889.png)
   
-8. När namnet på CSV-filen visas under **Namn på mappningsfil** klickar du på **Validera** och kontrollerar om det finns några fel i CSV-filen. 
+8. När namnet på CSV-filen visas under **Namn på mappningsfil** klickar du på **Validera** och kontrollerar om det finns några fel i CSV-filen.
 
     ![Klicka på Validera och sök efter fel i CSV-filen](../media/4680999d-5538-4059-b878-2736a5445037.png)
   
@@ -288,19 +286,13 @@ Nästa steg är att skapa PST-importjobbet i importtjänsten i Microsoft 365. So
 
 När du har skapat importjobbet i steg 5 analyserar Microsoft 365 data i PST-filerna (på ett säkert sätt) genom att identifiera åldern på objekten och de olika meddelandetyperna som ingår i PST-filerna. När analysen är klar och data är redo att importeras kan du importera alla data som finns i PST-filerna, eller så kan du trimma data som importeras genom att ställa in ett filter som bestämmer vilka data som ska importeras.
   
-1. På sidan för att **importera PST-filer** i Säkerhets- och efterlevnadscenter klickar du på **Redo att importera till Office 365** för importjobbet du skapade i steg 5.
-
-    ![Klicka på Redo att importera till Microsoft 365 bredvid det importjobb du har skapat](../media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
+1. På fliken **Importera** i Efterlevnadscenter för Microsoft 365 markerar du de importjobb som du skapade i steg 5 och klickar sedan på **Importera till Office 365**.
   
-    En utfällbar sida visas med information om PST-filerna och annan information om importjobbet.
-
-2. Klicka på **Importera till Office 365** på den utfällbara sidan.
-
-    Sidan **Filtrera data** visas. Den innehåller datainsikter från analysen som har utförts på PST-filerna av Office 365, bland annat information om åldern på data. I det här läget kan du filtrera de data som ska importeras eller importera alla data som de är. 
+   Sidan **Filtrera data** visas. Den innehåller datainsikter från analysen som har utförts på PST-filerna av Office 365, bland annat information om åldern på data. I det här läget kan du filtrera de data som ska importeras eller importera alla data som de är. 
 
     ![Du kan trimma data i PST-filerna eller importera allt](../media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
   
-3. Gör något av följande:
+2. Gör något av följande:
 
    1. Om du vill trimma de data du importerar klickar du på **Ja, jag vill filtrera innan jag importerar**.
 
@@ -310,9 +302,9 @@ När du har skapat importjobbet i steg 5 analyserar Microsoft 365 data i PST-fil
 
    2. Om du vill importera alla data i PST-filerna klickar du på **Nej, jag vill importera allt** och klickar sedan på **Nästa**.
 
-4. Om du väljer att importera alla data klickar du på **Importera data**, så startas importjobbet. 
+3. Om du väljer att importera alla data klickar du på **Importera data**, så startas importjobbet. 
 
-   Status för importjobbet visas på sidan för att **importera PST-filer**. Klicka på ![Uppdateringsikon](../media/O365-MDM-Policy-RefreshIcon.gif) **Uppdatera** om du vill uppdatera statusinformationen som visas i kolumnen **Status**. Klicka på importjobbet om du vill visa den utfällbara statussidan med statusinformation om varje PST-fil som importeras. 
+   Status för importjobbet visas på sidan för att **importera PST-filer**. Klicka på ![Uppdateringsikon](../media/O365-MDM-Policy-RefreshIcon.gif) **Uppdatera** om du vill uppdatera statusinformationen som visas i kolumnen **Status**. Klicka på importjobbet om du vill visa den utfällbara statussidan med statusinformation om varje PST-fil som importeras.
 
 ## <a name="more-information"></a>Mer information
 
@@ -322,7 +314,7 @@ När du har skapat importjobbet i steg 5 analyserar Microsoft 365 data i PST-fil
 
   - Användarna kan komma åt dessa data från alla enheter eftersom de lagras i molnet.
 
-  - Det hjälper dig att uppfylla efterlevnadsbehoven i din organisation genom att låta dig använda efterlevnadsfunktioner i Microsoft 365 för data från PST-filerna du har importerat. Detta omfattar följande:
+  - Det hjälper dig att uppfylla efterlevnadsbehoven i din organisation genom att låta dig använda efterlevnadsfunktioner i Microsoft 365 för data från de PST-filerna som du har importerat. Detta inkluderar:
 
   - Aktivering av [arkivpostlådor](enable-archive-mailboxes.md) och [automatiskt expanderande arkivering](enable-unlimited-archiving.md) så att användarna får ytterligare lagringsutrymme för postlådan för att lagra de data du har importerat.
 
@@ -372,7 +364,7 @@ Här är en bild och beskrivning av nätverksuppladdningsprocessen för att impo
   
 ![Arbetsflödet för nätverksuppladdningsprocessen för att importera PST-filer till Office 365](../media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
   
-1. **Ladda ned PST-importverktyget och nyckeln till en privat Azure Storage-plats:** Det första steget är att ladda ned kommandoradsverktyget AzCopy och en åtkomstnyckel som används för att ladda upp PST-filerna till en Azure Storage-plats i Microsoft-molnet. Du hittar dem på **importsidan** i Säkerhets- och efterlevnadscenter. Nyckeln, som kallas för en SAS-nyckel (signatur för säker åtkomst), ger dig nödvändiga behörigheter för att ladda upp PST-filer till en privat och säker Azure Storage-plats. Den här åtkomstnyckeln är unik för din organisation och hjälper till att förhindra obehörig åtkomst till dina PST-filer när de har laddats upp till Microsoft-molnet. Organisationen behöver inte ha en separat Azure-prenumeration för att importera PST-filer. 
+1. **Ladda ned PST-importverktyget och nyckeln till en privat Azure Storage-plats:** Det första steget är att ladda ned kommandoradsverktyget AzCopy och en åtkomstnyckel som används för att ladda upp PST-filerna till en Azure Storage-plats i Microsoft-molnet. Du hittar dem på sidan **import** i Microsoft 365 Efterlevnadscenter. Nyckeln, som kallas för en SAS-nyckel (signatur för säker åtkomst), ger dig nödvändiga behörigheter för att ladda upp PST-filer till en privat och säker Azure Storage-plats. Den här åtkomstnyckeln är unik för din organisation och hjälper till att förhindra obehörig åtkomst till dina PST-filer när de har laddats upp till Microsoft-molnet. Organisationen behöver inte ha en separat Azure-prenumeration för att importera PST-filer. 
 
 2. **Ladda upp PST-filerna till Azure Storage-platsen:** Nästa steg är att använda verktyget AzCopy.exe (laddas ned i steg 1) för att ladda upp och lagra PST-filerna på en Azure Storage-plats som finns i samma regionala Microsoft-datacenter som din organisation. För att kunna ladda upp de PST-filer som du vill importera måste de finnas i en filresurs eller på en filserver i din organisation.
 
@@ -380,8 +372,8 @@ Här är en bild och beskrivning av nätverksuppladdningsprocessen för att impo
 
 3. **Skapa en mappningsfil för PST-import:** När PST-filerna har laddats upp till Azure Storage-platsen är nästa steg att skapa en fil med kommateckenavgränsade fält (CSV-fil) som anger vilka användarpostlådor PST-filerna ska importeras till. Observera att en PST-fil kan importeras till en användares primära postlåda eller arkivpostlåda. Office 365-importtjänsten använder informationen i CSV-filen för att importera PST-filerna.
 
-4. **Skapa ett PST-importjobb:** Nästa steg är att skapa ett PST-importjobb på sidan för att **importera PST-filer** i Säkerhets- och efterlevnadscenter och skicka mappningsfilen för PST-import som skapades i föregående steg. När du har skapat importjobbet analyserar Microsoft 365 data i PST-filerna och du får sedan möjlighet att ställa in filter som styr vilka data som faktiskt ska importeras till postlådorna som anges i mappningsfilen för PST-import. 
+4. **Skapa ett PST-importjobb:** Nästa steg är att skapa ett PST-importjobb på sidan för att **importera PST-filer** i Microsoft 365 Efterlevnadscenter och skicka mappningsfilen för PST-import som skapades i föregående steg. När du har skapat importjobbet analyserar Microsoft 365 data i PST-filerna och du får sedan möjlighet att ställa in filter som styr vilka data som faktiskt ska importeras till postlådorna som anges i mappningsfilen för PST-import. 
 
 5. **Filtrera PST-data som ska importeras till postlådor:** När importjobbet har skapts och startats analyserar Microsoft 365 data i PST-filerna (på ett säkert sätt) genom att identifiera åldern på objekten och de olika meddelandetyperna som ingår i PST-filerna. När analysen är klar och data är redo att importeras kan du importera alla data som finns i PST-filerna, eller så kan du trimma data som importeras genom att ställa in ett filter som bestämmer vilka data som ska importeras.
 
-6. **Starta PST-importjobbet:** När importjobbet har startats använder Microsoft 365 informationen i mappningsfilen för PST-import för att importera PST-filerna från Azure Storage-platsen till användarnas postlådor. Statusinformation om importjobbet (inklusive information om varje PST-fil som importeras) visas på sidan för att **importera PST-filer** i Säkerhets- och efterlevnadscenter. När importjobbet är klart blir jobbets status **Slutfört**.
+6. **Starta PST-importjobbet:** När importjobbet har startats använder Microsoft 365 informationen i mappningsfilen för PST-import för att importera PST-filerna från Azure Storage-platsen till användarnas postlådor. Statusinformation om importjobbet (inklusive information om varje PST-fil som importeras) visas på sidan för att **importera PST-filer** i Microsoft 365 Efterlevnadscenter. När importjobbet är klart blir jobbets status **Slutfört**.

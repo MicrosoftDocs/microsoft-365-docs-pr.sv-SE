@@ -17,12 +17,12 @@ ms.collection:
 description: Administratörer kan lära sig mer om de olika sätten att rapportera bra och dåliga meddelanden och filer till Microsoft för analys.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d7534d5d88fe19fba39ac1ebef16c72cac25cae7
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 7b062c9529364e9fe26133fd1c039affcb8b7011
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625047"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689079"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Rapportera meddelanden och filer till Microsoft
 
@@ -43,9 +43,9 @@ I Microsoft 365 organisationer med postlådor i Exchange Online eller friståend
 |---|---|
 |[Använd administrationsinskick för att skicka misstänkt skräppost, nättr ut, URL:er och filer till Microsoft](admin-submission.md)|Den rekommenderade rapporteringsmetoden för administratörer i organisationer med Exchange Online (inte tillgängligt i fristående EOP).|
 |[Aktivera rapportmeddelandet eller tilläggen för nätfiske](enable-the-report-message-add-in.md)|Fungerar med Outlook och Outlook på webben (kallades tidigare för Outlook Web App). <p> Beroende på din prenumeration finns meddelanden som användare rapporterat med tilläggen tillgängliga i portalen för administrationsinskick, AIR-resultat [(Automated investigation and response),](air-view-investigation-results.md)rapporten över användarrapporter och [Threat Explorer.](threat-explorer-views.md#email--submissions) [](admin-submission.md) [](view-email-security-reports.md#user-reported-messages-report) <p> Du kan konfigurera rapporterade meddelanden så att de kopieras eller omdirigeras till en postlåda som du anger. Mer information finns i Principer [för användarinskick.](user-submission.md)
-|[Rapportera falska positiva resultat och falska negativa tal till Outlook](report-false-positives-and-false-negatives.md)|Skicka falska positiva resultat (bra e-postmeddelande som har blockerats eller skickats till skräppostmappen) och falska negativa meddelanden (oönskad e-post eller nätfingr som skickats till Inkorgen) till Exchange Online Protection (EOP) med hjälp av funktionen Rapportmeddelande.|
+|[Rapportera falska positiva och falska negativa i Outlook](report-false-positives-and-false-negatives.md)|Skicka falska positiva resultat (bra e-postmeddelande som har blockerats eller skickats till skräppostmappen) och falska negativa meddelanden (oönskad e-post eller nätfingr som skickats till Inkorgen) till Exchange Online Protection (EOP) med hjälp av funktionen Rapportmeddelande.|
 |[Skicka meddelanden till Microsoft manuellt för analys](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)|Skicka bifogade meddelanden manuellt till specifika Microsoft-e-postadresser för skräppost, inte skräppost och nätfiske.|
-|[Använd e-postflödesregler för att se vad användarna rapporterar till Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)|Lär dig hur du skapar en e-postflödesregel (kallas även transportregel) som meddelar dig när användare rapporterar meddelanden till Microsoft för analys.|
+|[Använd e-postflödesregler för att se vad användare rapporterar till Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)|Lär dig hur du skapar en e-postflödesregel (kallas även transportregel) som meddelar dig när användare rapporterar meddelanden till Microsoft för analys.|
 |[Skicka skadlig programvara och icke-skadlig programvara till Microsoft för analys](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Använd webbplatsen Microsoft Säkerhetsinsikter skicka bifogade filer och andra filer.|
 |
 

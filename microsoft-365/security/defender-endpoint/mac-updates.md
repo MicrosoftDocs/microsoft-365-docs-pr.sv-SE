@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 886195de38856306d69932446eae34212fe4bb0d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: e08781455888595d57bd8a9e6f792796ea1853cd
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934507"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684213"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Distribuera uppdateringar för Microsoft Defender för slutpunkt i macOS
 
@@ -48,7 +48,7 @@ Om du bestämmer dig för att distribuera uppdateringar med dina verktyg för pr
 
 ## <a name="use-msupdate"></a>Använda msupdate
 
-MAU innehåller ett kommandoradsverktyg, *msupdate,* som är utformat för IT-administratörer så att de får mer exakt kontroll över när uppdateringar tillämpas. Anvisningar för hur du använder verktyget finns i Uppdatera [Office för Mac med hjälp av msupdate.](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate)
+MAU innehåller ett kommandoradsverktyg, *msupdate,* som är utformat för IT-administratörer så att de får mer exakt kontroll över när uppdateringar tillämpas. Instruktioner för hur du använder verktyget finns i Uppdaterings- och [Office för Mac med hjälp av msupdate.](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate)
 
 I MAU är programidentifieraren för Microsoft Defender för Slutpunkt i macOS *WDAV00.* Ladda ned och installera de senaste uppdateringarna för Microsoft Defender för Slutpunkt i macOS genom att köra följande kommando från ett terminalfönster:
 
@@ -155,10 +155,17 @@ Ange falskt om du vill skicka minimalt med data om hjärtslag, ingen programanv�
 ## <a name="example-configuration-profile"></a>Exempel på konfigurationsprofil
 
 Följande konfigurationsprofil används för att:
-- Placera enheten i Beta-kanalen
+- Placera enheten i produktionskanalen
 - Ladda ned och installera uppdateringar automatiskt
 - Aktivera knappen Sök efter uppdateringar i användargränssnittet
 - Tillåt användare på enheten att registrera sig i Insider-kanalerna
+
+
+>[!WARNING]
+>Nedanstående konfiguration är en exempelkonfiguration och bör inte användas i produktionen utan en korrekt granskning av inställningar och skräddarsy konfigurationer.
+
+>[!TIP]
+>Om du vill förhandsgranska nya funktioner och ge tidig feedback rekommenderar vi att du konfigurerar vissa enheter i ditt företag `Beta` för eller `Preview` .
 
 ### <a name="jamf"></a>JAMF
 
@@ -168,7 +175,7 @@ Följande konfigurationsprofil används för att:
 <plist version="1.0">
 <dict>
     <key>ChannelName</key>
-    <string>Beta</string>
+    <string>Production</string>
     <key>HowToCheck</key>
     <string>AutomaticDownload</string>
     <key>EnableCheckForUpdatesButton</key>
@@ -228,7 +235,7 @@ Följande konfigurationsprofil används för att:
             <key>PayloadEnabled</key>
             <true/>
             <key>ChannelName</key>
-            <string>Beta</string>
+            <string>Production</string>
             <key>HowToCheck</key>
             <string>AutomaticDownload</string>
             <key>EnableCheckForUpdatesButton</key>

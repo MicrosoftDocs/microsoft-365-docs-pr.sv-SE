@@ -1,7 +1,7 @@
 ---
 title: Exportera utvärderingsmetoder och egenskaper per enhet
-description: Ger information om API:er som hämtar "Hantering av hot och säkerhetsrisker"-data. Det finns olika API-anrop för att få olika typer av data. I allmänhet innehåller varje API-anrop nödvändiga data för enheter i organisationen. Eftersom mängden data kan vara mycket stor finns det två sätt att hämta den
-keywords: api, apis, exportutvärdering, per enhetsutvärdering, sårbarhetsutvärderingsrapport, enhetsbristbedömning, enhetsproblemrapport, säker konfigurationsutvärdering, säker konfigurationsrapport, utvärdering av programvarubrister, programsäkerhetsproblemsrapport, sårbarhetsrapport efter maskin,
+description: Ger information om API:er som hämtar "Hantering av hot och säkerhetsrisker"-data. Det finns olika API-anrop för att få olika typer av data. I allmänhet innehåller varje API-anrop nödvändiga data för enheter i organisationen. Eftersom mängden data kan vara stor finns det två sätt att hämta den
+keywords: api, apis, exportutvärdering, per enhetsutvärdering, per maskinutvärdering, sårbarhetsutvärderingsrapport, enhet genom sårbarhetsanalys, enhetsproblemrapport, säker konfigurationsutvärdering, säker konfigurationsrapport, säkerhetsproblem för programvara, sårbarhetsrapport för programvara, sårbarhetsrapport efter maskin,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 851c792265375e5905c0c427bfc77a2366bc962d
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: e820875a3350761824c3e4e67311e55507a9cb6f
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653688"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689207"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Exportera utvärderingsmetoder och egenskaper per enhet
 
@@ -44,19 +44,25 @@ Tillhandahåller metod- och egenskapsinformation om API:er som hämtar Hantering
 >
 > Om inget annat anges exporteras alla utvärderingsmetoder som **_listas för fullständig export_** **_och_** efter enhet (kallas även **_per enhet)._**
 
-Det finns olika API-anrop för att få olika typer av data. Eftersom mängden data kan vara stor kan den hämtas på två sätt:
+Det finns tre API-metoder som du kan använda för att hämta (exportera) olika typer av information:
 
-- **OData**  API:t hämtar alla data i organisationen som Json-svar efter OData-protokollet. Den här metoden är bäst _för små organisationer med mindre än 100 000 enheter._ Svaret är paginerat, så du kan använda \@ odata.nextLink-fältet från svaret för att hämta nästa resultat.
+1. Exportera utvärdering av säkra konfigurationer
 
-- **via filer** Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Därför rekommenderas det för stora organisationer med fler än 100 000 enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure Storage. Med det här API:t kan du ladda ned alla dina data Azure Storage enligt följande:
+2. LExportera utvärdering av inventerad programvara
+
+3. Exportera utvärdering av säkerhetsrisker för programvara
+
+För varje metod finns det olika API-anrop för att få olika typer av data. Eftersom mängden data kan vara stor kan den hämtas på två sätt:
+
+- **OData**  API:t hämtar alla data i organisationen som Json-svar efter OData-protokollet. Den här metoden är bäst _för små organisationer med mindre än 100 K-enheter._ Svaret är paginerat, så du kan använda \@ odata.nextLink-fältet från svaret för att hämta nästa resultat.
+
+- **via filer** Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Därför rekommenderas det för stora organisationer med fler än 100 K-enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure Storage. Med det här API:t kan du ladda ned alla dina data Azure Storage enligt följande:
 
   - Anropa API:t för att få en lista med hämtningsadresser med alla dina organisationsdata.
 
   - Ladda ned alla filer med hjälp av URL:er för nedladdning och bearbeta dina data som du vill.
 
-Data som samlas in (för _antingen OData_ eller _via_ filer ) är den aktuella ögonblicksbilden av den aktuella statusen, och innehåller inte historiska data. För att kunna samla in historiska data måste kunderna spara data i sina egna datalagringar.
-
-Om inget annat anges exporteras alla utvärderingsmetoder som **_listas för fullständig export_** **_och_** efter enhet (kallas även **_per enhet)._**
+Data som samlas in (med hjälp av _antingen OData_ eller _via_ filer) är den aktuella ögonblicksbilden av den aktuella statusen, och innehåller inte historiska data. För att kunna samla in historiska data måste kunderna spara data i sina egna datalagringar.
 
 ## <a name="1-export-secure-configurations-assessment"></a>1. Exportera utvärdering av säkra konfigurationer
 
@@ -66,8 +72,8 @@ Returnerar alla konfigurationer och deras status per enhet.
 
 Metod | Datatyp | Beskrivning
 :---|:---|:---
-[Exportera utvärdering av säker konfiguration (OData)](get-assessmnt-secure-cfg.md#1-export-secure-configuration-assessment-odata) | Säker konfiguration efter enhetssamling. Mer information: [1.2 Egenskaper (OData)](#12-properties-odata) | Returnerar en tabell med en post för varje unik kombination av DeviceId, ConfigurationId. Data som samlas in (för _antingen OData_ eller _via_ filer ) är den aktuella ögonblicksbilden av den aktuella statusen, och innehåller inte historiska data. För att kunna samla in historiska data måste kunderna spara data i sina egna datalagringar.
-[Exportera utvärdering av säker konfiguration (via filer)](get-assessmnt-secure-cfg.md#2-export-secure-configuration-assessment-via-files) | säker konfiguration efter enhetsfiler. Mer information: [1.3 Egenskaper (via filer)](#13-properties-via-files) | Returnerar en tabell med en post för varje unik kombination av DeviceId, ConfigurationId. Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Därför rekommenderas det för stora organisationer med fler än 100 000 enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure Storage. Med detta API kan du ladda ned alla data från Azure Storage enligt följande: 1.  Anropa API:t för att få en lista med hämtningsadresser med alla dina organisationsdata. 2.  Ladda ned alla filer med hjälp av URL:er för nedladdning och bearbeta dina data som du vill.
+Exportera utvärdering av säker konfiguration **(OData)** | Säker konfiguration efter enhetssamling. Mer information: [1.2 Egenskaper (OData)](#12-properties-odata) | Returnerar en tabell med en post för varje unik kombination av DeviceId, ConfigurationId. API:t hämtar alla data i organisationen som Json-svar efter OData-protokollet. Den här metoden är bäst för små organisationer med mindre än 100 K-enheter. Svaret är paginerat, så du kan använda fältet @odata.nextLink från svaret för att hämta nästa resultat.
+Exportera utvärdering av säker konfiguration **(via filer)** | Säker konfiguration efter enhetssamling. Mer information: [1.2 Egenskaper (OData)](#12-properties-odata) | Returnerar en tabell med en post för varje unik kombination av DeviceId, ConfigurationId. Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Därför rekommenderas det för stora organisationer med fler än 100 K-enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure Storage. Med detta API kan du ladda ned alla data från Azure Storage enligt följande: 1.  Anropa API:t för att få en lista med hämtningsadresser med alla dina organisationsdata. 2.  Ladda ned alla filer med hjälp av URL:er för nedladdning och bearbeta dina data som du vill.
 
 ### <a name="12-properties-odata"></a>1.2 Egenskaper (OData)
 
@@ -103,8 +109,8 @@ Returnerar alla installerade program och deras information på varje enhet.
 
 Metod | Datatyp | Beskrivning
 :---|:---|:---
-[Exportera utvärdering av programvaruinventering (OData)](get-assessmnt-software-inventory.md#1-export-software-inventory-assessment-odata) | Inventering av programvara efter enhetssamling. Mer information: [2.2 Egenskaper (OData)](#22-properties-odata) | Returnerar en tabell med en post för varje unik kombination av DeviceId, SoftwareVendor, SoftwareName och SoftwareVersion. Data som samlas in (för _antingen OData_ eller _via_ filer ) är den aktuella ögonblicksbilden av den aktuella statusen, och innehåller inte historiska data. För att kunna samla in historiska data måste kunderna spara data i sina egna datalagringar.
-[Exportera utvärdering av programvaruinventering (via filer)](get-assessmnt-software-inventory.md#2-export-software-inventory-assessment-via-files) | Inventering av programvara efter enhetsfiler. Mer information: [2.3 Egenskaper (via filer)](#23-properties-via-files) | Returnerar en tabell med en post för varje unik kombination av DeviceId, SoftwareVendor, SoftwareName och SoftwareVersion. Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Därför rekommenderas det för stora organisationer med fler än 100 000 enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure Storage. Med detta API kan du ladda ned alla data från Azure Storage enligt följande: 1.  Anropa API:t för att få en lista med hämtningsadresser med alla dina organisationsdata. 2.  Ladda ned alla filer med hjälp av URL:er för nedladdning och bearbeta dina data som du vill.
+Exportera utvärdering av programvaruinventering **(OData)** | Inventering av programvara efter enhetssamling. Mer information: [2.2 Egenskaper (OData)](#22-properties-odata) | Returnerar en tabell med en post för varje unik kombination av DeviceId, SoftwareVendor, SoftwareName och SoftwareVersion. API:t hämtar alla data i organisationen som Json-svar efter OData-protokollet. Den här metoden är bäst för små organisationer med mindre än 100 K-enheter. Svaret är paginerat, så du kan använda fältet @odata.nextLink från svaret för att hämta nästa resultat.
+Exportera utvärdering av programvaruinventering **(via filer)** | Inventering av programvara efter enhetsfiler. Mer information: [2.3 Egenskaper (via filer)](#23-properties-via-files) | Returnerar en tabell med en post för varje unik kombination av DeviceId, SoftwareVendor, SoftwareName och SoftwareVersion. Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Därför rekommenderas det för stora organisationer med fler än 100 K-enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure Storage. Med detta API kan du ladda ned alla data från Azure Storage enligt följande: 1.  Anropa API:t för att få en lista med hämtningsadresser med alla dina organisationsdata. 2.  Ladda ned alla filer med hjälp av URL:er för nedladdning och bearbeta dina data som du vill.
 
 ### <a name="22-properties-odata"></a>2.2 Egenskaper (OData)
 
@@ -132,7 +138,7 @@ Egenskap (ID) | Datatyp | Beskrivning
 Exportera filer | \[matrissträng\] | En lista med hämtnings-URL:er för filer som innehåller den aktuella ögonblicksbilden av organisationen.
 GeneratedTime | sträng | Tidpunkten då exporten skapades.
 
-## <a name="3-export-software-vulnerabilities-assessment-per-device"></a>3. Exportera bedömningar av säkerhetsproblem för programvara per enhet
+## <a name="3-export-software-vulnerabilities-assessment"></a>3. Utvärdering av eventuella säkerhetsproblem med programvara
 
 Returnerar alla kända säkerhetsproblem på en enhet och deras information för alla enheter.
 
@@ -140,8 +146,8 @@ Returnerar alla kända säkerhetsproblem på en enhet och deras information för
 
 Metod | Datatyp | Beskrivning
 :---|:---|:---
-[Utvärdering av säkerhetsproblem i programvara (OData)](get-assessmnt-software-vulnerabilities.md#1-export-software-vulnerabilities-assessment-odata) | Samling för undersökning Se: [3.2-egenskaper (OData)](#32-properties-odata) | Returnerar en tabell med en post för varje unik kombination av DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. Data som samlas in (för _antingen OData_ eller _via_ filer ) är den aktuella ögonblicksbilden av den aktuella statusen, och innehåller inte historiska data. För att kunna samla in historiska data måste kunderna spara data i sina egna datalagringar.
-[Utvärdering av export av säkerhetsproblem för programvara (via filer)](get-assessmnt-software-vulnerabilities.md#2-export-software-vulnerabilities-assessment-via-files) | Undersökningsentitet Se: [3.3 Egenskaper (via filer)](#33-properties-via-files) | Returnerar en tabell med en post för varje unik kombination av DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Därför rekommenderas det för stora organisationer med fler än 100 000 enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure Storage. Med detta API kan du ladda ned alla data från Azure Storage enligt följande: 1.  Anropa API:t för att få en lista med hämtningsadresser med alla dina organisationsdata. 2.  Ladda ned alla filer med hjälp av URL:er för nedladdning och bearbeta dina data som du vill.
+Utvärdering av säkerhetsproblem i programvara **(OData)** | Samling för undersökning Se: [3.2-egenskaper (OData)](#32-properties-odata) | Returnerar en tabell med en post för varje unik kombination av DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. API:t hämtar alla data i organisationen som Json-svar efter OData-protokollet. Den här metoden är bäst för små organisationer med mindre än 100 K-enheter. Svaret är paginerat, så du kan använda fältet @odata.nextLink från svaret för att hämta nästa resultat.
+Utvärdering av export av säkerhetsproblem **för programvara (via filer)** | Undersökningsentitet Se: [3.3 Egenskaper (via filer)](#33-properties-via-files) | Returnerar en tabell med en post för varje unik kombination av DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Därför rekommenderas det för stora organisationer med fler än 100 K-enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure Storage. Med detta API kan du ladda ned alla data från Azure Storage enligt följande: 1.  Anropa API:t för att få en lista med hämtningsadresser med alla dina organisationsdata. 2.  Ladda ned alla filer med hjälp av URL:er för nedladdning och bearbeta dina data som du vill.
 
 ### <a name="32-properties-odata"></a>3.2 Egenskaper (OData)
 

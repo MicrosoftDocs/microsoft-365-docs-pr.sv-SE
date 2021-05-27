@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
-description: Lär dig hur du använder filter för att skapa, redigera eller ta bort anpassad användarvy i Microsoft 365.
-ms.openlocfilehash: 4bd4ea351612c2ae5175cd27fa7a689d671a8b62
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+description: Lär dig hur du använder filter för att skapa, redigera eller ta bort en anpassad användarvy i Microsoft 365.
+ms.openlocfilehash: b4177a561d13d76f6d5a0a1077fe8037d469ee48
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759936"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683229"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>Skapa, redigera eller ta bort en anpassad användarvy
 
@@ -41,7 +41,7 @@ När du skapar, redigerar eller tar bort en anpassad användarvy visas ändringa
 Några saker att tänka på om standardvyer: 
 
 - I vissa standardvyer visas en osorterad lista om det finns fler än 2 000 användare i listan. Använd sökrutan för att hitta specifika användare i listan. 
-- Om du inte köpte Microsoft 365 från Microsoft visas inte **faktureringsadministratörer** i standardvylistan. Mer information finns i [Tilldela administratörsroller.](assign-admin-roles.md) 
+- Om du inte har köpt Microsoft 365 från Microsoft visas inte **faktureringsadministratörer** i standardvylistan. Mer information finns i [Tilldela administratörsroller.](assign-admin-roles.md) 
   
 ## <a name="choose-the-filters-for-your-custom-user-view"></a>Välja filter för den anpassade användarvyn
 
@@ -64,12 +64,12 @@ Du kan också filtrera efter ytterligare användarprofilinformation som används
     
 - **Användare med fel** Markera den här rutan om du vill visa användare som kan ha etableringsfel. 
     
-- **Olicensierade användare** Markera den här rutan om du vill hitta alla användare som inte har tilldelats en licens. Resultatet för den här vyn kan också omfatta användare som har en Exchange-postlåda men inte har en licens. Om du vill spåra de användarna specifikt använder du **filtret Ej licensierade användare med Exchange-postlådor eller Exchange-arkiv.** Resultatet för den här vyn kan också omfatta användare som har ett Exchange-arkiv, men inte har en licens.
+- **Olicensierade användare** Markera den här rutan om du vill hitta alla användare som inte har tilldelats en licens. Resultatet för den här vyn kan också omfatta användare som har Exchange postlåda men inte har en licens. Om du vill spåra de användarna specifikt använder du **filtret Ej licensierade användare Exchange postlådor eller arkiv**. Resultatet för den här vyn kan också omfatta användare som har Exchange arkiv, men inte har en licens.
     
-- **Olicensierade användare med Exchange-postlådor eller Exchange-arkiv** Markera den här rutan om du vill visa användarkonton som skapats i Exchange Online och har en Exchange-postlåda, men som inte har tilldelats någon Microsoft 365-licens. Resultaten av det här filtret omfattar användare som har eller har tilldelats ett Exchange-arkiv. 
+- **Olicensierade användare med Exchange postlådor eller arkiv** Markera den här rutan om du vill visa användarkonton som skapats i Exchange Online och har en Exchange postlåda, men som inte har tilldelats någon Microsoft 365 licens. Resultaten av det här filtret omfattar användare som har eller har tilldelats ett Exchange arkiv. 
 
 > [!NOTE]
-> Filtret **Olicensierade användare med Exchange-postlådor** fungerar när:
+> Filtret **Ej licensierade användare Exchange postlådor** fungerar när:
 1. Postlådan har nyligen konverterats från **delad** **till användare** och den har ingen licens.
 2. Postlådan har nyligen migrerats till Microsoft 365 men ingen licens har tilldelats.
 3. Postlådan har skapats med PowerShell och ingen licens har tilldelats.
@@ -83,40 +83,44 @@ Du kan också filtrera efter ytterligare användarprofilinformation som används
 ::: moniker range="o365-worldwide"
 
 1. Gå till Användare aktiva användare **i** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">administrationscentret.</a>
-    
-2. På sidan **Aktiva användare** väljer du **Filter** och sedan **Nytt filter**.
   
-3. På sidan **Anpassat filter** anger du namnet på filtret, väljer villkoren för ditt anpassade filter och väljer sedan Lägg **till**. Den anpassade vyn ingår nu i listrutan med filter.
-    
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Gå till Användare aktiva användare **i** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">administrationscentret.</a>  
-
-2. På sidan **Aktiva användare** väljer du Vyer **och** sedan Lägg till **anpassad vy.**
-  
-3. På sidan **Anpassad vy** anger du namnet på filtret, väljer villkoren för ditt anpassade filter och väljer sedan Lägg **till**. Den anpassade vyn ingår nu i listrutan med filter.
+1. Gå till Användare aktiva användare **i** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">administrationscentret.</a> 
 
 ::: moniker-end
-
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till Användare aktiva användare **i** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">administrationscentret.</a> 
-
-2. På sidan **Aktiva användare** väljer du Vyer **och** sedan Lägg till **anpassad vy.**
-  
-3. På sidan **Anpassad vy** anger du namnet på filtret, väljer villkoren för ditt anpassade filter och väljer sedan Lägg **till**. Den anpassade vyn ingår nu i listrutan med filter.
+1. Gå till Användare aktiva användare **i** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">administrationscentret.</a>  
 
 ::: moniker-end
     
+2. På sidan **Aktiva användare** väljer du **Filter** och sedan **Nytt filter**.
+  
+3. På sidan **Anpassat filter** anger du namnet på filtret, väljer villkoren för ditt anpassade filter och väljer sedan Lägg **till**. Den anpassade vyn ingår nu i listrutan med filter.
 
 ## <a name="edit-or-delete-a-custom-user-view"></a>Redigera eller ta bort en anpassad användarvy
 
 ::: moniker range="o365-worldwide"
 
 1. Gå till Användare aktiva användare **i** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">administrationscentret.</a>
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Gå till Användare aktiva användare **i** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">administrationscentret.</a> 
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Gå till Användare aktiva användare **i** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">administrationscentret.</a> 
+
+::: moniker-end 
     
 2. På sidan **Aktiva** användare väljer du **Filter**, väljer filtret du vill ändra och väljer sedan **Redigera filter**. 
     
@@ -124,34 +128,12 @@ Du kan också filtrera efter ytterligare användarprofilinformation som används
     > Du kan bara redigera anpassade vyer. 
   
 3. På sidan **Anpassat filter** redigerar du informationen efter behov och väljer sedan **Spara**. Eller välj Ta bort längst ned på sidan om du vill ta **bort filtret.** 
-    
-::: moniker-end
 
-::: moniker range="o365-germany"
+## <a name="related-content"></a>Relaterat innehåll
 
-1. Gå till Användare aktiva användare **i** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">administrationscentret.</a>  
-
-2. På sidan **Aktiva användare** väljer du **Vyer**, väljer filtret du vill ändra och väljer sedan Redigera den **här vyn.** 
-    
-    > [!TIP]
-    > Du kan bara redigera anpassade vyer. 
-  
-3. Redigera **informationen efter behov** på sidan Anpassad vy och välj sedan **Spara**. Om du vill ta bort filtret väljer du Ta bort anpassad vy längst **ned på sidan.** 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Gå till Användare aktiva användare **i** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">administrationscentret.</a> 
-
-2. På sidan **Aktiva användare** väljer du **Vyer**, väljer filtret du vill ändra och väljer sedan Redigera den **här vyn.** 
-    
-    > [!TIP]
-    > Du kan bara redigera anpassade vyer. 
-  
-3. Redigera **informationen efter behov** på sidan Anpassad vy och välj sedan **Spara**. Om du vill ta bort filtret väljer du Ta bort anpassad vy längst **ned på sidan.** 
-
-::: moniker-end
+[Översikt över Microsoft 365 administrationscenter](../../business-video/admin-center-overview.md) (video)\
+[Om administratörsroller](../add-users/about-admin-roles.md) (video)\
+[Anpassa Microsoft 365 för din organisation](../setup/customize-your-organization-theme.md) (artikel)
 
 
      

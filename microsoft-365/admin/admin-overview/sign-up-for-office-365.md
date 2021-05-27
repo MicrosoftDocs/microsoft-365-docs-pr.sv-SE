@@ -25,30 +25,20 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Förstå vad du behöver veta innan du går igenom registreringsprocessen för Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 12262a2165392b9dca699605f0b86fd7f3129ef0
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 393c1304ba4e699c6bf7d09bf51f6c81bb7389d9
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332696"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683109"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Så här registrerar du dig – hjälp för administratörer
 
-::: moniker range="o365-worldwide"
-
 Registrera dig för Microsoft 365 för företag så att din grupp kan börja använda de senaste versionerna av Word, Excel, PowerPoint och andra Office program.
-  
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-Registrera dig för Microsoft 365 för företag så att din grupp kan börja använda de senaste versionerna av Word, Excel, PowerPoint och andra Office program.
-  
-::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Office 365 som drivs av 21Vianet har utformats för att uppfylla behoven för säkra, tillförlitliga och skalbara molntjänster i Kina. Den här tjänsten använder teknik som Microsoft har licens för 21Vianet. Microsoft sköter inte själva tjänsten. 21Vianet sköter, tillhandahåller och hanterar leveransen av tjänsten. 21Vianet är den största leverantör av internetdatacentertjänster i Kina som tillhandahåller värdtjänster, hanterade nätverkstjänster och infrastrukturtjänster för molnbaserad databehandling. Genom licensiering av Microsoft-tekniker driver 21Vianet lokala Microsoft-datacenter för att ge dig möjlighet att använda Microsoft-tjänster och samtidigt lagra dina data i Kina. 21Vianet tillhandahåller även dina prenumerations- och faktureringstjänster samt support.
+Om du är i Kina, Office 365 som drivs av 21Vianet har utformats för att uppfylla behoven för säkra, tillförlitliga och skalbara molntjänster i Kina. Den här tjänsten använder teknik som Microsoft har licens för 21Vianet. Microsoft sköter inte själva tjänsten. 21Vianet sköter, tillhandahåller och hanterar leveransen av tjänsten. 21Vianet är den största leverantör av internetdatacentertjänster i Kina som tillhandahåller värdtjänster, hanterade nätverkstjänster och infrastrukturtjänster för molnbaserad databehandling. Genom licensiering av Microsoft-tekniker driver 21Vianet lokala Microsoft-datacenter för att ge dig möjlighet att använda Microsoft-tjänster och samtidigt lagra dina data i Kina. 21Vianet tillhandahåller även dina prenumerations- och faktureringstjänster samt support.
   
 > [!NOTE]
 > Dessa tjänster omfattas av den kinesiska lagstiftningen.
@@ -64,7 +54,7 @@ Registrera dig för Office 365 som drivs av 21Vianet så att din grupp kan börj
 
 Innan du köper bör du tänka över det abonnemang du registrerar dig för. På så sätt undviker du problem när organisationen växer.
 
-Titta på en kort video om att välja Microsoft 365 för företag-abonnemang.<br><br>
+## <a name="watch-choose-a-microsoft-365-subscription"></a>Titta: Välj en Microsoft 365 prenumeration
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
@@ -92,7 +82,7 @@ Om du börjar med en kostnadsfri utvärderingsversion kan du [köpa den senare.]
   
 Du behöver inte avbryta utvärderingsversionen. Om du inte köper utvärderingsprenumerationen upphör den automatiskt att gälla i slutet av utvärderingsperioden och all information tas bort permanent.
 
-Titta på en kort video som visar registreringsprocessen.<br><br>
+## <a name="watch-set-up-microsoft-365-business-premium"></a>Titta på: Konfigurera Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 

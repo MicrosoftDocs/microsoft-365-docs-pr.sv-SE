@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Lär dig hur du tar bort ett användarkonto och vad du gör med användarens e-post och OneDrive innehåll och om du vill behålla produktlicensen.
-ms.openlocfilehash: ff10d3289eae87f84685c22b81db03798ca9d7eb
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 43a57a69ce0d810af2b029f49c15d32d75a4dc33
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634214"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683145"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Ta bort en användare från organisationen
   
@@ -87,19 +87,11 @@ Du blir guidad genom processen för att ta bort en användare. Så här kommer d
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.  
 
-2. Markera namnen på de användare som du vill ta bort, välj de tre punkterna (fler åtgärder) och välj sedan Ta **bort användare.**
-
-   **Du betalar fortfarande för licensen** även om du har tagit bort användarens konto. Se nästa procedur om du vill sluta betala för licensen.  Du kan sedan tilldela licensen till en annan användare. Den kommer inte automatiskt att tilldelas till någon.
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
-
-2. Markera namnen på de användare som du vill ta bort och välj **Ta bort användare** i rutan **Massåtgärder**. 
-
-   **Du betalar fortfarande för licensen** även om du har tagit bort användarens konto. Se nästa procedur om du vill sluta betala för licensen.  Du kan sedan tilldela licensen till en annan användare. Den kommer inte automatiskt att tilldelas till någon.
 
 ::: moniker-end
 
@@ -107,11 +99,11 @@ Du blir guidad genom processen för att ta bort en användare. Så här kommer d
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
 
-2. Markera namnen på de användare som du vill ta bort och välj **Ta bort användare** i rutan **Massåtgärder**. 
+::: moniker-end
+
+2. Markera namnen på de användare som du vill ta bort, välj de tre punkterna (fler åtgärder) och välj sedan Ta **bort användare.**
 
    **Du betalar fortfarande för licensen** även om du har tagit bort användarens konto. Se nästa procedur om du vill sluta betala för licensen.  Du kan sedan tilldela licensen till en annan användare. Den kommer inte automatiskt att tilldelas till någon.
-
-::: moniker-end
 
 ### <a name="stop-paying-for-the-license"></a>Sluta betala för licensen
 
@@ -119,7 +111,19 @@ Att minska antalet licenser är ett separat steg som endast kan utföras av den 
   
 ::: moniker range="o365-worldwide"
 
-1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>. Om du inte ser det här alternativet är du inte en global administratör eller faktureringsadministratör och kan inte genomföra detta steg.
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Dina produkter</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Dina produkter</a>.
+::: moniker-end
 
 2. På fliken **Produkter** väljer du den prenumeration som du vill ta bort licenser för.
 
@@ -130,28 +134,6 @@ Att minska antalet licenser är ett separat steg som endast kan utföras av den 
 5. Välj **Spara**.
 
 När du sedan följer anvisningarna och lägger till en annan person i verksamheten uppmanas du samtidigt att köpa en licens.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a> i administrationscentret. Om du inte ser det här alternativet är du inte en global administratör eller faktureringsadministratör och kan inte genomföra detta steg.
-
-2. Markera prenumerationen (om du har fler än en) och välj sedan **Lägg till/ta bort licenser** för att ta bort licensen så att du inte betalar för den förrän du anställer en ny person.  
-
-   När du sedan följer anvisningarna och lägger till en annan person i verksamheten uppmanas du samtidigt att köpa en licens.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a> i administrationscentret. Om du inte ser det här alternativet är du inte en global administratör eller faktureringsadministratör och kan inte genomföra detta steg.
-
-2. Markera prenumerationen (om du har fler än en) och välj sedan **Lägg till/ta bort licenser** för att ta bort licensen så att du inte betalar för den förrän du anställer en ny person.  
-
-   När du sedan följer anvisningarna och lägger till en annan person i verksamheten uppmanas du samtidigt att köpa en licens.
-
-::: moniker-end
 
 ## <a name="delete-many-users-at-the-same-time"></a>Ta bort flera användare samtidigt
 

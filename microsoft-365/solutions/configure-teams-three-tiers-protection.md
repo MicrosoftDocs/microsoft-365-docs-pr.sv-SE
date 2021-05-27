@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: Lär dig hur du konfigurerar Teams för bättre säkerhet vid delning av filer med hjälp av tre skyddsnivåer, och balansera säkerhet med att kunna samarbete enkelt.
-ms.openlocfilehash: ab2dd4cbf2b9cfc7b285f049eeaa876371574202
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 34351b202575302e2929db48d7807b91e4308905
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539221"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683409"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Konfigurera Teams med tre skyddsnivåer
 
@@ -117,6 +117,14 @@ Se följande referenser för att skapa en säker och produktiv gästdelningsmilj
 För nivåerna känsligt och strikt känsligt begränsar vi åtkomst till SharePoint-innehåll med känslighetsetiketter. Med villkorad åtkomst i Azure AD finns många alternativ för att bestämma hur användare får åtkomst till Microsoft 365, inklusive begränsningar utifrån plats, risker, kompatibilitetsstatus för enheter och andra faktorer. Vi rekommenderar att du läser [Vad är villkorad åtkomst?](/azure/active-directory/conditional-access/overview) och fundera på vilka tilläggsprinciper som passar bäst för din organisation.
 
 Observera att gäster ofta inte har enheter som hanteras av din organisation. Om du tillåter gäster på någon av nivåerna bör du fundera på vilka typer av enheter de använder för att komma åt grupper och webbplatser och ange principer för ohanterad enhet därefter.
+
+### <a name="control-device-access-across-microsoft-365"></a>Kontrollera enhetsåtkomst i Microsoft 365
+
+Inställningen för ohanterade enheter bland känslighetsetiketterna påverkar bara SharePoint-åtkomst. Om du vill utöka kontrollen av ohanterade enheter så den gäller utanför SharePoint kan du istället [Skapa en villkorsstyrd åtkomstprincip för Azure Active Directory för alla program och tjänster i din organisation](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). Om du vill konfigurera den här principen specifikt för [Microsoft 365-tjänster](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365)ska du välja molnappen för **Office 365** under **Molnappar eller åtgärder**.
+
+![Skärmbild av Office 365-molnappen i en Azure Active Directory-princip för villkorsstyrd åtkomst](https://docs.microsoft.com/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
+
+En princip som påverkar alla Microsoft 365-tjänster kan leda till bättre säkerhet och en bättre upplevelse för användarna. Om du till exempel blockerar åtkomst till ohanterade enheter i SharePoint kan användarna komma åt chatten i en grupp med en ohanterad enhet, men förlorar åtkomst när de försöker komma åt fliken **Filer**. Med hjälp av Office 365-molnappen undviker du problem med [Tjänstberoenden](/azure/active-directory/conditional-access/service-dependencies).
 
 ## <a name="next-step"></a>Nästa steg
 

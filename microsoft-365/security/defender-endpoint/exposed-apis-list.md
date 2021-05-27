@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 656aa26d80db73bfc52511f9dd94e58e771f3ac6
-ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
+ms.openlocfilehash: f7a620ad56496b1a26e193a18fa93f4d217431df
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52073847"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684153"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>Microsoft Defender för Endpoint API:er som stöds
 
@@ -61,6 +61,7 @@ Läs mer om de enskilda enheter som stöds, där du kan köra API-anrop till, oc
 :---|:---
 [Avancerad jakt](run-advanced-query-api.md) | Köra frågor från API.
 [Metod och egenskaper för varningar](alerts.md) | Kör API-anrop \- som få aviseringar, skapa en avisering, uppdatera avisering och mycket mer.
+[Exportera utvärderingsmetoder och egenskaper per enhet](get-assessmnt-1methods-properties.md) | Kör API-anrop som \- export secure configuration assessment, export software inventory assessment och export software vulnerabilities assessment.
 [Metoder och egenskaper för automatisk undersökning](investigation.md) | Kör API-anrop, \- till exempel hämta undersökningssamling.
 [Hämta domänrelaterade varningar](get-domain-related-alerts.md) | Kör API-anrop \- som att hämta domänrelaterade enheter, domänstatistik och mycket mer.
 [Filmetoder och -egenskaper](files.md) | Kör API-anrop \- som att få filinformation, filrelaterade aviseringar, filrelaterade enheter och filstatistik.
@@ -69,6 +70,7 @@ Läs mer om de enskilda enheter som stöds, där du kan köra API-anrop till, oc
 [Maskinmetoder och egenskaper](machine.md) | Kör API-anrop \- som att hämta enheter, hämta enheter efter ID, information om inloggade användare, redigera taggar med mera.
 [Metoder och egenskaper för maskinåtgärd](machineaction.md) | Kör API-anrop som \- isolation, kör antivirussökning och mycket mer.
 [Metoder och egenskaper för rekommendation](recommendation.md) | Kör API-anrop som \- få rekommendation från ID.
+[Metoder och egenskaper för åtgärdsaktivitet](get-remediation-methods-properties.md) | Kör API-anrop som få alla åtgärder, få åtgärder på exponerade enheter och \- få en åtgärdsaktivitet per id.
 [Poängmetoder och egenskaper](score.md) | Kör API-anrop, \- till exempel för att få exponeringsresultat eller för att få ett säkert enhetsresultat.
 [Programvarumetoder och egenskaper](software.md) | Kör API-anrop, \- till exempel säkerhetsproblem efter programvara.
 [Användarmetoder](user.md) | Kör \- API-anrop, till exempel få användarrelaterade aviseringar och användarrelaterade enheter.

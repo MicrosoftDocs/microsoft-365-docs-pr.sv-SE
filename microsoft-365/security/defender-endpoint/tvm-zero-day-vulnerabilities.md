@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2c746a74899a34827e089f4c9c2f6ecc396bb69c
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: ec8dd97a563edc487008d028a7cdc9f6ef3d17c1
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538777"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689091"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>Minimera svagheter utan dag – Hantering av hot och säkerhetsrisker
 
@@ -46,7 +46,7 @@ Hot och hantering av säkerhetsrisker bara visar svagheter som inte har någon d
 När en nolldagarsrisk har hittats kommer information om den att förmedlas genom följande upplevelser i Microsoft Defender Säkerhetscenter.
 
 >[!NOTE]
-> Funktionen 0 dagar är för närvarande inte tillgänglig för produkter som Windows (Mac, Linux). den läggs dock till i framtiden.
+> 0-dagars sårbarhet är för närvarande endast tillgängligt för Windows produkter.
 
 ### <a name="threat-and-vulnerability-management-dashboard"></a>Hot och hantering av säkerhetsrisker instrumentpanel
 

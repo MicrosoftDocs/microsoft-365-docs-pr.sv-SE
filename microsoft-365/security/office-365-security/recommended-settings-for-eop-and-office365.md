@@ -19,12 +19,12 @@ ms.collection:
 description: Vad är metodtips för Exchange Online Protection (EOP) och Defender för Office 365 säkerhetsinställningar? Vilka är de aktuella rekommendationerna för standardskydd? Vad ska användas om du vill vara striktare? Och vad får du om du även använder Defender för Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04668932747462d2636b466d87c2655d97569657
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 10fac8cb7241faa652bbcb4726610abef741e70c
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624099"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683277"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Rekommenderade inställningar för EOP och Microsoft Defender för Office 365 säkerhet
 
@@ -137,11 +137,11 @@ Information om hur du skapar och konfigurerar principer för skadlig programvara
 
 |Namn på säkerhetsfunktion|Standard|Standard|Strikt|Kommentar|
 |---|:---:|:---:|:---:|---|
-|**Vill du meddela mottagarna om deras meddelanden har satts i karantän?** <p> _Åtgärd_|Nej <p> _DeleteMessage_|Nej <p> _DeleteMessage_|Nej <p> _DeleteMessage_|Om skadlig programvara identifieras i en e-postbilaga sätts meddelandet i karantän och kan bara släppas av en administratör.|
-|**Vanliga filter för bifogade filer** <p> _EnableFileFilter_|Av <p> `$false`|På <p> `$true`|På <p> `$true`|Med den här inställningen sätts meddelanden som innehåller körbara bifogade filer i karantän beroende på filtyp, oavsett vilken bifogad fil det är.|
-|**Automatisk rensning med skadlig kod utan timme** <p> _ZapEnabled_|På <p> `$true`|På <p> `$true`|På <p> `$true`||
-|**Meddela interna avsändare om** det olevererade meddelandet <p> _EnableInternalSenderNotifications_|Inaktiverad <p> `$false`|Inaktiverad <p> `$false`|Inaktiverad <p> `$false`||
-|**Meddela externa avsändare om** det olevererade meddelandet <p> _EnableExternalSenderNotifications_|Inaktiverad <p> `$false`|Inaktiverad <p> `$false`|Inaktiverad <p> `$false`||
+|**Meddela mottagare när meddelanden sätts i karantän som skadlig programvara** <p> _Åtgärd_|Nej <p> _DeleteMessage_|Nej <p> _DeleteMessage_|Nej <p> _DeleteMessage_|Om skadlig programvara identifieras i en e-postbilaga sätts meddelandet i karantän och kan bara släppas av en administratör.|
+|**Aktivera filtret för vanliga bifogade filer** <p> _EnableFileFilter_|Av <p> `$false`|På <p> `$true`|På <p> `$true`|Med den här inställningen sätts meddelanden som innehåller körbara bifogade filer i karantän beroende på filtyp, oavsett vilken bifogad fil det är.|
+|**Aktivera automatisk rensning utan timme för skadlig programvara** <p> _ZapEnabled_|På <p> `$true`|På <p> `$true`|På <p> `$true`||
+|**Meddela interna avsändare när meddelanden sätts i karantän som skadlig programvara** <p> _EnableInternalSenderNotifications_|Inaktiverad <p> `$false`|Inaktiverad <p> `$false`|Inaktiverad <p> `$false`||
+|**Meddela externa avsändare när meddelanden sätts i karantän som skadlig programvara** <p> _EnableExternalSenderNotifications_|Inaktiverad <p> `$false`|Inaktiverad <p> `$false`|Inaktiverad <p> `$false`||
 |
 
 ### <a name="eop-default-anti-phishing-policy-settings"></a>Standardinställningar för nätfiskeprincip i EOP

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Använd eDiscovery och sökverktyg för att hantera och svara på ett data spillhändelse i organisationen.
-ms.openlocfilehash: 4305dbdb2fb59e4275852c88f8b74f6c4128a5cb
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: f92887018a7ab1cec35526c2a36cce4b0889172e
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653529"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683781"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery-lösningsserie: Scenario för data spill – sökning och rensning
 
@@ -52,7 +52,7 @@ Så här hanterar du ett data spillhändelse:
 
 - När en postlåda är undantaget finns ett borttaget meddelande kvar i mappen Återställningsbara objekt tills bevarandetiden löper ut eller när undantaget släpps. [Steg 6](#step-6-prepare-the-mailboxes) beskriver hur du tar bort isen från postlådorna. Kontrollera med din hantering av arkivhandlingar eller juridiska avdelningar innan du tar bort krysset. Organisationen kan ha en princip som definierar om en postlåda som är väntad eller ett data spill har prioritet. 
     
-- Om du vill styra vilka användarpostlådor en data spillande kan söka och hantera vem som kan komma åt ärendet, kan du konfigurera efterlevnadsgränser och skapa en anpassad rollgrupp, som beskrivs i steg [1.](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries) För att göra det måste du vara medlem i rollgruppen Organisationshantering eller ha rollen rollhantering. Om du eller administratören i organisationen redan har angett efterlevnadsgränser kan du hoppa över steg 1.
+- Om du vill styra vilka användarpostlådor en data spillande kan söka och hantera vem som kan komma åt ärendet, kan du konfigurera efterlevnadsgränser och skapa en anpassad rollgrupp, som beskrivs i steg [1.](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries) För att göra det måste du vara medlem i rollgruppen Organisationshantering eller ha rollen rollhantering. Om du eller en administratör i organisationen redan har angett efterlevnadsgränser kan du hoppa över steg 1.
     
 - Om du vill skapa ett ärende måste du vara medlem i rollgruppen för eDiscovery-hanteraren eller vara medlem i en anpassad rollgrupp som har tilldelats rollen Ärendehantering. Om du inte är medlem kan du be en Microsoft 365 att lägga till dig i [rollgruppen för eDiscovery-hanteraren.](assign-ediscovery-permissions.md)
     
@@ -64,7 +64,7 @@ Så här hanterar du ett data spillhändelse:
 
 Beroende på din organisations övning behöver du kontrollera vem som kan komma åt eDiscovery-ärendet som används för att undersöka data spill och konfigurera efterlevnadsgränser. Det enklaste sättet att göra det är att lägga till rollgruppen som medlemmar i en befintlig rollgrupp i Säkerhets- & och efterlevnadscenter och sedan lägga till rollgruppen som medlem i eDiscovery-ärendet. Mer information om de inbyggda rollgrupperna för eDiscovery och hur du lägger till medlemmar i ett eDiscovery-fall finns i [Tilldela eDiscovery-behörigheter.](assign-ediscovery-permissions.md)
   
-Du kan också skapa en ny rollgrupp som passar organisationens behov. Du kanske till exempel vill att en grupp data spiller i organisationen ska kunna komma åt och samarbeta om alla fall av data spill. Det kan du göra genom att skapa rollgruppen "Data spill och fall", tilldela rätt roller (Exportera, RMS-dekryptera, granska, förhandsgranska, efterlevnadssökning och ärendehantering), lägga till data spill från rollgruppen och sedan lägga till rollgruppen som medlem i eDiscovery-fall för data spill. I [Konfigurera efterlevnadsgränser för eDiscovery-undersökningar i Office 365](tagging-and-assessment-in-advanced-ediscovery.md) för detaljerade anvisningar om hur du gör detta. 
+Du kan också skapa en ny rollgrupp som passar organisationens behov. Du kanske till exempel vill att en grupp data spiller i organisationen ska kunna komma åt och samarbeta om alla fall av data spill. Det kan du göra genom att skapa rollgruppen "Data spill och fall", tilldela rätt roller (Exportera, RMS-dekryptera, granska, förhandsgranska, efterlevnadssökning och ärendehantering), lägga till data spill från rollgruppen och sedan lägga till rollgruppen som medlem i eDiscovery-fall för data spill. I [Konfigurera efterlevnadsgränser för eDiscovery-undersökningar i Office 365](set-up-compliance-boundaries.md) för detaljerade anvisningar om hur du gör detta. 
   
 ## <a name="step-2-create-an-ediscovery-case"></a>Steg 2: Skapa ett eDiscovery-ärende
 
@@ -123,7 +123,7 @@ Du kan använda Meddelandespårning i säkerhets- och efterlevnadscentret eller 
   
 - [Meddelandespårning i Säkerhets- & Säkerhets- och efterlevnadscenter](../security/office-365-security/message-trace-scc.md)
     
-- [Nytt meddelandespårning i Säkerhets- & Efterlevnadscenter](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
+- [Nytt meddelandespårning i Säkerhets- & Efterlevnadscenter](https://techcommunity.microsoft.com/t5/exchange-team-blog/new-message-trace-in-office-365-security-038-compliance-center/ba-p/607893)
     
 ## <a name="step-6-prepare-the-mailboxes"></a>Steg 6: Förbereda postlådorna
 

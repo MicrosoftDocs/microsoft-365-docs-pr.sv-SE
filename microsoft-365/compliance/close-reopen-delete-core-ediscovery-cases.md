@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: I den här artikeln beskrivs hur du hanterar grundläggande eDiscovery-ärenden. Det handlar bland annat om att stänga ett ärende, öppna ett stängt ärende och ta bort ett ärende.
-ms.openlocfilehash: 8a54d5c8f93d36351538bc235a6dbeaaa602c3e9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: d729c91d4e81ad12d0b4b16574aa4edad8e239a3
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532452"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684105"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Stäng, öppna och ta bort en eDiscovery-basfall
 
@@ -92,7 +92,7 @@ Innan du kan ta bort ett ärende (oavsett om det är aktivt eller stängt) måst
 
 Så här tar du bort en e-dataidentifierings hold:
 
-1. Gå till **fliken** Spärrar för det ärende som du vill ta bort.
+1. Gå till fliken **Spärrar** för det ärende som du vill ta bort.
 
 2. Markera det håll du vill ta bort.
 
