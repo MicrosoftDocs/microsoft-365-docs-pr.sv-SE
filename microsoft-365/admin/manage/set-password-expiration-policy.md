@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Lär dig hur en administratör kan ange en förfalloprincip för lösenord för ditt företag, din skola eller en ideell förening i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 5469d4dcd75bee2e6f8a188aa6f50d18ce6e06c4
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7f12918211718b91313c0c89b11eaeb0a8cc3181
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537493"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635828"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Ange förfalloprincip för lösenord i organisationen
 
@@ -36,7 +36,7 @@ ms.locfileid: "52537493"
 
 Den här artikeln är avsedd för personer som anger en förfalloprincip för lösenord för ett företag, en skola eller en ideell förening. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörskonto?](../../business-video/admin-center-overview.md).
 
-Som administratör kan du göra så att användarlösenord upphör efter ett visst antal dagar, eller ställa in så att lösenord aldrig upphör. Som standard är lösenord inställda på att aldrig upphöra att gälla för din organisation.
+Som administratör kan du göra så att användarlösenord upphör efter ett visst antal dagar eller ange att lösenord aldrig ska upphöra att gälla. Som standard är lösenord inställda på att aldrig upphöra att gälla för din organisation.
 
 Aktuella undersökningar tyder starkt på att tvingande lösenordsändringar gör mer skada än nytta. Det får användarna att välja svagare lösenord, återanvända lösenord eller uppdatera gamla lösenord på ett sätt som gör det enkelt för hackare att gissa sig till dem. Vi rekommenderar att du [multifaktorautentisering](../security-and-compliance/set-up-multi-factor-authentication.md). Mer information om lösenordsprincip finns i [Rekommendationer om lösenordsprinciper](../misc/password-policy-recommendations.md).
 
@@ -57,13 +57,13 @@ Följ anvisningarna nedan om du vill ställa in så att användarlösenorden ska
   
 4. Om du inte vill att användarna ska behöva ändra lösenord avmarkerar du rutan bredvid **Ställ in så att användarlösenord upphör att gälla efter ett visst antal dagar**.
   
-5. Ange hur ofta lösenord ska upphöra. Välj ett antal dagar mellan 14 och 730.
+5. Ange hur ofta lösenord ska upphöra att gälla. Välj ett antal dagar mellan 14 och 730.
   
 6. I den andra rutan anger du när användarna underrättas om att deras lösenord upphör att gälla och väljer sedan **Spara**. Du kan välja ett antal dagar mellan 1 och 30.
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>Viktiga saker du behöver veta om funktionen för lösenords giltighetstid
   
-- Personer som endast använder Outlook-appen tvingas inte återställa lösenordet för Microsoft 365 förrän det slutar gälla i cachen. Det kan dröja flera dagar från det faktiska utgångsdatumet. Det finns ingen lösning på det här felet på administratörsnivå.
+Personer som endast använder Outlook-appen tvingas inte återställa lösenordet för Microsoft 365 förrän det slutar gälla i cachen. Det kan dröja flera dagar från det faktiska utgångsdatumet. Det finns ingen lösning på det här felet på administratörsnivå.
 
 ## <a name="prevent-last-password-from-being-used-again"></a>Förhindra att det senaste lösenordet används igen
 
@@ -89,6 +89,5 @@ Information om hur du uppdaterar lösenordspolicyn för en specifik domän eller
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Låt användare återställa sina egna lösenord](../add-users/let-users-reset-passwords.md) (artikel)
-
+[Låt användare återställa sina egna lösenord](../add-users/let-users-reset-passwords.md) (artikel)\
 [Återställ lösenord](../add-users/reset-passwords.md) (artikel)
