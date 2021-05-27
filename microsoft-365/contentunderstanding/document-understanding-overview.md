@@ -1,8 +1,9 @@
 ---
 title: Översikt av dokumenttolkning
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Få en översikt av dokumenttolkning i Microsoft SharePoint Syntex.
-ms.openlocfilehash: 73e217e458fb9e1ccad8b64ffc81a6c9522a04f4
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 7e5818a929fa0f4554a7ee4ece460b4fe0d691aa
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222761"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683829"
 ---
 # <a name="document-understanding-overview"></a>Översikt av dokumenttolkning
 
@@ -36,7 +37,7 @@ Dokumenttolkning använder AI-modeller (artificiell intelligens) för att automa
 Modeller för dokumenttolkning skapas och hanteras på en typ av SharePoint-webbplats som kallas *innehållscenter*. När den används i ett SharePoint-dokumentbibliotek kopplas modellen till en innehållstyp med kolumner för att lagra den information som extraheras. Innehållstypen som du skapar lagras i galleriet för innehållstyper i SharePoint. Du kan också välja befintliga innehållstyper för att använda deras schema.
 
 > [!NOTE]
-> Skrivskyddat eller förseglade innehållstyper kan inte uppdateras, så de kan inte användas i en modell.
+> Skrivskyddat eller förseglade innehållstyper kan inte uppdateras, alltså de kan inte användas i en modell.
 
 Lägg till *klassificerare* och *extraktorer* till modellen för dokumenttolkning för att göra följande: 
 
@@ -48,16 +49,40 @@ Du kan använda exempelfiler för att träna och testa dina klassificerare och e
 
 När du har publicerat modellen använder du innehållscentret för att använda det på alla SharePoint-dokumentbibliotek som du har åtkomst till.  
 
-### <a name="file-limitations"></a>Filbegränsningar
+## <a name="file-limitations"></a>Filbegränsningar
 
 Dokument för dokumenttolkning använder optisk teckenläsning (OCR) för att skanna PDF-filer, bilder och TIFF-filer, både när du utbildar en modell med exempelfiler och när du kör modellen mot filer i ett dokumentbibliotek.
 
 Observera följande skillnader i fråga om textbaserade filer i Microsoft Office och skannade OCR-filer (PDF, bild eller TIFF):
 
-- Office-filer: Vi trunkerar vid 64 000 tecken (i utbildning och när vi kör mot filer i ett dokumentbibliotek).
-- OCR-skannade filer: Det finns en gräns på 20 sidor.  
+- Office-filer: trunkeras vid 64 000 tecken (i utbildning och när de körs mot filer i ett dokumentbibliotek).
 
-#### <a name="supported-file-types"></a>Filtyper som stöds
+- OCR-skannade filer: det finns en gräns på 20 sidor.  
+
+### <a name="requirements"></a>Krav
+
+OCR-bearbetningen fungerar bäst med dokument som uppfyller följande krav:
+
+- JPG-, PNG- eller PDF-format (text eller skannad). PDF-filer med inbäddad text är bättre, eftersom det inte blir några fel i extrahering och placering av tecken.
+
+- Om PDF-filerna är lösenordslåsta måste du ta bort låset innan du skickar dem.
+
+- Den kombinerade filstorleken för dokument som används för utbildning per samling får inte överstiga 50 MB och PDF-dokument bör inte ha fler än 500 sidor.
+
+- För bilder måste måtten vara mellan 50 × 50 och 10 000 × 10 000 bildpunkter.
+   > [!NOTE]
+   > Bilder som är mycket breda eller har udda mått (t.ex. planritningar) kan trunkeras i OCR-processen och förlora precision.
+ 
+- För PDF-filer måste måtten vara högst 17 x 17 tum, motsvarande pappersstorlekerna juridiska filer eller A3 och mindre.
+
+- Om filen har skannats från pappersdokument bör skanningen vara av hög kvalitet.
+
+- Måste använda det latinska alfabetet (engelska tecken).
+
+> [!NOTE]
+> AI Builder stöder för närvarande inte följande typer av formulärbearbetning av indata:<br>– Kryssrutor eller alternativknappar<br>– signaturer<br>– ifyllningsbara PDF-filer.
+
+### <a name="supported-file-types"></a>Filtyper som stöds
 
 Dokument för dokumenttolkning stöder följande filtyper:
 
