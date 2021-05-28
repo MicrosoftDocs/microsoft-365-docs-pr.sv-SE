@@ -66,6 +66,8 @@
       href: billing-and-payments/change-your-billing-addresses.md
     - name: Om betaltjänstdirektiv 2 och stark kundautentisering
       href: billing-and-payments/psd2.md
+    - name: Begär kredit för källskatt på ditt konto
+      href: billing-and-payments/withholding-tax-credit-global.md
 - name: Faktureringskonton
   items:
     - name: Förstå faktureringskonton
