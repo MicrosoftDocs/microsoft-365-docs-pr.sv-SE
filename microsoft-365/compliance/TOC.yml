@@ -116,6 +116,8 @@
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
         - name: Skapa en nyckelordsordlista
           href: create-a-keyword-dictionary.md
+        - name: Ändra en nyckelordsordlista
+          href: sit-modify-keyword-dictionary.md
         - name: Fingeravtrycksfunktioner för dokument
           href: document-fingerprinting.md
     - name: Utbildningsbara klassificerare
@@ -124,8 +126,6 @@
           href: classifier-learn-about.md
         - name: Kom igång med utbildningsbara klassificerare
           href: classifier-get-started-with.md
-        - name: Så här tränar du en klassificerare i kommunikationsefterlevnad på nytt
-          href: classifier-how-to-retrain-comms-compliance.md
         - name: Så här tränar du en klassificerare i innehållsutforskaren på nytt
           href: classifier-how-to-retrain-content-explorer.md
     - name: Dataklassificering
